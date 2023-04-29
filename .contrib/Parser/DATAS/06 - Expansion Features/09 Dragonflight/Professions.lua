@@ -358,17 +358,25 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["requireSkill"] = ALCHEMY,
 		},{
 			n(QUESTS, {
-				q(70355, {	-- Dragon Isles Alchemy [A]
-					["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
+				q(70355, {	-- Dragon Isles Alchemy
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
+					["sourceQuests"] = {
+						67700,	-- To the Dragon Isles! [A]
+						65444,	-- To the Dragon Isles! [H]
+					},
 					["provider"] = { "n", 191893 },	-- Zherrak
 					["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
-					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "spellID", 366261 },	-- Dragon Isles Alchemy
 				}),
-				q(72245, {	-- Dragon Isles Alchemy [H]
-					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
+				q(72245, {	-- Dragon Isles Alchemy
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
+					["sourceQuests"] = {
+						67700,	-- To the Dragon Isles! [A]
+						65444,	-- To the Dragon Isles! [H]
+					},
 					["provider"] = { "n", 198392 },	-- An'timon
 					["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
-					["races"] = HORDE_ONLY,
+					["lockCriteria"] = { 1, "spellID", 366261 },	-- Dragon Isles Alchemy
 				}),
 				q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
 					["provider"] = { "n", 191893 },	-- Zherrak
@@ -608,17 +616,19 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		},{
 			n(QUESTS, {
 				q(70358, {	-- Dragon Isles Blacksmithing
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
 					["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
-					-- ["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
+					["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 				}),
 				q(70357, {	-- Dragon Isles Blacksmithing
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 192164 },	-- Gringot Coldsteel <Blacksmithing Trainer>
@@ -882,20 +892,25 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			}),
 			n(QUESTS, {
 				q(72251, {	-- Dragon Isles Cooking
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 193121 },	-- Head Chef Stacks
 					["coord"] = { 47.1, 82.7, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366256},	-- Dragon Isles Cooking
+					
 				}),
 				q(72250, {	-- Dragon Isles Cooking
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 198094 },	-- Head Chef Stacks
 					["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366256},	-- Dragon Isles Cooking
 				}),
 			}),
 		})),
@@ -904,12 +919,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		},{
 			n(QUESTS, {
 				q(70360, {	-- Dragon Isles Enchanting
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Enchanting.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 192055 },	-- Veeno <Enchanting Trainer>
 					["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366255},	-- Dragon Isles Enchanting
 				}),
 				q(70029, {	-- Artisan's Supply: Runed Serevite Rods
 					["sourceQuests"] = { 70360 },	-- Dragon Isles Enchanting
@@ -1149,20 +1166,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		},{
 			n(QUESTS, {
 				q(72242, {	-- Dragon Isles Engineering
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 190535 },	-- Quizla Blastcaps
 					["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366254},	-- Dragon Isles Engineering
 				}),
 				q(70359, {	-- Dragon Isles Engineering
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
 					["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366254},	-- Dragon Isles Engineering
 				}),
 				q(70030, {	-- Artisan's Supply: Quality-Assured Optics
 					["sourceQuests"] = {
@@ -1386,13 +1407,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		},{
 			n(QUESTS, {
 				q(72252, {	-- Dragon Isles Fishing [A]
-					["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Fishing.",
+					["sourceQuests"] = { 67700 },	-- To the Dragon Isles! [A]
 					["provider"] = { "n", 191150 },	-- Danielle Anglers
 					["coord"] = { 81.3, 31.3, THE_WAKING_SHORES },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "spellID", 366253 },	-- Dragon Isles Fishing
 				}),
 				q(72253, {	-- Dragon Isles Fishing [H]
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Fishing.",
 					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
 					["provider"] = { "n", 190524 },	-- Mora Cloudwalker <Fishing Trainer>
 					["coord"] = { 81.0, 29.0, THE_WAKING_SHORES },
@@ -1410,20 +1433,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		},{
 			n(QUESTS, {
 				q(70364, {	-- Dragon Isles Herbalism
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 192010 },	-- Szarostrasza <Herbalism Trainer>
 					["coord"] = { 57.4, 65.8, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366242},	-- Dragon Isles Herbalism
 				}),
 				q(72243, {	-- Dragon Isles Herbalism
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 192549 },	-- Feilin Kuan
 					["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366242},	-- Dragon Isles Herbalism
 				}),
 				q(70026, {	-- Artisan's Supply: Lava Beetles
 					--["sourceQuests"] = {  },	-- To the Dragon Isles:
@@ -1541,20 +1568,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		},{
 			n(QUESTS, {
 				q(70361, {	-- Dragon Isles Inscription
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 198125 },	-- Isarian Shadowplume <Inscription Trainer>
 					["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366251},	-- Dragon Isles Inscription
 				}),
 				q(72244, {	-- Dragon Isles Inscription
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 					["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366251},	-- Dragon Isles Inscription
 				}),
 				q(70031, {	-- Artisan's Supply: Chef's Smooth Rolling Pin
 					["sourceQuests"] = {
@@ -1817,20 +1848,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		},{
 			n(QUESTS, {
 				q(70365, {	-- To the Dragon Isles: Jewelcrafting
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 192121 },	-- Falron Greygold
 					["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366250},	-- Dragon Isles Jewelcrafting
 				}),
 				q(72247, {	-- To the Dragon Isles: Jewelcrafting
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 198398 },	-- Misty Catseye
 					["coord"] = { 76.2, 33.6, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366250},	-- Dragon Isles Jewelcrafting
 				}),
 				q(70032, {	-- Artisan's Supply: Jeweler's Specs
 					["sourceQuests"] = { 70365 },	-- To the Dragon Isles: Jewelcrafting
@@ -2111,12 +2146,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		},{
 			n(QUESTS, {
 				q(70362, {	-- Dragon Isles Leatherworking
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 192048 },	-- Deidre Flemmin
 					["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366249},	-- Dragon Isles Leatherworking
 				}),
 				q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
 					["sourceQuests"] = {
@@ -2523,14 +2560,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		},{
 			n(QUESTS, {
 				q(70363, {	-- Dragon Isles Skinning
-					["description"] = "DO NOT SKIN ANYTHING or you will lock yourself out of this quest.",
+					["description"] = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 192558 },    -- Toninaar
 					["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
-					["isBreadcrumb"] = true,
+					["lockCriteria"] = { 1, "spellID", 366263},	-- Dragon Isles Skinning
 				}),
 				q(70034, {	-- Artisan's Supply: Salamanther Scale
 					--["sourceQuests"] = {  },	-- To the Dragon Isles:
@@ -2665,20 +2702,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		},{
 			n(QUESTS, {
 				q(72249, {	-- Dragon Isles Tailoring
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 192565 },	-- Zayn Starmaker <Tailoring Trainer>
 					["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366258},	-- Dragon Isles Tailoring
 				}),
 				q(70366, {	-- Dragon Isles Tailoring
+					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",
 					["sourceQuests"] = {
-						67700,	-- To The Dragon Isles! [A]
+						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
 					["provider"] = { "n", 191894 },	-- Krillonn
 					["coord"] = { 61.3, 70.1, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366258},	-- Dragon Isles Tailoring
 				}),
 				q(70027, {	-- Artisan's Supply: Surveyor's Cloth Bands
 					["sourceQuests"] = { 72249 },	-- Dragon Isles Tailoring
