@@ -2012,13 +2012,9 @@ root(ROOTS.Unsorted, {
 				q(69913),	-- Towers of Earthen Power
 				q(69917),	--
 				q(69920),	--
-				q(69937),	-- Sylvan Succor
-				q(69939),	-- Sylvan Succor
-				q(69940),	-- Sylvan Succor
 				q(69945),	--
 				q(69947),	--
 				q(69948),	-- Wilrive
-				q(69950),	-- Sylvan Succor
 				q(69977),	--
 				q(69978),	--
 				q(69980),	-- Seavine: Fisherman Tinnak's Gift

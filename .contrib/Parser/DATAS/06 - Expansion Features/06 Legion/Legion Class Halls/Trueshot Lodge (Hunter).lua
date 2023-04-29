@@ -121,7 +121,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							},
 						}),
 						q(41009, {	-- Hunter to Hunter
-							["sourceQuests"] = { 40419 },	-- Rescue Mission
+							["sourceQuests"] = { 42185 },	-- Never Hunt Alone
 							["altQuests"] = { 40952 },	-- Hunter to Hunter
 							["provider"] = { "n", 106879 },	-- Grif Wildheart
 							["description"] = "To obtain this quest you must choose to search for the |cffffff9aBeast Mastery|r artifact FIRST.",
