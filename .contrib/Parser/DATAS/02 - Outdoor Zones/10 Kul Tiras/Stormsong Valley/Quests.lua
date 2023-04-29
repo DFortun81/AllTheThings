@@ -1660,8 +1660,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52065, {	-- Worse Than it Looks
-			--	may also require 'smells like trouble' and 'dangerous game'
-				["sourceQuests"] = { 50909 },	-- Never Outgunned
+				["sourceQuests"] = {
+					50909, -- Never Outgunned
+					50910, -- Dangerous Game
+					50908, -- Smells Like Trouble
+				},	
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 135682 },	-- Patrick Eckhart
 				["coord"] = { 57.8, 55.3, STORMSONG_VALLEY },
