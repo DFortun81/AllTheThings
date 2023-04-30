@@ -780,6 +780,10 @@ i(190155, {	-- Trusty Treasure Trove
 --------------------
 -- APR/APRIL 2023 --
 --------------------
+i(190164, {	-- Arsenal: Blades of Elune
+	i(190093),	-- Elune's Fury
+	i(190094),	-- Elune's Wrath
+}),
 i(190438, {	-- Crimson Nexus Crescent
 	["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 }),
@@ -839,4 +843,86 @@ i(190154, {	-- Tome of Sin'dorei Secrets
 i(189895, {	-- Watchman's Flare
 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 }),
+--------------------
+-- MAY 2023 --
+--------------------
+i(190175, {	-- Pippin (PET!)
+	["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+}),
+i(190441, {	-- Black Iron Blunderbuss
+	["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+}),
+i(190899, {	-- Crimson Bicorne
+	["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+}),
+i(201229, {	-- Ensemble: Kvaldir Scout Leathers
+	["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+	["g"] = {
+		i(190136),	-- Kvaldir Scout Treads
+		i(190137),	-- Kvaldir Scout Grips
+		i(190140),	-- Kvaldir Scout Trousers
+		i(190141),	-- Kvaldir Scout Chestguard
+		i(190548),	-- Kvaldir Scout Belt
+		i(190549),	-- Kvaldir Scout Wristguard
+		i(190552),	-- Kvaldir Scout Shoulderpads
+		i(190574),	-- Kvaldir Scout Hood
+	},
+}),
+i(190922, {	-- Ensemble: Vagabond's Snowy Threads
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+	["g"] = {
+		i(190882),	-- Vagabond's Snowy Cape
+		i(190884),	-- Vagabond's Snowy Hood
+	},
+}),
+i(190095, {	-- Ensemble: Vestment of the Honored Valarjar
+	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+	["g"] = {
+		i(190081),	-- Mantle of the Honored Valarjar
+		i(190082),	-- Cloak of the Honored Valarjar
+		i(190083),	-- Robe of the Honored Valarjar
+		i(190084),	-- Bracers of the Honored Valarjar
+		i(190085),	-- Sash of the Honored Valarjar
+		i(190086),	-- Sandals of the Honored Valarjar
+		i(190087),	-- Pantaloons of the Honored Valarjar
+		i(190088),	-- Circlet of the Honored Valarjar
+		i(190089),	-- Gloves of the Honored Valarjar
+	},
+}),
+i(190921, {	-- Ensemble: Wanderer's Snowy Trappings
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+	["g"] = {
+		i(190883),	-- Wanderer's Snowy Cloak
+		i(190885),	-- Wanderer's Snowy Scarf
+	},
+}),
+i(190217, {	-- Fang of the Mountain
+	["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+}),
+i(190808, {	-- High Priestess's Ceremonial Drape
+	["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+}),
+i(190204, {	-- Huntsman's Recurve Bow
+	["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+}),
+i(190215, {	-- Lost Crown of the Arcane
+	["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+}),
+i(190439, {	-- Merciless Trapper's Staff
+	["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+}),
+i(190205, {	-- Sharpened Shank
+	["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+}),
+i(202311, {	-- Sunbleached Grimskull Cinch
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+}),
+i(190214, {	-- Tiercel's Wing
+	["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+}),
+i(190199, {	-- Well-Worn Grimskull Cinch
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+}),
+i(190613),	-- Savage Green Battle Turtle (MOUNT!)
+),
 --]]
