@@ -665,8 +665,6 @@ root(ROOTS.Unsorted, {
 				i(206028),	-- Chest of Gold
 				i(206039),	-- Enmity Bundle
 				-- New Stuff
-				i(190921),	-- Ensemble: Wanderer's Snowy Trappings
-				i(190922),	-- Ensemble: Vagabond's Snowy Threads
 				i(205313),	-- Brullo's Wristbraces
 				i(205462),	-- Royal Nerubian Capsa
 				i(206044),	-- Obsidian Gladiator's Axe
