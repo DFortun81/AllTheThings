@@ -162,65 +162,18 @@ end
 --]]
 
 -- Coroutine Helper Functions
-app.refreshing = {};
 app.EmptyTable = {};
 app.EmptyFunction = function() end;
-local function OnUpdate(self)
-	for i=#self.__stack,1,-1 do
-		-- app.PrintDebug("Running Stack " .. i .. ":" .. self.__stack[i][2])
-		if not self.__stack[i][1](self) then
-			-- print("Removing Stack " .. i .. ":" .. self.__stack[i][2])
-			table.remove(self.__stack, i);
-		end
-	end
-	-- Stop running OnUpdate if nothing in the Stack to process
-	if #self.__stack < 1 then
-		self:SetScript("OnUpdate", nil);
-	end
-end
-local function Push(self, name, method)
-	if not self.__stack then
-		self.__stack = {};
-	end
-	-- print("Push->" .. name);
-	tinsert(self.__stack, { method, name });
-	self:SetScript("OnUpdate", OnUpdate);
-end
-local function StartCoroutine(name, method, delaySec)
-	if method and not app.refreshing[name] then
-		local instance = coroutine.create(method);
-		app.refreshing[name] = true;
-		local pushCo = function()
-				-- Check the status of the coroutine
-				if instance and coroutine.status(instance) ~= "dead" then
-					local ok, err = coroutine.resume(instance);
-					if ok then return true;	-- This means more work is required.
-					else
-						-- Throw the error. Returning nothing is the same as canceling the work.
-						-- local instanceTrace = debugstack(instance);
-						error(err,2);
-						-- print(debugstack(instance));
-						-- print(err);
-						-- app.report();
-					end
-				end
-				-- print("coroutine complete",name);
-				app.refreshing[name] = nil;
-			end;
-		if delaySec and delaySec > 0 then
-			-- print("delayed coroutine",delaySec,name);
-			C_Timer.After(delaySec, function() Push(app, name, pushCo) end);
-		else
-			-- print("coroutine starting",name);
-			Push(app, name, pushCo);
-		end
-	-- else print("skipped coroutine",name);
-	end
-end
+local Push = app.Push;
+local StartCoroutine = app.StartCoroutine;
 local Callback = app.CallbackHandlers.Callback;
 local DelayedCallback = app.CallbackHandlers.DelayedCallback;
 local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback;
 local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
+app.FunctionRunner = app.CreateRunner("default");
+app.DynamicRunner = app.CreateRunner("dynamic");
+app.UpdateRunner = app.CreateRunner("update");
+app.FillRunner = app.CreateRunner("fill");
 local function LocalizeGlobal(globalName, init)
 	local val = _G[globalName];
 	if init and not val then
@@ -264,102 +217,6 @@ local indexOf = function(arr, value)
 	end
 end
 
--- Iterative Function Runner
-do
--- Creates a Function Runner which can execute a sequence of Functions on a set iteration per frame update
-local function CreateRunner(name)
-	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
-	local QueueIndex = 1;
-	local function SetPerFrame(count)
-		Config.PerFrame = math.max(1, tonumber(count) or 1);
-		-- app.PrintDebug("FR.PerFrame."..name,Config.PerFrame)
-	end
-	local function Reset()
-		Config.PerFrame = 1;
-		-- when done with all functions in the queue, reset the queue index and clear the queues of data
-		QueueIndex = 1;
-		wipe(FunctionQueue);
-		wipe(ParameterBucketQueue);
-		wipe(ParameterSingleQueue);
-		-- app.PrintDebug("FR:Reset."..name)
-	end
-
-	-- maybe a coroutine directly which can be restarted without needing to be re-created?
-	local RunnerCoroutine = function()
-		local i, perFrame = 1, Config.PerFrame;
-		local params;
-		local func = FunctionQueue[i];
-		-- app.PrintDebug("FRC.Running."..name)
-		while func do
-			perFrame = perFrame - 1;
-			params = ParameterBucketQueue[i];
-			if params then
-				-- app.PrintDebug("FRC.Run.N."..name,i,unpack(params))
-				func(unpack(params));
-			else
-				-- app.PrintDebug("FRC.Run.1."..name,i,ParameterSingleQueue[i])
-				func(ParameterSingleQueue[i]);
-			end
-			-- app.PrintDebug("FRC.Done."..name,i)
-			if perFrame <= 0 then
-				-- app.PrintDebug("FRC.Yield."..name)
-				coroutine.yield();
-				perFrame = Config.PerFrame;
-			end
-			i = i + 1;
-			func = FunctionQueue[i];
-		end
-		-- Run the OnEnd function if it exists
-		local OnEnd = FunctionQueue[0];
-		if OnEnd then
-			-- app.PrintDebug("FRC.End."..name,#FunctionQueue)
-			OnEnd();
-		end
-		Reset();
-	end
-
-	-- Provides a utility which will process a given number of functions each frame in a Queue
-	local Runner = {
-		-- Adds a function to be run with any necessary parameters
-		["Run"] = function(func, ...)
-			if type(func) ~= "function" then
-				error("Must be a 'function' type!")
-			end
-			FunctionQueue[QueueIndex] = func;
-			-- app.PrintDebug("FR.Add."..name,QueueIndex,...)
-			local arrs = select("#", ...);
-			if arrs == 1 then
-				ParameterSingleQueue[QueueIndex] = ...;
-			elseif arrs > 1 then
-				ParameterBucketQueue[QueueIndex] = { ... };
-			end
-			QueueIndex = QueueIndex + 1;
-			StartCoroutine("Runner:"..name, RunnerCoroutine);
-		end,
-		-- Set a function to be run once the queue is empty. This function takes no parameters.
-		["OnEnd"] = function(func)
-			FunctionQueue[0] = func;
-		end,
-	};
-
-	-- Defines how many functions will be executed per frame. Executes via the Runner when encountered in the Queue, unless specified as 'instant'
-	Runner.SetPerFrame = function(count, instant)
-		if instant then
-			SetPerFrame(count);
-		else
-			Runner.Run(SetPerFrame, count);
-		end
-	end
-	Runner.Reset = Reset; -- for testing
-
-	return Runner;
-end
-
-app.FunctionRunner = CreateRunner("default");
-app.DynamicRunner = CreateRunner("dynamic");
-app.UpdateRunner = CreateRunner("update");
-app.FillRunner = CreateRunner("fill");
-end
 
 -- Sorting Logic
 do
