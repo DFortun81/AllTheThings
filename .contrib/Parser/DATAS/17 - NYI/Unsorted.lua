@@ -783,8 +783,6 @@ root(ROOTS.Unsorted, {
 				i(198834),	-- Scribbled Bark Chunks
 				i(202075),	-- Temp Currency
 
-				i(202181),	-- Best-root Tuber
-				i(202185),	-- Chillwrought Worm Meat
 				i(202202),	-- Revealing Mask
 				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber

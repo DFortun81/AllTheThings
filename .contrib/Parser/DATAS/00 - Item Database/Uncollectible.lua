@@ -651,6 +651,8 @@ i(7005);	-- Skinning Knife
 -- PATCH 10.0.7 --
 ------------------
 -- Quest Items --
+i(202181);	-- Best-root Tuber
+i(202185);	-- Chillwrought Worm Meat
 i(202362);	-- Arcane Focus
 i(203463);	-- Atrenosh's Journal
 i(202713);	-- Scattered Supplies
