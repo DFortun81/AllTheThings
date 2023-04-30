@@ -796,9 +796,9 @@ for key,value in pairs({
 			[-654] = "Équipement Honneur Saison Cataclysmique",				-- Honor Gear Cataclysmic Season
 			[-674] = select(2, GetAchievementInfo(6938)).." : Saison 11",	-- Cataclysmic Gladiator: Season 11
 		-- Mists of Pandaria PvP Seasons
-			[-675] = select(2, GetAchievementInfo(8214))..": Season 12",	-- Malevolent Gladiator: Season 12
+			[-675] = select(2, GetAchievementInfo(8214))..": Saison 12",	-- Malevolent Gladiator: Season 12
 			[-653] = "Équipement Honneur Saison Tyrannique",				-- Honor Gear Tyrannical Season
-			[-676] = select(2, GetAchievementInfo(8791))..": Season 13",	-- Tyrannical Gladiator: Season 13
+			[-676] = select(2, GetAchievementInfo(8791))..": Saison 13",	-- Tyrannical Gladiator: Season 13
 			[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
 			[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Pets
