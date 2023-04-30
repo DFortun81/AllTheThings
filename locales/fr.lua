@@ -2835,6 +2835,7 @@ for key,value in pairs({
 	[291233] = "Queue de saurolisque",	-- Saurolisk Tail
 	[291238] = "Larmes de Bwonsamdi",	-- Bwonsamdi's Tears
 	[291241] = "Racine noueuse",	-- Gnarl Root
+	[291257] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[291291] = "Avis de recherche : braconnier",	-- Wanted: Poacher
 	[292523] = "Avis de recherche",	-- Wanted Poster
 	[292673] = "Un parchemin humide",	-- A Damp Scroll
@@ -3025,6 +3026,7 @@ for key,value in pairs({
 	[327170] = "Râtelier d’armes",	-- Weapon Rack
 	[327230] = "Dépôt de gelée",	-- Jelly Deposit
 	[327407] = "Planque ogre précieuse",	-- Precious Ogre Stash
+	[327516] = "Dépôt de gelée",	-- Jelly Deposit
 	[327548] = "Plans de bloc d’alimentation",	-- Powerpack Blueprints
 	[327585] = "Tableau de récompense",	-- Bounty Board
 	[327591] = "Journal en bon état",	-- Preserved Journal
@@ -3631,6 +3633,7 @@ for key,value in pairs({
 	[380847] = "Amas d’émeraudes",	-- Emerald Gem Cluster
 	[380859] = "Bateau jouet rohart",	-- Tuskarr Toy Boat
 	[380860] = "Cor de Centaure",	-- Centaur Horn
+	[380867] = "Amas d’ambre",	-- Amber Gem Cluster
 	[380902] = "Champs de Férocité",	-- Fields of Ferocity
 	[380918] = "Statue ornementale brisée",	-- Broken Ornamented Statue
 	[380991] = "Tas de terre",	-- Dirt Mound
@@ -3660,6 +3663,13 @@ for key,value in pairs({
 	[381359] = "Tablette en pierre",	-- Stone Tablet
 	[381361] = "Fragment de pierre précieuse",	-- Precious Stone Fragment
 	[381362] = "Morceau de sculpture",	-- Chunk of Sculpture
+	[381365] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[381367] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[381369] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[381370] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[381373] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[381375] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[381377] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
 	[381483] = "Trésor de marmoni",	-- Marmoni's Prize
 	[381484] = "Os bien conservé",	-- Well-Preserved Bone
 	[381485] = "Barre de savon égarée",	-- Adventurer's Lost Soap Bar
@@ -3687,6 +3697,19 @@ for key,value in pairs({
 	[381981] = "Coffre du déluge",	-- Chest of the Flood
 	[382029] = "Terre retournée",	-- Disturbed Dirt
 	[382071] = "Filet de pêche plein",	-- Full Fishing Net
+	[382079] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382086] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382092] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382094] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382101] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382103] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382105] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382107] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382110] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382112] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382116] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382118] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[382120] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
 	[382166] = "Au Festin rubis !",	-- The Ruby Feast!
 	[382180] = "Banc de requins-renards magmatiques surchauffé",	-- Overheated Magma Thresher Pool
 	[382193] = "Coffre des éléments",	-- Chest of the Elements
@@ -3738,6 +3761,8 @@ for key,value in pairs({
 	--TODO: [386089] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386090] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386091] = "Ritual Offerings",	-- Ritual Offerings
+	[386106] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
+	[386108] = "Drapeau de l’expédition du Dracaret",	-- Dragonscale Expedition Flag
 	--TODO: [386123] = "Charred Egg",	-- Charred Egg
 	[386168] = "Cache longuécaille",	-- Farscale Cache
 	[386353] = "Coffre durci",	-- Hardened Chest
@@ -3897,7 +3922,6 @@ for key,value in pairs({
 	--TODO: [401241] = "Snubbed Snail Shells",	-- Snubbed Snail Shells
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
-	[999111] = "Amas d’ambre",	-- Amber Gem Cluster
 	[9000000] = "Pierre de vent sculptée",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	[9999891] = "Objectic principal uniquement",	-- Main Objective Only

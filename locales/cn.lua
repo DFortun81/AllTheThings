@@ -2850,6 +2850,7 @@ for key, value in pairs({
 	[291233] = "巨蜥之尾",	-- Saurolisk Tail
 	[291238] = "邦桑迪之泪",	-- Bwonsamdi's Tears
 	[291241] = "多瘤之根",	-- Gnarl Root
+	[291257] = "小宝箱",	-- Small Treasure Chest
 	[291291] = "通缉：偷猎者",	-- Wanted: Poacher
 	[292523] = "通缉布告",	-- Wanted Poster
 	[292673] = "受潮的卷轴",	-- A Damp Scroll
@@ -3040,6 +3041,7 @@ for key, value in pairs({
 	[327170] = "武器架",	-- Weapon Rack
 	[327230] = "蜜胶块",	-- Jelly Deposit
 	[327407] = "珍贵的食人魔宝物",	-- Precious Ogre Stash
+	--TODO: [327516] = "Jelly Deposit",	-- Jelly Deposit
 	[327548] = "能量背包图纸",	-- Powerpack Blueprints
 	[327585] = "悬赏榜",	-- Bounty Board
 	[327591] = "保存完好的日志",	-- Preserved Journal
@@ -3646,6 +3648,7 @@ for key, value in pairs({
 	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
 	[380859] = "海象人玩具船",	-- Tuskarr Toy Boat
 	[380860] = "半人马之角",	-- Centaur Horn
+	--TODO: [380867] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[380902] = "野性战场",	-- Fields of Ferocity
 	[380918] = "破损的精美雕像",	-- Broken Ornamented Statue
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
@@ -3675,6 +3678,13 @@ for key, value in pairs({
 	[381359] = "石板",	-- Stone Tablet
 	[381361] = "宝石的碎片",	-- Precious Stone Fragment
 	--TODO: [381362] = "Chunk of Sculpture",	-- Chunk of Sculpture
+	[381365] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag
+	[381367] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag
+	[381369] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[381370] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[381373] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[381375] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[381377] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
 	[381483] = "狨猴的奖品",	-- Marmoni's Prize
 	[381484] = "保存完好的骨头",	-- Well-Preserved Bone
 	[381485] = "冒险者丢失的肥皂块",	-- Adventurer's Lost Soap Bar
@@ -3702,6 +3712,19 @@ for key, value in pairs({
 	[381981] = "洪水宝箱",	-- Chest of the Flood
 	[382029] = "翻动过的泥土",	-- Disturbed Dirt
 	[382071] = "完整的渔网",	-- Full Fishing Net
+	[382079] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[382086] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag
+	[382092] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[382094] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[382101] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[382103] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[382105] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[382107] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[382110] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[382112] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[382116] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag
+	[382118] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[382120] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	[382193] = "元素宝箱",	-- Chest of the Elements
@@ -3753,6 +3776,8 @@ for key, value in pairs({
 	--TODO: [386089] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386090] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386091] = "Ritual Offerings",	-- Ritual Offerings
+	[386106] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
+	[386108] = "龙鳞探险队旗帜",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
 	--TODO: [386123] = "Charred Egg",	-- Charred Egg
 	--TODO: [386168] = "Farscale Cache",	-- Farscale Cache
 	--TODO: [386353] = "Hardened Chest",	-- Hardened Chest
@@ -3912,7 +3937,6 @@ for key, value in pairs({
 	--TODO: [401241] = "Snubbed Snail Shells",	-- Snubbed Snail Shells
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
-	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
