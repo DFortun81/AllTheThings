@@ -27,13 +27,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["questID"] = 70607,
 				["cost"] = { { "i", 199068, 1 }, },	--1xTime-Lost Memo
 			}),
-			o(380618, {	-- Draconic Flux
-				["coord"] = { 52.2, 80.5, THALDRASZUS },
-				["requireSkill"] = BLACKSMITHING,
-				["g"] = {
-					i(201006),	-- Draconic Flux
-				},
-			}),
 			o(381094, {	-- Elegant Canvas Brush
 				["coord"] = { 60.2, 41.6, THALDRASZUS },
 				["questID"] = 70609,
@@ -46,14 +39,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["g"] = {
 					i(198540),	-- Golden Claw
 				},
-			}),
-			o(384318, {	-- Inconspicuous Bookmark
-				["coord"] = { 58.5, 36.7, THALDRASZUS },
-				["questID"] = 72356,
-				["requireSkill"] = JEWELCRAFTING,
-				["g"] = {
-					i(194654),	-- Design: Convergent Prism (RECIPE!)
-				}
 			}),
 			o(381361, {	-- Precious Stone Fragment
 				["coord"] = { 57.1, 64.6, THALDRASZUS },

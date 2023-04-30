@@ -2075,6 +2075,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(201017),	-- Igneous Gem
 					},
 				}),
+				o(384318, {	-- Inconspicuous Bookmark
+					["coord"] = { 58.5, 36.7, THALDRASZUS },
+					["questID"] = 72356,
+					["g"] = {
+						i(194654),	-- Design: Convergent Prism (RECIPE!)
+					}
+				}),
 				o(380577, {	-- Lofty Malygite
 					["questID"] = 70282,
 					["coord"] = { 25.2, 34.8, OHNAHRAN_PLAINS },
