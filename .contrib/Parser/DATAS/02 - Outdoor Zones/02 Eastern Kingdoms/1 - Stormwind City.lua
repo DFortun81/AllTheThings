@@ -3782,11 +3782,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 188342,	-- Onnesa
 					["sourceQuest"] = 66390,	-- Missing Merchandise
 					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["timeline"] = { ADDED_9_2_5 },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(191865, {	-- Bottle of Briny Seawater
-							["timeline"] = { ADDED_9_2_5 },
+							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 						}),
 					},
 				}),
@@ -4293,7 +4293,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(66390, {	-- Missing Merchandise
 					["qg"] = 188342,	-- Onnesa
 					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["timeline"] = { ADDED_9_2_5 },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27038, {	-- Missing Parts

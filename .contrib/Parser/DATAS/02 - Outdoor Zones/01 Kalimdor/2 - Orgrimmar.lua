@@ -3468,11 +3468,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 187758,	-- Zaa'je
 					["sourceQuest"] = 66253,	-- Stolen Shipments
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
-					["timeline"] = { ADDED_9_2_5 },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(191682, {	-- Explosive Pie
-							["timeline"] = { ADDED_9_2_5 },
+							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 						}),
 					},
 				}),
@@ -3840,11 +3840,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(66253, {	-- Stolen Shipments
 					["qg"] = 187758,	-- Zaa'je
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
-					["timeline"] = { ADDED_9_2_5 },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(191408, {	-- Explosive Pie
-							["timeline"] = { ADDED_9_2_5 },
+							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 						}),
 					},
 				}),
