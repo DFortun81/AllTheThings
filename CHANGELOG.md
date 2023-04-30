@@ -24,4 +24,5 @@ Earn Lil' XT 🤖 through Prime Gaming until May 25, 2023. More details [here](h
 
 - Added Dragonscale Expedition flags.
 - Added all missing followers.
+- Updated French localization thanks to @Machou.
 - Other fixes.
