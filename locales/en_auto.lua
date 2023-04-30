@@ -2748,12 +2748,7 @@ local keys = {
 [74113]="Inscription Order: Leatherworking",
 [74114]="Inscription Order: Skinning",
 [74115]="Inscription Order: Tailoring",
-[74579]="Daily Zul'Gurub Cache",
-[74995]="Fifth Rock Mouse",
-[75526]="First Rock Mouse",
-[75527]="Second Rock Mouse",
-[75534]="Third Rock Mouse",
-[75535]="Fourth Rock Mouse"}}
+[74579]="Daily Zul'Gurub Cache"}}
 
 local L = app.L;
 for k,t in pairs(keys) do
