@@ -1314,7 +1314,7 @@ settings.UpdateMode = function(self, doRefresh)
 	if doRefresh then
 		self.NeedsRefresh = true;
 	end
-	app.PrintDebug("UpdateMode",doRefresh)
+	-- app.PrintDebug("UpdateMode",doRefresh)
 	-- FORCE = Force Update
 	-- 1 = Force Update IF NOT Skip
 	-- not = Soft Update

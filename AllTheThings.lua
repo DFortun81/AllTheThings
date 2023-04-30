@@ -15853,7 +15853,7 @@ local function UpdateWindowsOnEnd()
 	wipe(searchCache);
 end
 local function UpdateWindows(force, got)
-	-- app.PrintDebug("UpdateWindows",force,got)
+	-- app.PrintDebug("UpdateWindows",force and "FORCE" or "SOFT",got and "COLLECTED" or "PASSIVE")
 	app._LastUpdateTime = GetTimePreciseSec();
 	-- After handling all Updates, perform some logic
 	app.UpdateRunner.OnEnd(UpdateWindowsOnEnd);
@@ -17537,7 +17537,7 @@ local function UpdateWindow(self, force, got)
 			self.HasPendingUpdate = true;
 			force = nil;
 		end
-		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE" or "SOFT", visible and "VISIBLE" or "HIDDEN");
+		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE" or "SOFT", visible and "VISIBLE" or "HIDDEN",got and "COLLECTED" or "PASSIVE");
 		if force or visible then
 			-- clear existing row data for the update
 			if self.rowData then wipe(self.rowData);
@@ -22237,7 +22237,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					return;
 				end
 				-- Rebuild all World Quest data
-				-- print("Rebuild WQ Data")
+				-- app.PrintDebug("Rebuild WQ Data")
 				self.retry = nil;
 				-- Put a 'Clear World Quests' click first in the list
 				local temp = {{
