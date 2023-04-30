@@ -3690,7 +3690,7 @@ for key,value in pairs({
 	[381981] = "Cassa dell'Alluvione",	-- Chest of the Flood
 	[382029] = "Terra Smossa",	-- Disturbed Dirt
 	[382071] = "Rete da Pesca Piena",	-- Full Fishing Net
-	--TODO: [382079] = "Dragonscale Expedition Flag",	-- Dragonscale Expedition Flag
+	[382079] = "Bandiera della Spedizione delle Scaglie di Drago",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
 	[382086] = "Bandiera della Spedizione delle Scaglie di Drago",	-- Dragonscale Expedition Flag
 	[382092] = "Bandiera della Spedizione delle Scaglie di Drago",	-- Dragonscale Expedition Flag
 	[382094] = "Bandiera della Spedizione delle Scaglie di Drago",	-- Dragonscale Expedition Flag
@@ -3701,7 +3701,7 @@ for key,value in pairs({
 	[382110] = "Bandiera della Spedizione delle Scaglie di Drago",	-- Dragonscale Expedition Flag
 	[382112] = "Bandiera della Spedizione delle Scaglie di Drago",	-- Dragonscale Expedition Flag
 	[382116] = "Bandiera della Spedizione delle Scaglie di Drago",	-- Dragonscale Expedition Flag
-	--TODO: [382118] = "Dragonscale Expedition Flag",	-- Dragonscale Expedition Flag
+	[382118] = "Bandiera della Spedizione delle Scaglie di Drago",	-- Dragonscale Expedition Flag	--TODO: this was manually translated
 	[382120] = "Bandiera della Spedizione delle Scaglie di Drago",	-- Dragonscale Expedition Flag
 	[382166] = "Banchetto di Rubino!",	-- The Ruby Feast!
 	[382180] = "Banco di Plesiosauri del Magma Surriscaldato",	-- Overheated Magma Thresher Pool
