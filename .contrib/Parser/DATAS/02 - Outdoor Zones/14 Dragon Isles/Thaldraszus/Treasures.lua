@@ -12,10 +12,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					i(193066),	-- Chestnut (PET!)
 				},
 			}),
-			o(999111, {	-- Amber Gem Cluster	-- PH
+			o(380867, {	-- Amber Gem Cluster
 				["coord"] = { 52.6, 76.7, THALDRASZUS },
 				["questID"] = 70408,
-				["cost"] = { { "i", 198852, 1 }, },	--1xYennu's Map
+				["cost"] = { { "i", 198852, 1 }, },	-- 1x Yennu's Map
 				["g"] = {
 					i(200863),	-- Glimmering Nozdorite Cluster
 					i(194651),	-- Design: Jeweled Amber Whelpling (RECIPE!)
