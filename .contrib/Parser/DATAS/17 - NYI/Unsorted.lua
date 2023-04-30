@@ -780,7 +780,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MISC, {
 				i(198138),	-- Lightning-Infused Rock
-				i(198834),	-- Scribbled Bark Chunks
 				i(202075),	-- Temp Currency
 
 				i(202202),	-- Revealing Mask
@@ -853,7 +852,6 @@ root(ROOTS.Unsorted, {
 				q(72906),	-- [DNT] Storm Pet Battle
 				q(72907),	--
 				q(73194),	-- PTR:Up Close and Personal
-				q(73547),	--
 				q(74116),	-- PTR:Reach North
 				q(74309),	--
 				q(74314),	--
