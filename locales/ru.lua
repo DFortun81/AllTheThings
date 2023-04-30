@@ -2827,6 +2827,7 @@ for key,value in pairs({
 	[291233] = "Хвост завролиска",	-- Saurolisk Tail
 	[291238] = "Слезы Бвонсамди",	-- Bwonsamdi's Tears
 	[291241] = "Корявый корень",	-- Gnarl Root
+	[291257] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[291291] = "Разыскивается: Браконьер",	-- Wanted: Poacher
 	[292523] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[292673] = "Мокрый свиток",	-- A Damp Scroll
@@ -3017,6 +3018,7 @@ for key,value in pairs({
 	[327170] = "Оружейная стойка",	-- Weapon Rack
 	[327230] = "Сота с пчелиным молочком",	-- Jelly Deposit
 	[327407] = "Тайник с ценностями огров",	-- Precious Ogre Stash
+	[327516] = "Сота с пчелиным молочком",	-- Jelly Deposit
 	[327548] = "Чертеж: блок питания",	-- Powerpack Blueprints
 	[327585] = "Доска объявлений",	-- Bounty Board
 	[327591] = "Сохранившийся дневник",	-- Preserved Journal
@@ -3623,6 +3625,7 @@ for key,value in pairs({
 	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
 	[380859] = "Игрушечная лодка клыкарров",	-- Tuskarr Toy Boat
 	[380860] = "Кентаврский рог",	-- Centaur Horn
+	[380867] = "Янтарная друза",	-- Amber Gem Cluster
 	[380902] = "Поля Дикой Ярости",	-- Fields of Ferocity
 	[380918] = "Обломки украшенной узорами статуи",	-- Broken Ornamented Statue
 	[380991] = "Куча земли",	-- Dirt Mound
@@ -3652,6 +3655,13 @@ for key,value in pairs({
 	[381359] = "Каменная табличка",	-- Stone Tablet
 	[381361] = "Осколки драгоценного камня",	-- Precious Stone Fragment
 	[381362] = "Обломок изваяния",	-- Chunk of Sculpture
+	[381365] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[381367] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[381369] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[381370] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[381373] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[381375] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[381377] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
 	[381483] = "Трофей мармони",	-- Marmoni's Prize
 	[381484] = "Хорошо сохранившаяся кость",	-- Well-Preserved Bone
 	[381485] = "Потерянное мыло путешественника",	-- Adventurer's Lost Soap Bar
@@ -3679,6 +3689,19 @@ for key,value in pairs({
 	[381981] = "Сундук Прилива",	-- Chest of the Flood
 	[382029] = "Потревоженная почва",	-- Disturbed Dirt
 	[382071] = "Полная сеть",	-- Full Fishing Net
+	[382079] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382086] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382092] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382094] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382101] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382103] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382105] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382107] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382110] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382112] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382116] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382118] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[382120] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
 	[382166] = "Рубиновый Пир!",	-- The Ruby Feast!
 	[382180] = "Перегретый пруд лавазубов",	-- Overheated Magma Thresher Pool
 	[382193] = "Сундук стихий",	-- Chest of the Elements
@@ -3730,6 +3753,8 @@ for key,value in pairs({
 	--TODO: [386089] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386090] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386091] = "Ritual Offerings",	-- Ritual Offerings
+	[386106] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
+	[386108] = "Флаг Драконьей экспедиции",	-- Dragonscale Expedition Flag
 	--TODO: [386123] = "Charred Egg",	-- Charred Egg
 	[386168] = "Тайник клана Далекой Чешуи",	-- Farscale Cache
 	[386353] = "Укрепленный сундук",	-- Hardened Chest
@@ -3889,7 +3914,6 @@ for key,value in pairs({
 	--TODO: [401241] = "Snubbed Snail Shells",	-- Snubbed Snail Shells
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
-	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only

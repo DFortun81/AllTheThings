@@ -2836,6 +2836,7 @@ for key,value in pairs({
 	[291233] = "Rabo de Saurolisco",	-- Saurolisk Tail
 	[291238] = "Lágrimas do Bwonsamdi",	-- Bwonsamdi's Tears
 	[291241] = "Roer Raiz",	-- Gnarl Root
+	[291257] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[291291] = "Procura-se: Larápio",	-- Wanted: Poacher
 	[292523] = "Cartaz de Procura-se",	-- Wanted Poster
 	[292673] = "Pergaminho Empapado",	-- A Damp Scroll
@@ -3026,6 +3027,7 @@ for key,value in pairs({
 	[327170] = "Cavalete de Armas",	-- Weapon Rack
 	[327230] = "Depósito de Geleia",	-- Jelly Deposit
 	[327407] = "Esconderijo Precioso de Ogro",	-- Precious Ogre Stash
+	[327516] = "Depósito de Geleia",	-- Jelly Deposit
 	[327548] = "Projetos de Bateria Externa",	-- Powerpack Blueprints
 	[327585] = "Quadro de Recompensas",	-- Bounty Board
 	[327591] = "Diário Preservado",	-- Preserved Journal
@@ -3632,6 +3634,7 @@ for key,value in pairs({
 	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
 	[380859] = "Barco de Brinquedo Morsano",	-- Tuskarr Toy Boat
 	[380860] = "Chifre de Centauro",	-- Centaur Horn
+	--TODO: [380867] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[380902] = "Arenas da Ferocidade",	-- Fields of Ferocity
 	[380918] = "Estátua Ornamentada Quebrada",	-- Broken Ornamented Statue
 	[380991] = "Monturo de Terra",	-- Dirt Mound
@@ -3661,6 +3664,13 @@ for key,value in pairs({
 	[381359] = "Tabuleta de Pedra",	-- Stone Tablet
 	--TODO: [381361] = "Precious Stone Fragment",	-- Precious Stone Fragment
 	--TODO: [381362] = "Chunk of Sculpture",	-- Chunk of Sculpture
+	[381365] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[381367] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[381369] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[381370] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[381373] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[381375] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[381377] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
 	[381483] = "Prêmio de Saguiri",	-- Marmoni's Prize
 	[381484] = "Osso Bem Preservado",	-- Well-Preserved Bone
 	[381485] = "Sabonete Perdido do Aventureiro",	-- Adventurer's Lost Soap Bar
@@ -3688,6 +3698,19 @@ for key,value in pairs({
 	[381981] = "Baú da Inundação",	-- Chest of the Flood
 	[382029] = "Poeira Revolvida",	-- Disturbed Dirt
 	[382071] = "Rede de Pesca Cheia",	-- Full Fishing Net	--TODO: this was manually translated
+	[382079] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382086] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382092] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382094] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382101] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382103] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382105] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382107] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382110] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382112] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382116] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382118] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[382120] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
 	[382166] = "Banquete Rubi!",	-- The Ruby Feast!
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
@@ -3739,6 +3762,8 @@ for key,value in pairs({
 	--TODO: [386089] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386090] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386091] = "Ritual Offerings",	-- Ritual Offerings
+	[386106] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
+	[386108] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
 	--TODO: [386123] = "Charred Egg",	-- Charred Egg
 	[386168] = "Baú Escamalém",	-- Farscale Cache
 	[386353] = "Baú Endurecido",	-- Hardened Chest
@@ -3898,7 +3923,6 @@ for key,value in pairs({
 	--TODO: [401241] = "Snubbed Snail Shells",	-- Snubbed Snail Shells
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
-	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

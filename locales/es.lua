@@ -2840,6 +2840,7 @@ for key,value in pairs({
 	[291233] = "Cola de saurolisco",	-- Saurolisk Tail
 	[291238] = "Lágrimas de Bwonsamdi",	-- Bwonsamdi's Tears
 	[291241] = "Raíz de Gnarl",	-- Gnarl Root
+	[291257] = "Arqueta pequeña",	-- Small Treasure Chest
 	[291291] = "Se busca: furtivo",	-- Wanted: Poacher
 	[292523] = "Cartel de Se busca",	-- Wanted Poster
 	[292673] = "Un pergamino húmedo",	-- A Damp Scroll
@@ -3030,6 +3031,7 @@ for key,value in pairs({
 	[327170] = "Expositor de armas",	-- Weapon Rack
 	[327230] = "Depósito de jalea",	-- Jelly Deposit
 	[327407] = "Alijo de ogro precioso",	-- Precious Ogre Stash
+	[327516] = "Depósito de jalea",	-- Jelly Deposit
 	[327548] = "Planos del cargador",	-- Powerpack Blueprints
 	[327585] = "Tablón de recompensas",	-- Bounty Board
 	[327591] = "Diario conservado",	-- Preserved Journal
@@ -3636,6 +3638,7 @@ for key,value in pairs({
 	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
 	[380859] = "Barco de juguete colmillarr",	-- Tuskarr Toy Boat
 	[380860] = "Cuerno de centauro",	-- Centaur Horn
+	--TODO: [380867] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[380902] = "Campos de la Ferocidad",	-- Fields of Ferocity
 	[380918] = "Estatua adornada rota",	-- Broken Ornamented Statue
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
@@ -3665,6 +3668,13 @@ for key,value in pairs({
 	[381359] = "Tablilla de piedra",	-- Stone Tablet
 	[381361] = "Fragmento de piedra preciosa",	-- Precious Stone Fragment
 	[381362] = "Trozo de escultura",	-- Chunk of Sculpture
+	[381365] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[381367] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[381369] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[381370] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[381373] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[381375] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[381377] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
 	[381483] = "Premio de marmoni",	-- Marmoni's Prize
 	[381484] = "Hueso bien conservado",	-- Well-Preserved Bone
 	[381485] = "Pastilla de jabón para aventureros perdida",	-- Adventurer's Lost Soap Bar
@@ -3692,6 +3702,19 @@ for key,value in pairs({
 	[381981] = "Cofre de la inundación",	-- Chest of the Flood
 	[382029] = "Tierra revuelta",	-- Disturbed Dirt
 	[382071] = "Red de pesca llena",	-- Full Fishing Net
+	[382079] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382086] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382092] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382094] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382101] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382103] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382105] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382107] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382110] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382112] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382116] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382118] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[382120] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
 	[382166] = "¡El Festín Rubí!",	-- The Ruby Feast!
 	[382180] = "Charco de trilladores de magma sobrecalentado",	-- Overheated Magma Thresher Pool
 	[382193] = "Cofre de los elementos",	-- Chest of the Elements
@@ -3743,6 +3766,8 @@ for key,value in pairs({
 	--TODO: [386089] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386090] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386091] = "Ritual Offerings",	-- Ritual Offerings
+	[386106] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
+	[386108] = "Bandera de la Expedición Dragontina",	-- Dragonscale Expedition Flag
 	--TODO: [386123] = "Charred Egg",	-- Charred Egg
 	[386168] = "Alijo Lejoscama",	-- Farscale Cache
 	[386353] = "Cofre endurecido",	-- Hardened Chest
@@ -3902,7 +3927,6 @@ for key,value in pairs({
 	--TODO: [401241] = "Snubbed Snail Shells",	-- Snubbed Snail Shells
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
-	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

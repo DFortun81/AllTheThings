@@ -2836,6 +2836,7 @@ for key,value in pairs({
 	[291233] = "사우로리스크 꼬리",	-- Saurolisk Tail
 	[291238] = "브원삼디의 눈물",	-- Bwonsamdi's Tears
 	[291241] = "나무마디 줄기",	-- Gnarl Root
+	[291257] = "작은 보물 상자",	-- Small Treasure Chest
 	[291291] = "현상 수배: 밀렵꾼",	-- Wanted: Poacher
 	[292523] = "현상 수배 전단",	-- Wanted Poster
 	[292673] = "축축한 두루마리",	-- A Damp Scroll
@@ -3026,6 +3027,7 @@ for key,value in pairs({
 	[327170] = "무기 선반",	-- Weapon Rack
 	[327230] = "젤리 광맥",	-- Jelly Deposit
 	[327407] = "귀한 오우거 보관함",	-- Precious Ogre Stash
+	--TODO: [327516] = "Jelly Deposit",	-- Jelly Deposit
 	[327548] = "동력공급기 도면",	-- Powerpack Blueprints
 	[327585] = "현상 수배 게시판",	-- Bounty Board
 	[327591] = "보존된 일기",	-- Preserved Journal
@@ -3632,6 +3634,7 @@ for key,value in pairs({
 	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
 	[380859] = "투스카르 장난감 배",	-- Tuskarr Toy Boat
 	[380860] = "켄타우로스 뿔피리",	-- Centaur Horn
+	[380867] = "호박석 보석 덩어리",	-- Amber Gem Cluster
 	[380902] = "야성의 전장",	-- Fields of Ferocity
 	[380918] = "부서진 장식된 조각상",	-- Broken Ornamented Statue
 	[380991] = "흙더미",	-- Dirt Mound
@@ -3661,6 +3664,13 @@ for key,value in pairs({
 	[381359] = "돌 서판",	-- Stone Tablet
 	--TODO: [381361] = "Precious Stone Fragment",	-- Precious Stone Fragment
 	--TODO: [381362] = "Chunk of Sculpture",	-- Chunk of Sculpture
+	[381365] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[381367] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[381369] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[381370] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[381373] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[381375] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[381377] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
 	[381483] = "마르모니의 보상",	-- Marmoni's Prize
 	[381484] = "잘 보존된 뼈",	-- Well-Preserved Bone
 	[381485] = "모험가의 잃어버린 비누",	-- Adventurer's Lost Soap Bar
@@ -3688,6 +3698,19 @@ for key,value in pairs({
 	[381981] = "홍수의 보관함",	-- Chest of the Flood
 	[382029] = "흐트러진 흙",	-- Disturbed Dirt
 	[382071] = "완전한 낚시 그물",	-- Full Fishing Net
+	[382079] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382086] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382092] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382094] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382101] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382103] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382105] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382107] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382110] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382112] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382116] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382118] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[382120] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
 	[382180] = "과열된 용암 상어 떼",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
@@ -3739,6 +3762,8 @@ for key,value in pairs({
 	--TODO: [386089] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386090] = "Ritual Offerings",	-- Ritual Offerings
 	--TODO: [386091] = "Ritual Offerings",	-- Ritual Offerings
+	[386106] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
+	[386108] = "용비늘 원정대 깃발",	-- Dragonscale Expedition Flag
 	--TODO: [386123] = "Charred Egg",	-- Charred Egg
 	[386168] = "먼비늘 보관함",	-- Farscale Cache
 	[386353] = "경화된 보관함",	-- Hardened Chest
@@ -3898,7 +3923,6 @@ for key,value in pairs({
 	--TODO: [401241] = "Snubbed Snail Shells",	-- Snubbed Snail Shells
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
-	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
