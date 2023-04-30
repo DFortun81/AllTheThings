@@ -24,7 +24,7 @@ local L = app.L;
 	L.KNOWN_BY = "Connu par ";
 	L.REQUIRES = "Requiert";
 	L.RACE_LOCKED = "Race bloquée";
-	L.PLEASE_REPORT_MESSAGE = "Merci de signer sur le serveur Discord d’ATT dans le canal #retail-errors ! Merci !";
+	L.PLEASE_REPORT_MESSAGE = "Merci de signaler sur le serveur Discord d’ATT dans le canal #retail-errors ! Merci !";
 	L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.." + C pour copier le rapport multiligne dans votre presse-papiers)";
 	--TODO: L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
 	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.."-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
@@ -338,7 +338,7 @@ local L = app.L;
 		--TODO: L.SHOW_BOE_CHECKBOX_TOOLTIP = "Enable this setting if you want to show Bind-on-Equip/Account items.\n\nDisabling this setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
 		--TODO: L.SHOW_PVP_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.";
 		--TODO: L.SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which requires Pet Battles within the game.";
-		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignorer les objets LqE / LqR"; -- Ignore BoE/BoA Item ilters : à revoir
+		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignorer les objets LqE / LqR";	-- Ignore BoE/BoA Item ilters : à revoir
 		--TODO: L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE/BoA items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.";
 		--TODO: L.EXPAND_DIFFICULTY_CHECKBOX = "Expand Current Difficulty";
 		--TODO: L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
@@ -665,15 +665,15 @@ for key,value in pairs({
 		--TODO: [-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,	-- Common Boss Drop
 		--TODO: [-7] = WORLD.." "..RAID_BOSSES,						-- World Bosses
 		--TODO: [-11] = "Common Box Drops",							-- Common Box Drops
-		--TODO: [-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",-- Warpwood Quarter [East - Demon]
-		--TODO: [-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",-- Gordok Commons [North - Ogres]
-		--TODO: [-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",	-- Capital Gardens [West - Elves]
+		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [Est - Démons]",			-- Warpwood Quarter [East - Demon]
+		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [Nord - Ogres]",			-- Gordok Commons [North - Ogres]
+		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [Ouest - Elfes]",		-- Capital Gardens [West - Elves]
 		[-15] = "Exploration",										-- Exploration
 		[-19] = "Dragons du Cauchemar",								-- Dragons of Nightmare
-		--TODO: [-20] = "Common Vendor Items",						-- Common Vendor Items
+		[-20] = "Objets communs des vendeurs",						-- Common Vendor Items
 		[-21] = "Capitaines",										-- Captains
 		[-22] = "Secrets",											-- Secrets
-		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
+		[-23] = "Objet commun de donjon",							-- WoD Common Dungeon Drop
 		--TODO: [-26] = "Drops",									-- Drops
 		[-27] = "Bas",												-- Lower (Blackrock Spire)
 		[-28] = "Haut",												-- Upper (Blackrock Spire)
@@ -691,10 +691,10 @@ for key,value in pairs({
 		[-81] = "Troisième coffre",
 		[-82] = "Coffre final",
 	-- SM
-		--TODO: [-85] = "Graveyard",
-		--TODO: [-86] = "Library",
-		--TODO: [-87] = "Armory",
-		--TODO: [-88] = "Cathedral",
+		[-85] = "Cimetière",
+		[-86] = "Librairie",
+		[-87] = "Armurerie",
+		[-88] = "Cathédrale",
 	-- Garrisons
 		--TODO: [-99] = "Buildings",
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
@@ -714,7 +714,7 @@ for key,value in pairs({
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
 		[-217] = "Appâts",											-- Lures (for Fishing)
-		--TODO: [-218] = "Coastal",									-- Coastal (for Fishing)
+		[-218] = "Côtier",											-- Coastal (for Fishing)
 	--TODO: [-219] = "Sourceless",									-- Sourceless
 	-- PvP
 		--TODO: [-242] = "Unrated",									-- Unrated
@@ -742,25 +742,25 @@ for key,value in pairs({
 		[-422] = "Défenseurs Atal'ai",								-- Atal'ai Defenders
 		[-423] = "Les quatre cavaliers",							-- The Four Horsemen
 	-- BFA War Chest
-		--TODO: [-488] = "War Chest",								-- Daily War Chest
+		[-488] = "Coffre de Guerre",								-- Daily War Chest
 	-- Tarot Cards
-		--TODO: [-491] = "Tarot Cards",
+		[-491] = "Cartes du Jeu de tarot",
 	-- Misc
 		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-519] = "Événements mondiaux",								-- World Events
-		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
-		--TODO: [-522] = "Zalazane's Fall",												-- Zalazane's Fall
+		[-520] = "Pré-Lancement de l’Extension",					-- Expansion Pre-Launch
+		[-522] = "La chute de Zalazane",							-- Zalazane's Fall
 		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
 		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",	-- Warlords of Draenor: Iron Horde Incursion
 		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",		-- Legion: Legion Invasion
 		--TODO: [-527] = EXPANSION_NAME7..": War of the Thorns",	-- Battle for Azeroth: War of the Thorns
-		--TODO: [-532] = "Heroes of the Storm",						-- Heroes of the Storm
-		--TODO: [-533] = "Hearthstone",								-- Hearthstone
+		[-532] = "Heroes of the Storm",								-- Heroes of the Storm
+		[-533] = "Hearthstone",										-- Hearthstone
 		[-534] = "Edition Collector",								-- Collector's Edition
 		[-536] = "Hearthstone Mercenaires",							-- Hearthstone Mercenaries
-		--TODO: [-537] = "Diablo 20th Anniversary",					-- Diablo 20th Anniversary
-		--TODO: [-538] = "The Ahn'Qiraj War Effort",				-- The Ahn'Qiraj War Effort
+		[-537] = "20e anniversaire de Diablo",						-- Diablo 20th Anniversary
+		[-538] = "Effort de guerre d’Ahn'Qiraj",					-- The Ahn'Qiraj War Effort
 		[-539] = "Le Sceptre des Sables changeants",				-- The Scepter of the Shifting Sands
 		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
 		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
@@ -768,50 +768,50 @@ for key,value in pairs({
 		[-543] = "Invasions de Legion ",							-- Legion Invasions
 		[-579] = "Passe Porte des ténèbres",						-- Dark Portal Pass
 		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
-		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
+		[-581] = "Édition BC Classic Deluxe",						-- TBC Classic Deluxe Edition
 		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
 		--TODO: [-584] = "Dragonflight Seasonal Promotions",		-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names
-			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
-			--TODO: [-660] = "Combatant Gear",						-- Combatant PvP Gear (WoD, Legion)
-			--TODO: [-661] = "Gladiator Gear",						-- Gladiator PvP Gear
-			--TODO: [-662] = "Elite Gear",							-- Elite PvP Gear
+			[-659] = "Équipement Aspirant",							-- Aspirant PvP Gear (WoD, BfA)
+			[-660] = "Équipement Combattant",						-- Combatant PvP Gear (WoD, Legion)
+			[-661] = "Équipement Gladiateur",						-- Gladiator PvP Gear
+			[-662] = "Équipement Élite",							-- Elite PvP Gear
 		-- The Burning Crusade PvP Seasons
-			--TODO: [-664] = select(2, GetAchievementInfo(2091))..": Season 1",-- Gladiator: Season 1
-			--TODO: [-665] = select(2, GetAchievementInfo(418))..": Season 2",-- Merciless Gladiator: Season 2
-			--TODO: [-666] = select(2, GetAchievementInfo(419))..": Season 3",-- Vengeful Gladiator: Season 3
-			--TODO: [-667] = select(2, GetAchievementInfo(420))..": Season 4",-- Brutal Gladiator: Season 4
+			[-664] = select(2, GetAchievementInfo(2091)).." : Saison 1",	-- Gladiator: Season 1
+			[-665] = select(2, GetAchievementInfo(418)).." : Saison 2",		-- Merciless Gladiator: Season 2
+			[-666] = select(2, GetAchievementInfo(419)).." : Saison 3",		-- Vengeful Gladiator: Season 3
+			[-667] = select(2, GetAchievementInfo(420)).." : Saison 4",		-- Brutal Gladiator: Season 4
 		-- Wrath of the Lich-King PvP Seasons
-			--TODO: [-668] = select(2, GetAchievementInfo(3336))..": Season 5",-- Deadly Gladiator: Season 5
-			--TODO: [-657] = "Hateful Gladiator",					-- Hateful Gladiator: Season 5 ("medium pvp gear")
-			--TODO: [-669] = select(2, GetAchievementInfo(3436))..": Season 6",-- Furious Gladiator: Season 6
-			--TODO: [-670] = select(2, GetAchievementInfo(3758))..": Season 7",-- Relentless Gladiator: Season 7
-			--TODO: [-671] = select(2, GetAchievementInfo(4599))..": Season 8",-- Wrathful Gladiator: Season 8
+			[-668] = select(2, GetAchievementInfo(3336)).." : Saison 5",	-- Deadly Gladiator: Season 5
+			[-657] = "Gladiateur Haineux",									-- Hateful Gladiator: Season 5 ("medium pvp gear")
+			[-669] = select(2, GetAchievementInfo(3436)).." : Saison 6",	-- Furious Gladiator: Season 6
+			[-670] = select(2, GetAchievementInfo(3758)).." : Saison 7",	-- Relentless Gladiator: Season 7
+			[-671] = select(2, GetAchievementInfo(4599)).." : Saison 8",	-- Wrathful Gladiator: Season 8
 		-- Cataclysm PvP Seasons
-			--TODO: [-672] = select(2, GetAchievementInfo(6002))..": Season 9",-- Vicious Gladiator: Season 9
-			--TODO: [-656] = "Honor Gear Ruthless Season",			-- Honor Gear Ruthless Season
-			--TODO: [-673] = select(2, GetAchievementInfo(6124))..": Season 10",-- Ruthless Gladiator: Season 10
-			--TODO: [-654] = "Honor Gear Cataclysmic Season",		-- Honor Gear Cataclysmic Season
-			--TODO: [-674] = select(2, GetAchievementInfo(6938))..": Season 11",-- Cataclysmic Gladiator: Season 11
+			[-672] = select(2, GetAchievementInfo(6002)).." : Saison 9",	-- Vicious Gladiator: Season 9
+			[-656] = "Équipement Honneur Gladiateur sans pitié",			-- Honor Gear Ruthless Season
+			[-673] = select(2, GetAchievementInfo(6124)).." : Saison 10",	-- Ruthless Gladiator: Season 10
+			[-654] = "Équipement Honneur Saison Cataclysmique",				-- Honor Gear Cataclysmic Season
+			[-674] = select(2, GetAchievementInfo(6938)).." : Saison 11",	-- Cataclysmic Gladiator: Season 11
 		-- Mists of Pandaria PvP Seasons
-			--TODO: [-675] = select(2, GetAchievementInfo(8214))..": Season 12",-- Malevolent Gladiator: Season 12
-			--TODO: [-653] = "Honor Gear Tyrannical Season",		-- Honor Gear Tyrannical Season
-			--TODO: [-676] = select(2, GetAchievementInfo(8791))..": Season 13",-- Tyrannical Gladiator: Season 13
-			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
-			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
+			[-675] = select(2, GetAchievementInfo(8214))..": Saison 12",	-- Malevolent Gladiator: Season 12
+			[-653] = "Équipement Honneur Saison Tyrannique",				-- Honor Gear Tyrannical Season
+			[-676] = select(2, GetAchievementInfo(8791))..": Saison 13",	-- Tyrannical Gladiator: Season 13
+			[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
+			[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Pets
-		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
+		[-795] = "Mascotte des combat des donjons",					-- Pet Battle Dungeons
 	-- Secret Header
 		[-806] = "Boucle temporelle",								-- Waist of Time
 	-- Chests
 		[-851] = "Cache de l’Empire noir",							-- Black Empire Cache
 	-- Heart of Azeroth
 		[-853] = "Tous les Rôles",									-- All Roles
-		--TODO: [-854] = "DPS",										-- DPS
+		[-854] = "Dégâts",											-- DPS
 		[-855] = "Soigneurs",										-- Healers
-		--TODO: [-856] = "Tanks",									-- Tanks
+		[-856] = "Tanks",											-- Tanks
 		[-858] = "Rang 1",											-- Rank 1
 		[-859] = "Rang 2",											-- Rank 2
 		[-860] = "Rang 3",											-- Rank 3
@@ -822,19 +822,19 @@ for key,value in pairs({
 		[-921] = "Améliorations du sanctum",						-- Sanctum Upgrades
 		[-924] = "Réseau de transport",								-- Transport Network
 		-- SL Ardenweald/Night Fae
-			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
+			[-936] = "Forme d'âme",									-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			--TODO: [-973] = "Loyalty",								-- Loyalty
-			--TODO: [-975] = "Humility",							-- Humility
+			[-973] = "Loyauté",										-- Loyalty
+			[-975] = "Humilité",									-- Humility
 		-- SL Revendreth/Venthyr
-			--TODO: [-954] = "Inquisitors",							-- Inquisitors
-			--TODO: [-955] = "High Inquisitors",					-- High Inquisitors
-			--TODO: [-956] = "Grand Inquisitors",					-- Grand Inquisitors
+			[-954] = "Inquisiteurs",								-- Inquisitors
+			[-955] = "Grands inquisiteurs",							-- High Inquisitors
+			[-956] = "Inquisiteurs suprêmes",						-- Grand Inquisitors
 			[-967] = "Restauration de miroir",						-- Mirror Restoration
-			--TODO: [-968] = "Set A",								-- Set A
-			--TODO: [-969] = "Set B",								-- Set B
-			--TODO: [-970] = "Set C",								-- Set C
-			--TODO: [-971] = "Set D",								-- Set D
+			[-968] = "Tier A",										-- Set A
+			[-969] = "Tier B",										-- Set B
+			[-970] = "Tier C",										-- Set C
+			[-971] = "Tier D",										-- Set D
 	-- Dragonflight
 		[-1100] = "Manuscrit guette-drake",							-- Drakewatcher Manuscripts	--TODO: plural
 		[-1101] = "Les Tempêtes Primordiales",						-- Primal Storms
@@ -842,16 +842,16 @@ for key,value in pairs({
 		[-1110] = "Expédition du Dracaret",							-- Dragonscale Expedition
 		[-1120] = "Centaure maruuk",								-- Maruuk Centaur
 		[-1121] = "Clan des Aylaags",								-- Clan Aylaag
-		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
-		--TODO: [-1123] = "North",									-- North
-		--TODO: [-1124] = "East",									-- East
-		--TODO: [-1125] = "South",									-- South
-		--TODO: [-1126] = "West",									-- West
+		[-1122] = "Grandes Chasses",								-- Grand Hunts
+		[-1123] = "Nord",											-- North
+		[-1124] = "Est",											-- East
+		[-1125] = "Sud",											-- South
+		[-1126] = "Ouest",											-- West
 		[-1130] = "Rohart iskaarien",								-- Iskaara Tuskarr
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Concordat de Valdrakken",						-- Valdrakken Accord
-		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
-		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		[-1143] = "Rotation Rare de DF",							-- DF Rare Rotation
+		[-1144] = "Connaissance hebdomadaire de profession",		-- Weekly Profession Header
 		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
 		--TODO: [-1151] = "Bartering",								-- Bartering
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
@@ -860,7 +860,7 @@ for key,value in pairs({
 		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
 		--TODO: [-1203] = "Sniffenseeking",							-- Sniffenseeking
 	-- Warrior order hall lore items
-		--TODO: [-2200] = "Great Odyn and the Firelord",
+		[-2200] = "Le grand Odyn et le seigneur du feu",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
 		--TODO: [-2202] = "Halls of Gold and Glory",
 		--TODO: [-2203] = "The Keeper's Eye",
@@ -876,14 +876,14 @@ for key,value in pairs({
 		--TODO: [-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			--TODO: [-5200] = "Base Appearance",					-- Base Appearance
-			--TODO: [-5201] = "Class Hall Campaign",				-- Class Hall Campaign
+			[-5200] = "Apparence de base",							-- Base Appearance
+			[-5201] = "Campagne du Domaine de classe",				-- Class Hall Campaign
 			[-5202] = "L’équilibre de la puissance",				-- Balance of Power
-			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
+			[-5203] = "Récompenses préstigieuses",					-- Prestige Rewards
 			[-5204] = "Apparence de Challenge",						-- Challenge Appearance
 			[-5205] = "Apparence Cachée",							-- Hidden Appearance
 
-		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
+		[-7776] = "Fêtard de l’Hiver",							-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Visions de N'Zoth",								-- Visions of N'Zoth
 		[-10072] = "Assaut de N'Zoth Assault",						-- N'Zoth Assault
@@ -892,11 +892,11 @@ for key,value in pairs({
 		[-10077] = "Assaut : La guerre des clans",					-- Assault: The Warring Clans
 		[-10078] = "Assaut : L’essaim infini",						-- Assault: The Endless Swarm
 		[-10079] = "Assaut : Aqir exhumés",							-- Assault: Aqir Unearthed
-		--TODO: [-10081] = "Corrupted Area",						-- Corrupted Area
-		--TODO: [-10082] = "Lost Area",								-- Lost Area
+		[-10081] = "Zone corrompue",								-- Corrupted Area
+		[-10082] = "Zone perdue",									-- Lost Area
 		-- Shadowlands Achievement Headers
 			-- 9.1
-				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
+				[-10083] = "Assauts de congrégation",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Miroir brisé A-1",					-- Broken Mirror
 				[-1433952] = "Miroir brisé A-2",					-- Broken Mirror
@@ -915,12 +915,12 @@ do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
-	--TODO: [-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
-	--TODO: [-22] = "Naughty secrets...",
-	--TODO: [-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
-	--TODO: [-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
-	--TODO: [-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
-	--TODO: [-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
+	[-18] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
+	[-22] = "Vilains secrets...",
+	[-34] = "Les quêtes mondiales sont des quêtes limitées dans le temps, disponibles dans des lieux spécifiques avec des récompenses variables.\n\nN’oublie pas de consulter souvent la fenêtre des quêtes mondiales ATT (/attwq) pour voir quelles sont les objets limités dans le temps que tu dois collecter !",
+	[-169] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
+	[-799] = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
+	[-903] = "Ces objets peuvent provenir de coffres au trésor répétitifs, Criquet à souhait, de quêtes mondiales ou des missions de la table de commandement.",
 })
 do a[key] = value; end
 
@@ -3897,71 +3897,71 @@ for key,value in pairs({
 	--TODO: [401241] = "Snubbed Snail Shells",	-- Snubbed Snail Shells
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
-	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
-	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
+	[999111] = "Amas d’ambre",	-- Amber Gem Cluster
+	[9000000] = "Pierre de vent sculptée",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	[9999891] = "Objectic principal uniquement",	-- Main Objective Only
-	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas
+	[9999892] = "Objectif princiapl + 2 bonus de zones",	-- Main Objective + 2 Bonus Areas
 	[9999893] = "Nettoyage complet",	-- Full Clear
-	--TODO: [9999894] = "Full Clear + 1 Masks",	-- Full Clear + 1 Masks
-	--TODO: [9999895] = "Full Clear + 2 Masks",	-- Full Clear + 2 Masks
-	--TODO: [9999896] = "Full Clear + 3 Masks",	-- Full Clear + 3 Masks
-	--TODO: [9999897] = "Full Clear + 4 Masks",	-- Full Clear + 4 Masks
-	--TODO: [9999898] = "Full Clear + 5 Masks",	-- Full Clear + 5 Masks
+	[9999894] = "Nettoyage complet + 1 Masque",	-- Full Clear + 1 Masks
+	[9999895] = "Nettoyage complet + 2 Masques",	-- Full Clear + 2 Masks
+	[9999896] = "Nettoyage complet + 3 Masques",	-- Full Clear + 3 Masks
+	[9999897] = "Nettoyage complet + 4 Masques",	-- Full Clear + 4 Masks
+	[9999898] = "Nettoyage complet + 5 Masques",	-- Full Clear + 5 Masks
 	[9999908] = "|cFFFFFFFFÉtape 1:|r Rassemblez les consommables.",	-- |cFFFFFFFFStep 1:|r Gather Consumables.
 	[9999909] = "|cFFFFFFFFÉtape 2:|r Caverns of Consumption",	--TODO: |cFFFFFFFFStep 2:|r Caverns of Consumption
-	[9999910] = "|cFFFFFFFFÉtape 3:|r Fire Barrier",	--TODO: |cFFFFFFFFStep 3:|r Fire Barrier
-	[9999911] = "|cFFFFFFFFÉtape 4:|r Prismatic Barrier",	--TODO: |cFFFFFFFFStep 4:|r Prismatic Barrier
+	[9999910] = "|cFFFFFFFFÉtape 3:|r Barrière de feu",	-- |cFFFFFFFFStep 3:|r Fire Barrier
+	[9999911] = "|cFFFFFFFFÉtape 4:|r Barrière prismatique",	-- |cFFFFFFFFStep 4:|r Prismatic Barrier
 	[9999912] = "|cFFFFFFFFÉtape 5:|r Guetteuse consciencieuse",	-- |cFFFFFFFFStep 5:|r Diligent Watcher
-	[9999913] = "|cFFFFFFFFÉtape 6:|r Vine Barrier",	--TODO: |cFFFFFFFFStep 6:|r Vine Barrier
-	[9999914] = "|cFFFFFFFFÉtape 7:|r Water Barrier",	--TODO: |cFFFFFFFFStep 7:|r Water Barrier
+	[9999913] = "|cFFFFFFFFÉtape 6:|r Barrière de vigne",	-- |cFFFFFFFFStep 6:|r Vine Barrier
+	[9999914] = "|cFFFFFFFFÉtape 7:|r Barrière d'eau",	-- |cFFFFFFFFStep 7:|r Water Barrier
 	[9999915] = "|cFFFFFFFFÉtape 8:|r Guetteur de pierre",	-- |cFFFFFFFFStep 8:|r Stone Watcher
-	[9999916] = "|cFFFFFFFFÉtape 9:|r Ethereal Barrier",	--TODO: |cFFFFFFFFStep 9:|r Ethereal Barrier
+	[9999916] = "|cFFFFFFFFÉtape 9:|r Barrière éthérienne",	-- |cFFFFFFFFStep 9:|r Ethereal Barrier
 	[9999917] = "|cFFFFFFFFÉtape 10:|r Pierre étrange",	-- |cFFFFFFFFStep 10:|r Strange Stone
-	[9999918] = "|cFFFFFFFFÉtape 11:|r Metal Gate",	--TODO: |cFFFFFFFFStep 11:|r Metal Gate
+	[9999918] = "|cFFFFFFFFÉtape 11:|r Porte en métal",	-- |cFFFFFFFFStep 11:|r Metal Gate
 	[9999919] = "|cFFFFFFFFÉtape 12:|r Cube de sagesse",	-- |cFFFFFFFFStep 12:|r Wisdom Cube
 	[9999920] = "|cFFFFFFFFÉtape 13:|r Plaque ternie",	-- |cFFFFFFFFStep 13:|r Tarnished Plaque
 	[9999921] = "Placement",	-- Placement
 	[9999938] = "Tour du monde d’Uuna",	-- Uuna's World Tour
 	[9999946] = "Invoquer Baa'l",	-- Summon Baa'l
-	[13000000] = "|cFFFFFFFFÉtape 1:|r Purchase Talisman Trouveur de Trésors Tangibles",	--TODO: |cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking
-	[13000001] = "|cFFFFFFFFÉtape 2:|r Equip Talisman",	--TODO: |cFFFFFFFFStep 2:|r Equip Talisman
-	--TODO: [13000002] = "|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Scintillating Murloc Skin Lotion",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
-	--TODO: [13000003] = "Glittergill Glitter",	-- Glittergill Glitter
-	[13000004] = "|cFFFFFFFFÉtape 1:|r Seashell",	--TODO: |cFFFFFFFFStep 1:|r Seashell
-	[13000005] = "|cFFFFFFFFÉtape 2:|r Cavity-Free Great Shark Tooth",	--TODO: |cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth
-	[13000006] = "|cFFFFFFFFÉtape 3:|r Razoreel Larva",	--TODO: |cFFFFFFFFStep 3:|r Razoreel Larva
-	[13000007] = "|cFFFFFFFFÉtape 4:|r Well-Fed Doctor Fish",	--TODO: |cFFFFFFFFStep 4:|r Well-Fed Doctor Fish
-	[13000008] = "|cFFFFFFFFÉtape 5:|r Freshly Molted Crab Skin",	--TODO: |cFFFFFFFFStep 5:|r Freshly Molted Crab Skin
-	[13000009] = "|cFFFFFFFFÉtape 6:|r Glittergill Glitter",	--TODO: |cFFFFFFFFStep 6:|r Glittergill Glitter
-	--TODO: [13000010] = "Symbiotic Plankton",	-- Symbiotic Plankton
-	[13000011] = "|cFFFFFFFFÉtape 1:|r Seashell",	--TODO: |cFFFFFFFFStep 1:|r Seashell
-	[13000012] = "|cFFFFFFFFÉtape 2:|r Giant Giant Toenail Clipping",	--TODO: |cFFFFFFFFStep 2:|r Giant Giant Toenail Clipping
-	[13000013] = "|cFFFFFFFFÉtape 3:|r Makrura Eye",	--TODO: |cFFFFFFFFStep 3:|r Makrura Eye
-	[13000014] = "|cFFFFFFFFÉtape 4:|r Accidentally-Severed Seahorse Fin",	--TODO: |cFFFFFFFFStep 4:|r Accidentally-Severed Seahorse Fin
-	[13000015] = "|cFFFFFFFFÉtape 5:|r Shiny Sea Serpent Scale",	--TODO: |cFFFFFFFFStep 5:|r Shiny Sea Serpent Scale
-	[13000016] = "|cFFFFFFFFÉtape 6:|r Symbiotic Plankton",	--TODO: |cFFFFFFFFStep 6:|r Symbiotic Plankton
-	--TODO: [13000017] = "Scintillating Murloc Skin Lotion",	-- Scintillating Murloc Skin Lotion
-	--TODO: [13000018] = "|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r Potent Gastropod Gloop",	-- |cFFFFFFFFItem 2:|r Potent Gastropod Gloop
-	[13000019] = "|cFFFFFFFFÉtape 1:|r Seashell",	--TODO: |cFFFFFFFFStep 1:|r Seashell
-	[13000020] = "|cFFFFFFFFÉtape 2:|r Vantus Black Squid Ink",	--TODO: |cFFFFFFFFStep 2:|r Vantus Black Squid Ink
-	[13000021] = "|cFFFFFFFFÉtape 3:|r Super Slick Eel Slime",	--TODO: |cFFFFFFFFStep 3:|r Super Slick Eel Slime
-	[13000022] = "|cFFFFFFFFÉtape 4:|r Rock-Encrusted Whelk Shell",	--TODO: |cFFFFFFFFStep 4:|r Rock-Encrusted Whelk Shell
-	[13000023] = "|cFFFFFFFFÉtape 5:|r Potent Gastropod Gloop",	--TODO: |cFFFFFFFFStep 5:|r Potent Gastropod Gloop
-	--TODO: [13000024] = "|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r Captured Cavitation Bubble",	-- |cFFFFFFFFItem 3:|r Captured Cavitation Bubble
-	[13000025] = "|cFFFFFFFFÉtape 1:|r Seashell",	--TODO: |cFFFFFFFFStep 1:|r Seashell
-	[13000026] = "|cFFFFFFFFÉtape 2:|r Very Pretty Coral",	--TODO: |cFFFFFFFFStep 2:|r Very Pretty Coral
-	[13000027] = "|cFFFFFFFFÉtape 3:|r Iridescent Shimmerray Skin",	--TODO: |cFFFFFFFFStep 3:|r Iridescent Shimmerray Skin
-	[13000028] = "|cFFFFFFFFÉtape 4:|r Luxurous Luxscale Scale",	--TODO: |cFFFFFFFFStep 4:|r Luxurous Luxscale Scale
-	[13000029] = "|cFFFFFFFFÉtape 5:|r Captured Cavitation Bubble",	--TODO: |cFFFFFFFFStep 5:|r Captured Cavitation Bubble
+	[13000000] = "|cFFFFFFFFÉtape 1:|r Acheter un Talisman Trouveur de Trésors Tangibles",	-- |cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking
+	[13000001] = "|cFFFFFFFFÉtape 2:|r Équiper le Talisman Trouveur de Trésors Tangibles",	-- |cFFFFFFFFStep 2:|r Equip Talisman
+	[13000002] = "|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Lotion scintillante murloc pour la peau",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
+	[13000003] = "Paillettes de branchies-irisées",	-- Glittergill Glitter
+	[13000004] = "|cFFFFFFFFÉtape 1:|r Coquillage",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000005] = "|cFFFFFFFFÉtape 2:|r Dent de grand requin non cariée",	-- |cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth
+	[13000006] = "|cFFFFFFFFÉtape 3:|r Larve d’anguille-scie",	-- |cFFFFFFFFStep 3:|r Razoreel Larva
+	[13000007] = "|cFFFFFFFFÉtape 4:|r Poisson-docteur repu",	-- |cFFFFFFFFStep 4:|r Well-Fed Doctor Fish
+	[13000008] = "|cFFFFFFFFÉtape 5:|r Carapace de crabe fraîchement muée",	-- |cFFFFFFFFStep 5:|r Freshly Molted Crab Skin
+	[13000009] = "|cFFFFFFFFÉtape 6:|r Paillettes de branchies-irisées",	-- |cFFFFFFFFStep 6:|r Glittergill Glitter
+	[13000010] = "Plancton symbiotique",	-- Symbiotic Plankton
+	[13000011] = "|cFFFFFFFFÉtape 1:|r Coquillage",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000012] = "|cFFFFFFFFÉtape 2:|r Rognure d’ongle de géant géante",	-- |cFFFFFFFFStep 2:|r Giant Giant Toenail Clipping
+	[13000013] = "|cFFFFFFFFÉtape 3:|r Œil de makrura",	-- |cFFFFFFFFStep 3:|r Makrura Eye
+	[13000014] = "|cFFFFFFFFÉtape 4:|r Aileron d’hippocampe coupé accidentellement",	-- |cFFFFFFFFStep 4:|r Accidentally-Severed Seahorse Fin
+	[13000015] = "|cFFFFFFFFÉtape 5:|r Écaille de serpent de mer brillante",	-- |cFFFFFFFFStep 5:|r Shiny Sea Serpent Scale
+	[13000016] = "|cFFFFFFFFÉtape 6:|r Plancton symbiotique",	-- |cFFFFFFFFStep 6:|r Symbiotic Plankton
+	[13000017] = "Lotion scintillante murloc pour la peau",	-- Scintillating Murloc Skin Lotion
+	[13000018] = "|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r Glaire gluante de gastéropode",	-- |cFFFFFFFFItem 2:|r Potent Gastropod Gloop
+	[13000019] = "|cFFFFFFFFÉtape 1:|r Coquillage",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000020] = "|cFFFFFFFFÉtape 2:|r Encre noire de calmar de Vantus",	-- |cFFFFFFFFStep 2:|r Vantus Black Squid Ink
+	[13000021] = "|cFFFFFFFFÉtape 3:|r Gelée d’anguille super glissante",	-- |cFFFFFFFFStep 3:|r Super Slick Eel Slime
+	[13000022] = "|cFFFFFFFFÉtape 4:|r Coquille de bulot incrustée de pierres",	-- |cFFFFFFFFStep 4:|r Rock-Encrusted Whelk Shell
+	[13000023] = "|cFFFFFFFFÉtape 5:|r Glaire gluante de gastéropode",	-- |cFFFFFFFFStep 5:|r Potent Gastropod Gloop
+	[13000024] = "|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r Bulle de cavitation emprisonnée",	-- |cFFFFFFFFItem 3:|r Captured Cavitation Bubble
+	[13000025] = "|cFFFFFFFFÉtape 1:|r Coquillage",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000026] = "|cFFFFFFFFÉtape 2:|r Très joli corail",	-- |cFFFFFFFFStep 2:|r Very Pretty Coral
+	[13000027] = "|cFFFFFFFFÉtape 3:|r Peau de raie-miroir iridescente",	-- |cFFFFFFFFStep 3:|r Iridescent Shimmerray Skin
+	[13000028] = "|cFFFFFFFFÉtape 4:|r Écaille de luxécaille luxueuse",	-- |cFFFFFFFFStep 4:|r Luxurous Luxscale Scale
+	[13000029] = "|cFFFFFFFFÉtape 5:|r Bulle de cavitation emprisonnée",	-- |cFFFFFFFFStep 5:|r Captured Cavitation Bubble
 	[13000030] = "Acheter un Monocle de cristal rouge",	-- Purchase Red Crystal Monocle
 	[13000031] = "Monocle de cristal rouge",	-- Red Crystal Monocle
-	[13000032] = "|cFFFFFFFFÉtape 3:|r Pick a Monocle (Or Don't!)",	--TODO: |cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)
-	[13000033] = "|cFFFFFFFFÉtape 4:|r Suramar Beams",	--TODO: |cFFFFFFFFStep 4:|r Suramar Beams
-	[13000034] = "|cFFFFFFFFÉtape 5:|r Cat Code",	--TODO: |cFFFFFFFFStep 5:|r Cat Code
-	[13000035] = "|cFFFFFFFFÉtape 6:|r Jumping Puzzle",	--TODO: |cFFFFFFFFStep 6:|r Jumping Puzzle
-	[13000036] = "|cFFFFFFFFÉtape 7:|r Arcane Lava",	--TODO: |cFFFFFFFFStep 7:|r Arcane Lava
-	[13000037] = "|cFFFFFFFFÉtape 8:|r Conscience collective",	--TODO: |cFFFFFFFFStep 8:|r Hivemind
+	[13000032] = "|cFFFFFFFFÉtape 3:|r Choisir un monocle (Ou pas !)",	-- |cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)
+	[13000033] = "|cFFFFFFFFÉtape 4:|r Raypons de Suramar",	-- |cFFFFFFFFStep 4:|r Suramar Beams
+	[13000034] = "|cFFFFFFFFÉtape 5:|r Code du Chat",	-- |cFFFFFFFFStep 5:|r Cat Code
+	[13000035] = "|cFFFFFFFFÉtape 6:|r Casse-tête de saut",	-- |cFFFFFFFFStep 6:|r Jumping Puzzle
+	[13000036] = "|cFFFFFFFFÉtape 7:|r Lave arcanique",	-- |cFFFFFFFFStep 7:|r Arcane Lava
+	[13000037] = "|cFFFFFFFFÉtape 8:|r Conscience collective",	-- |cFFFFFFFFStep 8:|r Hivemind
 	[1278968766] = "Rune",	-- Rune
 	[1278968767] = "Rune",	-- Rune
 	[1278968768] = "Rune",	-- Rune
@@ -3984,24 +3984,24 @@ do a[key] = value; end
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
 	-- Seasonal Filters
-		[1000] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "Fête des Brasseurs"},
-		[1001] = {4, "|CFF00FFDEThis requires the Children's Week Holiday to be Active.|r", "Semaine des enfants"},
-		[1012] = {4, "|CFF00FFDEThis requires the Darkmoon Faire Holiday to be Active.|r", "Foire de Sombrelune" },
-		[1002] = {4, "|CFF00FFDEThis requires the Day of the Dead Holiday to be Active.|r", "Jour des morts"},
-		[1003] = {4, "|CFF00FFDEThis requires the Feast of Winter Veil Holiday to be Active.|r", "Voile d'hiver"},
-		[1009] = {4, "|CFF00FFDEThis requires the Fireworks Celebration Holiday to be Active.|r", "Fêtes des artifices" },
-		[1004] = {4, "|CFF00FFDEThis requires the Hallow's End Holiday to be Active.|r", "Sanssaint"},
-		[1005] = {4, "|CFF00FFDEThis requires the Harvest Festival Holiday to be Active.|r", "Fête des moissons"},
-		[1006] = {4, "|CFF00FFDEThis requires the Love is in the Air Holiday to be Active.|r", "De l'amour dans l'air"},
-		[1007] = {4, "|CFF00FFDEThis requires the Lunar Festival Holiday to be Active.|r", "Fête lunaire"},
-		[1014] = {4, "|CFF00FFDEThis requires a Specific Micro Holiday to be Active.|r", "Micro Holiday"},
-		[1008] = {4, "|CFF00FFDEThis requires the Midsummer Fire Festival Holiday to be Active.|r", "Fête du Feu du solstice d'été"},
-		[1010] = {4, "|CFF00FFDEThis requires the Noblegarden Holiday to be Active.|r", "Le Jardin des nobles"},
-		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "Les Bienfaits du pèlerin"},
-		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "Jour des pirates"},
-		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "Concours de pêche de Strangleronce"},
-		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "Marcheurs du temps"},
-		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "Anniversaire de WoW"},
+		[1000] = {4, "|CFF00FFDEPour cela, l’événement la Fête des Brasseurs doit être actif.|r", "Fête des Brasseurs"},
+		[1001] = {4, "|CFF00FFDEPour cela, l’événement la Semaine des enfants doit être actif.|r", "Semaine des enfants"},
+		[1012] = {4, "|CFF00FFDEPour cela, l’événement la Foire de Sombrelune doit être actif.|r", "Foire de Sombrelune" },
+		[1002] = {4, "|CFF00FFDEPour cela, l’événement le Jour des morts doit être actif.|r", "Jour des morts"},
+		[1003] = {4, "|CFF00FFDEPour cela, l’événement le Voile d'hiver doit être actif.|r", "Voile d'hiver"},
+		[1009] = {4, "|CFF00FFDEPour cela, l’événement la Fêtes des artifices doit être actif.|r", "Fêtes des artifices" },
+		[1004] = {4, "|CFF00FFDEPour cela, l’événement la Sanssaint doit être actif.|r", "Sanssaint"},
+		[1005] = {4, "|CFF00FFDEPour cela, l’événement la Fête des moissons doit être actif.|r", "Fête des moissons"},
+		[1006] = {4, "|CFF00FFDEPour cela, l’événement De l'amour dans l'air doit être actif.|r", "De l'amour dans l'air"},
+		[1007] = {4, "|CFF00FFDEPour cela, l’événement la Fête lunaire doit être actif.|r", "Fête lunaire"},
+		[1014] = {4, "|CFF00FFDEPour cela, l’événement Micro Holiday doit être actif.|r", "Micro Holiday"},
+		[1008] = {4, "|CFF00FFDEPour cela, l’événement la Fête du Feu du solstice d'été doit être actif.|r", "Fête du Feu du solstice d'été"},
+		[1010] = {4, "|CFF00FFDEPour cela, l’événement Le Jardin des nobles doit être actif.|r", "Le Jardin des nobles"},
+		[1013] = {4, "|CFF00FFDEPour cela, l’événement Les Bienfaits du pèlerin doit être actif.|r", "Les Bienfaits du pèlerin"},
+		[1011] = {4, "|CFF00FFDEPour cela, l’événement le Jour des pirates doit être actif.|r", "Jour des pirates"},
+		[1015] = {4, "|CFF00FFDEPour cela, l’événement le Concours de pêche de Strangleronce doit être actif.|r", "Concours de pêche de Strangleronce"},
+		[1016] = {4, "|CFF00FFDEPour cela, l’événement les Marcheurs du temps doit être actif.|r", "Marcheurs du temps"},
+		[1017] = {4, "|CFF00FFDEPour cela, l’événement l'Anniversaire de WoW doit être actif.|r", "Anniversaire de WoW"},
 })
 do a[key] = value; end
 
