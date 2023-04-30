@@ -627,7 +627,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 							i(187542),	-- Jaithys, the Prison Blade
 							i(186410, {	-- Jaithys, the Prison Blade
 								["description"] = "Only availabe in the great Vault.",										
-								["timeline"] = { REMOVED_10_0_2 },
+								["timeline"] = { REMOVED_10_0_2_LAUNCH },
 							}),
 							i(186406),	-- Maledict Opus
 							i(187056, {	-- The Devouring Cold
@@ -849,7 +849,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
 							["description"] = "Only availabe in the great Vault.",										
-							["timeline"] = { REMOVED_10_0_2 },
+							["timeline"] = { REMOVED_10_0_2_LAUNCH },
 						}),
 						i(186406),	-- Maledict Opus
 						i(187056, {	-- The Devouring Cold
@@ -1058,7 +1058,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
 							["description"] = "Only availabe in the great Vault.",										
-							["timeline"] = { REMOVED_10_0_2 },
+							["timeline"] = { REMOVED_10_0_2_LAUNCH },
 						}),
 						i(186406),	-- Maledict Opus
 						i(187056, {	-- The Devouring Cold
@@ -1280,7 +1280,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
 							["description"] = "Only availabe in the great Vault.",										
-							["timeline"] = { REMOVED_10_0_2 },
+							["timeline"] = { REMOVED_10_0_2_LAUNCH },
 						}),
 						i(186406),	-- Maledict Opus
 						i(187056, {	-- The Devouring Cold
