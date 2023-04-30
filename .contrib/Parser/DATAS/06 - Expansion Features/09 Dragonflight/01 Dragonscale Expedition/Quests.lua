@@ -183,12 +183,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 188265 },	-- Rae'ana
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
+					i(197369, {	-- Renewed Proto-Drake: Brown Hair (DM!)
+						["description"] = "This item is only available to pick the very first time you do this quest on your account. If you didn't pick it, it's unobtainable for you. Using an alt does not work either.\nPlease send a bug report to Blizzard.",
+						["timeline"] = { ADDED_10_0_7 },
+					}),
 					i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
 					i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
 					i(197360),	-- Renewed Proto-Drake: Spined Brow (DM!)
-					i(197369, {	-- Renewed Proto-Drake: Brown Hair (DM!)
-						["description"] = "This item is only available to pick the very first time you do this quest on your account. If you didn't pick it, it's unobtainable for you. Using an alt does not work either.\nPlease send a bug report to Blizzard.",
-					}),
 				},
 			}),
 			q(72035, {	-- Dragon Isles Supplies
@@ -655,6 +656,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["sourceQuests"] = { 71152 },	-- Back to the Main Hall
 				["provider"] = { "n", 192820 },	-- Toddy Whiskers
 				["coord"] = { 55.1, 56.2, THALDRASZUS },
+				["g"] = {
+					i(192768),	-- Titan Disk
+				},
 			}),
 			q(66547, {	-- It Belongs in a Museum... Eventually
 				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
@@ -810,38 +814,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TI
 		q(70317),	-- Ensemble: Renowned Expeditioner's Mail Armor
 		q(70318),	-- Ensemble: Renowned Expeditioner's Plate Armor
 
-		-- Achievement Dragonscale Expedition: The Highest Peaks
-		q(70823),	-- Flag at 56.0, 45.3, THE_WAKING_SHORES
-		q(70824),	-- Flag at 73.4, 38.8, THE_WAKING_SHORES
-		q(70825),	-- Flag at 43.9, 62.9, THE_WAKING_SHORES
-		q(70826),	-- Flag at 28.7, 47.7, THE_WAKING_SHORES
-		q(71204),	-- Flag at 54.8, 74.1, THE_WAKING_SHORES
-		q(70827),	-- Flag at 57.8, 30.8, OHNAHRAN_PLAINS
-		q(71207),	-- Flag at 30.4, 36.4, OHNAHRAN_PLAINS
-		q(71200),	-- Flag at 28.3, 77.6, OHNAHRAN_PLAINS
-		q(71208),	-- Flag at 86.3, 39.3, OHNAHRAN_PLAINS
-		q(71218),	-- Flag at 46.1, 25.0, THE_AZURE_SPAN
-		q(71215),	-- Flag at 31.9, 27.0, THE_AZURE_SPAN
-		q(71216),	-- Flag at 37.5, 66.2, THE_AZURE_SPAN
-		q(71220),	-- Flag at 63.1, 48.7, THE_AZURE_SPAN
-		q(71217),	-- Flag at 77.4, 18.4, THE_AZURE_SPAN
-		q(71221),	-- Flag at 74.9, 43.2, THE_AZURE_SPAN
-		q(71222),	-- Flag at 34.0, 84.9, THALDRASZUS
-		q(70024),	-- Flag at 46.1, 74.0, THALDRASZUS
-		q(70039),	-- Flag at 50.2, 81.6, THALDRASZUS
-		q(71223),	-- Flag at 65.7, 75.0, THALDRASZUS
-		q(71224),	-- Flag at 64.6, 56.7, THALDRASZUS
-
 		-- Quest sequences
 		q(70570),	-- triggered when speaking with Watcher Koranos during 'Speak with Koranos' (66673)
-	}),
-})));
-
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-	n(DRAGONSCALE_EXPEDITION, {
-		q(73696),	-- Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
-		q(73699),	-- Flag at 55.3, 26.4, THE_FORBIDDEN_REACH
-		q(73702),	-- Flag at 80.5, 48.1, THE_FORBIDDEN_REACH
-		q(73700),	-- Flag at 34.8, 30.2, THE_FORBIDDEN_REACH
 	}),
 })));

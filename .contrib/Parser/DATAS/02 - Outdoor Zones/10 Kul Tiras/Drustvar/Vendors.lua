@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(162256, {	-- Recipe: Coastal Rejuvenation Potion [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162361, {	-- Recipe: Contract: Order of Embers [Rank 2] (RECIPE!)
+					i(162361, {	-- Technique: Contract: Order of Embers [Rank 2] (RECIPE!)
 						["cost"] = 11000000,	-- 1,100g
 					}),
 					i(162135, {	-- Recipe: Flask of the Undertow [Rank 3] (RECIPE!)
@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(162131, {	-- Recipe: Potion of Rising Death [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162412, {	-- Recipe: Recurve Bow of the Strands [Rank 3] (RECIPE!)
+					i(162412, {	-- Pattern: Recurve Bow of the Strands [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(161908, {	-- Dusky Waycrest Gryphon (MOUNT!)

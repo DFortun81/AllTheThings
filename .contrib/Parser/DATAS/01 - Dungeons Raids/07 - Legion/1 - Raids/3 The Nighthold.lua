@@ -593,7 +593,7 @@ _.Instances = { tier(LEGION_TIER, {
 				})),
 				cr(103685, e(1762, {	-- Tichondrius
 					ach(10704),	-- Not For You
-					i(137687),	-- Recipe: Fel Core Hound Harness (RECIPE!)
+					i(137687),	-- Plans: Fel Core Hound Harness (RECIPE!)
 					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
 					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
 					i(143566, {	-- Shoulders of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -948,7 +948,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(140834),	-- Soul of Flame
 				})),
 				cr(103685, e(1762, {	-- Tichondrius
-					i(137687),	-- Recipe: Fel Core Hound Harness (RECIPE!)
+					i(137687),	-- Plans: Fel Core Hound Harness (RECIPE!)
 					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
 					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
 					i(143566, {	-- Shoulders of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -1305,7 +1305,7 @@ _.Instances = { tier(LEGION_TIER, {
 				})),
 				cr(103685, e(1762, {	-- Tichondrius
 					ach(10847),	-- Mythic: Tichondrius
-					i(137687),	-- Recipe: Fel Core Hound Harness (RECIPE!)
+					i(137687),	-- Plans: Fel Core Hound Harness (RECIPE!)
 					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
 					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
 					i(143566, {	-- Shoulders of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]

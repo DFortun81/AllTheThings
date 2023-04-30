@@ -5113,13 +5113,13 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			{	-- Spirited Kraken's Eye Loop
 				["spellID"] = 289180,	-- Spirited Kraken's Eye Loop
 				["groups"] = {
-					i(166543),	-- Recipe: Eternal Kraken's Eye Loop
+					i(166543),	-- Design: Eternal Kraken's Eye Loop
 				},
 			},
 			{	-- Tidal Kraken's Eye Loop
 				["spellID"] = 289179,	-- Tidal Kraken's Eye Loop
 				["groups"] = {
-					i(166542),	-- Recipe: Spirited Kraken's Eye Loop
+					i(166542),	-- Design: Spirited Kraken's Eye Loop
 				},
 			},
 		}),

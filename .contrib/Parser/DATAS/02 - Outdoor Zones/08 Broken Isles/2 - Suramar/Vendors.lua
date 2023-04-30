@@ -224,82 +224,82 @@ _.Zones =
 				n(98969,  {	-- Stalriss Dawnrunner <Leatherworking Trainer>
 					["coord"] = { 26.6, 71.6, SURAMAR },
 					["g"] = {
-						i(140637, {	-- Recipe: Dreadleather Belt [Rank 1] (RECIPE!)
+						i(140637, {	-- Pattern: Dreadleather Belt [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 124439, 20 },	-- 20x Unbroken Tooth
 							},
 						}),
-						i(140642, {	-- Recipe: Dreadleather Footpads [Rank 1] (RECIPE!)
+						i(140642, {	-- Pattern: Dreadleather Footpads [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 124438, 20 },	-- 20x Unbroken Claw
 							},
 						}),
-						i(140641, {	-- Recipe: Dreadleather Gloves [Rank 1] (RECIPE!)
+						i(140641, {	-- Pattern: Dreadleather Gloves [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124113, 100 }, },	-- 100x Stonehide Leather
 						}),
-						i(140643, {	-- Recipe: Dreadleather Jerkin [Rank 1] (RECIPE!)
+						i(140643, {	-- Pattern: Dreadleather Jerkin [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 123918, 20 },	-- 20x Leystone Ore
 							},
 						}),
-						i(140640, {	-- Recipe: Dreadleather Mask [Rank 1] (RECIPE!)
+						i(140640, {	-- Pattern: Dreadleather Mask [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 130180, 5 },		-- 5x  Dawnlight
 							},
 						}),
-						i(140639, {	-- Recipe: Dreadleather Pants [Rank 1] (RECIPE!)
+						i(140639, {	-- Pattern: Dreadleather Pants [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 124437, 20 },	-- 20x Shal'dorei Silk
 							},
 						}),
-						i(140638, {	-- Recipe: Dreadleather Shoulderguard [Rank 1] (RECIPE!)
+						i(140638, {	-- Pattern: Dreadleather Shoulderguard [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 124440, 20 },	-- 20x Arkhana
 							},
 						}),
-						i(140645, {	-- Recipe: Gravenscale Girdle [Rank 1] (RECIPE!)
+						i(140645, {	-- Pattern: Gravenscale Girdle [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 124439, 20 },	-- 20x Unbroken Tooth
 							},
 						}),
-						i(140649, {	-- Recipe: Gravenscale Grips [Rank 1] (RECIPE!)
+						i(140649, {	-- Pattern: Gravenscale Grips [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 							},
 						}),
-						i(140651, {	-- Recipe: Gravenscale Hauberk [Rank 1] (RECIPE!)
+						i(140651, {	-- Pattern: Gravenscale Hauberk [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 123918, 20 },	-- 20x Leystone Ore
 							},
 						}),
-						i(140647, {	-- Recipe: Gravenscale Leggings [Rank 1] (RECIPE!)
+						i(140647, {	-- Pattern: Gravenscale Leggings [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 124437, 20 },	-- 20x Shal'dorei Silk
 							},
 						}),
-						i(140646, {	-- Recipe: Gravenscale Spaulders [Rank 1] (RECIPE!)
+						i(140646, {	-- Pattern: Gravenscale Spaulders [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 124440, 20 },	-- 20x Arkhana
 							},
 						}),
-						i(140650, {	-- Recipe: Gravenscale Treads [Rank 1] (RECIPE!)
+						i(140650, {	-- Pattern: Gravenscale Treads [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 124438, 20 },	-- 20x Unbroken Claw
 							},
 						}),
-						i(140648, {	-- Recipe: Gravenscale Warhelm [Rank 1] (RECIPE!)
+						i(140648, {	-- Pattern: Gravenscale Warhelm [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 130182, 5 },		-- 5x  Maelstrom Sapphire

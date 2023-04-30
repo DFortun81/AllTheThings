@@ -11,7 +11,7 @@ repos:
     - id: black
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.3.1
+    rev: v3.3.2
     hooks:
     - id: pyupgrade
       args: ["--py311-plus"]
@@ -27,4 +27,4 @@ repos:
     hooks:
     - id: mypy
       args: [--strict]
-      additional_dependencies: [aiohttp, types-beautifulsoup4, types-requests]
+      additional_dependencies: [aiohttp, types-beautifulsoup4]

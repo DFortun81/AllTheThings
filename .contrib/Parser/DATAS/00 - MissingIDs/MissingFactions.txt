@@ -639,4 +639,3 @@ faction(2557),	-- Hearthfire Fellowship
 10.1.0.48480
 faction(2564),	-- Loamm Niffen
 faction(2565),	-- Loamm Niffen (Paragon)
-faction(2568),	-- Glimmerogg Racer

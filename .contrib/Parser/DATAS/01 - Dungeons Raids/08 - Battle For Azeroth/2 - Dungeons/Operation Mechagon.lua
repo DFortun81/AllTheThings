@@ -148,7 +148,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								i(168971),	-- Swift Pneumatic Grips
 								i(168968),	-- Flame-Seared Leggings
 								i(168972),	-- Pyroclastic Greatboots
-								i(169529),	-- Recipe: Monelite Reinforced Chassis (RECIPE!)
+								i(169529),	-- Plans: Monelite Reinforced Chassis (RECIPE!)
 								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)
 							},
 						}),
@@ -330,19 +330,19 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								i(168971),	-- Swift Pneumatic Grips
 								i(168968),	-- Flame-Seared Leggings
 								i(168972),	-- Pyroclastic Greatboots
-								i(169529),	-- Recipe: Monelite Reinforced Chassis (RECIPE!)
+								i(169529),	-- Plans: Monelite Reinforced Chassis (RECIPE!)
 								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)
 								n(MYTHIC_PLUS, {
 									-- This one I thoguht was confirmed, but all screenshots were removed once it was fixed...
 									i(199921, {	-- Trashmaster's Mantle
 										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...\n\nConfirmed as a Great Vault +15 reward",
 										["bonusID"] = 7359,
-										["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2 },
+										["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 									}),
 									i(199921, {	-- Trashmaster's Mantle
 										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...\n\nConfirmed as a direct M+ drop.",
 										["modID"] = 33,
-										["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2 },
+										["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 									}),
 								}),
 							},

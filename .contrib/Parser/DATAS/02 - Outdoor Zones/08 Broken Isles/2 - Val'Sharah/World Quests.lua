@@ -295,7 +295,7 @@ _.Zones =
 				q(41640, {	-- Work Order: Warhide Mask
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137878),	-- Recipe: Warhide Mask [Rank 3] (RECIPE!)
+						i(137878),	-- Pattern: Warhide Mask [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41670, {	-- Work Order: Word of Agility

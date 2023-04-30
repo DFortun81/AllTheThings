@@ -1269,7 +1269,7 @@ root(ROOTS.Zones, {
 							i(44109),	-- Toothslice Helm
 						},
 					}),
-					n(31910, {	-- Grakjek <Bowyer>
+					n(29014, {	-- Grakjek <Bowyer>
 						["coord"] = { 55.8, 70.2, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39522),	-- Wolvar Shortbow

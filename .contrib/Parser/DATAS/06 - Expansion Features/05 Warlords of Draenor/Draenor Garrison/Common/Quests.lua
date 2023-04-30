@@ -161,11 +161,17 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					["provider"] = { "n", 84185 },	-- Thisalee Crow
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 36134,	-- Garrison Campaign: Awakening
+					["g"] = {
+						follower(217),	-- Thisalee Crow
+					},
 				}),
 				q(36342, {	-- Primal Fury (H)
 					["provider"] = { "n", 88530 },	-- Choluna
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36136,	-- Garrison Campaign: Awakening
+					["g"] = {
+						follower(217),	-- Choluna
+					},
 				}),
 
 			-- Crows In The Field

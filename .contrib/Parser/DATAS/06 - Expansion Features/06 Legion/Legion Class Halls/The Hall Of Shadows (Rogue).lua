@@ -47,6 +47,30 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						}),
 					}),
 				}),
+				n(FOLLOWERS, bubbleDownSelf({
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(907),	-- Crew of Pirates
+					follower(917),	-- Crew of Pirates
+					follower(918),	-- Crew of Pirates
+					follower(919),	-- Crew of Pirates
+					follower(681),	-- Defias Thieves
+					follower(911),	-- Defias Thieves
+					follower(912),	-- Defias Thieves
+					follower(913),	-- Defias Thieves
+					follower(680),	-- Gang of Bandits
+					follower(908),	-- Gang of Bandits
+					follower(909),	-- Gang of Bandits
+					follower(910),	-- Gang of Bandits
+					follower(1047),	-- Ravenholdt Assassins
+					follower(1048),	-- Ravenholdt Assassins
+					follower(1049),	-- Ravenholdt Assassins
+					follower(1050),	-- Ravenholdt Assassins
+					follower(682),	-- Uncrowned Duelists
+					follower(914),	-- Uncrowned Duelists
+					follower(915),	-- Uncrowned Duelists
+					follower(916),	-- Uncrowned Duelists
+				})),
 				n(QUESTS, {
 					-- Intro
 					q(40832, {	-- Call of The Uncrowned

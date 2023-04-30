@@ -41,6 +41,41 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						}),
 					}),
 				}),
+				n(FOLLOWERS, bubbleDownSelf({
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(702),	-- Echo of Chi-Ji
+					follower(701),	-- Echo of Niuzao
+					follower(703),	-- Echo of Xuen
+					follower(1051),	-- Masters of Serenity
+					follower(1052),	-- Masters of Serenity
+					follower(1053),	-- Masters of Serenity
+					follower(1054),	-- Masters of Serenity
+					follower(627),	-- Ox Adepts
+					follower(689),	-- Ox Adepts
+					follower(690),	-- Ox Adepts
+					follower(772),	-- Ox Adepts
+					follower(622),	-- Ox Initiates
+					follower(625),	-- Ox Initiates
+					follower(626),	-- Ox Initiates
+					follower(773),	-- Ox Initiates
+					follower(628),	-- Ox Masters
+					follower(695),	-- Ox Masters
+					follower(696),	-- Ox Masters
+					follower(774),	-- Ox Masters
+					follower(630),	-- Tiger Adepts
+					follower(691),	-- Tiger Adepts
+					follower(692),	-- Tiger Adepts
+					follower(776),	-- Tiger Adepts
+					follower(629),	-- Tiger Initates
+					follower(655),	-- Tiger Initates
+					follower(656),	-- Tiger Initates
+					follower(775),	-- Tiger Initates
+					follower(631),	-- Tiger Masters
+					follower(693),	-- Tiger Masters
+					follower(694),	-- Tiger Masters
+					follower(777),	-- Tiger Masters
+				})),
 				n(QUESTS, {
 					-- Intro
 					q(12103, {	-- Before the Storm

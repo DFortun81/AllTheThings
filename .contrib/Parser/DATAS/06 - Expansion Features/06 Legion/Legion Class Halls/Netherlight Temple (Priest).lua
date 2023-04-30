@@ -108,6 +108,30 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						},
 					}),
 				}),
+				n(FOLLOWERS, bubbleDownSelf({
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(927),	-- Band of Zealots
+					follower(928),	-- Band of Zealots
+					follower(929),	-- Band of Zealots
+					follower(943),	-- Band of Zealots
+					follower(920),	-- Dark Zealots
+					follower(930),	-- Dark Zealots
+					follower(931),	-- Dark Zealots
+					follower(932),	-- Dark Zealots
+					follower(677),	-- Group of Acolytes
+					follower(921),	-- Group of Acolytes
+					follower(922),	-- Group of Acolytes
+					follower(923),	-- Group of Acolytes
+					follower(1039),	-- Hooded Priests
+					follower(1040),	-- Hooded Priests
+					follower(1041),	-- Hooded Priests
+					follower(1042),	-- Hooded Priests
+					follower(678),	-- Netherlight Paragons
+					follower(924),	-- Netherlight Paragons
+					follower(925),	-- Netherlight Paragons
+					follower(926),	-- Netherlight Paragons
+				})),
 				n(QUESTS, {
 					-- Start
 					q(40705, {	-- Priestly Matters

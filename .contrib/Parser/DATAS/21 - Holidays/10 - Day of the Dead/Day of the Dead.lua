@@ -11,12 +11,12 @@ local COSTUME_PROVIDERS = {
 root(ROOTS.Holidays, applyholiday(DAY_OF_THE_DEAD, {
 	-- #if ANYCLASSIC
 	["npcID"] = -59,
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. DAY_OF_THE_DEAD .. [[, 11, 1, 11, 3); end]],
 	-- #else
 	["holidayID"] = 307365,
 	-- #endif
 	["timeline"] = { "added 3.2.2.10505" },
 	["description"] = "Start: 11/01 at 11:00 AM\nEnd: 11/03 at 11:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. DAY_OF_THE_DEAD .. [[, 11, 1, 11, 3); end]],
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {

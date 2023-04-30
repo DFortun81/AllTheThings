@@ -604,15 +604,10 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 	category(227, {	-- Weapons
 		filter(ONE_HANDED_AXES, {
 			i(33426),	-- Chipped Timber Axe
-			i(36575, {	-- Dragonflayer Hatchet
-				["timeline"] = { "added 3.0.1.8770", "removed 10.0.7" },	-- Maybe still world drop, but best farmed in Ahn'Kahet
-			}),
 			i(36571),	-- Splicing Axe
 			i(36572),	-- Dinged Cleaver
 			i(36573),	-- Primeval Adze
-			i(36574),	-- Bone Cleaver
 			i(36576),	-- Beaked Axe
-			i(36577),	-- Disk Axe
 			i(36578),	-- Troll Chopper
 			i(36579),	-- Boreal Woodchopper
 			i(36580),	-- Dire Axe
@@ -620,6 +615,15 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36582),	-- Ice Pick
 			i(36583),	-- Skeletal Hacker
 			i(36584),	-- Snowy Edge
+			i(36574, {	-- Bone Cleaver
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" },	-- Maybe never removed, have to check in WoD Classic
+			}),
+			i(36577, {	-- Disk Axe
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" },	-- Maybe never removed, have to check in WoD Classic
+			}),
+			i(36575, {	-- Dragonflayer Hatchet
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" },	-- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(TWO_HANDED_AXES, {
 			i(33429),	-- Ice Cleaver
@@ -637,6 +641,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36597),	-- Ice-Splintering Axe
 			i(36598),	-- Scarlet Battle Axe
 			i(37811),	-- Captain Carver's Persuader
+			i(36589, {	-- Segmenting Broadaxe
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" }, -- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(BOWS, {
 			i(33422),	-- Shattered Bow
@@ -644,7 +651,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36614),	-- Yew Bow
 			i(36615),	-- Expert's Longbow
 			i(36616),	-- Dutiful Longbow
-			i(36618),	-- Twisted Longbow
 			i(36619),	-- Astral Light Bow
 			i(36620),	-- Tracking Bow
 			i(36621),	-- Advanced Flatbow
@@ -654,6 +660,12 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36625),	-- Massive Recurved Bow
 			i(36626),	-- Military Compound Bow
 			i(37809),	-- Roc-Feather Longbow
+			i(36618, {	-- Twisted Longbow
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" }, -- Maybe never removed, have to check in WoD Classic
+			}),
+			i(36617, {	-- Yielding Bow
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" }, -- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(CROSSBOWS, {
 			i(36627),	-- Composite Crossbow
@@ -672,38 +684,41 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		}),
 		filter(DAGGERS, {
 			i(33428),	-- Dulled Shiv
-			i(36477, {	-- Twin-Edged Stilletto
-				["timeline"] = { "added 3.0.1.8770", "removed 10.0.7" },	-- Maybe still world drop, but best farmed in Ahn'Kahet
-			}),
-			i(36473),	-- Pioneer's Dagger
-			i(36474),	-- Engraved Dagger
-			i(36475),	-- Seal Shortblade
-			i(36476),	-- Whale Ripper
-			i(36478),	-- Frosty Talon
-			i(36479),	-- Snobold Ripper
-			i(36480),	-- Ebony Dagger
-			i(36481),	-- Trapper Knife
-			i(36482),	-- Parrying Dagger
-			i(36483),	-- Mandible Edge
-			i(36484),	-- Etched Dagger
-			i(36485),	-- Sinuous Keris
-			i(36486),	-- Ornate Pugio
-			i(36669),	-- Eccentric Dagger
-			i(36670),	-- Gypsy Blade
-			i(36671),	-- Ominous Dagger
-			i(36672),	-- Strange Dagger
-			i(36674),	-- Old Tooth
-			i(36675),	-- Sockeye Dagger
-			i(36676),	-- Water Blade
-			i(36677),	-- Levitating Dagger
-			i(36678),	-- Runed Talon
-			i(36679),	-- Singing Dagger
-			i(36680),	-- Mystic Fang
-			i(36681),	-- Wisdom Carver
-			i(36682),	-- Seduced Blade
 			i(37802),	-- Elanor's Edge
-			i(43613),	-- The Dusk Blade
+			i(36474),	-- Engraved Dagger
+			i(36484),	-- Etched Dagger
+			i(36478),	-- Frosty Talon
+			i(36669),	-- Eccentric Dagger
+			i(36480),	-- Ebony Dagger
+			i(36670),	-- Gypsy Blade
+			i(36483),	-- Mandible Edge
+			i(36680),	-- Mystic Fang
 			i(44310),	-- Namlak's Supernumerary Sticker
+			i(36486),	-- Ornate Pugio
+			i(36482),	-- Parrying Dagger
+			i(36677),	-- Levitating Dagger
+			i(36473),	-- Pioneer's Dagger
+			i(36678),	-- Runed Talon
+			i(36485),	-- Sinuous Keris
+			i(36479),	-- Snobold Ripper
+			i(36679),	-- Singing Dagger
+			i(36682),	-- Seduced Blade
+			i(36672),	-- Strange Dagger
+			i(36481),	-- Trapper Knife
+			i(43613),	-- The Dusk Blade
+			i(36475),	-- Seal Shortblade
+			i(36674),	-- Old Tooth
+			i(36671),	-- Ominous Dagger
+			i(36476),	-- Whale Ripper
+			i(36675),	-- Sockeye Dagger
+			i(36477, {	-- Twin-Edged Stilletto
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" },	-- Maybe never removed, have to check in WoD Classic
+			}),
+			i(36676),	-- Water Blade
+			i(36681),	-- Wisdom Carver
+			i(36673, {	-- Wise Dagger
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" }, -- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(FIST_WEAPONS, {
 			i(36557),	-- Meat Ripper
@@ -720,6 +735,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36569),	-- Savage Talons
 			i(36570),	-- Corrupted Scythes
 			i(37749),	-- Shocking Claws
+			i(36561, {	-- Mummified Paw
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" }, -- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(GUNS, {
 			i(33427),	-- Frost-Encrusted Rifle
@@ -744,7 +762,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36489),	-- Iron Flanged Scepter
 			i(36490),	-- Tuskarr Cudgel
 			i(36492),	-- Peaked Club
-			i(36493),	-- Furbolg Truncheon
 			i(36494),	-- Barbed Star
 			i(36495),	-- Ferrous Hammer
 			i(36496),	-- Brass-Bound Cudgel
@@ -768,6 +785,12 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36696),	-- Graced Scepter
 			i(37805),	-- Melia's Magnificent Scepter
 			i(37808),	-- Dragonjaw Mauler
+			i(36493, {	-- Furbolg Truncheon
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" }, -- Maybe never removed, have to check in WoD Classic
+			}),
+			i(36491, {	-- Serrated maul
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" }, -- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(TWO_HANDED_MACES, {
 			i(33431),	-- Icesmashing Mace
@@ -790,7 +813,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36599),	-- Ocean Trident
 			i(36600),	-- Village Scythe
 			i(36601),	-- Patient Harpoon
-			i(36602),	-- Rust-Covered Polearm
 			i(36604),	-- Grizzly Glaive
 			i(36605),	-- Wind Scythe
 			i(36606),	-- Rugged Polearm
@@ -801,21 +823,17 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36611),	-- Bleak Scythe
 			i(36612),	-- Scourge War Spear
 			i(37813),	-- Banner Slicer
+			i(36602, {	-- Rust-Covered Polearm
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.3", "added 10.0.7" },	-- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(STAVES, {
-			i(36603, {	-- Archaic Longspear
-				["timeline"] = { "created 4.0.1", "added 10.0.7" },	-- Might have dropped since 4.0.1. Unsure
-			}),
 			i(33424),	-- Cracked Iron Staff
-			i(36547, {	-- Jester's Stick
-				["timeline"] = { "created 2.0.3", "added 3.0.1.8770", "removed 10.0.7" },	-- Maybe still world drop, but best farmed in Ahn'Kahet
-			}),
 			i(36543),	-- Survival Stick
 			i(36544),	-- Journeyed Staff
 			i(36545),	-- Branched Stick
 			i(36546),	-- Unusual Staff
 			i(36548),	-- Promised Staff
-			i(36549),	-- Pulsing Quarterstaff
 			i(36550),	-- Refulgent Staff
 			i(36551),	-- Ritual Greatstaff
 			i(36552),	-- Spiked Greatstaff
@@ -839,6 +857,18 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(37803),	-- Lola's Lifegiving Branch
 			i(37804),	-- Bloodwood Greatstaff
 			i(37806),	-- Zabra's Misplaced Staff
+			i(36603, {	-- Archaic Longspear
+				["timeline"] = { "created 4.0.1", "added 10.0.7" },	-- Might have dropped since 4.0.1. Unsure
+			}),
+			i(36547, {	-- Jester's Stick
+				["timeline"] = { "created 2.0.3", "added 3.0.1.8770", "removed 6.0.3", "added 10.0.7" },	-- Maybe never removed, have to check in WoD Classic
+			}),
+			i(36701, {	-- Pine Needle Staff
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" }, -- Maybe never removed, have to check in WoD Classic
+			}),
+			i(36549, {	-- Pulsing Quarterstaff
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.3", "added 10.0.7" },	-- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(ONE_HANDED_SWORDS, {
 			i(33425),	-- Ice-Pitted Blade
@@ -858,9 +888,15 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(37807),	-- Lydia's Sharpened Swordbreaker
 			i(43611),	-- Krol Cleaver
 			i(44311),	-- Avool's Sword of Jin
+			i(36519, {	-- Moonlit Katana
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" }, -- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
 			i(33430),	-- Abandoned Greatsword
+			i(36533, {	-- Adorned Broadsword
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.3", "added 10.0.7" },	-- Maybe never removed, have to check in WoD Classic
+			}),
 			i(36529),	-- Unearthed Broadsword
 			i(36530),	-- Whetted Ironblade
 			i(36531),	-- Sawtooth Greatsword
@@ -890,6 +926,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36667),	-- Solid Ice Wand
 			i(36668),	-- Mindless Wand
 			i(37824),	-- Gwyneth's Runed Dragonwand
+			i(36659, {	-- Shivery Wand
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", "added 10.0.7" }, -- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		-- #if BEFORE MOP
 		filter(THROWN, {

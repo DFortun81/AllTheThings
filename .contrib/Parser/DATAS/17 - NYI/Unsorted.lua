@@ -166,359 +166,9 @@ root(ROOTS.Unsorted, {
 	}),
 	tier(DF_TIER, {
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
-			--[[
 			filter(RECIPES, {
-				-- Blizzard Changed name on all these objects... If anyone has time..
-				i(114851),	-- Pattern: Hexweave Cloth
-				i(122549),	-- Pattern: Powerful Hexweave Essence
-
-				i(136696),	-- Plans: Terrorspike
-				i(136697),	-- Plans: Gleaming Iron Spike
-				i(136698),	-- Plans: Consecrated Spike
-				i(136699),	-- Plans: Flamespike
-				i(136709),	-- Plans: Demonsteel Stirrups
-				i(137605),	-- Plans: Leystone Boots
-				i(137606),	-- Plans: Leystone Gauntlets
-				i(137607),	-- Plans: Leystone Helm
-				i(137680),	-- Plans: Leystone Greaves
-				i(137681),	-- Pattern: Bloodtotem Saddle Blanket
-				i(137687),	-- Plans: Fel Core Hound Harness
-				i(137868),	-- Pattern: Warhide Bindings
-				i(137869),	-- Pattern: Warhide Belt
-				i(137870),	-- Pattern: Warhide Shoulderguard
-				i(137871),	-- Pattern: Warhide Pants
-				i(137872),	-- Pattern: Warhide Mask
-				i(137873),	-- Pattern: Warhide Gloves
-				i(137874),	-- Pattern: Warhide Footpads
-				i(137875),	-- Pattern: Warhide Jerkin
-				i(137876),	-- Pattern: Warhide Bindings
-				i(137877),	-- Pattern: Warhide Pants
-				i(137878),	-- Pattern: Warhide Mask
-				i(137879),	-- Pattern: Warhide Gloves
-				i(137880),	-- Pattern: Warhide Footpads
-				i(137881),	-- Pattern: Warhide Belt
-				i(137882),	-- Pattern: Warhide Shoulderguard
-				i(137883),	-- Pattern: Warhide Jerkin
-				i(137884),	-- Pattern: Dreadleather Bindings
-				i(137885),	-- Pattern: Dreadleather Belt
-				i(137886),	-- Pattern: Dreadleather Shoulderguard
-				i(137887),	-- Pattern: Dreadleather Pants
-				i(137888),	-- Pattern: Dreadleather Mask
-				i(137889),	-- Pattern: Dreadleather Gloves
-				i(137890),	-- Pattern: Dreadleather Footpads
-				i(137891),	-- Pattern: Dreadleather Jerkin
-				i(137892),	-- Pattern: Dreadleather Bindings
-				i(137893),	-- Pattern: Dreadleather Belt
-				i(137894),	-- Pattern: Dreadleather Shoulderguard
-				i(137895),	-- Pattern: Dreadleather Pants
-				i(137896),	-- Pattern: Dreadleather Mask
-				i(137897),	-- Pattern: Dreadleather Gloves
-				i(137898),	-- Pattern: Dreadleather Footpads
-				i(137899),	-- Pattern: Dreadleather Jerkin
-				i(137900),	-- Pattern: Battlebound Armbands
-				i(137901),	-- Pattern: Battlebound Girdle
-				i(137902),	-- Pattern: Battlebound Spaulders
-				i(137903),	-- Pattern: Battlebound Leggings
-				i(137904),	-- Pattern: Battlebound Warhelm
-				i(137905),	-- Pattern: Battlebound Grips
-				i(137906),	-- Pattern: Battlebound Treads
-				i(137907),	-- Pattern: Battlebound Hauberk
-				i(137908),	-- Pattern: Battlebound Armbands
-				i(137909),	-- Pattern: Battlebound Leggings
-				i(137910),	-- Pattern: Battlebound Warhelm
-				i(137911),	-- Pattern: Battlebound Grips
-				i(137912),	-- Pattern: Battlebound Treads
-				i(137913),	-- Pattern: Battlebound Girdle
-				i(137914),	-- Pattern: Battlebound Spaulders
-				i(137915),	-- Pattern: Battlebound Hauberk
-				i(137916),	-- Pattern: Gravenscale Armbands
-				i(137917),	-- Pattern: Gravenscale Girdle
-				i(137918),	-- Pattern: Gravenscale Spaulders
-				i(137919),	-- Pattern: Gravenscale Leggings
-				i(137920),	-- Pattern: Gravenscale Warhelm
-				i(137921),	-- Pattern: Gravenscale Grips
-				i(137922),	-- Pattern: Gravenscale Treads
-				i(137923),	-- Pattern: Gravenscale Hauberk
-				i(137924),	-- Pattern: Gravenscale Armbands
-				i(137925),	-- Pattern: Gravenscale Girdle
-				i(137926),	-- Pattern: Gravenscale Spaulders
-				i(137927),	-- Pattern: Gravenscale Leggings
-				i(137928),	-- Pattern: Gravenscale Warhelm
-				i(137929),	-- Pattern: Gravenscale Grips
-				i(137930),	-- Pattern: Gravenscale Treads
-				i(137931),	-- Pattern: Gravenscale Hauberk
-				i(137932),	-- Pattern: Flaming Hoop
-				i(137933),	-- Pattern: Leather Pet Bed
-				i(137934),	-- Pattern: Leather Pet Leash
-				i(137935),	-- Pattern: Leather Love Seat
-				i(137952),	-- Pattern: Stonehide Leather Barding
-				i(140636),	-- Pattern: Dreadleather Bindings
-				i(140637),	-- Pattern: Dreadleather Belt
-				i(140638),	-- Pattern: Dreadleather Shoulderguard
-				i(140639),	-- Pattern: Dreadleather Pants
-				i(140640),	-- Pattern: Dreadleather Mask
-				i(140641),	-- Pattern: Dreadleather Gloves
-				i(140642),	-- Pattern: Dreadleather Footpads
-				i(140643),	-- Pattern: Dreadleather Jerkin
-				i(140644),	-- Pattern: Gravenscale Armbands
-				i(140645),	-- Pattern: Gravenscale Girdle
-				i(140646),	-- Pattern: Gravenscale Spaulders
-				i(140647),	-- Pattern: Gravenscale Leggings
-				i(140648),	-- Pattern: Gravenscale Warhelm
-				i(140649),	-- Pattern: Gravenscale Grips
-				i(140650),	-- Pattern: Gravenscale Treads
-				i(140651),	-- Pattern: Gravenscale Hauberk
-				i(141850),	-- Pattern: Elderhorn Riding Harness
-				i(142333),	-- Manual: Feathered Luffa
-				i(142407),	-- Pattern: Drums of the Mountain
-				i(142408),	-- Pattern: Drums of the Mountain
-				i(142409),	-- Pattern: Drums of the Mountain
-				i(151709),	-- Plans: Felslate Anchor
-				i(151711),	-- Plans: Empyrial Breastplate
-				i(151712),	-- Plans: Empyrial Breastplate
-				i(151713),	-- Plans: Empyrial Breastplate
-				i(151740),	-- Pattern: Fiendish Shoulderguards
-				i(151741),	-- Pattern: Fiendish Shoulderguards
-				i(151742),	-- Pattern: Fiendish Shoulderguards
-				i(151743),	-- Pattern: Fiendish Spaulders
-				i(151744),	-- Pattern: Fiendish Spaulders
-				i(151745),	-- Pattern: Fiendish Spaulders
-				i(151746),	-- Pattern: Lightweave Breeches
-				i(151747),	-- Pattern: Lightweave Breeches
-				i(151748),	-- Pattern: Lightweave Breeches
-				i(162261),	-- Plans: Stormsteel Shield
-				i(162262),	-- Plans: Honorable Combatant's Plate Boots
-				i(162263),	-- Plans: Honorable Combatant's Plate Boots
-				i(162265),	-- Plans: Honorable Combatant's Plate Gauntlets
-				i(162266),	-- Plans: Honorable Combatant's Plate Gauntlets
-				i(162267),	-- Plans: Honorable Combatant's Plate Greaves
-				i(162268),	-- Plans: Honorable Combatant's Plate Greaves
-				i(162269),	-- Plans: Honorable Combatant's Plate Waistguard
-				i(162270),	-- Plans: Honorable Combatant's Plate Waistguard
-				i(162271),	-- Plans: Honorable Combatant's Plate Armguards
-				i(162272),	-- Plans: Honorable Combatant's Plate Armguards
-				i(162273),	-- Plans: Honorable Combatant's Plate Shield
-				i(162274),	-- Plans: Honorable Combatant's Plate Shield
-				i(162275),	-- Plans: Stormsteel Dagger
-				i(162276),	-- Plans: Stormsteel Spear
-				i(162277),	-- Plans: Honorable Combatant's Cutlass
-				i(162278),	-- Plans: Honorable Combatant's Cutlass
-				i(162279),	-- Plans: Honorable Combatant's Deckpounder
-				i(162280),	-- Plans: Honorable Combatant's Deckpounder
-				i(162281),	-- Plans: Honorable Combatant's Shanker
-				i(162282),	-- Plans: Honorable Combatant's Shanker
-				i(162283),	-- Plans: Honorable Combatant's Polearm
-				i(162284),	-- Plans: Honorable Combatant's Polearm
-				i(162306),	-- Formula: Enchanter's Sorcerous Scepter
-				i(162308),	-- Formula: Honorable Combatant's Sorcerous Scepter
-				i(162309),	-- Formula: Honorable Combatant's Sorcerous Scepter
-				i(162352),	-- Technique: Inscribed Vessel of Mysticism
-				i(162353),	-- Technique: Honorable Combatant's Etched Vessel
-				i(162354),	-- Technique: Honorable Combatant's Etched Vessel
-				i(162358),	-- Technique: Codex of the Quiet Mind
-				i(162359),	-- Technique: Contract: Proudmoore Admiralty
-				i(162360),	-- Technique: Contract: Proudmoore Admiralty
-				i(162361),	-- Technique: Contract: Order of Embers
-				i(162362),	-- Technique: Contract: Order of Embers
-				i(162363),	-- Technique: Contract: Storm's Wake
-				i(162364),	-- Technique: Contract: Storm's Wake
-				i(162366),	-- Technique: Contract: Zandalari Empire
-				i(162368),	-- Technique: Contract: Talanji's Expedition
-				i(162370),	-- Technique: Contract: Voldunai
-				i(162371),	-- Technique: Contract: Tortollan Seekers
-				i(162372),	-- Technique: Contract: Tortollan Seekers
-				i(162373),	-- Technique: Contract: Champions of Azeroth
-				i(162374),	-- Technique: Contract: Champions of Azeroth
-				i(162376),	-- Technique: Tome of the Quiet Mind
-				i(162377),	-- Technique: Darkmoon Card of War
-				i(162388),	-- Pattern: Hardened Tempest Boots
-				i(162389),	-- Pattern: Hardened Tempest Leggings
-				i(162390),	-- Pattern: Honorable Combatant's Leather Treads
-				i(162391),	-- Pattern: Honorable Combatant's Leather Treads
-				i(162392),	-- Pattern: Honorable Combatant's Leather Gauntlets
-				i(162393),	-- Pattern: Honorable Combatant's Leather Gauntlets
-				i(162394),	-- Pattern: Honorable Combatant's Leather Leggings
-				i(162395),	-- Pattern: Honorable Combatant's Leather Leggings
-				i(162396),	-- Pattern: Honorable Combatant's Leather Waistguard
-				i(162397),	-- Pattern: Honorable Combatant's Leather Waistguard
-				i(162398),	-- Pattern: Honorable Combatant's Leather Armguards
-				i(162399),	-- Pattern: Honorable Combatant's Leather Armguards
-				i(162400),	-- Pattern: Mistscale Boots
-				i(162401),	-- Pattern: Mistscale Greaves
-				i(162402),	-- Pattern: Honorable Combatant's Mail Treads
-				i(162403),	-- Pattern: Honorable Combatant's Mail Treads
-				i(162404),	-- Pattern: Honorable Combatant's Mail Gauntlets
-				i(162405),	-- Pattern: Honorable Combatant's Mail Gauntlets
-				i(162406),	-- Pattern: Honorable Combatant's Mail Leggings
-				i(162407),	-- Pattern: Honorable Combatant's Mail Leggings
-				i(162408),	-- Pattern: Honorable Combatant's Mail Waistguard
-				i(162409),	-- Pattern: Honorable Combatant's Mail Waistguard
-				i(162410),	-- Pattern: Honorable Combatant's Mail Armguards
-				i(162411),	-- Pattern: Honorable Combatant's Mail Armguards
-				i(162412),	-- Pattern: Recurve Bow of the Strands
-				i(162413),	-- Pattern: Mistscale Knuckles
-				i(162414),	-- Pattern: Hardened Tempest Knuckles
-				i(162417),	-- Pattern: Honorable Combatant's Bow
-				i(162418),	-- Pattern: Honorable Combatant's Bow
-				i(162495),	-- Plans: Imbued Stormsteel Legguards
-				i(162496),	-- Plans: Emblazoned Stormsteel Legguards
-				i(162497),	-- Plans: Imbued Stormsteel Girdle
-				i(162498),	-- Plans: Emblazoned Stormsteel Girdle
-				i(162499),	-- Pattern: Imbued Tempest Boots
-				i(162500),	-- Pattern: Emblazoned Tempest Boots
-				i(162501),	-- Pattern: Imbued Tempest Leggings
-				i(162502),	-- Pattern: Emblazoned Tempest Leggings
-				i(162503),	-- Pattern: Imbued Mistscale Boots
-				i(162504),	-- Pattern: Emblazoned Mistscale Boots
-				i(162505),	-- Pattern: Imbued Mistscale Leggings
-				i(162506),	-- Pattern: Emblazoned Mistscale Leggings
-				i(162668),	-- Plans: Honorable Combatant's Spellblade
-				i(162669),	-- Plans: Honorable Combatant's Spellblade
-				i(162670),	-- Plans: Stormsteel Saber
-				i(162706),	-- Plans: Stormsteel Shield
-				i(162707),	-- Plans: Stormsteel Dagger
-				i(162708),	-- Plans: Stormsteel Spear
-				i(162720),	-- Formula: Enchanter's Sorcerous Scepter
-				i(162753),	-- Technique: Contract: Zandalari Empire
-				i(162754),	-- Technique: Contract: Talanji's Expedition
-				i(162755),	-- Technique: Contract: Voldunai
-				i(162766),	-- Pattern: Recurve Bow of the Strands
-				i(162767),	-- Pattern: Mistscale Knuckles
-				i(162768),	-- Pattern: Hardened Tempest Knuckles
-				i(162774),	-- Plans: Stormsteel Saber
-				i(163024),	-- Design: Honorable Combatant's Intuitive Staff
-				i(163025),	-- Design: Honorable Combatant's Intuitive Staff
-				i(165278),	-- Plans: Sinister Combatant's Plate Boots
-				i(165279),	-- Plans: Sinister Combatant's Plate Boots
-				i(165280),	-- Plans: Sinister Combatant's Plate Gauntlets
-				i(165281),	-- Plans: Sinister Combatant's Plate Gauntlets
-				i(165282),	-- Plans: Sinister Combatant's Plate Greaves
-				i(165283),	-- Plans: Sinister Combatant's Plate Greaves
-				i(165284),	-- Plans: Sinister Combatant's Plate Shield
-				i(165285),	-- Plans: Sinister Combatant's Plate Shield
-				i(165286),	-- Plans: Sinister Combatant's Plate Waistguard
-				i(165287),	-- Plans: Sinister Combatant's Plate Waistguard
-				i(165288),	-- Plans: Sinister Combatant's Plate Armguards
-				i(165289),	-- Plans: Sinister Combatant's Plate Armguards
-				i(165290),	-- Plans: Sinister Combatant's Cutlass
-				i(165291),	-- Plans: Sinister Combatant's Cutlass
-				i(165292),	-- Plans: Sinister Combatant's Deckpounder
-				i(165293),	-- Plans: Sinister Combatant's Deckpounder
-				i(165294),	-- Plans: Sinister Combatant's Spellblade
-				i(165295),	-- Plans: Sinister Combatant's Spellblade
-				i(165296),	-- Plans: Sinister Combatant's Shanker
-				i(165297),	-- Plans: Sinister Combatant's Shanker
-				i(165298),	-- Plans: Sinister Combatant's Polearm
-				i(165299),	-- Plans: Sinister Combatant's Polearm
-				i(165300),	-- Formula: Sinister Combatant's Sorcerous Scepter
-				i(165301),	-- Formula: Sinister Combatant's Sorcerous Scepter
-				i(165306),	-- Technique: Sinister Combatant's Etched Vessel
-				i(165307),	-- Technique: Sinister Combatant's Etched Vessel
-				i(165308),	-- Design: Sinister Combatant's Intuitive Staff
-				i(165309),	-- Design: Sinister Combatant's Intuitive Staff
-				i(165310),	-- Pattern: Sinister Combatant's Leather Treads
-				i(165311),	-- Pattern: Sinister Combatant's Leather Treads
-				i(165312),	-- Pattern: Sinister Combatant's Leather Gauntlets
-				i(165313),	-- Pattern: Sinister Combatant's Leather Gauntlets
-				i(165314),	-- Pattern: Sinister Combatant's Leather Leggings
-				i(165315),	-- Pattern: Sinister Combatant's Leather Leggings
-				i(165316),	-- Pattern: Sinister Combatant's Leather Waistguard
-				i(165317),	-- Pattern: Sinister Combatant's Leather Waistguard
-				i(165318),	-- Pattern: Sinister Combatant's Leather Armguards
-				i(165319),	-- Pattern: Sinister Combatant's Leather Armguards
-				i(165320),	-- Pattern: Sinister Combatant's Mail Treads
-				i(165321),	-- Pattern: Sinister Combatant's Mail Treads
-				i(165322),	-- Pattern: Sinister Combatant's Mail Gauntlets
-				i(165323),	-- Pattern: Sinister Combatant's Mail Gauntlets
-				i(165324),	-- Pattern: Sinister Combatant's Mail Leggings
-				i(165325),	-- Pattern: Sinister Combatant's Mail Leggings
-				i(165326),	-- Pattern: Sinister Combatant's Mail Waistguard
-				i(165327),	-- Pattern: Sinister Combatant's Mail Waistguard
-				i(165328),	-- Pattern: Sinister Combatant's Mail Armguards
-				i(165329),	-- Pattern: Sinister Combatant's Mail Armguards
-				i(165330),	-- Pattern: Sinister Combatant's Bow
-				i(165331),	-- Pattern: Sinister Combatant's Bow
-				i(165640),	-- Plans: Fortified Stormsteel Legguards
-				i(165641),	-- Plans: Tempered Stormsteel Legguards
-				i(165642),	-- Plans: Fortified Stormsteel Girdle
-				i(165643),	-- Plans: Tempered Stormsteel Girdle
-				i(165644),	-- Pattern: Fortified Tempest Boots
-				i(165645),	-- Pattern: Tempered Tempest Boots
-				i(165646),	-- Pattern: Fortified Tempest Leggings
-				i(165647),	-- Pattern: Tempered Tempest Leggings
-				i(165648),	-- Pattern: Fortified Mistscale Boots
-				i(165649),	-- Pattern: Tempered Mistscale Boots
-				i(165650),	-- Pattern: Fortified Mistscale Greaves
-				i(165651),	-- Pattern: Tempered Mistscale Greaves
-				i(166260),	-- Plans: Monel-Hardened Hoofplates
-				i(166278),	-- Technique: Contract: 7th Legion
-				i(166279),	-- Technique: Contract: 7th Legion
-				i(166310),	-- Technique: Contract: The Honorbound
-				i(166311),	-- Technique: Contract: The Honorbound
-				i(166312),	-- Pattern: Coarse Leather Barding
-				i(166313),	-- Pattern: Coarse Leather Barding
-				i(166542),	-- Design: Spirited Kraken's Eye Loop
-				i(166543),	-- Design: Eternal Kraken's Eye Loop
-				i(168022),	-- Plans: Khaz'gorian Smithing Hammer
-				i(168024),	-- Formula: Iwen's Enchanting Rod
-				i(168026),	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
-				i(168027),	-- Design: Jewelhammer's Focus
-				i(168028),	-- Pattern: Mallet of Thunderous Skins
-				i(168029),	-- Pattern: Synchronous Thread
-				i(168759),	-- Plans: Reinforced Osmenite Legguards
-				i(168760),	-- Plans: Banded Osmenite Legguards
-				i(168761),	-- Plans: Reinforced Osmenite Girdle
-				i(168762),	-- Plans: Banded Osmenite Girdle
-				i(168771),	-- Design: Crushing Leviathan's Eye Loop
-				i(168772),	-- Design: Ascended Leviathan's Eye Loop
-				i(169505),	-- Plans: Notorious Combatant's Plate Gauntlets
-				i(169506),	-- Plans: Notorious Combatant's Plate Gauntlets
-				i(169507),	-- Plans: Notorious Combatant's Plate Armguards
-				i(169508),	-- Plans: Notorious Combatant's Plate Armguards
-				i(169509),	-- Plans: Notorious Combatant's Plate Waistguard
-				i(169510),	-- Plans: Notorious Combatant's Plate Waistguard
-				i(169511),	-- Plans: Notorious Combatant's Plate Boots
-				i(169512),	-- Plans: Notorious Combatant's Plate Boots
-				i(169513),	-- Plans: Notorious Combatant's Plate Greaves
-				i(169514),	-- Plans: Notorious Combatant's Plate Greaves
-				i(169515),	-- Plans: Notorious Combatant's Spellblade
-				i(169516),	-- Plans: Notorious Combatant's Spellblade
-				i(169517),	-- Plans: Notorious Combatant's Shanker
-				i(169518),	-- Plans: Notorious Combatant's Shanker
-				i(169519),	-- Plans: Notorious Combatant's Cutlass
-				i(169520),	-- Plans: Notorious Combatant's Cutlass
-				i(169522),	-- Plans: Notorious Combatant's Shield
-				i(169523),	-- Plans: Notorious Combatant's Shield
-				i(169524),	-- Plans: Notorious Combatant's Polearm
-				i(169525),	-- Plans: Notorious Combatant's Polearm
-				i(169526),	-- Plans: Notorious Combatant's Deckpounder
-				i(169528),	-- Plans: Notorious Combatant's Deckpounder
-				i(169529),	-- Plans: Monelite Reinforced Chassis
-				i(169545),	-- Technique: Notorious Combatant's Etched Vessel
-				i(169546),	-- Technique: Notorious Combatant's Etched Vessel
-				i(169547),	-- Technique: Contract: Rustbolt Resistance
-				i(169548),	-- Technique: Contract: Ankoan
-				i(169549),	-- Technique: Contract: Unshackled
-				i(169551),	-- Design: Notorious Combatant's Intuitive Staff
-				i(169552),	-- Design: Notorious Combatant's Intuitive Staff
-				i(169576),	-- Pattern: Notorious Combatant's Satin Belt
-				i(169577),	-- Pattern: Notorious Combatant's Satin Belt
-				i(169578),	-- Pattern: Notorious Combatant's Satin Boots
-				i(169579),	-- Pattern: Notorious Combatant's Satin Boots
-				i(169580),	-- Pattern: Notorious Combatant's Satin Mittens
-				i(169581),	-- Pattern: Notorious Combatant's Satin Mittens
-				i(169582),	-- Pattern: Notorious Combatant's Satin Bracers
-				i(169583),	-- Pattern: Notorious Combatant's Satin Bracers
-				i(169584),	-- Pattern: Notorious Combatant's Satin Pants
-				i(169585),	-- Pattern: Notorious Combatant's Satin Pants
-				i(169586),	-- Pattern: Notorious Combatant's Satin Cloak
-				i(169587),	-- Pattern: Notorious Combatant's Satin Cloak
-				i(171158),	-- Design: Uncanny Combatant's Intuitive Staff
-				i(171159),	-- Design: Uncanny Combatant's Intuitive Staff
-				i(172009),	-- Technique: Contract: Rajani
-				i(172011),	-- Technique: Contract: Uldum Accord
+				i(122549),	-- Pattern: Powerful Hexweave Essence (doesn't seem to exist anywhere?)
 			}),
-			--]]
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
 				i(202581),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 1
 				i(202608),	-- Power-Draining Spire
@@ -545,11 +195,8 @@ root(ROOTS.Unsorted, {
 				i(204087),	-- 10.1 Cloak Test Item
 				i(204736),	-- Heatbound Medallion
 				i(204810),	-- Drogbar Rocks
-				i(204811),	-- Drogbar Stones
 				i(204901),	-- Firecaller's Focus
-				i(204714),	-- Satchel of Healing Spores
 				i(205191),	-- Underlight Globe
-				i(205192),	-- Volatile Crystal Shard
 				i(205193),	-- Sturdy Deepflayer Scute
 				i(205194),	-- Fractured Crystalspine Quill
 				i(205195),	-- Drakeforged Magma Charm
@@ -702,16 +349,10 @@ root(ROOTS.Unsorted, {
 				i(205471),	-- Slimy Deepsea Fin
 				i(205472),	-- Wad of Sparkling Somethings
 				i(205689),	-- Champion's Crystal
-				i(205690),	-- Barter-B-Q
 				i(205691),	-- Hypnotic Murloc Lure
-				i(205692),	-- Stellaviatori Soup
-				i(205693),	-- Latticed Stinkhorn
 				i(205695),	-- Dense Salamanther Skull
-				i(205696),	-- Amethyst Deceiver Mushroom
 				i(205697),	-- Gelatinous Egg Mass
 				i(205699),	-- Rock Worm Frills
-				i(205793),	-- Skitter Souf-fly
-				i(205794),	-- Beetle Juice
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205866),	-- Rough Coiled Horns
 				i(205867),	-- Steaming Drake Heart
@@ -736,10 +377,6 @@ root(ROOTS.Unsorted, {
 				i(206037),	-- Ruby Flightstone
 			}),
 			filter(MOUNTS, {
-				i(205155),	-- Big Slick in the City (MOUNT!)
-				i(192779),	-- Seething Slug (MOUNT!)
-				-- Not Attached --
-				i(205204),	-- Flaming Shalewing - Subject  01 (MOUNT!)
 				i(205206),	-- Sporebat, Fire (Yellow) [PH] (MOUNT!)
 				i(205208),	-- Sporebat, Stone (Orange) [PH] (MOUNT!)
 			}),
@@ -896,7 +533,6 @@ root(ROOTS.Unsorted, {
 				i(204327),	-- Titan Machine Part
 				i(204329),	-- Petrified Spider Leg
 				i(204331),	-- Djaradin Pillar Shard
-				i(204345),	-- Note to Disposal Site
 				i(204347),	-- Pool Contaminant
 				i(204349),	-- Bigger Wrench
 				i(204351),	-- Animated Crystal Shard
@@ -1009,9 +645,6 @@ root(ROOTS.Unsorted, {
 				i(205373),	-- Researcher's Scrounged Goods
 				i(205374),	-- Thankful Researcher's Scrounged Goods
 				i(205454),	-- Researchers Wheel Barrow
-				-- WQ
-				i(205423),	-- Shadowflame Residue Sack
-				i(205682),	-- Large Shadowflame Residue Sack
 				-- Achievement
 				i(205684),	-- Forbidden Flounder
 				i(205686),	-- Clacking Claw
@@ -1026,7 +659,7 @@ root(ROOTS.Unsorted, {
 				i(206004),	-- Enmity Cloak
 				i(206005),	-- Wirt's Leg
 				i(206007),	-- Treasure Nabbin' Bag
-				i(206008),	-- Nightmare Banner
+				i(206008),	-- Nightmare Banner (TOY!)
 				i(206020),	-- Enmity Hood
 				i(206026),	-- Ensemble: Enmity Hood and Cloak
 				i(206028),	-- Chest of Gold
@@ -1034,8 +667,6 @@ root(ROOTS.Unsorted, {
 				-- New Stuff
 				i(190921),	-- Ensemble: Wanderer's Snowy Trappings
 				i(190922),	-- Ensemble: Vagabond's Snowy Threads
-				i(191838),	-- Subterranean Magmammoth
-				i(205204),	-- Flaming Shalewing Subject 01
 				i(205313),	-- Brullo's Wristbraces
 				i(205462),	-- Royal Nerubian Capsa
 				i(206044),	-- Obsidian Gladiator's Axe
@@ -1129,7 +760,6 @@ root(ROOTS.Unsorted, {
 				i(206262),	-- Scalewarden's Crusher
 				i(206263),	-- Scalewarden's Scepter
 				i(206265),	-- Scalewarden's Sabre
-				i(206267),	-- Obsidian Legend's Pennant
 				i(206270),	-- Volcanic Equipment Chest
 				i(206271),	-- Malicia's Hoard
 			}),
@@ -1150,14 +780,9 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MISC, {
 				i(198138),	-- Lightning-Infused Rock
-				i(198834),	-- Scribbled Bark Chunks
 				i(202075),	-- Temp Currency
 
-				i(202181),	-- Best-root Tuber
-				i(202185),	-- Chillwrought Worm Meat
 				i(202202),	-- Revealing Mask
-				i(202361),	-- Farscale Supplies
-				i(202364),	-- Everburning Ember
 				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber
 				i(202619),	-- Mender Supplies
@@ -1227,7 +852,6 @@ root(ROOTS.Unsorted, {
 				q(72906),	-- [DNT] Storm Pet Battle
 				q(72907),	--
 				q(73194),	-- PTR:Up Close and Personal
-				q(73547),	--
 				q(74116),	-- PTR:Reach North
 				q(74309),	--
 				q(74314),	--
@@ -1267,7 +891,6 @@ root(ROOTS.Unsorted, {
 				q(74789),	--
 				q(74890),	--
 				q(74891),	--
-				q(74970),	--
 				q(74994),	--
 				-- 10.0.7.47983
 				q(75034),	--
@@ -1276,7 +899,6 @@ root(ROOTS.Unsorted, {
 				q(75202),	--
 				q(75224),	--
 				q(75236),	--
-				q(75237),	-- Reach West	 PTR:Reach North
 				q(75246),	--
 				q(75247),	--
 				q(75248),	--
@@ -1450,7 +1072,6 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				i(201990),	-- Primal Mote
 				i(202035),	-- Self-Heating Rations
-				i(202096),	-- Armaments of the Scale
 				i(202112),	-- Crystal Shattering Armaments
 				i(202310),	-- Defective Doomsday Device
 				i(202691),	-- Henry's Handbag
@@ -1527,7 +1148,6 @@ root(ROOTS.Unsorted, {
 				--
 				i(123868),	-- Relic of Shakama
 				i(192744),	-- Rymek's Gift
-				i(192768),	-- Titan Disc
 				--
 				i(199798),	-- Makko's Journal - Page Seven
 			}),
@@ -2388,13 +2008,9 @@ root(ROOTS.Unsorted, {
 				q(69913),	-- Towers of Earthen Power
 				q(69917),	--
 				q(69920),	--
-				q(69937),	-- Sylvan Succor
-				q(69939),	-- Sylvan Succor
-				q(69940),	-- Sylvan Succor
 				q(69945),	--
 				q(69947),	--
 				q(69948),	-- Wilrive
-				q(69950),	-- Sylvan Succor
 				q(69977),	--
 				q(69978),	--
 				q(69980),	-- Seavine: Fisherman Tinnak's Gift
@@ -2505,7 +2121,6 @@ root(ROOTS.Unsorted, {
 				q(70733),	-- Djaradin War Party
 				q(70742),	-- Runs in the Family
 				-- 10.0.0.45141
-				q(70782),	--
 				q(70787),	-- Caught In a Dusk Storm
 				q(70811),	-- Expert Excavation Tools
 				q(70816),	-- Treasure Tracking Techniques

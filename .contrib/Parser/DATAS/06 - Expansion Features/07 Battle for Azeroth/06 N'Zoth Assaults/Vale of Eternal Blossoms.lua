@@ -998,7 +998,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(174649, {	-- Rajani Warserpent (MOUNT!)
 								["cost"] = { { "i", 174230, 1 }, },	-- Pristine Cloud Serpent Scale
 							}),
-							i(172009, {	-- Recipe: Contract: Rajani (RECIPE!)
+							i(172009, {	-- Technique: Contract: Rajani (RECIPE!)
 								["cost"] = 14000000,	-- 1,400g
 							}),
 							i(174480, {	-- Windfeather Quill (PET!)
@@ -1013,6 +1013,11 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(174905, {	-- Troop Requisition: Rajani Sparkcaller
 								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 								["questID"] = 58907,
+								["g"] = {
+									follower(1187, {	-- Rajani Sparkcallers
+										["u"] = 15,	-- Temporary troop
+									}),
+								},
 							}),
 						},
 					}),

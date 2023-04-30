@@ -319,7 +319,16 @@ _.Zones =
 						["isWeekly"] = true,
 						["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
 						["groups"] = {
-							i(152095),	-- Krokul Ridgestalker
+							i(152095, {	-- Krokul Ridgestalker
+								["groups"] = {
+									follower(1055, {	-- Krokul Ridgestalker
+										["u"] = 15,	-- Temporary troop
+									}),
+									follower(1056, {	-- Krokul Ridgestalker
+										["u"] = 15,	-- Temporary troop
+									}),
+								},
+							}),
 						},
 					}),
 					q(48443, {	-- Nath'raxas Hold: Rescue Mission
@@ -334,7 +343,16 @@ _.Zones =
 							48910,	-- Supplying Krokuun
 						},
 						["groups"] = {
-							i(152095),	-- Krokul Ridgestalker
+							i(152095, {	-- Krokul Ridgestalker
+								["groups"] = {
+									follower(1055, {	-- Krokul Ridgestalker
+										["u"] = 15,	-- Temporary troop
+									}),
+									follower(1056, {	-- Krokul Ridgestalker
+										["u"] = 15,	-- Temporary troop
+									}),
+								},
+							}),
 						},
 					}),
 					q(48016, {	-- Ascending Alchemy

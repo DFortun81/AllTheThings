@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
 				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["g"] = {
-					i(168026, {	-- Recipe Book: Sanguine Feather Quill of Lana'thel
+					i(168026, {	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
 						["f"] = MISC,
 					}),
 				},
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 47.0, 35.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(168024, {	-- Recipe: Iwen's Enchanting Rod (RECIPE!)
+					i(168024, {	-- Formula: Iwen's Enchanting Rod (RECIPE!)
 						["sourceQuest"] = 54002,	-- Putting it All Together
 						["timeline"] = { "added 8.1.5" },
 					}),
@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 43.4, 38.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(168022, {	-- Recipe: Khaz'gorian Smithing Hammer (RECIPE!)
+					i(168022, {	-- Plans: Khaz'gorian Smithing Hammer (RECIPE!)
 						["sourceQuests"] = { 50279 },	-- Anvil's Away (H)
 						["timeline"] = { ADDED_8_1_5 },
 					}),
@@ -373,7 +373,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(162704, {	-- Recipe: Coastal Healing Potion [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162753, {	-- Recipe: Contract: Zandalari Empire [Rank 2] (RECIPE!)
+					i(162753, {	-- Technique: Contract: Zandalari Empire [Rank 2] (RECIPE!)
 						["cost"] = 11000000,	-- 1,100g
 					}),
 					i(162696, {	-- Recipe: Flask of Endless Fathoms [Rank 3] (RECIPE!)
@@ -461,7 +461,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 44.5, 33.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(168029, {	-- Recipe: Synchronous Thread
+					i(168029, {	-- Pattern: Synchronous Thread
 						["description"] = "This recipe is for relearning the Synchronous Thread after you have completed the Tools of the Trade questline.",
 						["sourceQuests"] = {
 							53881,	-- Cut from the Same Cloth (A)
@@ -574,11 +574,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(163319, {	-- Recipe: Battle Potion of Strength [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(166310, {	-- Recipe: Contract: The Honorbound [Rank 2] (RECIPE!)
+					i(166310, {	-- Technique: Contract: The Honorbound [Rank 2] (RECIPE!)
 						["cost"] = 19000000,	-- 1,900g
 						["timeline"] = { "added 8.1.0" },
 					}),
-					i(162720, {	-- Recipe: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
+					i(162720, {	-- Formula: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(162701, {	-- Recipe: Endless Tincture of Fractional Power [Rank 3] (RECIPE!)
@@ -590,16 +590,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(162691, {	-- Recipe: Steelskin Potion [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162707, {	-- Recipe: Stormsteel Dagger [Rank 3] (RECIPE!)
+					i(162707, {	-- Plans: Stormsteel Dagger [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162774, {	-- Recipe: Stormsteel Saber [Rank 3] (RECIPE!)
+					i(162774, {	-- Plans: Stormsteel Saber [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162706, {	-- Recipe: Stormsteel Shield [Rank 3] (RECIPE!)
+					i(162706, {	-- Plans: Stormsteel Shield [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162708, {	-- Recipe: Stormsteel Spear [Rank 3] (RECIPE!)
+					i(162708, {	-- Plans: Stormsteel Spear [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(162702, {	-- Recipe: Surging Alchemist Stone [Rank 3] (RECIPE!)
@@ -658,7 +658,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 47.0, 37.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(168027, {	-- Recipe: Jewelhammer's Focus
+					i(168027, {	-- Design: Jewelhammer's Focus
 						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
 					}),
 				},
@@ -834,7 +834,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 44.0, 34.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(168028, {	-- Recipe: Mallet of Thunderous Skins
+					i(168028, {	-- Pattern: Mallet of Thunderous Skins
 						["sourceQuest"] = 55223,	-- Instruments of Destruction (H)
 					}),
 				},

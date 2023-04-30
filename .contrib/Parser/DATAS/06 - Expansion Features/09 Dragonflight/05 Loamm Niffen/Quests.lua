@@ -68,6 +68,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 205127 },	-- Newsy
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
+
+				-- Unsorted (which renown level?) --
+			q(75721, {
+				-- TODO: ["minReputation"] = { 2564, 5 },	-- Loamm Niffen Renown 5
+				["provider"] = { "n", 204693 },	-- Ponzo
+				["coord"] = { 58.0, 53.8, ZARALEK_CAVERN },
+				["g"] = {
+					i(204985),	-- Barter Brick
+				}
+			})
 		}),
 	}),
 })));

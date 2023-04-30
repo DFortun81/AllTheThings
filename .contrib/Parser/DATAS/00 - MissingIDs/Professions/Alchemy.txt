@@ -46,9 +46,6 @@ r(264247),	-- Draenor Alchemy
 r(264255),	-- Kul Tiran Alchemy
 8.0.1.25976
 r(265787),	-- Zandalari Alchemy
-10.1.0.48480
-r(405832),	-- Stinky Bright Potion
-r(405879),	-- Cauldron of Extracted Putrescence
 
 
 

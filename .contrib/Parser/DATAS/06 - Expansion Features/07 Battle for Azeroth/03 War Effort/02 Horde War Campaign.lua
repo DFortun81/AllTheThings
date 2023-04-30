@@ -1520,6 +1520,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 						}),
 						q(56833, {	-- Leaders of the Horde
+							["description"] = "Choosing to escape with Eitrigg continues with 'Not My Warchief' and sets you on the Saurfang supporter questline, otherwise you continue the Sylvanas Loyalist questline.",
 							["altQuests"] = { 54109 },	-- Queen's Favor
 							["sourceQuests"] = { 56495 },	-- They Move Against Us
 							["provider"] = { "n", 156423 },	-- Lady Sylvanas Windrunner

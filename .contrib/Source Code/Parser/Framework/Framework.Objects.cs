@@ -192,7 +192,7 @@ namespace ATT
                     case 18: return Filters.Bag;
                     case 19: return Filters.Tabard;
                     case 22: return Filters.HeldInOffHand;
-                    case 23: return Filters.HeldInOffHand;
+                    //case 23: return Filters.HeldInOffHand;    // causes un-bindable Fish to include a SourceID
                     case 29: return Filters.ProfessionEquipment;
                     case 30: return Filters.ProfessionEquipment;
                     default: break;
@@ -291,7 +291,7 @@ namespace ATT
                                     case 09: return Filters.Cosmetic;           // Wrist (no armor type specified - Cosmetic?)
                                     case 10: return Filters.Cosmetic;           // Gloves (no armor type specified - Cosmetic?)
                                     case 20: return Filters.Cosmetic;           // Chest (no armor type specified - Cosmetic?)
-                                                                                //case 23: return Filters.HeldInOffHand;      // Held in Offhand
+                                    case 23: return Filters.HeldInOffHand;      // Held in Offhand
                                     default: return Filters.Invalid;
                                 }
                             case 01: return Filters.Cloth;
@@ -1687,7 +1687,7 @@ end");
                             }
                             else
                             {
-                                Log($"Weird 'g' value?? {Environment.NewLine}{ToJSON(value)}");
+                                Log($"Weird 'g' value??", value);
                                 Console.ReadLine();
                             }
                             break;

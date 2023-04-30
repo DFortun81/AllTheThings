@@ -3,7 +3,6 @@ r(2550),	-- Cooking
 r(3102),	-- Cooking
 r(3413),	-- Cooking
 1.0.0.3980
-r(818),	-- Cooking Fire \\ Basic Campfire
 r(18260),	-- Cooking
 1.13.0.28211
 r(30047),	-- Crystal Throat Lozenge

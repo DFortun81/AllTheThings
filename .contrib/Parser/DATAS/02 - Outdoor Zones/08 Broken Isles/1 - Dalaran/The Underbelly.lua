@@ -124,10 +124,10 @@ _.Zones =
 					n(97364, {	-- Laura Malley <Creatures>
 						["coord"] = { 58.0, 58.1, LEGION_THE_UNDERBELLY },
 						["g"] = {
-							i(137932, {	-- Recipe: Flaming Hoop
+							i(137932, {	-- Pattern: Flaming Hoop
 								["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
 							}),
-							i(137934, {	-- Recipe: Leather Pet Leash
+							i(137934, {	-- Pattern: Leather Pet Leash
 								["cost"] = { { "c", 1149, 50 }, },		-- 50x Sightless Eye
 							}),
 							i(136904, {	-- Sewer-Pipe Jelly  (PET!)
@@ -187,10 +187,10 @@ _.Zones =
 							i(137962, {	-- Pattern: Silkweave Cinch [Rank 3] (RECIPE!)
 								["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
 							}),
-							i(137901, {	-- Recipe: Battlebound Girdle [Rank 2] (RECIPE!)
+							i(137901, {	-- Pattern: Battlebound Girdle [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137913, {	-- Recipe: Battlebound Girdle [Rank 3] (RECIPE!)
+							i(137913, {	-- Pattern: Battlebound Girdle [Rank 3] (RECIPE!)
 								["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
 							}),
 							i(123949, {	-- Plans: Demonsteel Waistguard [Rank 3] (RECIPE!)
@@ -199,19 +199,19 @@ _.Zones =
 									{ "g", 15000000 },	-- 1,500g
 								},
 							}),
-							i(137885, {	-- Recipe: Dreadleather Belt [Rank 2] (RECIPE!)
+							i(137885, {	-- Pattern: Dreadleather Belt [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137893, {	-- Recipe: Dreadleather Belt [Rank 3] (RECIPE!)
+							i(137893, {	-- Pattern: Dreadleather Belt [Rank 3] (RECIPE!)
 								["cost"] = {
 									{ "c", 1149, 500 },	-- 500x Sightless Eye
 									{ "g", 15000000 },	-- 1,500g
 								},
 							}),
-							i(137917, {	-- Recipe: Gravenscale Girdle [Rank 2] (RECIPE!)
+							i(137917, {	-- Pattern: Gravenscale Girdle [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137925, {	-- Recipe: Gravenscale Girdle [Rank 3] (RECIPE!)
+							i(137925, {	-- Pattern: Gravenscale Girdle [Rank 3] (RECIPE!)
 								["cost"] = {
 									{ "c", 1149, 500 },	-- 500x Sightless Eye
 									{ "g", 15000000 },	-- 1,500g
@@ -223,10 +223,10 @@ _.Zones =
 							i(123937, {	-- Plans: Leystone Waistguard [Rank 3] (RECIPE!)
 								["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
 							}),
-							i(137869, {	-- Recipe: Warhide Belt [Rank 2] (RECIPE!)
+							i(137869, {	-- Pattern: Warhide Belt [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137881, {	-- Recipe: Warhide Belt [Rank 3] (RECIPE!)
+							i(137881, {	-- Pattern: Warhide Belt [Rank 3] (RECIPE!)
 								["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
 							}),
 						},

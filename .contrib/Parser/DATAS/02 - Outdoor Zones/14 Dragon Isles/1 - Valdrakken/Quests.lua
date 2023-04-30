@@ -301,6 +301,45 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					}),
 				},
 			}),
+			q(69939, {	-- Sylvan Succor
+				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
+				["provider"] = { "n", 192522 },	-- Thalendra
+				["coord"] = { 72.8, 66.2, VALDRAKKEN },
+				["cost"] = { { "i", 197766, 1 }, },	-- 1x Snow in a Cone
+				["isDaily"] = true,
+				["timeline"] = { ADDED_10_0_5 },
+				["g"] = {
+					title(467, {	-- <Name>, Honorary Dryad
+						["collectible"] = false,
+					}),
+				},
+			}),
+			q(69940, {	-- Sylvan Succor
+				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
+				["provider"] = { "n", 192522 },	-- Thalendra
+				["coord"] = { 72.8, 66.2, VALDRAKKEN },
+				["cost"] = { { "i", 197767, 1 }, },	-- 1x Blubbery Muffin
+				["isDaily"] = true,
+				["timeline"] = { ADDED_10_0_5 },
+				["g"] = {
+					title(467, {	-- <Name>, Honorary Dryad
+						["collectible"] = false,
+					}),
+				},
+			}),
+			q(69950, {	-- Sylvan Succor
+				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
+				["provider"] = { "n", 192522 },	-- Thalendra
+				["coord"] = { 72.8, 66.2, VALDRAKKEN },
+				["cost"] = { { "i", 197768, 1 }, },	-- 1x Tasty Hatchling's Treat
+				["isDaily"] = true,
+				["timeline"] = { ADDED_10_0_5 },
+				["g"] = {
+					title(467, {	-- <Name>, Honorary Dryad
+						["collectible"] = false,
+					}),
+				},
+			}),
 			-- MISC
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note

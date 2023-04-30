@@ -185,6 +185,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						}),
 					},
 				}),
+				n(199541, {	-- Tarndormu <Temporal Squadron Commander>
+					["description"] = "This Vendor is only visible during the Storm's Fury event.",
+					["coord"] = { 60.8, 46.6, THE_PRIMALIST_FUTURE },
+					["g"] = {
+						i(202096),	-- Armaments of the Scale
+					},
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(203469),	-- Coalesced Storm Remnants

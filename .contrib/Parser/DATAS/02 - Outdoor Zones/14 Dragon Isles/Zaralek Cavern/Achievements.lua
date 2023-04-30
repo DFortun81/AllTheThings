@@ -30,42 +30,54 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["_npcs"] = { 203477 },	-- Goopal
 				}),
 				crit(9, {
-					["_npcs"] = { 203627 },	-- Invohq
+					["_npcs"] = { 203611 },	-- Hadexia <Ember of Twilight>
 				}),
 				crit(10, {
-					["_npcs"] = { 203646 },	-- Jrumm
+					["_npcs"] = { 203627 },	-- Invohq
 				}),
 				crit(11, {
-					["_npcs"] = { 203625 },	-- Karokta
+					["_npcs"] = { 203646 },	-- Dinn
 				}),
 				crit(12, {
-					["_npcs"] = { 203466 },	-- Kaprachu
+					["_npcs"] = { 203625 },	-- Karokta
 				}),
 				crit(13, {
-					["_npcs"] = { 203618 },	-- Klakatak
+					["_npcs"] = { 203466 },	-- Kaprachu
 				}),
 				crit(14, {
-					["_npcs"] = { 203462 },	-- Kob'rok
+					["_npcs"] = { 203618 },	-- Klakatak
 				}),
 				crit(15, {
-					["_npcs"] = { 200111 },	-- Magmanesha
+					["_npcs"] = { 203462 },	-- Kob'rok
 				}),
 				crit(16, {
-					["_npcs"] = { 203521 },	-- Professor Gastrinax
+					["_npcs"] = { 203642 },	-- Kronkapace
 				}),
 				crit(17, {
-					["_npcs"] = { 203643 },	-- Skornak
+					["_npcs"] = { 203630 },	-- Lavermix
 				}),
 				crit(18, {
-					["_npcs"] = { 203480 },	-- Spinmarrow
+					["_npcs"] = { 200111 },	-- Magmanesha
 				}),
 				crit(19, {
-					["_npcs"] = { 203662 },	-- Subterrax
+					["_npcs"] = { 203521 },	-- Professor Gastrinax
 				}),
 				crit(20, {
-					["_npcs"] = { 203593 },	-- Underlight Queen
+					["_npcs"] = { 204096 },	-- Shadowforge Mole Machine
 				}),
 				crit(21, {
+					["_npcs"] = { 203643 },	-- Skornak
+				}),
+				crit(22, {
+					["_npcs"] = { 203480 },	-- Spinmarrow
+				}),
+				crit(23, {
+					["_npcs"] = { 203662 },	-- Subterrax
+				}),
+				crit(24, {
+					["_npcs"] = { 203593 },	-- Underlight Queen
+				}),
+				crit(25, {
 					["_npcs"] = { 201029 },	-- Viridian King
 				}),
 			}),
@@ -82,7 +94,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			petbattle(ach(17880, {	-- Battle in Zaralek Cavern
 				crit(1, {	-- To a Land Down Under
-					-- TODO: ["_quests"] = {  },	-- ???
+					["_quests"] = { 75680 },	-- To a Land Down Under
 				}),
 				crit(2, {	-- Are They Not Beautiful?
 					["_quests"] = { 75750 },	-- Are They Not Beautiful?
@@ -92,74 +104,77 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 				}),
 				crit(4, {	-- Do you Even Train?
-					-- TODO: ["_quests"] = {  },	-- ???
+					["_quests"] = { 75835 },	-- Do you Even Train?
 				}),
 			})),
 			ach(18100, {	-- Cavern Clawbbering
-				i(205904),	-- Vibrant Clacking Claw (TOY!)
-				crit(1, {
-					["_npcs"] = { 203515 },	-- Alcanon
-				}),
-				crit(2, {
-					["_npcs"] = { 203468 },	-- Aquifon
-				}),
-				crit(3, {
-					["_npcs"] = { 203621 },	-- Brulsef the Stronk
-				}),
-				crit(4, {
-					["_npcs"] = { 204093 },	-- Colossian
-				}),
-				crit(5, {
-					["_npcs"] = { 203664 },	-- Emberdusk
-				}),
-				crit(6, {
-					["_npcs"] = { 203660 },	-- Flowfy
-				}),
-				crit(7, {
-					["_npcs"] = { 203592 },	-- General Zskorro
-				}),
-				crit(8, {
-					["_npcs"] = { 203477 },	-- Goopal
-				}),
-				crit(9, {
-					["_npcs"] = { 203627 },	-- Invohq
-				}),
-				crit(10, {
-					["_npcs"] = { 203646 },	-- Jrumm
-				}),
-				crit(11, {
-					["_npcs"] = { 203625 },	-- Karokta
-				}),
-				crit(12, {
-					["_npcs"] = { 203466 },	-- Kaprachu
-				}),
-				crit(13, {
-					["_npcs"] = { 203618 },	-- Klakatak
-				}),
-				crit(14, {
-					["_npcs"] = { 203462 },	-- Kob'rok
-				}),
-				crit(15, {
-					["_npcs"] = { 200111 },	-- Magmanesha
-				}),
-				crit(16, {
-					["_npcs"] = { 203521 },	-- Professor Gastrinax
-				}),
-				crit(17, {
-					["_npcs"] = { 203643 },	-- Skornak
-				}),
-				crit(18, {
-					["_npcs"] = { 203480 },	-- Spinmarrow
-				}),
-				crit(19, {
-					["_npcs"] = { 203662 },	-- Subterrax
-				}),
-				crit(20, {
-					["_npcs"] = { 203593 },	-- Underlight Queen
-				}),
-				crit(21, {
-					["_npcs"] = { 201029 },	-- Viridian King
-				}),
+				["cost"] = { { "i", 205686, 21 } },	-- 21x Clacking Claw
+				["g"] = {
+					i(205904),	-- Vibrant Clacking Claw (TOY!)
+					crit(1, {
+						["_npcs"] = { 203515 },	-- Alcanon
+					}),
+					crit(2, {
+						["_npcs"] = { 203468 },	-- Aquifon
+					}),
+					crit(3, {
+						["_npcs"] = { 203621 },	-- Brulsef the Stronk
+					}),
+					crit(4, {
+						["_npcs"] = { 204093 },	-- Colossian
+					}),
+					crit(5, {
+						["_npcs"] = { 203664 },	-- Emberdusk
+					}),
+					crit(6, {
+						["_npcs"] = { 203660 },	-- Flowfy
+					}),
+					crit(7, {
+						["_npcs"] = { 203592 },	-- General Zskorro
+					}),
+					crit(8, {
+						["_npcs"] = { 203477 },	-- Goopal
+					}),
+					crit(9, {
+						["_npcs"] = { 203627 },	-- Invohq
+					}),
+					crit(10, {
+						["_npcs"] = { 203646 },	-- Jrumm
+					}),
+					crit(11, {
+						["_npcs"] = { 203625 },	-- Karokta
+					}),
+					crit(12, {
+						["_npcs"] = { 203466 },	-- Kaprachu
+					}),
+					crit(13, {
+						["_npcs"] = { 203618 },	-- Klakatak
+					}),
+					crit(14, {
+						["_npcs"] = { 203462 },	-- Kob'rok
+					}),
+					crit(15, {
+						["_npcs"] = { 200111 },	-- Magmanesha
+					}),
+					crit(16, {
+						["_npcs"] = { 203521 },	-- Professor Gastrinax
+					}),
+					crit(17, {
+						["_npcs"] = { 203643 },	-- Skornak
+					}),
+					crit(18, {
+						["_npcs"] = { 203480 },	-- Spinmarrow
+					}),
+					crit(19, {
+						["_npcs"] = { 203662 },	-- Subterrax
+					}),
+					crit(20, {
+						["_npcs"] = { 203593 },	-- Underlight Queen
+					}),
+					crit(21, {
+						["_npcs"] = { 201029 },	-- Viridian King
+					}),
+				},
 			}),
 			ach(17517, {	-- Dragon Glyphs: Aberrus Approach
 				["coord"] = { 48.4, 7.0, ZARALEK_CAVERN },
@@ -448,6 +463,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				i(205231),	-- Roggy (PET!)
 			}),
+			ach(17978),		-- Stones Can Fly!
+			ach(17977),		-- Stones Can Try To Fly!
 			ach(17830),		-- Stones Can't Fly!
 			ach(17781),		-- The Smell of Money
 			ach(18361, {	-- To All the Squirrels Burrowed Beneath
@@ -500,7 +517,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- TODO: ["_quests"] = {  },
 				}),
 				crit(3, {	-- Bloody Body
-					-- TODO: ["_quests"] = {  },
+					["_quests"] = { 75232 },
 				}),
 				crit(4, {	-- Charred Egg
 					["_quests"] = { 73706 },
@@ -515,13 +532,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["_quests"] = { 75019 },
 				}),
 				crit(8, {	-- Old Trunk
-					-- TODO: ["_quests"] = {  },
+					["_quests"] = { 74995 },
 				}),
 				crit(9, {	-- Seething Cache
-					-- ["_quests"] = { 49341 }, -- this is wrong
+					["_quests"] = { 73410 },
 				}),
 				crit(10, {	-- Well-Chewed Chest
-					-- TODO: ["_quests"] = {  },
+					["_quests"] = { 73395 },
 				}),
 			}),
 			pvp(ach(17851)),	-- Tour of Duty: Zaralek Cavern

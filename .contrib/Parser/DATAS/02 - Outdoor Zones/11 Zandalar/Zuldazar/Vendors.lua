@@ -51,16 +51,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3] (RECIPE!)
+					i(162358, {	-- Technique: Codex of the Quiet Mind [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2] (RECIPE!)
+					i(162373, {	-- Technique: Contract: Champions of Azeroth [Rank 2] (RECIPE!)
 						["cost"] = 11000000,	-- 1,100g
 					}),
-					i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2] (RECIPE!)
+					i(162371, {	-- Technique: Contract: Tortollan Seekers [Rank 2] (RECIPE!)
 						["cost"] = 11000000,	-- 1,100g
 					}),
-					i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3] (RECIPE!)
+					i(162377, {	-- Technique: Darkmoon Card of War [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3] (RECIPE!)
@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(162292, {	-- Recipe: Grilled Catfish [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3] (RECIPE!)
+					i(162352, {	-- Technique: Inscribed Vessel of Mysticism [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(166263, {	-- Recipe: Sanguinated Feast [Rank 2] (RECIPE!)
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3] (RECIPE!)
+					i(162376, {	-- Technique: Tome of the Quiet Mind [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(166367, {	-- Recipe: Wild Berry Bread [Rank 3] (RECIPE!)

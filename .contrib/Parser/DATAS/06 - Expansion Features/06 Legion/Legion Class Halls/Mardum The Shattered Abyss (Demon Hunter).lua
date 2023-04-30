@@ -7,6 +7,33 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 		cl(DEMONHUNTER, bubbleDownSelf({ ["classes"] = { DEMONHUNTER } }, {
 			["maps"] = { MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER, MARDUM_THE_SHATTERED_ABYSS_LOWER_COMMAND_CENTER },
 			["g"] = {
+				n(FOLLOWERS, bubbleDownSelf({
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(665),	-- Ashtongue Warriors
+					follower(878),	-- Ashtongue Warriors
+					follower(879),	-- Ashtongue Warriors
+					follower(880),	-- Ashtongue Warriors
+					follower(884),	-- Illidari Adepts
+					follower(885),	-- Illidari Adepts
+					follower(886),	-- Illidari Adepts
+					follower(666),	-- Illidari Adepts
+					follower(876),	-- Naga Myrmidons
+					follower(881),	-- Naga Myrmidons
+					follower(882),	-- Naga Myrmidons
+					follower(883),	-- Naga Myrmidons
+					follower(1027),	-- Shivarra
+					follower(1028),	-- Shivarra
+					follower(1029),	-- Shivarra
+					follower(1030),	-- Shivarra
+					follower(877),	-- Transformed Illidari Adepts
+					follower(887),	-- Transformed Illidari Adepts
+					follower(888),	-- Transformed Illidari Adepts
+					follower(889),	-- Transformed Illidari Adepts
+					
+					-- TODO: itemID 143849
+					follower(991),	-- Coilskar Brute
+				})),
 				n(QUESTS, {
 					q(39047, {	-- Call of the Illidari (Altruis)
 						["maps"] = { LEGION_DALARAN },

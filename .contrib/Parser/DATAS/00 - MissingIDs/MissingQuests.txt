@@ -748,6 +748,8 @@ q(72433),	--
 3.4.1.47966
 q(72522),	-- WOTLK:Festering Emerald Drake	
 q(72523),	-- WOTLK:Festering Emerald Drake	
+3.4.2.49311
+q(76175),	--
 5.0.3.15890
 q(13574),	-- Peering Into the Vortex (DEPRECATED)	
 q(13608),	-- Along for the Ride	
@@ -1526,10 +1528,6 @@ q(44322),	-- Tracking Quest
 q(44494),	--
 q(44648),	-- Tracking Quest: 7.0 Class Hall - Paladin - Pacing Mission 2B	
 q(44649),	-- Tracking Quest: 7.0 Class Hall - Priest - One-Time Quest Mission - Chapter 3 (JAP)	
-q(44703),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 1	
-q(44704),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 2	
-q(44705),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 3	
-q(44706),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 4	
 q(44755),	--
 q(44757),	--
 q(44774),	--
@@ -1683,21 +1681,11 @@ q(49764),	--
 q(74392),	--
 10.0.7.48966
 q(75449),	--
+10.0.7.49267
+q(76159),	--
 10.1.0.48480
 q(71053),	-- PTR:Hermit Kill Quest	
 q(72027),	-- PTR:[DNT] Training Kill Quest JKP	
-q(72411),	-- PTR:Cause Without a Rebel	
-q(72412),	-- PTR:Explosive Interruption	
-q(72413),	-- PTR:Irreconcilable Differences	
-q(72414),	-- PTR:Know Prisoners!	
-q(72415),	-- PTR:Rebel Rousing Writings	
-q(72416),	-- PTR:Temporary Accommodations	
-q(72417),	-- PTR:Persistent Dissidents	
-q(72418),	-- PTR:Solicited Opinions	
-q(72419),	-- PTR:Cleaning up the Cliffraff	
-q(72420),	-- PTR:Wreckonciliation	
-q(72421),	-- PTR:The Quill to Power	
-q(72422),	-- PTR:Stop the Presses	
 q(72454),	-- PTR:[PH] Moved to 10.1.5	
 q(72455),	--
 q(72457),	--
@@ -1709,7 +1697,6 @@ q(72480),	-- PTR:[DNT] Training Collect Quest
 q(72513),	-- PTR:Our Destiny	
 q(72514),	-- PTR:The High Creche	
 q(72515),	-- PTR:The Contingency	
-q(72658),	-- PTR:Flightstones	
 q(72664),	--
 q(72665),	-- PTR:[PH] Moved to 10.1.5	
 q(72666),	-- PTR:[PH] Moved to 10.1.5	
@@ -1721,77 +1708,12 @@ q(72679),	--
 q(72831),	--
 q(72832),	--
 q(72833),	--
-q(72872),	-- PTR:Culling the Deep	
-q(72873),	-- PTR:It Was Not Enough	
-q(72874),	-- PTR:Secrets From Our Father	
-q(72878),	-- PTR:Slime Time Live	
-q(72879),	-- PTR:Smells like Kith Spirit	
-q(72880),	-- PTR:Incense Gratification	
-q(72881),	-- PTR:A Swallow's Tale	
-q(72882),	-- PTR:Flown the Coop	
-q(72883),	-- PTR:A Bitter Pill to Swallow	
-q(72884),	-- PTR:Expedition Effervesta	
 q(72885),	-- PTR:Loamm Placeholder Quest	
-q(72886),	-- PTR:Suss Out the Imposter	
 q(72887),	--
-q(72908),	-- PTR:Sight Beyond Sight	
-q(72909),	-- PTR:Legends of the Zaqali	
-q(72910),	-- PTR:Know Thy Enemy	
-q(72911),	-- PTR:Take Out the Head	
-q(72912),	-- PTR:Consequences	
-q(72913),	-- PTR:Battlefield Triage	
-q(72914),	-- PTR:Rushing Quality	
-q(72915),	-- PTR:Alliance of Convenience	
-q(72916),	-- PTR:Shut Them Down	
-q(72917),	-- PTR:From Hell's Heart	
-q(72918),	-- PTR:No Dragon Left Behind	
-q(72919),	-- PTR:Raked Over the Coals	
-q(72920),	-- PTR:The Endless Burning Sky	
-q(72922),	-- PTR:Fading Embers	
-q(72923),	-- PTR:A Whisper to Sabellian	
-q(72924),	-- PTR:Appealing to the Black Prince	
-q(72925),	-- PTR:With Our Powers Combined	
-q(72926),	-- PTR:In the Right Hands	
-q(72927),	-- PTR:Finding Sarkareth	
-q(72928),	-- PTR:Wipe Them Out	
-q(72929),	-- PTR:Cracking His Shell	
-q(72930),	-- PTR:Stopping Sarkareth	
-q(72931),	-- PTR:Forward Camp	
 q(72932),	-- PTR:Our Father's Legacy - DEPRECATED	
 q(72957),	-- PTR:A Sundered Road [DNT]	
-q(72958),	-- PTR:Save-A-Mole	
-q(72959),	-- PTR:Whose Vault Is It Anyway?	
 q(72960),	-- PTR:[NYI] Refti Cleaning	
-q(72961),	-- PTR:Charging Up	
-q(72962),	-- PTR:Open That Door!	
-q(72963),	-- PTR:The Upper Hand	
-q(72964),	-- PTR:Singed	
-q(72965),	-- PTR:Aspects of Our Legacy	
-q(72966),	-- PTR:Where There's Smoke, There's Fire	
-q(72970),	-- PTR:Niffin and Goliath	
-q(72973),	-- PTR:Follow Your Nose	
-q(72974),	-- PTR:Welcome to the City of Smells	
-q(72975),	-- PTR:The Land Beneath: Zaralek Cavern!	
-q(72976),	-- PTR:A Crack in the World	
-q(72977),	-- PTR:Where the Flames Fell	
-q(72978),	-- PTR:Scar of Earth and Fire	
-q(72979),	-- PTR:The Earth Gives Way	
-q(72980),	-- PTR:Brother's Keeper	
-q(72981),	-- PTR:The Patience of Princes	
 q(72986),	--
-q(72987),	-- PTR:Here We Go Again	
-q(73036),	-- PTR:Medicinal Fungi	
-q(73037),	-- PTR:Healing Crystals	
-q(73038),	--
-q(73039),	-- PTR:Restless Death	
-q(73040),	--
-q(73041),	--
-q(73042),	--
-q(73043),	-- PTR:A Ghastly Legacy	
-q(73044),	-- PTR:Cataloging Horror	
-q(73045),	--
-q(73046),	--
-q(73047),	--
 q(73077),	-- PTR:This Might Sting	
 q(73081),	-- PTR:Stress Fractures	
 q(73085),	-- PTR:Cold Feet	
@@ -1804,133 +1726,26 @@ q(73099),	--
 q(73151),	-- PTR:Hats Off	
 q(73188),	--
 q(73195),	--
-q(73221),	-- PTR:A Clear State of Mind	
-q(73395),	--
-q(73408),	-- PTR:Sniffen 'em Out!	
-q(73410),	--
-q(73548),	--
-q(73551),	--
-q(73552),	--
-q(73553),	--
 q(73695),	--
-q(73697),	--
-q(73698),	-- PTR:Rolie Polie Molie	
-q(73706),	--
-q(73707),	-- PTR:TICKET: Glimmerogg Games	
-q(73708),	-- PTR:Pay to Play	
-q(73709),	-- PTR:Favor on the Side	
-q(73710),	--
-q(73711),	--
 q(73712),	--
 q(73713),	--
-q(73786),	--
-q(73787),	--
-q(73788),	--
-q(73789),	--
-q(73790),	--
-q(73791),	--
-q(73792),	--
-q(73793),	--
-q(73794),	--
-q(73795),	--
-q(73796),	--
-q(73797),	--
-q(73798),	--
-q(73799),	--
-q(73800),	--
-q(73801),	--
-q(73802),	--
-q(73803),	--
-q(73804),	--
-q(73805),	--
-q(73806),	--
-q(73807),	--
-q(73808),	--
-q(73809),	--
-q(73810),	--
-q(73811),	--
-q(73812),	--
-q(73813),	--
-q(73814),	--
-q(73815),	--
-q(73816),	--
-q(73817),	--
-q(73818),	--
-q(73820),	--
-q(73821),	--
-q(73822),	--
-q(73824),	--
-q(73825),	--
-q(73826),	--
-q(73827),	--
-q(73829),	--
-q(73830),	--
-q(73831),	--
-q(73832),	--
-q(73833),	--
-q(73834),	--
-q(73835),	--
-q(73836),	--
-q(73837),	--
-q(73838),	--
-q(73839),	--
-q(73840),	--
-q(73841),	--
-q(73842),	--
-q(73843),	--
-q(73844),	--
-q(73845),	--
-q(73846),	--
-q(73849),	--
-q(73850),	--
-q(73851),	--
-q(73852),	--
-q(73853),	--
-q(73854),	--
-q(73855),	--
-q(73856),	--
-q(73857),	--
-q(74292),	-- PTR:Deephollow Mysteries	
-q(74334),	-- PTR:Future Aspects	
 q(74335),	--
-q(74375),	-- PTR:Collating Their Research	
-q(74393),	-- PTR:Report: Battlefield Ruins	
 q(74438),	--
-q(74494),	-- PTR:A Scale for a Scale	
-q(74501),	-- PTR:Suffusion Camp: Cinderwind	
 q(74514),	-- PTR:The Slowest Fan Club	
-q(74515),	--
-q(74516),	-- PTR:A Snail's Pace	
-q(74517),	-- PTR:All Terrain Snail	
-q(74518),	--
-q(74519),	-- PTR:Good for Goo	
-q(74520),	-- PTR:Less Cargo	
 q(74522),	--
 q(74523),	--
 q(74524),	--
 q(74525),	--
-q(74526),	--
 q(74537),	--
-q(74538),	-- PTR:Blow It Up	
-q(74539),	-- PTR:Thinning Their Defenses	
-q(74540),	-- PTR:Intercepting Communications	
-q(74542),	-- PTR:Air Superiority	
-q(74557),	-- PTR:Investigating the Unknown	
 q(74560),	--
-q(74562),	-- PTR:Break Them Out	
-q(74563),	-- PTR:Worst of the Worst	
 q(74564),	--
 q(74568),	-- PTR:They Who Would Burn Us	
 q(74569),	-- PTR:Deny Them Resources	
 q(74570),	-- PTR:Aid Our Wounded	
 q(74571),	-- PTR:Clear a Path	
 q(74572),	-- PTR:Make it Rain	
-q(74573),	-- PTR:Aeirial Support	
-q(74775),	-- PTR:Disciple of Fyrakk: Kretchenwrath	
 q(74783),	--
 q(74785),	--
-q(74786),	-- PTR:Snailspiration: Shimmershell Snail	
-q(74787),	-- PTR:Come Snail Away	
 q(74797),	--
 q(74798),	--
 q(74799),	--
@@ -1969,112 +1784,49 @@ q(74831),	--
 q(74832),	--
 q(74833),	--
 q(74834),	--
-q(74839),	-- PTR:Crystal Circuit	
-q(74842),	-- PTR:Crystal Circuit - Advanced	
-q(74857),	-- PTR:Mouse Detective	
-q(74858),	-- PTR:Agrulculture	
-q(74859),	-- PTR:Sporemoth Exterminator	
-q(74860),	-- PTR:A Friendly Introduction	
-q(74861),	-- PTR:An Unfriendly Confrontation	
-q(74876),	-- PTR:The Buddy System	
-q(74877),	-- PTR:Best Friends	
-q(74878),	-- PTR:Old Friends, Dear Friends	
-q(74879),	-- PTR:Ph Balance	
-q(74882),	-- PTR:Crystal Circuit - Reverse	
-q(74889),	-- PTR:Caldera Cruise	
 q(74893),	--
-q(74899),	-- PTR:Caldera Cruise - Advanced	
 q(74904),	--
-q(74925),	-- PTR:Caldera Cruise - Reverse	
-q(74939),	-- PTR:Brimstone Scramble	
-q(74943),	-- PTR:Brimstone Scramble - Advanced	
-q(74944),	-- PTR:Brimstone Scramble - Reverse	
-q(74945),	-- PTR:Guanite Gambit	
-q(74948),	--
-q(74949),	--
-q(74950),	--
-q(74951),	-- PTR:Shimmering Slalom	
-q(74952),	--
-q(74953),	-- PTR:The Heavy Crown	
-q(74954),	-- PTR:Shimmering Slalom - Advanced	
-q(74956),	-- PTR:Shimmering Slalom - Reverse	
+q(74948),	-- PTR:Snailspiration: Amethyst Softshell	
+q(74949),	-- PTR:Snailspiration: Archetype of Vigilance	
+q(74950),	-- PTR:Snailspiration: Blackchasm Crawler	
+q(74952),	-- PTR:Snailspiration: Microlicid	
 q(74958),	--
-q(74959),	--
-q(74960),	--
-q(74961),	--
-q(74962),	--
-q(74963),	--
-q(74964),	--
-q(74965),	--
-q(74966),	--
-q(74967),	--
-q(74968),	--
-q(74972),	-- PTR:Zaralek Zigzag	
-q(74975),	-- PTR:Zaralek Zigzag - Advanced	
-q(74977),	-- PTR:Zaralek Zigzag - Reverse	
-q(74985),	--
+q(74959),	-- PTR:Snailspiration: Mudshell Conch	
+q(74960),	-- PTR:Snailspiration: Predatory Helicid	
+q(74961),	-- PTR:Snailspiration: Prismatic Softshell	
+q(74962),	-- PTR:Snailspiration: Rapana Whelk	
+q(74963),	-- PTR:Snailspiration: Rusty Snail	
+q(74964),	-- PTR:Snailspiration: Scooter the Snail	
+q(74965),	-- PTR:Snailspiration: Shelly	
+q(74966),	-- PTR:Snailspiration: Silkbead Snail	
+q(74967),	-- PTR:Snailspiration: Spireshell Snail	
+q(74968),	-- PTR:Snailspiration: Zoom	
 q(74986),	--
-q(74988),	-- PTR:If You Can't Take the Heat	
-q(74989),	-- PTR:Zealous Defenses	
-q(74990),	-- PTR:Roiling Shadow	
-q(74991),	-- PTR:We Have Returned	
-q(74992),	-- PTR:Fire Resistance Gear	
-q(74995),	--
-q(75015),	--
 q(75017),	--
 q(75018),	--
-q(75019),	--
 q(75021),	--
 q(75022),	-- PTR:Vinyeti	
 q(75027),	-- PTR:Aerial Domination	
 q(75028),	--
 q(75029),	--
-q(75030),	-- PTR:Crystal Catastrophe!	
-q(75035),	-- PTR:Sulfur Sprint	
-q(75042),	-- PTR:Sulfur Sprint - Advanced	
-q(75043),	-- PTR:Sulfur Sprint - Reverse	
-q(75058),	--
-q(75060),	--
-q(75061),	-- PTR:No Mushroom For Ever	
-q(75062),	-- PTR:Crystalline Conundrum	
-q(75063),	-- PTR:Ambergrease	
-q(75064),	-- PTR:Shrooming for a Living	
-q(75067),	-- PTR:Rock Viper Roundup	
-q(75071),	-- PTR:Sniffing Mice are Nice	
 q(75119),	-- PTR:Dragonrider Racing - Crystal Circuit	
-q(75120),	-- PTR:Dragonrider Racing - Caldera Cruise	
-q(75121),	-- PTR:Dragonrider Racing - Brimstone Scramble	
-q(75122),	-- PTR:Dragonrider Racing - Shimmering Slalom	
-q(75123),	-- PTR:Dragonrider Racing - Zaralek Zigzag	
-q(75124),	-- PTR:Dragonrider Racing - Sulfur Sprint	
-q(75126),	--
-q(75128),	-- PTR:Slime Ranching	
 q(75137),	--
 q(75138),	--
-q(75139),	--
 q(75140),	--
-q(75141),	--
 q(75142),	--
-q(75143),	--
 q(75144),	--
-q(75145),	-- PTR:In the Wake of the Ashes	
-q(75148),	--
-q(75149),	--
-q(75150),	--
-q(75151),	-- PTR:Redistributing the Remnants	
-q(75155),	-- PTR:Shadowflame Snuffer	
+q(75148),	-- PTR:Ancient Techniques	
+q(75149),	-- PTR:Obsidian Essays	
+q(75150),	-- PTR:Incandescence	
 q(75157),	--
 q(75162),	-- PTR:Conjuring Elements	
-q(75168),	--
 q(75180),	--
-q(75181),	-- PTR:Volunteer Fire Fighters	
 q(75182),	-- PTR:Grand Theft Mammoth	
 q(75183),	--
 q(75184),	--
 q(75186),	--
 q(75187),	--
 q(75188),	--
-q(75200),	-- PTR:Deepflayer Slayer	
 q(75201),	--
 q(75203),	--
 q(75204),	--
@@ -2089,158 +1841,66 @@ q(75220),	--
 q(75225),	--
 q(75226),	--
 q(75229),	--
-q(75230),	-- PTR:Reconcilable Dissidents	
-q(75231),	--
-q(75232),	-- PTR:Fallen Effects	
-q(75233),	-- PTR:Flesh to Bone	
 q(75234),	-- PTR:Scratch and Sniff	
 q(75235),	--
-q(75239),	-- PTR:Disciple of Fyrakk: Shadeisethal	
 q(75242),	--
 q(75243),	--
 q(75256),	--
 q(75264),	--
-q(75266),	--
-q(75267),	-- PTR:Kob'rok	
-q(75268),	--
-q(75269),	-- PTR:Kaprachu	
-q(75270),	--
-q(75271),	-- PTR:Aquifon	
-q(75273),	--
-q(75274),	-- PTR:Goopal	
-q(75275),	--
-q(75276),	-- PTR:Spinmarrow	
 q(75279),	--
-q(75280),	-- PTR:Suffusion Camp: Frostburn	
 q(75282),	--
-q(75284),	--
-q(75285),	-- PTR:Alcanon	
 q(75287),	--
-q(75291),	--
-q(75292),	-- PTR:Professor Gastrinax	
-q(75295),	--
-q(75296),	-- PTR:General Zskorro	
-q(75297),	--
-q(75298),	-- PTR:Underlight Queen	
-q(75302),	--
-q(75303),	--
-q(75304),	--
+q(75304),	-- PTR:I Need... a Tailor	
 q(75305),	--
-q(75306),	--
 q(75313),	--
 q(75314),	-- PTR:Hadexia	
 q(75315),	--
 q(75316),	--
-q(75320),	--
-q(75321),	--
-q(75322),	-- PTR:Klakatak	
-q(75323),	--
-q(75324),	--
-q(75325),	--
-q(75326),	-- PTR:Brulsef the Stronk	
-q(75327),	--
-q(75328),	--
-q(75329),	--
-q(75333),	--
-q(75334),	-- PTR:Kairoktra	
-q(75335),	--
-q(75336),	-- PTR:Invohq	
 q(75337),	--
 q(75338),	-- PTR:Lavermix	
-q(75339),	--
-q(75340),	-- PTR:Magmanesha	
 q(75341),	--
 q(75342),	-- PTR:Kronkapace	
-q(75343),	--
-q(75344),	--
-q(75345),	--
-q(75346),	--
-q(75348),	--
-q(75349),	-- PTR:Skornace	
-q(75350),	--
-q(75352),	--
-q(75353),	-- PTR:Jrumm	
-q(75354),	--
-q(75357),	--
-q(75358),	-- PTR:Flowfy	
-q(75359),	--
-q(75360),	-- PTR:Subterrax	
-q(75361),	--
-q(75362),	--
-q(75363),	--
-q(75364),	-- PTR:Emberdusk	
-q(75365),	--
-q(75366),	-- PTR:Viridian King	
-q(75367),	-- PTR:The Obsidian Rest	
-q(75368),	--
-q(75371),	--
+q(75343),	-- PTR:All That Glitter	
+q(75354),	-- PTR:Mycelium Mastery	
+q(75368),	-- PTR:Stones and Scales	
+q(75371),	-- PTR:Fascinating Fungi	
 q(75372),	-- PTR:Drive Them Before Us	
 q(75373),	-- PTR:Charge of the Ottuk Brigade	
 q(75374),	-- PTR:To Defend the Span	
-q(75375),	-- PTR:Burning Ice	
 q(75376),	-- PTR:Suffuse, Reuse, Recycle	
-q(75377),	-- PTR:Maintaining the Barricade	
 q(75382),	-- PTR:Portal Combat	
-q(75383),	-- PTR:Hideaway No More	
 q(75384),	-- PTR:Payback's a Mammoth	
 q(75389),	--
-q(75390),	-- PTR:Vertical Anomaly	
 q(75393),	-- PTR:Making Scents	
-q(75397),	-- PTR:Those Rascally Worms	
 q(75398),	-- PTR:Honor the Flame	
-q(75407),	--
+q(75407),	-- PTR:Silk Scavenging	
 q(75408),	--
 q(75415),	--
 q(75416),	--
 q(75417),	--
 q(75418),	--
-q(75419),	-- PTR:Sundered Flames	
 q(75429),	--
 q(75430),	--
 q(75431),	--
 q(75433),	--
 q(75434),	--
 q(75435),	--
-q(75440),	-- PTR:Satiating Sharpbeak	
 q(75442),	--
 q(75443),	--
 q(75445),	--
 q(75446),	--
-q(75450),	-- PTR:Seismic Ceremony	
-q(75451),	-- PTR:Imperfect Balance	
 q(75452),	--
 q(75453),	--
-q(75454),	-- PTR:Mortar Warfare	
-q(75455),	-- PTR:Conspiracy of Flames	
 q(75456),	-- PTR:News From Beneath	
 q(75458),	--
-q(75459),	-- PTR:Brand New Digs	
-q(75462),	-- PTR:Mouse Rescuers	
-q(75467),	--
-q(75475),	--
-q(75476),	-- PTR:Colossian	
 q(75477),	--
-q(75495),	--
-q(75496),	--
-q(75497),	-- PTR:The Catalyst's Boon	
-q(75502),	--
-q(75506),	-- PTR:Shadowflame Crests	
-q(75507),	-- PTR:Catching Up with Friends	
 q(75508),	--
 q(75509),	--
 q(75510),	--
-q(75511),	-- PTR:Tracking Quest	
 q(75514),	--
-q(75515),	--
 q(75516),	-- PTR:Squish Squash	
 q(75517),	-- PTR:Sneak and Sniff	
 q(75524),	--
-q(75525),	--
-q(75526),	--
-q(75527),	--
-q(75528),	-- PTR:A Tester's Guide to Entering Zaralek	
-q(75534),	--
-q(75535),	--
 q(75545),	--
 q(75546),	--
 q(75547),	--
@@ -2263,13 +1923,13 @@ q(75564),	--
 q(75565),	--
 q(75566),	--
 q(75567),	--
-q(75569),	--
+q(75569),	-- PTR:Blacksmith, Black Dragon	
 q(75570),	--
 q(75571),	--
 q(75572),	--
-q(75573),	--
+q(75573),	-- PTR:Proclamation Reclamation	
 q(75574),	--
-q(75575),	--
+q(75575),	-- PTR:Ballistae Bits	
 q(75576),	-- PTR:Grim Guzzler Invasion!	
 q(75577),	--
 q(75578),	--
@@ -2294,11 +1954,11 @@ q(75596),	--
 q(75597),	--
 q(75598),	--
 q(75599),	--
-q(75600),	--
-q(75602),	--
+q(75600),	-- PTR:Silk's Silk	
+q(75602),	-- PTR:Chips off the Old Crystal Block	
 q(75606),	--
 q(75607),	--
-q(75608),	--
+q(75608),	-- PTR:Titan Trash or Titan Treasure?	
 q(75609),	--
 q(75613),	--
 q(75614),	--
@@ -2306,15 +1966,9 @@ q(75615),	--
 q(75616),	--
 q(75617),	-- PTR:Honor the Flame	
 q(75618),	--
-q(75619),	-- PTR:Thieving Critters	
 q(75620),	-- PTR:Reflections in Light	
 q(75621),	-- PTR:Element Whispers	
 10.1.0.48537
-q(75156),	-- PTR:Stress Express	
-q(75222),	-- PTR:Shellfire	
-q(75370),	-- PTR:Smellincense	
-q(75441),	-- PTR:Smelly Scramble	
-q(75471),	-- PTR:Crystalline Survey	
 q(75622),	-- PTR:Calling All Competitors!	
 q(75627),	--
 q(75628),	--
@@ -2322,31 +1976,16 @@ q(75629),	--
 q(75630),	--
 q(75631),	--
 q(75640),	-- PTR:Honor the Flame	
-q(75641),	-- PTR:The Power of the Whole	
 q(75642),	--
-q(75643),	-- PTR:Orientation: Loamm Niffen	
-q(75644),	-- PTR:Six Hundred Feet Under	
 q(75645),	-- PTR:Honor the Flame	
-q(75646),	--
 q(75647),	-- PTR:Honor the Flame	
 q(75648),	--
-q(75649),	--
 q(75650),	-- PTR:Honor the Flame	
-q(75651),	--
-q(75652),	--
-q(75653),	--
 q(75654),	--
-q(75660),	-- PTR:Ending Their Watch	
-q(75661),	--
-q(75662),	-- PTR:A Race To The Finish	
-q(75663),	--
-q(75665),	-- PTR:A Worthy Ally: Loamm Niffen	
+q(75661),	-- PTR:Curative Crystalline Collection	
 q(75666),	--
-q(75680),	-- PTR:To a Land Down Under	
-q(75694),	-- PTR:Aberrus, the Shadowed Crucible: Sarkareth	
 10.1.0.48661
-q(75706),	--
-q(75707),	-- PTR:A Race To The Finish	
+q(75706),	-- PTR:A Race to the Finish	
 q(75708),	--
 q(75710),	--
 q(75715),	--
@@ -2354,17 +1993,13 @@ q(75716),	--
 q(75717),	--
 q(75718),	--
 q(75719),	-- PTR:[DNT] Test Quest	
-q(75720),	-- PTR:Care to Barter?	
-q(75721),	-- PTR:Bartering 101	
-q(75722),	-- PTR:Drake's Shadowflame Crest	
-q(75723),	-- PTR:Cavern Drakewatching	
 q(75724),	-- PTR:Like the Niffen Do	
 q(75725),	-- PTR:Off to the Track	
 q(75726),	--
 q(75727),	-- PTR:The Smelliest Tabard	
 q(75728),	-- PTR:Bartering Boulders	
 q(75730),	-- PTR:Slitherdrake Watching	
-q(75731),	--
+q(75731),	-- PTR:Scented Boots	
 q(75732),	--
 q(75733),	--
 q(75734),	--
@@ -2376,10 +2011,7 @@ q(75739),	--
 q(75740),	--
 q(75741),	-- PTR:Bundle of Boulders	
 q(75742),	-- PTR:Drake Helms	
-q(75743),	--
 q(75744),	-- PTR:A Token of Our Gratitude	
-q(75745),	--
-q(75750),	--
 q(75751),	--
 q(75752),	--
 q(75753),	--
@@ -2393,24 +2025,22 @@ q(75760),	--
 q(75761),	--
 q(75762),	--
 q(75763),	--
-q(75764),	--
 q(75765),	-- PTR:Liquid Art	
-q(75766),	--
-q(75767),	--
-q(75768),	--
-q(75769),	--
-q(75770),	--
-q(75771),	--
-q(75772),	--
-q(75773),	--
+q(75766),	-- PTR:Ruby in the Rough	
+q(75767),	-- PTR:Good Time Boy	
+q(75768),	-- PTR:Lucky Ducky	
+q(75769),	-- PTR:Drawing a Blank	
+q(75770),	-- PTR:A Glass of Bubbly	
+q(75771),	-- PTR:Incense Replay	
+q(75772),	-- PTR:Flask Manager	
+q(75773),	-- PTR:Little Blank Book	
 q(75774),	--
 q(75775),	--
 q(75818),	--
 q(75819),	--
 q(75831),	-- PTR:Barter Up	
 q(75832),	--
-q(75834),	--
-q(75835),	--
+q(75834),	-- PTR:Delver Mardei	
 q(75836),	--
 q(75837),	--
 q(75838),	--
@@ -2434,26 +2064,18 @@ q(75855),	--
 q(75856),	--
 q(75857),	--
 q(75858),	--
-q(75859),	--
-q(75860),	--
-q(75861),	-- PTR:Aiding the Accord: Suffusion Camp	
 q(75862),	--
 q(75863),	--
 q(75864),	--
-q(75865),	--
+q(75865),	-- PTR:Relic Rustler	
 q(75866),	--
 q(75869),	--
 q(75870),	--
 q(75871),	--
-q(75872),	--
-q(75873),	--
 q(75875),	--
 q(75876),	--
 q(75883),	--
-q(75885),	-- PTR:Get Rich Quick	
 10.1.0.48776
-q(75887),	-- PTR:Fyrakk's Forces	
-q(75888),	-- PTR:Suffusion Camp	
 q(75893),	--
 q(75894),	--
 q(75895),	--
@@ -2468,11 +2090,9 @@ q(75903),	--
 q(75905),	--
 q(75906),	--
 q(75907),	--
-q(75908),	--
 q(75909),	--
 q(75911),	--
 q(75912),	--
-q(75913),	--
 q(75914),	--
 q(75915),	--
 q(75917),	--
@@ -2482,23 +2102,17 @@ q(75927),	--
 q(75929),	--
 q(75931),	--
 q(75937),	-- PTR:No Time Like The Present	
-q(75941),	--
 q(75942),	--
 q(75943),	--
 q(75944),	--
-q(75945),	--
 q(75946),	--
 q(75947),	--
-q(75948),	--
-q(75967),	--
 q(75968),	--
 q(75985),	-- PTR:Sleep Well, Warrior	
 q(75992),	--
-q(75994),	--
 q(75995),	--
 q(75997),	--
 q(75999),	--
-q(76000),	--
 q(76001),	--
 q(76002),	--
 q(76003),	--
@@ -2511,43 +2125,27 @@ q(76010),	--
 q(76011),	--
 q(76012),	--
 10.1.0.48898
-q(74352),	--
-q(75461),	-- PTR:Magmaclaw Matriarch	
-q(75478),	-- PTR:Hungry Hungry Hydra	
-q(75494),	-- PTR:Strike the Colors	
-q(75611),	--
-q(75612),	--
-q(75624),	--
-q(75664),	--
-q(75705),	--
-q(75996),	--
+q(75996),	-- PTR:Your Weight in Gold	
 q(76013),	--
-q(76014),	--
-q(76015),	--
-q(76016),	--
+q(76015),	-- PTR:Heart of Iron	
 q(76017),	--
 q(76018),	--
 q(76019),	--
 q(76020),	--
-q(76025),	--
-q(76027),	--
-q(76028),	--
-q(76029),	--
-q(76030),	--
-q(76031),	--
-q(76038),	--
-q(76067),	--
-q(76077),	--
+q(76027),	-- PTR:Flapping and Screaming	
+q(76028),	-- PTR:Dragon Isles Supplies	
+q(76029),	-- PTR:Dragon Isles Supplies	
+q(76030),	-- PTR:Airborne Winding	
+q(76031),	-- PTR:Dragon Isles Supplies	
+q(76067),	-- PTR:Signed, Sealed, Self-Delivered	
 q(76078),	--
 q(76079),	--
 q(76080),	--
-q(76081),	--
+q(76081),	-- PTR:Liars of Spirit	
 q(76082),	--
-q(76083),	--
-q(76084),	--
+q(76083),	-- PTR:Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder	
 q(76085),	--
-q(76086),	--
-q(76101),	--
+q(76086),	-- PTR:Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder	
 q(76102),	--
 q(76103),	--
 q(76104),	--
@@ -2566,7 +2164,6 @@ q(76117),	--
 q(76118),	--
 q(76120),	--
 q(76121),	--
-q(76122),	--
 q(76123),	--
 q(76124),	--
 q(76125),	--
@@ -2588,7 +2185,6 @@ q(76139),	--
 q(75936),	-- PTR:Slimy Yet Satisfying	
 q(75998),	-- PTR:Crispety Crunchety	
 q(76004),	-- PTR:Deep Cuts	
-q(76159),	--
 q(76172),	--
 q(76173),	--
 q(76174),	--

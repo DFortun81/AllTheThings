@@ -414,10 +414,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50622, {	-- Deal's Off
-				--	according to wowhead you can pick this up from two separate NPCs.  i had done the goldfield's war/golden fields forever quests already, before finishing the chain that ends with 'farming stimulator,' so you might be able to pick it up from either 'farmer' depending on which of these chains you finish second.  the quest text says 'there's only one farm left,' so it'd make sense writing-wise if you had to complete the other two farms first.
 				["sourceQuests"] = {
 					50136,	-- Farming Stimulator
-				--	50088,	-- Golden Fields Forever (possibly required)
+					50088,	-- Golden Fields Forever
 				},
 				["provider"] = { "n", 132118 },	-- Farmer Burton
 				["coord"] = { 51.6, 66.0, STORMSONG_VALLEY },
@@ -1232,7 +1231,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					50354,	-- Look Out!
 				},
 				["provider"] = { "o", 282478 },	-- Empty Crate
-				["coord"] = { 46.7, 73.8, STORMSONG_VALLEY },
+				["coord"] = { 46.3, 77.0, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50162, {	-- Sticky Situation
@@ -1661,8 +1660,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52065, {	-- Worse Than it Looks
-			--	may also require 'smells like trouble' and 'dangerous game'
-				["sourceQuests"] = { 50909 },	-- Never Outgunned
+				["sourceQuests"] = {
+					50909, -- Never Outgunned
+					50910, -- Dangerous Game
+					50908, -- Smells Like Trouble
+				},	
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 135682 },	-- Patrick Eckhart
 				["coord"] = { 57.8, 55.3, STORMSONG_VALLEY },

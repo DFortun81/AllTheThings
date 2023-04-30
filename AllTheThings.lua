@@ -158,6 +158,7 @@ app.PrintMemoryUsage = function(...)
 	if ... then app.print(..., GetAddOnMemoryUsage("AllTheThings"));
 	else app.print("Memory",GetAddOnMemoryUsage("AllTheThings")); end
 end
+-- app.PrintMemoryUsage("ATT.lua")
 --]]
 
 -- Coroutine Helper Functions
@@ -166,7 +167,7 @@ app.EmptyTable = {};
 app.EmptyFunction = function() end;
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
-		-- print("Running Stack " .. i .. ":" .. self.__stack[i][2])
+		-- app.PrintDebug("Running Stack " .. i .. ":" .. self.__stack[i][2])
 		if not self.__stack[i][1](self) then
 			-- print("Removing Stack " .. i .. ":" .. self.__stack[i][2])
 			table.remove(self.__stack, i);
@@ -216,62 +217,10 @@ local function StartCoroutine(name, method, delaySec)
 	-- else print("skipped coroutine",name);
 	end
 end
-local Callback = app.Callback;
--- Triggers a timer callback method to run after the provided number of seconds with the provided params; the method can only be set to run once per delay
-local function DelayedCallback(method, delaySec, ...)
-	if not app.__callbacks[method] then
-		app.__callbacks[method] = ... and {...} or true;
-		-- app.PrintDebug("DelayedCallback:",method, ...)
-		local newCallback = function()
-			local args = app.__callbacks[method];
-			app.__callbacks[method] = nil;
-			-- callback with args/void
-			if args ~= true then
-				-- app.PrintDebug("DelayedCallback/args Running",method, unpack(args))
-				method(unpack(args));
-			else
-				-- app.PrintDebug("DelayedCallback/void Running",method)
-				method();
-			end
-			-- app.PrintDebug("DelayedCallback Done",method)
-		end;
-		C_Timer.After(math.max(0, delaySec or 0), newCallback);
-	end
-end
--- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
-local function AfterCombatCallback(method, ...)
-	if not InCombatLockdown() then Callback(method, ...); return; end
-	if not app.__callbacks[method] then
-		app.__callbacks[method] = ... and {...} or true;
-		-- If in combat, register to trigger on leave combat
-		-- print("AfterCombatCallback:",method, ...)
-		local newCallback = function()
-			local args = app.__callbacks[method];
-			app.__callbacks[method] = nil;
-			-- AfterCombatCallback with args/void
-			if args and args ~= true then
-				-- print("AfterCombatCallback/args Running",method, unpack(args))
-				method(unpack(args));
-			else
-				-- print("AfterCombatCallback/void Running",method)
-				method();
-			end
-			-- print("AfterCombatCallback:Done",method)
-		end;
-		tinsert(app.__combatcallbacks, 1, newCallback);
-		app:RegisterEvent("PLAYER_REGEN_ENABLED");
-	end
-end
--- Triggers a timer callback method to run either when current combat ends, or after the provided delay; the method can only be set to run once until it has been run
-local function AfterCombatOrDelayedCallback(method, delaySec, ...)
-	if InCombatLockdown() then
-		-- print("chose AfterCombatCallback")
-		AfterCombatCallback(method, ...);
-	else
-		-- print("chose DelayedCallback",delaySec)
-		DelayedCallback(method, delaySec, ...);
-	end
-end
+local Callback = app.CallbackHandlers.Callback;
+local DelayedCallback = app.CallbackHandlers.DelayedCallback;
+local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback;
+local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
 local function LocalizeGlobal(globalName, init)
 	local val = _G[globalName];
 	if init and not val then
@@ -317,91 +266,99 @@ end
 
 -- Iterative Function Runner
 do
-local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
-local QueueIndex = 1;
-local function SetPerFrame(count)
-	Config.PerFrame = math.max(1, tonumber(count) or 1);
-	-- app.PrintDebug("FR:",Config.PerFrame)
-end
-local function Reset()
-	Config.PerFrame = 1;
-	-- when done with all functions in the queue, reset the queue index and clear the queues of data
-	QueueIndex = 1;
-	wipe(FunctionQueue);
-	wipe(ParameterBucketQueue);
-	wipe(ParameterSingleQueue);
-	-- app.PrintDebug("FR:Reset")
-end
+-- Creates a Function Runner which can execute a sequence of Functions on a set iteration per frame update
+local function CreateRunner(name)
+	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
+	local QueueIndex = 1;
+	local function SetPerFrame(count)
+		Config.PerFrame = math.max(1, tonumber(count) or 1);
+		-- app.PrintDebug("FR.PerFrame."..name,Config.PerFrame)
+	end
+	local function Reset()
+		Config.PerFrame = 1;
+		-- when done with all functions in the queue, reset the queue index and clear the queues of data
+		QueueIndex = 1;
+		wipe(FunctionQueue);
+		wipe(ParameterBucketQueue);
+		wipe(ParameterSingleQueue);
+		-- app.PrintDebug("FR:Reset."..name)
+	end
 
--- maybe a coroutine directly which can be restarted without needing to be re-created?
-local FunctionRunnerCoroutine = function()
-	local i, perFrame = 1, Config.PerFrame;
-	local params;
-	local func = FunctionQueue[i];
-	-- app.PrintDebug("FRC.Running")
-	while func do
-		perFrame = perFrame - 1;
-		params = ParameterBucketQueue[i];
-		if params then
-			-- app.PrintDebug("FRC.Run.N",i,unpack(params))
-			func(unpack(params));
+	-- maybe a coroutine directly which can be restarted without needing to be re-created?
+	local RunnerCoroutine = function()
+		local i, perFrame = 1, Config.PerFrame;
+		local params;
+		local func = FunctionQueue[i];
+		-- app.PrintDebug("FRC.Running."..name)
+		while func do
+			perFrame = perFrame - 1;
+			params = ParameterBucketQueue[i];
+			if params then
+				-- app.PrintDebug("FRC.Run.N."..name,i,unpack(params))
+				func(unpack(params));
+			else
+				-- app.PrintDebug("FRC.Run.1."..name,i,ParameterSingleQueue[i])
+				func(ParameterSingleQueue[i]);
+			end
+			-- app.PrintDebug("FRC.Done."..name,i)
+			if perFrame <= 0 then
+				-- app.PrintDebug("FRC.Yield."..name)
+				coroutine.yield();
+				perFrame = Config.PerFrame;
+			end
+			i = i + 1;
+			func = FunctionQueue[i];
+		end
+		-- Run the OnEnd function if it exists
+		local OnEnd = FunctionQueue[0];
+		if OnEnd then
+			-- app.PrintDebug("FRC.End."..name,#FunctionQueue)
+			OnEnd();
+		end
+		Reset();
+	end
+
+	-- Provides a utility which will process a given number of functions each frame in a Queue
+	local Runner = {
+		-- Adds a function to be run with any necessary parameters
+		["Run"] = function(func, ...)
+			if type(func) ~= "function" then
+				error("Must be a 'function' type!")
+			end
+			FunctionQueue[QueueIndex] = func;
+			-- app.PrintDebug("FR.Add."..name,QueueIndex,...)
+			local arrs = select("#", ...);
+			if arrs == 1 then
+				ParameterSingleQueue[QueueIndex] = ...;
+			elseif arrs > 1 then
+				ParameterBucketQueue[QueueIndex] = { ... };
+			end
+			QueueIndex = QueueIndex + 1;
+			StartCoroutine("Runner:"..name, RunnerCoroutine);
+		end,
+		-- Set a function to be run once the queue is empty. This function takes no parameters.
+		["OnEnd"] = function(func)
+			FunctionQueue[0] = func;
+		end,
+	};
+
+	-- Defines how many functions will be executed per frame. Executes via the Runner when encountered in the Queue, unless specified as 'instant'
+	Runner.SetPerFrame = function(count, instant)
+		if instant then
+			SetPerFrame(count);
 		else
-			-- app.PrintDebug("FRC.Run.1",i,ParameterSingleQueue[i])
-			func(ParameterSingleQueue[i]);
+			Runner.Run(SetPerFrame, count);
 		end
-		-- app.PrintDebug("FRC.Done",i)
-		if perFrame <= 0 then
-			-- app.PrintDebug("FRC.Yield")
-			coroutine.yield();
-			perFrame = Config.PerFrame;
-		end
-		i = i + 1;
-		func = FunctionQueue[i];
 	end
-	-- Run the OnEnd function if it exists
-	local OnEnd = FunctionQueue[0];
-	if OnEnd then
-		-- app.PrintDebug("FRC.End",#FunctionQueue)
-		OnEnd();
-	end
-	Reset();
+	Runner.Reset = Reset; -- for testing
+
+	return Runner;
 end
 
--- Provides a utility which will process a given number of functions each frame in a Queue
-local FunctionRunner = {
-	-- Adds a function to be run with any necessary parameters
-	["Run"] = function(func, ...)
-		if type(func) ~= "function" then
-			error("Must be a 'function' type!")
-		end
-		FunctionQueue[QueueIndex] = func;
-		-- app.PrintDebug("FR.Add",QueueIndex,...)
-		local arrs = select("#", ...);
-		if arrs == 1 then
-			ParameterSingleQueue[QueueIndex] = ...;
-		elseif arrs > 1 then
-			ParameterBucketQueue[QueueIndex] = { ... };
-		end
-		QueueIndex = QueueIndex + 1;
-		StartCoroutine("FunctionRunnerCoroutine", FunctionRunnerCoroutine);
-	end,
-	-- Set a function to be run once the queue is empty. This function takes no parameters.
-	["OnEnd"] = function(func)
-		FunctionQueue[0] = func;
-	end,
-};
-
--- Defines how many functions will be executed per frame. Executes via the FunctionRunner when encountered in the Queue, unless specified as 'instant'
-FunctionRunner.SetPerFrame = function(count, instant)
-	if instant then
-		SetPerFrame(count);
-	else
-		FunctionRunner.Run(SetPerFrame, count);
-	end
-end
-FunctionRunner.Reset = Reset; -- for testing
-
-app.FunctionRunner = FunctionRunner;
+app.FunctionRunner = CreateRunner("default");
+app.DynamicRunner = CreateRunner("dynamic");
+app.UpdateRunner = CreateRunner("update");
+app.FillRunner = CreateRunner("fill");
 end
 
 -- Sorting Logic
@@ -2076,7 +2033,7 @@ local function CreateObject(t, rootOnly)
 		elseif t.factionID then
 			t = app.CreateFaction(t.factionID, t);
 		elseif t.itemID then
-			if t.isToy then
+			if t.toyID then
 				t = app.CreateToy(t.itemID, t);
 			elseif t.runeforgePowerID then
 				t = app.CreateRuneforgeLegendary(t.runeforgePowerID, t);
@@ -4213,7 +4170,7 @@ local function ResolveSymlinkGroupAsync(group)
 end
 -- Fills the symlinks within a group by using an 'async' process to spread the filler function over multiple game frames to reduce stutter or apparent lag
 app.FillSymlinkAsync = function(o)
-	app.FunctionRunner.Run(ResolveSymlinkGroupAsync, o);
+	app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
 end
 end)();
 
@@ -5473,7 +5430,7 @@ local function FillGroupsRecursive(group, FillData)
 		end
 	end
 end
--- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FunctionRunner to recursively follow the next layer of groups
+-- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FillRunner to recursively follow the next layer of groups
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, FillData)
 	if SkipFillingGroup(group, FillData) then
@@ -5502,7 +5459,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	end
 
 	if group.g then
-		local Run = app.FunctionRunner.Run;
+		local Run = app.FillRunner.Run;
 		-- app.PrintDebug(".g",group.hash,#group.g)
 		-- Then nest anything further
 		for _,o in ipairs(group.g) do
@@ -5513,7 +5470,7 @@ end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
 	-- Check if this group is inside a Window or not
-	local isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
+	local groupWindow = app.RecursiveFirstDirectParentWithField(group, "window");
 	-- Setup the FillData for this fill operation
 	local FillData = {
 		Included = {},
@@ -5524,8 +5481,10 @@ app.FillGroups = function(group)
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
 	-- Fill the group with all nestable content
-	if isInWindow then
-		local Runner = app.FunctionRunner;
+	if groupWindow then
+		local Runner = app.FillRunner;
+		Runner.OnEnd(groupWindow.StopProcessing);
+		groupWindow.StartProcessing();
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		Runner.SetPerFrame(25);
 		Runner.Run(FillGroupsRecursiveAsync, group, FillData);
@@ -6323,7 +6282,6 @@ fieldConverters = {
 		CacheField(group, "instanceID", value);
 	end,
 	["itemID"] = function(group, value, raw)
-		if group.isToy then CacheField(group, "toyID", value); end
 		if not raw then
 			-- only cache the modItemID if it is not the same as the itemID
 			-- pulling .modItemID directly will cause a rawset on the group and break iteration while caching
@@ -6336,6 +6294,10 @@ fieldConverters = {
 		CacheField(group, "itemID", value);
 	end,
 	["mapID"] = cacheMapID,
+	["mountID"] = function(group, value)
+		CacheField(group, "mountID", value);
+		CacheField(group, "spellID", value);
+	end,
 	["npcID"] = cacheCreatureID,
 	["objectID"] = cacheObjectID,
 	["professionID"] = function(group, value)
@@ -6364,17 +6326,16 @@ fieldConverters = {
 	end,
 	["spellID"] = function(group, value)
 		CacheField(group, "spellID", value);
-		-- cache as a mount if it is
-		local mountID = group.mountID;
-		if mountID then
-			CacheField(group, "mountID", mountID);
-		end
 	end,
 	["tierID"] = function(group, value)
 		CacheField(group, "tierID", value);
 	end,
 	["titleID"] = function(group, value)
 		CacheField(group, "titleID", value);
+	end,
+	["toyID"] = function(group, value)
+		CacheField(group, "toyID", value);
+		CacheField(group, "itemID", value);
 	end,
 
 	-- Complex Converters
@@ -7417,6 +7378,7 @@ local function RefreshSaves()
 	AfterCombatCallback(RefreshSavesCallback);
 end
 local function RefreshAppearanceSources()
+	-- app.PrintDebug("RefreshAppearanceSources")
 	app.DoRefreshAppearanceSources = nil;
 	local collectedSources, brokenUniqueSources = ATTAccountWideData.Sources, ATTAccountWideData.BrokenUniqueSources;
 	wipe(collectedSources);
@@ -7587,9 +7549,9 @@ local function RefreshCollections()
 	end
 
 	-- Wait for refresh to actually finish
-	while app.refreshDataQueued do coroutine.yield(); end
+	while app.Processing_RefreshData do coroutine.yield(); end
 
-	-- Report success.
+	-- Report success once refresh is done
 	app.print(L["DONE_REFRESHING"]);
 end
 app.ToggleMainList = function()
@@ -12293,14 +12255,13 @@ fields.collected = function(t)
 fields.tsm = function(t)
 		return sformat("i:%d", t.itemID);
 	end
-fields.isToy = app.ReturnTrue;
-fields.toyID = function(t)
-		return t.itemID;
+fields.itemID = function(t)
+		return t.toyID;
 	end
 
 app.BaseToy = app.BaseObjectFields(fields, "BaseToy");
 app.CreateToy = function(id, t)
-	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
+	return setmetatable(constructor(id, t, "toyID"), app.BaseToy);
 end
 end)();
 
@@ -12832,7 +12793,7 @@ app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 end)();
 
 -- Mount Lib
-(function()
+do
 local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
 local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
@@ -12860,7 +12821,7 @@ local function CacheInfo(t, field)
 		_t.displayID = displayID;
 		_t.lore = lore;
 		_t.name = C_MountJournal_GetMountInfoByID(mountID);
-		_t.mountID = mountID;
+		_t.mountJournalID = mountID;
 	end
 	local name, _, icon = GetSpellInfo(id);
 	if name then
@@ -12891,7 +12852,7 @@ local function default_costCollectibles(t)
 end
 local mountFields = {
 	["key"] = function(t)
-		return "spellID";
+		return "mountID";
 	end,
 	["_cache"] = function(t)
 		return cache;
@@ -12925,8 +12886,8 @@ local mountFields = {
 	["b"] = function(t)
 		return (t.parent and t.parent.b) or 1;
 	end,
-	["mountID"] = function(t)
-		return cache.GetCachedField(t, "mountID", CacheInfo);
+	["spellID"] = function(t)
+		return t.mountID;
 	end,
 	["lore"] = function(t)
 		return cache.GetCachedField(t, "lore", CacheInfo);
@@ -12943,15 +12904,8 @@ local mountFields = {
 	end,
 };
 app.BaseMount = app.BaseObjectFields(mountFields, "BaseMount");
-
-local fields = RawCloneData(mountFields);
-app.BaseMountWithItemID = app.BaseObjectFields(fields, "BaseMountWithItemID");
 app.CreateMount = function(id, t)
-	-- if t and rawget(t, "itemID") then
-		-- return setmetatable(constructor(id, t, "spellID"), app.BaseMountWithItemID);
-	-- else
-		return setmetatable(constructor(id, t, "spellID"), app.BaseMount);
-	-- end
+	return setmetatable(constructor(id, t, "mountID"), app.BaseMount);
 end
 
 -- Refresh a specific Mount or all Mounts if not provided with a specific ID
@@ -12961,7 +12915,7 @@ local RefreshMounts = function(newMountID)
 	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
 	-- plus it's not laggy now to do that so it should be fine
 
-	for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+	for _,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 		if spellID and isCollected then
 			if not collectedSpells[spellID] then
@@ -12982,7 +12936,7 @@ app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
 	AfterCombatCallback(RefreshMounts, newMountID);
 end
 app:RegisterEvent("NEW_MOUNT_ADDED");
-end)();
+end	-- Mount Lib
 
 -- Music Rolls & Selfie Filter Lib: Music Rolls
 (function()
@@ -14245,8 +14199,7 @@ end
 -- Represents filters which should be applied during Updates to groups
 local function FilterItemClass(item)
 	-- check Account trait filters
-	if app.UnobtainableItemFilter(item)
-		and app.SeasonalItemFilter(item)
+	if app.SeasonalOrUnobtainableFilter(item)
 		and app.PvPFilter(item)
 		and app.PetBattleFilter(item)
 		and app.RequireFactionFilter(item) then
@@ -14264,8 +14217,7 @@ end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
 local function FilterItemClass_IgnoreBoEFilter(item)
 	-- check Account trait filters
-	if app.UnobtainableItemFilter(item)
-		and app.SeasonalItemFilter(item)
+	if app.SeasonalOrUnobtainableFilter(item)
 		and app.PvPFilter(item)
 		and app.PetBattleFilter(item)
 		and app.RequireFactionFilter(item) then
@@ -14320,22 +14272,11 @@ local function FilterItemClass_RequireRacesCurrentFaction(item)
 		return true;
 	end
 end
-local function FilterItemClass_SeasonalItem(item)
-	-- specifically match on false for being disabled as a filter
-	if item.u and app.Settings:GetValue("Seasonal", item.u) == false then
-		return false;
-	end
-	return true;
+local function FilterItemClass_SeasonalOrUnobtainableItem(item)
+	return app.Settings:GetSeasonalOrUnobtainable(item.u);
 end
 local function ItemIsInGame(item)
 	return not item.u or item.u > 2;
-end
-local function FilterItemClass_UnobtainableItem(item)
-	-- specifically match on false for being disabled as a filter
-	if item.u and app.Settings:GetValue("Unobtainable", item.u) == false then
-		return false;
-	end
-	return true;
 end
 local function FilterItemClass_RequireBinding(item)
 	return not item.itemID or IsBoP(item);
@@ -14632,9 +14573,8 @@ app.FilterItemClass_RequiredSkill = FilterItemClass_RequiredSkill;
 app.FilterItemClass_PetBattles = FilterItemClass_PetBattles;
 app.FilterItemClass_PvP = FilterItemClass_PvP;
 app.FilterItemClass_RequireBinding = FilterItemClass_RequireBinding;
-app.FilterItemClass_UnobtainableItem = FilterItemClass_UnobtainableItem;
 app.ItemIsInGame = ItemIsInGame;
-app.FilterItemClass_SeasonalItem = FilterItemClass_SeasonalItem;
+app.FilterItemClass_SeasonalOrUnobtainableItem = FilterItemClass_SeasonalOrUnobtainableItem;
 app.FilterItemClass_RequireRacesCurrentFaction = FilterItemClass_RequireRacesCurrentFaction;
 app.FilterItemClass_RequireRaces = FilterItemClass_RequireRaces;
 app.FilterItemClass_RequireItemFilter = FilterItemClass_RequireItemFilter;
@@ -14663,10 +14603,9 @@ app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.PvPFilter = app.NoFilter;
 app.PetBattleFilter = app.NoFilter;
-app.SeasonalItemFilter = app.NoFilter;
+app.SeasonalOrUnobtainableFilter = app.NoFilter;
 app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
-app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowTrackableThings = app.Filter;
 app.DefaultGroupFilter = app.Filter;
@@ -14745,7 +14684,7 @@ app.RecursiveClassAndRaceFilter = function(group)
 	return false;
 end
 app.RecursiveUnobtainableFilter = function(group)
-	if app.UnobtainableItemFilter(group) then
+	if app.SeasonalOrUnobtainableFilter(group) then
 		if group.parent then return app.RecursiveUnobtainableFilter(group.parent); end
 		return true;
 	end
@@ -15039,17 +14978,17 @@ local function DirectGroupUpdate(group, got)
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	local window = app.RecursiveFirstDirectParentWithField(group, "window");
 	if window then
-		-- app.PrintDebug("DGU:Callback Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
+		-- app.PrintDebug("DGU:Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, DGUDelay, window, window.isQuestChain, got);
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;
--- Trigger a Refresh of the window containing the specific group
+-- Trigger a soft-Update of the window containing the specific group, regardless of Filtering/Visibility of the group
 local function DirectGroupRefresh(group)
 	local window = app.RecursiveFirstDirectParentWithField(group, "window");
 	if window then
-		-- app.PrintDebug("DGR:Callback Update",group.hash,">",window.Suffix,window.Refresh)
-		DelayedCallback(window.Refresh, DGUDelay, window);
+		-- app.PrintDebug("DGR:Refresh",group.hash,">",window.Suffix,window.Refresh)
+		DelayedCallback(window.Update, DGUDelay, window);
 	end
 end
 app.DirectGroupRefresh = DirectGroupRefresh;
@@ -15899,30 +15838,50 @@ local function Toggle(self, forceUpdate)
 end
 
 app.Windows = {};
-app._UpdateWindows = function(force, got)
-	-- app.PrintDebug("_UpdateWindows",force,got)
+local function UpdateWindowsOnEnd()
+	app.Processing_RefreshData = nil;
+	app.Processing_UpdateWindows = nil;
+	app.Processing_RefreshWindows = nil;
+	app.refreshDataGot = nil;
+	-- Send a message to your party members.
+	local data = app:GetWindow("Prime").data;
+	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
+	if app.lastMsg ~= msg then
+		SendSocialMessage(msg);
+		app.lastMsg = msg;
+	end
+	wipe(searchCache);
+end
+local function UpdateWindows(force, got)
+	-- app.PrintDebug("UpdateWindows",force and "FORCE" or "SOFT",got and "COLLECTED" or "PASSIVE")
 	app._LastUpdateTime = GetTimePreciseSec();
-	local Run = app.FunctionRunner.Run;
+	-- After handling all Updates, perform some logic
+	app.UpdateRunner.OnEnd(UpdateWindowsOnEnd);
+	local Run = app.UpdateRunner.Run;
 	for _,window in pairs(app.Windows) do
 		Run(window.Update, window, force, got);
 	end
 end
 function app:UpdateWindows(force, got)
-	-- no need to update windows when a refresh is pending
-	if app.refreshDataQueued then return; end
-	AfterCombatOrDelayedCallback(app._UpdateWindows, 0.1, force, got);
+	if app.Processing_UpdateWindows then return; end
+	app.Processing_UpdateWindows = true;
+	app.Processing_RefreshWindows = true;
+	-- app.PrintDebug("UpdateWindows:Async")
+	AfterCombatOrDelayedCallback(UpdateWindows, 0.1, force, got);
 end
-app._RefreshWindows = function()
-	-- app.PrintDebug("_RefreshWindows")
+local function RefreshWindows()
+	-- app.PrintDebug("RefreshWindows")
 	for _,window in pairs(app.Windows) do
 		window:Refresh();
 	end
-	-- app.PrintDebugPrior("_RefreshWindows")
+	app.Processing_RefreshWindows = nil;
+	-- app.PrintDebugPrior("RefreshWindows")
 end
 function app:RefreshWindows()
-	-- no need to update windows when a refresh is pending
-	if app.refreshDataQueued then return; end
-	AfterCombatOrDelayedCallback(app._RefreshWindows, 0.1);
+	if app.Processing_RefreshWindows then return; end
+	app.Processing_RefreshWindows = true;
+	-- app.PrintDebug("RefreshWindows:Async")
+	AfterCombatOrDelayedCallback(RefreshWindows, 0.1);
 end
 local function ClearRowData(self)
 	self.ref = nil;
@@ -17567,22 +17526,28 @@ local function ProcessGroup(data, object)
 	end
 end
 local function UpdateWindow(self, force, got)
-	if self.data and app.IsReady then
-		if app.Settings:GetTooltipSetting("Updates:AdHoc") then
-			if force then
-				self.HasPendingUpdate = true;
-			end
-			force = (force or self.HasPendingUpdate) and self:IsVisible();
+	local data = self.data;
+	if data and app.IsReady then
+		local visible = self:IsVisible();
+		-- either by Setting or by special windows apply ad-hoc logic
+		local adhoc = app.Settings:GetTooltipSetting("Updates:AdHoc") or self.AdHoc;
+		force = force or self.HasPendingUpdate;
+		-- hidden adhoc window is set for pending update instead of forced
+		if adhoc and force and not visible then
+			self.HasPendingUpdate = true;
+			force = nil;
 		end
-		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
-		if force or self:IsVisible() then
+		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE" or "SOFT", visible and "VISIBLE" or "HIDDEN",got and "COLLECTED" or "PASSIVE");
+		if force or visible then
+			-- clear existing row data for the update
 			if self.rowData then wipe(self.rowData);
 			else self.rowData = {}; end
-			self.data.expanded = true;
+
+			data.expanded = true;
 			if not self.doesOwnUpdate and
-				(force or (self.shouldFullRefresh and self:IsVisible())) then
+				(force or (self.shouldFullRefresh and visible)) then
 				-- app.PrintDebug("TopLevelUpdateGroup",self.Suffix)
-				app.TopLevelUpdateGroup(self.data);
+				app.TopLevelUpdateGroup(data);
 				self.HasPendingUpdate = nil;
 				-- app.PrintDebugPrior("Done")
 			end
@@ -17590,26 +17555,27 @@ local function UpdateWindow(self, force, got)
 			-- Should the groups in this window be expanded prior to processing the rows for display
 			if self.ExpandInfo then
 				-- print("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Manual)
-				ExpandGroupsRecursively(self.data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
+				ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
 				self.ExpandInfo = nil;
 			end
 
-			ProcessGroup(self.rowData, self.data);
+			ProcessGroup(self.rowData, data);
+			-- app.PrintDebug("Update:RowData",#self.rowData)
 
 			-- Does this user have everything?
-			if self.data.total then
-				if self.data.total <= self.data.progress then
+			if data.total then
+				if data.total <= data.progress then
 					if #self.rowData < 1 then
-						self.data.back = 1;
-						tinsert(self.rowData, self.data);
+						data.back = 1;
+						tinsert(self.rowData, data);
 					end
 					if self.missingData then
-						if got and self:IsVisible() then app:PlayCompleteSound(); end
+						if got and visible then app:PlayCompleteSound(); end
 						self.missingData = nil;
 					end
 					-- only add this info row if there is actually nothing visible in the list
 					-- always a header row
-					-- print("any data",#self.Container,#self.rowData,#self.data)
+					-- print("any data",#self.Container,#self.rowData,#data)
 					if #self.rowData < 2 then
 						tinsert(self.rowData, {
 							["text"] = L["NO_ENTRIES"],
@@ -17674,14 +17640,16 @@ function app:GetWindow(suffix, parent, onUpdate)
 	local window = app.Windows[suffix];
 	if not window then
 		-- Create the window instance.
-		-- print("Creating new Window Frame for",suffix)
+		-- app.PrintDebug("GetWindow",suffix)
 		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
-		window.Refresh = Refresh;
 		window.Toggle = Toggle;
-		window.BaseUpdate = UpdateWindow;
-		window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
+		local updateFunc = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
+		-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
+		window.BaseUpdate = function(...) UpdateWindow(...) end;
+		window.Update = function(...) updateFunc(...) end;
+		window.Refresh = function(...) Refresh(...) end;
 		window.SetVisible = SetVisible;
 		window.StorePosition = StoreWindowPosition;
 		window.SetData = SetData;
@@ -17712,7 +17680,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 			['text'] = suffix,
 			['icon'] = "Interface\\Icons\\Ability_Spy.blp",
 			['visible'] = true,
-			['expanded'] = true,
 			['g'] = {
 				{
 					['text'] = "No data linked to listing.",
@@ -17768,6 +17735,23 @@ function app:GetWindow(suffix, parent, onUpdate)
 		container.rows = {};
 		scrollbar:SetValue(1);
 		container:Show();
+
+		-- Allows the window to toggle whether it shows it is currently processing changes/updates
+		-- Currently will do this by changing the texture of the CloseButton
+		-- local closeTexture = window.CloseButton:GetNormalTexture():GetTexture();
+		-- app.PrintDebug(closeTexture, window.CloseButton:GetHighlightTexture(), window.CloseButton:GetPushedTexture(), window.CloseButton:GetDisabledTexture())
+		-- Textures are a bit funky, maybe not good to try using that... maybe will come up with another idea sometime...
+		window.StartProcessing = function()
+			-- app.PrintDebug("StartProcessing",suffix)
+			-- window.CloseButton:SetNormalTexture(134376);	-- Inv_misc_pocketwatch_01
+		end
+		window.StopProcessing = function()
+			-- app.PrintDebug("StopProcessing",suffix)
+			-- window.CloseButton:SetNormalTexture(closeTexture);
+		end
+
+		-- Ensure the window updates itself when opened for the first time
+		window.HasPendingUpdate = true;
 		window:Update();
 	end
 	return window;
@@ -17871,7 +17855,7 @@ local DynamicCategory_Simple = function(self)
 		-- delay-sort the top level groups
 		app.SortGroupDelayed(self, "name");
 		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-		app.FunctionRunner.Run(DynamicDataCache.CacheFields, self);
+		app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
 		-- run a direct update on itself after being populated
 		app.DirectGroupUpdate(self);
 	else app.print("Failed to build Simple Dynamic Category: No cached data for key",self.dynamic) end
@@ -17894,7 +17878,7 @@ local DynamicCategory_Nested = function(self)
 	-- delay-sort the top level groups
 	app.SortGroupDelayed(self, "name");
 	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-	app.FunctionRunner.Run(DynamicDataCache.CacheFields, self);
+	app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
 	-- run a direct update on itself after being populated
 	app.DirectGroupUpdate(self);
 end
@@ -17913,7 +17897,7 @@ function app:GetDataCache()
 		group.dynamic_value = value;
 		-- run a direct update on itself after being populated if the Filler exists
 		if Filler then
-			app.FunctionRunner.Run(Filler, group);
+			app.DynamicRunner.Run(Filler, group);
 		end
 		return group;
 	end
@@ -18057,14 +18041,14 @@ function app:GetDataCache()
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "toyID"));
 
-		-- add an OnEnd function for the FunctionRunner to print being done
-		app.FunctionRunner.OnEnd(function()
+		-- add an OnEnd function for the DynamicRunner to print being done
+		app.DynamicRunner.OnEnd(function()
 			app.ToggleCacheMaps();
 			app.print(sformat(L["READY_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
 		end);
 
 		-- the caching of Dynamic groups takes place after all are generated and it can run more per frame
-		app.FunctionRunner.SetPerFrame(5);
+		app.DynamicRunner.SetPerFrame(5);
 	end
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
@@ -18086,7 +18070,6 @@ function app:GetDataCache()
 			rawset(t, key, val);
 		end
 	});
-	allData.expanded = true;
 	allData.icon = app.asset("content");
 	allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 	allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
@@ -18101,7 +18084,6 @@ function app:GetDataCache()
 	-- Dungeons & Raids
 	db = {};
 	db.g = app.Categories.Instances;
-	db.expanded = false;
 	db.text = GROUP_FINDER;
 	db.name = db.text;
 	db.icon = app.asset("Category_D&R");
@@ -18111,7 +18093,6 @@ function app:GetDataCache()
 	if app.Categories.Zones then
 		db = {};
 		db.g = app.Categories.Zones;
-		db.expanded = false;
 		db.text = BUG_CATEGORY2;
 		db.name = db.text;
 		db.icon = app.asset("Category_Zones")
@@ -18123,7 +18104,6 @@ function app:GetDataCache()
 		db = {};
 		db.g = app.Categories.WorldDrops;
 		db.isWorldDropCategory = true;
-		db.expanded = false;
 		db.text = TRANSMOG_SOURCE_4;
 		db.name = db.text;
 		db.icon = app.asset("Category_WorldDrops");
@@ -18134,7 +18114,6 @@ function app:GetDataCache()
 	if app.Categories.GroupFinder then
 		db = {};
 		db.g = app.Categories.GroupFinder;
-		db.expanded = false;
 		db.text = DUNGEONS_BUTTON;
 		db.name = db.text;
 		db.icon = app.asset("Category_GroupFinder")
@@ -18145,7 +18124,6 @@ function app:GetDataCache()
 	if app.Categories.Achievements then
 		db = app.CreateNPC(-4);
 		db.g = app.Categories.Achievements;
-		db.expanded = false;
 		db.text = TRACKER_HEADER_ACHIEVEMENTS;
 		db.icon = app.asset("Category_Achievements")
 		tinsert(g, db);
@@ -18156,7 +18134,6 @@ function app:GetDataCache()
 		db = {};
 		db.g = app.Categories.ExpansionFeatures;
 		db.lvl = 10;
-		db.expanded = false;
 		db.text = GetCategoryInfo(15301);
 		db.name = db.text;
 		db.icon = app.asset("Category_ExpansionFeatures");
@@ -18169,7 +18146,6 @@ function app:GetDataCache()
 		db.g = app.Categories.Holidays;
 		db.icon = app.asset("Category_Holidays");
 		db.isHolidayCategory = true;
-		db.expanded = false;
 		db.text = GetItemSubClassInfo(15,3);
 		tinsert(g, db);
 	end
@@ -18182,7 +18158,6 @@ function app:GetDataCache()
 		db.description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.";
 		db.icon = app.asset("Category_Event");
 		db.g = app.Categories.WorldEvents;
-		db.expanded = false;
 		tinsert(g, db);
 	end
 
@@ -18195,7 +18170,6 @@ function app:GetDataCache()
 		db.icon = app.asset("Category_Promo");
 		db.g = app.Categories.Promotions;
 		db.isPromotionCategory = true;
-		db.expanded = false;
 		tinsert(g, db);
 	end
 
@@ -18204,7 +18178,6 @@ function app:GetDataCache()
 		db = app.CreateNPC(-796);
 		db.g = app.Categories.PetBattles;
 		db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
-		db.expanded = false;
 		db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
 		db.icon = app.asset("Category_PetBattles");
 		tinsert(g, db);
@@ -18215,7 +18188,6 @@ function app:GetDataCache()
 		db = {};
 		db.g = app.Categories.PVP;
 		db.isPVPCategory = true;
-		db.expanded = false;
 		db.text = STAT_CATEGORY_PVP;
 		db.name = db.text;
 		db.icon = app.asset("Category_PvP");
@@ -18227,7 +18199,6 @@ function app:GetDataCache()
 		db = {};
 		db.g = app.Categories.Craftables;
 		db.DontEnforceSkillRequirements = true;
-		db.expanded = false;
 		db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
 		db.name = db.text;
 		db.icon = app.asset("Category_Crafting");
@@ -18238,7 +18209,6 @@ function app:GetDataCache()
 	if app.Categories.Professions then
 		db = app.CreateNPC(-38);
 		db.g = app.Categories.Professions;
-		db.expanded = false;
 		db.text = TRADE_SKILLS;
 		db.icon = app.asset("Category_Professions");
 		db.description = "This section will only show your character's professions outside of Account and Debug Mode.";
@@ -18249,7 +18219,6 @@ function app:GetDataCache()
 	if app.Categories.Secrets then
 		db = app.CreateNPC(-22);
 		db.g = app.Categories.Secrets;
-		db.expanded = false;
 		tinsert(g, db);
 	end
 
@@ -18257,7 +18226,6 @@ function app:GetDataCache()
 	if app.Categories.Character then
 		db = {};
 		db.g = app.Categories.Character;
-		db.expanded = false;
 		db.text = CHARACTER;
 		db.name = db.text;
 		db.icon = app.asset("Category_ItemSets");
@@ -18268,7 +18236,6 @@ function app:GetDataCache()
 	if app.Categories.InGameShop then
 		db = {};
 		db.g = app.Categories.InGameShop;
-		db.expanded = false;
 		db.text = BATTLE_PET_SOURCE_10;
 		db.name = db.text;
 		db.icon = app.asset("Category_InGameShop");
@@ -18279,7 +18246,6 @@ function app:GetDataCache()
 	if app.Categories.TradingPost then
 		db = {};
 		db.g = app.Categories.TradingPost;
-		db.expanded = false;
 		db.text = L["TRADING_POST"];	-- Probably some global string Later
 		db.name = db.text;
 		db.icon = app.asset("Category_TradingPost");
@@ -18290,7 +18256,6 @@ function app:GetDataCache()
 	if app.Categories.BlackMarket then
 		db = app.CreateNPC(-94);
 		db.g = app.Categories.BlackMarket;
-		db.expanded = false;
 		db.text = BLACK_MARKET_AUCTION_HOUSE;
 		db.icon = app.asset("Category_Blackmarket");
 		tinsert(g, db);
@@ -18300,7 +18265,6 @@ function app:GetDataCache()
 	if app.Categories.Factions then
 		db = app.CreateNPC(-6013);
 		db.g = app.Categories.Factions;
-		db.expanded = false;
 		db.text = L["FACTIONS"];
 		db.icon = app.asset("Category_Factions");
 		tinsert(g, db);
@@ -18319,7 +18283,6 @@ function app:GetDataCache()
 		end
 		return cache;
 	end)());
-	db.expanded = false;
 	db.text = "Models (Dynamic)";
 	tinsert(g, db);
 	--]]
@@ -18341,7 +18304,6 @@ function app:GetDataCache()
 		local db = GetTempDataMember("GEAR_SET_CACHE", nil);
 		if not db then
 			db = {};
-			db.expanded = false;
 			db.text = "Item Sets";
 			SetTempDataMember("GEAR_SET_CACHE", db);
 		end
@@ -18482,7 +18444,6 @@ function app:GetDataCache()
 
 	-- Now build the hidden "Unsorted" Window's Data
 	allData = {};
-	allData.expanded = true;
 	allData.icon = app.asset("content");
 	allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 	allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
@@ -18500,14 +18461,12 @@ function app:GetDataCache()
 	local flightPathsCategory_NYI = {};
 	flightPathsCategory_NYI.g = {};
 	flightPathsCategory_NYI.fps = {};
-	flightPathsCategory_NYI.expanded = false;
 	flightPathsCategory_NYI.icon = app.asset("Category_FlightPaths");
 	flightPathsCategory_NYI.text = L["FLIGHT_PATHS"];
 
 	-- Never Implemented
 	if app.Categories.NeverImplemented then
 		db = {};
-		db.expanded = false;
 		db.g = app.Categories.NeverImplemented;
 		db.name = L["NEVER_IMPLEMENTED"];
 		db.text = db.name;
@@ -18519,7 +18478,6 @@ function app:GetDataCache()
 	-- Hidden Achievement Triggers
 	if app.Categories.HiddenAchievementTriggers then
 		db = {};
-		db.expanded = false;
 		db.g = app.Categories.HiddenAchievementTriggers;
 		db.name = "Hidden Achievement Triggers";
 		db.text = db.name;
@@ -18533,7 +18491,6 @@ function app:GetDataCache()
 	-- Hidden Quest Triggers
 	if app.Categories.HiddenQuestTriggers then
 		db = {};
-		db.expanded = false;
 		db.g = app.Categories.HiddenQuestTriggers;
 		db.name = L["HIDDEN_QUEST_TRIGGERS"];
 		db.text = db.name;
@@ -18549,7 +18506,6 @@ function app:GetDataCache()
 	if app.Categories.Unsorted then
 		db = {};
 		db.g = app.Categories.Unsorted;
-		db.expanded = false;
 		db.name = L["UNSORTED_1"];
 		db.text = db.name;
 		db.description = L["UNSORTED_DESC_2"];
@@ -18561,6 +18517,8 @@ function app:GetDataCache()
 		app.ToggleCacheMaps();
 	end
 	local unsorted = app:GetWindow("Unsorted");
+	-- force the unsorted window to be skipped for Updates unless it is actually visible
+	unsorted.AdHoc = true;
 	unsorted:SetData(allData);
 	unsorted:BuildData();
 
@@ -18808,11 +18766,10 @@ function app:GetDataCache()
 	end
 	return allData;
 end
-end	-- Dynamic/Main Data
 
--- Collection Window Creation
-app._RefreshData = function()
-	-- app.PrintDebug("_RefreshData",app.refreshDataForce and "FORCE", app.refreshDataGot and "COLLECTED")
+local function RefreshData()
+	-- app.PrintDebug("RefreshData",app.refreshDataForce and "FORCE" or "LAZY", app.refreshDataGot and "COLLECTED" or "PASSIVE")
+
 	-- Send an Update to the Windows to Rebuild their Row Data
 	if app.refreshDataForce then
 		app.refreshDataForce = nil;
@@ -18825,41 +18782,30 @@ app._RefreshData = function()
 		app.RefreshCustomCollectibility();
 
 		-- Forcibly update the windows.
-		app._UpdateWindows(true, app.refreshDataGot);
+		app:UpdateWindows(true, app.refreshDataGot);
 	else
-		app._UpdateWindows(nil, app.refreshDataGot);
+		app:UpdateWindows(nil, app.refreshDataGot);
 	end
-	app.refreshDataQueued = nil;
-	app.refreshDataGot = nil;
-
-	-- Send a message to your party members.
-	local data = app:GetWindow("Prime").data;
-	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
-	if app.lastMsg ~= msg then
-		SendSocialMessage(msg);
-		app.lastMsg = msg;
-	end
-	wipe(searchCache);
 end
 function app:RefreshData(lazy, got, manual)
-	if app.refreshDataQueued then return; end
-	-- app.PrintDebug("RefreshData",lazy and "LAZY", got and "COLLECTED", manual and "MANUAL")
+	app.Processing_RefreshData = true;
+	-- app.PrintDebug("RefreshData:Async",lazy and "LAZY" or "FORCE", got and "COLLECTED" or "PASSIVE", manual and "MANUAL" or "AUTO")
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.refreshDataGot = app.refreshDataGot or got;
-	app.refreshDataQueued = true;
 
 	-- Don't refresh if not ready
 	if not app.IsReady then
-		-- print("Not ready, .1sec self callback")
+		-- app.PrintDebug("Not ready, .1sec self callback")
 		DelayedCallback(app.RefreshData, 0.1, self, lazy);
 	elseif manual then
-		-- print("manual refresh after combat")
-		AfterCombatCallback(app._RefreshData);
+		-- app.PrintDebug("manual refresh after combat")
+		AfterCombatCallback(RefreshData);
 	else
-		-- print(".5sec delay callback")
-		AfterCombatOrDelayedCallback(app._RefreshData, 0.5);
+		-- app.PrintDebug(".5sec delay callback")
+		AfterCombatOrDelayedCallback(RefreshData, 0.5);
 	end
 end
+end	-- Dynamic/Main Data
 
 do -- Search Response Logic
 local IncludeUnavailableRecipes, IgnoreBoEFilter;
@@ -19152,7 +19098,6 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider";
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nExpand a group to harvest the 1,000 Achievements within that range.";
 			db.visible = true;
-			db.expanded = true;
 			db.back = 1;
 			self:SetData(db);
 		end
@@ -19340,7 +19285,6 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 			['icon'] = "Interface\\Icons\\INV_BountyHunting.blp",
 			["description"] = L["BOUNTY_DESC"],
 			['visible'] = true,
-			['expanded'] = true,
 			['indent'] = 0,
 			['g'] = {
 				{
@@ -19415,7 +19359,6 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 				['icon'] = "Interface\\Icons\\INV_Misc_Celestial Map.blp",
 				["description"] = "This window helps debug when we're missing map IDs in the addon.",
 				['visible'] = true,
-				['expanded'] = true,
 				['OnUpdate'] = app.AlwaysShowUpdate,
 				['g'] = {
 					{
@@ -19871,7 +19814,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					["icon"] = "Interface\\Icons\\INV_Misc_Map06.blp",
 					["description"] = L["MINI_LIST_DESC"],
 					["visible"] = true,
-					["expanded"] = true,
 					["g"] = {
 						{
 							["text"] = L["UPDATE_LOCATION_NOW"],
@@ -19990,7 +19932,6 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
 				["description"] = L["ITEM_FILTER_DESCRIPTION"],
 				['visible'] = true,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					{
@@ -20139,7 +20080,6 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider";
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nExpand a group to harvest the 1,000 Items within that range.";
 			db.visible = true;
-			db.expanded = true;
 			db.back = 1;
 			self:SetData(db);
 		end
@@ -20165,7 +20105,6 @@ customWindowUpdates["Harvester"] = function(self, force)
 			db.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW a lot!";
 			db.visible = true;
-			db.expanded = true;
 			db.progress = 0;
 			db.total = 0;
 			db.back = 1;
@@ -20351,7 +20290,6 @@ customWindowUpdates["SourceFinder"] = function(self)
 			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp";
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
 			db.visible = true;
-			db.expanded = true;
 			db.back = 1;
 			self:SetData(db);
 		end
@@ -20457,7 +20395,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
 				["description"] = L["RAID_ASSISTANT_DESC"],
 				['visible'] = true,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					{
@@ -20669,7 +20606,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 					end
 				end,
 				['visible'] = true,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {},
 			};
@@ -20684,7 +20620,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				end,
 				['visible'] = true,
 				["trackable"] = false,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					app.CreateDifficulty(1, {
@@ -20718,7 +20653,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				end,
 				['visible'] = true,
 				["trackable"] = false,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					app.CreateDifficulty(14, {
@@ -20752,7 +20686,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				end,
 				['visible'] = true,
 				["trackable"] = false,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					app.CreateDifficulty(3, {
@@ -21000,7 +20933,7 @@ customWindowUpdates["Random"] = function(self)
 					local func = function(o)
 						return o.collectible;
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "isToy", searchResults, func);
+					SearchRecursively(app:GetWindow("Prime").data, "toyID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randomtoy"] = searchResults;
 						return searchResults;
@@ -21052,7 +20985,6 @@ customWindowUpdates["Random"] = function(self)
 				['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp",
 				["description"] = L["APPLY_SEARCH_FILTER_DESC"],
 				['visible'] = true,
-				['expanded'] = true,
 				['OnUpdate'] = app.AlwaysShowUpdate,
 				["indent"] = 0,
 				['back'] = 1,
@@ -21210,7 +21142,6 @@ customWindowUpdates["Random"] = function(self)
 				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
 				["description"] = L["GO_GO_RANDOM_DESC"],
 				['visible'] = true,
-				['expanded'] = true,
 				['OnUpdate'] = app.AlwaysShowUpdate,
 				['back'] = 1,
 				["indent"] = 0,
@@ -21382,7 +21313,6 @@ customWindowUpdates["Sync"] = function(self)
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
 				["description"] = L["ACCOUNT_MANAGEMENT_TOOLTIP"],
 				['visible'] = true,
-				['expanded'] = true,
 				['back'] = 1,
 				['OnUpdate'] = app.AlwaysShowUpdate,
 				['g'] = {
@@ -21497,7 +21427,6 @@ customWindowUpdates["Sync"] = function(self)
 							return app.AlwaysShowUpdate(data);
 						end,
 						['visible'] = true,
-						['expanded'] = true,
 						['g'] = {},
 					},
 				},
@@ -21602,7 +21531,6 @@ customWindowUpdates["list"] = function(self, force, got)
 			text = "Full Data List - "..(dataType or "None"),
 			icon = app.asset("Interface_Quest_header"),
 			description = "1 - "..self.Limit,
-			expanded = true,
 			g = g,
 		}, PartitionMeta));
 
@@ -21618,12 +21546,12 @@ customWindowUpdates["list"] = function(self, force, got)
 				return o._missing and 1 or 0;
 			end,
 			text = harvesting and function(o, key)
-				local text, key = o.text, o.key;
+				local text = o.text;
 				if not IsRetrieving(text) then
 					-- app.PrintDebug("hide",o.hash)
 					o.visible = false;
 					DGR(o);
-					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
+					return "HARVESTED";
 				end
 			end
 			or function(o, key)
@@ -21702,7 +21630,6 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			['icon'] = "Interface\\Icons\\INV_Scroll_04.blp",
 			["description"] = L["PROFESSION_LIST_DESC"],
 			['visible'] = true,
-			['expanded'] = true,
 			["indent"] = 0,
 			['back'] = 1,
 			['g'] = { },
@@ -22104,7 +22031,6 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp",
 				["description"] = L["WORLD_QUESTS_DESC"],
 				['visible'] = true,
-				['expanded'] = true,
 				["indent"] = 0,
 				['back'] = 1,
 				['g'] = {
@@ -22311,7 +22237,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					return;
 				end
 				-- Rebuild all World Quest data
-				-- print("Rebuild WQ Data")
+				-- app.PrintDebug("Rebuild WQ Data")
 				self.retry = nil;
 				-- Put a 'Clear World Quests' click first in the list
 				local temp = {{
@@ -22624,7 +22550,6 @@ app.LoadDebugger = function()
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
 				["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
 				["OnUpdate"] = app.AlwaysShowUpdate,
-				['expanded'] = true,
 				['back'] = 1,
 				['options'] = {
 					{
@@ -23831,6 +23756,7 @@ end
 
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
+	-- app.PrintMemoryUsage("Startup")
 	local toc = select(4, GetBuildInfo());
 	local v = "";
 	if toc < 100100 then
@@ -24111,6 +24037,7 @@ app.Startup = function()
 		"UserLocale",
 		"Position",
 		"RandomSearchFilter",
+		"HOLIDAY_CACHE"
 	};
 	local removeKeys = {};
 	for key,_ in pairs(AllTheThingsAD) do
@@ -24134,7 +24061,6 @@ app.Startup = function()
 	app:RegisterEvent("BOSS_KILL");
 	app:RegisterEvent("CHAT_MSG_ADDON");
 	app:RegisterEvent("PLAYER_ENTERING_WORLD");
-	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
 	app:RegisterEvent("NEW_PET_ADDED");
 	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 	app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
@@ -24146,6 +24072,7 @@ app.Startup = function()
 	app:RegisterEvent("VIGNETTES_UPDATED")
 
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
+	-- app.PrintMemoryUsage("Startup:Done")
 end
 
 -- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
@@ -24180,6 +24107,7 @@ end
 
 -- Function which is triggered after Startup
 app.InitDataCoroutine = function()
+	-- app.PrintMemoryUsage("InitDataCoroutine")
 	-- First, load the addon data
 	app:GetDataCache();
 
@@ -24502,6 +24430,7 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("LOOT_OPENED");
 	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
 	app:RegisterEvent("LEARNED_SPELL_IN_TAB");
+	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
 
 	-- check if we are in a Party Sync session when loading in
 	app.IsInPartySync = C_QuestSession.Exists();
@@ -24536,6 +24465,7 @@ app.InitDataCoroutine = function()
 
 	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 	DelayedCallback(app.LocationTrigger, 3);
+	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end
 end -- Setup and Startup Functionality
 
@@ -25390,3 +25320,5 @@ app.events.VIGNETTES_UPDATED = function()
 	end
 end
 end	-- Vignette Functionality Scope
+
+-- app.PrintMemoryUsage("AllTheThings.EOF");

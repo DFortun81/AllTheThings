@@ -39,7 +39,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					-- Could potentially combine the list manually, but parser will do it for us and it will sort itself in the minilist
-					n(-101, {	-- Followers (Alliance)
+					n(FOLLOWERS, {	-- (Alliance)
 						["cr"] = 84947,	-- Lysa Serion <Headhunter>
 						["sort"] = true,
 						["groups"] = {
@@ -293,7 +293,7 @@ _.ExpansionFeatures =
 							follower(389),	-- Zian
 						},
 					}),
-					n(-101, {	-- Followers (Horde)
+					n(FOLLOWERS, { -- (Horde)
 						["cr"] = 87305,	-- Akanja <Headhunter>
 						["sort"] = true,
 						["groups"] = {

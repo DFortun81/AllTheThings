@@ -91,7 +91,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137411),	-- Nal'tira's Venom Gland
 				})),
 				cr(98208, e(1501, {	-- Advisor Vandros
-					i(137897),	-- Recipe: Dreadleather Gloves (Rank 3)
+					i(137897),	-- Pattern: Dreadleather Gloves (Rank 3)
 					i(127927),	-- Recipe: Potion of the Old War (Rank 2)
 					i(137712),	-- Schematic: Tactical Headgun (Rank 3)
 					i(134267),	-- Arcane Defender's Breastplate
@@ -174,7 +174,7 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10864),	-- Mythic: The Arcway Guild Run
 					ach(10776),	-- No Time to Waste
 					i(137851),	-- Design: Tranquil Necklace of Prophecy (Rank 3)
-					i(137897),	-- Recipe: Dreadleather Gloves (Rank 3)
+					i(137897),	-- Pattern: Dreadleather Gloves (Rank 3)
 					i(127927),	-- Recipe: Potion of the Old War (Rank 2)
 					i(137712),	-- Schematic: Tactical Headgun (Rank 3)
 					i(134267),	-- Arcane Defender's Breastplate

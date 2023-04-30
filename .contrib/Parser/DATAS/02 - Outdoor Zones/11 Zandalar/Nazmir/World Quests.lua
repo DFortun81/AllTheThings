@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(162368),	-- Contract: Talanji's Expedition [Rank 3] (RECIPE!)
+					i(162368),	-- Technique: Contract: Talanji's Expedition [Rank 3] (RECIPE!)
 				},
 			}),
 			q(51015, {	-- Work Order: Deep Sea Satin

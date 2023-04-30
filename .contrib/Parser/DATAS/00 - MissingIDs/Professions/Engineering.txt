@@ -118,8 +118,6 @@ r(310537),	-- Re-Calibrated Proton Blaster
 r(310542),	-- Shadowlands Engineering
 9.0.1.35432
 r(340534),	-- Interact
-10.1.0.48480
-r(407006),	-- EZ-Thro Polarity Bomb
 
 
 

@@ -35,6 +35,35 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				n(FLIGHT_PATHS, {
 					fp(1862),
 				}),
+				n(FOLLOWERS, bubbleDownSelf({
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(663),	-- Ebon Knights
+					follower(901),	-- Ebon Knights
+					follower(902),	-- Ebon Knights
+					follower(903),	-- Ebon Knights
+					follower(894),	-- Ebon Ravagers
+					follower(904),	-- Ebon Ravagers
+					follower(905),	-- Ebon Ravagers
+					follower(906),	-- Ebon Ravagers
+					follower(664),	-- Geist Swarm
+					follower(898),	-- Geist Swarm
+					follower(899),	-- Geist Swarm
+					follower(900),	-- Geist Swarm
+					follower(662),	-- Pack of Ghouls
+					follower(895),	-- Pack of Ghouls
+					follower(896),	-- Pack of Ghouls
+					follower(897),	-- Pack of Ghouls
+					follower(1008),	-- Ebon Knight Frostreavers
+					follower(1009),	-- Ebon Knight Frostreavers
+					follower(1010),	-- Ebon Knight Frostreavers
+					follower(1011),	-- Ebon Knight Frostreavers
+					
+					-- TODO itemID 140767
+					follower(783),	-- Abomination
+					follower(941),	-- Alliance:Abomination \\ Horde:Abomination
+					follower(942),	-- Abomination
+				})),
 				n(QUESTS, {
 					q(40714, {	-- The Call To War
 						["maps"] = { LEGION_DALARAN },

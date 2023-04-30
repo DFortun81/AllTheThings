@@ -714,7 +714,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
 				["g"] = {
-					i(162362),	-- Contract: Order of Embers [Rank 3] (RECIPE!)
+					i(162362),	-- Technique: Contract: Order of Embers [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52414, {	-- Work Order: Drums of the Maelstrom

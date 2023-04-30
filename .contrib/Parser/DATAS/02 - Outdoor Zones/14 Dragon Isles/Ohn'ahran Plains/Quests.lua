@@ -1067,6 +1067,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(72364, {	-- Zarizz
 					["provider"] = { "n", 193140 },	-- Zarizz
 					["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+					-- Note: this is not a one time quest according to Errors reports.
 				}),
 			}),
 		}),

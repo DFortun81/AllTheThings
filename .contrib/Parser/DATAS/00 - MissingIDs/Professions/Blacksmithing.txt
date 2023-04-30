@@ -1,5 +1,3 @@
-10.1.0.48480
-r(408299),	-- Heat-Resistant Rescue Ring
-
+Good Work! Nothing to do here!
 
 Nothing is Missing in BlacksmithingItemDB.lua! Good Work!

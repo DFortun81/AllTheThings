@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(166300, {	-- 7th Legion Supplies
 						i(166879),	-- Rallying War Banner (TOY!)
-						i(166279, {	-- Recipe: Contract: 7th Legion [Rank 3] (RECIPE!)
+						i(166279, {	-- Technique: Contract: 7th Legion [Rank 3] (RECIPE!)
 							["timeline"] = { "added 8.1.0" },
 						}),
 					}),

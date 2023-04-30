@@ -1,5 +1,3 @@
-10.1.0.48661
-ill(6836),	-- Shadow Flame
-
+Good Work! Nothing to do here!
 
 Nothing is Missing in IllusionDB.lua! Good Work!

@@ -12,7 +12,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 22.1, 50.9, OHNAHRAN_PLAINS },
 				}),
 				q(65686, {	-- To the Azure Span
-					["sourceQuests"] = { 66340 },	-- Into the Azure
+					["sourceQuests"] = { 
+						66340,	-- Into the Azure
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 185599 },	-- Masud the Wise
 					["coord"] = { 71.7, 80.6, OHNAHRAN_PLAINS },
 				}),

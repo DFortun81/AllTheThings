@@ -267,7 +267,7 @@ _.Zones =
 				q(41641, {	-- Work Order: Battlebound Armbands
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137908),	-- Recipe: Battlebound Armbands [Rank 3] (RECIPE!)
+						i(137908),	-- Pattern: Battlebound Armbands [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41223, {	-- Work Order: Foxflower
@@ -282,7 +282,7 @@ _.Zones =
 				q(41635, {	-- Work Order: Leystone Boots
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						i(137605),	-- Recipe: Leystone Boots [Rank 3] (RECIPE!)
+						i(137605),	-- Plans: Leystone Boots [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41647, {	-- Work Order: Silkweave Robe

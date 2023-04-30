@@ -462,15 +462,15 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(BFA_TIER, {
 				-- 8.0.1
 				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
-					i(162388),	-- Recipe: Hardened Tempest Boots [Rank 3]
-					i(162389),	-- Recipe: Hardened Tempest Leggings [Rank 3]
-					i(162400),	-- Recipe: Mistscale Boots [Rank 3]
-					i(162401),	-- Recipe: Mistscale Greaves [Rank 3]
+					i(162388),	-- Pattern: Hardened Tempest Boots [Rank 3]
+					i(162389),	-- Pattern: Hardened Tempest Leggings [Rank 3]
+					i(162400),	-- Pattern: Mistscale Boots [Rank 3]
+					i(162401),	-- Pattern: Mistscale Greaves [Rank 3]
 				})),
 
 				-- 8.1.0
 				tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 8.1.0"} }, {
-					i(166312),	-- Recipe: Coarse Leather Barding [Rank 2]
+					i(166312),	-- Pattern: Coarse Leather Barding [Rank 2]
 				})),
 			}),
 			tier(SL_TIER, {
@@ -571,7 +571,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(114867),	-- Pattern: Miniature Flying Carpet - NYI
 					r(168851),	-- Miniature Flying Carpet
 					i(114872),	-- Pattern: Greater Hexweave Essence
-					r(169669),	-- Hexweave Cloth
+					r(169669),	-- Pattern: Hexweave Cloth
 					i(118098),	-- Pattern: Murloc Chew Toy
 					r(173415),	-- Murloc Chew Toy
 				})),
@@ -580,7 +580,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 7.0.3
 				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 					i(137981),	-- Pattern: Silkweave Cloak
-					i(151746),	-- Recipe: Lightweave Breeches
+					i(151746),	-- Pattern: Lightweave Breeches
 				})),
 			}),
 			tier(BFA_TIER, {

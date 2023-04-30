@@ -344,5 +344,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(73185),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain weapons' during 'Our Path Ahead' (questID 72945)
 		q(73186),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain a new home' during 'Our Path Ahead' (questID 72945)
 		q(73187),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain allies' during 'Our Path Ahead' (questID 72945)
+		q(73547), 	-- Let Saza say goodbye to you after summoning the Ancients. Try not to cry like a little girl.
 	}),
 }));

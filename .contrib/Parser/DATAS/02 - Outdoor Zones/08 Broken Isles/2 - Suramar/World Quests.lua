@@ -262,7 +262,7 @@ _.Zones =
 						}),
 						n(109497, {	-- Small Treasure Chest
 							i(137823),	-- Design: Prophetic Band [Rank 2] (RECIPE!)
-							i(137892),	-- Recipe: Dreadleather Bindings [Rank 3] (RECIPE!)
+							i(137892),	-- Pattern: Dreadleather Bindings [Rank 3] (RECIPE!)
 							i(137718),  -- Schematic: Ironsight Cranial Cannon [Rank 3] (RECIPE!)
 						}),
 					},
@@ -273,7 +273,7 @@ _.Zones =
 				q(41643, {	-- Work Order: Battlebound Leggings
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137909),	-- Recipe: Battlebound Leggings [Rank 3] (RECIPE!)
+						i(137909),	-- Pattern: Battlebound Leggings [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41679, {	-- Work Order: Deployable Bullet Dispenser

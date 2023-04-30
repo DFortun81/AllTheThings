@@ -5,7 +5,7 @@
 
 ### Promotions
 
-Earn the Big Battle Bear 🐻 through Prime Gaming until April 27, 2023. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23922954).
+Earn Lil' XT 🤖 through Prime Gaming until May 25, 2023. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23938292).
 
 ### Logic changes
 

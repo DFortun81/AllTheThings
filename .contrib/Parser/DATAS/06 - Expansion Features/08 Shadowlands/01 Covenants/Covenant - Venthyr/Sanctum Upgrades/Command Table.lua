@@ -11,6 +11,18 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					n(TIER_ONE, {
 						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
 						["g"] = {
+							n(FOLLOWERS, bubbleDownSelf({
+								["u"] = 15,	-- Temporary troops
+							}, {
+								follower(1238),	-- Venthyr Nightblade
+								follower(1246),	-- Venthyr Nightblade
+								follower(1247),	-- Venthyr Nightblade
+								follower(1322),	-- Venthyr Nightblade
+								follower(1239),	-- Venthyr Soulcaster
+								follower(1248),	-- Venthyr Soulcaster
+								follower(1249),	-- Venthyr Soulcaster
+								follower(1323),	-- Venthyr Soulcaster
+							})),
 							n(QUESTS, {
 								q(59319, {	-- Advancing Our Efforts
 									["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map

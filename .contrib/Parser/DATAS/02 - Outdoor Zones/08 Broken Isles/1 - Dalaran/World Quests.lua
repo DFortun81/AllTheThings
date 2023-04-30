@@ -58,7 +58,7 @@ _.Zones =
 						["requireSkill"] = BLACKSMITHING,
 						["lvl"] = { 45 },
 						["g"] = {
-							i(137606),	-- Recipe: Leystone Gauntlets [Rank 3] (RECIPE!)
+							i(137606),	-- Plans: Leystone Gauntlets [Rank 3] (RECIPE!)
 						},
 					}),
 				}),
@@ -130,7 +130,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["provider"] = { "n", 32725 },	-- Warmage Silva
 						["g"] = {
-							i(137879),	-- Recipe: Warhide Gloves [Rank 3] (RECIPE!)
+							i(137879),	-- Pattern: Warhide Gloves [Rank 3] (RECIPE!)
 						},
 					}),
 				}),

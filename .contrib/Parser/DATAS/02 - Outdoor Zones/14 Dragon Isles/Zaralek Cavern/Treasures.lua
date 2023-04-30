@@ -8,66 +8,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			i(205338),	-- Formula: Enchanted Whelpling's Shadowflame Crest (RECIPE!)
 			i(205339),	-- Formula: Enchanted Wyrm's Shadowflame Crest (RECIPE!)
 			i(205340),	-- Formula: Enchanted Aspect's Shadowflame Crest (RECIPE!)
-
-			i(205418),	-- Blazing Shadowflame Cinder (TOY!) [Blazing Shadowflame Chest]
 			i(204849, {	-- Ratcipe: Charitable Cheddar (RECIPE!)
 				["cost"] = { { "i", 204872, 30 }, }, 	-- 30x Ripped Recipe Scrap
 			}),
 			i(204871),	-- Recipe Rat [Dont know where he is atm..]
-
-			i(204847),	-- Recipe: Rocks on the Rocks (RECIPE!) [Massive Gains Chest]
-			o(396339, {	-- Moth-Pilfered Pouch
-				["description"] = "Go to his position, he will fly up a bit, go under his shadow on earth and 'help' him until he get 5 stacks of buff. After that - he will fly around a bit and reveal pouch.",
-				["crs"] = { 203225 },
-				["coord"] = { 56.7, 48.7, ZARALEK_CAVERN },
-				["questID"] = 75320,
+			o(386104, {	-- Ancient Zaqali Chest
+				["description"] = "Interact with Bottled Magma at 36.5 48.2",
+				["coord"] = { 36.7, 48.8, ZARALEK_CAVERN },
+				--["questID"] = ,
+			}),
+			o(385565, {	-- Blazing Shadowflame Chest
+				["description"] = "Unknown",
+				["coord"] = { 28.6, 47.9, ZARALEK_CAVERN },
+				--["questID"] = ,
+				["g"] = {
+					i(205418),	-- Blazing Shadowflame Cinder (TOY!)
+				},
 			}),
 			o(386123, {	-- Charred Egg
 				["coord"] = { 30.0, 41.9, ZARALEK_CAVERN },
 				["questID"] = 73706,
 			}),
-			o(401828, {	-- Nal Ks'kol Reliquary
-				["description"] = "Use the console nearby and solve the puzzle to unlock.",
-				["sourceQuests"] = { 72964 },	-- Singed
-				["coord"] = { 64.2, 75.0, ZARALEK_CAVERN },
-				["questID"] = 75745,
-			}),
-			o(398814, {	-- Molten Hoard
-				["description"] = "Under the whole structure and behind the metal gate. You can get there from wall hopping on the right side or other movement abilities.",
-				["coord"] = { 48.4, 16.4, ZARALEK_CAVERN },
-				["questID"] = 75515,
-			}),
-			o(389111, {	-- Waterlogged Bundle
-				["coord"] = { 62.1, 55.3, ZARALEK_CAVERN },
-				["questID"] = 75015,	-- or 75814
-			}),
-			n(200618, {	-- Sheridon Hastle
-				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
-				["questID"] = 75231,
-				["g"] = {
-					i(204642),	-- Sheridon Hastle's Effects
-				},
-			}),
-
-			o(389114, {	-- Long-Lost Cache
-				["coord"] = { 62.7, 53.7, ZARALEK_CAVERN },
-				["questID"] = 75019,
-			}),
-
-			--o(x, {	-- Blazing Shadowflame Chest [Not Strong Enough To Open]
-			--	["coord"] = { 28.6, 47.9, ZARALEK_CAVERN },
-			--	["questID"] = ,
-			--}),
-			--o(x, {	-- Ancient Zaqali Chest [Locked]
-			--	["coord"] = { 36.7, 48.8, ZARALEK_CAVERN },
-			--	["questID"] = ,
-			--}),
-			--o(x, {	-- Well-Chewed Chest [Locked Need Scorching Key]
-			--	["coord"] = { 29.8, 40.6, ZARALEK_CAVERN },
-			--	["questID"] = ,
-			--}),
-
-
 			o(388896, {	-- Crystal-encased Chest
 				["description"] = "Interact with the purple and yellow crystals to unlock the chest.",
 				["coords"] = {
@@ -80,21 +41,94 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205192),	-- Volatile Crystal Shard
 				},
 			}),
-
-			o_repeated({	-- Stolen Stash
-				-- Contains
-				-- Objects
-				o(396020, {	-- Stolen Stash
-					["coord"] = { 63.7, 82.6, 2184 },
-					["questID"] = 75303,
-					["isDaily"] = true,
-				}),
-				o(396019, {	-- Stolen Stash
-					["coord"] = { 60.7, 46.3, ZARALEK_CAVERN },
-					["questID"] = 75302,
-					["isDaily"] = true,
-				}),
+			o(389114, {	-- Long-Lost Cache
+				["coord"] = { 62.7, 53.7, ZARALEK_CAVERN },
+				["questID"] = 75019,
 			}),
+			o(398814, {	-- Molten Hoard
+				["description"] = "Under the whole structure and behind the metal gate. You can get there from wall hopping on the right side or other movement abilities.",
+				["coord"] = { 48.4, 16.4, ZARALEK_CAVERN },
+				["questID"] = 75515,
+			}),
+			o(396339, {	-- Moth-Pilfered Pouch
+				["description"] = "Go to his position, he will fly up a bit, go under his shadow on earth and 'help' him until he get 5 stacks of buff. After that - he will fly around a bit and reveal pouch.",
+				["crs"] = { 203225 },
+				["coord"] = { 56.7, 48.7, ZARALEK_CAVERN },
+				["questID"] = 75320,
+				["g"] = {
+					i(205191),	-- Underlight Globe
+				},
+			}),
+			o(401828, {	-- Nal Ks'kol Reliquary
+				["description"] = "Use the console nearby and solve the puzzle to unlock.",
+				["sourceQuests"] = { 72964 },	-- Singed
+				["coord"] = { 64.2, 75.0, ZARALEK_CAVERN },
+				["questID"] = 75745,
+			}),
+			o(388911, {	-- Old Trunk
+				["description"] = "Must catch the Thieving Rock Mouse 5 times for the key to open the chest",
+				["coord"] = { 43.1, 82.6, ZARALEK_CAVERN },
+				["questID"] = 74995,
+				["g"] = {
+					q(75526, {	-- First Rock Mouse
+						["name"] = "First Rock Mouse",
+						["provider"] = { "n", 203073 },
+						["coord"] = { 43.0, 82.6, ZARALEK_CAVERN },
+					}),
+					q(75527, {	-- Second Rock Mouse
+						["name"] = "Second Rock Mouse",
+						["provider"] = { "n", 204277 },
+						["coord"] = { 42.1, 80.2, ZARALEK_CAVERN },
+					}),
+					q(75534, {	-- Third Rock Mouse
+						["name"] = "Third Rock Mouse",
+						["provider"] = { "n", 204279 },
+						["coord"] = { 41.7, 81.5, ZARALEK_CAVERN },
+					}),
+					q(75535, {	-- Fourth Rock Mouse
+						["name"] = "Fourth Rock Mouse",
+						["provider"] = { "n", 204280 },
+						["coord"] = { 42.8, 82.2, ZARALEK_CAVERN },
+					}),
+					q(74995, {	-- Fifth Rock Mouse
+						["name"] = "Fifth Rock Mouse",
+						["provider"] = { "n", 204289 },
+						["coord"] = { 43.7, 83.9, ZARALEK_CAVERN },
+						["g"] = {
+							i(204323),	-- Old Trunk Key
+						},
+					}),
+				},
+			}),
+			o(386086, {	-- Seething Cache
+				["description"] = "You'll need to pick up 3x stacks of a Insidious Insight debuff from Seething Orbs located in the Zaqali Caldera",
+				["coord"] = { 32.3, 39.4, ZARALEK_CAVERN },
+				["questID"] = 73410,
+				["g"] = {
+					i(192779),	-- Seething Slug (MOUNT!)
+				},
+			}),
+			o(386080, {	-- Scorching Key
+				-- TODO: ["questID"] = ,
+				["coord"] = { 30.1, 40.8, ZARALEK_CAVERN },
+				["g"] = {
+					i(202869),    -- Scorching Key
+				}
+			}),
+			n(200618, {	-- Sheridon Hastle
+				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
+				["questID"] = 75231,
+				["g"] = {
+					i(204642),	-- Sheridon Hastle's Effects
+				},
+			}),
+			o(386079, {	-- Well-Chewed Chest
+				["description"] = "Loot the key under the massive corehound's head, then use it to open the chest",
+				["coord"] = { 29.7, 40.6, ZARALEK_CAVERN },
+				["questID"] = 73395,
+				["cost"] = { { "i", 202869, 1 }, },	-- 1x Scorching Key
+			}),
+			-- Repeatable Treasure Chests?
 			o_repeated({	-- Ritual Offerings
 				-- Contains
 				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
@@ -136,6 +170,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["questID"] = 73553,
 					["isDaily"] = true,
 				}),
+			}),
+			o_repeated({	-- Stolen Stash
+				-- Contains
+				-- Objects
+				o(396020, {	-- Stolen Stash
+					["coord"] = { 63.7, 82.6, 2184 },
+					["questID"] = 75303,
+					["isDaily"] = true,
+				}),
+				o(396019, {	-- Stolen Stash
+					["coord"] = { 60.7, 46.3, ZARALEK_CAVERN },
+					["questID"] = 75302,
+					["isDaily"] = true,
+				}),
+			}),
+			o(389111, {	-- Waterlogged Bundle
+				["coord"] = { 62.1, 55.3, ZARALEK_CAVERN },
+				["questID"] = 75015,
 			}),
 		}),
 	}),

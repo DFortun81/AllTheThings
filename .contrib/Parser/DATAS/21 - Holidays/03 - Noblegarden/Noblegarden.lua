@@ -93,18 +93,15 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 	-- #if ANYCLASSIC
 	["npcID"] = -51,
-	-- #else
-	["holidayID"] = 235477,
-	-- #endif
-	-- #if NOT ANYCLASSIC
-	["description"] = "Start: 04/10 at 10:00 AM\nEnd: 04/17 at 10:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 10, 4, 17); end]],
-	-- #elseif AFTER WRATH
+	-- #if AFTER WRATH
 	["description"] = "Start: 04/09 at 12:00 AM\nEnd: 04/16 at 12:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 9, 4, 16); end]],
 	-- #else
 	["description"] = "Start: 04/17 at 12:00 AM\nEnd: 04/18 at 12:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 17, 4, 18); end]],
+	-- #endif
+	-- #else
+	["holidayID"] = 235477,
 	-- #endif
 	["groups"] = {
 		o(113768, {	-- Brightly Colored Egg
