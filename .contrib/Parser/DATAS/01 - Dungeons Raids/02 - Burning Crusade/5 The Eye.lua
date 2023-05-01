@@ -62,6 +62,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #IF ANYCLASSIC
 				["crs"] = {
 					20043,	-- Apprentice Star Scryer
 					20033,	-- Astromancer
@@ -88,6 +89,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					18805,	-- High Astromancer Solarian
 					19622,	-- Kael'thas Sunstrider
 				},
+				-- #ENDIF
 				["groups"] = {
 					i(30280),	-- Pattern: Belt of Blasting
 					i(30302, {	-- Pattern: Belt of Deep Shadow
