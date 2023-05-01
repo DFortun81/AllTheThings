@@ -19550,6 +19550,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		-- self.Rebuild
 		(function()
 		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID, isInInstance;
+		local rootGroups, mapGroups = {}, {};
 		self.Rebuild = function(self)
 			-- app.PrintDebug("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
@@ -19564,14 +19565,40 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- app.PrintDebug(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
 				groups = {};
+				wipe(rootGroups);
+				wipe(mapGroups);
 				header = app.CreateMap(self.mapID, { g = groups });
 				self.CurrentMaps[self.mapID] = true;
 				isInInstance = IsInInstance();
 				headerKeys = isInInstance and subGroupInstanceKeys or subGroupKeys;
+				-- split search results by whether they represent the 'root' of the minilist or some other mapped content
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
-					-- app.PrintDebug("Clone",group.hash)
 					group = CreateObject(group);
+					-- Instance/Map/Class groups are allowed as root of minilist
+					if (group.instanceID or group.mapID or group.key == "classID")
+						-- and actually match this minilist...
+						-- only if this group mapID matches the minilist mapID directly or by maps
+						and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
+						tinsert(rootGroups, group);
+					else
+						tinsert(mapGroups, group);
+					end
+				end
+				-- first merge all root groups into the list
+				for _,group in ipairs(rootGroups) do
+					if group.maps then
+						for _,m in ipairs(group.maps) do
+							self.CurrentMaps[m] = true;
+						end
+					end
+					-- app.PrintDebug("Merge as Root",group.hash)
+					MergeProperties(header, group, true);
+					NestObjects(header, group.g);
+				end
+				-- then merge all mapped groups into the list
+				for _,group in ipairs(mapGroups) do
+					-- app.PrintDebug("Clone",group.hash)
 					-- app.PrintDebug("Done")
 					-- app.PrintDebug(group.hash,group.text)
 					nested = nil;
@@ -19579,69 +19606,53 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- Cache the difficultyID, if there is one and we are in an actual instance where the group is being mapped
 					difficultyID = isInInstance and GetRelativeValue(group, "difficultyID");
 
-					-- groups which 'should' be a root of the minilist
-					if (group.instanceID or group.mapID or group.key == "classID")
-					-- and actually match this minilist...
-					-- only if this group mapID matches the minilist mapID directly or by maps
-					and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
-						if group.maps then
-							for _,m in ipairs(group.maps) do
-								self.CurrentMaps[m] = true;
+					-- Get the header chain for the group
+					nextParent = group.parent;
+
+					-- Pre-nest some groups based on their type after grabbing the parent
+					-- Achievements / Achievement / Criteria
+					if group.key == "criteriaID" and group.achievementID then
+						-- print("pre-nest achieve",group.criteriaID, group.achievementID)
+						group = app.CreateAchievement(group.achievementID, CreateHeaderData(group));
+					end
+
+					-- Building the header chain for each mapped Thing
+					topHeader = nil;
+					while nextParent do
+						headerID = nextParent.headerID;
+						if headerID and headerID ~= true then
+							-- This matches a top-level header, track that top-level header at the highest point
+							if topHeaders[headerID] then
+								-- already found a matching header, then nest it before switching
+								if topHeader then
+									group = CreateHeaderData(group, topHeader);
+								end
+								topHeader = nextParent;
+							elseif not ignoredHeaders[headerID] then
+								group = CreateHeaderData(group, nextParent);
+								nested = true;
 							end
-						end
-						-- app.PrintDebug("Merge as Root")
-						MergeProperties(header, group, true);
-						NestObjects(header, group.g);
-						group = nil;
-					else
-						-- Get the header chain for the group
-						nextParent = group.parent;
-
-						-- Pre-nest some groups based on their type after grabbing the parent
-						-- Achievements / Achievement / Criteria
-						if group.key == "criteriaID" and group.achievementID then
-							-- print("pre-nest achieve",group.criteriaID, group.achievementID)
-							group = app.CreateAchievement(group.achievementID, CreateHeaderData(group));
-						end
-
-						-- Building the header chain for each mapped Thing
-						topHeader = nil;
-						while nextParent do
-							headerID = nextParent.headerID;
-							if headerID and headerID ~= true then
-								-- This matches a top-level header, track that top-level header at the highest point
-								if topHeaders[headerID] then
-									-- already found a matching header, then nest it before switching
-									if topHeader then
-										group = CreateHeaderData(group, topHeader);
-									end
-									topHeader = nextParent;
-								elseif not ignoredHeaders[headerID] then
+						else
+							for _,hkey in ipairs(headerKeys) do
+								if nextParent[hkey] then
+									-- create the specified group Type header
 									group = CreateHeaderData(group, nextParent);
 									nested = true;
-								end
-							else
-								for _,hkey in ipairs(headerKeys) do
-									if nextParent[hkey] then
-										-- create the specified group Type header
-										group = CreateHeaderData(group, nextParent);
-										nested = true;
-										break;
-									end
+									break;
 								end
 							end
-							nextParent = nextParent.parent;
 						end
-						-- Create/match the header chain for the zone list assuming it matches one of the allowed top headers
-						if topHeader then
-							group = CreateHeaderData(group, topHeader);
-							-- app.PrintDebug("topHeader",group.text,group.hash)
-							nested = true;
-						end
+						nextParent = nextParent.parent;
+					end
+					-- Create/match the header chain for the zone list assuming it matches one of the allowed top headers
+					if topHeader then
+						group = CreateHeaderData(group, topHeader);
+						-- app.PrintDebug("topHeader",group.text,group.hash)
+						nested = true;
 					end
 
 					-- couldn't nest this thing using a topheader header, try to use the key of the last nested group to figure out the topheader
-					if not topHeader and group then
+					if not topHeader then
 						groupKey = group.key;
 						typeHeaderID = nil;
 						-- determine the expected top header for this 'thing' based on its key
@@ -19668,10 +19679,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 					-- If relative to a difficultyID, then merge it into one.
 					if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
-					if group then
-						-- app.PrintDebug("Merge as Mapped",group.hash)
-						MergeObject(groups, group);
-					end
+					-- app.PrintDebug("Merge as Mapped",group.hash)
+					MergeObject(groups, group);
 				end
 
 				-- Check for difficulty groups
