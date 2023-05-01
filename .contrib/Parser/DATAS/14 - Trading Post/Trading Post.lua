@@ -377,6 +377,9 @@ root(ROOTS.NeverImplemented, {
 		n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
 			-- i(XXXXXX),	-- The Battlespoon (2H Staff)
 			i(190169),	-- Quawks (MOUNT!)
+			i(206156, {	-- Grotto Netherwing Drake (MOUNT!)
+				["timeline"] = { "added 10.1.0" },
+			}),
 		})),
 		n(VENDORS, {
 			filter(BATTLE_PETS, {
