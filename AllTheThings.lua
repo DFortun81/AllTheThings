@@ -7891,10 +7891,6 @@ local QuestNameDefault = setmetatable({}, { __index = function(t, id)
 		return name;
 	end
 end});
--- Attempts to return the cached quest name for the given id, may return 'Retrieving Data' if not yet cached from Server
-app.QuestNameInstant = function(id)
-	return QuestNameFromServer[id];
-end
 local QuestsRequested = {};
 local QuestsToPopulate = {};
 -- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
@@ -10695,6 +10691,10 @@ local fields = {
 	["key"] = function(t)
 		return "factionID";
 	end,
+	-- pseudo-headerID so that default Sorting considers Faction groups equivalent to Headers
+	["headerID"] = function()
+		return 0;
+	end,
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
@@ -10839,11 +10839,12 @@ local fields = {
 	["key"] = function(t)
 		return "filterID";
 	end,
-	["text"] = function(t)
-		return L["FILTER_ID_TYPES"][t.filterID];
+	-- pseudo-headerID so that default Sorting considers Filter groups equivalent to Headers
+	["headerID"] = function()
+		return 0;
 	end,
 	["name"] = function(t)
-		return t.text;
+		return L["FILTER_ID_TYPES"][t.filterID];
 	end,
 	["icon"] = function(t)
 		return L["FILTER_ID_ICONS"][t.filterID];
