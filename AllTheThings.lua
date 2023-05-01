@@ -10693,7 +10693,7 @@ local fields = {
 	end,
 	-- pseudo-headerID so that default Sorting considers Faction groups equivalent to Headers
 	["headerID"] = function()
-		return 0;
+		return true;
 	end,
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
@@ -10841,7 +10841,7 @@ local fields = {
 	end,
 	-- pseudo-headerID so that default Sorting considers Filter groups equivalent to Headers
 	["headerID"] = function()
-		return 0;
+		return true;
 	end,
 	["name"] = function(t)
 		return L["FILTER_ID_TYPES"][t.filterID];
@@ -19608,7 +19608,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						topHeader = nil;
 						while nextParent do
 							headerID = nextParent.headerID;
-							if headerID then
+							if headerID and headerID ~= true then
 								-- This matches a top-level header, track that top-level header at the highest point
 								if topHeaders[headerID] then
 									-- already found a matching header, then nest it before switching
@@ -19669,7 +19669,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- If relative to a difficultyID, then merge it into one.
 					if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
 					if group then
-						-- app.PrintDebug("Merge as Mapped")
+						-- app.PrintDebug("Merge as Mapped",group.hash)
 						MergeObject(groups, group);
 					end
 				end
