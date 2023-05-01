@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		n(BARTERING, {
 			n(ACHIEVEMENTS, {
 				ach(17841, {	-- Pyramid Scheme
-					["cost"] = { { "i", 205188, 1 }, },	-- 1x Barter Boulder
+					["provider"] = { "i", 205188 },	-- Barter Boulder
 					["g"] = {
 						title(502),	-- <Name>, Barter Boss
 					},
