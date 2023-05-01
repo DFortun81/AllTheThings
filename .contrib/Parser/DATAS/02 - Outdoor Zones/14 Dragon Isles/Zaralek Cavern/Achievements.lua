@@ -447,21 +447,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- TODO: 17773,	--
 				}},
 			}),
-			ach(17741, {	-- Slow and Steady Wins the Race
-				crit(1, { 	-- Bashful wins
-					-- Confirm: ["sourceQuests"] = { 75662 },	-- A Race To The Finish
-				}),
-				crit(2, {	-- Tricky wins
-					-- TODO: ["sourceQuests"] = {  },	-- A Race To The Finish
-				}),
-				crit(3, {	-- Brulee wins
-					-- Confirm: ["sourceQuests"] = { 75707 },	-- A Race To The Finish
-				}),
-				crit(4, {	-- Roggy wins
-					-- TODO: ["sourceQuests"] = {  },	-- A Race To The Finish
-				}),
-				i(205231),	-- Roggy (PET!)
-			}),
 			ach(17978),		-- Stones Can Fly!
 			ach(17977),		-- Stones Can Try To Fly!
 			ach(17830),		-- Stones Can't Fly!

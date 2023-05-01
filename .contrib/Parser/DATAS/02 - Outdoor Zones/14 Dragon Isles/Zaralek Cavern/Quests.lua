@@ -10,6 +10,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 204252 },	-- Questaniffen
 					["coord"] = { 49.7, 55.3, VALDRAKKEN },
 				}),
+				q(76118, {
+					["name"] = "Talk with Warthion?",
+					["coord"] = { 62.4, 42.7, VALDRAKKEN },
+					["g"] = {
+						i(206033),	-- Untranslated Obsidian Tome
+					},
+				}),
 				q(72975, {	-- The Land Beneath: Zaralek Cavern!
 					["maps"] = { VALDRAKKEN },
 				}),
@@ -517,7 +524,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			q(75641, {	-- The Power of the Whole
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
 				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
 				["g"] = {
@@ -759,6 +765,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "i", 204642 },	-- Sheridon Hastle's Effects
 				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
 			}),
+			q(75233, {	-- Flesh to Bone
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["provider"] = { "n", 203378 },	-- Gorgul
+				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
+			}),
 		}),
 	}),
 })));
@@ -777,7 +788,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 
 		--q(76013),	-- after turn in [72930]
 		--q(75706),	-- Some Tracker vid Glimrogg
-		--q(75708),	-- Some Tracker vid Glimrogg / Snail Treats for Corry?
+
+
+		q(75708),	-- Completing A Race to Finish?
 
 
 		--q(75710),	-- Some Tracker vid Glimrogg / First Time?
