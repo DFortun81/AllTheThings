@@ -25,99 +25,60 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),
-				q(72169, {	-- Proving in Arenas
-					["provider"] = { "n", 196191 },	-- Malicia
-					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["isWeekly"] = true,
-					["g"] = {
-						i(200452),	-- Dragonscale Expedition Insignia
-						i(200453),	-- Iskaara Tuskarr Insignia
-						i(200454),	-- Maruuk Centaur Insignia
-						i(200455),	-- Valdrakken Accord Insignia
-					},
-				}),
-				q(72166, {	-- Proving in Battle
-					["provider"] = { "n", 196191 },	-- Malicia
-					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["isWeekly"] = true,
-					["g"] = {
-						i(200452),	-- Dragonscale Expedition Insignia
-						i(200453),	-- Iskaara Tuskarr Insignia
-						i(200454),	-- Maruuk Centaur Insignia
-						i(200455),	-- Valdrakken Accord Insignia
-					},
-				}),
-				q(72167, {	-- Proving in War
-					["provider"] = { "n", 196191 },	-- Malicia
-					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["isWeekly"] = true,
-					["g"] = {
-						i(200452),	-- Dragonscale Expedition Insignia
-						i(200453),	-- Iskaara Tuskarr Insignia
-						i(200454),	-- Maruuk Centaur Insignia
-						i(200455),	-- Valdrakken Accord Insignia
-					},
-				}),
-				q(72168, {	-- Proving in Skirmishes
-					["provider"] = { "n", 196191 },	-- Malicia
-					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["isWeekly"] = true,
-					["g"] = {
-						i(200452),	-- Dragonscale Expedition Insignia
-						i(200453),	-- Iskaara Tuskarr Insignia
-						i(200454),	-- Maruuk Centaur Insignia
-						i(200455),	-- Valdrakken Accord Insignia
-					},
-				}),
-				q(72171, {	-- Proving Solo
-					["provider"] = { "n", 196191 },	-- Malicia
-					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["isWeekly"] = true,
-					["g"] = {
-						i(200452),	-- Dragonscale Expedition Insignia
-						i(200453),	-- Iskaara Tuskarr Insignia
-						i(200454),	-- Maruuk Centaur Insignia
-						i(200455),	-- Valdrakken Accord Insignia
-					},
-				}),
-				q(72170, {	-- Proving Teamwork
-					["provider"] = { "n", 196191 },	-- Malicia
-					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["isWeekly"] = true,
-					["g"] = {
-						i(200452),	-- Dragonscale Expedition Insignia
-						i(200453),	-- Iskaara Tuskarr Insignia
-						i(200454),	-- Maruuk Centaur Insignia
-						i(200455),	-- Valdrakken Accord Insignia
-					},
-				}),
+			}),
+			n(QUESTS, sharedData({
+				["provider"] = { "n", 196191 },	-- Malicia
+				["coord"] = { 43.4, 42.5, VALDRAKKEN },
+				["isWeekly"] = true,
+				["g"] = {
+					i(206271, {	-- Malicia's Hoard
+						["timeline"] = { ADDED_10_1_0 },
+					}),
+					i(200452),	-- Dragonscale Expedition Insignia
+					i(200453),	-- Iskaara Tuskarr Insignia
+					i(200454),	-- Maruuk Centaur Insignia
+					i(200455),	-- Valdrakken Accord Insignia
+				},
+			}, {
+				q(72169),	-- Proving in Arenas
+				q(72166),	-- Proving in Battle
+				q(72167),	-- Proving in War
+				q(72168),	-- Proving in Skirmishes
+				q(72171),	-- Proving Solo
+				q(72170),	-- Proving Teamwork
+			})),
+			n(QUESTS, sharedData({
+				["coord"] = { 42.2, 40.7, VALDRAKKEN },
+				["isWeekly"] = true,
+				["g"] = {
+					i(202184, {	-- Trophy of Strife
+						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+					}),
+					i(206366, {	-- Trophy of Strife
+						["timeline"] = { ADDED_10_1_0 },
+					}),
+					i(206367, {	-- Cracked Trophy of Strife
+						["timeline"] = { ADDED_10_1_0 },
+					}),
+				},
+			}, {
 				q(72647, {	-- Sparks of Life: Ohn'ahran Plains
 					["provider"] = { "n", 199393 },	-- Keenu
-					["coord"] = { 42.2, 40.7, VALDRAKKEN },
-					["isWeekly"] = true,
 				}),
 				q(72649, {	-- Sparks of Life: Thaldraszus
 					["provider"] = { "n", 199393 },	-- Keenu
-					["coord"] = { 42.2, 40.7, VALDRAKKEN },
-					["isWeekly"] = true,
 				}),
 				q(72648, {	-- Sparks of Life: The Azure Span
 					["provider"] = { "n", 199393 },	-- Keenu
-					["coord"] = { 42.2, 40.7, VALDRAKKEN },
-					["isWeekly"] = true,
 				}),
 				q(74871, {	-- Sparks of Life: The Forbidden Reach
 					["provider"] = { "n", 202662 },	-- Kazure
-					["coord"] = { 42.2, 40.7, VALDRAKKEN },
-					["isWeekly"] = true,
 					["timeline"] = { ADDED_10_0_7 },
 				}),
 				q(72646, {	-- Sparks of Life: The Waking Shores
 					["provider"] = { "n", 199376 },	-- Ailith Stonebreeze
-					["coord"] = { 41.9, 40.6, VALDRAKKEN },
-					["isWeekly"] = true,
 				}),
-			}),
+			})),
 			n(VENDORS, {
 				n(196191, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
@@ -261,42 +222,42 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 							}),
 						}),
 						filter(MAIL, {
-							i(198596, {	-- Scalewarden's Chain Armguards
+							i(206237, {	-- Scalewarden's Chain Armguards
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
 								},
 							}),
-							i(198589, {	-- Scalewarden's Chain Cinch
+							i(206236, {	-- Scalewarden's Chain Cinch
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
 								},
 							}),
-							i(198595, {	-- Scalewarden's Chain Epaulets
+							i(206235, {	-- Scalewarden's Chain Epaulets
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 350 },
 								},
 							}),
-							i(198592, {	-- Scalewarden's Chain Leggings
+							i(206234, {	-- Scalewarden's Chain Leggings
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 500 },
 								},
 							}),
-							i(198593, {	-- Scalewarden's Helm
+							i(206233, {	-- Scalewarden's Helm
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 500 },
 								},
 							}),
-							i(198591, {	-- Scalewarden's Chain Grips
+							i(206232, {	-- Scalewarden's Chain Grips
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 350 },
 								},
 							}),
-							i(198594, {	-- Scalewarden's Chain Greaves
+							i(206231, {	-- Scalewarden's Chain Greaves
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 350 },
 								},
 							}),
-							i(198590, {	-- Scalewarden's Chain Armor
+							i(206230, {	-- Scalewarden's Chain Armor
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 500 },
 								},
@@ -2084,8 +2045,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 									},
 									["g"] = {
 										i(137642),	-- Mark of Honor
-										i(201254),	-- Medal of Honor [A]
-										i(201255),	-- Medal of Honor [H]
+										i(201254),	-- Cracked Medal of Honor [A]
+										i(201255),	-- Cracked Medal of Honor [H]
 									},
 								}),
 								},

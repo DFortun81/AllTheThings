@@ -405,8 +405,8 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 							},
 							["g"] = {
 								-- i(137642),    -- Mark of Honor		-- The Vendor has a different box for less Costs (2k) with more Marks of Honor (x5). Hidding this on purpose.
-								i(201254),	-- Medal of Honor [A]
-								i(201255),	-- Medal of Honor [H]
+								i(201254),	-- Cracked Medal of Honor [A]
+								i(201255),	-- Cracked Medal of Honor [H]
 							},
 						}),
 					},

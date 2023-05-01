@@ -625,7 +625,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								i(205678, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(205616, {	-- Obsidian Gladiator's Plate Battlerobe
+								i(205616, {	-- Obsidian Gladiator's Plate Plastron
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
 								i(205617, {	-- Obsidian Gladiator's Plate Chestplate
@@ -667,7 +667,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								i(205618, {	-- Obsidian Gladiator's Plate Warboots
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(205625, {	-- Obsidian Gladiator's Plate Wargreaves
+								i(205625, {	-- Obsidian Gladiator's Plate Tasses
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
 								i(205630, {	-- Obsidian Gladiator's Plate Wristguards
@@ -1216,7 +1216,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					cl(PALADIN, {
 						i(205676),	-- Obsidian Gladiator's Cloak
 						i(205677),	-- Obsidian Gladiator's Drape
-						i(205616),	-- Obsidian Gladiator's Plate Battlerobe
+						i(205616),	-- Obsidian Gladiator's Plate Plastron
 						i(205617),	-- Obsidian Gladiator's Plate Chestplate
 						i(205620),	-- Obsidian Gladiator's Plate Gauntlets
 						i(205628),	-- Obsidian Gladiator's Plate Girdle
@@ -1230,7 +1230,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205619),	-- Obsidian Gladiator's Plate Stompers
 						i(205631),	-- Obsidian Gladiator's Plate Vambraces
 						i(205618),	-- Obsidian Gladiator's Plate Warboots
-						i(205625),	-- Obsidian Gladiator's Plate Wargreaves
+						i(205625),	-- Obsidian Gladiator's Plate Tasses
 						i(205630),	-- Obsidian Gladiator's Plate Wristguards
 						i(205678),	-- Obsidian Gladiator's Shawl
 					}),

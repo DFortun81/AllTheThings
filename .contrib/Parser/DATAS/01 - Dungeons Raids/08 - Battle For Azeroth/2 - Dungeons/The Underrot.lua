@@ -11,6 +11,11 @@ _.Instances = { tier(BFA_TIER, {
 		},
 		["lvl"] = 110,
 		["g"] = {
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+				i(206199),	-- Blood-Drenched Robes
+				i(206197),	-- Breastplate of Arterial Protection
+				i(206198),	-- Gore-Splattered Vest
+			})),
 			n(WORLD_QUESTS, {
 				q(52237, {	-- The Underrot: Restless Horror
 					["isWorldQuest"] = true,

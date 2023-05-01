@@ -327,7 +327,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 								i(202550),	-- Underlight Conjurer's Trousers
 							}),
 							i(202636, {	-- Venerated Cooling Fluid
-								i(202451),	-- Heartfire Sentinel's Cuisses
+								i(202451),	-- Heartfire Sentinel's Faulds
 								i(202541),	-- Breeches of the Furnace Seraph
 								i(202469),	-- Braies of the Cinderwolf
 							}),
@@ -361,7 +361,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 								i(202554),	-- Underlight Conjurer's Vestment
 							}),
 							i(202633, {	-- Venerated Ventilation Fluid
-								i(202455),	-- Heartfire Sentinel's Cassock
+								i(202455),	-- Heartfire Sentinel's Brigandine
 								i(202545),	-- Command of the Furnace Seraph
 								i(202473),	-- Adornments of the Cinderwolf
 							}),
@@ -457,6 +457,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					e(2520, {	-- Scalecommander Sarkareth
 						["crs"] = { 203284 },	-- Scalecommander Sarkareth
 						["g"] = {
+							i(206046),	-- Void-Touched Curio
 							i(203963),	-- Beacon to the Beyond
 							i(204390),	-- Bonds of Desperate Ascension
 							i(202585),	-- Coattails of the Rightful Heir
@@ -600,7 +601,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							i(202550),	-- Underlight Conjurer's Trousers
 						}),
 						i(202636, {	-- Venerated Cooling Fluid
-							i(202451),	-- Heartfire Sentinel's Cuisses
+							i(202451),	-- Heartfire Sentinel's Faulds
 							i(202541),	-- Breeches of the Furnace Seraph
 							i(202469),	-- Braies of the Cinderwolf
 						}),
@@ -635,7 +636,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							i(202554),	-- Underlight Conjurer's Vestment
 						}),
 						i(202633, {	-- Venerated Ventilation Fluid
-							i(202455),	-- Heartfire Sentinel's Cassock
+							i(202455),	-- Heartfire Sentinel's Brigandine
 							i(202545),	-- Command of the Furnace Seraph
 							i(202473),	-- Adornments of the Cinderwolf
 						}),
@@ -730,6 +731,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 					["g"] = {
 						ach(17877),	-- We'll Never See That Again, Surely
+						i(206046),	-- Void-Touched Curio
 						i(203963),	-- Beacon to the Beyond
 						i(204390),	-- Bonds of Desperate Ascension
 						i(202585),	-- Coattails of the Rightful Heir
@@ -867,7 +869,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							i(202550),	-- Underlight Conjurer's Trousers
 						}),
 						i(202636, {	-- Venerated Cooling Fluid
-							i(202451),	-- Heartfire Sentinel's Cuisses
+							i(202451),	-- Heartfire Sentinel's Faulds
 							i(202541),	-- Breeches of the Furnace Seraph
 							i(202469),	-- Braies of the Cinderwolf
 						}),
@@ -901,7 +903,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							i(202554),	-- Underlight Conjurer's Vestment
 						}),
 						i(202633, {	-- Venerated Ventilation Fluid
-							i(202455),	-- Heartfire Sentinel's Cassock
+							i(202455),	-- Heartfire Sentinel's Brigandine
 							i(202545),	-- Command of the Furnace Seraph
 							i(202473),	-- Adornments of the Cinderwolf
 						}),
@@ -994,6 +996,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 					["g"] = {
 						ach(18253, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Ahead of the Curve: Scalecommander Sarkareth
+						i(206046),	-- Void-Touched Curio
 						i(203963),	-- Beacon to the Beyond
 						i(204390),	-- Bonds of Desperate Ascension
 						i(202585),	-- Coattails of the Rightful Heir
@@ -1136,7 +1139,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							i(202550),	-- Underlight Conjurer's Trousers
 						}),
 						i(202636, {	-- Venerated Cooling Fluid
-							i(202451),	-- Heartfire Sentinel's Cuisses
+							i(202451),	-- Heartfire Sentinel's Faulds
 							i(202541),	-- Breeches of the Furnace Seraph
 							i(202469),	-- Braies of the Cinderwolf
 						}),
@@ -1171,7 +1174,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							i(202554),	-- Underlight Conjurer's Vestment
 						}),
 						i(202633, {	-- Venerated Ventilation Fluid
-							i(202455),	-- Heartfire Sentinel's Cassock
+							i(202455),	-- Heartfire Sentinel's Brigandine
 							i(202545),	-- Command of the Furnace Seraph
 							i(202473),	-- Adornments of the Cinderwolf
 						}),
@@ -1272,6 +1275,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							title(506),	-- <Name>, Famed Slayer of Sarkareth
 						})),
 						ach(18254, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
+						i(206046),	-- Void-Touched Curio
 						i(203963),	-- Beacon to the Beyond
 						i(204390),	-- Bonds of Desperate Ascension
 						i(202585),	-- Coattails of the Rightful Heir

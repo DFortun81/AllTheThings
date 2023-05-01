@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75284,	-- Old QuestID: 75550
 				["g"] = {
 					bo(75285, true),
+					i(205306),	-- Aquiferous Raiment
 					i(203307),	-- Winding Slitherdrake: Plated Brow (DM!)
 				},
 			}),
@@ -26,11 +27,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205154),	-- Aquapo (PET!)
 				},
 			}),
-			n(203621, {	-- Brulsef the Stronk
+			n(203621, {	-- Brullo the Stronk
 				["coord"] = { 41.4, 86.1, ZARALEK_CAVERN },
 				["questID"] = 75325,
 				["g"] = {
 					bo(75326, true),
+					i(205313),	-- Brullo's Wristbraces
 					i(204847),	-- Recipe: Rocks on the Rocks (RECIPE!)
 				},
 			}),
@@ -39,6 +41,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75475,	-- Old QuestID: 75572
 				["g"] = {
 					bo(75476, true),
+					i(205315),	-- Colossian Cuirass
 					i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)
 				},
 			}),
@@ -56,6 +59,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75361,	-- Old QuestID: 75567
 				["g"] = {
 					bo(75364, true),
+					i(205293),	-- Emberdusk's Embrace
 					i(205335),	-- Talisman of the Dusk
 				},
 			}),
@@ -64,6 +68,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75357,	-- Old QuestID: 75565
 				["g"] = {
 					bo(75358, true),
+					i(205334),	-- Flowfy's Smoldering Chain
 					i(197109),	-- Highland Drake: Spiked Head (DM!)
 					i(205303),	-- Leggings of Flowing Flame
 				},
@@ -73,6 +78,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75295,	-- Old QuestID: 75552
 				["g"] = {
 					bo(75296, true),
+					i(205291),	-- Garrison General's Cape
 				},
 			}),
 			n(203477, {	-- Goopal
@@ -80,6 +86,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75273,	-- Old QuestID: 75548
 				["g"] = {
 					bo(75274, true),
+					i(205296),	-- Goopal's Visage
 				},
 			}),
 			n(203611, {	-- Hadexia <Ember of Twilight>
@@ -121,6 +128,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75321,	-- Old QuestID: 75555
 				["g"] = {
 					bo(75322, true),
+					i(205308),	-- Clacking Clawguards
 					i(205686),	-- Clacking Claw
 				},
 			}),
@@ -185,6 +193,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75276, true),
 					i(205326),	-- Crystalweb Chelicera
+					i(205290),	-- Greatcloak of Spun Marrow
 				},
 			}),
 			n(203662, {	-- Subterrax
@@ -193,6 +202,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75360, true),
 					i(205314),	-- Greathelm of the Emissary
+					i(205312),	-- Subterrax's Stout Waistguard
 				},
 			}),
 			n(203593, {	-- Underlight Queen
@@ -208,6 +218,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75365,	-- Old QuestID: 75570
 				["g"] = {
 					bo(75366, true),
+					i(205336),	-- Glowing Veridian Necklace
+					i(205327),	-- Shard of the Veridian King
 					i(203345),	-- Winding Slitherdrake: Split Jaw Horns (DM!)
 				},
 			}),
