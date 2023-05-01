@@ -19471,6 +19471,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- since they will be comprised of groups from many different source locations
 				header.sourceParent = nil;
 				header.customCollect = nil;
+				header.requireSkill = nil;
 				header.u = nil;
 				header.races = nil;
 				header.r = nil;
