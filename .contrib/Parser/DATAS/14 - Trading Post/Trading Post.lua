@@ -17,15 +17,19 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
-		q(72681, {	-- Report to the Trading Post -- Last Month: Triggered after completing 66959 (and cross complete 66858)
+		q(72681, {	-- Report to the Trading Post -- February & March 2023, also cross-completed after 'Tour the Trading Post' (questID 66858 & 66959)
 			["timeline"] = { ADDED_10_0_5, REMOVED_10_0_7 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isMonthly"] = true,
 		}),
-		q(75833, {	-- Report to the Trading Post
+		q(75833, {	-- Report to the Trading Post -- April 2023
+			["timeline"] = { ADDED_10_0_7 },
+			["u"] = REMOVED_FROM_GAME,
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+		}),
+		q(76159, {	-- Report to the Trading Post -- May 2023
 			["timeline"] = { ADDED_10_0_7 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isMonthly"] = true,
 		}),
 	}),
 	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Travel Points in the month." }, {
