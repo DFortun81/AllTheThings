@@ -346,7 +346,7 @@ _.Instances = { tier(MOP_TIER, {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					ach(8138),	-- Oondasta Guild Run
 					i(94228),	-- Cobalt Primordial Direhorn (MOUNT!)
-					i(95601, {	-- Shiny Pile of Refuse	-- TODO: should be symlink for duplicate rewards
+					i(95601, {	-- Shiny Pile of Refuse
 						i(95972),	-- Abandoned Zandalari Arrowlinks
 						i(95976),	-- Abandoned Zandalari Bucklebreaker
 						i(95961),	-- Abandoned Zandalari Firecord
@@ -367,6 +367,8 @@ _.Instances = { tier(MOP_TIER, {
 						i(95960),	-- Scalehide Spurs
 						i(95963),	-- Silentflame Sandals
 						i(95959),	-- Spiderweb Tabi
+						i(95967),	-- Spiritbound Boots
+						i(95968),	-- Vaultwalker Sabatons 
 					}),
 
 					-- Necks

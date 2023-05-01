@@ -717,14 +717,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 					classicAch(429, {	-- Sulfuras, Hand of Ragnaros
 						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
-						["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
+						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 						-- #if BEFORE WRATH
 						["description"] = "Wielder of Sulfuras, Hand of Ragnaros.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
 					}),
 					i(17182, {	-- Sulfuras, Hand of Ragnaros
-						["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
+						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 						["cost"] = {
 							{ "i", 17204, 1 },	-- Eye of Sulfuras
 							{ "i", 17193, 1 },	-- Sulfuron Hammer
