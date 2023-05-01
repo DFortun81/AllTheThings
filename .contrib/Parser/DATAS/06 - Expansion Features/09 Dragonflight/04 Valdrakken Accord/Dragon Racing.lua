@@ -163,6 +163,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 39.0, 49.8, ZARALEK_CAVERN },
 						["timeline"] = { ADDED_10_1_0 },
 					}),
+					q(75119, {	-- Dragonrider Racing - Crystal Circuit
+						["coord"] = { 38.8, 60.6, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 					q(75123, {	-- Dragonrider Racing - Loamm Roamm
 						["coord"] = { 58.1, 57.6, ZARALEK_CAVERN },
 						["timeline"] = { ADDED_10_1_0 },

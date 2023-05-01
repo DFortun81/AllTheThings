@@ -119,6 +119,350 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				}),
 			}),
 			n(VENDORS, {
+				n(196191, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Malicia
+					["coord"] = { 43.4, 42.5, VALDRAKKEN },
+					["g"] = {
+						filter(MISC, {
+							i(206144, {	-- Curious Primordial Fungus
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(206143, {	-- Energized Temporal Spores
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(206142, {	-- Gritty Stone Potion
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(206141, {	-- Prismatic Snail Mucus
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(206140, {	-- Soothing Emerald Tea
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(206139, {	-- Volatile Crimson Embers
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+						}),
+						n(BACK, {
+							i(206241, {	-- Scalewarden's Drape
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(206240, {	-- Scalewarden's Cloak
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(206239, {	-- Scalewarden's Shawl
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(206238, {	-- Scalewarden's Cape
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+						}),
+						filter(CLOTH, {
+							i(206213, {	-- Scalewarden's Cloth Mantle
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(206212, {	-- Scalewarden's Cloth Bindings
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(206210, {	-- Scalewarden's Cloth Cord
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(206209, {	-- Scalewarden's Cloth Pants
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206208, {	-- Scalewarden's Crown
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206207, {	-- Scalewarden's Cloth Gloves
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(206206, {	-- Scalewarden's Cloth Slippers
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(206205, {	-- Scalewarden's Cloth Garb
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+						}),
+						filter(LEATHER, {
+							i(206221, {	-- Scalewarden's Leather Shoulderguard
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(206220, {	-- Scalewarden's Leather Jerkin
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206219, {	-- Scalewarden's Leather Wraps
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(206218, {	-- Scalewarden's Leather Belt
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(206217, {	-- Scalewarden's Leather Breeches
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206216, {	-- Scalewarden's Hood
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206215, {	-- Scalewarden's Leather Handwraps
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(206214, {	-- Scalewarden's Leather Boots
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+						}),
+						filter(MAIL, {
+							i(198596, {	-- Scalewarden's Chain Armguards
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(198589, {	-- Scalewarden's Chain Cinch
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(198595, {	-- Scalewarden's Chain Epaulets
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(198592, {	-- Scalewarden's Chain Leggings
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(198593, {	-- Scalewarden's Helm
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(198591, {	-- Scalewarden's Chain Grips
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(198594, {	-- Scalewarden's Chain Greaves
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(198590, {	-- Scalewarden's Chain Armor
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+						}),
+						filter(PLATE, {
+							i(206229, {	-- Scalewarden's Plate Bracers
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(206228, {	-- Scalewarden's Plate Clasp
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(206227, {	-- Scalewarden's Plate Spaulders
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(206226, {	-- Scalewarden's Plate Legguards
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206225, {	-- Scalewarden's Plate Gauntlets
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(206224, {	-- Scalewarden's Plate Sabatons
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+							i(206223, {	-- Scalewarden's Plate Cuirass
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206222, {	-- Scalewarden's Faceplate
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+						}),
+						n(WEAPONS, {
+							i(206265, {	-- Scalewarden's Sabre
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 400 },
+								},
+							}),
+							i(206263, {	-- Scalewarden's Scepter
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206262, {	-- Scalewarden's Crusher
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 400 },
+								},
+							}),
+							i(206261, {	-- Scalewarden's Mace
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 400 },
+								},
+							}),
+							i(206260, {	-- Scalewarden's Wand
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206259, {	-- Scalewarden's Spear
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 800 },
+								},
+							}),
+							i(206258, {	-- Scalewarden's Impaler
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 800 },
+								},
+							}),
+							i(206257, {	-- Scalewarden's Aegis
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(206256, {	-- Scalewarden's Cudgel
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 400 },
+								},
+							}),
+							i(206255, {	-- Scalewarden's Hammer
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 400 },
+								},
+							}),
+							i(206254, {	-- Scalewarden's Club
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206253, {	-- Scalewarden's Broadsword
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 800 },
+								},
+							}),
+							i(206252, {	-- Scalewarden's Greatsword
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 800 },
+								},
+							}),
+							i(206251, {	-- Scalewarden's Battlestaff
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 800 },
+								},
+							}),
+							i(206250, {	-- Scalewarden's Spire
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 800 },
+								},
+							}),
+							i(206249, {	-- Scalewarden's Flame
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(206248, {	-- Scalewarden's Shortsword
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 400 },
+								},
+							}),
+							i(206247, {	-- Scalewarden's Spellblade
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206246, {	-- Scalewarden's Twinblade
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 400 },
+								},
+							}),
+							i(206245, {	-- Scalewarden's Handcannon
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 800 },
+								},
+							}),
+							i(206244, {	-- Scalewarden's Carver
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 400 },
+								},
+							}),
+							i(206243, {	-- Scalewarden's Hatchet
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+							i(206242, {	-- Scalewarden's Battleaxe
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 400 },
+								},
+							}),
+						}),
+					},
+				})),
 				--[[
 				n(199599, {	-- Calderax
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },

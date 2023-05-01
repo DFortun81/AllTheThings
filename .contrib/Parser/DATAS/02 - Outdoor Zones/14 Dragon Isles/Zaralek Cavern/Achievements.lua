@@ -100,8 +100,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["_quests"] = { 75750 },	-- Are They Not Beautiful?
 				}),
 				crit(3, {	-- Delver Mardei
-					-- TODO: ["_quests"] = {  },	-- ???
-
+					["_quests"] = { 75834 },	-- Delver Mardei
 				}),
 				crit(4, {	-- Do you Even Train?
 					["_quests"] = { 75835 },	-- Do you Even Train?
@@ -177,7 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			ach(17517, {	-- Dragon Glyphs: Aberrus Approach
-				["coord"] = { 48.4, 7.0, ZARALEK_CAVERN },
+				["coord"] = { 48.0, 4.7, ZARALEK_CAVERN },
 			}),
 			ach(17516, {	-- Dragon Glyphs: Acidbite Ravine
 				["coord"] = { 47.5, 36.9, ZARALEK_CAVERN },
@@ -511,7 +510,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			ach(17786, {	-- Treasures of Zaralek Cavern
 				crit(1, {	-- Ancient Zaqali Chest
-					-- TODO: ["_quests"] = {  },
+					["_quests"] = { 73697 },
 				}),
 				crit(2, {	-- Blazing Shadowflame Chest
 					-- TODO: ["_quests"] = {  },
@@ -526,7 +525,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- TODO: ["_quests"] = {  },
 				}),
 				crit(6, {	-- Crystal-Encased Chest
-					["_quests"] = { 73697 },
+					["_quests"] = { 74986 },
 				}),
 				crit(7, {	-- Long-Lost Cache
 					["_quests"] = { 75019 },

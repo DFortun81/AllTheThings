@@ -765,7 +765,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
-		--q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
+		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
 
 
 		q(75658),	-- WQ Unlock?

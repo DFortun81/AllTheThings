@@ -4,10 +4,6 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(TREASURES, {
-			i(205337),	-- Formula: Titan Training Matrix V (RECIPE!)
-			i(205338),	-- Formula: Enchanted Whelpling's Shadowflame Crest (RECIPE!)
-			i(205339),	-- Formula: Enchanted Wyrm's Shadowflame Crest (RECIPE!)
-			i(205340),	-- Formula: Enchanted Aspect's Shadowflame Crest (RECIPE!)
 			i(204849, {	-- Ratcipe: Charitable Cheddar (RECIPE!)
 				["cost"] = { { "i", 204872, 30 }, }, 	-- 30x Ripped Recipe Scrap
 			}),
@@ -15,7 +11,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			o(386104, {	-- Ancient Zaqali Chest
 				["description"] = "Interact with Bottled Magma at 36.5 48.2",
 				["coord"] = { 36.7, 48.8, ZARALEK_CAVERN },
-				--["questID"] = ,
+				["questID"] = 73697,
 			}),
 			o(385565, {	-- Blazing Shadowflame Chest
 				["description"] = "Unknown",
@@ -36,7 +32,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					{ 37.2, 68.8, ZARALEK_CAVERN },	-- Purple Crystal
 					{ 36.4, 74.3, ZARALEK_CAVERN },	-- Chest
 				},
-				["questID"] = 73697,	-- or 74986 Both Triggered
+				["questID"] = 74986,
 				["g"] = {
 					i(205192),	-- Volatile Crystal Shard
 				},
@@ -49,6 +45,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["description"] = "Under the whole structure and behind the metal gate. You can get there from wall hopping on the right side or other movement abilities.",
 				["coord"] = { 48.4, 16.4, ZARALEK_CAVERN },
 				["questID"] = 75515,
+				["g"] = {
+					i(205981),	-- Molten Primal Fang
+				},
 			}),
 			o(396339, {	-- Moth-Pilfered Pouch
 				["description"] = "Go to his position, he will fly up a bit, go under his shadow on earth and 'help' him until he get 5 stacks of buff. After that - he will fly around a bit and reveal pouch.",
@@ -188,6 +187,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			o(389111, {	-- Waterlogged Bundle
 				["coord"] = { 62.1, 55.3, ZARALEK_CAVERN },
 				["questID"] = 75015,
+				["repeatable"] = true,
+				["g"] = {
+					i(205340),	-- Formula: Enchanted Aspect's Shadowflame Crest (RECIPE!)
+					i(205338),	-- Formula: Enchanted Whelpling's Shadowflame Crest (RECIPE!)
+					i(205339),	-- Formula: Enchanted Wyrm's Shadowflame Crest (RECIPE!)
+					i(205337),	-- Formula: Titan Training Matrix V (RECIPE!)
+				},
 			}),
 		}),
 	}),

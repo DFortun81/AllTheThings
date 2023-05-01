@@ -2,7 +2,6 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 local BARTER_BRICK = 204985;
-local BARTER_PEBBLE = 205903;
 local PONZOS_CREAM = 205452;
 local VOUCHER = 205453;
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
@@ -10,7 +9,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		n(BARTERING, {
 			n(ACHIEVEMENTS, {
 				ach(17841, {	-- Pyramid Scheme
-					title(502),	-- <Name>, Barter Boss
+					["cost"] = { { "i", 205188, 1 }, },	-- 1x Barter Boulder
+					["g"] = {
+						title(502),	-- <Name>, Barter Boss
+					},
 				}),
 			}),
 			n(QUESTS, sharedData({
@@ -21,11 +23,40 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(BARTER_BRICK),
 				}
 			}, {
+				q(75288, {	-- Enchanted Tales with Topuiz
+					["cost"] = {
+						{ "i", 200034, 5 },		-- 5x Enchant Cloak - Writ of Avoidance+++
+						{ "i", 200035, 5 },		-- 5x Enchant Cloak - Writ of Leech+++
+						{ "i", 200036, 5 },		-- 5x Enchant Cloak - Writ of Speed+++
+					},
+				}),
+				q(75289, {	-- Ink Master
+					--["cost"] = {
+					--	{ "i", 193470, 10 },	-- 10x Feral Hide Drums
+					--},
+				}),
 				q(75309, {	-- If a Gem Isn't Pretty
-					["requireSkill"] = ALCHEMY,
+					["cost"] = {
+						{ "i", 192855, 5 },		-- 5x Alexstraszite+++
+						{ "i", 193370, 50 },	-- 50x Silken Gemdust+++
+						{ "i", 192861, 5 },		-- 5x Ysemerald+++
+					},
+				}),
+				q(75351, {	-- Keep a Leather Eye Open
+					["cost"] = {
+						{ "i", 193470, 10 },	-- 10x Feral Hide Drums
+					},
 				}),
 				q(75301, {	-- Mistie's Mix Magic
-					["requireSkill"] = JEWELCRAFTING,
+					["cost"] = {
+						{ "i", 191386, 50 },	-- 50x Aerated Mana Potion+++
+						{ "i", 191497, 15 },	-- 15x Omnium Draconis++
+					},
+				}),
+				q(75308, {	-- Scrybbil Engineering
+					["cost"] = {
+						{ "i", 198225, 2 },	-- 2x Draconium Fisherfriend
+					},
 				}),
 			})),
 			n(VENDORS, {
@@ -97,200 +128,113 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 					},
 				}),
+				n(203609, {	-- Phiary <Cooking>
+					["coord"] = { 56.9, 56.3, ZARALEK_CAVERN },
+					["g"] = {
+						i(205690, {	-- Barter-B-Q
+							["cost"] = { { "i", BARTER_BRICK, 5 }, },
+						}),
+					}
+				}),
 				n(204693, {	-- Ponzo
 					["coord"] = { 58.1, 53.8, ZARALEK_CAVERN },
 					["g"] = {
-						i(BARTER_PEBBLE, {
-							["cost"] = {
-								{ "i", BARTER_BRICK, 3 },
-							},
-						}),
 						i(PONZOS_CREAM, {
-							["cost"] = {
-								{ "i", BARTER_BRICK, 24 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 25 }, },
 						}),
 						i(VOUCHER, {
-							["cost"] = {
-								{ "i", BARTER_BRICK, 79 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 80 }, },
 						}),
 						i(205984, {	-- Bartered Dig Map
 							["questID"] = 76077,
-							--["isWeekly"] = true,
-							["cost"] = {
-								{ "i", BARTER_BRICK, 2 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["isWeekly"] = true,
+							["cost"] = { { "i", BARTER_BRICK, 3 }, },
 						}),
 						i(203308, {	-- Winding Slitherdrake: Hairy Brow (DM!)
-							["cost"] = {
-								{ "i", BARTER_BRICK, 54 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 55 }, },
 						}),
 						i(203312, {	-- Winding Slitherdrake: Cluster Chin Horn (DM!)
-							["cost"] = {
-								{ "i", BARTER_BRICK, 54 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 55 }, },
 						}),
 						i(203346, {	-- Winding Slitherdrake: Curled Nose (DM!)
-							["cost"] = {
-								{ "i", BARTER_BRICK, 54 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 55 }, },
 						}),
 						i(205120, {	-- Thimblerig (PET!)
-							["cost"] = {
-								{ "i", BARTER_BRICK, 84 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 85 }, },
 						}),
 						i(205209, {	-- Boulder Hauler (MOUNT!)
-							["cost"] = {
-								{ "i", BARTER_BRICK, 169 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 170 }, },
 						}),
 						-- Professions
 						i(205440, {	-- Bartered Alchemy Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205439, {	-- Bartered Blacksmithing Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205438, {	-- Bartered Enchanting Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205436, {	-- Bartered Engineering Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205445, {	-- Bartered Herbalism Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205441, {	-- Bartered Inscription Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205435, {	-- Bartered Jewelcrafting Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205437, {	-- Bartered Leatherworking Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205443, {	-- Bartered Mining Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205444, {	-- Bartered Skinning Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205442, {	-- Bartered Tailoring Journal
-							["cost"] = {
-								{ "i", BARTER_BRICK, 89 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 90 }, },
 						}),
 						i(205429, {	-- Bartered Alchemy Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 						i(205428, {	-- Bartered Blacksmithing Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 						i(205427, {	-- Bartered Enchanting Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 						i(205425, {	-- Bartered Engineering Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 						i(205434, {	-- Bartered Herbalism Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 						i(205430, {	-- Bartered Inscription Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 						i(205424, {	-- Bartered Jewelcrafting Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 						i(205426, {	-- Bartered Leatherworking Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 						i(205432, {	-- Bartered Mining Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 						i(205433, {	-- Bartered Skinning Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 						i(205431, {	-- Bartered Tailoring Notes
-							["cost"] = {
-								{ "i", BARTER_BRICK, 34 },
-								{ "i", BARTER_PEBBLE, 99 },
-							},
+							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
 					},
 				}),
-				n(203608, { 	-- Rossmar
+				n(203608, {	-- Rossmar
 					["coord"] = { 56.1, 56.7, ZARALEK_CAVERN },
 					["g"] = {
 						i(205139, {	-- Pattern: Reserve Parachute (RECIPE!)
