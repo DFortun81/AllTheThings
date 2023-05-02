@@ -32,6 +32,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
 				}),
+				q(74294, {	-- The Keys You Need
+					["sourceQuests"] = { 73159 },	-- Exploring Our Past
+					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
+					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(202196),	-- Zskera Vault Key
+					},
+				}),
 				q(72953, {	-- Zskera Vault: Az
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
@@ -51,14 +59,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
 					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
-				}),
-				q(74294, {	-- The Keys You Need
-					["sourceQuests"] = { 74381 },	-- Hidden Legacies
-					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
-					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
-					["g"] = {
-						i(202196),	-- Zskera Vault Key
-					},
 				}),
 				q(74771, {	-- Key Hunting
 					["sourceQuests"] = { 72952 },	-- The Scary Vault of Ur
