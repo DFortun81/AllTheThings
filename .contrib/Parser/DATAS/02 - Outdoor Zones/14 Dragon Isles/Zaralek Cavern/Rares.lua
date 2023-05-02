@@ -194,6 +194,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75276, true),
 					i(205326),	-- Crystalweb Chelicera
 					i(205290),	-- Greatcloak of Spun Marrow
+					i(203318),	-- Winding Slitherdrake: Hairy Chest (DM!)
 				},
 			}),
 			n(203662, {	-- Subterrax

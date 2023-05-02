@@ -638,7 +638,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 				-- Glimmerogg Questline --
 			q(73707, {	-- TICKET: Glimmerogg Games
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["sourceQuests"] = { 72979 },	-- The Earth Gives Way 
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
 				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 				["isBreadcrumb"] = true,
