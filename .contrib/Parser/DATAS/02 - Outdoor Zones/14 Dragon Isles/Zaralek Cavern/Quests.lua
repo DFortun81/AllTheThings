@@ -86,13 +86,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 201589 },	-- Sabellian
 					["coord"] = { 60.6, 40.1, ZARALEK_CAVERN },
 				}),
-				q(72973, {	-- Follow Your Nose
+				q(72973, {	-- Smells Like Loamm
 					["sourceQuests"] = { 72979 },	-- The Earth Gives Way
 					["provider"] = { "n", 201584 },	-- Elder Honeypelt
 					["coord"] = { 57.0, 38.2, ZARALEK_CAVERN },
 				}),
 				q(75643, {	-- Orientation: Loamm Niffen
-					["sourceQuests"] = { 72973 },	-- Follow Your Nose
+					["sourceQuests"] = { 72973 },	-- Smells Like Loamm
 					["provider"] = { "n", 204522 },	-- Aurantia
 					["coord"] = { 56.9, 55.7, ZARALEK_CAVERN },
 				}),
@@ -491,7 +491,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 					-- Unknown --
 				q(76101, {	-- Tougher Down Under
-					--["sourceQuests"] = {  },	--
+					--["sourceQuests"] = { 72973 },	--
 					["provider"] = { "n", 204522 },	-- Aurantia
 					["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
 				}),
