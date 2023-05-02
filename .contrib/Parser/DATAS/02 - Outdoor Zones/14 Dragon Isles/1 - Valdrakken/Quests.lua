@@ -28,6 +28,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
+			--Note: confirm whether this is raid gear or not, copied over the symlink from weekly vault boxes as template for future
+			--i(206135, {	-- Heroic Dungeon Delver's Trophy Chest
+				--["sym"] = {
+						--{"select", "instanceID", 1200},			-- Vault of the Incarnates
+						--{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+						--{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
+						--{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+						--{"is","encounterID"},					-- Only Encounter Headers
+						--{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+						--{"is", "itemID"},						-- Only Items!
+						--{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+					--},
+				--}),
+			--}),
 		}),
 		n(QUESTS, {
 			header(HEADERS.Achievement, 17734, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Active Listening Skills
@@ -391,6 +405,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					i(206135),	-- Heroic Dungeon Delver's Trophy Chest
+					i(206136),	-- Heroic Dungeon Delver's Trophy Crest
+				},
 			}),
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["provider"] = { "n", 191957 },	-- Theldren

@@ -617,8 +617,6 @@ root(ROOTS.Unsorted, {
 				i(206276),	-- Wirt's Haunted Leg
 				-- New Stuff
 				i(206044),	-- Obsidian Gladiator's Axe
-				i(206135),	-- Heroic Dungeon Delver's Trophy Chest
-				i(206136),	-- Heroic Dungeon Delver's Trophy Crest
 				i(206137),	-- Obsidian Gladiator's Dagger
 				i(206138),	-- Scalewarden's Pennant
 				i(206146),	-- Obsidian Gladiator's Warglaive
