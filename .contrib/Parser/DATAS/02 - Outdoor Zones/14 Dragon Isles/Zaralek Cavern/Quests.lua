@@ -34,6 +34,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72977 },	-- Where the Flames Fell
 					["provider"] = { "n", 201311 },	-- Wrathion
 					["coord"] = { 87.2, 27.8, OHNAHRAN_PLAINS },
+				}),
+				q(75985, {	-- Rest Well, Warrior
+					["sourceQuests"] = { 72978 },	-- Scar of Earth and Fire
+					["provider"] = { "n", 202788 },	-- Khasar
+					["coord"] = { 86.9, 27.2, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(204461),	-- Shalkeel's Remembrance
 					},
