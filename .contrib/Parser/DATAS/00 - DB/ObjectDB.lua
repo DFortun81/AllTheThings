@@ -3007,6 +3007,7 @@ _.ObjectNames = {
 	[388908] = "Inert Goo",
 	[388911] = "Old Trunk",
 	[389102] = "Prismatic Fragment",
+	[389103] = "Prismatic Fragment",
 	[389104] = "Prismatic Fragment",
 	[389105] = "Prismatic Fragment",
 	[389106] = "Prismatic Fragment",

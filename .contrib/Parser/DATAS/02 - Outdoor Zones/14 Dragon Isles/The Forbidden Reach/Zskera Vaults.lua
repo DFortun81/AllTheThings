@@ -1086,6 +1086,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 29.4, 58.3, THE_FORBIDDEN_REACH },
 							["questID"] = 74410,
 						}),
+						o(389103, {	-- Prismatic Fragment
+							["questID"] = 75007,
+							["g"] = {
+								i(203703),	-- Prismatic Fragment
+							},
+						}),
 						o(389105, {	-- Prismatic Fragment
 							["questID"] = 75009,
 							["g"] = {
@@ -1132,6 +1138,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["questID"] = 75047,
 					["sourceQuest"] = 74978,	-- Broken Waygate (repaired)
 					["coord"] = { 29.5, 55.7, THE_FORBIDDEN_REACH },
+					["isWeekly"] = true,
 					["g"] = {
 						i(202278),	-- Renewed Proto-Drake: Antlers (DM!)
 					},
@@ -1258,7 +1265,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75069),	-- On Primordial Earth Cache 389789
 		q(75070),	-- On Primordial Earth Cache 389902
 
-		qNYI(75007),	-- ???
 		q(74970),	-- During 'Verbal Archaeology' (questID 74447)
 		q(74971),	-- During 'Second Time Is The Charm' (questID 74493)
 		q(74997),	-- During 'A Difficult Legacy' (questID 74996)
