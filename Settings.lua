@@ -700,7 +700,7 @@ settings.SetPersonal = function(self, setting, value)
 end
 do
 local function Refresh(self)
-	app.PrintDebug("Settings.Refresh")
+	-- app.PrintDebug("Settings.Refresh")
 	settings.SkipAutoRefreshCheckbox:OnRefresh();
 	for i,tab in ipairs(self.Tabs) do
 		if tab.OnRefresh then tab:OnRefresh(); end

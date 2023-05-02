@@ -39,8 +39,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, sformat, strsplit
-	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format, strsplit;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, sformat, strsplit, GetTimePreciseSec
+	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format, strsplit, GetTimePreciseSec;
 local ATTAccountWideData, IsRetrieving;
 -- Retrieving Data Locals
 do
@@ -6442,7 +6442,6 @@ fieldConverters = {
 
 -- Performance Tracking for Caching
 if app.__perf then
-	local GetTimePreciseSec = GetTimePreciseSec;
 	local type = "CacheFields";
 	-- init table for this object type
 	if type and not app.__perf[type] then
@@ -7593,8 +7592,8 @@ local ObjectDefaults = {
 	["progress"] = 0,
 	["total"] = 0,
 };
-local GetTimePreciseSec, getmetatable, setmetatable =
-	  GetTimePreciseSec, getmetatable, setmetatable;
+local getmetatable, setmetatable =
+	  getmetatable, setmetatable;
 local ObjectFunctions = {
 	-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 	["parent"] = function(t)
@@ -14922,6 +14921,7 @@ local function AdjustParentProgress(group, progChange, totalChange)
 end
 -- For directly applying the full Update operation for the top-level data group within a window
 local function TopLevelUpdateGroup(group)
+	group.TLUG = GetTimePreciseSec();
 	group.total = 0;
 	group.progress = 0;
 	-- app.PrintDebug("TLUG",group.hash)
@@ -18060,13 +18060,20 @@ function app:GetDataCache()
 				return t.mb_title1..DESCRIPTION_SEPARATOR..t.mb_title2;
 			end
 			if key == "mb_title1" then return app.Settings:GetModeString(); end
-			if key == "mb_title2" then return t.total == 0 and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
+			if key == "mb_title2" then return not t.TLUG and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
 			if key == "visible" then return true; end
 		end,
 		__newindex = function(t, key, val)
 			-- app.PrintDebug("Top-Root-Set",key,val)
 			if key == "visible" then
 				return;
+			end
+			-- until the Main list receives a top-level update
+			if not t.TLUG then
+				-- ignore setting progress/total values
+				if key == "progress" or key == "total" then
+					return;
+				end
 			end
 			rawset(t, key, val);
 		end
