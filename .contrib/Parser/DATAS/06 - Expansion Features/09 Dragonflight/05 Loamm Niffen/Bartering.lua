@@ -31,9 +31,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 				q(75289, {	-- Ink Master
-					--["cost"] = {
-					--	{ "i", 193470, 10 },	-- 10x Feral Hide Drums
-					--},
+					["cost"] = {
+						{ "i", 198423, 30 },	-- 30x Shimmering Pigment+++
+						{ "i", 194767, 15 },	-- 15x Chilled Rune++
+					},
 				}),
 				q(75309, {	-- If a Gem Isn't Pretty
 					["cost"] = {
