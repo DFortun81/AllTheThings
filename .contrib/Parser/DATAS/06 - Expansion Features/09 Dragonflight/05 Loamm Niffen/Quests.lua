@@ -81,3 +81,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+	n(LOAMM_NIFFEN, {
+		q(76028),	-- Triggered at Renown 3
+		q(76029),	-- Triggered at Renown 3
+	}),
+}));
