@@ -524,14 +524,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(203471, {["timeline"] = {ADDED_10_0_5}}),	-- Tasty Candy
 					},
 				}),
-				o(401236, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Malnourished Specimen
+				o(401236,	-- Malnourished Specimen/Nutrient Diluted Protofluid
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 52.6, 18.3, ZARALEK_CAVERN },
 					["questID"] = 75646,
 					["g"] = {
 						i(205211),	-- Nutrient Diluted Protofluid
 					},
 				})),
-				o(401238, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Marrow-Ripened Slime
+				o(401238, 	-- Marrow-Ripened Slime
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 62.1, 41.1, ZARALEK_CAVERN },
 					["questID"] = 75649,
 					["g"] = {
@@ -545,7 +547,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198712),	-- Firewater Powder Sample
 					},
 				}),
-				o(401240, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Suspicious Mold
+				o(401240, 	-- Suspicious Mold
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 40.4, 59.2, ZARALEK_CAVERN },
 					["questID"] = 75651,
 					["g"] = {
@@ -749,7 +752,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(201004),	-- Ancient Spear Shards
 					},
 				}),
-				o(402632, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Brimstone Rescue Ring
+				o(402632, 	-- Brimstone Rescue Ring
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 48.3, 22.0, ZARALEK_CAVERN },
 					["questID"] = 76079,
 					["g"] = {
@@ -808,14 +812,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(201011),	-- Spelltouched Tongs
 					},
 				}),
-				o(402627, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Well-Worn Kiln
+				o(402627, 	-- Well-Worn Kiln
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 57.2, 54.6, ZARALEK_CAVERN },
 					["questID"] = 76078,
 					["g"] = {
 						i(205986),	-- Well-Worn Kiln
 					},
 				})),
-				o(402634, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Zaqali Elder Spear
+				o(402634, 	-- Zaqali Elder Spear
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 27.5, 42.9, ZARALEK_CAVERN },
 					["questID"] = 76080,
 					["g"] = {
@@ -1073,7 +1079,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198800),	-- Fractured Titanic Sphere
 					},
 				}),
-				o(398793, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Lava-Drenched Shadow Crystal
+				o(398793,	-- Lava-Drenched Shadow Crystal
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 48.0, 17.0, ZARALEK_CAVERN },
 					["questID"] = 75508,
 					["g"] = {
@@ -1087,14 +1094,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198675),	-- Lava-Infused Seed
 					},
 				}),
-				o(398796, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Resonating Arcane Crystal
+				o(398796,	-- Resonating Arcane Crystal
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 36.7, 69.3, ZARALEK_CAVERN },
 					["questID"] = 75510,
 					["g"] = {
 						i(205001),	-- Resonating Arcane Crystal
 					},
 				})),
-				o(398794, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Shimmering Aqueous Orb
+				o(398794,	-- Shimmering Aqueous Orb
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 62.4, 53.8, ZARALEK_CAVERN },
 					["questID"] = 75509,
 					["g"] = {
@@ -1288,7 +1297,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			}),
 			n(TREASURES, {
-				o(398133, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Bolts and Brass
+				o(398133,		-- Bolts and Brass/Handful of Khaz'gorite Bolts 
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 57.7, 73.9, ZARALEK_CAVERN },
 					["questID"] = 75430,
 					["g"] = {
@@ -1308,7 +1318,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198817),	-- Durable Crystal
 					},
 				}),
-				o(392587, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Busted Wyrmhole Generator
+				o(392587,	-- Busted Wyrmhole Generator
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 37.8, 58.8, ZARALEK_CAVERN },
 					["questID"] = 75186,
 					["g"] = {
@@ -1318,7 +1329,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						}),
 					},
 				})),
-				o(392582, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Defective Survival Pack
+				o(392582,	-- Defective Survival Pack
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 50.5, 47.9, ZARALEK_CAVERN },
 					--["questID"] = ,
 					["g"] = {
@@ -1333,35 +1345,40 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198789),	-- Intact Coil Capacitor
 					},
 				}),
-				o(398135, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Discarded Dracothyst Drill
+				o(398135,	-- Discarded Dracothyst Drill
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 49.4, 79.0, ZARALEK_CAVERN },
 					["questID"] = 75431,
 					["g"] = {
 						i(204853),	-- Discarded Dracothyst Drill
 					},
 				})),
-				o(392581, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Haphazardly Discarded Bomb
+				o(392581,	-- Haphazardly Discarded Bomb
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 48.2, 27.9, ZARALEK_CAVERN },
 					--["questID"] = ,
 					["g"] = {
 						i(204470),	-- Haphazardly Discarded Bomb
 					},
 				})),
-				o(392593, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Inconspicuous Data Miner
+				o(392593,	-- Inconspicuous Data Miner
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 49.9, 59.3, ZARALEK_CAVERN },
 					--["questID"] = ,
 					["g"] = {
 						i(204480),	-- Inconspicuous Data Miner
 					},
 				})),
-				o(392580, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Misplaced Aberrus Outflow Blueprints
+				o(392580,	-- Misplaced Aberrus Outflow Blueprints
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 48.5, 48.6, ZARALEK_CAVERN },
 					["questID"] = 75180,
 					["g"] = {
 						i(204469),	-- Misplaced Aberrus Outflow Blueprints
 					},
 				})),
-				o(398138, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Molten Scoutbot
+				o(398138,	-- Molten Scoutbot/Overclocked Determination Core
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 48.1, 16.6, ZARALEK_CAVERN },
 					["questID"] = 75433,
 					["g"] = {
