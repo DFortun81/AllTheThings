@@ -576,7 +576,6 @@ root(ROOTS.Unsorted, {
 				-- Large Rep
 				i(205252),	-- Momento of Rekindled Bonds
 				i(205989),	-- Symbol of Friendship
-				i(205991),	-- Shiny Token of Gratitude
 				i(205992),	-- Regurgitated Half-Digested Fish
 				i(206006),	-- Earth-Warder's Thanks
 				-- Research

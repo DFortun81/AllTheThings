@@ -202,6 +202,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204609),	-- Bestowed Greaves
 						i(204585),	-- Endowed Breeches
 						i(204593),	-- Inherited Leggings
+						i(205991),	-- Shiny Token of Gratitude
 					},
 				}),
 
