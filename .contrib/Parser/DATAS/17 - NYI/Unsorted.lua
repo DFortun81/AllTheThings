@@ -198,7 +198,6 @@ root(ROOTS.Unsorted, {
 				i(204901),	-- Firecaller's Focus
 				i(205191),	-- Underlight Globe
 				i(205193),	-- Sturdy Deepflayer Scute
-				i(205194),	-- Fractured Crystalspine Quill
 				i(205195),	-- Drakeforged Magma Charm
 				i(205196),	-- Zaqali Hand Cauldron
 				i(205200),	-- Stirring Twilight Ember
@@ -468,7 +467,6 @@ root(ROOTS.Unsorted, {
 				i(203391),	-- Dented Dwarven Pocketwatch
 				i(203392),	-- Old Mirror Shard
 				i(203393),	-- Spongy Loamshroom
-				i(203442),	-- Snail Slime
 				i(203454),	-- Zaqali Equipment
 				i(203707),	-- Water Bucket
 				i(203731),	-- Enchanted Bandage
@@ -529,7 +527,6 @@ root(ROOTS.Unsorted, {
 				i(205911),	-- Mysterious Incense
 				i(205912),	-- Leather-Wrapped Flask
 				i(205913),	-- Blank Notebook
-				i(205980),	-- Snail Lasso
 				i(205994),	-- Tome of the Earth-Warder
 				i(205996),	-- Tome of the Earth-Warder
 				i(205997),	-- Tome of the Earth-Warder

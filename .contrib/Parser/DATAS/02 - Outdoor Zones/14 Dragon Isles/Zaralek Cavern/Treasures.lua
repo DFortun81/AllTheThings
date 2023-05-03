@@ -37,6 +37,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205192),	-- Volatile Crystal Shard
 				},
 			}),
+			o(401839, {	-- Dreamer's Bounty
+				["description"] = "Attack a nearby Preying Dustmoth and wait until it casts Drowsy Dust - don't interrupt! Once you have the debuff, kill the moth and open the chest.",
+				["questID"] = 75762,
+				["g"] = {
+					i(205194),	-- Fractured Crystalspine Quill
+				},
+			}),
 			o(389114, {	-- Long-Lost Cache
 				["coord"] = { 62.7, 53.7, ZARALEK_CAVERN },
 				["questID"] = 75019,
