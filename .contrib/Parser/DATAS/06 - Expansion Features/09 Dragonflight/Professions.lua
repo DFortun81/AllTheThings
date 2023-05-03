@@ -2714,7 +2714,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			n(TREASURES, {
 				o(402868, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Abandoned Reserve Chute
 					["coord"] = { 47.2, 48.6, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 76102,
 					["g"] = {
 						i(206019),	-- Abandoned Reserve Chute
 					},
