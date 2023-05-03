@@ -1389,7 +1389,9 @@ DF_PHASE_ONE = 100;
 -- Done defining Phases for Classic
 -- #endif
 
--- Timelines
+------------
+-- LEGION --
+------------
 ADDED_7_0_3 = "added 7.0.3.22248";						-- Legion 7.0.3/Pre-Patch Launch on July 19th, 2016
 REMOVED_7_0_3 = "removed 7.0.3.22248";					-- Legion 7.0.3/Pre-Patch Launch on July 19th, 2016
 ADDED_7_0_3_LAUNCH = "added 7.0.3.22566";				-- Legion Launch on August 30th, 2016
@@ -1408,7 +1410,9 @@ ADDED_7_3_2 = "added 7.3.2.25326";						-- Legion 7.3.2 Launch on October 24th, 
 REMOVED_7_3_2 = "removed 7.3.2.25326";					-- Legion 7.3.2 Launch on October 24th, 2017
 ADDED_7_3_5 = "added 7.3.5.25848";						-- Legion 7.3.5 Launch on January 16th, 2018
 REMOVED_7_3_5 = "removed 7.3.5.25848";					-- Legion 7.3.5 Launch on January 16th, 2018
---
+------------------------
+-- BATTLE FOR AZEROTH --
+------------------------
 ADDED_8_0_1 = "added 8.0.1.27101";						-- Battle for Azeroth 8.0.1/Pre-Patch Launch on July 17th, 2018
 REMOVED_8_0_1 = "removed 8.0.1.27101";					-- Battle for Azeroth 8.0.1/Pre-Patch Launch on July 17th, 2018
 ADDED_8_0_1_LAUNCH = "added 8.0.1.27366";				-- Battle for Azeroth Launch on August 14th, 2018
@@ -1425,7 +1429,9 @@ ADDED_8_3_0 = "added 8.3.0.33051";						-- Battle for Azeroth 8.3.0 Launch on Ja
 REMOVED_8_3_0 = "removed 8.3.0.33051";					-- Battle for Azeroth 8.3.0 Launch on January 14th, 2020
 ADDED_8_3_7 = "added 8.3.7.35249";						-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
 REMOVED_8_3_7 = "removed 8.3.7.35249";					-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
---
+-----------------
+-- SHADOWLANDS --
+-----------------
 ADDED_9_0_1 = "added 9.0.1.36216";						-- Shadowlands 9.0.1/Pre-Patch Launch on October 13th, 2020
 REMOVED_9_0_1 = "removed 9.0.1.36216";					-- Shadowlands 9.0.1/Pre-Patch Launch on October 13th, 2020
 ADDED_9_0_2 = "added 9.0.2.36639";						-- Shadowlands 9.0.2/Pre-Patch Launch on November 17th, 2020
@@ -1444,22 +1450,30 @@ ADDED_9_2_5 = "added 9.2.5.43903";						-- Shadowlands 9.2.5 Launch on May 31st,
 REMOVED_9_2_5 = "removed 9.2.5.43903";					-- Shadowlands 9.2.5 Launch on May 31st, 2022
 ADDED_9_2_7 = "added 9.2.7.45114";						-- Shadowlands 9.2.7 Launch on August 16th, 2022
 REMOVED_9_2_7 = "removed 9.2.7.45114";					-- Shadowlands 9.2.7 Launch on August 16th, 2022
---
+------------------
+-- DRAGONFLIGHT --
+------------------
 CREATED_10_0_0 = "created 10.0.0.46293";				-- Dragonflight 10.0.0/Pre-Patch Launch on October 25th, 2022
 ADDED_10_0_0 = "added 10.0.0.46293";					-- Dragonflight 10.0.0/Pre-Patch Launch on October 25th, 2022
 REMOVED_10_0_0 = "removed 10.0.0.46293";				-- Dragonflight 10.0.0/Pre-Patch Launch on October 25th, 2022
 ADDED_10_0_2 = "added 10.0.2.46658"						-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
 REMOVED_10_0_2 = "removed 10.0.2.46658"					-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
-TIMELINE_10_0_2 = { CREATED_10_0_0, ADDED_10_0_2 };		-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
+TIMELINE_10_0_2 = {										-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
+	CREATED_10_0_0,
+	ADDED_10_0_2,
+};
 ADDED_10_0_2_LAUNCH = "added 10.0.2.46801";				-- Dragonflight Launch on November 28th, 2022
 REMOVED_10_0_2_LAUNCH = "removed 10.0.2.46801";			-- Dragonflight Launch on November 28th, 2022
-TIMELINE_10_0_2_LAUNCH = { CREATED_10_0_0, ADDED_10_0_2_LAUNCH };		-- Dragonflight Launch on November 28th, 2022
+TIMELINE_10_0_2_LAUNCH = {								-- Dragonflight Launch on November 28th, 2022
+	CREATED_10_0_0,
+	ADDED_10_0_2_LAUNCH,
+};
 ADDED_10_0_5 = "added 10.0.5.47799";					-- Dragonflight 10.0.5 Launch on January 24th, 2023
 REMOVED_10_0_5 = "removed 10.0.5.47799";				-- Dragonflight 10.0.5 Launch on January 24th, 2023
 ADDED_10_0_7 = "added 10.0.7.48676";					-- Dragonflight 10.0.7 Launch on March 21st, 2023
 REMOVED_10_0_7 = "removed 10.0.7.48676";				-- Dragonflight 10.0.7 Launch on March 21st, 2023
-ADDED_10_1_0 = "added 10.1.0";							-- Dragonflight 10.1.0 Launch on
-REMOVED_10_1_0 = "removed 10.1.0";						-- Dragonflight 10.1.0 Launch on
+ADDED_10_1_0 = "added 10.1.0.49407";					-- Dragonflight 10.1.0 Launch on May 2nd, 2023
+REMOVED_10_1_0 = "removed 10.1.0.49407";				-- Dragonflight 10.1.0 Launch on May 2nd, 2023
 ADDED_10_1_5 = "added 10.1.5";							-- Dragonflight 10.1.5 Launch on
 REMOVED_10_1_5 = "removed 10.1.5";						-- Dragonflight 10.1.5 Launch on
 ADDED_10_1_7 = "added 10.1.7";							-- Dragonflight 10.1.7 Launch on

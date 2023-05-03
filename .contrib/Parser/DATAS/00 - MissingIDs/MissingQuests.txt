@@ -1681,8 +1681,6 @@ q(49764),	--
 q(74392),	--
 10.0.7.48966
 q(75449),	--
-10.0.7.49267
-q(76159),	--
 10.1.0.48480
 q(71053),	-- PTR:Hermit Kill Quest	
 q(72027),	-- PTR:[DNT] Training Kill Quest JKP	
@@ -1786,22 +1784,7 @@ q(74833),	--
 q(74834),	--
 q(74893),	--
 q(74904),	--
-q(74948),	-- PTR:Snailspiration: Amethyst Softshell	
-q(74949),	-- PTR:Snailspiration: Archetype of Vigilance	
-q(74950),	-- PTR:Snailspiration: Blackchasm Crawler	
-q(74952),	-- PTR:Snailspiration: Microlicid	
 q(74958),	--
-q(74959),	-- PTR:Snailspiration: Mudshell Conch	
-q(74960),	-- PTR:Snailspiration: Predatory Helicid	
-q(74961),	-- PTR:Snailspiration: Prismatic Softshell	
-q(74962),	-- PTR:Snailspiration: Rapana Whelk	
-q(74963),	-- PTR:Snailspiration: Rusty Snail	
-q(74964),	-- PTR:Snailspiration: Scooter the Snail	
-q(74965),	-- PTR:Snailspiration: Shelly	
-q(74966),	-- PTR:Snailspiration: Silkbead Snail	
-q(74967),	-- PTR:Snailspiration: Spireshell Snail	
-q(74968),	-- PTR:Snailspiration: Zoom	
-q(74986),	--
 q(75017),	--
 q(75018),	--
 q(75021),	--
@@ -1809,22 +1792,15 @@ q(75022),	-- PTR:Vinyeti
 q(75027),	-- PTR:Aerial Domination	
 q(75028),	--
 q(75029),	--
-q(75119),	-- PTR:Dragonrider Racing - Crystal Circuit	
 q(75137),	--
-q(75138),	--
 q(75140),	--
 q(75142),	--
 q(75144),	--
-q(75148),	-- PTR:Ancient Techniques	
-q(75149),	-- PTR:Obsidian Essays	
-q(75150),	-- PTR:Incandescence	
 q(75157),	--
 q(75162),	-- PTR:Conjuring Elements	
-q(75180),	--
 q(75182),	-- PTR:Grand Theft Mammoth	
 q(75183),	--
 q(75184),	--
-q(75186),	--
 q(75187),	--
 q(75188),	--
 q(75201),	--
@@ -1860,10 +1836,7 @@ q(75337),	--
 q(75338),	-- PTR:Lavermix	
 q(75341),	--
 q(75342),	-- PTR:Kronkapace	
-q(75343),	-- PTR:All That Glitter	
-q(75354),	-- PTR:Mycelium Mastery	
 q(75368),	-- PTR:Stones and Scales	
-q(75371),	-- PTR:Fascinating Fungi	
 q(75372),	-- PTR:Drive Them Before Us	
 q(75373),	-- PTR:Charge of the Ottuk Brigade	
 q(75374),	-- PTR:To Defend the Span	
@@ -1873,16 +1846,12 @@ q(75384),	-- PTR:Payback's a Mammoth
 q(75389),	--
 q(75393),	-- PTR:Making Scents	
 q(75398),	-- PTR:Honor the Flame	
-q(75407),	-- PTR:Silk Scavenging	
 q(75408),	--
 q(75415),	--
 q(75416),	--
 q(75417),	--
 q(75418),	--
 q(75429),	--
-q(75430),	--
-q(75431),	--
-q(75433),	--
 q(75434),	--
 q(75435),	--
 q(75442),	--
@@ -1894,9 +1863,6 @@ q(75453),	--
 q(75456),	-- PTR:News From Beneath	
 q(75458),	--
 q(75477),	--
-q(75508),	--
-q(75509),	--
-q(75510),	--
 q(75514),	--
 q(75516),	-- PTR:Squish Squash	
 q(75517),	-- PTR:Sneak and Sniff	
@@ -1923,13 +1889,10 @@ q(75564),	--
 q(75565),	--
 q(75566),	--
 q(75567),	--
-q(75569),	-- PTR:Blacksmith, Black Dragon	
 q(75570),	--
 q(75571),	--
 q(75572),	--
-q(75573),	-- PTR:Proclamation Reclamation	
 q(75574),	--
-q(75575),	-- PTR:Ballistae Bits	
 q(75576),	-- PTR:Grim Guzzler Invasion!	
 q(75577),	--
 q(75578),	--
@@ -1954,11 +1917,8 @@ q(75596),	--
 q(75597),	--
 q(75598),	--
 q(75599),	--
-q(75600),	-- PTR:Silk's Silk	
-q(75602),	-- PTR:Chips off the Old Crystal Block	
 q(75606),	--
 q(75607),	--
-q(75608),	-- PTR:Titan Trash or Titan Treasure?	
 q(75609),	--
 q(75613),	--
 q(75614),	--
@@ -1981,12 +1941,8 @@ q(75645),	-- PTR:Honor the Flame
 q(75647),	-- PTR:Honor the Flame	
 q(75648),	--
 q(75650),	-- PTR:Honor the Flame	
-q(75654),	--
-q(75661),	-- PTR:Curative Crystalline Collection	
 q(75666),	--
 10.1.0.48661
-q(75706),	-- PTR:A Race to the Finish	
-q(75708),	--
 q(75710),	--
 q(75715),	--
 q(75716),	--
@@ -2012,17 +1968,7 @@ q(75740),	--
 q(75741),	-- PTR:Bundle of Boulders	
 q(75742),	-- PTR:Drake Helms	
 q(75744),	-- PTR:A Token of Our Gratitude	
-q(75751),	--
-q(75752),	--
-q(75753),	--
-q(75754),	--
-q(75755),	--
 q(75756),	--
-q(75757),	--
-q(75758),	--
-q(75759),	--
-q(75760),	--
-q(75761),	--
 q(75762),	--
 q(75763),	--
 q(75765),	-- PTR:Liquid Art	
@@ -2039,8 +1985,6 @@ q(75775),	--
 q(75818),	--
 q(75819),	--
 q(75831),	-- PTR:Barter Up	
-q(75832),	--
-q(75834),	-- PTR:Delver Mardei	
 q(75836),	--
 q(75837),	--
 q(75838),	--
@@ -2067,7 +2011,6 @@ q(75858),	--
 q(75862),	--
 q(75863),	--
 q(75864),	--
-q(75865),	-- PTR:Relic Rustler	
 q(75866),	--
 q(75869),	--
 q(75870),	--
@@ -2128,7 +2071,6 @@ q(76012),	--
 q(75996),	-- PTR:Your Weight in Gold	
 q(76013),	--
 q(76015),	-- PTR:Heart of Iron	
-q(76017),	--
 q(76018),	--
 q(76019),	--
 q(76020),	--
@@ -2138,9 +2080,6 @@ q(76029),	-- PTR:Dragon Isles Supplies
 q(76030),	-- PTR:Airborne Winding	
 q(76031),	-- PTR:Dragon Isles Supplies	
 q(76067),	-- PTR:Signed, Sealed, Self-Delivered	
-q(76078),	--
-q(76079),	--
-q(76080),	--
 q(76081),	-- PTR:Liars of Spirit	
 q(76082),	--
 q(76083),	-- PTR:Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder	
@@ -2154,14 +2093,10 @@ q(76106),	--
 q(76107),	--
 q(76108),	--
 q(76109),	--
-q(76110),	--
 q(76111),	--
 q(76112),	--
 q(76113),	--
 q(76114),	--
-q(76116),	--
-q(76117),	--
-q(76118),	--
 q(76120),	--
 q(76121),	--
 q(76123),	--

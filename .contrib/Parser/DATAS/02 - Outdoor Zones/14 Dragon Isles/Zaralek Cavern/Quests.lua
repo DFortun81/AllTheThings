@@ -10,18 +10,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 204252 },	-- Questaniffen
 					["coord"] = { 49.7, 55.3, VALDRAKKEN },
 				}),
-				q(76118, {
-					["name"] = "Talk with Warthion?",
+				q(72975, {	-- The Land Beneath
+					["sourceQuests"] = { 72717 },	-- A Creche Divided
+					["provider"] = { "n", 201401 },	-- Hadexian
+					["coord"] = { 51.3, 35.2, VALDRAKKEN },
+				}),
+				q(75456, {	-- News From Beneath
+					["sourceQuests"] = { 72717 },	-- A Creche Divided
+					["provider"] = { "n", 200277 },	-- Ebyssian
+					["coord"] = { 76.8, 38.2, THE_FORBIDDEN_REACH },
+				}),
+				q(76118, {	-- Accept Book from Wrathion
+					["name"] = "Accept Book from Wrathion",
+					["provider"] = { "n", 201284 },	-- Wrathion
 					["coord"] = { 62.4, 42.7, VALDRAKKEN },
 					["g"] = {
 						i(206033),	-- Untranslated Obsidian Tome
 					},
 				}),
-				q(72975, {	-- The Land Beneath: Zaralek Cavern!
-					["maps"] = { VALDRAKKEN },
-				}),
 				q(72976, {	-- A Crack in the World
-					["sourceQuests"] = { 72975 },	-- The Land Beneath: Zaralek Cavern!
+					["sourceQuests"] = {
+						72975,	-- The Land Beneath
+						75456,	-- News From Beneath
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 201281 },	-- Ebyssian
 					["coord"] = { 61.4, 42.3, VALDRAKKEN },
 				}),
@@ -101,8 +113,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 204522 },	-- Aurantia
 					["coord"] = { 56.9, 55.7, ZARALEK_CAVERN },
 				}),
+				q(76101, {	-- Tougher Down Under
+					["sourceQuests"] = { 72973 },	-- Smells Like Loamm
+					["provider"] = { "n", 204522 },	-- Aurantia
+					["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
+				}),
 				q(72974, {	-- Welcome to the City of Smells
-					["sourceQuests"] = { 72973 },	-- Follow Your Nose
+					["sourceQuests"] = { 72973 },	-- Smells Like Loamm
 					["provider"] = { "n", 200054 },	-- Elder Honeypelt
 					["coord"] = { 57.0, 55.8, ZARALEK_CAVERN },
 					["g"] = {
@@ -496,11 +513,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 
 					-- Unknown --
-				q(76101, {	-- Tougher Down Under
-					--["sourceQuests"] = { 72973 },	--
-					["provider"] = { "n", 204522 },	-- Aurantia
-					["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
-				}),
+
 			}),
 				-- Teaches New System --
 			q(72658, {	-- Flightstones
@@ -639,7 +652,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 				-- Glimmerogg Questline --
 			q(73707, {	-- TICKET: Glimmerogg Games
-				["sourceQuests"] = { 72979 },	-- The Earth Gives Way 
+				["sourceQuests"] = { 72979 },	-- The Earth Gives Way
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
 				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 				["isBreadcrumb"] = true,

@@ -200,11 +200,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 30.5, 45.3, ZARALEK_CAVERN },
 			}),
 			ach(17739, {	-- Embers of Neltharion
-				-- Confirm: This seems removed on PTR
-				-- crit(1, {	-- A Creche Divided
-				-- 	["sourceQuests"] = { 73156 },	-- Return to Viridia
-				-- }),
-				crit(2, {	-- Breaking Ground
+				crit(1, {	-- Breaking Ground
 					["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				}),
 				crit(3, {	-- Sundered Legacy
