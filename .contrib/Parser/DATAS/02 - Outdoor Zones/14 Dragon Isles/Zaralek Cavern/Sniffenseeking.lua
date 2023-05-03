@@ -113,6 +113,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				}),
 				n(BONUS_OBJECTIVES, {
+					q(76015, {	-- Heart of Iron 
+						["g"] = {
+							i(205939),	-- Iron Titan Key
+						},
+					}),
 					q(76084, {	-- Frostfire Finesse
 						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
 						["g"] = {
@@ -205,6 +210,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75747),	-- Completing a Sniffenseeking quest
 		q(75748),	-- Completing a Sniffenseeking quest
 		q(75749),	-- Completing a Sniffenseeking quest
+		q(75997),	-- Completing Heart of Iron Sniffenseeking Quest 
+		q(75914),	-- Starting the first Sniffenseeking map after tutorial, unflagged after completing Sniffenseeking quest
 
 		q(75904),	-- Unknown [When going to Those Rascally Wroms (75397)] /Unflagged after complete
 		q(75880),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..
