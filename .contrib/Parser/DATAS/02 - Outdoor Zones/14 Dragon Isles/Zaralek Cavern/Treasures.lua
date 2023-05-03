@@ -14,9 +14,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 73697,
 			}),
 			o(385565, {	-- Blazing Shadowflame Chest
-				["description"] = "Unknown",
+				["description"] = "You'll need to equip an Onyxia Scale Cloak in order to open this chest.",
 				["coord"] = { 28.6, 47.9, ZARALEK_CAVERN },
-				--["questID"] = ,
+				["questID"] = 72986,
 				["g"] = {
 					i(205418),	-- Blazing Shadowflame Cinder (TOY!)
 				},

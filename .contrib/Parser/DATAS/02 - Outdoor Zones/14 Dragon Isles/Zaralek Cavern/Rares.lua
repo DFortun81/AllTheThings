@@ -121,6 +121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75269, true),
 					i(205319),	-- Deepflayer Shoulderguards
+					i(205310),	-- Leggings of Kaprachu
 				},
 			}),
 			n(203618, {	-- Klakatak
@@ -157,11 +158,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				--	bo(, true),
 				--},
 			}),
-			n(200111, {	-- Magmanesha
+			n(200111, {	-- Magtembo
 				["coord"] = { 41.1, 37.7, ZARALEK_CAVERN },
 				["questID"] = 75339,	-- Old QuestID: 75561
 				["g"] = {
 					bo(75340, true),
+					i(203339),	-- Winding Slitherdrake: Impaler Horns (DM!)
+					i(205311),	-- Magmascale Pauldrons
 				},
 			}),
 			n(203521, {	-- Professor Gastrinax

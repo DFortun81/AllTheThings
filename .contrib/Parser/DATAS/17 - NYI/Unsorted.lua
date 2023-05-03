@@ -219,8 +219,6 @@ root(ROOTS.Unsorted, {
 				i(205304),	-- Snareguard Sash
 				i(205305),	-- Zaralek Arachnid Armbands
 				i(205309),	-- Loyal Attendant's Gaze
-				i(205310),	-- Legguards of Kaprachu
-				i(205311),	-- Magmascale Pauldrons
 				i(205316),	-- Crystal Stompers
 				i(205317),	-- Crystalpod Gauntlets
 				i(205318),	-- Guardian Golem's Legplates
