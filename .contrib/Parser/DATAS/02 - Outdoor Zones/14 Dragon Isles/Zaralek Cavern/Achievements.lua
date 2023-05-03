@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				crit(1, {	-- Breaking Ground
 					["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				}),
-				crit(3, {	-- Sundered Legacy
+				crit(2, {	-- Sundered Legacy
 					["sourceQuests"] = { 72965 },	-- Aspects of Our Legacy
 				}),
 				crit(4, {	-- The Ancient Bargain

@@ -23,10 +23,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(QUESTS, {
 				q(74787, {	-- Come Snail Away
-					["sourceQuests"] = {
-						73709,	-- Favor on the Side
-						73708,	-- Pay to Play
-					},
+					["sourceQuests"] = { 73711 },	-- Marked Champion
 					["provider"] = { "n", 201752 },	-- Briggul
 					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 					["g"] = {
@@ -69,7 +66,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(74515),	-- Snail Mail
 			})),
 			n(QUESTS, sharedData({
-				["sourceQuests"] = { 74787 },  -- Come Snail Away
+				["sourceQuests"] = { 73711 },	-- Marked Champion
 				["provider"] = { "n", 201099 },	-- Gorgul
 				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
 			}, {

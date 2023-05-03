@@ -113,11 +113,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 204522 },	-- Aurantia
 					["coord"] = { 56.9, 55.7, ZARALEK_CAVERN },
 				}),
-				q(76101, {	-- Tougher Down Under
-					["sourceQuests"] = { 72973 },	-- Smells Like Loamm
-					["provider"] = { "n", 204522 },	-- Aurantia
-					["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
-				}),
 				q(72974, {	-- Welcome to the City of Smells
 					["sourceQuests"] = { 72973 },	-- Smells Like Loamm
 					["provider"] = { "n", 200054 },	-- Elder Honeypelt
@@ -136,9 +131,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 				}),
 				q(75644, {	-- Six Hundred Feet Under
-					["sourceQuests"] = { 75643 },	-- Orientation: Loamm Niffen
+					["sourceQuests"] = {
+						75643,	-- Orientation: Loamm Niffen
+						72974	-- Welcome to the City of Smells
+					},
 					["provider"] = { "n", 200052 },	-- Aurantia
 					["coord"] = { 54.6, 54.7, ZARALEK_CAVERN },
+					["g"] = {
+						spell(408876),	-- Zaralek Cavern World Quests
+					},
 				}),
 					-- Chapter 2
 				q(74334, {	-- Future Aspects
@@ -356,7 +357,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204608),	-- Bestowed Greathelm
 						i(204584),	-- Endowed Hood
 						i(204592),	-- Inherited Mask
-						spell(408876),	-- Zaralek Cavern World Quests
 					},
 				}),
 					-- Chapter 4 --
@@ -511,11 +511,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204682),	-- Enchanted Wyrm's Shadowflame Crest
 					},
 				}),
-
-					-- Unknown --
-
 			}),
 				-- Teaches New System --
+			q(76101, {	-- Tougher Down Under
+				["sourceQuests"] = { 72973 },	-- Smells Like Loamm
+				["provider"] = { "n", 204522 },	-- Aurantia
+				["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
+			}),
 			q(72658, {	-- Flightstones
 				["sourceQuests"] = { 76101 },	-- Tougher Down Under
 				["provider"] = { "n", 203404 },	-- Vaskarn
@@ -542,7 +544,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204075),	-- Whelpling's Shadowflame Crest Fragment
 				},
 			}),
-			q(75641, {	-- The Power of the Whole
+				--
+			q(75641, {	-- Power Unified
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
 				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
 				["g"] = {
@@ -561,7 +565,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 200055 },	-- Citros
 				["coord"] = { 57.3, 55.9, ZARALEK_CAVERN },
 			}),
-			q(72880, {	-- Smells like Kith Spirit
+			q(72880, {	-- Incense Gratification
 				["sourceQuests"] = { 72879 },	-- Smells like Kith Spirit
 				["provider"] = { "n", 200055 },	-- Citros
 				["coord"] = { 56.8, 54.1, ZARALEK_CAVERN },
