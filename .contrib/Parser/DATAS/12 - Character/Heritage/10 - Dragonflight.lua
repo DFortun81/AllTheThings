@@ -4,11 +4,19 @@
 root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	tier(DF_TIER, {
 		race(HUMAN, {
-			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Human|r with a standing of |cFFFFFFFFExalted|r with Stormwind.",
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Human|r.",
 			["races"] = { HUMAN },
-			["g"] = bubbleDown({ ["races"] = { HUMAN }, ["minReputation"] = { 72, EXALTED } }, {
+			["g"] = bubbleDown({
+				["races"] = { HUMAN },
+				-- #if BEFORE 10.1.0
+				["minReputation"] = { 72, EXALTED }
+				-- #endif
+			}, {
 				q(72644, {	-- An Urgent Matter
 					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						75265,	-- An Urgent Matter (the other one)
+					},
 					["g"] = {
 						i(203475),	-- Urgent Stormwind Summons
 					},
@@ -17,6 +25,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 199340 },	-- Agent Render
 					["coord"] = { 54.6, 20.0, STORMWIND_CITY },
 					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						72644,	-- An Urgent Matter (the other one)
+					},
 					["g"] = {
 						i(203475),	-- Urgent Stormwind Summons
 					},
@@ -145,11 +156,13 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 		}),
 		race(ORC, {
-			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Orc|r with a standing of |cFFFFFFFFExalted|r with Orgrimmar.",
-			["g"] = sharedData({
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Orc|r.",
+			["g"] = bubbleDown({
 				["races"] = { ORC },
+				-- #if BEFORE 10.1.0
 				["minReputation"] = { 76, EXALTED }
-			},{
+				-- #endif
+			}, {
 				q(73703, {	-- A Summon to Orgrimmar
 					["description"] = "Auto-accepted in Orgrimmar once criteria is met.",
 					["maps"] = { ORGRIMMAR },

@@ -4,9 +4,14 @@
 root(ROOTS.Character, n(HERITAGE, {
 	tier(BFA_TIER, {
 		race(BLOODELF, {
-			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r with a standing of |cFFFFFFFFExalted|r with Silvermoon City.",
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r.",
 			["races"] = { BLOODELF },
-			["g"] = bubbleDown({ ["races"] = { BLOODELF }, ["minReputation"] = { 911, EXALTED }, }, {
+			["g"] = bubbleDown({
+				["races"] = { BLOODELF },
+				-- #if BEFORE 10.1.0
+				["minReputation"] = { 911, EXALTED },
+				-- #endif
+			}, {
 				q(53791, {	-- The Pride of the Sin'dorei
 					["provider"] = { "n", 146939 },	-- Ambassador Dawnsworn
 					["coord"] = { 39.2, 79.0, ORGRIMMAR },
@@ -95,9 +100,14 @@ root(ROOTS.Character, n(HERITAGE, {
 			},
 		}),
 		race(DWARF, {
-			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dwarf|r with a standing of |cFFFFFFFFExalted|r with Ironforge.",
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dwarf|r.",
 			["races"] = { DWARF },
-			["g"] = bubbleDown({ ["races"] = { DWARF }, ["minReputation"] = { 47, EXALTED }, }, {
+			["g"] = bubbleDown({
+				["races"] = { DWARF },
+				-- #if BEFORE 10.1.0
+				["minReputation"] = { 47, EXALTED },
+				-- #endif
+			}, {
 				q(53838, {	-- Keep Yer Feet On The Ground
 					["provider"] = { "n", 146988 },	-- Digger Golad
 					["coord"] = { 54.6, 18.0, STORMWIND_CITY },
@@ -165,9 +175,14 @@ root(ROOTS.Character, n(HERITAGE, {
 			}),
 		}),
 		race(GNOME, {
-			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r with a standing of |cFFFFFFFFExalted|r with Gnomeregan and completed |cFFFFD700Stay of Execution|r, The 8.2 War Campaign.",
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
 			["races"] = { GNOME },
-			["g"] = bubbleDown({ ["races"] = { GNOME }, ["minReputation"] = { 54, EXALTED }, }, {
+			["g"] = bubbleDown({
+				["races"] = { GNOME },
+				-- #if BEFORE 10.1.0
+				["minReputation"] = { 54, EXALTED },
+				-- #endif
+			}, {
 				q(54402, {	-- Shifting Gears
 					["provider"] = { "n", 147939 },	-- Ace Pilot Stormcog
 					["coord"] = { 54.6, 18.4, STORMWIND_CITY },
@@ -244,9 +259,14 @@ root(ROOTS.Character, n(HERITAGE, {
 			}),
 		}),
 		race(GOBLIN, {
-			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r with a standing of |cFFFFFFFFExalted|r with Bilgewater Cartel.",
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r.",
 			["races"] = { GOBLIN },
-			["g"] = bubbleDown({ ["races"] = { GOBLIN }, ["minReputation"] = { 1133, EXALTED }, }, {
+			["g"] = bubbleDown({
+				["races"] = { GOBLIN },
+				-- #if BEFORE 10.1.0
+				["minReputation"] = { 1133, EXALTED },
+				-- #endif
+			}, {
 				q(57043, {	-- Old Friends, New Opportunities
 					["provider"] = { "n", 156358 },	-- Izzy
 					["coord"] = { 39.5, 80.2, ORGRIMMAR },
@@ -477,9 +497,14 @@ root(ROOTS.Character, n(HERITAGE, {
 			},
 		}),
 		race(TAUREN, {
-			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Tauren|r with a standing of |cFFFFFFFFExalted|r with Thunder Bluff and completed |cFFFFD700Stay of Execution|r, The 8.2 War Campaign.",
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Tauren|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
 			["races"] = { TAUREN },
-			["g"] = bubbleDown({ ["races"] = { TAUREN }, ["minReputation"] = { 81, EXALTED }, }, {
+			["g"] = bubbleDown({
+				["races"] = { TAUREN },
+				-- #if BEFORE 10.1.0
+				["minReputation"] = { 81, EXALTED },
+				-- #endif
+			}, {
 				q(54759, {	-- When Spririts Whisper
 					["provider"] = { "n", 149088 },	-- Spiritwalker Isahi
 					["coord"] = { 39.1, 79.0, ORGRIMMAR },
@@ -587,9 +612,14 @@ root(ROOTS.Character, n(HERITAGE, {
 			},
 		}),
 		race(WORGEN, {
-			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r with a standing of |cFFFFFFFFExalted|r with Gilneas.",
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r.",
 			["races"] = { WORGEN },
-			["g"] = bubbleDown({ ["races"] = { WORGEN }, ["minReputation"] = { 1134, EXALTED }, }, {
+			["g"] = bubbleDown({
+				["races"] = { WORGEN },
+				-- #if BEFORE 10.1.0
+				["minReputation"] = { 1134, EXALTED },
+				-- #endif
+			}, {
 				q(54976, {	-- The Shadow of Gilneas
 					["provider"] = { "n", 150200 },	-- Courier Claridge
 					["coord"] = { 54.6, 18.4, STORMWIND_CITY },
