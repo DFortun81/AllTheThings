@@ -353,6 +353,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 201784 },	-- Ebyssian
 					["coord"] = { 56.1, 54.5, ZARALEK_CAVERN },
 					["g"] = {
+						i(205989),	-- Symbol of Friendship
 						i(204600),	-- Bequeathed Cowl
 						i(204608),	-- Bestowed Greathelm
 						i(204584),	-- Endowed Hood

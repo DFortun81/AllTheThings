@@ -535,7 +535,6 @@ root(ROOTS.Unsorted, {
 				i(206038),	-- Flamin' Ring of Flashiness (TOY!)
 				i(206043),	-- Fyrakk's Frenzy (TOY!)
 				i(205688),	-- Glutinous Glitterscale Glob (TOY!)
-				i(205255),	-- Niffen Diggin' Mitts (TOY!)
 			}),
 			n(WEAPONS, {
 				i(204638),	-- Sunder Wing
@@ -575,7 +574,6 @@ root(ROOTS.Unsorted, {
 				i(206021),	-- Kob'rok's Luminescent Scale
 				-- Large Rep
 				i(205252),	-- Momento of Rekindled Bonds
-				i(205989),	-- Symbol of Friendship
 				i(205992),	-- Regurgitated Half-Digested Fish
 				i(206006),	-- Earth-Warder's Thanks
 				-- Research
