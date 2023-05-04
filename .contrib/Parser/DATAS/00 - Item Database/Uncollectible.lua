@@ -698,7 +698,7 @@ i(204067);	-- Glowing Crystal
 i(204694);	-- Greater Flamesight Rune
 i(203456);	-- Obsidian Prayer Beads
 i(204070);	-- Magma Crystal
-i(204792),	-- Nightlight Conkerbell Sample
+i(204792);	-- Nightlight Conkerbell Sample
 i(202180);	-- Pipsee Cheese Snack
 i(205217);	-- Sharpbeak's Feed
 i(205980);	-- Snail Lasso
@@ -711,19 +711,19 @@ i(203457);	-- Volcanic Herb Sachet
 i(204085);	-- Zaqali Dragonslayer's Spear
 i(203654);	-- Zaqali Flame Totem
 -- Poor Trash --
-i(205869),	-- Aromatic Royal Jelly
-i(205868),	-- Cracked Chitin Carapace
+i(205869);	-- Aromatic Royal Jelly
+i(205868);	-- Cracked Chitin Carapace
 i(205457);	-- Delicate Crystal Shell
 i(205465);	-- Gleaming Rock Viper Eye
 i(205870);	-- Glittering Spore Dust
-i(205871),	-- Glowing Underlight Wings
+i(205871);	-- Glowing Underlight Wings
 i(205464);	-- Granite Scales
 i(205459);	-- Luminous Gloop
 i(205698);	-- Mangled Niffen Pack
 i(205460);	-- Pulverized Living Earth
 i(205700);	-- Sensitive Scotopic Eye
 i(205469);	-- Serrated Sporebat Spine
-i(205471),	-- Slimy Deepsea Fin
+i(205471);	-- Slimy Deepsea Fin
 i(205470);	-- Torn Deep Scales
 -- Common Trash --
 i(204342);	-- Questionable Jerky
