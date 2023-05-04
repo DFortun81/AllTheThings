@@ -22691,18 +22691,19 @@ app.LoadDebugger = function()
 						local link = GetQuestItemLink("choice", i);
 						if link then tinsert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
 					end
-					for i=1,GetNumQuestLogRewardSpells(questID),1 do
-						local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
-						if garrFollowerID then
-							tinsert(rawGroups, { ["followerID"] = garrFollowerID, ["name"] = name });
-						elseif spellID then
-							if isTradeskillSpell then
-								tinsert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
-							else
-								tinsert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
-							end
-						end
-					end
+					-- GetNumQuestLogRewardSpells removed in 10.1
+					-- for i=1,GetNumQuestLogRewardSpells(questID),1 do
+					-- 	local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
+					-- 	if garrFollowerID then
+					-- 		tinsert(rawGroups, { ["followerID"] = garrFollowerID, ["name"] = name });
+					-- 	elseif spellID then
+					-- 		if isTradeskillSpell then
+					-- 			tinsert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
+					-- 		else
+					-- 			tinsert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
+					-- 		end
+					-- 	end
+					-- end
 
 					local info = { ["questID"] = questID, ["g"] = rawGroups };
 					if questStartItemID and questStartItemID > 0 then info.provider = { "i", questStartItemID }; end
