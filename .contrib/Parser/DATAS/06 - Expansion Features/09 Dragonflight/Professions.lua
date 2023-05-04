@@ -1697,7 +1697,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			n(TREASURES, {
 				o(402892, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Ancient Research
 					["coord"] = { 54.6, 20.2, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 76121,
 					["g"] = {
 						i(206035),	-- Ancient Research
 					},
@@ -1743,7 +1743,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				o(402890, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Hissing Rune Draft
 					["coord"] = { 53.0, 74.3, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 76120,
 					["g"] = {
 						i(206034),	-- Hissing Rune Draft
 					},
