@@ -205,7 +205,6 @@ root(ROOTS.Unsorted, {
 				i(205229),	-- Magma Serpent Lure
 				i(205262),	-- Magmaclaw Lure
 				i(205276),	-- Deepflayer Lure
-				i(205343),	-- Crude Seal of Mak'aru
 				-- Rare DROPS
 				i(205294),	-- Sandals of Molten Scorn
 				i(205295),	-- Sediment Sifters
