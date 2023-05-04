@@ -194,7 +194,6 @@ root(ROOTS.Unsorted, {
 			n(ARMOR, {
 				i(204087),	-- 10.1 Cloak Test Item
 				i(204736),	-- Heatbound Medallion
-				i(204810),	-- Drogbar Rocks
 				i(204901),	-- Firecaller's Focus
 				i(205191),	-- Underlight Globe
 				i(205193),	-- Sturdy Deepflayer Scute
@@ -224,11 +223,9 @@ root(ROOTS.Unsorted, {
 				i(205318),	-- Guardian Golem's Legplates
 				i(205319),	-- Deepflayer Shoulderguards
 				i(205320),	-- Greatbelt of the Stronk
-				i(205321),	-- Brimstone Bracers
 				i(205323),	-- Rock-Lined Pauldrons
 				i(205324),	-- Moth Queen Mantle
 				i(205325),	-- Crystal Wing Shield
-				i(205328),	-- Earthen Emissasry's Edge
 				i(205330),	-- Signet of Colossal Mastery
 				i(205331),	-- Zskorran Cleaver
 				i(205332),	-- Fist of the Demolisher
@@ -323,7 +320,6 @@ root(ROOTS.Unsorted, {
 				i(205466),	-- Regurgitated Spores
 				i(205467),	-- Preserved Krolusk Crest
 				i(205468),	-- Hooked Tail Claw
-				i(205471),	-- Slimy Deepsea Fin
 				i(205472),	-- Wad of Sparkling Somethings
 				i(205689),	-- Champion's Crystal
 				i(205691),	-- Hypnotic Murloc Lure
@@ -333,9 +329,6 @@ root(ROOTS.Unsorted, {
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205866),	-- Rough Coiled Horns
 				i(205867),	-- Steaming Drake Heart
-				i(205868),	-- Cracked Chitin Carapace
-				i(205869),	-- Aromatic Royal Jelly
-				i(205871),	-- Glowing Underlight Wings
 				i(205872),	-- Earthvermin Fluff
 				i(205873),	-- Foraged Rare Fungi
 				i(205875),	-- Massive Deepstrider Femur
@@ -491,7 +484,6 @@ root(ROOTS.Unsorted, {
 				i(204473),	-- Element Siphoner
 				i(204637),	-- Boulder Chunk
 				i(201956),	-- [DNT] Snakey Eyes
-				i(204792),	-- Nightlight Conkerbell Sample
 				i(204794),	-- Whelkshell Crystals
 				i(204796),	-- Deepflayer Dust
 				i(204800),	-- Scaly Stone Hide
