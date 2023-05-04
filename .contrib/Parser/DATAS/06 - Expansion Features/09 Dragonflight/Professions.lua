@@ -1332,7 +1332,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				o(392582,	-- Defective Survival Pack
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 50.5, 47.9, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 75184,
 					["g"] = {
 						i(204471),	-- Defective Survival Pack
 					},
@@ -1356,7 +1356,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				o(392581,	-- Haphazardly Discarded Bomb
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 48.2, 27.9, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 75183,
 					["g"] = {
 						i(204470),	-- Haphazardly Discarded Bomb
 					},
@@ -1364,7 +1364,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				o(392593,	-- Inconspicuous Data Miner
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 49.9, 59.3, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 75188,
 					["g"] = {
 						i(204480),	-- Inconspicuous Data Miner
 					},
