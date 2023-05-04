@@ -7,13 +7,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 		["maps"] = { 2093 },	-- The Nokhud Offensive
 		["g"] = {
 			-- Last Boss (any difficulty)
-			n(DROPS, sharedData({
-				["crs"] = { 186151 },	-- Balakar Khan
-			},{
+			n(186151, {	-- Balakar Khan
 				i(201929),	-- Stolen Breath of Ohn'ahra
 				i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
 				i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
-			})),
+			}),
 			n(FLIGHT_PATHS, {
 				fp(2847, {	-- Maruukai, The Nokhud Offensive
 					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive

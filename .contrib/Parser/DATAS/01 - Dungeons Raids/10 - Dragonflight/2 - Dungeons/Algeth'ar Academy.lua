@@ -10,13 +10,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 		},
 		["g"] = {
 			-- Last Boss (any difficulty)
-			n(DROPS, sharedData({
-				["crs"] = { 190609 },	-- Echo of Doragosa
-			},{
+			n(190609, {	-- Echo of Doragosa
 				i(197147),	-- Highland Drake: Heavy Scales (DM!)
 				i(197112),	-- Highland Drake: Single Horned Head (DM!)
 				i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
-			})),
+			}),
 			n(QUESTS, {
 				q(72193, {	-- The Algeth'ar Academy
 					-- ["sourceQuests"] = {  },	--

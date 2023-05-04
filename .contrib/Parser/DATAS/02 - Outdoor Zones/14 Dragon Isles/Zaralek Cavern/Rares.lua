@@ -136,6 +136,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75322, true),
 					i(205308),	-- Clacking Clawguards
 					i(205686),	-- Clacking Claw
+					i(205343),	-- Crude Seal of Mak'aru
 				},
 			}),
 			n(203462, {	-- Kob'rok

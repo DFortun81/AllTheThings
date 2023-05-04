@@ -10,12 +10,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 		},
 		["g"] = {
 			-- Last Boss (any difficulty)
-			n(DROPS, sharedData({
-				["crs"] = { 189901 },	-- Warlord Sargha
-			},{
+			n(189901, {	-- Warlord Sargha
 				i(197376),	-- Renewed Proto-Drake: Ears (DM!)
 				i(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
-			})),
+			}),
 			n(QUESTS, {
 				q(72135, {	-- Neltharus: Secrets Wihtin
 					["provider"] = { "n", 193456 },	-- Archivist Edress

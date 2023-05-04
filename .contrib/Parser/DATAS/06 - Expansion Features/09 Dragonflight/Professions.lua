@@ -1332,7 +1332,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				o(392582,	-- Defective Survival Pack
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 50.5, 47.9, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 75184,
 					["g"] = {
 						i(204471),	-- Defective Survival Pack
 					},
@@ -1356,7 +1356,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				o(392581,	-- Haphazardly Discarded Bomb
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 48.2, 27.9, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 75183,
 					["g"] = {
 						i(204470),	-- Haphazardly Discarded Bomb
 					},
@@ -1364,7 +1364,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				o(392593,	-- Inconspicuous Data Miner
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 49.9, 59.3, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 75188,
 					["g"] = {
 						i(204480),	-- Inconspicuous Data Miner
 					},
@@ -1697,7 +1697,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			n(TREASURES, {
 				o(402892, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Ancient Research
 					["coord"] = { 54.6, 20.2, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 76121,
 					["g"] = {
 						i(206035),	-- Ancient Research
 					},
@@ -1743,7 +1743,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				o(402890, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Hissing Rune Draft
 					["coord"] = { 53.0, 74.3, ZARALEK_CAVERN },
-					--["questID"] = ,
+					["questID"] = 76120,
 					["g"] = {
 						i(206034),	-- Hissing Rune Draft
 					},
