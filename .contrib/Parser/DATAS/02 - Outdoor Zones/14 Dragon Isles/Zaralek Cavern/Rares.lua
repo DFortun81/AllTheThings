@@ -102,6 +102,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75336, true),
 					i(205796),	-- Molten Lava Pack (TOY!)
+					i(205329),	-- Loop of Burning Invocation
+					i(203328),	-- Winding Slitherdrake: White Horns (DM!)
 				},
 			}),
 			n(203625, {	-- Karokta
@@ -207,6 +209,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75360, true),
 					i(205314),	-- Greathelm of the Emissary
 					i(205312),	-- Subterrax's Stout Waistguard
+					i(203338),	-- Winding Slitherdrake: Antler Horns (DM!)
 				},
 			}),
 			n(203593, {	-- Underlight Queen
