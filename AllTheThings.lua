@@ -10731,6 +10731,7 @@ local FlightPathMapIDs = {
 	2046,	-- Zereth Mortis
 	2057,	-- Dragon Isles
 	2055,	-- Sepulcher of the First Ones (has FPs inside)
+	2175,	-- Zaralek Cavern
 };
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID
 	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID;
@@ -18896,7 +18897,7 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 		if not self.initialized then
 			self.doesOwnUpdate = true;
 			self.initialized = true;
-			self.Limit = 17314;	-- MissingAchievements:10.0.2.46781
+			self.Limit = 18359;	-- MissingAchievements:10.0.2.46781
 			self.PartitionSize = 2000;
 			local db = {};
 			local CleanUpHarvests = function()
