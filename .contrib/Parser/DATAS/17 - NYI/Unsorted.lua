@@ -229,7 +229,6 @@ root(ROOTS.Unsorted, {
 				i(205324),	-- Moth Queen Mantle
 				i(205325),	-- Crystal Wing Shield
 				i(205328),	-- Earthen Emissasry's Edge
-				i(205329),	-- Loop of Burning Invocation
 				i(205330),	-- Signet of Colossal Mastery
 				i(205331),	-- Zskorran Cleaver
 				i(205332),	-- Fist of the Demolisher
