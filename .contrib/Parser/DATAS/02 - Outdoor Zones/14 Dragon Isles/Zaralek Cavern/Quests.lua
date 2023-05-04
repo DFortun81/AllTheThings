@@ -793,6 +793,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 203378 },	-- Gorgul
 				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
+				["g"] = {
+					i(204714),	-- Satchel of Healing Spores
+					i(204728),	-- Friendship Censer
+					i(204797),	-- Djaradin Boasting Tablets
+					i(204805),	-- Suspended Sulfuric Droplet
+					i(204810),	-- Drogbar Rocks
+					i(204811),	-- Drogbar Stones
+				},
 			}),
 		}),
 	}),

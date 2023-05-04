@@ -50,6 +50,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75352,	-- Old QuestID: 75564
 				["g"] = {
 					bo(75353, true),
+					i(203320),	-- Winding Slitherdrake: Ears
 					i(205200),	-- Stirring Twilight Ember
 					--i(205419),	-- Jrumm's Drum (TOY!)
 				},
@@ -78,6 +79,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75295,	-- Old QuestID: 75552
 				["g"] = {
 					bo(75296, true),
+					i(203334),	-- Winding Slitherdrake: Curled Horns
+					i(205321),	-- Brimstone Bracers
 					i(205291),	-- Garrison General's Cape
 				},
 			}),
@@ -210,6 +213,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75360, true),
 					i(205314),	-- Greathelm of the Emissary
 					i(205312),	-- Subterrax's Stout Waistguard
+					i(205328),	-- Earthen Emissasry's Edge
 					i(203338),	-- Winding Slitherdrake: Antler Horns (DM!)
 				},
 			}),
