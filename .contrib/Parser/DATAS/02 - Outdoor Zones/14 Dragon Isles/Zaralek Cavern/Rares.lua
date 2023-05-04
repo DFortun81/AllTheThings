@@ -50,9 +50,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75352,	-- Old QuestID: 75564
 				["g"] = {
 					bo(75353, true),
-					i(203320),	-- Winding Slitherdrake: Ears
+					i(203320),	-- Winding Slitherdrake: Ears (DM!)
 					i(205200),	-- Stirring Twilight Ember
-					--i(205419),	-- Jrumm's Drum (TOY!)
+					i(205419),	-- Jrumm's Drum (TOY!)
 				},
 			}),
 			n(203664, {	-- Emberdusk
@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75295,	-- Old QuestID: 75552
 				["g"] = {
 					bo(75296, true),
-					i(203334),	-- Winding Slitherdrake: Curled Horns
+					i(203334),	-- Winding Slitherdrake: Curled Horns (DM!)
 					i(205321),	-- Brimstone Bracers
 					i(205291),	-- Garrison General's Cape
 				},
