@@ -4,94 +4,97 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(QUESTS, {
-			q(74381, {	-- Hidden Legacies
-				["maps"] = { VALDRAKKEN },
-			}),
-			q(73076, {	-- Return to the Reach
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 201398 },	-- Kurazidaia
-				["coord"] = { 60.8, 26.4, VALDRAKKEN },
-				["g"] = {
-					i(203646),	-- Primalist Cloak
-				},
-			}),
-			q(75050, {	-- An Eclectic Accord
-				["sourceQuests"] = { 73076 },	-- Return to the Reach
-				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
-				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
-			}),
-			q(74769, {	-- Stemming the Irontide
-				["sourceQuests"] = { 73076 },	-- Return to the Reach
-				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
-				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
-			}),
-			q(73157, {	-- Wings of Mercy
-				["sourceQuests"] = { 73076 },	-- Return to the Reach
-				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
-				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
-			}),
-			q(74847, {	-- Emberthal Awaits
-				["sourceQuests"] = {
-					75050,	-- An Eclectic Accord
-					74769,	-- Stemming the Irontide
-					73157,	--  Wings of Mercy
-				},
-				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
-				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
-				["g"] = {
-					i(204276),	-- Untapped Forbidden Knowledge
-				},
-			}),
-			q(72712, {	-- The Best We Have
-				["sourceQuests"] = { 74847 },	-- Emberthal Awaits
-				["provider"] = { "n", 199532 },	-- Scalecommander Emberthal
-				["coord"] = { 32.6, 60.3, THE_FORBIDDEN_REACH },
-			}),
-			q(72713, {	-- Inheritance
-				["sourceQuests"] = { 72712 },	-- The Best We Have
-				["provider"] = { "n", 200403 },	-- Talon Damos
-				["coord"] = { 55, 37.2, THE_FORBIDDEN_REACH },
-			}),
-			q(72545, {	-- Creche Fallen
-				["sourceQuests"] = { 72713 },	-- Inheritance
-				["provider"] = { "n", 199531 },	-- Scalecommander Emberthal
-				["coord"] = { 55.1, 35.8, THE_FORBIDDEN_REACH },
-			}),
-			q(73094, {	-- Aiding the Expedition
-				["sourceQuests"] = { 72545 },	-- Creche Fallen
-				["provider"] = { "n", 199531 },	-- Scalecommander Emberthal
-				["coord"] = { 55.1, 35.8, THE_FORBIDDEN_REACH },
-			}),
-			q(72715, {	-- Keeping the Flame at Bay
-				["sourceQuests"] = { 73094 },	-- Aiding the Expedition
-				["provider"] = { "n", 199175 },	-- Scalecommander Emberthal
-				["coord"] = { 61.4, 61.5, THE_FORBIDDEN_REACH },
-			}),
-			q(72714, {	-- An Interdisciplinary Approach
-				["sourceQuests"] = { 73094 },	-- Aiding the Expedition
-				["provider"] = { "n", 199520 },	-- Ebyssian
-				["coord"] = { 61.6, 61.4, THE_FORBIDDEN_REACH },
-			}),
-			q(73137, {	-- Chasing the Flame
-				["sourceQuests"] = {
-					72715,	-- Keeping the Flame at Bay
-					72714,	-- An Interdisciplinary Approach
-				},
-				["provider"] = { "n", 199521 },	-- Scalecommander Emberthal
-				["coord"] = { 58.7, 70.2, THE_FORBIDDEN_REACH },
-			}),
-			q(72717, {	-- A Creche Divided
-				["sourceQuests"] = { 73137 },	-- Chasing the Flame
-				["provider"] = { "n", 199538 },	-- Scalecommander Emberthal
-				["coord"] = { 74.3, 36.9, THE_FORBIDDEN_REACH },
-				["g"] = {
-					i(204182),	-- Cloak of Dark Descent
-				},
-			}),
-			q(73156, {	-- Return to Viridia
-				["sourceQuests"] = { 72717 },	-- A Creche Divided
-				["provider"] = { "n", 199539 },	-- Scalecommander Emberthal
-				["coord"] = { 76.6, 38.6, THE_FORBIDDEN_REACH },
+			header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
+				-- Chapter 1 --
+				q(74381, {	-- Hidden Legacies
+					["maps"] = { VALDRAKKEN },
+				}),
+				q(73076, {	-- Return to the Reach
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 201398 },	-- Kurazidaia
+					["coord"] = { 60.8, 26.4, VALDRAKKEN },
+					["g"] = {
+						i(203646),	-- Primalist Cloak
+					},
+				}),
+				q(75050, {	-- An Eclectic Accord
+					["sourceQuests"] = { 73076 },	-- Return to the Reach
+					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				}),
+				q(74769, {	-- Stemming the Irontide
+					["sourceQuests"] = { 73076 },	-- Return to the Reach
+					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				}),
+				q(73157, {	-- Wings of Mercy
+					["sourceQuests"] = { 73076 },	-- Return to the Reach
+					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				}),
+				q(74847, {	-- Emberthal Awaits
+					["sourceQuests"] = {
+						75050,	-- An Eclectic Accord
+						74769,	-- Stemming the Irontide
+						73157,	--  Wings of Mercy
+					},
+					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(204276),	-- Untapped Forbidden Knowledge
+					},
+				}),
+				q(72712, {	-- The Best We Have
+					["sourceQuests"] = { 74847 },	-- Emberthal Awaits
+					["provider"] = { "n", 199532 },	-- Scalecommander Emberthal
+					["coord"] = { 32.6, 60.3, THE_FORBIDDEN_REACH },
+				}),
+				q(72713, {	-- Inheritance
+					["sourceQuests"] = { 72712 },	-- The Best We Have
+					["provider"] = { "n", 200403 },	-- Talon Damos
+					["coord"] = { 55, 37.2, THE_FORBIDDEN_REACH },
+				}),
+				q(72545, {	-- Creche Fallen
+					["sourceQuests"] = { 72713 },	-- Inheritance
+					["provider"] = { "n", 199531 },	-- Scalecommander Emberthal
+					["coord"] = { 55.1, 35.8, THE_FORBIDDEN_REACH },
+				}),
+				q(73094, {	-- Aiding the Expedition
+					["sourceQuests"] = { 72545 },	-- Creche Fallen
+					["provider"] = { "n", 199531 },	-- Scalecommander Emberthal
+					["coord"] = { 55.1, 35.8, THE_FORBIDDEN_REACH },
+				}),
+				q(72715, {	-- Keeping the Flame at Bay
+					["sourceQuests"] = { 73094 },	-- Aiding the Expedition
+					["provider"] = { "n", 199175 },	-- Scalecommander Emberthal
+					["coord"] = { 61.4, 61.5, THE_FORBIDDEN_REACH },
+				}),
+				q(72714, {	-- An Interdisciplinary Approach
+					["sourceQuests"] = { 73094 },	-- Aiding the Expedition
+					["provider"] = { "n", 199520 },	-- Ebyssian
+					["coord"] = { 61.6, 61.4, THE_FORBIDDEN_REACH },
+				}),
+				q(73137, {	-- Chasing the Flame
+					["sourceQuests"] = {
+						72715,	-- Keeping the Flame at Bay
+						72714,	-- An Interdisciplinary Approach
+					},
+					["provider"] = { "n", 199521 },	-- Scalecommander Emberthal
+					["coord"] = { 58.7, 70.2, THE_FORBIDDEN_REACH },
+				}),
+				q(72717, {	-- A Creche Divided
+					["sourceQuests"] = { 73137 },	-- Chasing the Flame
+					["provider"] = { "n", 199538 },	-- Scalecommander Emberthal
+					["coord"] = { 74.3, 36.9, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(204182),	-- Cloak of Dark Descent
+					},
+				}),
+				q(73156, {	-- Return to Viridia
+					["sourceQuests"] = { 72717 },	-- A Creche Divided
+					["provider"] = { "n", 199539 },	-- Scalecommander Emberthal
+					["coord"] = { 76.6, 38.6, THE_FORBIDDEN_REACH },
+				}),
 			}),
 			--
 			q(74359, {	-- Plunder Siege
@@ -306,6 +309,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
 			}),
 			q(73190, {	-- Toxic Infestation
+				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
+				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+			}),
+			q(73194, {	-- PTR:Up Close and Personal
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
 			}),

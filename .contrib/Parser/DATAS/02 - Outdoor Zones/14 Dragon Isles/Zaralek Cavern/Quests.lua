@@ -10,18 +10,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 204252 },	-- Questaniffen
 					["coord"] = { 49.7, 55.3, VALDRAKKEN },
 				}),
-				q(76118, {
-					["name"] = "Talk with Warthion?",
+				q(72975, {	-- The Land Beneath
+					["sourceQuests"] = { 72717 },	-- A Creche Divided
+					["provider"] = { "n", 201401 },	-- Hadexian
+					["coord"] = { 51.3, 35.2, VALDRAKKEN },
+				}),
+				q(75456, {	-- News From Beneath
+					["sourceQuests"] = { 72717 },	-- A Creche Divided
+					["provider"] = { "n", 200277 },	-- Ebyssian
+					["coord"] = { 76.8, 38.2, THE_FORBIDDEN_REACH },
+				}),
+				q(76118, {	-- Accept Book from Wrathion
+					["name"] = "Accept Book from Wrathion",
+					["provider"] = { "n", 201284 },	-- Wrathion
 					["coord"] = { 62.4, 42.7, VALDRAKKEN },
 					["g"] = {
 						i(206033),	-- Untranslated Obsidian Tome
 					},
 				}),
-				q(72975, {	-- The Land Beneath: Zaralek Cavern!
-					["maps"] = { VALDRAKKEN },
-				}),
 				q(72976, {	-- A Crack in the World
-					["sourceQuests"] = { 72975 },	-- The Land Beneath: Zaralek Cavern!
+					["sourceQuests"] = {
+						72975,	-- The Land Beneath
+						75456,	-- News From Beneath
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 201281 },	-- Ebyssian
 					["coord"] = { 61.4, 42.3, VALDRAKKEN },
 				}),
@@ -102,7 +114,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 56.9, 55.7, ZARALEK_CAVERN },
 				}),
 				q(72974, {	-- Welcome to the City of Smells
-					["sourceQuests"] = { 72973 },	-- Follow Your Nose
+					["sourceQuests"] = { 72973 },	-- Smells Like Loamm
 					["provider"] = { "n", 200054 },	-- Elder Honeypelt
 					["coord"] = { 57.0, 55.8, ZARALEK_CAVERN },
 					["g"] = {
@@ -119,9 +131,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 				}),
 				q(75644, {	-- Six Hundred Feet Under
-					["sourceQuests"] = { 75643 },	-- Orientation: Loamm Niffen
+					["sourceQuests"] = {
+						75643,	-- Orientation: Loamm Niffen
+						72974	-- Welcome to the City of Smells
+					},
 					["provider"] = { "n", 200052 },	-- Aurantia
 					["coord"] = { 54.6, 54.7, ZARALEK_CAVERN },
+					["g"] = {
+						spell(408876),	-- Zaralek Cavern World Quests
+					},
 				}),
 					-- Chapter 2
 				q(74334, {	-- Future Aspects
@@ -335,11 +353,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 201784 },	-- Ebyssian
 					["coord"] = { 56.1, 54.5, ZARALEK_CAVERN },
 					["g"] = {
+						i(205989),	-- Symbol of Friendship
 						i(204600),	-- Bequeathed Cowl
 						i(204608),	-- Bestowed Greathelm
 						i(204584),	-- Endowed Hood
 						i(204592),	-- Inherited Mask
-						spell(408876),	-- Zaralek Cavern World Quests
 					},
 				}),
 					-- Chapter 4 --
@@ -494,15 +512,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204682),	-- Enchanted Wyrm's Shadowflame Crest
 					},
 				}),
-
-					-- Unknown --
-				q(76101, {	-- Tougher Down Under
-					--["sourceQuests"] = { 72973 },	--
-					["provider"] = { "n", 204522 },	-- Aurantia
-					["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
-				}),
 			}),
 				-- Teaches New System --
+			q(76101, {	-- Tougher Down Under
+				["sourceQuests"] = { 72973 },	-- Smells Like Loamm
+				["provider"] = { "n", 204522 },	-- Aurantia
+				["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
+			}),
 			q(72658, {	-- Flightstones
 				["sourceQuests"] = { 76101 },	-- Tougher Down Under
 				["provider"] = { "n", 203404 },	-- Vaskarn
@@ -529,7 +545,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204075),	-- Whelpling's Shadowflame Crest Fragment
 				},
 			}),
-			q(75641, {	-- The Power of the Whole
+				--
+			q(75641, {	-- Power Unified
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
 				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
 				["g"] = {
@@ -548,7 +566,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 200055 },	-- Citros
 				["coord"] = { 57.3, 55.9, ZARALEK_CAVERN },
 			}),
-			q(72880, {	-- Smells like Kith Spirit
+			q(72880, {	-- Incense Gratification
 				["sourceQuests"] = { 72879 },	-- Smells like Kith Spirit
 				["provider"] = { "n", 200055 },	-- Citros
 				["coord"] = { 56.8, 54.1, ZARALEK_CAVERN },
@@ -639,7 +657,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 				-- Glimmerogg Questline --
 			q(73707, {	-- TICKET: Glimmerogg Games
-				["sourceQuests"] = { 72979 },	-- The Earth Gives Way 
+				["sourceQuests"] = { 72979 },	-- The Earth Gives Way
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
 				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 				["isBreadcrumb"] = true,
