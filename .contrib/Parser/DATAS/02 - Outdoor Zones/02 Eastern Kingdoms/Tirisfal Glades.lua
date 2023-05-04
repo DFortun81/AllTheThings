@@ -1058,12 +1058,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(24990, {	-- Darkhound Pounding
 					["qg"] = 10665,	-- Junior Apothecary Holland
-					["sourceQuests"] = {
+					["sourceQuests"] = 24989,	-- Return to the Magistrate
 						24974,	-- Ever So Lonely
 						25038,	-- Gordo's Task
 						24977,	-- Johaan's Experiment
 						24980,	-- The Scarlet Palisade
-					},
+						24976,	-- Variety is the Spice of Death
 					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
