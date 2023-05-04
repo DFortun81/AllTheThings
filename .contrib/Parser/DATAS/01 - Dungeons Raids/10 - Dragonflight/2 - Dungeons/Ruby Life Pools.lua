@@ -10,16 +10,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 		},
 		["g"] = {
 			-- Last Boss (any difficulty)
-			n(DROPS, sharedData({
-				["crs"] = {
-					190484,	-- Kyrakka
-					190485,	-- Erkhart Stormvein
-				},
-			},{
+			n(190485, {	-- Erkhart Stormvein
 				i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
 				i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
 				i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
-			})),
+			}),
 			n(MYTHIC_PLUS, {
 				i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
 			}),
