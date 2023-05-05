@@ -208,9 +208,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 					i(197369, { -- Renewed Proto-Drake: Brown Hair
 						["cost"] = {
-							{"c", DRAGON_SUPPLIES, 50},
-						["timeline"] = {ADDED_10_1_0},
-						}}),
+							{"c", DRAGON_SUPPLIES, 50 },
+						},
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 						-- RENOWN 19 --
 					i(198728, {	-- Explorer's League Banner (TOY!)
 						["cost"] = {

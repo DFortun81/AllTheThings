@@ -1059,10 +1059,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24990, {	-- Darkhound Pounding
 					["qg"] = 10665,	-- Junior Apothecary Holland
 					["sourceQuests"] = {
-						24989,	-- Return to the Magistrate
 						24974,	-- Ever So Lonely
 						25038,	-- Gordo's Task
 						24977,	-- Johaan's Experiment
+						24989,	-- Return to the Magistrate
 						24980,	-- The Scarlet Palisade
 						24976,	-- Variety is the Spice of Death
 					},
