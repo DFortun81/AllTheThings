@@ -701,7 +701,6 @@ i(204070);	-- Magma Crystal
 i(204792);	-- Nightlight Conkerbell Sample
 i(202180);	-- Pipsee Cheese Snack
 i(205217);	-- Sharpbeak's Feed
-i(205980);	-- Snail Lasso
 i(203442);	-- Snail Slime
 i(204069);	-- Sulfuric Crystal
 i(204713);	-- Sundered Flame Expedition Notes

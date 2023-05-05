@@ -42,6 +42,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75476, true),
 					i(205315),	-- Colossian Cuirass
+					i(205330),	-- Signet of Colossal Mastery
 					i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)
 				},
 			}),

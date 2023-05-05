@@ -560,6 +560,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 200054 },	-- Elder Honeypelt
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
+				["g"] = {
+					i(205980),	-- Snail Lasso
+				},
 			}),
 			q(72879, {	-- Smells like Kith Spirit
 				["sourceQuests"] = { 72878 },	-- Slime Time Live
@@ -809,7 +812,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
 		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
-
+		q(75642),	-- Unknown Account-Wide trigger when zoning into Dragon Isles for first time on an alt
 
 		q(75658),	-- WQ Unlock?
 		--

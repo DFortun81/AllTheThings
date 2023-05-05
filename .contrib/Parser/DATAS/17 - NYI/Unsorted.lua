@@ -223,7 +223,6 @@ root(ROOTS.Unsorted, {
 				i(205323),	-- Rock-Lined Pauldrons
 				i(205324),	-- Moth Queen Mantle
 				i(205325),	-- Crystal Wing Shield
-				i(205330),	-- Signet of Colossal Mastery
 				i(205331),	-- Zskorran Cleaver
 				i(205332),	-- Fist of the Demolisher
 				i(205333),	-- Obsidian Amulet of Transmutation
