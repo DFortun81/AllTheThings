@@ -1322,7 +1322,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						851,    -- Cutlass
 						922,    -- Dacian Falx
 						2024,    -- Espadon
-						2528,    -- falchion
+						2528,    -- Falchion
 						2207,    -- Jambiya
 						2209,    -- Kris
 						923,    -- Longsword
@@ -1331,7 +1331,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2534,    -- Rondel
 						2027,    -- Scimitar
 						2521,    -- Flamberge
-						2529,    -- zweihander
+						2529,    -- Zweihander
 					}},
 				}),
 				n(5123, {	-- Bretta Goldfury
@@ -1544,12 +1544,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						-- added all
-						2520,    -- broadsword
-						2528,    -- falchion
-						2521,    -- flamberge
-						2526,    -- gauche
-						2534,    -- rondel
-						2529,    -- zweihander
+						2520,    -- Broadsword
+						2528,    -- Falchion
+						2521,    -- Flamberge
+						2526,    -- Main Gauche
+						2534,    -- Rondel
+						2529,    -- Zweihander
 					}},
 				}),
 				n(5155, {	-- Ingrys Stonebrow
@@ -1978,7 +1978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						15904,    -- Deadly Fist Blades
 						15808,    -- Fine Light Crossbow
 						15809,    -- Heavy Crossbow
-						2511,    -- Hunters Boomstick
+						2511,    -- Hunter's Boomstick
 						15807,    -- Light Crossbow
 						2509,    -- Ornate Blunderbuss
 					}},

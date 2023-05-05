@@ -18,15 +18,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 50.6, 49.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["sym"] = {{"select","itemID",
-					2130,	-- club
+					2130,	-- Club
 					851,	-- Cutlass
-					2139,	-- dirk
-					927,	-- double axe
-					2028,	-- hammer
-					2134,	-- hand axe
-					852,	-- mace
+					2139,	-- Dirk
+					927,	-- Double Axe
+					2028,	-- Hammer
+					2134,	-- Hand Axe
+					852,	-- Mace
 					2027,	-- Scimitar
-					2131,	-- shortsword
+					2131,	-- Shortsword
 				}},
 				["g"] = {
 					i(15905),	-- Brass Knuckles

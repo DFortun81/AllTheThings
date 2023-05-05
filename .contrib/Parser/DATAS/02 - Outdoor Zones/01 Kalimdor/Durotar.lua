@@ -2901,7 +2901,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(136584),	-- Dagger of the Horde Vanguard
 						i(136587),	-- Poleaxe of the Horde Vanguard
 						i(136588),	-- Quickblade of the Horde Vanguard
-						i(136589),	-- Battle mace of the Horde Vanguard
+						i(136589),	-- Battle Mace of the Horde Vanguard
 						i(136590),	-- Staff of the Horde Vanguard
 						i(136595),	-- Mageblade of the Horde Vanguard
 						i(136591),	-- Waraxe of the Horde Vanguard

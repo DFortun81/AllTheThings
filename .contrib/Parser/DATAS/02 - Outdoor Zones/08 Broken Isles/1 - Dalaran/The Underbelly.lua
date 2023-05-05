@@ -79,7 +79,7 @@ _.Zones =
 							851,	-- Cutlass
 							922,	-- Dacian Falx
 							2024,	-- Espadon
-							2528,	-- falchion
+							2528,	-- Falchion
 							2207,	-- Jambiya
 							2209,	-- Kris
 							923,	-- Longsword

@@ -6990,31 +6990,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 					-- added all
-						i(926),		-- battle axe
+						i(926),		-- Battle Axe
 						i(2025),	-- Bearded Axe
 						i(1198),	-- Claymore
 						i(2029),	-- Cleaver
-						i(851),		-- cutlass
-						i(922),		-- dacian falx
-						i(927),		-- double axe
-						i(2024),	-- espadon
-						i(925),		-- flail
-						i(1197),	-- giant mace
-						i(2030),	-- gnarled staff
-						i(2028),	-- hammer
-						i(853),		-- hatchet
-						i(15811),	-- heavy spear
-						i(2207),	-- jambiya
-						i(2209),	-- kris
-						i(923),		-- longsword
-						i(928),		-- long staff
-						i(852),		-- mace
-						i(924),		-- maul
-						i(2208),	-- poniard
-						i(854),		-- quarter staff
-						i(2027),	-- scimitar
-						i(2026),	-- rock hammer
-						i(15810),	-- short spear
+						i(851),		-- Cutlass
+						i(922),		-- Dacian Falx
+						i(927),		-- Double Axe
+						i(2024),	-- Espadon
+						i(925),		-- Flail
+						i(1197),	-- Giant Mace
+						i(2030),	-- Gnarled Staff
+						i(2028),	-- Hammer
+						i(853),		-- Hatchet
+						i(15811),	-- Heavy Spear
+						i(2207),	-- Jambiya
+						i(2209),	-- Kris
+						i(923),		-- Longsword
+						i(928),		-- Long Staff
+						i(852),		-- Mace
+						i(924),		-- Maul
+						i(2208),	-- Poniard
+						i(854),		-- Quarter Staff
+						i(2027),	-- Scimitar
+						i(2026),	-- Rock Hammer
+						i(15810),	-- Short Spear
 						i(1196),	-- Tabar
 					},
 				}),
@@ -7023,7 +7023,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2520),	-- Broadsword
-						i(2528),	-- falchion
+						i(2528),	-- Falchion
 						i(2526),	-- Main Gauche
 						i(2534),	-- Rondel
 					},
@@ -7507,7 +7507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3024),	-- Bkp 2700 Enforcer
 						i(3027),	-- Heavy Recurve Bow
 						i(2506),	-- Hornwood Recurve Bow
-						i(2511),	-- Hunters Boomstick
+						i(2511),	-- Hunter's Boomstick
 						i(2507),	-- Laminated Recurve Bow
 						i(3023),	-- Large Bore Blunderbuss
 						i(2509),	-- Ornate Blunderbuss
@@ -7584,27 +7584,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 					-- added all
-						926,    -- battle axe
+						926,    -- Battle Axe
 						2025,    -- Bearded Axe
 						2029,    -- Cleaver
 						1198,    -- Claymore
-						851,    -- cutlass
-						922,    -- dacian falx
-						927,    -- double axe
-						2024,    -- espadon
-						925,    -- flail
-						2030,    -- gnarled staff
-						1197,    -- giant mace
-						853,    -- hatchet
-						2207,    -- jambiya
-						2209,    -- kris
-						928,    -- long staff
-						852,    -- mace
-						924,    -- maul
-						2208,    -- poniard
-						854,    -- quarter staff
-						2026,    -- rock hammer
-						2027,    -- scimitar
+						851,    -- Cutlass
+						922,    -- Dacian Falx
+						927,    -- Double Axe
+						2024,    -- Espadon
+						925,    -- Flail
+						2030,    -- Gnarled Staff
+						1197,    -- Giant Mace
+						853,    -- Hatchet
+						2207,    -- Jambiya
+						2209,    -- Kris
+						928,    -- Long Staff
+						852,    -- Mace
+						924,    -- Maul
+						2208,    -- Poniard
+						854,    -- Quarter Staff
+						2026,    -- Rock Hammer
+						2027,    -- Scimitar
 					}},
 					["groups"] = {
 						i(15808),	-- Fine Light Crossbow
