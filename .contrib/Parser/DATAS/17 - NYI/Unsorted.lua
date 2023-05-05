@@ -197,7 +197,6 @@ root(ROOTS.Unsorted, {
 				i(204901),	-- Firecaller's Focus
 				i(205191),	-- Underlight Globe
 				i(205193),	-- Sturdy Deepflayer Scute
-				i(205195),	-- Drakeforged Magma Charm
 				i(205196),	-- Zaqali Hand Cauldron
 				i(205200),	-- Stirring Twilight Ember
 				i(205201),	-- Smoldering Howler Horn
@@ -217,7 +216,6 @@ root(ROOTS.Unsorted, {
 				i(205304),	-- Snareguard Sash
 				i(205305),	-- Zaralek Arachnid Armbands
 				i(205309),	-- Loyal Attendant's Gaze
-				i(205316),	-- Crystal Stompers
 				i(205317),	-- Crystalpod Gauntlets
 				i(205318),	-- Guardian Golem's Legplates
 				i(205319),	-- Deepflayer Shoulderguards

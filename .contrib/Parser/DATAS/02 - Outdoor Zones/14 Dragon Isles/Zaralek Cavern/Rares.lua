@@ -53,6 +53,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(203320),	-- Winding Slitherdrake: Ears (DM!)
 					i(205200),	-- Stirring Twilight Ember
 					i(205419),	-- Jrumm's Drum (TOY!)
+					i(205195),	-- Drakeforged Magma Charm
 				},
 			}),
 			n(203664, {	-- Emberdusk
@@ -234,6 +235,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205336),	-- Glowing Veridian Necklace
 					i(205327),	-- Shard of the Veridian King
 					i(203345),	-- Winding Slitherdrake: Split Jaw Horns (DM!)
+					i(205316),	-- Crystal Stompers
 				},
 			}),
 		})),
