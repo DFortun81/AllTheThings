@@ -446,11 +446,6 @@ root(ROOTS.Unsorted, {
 				i(202705),	-- Snail Slime
 				i(202875),	-- Snail Lasso
 				i(203229),	-- Snail Slime
-				i(203387),	-- Oddly Familiar Training Weapon
-				i(203388),	-- Gunky Insignia
-				i(203389),	-- Shiny Rock
-				i(203391),	-- Dented Dwarven Pocketwatch
-				i(203392),	-- Old Mirror Shard
 				i(203393),	-- Spongy Loamshroom
 				i(203454),	-- Zaqali Equipment
 				i(203707),	-- Water Bucket
@@ -466,7 +461,6 @@ root(ROOTS.Unsorted, {
 				i(204325),	-- Crude Key Fragment
 				i(204326),	-- Strange Artifact
 				i(204327),	-- Titan Machine Part
-				i(204329),	-- Petrified Spider Leg
 				i(204331),	-- Djaradin Pillar Shard
 				i(204347),	-- Pool Contaminant
 				i(204349),	-- Bigger Wrench
@@ -499,7 +493,6 @@ root(ROOTS.Unsorted, {
 				i(205366),	-- Dripping Clay Pot
 				i(205410),	-- Pungent Morsel
 				i(205795),	-- Wriggling Worm
-				i(205797),	-- Filthy Bundle
 				i(205900),	-- Shimmering Draconic Gem
 				i(205901),	-- Crunchy Beetle
 				i(205902),	-- Deepflayer Claw

@@ -683,6 +683,7 @@ i(205031);	-- Broodmother Venom
 i(204833);	-- Buzzing Orb Core
 i(205030);	-- Crawler Venom
 i(203682);	-- Darkened Elemental Core
+i(203391);	-- Dented Dwarven Pocketwatch
 i(203453);	-- Dragonbone Totem
 i(204437);	-- Drakeforged Armaments
 i(203455);	-- Draketooth Fetish
@@ -691,16 +692,22 @@ i(203396);	-- Displayed Armor Piece
 i(204184);	-- Ebon Eviscerator
 i(204803);	-- Echoed Lurker Flesh
 i(203394);	-- Elementally Charged Orb
+i(205797);	-- Filthy Bundle
 i(203385);	-- Flamesight Rune
 i(205169);	-- Glimmer Mushroom
 i(205179);	-- Glimmerfish Scale
 i(204067);	-- Glowing Crystal
 i(204694);	-- Greater Flamesight Rune
+i(203388);	-- Gunky Insignia
 i(203456);	-- Obsidian Prayer Beads
+i(203392);	-- Old Mirror Shard
 i(204070);	-- Magma Crystal
 i(204792);	-- Nightlight Conkerbell Sample
+i(203387);	-- Oddly Familiar Training Weapon 
+i(204329);	-- Petrified Spider Leg
 i(202180);	-- Pipsee Cheese Snack
 i(205217);	-- Sharpbeak's Feed
+i(203389);	-- Shiny Rock
 i(203442);	-- Snail Slime
 i(204069);	-- Sulfuric Crystal
 i(204713);	-- Sundered Flame Expedition Notes
