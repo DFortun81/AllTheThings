@@ -3,6 +3,8 @@ if GetLocale() ~= "frFR" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+DRAKE_MANUSCRIPTS = "Manuscrit guette-drake";	--TODO: plural
+
 -- General Text
 	L.DESCRIPTION = "\"Sottement, vous avez cherché votre propre perte. Effrontément, vous avez ignoré des pouvoirs au-delà de votre compréhension. Vous vous êtes battus pour envahir le royaume du Collectionneur. Maintenant, il n’y a plus qu’une seule issue : emprunter le chemin solitaire... des damnés.\"";
 	--TODO: L.THINGS_UNTIL = " THINGS UNTIL ";
@@ -315,6 +317,8 @@ local L = app.L;
 		--TODO: L.REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
 		L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6Pouvoirs de gravure runique";
 		L.RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Activez cette option pour suivre l’obtention des pouvoirs de gravure runique.";
+		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t |cffADD8E6"..DRAKE_MANUSCRIPTS;
+		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Enable this option to track "..EXPANSION_NAME9.." "..DRAKE_MANUSCRIPTS;	--TODO
 		--TODO: L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Soulbind Conduits.";
 		--TODO: L.TITLES_CHECKBOX_TOOLTIP = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
 		--TODO: L.TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!\n\nTracked Account Wide by Default.";
@@ -836,7 +840,7 @@ for key,value in pairs({
 			[-970] = "Tier C",										-- Set C
 			[-971] = "Tier D",										-- Set D
 	-- Dragonflight
-		[-1100] = "Manuscrit guette-drake",							-- Drakewatcher Manuscripts	--TODO: plural
+		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
 		[-1101] = "Les Tempêtes Primordiales",						-- Primal Storms
 		[-1102] = "Irion et Sabellian",								-- Wrathion & Sabellian
 		[-1110] = "Expédition du Dracaret",							-- Dragonscale Expedition

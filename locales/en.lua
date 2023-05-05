@@ -10,9 +10,9 @@
 --				This script is called directly after the Core.lua file. 	  --
 --------------------------------------------------------------------------------
 
--- These globals somehow are not available in game despite being in GlobalStrings.lua from wow.tools
 CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "Class Trial";
 CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "Character Boost";
+DRAKE_MANUSCRIPTS = "Drakewatcher Manuscripts";
 
 local name, app = ...;
 app.L = {
@@ -402,8 +402,8 @@ app.L = {
 	["REPUTATIONS_CHECKBOX_TOOLTIP"] = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
 	["RUNEFORGELEGENDARIES_CHECKBOX"] = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6Runecarving Powers";
 	["RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP"] = "Enable this option to track Shadowlands Runecarving Powers.";
-	["DRAKEWATCHERMANUSCRIPTS_CHECKBOX"] = "|T"..app.asset("Expansion_DF")..":0|t |cffADD8E6Drakewatcher Manuscripts";
-	["DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP"] = "Enable this option to track Dragonflight Drakewatcher Manuscripts.";
+	["DRAKEWATCHERMANUSCRIPTS_CHECKBOX"] = "|T"..app.asset("Expansion_DF")..":0|t |cffADD8E6"..DRAKE_MANUSCRIPTS;
+	["DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP"] = "Enable this option to track "..EXPANSION_NAME9.." "..DRAKE_MANUSCRIPTS;
 	["SOULBINDCONDUITS_CHECKBOX"] = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6"..GetSpellInfo(348869);
 	["SOULBINDCONDUITS_CHECKBOX_TOOLTIP"] = "Enable this option to track Shadowlands Soulbind Conduits.";
 	["TITLES_CHECKBOX"] = "|cffADD8E6"..PAPERDOLL_SIDEBAR_TITLES;
@@ -1948,7 +1948,7 @@ app.L = {
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 	-- Dragonflight
-		[-1100] = "Drakewatcher Manuscripts",										-- Drakewatcher Manuscripts
+		[-1100] = DRAKE_MANUSCRIPTS,												-- Drakewatcher Manuscripts
 		[-1101] = "Primal Storms",													-- Primal Storms
 		[-1102] = "Wrathion & Sabellian",											-- Wrathion & Sabellian
 		[-1110] = "Dragonscale Expedition",											-- Dragonscale Expedition

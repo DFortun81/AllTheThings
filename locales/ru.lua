@@ -4,6 +4,8 @@ local app = select(2, ...);
 local L = app.L;
 L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 
+DRAKE_MANUSCRIPTS = "Манускрипты наблюдений за драконами";
+
 -- General Text
 	L.DESCRIPTION = "\"Глупцы! Вы сами нашли свою погибель! Вам никогда не понять, сколь велика сила, потревоженная вами.  Вы сражались отчаянно, чтобы проникнуть в царство Жнеца. Теперь перед вами лежит лишь один путь – путь проклятых.\"";
 	L.THINGS_UNTIL = " ШТУЧЕК ДО ";
@@ -318,6 +320,8 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.REPUTATIONS_CHECKBOX_TOOLTIP = "Включите для отслеживания репутаций.\n\nПосле достижения Превознесения или статуса Лучший друг, будет отмечено как Собрано.\n\nМожет потребоваться ручное обновление коллекции, чтобы засчитать их корректно.";
 		L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6Легендарки ТЗ";
 		L.RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Включите для отслеживания Легендарных предметов Тёмных Земель.";
+		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t |cffADD8E6"..DRAKE_MANUSCRIPTS;
+		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Включите для отслеживания Манускриптов наблюдений за драконами "..EXPANSION_NAME9;
 		L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Включите для отслеживания Проводников Медиумов.";
 		L.TITLES_CHECKBOX_TOOLTIP = "Включите для отслеживания званий.\n\nОни выделяют Вашего персонажа и показывают, как давно Вы играете. Обычно только у новых игроков нет выбранного звания.";
 		L.TOYS_CHECKBOX_TOOLTIP = "Включите для отслеживания игрушек.\n\nБольшинство из них имеют забавные эффекты. Другие же, как игрушечные Камни возвращения, могут быть использованы вместо обычного Камня возвращения и сохранить Вам место в сумке! Они также имеют интересные эффекты... Здорово!\n\nОтслеживается на Весь Аккаунт по умолчанию.";
@@ -825,7 +829,7 @@ for key,value in pairs({
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
 	-- Dragonflight
-		[-1100] = "Манускрипты наблюдений за драконами",			-- Drakewatcher Manuscripts
+		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
 		[-1101] = "Изначальные Бури",								-- Primal Storms
 		[-1102] = "Гневион и Сабеллиан",							-- Wrathion & Sabellian
 		[-1110] = "Драконья экспедиция",							-- Dragonscale Expedition

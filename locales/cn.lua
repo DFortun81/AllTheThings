@@ -3,6 +3,8 @@ if GetLocale() ~= "zhCN" and GetLocale() ~= "zhTW" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+DRAKE_MANUSCRIPTS = "观龙者手稿";
+
 -- General Text
 	L.TITLE = "|cffb4b4ffALL THE THINGS|r";
 	L.AUCTION_TAB = "|cffb4b4ffATT|r";
@@ -318,6 +320,8 @@ local L = app.L;
 		L.REPUTATIONS_CHECKBOX_TOOLTIP = "启用此选项可追踪声望。\n\n一旦你达到了有声望的尊敬或最好的朋友，它将被标记为收藏。\n\n你可能需要手动刷新才能正确更新。";
 		L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6符文铭刻之力";
 		L.RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "启用此选项以追踪暗影国度的符文铭刻之力。";
+		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t |cffADD8E6"..DRAKE_MANUSCRIPTS;
+		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Enable this option to track "..EXPANSION_NAME9.." "..DRAKE_MANUSCRIPTS;	--TODO
 		L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "启用此选项来追踪暗影国度灵魂羁绊的导灵器。";
 		L.TITLES_CHECKBOX_TOOLTIP = "启用此选项可追踪头衔。\n\n这些可以让你的角色脱颖而出，看起来你已经玩了一段时间。通常只有新玩家没有称号。";
 		L.TOYS_CHECKBOX_TOOLTIP = "启用此选项可追踪玩具。\n\n这些玩具中的大多数玩具都有趣。其他的，如炉石玩具，可以用来代替你的初始炉石，并可以为你节省一个背包！他们也有有趣的效果…很好！\n\n默认情况下追踪账号通用。";
@@ -846,7 +850,7 @@ for key,value in pairs({
 			[-970] = "组 C",											-- Set C
 			[-971] = "组 D",											-- Set D
 	-- Dragonflight
-		[-1100] = "观龙者手稿",											-- Drakewatcher Manuscripts
+		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
 		[-1101] = "原始风暴",											-- Primal Storms
 		[-1102] = "拉希奥和萨贝里安",										-- Wrathion & Sabellian
 		[-1110] = "龙鳞探险队",											-- Dragonscale Expedition

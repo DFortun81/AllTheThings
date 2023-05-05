@@ -3,6 +3,8 @@ if GetLocale() ~= "koKR" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+DRAKE_MANUSCRIPTS = "비룡감시자 필사본";	--TODO: plural
+
 -- General Text
 	--TODO: L.DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	--TODO: L.THINGS_UNTIL = " THINGS UNTIL ";
@@ -316,6 +318,8 @@ local L = app.L;
 		--TODO: L.REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
 		--TODO: L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6Runecarving Powers";
 		--TODO: L.RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Runecarving Powers.";
+		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t |cffADD8E6"..DRAKE_MANUSCRIPTS;
+		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Enable this option to track "..EXPANSION_NAME9.." "..DRAKE_MANUSCRIPTS;	--TODO
 		--TODO: L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Soulbind Conduits.";
 		--TODO: L.TITLES_CHECKBOX_TOOLTIP = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
 		--TODO: L.TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!\n\nTracked Account Wide by Default.";
@@ -837,7 +841,7 @@ for key,value in pairs({
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
 	-- Dragonflight
-		[-1100] = "비룡감시자 필사본",										-- Drakewatcher Manuscripts	--TODO: plural
+		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
 		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
 		[-1102] = "래시온과 사벨리안",										-- Wrathion & Sabellian
 		[-1110] = "용비늘 원정대",										-- Dragonscale Expedition
