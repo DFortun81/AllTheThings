@@ -560,6 +560,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 200054 },	-- Elder Honeypelt
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
+				["g"] = {
+					i(205980),	-- Snail Lasso
+				},
 			}),
 			q(72879, {	-- Smells like Kith Spirit
 				["sourceQuests"] = { 72878 },	-- Slime Time Live
@@ -782,6 +785,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205254),	-- Honoary Explorer's Compass
 				},
 			}),
+			q(74495, {	-- The Tale of Hraxian
+				["description"] = "Available on next day after Dragonscale Camp quest chain finished.",
+				["sourceQuests"] = { 73045 },	-- Stain Removal
+				["provider"] = { "n", 200298 },	-- Veritistrasz
+				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
+			}),
+			q(74994, {	-- Hraxian's Unbreakable Will
+				["sourceQuests"] = { 74495 },	-- The Tale of Hraxian
+				["provider"] = { "n", 200298 },	-- Veritistrasz
+				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
+				["g"] = {
+					i(204220),	-- Hraxian's Unbreakable Will
+				},
+			}),
 
 				-- Misc --
 			q(75232, {	-- Fallen Effects
@@ -793,6 +810,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 203378 },	-- Gorgul
 				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
+				["g"] = {
+					i(204714),	-- Satchel of Healing Spores
+					i(204728),	-- Friendship Censer
+					i(204797),	-- Djaradin Boasting Tablets
+					i(204805),	-- Suspended Sulfuric Droplet
+					i(204810),	-- Drogbar Rocks
+					i(204811),	-- Drogbar Stones
+				},
 			}),
 		}),
 	}),
@@ -801,7 +826,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
 		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
-
+		q(75642),	-- Unknown Account-Wide trigger when zoning into Dragon Isles for first time on an alt
 
 		q(75658),	-- WQ Unlock?
 		--
@@ -828,5 +853,16 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75420),    -- Voraxian
 		-- RP after Stain Removal (73045)
 		q(75219),	-- Voraxian
+		-- Talk with Veritistrasz during (74495)
+		q(74773),    -- 1 (optional) dialog
+		q(74776),    -- after he finished optional gialog
+		q(74777),    -- 1 (quest) dialog
+		q(74778),    -- 2 (optional) dialog
+		q(74779),    -- 2 (quest) dialog
+		q(74789),    -- 3 (optional) dialog
+		q(74780),    -- 3 (quest) dialog
+		q(74781),    -- 4 (quest) dialog
+		q(74782),    -- 5 (quest) dialog
+		q(74788),    -- 6 (quest) dialog
 	}),
 }));

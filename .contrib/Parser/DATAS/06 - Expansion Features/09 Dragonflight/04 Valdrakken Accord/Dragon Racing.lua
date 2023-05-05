@@ -28,6 +28,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
 					i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (DM!)
+					i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
 				})),
 				i(200609),	-- Dragon Racing Purse - First Place
 				i(200610),	-- Dragon Racing Purse - Second Place

@@ -25,6 +25,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 30.0, 41.9, ZARALEK_CAVERN },
 				["questID"] = 73706,
 			}),
+			o(392591, {	-- Chest of the Flights
+				["description"] = "Need to click in order Red - Black - Blue - Yellow - Green to open chest.",
+				["coord"] = { 55.9, 3.1, ZARALEK_CAVERN },
+				["questID"] = 75187,
+			}),
 			o(388896, {	-- Crystal-encased Chest
 				["description"] = "Interact with the purple and yellow crystals to unlock the chest.",
 				["coords"] = {
@@ -194,7 +199,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			o(389111, {	-- Waterlogged Bundle
 				["coord"] = { 62.1, 55.3, ZARALEK_CAVERN },
 				["questID"] = 75015,
-				["repeatable"] = true,
+				["isDaily"] = true,
 				["g"] = {
 					i(205340),	-- Formula: Enchanted Aspect's Shadowflame Crest (RECIPE!)
 					i(205338),	-- Formula: Enchanted Whelpling's Shadowflame Crest (RECIPE!)

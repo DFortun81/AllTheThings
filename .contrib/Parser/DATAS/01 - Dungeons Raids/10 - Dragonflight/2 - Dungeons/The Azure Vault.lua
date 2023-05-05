@@ -12,12 +12,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 			2077,	-- Crystal Chambers
 		},
 		["g"] = {
-			n(DROPS, sharedData({
-				["crs"] = { 186738 },	-- Umbrelskul
-			},{
+			n(186738, {	-- Umbrelskul
 				i(197127),	-- Highland Drake: Grand Thorn Horns (DM!)
 				i(197140),	-- Highland Drake: Small Spotted Pattern (DM!)
-			})),
+			}),
 			n(QUESTS, {
 				q(71155, {	-- The Azure Vaults
 					--["sourceQuests"] = { }, -- TODO

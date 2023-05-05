@@ -2617,6 +2617,7 @@ local IconMonthFilterMappings = {
 	[235481] = 1011,	-- Pirate's Day
 	[235442] = 1000,	-- Brewfest
 	[235474] = 1008,	-- Midsummer
+	[235444] = 1001,	-- Children's Week (tested)
 	[235445] = 1001,	-- Children's Week (tested)
 	[307365] = 1002,	-- Day of the Dead
 	[235448] = 1012,	-- Darkmoon Faire
@@ -2626,6 +2627,7 @@ local IconMonthFilterMappings = {
 	-- Timewalking
 	[1129673] = 1016,	-- Timewalking BC (tested)
 	[1129683] = 1016,	-- Timewalking
+	[1129685] = 1016,	-- Timewalking WotLK (tested)
 	[1129686] = 1016,	-- Timewalking
 	[1304688] = 1016,	-- Timewalking
 	[1530590] = 1016,	-- Timewalking

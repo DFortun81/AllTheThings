@@ -15,12 +15,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 				}),
 			}),
 			-- Last Boss (any difficulty)
-			n(DROPS, sharedData({
-				["crs"] = { 186121 },	-- Decatriarch Wratheye
-			},{
+			n(186121, {	-- Decatriarch Wratheye
 				i(197396),	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
 				i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
-			})),
+			}),
 			n(QUESTS, {
 				q(66211, {	-- Brackenhide Hollow: To the Source
 					["sourceQuests"] = { 65849 },	-- To Iskaara

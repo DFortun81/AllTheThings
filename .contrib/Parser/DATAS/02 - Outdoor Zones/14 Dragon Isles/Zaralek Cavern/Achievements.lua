@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
 			}),
 			ach(17511, {	-- Dragon Glyphs: Nal ks'kol
-				["coord"] = { 62.6, 73.3, ZARALEK_CAVERN },
+				["coord"] = { 62.6, 70.4, ZARALEK_CAVERN },
 			}),
 			ach(17514, {	-- Dragon Glyphs: Slitherdrake Roost
 				["coord"] = { 55.3, 27.9, ZARALEK_CAVERN },
@@ -494,7 +494,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["_quests"] = { 73697 },
 				}),
 				crit(2, {	-- Blazing Shadowflame Chest
-					-- TODO: ["_quests"] = {  },
+					["_quests"] = { 72986 },
 				}),
 				crit(3, {	-- Bloody Body
 					["_quests"] = { 75232 },
@@ -503,7 +503,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["_quests"] = { 73706 },
 				}),
 				crit(5, {	-- Chest of the Flights
-					-- TODO: ["_quests"] = {  },
+					["_quests"] = { 75187 },
 				}),
 				crit(6, {	-- Crystal-Encased Chest
 					["_quests"] = { 74986 },

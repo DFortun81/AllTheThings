@@ -63,6 +63,7 @@ _.Zones =
 					}),
 					p(1582, {	-- Zangar Crawler
 						["crs"] = { 88466 },	-- Zangar Crawler
+						["description"] = "Can be found on the Darktide Roost shoreline and NW Elodor in Shadowmoon, as well as around 73, 34 in Spires of Arak.",
 					}),
 				},
 			})),

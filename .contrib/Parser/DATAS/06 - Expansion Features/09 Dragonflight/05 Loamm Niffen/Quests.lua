@@ -82,6 +82,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(205255),	-- Niffen Diggin' Mitts (TOY!)
 				},
 			}),
+				-- RENOWN 7 --
+			q(75725, {	-- Off to the Track
+				["minReputation"] = { 2564, 7 },	-- Loamm Niffen Renown 7
+				["provider"] = { "n", 205127 },	-- Newsy
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
 
 				-- Unsorted (which renown level?) --
 			q(75721, {

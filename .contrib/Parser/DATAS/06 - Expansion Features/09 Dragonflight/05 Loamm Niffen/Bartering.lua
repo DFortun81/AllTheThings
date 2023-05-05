@@ -55,6 +55,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 				q(75307, {	-- Road to Season City
+					["requireSkill"] = COOKING,
 					["cost"] = {
 						{ "i", 197793, 40 },	-- 40x Yusa's Hearty Stew
 						{ "i", 197794, 5 },		-- 5x Grand Banquet of the Kalu'ak

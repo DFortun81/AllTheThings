@@ -785,6 +785,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36696),	-- Graced Scepter
 			i(37805),	-- Melia's Magnificent Scepter
 			i(37808),	-- Dragonjaw Mauler
+			i(36505, {	-- Frosted Steel Mallet
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+			}),
 			i(36493, {	-- Furbolg Truncheon
 				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),

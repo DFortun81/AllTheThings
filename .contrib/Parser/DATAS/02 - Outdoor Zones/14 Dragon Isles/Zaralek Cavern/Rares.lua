@@ -42,6 +42,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75476, true),
 					i(205315),	-- Colossian Cuirass
+					i(205330),	-- Signet of Colossal Mastery
 					i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)
 				},
 			}),
@@ -50,8 +51,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75352,	-- Old QuestID: 75564
 				["g"] = {
 					bo(75353, true),
+					i(203320),	-- Winding Slitherdrake: Ears (DM!)
 					i(205200),	-- Stirring Twilight Ember
-					--i(205419),	-- Jrumm's Drum (TOY!)
+					i(205419),	-- Jrumm's Drum (TOY!)
+					i(205195),	-- Drakeforged Magma Charm
 				},
 			}),
 			n(203664, {	-- Emberdusk
@@ -78,6 +81,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75295,	-- Old QuestID: 75552
 				["g"] = {
 					bo(75296, true),
+					i(203334),	-- Winding Slitherdrake: Curled Horns (DM!)
+					i(205321),	-- Brimstone Bracers
 					i(205291),	-- Garrison General's Cape
 				},
 			}),
@@ -113,6 +118,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75334, true),
 					i(205203),	-- Cobalt Shalewing (MOUNT!)
 					i(205292),	-- Karokta's Mane
+					i(205147),	-- Ridged Shalewing	(PET!)
 					i(205192),	-- Volatile Crystal Shard
 					i(203358),	-- Winding Slitherdrake: Small Finned Tail (DM!)
 				},
@@ -133,6 +139,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75322, true),
 					i(205308),	-- Clacking Clawguards
 					i(205686),	-- Clacking Claw
+					i(205343),	-- Crude Seal of Mak'aru
 				},
 			}),
 			n(203462, {	-- Kob'rok
@@ -190,6 +197,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75349, true),
 					i(205463),	-- Skornak's Lava Ball (TOY!)
+					i(203321),	-- Winding Slitherdrake: Curled Cheek Horn
 				},
 			}),
 			n(203480, {	-- Spinmarrow
@@ -209,6 +217,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75360, true),
 					i(205314),	-- Greathelm of the Emissary
 					i(205312),	-- Subterrax's Stout Waistguard
+					i(205328),	-- Earthen Emissasry's Edge
 					i(203338),	-- Winding Slitherdrake: Antler Horns (DM!)
 				},
 			}),
@@ -228,6 +237,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205336),	-- Glowing Veridian Necklace
 					i(205327),	-- Shard of the Veridian King
 					i(203345),	-- Winding Slitherdrake: Split Jaw Horns (DM!)
+					i(205316),	-- Crystal Stompers
 				},
 			}),
 		})),
