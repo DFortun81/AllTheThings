@@ -681,9 +681,6 @@ root(ROOTS.Unsorted, {
 				-- JC
 				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
 			}),
-			filter(TOYS, {
-				i(204220),	-- Hraxian's Unbreakable Will (TOY!)
-			}),
 			n(WEAPONS, {
 				i(204674),	-- Cursed Demonbone Longbow
 				i(204677),	-- Ogre Mining Pick
@@ -715,7 +712,6 @@ root(ROOTS.Unsorted, {
 				q(74480),	--
 				q(74484),	--
 				q(74487),	--
-				q(74495),	-- The Tale of Hraxian
 				q(74500),	--
 				q(74711),	--
 				q(74712),	--
@@ -725,20 +721,9 @@ root(ROOTS.Unsorted, {
 				q(74761),	--
 				q(74762),	--
 				q(74763),	--
-				q(74773),	--
 				q(74774),	-- PTR:More Keys
-				q(74776),	--
-				q(74777),	--
-				q(74778),	--
-				q(74779),	--
-				q(74780),	--
-				q(74781),	--
-				q(74782),	--
-				q(74788),	--
-				q(74789),	--
 				q(74890),	--
 				q(74891),	--
-				q(74994),	-- Hraxian's Unbreakable Will
 				-- 10.0.7.47983
 				q(75034),	--
 				q(75065),	-- Campaign Testing - Dummy Quest

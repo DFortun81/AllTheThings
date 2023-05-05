@@ -785,6 +785,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205254),	-- Honoary Explorer's Compass
 				},
 			}),
+			q(74495, {	-- The Tale of Hraxian
+				["description"] = "Available on next day after Dragonscale Camp quest chain finished.",
+				["sourceQuests"] = { 73045 },	-- Stain Removal
+				["provider"] = { "n", 200298 },	-- Veritistrasz
+				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
+			}),
+			q(74994, {	-- Hraxian's Unbreakable Will
+				["sourceQuests"] = { 74495 },	-- A Tower Yonder
+				["provider"] = { "n", 200298 },	-- Veritistrasz
+				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
+				["g"] = {
+					i(204220),	-- Hraxian's Unbreakable Will
+				},
+			}),
 
 				-- Misc --
 			q(75232, {	-- Fallen Effects
@@ -839,5 +853,16 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75420),    -- Voraxian
 		-- RP after Stain Removal (73045)
 		q(75219),	-- Voraxian
+		-- Talk with Veritistrasz during (74495)
+		q(74773),    -- 1 (optional) dialog
+		q(74776),    -- after he finished optional gialog
+		q(74777),    -- 1 (quest) dialog
+		q(74778),    -- 2 (optional) dialog
+		q(74779),    -- 2 (quest) dialog
+		q(74789),    -- 3 (optional) dialog
+		q(74780),    -- 3 (quest) dialog
+		q(74781),    -- 4 (quest) dialog
+		q(74782),    -- 5 (quest) dialog
+		q(74788),    -- 6 (quest) dialog
 	}),
 }));
