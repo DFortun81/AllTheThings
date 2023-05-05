@@ -4,6 +4,8 @@ local app = select(2, ...);
 local L = app.L;
 
 DRAKE_MANUSCRIPTS = "观龙者手稿";
+TRACK_ACC_WIDE = "|cff00AB00追踪帐号通用|R";
+ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 
 -- General Text
 	L.TITLE = "|cffb4b4ffALL THE THINGS|r";
@@ -298,9 +300,9 @@ DRAKE_MANUSCRIPTS = "观龙者手稿";
 		L.EXTRA_THINGS_LABEL = "额外事物";
 		L.STRANGER_THINGS_LABEL = "陌生事物";
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就。";
-		L.TMOG_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取。\n\n注意: 禁用此选项也会禁用所有采集逻辑，你可以使用此切换来防止在执行重要组内容时出现延迟，请牢记，重新启用后将需要进行计算。\n\n默认情况下追踪账号通用。";
+		L.TMOG_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取。\n\n注意: 禁用此选项也会禁用所有采集逻辑，你可以使用此切换来防止在执行重要组内容时出现延迟，请牢记，重新启用后将需要进行计算。\n\n"..ACC_WIDE_DEFAULT;
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "启用此选项以追踪艾泽里特精华。\n\n默认情况下每个角色都会被追踪。";
-		L.BATTLE_PETS_CHECKBOX_TOOLTIP = "启用此选项可追踪战斗宠物和同伴。这些可以在开放的世界中找到，也可以通过各种地下城和团队中的boss掉落，以及从供应商和声望获取。\n\n认情况下追踪账号通用。";
+		L.BATTLE_PETS_CHECKBOX_TOOLTIP = "启用此选项可追踪战斗宠物和同伴。这些可以在开放的世界中找到，也可以通过各种地下城和团队中的boss掉落，以及从供应商和声望获取。\n\nACC_WIDE_DEFAULT";
 		L.FLIGHT_PATHS_CHECKBOX = "|cffADD8E6飞行路径 / 飞艇";
 		L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "启用此选项以追踪飞行路径和飞艇。\n\n要收藏这些信息，请与每个大陆的飞行点/飞艇船长对话。\n\n注意：由于分阶段技术，你可能必须分阶段到区域的其他敌方，以获得这些兴趣点的开启。";
 		L.FOLLOWERS_CHECKBOX_TOOLTIP = "启用此选项可追踪随从。\n\n即：要塞随从，军团职业大厅随从，争霸艾泽拉斯随从，暗影国度随从。";
@@ -308,8 +310,8 @@ DRAKE_MANUSCRIPTS = "观龙者手稿";
 		L.HEIRLOOMS_UPGRADES_CHECKBOX = "|cffADD8E6+升级";
 		L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "启用此选项可专门追踪单个传家宝升级的收藏情况。\n\n我们都知道暴雪就是喜欢消耗你的金币和灵魂，所以用这个切换来追踪你的金币。";
 		L.ILLUSIONS_CHECKBOX = "|cffADD8E6幻化";
-		L.ILLUSIONS_CHECKBOX_TOOLTIP = "启用此选项以追踪幻化。\n\n这些看起来很酷的幻化效果，你可以应用到你的武器上！\n\n注意：你不是一个幻象，尽管所有的夜之子都这么认为。\n\n默认情况下的追踪账号通用。";
-		L.MOUNTS_CHECKBOX_TOOLTIP = "启用此选项以追踪坐骑。\n\n你可以骑着它们去比跑步更快的地方。谁知道！\n\n默认情况下的追踪账号通用。";
+		L.ILLUSIONS_CHECKBOX_TOOLTIP = "启用此选项以追踪幻化。\n\n这些看起来很酷的幻化效果，你可以应用到你的武器上！\n\n注意：你不是一个幻象，尽管所有的夜之子都这么认为。\n\n"..ACC_WIDE_DEFAULT;
+		L.MOUNTS_CHECKBOX_TOOLTIP = "启用此选项以追踪坐骑。\n\n你可以骑着它们去比跑步更快的地方。谁知道！\n\n"..ACC_WIDE_DEFAULT;
 		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6乐谱/自拍滤镜";
 		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "启用此选项以追踪乐谱和自拍滤镜。\n\n你可以用你的点唱机播放游戏中的音乐并且你的自拍相机玩具为你的自拍收藏特定地点的滤镜。";
 		L.QUESTS_CHECKBOX_TOOLTIP = "启用此选项以追踪任务。\n\n你可以右键单击列表中的任何任务，弹出它们的完整任务链，以显示你的进度和任何先决条件或后续任务。\n\n注意：由于暴雪数据库中每日、每周、每年和世界任务的追踪方式的性质，任务不会被永久追踪。";
@@ -324,7 +326,7 @@ DRAKE_MANUSCRIPTS = "观龙者手稿";
 		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Enable this option to track "..EXPANSION_NAME9.." "..DRAKE_MANUSCRIPTS;	--TODO
 		L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "启用此选项来追踪暗影国度灵魂羁绊的导灵器。";
 		L.TITLES_CHECKBOX_TOOLTIP = "启用此选项可追踪头衔。\n\n这些可以让你的角色脱颖而出，看起来你已经玩了一段时间。通常只有新玩家没有称号。";
-		L.TOYS_CHECKBOX_TOOLTIP = "启用此选项可追踪玩具。\n\n这些玩具中的大多数玩具都有趣。其他的，如炉石玩具，可以用来代替你的初始炉石，并可以为你节省一个背包！他们也有有趣的效果…很好！\n\n默认情况下追踪账号通用。";
+		L.TOYS_CHECKBOX_TOOLTIP = "启用此选项可追踪玩具。\n\n这些玩具中的大多数玩具都有趣。其他的，如炉石玩具，可以用来代替你的初始炉石，并可以为你节省一个背包！他们也有有趣的效果…很好！\n\n"..ACC_WIDE_DEFAULT;
 		L.MINIMAP_BUTTON_CHECKBOX = "显示小地图按钮";
 		L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要查看小地图按钮，请启用此选项。使用此按钮可以快速访问主列表，显示总体收藏进度，并通过右键单击访问设置菜单。\n\n有些人不喜欢混乱。或者，你可以通过在聊天框中键入'/att'来访问主列表。从那里，你可以右键单击标题以进入设置菜单。";
 		L.MINIMAP_BUTTON_STYLE_CHECKBOX = "使用旧小地图风格";
@@ -367,17 +369,17 @@ DRAKE_MANUSCRIPTS = "观龙者手稿";
 		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000需要重新加载|r";
 		L.CLICK_TO_CREATE_FORMAT = "点击创建 %s";
 
-	-- Account Wide Checkboxes
-		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n成就追踪通常是在整个账号通用内进行的，但有一些特定职业和种族的专属成就，你无法在你的主账号上获得。";
-		L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n艾泽里特精华在技术上不能在整个战网内收藏和使用，但如果你只关心收藏你的主角色那么你可能更喜欢在整个战网上追踪它们。";
-		L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n飞行路径追踪对每个角色都非常有用，但是你真的想要在所有50个角色上收藏它们吗？";
-		L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n随从通常是每个角色的，但是你真的想以每周1个的速度在一个角色上收藏243个随从吗？\n\n我想不行，好好先生。";
-		L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n在暴雪的数据库中通常不会在账号通用内跟踪“音乐卷轴和自拍过滤器”，但是我们可以做到这一点。\n\n注意：你只能使用自动点唱机玩具播放音乐或使用你在当前角色上收藏的自拍相机玩具自拍。";
-		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n任务完成通常是每个角色的，但是如果任何一个角色完成了特定的任务，这个任务就会被认为是完成了。";
-		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n在暴雪的数据库中，图纸通常不会被账号通用追踪，但我们可以这样做。\n\n在一个角色上不可能收藏到所有的东西，所以有了这个，你就可以赋予你的小号和他们的专业以意义。";
-		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n声望的成就现在会在暴雪的数据库中追踪账号通用，所以开启这个功能可能是个好主意。";
-		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n启用此功能后如果至少有一个角色学会了灵魂羁绊的导灵器，则将所有角色的灵魂羁绊的导灵器视为收藏。";
-		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n大多数头衔都是在账号通用内进行追踪，但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上。\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号，请切换此选项。";
+	-- Account-Wide Checkboxes
+		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = TRACK_ACC_WIDE.."\n\n成就追踪通常是在整个账号通用内进行的，但有一些特定职业和种族的专属成就，你无法在你的主账号上获得。";
+		L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = TRACK_ACC_WIDE.."\n\n艾泽里特精华在技术上不能在整个战网内收藏和使用，但如果你只关心收藏你的主角色那么你可能更喜欢在整个战网上追踪它们。";
+		L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = TRACK_ACC_WIDE.."\n\n飞行路径追踪对每个角色都非常有用，但是你真的想要在所有50个角色上收藏它们吗？";
+		L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = TRACK_ACC_WIDE.."\n\n随从通常是每个角色的，但是你真的想以每周1个的速度在一个角色上收藏243个随从吗？\n\n我想不行，好好先生。";
+		L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = TRACK_ACC_WIDE.."\n\n在暴雪的数据库中通常不会在账号通用内跟踪“音乐卷轴和自拍过滤器”，但是我们可以做到这一点。\n\n注意：你只能使用自动点唱机玩具播放音乐或使用你在当前角色上收藏的自拍相机玩具自拍。";
+		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = TRACK_ACC_WIDE.."\n\n任务完成通常是每个角色的，但是如果任何一个角色完成了特定的任务，这个任务就会被认为是完成了。";
+		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = TRACK_ACC_WIDE.."\n\n在暴雪的数据库中，图纸通常不会被账号通用追踪，但我们可以这样做。\n\n在一个角色上不可能收藏到所有的东西，所以有了这个，你就可以赋予你的小号和他们的专业以意义。";
+		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = TRACK_ACC_WIDE.."\n\n声望的成就现在会在暴雪的数据库中追踪账号通用，所以开启这个功能可能是个好主意。";
+		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = TRACK_ACC_WIDE.."\n\n启用此功能后如果至少有一个角色学会了灵魂羁绊的导灵器，则将所有角色的灵魂羁绊的导灵器视为收藏。";
+		L.ACCOUNT_WIDE_TITLES_TOOLTIP = TRACK_ACC_WIDE.."\n\n大多数头衔都是在账号通用内进行追踪，但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上。\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号，请切换此选项。";
 
 	-- Filters tab
 		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 |Cff00AB00帐号模式|cffFFFFFF。|r";
