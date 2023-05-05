@@ -32,8 +32,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(QUESTS, sharedData({
-				["sourceQuests"] = { 74787 },  -- Come Snail Away
-				["provider"] = { "n", 201752 },  -- Briggul
+				["sourceQuests"] = { 74787 },	-- Come Snail Away
+				["provider"] = { "n", 201752 },	-- Briggul
 				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
 			}, {
 				q(74948),	-- Snailspiration: Amethyst Softshell
@@ -53,8 +53,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(74968),	-- Snailspiration: Zoom
 			})),
 			n(QUESTS, sharedData({
-				["sourceQuests"] = { 74787 },  -- Come Snail Away
-				["provider"] = { "n", 201752 },  -- Briggul
+				["sourceQuests"] = { 74787 },	-- Come Snail Away
+				["provider"] = { "n", 201752 },	-- Briggul
 				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
 				["isDaily"] = true,
 			}, {

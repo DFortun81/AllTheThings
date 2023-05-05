@@ -154,7 +154,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			q(67295, { -- That's My Specialty
+			q(67295, {	-- That's My Specialty
 				-- ["sourceQuests"] = { 70126 },	-- A Finishing Touch
 				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["coords"] = {
@@ -165,7 +165,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(191784),	-- Dragon Shard of Knowledge
 				},
 			}),
-			q(67298, { -- The Wonders of the World
+			q(67298, {	-- The Wonders of the World
 				["sourceQuests"] = { 67295 },	-- That's My Specialty
 				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["coords"] = {
@@ -176,7 +176,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(191784),	-- Dragon Shard of Knowledge
 				},
 			}),
-			q(69946, { -- The Master of Their Craft
+			q(69946, {	-- The Master of Their Craft
 				["sourceQuests"] = { 67298 },	-- The Wonders of the World
 				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["coords"] = {
@@ -187,7 +187,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(191784),	-- Dragon Shard of Knowledge
 				},
 			}),
-			q(69979, { -- A Worthy Hunt
+			q(69979, {	-- A Worthy Hunt
 				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
@@ -672,7 +672,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 
 				-- Requires 45 Skill
-				q(66517, { -- A New Source of Weapons
+				q(66517, {	-- A New Source of Weapons
 					["description"] = "Requires 45 Skill.",
 					["provider"] = { "n", 191002 },	-- Dhurrel
 					["coord"] = { 36.8, 63.6, VALDRAKKEN },
@@ -783,7 +783,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				o(380516, {	-- Glimmer of Wisdom
 					["description"] = "Craft a Primal Molten Alloy or a Frostfire Alloy next to the Dim Forge. A sparkle will appear in the deposit box, which you can click to grab the treasure.",
-					["sourceQuests"] = { 70232 }, -- This triggers when crafting the Alloy, which makes the treasure appear.
+					["sourceQuests"] = { 70232 },	-- This triggers when crafting the Alloy, which makes the treasure appear.
 					["coord"] = { 56.4, 19.5, THE_WAKING_SHORES },
 					["questID"] = 70230,
 					["g"] = {
@@ -853,8 +853,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["name"] = "Blacksmithing Drop #1: Fire Elemental",
 					["description"] = "Drops from any Fire Elemental.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = {
-						196168, -- Springs Heater
-						196171, -- Flame Boiler
+						196168,	-- Springs Heater
+						196171,	-- Flame Boiler
 					},
 					["provider"] = { "i", 198966 },	-- Molten Globule
 					["coord"] = { 39.0, 48.8, THALDRASZUS },
@@ -1192,7 +1192,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 194838 },	-- Frizz Buzzcrank
 					["coord"] = { 17.7, 21.6, THE_AZURE_SPAN },
 				}),
-				q(70187, { -- Specialized Secrets: Engineering
+				q(70187, {	-- Specialized Secrets: Engineering
 					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 					["provider"] = { "n", 193110 },	-- Khadin
 					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -1297,7 +1297,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			}),
 			n(TREASURES, {
-				o(398133,		-- Bolts and Brass/Handful of Khaz'gorite Bolts 
+				o(398133,		-- Bolts and Brass/Handful of Khaz'gorite Bolts
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 57.7, 73.9, ZARALEK_CAVERN },
 					["questID"] = 75430,
@@ -1483,7 +1483,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 194839 },	-- Hua Greenpaw
 					["coord"] = { 58.4, 50.0, OHNAHRAN_PLAINS },
 				}),
-				q(70190, { -- Specialized Secrets: Herbalism
+				q(70190, {	-- Specialized Secrets: Herbalism
 					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 					["provider"] = { "n", 193110 },	-- Khadin
 					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -1591,7 +1591,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
 					["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
 				}),
-				q(70188, { -- Specialized Secrets: Inscription
+				q(70188, {	-- Specialized Secrets: Inscription
 					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 					["provider"] = { "n", 193110 },	-- Khadin
 					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -1857,7 +1857,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 194841 },	-- Pluutar
 					["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
 				}),
-				q(70189, { -- Specialized Secrets: Jewelcrafting
+				q(70189, {	-- Specialized Secrets: Jewelcrafting
 					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 					["provider"] = { "n", 193110 },	-- Khadin
 					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -2141,7 +2141,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 194842 },	-- Erden
 					["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
 				}),
-				q(70191, { -- Specialized Secrets: Leatherworking
+				q(70191, {	-- Specialized Secrets: Leatherworking
 					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 					["provider"] = { "n", 193110 },	-- Khadin
 					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -2384,7 +2384,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 194843 },	-- Bridgette Holdug
 					["coord"] = { 61.4, 76.9, THALDRASZUS },
 				}),
-				q(70192, { -- Specialized Secrets: Mining
+				q(70192, {	-- Specialized Secrets: Mining
 					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 					["provider"] = { "n", 193110 },	-- Khadin
 					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -2471,7 +2471,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						67700,	-- To the Dragon Isles! [A]
 						65444,	-- To the Dragon Isles! [H]
 					},
-					["provider"] = { "n", 192558 },    -- Toninaar
+					["provider"] = { "n", 192558 },	-- Toninaar
 					["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
 					["lockCriteria"] = { 1, "spellID", 366263},	-- Dragon Isles Skinning
 				}),
@@ -2487,7 +2487,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 194844 },	-- Zenzi
 					["coord"] = { 73.3, 69.7, THE_WAKING_SHORES },
 				}),
-				q(70193, { -- Specialized Secrets: Skinning
+				q(70193, {	-- Specialized Secrets: Skinning
 					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 					["provider"] = { "n", 193110 },	-- Khadin
 					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -2824,7 +2824,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 56.6, 29.2, THALDRASZUS },
 						{ 57.0, 30.6, THALDRASZUS },
 					},
-					["provider"] = { "i", 198978  },	-- Stupidly Effective Stitchery
+					["provider"] = { "i", 198978 },	-- Stupidly Effective Stitchery
 				}),
 				q(70524, {	-- Weekly Tailoring Knowledgepoint #4
 					["name"] = "Tailoring Drop #2: Ohn'ahran Humanoid",
