@@ -52,6 +52,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 32.2, 66.6, MOONGLADE },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if ANYCLASSIC
 				fp(63, {	-- Nighthaven, Moonglade
 					["cr"] = 11800,	-- Silva Fil'naveth <Darnassus Flight Master>
 					["coord"] = { 44.2, 45.2, MOONGLADE },
@@ -64,6 +65,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #endif
 			}),
 			n(QUESTS, {
 				q(26, {	-- A Lesson to Learn [A]
