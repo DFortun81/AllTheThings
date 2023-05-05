@@ -197,6 +197,7 @@ root(ROOTS.Unsorted, {
 				i(204901),	-- Firecaller's Focus
 				i(205191),	-- Underlight Globe
 				i(205193),	-- Sturdy Deepflayer Scute
+				i(205195),	-- Drakeforged Magma Charm
 				i(205196),	-- Zaqali Hand Cauldron
 				i(205200),	-- Stirring Twilight Ember
 				i(205201),	-- Smoldering Howler Horn
@@ -216,6 +217,7 @@ root(ROOTS.Unsorted, {
 				i(205304),	-- Snareguard Sash
 				i(205305),	-- Zaralek Arachnid Armbands
 				i(205309),	-- Loyal Attendant's Gaze
+				i(205316),	-- Crystal Stompers
 				i(205317),	-- Crystalpod Gauntlets
 				i(205318),	-- Guardian Golem's Legplates
 				i(205319),	-- Deepflayer Shoulderguards
@@ -223,6 +225,7 @@ root(ROOTS.Unsorted, {
 				i(205323),	-- Rock-Lined Pauldrons
 				i(205324),	-- Moth Queen Mantle
 				i(205325),	-- Crystal Wing Shield
+				i(205330),	-- Signet of Colossal Mastery
 				i(205331),	-- Zskorran Cleaver
 				i(205332),	-- Fist of the Demolisher
 				i(205333),	-- Obsidian Amulet of Transmutation
@@ -484,7 +487,6 @@ root(ROOTS.Unsorted, {
 				i(204796),	-- Deepflayer Dust
 				i(204800),	-- Scaly Stone Hide
 				i(204801),	-- Gelcap Spores
-				i(204817),	-- Underlight Cocoon Fibers
 				i(204824),	-- Torn Journal Entry
 				i(204830),	-- Shattered Horn Signet
 				i(205187),	-- Artisan's Consortium Flier
@@ -681,6 +683,9 @@ root(ROOTS.Unsorted, {
 				-- JC
 				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
 			}),
+			filter(TOYS, {
+				i(204220),	-- Hraxian's Unbreakable Will (TOY!)
+			}),
 			n(WEAPONS, {
 				i(204674),	-- Cursed Demonbone Longbow
 				i(204677),	-- Ogre Mining Pick
@@ -712,6 +717,7 @@ root(ROOTS.Unsorted, {
 				q(74480),	--
 				q(74484),	--
 				q(74487),	--
+				q(74495),	-- The Tale of Hraxian
 				q(74500),	--
 				q(74711),	--
 				q(74712),	--
@@ -721,9 +727,20 @@ root(ROOTS.Unsorted, {
 				q(74761),	--
 				q(74762),	--
 				q(74763),	--
+				q(74773),	--
 				q(74774),	-- PTR:More Keys
+				q(74776),	--
+				q(74777),	--
+				q(74778),	--
+				q(74779),	--
+				q(74780),	--
+				q(74781),	--
+				q(74782),	--
+				q(74788),	--
+				q(74789),	--
 				q(74890),	--
 				q(74891),	--
+				q(74994),	--
 				-- 10.0.7.47983
 				q(75034),	--
 				q(75065),	-- Campaign Testing - Dummy Quest
