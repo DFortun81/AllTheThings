@@ -796,7 +796,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 200298 },	-- Veritistrasz
 				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
 				["g"] = {
-					i(204220),	-- Hraxian's Unbreakable Will
+					i(204220),	-- Hraxian's Unbreakable Will (TOY!)
 				},
 			}),
 

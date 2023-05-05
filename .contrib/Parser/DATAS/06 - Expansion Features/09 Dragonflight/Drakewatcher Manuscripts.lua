@@ -955,6 +955,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
 			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail (DM!)
+			i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
 		}),
 		header(HEADERS.Item, 194705, {	-- Highland Drake
 			i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
