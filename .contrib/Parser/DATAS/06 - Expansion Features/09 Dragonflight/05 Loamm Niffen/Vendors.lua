@@ -18,7 +18,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 56.5, 55.6, ZARALEK_CAVERN },
 				["g"] = {
 						-- RENOWN 5 --
-					i(203316, {	-- Winding Slitherdrake: Grand Chin Thorn (DM!)
+					i(203310, {	-- Winding Slitherdrake: Grand Chin Thorn (DM!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 150 },
 						},

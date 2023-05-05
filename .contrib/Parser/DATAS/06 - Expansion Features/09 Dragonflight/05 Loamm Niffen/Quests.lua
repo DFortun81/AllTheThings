@@ -68,7 +68,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 205127 },	-- Newsy
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				["g"] = {
-					i(203316),	-- Winding Slitherdrake: Grand Chin Thorn (DM!)
+					i(203310),	-- Winding Slitherdrake: Grand Chin Thorn (DM!)
 					i(203316),	-- Winding Slitherdrake: Large Finned Crest (DM!)
 					i(203327),	-- Winding Slitherdrake: Tan Horns (DM!)
 				},
