@@ -213,6 +213,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["questID"] = 64257,
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["g"] = {
+					i(187103),	-- Everliving Statuette
 					i(187366),	-- Fallen Vault Guardian's Spire
 					i(187391),	-- Yarxhov's Rib-Cage
 				},
