@@ -73,6 +73,7 @@ _.Zones =
 				}),
 				p(1599, {	--  Shadow Sporebat
 					["crs"] = { 88576 },	--  Shadow Sporebat
+					["description"] = "Found only in Zangarra.",
 				}),
 				p(568, {	--  Silkbed Snail
 					["crs"] = { 63001 },	--  Silkbed Snail

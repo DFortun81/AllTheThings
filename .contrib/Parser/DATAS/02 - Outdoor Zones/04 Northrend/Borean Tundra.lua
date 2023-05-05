@@ -219,6 +219,7 @@ root(ROOTS.Zones, {
 					}),
 					p(530, {	-- Oily Slimeling
 						["crs"] = { 62697 },
+						["description"] = "Found in the oil pools from Fizzcrank Airstrip to the Geyser Fields.",
 					}),
 					p(388, {	-- Shore Crab
 						["crs"] = { 61158 },
