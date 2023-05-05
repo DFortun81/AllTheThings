@@ -3047,6 +3047,7 @@ _.ObjectNames = {
 	[392582] = "Defective Survival Pack",
 	[392583] = "Void-Bound Strongbox",
 	[392587] = "Busted Wyrmhole Generator",
+	[392591] = "Chest of the Flights",
 	[392593] = "Inconspicuous Data Miner",
 	[393218] = "Primordial Arcane Cache",
 	[393220] = "Primordial Paint Cache",
