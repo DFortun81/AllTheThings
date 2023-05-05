@@ -24628,7 +24628,7 @@ end
 		-- else
 		local type, info, data1, data2, data3 = strsplit(":", link);
 		-- print(type, info, data1, data2, data3)
-		if type == "garrmission" and info == "ATT" then
+		if type == "addon" and info == "ATT" then
 			-- local op = string.sub(link, 17)
 			-- print("ATT Link",op)
 			-- local type, paramA, paramB = strsplit(":", data);
@@ -24657,7 +24657,7 @@ end
 
 	-- Turns a bit of text into a colored link which ATT will attempt to understand
 	function app:Linkify(text, color, operation)
-		text = "|Hgarrmission:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
+		text = "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
 		-- print("Linkify",text)
 		return text;
 	end
