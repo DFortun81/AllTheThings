@@ -792,7 +792,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
 			}),
 			q(74994, {	-- Hraxian's Unbreakable Will
-				["sourceQuests"] = { 74495 },	-- A Tower Yonder
+				["sourceQuests"] = { 74495 },	-- The Tale of Hraxian
 				["provider"] = { "n", 200298 },	-- Veritistrasz
 				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
 				["g"] = {
