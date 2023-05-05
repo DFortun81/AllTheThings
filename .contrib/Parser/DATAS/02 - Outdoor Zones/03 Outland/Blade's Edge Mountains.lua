@@ -1942,9 +1942,9 @@ root(ROOTS.Zones, {
 							30754,	-- Ancient Bone Mace
 							30749,	-- Draenic Sparring Blade
 							30750,	-- Draenic Warblade
-							30752,	-- Maghari Battleaxe
-							30755,	-- Maghari Fighting Claw
-							30751,	-- Maghari Light Axe
+							30752,	-- Mag'hari Battleaxe
+							30755,	-- Mag'hari Fighting Claw
+							30751,	-- Mag'hari Light Axe
 							11308,	-- Sylvan Shortbow
 							30753,	-- Warphorn Spear
 						}},
@@ -2087,9 +2087,9 @@ root(ROOTS.Zones, {
 							30754,	-- Ancient Bone Mace
 							30749,	-- Draenic Sparring Blade
 							30750,	-- Draenic Warblade
-							30752,	-- Maghari Battleaxe
-							30755,	-- Maghari Fighting Claw
-							30751,	-- Maghari Light Axe
+							30752,	-- Mag'hari Battleaxe
+							30755,	-- Mag'hari Fighting Claw
+							30751,	-- Mag'hari Light Axe
 							30753,	-- Warphorn Spear
 						}},
 						["groups"] = {

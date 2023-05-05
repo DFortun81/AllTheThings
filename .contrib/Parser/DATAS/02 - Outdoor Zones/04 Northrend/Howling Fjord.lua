@@ -2270,8 +2270,8 @@ root(ROOTS.Zones, {
 							i(30771),    -- Heavy Draenic Bracers
 							i(30765),    -- Heavy Draenic Breastplate
 							i(30775),    -- Layered Bone Shield
-							i(30781),    -- Maghari Chain Vest
-							i(30784),    -- Worn Maghari Gauntlets
+							i(30781),    -- Mag'hari Chain Vest
+							i(30784),    -- Worn Mag'hari Gauntlets
 							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),
@@ -2283,8 +2283,8 @@ root(ROOTS.Zones, {
 							i(30771),    -- Heavy Draenic Bracers
 							i(30765),    -- Heavy Draenic Breastplate
 							i(30775),    -- Layered Bone Shield
-							i(30781),    -- Maghari Chain Vest
-							i(30784),    -- Worn Maghari Gauntlets
+							i(30781),    -- Mag'hari Chain Vest
+							i(30784),    -- Worn Mag'hari Gauntlets
 							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),

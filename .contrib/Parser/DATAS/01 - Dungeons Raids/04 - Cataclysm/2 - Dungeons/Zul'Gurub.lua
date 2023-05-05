@@ -712,14 +712,10 @@ root("Instances", tier(CATA_TIER, {
 						i(69818),	-- Giant Sack
 					}),
 					n(52414),	-- Tor-Tun
-					i(69802, {	-- Band of the Gurubashi Berserker
-					}),
-					i(69803, {	-- Gurubashi Punisher
-					}),
-					i(69800, {	-- Spiritguard Drape
-					}),
-					i(69796, {	-- Spiritcaller Cloak
-					}),
+					i(69802),	-- Band of the Gurubashi Berserker
+					i(69803),	-- Gurubashi Punisher
+					i(69800),	-- Spiritguard Drape
+					i(69796),	-- Spiritcaller Cloak
 				}),
 				n(ZONE_DROPS, bubbleDown({ ["timeline"] = { ADDED_10_0_7 }, ["modID"] = 0, }, {
 					i(BLUE_HAKKARI_BIJOU),
