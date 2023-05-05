@@ -242,7 +242,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 						-- Cosmetic
 						i(205421, {	-- Ponzo's Scheming Topper
-							["description"] = "Hat appear when you click dialog option (for lowest price - need to click it few times)",
+							["description"] = "Hat appears when you click dialog options (for the best price - click it a few times)",
 							["cost"] = { { "i", 205188, 249 }, },
 						}),
 					},
