@@ -196,6 +196,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75349, true),
 					i(205463),	-- Skornak's Lava Ball (TOY!)
+					i(203321),	-- Winding Slitherdrake: Curled Cheek Horn
 				},
 			}),
 			n(203480, {	-- Spinmarrow
