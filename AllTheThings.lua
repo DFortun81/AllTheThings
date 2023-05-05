@@ -174,6 +174,7 @@ app.FunctionRunner = app.CreateRunner("default");
 app.DynamicRunner = app.CreateRunner("dynamic");
 app.UpdateRunner = app.CreateRunner("update");
 app.FillRunner = app.CreateRunner("fill");
+app.WaypointRunner = app.CreateRunner("waypoint");
 local function LocalizeGlobal(globalName, init)
 	local val = _G[globalName];
 	if init and not val then
@@ -6787,10 +6788,165 @@ local __TomTomWaypointCache = setmetatable({}, { __index = function(t, mapID)
 	rawset(t, mapID, o);
 	return o;
 end });
-local __TomTomWaypointFirst, __TomTomWaypointCount;
+local __TomTomWaypointCount, __PlottedGroup;
+local function SendCachedCoordsToTomTom()
+	if TomTom then
+		local xnormal;
+		for mapID,c in pairs(__TomTomWaypointCache) do
+			for x,d in pairs(c) do
+				xnormal = x / 1000;
+				for y,datas in pairs(d) do
+					-- Determine the Root and simplify NPC/Object data.
+					-- An NPC/Object can contain all of the other types by reference and don't need individual entries.
+					local root,rootByCreatureID,rootByObjectID = {},{},{};
+					for key,group in pairs(datas) do
+						local creatureID, objectID;
+						if group.npcID or group.creatureID then
+							creatureID = group.npcID or group.creatureID;
+						elseif group.objectID then
+							objectID = group.objectID;
+						else
+							if group.providers then
+								for i,provider in ipairs(group.providers) do
+									if provider[1] == "n" then
+										if provider[2] > 0 then
+											creatureID = provider[2];
+										end
+									elseif provider[1] == "o" then
+										if provider[2] > 0 then
+											objectID = provider[2];
+										end
+									end
+								end
+							end
+							if group.qgs then
+								local count = #group.qgs;
+								if count > 1 and group.coords and #group.coords == count then
+									for i=count,1,-1 do
+										local coord = group.coords[i];
+										if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
+											creatureID = group.qgs[i];
+											break;
+										end
+									end
+									if not creatureID then
+										creatureID = group.qgs[1];
+									end
+								else
+									creatureID = group.qgs[1];
+								end
+							end
+							if group.crs then
+								local count = #group.crs;
+								if count > 1 and group.coords and #group.coords == count then
+									for i=count,1,-1 do
+										local coord = group.coords[i];
+										if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
+											creatureID = group.crs[i];
+											break;
+										end
+									end
+									if not creatureID then
+										creatureID = group.crs[1];
+									end
+								else
+									creatureID = group.crs[1];
+								end
+							end
+						end
+						if creatureID then
+							if not rootByCreatureID[creatureID] then
+								rootByCreatureID[creatureID] = group;
+								tinsert(root, app.CreateNPC(creatureID));
+							end
+						elseif objectID then
+							if not rootByObjectID[objectID] then
+								rootByObjectID[objectID] = group;
+								tinsert(root, app.CreateObject(objectID));
+							end
+						else
+							tinsert(root, group);
+						end
+					end
+
+					local first = root[1];
+					if first then
+						local opt = { from = "ATT" };
+						opt.title = first.text or RETRIEVING_DATA;
+						local displayID = GetDisplayID(first);
+						if displayID then
+							opt.minimap_displayID = displayID;
+							opt.worldmap_displayID = displayID;
+						end
+						if first.icon then
+							opt.minimap_icon = first.icon;
+							opt.worldmap_icon = first.icon;
+						end
+
+						if TomTom.DefaultCallbacks then
+							local callbacks = TomTom:DefaultCallbacks();
+							callbacks.minimap.tooltip_update = nil;
+							callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
+								tooltip:ClearLines();
+								for i,o in ipairs(root) do
+									local lineNumber = tooltip:NumLines() + 1;
+									tooltip:AddLine(o.text);
+									if o.title and not o.explorationID then tooltip:AddLine(o.title); end
+									local key = o.key;
+									if key == "objectiveID" then
+										if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
+									elseif key == "criteriaID" then
+										tooltip:AddLine("Criteria for " .. GetAchievementLink(o.achievementID));
+									else
+										if key == "npcID" then key = "creatureID"; end
+										AttachTooltipSearchResults(tooltip, lineNumber, key .. ":" .. o[o.key], SearchForField, key, o[o.key]);
+									end
+								end
+								tooltip:Show();
+							end
+							callbacks.world.tooltip_update = nil;
+							callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
+							opt.callbacks = callbacks;
+						end
+						TomTom:AddWaypoint(mapID, xnormal, y / 1000, opt);
+					end
+				end
+			end
+		end
+		TomTom:SetClosestWaypoint();
+	elseif C_SuperTrack then
+		-- try to track the first available waypoint in the cache
+		for mapID,c in pairs(__TomTomWaypointCache) do
+			for x,d in pairs(c) do
+				for y,datas in pairs(d) do
+					C_SuperTrack.SetSuperTrackedUserWaypoint(false);
+					C_Map.ClearUserWaypoint();
+					local mapPoint = UiMapPoint.CreateFromCoordinates(mapID or C_Map.GetBestMapForUnit("player") or 1, x/1000, y/1000);
+					-- app.PrintDebug("WP:SuperTrack")
+					-- app.PrintTable(mapPoint)
+					C_Map.SetUserWaypoint(mapPoint);
+					C_SuperTrack.SetSuperTrackedUserWaypoint(true);
+					break;
+				end
+				break;
+			end
+			break;
+		end
+		-- or navigate by active quest
+		if __PlottedGroup.questID and C_QuestLog.IsOnQuest(__PlottedGroup.questID) then
+			__TomTomWaypointCount = -1;
+			C_SuperTrack.SetSuperTrackedQuestID(__PlottedGroup.questID);
+		end
+	end
+	-- no coords actually plotted, notify in chat
+	if __TomTomWaypointCount == 0 then
+		app.print(sformat(L["NO_COORDINATES_FORMAT"], __PlottedGroup.text));
+	end
+end
 local function AddTomTomWaypointCache(coord, group)
 	local mapID = coord[3];
 	if mapID then
+		-- app.PrintDebug("WP:Cache",group.hash)
 		__TomTomWaypointCount = __TomTomWaypointCount + 1;
 		__TomTomWaypointCache[mapID][math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
 	else
@@ -6798,209 +6954,111 @@ local function AddTomTomWaypointCache(coord, group)
 		print("Missing mapID for", group.text, coord[1], coord[2], mapID);
 	end
 end
+local function AddTomTomParentCoord(group)
+	-- app.PrintDebug("WP:ParentChain")
+	local parent = group.sourceParent or group.parent;
+	while parent do
+		-- app.PrintDebug("WP:Parent:",parent.hash)
+		if parent.coords then
+			for _,coord in ipairs(parent.coords) do
+				AddTomTomWaypointCache(coord, parent);
+			end
+			break;
+		end
+		if parent.coord then
+			AddTomTomWaypointCache(parent.coord, parent);
+			break;
+		end
+		parent = parent.sourceParent or parent.parent;
+	end
+end
 local function AddTomTomWaypointInternal(group, depth)
 	if group.visible then
 		if group.plotting then return false; end
 		group.plotting = true;
-		if group.g then
-			depth = depth + 1;
-			for _,o in ipairs(group.g) do
-				AddTomTomWaypointInternal(o, depth);
+		-- app.PrintDebug("WP:depth",depth)
+		-- always plot directly clicked otherwise don't plot saved or inaccessible groups
+		if depth == 0 or (not group.saved and not group.missingSourceQuests) then
+			-- app.PrintDebug("WP:Group",group.hash)
+			if group.coords then
+				for _,coord in ipairs(group.coords) do
+					AddTomTomWaypointCache(coord, group);
+				end
 			end
-			depth = depth - 1;
+			if group.coord then AddTomTomWaypointCache(group.coord, group); end
 		end
-
+		-- also check for first coord(s) on parent chain of plotted group
+		if depth == 0 and __TomTomWaypointCount == 0 then
+			AddTomTomParentCoord(group);
+		end
+		-- sub-groups coords?
+		if group.g then
+			-- app.PrintDebug("WP:SubGroups",group.hash)
+			for _,o in ipairs(group.g) do
+				AddTomTomWaypointInternal(o, depth + 1);
+			end
+		end
+		-- symlink of the group coords?
 		local searchResults = ResolveSymbolicLink(group);
 		if searchResults then
-			depth = depth + 1;
+			-- app.PrintDebug("WP:Sym",group.hash)
 			for _,o in ipairs(searchResults) do
-				AddTomTomWaypointInternal(o, depth);
+				AddTomTomWaypointInternal(o, depth + 1);
 			end
-			depth = depth - 1;
+		end
+		-- also check for first coord(s) on alternate search results/parents of the group if it's a Thing
+		if app.ThingKeys[group.key or 0] then
+			-- app.PrintDebug("WP:SearchScan",group.hash)
+			local key = group.key;
+			local searchResults = app.SearchForField(key, group[key], "field");
+			for _,o in ipairs(searchResults) do
+				-- app.PrintDebug("WP:Search:",o.hash)
+				if o.coords then
+					for _,coord in ipairs(o.coords) do
+						AddTomTomWaypointCache(coord, o);
+					end
+					break;
+				end
+				if o.coord then
+					AddTomTomWaypointCache(o.coord, o);
+					break;
+				end
+				AddTomTomParentCoord(o);
+			end
 		end
 		group.plotting = nil;
-
-		if TomTom then
-			-- always plot directly clicked otherwise don't plot saved or inaccessible groups
-			if depth == 0 or (not group.saved and not group.missingSourceQuests) then
-				if group.coords then
-					for _,coord in ipairs(group.coords) do
-						AddTomTomWaypointCache(coord, group);
-					end
+		-- if STILL nothing was found to plot (plotting meta-achievements whose achievements are under other groups)
+		-- pop off the first layer of groups under the group to plot waypoints as if they were each individually plotted
+		-- to process as normal waypoint plotting
+		if TomTom and __TomTomWaypointCount == 0 and depth < 2 then
+			-- app.PrintDebug("WP:NestedSearchScan",group.hash)
+			-- grab raw groups
+			local g = group.g;
+			if g then
+				for _,o in ipairs(g) do
+					app.WaypointRunner.Run(AddTomTomWaypointInternal, o, 0);
 				end
-				if group.coord then AddTomTomWaypointCache(group.coord, group); end
-			end
-		elseif C_SuperTrack then
-			-- always plot directly clicked or first available waypoint otherwise don't plot saved or inaccessible groups
-			if depth == 0 or (__TomTomWaypointFirst and (not group.saved and not group.missingSourceQuests)) then
-				local coord = group.coords and group.coords[1] or group.coord;
-				if coord then
-					__TomTomWaypointFirst = false;
-					C_SuperTrack.SetSuperTrackedUserWaypoint(false);
-					C_Map.ClearUserWaypoint();
-					-- coord[3] not existing is checked by Parser and shouldn't ever happen
-					C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or C_Map.GetBestMapForUnit("player") or 1, coord[1]/100, coord[2]/100));
-					C_SuperTrack.SetSuperTrackedUserWaypoint(true);
-				end
+				return;
 			end
 		end
+		-- TODO: if still no coords (Achievement Criteria with Providers/Cost)
+		-- further Search Providers/Cost/crs/etc to find coords
 	end
 end
 AddTomTomWaypoint = function(group)
-	if TomTom or C_SuperTrack then
-		__TomTomWaypointFirst = true;
-		__TomTomWaypointCount = 0;
-		wipe(__TomTomWaypointCache);
+	wipe(__TomTomWaypointCache);
+	__TomTomWaypointCount = 0;
+	__PlottedGroup = group;
+	if TomTom then
+		-- attempt to cache all coords
+		app.WaypointRunner.Run(AddTomTomWaypointInternal, group, 0);
+		-- actually send the coords to TomTom now that every coord has been cached
+		app.WaypointRunner.OnEnd(SendCachedCoordsToTomTom);
+	elseif C_SuperTrack then
+		-- attempt to cache all coords
 		AddTomTomWaypointInternal(group, 0);
-		-- also check for first coord(s) on parent chain if no coords found
-		if __TomTomWaypointCount == 0 then
-			local parent = group.sourceParent or group.parent;
-			while parent do
-				if parent.coords then
-					for _,coord in ipairs(parent.coords) do
-						AddTomTomWaypointCache(coord, parent);
-					end
-					break;
-				end
-				if parent.coord then
-					AddTomTomWaypointCache(parent.coord, parent);
-					break;
-				end
-				parent = parent.sourceParent or parent.parent;
-			end
-		end
-		if TomTom then
-			local xnormal;
-			for mapID,c in pairs(__TomTomWaypointCache) do
-				for x,d in pairs(c) do
-					xnormal = x / 1000;
-					for y,datas in pairs(d) do
-						-- Determine the Root and simplify NPC/Object data.
-						-- An NPC/Object can contain all of the other types by reference and don't need individual entries.
-						local root,rootByCreatureID,rootByObjectID = {},{},{};
-						for key,group in pairs(datas) do
-							local creatureID, objectID;
-							if group.npcID or group.creatureID then
-								creatureID = group.npcID or group.creatureID;
-							elseif group.objectID then
-								objectID = group.objectID;
-							else
-								if group.providers then
-									for i,provider in ipairs(group.providers) do
-										if provider[1] == "n" then
-											if provider[2] > 0 then
-												creatureID = provider[2];
-											end
-										elseif provider[1] == "o" then
-											if provider[2] > 0 then
-												objectID = provider[2];
-											end
-										end
-									end
-								end
-								if group.qgs then
-									local count = #group.qgs;
-									if count > 1 and group.coords and #group.coords == count then
-										for i=count,1,-1 do
-											local coord = group.coords[i];
-											if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
-												creatureID = group.qgs[i];
-												break;
-											end
-										end
-										if not creatureID then
-											creatureID = group.qgs[1];
-										end
-									else
-										creatureID = group.qgs[1];
-									end
-								end
-								if group.crs then
-									local count = #group.crs;
-									if count > 1 and group.coords and #group.coords == count then
-										for i=count,1,-1 do
-											local coord = group.coords[i];
-											if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
-												creatureID = group.crs[i];
-												break;
-											end
-										end
-										if not creatureID then
-											creatureID = group.crs[1];
-										end
-									else
-										creatureID = group.crs[1];
-									end
-								end
-							end
-							if creatureID then
-								if not rootByCreatureID[creatureID] then
-									rootByCreatureID[creatureID] = group;
-									tinsert(root, app.CreateNPC(creatureID));
-								end
-							elseif objectID then
-								if not rootByObjectID[objectID] then
-									rootByObjectID[objectID] = group;
-									tinsert(root, app.CreateObject(objectID));
-								end
-							else
-								tinsert(root, group);
-							end
-						end
-
-						local first = root[1];
-						if first then
-							local opt = { from = "ATT" };
-							opt.title = first.text or RETRIEVING_DATA;
-							local displayID = GetDisplayID(first);
-							if displayID then
-								opt.minimap_displayID = displayID;
-								opt.worldmap_displayID = displayID;
-							end
-							if first.icon then
-								opt.minimap_icon = first.icon;
-								opt.worldmap_icon = first.icon;
-							end
-
-							if TomTom.DefaultCallbacks then
-								local callbacks = TomTom:DefaultCallbacks();
-								callbacks.minimap.tooltip_update = nil;
-								callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
-									tooltip:ClearLines();
-									for i,o in ipairs(root) do
-										local lineNumber = tooltip:NumLines() + 1;
-										tooltip:AddLine(o.text);
-										if o.title and not o.explorationID then tooltip:AddLine(o.title); end
-										local key = o.key;
-										if key == "objectiveID" then
-											if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
-										elseif key == "criteriaID" then
-											tooltip:AddLine("Criteria for " .. GetAchievementLink(o.achievementID));
-										else
-											if key == "npcID" then key = "creatureID"; end
-											AttachTooltipSearchResults(tooltip, lineNumber, key .. ":" .. o[o.key], SearchForField, key, o[o.key]);
-										end
-									end
-									tooltip:Show();
-								end
-								callbacks.world.tooltip_update = nil;
-								callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
-								opt.callbacks = callbacks;
-							end
-							TomTom:AddWaypoint(mapID, xnormal, y / 1000, opt);
-						end
-					end
-				end
-			end
-			TomTom:SetClosestWaypoint();
-		end
-		if C_SuperTrack and group.questID and C_QuestLog.IsOnQuest(group.questID) then
-			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
-			return;
-		end
-		if __TomTomWaypointCount == 0 and __TomTomWaypointFirst then
-			app.print(format(L["NO_COORDINATES_FORMAT"], group.text));
-		end
+		-- actually send the coords to SuperTrack now that possible coords have been cached
+		SendCachedCoordsToTomTom();
 	else
 		app.print(L["TOM_TOM_NOT_FOUND"]);
 	end
