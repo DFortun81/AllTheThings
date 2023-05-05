@@ -227,7 +227,6 @@ root(ROOTS.Unsorted, {
 				i(205332),	-- Fist of the Demolisher
 				i(205333),	-- Obsidian Amulet of Transmutation
 				--
-				i(205421),	-- Ponzo's Scheming Topper
 				i(205955),	-- Azure Renewal Mantle
 				i(205956),	-- Azure Renewal Cape
 				i(205957),	-- Azure Renewal Tabard

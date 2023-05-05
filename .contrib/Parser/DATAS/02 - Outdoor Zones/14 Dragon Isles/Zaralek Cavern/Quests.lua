@@ -864,5 +864,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(74781),    -- 4 (quest) dialog
 		q(74782),    -- 5 (quest) dialog
 		q(74788),    -- 6 (quest) dialog
+
+		-- Ponzo hat price
+		q(75869),    -- Become available with cost at 9999 boulders
+		q(75836),    -- I can't afford that - 4999
+		q(75870),    -- Still too much! - 999
+		q(75871),    -- How about 50 boulders - 249
 	}),
 }));

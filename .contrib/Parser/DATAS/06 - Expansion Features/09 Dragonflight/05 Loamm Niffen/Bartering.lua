@@ -240,6 +240,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205431, {	-- Bartered Tailoring Notes
 							["cost"] = { { "i", BARTER_BRICK, 35 }, },
 						}),
+						-- Cosmetic
+						i(205421, {	-- Ponzo's Scheming Topper
+							["description"] = "Hat appear when you click dialog option (for lowest price - need to click it few times)",
+							["cost"] = { { "i", 205188, 249 }, },
+						}),
 					},
 				}),
 				n(203608, {	-- Rossmar
