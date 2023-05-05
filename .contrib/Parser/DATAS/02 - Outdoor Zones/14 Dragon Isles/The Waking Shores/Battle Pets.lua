@@ -32,6 +32,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				}),
 				pet(3282),	-- Swoglet (PET!)
 				pet(3318, {	-- Thunderfoot Calf (PET!)
+					["description"] = "Not very common, often grouped with other NPCs.",
 					["coord"] = { 45.8, 35.2, THE_WAKING_SHORES },
 				}),
 				pet(3301),	-- Wild Duckling (PET!)
