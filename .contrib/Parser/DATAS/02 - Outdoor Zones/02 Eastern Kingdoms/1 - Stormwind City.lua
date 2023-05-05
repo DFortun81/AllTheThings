@@ -5989,7 +5989,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				n(1315, {	-- Allan Hafgan
-					["coord"] = { 49.6, 49.8, STORMWIND_CITY },
+					["coord"] = { 52.9, 75.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2527),	-- Battle Staff
