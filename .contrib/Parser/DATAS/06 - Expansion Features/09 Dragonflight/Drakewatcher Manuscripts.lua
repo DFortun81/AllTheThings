@@ -768,6 +768,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197124),	-- Highland Drake: Swept Horns (DM!)
 			i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 			i(197121),	-- Highland Drake: Tan Horns (DM!)
+			i(197104),	-- Highland Drake: Tapered Chin
 			i(197123),	-- Highland Drake: Thorn Horns (DM!)
 			i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 			i(197135),	-- Highland Drake: Toothy Mouth (DM!)
