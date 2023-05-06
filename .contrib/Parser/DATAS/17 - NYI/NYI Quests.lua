@@ -5,25 +5,16 @@
 
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(QUESTS, {
-		tier(CLASSIC_TIER, { -- These Quests might be ingame, very unlikely however.
-			q(62300),	-- Classic 20-49
-			q(62301),	-- Classic 50
-			q(62302),	-- Classic 50
-			q(62303),	-- Classic 50
-			q(62351),	-- Classic 50
-			q(62352),	-- Classic 50
-			q(24881),	-- Classic Random 5-15 (1st)
-			q(24889),	-- Classic Random 5-15 (Nth)
-			q(24882),	-- LFGDungeons - Classic - Random - 1st
-			q(24890),	-- LFGDungeons - Classic - Random - Nth
-			q(10561),	-- Revered Among the Keepers of Time
+		tier(CLASSIC_TIER, {
+			
 		}),
-		tier(TBC_TIER, { -- These Quests might be ingame, very unlikely however.
+		tier(TBC_TIER, {
 			q(24922),	-- LFGDungeons - Burning Crusade - Heroic Random - 1st
 			q(24923),	-- LFGDungeons - Burning Crusade - Heroic Random - Nth
 			q(10610),	-- Prospecting Basics
+			q(10561),	-- Revered Among the Keepers of Time
 		}),
-		tier(WOTLK_TIER, { -- These Quests might be ingame, very unlikely however.
+		tier(WOTLK_TIER, {
 			q(24790),	-- Daily Normal Random (1st)
 			q(24791),	-- Daily Normal Random (Nth)
 			q(24788),	-- LFGDungeons - Lich King - Heroic Random - 1st
@@ -34,8 +25,12 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(25484),	-- LFGDungeons - Holiday Dungeon - Ahune - 1st
 			q(25485),	-- LFGDungeons - Holiday Dungeon - Crown Chemical - 1st
 			q(24818),	-- A Change of Heart
+			q(24881),	-- Classic Random 5-15 (1st)
+			q(24889),	-- Classic Random 5-15 (Nth)
+			q(24882),	-- LFGDungeons - Classic - Random - 1st
+			q(24890),	-- LFGDungeons - Classic - Random - Nth
 		}),
-		tier(CATA_TIER, { -- These Quests might be ingame, very unlikely however.
+		tier(CATA_TIER, {
 			q(26764, {	-- A New Low (Northern Stranglethorn)
 				["timeline"] = { "created 4.0.3.13277" },
 			}),
@@ -119,7 +114,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				["timeline"] = { "created 4.0.1.12984" },
 			}),
 		}),
-		tier(BFA_TIER, {	-- These Quests might be ingame, very unlikely however.
+		tier(BFA_TIER, {
 			q(53731, {	-- Legion 110 A
 				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 			}),
@@ -137,6 +132,14 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 			}),
 			q(53730),	-- Legion 110 H
+		}),
+		tier(SL_TIER, {
+			q(62300),	-- Classic 20-49
+			q(62301),	-- Classic 50
+			q(62302),	-- Classic 50
+			q(62303),	-- Classic 50
+			q(62351),	-- Classic 50
+			q(62352),	-- Classic 50
 		}),
 	}),
 	tier(CLASSIC_TIER, {
