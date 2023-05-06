@@ -1771,11 +1771,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(9734),	-- Return to the Marsh (NYI) - completed with quest 9732
 	q(9733),	-- Warning the Cenarion Circle (NYI) - completed with quest 9724
 });
-
--- These quests never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(10459),	-- Revered Among the Cenarion Expedition
-	}),
-}));
--- #endif

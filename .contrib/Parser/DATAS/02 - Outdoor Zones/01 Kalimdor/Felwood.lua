@@ -2815,17 +2815,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		q(28365, {	-- <PH>Drizle Safe
-			["timeline"] = { "created 4.0.3.13329" },
-		}),
-		q(29029, {	-- Dying Knowledge
-			["timeline"] = { "created 4.1.0.13726" },
-		}),
-		q(29028, {	-- Into Jaedenar
-			["timeline"] = { "created 4.1.0.13726" },
-		}),
-	}),
-});

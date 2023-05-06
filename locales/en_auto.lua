@@ -1142,6 +1142,7 @@ local keys = {
 [38839]="Done with Waiting",
 [38840]="Fishy Business",
 [38841]="Die, Fish-People",
+[38843]="Smashing Eggs",
 [38844]="Rally the Wilds Buff Received",
 [38850]="The Fate of Tirion Fordring",
 [38855]="zzDEPRECATEDzz Fighting on the Front",

@@ -2566,10 +2566,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(7962),	-- Wabbit Pelts
-		q(7961),	-- Waskily Wabbits!
-	}),
-}));

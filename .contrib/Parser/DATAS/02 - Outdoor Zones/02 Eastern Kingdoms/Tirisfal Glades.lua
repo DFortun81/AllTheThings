@@ -2275,22 +2275,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
-
--- #if AFTER CATA
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		-- #if AFTER BFA
-		-- TODO: These were implemented with BFA, might be coming out in 10.0? Keep an eye here!
-		q(57377),	-- A Hand Offered
-		q(54955),	-- Scarlet Recon
-		q(54943),	-- The Dark Ranger's Pupil
-		q(54944),	-- The Dark Ranger's Pupil
-		q(55345),	-- The Dark Ranger's Pupil
-		q(55346),	-- The Dark Ranger's Pupil
-		q(54956),	-- The Grasp of Hate
-		q(54954),	-- The Missing Apprentice
-		q(55351),	-- The Missing Apprentice
-		-- #endif
-	}),
-}));
--- #endif

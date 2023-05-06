@@ -724,15 +724,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(908),	-- Amongst the Ruins
-		q(909),	-- Baron Aquanis
-		q(26461, {	-- Blackfathom Villainy
-			["timeline"] = { "created 6.0.1.18322" },
-		}),
-		q(26459, {	-- Researching the Corruption
-			["timeline"] = { "created 6.0.1.18322" },
-		}),
-	}),
-}));

@@ -1699,14 +1699,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(14453, {	-- A Humble Task
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-		q(44498, {	-- Winterhoof Cleansing
-			["timeline"] = { "created 9.0.1.36247" },
-		}),
-	}),
-}));

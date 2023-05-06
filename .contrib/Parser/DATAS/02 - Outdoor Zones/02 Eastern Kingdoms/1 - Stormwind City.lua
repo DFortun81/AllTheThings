@@ -8234,19 +8234,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
 	}),
 	-- #endif
-	n(QUESTS, {
-		q(60362, {	-- Blank
-			["timeline"] = { "created 9.0.1.36230"},
-		}),
-		q(14446, {	-- Cataclysm!
-			["qg"] = 36674,	-- Nambria
-			["coord"] = { 41.4, 47.6, STORMWIND_CITY },
-			["timeline"] = { "created 4.0.1"},
-			["races"] = ALLIANCE_ONLY,
-			["isBreadcrumb"] = true,
-		}),
-		q(57766, {	-- War with the Horde
-			["timeline"] = { "created 9.0.1.36492"},
-		}),
-	}),
 }));

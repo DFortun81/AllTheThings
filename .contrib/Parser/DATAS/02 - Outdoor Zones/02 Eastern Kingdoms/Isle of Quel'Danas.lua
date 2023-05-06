@@ -2448,13 +2448,3 @@ for i,o in ipairs(KARYNNA_GROUPS) do o.u = nil; end
 for i,o in ipairs(KAYRI_GROUPS) do o.u = nil; end
 for i,o in ipairs(OLUS_GROUPS) do o.u = nil; end
 for i,o in ipairs(SORYN_GROUPS) do o.u = nil; end
-
--- #if AFTER TBC
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(11551),	-- BETA Agamath, the First Gate
-		q(11553),	-- BETA Archonisus, the Final Gate
-		q(11552),	-- BETA Rohendor, the Second Gate
-	}),
-}));
--- #endif

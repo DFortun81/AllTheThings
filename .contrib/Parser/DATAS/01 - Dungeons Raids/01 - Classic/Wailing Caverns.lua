@@ -400,9 +400,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(26874),	-- Awakening Naralex
-		q(3366),	-- OLD The Glowing Shard
-	}),
-}));

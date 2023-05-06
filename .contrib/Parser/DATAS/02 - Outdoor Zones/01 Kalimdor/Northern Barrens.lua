@@ -4328,15 +4328,4 @@ root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, {
 		}),
 	}),
 }));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(29091, {	-- Freedom Movement
-			["timeline"] = { "created 4.1.0.13726" },
-		}),
-		q(29096, {	-- Mor'shan Caravan Pick-Up
-			["timeline"] = { "created 4.1.0.13726" },
-		}),
-	}),
-}));
 -- #endif

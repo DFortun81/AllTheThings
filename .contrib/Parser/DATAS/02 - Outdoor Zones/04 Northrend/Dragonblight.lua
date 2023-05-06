@@ -2449,14 +2449,3 @@ root(ROOTS.Zones, {
 		}),
 	})),
 });
-
--- #if AFTER WRATH
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(12051),	-- Rustling Some Feathers
-		-- #if AFTER CATA
-		q(26178),	-- Planning for the Future
-		-- #endif
-	}),
-}));
--- #endif

@@ -921,11 +921,4 @@ root(ROOTS.HiddenQuestTriggers, m(EASTERN_KINGDOMS, {
 		q(25331),	-- Grandma's Cat (when completing 14401)
 	}),
 }));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(14319),	-- BETA Further Treatment
-		q(14220),	-- BETA This Is the End
-	}),
-}));
 -- #endif

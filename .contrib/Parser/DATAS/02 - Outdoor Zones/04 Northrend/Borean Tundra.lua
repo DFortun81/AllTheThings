@@ -2602,10 +2602,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(39783),	-- Battle Pet - Terky
 	}),
 });
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(11939),	-- ?????
-		q(12490),	-- Veehja's Revenge
-	}),
-}));

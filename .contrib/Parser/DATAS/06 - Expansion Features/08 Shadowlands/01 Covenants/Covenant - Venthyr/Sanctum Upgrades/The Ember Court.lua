@@ -2446,14 +2446,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(62026),	-- unlocking Fearstalker's Court Battlegear set (TransmogSetID 2072, Fearstalker's Court items)
 		q(62018),	-- unlocking Dread Sentinel's Court Battleplate set (TransmogSetID 2077, Dread Sentinel's Court items)
 });
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(59539),	-- For Your Consideration: Baroness Vashj
-		q(59548),	-- For Your Consideration: Lady Moonberry
-		q(59549),	-- For Your Consideration: Mikanikos
-		q(59550),	-- For Your Consideration: The Countess
-		q(59551),	-- Earn Honor 5's RSVP
-		q(59552),	-- Earn Honor 6's RSVP
-	}),
-}));

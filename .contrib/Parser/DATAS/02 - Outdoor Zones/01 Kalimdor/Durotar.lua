@@ -3344,25 +3344,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		tier(CLASSIC_TIER, {
-			q(785, {	-- A Strategic Alliance
-				-- low enough questID for classic, but unable to verify if it actually was in vanilla
-				-- since Neeru Fireblade was moved to Orgrimmar for launch, it seems unlikely.
-				["qg"] = 3216,	-- Neeru Fireblade
-				["coord"] = { 49.64, 50.31, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 5,
-			}),
-			q(787, {	-- The New Horde
-				-- This quest was never in Classic, it's assumed that like the one above it was removed prior to launch.
-				["qg"] = 3144,	-- Eitrigg
-				["coord"] = { 34.3, 39.4, ORGRIMMAR },
-				["isBreadcrumb"] = true,
-				["races"] = HORDE_ONLY,
-			}),
-		}),
-	}),
-}));

@@ -1858,9 +1858,6 @@ root(ROOTS.HiddenQuestTriggers, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added
 })));
 
 root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		q(59225),	-- [DNT] Azerite Reward Test Quest - BJI
-	}),
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {

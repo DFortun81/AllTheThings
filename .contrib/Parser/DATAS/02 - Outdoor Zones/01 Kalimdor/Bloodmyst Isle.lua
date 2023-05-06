@@ -1322,9 +1322,3 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, m(BLOODMYST_ISLE, {
 	q(9750),	-- UNUSED Urgent Delivery
 })));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(9695),	-- The Sun King's Command
-	}),
-}));

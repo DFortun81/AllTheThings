@@ -264,15 +264,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	}),
 })));
 
--- #if AFTER 4.3.0
--- This version of the quests never made it in.
--- They must have started replacing them, but decided "nah this is dumb lol"
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(29672),	-- The Opening of the Dark Portal
-	}),
-}));
--- #endif
 -- #if AFTER TBC
 root(ROOTS.HiddenQuestTriggers, {
 	tier(TBC_TIER, {

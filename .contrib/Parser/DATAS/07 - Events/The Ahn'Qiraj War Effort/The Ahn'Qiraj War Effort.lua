@@ -1633,15 +1633,3 @@ root(ROOTS.WorldEvents, n(-538,	-- The Ahn'Qiraj War Effort
 		},
 	}))
 ));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(10693),	-- One Commendation Signet
-		q(10695),	-- One Commendation Signet
-		q(10697),	-- One Commendation Signet
-		q(10699),	-- One Commendation Signet
-		q(10694),	-- Ten Commendation Signets
-		q(10696),	-- Ten Commendation Signets
-		q(10698),	-- Ten Commendation Signets
-		q(10700),	-- Ten Commendation Signets
-	}),
-}));

@@ -3543,11 +3543,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		q(27289, {	-- Vimes's Report
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-	}),
-});

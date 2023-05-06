@@ -3422,12 +3422,4 @@ root(ROOTS.HiddenQuestTriggers, m(OUTLAND, {
 		}),
 	}),
 }));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(10560),	-- Revered Among the Sha'tar
-		q(12479),	-- Wrath of the Lich King: Onwards to Northrend!
-		q(12480),	-- Wrath of the Lich King: Onwards to Northrend!
-	}),
-}));
 -- #endif
