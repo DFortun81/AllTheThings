@@ -242,7 +242,6 @@ q(10377),	-- Nothing to Fear	 TBC:Nothing to Fear	 WOTLK:Nothing to Fear
 q(10378),	-- Consume Magic	 WOTLK:Consume Magic
 q(10379),	-- Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness
 q(10383),	-- This is a Breadcrumb!	 TBC:This is a Breadcrumb!	 WOTLK:This is a Breadcrumb!
-q(10402),	-- <TXT>	 TBC:<TXT>	 WOTLK:<TXT>
 q(10404),	-- Against the Legion	 TBC:Against the Legion	 WOTLK:Against the Legion
 q(10452),	-- DON'T USE [PH] Fel Orc 1	 TBC:DON'T USE [PH] Fel Orc 1	 WOTLK:DON'T USE [PH] Fel Orc 1
 q(10453),	-- DON'T USE [PH] Fel Orc bread	 TBC:DON'T USE [PH] Fel Orc bread	 WOTLK:DON'T USE [PH] Fel Orc bread
@@ -255,7 +254,6 @@ q(10535),	-- Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi 
 q(10539),	-- Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
 q(10591),	-- DESTROY THIS QUEST!
 q(10605),	-- Carendin Summons	 TBC:Carendin Summons	 WOTLK:Carendin Summons
-q(10616),	-- <nyi>Breadcrumb	 WOTLK:<nyi>Breadcrumb
 q(10631),	-- Back In Business	 TBC:Back In Business	 WOTLK:Back In Business
 q(10638),	-- NOT A QUEST	 TBC:NOT A QUEST	 WOTLK:NOT A QUEST
 q(10716),	-- Test Flight: Raven's Wood <needs reward>	 TBC:Test Flight: Raven's Wood <needs reward>	 WOTLK:Test Flight: Raven's Wood <needs reward>
@@ -266,7 +264,6 @@ q(10787),	-- [DEPRECATED]<txt><nyi>The Dragons of Dragons' End	 TBC:[DEPRECATED]
 q(10789),	-- Return to Carendin Halgar	 TBC:Return to Carendin Halgar	 WOTLK:Return to Carendin Halgar
 q(10790),	-- Return to Mordak Darkfist	 TBC:Return to Gan'rul Bloodeye	 WOTLK:Return to Gan'rul Bloodeye
 q(10844),	-- Forge Camp: Anger	 TBC:Forge Camp: Anger	 WOTLK:Forge Camp: Anger
-q(10890),	-- [UNUSED] <NYI>	 TBC:[UNUSED] <NYI>	 WOTLK:[UNUSED] <NYI>
 q(10931),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar
 q(10932),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar
 q(10933),	-- Return to Silvermoon	 TBC:Return to Silvermoon	 WOTLK:Return to Silvermoon
@@ -274,7 +271,6 @@ q(10934),	-- Return to Silvermoon	 TBC:Return to Silvermoon	 WOTLK:Return to Sil
 q(10999),	-- One Shot, One Kill	 TBC:One Shot, One Kill	 WOTLK:One Shot, One Kill
 q(11121),	-- DAILY TEST QUEST (RAID)	 TBC:DAILY TEST QUEST (RAID)	 WOTLK:DAILY TEST QUEST (RAID)
 q(11125),	-- [PH] New Hinterlands Quest	 TBC:[PH] New Hinterlands Quest	 WOTLK:[PH] New Hinterlands Quest
-q(11127),	-- <NYI>Thunderbrew Secrets	 TBC:<NYI>Thunderbrew Secrets	 WOTLK:<NYI>Thunderbrew Secrets
 q(11197),	-- ZZOLD Upper Deck Promo - Ghost Wolf Mount OLD
 q(11226),	-- Upper Deck Promo - Spectral Tiger Mount
 q(11335),	-- Call to Arms: Arathi Basin	 TBC:Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
@@ -292,7 +288,6 @@ q(11437),	-- [PH] Beer Garden A	 TBC:[PH] Beer Garden A	 WOTLK:[PH] Beer Garden 
 q(11438),	-- [PH] Beer Garden B	 TBC:[PH] Beer Garden B	 WOTLK:[PH] Beer Garden B
 q(11444),	-- [PH] Beer Garden A	 WOTLK:[PH] Beer Garden A
 q(11445),	-- [PH] Beer Garden B	 WOTLK:[PH] Beer Garden B
-q(11493),	-- UNUSED	 WOTLK:UNUSED
 q(11577),	-- WoW Collector's Edition: - DEM - E - FLAG
 q(11588),	-- REUSE
 q(11589),	-- REUSE
@@ -400,7 +395,6 @@ q(12834),	-- Not Rain, Nor Snow, Nor Exploding Plane	 WOTLK:Not Rain, Nor Snow, 
 q(12835),	-- All Grown Up	 WOTLK:All Grown Up
 q(12837),	-- Tore's Got the Goods	 WOTLK:Tore's Got the Goods
 q(12881),	-- The Brothers Bronzebeard	 WOTLK:The Brothers Bronzebeard
-q(12923),	-- UNUSED	 WOTLK:
 q(13123),	-- WotLK Collector's Edition: - DEM - E - FLAG
 q(13173),	-- Amidst the Confusion	 WOTLK:Amidst the Confusion
 q(13210),	-- Blizzard Account: - DEM - E - FLAG
@@ -648,10 +642,7 @@ q(24772),	-- The Arts of a Rogue
 q(24778),	-- The Arts of a Hunter
 q(24784),	-- Learnin' tha Word
 q(24860),	-- Profitable Preservation
-q(24867),	-- [NOT USED] Lumberjack Slam Placeholder
 q(24900),	-- Blueleaf Tubers
-q(24908),	-- [NOT USED] Build the Fort Placeholder
-q(24909),	-- [NOT USED] Protect the Pass Placeholder
 q(24935),	-- Body And Soul
 q(24962),	-- Trail-Worn Scroll
 q(24964),	-- The Thrill of the Hunt
@@ -733,7 +724,6 @@ q(26392),	-- Voucher of Bravery
 q(26458),	-- Twilight Falls
 q(26460),	-- In Search of Thaelrid
 q(26471),	-- Knowledge in the Deeps
-q(26559),	-- [NYI] Breaking Out is Hard to Do
 q(26626),	-- We Have a Situation
 q(26675),	-- The Value of Trust
 q(26715),	-- Malfurion Stormrage
@@ -773,7 +763,6 @@ q(27137),	-- Earth Girls Aren't So Easy
 q(27138),	-- Earth Girls Aren't So Easy
 q(27149),	-- School of the Damned
 q(27250),	-- REUSE - BAD COPY
-q(27543),	-- [TEMP PH] What We Have Done
 q(27678),	-- The Platinum Discs
 q(27723),	-- Kyle's Test Quest
 q(27819),	-- TEST - RVM
@@ -804,9 +793,6 @@ q(28898),	-- Secretion and Subterfuge
 q(28899),	-- Riding in Plain Sight
 q(28900),	-- Mysteries of the Twilight Hive
 q(28901),	-- Prisoners of Madness
-q(28902),	-- <PH>Hive'Zora B/C
-q(28903),	-- <PH>Faceless
-q(28904),	-- <PH>Bad Stuff
 q(28936),	-- Diva Dilemma
 q(28937),	-- Alliance Breadcrumb
 q(28938),	-- Save the Children
@@ -844,8 +830,6 @@ q(29098),	-- Demon Seed
 q(29099),	-- Mor'shan Caravan Delivery
 q(29108),	-- Mor'shan Test Quest
 q(29140),	-- Under the Skylord's Gaze
-q(29170),	-- UNUSED
-q(29171),	-- UNUSED
 q(29178),	-- Oooh, Shinies!
 q(29180),	-- Promises, Promises...
 q(29184),	-- X Marks... Your Doom!

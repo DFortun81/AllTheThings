@@ -172,10 +172,16 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(9414),	-- <UNUSED>Infused Bandages	 CLASSIC:<UNUSED>Infused Bandages	 TBC:<UNUSED>Infused Bandages	 WOTLK:<UNUSED>Infused Bandages
 		}),
 		tier(TBC_TIER, {
+			q(10402),	-- <TXT>	 TBC:<TXT>	 WOTLK:<TXT>
+			q(10561),	-- Revered Among the Keepers of Time
+			q(10610),	-- Prospecting Basics
+			q(10616),	-- <nyi>Breadcrumb	 WOTLK:<nyi>Breadcrumb
+			q(10890),	-- [UNUSED] <NYI>	 TBC:[UNUSED] <NYI>	 WOTLK:[UNUSED] <NYI>
+			q(11127),	-- <NYI>Thunderbrew Secrets	 TBC:<NYI>Thunderbrew Secrets	 WOTLK:<NYI>Thunderbrew Secrets
+			q(11493),	-- UNUSED	 WOTLK:UNUSED
+			q(12923),	-- UNUSED	 WOTLK:
 			q(24922),	-- LFGDungeons - Burning Crusade - Heroic Random - 1st
 			q(24923),	-- LFGDungeons - Burning Crusade - Heroic Random - Nth
-			q(10610),	-- Prospecting Basics
-			q(10561),	-- Revered Among the Keepers of Time
 		}),
 		tier(WOTLK_TIER, {
 			q(24790),	-- Daily Normal Random (1st)
@@ -188,10 +194,20 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(25484),	-- LFGDungeons - Holiday Dungeon - Ahune - 1st
 			q(25485),	-- LFGDungeons - Holiday Dungeon - Crown Chemical - 1st
 			q(24818),	-- A Change of Heart
+			q(24867),	-- [NOT USED] Lumberjack Slam Placeholder
 			q(24881),	-- Classic Random 5-15 (1st)
 			q(24889),	-- Classic Random 5-15 (Nth)
 			q(24882),	-- LFGDungeons - Classic - Random - 1st
 			q(24890),	-- LFGDungeons - Classic - Random - Nth
+			q(24908),	-- [NOT USED] Build the Fort Placeholder
+			q(24909),	-- [NOT USED] Protect the Pass Placeholder
+			q(26559),	-- [NYI] Breaking Out is Hard to Do
+			q(27543),	-- [TEMP PH] What We Have Done
+			q(28902),	-- <PH>Hive'Zora B/C
+			q(28903),	-- <PH>Faceless
+			q(28904),	-- <PH>Bad Stuff
+			q(29170),	-- UNUSED
+			q(29171),	-- UNUSED
 		}),
 		tier(CATA_TIER, {
 			q(26764, {	-- A New Low (Northern Stranglethorn)
