@@ -727,8 +727,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47199, {	-- The Blood Gate
-			--	verify SQ -- may become available after "ateena's fall"
-				["sourceQuests"] = { 51244 },	-- What Rots Beneath
+			--	verify SQ
+				["sourceQuests"] = {
+					49426,	-- The King's Gambit (became available immediately after completion)
+					51244,	-- What Rots Beneath
+				},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
 				["coord"] = { 40.1, 70.7, HALL_OF_CHRONICLERS },
