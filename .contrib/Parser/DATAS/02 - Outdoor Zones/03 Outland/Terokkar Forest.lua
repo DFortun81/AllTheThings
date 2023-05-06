@@ -1,7 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local HUNGRY_NETHER_RAYS_GROUPS = {};
+local HUNGRY_NETHER_RAYS_GROUPS = {
+	objective(1, {	-- 0/10 Nether Ray Meal
+		["provider"] = { "i", 32834 },	-- Nether Ray Cage (Provided)
+		["cr"] = 23219,	-- Blackwind Warp Chaser
+	}),
+};
 local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
 	["cr"] = 16810,	-- Bonechewer Backbreaker
 });
@@ -487,18 +492,27 @@ root(ROOTS.Zones, {
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11085, {	-- Escape from Skettis
 						["qg"] = 23383,	-- Skyguard Prisoner
-						["coord"] = { 75, 86.2, TEROKKAR_FOREST },
+						["coords"] = {
+							{ 61.0, 75.6, TEROKKAR_FOREST },
+							{ 68.4, 74.0, TEROKKAR_FOREST },
+							{ 75.0, 86.2, TEROKKAR_FOREST },
+						},
+						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["isDaily"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11008, {	-- Fires Over Skettis
 						["qg"] = 23048,	-- Sky Sergeant Doryn
 						["sourceQuest"] = 11098,	-- To Skettis!
 						["coord"] = { 64.5, 66.7, TEROKKAR_FOREST },
-						["cost"] = {
-							{ "i", 32406, 1 },	-- Skyguard Blasting Charges
-						},
+						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["isDaily"] = true,
 						["groups"] = {
+							objective(1, {	-- 0/20 Monstrous Kaliri Egg Destroyed
+								["providers"] = {
+									{ "i",  32406 },	-- Skyguard Blasting Charges
+									{ "o", 185549 },	-- Monstrous Kaliri Egg
+								},
+							}),
 							ach(1275),	-- Bombs Away
 						},
 					})),
@@ -516,9 +530,6 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11093, {	-- Hungry Nether Rays
 						["qg"] = 23415,	-- Skyguard Handler Deesak
 						["coord"] = { 63.6, 65.8, TEROKKAR_FOREST },
-						["cost"] = {
-							{ "i", 32834, 1 },	-- Nether Ray Cage (Provided)
-						},
 						["groups"] = HUNGRY_NETHER_RAYS_GROUPS,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11021, {	-- Ishaal's Almanac
@@ -530,10 +541,9 @@ root(ROOTS.Zones, {
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["sourceQuest"] = 11004,	-- World of Shadows
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
+						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
+						["cost"] = {{ "i", 32388, 6 }},	-- Shadow Dust
 						["repeatable"] = true,
-						["cost"] = {
-							{ "i", 32388, 6 },	-- Shadow Dust
-						},
 						["groups"] = {
 							i(32446),	-- Elixir of Shadows
 						},
@@ -547,6 +557,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23306,	-- Hazzik
 						["sourceQuest"] = 11885,	-- Adversarial Blood
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
+						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["cost"] = {
 							{ "i", 32715, 1 },	-- Akkarai's Talons
 							{ "i", 32716, 1 },	-- Gezzarak's Claws
@@ -558,7 +569,7 @@ root(ROOTS.Zones, {
 							i(32720),	-- Time-Lost Offering
 						},
 					})),
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11073, {  -- Terokk's Downfall
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11073, {	-- Terokk's Downfall
 						["qg"] = 23038,	-- Sky Commander Adaris
 						["sourceQuest"] = 11885,	-- Adversarial Blood
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
@@ -577,9 +588,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11004, {	-- World of Shadows
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
-						["cost"] = {
-							{ "i", 32388, 6 },	-- Shadow Dust
-						},
+						["cost"] = {{ "i", 32388, 6 }},	-- Shadow Dust
 						["groups"] = {
 							i(32446),	-- Elixir of Shadows
 						},
