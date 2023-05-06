@@ -423,11 +423,9 @@ root(ROOTS.Unsorted, {
 				i(202705),	-- Snail Slime
 				i(202875),	-- Snail Lasso
 				i(203229),	-- Snail Slime
-				i(203393),	-- Spongy Loamshroom
 				i(203454),	-- Zaqali Equipment
 				i(203707),	-- Water Bucket
 				i(203731),	-- Enchanted Bandage
-				i(204088),	-- Quartzite Spore Bile
 				i(204175),	-- Unknown Core
 				i(204197),	-- Shard of an Earth Portal
 				i(204198),	-- Shard of an Fire Portal
@@ -446,7 +444,6 @@ root(ROOTS.Unsorted, {
 				i(204434),	-- Lava-Quenched Blade
 				i(204435),	-- Obsidian Tablet
 				i(204436),	-- Chipped Horn Signet
-				i(204473),	-- Element Siphoner
 				i(204637),	-- Boulder Chunk
 				i(201956),	-- [DNT] Snakey Eyes
 				i(204794),	-- Whelkshell Crystals

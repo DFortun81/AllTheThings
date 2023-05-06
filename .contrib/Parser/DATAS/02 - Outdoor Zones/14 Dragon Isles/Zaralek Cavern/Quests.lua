@@ -819,6 +819,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204811),	-- Drogbar Stones
 				},
 			}),
+			q(73077, {	-- This Might Sting
+				--["sourceQuests"] = {  },
+				["provider"] = { "n", 200550 },	-- Patroclosa
+				["coord"] = { 59.4, 63.8, ZARALEK_CAVERN },
+			}),
 		}),
 	}),
 })));

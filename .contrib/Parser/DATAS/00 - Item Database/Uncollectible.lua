@@ -703,12 +703,14 @@ i(203456);	-- Obsidian Prayer Beads
 i(203392);	-- Old Mirror Shard
 i(204070);	-- Magma Crystal
 i(204792);	-- Nightlight Conkerbell Sample
-i(203387);	-- Oddly Familiar Training Weapon 
+i(203387);	-- Oddly Familiar Training Weapon
 i(204329);	-- Petrified Spider Leg
 i(202180);	-- Pipsee Cheese Snack
+i(204088);	-- Quartzite Spore Bile
 i(205217);	-- Sharpbeak's Feed
 i(203389);	-- Shiny Rock
 i(203442);	-- Snail Slime
+i(203393);	-- Spongy Loamshroom
 i(204069);	-- Sulfuric Crystal
 i(204713);	-- Sundered Flame Expedition Notes
 i(203653);	-- Vacant Elemental Core
