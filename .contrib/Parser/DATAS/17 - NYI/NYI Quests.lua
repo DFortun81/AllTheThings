@@ -6,7 +6,170 @@
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(QUESTS, {
 		tier(CLASSIC_TIER, {
-			
+			q(73),	-- <TXT> No Reward	 CLASSIC:<TXT> No Reward	 TBC:<TXT> No Reward	 WOTLK:<TXT> No Reward
+			q(137),	-- <NYI> <TXT> Stormwind Commendation	 CLASSIC:<NYI> <TXT> Stormwind Commendation	 TBC:<NYI> <TXT> Stormwind Commendation	 WOTLK:<NYI> <TXT> Stormwind Commendation
+			q(242),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(259),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(260),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(352),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(406),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(462),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(490),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(497),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(534),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(612),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(636),	-- Legends of the Earth <NYI>	 CLASSIC:Legends of the Earth <NYI>	 TBC:Legends of the Earth <NYI>	 WOTLK:Legends of the Earth <NYI>
+			q(807),	-- <UNUSED>	 CLASSIC:<UNUSED>	 WOTLK:<UNUSED>
+			q(810),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(811),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(814),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(820),	-- <UNUSED>	 CLASSIC:<UNUSED>	 WOTLK:<UNUSED>
+			q(839),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(856),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(946),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(988),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(989),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(1155),	-- <NYI> <TXT> bug crystal side quest	 CLASSIC:<NYI> <TXT> bug crystal side quest	 TBC:<NYI> <TXT> bug crystal side quest	 WOTLK:<NYI> <TXT> bug crystal side quest
+			q(1156),	-- <NYI> <TXT> speak to alchemist pestlezugg	 CLASSIC:<NYI> <TXT> speak to alchemist pestlezugg	 TBC:<NYI> <TXT> speak to alchemist pestlezugg	 WOTLK:<NYI> <TXT> speak to alchemist pestlezugg
+			q(1157),	-- <NYI> <TXT> pestlezugg needs items	 CLASSIC:<NYI> <TXT> pestlezugg needs items	 TBC:<NYI> <TXT> pestlezugg needs items	 WOTLK:<NYI> <TXT> pestlezugg needs items
+			q(1158),	-- <NYI> <TXT> speak to rabine saturna	 CLASSIC:<NYI> <TXT> speak to rabine saturna	 TBC:<NYI> <TXT> speak to rabine saturna	 WOTLK:<NYI> <TXT> speak to rabine saturna
+			q(1161),	-- <NYI> <TXT> gossip shade of ambermoon	 CLASSIC:<NYI> <TXT> gossip shade of ambermoon	 TBC:<NYI> <TXT> gossip shade of ambermoon	 WOTLK:<NYI> <TXT> gossip shade of ambermoon
+			q(1162),	-- <NYI> <TXT> speak to hamuul runetotem	 CLASSIC:<NYI> <TXT> speak to hamuul runetotem	 TBC:<NYI> <TXT> speak to hamuul runetotem	 WOTLK:<NYI> <TXT> speak to hamuul runetotem
+			q(1163),	-- <NYI> <TXT> speak to tyrande whisperwind	 CLASSIC:<NYI> <TXT> speak to tyrande whisperwind	 TBC:<NYI> <TXT> speak to tyrande whisperwind	 WOTLK:<NYI> <TXT> speak to tyrande whisperwind
+			q(1277),	-- <nyi> <TXT> The Centaur Hoofprints	 CLASSIC:<nyi> <TXT> The Centaur Hoofprints	 TBC:<nyi> <TXT> The Centaur Hoofprints	 WOTLK:<nyi> <TXT> The Centaur Hoofprints
+			q(1278),	-- <nyi> <TXT> The Grim Totem Clan	 CLASSIC:<nyi> <TXT> The Grim Totem Clan	 TBC:<nyi> <TXT> The Grim Totem Clan	 WOTLK:<nyi> <TXT> The Grim Totem Clan
+			q(1279),	-- <nyi> <TXT>The Centaur Hoofprints	 CLASSIC:<nyi> <TXT>The Centaur Hoofprints	 TBC:<nyi> <TXT>The Centaur Hoofprints	 WOTLK:<nyi> <TXT>The Centaur Hoofprints
+			q(1280),	-- <nyi> <TXT>The Centaur Hoofprints	 CLASSIC:<nyi> <TXT>The Centaur Hoofprints	 TBC:<nyi> <TXT>The Centaur Hoofprints	 WOTLK:<nyi> <TXT>The Centaur Hoofprints
+			q(1289),	-- <nyi> Vimes's Report	 CLASSIC:<nyi> Vimes's Report
+			q(1290),	-- <nyi> Investigating Mosarn	 CLASSIC:<nyi> Investigating Mosarn	 WOTLK:<nyi> Investigating Mosarn
+			q(1291),	-- <nyi> <TXT> Centaur Hoofprints	 CLASSIC:<nyi> <TXT> Centaur Hoofprints
+			q(1292),	-- <nyi><TXT> Centaur Hoofprints	 CLASSIC:<nyi><TXT> Centaur Hoofprints
+			q(1293),	-- <nyi> <TXT> Centaur Hoofprints	 CLASSIC:<nyi> <TXT> Centaur Hoofprints	 TBC:<nyi> <TXT> Centaur Hoofprints	 WOTLK:<nyi> <TXT> Centaur Hoofprints
+			q(1294),	-- <nyi> <TXT>Centaur Sympathies	 CLASSIC:<nyi> <TXT>Centaur Sympathies	 TBC:<nyi> <TXT>Centaur Sympathies	 WOTLK:<nyi> <TXT>Centaur Sympathies
+			q(1295),	-- <nyi> <TXT> Course of Action	 CLASSIC:<nyi> <TXT> Course of Action	 TBC:<nyi> <TXT> Course of Action	 WOTLK:<nyi> <TXT> Course of Action
+			q(1296),	-- <nyi> <TXT> Course of Action	 CLASSIC:<nyi> <TXT> Course of Action	 TBC:<nyi> <TXT> Course of Action	 WOTLK:<nyi> <TXT> Course of Action
+			q(1297),	-- <nyi> <TXT> Course of Action	 CLASSIC:<nyi> <TXT> Course of Action	 TBC:<nyi> <TXT> Course of Action	 WOTLK:<nyi> <TXT> Course of Action
+			q(1298),	-- <nyi> <TXT> Thrall's Dirty Work	 CLASSIC:<nyi> <TXT> Thrall's Dirty Work
+			q(1299),	-- <nyi> <TXT> Thrall's Dirty Work	 CLASSIC:<nyi> <TXT> Thrall's Dirty Work	 TBC:<nyi> <TXT> Thrall's Dirty Work	 WOTLK:<nyi> <TXT> Thrall's Dirty Work
+			q(1300),	-- <nyi> <TXT> Lorn Grim Totem	 CLASSIC:<nyi> <TXT> Lorn Grim Totem	 TBC:<nyi> <TXT> Lorn Grim Totem	 WOTLK:<nyi> <TXT> Lorn Grim Totem
+			q(1390),	-- <nyi> Oops, We Killed Them Again.	 CLASSIC:<nyi> Oops, We Killed Them Again.
+			q(1397),	-- <nyi> Saved!	 CLASSIC:<nyi> Saved!
+			q(1441),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(1443),	-- <nyi> The Shakedown	 CLASSIC:<nyi> The Shakedown
+			q(1460),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(1461),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(1533),	-- <NYI> Call of Air	 CLASSIC:<NYI> Call of Air
+			q(1537),	-- <NYI> Call of Air	 CLASSIC:<NYI> Call of Air	 TBC:<NYI> Call of Air	 WOTLK:<NYI> Call of Air
+			q(1538),	-- <NYI> Call of Air	 CLASSIC:<NYI> Call of Air
+			q(1659),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(1660),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(1662),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(1663),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(1664),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(2020),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(2058),	-- <UNUSED>	 CLASSIC:<UNUSED>	 WOTLK:<UNUSED>
+			q(2059),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(2868),	-- <TXT> The Shriveled Heart	 CLASSIC:<TXT> The Shriveled Heart	 TBC:<TXT> The Shriveled Heart	 WOTLK:<TXT> The Shriveled Heart
+			q(2971),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3023),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak	 CLASSIC:<NYI> <TXT><redux> Dreadmist Peak	 TBC:<NYI> <TXT><redux> Dreadmist Peak	 WOTLK:<NYI> <TXT><redux> Dreadmist Peak
+			q(3383),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3384),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3401),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3403),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3404),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3405),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3422),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3423),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3424),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3425),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3482),	-- <NYI> <TXT> The Pocked Black Box	 CLASSIC:<NYI> <TXT> The Pocked Black Box	 TBC:<NYI> <TXT> The Pocked Black Box	 WOTLK:<NYI> <TXT> The Pocked Black Box
+			q(3515),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3516),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(3529),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3530),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(3531),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(3622),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(3623),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(3624),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(3885),	-- <NYI> <TXT> The Gadgetzan Run	 CLASSIC:<NYI> <TXT> The Gadgetzan Run	 TBC:<NYI> <TXT> The Gadgetzan Run	 WOTLK:<NYI> <TXT> The Gadgetzan Run
+			q(3910),	-- <NYI> <TXT> The Un'Goro Run	 CLASSIC:<NYI> <TXT> The Un'Goro Run
+			q(4299),	-- <NYI> <TXT>The Tomb of the Seven	 CLASSIC:<NYI> <TXT>The Tomb of the Seven	 TBC:<NYI> <TXT>The Tomb of the Seven	 WOTLK:<NYI> <TXT>The Tomb of the Seven
+			q(4323),	-- <NYI> <TXT> Get those Hyenas!!!	 CLASSIC:<NYI> <TXT> Get those Hyenas!!!	 TBC:<NYI> <TXT> Get those Hyenas!!!	 WOTLK:<NYI> <TXT> Get those Hyenas!!!
+			q(4541),	-- <NYI> <TXT>	 CLASSIC:<NYI> <TXT>
+			q(4905),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(5205),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(5207),	-- <NYI> <TXT> The True Summoner	 CLASSIC:<NYI> <TXT> The True Summoner	 TBC:<NYI> <TXT> The True Summoner	 WOTLK:<NYI> <TXT> The True Summoner
+			q(5208),	-- <NYI> <TXT> The Blessing of Evil	 CLASSIC:<NYI> <TXT> The Blessing of Evil	 TBC:<NYI> <TXT> The Blessing of Evil	 WOTLK:<NYI> <TXT> The Blessing of Evil
+			q(5209),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(5303),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5304),	-- <UNUSED>	 CLASSIC:<UNUSED>	 WOTLK:<UNUSED>
+			q(5506),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(5512),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(5516),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(5520),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(5523),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(5530),	-- <NYI> <TXT> Necklace of the Dawn	 CLASSIC:<NYI> <TXT> Necklace of the Dawn	 WOTLK:<NYI> <TXT> Necklace of the Dawn
+			q(5532),	-- <NYI> <TXT> Ring of the Dawn	 CLASSIC:<NYI> <TXT> Ring of the Dawn	 TBC:<NYI> <TXT> Ring of the Dawn	 WOTLK:<NYI> <TXT> Ring of the Dawn
+			q(5653),	-- <NYI> Hex of Weakness	 CLASSIC:<NYI> Hex of Weakness
+			q(5659),	-- <NYI> Touch of Weakness	 CLASSIC:<NYI> Touch of Weakness	 WOTLK:<NYI> Touch of Weakness
+			q(5664),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5665),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5666),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5667),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5668),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light
+			q(5669),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light
+			q(5670),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light
+			q(5671),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light
+			q(5681),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5682),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5683),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5684),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5685),	-- <NYI> <TXT> The Light Protects You	 CLASSIC:<NYI> <TXT> The Light Protects You
+			q(5686),	-- <NYI> The Light Protects You	 CLASSIC:<NYI> The Light Protects You
+			q(5687),	-- <NYI> The Light Protects You	 CLASSIC:<NYI> The Light Protects You
+			q(5688),	-- <NYI> <TXT> A Touch of Voodoo	 CLASSIC:<NYI> <TXT> A Touch of Voodoo
+			q(5689),	-- <NYI> A Touch of Voodoo	 CLASSIC:<NYI> A Touch of Voodoo
+			q(5690),	-- <NYI> <TXT> A Touch of Voodoo	 CLASSIC:<NYI> <TXT> A Touch of Voodoo
+			q(5691),	-- <NYI> <TXT> In the Dark it was Created	 CLASSIC:<NYI> <TXT> In the Dark it was Created
+			q(5692),	-- <NYI> In the Dark It was Created	 CLASSIC:<NYI> In the Dark It was Created
+			q(5693),	-- <NYI> In the Dark It was Created	 CLASSIC:<NYI> In the Dark It was Created
+			q(5694),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5695),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5696),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5697),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(5698),	-- <NYI> <TXT> A Small Amount of Hope	 CLASSIC:<NYI> <TXT> A Small Amount of Hope
+			q(5699),	-- <NYI> A Small Amount of Hope	 CLASSIC:<NYI> A Small Amount of Hope
+			q(5700),	-- <NYI> A Small Amount of Hope	 CLASSIC:<NYI> A Small Amount of Hope
+			q(5701),	-- <NYI> <TXT> The Rites of Old	 CLASSIC:<NYI> <TXT> The Rites of Old
+			q(5702),	-- <NYI> The Rites of Old	 CLASSIC:<NYI> The Rites of Old
+			q(5703),	-- <NYI> The Rites of Old	 CLASSIC:<NYI> The Rites of Old
+			q(5704),	-- <NYI> <TXT> Undead Priest Robe	 CLASSIC:<NYI> <TXT> Undead Priest Robe
+			q(5705),	-- <NYI> No Longer a Shadow	 CLASSIC:<NYI> No Longer a Shadow
+			q(5706),	-- <NYI> No Longer a Shadow	 CLASSIC:<NYI> No Longer a Shadow
+			q(5707),	-- <NYI> <TXT> Flirting With Darkness	 CLASSIC:<NYI> <TXT> Flirting With Darkness
+			q(5708),	-- <NYI> Flirting With Darkness	 CLASSIC:<NYI> Flirting With Darkness
+			q(5709),	-- <NYI> Flirting With Darkness	 CLASSIC:<NYI> Flirting With Darkness
+			q(5710),	-- <NYI> <TXT> Troll Priest Robe	 CLASSIC:<NYI> <TXT> Troll Priest Robe
+			q(5711),	-- <NYI> The Lost Ways	 CLASSIC:<NYI> The Lost Ways
+			q(5712),	-- <NYI> The Lost Ways	 CLASSIC:<NYI> The Lost Ways
+			q(6003),	-- <nyi> <txt> Green With Envy	 CLASSIC:<nyi> <txt> Green With Envy
+			q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains	 CLASSIC:<NYI> <TXT> Archmage Timolain's Remains	 TBC:<NYI> <TXT> Archmage Timolain's Remains	 WOTLK:<NYI> <TXT> Archmage Timolain's Remains
+			q(6201),	-- <UNUSED> The Legacy of the Ashbringer	 CLASSIC:<UNUSED> The Legacy of the Ashbringer	 TBC:<UNUSED> The Legacy of the Ashbringer	 WOTLK:<UNUSED> The Legacy of the Ashbringer
+			q(6202),	-- <UNUSED> Good and Evil	 CLASSIC:<UNUSED> Good and Evil
+			q(6841),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(7384),	-- <nyi> <txt> The Scale Crafters	 CLASSIC:<nyi> <txt> The Scale Crafters
+			q(7904),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(8247),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(8248),	-- <UNUSED>	 CLASSIC:<UNUSED>
+			q(8444),	-- <NYI> <TXT> gossip shade of ambermoon	 CLASSIC:<NYI> <TXT> gossip shade of ambermoon	 TBC:<NYI> <TXT> gossip shade of ambermoon	 WOTLK:<NYI> <TXT> gossip shade of ambermoon
+			q(8445),	-- <NYI> <TXT> gossip shade of ambermoon	 CLASSIC:<NYI> <TXT> gossip shade of ambermoon	 TBC:<NYI> <TXT> gossip shade of ambermoon	 WOTLK:<NYI> <TXT> gossip shade of ambermoon
+			q(8459),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
+			q(9031),	-- <TXT>Anthion's Parting Words	 CLASSIC:<TXT>Anthion's Parting Words	 WOTLK:<TXT>Anthion's Parting Words
+			q(9411),	-- <UNUSED>Infused Bandages	 CLASSIC:<UNUSED>Infused Bandages	 TBC:<UNUSED>Infused Bandages	 WOTLK:<UNUSED>Infused Bandages
+			q(9412),	-- <UNUSED>Crystal Flake Throat Lozenge	 CLASSIC:<UNUSED>Crystal Flake Throat Lozenge	 TBC:<UNUSED>Crystal Flake Throat Lozenge	 WOTLK:<UNUSED>Crystal Flake Throat Lozenge
+			q(9413),	-- <UNUSED>Crystal Flake Throat Lozenge	 CLASSIC:<UNUSED>Crystal Flake Throat Lozenge	 TBC:<UNUSED>Crystal Flake Throat Lozenge	 WOTLK:<UNUSED>Crystal Flake Throat Lozenge
+			q(9414),	-- <UNUSED>Infused Bandages	 CLASSIC:<UNUSED>Infused Bandages	 TBC:<UNUSED>Infused Bandages	 WOTLK:<UNUSED>Infused Bandages
 		}),
 		tier(TBC_TIER, {
 			q(24922),	-- LFGDungeons - Burning Crusade - Heroic Random - 1st
