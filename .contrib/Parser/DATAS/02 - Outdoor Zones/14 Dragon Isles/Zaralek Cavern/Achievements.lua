@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["_npcs"] = { 203630 },	-- Lavermix
 				}),
 				crit(18, {
-					["_npcs"] = { 200111 },	-- Magmanesha
+					["_npcs"] = { 200111 },	-- Magtembo
 				}),
 				crit(19, {
 					["_npcs"] = { 203521 },	-- Professor Gastrinax
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["_npcs"] = { 203462 },	-- Kob'rok
 					}),
 					crit(15, {
-						["_npcs"] = { 200111 },	-- Magmanesha
+						["_npcs"] = { 200111 },	-- Magtembo
 					}),
 					crit(16, {
 						["_npcs"] = { 203521 },	-- Professor Gastrinax

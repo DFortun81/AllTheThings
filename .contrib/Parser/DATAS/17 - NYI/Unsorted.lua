@@ -203,29 +203,7 @@ root(ROOTS.Unsorted, {
 				i(205229),	-- Magma Serpent Lure
 				i(205262),	-- Magmaclaw Lure
 				i(205276),	-- Deepflayer Lure
-				-- Rare DROPS
-				i(205294),	-- Sandals of Molten Scorn
-				i(205295),	-- Sediment Sifters
-				i(205297),	-- Flamewielder's Trousers
-				i(205298),	-- Belt of Floating Stone
-				i(205299),	-- Rudiment Cuffs
-				i(205300),	-- Magma Waders
-				i(205301),	-- Hardened Lava Handwraps
-				i(205302),	-- Underlight Headwrap
-				i(205303),	-- Leggings of Flowing Flame
-				i(205304),	-- Snareguard Sash
-				i(205305),	-- Zaralek Arachnid Armbands
-				i(205309),	-- Loyal Attendant's Gaze
-				i(205317),	-- Crystalpod Gauntlets
-				i(205319),	-- Deepflayer Shoulderguards
-				i(205320),	-- Greatbelt of the Stronk
-				i(205323),	-- Rock-Lined Pauldrons
-				i(205324),	-- Moth Queen Mantle
-				i(205325),	-- Crystal Wing Shield
-				i(205331),	-- Zskorran Cleaver
-				i(205332),	-- Fist of the Demolisher
-				i(205333),	-- Obsidian Amulet of Transmutation
-				--
+				-- Blue Dragonflight Questline
 				i(205955),	-- Azure Renewal Mantle
 				i(205956),	-- Azure Renewal Cape
 				i(205957),	-- Azure Renewal Tabard
