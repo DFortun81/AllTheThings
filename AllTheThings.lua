@@ -24384,6 +24384,10 @@ app.InitDataCoroutine = function()
 	-- do a settings apply to ensure ATT windows which have now been created, are moved according to the current Profile
 	app.Settings:ApplyProfile();
 
+	-- clear harvest data on load in case someone forgets
+	AllTheThingsHarvestItems = {};
+	AllTheThingsArtifactsItems = {};
+
 	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 	DelayedCallback(app.LocationTrigger, 3);
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
