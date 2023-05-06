@@ -8,688 +8,369 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		tier(CLASSIC_TIER, {
 			-- 1.x.x
 			n(P1xx, {
-				q(73),	-- <TXT> No Reward	 CLASSIC:<TXT> No Reward	 TBC:<TXT> No Reward	 WOTLK:<TXT> No Reward
-				q(137),	-- <NYI> <TXT> Stormwind Commendation	 CLASSIC:<NYI> <TXT> Stormwind Commendation	 TBC:<NYI> <TXT> Stormwind Commendation	 WOTLK:<NYI> <TXT> Stormwind Commendation
-				q(242),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(259),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(260),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(352),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(402),	-- Sirra is Busy
-				q(406),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(462),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(490),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(497),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(534),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(612),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(636),	-- Legends of the Earth <NYI>	 CLASSIC:Legends of the Earth <NYI>	 TBC:Legends of the Earth <NYI>	 WOTLK:Legends of the Earth <NYI>
-				q(785, {	-- A Strategic Alliance
-					-- low enough questID for classic, but unable to verify if it actually was in vanilla
-					-- since Neeru Fireblade was moved to Orgrimmar for launch, it seems unlikely.
-					["qg"] = 3216,	-- Neeru Fireblade
-					["coord"] = { 49.64, 50.31, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 5,
-				}),
-				q(787, {	-- The New Horde
-					-- This quest was never in Classic, it's assumed that like the one above it was removed prior to launch.
-					["qg"] = 3144,	-- Eitrigg
-					["coord"] = { 34.3, 39.4, ORGRIMMAR },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-				}),
-				q(807),	-- <UNUSED>	 CLASSIC:<UNUSED>	 WOTLK:<UNUSED>
-				q(810),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(811),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(814),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(820),	-- <UNUSED>	 CLASSIC:<UNUSED>	 WOTLK:<UNUSED>
-				q(839),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(856),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(908),	-- Amongst the Ruins
-				q(909),	-- Baron Aquanis
-				q(912, {	-- Stonesplinter Trogg Disguise
-					i(5131),	-- Knowledge: Stonesplinter Disguise
-				}),
-				q(946),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(988),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(989),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(1099, {	-- Goblins Win!
-					i(5858),	-- Goblin Prize Box
-				}),
-				q(1155),	-- <NYI> <TXT> bug crystal side quest	 CLASSIC:<NYI> <TXT> bug crystal side quest	 TBC:<NYI> <TXT> bug crystal side quest	 WOTLK:<NYI> <TXT> bug crystal side quest
-				q(1156),	-- <NYI> <TXT> speak to alchemist pestlezugg	 CLASSIC:<NYI> <TXT> speak to alchemist pestlezugg	 TBC:<NYI> <TXT> speak to alchemist pestlezugg	 WOTLK:<NYI> <TXT> speak to alchemist pestlezugg
-				q(1157),	-- <NYI> <TXT> pestlezugg needs items	 CLASSIC:<NYI> <TXT> pestlezugg needs items	 TBC:<NYI> <TXT> pestlezugg needs items	 WOTLK:<NYI> <TXT> pestlezugg needs items
-				q(1158),	-- <NYI> <TXT> speak to rabine saturna	 CLASSIC:<NYI> <TXT> speak to rabine saturna	 TBC:<NYI> <TXT> speak to rabine saturna	 WOTLK:<NYI> <TXT> speak to rabine saturna
-				q(1161),	-- <NYI> <TXT> gossip shade of ambermoon	 CLASSIC:<NYI> <TXT> gossip shade of ambermoon	 TBC:<NYI> <TXT> gossip shade of ambermoon	 WOTLK:<NYI> <TXT> gossip shade of ambermoon
-				q(1162),	-- <NYI> <TXT> speak to hamuul runetotem	 CLASSIC:<NYI> <TXT> speak to hamuul runetotem	 TBC:<NYI> <TXT> speak to hamuul runetotem	 WOTLK:<NYI> <TXT> speak to hamuul runetotem
-				q(1163),	-- <NYI> <TXT> speak to tyrande whisperwind	 CLASSIC:<NYI> <TXT> speak to tyrande whisperwind	 TBC:<NYI> <TXT> speak to tyrande whisperwind	 WOTLK:<NYI> <TXT> speak to tyrande whisperwind
-				q(1174, {	-- Gnomes Win!
-					i(5857),	-- Gnome Prize Box
-				}),
-				q(1277),	-- <nyi> <TXT> The Centaur Hoofprints	 CLASSIC:<nyi> <TXT> The Centaur Hoofprints	 TBC:<nyi> <TXT> The Centaur Hoofprints	 WOTLK:<nyi> <TXT> The Centaur Hoofprints
-				q(1278),	-- <nyi> <TXT> The Grim Totem Clan	 CLASSIC:<nyi> <TXT> The Grim Totem Clan	 TBC:<nyi> <TXT> The Grim Totem Clan	 WOTLK:<nyi> <TXT> The Grim Totem Clan
-				q(1279),	-- <nyi> <TXT>The Centaur Hoofprints	 CLASSIC:<nyi> <TXT>The Centaur Hoofprints	 TBC:<nyi> <TXT>The Centaur Hoofprints	 WOTLK:<nyi> <TXT>The Centaur Hoofprints
-				q(1280),	-- <nyi> <TXT>The Centaur Hoofprints	 CLASSIC:<nyi> <TXT>The Centaur Hoofprints	 TBC:<nyi> <TXT>The Centaur Hoofprints	 WOTLK:<nyi> <TXT>The Centaur Hoofprints
-				q(1289),	-- <nyi> Vimes's Report	 CLASSIC:<nyi> Vimes's Report
-				q(1290),	-- <nyi> Investigating Mosarn	 CLASSIC:<nyi> Investigating Mosarn	 WOTLK:<nyi> Investigating Mosarn
-				q(1291),	-- <nyi> <TXT> Centaur Hoofprints	 CLASSIC:<nyi> <TXT> Centaur Hoofprints
-				q(1292),	-- <nyi><TXT> Centaur Hoofprints	 CLASSIC:<nyi><TXT> Centaur Hoofprints
-				q(1293),	-- <nyi> <TXT> Centaur Hoofprints	 CLASSIC:<nyi> <TXT> Centaur Hoofprints	 TBC:<nyi> <TXT> Centaur Hoofprints	 WOTLK:<nyi> <TXT> Centaur Hoofprints
-				q(1294),	-- <nyi> <TXT>Centaur Sympathies	 CLASSIC:<nyi> <TXT>Centaur Sympathies	 TBC:<nyi> <TXT>Centaur Sympathies	 WOTLK:<nyi> <TXT>Centaur Sympathies
-				q(1295),	-- <nyi> <TXT> Course of Action	 CLASSIC:<nyi> <TXT> Course of Action	 TBC:<nyi> <TXT> Course of Action	 WOTLK:<nyi> <TXT> Course of Action
-				q(1296),	-- <nyi> <TXT> Course of Action	 CLASSIC:<nyi> <TXT> Course of Action	 TBC:<nyi> <TXT> Course of Action	 WOTLK:<nyi> <TXT> Course of Action
-				q(1297),	-- <nyi> <TXT> Course of Action	 CLASSIC:<nyi> <TXT> Course of Action	 TBC:<nyi> <TXT> Course of Action	 WOTLK:<nyi> <TXT> Course of Action
-				q(1298),	-- <nyi> <TXT> Thrall's Dirty Work	 CLASSIC:<nyi> <TXT> Thrall's Dirty Work
-				q(1299),	-- <nyi> <TXT> Thrall's Dirty Work	 CLASSIC:<nyi> <TXT> Thrall's Dirty Work	 TBC:<nyi> <TXT> Thrall's Dirty Work	 WOTLK:<nyi> <TXT> Thrall's Dirty Work
-				q(1300),	-- <nyi> <TXT> Lorn Grim Totem	 CLASSIC:<nyi> <TXT> Lorn Grim Totem	 TBC:<nyi> <TXT> Lorn Grim Totem	 WOTLK:<nyi> <TXT> Lorn Grim Totem
-				q(1318),	-- Unfinished Gordok Business
-				q(1390),	-- <nyi> Oops, We Killed Them Again.	 CLASSIC:<nyi> Oops, We Killed Them Again.
-				q(1397),	-- <nyi> Saved!	 CLASSIC:<nyi> Saved!
-				q(1441),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(1443),	-- <nyi> The Shakedown	 CLASSIC:<nyi> The Shakedown
-				q(1460),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(1461),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(1533),	-- <NYI> Call of Air	 CLASSIC:<NYI> Call of Air
-				q(1537),	-- <NYI> Call of Air	 CLASSIC:<NYI> Call of Air	 TBC:<NYI> Call of Air	 WOTLK:<NYI> Call of Air
-				q(1538),	-- <NYI> Call of Air	 CLASSIC:<NYI> Call of Air
-				q(1659),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(1660),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(1662),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(1663),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(1664),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(2020),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(2058),	-- <UNUSED>	 CLASSIC:<UNUSED>	 WOTLK:<UNUSED>
-				q(2059),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(2868),	-- <TXT> The Shriveled Heart	 CLASSIC:<TXT> The Shriveled Heart	 TBC:<TXT> The Shriveled Heart	 WOTLK:<TXT> The Shriveled Heart
-				q(2971),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3023),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak	 CLASSIC:<NYI> <TXT><redux> Dreadmist Peak	 TBC:<NYI> <TXT><redux> Dreadmist Peak	 WOTLK:<NYI> <TXT><redux> Dreadmist Peak
-				q(3366),	-- OLD The Glowing Shard
-				q(3383),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3384),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3401),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3403),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3404),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3405),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3422),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3423),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3424),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3425),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3482),	-- <NYI> <TXT> The Pocked Black Box	 CLASSIC:<NYI> <TXT> The Pocked Black Box	 TBC:<NYI> <TXT> The Pocked Black Box	 WOTLK:<NYI> <TXT> The Pocked Black Box
-				q(3515),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3516),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(3529),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3530),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(3531),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(3622),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(3623),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(3624),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(3885),	-- <NYI> <TXT> The Gadgetzan Run	 CLASSIC:<NYI> <TXT> The Gadgetzan Run	 TBC:<NYI> <TXT> The Gadgetzan Run	 WOTLK:<NYI> <TXT> The Gadgetzan Run
-				q(3910),	-- <NYI> <TXT> The Un'Goro Run	 CLASSIC:<NYI> <TXT> The Un'Goro Run
-				q(3911),	-- The Last Element
-				q(4299),	-- <NYI> <TXT>The Tomb of the Seven	 CLASSIC:<NYI> <TXT>The Tomb of the Seven	 TBC:<NYI> <TXT>The Tomb of the Seven	 WOTLK:<NYI> <TXT>The Tomb of the Seven
-				q(4323),	-- <NYI> <TXT> Get those Hyenas!!!	 CLASSIC:<NYI> <TXT> Get those Hyenas!!!	 TBC:<NYI> <TXT> Get those Hyenas!!!	 WOTLK:<NYI> <TXT> Get those Hyenas!!!
-				q(4541),	-- <NYI> <TXT>	 CLASSIC:<NYI> <TXT>
-				q(4905),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(5205),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(5207),	-- <NYI> <TXT> The True Summoner	 CLASSIC:<NYI> <TXT> The True Summoner	 TBC:<NYI> <TXT> The True Summoner	 WOTLK:<NYI> <TXT> The True Summoner
-				q(5208),	-- <NYI> <TXT> The Blessing of Evil	 CLASSIC:<NYI> <TXT> The Blessing of Evil	 TBC:<NYI> <TXT> The Blessing of Evil	 WOTLK:<NYI> <TXT> The Blessing of Evil
-				q(5209),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(5303),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5304),	-- <UNUSED>	 CLASSIC:<UNUSED>	 WOTLK:<UNUSED>
-				q(5383),	-- Krastinov's Bag of Horrors
-				q(5506),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(5512),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(5516),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(5520),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(5523),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(5530),	-- <NYI> <TXT> Necklace of the Dawn	 CLASSIC:<NYI> <TXT> Necklace of the Dawn	 WOTLK:<NYI> <TXT> Necklace of the Dawn
-				q(5532),	-- <NYI> <TXT> Ring of the Dawn	 CLASSIC:<NYI> <TXT> Ring of the Dawn	 TBC:<NYI> <TXT> Ring of the Dawn	 WOTLK:<NYI> <TXT> Ring of the Dawn
-				q(5653),	-- <NYI> Hex of Weakness	 CLASSIC:<NYI> Hex of Weakness
-				q(5659),	-- <NYI> Touch of Weakness	 CLASSIC:<NYI> Touch of Weakness	 WOTLK:<NYI> Touch of Weakness
-				q(5664),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5665),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5666),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5667),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5668),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light
-				q(5669),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light
-				q(5670),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light
-				q(5671),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light
-				q(5681),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5682),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5683),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5684),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5685),	-- <NYI> <TXT> The Light Protects You	 CLASSIC:<NYI> <TXT> The Light Protects You
-				q(5686),	-- <NYI> The Light Protects You	 CLASSIC:<NYI> The Light Protects You
-				q(5687),	-- <NYI> The Light Protects You	 CLASSIC:<NYI> The Light Protects You
-				q(5688),	-- <NYI> <TXT> A Touch of Voodoo	 CLASSIC:<NYI> <TXT> A Touch of Voodoo
-				q(5689),	-- <NYI> A Touch of Voodoo	 CLASSIC:<NYI> A Touch of Voodoo
-				q(5690),	-- <NYI> <TXT> A Touch of Voodoo	 CLASSIC:<NYI> <TXT> A Touch of Voodoo
-				q(5691),	-- <NYI> <TXT> In the Dark it was Created	 CLASSIC:<NYI> <TXT> In the Dark it was Created
-				q(5692),	-- <NYI> In the Dark It was Created	 CLASSIC:<NYI> In the Dark It was Created
-				q(5693),	-- <NYI> In the Dark It was Created	 CLASSIC:<NYI> In the Dark It was Created
-				q(5694),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5695),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5696),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5697),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(5698),	-- <NYI> <TXT> A Small Amount of Hope	 CLASSIC:<NYI> <TXT> A Small Amount of Hope
-				q(5699),	-- <NYI> A Small Amount of Hope	 CLASSIC:<NYI> A Small Amount of Hope
-				q(5700),	-- <NYI> A Small Amount of Hope	 CLASSIC:<NYI> A Small Amount of Hope
-				q(5701),	-- <NYI> <TXT> The Rites of Old	 CLASSIC:<NYI> <TXT> The Rites of Old
-				q(5702),	-- <NYI> The Rites of Old	 CLASSIC:<NYI> The Rites of Old
-				q(5703),	-- <NYI> The Rites of Old	 CLASSIC:<NYI> The Rites of Old
-				q(5704),	-- <NYI> <TXT> Undead Priest Robe	 CLASSIC:<NYI> <TXT> Undead Priest Robe
-				q(5705),	-- <NYI> No Longer a Shadow	 CLASSIC:<NYI> No Longer a Shadow
-				q(5706),	-- <NYI> No Longer a Shadow	 CLASSIC:<NYI> No Longer a Shadow
-				q(5707),	-- <NYI> <TXT> Flirting With Darkness	 CLASSIC:<NYI> <TXT> Flirting With Darkness
-				q(5708),	-- <NYI> Flirting With Darkness	 CLASSIC:<NYI> Flirting With Darkness
-				q(5709),	-- <NYI> Flirting With Darkness	 CLASSIC:<NYI> Flirting With Darkness
-				q(5710),	-- <NYI> <TXT> Troll Priest Robe	 CLASSIC:<NYI> <TXT> Troll Priest Robe
-				q(5711),	-- <NYI> The Lost Ways	 CLASSIC:<NYI> The Lost Ways
-				q(5712),	-- <NYI> The Lost Ways	 CLASSIC:<NYI> The Lost Ways
-				q(6003),	-- <nyi> <txt> Green With Envy	 CLASSIC:<nyi> <txt> Green With Envy
-				q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains	 CLASSIC:<NYI> <TXT> Archmage Timolain's Remains	 TBC:<NYI> <TXT> Archmage Timolain's Remains	 WOTLK:<NYI> <TXT> Archmage Timolain's Remains
-				q(6201),	-- <UNUSED> The Legacy of the Ashbringer	 CLASSIC:<UNUSED> The Legacy of the Ashbringer	 TBC:<UNUSED> The Legacy of the Ashbringer	 WOTLK:<UNUSED> The Legacy of the Ashbringer
-				q(6202),	-- <UNUSED> Good and Evil	 CLASSIC:<UNUSED> Good and Evil
-				q(6841),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(7221),	-- Speak with Prospector Stonehewer
-				q(7222),	-- Speak with Voggah Deathgrip
-				q(7384),	-- <nyi> <txt> The Scale Crafters	 CLASSIC:<nyi> <txt> The Scale Crafters
-				q(7462),	-- The Treasure of the Shen'dralar
-				q(7478),	-- Libram of Rapidity
-				q(7479),	-- Libram of Focus
-				q(7480),	-- Libram of Protection
-				q(7904),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(7906),	-- Darkmoon Cards - Beast
-				q(7961),	-- Waskily Wabbits!
-				q(7962),	-- Wabbit Pelts
-				q(8247),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(8248),	-- <UNUSED>	 CLASSIC:<UNUSED>
-				q(8444),	-- <NYI> <TXT> gossip shade of ambermoon	 CLASSIC:<NYI> <TXT> gossip shade of ambermoon	 TBC:<NYI> <TXT> gossip shade of ambermoon	 WOTLK:<NYI> <TXT> gossip shade of ambermoon
-				q(8445),	-- <NYI> <TXT> gossip shade of ambermoon	 CLASSIC:<NYI> <TXT> gossip shade of ambermoon	 TBC:<NYI> <TXT> gossip shade of ambermoon	 WOTLK:<NYI> <TXT> gossip shade of ambermoon
-				q(8459),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-				q(9031),	-- <TXT>Anthion's Parting Words	 CLASSIC:<TXT>Anthion's Parting Words	 WOTLK:<TXT>Anthion's Parting Words
-				q(9411),	-- <UNUSED>Infused Bandages	 CLASSIC:<UNUSED>Infused Bandages	 TBC:<UNUSED>Infused Bandages	 WOTLK:<UNUSED>Infused Bandages
-				q(9412),	-- <UNUSED>Crystal Flake Throat Lozenge	 CLASSIC:<UNUSED>Crystal Flake Throat Lozenge	 TBC:<UNUSED>Crystal Flake Throat Lozenge	 WOTLK:<UNUSED>Crystal Flake Throat Lozenge
-				q(9413),	-- <UNUSED>Crystal Flake Throat Lozenge	 CLASSIC:<UNUSED>Crystal Flake Throat Lozenge	 TBC:<UNUSED>Crystal Flake Throat Lozenge	 WOTLK:<UNUSED>Crystal Flake Throat Lozenge
-				q(9414),	-- <UNUSED>Infused Bandages	 CLASSIC:<UNUSED>Infused Bandages	 TBC:<UNUSED>Infused Bandages	 WOTLK:<UNUSED>Infused Bandages
-				q(3064),	-- <NYI> <TXT> Pirate Hats
-				q(241),	-- <TEST> HEY MISTER WILSON!
-				q(8489),	-- BETA An Intact Converter [Eversong Woods]
-				q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
-				q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
-				q(9695),	-- The Sun King's Command
-				q(708, {	-- The Black Box [Badlands]
-					["provider"] = { "i", 4613 },	-- Corroded Black Box
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
-				}),
+				q(4541, { ["name"] = "<NYI> <TXT>", }),
+				q(5698, { ["name"] = "<NYI> <TXT> A Small Amount of Hope", }),
+				q(5688, { ["name"] = "<NYI> <TXT> A Touch of Voodoo", }),
+				q(5690, { ["name"] = "<NYI> <TXT> A Touch of Voodoo", }),
+				q(6165, { ["name"] = "<NYI> <TXT> Archmage Timolain's Remains", }),
+				q(1155, { ["name"] = "<NYI> <TXT> bug crystal side quest", }),
+				q(1291, { ["name"] = "<nyi> <TXT> Centaur Hoofprints", }),
+				q(1293, { ["name"] = "<nyi> <TXT> Centaur Hoofprints", }),
+				q(1295, { ["name"] = "<nyi> <TXT> Course of Action", }),
+				q(1296, { ["name"] = "<nyi> <TXT> Course of Action", }),
+				q(1297, { ["name"] = "<nyi> <TXT> Course of Action", }),
+				q(5707, { ["name"] = "<NYI> <TXT> Flirting With Darkness", }),
+				q(4323, { ["name"] = "<NYI> <TXT> Get those Hyenas!!!", }),
+				q(1161, { ["name"] = "<NYI> <TXT> gossip shade of ambermoon", }),
+				q(8444, { ["name"] = "<NYI> <TXT> gossip shade of ambermoon", }),
+				q(8445, { ["name"] = "<NYI> <TXT> gossip shade of ambermoon", }),
+				q(6003, { ["name"] = "<nyi> <txt> Green With Envy", }),
+				q(5691, { ["name"] = "<NYI> <TXT> In the Dark it was Created", }),
+				q(1300, { ["name"] = "<nyi> <TXT> Lorn Grim Totem", }),
+				q(5530, { ["name"] = "<NYI> <TXT> Necklace of the Dawn", }),
+				q(1157, { ["name"] = "<NYI> <TXT> pestlezugg needs items", }),
+				q(3064, { ["name"] = "<NYI> <TXT> Pirate Hats", }),
+				q(5532, { ["name"] = "<NYI> <TXT> Ring of the Dawn ", }),
+				q(1156, { ["name"] = "<NYI> <TXT> speak to alchemist pestlezugg", }),
+				q(1162, { ["name"] = "<NYI> <TXT> speak to hamuul runetotem", }),
+				q(1158, { ["name"] = "<NYI> <TXT> speak to rabine saturna", }),
+				q(1163, { ["name"] = "<NYI> <TXT> speak to tyrande whisperwind", }),
+				q(137, { ["name"] = "<NYI> <TXT> Stormwind Commendation", }),	
+				q(5208, { ["name"] = "<NYI> <TXT> The Blessing of Evil", }),
+				q(1277, { ["name"] = "<nyi> <TXT> The Centaur Hoofprints", }),
+				q(3885, { ["name"] = "<NYI> <TXT> The Gadgetzan Run", }),
+				q(1278, { ["name"] = "<nyi> <TXT> The Grim Totem Clan", }),
+				q(5685, { ["name"] = "<NYI> <TXT> The Light Protects You", }),
+				q(3482, { ["name"] = "<NYI> <TXT> The Pocked Black Box", }),
+				q(5701, { ["name"] = "<NYI> <TXT> The Rites of Old", }),
+				q(7384, { ["name"] = "<nyi> <txt> The Scale Crafters", }),
+				q(5207, { ["name"] = "<NYI> <TXT> The True Summoner", }),
+				q(3910, { ["name"] = "<NYI> <TXT> The Un'Goro Run", }),
+				q(1298, { ["name"] = "<nyi> <TXT> Thrall's Dirty Work", }),
+				q(1299, { ["name"] = "<nyi> <TXT> Thrall's Dirty Work", }),
+				q(5710, { ["name"] = "<NYI> <TXT> Troll Priest Robe", }),
+				q(5704, { ["name"] = "<NYI> <TXT> Undead Priest Robe", }),
+				q(3241, { ["name"] = "<NYI> <TXT><redux> Dreadmist Peak", }),
+				q(1294, { ["name"] = "<nyi> <TXT>Centaur Sympathies", }),
+				q(1279, { ["name"] = "<nyi> <TXT>The Centaur Hoofprints", }),
+				q(1280, { ["name"] = "<nyi> <TXT>The Centaur Hoofprints", }),
+				q(4299, { ["name"] = "<NYI> <TXT>The Tomb of the Seven", }),
+				q(5668, { ["name"] = "<NYI> A Blessing of Light", }),
+				q(5669, { ["name"] = "<NYI> A Blessing of Light", }),
+				q(5670, { ["name"] = "<NYI> A Blessing of Light", }),
+				q(5671, { ["name"] = "<NYI> A Blessing of Light", }),
+				q(5699, { ["name"] = "<NYI> A Small Amount of Hope", }),
+				q(5700, { ["name"] = "<NYI> A Small Amount of Hope", }),
+				q(5689, { ["name"] = "<NYI> A Touch of Voodoo", }),
+				q(1533, { ["name"] = "<NYI> Call of Air", }),
+				q(1537, { ["name"] = "<NYI> Call of Air", }),
+				q(1538, { ["name"] = "<NYI> Call of Air", }),
+				q(5708, { ["name"] = "<NYI> Flirting With Darkness", }),
+				q(5709, { ["name"] = "<NYI> Flirting With Darkness", }),
+				q(5653, { ["name"] = "<NYI> Hex of Weakness", }),
+				q(5692, { ["name"] = "<NYI> In the Dark It was Created", }),
+				q(5693, { ["name"] = "<NYI> In the Dark It was Created", }),
+				q(1290, { ["name"] = "<nyi> Investigating Mosarn", }),
+				q(5705, { ["name"] = "<NYI> No Longer a Shadow", }),
+				q(5706, { ["name"] = "<NYI> No Longer a Shadow", }),
+				q(1390, { ["name"] = "<nyi> Oops, We Killed Them Again.", }),
+				q(1397, { ["name"] = "<nyi> Saved!", }),
+				q(5686, { ["name"] = "<NYI> The Light Protects You", }),
+				q(5687, { ["name"] = "<NYI> The Light Protects You", }),
+				q(5711, { ["name"] = "<NYI> The Lost Ways", }),
+				q(5712, { ["name"] = "<NYI> The Lost Ways", }),
+				q(5702, { ["name"] = "<NYI> The Rites of Old", }),
+				q(5703, { ["name"] = "<NYI> The Rites of Old", }),
+				q(1443, { ["name"] = "<nyi> The Shakedown", }),
+				q(5659, { ["name"] = "<NYI> Touch of Weakness", }),
+				q(1289, { ["name"] = "<nyi> Vimes's Report", }),
+				q(1292, { ["name"] = "<nyi><TXT> Centaur Hoofprints", }),
+				q(241, { ["name"] = "<TEST> HEY MISTER WILSON!", }),
+				q(2868, { ["name"] = "<TXT> The Shriveled Heart", }),
+				q(9031, { ["name"] = "<TXT>Anthion's Parting Words", }),
+				q(242, { ["name"] = "<UNUSED>", }),
+				q(259, { ["name"] = "<UNUSED>", }),
+				q(260, { ["name"] = "<UNUSED>", }),
+				q(352, { ["name"] = "<UNUSED>", }),
+				q(406, { ["name"] = "<UNUSED>", }),
+				q(462, { ["name"] = "<UNUSED>", }),
+				q(490, { ["name"] = "<UNUSED>", }),
+				q(497, { ["name"] = "<UNUSED>", }),
+				q(534, { ["name"] = "<UNUSED>", }),
+				q(612, { ["name"] = "<UNUSED>", }),
+				q(807, { ["name"] = "<UNUSED>", }),
+				q(810, { ["name"] = "<UNUSED>", }),
+				q(811, { ["name"] = "<UNUSED>", }),
+				q(814, { ["name"] = "<UNUSED>", }),
+				q(820, { ["name"] = "<UNUSED>", }),
+				q(839, { ["name"] = "<UNUSED>", }),
+				q(856, { ["name"] = "<UNUSED>", }),
+				q(946, { ["name"] = "<UNUSED>", }),
+				q(988, { ["name"] = "<UNUSED>", }),
+				q(989, { ["name"] = "<UNUSED>", }),
+				q(1441, { ["name"] = "<UNUSED>", }),
+				q(1460, { ["name"] = "<UNUSED>", }),
+				q(1461, { ["name"] = "<UNUSED>", }),
+				q(1659, { ["name"] = "<UNUSED>", }),
+				q(1660, { ["name"] = "<UNUSED>", }),
+				q(1662, { ["name"] = "<UNUSED>", }),
+				q(1663, { ["name"] = "<UNUSED>", }),
+				q(1664, { ["name"] = "<UNUSED>", }),
+				q(2020, { ["name"] = "<UNUSED>", }),
+				q(2058, { ["name"] = "<UNUSED>", }),
+				q(2059, { ["name"] = "<UNUSED>", }),
+				q(2971, { ["name"] = "<UNUSED>", }),
+				q(3023, { ["name"] = "<UNUSED>", }),
+				q(3383, { ["name"] = "<UNUSED>", }),
+				q(3384, { ["name"] = "<UNUSED>", }),
+				q(3401, { ["name"] = "<UNUSED>", }),
+				q(3403, { ["name"] = "<UNUSED>", }),
+				q(3404, { ["name"] = "<UNUSED>", }),
+				q(3405, { ["name"] = "<UNUSED>", }),
+				q(3422, { ["name"] = "<UNUSED>", }),
+				q(3423, { ["name"] = "<UNUSED>", }),
+				q(3424, { ["name"] = "<UNUSED>", }),
+				q(3425, { ["name"] = "<UNUSED>", }),
+				q(3515, { ["name"] = "<UNUSED>", }),
+				q(3516, { ["name"] = "<UNUSED>", }),
+				q(3529, { ["name"] = "<UNUSED>", }),
+				q(3530, { ["name"] = "<UNUSED>", }),
+				q(3531, { ["name"] = "<UNUSED>", }),
+				q(3622, { ["name"] = "<UNUSED>", }),
+				q(3623, { ["name"] = "<UNUSED>", }),
+				q(3624, { ["name"] = "<UNUSED>", }),
+				q(4905, { ["name"] = "<UNUSED>", }),
+				q(5205, { ["name"] = "<UNUSED>", }),
+				q(5209, { ["name"] = "<UNUSED>", }),
+				q(5303, { ["name"] = "<UNUSED>", }),
+				q(5304, { ["name"] = "<UNUSED>", }),
+				q(5506, { ["name"] = "<UNUSED>", }),
+				q(5512, { ["name"] = "<UNUSED>", }),
+				q(5516, { ["name"] = "<UNUSED>", }),
+				q(5520, { ["name"] = "<UNUSED>", }),
+				q(5523, { ["name"] = "<UNUSED>", }),
+				q(5664, { ["name"] = "<UNUSED>", }),
+				q(5665, { ["name"] = "<UNUSED>", }),
+				q(5666, { ["name"] = "<UNUSED>", }),
+				q(5667, { ["name"] = "<UNUSED>", }),
+				q(5681, { ["name"] = "<UNUSED>", }),
+				q(5682, { ["name"] = "<UNUSED>", }),
+				q(5683, { ["name"] = "<UNUSED>", }),
+				q(5684, { ["name"] = "<UNUSED>", }),
+				q(5694, { ["name"] = "<UNUSED>", }),
+				q(5695, { ["name"] = "<UNUSED>", }),
+				q(5696, { ["name"] = "<UNUSED>", }),
+				q(5697, { ["name"] = "<UNUSED>", }),
+				q(6841, { ["name"] = "<UNUSED>", }),
+				q(7904, { ["name"] = "<UNUSED>", }),
+				q(8247, { ["name"] = "<UNUSED>", }),
+				q(8248, { ["name"] = "<UNUSED>", }),
+				q(8459, { ["name"] = "<UNUSED>", }),
+				q(6202, { ["name"] = "<UNUSED> Good and Evil", }),
+				q(6201, { ["name"] = "<UNUSED> The Legacy of the Ashbringer", }),
+				q(9412, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+				q(9413, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+				q(9411, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(9414, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(785, { ["name"] = "A Strategic Alliance", }),
+				q(908, { ["name"] = "Amongst the Ruins", }),
+				q(8489, { ["name"] = "An Intact Converter", }),
+				q(909, { ["name"] = "Baron Aquanis", }),
+				q(8478, { ["name"] = "Choose Your Weapon", }),
+				q(7906, { ["name"] = "Darkmoon Cards - Beast", }),
+				q(1127, { ["name"] = "Fool's Stout", }),
+				q(1174, { ["name"] = "Gnomes Win!", }),
+				q(1099, { ["name"] = "Goblins Win!", }),
+				q(5383, { ["name"] = "Krastinov's Bag of Horrors", }),
+				q(636, { ["name"] = "Legends of the Earth <NYI>", }),
+				q(7479, { ["name"] = "Libram of Focus", }),
+				q(7480, { ["name"] = "Libram of Protection", }),
+				q(7478, { ["name"] = "Libram of Rapidity", }),
+				q(3366, { ["name"] = "OLD The Glowing Shard", }),
+				q(402, { ["name"] = "Sirra is Busy", }),
+				q(7221, { ["name"] = "Speak with Prospector Stonehewer", }),
+				q(7222, { ["name"] = "Speak with Voggah Deathgrip", }),
+				q(912, { ["name"] = "Stonesplinter Trogg Disguise", }),
+				q(708, { ["name"] = "The Black Box", }),
+				q(8896, { ["name"] = "The Dwarven Spy", }),
+				q(3911, { ["name"] = "The Last Element", }),
+				q(787, { ["name"] = "The New Horde", }),
+				q(9695, { ["name"] = "The Sun King's Command", }),
+				q(7462, { ["name"] = "The Treasure of the Shen'dralar", }),
+				q(1318, { ["name"] = "Unfinished Gordok Business", }),
+				q(7962, { ["name"] = "Wabbit Pelts", }),
+				q(7961, { ["name"] = "Waskily Wabbits!", }),
+				q(73, { ["name"] = "<TXT> No Reward", }),
 			}),
 		}),
 		tier(TBC_TIER, {
 			-- 2.x.x
 			n(P2xx, {
-				q(12405, {	-- Candy Bucket
-					["isYearly"] = true,
-					["u"] = NEVER_IMPLEMENTED,
-					["_drop"] = { "g" },
-				}),
-				q(12410, {	-- Candy Bucket
-					["isYearly"] = true,
-					["_drop"] = { "g" },
-				}),
-				q(11401),	-- Call the Headless Horseman
-				q(11404),	-- Call the Headless Horseman
-				q(11405),	-- Call the Headless Horseman
-				q(11551),	-- BETA Agamath, the First Gate
-				q(11553),	-- BETA Archonisus, the Final Gate
-				q(11552),	-- BETA Rohendor, the Second Gate
-				q(11334),	-- He Shoots, He Scores!
-				q(11345),	-- Prizes for Pellets
-				q(10402),	-- <TXT>	 TBC:<TXT>	 WOTLK:<TXT>
-				q(10560),	-- Revered Among the Sha'tar
-				q(10561),	-- Revered Among the Keepers of Time
-				q(10610),	-- Prospecting Basics
-				q(10616),	-- <nyi>Breadcrumb	 WOTLK:<nyi>Breadcrumb
-				q(10890),	-- [UNUSED] <NYI>	 TBC:[UNUSED] <NYI>	 WOTLK:[UNUSED] <NYI>
-				q(11127),	-- <NYI>Thunderbrew Secrets	 TBC:<NYI>Thunderbrew Secrets	 WOTLK:<NYI>Thunderbrew Secrets
-				q(11493),	-- UNUSED	 WOTLK:UNUSED
-				q(12479),	-- Wrath of the Lich King: Onwards to Northrend!
-				q(12480),	-- Wrath of the Lich King: Onwards to Northrend!
-				q(12923),	-- UNUSED	 WOTLK:
-				q(9344),	-- BETA A Hasty Departure
-				q(10084, {	-- BETA Assault on Mageddon
-					i(25996),	-- Emblem of Perseverance
-					i(25994),	-- Rune of Force
-					i(25995),	-- Star of Sha'naar
-				}),
-				q(10092, {	-- BETA Assault on Mageddon
-					i(25996),	-- Emblem of Perseverance
-					i(25994),	-- Rune of Force
-					i(25995),	-- Star of Sha'naar
-				}),
-				q(10056),	-- BETA Bleeding Hollow Supplies
-				q(10158),	-- BETA Bleeding Hollow Supplies
-				q(10059),	-- BETA Dealing With Zeth'Gor
-				q(10053),	-- BETA Dealing with Zeth'Gor
-				q(10139, {	-- BETA Dispatching the Commander [Alliance]
-					--i(28057),	-- Bonechewer Berserker's Vest
-					i(28054),	-- Fleshripper's Bladed Chestplate [Remained Unobtainable, other rewards moved to other quests.]
-					--i(28055),	-- Gilded Crimson Chestplate
-					--i(28052),	-- Goldweave Tunic
-					--i(28051),	-- Jerkin of the Untamed Spirit
-					--i(28050),	-- Sacred Feather Vest
-				}),
-				q(10157, {	-- BETA Dispatching the Commander [Horde]
-					--i(28057),	-- Bonechewer Berserker's Vest
-					i(28054),	-- Fleshripper's Bladed Chestplate [Remained Unobtainable, other rewards moved to other quests.]
-					--i(28055),	-- Gilded Crimson Chestplate
-					--i(28052),	-- Goldweave Tunic
-					--i(28051),	-- Jerkin of the Untamed Spirit
-					--i(28050),	-- Sacred Feather Vest
-				}),
-				q(10089),	-- BETA Forge Camps of the Legion
-				q(9408),	-- BETA Forgotten Heroes
-				q(10054),	-- BETA Impending Doom
-				q(10060),	-- BETA Impending Doom
-				q(9511),	-- BETA Kargath's Battle Plans
-				q(9342, {	-- BETA Marauding Crust Bursters
-					-- Items on the current version of the quest, these don't need to be marked removed (and shouldn't be)
-					--i(25785),	-- Adept's Band
-					--i(25784),	-- Imbued Chain
-				}),
-				q(10135),	-- BETA Mission: Be the Messenger [Horde]
-				q(10148),	-- BETA Mission: Be the Messenger [Alliance]
-				q(10133),	-- BETA Mission: Kill the Messenger
-				q(10147),	-- BETA Mission: Kill the Messenger
-				q(10127),	-- BETA Mission: Sever the Tie
-				q(10145),	-- BETA Mission: Sever the Tie UNUSED
-				q(10370),	-- BETA Nazgrel's Command
-				q(10131),	-- BETA Planning the Escape
-				q(10154),	-- BETA Planning the Escape
-				q(10137, {	-- BETA Provoking the Warboss
-					i(25988),	-- Glowing Alabaster Ring
-					i(25991),	-- Seamless Stone Band
-					i(25990),	-- Smooth Soapstone Band
-				}),
-				q(10155, {	-- BETA Provoking the Warboss
-					i(25988),	-- Glowing Alabaster Ring
-					i(25991),	-- Seamless Stone Band
-					i(25990),	-- Smooth Soapstone Band
-				}),
-				q(10398),	-- BETA Return to Honor Hold
-				q(10558),	-- BETA Revered Among Honor Hold
-				q(10559),	-- BETA Revered Among Thrallmar
-				q(10128),	-- BETA Saving Private Imarion
-				q(10153),	-- BETA Saving Scout Makha
-				q(10122),	-- BETA The Citadel's Reach
-				q(10150),	-- BETA The Citadel's Reach
-				q(9382, {	-- BETA The Fate of the Clefthoof
-					-- Items on the current version of the quest, these don't need to be marked removed (and shouldn't be)
-					--i(25787),	-- Charm of Alacrity
-					--i(25786),	-- Hypnotist's Watch
-				}),
-				q(10100, {	-- BETA The Mastermind
-					-- Items on the current version of the quest, these don't need to be marked removed (and shouldn't be)
-					--i(25982),	-- Foreman's Sash
-					--i(25983),	-- Heavy Miner's Belt
-					--i(25984),	-- Miner's Brace
-				}),
-				q(10130),	-- BETA The Western Flank
-				q(10152),	-- BETA The Western Flank
-				q(9377),	-- BETA Thirsting For Power
-				q(10046),	-- BETA Through the Dark Portal
-				q(10138),	-- BETA Under Whose Orders?
-				q(10156),	-- BETA Under Whose Orders?
-				q(10126),	-- BETA Warboss Nekrogg's Orders
-				q(10151),	-- BETA Warboss Nekrogg's Orders
-				q(9346),	-- BETA When Helboars Fly
-				q(10090),	-- [Not Used] BETA The Legion's Plans
-				q(9510),	-- [Not Used] BETA Bristlehide Clefthoof Hides
-				q(9380),	-- [Not Used] BETA Hounded for More
-				q(13800),	-- Get My Keys
-				q(10375),	-- Obsidian Warbeads
-				q(13799),	-- Where Are My Keys?
-				q(10187),	-- A Message for the Archmage
-				q(10441),	-- Peddling the Goods
-				q(10179),	-- The Custodian of Kirin'Var
-				q(10048),	-- A Handful of Magic Dust BETA
-				q(10049),	-- A Handful of Magic Dust BETA
-				q(9949),	-- BETA A Bird's-Eye View
-				q(9950),	-- BETA A Bird's-Eye View
-				q(9988, {	-- BETA A Dandy's Best Friend
-					i(28499),	-- Arakkoa Hunter's Supplies
-				}),
-				q(9965),	-- BETA A Show of Good Faith
-				q(9966),	-- BETA A Show of Good Faith
-				q(10032),	-- BETA Artifacts from Tuurem
-				q(9984),	-- BETA Host of the Hidden City
-				q(9985),	-- BETA Host of the Hidden City
-				q(9953),	-- BETA Lookout Nodak
-				q(10195, {	-- BETA Mercenary See, Mercenary Do
-					i(28499),	-- Arakkoa Hunter's Supplies
-				}),
-				q(10196, {	-- BETA More Arakkoa Feathers
-					i(28499),	-- Arakkoa Hunter's Supplies
-				}),
-				q(9975),	-- BETA Primal Magic
-				q(9976),	-- BETA Primal Magic
-				q(9952),	-- BETA Prospector Balmoral
-				q(9980, {	-- BETA Rescue Deirom!
-					i(25967),	-- Eagle Crested Pauldrons
-					i(25968),	-- Shalassi Sentry's Epaulets
-					i(25969),	-- Rapscallion's Touch
-					i(25970),	-- Shalassi Oracle's Sandals
-				}),
-				q(9981, {	-- BETA Rescue Deirom!
-					i(25967),	-- Eagle Crested Pauldrons
-					i(25968),	-- Shalassi Sentry's Epaulets
-					i(25969),	-- Rapscallion's Touch
-					i(25970),	-- Shalassi Oracle's Sandals
-				}),
-				q(9947, {	-- BETA Return to Rokag
-					i(25967),	-- Eagle Crested Pauldrons
-					i(25968),	-- Shalassi Sentry's Epaulets
-					i(25969),	-- Rapscallion's Touch
-					i(25970),	-- Shalassi Oracle's Sandals
-				}),
-				q(9943, {	-- BETA Return to Thander
-					i(25967),	-- Eagle Crested Pauldrons
-					i(25968),	-- Shalassi Sentry's Epaulets
-					i(25969),	-- Rapscallion's Touch
-					i(25970),	-- Shalassi Oracle's Sandals
-				}),
-				q(9958),	-- BETA Scouting the Defenses
-				q(9959),	-- BETA Scouting the Defenses
-				q(9963),	-- BETA Seeking Help from the Source
-				q(9964),	-- BETA Seeking Help from the Source
-				q(9969, {	-- BETA The Final Reagents
-					-- These quest items are available from 'Veil Shalas: Signal Fires'. :)
-					--i(25966),	-- Arakkoa Sage's Shawl
-					--i(25965),	-- Cloak of Grasping Talons
-					--i(25963),	-- Kokorek's Signet
-				}),
-				q(9974, {	-- BETA The Final Reagents
-					-- These quest items are available from 'Veil Shalas: Signal Fires'. :)
-					--i(25966),	-- Arakkoa Sage's Shawl
-					--i(25965),	-- Cloak of Grasping Talons
-					--i(25963),	-- Kokorek's Signet
-				}),
-				q(10014),	-- BETA The Firewing Point Project
-				q(10015),	-- BETA The Firewing Point Project
-				q(9929),	-- BETA The Missing Merchant
-				q(9930),	-- BETA The Missing Merchant
-				q(10029),	-- BETA The Spirits Are Calling
-				q(9941),	-- BETA Tracking Down the Culprits
-				q(9942),	-- BETA Tracking Down the Culprits
-				q(10459),	-- Revered Among the Cenarion Expedition
-				q(10693),	-- One Commendation Signet
-				q(10695),	-- One Commendation Signet
-				q(10697),	-- One Commendation Signet
-				q(10699),	-- One Commendation Signet
-				q(10694),	-- Ten Commendation Signets
-				q(10696),	-- Ten Commendation Signets
-				q(10698),	-- Ten Commendation Signets
-				q(10700),	-- Ten Commendation Signets
+				q(10890, { ["name"] = "[UNUSED] <NYI>", }),
+				q(10616, { ["name"] = "<nyi>Breadcrumb", }),
+				q(11127, { ["name"] = "<NYI>Thunderbrew Secrets", }),
+				q(10402, { ["name"] = "<TXT>", }),
+				q(9949, { ["name"] = "A Bird's-Eye View", }),
+				q(9950, { ["name"] = "A Bird's-Eye View", }),
+				q(9988, { ["name"] = "A Dandy's Best Friend", }),
+				q(10048, { ["name"] = "A Handful of Magic Dust BETA", }),
+				q(10049, { ["name"] = "A Handful of Magic Dust BETA", }),
+				q(9344, { ["name"] = "A Hasty Departure", }),
+				q(10187, { ["name"] = "A Message for the Archmage", }),
+				q(9965, { ["name"] = "A Show of Good Faith", }),
+				q(9966, { ["name"] = "A Show of Good Faith", }),
+				q(11551, { ["name"] = "Agamath, the First Gate", }),
+				q(11553, { ["name"] = "Archonisus, the Final Gate", }),
+				q(10032, { ["name"] = "Artifacts from Tuurem", }),
+				q(10084, { ["name"] = "Assault on Mageddon", }),
+				q(10092, { ["name"] = "Assault on Mageddon", }),
+				q(10056, { ["name"] = "Bleeding Hollow Supplies", }),
+				q(10158, { ["name"] = "Bleeding Hollow Supplies", }),
+				q(9510, { ["name"] = "Bristlehide Clefthoof Hides", }),
+				q(11401, { ["name"] = "Call the Headless Horseman", }),
+				q(11404, { ["name"] = "Call the Headless Horseman", }),
+				q(11405, { ["name"] = "Call the Headless Horseman", }),
+				q(12405, { ["name"] = "Candy Bucket", }),
+				q(12410, { ["name"] = "Candy Bucket", }),
+				q(10059, { ["name"] = "Dealing With Zeth'Gor", }),
+				q(10053, { ["name"] = "Dealing with Zeth'Gor", }),
+				q(10139, { ["name"] = "Dispatching the Commander [Alliance]", }),
+				q(10157, { ["name"] = "Dispatching the Commander [Horde]", }),
+				q(10089, { ["name"] = "Forge Camps of the Legion", }),
+				q(9408, { ["name"] = "Forgotten Heroes", }),
+				q(13800, { ["name"] = "Get My Keys", }),
+				q(11334, { ["name"] = "He Shoots, He Scores!", }),
+				q(9984, { ["name"] = "Host of the Hidden City", }),
+				q(9985, { ["name"] = "Host of the Hidden City", }),
+				q(9380, { ["name"] = "Hounded for More", }),
+				q(10054, { ["name"] = "Impending Doom", }),
+				q(10060, { ["name"] = "Impending Doom", }),
+				q(9511, { ["name"] = "Kargath's Battle Plans", }),
+				q(9953, { ["name"] = "Lookout Nodak", }),
+				q(9342, { ["name"] = "Marauding Crust Bursters", }),
+				q(10195, { ["name"] = "Mercenary See, Mercenary Do", }),
+				q(10148, { ["name"] = "Mission: Be the Messenger [Alliance]", }),
+				q(10135, { ["name"] = "Mission: Be the Messenger [Horde]", }),
+				q(10133, { ["name"] = "Mission: Kill the Messenger", }),
+				q(10147, { ["name"] = "Mission: Kill the Messenger", }),
+				q(10127, { ["name"] = "Mission: Sever the Tie", }),
+				q(10145, { ["name"] = "Mission: Sever the Tie UNUSED", }),
+				q(10196, { ["name"] = "More Arakkoa Feathers", }),
+				q(10370, { ["name"] = "Nazgrel's Command", }),
+				q(10375, { ["name"] = "Obsidian Warbeads", }),
+				q(10693, { ["name"] = "One Commendation Signet", }),
+				q(10695, { ["name"] = "One Commendation Signet", }),
+				q(10697, { ["name"] = "One Commendation Signet", }),
+				q(10699, { ["name"] = "One Commendation Signet", }),
+				q(10441, { ["name"] = "Peddling the Goods", }),
+				q(10131, { ["name"] = "Planning the Escape", }),
+				q(10154, { ["name"] = "Planning the Escape", }),
+				q(9975, { ["name"] = "Primal Magic", }),
+				q(9976, { ["name"] = "Primal Magic", }),
+				q(11345, { ["name"] = "Prizes for Pellets", }),
+				q(10610, { ["name"] = "Prospecting Basics", }),
+				q(9952, { ["name"] = "Prospector Balmoral", }),
+				q(10137, { ["name"] = "Provoking the Warboss", }),
+				q(10155, { ["name"] = "Provoking the Warboss", }),
+				q(9980, { ["name"] = "Rescue Deirom!", }),
+				q(9981, { ["name"] = "Rescue Deirom!", }),
+				q(10398, { ["name"] = "Return to Honor Hold", }),
+				q(9947, { ["name"] = "Return to Rokag", }),
+				q(9943, { ["name"] = "Return to Thander", }),
+				q(10558, { ["name"] = "Revered Among Honor Hold", }),
+				q(10459, { ["name"] = "Revered Among the Cenarion Expedition", }),
+				q(10561, { ["name"] = "Revered Among the Keepers of Time", }),
+				q(10560, { ["name"] = "Revered Among the Sha'tar", }),
+				q(10559, { ["name"] = "Revered Among Thrallmar", }),
+				q(11552, { ["name"] = "Rohendor, the Second Gate", }),
+				q(10128, { ["name"] = "Saving Private Imarion", }),
+				q(10153, { ["name"] = "Saving Scout Makha", }),
+				q(9958, { ["name"] = "Scouting the Defenses", }),
+				q(9959, { ["name"] = "Scouting the Defenses", }),
+				q(9963, { ["name"] = "Seeking Help from the Source", }),
+				q(9964, { ["name"] = "Seeking Help from the Source", }),
+				q(10694, { ["name"] = "Ten Commendation Signets", }),
+				q(10696, { ["name"] = "Ten Commendation Signets", }),
+				q(10698, { ["name"] = "Ten Commendation Signets", }),
+				q(10700, { ["name"] = "Ten Commendation Signets", }),
+				q(10122, { ["name"] = "The Citadel's Reach", }),
+				q(10150, { ["name"] = "The Citadel's Reach", }),
+				q(10179, { ["name"] = "The Custodian of Kirin'Var", }),
+				q(9382, { ["name"] = "The Fate of the Clefthoof", }),
+				q(9969, { ["name"] = "The Final Reagents", }),
+				q(9974, { ["name"] = "The Final Reagents", }),
+				q(10014, { ["name"] = "The Firewing Point Project", }),
+				q(10015, { ["name"] = "The Firewing Point Project", }),
+				q(10090, { ["name"] = "The Legion's Plans", }),
+				q(10100, { ["name"] = "The Mastermind", }),
+				q(9929, { ["name"] = "The Missing Merchant", }),
+				q(9930, { ["name"] = "The Missing Merchant", }),
+				q(10029, { ["name"] = "The Spirits Are Calling", }),
+				q(10130, { ["name"] = "The Western Flank", }),
+				q(10152, { ["name"] = "The Western Flank", }),
+				q(9377, { ["name"] = "Thirsting For Power", }),
+				q(10046, { ["name"] = "Through the Dark Portal", }),
+				q(9941, { ["name"] = "Tracking Down the Culprits", }),
+				q(9942, { ["name"] = "Tracking Down the Culprits", }),
+				q(10138, { ["name"] = "Under Whose Orders?", }),
+				q(10156, { ["name"] = "Under Whose Orders?", }),
+				q(12923, { ["name"] = "UNUSED", }),
+				q(11493, { ["name"] = "UNUSED", }),
+				q(10126, { ["name"] = "Warboss Nekrogg's Orders", }),
+				q(10151, { ["name"] = "Warboss Nekrogg's Orders", }),
+				q(9346, { ["name"] = "When Helboars Fly", }),
+				q(13799, { ["name"] = "Where Are My Keys?", }),
+				q(12479, { ["name"] = "Wrath of the Lich King: Onwards to Northrend!", }),
+				q(12480, { ["name"] = "Wrath of the Lich King: Onwards to Northrend!", }),
 			}),
 		}),
 		tier(WOTLK_TIER, {
 			-- 3.x.x
 			n(P3xx, {
-				q(24790),	-- Daily Normal Random (1st)
-				q(24791),	-- Daily Normal Random (Nth)
-				q(24788),	-- LFGDungeons - Lich King - Heroic Random - 1st
-				q(24789),	-- LFGDungeons - Lich King - Heroic Random - Nth
-				q(25306),	-- You're In The Army Gnow!
-				q(24922),	-- LFGDungeons - Burning Crusade - Heroic Random - 1st
-				q(24923),	-- LFGDungeons - Burning Crusade - Heroic Random - Nth
-				q(25482),	-- LFGDungeons - Holiday Dungeon - Headless Horseman - 1st
-				q(25483),	-- LFGDungeons - Holiday Dungeon - Coren Direbrew - 1st
-				q(25484),	-- LFGDungeons - Holiday Dungeon - Ahune - 1st
-				q(25485),	-- LFGDungeons - Holiday Dungeon - Crown Chemical - 1st
-				q(24818),	-- A Change of Heart
-				q(24867),	-- [NOT USED] Lumberjack Slam Placeholder
-				q(24881),	-- Classic Random 5-15 (1st)
-				q(24889),	-- Classic Random 5-15 (Nth)
-				q(24882),	-- LFGDungeons - Classic - Random - 1st
-				q(24890),	-- LFGDungeons - Classic - Random - Nth
-				q(24908),	-- [NOT USED] Build the Fort Placeholder
-				q(24909),	-- [NOT USED] Protect the Pass Placeholder
-				q(26559),	-- [NYI] Breaking Out is Hard to Do
-				q(27543),	-- [TEMP PH] What We Have Done
-				q(28902),	-- <PH>Hive'Zora B/C
-				q(28903),	-- <PH>Faceless
-				q(28904),	-- <PH>Bad Stuff
-				q(29170),	-- UNUSED
-				q(29171),	-- UNUSED
-			}),
-
-			-- 3.3.0
-			tier(WOTLK_TIER, 3.0, {
-				-- probably earlier patch?
-				q(12890, {	-- If Size Mattered... (NYI?)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(13184, {	-- Outliving Usefulness (NYI)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(13176, {	-- Preparing the Delivery (NYI)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(13175, {	-- Regaining Control (NYI)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(12051),	-- Rustling Some Feathers
-				q(13908),	-- Gearing Up To Ride
-				q(12233),	-- [Depricated]Sewing Your Seed
-				q(11179),	-- [Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless
-				q(11939),	-- ?????
-				q(12490),	-- Veehja's Revenge
-				q(13692),	-- The Sword and the Sea
+				q(11939, { ["name"] = "?????", }),
+				q(12233, { ["name"] = "[Depricated]Sewing Your Seed", }),
+				q(24908, { ["name"] = "[NOT USED] Build the Fort Placeholder", }),
+				q(24867, { ["name"] = "[NOT USED] Lumberjack Slam Placeholder", }),
+				q(24909, { ["name"] = "[NOT USED] Protect the Pass Placeholder", }),
+				q(11179, { ["name"] = "[Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless", }),
+				q(24818, { ["name"] = "A Change of Heart", }),
+				q(24881, { ["name"] = "Classic Random 5-15 (1st)", }),
+				q(24889, { ["name"] = "Classic Random 5-15 (Nth)", }),
+				q(24790, { ["name"] = "Daily Normal Random (1st)", }),
+				q(24791, { ["name"] = "Daily Normal Random (Nth)", }),
+				q(13908, { ["name"] = "Gearing Up To Ride", }),
+				q(12890, { ["name"] = "If Size Mattered...", }),
+				q(24922, { ["name"] = "LFGDungeons - Burning Crusade - Heroic Random - 1st", }),
+				q(24923, { ["name"] = "LFGDungeons - Burning Crusade - Heroic Random - Nth", }),
+				q(24882, { ["name"] = "LFGDungeons - Classic - Random - 1st", }),
+				q(24890, { ["name"] = "LFGDungeons - Classic - Random - Nth", }),
+				q(25484, { ["name"] = "LFGDungeons - Holiday Dungeon - Ahune - 1st", }),
+				q(25483, { ["name"] = "LFGDungeons - Holiday Dungeon - Coren Direbrew - 1st", }),
+				q(25485, { ["name"] = "LFGDungeons - Holiday Dungeon - Crown Chemical - 1st", }),
+				q(25482, { ["name"] = "LFGDungeons - Holiday Dungeon - Headless Horseman - 1st", }),
+				q(24788, { ["name"] = "LFGDungeons - Lich King - Heroic Random - 1st", }),
+				q(24789, { ["name"] = "LFGDungeons - Lich King - Heroic Random - Nth", }),
+				q(13184, { ["name"] = "Outliving Usefulness", }),
+				q(13176, { ["name"] = "Preparing the Delivery", }),
+				q(13175, { ["name"] = "Regaining Control", }),
+				q(12051, { ["name"] = "Rustling Some Feathers", }),
+				q(13692, { ["name"] = "The Sword and the Sea", }),
+				q(12490, { ["name"] = "Veehja's Revenge", }),
+				q(25306, { ["name"] = "You're In The Army Gnow!", }),
 			}),
 		}),
 		tier(CATA_TIER, {
-			q(25124, {	-- Brute Brutality
-				["u"] = NEVER_IMPLEMENTED,
-				["provider"] = { "n", 39199 },	-- Assistant Greely
-				["sourceQuests"] = { 25110 },	-- Kaja'Cola Gives you IDEAS!™
-			}),
-			q(28606, {	-- The Keys to the Hot Rod
-				["u"] = NEVER_IMPLEMENTED,
-			}),
-			q(27925, {	-- Efficient Excavations
-				["u"] = NEVER_IMPLEMENTED,
-			}),
-			q(29168,  {	-- Secondary Targets
-				["u"] = NEVER_IMPLEMENTED,
-			}),
-			q(29169,  {	-- The Beasts Within
-				["u"] = NEVER_IMPLEMENTED,
-			}),
-			q(29174,  {	-- Break Their Spirits
-				["u"] = NEVER_IMPLEMENTED,
-			}),
-			q(29218),	-- Marks of the World Tree
-			q(26243),	-- The World Pillar
-			q(26767),	-- Figuring out how to make quests
-			q(26178),	-- Planning for the Future
-			q(26138, {	-- Ferilon Leafborn
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(27018),	-- The Herald <NYI>
-			q(27150, {	-- The Menders' Stead [H]
-				["timeline"] = { "created 4.0.3.13277" },
-				["races"] = HORDE_ONLY,
-				["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
-			}),
+			q(26559),	-- [NYI] Breaking Out is Hard to Do
+			q(29033),	-- [PH] Bridle Buy-In
+			q(27543),	-- [TEMP PH] What We Have Done
+			q(28904),	-- <PH>Bad Stuff
+			q(28365),	-- <PH>Drizle Safe
+			q(28903),	-- <PH>Faceless
+			q(28902),	-- <PH>Hive'Zora B/C
+			q(26155),	-- A Dark Threat, Remembered
+			q(14453),	-- A Humble Task
+			q(26764),	-- A New Low (Northern Stranglethorn)
 			q(25455),	-- A Test of Wills
-			q(25497),	-- Back in the Saddle
-			q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
-			q(25413),	-- Change of Plans
-			q(25666),	-- Getting Your Hands Dirty
-			q(25435),	-- Pressure is Mounting
-			q(25384, {	-- Raw Materials
-				["groups"] = {
-					un(NEVER_IMPLEMENTED, i(59797)),	-- Abalone-Linked Robes
-					un(NEVER_IMPLEMENTED, i(59795)),	-- Harp Shell Shoulderpads
-					un(NEVER_IMPLEMENTED, i(59796)),	-- Tread of Decapod Death
-				},
-			}),
-			q(25506),	-- Sea-Food Chain
-			q(25498),	-- Shark Bait
-			q(25636),	-- Starve a Fever, Feed a Cold
-			q(25737),	-- Tenuous Negotiatons
-			q(25742),	-- What? This Old Thing?
-			q(26527, {	-- Gryphon Master Talonaxe
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(26282, {	-- The Favor of Akil'darah
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(29033, {	-- [PH] Bridle Buy-In
-				["timeline"] = { "created 4.1.0.13726" },
-			}),
-			q(28541, {	-- Cache of Mau'ari
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(28516, {	-- Centuries of Suffering
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(28642, {	-- Shy-Rotam
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(28468, {	-- Toxic Horrors
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(28481, {	-- Troubled Spirits of Kel'Theril
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(28546, {	-- Winterfall E'ko
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(28462, {	-- Winterfall Firewater
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(14319),	-- BETA Further Treatment
-			q(14220),	-- BETA This Is the End
-			q(24716, {	-- Returning A-Me 01
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(24688, {	-- Zen'Aliri
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(29683),	-- The Scryer's Scryer
-			q(29572),	-- Safety is Job One
-			q(29672),	-- The Opening of the Dark Portal
-			q(29544),	-- The Blood Furnace
-			q(29545),	-- The Blood Furnace
-			q(27289, {	-- Vimes's Report
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(28365, {	-- <PH>Drizle Safe
-				["timeline"] = { "created 4.0.3.13329" },
-			}),
-			q(29029, {	-- Dying Knowledge
-				["timeline"] = { "created 4.1.0.13726" },
-			}),
-			q(29028, {	-- Into Jaedenar
-				["timeline"] = { "created 4.1.0.13726" },
-			}),
-			q(29091, {	-- Freedom Movement
-				["timeline"] = { "created 4.1.0.13726" },
-			}),
-			q(29096, {	-- Mor'shan Caravan Pick-Up
-				["timeline"] = { "created 4.1.0.13726" },
-			}),
-			q(28555),	-- Expel the Envoys
-			q(27946),	-- NYI
-			q(28270, {	-- Riding Shotgun
-				["_drop"] = { "g" },	-- We dont wanna any items on NYI Quests
-			}),
-			q(28743),	-- Tailgunner!
-			q(28240),	-- Tapped Out
-			q(28255),	-- Vhat's Next?
-			q(27634, {	-- The God Hakkar
-				["timeline"] = { "created 4.0.3" },
-			}),
-			q(24630, {	-- The Crone of the Kraul
-				["timeline"] = { "created 4.0.3" },
-				["groups"] = {
-					i(53155),	-- Agamaggan's Thorn
-					i(53158),	-- Spaulder of the Matriarch
-					i(57408),	-- Bloodshard Band
-					i(53157),	-- Charlga's Cowl
-				},
-			}),
-			q(24898, {	-- Going, Going, Guano!
-				["timeline"] = { "created 4.0.3" },
-			}),
-			q(24899, {	-- Going, Going, Guano!
-				["timeline"] = { "created 4.0.3" },
-			}),
-			q(29601),	-- The Darkmoon Field Guide
-			q(13652),	-- Defense of the Stonewrought Dam
-			q(26155, {	-- A Dark Threat, Remembered
-				["qg"] = 1073,	-- Ashlan Stonesmirk <Gunsmith>
-				["sourceQuest"] = 25117,	-- Scout's Dishonor
-				["coord"] = { 64.0, 26.6, LOCH_MODAN },
-				["timeline"] = { "created 4.0.3.13277" },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(59012),	-- Disarming Gloves
-					i(59011),	-- Nicolette's Robes
-					i(59013),	-- Stonesmirk Breastplate
-				},
-			}),
-			q(26156, {	-- All The King's Men
-				["qg"] = 1073,	-- Ashlan Stonesmirk <Gunsmith>
-				["sourceQuest"] = 26155,	-- A Dark Threat, Remembered
-				["coord"] = { 64.0, 26.6, LOCH_MODAN },
-				["timeline"] = { "created 4.0.3.13277" },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(59025),	-- Axe of Loch Modan
-					i(59021),	-- Dagger of Loch Modan
-					i(59022),	-- Hammer of Loch Modan
-					i(59023),	-- Loch Modan Musket
-					i(59024),	-- Staff of Loch Modan
-				},
-			}),
-			q(25117, {	-- Scout's Dishonor
-				["qg"] = 1073,	-- Ashlan Stonesmirk <Gunsmith>
-				["coord"] = { 64.0, 26.6, LOCH_MODAN },
-				["timeline"] = { "created 4.0.3.13277" },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(59016),	-- Clue-Finder's Leggings
-					i(59015),	-- Bracers of Alarm
-					i(59014),	-- Kizmet's Wrap
-					i(59017),	-- Strange Smelling Boots
-				},
-			}),
-			q(13638, {	-- The Captured Mountaineer
-				["qg"] = 1092,	-- Captain Rugelfuss
-				["sourceQuest"] = 13635,	-- South Gate Status Report
-				["coord"] = { 23.4, 75.0, LOCH_MODAN },
-				["timeline"] = { "created 4.0.3.13277" },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(28601, {	-- Old Puttery
-				["timeline"] = { "created 4.0.3.13329" },
-			}),
-			q(26874),	-- Awakening Naralex
-			q(14453, {	-- A Humble Task
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(14446),	-- Cataclysm!
-			q(26764, {	-- A New Low (Northern Stranglethorn)
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(26461, {	-- Blackfathom Villainy
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(26459, {	-- Researching the Corruption
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
 			q(28011),	-- Adventurers Wanted: Blackfathom Deeps
 			q(28010),	-- Adventurers Wanted: Blackfathom Deeps
 			q(28071),	-- Adventurers Wanted: Blackrock Spire
@@ -712,10 +393,10 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(28021),	-- Adventurers Wanted: Scarlet Halls
 			q(28023),	-- Adventurers Wanted: Scarlet Monastery
 			q(28019),	-- Adventurers Wanted: Scarlet Monastery
-			q(28083),	-- Adventurers Wanted: Scholomance
-			q(28082),	-- Adventurers Wanted: Scholomance
 			q(28009),	-- Adventurers Wanted: Shadowfang Keep
 			q(28008),	-- Adventurers Wanted: Shadowfang Keep
+			q(28083),	-- Adventurers Wanted: Scholomance
+			q(28082),	-- Adventurers Wanted: Scholomance
 			q(28012),	-- Adventurers Wanted: Stormwind Stockade
 			q(28079),	-- Adventurers Wanted: Stratholme Main Gate
 			q(28078),	-- Adventurers Wanted: Stratholme Main Gate
@@ -731,44 +412,95 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(28006),	-- Adventurers Wanted: Wailing Caverns
 			q(28037),	-- Adventurers Wanted: Zul'farrak
 			q(28036),	-- Adventurers Wanted: Zul'farrak
-			q(26704),	-- BETA REUSE (The Cape of Stranglethorn)
-			q(26718, {	-- Breadcrumb to Badlands (The Cape of Stranglethorn)
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
+			q(26156),	-- All The King's Men
+			q(26874),	-- Awakening Naralex
+			q(25497),	-- Back in the Saddle
+			q(14319),	-- BETA Further Treatment
+			q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
+			q(14220),	-- BETA This Is the End
+			q(26461),	-- Blackfathom Villainy
+			q(26718),	-- Breadcrumb to Badlands
+			q(29174),	-- Break Their Spirits
+			q(25124),	-- Brute Brutality
+			q(28541),	-- Cache of Mau'ari
+			q(14446),	-- Cataclysm!
+			q(28516),	-- Centuries of Suffering
 			q(28907),	-- Daily Normal Random (1st)
 			q(28908),	-- Daily Normal Random (Nth)
 			q(29185),	-- Daily Tier 2 Heroic (1st)
 			q(29183),	-- Daily Tier 2 Heroic (Nth)
-			q(1127),	-- Fool's Stout
-			q(26839, {	-- Get Away From It All! (The Cape of Stranglethorn)
-				["timeline"] = { "created 4.0.3.13277" },	-- Replaced by "It's You!!"?
-			}),
-			q(14481, {	-- Into The Abyss
-				["timeline"] = { "created 4.0.3.13277" },	-- did not make it out of beta
-				["races"] = ALLIANCE_ONLY,
-			}),
+			q(13652),	-- Defense of the Stonewrought Dam
+			q(29029),	-- Dying Knowledge
+			q(27925),	-- Efficient Excavations
+			q(28555),	-- Expel the Envoys
+			q(26138),	-- Ferilon Leafborn
+			q(26767),	-- Figuring out how to make quests
+			q(29091),	-- Freedom Movement
+			q(26839),	-- Get Away From It All!
+			q(25666),	-- Getting Your Hands Dirty
+			q(24898),	-- Going, Going, Guano!
+			q(24899),	-- Going, Going, Guano!
+			q(26527),	-- Gryphon Master Talonaxe
+			q(25413),	-- Change of Plans
+			q(29028),	-- Into Jaedenar
+			q(14481),	-- Into The Abyss
 			q(28905),	-- LFGDungeons - Cataclysm - Heroic Dungeon - 1st
 			q(28906),	-- LFGDungeons - Cataclysm - Heroic Dungeon - Nth
 			q(30110),	-- LFGDungeons - Cataclysm - Raid Finder - 1st
 			q(30111),	-- LFGDungeons - Cataclysm - Raid Finder - Nth
+			q(29218),	-- Marks of the World Tree
+			q(29096),	-- Mor'shan Caravan Pick-Up
+			q(27946),	-- NYI
+			q(28601),	-- Old Puttery
+			q(26178),	-- Planning for the Future
+			q(25435),	-- Pressure is Mounting
+			q(25384),	-- Raw Materials
+			q(26459),	-- Researching the Corruption
+			q(24716),	-- Returning A-Me 01
+			q(26704),	-- REUSE
+			q(28270),	-- Riding Shotgun
+			q(29572),	-- Safety is Job One
+			q(25117),	-- Scout's Dishonor
+			q(25506),	-- Sea-Food Chain
+			q(29168),	-- Secondary Targets
+			q(25498),	-- Shark Bait
 			q(29339),	-- Short-Supply Reward
 			q(29340),	-- Short-Supply Reward
 			q(29341),	-- Short-Supply Reward
-			q(29810, {	-- The Faceless Ones
-				["timeline"] = { "created 4.3.0.14732" },
-			}),
-			q(29158, {	-- The Zandalar Representative (initially) / The Darkspear Representative
-				["timeline"] = { "created 4.1.0" },	-- Never made it out of 4.1.0 test realms
-			}),
-			q(26837, {	-- The Explorers' League Digsite (The Cape of Stranglethorn)
-				["timeline"] = { "created 4.0.3.13277" },	-- was replaced To the Cape! "To the Cape!"
-			}),
-			q(24568, {	-- To the Walls! (Southern Barrens)
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
-			q(28752, {	-- Unstoppable Onslaught (REMOVED in Beta) [Hillsbrad Foothills]
-				["timeline"] = { "created 4.0.1.12984" },
-			}),
+			q(28642),	-- Shy-Rotam
+			q(25636),	-- Starve a Fever, Feed a Cold
+			q(28743),	-- Tailgunner!
+			q(28240),	-- Tapped Out
+			q(25737),	-- Tenuous Negotiatons
+			q(29169),	-- The Beasts Within
+			q(29544),	-- The Blood Furnace
+			q(29545),	-- The Blood Furnace
+			q(13638),	-- The Captured Mountaineer
+			q(24630),	-- The Crone of the Kraul
+			q(29601),	-- The Darkmoon Field Guide
+			q(26837),	-- The Explorers' League Digsite
+			q(29810),	-- The Faceless Ones
+			q(26282),	-- The Favor of Akil'darah
+			q(27634),	-- The God Hakkar
+			q(27018),	-- The Herald <NYI>
+			q(28606),	-- The Keys to the Hot Rod
+			q(27150),	-- The Menders' Stead [H]
+			q(29672),	-- The Opening of the Dark Portal
+			q(29683),	-- The Scryer's Scryer
+			q(26243),	-- The World Pillar
+			q(29158),	-- The Zandalar Representative
+			q(24568),	-- To the Walls!
+			q(28468),	-- Toxic Horrors
+			q(28481),	-- Troubled Spirits of Kel'Theril
+			q(28752),	-- Unstoppable Onslaught
+			q(29170),	-- UNUSED
+			q(29171),	-- UNUSED
+			q(28255),	-- Vhat's Next?
+			q(27289),	-- Vimes's Report
+			q(25742),	-- What? This Old Thing?
+			q(28546),	-- Winterfall E'ko
+			q(28462),	-- Winterfall Firewater
+			q(24688),	-- Zen'Aliri
 		}),
 		tier(MOP_TIER, {
 			-- 5.0.1
