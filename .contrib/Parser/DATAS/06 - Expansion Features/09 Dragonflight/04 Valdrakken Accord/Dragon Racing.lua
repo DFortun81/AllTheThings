@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
 					i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
 					i(197104),	-- Highland Drake: Tapered Chin (DM!)
-					i(202280),  -- Renewed Proto-Drake: Pronged Tail (DM!)
+					i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
 					i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (DM!)
 				})),
 				i(200609),	-- Dragon Racing Purse - First Place
