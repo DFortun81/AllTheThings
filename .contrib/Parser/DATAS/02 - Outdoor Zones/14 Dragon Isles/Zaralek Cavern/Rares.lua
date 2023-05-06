@@ -131,6 +131,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75269, true),
 					i(205319),	-- Deepflayer Shoulderguards
 					i(205310),	-- Leggings of Kaprachu
+					i(205341),	-- Winding Slitherdrake: Heavy Scales (DM!)
 				},
 			}),
 			n(203618, {	-- Klakatak
@@ -182,6 +183,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75292, true),
 					i(205322),	-- Algeth'ar Exile's Frock
+					i(203331),	-- Winding Slitherdrake: Cluster Horns (DM!)
 				},
 			}),
 			n(204096, {	-- Shadowforge Mole Machine

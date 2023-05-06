@@ -467,6 +467,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197390),	-- Renewed Proto-Drake: Blue Scales (DM!)
 					i(197612),	-- Windborne Velocidrake: Blue Scales (DM!)
 					i(197012),	-- Cliffside Wylderdrake: Blue Scales (DM!)
+					i(203350, {	-- Winding Slitherdrake: Blue Scales (DM!)
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 				},
 			}),
 			q(72634, {	-- Dragon Isles Supplies

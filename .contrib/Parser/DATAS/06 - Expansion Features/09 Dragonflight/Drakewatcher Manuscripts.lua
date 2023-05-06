@@ -768,7 +768,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197124),	-- Highland Drake: Swept Horns (DM!)
 			i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 			i(197121),	-- Highland Drake: Tan Horns (DM!)
-			i(197104),	-- Highland Drake: Tapered Chin
 			i(197123),	-- Highland Drake: Thorn Horns (DM!)
 			i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 			i(197135),	-- Highland Drake: Toothy Mouth (DM!)
@@ -960,6 +959,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 			i(197120),	-- Highland Drake: Ornate Helm (DM!)
 			i(197109),	-- Highland Drake: Spiked Head (DM!)
+			i(197104),	-- Highland Drake: Tapered Chin (DM!)
 		}),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
 			i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
@@ -967,39 +967,39 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)
 		}),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
-			i(203338),	-- Winding Slitherdrake: Antler Horns
+			i(203338),	-- Winding Slitherdrake: Antler Horns (DM!)
 			i(203305),	-- Winding Slitherdrake: Armor
 			i(203322),	-- Winding Slitherdrake: Blonde Hair
 			i(203300),	-- Winding Slitherdrake: Blue and Silver Armor (DM!)
-			i(203350),	-- Winding Slitherdrake: Blue Scales
-			i(203351),	-- Winding Slitherdrake: Bronze Scales
+			i(203350),	-- Winding Slitherdrake: Blue Scales (DM!)
+			i(203351),	-- Winding Slitherdrake: Bronze Scales (DM!)
 			i(203323),	-- Winding Slitherdrake: Brown Hair (DM!)
-			i(203312),	-- Winding Slitherdrake: Cluster Chin Horn
-			i(203331),	-- Winding Slitherdrake: Cluster Horns
+			i(203312),	-- Winding Slitherdrake: Cluster Chin Horn (DM!)
+			i(203331),	-- Winding Slitherdrake: Cluster Horns (DM!)
 			i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns
-			i(203321),	-- Winding Slitherdrake: Curled Cheek Horn
-			i(203334),	-- Winding Slitherdrake: Curled Horns
+			i(203321),	-- Winding Slitherdrake: Curled Cheek Horn (DM!)
+			i(203334),	-- Winding Slitherdrake: Curled Horns (DM!)
 			i(203346),	-- Winding Slitherdrake: Curled Nose (DM!)
 			i(203314), 	-- Winding Slitherdrake: Curved Chin Horn (DM!)
 			i(203335),	-- Winding Slitherdrake: Curved Horns (DM!)
 			i(203349),	-- Winding Slitherdrake: Curved Nose Horn
-			i(203320),	-- Winding Slitherdrake: Ears
+			i(203320),	-- Winding Slitherdrake: Ears (DM!)
 			i(203319),	-- Winding Slitherdrake: Finned Cheek
-			i(203361),	-- Winding Slitherdrake: Finned Tip Tail
-			i(203310),	-- Winding Slitherdrake: Grand Chin Thorn
+			i(203361),	-- Winding Slitherdrake: Finned Tip Tail (DM!)
+			i(203310),	-- Winding Slitherdrake: Grand Chin Thorn (DM!)
 			i(203299),	-- Winding Slitherdrake: Green and Bronze Armor
-			i(203352),	-- Winding Slitherdrake: Green Scales
+			i(203352),	-- Winding Slitherdrake: Green Scales (DM!)
 			i(203308),	-- Winding Slitherdrake: Hairy Brow (DM!)
 			i(203311),	-- Winding Slitherdrake: Hairy Chin
-			i(203318),	-- Winding Slitherdrake: Hairy Crest
+			i(203318),	-- Winding Slitherdrake: Hairy Crest (DM!)
 			i(203343),	-- Winding Slitherdrake: Hairy Jaw
 			i(203362),	-- Winding Slitherdrake: Hairy Tail (DM!)
 			i(203365),	-- Winding Slitherdrake: Hairy Throat (DM!)
 			i(203329),	-- Winding Slitherdrake: Heavy Horns
-			i(205341),	-- Winding Slitherdrake: Heavy Scales
+			i(205341),	-- Winding Slitherdrake: Heavy Scales (DM!)
 			i(203326),	-- Winding Slitherdrake: Helm
 			i(203306),	-- Winding Slitherdrake: Horned Brow
-			i(203339),	-- Winding Slitherdrake: Impaler Horns
+			i(203339),	-- Winding Slitherdrake: Impaler Horns (DM!)
 			i(203316),	-- Winding Slitherdrake: Large Finned Crest (DM!)
 			i(203360),	-- Winding Slitherdrake: Large Finned Tail
 			i(203363),	-- Winding Slitherdrake: Large Finned Throat
@@ -1020,7 +1020,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(203359),	-- Winding Slitherdrake: Shark Finned Tail
 			i(203333),	-- Winding Slitherdrake: Short Horns
 			i(203344),	-- Winding Slitherdrake: Single Jaw Horn
-			i(203317),	-- Winding Slitherdrake: Small Finned Crest
+			i(203317),	-- Winding Slitherdrake: Small Finned Crest (DM!)
 			i(203358),	-- Winding Slitherdrake: Small Finned Tail (DM!)
 			i(203364),	-- Winding Slitherdrake: Small Finned Throat (DM!)
 			i(203315),	-- Winding Slitherdrake: Small Spiked Crest
@@ -1031,7 +1031,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(203330),	-- Winding Slitherdrake: Swept Horns (DM!)
 			i(203298),	-- Winding Slitherdrake: White and Gold Armor
 			i(203324),	-- Winding Slitherdrake: White Hair (DM!)
-			i(203328),	-- Winding Slitherdrake: White Horns
+			i(203328),	-- Winding Slitherdrake: White Horns (DM!)
 			i(203354),	-- Winding Slitherdrake: White Scales
 			i(203304),	-- Winding Slitherdrake: Yellow and Silver Armor (DM!)
 			i(203355),	-- Winding Slitherdrake: Yellow Scales
