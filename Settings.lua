@@ -45,22 +45,12 @@ settings:SetBackdrop({
 });
 settings:SetBackdropColor(0, 0, 0, 1);
 do	-- Add the ATT Settings frame into the WoW Settings options
-	local toc = select(4, GetBuildInfo());
-	-- 10.0: new way to configure settings frame
-	if toc < 100000 then
-		InterfaceOptions_AddCategory(settings);
-		settings.Open = function(self)
-			-- Open the Options menu.
-			InterfaceOptionsFrame_OpenToCategory(self.name);
-		end
-	else
-		local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
-		category.ID = settings.name;
-		Settings.RegisterAddOnCategory(category)
-		settings.Open = function(self)
-			-- Open the Options menu.
-			Settings.OpenToCategory(self.name);
-		end
+	local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
+	category.ID = settings.name;
+	Settings.RegisterAddOnCategory(category)
+	settings.Open = function(self)
+		-- Open the Options menu.
+		Settings.OpenToCategory(self.name);
 	end
 end
 -- Provides a Unique Counter value for the Key referenced on each reference
@@ -1367,14 +1357,7 @@ f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
 f:SetJustifyH("RIGHT");
 
-local toc = select(4, GetBuildInfo());
-local v = "";
-if toc < 100100 then
-	v = GetAddOnMetadata("AllTheThings", "Version");
-else
-	v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
-end
-
+local v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
 f:SetText("v" .. v);
 f:Show();
 settings.version = f;
