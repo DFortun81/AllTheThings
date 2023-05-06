@@ -1306,9 +1306,6 @@ _.Zones =
 						31306,	-- Seeker's Folly
 					},
 				}),
-				q(31518, {	-- The Vale of Eternal Blossoms (most likely NYI. "A Witness to History" is the opening of the gates)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(30496, {	-- The Waterspeaker's Staff
 					["coord"] = { 75.1, 87.9, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 60973 },	-- Waterspeaker Gorai

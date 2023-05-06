@@ -699,20 +699,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55054,	-- Upheaval
 		}),
-		q(56164, {	-- Desperate Need (A)
-			["u"] = NEVER_IMPLEMENTED,
-			["provider"] = { "n", 151763 },	-- Isla
-			["coord"] = { 37.7, 55.3, NAZJATAR },
-			["races"] = ALLIANCE_ONLY,
-			["sourceQuest"] = 56156,	-- A Tempered Blade
-		}),
-		q(56176, {	-- Desperate Need (H)
-			["u"] = NEVER_IMPLEMENTED,
-			["provider"] = { "n", 154208 },	-- Jonah Lowtide
-			["coord"] = { 50.5, 66.2, NAZJATAR },
-			["races"] = HORDE_ONLY,
-			["sourceQuest"] = 55500,	-- Save a Friend
-		}),
 		q(55595, {	-- Deteriorating Knowledge (A)
 			["provider"] = { "n", 151000 },	-- Blademaster Okani
 			["coord"] = { 38.9, 54.6, NAZJATAR },
@@ -2097,20 +2083,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					i(168185),	-- Osmenite Ore x11
 				}),
 			},
-		}),
-		q(56166, {	-- The Needs of the People
-			["u"] = NEVER_IMPLEMENTED,
-			["provider"] = { "n", 151763 },	-- Isla
-			["coord"] = { 37.7, 55.3, NAZJATAR },
-			["races"] = ALLIANCE_ONLY,
-			["sourceQuest"] = 56164,	-- Desperate Need
-		}),
-		q(56179, {	-- The Needs of the People
-			["u"] = NEVER_IMPLEMENTED,
-			["provider"] = { "n", 154208 },	-- Jonah Lowtide
-			["coord"] = { 50.5, 66.2, NAZJATAR },
-			["races"] = HORDE_ONLY,
-			["sourceQuest"] = 56176,	-- Desperate Need
 		}),
 		q(56739, {	-- The Power of Worship
 			["sourceQuests"] = { 55571 },	-- Help Them See the Truth

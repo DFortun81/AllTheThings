@@ -228,6 +228,18 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		tier(TBC_TIER, {
 			-- 2.x.x
 			n(P2xx, {
+				q(12405, {	-- Candy Bucket
+					["isYearly"] = true,
+					["u"] = NEVER_IMPLEMENTED,
+					["_drop"] = { "g" },
+				}),
+				q(12410, {	-- Candy Bucket
+					["isYearly"] = true,
+					["_drop"] = { "g" },
+				}),
+				q(11401),	-- Call the Headless Horseman
+				q(11404),	-- Call the Headless Horseman
+				q(11405),	-- Call the Headless Horseman
 				q(11551),	-- BETA Agamath, the First Gate
 				q(11553),	-- BETA Archonisus, the Final Gate
 				q(11552),	-- BETA Rohendor, the Second Gate
@@ -454,6 +466,18 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 3.3.0
 			tier(WOTLK_TIER, 3.0, {
 				-- probably earlier patch?
+				q(12890, {	-- If Size Mattered... (NYI?)
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(13184, {	-- Outliving Usefulness (NYI)
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(13176, {	-- Preparing the Delivery (NYI)
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(13175, {	-- Regaining Control (NYI)
+					["u"] = NEVER_IMPLEMENTED,
+				}),
 				q(12051),	-- Rustling Some Feathers
 				q(13908),	-- Gearing Up To Ride
 				q(12233),	-- [Depricated]Sewing Your Seed
@@ -464,6 +488,26 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		tier(CATA_TIER, {
+			q(25124, {	-- Brute Brutality
+				["u"] = NEVER_IMPLEMENTED,
+				["provider"] = { "n", 39199 },	-- Assistant Greely
+				["sourceQuests"] = { 25110 },	-- Kaja'Cola Gives you IDEAS!™
+			}),
+			q(28606, {	-- The Keys to the Hot Rod
+				["u"] = NEVER_IMPLEMENTED,
+			}),
+			q(27925, {	-- Efficient Excavations
+				["u"] = NEVER_IMPLEMENTED,
+			}),
+			q(29168,  {	-- Secondary Targets
+				["u"] = NEVER_IMPLEMENTED,
+			}),
+			q(29169,  {	-- The Beasts Within
+				["u"] = NEVER_IMPLEMENTED,
+			}),
+			q(29174,  {	-- Break Their Spirits
+				["u"] = NEVER_IMPLEMENTED,
+			}),
 			q(29218),	-- Marks of the World Tree
 			q(26243),	-- The World Pillar
 			q(26767),	-- Figuring out how to make quests
@@ -893,6 +937,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(31533, { ["name"] = "The Perfect Feather", }),	-- The Perfect Feather
 				q(30458, { ["name"] = "The Scouts Return", }),	-- The Scouts Return
 				q(31491, { ["name"] = "The Ten Foot Pole", }),	-- The Ten Foot Pole
+				q(31518, { ["name"] = "The Vale of Eternal Blossoms", }),	-- The Vale of Eternal Blossoms
 				q(29806, { ["name"] = "The Wanderer", }),	-- The Wanderer
 				q(31305, { ["name"] = "The Way of the Grill", }),	-- The Way of the Grill
 				q(29715, { ["name"] = "The Witch in the Woods", }),	-- The Witch in the Woods
@@ -3345,6 +3390,113 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 				}),
 				q(53730),	-- Legion 110 H
+				q(49675),	--
+				q(47860),	-- A Rude Awakening
+				q(48994),	-- Akunda the Liar
+				q(49331),	-- An Interesting Find
+				q(47671),	-- Ancient Lore
+				q(47672),	-- Ancient Lore
+				q(48845),	-- Cannon Cremation
+				q(48995),	-- Defeat Xenxuju
+				q(47318),	-- Fruit of the Desert
+				q(48775),	-- Last Respects
+				q(49337),	-- Matters of the Heart
+				q(49336),	-- Piecing Together the Past
+				q(48989),	-- Poisoned Intentions
+				q(50590),	-- Preface the Pitch
+				q(47325),	-- Reckless Vengeance
+				q(49672),	-- Servant of the Loa
+				q(47410),	-- Sethrak Sabotage
+				q(50951),	-- Sharing the Blessings
+				q(50687),	-- Skycaller Carcanet
+				q(48307),	-- Strange Totems
+				q(48990),	-- The Leader Calls
+				q(48838),	-- Water Reclamation
+				q(54755, {	-- Not My Table
+					["sourceQuests"] = { 54106 },	-- Tracking Tipoff
+					["races"] = HORDE_ONLY,
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(49769, {	-- Wreckage of the Cataclysm
+					["u"] = NEVER_IMPLEMENTED,	-- this doesn't appear to have ever made it live
+				}),
+				q(56110, {	-- A Defender Emerges
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(56112, {	-- A Royal Awakening
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(50132, {	-- A Sticky Proposition
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(51110, {	-- Clearing the Skies
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(56109, {	-- Defender of the Hive
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(51066, {	-- Destroy Mine Carts
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(50285, {	-- Don't Be Crabby
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(51756, {	-- Economic Downturn
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(49732, {	-- Evacuate!
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(51750, {	-- Field Promotions
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(51883, {	-- Grizz's Lunch
+					["provider"] = { "i", 160897 },	-- Grizz's Lunchbox
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(50060, {	-- Honey, Slimes!
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(51557, {	-- Irontide Warning
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(50383, {	-- Mankrik's Wrath
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(51202, {	-- Millstone Hamlet Quest Template
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(50815, {	-- Orcs Versus Humans
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(50907, {	-- Poor Souls
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(51724, {	-- Powered Up
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(49742, {	-- Respect Your Elders
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(50816, {	-- Roarke's Missing
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(51334, {	-- Securing The Square
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(49743, {	-- Shoot First, Questions Later
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(50743, {	-- The Immediate Problem
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(56111, {	-- The Usurper
+					["u"] = NEVER_IMPLEMENTED,
+				}),
+				q(51708, {	-- Warfang Hold Quest Template
+					["u"] = NEVER_IMPLEMENTED,
+				}),
 				-- Unsorted
 				q(47246, {
 					["description"] = "Area: |cFFf09f26Nazmir|r",
@@ -4926,6 +5078,34 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(55351),	-- The Missing Apprentice
 				q(56129),	-- Heroic: Battle for Stromgarde
 				q(56206),	-- Heroic: Battle for Stromgarde
+				q(56164, {	-- Desperate Need (A)
+					["u"] = NEVER_IMPLEMENTED,
+					["provider"] = { "n", 151763 },	-- Isla
+					["coord"] = { 37.7, 55.3, NAZJATAR },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56156,	-- A Tempered Blade
+				}),
+				q(56176, {	-- Desperate Need (H)
+					["u"] = NEVER_IMPLEMENTED,
+					["provider"] = { "n", 154208 },	-- Jonah Lowtide
+					["coord"] = { 50.5, 66.2, NAZJATAR },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55500,	-- Save a Friend
+				}),
+				q(56166, {	-- The Needs of the People
+					["u"] = NEVER_IMPLEMENTED,
+					["provider"] = { "n", 151763 },	-- Isla
+					["coord"] = { 37.7, 55.3, NAZJATAR },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56164,	-- Desperate Need
+				}),
+				q(56179, {	-- The Needs of the People
+					["u"] = NEVER_IMPLEMENTED,
+					["provider"] = { "n", 154208 },	-- Jonah Lowtide
+					["coord"] = { 50.5, 66.2, NAZJATAR },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56176,	-- Desperate Need
+				}),
 				-- Unsorted
 				q(54085, {
 					["lvl"] = 50,
@@ -5527,6 +5707,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["description"] = "Area: |cFFf09f26Uldum|r",
 					["lvl"] = 50,
 				}),
+				q(58703),	--
 				-- Tools
 				-- 8.3.0.32044
 				q(48940),	-- West Trebuchet Defended

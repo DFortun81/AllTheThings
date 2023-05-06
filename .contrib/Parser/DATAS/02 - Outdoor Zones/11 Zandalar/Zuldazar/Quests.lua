@@ -1802,9 +1802,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 51.6, 45.4, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(49769, {	-- Wreckage of the Cataclysm
-				["u"] = NEVER_IMPLEMENTED,	-- this doesn't appear to have ever made it live
-			}),
 			q(49060, {	-- Xibalan Ecology (A)
 				["coord"] = { 41.2, 71.4, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,

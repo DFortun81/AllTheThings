@@ -31,9 +31,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 69.8, 36.0, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(56110, {	-- A Defender Emerges
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(50814, {	-- A Horrible Place
 				["sourceQuests"] = {
 					50704,	-- Anchors Aweigh Too Much
@@ -134,9 +131,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 59.2, 69.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(56112, {	-- A Royal Awakening
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(52795, {	-- A Saur Point
 				["sourceQuests"] = { 52793 },	-- Circle the Wagons (must be on quest)
 				["provider"] = { "n", 141603 },	-- Mallory Hood
@@ -152,9 +146,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 131003 },
 				["coord"] = { 34.5, 47.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(50132, {	-- A Sticky Proposition
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(50797, {	-- A Turtle's Invitation
 				["sourceQuests"] = { 50753 },	-- Earl-E Bot Gets the Worm
@@ -363,9 +354,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 34.5, 47.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(51110, {	-- Clearing the Skies
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(51504, {	-- Cookie Delivery
 				["sourceQuests"] = { 51335 },	-- Cookies and Cream
 				["provider"] = { "n", 136658 },	-- Marie Davenport
@@ -427,9 +415,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 137453 },
 				["coord"] = { 35.7, 31.2, STORMSONG_VALLEY },
 			}),
-			q(56109, {	-- Defender of the Hive
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(53097, {	-- Despondent Ablutions
 				["sourceQuests"] = { 50386 },	-- Flush Them Out
 				["providers"] = {
@@ -439,17 +424,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 120,
 			}),
-			q(51066, {	-- Destroy Mine Carts
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(50070, {	-- Detective Mildenhall
 				["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery
 				["provider"] = { "n", 132017 },	-- Ancel Mildenhall
 				["coord"] = { 68.5, 67.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(50285, {	-- Don't Be Crabby
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(50064, {	-- Don't Go in the Basement
 				["sourceQuests"] = {
@@ -495,9 +474,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
-			q(51756, {	-- Economic Downturn
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(50645, {	-- Eeling in a Big One
 				["sourceQuests"] = { 50635 },	-- The Shifting Tides
 				["provider"] = { "n", 131014 },	-- Rikal
@@ -519,9 +495,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(160389),	-- Stormchaser Bindings
 					i(160392),	-- Dread Corsair Armguards
 				},
-			}),
-			q(49732, {	-- Evacuate!
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(51540, {	-- Explosive Situation
 				--	SQ needs confirmation
@@ -587,9 +560,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 				["coord"] = { 72.7, 72.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(51750, {	-- Field Promotions
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(50649, {	-- Filching from Thieves
 				["sourceQuests"] = { 50635 },	-- The Shifting Tides
@@ -757,10 +727,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(158685),	-- Dread Corsair Warboots
 				},
 			}),
-			q(51883, {	-- Grizz's Lunch
-				["provider"] = { "i", 160897 },	-- Grizz's Lunchbox
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(51492, {	-- Gunpowder Plot
 				["provider"] = { "n", 136574 },	-- Charles Davenport
 				["coord"] = { 29.8, 67.1, STORMSONG_VALLEY },
@@ -829,9 +795,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 74.1, 72.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(50060, {	-- Honey, Slimes!
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(49703, {	-- House Stormsong
 				["sourceQuests"] = { 49725 },	-- A Risky Ploy
 				["provider"] = { "n", 130576 },	-- Brother Pike
@@ -874,9 +837,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 134720 },	-- Leo Shealds
 				["coord"] = { 42.9, 56.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(51557, {	-- Irontide Warning
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(50803, {	-- I Want It All Now
 				["sourceQuests"] = { 50793 },	-- Cave Commotion
@@ -933,9 +893,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 120,
 			}),
-			q(50383, {	-- Mankrik's Wrath
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(50343, {	-- Mayhem at Mildenhall Meadery
 				["sourceQuests"] = { 51582 },	-- Make it Mildenhall
 				["provider"] = { "n", 131793 },	-- Ancel Mildenhall
@@ -967,9 +924,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 136658 },	-- Marie Davenport
 				["coord"] = { 30.3, 66.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(51202, {	-- Millstone Hamlet Quest Template
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(53105, {	-- Misplaced Faith
 				["sourceQuests"] = { 50388 },	-- The Weight of My Ambition
@@ -1025,9 +979,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 21.3, 69.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(50815, {	-- Orcs Versus Humans
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(50679, {	-- Piercing the Shield
 				["sourceQuests"] = {
 					50644,	-- Facing the Invaders
@@ -1043,12 +994,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(160366),	-- Stormchaser Leggings
 					i(160369),	-- Dread Corsair Legguards
 				},
-			}),
-			q(50907, {	-- Poor Souls
-				["u"] = NEVER_IMPLEMENTED,
-			}),
-			q(51724, {	-- Powered Up
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(50698, {	-- Problem Solving with Gunpowder
 				["sourceQuests"] = {
@@ -1113,9 +1058,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 57.9, 55.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(49742, {	-- Respect Your Elders
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(51221, {	-- Response Required
 				["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
 				["provider"] = { "n", 137453 },	-- Loroja
@@ -1137,9 +1079,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 141223 },	-- Brother Pike
 				["coord"] = { 70.3, 36.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(50816, {	-- Roarke's Missing
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(50168, {	-- Royal Succession
 				["sourceQuests"] = { 50161 },	-- Recovering Raimond
@@ -1181,17 +1120,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 70.2, 36.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(51334, {	-- Securing The Square
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(51140, {	-- Share the Wealth
 				["sourceQuests"] = { 50697 },	-- Bomb Beats Rock
 				["provider"] = { "o", 290765 },	-- Large Pile of Gold
 				["coord"] = { 50.8, 56.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(49743, {	-- Shoot First, Questions Later
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(52510, {	-- Shrine of the Storm: The Missing Ritual
 				["sourceQuests"] = {
@@ -1427,9 +1360,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					DRUSTVAR,
 				},
 			}),
-			q(50743, {	-- The Immediate Problem
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(51881, {	-- The Mine Sweeper
 			--	unknown SQ.  picked up after picking up "having a blast"
 				["provider"] = { "n", 146019 },	-- Cracked Mine Sweeper
@@ -1496,9 +1426,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 141223 },	-- Brother Pike
 				["coord"] = { 70.3, 36.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(56111, {	-- The Usurper
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(50388, {	-- The Weight of My Ambition
 				["sourceQuests"] = { 50387 },	-- Trinkets and Baubles
@@ -1622,9 +1549,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "o", 288157 },	-- WANTED: Yarsel'ghun
 				["coord"] = { 57.8, 55.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(51708, {	-- Warfang Hold Quest Template
-				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(50363, {	-- War Pigs
 				["sourceQuests"] = {

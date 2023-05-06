@@ -189,6 +189,7 @@ local keys = {
 [31305]="The Way of the Grill",
 [31331]="Figuring out how to make quests",
 [31491]="The Ten Foot Pole",
+[31518]="The Vale of Eternal Blossoms",
 [31533]="The Perfect Feather",
 [31545]="The Finer Things",
 [31554]="On The Mend",

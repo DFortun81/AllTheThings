@@ -207,9 +207,3 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 		},
 	}),
 })));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(BFA_TIER, {
-	inst(1177, {	-- Crucible of Storms
-		ach(13415),	-- Heroic: Crucible of Storms
-	}),
-})));

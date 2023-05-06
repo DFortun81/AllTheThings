@@ -320,9 +320,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27669,	-- Do the Honors
 					["isBreadcrumb"] = true,
 				}),
-				q(27925, {	-- Efficient Excavations
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(29327, {	-- Elemental Bonds: Doubt
 					["provider"] = { "n", 53524 },	-- Cyclonas
 					["coord"] = { 47.7, 88.9, ULDUM },

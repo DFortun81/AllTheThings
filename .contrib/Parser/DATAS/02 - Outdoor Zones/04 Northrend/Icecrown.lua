@@ -1295,9 +1295,6 @@ root(ROOTS.Zones, {
 						["qg"] = 31240,	-- Warlord Hork Strongbrow
 						["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
 					}),
-					q(13184, {	-- Outliving Usefulness (NYI)
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(13168, {	-- Parting Gifts
 						["coord"] = { 44.0, 24.5, ICECROWN },
 						["qg"] = 30946,	-- Keritose Bloodblade
@@ -1338,9 +1335,6 @@ root(ROOTS.Zones, {
 							i(43884),	-- Amulet of the Malefic Necromancer
 						},
 					}),
-					q(13176, {	-- Preparing the Delivery (NYI)
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(13220, {	-- Putting Olakin Back Together Again
 						["coord"] = { 35.3, 66.3, ICECROWN },
 						["qg"] = 30631,	-- Darkrider Arly
@@ -1376,9 +1370,6 @@ root(ROOTS.Zones, {
 						["qg"] = 30232,	-- The Bone Witch
 						["repeatable"] = true,
 						["sourceQuest"] = 13092,	-- Reading the Bones
-					}),
-					q(13175, {	-- Regaining Control (NYI)
-						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(13321, {	-- Retest Now (A)
 						["races"] = ALLIANCE_ONLY,

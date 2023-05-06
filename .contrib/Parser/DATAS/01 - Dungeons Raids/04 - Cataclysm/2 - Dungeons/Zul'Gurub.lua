@@ -281,9 +281,6 @@ root("Instances", tier(CATA_TIER, {
 					q(29241,  {	-- Break the Godbreaker
 						["provider"] = { "n", 53024 },			-- Bloodslayer Zala
 					}),
-					q(29174,  {	-- Break Their Spirits
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(29175,  {	-- Break Their Spirits
 						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
 					}),
@@ -318,14 +315,8 @@ root("Instances", tier(CATA_TIER, {
 							i(ZANDALAR_BARGAINING_TOKEN),
 						},
 					})),
-					q(29168,  {	-- Secondary Targets
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(29173,  {	-- Secondary Targets
 						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
-					}),
-					q(29169,  {	-- The Beasts Within
-						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(29172,  {	-- The Beasts Within
 						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara

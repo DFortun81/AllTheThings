@@ -784,9 +784,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.2, 38.1, THE_STORM_PEAKS },
 						["sourceQuest"] = 12984,	-- Valduran the Stormborn
 					}),
-					q(12890, {	-- If Size Mattered... (NYI?)
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(12975, {	-- In Memoriam
 						["qg"] = 30105,	-- King Jokkum
 						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },

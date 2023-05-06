@@ -5,7 +5,6 @@
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(WORLD_QUESTS, {
 		n(QUESTS, {
-			un(NEVER_IMPLEMENTED, q(58703)),	-- Unknown quest populating /attwq
 			q(55664, {	-- A Blow to Morale
 				["lvl"] = 120,
 				["races"] = HORDE_ONLY,

@@ -4505,17 +4505,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 		i(33957),	-- Witches Band (unused version)
 		i(33958),	-- The Horseman's Signet Ring (unused version)
 		i(33959),	-- Ring of Ghoulish Delight (unused version)
-		q(12405, {	-- Candy Bucket
-			["isYearly"] = true,
-			["u"] = NEVER_IMPLEMENTED,
-			["_drop"] = { "g" },
-		}),
-		q(12410, {	-- Candy Bucket
-			["isYearly"] = true,
-			["_drop"] = { "g" },
-		}),
-		q(11401),	-- Call the Headless Horseman
-		q(11404),	-- Call the Headless Horseman
-		q(11405),	-- Call the Headless Horseman
 	},
 }}));
