@@ -145,13 +145,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					i(201374),	-- Tuskarr Fishing Pike
 				},
 			}),
-			o(380554, {	-- Well-Danced Drum
-				["coord"] = { 12.5, 49.4, THE_AZURE_SPAN },
-				["requireSkill"] = LEATHERWORKING,
-				["g"] = {
-					i(201018),	-- Well-Danced Drum
-				},
-			}),
 			o(381354, {	-- Wrapped Gold Band
 				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
 				["g"] = {

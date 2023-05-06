@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			o(386633, {	-- Chest of Storms
 				["coord"] = { 48.8, 73.1, THE_FORBIDDEN_REACH },
 				["questID"] = 74567,
+				["isWeekly"] = true,
 				["g"] = {
 					i(204573),	-- Condensed Fire Magic
 					i(204574),	-- Condensed Frost Magic

@@ -107,14 +107,9 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 					},
 				},
 				["groups"] = {
-					-- #if ANYCLASSIC
-					title(104),	-- Matron
-					title(105),	-- Patron
-					-- #else
 					title_gendered(105, 104),	-- Patron / Matron
 					--title(104),	-- Matron %s
 					--title(105),	-- Patron %s
-					-- #endif
 				},
 			}),
 			ach(1792),	-- Aw, Isn't It Cute?

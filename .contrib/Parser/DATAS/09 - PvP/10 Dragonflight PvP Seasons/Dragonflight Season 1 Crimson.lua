@@ -405,8 +405,8 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 							},
 							["g"] = {
 								-- i(137642),    -- Mark of Honor		-- The Vendor has a different box for less Costs (2k) with more Marks of Honor (x5). Hidding this on purpose.
-								i(201254),	-- Medal of Honor [A]
-								i(201255),	-- Medal of Honor [H]
+								i(201254),	-- Cracked Medal of Honor [A]
+								i(201255),	-- Cracked Medal of Honor [H]
 							},
 						}),
 					},
@@ -1639,7 +1639,8 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			})),
 			filter(RECIPES, {
 				-- #if AFTER 10.1.0
-				n(196661, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Korganar Smolderforge
+				n(196661,	-- Korganar Smolderforge
+				bubbleDownSelf({["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 43.6, 42.7, VALDRAKKEN },
 					["g"] = sharedData({ ["cost"] = { { "i", MOH, 3 } } }, {
 				-- #endif
@@ -1678,6 +1679,9 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						i(194456),	-- Plans: Crimson Combatant's Draconium Pauldrons (RECIPE!)
 						i(194458),	-- Plans: Crimson Combatant's Draconium Sabatons (RECIPE!)
 						i(194460),	-- Plans: Crimson Combatant's Draconium Waistguard (RECIPE!)
+						i(203380),	-- Technique: Crimson Combatant's Emblem (RECIPE!)
+						i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity (RECIPE!)
+						i(203378),	-- Technique: Crimson Combatant's Medallion (RECIPE!)
 				-- #if AFTER 10.1.0
 					}),
 				})),

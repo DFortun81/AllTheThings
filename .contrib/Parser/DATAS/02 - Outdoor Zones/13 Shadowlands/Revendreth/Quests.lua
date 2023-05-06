@@ -845,7 +845,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 
 				-- MISC --
 			q(64963, {	-- A Defector's Request
-				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "i", 187822 },	-- A Defector's Request
 				["timeline"] = { ADDED_9_1_5 },
 			}),

@@ -30,9 +30,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 46.1, 74.0, THALDRASZUS },
 						{ 34.0, 84.9, THALDRASZUS },
 						-- #if AFTER 10.0.7
-						{ 24.4, 55.6, THE_FORBIDDEN_REACH },
 						{ 55.3, 26.4, THE_FORBIDDEN_REACH },
-						{ 80.5, 48.1, THE_FORBIDDEN_REACH },
 						{ 34.8, 30.2, THE_FORBIDDEN_REACH },
 						-- #endif
 					},

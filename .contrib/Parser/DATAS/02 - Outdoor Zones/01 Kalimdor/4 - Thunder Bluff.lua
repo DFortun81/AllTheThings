@@ -953,33 +953,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						2025,	-- Bearded Axe
-						1194,	-- bastard sword
-						2479,	-- broad axe
+						1194,	-- Bastard Sword
+						2479,	-- Broad Axe
 						1198,	-- Claymore
-						2130,	-- club
+						2130,	-- Club
 						2029,	-- Cleaver
-						2492,	-- cudgel
-						851,	-- cutlass
-						2139,	-- dirk
-						2024,	-- espadon
-						2488,	-- gladius
-						2030,	-- gnarled staff
-						1197,	-- giant mace
-						2134,	-- hand axe
-						853,	-- hatchet
-						2511,	-- hunters boomstick
-						2207,	-- jambiya
-						2491,	-- large axe
-						2480,	-- large club
-						852,	-- mace
-						2509,	-- ornate blunderbuss
-						2208,	-- poniard
-						854,	-- quarter staff
-						2026,	-- rock hammer
-						2027,	-- scimitar
-						2132,	-- short staff
-						2131,	-- shortsword
-						2494,	-- stiletto
+						2492,	-- Cudgel
+						851,	-- Cutlass
+						2139,	-- Dirk
+						2024,	-- Espadon
+						2488,	-- Gladius
+						2030,	-- Gnarled Staff
+						1197,	-- Giant Mace
+						2134,	-- Hand Axe
+						853,	-- Hatchet
+						2511,	-- Hunter's Boomstick
+						2207,	-- Jambiya
+						2491,	-- Large Axe
+						2480,	-- Large Club
+						852,	-- Mace
+						2509,	-- Ornate Blunderbuss
+						2208,	-- Poniard
+						854,	-- Quarter Staff
+						2026,	-- Rock Hammer
+						2027,	-- Scimitar
+						2132,	-- Short Staff
+						2131,	-- Shortsword
+						2494,	-- Stiletto
 					}},
 				}),
 				n(3021, {	-- Kard Ragetotem
@@ -991,7 +991,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						851,	-- Cutlass
 						922,	-- Dacian Falx
 						2024,	-- Espadon
-						2528,	-- falchion
+						2528,	-- Falchion
 						2207,	-- Jambiya
 						2209,	-- Kris
 						923,	-- Longsword
@@ -1104,12 +1104,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 53.6, 56.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						2523,	-- bullova
-						2531,	-- great axe
+						2523,	-- Bullova
+						2531,	-- Great Axe
 						2521,	-- Flamberge
-						2525,	-- war hammer
-						2533,	-- war maul
-						2529,	-- zweihander
+						2525,	-- War Hammer
+						2533,	-- War Maul
+						2529,	-- Zweihander
 					}},
 				}),
 				n(8364, {	-- Pakwa <Bag Vendor>

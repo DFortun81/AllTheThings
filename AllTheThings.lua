@@ -39,8 +39,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, sformat, strsplit
-	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format, strsplit;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, sformat, strsplit, GetTimePreciseSec
+	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format, strsplit, GetTimePreciseSec;
 local ATTAccountWideData, IsRetrieving;
 -- Retrieving Data Locals
 do
@@ -162,65 +162,19 @@ end
 --]]
 
 -- Coroutine Helper Functions
-app.refreshing = {};
 app.EmptyTable = {};
 app.EmptyFunction = function() end;
-local function OnUpdate(self)
-	for i=#self.__stack,1,-1 do
-		-- app.PrintDebug("Running Stack " .. i .. ":" .. self.__stack[i][2])
-		if not self.__stack[i][1](self) then
-			-- print("Removing Stack " .. i .. ":" .. self.__stack[i][2])
-			table.remove(self.__stack, i);
-		end
-	end
-	-- Stop running OnUpdate if nothing in the Stack to process
-	if #self.__stack < 1 then
-		self:SetScript("OnUpdate", nil);
-	end
-end
-local function Push(self, name, method)
-	if not self.__stack then
-		self.__stack = {};
-	end
-	-- print("Push->" .. name);
-	tinsert(self.__stack, { method, name });
-	self:SetScript("OnUpdate", OnUpdate);
-end
-local function StartCoroutine(name, method, delaySec)
-	if method and not app.refreshing[name] then
-		local instance = coroutine.create(method);
-		app.refreshing[name] = true;
-		local pushCo = function()
-				-- Check the status of the coroutine
-				if instance and coroutine.status(instance) ~= "dead" then
-					local ok, err = coroutine.resume(instance);
-					if ok then return true;	-- This means more work is required.
-					else
-						-- Throw the error. Returning nothing is the same as canceling the work.
-						-- local instanceTrace = debugstack(instance);
-						error(err,2);
-						-- print(debugstack(instance));
-						-- print(err);
-						-- app.report();
-					end
-				end
-				-- print("coroutine complete",name);
-				app.refreshing[name] = nil;
-			end;
-		if delaySec and delaySec > 0 then
-			-- print("delayed coroutine",delaySec,name);
-			C_Timer.After(delaySec, function() Push(app, name, pushCo) end);
-		else
-			-- print("coroutine starting",name);
-			Push(app, name, pushCo);
-		end
-	-- else print("skipped coroutine",name);
-	end
-end
+local Push = app.Push;
+local StartCoroutine = app.StartCoroutine;
 local Callback = app.CallbackHandlers.Callback;
 local DelayedCallback = app.CallbackHandlers.DelayedCallback;
 local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback;
 local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
+app.FunctionRunner = app.CreateRunner("default");
+app.DynamicRunner = app.CreateRunner("dynamic");
+app.UpdateRunner = app.CreateRunner("update");
+app.FillRunner = app.CreateRunner("fill");
+app.WaypointRunner = app.CreateRunner("waypoint");
 local function LocalizeGlobal(globalName, init)
 	local val = _G[globalName];
 	if init and not val then
@@ -264,102 +218,6 @@ local indexOf = function(arr, value)
 	end
 end
 
--- Iterative Function Runner
-do
--- Creates a Function Runner which can execute a sequence of Functions on a set iteration per frame update
-local function CreateRunner(name)
-	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
-	local QueueIndex = 1;
-	local function SetPerFrame(count)
-		Config.PerFrame = math.max(1, tonumber(count) or 1);
-		-- app.PrintDebug("FR.PerFrame."..name,Config.PerFrame)
-	end
-	local function Reset()
-		Config.PerFrame = 1;
-		-- when done with all functions in the queue, reset the queue index and clear the queues of data
-		QueueIndex = 1;
-		wipe(FunctionQueue);
-		wipe(ParameterBucketQueue);
-		wipe(ParameterSingleQueue);
-		-- app.PrintDebug("FR:Reset."..name)
-	end
-
-	-- maybe a coroutine directly which can be restarted without needing to be re-created?
-	local RunnerCoroutine = function()
-		local i, perFrame = 1, Config.PerFrame;
-		local params;
-		local func = FunctionQueue[i];
-		-- app.PrintDebug("FRC.Running."..name)
-		while func do
-			perFrame = perFrame - 1;
-			params = ParameterBucketQueue[i];
-			if params then
-				-- app.PrintDebug("FRC.Run.N."..name,i,unpack(params))
-				func(unpack(params));
-			else
-				-- app.PrintDebug("FRC.Run.1."..name,i,ParameterSingleQueue[i])
-				func(ParameterSingleQueue[i]);
-			end
-			-- app.PrintDebug("FRC.Done."..name,i)
-			if perFrame <= 0 then
-				-- app.PrintDebug("FRC.Yield."..name)
-				coroutine.yield();
-				perFrame = Config.PerFrame;
-			end
-			i = i + 1;
-			func = FunctionQueue[i];
-		end
-		-- Run the OnEnd function if it exists
-		local OnEnd = FunctionQueue[0];
-		if OnEnd then
-			-- app.PrintDebug("FRC.End."..name,#FunctionQueue)
-			OnEnd();
-		end
-		Reset();
-	end
-
-	-- Provides a utility which will process a given number of functions each frame in a Queue
-	local Runner = {
-		-- Adds a function to be run with any necessary parameters
-		["Run"] = function(func, ...)
-			if type(func) ~= "function" then
-				error("Must be a 'function' type!")
-			end
-			FunctionQueue[QueueIndex] = func;
-			-- app.PrintDebug("FR.Add."..name,QueueIndex,...)
-			local arrs = select("#", ...);
-			if arrs == 1 then
-				ParameterSingleQueue[QueueIndex] = ...;
-			elseif arrs > 1 then
-				ParameterBucketQueue[QueueIndex] = { ... };
-			end
-			QueueIndex = QueueIndex + 1;
-			StartCoroutine("Runner:"..name, RunnerCoroutine);
-		end,
-		-- Set a function to be run once the queue is empty. This function takes no parameters.
-		["OnEnd"] = function(func)
-			FunctionQueue[0] = func;
-		end,
-	};
-
-	-- Defines how many functions will be executed per frame. Executes via the Runner when encountered in the Queue, unless specified as 'instant'
-	Runner.SetPerFrame = function(count, instant)
-		if instant then
-			SetPerFrame(count);
-		else
-			Runner.Run(SetPerFrame, count);
-		end
-	end
-	Runner.Reset = Reset; -- for testing
-
-	return Runner;
-end
-
-app.FunctionRunner = CreateRunner("default");
-app.DynamicRunner = CreateRunner("dynamic");
-app.UpdateRunner = CreateRunner("update");
-app.FillRunner = CreateRunner("fill");
-end
 
 -- Sorting Logic
 do
@@ -5320,6 +5178,7 @@ local NPCExpandHeaders = {
 	[-1] = true,	-- COMMON_BOSS_DROPS
 	[-20] = true,	-- COMMON_VENDOR_ITEMS
 	[-26] = true,	-- DROPS
+	[0] = true,		-- ZONE_DROPS
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group)
@@ -6442,7 +6301,6 @@ fieldConverters = {
 
 -- Performance Tracking for Caching
 if app.__perf then
-	local GetTimePreciseSec = GetTimePreciseSec;
 	local type = "CacheFields";
 	-- init table for this object type
 	if type and not app.__perf[type] then
@@ -6931,10 +6789,165 @@ local __TomTomWaypointCache = setmetatable({}, { __index = function(t, mapID)
 	rawset(t, mapID, o);
 	return o;
 end });
-local __TomTomWaypointFirst, __TomTomWaypointCount;
+local __TomTomWaypointCount, __PlottedGroup;
+local function SendCachedCoordsToTomTom()
+	if TomTom then
+		local xnormal;
+		for mapID,c in pairs(__TomTomWaypointCache) do
+			for x,d in pairs(c) do
+				xnormal = x / 1000;
+				for y,datas in pairs(d) do
+					-- Determine the Root and simplify NPC/Object data.
+					-- An NPC/Object can contain all of the other types by reference and don't need individual entries.
+					local root,rootByCreatureID,rootByObjectID = {},{},{};
+					for key,group in pairs(datas) do
+						local creatureID, objectID;
+						if group.npcID or group.creatureID then
+							creatureID = group.npcID or group.creatureID;
+						elseif group.objectID then
+							objectID = group.objectID;
+						else
+							if group.providers then
+								for i,provider in ipairs(group.providers) do
+									if provider[1] == "n" then
+										if provider[2] > 0 then
+											creatureID = provider[2];
+										end
+									elseif provider[1] == "o" then
+										if provider[2] > 0 then
+											objectID = provider[2];
+										end
+									end
+								end
+							end
+							if group.qgs then
+								local count = #group.qgs;
+								if count > 1 and group.coords and #group.coords == count then
+									for i=count,1,-1 do
+										local coord = group.coords[i];
+										if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
+											creatureID = group.qgs[i];
+											break;
+										end
+									end
+									if not creatureID then
+										creatureID = group.qgs[1];
+									end
+								else
+									creatureID = group.qgs[1];
+								end
+							end
+							if group.crs then
+								local count = #group.crs;
+								if count > 1 and group.coords and #group.coords == count then
+									for i=count,1,-1 do
+										local coord = group.coords[i];
+										if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
+											creatureID = group.crs[i];
+											break;
+										end
+									end
+									if not creatureID then
+										creatureID = group.crs[1];
+									end
+								else
+									creatureID = group.crs[1];
+								end
+							end
+						end
+						if creatureID then
+							if not rootByCreatureID[creatureID] then
+								rootByCreatureID[creatureID] = group;
+								tinsert(root, app.CreateNPC(creatureID));
+							end
+						elseif objectID then
+							if not rootByObjectID[objectID] then
+								rootByObjectID[objectID] = group;
+								tinsert(root, app.CreateObject(objectID));
+							end
+						else
+							tinsert(root, group);
+						end
+					end
+
+					local first = root[1];
+					if first then
+						local opt = { from = "ATT" };
+						opt.title = first.text or RETRIEVING_DATA;
+						local displayID = GetDisplayID(first);
+						if displayID then
+							opt.minimap_displayID = displayID;
+							opt.worldmap_displayID = displayID;
+						end
+						if first.icon then
+							opt.minimap_icon = first.icon;
+							opt.worldmap_icon = first.icon;
+						end
+
+						if TomTom.DefaultCallbacks then
+							local callbacks = TomTom:DefaultCallbacks();
+							callbacks.minimap.tooltip_update = nil;
+							callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
+								tooltip:ClearLines();
+								for i,o in ipairs(root) do
+									local lineNumber = tooltip:NumLines() + 1;
+									tooltip:AddLine(o.text);
+									if o.title and not o.explorationID then tooltip:AddLine(o.title); end
+									local key = o.key;
+									if key == "objectiveID" then
+										if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
+									elseif key == "criteriaID" then
+										tooltip:AddLine("Criteria for " .. GetAchievementLink(o.achievementID));
+									else
+										if key == "npcID" then key = "creatureID"; end
+										AttachTooltipSearchResults(tooltip, lineNumber, key .. ":" .. o[o.key], SearchForField, key, o[o.key]);
+									end
+								end
+								tooltip:Show();
+							end
+							callbacks.world.tooltip_update = nil;
+							callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
+							opt.callbacks = callbacks;
+						end
+						TomTom:AddWaypoint(mapID, xnormal, y / 1000, opt);
+					end
+				end
+			end
+		end
+		TomTom:SetClosestWaypoint();
+	elseif C_SuperTrack then
+		-- try to track the first available waypoint in the cache
+		for mapID,c in pairs(__TomTomWaypointCache) do
+			for x,d in pairs(c) do
+				for y,datas in pairs(d) do
+					C_SuperTrack.SetSuperTrackedUserWaypoint(false);
+					C_Map.ClearUserWaypoint();
+					local mapPoint = UiMapPoint.CreateFromCoordinates(mapID or C_Map.GetBestMapForUnit("player") or 1, x/1000, y/1000);
+					-- app.PrintDebug("WP:SuperTrack")
+					-- app.PrintTable(mapPoint)
+					C_Map.SetUserWaypoint(mapPoint);
+					C_SuperTrack.SetSuperTrackedUserWaypoint(true);
+					break;
+				end
+				break;
+			end
+			break;
+		end
+		-- or navigate by active quest
+		if __PlottedGroup.questID and C_QuestLog.IsOnQuest(__PlottedGroup.questID) then
+			__TomTomWaypointCount = -1;
+			C_SuperTrack.SetSuperTrackedQuestID(__PlottedGroup.questID);
+		end
+	end
+	-- no coords actually plotted, notify in chat
+	if __TomTomWaypointCount == 0 then
+		app.print(sformat(L["NO_COORDINATES_FORMAT"], __PlottedGroup.text));
+	end
+end
 local function AddTomTomWaypointCache(coord, group)
 	local mapID = coord[3];
 	if mapID then
+		-- app.PrintDebug("WP:Cache",group.hash)
 		__TomTomWaypointCount = __TomTomWaypointCount + 1;
 		__TomTomWaypointCache[mapID][math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
 	else
@@ -6942,209 +6955,111 @@ local function AddTomTomWaypointCache(coord, group)
 		print("Missing mapID for", group.text, coord[1], coord[2], mapID);
 	end
 end
+local function AddTomTomParentCoord(group)
+	-- app.PrintDebug("WP:ParentChain")
+	local parent = group.sourceParent or group.parent;
+	while parent do
+		-- app.PrintDebug("WP:Parent:",parent.hash)
+		if parent.coords then
+			for _,coord in ipairs(parent.coords) do
+				AddTomTomWaypointCache(coord, parent);
+			end
+			break;
+		end
+		if parent.coord then
+			AddTomTomWaypointCache(parent.coord, parent);
+			break;
+		end
+		parent = parent.sourceParent or parent.parent;
+	end
+end
 local function AddTomTomWaypointInternal(group, depth)
 	if group.visible then
 		if group.plotting then return false; end
 		group.plotting = true;
-		if group.g then
-			depth = depth + 1;
-			for _,o in ipairs(group.g) do
-				AddTomTomWaypointInternal(o, depth);
+		-- app.PrintDebug("WP:depth",depth)
+		-- always plot directly clicked otherwise don't plot saved or inaccessible groups
+		if depth == 0 or (not group.saved and not group.missingSourceQuests) then
+			-- app.PrintDebug("WP:Group",group.hash)
+			if group.coords then
+				for _,coord in ipairs(group.coords) do
+					AddTomTomWaypointCache(coord, group);
+				end
 			end
-			depth = depth - 1;
+			if group.coord then AddTomTomWaypointCache(group.coord, group); end
 		end
-
+		-- also check for first coord(s) on parent chain of plotted group
+		if depth == 0 and __TomTomWaypointCount == 0 then
+			AddTomTomParentCoord(group);
+		end
+		-- sub-groups coords?
+		if group.g then
+			-- app.PrintDebug("WP:SubGroups",group.hash)
+			for _,o in ipairs(group.g) do
+				AddTomTomWaypointInternal(o, depth + 1);
+			end
+		end
+		-- symlink of the group coords?
 		local searchResults = ResolveSymbolicLink(group);
 		if searchResults then
-			depth = depth + 1;
+			-- app.PrintDebug("WP:Sym",group.hash)
 			for _,o in ipairs(searchResults) do
-				AddTomTomWaypointInternal(o, depth);
+				AddTomTomWaypointInternal(o, depth + 1);
 			end
-			depth = depth - 1;
+		end
+		-- also check for first coord(s) on alternate search results/parents of the group if it's a Thing
+		if app.ThingKeys[group.key or 0] then
+			-- app.PrintDebug("WP:SearchScan",group.hash)
+			local key = group.key;
+			local searchResults = app.SearchForField(key, group[key], "field");
+			for _,o in ipairs(searchResults) do
+				-- app.PrintDebug("WP:Search:",o.hash)
+				if o.coords then
+					for _,coord in ipairs(o.coords) do
+						AddTomTomWaypointCache(coord, o);
+					end
+					break;
+				end
+				if o.coord then
+					AddTomTomWaypointCache(o.coord, o);
+					break;
+				end
+				AddTomTomParentCoord(o);
+			end
 		end
 		group.plotting = nil;
-
-		if TomTom then
-			-- always plot directly clicked otherwise don't plot saved or inaccessible groups
-			if depth == 0 or (not group.saved and not group.missingSourceQuests) then
-				if group.coords then
-					for _,coord in ipairs(group.coords) do
-						AddTomTomWaypointCache(coord, group);
-					end
+		-- if STILL nothing was found to plot (plotting meta-achievements whose achievements are under other groups)
+		-- pop off the first layer of groups under the group to plot waypoints as if they were each individually plotted
+		-- to process as normal waypoint plotting
+		if TomTom and __TomTomWaypointCount == 0 and depth < 2 then
+			-- app.PrintDebug("WP:NestedSearchScan",group.hash)
+			-- grab raw groups
+			local g = group.g;
+			if g then
+				for _,o in ipairs(g) do
+					app.WaypointRunner.Run(AddTomTomWaypointInternal, o, 0);
 				end
-				if group.coord then AddTomTomWaypointCache(group.coord, group); end
-			end
-		elseif C_SuperTrack then
-			-- always plot directly clicked or first available waypoint otherwise don't plot saved or inaccessible groups
-			if depth == 0 or (__TomTomWaypointFirst and (not group.saved and not group.missingSourceQuests)) then
-				local coord = group.coords and group.coords[1] or group.coord;
-				if coord then
-					__TomTomWaypointFirst = false;
-					C_SuperTrack.SetSuperTrackedUserWaypoint(false);
-					C_Map.ClearUserWaypoint();
-					-- coord[3] not existing is checked by Parser and shouldn't ever happen
-					C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or C_Map.GetBestMapForUnit("player") or 1, coord[1]/100, coord[2]/100));
-					C_SuperTrack.SetSuperTrackedUserWaypoint(true);
-				end
+				return;
 			end
 		end
+		-- TODO: if still no coords (Achievement Criteria with Providers/Cost)
+		-- further Search Providers/Cost/crs/etc to find coords
 	end
 end
 AddTomTomWaypoint = function(group)
-	if TomTom or C_SuperTrack then
-		__TomTomWaypointFirst = true;
-		__TomTomWaypointCount = 0;
-		wipe(__TomTomWaypointCache);
+	wipe(__TomTomWaypointCache);
+	__TomTomWaypointCount = 0;
+	__PlottedGroup = group;
+	if TomTom then
+		-- attempt to cache all coords
+		app.WaypointRunner.Run(AddTomTomWaypointInternal, group, 0);
+		-- actually send the coords to TomTom now that every coord has been cached
+		app.WaypointRunner.OnEnd(SendCachedCoordsToTomTom);
+	elseif C_SuperTrack then
+		-- attempt to cache all coords
 		AddTomTomWaypointInternal(group, 0);
-		-- also check for first coord(s) on parent chain if no coords found
-		if __TomTomWaypointCount == 0 then
-			local parent = group.sourceParent or group.parent;
-			while parent do
-				if parent.coords then
-					for _,coord in ipairs(parent.coords) do
-						AddTomTomWaypointCache(coord, parent);
-					end
-					break;
-				end
-				if parent.coord then
-					AddTomTomWaypointCache(parent.coord, parent);
-					break;
-				end
-				parent = parent.sourceParent or parent.parent;
-			end
-		end
-		if TomTom then
-			local xnormal;
-			for mapID,c in pairs(__TomTomWaypointCache) do
-				for x,d in pairs(c) do
-					xnormal = x / 1000;
-					for y,datas in pairs(d) do
-						-- Determine the Root and simplify NPC/Object data.
-						-- An NPC/Object can contain all of the other types by reference and don't need individual entries.
-						local root,rootByCreatureID,rootByObjectID = {},{},{};
-						for key,group in pairs(datas) do
-							local creatureID, objectID;
-							if group.npcID or group.creatureID then
-								creatureID = group.npcID or group.creatureID;
-							elseif group.objectID then
-								objectID = group.objectID;
-							else
-								if group.providers then
-									for i,provider in ipairs(group.providers) do
-										if provider[1] == "n" then
-											if provider[2] > 0 then
-												creatureID = provider[2];
-											end
-										elseif provider[1] == "o" then
-											if provider[2] > 0 then
-												objectID = provider[2];
-											end
-										end
-									end
-								end
-								if group.qgs then
-									local count = #group.qgs;
-									if count > 1 and group.coords and #group.coords == count then
-										for i=count,1,-1 do
-											local coord = group.coords[i];
-											if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
-												creatureID = group.qgs[i];
-												break;
-											end
-										end
-										if not creatureID then
-											creatureID = group.qgs[1];
-										end
-									else
-										creatureID = group.qgs[1];
-									end
-								end
-								if group.crs then
-									local count = #group.crs;
-									if count > 1 and group.coords and #group.coords == count then
-										for i=count,1,-1 do
-											local coord = group.coords[i];
-											if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
-												creatureID = group.crs[i];
-												break;
-											end
-										end
-										if not creatureID then
-											creatureID = group.crs[1];
-										end
-									else
-										creatureID = group.crs[1];
-									end
-								end
-							end
-							if creatureID then
-								if not rootByCreatureID[creatureID] then
-									rootByCreatureID[creatureID] = group;
-									tinsert(root, app.CreateNPC(creatureID));
-								end
-							elseif objectID then
-								if not rootByObjectID[objectID] then
-									rootByObjectID[objectID] = group;
-									tinsert(root, app.CreateObject(objectID));
-								end
-							else
-								tinsert(root, group);
-							end
-						end
-
-						local first = root[1];
-						if first then
-							local opt = { from = "ATT" };
-							opt.title = first.text or RETRIEVING_DATA;
-							local displayID = GetDisplayID(first);
-							if displayID then
-								opt.minimap_displayID = displayID;
-								opt.worldmap_displayID = displayID;
-							end
-							if first.icon then
-								opt.minimap_icon = first.icon;
-								opt.worldmap_icon = first.icon;
-							end
-
-							if TomTom.DefaultCallbacks then
-								local callbacks = TomTom:DefaultCallbacks();
-								callbacks.minimap.tooltip_update = nil;
-								callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
-									tooltip:ClearLines();
-									for i,o in ipairs(root) do
-										local lineNumber = tooltip:NumLines() + 1;
-										tooltip:AddLine(o.text);
-										if o.title and not o.explorationID then tooltip:AddLine(o.title); end
-										local key = o.key;
-										if key == "objectiveID" then
-											if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
-										elseif key == "criteriaID" then
-											tooltip:AddLine("Criteria for " .. GetAchievementLink(o.achievementID));
-										else
-											if key == "npcID" then key = "creatureID"; end
-											AttachTooltipSearchResults(tooltip, lineNumber, key .. ":" .. o[o.key], SearchForField, key, o[o.key]);
-										end
-									end
-									tooltip:Show();
-								end
-								callbacks.world.tooltip_update = nil;
-								callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
-								opt.callbacks = callbacks;
-							end
-							TomTom:AddWaypoint(mapID, xnormal, y / 1000, opt);
-						end
-					end
-				end
-			end
-			TomTom:SetClosestWaypoint();
-		end
-		if C_SuperTrack and group.questID and C_QuestLog.IsOnQuest(group.questID) then
-			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
-			return;
-		end
-		if __TomTomWaypointCount == 0 and __TomTomWaypointFirst then
-			app.print(format(L["NO_COORDINATES_FORMAT"], group.text));
-		end
+		-- actually send the coords to SuperTrack now that possible coords have been cached
+		SendCachedCoordsToTomTom();
 	else
 		app.print(L["TOM_TOM_NOT_FOUND"]);
 	end
@@ -7593,8 +7508,8 @@ local ObjectDefaults = {
 	["progress"] = 0,
 	["total"] = 0,
 };
-local GetTimePreciseSec, getmetatable, setmetatable =
-	  GetTimePreciseSec, getmetatable, setmetatable;
+local getmetatable, setmetatable =
+	  getmetatable, setmetatable;
 local ObjectFunctions = {
 	-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 	["parent"] = function(t)
@@ -7891,10 +7806,6 @@ local QuestNameDefault = setmetatable({}, { __index = function(t, id)
 		return name;
 	end
 end});
--- Attempts to return the cached quest name for the given id, may return 'Retrieving Data' if not yet cached from Server
-app.QuestNameInstant = function(id)
-	return QuestNameFromServer[id];
-end
 local QuestsRequested = {};
 local QuestsToPopulate = {};
 -- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
@@ -10695,6 +10606,10 @@ local fields = {
 	["key"] = function(t)
 		return "factionID";
 	end,
+	-- pseudo-headerID so that default Sorting considers Faction groups equivalent to Headers
+	["headerID"] = function()
+		return true;
+	end,
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
@@ -10839,11 +10754,12 @@ local fields = {
 	["key"] = function(t)
 		return "filterID";
 	end,
-	["text"] = function(t)
-		return L["FILTER_ID_TYPES"][t.filterID];
+	-- pseudo-headerID so that default Sorting considers Filter groups equivalent to Headers
+	["headerID"] = function()
+		return true;
 	end,
 	["name"] = function(t)
-		return t.text;
+		return L["FILTER_ID_TYPES"][t.filterID];
 	end,
 	["icon"] = function(t)
 		return L["FILTER_ID_ICONS"][t.filterID];
@@ -10874,6 +10790,7 @@ local FlightPathMapIDs = {
 	2046,	-- Zereth Mortis
 	2057,	-- Dragon Isles
 	2055,	-- Sepulcher of the First Ones (has FPs inside)
+	2175,	-- Zaralek Cavern
 };
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID
 	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID;
@@ -12025,13 +11942,6 @@ local weaponTextures = {
 	"Interface/ICONS/inv_weapon_shortblade_84",
 };
 
-local toc = select(4, GetBuildInfo());
-local v = "";
-if toc >= 100100 then
-	table.insert(armorTextures, "Interface/ICONS/inv_shoulder_armor_dragonspawn_c_02");
-	table.insert(weaponTextures, "Interface/ICONS/inv_weapon_shortblade_84");
-end
-
 local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
 local fields = {
 	["key"] = function(t)
@@ -12151,6 +12061,7 @@ app.CacheHeirlooms = function()
 		app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
 		app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
 		app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
+		app.CreateItem(204336); -- Awakened Heirloom Armor Casing
 	};
 	local weaponTokens = {
 		app.CreateItem(204337),	-- Awakened Heirloom Scabbard
@@ -12159,13 +12070,8 @@ app.CacheHeirlooms = function()
 		app.CreateItem(151615),	-- Weathered Heirloom Scabbard
 		app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
 		app.CreateItem(122339),	-- Ancient Heirloom Scabbard
+		app.CreateItem(204337);	-- Awakened Heirloom Scabbard
 	};
-
-	local toc = select(4, GetBuildInfo());
-	if toc >= 100100 then
-		table.insert(armorTokens, app.CreateItem(204336)); 	-- Awakened Heirloom Armor Casing
-		table.insert(weaponTokens, app.CreateItem(204337));	-- Awakened Heirloom Scabbard
-	end
 
 	-- cache the heirloom upgrade tokens
 	for i,item in ipairs(armorTokens) do
@@ -14925,6 +14831,7 @@ local function AdjustParentProgress(group, progChange, totalChange)
 end
 -- For directly applying the full Update operation for the top-level data group within a window
 local function TopLevelUpdateGroup(group)
+	group.TLUG = GetTimePreciseSec();
 	group.total = 0;
 	group.progress = 0;
 	-- app.PrintDebug("TLUG",group.hash)
@@ -15857,7 +15764,7 @@ local function UpdateWindowsOnEnd()
 	wipe(searchCache);
 end
 local function UpdateWindows(force, got)
-	-- app.PrintDebug("UpdateWindows",force,got)
+	-- app.PrintDebug("UpdateWindows",force and "FORCE" or "SOFT",got and "COLLECTED" or "PASSIVE")
 	app._LastUpdateTime = GetTimePreciseSec();
 	-- After handling all Updates, perform some logic
 	app.UpdateRunner.OnEnd(UpdateWindowsOnEnd);
@@ -17541,7 +17448,7 @@ local function UpdateWindow(self, force, got)
 			self.HasPendingUpdate = true;
 			force = nil;
 		end
-		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE" or "SOFT", visible and "VISIBLE" or "HIDDEN");
+		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE" or "SOFT", visible and "VISIBLE" or "HIDDEN",got and "COLLECTED" or "PASSIVE");
 		if force or visible then
 			-- clear existing row data for the update
 			if self.rowData then wipe(self.rowData);
@@ -18063,13 +17970,20 @@ function app:GetDataCache()
 				return t.mb_title1..DESCRIPTION_SEPARATOR..t.mb_title2;
 			end
 			if key == "mb_title1" then return app.Settings:GetModeString(); end
-			if key == "mb_title2" then return t.total == 0 and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
+			if key == "mb_title2" then return not t.TLUG and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
 			if key == "visible" then return true; end
 		end,
 		__newindex = function(t, key, val)
 			-- app.PrintDebug("Top-Root-Set",key,val)
 			if key == "visible" then
 				return;
+			end
+			-- until the Main list receives a top-level update
+			if not t.TLUG then
+				-- ignore setting progress/total values
+				if key == "progress" or key == "total" then
+					return;
+				end
 			end
 			rawset(t, key, val);
 		end
@@ -19035,7 +18949,7 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 		if not self.initialized then
 			self.doesOwnUpdate = true;
 			self.initialized = true;
-			self.Limit = 17314;	-- MissingAchievements:10.0.2.46781
+			self.Limit = 18359;	-- MissingAchievements:10.0.2.46781
 			self.PartitionSize = 2000;
 			local db = {};
 			local CleanUpHarvests = function()
@@ -19474,6 +19388,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- since they will be comprised of groups from many different source locations
 				header.sourceParent = nil;
 				header.customCollect = nil;
+				header.requireSkill = nil;
 				header.u = nil;
 				header.races = nil;
 				header.r = nil;
@@ -19553,6 +19468,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		-- self.Rebuild
 		(function()
 		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID, isInInstance;
+		local rootGroups, mapGroups = {}, {};
 		self.Rebuild = function(self)
 			-- app.PrintDebug("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
@@ -19567,14 +19483,40 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- app.PrintDebug(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
 				groups = {};
+				wipe(rootGroups);
+				wipe(mapGroups);
 				header = app.CreateMap(self.mapID, { g = groups });
 				self.CurrentMaps[self.mapID] = true;
 				isInInstance = IsInInstance();
 				headerKeys = isInInstance and subGroupInstanceKeys or subGroupKeys;
+				-- split search results by whether they represent the 'root' of the minilist or some other mapped content
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
-					-- app.PrintDebug("Clone",group.hash)
 					group = CreateObject(group);
+					-- Instance/Map/Class groups are allowed as root of minilist
+					if (group.instanceID or group.mapID or group.key == "classID")
+						-- and actually match this minilist...
+						-- only if this group mapID matches the minilist mapID directly or by maps
+						and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
+						tinsert(rootGroups, group);
+					else
+						tinsert(mapGroups, group);
+					end
+				end
+				-- first merge all root groups into the list
+				for _,group in ipairs(rootGroups) do
+					if group.maps then
+						for _,m in ipairs(group.maps) do
+							self.CurrentMaps[m] = true;
+						end
+					end
+					-- app.PrintDebug("Merge as Root",group.hash)
+					MergeProperties(header, group, true);
+					NestObjects(header, group.g);
+				end
+				-- then merge all mapped groups into the list
+				for _,group in ipairs(mapGroups) do
+					-- app.PrintDebug("Clone",group.hash)
 					-- app.PrintDebug("Done")
 					-- app.PrintDebug(group.hash,group.text)
 					nested = nil;
@@ -19582,69 +19524,53 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- Cache the difficultyID, if there is one and we are in an actual instance where the group is being mapped
 					difficultyID = isInInstance and GetRelativeValue(group, "difficultyID");
 
-					-- groups which 'should' be a root of the minilist
-					if (group.instanceID or group.mapID or group.key == "classID")
-					-- and actually match this minilist...
-					-- only if this group mapID matches the minilist mapID directly or by maps
-					and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
-						if group.maps then
-							for _,m in ipairs(group.maps) do
-								self.CurrentMaps[m] = true;
+					-- Get the header chain for the group
+					nextParent = group.parent;
+
+					-- Pre-nest some groups based on their type after grabbing the parent
+					-- Achievements / Achievement / Criteria
+					if group.key == "criteriaID" and group.achievementID then
+						-- print("pre-nest achieve",group.criteriaID, group.achievementID)
+						group = app.CreateAchievement(group.achievementID, CreateHeaderData(group));
+					end
+
+					-- Building the header chain for each mapped Thing
+					topHeader = nil;
+					while nextParent do
+						headerID = nextParent.headerID;
+						if headerID and headerID ~= true then
+							-- This matches a top-level header, track that top-level header at the highest point
+							if topHeaders[headerID] then
+								-- already found a matching header, then nest it before switching
+								if topHeader then
+									group = CreateHeaderData(group, topHeader);
+								end
+								topHeader = nextParent;
+							elseif not ignoredHeaders[headerID] then
+								group = CreateHeaderData(group, nextParent);
+								nested = true;
 							end
-						end
-						-- app.PrintDebug("Merge as Root")
-						MergeProperties(header, group, true);
-						NestObjects(header, group.g);
-						group = nil;
-					else
-						-- Get the header chain for the group
-						nextParent = group.parent;
-
-						-- Pre-nest some groups based on their type after grabbing the parent
-						-- Achievements / Achievement / Criteria
-						if group.key == "criteriaID" and group.achievementID then
-							-- print("pre-nest achieve",group.criteriaID, group.achievementID)
-							group = app.CreateAchievement(group.achievementID, CreateHeaderData(group));
-						end
-
-						-- Building the header chain for each mapped Thing
-						topHeader = nil;
-						while nextParent do
-							headerID = nextParent.headerID;
-							if headerID then
-								-- This matches a top-level header, track that top-level header at the highest point
-								if topHeaders[headerID] then
-									-- already found a matching header, then nest it before switching
-									if topHeader then
-										group = CreateHeaderData(group, topHeader);
-									end
-									topHeader = nextParent;
-								elseif not ignoredHeaders[headerID] then
+						else
+							for _,hkey in ipairs(headerKeys) do
+								if nextParent[hkey] then
+									-- create the specified group Type header
 									group = CreateHeaderData(group, nextParent);
 									nested = true;
-								end
-							else
-								for _,hkey in ipairs(headerKeys) do
-									if nextParent[hkey] then
-										-- create the specified group Type header
-										group = CreateHeaderData(group, nextParent);
-										nested = true;
-										break;
-									end
+									break;
 								end
 							end
-							nextParent = nextParent.parent;
 						end
-						-- Create/match the header chain for the zone list assuming it matches one of the allowed top headers
-						if topHeader then
-							group = CreateHeaderData(group, topHeader);
-							-- app.PrintDebug("topHeader",group.text,group.hash)
-							nested = true;
-						end
+						nextParent = nextParent.parent;
+					end
+					-- Create/match the header chain for the zone list assuming it matches one of the allowed top headers
+					if topHeader then
+						group = CreateHeaderData(group, topHeader);
+						-- app.PrintDebug("topHeader",group.text,group.hash)
+						nested = true;
 					end
 
 					-- couldn't nest this thing using a topheader header, try to use the key of the last nested group to figure out the topheader
-					if not topHeader and group then
+					if not topHeader then
 						groupKey = group.key;
 						typeHeaderID = nil;
 						-- determine the expected top header for this 'thing' based on its key
@@ -19671,10 +19597,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 					-- If relative to a difficultyID, then merge it into one.
 					if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
-					if group then
-						-- app.PrintDebug("Merge as Mapped")
-						MergeObject(groups, group);
-					end
+					-- app.PrintDebug("Merge as Mapped",group.hash)
+					MergeObject(groups, group);
 				end
 
 				-- Check for difficulty groups
@@ -22241,7 +22165,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					return;
 				end
 				-- Rebuild all World Quest data
-				-- print("Rebuild WQ Data")
+				-- app.PrintDebug("Rebuild WQ Data")
 				self.retry = nil;
 				-- Put a 'Clear World Quests' click first in the list
 				local temp = {{
@@ -22819,18 +22743,19 @@ app.LoadDebugger = function()
 						local link = GetQuestItemLink("choice", i);
 						if link then tinsert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
 					end
-					for i=1,GetNumQuestLogRewardSpells(questID),1 do
-						local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
-						if garrFollowerID then
-							tinsert(rawGroups, { ["followerID"] = garrFollowerID, ["name"] = name });
-						elseif spellID then
-							if isTradeskillSpell then
-								tinsert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
-							else
-								tinsert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
-							end
-						end
-					end
+					-- GetNumQuestLogRewardSpells removed in 10.1
+					-- for i=1,GetNumQuestLogRewardSpells(questID),1 do
+					-- 	local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
+					-- 	if garrFollowerID then
+					-- 		tinsert(rawGroups, { ["followerID"] = garrFollowerID, ["name"] = name });
+					-- 	elseif spellID then
+					-- 		if isTradeskillSpell then
+					-- 			tinsert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
+					-- 		else
+					-- 			tinsert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
+					-- 		end
+					-- 	end
+					-- end
 
 					local info = { ["questID"] = questID, ["g"] = rawGroups };
 					if questStartItemID and questStartItemID > 0 then info.provider = { "i", questStartItemID }; end
@@ -23761,13 +23686,7 @@ end
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
 	-- app.PrintMemoryUsage("Startup")
-	local toc = select(4, GetBuildInfo());
-	local v = "";
-	if toc < 100100 then
-		v = GetAddOnMetadata("AllTheThings", "Version");
-	else
-		v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
-	end
+	local v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
 	-- if placeholder exists as the Version tag, then assume we are not on the Release version
 	if string.match(v, "version") then
 		app.Version = "[Git]";
@@ -24467,6 +24386,10 @@ app.InitDataCoroutine = function()
 	-- do a settings apply to ensure ATT windows which have now been created, are moved according to the current Profile
 	app.Settings:ApplyProfile();
 
+	-- clear harvest data on load in case someone forgets
+	AllTheThingsHarvestItems = {};
+	AllTheThingsArtifactsItems = {};
+
 	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 	DelayedCallback(app.LocationTrigger, 3);
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
@@ -24697,7 +24620,7 @@ end
 		-- else
 		local type, info, data1, data2, data3 = strsplit(":", link);
 		-- print(type, info, data1, data2, data3)
-		if type == "garrmission" and info == "ATT" then
+		if type == "addon" and info == "ATT" then
 			-- local op = string.sub(link, 17)
 			-- print("ATT Link",op)
 			-- local type, paramA, paramB = strsplit(":", data);
@@ -24726,7 +24649,7 @@ end
 
 	-- Turns a bit of text into a colored link which ATT will attempt to understand
 	function app:Linkify(text, color, operation)
-		text = "|Hgarrmission:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
+		text = "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
 		-- print("Linkify",text)
 		return text;
 	end

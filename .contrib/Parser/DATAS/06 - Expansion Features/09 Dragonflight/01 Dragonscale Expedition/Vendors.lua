@@ -206,6 +206,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 						["sourceQuest"] = 72709,	-- Funding a Treasure Hunt
 					}),
+					i(197369, { -- Renewed Proto-Drake: Brown Hair
+						["cost"] = {
+							{"c", DRAGON_SUPPLIES, 50 },
+						},
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 						-- RENOWN 19 --
 					i(198728, {	-- Explorer's League Banner (TOY!)
 						["cost"] = {

@@ -10,11 +10,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 204252 },	-- Questaniffen
 					["coord"] = { 49.7, 55.3, VALDRAKKEN },
 				}),
-				q(72975, {	-- The Land Beneath: Zaralek Cavern!
-					["maps"] = { VALDRAKKEN },
+				q(72975, {	-- The Land Beneath
+					["sourceQuests"] = { 72717 },	-- A Creche Divided
+					["provider"] = { "n", 201401 },	-- Hadexian
+					["coord"] = { 51.3, 35.2, VALDRAKKEN },
+				}),
+				q(75456, {	-- News From Beneath
+					["sourceQuests"] = { 72717 },	-- A Creche Divided
+					["provider"] = { "n", 200277 },	-- Ebyssian
+					["coord"] = { 76.8, 38.2, THE_FORBIDDEN_REACH },
+				}),
+				q(76118, {	-- Accept Book from Wrathion
+					["name"] = "Accept Book from Wrathion",
+					["provider"] = { "n", 201284 },	-- Wrathion
+					["coord"] = { 62.4, 42.7, VALDRAKKEN },
+					["g"] = {
+						i(206033),	-- Untranslated Obsidian Tome
+					},
 				}),
 				q(72976, {	-- A Crack in the World
-					["sourceQuests"] = { 72975 },	-- The Land Beneath: Zaralek Cavern!
+					["sourceQuests"] = {
+						72975,	-- The Land Beneath
+						75456,	-- News From Beneath
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 201281 },	-- Ebyssian
 					["coord"] = { 61.4, 42.3, VALDRAKKEN },
 				}),
@@ -27,6 +46,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72977 },	-- Where the Flames Fell
 					["provider"] = { "n", 201311 },	-- Wrathion
 					["coord"] = { 87.2, 27.8, OHNAHRAN_PLAINS },
+				}),
+				q(75985, {	-- Rest Well, Warrior
+					["sourceQuests"] = { 72978 },	-- Scar of Earth and Fire
+					["provider"] = { "n", 202788 },	-- Khasar
+					["coord"] = { 86.9, 27.2, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(204461),	-- Shalkeel's Remembrance
 					},
@@ -79,18 +103,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 201589 },	-- Sabellian
 					["coord"] = { 60.6, 40.1, ZARALEK_CAVERN },
 				}),
-				q(72973, {	-- Follow Your Nose
+				q(72973, {	-- Smells Like Loamm
 					["sourceQuests"] = { 72979 },	-- The Earth Gives Way
 					["provider"] = { "n", 201584 },	-- Elder Honeypelt
 					["coord"] = { 57.0, 38.2, ZARALEK_CAVERN },
 				}),
 				q(75643, {	-- Orientation: Loamm Niffen
-					["sourceQuests"] = { 72973 },	-- Follow Your Nose
+					["sourceQuests"] = { 72973 },	-- Smells Like Loamm
 					["provider"] = { "n", 204522 },	-- Aurantia
 					["coord"] = { 56.9, 55.7, ZARALEK_CAVERN },
 				}),
 				q(72974, {	-- Welcome to the City of Smells
-					["sourceQuests"] = { 72973 },	-- Follow Your Nose
+					["sourceQuests"] = { 72973 },	-- Smells Like Loamm
 					["provider"] = { "n", 200054 },	-- Elder Honeypelt
 					["coord"] = { 57.0, 55.8, ZARALEK_CAVERN },
 					["g"] = {
@@ -107,9 +131,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 				}),
 				q(75644, {	-- Six Hundred Feet Under
-					["sourceQuests"] = { 75643 },	-- Orientation: Loamm Niffen
+					["sourceQuests"] = {
+						75643,	-- Orientation: Loamm Niffen
+						72974	-- Welcome to the City of Smells
+					},
 					["provider"] = { "n", 200052 },	-- Aurantia
 					["coord"] = { 54.6, 54.7, ZARALEK_CAVERN },
+					["g"] = {
+						spell(408876),	-- Zaralek Cavern World Quests
+					},
 				}),
 					-- Chapter 2
 				q(74334, {	-- Future Aspects
@@ -190,6 +220,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204609),	-- Bestowed Greaves
 						i(204585),	-- Endowed Breeches
 						i(204593),	-- Inherited Leggings
+						i(205991),	-- Shiny Token of Gratitude
 					},
 				}),
 
@@ -322,11 +353,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 201784 },	-- Ebyssian
 					["coord"] = { 56.1, 54.5, ZARALEK_CAVERN },
 					["g"] = {
+						i(205989),	-- Symbol of Friendship
 						i(204600),	-- Bequeathed Cowl
 						i(204608),	-- Bestowed Greathelm
 						i(204584),	-- Endowed Hood
 						i(204592),	-- Inherited Mask
-						spell(408876),	-- Zaralek Cavern World Quests
 					},
 				}),
 					-- Chapter 4 --
@@ -481,15 +512,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204682),	-- Enchanted Wyrm's Shadowflame Crest
 					},
 				}),
-
-					-- Unknown --
-				q(76101, {	-- Tougher Down Under
-					--["sourceQuests"] = {  },	--
-					["provider"] = { "n", 204522 },	-- Aurantia
-					["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
-				}),
 			}),
 				-- Teaches New System --
+			q(76101, {	-- Tougher Down Under
+				["sourceQuests"] = { 72973 },	-- Smells Like Loamm
+				["provider"] = { "n", 204522 },	-- Aurantia
+				["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
+			}),
 			q(72658, {	-- Flightstones
 				["sourceQuests"] = { 76101 },	-- Tougher Down Under
 				["provider"] = { "n", 203404 },	-- Vaskarn
@@ -516,7 +545,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204075),	-- Whelpling's Shadowflame Crest Fragment
 				},
 			}),
-			q(75641, {	-- The Power of the Whole
+				--
+			q(75641, {	-- Power Unified
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
 				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
@@ -530,13 +560,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 200054 },	-- Elder Honeypelt
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
+				["g"] = {
+					i(205980),	-- Snail Lasso
+				},
 			}),
 			q(72879, {	-- Smells like Kith Spirit
 				["sourceQuests"] = { 72878 },	-- Slime Time Live
 				["provider"] = { "n", 200055 },	-- Citros
 				["coord"] = { 57.3, 55.9, ZARALEK_CAVERN },
 			}),
-			q(72880, {	-- Smells like Kith Spirit
+			q(72880, {	-- Incense Gratification
 				["sourceQuests"] = { 72879 },	-- Smells like Kith Spirit
 				["provider"] = { "n", 200055 },	-- Citros
 				["coord"] = { 56.8, 54.1, ZARALEK_CAVERN },
@@ -627,7 +660,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 				-- Glimmerogg Questline --
 			q(73707, {	-- TICKET: Glimmerogg Games
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["sourceQuests"] = { 72979 },	-- The Earth Gives Way
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
 				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 				["isBreadcrumb"] = true,
@@ -752,6 +785,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205254),	-- Honoary Explorer's Compass
 				},
 			}),
+			q(74495, {	-- The Tale of Hraxian
+				["description"] = "Available on next day after Dragonscale Camp quest chain finished.",
+				["sourceQuests"] = { 73045 },	-- Stain Removal
+				["provider"] = { "n", 200298 },	-- Veritistrasz
+				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
+			}),
+			q(74994, {	-- Hraxian's Unbreakable Will
+				["sourceQuests"] = { 74495 },	-- The Tale of Hraxian
+				["provider"] = { "n", 200298 },	-- Veritistrasz
+				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
+				["g"] = {
+					i(204220),	-- Hraxian's Unbreakable Will (TOY!)
+				},
+			}),
 
 				-- Misc --
 			q(75232, {	-- Fallen Effects
@@ -759,14 +806,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "i", 204642 },	-- Sheridon Hastle's Effects
 				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
 			}),
+			q(75233, {	-- Flesh to Bone
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["provider"] = { "n", 203378 },	-- Gorgul
+				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
+				["g"] = {
+					i(204714),	-- Satchel of Healing Spores
+					i(204728),	-- Friendship Censer
+					i(204797),	-- Djaradin Boasting Tablets
+					i(204805),	-- Suspended Sulfuric Droplet
+					i(204810),	-- Drogbar Rocks
+					i(204811),	-- Drogbar Stones
+				},
+			}),
 		}),
 	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
-		--q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
-
+		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
+		q(75642),	-- Unknown Account-Wide trigger when zoning into Dragon Isles for first time on an alt
 
 		q(75658),	-- WQ Unlock?
 		--
@@ -777,7 +837,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 
 		--q(76013),	-- after turn in [72930]
 		--q(75706),	-- Some Tracker vid Glimrogg
-		--q(75708),	-- Some Tracker vid Glimrogg / Snail Treats for Corry?
+
+
+		q(75708),	-- Completing A Race to Finish?
 
 
 		--q(75710),	-- Some Tracker vid Glimrogg / First Time?
@@ -791,5 +853,22 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75420),    -- Voraxian
 		-- RP after Stain Removal (73045)
 		q(75219),	-- Voraxian
+		-- Talk with Veritistrasz during (74495)
+		q(74773),    -- 1 (optional) dialog
+		q(74776),    -- after he finished optional gialog
+		q(74777),    -- 1 (quest) dialog
+		q(74778),    -- 2 (optional) dialog
+		q(74779),    -- 2 (quest) dialog
+		q(74789),    -- 3 (optional) dialog
+		q(74780),    -- 3 (quest) dialog
+		q(74781),    -- 4 (quest) dialog
+		q(74782),    -- 5 (quest) dialog
+		q(74788),    -- 6 (quest) dialog
+
+		-- Ponzo hat price
+		q(75869),    -- Become available with cost at 9999 boulders
+		q(75836),    -- I can't afford that - 4999
+		q(75870),    -- Still too much! - 999
+		q(75871),    -- How about 50 boulders - 249
 	}),
 }));

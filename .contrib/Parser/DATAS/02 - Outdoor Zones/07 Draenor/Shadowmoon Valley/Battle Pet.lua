@@ -12,6 +12,7 @@ _.Zones =
 				}),
 				p(1447, {	-- Moonshell Crab
 					["crs"] = { 82045 },	-- Moonshell Crab
+					["description"] = "Found mostly on the northeast coast.",
 				}),
 				p(1455, {	-- Mossbite Skitterer
 					["crs"] = { 85005 },	-- Mossbite Skitterer
@@ -30,6 +31,7 @@ _.Zones =
 				}),
 				p(1582, {	-- Zangar Crawler
 					["crs"] = { 88466 },	-- Zangar Crawler
+					["description"] = "Can be found on the Darktide Roost shoreline and NW Elodor in Shadowmoon, as well as around 73, 34 in Spires of Arak.",
 				}),
 			})),
 		}),

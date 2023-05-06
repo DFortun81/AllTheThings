@@ -4,7 +4,7 @@
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
 		n(VENDORS, {
-			n(203301 , {	-- Bottles <Food and Drink>
+			n(203301, {	-- Bottles <Food and Drink>
 				["coord"] = {  58.1, 55.1, ZARALEK_CAVERN },
 				["g"] = {
 					i(205417),	-- Fungishine
@@ -18,7 +18,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 56.5, 55.6, ZARALEK_CAVERN },
 				["g"] = {
 						-- RENOWN 5 --
-					i(203316, {	-- Winding Slitherdrake: Grand Chin Thorn (DM!)
+					i(203310, {	-- Winding Slitherdrake: Grand Chin Thorn (DM!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 150 },
 						},
@@ -62,56 +62,67 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 						-- RENOWN 12 --
 					i(205353, {	-- Niffen Notebook of Alchemy Knowledge
+						-- ["questID"] = ,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
 					}),
 					i(205352, {	-- Niffen Notebook of Blacksmithing Knowledge
+						["questID"] = 75755,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
 					}),
 					i(205351, {	-- Niffen Notebook of Enchanting Knowledge
+						["questID"] = 75752,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
 					}),
 					i(205349, {	-- Niffen Notebook of Engineering Knowledge
+						["questID"] = 75759,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
 					}),
 					i(205358, {	-- Niffen Notebook of Herbalism Knowledge
+						["questID"] = 75753,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
 					}),
 					i(205354, {	-- Niffen Notebook of Inscription Knowledge
+						["questID"] = 75761,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
 					}),
 					i(205348, {	-- Niffen Notebook of Jewelcrafting Knowledge
+						["questID"] = 75754,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
 					}),
 					i(205350, {	-- Niffen Notebook of Leatherworking Knowledge
+						["questID"] = 75751,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
 					}),
 					i(205356, {	-- Niffen Notebook of Mining Knowledge
+						["questID"] = 75758,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
 					}),
 					i(205357, {	-- Niffen Notebook of Skinning Knowledge
+						["questID"] = 75760,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
 					}),
 					i(205355, {	-- Niffen Notebook of Tailoring Knowledge
+						["questID"] = 75757,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},
@@ -166,6 +177,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 						-- RENOWN 16 --
 					i(205363, {	-- Ensemble: Ornate Black Dragon Labwear
+						["questID"] = 75832,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 250 },
 						},
@@ -219,16 +231,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						},
 					}),
 				},
-			}),
-			n(203609, {	-- Phiary <Cooking>
-				-- TODO: ["coord"] = { 0, 0, ZARALEK_CAVERN },
-				["g"] = {
-					i(205690, {	-- Barter-B-Q
-						["cost"] = {
-							{ "i", 204985, 5 },	-- Barter Brick
-						},
-					}),
-				}
 			}),
 			n(204371, {	-- Sniktak <Enterprising Mycologist>
 				["g"] = {

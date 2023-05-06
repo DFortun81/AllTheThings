@@ -690,7 +690,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 35.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 4.0.3", "added 10.0.7" },
+							["timeline"] = { "removed 4.0.3", ADDED_10_0_7 },
 							["cr"] = 1718,	-- Rockjaw Raider
 						}),
 					}),

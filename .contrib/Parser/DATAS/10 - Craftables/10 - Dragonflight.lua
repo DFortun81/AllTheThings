@@ -3028,6 +3028,8 @@ root(ROOTS.HiddenQuestTriggers, {
 
 			q(75141, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambant Hochenblume
 			q(75143, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Saxifrage
+			q(75138, {["timeline"] = {ADDED_10_1_0}}),	-- First Overload Lambent Herb
+			q(75144, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Writhebark
 			--
 			q(74121),	-- Herbing Enraged Sprout
 			q(74230),	-- Herbing Azra's Prized Peony
@@ -3054,6 +3056,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72346),	-- First Serevite Seam
 			q(72347),	-- First Draconium Seam
 			q(75139 , {["timeline"] = {ADDED_10_1_0}}),	-- First Metamorphic Serevite Deposit
+			q(75140 , {["timeline"] = {ADDED_10_1_0}}),	-- First Metamorphic Draconium Deposit
 
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk

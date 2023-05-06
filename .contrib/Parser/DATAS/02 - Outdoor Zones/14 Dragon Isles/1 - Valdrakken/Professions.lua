@@ -244,7 +244,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				n(185553, {	-- Sekita the Burrower <Mining Trainer>
 					["coord"] = { 39.0, 51.8, VALDRAKKEN },
 					["g"] = {
-						r(366264),	-- Dragon Isles Mining
+						r(366264, {	-- Dragon Isles Mining
+							["collectible"] = false,	-- inexplicably becomes unlearned for some players... Blizzard why
+						}),
 						r(366260),	-- Mining
 						r(396169),	-- Elementally-Charged Stone
 						r(395269),	-- Iridescent Ore

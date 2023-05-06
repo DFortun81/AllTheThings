@@ -354,13 +354,12 @@ namespace ATT
             {
                 if (DataResults.TryDequeue(out Tuple<int, string> data))
                 {
-                    // Simply write the data for parsing later
-                    File.WriteAllText(string.Format(RawDirectoryFormat, data.Item1), data.Item2);
+                    File.AppendAllText(string.Format(RawDirectoryFormat, "DATA"), data.Item2 + Environment.NewLine);
                 }
                 else
                 {
                     // wait for more data to show up
-                    Thread.Sleep(10);
+                    Thread.Sleep(1000);
                 }
             }
         }
@@ -410,7 +409,7 @@ namespace ATT
                 --i;
             }
         }
-
+        
         static HttpClient InitClient()
         {
             while (!File.Exists("API.key"))
@@ -500,6 +499,7 @@ namespace ATT
                 case "ON_USE":
                 case "TO_ACCOUNT":
                 case "TO_BNETACCOUNT":
+                case "HEALTH":
                     bindingID = 0;
                     return false;
                 case "ON_ACQUIRE":  // BOP
@@ -706,7 +706,18 @@ namespace ATT
         private static void EnqueueFileContents(FileInfo fileInfo)
         {
             var contents = File.ReadAllText(fileInfo.FullName);
-            ParseDatas.Enqueue(contents);
+            string[] individualDatas = contents.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            if (individualDatas.Length > 500)
+            {
+                individualDatas.AsParallel().ForAll(ParseDatas.Enqueue);
+            }
+            else
+            {
+                foreach(string data in individualDatas)
+                {
+                    ParseDatas.Enqueue(data);
+                }
+            }
         }
 
         private static Dictionary<string, object> ConvertRawData(Dictionary<string, object> subData)

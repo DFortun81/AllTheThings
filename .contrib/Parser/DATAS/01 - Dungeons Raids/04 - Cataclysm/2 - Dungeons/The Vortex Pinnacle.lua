@@ -8,6 +8,14 @@ _.Instances = { tier(CATA_TIER, {
 		["mapID"] = 325,
 		["coord"] = { 76.76, 84.44, ULDUM },	-- Vortex Pinnacle
 		["groups"] = {
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+				i(206183),	-- Amulet of Tender Breath
+				i(206180),	-- Choker of Stolen Thunder
+				i(206181),	-- Ionized Choker
+				i(206182),	-- Red Sky Pendant
+				i(206185),	-- Ring of Frozen Rain
+				i(206184),	-- Skyshard Ring
+			})),
 			n(QUESTS, {
 				q(28779, {	-- A Long Way from Home
 					["provider"] = { "n", 49943 },	-- Itesh

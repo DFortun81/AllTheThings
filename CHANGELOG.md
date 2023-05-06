@@ -1,25 +1,26 @@
 # AllTheThings
 
-## [DF-3.3.6](https://github.com/DFortun81/AllTheThings/tree/DF-3.3.6) (2023-04-23)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.3.5...DF-3.3.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.4.1](https://github.com/DFortun81/AllTheThings/tree/DF-3.4.1) (2023-05-07)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.4.0...DF-3.4.1) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+
 
 ### Promotions
 
 Earn Lil' XT 🤖 through Prime Gaming until May 25, 2023. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23938292).
 
+Earn the Ethereal Portal toy by watching select Twitch streamers for 4 hours between May 2nd, 10:00 a.m. PDT and May 9th, 9:59 a.m. PDT. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23938290).
+
+
 ### Logic changes
 
-- TLDR: Flight Path names should be localized now (not just English for all locales). Long explanation: Flight Paths are no longer statically localized and instead are localized by the Client when attempting to retrieve an unknown Flight Path name. Flight Paths which cannot be retrieved globally for the Client (due to incomplete quest restrictions on the character etc.) will be captured when the respective Flight Master is accessed for the first time.
+- Greatly-improved the responsiveness and update frequency of ATT processing.
+- Revision of ATT's waypoint plotting to be more in-depth about finding relevant coordinates. Tip: Alt+Right click to plot coordinates of a Thing and its children.
 
-### Logic fixes
-
-- Some fixes for attempting to determine Item links from SourceID.
-- Character Filters now include 'is Item in-game' (this is applied when checking Quest inaccuracy... removed Quests which were previously pre-requisites to available Quests shouldn't cause the Quest to be considered inaccurate).
 
 ### Data additions/fixes
 
-- Various 10.0.7 content updates: Zskera Vaults and Primal Storms.
-- Fixed various Achievements errors throughout addon thanks to new diagnostic tool.
-- Various Flight Paths fixes.
-- Huge consolidation of many Island Expedition Rewards.
+- Added LIMITED TIME Game Shop transmog set: The Guardian Pack. Sold for $8 until May 31st, will be available through Trading Post later this year. More info [here](https://www.wowhead.com/news/the-guardian-pack-medivh-inspired-transmog-set-on-in-game-shop-through-may-31st-332760).
+- Fixes to new 10.1.0 content, including Quests, Treasures, Rares, Achievements, Renown, etc.
+- Reharvested official game data from inside and outside of WoW, fixes a lot of things, armor/weapon types, Achievements organization, etc.
+- Cleaned up Pandaria Rare drops.
 - Other fixes.

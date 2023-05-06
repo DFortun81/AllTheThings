@@ -1793,7 +1793,7 @@ root(ROOTS.Zones, {
 						["sym"] = {{"select","itemID",
 							30758,	-- Aldor Guardian Rifle
 							30757,	-- Draenic Light Crossbow
-							30759,	-- Maghari Light Recurve
+							30759,	-- Mag'hari Light Recurve
 						}},
 					}),
 					n(20097, {	-- Nula the Butcher <Cooking Supplies>

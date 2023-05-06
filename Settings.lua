@@ -45,22 +45,12 @@ settings:SetBackdrop({
 });
 settings:SetBackdropColor(0, 0, 0, 1);
 do	-- Add the ATT Settings frame into the WoW Settings options
-	local toc = select(4, GetBuildInfo());
-	-- 10.0: new way to configure settings frame
-	if toc < 100000 then
-		InterfaceOptions_AddCategory(settings);
-		settings.Open = function(self)
-			-- Open the Options menu.
-			InterfaceOptionsFrame_OpenToCategory(self.name);
-		end
-	else
-		local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
-		category.ID = settings.name;
-		Settings.RegisterAddOnCategory(category)
-		settings.Open = function(self)
-			-- Open the Options menu.
-			Settings.OpenToCategory(self.name);
-		end
+	local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
+	category.ID = settings.name;
+	Settings.RegisterAddOnCategory(category)
+	settings.Open = function(self)
+		-- Open the Options menu.
+		Settings.OpenToCategory(self.name);
 	end
 end
 -- Provides a Unique Counter value for the Key referenced on each reference
@@ -700,7 +690,7 @@ settings.SetPersonal = function(self, setting, value)
 end
 do
 local function Refresh(self)
-	app.PrintDebug("Settings.Refresh")
+	-- app.PrintDebug("Settings.Refresh")
 	settings.SkipAutoRefreshCheckbox:OnRefresh();
 	for i,tab in ipairs(self.Tabs) do
 		if tab.OnRefresh then tab:OnRefresh(); end
@@ -1314,7 +1304,7 @@ settings.UpdateMode = function(self, doRefresh)
 	if doRefresh then
 		self.NeedsRefresh = true;
 	end
-	app.PrintDebug("UpdateMode",doRefresh)
+	-- app.PrintDebug("UpdateMode",doRefresh)
 	-- FORCE = Force Update
 	-- 1 = Force Update IF NOT Skip
 	-- not = Soft Update
@@ -1367,14 +1357,7 @@ f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
 f:SetJustifyH("RIGHT");
 
-local toc = select(4, GetBuildInfo());
-local v = "";
-if toc < 100100 then
-	v = GetAddOnMetadata("AllTheThings", "Version");
-else
-	v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
-end
-
+local v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
 f:SetText("v" .. v);
 f:Show();
 settings.version = f;
@@ -2617,6 +2600,7 @@ local IconMonthFilterMappings = {
 	[235481] = 1011,	-- Pirate's Day
 	[235442] = 1000,	-- Brewfest
 	[235474] = 1008,	-- Midsummer
+	[235444] = 1001,	-- Children's Week (tested)
 	[235445] = 1001,	-- Children's Week (tested)
 	[307365] = 1002,	-- Day of the Dead
 	[235448] = 1012,	-- Darkmoon Faire
@@ -2626,6 +2610,7 @@ local IconMonthFilterMappings = {
 	-- Timewalking
 	[1129673] = 1016,	-- Timewalking BC (tested)
 	[1129683] = 1016,	-- Timewalking
+	[1129685] = 1016,	-- Timewalking WotLK (tested)
 	[1129686] = 1016,	-- Timewalking
 	[1304688] = 1016,	-- Timewalking
 	[1530590] = 1016,	-- Timewalking

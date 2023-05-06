@@ -2887,9 +2887,9 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		MARK_OF_THE_SENTINEL,
 	}),
 	clWithoutLock(EVOKER, {
-		["timeline"] = { "added 10.0.1" },
+		["timeline"] = { ADDED_10_0_0 },
 		["groups"] = {
-		
+
 		},
 	}),
 	clWithoutLock(HUNTER, {
@@ -3458,13 +3458,13 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_WATER_BREATHING_AND_HEALING_STORM,
 				GLYPH_OF_WATER_SHIELD_AND_THE_ARCTIC_WOLF_AND_THE_SPECTRAL_WOLF,
 				GLYPH_OF_WATER_WALKING_AND_TOTEMIC_ENCIRCLEMENT,
-				
+
 				-- Extras, not included in Wrath Classic yet.
 				-- #if AFTER CATA
 				-- This glyph becomes a Minor Glyph with Cataclysm.
 				GLYPH_OF_RIGHTEOUS_DEFENSE_AND_RIGHTEOUSNESS_AND_THE_LUMINOUS_CHARGER,
 				-- #endif
-				
+
 				-- #else
 				-- This was the list before I did my updates to the profession, should double check missing recipes and adjust availabilities over time.
 				-- I did a quick compare against the Wrath Classic data (above) and marked them accordingly below.
@@ -3493,7 +3493,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_DISTRACT,
 				GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION,
 				--GLYPH_OF_ENDURING_VICTORY_AND_MIGHTY_VICTORY,	(Missing?) Moved to Research: Jadefire Ink?
-				--GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT,	(Missing?) 
+				--GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT,	(Missing?)
 				--GLYPH_OF_FADING_AND_SHADOW_RAVENS,	(Missing?)
 				GLYPH_OF_FEIGN_DEATH_AND_FIREWORKS,
 				GLYPH_OF_FIRE_WARD,
@@ -3543,20 +3543,20 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_WATER_SHIELD_AND_THE_ARCTIC_WOLF_AND_THE_SPECTRAL_WOLF,	-- Not sure why this is marked like this?
 				-- #endif
 				GLYPH_OF_WATER_WALKING_AND_TOTEMIC_ENCIRCLEMENT,
-				
+
 				-- Extras, that were missing from Wrath Classic, but listed here.
 				-- #if BEFORE MOP
 				-- I suspect this got added with Cataclysm since it becomes a Minor Glyph.
 				-- Not sure why the before MOP is listed here though as a specification.
 				GLYPH_OF_RIGHTEOUS_DEFENSE_AND_RIGHTEOUSNESS_AND_THE_LUMINOUS_CHARGER,
 				-- #endif
-				
-				
+
+
 				-- These were extras? Not included in Wrath Classic...
 				GLYPH_OF_WATER_MASTERY_AND_WATER_SHIELD,	-- I think someone got confused, these are Major Glyphs.
 				GLYPH_OF_SPIRITUAL_ATTUNEMENT_AND_DIVINE_PROTECTION,	-- Both of these are Major Glyphs, this isn't right...
 				GLYPH_OF_HEALING_STREAM_TOTEM,	-- This is also a Major Glyph. Incorrect.
-				
+
 				-- #endif
 			}),
 		}),

@@ -2275,12 +2275,12 @@ root(ROOTS.Zones, {
 							15905,	-- Brass Knuckles
 							2520,	-- Broadsword
 							15904,	-- Deadly fist blades
-							2528,	-- falchion
+							2528,	-- Falchion
 							2521,	-- Flamberge
 							2526,	-- Main Gauche
 							2534,	-- Rondel
-							15903,	-- slicing claw
-							2529,	-- zweihander
+							15903,	-- Slicing Claw
+							2529,	-- Zweihander
 						}},
 						["groups"] = {
 							i(15906, {	-- Left-Handed Brass Knuckles
@@ -2738,11 +2738,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.0, 75.2, SHATTRATH_CITY },
 						["sym"] = {{"select", "itemID",
 							2520,	-- Boardsword
-							2528,	-- falchion
+							2528,	-- Falchion
 							2521,	-- Flamberge
 							2526,	-- Main Gauche
 							2534,	-- Rondel
-							2529,	-- zweihander
+							2529,	-- Zweihander
 						}},
 					}),
 					n(19074, {	-- Skreah <Alchemy Supplies>

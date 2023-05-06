@@ -743,7 +743,6 @@ root(ROOTS.WorldDrops, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3
 			i(116467),	-- Frostbitten Hammer
 			i(116484),	-- Lunarglow Hammer
 			i(116501),	-- Vinewrapped Hammer
-			un(REMOVED_FROM_GAME, i(36505)),	-- Frosted Steel Mallet
 			i(116518),	-- Creeperclaw Hammer
 			i(116535),	-- Incised Hammer
 			i(116552),	-- Auchenai Hammer
@@ -860,7 +859,6 @@ root(ROOTS.WorldDrops, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3
 			i(116575),	-- Sunsworn Wand
 			i(116592),	-- Shadowsage Wand
 			i(116609),	-- Ruhkmari Wand
-			un(REMOVED_FROM_GAME, i(36659)),	-- Shivery Wand
 			i(116626),	-- Ancestral Wand
 			i(116643),	-- Oshu'gun Wand
 			i(118793),	-- Kuug'lar's Stylus of Sorcery

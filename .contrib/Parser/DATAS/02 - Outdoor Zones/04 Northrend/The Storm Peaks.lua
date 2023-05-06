@@ -242,6 +242,7 @@ root(ROOTS.Zones, {
 				petbattle(filter(BATTLE_PETS, {
 					p(558, {	-- Arctic Fox Kit
 						["crs"] = { 62864 },	-- Arctic Fox Kit
+						["description"] = "Only spawns while it is snowing. Weather in this area seems to be character specific occasionally.",
 					}),
 					p(641, {	-- Arctic Hare
 						["crs"] = { 62693 },	-- Arctic Haire

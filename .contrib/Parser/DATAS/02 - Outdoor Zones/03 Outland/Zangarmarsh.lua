@@ -272,6 +272,8 @@ root(ROOTS.Zones, {
 					}),
 					p(515, {	-- Sporeling Sprout
 						["crs"] = { 62564 },	-- Sporeling Sprout
+						["coord"] = { 20.0, 51.6, ZANGARMARSH },
+						["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with thr Sporeggar faction.",
 					}),
 				})),
 				-- #endif

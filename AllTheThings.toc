@@ -1,5 +1,5 @@
 ## Author: Crieve-Sargeras
-## Interface: 100007
+## Interface: 100100
 ## X-Curse-Project-ID: 267285
 ## X-Wago-ID: yQKyY5K7
 ## Title: AllTheThings
@@ -11,6 +11,7 @@
 ## Version: @project-version@
 src\base.lua
 lib\Callback.lua
+lib\Runner.lua
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua

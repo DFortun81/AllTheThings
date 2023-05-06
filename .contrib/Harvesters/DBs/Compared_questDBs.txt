@@ -103,6 +103,12 @@ Comparing .\questDB-20230328.json
 241, 8330, 8336, 8345, 8346, 25134, 38306, 38344, 38345, 38346, 38394, 38395, 38396, 38397, 38402, 38404, 41778, 41783, 42732, 46810, 46946, 48375, 48376, 49813, 49816, 49817, 49846, 49851, 49852, 49860, 49862, 49863, 49864, 49865, 49866, 51403, 52946, 53030, 53031, 53032, 53033, 53034, 53035, 53036, 53037, 53038, 53039, 54084, 54995, 57671, 57681, 57682, 57683, 57684, 57685, 57820, 57821, 57896, 57961, 57962, 58261, 58377, 58378, 58399, 58954, 58991, 59168, 59169, 59204, 59318, 59320, 59324, 59539, 59548, 59549, 59550, 59551, 59552, 59606, 59608, 60093, 60130, 60134, 60137, 60140, 60141, 60232, 60233, 60234, 60235, 60499, 60757, 60769, 60885, 60888, 60902, 61324, 61325, 61440, 61495, 61508, 61513, 61515, 61554, 61608, 61630, 61690, 61881, 62284, 62285, 62286, 62287, 62288, 62457, 62631, 62632, 62633, 62634, 62635, 62636, 62637, 62638, 62639, 62640, 62696, 62886, 62910, 62911, 63024, 63025, 63026, 63027, 63101, 63735, 64304, 64571, 64709, 64981, 65106, 65283, 65324, 65372, 65649, 65773, 65775, 66109, 66682, 66970, 67017, 67743, 69903, 70167, 70173, 70844, 70846, 70852, 71147
 264 Brand New IDs in the New DB compared to the Old DB.
 66858, 66925, 66959, 67074, 67075, 67076, 67077, 67078, 67079, 67081, 67084, 68794, 70703, 72384, 72405, 72408, 72409, 72424, 72426, 72430, 72431, 72432, 72445, 72446, 72449, 72450, 72451, 72452, 72453, 72462, 72463, 72464, 72465, 72466, 72467, 72474, 72475, 72476, 72477, 72478, 72479, 72545, 72546, 72547, 72551, 72552, 72553, 72554, 72558, 72559, 72586, 72587, 72588, 72589, 72590, 72591, 72592, 72593, 72594, 72595, 72597, 72598, 72599, 72600, 72601, 72602, 72603, 72604, 72605, 72606, 72607, 72609, 72611, 72644, 72662, 72663, 72681, 72700, 72705, 72706, 72707, 72712, 72713, 72714, 72715, 72717, 72734, 72735, 72736, 72739, 72740, 72750, 72754, 72760, 72769, 72792, 72793, 72794, 72795, 72796, 72797, 72799, 72800, 72801, 72802, 72803, 72805, 72807, 72941, 72944, 72945, 72952, 72953, 72954, 72955, 72956, 72972, 72982, 72984, 72985, 73017, 73018, 73019, 73020, 73023, 73024, 73025, 73027, 73028, 73029, 73030, 73031, 73032, 73033, 73034, 73035, 73052, 73061, 73062, 73065, 73071, 73076, 73089, 73094, 73107, 73108, 73109, 73110, 73113, 73114, 73115, 73137, 73139, 73140, 73141, 73142, 73155, 73156, 73157, 73159, 73160, 73169, 73170, 73172, 73178, 73179, 73189, 73190, 73191, 73192, 73194, 73226, 73398, 73550, 73692, 73694, 73703, 73704, 73715, 73716, 73717, 73848, 73858, 73859, 73860, 73861, 74117, 74118, 74119, 74120, 74282, 74293, 74294, 74355, 74359, 74374, 74376, 74379, 74381, 74382, 74389, 74390, 74391, 74415, 74433, 74436, 74437, 74442, 74443, 74447, 74493, 74502, 74503, 74576, 74581, 74695, 74696, 74697, 74769, 74771, 74774, 74795, 74796, 74847, 74866, 74869, 74871, 74875, 74880, 74883, 74896, 74900, 74901, 74902, 74903, 74908, 74909, 74910, 74911, 74946, 74955, 74983, 74984, 74994, 74996, 75024, 75025, 75026, 75050, 75065, 75154, 75164, 75165, 75166, 75167, 75189, 75190, 75237, 75258, 75259, 75261, 75263, 75265, 75444
+------
+Comparing .\questDB-20230504.json
+173 Missing IDs in the New DB compared to the Old DB.
+241, 8330, 8336, 8345, 8346, 25134, 38306, 38344, 38345, 38346, 38394, 38395, 38396, 38397, 38402, 38404, 41778, 41783, 42732, 46810, 46946, 48375, 48376, 49813, 49816, 49817, 49846, 49851, 49852, 49860, 49862, 49863, 49864, 49865, 49866, 51403, 52946, 53030, 53031, 53032, 53033, 53034, 53035, 53036, 53037, 53038, 53039, 54084, 54995, 57671, 57681, 57682, 57683, 57684, 57685, 57820, 57821, 57896, 57961, 57962, 58261, 58377, 58378, 58399, 58954, 58991, 59168, 59169, 59204, 59318, 59320, 59324, 59539, 59548, 59549, 59550, 59551, 59552, 59606, 59608, 60093, 60130, 60134, 60137, 60140, 60141, 60232, 60233, 60234, 60235, 60499, 60757, 60769, 60885, 60888, 60902, 61324, 61325, 61440, 61495, 61508, 61513, 61515, 61554, 61608, 61630, 61690, 61881, 62284, 62285, 62286, 62287, 62288, 62457, 62631, 62632, 62633, 62634, 62635, 62636, 62637, 62638, 62639, 62640, 62696, 62886, 62910, 62911, 63024, 63025, 63026, 63027, 63101, 63735, 64304, 64571, 64709, 64981, 65106, 65283, 65324, 65372, 65649, 65773, 65775, 66109, 66682, 66860, 66861, 66862, 66863, 66864, 66865, 66866, 66867, 66868, 66869, 66870, 66871, 66872, 66873, 66874, 66875, 66970, 67017, 67743, 69903, 70167, 70173, 70844, 70846, 70852, 71147
+350 Brand New IDs in the New DB compared to the Old DB.
+32952, 66012, 66013, 66094, 66128, 66173, 66174, 66178, 66402, 66546, 66547, 66636, 66673, 66814, 67722, 69888, 70503, 70507, 70766, 70784, 70785, 71053, 72027, 72411, 72412, 72413, 72414, 72415, 72416, 72417, 72418, 72419, 72420, 72421, 72422, 72454, 72455, 72457, 72458, 72459, 72460, 72461, 72480, 72513, 72514, 72515, 72658, 72665, 72666, 72667, 72668, 72670, 72674, 72679, 72831, 72832, 72833, 72872, 72873, 72874, 72878, 72879, 72880, 72881, 72882, 72883, 72884, 72886, 72908, 72909, 72910, 72911, 72912, 72913, 72914, 72915, 72916, 72917, 72918, 72919, 72920, 72922, 72923, 72924, 72925, 72926, 72927, 72928, 72929, 72930, 72931, 72958, 72959, 72961, 72962, 72963, 72964, 72965, 72966, 72970, 72973, 72974, 72975, 72976, 72977, 72978, 72979, 72980, 72981, 72987, 73036, 73037, 73038, 73039, 73040, 73041, 73042, 73043, 73044, 73045, 73046, 73047, 73077, 73081, 73085, 73086, 73090, 73091, 73092, 73093, 73151, 73188, 73707, 73708, 73709, 73710, 73711, 74334, 74335, 74375, 74393, 74494, 74495, 74514, 74515, 74516, 74517, 74518, 74519, 74520, 74522, 74523, 74525, 74538, 74539, 74540, 74542, 74557, 74562, 74563, 74568, 74569, 74570, 74571, 74572, 74573, 74775, 74783, 74786, 74787, 74839, 74842, 74857, 74858, 74859, 74860, 74861, 74876, 74877, 74878, 74882, 74889, 74899, 74905, 74906, 74925, 74939, 74943, 74944, 74948, 74949, 74950, 74951, 74952, 74953, 74954, 74956, 74959, 74960, 74961, 74962, 74963, 74964, 74965, 74966, 74967, 74968, 74972, 74975, 74977, 75018, 75028, 75029, 75035, 75042, 75043, 75044, 75045, 75048, 75145, 75148, 75149, 75150, 75168, 75181, 75182, 75203, 75228, 75230, 75232, 75233, 75239, 75286, 75288, 75289, 75301, 75304, 75305, 75307, 75308, 75309, 75351, 75354, 75362, 75363, 75367, 75368, 75371, 75372, 75373, 75374, 75375, 75376, 75377, 75382, 75383, 75384, 75398, 75407, 75408, 75417, 75419, 75440, 75456, 75458, 75462, 75497, 75506, 75507, 75528, 75569, 75573, 75575, 75598, 75600, 75602, 75608, 75617, 75622, 75640, 75641, 75643, 75644, 75645, 75647, 75650, 75662, 75665, 75694, 75706, 75707, 75719, 75720, 75721, 75722, 75723, 75724, 75725, 75726, 75727, 75728, 75730, 75731, 75741, 75742, 75744, 75765, 75766, 75767, 75768, 75769, 75770, 75771, 75772, 75773, 75831, 75833, 75859, 75860, 75861, 75865, 75885, 75887, 75888, 75936, 75937, 75985, 75998, 76004, 76025, 76028, 76029, 76030, 76031, 76067, 76083, 76085, 76086, 76101, 76103, 76104, 76105, 76106, 76107, 76108, 76112, 76113, 76114, 76122, 76159
 
 == Per Item Differences Breakdown ==
 #2
@@ -43048,6 +43054,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 40 --> 15
 .\questDB-20201024.json
 - CHANGE: lvl: 15 --> [15]
+.\questDB-20230504.json
+- CHANGE: races: [11,22,25,30] --> [11,22,25,30,52]
 #28204
 .\questDB-20201014.json
 - CHANGE: lvl: 40 --> 15
@@ -44162,6 +44170,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 40 --> 15
 .\questDB-20201024.json
 - CHANGE: lvl: 15 --> [15]
+.\questDB-20230504.json
+- CHANGE: races: [6,26,28] --> [6,26,28,70]
 #28430
 .\questDB-20201014.json
 - CHANGE: lvl: 40 --> 15
@@ -102364,6 +102374,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51590
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102371,6 +102383,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51591
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102378,6 +102392,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51592
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102385,6 +102401,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51593
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102392,6 +102410,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51594
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102399,6 +102419,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51595
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102406,6 +102428,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51596
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102413,6 +102437,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51597
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102420,6 +102446,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51598
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102427,6 +102455,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51599
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102434,6 +102464,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51601
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102441,6 +102473,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51602
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -102627,6 +102661,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51785
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102634,6 +102670,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51786
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102641,6 +102679,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51787
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102648,6 +102688,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51788
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102655,6 +102697,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51789
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102662,6 +102706,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51795
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -102679,6 +102725,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51798
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102686,6 +102734,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51800
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -102713,6 +102763,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51810
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -102732,6 +102784,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51819
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102739,6 +102793,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51829
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -102753,6 +102809,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51837
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102760,6 +102818,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51838
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -102804,6 +102864,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51918
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -102811,6 +102873,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #51926
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -102980,6 +103044,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52008
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -102992,6 +103058,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52013
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -103038,6 +103106,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52027
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103045,6 +103115,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52028
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103052,6 +103124,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52029
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103059,6 +103133,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52030
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103066,6 +103142,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52031
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103073,6 +103151,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52032
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103080,6 +103160,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52033
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 25
@@ -103094,6 +103176,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52035
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103101,6 +103185,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52036
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103108,6 +103194,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52038
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103115,6 +103203,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52039
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103122,6 +103212,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52040
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103129,6 +103221,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52041
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103136,6 +103230,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52042
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103143,6 +103239,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52043
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -103308,6 +103406,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52127
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103315,6 +103415,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52128
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -103353,6 +103455,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52147
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103360,6 +103464,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52148
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -103379,6 +103485,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52151
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103396,6 +103504,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52156
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103403,6 +103513,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52158
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103410,6 +103522,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52170
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103417,6 +103531,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52171
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103424,6 +103540,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52172
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103431,6 +103549,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52173
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103438,6 +103558,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52183
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103445,6 +103567,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52184
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103452,6 +103576,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52185
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103459,6 +103585,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52186
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103466,6 +103594,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52187
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103473,6 +103603,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52188
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103480,6 +103612,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52189
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103487,6 +103621,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52190
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103494,6 +103630,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52191
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103501,6 +103639,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52192
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103508,6 +103648,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52194
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103525,6 +103667,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52204
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103532,6 +103676,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52205
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103539,6 +103685,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52208
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103546,6 +103694,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52210
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -103588,6 +103738,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52221
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103595,6 +103747,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52222
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103602,6 +103756,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52223
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -103649,6 +103805,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52242
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -103671,6 +103829,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52252
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103703,6 +103863,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52260
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103710,6 +103872,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52261
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103717,6 +103881,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52275
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103724,6 +103890,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52276
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103731,6 +103899,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52279
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -103743,6 +103913,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52282
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103750,6 +103922,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52283
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103757,6 +103931,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52284
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103764,6 +103940,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52285
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103771,6 +103949,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52286
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103778,6 +103958,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52287
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103785,6 +103967,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52288
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103792,6 +103976,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52289
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103799,6 +103985,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52290
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103806,6 +103994,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52291
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103813,6 +104003,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52294
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 25
@@ -103832,6 +104024,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52311
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103844,6 +104038,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52314
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103851,6 +104047,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52317
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -103864,6 +104062,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52320
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103871,6 +104071,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52428
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -103938,6 +104140,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52451
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103945,6 +104149,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52453
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103977,6 +104183,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52477
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 25
@@ -103991,6 +104199,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52479
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -103998,6 +104208,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52480
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 25
@@ -104052,6 +104264,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52490
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104059,6 +104273,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52491
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104066,6 +104282,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52492
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104073,6 +104291,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52493
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104080,6 +104300,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52494
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104087,6 +104309,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52495
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104094,6 +104318,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52496
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104101,6 +104327,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52497
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 50
@@ -104178,6 +104406,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52765
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104185,6 +104415,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52766
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104192,6 +104424,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52767
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104199,6 +104433,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52768
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104206,6 +104442,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52769
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104213,6 +104451,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52770
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104220,6 +104460,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52772
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104227,6 +104469,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52773
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104234,6 +104478,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52774
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104241,6 +104487,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52776
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104248,6 +104496,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52777
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104255,6 +104505,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52782
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104282,6 +104534,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52789
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104289,6 +104543,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52790
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104296,6 +104552,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52793
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -104338,6 +104596,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52802
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104345,6 +104605,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52806
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -104393,6 +104655,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52852
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104400,6 +104664,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52855
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104417,6 +104683,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52876
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -104431,6 +104699,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52888
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104438,6 +104708,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52942
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104520,6 +104792,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52963
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104527,6 +104801,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52965
 .\questDB-20201024.json
 - CHANGE: lvl: 10 --> [10]
@@ -104572,6 +104848,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52981
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -104584,6 +104862,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #52991
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -104596,6 +104876,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53006
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104603,6 +104885,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53007
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104610,6 +104894,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53011
 .\questDB-20201024.json
 - CHANGE: lvl: 10 --> [10]
@@ -104678,6 +104964,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53044
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104685,6 +104973,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53045
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -104739,6 +105029,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53064
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104746,6 +105038,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53065
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104753,6 +105047,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53066
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104760,6 +105056,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53067
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104767,6 +105065,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53068
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104774,6 +105074,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53069
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104781,6 +105083,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53070
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104788,6 +105092,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53071
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104795,6 +105101,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53072
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104802,6 +105110,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53073
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104835,6 +105145,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53082
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104842,6 +105154,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53095
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -104861,6 +105175,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53099
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104873,6 +105189,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53101
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104880,6 +105198,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53102
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104887,6 +105207,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53103
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104894,6 +105216,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53105
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104974,6 +105298,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53122
 .\questDB-20201014.json
 - ADDED: lvl = 10
@@ -104986,6 +105312,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53126
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -104993,6 +105321,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53127
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105020,6 +105350,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53146
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105047,6 +105379,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53152
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105054,6 +105388,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53153
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105141,6 +105477,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53176
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -105193,6 +105531,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53186
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105200,6 +105540,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53187
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105207,6 +105549,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53190
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105229,6 +105573,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53197
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105236,6 +105582,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53198
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105243,6 +105591,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53199
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105255,6 +105605,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53208
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105262,6 +105614,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53209
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105269,6 +105623,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53210
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105276,6 +105632,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53212
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105283,6 +105641,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53221
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105290,6 +105650,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53222
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105297,6 +105659,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53267
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105304,6 +105668,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53268
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105311,6 +105677,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53275
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105318,6 +105686,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53276
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105325,6 +105695,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53295
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105337,6 +105709,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53307
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -105344,6 +105718,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53310
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -106507,6 +106883,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53848
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106519,6 +106897,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53850
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106526,6 +106906,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53851
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106533,6 +106915,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53852
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106540,6 +106924,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53853
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106552,6 +106938,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53858
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106614,6 +107002,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53880
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106621,6 +107011,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53881
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106648,6 +107040,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53888
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106655,6 +107049,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53889
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106697,6 +107093,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53897
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106764,6 +107162,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53910
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106771,6 +107171,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53912
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106778,6 +107180,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53913
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106785,6 +107189,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53914
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 60
@@ -106806,6 +107212,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53917
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 60
@@ -106827,6 +107235,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53920
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 60
@@ -106946,6 +107356,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53937
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106973,6 +107385,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53942
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -106980,6 +107394,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53943
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107086,6 +107502,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53974
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107113,6 +107531,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53981
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107120,6 +107540,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53986
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107127,6 +107549,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53987
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107134,6 +107558,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53988
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107141,6 +107567,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53989
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107148,6 +107576,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53990
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107155,6 +107585,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #53992
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107222,6 +107654,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54007
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107229,6 +107663,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54008
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107236,6 +107672,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54009
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107243,6 +107681,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54012
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107270,6 +107710,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54026
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107287,6 +107729,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54031
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107319,6 +107763,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54042
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107425,6 +107871,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54096
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107522,6 +107970,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54123
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107529,6 +107979,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54124
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107536,6 +107988,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54126
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107548,6 +108002,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54130
 .\questDB-20201024.json
 - CHANGE: lvl: 10 --> [10]
@@ -107588,6 +108044,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54140
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107595,6 +108053,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54141
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107625,6 +108085,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54157
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107632,6 +108094,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54161
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107644,6 +108108,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54164
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107651,6 +108117,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54165
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107658,6 +108126,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54168
 .\questDB-20201014.json
 - ADDED: isDaily = 1, repeatable = 1
@@ -107672,6 +108142,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54171
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107679,6 +108151,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54172
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107696,6 +108170,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54176
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107703,6 +108179,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54177
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107710,6 +108188,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54178
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107717,6 +108197,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54179
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107724,6 +108206,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54183
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107731,6 +108215,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54184
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107754,6 +108240,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54192
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107761,6 +108249,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54193
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107768,6 +108258,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54194
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107775,6 +108267,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54195
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107782,6 +108276,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54196
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107789,6 +108285,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54197
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107796,6 +108294,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54198
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107803,6 +108303,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54199
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107810,6 +108312,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54200
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107817,6 +108321,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54201
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107824,6 +108330,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54202
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107831,6 +108339,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54203
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107838,6 +108348,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54204
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107845,6 +108357,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54205
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107852,6 +108366,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54206
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107859,6 +108375,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54207
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107866,6 +108384,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54208
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107873,6 +108393,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54210
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107880,6 +108402,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54211
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107887,6 +108411,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54212
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107894,6 +108420,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54213
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107901,6 +108429,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54224
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107908,6 +108438,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54225
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107915,6 +108447,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54231
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107922,6 +108456,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54239
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107929,6 +108465,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54240
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107936,6 +108474,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54244
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107943,6 +108483,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54249
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107950,6 +108492,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54258
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107957,6 +108501,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54260
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107964,6 +108510,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54262
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107971,6 +108519,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54263
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107978,6 +108528,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54265
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107990,6 +108542,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54270
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -107997,6 +108551,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54271
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108004,6 +108560,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54275
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108011,6 +108569,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54276
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108023,6 +108583,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54282
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108030,6 +108592,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54284
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108037,6 +108601,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54288
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108044,6 +108610,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54300
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108061,6 +108629,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54303
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108068,6 +108638,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54306
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108075,6 +108647,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54307
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108082,6 +108656,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54310
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108089,6 +108665,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54312
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108096,6 +108674,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54402
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108108,6 +108688,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54407
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108115,6 +108697,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54412
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108122,6 +108706,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54416
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108134,6 +108720,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54418
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108141,6 +108729,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54419
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108153,6 +108743,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54424
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108160,6 +108752,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54433
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108187,6 +108781,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54447
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108194,6 +108790,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54459
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108201,6 +108799,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54463
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -108298,6 +108898,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54494
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108305,6 +108907,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54495
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108312,6 +108916,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54510
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108319,6 +108925,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54518
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108326,6 +108934,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54519
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108333,6 +108943,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54559
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108340,6 +108952,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54576
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108427,6 +109041,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54639
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108509,6 +109125,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54706
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108610,6 +109228,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54741
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -108715,6 +109335,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54843
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108747,6 +109369,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #54875
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -108896,21 +109520,29 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #54959
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #54960
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #54961
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #54964
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
@@ -109008,11 +109640,15 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #54999
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #55002
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 60
@@ -109195,11 +109831,15 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55034
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #55036
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109207,6 +109847,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55037
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109214,6 +109856,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55039
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109236,6 +109880,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55045
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109243,36 +109889,50 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55047
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #55048
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #55049
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #55050
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #55051
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #55052
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #55053
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109440,6 +110100,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55088
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109447,6 +110109,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55089
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109454,6 +110118,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55090
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109461,6 +110127,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55092
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109513,6 +110181,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55117
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109520,6 +110190,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55118
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109527,6 +110199,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55119
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109534,6 +110208,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55121
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109547,6 +110223,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 120 --> 50
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20230504.json
+- EMPTY: _type
 #55136
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109584,6 +110262,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55173
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -109607,6 +110287,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55182
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109614,6 +110296,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55183
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -109621,6 +110305,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55184
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -109631,6 +110317,8 @@ Comparing .\questDB-20230328.json
 - CHANGE: lvl: 50 --> [50]
 .\questDB-20221130.json
 - CHANGE: lvl: [50] --> [60]
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [50]
 #55186
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -124939,6 +125627,33 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: _category
 - ADDED: _area = "Korthia"
+#63731
+.\questDB-20230504.json
+- EMPTY: _type
+#63732
+.\questDB-20230504.json
+- EMPTY: _type
+#63733
+.\questDB-20230504.json
+- EMPTY: _type
+#63734
+.\questDB-20230504.json
+- EMPTY: _type
+#63736
+.\questDB-20230504.json
+- EMPTY: _type
+#63737
+.\questDB-20230504.json
+- EMPTY: _type
+#63738
+.\questDB-20230504.json
+- EMPTY: _type
+#63739
+.\questDB-20230504.json
+- EMPTY: _type
+#63740
+.\questDB-20230504.json
+- EMPTY: _type
 #63754
 .\questDB-20221130.json
 - EMPTY: _category
@@ -125124,6 +125839,9 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: _category
 - ADDED: _area = "Korthia"
+#64567
+.\questDB-20230504.json
+- EMPTY: _type
 #64654
 .\questDB-20211103.json
 - CHANGE: lvl: [60] --> [50]
@@ -125389,10 +126107,14 @@ Comparing .\questDB-20230328.json
 #65840
 .\questDB-20221130.json
 - EMPTY: isDaily
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #65842
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #65896
 .\questDB-20221130.json
 - CHANGE: _area: "Lion's Rest" --> "Stormwind City"
@@ -125404,12 +126126,26 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66119
 .\questDB-20221130.json
 - ADDED: _type = "Dungeon"
 .\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
+#66126
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#66129
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#66130
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#66131
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66211
 .\questDB-20230328.json
 - EMPTY: _area
@@ -125452,14 +126188,20 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66321
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66326
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66339
 .\questDB-20221130.json
 - EMPTY: _area
@@ -125481,6 +126223,8 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66448
 .\questDB-20221130.json
 - CHANGE: _area: "Passage of Time" --> "Thaldraszus"
@@ -125488,6 +126232,8 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66456
 .\questDB-20221130.json
 - CHANGE: _area: "Passage of Time" --> "Thaldraszus"
@@ -125530,10 +126276,15 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66658
 .\questDB-20221130.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon", _type = "Dungeon"
+#66675
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66690
 .\questDB-20221130.json
 - EMPTY: _area
@@ -125548,10 +126299,14 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: _area
 - ADDED: _category = "Raid", g = [{"itemID":197921},{"itemID":190454}]
+.\questDB-20230504.json
+- EMPTY: g
 #66856
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66860
 .\questDB-20230328.json
 - EMPTY: _area
@@ -125616,6 +126371,12 @@ Comparing .\questDB-20230328.json
 .\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
+#66882
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#66883
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66884
 .\questDB-20221130.json
 - EMPTY: _area, isDaily
@@ -125631,9 +126392,13 @@ Comparing .\questDB-20230328.json
 #66894
 .\questDB-20221130.json
 - EMPTY: isDaily
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66895
 .\questDB-20221130.json
 - EMPTY: isDaily
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #66897
 .\questDB-20221130.json
 - EMPTY: _area, isDaily
@@ -125702,20 +126467,58 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: _area, isDaily
 - ADDED: _category = "Professions"
+#67035
+.\questDB-20230504.json
+- EMPTY: _area
+- ADDED: _category = "Valdrakken Accord"
 #67051
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#67063
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #67064
 .\questDB-20230328.json
 - CHANGE: _area: "The Waking Shores" --> "Ohn'ahran Plains"
+#67065
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #67067
 .\questDB-20221130.json
 - CHANGE: _area: "Hornswog Hollow" --> "Valdrakken"
+#67074
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#67075
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#67076
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#67077
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#67078
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#67079
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#67081
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#67084
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #67099
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #67100
 .\questDB-20221130.json
 - EMPTY: _area
@@ -125728,11 +126531,16 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #67143
 .\questDB-20221130.json
 - EMPTY: _area
 - ADDED: _category = "Professions"
 - CHANGE: g: [{"itemID":191461},{"itemID":190396},{"itemID":193210},{"itemID":193214},{"itemID":193922},{"itemID":194123}] --> [{"itemID":202098},{"itemID":202097},{"itemID":202099},{"itemID":202100},{"itemID":202101}]
+#67221
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #67295
 .\questDB-20221130.json
 - EMPTY: _area
@@ -125748,6 +126556,9 @@ Comparing .\questDB-20230328.json
 #67724
 .\questDB-20221130.json
 - CHANGE: _area: "Lost Ruins" --> "The Azure Span"
+#68794
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #69093
 .\questDB-20230328.json
 - CHANGE: lvl: [60] --> [70]
@@ -125762,6 +126573,8 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #69919
 .\questDB-20221130.json
 - EMPTY: _area
@@ -125773,6 +126586,8 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #69932
 .\questDB-20221130.json
 - CHANGE: _area: "Shadow Ledge" --> "Thaldraszus"
@@ -125810,6 +126625,12 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: _area
 - ADDED: _category = "Professions"
+#69983
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#69984
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #70025
 .\questDB-20221130.json
 - CHANGE: g: [{"itemID":190311}] --> [{"itemID":188658}]
@@ -125929,6 +126750,8 @@ Comparing .\questDB-20230328.json
 #70268
 .\questDB-20221130.json
 - CHANGE: lvl: [60] --> [70]
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #70339
 .\questDB-20221130.json
 - EMPTY: _area
@@ -125956,6 +126779,9 @@ Comparing .\questDB-20230328.json
 #70438
 .\questDB-20221130.json
 - CHANGE: lvl: [58] --> [60]
+#70446
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #70450
 .\questDB-20221130.json
 - CHANGE: lvl: [58] --> [60]
@@ -126000,6 +126826,9 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: _area, isDaily
 - ADDED: _category = "Professions"
+#70550
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #70557
 .\questDB-20221130.json
 - EMPTY: _area, isDaily
@@ -126145,12 +126974,18 @@ Comparing .\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Engine of Innovation"
 - CHANGE: lvl: [70] --> [68]
+#70703
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #70721
 .\questDB-20221130.json
 - ADDED: g = [{"itemID":198105}]
 #70723
 .\questDB-20221130.json
 - CHANGE: lvl: [58] --> [60]
+#70742
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #70750
 .\questDB-20221130.json
 - CHANGE: lvl: [58] --> [60]
@@ -126193,14 +127028,26 @@ Comparing .\questDB-20230328.json
 #70834
 .\questDB-20221130.json
 - ADDED: g = [{"itemID":197921}]
+#70836
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #70845
 .\questDB-20221130.json
 - EMPTY: _area
 - ADDED: _category = "Engine of Innovation"
 - CHANGE: lvl: [70] --> [68]
+#70847
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#70848
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #70856
 .\questDB-20221130.json
 - CHANGE: _area: "Lost Ruins" --> "The Azure Span"
+#70867
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #70871
 .\questDB-20221130.json
 - CHANGE: lvl: [70] --> [60]
@@ -126280,6 +127127,18 @@ Comparing .\questDB-20230328.json
 .\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
+#71094
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#71095
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#71096
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#71097
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #71138
 .\questDB-20221130.json
 - CHANGE: _area: "The Waking Shores" --> "Ohn'ahran Plains"
@@ -126311,6 +127170,9 @@ Comparing .\questDB-20230328.json
 #71194
 .\questDB-20221130.json
 - CHANGE: lvl: [58] --> [60]
+#71210
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #71219
 .\questDB-20221130.json
 - CHANGE: _area: "Passage of Time" --> "Thaldraszus"
@@ -126362,6 +127224,24 @@ Comparing .\questDB-20230328.json
 .\questDB-20221130.json
 - EMPTY: _area, isDaily
 - ADDED: _category = "Professions"
+#72166
+.\questDB-20230504.json
+- ADDED: g = [{"itemID":206271}]
+#72167
+.\questDB-20230504.json
+- ADDED: g = [{"itemID":206271}]
+#72168
+.\questDB-20230504.json
+- ADDED: g = [{"itemID":206271}]
+#72169
+.\questDB-20230504.json
+- ADDED: g = [{"itemID":206271}]
+#72170
+.\questDB-20230504.json
+- ADDED: g = [{"itemID":206271}]
+#72171
+.\questDB-20230504.json
+- ADDED: g = [{"itemID":206271}]
 #72172
 .\questDB-20221130.json
 - EMPTY: _area, isDaily
@@ -126380,9 +127260,51 @@ Comparing .\questDB-20230328.json
 #72190
 .\questDB-20221130.json
 - CHANGE: _area: "Passage of Time" --> "Thaldraszus"
+#72337
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#72338
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
 #72399
 .\questDB-20230328.json
 - ADDED: _area = "Thaldraszus"
 #72406
 .\questDB-20230328.json
 - CHANGE: lvl: [60] --> [68]
+#72447
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#72448
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#72646
+.\questDB-20230504.json
+- CHANGE: g: [{"itemID":202184}] --> [{"itemID":206366}]
+#72647
+.\questDB-20230504.json
+- CHANGE: g: [{"itemID":202184}] --> [{"itemID":206366}]
+#72648
+.\questDB-20230504.json
+- CHANGE: g: [{"itemID":202184}] --> [{"itemID":206366}]
+#72649
+.\questDB-20230504.json
+- CHANGE: g: [{"itemID":202184}] --> [{"itemID":206366}]
+#72784
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#72798
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#72810
+.\questDB-20230504.json
+- CHANGE: lvl: [60] --> [70]
+#74436
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#74437
+.\questDB-20230504.json
+- CHANGE: lvl: [70] --> [60]
+#74871
+.\questDB-20230504.json
+- CHANGE: g: [{"itemID":202184}] --> [{"itemID":206366}]

@@ -1011,9 +1011,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 62.7, 22.5, KORTHIA },
 				["minReputation"] = { 2472, 3 },	-- Tier 3
 			}),
-			q(63915, {	-- Drum of Driving
+			q(63915, {	-- Drum of the Death Loa
 				["sourceQuests"] = { 64519 },	-- Lost Vaults
-				["provider"] = { "i", 187204 },	-- Drum of Driving
+				["provider"] = { "i", 187204 },	-- Drum of the Death Loa
 				["coord"] = { 39.3, 52.4, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 			}),

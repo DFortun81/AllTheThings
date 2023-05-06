@@ -17,8 +17,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(202714),	-- M.U.S.T
 						},
 					}),
-					q(75060, {    -- A Veritable Dumping Ground
+					q(75060, {	-- A Veritable Dumping Ground
 						["coord"] = { 51.3, 24.4, ZARALEK_CAVERN },
+					}),
+					q(75343, {	-- All That Glitter
+						["coord"] = { 58.1, 73.5, ZARALEK_CAVERN },
 					}),
 					petbattle(q(75750, {	-- Are They Not Beautiful?
 						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
@@ -35,6 +38,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75062, {  -- Crystalline Conundrum
 						["coord"] = { 56.9, 63.7, ZARALEK_CAVERN },
 					}),
+					q(75661, {  -- Curative Crystalline Collection
+						["coord"] = { 39.5, 74.3, ZARALEK_CAVERN },
+					}),
 					q(75346, {	-- Data Gathering
 						["coord"] = { 60.5, 69.4, ZARALEK_CAVERN },
 					}),
@@ -47,6 +53,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(204811),	-- Drogbar Stones
 						},
 					}),
+					petbattle(q(75834, {  -- Delver Mardei
+						["coord"] = { 65.6, 49.0, ZARALEK_CAVERN },
+					})),
 					petbattle(q(75835, {  -- Do You Even Train?
 						["coord"] = { 45.7, 81.5, ZARALEK_CAVERN },
 					})),

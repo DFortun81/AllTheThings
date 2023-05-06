@@ -296,15 +296,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(200180),	-- Crystallized Lightning Staff
 					},
 				}),
-				n(201557,	-- Graniteclaw
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-					["coord"] = { 58.3, 69.0, THE_AZURE_SPAN },
-					["questID"] = 74532,
-					["g"] = {
-						bo(74459, true),
-						i(203658),	-- Graniteclaw's Vest
-					},
-				})),
 				n(193654, {	-- Gravlion <Progeny of Earth>
 					["coord"] = { 60.7, 56.3, THALDRASZUS },
 					["questID"] = 73998,
@@ -398,15 +389,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 					},
 				}),
-				n(201559,	-- Shiobhan Waterborn
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-					["coord"] = { 59.9, 67.5, THE_AZURE_SPAN },
-					["questID"] = 74533,
-					["g"] = {
-						bo(74462, true),
-						i(203661),	-- Watercaller's Mantle
-					},
-				})),
 				n(193674, {	-- Voraazka
 					["coord"] = { 27.7, 72.6, THE_WAKING_SHORES },
 					["questID"] = 74038,

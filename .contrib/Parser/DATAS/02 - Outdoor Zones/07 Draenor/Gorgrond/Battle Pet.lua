@@ -30,9 +30,15 @@ _.Zones =
 				}),
 				p(1594, {	-- Mudback Calf
 					["crs"] = { 88571 },
+					["description"] = "Best general locations to find these are around the coords. Killing other nearby critters helps spawn them.",
+					["coords"] = {
+						{ 46.0, 90.8, GORGROND },
+						{ 40.8, 77.4, GORGROND },
+					},
 				}),
 				p(1615, {	-- Parched Lizard
 					["crs"] = { 89194 },
+					["description"] = "Found mostly in and around Gronn Canyon.",
 				}),
 				p(568, {	-- Silkbead Snail
 					["crs"] = { 63001 },
@@ -45,6 +51,8 @@ _.Zones =
 				}),
 				p(1463, {	-- Wood Wasp
 					["crs"] = { 85254 },
+					["coord"] = { 50.8, 80.2, GORGROND },
+					["description"] = "Found in a small area around this coord.",
 				}),
 			})),
 		}),

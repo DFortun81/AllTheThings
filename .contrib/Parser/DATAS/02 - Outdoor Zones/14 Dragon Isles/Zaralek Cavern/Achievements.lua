@@ -100,8 +100,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["_quests"] = { 75750 },	-- Are They Not Beautiful?
 				}),
 				crit(3, {	-- Delver Mardei
-					-- TODO: ["_quests"] = {  },	-- ???
-
+					["_quests"] = { 75834 },	-- Delver Mardei
 				}),
 				crit(4, {	-- Do you Even Train?
 					["_quests"] = { 75835 },	-- Do you Even Train?
@@ -177,7 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			ach(17517, {	-- Dragon Glyphs: Aberrus Approach
-				["coord"] = { 48.4, 7.0, ZARALEK_CAVERN },
+				["coord"] = { 48.0, 4.7, ZARALEK_CAVERN },
 			}),
 			ach(17516, {	-- Dragon Glyphs: Acidbite Ravine
 				["coord"] = { 47.5, 36.9, ZARALEK_CAVERN },
@@ -189,7 +188,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
 			}),
 			ach(17511, {	-- Dragon Glyphs: Nal ks'kol
-				["coord"] = { 62.6, 73.3, ZARALEK_CAVERN },
+				["coord"] = { 62.6, 70.4, ZARALEK_CAVERN },
 			}),
 			ach(17514, {	-- Dragon Glyphs: Slitherdrake Roost
 				["coord"] = { 55.3, 27.9, ZARALEK_CAVERN },
@@ -201,14 +200,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 30.5, 45.3, ZARALEK_CAVERN },
 			}),
 			ach(17739, {	-- Embers of Neltharion
-				-- Confirm: This seems removed on PTR
-				-- crit(1, {	-- A Creche Divided
-				-- 	["sourceQuests"] = { 73156 },	-- Return to Viridia
-				-- }),
-				crit(2, {	-- Breaking Ground
+				crit(1, {	-- Breaking Ground
 					["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				}),
-				crit(3, {	-- Sundered Legacy
+				crit(2, {	-- Sundered Legacy
 					["sourceQuests"] = { 72965 },	-- Aspects of Our Legacy
 				}),
 				crit(4, {	-- The Ancient Bargain
@@ -448,21 +443,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- TODO: 17773,	--
 				}},
 			}),
-			ach(17741, {	-- Slow and Steady Wins the Race
-				crit(1, { 	-- Bashful wins
-					-- Confirm: ["sourceQuests"] = { 75662 },	-- A Race To The Finish
-				}),
-				crit(2, {	-- Tricky wins
-					-- TODO: ["sourceQuests"] = {  },	-- A Race To The Finish
-				}),
-				crit(3, {	-- Brulee wins
-					-- Confirm: ["sourceQuests"] = { 75707 },	-- A Race To The Finish
-				}),
-				crit(4, {	-- Roggy wins
-					-- TODO: ["sourceQuests"] = {  },	-- A Race To The Finish
-				}),
-				i(205231),	-- Roggy (PET!)
-			}),
 			ach(17978),		-- Stones Can Fly!
 			ach(17977),		-- Stones Can Try To Fly!
 			ach(17830),		-- Stones Can't Fly!
@@ -511,10 +491,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			ach(17786, {	-- Treasures of Zaralek Cavern
 				crit(1, {	-- Ancient Zaqali Chest
-					-- TODO: ["_quests"] = {  },
+					["_quests"] = { 73697 },
 				}),
 				crit(2, {	-- Blazing Shadowflame Chest
-					-- TODO: ["_quests"] = {  },
+					["_quests"] = { 72986 },
 				}),
 				crit(3, {	-- Bloody Body
 					["_quests"] = { 75232 },
@@ -523,10 +503,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["_quests"] = { 73706 },
 				}),
 				crit(5, {	-- Chest of the Flights
-					-- TODO: ["_quests"] = {  },
+					["_quests"] = { 75187 },
 				}),
 				crit(6, {	-- Crystal-Encased Chest
-					["_quests"] = { 73697 },
+					["_quests"] = { 74986 },
 				}),
 				crit(7, {	-- Long-Lost Cache
 					["_quests"] = { 75019 },

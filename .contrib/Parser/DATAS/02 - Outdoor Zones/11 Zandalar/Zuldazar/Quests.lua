@@ -1735,7 +1735,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["sourceQuests"] = { 49282 },	-- Morgrum's Extended Survey
 			}),
 			q(52210, {	-- Sending Out An SOS
-				["sourceQuests"] = { 47741 },	-- To Sacrifice a Loa -- TODO: verify this. Earliest point where this was available but may have additional requirements
+				["sourceQuests"] = {
+					47528,	-- Mistress of Lies (lq of inaccurate quest dialog)
+					49310,	-- The Prophet's Ploy (guessed)
+				},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
 				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },

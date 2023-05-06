@@ -717,7 +717,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
 			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
-			i(196997),	-- Cliffside Wylderdrake: Split Horns
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 		})),
 		header(HEADERS.Item, 194705, {	-- Highland Drake
@@ -769,6 +768,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197124),	-- Highland Drake: Swept Horns (DM!)
 			i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 			i(197121),	-- Highland Drake: Tan Horns (DM!)
+			i(197104),	-- Highland Drake: Tapered Chin
 			i(197123),	-- Highland Drake: Thorn Horns (DM!)
 			i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 			i(197135),	-- Highland Drake: Toothy Mouth (DM!)
@@ -783,7 +783,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197095),	-- Highland Drake: Gold and White Armor
 			i(197119),	-- Highland Drake: Helm
 			i(197134),	-- Highland Drake: Spiked Legs
-			i(197104),	-- Highland Drake: Tapered Chin
 			i(197146),	-- Highland Drake: White Scales
 		})),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
@@ -933,7 +932,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
 			i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
-			i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
 		})),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
 			i(197583),	-- Windborne Velocidrake: Exposed Finned Back (DM!)
@@ -956,6 +954,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
 			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail (DM!)
+			i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
 		}),
 		header(HEADERS.Item, 194705, {	-- Highland Drake
 			i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)

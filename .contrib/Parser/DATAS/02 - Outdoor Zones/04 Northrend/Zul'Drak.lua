@@ -127,6 +127,7 @@ root(ROOTS.Zones, {
 					}),
 					p(535, {	-- Water Waveling
 						["crs"] = { 62820 },
+						["description"] = "Spawns in the farms south of The Argent Stand.",
 					}),
 				})),
 				-- #endif

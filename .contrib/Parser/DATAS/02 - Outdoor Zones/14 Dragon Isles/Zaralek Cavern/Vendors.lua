@@ -2,6 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local COVETED_BAUBLE = 204727;
+local UNEARTHED_FRAGRANT_COIN = 204715;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(VENDORS, {
@@ -48,54 +49,54 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					i(204726, {	-- Drake's Bountiful Chest
 						["questID"] = 75329,
-						--["isWeekly"] = true,
-						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
+						["isWeekly"] = true,
+						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 15 } },
 						["g"] = {
 							i(204076),	-- Drake's Shadowflame Crest Fragment x15
 						}
 					}),
 					i(204725, {	-- Drake's Hefty Chest
 						["questID"] = 75328,
-						--["isWeekly"] = true,
-						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
+						["isWeekly"] = true,
+						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 10 } },
 						["g"] = {
 							i(204076),	-- Drake's Shadowflame Crest Fragment x10
 						}
 					}),
 					i(204724, {	-- Drake's Small Chest
 						["questID"] = 75327,
-						--["isWeekly"] = true,
-						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
+						["isWeekly"] = true,
+						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 5 } },
 						["g"] = {
 							i(204076),	-- Drake's Shadowflame Crest Fragment x5
 						}
 					}),
 					i(204722, {	-- Whelpling's Bountiful Chest
 						["questID"] = 75323,
-						--["isWeekly"] = true,
-						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
+						["isWeekly"] = true,
+						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 10 } },
 						["g"] = {
 							i(204075),	-- Whelpling's Shadowflame Crest Fragment x15
 						}
 					}),
 					i(204723, {	-- Whelpling's Hefty Chest
 						["questID"] = 75324,
-						--["isWeekly"] = true,
-						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
+						["isWeekly"] = true,
+						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 4 } },
 						["g"] = {
 							i(204075),	-- Whelpling's Shadowflame Crest Fragment x10
 						}
 					}),
 					i(204721, {	-- Whelpling's Small Chest
 						["questID"] = 75306,
-						--["isWeekly"] = true,
-						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
+						["isWeekly"] = true,
+						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 2 } },
 						["g"] = {
 							i(204075),	-- Drake's Shadowflame Crest Fragment x5
 						}
 					}),
 					i(COVETED_BAUBLE, {
-						["cost"] = { { "i", 204715, 1 } },	-- 1x Unearthed Fragrant Coin
+						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 1 } },
 					}),
 				},
 			}),
