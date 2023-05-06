@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 	m(THE_FORBIDDEN_REACH, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
-				-- Chapter 1 --
+				-- Chapter 0 --
 				q(74381, {	-- Hidden Legacies
 					["maps"] = { VALDRAKKEN },
 				}),

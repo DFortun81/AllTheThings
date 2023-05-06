@@ -150,7 +150,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75267, true),
 					i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail (DM!)
 					i(205307),	-- Kob'rok's Scale Sabatons
-					i(205147),	-- Ridged Shalewing	(PET!)
 					i(205152),	-- Skaarn (PET!)
 				},
 			}),

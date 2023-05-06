@@ -962,9 +962,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197109),	-- Highland Drake: Spiked Head (DM!)
 		}),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
-			i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)
 			i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
 			i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
+			i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)
 		}),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
 			i(203338),	-- Winding Slitherdrake: Antler Horns

@@ -65,9 +65,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(74518),	-- Resistance Training
 				q(74515),	-- Snail Mail
 				q(74514, {	-- The Slowest Fan Club
-					["g"] = {
-						i(204178),	-- Snailcatcher Net
-					},
+					i(204178),	-- Snailcatcher Net
 				}),
 
 			})),

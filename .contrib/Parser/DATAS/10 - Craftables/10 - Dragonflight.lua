@@ -3028,8 +3028,8 @@ root(ROOTS.HiddenQuestTriggers, {
 
 			q(75141, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambant Hochenblume
 			q(75143, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Saxifrage
-			q(75138, {["timeline"] = {ADDED_10_1_0}}),	-- First Overload Lambent Herb
 			q(75144, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Writhebark
+			q(75138, {["timeline"] = {ADDED_10_1_0}}),	-- First Overload Lambent Herb
 			--
 			q(74121),	-- Herbing Enraged Sprout
 			q(74230),	-- Herbing Azra's Prized Peony

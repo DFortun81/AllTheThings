@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["coord"] = { 31.6, 34.1, BASTION },
 			}),
 			pet(2927),	-- Fluttering Glimmerfly (PET!)
-			pet(2930,	{	-- Glimmerpool Hatchling (PET!)
+			pet(2930, {	-- Glimmerpool Hatchling (PET!)
 				["coords"] = {
 					{ 53.8, 32.8, BASTION },
 					{ 49.6, 62.0, BASTION },
@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			}),
 			pet(2937),	-- Rustfur Kit (PET!)
 			pet(2929),	-- Vibrant Glimmerfly (PET!)
-			pet(2939,	{	-- Wader Chick (PET!)
+			pet(2939, {	-- Wader Chick (PET!)
 				["coords"] = {
 					{ 54.2, 80.8, BASTION },
 					{ 53.4, 76.6, BASTION },

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local BARTER_BOULDER = 205188;
 local BARTER_BRICK = 204985;
 local PONZOS_CREAM = 205452;
 local VOUCHER = 205453;
@@ -243,7 +244,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						-- Cosmetic
 						i(205421, {	-- Ponzo's Scheming Topper
 							["description"] = "Hat appears when you click dialog options (for the best price - click it a few times)",
-							["cost"] = { { "i", 205188, 249 }, },
+							["cost"] = { { "i", BARTER_BOULDER, 249 }, },
 						}),
 					},
 				}),
