@@ -577,6 +577,23 @@ root(ROOTS.Unsorted, {
 				i(206158),	-- Add Keystone Affix: Shielding
 				i(206200),	-- Obsidian Equipment Chest
 				i(206270),	-- Volcanic Equipment Chest
+				-- New
+				i(189885),	-- The Battlespoon
+				i(190095),	-- Ensemble: Vestment of the Honored Valarjar
+				i(190175),	-- Pippin
+				i(190200),	-- Feathered Drape of the Guardian
+				i(190205),	-- Sharpened Shank
+				i(190214),	-- Tiercel's Wing
+				i(190215),	-- Lost Crown of the Arcane
+				i(190216),	-- Feathered Cowl of the Guardian
+				i(190217),	-- Fang of the Mountain
+				i(190220),	-- Standard of the Guardian
+				i(190441),	-- Black Iron Blunderbuss
+				i(190613),	-- Savage Green Battle Turtle
+				i(190808),	-- High Priestess's Ceremonial Drape
+				i(190899),	-- Crimson Bicorne
+				i(204797),	-- Djaradin Boasting Tablets
+				i(204805),	-- Suspended Sulfuric Droplet
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {

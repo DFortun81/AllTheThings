@@ -229,3 +229,5 @@ ach(18248),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Tutorial Objec
 ach(18258),	-- Little Lord of Lies
 10.1.0.49092
 ach(18359),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests
+10.1.0.49426
+ach(18394),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests (copy)

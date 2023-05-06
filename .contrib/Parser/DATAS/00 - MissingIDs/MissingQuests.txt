@@ -1,144 +1,143 @@
 1.13.0.28211
-q(548),	-- [DEPRECATED] <NYI> <TXT> Bloodstone Pendant	 CLASSIC:<NYI> <TXT> Bloodstone Pendant	 TBC:<NYI> <TXT> Bloodstone Pendant	 WOTLK:<NYI> <TXT> Bloodstone Pendant
-q(614),	-- The Captain's Chest	 CLASSIC:The Captain's Chest	 TBC:The Captain's Chest	 WOTLK:The Captain's Chest
-q(615),	-- The Captain's Cutlass	 CLASSIC:The Captain's Cutlass	 TBC:The Captain's Cutlass	 WOTLK:The Captain's Cutlass
-q(618),	-- Facing Negolash	 CLASSIC:Facing Negolash	 TBC:Facing Negolash	 WOTLK:Facing Negolash
-q(620),	-- The Monogrammed Sash	 CLASSIC:The Monogrammed Sash	 TBC:The Monogrammed Sash	 WOTLK:The Monogrammed Sash
-q(636),	-- Legends of the Earth <NYI>	 CLASSIC:Legends of the Earth <NYI>	 TBC:Legends of the Earth <NYI>	 WOTLK:Legends of the Earth <NYI>
-q(934),	-- Crown of the Earth	 CLASSIC:Crown of the Earth	 TBC:Crown of the Earth	 WOTLK:Crown of the Earth
-q(1288),	-- Vimes's Report	 CLASSIC:Vimes's Report	 TBC:Vimes's Report	 WOTLK:Vimes's Report
-q(1531),	-- Call of Air	 CLASSIC:Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(1532),	-- Call of Air	 CLASSIC:Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(2000),	-- Rokar Bladeshadow	 CLASSIC:Rokar Bladeshadow	 TBC:Rokar Bladeshadow	 WOTLK:Rokar Bladeshadow
-q(2018),	-- Rokar's Test	 CLASSIC:Rokar's Test
-q(2019),	-- Tools of the Trade	 CLASSIC:Tools of the Trade
-q(2358),	-- Horns of Nez'ra	 CLASSIC:Horns of Nez'ra	 WOTLK:Horns of Nez'ra
-q(2997),	-- Tome of Divinity	 CLASSIC:Tome of Divinity	 TBC:Tome of Divinity	 WOTLK:Tome of Divinity
-q(2999),	-- Tome of Divinity	 CLASSIC:Tome of Divinity	 TBC:Tome of Divinity	 WOTLK:Tome of Divinity
-q(3000),	-- Tome of Divinity	 CLASSIC:Tome of Divinity	 TBC:Tome of Divinity	 WOTLK:Tome of Divinity
-q(3111),	-- <UNUSED> [DEPRECATED]	 CLASSIC:<UNUSED> [DEPRECATED]
-q(5101),	-- Lee's Ultimate Test Quest... of Doom!	 CLASSIC:Lee's Ultimate Test Quest... of Doom!	 TBC:Lee's Ultimate Test Quest... of Doom!	 WOTLK:Lee's Ultimate Test Quest... of Doom!
-q(5628),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
-q(5629),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
-q(5630),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
-q(5631),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
-q(5632),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
-q(5633),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
-q(5635),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer
-q(5636),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer
-q(5637),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer
-q(5638),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer
-q(5639),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer
-q(5640),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer
-q(5641),	-- A Lack of Fear	 CLASSIC:A Lack of Fear	 TBC:A Lack of Fear	 WOTLK:A Lack of Fear
-q(5642),	-- Shadowguard	 CLASSIC:Shadowguard	 TBC:Shadowguard	 WOTLK:Shadowguard
-q(5643),	-- Shadowguard	 CLASSIC:Shadowguard	 TBC:Shadowguard	 WOTLK:Shadowguard
-q(5644),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WOTLK:Devouring Plague
-q(5645),	-- A Lack of Fear	 CLASSIC:A Lack of Fear	 TBC:A Lack of Fear	 WOTLK:A Lack of Fear
-q(5646),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WOTLK:Devouring Plague
-q(5647),	-- A Lack of Fear	 CLASSIC:A Lack of Fear	 TBC:A Lack of Fear	 WOTLK:A Lack of Fear
-q(5654),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness
-q(5655),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness
-q(5656),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness
-q(5657),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness
-q(5658),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness
-q(5660),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness
-q(5661),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness
-q(5662),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness
-q(5663),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness
-q(5673),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune's Grace
-q(5674),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune's Grace
-q(5675),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune's Grace
-q(5677),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback
-q(5678),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback
-q(6606),	-- A Little Luck	 CLASSIC:A Little Luck	 TBC:A Little Luck	 WOTLK:A Little Luck
-q(6702),	-- [DEPRECATED] <TXT> SF, RFK, GNOMER, BF	 CLASSIC:[DEPRECATED] <TXT> SF, RFK, GNOMER, BF
-q(6704),	-- [DEPRECATED] <TXT> SM, RFD, ULD	 CLASSIC:[DEPRECATED] <TXT> SM, RFD, ULD
-q(6706),	-- [DEPRECATED] <TXT> ZUL, ST, MAR	 CLASSIC:[DEPRECATED] <TXT> ZUL, ST, MAR
-q(6708),	-- [DEPRECATED] <TXT> BRD, DM, BRS	 CLASSIC:[DEPRECATED] <TXT> BRD, DM, BRS
-q(6710),	-- [DEPRECATED] <TXT> UBRS, STRATH, SCHOL	 CLASSIC:[DEPRECATED] <TXT> UBRS, STRATH, SCHOL
-q(6843),	-- Da Foo	 CLASSIC:Da Foo
-q(7487),	-- Attunement to the Core	 CLASSIC:Attunement to the Core	 TBC:Attunement to the Core	 WOTLK:Attunement to the Core
-q(7521),	-- Thunderaan the Windseeker	 CLASSIC:Thunderaan the Windseeker
-q(7522),	-- Examine the Vessel	 CLASSIC:Examine the Vessel
-q(7561),	-- Rise, Thunderfury!	 CLASSIC:Rise, Thunderfury!
-q(7637),	-- Emphasis on Sacrifice	 CLASSIC:Emphasis on Sacrifice	 TBC:Emphasis on Sacrifice	 WOTLK:Emphasis on Sacrifice
-q(7638),	-- Lord Grayson Shadowbreaker	 CLASSIC:Lord Grayson Shadowbreaker	 TBC:Lord Grayson Shadowbreaker	 WOTLK:Lord Grayson Shadowbreaker
-q(7639),	-- To Show Due Judgment	 CLASSIC:To Show Due Judgment	 TBC:To Show Due Judgment	 WOTLK:To Show Due Judgment
-q(7640),	-- Exorcising Terrordale	 CLASSIC:Exorcising Terrordale	 TBC:Exorcising Terrordale	 WOTLK:Exorcising Terrordale
-q(7641),	-- The Work of Grimand Elmore	 CLASSIC:The Work of Grimand Elmore	 TBC:The Work of Grimand Elmore	 WOTLK:The Work of Grimand Elmore
-q(7642),	-- Collection of Goods	 CLASSIC:Collection of Goods	 TBC:Collection of Goods	 WOTLK:Collection of Goods
-q(7643),	-- Ancient Equine Spirit	 CLASSIC:Ancient Equine Spirit	 TBC:Ancient Equine Spirit	 WOTLK:Ancient Equine Spirit
-q(7644),	-- Blessed Arcanite Barding	 CLASSIC:Blessed Arcanite Barding	 TBC:Blessed Arcanite Barding	 WOTLK:Blessed Arcanite Barding
-q(7645),	-- Manna-Enriched Horse Feed	 CLASSIC:Manna-Enriched Horse Feed	 TBC:Manna-Enriched Horse Feed	 WOTLK:Manna-Enriched Horse Feed
-q(7646),	-- The Divination Scryer	 CLASSIC:The Divination Scryer	 TBC:The Divination Scryer	 WOTLK:The Divination Scryer
-q(7648),	-- Grimand's Finest Work	 CLASSIC:Grimand's Finest Work	 TBC:Grimand's Finest Work	 WOTLK:Grimand's Finest Work
-q(7670),	-- Lord Grayson Shadowbreaker	 CLASSIC:Lord Grayson Shadowbreaker	 TBC:Lord Grayson Shadowbreaker	 WOTLK:Lord Grayson Shadowbreaker
-q(7681),	-- Hunter test quest	 CLASSIC:Hunter test quest	 TBC:Hunter test quest	 WOTLK:Hunter test quest
-q(7682),	-- Hunter test quest2	 CLASSIC:Hunter test quest2	 TBC:Hunter test quest2	 WOTLK:Hunter test quest2
-q(7741),	-- Praise from the Emerald Circle <NYI> <TXT>	 CLASSIC:Praise from the Emerald Circle <NYI> <TXT>
-q(7788),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7789),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(7790),	-- The Written Word	 CLASSIC:REUSE	 TBC:REUSE	 WOTLK:REUSE
-q(7869),	-- test quest - do not use	 CLASSIC:test quest - do not use
-q(7870),	-- test quest2 - do not use	 CLASSIC:test quest2 - do not use
-q(7871),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7872),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7873),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7874),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(7875),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(7876),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(8080),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8123),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8152),	-- REUSE	 CLASSIC:REUSE
-q(8154),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8155),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8156),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8160),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8161),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8162),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8230),	-- Collin's Test Quest	 CLASSIC:Collin's Test Quest
-q(8266),	-- Ribbons of Sacrifice	 CLASSIC:Ribbons of Sacrifice	 TBC:Ribbons of Sacrifice	 WOTLK:Ribbons of Sacrifice
-q(8268),	-- Ribbons of Sacrifice	 CLASSIC:Ribbons of Sacrifice	 TBC:Ribbons of Sacrifice	 WOTLK:Ribbons of Sacrifice
-q(8290),	-- Vanquish the Invaders	 CLASSIC:Vanquish the Invaders	 TBC:Vanquish the Invaders	 WOTLK:Vanquish the Invaders
-q(8291),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(8294),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(8295),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(8297),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8299),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8411),	-- [DEPRECATED] Mastering the Elements	 CLASSIC:Mastering the Elements	 TBC:Mastering the Elements	 WOTLK:Mastering the Elements
-q(8530),	-- The Alliance Needs Singed Corestones!	 CLASSIC:The Alliance Needs Singed Corestones!	 TBC:The Alliance Needs Singed Corestones!	 WOTLK:The Alliance Needs Singed Corestones!
-q(8617),	-- The Horde Needs Singed Corestones!	 CLASSIC:The Horde Needs Singed Corestones!	 TBC:The Horde Needs Singed Corestones!	 WOTLK:The Horde Needs Singed Corestones!
-q(8869),	-- Sweet Serenity	 CLASSIC:Sweet Serenity	 TBC:Sweet Serenity	 WOTLK:Sweet Serenity
-q(8973),	-- REUSE	 CLASSIC:REUSE	 TBC:REUSE	 WOTLK:REUSE
-q(9065),	-- The Pattymac Special	 CLASSIC:The "Chow" Quest (123)aa	 TBC:The "Chow" Quest (123)aa	 WOTLK:The Pattymac Special
-q(9378),	-- DND FLAG The Dread Citadel - Naxxramas
-q(9556),	-- To The Victor...	 CLASSIC:To The Victor...	 TBC:To The Victor...	 WOTLK:To The Victor...
+q(548),	-- [DEPRECATED] <NYI> <TXT> Bloodstone Pendant	 CLASSIC:<NYI> <TXT> Bloodstone Pendant	 TBC:<NYI> <TXT> Bloodstone Pendant	 WOTLK:<NYI> <TXT> Bloodstone Pendant	
+q(614),	-- The Captain's Chest	 CLASSIC:The Captain's Chest	 TBC:The Captain's Chest	 WOTLK:The Captain's Chest	
+q(615),	-- The Captain's Cutlass	 CLASSIC:The Captain's Cutlass	 TBC:The Captain's Cutlass	 WOTLK:The Captain's Cutlass	
+q(618),	-- Facing Negolash	 CLASSIC:Facing Negolash	 TBC:Facing Negolash	 WOTLK:Facing Negolash	
+q(620),	-- The Monogrammed Sash	 CLASSIC:The Monogrammed Sash	 TBC:The Monogrammed Sash	 WOTLK:The Monogrammed Sash	
+q(934),	-- Crown of the Earth	 CLASSIC:Crown of the Earth	 TBC:Crown of the Earth	 WOTLK:Crown of the Earth	
+q(1288),	-- Vimes's Report	 CLASSIC:Vimes's Report	 TBC:Vimes's Report	 WOTLK:Vimes's Report	
+q(1531),	-- Call of Air	 CLASSIC:Call of Air	 TBC:Call of Air	 WOTLK:Call of Air	
+q(1532),	-- Call of Air	 CLASSIC:Call of Air	 TBC:Call of Air	 WOTLK:Call of Air	
+q(2000),	-- Rokar Bladeshadow	 CLASSIC:Rokar Bladeshadow	 TBC:Rokar Bladeshadow	 WOTLK:Rokar Bladeshadow	
+q(2018),	-- Rokar's Test	 CLASSIC:Rokar's Test	
+q(2019),	-- Tools of the Trade	 CLASSIC:Tools of the Trade	
+q(2358),	-- Horns of Nez'ra	 CLASSIC:Horns of Nez'ra	 WOTLK:Horns of Nez'ra	
+q(2997),	-- Tome of Divinity	 CLASSIC:Tome of Divinity	 TBC:Tome of Divinity	 WOTLK:Tome of Divinity	
+q(2999),	-- Tome of Divinity	 CLASSIC:Tome of Divinity	 TBC:Tome of Divinity	 WOTLK:Tome of Divinity	
+q(3000),	-- Tome of Divinity	 CLASSIC:Tome of Divinity	 TBC:Tome of Divinity	 WOTLK:Tome of Divinity	
+q(3111),	-- <UNUSED> [DEPRECATED]	 CLASSIC:<UNUSED> [DEPRECATED]	
+q(5101),	-- Lee's Ultimate Test Quest... of Doom!	 CLASSIC:Lee's Ultimate Test Quest... of Doom!	 TBC:Lee's Ultimate Test Quest... of Doom!	 WOTLK:Lee's Ultimate Test Quest... of Doom!	
+q(5628),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	
+q(5629),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	
+q(5630),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	
+q(5631),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	
+q(5632),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	
+q(5633),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	
+q(5635),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	
+q(5636),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	
+q(5637),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	
+q(5638),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	
+q(5639),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	
+q(5640),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	
+q(5641),	-- A Lack of Fear	 CLASSIC:A Lack of Fear	 TBC:A Lack of Fear	 WOTLK:A Lack of Fear	
+q(5642),	-- Shadowguard	 CLASSIC:Shadowguard	 TBC:Shadowguard	 WOTLK:Shadowguard	
+q(5643),	-- Shadowguard	 CLASSIC:Shadowguard	 TBC:Shadowguard	 WOTLK:Shadowguard	
+q(5644),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WOTLK:Devouring Plague	
+q(5645),	-- A Lack of Fear	 CLASSIC:A Lack of Fear	 TBC:A Lack of Fear	 WOTLK:A Lack of Fear	
+q(5646),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WOTLK:Devouring Plague	
+q(5647),	-- A Lack of Fear	 CLASSIC:A Lack of Fear	 TBC:A Lack of Fear	 WOTLK:A Lack of Fear	
+q(5654),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	
+q(5655),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	
+q(5656),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	
+q(5657),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	
+q(5658),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	
+q(5660),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	
+q(5661),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	
+q(5662),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	
+q(5663),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	
+q(5673),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune's Grace	
+q(5674),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune's Grace	
+q(5675),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune's Grace	
+q(5677),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback	
+q(5678),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback	
+q(6606),	-- A Little Luck	 CLASSIC:A Little Luck	 TBC:A Little Luck	 WOTLK:A Little Luck	
+q(6702),	-- [DEPRECATED] <TXT> SF, RFK, GNOMER, BF	 CLASSIC:[DEPRECATED] <TXT> SF, RFK, GNOMER, BF	
+q(6704),	-- [DEPRECATED] <TXT> SM, RFD, ULD	 CLASSIC:[DEPRECATED] <TXT> SM, RFD, ULD	
+q(6706),	-- [DEPRECATED] <TXT> ZUL, ST, MAR	 CLASSIC:[DEPRECATED] <TXT> ZUL, ST, MAR	
+q(6708),	-- [DEPRECATED] <TXT> BRD, DM, BRS	 CLASSIC:[DEPRECATED] <TXT> BRD, DM, BRS	
+q(6710),	-- [DEPRECATED] <TXT> UBRS, STRATH, SCHOL	 CLASSIC:[DEPRECATED] <TXT> UBRS, STRATH, SCHOL	
+q(6843),	-- Da Foo	 CLASSIC:Da Foo	
+q(7487),	-- Attunement to the Core	 CLASSIC:Attunement to the Core	 TBC:Attunement to the Core	 WOTLK:Attunement to the Core	
+q(7521),	-- Thunderaan the Windseeker	 CLASSIC:Thunderaan the Windseeker	
+q(7522),	-- Examine the Vessel	 CLASSIC:Examine the Vessel	
+q(7561),	-- Rise, Thunderfury!	 CLASSIC:Rise, Thunderfury!	
+q(7637),	-- Emphasis on Sacrifice	 CLASSIC:Emphasis on Sacrifice	 TBC:Emphasis on Sacrifice	 WOTLK:Emphasis on Sacrifice	
+q(7638),	-- Lord Grayson Shadowbreaker	 CLASSIC:Lord Grayson Shadowbreaker	 TBC:Lord Grayson Shadowbreaker	 WOTLK:Lord Grayson Shadowbreaker	
+q(7639),	-- To Show Due Judgment	 CLASSIC:To Show Due Judgment	 TBC:To Show Due Judgment	 WOTLK:To Show Due Judgment	
+q(7640),	-- Exorcising Terrordale	 CLASSIC:Exorcising Terrordale	 TBC:Exorcising Terrordale	 WOTLK:Exorcising Terrordale	
+q(7641),	-- The Work of Grimand Elmore	 CLASSIC:The Work of Grimand Elmore	 TBC:The Work of Grimand Elmore	 WOTLK:The Work of Grimand Elmore	
+q(7642),	-- Collection of Goods	 CLASSIC:Collection of Goods	 TBC:Collection of Goods	 WOTLK:Collection of Goods	
+q(7643),	-- Ancient Equine Spirit	 CLASSIC:Ancient Equine Spirit	 TBC:Ancient Equine Spirit	 WOTLK:Ancient Equine Spirit	
+q(7644),	-- Blessed Arcanite Barding	 CLASSIC:Blessed Arcanite Barding	 TBC:Blessed Arcanite Barding	 WOTLK:Blessed Arcanite Barding	
+q(7645),	-- Manna-Enriched Horse Feed	 CLASSIC:Manna-Enriched Horse Feed	 TBC:Manna-Enriched Horse Feed	 WOTLK:Manna-Enriched Horse Feed	
+q(7646),	-- The Divination Scryer	 CLASSIC:The Divination Scryer	 TBC:The Divination Scryer	 WOTLK:The Divination Scryer	
+q(7648),	-- Grimand's Finest Work	 CLASSIC:Grimand's Finest Work	 TBC:Grimand's Finest Work	 WOTLK:Grimand's Finest Work	
+q(7670),	-- Lord Grayson Shadowbreaker	 CLASSIC:Lord Grayson Shadowbreaker	 TBC:Lord Grayson Shadowbreaker	 WOTLK:Lord Grayson Shadowbreaker	
+q(7681),	-- Hunter test quest	 CLASSIC:Hunter test quest	 TBC:Hunter test quest	 WOTLK:Hunter test quest	
+q(7682),	-- Hunter test quest2	 CLASSIC:Hunter test quest2	 TBC:Hunter test quest2	 WOTLK:Hunter test quest2	
+q(7741),	-- Praise from the Emerald Circle <NYI> <TXT>	 CLASSIC:Praise from the Emerald Circle <NYI> <TXT>	
+q(7788),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!	
+q(7789),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers	
+q(7790),	-- The Written Word	 CLASSIC:REUSE	 TBC:REUSE	 WOTLK:REUSE	
+q(7869),	-- test quest - do not use	 CLASSIC:test quest - do not use	
+q(7870),	-- test quest2 - do not use	 CLASSIC:test quest2 - do not use	
+q(7871),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!	
+q(7872),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!	
+q(7873),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!	
+q(7874),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers	
+q(7875),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers	
+q(7876),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers	
+q(8080),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	
+q(8123),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines	
+q(8152),	-- REUSE	 CLASSIC:REUSE	
+q(8154),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	
+q(8155),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	
+q(8156),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	
+q(8160),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines	
+q(8161),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines	
+q(8162),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines	
+q(8230),	-- Collin's Test Quest	 CLASSIC:Collin's Test Quest	
+q(8266),	-- Ribbons of Sacrifice	 CLASSIC:Ribbons of Sacrifice	 TBC:Ribbons of Sacrifice	 WOTLK:Ribbons of Sacrifice	
+q(8268),	-- Ribbons of Sacrifice	 CLASSIC:Ribbons of Sacrifice	 TBC:Ribbons of Sacrifice	 WOTLK:Ribbons of Sacrifice	
+q(8290),	-- Vanquish the Invaders	 CLASSIC:Vanquish the Invaders	 TBC:Vanquish the Invaders	 WOTLK:Vanquish the Invaders	
+q(8291),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!	
+q(8294),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers	
+q(8295),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers	
+q(8297),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	
+q(8299),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines	
+q(8411),	-- [DEPRECATED] Mastering the Elements	 CLASSIC:Mastering the Elements	 TBC:Mastering the Elements	 WOTLK:Mastering the Elements	
+q(8530),	-- The Alliance Needs Singed Corestones!	 CLASSIC:The Alliance Needs Singed Corestones!	 TBC:The Alliance Needs Singed Corestones!	 WOTLK:The Alliance Needs Singed Corestones!	
+q(8617),	-- The Horde Needs Singed Corestones!	 CLASSIC:The Horde Needs Singed Corestones!	 TBC:The Horde Needs Singed Corestones!	 WOTLK:The Horde Needs Singed Corestones!	
+q(8869),	-- Sweet Serenity	 CLASSIC:Sweet Serenity	 TBC:Sweet Serenity	 WOTLK:Sweet Serenity	
+q(8973),	-- REUSE	 CLASSIC:REUSE	 TBC:REUSE	 WOTLK:REUSE	
+q(9065),	-- The Pattymac Special	 CLASSIC:The "Chow" Quest (123)aa	 TBC:The "Chow" Quest (123)aa	 WOTLK:The Pattymac Special	
+q(9378),	-- DND FLAG The Dread Citadel - Naxxramas	
+q(9556),	-- To The Victor...	 CLASSIC:To The Victor...	 TBC:To The Victor...	 WOTLK:To The Victor...	
 1.13.2.30073
 q(55296),	--
 1.13.5.34713
 q(60860),	--
-q(60863),	-- TBC:[Never used]	 WOTLK:[Never used]
-q(60864),	-- TBC:[Never used]	 WOTLK:[Never used]
-q(60865),	-- TBC:[Never used]	 WOTLK:[Never used]
-q(60866),	-- TBC:[Never used]	 WOTLK:[Never used]
-q(60868),	-- TBC:[Never used]	 WOTLK:[Never used]
+q(60863),	-- TBC:[Never used]	 WOTLK:[Never used]	
+q(60864),	-- TBC:[Never used]	 WOTLK:[Never used]	
+q(60865),	-- TBC:[Never used]	 WOTLK:[Never used]	
+q(60866),	-- TBC:[Never used]	 WOTLK:[Never used]	
+q(60868),	-- TBC:[Never used]	 WOTLK:[Never used]	
 q(60870),	--
 1.13.6.36149
 q(61547),	--
 1.13.7.37892
 q(63769),	--
 1.14.1.40688
-q(8571),	-- <UNUSED> Armor Kits	 CLASSIC:<UNUSED> Armor Kits
+q(8571),	-- <UNUSED> Armor Kits	 CLASSIC:<UNUSED> Armor Kits	
 q(65309),	--
 1.14.2.42065
-q(65593),	-- CLASSIC:Hearts of the Lovers	 TBC:Hearts of the Lovers	 WOTLK:Hearts of the Lovers
-q(65597),	-- CLASSIC:The Binding	 TBC:The Binding	 WOTLK:The Binding
-q(65601),	-- CLASSIC:Love Hurts	 TBC:Love Hurts	 WOTLK:Love Hurts
-q(65602),	-- CLASSIC:What Is Love?	 TBC:What Is Love?	 WOTLK:What Is Love?
-q(65603),	-- CLASSIC:The Binding	 TBC:The Binding	 WOTLK:The Binding
-q(65604),	-- CLASSIC:The Binding	 TBC:The Binding	 WOTLK:The Binding
-q(65610),	-- CLASSIC:Wish You Were Here	 TBC:Wish You Were Here	 WOTLK:Wish You Were Here
+q(65593),	-- CLASSIC:Hearts of the Lovers	 TBC:Hearts of the Lovers	 WOTLK:Hearts of the Lovers	
+q(65597),	-- CLASSIC:The Binding	 TBC:The Binding	 WOTLK:The Binding	
+q(65601),	-- CLASSIC:Love Hurts	 TBC:Love Hurts	 WOTLK:Love Hurts	
+q(65602),	-- CLASSIC:What Is Love?	 TBC:What Is Love?	 WOTLK:What Is Love?	
+q(65603),	-- CLASSIC:The Binding	 TBC:The Binding	 WOTLK:The Binding	
+q(65604),	-- CLASSIC:The Binding	 TBC:The Binding	 WOTLK:The Binding	
+q(65610),	-- CLASSIC:Wish You Were Here	 TBC:Wish You Were Here	 WOTLK:Wish You Were Here	
 q(65616),	--
 1.14.3.42770
 q(66145),	--
@@ -158,332 +157,332 @@ q(66295),	--
 q(66317),	--
 q(66318),	--
 2.5.1.38043
-q(8337),	-- <UNUSED>
-q(8339),	-- Royalty of the Council <NYI> <TXT> UNUSED	 TBC:Royalty of the Council <NYI> <TXT> UNUSED	 WOTLK:Royalty of the Council <NYI> <TXT> UNUSED
-q(8340),	-- Twilight Signet Ring <NYI> <TXT>
-q(8344),	-- Windows to the Source	 TBC:Windows to the Source	 WOTLK:Windows to the Source
-q(9168),	-- Heart of Deatholme	 TBC:Heart of Deatholme	 WOTLK:Heart of Deatholme
-q(9306),	-- <DEPRECATED>Speak with Vindicator Aldar
-q(9307),	-- <DEPRECATED>Compassion
-q(9308),	-- <DEPRECATED>Blood Elf Remains?	 TBC:<DEPRECATED>Blood Elf Remains?	 WOTLK:<DEPRECATED>Blood Elf Remains?
-q(9316),	-- [TXT] Goblin Savages	 TBC:[TXT] Goblin Savages	 WOTLK:[TXT] Goblin Savages
-q(9347),	-- Voidwalkers Gone Wild	 TBC:Voidwalkers Gone Wild	 WOTLK:Voidwalkers Gone Wild
-q(9348),	-- Ravager Roundup	 TBC:Ravager Roundup	 WOTLK:Ravager Roundup
-q(9350),	-- A Peon's Work is Never Done	 TBC:A Peon's Work is Never Done	 WOTLK:A Peon's Work is Never Done
-q(9354),	-- Searching for New Materials	 TBC:Searching for New Materials	 WOTLK:Searching for New Materials
-q(9379),	-- Fortifying the Felhunter	 TBC:Fortifying the Felhunter	 WOTLK:Fortifying the Felhunter
-q(9384),	-- <NYI>Harnessing the Light	 TBC:<NYI>Harnessing the Light	 WOTLK:<NYI>Harnessing the Light
-q(9432),	-- Travel to Astranaar	 TBC:Travel to Astranaar	 WOTLK:Travel to Astranaar
-q(9445),	-- <NYI><TXT>Placeholder: A Worthy Offering	 TBC:<NYI><TXT>Placeholder: A Worthy Offering	 WOTLK:<NYI><TXT>Placeholder: A Worthy Offering
-q(9460),	-- Combining Forces	 TBC:Combining Forces	 WOTLK:Combining Forces
-q(9484),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
-q(9485),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
-q(9486),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
-q(9497),	-- Emblem of the Fel Horde	 TBC:Emblem of the Fel Horde	 WOTLK:Emblem of the Fel Horde
-q(9507),	-- <DEPRECATED>From the Desk of Mogul Razdunk
-q(9532),	-- Find Keltus Darkleaf	 TBC:Find Keltus Darkleaf	 WOTLK:Find Keltus Darkleaf
-q(9546),	-- Fulfilling a Promise
-q(9547),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9551),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9552),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9553),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9554),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9568),	-- On the Offensive	 TBC:On the Offensive	 WOTLK:On the Offensive
-q(9577),	-- DAILY TEST QUEST (PVP)	 TBC:DAILY TEST QUEST (PVP)	 WOTLK:DAILY TEST QUEST (PVP)
-q(9583),	-- Omar's Test Quest bk	 TBC:Omar's Test Quest	 WOTLK:Omar's Test Quest
-q(9591),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
-q(9592),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
-q(9593),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
-q(9596),	-- <DEPRECATED>Control
-q(9597),	-- <UNUSED>
-q(9599),	-- <UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>
-q(9613),	-- Deprecated: Keanna's Will	 TBC:Deprecated: Keanna's Will	 WOTLK:Deprecated: Keanna's Will
-q(9614),	-- Deprecated: Reforge a Short Blade	 TBC:Deprecated: Reforge a Short Blade	 WOTLK:Deprecated: Reforge a Short Blade
-q(9615),	-- Deprecated: Reforge a Long Blade	 TBC:Deprecated: Reforge a Long Blade	 WOTLK:Deprecated: Reforge a Long Blade
-q(9617),	-- Seek the Farstriders	 TBC:Seek the Farstriders	 WOTLK:Seek the Farstriders
-q(9618),	-- Return the Reports	 TBC:Return the Reports	 WOTLK:Return the Reports
-q(9650),	-- Deprecated: Magical Augmentation	 TBC:Deprecated: Magical Augmentation	 WOTLK:Deprecated: Magical Augmentation
-q(9651),	-- Deprecated: Magical Augmentation	 TBC:Deprecated: Magical Augmentation	 WOTLK:Deprecated: Magical Augmentation
-q(9652),	-- Deprecated: Physical Enhancement	 TBC:Deprecated: Physical Enhancement	 WOTLK:Deprecated: Physical Enhancement
-q(9653),	-- Deprecated: Physical Enhancement	 TBC:Deprecated: Physical Enhancement	 WOTLK:Deprecated: Physical Enhancement
-q(9654),	-- Deprecated: A Well Rounded Defense	 TBC:Deprecated: A Well Rounded Defense	 WOTLK:Deprecated: A Well Rounded Defense
-q(9655),	-- Deprecated: Healing Amplification	 TBC:Deprecated: Healing Amplification	 WOTLK:Deprecated: Healing Amplification
-q(9656),	-- Deprecated: Lethality First	 TBC:Deprecated: Lethality First	 WOTLK:Deprecated: Lethality First
-q(9657),	-- Deprecated: Offensive Channeling	 TBC:Deprecated: Offensive Channeling	 WOTLK:Deprecated: Offensive Channeling
-q(9658),	-- Deprecated: Offensive Channeling	 TBC:Deprecated: Offensive Channeling	 WOTLK:Deprecated: Offensive Channeling
-q(9659),	-- Deprecated: Healing Amplification	 TBC:Deprecated: Healing Amplification	 WOTLK:Deprecated: Healing Amplification
-q(9660),	-- Deprecated: Lethality First	 TBC:Deprecated: Lethality First	 WOTLK:Deprecated: Lethality First
-q(9661),	-- Deprecated: A Well Rounded Defense	 TBC:Deprecated: A Well Rounded Defense	 WOTLK:Deprecated: A Well Rounded Defense
-q(9662),	-- Deprecated: Keanna's Freedom	 TBC:Deprecated: Keanna's Freedom	 WOTLK:Deprecated: Keanna's Freedom
-q(9679),	-- <NYI>Return to Knight-Lord Bloodvalor
-q(9712),	-- The Thalassian Warhorse	 TBC:The Thalassian Warhorse	 WOTLK:The Thalassian Warhorse
-q(9713),	-- Glowcap Harvesting Enabling Flag
-q(9745),	-- <DEPRECATED>Suppressing the Flame
-q(9754),	--
-q(9755),	--
-q(9757),	-- Seek Huntress Kella Nightbow	 TBC:Seek Huntress Kella Nightbow	 WOTLK:Seek Huntress Kella Nightbow
-q(9767),	-- Know Your Enemy	 TBC:Know Your Enemy	 WOTLK:Know Your Enemy
-q(9768),	-- Coilfang Spellbooks	 TBC:Coilfang Spellbooks	 WOTLK:Coilfang Spellbooks
-q(9880),	-- Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin Cap	 TBC:Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin Cap	 WOTLK:Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin Cap
-q(9881),	-- Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin Cap	 TBC:Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin Cap	 WOTLK:Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin Cap
-q(9926),	-- FLAG Shadow Council/Warmaul Questline	 TBC:FLAG Shadow Council/Warmaul Questline	 WOTLK:FLAG Shadow Council/Warmaul Questline
-q(10080),	-- Forge Camps of the Legion	 TBC:Forge Camps of the Legion	 WOTLK:Forge Camps of the Legion
-q(10083),	-- The Legion's Plans	 TBC:The Legion's Plans	 WOTLK:The Legion's Plans
-q(10181),	-- Collector's Edition: -pn - E - FLAG
-q(10215),	--
-q(10217),	-- Fossil Fuel
-q(10219),	-- Walk the Dog
-q(10244),	-- R.T.F.R.C.M.	 TBC:R.T.F.R.C.M.	 WOTLK:R.T.F.R.C.M.
-q(10260),	-- Netherologist Coppernickels	 TBC:Netherologist Coppernickels	 WOTLK:Netherologist Coppernickels
-q(10292),	-- More Power!	 TBC:More Power!	 WOTLK:More Power!
-q(10364),	-- Caedmos	 TBC:Caedmos	 WOTLK:Caedmos
-q(10376),	-- Symbol of Hope	 WOTLK:Symbol of Hope
-q(10377),	-- Nothing to Fear	 TBC:Nothing to Fear	 WOTLK:Nothing to Fear
-q(10378),	-- Consume Magic	 WOTLK:Consume Magic
-q(10379),	-- Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness
-q(10383),	-- This is a Breadcrumb!	 TBC:This is a Breadcrumb!	 WOTLK:This is a Breadcrumb!
-q(10404),	-- Against the Legion	 TBC:Against the Legion	 WOTLK:Against the Legion
-q(10452),	-- DON'T USE [PH] Fel Orc 1	 TBC:DON'T USE [PH] Fel Orc 1	 WOTLK:DON'T USE [PH] Fel Orc 1
-q(10453),	-- DON'T USE [PH] Fel Orc bread	 TBC:DON'T USE [PH] Fel Orc bread	 WOTLK:DON'T USE [PH] Fel Orc bread
-q(10491),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(10529),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path
-q(10530),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path
-q(10532),	-- Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(10534),	-- Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
-q(10535),	-- Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(10539),	-- Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
-q(10591),	-- DESTROY THIS QUEST!
-q(10605),	-- Carendin Summons	 TBC:Carendin Summons	 WOTLK:Carendin Summons
-q(10631),	-- Back In Business	 TBC:Back In Business	 WOTLK:Back In Business
-q(10638),	-- NOT A QUEST	 TBC:NOT A QUEST	 WOTLK:NOT A QUEST
-q(10716),	-- Test Flight: Raven's Wood <needs reward>	 TBC:Test Flight: Raven's Wood <needs reward>	 WOTLK:Test Flight: Raven's Wood <needs reward>
-q(10743),	-- [DEPRECATED]<txt>Hero of the Mok'Nathal	 TBC:[DEPRECATED]<txt>Hero of the Mok'Nathal	 WOTLK:[DEPRECATED]<txt>Hero of the Mok'Nathal
-q(10746),	-- DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster	 TBC:DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster	 WOTLK:DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster
-q(10779),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path
-q(10787),	-- [DEPRECATED]<txt><nyi>The Dragons of Dragons' End	 TBC:[DEPRECATED]<txt><nyi>The Dragons of Dragons' End	 WOTLK:[DEPRECATED]<txt><nyi>The Dragons of Dragons' End
-q(10789),	-- Return to Carendin Halgar	 TBC:Return to Carendin Halgar	 WOTLK:Return to Carendin Halgar
-q(10790),	-- Return to Mordak Darkfist	 TBC:Return to Gan'rul Bloodeye	 WOTLK:Return to Gan'rul Bloodeye
-q(10844),	-- Forge Camp: Anger	 TBC:Forge Camp: Anger	 WOTLK:Forge Camp: Anger
-q(10931),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar
-q(10932),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar
-q(10933),	-- Return to Silvermoon	 TBC:Return to Silvermoon	 WOTLK:Return to Silvermoon
-q(10934),	-- Return to Silvermoon	 TBC:Return to Silvermoon	 WOTLK:Return to Silvermoon
-q(10999),	-- One Shot, One Kill	 TBC:One Shot, One Kill	 WOTLK:One Shot, One Kill
-q(11121),	-- DAILY TEST QUEST (RAID)	 TBC:DAILY TEST QUEST (RAID)	 WOTLK:DAILY TEST QUEST (RAID)
-q(11125),	-- [PH] New Hinterlands Quest	 TBC:[PH] New Hinterlands Quest	 WOTLK:[PH] New Hinterlands Quest
-q(11197),	-- ZZOLD Upper Deck Promo - Ghost Wolf Mount OLD
-q(11226),	-- Upper Deck Promo - Spectral Tiger Mount
-q(11335),	-- Call to Arms: Arathi Basin	 TBC:Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
-q(11336),	-- Call to Arms: Alterac Valley	 TBC:Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
-q(11337),	-- Call to Arms: Eye of the Storm	 TBC:Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm
-q(11338),	-- Call to Arms: Warsong Gulch	 TBC:Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(11339),	-- Call to Arms: Arathi Basin	 TBC:Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
-q(11340),	-- Call to Arms: Alterac Valley	 TBC:Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
-q(11341),	-- Call to Arms: Eye of the Storm	 TBC:Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm
-q(11342),	-- Call to Arms: Warsong Gulch	 TBC:Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(11353),	-- FLAG: Got the work shirt
-q(11425),	-- Test Quest - Craig	 TBC:Test Quest - Craig	 WOTLK:Test Quest - Craig
-q(11435),	-- Gathered Pumpkins NYI	 TBC:Gathered Pumpkins NYI	 WOTLK:Gathered Pumpkins NYI
-q(11437),	-- [PH] Beer Garden A	 TBC:[PH] Beer Garden A	 WOTLK:[PH] Beer Garden A
-q(11438),	-- [PH] Beer Garden B	 TBC:[PH] Beer Garden B	 WOTLK:[PH] Beer Garden B
-q(11444),	-- [PH] Beer Garden A	 WOTLK:[PH] Beer Garden A
-q(11445),	-- [PH] Beer Garden B	 WOTLK:[PH] Beer Garden B
-q(11577),	-- WoW Collector's Edition: - DEM - E - FLAG
-q(11588),	-- REUSE
-q(11589),	-- REUSE
-q(11874),	-- Upper Deck Promo - Rocket Mount
-q(11974),	-- [ph] Now, When I Grow Up...
-q(12186),	-- FLAG: Winner
-q(12187),	-- FLAG: Participant
-q(12600),	-- Upper Deck Promo - Bear Mount
-q(63448),	-- TBC:A Deluxe Delivery	 WOTLK:A Deluxe Delivery
-q(63450),	-- TBC:A Deluxe Delivery	 WOTLK:A Deluxe Delivery
-q(63546),	-- TBC:[NEVER USED]	 WOTLK:[NEVER USED]
-q(63547),	-- TBC:[NEVER USED]	 WOTLK:[NEVER USED]
-q(63767),	-- TBC:Imp in a Ball	 WOTLK:Imp in a Ball
-q(63768),	-- TBC:Imp in a Ball	 WOTLK:Imp in a Ball
-q(63770),	-- TBC:A Special Thanks	 WOTLK:A Special Thanks
-q(63865),	-- TBC:A Special Thanks	 WOTLK:A Special Thanks
-q(63866),	-- TBC:Claiming the Light	 WOTLK:Claiming the Light
+q(8337),	-- <UNUSED>	
+q(8339),	-- Royalty of the Council <NYI> <TXT> UNUSED	 TBC:Royalty of the Council <NYI> <TXT> UNUSED	 WOTLK:Royalty of the Council <NYI> <TXT> UNUSED	
+q(8340),	-- Twilight Signet Ring <NYI> <TXT>	
+q(8344),	-- Windows to the Source	 TBC:Windows to the Source	 WOTLK:Windows to the Source	
+q(9168),	-- Heart of Deatholme	 TBC:Heart of Deatholme	 WOTLK:Heart of Deatholme	
+q(9306),	-- <DEPRECATED>Speak with Vindicator Aldar	
+q(9307),	-- <DEPRECATED>Compassion	
+q(9308),	-- <DEPRECATED>Blood Elf Remains?	 TBC:<DEPRECATED>Blood Elf Remains?	 WOTLK:<DEPRECATED>Blood Elf Remains?	
+q(9316),	-- [TXT] Goblin Savages	 TBC:[TXT] Goblin Savages	 WOTLK:[TXT] Goblin Savages	
+q(9347),	-- Voidwalkers Gone Wild	 TBC:Voidwalkers Gone Wild	 WOTLK:Voidwalkers Gone Wild	
+q(9348),	-- Ravager Roundup	 TBC:Ravager Roundup	 WOTLK:Ravager Roundup	
+q(9350),	-- A Peon's Work is Never Done	 TBC:A Peon's Work is Never Done	 WOTLK:A Peon's Work is Never Done	
+q(9354),	-- Searching for New Materials	 TBC:Searching for New Materials	 WOTLK:Searching for New Materials	
+q(9379),	-- Fortifying the Felhunter	 TBC:Fortifying the Felhunter	 WOTLK:Fortifying the Felhunter	
+q(9384),	-- <NYI>Harnessing the Light	 TBC:<NYI>Harnessing the Light	 WOTLK:<NYI>Harnessing the Light	
+q(9432),	-- Travel to Astranaar	 TBC:Travel to Astranaar	 WOTLK:Travel to Astranaar	
+q(9445),	-- <NYI><TXT>Placeholder: A Worthy Offering	 TBC:<NYI><TXT>Placeholder: A Worthy Offering	 WOTLK:<NYI><TXT>Placeholder: A Worthy Offering	
+q(9460),	-- Combining Forces	 TBC:Combining Forces	 WOTLK:Combining Forces	
+q(9484),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast	
+q(9485),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast	
+q(9486),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast	
+q(9497),	-- Emblem of the Fel Horde	 TBC:Emblem of the Fel Horde	 WOTLK:Emblem of the Fel Horde	
+q(9507),	-- <DEPRECATED>From the Desk of Mogul Razdunk	
+q(9532),	-- Find Keltus Darkleaf	 TBC:Find Keltus Darkleaf	 WOTLK:Find Keltus Darkleaf	
+q(9546),	-- Fulfilling a Promise	
+q(9547),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air	
+q(9551),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air	
+q(9552),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air	
+q(9553),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air	
+q(9554),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air	
+q(9568),	-- On the Offensive	 TBC:On the Offensive	 WOTLK:On the Offensive	
+q(9577),	-- DAILY TEST QUEST (PVP)	 TBC:DAILY TEST QUEST (PVP)	 WOTLK:DAILY TEST QUEST (PVP)	
+q(9583),	-- Omar's Test Quest bk	 TBC:Omar's Test Quest	 WOTLK:Omar's Test Quest	
+q(9591),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast	
+q(9592),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast	
+q(9593),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast	
+q(9596),	-- <DEPRECATED>Control	
+q(9597),	-- <UNUSED>	
+q(9599),	-- <UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	
+q(9613),	-- Deprecated: Keanna's Will	 TBC:Deprecated: Keanna's Will	 WOTLK:Deprecated: Keanna's Will	
+q(9614),	-- Deprecated: Reforge a Short Blade	 TBC:Deprecated: Reforge a Short Blade	 WOTLK:Deprecated: Reforge a Short Blade	
+q(9615),	-- Deprecated: Reforge a Long Blade	 TBC:Deprecated: Reforge a Long Blade	 WOTLK:Deprecated: Reforge a Long Blade	
+q(9617),	-- Seek the Farstriders	 TBC:Seek the Farstriders	 WOTLK:Seek the Farstriders	
+q(9618),	-- Return the Reports	 TBC:Return the Reports	 WOTLK:Return the Reports	
+q(9650),	-- Deprecated: Magical Augmentation	 TBC:Deprecated: Magical Augmentation	 WOTLK:Deprecated: Magical Augmentation	
+q(9651),	-- Deprecated: Magical Augmentation	 TBC:Deprecated: Magical Augmentation	 WOTLK:Deprecated: Magical Augmentation	
+q(9652),	-- Deprecated: Physical Enhancement	 TBC:Deprecated: Physical Enhancement	 WOTLK:Deprecated: Physical Enhancement	
+q(9653),	-- Deprecated: Physical Enhancement	 TBC:Deprecated: Physical Enhancement	 WOTLK:Deprecated: Physical Enhancement	
+q(9654),	-- Deprecated: A Well Rounded Defense	 TBC:Deprecated: A Well Rounded Defense	 WOTLK:Deprecated: A Well Rounded Defense	
+q(9655),	-- Deprecated: Healing Amplification	 TBC:Deprecated: Healing Amplification	 WOTLK:Deprecated: Healing Amplification	
+q(9656),	-- Deprecated: Lethality First	 TBC:Deprecated: Lethality First	 WOTLK:Deprecated: Lethality First	
+q(9657),	-- Deprecated: Offensive Channeling	 TBC:Deprecated: Offensive Channeling	 WOTLK:Deprecated: Offensive Channeling	
+q(9658),	-- Deprecated: Offensive Channeling	 TBC:Deprecated: Offensive Channeling	 WOTLK:Deprecated: Offensive Channeling	
+q(9659),	-- Deprecated: Healing Amplification	 TBC:Deprecated: Healing Amplification	 WOTLK:Deprecated: Healing Amplification	
+q(9660),	-- Deprecated: Lethality First	 TBC:Deprecated: Lethality First	 WOTLK:Deprecated: Lethality First	
+q(9661),	-- Deprecated: A Well Rounded Defense	 TBC:Deprecated: A Well Rounded Defense	 WOTLK:Deprecated: A Well Rounded Defense	
+q(9662),	-- Deprecated: Keanna's Freedom	 TBC:Deprecated: Keanna's Freedom	 WOTLK:Deprecated: Keanna's Freedom	
+q(9679),	-- <NYI>Return to Knight-Lord Bloodvalor	
+q(9712),	-- The Thalassian Warhorse	 TBC:The Thalassian Warhorse	 WOTLK:The Thalassian Warhorse	
+q(9713),	-- Glowcap Harvesting Enabling Flag	
+q(9745),	-- <DEPRECATED>Suppressing the Flame	
+q(9754),	-- 	
+q(9755),	-- 	
+q(9757),	-- Seek Huntress Kella Nightbow	 TBC:Seek Huntress Kella Nightbow	 WOTLK:Seek Huntress Kella Nightbow	
+q(9767),	-- Know Your Enemy	 TBC:Know Your Enemy	 WOTLK:Know Your Enemy	
+q(9768),	-- Coilfang Spellbooks	 TBC:Coilfang Spellbooks	 WOTLK:Coilfang Spellbooks	
+q(9880),	-- Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin Cap	 TBC:Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin Cap	 WOTLK:Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin Cap	
+q(9881),	-- Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin Cap	 TBC:Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin Cap	 WOTLK:Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin Cap	
+q(9926),	-- FLAG Shadow Council/Warmaul Questline	 TBC:FLAG Shadow Council/Warmaul Questline	 WOTLK:FLAG Shadow Council/Warmaul Questline	
+q(10080),	-- Forge Camps of the Legion	 TBC:Forge Camps of the Legion	 WOTLK:Forge Camps of the Legion	
+q(10083),	-- The Legion's Plans	 TBC:The Legion's Plans	 WOTLK:The Legion's Plans	
+q(10181),	-- Collector's Edition: -pn - E - FLAG	
+q(10215),	-- 	
+q(10217),	-- Fossil Fuel	
+q(10219),	-- Walk the Dog	
+q(10244),	-- R.T.F.R.C.M.	 TBC:R.T.F.R.C.M.	 WOTLK:R.T.F.R.C.M.	
+q(10260),	-- Netherologist Coppernickels	 TBC:Netherologist Coppernickels	 WOTLK:Netherologist Coppernickels	
+q(10292),	-- More Power!	 TBC:More Power!	 WOTLK:More Power!	
+q(10364),	-- Caedmos	 TBC:Caedmos	 WOTLK:Caedmos	
+q(10376),	-- Symbol of Hope	 WOTLK:Symbol of Hope	
+q(10377),	-- Nothing to Fear	 TBC:Nothing to Fear	 WOTLK:Nothing to Fear	
+q(10378),	-- Consume Magic	 WOTLK:Consume Magic	
+q(10379),	-- Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	
+q(10383),	-- This is a Breadcrumb!	 TBC:This is a Breadcrumb!	 WOTLK:This is a Breadcrumb!	
+q(10404),	-- Against the Legion	 TBC:Against the Legion	 WOTLK:Against the Legion	
+q(10452),	-- DON'T USE [PH] Fel Orc 1	 TBC:DON'T USE [PH] Fel Orc 1	 WOTLK:DON'T USE [PH] Fel Orc 1	
+q(10453),	-- DON'T USE [PH] Fel Orc bread	 TBC:DON'T USE [PH] Fel Orc bread	 WOTLK:DON'T USE [PH] Fel Orc bread	
+q(10491),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air	
+q(10529),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path	
+q(10530),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path	
+q(10532),	-- Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines	
+q(10534),	-- Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	
+q(10535),	-- Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	
+q(10539),	-- Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	
+q(10591),	-- DESTROY THIS QUEST!	
+q(10605),	-- Carendin Summons	 TBC:Carendin Summons	 WOTLK:Carendin Summons	
+q(10631),	-- Back In Business	 TBC:Back In Business	 WOTLK:Back In Business	
+q(10638),	-- NOT A QUEST	 TBC:NOT A QUEST	 WOTLK:NOT A QUEST	
+q(10716),	-- Test Flight: Raven's Wood <needs reward>	 TBC:Test Flight: Raven's Wood <needs reward>	 WOTLK:Test Flight: Raven's Wood <needs reward>	
+q(10743),	-- [DEPRECATED]<txt>Hero of the Mok'Nathal	 TBC:[DEPRECATED]<txt>Hero of the Mok'Nathal	 WOTLK:[DEPRECATED]<txt>Hero of the Mok'Nathal	
+q(10746),	-- DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster	 TBC:DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster	 WOTLK:DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster	
+q(10779),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path	
+q(10787),	-- [DEPRECATED]<txt><nyi>The Dragons of Dragons' End	 TBC:[DEPRECATED]<txt><nyi>The Dragons of Dragons' End	 WOTLK:[DEPRECATED]<txt><nyi>The Dragons of Dragons' End	
+q(10789),	-- Return to Carendin Halgar	 TBC:Return to Carendin Halgar	 WOTLK:Return to Carendin Halgar	
+q(10790),	-- Return to Mordak Darkfist	 TBC:Return to Gan'rul Bloodeye	 WOTLK:Return to Gan'rul Bloodeye	
+q(10844),	-- Forge Camp: Anger	 TBC:Forge Camp: Anger	 WOTLK:Forge Camp: Anger	
+q(10931),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar	
+q(10932),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar	
+q(10933),	-- Return to Silvermoon	 TBC:Return to Silvermoon	 WOTLK:Return to Silvermoon	
+q(10934),	-- Return to Silvermoon	 TBC:Return to Silvermoon	 WOTLK:Return to Silvermoon	
+q(10999),	-- One Shot, One Kill	 TBC:One Shot, One Kill	 WOTLK:One Shot, One Kill	
+q(11121),	-- DAILY TEST QUEST (RAID)	 TBC:DAILY TEST QUEST (RAID)	 WOTLK:DAILY TEST QUEST (RAID)	
+q(11125),	-- [PH] New Hinterlands Quest	 TBC:[PH] New Hinterlands Quest	 WOTLK:[PH] New Hinterlands Quest	
+q(11197),	-- ZZOLD Upper Deck Promo - Ghost Wolf Mount OLD	
+q(11226),	-- Upper Deck Promo - Spectral Tiger Mount	
+q(11335),	-- Call to Arms: Arathi Basin	 TBC:Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	
+q(11336),	-- Call to Arms: Alterac Valley	 TBC:Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	
+q(11337),	-- Call to Arms: Eye of the Storm	 TBC:Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm	
+q(11338),	-- Call to Arms: Warsong Gulch	 TBC:Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	
+q(11339),	-- Call to Arms: Arathi Basin	 TBC:Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	
+q(11340),	-- Call to Arms: Alterac Valley	 TBC:Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	
+q(11341),	-- Call to Arms: Eye of the Storm	 TBC:Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm	
+q(11342),	-- Call to Arms: Warsong Gulch	 TBC:Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	
+q(11353),	-- FLAG: Got the work shirt	
+q(11425),	-- Test Quest - Craig	 TBC:Test Quest - Craig	 WOTLK:Test Quest - Craig	
+q(11435),	-- Gathered Pumpkins NYI	 TBC:Gathered Pumpkins NYI	 WOTLK:Gathered Pumpkins NYI	
+q(11437),	-- [PH] Beer Garden A	 TBC:[PH] Beer Garden A	 WOTLK:[PH] Beer Garden A	
+q(11438),	-- [PH] Beer Garden B	 TBC:[PH] Beer Garden B	 WOTLK:[PH] Beer Garden B	
+q(11444),	-- [PH] Beer Garden A	 WOTLK:[PH] Beer Garden A	
+q(11445),	-- [PH] Beer Garden B	 WOTLK:[PH] Beer Garden B	
+q(11577),	-- WoW Collector's Edition: - DEM - E - FLAG	
+q(11588),	-- REUSE	
+q(11589),	-- REUSE	
+q(11874),	-- Upper Deck Promo - Rocket Mount	
+q(11974),	-- [ph] Now, When I Grow Up...	
+q(12186),	-- FLAG: Winner	
+q(12187),	-- FLAG: Participant	
+q(12600),	-- Upper Deck Promo - Bear Mount	
+q(63448),	-- TBC:A Deluxe Delivery	 WOTLK:A Deluxe Delivery	
+q(63450),	-- TBC:A Deluxe Delivery	 WOTLK:A Deluxe Delivery	
+q(63546),	-- TBC:[NEVER USED]	 WOTLK:[NEVER USED]	
+q(63547),	-- TBC:[NEVER USED]	 WOTLK:[NEVER USED]	
+q(63767),	-- TBC:Imp in a Ball	 WOTLK:Imp in a Ball	
+q(63768),	-- TBC:Imp in a Ball	 WOTLK:Imp in a Ball	
+q(63770),	-- TBC:A Special Thanks	 WOTLK:A Special Thanks	
+q(63865),	-- TBC:A Special Thanks	 WOTLK:A Special Thanks	
+q(63866),	-- TBC:Claiming the Light	 WOTLK:Claiming the Light	
 2.5.1.38119
-q(63978),	-- TBC:Cloak and Daggers	 WOTLK:Cloak and Daggers
+q(63978),	-- TBC:Cloak and Daggers	 WOTLK:Cloak and Daggers	
 2.5.1.38225
-q(64028),	-- TBC:A New Beginning	 WOTLK:A New Beginning
-q(64031),	-- TBC:Tools for Survival	 WOTLK:Tools for Survival
+q(64028),	-- TBC:A New Beginning	 WOTLK:A New Beginning	
+q(64031),	-- TBC:Tools for Survival	 WOTLK:Tools for Survival	
 q(64032),	--
 q(64033),	--
-q(64034),	-- TBC:Combat Training	 WOTLK:Combat Training
-q(64035),	-- TBC:Talented	 WOTLK:Talented
+q(64034),	-- TBC:Combat Training	 WOTLK:Combat Training	
+q(64035),	-- TBC:Talented	 WOTLK:Talented	
 q(64036),	--
-q(64037),	-- TBC:Eastern Plaguelands	 WOTLK:Eastern Plaguelands
-q(64038),	-- TBC:The Dark Portal	 WOTLK:The Dark Portal
-q(64046),	-- TBC:A New Beginning	 WOTLK:A New Beginning
-q(64047),	-- TBC:A New Beginning	 WOTLK:A New Beginning
-q(64048),	-- TBC:Tools for Survival	 WOTLK:Tools for Survival
-q(64049),	-- TBC:Tools for Survival	 WOTLK:Tools for Survival
-q(64050),	-- TBC:Combat Training	 WOTLK:Combat Training
-q(64051),	-- TBC:Combat Training	 WOTLK:Combat Training
-q(64052),	-- TBC:Talented	 WOTLK:Talented
-q(64053),	-- TBC:Talented	 WOTLK:Talented
-q(64054),	-- TBC:Unused	 WOTLK:Unused
-q(64062),	-- TBC:Unused	 WOTLK:Unused
-q(64063),	-- TBC:The Dark Portal	 WOTLK:The Dark Portal
-q(64064),	-- TBC:Eastern Plaguelands	 WOTLK:Eastern Plaguelands
+q(64037),	-- TBC:Eastern Plaguelands	 WOTLK:Eastern Plaguelands	
+q(64038),	-- TBC:The Dark Portal	 WOTLK:The Dark Portal	
+q(64046),	-- TBC:A New Beginning	 WOTLK:A New Beginning	
+q(64047),	-- TBC:A New Beginning	 WOTLK:A New Beginning	
+q(64048),	-- TBC:Tools for Survival	 WOTLK:Tools for Survival	
+q(64049),	-- TBC:Tools for Survival	 WOTLK:Tools for Survival	
+q(64050),	-- TBC:Combat Training	 WOTLK:Combat Training	
+q(64051),	-- TBC:Combat Training	 WOTLK:Combat Training	
+q(64052),	-- TBC:Talented	 WOTLK:Talented	
+q(64053),	-- TBC:Talented	 WOTLK:Talented	
+q(64054),	-- TBC:Unused	 WOTLK:Unused	
+q(64062),	-- TBC:Unused	 WOTLK:Unused	
+q(64063),	-- TBC:The Dark Portal	 WOTLK:The Dark Portal	
+q(64064),	-- TBC:Eastern Plaguelands	 WOTLK:Eastern Plaguelands	
 q(64071),	--
 2.5.1.38285
 q(64095),	--
-q(64128),	-- TBC:Eastern Plaguelands	 WOTLK:Eastern Plaguelands
-q(64139),	-- TBC:A Summons from Lady Liadrin	 WOTLK:A Summons from Lady Liadrin
-q(64140),	-- TBC:The Master's Path	 WOTLK:The Master's Path
-q(64141),	-- TBC:A Gesture of Commitment	 WOTLK:A Gesture of Commitment
-q(64142),	-- TBC:A Demonstration of Loyalty	 WOTLK:A Demonstration of Loyalty
-q(64143),	-- TBC:True Masters of the Light	 WOTLK:True Masters of the Light
-q(64144),	-- TBC:True Masters of the Light	 WOTLK:True Masters of the Light
+q(64128),	-- TBC:Eastern Plaguelands	 WOTLK:Eastern Plaguelands	
+q(64139),	-- TBC:A Summons from Lady Liadrin	 WOTLK:A Summons from Lady Liadrin	
+q(64140),	-- TBC:The Master's Path	 WOTLK:The Master's Path	
+q(64141),	-- TBC:A Gesture of Commitment	 WOTLK:A Gesture of Commitment	
+q(64142),	-- TBC:A Demonstration of Loyalty	 WOTLK:A Demonstration of Loyalty	
+q(64143),	-- TBC:True Masters of the Light	 WOTLK:True Masters of the Light	
+q(64144),	-- TBC:True Masters of the Light	 WOTLK:True Masters of the Light	
 2.5.1.38453
-q(64217),	-- TBC:The Dark Portal	 WOTLK:The Dark Portal
+q(64217),	-- TBC:The Dark Portal	 WOTLK:The Dark Portal	
 2.5.1.38502
 q(64275),	--
 2.5.1.38548
-q(64319),	-- TBC:A Study in Power	 WOTLK:A Study in Power
+q(64319),	-- TBC:A Study in Power	 WOTLK:A Study in Power	
 2.5.1.39399
-q(9298),	-- reuse	 TBC:reuse	 WOTLK:reuse
-q(10549),	-- REUSE
+q(9298),	-- reuse	 TBC:reuse	 WOTLK:reuse	
+q(10549),	-- REUSE	
 2.5.3.41402
-q(65284),	-- TBC:Goblin Gumbo Kettle	 WOTLK:Goblin Gumbo Kettle
-q(65285),	-- TBC:Goblin Gumbo Kettle	 WOTLK:Goblin Gumbo Kettle
-q(65561),	-- TBC:Tabard of Flame	 WOTLK:Tabard of Flame
-q(65562),	-- TBC:Tabard of Flame	 WOTLK:Tabard of Flame
+q(65284),	-- TBC:Goblin Gumbo Kettle	 WOTLK:Goblin Gumbo Kettle	
+q(65285),	-- TBC:Goblin Gumbo Kettle	 WOTLK:Goblin Gumbo Kettle	
+q(65561),	-- TBC:Tabard of Flame	 WOTLK:Tabard of Flame	
+q(65562),	-- TBC:Tabard of Flame	 WOTLK:Tabard of Flame	
 3.4.0.43659
-q(11189),	-- One Last Time	 WOTLK:One Last Time
-q(11402),	-- Clayton's Quest: Extreme!!	 WOTLK:Clayton's Quest: Extreme!
-q(11461),	-- DEPRECATED	 WOTLK:DEPRECATED
-q(11462),	-- Handsome Terry	 WOTLK:Handsome Terry
-q(11463),	-- Pirates of the North Seas	 WOTLK:Pirates of the North Seas
-q(11578),	-- The "Chow" Quest (123)aa COPY	 WOTLK:The "Chow" Quest (123)aa COPY
-q(11579),	-- The "Chow" Quest (123)aa COPY	 WOTLK:The "Chow" Quest (123)aa COPY
-q(11934),	-- Unlocking Your Potential [PH]
-q(11992),	-- Navigation Charts (Deprecated)	 WOTLK:Navigation Charts (Deprecated)
-q(11994),	-- Juno's Flag Tester
-q(12001),	-- zzOLDHunting Tarot: Lesser Beasts	 WOTLK:zzOLDHunting Tarot: Lesser Beasts
-q(12015),	-- Test Quest for Craig	 WOTLK:Test Quest for Craig
-q(12018),	-- Sweet Revenge	 WOTLK:Sweet Revenge
-q(12021),	-- A Letter Home	 WOTLK:A Letter Home
-q(12023),	-- Sweeter Revenge
-q(12024),	-- Recording the Fallen	 WOTLK:Recording the Fallen
-q(12025),	-- A Scarlet Among Us	 WOTLK:A Scarlet Among Us
-q(12087),	-- A Little Help Here? DEPRECATED	 WOTLK:A Little Help Here? DEPRECATED
-q(12108),	-- DEPRECATED	 WOTLK:DEPRECATED
-q(12156),	-- DEPRECAED	 WOTLK:DEPRECAED
-q(12162),	-- Solstice Village	 WOTLK:Solstice Village
-q(12163),	-- The Evil Below	 WOTLK:The Evil Below
-q(12313),	-- UNUSED Save Brewfest!	 WOTLK:UNUSED Save Brewfest!
-q(12426),	-- DEPRECATED	 WOTLK:DEPRECATED
-q(12445),	--
-q(12493),	-- PvP Test	 WOTLK:PvP Test
-q(12586),	-- In Search of Bigger Game	 WOTLK:In Search of Bigger Game
-q(12601),	-- The Alchemist's Apprentice	 WOTLK:The Alchemist's Apprentice
-q(12602),	-- The Alchemist's Apprentice	 WOTLK:The Alchemist's Apprentice
-q(12625),	-- Dominion Over Acherus	 WOTLK:Dominion Over Acherus
-q(12626),	-- Company of the Damned
-q(12682),	-- Uncharted Territory (DEPRECATED)	 WOTLK:Uncharted Territory (DEPRECATED)
-q(12731),	--
-q(12764),	-- The Secret to Kungaloosh
-q(12765),	-- Kungaloosh
-q(12780),	-- DEPRICATED>>Enemy of Our Enemy	 WOTLK:DEPRICATED>>Enemy of Our Enemy
-q(12825),	-- Expressions of Gratitude	 WOTLK:Expressions of Gratitude
-q(12834),	-- Not Rain, Nor Snow, Nor Exploding Plane	 WOTLK:Not Rain, Nor Snow, Nor Exploding Plane
-q(12835),	-- All Grown Up	 WOTLK:All Grown Up
-q(12837),	-- Tore's Got the Goods	 WOTLK:Tore's Got the Goods
-q(12881),	-- The Brothers Bronzebeard	 WOTLK:The Brothers Bronzebeard
-q(13123),	-- WotLK Collector's Edition: - DEM - E - FLAG
-q(13173),	-- Amidst the Confusion	 WOTLK:Amidst the Confusion
-q(13210),	-- Blizzard Account: - DEM - E - FLAG
-q(13299),	-- ZZOLDWisp Cloak	 WOTLK:ZZOLDWisp Cloak
-q(13303),	-- The Panchurian Candidate
-q(13317),	-- ----	 WOTLK:----
-q(13378),	-- Chief Engineer Copperclaw	 WOTLK:Chief Engineer Copperclaw
-q(13404),	-- Static Shock Troops: the Bombardment	 WOTLK:Static Shock Troops: the Bombardment
-q(13405),	-- Call to Arms: Strand of the Ancients	 WOTLK:Call to Arms: Strand of the Ancients
-q(13406),	-- Riding the Wavelength: The Bombardment	 WOTLK:Riding the Wavelength: The Bombardment
-q(13407),	-- Call to Arms: Strand of the Ancients	 WOTLK:Call to Arms: Strand of the Ancients
-q(13427),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
-q(13428),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
-q(13476),	-- For Great Honor	 WOTLK:For Great Honor
-q(13478),	-- Concerted Efforts	 WOTLK:Concerted Efforts
-q(13649),	-- Justin's Fun Test	 WOTLK:Justin's Fun Test
-q(13914),	-- Searing Roc Feathers	 WOTLK:Searing Roc Feathers
-q(13915),	-- Hungry, Hungry Hatchling	 WOTLK:Hungry, Hungry Hatchling
-q(13916),	-- Poached, Scrambled, Or Raw?	 WOTLK:Poached, Scrambled, Or Raw?
-q(13917),	-- Gorishi Grub	 WOTLK:Gorishi Grub
-q(13990),	-- Upper Deck Promo - Chicken Mount
-q(13997),	-- If You're Reading This While I'm In Combat...	 WOTLK:If You're Reading This While I'm In Combat...
-q(14032),	-- Kobold Camp Cleanup [Programming Test]	 WOTLK:Kobold Camp Cleanup
-q(14163),	-- Call to Arms: Isle of Conquest	 WOTLK:Call to Arms: Isle of Conquest
-q(14164),	-- Call to Arms: Isle of Conquest	 WOTLK:Call to Arms: Isle of Conquest
-q(14178),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
-q(14179),	-- Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm
-q(14180),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(14181),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
-q(14182),	-- Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm
-q(14183),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(14185),	-- FLAG: Riding Trainer Advertisement (40)
-q(14186),	-- FLAG: Riding Trainer Advertisement (60)
-q(14187),	-- FLAG: Riding Trainer Advertisement (70)
-q(14200),	-- Kickoff Mail Marker
-q(14349),	-- The Call to Command	 WOTLK:The Call to Command
-q(14350),	-- The Crimson Courier	 WOTLK:The Crimson Courier
-q(14351),	-- [DEPRECATED] Battle of Hillsbrad	 WOTLK:Battle of Hillsbrad
-q(14409),	-- A Cautious Return
-q(14418),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14419),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14420),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14421),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14441),	-- Garrosh's Autograph
-q(24216),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(24217),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(24218),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(24219),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(24220),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
-q(24221),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
-q(24222),	-- Call to Arms: Eye of the Storm DEPRECATED	 WOTLK:Call to Arms: Eye of the Storm DEPRECATED
-q(24223),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
-q(24224),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(24225),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(24226),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
-q(24227),	-- DEPRECATED
-q(24426),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
-q(24427),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
-q(24508),	-- Temp Quest Record
-q(24509),	-- Temp Quest Record
-q(24746),	-- REUSE	 WOTLK:REUSE
-q(24869),	-- Deprogramming	 WOTLK:Deprogramming
-q(24870),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24871),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24872),	-- Respite for a Tormented Soul	 WOTLK:Respite for a Tormented Soul
-q(24873),	-- Residue Rendezvous	 WOTLK:Residue Rendezvous
-q(24874),	-- Blood Quickening	 WOTLK:Blood Quickening
-q(24875),	-- Deprogramming	 WOTLK:Deprogramming
-q(24876),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24877),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24878),	-- Residue Rendezvous	 WOTLK:Residue Rendezvous
-q(24879),	-- Blood Quickening	 WOTLK:Blood Quickening
-q(24880),	-- Respite for a Tormented Soul	 WOTLK:Respite for a Tormented Soul
-q(25238),	-- Strength Ring Flag
+q(11189),	-- One Last Time	 WOTLK:One Last Time	
+q(11402),	-- Clayton's Quest: Extreme!!	 WOTLK:Clayton's Quest: Extreme!	
+q(11461),	-- DEPRECATED	 WOTLK:DEPRECATED	
+q(11462),	-- Handsome Terry	 WOTLK:Handsome Terry	
+q(11463),	-- Pirates of the North Seas	 WOTLK:Pirates of the North Seas	
+q(11578),	-- The "Chow" Quest (123)aa COPY	 WOTLK:The "Chow" Quest (123)aa COPY	
+q(11579),	-- The "Chow" Quest (123)aa COPY	 WOTLK:The "Chow" Quest (123)aa COPY	
+q(11934),	-- Unlocking Your Potential [PH]	
+q(11992),	-- Navigation Charts (Deprecated)	 WOTLK:Navigation Charts (Deprecated)	
+q(11994),	-- Juno's Flag Tester	
+q(12001),	-- zzOLDHunting Tarot: Lesser Beasts	 WOTLK:zzOLDHunting Tarot: Lesser Beasts	
+q(12015),	-- Test Quest for Craig	 WOTLK:Test Quest for Craig	
+q(12018),	-- Sweet Revenge	 WOTLK:Sweet Revenge	
+q(12021),	-- A Letter Home	 WOTLK:A Letter Home	
+q(12023),	-- Sweeter Revenge	
+q(12024),	-- Recording the Fallen	 WOTLK:Recording the Fallen	
+q(12025),	-- A Scarlet Among Us	 WOTLK:A Scarlet Among Us	
+q(12087),	-- A Little Help Here? DEPRECATED	 WOTLK:A Little Help Here? DEPRECATED	
+q(12108),	-- DEPRECATED	 WOTLK:DEPRECATED	
+q(12156),	-- DEPRECAED	 WOTLK:DEPRECAED	
+q(12162),	-- Solstice Village	 WOTLK:Solstice Village	
+q(12163),	-- The Evil Below	 WOTLK:The Evil Below	
+q(12313),	-- UNUSED Save Brewfest!	 WOTLK:UNUSED Save Brewfest!	
+q(12426),	-- DEPRECATED	 WOTLK:DEPRECATED	
+q(12445),	-- 	
+q(12493),	-- PvP Test	 WOTLK:PvP Test	
+q(12586),	-- In Search of Bigger Game	 WOTLK:In Search of Bigger Game	
+q(12601),	-- The Alchemist's Apprentice	 WOTLK:The Alchemist's Apprentice	
+q(12602),	-- The Alchemist's Apprentice	 WOTLK:The Alchemist's Apprentice	
+q(12625),	-- Dominion Over Acherus	 WOTLK:Dominion Over Acherus	
+q(12626),	-- Company of the Damned	
+q(12682),	-- Uncharted Territory (DEPRECATED)	 WOTLK:Uncharted Territory (DEPRECATED)	
+q(12731),	-- 	
+q(12764),	-- The Secret to Kungaloosh	
+q(12765),	-- Kungaloosh	
+q(12780),	-- DEPRICATED>>Enemy of Our Enemy	 WOTLK:DEPRICATED>>Enemy of Our Enemy	
+q(12825),	-- Expressions of Gratitude	 WOTLK:Expressions of Gratitude	
+q(12834),	-- Not Rain, Nor Snow, Nor Exploding Plane	 WOTLK:Not Rain, Nor Snow, Nor Exploding Plane	
+q(12835),	-- All Grown Up	 WOTLK:All Grown Up	
+q(12837),	-- Tore's Got the Goods	 WOTLK:Tore's Got the Goods	
+q(12881),	-- The Brothers Bronzebeard	 WOTLK:The Brothers Bronzebeard	
+q(13123),	-- WotLK Collector's Edition: - DEM - E - FLAG	
+q(13173),	-- Amidst the Confusion	 WOTLK:Amidst the Confusion	
+q(13210),	-- Blizzard Account: - DEM - E - FLAG	
+q(13299),	-- ZZOLDWisp Cloak	 WOTLK:ZZOLDWisp Cloak	
+q(13303),	-- The Panchurian Candidate	
+q(13317),	-- ----	 WOTLK:----	
+q(13378),	-- Chief Engineer Copperclaw	 WOTLK:Chief Engineer Copperclaw	
+q(13404),	-- Static Shock Troops: the Bombardment	 WOTLK:Static Shock Troops: the Bombardment	
+q(13405),	-- Call to Arms: Strand of the Ancients	 WOTLK:Call to Arms: Strand of the Ancients	
+q(13406),	-- Riding the Wavelength: The Bombardment	 WOTLK:Riding the Wavelength: The Bombardment	
+q(13407),	-- Call to Arms: Strand of the Ancients	 WOTLK:Call to Arms: Strand of the Ancients	
+q(13427),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	
+q(13428),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	
+q(13476),	-- For Great Honor	 WOTLK:For Great Honor	
+q(13478),	-- Concerted Efforts	 WOTLK:Concerted Efforts	
+q(13649),	-- Justin's Fun Test	 WOTLK:Justin's Fun Test	
+q(13914),	-- Searing Roc Feathers	 WOTLK:Searing Roc Feathers	
+q(13915),	-- Hungry, Hungry Hatchling	 WOTLK:Hungry, Hungry Hatchling	
+q(13916),	-- Poached, Scrambled, Or Raw?	 WOTLK:Poached, Scrambled, Or Raw?	
+q(13917),	-- Gorishi Grub	 WOTLK:Gorishi Grub	
+q(13990),	-- Upper Deck Promo - Chicken Mount	
+q(13997),	-- If You're Reading This While I'm In Combat...	 WOTLK:If You're Reading This While I'm In Combat...	
+q(14032),	-- Kobold Camp Cleanup [Programming Test]	 WOTLK:Kobold Camp Cleanup	
+q(14163),	-- Call to Arms: Isle of Conquest	 WOTLK:Call to Arms: Isle of Conquest	
+q(14164),	-- Call to Arms: Isle of Conquest	 WOTLK:Call to Arms: Isle of Conquest	
+q(14178),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	
+q(14179),	-- Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm	
+q(14180),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	
+q(14181),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	
+q(14182),	-- Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm	
+q(14183),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	
+q(14185),	-- FLAG: Riding Trainer Advertisement (40)	
+q(14186),	-- FLAG: Riding Trainer Advertisement (60)	
+q(14187),	-- FLAG: Riding Trainer Advertisement (70)	
+q(14200),	-- Kickoff Mail Marker	
+q(14349),	-- The Call to Command	 WOTLK:The Call to Command	
+q(14350),	-- The Crimson Courier	 WOTLK:The Crimson Courier	
+q(14351),	-- [DEPRECATED] Battle of Hillsbrad	 WOTLK:Battle of Hillsbrad	
+q(14409),	-- A Cautious Return	
+q(14418),	-- The Deathstalkers	 WOTLK:The Deathstalkers	
+q(14419),	-- The Deathstalkers	 WOTLK:The Deathstalkers	
+q(14420),	-- The Deathstalkers	 WOTLK:The Deathstalkers	
+q(14421),	-- The Deathstalkers	 WOTLK:The Deathstalkers	
+q(14441),	-- Garrosh's Autograph	
+q(24216),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	
+q(24217),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	
+q(24218),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	
+q(24219),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	
+q(24220),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	
+q(24221),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	
+q(24222),	-- Call to Arms: Eye of the Storm DEPRECATED	 WOTLK:Call to Arms: Eye of the Storm DEPRECATED	
+q(24223),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	
+q(24224),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	
+q(24225),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	
+q(24226),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	
+q(24227),	-- DEPRECATED	
+q(24426),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	
+q(24427),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	
+q(24508),	-- Temp Quest Record	
+q(24509),	-- Temp Quest Record	
+q(24746),	-- REUSE	 WOTLK:REUSE	
+q(24869),	-- Deprogramming	 WOTLK:Deprogramming	
+q(24870),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts	
+q(24871),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts	
+q(24872),	-- Respite for a Tormented Soul	 WOTLK:Respite for a Tormented Soul	
+q(24873),	-- Residue Rendezvous	 WOTLK:Residue Rendezvous	
+q(24874),	-- Blood Quickening	 WOTLK:Blood Quickening	
+q(24875),	-- Deprogramming	 WOTLK:Deprogramming	
+q(24876),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts	
+q(24877),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts	
+q(24878),	-- Residue Rendezvous	 WOTLK:Residue Rendezvous	
+q(24879),	-- Blood Quickening	 WOTLK:Blood Quickening	
+q(24880),	-- Respite for a Tormented Soul	 WOTLK:Respite for a Tormented Soul	
+q(25238),	-- Strength Ring Flag	
 3.4.0.44729
 q(70349),	--
 3.4.0.46158
 q(66990),	--
 q(66991),	--
-q(70354),	-- WOTLK:Northrend Expedition Supplies
-q(70356),	-- WOTLK:Northrend Expedition Supplies
-q(70395),	-- WOTLK:A New Beginning
-q(70396),	-- WOTLK:A New Beginning
-q(70397),	-- WOTLK:Tools for Survival
-q(70398),	-- WOTLK:Combat Training
-q(70401),	-- WOTLK:Talented
-q(70411),	-- WOTLK:To the Dockmaster
-q(70448),	-- WOTLK:Elite Northrend Expedition Supplies
-q(70449),	-- WOTLK:Elite Northrend Expedition Supplies
+q(70354),	-- WOTLK:Northrend Expedition Supplies	
+q(70356),	-- WOTLK:Northrend Expedition Supplies	
+q(70395),	-- WOTLK:A New Beginning	
+q(70396),	-- WOTLK:A New Beginning	
+q(70397),	-- WOTLK:Tools for Survival	
+q(70398),	-- WOTLK:Combat Training	
+q(70401),	-- WOTLK:Talented	
+q(70411),	-- WOTLK:To the Dockmaster	
+q(70448),	-- WOTLK:Elite Northrend Expedition Supplies	
+q(70449),	-- WOTLK:Elite Northrend Expedition Supplies	
 q(70663),	--
 q(70664),	--
 q(70665),	--
@@ -518,26 +517,26 @@ q(70693),	--
 q(70694),	--
 q(70695),	--
 q(70696),	--
-q(70734),	-- WOTLK:Tools for Survival
-q(70735),	-- WOTLK:Combat Training
-q(70736),	-- WOTLK:Talented
-q(70737),	-- WOTLK:To the Zeppelin Master
+q(70734),	-- WOTLK:Tools for Survival	
+q(70735),	-- WOTLK:Combat Training	
+q(70736),	-- WOTLK:Talented	
+q(70737),	-- WOTLK:To the Zeppelin Master	
 q(70760),	--
-q(70761),	-- WOTLK:Tools for Survival
-q(70762),	-- WOTLK:A New Beginning
-q(70764),	-- WOTLK:Combat Training
-q(70765),	-- WOTLK:Talented
+q(70761),	-- WOTLK:Tools for Survival	
+q(70762),	-- WOTLK:A New Beginning	
+q(70764),	-- WOTLK:Combat Training	
+q(70765),	-- WOTLK:Talented	
 q(70855),	--
 q(70860),	--
 q(70861),	--
-q(70862),	-- WOTLK:Hoplet
-q(70863),	-- WOTLK:Hoplet
-q(70865),	-- WOTLK:To Shattrath City
-q(70868),	-- WOTLK:Talented
-q(70869),	-- WOTLK:Talented
-q(70870),	-- WOTLK:Talented
-q(70998),	-- WOTLK:Frosty
-q(70999),	-- WOTLK:Frosty
+q(70862),	-- WOTLK:Hoplet	
+q(70863),	-- WOTLK:Hoplet	
+q(70865),	-- WOTLK:To Shattrath City	
+q(70868),	-- WOTLK:Talented	
+q(70869),	-- WOTLK:Talented	
+q(70870),	-- WOTLK:Talented	
+q(70998),	-- WOTLK:Frosty	
+q(70999),	-- WOTLK:Frosty	
 q(71098),	--
 q(71099),	--
 q(71100),	--
@@ -577,298 +576,298 @@ q(71133),	--
 q(71134),	--
 q(72433),	--
 3.4.1.47966
-q(72522),	-- WOTLK:Festering Emerald Drake
-q(72523),	-- WOTLK:Festering Emerald Drake
+q(72522),	-- WOTLK:Festering Emerald Drake	
+q(72523),	-- WOTLK:Festering Emerald Drake	
 3.4.2.49311
 q(76175),	--
 5.0.3.15890
-q(13574),	-- Peering Into the Vortex (DEPRECATED)
-q(13608),	-- Along for the Ride
-q(13637),	-- Ram Delivery
-q(13802),	-- The Goblin with Two Brains
-q(13804),	-- To Catch a Fish-Thing
-q(13894),	-- Marking the Kills (DEPRECATED)
-q(13939),	-- Fel Moss Corruption
-q(13941),	-- Vile Touch
-q(13972),	-- Among Humans Again
-q(13978),	-- Lurkers in the Mist
-q(13984),	-- Tracking Our Every Move
-q(13993),	-- You're the Bomb!
-q(13994),	-- (DEPRECATED)
-q(13996),	-- Can You Get This Quest While I'm In Combat?
-q(14000),	-- Hunt or Be Hunted
-q(14002),	-- A Job for a Bloodhound
-q(14007),	-- Steady Shot
-q(14008),	-- Frost Nova
-q(14009),	-- Learning the Word
-q(14010),	-- Eviscerate
-q(14011),	-- Primal Strike
-q(14012),	-- Corruption
-q(14013),	-- Charge
-q(14015),	-- Incomplete Cartography
-q(14020),	-- The Curse
-q(14025),	-- To the Frontlines
-q(14026),	-- Off With a Bang
-q(14027),	-- Face to Face
-q(14029),	-- Breaking the Siege
-q(14097),	-- Get That Merchant Out of Here!
-q(14133),	-- The Way to a Mage's Heart
-q(14137),	-- Class Training (Tracking Event)
-q(14156),	-- Man on the Inside
-q(14298),	-- Kill Cultists/Dragonflight
-q(14315),	-- Liam's Stupor
-q(14317),	-- Tremors
-q(14415),	-- Apparitions in the Orchard
-q(14425),	-- The First Quest
-q(14426),	-- The Second Quest
-q(14427),	-- Item Quest
-q(14450),	-- Random Drop Test Progressive
-q(14451),	-- Random Drop Flat Rate
-q(24460),	-- Out of Order
-q(24462),	-- Operation Item Get
-q(24494),	-- Empowered Rune
-q(24526),	-- Filling Up the Spellbook
-q(24527),	-- Your Path Begins Here
-q(24530),	-- Oh, A Hunter's Life For Me
-q(24531),	-- Getting Battle-Ready
-q(24544),	-- Paul Test Quest
-q(24640),	-- The Arts of a Warrior
-q(24696),	-- Un'Goro: PRK - E - Shizzle's Flyer 02 - Testing It Out
-q(24738),	-- Williden's Journal
-q(24739),	-- Expedition Salvation
-q(24760),	-- The Arts of a Shaman
-q(24766),	-- The Arts of a Druid
-q(24772),	-- The Arts of a Rogue
-q(24778),	-- The Arts of a Hunter
-q(24784),	-- Learnin' tha Word
-q(24860),	-- Profitable Preservation
-q(24900),	-- Blueleaf Tubers
-q(24935),	-- Body And Soul
-q(24962),	-- Trail-Worn Scroll
-q(24964),	-- The Thrill of the Hunt
-q(24967),	-- Stab!
-q(24968),	-- Dark Deeds
-q(24969),	-- Charging into Battle
-q(24984),	-- The Prodigal Lich
-q(24985),	-- Proving Allegiance
-q(24986),	-- The Prodigal Lich Returns
-q(24987),	-- Dark Lady, Watch Over Us
-q(25016),	-- FLAG - Training Complete
-q(25076),	-- Taming the Beast
-q(25077),	-- Taming the Beast
-q(25078),	-- Taming the Beast
-q(25083),	-- Beast Training
-q(25096),	-- Thunderdrome: Prince Mosh!
-q(25097),	-- Little Sumpthin'
-q(25101),	-- Friend of a Friend
-q(25113),	-- [DEPRECATED]Scorpid Poaching: Dunestalkers
-q(25114),	-- [DEPRECATED]Basilisk Poaching: Gazer Guts
-q(25116),	-- [DEPRECATED]Hyena Poaching: Rabid Livers
-q(25119),	-- Impulse Hunting
-q(25137),	-- Valley of Trials: PRK - H - Warlock Pet Imp
-q(25138),	-- Glyphic Parchment
-q(25139),	-- Steady Shot
-q(25140),	-- Swine Hunting
-q(25141),	-- Eviscerate
-q(25142),	-- Into the Shadows
-q(25143),	-- Primal Strike
-q(25144),	-- Rock Meets Flesh
-q(25145),	-- Corruption
-q(25146),	-- A Demonic Fire
-q(25147),	-- Charge
-q(25148),	-- Hone Your Holler
-q(25149),	-- Frost Nova
-q(25150),	-- Empowered Minds
-q(25189),	-- Spirits Be Praised
-q(25225),	-- Oil Change
-q(25231),	-- Southseas Scum
-q(25302),	-- Remnants of Battle
-q(25307),	-- Eavesdropping
-q(25313),	-- The Defector
-q(25318),	-- Twilight Battle Plans
-q(25322),	-- Fiery Inscriptions
-q(25326),	-- Block Their Retreat
-q(25327),	-- Awakening
-q(25335),	-- Natural Materials
-q(25376),	-- Gordunni Cobalt
-q(25501),	-- Poaching for Dummies
-q(25508),	-- A Brilliant Idea
-q(25557),	-- Chief Ukorz
-q(25604),	-- Hammering It Out
-q(25625),	-- Piercing the Ruins
-q(25789),	-- Hammering It Out
-q(25827),	-- Lo'Gosh is Ready for Battle
-q(25828),	-- Goldrinn's Message to Ysera
-q(25831),	-- Hamuul's Message to Ysera
-q(25833),	-- Aviana's Message to Ysera
-q(25902),	-- Your First Totem!
-q(25903),	-- It's Hot and it Might Explode
-q(26104),	-- Our Aquatic Neigh-Bors
-q(26109),	-- Land Ho!
-q(26123),	-- When in Vashj'ir...
-q(26151),	-- Dark Letter
-q(26198),	-- The Arts of a Mage
-q(26200),	-- The Arts of a Priest
-q(26201),	-- The Power of a Warlock
-q(26204),	-- The Arts of a Warrior
-q(26216),	-- Stoleways
-q(26217),	-- Overboard
-q(26218),	-- Long Shot
-q(26231),	-- Boarding Party
-q(26239),	-- <PH>Wildhammer Totems
-q(26242),	-- Deepholm, Plane of Earth
-q(26253),	-- Preserve the Evidence
-q(26262),	-- Twilight Armaments
-q(26274),	-- The Arts of a Warlock
-q(26392),	-- Voucher of Bravery
-q(26458),	-- Twilight Falls
-q(26460),	-- In Search of Thaelrid
-q(26471),	-- Knowledge in the Deeps
-q(26626),	-- We Have a Situation
-q(26675),	-- The Value of Trust
-q(26715),	-- Malfurion Stormrage
-q(26716),	-- A Bit of Privacy
-q(26789),	-- You no take axe!
-q(26790),	-- Magmadar Must Die!
-q(26841),	-- Forbidden Sigil
-q(26847),	-- The Quaking Fields
-q(26848),	-- X Marks the Spot
-q(26849),	-- The Axe of Earthly Sundering
-q(26850),	-- Elemental Ore
-q(26851),	-- One With the Ground
-q(26852),	-- The Fragment's Inside
-q(26853),	-- The Middle Fragment
-q(26859),	-- Searching for the Lost Satchel
-q(26877),	-- The Fragment's Inside
-q(26880),	-- Gilneas City Unphase Cheat
-q(26891),	-- Amongst the Ruins
-q(26900),	-- Agamaggan
-q(26904),	-- Corruption
-q(26940),	-- Frost Nova
-q(26945),	-- Learning New Techniques
-q(26946),	-- A Rogue's Advantage
-q(26947),	-- A Woodsman's Training
-q(26948),	-- Moonfire
-q(27020),	-- The First Lesson
-q(27021),	-- The Hunter's Path
-q(27022),	-- Extinguishing the Idol
-q(27023),	-- The Way of the Sunwalkers
-q(27027),	-- Primal Strike
-q(27029),	-- Cure the Scourge
-q(27052),	-- Lingering Twilight
-q(27066),	-- Learning the Word
-q(27067),	-- Moonfire
-q(27081),	-- [DEPRECATED]Trusting the Traitor
-q(27137),	-- Earth Girls Aren't So Easy
-q(27138),	-- Earth Girls Aren't So Easy
-q(27149),	-- School of the Damned
-q(27250),	-- REUSE - BAD COPY
-q(27678),	-- The Platinum Discs
-q(27723),	-- Kyle's Test Quest
-q(27819),	-- TEST - RVM
-q(28016),	-- Adventurers Wanted: Scarlet Monastery Graveyard
-q(28018),	-- Adventurers Wanted: Scarlet Monastery Armory
-q(28020),	-- Adventurers Wanted: Scarlet Monastery Graveyard
-q(28022),	-- Adventurers Wanted: Scarlet Monastery Armory
-q(28095),	-- Breadcrumb Out
-q(28110),	-- Breadcrumb Out
-q(28371),	-- [DND] ORKUS QUEST FLAG [DO NOT LOCALIZE]
-q(28412),	-- Blessing of the Family
-q(28585),	-- Polished
-q(28648),	-- Frak's Wild Ride
-q(28739),	-- Night Elf Class Skill Tracker Quest
-q(28754),	-- Battle of Life and Death
-q(28835),	-- Necessary Refreshment (Backup Groundspawn Quest)
-q(28844),	-- [DEPRECATED] Hyena Harvest
-q(28851),	-- [DEPRECATED] Sullah's Sideshow
-q(28890),	-- Wasteland
-q(28891),	-- The Spirits of Southwind
-q(28892),	-- Hive in the Tower
-q(28893),	-- Umber, Archivist
-q(28894),	-- Uncovering Past Secrets
-q(28895),	-- Befoulers of the Wind
-q(28896),	-- Recalling
-q(28897),	-- Baristolth's Plan
-q(28898),	-- Secretion and Subterfuge
-q(28899),	-- Riding in Plain Sight
-q(28900),	-- Mysteries of the Twilight Hive
-q(28901),	-- Prisoners of Madness
-q(28936),	-- Diva Dilemma
-q(28937),	-- Alliance Breadcrumb
-q(28938),	-- Save the Children
-q(28939),	-- Beware of Strangers
-q(28940),	-- Get Antidote
-q(28941),	-- Transformation
-q(28942),	-- Revenge!
-q(29025),	-- Samophlange Repair
-q(29041),	-- Welcome to Paradise
-q(29042),	-- Kitchen Clean-Up
-q(29043),	-- Lunch Break
-q(29044),	-- No Child of Mine
-q(29045),	-- Fit for a King
-q(29046),	-- Chef's Challenge: Steelback
-q(29047),	-- Chef's Challenge: Faewing
-q(29048),	-- Chef's Challenge: Grumpfin
-q(29049),	-- So Sous Me
-q(29050),	-- Out of Gas
-q(29055),	-- Float My Boat
-q(29056),	-- Fruit Round-Up
-q(29057),	-- Firebeak
-q(29058),	-- Roc Collection
-q(29059),	-- Save 'Em
-q(29060),	-- At Your Service
-q(29062),	-- Finding the Cultist
-q(29063),	-- Subversion
-q(29064),	-- We Need a Boat
-q(29065),	-- Out of This World
-q(29070),	-- Twilight Plight
-q(29072),	-- Last Resort, Literally
-q(29076),	-- Kevin's Test Quest
-q(29077),	-- What Hath Dodd Wrought
-q(29097),	-- Mor'shan Caravan Rescue
-q(29098),	-- Demon Seed
-q(29099),	-- Mor'shan Caravan Delivery
-q(29108),	-- Mor'shan Test Quest
-q(29140),	-- Under the Skylord's Gaze
-q(29178),	-- Oooh, Shinies!
-q(29180),	-- Promises, Promises...
-q(29184),	-- X Marks... Your Doom!
-q(29187),	-- Tuskin' Raiders
-q(29212),	-- [DEPRECATED] Fire Hawk Down
-q(29216),	-- Malfurion's Breach
-q(29224),	-- [DEPRICATED] NO LONGER USED
-q(29256),	-- [DEPRECATED] Eat Your Heart Out
-q(29258),	-- Meteorite Hunt
-q(29259),	-- [DEPRECATED] Hide and Seek
-q(29260),	-- [DEPRECATED] Enlighten Us
-q(29266),	-- DEPRECATED Zul'Gurub Voodoo (NYI)
-q(29271),	-- Bound for Warmer Weather
-q(29277),	-- Druid Tree, Stage 3 Tracking
-q(29294),	-- Animate Embers
-q(29372),	-- Trouble in Podunk
-q(29373),	-- Trouble in Podunk
-q(29441),	-- From the Belly of the Beast
-q(29459),	-- A Captured Banner
-q(29460),	-- The Enemy's Insignia
-q(29461),	-- The Captured Journal
-q(29473),	-- Putting the Carnies Back Together Again
-q(29532),	-- Dark Tidings
-q(29533),	-- Dark Tidings
-q(29569),	-- Warlord Kalithresh's Prized Possession
-q(29671),	-- The Black Morass
-q(29853),	-- Champion of the King
-q(30119),	-- Well of Eternity RP Tracker
-q(30173),	-- War Pigs!
+q(13574),	-- Peering Into the Vortex (DEPRECATED)	
+q(13608),	-- Along for the Ride	
+q(13637),	-- Ram Delivery	
+q(13802),	-- The Goblin with Two Brains	
+q(13804),	-- To Catch a Fish-Thing	
+q(13894),	-- Marking the Kills (DEPRECATED)	
+q(13939),	-- Fel Moss Corruption	
+q(13941),	-- Vile Touch	
+q(13972),	-- Among Humans Again	
+q(13978),	-- Lurkers in the Mist	
+q(13984),	-- Tracking Our Every Move	
+q(13993),	-- You're the Bomb!	
+q(13994),	-- (DEPRECATED)	
+q(13996),	-- Can You Get This Quest While I'm In Combat?	
+q(14000),	-- Hunt or Be Hunted	
+q(14002),	-- A Job for a Bloodhound	
+q(14007),	-- Steady Shot	
+q(14008),	-- Frost Nova	
+q(14009),	-- Learning the Word	
+q(14010),	-- Eviscerate	
+q(14011),	-- Primal Strike	
+q(14012),	-- Corruption	
+q(14013),	-- Charge	
+q(14015),	-- Incomplete Cartography	
+q(14020),	-- The Curse	
+q(14025),	-- To the Frontlines	
+q(14026),	-- Off With a Bang	
+q(14027),	-- Face to Face	
+q(14029),	-- Breaking the Siege	
+q(14097),	-- Get That Merchant Out of Here!	
+q(14133),	-- The Way to a Mage's Heart	
+q(14137),	-- Class Training (Tracking Event)	
+q(14156),	-- Man on the Inside	
+q(14298),	-- Kill Cultists/Dragonflight	
+q(14315),	-- Liam's Stupor	
+q(14317),	-- Tremors	
+q(14415),	-- Apparitions in the Orchard	
+q(14425),	-- The First Quest	
+q(14426),	-- The Second Quest	
+q(14427),	-- Item Quest	
+q(14450),	-- Random Drop Test Progressive	
+q(14451),	-- Random Drop Flat Rate	
+q(24460),	-- Out of Order	
+q(24462),	-- Operation Item Get	
+q(24494),	-- Empowered Rune	
+q(24526),	-- Filling Up the Spellbook	
+q(24527),	-- Your Path Begins Here	
+q(24530),	-- Oh, A Hunter's Life For Me	
+q(24531),	-- Getting Battle-Ready	
+q(24544),	-- Paul Test Quest	
+q(24640),	-- The Arts of a Warrior	
+q(24696),	-- Un'Goro: PRK - E - Shizzle's Flyer 02 - Testing It Out	
+q(24738),	-- Williden's Journal	
+q(24739),	-- Expedition Salvation	
+q(24760),	-- The Arts of a Shaman	
+q(24766),	-- The Arts of a Druid	
+q(24772),	-- The Arts of a Rogue	
+q(24778),	-- The Arts of a Hunter	
+q(24784),	-- Learnin' tha Word	
+q(24860),	-- Profitable Preservation	
+q(24900),	-- Blueleaf Tubers	
+q(24935),	-- Body And Soul	
+q(24962),	-- Trail-Worn Scroll	
+q(24964),	-- The Thrill of the Hunt	
+q(24967),	-- Stab!	
+q(24968),	-- Dark Deeds	
+q(24969),	-- Charging into Battle	
+q(24984),	-- The Prodigal Lich	
+q(24985),	-- Proving Allegiance	
+q(24986),	-- The Prodigal Lich Returns	
+q(24987),	-- Dark Lady, Watch Over Us	
+q(25016),	-- FLAG - Training Complete	
+q(25076),	-- Taming the Beast	
+q(25077),	-- Taming the Beast	
+q(25078),	-- Taming the Beast	
+q(25083),	-- Beast Training	
+q(25096),	-- Thunderdrome: Prince Mosh!	
+q(25097),	-- Little Sumpthin'	
+q(25101),	-- Friend of a Friend	
+q(25113),	-- [DEPRECATED]Scorpid Poaching: Dunestalkers	
+q(25114),	-- [DEPRECATED]Basilisk Poaching: Gazer Guts	
+q(25116),	-- [DEPRECATED]Hyena Poaching: Rabid Livers	
+q(25119),	-- Impulse Hunting	
+q(25137),	-- Valley of Trials: PRK - H - Warlock Pet Imp	
+q(25138),	-- Glyphic Parchment	
+q(25139),	-- Steady Shot	
+q(25140),	-- Swine Hunting	
+q(25141),	-- Eviscerate	
+q(25142),	-- Into the Shadows	
+q(25143),	-- Primal Strike	
+q(25144),	-- Rock Meets Flesh	
+q(25145),	-- Corruption	
+q(25146),	-- A Demonic Fire	
+q(25147),	-- Charge	
+q(25148),	-- Hone Your Holler	
+q(25149),	-- Frost Nova	
+q(25150),	-- Empowered Minds	
+q(25189),	-- Spirits Be Praised	
+q(25225),	-- Oil Change	
+q(25231),	-- Southseas Scum	
+q(25302),	-- Remnants of Battle	
+q(25307),	-- Eavesdropping	
+q(25313),	-- The Defector	
+q(25318),	-- Twilight Battle Plans	
+q(25322),	-- Fiery Inscriptions	
+q(25326),	-- Block Their Retreat	
+q(25327),	-- Awakening	
+q(25335),	-- Natural Materials	
+q(25376),	-- Gordunni Cobalt	
+q(25501),	-- Poaching for Dummies	
+q(25508),	-- A Brilliant Idea	
+q(25557),	-- Chief Ukorz	
+q(25604),	-- Hammering It Out	
+q(25625),	-- Piercing the Ruins	
+q(25789),	-- Hammering It Out	
+q(25827),	-- Lo'Gosh is Ready for Battle	
+q(25828),	-- Goldrinn's Message to Ysera	
+q(25831),	-- Hamuul's Message to Ysera	
+q(25833),	-- Aviana's Message to Ysera	
+q(25902),	-- Your First Totem!	
+q(25903),	-- It's Hot and it Might Explode	
+q(26104),	-- Our Aquatic Neigh-Bors	
+q(26109),	-- Land Ho!	
+q(26123),	-- When in Vashj'ir...	
+q(26151),	-- Dark Letter	
+q(26198),	-- The Arts of a Mage	
+q(26200),	-- The Arts of a Priest	
+q(26201),	-- The Power of a Warlock	
+q(26204),	-- The Arts of a Warrior	
+q(26216),	-- Stoleways	
+q(26217),	-- Overboard	
+q(26218),	-- Long Shot	
+q(26231),	-- Boarding Party	
+q(26239),	-- <PH>Wildhammer Totems	
+q(26242),	-- Deepholm, Plane of Earth	
+q(26253),	-- Preserve the Evidence	
+q(26262),	-- Twilight Armaments	
+q(26274),	-- The Arts of a Warlock	
+q(26392),	-- Voucher of Bravery	
+q(26458),	-- Twilight Falls	
+q(26460),	-- In Search of Thaelrid	
+q(26471),	-- Knowledge in the Deeps	
+q(26626),	-- We Have a Situation	
+q(26675),	-- The Value of Trust	
+q(26715),	-- Malfurion Stormrage	
+q(26716),	-- A Bit of Privacy	
+q(26789),	-- You no take axe!	
+q(26790),	-- Magmadar Must Die!	
+q(26841),	-- Forbidden Sigil	
+q(26847),	-- The Quaking Fields	
+q(26848),	-- X Marks the Spot	
+q(26849),	-- The Axe of Earthly Sundering	
+q(26850),	-- Elemental Ore	
+q(26851),	-- One With the Ground	
+q(26852),	-- The Fragment's Inside	
+q(26853),	-- The Middle Fragment	
+q(26859),	-- Searching for the Lost Satchel	
+q(26877),	-- The Fragment's Inside	
+q(26880),	-- Gilneas City Unphase Cheat	
+q(26891),	-- Amongst the Ruins	
+q(26900),	-- Agamaggan	
+q(26904),	-- Corruption	
+q(26940),	-- Frost Nova	
+q(26945),	-- Learning New Techniques	
+q(26946),	-- A Rogue's Advantage	
+q(26947),	-- A Woodsman's Training	
+q(26948),	-- Moonfire	
+q(27020),	-- The First Lesson	
+q(27021),	-- The Hunter's Path	
+q(27022),	-- Extinguishing the Idol	
+q(27023),	-- The Way of the Sunwalkers	
+q(27027),	-- Primal Strike	
+q(27029),	-- Cure the Scourge	
+q(27052),	-- Lingering Twilight	
+q(27066),	-- Learning the Word	
+q(27067),	-- Moonfire	
+q(27081),	-- [DEPRECATED]Trusting the Traitor	
+q(27137),	-- Earth Girls Aren't So Easy	
+q(27138),	-- Earth Girls Aren't So Easy	
+q(27149),	-- School of the Damned	
+q(27250),	-- REUSE - BAD COPY	
+q(27678),	-- The Platinum Discs	
+q(27723),	-- Kyle's Test Quest	
+q(27819),	-- TEST - RVM	
+q(28016),	-- Adventurers Wanted: Scarlet Monastery Graveyard	
+q(28018),	-- Adventurers Wanted: Scarlet Monastery Armory	
+q(28020),	-- Adventurers Wanted: Scarlet Monastery Graveyard	
+q(28022),	-- Adventurers Wanted: Scarlet Monastery Armory	
+q(28095),	-- Breadcrumb Out	
+q(28110),	-- Breadcrumb Out	
+q(28371),	-- [DND] ORKUS QUEST FLAG [DO NOT LOCALIZE]	
+q(28412),	-- Blessing of the Family	
+q(28585),	-- Polished	
+q(28648),	-- Frak's Wild Ride	
+q(28739),	-- Night Elf Class Skill Tracker Quest	
+q(28754),	-- Battle of Life and Death	
+q(28835),	-- Necessary Refreshment (Backup Groundspawn Quest)	
+q(28844),	-- [DEPRECATED] Hyena Harvest	
+q(28851),	-- [DEPRECATED] Sullah's Sideshow	
+q(28890),	-- Wasteland	
+q(28891),	-- The Spirits of Southwind	
+q(28892),	-- Hive in the Tower	
+q(28893),	-- Umber, Archivist	
+q(28894),	-- Uncovering Past Secrets	
+q(28895),	-- Befoulers of the Wind	
+q(28896),	-- Recalling	
+q(28897),	-- Baristolth's Plan	
+q(28898),	-- Secretion and Subterfuge	
+q(28899),	-- Riding in Plain Sight	
+q(28900),	-- Mysteries of the Twilight Hive	
+q(28901),	-- Prisoners of Madness	
+q(28936),	-- Diva Dilemma	
+q(28937),	-- Alliance Breadcrumb	
+q(28938),	-- Save the Children	
+q(28939),	-- Beware of Strangers	
+q(28940),	-- Get Antidote	
+q(28941),	-- Transformation	
+q(28942),	-- Revenge!	
+q(29025),	-- Samophlange Repair	
+q(29041),	-- Welcome to Paradise	
+q(29042),	-- Kitchen Clean-Up	
+q(29043),	-- Lunch Break	
+q(29044),	-- No Child of Mine	
+q(29045),	-- Fit for a King	
+q(29046),	-- Chef's Challenge: Steelback	
+q(29047),	-- Chef's Challenge: Faewing	
+q(29048),	-- Chef's Challenge: Grumpfin	
+q(29049),	-- So Sous Me	
+q(29050),	-- Out of Gas	
+q(29055),	-- Float My Boat	
+q(29056),	-- Fruit Round-Up	
+q(29057),	-- Firebeak	
+q(29058),	-- Roc Collection	
+q(29059),	-- Save 'Em	
+q(29060),	-- At Your Service	
+q(29062),	-- Finding the Cultist	
+q(29063),	-- Subversion	
+q(29064),	-- We Need a Boat	
+q(29065),	-- Out of This World	
+q(29070),	-- Twilight Plight	
+q(29072),	-- Last Resort, Literally	
+q(29076),	-- Kevin's Test Quest	
+q(29077),	-- What Hath Dodd Wrought	
+q(29097),	-- Mor'shan Caravan Rescue	
+q(29098),	-- Demon Seed	
+q(29099),	-- Mor'shan Caravan Delivery	
+q(29108),	-- Mor'shan Test Quest	
+q(29140),	-- Under the Skylord's Gaze	
+q(29178),	-- Oooh, Shinies!	
+q(29180),	-- Promises, Promises...	
+q(29184),	-- X Marks... Your Doom!	
+q(29187),	-- Tuskin' Raiders	
+q(29212),	-- [DEPRECATED] Fire Hawk Down	
+q(29216),	-- Malfurion's Breach	
+q(29224),	-- [DEPRICATED] NO LONGER USED	
+q(29256),	-- [DEPRECATED] Eat Your Heart Out	
+q(29258),	-- Meteorite Hunt	
+q(29259),	-- [DEPRECATED] Hide and Seek	
+q(29260),	-- [DEPRECATED] Enlighten Us	
+q(29266),	-- DEPRECATED Zul'Gurub Voodoo (NYI)	
+q(29271),	-- Bound for Warmer Weather	
+q(29277),	-- Druid Tree, Stage 3 Tracking	
+q(29294),	-- Animate Embers	
+q(29372),	-- Trouble in Podunk	
+q(29373),	-- Trouble in Podunk	
+q(29441),	-- From the Belly of the Beast	
+q(29459),	-- A Captured Banner	
+q(29460),	-- The Enemy's Insignia	
+q(29461),	-- The Captured Journal	
+q(29473),	-- Putting the Carnies Back Together Again	
+q(29532),	-- Dark Tidings	
+q(29533),	-- Dark Tidings	
+q(29569),	-- Warlord Kalithresh's Prized Possession	
+q(29671),	-- The Black Morass	
+q(29853),	-- Champion of the King	
+q(30119),	-- Well of Eternity RP Tracker	
+q(30173),	-- War Pigs!	
 6.0.1.18179
-q(32961),	-- Scary Ghosts and Nice Sprites - Tracking Quest
+q(32961),	-- Scary Ghosts and Nice Sprites - Tracking Quest	
 7.3.0.24473
-q(8971),	-- REUSE
+q(8971),	-- REUSE	
 q(37042),	--
 q(37139),	--
 q(37200),	--
 q(37258),	--
 q(37267),	--
-q(37337),	-- Vignette: Strategist Ankor
+q(37337),	-- Vignette: Strategist Ankor	
 q(37519),	--
 q(37527),	--
 q(37529),	--
@@ -886,52 +885,52 @@ q(38016),	--
 q(38027),	--
 q(38055),	--
 q(38056),	--
-q(38063),	-- Unlock "Legends of Azeroth."
-q(38064),	-- Unlock "The Burning Legion."
-q(38065),	-- Unlock "Wrath of the Lich King."
-q(38066),	-- Unlock "The Shattering."
-q(38067),	-- Unlock "Heart of Pandaria."
-q(38068),	-- Unlock "A Siege of Worlds."
-q(38069),	-- Unlock "Stormwind."
-q(38070),	-- Unlock "Orgrimmar."
-q(38071),	-- Unlock "High Seas."
-q(38072),	-- Unlock "War March."
-q(38073),	-- Unlock "Ironforge."
-q(38074),	-- Unlock "Unlock Thunder Bluff."
-q(38075),	-- Unlock "Cold Mountain."
-q(38076),	-- Unlock "Mulgore Plains."
-q(38077),	-- Unlock "Night Song."
-q(38078),	-- Unlock "Undercity."
-q(38079),	-- Unlock "Gnomeregan"
-q(38080),	-- Unlock "Zul'Gurub Voo Doo"
-q(38081),	-- Unlock "Tinkertown"
-q(38082),	-- Unlock "The Zandalari"
-q(38083),	-- Unlock "Exodar"
-q(38084),	-- Unlock "Silvermoon"
-q(38085),	-- Unlock "Curse of the Worgen"
-q(38086),	-- Unlock "Rescue the Warchief"
-q(38087),	-- Unlock "Angelic"
-q(38088),	-- Unlock "Ghost"
-q(38089),	-- Unlock "Mountains"
-q(38090),	-- Unlock "Magic"
-q(38091),	-- Unlock "The Black Temple"
-q(38092),	-- Unlock "Invincible"
-q(38093),	-- Unlock "Karazhan Opera House"
-q(38094),	-- Unlock "The Argent Tournament"
-q(38095),	-- Unlock "Lament of the Highborne"
-q(38096),	-- Unlock "Faerie Dragon"
-q(38097),	-- Unlock "Totems of the Grizzlemaw"
-q(38098),	-- Unlock "Mountains of Thunder"
-q(38099),	-- Unlock "Darkmoon Carousel"
-q(38100),	-- Unlock "Shalandis Isle"
-q(38101),	-- Unlock "Way of the Monk"
-q(38102),	-- Unlock "Song of Liu Lang"
-q(38103),	-- Gossip Test Case 1
-q(38104),	-- Gossip Test Case 2
-q(38105),	-- Gossip Test Case 3
-q(38106),	-- Greeting Text Test Case 1
-q(38107),	-- Greeting Text Test Case 2
-q(38108),	-- Greeting Text Test Case 3
+q(38063),	-- Unlock "Legends of Azeroth."	
+q(38064),	-- Unlock "The Burning Legion."	
+q(38065),	-- Unlock "Wrath of the Lich King."	
+q(38066),	-- Unlock "The Shattering."	
+q(38067),	-- Unlock "Heart of Pandaria."	
+q(38068),	-- Unlock "A Siege of Worlds."	
+q(38069),	-- Unlock "Stormwind."	
+q(38070),	-- Unlock "Orgrimmar."	
+q(38071),	-- Unlock "High Seas."	
+q(38072),	-- Unlock "War March."	
+q(38073),	-- Unlock "Ironforge."	
+q(38074),	-- Unlock "Unlock Thunder Bluff."	
+q(38075),	-- Unlock "Cold Mountain."	
+q(38076),	-- Unlock "Mulgore Plains."	
+q(38077),	-- Unlock "Night Song."	
+q(38078),	-- Unlock "Undercity."	
+q(38079),	-- Unlock "Gnomeregan"	
+q(38080),	-- Unlock "Zul'Gurub Voo Doo"	
+q(38081),	-- Unlock "Tinkertown"	
+q(38082),	-- Unlock "The Zandalari"	
+q(38083),	-- Unlock "Exodar"	
+q(38084),	-- Unlock "Silvermoon"	
+q(38085),	-- Unlock "Curse of the Worgen"	
+q(38086),	-- Unlock "Rescue the Warchief"	
+q(38087),	-- Unlock "Angelic"	
+q(38088),	-- Unlock "Ghost"	
+q(38089),	-- Unlock "Mountains"	
+q(38090),	-- Unlock "Magic"	
+q(38091),	-- Unlock "The Black Temple"	
+q(38092),	-- Unlock "Invincible"	
+q(38093),	-- Unlock "Karazhan Opera House"	
+q(38094),	-- Unlock "The Argent Tournament"	
+q(38095),	-- Unlock "Lament of the Highborne"	
+q(38096),	-- Unlock "Faerie Dragon"	
+q(38097),	-- Unlock "Totems of the Grizzlemaw"	
+q(38098),	-- Unlock "Mountains of Thunder"	
+q(38099),	-- Unlock "Darkmoon Carousel"	
+q(38100),	-- Unlock "Shalandis Isle"	
+q(38101),	-- Unlock "Way of the Monk"	
+q(38102),	-- Unlock "Song of Liu Lang"	
+q(38103),	-- Gossip Test Case 1	
+q(38104),	-- Gossip Test Case 2	
+q(38105),	-- Gossip Test Case 3	
+q(38106),	-- Greeting Text Test Case 1	
+q(38107),	-- Greeting Text Test Case 2	
+q(38108),	-- Greeting Text Test Case 3	
 q(38228),	--
 q(38230),	--
 q(38233),	--
@@ -969,9 +968,9 @@ q(38555),	--
 q(38556),	--
 q(38590),	--
 q(38606),	--
-q(38625),	-- Hook & Sinker
-q(38627),	-- Worgen Stalkers (Horde Only)
-q(38630),	-- Horde Kill Squad (Alliance Only)
+q(38625),	-- Hook & Sinker	
+q(38627),	-- Worgen Stalkers (Horde Only)	
+q(38630),	-- Horde Kill Squad (Alliance Only)	
 q(38635),	--
 q(38636),	--
 q(38651),	--
@@ -1027,22 +1026,22 @@ q(39291),	--
 q(39298),	--
 q(39319),	--
 q(39320),	--
-q(39715),	-- Menacing Grumplings
+q(39715),	-- Menacing Grumplings	
 q(39747),	--
 q(39754),	--
 q(39755),	--
 q(39760),	--
 q(39778),	--
 q(39779),	--
-q(39784),	-- Beastmaster Pao'lek
-q(39797),	-- Aponi Brightmane Slotted
-q(39838),	-- Fire!
-q(39839),	-- Mysterious Dust
-q(39840),	-- The Council's Approval
-q(39841),	-- Friends in Low Places
-q(39844),	-- Cold Hard Coin
-q(39845),	-- The Obliterum Forge
-q(39863),	-- Trial By Fel Fire
+q(39784),	-- Beastmaster Pao'lek	
+q(39797),	-- Aponi Brightmane Slotted	
+q(39838),	-- Fire!	
+q(39839),	-- Mysterious Dust	
+q(39840),	-- The Council's Approval	
+q(39841),	-- Friends in Low Places	
+q(39844),	-- Cold Hard Coin	
+q(39845),	-- The Obliterum Forge	
+q(39863),	-- Trial By Fel Fire	
 q(39888),	--
 q(39893),	--
 q(39894),	--
@@ -1084,10 +1083,10 @@ q(40295),	--
 q(40309),	--
 q(40318),	--
 q(40387),	--
-q(40413),	-- Amateur Hunters
+q(40413),	-- Amateur Hunters	
 q(40421),	--
-q(40423),	-- Unethical Adventurers
-q(40501),	-- REUSEME_40501
+q(40423),	-- Unethical Adventurers	
+q(40501),	-- REUSEME_40501	
 q(40548),	--
 q(40549),	--
 q(40550),	--
@@ -1096,7 +1095,7 @@ q(40552),	--
 q(40554),	--
 q(40555),	--
 q(40563),	--
-q(40564),	-- Shoe Shine Kit Tracking Quest
+q(40564),	-- Shoe Shine Kit Tracking Quest	
 q(40566),	--
 q(40592),	--
 q(40648),	--
@@ -1108,7 +1107,7 @@ q(40809),	--
 q(40826),	--
 q(40836),	--
 q(40887),	--
-q(40895),	-- The Haunted Mire
+q(40895),	-- The Haunted Mire	
 q(40899),	--
 q(40903),	--
 q(40926),	--
@@ -1118,13 +1117,13 @@ q(40979),	--
 q(40981),	--
 q(40984),	--
 q(40999),	--
-q(41015),	-- Artifacts Need Artificers
-q(41017),	-- Empowering Your Artifact
+q(41015),	-- Artifacts Need Artificers	
+q(41017),	-- Empowering Your Artifact	
 q(41020),	--
 q(41046),	--
 q(41061),	--
 q(41088),	--
-q(41092),	-- Forge Guards Move
+q(41092),	-- Forge Guards Move	
 q(41130),	--
 q(41131),	--
 q(41132),	--
@@ -1190,7 +1189,7 @@ q(42057),	--
 q(42059),	--
 q(42060),	--
 q(42066),	--
-q(42073),	-- Boros Tracker Two
+q(42073),	-- Boros Tracker Two	
 q(42095),	--
 q(42099),	--
 q(42109),	--
@@ -1276,13 +1275,13 @@ q(42478),	--
 q(42600),	--
 q(42615),	--
 q(42621),	--
-q(42698),	-- Selia, Master of Balefire
-q(42700),	-- Quin'el, Master of Chillwind
+q(42698),	-- Selia, Master of Balefire	
+q(42700),	-- Quin'el, Master of Chillwind	
 q(42710),	--
-q(42715),	-- Frost DK - Highmountain Event
-q(42716),	-- Frost DK - Val'sharah Event
-q(42717),	-- Frost DK - Stormheim Event
-q(42718),	-- Frost DK - Azsuna Event
+q(42715),	-- Frost DK - Highmountain Event	
+q(42716),	-- Frost DK - Val'sharah Event	
+q(42717),	-- Frost DK - Stormheim Event	
+q(42718),	-- Frost DK - Azsuna Event	
 q(42720),	--
 q(42759),	--
 q(42760),	--
@@ -1291,11 +1290,11 @@ q(42793),	--
 q(42794),	--
 q(42923),	--
 q(42925),	--
-q(43278),	-- Felforged Plate Armor
-q(43279),	-- Fel-Chain Mail Armor
-q(43280),	-- Felshroud Leather Armor
-q(43281),	-- Fel-Infused Cloth Armor
-q(43308),	-- Treasure 071 - Outskirts
+q(43278),	-- Felforged Plate Armor	
+q(43279),	-- Fel-Chain Mail Armor	
+q(43280),	-- Felshroud Leather Armor	
+q(43281),	-- Fel-Infused Cloth Armor	
+q(43308),	-- Treasure 071 - Outskirts	
 q(43320),	--
 q(43321),	--
 q(43322),	--
@@ -1305,10 +1304,10 @@ q(43330),	--
 q(43439),	--
 q(43482),	--
 q(43544),	--
-q(43602),	-- Vignette: Randril
-q(43725),	-- Flag 2
-q(43727),	-- Flag 3
-q(43728),	-- Flag 4
+q(43602),	-- Vignette: Randril	
+q(43725),	-- Flag 2	
+q(43727),	-- Flag 3	
+q(43728),	-- Flag 4	
 q(43739),	--
 q(43754),	--
 q(43757),	--
@@ -1317,38 +1316,38 @@ q(43770),	--
 q(43773),	--
 q(43779),	--
 q(43931),	--
-q(43997),	-- Short-Supply Reward
-q(43998),	-- Short-Supply Reward
-q(43999),	-- Short-Supply Reward
-q(44000),	-- Short-Supply Reward
-q(44001),	-- Short-Supply Reward
+q(43997),	-- Short-Supply Reward	
+q(43998),	-- Short-Supply Reward	
+q(43999),	-- Short-Supply Reward	
+q(44000),	-- Short-Supply Reward	
+q(44001),	-- Short-Supply Reward	
 q(44020),	--
-q(44068),	-- Shaman Has Given Doomhammer to Oracle
-q(44069),	-- Shaman Has Given Sharas'dal to Oracle
-q(44123),	-- Druids of the Scythe - First Freed
-q(44125),	-- Tracking Quest
-q(44126),	-- Tracking Quest
-q(44127),	-- Tracking Quest
-q(44128),	-- Tracking Quest
-q(44129),	-- Druids of the Scythe - 2
-q(44130),	-- Druids of the Scythe - 3
-q(44131),	-- Druids of the Scythe - 4
-q(44132),	-- Druids of the Scythe - 5
-q(44133),	-- Druids of the Scythe - 6
-q(44141),	-- Tracking Quest
-q(44313),	-- Tracking Quest
-q(44314),	-- Tracking Quest
-q(44315),	-- Tracking Quest
-q(44316),	-- Tracking Quest
-q(44317),	-- Tracking Quest
-q(44318),	-- Tracking Quest
-q(44319),	-- Tracking Quest
-q(44320),	-- Tracking Quest
-q(44321),	-- Tracking Quest
-q(44322),	-- Tracking Quest
+q(44068),	-- Shaman Has Given Doomhammer to Oracle	
+q(44069),	-- Shaman Has Given Sharas'dal to Oracle	
+q(44123),	-- Druids of the Scythe - First Freed	
+q(44125),	-- Tracking Quest	
+q(44126),	-- Tracking Quest	
+q(44127),	-- Tracking Quest	
+q(44128),	-- Tracking Quest	
+q(44129),	-- Druids of the Scythe - 2	
+q(44130),	-- Druids of the Scythe - 3	
+q(44131),	-- Druids of the Scythe - 4	
+q(44132),	-- Druids of the Scythe - 5	
+q(44133),	-- Druids of the Scythe - 6	
+q(44141),	-- Tracking Quest	
+q(44313),	-- Tracking Quest	
+q(44314),	-- Tracking Quest	
+q(44315),	-- Tracking Quest	
+q(44316),	-- Tracking Quest	
+q(44317),	-- Tracking Quest	
+q(44318),	-- Tracking Quest	
+q(44319),	-- Tracking Quest	
+q(44320),	-- Tracking Quest	
+q(44321),	-- Tracking Quest	
+q(44322),	-- Tracking Quest	
 q(44494),	--
-q(44648),	-- Tracking Quest: 7.0 Class Hall - Paladin - Pacing Mission 2B
-q(44649),	-- Tracking Quest: 7.0 Class Hall - Priest - One-Time Quest Mission - Chapter 3 (JAP)
+q(44648),	-- Tracking Quest: 7.0 Class Hall - Paladin - Pacing Mission 2B	
+q(44649),	-- Tracking Quest: 7.0 Class Hall - Priest - One-Time Quest Mission - Chapter 3 (JAP)	
 q(44755),	--
 q(44757),	--
 q(44774),	--
@@ -1359,61 +1358,61 @@ q(44804),	--
 q(44806),	--
 q(44824),	--
 q(44826),	--
-q(44848),	-- Ch 5 Available Tracking Quest
+q(44848),	-- Ch 5 Available Tracking Quest	
 q(44852),	--
 q(44855),	--
-q(44886),	-- Unwanted Evidence
-q(44887),	-- Uncovering Orders
-q(44912),	-- 7.1 Dungeon - Karazhan - Quest Item Reward
+q(44886),	-- Unwanted Evidence	
+q(44887),	-- Uncovering Orders	
+q(44912),	-- 7.1 Dungeon - Karazhan - Quest Item Reward	
 q(44942),	--
-q(44944),	-- Aura of Uncertainty
-q(45029),	-- Talon's Vengeance - Intro Complete
+q(44944),	-- Aura of Uncertainty	
+q(45029),	-- Talon's Vengeance - Intro Complete	
 q(45031),	--
 q(45077),	--
 q(45078),	--
 q(45100),	--
 q(45124),	--
-q(45129),	-- Appearance
-q(45130),	-- Appearance
-q(45131),	-- Appearance
-q(45161),	-- 7.1.5 Special - 850 - Special - Brawlers - Fight 01 - Tracking Quest
-q(45164),	-- 7.1.5 Special - 850 - Special - Brawlers - Fight 02 - Tracking Quest
-q(45165),	-- 7.1.5 Class Hall - Brawlers - Fight 01 - Overmax Reward Credit - Tracking Quest
-q(45170),	-- Tracking Quest
-q(45303),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 03 - Tracking Quest
-q(45309),	-- 7.1.5 Class Hall - Brawlers - Fight 02 - Overmax Reward Credit - Tracking Quest
-q(45310),	-- 7.1.5 Class Hall - Brawlers - Fight 03 - Overmax Reward Credit - Tracking Quest
-q(45315),	-- 7.1.5 Class Hall - Brawlers - Intro - Tracking Quest - Has Picked up Quest Item
+q(45129),	-- Appearance	
+q(45130),	-- Appearance	
+q(45131),	-- Appearance	
+q(45161),	-- 7.1.5 Special - 850 - Special - Brawlers - Fight 01 - Tracking Quest	
+q(45164),	-- 7.1.5 Special - 850 - Special - Brawlers - Fight 02 - Tracking Quest	
+q(45165),	-- 7.1.5 Class Hall - Brawlers - Fight 01 - Overmax Reward Credit - Tracking Quest	
+q(45170),	-- Tracking Quest	
+q(45303),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 03 - Tracking Quest	
+q(45309),	-- 7.1.5 Class Hall - Brawlers - Fight 02 - Overmax Reward Credit - Tracking Quest	
+q(45310),	-- 7.1.5 Class Hall - Brawlers - Fight 03 - Overmax Reward Credit - Tracking Quest	
+q(45315),	-- 7.1.5 Class Hall - Brawlers - Intro - Tracking Quest - Has Picked up Quest Item	
 q(45336),	--
 q(45338),	--
-q(45352),	-- Touch of a Titan
+q(45352),	-- Touch of a Titan	
 q(45371),	--
-q(45422),	-- Edict of the God-King
-q(45517),	-- Brinebeard the Risen
+q(45422),	-- Edict of the God-King	
+q(45517),	-- Brinebeard the Risen	
 q(45519),	--
 q(45521),	--
 q(45529),	--
-q(45546),	-- Free Attempt Used
+q(45546),	-- Free Attempt Used	
 q(45558),	--
 q(45606),	--
-q(45636),	-- Dual Boss - Free Attempt Used [DNT]
-q(45745),	-- Legion 110 PvP
+q(45636),	-- Dual Boss - Free Attempt Used [DNT]	
+q(45745),	-- Legion 110 PvP	
 q(45768),	--
-q(45775),	-- FLAG (DNT)
+q(45775),	-- FLAG (DNT)	
 q(45832),	--
 q(45860),	--
 q(45941),	--
-q(45976),	-- 7.1.5 Class Hall - Investigate the Broken Shore - Mission Tracking Quest
-q(45978),	-- 7.1.5 Class Hall - All - Broken Shore Mission 01
-q(45979),	-- 7.1.5 Class Hall - All - Broken Shore Mission 02
-q(45980),	-- 7.1.5 Class Hall - All - Broken Shore Mission 03
-q(45981),	-- 7.1.5 Class Hall - All - Broken Shore Mission 04
-q(45982),	-- 7.1.5 Class Hall - All - Broken Shore Mission 05
-q(45983),	-- 7.1.5 Class Hall - All - Broken Shore Mission 05
-q(45984),	-- 7.1.5 Class Hall - Paladin - Investigate the Broken Shore - Q01 - See Dead Messenger
-q(46033),	-- Healer - Free Attempt Used [DNT]
+q(45976),	-- 7.1.5 Class Hall - Investigate the Broken Shore - Mission Tracking Quest	
+q(45978),	-- 7.1.5 Class Hall - All - Broken Shore Mission 01	
+q(45979),	-- 7.1.5 Class Hall - All - Broken Shore Mission 02	
+q(45980),	-- 7.1.5 Class Hall - All - Broken Shore Mission 03	
+q(45981),	-- 7.1.5 Class Hall - All - Broken Shore Mission 04	
+q(45982),	-- 7.1.5 Class Hall - All - Broken Shore Mission 05	
+q(45983),	-- 7.1.5 Class Hall - All - Broken Shore Mission 05	
+q(45984),	-- 7.1.5 Class Hall - Paladin - Investigate the Broken Shore - Q01 - See Dead Messenger	
+q(46033),	-- Healer - Free Attempt Used [DNT]	
 q(46114),	--
-q(46118),	-- Larry test quest
+q(46118),	-- Larry test quest	
 q(46181),	--
 q(46289),	--
 q(46303),	--
@@ -1476,7 +1475,7 @@ q(46925),	--
 q(46934),	--
 q(46936),	--
 q(46937),	--
-q(47149),	-- Legion Season 3 and 4 - Gladiator's Plate Armor
+q(47149),	-- Legion Season 3 and 4 - Gladiator's Plate Armor	
 q(47187),	--
 q(47190),	--
 q(47192),	--
@@ -1484,14 +1483,14 @@ q(47265),	--
 q(47417),	--
 q(47626),	--
 q(47655),	--
-q(47658),	-- DNT
+q(47658),	-- DNT	
 q(47842),	--
 q(47875),	--
 q(47876),	--
 q(47886),	--
 q(47893),	--
 q(48220),	--
-q(48457),	-- Tracking Quest
+q(48457),	-- Tracking Quest	
 7.3.5.25928
 q(49760),	--
 q(49761),	--
@@ -1499,71 +1498,26 @@ q(49762),	--
 q(49763),	--
 q(49764),	--
 10.0.7.47910
-q(74392),	--
+q(74392),	-- PTR:Reach South	
 10.0.7.48966
 q(75449),	--
 10.1.0.48480
-q(71053),	-- PTR:Hermit Kill Quest
-q(72027),	-- PTR:[DNT] Training Kill Quest JKP
-q(72454),	-- PTR:[PH] Moved to 10.1.5
-q(72455),	--
-q(72457),	--
-q(72458),	--
-q(72459),	--
-q(72460),	-- PTR:[PH] Moved to 10.1.5
-q(72461),	-- PTR:[PH] Moved to 10.1.5
-q(72480),	-- PTR:[DNT] Training Collect Quest
-q(72513),	-- PTR:Our Destiny
-q(72514),	-- PTR:The High Creche
-q(72515),	-- PTR:The Contingency
 q(72664),	--
-q(72665),	-- PTR:[PH] Moved to 10.1.5
-q(72666),	-- PTR:[PH] Moved to 10.1.5
-q(72667),	-- PTR:[PH] Moved to 10.1.5
-q(72668),	-- PTR:[PH] Moved to 10.1.5
-q(72670),	--
-q(72674),	--
-q(72679),	--
-q(72831),	--
-q(72832),	--
-q(72833),	--
-q(72885),	-- PTR:Loamm Placeholder Quest
+q(72885),	-- PTR:Loamm Placeholder Quest	
 q(72887),	--
-q(72932),	-- PTR:Our Father's Legacy - DEPRECATED
-q(72957),	-- PTR:A Sundered Road [DNT]
-q(72960),	-- PTR:[NYI] Refti Cleaning
-q(72986),	--
-q(73077),	-- PTR:This Might Sting
-q(73081),	-- PTR:Stress Fractures
-q(73085),	-- PTR:Cold Feet
-q(73086),	--
-q(73090),	--
-q(73091),	-- PTR:Crystalsong Forest
-q(73092),	--
-q(73093),	--
+q(72932),	-- PTR:Our Father's Legacy - DEPRECATED	
+q(72957),	-- PTR:A Sundered Road [DNT]	
+q(72960),	-- PTR:[NYI] Refti Cleaning	
 q(73099),	--
-q(73151),	-- PTR:Hats Off
-q(73188),	--
 q(73195),	--
 q(73695),	--
 q(73712),	--
 q(73713),	--
-q(74335),	--
 q(74438),	--
-q(74514),	-- PTR:The Slowest Fan Club
-q(74522),	--
-q(74523),	--
 q(74524),	--
-q(74525),	--
 q(74537),	--
 q(74560),	--
 q(74564),	--
-q(74568),	-- PTR:They Who Would Burn Us
-q(74569),	-- PTR:Deny Them Resources
-q(74570),	-- PTR:Aid Our Wounded
-q(74571),	-- PTR:Clear a Path
-q(74572),	-- PTR:Make it Rain
-q(74783),	--
 q(74785),	--
 q(74797),	--
 q(74798),	--
@@ -1607,25 +1561,14 @@ q(74893),	--
 q(74904),	--
 q(74958),	--
 q(75017),	--
-q(75018),	--
 q(75021),	--
-q(75022),	-- PTR:Vinyeti
-q(75027),	-- PTR:Aerial Domination
-q(75028),	--
-q(75029),	--
+q(75022),	-- Vinyeti	
+q(75027),	-- PTR:Aerial Domination	
 q(75137),	--
-q(75140),	--
 q(75142),	--
-q(75144),	--
 q(75157),	--
-q(75162),	-- PTR:Conjuring Elements
-q(75182),	-- PTR:Grand Theft Mammoth
-q(75183),	--
-q(75184),	--
-q(75187),	--
-q(75188),	--
+q(75162),	-- Conjuring Elements	
 q(75201),	--
-q(75203),	--
 q(75204),	--
 q(75205),	--
 q(75206),	--
@@ -1638,7 +1581,7 @@ q(75220),	--
 q(75225),	--
 q(75226),	--
 q(75229),	--
-q(75234),	-- PTR:Scratch and Sniff
+q(75234),	-- Scratch and Sniff	
 q(75235),	--
 q(75242),	--
 q(75243),	--
@@ -1647,30 +1590,18 @@ q(75264),	--
 q(75279),	--
 q(75282),	--
 q(75287),	--
-q(75304),	-- PTR:I Need... a Tailor
-q(75305),	--
 q(75313),	--
-q(75314),	-- PTR:Hadexia
+q(75314),	-- Hadexia	
 q(75315),	--
 q(75316),	--
 q(75337),	--
-q(75338),	-- PTR:Lavermix
+q(75338),	-- Lavermix	
 q(75341),	--
-q(75342),	-- PTR:Kronkapace
-q(75368),	-- PTR:Stones and Scales
-q(75372),	-- PTR:Drive Them Before Us
-q(75373),	-- PTR:Charge of the Ottuk Brigade
-q(75374),	-- PTR:To Defend the Span
-q(75376),	-- PTR:Suffuse, Reuse, Recycle
-q(75382),	-- PTR:Portal Combat
-q(75384),	-- PTR:Payback's a Mammoth
+q(75342),	-- Kronkapace	
 q(75389),	--
-q(75393),	-- PTR:Making Scents
-q(75398),	-- PTR:Honor the Flame
-q(75408),	--
+q(75393),	-- Making Scents	
 q(75415),	--
 q(75416),	--
-q(75417),	--
 q(75418),	--
 q(75429),	--
 q(75434),	--
@@ -1681,12 +1612,10 @@ q(75445),	--
 q(75446),	--
 q(75452),	--
 q(75453),	--
-q(75456),	-- PTR:News From Beneath
-q(75458),	--
 q(75477),	--
 q(75514),	--
-q(75516),	-- PTR:Squish Squash
-q(75517),	-- PTR:Sneak and Sniff
+q(75516),	-- Successful Interventions	 PTR:Squish Squash	
+q(75517),	-- Sneak and Sniff	
 q(75524),	--
 q(75545),	--
 q(75546),	--
@@ -1714,7 +1643,7 @@ q(75570),	--
 q(75571),	--
 q(75572),	--
 q(75574),	--
-q(75576),	-- PTR:Grim Guzzler Invasion!
+q(75576),	-- Grim Guzzler Invasion!	
 q(75577),	--
 q(75578),	--
 q(75579),	--
@@ -1736,7 +1665,6 @@ q(75594),	--
 q(75595),	--
 q(75596),	--
 q(75597),	--
-q(75598),	--
 q(75599),	--
 q(75606),	--
 q(75607),	--
@@ -1745,23 +1673,16 @@ q(75613),	--
 q(75614),	--
 q(75615),	--
 q(75616),	--
-q(75617),	-- PTR:Honor the Flame
 q(75618),	--
-q(75620),	-- PTR:Reflections in Light
-q(75621),	-- PTR:Element Whispers
+q(75620),	-- Liars in Light	 PTR:Reflections in Light	
+q(75621),	-- Element Whispers	
 10.1.0.48537
-q(75622),	-- PTR:Calling All Competitors!
 q(75627),	--
 q(75628),	--
 q(75629),	--
 q(75630),	--
 q(75631),	--
-q(75640),	-- PTR:Honor the Flame
-q(75642),	--
-q(75645),	-- PTR:Honor the Flame
-q(75647),	-- PTR:Honor the Flame
 q(75648),	--
-q(75650),	-- PTR:Honor the Flame
 q(75666),	--
 10.1.0.48661
 q(75710),	--
@@ -1769,14 +1690,6 @@ q(75715),	--
 q(75716),	--
 q(75717),	--
 q(75718),	--
-q(75719),	-- PTR:[DNT] Test Quest
-q(75724),	-- PTR:Like the Niffen Do
-q(75725),	-- PTR:Off to the Track
-q(75726),	--
-q(75727),	-- PTR:The Smelliest Tabard
-q(75728),	-- PTR:Bartering Boulders
-q(75730),	-- PTR:Slitherdrake Watching
-q(75731),	-- PTR:Scented Boots
 q(75732),	--
 q(75733),	--
 q(75734),	--
@@ -1786,27 +1699,12 @@ q(75737),	--
 q(75738),	--
 q(75739),	--
 q(75740),	--
-q(75741),	-- PTR:Bundle of Boulders
-q(75742),	-- PTR:Drake Helms
-q(75744),	-- PTR:A Token of Our Gratitude
 q(75756),	--
-q(75762),	--
 q(75763),	--
-q(75765),	-- PTR:Liquid Art
-q(75766),	-- PTR:Ruby in the Rough
-q(75767),	-- PTR:Good Time Boy
-q(75768),	-- PTR:Lucky Ducky
-q(75769),	-- PTR:Drawing a Blank
-q(75770),	-- PTR:A Glass of Bubbly
-q(75771),	-- PTR:Incense Replay
-q(75772),	-- PTR:Flask Manager
-q(75773),	-- PTR:Little Blank Book
 q(75774),	--
 q(75775),	--
 q(75818),	--
 q(75819),	--
-q(75831),	-- PTR:Barter Up
-q(75836),	--
 q(75837),	--
 q(75838),	--
 q(75839),	--
@@ -1833,9 +1731,6 @@ q(75862),	--
 q(75863),	--
 q(75864),	--
 q(75866),	--
-q(75869),	--
-q(75870),	--
-q(75871),	--
 10.1.0.48776
 q(75893),	--
 q(75894),	--
@@ -1854,7 +1749,6 @@ q(75907),	--
 q(75909),	--
 q(75911),	--
 q(75912),	--
-q(75914),	--
 q(75915),	--
 q(75917),	--
 q(75925),	--
@@ -1862,17 +1756,14 @@ q(75926),	--
 q(75927),	--
 q(75929),	--
 q(75931),	--
-q(75937),	-- PTR:No Time Like The Present
 q(75942),	--
 q(75943),	--
 q(75944),	--
 q(75946),	--
 q(75947),	--
 q(75968),	--
-q(75985),	-- PTR:Sleep Well, Warrior
 q(75992),	--
 q(75995),	--
-q(75997),	--
 q(75999),	--
 q(76001),	--
 q(76002),	--
@@ -1886,37 +1777,16 @@ q(76010),	--
 q(76011),	--
 q(76012),	--
 10.1.0.48898
-q(75996),	-- PTR:Your Weight in Gold
+q(75996),	-- Your Weight in Gold	
 q(76013),	--
-q(76015),	-- PTR:Heart of Iron
 q(76018),	--
 q(76019),	--
 q(76020),	--
-q(76027),	-- PTR:Flapping and Screaming
-q(76028),	-- PTR:Dragon Isles Supplies
-q(76029),	-- PTR:Dragon Isles Supplies
-q(76030),	-- PTR:Airborne Winding
-q(76031),	-- PTR:Dragon Isles Supplies
-q(76067),	-- PTR:Signed, Sealed, Self-Delivered
-q(76081),	-- PTR:Liars of Spirit
+q(76027),	-- Flapping and Screaming	
+q(76081),	-- Liars of Spirit	
 q(76082),	--
-q(76083),	-- PTR:Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder
-q(76085),	--
-q(76086),	-- PTR:Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder
-q(76102),	--
-q(76103),	--
-q(76104),	--
-q(76105),	--
-q(76106),	--
-q(76107),	--
-q(76108),	--
 q(76109),	--
 q(76111),	--
-q(76112),	--
-q(76113),	--
-q(76114),	--
-q(76120),	--
-q(76121),	--
 q(76123),	--
 q(76124),	--
 q(76125),	--
@@ -1935,16 +1805,11 @@ q(76137),	--
 q(76138),	--
 q(76139),	--
 10.1.0.49092
-q(75936),	-- PTR:Slimy Yet Satisfying
-q(75998),	-- PTR:Crispety Crunchety
-q(76004),	-- PTR:Deep Cuts
 q(76172),	--
 q(76173),	--
 q(76174),	--
 q(76200),	--
 q(76202),	--
 10.1.0.49190
-q(76208),	--
-q(76209),	--
 q(76215),	--
 q(76216),	--
