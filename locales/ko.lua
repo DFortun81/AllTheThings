@@ -858,12 +858,11 @@ for key,value in pairs({
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
-		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
+		[-1150] = "로암 니펜",											-- Loamm Niffen
 		--TODO: [-1151] = "Bartering",								-- Bartering
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
 		[-1200] = "지스케라 금고",										-- Zskera Vaults
-		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
-		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
+		[-1202] = "피락의 습격",											-- Fyrakk Assaults
 		--TODO: [-1203] = "Sniffenseeking",							-- Sniffenseeking
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",

@@ -870,12 +870,11 @@ for key,value in pairs({
 		[-1140] = "瓦德拉肯联军",										-- Valdrakken Accord
 		[-1143] = "每30分钟稀有",										-- TODO: DF Rare Rotation
 		[-1144] = "每周专业知识",										-- Weekly Profession Header
-		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
+		[-1150] = "峈姆鼹鼠人",											-- Loamm Niffen
 		--TODO: [-1151] = "Bartering",								-- Bartering
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
 		[-1200] = "兹斯克拉宝库",										-- Zskera Vaults
-		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
-		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
+		[-1202] = "菲莱克突袭",											-- Fyrakk Assaults
 		--TODO: [-1203] = "Sniffenseeking",							-- Sniffenseeking
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",

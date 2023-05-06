@@ -846,13 +846,12 @@ for key,value in pairs({
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 		[-1143] = "Редкие DF по расписанию",						-- DF Rare Rotation
 		[-1144] = "Еженедельные Очки Знаний Профессий",				-- Weekly Profession Header
-		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
-		--TODO: [-1151] = "Bartering",								-- Bartering
+		[-1150] = "Лоаммские ниффы",								-- Loamm Niffen
+		[-1151] = "Обмен",											-- Bartering
 		[-1152] = "Первые Изделия",									-- First Crafts
 		[-1200] = "Зкерские хранилища",								-- Zskera Vaults
-		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
-		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
-		--TODO: [-1203] = "Sniffenseeking",							-- Sniffenseeking
+		[-1202] = "Налеты Фиракка",									-- Fyrakk Assaults
+		[-1203] = "Нюхорысканье",									-- Sniffenseeking
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",

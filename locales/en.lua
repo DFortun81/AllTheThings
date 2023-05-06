@@ -1425,7 +1425,6 @@ app.L = {
 		[-1151] = "Interface\\Icons\\achievement_guildperk_bartering",								-- Bartering
 		[-1152] = 4622272,																			-- First Crafts (inv-10-blacksmithing-consumable-repairhammer-color1)
 		[-1200] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_ring_4_omni",					-- Zskera Vaults
-		[-1201] = "Interface\\Icons\\inv_shadowflame_missile",										-- Researchers Under Fire Scenario
 		[-1202] = "Interface\\Icons\\inv_fyrakk_dragonbreath",										-- Fyrakk Assaults
 		[-1203] = "Interface\\Icons\\inv_pet_mole",													-- Sniffenseeking
 	-- Warrior order hall lore items
@@ -1977,7 +1976,6 @@ app.L = {
 		[-1151] = "Bartering",														-- Bartering
 		[-1152] = "First Crafts",													-- First Crafts
 		[-1200] = "Zskera Vaults",													-- Zskera Vaults
-		[-1201] = "Researchers Under Fire Scenario",								-- Researchers Under Fire Scenario
 		[-1202] = "Fyrakk Assaults",												-- Fyrakk Assaults
 		[-1203] = "Sniffenseeking",													-- Sniffenseeking
 		[-1204] = AVAILABLE,														-- Available

@@ -857,13 +857,12 @@ for key,value in pairs({
 		[-1140] = "Concordat de Valdrakken",						-- Valdrakken Accord
 		[-1143] = "Rotation Rare de DF",							-- DF Rare Rotation
 		[-1144] = "Connaissance hebdomadaire de profession",		-- Weekly Profession Header
-		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
-		--TODO: [-1151] = "Bartering",								-- Bartering
+		[-1150] = "Flairans de Terreau",							-- Loamm Niffen
+		[-1151] = "Marchandage",									-- Bartering
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
 		[-1200] = "Caveaux de Zskera",								-- Zskera Vaults
-		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
-		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
-		--TODO: [-1203] = "Sniffenseeking",							-- Sniffenseeking
+		[-1202] = "Assauts de Fyrakka",								-- Fyrakk Assaults
+		[-1203] = "Recherches olfactives",							-- Sniffenseeking
 	-- Warrior order hall lore items
 		[-2200] = "Le grand Odyn et le seigneur du feu",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
