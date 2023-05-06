@@ -782,7 +782,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197095),	-- Highland Drake: Gold and White Armor
 			i(197119),	-- Highland Drake: Helm
 			i(197134),	-- Highland Drake: Spiked Legs
-			i(197104),	-- Highland Drake: Tapered Chin
 			i(197146),	-- Highland Drake: White Scales
 		})),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
