@@ -217,7 +217,6 @@ root(ROOTS.Unsorted, {
 				i(205305),	-- Zaralek Arachnid Armbands
 				i(205309),	-- Loyal Attendant's Gaze
 				i(205317),	-- Crystalpod Gauntlets
-				i(205318),	-- Guardian Golem's Legplates
 				i(205319),	-- Deepflayer Shoulderguards
 				i(205320),	-- Greatbelt of the Stronk
 				i(205323),	-- Rock-Lined Pauldrons
@@ -452,7 +451,6 @@ root(ROOTS.Unsorted, {
 				i(203731),	-- Enchanted Bandage
 				i(204088),	-- Quartzite Spore Bile
 				i(204175),	-- Unknown Core
-				i(204178),	-- Snailcatcher Net
 				i(204197),	-- Shard of an Earth Portal
 				i(204198),	-- Shard of an Fire Portal
 				i(204271),	-- Blacktalon Napalm

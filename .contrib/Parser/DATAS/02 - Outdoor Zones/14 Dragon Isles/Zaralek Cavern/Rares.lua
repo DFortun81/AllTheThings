@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75285, true),
 					i(205306),	-- Aquiferous Raiment
+					i(205318),	-- Guardian Golem's Legplates
 					i(203307),	-- Winding Slitherdrake: Plated Brow (DM!)
 				},
 			}),
