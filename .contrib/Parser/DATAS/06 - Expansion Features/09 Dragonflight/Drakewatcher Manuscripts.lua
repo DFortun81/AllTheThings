@@ -932,7 +932,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
 			i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
-			i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
 		})),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
 			i(197583),	-- Windborne Velocidrake: Exposed Finned Back (DM!)

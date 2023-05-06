@@ -263,6 +263,7 @@ i(202278, 73058);	-- Renewed Proto-Drake: Antlers
 i(197358, 69559);	-- Renewed Proto-Drake: Curved Spiked Brow
 i(202279, 73056);	-- Renewed Proto-Drake: Malevolent Horns
 i(202274, 73055);	-- Renewed Proto-Drake: Plated Brow
+i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
 i(202273, 73054);	-- Renewed Proto-Drake: Stubby Snout
 i(197583, 69787);	-- Windborne Velocidrake: Exposed Finned Back
 i(197626, 69831);	-- Windborne Velocidrake: Exposed Finned Neck
@@ -278,7 +279,6 @@ i(197590, 69794);	-- Windborne Velocidrake: Small Head Fin
 i(197629, 69835);	-- Windborne Velocidrake: Spiked Neck
 -- Unknown --
 i(202277, 73057);	-- Renewed Proto-Drake: Bruiser Horns
-i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
 
 ------------------
 -- PATCH 10.1.0 --
