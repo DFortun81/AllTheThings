@@ -2753,7 +2753,8 @@ local keys = {
 [75526]="First Rock Mouse",
 [75527]="Second Rock Mouse",
 [75534]="Third Rock Mouse",
-[75535]="Fourth Rock Mouse"}}
+[75535]="Fourth Rock Mouse",
+[76118]="Accept Book from Wrathion"}}
 
 local L = app.L;
 for k,t in pairs(keys) do
