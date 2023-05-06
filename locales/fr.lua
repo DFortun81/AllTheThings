@@ -434,7 +434,6 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur l’ensemble du compte.";
 		--TODO: L.LEVELREQ_CHECKBOX_TOOLTIP = "Enable this option if you want to see the level requirements in the tooltip.";
 		--TODO: L.CLASSES_CHECKBOX = "Classes";
 		--TODO: L.CLASSES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of class requirements in the tooltip.";
-		--TODO: L.RACES_CHECKBOX = "Races";
 		--TODO: L.RACES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of race requirements in the tooltip.";
 		--TODO: L.SPEC_CHECKBOX = "Specializations";
 		--TODO: L.SPEC_CHECKBOX_TOOLTIP = "Enable this option to show the loot specialization information of items in the item's tooltip as provided by the Game Client.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.";

@@ -29,6 +29,9 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 	L.FLIGHT_PATHS = "飞行路线";
 	L.KNOWN_BY = "已知 ";
 	L.REQUIRES = "要求";
+	if GetLocale() == "zhTW" then
+		L.REQUIRES = "需要";
+	end
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = "请把错误报告给 ATT Discord 的 #retail-errors！谢谢！";
 	L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 将多行报告复制到剪贴板）";
@@ -437,7 +440,6 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 		L.LEVELREQ_CHECKBOX_TOOLTIP = "如果您想在鼠标提示中查看等级要求，请启用此选项。";
 		L.CLASSES_CHECKBOX = "职业";
 		L.CLASSES_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中看到完整的职业需求列表，请启用此选项。";
-		L.RACES_CHECKBOX = "种族";
 		L.RACES_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中看到完整的种族要求列表，请启用此选项。";
 		L.SPEC_CHECKBOX = "专精";
 		L.SPEC_CHECKBOX_TOOLTIP = "启用该选项，可以在游戏客户端提供的物品鼠标提示中显示物品的战利品专精信息。\n\n注意：无论该设置如何，这些图标仍将出现在 ATT 小列表中。";
