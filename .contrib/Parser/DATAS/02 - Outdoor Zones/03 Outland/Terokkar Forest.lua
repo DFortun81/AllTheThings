@@ -274,6 +274,7 @@ root(ROOTS.Zones, {
 					["g"] = {
 						p(514, {	-- Flayer Youngling
 							["crs"] = { 62555 },	-- Flayer Youngling
+							["description"] = "Found in Razorthorn Rise on the border of Hellfire and Terokkar.",
 						}),
 						p(417, {	-- Rat
 							["crs"] = { 61366 },	-- Rat

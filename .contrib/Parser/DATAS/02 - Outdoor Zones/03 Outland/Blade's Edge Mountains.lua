@@ -150,18 +150,22 @@ root(ROOTS.Zones, {
 						}),
 						p(1164, {	-- Cogblade Raptor
 							["crs"] = { 68841 },	-- Cogblade Raptor
+							["description"] ="Found often to the left and right of Death's Door."
 						}),
 						p(482, {	-- Rock Viper
 							["crs"] = { 62184 },	-- Rock Viper
 						}),
 						p(528, {	-- Scalded Basilisk Hatchling
 							["crs"] = { 62628 },	-- Scalded Basilisk Hatchling
+							["coord"] = { 72.8, 20.6, BLADES_EDGE_MOUNTAINS },
+							["description"] = "Found in a fairly large area around the coord, above the road.",
 						}),
 						p(414, {	-- Scorpid
 							["crs"] = { 61326 },	-- Scorpid
 						}),
 						p(637, {	-- Skittering Cavern Crawler
 							["crs"] = { 62638 },		-- Skittering Cavern Crawler
+							["description"] = "Found only in the two caves that connect Blade's Edge to Zangarmarsh.",
 						}),
 					},
 				})),

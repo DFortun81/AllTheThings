@@ -146,6 +146,7 @@ root(ROOTS.Zones, {
 					}),
 					p(519, {	-- Fel Flame
 						["crs"] = { 62621 },	-- Fel Flame
+						["description"] = "Found around the Hand of Gul'dan in old Shadowmoon Valley and fel areas in Tanaan.",
 					}),
 					p(414, {	-- Scorpid
 						["crs"] = { 61326 },	-- Scorpid
