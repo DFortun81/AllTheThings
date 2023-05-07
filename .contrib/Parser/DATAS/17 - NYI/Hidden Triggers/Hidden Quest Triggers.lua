@@ -1762,6 +1762,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(25633),	-- An Occupation of Time - completed with quest 25581 & 25954
 		q(25634),	-- A Better Vantage - completed with quest 25582 & 25955
 		q(25635),	-- Upon the Scene of Battle - completed with quest 25583 & 25956
+		q(26178),	-- Planning for the Future - completed with 11960
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
 		q(26398),	-- Walk With The Earth Mother - completed with 26397
 		q(26522),	-- Faces of Evil - completed with 26357 & 26521

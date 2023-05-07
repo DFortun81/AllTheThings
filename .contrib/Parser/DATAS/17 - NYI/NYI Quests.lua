@@ -537,7 +537,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(29096),	-- Mor'shan Caravan Pick-Up
 			q(27946),	-- NYI
 			q(28601),	-- Old Puttery
-			q(26178),	-- Planning for the Future
 			q(25435),	-- Pressure is Mounting
 			q(25384),	-- Raw Materials
 			q(26459),	-- Researching the Corruption
