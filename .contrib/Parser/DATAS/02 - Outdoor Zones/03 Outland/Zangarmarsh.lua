@@ -272,6 +272,8 @@ root(ROOTS.Zones, {
 					}),
 					p(515, {	-- Sporeling Sprout
 						["crs"] = { 62564 },	-- Sporeling Sprout
+						["coord"] = { 20.0, 51.6, ZANGARMARSH },
+						["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with thr Sporeggar faction.",
 					}),
 				})),
 				-- #endif
@@ -1769,11 +1771,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(9734),	-- Return to the Marsh (NYI) - completed with quest 9732
 	q(9733),	-- Warning the Cenarion Circle (NYI) - completed with quest 9724
 });
-
--- These quests never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(10459),	-- Revered Among the Cenarion Expedition
-	}),
-}));
--- #endif

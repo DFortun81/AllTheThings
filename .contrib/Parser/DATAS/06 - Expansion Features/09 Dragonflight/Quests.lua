@@ -211,39 +211,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(70045, {	-- Truths and Revelations [H]
-			["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
-			["provider"] = { "n", 193889 },	-- Kodethi
-			["coord"] = { 55.9, 12.7, DUROTAR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_10_0_2_LAUNCH,
-		}),
-		q(70044, {    -- Truths and Revelations [A]
-            ["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
-            ["provider"] = { "n", 193890 },	-- Dervishian
-            ["coord"] = { 23.1, 56.2, STORMWIND_CITY },
-            ["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_10_0_2_LAUNCH,
-		}),
-		q(70053, {    -- Lessons From Our Past [A]
-            ["sourceQuests"] = { 70044 },	-- Truths and Revelations [A]
-            ["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
-            ["coord"] = { 40.6, 49.7, STORMWIND_CITY },
-            ["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_10_0_2_LAUNCH,
-		}),
-		q(70054, {	-- Lessons From Our Past [H]
-			["sourceQuests"] = { 70045 },	-- Truths and Revelations [H]
-			["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
-			["coord"] = { 49.2, 73.8, ORGRIMMAR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_10_0_2_LAUNCH,
-		}),
-	}),
-}));
-
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(QUESTS, {
 		q(72751),	-- Triggers whenever you collect one of the Coin quests from your Adventurer's Journal.

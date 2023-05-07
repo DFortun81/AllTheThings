@@ -918,11 +918,3 @@ root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
 		q(56524),	-- Queen Azshara killed (Mythic)
 	}),
 }));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(56836),	-- The Eternal Palace: Master's Call
-		q(56837),	-- The Eternal Palace: Master's Call
-		q(56838),	-- The Eternal Palace: Master's Call
-	}),
-}));

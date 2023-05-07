@@ -2674,16 +2674,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
-
--- #if AFTER CATA
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(27018),	-- The Herald <NYI>
-		q(27150, {	-- The Menders' Stead [H]
-			["timeline"] = { "created 4.0.3.13277" },
-			["races"] = HORDE_ONLY,
-			["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
-		}),
-	}),
-}));
--- #endif

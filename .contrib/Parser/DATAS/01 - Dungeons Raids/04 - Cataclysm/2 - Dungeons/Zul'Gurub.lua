@@ -281,9 +281,6 @@ root("Instances", tier(CATA_TIER, {
 					q(29241,  {	-- Break the Godbreaker
 						["provider"] = { "n", 53024 },			-- Bloodslayer Zala
 					}),
-					q(29174,  {	-- Break Their Spirits
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(29175,  {	-- Break Their Spirits
 						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
 					}),
@@ -318,14 +315,8 @@ root("Instances", tier(CATA_TIER, {
 							i(ZANDALAR_BARGAINING_TOKEN),
 						},
 					})),
-					q(29168,  {	-- Secondary Targets
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(29173,  {	-- Secondary Targets
 						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
-					}),
-					q(29169,  {	-- The Beasts Within
-						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(29172,  {	-- The Beasts Within
 						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
@@ -712,14 +703,10 @@ root("Instances", tier(CATA_TIER, {
 						i(69818),	-- Giant Sack
 					}),
 					n(52414),	-- Tor-Tun
-					i(69802, {	-- Band of the Gurubashi Berserker
-					}),
-					i(69803, {	-- Gurubashi Punisher
-					}),
-					i(69800, {	-- Spiritguard Drape
-					}),
-					i(69796, {	-- Spiritcaller Cloak
-					}),
+					i(69802),	-- Band of the Gurubashi Berserker
+					i(69803),	-- Gurubashi Punisher
+					i(69800),	-- Spiritguard Drape
+					i(69796),	-- Spiritcaller Cloak
 				}),
 				n(ZONE_DROPS, bubbleDown({ ["timeline"] = { ADDED_10_0_7 }, ["modID"] = 0, }, {
 					i(BLUE_HAKKARI_BIJOU),

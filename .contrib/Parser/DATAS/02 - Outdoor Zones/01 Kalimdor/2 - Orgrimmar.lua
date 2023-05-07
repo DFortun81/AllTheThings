@@ -5277,7 +5277,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(3024),    -- Bkp 2700 Enforcer
 						i(3025),    -- Bkp 42 Ultra
 						i(3027),    -- Heavy Recurve Bow
-						i(2511),    -- Hunters Boomstick
+						i(2511),    -- Hunter's Boomstick
 						i(3023),    -- Large Bore Blunderbuss
 						i(2509),    -- Ornate Blunderbuss
 						i(3026),    -- Reinforced Bow
@@ -5325,7 +5325,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						851,    -- Cutlass
 						922,    -- Dacian Falx
 						2024,    -- Espadon
-						2528,    -- falchion
+						2528,    -- Falchion
 						2207,    -- Jambiya
 						2209,    -- Kris
 						923,    -- Longsword
@@ -6688,7 +6688,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(922),		-- Dacian Falx
 						i(15904),	-- Deadly Fist Blades
 						i(2024),	-- Espadon
-						i(2528),	-- falchion
+						i(2528),	-- Falchion
 						i(2207),	-- Jambiya
 						i(2209),	-- Kris
 						i(15906, {	-- Left-Handed Brass Knuckles
@@ -7312,7 +7312,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(1194),	-- Bastard Sword
 						i(2479),	-- Broad Axe
 						i(2130),	-- Club
-						i(2492),	-- cudgel
+						i(2492),	-- Cudgel
 						i(2139),	-- Dirk
 						i(1197),	-- Giant Mace
 						i(2134),	-- Hand Axe

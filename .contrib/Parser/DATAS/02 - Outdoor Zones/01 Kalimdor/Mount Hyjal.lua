@@ -126,6 +126,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				p(479, {	-- Elfin Rabbit
 					["crs"] = { 62178 },	-- Elfin Rabbit
+					["coords"] = {
+						{ 58.2, 16.6, MOUNT_HYJAL },
+						{ 65.8, 20.8, MOUNT_HYJAL },
+					},
+					["description"] = "Found mostly around Nordrassil and the tree.",
 				}),
 				p(415, {	-- Fire Beetle
 					["crs"] = { 61328 },	-- Fire Beetle

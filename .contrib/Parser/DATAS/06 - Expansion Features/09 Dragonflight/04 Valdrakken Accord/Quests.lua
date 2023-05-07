@@ -656,6 +656,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197145),	-- Highland Drake: Bronze Scales (DM!)
 					i(197391),	-- Renewed Proto-Drake: Bronze Scales (DM!)
 					i(197613),	-- Windborne Velocidrake: Bronze Scales (DM!)
+					i(203351, {	-- Winding Slitherdrake: Bronze Scales (DM!)
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 				},
 			}),
 			q(72695, {	-- Renown Supplies

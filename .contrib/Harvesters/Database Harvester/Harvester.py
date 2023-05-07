@@ -72,6 +72,7 @@ def get_thing_data(thing: type[Thing], build: str) -> list[str]:
             thing_list.append(thing.extract_table_info(row, build) + "\n")
         except KeyError as error:
             print(f"Cursed build: {build}\nKeyError: {error}")
+    print(thing_list[-1])
     return thing_list
 
 
@@ -536,9 +537,9 @@ def give_name_item() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.1.0.49318", "Retail")
+# add_latest_data("10.1.0.49444", "Retail")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
 """Step 5: Run create_missing_files() and (you have to uncomment it)"""
-create_missing_files()
+# create_missing_files()

@@ -1533,12 +1533,3 @@ root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
 		}),
 	}),
 }));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(58801),	-- Enter the Void
-		q(58904, {	-- Shards of Corruption
-			i(174867),	-- Shard of Corruption (Starts the Quest?)
-		}),
-	}),
-}));

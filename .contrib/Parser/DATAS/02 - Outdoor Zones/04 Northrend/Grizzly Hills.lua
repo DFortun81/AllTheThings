@@ -1806,10 +1806,3 @@ root(ROOTS.Zones, {
 root(ROOTS.HiddenQuestTriggers, {
 	q(13524),	-- Escape from Silverbrook (Triggered when you complete the other Escape from Silverbrook quest.)
 });
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(12233),	-- [Depricated]Sewing Your Seed
-	}),
-}));
--- #endif

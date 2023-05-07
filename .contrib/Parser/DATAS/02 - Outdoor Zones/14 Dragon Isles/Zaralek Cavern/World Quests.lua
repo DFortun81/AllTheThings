@@ -29,6 +29,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75063, {	-- Ambergrease
 						["coord"] = { 50.4, 74.1, ZARALEK_CAVERN },
 					}),
+					pvp(q(75162, {	-- Conjuring Elements
+						["coord"] = { 54.2, 39.6, ZARALEK_CAVERN },
+						["g"] = {
+							i(204473),	-- Element Siphoner
+							ach(17852, {	-- Elemental Conjuror
+								crit(1),	-- Emerald Infusion
+								crit(2),	-- Crimson Infusion
+								crit(3),	-- Primordial Infusion
+								crit(4),	-- Prismatic Infusion
+								crit(5),	-- Stone Infusion
+								crit(6),	-- Temporal Infusion
+							}),
+						},
+					})),
 					q(75030, {	-- Crystal Catastrophe!
 						["coord"] = { 59.0, 45.6, ZARALEK_CAVERN },
 					}),

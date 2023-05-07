@@ -413,6 +413,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 							{ "i", AWAKENED_AIR, 1 },	-- 1x Awakened Air
 						},
 					}),
+					i(203352, {	-- Winding Slitherdrake: Green Scales (DM!)
+						["minReputation"] = { 2503, 19 },	-- Maruuk Centaur Renown 19
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 400 },
+							{ "i", AWAKENED_AIR, 1 },	-- 1x Awakened Air
+						},
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 						-- RENOWN 22 --
 					i(197982, {	-- Pattern: Finished Prototype Explorer's Barding (RECIPE!)
 						["minReputation"] = { 2503, 22 },	-- Maruuk Centaur Renown 22

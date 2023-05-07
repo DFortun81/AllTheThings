@@ -148,7 +148,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 					i(165840, {	-- Interdimensional Pet Portal
 						["questID"] = 54264,
+						-- #if BEFORE 9.0.2
 						["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
+						-- #endif
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(139003, {	-- Pocket Pet Portal

@@ -357,6 +357,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
 					i(197143),	-- Highland Drake: Green Scales (DM!)
 					i(197389),	-- Renewed Proto-Drake: Green Scales (DM!)
+					i(203352, {	-- Winding Slitherdrake: Green Scales (DM!)
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 				},
 			}),
 				-- RENOWN 20 --

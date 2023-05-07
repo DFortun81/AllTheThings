@@ -1966,16 +1966,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
-
--- #if AFTER CATA
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(26527, {	-- Gryphon Master Talonaxe
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-		q(26282, {	-- The Favor of Akil'darah
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-	}),
-}));
--- #endif

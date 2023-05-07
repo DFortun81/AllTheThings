@@ -7557,11 +7557,3 @@ root(ROOTS.Zones, {
 		}),
 	})),
 });
-
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		q(13692, {	-- The Sword and the Sea
-			["timeline"] = { "created 3.3.0.10772" },
-		}),
-	}),
-});

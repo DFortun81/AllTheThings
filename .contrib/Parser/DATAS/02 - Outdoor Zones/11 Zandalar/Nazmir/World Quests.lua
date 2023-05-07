@@ -345,7 +345,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			q(50519),	-- Za'amar
 			q(50518),	-- Zanxib
 			q(50461),	-- Zujothgul
-			un(NEVER_IMPLEMENTED, q(49675)),	-- showing in /attwq as [Quest 49675] no record of the quest found on Wowhead
 		})),
 	}),
 })));

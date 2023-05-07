@@ -219,15 +219,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					p(552, {	-- Twilight Fiendling
 						["crs"] = { 62914 },
+						["coords"] = {
+							{ 59.6, 51.0, TWILIGHT_HIGHLANDS },
+							{ 40.2, 47.6, TWILIGHT_HIGHLANDS },
+							{ 58.2, 29.8, TWILIGHT_HIGHLANDS },
+						},
+						["description"] = "Found in small areas around these coords."
 					}),
 					p(470, {	-- Twilight Spider
 						["crs"] = { 62117 },
+						["coord"] = { 59.6, 51.0, TWILIGHT_HIGHLANDS },
+						["description"] = "Found most commonly around Firebeard's Patrol.",
 					}),
 					pet(2677, {	-- Twilight Whelpling (PET!)
+						["coord"] = { 20.6, 57.6, TWILIGHT_HIGHLANDS },
 						["timeline"] = { "added 8.2.0" },
 					}),
 					p(548, {	-- Wildhammer Gryphon Hatchling
 						["crs"] = { 62900 },
+						["coords"] = {
+							{ 56.4, 15.8, TWILIGHT_HIGHLANDS },
+							{ 48.4, 28.6, TWILIGHT_HIGHLANDS },
+						},
 					}),
 					p(549, {	-- Yellow-Bellied Marmot
 						["crs"] = { 62904 },

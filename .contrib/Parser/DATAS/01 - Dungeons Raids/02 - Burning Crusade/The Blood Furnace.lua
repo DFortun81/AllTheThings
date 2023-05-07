@@ -386,10 +386,4 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(35566),	-- The Blood Furnace Reward Quest - Heroic completion
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(29544),	-- The Blood Furnace
-		q(29545),	-- The Blood Furnace
-	}),
-}));
 -- #endif

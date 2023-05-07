@@ -132,14 +132,6 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 					title(479),	-- Malicious %s
 				},
 			}),
-			ach(17852, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 }, }, {	-- Elemental Conjuror
-				crit(1),	-- Emerald Infusion
-				crit(2),	-- Crimson Infusion
-				crit(3),	-- Primordial Infusion
-				crit(4),	-- Prismatic Infusion
-				crit(5),	-- Stone Infusion
-				crit(6),	-- Temporal Infusion
-			})),
 			ach(16613, {	-- Finder's Keepers
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 			}),

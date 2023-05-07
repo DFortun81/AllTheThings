@@ -970,11 +970,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	--q(60773),	-- Renown 30/Channeling anima
 	--q(60873),	-- Flying around in necrolord base
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(62696),	-- A Call to Service
-		q(59598),	-- Good for the Soul
-		q(63061),	-- Helping Hand
-		q(61690),	-- The Honor of Service
-	}),
-}));

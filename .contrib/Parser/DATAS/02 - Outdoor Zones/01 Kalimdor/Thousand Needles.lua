@@ -2567,17 +2567,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(1174, {	-- Gnomes Win!
-			i(5857),	-- Gnome Prize Box
-		}),
-		q(1099, {	-- Goblins Win!
-			i(5858),	-- Goblin Prize Box
-		}),
-		q(28601, {	-- Old Puttery
-			["timeline"] = { "created 4.0.3.13329" },
-		}),
-	}),
-}));

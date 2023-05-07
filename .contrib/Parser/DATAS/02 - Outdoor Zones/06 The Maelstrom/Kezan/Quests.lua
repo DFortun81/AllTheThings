@@ -175,9 +175,6 @@ _.Zones =
 						i(54306),	-- Vault Cracker Gloves
 					},
 				}),
-				q(28606, {	-- The Keys to the Hot Rod
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(28607, {	-- The Keys to the Hot Rod
 					["coord"] = { 58.3, 76.4, 194 },
 					["provider"] = { "n", 34874 },	-- Megs Dreadshredder
