@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205191),	-- Underlight Globe
 				},
 			}),
-			o(401828, {	-- Nal Ks'kol Reliquary
+			o(401828, {	-- Nal ks'kol Reliquary
 				["description"] = "Use the console nearby and solve the puzzle to unlock.",
 				["sourceQuests"] = { 72964 },	-- Singed
 				["coord"] = { 64.2, 75.0, ZARALEK_CAVERN },

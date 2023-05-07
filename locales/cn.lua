@@ -3965,7 +3965,7 @@ for key, value in pairs({
 	--TODO: [401241] = "Snubbed Snail Shells",	-- Snubbed Snail Shells
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401299] = "Broken Barter Boulder",	-- Broken Barter Boulder
-	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
+	--TODO: [401828] = "Nal ks'kol Reliquary",	-- Nal ks'kol Reliquary
 	--TODO: [401839] = "Dreamer's Bounty",	-- Dreamer's Bounty
 	--TODO: [402627] = "Well-Worn Kiln",	-- Well-Worn Kiln
 	--TODO: [402632] = "Brimstone Rescue Ring",	-- Brimstone Rescue Ring
