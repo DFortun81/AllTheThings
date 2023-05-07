@@ -1423,6 +1423,7 @@ for key,value in pairs({
 	[185165] = "군단 통신기",	-- Legion Communicator
 	[185166] = "현상 수배 전단",	-- Wanted Poster
 	[185168] = "강화된 지옥무쇠 궤짝",	-- Reinforced Fel Iron Chest
+	[185549] = "거대한 칼리리 알",	-- Monstrous Kaliri Egg
 	[186267] = "호박 제단",	-- Pumpkin Shrine
 	--TODO: [186278] = "Burning Wreckage",	-- Burning Wreckage
 	[186301] = "블랙후프 병기",	-- Blackhoof Armaments
@@ -3909,6 +3910,7 @@ for key,value in pairs({
 	--TODO: [392582] = "Defective Survival Pack",	-- Defective Survival Pack
 	[392583] = "공허결속 금고",	-- Void-Bound Strongbox
 	--TODO: [392587] = "Busted Wyrmhole Generator",	-- Busted Wyrmhole Generator
+	--TODO: [392591] = "Chest of the Flights",	-- Chest of the Flights
 	--TODO: [392593] = "Inconspicuous Data Miner",	-- Inconspicuous Data Miner
 	[393218] = "태고의 비전 보관함",	-- Primordial Arcane Cache
 	[393220] = "태고의 물감 보관함",	-- Primordial Paint Cache
@@ -3947,6 +3949,7 @@ for key,value in pairs({
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401299] = "Broken Barter Boulder",	-- Broken Barter Boulder
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
+	[401839] = "꿈꾸는 자의 은혜",	-- Dreamer's Bounty
 	--TODO: [402627] = "Well-Worn Kiln",	-- Well-Worn Kiln
 	--TODO: [402632] = "Brimstone Rescue Ring",	-- Brimstone Rescue Ring
 	--TODO: [402634] = "Zaqali Elder Spear",	-- Zaqali Elder Spear
