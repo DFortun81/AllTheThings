@@ -442,7 +442,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 							{ "i", TALLSTRIDER_SINEW, 5 },
-							{ "i", RESILIENT_LEATHER, 10 },
+							{ "i", TEMPORAL_DRAGONHEAD, 5 },
 						},
 					}),
 					i(199861, {	-- Tan Tuskarr Backpack
