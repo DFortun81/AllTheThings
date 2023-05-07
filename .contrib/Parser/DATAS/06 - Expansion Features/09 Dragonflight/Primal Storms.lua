@@ -10,6 +10,65 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 	n(PRIMAL_STORMS, {
 		["maps"] = { VALDRAKKEN },
 		["g"] = {
+			-- Storm-type based Achievement headers
+			n(ACHIEVEMENTS, {
+				header(HEADERS.Spell, 368847, {	-- Firestorm
+					ach(16487, {	-- Firestorms in Thaldraszus
+						["maps"] = { THALDRASZUS },
+					}),
+					ach(16482, {	-- Firestorms in The Azure Span
+						["maps"] = { THE_AZURE_SPAN },
+					}),
+					ach(16478, {	-- Firestorms in The Ohn'ahran Plains
+						["maps"] = { OHNAHRAN_PLAINS },
+					}),
+					ach(16466, {	-- Firestorms in The Waking Shores
+						["maps"] = { THE_WAKING_SHORES },
+					}),
+				}),
+				header(HEADERS.Spell, 252264, {	-- Sandstorm
+					ach(16486, {	-- Sandstorms in Thaldraszus
+						["maps"] = { THALDRASZUS },
+					}),
+					ach(16481, {	-- Sandstorms in The Azure Span
+						["maps"] = { THE_AZURE_SPAN },
+					}),
+					ach(16477, {	-- Sandstorms in The Ohn'ahran Plains
+						["maps"] = { OHNAHRAN_PLAINS },
+					}),
+					ach(16465, {	-- Sandstorms in The Waking Shores
+						["maps"] = { THE_WAKING_SHORES },
+					}),
+				}),
+				header(HEADERS.Spell, 373198, {	-- Snowstorm
+					ach(16488, {	-- Snowstorms in Thaldraszus
+						["maps"] = { THALDRASZUS },
+					}),
+					ach(16483, {	-- Snowstorms in The Azure Span
+						["maps"] = { THE_AZURE_SPAN },
+					}),
+					ach(16479, {	-- Snowstorms in The Ohn'ahran Plains
+						["maps"] = { OHNAHRAN_PLAINS },
+					}),
+					ach(16467, {	-- Snowstorms in The Waking Shores
+						["maps"] = { THE_WAKING_SHORES },
+					}),
+				}),
+				header(HEADERS.Spell, 77556, {	-- Thunderstorm
+					ach(16485, {	-- Thunderstorms in Thaldraszus
+						["maps"] = { THALDRASZUS },
+					}),
+					ach(16480, {	-- Thunderstorms in The Azure Span
+						["maps"] = { THE_AZURE_SPAN },
+					}),
+					ach(16475, {	-- Thunderstorms in The Ohn'ahran Plains
+						["maps"] = { OHNAHRAN_PLAINS },
+					}),
+					ach(16463, {	-- Thunderstorms in The Waking Shores
+						["maps"] = { THE_WAKING_SHORES },
+					}),
+				}),
+			}),
 			n(ACHIEVEMENTS, {
 				ach(16489, {	-- Chasing Storms in Thaldraszus
 					-- Meta Achievement
@@ -60,18 +119,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				ach(16500, {	-- Elemental Overload
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
-				ach(16487, {	-- Firestorms in Thaldraszus
-					["maps"] = { THALDRASZUS },
-				}),
-				ach(16482, {	-- Firestorms in The Azure Span
-					["maps"] = { THE_AZURE_SPAN },
-				}),
-				ach(16478, {	-- Firestorms in The Ohn'ahran Plains
-					["maps"] = { OHNAHRAN_PLAINS },
-				}),
-				ach(16466, {	-- Firestorms in The Waking Shores
-					["maps"] = { THE_WAKING_SHORES },
-				}),
 				ach(16492, {	-- Into the Storm
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -80,30 +127,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						16461,	-- Stormed Off
 						16502,	-- Storming the Runway
 					}},
-				}),
-				ach(16486, {	-- Sandstorms in Thaldraszus
-					["maps"] = { THALDRASZUS },
-				}),
-				ach(16481, {	-- Sandstorms in The Azure Span
-					["maps"] = { THE_AZURE_SPAN },
-				}),
-				ach(16477, {	-- Sandstorms in The Ohn'ahran Plains
-					["maps"] = { OHNAHRAN_PLAINS },
-				}),
-				ach(16465, {	-- Sandstorms in The Waking Shores
-					["maps"] = { THE_WAKING_SHORES },
-				}),
-				ach(16488, {	-- Snowstorms in Thaldraszus
-					["maps"] = { THALDRASZUS },
-				}),
-				ach(16483, {	-- Snowstorms in The Azure Span
-					["maps"] = { THE_AZURE_SPAN },
-				}),
-				ach(16479, {	-- Snowstorms in The Ohn'ahran Plains
-					["maps"] = { OHNAHRAN_PLAINS },
-				}),
-				ach(16467, {	-- Snowstorms in The Waking Shores
-					["maps"] = { THE_WAKING_SHORES },
 				}),
 				ach(16490, {	-- Storm Chaser
 					-- Meta Achievement
@@ -174,18 +197,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				ach(16502),	-- Storming the Runway
-				ach(16485, {	-- Thunderstorms in Thaldraszus
-					["maps"] = { THALDRASZUS },
-				}),
-				ach(16480, {	-- Thunderstorms in The Azure Span
-					["maps"] = { THE_AZURE_SPAN },
-				}),
-				ach(16475, {	-- Thunderstorms in The Ohn'ahran Plains
-					["maps"] = { OHNAHRAN_PLAINS },
-				}),
-				ach(16463, {	-- Thunderstorms in The Waking Shores
-					["maps"] = { THE_WAKING_SHORES },
-				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
 				["description"] = "These drops appear to be available from any Rare (Primal or not) which spawns within an area affected by a Primal Storm.",
@@ -233,7 +244,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			}),
 			petbattle(filter(BATTLE_PETS, {
 				pet(3384, {	-- Storm-Touched Bluefeather (PET!)
-					["maps"] = { THALDRASZUS },
+					["maps"] = { THALDRASZUS, THE_PRIMALIST_FUTURE },
 				}),
 				pet(3354, {	-- Storm-Touched Ottuk (PET!)
 					["maps"] = { THE_AZURE_SPAN },
@@ -246,167 +257,195 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			})),
 			n(RARES, sharedData({
-				["isDaily"] = true,
+				["coords"] = {
+					-- possible Primal Storm spawn locations
+					{ 26.8, 75.4, THE_WAKING_SHORES },
+					{ 29.6, 53.8, THE_WAKING_SHORES },
+					{ 63.0, 26.2, THE_WAKING_SHORES },
+					{ 36.1, 36.1, OHNAHRAN_PLAINS },
+					{ 48.6, 25.2, THE_AZURE_SPAN },
+					{ 58.8, 68.4, THE_AZURE_SPAN },
+					{ 60.7, 56.3, THALDRASZUS },
+					{ 53.4, 26.2, THE_PRIMALIST_FUTURE },
+				},
 			},{
-				n(193644, {	-- Bouldron
-					["coord"] = { 26.2, 75.6, THE_WAKING_SHORES },
-					["questID"] = 73986,
-					["g"] = {
-						bo(69951, true),
-						i(200231),	-- Flaming Stonescale Bulwark
-						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
-					},
-				}),
-				n(193645, {	-- Crystalus
-					["coord"] = { 36.1, 36.1, OHNAHRAN_PLAINS },
-					["questID"] = 73989,
-					["g"] = {
-						bo(69952, true),
-						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
-						i(200301),	-- Reclaimed Tuskarr Harpoon
-					},
-				}),
-				n(193650, {	-- Emblazion <Progeny of Fire>
-					["coord"] = { 29.6, 53.8, THE_WAKING_SHORES },
-					["questID"] = 73991,
-					["g"] = {
-						bo(69955, true),
+				header(HEADERS.Spell, 368847, sharedData({	-- Firestorm
+					["isDaily"] = true,
+				},{
+					n(COMMON_BOSS_DROPS, sharedData({
+						["crs"] = {
+							193650,	-- Emblazion <Progeny of Fire>
+							193648,	-- Infernum
+							193675,	-- Kain Firebrand
+							193686,	-- Neela Firebane
+						},
+					},{
 						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
-						i(200307),	-- Viciously Hooked Cleaver
-					},
-				}),
-				n(193655, {	-- Frozion <Progeny of Water>
-					["coord"] = { 22.8, 71.8, THE_WAKING_SHORES },
-					["questID"] = 73993,
-					["g"] = {
-						bo(69961, true),
-						i(200311),	-- Bonespike Mallet
-						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
-					},
-				}),
-				n(193653, {	-- Gaelzion <Progeny of Air>
-					["coords"] = {
-						{ 63.0, 26.2, THE_WAKING_SHORES },
-						{ 43.4, 31.4, THE_AZURE_SPAN },
-					},
-					["questID"] = 73995,
-					["g"] = {
-						bo(69959, true),
-						i(199337),	-- Bag of Furious Winds (TOY!)
-						i(200180),	-- Crystallized Lightning Staff
-					},
-				}),
-				n(193654, {	-- Gravlion <Progeny of Earth>
-					["coord"] = { 60.7, 56.3, THALDRASZUS },
-					["questID"] = 73998,
-					["g"] = {
-						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
+					})),
+					n(193650, {	-- Emblazion <Progeny of Fire>
+						["questID"] = 73991,
+						["g"] = {
+							bo(69955, true),
+							i(200307),	-- Viciously Hooked Cleaver
+						},
+					}),
+					n(193648, {	-- Infernum
+						["questID"] = 74005,
+						["g"] = {
+							bo(69954, true),
+							i(200150),	-- Infernum's Furnace
+						},
+					}),
+					n(193675, {	-- Kain Firebrand
+						["questID"] = 74006,
+						["g"] = {
+							bo(69970, true),
+							i(200155),	-- Haphazardly Welded Protector
+						},
+					}),
+					n(193686, {	-- Neela Firebane
+						["questID"] = 74016,
+						["g"] = {
+							bo(69975, true),
+							i(200181),	-- Blade of Blazing Torment
+						},
+					}),
+				})),
+				header(HEADERS.Spell, 252264, sharedData({	-- Sandstorm
+					["isDaily"] = true,
+				},{
+					n(COMMON_BOSS_DROPS, sharedData({
+						["crs"] = {
+							193644,	-- Bouldron
+							193654,	-- Gravlion <Progeny of Earth>
+							193652,	-- Grizzlerock
+							193680,	-- Zurgaz Corebreaker
+						},
+					},{
 						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
-						bo(69960, true),
-					},
-				}),
-				n(193652, {	-- Grizzlerock
-					["coord"] = { 59.4, 61.6, THALDRASZUS },
-					["questID"] = 73999,
-					["g"] = {
-						bo(69956, true),
-						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
-						i(200145),	-- Hilted Monolith
-					},
-				}),
-				-- Iceblade Trio
-				n(193677, {	-- Maeleera <First Iceblade>
-					["coord"] = { 48.6, 25.2, THE_AZURE_SPAN },
-					["crs"] = {
-						193678, -- Fieraan <Second Iceblade>
-						193679,	-- Leerain <Third Iceblade>
-					},
-					["questID"] = 74009,
-					["g"] = {
-						bo(69971, true),
+					})),
+					n(193644, {	-- Bouldron
+						["questID"] = 73986,
+						["g"] = {
+							bo(69951, true),
+							i(200231),	-- Flaming Stonescale Bulwark
+						},
+					}),
+					n(193654, {	-- Gravlion <Progeny of Earth>
+						["questID"] = 73998,
+						["g"] = {
+							bo(69960, true),
+						},
+					}),
+					n(193652, {	-- Grizzlerock
+						["questID"] = 73999,
+						["g"] = {
+							bo(69956, true),
+							i(200145),	-- Hilted Monolith
+						},
+					}),
+					n(193680, {	-- Zurgaz Corebreaker
+						["questID"] = 74039,
+						["g"] = {
+							bo(69972, true),
+						},
+					}),
+				})),
+				header(HEADERS.Spell, 373198, sharedData({	-- Snowstorm
+					["isDaily"] = true,
+				},{
+					n(COMMON_BOSS_DROPS, sharedData({
+						["crs"] = {
+							193645,	-- Crystalus
+							193655,	-- Frozion <Progeny of Water>
+							193677,	-- Maeleera <First Iceblade>
+							193682,	-- Rouen Icewind
+						},
+					},{
 						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
-						i(200250),	-- Frost Tipped Glaive
-					},
-				}),
-				n(193678, {	-- Fieraan <Second Iceblade>
-					-- questID shared with Maeleera/Leerain, don't duplicate
-				}),
-				n(193679, {	-- Leerain <Third Iceblade>
-					-- questID shared with Maeleera/Fieraan, don't duplicate
-				}),
-				n(193648, {	-- Infernum
-					["coord"] = { 58.8, 68.4, THE_AZURE_SPAN },
-					["questID"] = 74005,
-					["g"] = {
-						bo(69954, true),
-						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
-						i(200150),	-- Infernum's Furnace
-					},
-				}),
-				n(193675, {	-- Kain Firebrand
-					["coord"] = { 64.0, 72.2, THE_WAKING_SHORES },
-					["questID"] = 74006,
-					["g"] = {
-						bo(69970, true),
-						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
-						i(200155),	-- Haphazardly Welded Protector
-					},
-				}),
-				n(193647, {	-- Karantun
-					["coord"] = { 26.8, 75.4, THE_WAKING_SHORES },
-					["questID"] = 74007,
-					["g"] = {
-						bo(69953, true),
+					})),
+					n(193645, {	-- Crystalus
+						["questID"] = 73989,
+						["g"] = {
+							bo(69952, true),
+							i(200301),	-- Reclaimed Tuskarr Harpoon
+						},
+					}),
+					n(193655, {	-- Frozion <Progeny of Water>
+						["questID"] = 73993,
+						["g"] = {
+							bo(69961, true),
+							i(200311),	-- Bonespike Mallet
+						},
+					}),
+					-- Iceblade Trio
+					n(193677, {	-- Maeleera <First Iceblade>
+						["crs"] = {
+							193678, -- Fieraan <Second Iceblade>
+							193679,	-- Leerain <Third Iceblade>
+						},
+						["questID"] = 74009,
+						["g"] = {
+							bo(69971, true),
+							i(200250),	-- Frost Tipped Glaive
+						},
+					}),
+					n(193678, {	-- Fieraan <Second Iceblade>
+						-- questID shared with Maeleera/Leerain, don't duplicate
+					}),
+					n(193679, {	-- Leerain <Third Iceblade>
+						-- questID shared with Maeleera/Fieraan, don't duplicate
+					}),
+					n(193682, {	-- Rouen Icewind
+						["questID"] = 74027,
+						["g"] = {
+							bo(69973, true),
+						},
+					}),
+				})),
+				header(HEADERS.Spell, 77556, sharedData({	-- Thunderstorm
+					["isDaily"] = true,
+				},{
+					n(COMMON_BOSS_DROPS, sharedData({
+						["crs"] = {
+							193653,	-- Gaelzion <Progeny of Air>
+							193647,	-- Karantun
+							193684,	-- Pipspark Thundersnap
+							193674,	-- Voraazka
+						},
+					},{
 						i(199337),	-- Bag of Furious Winds (TOY!)
 						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
-						i(200170),	-- Stormbringer Bow
-					},
-				}),
-				n(193686, {	-- Neela Firebane
-					["coord"] = { 67.6, 27.0, THE_WAKING_SHORES },
-					["questID"] = 74016,
-					["g"] = {
-						bo(69975, true),
-						i(200181),	-- Blade of Blazing Torment
-						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
-					},
-				}),
-				n(193684, {	-- Pipspark Thundersnap
-					["coord"] = { 53.4, 26.2, THE_PRIMALIST_FUTURE },
-					["questID"] = 74022,
-					["g"] = {
-						bo(69974, true),
-						i(199337),	-- Bag of Furious Winds (TOY!)
-						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
-						i(200741),	-- Pipspark's Prestigious Pendant of Protection
-					},
-				}),
-				n(193682, {	-- Rouen Icewind
-					["coord"] = { 61.4, 60.6, THALDRASZUS },
-					["questID"] = 74027,
-					["g"] = {
-						bo(69973, true),
-						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
-					},
-				}),
-				n(193674, {	-- Voraazka
-					["coord"] = { 27.7, 72.6, THE_WAKING_SHORES },
-					["questID"] = 74038,
-					["g"] = {
-						bo(69969, true),
-						i(199337),	-- Bag of Furious Winds (TOY!)
-						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
-						i(200136),	-- Monsoonic Armguards
-					},
-				}),
-				n(193680, {	-- Zurgaz Corebreaker
-					["coord"] = { 24.3, 75.5, THE_WAKING_SHORES },
-					["questID"] = 74039,
-					["g"] = {
-						bo(69972, true),
-						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
-					},
-				}),
+					})),
+					n(193653, {	-- Gaelzion <Progeny of Air>
+						["questID"] = 73995,
+						["g"] = {
+							bo(69959, true),
+							i(200180),	-- Crystallized Lightning Staff
+						},
+					}),
+					n(193647, {	-- Karantun
+						["questID"] = 74007,
+						["g"] = {
+							bo(69953, true),
+							i(200170),	-- Stormbringer Bow
+						},
+					}),
+					n(193684, {	-- Pipspark Thundersnap
+						["questID"] = 74022,
+						["g"] = {
+							bo(69974, true),
+							i(200741),	-- Pipspark's Prestigious Pendant of Protection
+						},
+					}),
+					n(193674, {	-- Voraazka
+						["questID"] = 74038,
+						["g"] = {
+							bo(69969, true),
+							i(200136),	-- Monsoonic Armguards
+						},
+					}),
+				})),
 			})),
 			n(QUESTS, {
 				q(72686, {	-- Storm Surge
@@ -464,13 +503,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				i(200263),	-- Echo of the Heights (PET!)
 				i(200255),	-- Echo of the Inferno (PET!)
 				i(200675),	-- Elemental Overflow Cluster
-				
+
 				-- Enchanting knowledge drops (one-time)
 				i(201356),	-- Glimmer of Fire
 				i(201357),	-- Glimmer of Frost
 				i(201358),	-- Glimmer of Air
 				i(201359),	-- Glimmer of Earth
-				
+
 				i(199749),	-- Primal Air Core
 				i(199691),	-- Primal Earth Core
 				i(199750),	-- Primal Fire Core
