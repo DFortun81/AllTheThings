@@ -1424,6 +1424,7 @@ for key,value in pairs({
 	[185165] = "Legionskommunikator",	-- Legion Communicator
 	[185166] = "Steckbrief",	-- Wanted Poster
 	[185168] = "Verstärkte Teufelseisentruhe",	-- Reinforced Fel Iron Chest
+	[185549] = "Monströses Kaliriei",	-- Monstrous Kaliri Egg
 	[186267] = "Kürbisschrein",	-- Pumpkin Shrine
 	[186278] = "Brennendes Wrack",	-- Burning Wreckage	--TODO: This was manually translated
 	[186301] = "Waffen der Schwarzhufe",	-- Blackhoof Armaments
@@ -3910,6 +3911,7 @@ for key,value in pairs({
 	--TODO: [392582] = "Defective Survival Pack",	-- Defective Survival Pack
 	[392583] = "Leerengebundene Schließkassette",	-- Void-Bound Strongbox
 	--TODO: [392587] = "Busted Wyrmhole Generator",	-- Busted Wyrmhole Generator
+	[392591] = "Truhe der Schwärme",	-- Chest of the Flights
 	--TODO: [392593] = "Inconspicuous Data Miner",	-- Inconspicuous Data Miner
 	[393218] = "Urzeitliche Arkantruhe",	-- Primordial Arcane Cache
 	[393220] = "Urzeitliche Farbentruhe",	-- Primordial Paint Cache
@@ -3948,6 +3950,7 @@ for key,value in pairs({
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401299] = "Broken Barter Boulder",	-- Broken Barter Boulder
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
+	[401839] = "Belohnung des Träumers",	-- Dreamer's Bounty
 	--TODO: [402627] = "Well-Worn Kiln",	-- Well-Worn Kiln
 	--TODO: [402632] = "Brimstone Rescue Ring",	-- Brimstone Rescue Ring
 	--TODO: [402634] = "Zaqali Elder Spear",	-- Zaqali Elder Spear

@@ -1427,6 +1427,7 @@ for key,value in pairs({
 	[185165] = "Comunicador de la Legión",	-- Legion Communicator
 	[185166] = "Cartel de Se busca",	-- Wanted Poster
 	[185168] = "Cofre de hierro vil reforzado",	-- Reinforced Fel Iron Chest
+	[185549] = "Huevo de kaliri monstruoso",	-- Monstrous Kaliri Egg
 	[186267] = "Santuario calabaza",	-- Pumpkin Shrine
 	--TODO: [186278] = "Burning Wreckage",	-- Burning Wreckage
 	[186301] = "Armamento Pezuñanegra",	-- Blackhoof Armaments
@@ -3913,6 +3914,7 @@ for key,value in pairs({
 	--TODO: [392582] = "Defective Survival Pack",	-- Defective Survival Pack
 	[392583] = "Caja fuerte ligada al Vacío",	-- Void-Bound Strongbox
 	--TODO: [392587] = "Busted Wyrmhole Generator",	-- Busted Wyrmhole Generator
+	[392591] = "Cofre de los Vuelos",	-- Chest of the Flights
 	--TODO: [392593] = "Inconspicuous Data Miner",	-- Inconspicuous Data Miner
 	[393218] = "Alijo Arcano primordial",	-- Primordial Arcane Cache
 	[393220] = "Alijo de pinturas primordial",	-- Primordial Paint Cache
@@ -3951,6 +3953,7 @@ for key,value in pairs({
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401299] = "Broken Barter Boulder",	-- Broken Barter Boulder
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
+	[401839] = "Botín de soñador",	-- Dreamer's Bounty
 	--TODO: [402627] = "Well-Worn Kiln",	-- Well-Worn Kiln
 	--TODO: [402632] = "Brimstone Rescue Ring",	-- Brimstone Rescue Ring
 	--TODO: [402634] = "Zaqali Elder Spear",	-- Zaqali Elder Spear

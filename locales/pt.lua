@@ -1423,6 +1423,7 @@ for key,value in pairs({
 	[185165] = "Comunicador da Legião",	-- Legion Communicator
 	[185166] = "Cartaz de Procura-se",	-- Wanted Poster
 	[185168] = "Baú Reforçado de Ferrovil",	-- Reinforced Fel Iron Chest
+	[185549] = "Ovo de Kaliri Monstruoso",	-- Monstrous Kaliri Egg
 	[186267] = "Altar da Abóbora",	-- Pumpkin Shrine
 	--TODO: [186278] = "Burning Wreckage",	-- Burning Wreckage
 	[186301] = "Armamentos dos Casco Negro",	-- Blackhoof Armaments
@@ -3909,6 +3910,7 @@ for key,value in pairs({
 	--TODO: [392582] = "Defective Survival Pack",	-- Defective Survival Pack
 	[392583] = "Caixa-forte Atada ao Caos",	-- Void-Bound Strongbox
 	--TODO: [392587] = "Busted Wyrmhole Generator",	-- Busted Wyrmhole Generator
+	--TODO: [392591] = "Chest of the Flights",	-- Chest of the Flights
 	--TODO: [392593] = "Inconspicuous Data Miner",	-- Inconspicuous Data Miner
 	[393218] = "Baú Arcano Primordial",	-- Primordial Arcane Cache
 	[393220] = "Baú de Tinta Primordial",	-- Primordial Paint Cache
@@ -3947,6 +3949,7 @@ for key,value in pairs({
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401299] = "Broken Barter Boulder",	-- Broken Barter Boulder
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
+	[401839] = "Tesouro da Sonhadora",	-- Dreamer's Bounty
 	--TODO: [402627] = "Well-Worn Kiln",	-- Well-Worn Kiln
 	--TODO: [402632] = "Brimstone Rescue Ring",	-- Brimstone Rescue Ring
 	--TODO: [402634] = "Zaqali Elder Spear",	-- Zaqali Elder Spear
