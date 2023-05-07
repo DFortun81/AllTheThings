@@ -174,6 +174,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					filter(FINGER_F, {
 						i(204916),	-- Deeprock Loop
 						i(204917),	-- Deeprock Ring
+						i(204918),	-- Deeprock Signet
 					}),
 					filter(LEATHER, {
 						i(204929),	-- Sunless Boots
@@ -197,7 +198,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					filter(NECK_F, {
 						i(204919),	-- Deeprock Pendant
-						i(204918),	-- Deeprock Signet
 					}),
 					filter(PLATE, {
 						i(204952),	-- Starless Armplates
