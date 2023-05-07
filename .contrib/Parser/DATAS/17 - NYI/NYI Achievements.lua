@@ -455,6 +455,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 8.1.0
 			tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 8.1.0" } }, {
 				ach(13318),	-- 100 Exalted Reputations
+				ach(13415),	-- Heroic: Crucible of Storms
 				ach(13432),	-- Mythic: Jadefire Masters
 				ach(13447),	-- Mythic: Jadefire Masters
 				ach(13444),	-- One Shot, One Kill

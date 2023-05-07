@@ -94,6 +94,7 @@ root(ROOTS.Zones, {
 				petbattle(filter(BATTLE_PETS, {
 					p(521, {	-- Fledgling Nether Ray
 						["crs"] = { 62627 },	-- Fledgling Nether Ray
+						["description"] = "Found only around Manaforges.",
 					}),
 					p(638, {	-- Nether Roach
 						["crs"] = { 62625 },	-- Nether Roach
@@ -2049,9 +2050,9 @@ root(ROOTS.Zones, {
 							30754,	-- Ancient Bone Mace
 							30749,	-- Draenic Sparring Blade
 							30750,	-- Draenic Warblade
-							30752,	-- Maghari Battleaxe
-							30755,	-- Maghari Fighting Claw
-							30751,	-- Maghari Light Axe
+							30752,	-- Mag'hari Battleaxe
+							30755,	-- Mag'hari Fighting Claw
+							30751,	-- Mag'hari Light Axe
 							30753,	-- Warphorn Spear
 						}},
 						["groups"] = {
@@ -2151,13 +2152,10 @@ appendGroups(COMMON_ENCHANTING_RECIPES, ASARNAN_MALIJ_GROUPS);
 -- #if AFTER TBC
 -- These quests never made it in.
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
+	n(ARMOR, {
 		i(134012, {	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
 			["timeline"] = { "removed 7.0.3.22248" },
 		}),
-		q(10187),	-- A Message for the Archmage
-		q(10441),	-- Peddling the Goods
-		q(10179),	-- The Custodian of Kirin'Var
 	}),
 }));
 -- #endif

@@ -1565,12 +1565,6 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["customCollect"] = "
 })));
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(58377),	-- Abomination Part: Magnificent Skin
-		q(58378),	-- Abomination Part: Regenerative Frame
-		q(58596),	-- Specter Of War: Visectus
-		q(58664),	-- Ultimate Makeover
-	}),
 	tier(SL_TIER, {
 		n(NECROLORD, {
 			i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus

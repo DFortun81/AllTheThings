@@ -341,35 +341,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(61326),	-- [[Deprecated]]
-		q(61327),	-- [[Deprecated]]
-		q(61328),	-- [[Deprecated]]
-		q(61329),	-- [[Deprecated]]
-		q(59816),	-- [DNT] Bwonsamdi's Plan
-		q(59820),	-- [DNT] Da Treacherous Loa
-		q(61138),	-- [DNT] Purge the Grove
-		q(59814),	-- [DNT] Words of Mueh'zala
-		q(59810),	-- [DNT]Just A Small Request
-		q(57820),	-- Diplomatic Relations
-		q(59608),	-- Don't Cross The Streams
-		q(60885),	-- Grove of Awekening
-		q(57821),	-- Keeping the Peace
-		q(61056),	-- Niya of Ardenweald
-		q(61881),	-- Pauldrons
-		q(61324),	-- Replenish the Reservoir
-		q(61325),	-- Return Lost Souls
-		q(63024),	-- Return Lost Souls
-		q(63025),	-- Return Lost Souls
-		q(63026),	-- Return Lost Souls
-		q(63027),	-- Return Lost Souls
-		q(59606),	-- The Anima Expert
-		q(57896, { ["_drop"] = { "g" }, }),	-- The Archon's Will
-		q(59318),	-- Work Not Wasted
-	}),
-}));
-
 root(ROOTS.HiddenQuestTriggers, {
 	-- Misson Table
 	q(60635),	-- Night Fae Mission Table / Unknown Venthyr

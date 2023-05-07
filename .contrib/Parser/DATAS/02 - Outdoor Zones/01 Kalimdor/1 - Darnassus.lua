@@ -918,28 +918,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						15905,    -- Brass Knuckles
 						1198,    -- Claymore
 						2029,    -- Cleaver
-						851,    -- cutlass
-						922,    -- dacian falx
-						927,    -- double axe
-						15904,    -- deadly fist blades
-						2024,    -- espadon
-						925,    -- flail
-						1197,    -- giant mace
-						2030,    -- gnarled staff
-						853,    -- hatchet
-						2028,    -- hammer
-						2207,    -- jambiya
-						2209,    -- kris
-						2507,    -- laminated recurve bow
-						928,    -- long staff
-						924,    -- maul
-						852,    -- mace
-						854,    -- quarter staff
-						3026,    -- reinforced bow
-						2026,    -- rock hammer
-						2027,    -- scimitar
-						15903,    -- slicing claw
-						1196,    -- tabar
+						851,    -- Cutlass
+						922,    -- Dacian Falx
+						927,    -- Double Axe
+						15904,    -- Deadly Fist Blades
+						2024,    -- Espadon
+						925,    -- Flail
+						1197,    -- Giant Mace
+						2030,    -- Gnarled Staff
+						853,    -- Hatchet
+						2028,    -- Hammer
+						2207,    -- Jambiya
+						2209,    -- Kris
+						2507,    -- Laminated Recurve Bow
+						928,    -- Long Staff
+						924,    -- Maul
+						852,    -- Mace
+						854,    -- Quarter Staff
+						3026,    -- Reinforced Bow
+						2026,    -- Rock Hammer
+						2027,    -- Scimitar
+						15903,    -- Slicing Claw
+						1196,    -- Tabar
 					}},
 					["groups"] = {
 						i(15906, {	-- Left-Handed Brass Knuckles
@@ -1159,37 +1159,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.0, 63.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						1194,    -- bastard sword
+						1194,    -- Bastard Sword
 						2025,    -- Bearded Axe
-						2479,    -- broad axe
+						2479,    -- Broad Axe
 						1198,    -- Claymore
-						2029,    -- cleaver
-						2130,    -- club
-						2492,    -- cudgel
-						851,    -- cutlass
-						2139,    -- dirk
-						2024,    -- espadon
-						1197,    -- giant mace
-						2488,    -- gladius
-						2030,    -- gnarled staff
-						2134,    -- hand axe
-						2028,    -- hammer
-						853,    -- hatchet
-						2207,    -- jambiya
-						2491,    -- large axe
-						2480,    -- large club
-						852,    -- mace
-						2208,    -- poniard
-						854,    -- quarter staff
-						2026,    -- rock hammer
-						2027,    -- scimitar
-						2131,    -- shortsword
-						2132,    -- short staff
-						2494,    -- stiletto
-						1196,    -- tabar
-						2490,    -- tomahawk
-						2495,    -- walking stick
-						2493,    -- wooden mallet
+						2029,    -- Cleaver
+						2130,    -- Club
+						2492,    -- Cudgel
+						851,    -- Cutlass
+						2139,    -- Dirk
+						2024,    -- Espadon
+						1197,    -- Giant Mace
+						2488,    -- Gladius
+						2030,    -- Gnarled Staff
+						2134,    -- Hand Axe
+						2028,    -- Hammer
+						853,    -- Hatchet
+						2207,    -- Jambiya
+						2491,    -- Large Axe
+						2480,    -- Large Club
+						852,    -- Mace
+						2208,    -- Poniard
+						854,    -- Quarter Staff
+						2026,    -- Rock Hammer
+						2027,    -- Scimitar
+						2131,    -- Shortsword
+						2132,    -- Short Staff
+						2494,    -- Stiletto
+						1196,    -- Tabar
+						2490,    -- Tomahawk
+						2495,    -- Walking Stick
+						2493,    -- Wooden Mallet
 					}},
 				}),
 				n(3561, {	-- Kyrai
@@ -1355,7 +1355,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						851,    -- Cutlass
 						922,    -- Dacian Falx
 						2024,    -- Espadon
-						2528,    -- falchion
+						2528,    -- Falchion
 						2207,    -- Jambiya
 						2209,    -- Kris
 						923,    -- Longsword

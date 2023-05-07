@@ -1950,14 +1950,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
-
--- #if AFTER CATA
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(38843),	-- Smashing Eggs
-		q(26138, {	-- Ferilon Leafborn
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-	}),
-}));
--- #endif

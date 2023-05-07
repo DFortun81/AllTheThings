@@ -320,9 +320,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27669,	-- Do the Honors
 					["isBreadcrumb"] = true,
 				}),
-				q(27925, {	-- Efficient Excavations
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(29327, {	-- Elemental Bonds: Doubt
 					["provider"] = { "n", 53524 },	-- Cyclonas
 					["coord"] = { 47.7, 88.9, ULDUM },
@@ -1150,16 +1147,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 
 -- #if AFTER CATA
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(28555),	-- Expel the Envoys
-		q(27946),	-- NYI
-		q(28270, {	-- Riding Shotgun
-			["_drop"] = { "g" },	-- We dont wanna any items on NYI Quests
-		}),
-		q(28743),	-- Tailgunner!
-		q(28240),	-- Tapped Out
-		q(28255),	-- Vhat's Next?
-	}),
 	tier(CATA_TIER, {
 		n(WEAPONS, {
 			i(65878),	-- Charbelching Wand

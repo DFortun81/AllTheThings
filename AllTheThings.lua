@@ -11930,7 +11930,8 @@ local armorTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
 	"Interface/ICONS/Inv_leather_draenordungeon_c_01shoulder",
 	"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder",
-	"Interface/ICONS/inv_leather_warfrontsalliance_c_01_shoulder"
+	"Interface/ICONS/inv_leather_warfrontsalliance_c_01_shoulder",
+	"Interface/ICONS/inv_shoulder_armor_dragonspawn_c_02",
 };
 local weaponTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon01",
@@ -11938,14 +11939,8 @@ local weaponTextures = {
 	"Interface/ICONS/inv_weapon_shortblade_112",
 	"Interface/ICONS/inv_weapon_shortblade_111",
 	"Interface/ICONS/inv_weapon_shortblade_102",
+	"Interface/ICONS/inv_weapon_shortblade_84",
 };
-
-local toc = select(4, GetBuildInfo());
-local v = "";
-if toc >= 100100 then
-	table.insert(armorTextures, "Interface/ICONS/inv_shoulder_armor_dragonspawn_c_02");
-	table.insert(weaponTextures, "Interface/ICONS/inv_weapon_shortblade_84");
-end
 
 local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
 local fields = {
@@ -12020,6 +12015,7 @@ fields.collected = function(t)
 		end
 		if t.s and ATTAccountWideData.Sources[t.s] then return 1; end
 		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
+		if t.itemID then return 1; end
 	end
 fields.saved = function(t)
 		return t.collected == 1;
@@ -12059,25 +12055,23 @@ app.CacheHeirlooms = function()
 
 	-- setup the armor tokens which will contain the upgrades for the heirlooms
 	local armorTokens = {
+		app.CreateItem(204336),	-- Awakened Heirloom Armor Casing
 		app.CreateItem(187997),	-- Eternal Heirloom Armor Casing
 		app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
 		app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
 		app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
 		app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
+		app.CreateItem(204336); -- Awakened Heirloom Armor Casing
 	};
 	local weaponTokens = {
+		app.CreateItem(204337),	-- Awakened Heirloom Scabbard
 		app.CreateItem(187998),	-- Eternal Heirloom Scabbard
 		app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
 		app.CreateItem(151615),	-- Weathered Heirloom Scabbard
 		app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
 		app.CreateItem(122339),	-- Ancient Heirloom Scabbard
+		app.CreateItem(204337);	-- Awakened Heirloom Scabbard
 	};
-
-	local toc = select(4, GetBuildInfo());
-	if toc >= 100100 then
-		table.insert(armorTokens, app.CreateItem(204336)); 	-- Awakened Heirloom Armor Casing
-		table.insert(weaponTokens, app.CreateItem(204337));	-- Awakened Heirloom Scabbard
-	end
 
 	-- cache the heirloom upgrade tokens
 	for i,item in ipairs(armorTokens) do
@@ -12092,7 +12086,6 @@ app.CacheHeirlooms = function()
 	for _,itemID in ipairs(heirloomIDs) do
 		if not uniques[itemID] then
 			uniques[itemID] = true;
-
 			heirloom = app.SearchForObject("itemID", itemID, "field");
 			if heirloom then
 				upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
@@ -23693,13 +23686,7 @@ end
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
 	-- app.PrintMemoryUsage("Startup")
-	local toc = select(4, GetBuildInfo());
-	local v = "";
-	if toc < 100100 then
-		v = GetAddOnMetadata("AllTheThings", "Version");
-	else
-		v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
-	end
+	local v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
 	-- if placeholder exists as the Version tag, then assume we are not on the Release version
 	if string.match(v, "version") then
 		app.Version = "[Git]";
@@ -24398,6 +24385,10 @@ app.InitDataCoroutine = function()
 
 	-- do a settings apply to ensure ATT windows which have now been created, are moved according to the current Profile
 	app.Settings:ApplyProfile();
+
+	-- clear harvest data on load in case someone forgets
+	AllTheThingsHarvestItems = {};
+	AllTheThingsArtifactsItems = {};
 
 	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 	DelayedCallback(app.LocationTrigger, 3);

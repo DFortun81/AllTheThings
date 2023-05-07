@@ -203,31 +203,7 @@ root(ROOTS.Unsorted, {
 				i(205229),	-- Magma Serpent Lure
 				i(205262),	-- Magmaclaw Lure
 				i(205276),	-- Deepflayer Lure
-				-- Rare DROPS
-				i(205294),	-- Sandals of Molten Scorn
-				i(205295),	-- Sediment Sifters
-				i(205297),	-- Flamewielder's Trousers
-				i(205298),	-- Belt of Floating Stone
-				i(205299),	-- Rudiment Cuffs
-				i(205300),	-- Magma Waders
-				i(205301),	-- Hardened Lava Handwraps
-				i(205302),	-- Underlight Headwrap
-				i(205303),	-- Leggings of Flowing Flame
-				i(205304),	-- Snareguard Sash
-				i(205305),	-- Zaralek Arachnid Armbands
-				i(205309),	-- Loyal Attendant's Gaze
-				i(205317),	-- Crystalpod Gauntlets
-				i(205318),	-- Guardian Golem's Legplates
-				i(205319),	-- Deepflayer Shoulderguards
-				i(205320),	-- Greatbelt of the Stronk
-				i(205323),	-- Rock-Lined Pauldrons
-				i(205324),	-- Moth Queen Mantle
-				i(205325),	-- Crystal Wing Shield
-				i(205331),	-- Zskorran Cleaver
-				i(205332),	-- Fist of the Demolisher
-				i(205333),	-- Obsidian Amulet of Transmutation
-				--
-				i(205421),	-- Ponzo's Scheming Topper
+				-- Blue Dragonflight Questline
 				i(205955),	-- Azure Renewal Mantle
 				i(205956),	-- Azure Renewal Cape
 				i(205957),	-- Azure Renewal Tabard
@@ -447,18 +423,10 @@ root(ROOTS.Unsorted, {
 				i(202705),	-- Snail Slime
 				i(202875),	-- Snail Lasso
 				i(203229),	-- Snail Slime
-				i(203387),	-- Oddly Familiar Training Weapon
-				i(203388),	-- Gunky Insignia
-				i(203389),	-- Shiny Rock
-				i(203391),	-- Dented Dwarven Pocketwatch
-				i(203392),	-- Old Mirror Shard
-				i(203393),	-- Spongy Loamshroom
 				i(203454),	-- Zaqali Equipment
 				i(203707),	-- Water Bucket
 				i(203731),	-- Enchanted Bandage
-				i(204088),	-- Quartzite Spore Bile
 				i(204175),	-- Unknown Core
-				i(204178),	-- Snailcatcher Net
 				i(204197),	-- Shard of an Earth Portal
 				i(204198),	-- Shard of an Fire Portal
 				i(204271),	-- Blacktalon Napalm
@@ -467,7 +435,6 @@ root(ROOTS.Unsorted, {
 				i(204325),	-- Crude Key Fragment
 				i(204326),	-- Strange Artifact
 				i(204327),	-- Titan Machine Part
-				i(204329),	-- Petrified Spider Leg
 				i(204331),	-- Djaradin Pillar Shard
 				i(204347),	-- Pool Contaminant
 				i(204349),	-- Bigger Wrench
@@ -477,14 +444,12 @@ root(ROOTS.Unsorted, {
 				i(204434),	-- Lava-Quenched Blade
 				i(204435),	-- Obsidian Tablet
 				i(204436),	-- Chipped Horn Signet
-				i(204473),	-- Element Siphoner
 				i(204637),	-- Boulder Chunk
 				i(201956),	-- [DNT] Snakey Eyes
 				i(204794),	-- Whelkshell Crystals
 				i(204796),	-- Deepflayer Dust
 				i(204800),	-- Scaly Stone Hide
 				i(204801),	-- Gelcap Spores
-				i(204817),	-- Underlight Cocoon Fibers
 				i(204824),	-- Torn Journal Entry
 				i(204830),	-- Shattered Horn Signet
 				i(205187),	-- Artisan's Consortium Flier
@@ -501,7 +466,6 @@ root(ROOTS.Unsorted, {
 				i(205366),	-- Dripping Clay Pot
 				i(205410),	-- Pungent Morsel
 				i(205795),	-- Wriggling Worm
-				i(205797),	-- Filthy Bundle
 				i(205900),	-- Shimmering Draconic Gem
 				i(205901),	-- Crunchy Beetle
 				i(205902),	-- Deepflayer Claw
@@ -610,6 +574,23 @@ root(ROOTS.Unsorted, {
 				i(206158),	-- Add Keystone Affix: Shielding
 				i(206200),	-- Obsidian Equipment Chest
 				i(206270),	-- Volcanic Equipment Chest
+				-- New
+				i(189885),	-- The Battlespoon
+				i(190095),	-- Ensemble: Vestment of the Honored Valarjar
+				i(190175),	-- Pippin
+				i(190200),	-- Feathered Drape of the Guardian
+				i(190205),	-- Sharpened Shank
+				i(190214),	-- Tiercel's Wing
+				i(190215),	-- Lost Crown of the Arcane
+				i(190216),	-- Feathered Cowl of the Guardian
+				i(190217),	-- Fang of the Mountain
+				i(190220),	-- Standard of the Guardian
+				i(190441),	-- Black Iron Blunderbuss
+				i(190613),	-- Savage Green Battle Turtle
+				i(190808),	-- High Priestess's Ceremonial Drape
+				i(190899),	-- Crimson Bicorne
+				i(204797),	-- Djaradin Boasting Tablets
+				i(204805),	-- Suspended Sulfuric Droplet
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {

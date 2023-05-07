@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 	m(THE_FORBIDDEN_REACH, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
-				-- Chapter 1 --
+				-- Chapter 0 --
 				q(74381, {	-- Hidden Legacies
 					["maps"] = { VALDRAKKEN },
 				}),
@@ -312,7 +312,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
 			}),
-			q(73194, {	-- PTR:Up Close and Personal
+			q(73194, {	-- Up Close and Personal
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
 			}),

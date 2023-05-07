@@ -2008,13 +2008,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
--- #if AFTER CATA
---[[
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(CATA_TIER, {
-		q(28070),	-- Adventurers Wanted: Blackrock Spire [Horde]
-		q(28071),	-- Adventurers Wanted: Blackrock Spire [Alliance]
-	}),
-}));
---]]
--- #endif

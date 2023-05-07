@@ -1163,8 +1163,6 @@ i(202283);	-- Reading Glasses
 i(199900);	-- Secondhand Survey Tools
 i(203734);	-- Snow Blanket
 i(203852);	-- Spore-Bound Essence
--- Unsorted --
-i(204220);	-- Hraxian's Unbreakable Will
 
 ------------------
 -- PATCH 10.1.0 --
@@ -1173,6 +1171,7 @@ i(205045);	-- B.B.F. Fist
 i(206343);	-- Crimson Legend's Pennant
 i(205419);	-- Jrumm's Drum
 i(205418);	-- Blazing Shadowflame Cinder
+i(204220);	-- Hraxian's Unbreakable Will
 i(204818);	-- Mallard Mortar
 i(205796);	-- Molten Lava Pack
 i(205936);	-- New Niffen No-Sniffin' Tonic

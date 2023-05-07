@@ -43,11 +43,6 @@ _.Zones =
 					["provider"] = { "n", 38935 },	-- Thrall
 					["sourceQuests"] = { 25098 },	-- The Warchief Wants You
 				}),
-				q(25124, {	-- Brute Brutality
-					["u"] = NEVER_IMPLEMENTED,
-					["provider"] = { "n", 39199 },	-- Assistant Greely
-					["sourceQuests"] = { 25110 },	-- Kaja'Cola Gives you IDEAS!™
-				}),
 				q(14031, {	-- Capturing the Unknown
 					["coord"] = { 31.2, 79.2, 174 },
 					["provider"] = { "n", 35769 },	-- Foreman Dampwick

@@ -1793,7 +1793,7 @@ root(ROOTS.Zones, {
 						["sym"] = {{"select","itemID",
 							30758,	-- Aldor Guardian Rifle
 							30757,	-- Draenic Light Crossbow
-							30759,	-- Maghari Light Recurve
+							30759,	-- Mag'hari Light Recurve
 						}},
 					}),
 					n(20097, {	-- Nula the Butcher <Cooking Supplies>
@@ -2194,14 +2194,3 @@ root(ROOTS.Zones, {
 		})),
 	})),
 });
-
--- #if AFTER TBC
--- These quests never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(13800),	-- Get My Keys
-		q(10375),	-- Obsidian Warbeads
-		q(13799),	-- Where Are My Keys?
-	}),
-}));
--- #endif

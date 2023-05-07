@@ -799,11 +799,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
---[[
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(CATA_TIER, {
-		q(28004),	-- Adventurers Wanted: The Deadmines [Horde]
-		q(28005),	-- Adventurers Wanted: The Deadmines [Alliance]
-	}),
-}));
-]]--

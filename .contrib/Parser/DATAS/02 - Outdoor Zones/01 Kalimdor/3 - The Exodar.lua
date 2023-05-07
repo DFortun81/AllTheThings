@@ -557,7 +557,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						-- added all
-						926,    -- battle axe
+						926,    -- Battle Axe
 						2025,    -- Bearded Axe
 						2520,    -- Broadsword
 						1198,    -- Claymore
@@ -566,7 +566,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						922,    -- Dacian Falx
 						927,    -- Double Axe
 						2024,    -- Espadon
-						2528,    -- falchion
+						2528,    -- Falchion
 						852,    -- Hatched
 						2207,    -- Jambiya
 						2209,    -- Kris

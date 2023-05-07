@@ -664,9 +664,6 @@ root(ROOTS.Zones, {
 						["description"] = "Must have or complete |cFFFFD700A Soldier in Need|r to see this quest.",
 						["sourceQuest"] = 11789,	-- A Soldier In Need
 					}),
-					q(11790, {	-- Cultists Among Us (NYI - duplicate)
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(11602, {	-- Cutting Off the Source
 						["qg"] = 25279,	-- Overlord Razgor
 						["coord"] = { 43.1, 54.9, BOREAN_TUNDRA },
@@ -2602,10 +2599,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(39783),	-- Battle Pet - Terky
 	}),
 });
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(11939),	-- ?????
-		q(12490),	-- Veehja's Revenge
-	}),
-}));

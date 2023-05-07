@@ -1161,11 +1161,3 @@ root(ROOTS.HiddenQuestTriggers,{
 		q(57776),	-- unknown tracking quest that appeared after speaking to Selina Dourman
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(7906),	-- Darkmoon Cards - Beast
-		q(11334),	-- He Shoots, He Scores!
-		q(11345),	-- Prizes for Pellets
-		q(29601),	-- The Darkmoon Field Guide
-	}),
-}));

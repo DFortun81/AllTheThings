@@ -1066,36 +1066,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 })));
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(58067, {	-- [DNT] DO NOT USE - Template Quest
-			i(173694),	-- Night Market Template
-		}),
-		q(62987),	-- [DNT] Test Quest
-		q(58607),	-- [DNT] Tracking Quest
-		q(58855),	-- [DNT] Tracking Quest
-		q(58338),	-- [NYI] Sinstone Mining
-		q(60001),	-- [NYI] The Sword in the Stone
-		q(57099),	-- A Dreadful Roundup
-		q(58400),	-- Break the Barrier
-		q(57172),	-- Break Their Will
-		q(58399),	-- Clear the Skies
-		q(61087),	-- Delayed Delivery: Old Gate Parcel
-		q(58402),	-- Destroy Siege Weapons
-		q(57185),	-- Dutybound
-		q(57100),	-- Feeding Time is Over
-		q(58405),	-- Find KT's Phylactery
-		q(58644),	-- Gather Our Forces
-		q(58396),	-- Interrogate Baddies
-		q(58404),	-- Kill Elites in Phase
-		q(57414),	-- Mount Up Test
-		q(58401),	-- Ooze Kills
-		q(60228),	-- Sinstone Delivery TBD
-		q(58397),	-- Steal Supplies
-		q(58403),	-- Supercharge Kael'thas
-		q(58328),	-- TBD
-		q(60227),	-- TBD Soulguard Torch
-		q(57228),	-- The Assault on Dreadhollow
-	}),
 	tier(SL_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {

@@ -484,22 +484,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(24630, {	-- The Crone of the Kraul
-			["timeline"] = { "created 4.0.3" },
-			["groups"] = {
-				i(53155),	-- Agamaggan's Thorn
-				i(53158),	-- Spaulder of the Matriarch
-				i(57408),	-- Bloodshard Band
-				i(53157),	-- Charlga's Cowl
-			},
-		}),
-		q(24898, {	-- Going, Going, Guano!
-			["timeline"] = { "created 4.0.3" },
-		}),
-		q(24899, {	-- Going, Going, Guano!
-			["timeline"] = { "created 4.0.3" },
-		}),
-	}),
-}));

@@ -2253,26 +2253,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 
 -- #if AFTER CATA
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(25455),	-- A Test of Wills
-		q(25497),	-- Back in the Saddle
-		q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
-		q(25413),	-- Change of Plans
-		q(25666),	-- Getting Your Hands Dirty
-		q(25435),	-- Pressure is Mounting
-		q(25384, {	-- Raw Materials
-			["groups"] = {
-				un(NEVER_IMPLEMENTED, i(59797)),	-- Abalone-Linked Robes
-				un(NEVER_IMPLEMENTED, i(59795)),	-- Harp Shell Shoulderpads
-				un(NEVER_IMPLEMENTED, i(59796)),	-- Tread of Decapod Death
-			},
-		}),
-		q(25506),	-- Sea-Food Chain
-		q(25498),	-- Shark Bait
-		q(25636),	-- Starve a Fever, Feed a Cold
-		q(25737),	-- Tenuous Negotiatons
-		q(25742),	-- What? This Old Thing?
-	}),
 	tier(CATA_TIER, {
 		n(WEAPONS, {
 			i(54554),	-- Bejeweled Ship's Wheel

@@ -1030,35 +1030,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 })));
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(57681),	-- [NYI] Temple of Courage
-		q(57684),	-- [NYI] Temple of Humility
-		q(57683),	-- [NYI] Temple of Loyalty
-		q(58954),	-- [PH] Catch!
-		q(58516),	-- [UNUSED]
-		q(58517),	-- [UNUSED]
-		q(60235),	-- Newfound Power
-		q(61636),	-- PH - UNUSED
-		q(62304),	-- Round 1
-		q(62321),	-- Round 1
-		q(62324),	-- Round 1
-		q(62367),	-- Round 1
-		q(62385),	-- Round 1
-		q(62305),	-- Round 2
-		q(62322),	-- Round 2
-		q(62325),	-- Round 2
-		q(62373),	-- Round 2
-		q(62386),	-- Round 2
-		q(62307),	-- Round 3
-		q(62323),	-- Round 3
-		q(62366),	-- Round 3
-		q(62374),	-- Round 3
-		q(62387),	-- Round 3
-		q(57685),	-- Temple of Purity
-		q(57682),	-- Temple of Wisdom
-		q(62895),	-- Track Selection
-		q(62896),	-- Track Selection
-	}),
 	tier(SL_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {

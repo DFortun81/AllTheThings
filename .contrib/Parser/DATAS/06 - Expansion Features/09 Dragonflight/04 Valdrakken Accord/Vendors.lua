@@ -597,6 +597,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 							{ "i", AWAKENED_ORDER, 1 },
 						},
 					}),
+					i(203351, {	-- Winding Slitherdrake: Bronze Scales (DM!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 400 },
+							{ "i", AWAKENED_ORDER, 1 },
+						},
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 						-- RENOWN 26 --
 					i(196962, {	-- Cliffside Wylderdrake: Silver and Purple Armor (DM!)
 						["cost"] = {

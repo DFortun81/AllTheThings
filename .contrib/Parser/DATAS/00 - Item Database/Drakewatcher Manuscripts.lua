@@ -55,7 +55,6 @@ i(196970, 69170);	-- Cliffside Wylderdrake: Spiked Back
 i(196971, 69171);	-- Cliffside Wylderdrake: Spiked Brow
 i(197003, 69203);	-- Cliffside Wylderdrake: Spiked Cheek
 i(196977, 69177);	-- Cliffside Wylderdrake: Split Head Horns
-i(196997, 69197);	-- Cliffside Wylderdrake: Split Horns
 i(196968, 69168);	-- Cliffside Wylderdrake: Steel and Yellow Armor
 i(196999, 69199);	-- Cliffside Wylderdrake: Swept Horns
 i(196980, 69180);	-- Cliffside Wylderdrake: Triple Head Horns
@@ -114,7 +113,6 @@ i(197138, 69339);	-- Highland Drake: Striped Pattern
 i(197124, 69325);	-- Highland Drake: Swept Horns
 i(197113, 69314);	-- Highland Drake: Swept Spiked Head
 i(197121, 69322);	-- Highland Drake: Tan Horns
-i(197104, 69305);	-- Highland Drake: Tapered Chin
 i(197123, 69324);	-- Highland Drake: Thorn Horns
 i(197115, 69316);	-- Highland Drake: Thorned Jaw
 i(197135, 69336);	-- Highland Drake: Toothy Mouth
@@ -278,17 +276,19 @@ i(197590, 69794);	-- Windborne Velocidrake: Small Head Fin
 i(197629, 69835);	-- Windborne Velocidrake: Spiked Neck
 -- Unknown --
 i(202277, 73057);	-- Renewed Proto-Drake: Bruiser Horns
-i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
 
 ------------------
 -- PATCH 10.1.0 --
 ------------------
 i(196978, 69178);	-- Cliffside Wylderdrake: Small Head Spikes
 i(197021, 69221);	-- Cliffside Wylderdrake: Spiked Club Tail
+i(196997, 69197);	-- Cliffside Wylderdrake: Split Horns
 i(197156, 69357);	-- Highland Drake: Bronze and Green Armor
 i(197120, 69321);	-- Highland Drake: Ornate Helm
 i(197109, 69310);	-- Highland Drake: Spiked Head
+i(197104, 69305);	-- Highland Drake: Tapered Chin
 i(202275, 73059);	-- Renewed Proto-Drake: Plated Jaw
+i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
 i(197364, 69565);	-- Renewed Proto-Drake: Short Spiked Crest
 i(203338, 73829);	-- Winding Slitherdrake: Antler Horns
 i(203305, 73793);	-- Winding Slitherdrake: Armor

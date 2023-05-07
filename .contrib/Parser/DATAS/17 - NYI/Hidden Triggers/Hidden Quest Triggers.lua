@@ -8,35 +8,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	n(QUESTS, {	-- Quests
 		q(13807),	-- FLAG: Tournament Invitation
 
-
-		tier(BFA_TIER, {
-			["g"] = bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-				n(QUESTS, {
-					q(47860),	-- A Rude Awakening
-					q(48994),	-- Akunda the Liar
-					q(49331),	-- An Interesting Find
-					q(47671),	-- Ancient Lore
-					q(47672),	-- Ancient Lore
-					q(48845),	-- Cannon Cremation
-					q(48995),	-- Defeat Xenxuju
-					q(47318),	-- Fruit of the Desert
-					q(48775),	-- Last Respects
-					q(49337),	-- Matters of the Heart
-					q(49336),	-- Piecing Together the Past
-					q(48989),	-- Poisoned Intentions
-					q(50590),	-- Preface the Pitch
-					q(47325),	-- Reckless Vengeance
-					q(49672),	-- Servant of the Loa
-					q(47410),	-- Sethrak Sabotage
-					q(50951),	-- Sharing the Blessings
-					q(50687),	-- Skycaller Carcanet
-					q(48307),	-- Strange Totems
-					q(48990),	-- The Leader Calls
-					q(48838),	-- Water Reclamation
-				}),
-			}),
-		}),
-
 		-------------------
 		--  UNKNOWN/NYI  --
 		-------------------
@@ -1773,6 +1744,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(10387),	-- The Fel Reaver Slayer - completed with quest 10382
 		q(10401),	-- Mission: End All, Be All - completed with quest 10136 & 10400
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
+		q(11790),	-- Cultists Among Us - completed with quest 11920
 		q(13053),	-- Looking for Survivors - completed with quest 12671
 		q(13052),	-- Aerial Surveillance - completed with quest 12696
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589

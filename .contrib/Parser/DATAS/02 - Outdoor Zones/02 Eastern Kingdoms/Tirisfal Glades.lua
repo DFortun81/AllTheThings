@@ -1059,17 +1059,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24990, {	-- Darkhound Pounding
 					["qg"] = 10665,	-- Junior Apothecary Holland
 					["sourceQuests"] = {
-						24989,	-- Return to the Magistrate
 						24974,	-- Ever So Lonely
 						25038,	-- Gordo's Task
 						24977,	-- Johaan's Experiment
+						24989,	-- Return to the Magistrate
 						24980,	-- The Scarlet Palisade
 						24976,	-- Variety is the Spice of Death
 					},
 					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-			}),
+				}),
 				q(354, {	-- Deaths in the Family
 					["qg"] = 1500,	-- Coleman Farthing
 					["sourceQuest"] = 362,	-- The Haunted Mills
@@ -2275,22 +2275,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
-
--- #if AFTER CATA
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		-- #if AFTER BFA
-		-- TODO: These were implemented with BFA, might be coming out in 10.0? Keep an eye here!
-		q(57377),	-- A Hand Offered
-		q(54955),	-- Scarlet Recon
-		q(54943),	-- The Dark Ranger's Pupil
-		q(54944),	-- The Dark Ranger's Pupil
-		q(55345),	-- The Dark Ranger's Pupil
-		q(55346),	-- The Dark Ranger's Pupil
-		q(54956),	-- The Grasp of Hate
-		q(54954),	-- The Missing Apprentice
-		q(55351),	-- The Missing Apprentice
-		-- #endif
-	}),
-}));
--- #endif

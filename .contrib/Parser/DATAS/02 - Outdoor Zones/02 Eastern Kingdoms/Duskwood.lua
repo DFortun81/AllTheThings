@@ -2149,10 +2149,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- #endif
 });
 -- #endif
-
--- These quests never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(402),	-- Sirra is Busy
-	}),
-}));

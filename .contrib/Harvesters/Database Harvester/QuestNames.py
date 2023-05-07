@@ -126,16 +126,16 @@ def get_quest_names() -> None:
                         "Retail": "",
                     }
                     print("Cata-BFA :", missing_line)
-                elif version.parse(missing_line) < version.parse("10.0.7.9999"):
+                elif version.parse(missing_line) < version.parse("10.1.0.9999"):
                     expansion_dict = {
                         "Retail": "",
                         "PTR": "ptr",
                     }
-                    print("10.0.0-10.0.7 :", missing_line)
-                elif version.parse(missing_line) > version.parse("10.1.0.0"):
+                    print("10.0.0-10.1.0 :", missing_line)
+                elif version.parse(missing_line) > version.parse("10.1.5.0"):
                     expansion_dict = {
                         "PTR": "ptr",
                     }
-                    print("10.1.0 :", missing_line)
+                    print("10.1.5 :", missing_line)
     with open(missing_path, "w") as missing_file:
         missing_file.writelines(missing_lines)

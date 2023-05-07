@@ -1,7 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local HUNGRY_NETHER_RAYS_GROUPS = {};
+local HUNGRY_NETHER_RAYS_GROUPS = {
+	objective(1, {	-- 0/10 Nether Ray Meal
+		["provider"] = { "i", 32834 },	-- Nether Ray Cage (Provided)
+		["cr"] = 23219,	-- Blackwind Warp Chaser
+	}),
+};
 local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
 	["cr"] = 16810,	-- Bonechewer Backbreaker
 });
@@ -274,6 +279,7 @@ root(ROOTS.Zones, {
 					["g"] = {
 						p(514, {	-- Flayer Youngling
 							["crs"] = { 62555 },	-- Flayer Youngling
+							["description"] = "Found in Razorthorn Rise on the border of Hellfire and Terokkar.",
 						}),
 						p(417, {	-- Rat
 							["crs"] = { 61366 },	-- Rat
@@ -486,18 +492,27 @@ root(ROOTS.Zones, {
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11085, {	-- Escape from Skettis
 						["qg"] = 23383,	-- Skyguard Prisoner
-						["coord"] = { 75, 86.2, TEROKKAR_FOREST },
+						["coords"] = {
+							{ 61.0, 75.6, TEROKKAR_FOREST },
+							{ 68.4, 74.0, TEROKKAR_FOREST },
+							{ 75.0, 86.2, TEROKKAR_FOREST },
+						},
+						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["isDaily"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11008, {	-- Fires Over Skettis
 						["qg"] = 23048,	-- Sky Sergeant Doryn
 						["sourceQuest"] = 11098,	-- To Skettis!
 						["coord"] = { 64.5, 66.7, TEROKKAR_FOREST },
-						["cost"] = {
-							{ "i", 32406, 1 },	-- Skyguard Blasting Charges
-						},
+						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["isDaily"] = true,
 						["groups"] = {
+							objective(1, {	-- 0/20 Monstrous Kaliri Egg Destroyed
+								["providers"] = {
+									{ "i",  32406 },	-- Skyguard Blasting Charges
+									{ "o", 185549 },	-- Monstrous Kaliri Egg
+								},
+							}),
 							ach(1275),	-- Bombs Away
 						},
 					})),
@@ -515,9 +530,6 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11093, {	-- Hungry Nether Rays
 						["qg"] = 23415,	-- Skyguard Handler Deesak
 						["coord"] = { 63.6, 65.8, TEROKKAR_FOREST },
-						["cost"] = {
-							{ "i", 32834, 1 },	-- Nether Ray Cage (Provided)
-						},
 						["groups"] = HUNGRY_NETHER_RAYS_GROUPS,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11021, {	-- Ishaal's Almanac
@@ -529,10 +541,9 @@ root(ROOTS.Zones, {
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["sourceQuest"] = 11004,	-- World of Shadows
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
+						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
+						["cost"] = {{ "i", 32388, 6 }},	-- Shadow Dust
 						["repeatable"] = true,
-						["cost"] = {
-							{ "i", 32388, 6 },	-- Shadow Dust
-						},
 						["groups"] = {
 							i(32446),	-- Elixir of Shadows
 						},
@@ -546,6 +557,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23306,	-- Hazzik
 						["sourceQuest"] = 11885,	-- Adversarial Blood
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
+						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["cost"] = {
 							{ "i", 32715, 1 },	-- Akkarai's Talons
 							{ "i", 32716, 1 },	-- Gezzarak's Claws
@@ -557,7 +569,7 @@ root(ROOTS.Zones, {
 							i(32720),	-- Time-Lost Offering
 						},
 					})),
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11073, {  -- Terokk's Downfall
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11073, {	-- Terokk's Downfall
 						["qg"] = 23038,	-- Sky Commander Adaris
 						["sourceQuest"] = 11885,	-- Adversarial Blood
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
@@ -576,9 +588,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11004, {	-- World of Shadows
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
-						["cost"] = {
-							{ "i", 32388, 6 },	-- Shadow Dust
-						},
+						["cost"] = {{ "i", 32388, 6 }},	-- Shadow Dust
 						["groups"] = {
 							i(32446),	-- Elixir of Shadows
 						},
@@ -1728,79 +1738,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(10925),	-- Evil Draws Near - completed with quest 10923
 	q(11072),	-- Adversarial Blood - completed with quest 11885
 });
-
--- These quests never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(10048),	-- A Handful of Magic Dust BETA
-		q(10049),	-- A Handful of Magic Dust BETA
-		q(9949),	-- BETA A Bird's-Eye View
-		q(9950),	-- BETA A Bird's-Eye View
-		q(9988, {	-- BETA A Dandy's Best Friend
-			i(28499),	-- Arakkoa Hunter's Supplies
-		}),
-		q(9965),	-- BETA A Show of Good Faith
-		q(9966),	-- BETA A Show of Good Faith
-		q(10032),	-- BETA Artifacts from Tuurem
-		q(9984),	-- BETA Host of the Hidden City
-		q(9985),	-- BETA Host of the Hidden City
-		q(9953),	-- BETA Lookout Nodak
-		q(10195, {	-- BETA Mercenary See, Mercenary Do
-			i(28499),	-- Arakkoa Hunter's Supplies
-		}),
-		q(10196, {	-- BETA More Arakkoa Feathers
-			i(28499),	-- Arakkoa Hunter's Supplies
-		}),
-		q(9975),	-- BETA Primal Magic
-		q(9976),	-- BETA Primal Magic
-		q(9952),	-- BETA Prospector Balmoral
-		q(9980, {	-- BETA Rescue Deirom!
-			i(25967),	-- Eagle Crested Pauldrons
-			i(25968),	-- Shalassi Sentry's Epaulets
-			i(25969),	-- Rapscallion's Touch
-			i(25970),	-- Shalassi Oracle's Sandals
-		}),
-		q(9981, {	-- BETA Rescue Deirom!
-			i(25967),	-- Eagle Crested Pauldrons
-			i(25968),	-- Shalassi Sentry's Epaulets
-			i(25969),	-- Rapscallion's Touch
-			i(25970),	-- Shalassi Oracle's Sandals
-		}),
-		q(9947, {	-- BETA Return to Rokag
-			i(25967),	-- Eagle Crested Pauldrons
-			i(25968),	-- Shalassi Sentry's Epaulets
-			i(25969),	-- Rapscallion's Touch
-			i(25970),	-- Shalassi Oracle's Sandals
-		}),
-		q(9943, {	-- BETA Return to Thander
-			i(25967),	-- Eagle Crested Pauldrons
-			i(25968),	-- Shalassi Sentry's Epaulets
-			i(25969),	-- Rapscallion's Touch
-			i(25970),	-- Shalassi Oracle's Sandals
-		}),
-		q(9958),	-- BETA Scouting the Defenses
-		q(9959),	-- BETA Scouting the Defenses
-		q(9963),	-- BETA Seeking Help from the Source
-		q(9964),	-- BETA Seeking Help from the Source
-		q(9969, {	-- BETA The Final Reagents
-			-- These quest items are available from 'Veil Shalas: Signal Fires'. :)
-			--i(25966),	-- Arakkoa Sage's Shawl
-			--i(25965),	-- Cloak of Grasping Talons
-			--i(25963),	-- Kokorek's Signet
-		}),
-		q(9974, {	-- BETA The Final Reagents
-			-- These quest items are available from 'Veil Shalas: Signal Fires'. :)
-			--i(25966),	-- Arakkoa Sage's Shawl
-			--i(25965),	-- Cloak of Grasping Talons
-			--i(25963),	-- Kokorek's Signet
-		}),
-		q(10014),	-- BETA The Firewing Point Project
-		q(10015),	-- BETA The Firewing Point Project
-		q(9929),	-- BETA The Missing Merchant
-		q(9930),	-- BETA The Missing Merchant
-		q(10029),	-- BETA The Spirits Are Calling
-		q(9941),	-- BETA Tracking Down the Culprits
-		q(9942),	-- BETA Tracking Down the Culprits
-	}),
-}));
--- #endif

@@ -10,7 +10,9 @@ r = function(...)
 	local spellID = recipe.recipeID or recipe.spellID;
 	if recipe.name then
 		if recipeList[recipe.name] then
+			-- #if ANYCLASSIC
 			print(recipe.name .. " appears to be added to multiple classes in the Inscription Recipe List.");
+			-- #endif
 		else
 			recipeList[recipe.name] = 1;
 		end

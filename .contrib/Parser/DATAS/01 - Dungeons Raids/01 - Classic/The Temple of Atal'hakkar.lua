@@ -786,10 +786,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(27634, {	-- The God Hakkar
-			["timeline"] = { "created 4.0.3" },
-		}),
-	}),
-}));

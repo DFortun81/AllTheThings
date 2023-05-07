@@ -1270,9 +1270,6 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 	},
 })));
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(59969),	-- A Shaman's Duty
-	}),
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {

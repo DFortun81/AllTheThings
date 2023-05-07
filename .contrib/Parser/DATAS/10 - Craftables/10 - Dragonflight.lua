@@ -942,7 +942,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(74310, 400809, ADDED_10_0_7);	-- Glowing Crystal Bookmark
 			-- Infusions of Power
 			--FirstCraft(x, 406418, ADDED_10_1_0);	-- Enchanted Aspect's Shadowflame Crest
-			--FirstCraft(x, 406108, ADDED_10_1_0);	-- Enchanted Whelpling's Shadowflame Crest
+			FirstCraft(75256, 406108, ADDED_10_1_0);	-- Enchanted Whelpling's Shadowflame Crest
 			--FirstCraft(x, 406413, ADDED_10_1_0);	-- Enchanted Wyrm's Shadowflame Crest
 			--FirstCraft(x, 405937, ADDED_10_1_0);	-- Titan Training Matrix V
 		})),
@@ -3028,8 +3028,8 @@ root(ROOTS.HiddenQuestTriggers, {
 
 			q(75141, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambant Hochenblume
 			q(75143, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Saxifrage
-			q(75138, {["timeline"] = {ADDED_10_1_0}}),	-- First Overload Lambent Herb
 			q(75144, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Writhebark
+			q(75138, {["timeline"] = {ADDED_10_1_0}}),	-- First Overload Lambent Herb
 			--
 			q(74121),	-- Herbing Enraged Sprout
 			q(74230),	-- Herbing Azra's Prized Peony

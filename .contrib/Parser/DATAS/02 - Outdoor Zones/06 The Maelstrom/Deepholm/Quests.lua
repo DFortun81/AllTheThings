@@ -1126,9 +1126,3 @@ _.Zones =
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(26243),	-- The World Pillar
-		q(26767),	-- Figuring out how to make quests
-	}),
-});

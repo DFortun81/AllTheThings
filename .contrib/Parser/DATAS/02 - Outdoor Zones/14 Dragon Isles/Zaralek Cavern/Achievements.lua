@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["_npcs"] = { 203630 },	-- Lavermix
 				}),
 				crit(18, {
-					["_npcs"] = { 200111 },	-- Magmanesha
+					["_npcs"] = { 200111 },	-- Magtembo
 				}),
 				crit(19, {
 					["_npcs"] = { 203521 },	-- Professor Gastrinax
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["_npcs"] = { 203462 },	-- Kob'rok
 					}),
 					crit(15, {
-						["_npcs"] = { 200111 },	-- Magmanesha
+						["_npcs"] = { 200111 },	-- Magtembo
 					}),
 					crit(16, {
 						["_npcs"] = { 203521 },	-- Professor Gastrinax
@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
 			}),
 			ach(17511, {	-- Dragon Glyphs: Nal ks'kol
-				["coord"] = { 62.6, 70.4, ZARALEK_CAVERN },
+				["coord"] = { 62.6, 73.3, ZARALEK_CAVERN },
 			}),
 			ach(17514, {	-- Dragon Glyphs: Slitherdrake Roost
 				["coord"] = { 55.3, 27.9, ZARALEK_CAVERN },
@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				crit(2, {	-- Sundered Legacy
 					["sourceQuests"] = { 72965 },	-- Aspects of Our Legacy
 				}),
-				crit(4, {	-- The Ancient Bargain
+				crit(3, {	-- The Ancient Bargain
 					["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				}),
 				crit(5, {	-- Inherited Sin

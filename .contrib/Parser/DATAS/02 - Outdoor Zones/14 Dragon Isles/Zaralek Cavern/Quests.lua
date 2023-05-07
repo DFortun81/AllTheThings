@@ -796,7 +796,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 200298 },	-- Veritistrasz
 				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
 				["g"] = {
-					i(204220),	-- Hraxian's Unbreakable Will
+					i(204220),	-- Hraxian's Unbreakable Will (TOY!)
 				},
 			}),
 
@@ -818,6 +818,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204810),	-- Drogbar Rocks
 					i(204811),	-- Drogbar Stones
 				},
+			}),
+			q(73077, {	-- This Might Sting
+				--["sourceQuests"] = {  },
+				["provider"] = { "n", 200550 },	-- Patroclosa
+				["coord"] = { 59.4, 63.8, ZARALEK_CAVERN },
 			}),
 		}),
 	}),
@@ -864,5 +869,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(74781),    -- 4 (quest) dialog
 		q(74782),    -- 5 (quest) dialog
 		q(74788),    -- 6 (quest) dialog
+
+		-- Ponzo hat price
+		q(75869),    -- Become available with cost at 9999 boulders
+		q(75836),    -- I can't afford that - 4999
+		q(75870),    -- Still too much! - 999
+		q(75871),    -- How about 50 boulders - 249
 	}),
 }));

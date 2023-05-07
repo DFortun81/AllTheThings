@@ -184,7 +184,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
 					i(197369, {	-- Renewed Proto-Drake: Brown Hair (DM!)
-						["description"] = "This item is only available to pick the very first time you do this quest on your account. If you didn't pick it, it's unobtainable for you. Using an alt does not work either.\nPlease send a bug report to Blizzard.",
 						["timeline"] = { ADDED_10_0_7 },
 					}),
 					i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)

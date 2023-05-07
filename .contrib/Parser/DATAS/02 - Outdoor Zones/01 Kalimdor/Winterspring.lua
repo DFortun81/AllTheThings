@@ -2591,32 +2591,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		q(29033, {	-- [PH] Bridle Buy-In
-			["timeline"] = { "created 4.1.0.13726" },
-		}),
-		q(28541, {	-- Cache of Mau'ari
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-		q(28516, {	-- Centuries of Suffering
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-		q(28642, {	-- Shy-Rotam
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-		q(28468, {	-- Toxic Horrors
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-		q(28481, {	-- Troubled Spirits of Kel'Theril
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-		q(28546, {	-- Winterfall E'ko
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-		q(28462, {	-- Winterfall Firewater
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-	}),
-});

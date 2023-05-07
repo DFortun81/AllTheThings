@@ -828,18 +828,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 })));
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(58625),	-- Connecting the Dots
-		q(57513),	-- Enemy of My Enemy
-		q(59204),	-- Foreign Contamination
-		q(57978),	-- Forward and Back
-		q(62394),	-- House in Decline
-		q(60736),	-- Quest 02
-		q(59903),	-- Split Blob Test
-		q(59882),	-- Sure Bet
-		q(59175),	-- The Eternal Revenge
-		q(58261),	-- What's the Grub
-	}),
 	tier(SL_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {

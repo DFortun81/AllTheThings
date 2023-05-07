@@ -438,14 +438,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	})),
 })));
 
--- #if AFTER 4.3.0
--- This version of the quest never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(29572),	-- Safety is Job One
-	}),
-}));
--- #endif
 -- #if AFTER WOD
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {

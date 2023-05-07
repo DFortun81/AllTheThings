@@ -2595,14 +2595,14 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					i(108913),	-- Rangari Initiate Armblade
 					i(108914),	-- Karabor Footman Sword
 					i(108918),	-- Karabor Arcanist Rod
-					i(108919),	-- Karabor Augury mace
+					i(108919),	-- Karabor Augury Mace
 				},
 			}),
 			q(34364, {	-- For the Horde!
 				["coord"] = { 51.2, 43.2, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 70859 },	-- Thrall
-				["sourceQuest"] = 34402,	-- of Wolves and  Warriors
+				["sourceQuest"] = 34402,	-- Of Wolves and Warriors
 				["g"] = {
 					i(111540),	-- Frostwolf Augury Staff
 					i(111539),	-- Frostwolf Boot Knife

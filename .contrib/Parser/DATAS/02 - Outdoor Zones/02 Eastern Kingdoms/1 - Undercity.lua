@@ -1538,7 +1538,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2523,	-- Bullova
 						2528,	-- Falchion
 						2521,	-- Flamberge
-						2531,	-- Great axe
+						2531,	-- Great Axe
 						2526,	-- Main Gauche
 						2534,	-- Rondel
 						2525,	-- War Hammer
@@ -1698,19 +1698,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2025,	-- Bearded Axe
 						1198,	-- Claymore
 						2029,	-- Cleaver
-						851,	-- cutlass
-						2024,	-- espadon
-						1197,	-- giant mace
-						2030,	-- gnarled staff
-						2028,	-- hammer
-						853,	-- hatched
-						2207,	-- jambiya
-						852,	-- mace
+						851,	-- Cutlass
+						2024,	-- Espadon
+						1197,	-- Giant Mace
+						2030,	-- Gnarled Staff
+						2028,	-- Hammer
+						853,	-- Hatchet
+						2207,	-- Jambiya
+						852,	-- Mace
 						2208,	-- Poniard
-						854,	-- quarter staff
-						2026,	-- rock hammer
-						2027,	-- scimitar
-						1196,	-- tabar
+						854,	-- Quarter Staff
+						2026,	-- Rock Hammer
+						2027,	-- Scimitar
+						1196,	-- Tabar
 					}},
 				}),
 				n(4580, {	-- Lucille Castleton

@@ -1890,17 +1890,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		q(13908, {	-- Gearing Up To Ride
-			["timeline"] = { "created 3.3.0.10772" },
-		}),
-		q(24716, {	-- Returning A-Me 01
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-		q(24688, {	-- Zen'Aliri
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-	}),
-});

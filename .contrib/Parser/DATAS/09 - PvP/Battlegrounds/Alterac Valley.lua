@@ -1184,10 +1184,3 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		},
 	}),
 })));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(7221),	-- Speak with Prospector Stonehewer
-		q(7222),	-- Speak with Voggah Deathgrip
-	}),
-}));

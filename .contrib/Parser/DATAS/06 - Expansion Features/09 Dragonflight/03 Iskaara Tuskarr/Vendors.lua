@@ -530,6 +530,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 							{ "i", AWAKENED_FROST, 1 },
 						},
 					}),
+					i(203350, {	-- Winding Slitherdrake: Blue Scales (DM!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 400 },
+							{ "i", AWAKENED_FROST, 1 },
+						},
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 						-- RENOWN 22 --
 					i(199889, {	-- Tuskarr Boneplate Pauldrons
 						["cost"] = {
@@ -789,6 +796,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					197123,	-- Highland Drake: Thorn Horns (DM!)
 					197139,	-- Highland Drake: Large Spotted Pattern (DM!)
 					197153,	-- Highland Drake: Bladed Tail (DM!)
+					203350, -- Winding Slitherdrake: Blue Scales (DM!)
 				}},
 			}),
 			n(186554, {	-- Nunvuq

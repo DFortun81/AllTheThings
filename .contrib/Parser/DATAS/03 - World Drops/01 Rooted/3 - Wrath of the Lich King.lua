@@ -791,7 +791,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36493, {	-- Furbolg Truncheon
 				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
-			i(36491, {	-- Serrated maul
+			i(36491, {	-- Serrated Maul
 				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
 			}),
 		}),

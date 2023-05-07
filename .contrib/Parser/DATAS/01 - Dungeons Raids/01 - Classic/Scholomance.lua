@@ -1646,8 +1646,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- #endif
 });
 -- #endif
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(5383),	-- Krastinov's Bag of Horrors
-	}),
-}));

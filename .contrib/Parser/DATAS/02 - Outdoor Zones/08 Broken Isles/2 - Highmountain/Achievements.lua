@@ -241,11 +241,11 @@ _.Zones =
 								}),
 							},
 						}),
-						ach(10626, {	-- Zoom!
-							i(137298),		-- Zoom
-						}),
 					},
 				})),
+				ach(10626, {	-- Zoom!
+					i(137298),	-- Zoom
+				}),
 				ach(10774, {	-- Hatchling of the Talon
 					["sourceQuests"] = { 41094 },	-- Hatchlings of the Talon
 					["g"] = {

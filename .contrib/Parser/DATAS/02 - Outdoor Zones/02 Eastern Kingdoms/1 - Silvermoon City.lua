@@ -688,12 +688,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 52.6, 64.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						2520,    -- broadsword
-						2528,    -- falchion
+						2520,    -- Broadsword
+						2528,    -- Falchion
 						2521,    -- Flamberge
-						2526,    -- main-gauche
-						2534,    -- rondel
-						2529,    -- zweihander
+						2526,    -- Main Gauche
+						2534,    -- Rondel
+						2529,    -- Zweihander
 					}},
 				}),
 				n(16626, {	-- Tynna

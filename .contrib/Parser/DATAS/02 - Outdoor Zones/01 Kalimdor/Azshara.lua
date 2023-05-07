@@ -87,6 +87,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					p(471, {	-- Robo-Chick
 						["crs"] = { 62119 },	-- Robo-Chick
+						["coords"] = {
+							{ 42.4, 76.8, AZSHARA },
+							{ 51.8, 74.8, AZSHARA },
+						},
+						["description"] = "Normally found close to these coords, as well as in Everlook.",
 					}),
 					p(388, {	-- Shore Crab
 						["crs"] = { 61158 },	-- Shore Crab

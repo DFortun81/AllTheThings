@@ -550,15 +550,6 @@ for _,g in ipairs({T2_DUTIFUL_GROUP,T2_MARTIAL_GROUP,T2_UNTAMED_GROUP,T2_PRIDEFU
 end
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(59870),	-- [OLD NOT USED]
-		q(59912),	-- [OLD NOT USED]
-		q(59925),	-- [OLD NOT USED]
-		q(60643),	-- [OLD NOT USED]
-		q(60726),	-- [OLD NOT USED]
-		q(59840),	-- Divine Gratitude
-		q(59986),	-- Wide Worlds of Catalysts
-	}),
 	tier(SL_TIER, {
 		n(NIGHT_FAE, {
 			i(179775),	-- Conservator's Leather Tunic (reported as not being awarded from ensemble 184112)
