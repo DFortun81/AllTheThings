@@ -28,10 +28,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 	L.TOM_TOM_NOT_FOUND = "必须安装 TomTom 才能绘制坐标。";
 	L.FLIGHT_PATHS = "飞行路线";
 	L.KNOWN_BY = "已知 ";
-	L.REQUIRES = "要求";
-	if GetLocale() == "zhTW" then
-		L.REQUIRES = "需要";
-	end
+	L.REQUIRES = "需要";
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = "请把错误报告给 ATT Discord 的 #retail-errors！谢谢！";
 	L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 将多行报告复制到剪贴板）";
@@ -871,11 +868,12 @@ for key,value in pairs({
 		[-1143] = "每30分钟稀有",										-- TODO: DF Rare Rotation
 		[-1144] = "每周专业知识",										-- Weekly Profession Header
 		[-1150] = "峈姆鼹鼠人",											-- Loamm Niffen
-		--TODO: [-1151] = "Bartering",								-- Bartering
-		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
+		[-1151] = "以物易物",								            -- Bartering
+		[-1152] = "首次制造！",							                -- First Crafts
 		[-1200] = "兹斯克拉宝库",										-- Zskera Vaults
 		[-1202] = "菲莱克突袭",											-- Fyrakk Assaults
-		--TODO: [-1203] = "Sniffenseeking",							-- Sniffenseeking
+		[-1203] = "嗅味探寻",							                -- Sniffenseeking
+
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
