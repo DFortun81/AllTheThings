@@ -442,16 +442,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(163489, {	-- Abyssal Eel (PET!)
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
-					i(163493, {	-- Bloody Rabbit Fang (PET!)
+					i(163493, {	-- Frenzied Cottontail (PET!)
 						["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
 					}),
 					i(163492, {	-- Drustvar Piglet (PET!)
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
-					i(163495, {	-- Greatwing Macaw Feather (PET!)
+					i(163495, {	-- Greatwing Macaw (PET!)
 						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 					}),
-					i(163496, {	-- Strange Looking Mechanical Squirrel (PET!)
+					i(163496, {	-- Mechanical Prarie Dog (PET!)
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
 					i(163494, {	-- Bilefang Skitterer (PET!)

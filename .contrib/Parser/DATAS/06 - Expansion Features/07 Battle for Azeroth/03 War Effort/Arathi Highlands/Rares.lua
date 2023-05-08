@@ -95,7 +95,7 @@ _.ExpansionFeatures =
 							{ 54.0, 55.4, ARATHI_HIGHLANDS },	-- Bottom
 						},
 						["g"] = {
-							i(163711),	-- Shard of Fozruk
+							i(163711),	-- Fozling (PET!)
 						},
 					}),
 					n(142662, {	-- Geomancer Flintdagger
@@ -198,7 +198,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 36.4, 62.8, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163690),	-- Plague Egg
+							i(163690),	-- Foulfeather (PET!)
 						},
 					}),
 					n(142436, {	-- Ragebeak
@@ -269,7 +269,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 56.7, 54.1, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163648),	-- Fuzzy Creepling
+							i(163648),	-- Fuzzy Creepling (PET!)
 						},
 					}),
 					n(142440, {	-- Yogursa

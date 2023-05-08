@@ -14,14 +14,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			p(478, {	-- Forest Moth
 				["crs"] = { 62177 },	-- Forest Moth
 			}),
-			p(2383, {	-- Giant Woodworm
-				["crs"] = { 143042 },	-- Giant Woodworm
+			pet(2383, {	-- Giant Woodworm
 			}),
-			p(2399, {	-- Hermit Crab
-				["crs"] = { 143056 },	-- Hermit Crab
+			pet(2399, {	-- Hermit Crab
 			}),
-			p(2382, {	-- Inland Croaker
-				["crs"] = { 143041 },	-- Inland Croaker
+			pet(2382, {	-- Inland Croaker
 			}),
 			p(2380, {	-- Parasitic Boarfly
 				["crs"] = { 143039 },	-- Parasitic Boarfly

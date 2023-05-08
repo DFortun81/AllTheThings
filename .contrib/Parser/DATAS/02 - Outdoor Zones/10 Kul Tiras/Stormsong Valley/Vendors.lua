@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(163704, {	-- Tiny Mechanical Mouse (TOY!)
 						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
 					}),
-					i(163514, {	-- Violent Looking Flower Pot (PET!)
+					i(163514, {	-- Carnivorous Lasher (PET!)
 						["cost"] = { { "i", 163036, 150 }, },	-- 150x Polished Pet Charm
 					}),
 				},

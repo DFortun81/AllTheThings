@@ -6,7 +6,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 	achcat(ACHIEVEMENT_CATEGORY_COLLECT, {
 		petbattle(ach(7465)),		-- An Uncommon Find*
 		petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
-			i(163634),		-- Dreadtick Leecher
+			i(163634),		-- Dreadtick Leecher (PET!)
 			crit(1),		-- Shadowback Crawler
 			crit(2),		-- River Frog
 			crit(3),		-- Freshwater Crawler

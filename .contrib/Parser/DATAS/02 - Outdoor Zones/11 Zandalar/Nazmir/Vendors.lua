@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(163500, {	-- Bloodfeaster Larva (PET!)
 						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 					}),
-					i(163510, {	-- Crimson Frog
+					i(163510, {	-- Crimson Frog (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 					i(163505, {	-- Toad in a Box

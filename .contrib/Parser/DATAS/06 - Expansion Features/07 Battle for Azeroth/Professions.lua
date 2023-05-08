@@ -169,7 +169,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 			currency(1534, {	-- Zandalari
 				-- Solves
 				i(160740),	-- Croak Crock (TOY!)
-				i(161080),	-- Intact Direhorn Egg
+				i(161080),	-- Direhorn Hatchling (PET!)
 				i(160753),	-- Sanguinating Totem
 				i(154913),	-- Akun'Jar Vase
 				i(160743),	-- Blowgun of the Sethra

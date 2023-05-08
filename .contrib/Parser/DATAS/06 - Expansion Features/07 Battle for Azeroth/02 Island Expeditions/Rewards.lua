@@ -42,12 +42,12 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163584),	-- Twilight Avenger (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(163798),	-- Captain Nibs
-							i(169205),	-- Ghostly Whelpling
-							i(163804),	-- Kindleweb Spiderling
-							i(163800),	-- Poro
-							i(163808),	-- Sandshell Chitterer
-							i(163807),	-- Tinder Pup
+							i(163798),	-- Captain Nibs (PET!)
+							i(169205),	-- Ghostly Whelpling (PET!)
+							i(163804),	-- Kindleweb Spiderling (PET!)
+							i(163800),	-- Poro (PET!)
+							i(163808),	-- Sandshell Chitterer (PET!)
+							i(163807),	-- Tinder Pup (PET!)
 						}),
 						n(WEAPONS, {
 							i(163925),	-- Old Jon's Left Hand
@@ -147,7 +147,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(166466),	-- Risen Mare (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(163804),	-- Kindleweb Spiderling
+							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(166494),	-- Lord Woofington
 							i(166488),	-- Rotting Ghoul
 							i(163808),	-- Sandshell Chitterer
@@ -198,7 +198,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163584),	-- Twilight Avenger (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(163804),	-- Kindleweb Spiderling
+							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(163808),	-- Sandshell Chitterer
 							i(163797),	-- Scuttle
 							i(166499),	-- Thunderscale Whelpling
@@ -330,10 +330,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 						filter(BATTLE_PETS, {
 							i(169322),	-- Adventurous Hopling Pack
-							i(163802),	-- Inky
-							i(163804),	-- Kindleweb Spiderling
-							i(163822),	-- Kunchong Hatchling
-							i(163801),	-- Octopode Fry
+							i(163802),	-- Inky (PET!)
+							i(163804),	-- Kindleweb Spiderling (PET!)
+							i(163822),	-- Kunchong Hatchling (PET!)
+							i(163801),	-- Octopode Fry (PET!)
 						}),
 						n(WEAPONS, {
 							i(168644),	-- Converted Carrot Carbine
@@ -390,7 +390,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163585),	-- Surf Jelly (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(163804),	-- Kindleweb Spiderling
+							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(163807),	-- Tinder Pup
 						}),
 						n(WEAPONS, {
@@ -484,7 +484,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163585),	-- Surf Jelly (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(163804),	-- Kindleweb Spiderling
+							i(163804),	-- Kindleweb Spiderling (PET!)
 						}),
 						n(WEAPONS, {
 							i(163927),	-- Brinebeard's Shanker
@@ -517,8 +517,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163585),	-- Surf Jelly (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(163823),	-- Coldlight Surfrunner
-							i(163821),	-- Juvenile Brineshell
+							i(163823),	-- Coldlight Surfrunner (PET!)
+							i(163821),	-- Juvenile Brineshell (PET!)
 						}),
 						n(WEAPONS, {
 							i(164329),	-- Plundered Coilpoint Scepter
@@ -573,10 +573,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(164548),	-- Whirling Dervish Striders
 						}),
 						filter(BATTLE_PETS, {
-							i(163811),	-- Giggling Flame
-							i(163812),	-- Laughing Stonekin
-							i(163814),	-- Mischievous Zephyr
-							i(163813),	-- Playful Frostkin
+							i(163811),	-- Giggling Flame (PET!)
+							i(163812),	-- Laughing Stonekin (PET!)
+							i(163814),	-- Mischievous Zephyr (PET!)
+							i(163813),	-- Playful Frostkin (PET!)
 						}),
 						n(WEAPONS, {
 							i(164341),	-- Plundered Firegeode Mace
@@ -718,24 +718,24 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(166470),	-- Stonehide Elderhorn (MOUNT!)
 				}),
 				filter(BATTLE_PETS, {
-					i(166486),	-- Baby Stonehide
-					i(163818),	-- Bloodstone Tunneler
-					i(163805),	-- Craghoof Kid [Verdant Wilds / Molten Cay]
-					i(163809),	-- Deathsting Scorpid [Molten Cay]
-					i(163806),	-- False Knucklebump [Molten Cay]
-					i(166493),	-- Firesting Buzzer
-					i(166487),	-- Leatherwing Screecher
-					i(163815),	-- Littlehoof
-					i(163820),	-- Muskflank Calfling
-					i(166489),	-- Needleback Pup
-					i(166498),	-- Scritches
-					i(166492),	-- Shadefeather Hatchling
-					i(163816),	-- Snapper
-					i(163819),	-- Snort
-					i(163803),	-- Sparkleshell Sandcrawler
-					i(163817),	-- Sunscale Hatchling [Skittering Hallow]
-					i(163810),	-- Thistlebrush Bud [Molten Cay]
-					i(166495),	-- Tonguelasher
+					i(166486),	-- Baby Stonehide (PET!)
+					i(163818),	-- Bloodstone Tunneler (PET!)
+					i(163805),	-- Craghoof Kid [Verdant Wilds / Molten Cay] (PET!)
+					i(163809),	-- Deathsting Scorpid [Molten Cay] (PET!)
+					i(163806),	-- False Knucklebump [Molten Cay] (PET!)
+					i(166493),	-- Firesting Buzzer (PET!)
+					i(166487),	-- Leatherwing Screecher (PET!)
+					i(163815),	-- Littlehoof (PET!)
+					i(163820),	-- Muskflank Calfling (PET!)
+					i(166489),	-- Needleback Pup (PET!)
+					i(166498),	-- Scritches (PET!)
+					i(166492),	-- Shadefeather Hatchling (PET!)
+					i(163816),	-- Snapper (PET!)
+					i(163819),	-- Snort (PET!)
+					i(163803),	-- Sparkleshell Sandcrawler (PET!)
+					i(163817),	-- Sunscale Hatchling [Skittering Hallow] (PET!)
+					i(163810),	-- Thistlebrush Bud [Molten Cay] (PET!)
+					i(166495),	-- Tonguelasher (PET!)
 				}),
 				n(WEAPONS, {
 					i(163928),	-- Stinkrot Smasher

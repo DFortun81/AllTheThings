@@ -5,14 +5,12 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(STORMSONG_VALLEY, {
 		petbattle(filter(BATTLE_PETS, {
-			p(2374, {	-- Freshwater Crawler
-				["crs"] = { 143033 },	-- Freshwater Crawler
+			pet(2374, {	-- Freshwater Crawler
 			}),
 			p(2399, {	-- Hermit Crab
 				["crs"] = { 143056 },	-- Hermit Crab
 			}),
-			p(2379, {	-- Honey Bee
-				["crs"] = { 143038 },	-- Honey Bee
+			pet(2379, {	-- Honey Bee
 			}),
 			p(2373, {	-- River Frog
 				["crs"] = { 143032 },	-- River Frog

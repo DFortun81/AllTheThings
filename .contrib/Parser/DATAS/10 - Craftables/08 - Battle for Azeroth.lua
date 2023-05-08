@@ -20,12 +20,12 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 				i(163859),	-- Baby Crawg (PET!)
 				i(163858),	-- Ball of Tentacles
 				i(163861),	-- Bloated Bloodfeaster (PET!)
-				i(163860),	-- Wind-Up Frog
+				i(163860),	-- Gearspring Hopper (PET!)
 			}),
 			i(160325, {	-- Quivering Sac
 				i(163859),	-- Baby Crawg (PET!)
 				i(163861),	-- Bloated Bloodfeaster (PET!)
-				i(163860),	-- Gearspring Hopper
+				i(163860),	-- Gearspring Hopper (PET!)
 				i(163858),	-- Slippy
 			}),
 		}),
@@ -347,7 +347,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(168412),	-- Light-Step Hoofplates
 		})),
 		filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Pets
-			i(152878),	-- Enchanted Tiki Mask
+			i(152878),	-- Enchanted Tiki Mask (PET!)
 		})),
 		cat(651, {	-- Ring Enchantments
 			i(168446, {["timeline"]={"added 8.2.0"}}),	-- Enchant Ring - Accord of Critical Strike

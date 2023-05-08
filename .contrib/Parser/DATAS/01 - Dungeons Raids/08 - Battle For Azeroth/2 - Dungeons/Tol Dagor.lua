@@ -156,7 +156,7 @@ _.Instances = { tier(BFA_TIER, {
 						["crs"] = { 135451 },	-- Filthy Bucket
 						["provider"] = { "i", 158698 },	-- Discarded Cell Key
 						["g"] = {
-							i(160704),	--  Filthy Bucket
+							i(160704),	--  Filthy Slime (PET!)
 						},
 					}),
 					e(2097, {	-- The Sand Queen

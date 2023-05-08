@@ -216,11 +216,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 50.8, 46.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(163495, {	-- Greatwing Macaw Feather (PET!)
+					i(163495, {	-- Greatwing Macaw (PET!)
 						["sourceQuests"] = { 49403 },	-- Rodrigo's Revenge
 						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 					}),
-					i(163496, {	-- Strange Looking Mechanical Squirrel (PET!)
+					i(163496, {	-- Mechanical Prarie Dog (PET!)
 						["sourceQuests"] = { 51426 },	-- Inspection Gadget
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
@@ -245,13 +245,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 68.9, 17.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(163506, {	-- Accursed Hexxer
+					i(163506, {	-- Accursed Hexxer (PET!)
 						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
 					}),
-					i(163500, {	-- Bloodfeaster Larva
+					i(163500, {	-- Bloodfeaster Larva (PET!)
 						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 					}),
-					i(163504, {	-- Child of Jani
+					i(163504, {	-- Child of Jani (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 					i(163503, {	-- Ranishu Runt

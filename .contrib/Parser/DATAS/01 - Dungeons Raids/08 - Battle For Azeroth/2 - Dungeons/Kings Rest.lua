@@ -154,7 +154,7 @@ _.Instances = { tier(BFA_TIER, {
 							ach(12723, {	-- How to Keep a Mummy
 								["description"] = "On the final boss, there are two sarcophagi with 2 greenish stones in front of them.  Simply pull the boss and have 1 party member stand on each stone. Lights will start filling up around the bottom.  When they are full, it locks in and the rightmost sarcophagus will begin to shake. Simply kill the boss at this point and Miimii is yours!",
 								["g"] = {
-									i(161214),	-- Thousand Year Old Mummy Wraps (PET!)
+									i(161214),	-- Miimii (PET!)
 								},
 							}),
 							i(159921),	-- Tomb Stalker (MOUNT!)
