@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["sourceQuests"] = { 47950 },	-- Cured Ham
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
-					i(160708, {	-- Smoochums' Bloody Heart
+					i(160708, {	-- Smoochums (PET!)
 						["sourceQuests"] = { 44785 },	-- Tea Party
 						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 					}),

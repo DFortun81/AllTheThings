@@ -18,7 +18,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 		filter(BATTLE_PETS, {
 			i(160324, {	-- Grumbling Sac
 				i(163859),	-- Baby Crawg (PET!)
-				i(163858),	-- Ball of Tentacles
+				i(163858),	-- Slippy (PET!)
 				i(163861),	-- Bloated Bloodfeaster (PET!)
 				i(163860),	-- Gearspring Hopper (PET!)
 			}),
@@ -26,7 +26,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 				i(163859),	-- Baby Crawg (PET!)
 				i(163861),	-- Bloated Bloodfeaster (PET!)
 				i(163860),	-- Gearspring Hopper (PET!)
-				i(163858),	-- Slippy
+				i(163858),	-- Slippy (PET!)
 			}),
 		}),
 		spell(286547, {	-- Transmute: Herbs to Anchors

@@ -191,7 +191,7 @@ _.Instances = { tier(BFA_TIER, {
 							ach(12507),	-- Snake Eater
 							i(160832, {	-- Viable Cobra Egg
 								i(160831, {	-- Cracking Cobra Egg
-									i(160702),	-- Spawn of Merektha
+									i(160702),	-- Spawn of Merektha (PET!)
 								}),
 							}),
 							i(158714),	-- Swarm's Eedge

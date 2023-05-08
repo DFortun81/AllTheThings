@@ -100,7 +100,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 				146626,	-- Legionaire Voladis (Horde / OG)
 			},
 		}),
-		i(163975, {	-- Sir Snips
+		i(163975, {	-- Sir Snips (PET!)
 			["races"] = ALLIANCE_ONLY,
 			["crs"] = {
 				119484,	-- Captain Roberts (Ally / Dalaran)

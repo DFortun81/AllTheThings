@@ -20,14 +20,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			pet(2382, {	-- Inland Croaker
 			}),
-			p(2380, {	-- Parasitic Boarfly
-				["crs"] = { 143039 },	-- Parasitic Boarfly
+			pet(2380, {	-- Parasitic Boarfly
 			}),
 			p(2377, {	-- Sandyback Crawler
 				["crs"] = { 143036 },	-- Sandyback Crawler
 			}),
-			p(2381, {	-- Shack Crab
-				["crs"] = { 143040 },	-- Shack Crab
+			pet(2381, {	-- Shack Crab
 			}),
 		})),
 	}),

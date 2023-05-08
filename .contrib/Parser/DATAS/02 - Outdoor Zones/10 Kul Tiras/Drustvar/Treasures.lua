@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 32.57, 58.90, DRUSTVAR },
 				["questID"] = 53432,
 			}),
-			i(163497, {	-- Wicker Pup
+			i(163497, {	-- Wicker Pup (PET!)
 				["description"] = "You must find each of the four parts from various treasures in the Zone and combine them to form this battle pet.\nRight-Click for more information.",
 				["cost"] = {
 					{ "i", 163790, 1 },	-- Spooky Incantation

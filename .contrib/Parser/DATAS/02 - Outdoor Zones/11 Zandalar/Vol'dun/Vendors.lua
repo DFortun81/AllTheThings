@@ -145,10 +145,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(163509, {	-- Freshwater Pincher (PET!)
 						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
 					}),
-					i(163503, {	-- Ranishu Runt
+					i(163503, {	-- Ranishu Runt (PET!)
 						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
 					}),
-					i(163512, {	-- Sandstinger Wasp
+					i(163512, {	-- Sandstinger Wasp (PET!)
 						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 					}),
 					i(163514, {	-- Carnivorous Lasher (PET!)

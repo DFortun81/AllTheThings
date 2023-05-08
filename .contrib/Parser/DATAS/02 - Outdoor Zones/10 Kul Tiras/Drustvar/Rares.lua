@@ -274,7 +274,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["coord"] = { 65.0, 83.2, DRUSTVAR },
 						["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
 						["g"] = {
-							i(161081),	-- Taptaf
+							i(161081),	-- Taptaf (PET!)
 						},
 					}),
 				},

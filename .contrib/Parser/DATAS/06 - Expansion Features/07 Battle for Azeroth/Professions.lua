@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 				-- Solves
 				i(160751),	-- Dance of the Dead (TOY!)
 				i(160833),	-- Fetish of the Tormented Mind
-				i(161089),	-- Restored Revenant
+				i(161089),	-- Restored Revenant (PET!)
 				i(154922),	-- Ancient Runebound Tome
 				i(154921),	-- Ceremonial Bonesaw
 				i(154923),	-- Disembowling Sickle

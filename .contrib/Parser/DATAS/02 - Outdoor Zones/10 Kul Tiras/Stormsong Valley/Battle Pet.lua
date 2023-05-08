@@ -12,26 +12,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			pet(2379, {	-- Honey Bee
 			}),
-			p(2373, {	-- River Frog
-				["crs"] = { 143032 },	-- River Frog
+			pet(2373, {	-- River Frog
 			}),
-			p(2378, {	-- River Otter
-				["crs"] = { 143037 },	-- River Otter
+			pet(2378, {	-- River Otter
 			}),
-			p(2377, {	-- Sandyback Crawler
-				["crs"] = { 143036 },	-- Sandyback Crawler
+			pet(2377, {	-- Sandyback Crawler
 			}),
-			p(2381, {	-- Shack Crab
-				["crs"] = { 143040 },	-- Shack Crab
+			pet(2381, {	-- Shack Crab
 			}),
-			p(2372, {	-- Shadowback Crawler
-				["crs"] = { 143031 },	-- Shadowback Crawler
+			pet(2372, {	-- Shadowback Crawler
 			}),
-			p(2375, {	-- Vale Marmot
-				["crs"] = { 143034 },	-- Vale Marmot
+			pet(2375, {	-- Vale Marmot
 			}),
-			p(2376, {	-- Valley Chicken
-				["crs"] = { 143035 },	-- Valley Chicken
+			pet(2376, {	-- Valley Chicken
 			}),
 		})),
 	}),

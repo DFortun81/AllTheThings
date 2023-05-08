@@ -254,16 +254,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(163504, {	-- Child of Jani (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
-					i(163503, {	-- Ranishu Runt
+					i(163503, {	-- Ranishu Runt (PET!)
 						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
 					}),
-					i(163499, {	-- Raptor Containment Crate
+					i(163499, {	-- Zandalari Shinchomper (PET!)
 						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 					}),
-					i(163498, {	-- Tiny Direhorn
+					i(163498, {	-- Tiny Direhorn (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
-					i(163505, {	-- Toad in a Box
+					i(163505, {	-- Swamp Toad (PET!)
 						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 					}),
 				},

@@ -250,7 +250,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			ach(12232),	-- Collector's Edition: Tottle
 			h(i(153540)),	-- Gilded Ravasaur (MOUNT!)
 			a(i(153539)),	-- Seabraid Stallion (MOUNT!)
-			i(153541),	-- Tottle
+			i(153541),	-- Tottle (PET!)
 		},
 	}),
 	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE, ["timeline"] = { ADDED_9_0_1 }, }, {

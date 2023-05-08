@@ -95,8 +95,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163582),	-- Qinsho's Eternal Hound (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(163800),	-- Poro
-							i(163808),	-- Sandshell Chitterer
+							i(163800),	-- Poro (PET!)
+							i(163808),	-- Sandshell Chitterer (PET!)
 						}),
 						n(WEAPONS, {
 							i(164337),	-- Plundered Amber Slinger
@@ -150,8 +150,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(166494),	-- Lord Woofington
 							i(166488),	-- Rotting Ghoul
-							i(163808),	-- Sandshell Chitterer
-							i(163797),	-- Scuttle
+							i(163808),	-- Sandshell Chitterer (PET!)
+							i(163797),	-- Scuttle (PET!)
 						}),
 						n(WEAPONS, {
 							i(163927),	-- Brinebeard's Shanker
@@ -199,10 +199,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 						filter(BATTLE_PETS, {
 							i(163804),	-- Kindleweb Spiderling (PET!)
-							i(163808),	-- Sandshell Chitterer
-							i(163797),	-- Scuttle
+							i(163808),	-- Sandshell Chitterer (PET!)
+							i(163797),	-- Scuttle (PET!)
 							i(166499),	-- Thunderscale Whelpling
-							i(163807),	-- Tinder Pup
+							i(163807),	-- Tinder Pup (PET!)
 						}),
 						n(WEAPONS, {
 							i(163927),	-- Brinebeard's Shanker
@@ -291,9 +291,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163585),	-- Surf Jelly (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(163808),	-- Sandshell Chitterer
+							i(163808),	-- Sandshell Chitterer (PET!)
 							i(166488),	-- Rotting Ghoul
-							i(163824),	-- Voru'kar Leecher
+							i(163824),	-- Voru'kar Leecher (PET!)
 						}),
 						filter(TOYS, {
 							i(164373),	-- Enchanted Soup Stone (TOY!)
@@ -391,7 +391,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 						filter(BATTLE_PETS, {
 							i(163804),	-- Kindleweb Spiderling (PET!)
-							i(163807),	-- Tinder Pup
+							i(163807),	-- Tinder Pup (PET!)
 						}),
 						n(WEAPONS, {
 							i(164301),	-- Plundered Barb-Edged Dagger

@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					i(163499, {	-- Raptor Containment Crate (PET!)
+					i(163499, {	-- Zandalari Shinchomper (PET!)
 						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 					}),
 					i(163560, {	-- Saurolisk Hatchling (PET!)

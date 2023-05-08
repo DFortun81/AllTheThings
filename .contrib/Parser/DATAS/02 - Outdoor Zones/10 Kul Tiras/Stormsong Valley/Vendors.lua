@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(161578, {	-- Kelp-Encrusted Bindings
 						["cost"] = 19000000,	-- 1,900g
 					}),
-					i(163490, {	-- Pair of Bee Wings (PET!)
+					i(163490, {	-- Seabreeze Bumblebee (PET!)
 						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
 					}),
 					i(163318, {	-- Recipe: Battle Potion of Stamina [Rank 3] (RECIPE!)
