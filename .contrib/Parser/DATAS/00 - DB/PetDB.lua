@@ -59,9 +59,19 @@ i(163494, 2408);	-- Bilefang Skitterer
 i(163861, 2476);	-- Bloated Bloodfeaster
 i(163500, 2414);	-- Bloodfeaster Larva
 n(143047, 2388);	-- Bloodfever Tarantula
+i(163818, 2451);	-- Bloodstone Tunneler
+i(163508, 2422);	-- Blue Flitter
+n(143055, 2398);	-- Boghopper
+n(143057, 2400);	-- Coastal Bounder
+n(143048, 2389);	-- Elusive Skimmer
+n(143053, 2395);	-- Glutted Bleeder
 n(143046, 2387);	-- Golden Beetle
 n(143049, 2390);	-- Leafy Flutterwing
+n(143052, 2394);	-- Returned Hatchling
 n(143043, 2384);	-- Shore Butterfly
+n(143054, 2397);	-- Spectral Raven
+n(143051, 2393);	-- Sticky Oozeling
+n(143050, 2392);	-- Young Sand Sifter
 
 --------------
 -- UNSORTED --
@@ -120,7 +130,7 @@ i(142091, 1960);	-- Blessed Seed (Snaplasher)
 i(93032, 1144);	-- Blighted Spore (Fungal Abomination)
 i(147539, 2035);	-- Bloodbrood Whelpling
 
-i(163818, 2451);	-- Bloodstone Tunneler
+
 i(127704, 1577);	-- Bloodthorn Hatchling
 i(126925, 1666);	-- Blorp's Bubble (Blorp)
 i(98550, 1248);	-- Blossoming Ancient
@@ -149,7 +159,7 @@ i(163974, 2479);	-- Bucketshell
 
 i(163776, 2442);	-- Bumbles
 
-i(163508, 2422);	-- Butterfly in A Jar
+
 i(142099, 1968);	-- Call of the Frozen Blade (Wicked Soul)
 i(160588, 2185);	-- Cap'n Crackers
 i(163798, 2455);	-- Captain Nibs

@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(163511, {	-- Barnacled Hermit Crab (PET!)
 						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 					}),
-					i(163508, {	-- Butterfly in a Jar (PET!)
+					i(163508, {	-- Blue Flitter (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 					i(163509, {	-- Freshwater Pincher (PET!)
