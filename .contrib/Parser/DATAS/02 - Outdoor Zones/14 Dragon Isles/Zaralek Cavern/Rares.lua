@@ -67,6 +67,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75364, true),
 					i(205293),	-- Emberdusk's Embrace
+					i(205201),	-- Smoldering Howler Horn
 					i(205335),	-- Talisman of the Dusk
 				},
 			}),
@@ -223,6 +224,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(203318),	-- Winding Slitherdrake: Hairy Chest (DM!)
 					i(205326),	-- Crystalweb Chelicera
 					i(205290),	-- Greatcloak of Spun Marrow
+					i(205191),	-- Underlight Globe
 					i(205305),	-- Zaralek Arachnid Armbands
 				},
 			}),

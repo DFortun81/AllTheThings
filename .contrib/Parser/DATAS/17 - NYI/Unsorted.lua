@@ -195,11 +195,8 @@ root(ROOTS.Unsorted, {
 				i(204087),	-- 10.1 Cloak Test Item
 				i(204736),	-- Heatbound Medallion
 				i(204901),	-- Firecaller's Focus
-				i(205191),	-- Underlight Globe
 				i(205193),	-- Sturdy Deepflayer Scute
 				i(205196),	-- Zaqali Hand Cauldron
-				i(205200),	-- Stirring Twilight Ember
-				i(205201),	-- Smoldering Howler Horn
 				i(205229),	-- Magma Serpent Lure
 				i(205262),	-- Magmaclaw Lure
 				i(205276),	-- Deepflayer Lure
