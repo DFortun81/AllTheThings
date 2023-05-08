@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["sourceQuests"] = { 44785 },	-- Tea Party
 						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 					}),
-					i(163494, {	-- Wad of Spider Web
+					i(163494, {	-- Bilefang Skitterer (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 				},

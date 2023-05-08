@@ -151,11 +151,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 66.9, 42.0, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(163506, {	-- Accursed Hexxer
+					i(163506, {	-- Accursed Hexxer (PET!)
 						["sourceQuests"] = { 50976 },	-- An Ancient Curse
 						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
 					}),
-					i(163500, {	-- Bloodfeaster Larva
+					i(163500, {	-- Bloodfeaster Larva (PET!)
 						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 					}),
 					i(163510, {	-- Crimson Frog

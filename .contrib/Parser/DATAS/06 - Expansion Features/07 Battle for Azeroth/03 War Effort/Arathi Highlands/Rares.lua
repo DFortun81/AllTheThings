@@ -22,8 +22,8 @@ _.ExpansionFeatures =
 						["hordeQuestID"] = 53505,	-- Branchlord Aldrus [Horde]
 						["isWeekly"] = true,
 						["coord"] = { 22.9, 22.2, ARATHI_HIGHLANDS },
-						["g"] = {	-- Aldrusian Sproutling
-							i(163650),	-- Aldrusian Sproutling
+						["g"] = {
+							i(163650),	-- Aldrusian Sproutling (PET!)
 						},
 					}),
 					n(141615, {	-- Burning Goliath

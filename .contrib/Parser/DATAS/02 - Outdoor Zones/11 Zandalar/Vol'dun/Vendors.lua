@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 29.5, 59.4, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(163511, {	-- Barnacled Hermit Crab
+					i(163511, {	-- Barnacled Hermit Crab (PET!)
 						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 					}),
 					i(159753, {	-- Desert Flute (TOY!)

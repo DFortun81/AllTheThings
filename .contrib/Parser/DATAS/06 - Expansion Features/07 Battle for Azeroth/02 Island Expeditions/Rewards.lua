@@ -253,8 +253,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163585),	-- Surf Jelly (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(163799),	-- Barnaby
-							i(163798),	-- Captain Nibs
+							i(163799),	-- Barnaby (PET!)
+							i(163798),	-- Captain Nibs (PET!)
 						}),
 						n(WEAPONS, {
 							i(163927),	-- Brinebeard's Shanker

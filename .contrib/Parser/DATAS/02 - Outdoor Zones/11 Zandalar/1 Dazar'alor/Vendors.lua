@@ -454,7 +454,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(163496, {	-- Strange Looking Mechanical Squirrel (PET!)
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
-					i(163494, {	-- Wad of Spider Web (PET!)
+					i(163494, {	-- Bilefang Skitterer (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 				},

@@ -41,14 +41,33 @@ n(61081, 379);	-- Squirrel
 n(61369, 420);	-- Toad
 n(61367, 418);	-- Water Snake
 
+-----------------
+-- PATCH 8.0.1 --
+-----------------
+i(163489, 2403);	-- Abyssal Eel
+i(163506, 2420);	-- Accursed Hexxer
+i(163650, 2433);	-- Aldrusian Sproutling
+i(163555, 2439);	-- Azerite Puddle
+i(163515, 2429);	-- Azeriti
+n(141941, 2352);	-- Baa'l
+i(163859, 2477);	-- Baby Crawg
+n(148517, 2537);	-- Baby Zandalari Raptor
+i(163799, 2456);	-- Barnaby
+i(163511, 2425);	-- Barnacled Hemit Crab
+n(143044, 2385);	-- Barrier Hermit
+i(163494, 2408);	-- Bilefang Skitterer
+i(163861, 2476);	-- Bloated Bloodfeaster
+i(163500, 2414);	-- Bloodfeaster Larva
+n(143047, 2388);	-- Bloodfever Tarantula
+n(143046, 2387);	-- Golden Beetle
+n(143049, 2390);	-- Leafy Flutterwing
+n(143043, 2384);	-- Shore Butterfly
+
 --------------
 -- UNSORTED --
 --------------
 i(19450, 106);	-- A Jubling's Tiny Home (Jubling)
 i(129205, 1660);	-- A Tiny Infernal Collar (Fel Pup)
-i(163489, 2403);	-- Abyssal Eel
-i(163506, 2420);	-- Accursed Hexxer
-
 i(151828, 2072);	-- Ageless Bronze Drake
 i(136910, 1805);	-- Alarm-o-Bot
 i(166714, 2566);	-- Albatross Feather
@@ -62,41 +81,32 @@ i(139775, 1918);	-- Alliance Enthusiast
 i(106240, 1363);	-- Alterac Brandy (Alterac Brew-Pup)
 i(152963, 2093);	-- Amalgam of Destruction
 i(167055, 2589);	-- Amber Goo Puddle (Living Amber)
-
 i(44984, 212);	-- Ammen Vale Lashling
 i(117354, 1531);	-- Ancient Nest Guardian
 i(11023, 52);		-- Ancona Chicken
 i(93040, 1155);	-- Anubisath Idol
-
 i(45022, 216);	-- Argent Gruntling
 i(44998, 214);	-- Argent Squire
 i(118516, 1603);	-- Argi
 i(63398, 272);	-- Armadillo Pup
-
 i(23712, 1927);	-- Ash'ana
 i(104156, 1323);	-- Ashleaf Spriteling
 i(128690, 1706);	-- Ashmaw Cub
 i(113569, 1429);	-- Autumnal Sproutling
 i(118599, 1429);	-- Autumnal Sproutling
-i(163555, 2439);	-- Azerite Puddle
-i(163515, 2429);	-- Azeriti
 i(167051, 2583);	-- Azure Cloud Serpent Egg (Azure Windseeker)
 i(104157, 1321);	-- Azure Crane Chick
 i(34535, 57);		-- Azure Whelpling
 i(162578, 2352);	-- Baa'ls Darksign
 i(44819, 202);	-- Baby Blizzard Bear
-i(163859, 2477);	-- Baby Crawg
 i(136919, 1884);	-- Baby Elderhorn
 i(166486, 2551);	-- Baby Stonehide
 i(134047, 1828);	-- Baby Winston
 i(32588, 156);	-- Banana Charm (Bananas)
 i(90177, 903);	-- Baneling
 i(147542, 2047);	-- Ban-Fu, Cub of Ban-Lu
-i(163799, 2456);	-- Barnaby
-i(163511, 2425);	-- Barnacled Hemit Crab
 i(167010, 2576);	-- Beakbert
 i(140934, 1934);	-- Benax
-i(163494, 2408);	-- Bilefang Skitterer
 i(166448, 2545);	-- Binding of Cyclarus
 i(10360, 75);		-- Black Kingsnake
 i(104158, 1322);	-- Blackfuse Bombling
@@ -108,9 +118,8 @@ i(93034, 1149);	-- Blazing Rune (Corefire Imp)
 i(129188, 1753);	-- Bleakwater Jelly
 i(142091, 1960);	-- Blessed Seed (Snaplasher)
 i(93032, 1144);	-- Blighted Spore (Fungal Abomination)
-i(163861, 2476);	-- Bloated Bloodfeaster
 i(147539, 2035);	-- Bloodbrood Whelpling
-i(163500, 2414);	-- Bloodfeaster Larva
+
 i(163818, 2451);	-- Bloodstone Tunneler
 i(127704, 1577);	-- Bloodthorn Hatchling
 i(126925, 1666);	-- Blorp's Bubble (Blorp)

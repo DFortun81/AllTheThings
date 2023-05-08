@@ -17,14 +17,14 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 	prof(ALCHEMY, {
 		filter(BATTLE_PETS, {
 			i(160324, {	-- Grumbling Sac
-				i(163859),	-- Baby Crawg
+				i(163859),	-- Baby Crawg (PET!)
 				i(163858),	-- Ball of Tentacles
-				i(163861),	-- Undulating Blue Sac
+				i(163861),	-- Bloated Bloodfeaster (PET!)
 				i(163860),	-- Wind-Up Frog
 			}),
 			i(160325, {	-- Quivering Sac
-				i(163859),	-- Baby Crawg
-				i(163861),	-- Bloodfeaster Larva
+				i(163859),	-- Baby Crawg (PET!)
+				i(163861),	-- Bloated Bloodfeaster (PET!)
 				i(163860),	-- Gearspring Hopper
 				i(163858),	-- Slippy
 			}),
