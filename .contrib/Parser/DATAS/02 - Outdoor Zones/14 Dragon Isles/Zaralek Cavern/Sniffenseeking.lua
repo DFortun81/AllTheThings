@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				}),
 				n(BONUS_OBJECTIVES, {
-					q(76015, {	-- Heart of Iron 
+					q(76015, {	-- Heart of Iron
 						["g"] = {
 							i(205939),	-- Iron Titan Key
 						},
@@ -198,6 +198,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							{"pop"},
 						},
 					}),
+					i(205342),	-- Loamm Niffen Insignia
 				}),
 			},
 		}),
@@ -210,7 +211,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75747),	-- Completing a Sniffenseeking quest
 		q(75748),	-- Completing a Sniffenseeking quest
 		q(75749),	-- Completing a Sniffenseeking quest
-		q(75997),	-- Completing Heart of Iron Sniffenseeking Quest 
+		q(75997),	-- Completing Heart of Iron Sniffenseeking Quest
 		q(75914),	-- Starting the first Sniffenseeking map after tutorial, unflagged after completing Sniffenseeking quest
 		q(75883),	-- 3rd charge (map) for adventure / unflagged when 3rd map completed
 

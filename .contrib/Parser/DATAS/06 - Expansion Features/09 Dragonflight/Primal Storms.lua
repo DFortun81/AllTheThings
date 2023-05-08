@@ -263,6 +263,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					{ 29.6, 53.8, THE_WAKING_SHORES },
 					{ 63.0, 26.2, THE_WAKING_SHORES },
 					{ 36.1, 36.1, OHNAHRAN_PLAINS },
+					{ 11.9, 37.0, THE_AZURE_SPAN },
 					{ 48.6, 25.2, THE_AZURE_SPAN },
 					{ 58.8, 68.4, THE_AZURE_SPAN },
 					{ 60.7, 56.3, THALDRASZUS },

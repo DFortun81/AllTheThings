@@ -507,7 +507,6 @@ root(ROOTS.Unsorted, {
 				-- Loamm Niffen
 				i(204712),	-- Brimming Loamm Niffen Supply Satchel
 				i(205286),	-- Loamm Niffen Tabard
-				i(205342),	-- Loamm Niffen Insignia
 				i(205365),	-- Loamm Niffen Insignia
 				i(205965),	-- Large Loammian Supply Pack
 				i(205968),	-- Overflowing Loammian Supply Pack
