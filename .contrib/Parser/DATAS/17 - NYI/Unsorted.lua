@@ -288,13 +288,11 @@ root(ROOTS.Unsorted, {
 				i(205462),	-- Royal Nerubian Capsa
 				i(205466),	-- Regurgitated Spores
 				i(205467),	-- Preserved Krolusk Crest
-				i(205468),	-- Hooked Tail Claw
 				i(205472),	-- Wad of Sparkling Somethings
 				i(205689),	-- Champion's Crystal
 				i(205691),	-- Hypnotic Murloc Lure
 				i(205695),	-- Dense Salamanther Skull
 				i(205697),	-- Gelatinous Egg Mass
-				i(205699),	-- Rock Worm Frills
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205866),	-- Rough Coiled Horns
 				i(205867),	-- Steaming Drake Heart

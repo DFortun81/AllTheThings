@@ -36,19 +36,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							-- TODO: ["_quests"] = { 76027 },
 						}),
 						crit(4, {	-- Scratch and Sniff
-							-- TODO: ["_quests"] = { 75234 },
+							["_quests"] = { 75234 },
 						}),
 						crit(5, {	-- Element Whispers
 							-- TODO: ["_quests"] = { 75621 },
 						}),
 						crit(6, {	-- Successful Interventions
-							-- TODO: ["_quests"] = { 75516 },
+							["_quests"] = { 75516 },
 						}),
 						crit(7, {	-- Those Rascally Worms
 							["_quests"] = { 75397 },
 						}),
 						crit(8, {	-- Your Weight in Gold
-							-- TODO: ["_quests"] = { 75397 },
+							["_quests"] = { 75996 },
 						}),
 						crit(9, {	-- Sneak and Sniff
 							-- TODO: ["_quests"] = { 75517 },
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							-- TODO: ["_quests"] = { 76015 },
 						}),
 						crit(15, {	-- Liars in Light
-							-- TODO: ["_quests"] = { 75620 },
+							["_quests"] = { 75620 },
 						}),
 						crit(16, {	-- Frostfire Finesse
 							["_quests"] = { 76084 },
@@ -140,6 +140,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },
 						["g"] = {
 							i(203655),	-- Waterlogged Key
+						},
+					}),
+					q(75393, {	-- Making Scents
+						["coord"] = { 58, 54.6, ZARALEK_CAVERN },
+					}),
+					q(75996, {	-- Your Weight in Gold
+						["coord"] = { 58.5, 51.8, ZARALEK_CAVERN },
+					}),
+					q(75620, {	-- Liars in Light
+						-- ["coord"] = { x, y, ZARALEK_CAVERN }, -- accidently remove report before copy-paste coords
+						["g"] = {
+							i(205202),	-- Small Key
+						},
+					}),
+					q(75516, {	-- Successful Interventions
+						["coord"] = { 57.3, 49.4, ZARALEK_CAVERN },
+					}),
+					q(75234, {	-- Scratch and Sniff
+						["coord"] = { 54.6, 52.6, ZARALEK_CAVERN },
+						["g"] = {
+							i(205277),	-- Stolen Key
 						},
 					}),
 				}),
@@ -245,5 +266,17 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		-- AlexSoft
 		q(75875),	-- Started Making Scents (75393) /Unflagged after map was completed
 		q(75876),	-- Completed Making Scents (75393)
+
+		q(75906),	-- Started Your Weight in Gold (75996) /Unflagged after map was completed
+		q(76003),	-- Completed Your Weight in Gold (75996)
+
+		q(75915),	-- Started Liars in Light (75620) /Unflagged after map was completed
+		q(75931),	-- Completed Liars in Light (75620)
+
+		q(75901),	-- Started Successful Interventions (75516) /Unflagged after map was completed
+		q(75927),	-- Completed Successful Interventions (75516)
+
+		q(75895),	-- Started Scratch and Sniff (75234) /Unflagged after map was completed
+		q(75925),	-- Completed Scratch and Sniff (75234)
 	}),
 }));
