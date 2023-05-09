@@ -588,6 +588,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 							["cr"] = 1916,	-- Stephen Bhartec
+							["collectible"] = false,
 						}),
 						i(3262, {	-- Putrid Wooden Hammer
 							-- #if BEFORE CATA

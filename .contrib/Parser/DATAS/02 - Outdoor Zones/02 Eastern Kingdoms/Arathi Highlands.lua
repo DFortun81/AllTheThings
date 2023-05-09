@@ -1619,6 +1619,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(5040, {	-- Shadow Hunter Knife
 							["timeline"] = { "removed 4.0.3" },
+							["collectible"] = false,
 						}),
 					},
 				}),
@@ -2064,6 +2065,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2557,	-- Witherbark Shadow Hunter
 					["coord"] = { 63.6, 84.2, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3" },
+					["collectible"] = false,
 				}),
 				i(3345, {	-- Silk Wizard Hat
 					["cr"] = 2591,	-- Syndicate Magus
