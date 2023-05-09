@@ -3088,6 +3088,7 @@ _.ObjectNames = {
 	[401299] = "Broken Barter Boulder",
 	[401828] = "Nal ks'kol Reliquary",
 	[401839] = "Dreamer's Bounty",
+	[401844] = "Smelly Trash Pile",
 	[402627] = "Well-Worn Kiln",
 	[402632] = "Brimstone Rescue Ring",
 	[402634] = "Zaqali Elder Spear",
