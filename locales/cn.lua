@@ -3957,6 +3957,7 @@ for key, value in pairs({
 	--TODO: [398793] = "Lava-Drenched Shadow Crystal",	-- Lava-Drenched Shadow Crystal
 	--TODO: [398794] = "Shimmering Aqueous Orb",	-- Shimmering Aqueous Orb
 	--TODO: [398796] = "Resonating Arcane Crystal",	-- Resonating Arcane Crystal
+	--TODO: [398810] = "Fealty's Reward",	-- Fealty's Reward
 	--TODO: [398814] = "Molten Hoard",	-- Molten Hoard
 	--TODO: [398815] = "Secured Shipment",	-- Secured Shipment
 	--TODO: [401236] = "Malnourished Specimen",	-- Malnourished Specimen
@@ -3967,6 +3968,7 @@ for key, value in pairs({
 	--TODO: [401299] = "Broken Barter Boulder",	-- Broken Barter Boulder
 	--TODO: [401828] = "Nal ks'kol Reliquary",	-- Nal ks'kol Reliquary
 	--TODO: [401839] = "Dreamer's Bounty",	-- Dreamer's Bounty
+	--TODO: [401844] = "Smelly Trash Pile",	-- Smelly Trash Pile
 	--TODO: [402627] = "Well-Worn Kiln",	-- Well-Worn Kiln
 	--TODO: [402632] = "Brimstone Rescue Ring",	-- Brimstone Rescue Ring
 	--TODO: [402634] = "Zaqali Elder Spear",	-- Zaqali Elder Spear

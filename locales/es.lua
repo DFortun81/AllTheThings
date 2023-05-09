@@ -3944,6 +3944,7 @@ for key,value in pairs({
 	[398793] = "Cristal de sombras calado de lava",	-- Lava-Drenched Shadow Crystal
 	[398794] = "Orbe acuoso reluciente",	-- Shimmering Aqueous Orb
 	[398796] = "Cristal Arcano resonador",	-- Resonating Arcane Crystal
+	[398810] = "Recompensa de lealtad",	-- Fealty's Reward
 	[398814] = "Tesoro de magma",	-- Molten Hoard
 	--TODO: [398815] = "Secured Shipment",	-- Secured Shipment
 	[401236] = "Espécimen malnutrido",	-- Malnourished Specimen
@@ -3954,6 +3955,7 @@ for key,value in pairs({
 	[401299] = "Roca de trueque rota",	-- Broken Barter Boulder
 	[401828] = "Relicario de Nal ks'kol",	-- Nal ks'kol Reliquary
 	[401839] = "Botín de soñador",	-- Dreamer's Bounty
+	[401844] = "Montón de basura maloliente",	-- Smelly Trash Pile
 	[402627] = "Fogón desgastado",	-- Well-Worn Kiln
 	[402632] = "Anillo de rescate de azufre",	-- Brimstone Rescue Ring
 	[402634] = "Lanza ancestral zaqali",	-- Zaqali Elder Spear
