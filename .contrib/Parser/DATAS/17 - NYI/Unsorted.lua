@@ -604,7 +604,6 @@ root(ROOTS.Unsorted, {
 				i(202619),	-- Mender Supplies
 				i(202620),	-- Toxin Antidote
 				i(202642),	-- Proto-Killing Spear
-				i(202647),	-- Stolen Goods
 				i(202868),	-- Mender's Signal
 				i(202874),	-- Healing Draught
 				i(203210),	-- Dragonscale Supply Box

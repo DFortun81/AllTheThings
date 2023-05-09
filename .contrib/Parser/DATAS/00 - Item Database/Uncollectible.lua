@@ -719,6 +719,7 @@ i(203457);	-- Volcanic Herb Sachet
 i(204085);	-- Zaqali Dragonslayer's Spear
 i(203654);	-- Zaqali Flame Totem
 i(204817);	-- Underlight Cocoon Fibers
+i(202647);	-- Stolen Goods
 -- Poor Trash --
 i(205869);	-- Aromatic Royal Jelly
 i(205868);	-- Cracked Chitin Carapace
