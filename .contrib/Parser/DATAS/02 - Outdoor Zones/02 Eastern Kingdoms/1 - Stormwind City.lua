@@ -2960,13 +2960,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { DEMONHUNTER },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(58912, {	-- An Urgent Meeting
-					["sourceQuests"] = { 58911 },	-- Home Is Where the Hearth Is [A]
-					["provider"] = { "n", 163211 },	-- Henry Garrick
-					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_9_0_1 },
-				}),
 				q(7796, {	-- Additional Runecloth [Stormwind]
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["sourceQuest"] = 7795,	-- A Donation of Runecloth
