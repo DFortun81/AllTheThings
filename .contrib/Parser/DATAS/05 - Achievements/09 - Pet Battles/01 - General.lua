@@ -13,16 +13,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			i(174830),	-- Shadowy Disguise (TOY!)
 		})),
 		petbattle(ach(11856, {	-- Pet Battle Challenge: Deadmines*
-			i(151632),	-- Mining Monkey
+			i(151632),	-- Mining Monkey (PET!)
 		})),
 		petbattle(ach(13269, {	-- Pet Battle Challenge: Gnomeregan*
 			i(165894),	-- Mini Spider Tank (PET!)
 		})),
 		petbattle(ach(13627, {	-- Pet Battle Challenge: Stratholme
-			i(169670),	-- Evil Wizard Hat
+			i(169670),	-- Minimancer (PET!)
 		})),
 		petbattle(ach(11765, {	-- Pet Battle Challenge: Wailing Caverns*
-			i(147543),	-- Son of Skum
+			i(147543),	-- Son of Skum (PET!)
 		})),
 		ach(12927),		-- Polished Pet Charmer*
 		ach(9712),		-- Shiny Pet Charmer*
@@ -111,7 +111,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			ach(6601),	-- Taming the Wild [1)
 		})),
 		petbattle(ach(13695, {	-- Team Aquashock
-			i(169349),	-- Kelpfin
+			i(169349),	-- Kelpfin (PET!)
 		})),
 		petbattle(ach(8348,  {	-- The Longest Day*
 			i(98715),	-- Marked Flawless Battle-Stone

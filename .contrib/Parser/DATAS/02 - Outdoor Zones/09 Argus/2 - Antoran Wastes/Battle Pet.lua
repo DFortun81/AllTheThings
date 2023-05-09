@@ -7,12 +7,10 @@ _.Zones =
 	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			petbattle(filter(BATTLE_PETS, {
-				p(2122, {	-- Antoran Bile Larva
-					["cr"] = 128163,
+				pet(2122, {	-- Antoran Bile Larva
 					["coord"] = { 70.2, 47.4, 885 },
 				}),
-				p(2126, {	-- Antoran Bilescourge
-					["cr"] = 128175,
+				pet(2126, {	-- Antoran Bilescourge
 					["coord"] = { 74.6, 47.8, 885 },
 				}),
 				ach(12088, {	-- Anomalous Animals of Argus
@@ -52,7 +50,7 @@ _.Zones =
 				}),
 				ach(12100, {	-- Family Fighter
 					["groups"] = {
-						i(153040, {	-- Felclaw Marsuul
+						i(153040, {	-- Felclaw Marsuul (PET!)
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12089, {	-- Aquatic Assault

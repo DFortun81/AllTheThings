@@ -329,7 +329,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163582),	-- Qinsho's Eternal Hound (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(169322),	-- Adventurous Hopling Pack
+							i(169322),	-- Adventurous Hopling (PET!)
 							i(163802),	-- Inky (PET!)
 							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(163822),	-- Kunchong Hatchling (PET!)

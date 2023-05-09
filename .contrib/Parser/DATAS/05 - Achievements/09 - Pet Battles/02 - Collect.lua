@@ -383,7 +383,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(16),		-- Wicked Soul (Icecrown Citadel - The Lich King)
 		}),
 		ach(12079, {	-- Raiding with Leashes V: Cuteaclysm*
-			i(152963),		-- Amalgam of Destruction
+			i(152963),		-- Amalgam of Destruction (PET!)
 			crit(1),		-- Tinytron (Blackwing Descent - Magmatron)
 			crit(2),		-- Discarded Experiment (Blackwing Descent - Maloriak)
 			crit(3),		-- Rattlejaw (Blackwing Descent - Nefarian)

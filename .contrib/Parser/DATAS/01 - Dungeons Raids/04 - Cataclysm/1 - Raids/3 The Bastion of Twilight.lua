@@ -73,7 +73,7 @@ _.Instances = { tier(CATA_TIER, {
 									["cr"] = 49864,	-- Twilight Fiend
 								}),
 							}),
-							i(152969),	-- Odd Twilight Egg (PET!)
+							i(152969),	-- Twilight Clutch-Sister (PET!)
 							i(63536),	-- Blade of the Witching Hour
 							i(63533),	-- Fang of Twilight
 							i(63532),	-- Dragonheart Piercer
@@ -175,7 +175,7 @@ _.Instances = { tier(CATA_TIER, {
 						},
 						["groups"] = {
 							ach(5117),	-- Heroic: Valiona and Theralion
-							i(152969),	-- Odd Twilight Egg (PET!)
+							i(152969),	-- Twilight Clutch-Sister (PET!)
 							i(65091),	-- Blade of the Witching Hour
 							i(65094),	-- Fang of Twilight
 							i(65095),	-- Dragonheart Piercer

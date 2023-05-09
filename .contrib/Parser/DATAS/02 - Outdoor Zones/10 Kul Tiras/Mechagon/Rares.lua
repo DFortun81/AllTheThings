@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 						["isDaily"] = true,
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["g"] = {
-							i(169886),	-- Spraybot 0D
+							i(169886),	-- Spraybot 0D (PET!)
 						},
 					}),
 				},
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["coord"] = { 65.8, 22.9, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					i(169392),	-- Bonebiter
+					i(169392),	-- Bonebiter (PET!)
 					i(167846),	-- Blueprint: Mechano-Treat
 				},
 			}),
@@ -241,7 +241,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["description"] = "Requires a |cFFFFD700Beastbot Powerpack|r.",
 				["g"] = {
 					i(169173),	-- Blueprint: Anti-Gravity Pack
-					i(169382),	-- Lost Robogrip
+					i(169382),	-- Lost Robogrip (PET!)
 					i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
 						i(169843),	-- Azeroth Mini: Cork Stuttguard
 						i(169842),	-- Azeroth Mini: Roadtrogg
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["coord"] = { 88.3, 20.6, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					i(169393),	-- Arachnoid Skitterbot
+					i(169393),	-- Arachnoid Skitterbot (PET!)
 				},
 			}),
 			n(151627, {	-- Mr. Fixthis
@@ -334,14 +334,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 						["isDaily"] = true,
 						["g"] = {
 							i(168495),	-- Blueprint: Rustbolt Requisitions
-							i(169396),	-- Echoing Oozeling
+							i(169396),	-- Echoing Oozeling (PET!)
 							i(169692),	-- Vinyl: Triumph of Gnomeregan
 						},
 					}),
 					i(169878, {	-- Irradiated Undercoat
 						["description"] = "This shirt can drop from mobs during the Reclamation Rig event.  Equip it, collect 100 Unstable Isotopes from attacking more of the event mobs, and then use the shirt to absorb the isotopes.  You can only absorb isotopes once every 24 hours, and you'll get the pet after you use all five of the shirt's charges.",
 						["g"] = {
-							i(169879),	-- Melted Irradiated Undercoat (PET!)
+							i(169879),	-- Irradiated Elementaling (PET!)
 						},
 					}),
 					i(168264, {["sym"]={{"fill"}}}),	-- Recycling Requisition (Green)

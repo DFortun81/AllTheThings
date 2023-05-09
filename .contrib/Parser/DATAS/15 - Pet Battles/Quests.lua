@@ -923,7 +923,7 @@ root(ROOTS.PetBattles, petbattle({
 			["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan.",
 			["g"] = {
 				i(151638, {	-- Leprous Sack of Pet Supplies
-					i(151645),	-- Model D1-BB-L3R
+					i(151645),	-- Dibbler (PET!)
 				}),
 			},
 		}),

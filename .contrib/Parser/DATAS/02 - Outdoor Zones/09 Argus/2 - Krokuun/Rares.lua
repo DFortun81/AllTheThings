@@ -90,8 +90,8 @@ root(ROOTS.Zones, m(905, {	-- Argus
 							i(152841),	-- Felglow Mana Ray (MOUNT!)
 							i(152840),	-- Scintillating Mana Ray (MOUNT!)
 							i(152842),	-- Vibrant Mana Ray (MOUNT!)
-							i(153054),	-- Docile Skyfin Pet
-							i(153055),	-- Fel-Afflicted Skyfin Pet
+							i(153054),	-- Docile Skyfin (PET!)
+							i(153055),	-- Fel-Afflicted Skyfin (PET!)
 						},
 					}),
 				},
