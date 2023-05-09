@@ -202,12 +202,12 @@ root(ROOTS.WorldEvents, m(503,
 					i(98405, {	-- Brawler's Burly Mushan Beast (MOUNT!) unobtainable unless you reached Rank 8 in either Season 1 or Season 2
 						["timeline"] = { "added 5.3.0.16781", "removed 7.1.5" },
 					}),
-					i(167812),  -- Brawlers Guild Tabard
+					i(167812),	-- Brawlers Guild Tabard
 					i(122396),	-- Brawler's Razor Claws
 					i(98085),	-- Brucehide Jersey
 					i(93025),	-- Clock'em (PET!)
 					i(98092),	-- Digmaster's Bodysleeve
-					i(167892, { -- Ensemble: Brawlers Garb
+					i(167892, {	-- Ensemble: Brawlers Garb
 						["ignoreBonus"] = true,
 						["g"] = {
 							i(167829),	-- Brawler's Bracer Chains
@@ -252,7 +252,7 @@ root(ROOTS.WorldEvents, m(503,
 							ach(9177, {	-- Deck Your Collection [Season 2]
 								["races"] = HORDE_ONLY,
 								["g"] = {
-									i(98543), -- Wraps of the Blood-Soaked Brawler
+									i(98543),	-- Wraps of the Blood-Soaked Brawler
 								},
 							}),
 							n(117208, {	-- a Seagull

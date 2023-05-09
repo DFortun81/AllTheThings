@@ -759,7 +759,7 @@ i(161081, 2198);	-- Taptaf
 i(161089, 2199);	-- Restored Revenant
 i(152878, 2201);	-- Enchanted Tiki Mask
 i(161214, 2202);	-- Miimii
-i(162578, 2352);    -- Baa'l
+i(162578, 2352);	-- Baa'l
 i(163220, 2401);	-- Rooter
 i(163244, 2402);	-- Brutus
 i(163489, 2403);	-- Abyssal Eel

@@ -179,7 +179,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 			q(32859, { ["u"] = REMOVED_FROM_GAME, }),	-- Ty'thar
 		}),
 		n(VENDORS, {
-			n(70752,  {	-- Card Trader Leila
+			n(70752, {	-- Card Trader Leila
 				i(94178),	-- Challenge Card: G.G. Engineering
 				i(164935),	-- Challenge Card: Lord Sylysthrel
 				i(164936, {	-- Mysterious Challenge Card
@@ -193,7 +193,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 					},
 				}),
 			}),
-			n(70723,  {	-- Dame Jesepha
+			n(70723, {	-- Dame Jesepha
 				i(98121, {	-- Amberseed Bun
 					["description"] = "Throw this at Brawlers while on the 'Flaunt It If You Got It' quest.",
 				}),
@@ -207,7 +207,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 					i(98405, {	-- Brawler's Burly Mushan Beast (MOUNT!) unobtainable unless you reached Rank 8 in either Season 1 or Season 2
 						["timeline"] = { "added 5.3.0.16781", "removed 7.1.5" },
 					}),
-					i(167811),  -- Brawlers Guild Tabard
+					i(167811),	-- Brawlers Guild Tabard
 					i(122396),	-- Brawler's Razor Claws
 					i(98085),	-- Brucehide Jersey
 					i(93025),	-- Clock'em (PET!)
@@ -247,19 +247,19 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 					i(98543),	-- Wraps of the Blood-Soaked Brawler
 				},
 			}),
-			n(70719,  { -- Mozzle Gearbeer
+			n(70719, {	-- Mozzle Gearbeer
 				i(98117, {	-- Moneybrau
 					["description"] = "Drink this while on the 'Flaunt It If You Got It' quest.",
 				}),
 			}),
-			n(118898, { -- Ulaani
+			n(118898, {	-- Ulaani
 				i(143763, {	-- Bag of Chipped Dice
 					["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
 					["g"] = {
 						ach(9176, {	-- Deck Your Collection [Season 2]
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								i(98543), -- Wraps of the Blood-Soaked Brawler
+								i(98543),	-- Wraps of the Blood-Soaked Brawler
 							},
 						}),
 						ach(13194),		-- I Am Thrall's Complete Lack Of Surprise
