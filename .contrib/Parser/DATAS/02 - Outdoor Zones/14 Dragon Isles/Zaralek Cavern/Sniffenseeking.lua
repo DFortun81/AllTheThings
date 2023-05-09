@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							["_quests"] = { 75234 },
 						}),
 						crit(5, {	-- Element Whispers
-							-- TODO: ["_quests"] = { 75621 },
+							["_quests"] = { 75621 },
 						}),
 						crit(6, {	-- Successful Interventions
 							["_quests"] = { 75516 },
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							["_quests"] = { 75996 },
 						}),
 						crit(9, {	-- Sneak and Sniff
-							-- TODO: ["_quests"] = { 75517 },
+							["_quests"] = { 75517 },
 						}),
 						crit(10, {	-- The Living Drill
 							["_quests"] = { 76016 },
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							["_quests"] = { 76084 },
 						}),
 						crit(17, {	-- Liars of Spirit
-							-- TODO: ["_quests"] = { 76081 },
+							["_quests"] = { 76081 },
 						}),
 					}),
 					ach(17832, {	-- Sniffen Around
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["coord"] = { 58.5, 51.8, ZARALEK_CAVERN },
 					}),
 					q(75620, {	-- Liars in Light
-						-- ["coord"] = { x, y, ZARALEK_CAVERN }, -- accidently remove report before copy-paste coords
+						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
 						["g"] = {
 							i(205202),	-- Small Key
 						},
@@ -161,6 +161,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["coord"] = { 54.6, 52.6, ZARALEK_CAVERN },
 						["g"] = {
 							i(205277),	-- Stolen Key
+						},
+					}),
+					q(75621, {	-- Element Whispers
+						["coord"] = { 55.9, 52, ZARALEK_CAVERN },
+						["g"] = {
+							i(205689),	-- Champion's Crystal
+						},
+					}),
+					q(75517, {	-- Sneak and Sniff
+						["coord"] = { 56.9, 51.4, ZARALEK_CAVERN },
+						["g"] = {
+							i(205412),	-- Jangly Key
+						},
+					}),
+					q(76081, {	-- Liars of Spirit
+						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
+						["g"] = {
+							i(205990),	-- Fierce Key
 						},
 					}),
 				}),
@@ -220,6 +238,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					i(205342),	-- Loamm Niffen Insignia
+					i(206009),	-- Ouroboros Tablet
+					i(206010),	-- Designs of Flesh
 				}),
 			},
 		}),
@@ -278,5 +298,14 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 
 		q(75895),	-- Started Scratch and Sniff (75234) /Unflagged after map was completed
 		q(75925),	-- Completed Scratch and Sniff (75234)
+
+		q(75898),	-- Started Element Whispers (75621) /Unflagged after map was completed
+		q(75926),	-- Completed Element Whispers (75621)
+
+		q(75907),	-- Started Sneak and Sniff (75517) /Unflagged after map was completed
+		q(75929),	-- Completed Sneak and Sniff (75517)
+
+		q(75917),	-- Started Liars of Spirit (76081) /Unflagged after map was completed
+		q(75992),	-- Completed Liars of Spirit (76081)
 	}),
 }));
