@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				-- TODO: ["coord"] = { 0, 0, ZARALEK_CAVERN },
 				["g"] = {
 					i(205052, {	-- Miloh (PET!)
-						-- TODO: ["cost"] = { { "i", 163036, "TBD" } },	-- Polished Pet Charm
+						{ "i", 163036, 2500 },	-- 2500x Polished Pet Charm
 					}),
 				},
 			}),
