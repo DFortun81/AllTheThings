@@ -1269,7 +1269,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					["groups"] = {
 						ach(3936),	-- Not One, But Two Jormungars (10 player)
 						ach(3797),	-- Upper Back Pain (10 player)
-						i(142083, {	-- Giant Worm Egg (PET!)
+						i(142083, {	-- Dreadmaw (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(142084, {	-- Magnataur Hunting Horn (PET!)
@@ -1489,7 +1489,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					["groups"] = {
 						ach(3936),	-- Not One, But Two Jormungars (10 player)
 						ach(3797),	-- Upper Back Pain (10 player)
-						i(142083, {	-- Giant Worm Egg (PET!)
+						i(142083, {	-- Dreadmaw (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(142084, {	-- Magnataur Hunting Horn (PET!)
@@ -1774,7 +1774,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					["groups"] = {
 						ach(3937),		-- Not One, But Two Jormungars (25 player)
 						ach(3813),		-- Upper Back Pain (25 player)
-						i(142083, {	-- Giant Worm Egg (PET!)
+						i(142083, {	-- Dreadmaw (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(142084, {	-- Magnataur Hunting Horn (PET!)
@@ -2026,7 +2026,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					["groups"] = {
 						ach(3937),		-- Not One, But Two Jormungars (25 player)
 						ach(3813),		-- Upper Back Pain (25 player)
-						i(142083, {	-- Giant Worm Egg (PET!)
+						i(142083, {	-- Dreadmaw (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(142084, {	-- Magnataur Hunting Horn (PET!)

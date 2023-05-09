@@ -5,7 +5,7 @@
 root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 	currency(HONOR),	-- Honor
 	ach(12893, {	-- Honor Level 5
-		i(142380, {	-- Dutiful Gruntling
+		i(142380, {	-- Dutiful Gruntling (PET!)
 			["races"] = HORDE_ONLY,
 			["crs"] = {
 				119272,	-- Sarah the Savage (Horde / Dalaran)
@@ -13,7 +13,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 				146626,	-- Legionaire Voladis (Horde / OG)
 			},
 		}),
-		i(142379, {	-- Dutiful Squire
+		i(142379, {	-- Dutiful Squire (PET!)
 			["races"] = ALLIANCE_ONLY,
 			["crs"] = {
 				119484,	-- Captain Roberts (Ally / Dalaran)

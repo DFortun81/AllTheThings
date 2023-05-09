@@ -318,7 +318,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 				--	i(139775),	-- Alliance Enthusiast
-				--	i(142379),	-- Dutiful Squire
+				--	i(142379),	-- Dutiful Squire (PET!)
 				},
 			}),
 			n(143560, {	-- Marshal Gabriel

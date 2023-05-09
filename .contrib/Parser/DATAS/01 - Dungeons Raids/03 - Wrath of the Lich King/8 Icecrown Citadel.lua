@@ -2609,7 +2609,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
 							ach(4534),	-- Boned (10 player)
-							i(142094, {	-- Fragment of Frozen Bone (PET!)
+							i(142094, {	-- Boneshard (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(50761),	-- Citadel Enforcer's Claymore
@@ -2669,7 +2669,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
 						["groups"] = {
 							ach(4537),	-- I've Gone and Made a Mess (10 player)
-							i(142095, {	-- Remains of a Blood Beast (PET!)
+							i(142095, {	-- Blood Boil (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(50805),	-- Mag'hari Chieftain's Staff
@@ -2755,7 +2755,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 36678,	-- Professor Putricide
 						["groups"] = {
 							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
-							i(142096, {	-- Putricide's Alchemy Supplies (PET!)
+							i(142096, {	-- Blightbreath (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(51011),	-- Flesh-Carving Scalpel
@@ -2882,7 +2882,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							ach(4530, {	-- The Frozen Throne (10 player)
 								title(140),	-- the Kingslayer
 							}),
-							i(142098, {	-- Drudge Remains (PET!)
+							i(142098, {	-- Drudge Ghoul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice
@@ -2948,7 +2948,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
 							ach(4534),	-- Boned (10 player)
-							i(142094, {	-- Fragment of Frozen Bone (PET!)
+							i(142094, {	-- Boneshard (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(51936),	-- Citadel Enforcer's Claymore
@@ -3011,7 +3011,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142095, {	-- Remains of a Blood Beast (PET!)
+							i(142095, {	-- Blood Boil (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(51898),	-- Mag'hari Chieftain's Staff
@@ -3100,7 +3100,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142096, {	-- Putricide's Alchemy Supplies (PET!)
+							i(142096, {	-- Blightbreath (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(51868),	-- Flesh-Carving Scalpel
@@ -3305,7 +3305,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
 							ach(4610),	-- Boned (25 player)
-							i(142094, {	-- Fragment of Frozen Bone (PET!)
+							i(142094, {	-- Boneshard (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(50415),	-- Bryntroll, the Bone Arbiter
@@ -3377,7 +3377,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142095, {	-- Remains of a Blood Beast (PET!)
+							i(142095, {	-- Blood Boil (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(50412),	-- Bloodvenom Blade
@@ -3472,7 +3472,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142096, {	-- Putricide's Alchemy Supplies (PET!)
+							i(142096, {	-- Blightbreath (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(50179),	-- Last Word
@@ -3598,7 +3598,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142098, {	-- Drudge Remains (PET!)
+							i(142098, {	-- Drudge Ghoul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice
@@ -3664,7 +3664,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
 							ach(4610),	-- Boned (25 player)
-							i(142094, {	-- Fragment of Frozen Bone (PET!)
+							i(142094, {	-- Boneshard (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(50709),	-- Bryntroll, the Bone Arbiter
@@ -3739,7 +3739,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142095, {	-- Remains of a Blood Beast (PET!)
+							i(142095, {	-- Blood Boil (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(50672),	-- Bloodvenom Blade
@@ -3837,7 +3837,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142096, {	-- Putricide's Alchemy Supplies (PET!)
+							i(142096, {	-- Blightbreath (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(50708),	-- Last Word

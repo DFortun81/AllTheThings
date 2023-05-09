@@ -81,7 +81,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(155952),	-- Heart of Iron
 				})),
 				cr(33186, e(1639, {	-- Razorscale
-					i(142087),	-- Ironbound Collar (PET!)
+					i(142087),	-- Ironbound Proto-Whelp (PET!)
 					i(155946),	-- Guiding Star
 					i(156026),	-- Razorscale Talon
 					i(155943),	-- Remorse
@@ -358,7 +358,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					},
 					["g"] = {
 						i(138800),	-- Illusion: Blade Ward
-						i(142092),	-- Overcomplicated Controller
+						i(142092),	-- G0-R41-0N Ultratonk (PET!)
 						i(156211),	-- Delirium's Touch
 						i(156329),	-- Fusion Blade
 						i(156206),	-- Insanity's Grip
@@ -439,7 +439,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 						i(45693)	-- Mimiron's Head (MOUNT!)
 					}),
 					i(138801),	-- Illusion: Blood Draining
-					i(142093),	-- Wriggling Darkness (PET!)
+					i(142093),	-- Creeping Tentacle (PET!)
 					i(156341),	-- Abaddon
 					i(156243),	-- Dark Edge of Depravity
 					i(156348),	-- Devotion

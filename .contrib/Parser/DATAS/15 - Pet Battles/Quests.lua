@@ -944,8 +944,9 @@ root(ROOTS.PetBattles, petbattle({
 			["coord"] = { 63.6, 35.8, NORTHERN_BARRENS },
 			["groups"] = {
 				i(142447, {	-- Torn Sack of Pet Supplies
-					i(142448),	-- Albino Buzzard
-					i(89587),	-- Porcupette
+					i(142448, {	-- Albino Buzzard (PET!)
+					}),
+					i(89587),	-- Porcupette (PET!)
 				}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
 			},
 		}),

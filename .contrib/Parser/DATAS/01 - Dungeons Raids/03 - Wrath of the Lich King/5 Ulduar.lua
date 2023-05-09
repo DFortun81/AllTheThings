@@ -588,7 +588,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["groups"] = {
 							revampAch(2919),	-- A Quick Shave (10 player)
 							revampAch(2923),	-- Iron Dwarf, Medium Rare (10 player)
-							i(142087, {	-- Ironbound Collar (PET!)
+							i(142087, {	-- Ironbound Proto-Whelp (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45298),	-- Razorscale Talon
@@ -897,7 +897,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(138800, {	-- Illusion: Blade Ward
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(142092, {	-- Overcomplicated Controller (PET!)
+							i(142092, {	-- G0-R41-0N Ultratonk (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45647),	-- Helm of the Wayward Conqueror
@@ -983,7 +983,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(138801, {	-- Illusion: Blood Draining
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(142093, {	-- Wriggling Darkness (PET!)
+							i(142093, {	-- Creeping Tentacle (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45635),	-- Chestguard of the Wayward Conqueror
@@ -1485,7 +1485,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["groups"] = {
 							revampAch(2921),	-- A Quick Shave (25 player)
 							revampAch(2924),	-- Iron Dwarf, Medium Rare (25 player)
-							i(142087, {	-- Ironbound Collar (PET!)
+							i(142087, {	-- Ironbound Proto-Whelp (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45147),	-- Guiding Star
@@ -1826,7 +1826,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(138800, {	-- Illusion: Blade Ward
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(142092, {	-- Overcomplicated Controller (PET!)
+							i(142092, {	-- G0-R41-0N Ultratonk (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45641),	-- Gauntlets of the Wayward Conqueror
@@ -1924,7 +1924,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(138801, {	-- Illusion: Blood Draining
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(142093, {	-- Wriggling Darkness (PET!)
+							i(142093, {	-- Creeping Tentacle (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45656),	-- Mantle of the Wayward Conqueror
@@ -2292,7 +2292,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					["groups"] = {
 						ach(12321),	-- A Quick Shave
 						ach(12322),	-- Iron Dwarf, Medium Rare
-						i(142087, {	-- Ironbound Collar (PET!)
+						i(142087, {	-- Ironbound Proto-Whelp (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(45147),	-- Guiding Star
@@ -2753,7 +2753,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(138800, {	-- Illusion: Blade Ward
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(142092, {	-- Overcomplicated Controller (PET!)
+						i(142092, {	-- G0-R41-0N Ultratonk (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(45641),	-- Gauntlets of the Wayward Conqueror
@@ -2880,7 +2880,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(138801, {	-- Illusion: Blood Draining
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(142093, {	-- Wriggling Darkness (PET!)
+						i(142093, {	-- Creeping Tentacle (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(45635),	-- Chestguard of the Wayward Conqueror
