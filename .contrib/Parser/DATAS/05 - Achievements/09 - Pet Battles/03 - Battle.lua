@@ -527,7 +527,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					13278,	-- Not Quite Dead Yet
 				}},
 			["groups"] = {
-				i(165907),	-- Wicker Wraith
+				i(165907),	-- Wicker Wraith (PET!)
 				ach(13280),	-- Hobbyist Aquarist
 				ach(13270),	-- Beast Mode
 				ach(13271),	-- Critters with Huge Teeth

@@ -148,8 +148,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 						filter(BATTLE_PETS, {
 							i(163804),	-- Kindleweb Spiderling (PET!)
-							i(166494),	-- Lord Woofington
-							i(166488),	-- Rotting Ghoul
+							i(166494),	-- Lord Woofington (PET!)
+							i(166488),	-- Rotting Ghoul (PET!)
 							i(163808),	-- Sandshell Chitterer (PET!)
 							i(163797),	-- Scuttle (PET!)
 						}),
@@ -201,7 +201,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(163808),	-- Sandshell Chitterer (PET!)
 							i(163797),	-- Scuttle (PET!)
-							i(166499),	-- Thunderscale Whelpling
+							i(166499),	-- Thunderscale Whelpling (PET!)
 							i(163807),	-- Tinder Pup (PET!)
 						}),
 						n(WEAPONS, {
@@ -292,7 +292,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 						filter(BATTLE_PETS, {
 							i(163808),	-- Sandshell Chitterer (PET!)
-							i(166488),	-- Rotting Ghoul
+							i(166488),	-- Rotting Ghoul (PET!)
 							i(163824),	-- Voru'kar Leecher (PET!)
 						}),
 						filter(TOYS, {

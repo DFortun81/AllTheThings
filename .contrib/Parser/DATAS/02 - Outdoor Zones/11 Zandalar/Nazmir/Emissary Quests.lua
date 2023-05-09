@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["g"] = {
 					i(166282, {	-- Talanji's Expedition Supplies
 						i(166308),	-- For da Blood God! (TOY!)
-						i(166716),	-- Pair of Tiny Bat Wings
+						i(166716),	-- Crimson Bat Pup (PET!)
 					}),
 				},
 			}),

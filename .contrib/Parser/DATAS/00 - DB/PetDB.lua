@@ -51,7 +51,6 @@ i(163555, 2439);	-- Azerite Puddle
 i(163515, 2429);	-- Azeriti
 i(162578, 2352);    -- Baa'l
 i(163859, 2477);	-- Baby Crawg
-n(148517, 2537);	-- Baby Zandalari Raptor
 i(163799, 2456);	-- Barnaby
 i(163511, 2425);	-- Barnacled Hemit Crab
 n(143044, 2385);	-- Barrier Hermit
@@ -169,6 +168,51 @@ i(163497, 2411);	-- Wicker Pup
 n(143050, 2392);	-- Young Sand Sifter
 i(163499, 2413);	-- Zandalari Shinchomper
 
+-----------------
+-- PATCH 8.1.0 --
+-----------------
+i(165857, 2533);	-- Alarm-O-Dog
+i(166714, 2566);	-- Albatross Hatchling
+i(166491, 2555);	-- Albino Duskwatcher
+i(166486, 2551);	-- Baby Stonehide
+n(148517, 2537);	-- Baby Zandalari Raptor
+i(165846, 2527);	-- Child of Pa'ku
+i(166718, 2568);	-- Cobalt Raven
+i(166716, 2567);	-- Crimson Bat Pup
+i(166500, 2562);	-- Crimson Octopode
+i(166449, 2544);	-- Darkshore Sentinel
+i(166345, 2538);	-- Dasher
+i(166451, 2546);	-- Detective Ray
+i(166453, 2548);	-- Everburning Treant
+i(165845, 2526);	-- Feathers
+i(166493, 2557);	-- Firesting Buzzer
+i(166448, 2545);	-- Gust of Cyclarus
+i(166452, 2547);	-- Hydrath Droplet
+i(166487, 2552);	-- Leatherwing Screecher
+i(165855, 2532);	-- Leper Rat
+i(166494, 2558);	-- Lord Woofington
+i(165854, 2531);	-- Mechanical Cockroach
+i(165849, 2530);	-- Mechantula
+i(165894, 2534);	-- Mini Spider Tank
+i(166489, 2554);	-- Needleback Pup
+i(166528, 2563);	-- Nightwreathed Watcher
+i(166715, 2564);	-- Rebuilt Gorilla Bot
+i(166723, 2565);	-- Rebuilt Mechanical Spider
+i(165722, 2525);	-- Redridge Tarantula
+i(166488, 2553);	-- Rotting Ghoul
+i(166498, 2560);	-- Scritches
+i(166492, 2556);	-- Shadefeather Hatchling
+i(165848, 2528);	-- Spawn of Krag'wa
+i(166347, 2540);	-- Tanzil
+i(165847, 2529);	-- Thunder Lizard Runt
+i(166499, 2561);	-- Thunderscale Whelpling
+i(166495, 2559);	-- Tonguelasher
+i(166346, 2539);	-- Trecker
+i(166719, 2569);	-- Violet Abyssal Eel
+i(166454, 2549);	-- Void Jelly
+i(165907, 2535);	-- Wicker Wraith
+i(166455, 2550);	-- Zur'aj the Depleted
+
 --------------
 -- UNSORTED --
 --------------
@@ -176,10 +220,8 @@ i(19450, 106);	-- A Jubling's Tiny Home (Jubling)
 i(129205, 1660);	-- A Tiny Infernal Collar (Fel Pup)
 i(151828, 2072);	-- Ageless Bronze Drake
 i(136910, 1805);	-- Alarm-o-Bot
-i(166714, 2566);	-- Albatross Feather
 i(142448, 1984);	-- Albino Buzzard
 i(119434, 1385);	-- Albino Chimaeraling
-i(166491, 2555);	-- Albino Duskwatcher
 i(44822, 74);		-- Albino Snake
 i(163650, 2433);	-- Aldrusian Sproutling
 i(72042, 331);	-- Alliance Balloon
@@ -206,14 +248,12 @@ i(34535, 57);		-- Azure Whelpling
 i(162578, 2352);	-- Baa'ls Darksign
 i(44819, 202);	-- Baby Blizzard Bear
 i(136919, 1884);	-- Baby Elderhorn
-i(166486, 2551);	-- Baby Stonehide
 i(134047, 1828);	-- Baby Winston
 i(32588, 156);	-- Banana Charm (Bananas)
 i(90177, 903);	-- Baneling
 i(147542, 2047);	-- Ban-Fu, Cub of Ban-Lu
 i(167010, 2576);	-- Beakbert
 i(140934, 1934);	-- Benax
-i(166448, 2545);	-- Binding of Cyclarus
 i(10360, 75);		-- Black Kingsnake
 i(104158, 1322);	-- Blackfuse Bombling
 i(93037, 1153);	-- Blackwing Banner (Death Talon Whelpguard)
@@ -236,7 +276,6 @@ i(20371, 107);	-- Blue Murloc Egg (Murky)
 i(122532, 1600);	-- Bone Serpent
 i(119146, 1458);	-- Bone Wasp
 i(104202, 1343);	-- Bonkers
-i(166452, 2547);	-- Bottled Essence of Hydrath (Hydrath Droplet)
 i(152970, 2082);	-- Bound Stream
 i(66067, 291);	-- Brazie's Sunflower Seeds (Singing Sunflower)
 i(128424, 1466);	-- Brightpaw
@@ -274,7 +313,6 @@ i(152976, 2087);	-- Cinderweb Recluse
 i(93025, 1142);	-- Clock'em
 i(64372, 277);	-- Clockwork Gnome
 i(34425, 191);	-- Clockwork Rocket Bot
-i(166718, 2568);	-- Cobalt Raven Hatchling (Cobalt Raven)
 i(39898, 197);	-- Cobra Hatchling
 i(37298, 180);	-- Competitor's Souvenir (Essence of Competition)
 i(49646, 244);	-- Core Hound Pup
@@ -290,7 +328,7 @@ i(110721, 1396);	-- Crazy Carrot
 i(71076, 321);	-- Creepy Crate
 i(180602, 2903);	-- Crimson Dredwing Pup
 i(70160, 318);	-- Crimson Lasher
-i(166500, 2562);	-- Crimson Octopode
+
 i(10392, 78);		-- Crimson Snake
 i(118106, 1537);	-- Crimson Spore
 i(129175, 1752);	-- Crispin
@@ -314,7 +352,6 @@ i(80008, 848);	-- Darkmoon Rabbit
 i(73903, 338);	-- Darkmoon Tonk
 i(73765, 335);	-- Darkmoon Turtle
 i(73905, 339);	-- Darkmoon Zeppelin
-i(166449, 2544);	-- Darkshore Sentinel
 i(48112, 232);	-- Darting Hatchling
 i(104161, 1330);	-- Death Adder Hatchling
 i(114968, 1449);	-- Deathwatch Hatchling
@@ -356,11 +393,9 @@ i(48527, 240);	-- Enchanted Onyx (Onyx Panther)
 i(128535, 1701);	-- Enchanted Pen
 i(49664, 247);	-- Enchanted Purple Jade (Zipao Tiger)
 i(167009, 2578);	-- Enchanted Saurolisk Scale (Scaley)
-i(165846, 2527);	-- Enchanted Talon of Pa'ku
 i(128534, 1700);	-- Enchanted Torch
 i(167056, 2590);	-- Essence of Pride (Ravenous Prideling)
 i(118921, 1566);	-- Everbloom Peachick
-i(166453, 2548);	-- Everburning Treant
 i(143756, 1998);	-- Everliving Spore
 i(136899, 1717);	-- Extinguished Eye
 i(136901, 1719);	-- Eye of Inquisition
@@ -370,7 +405,7 @@ i(79744, 348);	-- Eye of the Legion
 i(152979, 2090);	-- Faceless Mindlasher
 i(152972, 2083);	-- Faceless Minion
 
-i(165845, 2526);	-- Feathers
+
 i(153045, 2117);	-- Fel Lasher
 i(129760, 1760);	-- Fel Piglet
 i(153055, 2119);	-- Fel-Afflicted Skyfin
@@ -381,20 +416,16 @@ i(85578, 821);	-- Feral Vermling
 i(74611, 342);	-- Festival Lantern
 i(130168, 1802);	-- Fetid Waveling
 i(76062, 346);	-- Fetish Shaman's Spear (Fetish Shaman)
-
 i(140316, 1928);	-- Firebat Pup
-i(166493, 2557);	-- Firesting Buzzer
 i(118578, 1545);	-- Firewing
 i(84105, 847);	-- Fishy
 i(136898, 1716);	-- Fledgling Warden Owl
 i(32498, 155);	-- Fortune Coin (Lucky)
 i(60955, 266);	-- Fossilized Hatchling
 i(153057, 2121);	-- Fossorial Bile Larva
-
 i(64403, 278);	-- Fox Kit
 i(90897, 278);	-- Fox Kit
 i(90898, 278);	-- Fox Kit
-
 i(122107, 1625);	-- Fragment of Anger
 i(122109, 1627);	-- Fragment of Desire
 i(142094, 1963);	-- Fragment of Frozen Bone (Boneshard)
@@ -446,7 +477,6 @@ i(65362, 281, 280);	-- Guild Page (Horde) [Alt: Alliance]
 i(104169, 1338);	-- Gulp Froglet
 i(48116, 234);	-- Gundrak Hatchling
 i(93669, 1174);	-- Gusting Grimoire
-i(166448, 2545);	-- Gust of Cyclarus
 i(97961, 1245);	-- Half-Empty Food Container (Filthling)
 i(167057, 2591);	-- Happiness
 i(104295, 1346);	-- Harmonious Porcupette
@@ -502,14 +532,11 @@ i(68840, 302);	-- Landro's Lichling
 i(67128, 285);	-- Landro's Lil' XT
 i(117528, 1533);	-- Lanticore Spawnling
 i(69251, 307);	-- Lashtail Hatchling
-
 i(48118, 235);	-- Leaping Hatchling
-i(166487, 2552);	-- Leatherwing Screecher
 i(127856, 1687);	-- Left Shark
 i(110684, 1395);	-- Leftovers (Lil' Leftovers)
 i(141895, 1939);	-- Legionnaire Murky
 i(69648, 308);	-- Legs
-i(165855, 2532);	-- Leper Rat Tail (Leper Rat)
 i(122104, 1623);	-- Leviathan Egg (Leviathan Hatchling)
 i(136914, 1808);	-- Leyline Broodling
 i(112057, 1412);	-- Lifelike Mechanical Frostboar
@@ -526,7 +553,6 @@ i(54847, 256);	-- Lil' XT
 i(44841, 203);	-- Little Fawn's Salt Lick (Little Fawn)
 
 i(94125, 1177);	-- Living Sandling
-i(166494, 2558);	-- Lord Woofington
 i(127705, 1661);	-- Lost Netherpup
 i(116155, 1511);	-- Lovebird Hatchling
 i(85871, 671);	-- Lucky Quilen Cub
@@ -547,19 +573,13 @@ i(93033, 1147);	-- Mark of Flame (Harbinger of Flame)
 i(114834, 1446);	-- Meadowstomper Calf
 i(111402, 1403);	-- Mechanical Axebeak
 i(10398, 83);		-- Mechanical Chicken
-i(165854, 2531);	-- Mechanical Cockroach
 i(87526, 844);	-- Mechanical Pandaren Dragonling
 
 i(118741, 1565);	-- Mechanical Scorpid
 i(4401, 39);		-- Mechanical Squirrel Box (Mechanical Squirrel)
 i(45002, 215);	-- Mechanopeep
-i(165849, 2530);	-- Mechantula
-
-
 i(101426, 666);	-- Micronax Controller (Micronax)
-i(165894, 2534);	-- Mini Spider Tank
 i(56806, 258);	-- Mini Thor
-
 i(151632, 2064);	-- Mining Monkey
 i(31760, 149);	-- Miniwing
 i(141893, 1936);	-- Mischief
@@ -584,12 +604,8 @@ i(46892, 217);	-- Murkimus' Tiny Spear (Murkimus the Gladiator)
 i(100870, 217);	-- Murkimus' Tyrannical Spear (Murkimus the Gladiator)
 i(71726, 329);	-- Murky's Little Soulstone (Murkablo)
 i(164971, 2483);	-- Murloc Balloon
-
-
 i(116258, 1514);	-- Mystical Spring Bouquet
-
 i(151269, 2002);	-- Naxxy
-i(166489, 2554);	-- Needleback Pup
 i(142085, 1954);	-- Nerubian Relic (Nerubian Swarmer)
 i(38628, 186);	-- Nether Ray Fry
 i(97550, 1228);	-- Netherspace Portal-Stone (Netherspace Abyssal)
@@ -603,22 +619,18 @@ i(136903, 1723);	-- Nightmare Whelpling
 i(68841, 303);	-- Nightsaber Cub
 i(118595, 1432);	-- Nightshade Sproutling
 i(129878, 1715);	-- Nightwatch Swooper
-i(166528, 2563);	-- Nightwreathed Watcher
 i(141532, 1943);	-- Noblegarden Bunny
 i(129826, 1727);	-- Nursery Spider
 i(44723, 198);	-- Nurtured Penguin Egg (Pengu)
 i(71140, 323);	-- Nuts' Acorn (Nuts)
 i(48120, 236);	-- Obsidian Hatchling
-
 i(104166, 1335);	-- Ominous Flame
 i(142090, 1959);	-- Ominous Pile of Snow (WInter Rageling)
 i(49362, 243);	-- Onyxian Whelpling
-
 i(20651, 1168);	-- Orange Murloc Egg (Murki)
 i(147841, 2050);	-- Orphaned Felbat
 i(153027, 2116);	-- Orphaned Marsuul
 i(142092, 1961);	-- Overcomplicated Controller (G0-R41-0N Ultratonk)
-i(166716, 2567);	-- Pair of Tiny Bat Wings
 i(13583, 92);		-- Panda Collar (Panda Cub)
 i(92799, 1125);	-- Pandaren Air Spirit
 i(92800, 1126);	-- Pandaren Earth Spirit
@@ -666,14 +678,11 @@ i(122125, 1636);	-- Race MiniZep Controller (Race MiniZep)
 i(100905, 1256);	-- Rascal-Bot
 i(23015, 127);	-- Rat Cage (Whiskers the Rat)
 i(152968, 2080);	-- Rattlejaw
-i(166451, 2546);	-- Rattling Bones (Detective Ray)
+
 i(48122, 237);	-- Ravasaur Hatchling
 i(48124, 238);	-- Razormaw Hatchling
 i(48126, 239);	-- Razzashi Hatchling
 i(153252, 2135);	-- Rebellious Imp
-i(166715, 2564);	-- Rebuilt Gorilla Bot
-i(166723, 2565);	-- Rebuilt Mechanical Spider
-i(165857, 2533);	-- Rechargeable Alarm-O-Dog Battery
 i(85222, 1042);	-- Red Cricket
 i(19054, 758);	-- Red Dragon Orb (Tiny Red Dragon)
 i(29956, 143);	-- Red Dragonhawk Hatchling
@@ -682,7 +691,6 @@ i(21305, 120);	-- Red Helper Box (Winter's Little Helper)
 i(29902, 139);	-- Red Moth Egg (Red Moth)
 i(94025, 1176);	-- Red Panda
 i(142086, 1955);	-- Red-Hot Coal (Magma Rageling)
-i(165722, 2525);	-- Redridge Tarantula Egg
 i(40653, 160);	-- Reeking Pet Carrier (Stinker)
 i(142095, 1964);	-- Remains of A Blood Beast (Blood Boil)
 i(141352, 1938);	-- Rescued Fawn
@@ -691,7 +699,6 @@ i(130166, 1804);	-- Risen Saber Kitten
 i(140274, 1453);	-- River Calf
 i(34492, 168);	-- Rocket Chicken
 i(104317, 1349);	-- Rotten Helper Box (Rotten Little Helper)
-i(166488, 2553);	-- Rotting Ghoul
 i(111866, 1411);	-- Royal Peacock
 i(104159, 1328);	-- Ruby Droplet
 i(63355, 271);	-- Rustberg Gull (Alliance)
@@ -703,7 +710,6 @@ i(97551, 1229);	-- Satyr Charm (Fiendish Imp)
 i(128477, 1692);	-- Savage Cub
 i(34955, 172);	-- Scorched Stone (Searing Scorchling)
 i(146953, 2042);	-- Scraps
-i(166498, 2560);	-- Scritches
 i(114919, 1448);	-- Sea Calf
 i(73953, 340);	-- Sea Pony
 i(118105, 1539);	-- Seaborne Spore
@@ -712,7 +718,6 @@ i(118923, 1567);	-- Sentinel's Companion
 i(119431, 1601);	-- Servant of Demidos
 i(122115, 1634);	-- Servant's Bell (Wretched Servant)
 i(136904, 1754);	-- Sewer-Pipe Jelly
-i(166492, 2556);	-- Shadefeather Hatchling
 i(151234, 2062);	-- Shadow
 i(178533, 2622);	-- Shaking Pet Carrier (Jingles)
 i(128309, 1690);	-- Shard of Cyrukh
@@ -756,8 +761,6 @@ i(119328, 1569);	-- Soul of the Forge
 i(38050, 183);	-- Soul-Trader Beacon (Ethereal Soul-Trader)
 i(167054, 2587);	-- Spawn of Garalon
 i(94595, 1201);	-- Spawn of G'nathus
-i(165848, 2528);	-- Spawn of Krag'wa
-
 i(113623, 1442);	-- Spectral Bell (Ghastly Kid)
 i(90953, 1127);	-- Spectral Cub
 i(94190, 1185);	-- Spectral Porcupette
@@ -769,7 +772,7 @@ i(167052, 2584);	-- Spirit of the Spring
 i(44794, 200);	-- Spring Rabbit's Foot (Spring Rabbit)
 i(11474, 87);		-- Sprite Darter Egg (Sprite Darter Hatchling)
 
-i(166454, 2549);	-- Squishy Purple Goo (Void Jelly)
+
 i(142100, 1969);	-- Stardust
 i(138810, 1911);	-- Sting Ray Pup
 i(167047, 2579);	-- Stoneclaw
@@ -791,18 +794,12 @@ i(94124, 1178);	-- Sunreaver Micro-Sentry
 i(104291, 1345);	-- Swarmling of Gu'chi (Gu'chi Swarmling)
 i(116064, 1478);	-- Syd the Squid
 i(97553, 1231);	-- Tainted Core (Tainted Waveling)
-i(166347, 2540);	-- Tanzil
-
-
 i(44965, 204);	-- Teldrassil Sproutling
 i(112699, 1416);	-- Teroclaw Hatchling
 i(85220, 650);	-- Terrible Turnip
 i(136908, 1759);	-- Thaumaturgical Piglet
-
 i(130167, 1803);	-- Thistleleaf Adventurer
-i(165847, 2529);	-- Thundering Scale of Akunda
 i(85513, 802);	-- Thundering Serpent Hatchling
-i(166499, 2561);	-- Thunderscale Hatchling
 i(39896, 194);	-- Tickbird Hatchling
 i(118675, 1563);	-- Time-Locked Box (Bronze Whelpling)
 
@@ -822,18 +819,13 @@ i(94935, 1209);	-- Tiny White Carp
 i(152966, 2078);	-- Tinytron
 i(44971, 206);	-- Tirisfal Batling
 i(97558, 1236);	-- Tito's Basket (Tito)
-
-i(166495, 2559);	-- Tonguelasher
 i(33816, 163);	-- Toothy's Bucket (Toothy)
-
 i(50446, 251);	-- Toxic Wasteling
-
 i(21277, 116);	-- Tranquil Mechanical Yeti
 i(126926, 1665);	-- Translucent Shell (Ghostshell Crab)
 i(139789, 1920);	-- Transmutant
 i(143842, 2004);	-- Trashy
 i(106256, 1365);	-- Treasure Goblin's Pack (Treasure Goblin)
-i(166346, 2539);	-- Trecker's Cage (Trecker)
 i(11026, 65);		-- Tree Frog Box (Tree Frog)
 i(150741, 2057);	-- Tricorne
 i(132519, 1886);	-- Trigger
@@ -860,12 +852,9 @@ i(89736, 855);	-- Venus
 i(129216, 1764);	-- Vibrating Arcane Crystal (Energized Manafiend)
 i(152977, 2088);	-- Vibrating Stone (Surger)
 i(147541, 2037);	-- Vilebrood Whelpling
-i(166719, 2569);	-- Violet Abyssal Eel
 i(93039, 1154);	-- Viscidus Globule
 i(122114, 1633);	-- Void Collar (Chaos Pup)
-
 i(69824, 310);	-- Voodoo Figurine
-
 i(95621, 227);	-- Warbot Ignition Key (Warbot)
 i(129217, 1766);	-- Warm Arcane Crystal (Empowered Manafiend)
 i(167048, 2580);	-- Wayward Spirit
@@ -874,7 +863,6 @@ i(93038, 1152);	-- Whistle of Chromatic Bone (Chrominius)
 i(29904, 141);	-- White Moth Egg (White Moth)
 i(22780, 1073);	-- White Murloc Egg (Terky)
 i(39899, 195);	-- White Tickbird Hatchling
-i(165907, 2535);	-- Wicker Wraith
 i(116804, 1523);	-- Widget the Departed
 i(49663, 246);	-- Wind Rider Cub
 i(69239, 306);	-- Winterspring Cub
@@ -895,7 +883,7 @@ i(89367, 850);	-- Yu'lon Kite
 i(95422, 1211);	-- Zandalari Anklerender
 i(95423, 1212);	-- Zandalari Footslasher
 i(94126, 1180);	-- Zandalari Kneebiter
-i(166345, 2538);	-- Zandalari Raptor Egg (Dasher)
+
 i(95424, 1213);	-- Zandalari Toenibbler
 i(118101, 1536);	-- Zangar Spore
 i(102146, 1305);	-- Zao, Calfling of Niuzao
@@ -905,7 +893,6 @@ i(13582, 94);		-- Zergling Leash (Zergling)
 i(49664, 247);	-- Zipao Tiger
 i(113554, 1428);	-- Zomstrok
 i(137298, 1903);	-- Zoom
-i(166455, 2550);	-- Zur'aj the Depleted
 
 
 -----------------

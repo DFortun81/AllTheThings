@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["isDaily"] = true,
 				["g"] = {
 					i(166294, {	-- Storm's Wake Supplies
-						i(166719),	-- Violet Abyssal Eel
+						i(166719),	-- Violet Abyssal Eel (PET!)
 						i(166665, {	-- Technique: Glyph of Storm's Wake (RECIPE!)
 							["timeline"] = { "added 8.1.0" },
 						}),

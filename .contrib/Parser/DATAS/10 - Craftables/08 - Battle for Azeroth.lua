@@ -413,7 +413,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(158886),	-- Super-Charged Engine
 		}),
 		filter(BATTLE_PETS, {
-			i(165849),	-- Mechantula
+			i(165849),	-- Mechantula (PET!)
 		}),
 		filter(CONSUMABLES, {
 			i(165738),	-- Makeshift Azerite Detector

@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(166297, {	-- Order of Embers Supplies
 						i(166808),	-- Bewitching Tea Set (TOY!)
-						i(166718),	-- Cobalt Raven Hatchling
+						i(166718),	-- Cobalt Raven (PET!)
 					}),
 				},
 			}),

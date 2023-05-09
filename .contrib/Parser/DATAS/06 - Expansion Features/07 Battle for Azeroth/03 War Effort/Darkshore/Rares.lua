@@ -47,7 +47,7 @@ root(ROOTS.ExpansionFeatures, {
 						["coord"] = { 40.69, 73.23, DARKSHORE },
 						["description"] = "Only shows up when Horde Controlled.",
 						["g"] = {
-							i(166449),	-- Darkshore Sentinel
+							i(166449),	-- Darkshore Sentinel (PET!)
 							i(166803),	-- Umber Nightsaber (MOUNT!)
 						},
 					}),
@@ -78,7 +78,7 @@ root(ROOTS.ExpansionFeatures, {
 						["coord"] = { 41.5, 76.4, DARKSHORE },
 						["description"] = "Only shows up when Alliance Controlled.",
 						["g"] = {
-							i(166449),	-- Darkshore Sentinel
+							i(166449),	-- Darkshore Sentinel (PET!)
 							i(166788),	-- Twiddle Twirler: Shredder Blade (TOY!)
 						},
 					}),
@@ -108,7 +108,7 @@ root(ROOTS.ExpansionFeatures, {
 						["isWeekly"] = true,
 						["coord"] = { 39.07, 61.98, DARKSHORE },
 						["g"] = {
-							i(166451),	-- Rattling Bones
+							i(166451),	-- Detective Ray (PET!)
 						},
 					}),
 					n(149655, {	-- Croz Bloodrage [A Only]
@@ -129,7 +129,7 @@ root(ROOTS.ExpansionFeatures, {
 						["isWeekly"] = true,
 						["coord"] = { 43.79, 53.75, DARKSHORE },
 						["g"] = {
-							i(166448),	-- Binding of Cyclarus
+							i(166448),	-- Gust of Cyclarus (PET!)
 						},
 					}),
 					n(148790, {	-- Frightened Kodo
@@ -179,7 +179,7 @@ root(ROOTS.ExpansionFeatures, {
 						["description"] = "Only shows up when Horde Controlled.",
 						["g"] = {
 							i(166525, {	-- Nightwreathed Egg
-								i(166528),	-- Nightwreathed Watcher
+								i(166528),	-- Nightwreathed Watcher (PET!)
 							}),
 						},
 					}),
@@ -189,7 +189,7 @@ root(ROOTS.ExpansionFeatures, {
 						["isWeekly"] = true,
 						["coord"] = { 52.51, 32.11, DARKSHORE },
 						["g"] = {
-							i(166452),	-- Bottled Essence of Hydrath
+							i(166452),	-- Hydrath Droplet
 						},
 					}),
 					n(149657, {	-- Madfeather
@@ -227,7 +227,7 @@ root(ROOTS.ExpansionFeatures, {
 						["coord"] = { 45.17, 74.99, DARKSHORE },
 						["description"] = "Only shows up when Horde Controlled.",
 						["g"] = {
-							i(166453),	-- Everburning Treant
+							i(166453),	-- Everburning Treant (PET!)
 						},
 					}),
 					n(149659, {	-- Orwell Stevenson [A Only]
@@ -239,7 +239,7 @@ root(ROOTS.ExpansionFeatures, {
 						["description"] = "Only shows up when Alliance Controlled.",
 						["g"] = {
 							i(166525, {	-- Nightwreathed Egg
-								i(166528),	-- Nightwreathed Watcher
+								i(166528),	-- Nightwreathed Watcher (PET!)
 							}),
 						},
 					}),
@@ -282,7 +282,7 @@ root(ROOTS.ExpansionFeatures, {
 						["isWeekly"] = true,
 						["coord"] = { 40.57, 85.09, DARKSHORE },
 						["g"] = {
-							i(166454),	-- Squishy Purple Goo
+							i(166454),	-- Void Jelly (PET!)
 						},
 					}),
 					n(147332, {	-- Stonebinder Ssravess
@@ -307,7 +307,7 @@ root(ROOTS.ExpansionFeatures, {
 						["isWeekly"] = true,
 						["coord"] = { 40.62, 82.72, DARKSHORE },
 						["g"] = {
-							i(166455),	-- Zur'aj the Depleted
+							i(166455),	-- Zur'aj the Depleted (PET!)
 						},
 					}),
 					n(147664, {	-- Zim'kaga [A Only]
@@ -316,7 +316,7 @@ root(ROOTS.ExpansionFeatures, {
 						["isWeekly"] = true,
 						["coord"] = { 62.38, 9.84, DARKSHORE },
 						["g"] = {
-							i(166453),	-- Everburning Treant
+							i(166453),	-- Everburning Treant (PET!)
 						},
 					}),
 				}),

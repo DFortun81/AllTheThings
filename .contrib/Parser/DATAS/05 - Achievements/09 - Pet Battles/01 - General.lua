@@ -16,7 +16,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			i(151632),	-- Mining Monkey
 		})),
 		petbattle(ach(13269, {	-- Pet Battle Challenge: Gnomeregan*
-			i(165894),	-- Mini Spider Tank
+			i(165894),	-- Mini Spider Tank (PET!)
 		})),
 		petbattle(ach(13627, {	-- Pet Battle Challenge: Stratholme
 			i(169670),	-- Evil Wizard Hat

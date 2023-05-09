@@ -168,7 +168,7 @@ root(ROOTS.PetBattles, petbattle({
 			},
 			["g"] = {
 				ach(13269, {	-- Pet Battle Challenge: Gnomeregan
-					i(165894),	-- Mini Spider Tank
+					i(165894),	-- Mini Spider Tank (PET!)
 				}),
 				q(54184, {	-- Trouble in Gnomeregan (A)
 					["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
@@ -200,13 +200,13 @@ root(ROOTS.PetBattles, petbattle({
 				n(147070, {	-- Micro Zoox
 					["coord"] = { 31.8, 71.6, NEW_TINKERTOWN_LOWER },
 					["g"] = {
-						i(165855, {	-- Leper Rat Tail
+						i(165855, {	-- Leper Rat (PET!)
 							["cost"] = { { "i", 165835, 2 } },	-- 2x Pristine Gizmo
 						}),
-						i(165854, {	-- Mechanical Cockroach
+						i(165854, {	-- Mechanical Cockroach (PET!)
 							["cost"] = { { "i", 165835, 1 } },	-- 1x Pristine Gizmo
 						}),
-						i(165857, {	-- Rechargeable Alarm-O-Dog Battery
+						i(165857, {	-- Alarm-O-Dog (PET!)
 							["cost"] = { { "i", 165835, 3 } },	-- 3x Pristine Gizmo
 						}),
 						i(165844, {	-- Schematic: Mechantula

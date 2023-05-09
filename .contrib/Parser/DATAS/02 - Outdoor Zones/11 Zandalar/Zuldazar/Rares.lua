@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					{ 69.4, 38.6, ZULDAZAR },
 				},
 				["g"] = {
-					i(166345),	-- Zandalari Raptor Egg (PET!)
+					i(166345),	-- Dasher (PET!)
 				},
 			}),
 			n(136413, {	-- Syrawon the Dominus
