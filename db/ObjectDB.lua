@@ -3005,6 +3005,7 @@ _.ObjectNames = {
 	[398793] = "Lava-Drenched Shadow Crystal",
 	[398794] = "Shimmering Aqueous Orb",
 	[398796] = "Resonating Arcane Crystal",
+	[398810] = "Fealty's Reward",
 	[398814] = "Molten Hoard",
 	[398815] = "Secured Shipment",
 	[401236] = "Malnourished Specimen",

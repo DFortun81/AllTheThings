@@ -50,6 +50,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205194),	-- Fractured Crystalspine Quill
 				},
 			}),
+			o(398810, {	-- Fealty's Reward
+				["description"] = "/kneel near dragon statue (should start fire breath animation) to unlock this chest.",
+				["coords"] = {
+					{ 43.5, 23.0, ZARALEK_CAVERN },	-- Statue to /kneel
+					{ 48.4, 10.9, ZARALEK_CAVERN },	-- Chest
+				},
+				["questID"] = 75514,
+				["g"] = {
+					i(205195),	-- Drakeforged Magma Charm
+				},
+			}),
 			o(389114, {	-- Long-Lost Cache
 				["coord"] = { 62.7, 53.7, ZARALEK_CAVERN },
 				["questID"] = 75019,

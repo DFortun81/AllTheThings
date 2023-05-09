@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							["_quests"] = { 75390 },
 						}),
 						crit(3, {	-- Flapping and Screaming
-							-- TODO: ["_quests"] = { 76027 },
+							["_quests"] = { 76027 },
 						}),
 						crit(4, {	-- Scratch and Sniff
 							["_quests"] = { 75234 },
@@ -181,6 +181,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205990),	-- Fierce Key
 						},
 					}),
+					q(76027, {	-- Flapping and Screaming
+						["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },
+						["g"] = {
+							i(205969),	-- Glowing Key
+						},
+					}),
 				}),
 				n(QUESTS, {
 					q(74876, {	-- The Buddy System
@@ -307,5 +313,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 
 		q(75917),	-- Started Liars of Spirit (76081) /Unflagged after map was completed
 		q(75992),	-- Completed Liars of Spirit (76081)
+
+		q(75893),	-- Started Flapping and Screaming (76027) /Unflagged after map was completed
+		q(76011),	-- Completed Flapping and Screaming (76027)
 	}),
 }));

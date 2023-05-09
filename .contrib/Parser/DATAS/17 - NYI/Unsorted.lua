@@ -301,7 +301,6 @@ root(ROOTS.Unsorted, {
 				i(205935),	-- Add Keystone Affix: Incorporeal
 				i(205939),	-- Iron Titan Key
 				i(205962),	-- Echoing Storm Flightstone
-				i(205969),	-- Glowing Key
 				i(205970),	-- Azure Flightstone
 				i(205993),	-- Set Keystone Map: The Vortex Pinnacle
 				i(206037),	-- Ruby Flightstone
