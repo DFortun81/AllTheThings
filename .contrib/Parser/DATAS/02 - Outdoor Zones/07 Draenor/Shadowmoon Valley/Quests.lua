@@ -269,6 +269,7 @@ _.Zones =
 						34575,	-- Step Three: Prophet!
 						49562	-- Hero's Call: Shadowmoon Valley!
 					},
+					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 26.9, 8.00, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 79206 },	-- Prophet Velen
