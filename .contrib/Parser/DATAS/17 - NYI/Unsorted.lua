@@ -597,14 +597,12 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				i(198138),	-- Lightning-Infused Rock
 				i(202075),	-- Temp Currency
-
 				i(202202),	-- Revealing Mask
 				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber
 				i(202619),	-- Mender Supplies
 				i(202620),	-- Toxin Antidote
 				i(202642),	-- Proto-Killing Spear
-				i(202868),	-- Mender's Signal
 				i(202874),	-- Healing Draught
 				i(203210),	-- Dragonscale Supply Box
 				i(203218),	-- Iskaara Supply Pouch
