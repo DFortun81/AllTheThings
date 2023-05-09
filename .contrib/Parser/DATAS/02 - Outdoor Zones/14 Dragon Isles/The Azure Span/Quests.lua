@@ -1516,7 +1516,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			q(71139, {	-- Glowing Arcane Jewel
 				["provider"] = { "i", 200528 },	-- Glowing Arcane Jewel
 				["coord"] = { 75.8, 24.2, THE_AZURE_SPAN },
-				["description"] = "Requires 4 players. Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
+				["description"] = "Requires 4 players (or less if you time it perfectly). Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
 				["g"] = {
 					i(197141),	-- Highland Drake: Scaled Pattern (DM!)
 					i(197137),	-- Highland Drake: Spined Nose (DM!)

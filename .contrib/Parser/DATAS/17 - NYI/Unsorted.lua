@@ -1849,7 +1849,6 @@ root(ROOTS.Unsorted, {
 				q(70151),	--
 				-- 10.0.0.44707
 				q(70153),	-- Arcane Devourer
-				q(70159),	-- A Taste of Home
 				q(70165),	--
 				q(70167),	--
 				q(70173),	-- A Taste of Home
@@ -1882,7 +1881,6 @@ root(ROOTS.Unsorted, {
 				-- 10.0.0.44895
 				q(70245),	-- Studies of Wild Magic
 				q(70443),	--
-				q(70446),	-- A Personal History
 				q(70447),	--
 				q(70508),	-- Fueling the Engine: Second Spark
 				q(70526),	-- Ohn'ahran Plains Rally
@@ -1916,7 +1914,6 @@ root(ROOTS.Unsorted, {
 				q(70715),	-- Dragonflight (70) E
 				q(70718),	-- Gushgut the Beaksinker
 				q(70733),	-- Djaradin War Party
-				q(70742),	-- Runs in the Family
 				-- 10.0.0.45141
 				q(70787),	-- Caught In a Dusk Storm
 				q(70811),	-- Expert Excavation Tools

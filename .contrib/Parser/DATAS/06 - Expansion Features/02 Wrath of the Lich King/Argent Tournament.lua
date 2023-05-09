@@ -4614,7 +4614,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				i(46069, {	-- Alliance Lance
 					["provider"] = { "o", 194618 },	-- Lance Rack
 					["coord"] = { 75.9, 19.8, ICECROWN },
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				i(46106, {	-- Argent Lance
 					["providers"] = {
