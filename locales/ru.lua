@@ -3931,6 +3931,7 @@ for key,value in pairs({
 	[398793] = "Покрытый лавой сумрачный кристалл",	-- Lava-Drenched Shadow Crystal
 	[398794] = "Сияющая водяная сфера",	-- Shimmering Aqueous Orb
 	[398796] = "Резонирующий магический кристалл",	-- Resonating Arcane Crystal
+	[398810] = "Награда за верность",	-- Fealty's Reward
 	[398814] = "Раскаленные сокровища",	-- Molten Hoard
 	--TODO: [398815] = "Secured Shipment",	-- Secured Shipment
 	[401236] = "Истощенный образец",	-- Malnourished Specimen
@@ -3941,6 +3942,7 @@ for key,value in pairs({
 	[401299] = "Большой бесполезный булыжник",	-- Broken Barter Boulder
 	[401828] = "Реликварий Нал-кс'кола",	-- Nal ks'kol Reliquary
 	[401839] = "Дар Дремлющей",	-- Dreamer's Bounty
+	[401844] = "Пахучая куча мусора",	-- Smelly Trash Pile
 	[402627] = "Старый потертый горн",	-- Well-Worn Kiln
 	[402632] = "Серный спасательный круг",	-- Brimstone Rescue Ring
 	[402634] = "Копье старейшины закали",	-- Zaqali Elder Spear

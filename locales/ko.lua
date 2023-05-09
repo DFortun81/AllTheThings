@@ -3940,6 +3940,7 @@ for key,value in pairs({
 	--TODO: [398793] = "Lava-Drenched Shadow Crystal",	-- Lava-Drenched Shadow Crystal
 	[398794] = "일렁이는 수생 보주",	-- Shimmering Aqueous Orb
 	--TODO: [398796] = "Resonating Arcane Crystal",	-- Resonating Arcane Crystal
+	--TODO: [398810] = "Fealty's Reward",	-- Fealty's Reward
 	--TODO: [398814] = "Molten Hoard",	-- Molten Hoard
 	--TODO: [398815] = "Secured Shipment",	-- Secured Shipment
 	--TODO: [401236] = "Malnourished Specimen",	-- Malnourished Specimen
@@ -3950,6 +3951,7 @@ for key,value in pairs({
 	--TODO: [401299] = "Broken Barter Boulder",	-- Broken Barter Boulder
 	[401828] = "날 크스콜 성물 보관소",	-- Nal ks'kol Reliquary
 	[401839] = "꿈꾸는 자의 은혜",	-- Dreamer's Bounty
+	[401844] = "냄새나는 쓰레기 더미",	-- Smelly Trash Pile
 	[402627] = "마모된 가마",	-- Well-Worn Kiln
 	--TODO: [402632] = "Brimstone Rescue Ring",	-- Brimstone Rescue Ring
 	[402634] = "자칼리 장로의 창",	-- Zaqali Elder Spear
