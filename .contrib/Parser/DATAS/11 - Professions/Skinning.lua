@@ -266,7 +266,7 @@ profession(SKINNING, {
 		}),
 	}),
 	filter(BATTLE_PETS, {
-		i(153057),	-- Fossorial Bile Larva
+		i(153057),	-- Fossorial Bile Larva (PET!)
 	}),
 	filter(TOYS, {
 		i(130102),	--  Mother's Skinning Knife (TOY!)

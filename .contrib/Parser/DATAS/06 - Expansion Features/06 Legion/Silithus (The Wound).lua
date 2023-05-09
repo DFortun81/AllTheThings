@@ -195,7 +195,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					["coord"] = { 59.3, 11.4, SILITHUS },
 					["isDaily"] = true,
 					["groups"] = {
-						i(156851),	-- Silithid Mini-Tank
+						i(156851),	-- Silithid Mini-Tank (PET!)
 					},
 				}),
 				n(132580, {	-- Ssinkrix
@@ -203,7 +203,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					["coord"] = { 54.5, 79.8, SILITHUS },
 					["isDaily"] = true,
 					["groups"] = {
-						i(156851),	-- Silithid Mini-Tank
+						i(156851),	-- Silithid Mini-Tank (PET!)
 					},
 				}),
 				n(132584, {	-- Xaarshej
@@ -211,7 +211,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					["coord"] = { 29.5, 35.0, SILITHUS },
 					["isDaily"] = true,
 					["groups"] = {
-						i(156851),	-- Silithid Mini-Tank
+						i(156851),	-- Silithid Mini-Tank (PET!)
 					},
 				}),
 			}),

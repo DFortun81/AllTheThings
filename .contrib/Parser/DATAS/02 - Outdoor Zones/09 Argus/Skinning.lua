@@ -15,7 +15,7 @@ _.Zones =
 					833,	-- Nath'raxas Spire
 				},
 				["g"] = {
-					{	-- Fossorial Bile Larva
+					{	-- Fossorial Bile Larva (PET!)
 						["itemID"] = 153057,	-- Fossorial Bile Larva
 						["description"] = "This can be obtained from any skinnable Argus mob."
 					},

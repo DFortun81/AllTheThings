@@ -195,11 +195,8 @@ root(ROOTS.Unsorted, {
 				i(204087),	-- 10.1 Cloak Test Item
 				i(204736),	-- Heatbound Medallion
 				i(204901),	-- Firecaller's Focus
-				i(205191),	-- Underlight Globe
 				i(205193),	-- Sturdy Deepflayer Scute
 				i(205196),	-- Zaqali Hand Cauldron
-				i(205200),	-- Stirring Twilight Ember
-				i(205201),	-- Smoldering Howler Horn
 				i(205229),	-- Magma Serpent Lure
 				i(205262),	-- Magmaclaw Lure
 				i(205276),	-- Deepflayer Lure
@@ -269,7 +266,6 @@ root(ROOTS.Unsorted, {
 				i(205189),	-- Arclight Welcome Letter
 				i(205190),	-- Arclight Welcome Letter
 				i(205198),	-- Detailed Titan Key
-				i(205202),	-- Small Key
 				i(205220),	-- Corroded Key
 				i(205234),	-- Soiled Key
 				i(205235),	-- Hound Paw
@@ -282,8 +278,6 @@ root(ROOTS.Unsorted, {
 				i(205242),	-- Serrated Stone
 				i(205243),	-- Spare Bow String
 				i(205244),	-- Rain-soaked pelt
-				i(205277),	-- Stolen Key
-				i(205412),	-- Jangly Key
 				i(205417),	-- Fungishine
 				i(205456),	-- Lost Dragonscale
 				i(205458),	-- Lost Dragonscale
@@ -291,13 +285,10 @@ root(ROOTS.Unsorted, {
 				i(205462),	-- Royal Nerubian Capsa
 				i(205466),	-- Regurgitated Spores
 				i(205467),	-- Preserved Krolusk Crest
-				i(205468),	-- Hooked Tail Claw
 				i(205472),	-- Wad of Sparkling Somethings
-				i(205689),	-- Champion's Crystal
 				i(205691),	-- Hypnotic Murloc Lure
 				i(205695),	-- Dense Salamanther Skull
 				i(205697),	-- Gelatinous Egg Mass
-				i(205699),	-- Rock Worm Frills
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205866),	-- Rough Coiled Horns
 				i(205867),	-- Steaming Drake Heart
@@ -312,7 +303,6 @@ root(ROOTS.Unsorted, {
 				i(205962),	-- Echoing Storm Flightstone
 				i(205969),	-- Glowing Key
 				i(205970),	-- Azure Flightstone
-				i(205990),	-- Fierce Key
 				i(205993),	-- Set Keystone Map: The Vortex Pinnacle
 				i(206037),	-- Ruby Flightstone
 			}),
@@ -507,14 +497,11 @@ root(ROOTS.Unsorted, {
 				-- Loamm Niffen
 				i(204712),	-- Brimming Loamm Niffen Supply Satchel
 				i(205286),	-- Loamm Niffen Tabard
-				i(205342),	-- Loamm Niffen Insignia
 				i(205365),	-- Loamm Niffen Insignia
 				i(205965),	-- Large Loammian Supply Pack
 				i(205968),	-- Overflowing Loammian Supply Pack
 				i(205985),	-- Loamm Niffen Insignia
 				-- Bartering
-				i(206009),	-- Ouroboros Tablet
-				i(206010),	-- Designs of Flesh
 				i(206011),	-- Designs of Bone
 				i(206012),	-- Designs of Mind
 				i(206013),	-- Designs of Soul
@@ -610,15 +597,12 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				i(198138),	-- Lightning-Infused Rock
 				i(202075),	-- Temp Currency
-
 				i(202202),	-- Revealing Mask
 				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber
 				i(202619),	-- Mender Supplies
 				i(202620),	-- Toxin Antidote
 				i(202642),	-- Proto-Killing Spear
-				i(202647),	-- Stolen Goods
-				i(202868),	-- Mender's Signal
 				i(202874),	-- Healing Draught
 				i(203210),	-- Dragonscale Supply Box
 				i(203218),	-- Iskaara Supply Pouch

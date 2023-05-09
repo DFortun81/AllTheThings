@@ -1324,7 +1324,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 8.1.0.28724" },
 					["isDaily"] = true,
 					["groups"] = {
-						i(165722, {	-- Redridge Tarantula Egg (PET!)
+						i(165722, {	-- Redridge Tarantula (PET!)
 							["timeline"] = { "added 8.1.0.28724" },
 						}),
 					},

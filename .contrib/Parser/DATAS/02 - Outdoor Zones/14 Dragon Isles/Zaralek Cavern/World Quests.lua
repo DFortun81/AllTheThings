@@ -22,6 +22,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75343, {	-- All That Glitter
 						["coord"] = { 58.1, 73.5, ZARALEK_CAVERN },
+						["g"] = {
+							i(205688, {	-- Glutinous Glitterscale Glob
+								["description"] = "Gets sometimes rewarded as bonus loot upon completing the Quest.",
+							}),
+						},
 					}),
 					petbattle(q(75750, {	-- Are They Not Beautiful?
 						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
@@ -174,6 +179,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					filter(FINGER_F, {
 						i(204916),	-- Deeprock Loop
 						i(204917),	-- Deeprock Ring
+						i(204918),	-- Deeprock Signet
 					}),
 					filter(LEATHER, {
 						i(204929),	-- Sunless Boots
@@ -197,7 +203,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					filter(NECK_F, {
 						i(204919),	-- Deeprock Pendant
-						i(204918),	-- Deeprock Signet
 					}),
 					filter(PLATE, {
 						i(204952),	-- Starless Armplates

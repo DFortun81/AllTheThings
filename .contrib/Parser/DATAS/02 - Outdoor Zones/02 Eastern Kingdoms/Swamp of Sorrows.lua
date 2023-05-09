@@ -675,6 +675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28553, {	-- Okrilla and the Blasted Lands
 					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuest"] = 27916,	-- Ruag's Report
+					["altQuests"] = { 28671 },	-- Warchief's Command: Blasted Lands!
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,

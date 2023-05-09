@@ -1437,6 +1437,7 @@ for key, value in pairs({
 	[185165] = "军团联络器",	-- Legion Communicator
 	[185166] = "通缉布告",	-- Wanted Poster
 	[185168] = "强化魔铁箱",	-- Reinforced Fel Iron Chest
+	[185549] = "巨大的卡利鸟蛋",	-- Monstrous Kaliri Egg
 	[186267] = "南瓜神龛",	-- Pumpkin Shrine
 	--TODO: [186278] = "Burning Wreckage",	-- Burning Wreckage
 	[186301] = "黑蹄军备",	-- Blackhoof Armaments
@@ -3923,6 +3924,7 @@ for key, value in pairs({
 	[392582] = "生存背包残次品",	-- Defective Survival Pack
 	--TODO: [392583] = "Void-Bound Strongbox",	-- Void-Bound Strongbox
 	[392587] = "坏掉的龙洞发生器",	-- Busted Wyrmhole Generator
+	[392591] = "龙群宝箱",	-- Chest of the Flights
 	[392593] = "不显眼的数据挖掘器",	-- Inconspicuous Data Miner
 	--TODO: [393218] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
 	--TODO: [393220] = "Primordial Paint Cache",	-- Primordial Paint Cache
@@ -3961,6 +3963,7 @@ for key, value in pairs({
 	[401292] = "被轻轻碰过的珠宝",	-- Gently Jostled Jewels
 	[401299] = "破损的以物易物巨石",	-- Broken Barter Boulder
 	[401828] = "纳·克斯寇圣物匣",	-- Nal Ks'kol Reliquary
+	[401839] = "沉睡者的奖赏",	-- Dreamer's Bounty
 	[402627] = "古旧的窑炉",	-- Well-Worn Kiln
 	[402632] = "硫磺救生环",	-- Brimstone Rescue Ring
 	[402634] = "扎卡利长老之矛",	-- Zaqali Elder Spear

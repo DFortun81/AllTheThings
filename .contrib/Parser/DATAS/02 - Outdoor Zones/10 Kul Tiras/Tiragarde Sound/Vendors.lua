@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 52.8, 31.1, TIRAGARDE_SOUND },
 				["description"] = "Must have 1 million gold in your inventory before he will talk to you.  You do NOT lose any gold in this transaction.",
 				["g"] = {
-					i(158077),	-- Faberge Egg
+					i(158077),	-- Francois (PET!)
 				},
 			}),
 			n(142838, {	-- Grumpy Grimble

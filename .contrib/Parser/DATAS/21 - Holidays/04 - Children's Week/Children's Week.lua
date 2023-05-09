@@ -50,16 +50,16 @@ local BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS = {
 	PET_CARE_PACKAGE,
 };
 local RETURN_TO_THE_BFA_ORPHANAGE_GROUPS = {
-	i(167010, {	-- Beakbert
+	i(167010, {	-- Beakbert (PET!)
 		["timeline"] = { "added 8.1.5.29701" },
 	}),
-	i(167009, {	-- Enchanted Saurolisk Scale
+	i(167009, {	-- Scaley (PET!)
 		["timeline"] = { "added 8.1.5.29701" },
 	}),
-	i(167008, {	-- Sandy Hermit Crab Shell
+	i(167008, {	-- Mr. Crabs (PET!)
 		["timeline"] = { "added 8.1.5.29701" },
 	}),
-	i(167011, {	-- Slimy Pouch
+	i(167011, {	-- Froglet (PET!)
 		["timeline"] = { "added 8.1.5.29701" },
 	}),
 	PET_CARE_PACKAGE,

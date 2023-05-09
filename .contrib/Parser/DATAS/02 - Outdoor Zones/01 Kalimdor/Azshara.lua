@@ -290,6 +290,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.9, 49.8, AZSHARA },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(14428, {	-- Amberwind's Journal
 					["qg"] = 36596,	-- Andorel Sunsworn
@@ -1963,6 +1964,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14462, {	-- Where's My Head?
 					["qg"] = 36730,	-- Chawg
+					["sourceQuest"] = 24497,	-- Airborne Again
 					["coord"] = { 14.0, 64.8, AZSHARA },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,

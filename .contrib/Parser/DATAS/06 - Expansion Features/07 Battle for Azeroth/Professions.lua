@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 				-- Solves
 				i(160751),	-- Dance of the Dead (TOY!)
 				i(160833),	-- Fetish of the Tormented Mind
-				i(161089),	-- Restored Revenant
+				i(161089),	-- Restored Revenant (PET!)
 				i(154922),	-- Ancient Runebound Tome
 				i(154921),	-- Ceremonial Bonesaw
 				i(154923),	-- Disembowling Sickle
@@ -169,7 +169,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 			currency(1534, {	-- Zandalari
 				-- Solves
 				i(160740),	-- Croak Crock (TOY!)
-				i(161080),	-- Intact Direhorn Egg
+				i(161080),	-- Direhorn Hatchling (PET!)
 				i(160753),	-- Sanguinating Totem
 				i(154913),	-- Akun'Jar Vase
 				i(160743),	-- Blowgun of the Sethra

@@ -33,7 +33,7 @@ _.Instances = { tier(BFA_TIER, {
 				q(50990, {	-- Cutting Edge Poultry Science
 					["description"] = "This quest pops up when killing mobs in the kitchen.  It is unknown for certain if the World Quest \"Witchy Kitchen\" is required.",
 					["g"] = {
-						i(160940),	-- Intact Chicken Brain
+						i(160940),	-- Vengeful Chicken (PET!)
 					},
 				}),
 			}),

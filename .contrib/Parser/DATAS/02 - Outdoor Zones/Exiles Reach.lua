@@ -932,6 +932,12 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuestNumRequired"] = 1
 				}),
+				q(58912, {	-- An Urgent Meeting [A]
+					["sourceQuests"] = { 58911 },	-- Home Is Where the Hearth Is [A]
+					["provider"] = { "n", 163211 },	-- Henry Garrick
+					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+				}),
 
 					-- Orgrimmar --
 				q(60343, {	-- Welcome to Orgrimmar
@@ -1039,6 +1045,12 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["coord"] = { 73.6, 43.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuestNumRequired"] = 1,
+				}),
+				q(60360, {	-- An Urgent Meeting [H]
+					["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is [H]
+					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
+					["coord"] = { 70.9, 49.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 

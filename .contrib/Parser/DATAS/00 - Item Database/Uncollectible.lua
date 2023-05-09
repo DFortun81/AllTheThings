@@ -719,6 +719,8 @@ i(203457);	-- Volcanic Herb Sachet
 i(204085);	-- Zaqali Dragonslayer's Spear
 i(203654);	-- Zaqali Flame Totem
 i(204817);	-- Underlight Cocoon Fibers
+i(202647);	-- Stolen Goods
+i(202868);	-- Mender's Signal
 -- Poor Trash --
 i(205869);	-- Aromatic Royal Jelly
 i(205868);	-- Cracked Chitin Carapace
@@ -727,9 +729,11 @@ i(205465);	-- Gleaming Rock Viper Eye
 i(205870);	-- Glittering Spore Dust
 i(205871);	-- Glowing Underlight Wings
 i(205464);	-- Granite Scales
+i(205468);	-- Hooked Tail Claw
 i(205459);	-- Luminous Gloop
 i(205698);	-- Mangled Niffen Pack
 i(205460);	-- Pulverized Living Earth
+i(205699);	-- Rock Worm Frills
 i(205700);	-- Sensitive Scotopic Eye
 i(205469);	-- Serrated Sporebat Spine
 i(205471);	-- Slimy Deepsea Fin

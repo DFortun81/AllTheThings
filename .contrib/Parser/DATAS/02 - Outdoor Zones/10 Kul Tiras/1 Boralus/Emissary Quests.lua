@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["repeatable"] = true,
 				["g"] = {
 					i(166295, {	-- Proudmoore Admiralty Supplies
-						i(166714),	-- Albatross Feather
+						i(166714),	-- Albatross Hatchling (PET!)
 						i(166702),	-- Proudmoore Music Box (TOY!)
 					}),
 				},

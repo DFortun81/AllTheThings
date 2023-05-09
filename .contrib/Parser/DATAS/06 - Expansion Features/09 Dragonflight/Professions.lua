@@ -1846,7 +1846,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["lockCriteria"] = { 1, "spellID", 366250},	-- Dragon Isles Jewelcrafting
 				}),
 				q(70032, {	-- Artisan's Supply: Jeweler's Specs
-					["sourceQuests"] = { 70365 },	-- To the Dragon Isles: Jewelcrafting
+					["sourceQuests"] = { 
+						70365,	-- To the Dragon Isles: Jewelcrafting
+						72247,	-- To the Dragon Isles: Jewelcrafting
+					 },
+					["sourceQuestNumRequired"] = 1,	
 					["provider"] = { "n", 192121 },	-- Falron Greygold
 					["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
 					["cost"] = { { "i", 193037, 1 }, },	-- Sundered Onyx Loupe

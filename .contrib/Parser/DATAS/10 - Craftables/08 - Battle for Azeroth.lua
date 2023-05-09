@@ -17,16 +17,16 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 	prof(ALCHEMY, {
 		filter(BATTLE_PETS, {
 			i(160324, {	-- Grumbling Sac
-				i(163859),	-- Baby Crawg
-				i(163858),	-- Ball of Tentacles
-				i(163861),	-- Undulating Blue Sac
-				i(163860),	-- Wind-Up Frog
+				i(163859),	-- Baby Crawg (PET!)
+				i(163858),	-- Slippy (PET!)
+				i(163861),	-- Bloated Bloodfeaster (PET!)
+				i(163860),	-- Gearspring Hopper (PET!)
 			}),
 			i(160325, {	-- Quivering Sac
-				i(163859),	-- Baby Crawg
-				i(163861),	-- Bloodfeaster Larva
-				i(163860),	-- Gearspring Hopper
-				i(163858),	-- Slippy
+				i(163859),	-- Baby Crawg (PET!)
+				i(163861),	-- Bloated Bloodfeaster (PET!)
+				i(163860),	-- Gearspring Hopper (PET!)
+				i(163858),	-- Slippy (PET!)
 			}),
 		}),
 		spell(286547, {	-- Transmute: Herbs to Anchors
@@ -347,7 +347,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(168412),	-- Light-Step Hoofplates
 		})),
 		filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Pets
-			i(152878),	-- Enchanted Tiki Mask
+			i(152878),	-- Enchanted Tiki Mask (PET!)
 		})),
 		cat(651, {	-- Ring Enchantments
 			i(168446, {["timeline"]={"added 8.2.0"}}),	-- Enchant Ring - Accord of Critical Strike
@@ -413,7 +413,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(158886),	-- Super-Charged Engine
 		}),
 		filter(BATTLE_PETS, {
-			i(165849),	-- Mechantula
+			i(165849),	-- Mechantula (PET!)
 		}),
 		filter(CONSUMABLES, {
 			i(165738),	-- Makeshift Azerite Detector

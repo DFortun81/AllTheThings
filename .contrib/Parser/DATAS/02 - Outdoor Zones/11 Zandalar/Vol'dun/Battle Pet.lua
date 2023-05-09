@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(166733, {	-- Steel-Plated Primate Exoskeleton
 						["description"] = "These parts are found during the Vol'dun Assault/Incursion in the \"Loose Parts\" container.  To influence your robot to win you will want to hand in \"Alkalescent Salt\" which are also used for the World Quest \"Battle Bots\".",
 					}),
-					i(166715, {	-- Rebuilt Gorilla Bot
+					i(166715, {	-- Rebuilt Gorilla Bot (PET!)
 						["cost"] = {
 							{ "i", 166734, 1 },	-- Banana-Shaped Power Cell
 							{ "i", 166732, 1 },	-- Bludgeoning-Resistant Chest Reinforcer
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(166738, {	-- Steel-Plated Arachnid Exoskeleton
 						["description"] = "These parts are found during the Vol'dun Assault/Incursion in the \"Loose Parts\" container.  To influence your robot to win you will want to hand in \"Alkalescent Salt\" which are also used for the World Quest \"Battle Bots\".",
 					}),
-					i(166723, {	-- Rebuilt Mechanical Spider
+					i(166723, {	-- Rebuilt Mechanical Spider (PET!)
 						-- Note!! The description we want to use will be on the parts because we don't want it written on the item!  See below.
 						["cost"] = {
 							{ "i", 166737, 1 },	-- Handful of Glass Spider Eyes

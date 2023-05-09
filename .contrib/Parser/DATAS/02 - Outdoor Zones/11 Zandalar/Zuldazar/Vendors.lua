@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			n(136219, {	-- Mona <Butterflies>
 				["coord"] = { 71.6, 29.4, ZULDAZAR },
 				["g"] = {
-					i(163508, {	-- Butterfly in a Jar
+					i(163508, {	-- Blue Flitter (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 				},

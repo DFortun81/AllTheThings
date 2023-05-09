@@ -11,8 +11,7 @@ _.Zones =
 					["cr"] = 128172,
 					["coord"] = { 62.6, 51.6, 882 },
 				}),
-				p(2132, {	-- Felcrazed Wyrm
-					["cr"] = 128174,
+				pet(2132, {	-- Felcrazed Wyrm
 					["coord"] = { 56.0, 34.6, 882 },
 				}),
 				p(2133, {	-- Pygmy Marsuul
@@ -23,12 +22,10 @@ _.Zones =
 					["cr"] = 128167,
 					["coord"] = { 43.6, 66.2, 882 },
 				}),
-				p(2130, {	-- Void Shardling
-					["cr"] = 128171,
+				pet(2130, {	-- Void Shardling
 					["coord"] = { 44.0, 47.0, 882 },
 				}),
-				p(2129, {	-- Voidstalker Runt
-					["cr"] = 128168,
+				pet(2129, {	-- Voidstalker Runt
 					["coord"] = { 43.0, 65.0, 882 },
 				}),
 				p(2128, {	-- Warpstalker Runt
@@ -73,7 +70,7 @@ _.Zones =
 				ach(12100, {	-- Family Fighter
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["groups"] = {
-						i(153040, {	-- Felclaw Marsuul
+						i(153040, {	-- Felclaw Marsuul (PET!)
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12089, {	-- Aquatic Assault

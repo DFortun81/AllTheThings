@@ -5,32 +5,63 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(NAZMIR, {
 		petbattle(filter(BATTLE_PETS, {
-			p(2388, {	-- Bloodfeaver Tarantula
-				["crs"] = { 143047 },	-- Bloodfeaver Tarantula
+			pet(2388, {	-- Bloodfeaver Tarantula
+				["description"] = "Found all around the Terrace of Sorrows.",
+				["coords"] = {
+					{ 35.0, 54.6, NAZMIR },
+					{ 36.2, 65.2, NAZMIR },
+					{ 36.4, 46.8, NAZMIR },
+					{ 39.2, 64.2, NAZMIR },
+				},
 			}),
-			p(2398, {	-- Boghopper
-				["crs"] = { 143055 },	-- Boghopper
+			pet(2398, {	-- Boghopper
+				["description"] = "Found around Krag'wa's Burrow and NE of Shoaljai Tar Pits.",
+				["coords"] = {
+					{ 76.8, 46.8, NAZMIR },
+					{ 28.8, 39.4, NAZMIR },
+				},
 			}),
-			p(2400, {	-- Coastal Bounder
-				["crs"] = { 143057 },	-- Coastal Bounder
+			pet(2400, {	-- Coastal Bounder
+				["coord"] = { 32.8, 35.6, NAZMIR },
 			}),
-			p(2389, {	-- Elusive Skimmer
-				["crs"] = { 143048 },-- Elusive Skimmer
+			pet(2389, {	-- Elusive Skimmer
+				["description"] = "Found along the southern waterways in Nazmir.",
+				["coords"] = {
+					{ 31.6, 79.8, NAZMIR },
+					{ 40.6, 84.4, NAZMIR },
+					{ 44.4, 80.8, NAZMIR },
+					{ 63.0, 64.6, NAZMIR },
+				},
 			}),
-			p(2395, {	-- Glutted Bleeder
-				["crs"] = { 143053 },	-- Glutted Bleeder
+			pet(2395, {	-- Glutted Bleeder
+				["coords"] = {
+					{ 32.8, 46.2, NAZMIR },
+					{ 30.6, 48.6, NAZMIR },
+					{ 53.8, 70.2, NAZMIR },
+					{ 51.2, 66.6, NAZMIR },
+					{ 48.8, 57.6, NAZMIR },
+					{ 53.8, 59.4, NAZMIR },
+				},
 			}),
-			p(2394, {	-- Returned Hatchling
-				["crs"] = { 143052 },	-- Returned Hatchling
+			pet(2394, {	-- Returned Hatchling
+				["coord"] = { 31.8, 58.8, NAZMIR},
+				["description"] = "Found in a small area around coord.",
 			}),
-			p(2397, {	-- Spectral Raven
-				["crs"] = { 143054 },	-- Spectral Raven
+			pet(2397, {	-- Spectral Raven
+				["description"] = "Found on the outskirts of The Necropolis.",
+				["coords"] = {
+					{ 39.8, 34.6, NAZMIR },
+					{ 36.0, 27.0, NAZMIR },
+					{ 37.8, 22.0, NAZMIR },
+					{ 42.6, 25.2, NAZMIR },
+				},
 			}),
-			p(2393, {	-- Sticky Oozeling
-				["crs"] = { 143051 },	-- Sticky Oozeling
+			pet(2393, {	-- Sticky Oozeling
+				["description"] = "Found in the Shoaljai Tar Pits.",
+				["coord"] = { 24.0, 51.8, NAZMIR },
 			}),
-			p(2392, {	-- Young Sand Sifter
-				["crs"] = { 143050 },	-- Young Sand Sifter
+			pet(2392, {	-- Young Sand Sifter
+				["description"] = "Found commonly around the outer shorelines of Nazmir.",
 			}),
 		})),
 	}),

@@ -356,7 +356,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										["cost"] = { { "i", 39371, 2 } },	-- Keleseth's Persuader
 									}),
 									i(39418, {	-- Ornately Jeweled Box
-										i(39371),	-- Keleseth's Persuader
+										i(39371, {	-- Keleseth's Persuader
+											["collectible"] = false,
+										}),
 										i(142274, {	-- Keleseth's Persuader
 											["timeline"] = { "added 7.0.3.22248" },
 										}),

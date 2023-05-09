@@ -36,22 +36,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							-- TODO: ["_quests"] = { 76027 },
 						}),
 						crit(4, {	-- Scratch and Sniff
-							-- TODO: ["_quests"] = { 75234 },
+							["_quests"] = { 75234 },
 						}),
 						crit(5, {	-- Element Whispers
-							-- TODO: ["_quests"] = { 75621 },
+							["_quests"] = { 75621 },
 						}),
 						crit(6, {	-- Successful Interventions
-							-- TODO: ["_quests"] = { 75516 },
+							["_quests"] = { 75516 },
 						}),
 						crit(7, {	-- Those Rascally Worms
 							["_quests"] = { 75397 },
 						}),
 						crit(8, {	-- Your Weight in Gold
-							-- TODO: ["_quests"] = { 75397 },
+							["_quests"] = { 75996 },
 						}),
 						crit(9, {	-- Sneak and Sniff
-							-- TODO: ["_quests"] = { 75517 },
+							["_quests"] = { 75517 },
 						}),
 						crit(10, {	-- The Living Drill
 							["_quests"] = { 76016 },
@@ -69,13 +69,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							-- TODO: ["_quests"] = { 76015 },
 						}),
 						crit(15, {	-- Liars in Light
-							-- TODO: ["_quests"] = { 75620 },
+							["_quests"] = { 75620 },
 						}),
 						crit(16, {	-- Frostfire Finesse
 							["_quests"] = { 76084 },
 						}),
 						crit(17, {	-- Liars of Spirit
-							-- TODO: ["_quests"] = { 76081 },
+							["_quests"] = { 76081 },
 						}),
 					}),
 					ach(17832, {	-- Sniffen Around
@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				}),
 				n(BONUS_OBJECTIVES, {
-					q(76015, {	-- Heart of Iron 
+					q(76015, {	-- Heart of Iron
 						["g"] = {
 							i(205939),	-- Iron Titan Key
 						},
@@ -140,6 +140,45 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },
 						["g"] = {
 							i(203655),	-- Waterlogged Key
+						},
+					}),
+					q(75393, {	-- Making Scents
+						["coord"] = { 58, 54.6, ZARALEK_CAVERN },
+					}),
+					q(75996, {	-- Your Weight in Gold
+						["coord"] = { 58.5, 51.8, ZARALEK_CAVERN },
+					}),
+					q(75620, {	-- Liars in Light
+						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
+						["g"] = {
+							i(205202),	-- Small Key
+						},
+					}),
+					q(75516, {	-- Successful Interventions
+						["coord"] = { 57.3, 49.4, ZARALEK_CAVERN },
+					}),
+					q(75234, {	-- Scratch and Sniff
+						["coord"] = { 54.6, 52.6, ZARALEK_CAVERN },
+						["g"] = {
+							i(205277),	-- Stolen Key
+						},
+					}),
+					q(75621, {	-- Element Whispers
+						["coord"] = { 55.9, 52, ZARALEK_CAVERN },
+						["g"] = {
+							i(205689),	-- Champion's Crystal
+						},
+					}),
+					q(75517, {	-- Sneak and Sniff
+						["coord"] = { 56.9, 51.4, ZARALEK_CAVERN },
+						["g"] = {
+							i(205412),	-- Jangly Key
+						},
+					}),
+					q(76081, {	-- Liars of Spirit
+						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
+						["g"] = {
+							i(205990),	-- Fierce Key
 						},
 					}),
 				}),
@@ -198,6 +237,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							{"pop"},
 						},
 					}),
+					i(205342),	-- Loamm Niffen Insignia
+					i(206009),	-- Ouroboros Tablet
+					i(206010),	-- Designs of Flesh
 				}),
 			},
 		}),
@@ -210,7 +252,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75747),	-- Completing a Sniffenseeking quest
 		q(75748),	-- Completing a Sniffenseeking quest
 		q(75749),	-- Completing a Sniffenseeking quest
-		q(75997),	-- Completing Heart of Iron Sniffenseeking Quest 
+		q(75997),	-- Completing Heart of Iron Sniffenseeking Quest
 		q(75914),	-- Starting the first Sniffenseeking map after tutorial, unflagged after completing Sniffenseeking quest
 		q(75883),	-- 3rd charge (map) for adventure / unflagged when 3rd map completed
 
@@ -244,5 +286,26 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		-- AlexSoft
 		q(75875),	-- Started Making Scents (75393) /Unflagged after map was completed
 		q(75876),	-- Completed Making Scents (75393)
+
+		q(75906),	-- Started Your Weight in Gold (75996) /Unflagged after map was completed
+		q(76003),	-- Completed Your Weight in Gold (75996)
+
+		q(75915),	-- Started Liars in Light (75620) /Unflagged after map was completed
+		q(75931),	-- Completed Liars in Light (75620)
+
+		q(75901),	-- Started Successful Interventions (75516) /Unflagged after map was completed
+		q(75927),	-- Completed Successful Interventions (75516)
+
+		q(75895),	-- Started Scratch and Sniff (75234) /Unflagged after map was completed
+		q(75925),	-- Completed Scratch and Sniff (75234)
+
+		q(75898),	-- Started Element Whispers (75621) /Unflagged after map was completed
+		q(75926),	-- Completed Element Whispers (75621)
+
+		q(75907),	-- Started Sneak and Sniff (75517) /Unflagged after map was completed
+		q(75929),	-- Completed Sneak and Sniff (75517)
+
+		q(75917),	-- Started Liars of Spirit (76081) /Unflagged after map was completed
+		q(75992),	-- Completed Liars of Spirit (76081)
 	}),
 }));

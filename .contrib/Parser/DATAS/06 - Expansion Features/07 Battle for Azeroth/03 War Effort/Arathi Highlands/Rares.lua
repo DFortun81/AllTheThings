@@ -22,8 +22,8 @@ _.ExpansionFeatures =
 						["hordeQuestID"] = 53505,	-- Branchlord Aldrus [Horde]
 						["isWeekly"] = true,
 						["coord"] = { 22.9, 22.2, ARATHI_HIGHLANDS },
-						["g"] = {	-- Aldrusian Sproutling
-							i(163650),	-- Aldrusian Sproutling
+						["g"] = {
+							i(163650),	-- Aldrusian Sproutling (PET!)
 						},
 					}),
 					n(141615, {	-- Burning Goliath
@@ -54,7 +54,7 @@ _.ExpansionFeatures =
 							{ 50.7, 36.5, ARATHI_HIGHLANDS },	-- Alliance-controlled
 						},
 						["g"] = {
-							i(163652),	-- Tiny Grimoire
+							i(163652),	-- Voidwiggler (PET!)
 						},
 					}),
 					n(142741, {	-- Doomrider Helgrim (Alliance-only)
@@ -73,7 +73,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 57.0, 34.6, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163677),	-- Teeny Tiny Orb
+							i(163677),	-- Teeny Titan Orb (PET!)
 						},
 					}),
 					n(142686, {	-- Foulbelly
@@ -95,7 +95,7 @@ _.ExpansionFeatures =
 							{ 54.0, 55.4, ARATHI_HIGHLANDS },	-- Bottom
 						},
 						["g"] = {
-							i(163711),	-- Shard of Fozruk
+							i(163711),	-- Fozling (PET!)
 						},
 					}),
 					n(142662, {	-- Geomancer Flintdagger
@@ -158,7 +158,7 @@ _.ExpansionFeatures =
 						["crs"] = { 142717 },	-- SQUAAWK!
 						["coord"] = { 51.8, 75.1, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163712),	-- Mana-Warped Egg
+							i(163712),	-- Squawkling (PET!)
 						},
 					}),
 					n(141942, {	-- Molok the Crusher
@@ -198,7 +198,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 36.4, 62.8, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163690),	-- Plague Egg
+							i(163690),	-- Foulfeather (PET!)
 						},
 					}),
 					n(142436, {	-- Ragebeak
@@ -211,7 +211,7 @@ _.ExpansionFeatures =
 							{ 18.5, 27.8, ARATHI_HIGHLANDS },	-- Alliance-controlled
 						},
 						["g"] = {
-							i(163689),	-- Angry Egg
+							i(163689),	-- Ragepeep (PET!)
 						},
 					}),
 					n(141620, {	-- Rumbling Goliath
@@ -269,7 +269,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 56.7, 54.1, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163648),	-- Fuzzy Creepling
+							i(163648),	-- Fuzzy Creepling (PET!)
 						},
 					}),
 					n(142440, {	-- Yogursa
@@ -278,7 +278,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 14.0, 36.9, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163684),	-- Scabby
+							i(163684),	-- Scabby (PET!)
 						},
 					}),
 					n(142682, {	-- Zalas Witherbark <Warband Leader>

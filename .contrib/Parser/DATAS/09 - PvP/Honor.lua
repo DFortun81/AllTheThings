@@ -92,7 +92,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 		title(369),	-- %s the Tactician
 	}),
 	ach(12916, {	-- Honor Level 400
-		i(163974, {	-- Bucketshell
+		i(163974, {	-- Bucketshell (PET!)
 			["races"] = HORDE_ONLY,
 			["crs"] = {
 				119272,	-- Sarah the Savage (Horde / Dalaran)
@@ -100,7 +100,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 				146626,	-- Legionaire Voladis (Horde / OG)
 			},
 		}),
-		i(163975, {	-- Sir Snips
+		i(163975, {	-- Sir Snips (PET!)
 			["races"] = ALLIANCE_ONLY,
 			["crs"] = {
 				119484,	-- Captain Roberts (Ally / Dalaran)

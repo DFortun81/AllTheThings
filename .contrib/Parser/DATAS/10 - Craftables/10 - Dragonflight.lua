@@ -22,7 +22,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 	i(198056),	-- Titan Training Matrix II
 	i(198058),	-- Titan Training Matrix III
 	i(198059),	-- Titan Training Matrix IV
-	i(190454, {["timeline"] = {ADDED_10_0_2_LAUNCH, ADDED_10_1_0}}),	-- Depleted Primal Chaos
+	i(190454, {["timeline"] = {ADDED_10_0_2_LAUNCH, REMOVED_10_1_0}}),	-- Depleted Primal Chaos
 	i(200686),	-- Primal Focus
 	i(197921),	-- Primal Infusion
 	-- VENDORS

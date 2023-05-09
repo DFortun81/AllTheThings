@@ -113,7 +113,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				e(195, {	-- Shannox
 					["creatureID"] = 53691,
 					["g"] = {
-						i(152975),	-- Smoldering Treat (PET!)
+						i(152975),	-- Blazehound (PET!)
 						un(NEVER_IMPLEMENTED, i(171734)),	-- Elementium Deathplate Legguards
 						un(NEVER_IMPLEMENTED, i(171741)),	-- Elementium Deathplate Greaves
 						un(NEVER_IMPLEMENTED, i(171759)),	-- Legguards of the Molten Giant
@@ -152,7 +152,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				e(196, {	-- Baleroc, the Gatekeeper
 					["creatureID"] = 53494,
 					["g"] = {
-						i(152977),	-- Vibrating Stone (PET!)
+						i(152977),	-- Surger (PET!)
 						un(NEVER_IMPLEMENTED, i(171793)),	-- Handwraps of the Cleansing Flame
 						un(NEVER_IMPLEMENTED, i(171798)),	-- Gloves of the Cleansing Flame
 						un(NEVER_IMPLEMENTED, i(171803)),	-- Balespiders Handwraps

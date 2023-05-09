@@ -984,7 +984,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["races"] = HORDE_ONLY,
 			["lvl"] = 120,
 			["g"] = {
-				i(169353),	-- Lustrous Glimmershell
+				i(169353),	-- Lustrous Glimmershell (PET!)
 			},
 		}),
 		q(56214, {	-- Good Girl

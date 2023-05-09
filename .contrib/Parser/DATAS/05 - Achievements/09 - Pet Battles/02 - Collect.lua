@@ -6,7 +6,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 	achcat(ACHIEVEMENT_CATEGORY_COLLECT, {
 		petbattle(ach(7465)),		-- An Uncommon Find*
 		petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
-			i(163634),		-- Dreadtick Leecher
+			i(163634),		-- Dreadtick Leecher (PET!)
 			crit(1),		-- Shadowback Crawler
 			crit(2),		-- River Frog
 			crit(3),		-- Freshwater Crawler
@@ -383,7 +383,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(16),		-- Wicked Soul (Icecrown Citadel - The Lich King)
 		}),
 		ach(12079, {	-- Raiding with Leashes V: Cuteaclysm*
-			i(152963),		-- Amalgam of Destruction
+			i(152963),		-- Amalgam of Destruction (PET!)
 			crit(1),		-- Tinytron (Blackwing Descent - Magmatron)
 			crit(2),		-- Discarded Experiment (Blackwing Descent - Maloriak)
 			crit(3),		-- Rattlejaw (Blackwing Descent - Nefarian)
@@ -401,7 +401,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(15),		-- Unstable Tendril (Dragon Soul - Elementium Fragment from Madness of Deathwing)
 		}),
 		ach(13469, {	-- Raiding with Leashes VI: Pets of Pandaria
-			i(167057),	-- Happiness
+			i(167057),	-- Happiness (PET!)
 			crit(1),	-- Stoneclaw			( MSV  — The Stone Guard )
 			crit(2),	-- Wayward Spirit		( MSV  — Gara'jal the Spiritbinder )
 			crit(3),	-- Comet				( MSV  — Elegon )

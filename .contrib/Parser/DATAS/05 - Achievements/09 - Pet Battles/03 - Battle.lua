@@ -527,7 +527,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					13278,	-- Not Quite Dead Yet
 				}},
 			["groups"] = {
-				i(165907),	-- Wicker Wraith
+				i(165907),	-- Wicker Wraith (PET!)
 				ach(13280),	-- Hobbyist Aquarist
 				ach(13270),	-- Beast Mode
 				ach(13271),	-- Critters with Huge Teeth
@@ -1580,7 +1580,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			ach(6595),    -- Pet Brawler (10)
 		})),
 		ach(13766, {	-- Malowned
-			i(170102),	-- Burnout
+			i(170102),	-- Burnout (PET!)
 		}),
 		ach(8518, {	-- Master of the Master
 			crit(1),	-- Blingtron 4000

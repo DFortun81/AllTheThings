@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(161536, {	-- Torga Scale Girdle
 						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 					}),
-					i(163501, {	-- Tragg the Curious
+					i(163501, {	-- Tragg the Curious (PET!)
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
 					i(161492, {	-- Zo'bal Spirit Gloves
@@ -151,17 +151,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 66.9, 42.0, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(163506, {	-- Accursed Hexxer
+					i(163506, {	-- Accursed Hexxer (PET!)
 						["sourceQuests"] = { 50976 },	-- An Ancient Curse
 						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
 					}),
-					i(163500, {	-- Bloodfeaster Larva
+					i(163500, {	-- Bloodfeaster Larva (PET!)
 						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 					}),
-					i(163510, {	-- Crimson Frog
+					i(163510, {	-- Crimson Frog (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
-					i(163505, {	-- Toad in a Box
+					i(163505, {	-- Swamp Toad (PET!)
 						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 					}),
 				},

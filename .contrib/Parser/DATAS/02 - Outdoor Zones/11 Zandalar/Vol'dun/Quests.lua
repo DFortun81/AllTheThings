@@ -783,7 +783,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 29.5, 59.3, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(160847),	-- Snake Charmer's Flute (PET!)
+					i(160847),	-- Guardian Cobra Hatchling (PET!)
 					i(160005),	-- Exiled Veteran's Footguards
 					i(160006),	-- Lastwind Treads
 					i(160007),	-- Resilient Outcast's Treads

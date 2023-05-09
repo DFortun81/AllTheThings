@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		n(154860, {	-- Feylana the Handler <Hippogryph Vendor>
 			["coord"] = { 73.6, 46.0, NAZJATAR },
 			["g"] = {
-				i(169377, {	-- Drowned Hatchling
+				i(169377, {	-- Drowned Hatchling (PET!)
 					["cost"] = { { "c", 1721, 40 }, },	-- 40x Prismatic Manapearl
 				}),
 			},

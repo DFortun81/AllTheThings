@@ -211,7 +211,7 @@ _.Instances = { tier(MOP_TIER, {
 						cr(60410, e(726, {	-- Elegon
 							["description"] = "Loot from the Elegon chest is NOT tradeable to others in group.",
 							["g"] = {
-								i(167049),	-- Celestial Gift (PET!)
+								i(167049),	-- Comet (PET!)
 								i(86799),	-- Starshatter
 								i(86789),	-- Elegion, the Fanged Crescent
 								i(86796),	-- Torch of the Celestial Spark
@@ -229,7 +229,7 @@ _.Instances = { tier(MOP_TIER, {
 							},
 						})),
 						cr(60400, e(677, {	-- Will of the Emperor (60399)
-							i(167050),	-- Mogu Statue (PET!)
+							i(167050),	-- Baoh-Xi (PET!)
 							i(138804),	-- Illusion: Colossus
 							i(86806),	-- Tihan, Scepter of the Sleeping Emperor
 							i(86801),	-- Fang Kung, Spark of Titans
@@ -385,7 +385,7 @@ _.Instances = { tier(MOP_TIER, {
 						["g"] = {
 							ach(6686),	-- Straight Six
 							i(87777),	-- Astral Cloud Serpent (MOUNT!)
-							i(167049),	-- Celestial Gift (PET!)
+							i(167049),	-- Comet (PET!)
 							i(86140),	-- Starshatter
 							i(86130),	-- Elegion, the Fanged Crescent
 							i(86137),	-- Torch of the Celestial Spark
@@ -409,7 +409,7 @@ _.Instances = { tier(MOP_TIER, {
 						},
 						["groups"] = {
 							ach(6455),    -- Show Me Your Moves!
-							i(167050),	-- Mogu Statue (PET!)
+							i(167050),	-- Baoh-Xi (PET!)
 							i(138804),	-- Illusion: Colossus
 							i(86148),	-- Tihan, Scepter of the Sleeping Emperor
 							i(86142),	-- Fang Kung, Spark of Titans
@@ -551,7 +551,7 @@ _.Instances = { tier(MOP_TIER, {
 						["g"] = {
 							ach(6723),	-- Heroic: Elegon
 							i(87777),	-- Astral Cloud Serpent (MOUNT!)
-							i(167049),	-- Celestial Gift (PET!)
+							i(167049),	-- Comet (PET!)
 							i(87061),	-- Starshatter
 							i(87062),	-- Elegion, the Fanged Crescent
 							i(87066),	-- Torch of the Celestial Spark
@@ -579,7 +579,7 @@ _.Instances = { tier(MOP_TIER, {
 							}),
 							ach(6675),	-- Heroic: Will of the Emperor Guild Run
 							un(REMOVED_FROM_GAME, ach(6680)),	-- Realm First! Will of the Emperor
-							i(167050),	-- Mogu Statue (PET!)
+							i(167050),	-- Baoh-Xi (PET!)
 							i(138804),	-- Illusion: Colossus
 							i(87074),	-- Tihan, Scepter of the Sleeping Emperor
 							i(87069),	-- Fang Kung, Spark of Titans

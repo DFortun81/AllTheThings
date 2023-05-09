@@ -114,6 +114,11 @@ local RARE_GROUP_WATER = {
 	193634,	-- Swog'ranka <Lunker>
 	193724,	-- Uurtus
 	201556,	-- Waterpots <The Splasher>
+	-- Primal Storms Rares
+	193645,	-- Crystalus
+	193655,	-- Frozion <Progeny of Water>
+	193677,	-- Maeleera <First Iceblade>
+	193682,	-- Rouen Icewind
 };
 local RARE_GROUP_DJARADIN = {
 	193198,	-- Captain Lancer
@@ -196,6 +201,12 @@ local RARE_GROUP_WIND = {
 	193171,	-- Terillod the Devout
 	191354,	-- Ty'foon the Ascended
 	193209,	-- Zenet Avis <The Hard Wind>
+	-- Primal Storms Rares
+	193653,	-- Gaelzion <Progeny of Air>
+	193647,	-- Karantun
+	193684,	-- Pipspark Thundersnap
+	193674,	-- Voraazka
+
 };
 local RARE_GROUP_TIME = {
 	193126,	-- Innumerable Ruination

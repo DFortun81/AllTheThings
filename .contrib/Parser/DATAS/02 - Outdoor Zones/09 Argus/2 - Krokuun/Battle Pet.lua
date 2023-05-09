@@ -7,15 +7,12 @@ _.Zones =
 	m(905, {	-- Argus
 		m(830, {	-- Krokuun
 			petbattle(filter(BATTLE_PETS, {
-				p(2123, {	-- Bile Larva
-					["cr"] = 128162,
+				pet(2123, {	-- Bile Larva
 				}),
-				p(2124, {	-- Bilescourge
-					["cr"] = 128164,
+				pet(2124, {	-- Bilescourge
 					["coord"] = { 47.0, 46.8, 830 },
 				}),
-				p(2127, {	-- Flickering Argunite
-					["cr"] = 128166,
+				pet(2127, {	-- Flickering Argunite
 					["coord"] = { 35.4, 64.5, 830 },
 				}),
 				ach(12088, {	-- Anomalous Animals of Argus
@@ -55,7 +52,7 @@ _.Zones =
 				}),
 				ach(12100, {	-- Family Fighter
 					["groups"] = {
-						i(153040, {	-- Felclaw Marsuul
+						i(153040, {	-- Felclaw Marsuul (PET!)
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12089, {	-- Aquatic Assault

@@ -118,7 +118,7 @@ root(ROOTS.PetBattles, petbattle({
 			},
 			["g"] = {
 				ach(11856, {	-- Pet Battle Challenge: Deadmines
-					i(151632),	-- Mining Monkey
+					i(151632),	-- Mining Monkey (PET!)
 				}),
 				q(46293, {	-- Deadmines, Part Three?
 					["provider"] = { "n", 96479 },	-- Breanni
@@ -138,13 +138,13 @@ root(ROOTS.PetBattles, petbattle({
 				n(119390, {	-- Marcus "Bagman" Brown
 					["coord"] = { 41.6, 71.2, WESTFALL },
 					["g"] = {
-						i(150742, {	-- Pet Reaper 0.9
+						i(150742, {	-- Foe Reaper 0.9 (PET!)
 							["cost"] = { { "i", 151191, 1 } },	-- 1x Old Bottle Cap
 						}),
-						i(150741, {	-- Tricorne
+						i(150741, {	-- Tricorne (PET!)
 							["cost"] = { { "i", 151191, 2 } },	-- 2x Old Bottle Cap
 						}),
-						i(150739, {	-- Pocket Cannon
+						i(150739, {	-- Pocket Cannon (PET!)
 							["cost"] = { { "i", 151191, 3 } },	-- 3x Old Bottle Cap
 						}),
 						i(146317, {	-- Mr. Smite's Supplies
@@ -168,7 +168,7 @@ root(ROOTS.PetBattles, petbattle({
 			},
 			["g"] = {
 				ach(13269, {	-- Pet Battle Challenge: Gnomeregan
-					i(165894),	-- Mini Spider Tank
+					i(165894),	-- Mini Spider Tank (PET!)
 				}),
 				q(54184, {	-- Trouble in Gnomeregan (A)
 					["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
@@ -200,13 +200,13 @@ root(ROOTS.PetBattles, petbattle({
 				n(147070, {	-- Micro Zoox
 					["coord"] = { 31.8, 71.6, NEW_TINKERTOWN_LOWER },
 					["g"] = {
-						i(165855, {	-- Leper Rat Tail
+						i(165855, {	-- Leper Rat (PET!)
 							["cost"] = { { "i", 165835, 2 } },	-- 2x Pristine Gizmo
 						}),
-						i(165854, {	-- Mechanical Cockroach
+						i(165854, {	-- Mechanical Cockroach (PET!)
 							["cost"] = { { "i", 165835, 1 } },	-- 1x Pristine Gizmo
 						}),
-						i(165857, {	-- Rechargeable Alarm-O-Dog Battery
+						i(165857, {	-- Alarm-O-Dog (PET!)
 							["cost"] = { { "i", 165835, 3 } },	-- 3x Pristine Gizmo
 						}),
 						i(165844, {	-- Schematic: Mechantula
@@ -230,7 +230,7 @@ root(ROOTS.PetBattles, petbattle({
 			},
 			["g"] = {
 				ach(13627, {	-- Pet Battle Challenge: Stratholme
-					i(169670),	-- Evil Wizard Hat (Minimancer)
+					i(169670),	-- Minimancer (PET!)
 				}),
 				ach(13766, {	-- Malowned
 					["description"] = "To summon Postmaster Malown, find a Discarded Letter on the ground at one of the coordinates provided and put it in the mailbox at |cFFFfffff57.8, 13.6|r.\n",
@@ -243,7 +243,7 @@ root(ROOTS.PetBattles, petbattle({
 						{ 68.9, 54.0, 1505 },
 					},
 					["g"] = {
-						i(170102),	-- Burnout
+						i(170102),	-- Burnout (PET!)
 					},
 				}),
 				q(56489, {	-- Restless Dead (A)
@@ -286,13 +286,13 @@ root(ROOTS.PetBattles, petbattle({
 						i(169678, {	-- Ziggy
 							["cost"] = { { "i", 169665, 1 } },	-- 1x Cleansed Remains
 						}),
-						i(169677, {	-- Crypt Fiend
+						i(169677, {	-- Crypt Fiend (PET!)
 							["cost"] = { { "i", 169665, 2 } },	-- 2x Cleansed Remains
 						}),
 						i(169676, {	-- Contained Banshee Wail (Shrieker)
 							["cost"] = { { "i", 169665, 3 } },	-- 3x Cleansed Remains
 						}),
-						i(169679, {	-- Smelly Cleaver (Gruesome Belcher)
+						i(169679, {	-- Gruesome Belcher (PET!)
 							["cost"] = { { "i", 169665, 3 } },	-- 3x Cleansed Remains
 						}),
 					},
@@ -310,7 +310,7 @@ root(ROOTS.PetBattles, petbattle({
 			},
 			["g"] = {
 				ach(11765, {	-- Pet Battle Challenge: Wailing Caverns
-					i(147543),	-- Son of Skum
+					i(147543),	-- Son of Skum (PET!)
 				}),
 				q(45540, {	-- A Call from the Caverns
 					["providers"] = {
@@ -334,9 +334,9 @@ root(ROOTS.PetBattles, petbattle({
 					},
 				}),
 				i(143753, {	-- Damp Pet Supplies
-					i(143754),	-- Cavern Moccasin
-					i(143755),	-- Young Venomfang
-					i(143756),	-- Everliving Spore
+					i(143754),	-- Cavern Moccasin (PET!)
+					i(143755),	-- Young Venomfang (PET!)
+					i(143756),	-- Everliving Spore (PET!)
 				}),
 			},
 		}),

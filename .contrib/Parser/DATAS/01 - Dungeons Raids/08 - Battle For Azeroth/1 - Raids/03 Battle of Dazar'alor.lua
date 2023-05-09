@@ -450,8 +450,8 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 					},
 					["g"] = {
 						ach(13325),	-- Walk the Dinosaur
-						i(165846),	-- Enchanted Talon of Pa'ku (PET!)
-						i(165847),	-- Thundering Scale of Akunda (PET!)
+						i(165846),	-- Child of Pa'ku (PET!)
+						i(165847),	-- Thunder Lizard Runt (PET!)
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow
@@ -661,8 +661,8 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 						144747,	-- Pa'ku's Aspect
 					},
 					["g"] = {
-						i(165846),	-- Enchanted Talon of Pa'ku (PET!)
-						i(165847),	-- Thundering Scale of Akunda (PET!)
+						i(165846),	-- Child of Pa'ku (PET!)
+						i(165847),	-- Thunder Lizard Runt (PET!)
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow
@@ -881,9 +881,9 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 					},
 					["g"] = {
 						ach(13300),	-- Mythic: Conclave of the Chosen
-						i(165846),	-- Enchanted Talon of Pa'ku (PET!)
+						i(165846),	-- Child of Pa'ku (PET!)
 						i(165848),	-- Spawn of Krag'wa (PET!)
-						i(165847),	-- Thundering Scale of Akunda (PET!)
+						i(165847),	-- Thunder Lizard Runt (PET!)
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow

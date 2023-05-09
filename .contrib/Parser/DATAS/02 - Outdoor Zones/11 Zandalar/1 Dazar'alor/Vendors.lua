@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			n(132097, {	-- Happy Holaua <Pet Vendor>
 				["coord"] = { 56.0, 32.2, DAZARALOR },
 				["g"] = {
-					i(163508, {	-- Butterfly in a Jar (PET!)
+					i(163508, {	-- Blue Flitter (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 					i(163504, {	-- Child of Jani (PET!)
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					i(163499, {	-- Raptor Containment Crate (PET!)
+					i(163499, {	-- Zandalari Shinchomper (PET!)
 						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 					}),
 					i(163560, {	-- Saurolisk Hatchling (PET!)
@@ -442,19 +442,19 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(163489, {	-- Abyssal Eel (PET!)
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
-					i(163493, {	-- Bloody Rabbit Fang (PET!)
+					i(163493, {	-- Frenzied Cottontail (PET!)
 						["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
 					}),
 					i(163492, {	-- Drustvar Piglet (PET!)
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
-					i(163495, {	-- Greatwing Macaw Feather (PET!)
+					i(163495, {	-- Greatwing Macaw (PET!)
 						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 					}),
-					i(163496, {	-- Strange Looking Mechanical Squirrel (PET!)
+					i(163496, {	-- Mechanical Prarie Dog (PET!)
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
-					i(163494, {	-- Wad of Spider Web (PET!)
+					i(163494, {	-- Bilefang Skitterer (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 				},

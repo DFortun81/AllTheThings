@@ -95,6 +95,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				},
 			}),
 			i(177236, {	-- Dog Bone's Bone (EC!)
+				["customCollect"] = "SL_COV_VEN",
 				["crs"] = {
 					173509,	-- Animated Marrowhound
 					168453,	-- Animated Pointer

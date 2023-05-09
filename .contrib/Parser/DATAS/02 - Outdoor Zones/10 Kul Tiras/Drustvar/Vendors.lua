@@ -9,22 +9,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",
 				["coord"] = { 52.2, 31.6, DRUSTVAR },
 				["g"] = {
-					i(163493, {	-- Bloody Rabbit Fang
+					i(163493, {	-- Frenzied Cottontail (PET!)
 						["description"] = "Defeat Cottontail Matron (located at 52.2, 46.8) for this item to appear on the vendor.",
 						["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
 					}),
-					i(163510, {	-- Crimson Frog
+					i(163510, {	-- Crimson Frog (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 					i(163492, {	-- Drustvar Piglet
 						["sourceQuests"] = { 47950 },	-- Cured Ham
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
-					i(160708, {	-- Smoochums' Bloody Heart
+					i(160708, {	-- Smoochums (PET!)
 						["sourceQuests"] = { 44785 },	-- Tea Party
 						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 					}),
-					i(163494, {	-- Wad of Spider Web
+					i(163494, {	-- Bilefang Skitterer (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 				},
@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(162427, {	-- Pattern: Embroidered Deep Sea Cloak [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(163491, {	-- Pristine Falcon Feather (PET!)
+					i(163491, {	-- Corlain Falcon (PET!)
 						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 					}),
 					i(163314, {	-- Recipe: Battle Potion of Agility [Rank 3] (RECIPE!)

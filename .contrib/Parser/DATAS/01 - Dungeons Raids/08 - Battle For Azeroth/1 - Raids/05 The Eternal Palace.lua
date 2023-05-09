@@ -201,7 +201,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 							crit(1, {	-- Lady Ashvane
 								["achievementID"] = 13719,	-- Depths of the Devoted
 							}),
-							i(169358),	-- Lightless Ambusher
+							i(169358),	-- Lightless Ambusher (PET!)
 							i(168904),	-- Current-Weaver's Gavel
 							i(168347),	-- Helm of Hideous Transformation
 							i(168354),	-- Shoulderguards of Crushing Depths
@@ -273,7 +273,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 							crit(1, {	-- Za'qul
 								["achievementID"] = 13725,	-- The Circle of Stars
 							}),
-							i(169362),	-- Nameless Octopode
+							i(169362),	-- Nameless Octopode (PET!)
 							i(168902),	-- Dream's End
 							i(168301),	-- Sever, Edge of Madness
 							i(168349),	-- Shroud of Unmooring Whispers
@@ -398,7 +398,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 					["creatureID"] = 152236,
 					["g"] = {
 						ach(13629),	-- Simple Geometry
-						i(169358),	-- Lightless Ambusher
+						i(169358),	-- Lightless Ambusher (PET!)
 						i(168904),	-- Current-Weaver's Gavel
 						i(168347),	-- Helm of Hideous Transformation
 						i(168354),	-- Shoulderguards of Crushing Depths
@@ -462,7 +462,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 					["creatureID"] = 150859,
 					["g"] = {
 						ach(13716),	-- Lactose Intolerant
-						i(169362),	-- Nameless Octopode
+						i(169362),	-- Nameless Octopode (PET!)
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
 						i(168349),	-- Shroud of Unmooring Whispers
@@ -580,7 +580,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 				e(2354, {	-- Lady Ashvane
 					["creatureID"] = 152236,
 					["g"] = {
-						i(169358),	-- Lightless Ambusher
+						i(169358),	-- Lightless Ambusher (PET!)
 						i(168904),	-- Current-Weaver's Gavel
 						i(168347),	-- Helm of Hideous Transformation
 						i(168354),	-- Shoulderguards of Crushing Depths
@@ -641,7 +641,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 					["creatureID"] = 150859,
 					["g"] = {
-						i(169362),	-- Nameless Octopode
+						i(169362),	-- Nameless Octopode (PET!)
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
 						i(168868),	-- Pauldrons of Za'qul
@@ -766,7 +766,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 					["creatureID"] = 152236,
 					["g"] = {
 						ach(13729),	-- Mythic: Lady Ashvane
-						i(169358),	-- Lightless Ambusher
+						i(169358),	-- Lightless Ambusher (PET!)
 						i(168904),	-- Current-Weaver's Gavel
 						i(168347),	-- Helm of Hideous Transformation
 						i(168354),	-- Shoulderguards of Crushing Depths
@@ -830,7 +830,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 					["creatureID"] = 150859,
 					["g"] = {
 						ach(13732),	-- Mythic: Za'qul
-						i(169362),	-- Nameless Octopode
+						i(169362),	-- Nameless Octopode (PET!)
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
 						i(168868),	-- Pauldrons of Za'qul

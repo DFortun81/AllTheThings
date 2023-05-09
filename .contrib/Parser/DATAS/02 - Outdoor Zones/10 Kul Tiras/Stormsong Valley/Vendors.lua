@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(163511, {	-- Barnacled Hermit Crab (PET!)
 						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 					}),
-					i(163508, {	-- Butterfly in a Jar (PET!)
+					i(163508, {	-- Blue Flitter (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
 					i(163509, {	-- Freshwater Pincher (PET!)
@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(163704, {	-- Tiny Mechanical Mouse (TOY!)
 						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
 					}),
-					i(163514, {	-- Violent Looking Flower Pot (PET!)
+					i(163514, {	-- Carnivorous Lasher (PET!)
 						["cost"] = { { "i", 163036, 150 }, },	-- 150x Polished Pet Charm
 					}),
 				},
@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(161578, {	-- Kelp-Encrusted Bindings
 						["cost"] = 19000000,	-- 1,900g
 					}),
-					i(163490, {	-- Pair of Bee Wings (PET!)
+					i(163490, {	-- Seabreeze Bumblebee (PET!)
 						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
 					}),
 					i(163318, {	-- Recipe: Battle Potion of Stamina [Rank 3] (RECIPE!)

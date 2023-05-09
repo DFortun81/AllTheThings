@@ -20,7 +20,7 @@ _.Zones =
 							i(147308, {	-- Crate of Bobbers: Enchanted Bobber (TOY!)
 								["cost"] = { { "i", 146848, 100 } },	-- 100x Fragmented Enchantment
 							}),
-							i(152555, {	-- Ghost Shark
+							i(152555, {	-- Ghost Shark (PET!)
 								["cost"] = { { "i", 146848, 50 } },	-- 50x Fragmented Enchantment
 							}),
 							i(133703, {	-- Pearlescent Conch

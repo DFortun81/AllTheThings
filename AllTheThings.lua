@@ -12054,23 +12054,34 @@ app.CacheHeirlooms = function()
 	if #heirloomIDs < 1 then return; end
 
 	-- setup the armor tokens which will contain the upgrades for the heirlooms
+	-- Note: The order of these is essential to how they are filled!
 	local armorTokens = {
+		-- Rank 6
 		app.CreateItem(204336),	-- Awakened Heirloom Armor Casing
+		-- Rank 5
 		app.CreateItem(187997),	-- Eternal Heirloom Armor Casing
+		-- Rank 4
 		app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
+		-- Rank 3
 		app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
+		-- Rank 2
 		app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
+		-- Rank 1
 		app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
-		app.CreateItem(204336); -- Awakened Heirloom Armor Casing
 	};
 	local weaponTokens = {
+		-- Rank 6
 		app.CreateItem(204337),	-- Awakened Heirloom Scabbard
+		-- Rank 5
 		app.CreateItem(187998),	-- Eternal Heirloom Scabbard
+		-- Rank 4
 		app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
+		-- Rank 3
 		app.CreateItem(151615),	-- Weathered Heirloom Scabbard
+		-- Rank 2
 		app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
+		-- Rank 1
 		app.CreateItem(122339),	-- Ancient Heirloom Scabbard
-		app.CreateItem(204337);	-- Awakened Heirloom Scabbard
 	};
 
 	-- cache the heirloom upgrade tokens
@@ -21575,8 +21586,11 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			-- TODO: schematic.reagentSlotSchematics is often EMPTY on first query??
 			if #schematic.reagentSlotSchematics == 0 then
 				-- Milling Recipes...
-				app.PrintDebug("EMPTY SCHEMATICS",recipeID)
+				-- app.PrintDebug("EMPTY SCHEMATICS",recipeID)
 				return;
+			end
+			if not app.SearchForObject("spellID",recipeID) then
+				app.PrintDebug("Missing Recipe",recipeID,"Prof",self.lastTradeSkillID)
 			end
 			local reagentCache = GetDataMember("Reagents", app.ReagentsDB);
 			local itemRecipes, reagentCount, reagentItemID;
@@ -21596,7 +21610,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 								itemRecipes = { };
 								reagentCache[reagentItemID] = itemRecipes;
 							end
-							app.PrintDebug("Reagent",reagentItemID,"x",reagentCount,"=>",craftedItemID,"via",recipeID)
+							-- app.PrintDebug("Reagent",reagentItemID,"x",reagentCount,"=>",craftedItemID,"via",recipeID)
 							itemRecipes[recipeID] = { craftedItemID, reagentCount };
 						end
 					end
@@ -21724,7 +21738,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			if app.CollectibleRecipes then
 				-- app.PrintDebug("RefreshRecipes")
 				-- Cache Learned Spells
-				local skillCache = fieldCache["spellID"];
+				local skillCache = app.SearchForFieldContainer("spellID");
 				if not skillCache then return; end
 
 				local tradeSkillID = app.GetTradeSkillLine();
@@ -22159,7 +22173,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 			self.Rebuild = function(self, no)
 				-- Already filled with data and nothing needing to retry, just give it a forced update pass since data for quests should now populate dynamically
 				if not self.retry and #self.data.g > 1 then
-					-- print("Already WQ data, just update again")
+					-- app.PrintDebug("Already WQ data, just update again")
 					-- Force Update Callback
 					Callback(self.Update, self, true);
 					return;
@@ -22188,7 +22202,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				-- Acquire all of the world mapIDs
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
-					-- print("WQ.WorldMapIDs.", mapID)
+					-- app.PrintDebug("WQ.WorldMapIDs.", mapID)
 					-- start fetching the data while other stuff is setup
 					C_QuestLine_RequestQuestLinesForMap(mapID);
 					local mapObject = app.CreateMapWithStyle(mapID);

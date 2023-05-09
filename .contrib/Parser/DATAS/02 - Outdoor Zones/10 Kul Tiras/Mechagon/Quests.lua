@@ -461,7 +461,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["coord"] = { 72.7, 38.0, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					i(169381, {	-- OOX-35/MG (pet)
+					i(169381, {	-- OOX-35/MG (PET!)
 						["description"] = "When the quest |cFFFFD700My Chickens are Not for Eating!|r is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",
 					}),
 				},

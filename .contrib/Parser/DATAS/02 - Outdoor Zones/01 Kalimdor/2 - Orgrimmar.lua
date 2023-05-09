@@ -2930,13 +2930,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					["groups"] = FISHING_AWARD_GROUPS,
 				}),
-				q(60360, {	-- An Urgent Meeting
-					["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is
-					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
-					["coord"] = { 70.9, 49.6, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["timeline"] = { ADDED_9_0_1 },
-				}),
 				q(7832, {	-- Additional Runecloth [Darkspear Trolls]
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["sourceQuest"] = 7824,	-- A Donation of Runecloth
