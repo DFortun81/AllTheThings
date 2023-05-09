@@ -183,6 +183,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["isDaily"] = true,
 				}),
 			}),
+			o_repeated({	-- Smelly Trash Pile
+				-- Contains
+				i(203313),	-- Winding Slitherdrake: Spiked Chin (DM!)
+				-- Objects
+				-- TODO
+			}),
 			o_repeated({	-- Stolen Stash
 				-- Contains
 				-- Objects
