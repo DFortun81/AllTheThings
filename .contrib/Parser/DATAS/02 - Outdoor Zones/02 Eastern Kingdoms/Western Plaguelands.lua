@@ -1052,9 +1052,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #IF BEFORE CATA
 						26930,	-- After the Crusade (not sure if this is wrong in Classic also but just in case)
 						-- #ELSE
+						26930,	-- After the Crusade (reported as inaccurate quest)
 						25007,	-- East... Always to the East (assumed from report)
 						-- #ENDIF
 					},
+					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
