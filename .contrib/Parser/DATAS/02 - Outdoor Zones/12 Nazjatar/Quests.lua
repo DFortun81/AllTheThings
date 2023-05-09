@@ -2538,10 +2538,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			},
 		}),
 		q(56804, {	-- With Friends Like You, Who Needs Anemones?
-			["providers"] = {
-				{ "n", 151310 },	-- Kelfin Scout (Vim Brineheart)
-				{ "n", 149906 },	-- Vim Brineheart
-			},
+			["provider"] = { "n", 151309 },	-- Vim Brineheart
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 5.",
 			["races"] = HORDE_ONLY,
