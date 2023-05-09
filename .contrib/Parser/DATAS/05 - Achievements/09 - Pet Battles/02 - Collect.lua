@@ -401,7 +401,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(15),		-- Unstable Tendril (Dragon Soul - Elementium Fragment from Madness of Deathwing)
 		}),
 		ach(13469, {	-- Raiding with Leashes VI: Pets of Pandaria
-			i(167057),	-- Happiness
+			i(167057),	-- Happiness (PET!)
 			crit(1),	-- Stoneclaw			( MSV  — The Stone Guard )
 			crit(2),	-- Wayward Spirit		( MSV  — Gara'jal the Spiritbinder )
 			crit(3),	-- Comet				( MSV  — Elegon )

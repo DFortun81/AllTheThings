@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 		petbattle(filter(BATTLE_PETS, {
 			pet(2537, {	-- Baby Zandalari Raptor
 				["coord"] = { 71.2, 41.2, ZULDAZAR },
+				["timeline"] = { "added 8.1.0" },
 			}),
 			pet(2385, {	-- Barrier Hermit
 				["description"] = "Found commonly on the shorelines of Tusk Isle and Isle of Fang, islands south of Zuldazar."
