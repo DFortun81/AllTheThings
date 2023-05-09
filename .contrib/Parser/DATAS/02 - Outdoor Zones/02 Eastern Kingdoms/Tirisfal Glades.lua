@@ -588,7 +588,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 							["cr"] = 1916,	-- Stephen Bhartec
+							-- #if NOT ANYCLASSIC
+							-- CRIEVE NOTE: Just because Blizzard forgot to make this one BOE doesn't mean if you have it you shouldn't keep it. It's still a very very rare collectible.
 							["collectible"] = false,
+							-- #endif
 						}),
 						i(3262, {	-- Putrid Wooden Hammer
 							-- #if BEFORE CATA

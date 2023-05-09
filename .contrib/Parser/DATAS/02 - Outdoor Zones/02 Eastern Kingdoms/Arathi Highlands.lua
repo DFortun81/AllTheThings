@@ -1617,10 +1617,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 5040 },	-- Shadow Hunter Knife
 							["cr"] = 2557,	-- Witherbark Shadow Hunter
 						}),
-						i(5040, {	-- Shadow Hunter Knife
-							["timeline"] = { "removed 4.0.3" },
-							["collectible"] = false,
-						}),
 					},
 				}),
 				q(26035, {	-- Worth Its Weight in Gold
