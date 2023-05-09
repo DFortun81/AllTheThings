@@ -681,6 +681,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36638),	-- Bloody Crossbow
 			i(36639),	-- Brutal Ballista
 			i(36640),	-- Scourge Crossbow
+			i(36631, {	-- Horned Crossbow
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(DAGGERS, {
 			i(33428),	-- Dulled Shiv
