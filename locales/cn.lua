@@ -3962,7 +3962,7 @@ for key, value in pairs({
 	[401241] = "被冷落的蜗牛壳",	-- Snubbed Snail Shells
 	[401292] = "被轻轻碰过的珠宝",	-- Gently Jostled Jewels
 	[401299] = "破损的以物易物巨石",	-- Broken Barter Boulder
-	[401828] = "纳·克斯寇圣物匣",	-- Nal Ks'kol Reliquary
+	[401828] = "纳·克斯寇圣物匣",	-- Nal ks'kol Reliquary
 	[401839] = "沉睡者的奖赏",	-- Dreamer's Bounty
 	[402627] = "古旧的窑炉",	-- Well-Worn Kiln
 	[402632] = "硫磺救生环",	-- Brimstone Rescue Ring
