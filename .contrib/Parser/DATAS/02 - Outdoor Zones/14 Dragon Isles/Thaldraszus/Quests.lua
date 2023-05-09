@@ -12,7 +12,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 				}),
 				q(66159, {	-- A Message Most Dire
-					["sourceQuests"] = { 66244 },	-- To Valdrakken
+					["sourceQuests"] = { 
+						66244, -- To Valdrakken
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 58.5, 35.7, VALDRAKKEN },
 				}),
