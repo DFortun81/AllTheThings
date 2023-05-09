@@ -85,13 +85,11 @@ root(ROOTS.Promotions, {
 			}),
 			i(54452, {	-- Ethereal Portal (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between May 2nd, 10:00 a.m. & May 9th, 9:59 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_10_1_0, "removed 10.1.0.99999" },
-				-- ["u"] = REMOVED_FROM_GAME,	-- May 9th 2023
+				["timeline"] = { ADDED_10_1_0, "removed 10.1.0.49474" },
 			}),
 			i(54069, {	-- Blazing Hippogryph (MOUNT!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between May 9th, 10:00 a.m. & May 17th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { "added 10.1.0.99999" },
-				-- ["u"] = REMOVED_FROM_GAME,	-- May 17th 2023
+				["timeline"] = { "added 10.1.0.49474", "removed 10.1.0.99999" },
 		}),
 		},
 	}),
