@@ -8,8 +8,8 @@ local _, app = ...;
 -- Capability to add to and run a sequence of Functions with a specific allotment being processed individually each frame
 
 -- Global locals
-local wipe, math_max, tonumber, unpack, coroutine, type, select, tremove, tinsert, C_Timer_After =
-	  wipe, math.max, tonumber, unpack, coroutine, type, select, tremove, tinsert, C_Timer.After;
+local wipe, math_max, tonumber, unpack, coroutine, type, select, tremove, tinsert, pcall, C_Timer_After =
+	  wipe, math.max, tonumber, unpack, coroutine, type, select, tremove, tinsert, pcall,  C_Timer.After;
 
 local Stack = {};
 local StackParams = {};
@@ -23,12 +23,17 @@ local QueueStack;
 local StackCo = coroutine.create(function()
 	while true do
 		-- app.PrintDebug("StackCo:Call",#Stack)
+		local f, p, s, c;
 		for i=#Stack,1,-1 do
-			-- app.PrintDebug("StackCo:Run",i,Stack[i],StackParams[i])
-			if not Stack[i](StackParams[i]) then
+			f, p = Stack[i], StackParams[i];
+			-- app.PrintDebug("StackCo:Run",i,f,p)
+			s, c = pcall(f, p);
+			-- Function call has an error or it is not continuing, remove it from the Stack
+			if not s or not c then
+				if not s then app.PrintDebug("StackError:",c) end
 				-- app.PrintDebug("StackCo:Remove",i)
 				tremove(Stack, i);
-				tremove(StackParams, i);
+				StackParams[i] = nil;
 			end
 		end
 		-- app.PrintDebug("StackCo:Done")
