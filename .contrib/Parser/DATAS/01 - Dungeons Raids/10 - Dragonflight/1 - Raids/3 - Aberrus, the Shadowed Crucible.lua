@@ -1327,7 +1327,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(75735),	-- Assault of the Zaqali
 		q(75736),	-- Rashok
 		q(75737),	-- The Vigilant Steward, Zskarn
-		q(75739),	-- Magmorax
+		q(75738),	-- Magmorax
 		q(75739),	-- Echo of Neltharion
 		-- q(),	-- Scalecommander Sarkareth
 		-- Heroic
