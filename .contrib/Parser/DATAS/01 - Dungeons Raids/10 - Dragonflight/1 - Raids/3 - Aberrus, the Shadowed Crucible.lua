@@ -755,14 +755,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 			d(HEROIC_RAID, {
-				-- n(QUESTS, {
-				-- 	q(, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
-				-- 		["provider"] = { "n", 201574 },	-- Wrathion
-				-- 		["g"] = {
-				-- 			i(),	-- Tome of the Earth-Warder (H)
-				-- 		},
-				-- 	}),
-				-- }),
+				n(QUESTS, {
+					q(76085, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
+						["provider"] = { "n", 201574 },	-- Wrathion
+						-- ["g"] = {
+						-- 	i(),	-- Tome of the Earth-Warder (H)
+						-- },
+					}),
+				}),
 				n(ZONE_DROPS, {
 					i(204410),	-- Bands of Purified Purpose
 					i(204411),	-- Crucible Curator's Wingspan
@@ -1326,17 +1326,17 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(75734),	-- The Forgotten Experiments
 		q(75735),	-- Assault of the Zaqali
 		q(75736),	-- Rashok
-		q(75737),	-- The Vigilant Steward
+		q(75737),	-- The Vigilant Steward, Zskarn
 		q(75739),	-- Magmorax
 		q(75739),	-- Echo of Neltharion
 		-- q(),	-- Scalecommander Sarkareth
 		-- Heroic
-		-- q(),	-- Kazzara
-		-- q(),	-- The Amalgamation Chamber
-		-- q(),	-- The Forgotten Experiments
-		-- q(),	-- Assault of the Zaqali
-		-- q(),	-- Rashok
-		-- q(),	-- The Vigilant Steward
+		-- q(none),	-- Kazzara
+		-- q(none),	-- The Amalgamation Chamber
+		-- q(none),	-- The Forgotten Experiments
+		-- q(none),	-- Assault of the Zaqali
+		-- q(none),	-- Rashok
+		-- q(none),	-- The Vigilant Steward, Zskarn
 		-- q(),	-- Magmorax
 		-- q(),	-- Echo of Neltharion
 		-- q(),	-- Scalecommander Sarkareth
@@ -1346,7 +1346,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		-- q(),	-- The Forgotten Experiments
 		-- q(),	-- Assault of the Zaqali
 		-- q(),	-- Rashok
-		-- q(),	-- The Vigilant Steward
+		-- q(),	-- The Vigilant Steward, Zskarn
 		-- q(),	-- Magmorax
 		-- q(),	-- Echo of Neltharion
 		-- q(),	-- Scalecommander Sarkareth
