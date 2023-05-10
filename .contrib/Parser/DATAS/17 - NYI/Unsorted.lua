@@ -461,9 +461,7 @@ root(ROOTS.Unsorted, {
 				i(205906),	-- Feathered Friend
 				i(205907),	-- Soaked Totem
 				i(205909),	-- Stretched Canvas
-				i(205910),	-- Bubbling Elixir
 				i(205911),	-- Mysterious Incense
-				i(205912),	-- Leather-Wrapped Flask
 				i(205913),	-- Blank Notebook
 				i(205994),	-- Tome of the Earth-Warder
 				i(205996),	-- Tome of the Earth-Warder
@@ -495,7 +493,6 @@ root(ROOTS.Unsorted, {
 				i(204717),	-- Splintered Spark of Shadowflame
 				-- Loamm Niffen
 				i(204712),	-- Brimming Loamm Niffen Supply Satchel
-				i(205286),	-- Loamm Niffen Tabard
 				i(205365),	-- Loamm Niffen Insignia
 				i(205965),	-- Large Loammian Supply Pack
 				i(205968),	-- Overflowing Loammian Supply Pack
