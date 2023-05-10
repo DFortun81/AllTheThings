@@ -299,7 +299,7 @@ root(ROOTS.PetBattles, petbattle({
 				}),
 			},
 		}),
-		q(45539, {	-- Pet Battle Challenge: Wailing Caverns
+		q(45539, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Pet Battle Challenge: Wailing Caverns
 			["provider"] = { "n", 116781 },	-- Muyani
 			["coord"] = { 38.8, 68.2, NORTHERN_BARRENS },
 			["sourceQuest"] = 45423,	-- Wailing Critters
@@ -339,6 +339,6 @@ root(ROOTS.PetBattles, petbattle({
 					i(143756),	-- Everliving Spore (PET!)
 				}),
 			},
-		}),
+		})),
 	}),
 }));

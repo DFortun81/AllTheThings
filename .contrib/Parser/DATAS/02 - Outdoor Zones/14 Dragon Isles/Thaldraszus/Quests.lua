@@ -759,7 +759,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["collectible"] = false,
 				["g"] = {
 					q(72190, {	-- Reservoir Reservations
-						["sourceQuests"] = { 66244 },	-- To Valdrakken
+						["sourceQuests"] = { 
+							66244, 	-- To Valdrakken
+							DF_ACCOUNT_CAMPAIGN_QUEST, 
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 198349 },	-- Talikka
 						["coord"] = { 25.5, 40.9, VALDRAKKEN },
 						["isBreadcrumb"] = true,

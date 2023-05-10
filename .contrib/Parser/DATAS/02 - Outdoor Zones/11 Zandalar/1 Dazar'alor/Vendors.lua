@@ -828,7 +828,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 				--	i(163974),	-- Bucketshell	-- Listed under PvP w/ CRS
-				--	i(142380),	-- Dutiful Squire
+				--	i(142380),	-- Dutiful Squire (PET!)
 				--	i(139776),	-- Horde Fanatic
 				},
 			}),

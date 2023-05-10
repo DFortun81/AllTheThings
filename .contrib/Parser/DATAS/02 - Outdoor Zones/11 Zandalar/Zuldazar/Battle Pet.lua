@@ -15,7 +15,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			pet(2387, {	-- Golden Beetle
 				["description"] = "Found at the coord in Atal'Dazar area, as well as alongside Barrier Hermits.",
 				["coord"] = { 42.8, 39.2, ZULDAZAR },
-
 			}),
 			pet(2390, {	-- Leafy Flutterwing
 				["description"] = "Found mosly along walkways in east Zuldazar.",

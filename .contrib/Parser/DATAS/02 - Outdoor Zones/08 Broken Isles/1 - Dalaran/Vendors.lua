@@ -2015,7 +2015,7 @@ _.Zones =
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
 						--i(139775),	-- Alliance Enthusiast
-						--i(142379),	-- Dutiful Squire
+						--i(142379),	-- Dutiful Squire (PET!)
 						un(ELITE_PVP_REQUIREMENT, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
 						un(ELITE_PVP_REQUIREMENT, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
 						un(ELITE_PVP_REQUIREMENT, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
@@ -5279,7 +5279,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
-					--	i(142380),	-- Dutiful Gruntling
+					--	i(142380),	-- Dutiful Gruntling (PET!)
 					--	i(139776),	-- Horde Fanatic
 						un(ELITE_PVP_REQUIREMENT, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]
 						un(ELITE_PVP_REQUIREMENT, i(147357)),	-- Cruel Gladiator's Cloak [Elite Rating]

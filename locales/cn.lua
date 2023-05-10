@@ -3954,6 +3954,7 @@ for key, value in pairs({
 	[398793] = "浸透熔岩的暗影水晶",	-- Lava-Drenched Shadow Crystal
 	[398794] = "闪光的溶水宝珠",	-- Shimmering Aqueous Orb
 	[398796] = "共鸣的奥术水晶",	-- Resonating Arcane Crystal
+	[398810] = "忠诚的奖赏",	-- Fealty's Reward
 	[398814] = "熔火宝藏",	-- Molten Hoard
 	[398815] = "夺得的货物",	-- Secured Shipment
 	[401236] = "营养不良的样本",	-- Malnourished Specimen
@@ -3964,6 +3965,7 @@ for key, value in pairs({
 	[401299] = "破损的以物易物巨石",	-- Broken Barter Boulder
 	[401828] = "纳·克斯寇圣物匣",	-- Nal ks'kol Reliquary
 	[401839] = "沉睡者的奖赏",	-- Dreamer's Bounty
+	[401844] = "臭垃圾堆",	-- Smelly Trash Pile
 	[402627] = "古旧的窑炉",	-- Well-Worn Kiln
 	[402632] = "硫磺救生环",	-- Brimstone Rescue Ring
 	[402634] = "扎卡利长老之矛",	-- Zaqali Elder Spear

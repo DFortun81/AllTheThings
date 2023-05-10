@@ -15,14 +15,13 @@ local Stack = {};
 local StackParams = {};
 -- Tracks whether the Stack has already been requested to begin running
 local RunningStack;
--- Function that begins a once-per-frame pass of the StackCo to run all Functions in the Stack
-local RunStack;
+-- Function that queues RunStack only once regardless of call-count within one frame
+local QueueStack;
 -- A static coroutine which can be invoked to reverse-sequentially process all Functions within the Stack,
 -- passing the corresponding Stack param to each called Function.
 -- Any Functions which do not return a status will be removed
 local StackCo = coroutine.create(function()
 	while true do
-		RunningStack = nil;
 		-- app.PrintDebug("StackCo:Call",#Stack)
 		for i=#Stack,1,-1 do
 			-- app.PrintDebug("StackCo:Run",i,Stack[i],StackParams[i])
@@ -35,26 +34,32 @@ local StackCo = coroutine.create(function()
 		-- app.PrintDebug("StackCo:Done")
 		-- Re-call StackCo if anything remains in the Stack
 		if #Stack > 0 then
-			-- app.PrintDebug("StackCo:RunStack",#Stack)
-			C_Timer_After(0, RunStack);
+			-- app.PrintDebug("StackCo:QueueStack",#Stack)
+			QueueStack();
 		end
 		-- after processing the Stack, yield this coroutine
 		-- app.PrintDebug("StackCo:Yield")
 		coroutine.yield();
 	end
 end);
-RunStack = function()
-	-- app.PrintDebug("RunStack",RunningStack and "REPEAT" or "FIRST")
+-- Function that begins a once-per-frame pass of the StackCo to run all Functions in the Stack
+local function RunStack()
+	-- app.PrintDebug("RunStackStatus:",coroutine.status(StackCo))
+	RunningStack = nil;
+	coroutine.resume(StackCo);
+end
+QueueStack = function()
+	-- app.PrintDebug("QueueStackStatus:",RunningStack and "REPEAT" or "FIRST",coroutine.status(StackCo))
 	if RunningStack then return; end
 	RunningStack = true;
-	coroutine.resume(StackCo);
+	C_Timer_After(0, RunStack);
 end
 -- Accepts a param and Function which will execute on the following frame using the provided param
 local function Push(param, name, func)
 	-- app.PrintDebug("Push",name,func,param)
 	tinsert(Stack, func);
-	tinsert(StackParams, param);
-	C_Timer_After(0, RunStack);
+	StackParams[#Stack] = param;
+	QueueStack();
 end
 app.Push = Push;
 

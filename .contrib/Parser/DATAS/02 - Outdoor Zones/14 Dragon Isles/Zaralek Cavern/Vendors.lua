@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				-- TODO: ["coord"] = { 0, 0, ZARALEK_CAVERN },
 				["g"] = {
 					i(205052, {	-- Miloh (PET!)
-						{ "i", 163036, 2500 },	-- 2500x Polished Pet Charm
+						["cost"] = { { "i", 163036, 2500 } },	-- 2500x Polished Pet Charm
 					}),
 				},
 			}),
@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204790),	-- Strong Sniffin' Soup Niffen
 				},
 			}),
-			n(204860, {  -- Lyssa
+			n(204860, {	-- Lyssa
 				["coord"] = { 56.8, 56.4, ZARALEK_CAVERN },
 				["g"] = {
 					i(204728),	-- Friendship Censer

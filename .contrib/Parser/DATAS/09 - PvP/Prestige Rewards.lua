@@ -95,8 +95,8 @@ root(ROOTS.PVP, pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- P
 		--]]
 		}),
 		ach(11470, {	-- Slayin' to Seven [7]
-			i(142379),	-- Dutiful Squire
-			i(142380),	-- Dutiful Gruntling
+			i(142379),	-- Dutiful Squire (PET!)
+			i(142380),	-- Dutiful Gruntling (PET!)
 		}),
 		ach(11471, {	-- Don't Hate, Grind to Eight [8]
 			i(134031),	-- Prestigious Pennant (TOY!)

@@ -9,8 +9,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				379,	-- Squirrel
 			}},
 			["g"] = {
-				pet(2386, {	-- Coastal Scuttler
-				}),
+				pet(2386),	-- Coastal Scuttler
 				pet(2383, {	-- Giant Woodworm
 					["crs"] = { 143042 },	-- Giant Woodworm
 				}),
@@ -20,8 +19,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				p(2377, {	-- Sandyback Crawler
 					["crs"] = { 143036 },	-- Sandyback Crawler
 				}),
-				pet(2381, {	-- Shack Crab
-				}),
+				pet(2381),	-- Shack Crab
 			},
 		})),
 	}),

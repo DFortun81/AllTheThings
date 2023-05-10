@@ -323,6 +323,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				}),
 				q(72456, {	-- Tomes Of Trust
 					["sourceQuest"] = 66419,	-- Allegiance To One
+					["sourceQuestNumRequired"] = 0,
 					["provider"] = { "n", 188344 },	-- Chydrass
 					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
 				}),

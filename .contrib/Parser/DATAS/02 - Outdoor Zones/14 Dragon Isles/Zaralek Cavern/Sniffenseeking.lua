@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							["_quests"] = { 75390 },
 						}),
 						crit(3, {	-- Flapping and Screaming
-							-- TODO: ["_quests"] = { 76027 },
+							["_quests"] = { 76027 },
 						}),
 						crit(4, {	-- Scratch and Sniff
 							["_quests"] = { 75234 },
@@ -86,28 +86,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						crit(1, {	-- Liquid Art
 							-- TODO: ["_quests"] = { 75765 },
 						}),
-						crit(2, {	-- ???
+						crit(2, {	-- 	Ruby in the Rough
 							-- TODO: ["_quests"] = { 75766 },
 						}),
-						crit(3, {	-- ???
+						crit(3, {	-- Good Time Boy
 							-- TODO: ["_quests"] = { 75767 },
 						}),
-						crit(4, {	-- ???
+						crit(4, {	-- Lucky Ducky
 							-- TODO: ["_quests"] = { 75768 },
 						}),
-						crit(5, {	-- ???
-							-- TODO: ["_quests"] = { 75769 },
+						crit(5, {	-- Drawing a Blank
+							["_quests"] = { 75769 },
 						}),
-						crit(6, {	-- ???
-							-- TODO: ["_quests"] = { 75770 },
+						crit(6, {	-- 	A Glass of Bubbly
+							["_quests"] = { 75770 },
 						}),
-						crit(7, {	-- ???
+						crit(7, {	-- Incense Replay
 							-- TODO: ["_quests"] = { 75771 },
 						}),
-						crit(8, {	-- ???
-							-- TODO: ["_quests"] = { 75772 },
+						crit(8, {	-- Flask Manage
+							["_quests"] = { 75772 },
 						}),
-						crit(9, {	-- ???
+						crit(9, {	-- Little Blank Book
 							-- TODO: ["_quests"] = { 75773 },
 						}),
 					}),
@@ -181,8 +181,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205990),	-- Fierce Key
 						},
 					}),
+					q(76027, {	-- Flapping and Screaming
+						["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },
+						["g"] = {
+							i(205969),	-- Glowing Key
+						},
+					}),
 				}),
 				n(QUESTS, {
+					-- Proof of Myrrit --
 					q(74876, {	-- The Buddy System
 						["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 						["provider"] = { "n", 201426 },	-- Myrrit
@@ -223,6 +230,90 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205941),  -- Spit-covered Key
 						},
 					}),
+					-- Sniffen Sage --
+					q(75772, {	-- Flask Manage
+						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
+						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during Living Statue (quest:76014).",
+						["provider"] = { "i", 205912 },	-- Leather-Wrapped Flask
+						["coord"] = { 58.5, 56.4, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
+					q(75770, {	-- A Glass of Bubbly
+						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
+						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during Sneek and Sniff (quest:75517).",
+						["provider"] = { "i", 205910 },	-- Bubbling Elixir
+						["coord"] = { 56.7, 52.9, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
+					q(75769, {	-- Drawing a Blank
+						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
+						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during Weight in Gold (quest:75996).",
+						["provider"] = { "i", 205909 },	-- Stretched Canvas
+						["coord"] = { 58.5, 51.5, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
+					--[[
+					q(75765, {	-- Liquid Art
+						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
+						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["provider"] = { "i", 205366 },	-- Dripping Clay Pot
+						["coord"] = { x, y, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
+					q(75766, {	-- Ruby in the Rough
+						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
+						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["provider"] = { "i", 205900 },	-- Shimmering Draconic Gem
+						["coord"] = { x, y, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
+					q(75767, {	-- Good Time Boy
+						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
+						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["provider"] = { "i", 205907 },	-- Soaked Totem
+						["coord"] = { x, y, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
+					q(75768, {	-- Lucky Ducky
+						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
+						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["provider"] = { "i", 205906 },	-- Feathered Friend
+						["coord"] = { x, y, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
+					q(75771, {	-- Incense Replay
+						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
+						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["provider"] = { "i", 205911 },	-- Mysterious Incense
+						["coord"] = { x, y, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
+					q(75773, {	-- Little Blank Book
+						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
+						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["provider"] = { "i", 205913 },	-- Blank Notebook
+						["coord"] = { x, y, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}), ]]--
+					
 				}),
 				n(REWARDS, {
 					i(205288),	-- Buried Niffen Collection (Frostfire)
@@ -307,5 +398,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 
 		q(75917),	-- Started Liars of Spirit (76081) /Unflagged after map was completed
 		q(75992),	-- Completed Liars of Spirit (76081)
+
+		q(75893),	-- Started Flapping and Screaming (76027) /Unflagged after map was completed
+		q(76011),	-- Completed Flapping and Screaming (76027)
 	}),
 }));

@@ -88,6 +88,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 205127 },	-- Newsy
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
+				-- RENOWN 10 --
+			q(75727, {	-- The Smelliest Tabard
+				["minReputation"] = { 2564, 10 },	-- Loamm Niffen Renown 10
+				["provider"] = { "n", 205127 },	-- Newsy
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
+				["g"] = {
+					i(205286),	-- Loamm Niffen Tabard
+				}
+			}),
 
 				-- Unsorted (which renown level?) --
 			q(75721, {

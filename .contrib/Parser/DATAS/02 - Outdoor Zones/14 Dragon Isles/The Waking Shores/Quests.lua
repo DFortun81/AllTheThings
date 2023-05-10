@@ -1071,6 +1071,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			}),
 
 				-- MISC --
+			q(70446, {	-- A Personal History
+				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
+				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
+				["classes"] = { EVOKER },
+			}),
+			q(70159, {	-- A Taste of Home
+				["provider"] = { "n", 194462 },	 -- Talon Scaralesh
+				["coord"] = { 47.1, 82.9, THE_WAKING_SHORES },
+				["classes"] = { EVOKER },
+				["races"] = HORDE_ONLY,
+			}),
 			q(70164, {	-- A Tinker's Chance
 				["provider"] = { "n", 194136 },	-- Eralshek
 				["coord"] = { 65.4, 58.5, THE_WAKING_SHORES },
@@ -1175,6 +1186,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["g"] = {
 					i(194384),	-- Elemental Binding Ring
 				},
+			}),
+			q(70742, {	-- Runs in the Family
+				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
+				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
+				["classes"] = { EVOKER },
 			}),
 			q(70414, {	-- Shaky Grounds
 				["provider"] = { "n", 195234 },	-- Earthmender Govrum

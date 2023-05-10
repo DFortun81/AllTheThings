@@ -474,6 +474,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 			d(NORMAL_RAID, {
+				n(QUESTS, {
+					q(76083, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (N)
+						["provider"] = { "n", 201574 },	-- Wrathion
+						["g"] = {
+							i(205994),	-- Tome of the Earth-Warder (N)
+						},
+					}),
+				}),
 				n(ZONE_DROPS, {
 					i(204410),	-- Bands of Purified Purpose
 					i(204411),	-- Crucible Curator's Wingspan
@@ -747,6 +755,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 			d(HEROIC_RAID, {
+				n(QUESTS, {
+					q(76085, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
+						["provider"] = { "n", 201574 },	-- Wrathion
+						-- ["g"] = {
+						-- 	i(),	-- Tome of the Earth-Warder (H)
+						-- },
+					}),
+				}),
 				n(ZONE_DROPS, {
 					i(204410),	-- Bands of Purified Purpose
 					i(204411),	-- Crucible Curator's Wingspan
@@ -1012,6 +1028,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 			d(MYTHIC_RAID, {
+				-- n(QUESTS, {
+				-- 	q(, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (M)
+				-- 		["provider"] = { "n", 201574 },	-- Wrathion
+				-- 		["g"] = {
+				-- 			i(),	-- Tome of the Earth-Warder (M)
+				-- 		},
+				-- 	}),
+				-- }),
 				n(ZONE_DROPS, {
 					i(204413),	-- Bands of Purified Purpose
 					i(204412),	-- Crucible Curator's Wingspan
@@ -1291,5 +1315,40 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 		},
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+	inst(1208, {	-- Aberrus, the Shadowed Crucible
+		-- Normal
+		q(75732),	-- Kazzara
+		q(75733),	-- The Amalgamation Chamber
+		q(75734),	-- The Forgotten Experiments
+		q(75735),	-- Assault of the Zaqali
+		q(75736),	-- Rashok
+		q(75737),	-- The Vigilant Steward, Zskarn
+		q(75738),	-- Magmorax
+		q(75739),	-- Echo of Neltharion
+		-- q(),	-- Scalecommander Sarkareth
+		-- Heroic
+		-- q(none),	-- Kazzara
+		-- q(none),	-- The Amalgamation Chamber
+		-- q(none),	-- The Forgotten Experiments
+		-- q(none),	-- Assault of the Zaqali
+		-- q(none),	-- Rashok
+		-- q(none),	-- The Vigilant Steward, Zskarn
+		-- q(),	-- Magmorax
+		-- q(),	-- Echo of Neltharion
+		-- q(),	-- Scalecommander Sarkareth
+		-- Mythic
+		-- q(),	-- Kazzara
+		-- q(),	-- The Amalgamation Chamber
+		-- q(),	-- The Forgotten Experiments
+		-- q(),	-- Assault of the Zaqali
+		-- q(),	-- Rashok
+		-- q(),	-- The Vigilant Steward, Zskarn
+		-- q(),	-- Magmorax
+		-- q(),	-- Echo of Neltharion
+		-- q(),	-- Scalecommander Sarkareth
 	}),
 })));

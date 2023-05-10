@@ -72,7 +72,7 @@ _.Zones =
 				n(115741, {	-- Orphaned Bloodgazer
 					["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling! Do one quest each day for a mount!|r",
 					["groups"] = {
-						p(1977, {	-- Bloodgazer Hatchling
+						pet(1977, {	-- Bloodgazer Hatchling (PET!)
 							q(44998, {	-- Allies in Azsuna
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 44996,	-- Hunting Lesson: Erudite Manafiend

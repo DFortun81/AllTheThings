@@ -652,7 +652,7 @@ root(ROOTS.PetBattles, petbattle({
 			["provider"] = { "n", 66422 },	-- Cassandra Kaboom
 			["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
 			["races"] = HORDE_ONLY,
-			["sourceQuests"] = { 31870 },	--  Cassandra Kaboom
+			["sourceQuests"] = { 31870 },	-- Cassandra Kaboom
 			["altQuests"] = { 31917 },	-- A Tamer's Homecoming (A)
 		}),
 		-- Grand Master
@@ -944,8 +944,8 @@ root(ROOTS.PetBattles, petbattle({
 			["coord"] = { 63.6, 35.8, NORTHERN_BARRENS },
 			["groups"] = {
 				i(142447, {	-- Torn Sack of Pet Supplies
-					i(142448),	-- Albino Buzzard
-					i(89587),	-- Porcupette
+					i(142448),	-- Albino Buzzard (PET!)
+					i(89587),	-- Porcupette (PET!)
 				}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
 			},
 		}),
