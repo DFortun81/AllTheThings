@@ -2217,11 +2217,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 36.5, 62.5, VALDRAKKEN },
 					["timeline"] = { ADDED_10_1_0 }
 				}),
-				--q(, {	--
-				--	["provider"] = { "n", 203516 },	-- Kayann
-				--	["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				--	["timeline"] = { ADDED_10_1_0 }
-				--}),
+				q(75368, {	-- Stones and Scales
+					["provider"] = { "n", 203516 },	-- Kayann
+					["coord"] = { 36.5, 62.5, VALDRAKKEN },
+					["timeline"] = { ADDED_10_1_0 }
+				}),
 			})),
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",

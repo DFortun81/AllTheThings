@@ -460,7 +460,6 @@ root(ROOTS.Unsorted, {
 				i(205902),	-- Deepflayer Claw
 				i(205906),	-- Feathered Friend
 				i(205907),	-- Soaked Totem
-				i(205909),	-- Stretched Canvas
 				i(205911),	-- Mysterious Incense
 				i(205913),	-- Blank Notebook
 				i(205994),	-- Tome of the Earth-Warder
