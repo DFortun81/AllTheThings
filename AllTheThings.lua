@@ -14663,56 +14663,68 @@ end	-- Filtering
 do
 local function SetGroupVisibility(parent, group)
 	-- if app.DEBUG_PRINT then print("SetGroupVisibility",group.key,group[group.key]) end
-	local forceShowParent;
+	local forceShowParent, visible;
 	-- If this group is forced to be shown due to contained groups being shown
 	if group.forceShow then
-		group.visible = true;
+		visible = true;
 		group.forceShow = nil;
 		-- Continue the forceShow visibility outward
 		forceShowParent = true;
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.forceShow",group.progress,group.total,group.visible) end
+		-- if app.DEBUG_PRINT then print("SetGroupVisibility.forceShow",group.progress,group.total,visible) end
 	-- If this group contains Things, show based on visibility filter
 	elseif group.total > 0 then
-		group.visible = group.progress < group.total or app.GroupVisibilityFilter(group);
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.total",group.progress,group.total,group.visible) end
+		visible = group.progress < group.total or app.GroupVisibilityFilter(group);
+		-- if app.DEBUG_PRINT then print("SetGroupVisibility.total",group.progress,group.total,visible) end
 		-- The group can still be trackable even if it isn't visible due to the total
-		if not group.visible and app.ShowTrackableThings(group) then
-			group.visible = not group.saved or app.GroupVisibilityFilter(group);
-			forceShowParent = group.visible;
+		if not visible and app.ShowTrackableThings(group) then
+			visible = not group.saved or app.GroupVisibilityFilter(group);
+			forceShowParent = visible;
 		end
 	-- If this group is trackable, then we should show it.
 	elseif app.ShowTrackableThings(group) then
-		group.visible = not group.saved or app.GroupVisibilityFilter(group);
-		forceShowParent = group.visible;
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.trackable",group.progress,group.total,group.visible) end
+		visible = not group.saved or app.GroupVisibilityFilter(group);
+		forceShowParent = visible;
+		-- if app.DEBUG_PRINT then print("SetGroupVisibility.trackable",group.progress,group.total,visible) end
 	else
-		group.visible = app.DefaultGroupFilter();
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.default",group.progress,group.total,group.visible) end
+		visible = app.DefaultGroupFilter();
+		-- if app.DEBUG_PRINT then print("SetGroupVisibility.default",group.progress,group.total,visible) end
+	end
+	-- source ignored group which is determined to be visible should ensure the parent is also visible
+	if not forceShowParent and visible and group.sourceIgnored then
+		forceShowParent = true;
+		-- app.PrintDebug("SGV:ForceParent",parent.text,"via Source Ignored",group.text)
 	end
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
 	end
+	group.visible = visible;
 end
 local function SetThingVisibility(parent, group)
 	-- local debug = group.criteriaID == 2204;
 	-- if debug then print("TV",group.key,group[group.key]) end
-	local forceShowParent;
+	local forceShowParent, visible;
 	if group.total > 0 then
 		-- If we've collected the item, use the "Show Collected Items" filter.
-		group.visible = group.progress < group.total or app.CollectedItemVisibilityFilter(group);
-		-- if debug then print("TV.total",group.progress,group.total,group.visible) end
+		visible = group.progress < group.total or app.CollectedItemVisibilityFilter(group);
+		-- if debug then print("TV.total",group.progress,group.total,visible) end
 	elseif app.ShowTrackableThings(group) then
 		-- If this group is trackable, then we should show it.
-		group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
-		forceShowParent = group.visible;
-		-- if debug then print("TV.trackable",group.progress,group.total,group.visible) end
+		visible = not group.saved or app.CollectedItemVisibilityFilter(group);
+		forceShowParent = visible;
+		-- if debug then print("TV.trackable",group.progress,group.total,visible) end
 	else
-		group.visible = app.DefaultThingFilter();
-		-- if debug then print("TV.default",group.progress,group.total,group.visible) end
+		visible = app.DefaultThingFilter();
+		-- if debug then print("TV.default",group.progress,group.total,visible) end
+	end
+	-- source ignored group which is determined to be visible should ensure the parent is also visible
+	if not forceShowParent and visible and group.sourceIgnored then
+		forceShowParent = true;
+		-- app.PrintDebug("STV:ForceParent",parent.text,"via Source Ignored",group.text)
 	end
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
 	end
+	group.visible = visible;
 end
 local UpdateGroups;
 local function UpdateGroup(parent, group)
@@ -14799,12 +14811,7 @@ local function UpdateGroup(parent, group)
 		if not group.sourceIgnored then
 			parent.total = (parent.total or 0) + group.total;
 			parent.progress = (parent.progress or 0) + group.progress;
-		else
-			-- source ignored group which is determined to be visible should ensure the parent is also visible
-			if group.visible then
-				parent.forceShow = true;
-				-- app.PrintDebug("Force Show Parent",parent.text,"via incomplete Source Ignored",group.text)
-			end
+		-- else
 			-- print("Ignoring progress/total",group.progress,"/",group.total,"for group",group.text)
 		end
 	end
@@ -14831,7 +14838,7 @@ UpdateGroups = function(parent, g)
 	end
 end
 app.UpdateGroups = UpdateGroups;
--- Adjusts the progress/total of the group's parent chain
+-- Adjusts the progress/total of the group's parent chain, and refreshes visibility based on the new values
 local function AdjustParentProgress(group, progChange, totalChange)
 	-- rawget, .parent will default to sourceParent in some cases
 	local parent = group and not group.sourceIgnored and rawget(group, "parent");
