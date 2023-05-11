@@ -129,7 +129,7 @@ _.Instances = { tier(MOP_TIER, {
 						})),
 						cr(62442, e(742, {	-- Tsulong
 							i(167051,	{	-- Azure Windseeker (PET!)
-								["timeline"] = { "added 8.1.5.29701" },
+								["timeline"] = { ADDED_8_1_5 },
 							}),
 							i(86879),	-- Gao-Rei, Staff of the Legendary Protector
 							i(86886),	-- Loshan, Terror Incarnate
@@ -291,7 +291,7 @@ _.Instances = { tier(MOP_TIER, {
 					cr(62442, e(742, {	-- Tsulong
 						ach(6933),	-- Who's Got Two Green Thumbs
 						i(167051,	{	-- Azure Windseeker (PET!)
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 						i(86321),	-- Gao-Rei, Staff of the Legendary Protector
 						i(86328),	-- Loshan, Terror Incarnate
@@ -444,7 +444,7 @@ _.Instances = { tier(MOP_TIER, {
 					cr(62442, e(742, {	-- Tsulong
 						ach(6732),	-- Heroic: Tsulong
 						i(167051,	{	-- Azure Windseeker (PET!)
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 						i(87156),	-- Gao-Rei, Staff of the Legendary Protector
 						i(87164),	-- Loshan, Terror Incarnate
