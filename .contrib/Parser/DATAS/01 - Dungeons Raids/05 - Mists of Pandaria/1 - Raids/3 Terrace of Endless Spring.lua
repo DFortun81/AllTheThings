@@ -128,7 +128,9 @@ _.Instances = { tier(MOP_TIER, {
 							i(86873),	-- Watersoul Signet
 						})),
 						cr(62442, e(742, {	-- Tsulong
-							i(167051),	-- Azure Windseeker (PET!)
+							i(167051,	{	-- Azure Windseeker (PET!)
+								["timeline"] = { "added 8.1.5.29701" },
+							}),
 							i(86879),	-- Gao-Rei, Staff of the Legendary Protector
 							i(86886),	-- Loshan, Terror Incarnate
 							i(89982),	-- Shoulderpads of Twisted Fate
@@ -288,7 +290,9 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62442, e(742, {	-- Tsulong
 						ach(6933),	-- Who's Got Two Green Thumbs
-						i(167051),	-- Azure Windseeker (PET!)
+						i(167051,	{	-- Azure Windseeker (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(86321),	-- Gao-Rei, Staff of the Legendary Protector
 						i(86328),	-- Loshan, Terror Incarnate
 						i(89883),	-- Shoulderpads of Twisted Fate
@@ -439,7 +443,9 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62442, e(742, {	-- Tsulong
 						ach(6732),	-- Heroic: Tsulong
-						i(167051),	-- Azure Windseeker (PET!)
+						i(167051,	{	-- Azure Windseeker (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(87156),	-- Gao-Rei, Staff of the Legendary Protector
 						i(87164),	-- Loshan, Terror Incarnate
 						i(89947),	-- Shoulderpads of Twisted Fate

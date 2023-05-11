@@ -745,8 +745,8 @@ i(156851, 2163);	-- Silithid Mini-Tank
 i(153541, 2143);	-- Tottle
 i(156566, 2157);	-- Dart
 i(158077, 2165);	-- Francois
-i(0, 2184);			-- Whomper
-i(0, 2185);			-- Cap'n Crackers
+i(160587, 2184);	-- Whomper
+i(160588, 2185);	-- Cap'n Crackers
 i(160702, 2186);	-- Spawn of Merektha
 i(160704, 2187);	-- Filthy Slime
 i(158464, 2188);	-- Poda

@@ -127,7 +127,9 @@ _.Instances = { tier(MOP_TIER, {
 								59915,	-- Jasper Guardian
 							},
 							["groups"] = {
-								i(167047),	-- Stoneclaw (PET!)
+								i(167047,	{	-- Stoneclaw (PET!)
+									["timeline"] = { ADDED_8_1_5 },
+								}),
 								i(86741),	-- Dagger of the Seven Stars
 								i(86745),	-- Sixteen-Fanged Crown
 								i(86739),	-- Beads of the Mogu'shi
@@ -166,7 +168,9 @@ _.Instances = { tier(MOP_TIER, {
 						e(682, {	-- Gara'jal the Spiritbinder
 							["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
 							["groups"] = {
-								i(167048),	-- Wayward Spirit (PET!)
+								i(167048,	{	-- Wayward Spirit (PET!)
+									["timeline"] = { ADDED_8_1_5 },
+								}),
 								i(86762),	-- Gara'kal, Fist of the Spiritbinder
 								i(86764),	-- Eye of the Ancient Spirit
 								i(86759),	-- Soulgrasp Choker
@@ -211,7 +215,9 @@ _.Instances = { tier(MOP_TIER, {
 						cr(60410, e(726, {	-- Elegon
 							["description"] = "Loot from the Elegon chest is NOT tradeable to others in group.",
 							["g"] = {
-								i(167049),	-- Comet (PET!)
+								i(167049,	{	-- Comet (PET!)
+									["timeline"] = { "added 8.1.5" },
+								}),
 								i(86799),	-- Starshatter
 								i(86789),	-- Elegion, the Fanged Crescent
 								i(86796),	-- Torch of the Celestial Spark
@@ -229,7 +235,9 @@ _.Instances = { tier(MOP_TIER, {
 							},
 						})),
 						cr(60400, e(677, {	-- Will of the Emperor (60399)
-							i(167050),	-- Baoh-Xi (PET!)
+							i(167050,	{	-- Baoh-Xi (PET!)
+								["timeline"] = { "added 8.1.5.29701" },
+							}),
 							i(138804),	-- Illusion: Colossus
 							i(86806),	-- Tihan, Scepter of the Sleeping Emperor
 							i(86801),	-- Fang Kung, Spark of Titans
@@ -292,7 +300,9 @@ _.Instances = { tier(MOP_TIER, {
 						},
 						["groups"] = {
 							ach(6823),	-- Must Love Dogs
-							i(167047),	-- Stoneclaw (PET!)
+							i(167047,	{	-- Stoneclaw (PET!)
+								["timeline"] = { ADDED_8_1_5 },
+							}),
 							i(85924),	-- Dagger of the Seven Stars
 							i(85976),	-- Sixteen-Fanged Crown
 							i(85922),	-- Beads of the Mogu'shi
@@ -339,7 +349,9 @@ _.Instances = { tier(MOP_TIER, {
 						["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
 						["g"] = {
 							ach(7056),    -- Sorry, Were You Looking for This?
-							i(167048),	-- Wayward Spirit (PET!)
+							i(167048,	{	-- Wayward Spirit (PET!)
+								["timeline"] = { ADDED_8_1_5 },
+							}),
 							i(85994),	-- Gara'kal, Fist of the Spiritbinder
 							i(85996),	-- Eye of the Ancient Spirit
 							i(85991),	-- Soulgrasp Choker
@@ -385,7 +397,9 @@ _.Instances = { tier(MOP_TIER, {
 						["g"] = {
 							ach(6686),	-- Straight Six
 							i(87777),	-- Astral Cloud Serpent (MOUNT!)
-							i(167049),	-- Comet (PET!)
+							i(167049,	{	-- Comet (PET!)
+								["timeline"] = { "added 8.1.5" },
+							}),
 							i(86140),	-- Starshatter
 							i(86130),	-- Elegion, the Fanged Crescent
 							i(86137),	-- Torch of the Celestial Spark
@@ -409,7 +423,9 @@ _.Instances = { tier(MOP_TIER, {
 						},
 						["groups"] = {
 							ach(6455),    -- Show Me Your Moves!
-							i(167050),	-- Baoh-Xi (PET!)
+							i(167050,	{	-- Baoh-Xi (PET!)
+								["timeline"] = { "added 8.1.5.29701" },
+							}),
 							i(138804),	-- Illusion: Colossus
 							i(86148),	-- Tihan, Scepter of the Sleeping Emperor
 							i(86142),	-- Fang Kung, Spark of Titans
@@ -464,7 +480,9 @@ _.Instances = { tier(MOP_TIER, {
 						},
 						["g"] = {
 							ach(6719),	-- Heroic: Stone Guard
-							i(167047),	-- Stoneclaw (PET!)
+							i(167047,	{	-- Stoneclaw (PET!)
+								["timeline"] = { ADDED_8_1_5 },
+							}),
 							i(87012),	-- Dagger of the Seven Stars
 							i(87020),	-- Sixteen-Fanged Crown
 							i(87016),	-- Beads of the Mogu'shi
@@ -505,7 +523,9 @@ _.Instances = { tier(MOP_TIER, {
 						["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
 						["g"] = {
 							ach(6721),    -- Heroic: Gara'jal the Spiritbinder
-							i(167048),	-- Wayward Spirit (PET!)
+							i(167048,	{	-- Wayward Spirit (PET!)
+								["timeline"] = { ADDED_8_1_5 },
+							}),
 							i(87032),	-- Gara'kal, Fist of the Spiritbinder
 							i(87039),	-- Eye of the Ancient Spirit
 							i(87036),	-- Soulgrasp Choker
@@ -551,7 +571,9 @@ _.Instances = { tier(MOP_TIER, {
 						["g"] = {
 							ach(6723),	-- Heroic: Elegon
 							i(87777),	-- Astral Cloud Serpent (MOUNT!)
-							i(167049),	-- Comet (PET!)
+							i(167049,	{	-- Comet (PET!)
+								["timeline"] = { "added 8.1.5" },
+							}),
 							i(87061),	-- Starshatter
 							i(87062),	-- Elegion, the Fanged Crescent
 							i(87066),	-- Torch of the Celestial Spark
@@ -579,7 +601,9 @@ _.Instances = { tier(MOP_TIER, {
 							}),
 							ach(6675),	-- Heroic: Will of the Emperor Guild Run
 							un(REMOVED_FROM_GAME, ach(6680)),	-- Realm First! Will of the Emperor
-							i(167050),	-- Baoh-Xi (PET!)
+							i(167050,	{	-- Baoh-Xi (PET!)
+								["timeline"] = { "added 8.1.5.29701" },
+							}),
 							i(138804),	-- Illusion: Colossus
 							i(87074),	-- Tihan, Scepter of the Sleeping Emperor
 							i(87069),	-- Fang Kung, Spark of Titans

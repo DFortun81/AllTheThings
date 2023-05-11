@@ -121,7 +121,9 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					header(HEADERS.Achievement, 6718, {	-- The Dread Approach
 						cr(62980, e(745, {	-- Imperial Vizier Zor'lok
-							i(167058),	-- Kor'thik Swarmling (PET!)
+							i(167058,	{	-- Kor'thik Swarmling (PET!)
+								["timeline"] = { "added 8.1.5.29701" },
+							}),
 							i(89952),	-- Pheromone-Coated Choker
 							i(86812),	-- Hisek's Chrysanthemum Cape
 							i(86816),	-- Chestplate of the Forbidden Tower
@@ -138,7 +140,9 @@ _.Instances = { tier(MOP_TIER, {
 							i(86813),	-- Vizier's Ruby Signet
 						})),
 						cr(62543, e(744, {  -- Blade Lord Ta'yak
-							i(167053),	-- Amberglow Stinger (PET!)
+							i(167053,	{	-- Amberglow Stinger (PET!)
+								["timeline"] = { "added 8.1.5.29701" },
+							}),
 							i(86829),	-- Tornado-Summoning Censer
 							i(89957),	-- Hood of Stilled Winds
 							i(86824),	-- Choker of the Unleashed Storm
@@ -155,7 +159,9 @@ _.Instances = { tier(MOP_TIER, {
 							i(86820),	-- Ring of the Bladed Tempest
 						})),
 						cr(62164, e(713, {	-- Garalon
-							i(167054),	-- Spawn of Garalon (PET!)
+							i(167054,	{	-- Spawn of Garalon (PET!)
+								["timeline"] = { "added 8.1.5.29701" },
+							}),
 							i(86832),	-- Garalon's Hollow Skull
 							i(86839),	-- Xaril's Hood of Intoxicating Vapors
 							i(86835),	-- Necklace of Congealed Weaknesses
@@ -188,7 +194,9 @@ _.Instances = { tier(MOP_TIER, {
 							i(86851),	-- Painful Thorned Ring
 						})),
 						cr(62511, e(737, {	-- Amber-Shaper Un'sok
-							i(167055),	-- Living Amber (PET!)
+							i(167055,	{	-- Living Amber (PET!)
+								["timeline"] = { "added 8.1.5.29701" },
+							}),
 							i(89268, {	-- Leggings of the Shadowy Conqueror
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 							}),
@@ -203,7 +211,9 @@ _.Instances = { tier(MOP_TIER, {
 							i(86858),	-- Seal of the Profane
 						})),
 						cr(62837, e(743, {	-- Grand Empress Shek'zeer
-							i(167056),	-- Ravenous Prideling (PET!)
+							i(167056,	{	-- Ravenous Prideling (PET!)
+								["timeline"] = { "added 8.1.5.29701" },
+							}),
 							i(89265, {	-- Chest of the Shadowy Conqueror
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 							}),
@@ -263,7 +273,9 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 						ach(6937),	-- Overzealous
-						i(167058),	-- Kor'thik Swarmling (PET!)
+						i(167058,	{	-- Kor'thik Swarmling (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(89827),	-- Pheromone-Coated Choker
 						i(86154),	-- Hisek's Chrysanthemum Cape
 						i(86158),	-- Chestplate of the Forbidden Tower
@@ -281,7 +293,9 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62543, e(744, {  -- Blade Lord Ta'yak
 						ach(6936),	-- Candle in the Wind
-						i(167053),	-- Amberglow Stinger (PET!)
+						i(167053,	{	-- Amberglow Stinger (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(86171),	-- Tornado-Summoning Censer
 						i(89831),	-- Hood of Stilled Winds
 						i(86166),	-- Choker of the Unleashed Storm
@@ -299,7 +313,9 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62164, e(713, {	-- Garalon
 						ach(6553),	-- Like an Arrow to the Face
-						i(167054),	-- Spawn of Garalon (PET!)
+						i(167054,	{	-- Spawn of Garalon (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(86174),	-- Garlon's Hollow Skull
 						i(86181),	-- Xaril's Hood of Intoxicating Vapors
 						i(86177),	-- Necklace of Congealed Weaknesses
@@ -332,7 +348,9 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62511, e(737, {	-- Amber-Shaper Un'sok
 						ach(6518),	-- I Heard You Like Amber...
-						i(167055),	-- Living Amber (PET!)
+						i(167055,	{	-- Living Amber (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(89243, {	-- Leggings of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 						}),
@@ -354,7 +372,9 @@ _.Instances = { tier(MOP_TIER, {
 							crit(2, {	-- Defeat Grand Empress Shek'zeer
 							}),
 						}),
-						i(167056),	-- Ravenous Prideling (PET!)
+						i(167056,	{	-- Ravenous Prideling (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(89237, {	-- Chest of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 						}),
@@ -413,7 +433,9 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 						ach(6725),	-- Heroic: Imperial Vizier Zor'lok
-						i(167058),	-- Kor'thik Swarmling (PET!)
+						i(167058,	{	-- Kor'thik Swarmling (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(89917),	-- Pheromone-Coated Choker
 						i(86945),	-- Hisek's Chrysanthemum Cape
 						i(86952),	-- Chestplate of the Forbidden Tower
@@ -431,7 +453,9 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62543, e(744, {  -- Blade Lord Ta'yak
 						ach(6726),	-- Heroic: Blade Lord Ta'yak
-						i(167053),	-- Amberglow Stinger (PET!)
+						i(167053,	{	-- Amberglow Stinger (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(86960),	-- Tornado-Summoning Censer
 						i(89922),	-- Hood of Stilled Winds
 						i(86953),	-- Choker of the Unleashed Storm
@@ -449,7 +473,9 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62164, e(713, {	-- Garalon
 						ach(6727),	-- Heroic: Garalon
-						i(167054),	-- Spawn of Garalon (PET!)
+						i(167054,	{	-- Spawn of Garalon (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(86966),	-- Garalon's Hollow Skull
 						i(86970),	-- Xaril's Hood of Intoxicating Vapors
 						i(86967),	-- Necklace of Congealed Weaknesses
@@ -482,7 +508,9 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62511, e(737, {	-- Amber-Shaper Un'sok
 						ach(6729),	-- Heroic: Amber-Shaper Un'sok
-						i(167055),	-- Living Amber (PET!)
+						i(167055,	{	-- Living Amber (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(89253, {	-- Leggings of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 						}),
@@ -500,7 +528,9 @@ _.Instances = { tier(MOP_TIER, {
 						ach(6730),	-- Heroic: Grand Empress Shek'zeer
 						ach(6677),	-- Heroic: Grand Empress Shek'zeer Guild Run
 						un(REMOVED_FROM_GAME, ach(6679)),	-- Realm First! Grand Empress Shek'zeer
-						i(167056),	-- Ravenous Prideling (PET!)
+						i(167056,	{	-- Ravenous Prideling (PET!)
+							["timeline"] = { "added 8.1.5.29701" },
+						}),
 						i(89250, {	-- Chest of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 						}),
