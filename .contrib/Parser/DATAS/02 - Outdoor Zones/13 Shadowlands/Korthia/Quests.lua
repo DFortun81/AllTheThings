@@ -1012,32 +1012,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["minReputation"] = { 2472, 3 },	-- Tier 3
 			}),
 			q(63915, {	-- Drum of the Death Loa
-				["sourceQuests"] = { 64519 },	-- Lost Vaults
-				["sourceQuestNumRequired"] = 0,
 				["provider"] = { "i", 187204 },	-- Drum of the Death Loa
 				["coord"] = { 39.3, 52.4, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
+				["minReputation"] = { 2472, 3 },	-- Tier 3
 			}),
 			q(63917, {	-- Everliving Statuette
-				["sourceQuests"] = { 64519 },	-- Lost Vaults
-				["sourceQuestNumRequired"] = 0,
 				["provider"] = { "i", 187103 },	-- Everliving Statuette
 				["coord"] = { 39.3, 52.4, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
+				["minReputation"] = { 2472, 3 },	-- Tier 3
 			}),
 			q(63916, {	-- Sack of Strange Soil
-				["sourceQuests"] = { 64519 },	-- Lost Vaults
-				["sourceQuestNumRequired"] = 0,
 				["provider"] = { "i", 187205 },	-- Sack of Strange Soil
 				["coord"] = { 45.0, 35.5, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
+				["minReputation"] = { 2472, 3 },	-- Tier 3
 			}),
 			q(63918, {	-- Obelisk of Dark Tidings
-				["sourceQuests"] = { 64519 },	-- Lost Vaults
-				["sourceQuestNumRequired"] = 0,
 				["provider"] = { "i", 187104 },	-- Obelisk of Dark Tidings
 				["coord"] = { 45.0, 35.5, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
+				["minReputation"] = { 2472, 3 },	-- Tier 3
 			}),
 			q(64526, {	-- Mysterious Rifts
 				["sourceQuests"] = { 64519 },	-- Lost Vaults

@@ -164,14 +164,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			q(74389, {	-- Filming the Caldera
 				["sourceQuests"] = { 74908 },	-- New Adventures
-				["sourceQuestNumRequired"] = 0,
+				["sourceQuestNumRequired"] = 0,	-- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200566 },	-- Cataloger Daela
 				["coord"] = { 34.3, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			q(74118, {	-- Spelunking the Den
 				["sourceQuests"] = { 74908 },	-- New Adventures
-				["sourceQuestNumRequired"] = 0,
+				["sourceQuestNumRequired"] = 0, -- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200566 },	-- Cataloger Daela
 				["coord"] = { 34.3, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
@@ -186,14 +186,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			q(74119, {	-- Angler's Challenge
 				["sourceQuests"] = { 74909 },	-- New Catches
-				["sourceQuestNumRequired"] = 0,
+				["sourceQuestNumRequired"] = 0, -- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200562 },	-- Turik
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			q(74391, {	-- Harpooner's Challenge [Confirmed]
 				["sourceQuests"] = { 74909 },	-- New Catches
-				["sourceQuestNumRequired"] = 0,
+				["sourceQuestNumRequired"] = 0, -- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200562 },	-- Turik
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
@@ -205,14 +205,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			q(74390, {	-- Brutal Prey
 				["sourceQuests"] = { 74910 },	-- New Foes
-				["sourceQuestNumRequired"] = 0,
+				["sourceQuestNumRequired"] = 0, -- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200564 },	-- Storykeeper Ashekh
 				["coord"] = { 34.1, 59.9, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			q(74117, {	-- Rare Prey
 				["sourceQuests"] = { 74910 },	-- New Foes
-				["sourceQuestNumRequired"] = 0,
+				["sourceQuestNumRequired"] = 0, -- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200564 },	-- Storykeeper Ashekh
 				["coord"] = { 34.1, 59.9, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
@@ -224,21 +224,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			q(75261, {	-- Reach Center
 				["sourceQuests"] = { 74911 },	-- New Horizons
-				["sourceQuestNumRequired"] = 0,
+				["sourceQuestNumRequired"] = 0, -- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200563 },	-- Kraxxus
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			q(75263, {	-- Reach South
 				["sourceQuests"] = { 74911 },	-- New Horizons
-				["sourceQuestNumRequired"] = 0,
+				["sourceQuestNumRequired"] = 0, -- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200563 },	-- Kraxxus
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
 			q(75237, {	-- Reach West
 				["sourceQuests"] = { 74911 },	-- New Horizons
-				["sourceQuestNumRequired"] = 0,
+				["sourceQuestNumRequired"] = 0, -- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200563 },	-- Kraxxus
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
