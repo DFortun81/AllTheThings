@@ -182,7 +182,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 			}),
 			n(DROPS, {
 				i(205876, {	-- Highland Drake: Embodiment of the Hellforged (DM!)
-					["crs"] = { 201261 },	-- Kazzara, the Hellforged
+					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 				}),
 				i(204975, {	-- Formula: Enchant Weapon - Shadowflame Wreathe (RECIPE!)
 					["crs"] = { 201579 },	-- Magmorax
@@ -1028,14 +1028,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 			d(MYTHIC_RAID, {
-				-- n(QUESTS, {
-				-- 	q(, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (M)
-				-- 		["provider"] = { "n", 201574 },	-- Wrathion
-				-- 		["g"] = {
-				-- 			i(),	-- Tome of the Earth-Warder (M)
-				-- 		},
-				-- 	}),
-				-- }),
+				n(QUESTS, {
+					q(76086, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (M)
+						["provider"] = { "n", 201574 },	-- Wrathion
+						-- ["g"] = {
+						-- 	i(),	-- Tome of the Earth-Warder (M)
+						-- },
+					}),
+				}),
 				n(ZONE_DROPS, {
 					i(204413),	-- Bands of Purified Purpose
 					i(204412),	-- Crucible Curator's Wingspan
@@ -1331,15 +1331,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(75739),	-- Echo of Neltharion
 		q(75740),	-- Scalecommander Sarkareth
 		-- Heroic
-		-- q(none),	-- Kazzara
-		-- q(none),	-- The Amalgamation Chamber
-		-- q(none),	-- The Forgotten Experiments
-		-- q(none),	-- Assault of the Zaqali
-		-- q(none),	-- Rashok
-		-- q(none),	-- The Vigilant Steward, Zskarn
-		-- q(),	-- Magmorax
-		-- q(),	-- Echo of Neltharion
-		-- q(),	-- Scalecommander Sarkareth
+		-- None
 		-- Mythic
 		-- q(),	-- Kazzara
 		-- q(),	-- The Amalgamation Chamber
