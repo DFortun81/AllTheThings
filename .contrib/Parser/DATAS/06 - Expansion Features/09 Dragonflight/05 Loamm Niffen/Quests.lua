@@ -97,6 +97,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(205286),	-- Loamm Niffen Tabard
 				}
 			}),
+			-- RENOWN 12 --
+			q(75728, {	-- Bartering Boulders
+				["minReputation"] = { 2564, 12 },	-- Loamm Niffen Renown 12
+				["provider"] = { "n", 205127 },	-- Newsy
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
+				["g"] = {
+					i(205188),	-- Barter Boulder
+				}
+			}),
 
 				-- Unsorted (which renown level?) --
 			q(75721, {

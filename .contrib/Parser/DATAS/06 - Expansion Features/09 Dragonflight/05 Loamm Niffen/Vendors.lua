@@ -62,7 +62,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 						-- RENOWN 12 --
 					i(205353, {	-- Niffen Notebook of Alchemy Knowledge
-						-- ["questID"] = ,
+						["questID"] = 75756,
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 300 },
 						},

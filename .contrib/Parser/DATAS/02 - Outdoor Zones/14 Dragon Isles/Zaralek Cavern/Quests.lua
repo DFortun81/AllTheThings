@@ -850,30 +850,32 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(75710),	-- Some Tracker vid Glimrogg / First Time?
 		--
 		-- Talk to npc during Respite (73041)
-		q(75425),    -- Tellywin Sharpfizzle
-		q(75424),    -- Chef Butterfingers
-		q(75423),    -- Earthmender Narvra
-		q(75422),    -- Rupert
-		q(75421),    -- Veritistrasz
-		q(75420),    -- Voraxian
+		q(75425),	-- Tellywin Sharpfizzle
+		q(75424),	-- Chef Butterfingers
+		q(75423),	-- Earthmender Narvra
+		q(75422),	-- Rupert
+		q(75421),	-- Veritistrasz
+		q(75420),	-- Voraxian
 		-- RP after Stain Removal (73045)
 		q(75219),	-- Voraxian
 		-- Talk with Veritistrasz during (74495)
-		q(74773),    -- 1 (optional) dialog
-		q(74776),    -- after he finished optional gialog
-		q(74777),    -- 1 (quest) dialog
-		q(74778),    -- 2 (optional) dialog
-		q(74779),    -- 2 (quest) dialog
-		q(74789),    -- 3 (optional) dialog
-		q(74780),    -- 3 (quest) dialog
-		q(74781),    -- 4 (quest) dialog
-		q(74782),    -- 5 (quest) dialog
-		q(74788),    -- 6 (quest) dialog
+		q(74773),	-- 1 (optional) dialog
+		q(74776),	-- after he finished optional gialog
+		q(74777),	-- 1 (quest) dialog
+		q(74778),	-- 2 (optional) dialog
+		q(74779),	-- 2 (quest) dialog
+		q(74789),	-- 3 (optional) dialog
+		q(74780),	-- 3 (quest) dialog
+		q(74781),	-- 4 (quest) dialog
+		q(74782),	-- 5 (quest) dialog
+		q(74788),	-- 6 (quest) dialog
 
 		-- Ponzo hat price
-		q(75869),    -- Become available with cost at 9999 boulders
-		q(75836),    -- I can't afford that - 4999
-		q(75870),    -- Still too much! - 999
-		q(75871),    -- How about 50 boulders - 249
+		q(75869),	-- Become available with cost at 9999 boulders
+		q(75836),	-- I can't afford that - 4999
+		q(75870),	-- Still too much! - 999
+		q(75871),	-- How about 50 boulders - 249
+
+		q(75208),	-- looted bonus supplies while on climbing WQ 75060 (A Veritable Dumping Ground)
 	}),
 }));
