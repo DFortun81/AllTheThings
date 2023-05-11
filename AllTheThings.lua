@@ -39,8 +39,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, sformat, strsplit, GetTimePreciseSec
-	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format, strsplit, GetTimePreciseSec;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, sformat, strsplit, GetTimePreciseSec
+	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, string.format, strsplit, GetTimePreciseSec;
 local ATTAccountWideData, IsRetrieving;
 -- Retrieving Data Locals
 do
@@ -14508,7 +14508,6 @@ app.FilterGroupsByLevel = FilterGroupsByLevel;
 app.IsBoP = IsBoP;
 app.NoFilter = NoFilter;
 app.Filter = Filter;
-end	-- Filtering
 
 -- Default Filter Settings (changed in app.Startup and in the Options Menu)
 app.VisibilityFilter = app.ObjectVisibilityFilter;
@@ -14634,21 +14633,31 @@ app.RecursiveFirstParentWithFieldValue = function(group, field, value)
 		end
 	end
 end
--- Cleans any groups which are nested under a group with a certain field
-app.CleanInheritingGroups = function(groups, field)
-	if groups then
-		-- ignore if a field is not provided
-		if not field then return groups; end
-		local refined = {};
+-- Cleans any groups which are nested under any group with any specified fields
+app.CleanInheritingGroups = function(groups, ...)
+	local arrs = select("#", ...);
+	if groups and arrs > 0 then
+		local refined, f, match = {};
+		-- app.PrintDebug("CIG:Start",#groups,...)
 		for _,j in ipairs(groups) do
-			if not GetRelativeValue(j, field) then
+			match = nil;
+			for n=1,arrs do
+				f = select(n, ...);
+				if GetRelativeValue(j, f) then
+					match = true;
+					-- app.PrintDebug("CIG:Skip",j.hash,f)
+					break;
+				end
+			end
+			if not match then
 				tinsert(refined, j);
-			-- else print("  ",j.hash)
 			end
 		end
+		-- app.PrintDebug("CIG:End",#refined)
 		return refined;
 	end
 end
+end	-- Filtering
 
 -- Processing Functions
 do
@@ -17699,6 +17708,29 @@ local function RecursiveParentMapper(group, field, value)
 end
 
 local DynamicDataCache = app.CreateDataCache("dynamic");
+
+-- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
+-- content which matches the specified .dynamic 'field' and .dynamic_value of the group
+local DynamicCategory_Nested = function(self)
+	-- dynamic groups are ignored for the source tooltips if they aren't constrained to a specific value
+	self.sourceIgnored = not self.dynamic_value;
+	-- change the text color of the dynamic group to help indicate it is not included in the window total, if it's ignored
+	if self.sourceIgnored then
+		self.text = Colorize(self.text, app.Colors.SourceIgnored);
+	end
+	-- pull out all Things which should go into this category based on field & value
+	local groups = app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups);
+	NestObjects(self, groups);
+	-- reset indents and such
+	BuildGroups(self);
+	-- delay-sort the top level groups
+	app.SortGroupDelayed(self, "name");
+	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
+	app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
+	-- run a direct update on itself after being populated
+	app.DirectGroupUpdate(self);
+end
+
 -- Common function set as the OnUpdate for a group which will build itself a 'simple' version of the
 -- content which matches the specified .dynamic 'field' of the group
 -- NOTE: Content must be cached using the dynamic 'field'
@@ -17736,7 +17768,10 @@ local DynamicCategory_Simple = function(self)
 				end
 				-- app.PrintDebugPrior("Complete")
 				-- dynamic groups for Things within a specific Value of a Type are expected to be collected under a Header of the Type itself
-			else app.print("Failed to build Simple Dynamic Category: No data cached for key & value",self.dynamic,self.dynamic_value); end
+			else
+				-- instead of trying to do Simple if the cache doesn't exist, just put a Nested Dynamic group
+				DynamicCategory_Nested(self);
+			end
 		else
 			for id,sources in pairs(dynamicCache) do
 				for _,source in pairs(sources) do
@@ -17773,36 +17808,17 @@ local DynamicCategory_Simple = function(self)
 			NestObject(self, header);
 		end
 		-- reset indents and such
-		BuildGroups(self, self.g);
+		BuildGroups(self);
 		-- delay-sort the top level groups
 		app.SortGroupDelayed(self, "name");
 		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
 		app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
 		-- run a direct update on itself after being populated
 		app.DirectGroupUpdate(self);
-	else app.print("Failed to build Simple Dynamic Category: No cached data for key",self.dynamic) end
-end
-
--- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
--- content which matches the specified .dynamic 'field' and .dynamic_value of the group
-local DynamicCategory_Nested = function(self)
-	-- dynamic groups are ignored for the source tooltips if they aren't constrained to a specific value
-	self.sourceIgnored = not self.dynamic_value;
-	-- change the text color of the dynamic group to help indicate it is not included in the window total, if it's ignored
-	if self.sourceIgnored then
-		self.text = Colorize(self.text, app.Colors.SourceIgnored);
+	else
+		-- instead of trying to do Simple if the cache doesn't exist, just put a Nested Dynamic group
+		DynamicCategory_Nested(self);
 	end
-	-- pull out all Things which should go into this category based on field & value
-	local groups = app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups);
-	NestObjects(self, app.CleanInheritingGroups(groups, "_missing"));
-	-- reset indents and such
-	BuildGroups(self, self.g);
-	-- delay-sort the top level groups
-	app.SortGroupDelayed(self, "name");
-	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-	app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
-	-- run a direct update on itself after being populated
-	app.DirectGroupUpdate(self);
 end
 
 function app:GetDataCache()
@@ -17962,6 +17978,47 @@ function app:GetDataCache()
 		db.name = db.text;
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "toyID"));
+
+		-- Various Quest groups
+		local quests = app.CreateNPC(-17);
+		quests.sourceIgnored = true;
+		quests.g = {};
+		quests.parent = primeData;
+		quests.visible = true;
+		tinsert(g, quests);
+
+		-- All Quests - Dynamic
+		-- TODO: waaaay too big to handle in a single frame, would need a 'chunked' process
+		-- db = {};
+		-- db.icon = app.asset("Interface_Quest_header");
+		-- db.text = "All Quests";
+		-- db.name = db.text;
+		-- db.parent = quests;
+		-- tinsert(quests.g, DynamicCategory(db, "questID"));
+
+		-- Breadcrumbs - Dynamic
+		db = {};
+		db.icon = 134051;	-- inv-misc-food-95-grainbread
+		db.text = L["BREADCRUMBS"];
+		db.name = db.text;
+		db.parent = quests;
+		tinsert(quests.g, DynamicCategory(db, "isBreadcrumb"));
+
+		-- Dailies - Dynamic
+		db = {};
+		db.icon = 236677;	-- Achievement_quests_completed_daily_06
+		db.text = DAILY;
+		db.name = db.text;
+		db.parent = quests;
+		tinsert(quests.g, DynamicCategory(db, "isDaily"));
+
+		-- Weeklies - Dynamic
+		db = {};
+		db.icon = 236675;	-- Achievement_quests_completed_daily_04
+		db.text = CALENDAR_REPEAT_WEEKLY;
+		db.name = db.text;
+		db.parent = quests;
+		tinsert(quests.g, DynamicCategory(db, "isWeekly"));
 
 		-- add an OnEnd function for the DynamicRunner to print being done
 		app.DynamicRunner.OnEnd(function()
@@ -18400,6 +18457,7 @@ function app:GetDataCache()
 		db.name = L["NEVER_IMPLEMENTED"];
 		db.text = db.name;
 		db.description = L["NEVER_IMPLEMENTED_DESC"];
+		db._nyi = true;
 		tinsert(g, db);
 		--tinsert(db.g, 1, flightPathsCategory_NYI);
 		CacheFields(db);
@@ -18411,6 +18469,7 @@ function app:GetDataCache()
 		db.name = "Hidden Achievement Triggers";
 		db.text = db.name;
 		db.description = "Hidden Achievement Triggers";
+		db._hqt = true;
 		tinsert(g, db);
 		--app.ToggleCacheMaps(true);
 		--CacheFields(db);
@@ -18743,81 +18802,25 @@ local function SetRescursiveFilters()
 	IncludeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
 	IgnoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
 end
--- Collects a cloned hierarchy of groups which simply have the field defined
-local function BuildSearchResponseByField(groups, field, clear)
-	if groups then
-		local t, response, clone;
-		for _,group in ipairs(groups) do
-			if not group.sourceIgnored then
-				if group[field] then
-					-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
-					if IncludeUnavailableRecipes or not group.spellID or IgnoreBoEFilter(group) then
-						clone = clear and CreateObject(group, true) or CreateObject(group);
-						if t then tinsert(t, clone);
-						else t = { clone }; end
-					end
-				else
-					response = BuildSearchResponseByField(group.g, field, clear);
-					if response then
-						local groupCopy = {};
-						-- copy direct group values only
-						MergeProperties(groupCopy, group);
-						-- no need to clone response, since it is already cloned above
-						groupCopy.g = response;
-						-- the group itself does not meet the field/value expectation, so force it to be uncollectible
-						groupCopy.collectible = false;
-						-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
-						groupCopy.sym = nil;
-						groupCopy.sourceParent = nil;
-						if t then tinsert(t, groupCopy);
-						else t = { groupCopy }; end
-					end
-				end
-			end
-		end
-		return t;
-	end
-end
--- Collects a cloned hierarchy of groups which have the field defined with the required value
-local function BuildSearchResponseByFieldValue(groups, field, value, clear)
-	if groups then
-		local t, response, v, clone;
-		for _,group in ipairs(groups) do
-			if not group.sourceIgnored then
-				v = group[field];
-				if v and (v == value or
-						(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
-					-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
-					if IncludeUnavailableRecipes or not group.spellID or IgnoreBoEFilter(group) then
-						clone = clear and CreateObject(group, true) or CreateObject(group);
-						if t then tinsert(t, clone);
-						else t = { clone }; end
-					end
-				else
-					response = BuildSearchResponseByFieldValue(group.g, field, value, clear);
-					if response then
-						local groupCopy = {};
-						-- copy direct group values only
-						MergeProperties(groupCopy, group);
-						-- no need to clone response, since it is already cloned above
-						groupCopy.g = response;
-						-- the group itself does not meet the field/value expectation, so force it to be uncollectible
-						groupCopy.collectible = false;
-						-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
-						groupCopy.sym = nil;
-						groupCopy.sourceParent = nil;
-						if t then tinsert(t, groupCopy);
-						else t = { groupCopy }; end
-					end
-				end
-			end
-		end
-		return t;
-	end
-end
 local MainRoot, UnsortedRoot;
 local ClonedHierarchyGroups = {};
 local ClonedHierarachyMapping = {};
+local SearchGroups = {};
+local function CloneGroupIntoHeirarchy(group)
+	-- new cloned parent
+	local groupCopy = {};
+	-- copy direct group values only
+	MergeProperties(groupCopy, group);
+	-- the group itself does not meet the field/value expectation, so force it to be uncollectible
+	groupCopy.collectible = false;
+	-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
+	groupCopy.sym = nil;
+	groupCopy.sourceParent = nil;
+	-- always a parent, so it will have a .g
+	groupCopy.g = {};
+	ClonedHierarachyMapping[group] = groupCopy;
+	return groupCopy;
+end
 -- Finds existing clone of the parent group, or clones the group into the proper clone hierarchy
 local function MatchOrCloneParentInHierarchy(group)
 	if group then
@@ -18825,106 +18828,127 @@ local function MatchOrCloneParentInHierarchy(group)
 		local groupCopy = ClonedHierarachyMapping[group];
 		if groupCopy then return groupCopy; end
 
-		-- new cloned parent
-		groupCopy = {};
-		-- copy direct group values only
-		MergeProperties(groupCopy, group);
-		-- the group itself does not meet the field/value expectation, so force it to be uncollectible
-		groupCopy.collectible = false;
-		-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
-		groupCopy.sym = nil;
-		groupCopy.sourceParent = nil;
-		-- always a parent, so it will have a .g
-		groupCopy.g = {};
-		ClonedHierarachyMapping[group] = groupCopy;
+		-- check the parent to see if this parent chain will be excluded
+		local parent = group.parent;
+		if parent == UnsortedRoot then
+			-- app.PrintDebug("Don't capture Unsorted",group.text)
+			return;
+		end
+		if parent.sourceIgnored then
+			-- app.PrintDebug("Don't capture SourceIgnored",group.text)
+			return;
+		end
 
 		-- is this a top-level group?
-		local parent = group.parent;
 		if parent == MainRoot then
 			-- app.PrintDebug("Added top cloned parent",groupCopy.text)
+			groupCopy = CloneGroupIntoHeirarchy(group);
 			tinsert(ClonedHierarchyGroups, groupCopy);
-			return groupCopy;
-		elseif parent == UnsortedRoot then
-			-- app.PrintDebug("Don't capture Unsorted",groupCopy.text)
-			-- don't collect the unsorted content into the cloned groups
 			return groupCopy;
 		else
 			-- need to clone and attach this group to its cloned parent
 			local clonedParent = MatchOrCloneParentInHierarchy(parent);
-			-- if not clonedParent then
-			-- 	app.PrintDebug("Null Cloned Parent?",group.text,group.parent and group.parent.text)
-			-- end
+			if not clonedParent then return; end
+			groupCopy = CloneGroupIntoHeirarchy(group);
 			NestObject(clonedParent, groupCopy);
 			-- tinsert(clonedParent.g, groupCopy);
 			return groupCopy;
 		end
 	end
 end
--- Creates a cloned hierarchy of the cached groups which match a particular key and value
-local function BuildSearchResponseViaCachedGroups(cacheContainer, field, value, clear)
-	if cacheContainer then
-		MainRoot = app:GetDataCache();
-		UnsortedRoot = app:GetWindow("Unsorted").data;
-		wipe(ClonedHierarchyGroups);
-		wipe(ClonedHierarachyMapping);
-		local parent, thing;
-		if value then
-			local sources = cacheContainer[value];
-			if not sources then return ClonedHierarchyGroups; end
-			-- for each source of each Thing with the value
-			for _,source in ipairs(sources) do
-				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
-				if IncludeUnavailableRecipes or not source.spellID or IgnoreBoEFilter(source) then
-					-- find/clone the expected parent group in hierachy
-					parent = MatchOrCloneParentInHierarchy(source.parent);
-					-- clone the Thing into the cloned parent
-					thing = clear and CreateObject(source, true) or CreateObject(source);
-					-- don't copy in any extra data for the thing which can pull things into groups, or reference other groups
-					thing.sym = nil;
-					thing.sourceParent = nil;
-					-- need to map the cloned Thing also since it may end up being a parent of another Thing
-					ClonedHierarachyMapping[source] = thing;
-					NestObject(parent, thing);
-				end
+-- Builds ClonedHierarchyGroups from an array of Sourced groups
+local function BuildClonedHierarchy(sources, clear)
+	-- app.PrintDebug("BSR:Sourced",sources and #sources, clear)
+	if not sources then return ClonedHierarchyGroups; end
+	local parent, thing;
+	-- for each source of each Thing with the value
+	for _,source in ipairs(sources) do
+		-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
+		if IncludeUnavailableRecipes or not source.spellID or IgnoreBoEFilter(source) then
+			-- find/clone the expected parent group in hierachy
+			parent = MatchOrCloneParentInHierarchy(source.parent);
+			if parent then
+				-- clone the Thing into the cloned parent
+				thing = clear and CreateObject(source, true) or CreateObject(source);
+				-- don't copy in any extra data for the thing which can pull things into groups, or reference other groups
+				thing.sym = nil;
+				thing.sourceParent = nil;
+				-- need to map the cloned Thing also since it may end up being a parent of another Thing
+				ClonedHierarachyMapping[source] = thing;
+				NestObject(parent, thing);
 			end
-		else
-			for id,sources in pairs(cacheContainer) do
-				-- for each source of each Thing
-				for _,source in ipairs(sources) do
-					-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
-					if IncludeUnavailableRecipes or not source.spellID or IgnoreBoEFilter(source) then
-						-- find/clone the expected parent group in hierachy
-						parent = MatchOrCloneParentInHierarchy(source.parent);
-						-- clone the Thing into the cloned parent
-						thing = clear and CreateObject(source, true) or CreateObject(source);
-						-- don't copy in any extra data for the thing which can pull things into groups, or reference other groups
-						thing.sym = nil;
-						thing.sourceParent = nil;
-						-- need to map the cloned Thing also since it may end up being a parent of another Thing
-						ClonedHierarachyMapping[source] = thing;
-						NestObject(parent, thing);
-					end
+		end
+	end
+end
+-- Recursively collects all groups which have the specified field existing
+local function AddSearchGroupsByField(groups, field)
+	if groups then
+		for _,group in ipairs(groups) do
+			if not group.sourceIgnored then
+				if group[field] then
+					tinsert(SearchGroups, group);
+				else
+					AddSearchGroupsByField(group.g, field);
 				end
 			end
 		end
-		return ClonedHierarchyGroups;
+	end
+end
+-- Recursively collects all groups which have the specified field=value
+local function AddSearchGroupsByFieldValue(groups, field, value)
+	if groups then
+		local v;
+		for _,group in ipairs(groups) do
+			if not group.sourceIgnored then
+				v = group[field];
+				if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+					tinsert(SearchGroups, group);
+				else
+					AddSearchGroupsByFieldValue(group.g, field, value);
+				end
+			end
+		end
+	end
+end
+-- Builds ClonedHierarchyGroups from the cached container using groups which match a particular key and value
+local function BuildSearchResponseViaCacheContainer(cacheContainer, value, clear)
+	-- app.PrintDebug("BSR:Cached",value,clear)
+	if cacheContainer then
+		if value then
+			local sources = cacheContainer[value];
+			BuildClonedHierarchy(sources, clear);
+		else
+			for id,sources in pairs(cacheContainer) do
+				-- each Thing's Sources need to be built
+				BuildClonedHierarchy(sources, clear);
+			end
+		end
 	end
 end
 -- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
 -- should additionally clear their contents when being cloned
 function app:BuildSearchResponse(groups, field, value, clear)
+	MainRoot = app:GetDataCache();
+	UnsortedRoot = app:GetWindow("Unsorted").data;
+	wipe(ClonedHierarchyGroups);
+	wipe(ClonedHierarachyMapping);
+	wipe(SearchGroups);
 	if groups then
 		-- app.PrintDebug("BSR:",field,value,clear)
 		SetRescursiveFilters();
 		local cacheContainer = SearchForFieldContainer(field);
 		if cacheContainer then
-			return BuildSearchResponseViaCachedGroups(cacheContainer, field, value, clear);
-		end
-		if value then
-			return BuildSearchResponseByFieldValue(groups, field, value, clear);
+			BuildSearchResponseViaCacheContainer(cacheContainer, value, clear);
+		elseif value then
+			-- app.PrintDebug("BSR:FieldValue",groups and #groups,field,value,clear)
+			AddSearchGroupsByFieldValue(groups, field, value);
+			BuildClonedHierarchy(SearchGroups, clear);
 		else
-			return BuildSearchResponseByField(groups, field, clear);
+			-- app.PrintDebug("BSR:Field",groups and #groups,field,clear)
+			AddSearchGroupsByField(groups, field);
+			BuildClonedHierarchy(SearchGroups, clear);
 		end
+		return ClonedHierarchyGroups;
 	end
 end
 end -- Search Response Logic
@@ -19897,7 +19921,7 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 
 								if f then
 									local g = self.data.g;
-									app.ArrayAppend(g, app:BuildSearchResponse(app:GetDataCache().g, "f", f));
+									app.ArrayAppend(g, app:BuildSearchResponse(app:GetDataCache().g, "f", f, true));
 								end
 
 								self:BuildData();

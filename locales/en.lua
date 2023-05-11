@@ -107,6 +107,7 @@ app.L = {
 	["BEST_PERSONAL_LOOT_CHANCE"] = "Best Personal Loot Chance";
 	["BONUS_ROLL"] = "Bonus Roll";
 	["PREREQUISITE_QUESTS"] = "There are prerequisite quests that must be completed before this may be obtained:";
+	["BREADCRUMBS"] = "Breadcrumbs";
 	["BREADCRUMBS_WARNING"] = "There are breadcrumb quests that may be not be obtainable after completing this:";
 	["THIS_IS_BREADCRUMB"] = "This is a breadcrumb quest.";
 	["BREADCRUMB_PARTYSYNC"] = "This may be unable to be completed without Party Sync if completing any of these quests first:";
