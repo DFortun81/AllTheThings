@@ -272,7 +272,9 @@ _.Instances = { tier(CATA_TIER, {
 								i(77969),	-- Seal of the Signs [Dropped for Lucetia]
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-								i(152979),	-- Faceless Mindlasher (PET!)
+								i(152979,	{	-- Faceless Mindlasher (PET!)
+									["timeline"] = { ADDED_7_3_0 },
+								}),
 								i(78409),	-- Experimental Specimen Slicer
 								i(78407),	-- Spire of Coagulated Globules
 								i(78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
@@ -322,7 +324,9 @@ _.Instances = { tier(CATA_TIER, {
 								i(77973),	-- Starcatcher Compass
 							})),
 							cr(53879, e(318, {	-- Spine of Deathwing
-								i(152980),	-- Corrupted Blood (PET!)
+								i(152980,	{	-- Corrupted Blood (PET!)
+									["timeline"] = { ADDED_7_3_0 },
+								}),
 								i(78470),	-- Backbreaker Spaulders
 								i(78466),	-- Gloves of Liquid Smoke
 								i(78469),	-- Gauntlets of the Golden Thorn
@@ -336,7 +340,9 @@ _.Instances = { tier(CATA_TIER, {
 								i(122198),	-- Music Roll: The Shattering [Note: Crieve got on stream]
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
-								i(152981),	-- Unstable Tendril (PET!)
+								i(152981,	{	-- Unstable Tendril (PET!)
+									["timeline"] = { ADDED_7_3_0 },
+								}),
 								i(78482),	-- Kiril, Fury of Beasts
 								i(78487),	-- Gurthalak, Voice of the Deeps
 								i(78483),	-- Blade of the Unmaker
@@ -462,7 +468,9 @@ _.Instances = { tier(CATA_TIER, {
 						i(78181),	-- Leggings of the Corrupted Conqueror
 						i(78176),	-- Leggings of the Corrupted Protector
 						i(78171),	-- Leggings of the Corrupted Vanquisher
-						i(152979),	-- Faceless Mindlasher (PET!)
+						i(152979,	{	-- Faceless Mindlasher (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
 						i(77217),	-- Experimental Specimen Slicer
 						i(77218),	-- Spire of Coagulated Globules
 						i(77219),	-- Scalpel of Unrelenting Agony
@@ -523,7 +531,9 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
 						ach(6133),    -- Maybe He'll Get Dizzy...
-						i(152980),	-- Corrupted Blood (PET!)
+						i(152980,	{	-- Corrupted Blood (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
 						i(77236),	-- Backbreaker Spaulders
 						i(77235),	-- Gauntlets of the Golden Thorn
 						i(78357),	-- Gloves of Liquid Smoke
@@ -554,7 +564,9 @@ _.Instances = { tier(CATA_TIER, {
 							title(196),	-- , Destroyer's End
 						}),
 						i(77067),	-- Blazing Drake (MOUNT!)
-						i(152981),	-- Unstable Tendril (PET)!
+						i(152981,	{	-- Unstable Tendril (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
 						i(77191),	-- Gurthalak, Voice of the Deeps
 						i(77194),	-- Kiril, Fury of Beasts
 						i(77190),	-- Ti'tahk, the Steps of Time
@@ -669,7 +681,9 @@ _.Instances = { tier(CATA_TIER, {
 						i(78856),	-- Leggings of the Corrupted Conqueror
 						i(78857),	-- Leggings of the Corrupted Protector
 						i(78858),	-- Leggings of the Corrupted Vanquisher
-						i(152979),	-- Faceless Mindlasher (PET!)
+						i(152979,	{	-- Faceless Mindlasher (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
 						i(78403),	-- Experimental Specimen Slicer
 						i(78401),	-- Spire of Coagulated Globules
 						i(78404),	-- Scalpel of Unrelenting Agony
@@ -730,7 +744,9 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
 						ach(6115),	-- Heroic: Spine of Deathwing
-						i(152980),	-- Corrupted Blood (PET!)
+						i(152980,	{	-- Corrupted Blood (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
 						i(78465),	-- Backbreaker Spaulders
 						i(78464),	-- Gauntlets of the Golden Thorn
 						i(78461),	-- Gloves of Liquid Smoke
@@ -750,7 +766,9 @@ _.Instances = { tier(CATA_TIER, {
 						un(REMOVED_FROM_GAME, ach(6126)),	-- Realm First! Deathwing
 						i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
 						i(77067),	-- Blazing Drake (MOUNT!)
-						i(152981),	-- Unstable Tendril (PET!)
+						i(152981,	{	-- Unstable Tendril (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
 						i(78478),	-- Gurthalak, Voice of the Deeps
 						i(78473),	-- Kiril, Fury of Beasts
 						i(78477),	-- Ti'tahk, the Steps of Time

@@ -676,7 +676,7 @@ i(147841, 2050);	-- Orphaned Felbat
 -----------------
 -- ITEMS --
 i(150739, 2041);	-- Pocket Cannon
-i(0, 2051);			-- Twilight
+i(147900, 2051);	-- Twilight
 i(150741, 2057);	-- Tricorne
 i(150742, 2058);	-- Foe Reaper 0.9
 i(151569, 2063);	-- Sneaky Marmot
@@ -689,7 +689,7 @@ i(151828, 2072);	-- Ageless Bronze Drake
 -- PATCH 7.3.0 --
 -----------------
 -- ITEMS --
-i(0, 2062);	-- Shadow
+i(151234, 2062);	-- Shadow
 i(152555, 2077);	-- Ghost Shark
 i(152966, 2078);	-- Tinytron
 i(152967, 2079);	-- Discarded Experiment

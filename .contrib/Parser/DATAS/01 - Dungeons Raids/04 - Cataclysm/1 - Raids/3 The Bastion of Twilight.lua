@@ -73,7 +73,9 @@ _.Instances = { tier(CATA_TIER, {
 									["cr"] = 49864,	-- Twilight Fiend
 								}),
 							}),
-							i(152969),	-- Twilight Clutch-Sister (PET!)
+							i(152969,	{	-- Twilight Clutch-Sister (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(63536),	-- Blade of the Witching Hour
 							i(63533),	-- Fang of Twilight
 							i(63532),	-- Dragonheart Piercer
@@ -98,7 +100,9 @@ _.Instances = { tier(CATA_TIER, {
 						},
 						["groups"] = {
 							ach(5311),	-- Elementary
-							i(152970),	-- Lesser Circle of Binding (PET!)
+							i(152970,	{	-- Bound Stream (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(59513),	-- Scepter of Ice
 							i(59504),	-- Arion's Crown
 							i(59509),	-- Glaciated Helm
@@ -175,7 +179,9 @@ _.Instances = { tier(CATA_TIER, {
 						},
 						["groups"] = {
 							ach(5117),	-- Heroic: Valiona and Theralion
-							i(152969),	-- Twilight Clutch-Sister (PET!)
+							i(152969,	{	-- Twilight Clutch-Sister (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(65091),	-- Blade of the Witching Hour
 							i(65094),	-- Fang of Twilight
 							i(65095),	-- Dragonheart Piercer
@@ -200,7 +206,9 @@ _.Instances = { tier(CATA_TIER, {
 						},
 						["groups"] = {
 							ach(5119),	-- Heroic: Ascendant Council
-							i(152970),	-- Lesser Circle of Binding (PET!)
+							i(152970,	{	-- Bound Stream (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(65111),	-- Scepter of Ice
 							i(65120),	-- Arion's Crown
 							i(65115),	-- Glaciated Helm

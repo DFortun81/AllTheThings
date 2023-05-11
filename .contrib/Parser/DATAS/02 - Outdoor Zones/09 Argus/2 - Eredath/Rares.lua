@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(905, {	-- Argus
 						["achievementID"] = 12078,	-- Commander of Argus
 					}),
 					i(153034),	-- Technique: Glyph of the Voidling (RECIPE!)
-					i(153056),	-- Grasping Manifestation
+					i(153056),	-- Grasping Manifestation (PET!)
 				},
 			}),
 			n(126862, {	-- Baruut the Bloodthirsty

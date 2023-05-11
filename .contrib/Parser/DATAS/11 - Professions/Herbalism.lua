@@ -192,7 +192,7 @@ profession(HERBALISM, {
 			}
 		}),
 		filter(BATTLE_PETS, {
-			i(153045),	-- Fel Lasher
+			i(153045),	-- Fel Lasher (PET!)
 		}),
 		n(QUESTS, {
 			-- TODO: map these

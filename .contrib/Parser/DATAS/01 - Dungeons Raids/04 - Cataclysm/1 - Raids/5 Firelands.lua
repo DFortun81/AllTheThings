@@ -429,7 +429,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 52498,
 						["g"] = {
 							ach(5821),	-- Death from Above
-							i(152976),	-- Cinderweb Egg (PET!)
+							i(152976,	{	-- Cinderweb Recluse (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(71039),	-- Funeral Pyre
 							i(70922),	-- Mandible of Beth'tilac
 							i(71038),	-- Ward of the Red Widow
@@ -501,7 +503,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 								crit(4),	-- The Ridge of Ancient Flame
 								crit(5),	-- Shatterstone
 							}),
-							i(152975),	-- Blazehound (PET!)
+							i(152975,	{	-- Blazehound (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(71014),	-- Skullstealer Greataxe
 							i(71013),	-- Feeding Frenzy
 							i(71022),	-- Goblet of Anger
@@ -522,7 +526,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 53494,
 						["g"] = {
 							ach(5830),	-- Share the Pain
-							i(152977),	-- Surger (PET!)
+							i(152977,	{	-- Surger (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(71312),	-- Gatecrasher
 							i(70915),	-- Shard of Torment
 							i(71323),	-- Molten Scream
@@ -544,7 +550,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							ach(5799, {	-- Only the Penitent...
 								["description"] = "This achievement requires a group of 2.",
 							}),
-							i(152978),	-- Fandral's Pet Carrier (PET!)
+							i(152978,	{	-- Infernal Pyreclaw (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
 							SHOULDER_CONQ,	-- Shoulders of the Fiery Conqueror
 							SHOULDER_PROT,	-- Shoulders of the Fiery Protector
@@ -709,7 +717,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 52498,
 						["g"] = {
 							ach(5807),	-- Heroic: Beth'tilac
-							i(152976),	-- Cinderweb Egg (PET!)
+							i(152976,	{	-- Cinderweb Recluse (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(71409),	-- Funeral Pyre
 							i(71406),	-- Mandible of Beth'tilac
 							i(71408),	-- Ward of the Red Widow
@@ -776,7 +786,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(71678),	-- Leggings of the Fiery Conqueror
 							i(71685),	-- Leggings of the Fiery Protector
 							i(71671),	-- Leggings of the Fiery Vanquisher
-							i(152975),	-- Blazehound (PET!)
+							i(152975,	{	-- Blazehound (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(71445),	-- Skullstealer Greataxe
 							i(71441),	-- Feeding Frenzy
 							i(71448),	-- Goblet of Anger
@@ -800,8 +812,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(71676),	-- Gauntlets of the Fiery Conqueror
 							i(71683),	-- Gauntlets of the Fiery Protector
 							i(71669),	-- Gauntlets of the Fiery Vanquisher
-							i(152977),	-- Surger (PET!)
-							i(71454),	-- Gatecrasher
+							i(152977,	{	-- Surger (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),i(71454),	-- Gatecrasher
 							i(71460),	-- Shard of Torment
 							i(71462),	-- Molten Scream
 							i(71465),	-- Casque of Flame
@@ -820,7 +833,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 52571,
 						["g"] = {
 							ach(5804),	-- Heroic: Majordomo Fandral Staghelm
-							i(152978),	-- Fandral's Pet Carrier (PET!)
+							i(152978,	{	-- Infernal Pyreclaw (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
 							i(71680),	-- Shoulders of the Fiery Conqueror
 							i(71687),	-- Shoulders of the Fiery Protector

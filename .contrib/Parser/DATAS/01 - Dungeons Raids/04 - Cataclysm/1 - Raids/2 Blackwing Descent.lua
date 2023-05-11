@@ -82,7 +82,9 @@ _.Instances = { tier(CATA_TIER, {
 								crit(3),	-- No player hit by Arcane Annihilator
 								crit(4),	-- No more than one player hit by each Flamethrower
 							}),
-							i(152966),	-- Rought-Hewn Remote (PET!)
+							i(152966,	{	-- Tinytron (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(59122),	-- Organic Lifeform Inverter
 							i(59219),	-- Power Generator Hood
 							i(59218),	-- Passive Resistor Spaulders
@@ -104,7 +106,9 @@ _.Instances = { tier(CATA_TIER, {
 							title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
 								["collectible"] = false,
 							}),
-							i(152967),	-- Discarded Experiment (PET!)
+							i(152967,	{	-- Discarded Experiment (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(59347),	-- Mace of Acrid Death
 							i(59344),	-- Dragon Bone Warhelm
 							i(59348),	-- Cloak of Biting Chill
@@ -163,7 +167,9 @@ _.Instances = { tier(CATA_TIER, {
 							i(63684),	-- Helm of the Forlorn Protector
 							i(63682),	-- Helm of the Forlorn Vanquisher
 							i(138802),	-- Illusion: Power Torrent
-							i(152968),	-- Rattlejaw (PET!)
+							i(152968,	{	-- Rattlejaw (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(63679),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
 							i(59459),	-- Andoros, Fist of the Dragon King
 							i(59443),	-- Crul'korak, the Lightning's Arc
@@ -210,7 +216,9 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 42179,
 						["groups"] = {
 							ach(5107),	-- Heroic: Omnotron Defense System
-							i(152966),	-- Rought-Hewn Remote (PET!)
+							i(152966,	{	-- Tinytron (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(65081),	-- Organic Lifeform Inverter
 							i(65077),	-- Power Generator Hood
 							i(65078),	-- Passive Resistor Spaulders
@@ -232,7 +240,9 @@ _.Instances = { tier(CATA_TIER, {
 							title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
 								["collectible"] = false,
 							}),
-							i(152967),	-- Discarded Experiment (PET!)
+							i(152967,	{	-- Discarded Experiment (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(67428),	-- Leggings of the Forlorn Conqueror
 							i(67427),	-- Leggings of the Forlorn Protector
 							i(67426),	-- Leggings of the Forlorn Vanquisher
@@ -298,7 +308,9 @@ _.Instances = { tier(CATA_TIER, {
 							i(65000),	-- Crown of the Forlorn Protector
 							i(65002),	-- Crown of the Forlorn Vanquisher
 							i(138802),	-- Illusion: Power Torrent
-							i(152968),	-- Rattlejaw (PET!)
+							i(152968,	{	-- Rattlejaw (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(65003),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
 							i(65017),	-- Andoros, Fist of the Dragon King
 							i(65024),	-- Crul'korak, the Lightning's Arc

@@ -32,7 +32,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				e(192, {	-- Beth'tilac
 					["creatureID"] = 52498,
 					["g"] = {
-						i(152976),	-- Cinderweb Egg (PET!)
+						i(152976, { -- Cinderweb Recluse (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 						i(171701),	-- Funeral Pyre
 						i(171664),	-- Mandible of Beth'tilac
 						i(171700),	-- Ward of the Red Widow
@@ -113,7 +115,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				e(195, {	-- Shannox
 					["creatureID"] = 53691,
 					["g"] = {
-						i(152975),	-- Blazehound (PET!)
+						i(152975, { -- Blazehound (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
 						un(NEVER_IMPLEMENTED, i(171734)),	-- Elementium Deathplate Legguards
 						un(NEVER_IMPLEMENTED, i(171741)),	-- Elementium Deathplate Greaves
 						un(NEVER_IMPLEMENTED, i(171759)),	-- Legguards of the Molten Giant
@@ -152,7 +156,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				e(196, {	-- Baleroc, the Gatekeeper
 					["creatureID"] = 53494,
 					["g"] = {
-						i(152977),	-- Surger (PET!)
+						i(152977, { -- Surger (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+						}),
 						un(NEVER_IMPLEMENTED, i(171793)),	-- Handwraps of the Cleansing Flame
 						un(NEVER_IMPLEMENTED, i(171798)),	-- Gloves of the Cleansing Flame
 						un(NEVER_IMPLEMENTED, i(171803)),	-- Balespiders Handwraps
@@ -190,7 +196,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				e(197, {	-- Majordomo Staghelm
 					["creatureID"] = 52571,
 					["g"] = {
-						i(152978),	-- Fandral's Pet Carrier (PET!)
+						i(152978,	{	-- Infernal Pyreclaw (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+						}),
 						i(122304),	-- Fandral's Seed Pouch (TOY!)
 						i(171807),	-- Balespider's Mantle
 						i(171772),	-- Dark Phoenix Spaulders

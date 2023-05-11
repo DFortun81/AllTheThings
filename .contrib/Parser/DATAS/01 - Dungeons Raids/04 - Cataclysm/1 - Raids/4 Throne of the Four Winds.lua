@@ -28,7 +28,9 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 45871,
 						["groups"] = {
 							ach(5304),	-- Stay Chill
-							i(152974),	-- Breezy Essence (PET!)
+							i(152974,	{	-- Drafty (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(63497),	-- Gale Rouser Belt
 							i(63496),	-- Lightning Well Belt
 							i(63490),	-- Sky Strider Belt
@@ -56,7 +58,9 @@ _.Instances = { tier(CATA_TIER, {
 							i(64316),	-- Mantle of the Forlorn Protector
 							i(64314),	-- Mantle of the Forlorn Vanquisher
 							i(63041),	-- Drake of the South Wind (MOUNT!)
-							i(152973),	-- Zephyr's Call (PET!)
+							i(152973,	{	-- Zephyrian Prince (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(68127),	-- Stormwake, the Tempest's Reach
 							i(68128),	-- Stormwake, the Tempest's Reach
 							i(68129),	-- Stormwake, the Tempest's Reach
@@ -88,7 +92,9 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 45871,
 						["groups"] = {
 							ach(5122),	-- Heroic: Conclave of Wind
-							i(152974),	-- Breezy Essence (PET!)
+							i(152974,	{	-- Drafty (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(65374),	-- Gale Rouser Belt
 							i(65377),	-- Lightning Well Belt
 							i(65369),	-- Sky Strider Belt
@@ -121,7 +127,9 @@ _.Instances = { tier(CATA_TIER, {
 							i(65088),	-- Shoulders of the Forlorn Conqueror
 							i(65087),	-- Shoulders of the Forlorn Protector
 							i(65089),	-- Shoulders of the Forlorn Vanquisher
-							i(152973),	-- Zephyr's Call (PET!)
+							i(152973,	{	-- Zephyrian Prince (PET!)
+								["timeline"] = { ADDED_7_3_0 },
+							}),
 							i(68132),	-- Stormwake, the Tempest's Reach
 							i(68130),	-- Stormwake, the Tempest's Reach
 							i(68131),	-- Stormwake, the Tempest's Reach
