@@ -33,7 +33,7 @@ local StackCo = coroutine.create(function()
 				if not s then app.PrintDebug("StackError:",c) end
 				-- app.PrintDebug("StackCo:Remove",i)
 				tremove(Stack, i);
-				StackParams[i] = nil;
+				tremove(StackParams, i);
 			end
 		end
 		-- app.PrintDebug("StackCo:Done")
@@ -63,7 +63,7 @@ end
 local function Push(param, name, func)
 	-- app.PrintDebug("Push",name,func,param)
 	tinsert(Stack, func);
-	StackParams[#Stack] = param;
+	tinsert(StackParams, param or 1);
 	QueueStack();
 end
 app.Push = Push;

@@ -758,9 +758,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				n(QUESTS, {
 					q(76085, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
 						["provider"] = { "n", 201574 },	-- Wrathion
-						-- ["g"] = {
-						-- 	i(),	-- Tome of the Earth-Warder (H)
-						-- },
+						["g"] = {
+							i(205996),	-- Tome of the Earth-Warder (H)
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1329,7 +1329,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(75737),	-- The Vigilant Steward, Zskarn
 		q(75738),	-- Magmorax
 		q(75739),	-- Echo of Neltharion
-		-- q(),	-- Scalecommander Sarkareth
+		q(75740),	-- Scalecommander Sarkareth
 		-- Heroic
 		-- q(none),	-- Kazzara
 		-- q(none),	-- The Amalgamation Chamber
