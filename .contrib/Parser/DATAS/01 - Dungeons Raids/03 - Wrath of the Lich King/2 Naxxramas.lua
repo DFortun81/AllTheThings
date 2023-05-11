@@ -722,7 +722,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							["provider"] = { "i", 44577 },	-- Heroic Key to the Focusing Iris (Item)
 							["lvl"] = lvlsquish(78, 78, 30),
 							["groups"] = {
-								i(44577, {	-- Heroic Key to the Focusing Iris
+								i(44581, {	-- Heroic Key to the Focusing Iris
 									["timeline"] = { "deleted 4.2.0" },
 								}),
 							},
