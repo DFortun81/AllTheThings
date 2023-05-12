@@ -1,7 +1,7 @@
 5.0.3.15882
 pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	-- 
-pet(73),	-- 
+pet(71),	--
+pet(73),	--
 pet(154),	-- Lucky
 pet(230),	-- Macabre Marionette
 pet(257),	-- Murkimus the Gladiator
@@ -546,7 +546,7 @@ pet(2368),	-- Scales
 pet(2370),	-- Breaker
 pet(2371),	-- Stickers
 8.1.0.27934
-pet(2481),	-- 
+pet(2481),	--
 pet(2485),	-- Leper Rat
 pet(2486),	-- Cockroach
 pet(2487),	-- Automated Spider Tank
@@ -632,8 +632,8 @@ Missing in PetDB.lua
 
 5.0.3.15882
 pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	-- 
-pet(73),	-- 
+pet(71),	--
+pet(73),	--
 pet(154),	-- Lucky
 pet(230),	-- Macabre Marionette
 pet(257),	-- Murkimus the Gladiator
@@ -1255,12 +1255,9 @@ pet(1684),	-- Netherfist
 pet(1685),	-- Skrillix
 pet(1686),	-- Defiled Earth
 pet(1708),	-- Albatross Chick
-pet(1709),	-- Fledgling Kingfeather
 pet(1710),	-- Fledgling Oliveback
-pet(1712),	-- Golden Eaglet
 pet(1713),	-- Long-Eared Owl
 pet(1714),	-- Northern Hawk Owl
-pet(1722),	-- Dream Whelpling
 pet(1726),	-- Burrow Spiderling
 pet(1728),	-- Juvenile Scuttleback
 pet(1729),	-- Olivetail Hare
@@ -1287,7 +1284,6 @@ pet(1757),	-- Brown Piglet
 pet(1758),	-- Black Piglet
 pet(1761),	-- Echo Batling
 pet(1762),	-- Hog-Nosed Bat
-pet(1763),	-- Spiketail Beaver
 pet(1770),	-- Thrugtusk
 pet(1771),	-- Baeloth
 pet(1772),	-- Wumpas
@@ -1561,7 +1557,7 @@ pet(2398),	-- Boghopper
 pet(2399),	-- Hermit Crab
 pet(2400),	-- Coastal Bounder
 8.1.0.27934
-pet(2481),	-- 
+pet(2481),	--
 pet(2485),	-- Leper Rat
 pet(2486),	-- Cockroach
 pet(2487),	-- Automated Spider Tank

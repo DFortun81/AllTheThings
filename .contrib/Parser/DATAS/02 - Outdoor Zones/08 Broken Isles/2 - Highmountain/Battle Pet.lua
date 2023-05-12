@@ -15,57 +15,39 @@ _.Zones =
 					p(487, {	-- Alpine Chipmonk
 						["crs"] = { 62189 },	-- Alpine Chipmonk
 					}),
-					p(1743, {	-- Black-Footed Fox Kit
-						["crs"] = { 97741 },	-- Black-Footed Fox Kit
-					}),
-					p(1726, {	-- Burrow Spiderling
-						["crs"] = { 97236 },	-- Burrow Spiderling
-					}),
-					p(1775, {	-- Coralback Fiddler
-						["crs"] = { 98428 },	-- Coralback Fiddler
-					}),
+					pet(1743), 	-- Black-Footed Fox Kit
+					pet(1726), 	-- Burrow Spiderling
+					p(1775), 	-- Coralback Fiddler
 					p(1761, {	-- Echo Batling
 						["crs"] = { 88542 },	-- Echo Batling
 					}),
-					p(1731, {	-- Felspider
-						["crs"] = { 97323 },	-- Felspider
-					}),
+					pet(1731), 	-- Felspider
 					p(407, {	-- Forest Spiderling
 						["crs"] = { 61320 },	-- Forest Spiderling
 					}),
 					p(569, {	-- Garden Frog
 						["crs"] = { 63002 },	-- Garden Frog
 					}),
-					p(1762, {	-- Hog-Nosed Bat
-						["crs"] = { 98192 },	-- Hog-Nosed Bat
+					pet(1762, {	-- Hog-Nosed Bat
+						["coord"] = { 50.8, 33.6, HIGHMOUNTAIN },
 					}),
-					p(1713, {	-- Long-Eared Owl
-						["crs"] = { 97118 },	-- Long-Eared Owl
-					}),
-					p(1744, {	-- Mist Fox Kit
-						["crs"] = { 97743 },	-- Mist Fox Kit
-					}),
+					pet(1713), 	-- Long-Eared Owl
+					pet(1744), 	-- Mist Fox Kit
 					p(391, {	-- Mountain Cottontail
 						["crs"] = { 61167 },	-- Mountain Cottontail
 					}),
 					p(1441, {	-- Mud Jumper
 						["crs"] = { 83642 },	-- Mud Jumper
 					}),
-					p(1776, {	-- Mudshell Conch
-						["crs"] = { 98446 },	-- Mudshell Conch
-					}),
-					p(1714, {	-- Northern Hawk Owl
-						["crs"] = { 97126 },	-- Northern Hawk Owl
-					}),
+					pet(1776), 	-- Mudshell Conch
+					pet(1714), 	-- Northern Hawk Owl
 					p(417, {	-- Rat
 						["crs"] = { 61366 },	-- Rat
 					}),
 					p(496, {	-- Rusty Snail
 						["crs"] = { 62313 },	-- Rusty Snail
 					}),
-					p(1763, {	-- Spiketail Beaver
-						["crs"] = { 98211 },	-- Spiketail Beaver
-					}),
+					p(1763), 	-- Spiketail Beaver
 					p(1590, {	-- Swamplighter Firefly
 						["crs"] = { 88359 },	-- Swamplighter Firefly
 					}),

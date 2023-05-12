@@ -7,34 +7,26 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			petbattle(filter(BATTLE_PETS, {
-				p(1708, {	-- Albatross Chick
-					["crs"] = { 97018 },	-- Albatross Chick
-				}),
+				pet(1708), 	-- Albatross Chick
 				p(706, {	-- Bandicoon
 					["crs"] = { 63062 },	-- Bandicoon
 				}),
-				p(1914, {	-- Coastal Sandpiper
-					["crs"] = { 110826 },	-- Coastal Sandpiper
-				}),
+				pet(1914), 	-- Coastal Sandpiper
 				p(396, {	-- Dusk Spiderling
 					["crs"] = { 61253 },	-- Dusk Spiderling
 				}),
-				p(1774, {	-- Eldritch Manafiend
-					["crs"] = { 98386 },	-- Eldritch Manafiend
+				pet(1774, {	-- Eldritch Manafiend
 					["description"] = "This pet can only spawn during the night between 8:30pm to 6:30am server time.",
 				}),
-				p(1773, {	-- Erudite Manafiend
-					["crs"] = { 98385 },	-- Erudite Manafiend
+				pet(1773, {	-- Erudite Manafiend
 					["description"] = "This pet can only spawn during the day between 6:30am to 8:30pm server time.",
 				}),
-				p(1731, {	-- Felspider
-					["crs"] = { 97323 },	-- Felspider
+				pet(1731), 	-- Felspider
+				pet(1709, {	-- Fledgling Kingfeather
+					["coord"] = { 44.4, 23.6, AZSUNA },
 				}),
-				p(1709, {	-- Fledgling Kingfeather
-					["crs"] = { 97076 },	-- Fledgling Kingfeather
-				}),
-				p(1710, {	-- Fledgling Oliveback
-					["crs"] = { 97078 },	-- Fledgling Oliveback
+				pet(1710, {	-- Fledgling Oliveback
+					["coord"] = { 44.4, 23.6, AZSUNA },
 				}),
 				p(478, {	-- Forest Moth
 					["crs"] = { 62177 },	-- Forest Moth
@@ -48,8 +40,12 @@ _.Zones =
 				p(699, {	-- Jumping Spider
 					["crs"] = { 63715 },	-- Jumping Spider
 				}),
-				p(1728, {	-- Juvenile Scuttleback
-					["crs"] = { 97283 },	-- Juvenile Scuttleback
+				pet(1728, {	-- Juvenile Scuttleback
+					["coords"] = {
+						{ 61.8, 61.6, AZSUNA },
+						{ 55.8, 59.0, AZSUNA },
+						{ 31.2, 30.6, AZSUNA },
+					},
 				}),
 				p(1583, {	-- Kelp Scuttler
 					["crs"] = { 88465 },	-- Kelp Scuttler
@@ -63,9 +59,7 @@ _.Zones =
 				p(1587, {	-- Royal Moth
 					["crs"] = { 88417 },	-- Royal Moth
 				}),
-				p(1736, {	-- Slithering Brownscale
-					["crs"] = { 97542 },	-- Slithering Brownscale
-				}),
+				pet(1736), 	-- Slithering Brownscale
 				p(1935, {	-- Squirky
 					["crs"] = { 113440 },	-- Squirky
 				}),

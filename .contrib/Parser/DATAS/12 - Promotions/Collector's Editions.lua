@@ -237,7 +237,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 		["groups"] = {
 			ach(10321),	-- Collector's Edition: Nibbles
 			ach(10320),	-- Collector's Edition: Illidari Felstalker
-			i(128426),	-- Nibbles
+			i(128426),	-- Nibbles (PET!)
 			i(128425),	-- Illidari Felstalker (MOUNT!)
 		},
 	}),
@@ -348,7 +348,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 		["timeline"] = { "added 6.2.3.20716" },
 		["groups"] = {
 			ach(11064),	-- Collector's Edition: Baby Winston
-			i(134047),	-- Baby Winston
+			i(134047),	-- Baby Winston (PET!)
 		},
 	})),
 	n(-564, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Starcraft II: Wings of Liberty

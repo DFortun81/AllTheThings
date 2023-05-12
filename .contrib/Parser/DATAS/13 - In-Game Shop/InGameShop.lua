@@ -266,7 +266,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 			["races"] = HORDE_ONLY,
 		}),
-		i(128426, {	-- Nibbles
+		i(128426, {	-- Nibbles (PET!)
 			["timeline"] = { "added 6.2.2.20395" },
 		}),
 		i(49665, {	-- Pandaren Monk

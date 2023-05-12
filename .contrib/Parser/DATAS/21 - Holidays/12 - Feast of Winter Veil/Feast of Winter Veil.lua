@@ -2408,7 +2408,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
                     { 47.6, 27.6, FROSTFIRE_RIDGE },
                 },
 				["groups"] = {
-					i(128770, {	-- Grumpling
+					i(128770, {	-- Grumpling (PET!)
 						["timeline"] = { "added 6.2.2.20395" },
 					}),
 					HUGE_SNOWBALL,
