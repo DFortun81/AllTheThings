@@ -29,7 +29,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 		i(140228),	-- Prestigious Bronze Courser (MOUNT!)
 	}),
 	ach(12900, {	-- Honor Level 20
-		i(139776, {	-- Horde Fanatic
+		i(139776, {	-- Horde Fanatic (PET!)
 			["races"] = HORDE_ONLY,
 			["crs"] = {
 				119272,	-- Sarah the Savage (Horde / Dalaran)
@@ -37,7 +37,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 				146626,	-- Legionaire Voladis (Horde / OG)
 			},
 		}),
-		i(139775, {	-- Alliance Enthusiast
+		i(139775, {	-- Alliance Enthusiast (PET!)
 			["races"] = ALLIANCE_ONLY,
 			["crs"] = {
 				119484,	-- Captain Roberts (Ally / Dalaran)

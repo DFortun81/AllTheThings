@@ -14,8 +14,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						i(139554, {	-- Acorn of the Endless
 							artifact(62),	-- Restoration Druid Hidden Artifact Appearance
 						}),
-						i(129362),	-- Broot Pet
-						i(140741),	-- Nightmare Lasher Pet
+						i(129362),	-- Broot (PET!)
+						i(140741),	-- Nightmare Lasher (PET!)
 						i(140397),	-- G'hanir's Blossom
 					},
 				}),

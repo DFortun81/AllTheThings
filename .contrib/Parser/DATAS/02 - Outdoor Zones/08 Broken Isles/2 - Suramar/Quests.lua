@@ -246,7 +246,7 @@ _.Zones =
 					["provider"] = { "n", 108872 },	-- Margaux
 					["sourceQuest"] = 42835,	-- The Old Fashioned Way
 					["g"] = {
-						i(139790),	-- Untethered Wyrmling
+						i(139790),	-- Untethered Wyrmling (PET!)
 					},
 				}),
 				q(40320, {	-- Band of Blood Brothers
@@ -1862,7 +1862,7 @@ _.Zones =
 					["provider"] = { "n", 103570 },	-- Mardranel Forestheart
 					["sourceQuest"] = 41453,	-- Homeward Bounding
 					["g"] = {
-						i(139791),	-- Lurking Owl Kitten
+						i(139791),	-- Lurking Owl Kitten (PET!)
 					},
 				}),
 				q(40762, {	-- Zealot's Dues

@@ -102,28 +102,28 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 					i(11023),	-- Ancona Chicken
 					i(10360),	-- Black Kingsnake
 					i(29958),	-- Blue Dragonhawk Hatchling
-					i(70160, {	-- Crimson Lasher
+					i(70160, {	-- Crimson Lasher (PET!)
 						["timeline"] = { "added 4.2.0.14333" },
 					}),
 					i(8501),	-- Hawk Owl
-					i(120051, {	-- Kaliri Hatchling
+					i(120051, {	-- Kaliri Hatchling (PET!)
 						["timeline"] = { "added 6.0.2.18764" },
 					}),
 					i(29363),	-- Mana Wyrmling
 					i(129826, {	-- Nursery Spider (PET!)
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(48120, {	-- Obsidian Hatchling
+					i(48120, {	-- Obsidian Hatchling (PET!)
 						["timeline"] = { "added 3.2.0.10026" },
 					}),
 					i(29902),	-- Red Moth Egg
-					i(136905, {	-- Ridgeback Piglet
+					i(136905, {	-- Ridgeback Piglet (PET!)
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(136908, {	-- Thaumaturgical Piglet
+					i(136908, {	-- Thaumaturgical Piglet (PET!)
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(139789, {	-- Transmutant
+					i(139789, {	-- Transmutant (PET!)
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
 					i(29903),	-- Yellow Moth Egg
@@ -240,7 +240,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 	}),
 	prof(ENGINEERING, {
 		filter(BATTLE_PETS, {
-			i(132519),	-- Trigger*
+			i(132519),	-- Trigger* (PET!)
 		}),
 		filter(TOYS, {
 			i(132518),	-- Blingtron's Circuit Design Tutorial (TOY!)

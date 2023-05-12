@@ -766,7 +766,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					n(114064, {	-- Snowfang
 						["description"] = "Defeating this NPC in a pet battle awards the pet.",
 						["g"] = {
-							i(141530),	-- Snowfang's Trust Pet
+							i(141530),	-- Snowfang (PET!)
 						},
 					}),
 					gt(49, {	-- Spirit Walk

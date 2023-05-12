@@ -263,7 +263,7 @@ _.Zones =
 					-- not sure if there are prereqs for this.
 					["coord"] = { 38.6, 65.6, VALSHARAH },
 					["groups"] = {
-						i(128354),	-- Grumpy's Leash (PET!)
+						i(128354),	-- Grumpy (PET!)
 					},
 				}),
 				q(41724, {	-- Heart of the Nightmare (Alliance)

@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					i(140656, {	-- Rod of the Ascended - Priest Artifact Appearance item
 						["cost"] = 20000000,	-- 2,000g
 					}),
-					i(136920, {	-- Sunborn Val'kyr (PET!)
+					i(136920, {	-- Sunborne Val'kyr (PET!)
 						["cost"] = 5000000,	-- 500g
 					}),
 					i(139602, {	-- Valarjar Runepriest's Vesture

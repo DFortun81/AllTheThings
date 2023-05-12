@@ -829,7 +829,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["g"] = {
 				--	i(163974),	-- Bucketshell	-- Listed under PvP w/ CRS
 				--	i(142380),	-- Dutiful Squire (PET!)
-				--	i(139776),	-- Horde Fanatic
+				--	i(139776),	-- Horde Fanatic (PET!)
 				},
 			}),
 			n(122698, {	-- Xanjo <Leatherworking Trainer>

@@ -36,7 +36,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(27),		-- Honey Bee
 		})),
 		petbattle(ach(11233, {	-- Broken Isles Safari*
-			i(141352),		-- Rescued Fawn
+			i(141352),		-- Rescued Fawn (PET!)
 			crit(1),		-- Albatross Chick (Azsuna, Stormheim)
 			crit(2),		-- Fledgling Kingfeather (Azsuna)
 			crit(3),		-- Fledgling Oliveback (Azsuna)

@@ -2014,7 +2014,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
-						--i(139775),	-- Alliance Enthusiast
+						--i(139775),	-- Alliance Enthusiast (PET!)
 						--i(142379),	-- Dutiful Squire (PET!)
 						un(ELITE_PVP_REQUIREMENT, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
 						un(ELITE_PVP_REQUIREMENT, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
@@ -5280,7 +5280,7 @@ _.Zones =
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
 					--	i(142380),	-- Dutiful Gruntling (PET!)
-					--	i(139776),	-- Horde Fanatic
+					--	i(139776),	-- Horde Fanatic (PET!)
 						un(ELITE_PVP_REQUIREMENT, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]
 						un(ELITE_PVP_REQUIREMENT, i(147357)),	-- Cruel Gladiator's Cloak [Elite Rating]
 						un(ELITE_PVP_REQUIREMENT, i(147338)),	-- Ferocious Gladiator's Tabard [Elite Rating]
@@ -6091,7 +6091,7 @@ _.Zones =
 						i(137570, {	-- Bloodfang Widow (MOUNT!)
 							["cost"] = 20000000000,	-- 2,000,000g
 						}),
-						i(136923, {	-- Celestial Calf Pet (PET!)
+						i(136923, {	-- Celestial Calf (PET!)
 							["cost"] = 10000000000,	-- 1,000,000g
 						}),
 						i(138300, {	-- Madman's Luggage

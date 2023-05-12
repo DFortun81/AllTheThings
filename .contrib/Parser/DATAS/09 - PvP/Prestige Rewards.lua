@@ -7,8 +7,8 @@ root(ROOTS.PVP, pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- P
 	["g"] = {
 		ach(10991, {	-- First Step into a Larger World [1]
 			i(139777, {	-- Strange Crate
-				i(139775),	-- Alliance Enthusiast
-				i(139776),	-- Horde Fanatic
+				i(139775),	-- Alliance Enthusiast (PET!)
+				i(139776),	-- Horde Fanatic (PET!)
 			}),
 		}),
 		ach(10743, {	-- The Prestige (A) [2]

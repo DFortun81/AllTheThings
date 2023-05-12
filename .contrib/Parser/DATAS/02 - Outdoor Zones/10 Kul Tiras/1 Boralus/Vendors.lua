@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 56.4, 26.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-				--	i(139775),	-- Alliance Enthusiast
+				--	i(139775),	-- Alliance Enthusiast (PET!)
 				--	i(142379),	-- Dutiful Squire (PET!)
 				},
 			}),

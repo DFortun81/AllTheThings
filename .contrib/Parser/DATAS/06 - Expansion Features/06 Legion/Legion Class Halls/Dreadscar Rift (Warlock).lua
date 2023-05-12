@@ -774,7 +774,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(139577, {	-- The Burning Jewel of Sargeras
 								artifact(207),	-- Scepter of Sargeras
 							}),
-							i(136900),	-- Hateful Eye Pet
+							i(136900),	-- Hateful Eye (PET!)
 							i(141971),	-- Cowl of the Doomed Ritual
 							i(141974),	-- Shoulderpads of the Doome Ritual
 							i(141973),	-- Robe of the Doomed Ritual

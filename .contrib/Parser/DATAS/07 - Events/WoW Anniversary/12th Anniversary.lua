@@ -50,7 +50,7 @@ root(ROOTS.WorldEvents, n(TWELFTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNI
 			["coord"] = { 36.6, 74.6, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(136925, {	-- Corgi Pup
+				i(136925, {	-- Corgi Pup (PET!)
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),
 				i(128506, {	-- Celebration Wand - Gnoll
@@ -74,7 +74,7 @@ root(ROOTS.WorldEvents, n(TWELFTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNI
 			["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(136925, {	-- Corgi Pup
+				i(136925, {	-- Corgi Pup (PET!)
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),
 				i(128506, {	-- Celebration Wand - Gnoll

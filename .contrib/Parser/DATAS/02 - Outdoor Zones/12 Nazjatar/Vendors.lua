@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 38.0, 55.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-			--	i(139775),	-- Alliance Enthusiast
+			--	i(139775),	-- Alliance Enthusiast (PET!)
 			--	i(142379),	-- Dutiful Squire (PET!)
 			--	i(163975),	-- Sir Snips -- Listed under PvP w/ CRS
 			},
@@ -518,7 +518,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 48.6, 60.7, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
-			--	i(139776),	-- Horde Fanatic
+			--	i(139776),	-- Horde Fanatic (PET!)
 			--	i(142380),	-- Dutiful Gruntling (PET!)
 			--	i(163974),	-- Bucketshell -- Listed under PvP w/ CRS
 			},

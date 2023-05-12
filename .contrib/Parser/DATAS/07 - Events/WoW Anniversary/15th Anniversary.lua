@@ -1289,7 +1289,7 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 				i(147882, {	-- Celebration Wand - Trogg
 					["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
 				}),
-				i(136925, {	-- Corgi Pup
+				i(136925, {	-- Corgi Pup (PET!)
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),
 				i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"

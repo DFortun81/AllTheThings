@@ -275,7 +275,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248
 					},
 					["timeline"] = { "added 7.0.3.22290" },
 					["g"] = {
-						i(136924),	-- Felbat Pup Pet
+						i(136924),	-- Felbat Pup (PET!)
 						i(141604),	-- Glaive of the Fallen
 						i(142526),	-- Glaive of the Fallen (this 2nd version was seen in game Oct 2020)
 						i(138160),	-- Infernal Cord

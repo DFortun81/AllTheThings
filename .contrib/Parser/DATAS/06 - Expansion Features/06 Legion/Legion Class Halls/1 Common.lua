@@ -429,7 +429,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					}),
 				}),
 				mission(1387, {	-- Friends, Not Food
-					i(140316),	-- Firebat Pup
+					i(140316),	-- Firebat Pup (PET!)
 				}),
 				mission(1381, {	-- Glittering Treasure
 					i(129165),	-- Barnacle-Encrusted Gem (TOY!)
@@ -450,7 +450,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					}),
 				}),
 				mission(1386, {	-- It's so FLUFFY!
-					i(140320),	-- Corgnelius
+					i(140320),	-- Corgnelius (PET!)
 				}),
 				mission(1512, {	-- Master of Shadows
 					q(45304, {	-- Attacking the Darkness

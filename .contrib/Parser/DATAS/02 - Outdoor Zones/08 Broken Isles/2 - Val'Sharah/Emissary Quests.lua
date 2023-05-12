@@ -22,7 +22,7 @@ _.Zones =
 							},
 							["groups"] = {
 								i(144319),	-- Formula: Enchant Neck - Mark of the Deadly [Rank 3] (RECIPE!)
-								i(130167),	-- Thistleleaf Adventurer
+								i(130167),	-- Thistleleaf Adventurer (PET!)
 							},
 						}),
 						un(REMOVED_FROM_GAME, i(154903, {	-- Dreamweaver Provisions
