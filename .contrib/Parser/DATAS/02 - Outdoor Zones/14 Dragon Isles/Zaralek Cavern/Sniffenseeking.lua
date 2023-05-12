@@ -131,6 +131,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["g"] = {
 							i(205185),	-- Muddy Key
 							i(205186),	-- Sticky Key
+							i(205911),	-- Mysterious Incense
 						},
 					}),
 					q(75397, {	-- Those Rascally Worms
@@ -147,6 +148,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75996, {	-- Your Weight in Gold
 						["coord"] = { 58.5, 51.8, ZARALEK_CAVERN },
+						["g"] = {
+							i(205909),	-- Stretched Canvas
+						},
 					}),
 					q(75620, {	-- Liars in Light
 						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
@@ -173,12 +177,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["coord"] = { 56.9, 51.4, ZARALEK_CAVERN },
 						["g"] = {
 							i(205412),	-- Jangly Key
+							i(205910),	-- Bubbling Elixir
 						},
 					}),
 					q(76081, {	-- Liars of Spirit
 						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
 						["g"] = {
 							i(205990),	-- Fierce Key
+						},
+					}),
+					q(76014, {  -- Living Statue
+						["g"] = {
+							i(205938),  -- Heated Titan Key
+							i(205912),	-- Leather-Wrapped Flask
 						},
 					}),
 					q(76027, {	-- Flapping and Screaming
@@ -215,11 +226,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 201426 },	-- Myrrit
 						["coord"] = { 55.6, 57.4, ZARALEK_CAVERN },
 					}),
-					q(76014, {  -- Living Statue
-						["g"] = {
-							i(205938),  -- Heated Titan Key
-						},
-					}),
 					q(74878, {	-- Old Friends, Dear Friends
 						["sourceQuests"] = { 74953 },	-- The Heavy Crown
 						["provider"] = { "n", 202766 },	-- Myrrit
@@ -232,8 +238,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					-- Sniffen Sage --
 					q(75772, {	-- Flask Manage
-						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
-						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during Living Statue (quest:76014).",
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205912 },	-- Leather-Wrapped Flask
 						["coord"] = { 58.5, 56.4, ZARALEK_CAVERN },
 						["g"] = {
@@ -241,8 +246,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					q(75770, {	-- A Glass of Bubbly
-						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
-						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during Sneek and Sniff (quest:75517).",
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205910 },	-- Bubbling Elixir
 						["coord"] = { 56.7, 52.9, ZARALEK_CAVERN },
 						["g"] = {
@@ -250,18 +254,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					q(75769, {	-- Drawing a Blank
-						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
-						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during Weight in Gold (quest:75996).",
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205909 },	-- Stretched Canvas
 						["coord"] = { 58.5, 51.5, ZARALEK_CAVERN },
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},
 					}),
+					q(75771, {	-- Incense Replay
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["provider"] = { "i", 205911 },	-- Mysterious Incense
+						["coord"] = { 56.0, 57.5, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
 					--[[
 					q(75765, {	-- Liquid Art
-						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
-						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["description"] = "Can be looted during ? (quest:?).",
 						["provider"] = { "i", 205366 },	-- Dripping Clay Pot
 						["coord"] = { x, y, ZARALEK_CAVERN },
 						["g"] = {
@@ -269,8 +280,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					q(75766, {	-- Ruby in the Rough
-						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
-						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["description"] = "Can be looted during ? (quest:?).",
 						["provider"] = { "i", 205900 },	-- Shimmering Draconic Gem
 						["coord"] = { x, y, ZARALEK_CAVERN },
 						["g"] = {
@@ -278,8 +289,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					q(75767, {	-- Good Time Boy
-						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
-						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["description"] = "Can be looted during ? (quest:?).",
 						["provider"] = { "i", 205907 },	-- Soaked Totem
 						["coord"] = { x, y, ZARALEK_CAVERN },
 						["g"] = {
@@ -287,33 +298,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					q(75768, {	-- Lucky Ducky
-						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
-						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["description"] = "Can be looted during ? (quest:?).",
 						["provider"] = { "i", 205906 },	-- Feathered Friend
 						["coord"] = { x, y, ZARALEK_CAVERN },
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},
 					}),
-					q(75771, {	-- Incense Replay
-						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
-						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
-						["provider"] = { "i", 205911 },	-- Mysterious Incense
-						["coord"] = { x, y, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
-					}),
 					q(75773, {	-- Little Blank Book
-						-- TODO: ["sourceQuests"] = {  },	-- Renown 9 with Loamm Niffen (no hqt)
-						["description"] = "Renown 9 with Loamm Niffen is required, can be looted during ? (quest:?).",
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["description"] = "Can be looted during ? (quest:?).",
 						["provider"] = { "i", 205913 },	-- Blank Notebook
 						["coord"] = { x, y, ZARALEK_CAVERN },
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},
 					}), ]]--
-					
+
 				}),
 				n(REWARDS, {
 					i(205288),	-- Buried Niffen Collection (Frostfire)

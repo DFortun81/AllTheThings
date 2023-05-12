@@ -10,7 +10,7 @@ local function FatedItem(modItemID, modID)
 	local item = i(math.floor(modItemID));
 	item.modID = modID;
 	item.sym = {{"select","itemID",modItemID}};	-- Base Version
-	item.timeline = { ADDED_9_2_5 };
+	item.timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH };
 	return item;
 end
 root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
