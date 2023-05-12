@@ -121,7 +121,6 @@ i(197148, 69349);	-- Highland Drake: Vertical Finned Tail
 i(197146, 69347);	-- Highland Drake: White Scales
 i(197357, 69558);	-- Renewed Proto-Drake: Armor
 i(197401, 69602);	-- Renewed Proto-Drake: Beaked Snout
-i(197348, 69549);	-- Renewed Proto-Drake: Black and Red Armor
 i(197392, 69593);	-- Renewed Proto-Drake: Black Scales
 i(197368, 69569);	-- Renewed Proto-Drake: Blue Hair
 i(197390, 69591);	-- Renewed Proto-Drake: Blue Scales
@@ -287,6 +286,7 @@ i(197156, 69357);	-- Highland Drake: Bronze and Green Armor
 i(197120, 69321);	-- Highland Drake: Ornate Helm
 i(197109, 69310);	-- Highland Drake: Spiked Head
 i(197104, 69305);	-- Highland Drake: Tapered Chin
+i(197348, 69549);	-- Renewed Proto-Drake: Black and Red Armor
 i(202275, 73059);	-- Renewed Proto-Drake: Plated Jaw
 i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
 i(197364, 69565);	-- Renewed Proto-Drake: Short Spiked Crest

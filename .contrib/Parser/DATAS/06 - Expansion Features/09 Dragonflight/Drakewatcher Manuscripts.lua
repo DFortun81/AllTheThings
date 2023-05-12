@@ -841,7 +841,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
 			i(197357),	-- Renewed Proto-Drake: Armor
-			i(197348),	-- Renewed Proto-Drake: Black and Red Armor
 			i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197371),	-- Renewed Proto-Drake: Green Hair
@@ -962,6 +961,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197104),	-- Highland Drake: Tapered Chin (DM!)
 		}),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
+			i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
 			i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
 			i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
 			i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)

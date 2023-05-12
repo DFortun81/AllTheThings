@@ -7,18 +7,27 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			ach(17506),	-- Still Standing in the Fire
 			ach(17735),	-- We Didn't Start the Fire
 		}),
-		n(QUESTS, {
+		n(QUESTS, sharedData({ ["isWeekly"] = true, ["_drop"] = { "g" } }, {
 			q(75887, {	-- Fyrakk's Forces
 				["provider"] = { "n", 205647 },	-- Kalecgos
+				["isWeekly"] = false,
 			}),
 				-- Ohn'haran Plains --
 			q(74573, {	-- Aerial Support
 				["provider"] = { "n", 201648 },	-- Somnikus
 				["coord"] = { 75.2, 69.2, OHNAHRAN_PLAINS },
 			}),
+			q(74570, {	-- Aid Our Wounded
+				["provider"] = { "n", 201861 },	-- Tigari Khan
+				["coord"] = { 75.6, 69.1, OHNAHRAN_PLAINS },
+			}),
 			q(75168, {	-- Air Control
 				["provider"] = { "n", 201090 },	-- Mayla Highmountain
 				["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
+			}),
+			q(74569, {	-- Deny Them Resources
+				["provider"] = { "n", 201860 },	-- Tigari Khan
+				["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
 			}),
 			q(74775, {	-- Disciple of Fyrakk: Kretchenwrath
 				["provider"] = { "i", 204071 },	-- Head of Kretchenwrath
@@ -31,9 +40,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 201648 },	-- Somnikus
 				["coord"] = { 75.2, 69.2, OHNAHRAN_PLAINS },
 			}),
+			q(74568, {	-- They Who Would Burn Us
+				["provider"] = { "n", 201090 },	-- Mayla Highmountain
+				["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
+			}),
 			q(75181, {	-- Volunteer Fire Fighters
 				["provider"] = { "n", 201861 },	-- Tigari Khan
-				["coord"] = { 75.4, 69.1, OHNAHRAN_PLAINS },
+				["coord"] = { 75.6, 69.1, OHNAHRAN_PLAINS },
 			}),
 				-- Azure Span --
 			q(75375, {	-- Burning Ice
@@ -55,26 +68,35 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 203522 },	-- Archmage Khadgar
 				["coord"] = { 58.4, 34.4, THE_AZURE_SPAN },
 			}),
-		}),
-		n(RARES, {
-			n(201673, {	-- Shadeisethal
-				["coord"] = { 74.9, 69.6, THE_AZURE_SPAN },
+		})),
+		n(RARES, sharedData({ ["isWeekly"] = true }, {
+			n(201673, {	-- Kretchenwrath
+				["maps"] = { OHNAHRAN_PLAINS },
 				["questID"] = 75467,
 				["g"] = {
 					i(204071),	-- Head of Kretchenwrath
 				},
 			}),
 			n(203411, {	-- Shadeisethal
-				["coord"] = { 58.2, 31.5, THE_AZURE_SPAN },
+				["maps"] = { THE_AZURE_SPAN },
 				--["questID"] = ,
 				["g"] = {
 					i(204683),	-- Head of Shadeisethal
 				},
 			}),
-		}),
+		})),
 		n(REWARDS, {
-			i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
+			i(200453),	-- Iskaara Tuskarr Insignia
+			i(200454),	-- Maruuk Centaur Insignia
 			i(204076),	-- Drake's Shadowflame Crest Fragments
+			filter(BATTLE_PETS, {
+				i(205003),	-- Ambre (PET!)
+				i(205002),	-- Blaise (PET!)
+			}),
+			n(DRAKEWATCHER_MANUSCRIPTS, {
+				i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
+				i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
+			}),
 			n(BACK, {
 				i(204897),	-- Suffused Cloak
 				i(204898),	-- Suffused Drape
@@ -151,7 +173,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				i(204737),	-- Suffused Warglaive
 			}),
 		}),
-		n(TREASURES, {
+		n(TREASURES, sharedData({ ["isWeekly"] = true }, {
 			o(398815, {	-- Secured Shipment
 				["coord"] = { 73.8, 72.5, OHNAHRAN_PLAINS },
 				["questID"] = 75525,
@@ -162,7 +184,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["questID"] = 74526,
 				["cost"] = { { "i", 203710, 3 } },	-- 3x Everburning Key
 			}),
-		}),
+		})),
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
 			q(74501, {	-- Suffusion Camp: Cinderwind
 				["coord"] = { 75.1, 69.3, OHNAHRAN_PLAINS },
@@ -172,8 +194,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		})),
 		n(ZONE_DROPS, {
-			i(205003),	-- Ambre (PET!)
-			i(205002),	-- Blaise (PET!)
 			i(203710, {	-- Everburning Key
 				["cost"] = { { "i", 203683, 5 } },	-- 5x Ward of Fyrakk
 			}),

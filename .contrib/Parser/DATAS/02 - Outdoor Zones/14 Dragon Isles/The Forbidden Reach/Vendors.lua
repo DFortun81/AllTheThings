@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							{ "i", 202854, 1 },	-- 1x Wondrous Fish [Have no Source of This yet]
 						},
 						["g"] = {
-							i(200453),	-- Iskaara Tuskarr (Accwide)
+							i(200453),	-- Iskaara Tuskarr Insignia (Accwide)
 						},
 					}),
 					i(204481, {	-- Morqut Hearth Totem
