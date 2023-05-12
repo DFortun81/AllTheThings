@@ -914,7 +914,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["lockCriteria"] = { 1, "spellID", 366255},	-- Dragon Isles Enchanting
 				}),
 				q(70029, {	-- Artisan's Supply: Runed Serevite Rods
-					["sourceQuests"] = { 70360 },	-- Dragon Isles Enchanting
 					["providers"] = {
 						{ "n", 192055 },	-- Veeno <Enchanting Trainer>
 						{ "n", 198903 },	-- Asarin <Enchanting Trainer & Supplies>
@@ -1177,11 +1176,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["lockCriteria"] = { 1, "spellID", 366254},	-- Dragon Isles Engineering
 				}),
 				q(70030, {	-- Artisan's Supply: Quality-Assured Optics
-					["sourceQuests"] = {
-						72242,	-- Dragon Isles Engineering
-						70359,	-- Dragon Isles Engineering
-					},
-					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
 					["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
 					["cost"] = { { "i", 198328, 1 }, },	-- 2xQuality-Assured Optics
@@ -1468,11 +1462,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["lockCriteria"] = { 1, "spellID", 366242},	-- Dragon Isles Herbalism
 				}),
 				q(70026, {	-- Artisan's Supply: Lava Beetles
-					["sourceQuests"] = {
-						70364,	-- Dragon Isles Herbalism
-						72243,	-- Dragon Isles Herbalism
-					},
-					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 192549 },	-- Feilin Kuan
 					["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 					["cost"] = { { "i", 197755, 5 }, },	-- 5x Lava Beetle
@@ -1576,11 +1565,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["lockCriteria"] = { 1, "spellID", 366251},	-- Dragon Isles Inscription
 				}),
 				q(70031, {	-- Artisan's Supply: Chef's Smooth Rolling Pin
-					["sourceQuests"] = {
-						70361,	-- Dragon Isles Inscription
-						72244,	-- Dragon Isles Inscription
-					},
-					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 198125 },	-- Isarian Shadowplume
 					["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
 					["cost"] = { { "i", 191233, 2 }, },	-- 2xChef's Smooth Rolling Pin
@@ -1846,11 +1830,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["lockCriteria"] = { 1, "spellID", 366250},	-- Dragon Isles Jewelcrafting
 				}),
 				q(70032, {	-- Artisan's Supply: Jeweler's Specs
-					["sourceQuests"] = { 
-						70365,	-- To the Dragon Isles: Jewelcrafting
-						72247,	-- To the Dragon Isles: Jewelcrafting
-					 },
-					["sourceQuestNumRequired"] = 1,	
 					["provider"] = { "n", 192121 },	-- Falron Greygold
 					["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
 					["cost"] = { { "i", 193037, 1 }, },	-- Sundered Onyx Loupe
@@ -2120,11 +2099,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["lockCriteria"] = { 1, "spellID", 366249},	-- Dragon Isles Leatherworking
 				}),
 				q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
-					["sourceQuests"] = {
-						70362,	-- Dragon Isles Leatherworking
-						72293,	-- Adventuring in the Dragon Isles
-					},
-					["sourceQuestNumRequired"] = 1,
 					["providers"] = {
 						{ "n", 192027 },	-- Dokhusek
 						{ "n", 192048 },	-- Deirdre Flemmin
@@ -2377,7 +2351,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		prof(MINING, bubbleDown({ ["requireSkill"] = MINING }, {
 			n(QUESTS, {
 				q(70028, {	-- Artisan's Supply: Salt Deposits
-					--["sourceQuests"] = {  },	-- Unknown
 					["provider"] = { "n", 187261 },	-- Grun Ashbeard
 					["coord"] = { 76.3, 34.6, THE_WAKING_SHORES },
 					["cost"] = { { "i", 197754, 5 }, },	-- 5x Salt Deposit
@@ -2480,7 +2453,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["lockCriteria"] = { 1, "spellID", 366263},	-- Dragon Isles Skinning
 				}),
 				q(70034, {	-- Artisan's Supply: Salamanther Scale
-					["sourceQuests"] = { 70363 },	-- Dragon Isles Skinning
 					["provider"] = { "n", 192558 },	-- Toninaar
 					["coord"] = { 76.6, 34.8, THE_WAKING_SHORES },
 					["cost"] = { { "i", 193252, 3 }, },	-- 3x Salamanther Scales
@@ -2600,11 +2572,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["lockCriteria"] = { 1, "spellID", 366258},	-- Dragon Isles Tailoring
 				}),
 				q(70027, {	-- Artisan's Supply: Surveyor's Cloth Bands
-					["sourceQuests"] = {
-						72249,	-- Dragon Isles Tailoring
-						70366,	-- Dragon Isles Tailoring
-					},
-					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 191894 },	-- Krillonn <Tailoring Trainer>
 					["coord"] = { 61.4, 70.0, THE_WAKING_SHORES },
 					["cost"] = { { "i", 193497, 1 }, },	-- 2xSurveyor's Cloth Bands
