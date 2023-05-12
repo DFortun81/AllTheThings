@@ -973,7 +973,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["collectible"] = false,
 				["g"] = {
 					q(70132, {	-- Stay a While
-						["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+						["sourceQuests"] = {
+							66114,	-- For the Benefit of the Queen
+							DF_ACCOUNT_CAMPAIGN_QUEST,
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 194076 },	-- Veritistrasz
 						["coord"] = { 57.8, 66.8, THE_WAKING_SHORES },
 					}),
