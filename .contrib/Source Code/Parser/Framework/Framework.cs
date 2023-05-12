@@ -1572,6 +1572,12 @@ namespace ATT
                     LogError($"'criteriaID' {criteriaID} missing 'achID' under non-Achievement group [{CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}]", data);
                 }
             }
+
+            // Explicitly-marked 'non-collectible' Headers should not be necessary and can be warned to convert to Automatic Header type
+            if (data.TryGetValue("collectible", out bool collectible) && !collectible && data.ContainsKey("g"))
+            {
+                LogDebug($"WARN: Explicitly Non-Collectible Header defined. Convert to Automatic Header or adjust as needed", data);
+            }
         }
 
         private static void CheckTrackableFields(Dictionary<string, object> data)
