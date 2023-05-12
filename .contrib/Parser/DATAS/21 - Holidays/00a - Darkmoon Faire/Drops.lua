@@ -3,12 +3,7 @@
 --------------------------------------------
 
 root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Island
-	n(DROPS, bubbleDown({ 
-		["isMonthly"] = true,
-		["g"] = {
-			currency(515),	-- Darkmoon Prize Ticket
-		},
-	}, {
+	n(DROPS, {
 		-- PvE
 		i(71715, {	-- A Treatise on Strategy
 			["description"] = "Can drop from instanced PvE content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 10x Darkmoon Prize Ticket.",
@@ -39,5 +34,5 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 		i(71953, {	-- Fallen Adventurer's Journal
 			["description"] = "Can drop from instanced PvP content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 5x Darkmoon Prize Ticket",
 		}),
-	})),
+	}),
 })));

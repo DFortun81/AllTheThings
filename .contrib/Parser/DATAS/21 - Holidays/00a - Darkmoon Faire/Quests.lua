@@ -116,6 +116,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["provider"] = { "i", 71951 },	-- Banner of the Fallen
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
+			["g"] = {
+				currency(515),	-- DMF Prize Ticket
+			},
 		}),
 		q(29447, {	-- A Curious Crystal
 			["u"] = REMOVED_FROM_GAME,
@@ -125,6 +128,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["provider"] = { "i", 71635 },	-- Imbued Crystal
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
+			["g"] = {
+				currency(515),	-- DMF Prize Ticket
+			},
 		}),
 		q(29506, {	-- A Fizzy Fusion
 			["requireSkill"] = ALCHEMY,
@@ -145,6 +151,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["provider"] = { "i", 71636 },	-- Monstrous Egg
 			["coord"] = { 51.1, 82.0, 407 },
 			["lvl"] = 10,
+			["g"] = {
+				currency(515),	-- DMF Prize Ticket
+			},
 		}),
 		q(29449, {	-- An Intriguing Grimoire
 			["u"] = REMOVED_FROM_GAME,
@@ -154,6 +163,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["provider"] = { "i", 71637 },	-- Mysterious Grimoire
 			["coord"] = { 53.2, 75.8, 407 },
 			["lvl"] = 10,
+			["g"] = {
+				currency(515),	-- DMF Prize Ticket
+			},
 		}),
 		q(29450, {	-- A Wondrous Weapon
 			["u"] = REMOVED_FROM_GAME,
@@ -163,6 +175,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["provider"] = { "i", 71638 },	-- Ornate Weapon
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
+			["g"] = {
+				currency(515),	-- DMF Prize Ticket
+			},
 		}),
 		q(7885, {	-- Armor Kits
 			["requireSkill"] = LEATHERWORKING,
@@ -870,12 +885,18 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["isMonthly"] = true,
 			["provider"] = { "n", 14832 },	-- Kerri Hicks
 			["coord"] = { 47.9, 67.1, 407 },
+			["g"] = {
+				currency(515),	-- DMF Prize Ticket
+			},
 		}),
 		q(29458, {	-- The Captured Journal
 			["isMonthly"] = true,
 			["provider"] = { "i", 71953 },	-- Fallen Adventurer's Journal
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
+			["g"] = {
+				currency(515),	-- DMF Prize Ticket
+			},
 		}),
 		q(7905, {	-- The Darkmoon Faire
 			["qg"] = 54334,	-- Darkmoon Faire Mystic Mage
@@ -918,6 +939,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["provider"] = { "i", 71715 },	-- A Treatise on Strategy
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
+			["g"] = {
+				currency(515),	-- DMF Prize Ticket
+			},
 		}),
 		q(37911, {	-- The Real Big Race
 			["sourceQuests"] = { 37819 },	-- Welcome to the Darkmoon Races
@@ -1048,6 +1072,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["provider"] = { "i", 71716 },	-- Soothsayer's Runes
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 60,
+			["g"] = {
+				currency(515),	-- DMF Prize Ticket
+			},
 		}),
 		q(29465, {	-- Tools of Divination
 			["u"] = REMOVED_FROM_GAME,

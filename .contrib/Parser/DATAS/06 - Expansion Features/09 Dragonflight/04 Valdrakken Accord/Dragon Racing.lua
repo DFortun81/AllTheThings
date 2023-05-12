@@ -31,6 +31,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197104),	-- Highland Drake: Tapered Chin (DM!)
 					i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
 					i(203361),	-- Winding Slitherdrake: Finned Tip Tail (DM!)
+					i(203348),	-- Winding Slitherdrake: Pointed Nose (DM!)
 					i(203317),	-- Winding Slitherdrake: Small Finned Crest (DM!)
 					i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (DM!)
 				})),

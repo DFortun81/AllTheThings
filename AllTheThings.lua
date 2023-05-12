@@ -16817,7 +16817,7 @@ RowOnEnter = function (self)
 		if reference.isWorldQuest then GameTooltip:AddLine(L["DURING_WQ_ONLY"]); end
 		if reference.isDaily then GameTooltip:AddLine(L["COMPLETED_DAILY"]);
 		elseif reference.isWeekly then GameTooltip:AddLine(L["COMPLETED_WEEKLY"]);
-		elseif reference.isMontly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);
+		elseif reference.isMonthly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);
 		elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
 		elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
 		if initialBuild and not GameTooltipModel:TrySetModel(reference) and reference.icon then
@@ -24036,8 +24036,6 @@ app.Startup = function()
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 	app:RegisterEvent("PET_BATTLE_OPENING_START")
 	app:RegisterEvent("PET_BATTLE_CLOSE")
-	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED")
-	app:RegisterEvent("VIGNETTES_UPDATED")
 
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 	-- app.PrintMemoryUsage("Startup:Done")
@@ -24399,6 +24397,8 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
 	app:RegisterEvent("LEARNED_SPELL_IN_TAB");
 	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
+	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED")
+	app:RegisterEvent("VIGNETTES_UPDATED")
 
 	-- check if we are in a Party Sync session when loading in
 	app.IsInPartySync = C_QuestSession.Exists();
