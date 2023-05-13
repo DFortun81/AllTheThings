@@ -39,8 +39,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, sformat, strsplit, GetTimePreciseSec
-	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, string.format, strsplit, GetTimePreciseSec;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, sformat, strsplit, GetTimePreciseSec
+	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, string.format, strsplit, GetTimePreciseSec;
 local ATTAccountWideData, IsRetrieving;
 -- Retrieving Data Locals
 do
@@ -7512,8 +7512,8 @@ local ObjectDefaults = {
 	["progress"] = 0,
 	["total"] = 0,
 };
-local getmetatable, setmetatable =
-	  getmetatable, setmetatable;
+local getmetatable =
+	  getmetatable;
 local ObjectFunctions = {
 	-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 	["parent"] = function(t)
@@ -7569,7 +7569,11 @@ app.BaseObjectFields = not app.__perf and function(fields, type)
 		objFunc = rawget(fields, key) or rawget(ObjectFunctions, key);
 		if objFunc then return objFunc(t); end
 		-- use default key value if existing
-		return rawget(ObjectDefaults, key);
+		local def = rawget(ObjectDefaults, key);
+		if def ~= nil then return def; end
+		-- object is a wrapper for another Type object?
+		local base = rawget(t, "__base");
+		if base then return base[key]; end
 	end;
 	-- app.PrintDebug("BaseObjectFields",type,fields)
 	return fields;
@@ -7596,6 +7600,14 @@ function(fields, type)
 			result = rawget(ObjectDefaults, key);
 			key = tostring(key).."_miss";
 		end
+		if result == nil then
+			-- object is a wrapper for another Type object?
+			local base = rawget(t, "__base");
+			if base then
+				key = tostring(key).."__base";
+				result = base[key];
+			end
+		end
 		if typeData then
 			rawset(typeData, key, (rawget(typeData, key) or 0) + 1);
 			rawset(typeData, key.."_Time", (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now));
@@ -7615,6 +7627,11 @@ app.SetBaseObject = function(t, base)
 		-- app.PrintDebug("NewBase",base.hash)
 		setmetatable(t, { __index = base } );
 	end
+end
+-- Allows wrapping a Base Type Object around another Type Object. This allows for multiple inheritance of
+-- Objects without requiring a full definition of altered field functions
+app.WrapObject = function(t, base)
+	return setmetatable({ __base=t}, base);
 end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField)
