@@ -3003,7 +3003,7 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 				-- not a difficulty
 				not group.difficultyID and
 				-- not a Zone/CB Drop header
-				not (group.headerID and group.headerID > -2) and
+				not (group.headerID and type(group.headerID) == "number" and group.headerID > -2) and
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
 				-- account/debug mode is active or it is not a 'saved' thing for this character
