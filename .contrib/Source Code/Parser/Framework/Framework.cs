@@ -978,7 +978,7 @@ namespace ATT
                                 c[2].TryConvert(out long count) &&
                                 count == 1)
                             {
-                                Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'", data);
+                                LogDebug($"WARN: 'cost' = {ToJSON(c)} should be 'provider'", data);
                             }
                         }
                         break;
@@ -1315,13 +1315,20 @@ namespace ATT
             {
                 if (data.TryGetValue("_quests", out object quests))
                 {
-                    LogDebug($"INFO: Remove _quests {ToJSON(quests)} from Criteria {achID}:{criteriaID}. AchievementDB contains sourceQuest: {questID}");
+                    LogDebug($"WARN: Remove _quests {ToJSON(quests)} from Criteria {achID}:{criteriaID}. AchievementDB contains sourceQuest: {questID}");
                 }
                 else
                 {
                     LogDebug($"INFO: Added _quests to Criteria {achID}:{criteriaID} with sourceQuest: {questID}");
                 }
+
                 data["_quests"] = new List<long> { questID };
+
+                // Criteria moved under a Quest should not have a cost/provider, but rather their destination should have that data
+                // if (data.ContainsKey("cost") || data.ContainsKey("providers"))
+                // {
+                //     LogDebug($"WARN: Move cost/provider from Criteria {achID}:{criteriaID} to its SourceQuest {questID} if applicable");
+                // }
 #if RETAIL
                 // can remove 'sourceQuests' from the criteria in Retail since it's going to be sourced under the required quest
                 data.Remove("sourceQuests");
@@ -2700,7 +2707,7 @@ namespace ATT
                         decimal itemID = Items.GetSpecificItemID(item);
                         if (Items.IsItemReferenced(itemID))
                         {
-                            Log($"WARN: Item {itemID} is referenced and also included in Uncollectible.lua");
+                            LogDebug($"INFO: Item {itemID} is referenced and also included in Uncollectible.lua");
                         }
                         else
                         {
