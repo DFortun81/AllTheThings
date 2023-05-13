@@ -8912,9 +8912,6 @@ local fields = {
 			return achievementID;
 		end
 	end,
-	["text"] = function(t)
-		return t.link or t.name;
-	end,
 	["link"] = function(t)
 		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
@@ -9620,9 +9617,6 @@ local fields = {
 			return 2;
 		end
 	end,
-	["text"] = function(t)
-		return t.link;
-	end,
 	["lvl"] = function(t)
 		return 50;
 	end,
@@ -10002,9 +9996,6 @@ end)();
 local C_CurrencyInfo_GetCurrencyInfo, C_CurrencyInfo_GetCurrencyLink
 	= C_CurrencyInfo.GetCurrencyInfo, C_CurrencyInfo.GetCurrencyLink;
 local cache = app.CreateCache("currencyID");
-local function default_text(t)
-	return t.link or t.name;
-end
 local function default_info(t)
 	return C_CurrencyInfo_GetCurrencyInfo(t.currencyID);
 end
@@ -10028,9 +10019,6 @@ local fields = {
 	end,
 	["_cache"] = function(t)
 		return cache;
-	end,
-	["text"] = function(t)
-		return cache.GetCachedField(t, "text", default_text);
 	end,
 	["info"] = function(t)
 		return cache.GetCachedField(t, "info", default_info);
@@ -10880,7 +10868,6 @@ local function CacheInfo(t, field)
 	local info = C_Garrison_GetFollowerInfo(id);
 	if info then
 		_t.name = info.name;
-		_t.text = info.name;
 		_t.lvl = info.level;
 		_t.icon = info.portraitIconID;
 		_t.title = info.className;
@@ -10892,9 +10879,6 @@ end
 local fields = {
 	["key"] = function(t)
 		return "followerID";
-	end,
-	["text"] = function(t)
-		return cache.GetCachedField(t, "text", CacheInfo);
 	end,
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
@@ -10952,7 +10936,6 @@ local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
 	local _, name, _, icon, lore, _, _, _, _, _, uncollected = C_Garrison_GetBuildingInfo(id);
 	_t.name = name;
-	_t.text = name;
 	_t.lore = lore;
 	_t.icon = _t.icon or icon;
 	if not uncollected then
@@ -10973,9 +10956,6 @@ end
 local fields = {
 	["key"] = function(t)
 		return "buildingID";
-	end,
-	["text"] = function(t)
-		return t.link or cache.GetCachedField(t, "text", CacheInfo);
 	end,
 	["link"] = function(t)
 		return cache.GetCachedField(t, "link", CacheInfo);
@@ -11015,7 +10995,7 @@ local fields = {
 	["key"] = function(t)
 		return "missionID";
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		return C_Garrison_GetMissionName(t.missionID);
 	end,
 	["icon"] = function(t)
@@ -11035,7 +11015,7 @@ local fields = {
 		-- TODO: use cache
 		return C_Garrison_GetTalentInfo(t.talentID) or {};
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		return t.info.name;
 	end,
 	["icon"] = function(t)
@@ -11066,7 +11046,7 @@ local fields = {
 	["info"] = function(t)
 		return C_TransmogSets_GetSetInfo(t.setID) or {};
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		return t.info.name;
 	end,
 	["icon"] = function(t)
@@ -11127,9 +11107,6 @@ local fields = {
 			return itemID;
 		end
 	end,
-	["text"] = function(t)
-		return t.link;
-	end,
 	["link"] = function(t)
 		return t.itemID and select(2, GetItemInfo(t.itemID));
 	end,
@@ -11168,7 +11145,7 @@ local fields = {
 	["info"] = function(t)
 		return C_TransmogSets_GetSetInfo(t.setID) or {};
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		return t.info.label;
 	end,
 	["icon"] = function(t)
@@ -11197,7 +11174,7 @@ local fields = {
 	["info"] = function(t)
 		return C_TransmogSets_GetSetInfo(t.setID) or {};
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		return t.info.description;
 	end,
 	["icon"] = function(t)
@@ -11307,9 +11284,6 @@ local fields = {
 		return {};
 	end,
 	["name"] = function(t)
-		return t.info.name;
-	end,
-	["text"] = function(t)
 		return t.info.name;
 	end,
 	["icon"] = function(t)
@@ -11581,9 +11555,6 @@ local itemFields = {
 	end,
 	["_cache"] = function(t)
 		return cache;
-	end,
-	["text"] = function(t)
-		return t.link or t.name;
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", default_icon);
@@ -11948,7 +11919,8 @@ local fields = {
 	["level"] = function(t)
 		return 1;
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
+		-- TODO: localize this
 		return "Upgrade Level " .. t.level;
 	end,
 	["icon"] = function(t)
@@ -12917,9 +12889,6 @@ local fields = {
 	["key"] = function(t)
 		return "questID";
 	end,
-	["text"] = function(t)
-		return t.link;
-	end,
 	["icon"] = function(t)
 		return select(3, GetSpellInfo(t.spellID));
 	end,
@@ -13539,7 +13508,7 @@ local fields = {
 	["key"] = function(t)
 		return "pvpRankID";
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		return _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. (t.inverseR or 0)];
 	end,
 	["icon"] = function(t)
@@ -13586,9 +13555,6 @@ local function default_name(t)
 	local info = C_CreatureInfo_GetRaceInfo(t.raceID);
 	return info and info.raceName;
 end
-local function default_text(t)
-	return app.TryColorizeName(t, t.name);
-end
 local function default_icon(t)
 	local icon;
 	-- Allied Races are different
@@ -13623,9 +13589,6 @@ end
 local raceFields = {
 	["key"] = function(t)
 		return "raceID";
-	end,
-	["text"] = function(t)
-		return cache.GetCachedField(t, "text", default_text);
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", default_icon);
@@ -13762,9 +13725,6 @@ local fields = {
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", CacheInfo) or 136243;	-- Trade_engineering
-	end,
-	["text"] = function(t)
-		return t.link;
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
@@ -13917,16 +13877,13 @@ local fields = {
 	["description"] = function(t)
 		return L["TITLES_DESC"];
 	end,
-	["text"] = function(t)
+	["link"] = function(t)
 		local name = t.name;
 		if name then
 			name = "|cff00ccff" .. name .. "|r";
-			rawset(t, "text", name);
+			rawset(t, "link", name);
 			return name;
 		end
-	end,
-	["link"] = function(t)
-		return t.text;
 	end,
 	["title"] = function(t)
 		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
