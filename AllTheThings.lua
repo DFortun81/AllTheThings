@@ -5387,21 +5387,12 @@ app.BuildCost = function(group)
 			costItem = nil;
 			if c[1] == "c" then
 				costItem = app.SearchForObject("currencyID", c[2], "field") or app.CreateCurrencyClass(c[2]);
+				costItem = app.CreateCostCurrency(costItem, c[3]);
 			elseif c[1] == "i" then
 				costItem = app.SearchForObject("itemID", c[2], "field") or app.CreateItem(c[2]);
+				costItem = app.CreateCostItem(costItem, c[3]);
 			end
 			if costItem then
-				costItem = CloneData(costItem);
-				costItem.g = nil;
-				costItem.collectible = false;
-				costItem.count = c[3];
-				-- if c[3] then
-					-- if group.collected then
-					-- 	-- alternatively have count minus from item count in bags/bank... or something?
-					-- 	costItem.progress = c[3];
-					-- end
-				-- end
-				costItem.OnUpdate = app.AlwaysShowUpdate;
 				NestObject(costGroup, costItem);
 			end
 		end
@@ -10008,8 +9999,8 @@ end)();
 
 -- Currency Lib
 (function()
-local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo;
-local C_CurrencyInfo_GetCurrencyLink = C_CurrencyInfo.GetCurrencyLink;
+local C_CurrencyInfo_GetCurrencyInfo, C_CurrencyInfo_GetCurrencyLink
+	= C_CurrencyInfo.GetCurrencyInfo, C_CurrencyInfo.GetCurrencyLink;
 local cache = app.CreateCache("currencyID");
 local function default_text(t)
 	return t.link or t.name;
@@ -10060,9 +10051,41 @@ local fields = {
 	end,
 	["collectibleAsCost"] = app.CollectibleAsCost,
 };
-app.BaseCurrencyClass = app.BaseObjectFields(fields, "BaseCurrencyClass");
+local BaseCurrencyClass = app.BaseObjectFields(fields, "BaseCurrencyClass");
+
+local fields_BaseCostCurrency = {
+	-- total is the count of the cost currency required
+	["total"] = function(t)
+		return t.count or 1;
+	end,
+	-- progress is how much you have
+	["progress"] = function(t)
+		return C_CurrencyInfo_GetCurrencyInfo(t.currencyID).quantity or 0;
+	end,
+	["collectible"] = app.ReturnFalse,
+	["trackable"] = app.ReturnTrue,
+	-- saved is whether you have enough
+	["saved"] = function(t)
+		return t.progress >= t.total;
+	end,
+	-- hide any irrelevant wrapped fields of a cost item
+	["g"] = app.EmptyFunction,
+	["costCollectibles"] = app.EmptyFunction,
+	["collectibleAsCost"] = app.EmptyFunction,
+	["costsCount"] = app.EmptyFunction,
+};
+local BaseCostCurrency = app.BaseObjectFields(fields_BaseCostCurrency, "BaseCostCurrency");
+
 app.CreateCurrencyClass = function(id, t)
-	return setmetatable(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
+	return setmetatable(constructor(id, t, "currencyID"), BaseCurrencyClass);
+end
+-- Wraps the given Type Object as a Cost Currency, allowing altered functionality representing this being a calculable 'cost'
+app.CreateCostCurrency = function(t, total)
+	local c = app.WrapObject(t, BaseCostCurrency);
+	c.count = total;
+	-- cost currency should always be visible for clarity
+	c.OnUpdate = app.AlwaysShowUpdate;
+	return c;
 end
 end)();
 
@@ -11426,6 +11449,8 @@ end)();
 
 -- Item Lib
 (function()
+local GetItemCount
+	= GetItemCount;
 -- TODO: Once Item information is stored in a single source table, this mechanism can reference that instead of using a cache table here
 local cache = app.CreateCache("modItemID");
 -- Consolidated function to handle how many retries for information an Item may have
@@ -11725,6 +11750,29 @@ fields.collected = function(t)
 end
 app.BaseCommonItem = app.BaseObjectFields(fields, "BaseCommonItem");
 
+local fields_BaseCostItem = {
+	-- total is the count of the cost item required
+	["total"] = function(t)
+		return t.count or 1;
+	end,
+	-- progress is how many of the cost item your character has anywhere
+	["progress"] = function(t)
+		return GetItemCount(t.itemID, true, nil, true) or 0;
+	end,
+	["collectible"] = app.ReturnFalse,
+	["trackable"] = app.ReturnTrue,
+	-- show a check when it is has matching quantity in your bags
+	["saved"] = function(t)
+		return GetItemCount(t.itemID) >= t.total;
+	end,
+	-- hide any irrelevant wrapped fields of a cost item
+	["g"] = app.EmptyFunction,
+	["costCollectibles"] = app.EmptyFunction,
+	["collectibleAsCost"] = app.EmptyFunction,
+	["costsCount"] = app.EmptyFunction,
+};
+local BaseCostItem = app.BaseObjectFields(fields_BaseCostItem, "BaseCostItem");
+
 -- Appearance Lib (Item Source)
 -- TODO: if PL filter is ever a thing investigate https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerCanCollectSource
 local fields = RawCloneData(itemFields, {
@@ -11765,6 +11813,14 @@ app.CreateItem = function(id, t)
 		end
 	end
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
+end
+-- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
+app.CreateCostItem = function(t, total)
+	local c = app.WrapObject(t, BaseCostItem);
+	c.count = total;
+	-- cost items should always be visible for clarity
+	c.OnUpdate = app.AlwaysShowUpdate;
+	return c;
 end
 
 -- Runeforge Legendary Lib
