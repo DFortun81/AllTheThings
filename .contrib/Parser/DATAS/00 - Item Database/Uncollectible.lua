@@ -702,6 +702,7 @@ i(203388);	-- Gunky Insignia
 i(203456);	-- Obsidian Prayer Beads
 i(203392);	-- Old Mirror Shard
 i(204070);	-- Magma Crystal
+i(202868);	-- Mender's Signal
 i(204792);	-- Nightlight Conkerbell Sample
 i(203387);	-- Oddly Familiar Training Weapon
 i(204329);	-- Petrified Spider Leg
@@ -711,6 +712,7 @@ i(205217);	-- Sharpbeak's Feed
 i(203389);	-- Shiny Rock
 i(203442);	-- Snail Slime
 i(203393);	-- Spongy Loamshroom
+i(202647);	-- Stolen Goods
 i(204069);	-- Sulfuric Crystal
 i(204713);	-- Sundered Flame Expedition Notes
 i(203653);	-- Vacant Elemental Core
@@ -719,8 +721,7 @@ i(203457);	-- Volcanic Herb Sachet
 i(204085);	-- Zaqali Dragonslayer's Spear
 i(203654);	-- Zaqali Flame Totem
 i(204817);	-- Underlight Cocoon Fibers
-i(202647);	-- Stolen Goods
-i(202868);	-- Mender's Signal
+
 -- Poor Trash --
 i(205869);	-- Aromatic Royal Jelly
 i(205868);	-- Cracked Chitin Carapace
@@ -734,9 +735,11 @@ i(205459);	-- Luminous Gloop
 i(205698);	-- Mangled Niffen Pack
 i(205460);	-- Pulverized Living Earth
 i(205699);	-- Rock Worm Frills
+i(205462);	-- Royal Nerubian Capsa
 i(205700);	-- Sensitive Scotopic Eye
 i(205469);	-- Serrated Sporebat Spine
 i(205471);	-- Slimy Deepsea Fin
 i(205470);	-- Torn Deep Scales
+i(205461);	-- Vicious Stoneclaw
 -- Common Trash --
 i(204342);	-- Questionable Jerky

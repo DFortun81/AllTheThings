@@ -20,8 +20,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			q(74570, {	-- Aid Our Wounded
 				["provider"] = { "n", 201861 },	-- Tigari Khan
 				["coord"] = { 75.6, 69.1, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(203731),	-- Enchanted Bandage
+				},
 			}),
 			q(75168, {	-- Air Control
+				["provider"] = { "n", 201090 },	-- Mayla Highmountain
+				["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
+			}),
+			q(74568, {	-- They Who Would Burn Us
 				["provider"] = { "n", 201090 },	-- Mayla Highmountain
 				["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
 			}),
@@ -39,10 +46,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			q(75888, {	-- Suffusion Camp
 				["provider"] = { "n", 201648 },	-- Somnikus
 				["coord"] = { 75.2, 69.2, OHNAHRAN_PLAINS },
-			}),
-			q(74568, {	-- They Who Would Burn Us
-				["provider"] = { "n", 201090 },	-- Mayla Highmountain
-				["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
 			}),
 			q(75181, {	-- Volunteer Fire Fighters
 				["provider"] = { "n", 201861 },	-- Tigari Khan

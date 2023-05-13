@@ -281,8 +281,6 @@ root(ROOTS.Unsorted, {
 				i(205417),	-- Fungishine
 				i(205456),	-- Lost Dragonscale
 				i(205458),	-- Lost Dragonscale
-				i(205461),	-- Vicious Stoneclaw
-				i(205462),	-- Royal Nerubian Capsa
 				i(205466),	-- Regurgitated Spores
 				i(205467),	-- Preserved Krolusk Crest
 				i(205472),	-- Wad of Sparkling Somethings
@@ -414,7 +412,6 @@ root(ROOTS.Unsorted, {
 				i(203229),	-- Snail Slime
 				i(203454),	-- Zaqali Equipment
 				i(203707),	-- Water Bucket
-				i(203731),	-- Enchanted Bandage
 				i(204175),	-- Unknown Core
 				i(204197),	-- Shard of an Earth Portal
 				i(204198),	-- Shard of an Fire Portal
