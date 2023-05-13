@@ -24,6 +24,7 @@ namespace ATT
             Framework.DebugMode = true;
 #endif
 
+            Framework.CurrentParseStage = ParseStage.InitializeParserConfigs;
             // Ensure the Retail Parser uses the default config always, input arg can change config values
             Framework.InitConfigSettings("parser.config");
 
@@ -57,13 +58,12 @@ namespace ATT
 
                 Directory.CreateDirectory("../Debugging");
 
-                Framework.ProcessingMergeData = true;
+                Framework.CurrentParseStage = ParseStage.RawJsonMerge;
                 do
                 {
                     Errored = false;
                     // Load all of the RAW JSON Data into the database.
                     var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
-                    Framework.Log("Parsing JSON files...");
 #if ANYCLASSIC
                     foreach (var f in files) ParseJSONFile(f);
 #else
@@ -78,7 +78,6 @@ namespace ATT
                     }
                 }
                 while (Errored);
-                Framework.ProcessingMergeData = false;
 
                 // Load all of the Lua files into the database.
                 var mainFileName = $"{databaseRootFolder}\\_main.lua";
@@ -140,14 +139,13 @@ namespace ATT
                     Console.ReadLine();
                 }
 
-                Framework.ProcessingSourceData = true;
-                Trace.WriteLine("Parsing LUA files...");
+                Framework.CurrentParseStage = ParseStage.ContributorDataMerge;
                 foreach (var fileName in luaFiles)
                 {
                     ParseLUAFile(lua, fileName);
                 }
-                Framework.ProcessingSourceData = false;
 
+                Framework.CurrentParseStage = ParseStage.PreProcessingSetup;
                 do
                 {
                     try
@@ -185,9 +183,9 @@ namespace ATT
 #endif
 
                 // Export all of the data for the Framework.
-                Trace.WriteLine("Exporting Addon DB...");
                 Framework.Export();
 
+                Framework.CurrentParseStage = ParseStage.FinalLogging;
                 foreach (KeyValuePair<string, HashSet<decimal>> idSet in Framework.OutputSets)
                 {
                     StringBuilder output = new StringBuilder();

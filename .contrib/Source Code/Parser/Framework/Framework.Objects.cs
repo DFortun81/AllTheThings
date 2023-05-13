@@ -2204,12 +2204,14 @@ end");
 
                     }
 
+#if ANYCLASSIC
                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                     if (costType == "i" && cost[1].TryConvert(out long costID))
                     {
                         // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
                         Items.MarkItemAsReferenced(costID);
                     }
+#endif
                 }
 
                 item[field] = costsList;
@@ -2266,9 +2268,13 @@ end");
                         if (!match)
                         {
                             providers.Add(newMergeProvider);
-                            // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                             if (newProvider.Item1 == "i")
+                            {
+#if ANYCLASSIC
+                                // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                                 Items.MarkItemAsReferenced(newProvider.Item2);
+#endif
+                            }
                             else if (newProvider.Item1 == "n")
                             {
                                 NPCS_WITH_REFERENCES[newProvider.Item2] = true;

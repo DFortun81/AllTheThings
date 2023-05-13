@@ -116,6 +116,7 @@
     <Compile Include="Framework\Framework.Objects.cs" />
     <Compile Include="Framework\Framework.Items.cs" />
     <Compile Include="Framework\Framework.cs" />
+    <Compile Include="Framework\ParseStage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

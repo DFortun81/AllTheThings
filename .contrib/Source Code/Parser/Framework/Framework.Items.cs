@@ -26,6 +26,7 @@ namespace ATT
 
             /// <summary>
             /// All of the item IDs that have been referenced somewhere in the database.
+            /// NOTE: This will be fully-populated following the 'Validation' stage of the Parse
             /// </summary>
             private static IDictionary<decimal, bool> ITEMS_WITH_REFERENCES = new ConcurrentDictionary<decimal, bool>();
 
@@ -52,7 +53,13 @@ namespace ATT
             /// <summary>
             /// Returns whether a specific ItemID has been referenced
             /// </summary>
-            public static bool IsItemReferenced(decimal itemID) => ITEMS_WITH_REFERENCES.ContainsKey(itemID);
+            public static bool IsItemReferenced(decimal itemID)
+            {
+                if (CurrentParseStage > ParseStage.Validation)
+                    return ITEMS_WITH_REFERENCES.ContainsKey(itemID);
+
+                throw new InvalidOperationException($"Cannot check Item References prior to completion of the {ParseStage.Validation} Parse Stage");
+            }
 
             /// <summary>
             /// All of the item IDs that are in the database.
@@ -155,6 +162,7 @@ namespace ATT
 
                 // Create a new item dictionary.
                 ++Count;
+
                 return ITEMS[itemID] = new Dictionary<string, object>
                 {
                     { "itemID", itemID }
@@ -503,7 +511,7 @@ namespace ATT
                         // any 0 value should simply be removed for cleanliness
                         if (longval == 0)
                         {
-                            LogDebug($"Removing 0-value {field} from", item);
+                            LogDebug($"INFO: Removing 0-value {field} from", item);
                             item.Remove(field);
                         }
                         else
@@ -522,7 +530,7 @@ namespace ATT
                         // any 0 value should simply be removed for cleanliness
                         if (longval == 0)
                         {
-                            LogDebug($"Removing 0-value {field} from", item);
+                            LogDebug($"INFO: Removing 0-value {field} from", item);
                             item.Remove(field);
                         }
                         else
@@ -550,7 +558,7 @@ namespace ATT
                         // any 0 value should simply be removed for cleanliness
                         if (longval == 0)
                         {
-                            LogDebug($"Removing 0-value {field} from", item);
+                            LogDebug($"INFO: Removing 0-value {field} from", item);
                             item.Remove(field);
                         }
                         else
@@ -562,7 +570,7 @@ namespace ATT
                         if (!ProcessingMergeData) break;
 
                         Objects.MergeStringArrayData(item, field, value);
-                        LogDebug($"Merge {item["itemID"]}: {field} <==", value);
+                        LogDebug($"INFO: Merge {item["itemID"]}: {field} <==", value);
                         break;
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)
@@ -872,13 +880,10 @@ namespace ATT
                     if (decimal.Truncate(specificItemID) != specificItemID)
                     {
                         // Report that the specific item is missing.
-                        Log($"Could not find item #{specificItemID} in the database.{Environment.NewLine}{ToJSON(data)}");
+                        Log($"Could not find item #{specificItemID} in the database", data);
                     }
                     return;
                 }
-
-                // Mark this item as having a reference.
-                ITEMS_WITH_REFERENCES[specificItemID] = true;
 
                 // Merge the specific item with the data dictionary.
                 MergeInto(specificItemID, item, data);

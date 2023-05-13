@@ -283,17 +283,33 @@ namespace ATT
         /// Represents that data will be merged into the base dictionaries.
         /// This should only be performed on the first processing pass, allowing the second processing pass to sync all Item info in nested group references
         /// </summary>
-        private static bool MergeItemData { get; set; } = true;
-
-        /// <summary>
-        /// Whether the Parser is processing Source data as added by contributors (rather than an automated JSON DB)
-        /// </summary>
-        public static bool ProcessingSourceData = false;
+        private static bool MergeItemData => CurrentParseStage <= ParseStage.Validation;
 
         /// <summary>
         /// Whether the Parser is processing Merge data which is allowed to Merge certain fields to be shared among all Sources of a Thing
         /// </summary>
-        public static bool ProcessingMergeData = false;
+        public static bool ProcessingMergeData => CurrentParseStage == ParseStage.RawJsonMerge || CurrentParseStage == ParseStage.ConditionalData;
+
+        private static ParseStage _stage;
+        /// <summary>
+        /// Represents the current Stage of Parsing. Certain data is not fully populated or accurate at certain Stages, so this can be used to ensure
+        /// operations are performed at the correct Stage
+        /// </summary>
+        public static ParseStage CurrentParseStage
+        {
+            get
+            {
+                return _stage;
+            }
+            set
+            {
+                if (value <= _stage)
+                    throw new InvalidOperationException($"Do not regress or stagnate in ParseStage tracking: {_stage} => {value}");
+
+                _stage = value;
+                Log(_stage.ToString() + "...");
+            }
+        }
 
         /// <summary>
         /// Represents whether we are currently processing the main Achievements Category
@@ -605,6 +621,10 @@ namespace ATT
             if (data.ContainsKey("objectiveID")) return false;
 #endif
 
+            // verify the timeline data of Merged data (can prevent keeping the data in the data container)
+            if (!CheckTimeline(data))
+                return false;
+
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
             if (data.TryGetValue("u", out long phase))
             {
@@ -649,7 +669,7 @@ namespace ATT
                     case Objects.Filters.Recipe:
                         // switch any existing spellID to recipeID
                         var item = Items.GetNull(data);
-                        if (item != null && item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long itemID))
+                        if (item != null && item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long recipeItemID))
                         {
                             // remove the spellID if existing
                             item.Remove("spellID");
@@ -728,11 +748,11 @@ namespace ATT
                 try
                 {
                     if (classes.Any(c => !Valid_Classes.Contains(Convert.ToInt64(c))))
-                        LogError($"Invalid 'classes' value: {ToJSON(data)}");
+                        LogError($"Invalid 'classes' value", data);
                 }
                 catch
                 {
-                    LogError($"Invalid 'classes' value: {ToJSON(data)}");
+                    LogError($"Invalid 'classes' value", data);
                 }
             }
 
@@ -746,7 +766,7 @@ namespace ATT
             if (cloned && data.ContainsKey("criteriaID"))
                 return false;
 
-            Validate_Sym(data);
+            Validate_sym(data);
 
             // Track the hierarchy of difficultyID
             if (data.TryGetValue("difficultyID", out long d))
@@ -787,10 +807,10 @@ namespace ATT
                     var cachedItem = Items.GetNull(data);
                     if (cachedItem != null)
                     {
-                        cachedItem.TryGetValue("itemID", out long itemID);
+                        cachedItem.TryGetValue("itemID", out long cachedItemID);
                         cachedItem.TryGetValue("recipeID", out long spellID);
                         cachedItem.TryGetValue("name", out string itemName);
-                        LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, itemName);
+                        LogDebugFormatted(LogFormats["ItemRecipeFormat"], cachedItemID, spellID, itemName);
                     }
                 }
             }
@@ -806,7 +826,7 @@ namespace ATT
             minLevel = LevelConsolidation(data, minLevel);
 
             Validate_cost(data);
-            Validate_Providers(data);
+            Validate_providers(data);
             Validate_LocationData(data);
 
             // TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua, it should only be necessary in DataConsolidation after that point
@@ -854,65 +874,111 @@ namespace ATT
             Items.Merge(data);
             Objects.Merge(data);
 
+            // Mark this item as having a reference since it exists in a processed container
+            if (data.TryGetValue("itemID", out decimal itemID))
+            {
+                Items.MarkItemAsReferenced(itemID);
+                Items.MarkItemAsReferenced((long)itemID);
+
+                // ensure marking the 'modItemID' as well (maybe someday that will be directly supported in itemID)
+                if (data.TryGetValue("_modItemID", out itemID))
+                {
+                    Items.MarkItemAsReferenced(itemID);
+                }
+            }
+
             return true;
         }
 
         private static void Validate_cost(Dictionary<string, object> data)
         {
-            if (data.TryGetValue("cost", out object costRef) && costRef is List<List<object>> cost)
+            if (!data.TryGetValue("cost", out object costRef))
+                return;
+
+            // expected data format is checked during 'MergeField_cost'
+            if (!costRef.TryConvert(out List<List<object>> cost))
+                return;
+
+            // check each cost component for valid formatting/validation on the data
+            for (int i = cost.Count - 1; i >= 0; --i)
             {
-                for (int i = cost.Count - 1; i >= 0; --i)
+                var c = cost[i];
+                if (c != null && c.Any())
                 {
-                    var c = cost[i];
-                    if (c != null && c.Any())
+                    decimal costID = Convert.ToDecimal(c[1]);
+                    switch (c[0].ToString())
                     {
-                        decimal costID = Convert.ToDecimal(c[1]);
-                        switch (c[0].ToString())
-                        {
-                            case "i":
-                                var item = Items.GetNull(costID);
-                                if (item != null)
-                                {
-                                    // The item was classified as never being implemented or being completely removed from the game.
-                                    if (item.TryGetValue("u", out long u) && u == 1)
-                                    {
-                                        cost.RemoveAt(i);
-                                    }
-                                    // anything that costs Mark of Honor should have pvp tag
-                                    else if (costID == 137642)
-                                    {
-                                        data["pvp"] = true;
-                                    }
-                                }
+                        case "i":
+                            // anything that costs Mark of Honor should have pvp tag
+                            if (costID == 137642)
+                            {
+                                data["pvp"] = true;
+                            }
+                            break;
+                        case "c":
+                            if (costID == 1602 ||   // Conquest
+                                costID == 1792)     // Honor
+                            {
+                                data["pvp"] = true;
+                            }
+                            break;
+                        case "g":
+                            break;
 
-                                // Single Cost Item on a Achieve/Criteria group should be represented as a Provider instead
-                                if (data.TryGetValue("achID", out long _) ||
-                                    data.TryGetValue("criteriaID", out long _))
-                                {
-                                    if (!data.TryGetValue("providers", out object _) &&
-                                        cost.Count == 1 &&
-                                        c.Count > 2 &&
-                                        c[2].TryConvert(out long count) &&
-                                        count == 1)
-                                    {
-                                        Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'", data);
-                                    }
-                                }
-                                break;
-                            case "c":
-                                if (costID == 1602 ||   // Conquest
-                                    costID == 1792)     // Honor
-                                {
-                                    data["pvp"] = true;
-                                }
-                                break;
-                            case "g":
-                                break;
+                        default:
+                            LogError($"Unknown 'cost' type: {c[0]}", data);
+                            break;
+                    }
+                }
+            }
+        }
 
-                            default:
-                                Log($"WARN: Unknown 'cost' type: {c[0]}", data);
-                                break;
-                        }
+        private static void Consolidate_cost(Dictionary<string, object> data)
+        {
+            if (!data.TryGetValue("cost", out object costRef))
+                return;
+
+            if (!costRef.TryConvert(out List<List<object>> costList))
+                return;
+
+            // check each cost component for valid formatting/validation on the data
+            for (int i = costList.Count - 1; i >= 0; --i)
+            {
+                var c = costList[i];
+                if (c != null && c.Any())
+                {
+                    decimal costID = Convert.ToDecimal(c[1]);
+                    switch (c[0].ToString())
+                    {
+                        case "i":
+                            var item = Items.GetNull(costID);
+                            if (item == null || !Items.IsItemReferenced(costID))
+                            {
+                                // The item isn't Sourced in Retail version
+                                // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
+                                LogDebug($"WARN: Non-Sourced 'cost-item' {costID}", data);
+                            }
+                            else if (item.TryGetValue("u", out long u) && u == 1)
+                            {
+                                // The item was classified as never being implemented
+                                LogDebug($"INFO: Removed NYI 'cost-item' {costID}", data);
+                                costList.RemoveAt(i);
+                            }
+
+                            // Single Cost Item on a Achieve/Criteria group should be represented as a Provider instead
+                            if (data.TryGetValue("achID", out long _) ||
+                                data.TryGetValue("criteriaID", out long _))
+                            {
+                                if (!data.TryGetValue("providers", out object _) &&
+                                    costList.Count == 1 &&
+                                    c.Count > 2 &&
+                                    c[2].TryConvert(out long count) &&
+                                    count == 1)
+                                {
+                                    Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'", data);
+                                }
+                            }
+                            break;
                     }
                 }
             }
@@ -978,7 +1044,7 @@ namespace ATT
             }
         }
 
-        private static void Validate_Providers(Dictionary<string, object> data)
+        private static void Validate_providers(Dictionary<string, object> data)
         {
             if (!data.TryGetValue("providers", out object providers))
                 return;
@@ -1009,6 +1075,28 @@ namespace ATT
                     LogError($"Invalid Data Format: provider-id {providerList[1]}", data);
                     continue;
                 }
+            }
+        }
+
+        private static void Consolidate_providers(Dictionary<string, object> data)
+        {
+            if (!data.TryGetValue("providers", out object providers))
+                return;
+
+            if (!providers.TryConvert(out List<object> providersList))
+                return;
+
+            for (int i = providersList.Count - 1; i >= 0; i--)
+            {
+                var provider = providersList[i];
+                if (!provider.TryConvert(out List<object> providerList) || providerList.Count != 2)
+                    continue;
+
+                if (!providerList[0].TryConvert(out string pType))
+                    continue;
+
+                if (!providerList[1].TryConvert(out decimal pID))
+                    continue;
 
                 // validate that the referenced ID exists in this version of the addon
                 switch (pType)
@@ -1024,10 +1112,11 @@ namespace ATT
                         //    providersList.RemoveAt(i);
                         //}
 #else
-                        if (item == null)
+                        if (item == null || !Items.IsItemReferenced(pID))
                         {
                             // The item isn't Sourced in Retail version
-                            Log($"WARN: Non-Sourced 'provider-item' {pID}", data);
+                            // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
+                            LogDebug($"WARN: Non-Sourced 'provider-item' {pID}", data);
                         }
                         else if (item.TryGetValue("u", out long u) && u == 1)
                         {
@@ -1048,7 +1137,7 @@ namespace ATT
             }
         }
 
-        private static void Validate_Sym(Dictionary<string, object> data)
+        private static void Validate_sym(Dictionary<string, object> data)
         {
             if (!data.TryGetValue("sym", out List<object> symObject))
                 return;
@@ -1098,7 +1187,7 @@ namespace ATT
             }
         }
 
-        private static void Validate_SourceQuests(Dictionary<string, object> data)
+        private static void Consolidate_sourceQuests(Dictionary<string, object> data)
         {
             if (!data.TryGetValue("sourceQuests", out List<object> sourceQuests))
                 return;
@@ -1135,7 +1224,7 @@ namespace ATT
             }
         }
 
-        private static void Validate_AltQuests(Dictionary<string, object> data)
+        private static void Consolidate_altQuests(Dictionary<string, object> data)
         {
             if (!data.TryGetValue("altQuests", out List<object> altQuests))
                 return;
@@ -1487,6 +1576,9 @@ namespace ATT
                 }
             }
 
+            Consolidate_cost(data);
+            Consolidate_providers(data);
+
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
             TryFindRecipeID(data);
@@ -1494,8 +1586,8 @@ namespace ATT
             CheckHeirloom(data);
             CheckTrackableFields(data);
             CheckRequiredDataRelationships(data);
-            Validate_SourceQuests(data);
-            Validate_AltQuests(data);
+            Consolidate_sourceQuests(data);
+            Consolidate_altQuests(data);
             Items.DetermineSourceID(data);
             CheckObjectConversion(data);
 
@@ -1672,6 +1764,9 @@ namespace ATT
             idCounts[id] = count;
         }
 
+        /// <summary>
+        /// Returns whether the data meets the current parser 'timeline' expectations
+        /// </summary>
         private static bool CheckTimeline(Dictionary<string, object> data)
         {
             // Check to see what patch this data was made relevant for.
@@ -2276,16 +2371,17 @@ namespace ATT
             }
 
             // Merge the Item Data into the Containers.
-            Log("Data Validation...");
+            CurrentParseStage = ParseStage.Validation;
             foreach (var container in Objects.AllContainers)
             {
                 ProcessContainer(container);
             }
 
             // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
-            Log("Data Consolidation...");
-            MergeItemData = false;
+            CurrentParseStage = ParseStage.ConditionalData;
             AdditionalProcessing();
+
+            CurrentParseStage = ParseStage.Consolidation;
             foreach (var container in Objects.AllContainers)
             {
                 ProcessContainer(container);
@@ -2296,7 +2392,7 @@ namespace ATT
             if (worldDrops != null) SortByName(worldDrops);
 
             // Build the Unsorted Container.
-            Log("Building Unsorted...");
+            CurrentParseStage = ParseStage.UnsortedGeneration;
             List<object> listing;
             long requireSkill;
             if (!Objects.AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
@@ -2485,6 +2581,7 @@ namespace ATT
                 }
             }
 
+            CurrentParseStage = ParseStage.DataIntegrityAnalysis;
             // Include in breadcrumb quests the list of next quests that may make the breadcrumb unable to complete
             //bool isBreadcrumb;
             HashSet<decimal> orphanedBreadcrumbs = new HashSet<decimal>();
@@ -2559,8 +2656,6 @@ namespace ATT
 
             // Notify of Post-Process Merge data which failed to merge...
             Objects.NotifyPostProcessMergeFailures();
-
-            Log("Processing Complete");
         }
 
         private static void ProcessContainer(KeyValuePair<string, List<object>> container)
@@ -2593,7 +2688,7 @@ namespace ATT
                         decimal itemID = Items.GetSpecificItemID(item);
                         if (Items.IsItemReferenced(itemID))
                         {
-                            LogDebug($"WARN: Item {itemID} is referenced and also included in Uncollectibles");
+                            Log($"WARN: Item {itemID} is referenced and also included in Uncollectible.lua");
                         }
                         else
                         {
@@ -2610,12 +2705,10 @@ namespace ATT
             temporaryKeys.All(k => Objects.AllContainers.Remove(k));
 
             // Merge conditional data
-            ProcessingMergeData = true;
             foreach (var data in ConditionalItemData)
             {
                 Items.Merge(data, true);
             }
-            ProcessingMergeData = false;
 
             // Go through and merge all of the item species data into the item containers.
             foreach (var pair in Items.AllItemsWithSpecies)
@@ -3324,7 +3417,6 @@ namespace ATT
                         }
                     case "ItemDB":
                         {
-                            ProcessingMergeData = true;
                             // The format of the Item DB is a dictionary of item ID -> Values.
                             // This is slightly more annoying to parse, but it works okay.
                             if (pair.Value is Dictionary<long, object> itemDB)
@@ -3365,7 +3457,6 @@ namespace ATT
                                 LogError("ItemDB not in the correct format!");
                                 Console.ReadLine();
                             }
-                            ProcessingMergeData = false;
                         }
                         break;
                     case "ItemDBConditional":
@@ -4033,6 +4124,7 @@ namespace ATT
                 // DEBUGGING: Output Parsed Data
                 if (DebugMode)
                 {
+                    CurrentParseStage = ParseStage.ExportDebugData;
                     ATT.Export.DebugMode = true;
                     var debugFolder = Directory.CreateDirectory($"{addonRootFolder}/.contrib/Debugging");
                     if (debugFolder.Exists)
@@ -4172,6 +4264,7 @@ namespace ATT
                 // Export the Category DB file, but only Categories that have references in the addon.
                 if (CATEGORY_NAMES.Any())
                 {
+                    CurrentParseStage = ParseStage.ExportCategoryDB;
                     var builder = new StringBuilder("---------------------------------------------------------\n--   C A T E G O R Y   D A T A B A S E   M O D U L E   --\n---------------------------------------------------------\n");
                     var keys = CATEGORY_NAMES.Keys.ToList();
                     keys.Sort();
@@ -4211,6 +4304,7 @@ namespace ATT
                 // Export the Object DB file.
                 if (OBJECT_NAMES.Any())
                 {
+                    CurrentParseStage = ParseStage.ExportObjectDB;
                     var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n");
                     var keys = OBJECT_NAMES.Keys.ToList();
                     keys.Sort();
@@ -4264,13 +4358,15 @@ namespace ATT
                     if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
                 }
 
-                // Export various debug information to the output folder.
+                CurrentParseStage = ParseStage.ExportAddonData;
                 IncludeRawNewlines = false;
                 Objects.Export(outputFolder.FullName);
                 IncludeRawNewlines = true;
 
 #if RETAIL
+                CurrentParseStage = ParseStage.ExportAutoSources;
                 Objects.ExportAutoItemSources(Config["root-data"]);
+                CurrentParseStage = ParseStage.ExportAutoLocale;
                 Objects.ExportAutoLocale(outputFolder.FullName);
 #endif
             }
