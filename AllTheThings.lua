@@ -2995,18 +2995,21 @@ end)();
 local function ExpandGroupsRecursively(group, expanded, manual)
 	-- expand if there is any sub-group
 	if group.g then
+		-- app.PrintDebug("EGR",group.hash,expanded,manual);
 		-- if manually expanding
 		if (manual or
 				-- it's not an item
 				(not group.itemID and
 				-- not a difficulty
 				not group.difficultyID and
+				-- not a Zone/CB Drop header
+				not (group.headerID and group.headerID > -2) and
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
 				-- account/debug mode is active or it is not a 'saved' thing for this character
 				(app.MODE_DEBUG_OR_ACCOUNT or not group.saved))
 			) then
-			-- print("expanded",group.key,group[group.key]);
+			-- app.PrintDebug("EGR:expand");
 			group.expanded = expanded;
 			for _,subgroup in ipairs(group.g) do
 				ExpandGroupsRecursively(subgroup, expanded, manual);
@@ -11874,7 +11877,7 @@ local fields = {
 	["key"] = function(t)
 		return "heirloomUnlockID";
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		return L["HEIRLOOM_TEXT"];
 	end,
 	["icon"] = function(t)
@@ -12835,9 +12838,6 @@ local GetSpellLink, GetSpellInfo = GetSpellLink, GetSpellInfo;
 local fields = {
 	["key"] = function(t)
 		return "questID";
-	end,
-	["text"] = function(t)
-		return t.link;
 	end,
 	["link"] = function(t)
 		local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
@@ -19658,7 +19658,10 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						for _,row in ipairs(header.g) do
 							if row.difficultyID or row.difficulties then
 								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-									if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
+									if not row.expanded then
+										ExpandGroupsRecursively(row, true, true);
+										expanded = true;
+									end
 								elseif row.expanded then
 									ExpandGroupsRecursively(row, false, true);
 								end
@@ -19667,11 +19670,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
 							end
 						end
-						-- No difficulty found to expand, so just expand everything in the list
-						if not expanded then
-							ExpandGroupsRecursively(header, true);
-							expanded = true;
-						end
+					end
+					-- No difficulty found to expand, so just expand everything in the list once it is built
+					if not expanded then
+						self.ExpandInfo = { Expand = true };
+						expanded = true;
 					end
 				end
 				-- app.PrintDebug("Warn:Difficulty")
