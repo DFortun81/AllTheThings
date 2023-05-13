@@ -2117,7 +2117,7 @@ for key,value in pairs({
 	[234734] = "Élixir de vue de l’Ombre",	-- Elixir of Shadow Sight
 	[234735] = "Élixir de vue de l’Ombre",	-- Elixir of Shadow Sight
 	[234736] = "Élixir de vue de l’Ombre",	-- Elixir of Shadow Sight
-	[234740] = "Cor d’alarme orc",	-- Orchish Signaling Horn
+	[234740] = "Cor d’alarme orc",	-- Orcish Signaling Horn
 	[234744] = "Offrande à la Mère corbeau",	-- Offering to the Raven Mother
 	[234746] = "Offrande à la Mère corbeau",	-- Offering to the Raven Mother
 	[234748] = "Offrande à la Mère corbeau",	-- Offering to the Raven Mother

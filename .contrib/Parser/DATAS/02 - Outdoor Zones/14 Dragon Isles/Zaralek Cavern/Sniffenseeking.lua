@@ -263,7 +263,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(204985),  -- 2x Barter Brick
 						},
 					}), ]]--
-
 				}),
 				n(REWARDS, {
 					i(205288),	-- Buried Niffen Collection (Frostfire)

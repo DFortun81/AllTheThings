@@ -2122,7 +2122,7 @@ for key,value in pairs({
 	[234734] = "Elixir de Visión de las Sombras",	-- Elixir of Shadow Sight
 	[234735] = "Elixir de Visión de las Sombras",	-- Elixir of Shadow Sight
 	[234736] = "Elixir de Visión de las Sombras",	-- Elixir of Shadow Sight
-	[234740] = "Cuerno de alarma orco",	-- Orchish Signaling Horn
+	[234740] = "Cuerno de alarma orco",	-- Orcish Signaling Horn
 	[234744] = "Ofrenda para la Madre cuervo",	-- Offering to the Raven Mother
 	[234746] = "Ofrenda para la Madre cuervo",	-- Offering to the Raven Mother
 	[234748] = "Ofrenda para la Madre cuervo",	-- Offering to the Raven Mother

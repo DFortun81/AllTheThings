@@ -2118,7 +2118,7 @@ for key,value in pairs({
 	[234734] = "어둠 시선의 비약",	-- Elixir of Shadow Sight
 	[234735] = "어둠 시선의 비약",	-- Elixir of Shadow Sight
 	[234736] = "어둠 시선의 비약",	-- Elixir of Shadow Sight
-	[234740] = "오크 신호 뿔피리",	-- Orchish Signaling Horn
+	[234740] = "오크 신호 뿔피리",	-- Orcish Signaling Horn
 	[234744] = "까마귀 어미의 공물",	-- Offering to the Raven Mother
 	[234746] = "까마귀 어미의 공물",	-- Offering to the Raven Mother
 	[234748] = "까마귀 어미의 공물",	-- Offering to the Raven Mother
