@@ -1448,6 +1448,7 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					}),
 					i(116172, {	-- Perky Blaster
+						["timeline"] = { "added 6.0.1.18566" },
 						["cost"] = { { "i", 21100, 1 } },	-- 1x Coin of Ancestry
 					}),
 					i(21713),	-- Elune's Candle
