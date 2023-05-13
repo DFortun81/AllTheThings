@@ -56,7 +56,7 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			a(i(129280)),	-- Prestigious War Steed (MOUNT!)
 			h(i(143864)),	-- Prestigious War Wolf (MOUNT!)
 		}),
-		ach(13387, {	-- Frontline Veteran (A)
+		achraw(13387, {	-- Frontline Veteran (A)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = bubbleDown({["description"] = "Requires War Mode Active" }, {
 				crit(1, {		-- A Sound Defense
@@ -79,7 +79,7 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				}),
 			}),
 		}),
-		ach(13388, {	-- Frontline Veteran (H)
+		achraw(13388, {	-- Frontline Veteran (H)
 			["races"] = HORDE_ONLY,
 			["g"] = bubbleDown({["description"] = "Requires War Mode Active" }, {
 				crit(1, {		-- Breaching Boralus

@@ -166,7 +166,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							ach(14851),	-- Bastion of Protection
 							ach(14856),	-- Charmed, I'm Sure
 							ach(14865),	-- Disciple of Humility
-							ach(14862, {	-- It's How You Wear It
+							achraw(14862, {	-- It's How You Wear It
 								crit(1),	-- Herald's Footpads
 								crit(2),	-- Deep Echo Trident
 								crit(3),	-- Vial of Lichfrost
@@ -174,7 +174,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								crit(5),	-- Ring of Warding
 								crit(6),	-- Spiritforged Aegis
 							}),
-							ach(14854, {	-- It's Not What You Wear
+							achraw(14854, {	-- It's Not What You Wear
 								crit(1),	-- Herald's Footpads
 								crit(2),	-- Deep Echo Trident
 								crit(3),	-- Vial of Lichfrost
@@ -183,7 +183,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								crit(6),	-- Spiritforged Aegis
 							}),
 							ach(14861),	-- Learning from the Masters
-							ach(14866, {	-- Master of the Path
+							achraw(14866, {	-- Master of the Path
 								crit(1),	-- Kalisthene
 								crit(2),	-- Echthra
 								crit(3),	-- Alderyn and Myn'ir

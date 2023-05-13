@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					}),
 				}
 			}),
-			ach(16406, {	-- All Sides of the Story
+			achraw(16406, {	-- All Sides of the Story
 				crit(1, {	-- Captain Garrick & Shuja Grimaxe
 					["sourceQuests"] = {
 						70135,	-- Encroaching Elementals [A]

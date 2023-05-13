@@ -145,7 +145,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["maps"] = { 1644 },	-- Ember Court (Scenario Map)
 					["g"] = {
 						n(ACHIEVEMENTS, {
-							ach(14723, {	-- Be Our Guest
+							achraw(14723, {	-- Be Our Guest
 								crit(1, {	-- Baroness Vashj
 									["_npcs"] = { 168444 },
 								}),
@@ -318,7 +318,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_quests"] = { 62173 },	-- Long Sleeved Doublet
 								}),
 							}),
-							ach(14726, {	-- It's Certainly Never Boring
+							achraw(14726, {	-- It's Certainly Never Boring
 								crit(1),	-- Messy
 								crit(2),	-- Clean
 								crit(3),	-- Safe
@@ -384,7 +384,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_quests"] = { 61506 },
 								}),
 							}),
-							ach(14724, {	-- People Pleaser
+							achraw(14724, {	-- People Pleaser
 								crit(1, {	-- Baroness Vashj
 									["_npcs"] = { 168444 },
 								}),
@@ -440,7 +440,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_npcs"] = { 171856 },
 								}),
 							}),
-							ach(14749, {	-- Rendle's Big Day
+							achraw(14749, {	-- Rendle's Big Day
 								crit(1, {	-- Crown of the Righteous
 									["_quests"] = { 62559 },	-- Sootible Hat: Crown of the Righteous
 								}),

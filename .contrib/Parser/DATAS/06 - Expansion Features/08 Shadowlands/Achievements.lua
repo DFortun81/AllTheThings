@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 				title(463),	-- Veilstrider <Name>
 			},
 		})),
-		ach(14763, {	-- Crypt Couture
+		achraw(14763, {	-- Crypt Couture
 			i(183693),	-- Plague Doctor's Mask
 			crit(1, {	-- Ashen Ink
 				["provider"] = {"i",183690},

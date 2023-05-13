@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				crit(11),	-- Mirewood Fen
 				crit(12),	-- Windsong Rise
 			}),
-			ach(16423, {	-- Honor Our Ancestors
+			achraw(16423, {	-- Honor Our Ancestors
 				["provider"] = { "i", 201323 }, 	-- 1x Essence of Awakening
 				["g"] = {
 					i(200630),	-- Ohn'ir Windsage's Hearthstone (TOY!)

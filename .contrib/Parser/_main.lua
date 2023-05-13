@@ -2233,6 +2233,14 @@ end
 achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
 	return struct("achievementCategoryID", id, t);
 end
+achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by the Parser
+	t = ach(id, altID, t);
+	-- TODO: hopefully we can define a better way for these Criteria to exist such that the Criteria can be moved as expected again
+	-- they were being moved under HQT defined in _quests via AchievementDB from Blizzard
+	-- but for now prevent the Criteria from disappearing into the Unsorted window
+	bubbleDown({ _noautomation = true }, t);
+	return t;
+end
 achievementCategory = achcat;
 artifact = function(id, t)								-- Create an ARTIFACT Object
 	return struct("artifactID", id, t);

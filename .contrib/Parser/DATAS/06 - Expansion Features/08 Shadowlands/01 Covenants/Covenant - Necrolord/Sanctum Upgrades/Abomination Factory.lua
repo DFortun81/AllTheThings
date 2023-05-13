@@ -102,7 +102,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					},
 					["g"] = {
 						n(ACHIEVEMENTS, {
-							ach(14684, {	-- Abominable Lives
+							achraw(14684, {	-- Abominable Lives
 								crit(1, {	-- Asset Extraction
 									["_quests"] = { 62256 },
 								}),
@@ -197,7 +197,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									["_quests"] = { 62276 },
 								}),
 							}),
-							ach(14833, {	-- Fashion Abomination
+							achraw(14833, {	-- Fashion Abomination
 								crit(1, {	-- Chef Hat
 									["cost"] = {
 										{ "i", 184039,  1 },	-- 1 Clean White Hat
@@ -423,7 +423,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							ach(14753, {	-- It's a Wrap
 								["cost"] = { { "i", 178594, 100 } },	-- 100 Anima-bound Wraps
 							}),
-							ach(14751, {	-- The Gang's All Here
+							achraw(14751, {	-- The Gang's All Here
 								i(182074),		-- Chosen Tauralus (MOUNT!)
 								crit(1, {	-- Chordy
 									["_quests"] = { 60041 },

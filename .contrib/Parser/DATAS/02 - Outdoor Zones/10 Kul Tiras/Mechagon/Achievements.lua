@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 	m(MECHAGON, {
 		n(ACHIEVEMENTS, {
-			ach(13790, {	-- Armed for Action
+			achraw(13790, {	-- Armed for Action
 				["description"] = "Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",
 				["g"] = {
 					crit(1, {	-- Volatile Blaster
@@ -632,7 +632,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					["coord"] = { 72.1, 72.9, MECHAGON },
 				}),
 			})),
-			ach(13708, {	-- Most Minis Wins
+			achraw(13708, {	-- Most Minis Wins
 				crit(1, {	-- Izira Gearsworn
 					["provider"] = { "i", 169794 },	-- Azeroth Mini: Izira Gearsworn
 				}),

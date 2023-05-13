@@ -130,7 +130,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 			ach(11846, {	-- Champions of Legionfall (Broken Shore)
 				crit(1),		-- Complete 'Champions of Legionfall'
 			}),
-			ach(10461, {	-- Fighting with Style: Classic
+			achraw(10461, {	-- Fighting with Style: Classic
 				crit(1),	-- Recover one of the Pillars of Creation
 				crit(2, {	-- Complete the quest, "Light's Charge"
 					["_quests"] = { 44153 },

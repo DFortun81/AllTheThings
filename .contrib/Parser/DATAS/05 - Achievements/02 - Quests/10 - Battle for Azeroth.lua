@@ -68,7 +68,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		a(ach(13053)),	-- Deadliest Cache
 		h(ach(13435)),	-- Doomsoul Surprise
 		ach(13045),		-- Every Day I'm Truffling
-		a(ach(13283, {	-- Frontline Warrior (A)
+		a(achraw(13283, {	-- Frontline Warrior (A)
 			crit(1, {		-- A Sound Defense
 				["_quests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
 			}),
@@ -88,7 +88,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				["_quests"] = { 54138 },	-- Ritual Rampage (Faction Assault WQ)
 			}),
 		})),
-		h(ach(13284, {	-- Frontline Warrior (H)
+		h(achraw(13284, {	-- Frontline Warrior (H)
 			crit(1, {		-- Breaching Boralus
 				["_quests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
 			}),
@@ -332,7 +332,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(2),		-- Secrets in the Sea
 			crit(3),		-- Turning the Tide
 		})),
-		a(ach(13285, {	-- Upright Citizens
+		a(achraw(13285, {	-- Upright Citizens
 			i(166247),		-- Citizens Brigade Whistle (TOY!)
 			crit(1, {		-- Russel the Bard recruited
 				["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)

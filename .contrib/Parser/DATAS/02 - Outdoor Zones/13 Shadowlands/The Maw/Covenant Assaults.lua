@@ -369,7 +369,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["provider"] = { "n", 177072 },	-- Baroness Draka
 							["coord"] = { 33.8, 54.8, THE_MAW },
 							["g"] = {
-								ach(15037, {	-- This Army
+								achraw(15037, {	-- This Army
 									crit(1, {	-- Cutter Fin
 										["crs"] = { 177771 },	-- Cutter Fin
 									}),

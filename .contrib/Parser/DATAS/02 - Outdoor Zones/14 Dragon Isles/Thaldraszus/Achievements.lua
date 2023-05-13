@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				crit(7),	-- Vault of the Incarnates
 				crit(8),	-- Veiled Ossuary
 			}),
-			ach(16634, {	-- Framing a New Perspective
+			achraw(16634, {	-- Framing a New Perspective
 				["description"] = "Exact point in the world will be within a light pink beam of light when using the 'Selfie Camera MkII' near the proper location.",
 				["g"] = {
 					crit(1, {	-- The Seat of the Aspects

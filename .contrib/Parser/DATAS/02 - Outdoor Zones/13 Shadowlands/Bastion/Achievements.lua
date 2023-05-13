@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(BASTION, {
 		n(ACHIEVEMENTS, {
-			ach(14307, {	-- Adventurer of Bastion
+			achraw(14307, {	-- Adventurer of Bastion
 				crit(1, {
 					["_npcs"] = { 158659 },	-- Herculon <Aspirant Assessor>
 				}),

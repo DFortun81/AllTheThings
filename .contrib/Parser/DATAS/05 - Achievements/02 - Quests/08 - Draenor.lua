@@ -88,12 +88,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(6),		-- Matron of Sin
 			crit(7),		-- Vigilant Paarthos
 		}),
-		ach(9610, {		-- History of Violence (Broken Precipice)
-			crit(1),		-- Krog the Dominator's Hammer
-			crit(2),		-- Thak the Conqueror's Bust
-			crit(3),		-- Thurg the Slave Lord's Necklace
-			crit(4),		-- Gorg the Subjugator's Idol
-		}),
 		ach(9674, {		-- I Want More Talador
 			crit(1),		-- Bonus Objective: Aruuna's Desolation
 			crit(2),		-- Bonus Objective: Court of Souls

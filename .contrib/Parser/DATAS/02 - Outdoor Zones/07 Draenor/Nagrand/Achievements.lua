@@ -38,7 +38,7 @@ _.Zones =
 						["_quests"] = { 37136 },
 					}),
 				}),
-				ach(9610,  {	-- History of Violence (Broken Precipice)
+				achraw(9610,  {	-- History of Violence (Broken Precipice)
 					["description"] = "In order to get the relics, except the Bust, use Jewel of Transformation in the area and then break boulder piles.",
 					["g"] = {
 						crit(1),	-- Krog the Dominator's Hammer

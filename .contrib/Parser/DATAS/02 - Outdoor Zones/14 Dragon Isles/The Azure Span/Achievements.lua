@@ -258,7 +258,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["sourceQuests"] = { 66846 },	-- The Heart of the Deck
 				}),
 			}),
-			ach(16638, {	-- Ley Line in the Span
+			achraw(16638, {	-- Ley Line in the Span
 				crit(1, {	-- Azure Archives
 					--["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 43.8, 61.9, THE_AZURE_SPAN },

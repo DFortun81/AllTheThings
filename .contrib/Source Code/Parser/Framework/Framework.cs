@@ -1287,6 +1287,10 @@ namespace ATT
             if (CurrentParentGroup == null)
                 return;
 
+            // due to AchievementDB using 'HQT' questIDs for some Criterias, let's just tell Parser to ignore moving them based on AchievementDB until we think of a better solution...
+            if (data.ContainsKey("_noautomation"))
+                return;
+
             var parent = CurrentParentGroup.Value;
             long achID = 0;
 

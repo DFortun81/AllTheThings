@@ -1657,7 +1657,6 @@ end");
                 // Convert the name of the field to something more standardized.
                 switch (field = ConvertFieldName(field))
                 {
-                    // Blacklisted Fields.
                     case "g":
                         {
                             // Attempt to cache the existing groups list.
@@ -2124,9 +2123,12 @@ end");
                                 return;
                             }
 
-                            // ignore fields starting with _ since those will be used for metadata in some scenarios
+                            // simple assignment for other fields starting with _ since those will be used for metadata in some scenarios and cleaned up by the Parser
                             if (field.StartsWith("_"))
+                            {
+                                item[field] = value;
                                 break;
+                            }
 
                             // ignore the 'hash' field which is generated during recipe automation and is dynamic in-game anyway
                             if (field == "hash")

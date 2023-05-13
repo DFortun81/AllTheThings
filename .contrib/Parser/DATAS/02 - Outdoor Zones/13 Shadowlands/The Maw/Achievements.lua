@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				crit(11),		-- The Beastwarrens
 				crit(12),		-- Zovaal's Cauldron
 			}),
-			ach(14895, {	-- 'Ghast Five
+			achraw(14895, {	-- 'Ghast Five
 				crit(1, {		-- Vessel of Unfortunate Spirits
 					["provider"] = { "i", 184620 },
 				}),
@@ -435,45 +435,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				},
 			}),
 			ach(14894, {	-- To 'Ghast, Two Curios (2 of these criteria)
-				crit(1, {		-- Vessel of Unfortunate Spirits
-					["provider"] = { "i", 184620 },
-				}),
-				crit(2, {		-- Extradimensional Pockets
-					["provider"] = { "i", 184615 },
-				}),
-				crit(3, {		-- Encased Riftwalker Essence
-					["provider"] = { "i", 184613 },
-				}),
-				crit(4, {		-- Animated Levitating Chain
-					["provider"] = { "i", 184653 },
-				}),
-				crit(5, {		-- Animaflow Stabilizer
-					["provider"] = { "i", 180949 },
-				}),
-				crit(6, {		-- Soul-Stabilizing Salve
-					["provider"] = { "i", 184588 },
-				}),
-				crit(7, {		-- Ritual Prism of Fortune
-					["provider"] = { "i", 184621 },
-				}),
-				crit(8, {		-- Bangle of Seniority
-					["provider"] = { "i", 184617 },
-				}),
-				crit(9, {		-- Talisman of Destined Defiance
-					["provider"] = { "i", 184605 },
-				}),
-				crit(10, {	-- Rank Insignia: Acquisitionist
-					["provider"] = { "i", 184618 },
-				}),
-				crit(11, {	-- Possibility Matrix
-					["provider"] = { "i", 180952,  },
-				}),
-				crit(12, {	-- Loupe of Unusual Charm
-					["provider"] = { "i", 184619 },
-				}),
-				crit(13, {	-- Broker Traversal Enhancer
-					["provider"] = { "i", 184901 },
-				}),
+				["sym"] = {{"select","achievementID",14895},{"pop"}},	-- same criteria as full achieve
 			}),
 			ach(15648, sharedDataSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Walking in Maw-mphis
 				-- Meta Achievement

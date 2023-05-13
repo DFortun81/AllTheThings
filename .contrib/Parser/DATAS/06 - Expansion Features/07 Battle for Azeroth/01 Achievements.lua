@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				},
 			}),
 		}),
-		pvp(ach(13623, {	-- Fighting on Two Fronts
+		pvp(achraw(13623, {	-- Fighting on Two Fronts
 			crit(1, {	-- Acquire Nazjatar Battle Commendations
 				["cost"] = { { "i", 168802, 25 } },
 			}),
@@ -162,7 +162,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				ach(12738),	-- Holy Scrap!
 			},
 		}),
-		ach(12482, {	-- Get Hek'd
+		achraw(12482, {	-- Get Hek'd
 			["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
 			["g"] = {
 				crit(1,  {	-- Golden Ravasaur Egg
