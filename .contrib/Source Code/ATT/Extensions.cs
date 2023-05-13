@@ -387,9 +387,9 @@ namespace ATT
         /// <summary>
         /// Converts a set of raw objects into a set of strongly-typed elements
         /// </summary>
-        public static IEnumerable<T> AsDataList<T>(this IEnumerable objs)
+        public static IEnumerable<T> AsTypedEnumerable<T>(this object listObj)
         {
-            if (objs == null)
+            if (listObj == null || listObj is string || !(listObj is IEnumerable objs))
                 yield break;
 
             IEnumerator e = objs.GetEnumerator();

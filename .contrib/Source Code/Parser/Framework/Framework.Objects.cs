@@ -75,6 +75,7 @@ namespace ATT
                 {  "recipeID" , new string[] { "u", "requireSkill" } },
                 {  "speciesID" , new string[] { "pb", "crs" } },
                 {  "instanceID" , new string[] { "isRaid" } },
+                {  "questID" , new string[] { "sourceQuests", "altQuests", "isBreadcrumb" } },
             };
 
             /// <summary>
@@ -1192,6 +1193,7 @@ namespace ATT
                             Trace.Write(id);
                             Trace.Write(',');
                         }
+                        Trace.WriteLine("");
                     }
                 }
             }
@@ -1614,13 +1616,7 @@ end");
                 if (newList == null) return;
 
                 // Attempt to get the old list data.
-                List<object> oldList;
-                if (item.TryGetValue(field, out object oldData))
-                {
-                    // Convert the old data to a list of objects.
-                    oldList = oldData as List<object>;
-                }
-                else
+                if (!item.TryGetValue(field, out List<object> oldList))
                 {
                     // Create a new list.
                     item[field] = oldList = new List<object>();
@@ -1669,6 +1665,11 @@ end");
                             if (item.TryGetValue("g", out object objRef))
                             {
                                 groups = objRef as List<object>;
+                                if (groups == null)
+                                {
+                                    LogError($"'g' is weird and cannot parse! {ToJSON(objRef)}", item);
+                                    return;
+                                }
                             }
                             else
                             {
@@ -2389,8 +2390,9 @@ end");
             public static void PreMerge(Dictionary<string, object> entry, Dictionary<string, object> data)
             {
                 // sometimes existing data from harvests may be inaccurate, so may need to clean existing fields from being merged in
-                if (entry.TryGetValue("_drop", out object drops))
+                if (entry.TryGetValue("_drop", out object drops) || data.TryGetValue("_drop", out drops))
                 {
+                    PerformDrops(entry, drops);
                     PerformDrops(data, drops);
                 }
             }
@@ -2408,7 +2410,7 @@ end");
                     {
                         if (data.Remove(dropObj.ToString()))
                         {
-                            LogDebug($"Removed key: '{dropObj}'", data);
+                            LogDebug($"INFO: Removed key: '{dropObj}'", data);
                         }
                     }
                 }
@@ -2426,9 +2428,6 @@ end");
             /// <param name="data">The data to merge into the container.</param>
             public static void Merge(List<object> container, Dictionary<string, object> data2)
             {
-                // Find the Object Dictionary that matches the data.
-                Dictionary<string, object> entry = null;
-
 #if RETAIL
                 // clean up unique quests being treated as one quest for purposes that are irrelevant to Retail
                 if (data2.TryGetValue("aqd", out Dictionary<string, object> aqd) && data2.TryGetValue("hqd", out Dictionary<string, object> hqd))
@@ -2442,6 +2441,8 @@ end");
                             data2["questID"] = aQuestID;
                             aqd.Remove("questID");
                             hqd.Remove("questID");
+
+                            LogDebug($"Converted AQD/HQD type into single Quest for Retail.", data2);
                         }
                         else
                         {
@@ -2457,18 +2458,28 @@ end");
                             // copy the shared data into each
                             foreach (KeyValuePair<string, object> info in data2)
                             {
+                                if (info.Key == "g")
+                                    continue;
+
                                 aQuest.Add(info.Key, info.Value);
                                 hQuest.Add(info.Key, info.Value);
                             }
 
-                            // copy the faction-specific data into respective objects
+                            // copy the faction-specific data into respective objects, allowing to replace matching shared data
                             foreach (KeyValuePair<string, object> info in aqd)
                             {
-                                aQuest.Add(info.Key, info.Value);
+                                aQuest[info.Key] = info.Value;
                             }
                             foreach (KeyValuePair<string, object> info in hqd)
                             {
-                                hQuest.Add(info.Key, info.Value);
+                                hQuest[info.Key] = info.Value;
+                            }
+
+                            // any shared groups need to merge into both faction groups
+                            if (data2.TryGetValue("g", out List<object> groups))
+                            {
+                                Merge(aQuest, "g", groups);
+                                Merge(hQuest, "g", groups);
                             }
 
                             // apply the faction to the quests
@@ -2480,25 +2491,6 @@ end");
                             Merge(container, hQuest);
                             return;
                         }
-                    }
-
-                    LogDebug($"Converted AQD type into single Quest for Retail.", data2);
-                }
-#else
-                if (data2.TryGetValue("aqd", out Dictionary<string, object> aqd)
-                    && aqd.TryGetValue("questID", out long aQuestID))
-                {
-                    if (!AllQuests.ContainsKey(aQuestID))
-                    {
-                        AllQuests.Add(aQuestID, aqd);
-                    }
-                }
-                if (data2.TryGetValue("hqd", out Dictionary<string, object> hqd)
-                    && hqd.TryGetValue("questID", out long hQuestID))
-                {
-                    if (!AllQuests.ContainsKey(hQuestID))
-                    {
-                        AllQuests.Add(hQuestID, hqd);
                     }
                 }
 #endif
@@ -2516,7 +2508,8 @@ end");
                     MergeInto(data2);
                 }
 
-                entry = FindMatchingData(container, data2);
+                // Find the Object Dictionary that matches the data.
+                Dictionary<string, object> entry = FindMatchingData(container, data2);
 
                 // If no object matched the data, then we need to create a new entry.
                 if (entry == null)
@@ -2530,42 +2523,6 @@ end");
                 PreMerge(entry, data2);
                 Merge(entry, data2);
 
-                // Add quest entry to AllQuest collection
-                if (entry.TryGetValue("questID", out long questID))
-                {
-                    // merge any quest information from the quest DB
-                    if (QUESTS.TryGetValue(questID, out Dictionary<string, object> dbQuest))
-                    {
-                        PreMerge(entry, dbQuest);
-                        Merge(entry, dbQuest);
-                    }
-
-                    // add this quest entry to the set of AllQuests in case it is referenced by a breadcrumb or another sourceQuest
-                    if (!AllQuests.ContainsKey(questID))
-                    {
-                        AllQuests.Add(questID, entry);
-                    }
-                    else
-                    {
-                        Dictionary<string, object> quest = AllQuests[questID];
-                        // Copy in any additional pertinent data due to the quest information being listed in another location as well
-                        if (entry.TryGetValue("sourceQuests", out List<object> sourceQuests))
-                        {
-                            Merge(quest, "sourceQuests", sourceQuests);
-                        }
-                        if (entry.TryGetValue("isBreadcrumb", out bool isBreadcrumb))
-                        {
-                            Merge(quest, "isBreadcrumb", isBreadcrumb);
-                        }
-                    }
-                }
-                //else if (entry.TryGetValue("altQuestID", out int altQuestID))
-                //{
-                //    if (!AllQuests.ContainsKey(altQuestID))
-                //    {
-                //        AllQuests.Add(altQuestID, entry);
-                //    }
-                //}
                 // This bloats the DB size by A LOT due to way more item information being included for every item, vs. only in some places
                 // Wish there was a way to link to an ItemDB from Categories.lua so that item information in each reference is identical and only the ID is necessary in Categories.lua
                 // for any object type
@@ -2591,6 +2548,54 @@ end");
                 //    PreMerge(entry, npc);
                 //    Merge(entry, npc);
                 //}
+            }
+
+            /// <summary>
+            /// Handles merging the individual Quest data with the global set of Quest data references for later processing
+            /// </summary>
+            public static void MergeQuestData(Dictionary<string, object> data)
+            {
+                if (!data.TryGetValue("questID", out long questID))
+                    return;
+
+                QUESTS_WITH_REFERENCES[questID] = true;
+
+                // Alliance-Only QuestID
+                if (data.TryGetValue("questIDA", out long questIDA))
+                {
+                    QUESTS_WITH_REFERENCES[questIDA] = true;
+                }
+                // Horde-Only QuestID
+                if (data.TryGetValue("questIDH", out long questIDH))
+                {
+                    QUESTS_WITH_REFERENCES[questIDH] = true;
+                }
+
+                // merge any quest information from the quest DB into the data
+                if (QUESTS.TryGetValue(questID, out Dictionary<string, object> dbQuest))
+                {
+                    PreMerge(data, dbQuest);
+                    Merge(data, dbQuest);
+                }
+
+                // add this quest data to the set of AllQuests in case it is referenced by a breadcrumb or another sourceQuest
+                if (!AllQuests.ContainsKey(questID))
+                {
+                    AllQuests.Add(questID, data);
+                }
+                else
+                {
+                    Dictionary<string, object> quest = AllQuests[questID];
+                    // Copy in any additional pertinent data due to the quest information being listed in another location as well
+                    if (data.TryGetValue("sourceQuests", out List<object> sourceQuests))
+                    {
+                        Merge(quest, "sourceQuests", sourceQuests);
+                    }
+                    if (data.TryGetValue("isBreadcrumb", out bool isBreadcrumb))
+                    {
+                        Merge(quest, "isBreadcrumb", isBreadcrumb);
+                    }
+                }
             }
 
             /// <summary>
@@ -2776,17 +2781,13 @@ end");
                 if (value is IDictionary<string, T> sdict)
                     return sdict.Values.ToList();
 
-                if (value is IEnumerable<object> enObj)
-                    return enObj.AsDataList<T>().ToList();
-
-                if (value is IEnumerable<long> enLong)
-                    return enLong.AsDataList<T>().ToList();
-
-                if (value is IEnumerable<decimal> enDec)
-                    return enDec.AsDataList<T>().ToList();
-
+                // see if the value is some other iterator of typed objects
+                IEnumerable<T> valueEnum = value?.AsTypedEnumerable<T>();
                 // something that doesn't make sense as a List
-                return null;
+                if (valueEnum == null || !valueEnum.GetEnumerator().MoveNext())
+                    return null;
+
+                return valueEnum.ToList();
             }
 
             /// <summary>

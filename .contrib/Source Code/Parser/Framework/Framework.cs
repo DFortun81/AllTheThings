@@ -1,5 +1,6 @@
 ﻿using NLua;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -895,40 +896,40 @@ namespace ATT
             if (!data.TryGetValue("cost", out object costRef))
                 return;
 
-            // expected data format is checked during 'MergeField_cost'
-            if (!costRef.TryConvert(out List<List<object>> cost))
+            if (!(costRef is List<List<object>> costSets))
                 return;
 
             // check each cost component for valid formatting/validation on the data
-            for (int i = cost.Count - 1; i >= 0; --i)
+            foreach (List<object> c in costSets)
             {
-                var c = cost[i];
-                if (c != null && c.Any())
+                if (!c[1].TryConvert(out decimal costID))
                 {
-                    decimal costID = Convert.ToDecimal(c[1]);
-                    switch (c[0].ToString())
-                    {
-                        case "i":
-                            // anything that costs Mark of Honor should have pvp tag
-                            if (costID == 137642)
-                            {
-                                data["pvp"] = true;
-                            }
-                            break;
-                        case "c":
-                            if (costID == 1602 ||   // Conquest
-                                costID == 1792)     // Honor
-                            {
-                                data["pvp"] = true;
-                            }
-                            break;
-                        case "g":
-                            break;
+                    LogError($"Non-numeric cost-quantity used: {ToJSON(c)}", data);
+                    continue;
+                }
 
-                        default:
-                            LogError($"Unknown 'cost' type: {c[0]}", data);
-                            break;
-                    }
+                switch (c[0].ToString())
+                {
+                    case "i":
+                        // anything that costs Mark of Honor should have pvp tag
+                        if (costID == 137642)
+                        {
+                            data["pvp"] = true;
+                        }
+                        break;
+                    case "c":
+                        if (costID == 1602 ||   // Conquest
+                            costID == 1792)     // Honor
+                        {
+                            data["pvp"] = true;
+                        }
+                        break;
+                    case "g":
+                        break;
+
+                    default:
+                        LogError($"Unknown 'cost' type: {c[0]}", data);
+                        break;
                 }
             }
         }
@@ -938,48 +939,49 @@ namespace ATT
             if (!data.TryGetValue("cost", out object costRef))
                 return;
 
-            if (!costRef.TryConvert(out List<List<object>> costList))
+            if (!(costRef is List<List<object>> costSets))
                 return;
 
             // check each cost component for valid formatting/validation on the data
-            for (int i = costList.Count - 1; i >= 0; --i)
+            for (int i = costSets.Count - 1; i >= 0; --i)
             {
-                var c = costList[i];
-                if (c != null && c.Any())
-                {
-                    decimal costID = Convert.ToDecimal(c[1]);
-                    switch (c[0].ToString())
-                    {
-                        case "i":
-                            var item = Items.GetNull(costID);
-                            if (item == null || !Items.IsItemReferenced(costID))
-                            {
-                                // The item isn't Sourced in Retail version
-                                // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
-                                LogDebug($"WARN: Non-Sourced 'cost-item' {costID}", data);
-                            }
-                            else if (item.TryGetValue("u", out long u) && u == 1)
-                            {
-                                // The item was classified as never being implemented
-                                LogDebug($"INFO: Removed NYI 'cost-item' {costID}", data);
-                                costList.RemoveAt(i);
-                            }
+                if (!costSets[i].TryConvert(out List<object> c))
+                    continue;
 
-                            // Single Cost Item on a Achieve/Criteria group should be represented as a Provider instead
-                            if (data.TryGetValue("achID", out long _) ||
-                                data.TryGetValue("criteriaID", out long _))
+                if (!c[1].TryConvert(out decimal costID))
+                    continue;
+
+                switch (c[0].ToString())
+                {
+                    case "i":
+                        var item = Items.GetNull(costID);
+                        if (item == null || !Items.IsItemReferenced(costID))
+                        {
+                            // The item isn't Sourced in Retail version
+                            // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
+                            LogDebug($"WARN: Non-Sourced 'cost-item' {costID}", data);
+                        }
+                        else if (item.TryGetValue("u", out long u) && u == 1)
+                        {
+                            // The item was classified as never being implemented
+                            LogDebug($"INFO: Removed NYI 'cost-item' {costID}", data);
+                            costSets.RemoveAt(i);
+                        }
+
+                        // Single Cost Item on a Achieve/Criteria group should be represented as a Provider instead
+                        if (data.TryGetValue("achID", out long _) ||
+                            data.TryGetValue("criteriaID", out long _))
+                        {
+                            if (!data.TryGetValue("providers", out object _) &&
+                                costSets.Count == 1 &&
+                                c.Count > 2 &&
+                                c[2].TryConvert(out long count) &&
+                                count == 1)
                             {
-                                if (!data.TryGetValue("providers", out object _) &&
-                                    costList.Count == 1 &&
-                                    c.Count > 2 &&
-                                    c[2].TryConvert(out long count) &&
-                                    count == 1)
-                                {
-                                    Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'", data);
-                                }
+                                Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'", data);
                             }
-                            break;
-                    }
+                        }
+                        break;
                 }
             }
         }
@@ -1148,7 +1150,7 @@ namespace ATT
             {
                 if (!cmdObj.TryConvert(out List<object> command))
                 {
-                    LogError("Incorrect 'sym' command structure encountered", data);
+                    LogError($"Incorrect 'sym' command structure encountered: {ToJSON(cmdObj)}", data);
                     break;
                 }
 
@@ -1167,7 +1169,7 @@ namespace ATT
                             else
                             {
                                 List<object> selections = command.Skip(2).ToList();
-                                List<decimal> selectionValues = selections.AsDataList<decimal>().ToList();
+                                List<decimal> selectionValues = selections.AsTypedEnumerable<decimal>().ToList();
 
                                 // verify all select values are decimals
                                 if (selections.Count != selectionValues.Count)
@@ -1303,7 +1305,7 @@ namespace ATT
                 return;
 
             // Grab matching Criteria data
-            var criteriaData = criteriaList.AsDataList<IDictionary<string, object>>().FirstOrDefault(c => c.TryGetValue("criteriaID", out long criteriaInfoID) && criteriaInfoID == criteriaID);
+            var criteriaData = criteriaList.AsTypedEnumerable<IDictionary<string, object>>().FirstOrDefault(c => c.TryGetValue("criteriaID", out long criteriaInfoID) && criteriaInfoID == criteriaID);
             if (criteriaData == null)
                 return;
 
@@ -1355,50 +1357,51 @@ namespace ATT
         private static void Validate_Quest(Dictionary<string, object> data)
         {
             // Mark the quest as referenced
-            if (data.TryGetValue("questID", out long questID))
+            if (!data.TryGetValue("questID", out long questID))
+                return;
+
+            // Merge quest entry to AllQuest collection
+            Objects.MergeQuestData(data);
+
+            // Classic-only AQD/HQD quest datas
+            if (data.TryGetValue("aqd", out Dictionary<string, object> aqd))
             {
-                QUESTS_WITH_REFERENCES[questID] = true;
+                Objects.MergeQuestData(aqd);
+            }
+            if (data.TryGetValue("hqd", out Dictionary<string, object> hqd))
+            {
+                Objects.MergeQuestData(hqd);
+            }
 
-                // Remove itself from the list of altQuests
-                if (data.TryGetValue("altQuests", out List<object> altQuests) && altQuests != null && altQuests.Count > 0)
-                {
-                    altQuests.Remove(questID);
-                }
+            // Remove itself from the list of altQuests
+            if (data.TryGetValue("altQuests", out List<object> altQuests) && altQuests != null && altQuests.Count > 0)
+            {
+                altQuests.Remove(questID);
+            }
 
-                // Convert any 'n' providers into 'qgs' for simplicity
-                if (data.TryGetValue("providers", out List<object> providers))
+            // Convert any 'n' providers into 'qgs' for data simplicity
+            if (data.TryGetValue("providers", out List<object> providers))
+            {
+                List<object> quest_qgs = new List<object>(providers.Count);
+                for (int p = providers.Count - 1; p >= 0; p--)
                 {
-                    List<object> quest_qgs = new List<object>(providers.Count);
-                    for (int p = providers.Count - 1; p >= 0; p--)
+                    object provider = providers[p];
+                    // { "n", ### }
+                    if (provider is List<object> providerItems && providerItems.Count == 2 && providerItems[0].ToString() == "n")
                     {
-                        object provider = providers[p];
-                        // { "n", ### }
-                        if (provider is List<object> providerItems && providerItems.Count == 2 && providerItems[0].ToString() == "n")
-                        {
-                            quest_qgs.Add(providerItems[1]);
-                            providers.RemoveAt(p);
-                            //LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
-                        }
+                        quest_qgs.Add(providerItems[1]);
+                        providers.RemoveAt(p);
+                        //LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
                     }
-
-                    // remove 'providers' if it is now empty
-                    if (providers.Count == 0)
-                        data.Remove("providers");
-
-                    // merge the 'qgs' back into the data if anything was converted
-                    if (quest_qgs.Count > 0)
-                        Objects.Merge(data, "qgs", quest_qgs);
                 }
-            }
-            // Alliance-Only QuestID
-            if (data.TryGetValue("questIDA", out questID))
-            {
-                QUESTS_WITH_REFERENCES[questID] = true;
-            }
-            // Horde-Only QuestID
-            if (data.TryGetValue("questIDH", out questID))
-            {
-                QUESTS_WITH_REFERENCES[questID] = true;
+
+                // remove 'providers' if it is now empty
+                if (providers.Count == 0)
+                    data.Remove("providers");
+
+                // merge the 'qgs' back into the data if anything was converted
+                if (quest_qgs.Count > 0)
+                    Objects.Merge(data, "qgs", quest_qgs);
             }
         }
 
@@ -1578,6 +1581,8 @@ namespace ATT
 
             Consolidate_cost(data);
             Consolidate_providers(data);
+            Consolidate_sourceQuests(data);
+            Consolidate_altQuests(data);
 
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
@@ -1586,8 +1591,6 @@ namespace ATT
             CheckHeirloom(data);
             CheckTrackableFields(data);
             CheckRequiredDataRelationships(data);
-            Consolidate_sourceQuests(data);
-            Consolidate_altQuests(data);
             Items.DetermineSourceID(data);
             CheckObjectConversion(data);
 

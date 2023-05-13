@@ -174,7 +174,7 @@ namespace ATT
                 Trace.WriteLine(" Items loaded in the database.");
 
 #if !ANYCLASSIC
-                if (Framework.IsErrored)
+                if (Framework.IsErrored && !PreProcessorTags.Contains("IGNORE_ERRORS"))
                 {
                     Trace.WriteLine("-- Errors encountered during Parse. Please fix them to allow exporting addon DB properly.");
                     Console.ReadLine();
