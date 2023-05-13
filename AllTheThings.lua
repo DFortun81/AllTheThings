@@ -10295,7 +10295,7 @@ local fields = {
 	["lore"] = function(t)
 		return cache.GetCachedField(t, "lore", CacheInfo);
 	end,
-	["link"] = function(t)
+	["silentLink"] = function(t)
 		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
 	["displayID"] = function(t)
@@ -11420,7 +11420,7 @@ local fields = {
 	["lore"] = function(t)
 		return cache.GetCachedField(t, "lore", CacheInfo);
 	end,
-	["link"] = function(t)
+	["silentLink"] = function(t)
 		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
 	["back"] = function(t)
