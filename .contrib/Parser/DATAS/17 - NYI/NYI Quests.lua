@@ -41,7 +41,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(1162, { ["name"] = "<NYI> <TXT> speak to hamuul runetotem", }),
 				q(1158, { ["name"] = "<NYI> <TXT> speak to rabine saturna", }),
 				q(1163, { ["name"] = "<NYI> <TXT> speak to tyrande whisperwind", }),
-				q(137, { ["name"] = "<NYI> <TXT> Stormwind Commendation", }),	
+				q(137, { ["name"] = "<NYI> <TXT> Stormwind Commendation", }),
 				q(5208, { ["name"] = "<NYI> <TXT> The Blessing of Evil", }),
 				q(1277, { ["name"] = "<nyi> <TXT> The Centaur Hoofprints", }),
 				q(3885, { ["name"] = "<NYI> <TXT> The Gadgetzan Run", }),
@@ -3824,7 +3824,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["g"] = {
 						i(160054, { -- War-Torn Satchel of Cooperation
 							["b"] = 1,
-							["filterID"] = TOYS,
 							["ilvl"] = 30,
 							["q"] = 3,
 						}),

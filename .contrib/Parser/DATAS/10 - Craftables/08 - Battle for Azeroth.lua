@@ -370,7 +370,6 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(152872),	-- Enchanter's Umbral Wand (H)
 			i(161928),	-- Honorable Combatant's Sorcerous Scepter (A)
 			i(159922),	-- Honorable Combatant's Sorcerous Scepter (H)
-			i(294781, {["timeline"]={"added 8.2.0"}}),	-- Notorious Combatant's Sorcerous Scepter [Rank 1]
 			i(167993, {["timeline"]={"added 8.2.0"}}),	-- Notorious Combatant's Sorcerous Scepter (A)
 			i(167992, {["timeline"]={"added 8.2.0"}}),	-- Notorious Combatant's Sorcerous Scepter (H)
 			i(164694, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Sorcerous Scepter (A)

@@ -401,12 +401,12 @@ namespace ATT
                                         return Filters.Ammo;
                                     default: return Filters.Invalid;
                                 }
-                            case 01: return Filters.Ignored;     // Reagent (not filtered)
+                            case 01: return Filters.Ignored;    // Reagent (not filtered)
                             case 02: return Filters.BattlePet;
                             case 03: return Filters.Holiday;
-                            case 04: return Filters.Toy;
+                            case 04: return Filters.Ignored;        // Seems to be typically one-time Item consumes with Quests
                             case 05: return Filters.Mount;
-                            case 12: return Filters.Ignored;     // Trash (not filtered)
+                            case 12: return Filters.Ignored;    // Trash (not filtered)
                             default: break;
                         }
                         break;
@@ -2495,14 +2495,9 @@ end");
                 }
 #endif
 
-                // Merge in/out any global data if this is not the initial merge pass
+                // Only Merge in any global data if this is not the initial merge pass
                 // This way, pets/mounts/etc. have proper data existing when needing to merge into another group
-                if (MergeItemData)
-                {
-                    Items.Merge(data2);
-                    Merge(data2);
-                }
-                else
+                if (!MergeItemData)
                 {
                     Items.MergeInto(data2);
                     MergeInto(data2);
