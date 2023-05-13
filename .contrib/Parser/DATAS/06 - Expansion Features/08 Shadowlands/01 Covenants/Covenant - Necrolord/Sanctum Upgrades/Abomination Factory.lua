@@ -492,7 +492,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							}),
 							ach(14748, {	-- Wardrobe Makeover
 								-- identical criteria as full achievement
-								["sym"] = {{"select","achievementID",14833}},	-- Fashion Abomination
+								["sym"] = {{"select","achievementID",14833},{"pop"}},	-- Fashion Abomination Criteria
 							}),
 						}),
 						n(FACTIONS, {

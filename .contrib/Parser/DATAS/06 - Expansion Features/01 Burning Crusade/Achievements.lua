@@ -68,7 +68,7 @@ root(ROOTS.ExpansionFeatures, tier(TBC_TIER, bubbleDown({ ["timeline"] = { "adde
 		}),
 		ach(1311, {	-- Medium Rare
 			-- identical criteria as full achievement
-			["sym"] = {{"select","achievementID",1312}},	-- Bloody Rare
+			["sym"] = {{"select","achievementID",1312},{"pop"}},	-- Bloody Rare Criteria
 		}),
 		ach(1206, {	-- To All The Squirrels I've Loved Before
 			crit(3741, {	-- Borean Frog (Borean Tundra)

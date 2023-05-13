@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			}),
 			ach(13478, {	-- Junkyard Collector
 				-- identical criteria as full achievement
-				["sym"] = {{"select","achievementID",13479}},	-- Junkyard Architect
+				["sym"] = {{"select","achievementID",13479},{"pop"}},	-- Junkyard Architect Criteria
 			}),
 			ach(13474),	-- Junkyard Machinist
 			ach(13686, {	-- Junkyard Melomaniac

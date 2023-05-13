@@ -87,7 +87,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 		ach(4496),	-- It's Over Nine Thousand!
 		ach(2256, {	-- Northern Exposure
 			-- identical criteria as full achievement
-			["sym"] = {{"select","achievementID",2257}},	-- Frostbitten
+			["sym"] = {{"select","achievementID",2257},{"pop"}},	-- Frostbitten Criteria
 		}),
 		ach(2557, {	-- To All The Squirrels Who Shared My Life
 			-- #if ANYCLASSIC
