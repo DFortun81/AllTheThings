@@ -170,7 +170,7 @@ _.Zones =
 					["coord"] = { 23.7, 38.5, DRAENOR_NAGRAND },
 					["lvl"] = 100,
 					["g"] = {
-						i(129218),	-- Glittering Arcane Crystal (Empyreal Manafiend Pet)
+						i(129218),	-- Empyreal Manafiend (PET!)
 					},
 				}),
 				n(83603, {	-- Hunter Blacktooth
@@ -316,7 +316,7 @@ _.Zones =
 					["coord"] = { 28.1, 29.6, DRAENOR_NAGRAND },
 					["lvl"] = 100,
 					["g"] = {
-						i(129217),	-- Warm Arcane Crystal (Empowered Manafiend Pet)
+						i(129217),	-- Empowered Manafiend (PET!)
 					},
 				}),
 				n(82755, {	-- Redclaw the Feral
@@ -339,7 +339,7 @@ _.Zones =
 					["coord"] = { 25.9, 34.7, DRAENOR_NAGRAND },
 					["lvl"] = 100,
 					["g"] = {
-						i(129216),	-- Vibrating Arcane Crystal (Energized Manafiend Pet)
+						i(129216),	-- Energized Manafiend (PET!)
 					},
 				}),
 				n(83634, {	-- Scout Pokhar

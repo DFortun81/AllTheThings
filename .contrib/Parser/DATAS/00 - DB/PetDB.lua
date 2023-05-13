@@ -206,7 +206,7 @@ i(39973, 190);	-- Ghostly Skull
 i(43698, 193);	-- Giant Sewer Rat
 i(120309, 1543);	-- Glass of Warm Milk (Pygmy Cow)
 i(180034, 2888);	-- Glimr's Cracked Egg (Glimr)
-i(129218, 1765);	-- Glittering Arcane Crystal (Empyreal Manafiend)
+
 i(142089, 1958);	-- Glittering Ball of Yarn (Sanctum Cub)
 i(127701, 1598);	-- Glowing Sporebat
 i(93029, 1146);	-- Gluth's Bone (Stitched Pup)
@@ -513,12 +513,11 @@ i(38658, 187);	-- Vampiric Batling
 i(120050, 1596);	-- Veilwatcher Hatchling
 i(103637, 1344);	-- Vengeful Porcupette
 i(89736, 855);	-- Venus
-i(129216, 1764);	-- Vibrating Arcane Crystal (Energized Manafiend)
 i(93039, 1154);	-- Viscidus Globule
 i(122114, 1633);	-- Void Collar (Chaos Pup)
 i(69824, 310);	-- Voodoo Figurine
 i(95621, 227);	-- Warbot Ignition Key (Warbot)
-i(129217, 1766);	-- Warm Arcane Crystal (Empowered Manafiend)
+
 i(113558, 1394);	-- Weebomination
 i(93038, 1152);	-- Whistle of Chromatic Bone (Chrominius)
 i(29904, 141);	-- White Moth Egg (White Moth)
@@ -529,7 +528,6 @@ i(49663, 246);	-- Wind Rider Cub
 i(69239, 306);	-- Winterspring Cub
 i(46325, 220);	-- Withers
 i(32233, 153);	-- Wolpertinger's Tankard (Wolpertinger)
-
 i(11027, 64);		-- Wood Frog Box (Wood Frog)
 i(12264, 89);		-- Worg Carrier (Worg Pup)
 i(136922, 1887);	-- Wyrmy Tunkins
@@ -548,6 +546,13 @@ i(128423, 1255);	-- Zeradar
 i(13582, 94);		-- Zergling Leash (Zergling)
 i(49664, 247);	-- Zipao Tiger
 i(113554, 1428);	-- Zomstrok
+
+-----------------
+-- PATCH 6.2.1 --
+-----------------
+i(129216, 1764);	-- Energized Manafiend
+i(129218, 1765);	-- Empyreal Manafiend
+i(129217, 1766);	-- Empowered Manafiend
 
 -----------------
 -- PATCH 6.2.2 --
