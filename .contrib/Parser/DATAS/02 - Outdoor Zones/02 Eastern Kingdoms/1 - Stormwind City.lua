@@ -7393,7 +7393,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" },		-- Deadly Gladiator's Set
 						-- #if ANYCLASSIC
-						201993,    -- Deadly Gladiator's Tabard (Wrath Classic Only)
+						{ "select", "itemID", 201993 },	-- Deadly Gladiator's Tabard (Wrath Classic Only)
 						-- #endif
 					},
 					-- #endif

@@ -25,41 +25,41 @@ local STAR_LAKE_AMPHITHEATER = n(-934,   {	-- Star Lake Amphitheater
 		n(166135, {	-- Astra, As Azshara <An Infamous Queen>
 			["questID"] = 61201,
 			["isDaily"] = true,
-			["g"] = GLIMMERLIGHT_STAFF,
+			["g"] = {GLIMMERLIGHT_STAFF},
 		}),
 		n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
 			["questID"] = 61206,
 			["isDaily"] = true,
-			["g"] = TWILIGHT_BLOOM,
+			["g"] = {TWILIGHT_BLOOM},
 		}),
 		n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
 			["questID"] = 61205,
 			["isDaily"] = true,
-			["g"] = EVERCHILL_BRAMBLES,
+			["g"] = {EVERCHILL_BRAMBLES},
 		}),
 		n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
 			["questID"] = 61203,
 			["isDaily"] = true,
-			["g"] = GLIMMERDUSTS_GRAND_DESIGN,
+			["g"] = {GLIMMERDUSTS_GRAND_DESIGN},
 		}),
 		n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
 			["isDaily"] = true,
 			["questID"] = 61202,
-			["g"] = MIKAI_DEATHSCYTHE,
+			["g"] = {MIKAI_DEATHSCYTHE},
 		}),
 		n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
 			["questID"] = 61207,
 			["isDaily"] = true,
-			["g"] = DREAMERS_MENDING,
+			["g"] = {DREAMERS_MENDING},
 		}),
 		n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
 			["questID"] = 61204,
 			["isDaily"] = true,
-			["g"] = MURMURS_IN_THE_DARK,
+			["g"] = {MURMURS_IN_THE_DARK},
 		}),
 		n(163714, {	-- Master Clerk Salorn <Tickets and Patron Rewards>
 			["coord"] = { 43.0, 47.0, ARDENWEALD },
-			["g"] = SILKY_SHIMMERMOTH,	-- (MOUNT!)
+			["g"] = {SILKY_SHIMMERMOTH},	-- (MOUNT!)
 		}),
 	},
 });

@@ -494,9 +494,11 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							i(32483),	-- The Skull of Gul'dan
 						},
 					}),
-			-- #if AFTER LEGION
+			-- #if AFTER 7.2.5.23910
 				},
 			}),
+			-- #endif
+			-- #if AFTER LEGION
 			d(TIMEWALKING_DUNGEON, {
 				-- #if ANYCLASSIC
 				["u"] = LEGION_PHASE_ONE,

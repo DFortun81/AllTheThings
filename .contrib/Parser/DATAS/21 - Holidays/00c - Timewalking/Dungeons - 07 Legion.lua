@@ -6,7 +6,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 		}),
 		inst_tw(740, {	-- Black Rook Hold
 			e(1518, {	-- Amalgam of Souls
-				["cr"] = 98542,	-- Amalgam of Souls
+				["creatureID"] = 98542,	-- Amalgam of Souls
 				["g"] = {
 					i(136714),	-- Amalgam's Seventh Spine
 					i(136976),	-- Etheldrin's Breastplate
@@ -21,7 +21,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1653, {	-- Illysanna Ravencrest
-				["cr"] = 98696,	-- Illysanna Ravencrest
+				["creatureID"] = 98696,	-- Illysanna Ravencrest
 				["g"] = {
 					i(134412),	-- Cloak of Unwavering Loyalty
 					i(136978),	-- Ember of Nullification
@@ -33,7 +33,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1664, {	-- Smashspite the Hateful
-				["cr"] = 98949,	-- Smashspite the Hateful
+				["creatureID"] = 98949,	-- Smashspite the Hateful
 				["g"] = {
 					i(134528),	-- Band of Callous Dominance
 					i(134426),	-- Collar of Raking Claws
@@ -73,7 +73,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 		}),
 		inst_tw(800, {	-- Court of Stars
 			e(1718, {	-- Patrol Captain Gerdo
-				["cr"] = 104215,	-- Patrol Captain Gerdo
+				["creatureID"] = 104215,	-- Patrol Captain Gerdo
 				["g"] = {
 					i(134268),	-- Arcane Defender's Gauntlets
 					i(134415),	-- Arcanist's Resonant Robes
@@ -88,7 +88,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1719, {	-- Talixae Flamewreath
-				["cr"] = 104217,	-- Talixae Flamewreath
+				["creatureID"] = 104217,	-- Talixae Flamewreath
 				["g"] = {
 					i(134529),	-- Chain of Scorched Bones
 					i(134473),	-- Collar of Fiery Allegiance
@@ -103,7 +103,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1720, {	-- Advisor Melandrus
-				["cr"] = 104218,	-- Advisor Melandrus
+				["creatureID"] = 104218,	-- Advisor Melandrus
 				["g"] = {
 					i(134432),	-- Amice of the Unfurling Tempest
 					i(134271),	-- Arcane Defender's Pants
@@ -125,7 +125,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 		}),
 		inst_tw(762, {	-- Darkheart Thicket
 			e(1654, {	-- Archdruid Glaidalis
-				["cr"] = 96512,	-- Archdruid Glaidalis
+				["creatureID"] = 96512,	-- Archdruid Glaidalis
 				["g"] = {
 					i(134487),	-- Arch-Druid's Tainted Seal
 					i(139077),	-- Bramblemail Belt
@@ -140,7 +140,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1655, {	-- Oakheart
-				["cr"] = 103344,	-- Oakheart
+				["creatureID"] = 103344,	-- Oakheart
 				["g"] = {
 					i(134531),	-- Band of Twisted Bark
 					i(137305),	-- Blighted Grasp Bracers
@@ -155,7 +155,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1656, {	-- Dresaron
-				["cr"] = 99200,	-- Dresaron
+				["creatureID"] = 99200,	-- Dresaron
 				["g"] = {
 					i(139082),	-- Bramblemail Greaves
 					i(137311),	-- Chain of the Green Flight
@@ -170,7 +170,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1657, {	-- Shade of Xavius
-				["cr"] = 99192,	-- Shade of Xavius
+				["creatureID"] = 99192,	-- Shade of Xavius
 				["g"] = {
 					i(134448),	-- Ashen Satyr Leggings
 					i(137321),	-- Burning Sky Pauldrons
@@ -192,7 +192,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 		}),
 		inst_tw(716, {	-- Eye of Azshara
 			e(1480, {	-- Warlord Parjesh
-				["cr"] = 91784,	-- Warlord Parjesh
+				["creatureID"] = 91784,	-- Warlord Parjesh
 				["g"] = {
 					i(134240),	-- Brinewashed Leather Cowl
 					i(134223),	-- Coralplate Chestguard
@@ -207,7 +207,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1490, {	-- Lady Hatecoil
-				["cr"] = 91789,	-- Lady Hatecoil
+				["creatureID"] = 91789,	-- Lady Hatecoil
 				["g"] = {
 					i(134238),	-- Brinewashed Leather Pants
 					i(134230),	-- Coralplate Wristguard
@@ -222,7 +222,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1479, {	-- Serpentrix
-				["cr"] = 91808,	-- Serpentrix
+				["creatureID"] = 91808,	-- Serpentrix
 				["g"] = {
 					i(134239),	-- Brinewashed Leather Grips
 					i(134228),	-- Coraplate Pauldrons
@@ -236,7 +236,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1491, {	-- King Deepbeard
-				["cr"] = 91797,	-- King Deepbeard
+				["creatureID"] = 91797,	-- King Deepbeard
 				["g"] = {
 					i(134539),	-- Braided Silver Ring
 					i(137368),	-- Breastplate of Ten Lashes
@@ -248,7 +248,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1492, {	-- Wrath of Azshara
-				["cr"] = 96028,	-- Wrath of Azshara
+				["creatureID"] = 96028,	-- Wrath of Azshara
 				["g"] = {
 					i(134532),	-- Band of Fused Coral
 					i(134237),	-- Brinewashed Leather Boots
@@ -266,7 +266,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 		}),
 		inst_tw(767, {	-- Neltharion's Lair
 			e(1662, {	-- Rokmora
-				["cr"] = 91003,	-- Rokmora
+				["creatureID"] = 91003,	-- Rokmora
 				["g"] = {
 					i(134481),	-- Boulderbuckle Strap
 					i(137337),	-- Deepfurrow Bracers
@@ -281,7 +281,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1665, {	-- Ularogg Cragshaper
-				["cr"] = 91004,	-- Ularogg Cragshaper
+				["creatureID"] = 91004,	-- Ularogg Cragshaper
 				["g"] = {
 					i(134164),	-- Bitestone Wristwraps
 					i(137341),	-- Cragshaper's Fitted Hood
@@ -296,7 +296,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1673, {	-- Naraxas
-				["cr"] = 91005,	-- Naraxas
+				["creatureID"] = 91005,	-- Naraxas
 				["g"] = {
 					i(134524),	-- Band of the Wyrm Matron
 					i(137348),	-- Gauntlets of Innumerable Barbs
@@ -308,7 +308,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1687, {	-- Dargrul
-				["cr"] = 91007,	-- Dargrul
+				["creatureID"] = 91007,	-- Dargrul
 				["g"] = {
 					i(134166),	-- Bitestone Boots
 					i(134495),	-- Chain of the Underking
@@ -329,7 +329,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 		}),
 		inst_tw(707, {	-- Vault of the Wardens
 			e(1467, {	-- Tirathon Saltheril
-				["cr"] = 95885,	-- Tirathon Saltheril
+				["creatureID"] = 95885,	-- Tirathon Saltheril
 				["g"] = {
 					i(134369),	-- Felbat Leather Boots
 					i(137509),	-- Glaivemaster's Studded Grips
@@ -344,7 +344,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1695, {	-- Inquisitor Tormentorum
-				["cr"] = 96015,	-- Inquisitor Tormentorum
+				["creatureID"] = 96015,	-- Inquisitor Tormentorum
 				["g"] = {
 					i(137503),	-- Amice of Cruel Laughter
 					i(137525),	-- Blood-Spattered Gauntlets
@@ -355,7 +355,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1468, {	-- Ash'golm
-				["cr"] = 95886,	-- Ash'golm
+				["creatureID"] = 95886,	-- Ash'golm
 				["g"] = {
 					i(139468),	-- Bindings of the Windlord (rogue appearance)
 					i(137510),	-- Charskin Mantle
@@ -371,7 +371,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1469, {	-- Glazer
-				["cr"] = 95887,	-- Glazer
+				["creatureID"] = 95887,	-- Glazer
 				["g"] = {
 					i(137516),	-- Collar of Blindsight
 					i(137540),	-- Concave Reflecting Lens
@@ -383,7 +383,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 			e(1470, {	-- Cordana Felsong
-				["cr"] = 95888,	-- Cordana Felsong
+				["creatureID"] = 95888,	-- Cordana Felsong
 				["g"] = {
 					i(137522),	-- Bracers of Twisted Revelation
 					i(137514),	-- Chestguard of Insidious Desire

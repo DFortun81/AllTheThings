@@ -1152,7 +1152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(5679, {	-- Touch of Weakness [Undercity]
+				q(5658, {	-- Touch of Weakness [Undercity]
 					["qgs"] = {
 						4606,	-- Aelthalyste
 						3706,	-- Tai'jin <Priest Trainer>
