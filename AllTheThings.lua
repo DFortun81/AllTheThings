@@ -3363,6 +3363,10 @@ local ResolveFunctions = {
 		end
 		PruneFinalized = true;
 	end,
+	-- Instruction to simply 'prune' sub-groups from the finalized selection
+	["prune"] = function()
+		PruneFinalized = true;
+	end,
 	-- Instruction to include only search results where an item is of a specific relic type
 	["relictype"] = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);

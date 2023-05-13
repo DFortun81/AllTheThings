@@ -13,11 +13,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				n(ACHIEVEMENTS, {
 					ach(18284, {	-- A Niffen's Best Buddy
 						["sym"] = {{"meta_achievement",
+							17833,	-- Sniffen Sage
 							18257,	-- Can You Dig It?
 							18271,	-- He'sSss All Mine
-							18255,	-- Proof of Myrrit
-							17832,	-- Sniffen Around
-							17833,	-- Sniffen Sage
 						}},
 						["g"] = {
 							title(507),	-- <Name>, Sniffenseeker
@@ -25,91 +23,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					ach(18257),	-- Can You Dig It?
 					ach(18271),	-- He'sSss All Mine
-					ach(18255, {	-- Proof of Myrrit
-						crit(1, {	-- Brand New Digs
-							["_quests"] = { 75459 },
-						}),
-						crit(2, {	-- Vertical Anomaly
-							["_quests"] = { 75390 },
-						}),
-						crit(3, {	-- Flapping and Screaming
-							["_quests"] = { 76027 },
-						}),
-						crit(4, {	-- Scratch and Sniff
-							["_quests"] = { 75234 },
-						}),
-						crit(5, {	-- Element Whispers
-							["_quests"] = { 75621 },
-						}),
-						crit(6, {	-- Successful Interventions
-							["_quests"] = { 75516 },
-						}),
-						crit(7, {	-- Those Rascally Worms
-							["_quests"] = { 75397 },
-						}),
-						crit(8, {	-- Your Weight in Gold
-							["_quests"] = { 75996 },
-						}),
-						crit(9, {	-- Sneak and Sniff
-							["_quests"] = { 75517 },
-						}),
-						crit(10, {	-- The Living Drill
-							["_quests"] = { 76016 },
-						}),
-						crit(11, {	-- Thieving Critters
-							["_quests"] = { 75619 },
-						}),
-						crit(12, {	-- Making Scents
-							["_quests"] = { 75393 },
-						}),
-						crit(13, {	-- Living Statue
-							["_quests"] = { 76014 },
-						}),
-						crit(14, {	-- Heart of Iron
-							-- TODO: ["_quests"] = { 76015 },
-						}),
-						crit(15, {	-- Liars in Light
-							["_quests"] = { 75620 },
-						}),
-						crit(16, {	-- Frostfire Finesse
-							["_quests"] = { 76084 },
-						}),
-						crit(17, {	-- Liars of Spirit
-							["_quests"] = { 76081 },
-						}),
+					ach(18255, {	-- Proof of Myrrit [_quests handled by AchievementDB]
+						crit(1),	-- Vertical Anomaly
+						crit(2),	-- Flapping and Screaming
+						crit(3),	-- Scratch and Sniff
+						crit(4),	-- Element Whispers
+						crit(5),	-- Successful Interventions
+						crit(6),	-- Those Rascally Worms
+						crit(7),	-- Your Weight in Gold
+						crit(8),	-- Sneak and Sniff
+						crit(9),	-- The Living Drill
+						crit(10),	-- Thieving Critters
+						crit(11),	-- Making Scents
+						crit(12),	-- Living Statue
+						crit(13),	-- Heart of Iron
+						crit(14),	-- Liars in Light
+						crit(15),	-- Frostfire Finesse
+						crit(16),	-- Liars of Spirit
 					}),
 					ach(17832, {	-- Sniffen Around
 						-- identical criteria as full achievement
-						["sym"] = { { "select", "achievementID", 17833 } },	--  Sniffen Sage
+						["sym"] = {{"select","achievementID",17833},{"pop"} },	--  Sniffen Sage Criteria
 					}),
 					ach(17833, {	-- Sniffen Sage
-						crit(1, {	-- Liquid Art
-							-- TODO: ["_quests"] = { 75765 },
-						}),
-						crit(2, {	-- 	Ruby in the Rough
-							-- TODO: ["_quests"] = { 75766 },
-						}),
-						crit(3, {	-- Good Time Boy
-							-- TODO: ["_quests"] = { 75767 },
-						}),
-						crit(4, {	-- Lucky Ducky
-							-- TODO: ["_quests"] = { 75768 },
-						}),
-						crit(5, {	-- Drawing a Blank
-							["_quests"] = { 75769 },
-						}),
-						crit(6, {	-- 	A Glass of Bubbly
-							["_quests"] = { 75770 },
-						}),
-						crit(7, {	-- Incense Replay
-							-- TODO: ["_quests"] = { 75771 },
-						}),
-						crit(8, {	-- Flask Manage
-							["_quests"] = { 75772 },
-						}),
-						crit(9, {	-- Little Blank Book
-							-- TODO: ["_quests"] = { 75773 },
-						}),
+						-- No longer individual criteria here...
+						["sym"] = {{"select","questID",
+							75765,	-- Liquid Art
+							75766,	-- Ruby in the Rough
+							75767,	-- Good Time Boy
+							75768,	-- Lucky Ducky
+							75769,	-- Drawing a Blank
+							75770,	-- A Glass of Bubbly
+							75771,	-- Incense Replay
+							75772,	-- Flask Manage
+							75773,	-- Little Blank Book
+						},{"prune"}},	-- prune the sub-groups of these Quests
 					}),
 				}),
 				n(BONUS_OBJECTIVES, {
