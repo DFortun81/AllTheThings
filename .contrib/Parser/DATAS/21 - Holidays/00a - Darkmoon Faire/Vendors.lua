@@ -709,7 +709,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 		n(55103,  {	-- Galissa Sundew <Fishing Prizes>
 			["coord"] = { 52.5, 88.7, 407 },
 			["g"] = {
-				i(126925, {	-- Blorp's Bubble (PET!)
+				i(126925, {	-- Blorp (PET!)
 					["cost"] = { { "i", 124669, 50 }, },	-- 50x Darkmoon Daggermaw
 				}),
 				i(142398, {	-- Darkwater Skate (MOUNT!)

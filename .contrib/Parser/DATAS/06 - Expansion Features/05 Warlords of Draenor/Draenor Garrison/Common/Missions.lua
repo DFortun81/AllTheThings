@@ -407,7 +407,7 @@ _.ExpansionFeatures =
 						i(118191),	-- Archmage Vargoth's Spare (TOY!)
 						i(128310),	-- Burning Blad (TOY!)
 						i(128311),	-- Coalfist Gronnling (MOUNT!)
-						i(127748),	-- Cinder Pup
+						i(127748),	-- Cinder Pup (PET!)
 						i(128319, {	-- Void-Shrouded Satchel
 							i(128318),	-- Touch of the Void
 						}),
@@ -535,7 +535,7 @@ _.ExpansionFeatures =
 							-- TODO: not sure on spawn requirements
 							-- ["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
 							["g"] = {
-								i(127856),	-- Left Shark
+								i(127856),	-- Left Shark (PET!)
 								a(crit(4, {	-- Orphaned Aquatic Animal Rescue
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
 								})),

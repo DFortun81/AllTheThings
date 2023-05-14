@@ -652,7 +652,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["coord"] = { 53.2, 54.3, 407 },
 			["g"] = {
 				ach(9983, {	-- That's Whack!
-					i(123862),	-- Hogs' Studded Collar
+					i(123862),	-- Hogs (PET!)
 				}),
 				i(93724),	-- Darkmoon Game Prize
 			},
@@ -971,7 +971,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				ach(9805, {	-- Big Rocketeer: Gold
 					["crs"] = { 89734 },	-- Rocketeer
 					["g"] = {
-						i(122125),	-- Race MiniZep
+						i(122125),	-- Race MiniZep (PET!)
 						ach(9803),	-- Big Rocketeer: Gold
 						ach(9801),	-- Big Rocketeer: Gold
 						ach(9800),	-- Rocket Man

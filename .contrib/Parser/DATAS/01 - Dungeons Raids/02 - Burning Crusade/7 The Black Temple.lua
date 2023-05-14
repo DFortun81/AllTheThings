@@ -264,7 +264,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					e(1582, {	-- High Warlord Naj'entus
 						["creatureID"] = 22887,
 						["groups"] = {
-							i(122104, {	-- Leviathan Egg (PET!)
+							i(122104, {	-- Leviathan Hatchling (PET!)
 								["timeline"] = { "added 6.1.0.19445" },
 							}),
 							i(32248),	-- Halberd of Desolation
@@ -286,7 +286,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					e(1583, {	-- Supremus
 						["creatureID"] = 22898,
 						["groups"] = {
-							i(122106, {	-- Shard of Supremus (PET!)
+							i(122106, {	-- Abyssius (PET!)
 								["timeline"] = { "added 6.1.0.19445" },
 							}),
 							i(32262),	-- Syphon of the Nathrezim
@@ -400,7 +400,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					e(1588, {	-- Mother Shahraz
 						["creatureID"] = 22947,
 						["groups"] = {
-							i(122110, {	-- Sultry Grimoire (PET!)
+							i(122110, {	-- Sister of Temptation (PET!)
 								["timeline"] = { "added 6.1.0.19445" },
 							}),
 							i(31101),	-- Pauldrons of the Forgotten Conqueror

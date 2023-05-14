@@ -64,15 +64,15 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["f"] = RECIPES,
 	}),
 	-- Pets
-	i(141532, {	-- Noblegarden Bunny
+	i(141532, {	-- Noblegarden Bunny (PET!)
 		["timeline"] = { "added 7.1.0.22731" },
 		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
 	}),
-	i(116258, {	-- Mystical Spring Bouquet
+	i(116258, {	-- Mystical Spring Bouquet (PET!)
 		["timeline"] = { "added 6.0.1.18566" },
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
-	i(44794, {	-- Spring Rabbit's Foot
+	i(44794, {	-- Spring Rabbit's Foot (PET!)
 		["timeline"] = { "added 3.1.0.9733" },
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),

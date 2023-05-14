@@ -149,7 +149,7 @@ _.Zones =
 						38463,	-- The Cipher of Damnation [H]
 					},
 					["g"] = {
-						i(128309),  -- Shard of Cyrukh Pet
+						i(128309),  -- Shard of Cyrukh (PET!)
 					},
 				}),
 				o(241712, {	-- Ironbeard's Treasure

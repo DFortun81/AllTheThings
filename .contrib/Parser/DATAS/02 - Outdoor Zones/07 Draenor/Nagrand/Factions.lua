@@ -166,13 +166,13 @@ _.Zones =
 							n(87394, {	-- Kwilax Fuseshiv <Reputation Vendor>
 								["coord"] = { 50.5, 41.4, DRAENOR_NAGRAND },
 								["g"] = {
-									i(119149, {	-- Captured Forest Sproutling
+									i(119149, {	-- Forest Sproutling (PET!)
 										["cost"] = { { "c", 823, 2000 } },	-- 2000x Apexis Crystal
 									}),
 									i(116672, {	-- Domesticated Razorback (MOUNT!)
 										["cost"] = { { "c", 823, 5000 } },	-- 5000x Apexis Crystal
 									}),
-									i(119148, {	-- Indentured Albino River Calf
+									i(119148, {	-- Albino River Calf (PET!)
 										["cost"] = { { "c", 823, 2000 } },	-- 2000x Apexis Crystal
 									}),
 									i(118667, {	-- Steamwheedle Elixir

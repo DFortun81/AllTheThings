@@ -50,10 +50,10 @@ _.ExpansionFeatures =
 					}),
 					n(RARES, {
 						a(o(239171, {	-- Glass of Warm Milk
-							i(120309),	-- Glass of Warm Milk (Pygmy Cow pet)
+							i(120309),	-- Pygmy Cow (PET!)
 						})),
 						h(o(239143, {		-- Glass of Warm Milk
-							i(120309),	-- Glass of Warm Milk (Pygmy Cow pet)
+							i(120309),	-- Pygmy Cow (PET!)
 						})),
 					}),
 				}),

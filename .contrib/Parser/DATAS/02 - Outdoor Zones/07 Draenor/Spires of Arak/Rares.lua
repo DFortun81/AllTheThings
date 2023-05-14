@@ -168,7 +168,7 @@ _.Zones =
 					["questID"] = 36470,
 					["coord"] = { 38.4, 27.4, SPIRES_OF_ARAK },
 					["g"] = {
-						i(118107),	-- Brilliant Spore Pet
+						i(118107),	-- Brilliant Spore (PET!)
 					},
 				}),
 				n(84833, {	-- Sangrikass
@@ -254,7 +254,7 @@ _.Zones =
 						{ 31.5, 43.3, SPIRES_OF_ARAK },	-- Cave Entrance
 					},
 					["g"] = {
-						i(118207),	-- Hydraling
+						i(118207),	-- Hydraling (PET!)
 					},
 				}),
 				n(85078, {	-- Voidreaver Urnae

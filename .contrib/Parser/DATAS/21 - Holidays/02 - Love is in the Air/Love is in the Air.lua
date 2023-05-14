@@ -1865,7 +1865,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 						["timeline"] = { "added 7.1.5.23360" },
 						["cost"] = { { "i", 49927, 100 } },	-- 100x Love Token
 					}),
-					i(116155, {	-- Lovebird Hatchling
+					i(116155, {	-- Lovebird Hatchling (PET!)
 						["timeline"] = { "added 6.0.1.18566" },
 						["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
 					}),

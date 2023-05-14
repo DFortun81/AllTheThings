@@ -146,7 +146,7 @@ _.Zones =
 							["qgs"] = { 90426 },	-- Abandoned Fel Pup
 							["coord"] = { 31.7, 67.1, TANAAN_JUNGLE },
 							["g"] = {
-								i(129205),	-- A Tiny Infernal Collar (Fel Pup Pet)
+								i(129205),	-- Fel Pup (PET!)
 							},
 						}),
 					},

@@ -74,19 +74,19 @@ _.Factions =
 				["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
 				["collectible"] = false,
 				["g"] = {
-					i(114968),	-- Deathwatch Hatchling - Revered
+					i(114968),	-- Deathwatch Hatchling (PET! - Revered
 				},
 			}),
 			ach(5144, {	-- Critter Kill Squad
 				["collectible"] = false,
 				["g"] = {
-					i(63398),	-- Armadillo Pup - Revered
+					i(63398),	-- Armadillo Pup (PET!) - Revered
 				},
 			}),
 			ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
 				["collectible"] = false,
 				["g"] = {
-					i(71033),	-- Lil' Tarecgosa - Exalted
+					i(71033),	-- Lil' Tarecgosa (PET!) - Exalted
 				},
 			}),
 			ach(4988, {	-- Guild Glory of the Cataclysm Raider

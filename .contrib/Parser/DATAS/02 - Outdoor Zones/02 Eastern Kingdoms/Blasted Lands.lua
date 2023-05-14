@@ -914,7 +914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(118780, {	-- Bloodburn Protector
 							["timeline"] = { "added 6.0.1.18505" },
 						}),
-						i(111660, {	-- Iron Starlette
+						i(111660, {	-- Iron Starlette (PET!)
 							["timeline"] = { "added 6.0.1.18505" },
 						}),
 					},
@@ -1529,7 +1529,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(118780, {	-- Bloodburn Protector
 							["timeline"] = { "added 6.0.1.18505" },
 						}),
-						i(111660, {	-- Iron Starlette
+						i(111660, {	-- Iron Starlette (PET!)
 							["timeline"] = { "added 6.0.1.18505" },
 						}),
 					},

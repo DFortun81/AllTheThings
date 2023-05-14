@@ -207,10 +207,10 @@ _.Zones =
 				i(127751, {	-- Fel-Touched Pet Supplies
 					["description"] = "Fel-Touched Pet Supplies is the reward for defeating any of the Tiny Terrors in Tanaan. You can defeat each Tiny Terror once per character per day.|r",
 					["g"] = {
-						i(127753),	-- Nightmare Bell
-						i(127754),	-- Periwinkle Calf
-						i(118105),	-- Seaborne Spore
-						i(118101),	-- Zangar Spore
+						i(127753),	-- Nightmare Bell (PET!)
+						i(127754),	-- Periwinkle Calf (PET!)
+						i(118105),	-- Seaborne Spore (PET!)
+						i(118101),	-- Zangar Spore (PET!)
 					},
 				}),
 				p(1468, {	--  Bloodbeak

@@ -48,7 +48,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			}),
 		}),
 		petbattle(ach(9069,  {	-- An Awfully Big Adventure
-			i(120121),	-- Trunks
+			i(120121),	-- Trunks (PET!)
 			crit(1,  {	-- Aki the Chosen (Vale of Eternal Blossoms)
 				["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 			}),

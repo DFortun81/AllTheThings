@@ -65,7 +65,7 @@ profession(HERBALISM, {
 	-- #else
 	tier(WOD_TIER, {
 		filter(BATTLE_PETS, {
-			i(118595),	-- Nightshade Sproutling
+			i(118595),	-- Nightshade Sproutling (PET!)
 		}),
 		n(DROPS, {
 			i(111350, {		-- A Compendium of the Herbs of Draenor

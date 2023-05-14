@@ -11,7 +11,7 @@ _.Zones =
 					["requireSkill"] = HERBALISM,
 					["g"] = {
 						n(95132, {	-- Disturbed Podling
-							i(118595),	-- Nightshade Sproutling
+							i(118595),	-- Nightshade Sproutling (PET!)
 						}),
 					},
 				}),

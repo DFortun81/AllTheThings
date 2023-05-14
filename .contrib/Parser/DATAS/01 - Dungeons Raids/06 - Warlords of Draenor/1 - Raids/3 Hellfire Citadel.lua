@@ -256,7 +256,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 							["f"] = MISC,
 						}),
-						ig(127749),	-- Corrupted Nest Guardian
+						ig(127749),	-- Corrupted Nest Guardian (PET!)
 						i(128096),	-- Demonspine Wand
 						i(128041),	-- Beaked Hood of Betrayal
 						i(128186),	-- Cursefeather Cloak
@@ -609,7 +609,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["f"] = MISC,
 					}),
-					ig(127749),	-- Corrupted Nest Guardian
+					ig(127749),	-- Corrupted Nest Guardian (PET!)
 					i(124387),	-- Shadowrend Talonblade
 					i(124390),	-- Deceiver's Felbeak Wand
 					i(124294),	-- Coif of Untrue Sight
@@ -1141,7 +1141,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["f"] = MISC,
 					}),
-					ig(127749),	-- Corrupted Nest Guardian
+					ig(127749),	-- Corrupted Nest Guardian (PET!)
 					i(124387),	-- Shadowrend Talonblade
 					i(124390),	-- Deceiver's Felbeak Wand
 					i(124294),	-- Coif of Untrue Sight
@@ -1665,7 +1665,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["f"] = MISC,
 					}),
-					ig(127749),	-- Corrupted Nest Guardian
+					ig(127749),	-- Corrupted Nest Guardian (PET!)
 					i(124387),	-- Shadowrend Talonblade
 					i(124390),	-- Deceiver's Felbeak Wand
 					i(124294),	-- Coif of Untrue Sight

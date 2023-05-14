@@ -262,9 +262,9 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 	}),
 	prof(ENGINEERING, {
 		filter(BATTLE_PETS, {
-			i(112057),	-- Lifelike Mechanical Frostboar*
-			i(111402),	-- Mechanical Axebeak*
-			i(118741),	-- Mechanical Scorpid*
+			i(112057),	-- Lifelike Mechanical Frostboar* (PET!)
+			i(111402),	-- Mechanical Axebeak* (PET!)
+			i(118741),	-- Mechanical Scorpid* (PET!)
 		}),
 		filter(TOYS, {
 			i(111821),	-- Blingtron 5000 (TOY!)
@@ -574,7 +574,7 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			i(115363),	-- Creeping Carpet (MOUNT!)
 		}),
 		filter(BATTLE_PETS, {
-			i(113216),	-- Elekk Plushie
+			i(113216),	-- Elekk Plushie (PET!)
 		}),
 	}),
 }))));

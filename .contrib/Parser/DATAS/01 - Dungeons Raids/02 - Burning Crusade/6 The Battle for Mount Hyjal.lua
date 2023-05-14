@@ -1029,7 +1029,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			e(1578, {	-- Anetheron
 				["creatureID"] = 17808,
 				["groups"] = {
-					i(122111, {	-- Smelly Gravestone (PET!)
+					i(122111, {	-- Stinkrot (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(30881),	-- Blade of Infamy
@@ -1066,7 +1066,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			e(1580, {	-- Azgalor
 				["creatureID"] = 17842,
 				["groups"] = {
-					i(122105, {	-- Grotesque Statue (PET!)
+					i(122105, {	-- Grotesque (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(31092, {	-- Gloves of the Forgotten Conqueror

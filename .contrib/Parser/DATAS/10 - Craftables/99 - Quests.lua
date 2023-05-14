@@ -39,7 +39,7 @@ root(ROOTS.Craftables, {
                     i(113258, {	-- Blingtron 5000 Gift Package
 						["sym"] = {{"select","itemID",86623},{"pop"}},	-- Blingtron 4000 Gift Package
 						["g"] = {
-							i(115483),	-- Sky-Bo Pet
+							i(115483),	-- Sky-Bo (PET!)
                         	i(123851),	-- Photo B.O.M.B. (TOY!)
 							i(114002),	-- Encoded Message
 						},

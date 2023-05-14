@@ -20,7 +20,7 @@ _.ExpansionFeatures =
 						n(85344, {	-- Naron Bloomthistle
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								i(110721, {	-- Crazy Carrot
+								i(110721, {	-- Crazy Carrot (PET!)
 									["cost"] = { { "i", 116053, 1000 }, },	-- 1,000x Draenic Seeds
 								}),
 								i(118568, {	-- Garden Hoe
@@ -65,7 +65,7 @@ _.ExpansionFeatures =
 						n(81981, {	-- Tarnon
 							["races"] = HORDE_ONLY,
 							["g"] = {
-								i(110721, {	-- Crazy Carrot
+								i(110721, {	-- Crazy Carrot (PET!)
 									["cost"] = { { "i", 116053, 1000 }, },	-- 1,000x Draenic Seeds
 								}),
 								i(118568, {	-- Garden Hoe

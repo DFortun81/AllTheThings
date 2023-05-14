@@ -1272,7 +1272,7 @@ profession(COOKING, {
 				i(118322),	-- Recipe Idea: Talador Surf and Turf
 				i(118328),	-- Recipe Idea: Feast of Blood
 				i(118329),	-- Recipe Idea: Feast of the Waters
-				i(110684),	-- Leftovers [Pet!]
+				i(110684),	-- Lil' Leftovers (PET!)
 			},
 		}),
 		{

@@ -215,7 +215,7 @@ _.Zones =
 					},
 					["g"] = {
 						i(116121),	-- A Steamy Romance Novel: I'm In Love With a Robot
-						i(116402),	-- Stonegrinder
+						i(116402),	-- Stonegrinder (PET!)
 					},
 				}),
 				o(228022, {	-- Light of the Sea

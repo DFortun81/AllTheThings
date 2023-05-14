@@ -283,7 +283,7 @@ _.Zones =
 						crit(1, {	-- Orumo the Observer
 							["achievementID"] = 9638,	-- Heralds of the Legion
 						}),
-						i(119170),	-- Eye of Observation Pet
+						i(119170),	-- Eye of Observation (PET!)
 						i(119375),	-- Chained Orb of Omniscience
 					},
 				}),

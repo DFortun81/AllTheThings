@@ -969,7 +969,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 88003 },	--  Cowled Ranger
 							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
 							["g"] = {
-								i(118923),	-- Sentinel's Companion
+								i(118923),	-- Sentinel's Companion (PET!)
 							},
 						}),
 						q(37240, {	-- The Leaf-Reader

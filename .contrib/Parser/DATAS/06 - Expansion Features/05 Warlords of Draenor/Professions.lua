@@ -374,7 +374,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "adde
 			}),
 			currency(829, {	-- Arakkoa
 				-- Solves
-				i(117354),	-- Ancient Nest Guardian
+				i(117354),	-- Ancient Nest Guardian (PET!)
 				i(117382),	-- Beakbreaker of Terokk
 				i(114204),	-- Apexis Crystal
 				i(114205),	-- Apexis Hieroglyph
@@ -421,7 +421,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "adde
 			}),
 			currency(821, {	-- Draenor Clans
 				-- Solves
-					i(117380),	-- Frostwolf Ghostpup
+					i(117380),	-- Frostwolf Ghostpup (PET!)
 					i(116985),	-- Headdress of the First Shaman
 					i(114171),	-- Ancestral Talisman
 					i(114163),	-- Barbed Fishing Hook

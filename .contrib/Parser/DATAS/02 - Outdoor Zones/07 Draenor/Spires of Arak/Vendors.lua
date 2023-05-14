@@ -106,8 +106,8 @@ _.Zones =
 					["description"] = "Items will be unavailable until you complete the pet battle daily quest |cFFFFD700Vesharr|r.",
 					["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
 					["g"] = {
-						i(120051),	-- Kaliri Hatchling
-						i(120050, {	-- Veilwatcher Hatchling
+						i(120051),	-- Kaliri Hatchling (PET!)
+						i(120050, {	-- Veilwatcher Hatchling (PET!)
 							["cost"] = 10000000,	-- 1,000g
 						}),
 					},

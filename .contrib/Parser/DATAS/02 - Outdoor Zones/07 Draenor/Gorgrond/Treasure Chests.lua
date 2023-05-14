@@ -554,7 +554,7 @@ _.Zones =
 					["questID"] = 37249,
 					["coord"] = { 57.1, 65.3, GORGROND },
 					["g"] = {
-						i(118106),	-- Crimson Spore
+						i(118106),	-- Crimson Spore (PET!)
 					},
 				}),
 				o(236099, {	-- Suntouched Spear

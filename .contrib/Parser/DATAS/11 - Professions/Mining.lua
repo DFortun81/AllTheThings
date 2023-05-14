@@ -276,7 +276,7 @@ profession(MINING, {
 		i(67282, {	-- Elementium Geode
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
-		i(118919, {	-- Red Goren Egg
+		i(118919, {	-- Ore Eater (PET!)
 			["timeline"] = { "added 6.0.1.18738" },
 		}),
 	}),

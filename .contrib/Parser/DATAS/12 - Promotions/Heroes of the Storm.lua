@@ -13,7 +13,7 @@ root(ROOTS.Promotions, n(-532, {	-- Heroes of the Storm
 		["timeline"] = { "added 6.0.1.18711" },
 	}, {
 		classicAch(9926),	-- Hero of the Storm
-		i(118518),	-- Graves
+		i(118518),	-- Graves (PET!)
 	})),
 	n(REWARDS, bubbleDown({
 		["u"] = REMOVED_FROM_GAME,

@@ -47,8 +47,8 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(122535, {	-- Traveler's Pet Supplies
 								i(122532),	-- Bone Serpent
-								i(122534),	-- Slithershock Elver
-								i(122533),	-- Young Talbuk
+								i(122534),	-- Slithershock Elver (PET!)
+								i(122533),	-- Young Talbuk (PET!)
 							}),
 						},
 					}),
@@ -66,8 +66,8 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(122535, {	-- Traveler's Pet Supplies
 								i(122532),	-- Bone Serpent
-								i(122534),	-- Slithershock Elver
-								i(122533),	-- Young Talbuk
+								i(122534),	-- Slithershock Elver (PET!)
+								i(122533),	-- Young Talbuk (PET!)
 							}),
 						},
 					}),
@@ -78,10 +78,10 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(118697, {	-- Big Bag of Pet Supplies
-								i(119434),	-- Albino Chimaeraling
-								i(118578),	-- Firewing
-								i(119467),	-- Puddle Terror
-								i(113623),	-- Spectral Bell
+								i(119434),	-- Albino Chimaeraling (PET!)
+								i(118578),	-- Firewing (PET!)
+								i(119467),	-- Puddle Terror (PET!)
+								i(113623),	-- Ghastly Kid (PET!)
 								i(119468),	-- Sunfire Kaliri
 								i(118598),	-- Sun Sproutling
 								i(113558),	-- Weebomination
@@ -95,13 +95,13 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(118697, {	-- Big Bag of Pet Supplies
-								i(118578),	-- Firewing
-								i(113623),	-- Spectral Bell
+								i(118578),	-- Firewing (PET!)
+								i(113623),	-- Ghastly Kid (PET!)
 								i(118598),	-- Sun Sproutling
 								i(119468),	-- Sunfire Kaliri
-								i(119467),	-- Puddle Terror
+								i(119467),	-- Puddle Terror (PET!)
 								i(113558),	-- Weebomination
-								i(119434),	-- Albino Chimaeraling
+								i(119434),	-- Albino Chimaeraling (PET!)
 							}),
 						},
 					}),

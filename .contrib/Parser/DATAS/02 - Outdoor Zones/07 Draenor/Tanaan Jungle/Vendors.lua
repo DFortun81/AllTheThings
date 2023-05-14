@@ -13,7 +13,7 @@ _.Zones =
 						{ 57.8, 59.4, TANAAN_JUNGLE },	-- Alliance accessible
 					},
 					["g"] = {
-						i(128478, {	-- Blazing Firehawk
+						i(128478, {	-- Blazing Firehawk (PET!)
 							["cost"] = { { "c", 823, 2000 }, },	-- 2,000x Apexis Crystal
 						}),
 						i(128441, {	-- Contract: Solar Priest Vayx

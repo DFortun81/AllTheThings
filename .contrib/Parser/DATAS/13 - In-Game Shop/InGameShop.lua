@@ -205,7 +205,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(98550, {	-- Blossoming Ancient
 			["timeline"] = { "added 5.3.0.16825" },
 		}),
-		i(128424, {	-- Brightpaw
+		i(128424, {	-- Brightpaw (PET!)
 			["timeline"] = { "added 6.2.2.20395" },
 		}),
 		i(160588, {	-- Cap'n Crackers

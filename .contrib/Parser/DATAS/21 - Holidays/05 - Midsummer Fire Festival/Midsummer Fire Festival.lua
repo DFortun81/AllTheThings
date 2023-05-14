@@ -130,7 +130,7 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
-	i(116439, {	-- Blazing Cindercrawler (Pet)
+	i(116439, {	-- Blazing Cindercrawler (PET!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { "added 6.0.1.18594" },
 	}),

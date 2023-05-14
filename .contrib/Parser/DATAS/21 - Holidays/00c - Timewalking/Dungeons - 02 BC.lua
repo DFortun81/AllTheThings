@@ -9,7 +9,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 			["isRaid"] = true,
 			["g"] = {
 				cr(22887, e(1582, {	-- High Warlord Naj'entus
-					i(122104, {	-- Leviathan Egg (PET!)
+					i(122104, {	-- Leviathan Hatchling (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(150447),	-- Halberd of Desolation
@@ -28,7 +28,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(150446),	-- Ring of Captured Storms
 				})),
 				cr(22898, e(1583, {	-- Supremus
-					i(122106, {	-- Shard of Supremus (PET!)
+					i(122106, {	-- Abyssius (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(150460),	-- Syphon of the Nathrezim
@@ -101,7 +101,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(150504),	-- Naturewarden's Treads
 				})),
 				cr(22947, e(1588, {	-- Mother Shahraz
-					i(122110, {	-- Sultry Grimoire (PET!)
+					i(122110, {	-- Sister of Temptation (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(150514),	-- Blade of Savagery

@@ -691,7 +691,7 @@ root(ROOTS.Holidays, applyholiday(PILGRIMS_BOUNTY, {
 						i(116401, {	-- Fine Pilgrim's Hat
 							["timeline"] = { "added 6.0.1.18566" },
 						}),
-						i(116403, {	-- Frightened Bush Chicken
+						i(116403, {	-- Bush Chicken (PET!)
 							["timeline"] = { "added 6.0.1.18566" },
 						}),
 						i(116400, {	-- Silver-Plated Turkey Shooter (TOY!)

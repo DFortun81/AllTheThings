@@ -3766,7 +3766,7 @@ _.Zones =
 						n(88493, {	-- Mimi Wizzlebub <Steamwheedle Quartermaster>
 							["coord"] = { 54.2, 60.7, WARSPEAR },
 							["g"] = {
-								i(119149, {	-- Captured Forest Sproutling
+								i(119149, {	-- Forest Sproutling (PET!)
 									["cost"] = {
 										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
 										{ "g", 10000000 },	-- 1,000g
@@ -3785,7 +3785,7 @@ _.Zones =
 									},
 								}),
 								i(110426),	-- Goblin Hot Potato
-								i(119148, {	-- Indentured Albino River Calf (PET!)
+								i(119148, {	-- Albino River Calf (PET!)
 									["cost"] = {
 										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
 										{ "g", 10000000 },	-- 1,000g

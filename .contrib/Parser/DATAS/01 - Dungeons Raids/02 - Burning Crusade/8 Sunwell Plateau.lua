@@ -139,7 +139,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 			e(1592, {	-- Brutallus
 				["creatureID"] = 24882,
 				["groups"] = {
-					i(122113, {	-- Sunblade Rune of Activation (PET!)
+					i(122113, {	-- Sunblade Micro-Defender (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(34853),	-- Belt of the Forgotten Conqueror
@@ -173,7 +173,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					25166,	-- Alythess
 				},
 				["groups"] = {
-					i(122115, {	-- Servant's Bell (PET!)
+					i(122115, {	-- Wretched Servant (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(34853),	-- Belt of the Forgotten Conqueror
@@ -220,7 +220,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						["timeline"] = { "added 8.3.0.33115" },
 						["ignoreBonus"] = true,
 					}),
-					i(122114, {	-- Void Collar (PET!)
+					i(122114, {	-- Chaos Pup (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(34214),	-- Muramasa

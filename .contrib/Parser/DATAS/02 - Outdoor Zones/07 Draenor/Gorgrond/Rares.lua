@@ -249,7 +249,7 @@ _.Zones =
 					["questID"] = 36178,
 					["coord"] = { 50.6, 53.2, GORGROND },
 					["g"] = {
-						i(118709),	-- Doom Bloom Pet
+						i(118709),	-- Doom Bloom (PET!)
 					},
 				}),
 				n(86562, {	-- Maniacal Madgard
