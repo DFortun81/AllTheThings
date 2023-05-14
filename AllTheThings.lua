@@ -12634,15 +12634,15 @@ local mapFields = {
 	["iconForAchievement"] = function(t)
 		return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or app.asset("Category_Zones");
 	end,
-	["linkForAchievement"] = function(t)
-		return GetAchievementLink(t.achievementID);
-	end,
+	-- ["linkForAchievement"] = function(t)
+	-- 	return GetAchievementLink(t.achievementID);
+	-- end,
 };
 app.BaseMap = app.BaseObjectFields(mapFields, "BaseMap");
 
 local fields = RawCloneData(mapFields);
 fields.icon = mapFields.iconForAchievement;
-fields.link = mapFields.linkForAchievement;
+-- fields.link = mapFields.linkForAchievement;
 app.BaseMapWithAchievementID = app.BaseObjectFields(fields, "BaseMapWithAchievementID");
 app.CreateMap = function(id, t)
 	t = constructor(id, t, "mapID");
