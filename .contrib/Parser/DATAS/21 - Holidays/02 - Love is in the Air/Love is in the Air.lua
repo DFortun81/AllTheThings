@@ -1,10 +1,17 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-local BOUQUET_RED = i(22206);	-- Bouquet of Red Roses
-local BOUQUET_EBON = i(44731, {	-- Bouquet of Ebon Roses
+local BOUQUET_RED = applyholiday(LOVE_IS_IN_THE_AIR, i(22206));	-- Bouquet of Red Roses
+local BOUQUET_EBON = applyholiday(LOVE_IS_IN_THE_AIR, i(44731, {	-- Bouquet of Ebon Roses
 	["timeline"] = { "added 3.0.3.9138" },
-});
+}));
+local POUCH_OF_RED_ROSE_PETALS = applyholiday(LOVE_IS_IN_THE_AIR, i(188693, {	-- Pouch of Red Rose Petals
+	["timeline"] = { ADDED_9_1_5 },
+}));
+local POUCH_OF_EBON_ROSE_PETALS = applyholiday(LOVE_IS_IN_THE_AIR, i(188692, {	-- Pouch of Ebon Rose Petals
+	["timeline"] = { ADDED_9_1_5 },
+}));
+local BOSS_GROUPS = {};
 root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 	-- #if ANYCLASSIC
 	["npcID"] = -50,
@@ -295,425 +302,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["timeline"] = { "added 6.0.1.18594" },
 			}),
 		}),
-		n(BOSSES, {
-			n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
-				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
-				-- #if AFTER 4.0.3
-				--["questID"] = 25485, -- NOTE: This is what it should be, but it's not checking off correctly.
-				-- #else
-				["questID"] = 14488,	-- You've Been Served
-				["isDaily"] = true,
-				-- #endif
-				["timeline"] = { "added 3.3.0" },
-				["maps"] = {
-					SHADOWFANG_KEEP,
-					SHADOWFANG_KEEP_LEVEL2,
-					SHADOWFANG_KEEP_LEVEL3,
-					SHADOWFANG_KEEP_LEVEL4,
-					SHADOWFANG_KEEP_LEVEL5,
-					SHADOWFANG_KEEP_LEVEL6,
-					SHADOWFANG_KEEP_LEVEL7
-				},
-				-- #if AFTER MOP
-				["sym"] = {
-					{ "selectparent" },	-- Select the holiday root.
-					{ "pop" },	-- Get the Rewards.
-					{ "where", "headerID", REWARDS },	-- Select the "Rewards" header.
-					{ "pop" },	-- Get the Rewards.
-					{ "exclude", "itemID", 22218 },	-- Exclude Handful of Rose Petals
-				},
-				-- #endif
-				["groups"] = {
-					ach(4624),	-- Tough Love (Shadowfang Keep)
-					i(50320, {	-- Faded Lovely Greeting Card [A]
-						["timeline"] = { "added 3.3.2.11403" },
-					}),
-					i(49641, {	-- Faded Lovely Greeting Card [H]
-						["timeline"] = { "added 3.3.2.11403" },
-					}),
-
-					-- #if ANYCLASSIC
-					i(54537, {	-- Heart-Shaped Box
-						["description"] = "This box doesn't actually exist without RDF. The loot normally contained within drop directly from the boss this year.",
-						["sym"] = {{ "select", "itemID", 50250, 49715, 50446, 50741, 50471 }},
-						["timeline"] = { "created 3.3.0" },
-					}),
-					ach(4627, {	-- X-45 Heartbreaker
-						["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
-						["timeline"] = { "added 3.3.0" },
-						["filterID"] = MOUNTS,
-					}),
-					i(50250, {	-- X-45 Heartbreaker (MOUNT!)
-						["timeline"] = { "added 3.3.0" },
-					}),
-					i(49715, {	-- Forever-Lovely Rose
-						["timeline"] = { "added 3.3.0" },
-					}),
-					i(50446, {	-- Toxic Wasteling
-						["timeline"] = { "added 3.3.0" },
-					}),
-					i(50741, {	-- Vile Fumigator's Mask
-						["timeline"] = { "added 3.3.0" },
-					}),
-					i(50471, {	-- The Heartbreaker (TOY!)
-						["timeline"] = { "added 3.3.0" },
-					}),
-					-- #else
-					i(54537, {	-- Heart-Shaped Box
-						["timeline"] = { "added 3.3.0" },
-						-- Minimum level this box drops (not 100% sure)
-						-- #if AFTER 9.0.1
-						["lvl"] = 50,
-						-- #elseif AFTER 8.0.1
-						["lvl"] = 110,
-						-- #elseif AFTER 7.2.5
-						["lvl"] = 98,
-						-- #endif
-						["groups"] = {
-							ach(4627, {	-- X-45 Heartbreaker
-								["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
-								["timeline"] = { "added 3.3.0" },
-								["filterID"] = MOUNTS,
-							}),
-							i(50250, {	-- X-45 Heartbreaker (MOUNT!)
-								["timeline"] = { "added 3.3.0" },
-							}),
-							i(49715, {	-- Forever-Lovely Rose
-								["timeline"] = { "added 3.3.0" },
-							}),
-							i(50446, {	-- Toxic Wasteling
-								["timeline"] = { "added 3.3.0" },
-							}),
-							i(50741, {	-- Vile Fumigator's Mask
-								["timeline"] = { "added 3.3.0" },
-							}),
-							i(50471, {	-- The Heartbreaker (TOY!)
-								["timeline"] = { "added 3.3.0" },
-							}),
-						},
-					}),
-					-- #endif
-					i(147907, {	-- Heart-Shaped Carton
-						["timeline"] = { "added 7.2.5.23910" },
-						["groups"] = {
-							i(49715, {	-- Forever-Lovely Rose
-								["timeline"] = { "added 3.3.0" },
-							}),
-							i(50446, {	-- Toxic Wasteling
-								["timeline"] = { "added 3.3.0" },
-							}),
-							i(50741, {	-- Vile Fumigator's Mask
-								["timeline"] = { "added 3.3.0" },
-							}),
-							-- i(50471, {	-- The Heartbreaker (TOY!)	-- doesn't seem to be possible from the lower-level box
-							-- 	["timeline"] = { "added 3.3.0" },
-							-- }),
-						},
-					}),
-
-					-- Legion+
-					i(143908, {	-- Choker of the Pure Heart [Level 110]
-						["timeline"] = { "added 7.0.1" },
-					}),
-					i(143906, {	-- Heartbreak Charm [Level 110]
-						["timeline"] = { "added 7.0.1" },
-					}),
-					i(143907, {	-- Shard of Pirouetting Happiness [Level 110]
-						["timeline"] = { "added 7.0.1" },
-					}),
-					i(143909, {	-- Sweet Perfume Brooch [Level 110]
-						["timeline"] = { "added 7.0.1" },
-					}),
-					i(143905, {	-- Winking Eye of Love [Level 110]
-						["timeline"] = { "added 7.0.1" },
-					}),
-
-					-- Warlords of Draenor
-					i(117369, {	-- Choker of the Pure Heart [Level 100]
-						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
-					}),
-					i(117366, {	-- Heartbreak Charm [Level 100]
-						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
-					}),
-					i(117370, {	-- Shard of Pirouetting Happiness [Level 100]
-						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
-					}),
-					i(117368, {	-- Sweet Perfume Brooch [Level 100]
-						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
-					}),
-					i(117367, {	-- Winking Eye of Love [Level 100]
-						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
-					}),
-
-					-- Mists of Pandaria
-					i(93394, {	-- Choker of the Pure Heart [Level 90]
-						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
-					}),
-					i(93391, {	-- Heartbreak Charm [Level 90]
-						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
-					}),
-					i(93395, {	-- Shard of Pirouetting Happiness [Level 90]
-						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
-					}),
-					i(93393, {	-- Sweet Perfume Brooch [Level 90]
-						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
-					}),
-					i(93392, {	-- Winking Eye of Love [Level 90]
-						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
-					}),
-
-					-- Cata
-					i(68176, {	-- Heartbreak Charm [Level 85]
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
-					}),
-					i(68173, {	-- Choker of the Pure Heart [Level 85]
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
-					}),
-					i(68172, {	-- Shard of Pirouetting Happiness [Level 85]
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
-					}),
-					i(68174, {	-- Sweet Perfume Brooch [Level 85]
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
-					}),
-					i(68175, {	-- Winking Eye of Love [Level 85]
-						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
-					}),
-
-					-- Wrath
-					i(51808, {	-- Choker of the Pure Heart [Level 80]
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-					}),
-					i(51805, {	-- Heartbreak Charm [Level 80]
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-					}),
-					i(51806, {	-- Shard of Pirouetting Happiness [Level 80]
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-					}),
-					i(51807, {	-- Sweet Perfume Brooch [Level 80]
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-					}),
-					i(51804, {	-- Winking Eye of Love [Level 80]
-						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-					}),
-					--[[
-					i(21813),	-- Bag of Heart Candies
-					i(49909, {	-- Box of Chocolates
-						["timeline"] = { "added 3.3.2.11403" },
-					}),
-					i(34258, {	-- Love Rocket
-						["timeline"] = { "added 2.3.0.7382" },
-					}),
-					]]--
-				},
-			}),
-			tier(WOTLK_TIER, {
-				inst(277, {	-- Halls of Stone
-					["maps"] = { HALLS_OF_STONE },
-					["groups"] = {
-						d(HEROIC_DUNGEON, {
-							n(27975, {	-- Maiden of Grief
-								BOUQUET_EBON
-							}),
-						}),
-					},
-				}),
-				inst(285, {	-- Utgarde Keep
-					["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
-					["groups"] = {
-						d(NORMAL_DUNGEON, {
-							n(23953, {	-- Prince Keleseth
-								BOUQUET_RED,
-							}),
-						}),
-					},
-				}),
-			}),
-			-- #if AFTER CATA
-			tier(CATA_TIER, {
-				inst(66, {	-- Blackrock Caverns
-					["maps"] = { 283, 284 },
-					["groups"] = {
-						d(NORMAL_DUNGEON, {
-							n(39679, {	-- Corla, Herald of Twilight
-								BOUQUET_RED,
-								i(188693, {	-- Pouch of Red Rose Petals
-									["timeline"] = { ADDED_9_1_5 },
-								}),
-							}),
-						}),
-						d(HEROIC_DUNGEON, {
-							n(39679, {	-- Corla, Herald of Twilight
-								BOUQUET_RED,
-								i(188693, {	-- Pouch of Red Rose Petals
-									["timeline"] = { ADDED_9_1_5 },
-								}),
-							}),
-						}),
-					},
-				}),
-				inst(184, {	-- End Time
-					["maps"] = { 401, 402, 403, 404, 405, 406 },
-					["groups"] = {
-						d(HEROIC_DUNGEON, {
-							n(54445, {	-- Echo of Jaina
-								BOUQUET_RED,
-							}),
-							n(54123, {	-- Echo of Sylvanas
-								BOUQUET_EBON
-							}),
-						}),
-					},
-				}),
-				inst(71, {	-- Grim Batol
-					["maps"] = { 293 },
-					["groups"] = {
-						d(NORMAL_DUNGEON, {
-							n(40319, {	-- Drahga Shadowburner
-								BOUQUET_RED,
-							}),
-						}),
-						d(HEROIC_DUNGEON, {
-							n(40319, {	-- Drahga Shadowburner
-								BOUQUET_RED,
-							}),
-						}),
-					},
-				}),
-				inst(186, {	-- Hour of Twilight
-					["maps"] = { 399, 400 },
-					["groups"] = {
-						d(HEROIC_DUNGEON, {
-							n(54968, {	-- Asira Dawnslayer
-								BOUQUET_RED,
-							}),
-						}),
-					},
-				}),
-				inst(64, {	-- Shadowfang Keep
-					["maps"] = {
-						SHADOWFANG_KEEP,
-						SHADOWFANG_KEEP_LEVEL2,
-						SHADOWFANG_KEEP_LEVEL3,
-						SHADOWFANG_KEEP_LEVEL4,
-						SHADOWFANG_KEEP_LEVEL5,
-						SHADOWFANG_KEEP_LEVEL6,
-						SHADOWFANG_KEEP_LEVEL7
-					},
-					["groups"] = {
-						d(HEROIC_DUNGEON, {
-							n(46964, {	-- Lord Godfrey
-								BOUQUET_EBON,
-								BOUQUET_RED,
-							}),
-						}),
-					},
-				}),
-				inst(63, {	-- The Deadmines
-					["maps"] = { 292 },
-					["groups"] = {
-						d(HEROIC_DUNGEON, {
-							n(47626, {	-- Admiral Ripsnarl
-								BOUQUET_EBON,
-								BOUQUET_RED,
-							}),
-						}),
-					},
-				}),
-				inst(67, {	-- The Stonecore
-					["maps"] = { 324 },
-					["groups"] = {
-						d(NORMAL_DUNGEON, {
-							n(42333, {	-- High Priestess Azil
-								BOUQUET_RED,
-							}),
-						}),
-						d(HEROIC_DUNGEON, {
-							n(42333, {	-- High Priestess Azil
-								BOUQUET_RED,
-							}),
-						}),
-					},
-				}),
-			}),
-			-- #endif
-			-- #if AFTER WOD
-			tier(WOD_TIER, {
-				inst(537, {	-- Shadowmoon Burial Grounds
-					["maps"] = { 574, 575, 576 },
-					["groups"] = {
-						d(NORMAL_DUNGEON, {
-							cr(75509, e(1139, {	-- Sadana Bloodfury
-								BOUQUET_EBON
-							})),
-						}),
-						--[[d(MYTHIC_DUNGEON, {
-							cr(75509, e(1139, {	-- Sadana Bloodfury
-								BOUQUET_EBON
-							})),
-						}),]]--
-					},
-				}),
-			}),
-			-- #endif
-			-- #if AFTER 9.1.5
-			tier(SL_TIER, {
-				inst(1194, {	-- Tazavesh, the Veiled Market
-					d(HEROIC_DUNGEON, {
-						e(2455, {	-- So'leah
-							["crs"] = { 177269 },	-- So'leah
-							["groups"] = {
-								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { ADDED_9_1_5 },
-								}),
-							},
-						}),
-					}),
-					d(MYTHIC_DUNGEON, {
-						e(2455, {	-- So'leah
-							["crs"] = { 177269 },	-- So'leah
-							["groups"] = {
-								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { ADDED_9_1_5 },
-								}),
-							},
-						}),
-					}),
-				}),
-				inst(1183, {	-- Plaguefall
-					d(NORMAL_DUNGEON, {
-						e(2423, {	-- Domina Venomblade
-							["crs"] = { 164266 },	-- Domina Venomblade
-							["groups"] = {
-								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { ADDED_9_1_5 },
-								}),
-							},
-						}),
-					}),
-					d(HEROIC_DUNGEON, {
-						e(2423, {	-- Domina Venomblade
-							["crs"] = { 164266 },	-- Domina Venomblade
-							["groups"] = {
-								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { ADDED_9_1_5 },
-								}),
-							},
-						}),
-					}),
-					d(MYTHIC_DUNGEON, {
-						e(2423, {	-- Domina Venomblade
-							["crs"] = { 164266 },	-- Domina Venomblade
-							["groups"] = {
-								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { ADDED_9_1_5 },
-								}),
-							},
-						}),
-					}),
-				}),
-			}),
-			-- #endif
-		}),
+		n(BOSSES, { ["groups"] = BOSS_GROUPS }),	-- Done this way to prevent the holiday tags from applying to the instances / difficulty headers.
 		-- #endif
 		n(QUESTS, {
 			q(9029, {	-- A Bubbling Cauldron
@@ -2389,6 +1978,414 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 		}),
 	},
 }));
+
+for i,o in ipairs({
+	applyholiday(LOVE_IS_IN_THE_AIR, n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
+		["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
+		-- #if AFTER 4.0.3
+		--["questID"] = 25485, -- NOTE: This is what it should be, but it's not checking off correctly.
+		-- #else
+		["questID"] = 14488,	-- You've Been Served
+		["isDaily"] = true,
+		-- #endif
+		["timeline"] = { "added 3.3.0" },
+		["maps"] = {
+			SHADOWFANG_KEEP,
+			SHADOWFANG_KEEP_LEVEL2,
+			SHADOWFANG_KEEP_LEVEL3,
+			SHADOWFANG_KEEP_LEVEL4,
+			SHADOWFANG_KEEP_LEVEL5,
+			SHADOWFANG_KEEP_LEVEL6,
+			SHADOWFANG_KEEP_LEVEL7
+		},
+		-- #if AFTER MOP
+		["sym"] = {
+			{ "selectparent" },	-- Select the holiday root.
+			{ "pop" },	-- Get the Rewards.
+			{ "where", "headerID", REWARDS },	-- Select the "Rewards" header.
+			{ "pop" },	-- Get the Rewards.
+			{ "exclude", "itemID", 22218 },	-- Exclude Handful of Rose Petals
+		},
+		-- #endif
+		["groups"] = {
+			ach(4624),	-- Tough Love (Shadowfang Keep)
+			i(50320, {	-- Faded Lovely Greeting Card [A]
+				["timeline"] = { "added 3.3.2.11403" },
+			}),
+			i(49641, {	-- Faded Lovely Greeting Card [H]
+				["timeline"] = { "added 3.3.2.11403" },
+			}),
+
+			-- #if ANYCLASSIC
+			i(54537, {	-- Heart-Shaped Box
+				["description"] = "This box doesn't actually exist without RDF. The loot normally contained within drop directly from the boss this year.",
+				["sym"] = {{ "select", "itemID", 50250, 49715, 50446, 50741, 50471 }},
+				["timeline"] = { "created 3.3.0" },
+			}),
+			ach(4627, {	-- X-45 Heartbreaker
+				["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
+				["timeline"] = { "added 3.3.0" },
+				["filterID"] = MOUNTS,
+			}),
+			i(50250, {	-- X-45 Heartbreaker (MOUNT!)
+				["timeline"] = { "added 3.3.0" },
+			}),
+			i(49715, {	-- Forever-Lovely Rose
+				["timeline"] = { "added 3.3.0" },
+			}),
+			i(50446, {	-- Toxic Wasteling
+				["timeline"] = { "added 3.3.0" },
+			}),
+			i(50741, {	-- Vile Fumigator's Mask
+				["timeline"] = { "added 3.3.0" },
+			}),
+			i(50471, {	-- The Heartbreaker (TOY!)
+				["timeline"] = { "added 3.3.0" },
+			}),
+			-- #else
+			i(54537, {	-- Heart-Shaped Box
+				["timeline"] = { "added 3.3.0" },
+				-- Minimum level this box drops (not 100% sure)
+				-- #if AFTER 9.0.1
+				["lvl"] = 50,
+				-- #elseif AFTER 8.0.1
+				["lvl"] = 110,
+				-- #elseif AFTER 7.2.5
+				["lvl"] = 98,
+				-- #endif
+				["groups"] = {
+					ach(4627, {	-- X-45 Heartbreaker
+						["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
+						["timeline"] = { "added 3.3.0" },
+						["filterID"] = MOUNTS,
+					}),
+					i(50250, {	-- X-45 Heartbreaker (MOUNT!)
+						["timeline"] = { "added 3.3.0" },
+					}),
+					i(49715, {	-- Forever-Lovely Rose
+						["timeline"] = { "added 3.3.0" },
+					}),
+					i(50446, {	-- Toxic Wasteling
+						["timeline"] = { "added 3.3.0" },
+					}),
+					i(50741, {	-- Vile Fumigator's Mask
+						["timeline"] = { "added 3.3.0" },
+					}),
+					i(50471, {	-- The Heartbreaker (TOY!)
+						["timeline"] = { "added 3.3.0" },
+					}),
+				},
+			}),
+			-- #endif
+			i(147907, {	-- Heart-Shaped Carton
+				["timeline"] = { "added 7.2.5.23910" },
+				["groups"] = {
+					i(49715, {	-- Forever-Lovely Rose
+						["timeline"] = { "added 3.3.0" },
+					}),
+					i(50446, {	-- Toxic Wasteling
+						["timeline"] = { "added 3.3.0" },
+					}),
+					i(50741, {	-- Vile Fumigator's Mask
+						["timeline"] = { "added 3.3.0" },
+					}),
+					-- i(50471, {	-- The Heartbreaker (TOY!)	-- doesn't seem to be possible from the lower-level box
+					-- 	["timeline"] = { "added 3.3.0" },
+					-- }),
+				},
+			}),
+
+			-- Legion+
+			i(143908, {	-- Choker of the Pure Heart [Level 110]
+				["timeline"] = { "added 7.0.1" },
+			}),
+			i(143906, {	-- Heartbreak Charm [Level 110]
+				["timeline"] = { "added 7.0.1" },
+			}),
+			i(143907, {	-- Shard of Pirouetting Happiness [Level 110]
+				["timeline"] = { "added 7.0.1" },
+			}),
+			i(143909, {	-- Sweet Perfume Brooch [Level 110]
+				["timeline"] = { "added 7.0.1" },
+			}),
+			i(143905, {	-- Winking Eye of Love [Level 110]
+				["timeline"] = { "added 7.0.1" },
+			}),
+
+			-- Warlords of Draenor
+			i(117369, {	-- Choker of the Pure Heart [Level 100]
+				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+			}),
+			i(117366, {	-- Heartbreak Charm [Level 100]
+				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+			}),
+			i(117370, {	-- Shard of Pirouetting Happiness [Level 100]
+				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+			}),
+			i(117368, {	-- Sweet Perfume Brooch [Level 100]
+				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+			}),
+			i(117367, {	-- Winking Eye of Love [Level 100]
+				["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+			}),
+
+			-- Mists of Pandaria
+			i(93394, {	-- Choker of the Pure Heart [Level 90]
+				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+			}),
+			i(93391, {	-- Heartbreak Charm [Level 90]
+				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+			}),
+			i(93395, {	-- Shard of Pirouetting Happiness [Level 90]
+				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+			}),
+			i(93393, {	-- Sweet Perfume Brooch [Level 90]
+				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+			}),
+			i(93392, {	-- Winking Eye of Love [Level 90]
+				["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+			}),
+
+			-- Cata
+			i(68176, {	-- Heartbreak Charm [Level 85]
+				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+			}),
+			i(68173, {	-- Choker of the Pure Heart [Level 85]
+				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+			}),
+			i(68172, {	-- Shard of Pirouetting Happiness [Level 85]
+				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+			}),
+			i(68174, {	-- Sweet Perfume Brooch [Level 85]
+				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+			}),
+			i(68175, {	-- Winking Eye of Love [Level 85]
+				["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+			}),
+
+			-- Wrath
+			i(51808, {	-- Choker of the Pure Heart [Level 80]
+				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+			}),
+			i(51805, {	-- Heartbreak Charm [Level 80]
+				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+			}),
+			i(51806, {	-- Shard of Pirouetting Happiness [Level 80]
+				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+			}),
+			i(51807, {	-- Sweet Perfume Brooch [Level 80]
+				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+			}),
+			i(51804, {	-- Winking Eye of Love [Level 80]
+				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+			}),
+			--[[
+			i(21813),	-- Bag of Heart Candies
+			i(49909, {	-- Box of Chocolates
+				["timeline"] = { "added 3.3.2.11403" },
+			}),
+			i(34258, {	-- Love Rocket
+				["timeline"] = { "added 2.3.0.7382" },
+			}),
+			]]--
+		},
+	})),
+	tier(WOTLK_TIER, {
+		inst(277, {	-- Halls of Stone
+			["maps"] = { HALLS_OF_STONE },
+			["groups"] = {
+				d(HEROIC_DUNGEON, {
+					n(27975, {	-- Maiden of Grief
+						BOUQUET_EBON
+					}),
+				}),
+			},
+		}),
+		inst(285, {	-- Utgarde Keep
+			["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
+			["groups"] = {
+				d(NORMAL_DUNGEON, {
+					n(23953, {	-- Prince Keleseth
+						BOUQUET_RED,
+					}),
+				}),
+			},
+		}),
+	}),
+	-- #if AFTER CATA
+	tier(CATA_TIER, {
+		inst(66, {	-- Blackrock Caverns
+			["maps"] = { 283, 284 },
+			["groups"] = {
+				d(NORMAL_DUNGEON, {
+					n(39679, {	-- Corla, Herald of Twilight
+						BOUQUET_RED,
+						POUCH_OF_RED_ROSE_PETALS,
+					}),
+				}),
+				d(HEROIC_DUNGEON, {
+					n(39679, {	-- Corla, Herald of Twilight
+						BOUQUET_RED,
+						POUCH_OF_RED_ROSE_PETALS,
+					}),
+				}),
+			},
+		}),
+		inst(184, {	-- End Time
+			["maps"] = { 401, 402, 403, 404, 405, 406 },
+			["groups"] = {
+				d(HEROIC_DUNGEON, {
+					n(54445, {	-- Echo of Jaina
+						BOUQUET_RED,
+					}),
+					n(54123, {	-- Echo of Sylvanas
+						BOUQUET_EBON
+					}),
+				}),
+			},
+		}),
+		inst(71, {	-- Grim Batol
+			["maps"] = { 293 },
+			["groups"] = {
+				d(NORMAL_DUNGEON, {
+					n(40319, {	-- Drahga Shadowburner
+						BOUQUET_RED,
+					}),
+				}),
+				d(HEROIC_DUNGEON, {
+					n(40319, {	-- Drahga Shadowburner
+						BOUQUET_RED,
+					}),
+				}),
+			},
+		}),
+		inst(186, {	-- Hour of Twilight
+			["maps"] = { 399, 400 },
+			["groups"] = {
+				d(HEROIC_DUNGEON, {
+					n(54968, {	-- Asira Dawnslayer
+						BOUQUET_RED,
+					}),
+				}),
+			},
+		}),
+		inst(64, {	-- Shadowfang Keep
+			["maps"] = {
+				SHADOWFANG_KEEP,
+				SHADOWFANG_KEEP_LEVEL2,
+				SHADOWFANG_KEEP_LEVEL3,
+				SHADOWFANG_KEEP_LEVEL4,
+				SHADOWFANG_KEEP_LEVEL5,
+				SHADOWFANG_KEEP_LEVEL6,
+				SHADOWFANG_KEEP_LEVEL7
+			},
+			["groups"] = {
+				d(HEROIC_DUNGEON, {
+					n(46964, {	-- Lord Godfrey
+						BOUQUET_EBON,
+						BOUQUET_RED,
+					}),
+				}),
+			},
+		}),
+		inst(63, {	-- The Deadmines
+			["maps"] = { 292 },
+			["groups"] = {
+				d(HEROIC_DUNGEON, {
+					n(47626, {	-- Admiral Ripsnarl
+						BOUQUET_EBON,
+						BOUQUET_RED,
+					}),
+				}),
+			},
+		}),
+		inst(67, {	-- The Stonecore
+			["maps"] = { 324 },
+			["groups"] = {
+				d(NORMAL_DUNGEON, {
+					n(42333, {	-- High Priestess Azil
+						BOUQUET_RED,
+					}),
+				}),
+				d(HEROIC_DUNGEON, {
+					n(42333, {	-- High Priestess Azil
+						BOUQUET_RED,
+					}),
+				}),
+			},
+		}),
+	}),
+	-- #endif
+	-- #if AFTER WOD
+	tier(WOD_TIER, {
+		inst(537, {	-- Shadowmoon Burial Grounds
+			["maps"] = { 574, 575, 576 },
+			["groups"] = {
+				d(NORMAL_DUNGEON, {
+					cr(75509, e(1139, {	-- Sadana Bloodfury
+						BOUQUET_EBON
+					})),
+				}),
+				--[[d(MYTHIC_DUNGEON, {
+					cr(75509, e(1139, {	-- Sadana Bloodfury
+						BOUQUET_EBON
+					})),
+				}),]]--
+			},
+		}),
+	}),
+	-- #endif
+	-- #if AFTER 9.1.5
+	tier(SL_TIER, {
+		inst(1194, {	-- Tazavesh, the Veiled Market
+			d(HEROIC_DUNGEON, {
+				e(2455, {	-- So'leah
+					["crs"] = { 177269 },	-- So'leah
+					["groups"] = {
+						POUCH_OF_EBON_ROSE_PETALS,
+					},
+				}),
+			}),
+			d(MYTHIC_DUNGEON, {
+				e(2455, {	-- So'leah
+					["crs"] = { 177269 },	-- So'leah
+					["groups"] = {
+						POUCH_OF_EBON_ROSE_PETALS,
+					},
+				}),
+			}),
+		}),
+		inst(1183, {	-- Plaguefall
+			d(NORMAL_DUNGEON, {
+				e(2423, {	-- Domina Venomblade
+					["crs"] = { 164266 },	-- Domina Venomblade
+					["groups"] = {
+						POUCH_OF_EBON_ROSE_PETALS,
+					},
+				}),
+			}),
+			d(HEROIC_DUNGEON, {
+				e(2423, {	-- Domina Venomblade
+					["crs"] = { 164266 },	-- Domina Venomblade
+					["groups"] = {
+						POUCH_OF_EBON_ROSE_PETALS,
+					},
+				}),
+			}),
+			d(MYTHIC_DUNGEON, {
+				e(2423, {	-- Domina Venomblade
+					["crs"] = { 164266 },	-- Domina Venomblade
+					["groups"] = {
+						POUCH_OF_EBON_ROSE_PETALS,
+					},
+				}),
+			}),
+		}),
+	}),
+	-- #endif
+}) do
+	table.insert(BOSS_GROUPS, o);
+end
 
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	q(74957),	-- daily tracker for Bad Luck Protection on Love Rocket drop
