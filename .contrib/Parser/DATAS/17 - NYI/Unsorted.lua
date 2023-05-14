@@ -478,14 +478,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(REWARDS, {
 				-- New System
-				i(204075),	-- Whelpling's Shadowflame Crest Fragment
-				i(204076),	-- Drake's Shadowflame Crest Fragment
-				i(204077),	-- Wyrm's Shadowflame Crest Fragment
-				i(204078),	-- Aspect's Shadowflame Crest Fragment
-				i(204193),	-- Whelpling's Shadowflame Crest
-				i(204194),	-- Aspect's Shadowflame Crest
-				i(204195),	-- Drake's Shadowflame Crest
-				i(204196),	-- Wyrm's Shadowflame Crest
 				i(204717),	-- Splintered Spark of Shadowflame
 				-- Loamm Niffen
 				i(204712),	-- Brimming Loamm Niffen Supply Satchel

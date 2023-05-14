@@ -74,7 +74,7 @@ _.Factions =
 				["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
 				["collectible"] = false,
 				["g"] = {
-					i(114968),	-- Deathwatch Hatchling (PET! - Revered
+					i(114968),	-- Deathwatch Hatchling (PET!) - Revered
 				},
 			}),
 			ach(5144, {	-- Critter Kill Squad

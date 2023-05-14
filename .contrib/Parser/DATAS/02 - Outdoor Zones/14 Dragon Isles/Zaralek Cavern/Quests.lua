@@ -840,7 +840,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75863),	-- Turning in Aiding The Accord: Sniffenseeking (75859)
 		--q(73793),	-- Fly Through Azure Exit
 
-		--q(76013),	-- after turn in [72930]
+		q(76013),	-- After killing Dreadful Defender / cinematic during 'Stopping Sakareth' (questID 72930)
 		--q(75706),	-- Some Tracker vid Glimrogg
 
 
@@ -856,8 +856,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75422),	-- Rupert
 		q(75421),	-- Veritistrasz
 		q(75420),	-- Voraxian
+
 		-- RP after Stain Removal (73045)
 		q(75219),	-- Voraxian
+
 		-- Talk with Veritistrasz during (74495)
 		q(74773),	-- 1 (optional) dialog
 		q(74776),	-- after he finished optional gialog
