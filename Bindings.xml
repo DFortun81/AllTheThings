@@ -1,51 +1,51 @@
 <Bindings>
-	<Binding name="ALLTHETHINGS_TOGGLEACCOUNTMODE" header="ALLTHETHINGS" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLEACCOUNTMODE" header="ALLTHETHINGS" category="All The Things">
 		AllTheThings.Settings:ToggleAccountMode();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" category="All The Things">
 		AllTheThings.Settings:ToggleCompletionistMode();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEDEBUGMODE" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLEDEBUGMODE" category="All The Things">
 		AllTheThings.Settings:ToggleDebugMode();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEFACTIONMODE" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLEFACTIONMODE" category="All The Things">
 		AllTheThings.Settings:ToggleFactionMode();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDTHINGS" header="ALLTHETHINGS_PREFERENCES" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDTHINGS" header="ALLTHETHINGS_PREFERENCES" category="All The Things">
 		AllTheThings.Settings:ToggleCompletedThings();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDGROUPS" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDGROUPS" category="All The Things">
 		AllTheThings.Settings:ToggleCompletedGroups();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLECOLLECTEDTHINGS" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLECOLLECTEDTHINGS" category="All The Things">
 		AllTheThings.Settings:ToggleCollectedThings();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEBOEITEMS" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLEBOEITEMS" category="All The Things">
 		AllTheThings.Settings:ToggleBOEItems();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLESOURCETEXT" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLESOURCETEXT" category="All The Things">
 		AllTheThings.Settings:SetTooltipSetting("SourceLocations",
 		not AllTheThings.Settings:GetTooltipSetting("SourceLocations"));
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" header="ALLTHETHINGS_MODULES" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" header="ALLTHETHINGS_MODULES" category="All The Things">
 		AllTheThings.ToggleMainList();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLEMINILIST" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLEMINILIST" category="All The Things">
 		AllTheThings.ToggleMiniListForCurrentZone();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLE_PROFESSION_LIST" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLE_PROFESSION_LIST" category="All The Things">
 		AllTheThings:GetWindow("Tradeskills"):Toggle();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLE_RAID_ASSISTANT" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLE_RAID_ASSISTANT" category="All The Things">
 		AllTheThings:GetWindow("RaidAssistant"):Toggle();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST" category="All The Things">
 		AllTheThings:GetWindow("WorldQuests"):Toggle();
 	</Binding>
-	<Binding name="ALLTHETHINGS_TOGGLERANDOM" category="ADDONS">
+	<Binding name="ALLTHETHINGS_TOGGLERANDOM" category="All The Things">
 		AllTheThings:GetWindow("Random"):Toggle();
 	</Binding>
-	<Binding name="ALLTHETHINGS_REROLL_RANDOM" category="ADDONS">
+	<Binding name="ALLTHETHINGS_REROLL_RANDOM" category="All The Things">
 		local window = AllTheThings:GetWindow("Random");
 		window:SetVisible(true);
 		window:Reroll();
