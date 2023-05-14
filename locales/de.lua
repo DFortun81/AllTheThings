@@ -48,6 +48,7 @@ ACC_WIDE_DEFAULT = "Tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." by 
 	L.HEIRLOOM_TEXT_DESC = "Dies zeigt an, ob Ihr bereits ein Erbstück gekauft oder erhalten habt.";
 	L.FAILED_ITEM_INFO = "Abfragen der Gegenstands Informationen fehlgeschlagen. Der Gegenstand ist entweder fehlerhaft, oder wurde auf eurem Server noch nicht gesehen.";
 	L.HEIRLOOMS_UPGRADES_DESC = "Dies zeigt an, ob Ihr ein Erbstück bereits auf eine bestimmte Stufe aufgewertet habt.\n\nR.I.P. Gold.\n - Crieve";
+	L.HEIRLOOM_UPGRADE_FORMAT = "Aufwertungsstufe des Erbstücks: %d";
 	L.MUSIC_ROLLS_AND_SELFIE_DESC = "Diese werden pro Charakter freigeschaltet und sind derzeit nicht auf dem ganzen Account verfügbar. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nIhr müsst das Addon manuell mit "..SHIFT_KEY_TEXT.." Linksklick auf die Kopfzeile aktualisieren, damit sie erkannt werden.";
 	L.MUSIC_ROLLS_AND_SELFIE_DESC_2 = "\n\nIhr müsst Musikrollen zuerst mit der Quest 'Wir brauchen Bass' in Eurer Garnison freischalten, bevor diese droppen können.\n\nSelfies benötigen das S.E.L.F.I.E.-Kamera 2.0 Spielzeug.";
 	L.OPPOSITE_FACTION_EQ = "Äquivalent der gegnerischen Fraktion: ";

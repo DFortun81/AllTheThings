@@ -11923,8 +11923,9 @@ local fields = {
 		return 1;
 	end,
 	["name"] = function(t)
-		-- TODO: localize this
-		return "Upgrade Level " .. t.level;
+		-- TODO: use HEIRLOOM_UPGRADE_TOOLTIP_FORMAT from GlobalStrings
+		-- TODO: need max level for that
+		return sformat(L["HEIRLOOM_UPGRADE_FORMAT"], t.level);
 	end,
 	["icon"] = function(t)
 		return t.isWeapon and weaponTextures[t.level] or armorTextures[t.level];

@@ -50,6 +50,10 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 	L.HEIRLOOM_TEXT_DESC = "显示你是否已经获得或购买了传家宝。";
 	L.FAILED_ITEM_INFO = "未能获得物品信息。该物品可能是无效的或者可能还没有被缓存在你的服务器上。";
 	L.HEIRLOOMS_UPGRADES_DESC = "这表明你是否已经将传家宝升级到了一定的级别。\n\n安息吧…金币。\n - Crieve";
+	L.HEIRLOOM_UPGRADE_FORMAT = "传家宝升级等级：%d";
+	if GetLocale() == "zhTW" then
+		L.HEIRLOOM_UPGRADE_FORMAT = "傳家寶提升等級：%d";
+	end
 	L.MUSIC_ROLLS_AND_SELFIE_DESC = "这些是按角色解锁且目前尚未在战网中共享。如果暴雪有人在看，如果能把这些战网共享的话那就太好了。\n\n必须通过 "..SHIFT_KEY_TEXT.."点击要检测的标题手动刷新插件。";
 	L.MUSIC_ROLLS_AND_SELFIE_DESC_2 = "\n\n必须首先通过在要塞中完成动感低音任务来解锁塞点唱机以便掉落此物品。\n\n自拍需要自拍神器玩具。";
 	L.OPPOSITE_FACTION_EQ = "与对立阵营对应：";
