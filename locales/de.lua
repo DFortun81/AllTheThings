@@ -103,6 +103,7 @@ ACC_WIDE_DEFAULT = "Tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." by 
 	L.BEST_PERSONAL_LOOT_CHANCE = "Beste Personliche Beute Chance";
 	L.BONUS_ROLL = "Zusätzliche Beute";
 	L.PREREQUISITE_QUESTS = "Es gibt Quests, deren Abschluss Voraussetzung ist um dies zu erhalten:";
+	L.BREADCRUMBS = "Brotkrumenquests";	--TODO: article?
 	L.BREADCRUMBS_WARNING = "Es gibt Brotkrumenquests, die nicht mehr abschließbar sind, nachdem dies abgeschlossen wurde:";
 	L.THIS_IS_BREADCRUMB = "Dies ist eine Brotkrumenquest.";
 	L.BREADCRUMB_PARTYSYNC = "Dies ist nicht abschließbar ohne Partysyncronisation, wenn etwas aus folgendem abgeschlossen ist:";

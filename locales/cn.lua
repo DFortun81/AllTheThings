@@ -105,6 +105,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 	L.BEST_PERSONAL_LOOT_CHANCE = "最佳个人拾取几率";
 	L.BONUS_ROLL = "额外奖励";
 	L.PREREQUISITE_QUESTS = "必须先完成一些前置任务才有可能获得：";
+	--TODO: L.BREADCRUMBS = "Breadcrumbs";
 	L.BREADCRUMBS_WARNING = "完成此任务后可能无法获得无关紧要的任务：";
 	L.THIS_IS_BREADCRUMB = "这是个无关紧要的任务。";
 	L.BREADCRUMB_PARTYSYNC = "如果先完成这些任务中的任何一个在没有小队同步的情况下可能无法完成：";
