@@ -52,6 +52,18 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 			ach(16639),		-- Keystone Hero: Uldaman: Legacy of Tyr
 			ach(17849),		-- Keystone Hero: The Underrot
 			ach(17847),		-- Keystone Hero: The Vortex Pinnacle
+			i(204075, {	-- Whelping's Shadowflame Crest Fragment
+				["description"] = "Drops in M+ 0-5",
+			}),
+			i(204076, {	-- Drake's Shadowflame Crest Fragment
+				["description"] = "Drops in M+ 6-10",
+			}),
+			i(204077, {	-- Wyrm's Shadowflame Crest Fragment
+				["description"] = "Drops in M+ 11-15",
+			}),
+			i(204078, {	-- Aspect's Shadowflame Crest Fragment
+				["description"] = "Drops in M+ 16+",
+			}),
 		})),
 	}),
 })));

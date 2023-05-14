@@ -211,6 +211,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(204415),	-- Mantle of Sunless Kindling
 					i(204430),	-- Sanctum Guard's Forgewalkers
 					i(204422),	-- Sundered Edgelord's Breastplate
+					i(204075),	-- Whelping's Shadowflame Crest Fragment
 				}),
 				header(HEADERS.Achievement, 18163, {	-- Discarded Works
 					e(2522, {	-- Kazzara, the Hellforged
@@ -491,6 +492,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(204415),	-- Mantle of Sunless Kindling
 					i(204430),	-- Sanctum Guard's Forgewalkers
 					i(204422),	-- Sundered Edgelord's Breastplate
+					i(204076),	-- Drake's Shadowflame Crest Fragment
 				}),
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
@@ -772,6 +774,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(204415),	-- Mantle of Sunless Kindling
 					i(204430),	-- Sanctum Guard's Forgewalkers
 					i(204422),	-- Sundered Edgelord's Breastplate
+					i(204077),	-- Wyrm's Shadowflame Crest Fragment
 				}),
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
@@ -1045,6 +1048,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(204417),	-- Mantle of Sunless Kindling
 					i(204428),	-- Sanctum Guard's Forgewalkers
 					i(204420),	-- Sundered Edgelord's Breastplate
+					i(204078),	-- Aspect's Shadowflame Crest Fragment
 				}),
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
