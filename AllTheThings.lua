@@ -19670,11 +19670,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
 							end
 						end
-					end
-					-- No difficulty found to expand, so just expand everything in the list once it is built
-					if not expanded then
-						self.ExpandInfo = { Expand = true };
-						expanded = true;
+						-- No difficulty found to expand, so just expand everything in the list once it is built
+						if not expanded then
+							self.ExpandInfo = { Expand = true };
+							expanded = true;
+						end
 					end
 				end
 				-- app.PrintDebug("Warn:Difficulty")
