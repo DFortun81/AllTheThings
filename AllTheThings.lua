@@ -9604,12 +9604,13 @@ end
 end)();
 
 -- Battle Pet Lib
-(function()
+do
 -- localized global APIs
 local C_PetBattles_GetAbilityInfoByID = C_PetBattles.GetAbilityInfoByID;
 local C_PetJournal_GetNumCollectedInfo = C_PetJournal.GetNumCollectedInfo;
 local C_PetJournal_GetPetInfoByPetID = C_PetJournal.GetPetInfoByPetID;
 local C_PetJournal_GetPetInfoBySpeciesID = C_PetJournal.GetPetInfoBySpeciesID;
+local C_PetJournal_GetPetInfoByIndex = C_PetJournal.GetPetInfoByIndex;
 
 local cache = app.CreateCache("speciesID");
 local function CacheInfo(t, field)
@@ -9650,6 +9651,29 @@ local CollectedSpeciesHelper = setmetatable({}, {
 		end
 	end
 });
+local PetIDSpeciesIDHelper = setmetatable({}, {
+	__index = function(t, key)
+		-- PetID are strings
+		local speciesID = C_PetJournal_GetPetInfoByPetID(key);
+		if speciesID then
+			CollectedSpeciesHelper[speciesID] = 1;
+			t[key] = speciesID;
+		end
+		return speciesID;
+	end
+});
+local function RefreshCollectedBattlePets()
+	-- app.PrintDebug("RCBP")
+	local petID, speciesID;
+	local totalPets = C_PetJournal.GetNumPets();
+	for i=1,totalPets do
+		petID, speciesID = C_PetJournal_GetPetInfoByIndex(i);
+		if petID then
+			PetIDSpeciesIDHelper[petID] = speciesID;
+		end
+	end
+	-- app.PrintDebug("RCBP-Done")
+end
 local fields = {
 	["key"] = function(t)
 		return "speciesID";
@@ -9694,16 +9718,17 @@ local fields = {
 		return sformat("p:%d:1:3", t.speciesID);
 	end,
 };
-app.BaseSpecies = app.BaseObjectFields(fields, "BaseSpecies");
+local BaseSpecies = app.BaseObjectFields(fields, "BaseSpecies");
 app.CreateSpecies = function(id, t)
-	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
+	return setmetatable(constructor(id, t, "speciesID"), BaseSpecies);
 end
 
 app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = C_PetJournal_GetPetInfoByPetID(petID);
+	PetIDSpeciesIDHelper[petID] = speciesID;
 	-- app.PrintDebug("NEW_PET_ADDED", petID, speciesID);
 	if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) > 0 and not rawget(CollectedSpeciesHelper, speciesID) then
-		rawset(CollectedSpeciesHelper, speciesID, 1);
+		CollectedSpeciesHelper[speciesID] = 1;
 		UpdateRawID("speciesID", speciesID);
 		app:PlayFanfare();
 		app:TakeScreenShot("BattlePets");
@@ -9711,24 +9736,16 @@ app.events.NEW_PET_ADDED = function(petID)
 	end
 end
 app.events.PET_JOURNAL_PET_DELETED = function(petID)
-	-- /dump C_PetJournal.GetPetInfoByPetID("BattlePet-0-00001006503D")
-	-- local speciesID = C_PetJournal.GetPetInfoByPetID(petID);
-	-- NOTE: Above APIs do not work in the DELETED API, THANKS BLIZZARD
-	-- app.PrintDebug("PET_JOURNAL_PET_DELETED",petID);
+	local speciesID = PetIDSpeciesIDHelper[petID];
+	-- app.PrintDebug("PET_JOURNAL_PET_DELETED",petID,speciesID);
 
 	-- Check against all of the collected species for a species that is no longer 1/X
-	local missing = {};
-	for speciesID,_ in pairs(CollectedSpeciesHelper) do
-		if C_PetJournal_GetNumCollectedInfo(speciesID) < 1 then
-			-- app.PrintDebug("Pet Missing",speciesID);
-			rawset(CollectedSpeciesHelper, speciesID, nil);
-			tinsert(missing, speciesID);
-		end
-	end
-	if #missing > 0 then
+	if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) < 1 then
+		-- app.PrintDebug("Pet Missing",speciesID);
+		rawset(CollectedSpeciesHelper, speciesID, nil);
+		UpdateRawID("speciesID", speciesID);
 		app:PlayRemoveSound();
 	end
-	UpdateRawIDs("speciesID", missing);
 end
 
 local fields = {
@@ -9745,9 +9762,9 @@ local fields = {
 		return select(5, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
 	end,
 };
-app.BasePetAbility = app.BaseObjectFields(fields, "BasePetAbility");
+local BasePetAbility = app.BaseObjectFields(fields, "BasePetAbility");
 app.CreatePetAbility = function(id, t)
-	return setmetatable(constructor(id, t, "petAbilityID"), app.BasePetAbility);
+	return setmetatable(constructor(id, t, "petAbilityID"), BasePetAbility);
 end
 
 local fields = {
@@ -9764,11 +9781,12 @@ local fields = {
 		return 101;
 	end,
 };
-app.BasePetType = app.BaseObjectFields(fields, "BasePetType");
+local BasePetType = app.BaseObjectFields(fields, "BasePetType");
 app.CreatePetType = function(id, t)
-	return setmetatable(constructor(id, t, "petTypeID"), app.BasePetType);
+	return setmetatable(constructor(id, t, "petTypeID"), BasePetType);
 end
-end)();
+RefreshCollectedBattlePets();
+end	-- Battle Pet Lib
 
 -- Category Lib
 (function()
