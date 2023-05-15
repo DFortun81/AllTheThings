@@ -684,6 +684,7 @@ app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
+app.ReturnNil = function() return; end
 
 local function RoundNumber(number, decimalPlaces)
 	local ret;
@@ -7494,8 +7495,8 @@ function(fields, type)
 			-- object is a wrapper for another Type object?
 			local base = rawget(t, "__base");
 			if base then
-				key = tostring(key).."__base";
 				result = base[key];
+				key = tostring(key).."__base";
 			end
 		end
 		if typeData then
@@ -7518,7 +7519,7 @@ app.SetBaseObject = function(t, base)
 		setmetatable(t, { __index = base } );
 	end
 end
--- Allows wrapping a Base Type Object around another Type Object. This allows for multiple inheritance of
+-- Allows wrapping a Type Object with another Base Type. This allows for multiple inheritance of
 -- Objects without requiring a full definition of altered field functions
 app.WrapObject = function(t, base)
 	return setmetatable({ __base=t}, base);
@@ -7688,6 +7689,32 @@ app.CollectibleAsCost = function(t)
 	t.collectibleAsCost = nil;
 end
 end)();
+
+-- Common Wrapper Types
+do
+
+local HeaderCloneFields = {
+	-- Fields in the wrapped object which should not persist when represented as a Header
+	["collectible"] = app.ReturnFalse,
+	["trackable"] = app.ReturnFalse,
+	["customCollect"] = app.ReturnNil,
+	["requireSkill"] = app.ReturnNil,
+	["u"] = app.ReturnNil,
+	["races"] = app.ReturnNil,
+	["r"] = app.ReturnNil,
+	["c"] = app.ReturnNil,
+	["nmc"] = app.ReturnNil,
+	["nmr"] = app.ReturnNil,
+	["back"] = function(t)
+		return 0.3;	-- visibility of which rows are cloned
+	end,
+};
+local BaseHeaderClone = app.BaseObjectFields(HeaderCloneFields, "HeaderClone");
+-- Wraps a given object such that it can act as a non-filtered Header of the object
+app.CreateClonedHeader = function(t)
+	return app.WrapObject(t, BaseHeaderClone);
+end
+end	-- Common Wrapper Types
 
 -- Quest Lib
 -- Quests first because a lot of other Thing libs use Quest logic
@@ -11860,7 +11887,7 @@ end
 end)();
 
 -- Heirloom Lib
-(function()
+do
 local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
 local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;
 local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
@@ -11888,7 +11915,10 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 };
 fields.collected = fields.saved;
-app.BaseHeirloomUnlocked = app.BaseObjectFields(fields, "BaseHeirloomUnlocked");
+local BaseHeirloomUnlocked = app.BaseObjectFields(fields, "BaseHeirloomUnlocked");
+local function CreateHeirloomUnlock(t)
+	return setmetatable(t, BaseHeirloomUnlocked);
+end
 
 local armorTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
@@ -11916,9 +11946,8 @@ local fields = {
 		return 1;
 	end,
 	["name"] = function(t)
-		-- TODO: use HEIRLOOM_UPGRADE_TOOLTIP_FORMAT from GlobalStrings
-		-- TODO: need max level for that
-		return sformat(L["HEIRLOOM_UPGRADE_FORMAT"], t.level);
+		t.name = sformat(HEIRLOOM_UPGRADE_TOOLTIP_FORMAT, t.level, t.levelMax);
+		return t.name;
 	end,
 	["icon"] = function(t)
 		return t.isWeapon and weaponTextures[t.level] or armorTextures[t.level];
@@ -11951,7 +11980,10 @@ local fields = {
 	end,
 };
 fields.collected = fields.saved;
-app.BaseHeirloomLevel = app.BaseObjectFields(fields, "BaseHeirloomLevel");
+local BaseHeirloomLevel = app.BaseObjectFields(fields, "BaseHeirloomLevel");
+local function CreateHeirloomLevel(level, heirloom)
+	return setmetatable(level, BaseHeirloomLevel);
+end
 
 -- copy base Item fields
 -- TODO: heirlooms need to cache item information as well
@@ -11999,19 +12031,22 @@ fields.isWeapon = function(t)
 fields.g = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
 		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
-			rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u }, app.BaseHeirloomUnlocked) });
+			rawset(t, "g", { CreateHeirloomUnlock({
+				heirloomUnlockID = t.itemID,
+				u = t.u
+			}) });
 			return rawget(t, "g");
 		end
 	end
 
-app.BaseHeirloom = app.BaseObjectFields(fields, "BaseHeirloom");
+local BaseHeirloom = app.BaseObjectFields(fields, "BaseHeirloom");
 app.CreateHeirloom = function(id, t)
 	tinsert(heirloomIDs, id);
 	if t then
 		-- Heirlooms are always BoA
 		t.b = 2;
 	end
-	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
+	return setmetatable(constructor(id, t, "itemID"), BaseHeirloom);
 end
 
 -- Will retrieve all the cached entries by itemID for existing heirlooms and generate their
@@ -12059,24 +12094,33 @@ app.CacheHeirlooms = function()
 		item.g = {};
 	end
 	-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
-	local heirloom, upgrades, isWeapon;
+	local heirloom, upgrades, isWeapon, u;
+	local Search, ClonedHeader = app.SearchForObject, app.CreateClonedHeader;
 	local uniques = {};
 	for _,itemID in ipairs(heirloomIDs) do
 		if not uniques[itemID] then
 			uniques[itemID] = true;
-			heirloom = app.SearchForObject("itemID", itemID, "field");
+			heirloom = Search("itemID", itemID, "field");
 			if heirloom then
 				upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
 				if upgrades then
 					isWeapon = heirloom.isWeapon;
+					u = heirloom.u;
 
 					local heirloomHeader;
 					for i=1,upgrades,1 do
 						-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
-						heirloomHeader = CloneData(heirloom);
+						-- heirloomHeader = ClonedHeader(heirloom);
+						heirloomHeader = CreateObject(heirloom, true);
 						heirloomHeader.collectible = false;
+						heirloomHeader.trackable = false;
 						-- put the upgrade object into the header heirloom object
-						heirloomHeader.g = { setmetatable({ ["level"] = i, ["heirloomLevelID"] = itemID, ["u"] = heirloom.u }, app.BaseHeirloomLevel) };
+						heirloomHeader.g = { CreateHeirloomLevel({
+							level = i,
+							levelMax = upgrades,
+							heirloomLevelID = itemID,
+							u = u,
+						}) };
 
 						-- add the header into the appropriate upgrade token
 						if isWeapon then
@@ -12125,7 +12169,7 @@ app.CacheHeirlooms = function()
 
 	wipe(heirloomIDs);
 end
-end)();
+end -- Heirloom Lib
 
 -- Toy Lib
 (function()
