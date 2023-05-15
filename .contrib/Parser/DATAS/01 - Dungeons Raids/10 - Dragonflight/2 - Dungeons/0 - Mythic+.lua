@@ -3,6 +3,23 @@
 -----------------------------------------------------
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(MYTHIC_PLUS, {
+		i(201471),	-- Story of a Spectacular Victory
+		i(204075, {	-- Whelping's Shadowflame Crest Fragment
+			["description"] = "Drops in M+ 0-5",
+			["timeline"] = { ADDED_10_1_0 },
+		}),
+		i(204076, {	-- Drake's Shadowflame Crest Fragment
+			["description"] = "Drops in M+ 6-10",
+			["timeline"] = { ADDED_10_1_0 },
+		}),
+		i(204077, {	-- Wyrm's Shadowflame Crest Fragment
+			["description"] = "Drops in M+ 11-15",
+			["timeline"] = { ADDED_10_1_0 },
+		}),
+		i(204078, {	-- Aspect's Shadowflame Crest Fragment
+			["description"] = "Drops in M+ 16+",
+			["timeline"] = { ADDED_10_1_0 },
+		}),
 		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
 		},{
@@ -29,7 +46,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 			ach(16645),		-- Keystone Hero: The Azure Vault
 			ach(16641),		-- Keystone Hero: The Nokhud Offensive
 		})),
-		i(201471),	-- Story of a Spectacular Victory
 		header(HEADERS.Achievement, SEASON_SMOLDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		},{
@@ -52,18 +68,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 			ach(16639),		-- Keystone Hero: Uldaman: Legacy of Tyr
 			ach(17849),		-- Keystone Hero: The Underrot
 			ach(17847),		-- Keystone Hero: The Vortex Pinnacle
-			i(204075, {	-- Whelping's Shadowflame Crest Fragment
-				["description"] = "Drops in M+ 0-5",
-			}),
-			i(204076, {	-- Drake's Shadowflame Crest Fragment
-				["description"] = "Drops in M+ 6-10",
-			}),
-			i(204077, {	-- Wyrm's Shadowflame Crest Fragment
-				["description"] = "Drops in M+ 11-15",
-			}),
-			i(204078, {	-- Aspect's Shadowflame Crest Fragment
-				["description"] = "Drops in M+ 16+",
-			}),
 		})),
 	}),
 })));

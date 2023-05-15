@@ -99,6 +99,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 				i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
+				i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
 			}),
 			n(BACK, {
 				i(204897),	-- Suffused Cloak

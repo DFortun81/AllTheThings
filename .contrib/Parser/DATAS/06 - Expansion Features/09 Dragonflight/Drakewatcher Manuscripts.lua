@@ -920,6 +920,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
 			i(202278),	-- Renewed Proto-Drake: Antlers (DM!)
 			i(197369),	-- Renewed Proto-Drake: Brown Hair (DM!)
+			i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
 			i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
 			i(202279),	-- Renewed Proto-Drake: Malevolent Horns (DM!)
 			i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
@@ -929,7 +930,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
-			i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
 		})),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
 			i(197583),	-- Windborne Velocidrake: Exposed Finned Back (DM!)
