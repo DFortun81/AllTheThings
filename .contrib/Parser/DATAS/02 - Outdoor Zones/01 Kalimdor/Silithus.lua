@@ -991,6 +991,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								{ "i", 20456 },	-- Hive'Regal Rubbing
 								{ "i", 20453 },	-- Geologist's Transcription Kit
+								{ "o", 180453 },	-- Hive'Regal Glyphed Crystal
 							},
 							["coord"] = { 55, 90, SILITHUS },
 						}),
@@ -999,6 +1000,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								{ "i", 20455 },	-- Hive'Ashi Rubbing
 								{ "i", 20453 },	-- Geologist's Transcription Kit
+								{ "o", 180454 },	-- Hive'Ashi Glyphed Crystal
 							},
 							["coord"] = { 50, 26, SILITHUS },
 						}),
@@ -1006,6 +1008,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								{ "i", 20454 },	-- Hive'Zora Rubbing
 								{ "i", 20453 },	-- Geologist's Transcription Kit
+								{ "o", 180455 },	-- Hive'Zora Glyphed Crystal
 							},
 							["coord"] = { 37, 62, SILITHUS },
 						}),
@@ -1013,6 +1016,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								{ "i", 20456 },	-- Hive'Regal Rubbing
 								{ "i", 20453 },	-- Geologist's Transcription Kit
+								{ "o", 180453 },	-- Hive'Regal Glyphed Crystal
 							},
 							["coord"] = { 52, 99, SILITHUS },
 						}),
@@ -1235,7 +1239,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(54, 54, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Noggle's Satchel
-							["provider"] = { "i", 20379 },	-- Noggle's Satchel
+							["providers"] = {
+								{ "i",  20379 },	-- Noggle's Satchel
+								{ "o", 180435 },	-- Noggle's Satchel
+							},
 							["coord"] = { 44, 91, SILITHUS },
 						}),
 						i(13452),	-- Elixir of the Mongoose

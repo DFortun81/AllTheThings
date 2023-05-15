@@ -52,6 +52,12 @@ root(ROOTS.WorldEvents, n(-541,	-- The Silithyst Must Flow
 				["lvl"] = lvlsquish(53, 53, 15),
 				-- #if ANYCLASSIC
 				["groups"] = {
+					objective(1, {	-- Return Silithyst
+						["providers"] = {
+							{ "o", 181598 },	-- Silithyst Geyser
+							{ "o", 181597 },	-- Silithyst Mound
+						},
+					}),
 					MAJOR_HEALING_POTION,
 					MAJOR_MANA_POTION,
 				},
@@ -72,6 +78,12 @@ root(ROOTS.WorldEvents, n(-541,	-- The Silithyst Must Flow
 				["lvl"] = lvlsquish(53, 53, 15),
 				-- #if ANYCLASSIC
 				["groups"] = {
+					objective(1, {	-- Return Silithyst
+						["providers"] = {
+							{ "o", 181598 },	-- Silithyst Geyser
+							{ "o", 181597 },	-- Silithyst Mound
+						},
+					}),
 					MAJOR_HEALING_POTION,
 					MAJOR_MANA_POTION,
 				},
