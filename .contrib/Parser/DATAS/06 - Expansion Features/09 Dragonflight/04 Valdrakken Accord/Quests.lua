@@ -223,6 +223,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192480 },	-- Watcher Koranos
 				["coord"] = { 58.2, 58.8, THALDRASZUS },
+				["g"] = {
+					i(198355),	-- Tyrhold Conduit
+				}
 			}),
 			q(67076, {	-- A Spark of Discovery
 				["sourceQuest"] = 67075,	-- The Magic Within
@@ -247,6 +250,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192480 },	-- Watcher Karanos
 				["coord"] = { 60.4, 58.9, THALDRASZUS },
+				["g"] = {
+					i(198355),	-- Tyrhold Conduit
+				}
 			}),
 			q(67081, {	-- An Infusion of Materials
 				["sourceQuest"] = 67079,	-- Hard Lock Life

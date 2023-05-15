@@ -501,7 +501,6 @@ root(ROOTS.Unsorted, {
 				-- Research
 				i(205367),	-- Indebted Researcher's Gift
 				i(205368),	-- Thankful Researcher's Gift
-				i(205369),	-- Appreciative Researcher's Gift
 				i(205370),	-- Researcher's Gift
 				i(205371),	-- Appreciative Researcher's Scrounged Goods
 				i(205372),	-- Indebted Researcher's Scrounged Goods
@@ -922,10 +921,6 @@ root(ROOTS.Unsorted, {
 				i(191859),	-- Half-Boiled Fish
 				--
 				i(197845),	-- Silver Scale
-				i(197862),	-- Primary Security Disc
-				i(197863),	-- Secondary Security Disc
-				i(198038),	-- Ancient Titansteel Ingot
-				i(198355),	-- Tyrhold Conduit
 				--
 				i(123868),	-- Relic of Shakama
 				i(192744),	-- Rymek's Gift

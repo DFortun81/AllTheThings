@@ -20,14 +20,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 200277 },	-- Ebyssian
 					["coord"] = { 76.8, 38.2, THE_FORBIDDEN_REACH },
 				}),
-				q(76118, {	-- Accept Book from Wrathion
-					["name"] = "Accept Book from Wrathion",
-					["provider"] = { "n", 201284 },	-- Wrathion
-					["coord"] = { 62.4, 42.7, VALDRAKKEN },
-					["g"] = {
-						i(206033),	-- Untranslated Obsidian Tome
-					},
-				}),
 				q(72976, {	-- A Crack in the World
 					["sourceQuests"] = {
 						72975,	-- The Land Beneath
@@ -830,6 +822,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
+		q(76118), 	-- Accept Untranslated Obsidian Tome from Wrathion
 		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
 		q(75642),	-- Unknown Account-Wide trigger when zoning into Dragon Isles for first time on an alt
 

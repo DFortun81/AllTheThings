@@ -637,6 +637,9 @@ i(200801);	-- Gilded Statuette
 i(200779);	-- Lava Jars
 i(191850);	-- Broken Severite Blade Tip
 i(191851);	-- Dull Draconium Weapon Head
+i(197862);	-- Primary Security Disc
+i(197863);	-- Secondary Security Disc
+i(198038);	-- Ancient Titansteel Ingot
 
 ------------------
 -- PATCH 10.0.5 --
@@ -741,5 +744,7 @@ i(205469);	-- Serrated Sporebat Spine
 i(205471);	-- Slimy Deepsea Fin
 i(205470);	-- Torn Deep Scales
 i(205461);	-- Vicious Stoneclaw
+
 -- Common Trash --
 i(204342);	-- Questionable Jerky
+i(206033);	-- Untranslated Obsidian Tome

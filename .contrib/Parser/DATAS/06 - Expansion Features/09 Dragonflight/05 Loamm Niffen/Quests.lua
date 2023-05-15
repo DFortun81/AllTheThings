@@ -106,6 +106,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(205188),	-- Barter Boulder
 				}
 			}),
+			-- RENOWN 13 --
+			q(75730, {	-- Slitherdrake Watching
+				["minReputation"] = { 2564, 13 },	-- Loamm Niffen Renown 13
+				["provider"] = { "n", 205127 },	-- Newsy
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
+				["g"] = {
+					i(203323),	-- Winding Slitherdrake: Brown Hair
+					i(203335),	-- Winding Slitherdrake: Curved Horns
+					i(203341),	-- Winding Slitherdrake: Long Jaw Horns
+				}
+			}),
 
 				-- Unsorted (which renown level?) --
 			q(75721, {
@@ -124,5 +135,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(LOAMM_NIFFEN, {
 		q(76208),	-- Triggered at Renown 3
 		q(76209),	-- Triggered at Renown 3
+		q(76019),	-- Triggered after turn in 75730 (Slitherdrake Watching), Brown Hair was picked up as reward
 	}),
 }));

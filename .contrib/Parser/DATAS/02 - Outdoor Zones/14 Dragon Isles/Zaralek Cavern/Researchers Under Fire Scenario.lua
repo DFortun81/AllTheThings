@@ -22,6 +22,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(RARES, {
 				n(203355),	-- Captain Reykal
+				n(203834),	-- Contaminated Titan Watcher
 				n(202318),	-- Response Team Watcher
 			}),
 			n(QUESTS, {
@@ -30,9 +31,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(ZONE_DROPS, {
 				i(205026),	-- Devourer Lobstrok (PET!)
+				i(205204),	-- Cataloged Shalewing (MOUNT!)
 			}),
 			n(REWARDS, {
-				i(205204),	-- Cataloged Shalewing (MOUNT!)
+				i(205369),	-- Appreciative Researcher's Gift
 			}),
 		}),
 	}),
@@ -40,6 +42,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(RESEARCHERS, {
-		q(75945),	-- After rare kill that spawned in 1st wave of event
+		-- Event rares --
+		q(75944),	-- After Contaminated Titan Watcher kill
+		q(75945),	-- After Response Team Watcher kill
+
+		-- Event reward hqts? --
+		q(74905),	-- At the end of event 'Titan Lockdown', unflagged after next hqt
+		q(75628),	-- Tier 2 bag? (you have earned the Tier 2 Researcher's Gift on map)
 	}),
 }));
