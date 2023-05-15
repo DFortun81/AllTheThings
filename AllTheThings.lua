@@ -1255,47 +1255,6 @@ function app:TakeScreenShot(type)
 	end
 end
 
--- Audio lib
-do
-local SoundDelays = {};
-local function PlayAudio(targetAudio, delay)
-	if targetAudio and type(targetAudio) == "table" then
-		-- Don't spam the users. It's nice sometimes, but let's put a delay of at least 1 second on there.
-		local now = time();
-		if (SoundDelays[delay] or 0) < now then
-			SoundDelays[delay] = now + 1;
-			local id = math.random(1, #targetAudio);
-			if targetAudio[id] then PlaySoundFile(targetAudio[id], app.Settings:GetTooltipSetting("Channel")); end
-		end
-	end
-end
-function app:PlayCompleteSound()
-	if app.Settings:GetTooltipSetting("Celebrate") then
-		PlayAudio(app.Settings.AUDIO_COMPLETE_TABLE, "Complete");
-	end
-end
-function app:PlayFanfare()
-	if app.Settings:GetTooltipSetting("Celebrate") then
-		PlayAudio(app.Settings.AUDIO_FANFARE_TABLE, "Celebrate");
-	end
-end
-function app:PlayRareFindSound()
-	if app.Settings:GetTooltipSetting("Celebrate") then
-		PlayAudio(app.Settings.AUDIO_RAREFIND_TABLE, "RareFind");
-	end
-end
-function app:PlayRemoveSound()
-	if app.Settings:GetTooltipSetting("Warn:Removed") then
-		PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
-	end
-end
-function app:PlayReportSound()
-	if app.Settings:GetTooltipSetting("Warn:Removed") or app.Settings:GetTooltipSetting("Celebrate") then
-		PlayAudio(app.Settings.AUDIO_REPORT_TABLE, "Report");
-	end
-end
-end	-- Audio lib
-
 -- Color Lib
 local GetProgressColor, Colorize, RGBToHex;
 local function HexToARGB(hex)

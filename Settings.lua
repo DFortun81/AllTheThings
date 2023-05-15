@@ -64,28 +64,6 @@ settings.UniqueCounter = setmetatable({}, {
 	end
 });
 
--- Music / Sound Management (You can add your own sounds for this if you want.)
-settings.AUDIO_COMPLETE_TABLE = {
-	app.asset("complete1.ogg"),
-};
-settings.AUDIO_FANFARE_TABLE = {
-	app.asset("fanfare1.ogg"),
-	app.asset("fanfare2.ogg"),
-	app.asset("fanfare3.ogg"),
-	app.asset("fanfare4.ogg"),
-	app.asset("fanfare5.ogg"),
-	app.asset("fanfare6.ogg"),
-};
-settings.AUDIO_RAREFIND_TABLE = {
-	app.asset("rarefind1.ogg"),
-};
-settings.AUDIO_REMOVE_TABLE = {
-	app.asset("remove1.ogg"),
-};
-settings.AUDIO_REPORT_TABLE = {
-	app.asset("report1.ogg"),
-};
-
 -- Settings Class
 local Things = {
 	"Achievements",

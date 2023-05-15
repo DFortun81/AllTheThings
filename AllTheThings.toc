@@ -12,6 +12,7 @@
 src\base.lua
 lib\Callback.lua
 lib\Runner.lua
+lib\Audio.lua
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
