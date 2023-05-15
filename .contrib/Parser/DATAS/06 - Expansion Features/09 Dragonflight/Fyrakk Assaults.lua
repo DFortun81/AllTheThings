@@ -7,6 +7,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			ach(17506),	-- Still Standing in the Fire
 			ach(17735),	-- We Didn't Start the Fire
 		}),
+		n(COMMON_BOSS_DROPS, {
+			["crs"] = {
+				201673,	-- Kretchenwrath
+			},
+			["g"] = {
+				i(206043),	-- Fryrakk's Frenzy (TOY!)
+				filter(BATTLE_PETS, {
+					i(205003),	-- Ambre (PET!)
+					i(205002),	-- Blaise (PET!)
+				}),
+				n(DRAKEWATCHER_MANUSCRIPTS, {
+					i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
+					i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
+					i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
+				}),
+			},
+		}),
 		n(QUESTS, sharedData({ ["isWeekly"] = true, ["_drop"] = { "g" } }, {
 			q(75887, {	-- Fyrakk's Forces
 				["provider"] = { "n", 205647 },	-- Kalecgos
@@ -92,15 +109,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(200453),	-- Iskaara Tuskarr Insignia
 			i(200454),	-- Maruuk Centaur Insignia
 			i(204076),	-- Drake's Shadowflame Crest Fragments
-			filter(BATTLE_PETS, {
-				i(205003),	-- Ambre (PET!)
-				i(205002),	-- Blaise (PET!)
-			}),
-			n(DRAKEWATCHER_MANUSCRIPTS, {
-				i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
-				i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
-				i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
-			}),
 			n(BACK, {
 				i(204897),	-- Suffused Cloak
 				i(204898),	-- Suffused Drape
