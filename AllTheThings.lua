@@ -2951,18 +2951,33 @@ app.MergedObject = function(group, rootOnly)
 end
 end)();
 
-local function ExpandGroupsRecursively(group, expanded, manual)
+local ExpandGroupsRecursively;
+do
+local SkipAutoExpands = {
+	-- Specific HeaderID values should not expand
+	headerID = {
+		[0] = true,	-- Zone Drops
+		[-1] = true,	-- Common Boss Drops
+		[-3] = true	-- Holiday
+	},
+	-- Item/Difficulty as Headers should not expand
+	itemID = true,
+	difficultyID = true,
+}
+local function SkipAutoExpand(group)
+	local key = group.key;
+	local skipKey = SkipAutoExpands[key];
+	if not skipKey then return; end
+	return skipKey == true or skipKey[group[key]];
+end
+ExpandGroupsRecursively = function(group, expanded, manual)
 	-- expand if there is any sub-group
 	if group.g then
 		-- app.PrintDebug("EGR",group.hash,expanded,manual);
 		-- if manually expanding
-		if (manual or
-				-- it's not an item
-				(not group.itemID and
-				-- not a difficulty
-				not group.difficultyID and
-				-- not a Zone/CB Drop header
-				not (group.headerID and type(group.headerID) == "number" and group.headerID > -2) and
+		if (manual or (
+				-- not a skipped group for auto-expansion
+				not SkipAutoExpand(group) and
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
 				-- account/debug mode is active or it is not a 'saved' thing for this character
@@ -2975,6 +2990,7 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 			end
 		end
 	end
+end
 end
 
 local ResolveSymbolicLink;
