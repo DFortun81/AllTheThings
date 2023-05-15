@@ -76,992 +76,996 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				title(491),	-- Legend <Name>
 			})),
 			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-				n(199601, {	-- Seltherex
-					["coord"] = { 44.7, 37.0, VALDRAKKEN },
-					["g"] = {
-						filter(CLOAKS, {
-							i(205791),	-- Obsidian Aspirant's Cape
-							i(205789),	-- Obsidian Aspirant's Cloak
-							i(205790),	-- Obsidian Aspirant's Drape
-							i(205792),	-- Obsidian Aspirant's Greatcloak
-						}),
-						filter(CLOTH, {
-							i(205771),	-- Obsidian Aspirant's Silk Belt
-							i(205774),	-- Obsidian Aspirant's Silk Bindings
-							i(205739),	-- Obsidian Aspirant's Silk Cord
-							i(205759),	-- Obsidian Aspirant's Silk Cover
-							i(205752),	-- Obsidian Aspirant's Silk Footwraps
-							i(205725),	-- Obsidian Aspirant's Silk Gloves
-							i(205757),	-- Obsidian Aspirant's Silk Handwraps
-							i(205727),	-- Obsidian Aspirant's Silk Hood
-							i(205731),	-- Obsidian Aspirant's Silk Leggings
-							i(205763),	-- Obsidian Aspirant's Silk Legwraps
-							i(205736),	-- Obsidian Aspirant's Silk Mantle
-							i(205715),	-- Obsidian Aspirant's Silk Robe
-							i(205768),	-- Obsidian Aspirant's Silk Shawl
-							i(205720),	-- Obsidian Aspirant's Silk Treads
-							i(205747),	-- Obsidian Aspirant's Silk Vestments
-							i(205742),	-- Obsidian Aspirant's Silk Wristwraps
-						}),
-						filter(FINGER_F, {
-							i(205784),	-- Obsidian Aspirant's Band
-							i(205783),	-- Obsidian Aspirant's Ring
-							i(205785),	-- Obsidian Aspirant's Signet
-						}),
-						filter(LEATHER, {
-							i(205777),	-- Obsidian Aspirant's Leather Armguards
-							i(205741),	-- Obsidian Aspirant's Leather Belt
-							i(205722),	-- Obsidian Aspirant's Leather Boots
-							i(205733),	-- Obsidian Aspirant's Leather Breeches
-							i(205773),	-- Obsidian Aspirant's Leather Cord
-							i(205754),	-- Obsidian Aspirant's Leather Footpads
-							i(205723),	-- Obsidian Aspirant's Leather Gloves
-							i(205755),	-- Obsidian Aspirant's Leather Grips
-							i(205729),	-- Obsidian Aspirant's Leather Helm
-							i(205765),	-- Obsidian Aspirant's Leather Leggings
-							i(205766),	-- Obsidian Aspirant's Leather Mantle
-							i(205761),	-- Obsidian Aspirant's Leather Mask
-							i(205734),	-- Obsidian Aspirant's Leather Spaulders
-							i(205750),	-- Obsidian Aspirant's Leather Tunic
-							i(205718),	-- Obsidian Aspirant's Leather Vest
-							i(205745),	-- Obsidian Aspirant's Leather Wristwraps
-						}),
-						filter(MAIL, {
-							i(205740),	-- Obsidian Aspirant's Chain Belt
-							i(205776),	-- Obsidian Aspirant's Chain Bracer
-							i(205772),	-- Obsidian Aspirant's Chain Clasp
-							i(205726),	-- Obsidian Aspirant's Chain Gauntlets
-							i(205758),	-- Obsidian Aspirant's Chain Handguards
-							i(205760),	-- Obsidian Aspirant's Chain Headguard
-							i(205728),	-- Obsidian Aspirant's Chain Helm
-							i(205732),	-- Obsidian Aspirant's Chain Leggings
-							i(205721),	-- Obsidian Aspirant's Chain Sabatons
-							i(205769),	-- Obsidian Aspirant's Chain Shoulderguards
-							i(205737),	-- Obsidian Aspirant's Chain Spaulders
-							i(205753),	-- Obsidian Aspirant's Chain Stompers
-							i(205749),	-- Obsidian Aspirant's Chain Tunic
-							i(205717),	-- Obsidian Aspirant's Chain Vest
-							i(205764),	-- Obsidian Aspirant's Chain Wargreaves
-							i(205744),	-- Obsidian Aspirant's Chain Wristwraps
-						}),
-						filter(NECK_F, {
-							i(205787),	-- Obsidian Aspirant's Choker
-							i(205786),	-- Obsidian Aspirant's Necklace
-							i(205788),	-- Obsidian Aspirant's Pendant
-						}),
-						filter(PLATE, {
-							i(205775),	-- Obsidian Aspirant's Plate Armguards
-							i(205748),	-- Obsidian Aspirant's Plate Armor
-							i(205716),	-- Obsidian Aspirant's Plate Chestplate
-							i(205743),	-- Obsidian Aspirant's Plate Cuffs
-							i(205724),	-- Obsidian Aspirant's Plate Gauntlets
-							i(205738),	-- Obsidian Aspirant's Plate Girdle
-							i(205770),	-- Obsidian Aspirant's Plate Greatbelt
-							i(205756),	-- Obsidian Aspirant's Plate Handguards
-							i(205746),	-- Obsidian Aspirant's Plate Headguard
-							i(205714),	-- Obsidian Aspirant's Plate Helm
-							i(205730),	-- Obsidian Aspirant's Plate Legguards
-							i(205767),	-- Obsidian Aspirant's Plate Pauldrons
-							i(205735),	-- Obsidian Aspirant's Plate Shoulders
-							i(205751),	-- Obsidian Aspirant's Plate Stompers
-							i(205719),	-- Obsidian Aspirant's Plate Warboots
-							i(205762),	-- Obsidian Aspirant's Plate Wargreaves
-						}),
-						filter(TRINKET_F, {
-							i(205778),	-- Obsidian Aspirant's Badge of Ferocity
-							i(205781),	-- Obsidian Aspirant's Emblem
-							i(205780),	-- Obsidian Aspirant's Insignia of Alacrity
-							i(205779),	-- Obsidian Aspirant's Medallion
-							i(205782),	-- Obsidian Aspirant's Sigil of Adaptation
-						}),
-						n(WEAPONS, {
-							i(205879),	-- Obsidian Aspirant's Battleaxe
-							i(205896),	-- Obsidian Aspirant's Blade
-							i(205880),	-- Obsidian Aspirant's Dagger
-							i(205887),	-- Obsidian Aspirant's Gavel
-							i(205884),	-- Obsidian Aspirant's Greatsword
-							i(205892),	-- Obsidian Aspirant's Hammer
-							i(205893),	-- Obsidian Aspirant's Knife
-							i(205891),	-- Obsidian Aspirant's Longspear
-							i(205881),	-- Obsidian Aspirant's Mace
-							i(205882),	-- Obsidian Aspirant's Polearm
-							i(205895),	-- Obsidian Aspirant's Pulverizer
-							i(205890),	-- Obsidian Aspirant's Recurve
-							i(205889),	-- Obsidian Aspirant's Ripper
-							i(205888),	-- Obsidian Aspirant's Shield
-							i(205883),	-- Obsidian Aspirant's Staff
-							i(205894),	-- Obsidian Aspirant's Sword
-							i(205885),	-- Obsidian Aspirant's Torch
-							i(205886),	-- Obsidian Aspirant's Warglaive
-						}),
-					},
+				m(VALDRAKKEN, {
+					n(199601, {	-- Seltherex
+						["coord"] = { 44.7, 37.0, VALDRAKKEN },
+						["g"] = {
+							filter(CLOAKS, {
+								i(205791),	-- Obsidian Aspirant's Cape
+								i(205789),	-- Obsidian Aspirant's Cloak
+								i(205790),	-- Obsidian Aspirant's Drape
+								i(205792),	-- Obsidian Aspirant's Greatcloak
+							}),
+							filter(CLOTH, {
+								i(205771),	-- Obsidian Aspirant's Silk Belt
+								i(205774),	-- Obsidian Aspirant's Silk Bindings
+								i(205739),	-- Obsidian Aspirant's Silk Cord
+								i(205759),	-- Obsidian Aspirant's Silk Cover
+								i(205752),	-- Obsidian Aspirant's Silk Footwraps
+								i(205725),	-- Obsidian Aspirant's Silk Gloves
+								i(205757),	-- Obsidian Aspirant's Silk Handwraps
+								i(205727),	-- Obsidian Aspirant's Silk Hood
+								i(205731),	-- Obsidian Aspirant's Silk Leggings
+								i(205763),	-- Obsidian Aspirant's Silk Legwraps
+								i(205736),	-- Obsidian Aspirant's Silk Mantle
+								i(205715),	-- Obsidian Aspirant's Silk Robe
+								i(205768),	-- Obsidian Aspirant's Silk Shawl
+								i(205720),	-- Obsidian Aspirant's Silk Treads
+								i(205747),	-- Obsidian Aspirant's Silk Vestments
+								i(205742),	-- Obsidian Aspirant's Silk Wristwraps
+							}),
+							filter(FINGER_F, {
+								i(205784),	-- Obsidian Aspirant's Band
+								i(205783),	-- Obsidian Aspirant's Ring
+								i(205785),	-- Obsidian Aspirant's Signet
+							}),
+							filter(LEATHER, {
+								i(205777),	-- Obsidian Aspirant's Leather Armguards
+								i(205741),	-- Obsidian Aspirant's Leather Belt
+								i(205722),	-- Obsidian Aspirant's Leather Boots
+								i(205733),	-- Obsidian Aspirant's Leather Breeches
+								i(205773),	-- Obsidian Aspirant's Leather Cord
+								i(205754),	-- Obsidian Aspirant's Leather Footpads
+								i(205723),	-- Obsidian Aspirant's Leather Gloves
+								i(205755),	-- Obsidian Aspirant's Leather Grips
+								i(205729),	-- Obsidian Aspirant's Leather Helm
+								i(205765),	-- Obsidian Aspirant's Leather Leggings
+								i(205766),	-- Obsidian Aspirant's Leather Mantle
+								i(205761),	-- Obsidian Aspirant's Leather Mask
+								i(205734),	-- Obsidian Aspirant's Leather Spaulders
+								i(205750),	-- Obsidian Aspirant's Leather Tunic
+								i(205718),	-- Obsidian Aspirant's Leather Vest
+								i(205745),	-- Obsidian Aspirant's Leather Wristwraps
+							}),
+							filter(MAIL, {
+								i(205740),	-- Obsidian Aspirant's Chain Belt
+								i(205776),	-- Obsidian Aspirant's Chain Bracer
+								i(205772),	-- Obsidian Aspirant's Chain Clasp
+								i(205726),	-- Obsidian Aspirant's Chain Gauntlets
+								i(205758),	-- Obsidian Aspirant's Chain Handguards
+								i(205760),	-- Obsidian Aspirant's Chain Headguard
+								i(205728),	-- Obsidian Aspirant's Chain Helm
+								i(205732),	-- Obsidian Aspirant's Chain Leggings
+								i(205721),	-- Obsidian Aspirant's Chain Sabatons
+								i(205769),	-- Obsidian Aspirant's Chain Shoulderguards
+								i(205737),	-- Obsidian Aspirant's Chain Spaulders
+								i(205753),	-- Obsidian Aspirant's Chain Stompers
+								i(205749),	-- Obsidian Aspirant's Chain Tunic
+								i(205717),	-- Obsidian Aspirant's Chain Vest
+								i(205764),	-- Obsidian Aspirant's Chain Wargreaves
+								i(205744),	-- Obsidian Aspirant's Chain Wristwraps
+							}),
+							filter(NECK_F, {
+								i(205787),	-- Obsidian Aspirant's Choker
+								i(205786),	-- Obsidian Aspirant's Necklace
+								i(205788),	-- Obsidian Aspirant's Pendant
+							}),
+							filter(PLATE, {
+								i(205775),	-- Obsidian Aspirant's Plate Armguards
+								i(205748),	-- Obsidian Aspirant's Plate Armor
+								i(205716),	-- Obsidian Aspirant's Plate Chestplate
+								i(205743),	-- Obsidian Aspirant's Plate Cuffs
+								i(205724),	-- Obsidian Aspirant's Plate Gauntlets
+								i(205738),	-- Obsidian Aspirant's Plate Girdle
+								i(205770),	-- Obsidian Aspirant's Plate Greatbelt
+								i(205756),	-- Obsidian Aspirant's Plate Handguards
+								i(205746),	-- Obsidian Aspirant's Plate Headguard
+								i(205714),	-- Obsidian Aspirant's Plate Helm
+								i(205730),	-- Obsidian Aspirant's Plate Legguards
+								i(205767),	-- Obsidian Aspirant's Plate Pauldrons
+								i(205735),	-- Obsidian Aspirant's Plate Shoulders
+								i(205751),	-- Obsidian Aspirant's Plate Stompers
+								i(205719),	-- Obsidian Aspirant's Plate Warboots
+								i(205762),	-- Obsidian Aspirant's Plate Wargreaves
+							}),
+							filter(TRINKET_F, {
+								i(205778),	-- Obsidian Aspirant's Badge of Ferocity
+								i(205781),	-- Obsidian Aspirant's Emblem
+								i(205780),	-- Obsidian Aspirant's Insignia of Alacrity
+								i(205779),	-- Obsidian Aspirant's Medallion
+								i(205782),	-- Obsidian Aspirant's Sigil of Adaptation
+							}),
+							n(WEAPONS, {
+								i(205879),	-- Obsidian Aspirant's Battleaxe
+								i(205896),	-- Obsidian Aspirant's Blade
+								i(205880),	-- Obsidian Aspirant's Dagger
+								i(205887),	-- Obsidian Aspirant's Gavel
+								i(205884),	-- Obsidian Aspirant's Greatsword
+								i(205892),	-- Obsidian Aspirant's Hammer
+								i(205893),	-- Obsidian Aspirant's Knife
+								i(205891),	-- Obsidian Aspirant's Longspear
+								i(205881),	-- Obsidian Aspirant's Mace
+								i(205882),	-- Obsidian Aspirant's Polearm
+								i(205895),	-- Obsidian Aspirant's Pulverizer
+								i(205890),	-- Obsidian Aspirant's Recurve
+								i(205889),	-- Obsidian Aspirant's Ripper
+								i(205888),	-- Obsidian Aspirant's Shield
+								i(205883),	-- Obsidian Aspirant's Staff
+								i(205894),	-- Obsidian Aspirant's Sword
+								i(205885),	-- Obsidian Aspirant's Torch
+								i(205886),	-- Obsidian Aspirant's Warglaive
+							}),
+						},
+					}),
 				}),
 			})),
 			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-				n(199599, {	-- Calderax
-					["coord"] = { 44.3, 36.6, VALDRAKKEN },
-					["g"] = {
-						n(CLASSES, {
-							cl(DEATHKNIGHT, {
-								i(205673, {	-- Obsidian Gladiator's Cloak
+				m(VALDRAKKEN, {
+					n(199599, {	-- Calderax
+						["coord"] = { 44.3, 36.6, VALDRAKKEN },
+						["g"] = {
+							n(CLASSES, {
+								cl(DEATHKNIGHT, {
+									i(205673, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205674, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205675, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205473, {	-- Obsidian Gladiator's Plate Chestguard
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205474, {	-- Obsidian Gladiator's Plate Chestplate
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205477, {	-- Obsidian Gladiator's Plate Gauntlets
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205485, {	-- Obsidian Gladiator's Plate Girdle
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205486, {	-- Obsidian Gladiator's Plate Greatbelt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205478, {	-- Obsidian Gladiator's Plate Handguards
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205479, {	-- Obsidian Gladiator's Plate Helm
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205480, {	-- Obsidian Gladiator's Plate Helmet
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205481, {	-- Obsidian Gladiator's Plate Legguards
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205484, {	-- Obsidian Gladiator's Plate Pauldrons
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205483, {	-- Obsidian Gladiator's Plate Shoulders
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205476, {	-- Obsidian Gladiator's Plate Stompers
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205488, {	-- Obsidian Gladiator's Plate Vambraces
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205475, {	-- Obsidian Gladiator's Plate Warboots
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205482, {	-- Obsidian Gladiator's Plate Wargreaves
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205487, {	-- Obsidian Gladiator's Plate Wristguards
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(DEMONHUNTER, {
+									i(205655, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205656, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205657, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205533, {	-- Obsidian Gladiator's Leather Belt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205523, {	-- Obsidian Gladiator's Leather Boots
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205529, {	-- Obsidian Gladiator's Leather Breeches
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205525, {	-- Obsidian Gladiator's Leather Gloves
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205526, {	-- Obsidian Gladiator's Leather Grips
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205527, {	-- Obsidian Gladiator's Leather Helm
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205522, {	-- Obsidian Gladiator's Leather Jerkin
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205530, {	-- Obsidian Gladiator's Leather Legwraps
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205528, {	-- Obsidian Gladiator's Leather Mask
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205532, {	-- Obsidian Gladiator's Leather Shoulderpads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205531, {	-- Obsidian Gladiator's Leather Spaulders
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205534, {	-- Obsidian Gladiator's Leather Strap
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205524, {	-- Obsidian Gladiator's Leather Treads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205521, {	-- Obsidian Gladiator's Leather Vest
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205536, {	-- Obsidian Gladiator's Leather Wristguards
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205535, {	-- Obsidian Gladiator's Leather Wristwraps
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(DRUID, {
+									i(205658, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205659, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205660, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205549, {	-- Obsidian Gladiator's Leather Belt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205539, {	-- Obsidian Gladiator's Leather Boots
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205545, {	-- Obsidian Gladiator's Leather Breeches
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205541, {	-- Obsidian Gladiator's Leather Gloves
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205542, {	-- Obsidian Gladiator's Leather Grips
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205543, {	-- Obsidian Gladiator's Leather Helm
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205538, {	-- Obsidian Gladiator's Leather Jerkin
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205546, {	-- Obsidian Gladiator's Leather Legwraps
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205544, {	-- Obsidian Gladiator's Leather Mask
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205548, {	-- Obsidian Gladiator's Leather Shoulderpads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205547, {	-- Obsidian Gladiator's Leather Spaulders
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205550, {	-- Obsidian Gladiator's Leather Strap
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205540, {	-- Obsidian Gladiator's Leather Treads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205537, {	-- Obsidian Gladiator's Leather Vest
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205552, {	-- Obsidian Gladiator's Leather Wristguards
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205551, {	-- Obsidian Gladiator's Leather Wristwraps
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(EVOKER, {
+									i(205407, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205408, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205409, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205403, {	-- Obsidian Gladiator's Chain Belt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205394, {	-- Obsidian Gladiator's Chain Boots
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205406, {	-- Obsidian Gladiator's Chain Bracers
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205400, {	-- Obsidian Gladiator's Chain Breeches
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205398, {	-- Obsidian Gladiator's Chain Faceguard
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205395, {	-- Obsidian Gladiator's Chain Gauntlets
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205404, {	-- Obsidian Gladiator's Chain Girdle
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205396, {	-- Obsidian Gladiator's Chain Handguards
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205397, {	-- Obsidian Gladiator's Chain Helm
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205399, {	-- Obsidian Gladiator's Chain Leggings
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205401, {	-- Obsidian Gladiator's Chain Monnion
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205393, {	-- Obsidian Gladiator's Chain Sabatons
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205402, {	-- Obsidian Gladiator's Chain Shoulderguard
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205392, {	-- Obsidian Gladiator's Chain Tunic
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205391, {	-- Obsidian Gladiator's Chain Vest
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205405, {	-- Obsidian Gladiator's Chain Wristguards
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(HUNTER, {
+									i(205667, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205668, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205669, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205597, {	-- Obsidian Gladiator's Chain Belt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205588, {	-- Obsidian Gladiator's Chain Boots
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205600, {	-- Obsidian Gladiator's Chain Bracers
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205594, {	-- Obsidian Gladiator's Chain Breeches
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205592, {	-- Obsidian Gladiator's Chain Faceguard
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205589, {	-- Obsidian Gladiator's Chain Gauntlets
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205598, {	-- Obsidian Gladiator's Chain Girdle
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205590, {	-- Obsidian Gladiator's Chain Handguards
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205591, {	-- Obsidian Gladiator's Chain Helm
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205593, {	-- Obsidian Gladiator's Chain Leggings
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205595, {	-- Obsidian Gladiator's Chain Monnion
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205587, {	-- Obsidian Gladiator's Chain Sabatons
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205596, {	-- Obsidian Gladiator's Chain Shoulderguard
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205586, {	-- Obsidian Gladiator's Chain Tunic
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205585, {	-- Obsidian Gladiator's Chain Vest
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205599, {	-- Obsidian Gladiator's Chain Wristguards
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(MAGE, {
+									i(205446, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205447, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205448, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205386, {	-- Obsidian Gladiator's Silk Amice
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205390, {	-- Obsidian Gladiator's Silk Armbands
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205388, {	-- Obsidian Gladiator's Silk Belt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205376, {	-- Obsidian Gladiator's Silk Blouse
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205387, {	-- Obsidian Gladiator's Silk Cord
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205379, {	-- Obsidian Gladiator's Silk Gloves
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205382, {	-- Obsidian Gladiator's Silk Guise
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205380, {	-- Obsidian Gladiator's Silk Handwraps
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205381, {	-- Obsidian Gladiator's Silk Hood
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205383, {	-- Obsidian Gladiator's Silk Leggings
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205385, {	-- Obsidian Gladiator's Silk Mantle
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205377, {	-- Obsidian Gladiator's Silk Slippers
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205378, {	-- Obsidian Gladiator's Silk Treads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205384, {	-- Obsidian Gladiator's Silk Trousers
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205375, {	-- Obsidian Gladiator's Silk Tunic
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205389, {	-- Obsidian Gladiator's Silk Wristwraps
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(MONK, {
+									i(205661, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205662, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205663, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205565, {	-- Obsidian Gladiator's Leather Belt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205555, {	-- Obsidian Gladiator's Leather Boots
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205561, {	-- Obsidian Gladiator's Leather Breeches
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205557, {	-- Obsidian Gladiator's Leather Gloves
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205558, {	-- Obsidian Gladiator's Leather Grips
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205559, {	-- Obsidian Gladiator's Leather Helm
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205554, {	-- Obsidian Gladiator's Leather Jerkin
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205562, {	-- Obsidian Gladiator's Leather Legwraps
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205560, {	-- Obsidian Gladiator's Leather Mask
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205564, {	-- Obsidian Gladiator's Leather Shoulderpads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205563, {	-- Obsidian Gladiator's Leather Spaulders
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205566, {	-- Obsidian Gladiator's Leather Strap
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205556, {	-- Obsidian Gladiator's Leather Treads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205553, {	-- Obsidian Gladiator's Leather Vest
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205568, {	-- Obsidian Gladiator's Leather Wristguards
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205567, {	-- Obsidian Gladiator's Leather Wristwraps
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(PALADIN, {
+									i(205676, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205677, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205678, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205616, {	-- Obsidian Gladiator's Plate Plastron
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205617, {	-- Obsidian Gladiator's Plate Chestplate
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205620, {	-- Obsidian Gladiator's Plate Gauntlets
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205628, {	-- Obsidian Gladiator's Plate Girdle
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205629, {	-- Obsidian Gladiator's Plate Greatbelt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205621, {	-- Obsidian Gladiator's Plate Handguards
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205622, {	-- Obsidian Gladiator's Plate Helm
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205623, {	-- Obsidian Gladiator's Plate Helmet
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205624, {	-- Obsidian Gladiator's Plate Legguards
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205627, {	-- Obsidian Gladiator's Plate Pauldrons
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205626, {	-- Obsidian Gladiator's Plate Shoulders
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205619, {	-- Obsidian Gladiator's Plate Stompers
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205631, {	-- Obsidian Gladiator's Plate Vambraces
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205618, {	-- Obsidian Gladiator's Plate Warboots
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205625, {	-- Obsidian Gladiator's Plate Tasses
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205630, {	-- Obsidian Gladiator's Plate Wristguards
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(PRIEST, {
+									i(205649, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205650, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205651, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205500, {	-- Obsidian Gladiator's Silk Amice
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205504, {	-- Obsidian Gladiator's Silk Armbands
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205502, {	-- Obsidian Gladiator's Silk Belt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205490, {	-- Obsidian Gladiator's Silk Blouse
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205501, {	-- Obsidian Gladiator's Silk Cord
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205493, {	-- Obsidian Gladiator's Silk Gloves
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205496, {	-- Obsidian Gladiator's Silk Guise
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205494, {	-- Obsidian Gladiator's Silk Handwraps
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205495, {	-- Obsidian Gladiator's Silk Hood
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205497, {	-- Obsidian Gladiator's Silk Leggings
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205499, {	-- Obsidian Gladiator's Silk Mantle
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205491, {	-- Obsidian Gladiator's Silk Slippers
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205492, {	-- Obsidian Gladiator's Silk Treads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205498, {	-- Obsidian Gladiator's Silk Trousers
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205489, {	-- Obsidian Gladiator's Silk Tunic
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205503, {	-- Obsidian Gladiator's Silk Wristwraps
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(ROGUE, {
+									i(205664, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205665, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205666, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205581, {	-- Obsidian Gladiator's Leather Belt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205571, {	-- Obsidian Gladiator's Leather Boots
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205577, {	-- Obsidian Gladiator's Leather Breeches
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205573, {	-- Obsidian Gladiator's Leather Gloves
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205574, {	-- Obsidian Gladiator's Leather Grips
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205575, {	-- Obsidian Gladiator's Leather Helm
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205570, {	-- Obsidian Gladiator's Leather Jerkin
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205578, {	-- Obsidian Gladiator's Leather Legwraps
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205576, {	-- Obsidian Gladiator's Leather Mask
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205580, {	-- Obsidian Gladiator's Leather Shoulderpads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205579, {	-- Obsidian Gladiator's Leather Spaulders
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205582, {	-- Obsidian Gladiator's Leather Strap
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205572, {	-- Obsidian Gladiator's Leather Treads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205569, {	-- Obsidian Gladiator's Leather Vest
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205584, {	-- Obsidian Gladiator's Leather Wristguards
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205583, {	-- Obsidian Gladiator's Leather Wristwraps
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(SHAMAN, {
+									i(205670, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205671, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205672, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205613, {	-- Obsidian Gladiator's Chain Belt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205604, {	-- Obsidian Gladiator's Chain Boots
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205648, {	-- Obsidian Gladiator's Chain Bracers
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205610, {	-- Obsidian Gladiator's Chain Breeches
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205608, {	-- Obsidian Gladiator's Chain Faceguard
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205605, {	-- Obsidian Gladiator's Chain Gauntlets
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205614, {	-- Obsidian Gladiator's Chain Girdle
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205606, {	-- Obsidian Gladiator's Chain Handguards
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205607, {	-- Obsidian Gladiator's Chain Helm
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205609, {	-- Obsidian Gladiator's Chain Leggings
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205611, {	-- Obsidian Gladiator's Chain Monnion
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205603, {	-- Obsidian Gladiator's Chain Sabatons
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205612, {	-- Obsidian Gladiator's Chain Shoulderguard
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205602, {	-- Obsidian Gladiator's Chain Tunic
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205601, {	-- Obsidian Gladiator's Chain Vest
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205615, {	-- Obsidian Gladiator's Chain Wristguards
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(WARLOCK, {
+									i(205652, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205653, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205654, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205516, {	-- Obsidian Gladiator's Silk Amice
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205520, {	-- Obsidian Gladiator's Silk Armbands
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205518, {	-- Obsidian Gladiator's Silk Belt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205517, {	-- Obsidian Gladiator's Silk Cord
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205509, {	-- Obsidian Gladiator's Silk Gloves
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205512, {	-- Obsidian Gladiator's Silk Guise
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205510, {	-- Obsidian Gladiator's Silk Handwraps
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205511, {	-- Obsidian Gladiator's Silk Hood
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205513, {	-- Obsidian Gladiator's Silk Leggings
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205515, {	-- Obsidian Gladiator's Silk Mantle
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205505, {	-- Obsidian Gladiator's Silk Robe
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205507, {	-- Obsidian Gladiator's Silk Slippers
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205508, {	-- Obsidian Gladiator's Silk Treads
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205514, {	-- Obsidian Gladiator's Silk Trousers
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205506, {	-- Obsidian Gladiator's Silk Vestments
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205519, {	-- Obsidian Gladiator's Silk Wristwraps
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+								cl(WARRIOR, {
+									i(205679, {	-- Obsidian Gladiator's Cloak
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205680, {	-- Obsidian Gladiator's Drape
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205681, {	-- Obsidian Gladiator's Shawl
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205632, {	-- Obsidian Gladiator's Plate Chestguard
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205633, {	-- Obsidian Gladiator's Plate Chestplate
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205636, {	-- Obsidian Gladiator's Plate Gauntlets
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205644, {	-- Obsidian Gladiator's Plate Girdle
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205645, {	-- Obsidian Gladiator's Plate Greatbelt
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205637, {	-- Obsidian Gladiator's Plate Handguards
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205638, {	-- Obsidian Gladiator's Plate Helm
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205639, {	-- Obsidian Gladiator's Plate Helmet
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205640, {	-- Obsidian Gladiator's Plate Legguards
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205643, {	-- Obsidian Gladiator's Plate Pauldrons
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205642, {	-- Obsidian Gladiator's Plate Shoulders
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205635, {	-- Obsidian Gladiator's Plate Stompers
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205647, {	-- Obsidian Gladiator's Plate Vambraces
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+									i(205634, {	-- Obsidian Gladiator's Plate Warboots
+										["cost"] = { { "c", CONQUEST, 700 } },
+									}),
+									i(205641, {	-- Obsidian Gladiator's Plate Wargreaves
+										["cost"] = { { "c", CONQUEST, 875 } },
+									}),
+									i(205646, {	-- Obsidian Gladiator's Plate Wristguards
+										["cost"] = { { "c", CONQUEST, 525 } },
+									}),
+								}),
+							}),
+							filter(FINGER_F, {
+								i(205703, {	-- Obsidian Gladiator's Band
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(205674, {	-- Obsidian Gladiator's Drape
+								i(205702, {	-- Obsidian Gladiator's Ring
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(205675, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205473, {	-- Obsidian Gladiator's Plate Chestguard
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205474, {	-- Obsidian Gladiator's Plate Chestplate
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205477, {	-- Obsidian Gladiator's Plate Gauntlets
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205485, {	-- Obsidian Gladiator's Plate Girdle
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205486, {	-- Obsidian Gladiator's Plate Greatbelt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205478, {	-- Obsidian Gladiator's Plate Handguards
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205479, {	-- Obsidian Gladiator's Plate Helm
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205480, {	-- Obsidian Gladiator's Plate Helmet
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205481, {	-- Obsidian Gladiator's Plate Legguards
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205484, {	-- Obsidian Gladiator's Plate Pauldrons
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205483, {	-- Obsidian Gladiator's Plate Shoulders
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205476, {	-- Obsidian Gladiator's Plate Stompers
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205488, {	-- Obsidian Gladiator's Plate Vambraces
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205475, {	-- Obsidian Gladiator's Plate Warboots
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205482, {	-- Obsidian Gladiator's Plate Wargreaves
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205487, {	-- Obsidian Gladiator's Plate Wristguards
+								i(205704, {	-- Obsidian Gladiator's Signet
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
-							cl(DEMONHUNTER, {
-								i(205655, {	-- Obsidian Gladiator's Cloak
+							filter(NECK_F, {
+								i(205707, {	-- Obsidian Gladiator's Amulet
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(205656, {	-- Obsidian Gladiator's Drape
+								i(205705, {	-- Obsidian Gladiator's Necklace
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(205657, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205533, {	-- Obsidian Gladiator's Leather Belt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205523, {	-- Obsidian Gladiator's Leather Boots
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205529, {	-- Obsidian Gladiator's Leather Breeches
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205525, {	-- Obsidian Gladiator's Leather Gloves
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205526, {	-- Obsidian Gladiator's Leather Grips
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205527, {	-- Obsidian Gladiator's Leather Helm
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205522, {	-- Obsidian Gladiator's Leather Jerkin
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205530, {	-- Obsidian Gladiator's Leather Legwraps
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205528, {	-- Obsidian Gladiator's Leather Mask
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205532, {	-- Obsidian Gladiator's Leather Shoulderpads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205531, {	-- Obsidian Gladiator's Leather Spaulders
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205534, {	-- Obsidian Gladiator's Leather Strap
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205524, {	-- Obsidian Gladiator's Leather Treads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205521, {	-- Obsidian Gladiator's Leather Vest
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205536, {	-- Obsidian Gladiator's Leather Wristguards
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205535, {	-- Obsidian Gladiator's Leather Wristwraps
+								i(205706, {	-- Obsidian Gladiator's Pendant
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
-							cl(DRUID, {
-								i(205658, {	-- Obsidian Gladiator's Cloak
+							filter(TRINKET_F, {
+								i(205708, {	-- Obsidian Gladiator's Badge of Ferocity
+									["cost"] = { { "c", CONQUEST, 700 } },
+								}),
+								i(205710, {	-- Obsidian Gladiator's Emblem
+									["cost"] = { { "c", CONQUEST, 700 } },
+								}),
+								i(205709, {	-- Obsidian Gladiator's Insignia of Alacrity
+									["cost"] = { { "c", CONQUEST, 700 } },
+								}),
+								i(205711, {	-- Obsidian Gladiator's Medallion
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(205659, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205660, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205549, {	-- Obsidian Gladiator's Leather Belt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205539, {	-- Obsidian Gladiator's Leather Boots
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205545, {	-- Obsidian Gladiator's Leather Breeches
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205541, {	-- Obsidian Gladiator's Leather Gloves
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205542, {	-- Obsidian Gladiator's Leather Grips
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205543, {	-- Obsidian Gladiator's Leather Helm
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205538, {	-- Obsidian Gladiator's Leather Jerkin
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205546, {	-- Obsidian Gladiator's Leather Legwraps
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205544, {	-- Obsidian Gladiator's Leather Mask
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205548, {	-- Obsidian Gladiator's Leather Shoulderpads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205547, {	-- Obsidian Gladiator's Leather Spaulders
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205550, {	-- Obsidian Gladiator's Leather Strap
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205540, {	-- Obsidian Gladiator's Leather Treads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205537, {	-- Obsidian Gladiator's Leather Vest
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205552, {	-- Obsidian Gladiator's Leather Wristguards
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205551, {	-- Obsidian Gladiator's Leather Wristwraps
+								i(205712, {	-- Obsidian Gladiator's Sigil of Adaptation
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
-							cl(EVOKER, {
-								i(205407, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
+							n(WEAPONS, {
+								i(205924, {	-- Obsidian Gladiator's Axe
+									["cost"] = { { "c", CONQUEST, 900 } },
 								}),
-								i(205408, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
+								i(205915, {	-- Obsidian Gladiator's Dagger
+									["cost"] = { { "c", CONQUEST, 900 } },
 								}),
-								i(205409, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
+								--[[
+								i(201979, {	-- Obsidian Gladiator's Gavel
+									["cost"] = { { "c", CONQUEST, 1350 } },
 								}),
-								i(205403, {	-- Obsidian Gladiator's Chain Belt
-									["cost"] = { { "c", CONQUEST, 700 } },
+								i(201978, {	-- Obsidian Gladiator's Greatsword
+									["cost"] = { { "c", CONQUEST, 1800 } },
 								}),
-								i(205394, {	-- Obsidian Gladiator's Chain Boots
-									["cost"] = { { "c", CONQUEST, 700 } },
+								i(201977, {	-- Obsidian Gladiator's Hand Cannon
+									["cost"] = { { "c", CONQUEST, 1800 } },
 								}),
-								i(205406, {	-- Obsidian Gladiator's Chain Bracers
-									["cost"] = { { "c", CONQUEST, 525 } },
+								i(201980, {	-- Obsidian Gladiator's Horn
+									["cost"] = { { "c", CONQUEST, 450 } },
 								}),
-								i(205400, {	-- Obsidian Gladiator's Chain Breeches
-									["cost"] = { { "c", CONQUEST, 875 } },
+								--]]
+								i(205925, {	-- Obsidian Gladiator's Knife
+									["cost"] = { { "c", CONQUEST, 1350 } },
 								}),
-								i(205398, {	-- Obsidian Gladiator's Chain Faceguard
-									["cost"] = { { "c", CONQUEST, 875 } },
+								i(205926, {	-- Obsidian Gladiator's Mace
+									["cost"] = { { "c", CONQUEST, 900 } },
 								}),
-								i(205395, {	-- Obsidian Gladiator's Chain Gauntlets
-									["cost"] = { { "c", CONQUEST, 700 } },
+								i(205927, {	-- Obsidian Gladiator's Polearm
+									["cost"] = { { "c", CONQUEST, 1800 } },
 								}),
-								i(205404, {	-- Obsidian Gladiator's Chain Girdle
-									["cost"] = { { "c", CONQUEST, 700 } },
+								i(205923, {	-- Obsidian Gladiator's Shield
+									["cost"] = { { "c", CONQUEST, 450 } },
 								}),
-								i(205396, {	-- Obsidian Gladiator's Chain Handguards
-									["cost"] = { { "c", CONQUEST, 700 } },
+								i(205917, {	-- Obsidian Gladiator's Spear
+									["cost"] = { { "c", CONQUEST, 1800 } },
 								}),
-								i(205397, {	-- Obsidian Gladiator's Chain Helm
-									["cost"] = { { "c", CONQUEST, 875 } },
+								i(205914, {	-- Obsidian Gladiator's Splitter
+									["cost"] = { { "c", CONQUEST, 900 } },
 								}),
-								i(205399, {	-- Obsidian Gladiator's Chain Leggings
-									["cost"] = { { "c", CONQUEST, 875 } },
+								i(205918, {	-- Obsidian Gladiator's Staff
+									["cost"] = { { "c", CONQUEST, 1800 } },
 								}),
-								i(205401, {	-- Obsidian Gladiator's Chain Monnion
-									["cost"] = { { "c", CONQUEST, 700 } },
+								i(205916, {	-- Obsidian Gladiator's Warglaive
+									["cost"] = { { "c", CONQUEST, 900 } },
 								}),
-								i(205393, {	-- Obsidian Gladiator's Chain Sabatons
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205402, {	-- Obsidian Gladiator's Chain Shoulderguard
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205392, {	-- Obsidian Gladiator's Chain Tunic
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205391, {	-- Obsidian Gladiator's Chain Vest
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205405, {	-- Obsidian Gladiator's Chain Wristguards
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
+								i(205919),	-- Obsidian Gladiator's Rifle
+								i(205921),	-- Obsidian Gladiator's Scepter
+								i(205922),	-- Obsidian Gladiator's Rod
+								i(205928),	-- Obsidian Gladiator's Claws
+								i(205929),	-- Obsidian Gladiator's Bow
+								i(205930),	-- Obsidian Gladiator's Talons
 							}),
-							cl(HUNTER, {
-								i(205667, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205668, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205669, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205597, {	-- Obsidian Gladiator's Chain Belt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205588, {	-- Obsidian Gladiator's Chain Boots
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205600, {	-- Obsidian Gladiator's Chain Bracers
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205594, {	-- Obsidian Gladiator's Chain Breeches
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205592, {	-- Obsidian Gladiator's Chain Faceguard
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205589, {	-- Obsidian Gladiator's Chain Gauntlets
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205598, {	-- Obsidian Gladiator's Chain Girdle
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205590, {	-- Obsidian Gladiator's Chain Handguards
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205591, {	-- Obsidian Gladiator's Chain Helm
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205593, {	-- Obsidian Gladiator's Chain Leggings
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205595, {	-- Obsidian Gladiator's Chain Monnion
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205587, {	-- Obsidian Gladiator's Chain Sabatons
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205596, {	-- Obsidian Gladiator's Chain Shoulderguard
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205586, {	-- Obsidian Gladiator's Chain Tunic
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205585, {	-- Obsidian Gladiator's Chain Vest
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205599, {	-- Obsidian Gladiator's Chain Wristguards
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-							}),
-							cl(MAGE, {
-								i(205446, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205447, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205448, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205386, {	-- Obsidian Gladiator's Silk Amice
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205390, {	-- Obsidian Gladiator's Silk Armbands
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205388, {	-- Obsidian Gladiator's Silk Belt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205376, {	-- Obsidian Gladiator's Silk Blouse
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205387, {	-- Obsidian Gladiator's Silk Cord
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205379, {	-- Obsidian Gladiator's Silk Gloves
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205382, {	-- Obsidian Gladiator's Silk Guise
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205380, {	-- Obsidian Gladiator's Silk Handwraps
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205381, {	-- Obsidian Gladiator's Silk Hood
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205383, {	-- Obsidian Gladiator's Silk Leggings
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205385, {	-- Obsidian Gladiator's Silk Mantle
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205377, {	-- Obsidian Gladiator's Silk Slippers
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205378, {	-- Obsidian Gladiator's Silk Treads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205384, {	-- Obsidian Gladiator's Silk Trousers
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205375, {	-- Obsidian Gladiator's Silk Tunic
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205389, {	-- Obsidian Gladiator's Silk Wristwraps
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-							}),
-							cl(MONK, {
-								i(205661, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205662, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205663, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205565, {	-- Obsidian Gladiator's Leather Belt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205555, {	-- Obsidian Gladiator's Leather Boots
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205561, {	-- Obsidian Gladiator's Leather Breeches
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205557, {	-- Obsidian Gladiator's Leather Gloves
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205558, {	-- Obsidian Gladiator's Leather Grips
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205559, {	-- Obsidian Gladiator's Leather Helm
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205554, {	-- Obsidian Gladiator's Leather Jerkin
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205562, {	-- Obsidian Gladiator's Leather Legwraps
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205560, {	-- Obsidian Gladiator's Leather Mask
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205564, {	-- Obsidian Gladiator's Leather Shoulderpads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205563, {	-- Obsidian Gladiator's Leather Spaulders
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205566, {	-- Obsidian Gladiator's Leather Strap
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205556, {	-- Obsidian Gladiator's Leather Treads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205553, {	-- Obsidian Gladiator's Leather Vest
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205568, {	-- Obsidian Gladiator's Leather Wristguards
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205567, {	-- Obsidian Gladiator's Leather Wristwraps
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-							}),
-							cl(PALADIN, {
-								i(205676, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205677, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205678, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205616, {	-- Obsidian Gladiator's Plate Plastron
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205617, {	-- Obsidian Gladiator's Plate Chestplate
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205620, {	-- Obsidian Gladiator's Plate Gauntlets
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205628, {	-- Obsidian Gladiator's Plate Girdle
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205629, {	-- Obsidian Gladiator's Plate Greatbelt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205621, {	-- Obsidian Gladiator's Plate Handguards
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205622, {	-- Obsidian Gladiator's Plate Helm
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205623, {	-- Obsidian Gladiator's Plate Helmet
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205624, {	-- Obsidian Gladiator's Plate Legguards
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205627, {	-- Obsidian Gladiator's Plate Pauldrons
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205626, {	-- Obsidian Gladiator's Plate Shoulders
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205619, {	-- Obsidian Gladiator's Plate Stompers
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205631, {	-- Obsidian Gladiator's Plate Vambraces
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205618, {	-- Obsidian Gladiator's Plate Warboots
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205625, {	-- Obsidian Gladiator's Plate Tasses
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205630, {	-- Obsidian Gladiator's Plate Wristguards
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-							}),
-							cl(PRIEST, {
-								i(205649, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205650, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205651, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205500, {	-- Obsidian Gladiator's Silk Amice
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205504, {	-- Obsidian Gladiator's Silk Armbands
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205502, {	-- Obsidian Gladiator's Silk Belt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205490, {	-- Obsidian Gladiator's Silk Blouse
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205501, {	-- Obsidian Gladiator's Silk Cord
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205493, {	-- Obsidian Gladiator's Silk Gloves
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205496, {	-- Obsidian Gladiator's Silk Guise
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205494, {	-- Obsidian Gladiator's Silk Handwraps
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205495, {	-- Obsidian Gladiator's Silk Hood
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205497, {	-- Obsidian Gladiator's Silk Leggings
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205499, {	-- Obsidian Gladiator's Silk Mantle
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205491, {	-- Obsidian Gladiator's Silk Slippers
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205492, {	-- Obsidian Gladiator's Silk Treads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205498, {	-- Obsidian Gladiator's Silk Trousers
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205489, {	-- Obsidian Gladiator's Silk Tunic
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205503, {	-- Obsidian Gladiator's Silk Wristwraps
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-							}),
-							cl(ROGUE, {
-								i(205664, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205665, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205666, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205581, {	-- Obsidian Gladiator's Leather Belt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205571, {	-- Obsidian Gladiator's Leather Boots
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205577, {	-- Obsidian Gladiator's Leather Breeches
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205573, {	-- Obsidian Gladiator's Leather Gloves
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205574, {	-- Obsidian Gladiator's Leather Grips
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205575, {	-- Obsidian Gladiator's Leather Helm
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205570, {	-- Obsidian Gladiator's Leather Jerkin
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205578, {	-- Obsidian Gladiator's Leather Legwraps
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205576, {	-- Obsidian Gladiator's Leather Mask
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205580, {	-- Obsidian Gladiator's Leather Shoulderpads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205579, {	-- Obsidian Gladiator's Leather Spaulders
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205582, {	-- Obsidian Gladiator's Leather Strap
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205572, {	-- Obsidian Gladiator's Leather Treads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205569, {	-- Obsidian Gladiator's Leather Vest
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205584, {	-- Obsidian Gladiator's Leather Wristguards
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205583, {	-- Obsidian Gladiator's Leather Wristwraps
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-							}),
-							cl(SHAMAN, {
-								i(205670, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205671, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205672, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205613, {	-- Obsidian Gladiator's Chain Belt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205604, {	-- Obsidian Gladiator's Chain Boots
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205648, {	-- Obsidian Gladiator's Chain Bracers
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205610, {	-- Obsidian Gladiator's Chain Breeches
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205608, {	-- Obsidian Gladiator's Chain Faceguard
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205605, {	-- Obsidian Gladiator's Chain Gauntlets
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205614, {	-- Obsidian Gladiator's Chain Girdle
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205606, {	-- Obsidian Gladiator's Chain Handguards
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205607, {	-- Obsidian Gladiator's Chain Helm
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205609, {	-- Obsidian Gladiator's Chain Leggings
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205611, {	-- Obsidian Gladiator's Chain Monnion
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205603, {	-- Obsidian Gladiator's Chain Sabatons
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205612, {	-- Obsidian Gladiator's Chain Shoulderguard
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205602, {	-- Obsidian Gladiator's Chain Tunic
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205601, {	-- Obsidian Gladiator's Chain Vest
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205615, {	-- Obsidian Gladiator's Chain Wristguards
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-							}),
-							cl(WARLOCK, {
-								i(205652, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205653, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205654, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205516, {	-- Obsidian Gladiator's Silk Amice
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205520, {	-- Obsidian Gladiator's Silk Armbands
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205518, {	-- Obsidian Gladiator's Silk Belt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205517, {	-- Obsidian Gladiator's Silk Cord
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205509, {	-- Obsidian Gladiator's Silk Gloves
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205512, {	-- Obsidian Gladiator's Silk Guise
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205510, {	-- Obsidian Gladiator's Silk Handwraps
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205511, {	-- Obsidian Gladiator's Silk Hood
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205513, {	-- Obsidian Gladiator's Silk Leggings
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205515, {	-- Obsidian Gladiator's Silk Mantle
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205505, {	-- Obsidian Gladiator's Silk Robe
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205507, {	-- Obsidian Gladiator's Silk Slippers
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205508, {	-- Obsidian Gladiator's Silk Treads
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205514, {	-- Obsidian Gladiator's Silk Trousers
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205506, {	-- Obsidian Gladiator's Silk Vestments
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205519, {	-- Obsidian Gladiator's Silk Wristwraps
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-							}),
-							cl(WARRIOR, {
-								i(205679, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205680, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205681, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205632, {	-- Obsidian Gladiator's Plate Chestguard
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205633, {	-- Obsidian Gladiator's Plate Chestplate
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205636, {	-- Obsidian Gladiator's Plate Gauntlets
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205644, {	-- Obsidian Gladiator's Plate Girdle
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205645, {	-- Obsidian Gladiator's Plate Greatbelt
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205637, {	-- Obsidian Gladiator's Plate Handguards
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205638, {	-- Obsidian Gladiator's Plate Helm
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205639, {	-- Obsidian Gladiator's Plate Helmet
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205640, {	-- Obsidian Gladiator's Plate Legguards
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205643, {	-- Obsidian Gladiator's Plate Pauldrons
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205642, {	-- Obsidian Gladiator's Plate Shoulders
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205635, {	-- Obsidian Gladiator's Plate Stompers
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205647, {	-- Obsidian Gladiator's Plate Vambraces
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(205634, {	-- Obsidian Gladiator's Plate Warboots
-									["cost"] = { { "c", CONQUEST, 700 } },
-								}),
-								i(205641, {	-- Obsidian Gladiator's Plate Wargreaves
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(205646, {	-- Obsidian Gladiator's Plate Wristguards
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-							}),
-						}),
-						filter(FINGER_F, {
-							i(205703, {	-- Obsidian Gladiator's Band
-								["cost"] = { { "c", CONQUEST, 525 } },
-							}),
-							i(205702, {	-- Obsidian Gladiator's Ring
-								["cost"] = { { "c", CONQUEST, 525 } },
-							}),
-							i(205704, {	-- Obsidian Gladiator's Signet
-								["cost"] = { { "c", CONQUEST, 525 } },
-							}),
-						}),
-						filter(NECK_F, {
-							i(205707, {	-- Obsidian Gladiator's Amulet
-								["cost"] = { { "c", CONQUEST, 525 } },
-							}),
-							i(205705, {	-- Obsidian Gladiator's Necklace
-								["cost"] = { { "c", CONQUEST, 525 } },
-							}),
-							i(205706, {	-- Obsidian Gladiator's Pendant
-								["cost"] = { { "c", CONQUEST, 525 } },
-							}),
-						}),
-						filter(TRINKET_F, {
-							i(205708, {	-- Obsidian Gladiator's Badge of Ferocity
-								["cost"] = { { "c", CONQUEST, 700 } },
-							}),
-							i(205710, {	-- Obsidian Gladiator's Emblem
-								["cost"] = { { "c", CONQUEST, 700 } },
-							}),
-							i(205709, {	-- Obsidian Gladiator's Insignia of Alacrity
-								["cost"] = { { "c", CONQUEST, 700 } },
-							}),
-							i(205711, {	-- Obsidian Gladiator's Medallion
-								["cost"] = { { "c", CONQUEST, 525 } },
-							}),
-							i(205712, {	-- Obsidian Gladiator's Sigil of Adaptation
-								["cost"] = { { "c", CONQUEST, 525 } },
-							}),
-						}),
-						n(WEAPONS, {
-							i(205924, {	-- Obsidian Gladiator's Axe
-								["cost"] = { { "c", CONQUEST, 900 } },
-							}),
-							i(205915, {	-- Obsidian Gladiator's Dagger
-								["cost"] = { { "c", CONQUEST, 900 } },
-							}),
-							--[[
-							i(201979, {	-- Obsidian Gladiator's Gavel
-								["cost"] = { { "c", CONQUEST, 1350 } },
-							}),
-							i(201978, {	-- Obsidian Gladiator's Greatsword
-								["cost"] = { { "c", CONQUEST, 1800 } },
-							}),
-							i(201977, {	-- Obsidian Gladiator's Hand Cannon
-								["cost"] = { { "c", CONQUEST, 1800 } },
-							}),
-							i(201980, {	-- Obsidian Gladiator's Horn
-								["cost"] = { { "c", CONQUEST, 450 } },
-							}),
-							--]]
-							i(205925, {	-- Obsidian Gladiator's Knife
-								["cost"] = { { "c", CONQUEST, 1350 } },
-							}),
-							i(205926, {	-- Obsidian Gladiator's Mace
-								["cost"] = { { "c", CONQUEST, 900 } },
-							}),
-							i(205927, {	-- Obsidian Gladiator's Polearm
-								["cost"] = { { "c", CONQUEST, 1800 } },
-							}),
-							i(205923, {	-- Obsidian Gladiator's Shield
-								["cost"] = { { "c", CONQUEST, 450 } },
-							}),
-							i(205917, {	-- Obsidian Gladiator's Spear
-								["cost"] = { { "c", CONQUEST, 1800 } },
-							}),
-							i(205914, {	-- Obsidian Gladiator's Splitter
-								["cost"] = { { "c", CONQUEST, 900 } },
-							}),
-							i(205918, {	-- Obsidian Gladiator's Staff
-								["cost"] = { { "c", CONQUEST, 1800 } },
-							}),
-							i(205916, {	-- Obsidian Gladiator's Warglaive
-								["cost"] = { { "c", CONQUEST, 900 } },
-							}),
-							i(205919),	-- Obsidian Gladiator's Rifle
-							i(205921),	-- Obsidian Gladiator's Scepter
-							i(205922),	-- Obsidian Gladiator's Rod
-							i(205928),	-- Obsidian Gladiator's Claws
-							i(205929),	-- Obsidian Gladiator's Bow
-							i(205930),	-- Obsidian Gladiator's Talons
-						}),
-					},
+						},
+					}),
 				}),
 			})),
 			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }, ["bonusID"] = 7532 }, {
