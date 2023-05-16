@@ -7489,14 +7489,15 @@ function(fields, type)
 			key = tostring(key);
 		else
 			result = rawget(ObjectDefaults, key);
-			key = tostring(key).."_miss";
-		end
-		if result == nil then
-			-- object is a wrapper for another Type object?
-			local base = rawget(t, "__base");
-			if base then
-				result = base[key];
-				key = tostring(key).."__base";
+			if result == nil and not objFunc then
+				-- object is a wrapper for another Type object?
+				local base = rawget(t, "__base");
+				if base then
+					result = base[key];
+					key = tostring(key).."__base";
+				end
+			else
+				key = tostring(key).."_miss";
 			end
 		end
 		if typeData then
@@ -7695,8 +7696,9 @@ do
 
 local HeaderCloneFields = {
 	-- Fields in the wrapped object which should not persist when represented as a Header
-	["collectible"] = app.ReturnFalse,
-	["trackable"] = app.ReturnFalse,
+	["collectible"] = app.ReturnNil,
+	["trackable"] = app.ReturnNil,
+	["g"] = app.ReturnNil,
 	["customCollect"] = app.ReturnNil,
 	["requireSkill"] = app.ReturnNil,
 	["u"] = app.ReturnNil,
@@ -7705,9 +7707,9 @@ local HeaderCloneFields = {
 	["c"] = app.ReturnNil,
 	["nmc"] = app.ReturnNil,
 	["nmr"] = app.ReturnNil,
-	["back"] = function(t)
-		return 0.3;	-- visibility of which rows are cloned
-	end,
+	-- ["back"] = function(t)
+	-- 	return 0.3;	-- visibility of which rows are cloned
+	-- end,
 };
 local BaseHeaderClone = app.BaseObjectFields(HeaderCloneFields, "HeaderClone");
 -- Wraps a given object such that it can act as a non-filtered Header of the object
@@ -12110,10 +12112,7 @@ app.CacheHeirlooms = function()
 					local heirloomHeader;
 					for i=1,upgrades,1 do
 						-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
-						-- heirloomHeader = ClonedHeader(heirloom);
-						heirloomHeader = CreateObject(heirloom, true);
-						heirloomHeader.collectible = false;
-						heirloomHeader.trackable = false;
+						heirloomHeader = ClonedHeader(heirloom);
 						-- put the upgrade object into the header heirloom object
 						heirloomHeader.g = { CreateHeirloomLevel({
 							level = i,
@@ -17326,6 +17325,7 @@ RowOnEnter = function (self)
 		end
 		local fields = {
 			"__type",
+			"__base",
 			"name",
 			"key",
 			"hash",
