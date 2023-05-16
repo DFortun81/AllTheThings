@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
-	applyclassicphase(WRATH_PHASE_FOUR, m(169, bubbleDown({ ["timeline"] = { "added 3.0.2" }, }, {	-- Isle of Conquest
+	applyclassicphase(WRATH_PHASE_THREE, m(169, bubbleDown({ ["timeline"] = { "added 3.0.2" }, }, {	-- Isle of Conquest
 		["icon"] = "Interface\\Icons\\Achievement_bg_winwsg",
 		["groups"] = {
 			n(ACHIEVEMENTS, {
