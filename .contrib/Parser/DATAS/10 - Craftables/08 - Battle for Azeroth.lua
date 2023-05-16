@@ -18,9 +18,9 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 		filter(BATTLE_PETS, {
 			i(160324, {	-- Grumbling Sac
 				i(163859),	-- Baby Crawg (PET!)
-				i(163858),	-- Slippy (PET!)
 				i(163861),	-- Bloated Bloodfeaster (PET!)
 				i(163860),	-- Gearspring Hopper (PET!)
+				i(163858),	-- Slippy (PET!)
 			}),
 			i(160325, {	-- Quivering Sac
 				i(163859),	-- Baby Crawg (PET!)
@@ -412,7 +412,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(158886),	-- Super-Charged Engine
 		}),
 		filter(BATTLE_PETS, {
-			i(165849),	-- Mechantula (PET!)
+			i(165849, {["timeline"]={ADDED_8_1_0}}),	-- Mechantula (PET!)
 		}),
 		filter(CONSUMABLES, {
 			i(165738),	-- Makeshift Azerite Detector

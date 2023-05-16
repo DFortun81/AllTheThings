@@ -1,22 +1,21 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(ZULDAZAR, {
 		petbattle(filter(BATTLE_PETS, {
-			pet(2537, {	-- Baby Zandalari Raptor
+			pet(2537, {	-- Baby Zandalari Raptor (PET!)
 				["coord"] = { 71.2, 41.2, ZULDAZAR },
-				["timeline"] = { "added 8.1.0" },
+				["timeline"] = { ADDED_8_1_0 },
 			}),
-			pet(2385, {	-- Barrier Hermit
+			pet(2385, {	-- Barrier Hermit (PET!)
 				["description"] = "Found commonly on the shorelines of Tusk Isle and Isle of Fang, islands south of Zuldazar."
 			}),
-			pet(2387, {	-- Golden Beetle
+			pet(2387, {	-- Golden Beetle (PET!)
 				["description"] = "Found at the coord in Atal'Dazar area, as well as alongside Barrier Hermits.",
 				["coord"] = { 42.8, 39.2, ZULDAZAR },
 			}),
-			pet(2390, {	-- Leafy Flutterwing
+			pet(2390, {	-- Leafy Flutterwing (PET!)
 				["description"] = "Found mosly along walkways in east Zuldazar.",
 				["coords"] = {
 					{ 77.0, 14.8, ZULDAZAR },
@@ -26,7 +25,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					{ 79.6, 46.2, ZULDAZAR },
 				},
 			}),
-			pet(2384, {	-- Shore Butterfly
+			pet(2384, {	-- Shore Butterfly (PET!)
 				["description"] = "Found on the SW coasts of Tusk Isle and Isle of Fang, may be easier to find as a backline.",
 				["coords"] = {
 					{ 60.2, 75.8, ZULDAZAR },

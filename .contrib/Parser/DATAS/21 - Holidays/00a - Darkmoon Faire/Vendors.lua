@@ -501,12 +501,15 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				i(75042),	-- Flimsy Yellow Balloon (TOY!)
 				i(164969, {	-- Horse Balloon (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { ADDED_8_1_5 },
 				}),
 				i(164971, {	-- Murloc Balloon (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { ADDED_8_1_5 },
 				}),
 				i(164970, {	-- Wolf Balloon (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { ADDED_8_1_5 },
 				}),
 			},
 		}),

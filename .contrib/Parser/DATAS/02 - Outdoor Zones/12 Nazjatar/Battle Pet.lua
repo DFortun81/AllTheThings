@@ -13,13 +13,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				{ 55.1, 48.8, NAZJATAR },
 			},
 			["g"] = {
-				i(167809),	-- Slimy Darkhunter
-				i(167808),	-- Slimy Eel
-				i(167807),	-- Slimy Fangtooth
-				i(167810),	-- Slimy Hermit Crab
-				i(167806),	-- Slimy Octopode
-				i(167805),	-- Slimy Otter
-				i(167804),	-- Slimy Sea Slug
+				i(167809),	-- Slimy Darkhunter (PET!)
+				i(167808),	-- Slimy Eel (PET!)
+				i(167807),	-- Slimy Fangtooth (PET!)
+				i(167810),	-- Slimy Hermit Crab (PET!)
+				i(167806),	-- Slimy Octopode (PET!)
+				i(167805),	-- Slimy Otter (PET!)
+				i(167804),	-- Slimy Sea Slug (PET!)
 			},
 		}),
 		pet(2678),	-- Abyssal Slitherling (PET!)

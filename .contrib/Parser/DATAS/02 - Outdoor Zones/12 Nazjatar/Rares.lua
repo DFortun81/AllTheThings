@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				crit(14, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
-				i(169352, {	-- Pearlescent Glimmershell (PET!) — possible this is just a vendor item now?  check back.
+				i(169352, {	-- Pearlescent Glimmershell (PET!)
 					crit(6, {	-- Pearlescent Glimmershell
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),

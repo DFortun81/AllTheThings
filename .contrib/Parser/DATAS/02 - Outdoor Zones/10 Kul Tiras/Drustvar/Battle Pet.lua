@@ -6,20 +6,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 	m(DRUSTVAR, {
 		petbattle(filter(BATTLE_PETS, {
 			["sym"] = {{"select","speciesID",
-				379,	-- Squirrel
+				2383,	-- Giant Woodworm (PET!)
+				2378,	-- River Otter (PET!)
+				2377,	-- Sandyback Crawler (PET!)
+				2381,	-- Shack Crab (PET!)
+				379,	-- Squirrel (PET!)
 			}},
 			["g"] = {
-				pet(2386),	-- Coastal Scuttler
-				pet(2383, {	-- Giant Woodworm
-					["crs"] = { 143042 },	-- Giant Woodworm
-				}),
-				p(2378, {	-- River Otter
-					["crs"] = { 143037 },	-- River Otter
-				}),
-				p(2377, {	-- Sandyback Crawler
-					["crs"] = { 143036 },	-- Sandyback Crawler
-				}),
-				pet(2381),	-- Shack Crab
+				pet(2386),	-- Coastal Scuttler (PET!)
 			},
 		})),
 	}),

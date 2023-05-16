@@ -1,13 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(NAZMIR, {
 		n(EMISSARY_QUESTS, {
-			q(54460, {	-- Supplies from Talanji's Expedition
+			q(54460, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Supplies from Talanji's Expedition
 				["provider"] = { "n", 135459 },	-- Provisioner Lija
-				["lvl"] = 120,
 				["coord"] = { 39.11, 79.47, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
@@ -17,7 +15,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						i(166716),	-- Crimson Bat Pup (PET!)
 					}),
 				},
-			}),
+			})),
 			q(50602, {	-- Talanji's Expedition
 				["provider"] = { "n", 135459 },	-- Provisioner Lija
 				["lvl"] = 120,

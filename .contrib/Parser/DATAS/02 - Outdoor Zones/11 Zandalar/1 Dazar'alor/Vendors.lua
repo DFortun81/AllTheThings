@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					39987,	-- Tuskarr Fishing Spear
 				}},
 			}),
-			n(148923, {	-- Captain Zen'taga <Dubloons Trader>
+			n(148923, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Captain Zen'taga <Dubloons Trader>
 				["coord"] = { 44.4, 94.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
 				},
-			}),
+			})),
 			n(161067, {	-- Captain Kitt
 				["coord"] = { 44.4, 94.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -480,7 +480,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(63045),	-- Tan Riding Camel (MOUNT!)
 				},
 			}),
-			n(148924, {	-- Provisioner Mukra
+			n(148924, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Provisioner Mukra
 				["coord"] = { 51.22, 95.08, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -528,7 +528,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = { { "c", 1716, 50 }, },	-- 50x Honorbound Service Medal
 					}),
 				},
-			}),
+			})),
 			n(126330, {	-- Rakle the Wretched
 				["coord"] = { 34.7, 11.5, DAZARALOR },
 				["races"] = HORDE_ONLY,

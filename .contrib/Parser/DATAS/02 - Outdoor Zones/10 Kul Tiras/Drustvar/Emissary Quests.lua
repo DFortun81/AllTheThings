@@ -38,9 +38,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
-			q(54456, {	-- Supplies from the Order of Embers
+			q(54456, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Supplies from the Order of Embers
 				["provider"] = { "n", 135815 },	-- Quartermaster Alcorn
-				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 				["g"] = {
@@ -49,7 +48,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						i(166718),	-- Cobalt Raven (PET!)
 					}),
 				},
-			}),
+			})),
 		}),
 	}),
 })));

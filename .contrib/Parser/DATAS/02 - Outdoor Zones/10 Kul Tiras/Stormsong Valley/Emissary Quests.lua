@@ -1,13 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(STORMSONG_VALLEY, {
 		n(EMISSARY_QUESTS, {
-			q(54451, {	-- Baubles from the Seekers
+			q(54451, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Baubles from the Seekers
 				["provider"] = { "n", 135793 },	-- Collector Kojo
-				["lvl"] = 120,
 				["coord"] = { 40.54, 36.41, STORMSONG_VALLEY },
 				["repeatable"] = true,
 				["g"] = {
@@ -17,7 +15,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						i(166264),	-- Recipe: Sanguiated Feast [Rank 3]
 					}),
 				},
-			}),
+			})),
 			q(50601, {	-- Storm's Wake
 				["provider"] = { "n", 135800 },	-- Sister Lilyana
 				["lvl"] = 120,
@@ -52,21 +50,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
-			q(54457, {	-- Supplies from Storm's Wake
+			q(54457, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Supplies from Storm's Wake
 				["provider"] = { "n", 135800 },	-- Sister Lilyana
-				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 59.29, 69.33, STORMSONG_VALLEY },
 				["isDaily"] = true,
 				["g"] = {
 					i(166294, {	-- Storm's Wake Supplies
 						i(166719),	-- Violet Abyssal Eel (PET!)
-						i(166665, {	-- Technique: Glyph of Storm's Wake (RECIPE!)
-							["timeline"] = { "added 8.1.0" },
-						}),
+						i(166665),	-- Technique: Glyph of Storm's Wake (RECIPE!)
 					}),
 				},
-			}),
+			})),
 			q(50604, {	-- Tortollan Seekers
 				["provider"] = { "n", 135793 },	-- Collector Kojo
 				["lvl"] = 120,

@@ -1,16 +1,17 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(MOP_TIER, {
+root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	inst(317, {	-- Mogu'shan Vaults
 		["isRaid"] = true,
+		["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },
+		["maps"] = {
+			471,	-- Dais of Conquerors
+			472,	-- The Repository
+			473,	-- Forge of the Endless
+		},
 		["sharedLockout"] = 1,
-		["lvl"] = 90,
-		["mapID"] = 471,
-		["maps"] = { 472, 473 },	-- 2nd LFR Wing
-		["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },	-- Mogu'shan Terrace
-		["groups"] = {
+		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6458, {	-- Guardians of Mogu'shan
 					crit(1, {	-- The Stone Guard
@@ -37,8 +38,45 @@ _.Instances = { tier(MOP_TIER, {
 				ach(6668),	-- Mogu'shan Vaults Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
-				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
-				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
+				i(87208, {	-- Sigil of Power
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+				}),
+				i(87209, {	-- Sigil of Wisdom
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+				}),
+			}),
+			n(DROPS, {
+				i(167050, {	-- Baoh-Xi (PET!)
+					["crs"] = {
+						60400,	-- Jan-xi <Emperor's Open Hand>
+						60399,	-- Qin-xi <Emperor's Closed Fist>
+					},
+					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(167049, {	-- Comet (PET!)
+					["crs"] = { 60410 },	-- Elegon
+					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(167047, {	-- Stoneclaw (PET!)
+					["crs"] = {
+						60047,	-- Amethyst Guardian
+						60051,	-- Cobalt Guardian
+						60043,	-- Jade Guardian
+						59915,	-- Jasper Guardian
+					},
+					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(167048, {	-- Wayward Spirit (PET!)
+					["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
+					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(138804, {	-- Illusion: Colossus
+					["crs"] = {
+						60400,	-- Jan-xi <Emperor's Open Hand>
+						60399,	-- Qin-xi <Emperor's Closed Fist>
+					},
+					["timeline"] = { ADDED_7_0_3 },
+				}),
 			}),
 			d(7, {	-- LFR Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
@@ -46,78 +84,74 @@ _.Instances = { tier(MOP_TIER, {
 			}),
 			d(7, {	-- LFR
 				["ignoreBonus"] = true,
-				["groups"] = {
-					n(COMMON_BOSS_DROPS, {
-						["groups"] = {
-							un(REMOVED_FROM_GAME, i(95618, {	-- Cache of Mogu Riches
-								["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
-								["groups"] = {
-									i(86884),	-- Belt of Embodied Terror
-									i(86900),	-- Binder's Chain of Unending Summer
-									i(86850),	-- Darting Damselfly Cuffs
-									i(86844),	-- Gleaming Moth Cuffs
-									i(86895),	-- Healer's Belt of Final Winter
-									i(86846),	-- Inlaid Cricket Bracers
-									i(86896),	-- Invoker's Belt of Final Winter
-									i(86772),	-- Jade Bandit Figurine
-									i(86771),	-- Jade Charioteer Figurine
-									i(86774),	-- Jade Courtesan Figurine
-									i(86773),	-- Jade Magistrate Figurine
-									i(86775),	-- Jade Warlord Figurine
-									i(86847),	-- Jagged Hornet Bracers
-									i(86842),	-- Luminescent Firefly Wristguards
-									i(86902),	-- Mender's Girdle of Endless Spring
-									i(86904),	-- Patroller's Girdle of Endless Spring
-									i(86845),	-- Pearlescent Butterfly Wristbands
-									i(86849),	-- Plated Locust Bracers
-									i(86903),	-- Protector's Girdle of Endless Spring
-									i(86901),	-- Ranger's Chain of Unending Summer
-									i(86848),	-- Serrated Wasp Bracers
-									i(86841),	-- Shining Cicada Bracers
-									i(86843),	-- Smooth Beetle Wristbands
-									i(86897),	-- Sorcerer's Belt of Final Winter
-									i(86899),	-- Stalker's Cord of Eternal Autumn
-									i(86898),	-- Weaver's Cord of Eternal Autumn
-									i(44984),	-- Ammen Vale Lashling
-									i(54436),	-- Blue Clockwork Rocket Bot
-									i(44970),	-- Dun Morogh Cub
-									i(44973),	-- Durotar Scorpion
-									i(67282),	-- Elementium Geode
-									i(44974),	-- Elwynn Lamb
-									i(44982),	-- Enchanted Broom
-									i(64403),	-- Fox Kit
-									i(43698),	-- Giant Sewer Rat
-									i(45002),	-- Mechanopeep
-									i(44980),	-- Mulgore Hatchling
-									i(64403),	-- Fox Kit
-									i(43698),	-- Giant Sewer Rat
-									i(45002),	-- Mechanopeep
-									i(44980),	-- Mulgore Hatchling
-									i(45606),	-- Sen'jin Fetish
-									i(69992),	-- Shimmering Wyrmling
-									i(44965),	-- Teldrassil Sproutling
-									i(69991),	-- Tiny Sporebat
-									i(44971),	-- Tirisfal Batling
-									i(10360),	-- Black Kingsnake
-									i(29960),	-- Captured Firefly
-									i(8491),	-- Cat Carrier (Black Tabby)
-									i(46398),	-- Cat Carrier (Calico Cat)
-									i(8487),	-- Cat Carrier (Orange Tabby)
-									i(8488),	-- Cat Carrier (Silver Tabby)
-									i(10822),	-- Dark Whelpling
-									i(29953),	-- Golden Dragonhawk Hatchling
-									i(48116),	-- Gundrak Hatchling
-									i(48118),	-- Leaping Hatchling
-									i(48120),	-- Obsidian Hatchling
-									i(8496),	-- Parrot Cage (Cockatiel)
-									i(8492),	-- Parrot Cage (Green Wing Macaw)
-									i(8495),	-- Parrot Cage (Senegal)
-									i(48124),	-- Razormaw Hatchling
-									i(48126),	-- Razzashi Hatchling
-								},
-							})),
+				["g"] = {
+					i(95618, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 } }, {	-- Cache of Mogu Riches
+						["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
+						["g"] = {
+							i(86884),	-- Belt of Embodied Terror
+							i(86900),	-- Binder's Chain of Unending Summer
+							i(86850),	-- Darting Damselfly Cuffs
+							i(86844),	-- Gleaming Moth Cuffs
+							i(86895),	-- Healer's Belt of Final Winter
+							i(86846),	-- Inlaid Cricket Bracers
+							i(86896),	-- Invoker's Belt of Final Winter
+							i(86772),	-- Jade Bandit Figurine
+							i(86771),	-- Jade Charioteer Figurine
+							i(86774),	-- Jade Courtesan Figurine
+							i(86773),	-- Jade Magistrate Figurine
+							i(86775),	-- Jade Warlord Figurine
+							i(86847),	-- Jagged Hornet Bracers
+							i(86842),	-- Luminescent Firefly Wristguards
+							i(86902),	-- Mender's Girdle of Endless Spring
+							i(86904),	-- Patroller's Girdle of Endless Spring
+							i(86845),	-- Pearlescent Butterfly Wristbands
+							i(86849),	-- Plated Locust Bracers
+							i(86903),	-- Protector's Girdle of Endless Spring
+							i(86901),	-- Ranger's Chain of Unending Summer
+							i(86848),	-- Serrated Wasp Bracers
+							i(86841),	-- Shining Cicada Bracers
+							i(86843),	-- Smooth Beetle Wristbands
+							i(86897),	-- Sorcerer's Belt of Final Winter
+							i(86899),	-- Stalker's Cord of Eternal Autumn
+							i(86898),	-- Weaver's Cord of Eternal Autumn
+							i(44984),	-- Ammen Vale Lashling
+							i(54436),	-- Blue Clockwork Rocket Bot
+							i(44970),	-- Dun Morogh Cub
+							i(44973),	-- Durotar Scorpion
+							i(67282),	-- Elementium Geode
+							i(44974),	-- Elwynn Lamb
+							i(44982),	-- Enchanted Broom
+							i(64403),	-- Fox Kit
+							i(43698),	-- Giant Sewer Rat
+							i(45002),	-- Mechanopeep
+							i(44980),	-- Mulgore Hatchling
+							i(64403),	-- Fox Kit
+							i(43698),	-- Giant Sewer Rat
+							i(45002),	-- Mechanopeep
+							i(44980),	-- Mulgore Hatchling
+							i(45606),	-- Sen'jin Fetish
+							i(69992),	-- Shimmering Wyrmling
+							i(44965),	-- Teldrassil Sproutling
+							i(69991),	-- Tiny Sporebat
+							i(44971),	-- Tirisfal Batling
+							i(10360),	-- Black Kingsnake
+							i(29960),	-- Captured Firefly
+							i(8491),	-- Cat Carrier (Black Tabby)
+							i(46398),	-- Cat Carrier (Calico Cat)
+							i(8487),	-- Cat Carrier (Orange Tabby)
+							i(8488),	-- Cat Carrier (Silver Tabby)
+							i(10822),	-- Dark Whelpling
+							i(29953),	-- Golden Dragonhawk Hatchling
+							i(48116),	-- Gundrak Hatchling
+							i(48118),	-- Leaping Hatchling
+							i(48120),	-- Obsidian Hatchling
+							i(8496),	-- Parrot Cage (Cockatiel)
+							i(8492),	-- Parrot Cage (Green Wing Macaw)
+							i(8495),	-- Parrot Cage (Senegal)
+							i(48124),	-- Razormaw Hatchling
+							i(48126),	-- Razzashi Hatchling
 						},
-					}),
+					})),
 					header(HEADERS.Achievement, 6458, {	-- Guardians of Mogu'shan
 						e(679, {	-- The Stone Guard
 							["crs"] = {
@@ -126,10 +160,7 @@ _.Instances = { tier(MOP_TIER, {
 								60043,	-- Jade Guardian
 								59915,	-- Jasper Guardian
 							},
-							["groups"] = {
-								i(167047,	{	-- Stoneclaw (PET!)
-									["timeline"] = { ADDED_8_1_5 },
-								}),
+							["g"] = {
 								i(86741),	-- Dagger of the Seven Stars
 								i(86745),	-- Sixteen-Fanged Crown
 								i(86739),	-- Beads of the Mogu'shi
@@ -148,7 +179,7 @@ _.Instances = { tier(MOP_TIER, {
 						}),
 						e(689, {	-- Feng the Accursed
 							["crs"] = { 60009 },	-- Feng the Accursed
-							["groups"] = {
+							["g"] = {
 								i(89426),	-- Fan of Fiery Winds
 								i(86757),	-- Hood of Cursed Dreams
 								i(86752),	-- Nullification Greathelm
@@ -167,10 +198,7 @@ _.Instances = { tier(MOP_TIER, {
 						}),
 						e(682, {	-- Gara'jal the Spiritbinder
 							["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
-							["groups"] = {
-								i(167048,	{	-- Wayward Spirit (PET!)
-									["timeline"] = { ADDED_8_1_5 },
-								}),
+							["g"] = {
 								i(86762),	-- Gara'kal, Fist of the Spiritbinder
 								i(86764),	-- Eye of the Ancient Spirit
 								i(86759),	-- Soulgrasp Choker
@@ -212,12 +240,9 @@ _.Instances = { tier(MOP_TIER, {
 								i(86784),	-- Meng's Treads of Insanity
 							},
 						}),
-						cr(60410, e(726, {	-- Elegon
-							["description"] = "Loot from the Elegon chest is NOT tradeable to others in group.",
+						e(726, {	-- Elegon
+							["crs"] = { 60410 },	-- Elegon
 							["g"] = {
-								i(167049,	{	-- Comet (PET!)
-									["timeline"] = { ADDED_8_1_5 },
-								}),
 								i(86799),	-- Starshatter
 								i(86789),	-- Elegion, the Fanged Crescent
 								i(86796),	-- Torch of the Celestial Spark
@@ -233,63 +258,63 @@ _.Instances = { tier(MOP_TIER, {
 								i(86792),	-- Light of the Cosmos
 								i(86790),	-- Vial of Dragon's Blood
 							},
-						})),
-						cr(60400, e(677, {	-- Will of the Emperor (60399)
-							i(167050,	{	-- Baoh-Xi (PET!)
-								["timeline"] = { ADDED_8_1_5 },
-							}),
-							i(138804),	-- Illusion: Colossus
-							i(86806),	-- Tihan, Scepter of the Sleeping Emperor
-							i(86801),	-- Fang Kung, Spark of Titans
-							i(86804),	-- Crown of Opportunistic Strikes
-							i(89975),	-- Dreadeye Gaze
-							i(86809),	-- Hood of Focused Energy
-							i(86810),	-- Worldwaker Cabochon
-							i(86807),	-- Spaulders of the Emperor's Rage
-							i(89976),	-- Chestguard of Eternal Vigilance
-							i(89977),	-- Enameled Grips of Solemnity
-							i(87826),	-- Grips of Terra Cotta
-							i(86803),	-- Jang-xi's Devastating Legplates
-							i(86808),	-- Magnetized Leggings
-							i(86802),	-- Lei Shen's Final Orders
-							i(86805),	-- Qin-xi's Polarizing Seal
-						})),
+						}),
+						e(677, {	-- Will of the Emperor
+							["crs"] = {
+								60400,	-- Jan-xi <Emperor's Open Hand>
+								60399,	-- Qin-xi <Emperor's Closed Fist>
+							},
+							["g"] = {
+								i(86806),	-- Tihan, Scepter of the Sleeping Emperor
+								i(86801),	-- Fang Kung, Spark of Titans
+								i(86804),	-- Crown of Opportunistic Strikes
+								i(89975),	-- Dreadeye Gaze
+								i(86809),	-- Hood of Focused Energy
+								i(86810),	-- Worldwaker Cabochon
+								i(86807),	-- Spaulders of the Emperor's Rage
+								i(89976),	-- Chestguard of Eternal Vigilance
+								i(89977),	-- Enameled Grips of Solemnity
+								i(87826),	-- Grips of Terra Cotta
+								i(86803),	-- Jang-xi's Devastating Legplates
+								i(86808),	-- Magnetized Leggings
+								i(86802),	-- Lei Shen's Final Orders
+								i(86805),	-- Qin-xi's Polarizing Seal
+							},
+						}),
 					}),
 				},
 			}),
 			d(NORMAL_DUNGEON, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
-				["groups"] = {
+				["g"] = {
 					n(ACHIEVEMENTS, {
 						ach(7933),    -- And... It's Good!
 					}),
 					n(ZONE_DROPS, {
-						["groups"] = {
-							i(86238),	-- Pattern: Chestguard of Nemeses
-							i(86272),	-- Pattern: Fists of Lightning
-							i(86380),	-- Pattern: Imperial Silk Gloves
-							i(86381),	-- Pattern: Legacy of the Emperor
-							i(86279),	-- Pattern: Liferuned Leather Gloves
-							i(86280),	-- Pattern: Murderer's Gloves
-							i(86281),	-- Pattern: Nightfire Robe
-							i(86283),	-- Pattern: Raiment of Blood and Bone
-							i(86284),	-- Pattern: Raven Lord's Gloves
-							i(86379),	-- Pattern: Robe of Eternal Rule
-							i(86297),	-- Pattern: Stormbreaker Chestguard
-							i(86382),	-- Pattern: Touch of the Light
-							i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
-							i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
-							i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
-							i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
-							i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
-							i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
-							i(86043),	-- Jade Bandit Figurine
-							i(86042),	-- Jade Charioteer Figurine
-							i(86045),	-- Jade Courtesan Figurine
-							i(86044),	-- Jade Magistrate Figurine
-							i(86046),	-- Jade Warlord Figurine
-						},
+						i(86238),	-- Pattern: Chestguard of Nemeses
+						i(86272),	-- Pattern: Fists of Lightning
+						i(86380),	-- Pattern: Imperial Silk Gloves
+						i(86381),	-- Pattern: Legacy of the Emperor
+						i(86279),	-- Pattern: Liferuned Leather Gloves
+						i(86280),	-- Pattern: Murderer's Gloves
+						i(86281),	-- Pattern: Nightfire Robe
+						i(86283),	-- Pattern: Raiment of Blood and Bone
+						i(86284),	-- Pattern: Raven Lord's Gloves
+						i(86379),	-- Pattern: Robe of Eternal Rule
+						i(86297),	-- Pattern: Stormbreaker Chestguard
+						i(86382),	-- Pattern: Touch of the Light
+						i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
+						i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
+						i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
+						i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
+						i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
+						i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
+						i(86043),	-- Jade Bandit Figurine
+						i(86042),	-- Jade Charioteer Figurine
+						i(86045),	-- Jade Courtesan Figurine
+						i(86044),	-- Jade Magistrate Figurine
+						i(86046),	-- Jade Warlord Figurine
 					}),
 					e(679, {	-- The Stone Guard
 						["crs"] = {
@@ -298,11 +323,8 @@ _.Instances = { tier(MOP_TIER, {
 							60043,	-- Jade Guardian
 							59915,	-- Jasper Guardian
 						},
-						["groups"] = {
+						["g"] = {
 							ach(6823),	-- Must Love Dogs
-							i(167047,	{	-- Stoneclaw (PET!)
-								["timeline"] = { ADDED_8_1_5 },
-							}),
 							i(85924),	-- Dagger of the Seven Stars
 							i(85976),	-- Sixteen-Fanged Crown
 							i(85922),	-- Beads of the Mogu'shi
@@ -321,7 +343,7 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					e(689, {	-- Feng the Accursed
 						["crs"] = { 60009 },	-- Feng the Accursed
-						["groups"] = {
+						["g"] = {
 							ach(6674, {	-- Anything You Can Do, I Can Do Better...
 								crit(1),	-- Epicenter
 								crit(2),	-- Lightning Fists
@@ -349,9 +371,6 @@ _.Instances = { tier(MOP_TIER, {
 						["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
 						["g"] = {
 							ach(7056),    -- Sorry, Were You Looking for This?
-							i(167048,	{	-- Wayward Spirit (PET!)
-								["timeline"] = { ADDED_8_1_5 },
-							}),
 							i(85994),	-- Gara'kal, Fist of the Spiritbinder
 							i(85996),	-- Eye of the Ancient Spirit
 							i(85991),	-- Soulgrasp Choker
@@ -397,9 +416,6 @@ _.Instances = { tier(MOP_TIER, {
 						["g"] = {
 							ach(6686),	-- Straight Six
 							i(87777),	-- Astral Cloud Serpent (MOUNT!)
-							i(167049,	{	-- Comet (PET!)
-								["timeline"] = { ADDED_8_1_5 },
-							}),
 							i(86140),	-- Starshatter
 							i(86130),	-- Elegion, the Fanged Crescent
 							i(86137),	-- Torch of the Celestial Spark
@@ -421,12 +437,8 @@ _.Instances = { tier(MOP_TIER, {
 							60400,	-- Jan-xi <Emperor's Open Hand>
 							60399,	-- Qin-xi <Emperor's Closed Fist>
 						},
-						["groups"] = {
+						["g"] = {
 							ach(6455),    -- Show Me Your Moves!
-							i(167050,	{	-- Baoh-Xi (PET!)
-								["timeline"] = { ADDED_8_1_5 },
-							}),
-							i(138804),	-- Illusion: Colossus
 							i(86148),	-- Tihan, Scepter of the Sleeping Emperor
 							i(86142),	-- Fang Kung, Spark of Titans
 							i(86146),	-- Crown of Opportunistic Strikes
@@ -450,26 +462,24 @@ _.Instances = { tier(MOP_TIER, {
 				["difficulties"] = { 5, 6 },
 				["g"] = {
 					n(ZONE_DROPS, {
-						["groups"] = {
-							i(86238),	-- Pattern: Chestguard of Nemeses
-							i(86272),	-- Pattern: Fists of Lightning
-							i(86380),	-- Pattern: Imperial Silk Gloves
-							i(86381),	-- Pattern: Legacy of the Emperor
-							i(86279),	-- Pattern: Liferuned Leather Gloves
-							i(86280),	-- Pattern: Murderer's Gloves
-							i(86281),	-- Pattern: Nightfire Robe
-							i(86283),	-- Pattern: Raiment of Blood and Bone
-							i(86284),	-- Pattern: Raven Lord's Gloves
-							i(86379),	-- Pattern: Robe of Eternal Rule
-							i(86297),	-- Pattern: Stormbreaker Chestguard
-							i(86382),	-- Pattern: Touch of the Light
-							i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
-							i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
-							i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
-							i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
-							i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
-							i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
-						},
+						i(86238),	-- Pattern: Chestguard of Nemeses
+						i(86272),	-- Pattern: Fists of Lightning
+						i(86380),	-- Pattern: Imperial Silk Gloves
+						i(86381),	-- Pattern: Legacy of the Emperor
+						i(86279),	-- Pattern: Liferuned Leather Gloves
+						i(86280),	-- Pattern: Murderer's Gloves
+						i(86281),	-- Pattern: Nightfire Robe
+						i(86283),	-- Pattern: Raiment of Blood and Bone
+						i(86284),	-- Pattern: Raven Lord's Gloves
+						i(86379),	-- Pattern: Robe of Eternal Rule
+						i(86297),	-- Pattern: Stormbreaker Chestguard
+						i(86382),	-- Pattern: Touch of the Light
+						i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
+						i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
+						i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
+						i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
+						i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
+						i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 					}),
 					e(679, {	-- The Stone Guard
 						["crs"] = {
@@ -480,9 +490,6 @@ _.Instances = { tier(MOP_TIER, {
 						},
 						["g"] = {
 							ach(6719),	-- Heroic: Stone Guard
-							i(167047,	{	-- Stoneclaw (PET!)
-								["timeline"] = { ADDED_8_1_5 },
-							}),
 							i(87012),	-- Dagger of the Seven Stars
 							i(87020),	-- Sixteen-Fanged Crown
 							i(87016),	-- Beads of the Mogu'shi
@@ -523,9 +530,6 @@ _.Instances = { tier(MOP_TIER, {
 						["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
 						["g"] = {
 							ach(6721),    -- Heroic: Gara'jal the Spiritbinder
-							i(167048,	{	-- Wayward Spirit (PET!)
-								["timeline"] = { ADDED_8_1_5 },
-							}),
 							i(87032),	-- Gara'kal, Fist of the Spiritbinder
 							i(87039),	-- Eye of the Ancient Spirit
 							i(87036),	-- Soulgrasp Choker
@@ -571,9 +575,6 @@ _.Instances = { tier(MOP_TIER, {
 						["g"] = {
 							ach(6723),	-- Heroic: Elegon
 							i(87777),	-- Astral Cloud Serpent (MOUNT!)
-							i(167049,	{	-- Comet (PET!)
-								["timeline"] = { ADDED_8_1_5 },
-							}),
 							i(87061),	-- Starshatter
 							i(87062),	-- Elegion, the Fanged Crescent
 							i(87066),	-- Torch of the Celestial Spark
@@ -600,11 +601,9 @@ _.Instances = { tier(MOP_TIER, {
 								title(204),	-- , Delver of the Vaults
 							}),
 							ach(6675),	-- Heroic: Will of the Emperor Guild Run
-							un(REMOVED_FROM_GAME, ach(6680)),	-- Realm First! Will of the Emperor
-							i(167050,	{	-- Baoh-Xi (PET!)
-								["timeline"] = { ADDED_8_1_5 },
+							ach(6680, {	-- Realm First! Will of the Emperor
+								["timeline"] = { ADDED_5_0_4, REMOVED_5_1_0 },
 							}),
-							i(138804),	-- Illusion: Colossus
 							i(87074),	-- Tihan, Scepter of the Sleeping Emperor
 							i(87069),	-- Fang Kung, Spark of Titans
 							i(87070),	-- Crown of Opportunistic Strikes
@@ -625,4 +624,4 @@ _.Instances = { tier(MOP_TIER, {
 			}),
 		},
 	}),
-})};
+})));

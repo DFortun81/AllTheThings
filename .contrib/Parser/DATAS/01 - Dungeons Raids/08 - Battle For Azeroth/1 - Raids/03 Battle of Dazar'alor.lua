@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }, {
+root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 } }, {
 	inst(1176, {	-- Battle of Dazar'alor
 		["isRaid"] = true,
 		["coords"] = {
@@ -19,7 +18,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 			1364,	-- The Great Sea
 			1367,	-- Boralus
 		},
-		["lvl"] = { 50 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(13315, {	-- Glory of the Dazar'alor Raider
@@ -40,6 +38,24 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 1] (RECIPE!)
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 2] (RECIPE!)
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 3] (RECIPE!)
+			}),
+			n(DROPS, {
+				i(165846, {	-- Child of Pa'ku (PET!)
+					["crs"] = {
+						144941,	-- Akunda's Aspect
+						144767,	-- Gonk's Aspect
+						144963,	-- Kimbul's Aspect
+						144747,	-- Pa'ku's Aspect
+					},
+				}),
+				i(165847, {	-- Thunder Lizard Runt (PET!)
+					["crs"] = {
+						144941,	-- Akunda's Aspect
+						144767,	-- Gonk's Aspect
+						144963,	-- Kimbul's Aspect
+						144747,	-- Pa'ku's Aspect
+					},
+				}),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
@@ -450,8 +466,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 					},
 					["g"] = {
 						ach(13325),	-- Walk the Dinosaur
-						i(165846),	-- Child of Pa'ku (PET!)
-						i(165847),	-- Thunder Lizard Runt (PET!)
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow
@@ -661,8 +675,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 						144747,	-- Pa'ku's Aspect
 					},
 					["g"] = {
-						i(165846),	-- Child of Pa'ku (PET!)
-						i(165847),	-- Thunder Lizard Runt (PET!)
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow
@@ -881,9 +893,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 					},
 					["g"] = {
 						ach(13300),	-- Mythic: Conclave of the Chosen
-						i(165846),	-- Child of Pa'ku (PET!)
 						i(165848),	-- Spawn of Krag'wa (PET!)
-						i(165847),	-- Thunder Lizard Runt (PET!)
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow

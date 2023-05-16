@@ -1318,17 +1318,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.8, 65.2, REDRIDGE_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13682" },
 				}),
-				n(147222, {	-- Gnollfeaster
-					["questID"] = 54214,
+				n(147222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Gnollfeaster
 					["coord"] = { 24.4, 70.9, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "added 8.1.0.28724" },
+					["questID"] = 54214,
 					["isDaily"] = true,
 					["groups"] = {
-						i(165722, {	-- Redridge Tarantula (PET!)
-							["timeline"] = { "added 8.1.0.28724" },
-						}),
+						i(165722),	-- Redridge Tarantula (PET!)
 					},
-				}),
+				})),
 				n(584, {  -- Kazon
 					-- #if AFTER CATA
 					["coord"] = { 34.8, 12.2, REDRIDGE_MOUNTAINS },

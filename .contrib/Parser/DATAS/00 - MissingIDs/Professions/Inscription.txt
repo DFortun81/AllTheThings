@@ -8,344 +8,12 @@ r(45363),	-- Inscription
 r(45381),	-- Silver Quill
 r(45383),	-- 
 r(48118),	-- 
-r(48121),	-- Glyph of Entangling Roots
 3.0.1.8622
 r(52175),	-- Decipher
 r(52183),	-- 
-r(52738),	-- Ivory Ink
-r(52840),	-- Weapon Vellum
 3.1.0.9767
-r(56943),	-- Glyph of Frenzied Regeneration
-r(56944),	-- Glyph of Growl
-r(56945),	-- Glyph of Healing Touch
-r(56946),	-- Glyph of Hurricane
-r(56947),	-- Glyph of Innervate
-r(56949),	-- Glyph of Lifebloom
-r(56950),	-- Glyph of Mangle
-r(56951),	-- Glyph of Moonfire
-r(56952),	-- Glyph of Rake
-r(56953),	-- Glyph of Rebirth
-r(56954),	-- Glyph of Regrowth
-r(56955),	-- Glyph of Rejuvenation
-r(56956),	-- Glyph of Rip
-r(56957),	-- Glyph of Shred
-r(56958),	-- Glyph of Starfall
-r(56959),	-- Glyph of Starfire
-r(56960),	-- Glyph of Swiftmend
-r(56961),	-- Glyph of Maul
-r(56963),	-- Glyph of Wrath
-r(56968),	-- Glyph of Arcane Explosion
-r(56971),	-- Glyph of Arcane Missiles
-r(56972),	-- Glyph of Arcane Power
-r(56973),	-- Glyph of Blink
-r(56974),	-- Glyph of Evocation
-r(56975),	-- Glyph of Fireball
-r(56976),	-- Glyph of Frost Nova
-r(56977),	-- Glyph of Frostbolt
-r(56978),	-- Glyph of Ice Armor
-r(56979),	-- Glyph of Ice Block
-r(56980),	-- Glyph of Ice Lance
-r(56981),	-- Glyph of Icy Veins
-r(56982),	-- Glyph of Scorch
-r(56983),	-- Glyph of Invisibility
-r(56984),	-- Glyph of Mage Armor
-r(56985),	-- Glyph of Mana Gem
-r(56987),	-- Glyph of Polymorph
-r(56988),	-- Glyph of Remove Curse
-r(56989),	-- Glyph of Water Elemental
-r(56990),	-- Glyph of Blast Wave
-r(56991),	-- Glyph of Arcane Blast
-r(56994),	-- Glyph of Aimed Shot
-r(56995),	-- Glyph of Arcane Shot
-r(56996),	-- Glyph of the Beast
-r(56997),	-- Glyph of Mending
-r(56998),	-- Glyph of Aspect of the Viper
-r(56999),	-- Glyph of Bestial Wrath
-r(57000),	-- Glyph of Deterrence
-r(57001),	-- Glyph of Disengage
-r(57002),	-- Glyph of Freezing Trap
-r(57003),	-- Glyph of Frost Trap
-r(57004),	-- Glyph of Hunter's Mark
-r(57005),	-- Glyph of Immolation Trap
-r(57006),	-- Glyph of the Hawk
-r(57007),	-- Glyph of Multi-Shot
-r(57008),	-- Glyph of Rapid Fire
-r(57009),	-- Glyph of Serpent Sting
-r(57010),	-- Glyph of Snake Trap
-r(57011),	-- Glyph of Steady Shot
-r(57012),	-- Glyph of Trueshot Aura
-r(57013),	-- Glyph of Volley
-r(57014),	-- Glyph of Wyvern Sting
-r(57019),	-- Glyph of Avenger's Shield
-r(57020),	-- Glyph of Cleansing
-r(57021),	-- Glyph of Avenging Wrath
-r(57022),	-- Glyph of Spiritual Attunement
-r(57023),	-- Glyph of Consecration
-r(57024),	-- Glyph of Crusader Strike
-r(57025),	-- Glyph of Exorcism
-r(57026),	-- Glyph of Flash of Light
-r(57027),	-- Glyph of Hammer of Justice
-r(57028),	-- Glyph of Hammer of Wrath
-r(57029),	-- Glyph of Holy Light
-r(57030),	-- Glyph of Judgement
-r(57031),	-- Glyph of Divinity
-r(57033),	-- Glyph of Seal of Command
-r(57034),	-- Glyph of Seal of Light
-r(57035),	-- Glyph of Seal of Wisdom
-r(57036),	-- Glyph of Turn Evil
-r(57112),	-- Glyph of Adrenaline Rush
-r(57113),	-- Glyph of Ambush
-r(57114),	-- Glyph of Backstab
-r(57115),	-- Glyph of Blade Flurry
-r(57116),	-- Glyph of Crippling Poison
-r(57117),	-- Glyph of Deadly Throw
-r(57119),	-- Glyph of Evasion
-r(57120),	-- Glyph of Eviscerate
-r(57121),	-- Glyph of Expose Armor
-r(57122),	-- Glyph of Feint
-r(57123),	-- Glyph of Garrote
-r(57124),	-- Glyph of Ghostly Strike
-r(57125),	-- Glyph of Gouge
-r(57126),	-- Glyph of Hemorrhage
-r(57127),	-- Glyph of Preparation
-r(57128),	-- Glyph of Rupture
-r(57129),	-- Glyph of Sap
-r(57130),	-- Glyph of Vigor
-r(57131),	-- Glyph of Sinister Strike
-r(57132),	-- Glyph of Slice and Dice
-r(57133),	-- Glyph of Sprint
-r(57151),	-- Glyph of Barbaric Insults
-r(57152),	-- Glyph of Blocking
-r(57153),	-- Glyph of Bloodthirst
-r(57154),	-- Glyph of Cleaving
-r(57155),	-- Glyph of Devastate
-r(57156),	-- Glyph of Execution
-r(57157),	-- Glyph of Hamstring
-r(57158),	-- Glyph of Heroic Strike
-r(57159),	-- Glyph of Intervene
-r(57160),	-- Glyph of Mortal Strike
-r(57161),	-- Glyph of Overpower
-r(57162),	-- Glyph of Rapid Charge
-r(57163),	-- Glyph of Rending
-r(57164),	-- Glyph of Resonating Power
-r(57165),	-- Glyph of Revenge
-r(57166),	-- Glyph of Last Stand
-r(57167),	-- Glyph of Sunder Armor
-r(57168),	-- Glyph of Sweeping Strikes
-r(57169),	-- Glyph of Taunt
-r(57170),	-- Glyph of Victory Rush
-r(57172),	-- Glyph of Whirlwind
-r(57181),	-- Glyph of Circle of Healing
-r(57183),	-- Glyph of Dispel Magic
-r(57184),	-- Glyph of Fade
-r(57185),	-- Glyph of Fear Ward
-r(57186),	-- Glyph of Flash Heal
-r(57187),	-- Glyph of Holy Nova
-r(57188),	-- Glyph of Inner Fire
-r(57189),	-- Glyph of Lightwell
-r(57190),	-- Glyph of Mass Dispel
-r(57191),	-- Glyph of Mind Control
-r(57192),	-- Glyph of Shadow Word: Pain
-r(57193),	-- Glyph of Shadow
-r(57194),	-- Glyph of Power Word: Shield
-r(57195),	-- Glyph of Prayer of Healing
-r(57196),	-- Glyph of Psychic Scream
-r(57197),	-- Glyph of Renew
-r(57198),	-- Glyph of Scourge Imprisonment
-r(57199),	-- Glyph of Shadow Word: Death
-r(57200),	-- Glyph of Mind Flay
-r(57201),	-- Glyph of Smite
-r(57202),	-- Glyph of Spirit of Redemption
-r(57207),	-- Glyph of Anti-Magic Shell
-r(57208),	-- Glyph of Heart Strike
-r(57210),	-- Glyph of Bone Shield
-r(57211),	-- Glyph of Chains of Ice
-r(57212),	-- Glyph of Dark Command
-r(57213),	-- Glyph of Death Grip
-r(57214),	-- Glyph of Death and Decay
-r(57215),	-- Glyph of Death's Embrace
-r(57216),	-- Glyph of Frost Strike
-r(57217),	-- Glyph of Horn of Winter
-r(57218),	-- Glyph of Icebound Fortitude
-r(57219),	-- Glyph of Icy Touch
-r(57220),	-- Glyph of Obliterate
-r(57221),	-- Glyph of Plague Strike
-r(57222),	-- Glyph of the Ghoul
-r(57223),	-- Glyph of Rune Strike
-r(57225),	-- Glyph of Strangulate
-r(57226),	-- Glyph of Unbreakable Armor
-r(57227),	-- Glyph of Vampiric Blood
-r(57228),	-- Glyph of Raise Dead
-r(57229),	-- Glyph of Corpse Explosion
-r(57230),	-- Glyph of Pestilence
 r(57231),	-- Death Knight Glyph 25
-r(57232),	-- Glyph of Chain Heal
-r(57233),	-- Glyph of Chain Lightning
-r(57234),	-- Glyph of Lava
-r(57235),	-- Glyph of Shocking
-r(57236),	-- Glyph of Earthliving Weapon
-r(57237),	-- Glyph of Fire Elemental Totem
-r(57238),	-- Glyph of Fire Nova
-r(57239),	-- Glyph of Flame Shock
-r(57240),	-- Glyph of Flametongue Weapon
-r(57241),	-- Glyph of Frost Shock
-r(57242),	-- Glyph of Healing Stream Totem
-r(57243),	-- Glyph of Healing Wave
-r(57244),	-- Glyph of Lesser Healing Wave
-r(57245),	-- Glyph of Lightning Bolt
-r(57246),	-- Glyph of Lightning Shield
-r(57247),	-- Glyph of Mana Tide Totem
-r(57248),	-- Glyph of Stormstrike
-r(57249),	-- Glyph of Lava Lash
-r(57250),	-- Glyph of Elemental Mastery
-r(57251),	-- Glyph of Water Mastery
-r(57252),	-- Glyph of Windfury Weapon
-r(57253),	-- Glyph of Thunderstorm
-r(57257),	-- Glyph of Incinerate
-r(57258),	-- Glyph of Conflagrate
-r(57259),	-- Glyph of Corruption
-r(57260),	-- Glyph of Curse of Agony
-r(57261),	-- Glyph of Death Coil
-r(57262),	-- Glyph of Fear
-r(57264),	-- Glyph of Felhunter
-r(57265),	-- Glyph of Health Funnel
-r(57266),	-- Glyph of Healthstone
-r(57267),	-- Glyph of Howl of Terror
-r(57268),	-- Glyph of Immolate
-r(57269),	-- Glyph of Imp
-r(57270),	-- Glyph of Searing Pain
-r(57271),	-- Glyph of Shadow Bolt
-r(57272),	-- Glyph of Shadowburn
-r(57273),	-- Glyph of Siphon Life
-r(57274),	-- Glyph of Soulstone
-r(57275),	-- Glyph of Succubus
-r(57276),	-- Glyph of Unstable Affliction
-r(57277),	-- Glyph of Voidwalker
-r(57719),	-- Glyph of Fire Blast
-r(58286),	-- Glyph of Aquatic Form
-r(58288),	-- Glyph of Unburdened Rebirth
-r(58289),	-- Glyph of Thorns
-r(58296),	-- Glyph of the Wild
-r(58297),	-- Glyph of the Pack
-r(58298),	-- Glyph of Scare Beast
-r(58299),	-- Glyph of Revive Pet
-r(58300),	-- Glyph of Possessed Strength
-r(58302),	-- Glyph of Feign Death
-r(58303),	-- Glyph of Arcane Intellect
-r(58305),	-- Glyph of Fire Ward
-r(58306),	-- Glyph of Frost Armor
-r(58307),	-- Glyph of Frost Ward
-r(58308),	-- Glyph of Slow Fall
-r(58310),	-- Glyph of the Penguin
-r(58311),	-- Glyph of Blessing of Kings
-r(58313),	-- Glyph of Lay on Hands
-r(58314),	-- Glyph of Blessing of Might
-r(58315),	-- Glyph of Sense Undead
-r(58317),	-- Glyph of Fading
-r(58318),	-- Glyph of Fortitude
-r(58319),	-- Glyph of Levitate
-r(58321),	-- Glyph of Shadow Protection
-r(58322),	-- Glyph of Shadowfiend
-r(58323),	-- Glyph of Blurred Speed
-r(58324),	-- Glyph of Distract
-r(58325),	-- Glyph of Pick Lock
-r(58326),	-- Glyph of Pick Pocket
-r(58327),	-- Glyph of Safe Fall
-r(58328),	-- Glyph of Vanish
-r(58329),	-- Glyph of Astral Recall
-r(58330),	-- Glyph of Renewed Life
-r(58331),	-- Glyph of Water Breathing
-r(58333),	-- Glyph of Water Walking
-r(58336),	-- Glyph of Unending Breath
-r(58337),	-- Glyph of Drain Soul
-r(58338),	-- Glyph of Curse of Exhaustion
-r(58339),	-- Glyph of Subjugate Demon \\ Glyph of Enslave Demon
-r(58340),	-- Glyph of Kilrogg
-r(58342),	-- Glyph of Battle
-r(58343),	-- Glyph of Bloodrage
-r(58344),	-- Glyph of Charge
-r(58346),	-- Glyph of Thunder Clap
-r(59315),	-- Glyph of Dash
-r(59326),	-- Glyph of Ghost Wolf
-r(59338),	-- Glyph of Rune Tap
-r(59339),	-- Glyph of Blood Strike
-r(59340),	-- Glyph of Death Strike
-r(59488),	-- Weapon Vellum II
-r(59499),	-- Armor Vellum II
-r(59500),	-- Armor Vellum III
-r(59501),	-- Weapon Vellum III
-r(59559),	-- Glyph of Holy Wrath
-r(59560),	-- Glyph of Seal of Righteousness
-r(59561),	-- Glyph of Seal of Vengeance
-r(61177),	-- Northrend Inscription Research
-r(61288),	-- Minor Inscription Research
-r(61677),	-- Glyph of Frostfire
-r(62162),	-- Glyph of Focus
-r(64246),	-- Glyph of Raptor Strike
-r(64247),	-- Glyph of Stoneclaw Totem
-r(64248),	-- Glyph of Life Tap
-r(64249),	-- Glyph of Scatter Shot
-r(64251),	-- Glyph of Salvation
-r(64252),	-- Glyph of Shield Wall
-r(64253),	-- Glyph of Explosive Trap
-r(64254),	-- Glyph of Holy Shock
-r(64255),	-- Glyph of Vigilance
-r(64256),	-- Glyph of Barkskin
-r(64257),	-- Glyph of Ice Barrier
-r(64259),	-- Glyph of Pain Suppression
-r(64261),	-- Glyph of Deluge \\ Glyph of Earth Shield
-r(64266),	-- Glyph of Dark Death
-r(64267),	-- Glyph of Disease
-r(64268),	-- Glyph of Berserk
-r(64270),	-- Glyph of Wild Growth
-r(64271),	-- Glyph of Chimera Shot
-r(64273),	-- Glyph of Explosive Shot
-r(64274),	-- Glyph of Deep Freeze
-r(64275),	-- Glyph of Living Bomb
-r(64276),	-- Glyph of Arcane Barrage
-r(64277),	-- Glyph of Beacon of Light
-r(64278),	-- Glyph of Hammer of the Righteous
-r(64279),	-- Glyph of Divine Storm
-r(64280),	-- Glyph of Dispersion
-r(64281),	-- Glyph of Guardian Spirit
-r(64282),	-- Glyph of Penance
-r(64283),	-- Glyph of Hymn of Hope
-r(64284),	-- Glyph of Hunger for Blood
-r(64285),	-- Glyph of Killing Spree
-r(64286),	-- Glyph of Shadow Dance
-r(64287),	-- Glyph of Thunder
-r(64288),	-- Glyph of Feral Spirit
-r(64289),	-- Glyph of Riptide
-r(64291),	-- Glyph of Haunt
-r(64294),	-- Glyph of Chaos Bolt
-r(64295),	-- Glyph of Bladestorm
-r(64296),	-- Glyph of Shockwave
-r(64297),	-- Glyph of Dancing Rune Weapon
-r(64298),	-- Glyph of Hungering Cold
-r(64299),	-- Glyph of Unholy Blight
-r(64300),	-- Glyph of Howling Blast
 r(64301),	-- Glyph of Envenom
-r(64302),	-- Glyph of Spell Reflection
-r(64303),	-- Glyph of Cloak of Shadows
-r(64304),	-- Glyph of Kill Shot
-r(64305),	-- Glyph of Divine Plea
-r(64307),	-- Glyph of Savage Roar
-r(64308),	-- Glyph of Shield of Righteousness
-r(64309),	-- Glyph of Mind Sear
-r(64310),	-- Glyph of Tricks of the Trade
-r(64311),	-- Glyph of Shadowflame
-r(64312),	-- Glyph of Enraged Regeneration
-r(64313),	-- Glyph of Nourish
-r(64314),	-- Glyph of Mirror Image
-r(64315),	-- Glyph of Fan of Knives
-r(64316),	-- Glyph of Hex
-r(64317),	-- Glyph of Demonic Circle
-r(64318),	-- Glyph of Metamorphosis
-r(65245),	-- Glyph of Survival Instincts
-3.3.5.12340
-r(67600),	-- Glyph of Claw
-r(71015),	-- Glyph of Rapid Rejuvenation
-r(71102),	-- Glyph of Quick Decay
 3.4.2.49311
 r(405005),	-- Glyph of Reckoning
 4.0.1.12911
@@ -355,8 +23,6 @@ r(86647),	--
 r(86650),	-- 
 r(89367),	-- 
 r(92027),	-- 
-r(92579),	-- 
-r(94000),	-- 
 r(94401),	-- 
 r(94402),	-- 
 r(94403),	-- 
@@ -393,7 +59,6 @@ r(112457),	--
 r(112458),	-- 
 r(112460),	-- 
 r(112461),	-- 
-r(112463),	-- 
 r(112465),	-- 
 r(112468),	-- 
 r(112883),	-- 
@@ -414,18 +79,15 @@ r(124452),	--
 r(124453),	-- 
 r(124454),	-- 
 r(124455),	-- 
-r(124456),	-- 
 r(124457),	-- 
 r(124459),	-- 
 r(124460),	-- 
-r(124461),	-- 
 r(124463),	-- 
 r(126153),	-- 
 r(126687),	-- 
 r(126701),	-- 
 r(126704),	-- 
 r(126801),	-- 
-r(127625),	-- 
 6.0.1.18179
 r(132167),	-- 
 r(135535),	-- 
@@ -438,7 +100,6 @@ r(148261),	--
 r(148268),	-- 
 r(148269),	-- 
 r(148272),	-- 
-r(148273),	-- 
 r(148279),	-- 
 r(148280),	-- 
 r(148283),	-- 
@@ -458,7 +119,6 @@ r(158748),	-- Inscription
 7.3.0.24473
 r(165465),	-- Research: Ink of the Sea
 r(186239),	-- 
-r(195115),	-- Inscription
 r(240254),	-- 
 8.0.1.25902
 r(256238),	-- Manual of Elemental Enchancement

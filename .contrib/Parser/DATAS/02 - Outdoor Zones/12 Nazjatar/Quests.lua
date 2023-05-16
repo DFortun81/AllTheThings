@@ -276,7 +276,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 120,
 			["g"] = {
-				i(169354),	-- Brilliant Glimmershell
+				i(169354),	-- Brilliant Glimmershell (PET!)
 			},
 		}),
 		q(57005, {	-- Becoming a Friend

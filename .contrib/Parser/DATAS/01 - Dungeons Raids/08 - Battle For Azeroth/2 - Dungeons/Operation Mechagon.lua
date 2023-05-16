@@ -93,7 +93,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 						e(2355, {	-- HK-8 Aerial Oppression Unit
 							["crs"] = { 150190 },	-- HK-8 Aerial Oppression Unit
 							["g"] = {
-							--	i(169385),	-- Microbot 8D (PET!)
 								i(168742),	-- Forceful Adaptable Logic Board
 								i(168743),	-- Forceful Efficient Logic Board
 								i(168741),	-- Forceful Refined Logic Board
@@ -177,7 +176,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								144249,	-- Omega Buster
 							},
 							["g"] = {
-							--	i(169378),	-- Golden Snorf (PET!)
 								i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 								i(169172),	-- Blueprint: Perfectly Timed Differential
 								i(168671),	-- Electromagnetic Resistors

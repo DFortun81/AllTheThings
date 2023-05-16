@@ -1387,7 +1387,42 @@ DF_PHASE_ONE = 100;
 
 -- Done defining Phases for Classic
 -- #endif
-
+-----------------------
+-- MISTS OF PANDARIA --
+-----------------------
+ADDED_5_0_4 = "added 5.0.4.16016";						-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
+REMOVED_5_0_4 = "removed 5.0.4.16016";					-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
+ADDED_5_1_0 = "added 5.1.0.16309";						-- Mists of Pandaria 5.1.0 Launch on November 27th, 2012
+REMOVED_5_1_0 = "removed 5.1.0.16309";					-- Mists of Pandaria 5.1.0 Launch on November 27th, 2012
+ADDED_5_2_0 = "added 5.2.0.16650";						-- Mists of Pandaria 5.2.0 Launch on March 5th, 2013
+removed_5_2_0 = "removed 5.2.0.16650";					-- Mists of Pandaria 5.2.0 Launch on March 5th, 2013
+ADDED_5_3_0 = "added 5.3.0.16981";						-- Mists of Pandaria 5.3.0 Launch on May 21st, 2013
+removed_5_3_0 = "removed 5.3.0.16981";					-- Mists of Pandaria 5.3.0 Launch on May 21st, 2013
+ADDED_5_4_0 = "added 5.4.0.17345";						-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
+removed_5_4_0 = "removed 5.4.0.17345";					-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
+ADDED_5_4_7 = "added 5.4.7.17898";						-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
+removed_5_4_7 = "removed 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
+-------------------------
+-- WARLORDS OF DRAENOR --
+-------------------------
+ADDED_6_0_2 = "added 6.0.2.19027";						-- Warlords of Draenor 6.0.2/Pre-Patch Launch on October 14th, 2014
+REMOVED_6_0_2 = "removed 6.0.2.19027";					-- Warlords of Draenor 6.0.2/Pre-Patch Launch on October 14th, 2014
+ADDED_6_0_3 = "added 6.0.3.19085";						-- Warlords of Draenor 6.0.3/Pre-Patch Launch on October 28th, 2014
+REMOVED_6_0_3 = "removed 6.0.3.19085";					-- Warlords of Draenor 6.0.3/Pre-Patch Launch on October 28th, 2014
+ADDED_6_0_3_LAUNCH = "added 6.0.3.19116";				-- Warlords of Draenor Launch on November 13th, 2014
+REMOVED_6_0_3_LAUNCH = "removed 6.0.3.19116";			-- Warlords of Draenor Launch on November 13th, 2014
+ADDED_6_1_0 = "added 6.1.0.19678";						-- Warlords of Draenor 6.1.0 Launch on February 24th, 2015
+REMOVED_6_1_0 = "removed 6.1.0.19678";					-- Warlords of Draenor 6.1.0 Launch on February 24th, 2015
+ADDED_6_1_2 = "added 6.1.2.19802";						-- Warlords of Draenor 6.1.2 Launch on March 24th, 2015
+REMOVED_6_1_2 = "removed 6.1.2.19802";					-- Warlords of Draenor 6.1.2 Launch on March 24th, 2015
+ADDED_6_2_0 = "added 6.2.0.20173";						-- Warlords of Draenor 6.2.0 Launch on June 22nd, 2015
+REMOVED_6_2_0 = "removed 6.2.0.20173";					-- Warlords of Draenor 6.2.0 Launch on June 22nd, 2015
+ADDED_6_2_2 = "added 6.2.2.20444";						-- Warlords of Draenor 6.2.2 Launch on September 1st, 2015
+REMOVED_6_2_2 = "removed 6.2.2.20444";					-- Warlords of Draenor 6.2.2 Launch on September 1st, 2015
+ADDED_6_2_3 = "added 6.2.3.20726";						-- Warlords of Draenor 6.2.3 Launch on November 18th, 2015
+REMOVED_6_2_3 = "removed 6.2.3.20726";					-- Warlords of Draenor 6.2.3 Launch on November 18th, 2015
+ADDED_6_2_4 = "added 6.2.4.21345";						-- Warlords of Draenor 6.2.4 Launch on March 22nd, 2016
+REMOVED_6_2_4 = "removed 6.2.4.21345";					-- Warlords of Draenor 6.2.4 Launch on March 22nd, 2016
 ------------
 -- LEGION --
 ------------

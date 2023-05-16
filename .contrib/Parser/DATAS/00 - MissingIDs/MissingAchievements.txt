@@ -33,21 +33,11 @@ ach(15207),	-- Challenger: Season 3
 ach(15208),	-- Duelist: Season 2
 ach(15209),	-- Rival: Season 2
 ach(15210),	-- Challenger: Season 2
-3.0.1.8622
-ach(1168),	-- Master of Alterac Valley
-ach(1170),	-- Master of Arathi Basin
-ach(1173),	-- Master of Warsong Gulch
 3.1.0.9767
 ach(1657),	-- Hallowed Be Thy Name
-ach(1677),	-- Loremaster of Eastern Kingdoms
-ach(1680),	-- Loremaster of Kalimdor
 ach(1684),	-- Brewmaster
 ach(1692),	-- Merrymaker
 ach(1707),	-- Fool For Love
-ach(2195),	-- Master of Strand of the Ancients
-ach(2776),	-- Master of Wintergrasp
-3.3.5.12340
-ach(3814),	-- Resilience Will Fix It (25 player)
 3.4.0.46158
 ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
 ach(16313),	-- Rival: Season 5
@@ -83,8 +73,9 @@ ach(17418),	-- Challenger: Season 6
 ach(18375),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 ach(18376),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 4.0.1.12911
-ach(4907),	-- Duskwood Quests
 ach(5020),	-- Observed - Guild Edition \\ He Feeds On Your Tears - Guild Edition
+6.0.1.18179
+ach(8106),	-- In the Hall of the Thunder King
 10.0.2.45779
 ach(16729),	-- To All the Squirrels Hidden Til Now \\ To All the Squirrels Hidden Till Now
 10.0.5.48001

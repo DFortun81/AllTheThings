@@ -43,7 +43,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 						filter(BATTLE_PETS, {
 							i(163798),	-- Captain Nibs (PET!)
-							i(169205),	-- Ghostly Whelpling (PET!)
+							i(169205, {	-- Ghostly Whelpling (PET!)
+								["timeline"] = { ADDED_8_2_0 },
+							}),
 							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(163800),	-- Poro (PET!)
 							i(163808),	-- Sandshell Chitterer (PET!)
@@ -148,8 +150,12 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 						filter(BATTLE_PETS, {
 							i(163804),	-- Kindleweb Spiderling (PET!)
-							i(166494),	-- Lord Woofington (PET!)
-							i(166488),	-- Rotting Ghoul (PET!)
+							i(166494, {	-- Lord Woofington (PET!)
+								["timeline"] = { ADDED_8_1_0 },
+							}),
+							i(166488, {	-- Rotting Ghoul (PET!)
+								["timeline"] = { ADDED_8_1_0 },
+							}),
 							i(163808),	-- Sandshell Chitterer (PET!)
 							i(163797),	-- Scuttle (PET!)
 						}),
@@ -201,7 +207,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(163808),	-- Sandshell Chitterer (PET!)
 							i(163797),	-- Scuttle (PET!)
-							i(166499),	-- Thunderscale Whelpling (PET!)
+							i(166499, {	-- Thunderscale Whelpling (PET!)
+								["timeline"] = { ADDED_8_1_0 },
+							}),
 							i(163807),	-- Tinder Pup (PET!)
 						}),
 						n(WEAPONS, {
@@ -292,7 +300,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 						filter(BATTLE_PETS, {
 							i(163808),	-- Sandshell Chitterer (PET!)
-							i(166488),	-- Rotting Ghoul (PET!)
+							i(166488, {	-- Rotting Ghoul (PET!)
+								["timeline"] = { ADDED_8_1_0 },
+							}),
 							i(163824),	-- Voru'kar Leecher (PET!)
 						}),
 						filter(TOYS, {
@@ -329,7 +339,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(163582),	-- Qinsho's Eternal Hound (MOUNT!)
 						}),
 						filter(BATTLE_PETS, {
-							i(169322),	-- Adventurous Hopling (PET!)
+							i(169322, {	-- Adventurous Hopling (PET!)
+								["timeline"] = { ADDED_8_2_0 },
+							}),
 							i(163802),	-- Inky (PET!)
 							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(163822),	-- Kunchong Hatchling (PET!)
@@ -718,24 +730,38 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(166470),	-- Stonehide Elderhorn (MOUNT!)
 				}),
 				filter(BATTLE_PETS, {
-					i(166486),	-- Baby Stonehide (PET!)
+					i(166486, {	-- Baby Stonehide (PET!)
+						["timeline"] = { ADDED_8_1_0 },
+					}),
 					i(163818),	-- Bloodstone Tunneler (PET!)
 					i(163805),	-- Craghoof Kid [Verdant Wilds / Molten Cay] (PET!)
 					i(163809),	-- Deathsting Scorpid [Molten Cay] (PET!)
 					i(163806),	-- False Knucklebump [Molten Cay] (PET!)
-					i(166493),	-- Firesting Buzzer (PET!)
-					i(166487),	-- Leatherwing Screecher (PET!)
+					i(166493, {	-- Firesting Buzzer (PET!)
+						["timeline"] = { ADDED_8_1_0 },
+					}),
+					i(166487, {	-- Leatherwing Screecher (PET!)
+						["timeline"] = { ADDED_8_1_0 },
+					}),
 					i(163815),	-- Littlehoof (PET!)
 					i(163820),	-- Muskflank Calfling (PET!)
-					i(166489),	-- Needleback Pup (PET!)
-					i(166498),	-- Scritches (PET!)
-					i(166492),	-- Shadefeather Hatchling (PET!)
+					i(166489, {	-- Needleback Pup (PET!)
+						["timeline"] = { ADDED_8_1_0 },
+					}),
+					i(166498, {	-- Scritches (PET!)
+						["timeline"] = { ADDED_8_1_0 },
+					}),
+					i(166492, {	-- Shadefeather Hatchling (PET!)
+						["timeline"] = { ADDED_8_1_0 },
+					}),
 					i(163816),	-- Snapper (PET!)
 					i(163819),	-- Snort (PET!)
 					i(163803),	-- Sparkleshell Sandcrawler (PET!)
 					i(163817),	-- Sunscale Hatchling [Skittering Hallow] (PET!)
 					i(163810),	-- Thistlebrush Bud [Molten Cay] (PET!)
-					i(166495),	-- Tonguelasher (PET!)
+					i(166495, {	-- Tonguelasher (PET!)
+						["timeline"] = { ADDED_8_1_0 },
+					}),
 				}),
 				n(WEAPONS, {
 					i(163928),	-- Stinkrot Smasher

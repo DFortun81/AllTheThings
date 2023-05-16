@@ -154,7 +154,7 @@ root(ROOTS.PetBattles, petbattle({
 				}),
 			},
 		}),
-		q(54186, {	-- Pet Battle Challenge: Gnomeregan
+		q(54186, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Pet Battle Challenge: Gnomeregan
 			["provider"] = { "n", 147070 },	-- Micro Zoox
 			["coord"] = { 31.2, 37.4, NEW_TINKERTOWN },
 			["sourceQuest"] = 54185,	-- Gnomeregan's New Guardians
@@ -218,8 +218,8 @@ root(ROOTS.PetBattles, petbattle({
 					},
 				}),
 			},
-		}),
-		q(56492, {	-- Pet Battle Challenge: Stratholme
+		})),
+		q(56492, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {	-- Pet Battle Challenge: Stratholme
 			["provider"] = { "n", 150987 },	-- Sean Wilkers
 			["coord"] = { 43.1, 19.9, EASTERN_PLAGUELANDS },
 			["sourceQuest"] = 56491,	-- Tiny Terrors of Stratholme
@@ -283,22 +283,22 @@ root(ROOTS.PetBattles, petbattle({
 						i(169666, {	-- Unopened Stratholme Supply Crate
 							["cost"] = { { "i", 169665, 1 } },	-- 1x Cleansed Remains
 						}),
-						i(169678, {	-- Ziggy
+						i(169678, {	-- Ziggy (PET!)
 							["cost"] = { { "i", 169665, 1 } },	-- 1x Cleansed Remains
 						}),
 						i(169677, {	-- Crypt Fiend (PET!)
 							["cost"] = { { "i", 169665, 2 } },	-- 2x Cleansed Remains
 						}),
-						i(169676, {	-- Contained Banshee Wail (Shrieker)
+						i(169679, {	-- Gruesome Belcher (PET!)
 							["cost"] = { { "i", 169665, 3 } },	-- 3x Cleansed Remains
 						}),
-						i(169679, {	-- Gruesome Belcher (PET!)
+						i(169676, {	-- Shrieker (PET!)
 							["cost"] = { { "i", 169665, 3 } },	-- 3x Cleansed Remains
 						}),
 					},
 				}),
 			},
-		}),
+		})),
 		q(45539, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Pet Battle Challenge: Wailing Caverns
 			["provider"] = { "n", 116781 },	-- Muyani
 			["coord"] = { 38.8, 68.2, NORTHERN_BARRENS },

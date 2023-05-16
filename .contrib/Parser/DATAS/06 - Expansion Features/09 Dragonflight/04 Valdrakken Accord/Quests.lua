@@ -510,6 +510,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 				["qg"] = 189857,	-- Rymek
 				["coord"] = { 22.0, 50.8, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(192744),	-- Rymek's Gift
+				},
 			}),
 			q(66190, {	-- So Close
 				["sourceQuests"] = {

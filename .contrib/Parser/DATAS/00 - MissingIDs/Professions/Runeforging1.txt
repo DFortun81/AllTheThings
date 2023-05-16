@@ -1,14 +1,5 @@
 3.0.1.8622
-r(53323),	-- Rune of Swordshattering
-r(53331),	-- Rune of Lichbane
-r(53341),	-- Rune of Cinderglacier
-r(53342),	-- Rune of Spellshattering
 r(53428),	-- Runeforging
-3.0.1.8874
-r(54446),	-- Rune of Swordbreaking
-r(54447),	-- Rune of Spellbreaking
-3.3.5.12340
-r(70164),	-- Rune of the Nerubian Carapace
 
 
 Nothing is Missing in Runeforging1ItemDB.lua! Good Work!

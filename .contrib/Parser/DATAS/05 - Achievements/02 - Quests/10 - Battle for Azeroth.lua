@@ -138,9 +138,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			}),
 		})),
 		a(ach(13384)),	-- Kul Tirans Don't Look at Explosions
-		a(ach(13062, {	-- Let's Bee Friends
-			i(163776),		--	Large Honeycomb Cluster (Bumbles)
-		})),
 		ach(13048, {	-- Life Finds a Way... To Die!
 			crit(1, {		-- Thuderfoot the Brutosaur slain
 				["coord"] = { 67.7, 29.0, ZULDAZAR },

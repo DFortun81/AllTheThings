@@ -61,7 +61,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(11706),	-- The Original (PvP Season 1)
 		ach(11758),	-- Thunderwear (Throne of Thunder)
 		ach(11709),	-- Tough Threads (PvP Season 4)
-		ach(13571),	-- Under the Seams (The Eternal Palace)
 		ach(11750),	-- Undying Aesthetic (Naxxramas)
 		ach(11629),	-- Untamed Beauty (PvP Season 16)
 		ach(11714),	-- Viciously Vintage (PvP Season 9)

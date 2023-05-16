@@ -51,16 +51,16 @@ local BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS = {
 };
 local RETURN_TO_THE_BFA_ORPHANAGE_GROUPS = {
 	i(167010, {	-- Beakbert (PET!)
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(167009, {	-- Scaley (PET!)
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(167008, {	-- Mr. Crabs (PET!)
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(167011, {	-- Froglet (PET!)
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	PET_CARE_PACKAGE,
 	i(23022),	-- Curmudgeon's Payoff

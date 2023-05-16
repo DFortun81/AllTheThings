@@ -208,7 +208,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(128424, {	-- Brightpaw (PET!)
 			["timeline"] = { "added 6.2.2.20395" },
 		}),
-		i(160588, {	-- Cap'n Crackers
+		i(160588, {	-- Cap'n Crackers (PET!)
 			["timeline"] = { "added 8.0.1.27602" },
 		}),
 		i(70099, {	-- Cenarion Hatchling
@@ -279,13 +279,13 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(78916, {	-- Soul of the Aspects
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(153541, {	-- Tottle
+		i(153541, {	-- Tottle (PET!)
 			["timeline"] = { "added 7.3.5.25937" },
 		}),
 		i(147900, {	-- Twilight
 			["timeline"] = { "added 7.3.0.24781" },
 		}),
-		i(160587, {	-- Whomper
+		i(160587, {	-- Whomper (PET!)
 			["timeline"] = { "added 8.0.1.28153" },
 		}),
 		i(49663, {	-- Wind Rider Cub

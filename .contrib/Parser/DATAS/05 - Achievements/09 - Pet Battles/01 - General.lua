@@ -15,12 +15,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		petbattle(ach(11856, {	-- Pet Battle Challenge: Deadmines*
 			i(151632),	-- Mining Monkey (PET!)
 		})),
-		petbattle(ach(13269, {	-- Pet Battle Challenge: Gnomeregan*
-			i(165894),	-- Mini Spider Tank (PET!)
-		})),
-		petbattle(ach(13627, {	-- Pet Battle Challenge: Stratholme
-			i(169670),	-- Minimancer (PET!)
-		})),
 		petbattle(ach(11765, {	-- Pet Battle Challenge: Wailing Caverns*
 			i(147543),	-- Son of Skum (PET!)
 		})),
@@ -110,9 +104,9 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			ach(7498),	-- Taming the Great Outdoors [15)
 			ach(6601),	-- Taming the Wild [1)
 		})),
-		petbattle(ach(13695, {	-- Team Aquashock
+		petbattle(ach(13695, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {	-- Team Aquashock
 			i(169349),	-- Kelpfin (PET!)
-		})),
+		}))),
 		petbattle(ach(8348,  {	-- The Longest Day*
 			i(98715),	-- Marked Flawless Battle-Stone
 			crit(1),	-- Nicki Tinytech [Hellfire Peninsula)

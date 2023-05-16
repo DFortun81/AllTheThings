@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(BORALUS, {
 		n(EMISSARY_QUESTS, {
@@ -68,24 +67,20 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
-			q(54454, {	-- Supplies from the 7th Legion
+			q(54454, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Supplies from the 7th Legion
 				["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
-				["lvl"] = 120,
 				["coord"] = { 69.32, 24.94, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 				["g"] = {
 					i(166300, {	-- 7th Legion Supplies
 						i(166879),	-- Rallying War Banner (TOY!)
-						i(166279, {	-- Technique: Contract: 7th Legion [Rank 3] (RECIPE!)
-							["timeline"] = { "added 8.1.0" },
-						}),
+						i(166279),	-- Technique: Contract: 7th Legion [Rank 3] (RECIPE!)
 					}),
 				},
-			}),
-			q(54458, {	-- Supplies from Proudmoore Admiralty
+			})),
+			q(54458, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Supplies from Proudmoore Admiralty
 				["provider"] = { "n", 135808 },	-- Provisioner Fray
-				["lvl"] = 120,
 				["coord"] = { 67.52, 21.56, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
@@ -95,7 +90,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						i(166702),	-- Proudmoore Music Box (TOY!)
 					}),
 				},
-			}),
+			})),
 		}),
 	}),
 })));

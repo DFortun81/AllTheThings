@@ -147,7 +147,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
-			n(155069, {	-- Honeyback Harvester
+			n(155069, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {	-- Honeyback Harvester
 				["description"] = "You can participate in Honeyback Harvester events as many times a day as you want, but you can only loot the final jelly once per hour (loot eligibility resets on the hour, not based upon your last kill).  If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the cooldown period and even if you have already completed the specific rare's weekly quest.",
 				["coords"] = {
 					{ 25.6, 73.2, STORMSONG_VALLEY },
@@ -165,8 +165,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(172492),	-- Sunsoaked Flitter (PET!)
 					i(170175),	-- Technique: Glyph of Dire Bees (RECIPE!)
 				},
-			}),
-			n(154154, {	-- Honey Smasher
+			})),
+			n(154154, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {	-- Honey Smasher
 				["questID"] = 57674,
 				["isDaily"] = true,
 				["coords"] = {
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["f"] = RECIPES,
 					}),
 				},
-			}),
+			})),
 			n(141043, {	-- Jakala the Cruel
 				["description"] = "Due to phasing issues, in order to see this rare you need to enter Brennadam from the southern bridge at 57.6, 66.5.  This will trigger a cutscene and place you in the phase with the rare.",
 				--	doc marrtens and jakala both complete one another's quests.  it's unclear which quest specifically belongs to which rare.

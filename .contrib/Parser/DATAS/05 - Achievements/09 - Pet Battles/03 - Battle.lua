@@ -1579,9 +1579,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			ach(6596),    -- Experienced Pet Brawler (50)
 			ach(6595),    -- Pet Brawler (10)
 		})),
-		ach(13766, {	-- Malowned
-			i(170102),	-- Burnout (PET!)
-		}),
 		ach(8518, {	-- Master of the Master
 			crit(1),	-- Blingtron 4000
 			crit(2),	-- Wrathion

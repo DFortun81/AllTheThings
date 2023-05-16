@@ -1,4 +1,4 @@
-1.13.0.28211	
+1.13.0.28211
 q(614),	-- The Captain's Chest	 CLASSIC:The Captain's Chest	 TBC:The Captain's Chest	 WOTLK:The Captain's Chest	
 q(615),	-- The Captain's Cutlass	 CLASSIC:The Captain's Cutlass	 TBC:The Captain's Cutlass	 WOTLK:The Captain's Cutlass	
 q(618),	-- Facing Negolash	 CLASSIC:Facing Negolash	 TBC:Facing Negolash	 WOTLK:Facing Negolash	
@@ -38,7 +38,6 @@ q(5654),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK
 q(5655),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	
 q(5656),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	
 q(5657),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	
-q(5658),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	
 q(5660),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	
 q(5661),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	
 q(5662),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	
@@ -146,6 +145,7 @@ q(9347),	-- Voidwalkers Gone Wild	 TBC:Voidwalkers Gone Wild	 WOTLK:Voidwalkers 
 q(9348),	-- Ravager Roundup	 TBC:Ravager Roundup	 WOTLK:Ravager Roundup	
 q(9350),	-- A Peon's Work is Never Done	 TBC:A Peon's Work is Never Done	 WOTLK:A Peon's Work is Never Done	
 q(9354),	-- Searching for New Materials	 TBC:Searching for New Materials	 WOTLK:Searching for New Materials	
+q(9357),	-- Report to Aeldon Sunbrand	 TBC:Report to Aeldon Sunbrand	 WOTLK:Report to Aeldon Sunbrand	
 q(9379),	-- Fortifying the Felhunter	 TBC:Fortifying the Felhunter	 WOTLK:Fortifying the Felhunter	
 q(9432),	-- Travel to Astranaar	 TBC:Travel to Astranaar	 WOTLK:Travel to Astranaar	
 q(9460),	-- Combining Forces	 TBC:Combining Forces	 WOTLK:Combining Forces	
@@ -1482,13 +1482,11 @@ q(75027),	-- PTR:Aerial Domination
 q(75137),	--
 q(75142),	--
 q(75157),	--
-q(75162),	-- Conjuring Elements	
 q(75201),	--
 q(75204),	--
 q(75205),	--
 q(75206),	--
 q(75207),	--
-q(75208),	--
 q(75209),	--
 q(75210),	--
 q(75213),	--
@@ -1496,11 +1494,9 @@ q(75220),	--
 q(75225),	--
 q(75226),	--
 q(75229),	--
-q(75234),	-- Scratch and Sniff	
 q(75235),	--
 q(75242),	--
 q(75243),	--
-q(75256),	--
 q(75264),	--
 q(75279),	--
 q(75282),	--
@@ -1514,7 +1510,6 @@ q(75338),	-- Lavermix
 q(75341),	--
 q(75342),	-- Kronkapace	
 q(75389),	--
-q(75393),	-- Making Scents	
 q(75415),	--
 q(75416),	--
 q(75418),	--
@@ -1528,9 +1523,6 @@ q(75446),	--
 q(75452),	--
 q(75453),	--
 q(75477),	--
-q(75514),	--
-q(75516),	-- Successful Interventions	 PTR:Squish Squash	
-q(75517),	-- Sneak and Sniff	
 q(75524),	--
 q(75545),	--
 q(75546),	--
@@ -1589,11 +1581,8 @@ q(75614),	--
 q(75615),	--
 q(75616),	--
 q(75618),	--
-q(75620),	-- Liars in Light	 PTR:Reflections in Light	
-q(75621),	-- Element Whispers	
 10.1.0.48537
 q(75627),	--
-q(75628),	--
 q(75629),	--
 q(75630),	--
 q(75631),	--
@@ -1605,100 +1594,44 @@ q(75715),	--
 q(75716),	--
 q(75717),	--
 q(75718),	--
-q(75732),	--
-q(75733),	--
-q(75734),	--
-q(75735),	--
-q(75736),	--
-q(75737),	--
-q(75738),	--
-q(75739),	--
-q(75740),	--
-q(75756),	--
 q(75763),	--
 q(75774),	--
 q(75775),	--
 q(75818),	--
 q(75819),	--
-q(75837),	--
-q(75838),	--
-q(75839),	--
-q(75840),	--
-q(75841),	--
-q(75842),	--
-q(75843),	--
-q(75844),	--
-q(75845),	--
-q(75846),	--
-q(75847),	--
-q(75848),	--
-q(75849),	--
-q(75850),	--
-q(75851),	--
-q(75852),	--
-q(75853),	--
-q(75854),	--
-q(75855),	--
-q(75856),	--
-q(75857),	--
-q(75858),	--
-q(75862),	--
-q(75863),	--
 q(75864),	--
 q(75866),	--
 10.1.0.48776
-q(75893),	--
 q(75894),	--
-q(75895),	--
 q(75896),	--
 q(75897),	--
-q(75898),	--
 q(75899),	--
 q(75900),	--
-q(75901),	--
 q(75902),	--
 q(75903),	--
 q(75905),	--
-q(75906),	--
-q(75907),	--
 q(75909),	--
 q(75911),	--
 q(75912),	--
-q(75915),	--
-q(75917),	--
-q(75925),	--
-q(75926),	--
-q(75927),	--
-q(75929),	--
-q(75931),	--
 q(75942),	--
 q(75943),	--
-q(75944),	--
 q(75946),	--
 q(75947),	--
 q(75968),	--
-q(75992),	--
 q(75995),	--
 q(75999),	--
 q(76001),	--
 q(76002),	--
-q(76003),	--
 q(76005),	--
 q(76006),	--
 q(76007),	--
 q(76008),	--
 q(76009),	--
 q(76010),	--
-q(76011),	--
 q(76012),	--
 10.1.0.48898
-q(75996),	-- Your Weight in Gold	
-q(76013),	--
 q(76018),	--
-q(76019),	--
 q(76020),	--
-q(76027),	-- Flapping and Screaming	
-q(76081),	-- Liars of Spirit	
 q(76082),	--
 q(76109),	--
 q(76111),	--

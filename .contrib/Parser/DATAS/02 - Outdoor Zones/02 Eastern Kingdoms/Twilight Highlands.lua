@@ -233,7 +233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					pet(2677, {	-- Twilight Whelpling (PET!)
 						["coord"] = { 20.6, 57.6, TWILIGHT_HIGHLANDS },
-						["timeline"] = { "added 8.2.0" },
+						["timeline"] = { ADDED_8_2_0 },
 					}),
 					p(548, {	-- Wildhammer Gryphon Hatchling
 						["crs"] = { 62900 },

@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["g"] = COMMON_BFA_PVP_RECIPES_S4,
 			}),
-			n(148922, {	-- Captain Klarisa
+			n(148922, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Captain Klarisa
 				["coord"] = { 66.0, 32.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
 				},
-			}),
+			})),
 			n(161091, {	-- Captain Nightrunner
 				["coord"] = { 66.2, 32.1, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -1272,7 +1272,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
-			n(148927, {	-- Provisioner Stoutforge
+			n(148927, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Provisioner Stoutforge
 				["coord"] = { 66.8, 25.7, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -1312,14 +1312,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(166766, {	-- Tidesages' Warscroll
 						["cost"] = { { "c", 1717, 75 }, },	-- 75x Legion Service Medal
 					}),
-					i(166346, {	-- Trecker's Cage (PET!)
+					i(166346, {	-- Trecker (PET!)
 						["cost"] = { { "c", 1717, 100 }, },	-- 100x Legion Service Medal
 					}),
 					i(166548, {	-- War-Torn Royal Blue Cloak
 						["cost"] = { { "c", 1717, 50 }, },	-- 50x Legion Service Medal
 					}),
 				},
-			}),
+			})),
 			n(130368, {	-- Samuel D. Colton III <Jewelcrafting Trainer>
 				["coord"] = { 75.0, 10.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,

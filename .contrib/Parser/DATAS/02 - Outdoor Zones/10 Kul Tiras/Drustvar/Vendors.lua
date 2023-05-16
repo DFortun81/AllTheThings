@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(163510, {	-- Crimson Frog (PET!)
 						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
 					}),
-					i(163492, {	-- Drustvar Piglet
+					i(163492, {	-- Drustvar Piglet (PET!)
 						["sourceQuests"] = { 47950 },	-- Cured Ham
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),

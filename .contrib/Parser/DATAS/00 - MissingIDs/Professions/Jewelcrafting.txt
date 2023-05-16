@@ -42,90 +42,39 @@ r(48789),	-- Purified Shadowsong Amethyst
 3.0.1.8622
 r(51311),	-- Jewelcrafting
 r(53834),	-- Runed Bloodstone
-r(53835),	-- Bright Bloodstone
-r(53853),	-- Smooth Sun Crystal
-r(53855),	-- Thick Sun Crystal
 r(53862),	-- Glowing Shadow Crystal
-r(53863),	-- Purified Shadow Crystal
-r(53864),	-- Royal Shadow Crystal
-r(53866),	-- Balanced Shadow Crystal
-r(53867),	-- Infused Shadow Crystal
-r(53868),	-- Regal Shadow Crystal
 r(53878),	-- Glinting Huge Citrine
-r(53881),	-- Luminous Huge Citrine
 r(53886),	-- Wicked Huge Citrine
 r(53887),	-- Pristine Huge Citrine
-r(53888),	-- Empowered Huge Citrine
 r(53889),	-- Stark Huge Citrine
-r(53890),	-- Stalwart Huge Citrine
-r(53916),	-- Jagged Dark Jade
-r(53926),	-- Dazzling Dark Jade
-r(53927),	-- Sundered Dark Jade
 r(53928),	-- Lambent Dark Jade
-r(53929),	-- Opaque Dark Jade
-r(53930),	-- Energized Dark Jade
-r(53931),	-- Radiant Dark Jade
-r(53940),	-- Sparkling Chalcedony
-r(53947),	-- Bright Scarlet Ruby
-r(53950),	-- Fractured Scarlet Ruby
-r(53953),	-- Sparkling Sky Sapphire
 r(53956),	-- Brilliant Autumn's Glow
-r(53959),	-- Thick Autumn's Glow
 r(53964),	-- Tenuous Twilight Opal
-r(53967),	-- Royal Twilight Opal
-r(53969),	-- Balanced Twilight Opal
-r(53970),	-- Infused Twilight Opal
-r(53971),	-- Regal Twilight Opal
-r(53973),	-- Puissant Twilight Opal
-r(53979),	-- Deadly Monarch Topaz
-r(53982),	-- Deft Monarch Topaz
-r(53983),	-- Luminous Monarch Topaz
 r(53989),	-- Pristine Monarch Topaz
-r(53990),	-- Empowered Monarch Topaz
 r(53995),	-- Timeless Forest Emerald
 r(54002),	-- Seer's Forest Emerald
 r(54004),	-- Shining Forest Emerald
 r(54006),	-- Intricate Forest Emerald
-r(54007),	-- Dazzling Forest Emerald
-r(54008),	-- Sundered Forest Emerald
-r(54010),	-- Opaque Forest Emerald
 r(54013),	-- Tense Forest Emerald
 3.0.1.8874
 r(55534),	-- Gem Perfection
-r(56054),	-- Bright Dragon's Eye
 r(56074),	-- Brilliant Dragon's Eye
-r(56076),	-- Fractured Dragon's Eye
 r(56077),	-- Lustrous Dragon's Eye
-r(56089),	-- Thick Dragon's Eye
 3.3.5.12340
-r(66430),	-- Dazzling Eye of Zul
 r(66433),	-- Seer's Eye of Zul
-r(66436),	-- Sundered Eye of Zul
 r(66437),	-- Shining Eye of Zul
 r(66438),	-- Tense Eye of Zul
 r(66440),	-- Intricate Eye of Zul
-r(66444),	-- Opaque Eye of Zul
-r(66449),	-- Bright Cardinal Ruby
-r(66451),	-- Fractured Cardinal Ruby
 r(66500),	-- Lustrous Majestic Zircon
 r(66503),	-- Brilliant King's Amber
-r(66504),	-- Thick King's Amber
-r(66553),	-- Balanced Dreadstone
 r(66555),	-- Glowing Dreadstone
-r(66558),	-- Royal Dreadstone
-r(66559),	-- Regal Dreadstone
-r(66563),	-- Puissant Dreadstone
-r(66564),	-- Infused Dreadstone
 r(66565),	-- Tenuous Dreadstone
-r(66566),	-- Luminous Ametrine
 r(66575),	-- Glinting Ametrine
 r(66577),	-- Wicked Ametrine
 r(66578),	-- Glimmering Ametrine
-r(66580),	-- Empowered Ametrine
 r(66587),	-- Stark Ametrine
 4.0.1.12911
 r(73318),	-- Jewelcrafting
-r(73624),	-- Jeweler's Sapphire Monocle
 r(73639),	-- Figurine - King of Boars
 r(73640),	-- Figurine - Demon Panther
 r(73641),	-- Figurine - Earthen Guardian

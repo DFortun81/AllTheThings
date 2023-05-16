@@ -39296,7 +39296,6 @@ s(26006)/i(53044),	--
 s(26007)/i(53045),	-- 
 s(26008)/i(53046),	-- 
 s(26009)/i(53047),	-- 
-s(26010)/i(53048),	-- sday Message \\ Doomsday Message
 s(26011)/i(53055),	-- Monster - Gnomeregan Bonechopper (Red)
 s(26012)/i(53056),	-- Monster - Gnomeregan Bonechopper (Blue)
 s(26013)/i(53096),	-- Monster - Mace, Gear
@@ -65011,22 +65010,14 @@ s(185531)/i(202608),	-- Power-Draining Spire
 s(185532)/i(202608),	-- Power-Draining Spire
 s(185533)/i(202608),	-- Power-Draining Spire
 s(185554)/i(204358),	-- 
-s(185566)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
-s(185567)/i(204409),	-- Heatbinder's Burning Slippers \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Feet
 s(185570)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
 s(185571)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
 s(185574)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
 s(185575)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
-s(185576)/i(204418),	-- Ashen Zaralek Cuirass \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - CHEST 2
-s(185577)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(185578)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
 s(185579)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
-s(185583)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
-s(185584)/i(204426),	-- Blazestalker's Smelted Cleats \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - FEET 3
 s(185585)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(185586)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
-s(185589)/i(204431),	-- Epaulettes of Draconic Conquest \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Plate - SHOULDER 2
-s(185590)/i(204432),	-- Vakan's Shale Greatbelt \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Plate - WAIST 3
 s(185610)/i(204483),	-- 
 s(185611)/i(204484),	-- 
 s(185612)/i(204486),	-- 
@@ -65116,6 +65107,7 @@ s(186664)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon
 s(186693)/i(204429),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - HEAD 2
 s(186695)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186697)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
+s(186700)/i(204465),	-- Voice of the Silent Star
 s(186715)/i(205381),	-- Obsidian Gladiator's Silk Hood
 s(186716)/i(205381),	-- Obsidian Gladiator's Silk Hood
 s(186862)/i(205509),	-- Obsidian Gladiator's Silk Gloves
