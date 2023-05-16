@@ -249,7 +249,7 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),
 						}),
-						i(104291, {	-- Swarmling of Gu'chi (PET!)
+						i(104291, {	-- Gu'chi Swarmling (PET!)
 							crit(34, {	-- Swarmling of Gu'chi
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),
@@ -448,7 +448,7 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),
 						}),
-						i(104307, {	-- Jadefire Spirit
+						i(104307, {	-- Jadefire Spirit (PET!)
 							crit(21, {	-- Jadefire Spirit
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),

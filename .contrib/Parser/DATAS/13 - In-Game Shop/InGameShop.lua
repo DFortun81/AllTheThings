@@ -190,7 +190,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 	}),
 	filter(BATTLE_PETS, {
-		i(106240, {	-- Alterac Brew-Pup
+		i(106240, {	-- Alterac Brew-Pup (PET!)
 			["timeline"] = { "added 5.4.1.17481" },
 		}),
 		i(118516, {	-- Argi
@@ -202,7 +202,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		pet(3153, {	-- Blinky
 			["timeline"] = { "added 9.1.5.41488" },
 		}),
-		i(98550, {	-- Blossoming Ancient
+		i(98550, {	-- Blossoming Ancient (PET!)
 			["timeline"] = { "added 5.3.0.16825" },
 		}),
 		i(128424, {	-- Brightpaw (PET!)
@@ -223,7 +223,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		pet(2623, {	-- Dottie (PET!)
 			["timeline"] = { "added 8.3.0.33062" },
 		}),
-		i(109014, {	-- Dread Hatchling
+		i(109014, {	-- Dread Hatchling (PET!)
 			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
 		}),
 		i(69847, {	-- Guardian Cub (Original Version which was bound for 24h)

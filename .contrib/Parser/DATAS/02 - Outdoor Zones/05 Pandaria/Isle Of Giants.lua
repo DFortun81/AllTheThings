@@ -34,6 +34,7 @@ _.Zones =
 				n(ZONE_DROPS, {
 					i(94573, {	-- Direhorn Runt (PET!)
 						["crs"] = { 69983 },	-- Primal Direhorn
+						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(94288, {	-- Giant Dinosaur Bone
 						["description"] = "These bones can be gathered and turned into Ku'ma on the Isle of Giants.\n\n        1 Bone = 1g 14s\n      9 Bones = 1 Mote of Harmony\n    99 Bones = 1 Spirit of Harmony\n  999 Bones = Spectral Porcupette\n9999 Bones = Primal Raptor",

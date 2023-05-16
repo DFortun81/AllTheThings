@@ -625,7 +625,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			title(362, {	-- , the Tomb Raider
 				["style"] = 3,
 			}),
-			i(101426),		-- Micronax Controller (you also get this - Crieve)
+			i(101426),		-- Micronax (PET!) (you also get this - Crieve)
 			crit(1),		-- Fel Turkey!
 			crit(2),		-- Grin and Bear It
 			crit(3),		-- Bingo!

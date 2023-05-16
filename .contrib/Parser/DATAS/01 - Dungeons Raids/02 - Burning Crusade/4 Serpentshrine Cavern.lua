@@ -92,7 +92,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						["classes"] = { SHAMAN },
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(97553, {	-- Tainted Core (PET!)
+					i(97553, {	-- Tainted Waveling (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(30049),	-- Fathomstone
@@ -189,7 +189,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1571, {	-- Morogrim Tidewalker
 				["creatureID"] = 21213,
 				["groups"] = {
-					i(97552, {	-- Shell of Tide-Calling (PET!)
+					i(97552, {	-- Tideskipper (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(30082),	-- Talon of Azshara
@@ -221,7 +221,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					ach(5088, {	-- Serpentshrine Cavern Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
-					i(97554, {	-- Dripping Strider Egg (PET!)
+					i(97554, {	-- Coilfang Stalker (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(30242, {	-- Helm of the Vanquished Champion

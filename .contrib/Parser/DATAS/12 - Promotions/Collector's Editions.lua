@@ -226,7 +226,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			["groups"] = {
 				ach(8917),	-- Collector's Edition: Dread Hatchling
 				ach(8916),	-- Collector's Edition: Dread Raven
-				i(109014),	-- Dread Hatchling
+				i(109014),	-- Dread Hatchling (PET!)
 				i(109013),	-- Dread Raven (MOUNT!)
 			},
 		}),
@@ -340,7 +340,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 		["timeline"] = { "added 5.4.2.17585" },
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin
-			i(106256),	-- Treasure Goblin's Pack (Treasure Goblin)
+			i(106256),	-- Treasure Goblin (PET!)
 		},
 	})),
 	n(-568, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Overwatch: Origins

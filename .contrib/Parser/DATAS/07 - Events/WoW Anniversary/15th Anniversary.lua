@@ -63,7 +63,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 							i(171479),	-- Coral Band of the Revived
 							i(171478),	-- Ring of Endless Coils
 							i(171482),	-- Prism of Inner Calm
-							i(97554),	-- Coilfang Strider (PET!)
+							i(97554),	-- Coilfang Stalker (PET!)
 						},
 					}),
 					e(1576, {	-- Kael'thas Sunstrider

@@ -165,7 +165,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 			i(95411),	-- Torn Zandalari Journal
 			i(95412),	-- Frayed Zandalari Journal
 			i(95408),	-- Waterlogged Zandalari Journal
-			i(97961, {	-- Half-Empty Food Container (Filthling Pet)
+			i(97961, {	-- Filthling (PET!)
 				["crs"] = { 69251 },	-- Quivering Filth
 			}),
 		}),

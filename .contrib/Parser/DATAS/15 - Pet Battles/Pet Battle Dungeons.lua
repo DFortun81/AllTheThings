@@ -15,16 +15,16 @@ root(ROOTS.PetBattles, petbattle({
 				n(73082, {	-- Master Li <Celestial Tournament Host>
 					["coord"] = { 34.7, 59.6, TIMELESS_ISLE },
 					["g"] = {
-						i(102145, {	-- Chi-Chi, Hatchling of Chi-Ji
+						i(102145, {	-- Chi-Chi, Hatchling of Chi-Ji (PET!)
 							["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
 						}),
-						i(101771, {	-- Xu-Fu, Cub of Xuen
+						i(101771, {	-- Xu-Fu, Cub of Xuen (PET!)
 							["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
 						}),
-						i(102147, {	-- Yu'la, Broodling of Yu'lon
+						i(102147, {	-- Yu'la, Broodling of Yu'lon (PET!)
 							["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
 						}),
-						i(102146, {	-- Zao, Calfling of Niuzao
+						i(102146, {	-- Zao, Calfling of Niuzao (PET!)
 							["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
 						}),
 					},

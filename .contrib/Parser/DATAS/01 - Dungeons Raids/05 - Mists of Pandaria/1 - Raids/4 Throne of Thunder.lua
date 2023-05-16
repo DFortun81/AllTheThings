@@ -472,8 +472,8 @@ _.Instances = { tier(MOP_TIER, {
 						})),
 						cr(69017, e(820, {	-- Primordius
 							i(95343),	-- Treasures of the Thunder King
-							i(97959),	-- Quivering Blob (PET!)
-							i(97960),	-- Dark Quivering Blob
+							i(97959),	-- Living Fluid (PET!)
+							i(97960),	-- Viscous Horror (PET!)
 							i(95758),	-- Acid-Spine Bonemace
 							i(95768),	-- Greatshield of the Gloaming
 							i(95765),	-- Clear-Mind Helm
@@ -1010,7 +1010,7 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(69017, e(820, {	-- Primordius
 						ach(8037),	-- Genectically Unmodified Organism
-						i(97960),	-- Dark Quivering Blob (PET!)
+						i(97960),	-- Viscous Horror (PET!)
 						i(94937),	-- Acid-Spine Bonemace
 						i(94945),	-- Greatshield of the Gloaming
 						i(94949),	-- Clear-Mind Helm
@@ -1711,7 +1711,7 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(69017, e(820, {	-- Primordius
 						ach(8063),	-- Heroic: Primordius
-						i(97960),	-- Dark Quivering Blob (PET!)
+						i(97960),	-- Viscous Horror (PET!)
 						i(96502),	-- Acid-Spine Bonemace
 						i(96512),	-- Greatshield of the Gloaming
 						i(96509),	-- Clear-Mind Helm

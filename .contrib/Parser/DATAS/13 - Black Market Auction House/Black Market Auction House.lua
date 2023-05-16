@@ -213,7 +213,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(44721),	-- Proto-Drake Whelp
 		i(183621),	-- Putrid Geist
 		i(94574),	-- Pygmy Direhorn
-		i(97959),	-- Quivering Blob
+		i(97959),	-- Living Fluid
 		i(48124),	-- Razormaw Hatchling
 		i(48126),	-- Razzashi Hatchling
 		i(34492),	-- Rocket Chicken

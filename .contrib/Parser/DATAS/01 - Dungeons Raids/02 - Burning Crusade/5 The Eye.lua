@@ -143,7 +143,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1573, {	-- Al'ar
 				["creatureID"] = 19514,
 				["groups"] = {
-					i(97557, {	-- Brilliant Phoenix Hawk Feather (PET!)
+					i(97557, {	-- Phoenix Hawk Hatchling (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(29949),	-- Arcanite Steam-Pistol
@@ -168,7 +168,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1574, {	-- Void Reaver
 				["creatureID"] = 19516,
 				["groups"] = {
-					i(97555, {	-- Tiny Fel Engine Key (PET!)
+					i(97555, {	-- Pocket Reaver (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(30248, {	-- Pauldrons of the Vanquished Champion
@@ -194,7 +194,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1575, {	-- High Astromancer Solarian
 				["creatureID"] = 18805,
 				["groups"] = {
-					i(97556, {	-- Crystal of the Void (PET!)
+					i(97556, {	-- Lesser Voidcaller (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(29981),	-- Ethereum Life-Staff

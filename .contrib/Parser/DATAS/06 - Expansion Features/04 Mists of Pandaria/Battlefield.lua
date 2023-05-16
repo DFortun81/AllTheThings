@@ -283,7 +283,7 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 						i(97942),	-- Sen'jin Spirit Drum (TOY!)
 						i(98552),	-- Xan'tish's Flute (TOY!)
 						i(97921),	-- Bom'bay's Color-Seein' Sauce (TOY!)
-						i(97821),	-- Gahz'rooki's Summoning Stone (PET!)
+						i(97821),	-- Gahz'rooki (PET!)
 						i(LATENT_KORKRON_HELM),
 						i(LATENT_KORKRON_SPAULDERS),
 						i(LATENT_KORKRON_CHESTPIECE),

@@ -41,7 +41,7 @@ root(ROOTS.Promotions, n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bl
 	ach(8793, {	-- Blizzcon 2013 - Murkalot
 		["timeline"] = { "added 5.4.1.17481" },
 	}),
-	i(106244, {	-- Murkalot's Flail Pet
+	i(106244, {	-- Murkalot (PET!)
 		["timeline"] = { "added 5.4.1.17481" },
 	}),
 

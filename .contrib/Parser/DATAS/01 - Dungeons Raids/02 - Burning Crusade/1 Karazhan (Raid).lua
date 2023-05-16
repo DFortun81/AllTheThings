@@ -825,7 +825,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							17603,	-- Grandmother
 						},
 						["groups"] = {
-							i(97548, {	-- Spiky Collar (PET!)
+							i(97548, {	-- Lil' Bad Wolf (PET!)
 								["timeline"] = { "added 5.3.0.16758" },
 							}),
 							i(28584),	-- Big Bad Wolf's Paw
@@ -901,7 +901,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			e(1557, {	-- The Curator
 				["creatureID"] = 15691,
 				["groups"] = {
-					i(97549, {	-- Instant Arcane Sanctum Security Kit (PET!)
+					i(97549, {	-- Menagerie Custodian (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(29757, {	-- Gloves of the Fallen Champion
@@ -928,7 +928,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(138799, {	-- Illusion: Soulfrost
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(97551, {	-- Satyr Charm (PET!)
+					i(97551, {	-- Fiendish Imp (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(28658),	-- Terestian's Stranglestaff
@@ -1022,7 +1022,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					ach(5084, {	-- Karazhan Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
-					i(97550, {	-- Netherspace Portal Stone (PET!)
+					i(97550, {	-- Netherspace Abyssal (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(29760, {	-- Helm of the Fallen Champion

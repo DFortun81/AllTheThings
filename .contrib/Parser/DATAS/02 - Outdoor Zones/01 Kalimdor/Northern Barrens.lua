@@ -4298,7 +4298,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3384,	-- Southsea Privateer
 					},
 				}),
-				i(97821, {	-- Gahz'rooki's Summoning Stone (PET!)
+				i(97821, {	-- Gahz'rooki (PET!)
 					["timeline"] = { "added 5.3.0.16758" },
 					["crs"] = {
 						70997,	-- Hellscream Laborer

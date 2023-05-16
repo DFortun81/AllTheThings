@@ -57,7 +57,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				-- TODO: meta-achievement symlink
 				ach(11763, {	-- Glory of the Tomb Raider
 					title(362),	-- <Name> the Tomb Raider
-					i(101426),	-- Micronax Controller
+					i(101426),	-- Micronax (PET!)
 				}),
 				ach(11782),	-- Tomb of Sargeras Guild Run
 			}),

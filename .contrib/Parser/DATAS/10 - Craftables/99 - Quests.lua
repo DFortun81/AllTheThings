@@ -23,7 +23,7 @@ root(ROOTS.Craftables, {
 							21277,	-- Tranquil Mechanical Yeti Pet
 						}},
 						["g"] = {
-							i(103670),	-- Lil' Bling Pet
+							i(103670),	-- Lil' Bling (PET!)
 						},
                     }),
                 },

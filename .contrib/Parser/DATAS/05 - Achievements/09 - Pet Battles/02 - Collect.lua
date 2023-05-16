@@ -321,7 +321,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			ach(7462),		-- A Rare Catch (1)
 		})),
 		ach(7934, {		-- Raiding with Leashes*
-			i(93031),		-- Mr. Bigglesworth
+			i(93031),		-- Mr. Bigglesworth (PET!)
 			crit(1),		-- Mini Mindslayer (Temple of Ahn'Qiraj - The Prophet Skeram)
 			crit(2),		-- Anubisath Idol (Temple of Ahn'Qiraj - Emperor Vek'tor)
 			crit(3),		-- Giant Bone Spider (Naxxramas - Maexxna)
@@ -336,7 +336,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(12),		-- Viscidus Globule (Temple of Ahn'Qiraj - Viscidus)
 		}),
 		ach(8293, {		-- Raiding with Leashes II: Attunement Edition*
-			i(97558),		-- Tito's Basket
+			i(97558),		-- Tito (PET!)
 			crit(1),		-- Lil' Bad Wolf (Karazhan - The Big Bad Wolf)
 			crit(2),		-- Menagerie Custodian (Karazhan - The Curator)
 			crit(3),		-- Netherspace Abyssal (Karazhan - Prince Malchezaar)
