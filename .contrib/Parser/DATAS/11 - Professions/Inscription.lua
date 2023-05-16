@@ -3283,12 +3283,27 @@ local sortByNameSafely = function(a, b)
 end;
 local function insertionSort(t)
 	if t then
-		local j;
+		local j, k, a, b;
+		for i=#t,1,-1 do
+			if not t[i] then
+				print("Recipe List Entry " .. i .. " is nil.");
+				table.remove(t, i);
+			end
+		end
 		for i=2,#t,1 do
 			j = i;
-			while j > 1 and sortByNameSafely(t[j], t[j - 1]) do
-				t[j],t[j - 1] = t[j - 1],t[j];
-				j = j - 1;
+			if not t[i].name then
+				print("Recipe " .. t[i].recipeID .. " missing name!");
+			end
+			while j > 1 do
+				k = j - 1;
+				a,b = t[k],t[j];
+				if sortByNameSafely(b, a) then
+					t[j],t[k] = a,b;
+					j = k;
+				else
+					break;
+				end
 			end
 		end
 		return t;
@@ -3617,7 +3632,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_MANA_TIDE_TOTEM_AND_GROUNDING_TOTEM,
 				GLYPH_OF_MANGLE_AND_THE_STAG,
 				GLYPH_OF_MASS_DISPEL,
-				GLYPH_OF_MIND_CONTROL_AND_PSYCHIC_HORROR.
+				GLYPH_OF_MIND_CONTROL_AND_PSYCHIC_HORROR,
 				GLYPH_OF_MOLTEN_ARMOR_AND_CRITTERMORPH,
 				GLYPH_OF_MORTAL_STRIKE,
 				GLYPH_OF_OBLITERATE_AND_ENDURING_INFECTION,
@@ -3666,7 +3681,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_COMMAND_AND_THUNDER_STRIKE,
 				-- #endif
 				GLYPH_OF_CRACKLING_TIGER_LIGHTNING,
-				GYLPH_OF_DISGUISE,
+				GLYPH_OF_MUTILATE_AND_DISGUISE,
 				GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION,	-- Deleted 7.0.3
 				GLYPH_OF_LAVA_LASH,	-- Deleted 7.0.3
 				GLYPH_OF_MOLTEN_ARMOR_AND_CRITTERMORPH,	-- Despite not being listed on WoWPedia, it's listed on WoWHead.
