@@ -267,6 +267,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 						13513,	-- Available in Eight Colors
 						13791,	-- Making the Mount
 						13470,	-- Rest In Pistons
+						13477,	-- Junkyard Apprentice
 						13479,	-- Junkyard Architect
 						13474,	-- Junkyard Machinist
 						13686,	-- Junkyard Melomaniac
