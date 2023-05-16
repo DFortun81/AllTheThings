@@ -35,6 +35,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(REWARDS, {
 				i(205369),	-- Appreciative Researcher's Gift
+				i(205371),	-- Appreciative Researcher's Scrounged Goods
 			}),
 		}),
 	}),
@@ -43,11 +44,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(RESEARCHERS, {
 		-- Event rares --
+		q(75944),	-- After Captain Reykal kill
 		q(75944),	-- After Contaminated Titan Watcher kill
 		q(75945),	-- After Response Team Watcher kill
 
 		-- Event reward hqts? --
-		q(74905),	-- At the end of event 'Titan Lockdown', unflagged after next hqt
-		q(75628),	-- Tier 2 bag? (you have earned the Tier 2 Researcher's Gift on map)
+		q(74905),	-- At the end of event 'Titan Lockdown', unflagged after bag hqt
+		q(75628),	-- pop when Appreciative Researcher's Gift was awarded
+		q(75666),	-- pop when Appreciative Researcher's Scrounged Goods was awarded
 	}),
 }));
