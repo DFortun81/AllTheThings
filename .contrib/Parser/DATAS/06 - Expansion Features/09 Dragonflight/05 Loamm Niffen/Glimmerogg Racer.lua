@@ -30,17 +30,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(203708),	-- Conch Whistle
 					},
 				}),
-				--[[ TODO: 
 				q(75598, {	-- Snailed It
-					["sourceQuests"] = { 73711 },	-- Marked Champion
+					["minReputation"] = { 2568, 5 },	-- Rank 5, Professional, 2800 
 					["provider"] = { "n", 201752 },	-- Briggul
 					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 					["g"] = {
 						i(205155),	-- Big Slick in the City
-						spell(408313),	-- Big Slick in the City
 					},
 				}),
-				]]--
 			}),
 			n(QUESTS, sharedData({
 				["sourceQuests"] = { 74787 },	-- Come Snail Away
@@ -102,9 +99,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(75708),	-- A Race To The Finish
 			})),
-			n(REWARDS, {
-				i(205155),	-- Big Slick in the City (MOUNT!)
-			}),
 		}),
 	}),
 })));
