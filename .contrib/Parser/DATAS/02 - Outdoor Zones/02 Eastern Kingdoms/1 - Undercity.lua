@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["timeline"] = { "added 4.0.1.12984" },
 						["cr"] = 4573,	-- Armand Cromwell
 						["groups"] = {
-							i(44983, {	-- Strand Crawler
+							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { "added 3.1.0.9658" },
 							}),
 							i(33820, {	-- Weather-Beaten Fishing Hat

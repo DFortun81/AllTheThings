@@ -35,16 +35,16 @@ local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 	},
 });
 local BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS = {
-	i(32616, {	-- Egbert's Egg
+	i(32616, {	-- Egbert (PET!)
 		["timeline"] = { "added 2.1.0.6692" },
 	}),
-	i(32622, {	-- Elekk Training Collar
+	i(32622, {	-- Peanut (PET!)
 		["timeline"] = { "added 2.1.0.6692" },
 	}),
-	i(69648, {	-- Legs
+	i(69648, {	-- Legs (PET!)
 		["timeline"] = { "added 4.1.0.13726" },
 	}),
-	i(32617, {	-- Sleepy Willy
+	i(32617, {	-- Willy (PET!)
 		["timeline"] = { "added 2.1.0.6692" },
 	}),
 	PET_CARE_PACKAGE,
@@ -68,7 +68,7 @@ local RETURN_TO_THE_BFA_ORPHANAGE_GROUPS = {
 local WARDEN_OF_THE_GROUPS = {
 	i(23007),	-- Piglet's Collar
 	i(23015),	-- Rat Cage
-	i(66073, {	-- Snail Shell
+	i(66073, {	-- Scooter the Snail (PET!)
 		["timeline"] = { "added 4.0.3.13287" },
 	}),
 	i(23002),	-- Turtle Box
@@ -474,8 +474,8 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 72, 10),
 				["groups"] = {
-					i(46545, {	-- Curious Oracle Hatchling
-						["timeline"] = { "added 3.0.1" },
+					i(46545, {	-- Curious Oracle Hatchling (PET!)
+						["timeline"] = { "added 3.2.0.10026" },
 					}),
 					PET_CARE_PACKAGE,
 					i(23022),	-- Curmudgeon's Payoff
@@ -492,8 +492,8 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 72, 10),
 				["groups"] = {
-					i(46544, {	-- Curious Wolvar Pup
-						["timeline"] = { "added 3.0.1" },
+					i(46544, {	-- Curious Wolvar Pup (PET!)
+						["timeline"] = { "added 3.2.0.10026" },
 					}),
 					PET_CARE_PACKAGE,
 					i(23022),	-- Curmudgeon's Payoff

@@ -202,7 +202,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
-						i(35504),	-- Phoenix Hatchling
+						i(35504),	-- Phoenix Hatchling (PET!)
 						i(34794),	-- Axe of Shattered Dreams
 						i(34798),	-- Band of Celerity
 						-- #if AFTER 7.3.5

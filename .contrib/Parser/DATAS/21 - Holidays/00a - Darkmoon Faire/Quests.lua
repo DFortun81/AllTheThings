@@ -7,7 +7,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 		i(71083, {	-- Darkmoon Game Token
 			i(93724, {	-- Darkmoon Game Prize
 				i(78340),	-- Cloak of the Darkmoon Faire
-				i(73762),	-- Darkmoon Balloon
+				i(73762),	-- Darkmoon Balloon (PET!)
 				i(74981),	-- Darkmoon Cub (PET!)
 				i(91003),	-- Darkmoon Hatchling (PET!)
 				i(73764),	-- Darkmoon Monkey (PET!)

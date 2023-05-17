@@ -1202,7 +1202,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
-					i(34425, {	-- Clockwork Rocket Bot
+					i(34425, {	-- Clockwork Rocket Bot (PET!)
 						["timeline"] = { "added 2.3.0.7561" },
 					}),
 				},
@@ -2052,9 +2052,15 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["lvl"] = 50,
 				["groups"] = {
 					-- Battle Pets/Companions
-					i(54436),	-- Blue Clockwork Rocket Bot
-					i(34425),	-- Clockwork Rocket Bot
-					i(73797),	-- Lump of Coal
+					i(54436, { -- Blue Clockwork Rocket Bot (PET!)
+						["timeline"] = { "added 3.3.3.11573" },
+					}),
+					i(34425, { -- Clockwork Rocket Bot (PET!)
+						["timeline"] = { "added 2.3.0.7561" },
+					}),
+					i(73797, { -- Lumpy (PET!)
+						["timeline"] = { "added 4.3.0.15005" },
+					}),
 					i(104317, {	-- Rotten Helper Box
 						["timeline"] = { "added 5.4.0.17227" },
 					}),

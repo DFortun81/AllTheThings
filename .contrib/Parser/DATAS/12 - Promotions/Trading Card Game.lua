@@ -24,7 +24,7 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 				i(32588, {	-- Banana Charm
 					["timeline"] = { "added 2.0.1.6180" },
 				}),
-				i(34493, {	-- Dragon Kite
+				i(34493, {	-- Dragon Kite (PET!)
 					["timeline"] = { "added 2.3.0.7561" },
 				}),
 				i(38050, {	-- Soul-Trader Beacon
@@ -35,13 +35,13 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 		i(32588, {	-- Banana Charm
 			["timeline"] = { "added 2.0.1.6180" },
 		}),
-		i(34493, {	-- Dragon Kite
+		i(34493, {	-- Dragon Kite (PET!)
 			["timeline"] = { "added 2.3.0.7561" },
 		}),
 		i(79744, {	-- Eye of the Legion (PET!)
 			["timeline"] = { "added 4.3.2.15211" },
 		}),
-		i(72134, {	-- Grell Moss
+		i(72134, {	-- Gregarious Grell (PET!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
 		i(93669, {	-- Gusting Grimoire (PET!)
@@ -50,19 +50,19 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 		i(23713, {	-- Hippogryph Hatchling
 			["timeline"] = { "added 2.0.0.5462" },
 		}),
-		i(68840, {	-- Landro's Lichling
+		i(68840, {	-- Landro's Lichling (PET!)
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
-		i(67128, {	-- Landro's Lil' XT
+		i(67128, {	-- Landro's Lil' XT (PET!)
 			["timeline"] = { "added 4.0.1.12984" },
 		}),
-		i(68841, {	-- Nightsaber Cub
+		i(68841, {	-- Nightsaber Cub (PET!)
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
-		i(71624, {	-- Purple Puffer
+		i(71624, {	-- Purple Puffer (PET!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(34492, {	-- Rocket Chicken
+		i(34492, {	-- Rocket Chicken (PET!)
 			["timeline"] = { "added 2.3.0.7561" },
 		}),
 		i(72153, {	-- Sand Scarab (PET!)
@@ -94,10 +94,10 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 				}),
 			},
 		}),
-		i(49343, {	-- Spectral Tiger Cub
+		i(49343, {	-- Spectral Tiger Cub (PET!)
 			["timeline"] = { "added 3.2.2.10468" },
 		}),
-		i(49287, {	-- Tuskarr Kite
+		i(49287, {	-- Tuskarr Kite (PET!)
 			["timeline"] = { "added 3.2.2.10468" },
 		}),
 	}),

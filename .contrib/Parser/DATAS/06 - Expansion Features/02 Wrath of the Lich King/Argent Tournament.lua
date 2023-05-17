@@ -904,7 +904,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = { NIGHTELF },
 					["groups"] = {
-						i(44998),	-- Argent Squire
+						i(44998),	-- Argent Squire (PET!)
 						CHAMPIONS_SEAL,
 					},
 				}),
@@ -914,7 +914,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = { GNOME },
 					["groups"] = {
-						i(44998),	-- Argent Squire
+						i(44998),	-- Argent Squire (PET!)
 						CHAMPIONS_SEAL,
 					},
 				}),
@@ -924,7 +924,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = { DWARF },
 					["groups"] = {
-						i(44998),	-- Argent Squire
+						i(44998),	-- Argent Squire (PET!)
 						CHAMPIONS_SEAL,
 					},
 				}),
@@ -934,7 +934,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = { HUMAN },
 					["groups"] = {
-						i(44998),	-- Argent Squire
+						i(44998),	-- Argent Squire (PET!)
 						CHAMPIONS_SEAL,
 					},
 				}),
@@ -944,7 +944,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = { DRAENEI },
 					["groups"] = {
-						i(44998),	-- Argent Squire
+						i(44998),	-- Argent Squire (PET!)
 						CHAMPIONS_SEAL,
 					},
 				}),
@@ -954,7 +954,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = { TROLL },
 					["groups"] = {
-						i(45022),	-- Argent Gruntling
+						i(45022),	-- Argent Gruntling (PET!)
 						CHAMPIONS_SEAL,
 					},
 				}),
@@ -964,7 +964,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = { ORC },
 					["groups"] = {
-						i(45022),	-- Argent Gruntling
+						i(45022),	-- Argent Gruntling (PET!)
 						CHAMPIONS_SEAL,
 					},
 				}),
@@ -974,7 +974,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = { BLOODELF },
 					["groups"] = {
-						i(45022),	-- Argent Gruntling
+						i(45022),	-- Argent Gruntling (PET!)
 						CHAMPIONS_SEAL,
 					},
 				}),
@@ -984,7 +984,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = { TAUREN },
 					["groups"] = {
-						i(45022),	-- Argent Gruntling
+						i(45022),	-- Argent Gruntling (PET!)
 						CHAMPIONS_SEAL,
 					},
 				}),
@@ -994,7 +994,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = { UNDEAD },
 					["groups"] = {
-						i(45022),	-- Argent Gruntling
+						i(45022),	-- Argent Gruntling (PET!)
 						CHAMPIONS_SEAL,
 					},
 				}),
@@ -4381,7 +4381,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						champ(50, i(46817)),	-- Silver Covenant Tabard
 						champ(150, i(46813)),	-- Silver Convenant Hippogryph (MOUNT!)
 						champ(100, i(46815)),	-- Quel'dorei Steed (MOUNT!)
-						champ(40, i(46820)),	-- Shimmering Wyrmling
+						champ(40, i(46820)),	-- Shimmering Wyrmling (PET!)
 					},
 				}), true),
 				n(33657, {	-- Irisee <Exodar Quartermaster>
@@ -4606,7 +4606,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						champ(50, i(46818)),	-- Sunreaver Tabard
 						champ(150, i(46814)),	-- Sunreaver Dragonhawk (MOUNT!)
 						champ(100, i(46816)),	-- Sunreaver Hawkstrider (MOUNT!)
-						champ(40, i(46821)),	-- Shimmering Wyrmling
+						champ(40, i(46821)),	-- Shimmering Wyrmling (PET!)
 					},
 				}), true),
 			}),

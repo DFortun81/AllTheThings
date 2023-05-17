@@ -273,7 +273,7 @@ profession(MINING, {
 	-- #endif
 	-- #if AFTER 4.0.3.13287
 	filter(BATTLE_PETS, {
-		i(67282, {	-- Elementium Geode
+		i(67282, {	-- Elementium Geode (PET!)
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
 		i(118919, {	-- Ore Eater (PET!)

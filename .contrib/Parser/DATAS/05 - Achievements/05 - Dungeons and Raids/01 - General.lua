@@ -682,7 +682,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(8),		-- Heroic: Maw of Souls
 		}),
 		ach(4478, {		-- Looking For Multitudes
-			i(49912),		-- Perky Pug
+			i(49912),		-- Perky Pug (PET!)
 			ach(4477, {		-- Looking For Many
 				title(137),		-- the Patient
 			}),

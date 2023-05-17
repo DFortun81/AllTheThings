@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				prof(MINING, {
 					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
 					["groups"] = {
-						i(67282),	-- Pet Elementium Geode
+						i(67282),	-- Elementium Geode (PET!)
 					},
 				}),
 				prof(FISHING, {

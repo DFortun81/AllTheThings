@@ -267,7 +267,9 @@ root("Instances", tier(CATA_TIER, {
 						},
 						["provider"] = { "n", 52877 },	-- Lashtail Hatchling
 						["g"] = {
-							i(69251),	-- Lashtail Hatchling
+							i(69251, { -- Lashtail Hatchling (PET!)
+								["timeline"] = { "added 4.1.0.13698" },
+							}),
 						},
 					}),
 					q(29154, {	-- Booty Bay's Interests

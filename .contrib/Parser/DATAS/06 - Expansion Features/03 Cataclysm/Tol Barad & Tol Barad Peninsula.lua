@@ -596,7 +596,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(64403, {  -- Fox Kit Pet
+				i(64403, {  -- Fox Kit (PET!)
 					["crs"] = { 47676 },	-- Baradin Fox
 				}),
 			}),
@@ -771,7 +771,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 					})),
 					n(PROFESSIONS, {
 						prof(MINING, {
-							i(67282),	-- Pet Elementium Geode
+							i(67282),	-- Elementium Geode (PET!)
 						}),
 					}),
 					n(REWARDS, {

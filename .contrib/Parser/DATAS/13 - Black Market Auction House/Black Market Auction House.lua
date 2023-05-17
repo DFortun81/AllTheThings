@@ -175,7 +175,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(105757),	-- Shipley's Shady Silks
 	}),
 	filter(BATTLE_PETS, {
-		i(44984),	-- Ammen Vale Lashling Pet
+		i(44984),	-- Ammen Vale Lashling
 		i(34535),	-- Azure Whelpling
 		i(32588),	-- Banana Charm
 		i(104158),	-- Blackfuse Bombling
@@ -190,11 +190,11 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(20769),	-- Disgusting Oozeling
 		i(34493),	-- Dragon Kite
 		i(104162),	-- Droplet of Y'Shaarj
-		i(44970),	-- Dun Morogh Cub Pet
-		i(44973),	-- Durotar Scorpion Pet
-		i(44974),	-- Elwynn Lamb Pet
+		i(44970),	-- Dun Morogh Cub
+		i(44973),	-- Durotar Scorpion
+		i(44974),	-- Elwynn Lamb
 		i(8498),	-- Emerald Whelpling
-		i(44982),	-- Enchanted Broom Pet
+		i(44982),	-- Enchanted Broom
 		i(43698),	-- Giant Sewer Rat
 		i(104163),	-- Gooey Sha-ling
 		i(48116),	-- Gundrak Hatchling
@@ -202,10 +202,10 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(94835),	-- Ji-Kun Hatchling
 		i(104165),	-- Kovok
 		i(48118),	-- Leaping Hatchling
-		i(172016),	-- Lil' Nefarian (PET!)
+		i(172016),	-- Lil' Nefarian
 		i(94125),	-- Living Sandling
-		i(45002),	-- Mechanopeep Pet
-		i(44980),	-- Mulgore Hatchling Pet
+		i(45002),	-- Mechanopeep
+		i(44980),	-- Mulgore Hatchling
 		i(48120),	-- Obsidian Hatchling
 		i(8492),	-- Parrot Cage (Green Wing Macaw)
 		i(8494),	-- Parrot Cage (Hyacinth Macaw)
@@ -217,16 +217,16 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(48124),	-- Razormaw Hatchling
 		i(48126),	-- Razzashi Hatchling
 		i(34492),	-- Rocket Chicken
-		i(45606),	-- Sen'jin Fetish Pet
+		i(45606),	-- Sen'jin Fetish
 		i(69992),	-- Shimmering Wyrmling
 		i(94152),	-- Son of Animus
 		i(38050),	-- Soul-Trader Beacon
 		i(49343),	-- Spectral Tiger Cub
-		i(44965),	-- Teldrassil Sproutling Pet
+		i(44965),	-- Teldrassil Sproutling
 		i(85513),	-- Thundering Serpent Hatchling
 		i(8499),	-- Tiny Crimson Whelping
 		i(69991),	-- Tiny Sporebat
-		i(44971),	-- Tirisfal Batling Pet
+		i(44971),	-- Tirisfal Batling
 		i(49287),	-- Tuskarr Kite
 	}),
 	filter(RECIPES, {

@@ -2222,7 +2222,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(5789, {	-- Pattern: Murloc Scale Bracers
 					["cr"] = 1561,	-- Bloodsail Raider
 				}),
-				i(48126, {	-- Razzashi Hatchling
+				i(48126, {	-- Razzashi Hatchling (PET!)
 					["timeline"] = { "added 3.2.0.10128" },
 				}),
 			}),

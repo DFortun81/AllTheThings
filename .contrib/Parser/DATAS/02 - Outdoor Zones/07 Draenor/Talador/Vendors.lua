@@ -14,7 +14,7 @@ _.Zones =
 						i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
 							["timeline"] = { "added 3.3.3.11573" },
 						}),
-						i(95621, {	-- Warbot Ignition Key (PET!)
+						i(95621, {	-- Warbot (PET!)
 							["timeline"] = { "added 5.2.0.16539" },
 						}),
 						i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)

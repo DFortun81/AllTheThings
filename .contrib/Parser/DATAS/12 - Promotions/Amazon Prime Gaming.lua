@@ -11,7 +11,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_10_0_7 },
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			i(54847, {	-- Lil' XT
+			i(54847, {	-- Lil' XT (PET!)
 				["description"] = "Amazon Prime Gaming reward from April 27th 2023 till May 25th 2023.",
 				["timeline"] = { ADDED_10_0_7, "removed 10.1.0.99999" },
 			}),

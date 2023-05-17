@@ -51,7 +51,7 @@ _.Factions =
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(65362, {	-- Guild Page - Honored - minipet bound to Character
+					i(65362, {	-- Guild Page (PET!) - Honored - minipet bound to Character
 						["races"] = HORDE_ONLY,
 					}),
 				},
@@ -80,7 +80,9 @@ _.Factions =
 			ach(5144, {	-- Critter Kill Squad
 				["collectible"] = false,
 				["g"] = {
-					i(63398),	-- Armadillo Pup (PET!) - Revered
+					i(63398, { -- Armadillo Pup (PET!) - Revered
+						["timeline"] = { "added 4.0.1.12941"},
+					}),
 				},
 			}),
 			ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
@@ -119,7 +121,7 @@ _.Factions =
 				["collectible"] = false,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(65361, {	-- Guild Page - Honored - minipet bound to Character
+					i(65361, {	-- Guild Page (PET!) - Honored - minipet bound to Character
 						["races"] = ALLIANCE_ONLY,
 					}),
 				},
@@ -162,10 +164,10 @@ _.Factions =
 			ach(5201, {	-- Profit Sharing
 				["collectible"] = false,
 				["g"] = {
-					i(65363, {	-- Guild Herald - Revered - minipet bound to Character
+					i(65363, {	-- Guild Herald (PET!) - Revered - minipet bound to Character
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(65364, {	-- Guild Herald - Revered - minipet bound to Character
+					i(65364, {	-- Guild Herald (PET!) - Revered - minipet bound to Character
 						["races"] = HORDE_ONLY,
 					}),
 				},
@@ -204,14 +206,14 @@ _.Factions =
 				["collectible"] = false,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(63138),	-- Dark Phoenix Hatchling - Exalted
+					i(63138),	-- Dark Phoenix Hatchling (PET!) - Exalted
 				},
 			}),
 			ach(5892, {	-- United Nations (H)
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(63138),	-- Dark Phoenix Hatchling - Exalted
+					i(63138),	-- Dark Phoenix Hatchling (PET!) - Exalted
 				},
 			}),
 			ach(6626, {	-- Working Better as a Team

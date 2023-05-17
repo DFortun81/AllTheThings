@@ -6,8 +6,8 @@ root(ROOTS.Promotions, n(-553, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- iC
 	["timeline"] = { "added 1.12.1.11159" },
 	["groups"] = {
 		i(19055),	-- Green Dragon Orb (Tiny Green Dragon)
-		i(22781),	-- Polar Bear Collar (Poley)
+		i(22781),	-- Poley (PET!)
 		i(19054),	-- Red Dragon Orb (Tiny Red Dragon)
-		i(22780),	-- White Murloc Egg (Terky)
+		i(22780),	-- Terky (PET!)
 	},
 })));

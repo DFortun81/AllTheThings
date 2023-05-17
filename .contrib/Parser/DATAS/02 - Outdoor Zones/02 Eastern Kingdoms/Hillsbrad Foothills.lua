@@ -1499,7 +1499,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131894, {	-- Botanist's Chain Pants
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(66067, {	-- Brazie's Sunflower Seeds / Singing Sunflower (PET!)
+						i(66067, {	-- Singing Sunflower (PET!)
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
 					},

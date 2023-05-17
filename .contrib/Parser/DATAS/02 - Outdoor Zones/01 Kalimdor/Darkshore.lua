@@ -2540,7 +2540,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(46325, {	-- Withers
+						i(46325, {	-- Withers (PET!)
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},

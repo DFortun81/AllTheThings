@@ -3778,7 +3778,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["timeline"] = { "added 3.2.0.10072" },
 					["groups"] = {
-						i(48118, {	-- Leaping Hatchling
+						i(48118, {	-- Leaping Hatchling (PET!)
 							["timeline"] = { "added 3.2.0.10072" },
 						}),
 					},

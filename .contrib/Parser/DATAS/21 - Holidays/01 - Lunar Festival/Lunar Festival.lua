@@ -1399,11 +1399,11 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 			n(15864, {	-- Valadar Starsong <Coin of Ancestry Collector>
 				["coord"] = { 53.6, 35.3, MOONGLADE },
 				["groups"] = {
-					i(74611, {	-- Festival Lantern
+					i(74611, {	-- Festival Lantern (PET!)
 						["timeline"] = { "added 4.3.0.15005" },
 						["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry
 					}),
-					i(74610, {	-- Lunar Lantern
+					i(74610, {	-- Lunar Lantern (PET!)
 						["timeline"] = { "added 4.3.0.15005" },
 						["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry
 					}),

@@ -1877,7 +1877,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 						i(117355, {	-- The Horseman's Horrific Hood
 							["timeline"] = { "added 6.0.1.18594" },
 						}),
-						i(33154, {	-- Sinister Squashling
+						i(33154, {	-- Sinister Squashling (PET!)
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
 						i(33292, {	-- Hallowed Helm
@@ -1965,7 +1965,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 						i(71325, {	-- The Horseman's Sinister Saber
 							["timeline"] = { "added 4.0.1", "removed 5.0.1" },
 						}),
-						i(33154, {	-- Sinister Squashling
+						i(33154, {	-- Sinister Squashling (PET!)
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
 						i(33292, {	-- Hallowed Helm
@@ -2080,7 +2080,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 				}),
 				-- #if BEFORE CATA
-				i(33154, {	-- Sinister Squashling
+				i(33154, {	-- Sinister Squashling (PET!)
 					["timeline"] = { "added 2.2.2.7318" },
 				}),
 				i(33292, {	-- Hallowed Helm
@@ -3157,7 +3157,9 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
-					i(71076),	-- Creepy Crate (Pet)
+					i(71076, {	-- Creepy Crate (PET!)
+					["timeline"] = { "added 4.2.0.14333"}
+					}),
 				},
 			}),
 			q(29429, {	-- The Creepy Crate (Horde)
@@ -3168,7 +3170,9 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
-					i(71076),	-- Creepy Crate (Pet)
+					i(71076, { -- Creepy Crate (PET!)
+						["timeline"] = { "added 4.2.0.14333"}
+					}),
 				},
 			}),
 			q(11135, {	-- The Headless Horseman (Alliance)

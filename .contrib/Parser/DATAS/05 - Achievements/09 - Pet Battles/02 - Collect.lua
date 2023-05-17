@@ -253,10 +253,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			i(71140),		-- Nuts' Acorn (PET!)
 		}))),
 		petbattle(ach(2516, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {		-- Lil' Game Hunter (75)
-			i(44841),		-- Little Fawn's Salt Lick (PET!)
+			i(44841),		-- Little Fawn (PET!)
 		}))),
 		petbattle(ach(1250, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {		-- Shop Smart, Shop Pet...Smart (50)
-			i(40653),		-- Reeking Pet Carrier (PET!)
+			i(40653),		-- Stinker (PET!)
 		}))),
 		petbattle(ach(1248, {["timeline"] = { "added 3.0.2" }})),		-- Plethora of Pets (25)
 		petbattle(ach(15, {["timeline"] = { "added 3.0.2" }})),		-- Plenty of Pets (15)

@@ -97,7 +97,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 		["timeline"] = { "added 2.0.1" },
 		["groups"] = {
 			ach(665),	-- Collector's Edition: Netherwhelp
-			i(25535),	-- Netherwhelp's Collar (Netherwhelp)
+			i(25535),	-- Netherwhelp (PET!)
 			i(30360, {	-- Lurky's Egg (Lurky)
 				["description"] = "This was only available in the EU.",
 			}),
@@ -155,7 +155,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 		["timeline"] = { "added 3.0.1" },
 		["groups"] = {
 			ach(683),	-- Collector's Edition: Frost Wyrm Whelp
-			i(39286),	-- Frosty's Collar (Frosty)
+			i(39286),	-- Frosty (PET!)
 		},
 	}),
 	n(-583, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- WOTLK Northrend Heroic Upgrade
@@ -203,7 +203,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			["timeline"] = { "added 4.0.1" },
 			["groups"] = {
 				ach(5377),	-- Collector's Edition: Lil' Deathwing
-				i(62540),	-- Lil' Deathwing
+				i(62540),	-- Lil' Deathwing (PET!)
 			},
 		}),
 	}),
@@ -356,7 +356,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 		["timeline"] = { "added 3.3.5.12340" },
 		["groups"] = {
 			ach(4824),	-- Collector's Edition: Mini Thor
-			i(56806),	-- Mini Thor
+			i(56806),	-- Mini Thor (PET!)
 		},
 	})),
 	n(-565, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Starcraft II: Heart of the Swarm

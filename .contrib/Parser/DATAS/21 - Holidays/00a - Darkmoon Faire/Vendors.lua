@@ -493,8 +493,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 		n(55305,  {	-- Carl Goodup
 			["coord"] = { 49.3, 78.4, 407 },
 			["g"] = {
-				i(73762, {	-- Darkmoon	Balloon (PET!)
+				i(73762, {	-- Darkmoon Balloon (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { "added 4.3.0.15005" },
 				}),
 				i(75040),	-- Flimsy Darkmoon Balloon
 				i(75041),	-- Flimsy Green Balloon
@@ -758,6 +759,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				}),
 				i(73762, {	-- Darkmoon Balloon (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { "added 4.3.0.15005" },
 				}),
 				i(19295, {	-- Darkmoon Flower
 					["cost"] = { { "c", 515, 1 }, },	-- 1x Darkmoon Prize Ticket
@@ -781,9 +783,11 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["g"] = {
 				i(73762, {	-- Darkmoon Balloon (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { "added 4.3.0.15005" },
 				}),
-				i(74981, {	-- Darkmoon Cub  (PET!)
+				i(74981, {	-- Darkmoon Cub (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { "added 4.3.0.15005" },
 				}),
 				i(73766, {	-- Darkmoon Dancing Bear (MOUNT!)
 					["cost"] = { { "c", 515, 180 }, },	-- 180x Darkmoon Prize Ticket
@@ -791,22 +795,26 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				i(153485, {	-- Darkmoon Dirigible (MOUNT!)
 					["cost"] = { { "c", 515, 1000 }, },	-- 1,000x Darkmoon Prize Ticket
 				}),
-				i(91003, {	-- Darkmoon Hatchling  (PET!)
+				i(91003, {	-- Darkmoon Hatchling (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
 				}),
-				i(73764, {	-- Darkmoon Monkey  (PET!)
+				i(73764, {	-- Darkmoon Monkey (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { "added 4.3.0.15005" },
 				}),
 				un(REMOVED_FROM_GAME, i(19303)),	-- Darkmoon Necklace
 				un(REMOVED_FROM_GAME, i(19302)),	-- Darkmoon Ring
 				i(73903, {	-- Darkmoon Tonk  (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { "added 4.3.0.15005" },
 				}),
 				i(73765, {	-- Darkmoon Turtle  (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { "added 4.3.0.15005" },
 				}),
 				i(73905, {	-- Darkmoon Zeppelin  (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
+					["timeline"] = { "added 4.3.0.15005" },
 				}),
 				i(72140, {	-- Swift Forest Strider (MOUNT!)
 					["cost"] = { { "c", 515, 180 }, },	-- 180x Darkmoon Prize Ticket

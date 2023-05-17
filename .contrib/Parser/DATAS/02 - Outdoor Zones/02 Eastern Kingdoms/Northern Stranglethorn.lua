@@ -2712,7 +2712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 701,	-- Bloodscalp Mystic
 				}),
-				i(48126, {	-- Razzashi Hatchling
+				i(48126, {	-- Razzashi Hatchling (PET!)
 					["timeline"] = { "added 3.2.0.10128" },
 				}),
 				i(9294, {	-- Recipe: Wildvine Potion

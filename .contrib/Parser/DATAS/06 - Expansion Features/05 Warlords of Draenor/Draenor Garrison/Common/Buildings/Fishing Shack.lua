@@ -21,7 +21,7 @@ _.ExpansionFeatures =
 								["g"] = {
 									i(34834),	-- Recipe: Captain Rumsey's Lager
 									i(33820),	-- Weather-Beaten Fishing Hat
-									i(44983),	-- Strand Crawler Pet
+									i(44983),	-- Strand Crawler (PET!)
 									i(45991),	-- Bone Fishing Pole
 									i(45992),	-- Jeweled Fishing Pole
 								},
@@ -259,7 +259,7 @@ _.ExpansionFeatures =
 										}),
 										i(34827),	-- Noble's Monocle
 										i(34829),	-- Ornate Drinking Stein
-										i(44983),	-- Strand Crawler
+										i(44983),	-- Strand Crawler (PET!)
 										i(118393, {	-- Tentacled Hat
 											["collectible"] = false,
 											["u"] = 15,
@@ -282,7 +282,7 @@ _.ExpansionFeatures =
 										}),
 										i(34827),	-- Noble's Monocle
 										i(34829),	-- Ornate Drinking Stein
-										i(44983),	-- Strand Crawler
+										i(44983),	-- Strand Crawler (PET!)
 										i(118393, {	-- Tentacled Hat
 											["collectible"] = false,
 											["u"] = 15,

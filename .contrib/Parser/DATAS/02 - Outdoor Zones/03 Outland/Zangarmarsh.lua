@@ -1655,7 +1655,7 @@ root(ROOTS.Zones, {
 					n(18382, {	-- Mycah <Sporeggar Quartermaster>
 						["coord"] = { 18.27, 51.12, ZANGARMARSH },
 						["groups"] = {
-							i(34478, {	-- Tiny Sporebat
+							i(34478, {	-- Tiny Sporebat (PET!)
 								["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
 							}),
 							i(31775, {	-- Sporeggar Tabard
@@ -1745,8 +1745,9 @@ root(ROOTS.Zones, {
 							19519,	-- Starving Bog Lord
 						},
 					}),
-					i(29960, {	-- Captured Firefly
+					i(29960, {	-- Firefly (PET!)
 						["cr"] = 20197,	-- Bogflare Needler
+						["description"] = "This pet is an extremely rare drop."
 					}),
 					i(24449, {	-- Fertile Spore
 						["crs"] = {

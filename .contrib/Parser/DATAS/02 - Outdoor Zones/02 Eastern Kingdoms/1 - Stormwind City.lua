@@ -2713,7 +2713,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["timeline"] = { "added 4.0.1.12984" },
 						["cr"] = 5494,	-- Catherine Leland
 						["groups"] = {
-							i(44983, {	-- Strand Crawler
+							i(44983, {	-- Strand Crawler (PET!)
 								["timeline"] = { "added 3.1.0.9658" },
 							}),
 							i(33820, {	-- Weather-Beaten Fishing Hat
@@ -6473,7 +6473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
 							["timeline"] = { "added 3.3.3.11573" },
 						}),
-						i(95621, {	-- Warbot Ignition Key (PET!)
+						i(95621, {	-- Warbot (PET!)
 							["timeline"] = { "added 5.2.0.16539" },
 						}),
 						i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)

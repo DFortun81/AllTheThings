@@ -25,6 +25,423 @@ end
 	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
 -- MissingIDs also host speciesIDs that are still missing in our database. For a full list of speciesID see Database Harvester > Raw > Pets.txt
 
+
+--------------
+-- UNSORTED --
+--------------
+i(19450, 106);	-- A Jubling's Tiny Home (Jubling)
+i(44822, 74);		-- Albino Snake
+i(72042, 331);	-- Alliance Balloon
+i(11023, 52);		-- Ancona Chicken
+i(34535, 57);		-- Azure Whelpling
+i(32588, 156);	-- Banana Charm (Bananas)
+i(10360, 75);		-- Black Kingsnake
+i(29958, 145);	-- Blue Dragonhawk Hatchling
+i(29901, 138);	-- Blue Moth Egg (Blue Moth)
+i(20371, 107);	-- Blue Murloc Egg (Murky)
+i(71387, 325);	-- Brilliant Kaliri
+i(29364, 137);	-- Brown Rabbit Crate (Brown Rabbit)
+i(10361, 77);		-- Brown Snake
+i(23083, 128);	-- Captured Flame (Spirit of Summer)
+i(8491, 42);		-- Cat Carrier (Black Tabby) - (Black Tabby Cat)
+i(8485, 40);		-- Cat Carrier (Bombay) - (Bombay Cat)
+i(8486, 41);		-- Cat Carrier (Cornish Rex) - (Cornish Rex Cat)
+i(8487, 43);		-- Cat Carrier (Orange Tabby) - (Orange Tabby Cat)
+i(8490, 44);		-- Cat Carrier (Siamese) - (Siamese Cat)
+i(8488, 45);		-- Cat Carrier (Silver Tabby) - (Silver Tabby Cat)
+i(8489, 46);		-- Cat Carrier (White Kitten) - (White Kitten)
+i(54810, 255);	-- Celestial Dragon
+i(89368, 849);	-- Chi-Ji Kite
+i(180602, 2903);	-- Crimson Dredwing Pup
+i(70160, 318);	-- Crimson Lasher
+i(10392, 78);		-- Crimson Snake
+i(10822, 56);		-- Dark Whelpling
+i(91031, 1062);	-- Darkmoon Glowfly
+i(13584, 93);		-- Diablo Stone (Mini Diablo)
+i(20769, 114);	-- Disgusting Oozeling
+i(8498, 59);		-- Emerald Whelpling
+i(49664, 247);	-- Enchanted Purple Jade (Zipao Tiger)
+i(152972, 2083);	-- Faceless Minion
+i(180034, 2888);	-- Glimr's Cracked Egg (Glimr)
+i(142089, 1958);	-- Glittering Ball of Yarn (Sanctum Cub)
+i(29953, 142);	-- Golden Dragonhawk Hatchling
+i(8500, 68);		-- Great Horned Owl
+i(19055, 757);	-- Green Dragon Orb (Tiny Green Dragon)
+i(21301, 119);	-- Green Helper Box (Father WInter's Helper)
+i(8501, 67);		-- Hawk Owl
+i(23713, 130);	-- Hippogryph Hatchling
+i(122116, 1635);	-- Holy Chime (K'ute)
+i(72045, 332);	-- Horde Balloon
+i(70140, 317);	-- Hyjal Bear Cub
+i(88148, 792);	-- Jade Crane Chick
+i(82774, 845);	-- Jade Owl
+i(89686, 856);	-- Jade Tentacle
+i(46894, 231);	-- Jade Tiger
+i(21308, 118);	-- Jingling Bell (Winter Reindeer)
+i(141894, 1940);	-- Knight-Captain Murky
+i(141895, 1939);	-- Legionnaire Murky
+i(136914, 1808);	-- Leyline Broodling
+i(15996, 95);		-- Lifelike Mechanical Toad (Lifelike Toad)
+i(11826, 86);		-- Lil' Smoky
+i(71033, 320);	-- Lil' Tarecgosa
+i(30360, 111);	-- Lurky's Egg (Lurky)
+-- #if AFTER 5.4.0
+-- Due to special circumstances, this pet is not actually permanently collectible until patch 5.4.0.
+-- #endif
+i(27445, 132);	-- Magical Crawdad Box (Magical Crawdad)
+i(142084, 1953);	-- Magnataur Hunting Horn (Snobold Runt)
+i(29363, 136);	-- Mana Wyrmling
+i(10398, 83);		-- Mechanical Chicken
+i(87526, 844);	-- Mechanical Pandaren Dragonling
+i(4401, 39);		-- Mechanical Squirrel Box (Mechanical Squirrel)
+i(31760, 149);	-- Miniwing
+i(141893, 1936);	-- Mischief
+i(44980, 210);	-- Mulgore Hatchling
+i(71726, 329);	-- Murky's Little Soulstone (Murkablo)
+i(142085, 1954);	-- Nerubian Relic (Nerubian Swarmer)
+i(38628, 186);	-- Nether Ray Fry
+i(140761, 1933);	-- Nightmare Treant
+i(141532, 1943);	-- Noblegarden Bunny
+i(71140, 323);	-- Nuts' Acorn (Nuts)
+i(142090, 1959);	-- Ominous Pile of Snow (WInter Rageling)
+i(20651, 1168);	-- Orange Murloc Egg (Murki)
+i(13583, 92);		-- Panda Collar (Panda Cub)
+i(90173, 868);	-- Pandaren Water Spirit
+i(8496, 47);		-- Parrot Cage (Cockatiel) - (Cockatiel)
+i(8492, 50);		-- Parrot Cage (Green Wing Macaw) - (Green Wing Macaw)
+i(8494, 49);		-- Parrot Cage (Hyacinth Macaw) - (Hyacinth Macaw)
+i(8495, 51);		-- Parrot Cage (Senegal) - (Senegal)
+i(11825, 85);		-- Pet Bombling
+i(23007, 126);	-- Piglet's Collar (Mr. Wiggles)
+i(22114, 121);	-- Pink Murloc Egg (Gurky)
+i(10394, 70);		-- Prairie Dog Whistle (Brown Prairie Dog)
+i(166791, 2405);	-- Pristine Falcon Feather
+i(166358, 2541);	-- Proper Parrot
+i(183621, 3046);	-- Putrid Geist
+i(8497, 72);		-- Rabbit Crate (Snowshoe) - (Snowshoe Rabbit)
+i(23015, 127);	-- Rat Cage (Whiskers the Rat)
+i(19054, 758);	-- Red Dragon Orb (Tiny Red Dragon)
+i(29956, 143);	-- Red Dragonhawk Hatchling
+i(21305, 120);	-- Red Helper Box (Winter's Little Helper)
+i(29902, 139);	-- Red Moth Egg (Red Moth)
+i(142086, 1955);	-- Red-Hot Coal (Magma Rageling)
+i(178533, 2622);	-- Shaking Pet Carrier (Jingles)
+i(29957, 144);	-- Silver Dragonhawk Hatchling
+i(88147, 820);	-- Singing Cricket Cage
+i(142097, 1966);	-- Skull of A Frozen Whelp (Soulbroken Whelpling)
+i(12529, 90);		-- Smolderweb Carrier (Smolderweb Hatchling)
+i(68673, 90);		-- Smolderweb Egg (Smolderweb Hatchling)
+i(21309, 117);	-- Snowman Kit (Tiny Snowman)
+i(38050, 183);	-- Soul-Trader Beacon (Ethereal Soul-Trader)
+i(11474, 87);		-- Sprite Darter Egg (Sprite Darter Hatchling)
+i(142100, 1969);	-- Stardust
+i(129208, 1721);	-- Stormborne Whelpling
+i(142088, 1957);	-- Stormforged Rune (Runeforged Servitor)
+i(118598, 1434);	-- Sun Sproutling
+i(119468, 1570);	-- Sunfire Kaliri
+i(116064, 1478);	-- Syd the Squid
+i(112699, 1416);	-- Teroclaw Hatchling
+i(118675, 1563);	-- Time-Locked Box (Bronze Whelpling)
+i(8499, 58);		-- Tiny Crimson Whelpling (Crimson Whelpling)
+i(21277, 116);	-- Tranquil Mechanical Yeti
+i(11026, 65);		-- Tree Frog Box (Tree Frog)
+i(22235, 122);	-- Truesilver Shafted Arrow (Peddlefeet)
+i(23002, 125);	-- Turtle Box (Speedy)
+i(39656, 189);	-- Tyrael's Hilt (Mini Tyrael)
+i(118104, 1538);	-- Umbrafen Spore
+i(10393, 55);		-- Undercity Cockroach
+i(89736, 855);	-- Venus
+i(113558, 1394);	-- Weebomination
+i(29904, 141);	-- White Moth Egg (White Moth)
+i(116804, 1523);	-- Widget the Departed
+
+i(11027, 64);		-- Wood Frog Box (Wood Frog)
+i(12264, 89);		-- Worg Carrier (Worg Pup)
+i(136922, 1887);	-- Wyrmy Tunkins
+i(29903, 140);	-- Yellow Moth Egg (Yellow Moth)
+i(89367, 850);	-- Yu'lon Kite
+i(118101, 1536);	-- Zangar Spore
+i(13582, 94);		-- Zergling Leash (Zergling
+
+
+-----------------
+-- PATCH 2.0.1 --
+-----------------
+-- ITEM --
+
+
+
+-----------------
+-- PATCH 2.2.2 --
+-----------------
+-- ITEM --
+i(32616, 158);	-- Egbert
+i(29960, 146);	-- Firefly
+i(32498, 155);	-- Lucky
+i(25535, 131);	-- Netherwhelp
+i(32622, 159);	-- Peanut
+i(32617, 157);	-- Willy
+
+-----------------
+-- PATCH 2.2.2 --
+-----------------
+-- ITEM --
+i(33154, 162);	-- Sinister Squashling
+i(32233, 153);	-- Wolpertinger
+
+
+-----------------
+-- PATCH 2.3.0 --
+-----------------
+-- ITEM --
+i(34425, 191);	-- Clockwork Rocket Bot
+i(34493, 169);	-- Dragon Kite
+i(33993, 165);	-- Mojo
+i(34492, 168);	-- Rocket Chicken
+
+i(34478, 167);	-- Tiny Sporebat
+i(69991, 167);	-- Tiny Sporebat
+
+-----------------
+-- PATCH 2.4.0 --
+-----------------
+-- ITEM --
+i(23712, 1927);	-- Ash'ana
+i(35350, 174);	-- Chuck
+i(34518, 170);	-- Golden Pig
+i(33818, 164);	-- Muckbreath
+i(35504, 175);	-- Phoenix Hatchling
+i(22781, 124);	-- Poley
+i(34955, 172);	-- Searing Scorchling
+i(34519, 171);	-- Silver Pig
+i(35349, 173);	-- Snarly
+i(40653, 160);	-- Stinker
+i(22780, 1073);	-- Terky
+i(33816, 163);	-- Toothy
+
+-----------------
+-- PATCH 2.4.3 --
+-----------------
+-- ITEM --
+i(37298, 180);	-- Essence of Competition
+i(37297, 179);	-- Spirit of Competition
+
+-----------------
+-- PATCH 3.0.2 --
+-----------------
+-- ITEM ---
+i(39898, 197);	-- Cobra Hatchling
+i(39973, 190);	-- Ghostly Skull
+i(43698, 193);	-- Giant Sewer Rat
+i(44723, 198);	-- Pengu
+i(44721, 196);	-- Proto-Drake Whelp
+i(39896, 194);	-- Tickbird Hatchling
+i(38658, 187);	-- Vampiric Batling
+i(11110, 84);	-- Westfall Chicken
+i(39899, 195);	-- White Tickbird Hatchling
+
+
+-----------------
+-- PATCH 3.0.3 --
+-----------------
+-- ITEM --
+i(44819, 202);	-- Baby Blizzard Bear
+i(39286, 188);	-- Frosty
+i(44738, 199);	-- Kirin Tor Familiar
+
+-----------------
+-- PATCH 3.0.8 --
+-----------------
+-- ITEM --
+i(44841, 203);	-- Little Fawn
+
+-----------------
+-- PATCH 3.1.0 --
+-----------------
+-- ITEM --
+i(45022, 216);	-- Argent Gruntling
+i(44998, 214);	-- Argent Squire
+i(44983, 211);	-- Strand Crawler
+
+-----------------
+-- PATCH 3.1.1 --
+-----------------
+-- ITEM --
+i(44984, 212);	-- Ammen Vale Lashling
+i(44970, 205);	-- Dun Morogh Cub
+i(44973, 207);	-- Durotar Scorpion
+i(44974, 209);	-- Elwynn Lamb
+i(44982, 213);	-- Enchanted Broom
+i(45002, 215);	-- Mechanopeep
+i(45606, 218);	-- Sen'jin Fetish
+i(44794, 200);	-- Spring Rabbit
+i(44965, 204);	-- Teldrassil Sproutling
+i(44971, 206);	-- Tirisfal Batling
+
+
+-----------------
+-- PATCH 3.1.2 --
+-----------------
+-- ITEM --
+i(41133, 192);	-- Mr. Chilly
+i(45180, 217);	-- Murkimus' Little Spear (Murkimus the Gladiator)
+i(46892, 217);	-- Murkimus' Tiny Spear (Murkimus the Gladiator)
+i(100870, 217);	-- Murkimus' Tyrannical Spear (Murkimus the Gladiator)
+
+-----------------
+-- PATCH 3.1.3 --
+-----------------
+-- ITEM --
+i(95621, 227);	-- Warbot
+
+-----------------
+-- PATCH 3.2.0 --
+-----------------
+-- ITEM --
+i(46545, 225);	-- Curious Oracle Hatchling
+i(46544, 226);	-- Curious Wolvar Pup
+i(48112, 232);	-- Darting Hatchling
+i(48114, 233);	-- Deviate Hatchling
+i(46802, 228);	-- Grunty
+i(48116, 234);	-- Gundrak Hatchling
+i(48118, 235);	-- Leaping Hatchling
+i(48120, 236);	-- Obsidian Hatchling
+i(46707, 166);	-- Pint-Sized Pink Pachyderm
+i(48122, 237);	-- Ravasaur Hatchling
+i(48124, 238);	-- Razormaw Hatchling
+i(48126, 239);	-- Razzashi Hatchling
+i(69992, 229);	-- Shimmering Wyrmling (No Rep Requirement)
+i(46820, 229);	-- Shimmering Wyrmling (Alliance)
+i(46821, 229);	-- Shimmering Wyrmling (Horde)
+
+
+
+-----------------
+-- PATCH 3.2.2 --
+-----------------
+i(49693, 249);	-- Lil' K.T.
+i(46831, 1351);	-- Macabre Marionette
+i(49362, 243);	-- Onyxian Whelpling
+i(49665, 248);	-- Pandaren Monk
+i(49343, 242);	-- Spectral Tiger Cub
+i(44810, 201);	-- Plump Turkey
+i(49287, 241);	-- Tuskarr Kite
+
+-----------------
+-- PATCH 3.3.0 --
+-----------------
+i(46398, 224);	-- Calico Cat
+i(49646, 244);	-- Core Hound Pup
+i(49912, 250);	-- Perky Pug
+
+
+-----------------
+-- PATCH 3.3.2 --
+-----------------
+i(49662, 245);	-- Gryphon Hatchling
+i(50446, 251);	-- Toxic Wasteling
+i(49663, 246);	-- Wind Rider Cub
+
+
+-----------------
+-- PATCH 3.3.3 --
+-----------------
+i(54436, 254);	-- Blue Clockwork Rocket Bot
+i(53641, 253);	-- Frigid Frostling
+i(54847, 256);	-- Lil' XT
+
+-----------------
+-- PATCH 3.3.5 --
+-----------------
+i(56806, 258);	-- Mini Thor
+
+
+-----------------
+-- PATCH 4.0.1 --
+-----------------
+-- ITEM --
+i(64372, 277);	-- Clockwork Gnome
+i(67418, 294);	-- Deathy
+i(63355, 271);	-- Rustberg Gull (Alliance)
+i(64996, 271);	-- Rustberg Gull (Horde)
+
+-----------------
+-- PATCH 4.0.3 --
+-----------------
+-- ITEM --
+i(63398, 272);	-- Armadillo Pup
+i(65661, 259);	-- Blue Mini Jouster
+i(60847, 264);	-- Crawling Claw
+i(63138, 270);	-- Dark Phoenix Hatchling
+i(60216, 262);	-- De-Weaponized Mechanical Companion
+i(67282, 293);	-- Elementium Geode
+i(67274, 267);	-- Enchanted Lantern
+i(60955, 266);	-- Fossilized Hatchling
+i(64403, 278);	-- Fox Kit
+i(90897, 278);	-- Fox Kit
+i(90898, 278);	-- Fox Kit
+i(65662, 260);	-- Gold Mini Jouster
+i(65363, 282);	-- Guild Herald (Alliance)
+i(65364, 283);	-- Guild Herald (Horde)
+i(65361, 280);	-- Guild Page (Alliance)
+i(65362, 281);	-- Guild Page (Horde)
+i(67128, 285);	-- Landro's Lil' XT
+i(62540, 268);	-- Lil' Deathwing
+i(68385, 297);	-- Lil' Ragnaros
+i(67275, 292);	-- Magic Lamp
+i(68618, 296);	-- Moonkin Hatchling (Alliance)
+i(68619, 298);	-- Moonkin Hatchling (Horde)
+i(66076, 286);	-- Mr. Grubbs
+i(48527, 240);	-- Onyx Panther
+i(60869, 265);	-- Pebble
+i(59597, 261);	-- Personal World Destroyer
+i(66073, 289);	-- Scooter the Snail
+i(66067, 291);	-- Singing Sunflower
+i(66080, 287);	-- Tiny Flamefly
+i(64494, 279);	-- Tiny Shale Spider
+i(46325, 220);	-- Withers
+i(49664, 247);	-- Zipao Tiger
+
+
+-----------------
+-- PATCH 4.1.0 --
+-----------------
+-- ITEM --
+i(70099, 316);	-- Cenarion Hatchling
+i(68840, 302);	-- Landro's Lichling
+i(69251, 307);	-- Lashtail Hatchling
+i(69648, 308);	-- Legs
+i(68841, 303);	-- Nightsaber Cub
+i(68833, 301);	-- Panther Cub
+i(69821, 309);	-- Pterrordax Hatchling
+i(69824, 310);	-- Voodoo Figurine
+i(69239, 306);	-- Winterspring Cub
+
+-----------------
+-- PATCH 4.2.2 --
+-----------------
+-- ITEM --
+i(71076, 321);	-- Creepy Crate
+i(70908, 319);	-- Feline Familiar
+i(72068, 311);	-- Guardian Cub
+
+-----------------
+-- PATCH 4.3.0 --
+-----------------
+-- ITEM --
+i(73762, 336);	-- Darkmoon Balloon
+i(74981, 343);	-- Darkmoon Cub
+i(73764, 330);	-- Darkmoon Monkey
+i(73903, 338);	-- Darkmoon Tonk
+i(73765, 335);	-- Darkmoon Turtle
+i(73905, 339);	-- Darkmoon Zeppelin
+i(74611, 342);	-- Festival Lantern
+i(72134, 333);	-- Gregarious Grell
+i(73797, 337);	-- Lumpy
+i(74610, 341);	-- Lunar Lantern
+i(71624, 328);	-- Purple Puffer
+i(73953, 340);	-- Sea Pony
+
 -----------------
 -- PATCH 5.0.1 --
 -----------------
@@ -59,293 +476,6 @@ n(62114, 466);	-- Spiny Lizard
 n(61081, 379);	-- Squirrel
 n(61369, 420);	-- Toad
 n(61367, 418);	-- Water Snake
-
---------------
--- UNSORTED --
---------------
-i(19450, 106);	-- A Jubling's Tiny Home (Jubling)
-i(44822, 74);		-- Albino Snake
-i(72042, 331);	-- Alliance Balloon
-i(44984, 212);	-- Ammen Vale Lashling
-i(11023, 52);		-- Ancona Chicken
-i(45022, 216);	-- Argent Gruntling
-i(44998, 214);	-- Argent Squire
-i(63398, 272);	-- Armadillo Pup
-i(23712, 1927);	-- Ash'ana
-i(34535, 57);		-- Azure Whelpling
-i(44819, 202);	-- Baby Blizzard Bear
-i(32588, 156);	-- Banana Charm (Bananas)
-i(10360, 75);		-- Black Kingsnake
-i(54436, 254);	-- Blue Clockwork Rocket Bot
-i(29958, 145);	-- Blue Dragonhawk Hatchling
-i(65661, 259);	-- Blue Mini Jouster
-i(29901, 138);	-- Blue Moth Egg (Blue Moth)
-i(20371, 107);	-- Blue Murloc Egg (Murky)
-i(66067, 291);	-- Brazie's Sunflower Seeds (Singing Sunflower)
-i(71387, 325);	-- Brilliant Kaliri
-i(29364, 137);	-- Brown Rabbit Crate (Brown Rabbit)
-i(10361, 77);		-- Brown Snake
-i(29960, 146);	-- Captured Firefly (Firefly)
-i(23083, 128);	-- Captured Flame (Spirit of Summer)
-i(8491, 42);		-- Cat Carrier (Black Tabby) - (Black Tabby Cat)
-i(8485, 40);		-- Cat Carrier (Bombay) - (Bombay Cat)
-i(46398, 224);	-- Cat Carrier (Calico) - (Calico Cat)
-i(8486, 41);		-- Cat Carrier (Cornish Rex) - (Cornish Rex Cat)
-i(8487, 43);		-- Cat Carrier (Orange Tabby) - (Orange Tabby Cat)
-i(8490, 44);		-- Cat Carrier (Siamese) - (Siamese Cat)
-i(8488, 45);		-- Cat Carrier (Silver Tabby) - (Silver Tabby Cat)
-i(8489, 46);		-- Cat Carrier (White Kitten) - (White Kitten)
-i(54810, 255);	-- Celestial Dragon
-i(70099, 316);	-- Cenarion Hatchling
-i(89368, 849);	-- Chi-Ji Kite
-i(11110, 84);		-- Chicken Egg (Westfall Chicken)
-i(35350, 174);	-- Chuck's Bucket (Chuck)
-i(64372, 277);	-- Clockwork Gnome
-i(34425, 191);	-- Clockwork Rocket Bot
-i(39898, 197);	-- Cobra Hatchling
-i(37298, 180);	-- Competitor's Souvenir (Essence of Competition)
-i(49646, 244);	-- Core Hound Pup
-i(60847, 264);	-- Crawling Claw
-i(71076, 321);	-- Creepy Crate
-i(180602, 2903);	-- Crimson Dredwing Pup
-i(70160, 318);	-- Crimson Lasher
-i(10392, 78);		-- Crimson Snake
-i(46545, 225);	-- Curious Oracle Hatchling
-i(46544, 226);	-- Curious Wolvar Pup
-i(63138, 270);	-- Dark Phoenix Hatchling
-i(10822, 56);		-- Dark Whelpling
-i(73762, 336);	-- Darkmoon Balloon
-i(74981, 343);	-- Darkmoon Cub
-i(91031, 1062);	-- Darkmoon Glowfly
-i(73764, 330);	-- Darkmoon Monkey
-i(73903, 338);	-- Darkmoon Tonk
-i(73765, 335);	-- Darkmoon Turtle
-i(73905, 339);	-- Darkmoon Zeppelin
-i(48112, 232);	-- Darting Hatchling
-i(48114, 233);	-- Deviate Hatchling
-i(60216, 262);	-- De-Weaponized Mechanical Companion
-i(13584, 93);		-- Diablo Stone (Mini Diablo)
-i(20769, 114);	-- Disgusting Oozeling
-i(34493, 169);	-- Dragon Kite
-i(44970, 205);	-- Dun Morogh Cub
-i(44973, 207);	-- Durotar Scorpion
-i(32616, 158);	-- Egbert's Egg (Egbert)
-i(32622, 159);	-- Elekk Training Collar (Peanut)
-i(67282, 293);	-- Elementium Geode
-i(44974, 209);	-- Elwynn Lamb
-i(8498, 59);		-- Emerald Whelpling
-i(44982, 213);	-- Enchanted Broom
-i(67274, 267);	-- Enchanted Lantern
-i(48527, 240);	-- Enchanted Onyx (Onyx Panther)
-i(49664, 247);	-- Enchanted Purple Jade (Zipao Tiger)
-i(152972, 2083);	-- Faceless Minion
-i(70908, 319);	-- Feline Familiar
-i(74611, 342);	-- Festival Lantern
-i(32498, 155);	-- Fortune Coin (Lucky)
-i(60955, 266);	-- Fossilized Hatchling
-i(64403, 278);	-- Fox Kit
-i(90897, 278);	-- Fox Kit
-i(90898, 278);	-- Fox Kit
-i(39286, 188);	-- Frosty's Collar (Frosty)
-i(39973, 190);	-- Ghostly Skull
-i(43698, 193);	-- Giant Sewer Rat
-i(180034, 2888);	-- Glimr's Cracked Egg (Glimr)
-i(142089, 1958);	-- Glittering Ball of Yarn (Sanctum Cub)
-i(37297, 179);	-- Gold Medallion (Spirit of Competition)
-i(65662, 260);	-- Gold Mini Jouster
-i(29953, 142);	-- Golden Dragonhawk Hatchling
-i(34518, 170);	-- Golden Pig Coin (Golden Pig)
-i(8500, 68);		-- Great Horned Owl
-i(19055, 757);	-- Green Dragon Orb (Tiny Green Dragon)
-i(21301, 119);	-- Green Helper Box (Father WInter's Helper)
-i(72134, 333);	-- Grell Moss (Gregarious Grell)
-i(49662, 245);	-- Gryphon Hatchling
-i(72068, 311);	-- Guardian Cub
-i(65363, 282, 283);	-- Guild Herald (Alliance) [Alt: Horde]
-i(65364, 283, 282);	-- Guild Herald (Horde) [Alt: Alliance]
-i(65361, 280, 281);	-- Guild Page (Alliance) [Alt: Horde]
-i(65362, 281, 280);	-- Guild Page (Horde) [Alt: Alliance]
-i(48116, 234);	-- Gundrak Hatchling
-i(8501, 67);		-- Hawk Owl
-i(46802, 228);	-- Heavy Murloc Egg (Grunty)
-i(23713, 130);	-- Hippogryph Hatchling
-i(122116, 1635);	-- Holy Chime (K'ute)
-i(72045, 332);	-- Horde Balloon
-i(70140, 317);	-- Hyjal Bear Cub
-i(53641, 253);	-- Ice Chip (Frigid Frostling)
-i(88148, 792);	-- Jade Crane Chick
-i(82774, 845);	-- Jade Owl
-i(89686, 856);	-- Jade Tentacle
-i(46894, 231);	-- Jade Tiger
-i(21308, 118);	-- Jingling Bell (Winter Reindeer)
-i(44738, 199);	-- Kirin Tor Familiar
-i(141894, 1940);	-- Knight-Captain Murky
-i(68840, 302);	-- Landro's Lichling
-i(67128, 285);	-- Landro's Lil' XT
-i(69251, 307);	-- Lashtail Hatchling
-i(48118, 235);	-- Leaping Hatchling
-i(141895, 1939);	-- Legionnaire Murky
-i(69648, 308);	-- Legs
-i(136914, 1808);	-- Leyline Broodling
-i(15996, 95);		-- Lifelike Mechanical Toad (Lifelike Toad)
-i(62540, 268);	-- Lil' Deathwing
-i(49693, 249);	-- Lil' Phylactery (Lil' K.T.)
-i(68385, 297);	-- Lil' Ragnaros
-i(11826, 86);		-- Lil' Smoky
-i(71033, 320);	-- Lil' Tarecgosa
-i(54847, 256);	-- Lil' XT
-i(44841, 203);	-- Little Fawn's Salt Lick (Little Fawn)
-i(73797, 337);	-- Lump of Coal (Lumpy)
-i(74610, 341);	-- Lunar Lantern
-i(30360, 111);	-- Lurky's Egg (Lurky)
--- #if AFTER 5.4.0
--- Due to special circumstances, this pet is not actually permanently collectible until patch 5.4.0.
-i(46831, 1351);	-- Macabre Marionette
--- #endif
-i(67275, 292);	-- Magic Lamp
-i(27445, 132);	-- Magical Crawdad Box (Magical Crawdad)
-i(142084, 1953);	-- Magnataur Hunting Horn (Snobold Runt)
-i(29363, 136);	-- Mana Wyrmling
-i(10398, 83);		-- Mechanical Chicken
-i(87526, 844);	-- Mechanical Pandaren Dragonling
-i(4401, 39);		-- Mechanical Squirrel Box (Mechanical Squirrel)
-i(45002, 215);	-- Mechanopeep
-i(56806, 258);	-- Mini Thor
-i(31760, 149);	-- Miniwing
-i(141893, 1936);	-- Mischief
-i(33993, 165);	-- Mojo
-i(68618, 296);	-- Moonkin Egg (Moonkin Hatchling) Alliance
-i(68619, 298);	-- Moonkin Egg (Moonkin Hatchling) Horde
-i(41133, 192);	-- Mr. Chilly
-i(66076, 286);	-- Mr. Grubbs
-i(33818, 164);	-- Muckbreath's Bucket (Muckbreath)
-i(44980, 210);	-- Mulgore Hatchling
-i(45180, 217);	-- Murkimus' Little Spear (Murkimus the Gladiator)
-i(46892, 217);	-- Murkimus' Tiny Spear (Murkimus the Gladiator)
-i(100870, 217);	-- Murkimus' Tyrannical Spear (Murkimus the Gladiator)
-i(71726, 329);	-- Murky's Little Soulstone (Murkablo)
-i(142085, 1954);	-- Nerubian Relic (Nerubian Swarmer)
-i(38628, 186);	-- Nether Ray Fry
-i(25535, 131);	-- Netherwhelp's Collar (Netherwhelp)
-i(140761, 1933);	-- Nightmare Treant
-i(68841, 303);	-- Nightsaber Cub
-i(141532, 1943);	-- Noblegarden Bunny
-i(44723, 198);	-- Nurtured Penguin Egg (Pengu)
-i(71140, 323);	-- Nuts' Acorn (Nuts)
-i(48120, 236);	-- Obsidian Hatchling
-i(142090, 1959);	-- Ominous Pile of Snow (WInter Rageling)
-i(49362, 243);	-- Onyxian Whelpling
-i(20651, 1168);	-- Orange Murloc Egg (Murki)
-i(13583, 92);		-- Panda Collar (Panda Cub)
-i(49665, 248);	-- Pandaren Monk
-i(90173, 868);	-- Pandaren Water Spirit
-i(68833, 301);	-- Panther Cub
-i(8496, 47);		-- Parrot Cage (Cockatiel) - (Cockatiel)
-i(8492, 50);		-- Parrot Cage (Green Wing Macaw) - (Green Wing Macaw)
-i(8494, 49);		-- Parrot Cage (Hyacinth Macaw) - (Hyacinth Macaw)
-i(8495, 51);		-- Parrot Cage (Senegal) - (Senegal)
-i(60869, 265);	-- Pebble
-i(49912, 250);	-- Perky Pug
-i(59597, 261);	-- Personal World Destroyer
-i(11825, 85);		-- Pet Bombling
-i(35504, 175);	-- Phoenix Hatchling
-i(23007, 126);	-- Piglet's Collar (Mr. Wiggles)
-i(22114, 121);	-- Pink Murloc Egg (Gurky)
-i(46707, 166);	-- Pint-Sized Pink Pachyderm
-i(22781, 124);	-- Polar Bear Collar (Poley)
-i(10394, 70);		-- Prairie Dog Whistle (Brown Prairie Dog)
-i(166791, 2405);	-- Pristine Falcon Feather
-i(166358, 2541);	-- Proper Parrot
-i(44721, 196);	-- Proto-Drake Whelp
-i(69821, 309);	-- Pterrordax Hatchling
-i(71624, 328);	-- Purple Puffer
-i(183621, 3046);	-- Putrid Geist
-i(8497, 72);		-- Rabbit Crate (Snowshoe) - (Snowshoe Rabbit)
-i(23015, 127);	-- Rat Cage (Whiskers the Rat)
-i(48122, 237);	-- Ravasaur Hatchling
-i(48124, 238);	-- Razormaw Hatchling
-i(48126, 239);	-- Razzashi Hatchling
-i(19054, 758);	-- Red Dragon Orb (Tiny Red Dragon)
-i(29956, 143);	-- Red Dragonhawk Hatchling
-i(21305, 120);	-- Red Helper Box (Winter's Little Helper)
-i(29902, 139);	-- Red Moth Egg (Red Moth)
-i(142086, 1955);	-- Red-Hot Coal (Magma Rageling)
-i(40653, 160);	-- Reeking Pet Carrier (Stinker)
-i(34492, 168);	-- Rocket Chicken
-i(63355, 271);	-- Rustberg Gull (Alliance)
-i(64996, 271);	-- Rustberg Gull (Horde)
-i(34955, 172);	-- Scorched Stone (Searing Scorchling)
-i(73953, 340);	-- Sea Pony
-i(45606, 218);	-- Sen'jin Fetish
-i(178533, 2622);	-- Shaking Pet Carrier (Jingles)
-i(69992, 229);	-- Shimmering Wyrmling (No Rep Requirement)
-i(46820, 229);	-- Shimmering Wyrmling(Alliance)
-i(46821, 229);	-- Shimmering Wyrmling(Horde)
-i(29957, 144);	-- Silver Dragonhawk Hatchling
-i(34519, 171);	-- Silver Pig Coin (Silver Pig)
-i(88147, 820);	-- Singing Cricket Cage
-i(33154, 162);	-- Sinister Squashling
-i(142097, 1966);	-- Skull of A Frozen Whelp (Soulbroken Whelpling)
-i(32617, 157);	-- Sleepy Willy (Willy)
-i(67418, 294);	-- Smoldering Murloc Egg (Deathy)
-i(12529, 90);		-- Smolderweb Carrier (Smolderweb Hatchling)
-i(68673, 90);		-- Smolderweb Egg (Smolderweb Hatchling)
-i(66073, 289);	-- Snail Shell (Scooter the Snail)
-i(35349, 173);	-- Snarly's Bucket (Snarly)
-i(21309, 117);	-- Snowman Kit (Tiny Snowman)
-i(38050, 183);	-- Soul-Trader Beacon (Ethereal Soul-Trader)
-i(49343, 242);	-- Spectral Tiger Cub
-i(44794, 200);	-- Spring Rabbit's Foot (Spring Rabbit)
-i(11474, 87);		-- Sprite Darter Egg (Sprite Darter Hatchling)
-i(142100, 1969);	-- Stardust
-i(129208, 1721);	-- Stormborne Whelpling
-i(142088, 1957);	-- Stormforged Rune (Runeforged Servitor)
-i(44983, 211);	-- Strand Crawler
-i(118598, 1434);	-- Sun Sproutling
-i(119468, 1570);	-- Sunfire Kaliri
-i(116064, 1478);	-- Syd the Squid
-i(44965, 204);	-- Teldrassil Sproutling
-i(112699, 1416);	-- Teroclaw Hatchling
-i(39896, 194);	-- Tickbird Hatchling
-i(118675, 1563);	-- Time-Locked Box (Bronze Whelpling)
-i(8499, 58);		-- Tiny Crimson Whelpling (Crimson Whelpling)
-i(66080, 287);	-- Tiny Flamefly
-i(64494, 279);	-- Tiny Shale Spider
-i(34478, 167);	-- Tiny Sporebat
-i(69991, 167);	-- Tiny Sporebat
-i(44971, 206);	-- Tirisfal Batling
-i(33816, 163);	-- Toothy's Bucket (Toothy)
-i(50446, 251);	-- Toxic Wasteling
-i(21277, 116);	-- Tranquil Mechanical Yeti
-i(11026, 65);		-- Tree Frog Box (Tree Frog)
-i(22235, 122);	-- Truesilver Shafted Arrow (Peddlefeet)
-i(44810, 201);	-- Turkey Cage (Plump Turkey)
-i(23002, 125);	-- Turtle Box (Speedy)
-i(49287, 241);	-- Tuskarr Kite
-i(39656, 189);	-- Tyrael's Hilt (Mini Tyrael)
-i(118104, 1538);	-- Umbrafen Spore
-i(10393, 55);		-- Undercity Cockroach
-i(38658, 187);	-- Vampiric Batling
-i(89736, 855);	-- Venus
-i(69824, 310);	-- Voodoo Figurine
-i(95621, 227);	-- Warbot Ignition Key (Warbot)
-i(113558, 1394);	-- Weebomination
-i(29904, 141);	-- White Moth Egg (White Moth)
-i(22780, 1073);	-- White Murloc Egg (Terky)
-i(39899, 195);	-- White Tickbird Hatchling
-i(116804, 1523);	-- Widget the Departed
-i(49663, 246);	-- Wind Rider Cub
-i(69239, 306);	-- Winterspring Cub
-i(46325, 220);	-- Withers
-i(32233, 153);	-- Wolpertinger's Tankard (Wolpertinger)
-i(11027, 64);		-- Wood Frog Box (Wood Frog)
-i(12264, 89);		-- Worg Carrier (Worg Pup)
-i(136922, 1887);	-- Wyrmy Tunkins
-i(29903, 140);	-- Yellow Moth Egg (Yellow Moth)
-i(89367, 850);	-- Yu'lon Kite
-i(118101, 1536);	-- Zangar Spore
-i(13582, 94);		-- Zergling Leash (Zergling)
-i(49664, 247);	-- Zipao Tiger
 
 
 -----------------

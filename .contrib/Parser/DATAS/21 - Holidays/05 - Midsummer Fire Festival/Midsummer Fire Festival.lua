@@ -268,7 +268,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						i(117373, {	-- Frostscythe of Lord Ahune
 							["timeline"] = { "added 6.0.1.18594" },
 						}),
-						i(53641, {	-- Ice Chip (Pet)
+						i(53641, {	-- Frigid Frostling (Pet)
 							["timeline"] = { "added 3.3.3.11723" },
 						}),
 					},
@@ -285,7 +285,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						i(54806, {	-- Frostscythe of Lord Ahune [Level 80]
 							["timeline"] = { "added 3.3.3.11723", "removed 4.0.1" },
 						}),
-						i(53641, {	-- Ice Chip (Pet)
+						i(53641, {	-- Frigid Frostling (Pet)
 							["timeline"] = { "added 3.3.3.11723" },
 						}),
 					},
@@ -302,7 +302,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				-- #if BEFORE 4.2.0
 				-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.
 				-- Between Patch 3.3.3 and 4.2.0 it had no available source.
-				i(34955, {	-- Scorched Stone
+				i(34955, {	-- Searing Scorcling (PET!)
 					["timeline"] = { "removed 3.3.3", "added 4.2.0" },
 				}),
 				-- #endif

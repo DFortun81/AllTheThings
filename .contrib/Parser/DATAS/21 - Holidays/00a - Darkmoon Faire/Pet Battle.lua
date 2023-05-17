@@ -11,7 +11,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["crs"] = { 67329 },	-- Darkmoon Glowfly
 		})),
 		prof(FISHING, {
-			i(73953),	-- Sea Pony
+			i(73953, { -- Sea Pony (PET!)
+				["timeline"] = { "added 4.3.0.15005" },
+			}),
 		}),
 		petbattle(q(36471, {	-- A New Darkmoon Challenger!
 			["provider"] = { "n", 85519 },	-- Christoph VonFeasel

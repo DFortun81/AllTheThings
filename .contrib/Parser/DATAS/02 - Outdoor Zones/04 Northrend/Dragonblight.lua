@@ -2386,7 +2386,7 @@ root(ROOTS.Zones, {
 							i(41568),	-- Design: Purified Shadow Crystal [CATA+] / Design: Seer's Dark Jade [WRATH]
 							i(44057),	-- Ivory-Reinforced Chestguard
 							i(44050),	-- Mastercraft Kalu'ak Fishing Pole
-							i(44723),	-- Nutured Penguin Egg (PET!)
+							i(44723),	-- Pengu (PET!)
 							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
 								["timeline"] = { "removed 4.0.1" },
 							}),

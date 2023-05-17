@@ -73,7 +73,7 @@ root(ROOTS.Holidays, applyholiday(PILGRIMS_BOUNTY, {
 					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
 						["timeline"] = { "added 3.2.2.10505" },
 					}),
-					i(44810, {	-- Turkey Cage (PET!)
+					i(44810, {	-- Plump Turkey (PET!)
 						["timeline"] = { "added 3.2.2.10505" },
 					}),
 				},
@@ -100,7 +100,7 @@ root(ROOTS.Holidays, applyholiday(PILGRIMS_BOUNTY, {
 					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
 						["timeline"] = { "added 3.2.2.10505" },
 					}),
-					i(44810, {	-- Turkey Cage (PET!)
+					i(44810, {	-- Plump Turkey (PET!)
 						["timeline"] = { "added 3.2.2.10505" },
 					}),
 				},

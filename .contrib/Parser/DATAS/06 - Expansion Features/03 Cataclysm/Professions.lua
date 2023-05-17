@@ -165,7 +165,9 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			currency(384, {	-- Dwarf
 				-- Solves
 				i(64373),	-- Chalice of the Mountain Kings (TOY!)
-				i(64372),	-- Clockwork Gnome
+				i(64372, { -- Clockwork Gnome (PET!)
+					["timeline"] = { "added 4.0.3.13287" },
+				}),
 				i(64489),	-- Staff of Sorcerer-Thane Thaurissan
 				i(64488),	-- The Innkeeper's Daughter (TOY!)
 				i(63113),	-- Belt Buckle with Anvilmar Crest
@@ -200,9 +202,13 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				-- Solves
 				i(69776),	-- Ancient Amber (TOY!)
 				i(69764),	-- Extinct Turtle Shell
-				i(60955),	-- Fossilized Hatchling
+				i(60955, { -- Fossilized Hatchling (PET!)
+					["timeline"] = { "added 4.0.3.13287" },
+				}),
 				i(60954),	-- Fossilized Raptor (MOUNT!)
-				i(69821),	-- Pterrordax Hatchling
+				i(69821, { -- Pterrordax Hatchling (PET!)
+					["timeline"] = { "added 4.1.0.13793" },
+				}),
 				i(64355),	-- Ancient Shark Jaws
 				i(63121),	-- Beautiful Preserved Fern
 				i(63109),	-- Black Trilobite
@@ -274,7 +280,9 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				i(64657, bubbleDownSelf({["requireSkill"] = ALCHEMY},{	-- Canopic Jar
 					i(67538),	-- Recipe: Vial of the Sands
 				})),
-				i(60847),	-- Crawling Claw
+				i(60847, { -- Crawling Claw (PET!)
+					["timeline"] = { "added 4.0.3.13287" },
+				}),
 				i(64881),	-- Pendant of the Scarab Storm (TOY!)
 				i(64904),	-- Ring of the Boy Emperor
 				i(64885),	-- Scimitar of the Sirocco
@@ -290,7 +298,9 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			currency(385, {	-- Troll
 				-- Solves
 				i(69777),	-- Haunted War Drum (TOY!)
-				i(69824),	-- Voodoo Figurine
+				i(69824, { -- Voodoo Figurine (PET!)
+					["timeline"] = { "added 4.1.0.13793" },
+				}),
 				i(64377),	-- Zin'rokh, Destroyer of Worlds
 				i(64348),	-- Atal'ai Scepter
 				i(64346),	-- Bracelet of Jade and Coins

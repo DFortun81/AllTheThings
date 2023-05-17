@@ -864,7 +864,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["requireSkill"] = FISHING,
 					["groups"] = {
-						i(44983),	-- Strand Crawler
+						i(44983),	-- Strand Crawler (PET!)
 						i(33820),	-- Weather-Beaten Fishing Hat
 						i(45991),	-- Bone Fishing Pole
 						i(45992),	-- Jeweled Fishing Pole

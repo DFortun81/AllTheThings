@@ -19,7 +19,7 @@ _.Zones =
 				}),
 				n(49822, {	-- Jadefang
 					["g"] = {
-						i(64494),	-- Tiny Shale Spider
+						i(64494),	-- Tiny Shale Spider (PET!)
 					},
 				}),
 				n(50060, {	-- Terborus

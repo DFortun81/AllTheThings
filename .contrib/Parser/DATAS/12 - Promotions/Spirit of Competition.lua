@@ -13,7 +13,7 @@ root(ROOTS.Promotions, n(-531, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Sp
 			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 			-- #endif
 		}),
-		i(37297, {	-- Gold Medallion (Spirit of Competition)
+		i(37297, {	-- Spirit of Competition (PET!)
 			["description"] = "Win a battleground during the Spirit of Competition event to get this.",
 		}),
 
@@ -29,7 +29,7 @@ root(ROOTS.Promotions, n(-531, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Sp
 			["description"] = "Participate in a battleground during the Spirit of Competition event to get this.",
 		}),
 
-		i(37298, {	-- Competitor's Souvenir (Essence of Competition) (China Only)
+		i(37298, {	-- Essence of Competition (PET!) (China Only)
 			["description"] = "Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",
 		}),
 	},

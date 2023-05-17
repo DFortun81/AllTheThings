@@ -3790,7 +3790,9 @@ root(ROOTS.Zones, {
 					}),
 					prof(FISHING, {
 						i(45903),	-- Corroded Jewelry
-						i(43698),	-- Giant Sewer Rat
+						i(43698, { -- Giant Sewer Rat (PET!)
+							["timeline"] = { "added 3.0.2.8926" },
+						}),
 					}),
 					n(QUESTS, {
 						q(13571, {	-- Fletcher's Lost and Found
@@ -3861,7 +3863,9 @@ root(ROOTS.Zones, {
 						n(29537, {	-- Darahir <Reagents & Magical Goods>
 							["coord"] = { 63.4, 16.2, NORTHREND_THE_UNDERBELLY },
 							["groups"] = {
-								i(39973),	-- Ghostly Skull (PET!)
+								i(39973, { -- Ghostly Skull (PET!)
+									["timeline"] = { "added 3.0.2.8970" },
+								}),
 							},
 						}),
 						n(69321, {	-- Herwin Steampop <Deadly Gladiator>
@@ -4163,7 +4167,7 @@ root(ROOTS.Zones, {
 								["description"] = "First floor of the Legerdemain Lounge in the bookcase nearest the stove.",
 								["coord"] = { 46.8, 40.0, NORTHREND_DALARAN },
 							}),
-							i(44738),	-- Kirin Tor Familiar Pet
+							i(44738),	-- Kirin Tor Familiar (PET!)
 							i(43824, {	-- The Schools of Arcane Magic - Mastery (TOY!)
 								["description"] = "If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",
 								["cr"] = 16128,	-- Rhonin <Leader of the Kirin Tor>
@@ -5393,7 +5397,7 @@ root(ROOTS.Zones, {
 								-- #endif
 							}),
 							i(36784),	-- Siren's Tear
-							i(44983),	-- Strand Crawler Pet
+							i(44983),	-- Strand Crawler (PET!)
 							i(45984),	-- Unusual Compass (TOY!)
 							i(49667),	-- Waterlogged Recipe
 							i(33820),	-- Weather-Beaten Fishing Hat
@@ -5849,11 +5853,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.7, 39.2, NORTHREND_DALARAN },
 						["groups"] = {
 							i(44822),	-- Albino Snake (PET!)
-							i(46398),	-- Cat Carrier (Calico Cat) (PET!)
+							i(46398, { -- Calico Cat (PET!)
+								["timeline"] = { "added 3.3.0.10522" },
+							}),
 							i(129826, {	-- Nursery Spider (PET!)
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(48120),	-- Obsidian Hatchling (PET!)
+							i(48120, {	-- Obsidian Hatchling (PET!)
+								["timeline"] = { "added 3.2.0.10026" },
+							}),
 							i(44820),	-- Red Ribbon Pet Leash (TOY!)
 							i(37460),	-- Rope Pet Leash (TOY!)
 						},
@@ -5916,7 +5924,7 @@ root(ROOTS.Zones, {
 							i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
 								["timeline"] = { "added 3.3.3.11573" },
 							}),
-							i(95621, {	-- Warbot Ignition Key (PET!)
+							i(95621, {	-- Warbot (PET!)
 								["timeline"] = { "added 5.2.0.16539" },
 							}),
 							i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)

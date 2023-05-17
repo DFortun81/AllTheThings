@@ -101,15 +101,19 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		}),
 		ach(5447),		-- My Very Own Broodmother (Deepholm)
 		ach(5449, {		-- Rock Lover (Deepholm)
-			i(60869),		-- Pebble
+			i(60869),		-- Pebble (PET!)
 		}),
 		ach(4960),		-- Round Three. Fight! (Twilight Highlands)
 		ach(5860, {		-- The 'Unbeatable?' Pterodactyl: BEATEN. (Mount Hyjal)
 			i(69838, {		-- Chirping Box (Blue / Gold Mini Jouster - which ever wasnt picked during !Vigilance on Wings)
 				["description"] = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
 				["groups"] = {
-					i(65661),	-- Blue Mini Jouster
-					i(65662),	-- Gold Mini Jouster
+					i(65661, { -- Blue Mini Jouster (PET!)
+						["timeline"] = { "added 4.0.1.12984" },
+					}),
+					i(65662, {	-- Gold Mini Jouster (PET!)
+						["timeline"] = { "added 4.0.1.12984" },
+					}),
 				},
 			}),
 		}),

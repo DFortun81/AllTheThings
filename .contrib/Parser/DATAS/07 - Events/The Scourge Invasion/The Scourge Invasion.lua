@@ -847,7 +847,7 @@ root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, --
 						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 						-- #endif
 					}),
-					i(38658, {	-- Vampiric Batling Pet
+					i(38658, {	-- Vampiric Batling (PET!)
 						-- #if ANYCLASSIC
 						["description"] = "Drops for everyone in the raid. Get one on all of your alts!",
 						-- #endif

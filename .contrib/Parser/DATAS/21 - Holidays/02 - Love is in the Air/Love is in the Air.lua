@@ -2033,7 +2033,7 @@ for i,o in ipairs({
 			i(49715, {	-- Forever-Lovely Rose
 				["timeline"] = { "added 3.3.0" },
 			}),
-			i(50446, {	-- Toxic Wasteling
+			i(50446, {	-- Toxic Wasteling (PE!T)
 				["timeline"] = { "added 3.3.0" },
 			}),
 			i(50741, {	-- Vile Fumigator's Mask
@@ -2065,7 +2065,7 @@ for i,o in ipairs({
 					i(49715, {	-- Forever-Lovely Rose
 						["timeline"] = { "added 3.3.0" },
 					}),
-					i(50446, {	-- Toxic Wasteling
+					i(50446, {	-- Toxic Wasteling (PET!)
 						["timeline"] = { "added 3.3.0" },
 					}),
 					i(50741, {	-- Vile Fumigator's Mask
@@ -2083,7 +2083,7 @@ for i,o in ipairs({
 					i(49715, {	-- Forever-Lovely Rose
 						["timeline"] = { "added 3.3.0" },
 					}),
-					i(50446, {	-- Toxic Wasteling
+					i(50446, {	-- Toxic Wasteling (PET!)
 						["timeline"] = { "added 3.3.0" },
 					}),
 					i(50741, {	-- Vile Fumigator's Mask

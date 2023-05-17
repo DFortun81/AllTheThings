@@ -1195,7 +1195,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(48116, {	-- Gundrak Hatchling
+					i(48116, {	-- Gundrak Hatchling (PET!)
 						["coords"] = {
 							{ 72.6, 27.8, ZULDRAK },
 							{ 78.2, 16.6, ZULDRAK },

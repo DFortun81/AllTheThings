@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 					["groups"] = {
-						i(11110, {	-- Chicken Egg
+						i(11110, {	-- Westfall Chicken (PET!)
 							-- #if BEFORE 3.1.0
 							["description"] = "A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",
 							-- #endif

@@ -215,8 +215,8 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			}),
 		}))),
 		filter(BATTLE_PETS, {
-			i(67274),	-- Enchanted Lantern
-			i(67275),	-- Magic Lamp
+			i(67274),	-- Enchanted Lantern (PET!)
+			i(67275),	-- Magic Lamp (PET!)
 		}),
 		cat(697, sharedDataSelf({ ["timeline"] = { "added 4.0.3", "removed 5.0.4" } }, {	-- Rods
 			i(52723),	-- Runed Elementium Rod
@@ -269,8 +269,8 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(59596),	-- Safety Catch Removal Kit
 		}),
 		filter(BATTLE_PETS, {
-			i(60216),	-- De-Weaponized Mechanical Companion*
-			i(59597),	-- Personal World Destroyer*
+			i(60216),	-- De-Weaponized Mechanical Companion (PET!)
+			i(59597),	-- Personal World Destroyer (PET!)
 		}),
 		filter(TOYS, {
 			i(40727),	-- Gnomish Gravity Well (TOY!)

@@ -1145,7 +1145,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 						i(46735, {	-- Synthebrew Goggles
 							["timeline"] = { "added 3.2.0.10314" },
 						}),
-						i(32233, {	-- Wolpertinger's Tankard (Pet)
+						i(32233, {	-- Wolpertinger (PET!)
 							["timeline"] = { "added 2.2.2" },
 						}),
 					},
@@ -1178,7 +1178,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 						i(46735, {	-- Synthebrew Goggles
 							["timeline"] = { "added 3.2.0.10314" },
 						}),
-						i(32233, {	-- Wolpertinger's Tankard (Pet)
+						i(32233, {	-- Wolpertinger (PET!)
 							["timeline"] = { "added 2.2.2" },
 						}),
 					},
@@ -1961,7 +1961,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 							["timeline"] = { "added 8.2.0.30918" },
 							["cost"] = BREWFEST_TOKEN_COST(200),
 						}),
-						i(32233, {	-- Wolpertinger's Tankard
+						i(32233, {	-- Wolpertinger (PET!)
 							["cost"] = BREWFEST_TOKEN_COST(200),
 							["timeline"] = { "added 2.2.2" },
 						}),
@@ -2132,7 +2132,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 							["timeline"] = { "added 8.2.0.30918" },
 							["cost"] = BREWFEST_TOKEN_COST(200),
 						}),
-						i(32233, {	-- Wolpertinger's Tankard
+						i(32233, {	-- Wolpertinger (PET!)
 							["cost"] = BREWFEST_TOKEN_COST(200),
 							["timeline"] = { "added 2.2.2" },
 						}),

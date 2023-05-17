@@ -11,7 +11,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		})),
 		un(REMOVED_FROM_GAME, ach(409)),		-- Last Man Standing
 		un(REMOVED_FROM_GAME, ach(3618)),		-- Murkimus the Gladiator
-			un(REMOVED_FROM_GAME, i(100870)),		-- Murkismus the gladiator
+			un(REMOVED_FROM_GAME, i(100870)),		-- Murkismus the Gladiator (PET!)
 		un(REMOVED_FROM_GAME, a(ach(9256, {		-- Rescue Operation (Alliance)
 				crit(1),						-- Commander Jobby Shortsight
 				crit(2),						-- Marshal Andrea DeSousa

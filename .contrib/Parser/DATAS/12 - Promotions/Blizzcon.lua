@@ -20,14 +20,14 @@ root(ROOTS.Promotions, n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bl
 	ach(3536, {	-- Blizzcon 2009 - The Marine Marine
 		["timeline"] = { "added 3.2.0.10314" },
 	}),
-	i(46802, {	-- Heavy Murloc Egg Pet
+	i(46802, {	-- Grunty (PET!)
 		["timeline"] = { "added 3.2.0.10314" },
 	}),
 
 	ach(5378, {	-- Blizzcon 2010 - Deathy
 		["timeline"] = { "added 4.0.1.12984" },
 	}),
-	i(67418, {	-- Smoldering Murloc Egg Pet
+	i(67418, {	-- Deathy (PET!)
 		["timeline"] = { "added 4.0.1.12984" },
 	}),
 

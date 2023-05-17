@@ -1088,7 +1088,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(64556, {	-- Petting Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
-						i(66080, {	-- Tiny Flamefly
+						i(66080, {	-- Tiny Flamefly (PET!)
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},
@@ -1232,7 +1232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(64552, {	-- Belly Rubbers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
-						i(66080, {	-- Tiny Flamefly
+						i(66080, {	-- Tiny Flamefly (PET!)
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},

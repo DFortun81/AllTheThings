@@ -211,7 +211,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(160588, {	-- Cap'n Crackers (PET!)
 			["timeline"] = { "added 8.0.1.27602" },
 		}),
-		i(70099, {	-- Cenarion Hatchling
+		i(70099, {	-- Cenarion Hatchling (PET!)
 			["timeline"] = { "added 4.1.0.13850", "removed 8.3.0" },
 		}),
 		i(92707, {	-- Cinder Kitten (PET!)
@@ -229,10 +229,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(69847, {	-- Guardian Cub (Original Version which was bound for 24h)
 			["timeline"] = { "added 4.1.0.13793", "removed 4.2.0.14313" },
 		}),
-		i(72068, {	-- Guardian Cub
+		i(72068, {	-- Guardian Cub (PET!)
 			["timeline"] = { "added 4.2.0.14313", "removed 5.4.8" },
 		}),
-		i(49662, {	-- Gryphon Hatchling
+		i(49662, {	-- Gryphon Hatchling (PET!)
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 			["timeline"] = { "added 3.3.2.11403", "removed 8.3.0" },
 		}),
@@ -243,10 +243,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		pet(3249, {	-- Lil' Ursoc (PET!)
 			["timeline"] = { ADDED_9_2_5 },
 		}),
-		i(54847, {	-- Lil' XT
+		i(54847, {	-- Lil' XT (PET!)
 			["timeline"] = { "added 3.3.3.11723", "removed 8.3.0" },
 		}),
-		i(68385, {	-- Lil' Ragnaros
+		i(68385, {	-- Lil' Ragnaros (PET!)
 			["timeline"] = { "added 4.0.3.13286" },
 		}),
 		i(85871, {	-- Lucky Quilen Cub
@@ -288,7 +288,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(160587, {	-- Whomper (PET!)
 			["timeline"] = { "added 8.0.1.28153" },
 		}),
-		i(49663, {	-- Wind Rider Cub
+		i(49663, {	-- Wind Rider Cub (PET!)
 			["timeline"] = { "added 3.3.2.11403", "removed 8.3.0" },
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		}),

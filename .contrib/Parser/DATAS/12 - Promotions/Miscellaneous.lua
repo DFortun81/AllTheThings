@@ -13,20 +13,20 @@ root(ROOTS.Promotions, filter(MISC, {
 			["description"] = "Granted to players that attach an authenticator to their account.",
 			["timeline"] = { "added 3.3.0.10958" },
 		})),
-		i(48527, {	-- Enchanted Onyx (Onyx Panther)
+		i(48527, {	-- Onyx Panther (PET!)
 			["description"] = "Reward from a Korean-exclusive World Event that mailed you this pet.",
-			["timeline"] = { "added 3.2.2.13287" },
+			["timeline"] = { "added 4.0.3.13287" },
 			["g"] = {
 				ach(3896, {	-- Onyx Panther
-					["timeline"] = { "added 3.2.2.13287" },
+					["timeline"] = { "added 4.0.3.13287" },
 				}),
 			},
 		}),
-		i(32465, {	-- Fortune Cookie (Lucky)
+		i(32465, {	-- Lucky (PET!)
 			["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
 			["timeline"] = { "added 2.4.2.8278" },
 		}),
-		i(32498, {	-- Fortune Cookie (Lucky)
+		i(32498, {	-- Lucky (PET!)
 			["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
 			["timeline"] = { "added 2.4.2.8278" },
 		}),
@@ -42,11 +42,11 @@ root(ROOTS.Promotions, filter(MISC, {
 		ach(3618, {	-- Murkimus the Gladiator
 			["timeline"] = { "added 3.1.2" },
 		}),
-		i(45180, {	-- Murkimus' Little Spear (Murkimus the Gladiator)
+		i(45180, {	-- Murkimus the Gladiator (PET!)
 			["description"] = "This was obtained by participating in at least 200 arena matches in the 2009 Arena Tournament, or at least 50 matches on the same team in the years after that.",
 			["timeline"] = { "added 3.1.2" },
 		}),
-		i(46892, {	-- Murkimus' Tiny Spear (Murkimus the Gladiator)
+		i(46892, {	-- Murkimus the Gladiator (PET!)
 			["description"] = "This was obtained by participating in at least 200 arena matches in the 2009 Arena Tournament, or at least 50 matches on the same team in the years after that.",
 			["timeline"] = { "added 3.1.2" },
 		}),
@@ -73,7 +73,7 @@ root(ROOTS.Promotions, filter(MISC, {
 			["description"] = "Reward from the 2008 Worldwide Invitational in Paris.",
 			["timeline"] = { "added 2.4.2.8301" },
 		}),
-		i(41133, {	-- Unhatched Mr. Chilly
+		i(41133, {	-- Mr. Chilly (PET!)
 			["description"] = "This was awarded to players when they linked their original WoW account to a Battle.Net Tag. No longer available as all accounts now require Battle.Net Tag initially, unless you have access to an unattached account.",
 			["timeline"] = { "added 3.0.1" },
 		}),
