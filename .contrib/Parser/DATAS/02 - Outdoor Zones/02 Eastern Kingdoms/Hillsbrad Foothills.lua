@@ -867,6 +867,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				applyclassicphase(PHASE_FOUR, q(8410, {	-- Elemental Mastery
+					-- #if AFTER TBC
+					["allianceQuestData"] = {
+						["qgs"] = {
+							23127,	-- Farseer Javad <Shaman Trainer>
+							20407,	-- Farseer Umbrua <Shaman Trainer>
+						},
+						["coords"] = {
+							{ 55.2, 29.6, IRONFORGE },	-- Farseer Javad
+							{ 61.8, 83.8, STORMWIND_CITY },	-- Farseer Umbrua
+						},
+					},
+					["hordeQuestData"] = {
+						["qgs"] = {
+							5892,	-- Searn Firewarder <Shaman Trainer>
+							3032,	-- Beram Skychaser <Shaman Trainer>
+						},
+						["coords"] = {
+							{ 38.0, 37.8, ORGRIMMAR },	-- Searn Firewarder
+							{ 22.8, 19.4, THUNDER_BLUFF },	-- Beram Skychaser
+						},
+					},
+					-- #else
+					["qgs"] = {
+						5892,	-- Searn Firewarder <Shaman Trainer>
+						3032,	-- Beram Skychaser <Shaman Trainer>
+					},
+					["coords"] = {
+						{ 38.0, 37.8, ORGRIMMAR },	-- Searn Firewarder
+						{ 22.8, 19.4, THUNDER_BLUFF },	-- Beram Skychaser
+					},
+					["races"] = HORDE_ONLY,
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { SHAMAN },
+					["cost"] = {
+						{ "i", 7067, 1 },	-- Elemental Earth
+						{ "i", 7068, 1 },	-- Elemental Fire
+						{ "i", 7069, 1 },	-- Elemental Air
+						{ "i", 7070, 1 },	-- Elemental Water
+					},
+					["lvl"] = 50,
+				})),
 				q(509, {	-- Elixir of Agony (1/5)
 					["qg"] = 2216,	-- Apothecary Lydon
 					["sourceQuest"] = 502,	-- Elixir of Pain (2/2)
@@ -1896,7 +1939,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
+					-- #endif
 					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 					["groups"] = {
