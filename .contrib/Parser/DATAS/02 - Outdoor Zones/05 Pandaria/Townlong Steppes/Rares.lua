@@ -73,10 +73,13 @@ root(ROOTS.Zones, m(PANDARIA, {
 							90717,	-- Qu'nas' Apocryphal Legplates
 							90720,	-- Silent Leggings of the Ghostpaw
 							90724,	-- Spriggin's Sproggin' Leggin'
-							90722,	-- Torik-Ethis' Gilded Legplates
 							90718,	-- Torik-Ethis' Bloodied Legguards
-							87641,	-- Yaungol Battle Barrier
 						}},
+						["g"] = {
+							-- likely intended from actual Rares, but not actually working as intended since MoP it seems
+							i(90722),	-- Torik-Ethis' Gilded Legplates
+							i(87641),	-- Yaungol Battle Barrier
+						},
 					}),
 					crit(33, {	-- Glorious!
 						["achievementID"] = 7439,
@@ -115,25 +118,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 				["coord"] = { 54.0, 63.4, TOWNLONG_STEPPES },
 				["g"] = {
 					i(87220, {	-- Big Bag of Mysteries
-						["sym"] = {{"select","itemID",
-							90723,	-- Arness's Scaled Leggings
-							90721,	-- Cournith Waterstrider's Silken Finery
-							87642,	-- Darkstaff of Annihilation
-							87643,	-- Fangcracker Battlemace
-							87650,	-- Fishsticker Crossbow
-							90725,	-- Gaarn's Leggings of Infestation
-							90719,	-- Go-Kan's Golden Trousers
-							87646,	-- Needlefang Throatripper
-							87652,	-- Ook-Breaker Mace
-							87651,	-- Pathwalker Greatstaff
-							87649,	-- Pool-Stirrer
-							90717,	-- Qu'nas' Apocryphal Legplates
-							90720,	-- Silent Leggings of the Ghostpaw
-							90724,	-- Spriggin's Sproggin' Leggin'
-							90722,	-- Torik-Ethis' Gilded Legplates
-							90718,	-- Torik-Ethis' Bloodied Legguards
-							87641,	-- Yaungol Battle Barrier
-						}},
+						["sym"] = {{"select","itemID",87218},{"pop"}},	-- Big Bag of Arms
 					}),
 					crit(26, {	-- Glorious!
 						["achievementID"] = 7439,
