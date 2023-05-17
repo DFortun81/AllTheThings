@@ -1395,13 +1395,13 @@ REMOVED_5_0_4 = "removed 5.0.4.16016";					-- Mists of Pandaria 5.0.4/Pre-Patch 
 ADDED_5_1_0 = "added 5.1.0.16309";						-- Mists of Pandaria 5.1.0 Launch on November 27th, 2012
 REMOVED_5_1_0 = "removed 5.1.0.16309";					-- Mists of Pandaria 5.1.0 Launch on November 27th, 2012
 ADDED_5_2_0 = "added 5.2.0.16650";						-- Mists of Pandaria 5.2.0 Launch on March 5th, 2013
-removed_5_2_0 = "removed 5.2.0.16650";					-- Mists of Pandaria 5.2.0 Launch on March 5th, 2013
+REMOVED_5_2_0 = "removed 5.2.0.16650";					-- Mists of Pandaria 5.2.0 Launch on March 5th, 2013
 ADDED_5_3_0 = "added 5.3.0.16981";						-- Mists of Pandaria 5.3.0 Launch on May 21st, 2013
-removed_5_3_0 = "removed 5.3.0.16981";					-- Mists of Pandaria 5.3.0 Launch on May 21st, 2013
+REMOVED_5_3_0 = "removed 5.3.0.16981";					-- Mists of Pandaria 5.3.0 Launch on May 21st, 2013
 ADDED_5_4_0 = "added 5.4.0.17345";						-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
-removed_5_4_0 = "removed 5.4.0.17345";					-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
+REMOVED_5_4_0 = "removed 5.4.0.17345";					-- Mists of Pandaria 5.4.0 Launch on September 10th, 2013
 ADDED_5_4_7 = "added 5.4.7.17898";						-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
-removed_5_4_7 = "removed 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
+REMOVED_5_4_7 = "removed 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on February 18th, 2014
 -------------------------
 -- WARLORDS OF DRAENOR --
 -------------------------
