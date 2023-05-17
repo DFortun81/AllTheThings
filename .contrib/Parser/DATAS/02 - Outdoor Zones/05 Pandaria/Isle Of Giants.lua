@@ -136,10 +136,10 @@ _.Zones =
 						},
 					}),
 					n(69925, {	-- Zandalari Dinomancer
-						i(95422),	-- Zandalari Anklerender
-						i(95424),	-- Zandalari Toenibbler
-						i(95423),	-- Zandalari Footlsasher
-						i(94126),	-- Zandalari Kneebiter
+						i(95422),	-- Zandalari Anklerender (PET!)
+						i(95424),	-- Zandalari Toenibbler (PET!)
+						i(95423),	-- Zandalari Footlsasher (PET!)
+						i(94126),	-- Zandalari Kneebiter (PET!)
 						i(94232, {	-- Ancient Tome of Dinomancy
 							["classes"] = { HUNTER },
 							["spellID"] = 138430,	-- Ancient Zandalari Knowledge

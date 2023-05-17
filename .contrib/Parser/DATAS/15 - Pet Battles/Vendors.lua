@@ -8,22 +8,22 @@ root(ROOTS.PetBattles, {
 			["coord"] = { 69.4, 24.4, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				p(138, {	-- Blue Moth
+				pet(138, {	-- Blue Moth
 					["races"] = { DRAENEI },
 				}),
-				p(630, {	-- Gilnean Raven
+				pet(630, {	-- Gilnean Raven
 					["races"] = { WORGEN },
 				}),
-				p(68, {	-- Great Horned Owl
+				pet(68, {	-- Great Horned Owl
 					["races"] = { NIGHTELF },
 				}),
-				p(792, {	-- Jade Crane Chick
+				pet(792, {	-- Jade Crane Chick
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
-				p(43, {	-- Orange Tabby Cat
+				pet(43, {	-- Orange Tabby Cat
 					["races"] = { HUMAN },
 				}),
-				p(72, {	-- Snowshoe Rabbit
+				pet(72, {	-- Snowshoe Rabbit
 					["races"] = { GNOME, DWARF },
 				}),
 			},

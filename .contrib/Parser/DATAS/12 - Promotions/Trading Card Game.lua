@@ -38,13 +38,13 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 		i(34493, {	-- Dragon Kite
 			["timeline"] = { "added 2.3.0.7561" },
 		}),
-		i(79744, {	-- Eye of the Legion
+		i(79744, {	-- Eye of the Legion (PET!)
 			["timeline"] = { "added 4.3.2.15211" },
 		}),
 		i(72134, {	-- Grell Moss
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(93669, {	-- Gusting Grimoire
+		i(93669, {	-- Gusting Grimoire (PET!)
 			["timeline"] = { "added 5.2.0.16408" },
 		}),
 		i(23713, {	-- Hippogryph Hatchling
@@ -65,7 +65,7 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 		i(34492, {	-- Rocket Chicken
 			["timeline"] = { "added 2.3.0.7561" },
 		}),
-		i(72153, {	-- Sand Scarab
+		i(72153, {	-- Sand Scarab (PET!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
 		i(38050, {	-- Soul-Trader Beacon

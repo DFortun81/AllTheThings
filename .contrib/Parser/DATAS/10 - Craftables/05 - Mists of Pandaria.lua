@@ -414,9 +414,9 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 			i(95416),	-- Sky Golem (MOUNT!)
 		}),
 		filter(BATTLE_PETS, {
-			i(87526),	-- Mechanical Pandaren Dragonling*
-			i(94903),	-- Pierre*
-			i(100905),	-- Rascal-Bot*
+			i(87526),	-- Mechanical Pandaren Dragonling (PET!)
+			i(94903),	-- Pierre (PET!)
+			i(100905),	-- Rascal-Bot (PET!)
 		}),
 		filter(TOYS, {
 			i(87214),	-- Blingtron 4000 (TOY!)
@@ -555,8 +555,8 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 			i(83089),	-- Sunstone Panther (MOUNT!)
 		}),
 		filter(BATTLE_PETS, {
-			i(82774),	-- Jade Owl
-			i(82775),	-- Sapphire Cub
+			i(82774),	-- Jade Owl (PET!)
+			i(82775),	-- Sapphire Cub (PET!)
 		}),
 		filter(NECK_F, {
 			i(83803),	-- Golembreaker Amulet
@@ -839,8 +839,8 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 	prof(TAILORING, {
 		filter(BATTLE_PETS, {
 			i(92960, {	-- Silkworm Cocoon
-				i(90900),	-- Imperial Moth
-				i(90902),	-- Imperial Silkworm
+				i(90900),	-- Imperial Moth (PET!)
+				i(90902),	-- Imperial Silkworm (PET!)
 			}),
 		}),
 		filter(BAGS, {

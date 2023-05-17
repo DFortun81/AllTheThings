@@ -3344,7 +3344,7 @@ _.Zones =
 						i(85219, {	-- Ominous Seeds
 							["description"] = "You get this seed by planting any seeds this vendor sells and waiting for it to drop.  Once dropped, then plant it and wait a day to harvest the pet.",
 							["g"] = {
-								i(85220),	-- Terrible Turnip
+								i(85220),	-- Terrible Turnip (PET!)
 							},
 						}),
 					},

@@ -214,7 +214,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(70099, {	-- Cenarion Hatchling
 			["timeline"] = { "added 4.1.0.13850", "removed 8.3.0" },
 		}),
-		i(92707, {	-- Cinder Kitten
+		i(92707, {	-- Cinder Kitten (PET!)
 			["timeline"] = { "added 5.1.0.16309" },
 		}),
 		pet(2780, {	-- Daisy (PET!)
@@ -273,16 +273,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 			["timeline"] = { "added 3.2.2.10468", "removed 10.0.2.47213" },
 		}),
-		i(151234, {	-- Shadow
+		i(151234, {	-- Shadow (PET!)
 			["timeline"] = { "added 7.3.0.25021" },
 		}),
-		i(78916, {	-- Soul of the Aspects
+		i(78916, {	-- Soul of the Aspects (PET!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
 		i(153541, {	-- Tottle (PET!)
 			["timeline"] = { "added 7.3.5.25937" },
 		}),
-		i(147900, {	-- Twilight
+		i(147900, {	-- Twilight (PET!)
 			["timeline"] = { "added 7.3.0.24781" },
 		}),
 		i(160587, {	-- Whomper (PET!)

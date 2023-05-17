@@ -58,7 +58,7 @@ root(ROOTS.Promotions, filter(MISC, {
 			["description"] = "Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",
 			["timeline"] = { "added 2.1.0.6678" },
 		}),
-		i(90953, {	-- Spectral Cub
+		i(90953, {	-- Spectral Cub (PET!)
 			["description"] = "Reward from the Battle.net World Championship in Shanghai 2012 (China Only)",
 			["timeline"] = { "added 5.0.4.16004" },
 		}),

@@ -306,7 +306,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(156308),	-- Sif's Remembrance
 				})),
 				cr(32906, e(1646, {	-- Freya
-					i(142091),	-- Blessed Seed
+					i(142091, {	-- Snaplasher (PET!)
+						["timeline"] = { "added 7.1.0.22731"},
+					}),
 					i(138800),	-- Illusion: Blade Ward
 					i(156613),	-- Dreambinder
 					i(156196),	-- The Lifebinder

@@ -1309,7 +1309,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(21704),	-- Boots of the Redeemed Prophecy
 					i(21706),	-- Boots of the Unwavering Will
 					i(21707),	-- Ring of Swarming Thought
-					applyclassicphase(MOP_PHASE_ONE, i(93041, {	-- Jewel of Maddening Whispers (Pet)
+					applyclassicphase(MOP_PHASE_ONE, i(93041, {	-- Mini Mindslayer (PET!)
 						["timeline"] = { "added 5.1.0.16309" },
 					})),
 				},
@@ -1441,7 +1441,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(22399, {	-- Idol of Health
 						["timeline"] = { "removed 5.0.4" },
 					}),
-					applyclassicphase(MOP_PHASE_ONE, i(93039, {	-- Viscidus Globule (Pet)
+					applyclassicphase(MOP_PHASE_ONE, i(93039, {	-- Viscidus Globule (PET!)
 						["timeline"] = { "added 5.1.0.16309" },
 					})),
 				},
@@ -1471,7 +1471,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(21598),	-- Royal Qiraji Belt
 					i(21600),	-- Boots of Epiphany
 					i(21601),	-- Ring of Emperor Vek'lor
-					applyclassicphase(MOP_PHASE_ONE, i(93040, {	-- Anubisath Idol (Pet)
+					applyclassicphase(MOP_PHASE_ONE, i(93040, {	-- Anubisath Idol (PET!)
 						["timeline"] = { "added 5.1.0.16309" },
 					})),
 				}),

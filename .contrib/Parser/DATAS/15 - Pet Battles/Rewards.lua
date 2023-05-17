@@ -16,9 +16,9 @@ root(ROOTS.PetBattles, {
 				37460,	-- Rope Pet Leash
 			}},
 			["g"] = {
-				i(94210),	-- Mountain Panda
-				i(94209),	-- Snowy Panda
-				i(94208),	-- Sunfur Panda
+				i(94210),	-- Mountain Panda (PET!)
+				i(94209),	-- Snowy Panda (PET!)
+				i(94208),	-- Sunfur Panda (PET!)
 				i(92679),	-- Flawless Aquatic Battle-Stone
 				i(92675),	-- Flawless Beast Battle-Stone
 				i(92676),	-- Flawless Critter Battle-Stone
@@ -46,7 +46,7 @@ root(ROOTS.PetBattles, {
 				37460,	-- Rope Pet Leash
 			}},
 			["g"] = {
-				i(89587),	-- Porcupette
+				i(89587),	-- Porcupette (PET!)
 				i(92679),	-- Flawless Aquatic Battle-Stone
 				i(92675),	-- Flawless Beast Battle-Stone
 				i(92676),	-- Flawless Critter Battle-Stone

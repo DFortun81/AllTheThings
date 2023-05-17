@@ -1572,7 +1572,7 @@ _.Zones =
 									i(88535, {	-- Sharpened Tuskarr Pole -- NOT MOGGABLE
 										["cost"] = 12750000,	-- 1,275g
 									}),
-									i(85447),	-- Tiny Goldfish Pet
+									i(85447),	-- Tiny Goldfish (PET!)
 								},
 							}),
 						}),

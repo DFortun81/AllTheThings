@@ -8,7 +8,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["coord"] = { 75.69, 78.17, 407 },
 			["g"] = {
 				ach(6332),	-- That Rabbit's Dynamite!
-				i(80008),	-- Darkmoon Rabbit
+				i(80008),	-- Darkmoon Rabbit (PET!)
 			},
 		}),
 		n(122899, {	-- Death Metal Knight

@@ -480,7 +480,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(1520, {	-- Magmadar
 				["creatureID"] = 11982,
 				["groups"] = {
-					i(93034, {	-- Blazing Rune (Pet)
+					i(93034, {	-- Corefire Imp (PET!)
 						["timeline"] = { "added 5.1.0.16309" },
 					}),
 					i(17073),	-- Earthshaker
@@ -622,7 +622,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["creatureID"] = 12098,
 				["groups"] = {
 					i(17330),	-- Hand of Sulfuron
-					i(93033, {	-- Mark of Flame (Pet)
+					i(93033, {	-- Harbinger of Flame (Pet)
 						["timeline"] = { "added 5.1.0.16309" },
 					}),
 					i(17074),	-- Shadowstrike
@@ -646,7 +646,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(1526, {	-- Golemagg the Incinerator
 				["creatureID"] = 11988,
 				["groups"] = {
-					i(93035, {	-- Core of Hardened Ash (Pet)
+					i(93035, {	-- Ashstone Core (PET!)
 						["timeline"] = { "added 5.1.0.16309" },
 					}),
 					i(17203),	-- Sulfuron Ingot

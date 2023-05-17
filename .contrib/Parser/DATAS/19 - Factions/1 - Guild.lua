@@ -65,7 +65,7 @@ _.Factions =
 			ach(6634, {	-- Challenge Conquerors: Gold - Guild Edition
 				["collectible"] = false,
 				["g"] = {
-					i(85513, {	-- Thundering Serpent Hatchling
+					i(85513, {	-- Thundering Serpent Hatchling (PET!)
 						["u"] = REMOVED_FROM_GAME,	-- They removed it from every guild in 6.0. Never confirmed to be obtainable from BMAH
 					}),
 				},

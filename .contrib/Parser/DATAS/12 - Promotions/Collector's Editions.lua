@@ -215,7 +215,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 				ach(6849),	-- Collector's Edition: Imperial Quilen
 				ach(6848),	-- Collector's Edition: Lucky Quilen Cub
 				i(85870),	-- Imperial Quilen (MOUNT!)
-				i(85871),	-- Lucky Quilen Cub
+				i(85871),	-- Lucky Quilen Cub (PET!)
 			},
 		}),
 	}),
@@ -331,7 +331,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 		["timeline"] = { "added 4.3.0.15005" },
 		["groups"] = {
 			ach(7412),	-- Collector's Edition: Fetish Shaman
-			i(76062),	-- Fetish Shaman's Spear (Fetish Shaman)
+			i(76062),	-- Fetish Shaman (PET!)
 		},
 	}),
 

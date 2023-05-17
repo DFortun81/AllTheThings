@@ -1678,7 +1678,7 @@ _.Zones =
 					["coord"] = { 27.9, 47.1, THE_JADE_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(84105),	-- Fishy
+						i(84105),	-- Fishy (PET!)
 					},
 				}),
 				q(29930, {	-- What's Mined Is Yours

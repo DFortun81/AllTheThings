@@ -49,7 +49,7 @@ _.Instances = { tier(MOP_TIER, {
 			d(NORMAL_DUNGEON, {
 				ach(6400),	-- How Did He Get Up There?
 				ach(6402, {	-- Ling-Ting's Herbal Journey
-					i(86562),	-- Hopling
+					i(86562),	-- Hopling (PET!)
 				}),
 				cr(56637, e(668, {	-- Ook-Ook
 					i(144084),	-- Ook's Hozen Slicer
@@ -100,7 +100,7 @@ _.Instances = { tier(MOP_TIER, {
 					ach(6420),	-- Hopocalypse Now!
 					ach(6400),	-- How Did He Get Up There?
 					ach(6402, {	-- Ling-Ting's Herbal Journey
-						i(86562),	-- Hopling
+						i(86562),	-- Hopling (PET!)
 					}),
 					cr(56637, e(668, {	-- Ook-Ook
 						ach(6089),	-- Keep Rollin' Rollin' Rollin'

@@ -151,7 +151,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
 									-- #endif
 								}),
-								i(93030, {	-- Dusty Clutch of Eggs (PET!)
+								i(93030, {	-- Giant Bone Spider (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
 								i(39221),	-- Wraith Spear
@@ -247,7 +247,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
 									-- #endif
 								}),
-								i(93032, {	-- Blighted Spore (PET!)
+								i(93032, { -- Fungal Abomination (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
 								i(40622),	-- Spaulders of the Lost Conqueror
@@ -434,8 +434,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								},{"pop"},
 								{"is","itemID"},				-- Items only
 								{"not","itemID",
-									93032,	-- Blighted Spore
-									93030,	-- Dusty Clutch of Eggs
+									93032,	-- Fungal Abomination (PET!)
+									93030,	-- Giant Bone Spider (PET!)
 								},
 							},
 							-- #ENDIF
@@ -834,7 +834,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
 									-- #endif
 								}),
-								i(93030, {	-- Dusty Clutch of Eggs (PET!)
+								i(93030, {	-- Giant Bone Spider (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
 								i(39758),	-- The Jawbone
@@ -971,7 +971,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
 									-- #endif
 								}),
-								i(93032, {	-- Blighted Spore (PET!)
+								i(93032, { -- Fungal Abomination (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
 								i(40637),	-- Mantle of the Lost Conqueror
@@ -1216,8 +1216,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								},{"pop"},
 								{"is","itemID"},				-- Items only
 								{"not","itemID",
-									93032,	-- Blighted Spore
-									93030,	-- Dusty Clutch of Eggs
+									93032,	-- Fungal Abomination (PET!)
+									93030,	-- Giant Bone Spider (PET!)
 								},
 							},
 							-- #ENDIF
@@ -1231,7 +1231,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
 									-- #endif
 								}),
-								i(93029, {	-- Gluth's Bone (TOY!)
+								i(93029, {	-- Gluth's Bone (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
 								-- #IF ANYCLASSIC

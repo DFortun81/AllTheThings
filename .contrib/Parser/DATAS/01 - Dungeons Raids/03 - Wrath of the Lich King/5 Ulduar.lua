@@ -851,7 +851,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								i(45946),	-- Fire Orchid Signet
 								i(45788),	-- Freya's Sigil
 							}),
-							i(142091, {	-- Blessed Seed (PET!)
+							i(142091, {	-- Snaplasher (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138800, {	-- Illusion: Blade Ward
@@ -1779,7 +1779,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								i(45488),	-- Leggings of the Enslaved Idol
 								i(45814),	-- Freya's Sigil
 							}),
-							i(142091, {	-- Blessed Seed (PET!)
+							i(142091, {	-- Snaplasher (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138800, {	-- Illusion: Blade Ward
@@ -2694,7 +2694,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45788),	-- Freya's Sigil
 							i(45814),	-- Freya's Sigil
 						}),
-						i(142091, {	-- Blessed Seed (PET!)
+						i(142091, {	-- Snaplasher (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(138800, {	-- Illusion: Blade Ward

@@ -502,7 +502,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		pvp(ach(8301,  {	-- Deadly Pet Brawler (1000)
 			title(227),	-- Trainer
 			ach(8300, {	-- Brutal Pet Brawler (250)
-				i(94191),	-- Stunted Direhorn
+				i(94191),	-- Stunted Direhorn (PET!)
 			}),
 			ach(8298),	-- Vengeful Pet Brawler (50)
 			ach(8297),	-- Merciless Pet Brawler (10)

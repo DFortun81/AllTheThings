@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 			n(50347, {	-- Karr the Darkener
 				["coord"] = { 71.8, 37.6, DREAD_WASTES },
 				["g"] = {
-					i(86564),	-- Imbued Jade Fragment
+					i(86564),	-- Grinder (PET!)
 					crit(27, {	-- Glorious!
 						["achievementID"] = 7439,
 					}),
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 			n(50776, {	-- Nalash Verdantis
 				["coord"] = { 64.2, 58.6, DREAD_WASTES },
 				["g"] = {
-					i(86563),	-- Hollow Reed
+					i(86563),	-- Aqua Strider (PET!)
 					crit(13, {	-- Glorious!
 						["achievementID"] = 7439,
 					}),

@@ -137,7 +137,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 			e(1529,  {	-- Razorgore the Untamed
 				["creatureID"] = 12435,
 				["groups"] = {
-					i(93036, {	-- Unscathed Egg (Pet)
+					i(93036, {	-- Untamed Hatchling (PET!)
 						["timeline"] = { "added 5.1.0.16309" },
 					}),
 					i(19334),	-- The Untamed Blade
@@ -180,7 +180,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 			e(1531,  {	-- Broodlord Lashlayer
 				["creatureID"] = 12017,
 				["groups"] = {
-					i(93037, {	-- Blackwing Banner (Pet)
+					i(93037, {	-- Death Talon Whelpguard (Pet)
 						["timeline"] = { "added 5.1.0.16309" },
 					}),
 					i(19351),	-- Maladath, Runed Blade of the Black Flight
@@ -299,7 +299,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 			e(1535,  {	-- Chromaggus
 				["creatureID"] = 14020,
 				["groups"] = {
-					i(93038, {	-- Whistle of Chromatic Bone (Pet)
+					i(93038, {	-- Chrominius (PET!)
 						["timeline"] = { "added 5.1.0.16309" },
 					}),
 					i(19352),	-- Chromatically Tempered Sword

@@ -824,10 +824,10 @@ root(ROOTS.PetBattles, petbattle({
 				{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 			},
 			["g"] = {
-				i(92799),	-- Pandaren Air Spirit
-				i(92798),	-- Pandaren Fire Spirit
-				i(92800),	-- Pandaren Earth Spirit
-				i(90173),	-- Pandaren Water Spirit
+				i(92799),	-- Pandaren Air Spirit (PET!)
+				i(92798),	-- Pandaren Fire Spirit (PET!)
+				i(92800),	-- Pandaren Earth Spirit (PET!)
+				i(90173),	-- Pandaren Water Spirit (PET!)
 			},
 		}),
 	}),
@@ -1185,7 +1185,7 @@ root(ROOTS.PetBattles, petbattle({
 			["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
 			["g"] = {
 				i(184866, {	-- Grummlepouch
-					i(89587),	-- Porcupette
+					i(89587),	-- Porcupette (PET!)
 					i(184867),	-- Squibbles (PET!)
 				}),
 			},
@@ -1202,7 +1202,7 @@ root(ROOTS.PetBattles, petbattle({
 						37460,	-- Rope Pet Leash
 					}},
 					["g"] = {
-						i(92800),	-- Pandaren Earth Spirit
+						i(92800),	-- Pandaren Earth Spirit (PET!)
 					},
 				}),
 			},
@@ -1226,7 +1226,7 @@ root(ROOTS.PetBattles, petbattle({
 						37460,	-- Rope Pet Leash
 					}},
 					["g"] = {
-						i(92799),	-- Pandaren Air Spirit
+						i(92799),	-- Pandaren Air Spirit (PET!)
 					},
 				})
 			},
@@ -1250,7 +1250,7 @@ root(ROOTS.PetBattles, petbattle({
 						37460,	-- Rope Pet Leash
 					}},
 					["g"] = {
-						i(92798),	-- Pandaren Fire Spirit
+						i(92798),	-- Pandaren Fire Spirit (PET!)
 					},
 				})
 			},
