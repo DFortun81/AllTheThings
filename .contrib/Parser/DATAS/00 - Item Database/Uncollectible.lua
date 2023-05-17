@@ -684,6 +684,7 @@ i(204877);	-- 'The Resting Blade'
 i(203458);	-- Black Dragonscale Robes
 i(205031);	-- Broodmother Venom
 i(204833);	-- Buzzing Orb Core
+i(204436);	-- Chipped Horn Signet
 i(205030);	-- Crawler Venom
 i(203682);	-- Darkened Elemental Core
 i(203391);	-- Dented Dwarven Pocketwatch
