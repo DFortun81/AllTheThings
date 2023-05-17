@@ -1366,98 +1366,98 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						},
 						["g"] = {
 							n(TITANFORGED, {
-								i(96986), -- Abandoned Spaulders of Arrowflight
-								i(96987), -- Abandoned Spaulders of Renewal
-								i(96993), -- Bo-Ris, Horror in the Night
-								i(96978), -- Darkwood Spiritstaff
-								i(96992), -- Do-tharak, the Swordbreaker
-								i(96984), -- Forgotten Mantle of the Moon
-								i(96985), -- Forgotten Mantle of the Sun
-								i(96976), -- Fyn's Flickering Dagger
-								i(96991), -- Greatsword of Frozen Hells
-								i(96974), -- Invocation of the Dawn
-								i(96983), -- Jerthud, Graceful Hand of the Savior
-								i(96979), -- Lost Shoulders of Fire
-								i(96980), -- Lost Shoulders of Healing
-								i(96981), -- Lost Shoulders of Fluidity
-								i(96975), -- Miracoran, the Vehement Chord
-								i(96982), -- Nadagast's Exsanguinator
-								i(96988), -- Reconstructed Holy Shoulderplates
-								i(96989), -- Reconstructed Furious Shoulderplates
-								i(96990), -- Reconstructed Bloody Shoulderplates
-								i(97130), -- Tia-Tia, the Scything Star
-								i(96994), -- Visage of the Doomed
-								i(96977), -- Zeeg's Ancient Kegsmasher
+								i(96986),	-- Abandoned Spaulders of Arrowflight
+								i(96987),	-- Abandoned Spaulders of Renewal
+								i(96993),	-- Bo-Ris, Horror in the Night
+								i(96978),	-- Darkwood Spiritstaff
+								i(96992),	-- Do-tharak, the Swordbreaker
+								i(96984),	-- Forgotten Mantle of the Moon
+								i(96985),	-- Forgotten Mantle of the Sun
+								i(96976),	-- Fyn's Flickering Dagger
+								i(96991),	-- Greatsword of Frozen Hells
+								i(96974),	-- Invocation of the Dawn
+								i(96983),	-- Jerthud, Graceful Hand of the Savior
+								i(96979),	-- Lost Shoulders of Fire
+								i(96980),	-- Lost Shoulders of Healing
+								i(96981),	-- Lost Shoulders of Fluidity
+								i(96975),	-- Miracoran, the Vehement Chord
+								i(96982),	-- Nadagast's Exsanguinator
+								i(96988),	-- Reconstructed Holy Shoulderplates
+								i(96989),	-- Reconstructed Furious Shoulderplates
+								i(96990),	-- Reconstructed Bloody Shoulderplates
+								i(97130),	-- Tia-Tia, the Scything Star
+								i(96994),	-- Visage of the Doomed
+								i(96977),	-- Zeeg's Ancient Kegsmasher
 							}),
-							i(96614), -- Abandoned Spaulders of Arrowflight
-							i(96615), -- Abandoned Spaulders of Renewal
-							i(96621), -- Bo-Ris, Horror in the Night
-							i(96606), -- Darkwood Spiritstaff
-							i(96620), -- Do-tharak, the Swordbreaker
-							i(96612), -- Forgotten Mantle of the Moon
-							i(96613), -- Forgotten Mantle of the Sun
-							i(96604), -- Fyn's Flickering Dagger
-							i(96619), -- Greatsword of Frozen Hells
-							i(96602), -- Invocation of the Dawn
-							i(96611), -- Jerthud, Graceful Hand of the Savior
-							i(96607), -- Lost Shoulders of Fire
-							i(96608), -- Lost Shoulders of Healing
-							i(96609), -- Lost Shoulders of Fluidity
-							i(96603), -- Miracoran, the Vehement Chord
-							i(96610), -- Nadagast's Exsanguinator
-							i(96616), -- Reconstructed Holy Shoulderplates
-							i(96617), -- Reconstructed Furious Shoulderplates
-							i(96618), -- Reconstructed Bloody Shoulderplates
-							i(97127), -- Tia-Tia, the Scything Star
-							i(96622), -- Visage of the Doomed
-							i(96605), -- Zeeg's Ancient Kegsmasher
+							i(96614),	-- Abandoned Spaulders of Arrowflight
+							i(96615),	-- Abandoned Spaulders of Renewal
+							i(96621),	-- Bo-Ris, Horror in the Night
+							i(96606),	-- Darkwood Spiritstaff
+							i(96620),	-- Do-tharak, the Swordbreaker
+							i(96612),	-- Forgotten Mantle of the Moon
+							i(96613),	-- Forgotten Mantle of the Sun
+							i(96604),	-- Fyn's Flickering Dagger
+							i(96619),	-- Greatsword of Frozen Hells
+							i(96602),	-- Invocation of the Dawn
+							i(96611),	-- Jerthud, Graceful Hand of the Savior
+							i(96607),	-- Lost Shoulders of Fire
+							i(96608),	-- Lost Shoulders of Healing
+							i(96609),	-- Lost Shoulders of Fluidity
+							i(96603),	-- Miracoran, the Vehement Chord
+							i(96610),	-- Nadagast's Exsanguinator
+							i(96616),	-- Reconstructed Holy Shoulderplates
+							i(96617),	-- Reconstructed Furious Shoulderplates
+							i(96618),	-- Reconstructed Bloody Shoulderplates
+							i(97127),	-- Tia-Tia, the Scything Star
+							i(96622),	-- Visage of the Doomed
+							i(96605),	-- Zeeg's Ancient Kegsmasher
 						},
 					}),
 					e(827, {	-- Jin'rokh the Breaker
 						["crs"] = { 69465 },	-- Jin'rokh the Breaker
 						["g"] = {
 							ach(8056),	-- Heroic: Jin'rokh the Breaker
-							i(96379), -- Al'set's Tormented Leggings
-							i(96375), -- Bracers of Constant Implosion
-							i(96374), -- Chestplate of Violent Detonation
-							i(96373), -- Cloudbreaker Greatbelt
-							i(96383), -- Drape of Booming Nights
-							i(96380), -- Fissure-Split Shoulderwraps
-							i(96387), -- Ghostbinder Greatboots
-							i(96386), -- Infinitely Conducting Bracers
-							i(96388), -- Ionized Yojamban Carapace
-							i(96377), -- Jin'rokh's Soulcrystal
-							i(96382), -- Jin'rokh's Dreamshard
-							i(96378), -- Lightningweaver Gauntlets
-							i(96370), -- Lightning-Eye Hood
-							i(96369), -- Renataki's Soul Charm
-							i(96381), -- Robes of Static Bursts
-							i(96368), -- Sign of the Bloodied God
-							i(96384), -- Soulblade of the Breaking Storm
-							i(96371), -- Spearman's Jingling Leggings
-							i(96372), -- Static-Shot Shoulderguards
-							i(96376), -- Worldbreaker's Stormscythe
+							i(96379),	-- Al'set's Tormented Leggings
+							i(96375),	-- Bracers of Constant Implosion
+							i(96374),	-- Chestplate of Violent Detonation
+							i(96373),	-- Cloudbreaker Greatbelt
+							i(96383),	-- Drape of Booming Nights
+							i(96380),	-- Fissure-Split Shoulderwraps
+							i(96387),	-- Ghostbinder Greatboots
+							i(96386),	-- Infinitely Conducting Bracers
+							i(96388),	-- Ionized Yojamban Carapace
+							i(96377),	-- Jin'rokh's Soulcrystal
+							i(96382),	-- Jin'rokh's Dreamshard
+							i(96378),	-- Lightningweaver Gauntlets
+							i(96370),	-- Lightning-Eye Hood
+							i(96369),	-- Renataki's Soul Charm
+							i(96381),	-- Robes of Static Bursts
+							i(96368),	-- Sign of the Bloodied God
+							i(96384),	-- Soulblade of the Breaking Storm
+							i(96371),	-- Spearman's Jingling Leggings
+							i(96372),	-- Static-Shot Shoulderguards
+							i(96376),	-- Worldbreaker's Stormscythe
 							n(TITANFORGED, {
-								i(96751), -- Al'set's Tormented Leggings
-								i(96747), -- Bracers of Constant Implosion
-								i(96746), -- Chestplate of Violent Detonation
-								i(96745), -- Cloudbreaker Greatbelt
-								i(96755), -- Drape of Booming Nights
-								i(96752), -- Fissure-Split Shoulderwraps
-								i(96759), -- Ghostbinder Greatboots
-								i(96758), -- Infinitely Conducting Bracers
-								i(96760), -- Ionized Yojamban Carapace
-								i(96749), -- Jin'rokh's Soulcrystal
-								i(96754), -- Jin'rokh's Dreamshard
-								i(96750), -- Lightningweaver Gauntlets
-								i(96742), -- Lightning-Eye Hood
-								i(96741), -- Renataki's Soul Charm
-								i(96753), -- Robes of Static Bursts
-								i(96740), -- Sign of the Bloodied God
-								i(96756), -- Soulblade of the Breaking Storm
-								i(96743), -- Spearman's Jingling Leggings
-								i(96744), -- Static-Shot Shoulderguards
-								i(96748), -- Worldbreaker's Stormscythe
+								i(96751),	-- Al'set's Tormented Leggings
+								i(96747),	-- Bracers of Constant Implosion
+								i(96746),	-- Chestplate of Violent Detonation
+								i(96745),	-- Cloudbreaker Greatbelt
+								i(96755),	-- Drape of Booming Nights
+								i(96752),	-- Fissure-Split Shoulderwraps
+								i(96759),	-- Ghostbinder Greatboots
+								i(96758),	-- Infinitely Conducting Bracers
+								i(96760),	-- Ionized Yojamban Carapace
+								i(96749),	-- Jin'rokh's Soulcrystal
+								i(96754),	-- Jin'rokh's Dreamshard
+								i(96750),	-- Lightningweaver Gauntlets
+								i(96742),	-- Lightning-Eye Hood
+								i(96741),	-- Renataki's Soul Charm
+								i(96753),	-- Robes of Static Bursts
+								i(96740),	-- Sign of the Bloodied God
+								i(96756),	-- Soulblade of the Breaking Storm
+								i(96743),	-- Spearman's Jingling Leggings
+								i(96744),	-- Static-Shot Shoulderguards
+								i(96748),	-- Worldbreaker's Stormscythe
 							}),
 						},
 					}),
@@ -1467,49 +1467,49 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							ach(8057),	-- Heroic: Horridon
 							i(93666),	-- Spawn of Horridon (MOUNT!)
 							i(94574),	-- Pygmy Direhorn (PET!)
-							i(96408), -- Armplates of the Vanquished Abomination
-							i(96392), -- Bindings of Multiplicative Strikes
-							i(96395), -- Bloodlord's Bloodsoaked Legplates
-							i(96401), -- Dinomancer's Spiritbinding Spire
-							i(96399), -- Flamecaster's Burning Crown
-							i(96394), -- Frozen Warlord's Bracers
-							i(96397), -- Horn-Rimmed Doomcloak
-							i(96385), -- Horridon's Last Gasp
-							i(96402), -- Horridon's Tusk Fragment
-							i(96391), -- Jalak's Maelstrom Staff
-							i(96407), -- Legguards of Scintillating Scales
-							i(96403), -- Petrified Eye of the Basilisk
-							i(96396), -- Puncture-Proof Greathelm
-							i(96405), -- Roots of Rampaging Earth
-							i(96398), -- Spark of Zandalar
-							i(96406), -- Spaulders of Dinomancy
-							i(96393), -- Sul'lithuz Sandmail
-							i(96390), -- Talisman of Living Poison
-							i(96400), -- Vaccinator's Armwraps
-							i(96404), -- Venomlord's Totemic Wand
-							i(96389), -- Wastewalker's Sandblasted Drape
+							i(96408),	-- Armplates of the Vanquished Abomination
+							i(96392),	-- Bindings of Multiplicative Strikes
+							i(96395),	-- Bloodlord's Bloodsoaked Legplates
+							i(96401),	-- Dinomancer's Spiritbinding Spire
+							i(96399),	-- Flamecaster's Burning Crown
+							i(96394),	-- Frozen Warlord's Bracers
+							i(96397),	-- Horn-Rimmed Doomcloak
+							i(96385),	-- Horridon's Last Gasp
+							i(96402),	-- Horridon's Tusk Fragment
+							i(96391),	-- Jalak's Maelstrom Staff
+							i(96407),	-- Legguards of Scintillating Scales
+							i(96403),	-- Petrified Eye of the Basilisk
+							i(96396),	-- Puncture-Proof Greathelm
+							i(96405),	-- Roots of Rampaging Earth
+							i(96398),	-- Spark of Zandalar
+							i(96406),	-- Spaulders of Dinomancy
+							i(96393),	-- Sul'lithuz Sandmail
+							i(96390),	-- Talisman of Living Poison
+							i(96400),	-- Vaccinator's Armwraps
+							i(96404),	-- Venomlord's Totemic Wand
+							i(96389),	-- Wastewalker's Sandblasted Drape
 							n(TITANFORGED, {
-								i(96780), -- Armplates of the Vanquished Abomination
-								i(96764), -- Bindings of Multiplicative Strikes
-								i(96767), -- Bloodlord's Bloodsoaked Legplates
-								i(96773), -- Dinomancer's Spiritbinding Spire
-								i(96771), -- Flamecaster's Burning Crown
-								i(96766), -- Frozen Warlord's Bracers
-								i(96769), -- Horn-Rimmed Doomcloak
-								i(96757), -- Horridon's Last Gasp
-								i(96774), -- Horridon's Tusk Fragment
-								i(96763), -- Jalak's Maelstrom Staff
-								i(96779), -- Legguards of Scintillating Scales
-								i(96775), -- Petrified Eye of the Basilisk
-								i(96768), -- Puncture-Proof Greathelm
-								i(96777), -- Roots of Rampaging Earth
-								i(96770), -- Spark of Zandalar
-								i(96778), -- Spaulders of Dinomancy
-								i(96765), -- Sul'lithuz Sandmail
-								i(96762), -- Talisman of Living Poison
-								i(96772), -- Vaccinator's Armwraps
-								i(96776), -- Venomlord's Totemic Wand
-								i(96761), -- Wastewalker's Sandblasted Drape
+								i(96780),	-- Armplates of the Vanquished Abomination
+								i(96764),	-- Bindings of Multiplicative Strikes
+								i(96767),	-- Bloodlord's Bloodsoaked Legplates
+								i(96773),	-- Dinomancer's Spiritbinding Spire
+								i(96771),	-- Flamecaster's Burning Crown
+								i(96766),	-- Frozen Warlord's Bracers
+								i(96769),	-- Horn-Rimmed Doomcloak
+								i(96757),	-- Horridon's Last Gasp
+								i(96774),	-- Horridon's Tusk Fragment
+								i(96763),	-- Jalak's Maelstrom Staff
+								i(96779),	-- Legguards of Scintillating Scales
+								i(96775),	-- Petrified Eye of the Basilisk
+								i(96768),	-- Puncture-Proof Greathelm
+								i(96777),	-- Roots of Rampaging Earth
+								i(96770),	-- Spark of Zandalar
+								i(96778),	-- Spaulders of Dinomancy
+								i(96765),	-- Sul'lithuz Sandmail
+								i(96762),	-- Talisman of Living Poison
+								i(96772),	-- Vaccinator's Armwraps
+								i(96776),	-- Venomlord's Totemic Wand
+								i(96761),	-- Wastewalker's Sandblasted Drape
 							}),
 						},
 					}),
@@ -1528,33 +1528,33 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96600),	-- Gauntlets of the Crackling Conqueror
 							i(96601),	-- Gauntlets of the Crackling Protector
 							i(96599),	-- Gauntlets of the Crackling Vanquisher
-							i(96414), -- Amun-Thoth, Sul's Spiritrending Talons
-							i(96409), -- Bad Juju
-							i(96421), -- Fortitude of the Zandalari
-							i(96416), -- Gaze of Gara'jal
-							i(96410), -- Kura-Kura, Kazra'jin's Skullcleaver
-							i(96417), -- Loa-Ridden Bracers
-							i(96411), -- Mar'li's Bloodstained Sandals
-							i(96418), -- Overloaded Bladebreaker Cuirass
-							i(96415), -- Robes of Treacherous Ground
-							i(96420), -- Talisman of Angry Spirits
-							i(96413), -- Wushoolay's Final Choice
-							i(96412), -- Zandalari Robes of the Final Rite
-							i(96419), -- Zerat, Malakk's Soulburning Greatsword
+							i(96414),	-- Amun-Thoth, Sul's Spiritrending Talons
+							i(96409),	-- Bad Juju
+							i(96421),	-- Fortitude of the Zandalari
+							i(96416),	-- Gaze of Gara'jal
+							i(96410),	-- Kura-Kura, Kazra'jin's Skullcleaver
+							i(96417),	-- Loa-Ridden Bracers
+							i(96411),	-- Mar'li's Bloodstained Sandals
+							i(96418),	-- Overloaded Bladebreaker Cuirass
+							i(96415),	-- Robes of Treacherous Ground
+							i(96420),	-- Talisman of Angry Spirits
+							i(96413),	-- Wushoolay's Final Choice
+							i(96412),	-- Zandalari Robes of the Final Rite
+							i(96419),	-- Zerat, Malakk's Soulburning Greatsword
 							n(TITANFORGED, {
-								i(96786), -- Amun-Thoth, Sul's Spiritrending Talons
-								i(96781), -- Bad Juju
-								i(96793), -- Fortitude of the Zandalari
-								i(96788), -- Gaze of Gara'jal
-								i(96782), -- Kura-Kura, Kazra'jin's Skullcleaver
-								i(96789), -- Loa-Ridden Bracers
-								i(96783), -- Mar'li's Bloodstained Sandals
-								i(96790), -- Overloaded Bladebreaker Cuirass
-								i(96787), -- Robes of Treacherous Ground
-								i(96792), -- Talisman of Angry Spirits
-								i(96785), -- Wushoolay's Final Choice
-								i(96784), -- Zandalari Robes of the Final Rite
-								i(96791), -- Zerat, Malakk's Soulburning Greatsword
+								i(96786),	-- Amun-Thoth, Sul's Spiritrending Talons
+								i(96781),	-- Bad Juju
+								i(96793),	-- Fortitude of the Zandalari
+								i(96788),	-- Gaze of Gara'jal
+								i(96782),	-- Kura-Kura, Kazra'jin's Skullcleaver
+								i(96789),	-- Loa-Ridden Bracers
+								i(96783),	-- Mar'li's Bloodstained Sandals
+								i(96790),	-- Overloaded Bladebreaker Cuirass
+								i(96787),	-- Robes of Treacherous Ground
+								i(96792),	-- Talisman of Angry Spirits
+								i(96785),	-- Wushoolay's Final Choice
+								i(96784),	-- Zandalari Robes of the Final Rite
+								i(96791),	-- Zerat, Malakk's Soulburning Greatsword
 							}),
 						},
 					}),
@@ -1565,47 +1565,47 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 67977 },	-- Tortos
 						["g"] = {
 							ach(8059),	-- Heroic: Tortos
-							i(96429), -- Amulet of the Primal Turtle
-							i(96432), -- Azure Shell Bracers
-							i(96425), -- Beady-Eye Bracers
-							i(96431), -- Beakbreaker Greatcloak
-							i(96434), -- Crystal-Claw Gloves
-							i(96424), -- Grips of Vampiric Cruelty
-							i(96426), -- Quakestompers
-							i(96440), -- Refreshing Abalone Girdle
-							i(96438), -- Robes of Concussive Shocks
-							i(96423), -- Rockfall Ribwraps
-							i(96422), -- Shattered Tortoiseshell Longbow
-							i(96430), -- Shellsplitter Greataxe
-							i(96428), -- Shell-Coated Wristplates
-							i(96435), -- Shimmershell Cape
-							i(96427), -- Shoulderguards of Centripetal Destruction
-							i(96439), -- Spaulders of Quaking Fear
-							i(96433), -- Stonegaze Hood
-							i(96436), -- Tortos' Discarded Shell
-							i(96441), -- Tortos' Shellseizers
-							i(96437), -- Vampire Bat-Hide Bracers
+							i(96429),	-- Amulet of the Primal Turtle
+							i(96432),	-- Azure Shell Bracers
+							i(96425),	-- Beady-Eye Bracers
+							i(96431),	-- Beakbreaker Greatcloak
+							i(96434),	-- Crystal-Claw Gloves
+							i(96424),	-- Grips of Vampiric Cruelty
+							i(96426),	-- Quakestompers
+							i(96440),	-- Refreshing Abalone Girdle
+							i(96438),	-- Robes of Concussive Shocks
+							i(96423),	-- Rockfall Ribwraps
+							i(96422),	-- Shattered Tortoiseshell Longbow
+							i(96430),	-- Shellsplitter Greataxe
+							i(96428),	-- Shell-Coated Wristplates
+							i(96435),	-- Shimmershell Cape
+							i(96427),	-- Shoulderguards of Centripetal Destruction
+							i(96439),	-- Spaulders of Quaking Fear
+							i(96433),	-- Stonegaze Hood
+							i(96436),	-- Tortos' Discarded Shell
+							i(96441),	-- Tortos' Shellseizers
+							i(96437),	-- Vampire Bat-Hide Bracers
 							n(TITANFORGED, {
-								i(96801), -- Amulet of the Primal Turtle
-								i(96804), -- Azure Shell Bracers
-								i(96797), -- Beady-Eye Bracers
-								i(96803), -- Beakbreaker Greatcloak
-								i(96806), -- Crystal-Claw Gloves
-								i(96796), -- Grips of Vampiric Cruelty
-								i(96798), -- Quakestompers
-								i(96812), -- Refreshing Abalone Girdle
-								i(96810), -- Robes of Concussive Shocks
-								i(96795), -- Rockfall Ribwraps
-								i(96794), -- Shattered Tortoiseshell Longbow
-								i(96802), -- Shellsplitter Greataxe
-								i(96800), -- Shell-Coated Wristplates
-								i(96807), -- Shimmershell Cape
-								i(96799), -- Shoulderguards of Centripetal Destruction
-								i(96811), -- Spaulders of Quaking Fear
-								i(96805), -- Stonegaze Hood
-								i(96808), -- Tortos' Discarded Shell
-								i(96813), -- Tortos' Shellseizers
-								i(96809), -- Vampire Bat-Hide Bracers
+								i(96801),	-- Amulet of the Primal Turtle
+								i(96804),	-- Azure Shell Bracers
+								i(96797),	-- Beady-Eye Bracers
+								i(96803),	-- Beakbreaker Greatcloak
+								i(96806),	-- Crystal-Claw Gloves
+								i(96796),	-- Grips of Vampiric Cruelty
+								i(96798),	-- Quakestompers
+								i(96812),	-- Refreshing Abalone Girdle
+								i(96810),	-- Robes of Concussive Shocks
+								i(96795),	-- Rockfall Ribwraps
+								i(96794),	-- Shattered Tortoiseshell Longbow
+								i(96802),	-- Shellsplitter Greataxe
+								i(96800),	-- Shell-Coated Wristplates
+								i(96807),	-- Shimmershell Cape
+								i(96799),	-- Shoulderguards of Centripetal Destruction
+								i(96811),	-- Spaulders of Quaking Fear
+								i(96805),	-- Stonegaze Hood
+								i(96808),	-- Tortos' Discarded Shell
+								i(96813),	-- Tortos' Shellseizers
+								i(96809),	-- Vampire Bat-Hide Bracers
 							}),
 						},
 					}),
@@ -1618,45 +1618,45 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						},
 						["g"] = {
 							ach(8060),	-- Heroic: Megaera
-							i(96455), -- Breath of the Hydra
-							i(96459), -- Chain of Consuming Magic
-							i(96454), -- Fetish of the Hydra
-							i(96452), -- Frostborn Wristwraps
-							i(96451), -- Gleaming-Eye Shoulderpads
-							i(96445), -- Grips of Cinderflesh
-							i(96457), -- Hood of Smoldering Flesh
-							i(96449), -- Hydraskull Choker
-							i(96460), -- Ice-Scored Treads
-							i(96456), -- Inscribed Bag of Hydra-Spawn
-							i(96458), -- Links of the Bifurcated Tongue
-							i(96442), -- Megaera's Poisoned Fang
-							i(96453), -- Megaera's Shining Eye
-							i(96446), -- Plated Toothbreaker Girdle
-							i(96444), -- Poisonblood Bladeshoulders
-							i(96443), -- Quadra-Head Brooch
-							i(96447), -- Rot-Proof Greatplate
-							i(96450), -- Sandals of Arcane Fury
-							i(96448), -- Spinescale Seal
+							i(96455),	-- Breath of the Hydra
+							i(96459),	-- Chain of Consuming Magic
+							i(96454),	-- Fetish of the Hydra
+							i(96452),	-- Frostborn Wristwraps
+							i(96451),	-- Gleaming-Eye Shoulderpads
+							i(96445),	-- Grips of Cinderflesh
+							i(96457),	-- Hood of Smoldering Flesh
+							i(96449),	-- Hydraskull Choker
+							i(96460),	-- Ice-Scored Treads
+							i(96456),	-- Inscribed Bag of Hydra-Spawn
+							i(96458),	-- Links of the Bifurcated Tongue
+							i(96442),	-- Megaera's Poisoned Fang
+							i(96453),	-- Megaera's Shining Eye
+							i(96446),	-- Plated Toothbreaker Girdle
+							i(96444),	-- Poisonblood Bladeshoulders
+							i(96443),	-- Quadra-Head Brooch
+							i(96447),	-- Rot-Proof Greatplate
+							i(96450),	-- Sandals of Arcane Fury
+							i(96448),	-- Spinescale Seal
 							n(TITANFORGED, {
-								i(96827), -- Breath of the Hydra
-								i(96831), -- Chain of Consuming Magic
-								i(96826), -- Fetish of the Hydra
-								i(96824), -- Frostborn Wristwraps
-								i(96823), -- Gleaming-Eye Shoulderpads
-								i(96817), -- Grips of Cinderflesh
-								i(96829), -- Hood of Smoldering Flesh
-								i(96821), -- Hydraskull Choker
-								i(96832), -- Ice-Scored Treads
-								i(96828), -- Inscribed Bag of Hydra-Spawn
-								i(96830), -- Links of the Bifurcated Tongue
-								i(96814), -- Megaera's Poisoned Fang
-								i(96825), -- Megaera's Shining Eye
-								i(96818), -- Plated Toothbreaker Girdle
-								i(96816), -- Poisonblood Bladeshoulders
-								i(96815), -- Quadra-Head Brooch
-								i(96819), -- Rot-Proof Greatplate
-								i(96822), -- Sandals of Arcane Fury
-								i(96820), -- Spinescale Seal
+								i(96827),	-- Breath of the Hydra
+								i(96831),	-- Chain of Consuming Magic
+								i(96826),	-- Fetish of the Hydra
+								i(96824),	-- Frostborn Wristwraps
+								i(96823),	-- Gleaming-Eye Shoulderpads
+								i(96817),	-- Grips of Cinderflesh
+								i(96829),	-- Hood of Smoldering Flesh
+								i(96821),	-- Hydraskull Choker
+								i(96832),	-- Ice-Scored Treads
+								i(96828),	-- Inscribed Bag of Hydra-Spawn
+								i(96830),	-- Links of the Bifurcated Tongue
+								i(96814),	-- Megaera's Poisoned Fang
+								i(96825),	-- Megaera's Shining Eye
+								i(96818),	-- Plated Toothbreaker Girdle
+								i(96816),	-- Poisonblood Bladeshoulders
+								i(96815),	-- Quadra-Head Brooch
+								i(96819),	-- Rot-Proof Greatplate
+								i(96822),	-- Sandals of Arcane Fury
+								i(96820),	-- Spinescale Seal
 							}),
 						},
 					}),
@@ -1675,29 +1675,29 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96632),	-- Leggings of the Crackling Conqueror
 							i(96633),	-- Leggings of the Crackling Protector
 							i(96631),	-- Leggings of the Crackling Vanquisher
-							i(96462), -- Cord of Cacophonous Cawing
-							i(96467), -- Crown of Potentiated Birth
-							i(96469), -- Egg-Shard Grips
-							i(96470), -- Fabled Feather of Ji-Kun
-							i(96465), -- Featherflight Belt
-							i(96464), -- Giorgio's Caduceus of Pure Moods
-							i(96466), -- Grasp of the Ruthless Mother
-							i(96471), -- Ji-Kun's Rising Winds
-							i(96461), -- Pinionfeather Greatcloak
-							i(96463), -- Robe of Midnight Down
-							i(96468), -- Talonrender Chestplate
+							i(96462),	-- Cord of Cacophonous Cawing
+							i(96467),	-- Crown of Potentiated Birth
+							i(96469),	-- Egg-Shard Grips
+							i(96470),	-- Fabled Feather of Ji-Kun
+							i(96465),	-- Featherflight Belt
+							i(96464),	-- Giorgio's Caduceus of Pure Moods
+							i(96466),	-- Grasp of the Ruthless Mother
+							i(96471),	-- Ji-Kun's Rising Winds
+							i(96461),	-- Pinionfeather Greatcloak
+							i(96463),	-- Robe of Midnight Down
+							i(96468),	-- Talonrender Chestplate
 							n(TITANFORGED, {
-								i(96834), -- Cord of Cacophonous Cawing
-								i(96839), -- Crown of Potentiated Birth
-								i(96841), -- Egg-Shard Grips
-								i(96842), -- Fabled Feather of Ji-Kun
-								i(96837), -- Featherflight Belt
-								i(96836), -- Giorgio's Caduceus of Pure Moods
-								i(96838), -- Grasp of the Ruthless Mother
-								i(96843), -- Ji-Kun's Rising Winds
-								i(96833), -- Pinionfeather Greatcloak
-								i(96835), -- Robe of Midnight Down
-								i(96840), -- Talonrender Chestplate
+								i(96834),	-- Cord of Cacophonous Cawing
+								i(96839),	-- Crown of Potentiated Birth
+								i(96841),	-- Egg-Shard Grips
+								i(96842),	-- Fabled Feather of Ji-Kun
+								i(96837),	-- Featherflight Belt
+								i(96836),	-- Giorgio's Caduceus of Pure Moods
+								i(96838),	-- Grasp of the Ruthless Mother
+								i(96843),	-- Ji-Kun's Rising Winds
+								i(96833),	-- Pinionfeather Greatcloak
+								i(96835),	-- Robe of Midnight Down
+								i(96840),	-- Talonrender Chestplate
 							}),
 						},
 					}),
@@ -1705,47 +1705,47 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 68036 },	-- Durumu the Forgotten
 						["g"] = {
 							ach(8062),	-- Heroic: Durumu the Forgotten
-							i(96475), -- Aberrant Chestguard of Torment
-							i(96479), -- Artery Rippers
-							i(96476), -- Caustic Spike Bracers
-							i(96484), -- Chilblain Spaulders
-							i(96473), -- Crimson Bloom Legguards
-							i(96485), -- Deadly Glare Cape
-							i(96472), -- Durumu's Baleful Gaze
-							i(96481), -- Durumu's Severed Tentacle
-							i(96486), -- Durumu's Captive Eyeball
-							i(96490), -- Iceshatter Gauntlets
-							i(96483), -- Leggings of Pulsing Blood
-							i(96477), -- Legplates of the Dark Parasite
-							i(96491), -- Legplates of Re-Emergence
-							i(96482), -- Lifedrainer's Sordid Grip
-							i(96474), -- Links of the Disintegrator
-							i(96480), -- Reinforced Mirror-Sheen Cloak
-							i(96487), -- Ritual Dagger of the Mind's Eye
-							i(96488), -- Sandals of the Starving Eye
-							i(96478), -- Treads of the Blind Eye
-							i(96489), -- Vein-Cover Bracers
+							i(96475),	-- Aberrant Chestguard of Torment
+							i(96479),	-- Artery Rippers
+							i(96476),	-- Caustic Spike Bracers
+							i(96484),	-- Chilblain Spaulders
+							i(96473),	-- Crimson Bloom Legguards
+							i(96485),	-- Deadly Glare Cape
+							i(96472),	-- Durumu's Baleful Gaze
+							i(96481),	-- Durumu's Severed Tentacle
+							i(96486),	-- Durumu's Captive Eyeball
+							i(96490),	-- Iceshatter Gauntlets
+							i(96483),	-- Leggings of Pulsing Blood
+							i(96477),	-- Legplates of the Dark Parasite
+							i(96491),	-- Legplates of Re-Emergence
+							i(96482),	-- Lifedrainer's Sordid Grip
+							i(96474),	-- Links of the Disintegrator
+							i(96480),	-- Reinforced Mirror-Sheen Cloak
+							i(96487),	-- Ritual Dagger of the Mind's Eye
+							i(96488),	-- Sandals of the Starving Eye
+							i(96478),	-- Treads of the Blind Eye
+							i(96489),	-- Vein-Cover Bracers
 							n(TITANFORGED, {
-								i(96847), -- Aberrant Chestguard of Torment
-								i(96851), -- Artery Rippers
-								i(96848), -- Caustic Spike Bracers
-								i(96856), -- Chilblain Spaulders
-								i(96845), -- Crimson Bloom Legguards
-								i(96857), -- Deadly Glare Cape
-								i(96844), -- Durumu's Baleful Gaze
-								i(96853), -- Durumu's Severed Tentacle
-								i(96858), -- Durumu's Captive Eyeball
-								i(96862), -- Iceshatter Gauntlets
-								i(96855), -- Leggings of Pulsing Blood
-								i(96849), -- Legplates of the Dark Parasite
-								i(96863), -- Legplates of Re-Emergence
-								i(96854), -- Lifedrainer's Sordid Grip
-								i(96846), -- Links of the Disintegrator
-								i(96852), -- Reinforced Mirror-Sheen Cloak
-								i(96859), -- Ritual Dagger of the Mind's Eye
-								i(96860), -- Sandals of the Starving Eye
-								i(96850), -- Treads of the Blind Eye
-								i(96861), -- Vein-Cover Bracers
+								i(96847),	-- Aberrant Chestguard of Torment
+								i(96851),	-- Artery Rippers
+								i(96848),	-- Caustic Spike Bracers
+								i(96856),	-- Chilblain Spaulders
+								i(96845),	-- Crimson Bloom Legguards
+								i(96857),	-- Deadly Glare Cape
+								i(96844),	-- Durumu's Baleful Gaze
+								i(96853),	-- Durumu's Severed Tentacle
+								i(96858),	-- Durumu's Captive Eyeball
+								i(96862),	-- Iceshatter Gauntlets
+								i(96855),	-- Leggings of Pulsing Blood
+								i(96849),	-- Legplates of the Dark Parasite
+								i(96863),	-- Legplates of Re-Emergence
+								i(96854),	-- Lifedrainer's Sordid Grip
+								i(96846),	-- Links of the Disintegrator
+								i(96852),	-- Reinforced Mirror-Sheen Cloak
+								i(96859),	-- Ritual Dagger of the Mind's Eye
+								i(96860),	-- Sandals of the Starving Eye
+								i(96850),	-- Treads of the Blind Eye
+								i(96861),	-- Vein-Cover Bracers
 							}),
 						},
 					}),
@@ -1754,49 +1754,49 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["g"] = {
 							ach(8063),	-- Heroic: Primordius
 							i(97960),	-- Viscous Horror (PET!)
-							i(96502), -- Acid-Spine Bonemace
-							i(96500), -- Band of the Scaled Tyrant
-							i(96497), -- Black Blood Legplates
-							i(96510), -- Bonemender Bracers
-							i(96494), -- Bracers of Mutagenic Fervor
-							i(96506), -- Bracers of Fragile Bone
-							i(96509), -- Clear-Mind Helm
-							i(96493), -- Gloves of Cushioned Air
-							i(96512), -- Greatshield of the Gloaming
-							i(96504), -- Helix-Breaker Gloves
-							i(96499), -- Hydra-Scale Bloodcloak
-							i(96505), -- Leggings of Ebon Veins
-							i(96508), -- Leggings of the Malformed Sapling
-							i(96498), -- Metabolically Boosted Shoulderplates
-							i(96496), -- Pathogenic Gauntlets
-							i(96501), -- Primordius' Talisman of Rage
-							i(96503), -- Robes of Mutagenic Blood
-							i(96511), -- Spaulders of Primordial Growth
-							i(96507), -- Stolen Relic of Zuldazar
-							i(96495), -- Synapse-String Handguards
-							i(96492), -- Talisman of Bloodlust
+							i(96502),	-- Acid-Spine Bonemace
+							i(96500),	-- Band of the Scaled Tyrant
+							i(96497),	-- Black Blood Legplates
+							i(96510),	-- Bonemender Bracers
+							i(96494),	-- Bracers of Mutagenic Fervor
+							i(96506),	-- Bracers of Fragile Bone
+							i(96509),	-- Clear-Mind Helm
+							i(96493),	-- Gloves of Cushioned Air
+							i(96512),	-- Greatshield of the Gloaming
+							i(96504),	-- Helix-Breaker Gloves
+							i(96499),	-- Hydra-Scale Bloodcloak
+							i(96505),	-- Leggings of Ebon Veins
+							i(96508),	-- Leggings of the Malformed Sapling
+							i(96498),	-- Metabolically Boosted Shoulderplates
+							i(96496),	-- Pathogenic Gauntlets
+							i(96501),	-- Primordius' Talisman of Rage
+							i(96503),	-- Robes of Mutagenic Blood
+							i(96511),	-- Spaulders of Primordial Growth
+							i(96507),	-- Stolen Relic of Zuldazar
+							i(96495),	-- Synapse-String Handguards
+							i(96492),	-- Talisman of Bloodlust
 							n(TITANFORGED, {
-								i(96874), -- Acid-Spine Bonemace
-								i(96872), -- Band of the Scaled Tyrant
-								i(96869), -- Black Blood Legplates
-								i(96882), -- Bonemender Bracers
-								i(96866), -- Bracers of Mutagenic Fervor
-								i(96878), -- Bracers of Fragile Bone
-								i(96881), -- Clear-Mind Helm
-								i(96865), -- Gloves of Cushioned Air
-								i(96884), -- Greatshield of the Gloaming
-								i(96876), -- Helix-Breaker Gloves
-								i(96871), -- Hydra-Scale Bloodcloak
-								i(96877), -- Leggings of Ebon Veins
-								i(96880), -- Leggings of the Malformed Sapling
-								i(96870), -- Metabolically Boosted Shoulderplates
-								i(96868), -- Pathogenic Gauntlets
-								i(96873), -- Primordius' Talisman of Rage
-								i(96875), -- Robes of Mutagenic Blood
-								i(96883), -- Spaulders of Primordial Growth
-								i(96879), -- Stolen Relic of Zuldazar
-								i(96867), -- Synapse-String Handguards
-								i(96864), -- Talisman of Bloodlust
+								i(96874),	-- Acid-Spine Bonemace
+								i(96872),	-- Band of the Scaled Tyrant
+								i(96869),	-- Black Blood Legplates
+								i(96882),	-- Bonemender Bracers
+								i(96866),	-- Bracers of Mutagenic Fervor
+								i(96878),	-- Bracers of Fragile Bone
+								i(96881),	-- Clear-Mind Helm
+								i(96865),	-- Gloves of Cushioned Air
+								i(96884),	-- Greatshield of the Gloaming
+								i(96876),	-- Helix-Breaker Gloves
+								i(96871),	-- Hydra-Scale Bloodcloak
+								i(96877),	-- Leggings of Ebon Veins
+								i(96880),	-- Leggings of the Malformed Sapling
+								i(96870),	-- Metabolically Boosted Shoulderplates
+								i(96868),	-- Pathogenic Gauntlets
+								i(96873),	-- Primordius' Talisman of Rage
+								i(96875),	-- Robes of Mutagenic Blood
+								i(96883),	-- Spaulders of Primordial Growth
+								i(96879),	-- Stolen Relic of Zuldazar
+								i(96867),	-- Synapse-String Handguards
+								i(96864),	-- Talisman of Bloodlust
 							}),
 						},
 					}),
@@ -1811,29 +1811,29 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96567),	-- Chest of the Crackling Conqueror
 							i(96568),	-- Chest of the Crackling Protector
 							i(96566),	-- Chest of the Crackling Vanquisher
-							i(96520), -- Anima-Ringed Fingers
-							i(96518), -- Athame of the Sanguine Ritual
-							i(96516), -- Cha-Ye's Essence of Brilliance
-							i(96517), -- Constantly Accelerating Cloak
-							i(96522), -- Crown of the Golden Golem
-							i(96523), -- Delicate Vial of the Sanguinaire
-							i(96513), -- Gore-Soaked Gear
-							i(96514), -- Hand of the Dark Animus
-							i(96515), -- Hood of the Crimson Wake
-							i(96521), -- Matter-Swapped Legplates
-							i(96519), -- Worldbinder Leggings
+							i(96520),	-- Anima-Ringed Fingers
+							i(96518),	-- Athame of the Sanguine Ritual
+							i(96516),	-- Cha-Ye's Essence of Brilliance
+							i(96517),	-- Constantly Accelerating Cloak
+							i(96522),	-- Crown of the Golden Golem
+							i(96523),	-- Delicate Vial of the Sanguinaire
+							i(96513),	-- Gore-Soaked Gear
+							i(96514),	-- Hand of the Dark Animus
+							i(96515),	-- Hood of the Crimson Wake
+							i(96521),	-- Matter-Swapped Legplates
+							i(96519),	-- Worldbinder Leggings
 							n(TITANFORGED, {
-								i(96892), -- Anima-Ringed Fingers
-								i(96890), -- Athame of the Sanguine Ritual
-								i(96888), -- Cha-Ye's Essence of Brilliance
-								i(96889), -- Constantly Accelerating Cloak
-								i(96894), -- Crown of the Golden Golem
-								i(96895), -- Delicate Vial of the Sanguinaire
-								i(96885), -- Gore-Soaked Gear
-								i(96886), -- Hand of the Dark Animus
-								i(96887), -- Hood of the Crimson Wake
-								i(96893), -- Matter-Swapped Legplates
-								i(96891), -- Worldbinder Leggings
+								i(96892),	-- Anima-Ringed Fingers
+								i(96890),	-- Athame of the Sanguine Ritual
+								i(96888),	-- Cha-Ye's Essence of Brilliance
+								i(96889),	-- Constantly Accelerating Cloak
+								i(96894),	-- Crown of the Golden Golem
+								i(96895),	-- Delicate Vial of the Sanguinaire
+								i(96885),	-- Gore-Soaked Gear
+								i(96886),	-- Hand of the Dark Animus
+								i(96887),	-- Hood of the Crimson Wake
+								i(96893),	-- Matter-Swapped Legplates
+								i(96891),	-- Worldbinder Leggings
 							}),
 						},
 					}),
@@ -1849,29 +1849,29 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96700),	-- Shoulders of the Crackling Conqueror
 							i(96701),	-- Shoulders of the Crackling Protector
 							i(96699),	-- Shoulders of the Crackling Vanquisher
-							i(96528), -- Dam'ren's Frozen Footguards
-							i(96524), -- Iron Qon's Boot Knife
-							i(96530), -- Orb of Arcing Lightning
-							i(96534), -- Qon's Flaming Scimitar
-							i(96526), -- Quet'zal's Crackling Cord
-							i(96533), -- Rein-Binder's Fists
-							i(96529), -- Ro'shak's Remembrance
-							i(96532), -- Ro'shak's Molten Chain
-							i(96527), -- Saddle-Scarred Leggings
-							i(96531), -- Spurs of the Storm Cavalry
-							i(96525), -- Voice of the Quilen
+							i(96528),	-- Dam'ren's Frozen Footguards
+							i(96524),	-- Iron Qon's Boot Knife
+							i(96530),	-- Orb of Arcing Lightning
+							i(96534),	-- Qon's Flaming Scimitar
+							i(96526),	-- Quet'zal's Crackling Cord
+							i(96533),	-- Rein-Binder's Fists
+							i(96529),	-- Ro'shak's Remembrance
+							i(96532),	-- Ro'shak's Molten Chain
+							i(96527),	-- Saddle-Scarred Leggings
+							i(96531),	-- Spurs of the Storm Cavalry
+							i(96525),	-- Voice of the Quilen
 							n(TITANFORGED, {
-								i(96900), -- Dam'ren's Frozen Footguards
-								i(96896), -- Iron Qon's Boot Knife
-								i(96902), -- Orb of Arcing Lightning
-								i(96906), -- Qon's Flaming Scimitar
-								i(96898), -- Quet'zal's Crackling Cord
-								i(96905), -- Rein-Binder's Fists
-								i(96901), -- Ro'shak's Remembrance
-								i(96904), -- Ro'shak's Molten Chain
-								i(96899), -- Saddle-Scarred Leggings
-								i(96903), -- Spurs of the Storm Cavalry
-								i(96897), -- Voice of the Quilen
+								i(96900),	-- Dam'ren's Frozen Footguards
+								i(96896),	-- Iron Qon's Boot Knife
+								i(96902),	-- Orb of Arcing Lightning
+								i(96906),	-- Qon's Flaming Scimitar
+								i(96898),	-- Quet'zal's Crackling Cord
+								i(96905),	-- Rein-Binder's Fists
+								i(96901),	-- Ro'shak's Remembrance
+								i(96904),	-- Ro'shak's Molten Chain
+								i(96899),	-- Saddle-Scarred Leggings
+								i(96903),	-- Spurs of the Storm Cavalry
+								i(96897),	-- Voice of the Quilen
 							}),
 						},
 					}),
@@ -1885,29 +1885,29 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96624),	-- Helm of the Crackling Conqueror
 							i(96625),	-- Helm of the Crackling Protector
 							i(96623),	-- Helm of the Crackling Vanquisher
-							i(96540), -- Bracers of the Midnight Comet
-							i(96545), -- Fingers of the Night
-							i(96543), -- Gaze of the Twins
-							i(96541), -- Girdle of Night and Day
-							i(96544), -- Moonjade Necklace
-							i(96537), -- Passionfire Choker
-							i(96536), -- Robes of the Moon Lotus
-							i(96538), -- Shield of Twinned Despair
-							i(96539), -- Suen-Wo, Spire of the Falling Sun
-							i(96542), -- Tidal Force Treads
-							i(96535), -- Wu-Lai, Bladed Fan of the Consorts
+							i(96540),	-- Bracers of the Midnight Comet
+							i(96545),	-- Fingers of the Night
+							i(96543),	-- Gaze of the Twins
+							i(96541),	-- Girdle of Night and Day
+							i(96544),	-- Moonjade Necklace
+							i(96537),	-- Passionfire Choker
+							i(96536),	-- Robes of the Moon Lotus
+							i(96538),	-- Shield of Twinned Despair
+							i(96539),	-- Suen-Wo, Spire of the Falling Sun
+							i(96542),	-- Tidal Force Treads
+							i(96535),	-- Wu-Lai, Bladed Fan of the Consorts
 							n(TITANFORGED, {
-								i(96912), -- Bracers of the Midnight Comet
-								i(96917), -- Fingers of the Night
-								i(96915), -- Gaze of the Twins
-								i(96913), -- Girdle of Night and Day
-								i(96916), -- Moonjade Necklace
-								i(96909), -- Passionfire Choker
-								i(96908), -- Robes of the Moon Lotus
-								i(96910), -- Shield of Twinned Despair
-								i(96911), -- Suen-Wo, Spire of the Falling Sun
-								i(96914), -- Tidal Force Treads
-								i(96907), -- Wu-Lai, Bladed Fan of the Consorts
+								i(96912),	-- Bracers of the Midnight Comet
+								i(96917),	-- Fingers of the Night
+								i(96915),	-- Gaze of the Twins
+								i(96913),	-- Girdle of Night and Day
+								i(96916),	-- Moonjade Necklace
+								i(96909),	-- Passionfire Choker
+								i(96908),	-- Robes of the Moon Lotus
+								i(96910),	-- Shield of Twinned Despair
+								i(96911),	-- Suen-Wo, Spire of the Falling Sun
+								i(96914),	-- Tidal Force Treads
+								i(96907),	-- Wu-Lai, Bladed Fan of the Consorts
 							}),
 						},
 					}),
@@ -1921,48 +1921,48 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 								title(222),	-- , Storm's End
 							}),
 							ach(8139),	-- Heroic: Lei Shen Guild Run
-							i(96549), -- Conduit-Breaker Chain Leggings
-							i(96550), -- Doomed Crown of Lei Shen
-							i(96548), -- Fusion Slasher Chestguard
-							i(96557), -- Gloves of the Maimed Vizier
-							i(96563), -- Grips of Slicing Electricity
-							i(94867), -- Heart of the Thunder King
-							i(96564), -- Leggings of the Violent Gale
-							i(96551), -- Legplates of the Lightning Throne
-							i(96552), -- Legplates of Whipping Ionization
-							i(96556), -- Legwraps of Cardinality
-							i(96562), -- Lei Shen's Orb of Command
-							i(96565), -- Lei Shen's Grounded Carapace
-							i(96561), -- Lightning-Imbued Chalice
-							i(96546), -- Rune of Re-Origination
-							i(96547), -- Shan-Dun, Breaker of Hope
-							i(96555), -- Soul Barrier
-							i(96560), -- Soul Prism of Lei Shen
-							i(96559), -- Torall, Rod of the Shattered Throne
-							i(96554), -- Ultimate Protection of the Emperor
-							i(96558), -- Unerring Vision of Lei Shen
-							i(96553), -- Uroe, Harbinger of Terror
+							i(96549),	-- Conduit-Breaker Chain Leggings
+							i(96550),	-- Doomed Crown of Lei Shen
+							i(96548),	-- Fusion Slasher Chestguard
+							i(96557),	-- Gloves of the Maimed Vizier
+							i(96563),	-- Grips of Slicing Electricity
+							i(94867),	-- Heart of the Thunder King
+							i(96564),	-- Leggings of the Violent Gale
+							i(96551),	-- Legplates of the Lightning Throne
+							i(96552),	-- Legplates of Whipping Ionization
+							i(96556),	-- Legwraps of Cardinality
+							i(96562),	-- Lei Shen's Orb of Command
+							i(96565),	-- Lei Shen's Grounded Carapace
+							i(96561),	-- Lightning-Imbued Chalice
+							i(96546),	-- Rune of Re-Origination
+							i(96547),	-- Shan-Dun, Breaker of Hope
+							i(96555),	-- Soul Barrier
+							i(96560),	-- Soul Prism of Lei Shen
+							i(96559),	-- Torall, Rod of the Shattered Throne
+							i(96554),	-- Ultimate Protection of the Emperor
+							i(96558),	-- Unerring Vision of Lei Shen
+							i(96553),	-- Uroe, Harbinger of Terror
 							n(TITANFORGED, {
-								i(96921), -- Conduit-Breaker Chain Leggings
-								i(96922), -- Doomed Crown of Lei Shen
-								i(96920), -- Fusion Slasher Chestguard
-								i(96929), -- Gloves of the Maimed Vizier
-								i(96935), -- Grips of Slicing Electricity
-								i(96936), -- Leggings of the Violent Gale
-								i(96923), -- Legplates of the Lightning Throne
-								i(96924), -- Legplates of Whipping Ionization
-								i(96928), -- Legwraps of Cardinality
-								i(96934), -- Lei Shen's Orb of Command
-								i(96937), -- Lei Shen's Grounded Carapace
-								i(96933), -- Lightning-Imbued Chalice
-								i(96918), -- Rune of Re-Origination
-								i(96919), -- Shan-Dun, Breaker of Hope
-								i(96927), -- Soul Barrier
-								i(96932), -- Soul Prism of Lei Shen
-								i(96931), -- Torall, Rod of the Shattered Throne
-								i(96926), -- Ultimate Protection of the Emperor
-								i(96930), -- Unerring Vision of Lei Shen
-								i(96925), -- Uroe, Harbinger of Terror
+								i(96921),	-- Conduit-Breaker Chain Leggings
+								i(96922),	-- Doomed Crown of Lei Shen
+								i(96920),	-- Fusion Slasher Chestguard
+								i(96929),	-- Gloves of the Maimed Vizier
+								i(96935),	-- Grips of Slicing Electricity
+								i(96936),	-- Leggings of the Violent Gale
+								i(96923),	-- Legplates of the Lightning Throne
+								i(96924),	-- Legplates of Whipping Ionization
+								i(96928),	-- Legwraps of Cardinality
+								i(96934),	-- Lei Shen's Orb of Command
+								i(96937),	-- Lei Shen's Grounded Carapace
+								i(96933),	-- Lightning-Imbued Chalice
+								i(96918),	-- Rune of Re-Origination
+								i(96919),	-- Shan-Dun, Breaker of Hope
+								i(96927),	-- Soul Barrier
+								i(96932),	-- Soul Prism of Lei Shen
+								i(96931),	-- Torall, Rod of the Shattered Throne
+								i(96926),	-- Ultimate Protection of the Emperor
+								i(96930),	-- Unerring Vision of Lei Shen
+								i(96925),	-- Uroe, Harbinger of Terror
 							}),
 						},
 					}),
@@ -1980,52 +1980,52 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							ach(8257, {	-- Realm First! Ra-den
 								["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
 							}),
-							i(95025), -- Archaic Protector's Legguards
-							i(95013), -- Black Night Thundercloak
-							i(95001), -- Bubbling Anima Belt
-							i(95038), -- Carapace of the Core
-							i(95035), -- Chains of Counted Souls
-							i(95033), -- Chestguard of Coruscating Blades
-							i(95028), -- Cosmicfire Legwraps
-							i(95002), -- Cracklesnap Clasp
-							i(94995), -- Detonation Cord
-							i(95003), -- Flare-Forged Greatbelt
-							i(95015), -- Grey Wind Mistcloak
-							i(95010), -- Hypersensitive Sollerets
-							i(95000), -- Jingling Fetishgirdle
-							i(95029), -- Kilt of Perpetual Genuflection
-							i(95030), -- Leggings of the Discarded Warning
-							i(95027), -- Legguards of Awaked Repair
-							i(95031), -- Legguards of Surreal Visions
-							i(95023), -- Legplates of Lightning Blood
-							i(95011), -- Lightning-Walker Clawfeet
-							i(94999), -- Longdraw Chain Belt
-							i(95036), -- Nova-Binder Breastplate
-							i(95037), -- Planet-Birthed Cuirass
-							i(95018), -- Ra-den's Evolving Signet
-							i(95019), -- Ra-den's Summoning Band
-							i(95020), -- Ra-den's Contemplative Loop
-							i(95021), -- Ra-den's Swift Seal
-							i(95022), -- Ra-den's Ruinous Ring
-							i(95014), -- Red Sky Cloudcloak
-							i(95032), -- Robes of Contagious Time
-							i(95040), -- Robes of Nova
-							i(95006), -- Roots of Pain
-							i(95012), -- Sabatons of the Superior Being
-							i(95034), -- Scales of Shaped Flesh
-							i(95026), -- Sparkstring Chain Leggings
-							i(95039), -- Starburner Robes
-							i(95004), -- Starwalker Sandals
-							i(94998), -- Strap of Murderous Strikes
-							i(95024), -- Time-Lost Greaves
-							i(95005), -- Treads of Delicate Fascia
-							i(95009), -- Treads of the Sanguine Volley
-							i(95007), -- Twist-Toe Tabi
-							i(94996), -- Vita-Binder Wrap
-							i(95016), -- White Snow Skycloak
-							i(94997), -- Worldbender Waistband
-							i(95008), -- World-Mote Sabatons
-							i(95017), -- Yellow Dawn Lightningcloak
+							i(95025),	-- Archaic Protector's Legguards
+							i(95013),	-- Black Night Thundercloak
+							i(95001),	-- Bubbling Anima Belt
+							i(95038),	-- Carapace of the Core
+							i(95035),	-- Chains of Counted Souls
+							i(95033),	-- Chestguard of Coruscating Blades
+							i(95028),	-- Cosmicfire Legwraps
+							i(95002),	-- Cracklesnap Clasp
+							i(94995),	-- Detonation Cord
+							i(95003),	-- Flare-Forged Greatbelt
+							i(95015),	-- Grey Wind Mistcloak
+							i(95010),	-- Hypersensitive Sollerets
+							i(95000),	-- Jingling Fetishgirdle
+							i(95029),	-- Kilt of Perpetual Genuflection
+							i(95030),	-- Leggings of the Discarded Warning
+							i(95027),	-- Legguards of Awaked Repair
+							i(95031),	-- Legguards of Surreal Visions
+							i(95023),	-- Legplates of Lightning Blood
+							i(95011),	-- Lightning-Walker Clawfeet
+							i(94999),	-- Longdraw Chain Belt
+							i(95036),	-- Nova-Binder Breastplate
+							i(95037),	-- Planet-Birthed Cuirass
+							i(95018),	-- Ra-den's Evolving Signet
+							i(95019),	-- Ra-den's Summoning Band
+							i(95020),	-- Ra-den's Contemplative Loop
+							i(95021),	-- Ra-den's Swift Seal
+							i(95022),	-- Ra-den's Ruinous Ring
+							i(95014),	-- Red Sky Cloudcloak
+							i(95032),	-- Robes of Contagious Time
+							i(95040),	-- Robes of Nova
+							i(95006),	-- Roots of Pain
+							i(95012),	-- Sabatons of the Superior Being
+							i(95034),	-- Scales of Shaped Flesh
+							i(95026),	-- Sparkstring Chain Leggings
+							i(95039),	-- Starburner Robes
+							i(95004),	-- Starwalker Sandals
+							i(94998),	-- Strap of Murderous Strikes
+							i(95024),	-- Time-Lost Greaves
+							i(95005),	-- Treads of Delicate Fascia
+							i(95009),	-- Treads of the Sanguine Volley
+							i(95007),	-- Twist-Toe Tabi
+							i(94996),	-- Vita-Binder Wrap
+							i(95016),	-- White Snow Skycloak
+							i(94997),	-- Worldbender Waistband
+							i(95008),	-- World-Mote Sabatons
+							i(95017),	-- Yellow Dawn Lightningcloak
 						},
 					}),
 				},
