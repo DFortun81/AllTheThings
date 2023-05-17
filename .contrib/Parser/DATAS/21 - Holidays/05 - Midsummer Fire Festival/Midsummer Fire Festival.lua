@@ -302,7 +302,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				-- #if BEFORE 4.2.0
 				-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.
 				-- Between Patch 3.3.3 and 4.2.0 it had no available source.
-				i(34955, {	-- Searing Scorcling (PET!)
+				i(34955, {	-- Searing Scorchling (PET!)
 					["timeline"] = { "removed 3.3.3", "added 4.2.0" },
 				}),
 				-- #endif

@@ -3502,7 +3502,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(10822, {	-- Dark Whelpling
+				i(10822, {	-- Dark Whelpling (PET!)
 					["crs"] = {
 						-- #if AFTER MOP
 						4323,	-- Searing Hatchling

@@ -21,18 +21,18 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 				i(45047, {	-- Sandbox Tiger
 					["timeline"] = { "added 3.1.0.9626" },
 				}),
-				i(32588, {	-- Banana Charm
+				i(32588, {	-- Bananas (PET!)
 					["timeline"] = { "added 2.0.1.6180" },
 				}),
 				i(34493, {	-- Dragon Kite (PET!)
 					["timeline"] = { "added 2.3.0.7561" },
 				}),
-				i(38050, {	-- Soul-Trader Beacon
+				i(38050, {	-- Ethereal Soul-Trader (PET!)
 					["timeline"] = { "added 2.4.2.8301" },
 				}),
 			},
 		}),
-		i(32588, {	-- Banana Charm
+		i(32588, {	-- Bananas (PET!)
 			["timeline"] = { "added 2.0.1.6180" },
 		}),
 		i(34493, {	-- Dragon Kite (PET!)
@@ -68,7 +68,7 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 		i(72153, {	-- Sand Scarab (PET!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(38050, {	-- Soul-Trader Beacon
+		i(38050, {	-- Ethereal Soul-Trader (PET!)
 			["timeline"] = { "added 2.4.2.8301" },
 			["groups"] = {
 				i(38186, {	-- Ethereal Credit

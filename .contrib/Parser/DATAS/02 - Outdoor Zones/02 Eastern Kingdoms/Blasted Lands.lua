@@ -1977,7 +1977,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						8718,	-- Manahound
 					},
 				}),
-				i(118675, {	-- Time-Locked Box (PET!)
+				i(118675, {	-- Bronze Whelpling (PET!)
 					["description"] = "Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",
 					["timeline"] = { "added 6.0.2" },
 				}),

@@ -98,7 +98,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 		["groups"] = {
 			ach(665),	-- Collector's Edition: Netherwhelp
 			i(25535),	-- Netherwhelp (PET!)
-			i(30360, {	-- Lurky's Egg (Lurky)
+			i(30360, {	-- Lurky (PET!)
 				["description"] = "This was only available in the EU.",
 			}),
 		},

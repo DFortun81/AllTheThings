@@ -96,16 +96,16 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 				["cost"] = { { "i", 137599, 1 } },	-- Pulsating Sac
 				["timeline"] = { "added 7.0.3.22248" },
 				["groups"] = {
-					i(44822, {	-- Albino Snake
+					i(44822, {	-- Albino Snake (PET!)
 						["timeline"] = { "added 3.1.0.9658" },
 					}),
-					i(11023),	-- Ancona Chicken
-					i(10360),	-- Black Kingsnake
-					i(29958),	-- Blue Dragonhawk Hatchling
+					i(11023),	-- Ancona Chicken (PET!)
+					i(10360),	-- Black Kingsnake (PET!)
+					i(29958),	-- Blue Dragonhawk Hatchling (PET!)
 					i(70160, {	-- Crimson Lasher (PET!)
 						["timeline"] = { "added 4.2.0.14333" },
 					}),
-					i(8501),	-- Hawk Owl
+					i(8501),	-- Hawk Owl (PET!)
 					i(120051, {	-- Kaliri Hatchling (PET!)
 						["timeline"] = { "added 6.0.2.18764" },
 					}),

@@ -1448,12 +1448,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 43.4, 35.2, NETHERSTORM },
 						["groups"] = {
 							i(29958),	-- Blue Dragonhawk Hatchling (PET!)
-							i(29364),	-- Brown Rabbit Crate (PET!)
+							i(29364),	-- Brown Rabbit (PET!)
 							i(8490),	-- Cat Carrier (Siamese) (PET!)
 							i(10392),	-- Crimson Snake (PET!)
-							i(29363),	-- Mana Wyrmling (PET!)
+							i(29363, { -- Mana Wyrmling (PET!)
+								["timeline"] = { "added 2.0.1.6180"},
+							}),
 							i(8495),	-- Parrot Cage (Senegal) (PET!)
-							i(29902),	-- Red Moth Egg (PET!)
+							i(29902),	-- Red Moth (PET!)
 							i(10393),	-- Undercity Cockroach (PET!)
 						},
 					}),

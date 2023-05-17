@@ -684,7 +684,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					i(71631, {	-- Zen'Vorka's Cache
 						["cost"] = { { "c", 416, 30 }, },	-- 30x Mark of the World Tree
 						["g"] = {
-							i(34955),	-- Searing Scorchling
+							i(34955),	-- Searing Scorchling (PET!)
 							i(55405),	-- Blackwolf Amulet
 							i(55315),	-- Blackwolf Cloak
 							i(55378),	-- Blackwolf Crystal

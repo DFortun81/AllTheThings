@@ -175,59 +175,59 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(105757),	-- Shipley's Shady Silks
 	}),
 	filter(BATTLE_PETS, {
-		i(44984),	-- Ammen Vale Lashling
-		i(34535),	-- Azure Whelpling
-		i(32588),	-- Banana Charm
-		i(104158),	-- Blackfuse Bombling
-		i(29960),	-- Capture Firefly
-		i(8491),	-- Cat Carrier (Black Tabby)
-		i(8485),	-- Cat Carrier (Bombay)
-		i(8490),	-- Cat Carrier (Siamese)
-		i(97960),	-- Dark Quivering Blob
-		i(10822),	-- Dark Whelpling
-		i(48112),	-- Darting Hatchling
-		i(48114),	-- Deviate Hatchling
-		i(20769),	-- Disgusting Oozeling
-		i(34493),	-- Dragon Kite
-		i(104162),	-- Droplet of Y'Shaarj
-		i(44970),	-- Dun Morogh Cub
-		i(44973),	-- Durotar Scorpion
-		i(44974),	-- Elwynn Lamb
-		i(8498),	-- Emerald Whelpling
-		i(44982),	-- Enchanted Broom
-		i(43698),	-- Giant Sewer Rat
-		i(104163),	-- Gooey Sha-ling
-		i(48116),	-- Gundrak Hatchling
-		i(23713),	-- Hippogryph Hatchling
-		i(94835),	-- Ji-Kun Hatchling
-		i(104165),	-- Kovok
-		i(48118),	-- Leaping Hatchling
-		i(172016),	-- Lil' Nefarian
-		i(94125),	-- Living Sandling
-		i(45002),	-- Mechanopeep
-		i(44980),	-- Mulgore Hatchling
-		i(48120),	-- Obsidian Hatchling
-		i(8492),	-- Parrot Cage (Green Wing Macaw)
-		i(8494),	-- Parrot Cage (Hyacinth Macaw)
-		i(35504),	-- Phoenix Hatchling
-		i(44721),	-- Proto-Drake Whelp
-		i(183621),	-- Putrid Geist
-		i(94574),	-- Pygmy Direhorn
-		i(97959),	-- Living Fluid
-		i(48124),	-- Razormaw Hatchling
-		i(48126),	-- Razzashi Hatchling
-		i(34492),	-- Rocket Chicken
-		i(45606),	-- Sen'jin Fetish
-		i(69992),	-- Shimmering Wyrmling
-		i(94152),	-- Son of Animus
-		i(38050),	-- Soul-Trader Beacon
-		i(49343),	-- Spectral Tiger Cub
-		i(44965),	-- Teldrassil Sproutling
-		i(85513),	-- Thundering Serpent Hatchling
-		i(8499),	-- Tiny Crimson Whelping
-		i(69991),	-- Tiny Sporebat
-		i(44971),	-- Tirisfal Batling
-		i(49287),	-- Tuskarr Kite
+		i(44984),	-- Ammen Vale Lashling (PET!)
+		i(34535),	-- Azure Whelpling (PET!)
+		i(32588),	-- Bananas (PET!)
+		i(104158),	-- Blackfuse Bombling (PET!)
+		i(29960),	-- Captured Firefly (PET!)
+		i(8491),	-- Cat Carrier (Black Tabby)(PET!)
+		i(8485),	-- Cat Carrier (Bombay) (PET!)
+		i(8490),	-- Cat Carrier (Siamese) (PET!)
+		i(97960),	-- Viscous Horror (PET!)
+		i(10822),	-- Dark Whelpling (PET!)
+		i(48112),	-- Darting Hatchling (PET!)
+		i(48114),	-- Deviate Hatchling (PET!)
+		i(20769),	-- Disgusting Oozeling (PET!)
+		i(34493),	-- Dragon Kite (PET!)
+		i(104162),	-- Droplet of Y'Shaarj (PET!)
+		i(44970),	-- Dun Morogh Cub (PET!)
+		i(44973),	-- Durotar Scorpion (PET!)
+		i(44974),	-- Elwynn Lamb (PET!)
+		i(8498),	-- Emerald Whelpling (PET!)
+		i(44982),	-- Enchanted Broom (PET!)
+		i(43698),	-- Giant Sewer Rat (PET!)
+		i(104163),	-- Gooey Sha-ling (PET!)
+		i(48116),	-- Gundrak Hatchling (PET!)
+		i(23713),	-- Hippogryph Hatchling (PET!)
+		i(94835),	-- Ji-Kun Hatchling (PET!)
+		i(104165),	-- Kovok (PET!)
+		i(48118),	-- Leaping Hatchling (PET!)
+		i(172016),	-- Lil' Nefarian (PET!)
+		i(94125),	-- Living Sandling (PET!)
+		i(45002),	-- Mechanopeep (PET!)
+		i(44980),	-- Mulgore Hatchling (PET!)
+		i(48120),	-- Obsidian Hatchling (PET!)
+		i(8492),	-- Parrot Cage (Green Wing Macaw) (PET!)
+		i(8494),	-- Parrot Cage (Hyacinth Macaw) (PET!)
+		i(35504),	-- Phoenix Hatchling (PET!)
+		i(44721),	-- Proto-Drake Whelp (PET!)
+		i(183621),	-- Putrid Geist (PET!)
+		i(94574),	-- Pygmy Direhorn (PET!)
+		i(97959),	-- Living Fluid (PET!)
+		i(48124),	-- Razormaw Hatchling (PET!)
+		i(48126),	-- Razzashi Hatchling (PET!)
+		i(34492),	-- Rocket Chicken (PET!)
+		i(45606),	-- Sen'jin Fetish (PET!)
+		i(69992),	-- Shimmering Wyrmling (PET!)
+		i(94152),	-- Son of Animus (PET!)
+		i(38050),	-- Ethereal Soul-Trader (PET!)
+		i(49343),	-- Spectral Tiger Cub (PET!)
+		i(44965),	-- Teldrassil Sproutling (PET!)
+		i(85513),	-- Thundering Serpent Hatchling (PET!)
+		i(8499),	-- Tiny Crimson Whelping (PET!)
+		i(69991),	-- Tiny Sporebat (PET!)
+		i(44971),	-- Tirisfal Batling (PET!)
+		i(49287),	-- Tuskarr Kite (PET!)
 	}),
 	filter(RECIPES, {
 		i(86238),	-- Pattern: Chestguard of Nemeses

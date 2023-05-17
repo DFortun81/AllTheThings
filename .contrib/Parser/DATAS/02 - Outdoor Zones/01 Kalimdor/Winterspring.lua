@@ -2422,7 +2422,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(ZONE_DROPS, {
 				-- #if AFTER CATA
 				-- Originally a zone drop of Azshara, was moved to Winterspring after.
-				i(34535, {	-- Azure Whelpling
+				i(34535, {	-- Azure Whelpling (PET!)
 					["timeline"] = { "added 2.3.0.7485" },
 				}),
 				-- #endif

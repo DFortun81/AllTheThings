@@ -30,17 +30,13 @@ end
 -- UNSORTED --
 --------------
 i(19450, 106);	-- A Jubling's Tiny Home (Jubling)
-i(44822, 74);		-- Albino Snake
+
 i(72042, 331);	-- Alliance Balloon
 i(11023, 52);		-- Ancona Chicken
-i(34535, 57);		-- Azure Whelpling
-i(32588, 156);	-- Banana Charm (Bananas)
 i(10360, 75);		-- Black Kingsnake
 i(29958, 145);	-- Blue Dragonhawk Hatchling
-i(29901, 138);	-- Blue Moth Egg (Blue Moth)
 i(20371, 107);	-- Blue Murloc Egg (Murky)
 i(71387, 325);	-- Brilliant Kaliri
-i(29364, 137);	-- Brown Rabbit Crate (Brown Rabbit)
 i(10361, 77);		-- Brown Snake
 i(23083, 128);	-- Captured Flame (Spirit of Summer)
 i(8491, 42);		-- Cat Carrier (Black Tabby) - (Black Tabby Cat)
@@ -64,9 +60,7 @@ i(49664, 247);	-- Enchanted Purple Jade (Zipao Tiger)
 i(152972, 2083);	-- Faceless Minion
 i(180034, 2888);	-- Glimr's Cracked Egg (Glimr)
 i(142089, 1958);	-- Glittering Ball of Yarn (Sanctum Cub)
-i(29953, 142);	-- Golden Dragonhawk Hatchling
 i(8500, 68);		-- Great Horned Owl
-i(19055, 757);	-- Green Dragon Orb (Tiny Green Dragon)
 i(21301, 119);	-- Green Helper Box (Father WInter's Helper)
 i(8501, 67);		-- Hawk Owl
 i(23713, 130);	-- Hippogryph Hatchling
@@ -84,17 +78,13 @@ i(136914, 1808);	-- Leyline Broodling
 i(15996, 95);		-- Lifelike Mechanical Toad (Lifelike Toad)
 i(11826, 86);		-- Lil' Smoky
 i(71033, 320);	-- Lil' Tarecgosa
-i(30360, 111);	-- Lurky's Egg (Lurky)
 -- #if AFTER 5.4.0
 -- Due to special circumstances, this pet is not actually permanently collectible until patch 5.4.0.
 -- #endif
-i(27445, 132);	-- Magical Crawdad Box (Magical Crawdad)
 i(142084, 1953);	-- Magnataur Hunting Horn (Snobold Runt)
-i(29363, 136);	-- Mana Wyrmling
 i(10398, 83);		-- Mechanical Chicken
 i(87526, 844);	-- Mechanical Pandaren Dragonling
 i(4401, 39);		-- Mechanical Squirrel Box (Mechanical Squirrel)
-i(31760, 149);	-- Miniwing
 i(141893, 1936);	-- Mischief
 i(44980, 210);	-- Mulgore Hatchling
 i(71726, 329);	-- Murky's Little Soulstone (Murkablo)
@@ -104,7 +94,6 @@ i(140761, 1933);	-- Nightmare Treant
 i(141532, 1943);	-- Noblegarden Bunny
 i(71140, 323);	-- Nuts' Acorn (Nuts)
 i(142090, 1959);	-- Ominous Pile of Snow (WInter Rageling)
-i(20651, 1168);	-- Orange Murloc Egg (Murki)
 i(13583, 92);		-- Panda Collar (Panda Cub)
 i(90173, 868);	-- Pandaren Water Spirit
 i(8496, 47);		-- Parrot Cage (Cockatiel) - (Cockatiel)
@@ -120,19 +109,14 @@ i(166358, 2541);	-- Proper Parrot
 i(183621, 3046);	-- Putrid Geist
 i(8497, 72);		-- Rabbit Crate (Snowshoe) - (Snowshoe Rabbit)
 i(23015, 127);	-- Rat Cage (Whiskers the Rat)
-i(19054, 758);	-- Red Dragon Orb (Tiny Red Dragon)
-i(29956, 143);	-- Red Dragonhawk Hatchling
 i(21305, 120);	-- Red Helper Box (Winter's Little Helper)
-i(29902, 139);	-- Red Moth Egg (Red Moth)
 i(142086, 1955);	-- Red-Hot Coal (Magma Rageling)
 i(178533, 2622);	-- Shaking Pet Carrier (Jingles)
-i(29957, 144);	-- Silver Dragonhawk Hatchling
 i(88147, 820);	-- Singing Cricket Cage
 i(142097, 1966);	-- Skull of A Frozen Whelp (Soulbroken Whelpling)
 i(12529, 90);		-- Smolderweb Carrier (Smolderweb Hatchling)
 i(68673, 90);		-- Smolderweb Egg (Smolderweb Hatchling)
 i(21309, 117);	-- Snowman Kit (Tiny Snowman)
-i(38050, 183);	-- Soul-Trader Beacon (Ethereal Soul-Trader)
 i(11474, 87);		-- Sprite Darter Egg (Sprite Darter Hatchling)
 i(142100, 1969);	-- Stardust
 i(129208, 1721);	-- Stormborne Whelpling
@@ -141,7 +125,6 @@ i(118598, 1434);	-- Sun Sproutling
 i(119468, 1570);	-- Sunfire Kaliri
 i(116064, 1478);	-- Syd the Squid
 i(112699, 1416);	-- Teroclaw Hatchling
-i(118675, 1563);	-- Time-Locked Box (Bronze Whelpling)
 i(8499, 58);		-- Tiny Crimson Whelpling (Crimson Whelpling)
 i(21277, 116);	-- Tranquil Mechanical Yeti
 i(11026, 65);		-- Tree Frog Box (Tree Frog)
@@ -152,24 +135,43 @@ i(118104, 1538);	-- Umbrafen Spore
 i(10393, 55);		-- Undercity Cockroach
 i(89736, 855);	-- Venus
 i(113558, 1394);	-- Weebomination
-i(29904, 141);	-- White Moth Egg (White Moth)
 i(116804, 1523);	-- Widget the Departed
-
 i(11027, 64);		-- Wood Frog Box (Wood Frog)
 i(12264, 89);		-- Worg Carrier (Worg Pup)
 i(136922, 1887);	-- Wyrmy Tunkins
-i(29903, 140);	-- Yellow Moth Egg (Yellow Moth)
 i(89367, 850);	-- Yu'lon Kite
 i(118101, 1536);	-- Zangar Spore
 i(13582, 94);		-- Zergling Leash (Zergling
+
+-----------------
+-- PATCH 1.12.1 --
+-----------------
+-- ITEM --
+i(44822, 74);	-- Albino Snake
+i(30360, 111);	-- Lurky
+i(20651, 1168);	-- Murki
+i(19055, 757);	-- Tiny Green Dragon
+i(19054, 758);	-- Tiny Red Dragon
+-- NPC --
+n(7554, 69);	-- Snowy Owl
 
 
 -----------------
 -- PATCH 2.0.1 --
 -----------------
 -- ITEM --
-
-
+i(32588, 156);	-- Bananas
+i(29901, 138);	-- Blue Moth
+i(29364, 137);	-- Brown Rabbit
+i(29953, 142);	-- Golden Dragonhawk Hatchling
+i(27445, 132);	-- Magical Crawdad
+i(29363, 136);	-- Mana Wyrmling
+i(31760, 149);	-- Miniwing
+i(29956, 143);	-- Red Dragonhawk Hatchling
+i(29902, 139);	-- Red Moth
+i(29957, 144);	-- Silver Dragonhawk Hatchling
+i(29904, 141);	-- White Moth
+i(29903, 140);	-- Yellow Moth
 
 -----------------
 -- PATCH 2.2.2 --
@@ -194,11 +196,11 @@ i(32233, 153);	-- Wolpertinger
 -- PATCH 2.3.0 --
 -----------------
 -- ITEM --
+i(34535, 57);	-- Azure Whelpling
 i(34425, 191);	-- Clockwork Rocket Bot
 i(34493, 169);	-- Dragon Kite
 i(33993, 165);	-- Mojo
 i(34492, 168);	-- Rocket Chicken
-
 i(34478, 167);	-- Tiny Sporebat
 i(69991, 167);	-- Tiny Sporebat
 
@@ -218,6 +220,12 @@ i(35349, 173);	-- Snarly
 i(40653, 160);	-- Stinker
 i(22780, 1073);	-- Terky
 i(33816, 163);	-- Toothy
+
+-----------------
+-- PATCH 2.4.2 --
+-----------------
+-- ITEM --
+i(38050, 183);	-- Ethereal Soul-Trader
 
 -----------------
 -- PATCH 2.4.3 --
@@ -471,7 +479,6 @@ n(62116, 468);	-- Creepy Crawly
 n(62115, 467);	-- Dung Beetle
 n(61751, 448);	-- Hare
 n(61080, 378);	-- Rabbit
-n(7554, 69);	-- Snowy Owl
 n(62114, 466);	-- Spiny Lizard
 n(61081, 379);	-- Squirrel
 n(61369, 420);	-- Toad
@@ -635,6 +642,7 @@ i(127704, 1577);	-- Bloodthorn Hatchling
 i(119146, 1458);	-- Bone Wasp
 i(128424, 1466);	-- Brightpaw
 i(118107, 1540);	-- Brilliant Spore
+i(118675, 1563);	-- Bronze Whelpling
 i(116403, 1516);	-- Bush Chicken
 i(110721, 1396);	-- Crazy Carrot
 i(118106, 1537);	-- Crimson Spore

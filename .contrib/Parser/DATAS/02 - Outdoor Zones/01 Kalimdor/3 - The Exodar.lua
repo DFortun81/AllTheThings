@@ -509,9 +509,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 30.1, 33.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(29901),	-- Blue Moth Egg
-						i(29903),	-- Yellow Moth Egg
-						i(29904),	-- White Moth Egg
+						i(29901),	-- Blue Moth (PET!)
+						i(29904),	-- White Moth (PET!)
+						i(29903),	-- Yellow Moth (PET!)
 					},
 				}),
 				n(30716, {	-- Thoth <Inscription Trainer>
