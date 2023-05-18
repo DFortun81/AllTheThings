@@ -435,13 +435,14 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blue Scepter Shard
-							["provider"] = { "i", 21137 },	-- Blue Scepter Shard
+							["providers"] = {
+								{ "i",  21137 },	-- Blue Scepter Shard
+								{ "o", 180669 },	-- Swirling Maelstrom
+							},
 							["description"] = "This summons a 40 man raid boss.",
+							["cost"] = {{ "i", 21136, 1 }},	-- Arcanite Buoy
 							["coord"] = { 65, 55, AZSHARA },
 							["cr"] = 15571,	-- Maws
-							["cost"] = {
-								{ "i", 21136, 1 },	-- Arcanite Buoy
-							},
 						}),
 						i(21526),	-- Band of Icy Depths
 						i(21527),	-- Darkwater Robes
