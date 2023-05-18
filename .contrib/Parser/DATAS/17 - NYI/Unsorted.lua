@@ -467,8 +467,6 @@ root(ROOTS.Unsorted, {
 				i(205034),	-- Enormous Ball of Yarn (TOY!)
 				i(205027),	-- Explorer's Banner (TOY!)
 				i(206038),	-- Flamin' Ring of Flashiness (TOY!)
-				i(206043),	-- Fyrakk's Frenzy (TOY!)
-				i(205688),	-- Glutinous Glitterscale Glob (TOY!)
 			}),
 			n(WEAPONS, {
 				i(204638),	-- Sunder Wing
