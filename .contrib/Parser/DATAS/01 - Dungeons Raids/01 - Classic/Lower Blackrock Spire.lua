@@ -333,7 +333,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["provider"] = { "i", 12530 },	-- Spire Spider Egg
 						}),
 						i(12529, {	-- Smolderweb Hatchling (PET!)
-							["timeline"] = { "added 1.11.1, removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
