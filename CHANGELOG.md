@@ -6,8 +6,6 @@
 
 ### Promotions
 
-Earn the Blazing Hippogryph mount by watching Twitch streamers for 4 hours between May 9th, 10:00 a.m. PDT and May 17th, 10:00 a.m. PDT. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23938290).
-
 Earn Lil' XT 🤖 through Prime Gaming until May 25, 2023. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23938292).
 
 
