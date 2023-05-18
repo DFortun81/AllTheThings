@@ -832,8 +832,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						objective(1, {	-- 0/1 	Ishamuhale's Fang
-							["provider"] = { "i", 5101 },	-- 	Ishamuhale's Fang
+						objective(1, {	-- 0/1 Ishamuhale's Fang
+							["provider"] = { "i", 5101 },	-- Ishamuhale's Fang
 							["coord"] = { 59.8, 30.6, THE_BARRENS },
 							["cost"] = {{ "i", 10338, 1 }},	-- Fresh Zhevra Carcass
 							["cr"] = 3257,	-- Ishamuhale

@@ -279,7 +279,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14729,	-- Ralston Farnsley
 					["sourceQuest"] = 7818,	-- A Donation of Runecloth
 					["coord"] = { 71.8, 29, UNDERCITY },
-					["cost"] = { { "i", 14047, 20 } }, 	-- Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,

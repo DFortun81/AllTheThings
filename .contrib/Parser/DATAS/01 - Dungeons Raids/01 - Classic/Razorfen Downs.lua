@@ -289,13 +289,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				},
 			}),
 			-- o(XXXXXX, {	-- Henry's Handbag
-			-- 	["timeline"] = { ADDED_10_0_5 },
-			-- 	["groups"] = {
+			--	--["timeline"] = { ADDED_10_0_5 },
+			--	--["groups"] = {
 					i(202249, {	-- Recipe: Goldthorn Tea
 						["timeline"] = { ADDED_10_0_5 },
 						["description"] = "Head to the Murder Pens area and look for hanging bag, recipe is inside."	-- TODO: Move this description to the object
 					}),
-			-- 	},
+			--	--},
 			-- }),
 			n(8696, {	-- Henry Stern
 				["description"] = "The only source of acquiring Goldthorn Tea.",

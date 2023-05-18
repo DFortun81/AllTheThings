@@ -980,7 +980,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(203321),	-- Winding Slitherdrake: Curled Cheek Horn (DM!)
 			i(203334),	-- Winding Slitherdrake: Curled Horns (DM!)
 			i(203346),	-- Winding Slitherdrake: Curled Nose (DM!)
-			i(203314), 	-- Winding Slitherdrake: Curved Chin Horn (DM!)
+			i(203314),	-- Winding Slitherdrake: Curved Chin Horn (DM!)
 			i(203335),	-- Winding Slitherdrake: Curved Horns (DM!)
 			i(203349),	-- Winding Slitherdrake: Curved Nose Horn
 			i(203320),	-- Winding Slitherdrake: Ears (DM!)

@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			})),
 			-- #endif
 			n(FACTIONS, {
-				faction(577, { 	-- Everlook
+				faction(577, {	-- Everlook
 					["icon"] = icon("INV_Misc_Coin_01"),
 					["OnTooltip"] = OnTooltipForEverlook,
 					["maps"] = { TANARIS, THE_BARRENS },
@@ -2163,7 +2163,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.6, 24.0, WINTERSPRING },
 					["timeline"] = { "added 5.1.0.16309" },
 				}),
-				n(14457, { 	-- Princess Tempestria
+				n(14457, {	-- Princess Tempestria
 					-- TODO: Move this to an Elemental Invasion World Event file.
 					["description"] = "This is only available during an Elemental Invasion.",
 					["coord"] = { 54.6, 42.6, WINTERSPRING },

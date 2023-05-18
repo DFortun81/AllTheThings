@@ -803,7 +803,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { PRIEST },
 					["lvl"] = 5,
 					["groups"] = {
-						objective(1, {	-- 	Heal and fortify Sentinel Shaya
+						objective(1, {	-- Heal and fortify Sentinel Shaya
 							["provider"] = { "n", 12429 },	-- Sentinel Shaya
 							["coord"] = { 57.4, 63.6, TELDRASSIL },
 						}),

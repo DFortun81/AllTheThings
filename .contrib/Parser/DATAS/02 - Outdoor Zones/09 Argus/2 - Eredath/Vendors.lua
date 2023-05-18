@@ -11,10 +11,10 @@ _.Zones =
 					["coord"] = { 50.6, 45.6, 882 },
 					["g"] = {
 						i(153169, {	-- Commemorative Jed'hin Belt
-							["cost"] = 50000, 	-- 5g
+							["cost"] = 50000,	-- 5g
 						}),
 						i(153170, {	-- Jed'hin Headguard
-							["cost"] = 50000, 	-- 5g
+							["cost"] = 50000,	-- 5g
 						}),
 					},
 				}),

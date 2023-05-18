@@ -1118,7 +1118,7 @@ _.Zones =
 				}),
 				q(34655, {	-- The Shadows of Skettis
 					["sourceQuests"] = {
-						34653, 	-- Arakkoa Exodus
+						34653,	-- Arakkoa Exodus
 						36951,	-- Arakkoa Exodus
 						49566,	-- Hero's Call: Spires of Arak!
 						49548,	-- Warchief's Command: Spires of Arak!

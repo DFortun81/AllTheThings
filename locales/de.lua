@@ -699,7 +699,7 @@ for key,value in pairs({
 		--TODO: [-81] = "Third Chest",
 		--TODO: [-82] = "Final Chest",
 	-- SM
-		[-85] = "Friedhof", 										-- Graveyard
+		[-85] = "Friedhof",											-- Graveyard
 		[-86] = "Bibliothek",										-- Library
 		[-87] = "Waffenkammer",										-- Armory
 		[-88] = "Kathedrale",										-- Cathedral
@@ -4061,7 +4061,7 @@ for key,value in pairs({
 	["Eiskronenzitadelle"] = "Die Eiskronenzitadelle";	-- Icecrown Citadel
 	["Rubinsanktum"] = "Das Rubinsanktum";	-- The Ruby Sanctum
 	["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlosen Frühlings";	-- Terrace of Endless Spring
-	["Herz der Angst"] = "Das Herz der Angst";	-- 	Heart of Fear
+	["Herz der Angst"] = "Das Herz der Angst";	-- Heart of Fear
 })
 do a[key] = value; end
 

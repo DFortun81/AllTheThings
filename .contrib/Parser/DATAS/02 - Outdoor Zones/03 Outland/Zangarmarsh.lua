@@ -107,7 +107,7 @@ root(ROOTS.Zones, {
 							-- Telredor (A)
 							9783,	-- An Unnatural Drought
 							-- TODO:: verify below
-							9896, 	-- Blacksting's Bane
+							9896,	-- Blacksting's Bane
 							9790,	-- Diaphanous Wings
 							9777,	-- Fulgor Spores
 							9780,	-- Umbrafen Eel Filets

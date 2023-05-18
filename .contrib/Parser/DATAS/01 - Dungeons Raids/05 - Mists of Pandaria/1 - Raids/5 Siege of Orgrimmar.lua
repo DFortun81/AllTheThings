@@ -3099,7 +3099,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					bubbleDownSelf({["races"] = ALLIANCE_ONLY,},{
 						title(211),	-- Conqueror of Orgrimmar
 					})),
-					ach(8680, 	-- Liberator of Orgrimmar
+					ach(8680,	-- Liberator of Orgrimmar
 					bubbleDownSelf({["races"] = HORDE_ONLY,},{
 						title(212),	-- Liberator of Orgrimmar
 					})),

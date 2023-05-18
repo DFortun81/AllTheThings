@@ -29,8 +29,8 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				15215,	-- Can't Stop the Feeling
-				15223, 	-- Feeling It
-				15217, 	-- Maniac on the Dance Floor
+				15223,	-- Feeling It
+				15217,	-- Maniac on the Dance Floor
 			}},
 			["g"] = {
 				i(187689),	-- Dance Dance Darkmoon (TOY!)
@@ -197,12 +197,12 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				["provider"] = { "i", 74822 },
 			}),
 		}),
-		ach(15223, 	-- Feeling It
+		ach(15223,	-- Feeling It
 		bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {
 			ach(15222),	-- You Got the Beat
 		})),
 		ach(6025),	-- I Was Promised a Pony
-		ach(15217, 	-- Maniac on the Dance Floor
+		ach(15217,	-- Maniac on the Dance Floor
 		bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {
 			ach(15216),	-- Make You Sweat
 		})),

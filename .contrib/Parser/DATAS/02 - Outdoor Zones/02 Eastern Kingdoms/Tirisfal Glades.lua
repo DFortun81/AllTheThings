@@ -1085,17 +1085,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Gregor's Remains
 							["provider"] = { "i", 2829 },	-- Gregor's Remains
 							["coord"] = { 46.8, 29.6, TIRISFAL_GLADES },
-							["cr"] = 1654, 	-- Gregor Agamand
+							["cr"] = 1654,	-- Gregor Agamand
 						}),
 						objective(2, {	-- 0/1 Nissa's Remains
 							["provider"] = { "i", 2828 },	-- Nissa's Remains
 							["coord"] = { 49.6, 36.2, TIRISFAL_GLADES },
-							["cr"] = 1655, 	-- Nissa Agamand
+							["cr"] = 1655,	-- Nissa Agamand
 						}),
 						objective(3, {	-- 0/1 Thurman's Remains
 							["provider"] = { "i", 2830 },	-- Thurman's Remains
 							["coord"] = { 44.0, 33.4, TIRISFAL_GLADES },
-							["cr"] = 1656, 	-- Thurman Agamand
+							["cr"] = 1656,	-- Thurman Agamand
 						}),
 					},
 				}),
@@ -2136,13 +2136,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								5513,	-- Mantles of the Dawn
 							},
 						}),
-						i(19447), 	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
-						i(19446), 	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
-						i(19442), 	-- Recipe: Powerful Anti-Venom
-						i(19216), 	-- Pattern: Argent Boots
-						i(19217), 	-- Pattern: Argent Shoulders
-						i(19328), 	-- Pattern: Dawn Treaders
-						i(19329), 	-- Pattern: Golden Mantle of the Dawn
+						i(19447),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
+						i(19446),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
+						i(19442),	-- Recipe: Powerful Anti-Venom
+						i(19216),	-- Pattern: Argent Boots
+						i(19217),	-- Pattern: Argent Shoulders
+						i(19328),	-- Pattern: Dawn Treaders
+						i(19329),	-- Pattern: Golden Mantle of the Dawn
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire

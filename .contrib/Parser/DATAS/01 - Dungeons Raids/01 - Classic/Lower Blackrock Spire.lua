@@ -142,7 +142,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
-						i(12757, { 	-- Breastplate of Bloodthirst
+						i(12757, {	-- Breastplate of Bloodthirst
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -182,7 +182,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
-						i(12752, { 	-- Cap of the Scarlet Savant
+						i(12752, {	-- Cap of the Scarlet Savant
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -280,7 +280,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 57,
 					["groups"] = {
-						objective(1, {	-- 	Test the Eggscilliscope Prototype
+						objective(1, {	-- Test the Eggscilliscope Prototype
 							["provider"] = { "i", 12286 },	-- Eggscilloscope Prototype
 						}),
 						i(12144, {	-- Eggscilloscope
@@ -513,7 +513,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 					["lvl"] = 57,
 					["groups"] = {
-						i(12903, { 	-- Legguards of the Chromatic Defier
+						i(12903, {	-- Legguards of the Chromatic Defier
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(12945, {	-- Legplates of the Chromatic Defier
@@ -1110,7 +1110,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(16735, {	-- Bracers of Valor
 					["timeline"] = { "removed 4.0.3" },
 				}),
-				i(16673, { 	-- Cord of Elements
+				i(16673, {	-- Cord of Elements
 					["timeline"] = { "removed 4.0.3" },
 				}),
 				i(16696, {	-- Devout Belt
@@ -1280,7 +1280,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(13257),	-- Demonic Runed Spaulders
 						i(12626),	-- Funeral Cuffs
 						i(13255),	-- Trueaim Gauntlets
-						i(16712, { 	-- Shadowcraft Gloves
+						i(16712, {	-- Shadowcraft Gloves
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(151413, {	-- Smolderthorn Greatbelt
@@ -1541,7 +1541,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(12337),	-- Gemstone of Bloodaxe
-						i(13148, { 	-- Chillpike
+						i(13148, {	-- Chillpike
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(13163),	-- Relentless Scythe
@@ -1616,7 +1616,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(12607),	-- Brilliant Chromatic Scale
 						},
 					}),
-					n(9816, { 	-- Pyroguard Emberseer
+					n(9816, {	-- Pyroguard Emberseer
 						["timeline"] = { "removed 6.0.2" },
 						["groups"] = {
 							applyclassicphase(PHASE_FIVE, i(21988, {	-- Ember of Emberseer
@@ -1628,7 +1628,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(12929, {	-- Emberfury Talisman
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(12905, { 	-- Wildfire Cape
+							i(12905, {	-- Wildfire Cape
 								["timeline"] = { "removed 6.0.2" },
 							}),
 							i(12927, {	-- Truestrike Shoulders
@@ -1671,7 +1671,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						-- #endif
 						["timeline"] = { "removed 6.0.2" },
 					}),
-					n(10264, { 	-- Solakar Flamewreath
+					n(10264, {	-- Solakar Flamewreath
 						-- #if BEFORE 6.0.2
 						["description"] = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
 						-- #endif
@@ -1680,7 +1680,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(18657, {	-- Schematic: Hyper-Radiant Flame Reflector
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(16695, { 	-- Devout Mantle
+							i(16695, {	-- Devout Mantle
 								["timeline"] = { "removed 4.0.3" },
 							}),
 							i(12603, {	-- Nightbrace Tunic
@@ -1689,7 +1689,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(12609, {	-- Polychromatic Visionwrap
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(12606, { 	-- Crystallized Girdle
+							i(12606, {	-- Crystallized Girdle
 								["timeline"] = { "removed 6.0.2" },
 							}),
 							i(12589, {	-- Dustfeather Sash
@@ -1697,7 +1697,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							}),
 						},
 					}),
-					n(10509, { 	-- Jed Runewatcher
+					n(10509, {	-- Jed Runewatcher
 						["description"] = "This is a rare that is not always present.",
 						["timeline"] = { "removed 6.0.2" },
 						["groups"] = {
@@ -1731,21 +1731,21 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(18048, { 	-- Mastersmith's Hammer
+							i(18048, {	-- Mastersmith's Hammer
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(13502, { 	-- Handcrafted Mastersmith Girdle
+							i(13502, {	-- Handcrafted Mastersmith Girdle
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(13498, { 	-- Handcrafted Mastersmith Leggings
+							i(13498, {	-- Handcrafted Mastersmith Leggings
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(18047, { 	-- Flame Walkers
+							i(18047, {	-- Flame Walkers
 								["timeline"] = { "removed 6.0.2" },
 							}),
 						},
 					}),
-					n(10339, { 	-- Gyth <Rend Blackhand's Mount>
+					n(10339, {	-- Gyth <Rend Blackhand's Mount>
 						["timeline"] = { "removed 6.0.2" },
 						["groups"] = {
 							i(13522, {	-- Recipe: Flask of Chromatic Resistance
@@ -1757,7 +1757,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(12953, {	-- Dragoneye Coif
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							applyclassicphase(PHASE_FIVE, i(22225, { 	-- Dragonskin Cowl
+							applyclassicphase(PHASE_FIVE, i(22225, {	-- Dragonskin Cowl
 								["timeline"] = { "removed 6.0.2" },
 							})),
 							i(12952, {	-- Gyth's Skull
@@ -1766,12 +1766,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(12960, {	-- Tribal War Feathers
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(16669, { 	-- Pauldrons of Elements
+							i(16669, {	-- Pauldrons of Elements
 								["timeline"] = { "removed 4.0.3" },
 							}),
 						},
 					}),
-					n(10429, { 	-- Warchief Rend Blackhand
+					n(10429, {	-- Warchief Rend Blackhand
 						["timeline"] = { "removed 6.0.2" },
 						["groups"] = {
 							i(12630, {	-- Head of Rend Blackhand
@@ -1783,7 +1783,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(12940, {	-- Dal'Rend's Sacred Charge
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(12939, { 	-- Dal'Rend's Tribal Guardian
+							i(12939, {	-- Dal'Rend's Tribal Guardian
 								["timeline"] = { "removed 6.0.2" },
 							}),
 							i(12590, {	-- Felstriker
@@ -1798,7 +1798,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(16733, {	-- Spaulders of Valor
 								["timeline"] = { "removed 4.0.3" },
 							}),
-							i(12936, { 	-- Battleborn Armbraces
+							i(12936, {	-- Battleborn Armbraces
 								["timeline"] = { "removed 6.0.2" },
 							}),
 							i(18104, {	-- Feralsurge Girdle
@@ -1818,7 +1818,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							}),
 						},
 					}),
-					n(10430, { 	-- The Beast
+					n(10430, {	-- The Beast
 						["timeline"] = { "removed 6.0.2" },
 						["groups"] = {
 							applyclassicphase(PHASE_SIX, i(24101, {	-- Book of Ferocious Bite V
@@ -1834,7 +1834,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(12709, {	-- Pip's Skinner
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(12969, { 	-- Seeping Willow
+							i(12969, {	-- Seeping Willow
 								["timeline"] = { "removed 6.0.2" },
 							}),
 							i(12967, {	-- Bloodmoon Cloak
@@ -1880,7 +1880,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							}),
 						},
 					}),
-					applyclassicphase(PHASE_FIVE, n(16042, { 	-- Lord Valthalak
+					applyclassicphase(PHASE_FIVE, n(16042, {	-- Lord Valthalak
 						-- #if BEFORE 6.0.2
 						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 						["cost"] = {
@@ -1890,10 +1890,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						-- #endif
 						["timeline"] = { "removed 6.0.2" },
 						["groups"] = {
-							i(22336, { 	-- Draconian Aegis of the Legion
+							i(22336, {	-- Draconian Aegis of the Legion
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(22335, { 	-- Lord Valthalak's Staff of Command
+							i(22335, {	-- Lord Valthalak's Staff of Command
 								["timeline"] = { "removed 6.0.2" },
 							}),
 							i(22302, {	-- Ironweave Cowl
@@ -1916,7 +1916,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							}),
 						},
 					})),
-					n(10363, { 	-- General Drakkisath
+					n(10363, {	-- General Drakkisath
 						["timeline"] = { "removed 6.0.2" },
 						["groups"] = {
 							classicAch(1307, {	-- Upper Blackrock Spire

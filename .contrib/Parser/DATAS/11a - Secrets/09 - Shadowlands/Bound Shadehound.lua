@@ -58,7 +58,7 @@ root(ROOTS.Secrets, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_5 } },
 			i(185473, {	-- Soulforger's Tools
 				["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters who have collected the |cFFa335eeIntact Rune Codex|r.",
 				["sourceQuests"] = { 63668 },	-- Intact Rune Codex
-				["crs"] = { 166398 }, 	-- Soulforger Rhovus
+				["crs"] = { 166398 },	-- Soulforger Rhovus
 				["questID"] = 63667,
 			}),
 			n(177392, {	-- Soulsteel Anvil

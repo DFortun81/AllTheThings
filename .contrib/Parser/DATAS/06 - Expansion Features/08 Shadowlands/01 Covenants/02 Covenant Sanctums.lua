@@ -86,7 +86,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 							14502,	-- Pursuing Loyalty
 							14723,	-- Be Our Guest
 							14752,	-- Things To Do When You're Dead
-							14775,	-- 	Mush Appreciated
+							14775,	-- Mush Appreciated
 						},
 					},
 				}),

@@ -2602,19 +2602,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, { -- Clammy Hands
+						crit(1, {	-- Clammy Hands
 							["_quests"] = { 26543 },
 						}),
-						crit(2, { -- No Dumping Allowed
+						crit(2, {	-- No Dumping Allowed
 							["_quests"] = { 26556 },
 						}),
-						crit(3, { -- A Staggering Effort
+						crit(3, {	-- A Staggering Effort
 							["_quests"] = { 26557 },
 						}),
-						crit(4, { -- A Furious Catch
+						crit(4, {	-- A Furious Catch
 							["_quests"] = { 26588 },
 						}),
-						crit(5, { -- A Golden Opportunity
+						crit(5, {	-- A Golden Opportunity
 							["_quests"] = { 26572 },
 						}),
 					},
@@ -4670,12 +4670,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["timeline"] = { "added 4.0.1." },
 					["groups"] = {
-						i(3422),    -- Beautiful Wildflowers
-						i(3420),    -- Black Rose
-						i(3424),    -- Bouquet Of Black Roses
-						i(3423),    -- Bouquet Of White Roses
-						i(3419),    -- Red Rose
-						i(3421),    -- Simple Wildflowers
+						i(3422),	-- Beautiful Wildflowers
+						i(3420),	-- Black Rose
+						i(3424),	-- Bouquet Of Black Roses
+						i(3423),	-- Bouquet Of White Roses
+						i(3419),	-- Red Rose
+						i(3421),	-- Simple Wildflowers
 					},
 				}),
 				n(179897, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Ca'nees
@@ -5166,46 +5166,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						2142,    -- Cuirboulli Belt
-						2143,    -- Cuirboulli Boots
-						2144,    -- Cuirboulli Bracers
-						2145,    -- Cuirboulli Gloves
-						2146,    -- Cuirboulli Pants
-						2141,    -- Cuirboulli Vest
-						2435,    -- Embroidered Armor
-						3587,    -- Embroidered Belt
-						2438,    -- Embroidered Boots
-						3588,    -- Embroidered Bracers
-						2440,    -- Embroidered Gloves
-						3892,    -- Embroidered Hat
-						2437,    -- Embroidered Pants
-						2160,    -- Padded Armor
-						3591,    -- Padded Belt
-						2156,    -- Padded Boots
-						3592,    -- Padded Bracers
-						2158,    -- Padded Gloves
-						2159,    -- Padded Pants
-						2471,    -- Reinforced Leather Belt
-						2473,    -- Reinforced Leather Boots
-						2474,    -- Reinforced Leather Bracers
-						3893,    -- Reinforced Leather Cap
-						2475,    -- Reinforced Leather Gloves
-						2472,    -- Reinforced Leather Pants
-						2470,    -- Reinforced Leather Vest
-						3593,    -- Russet Belt
-						2432,    -- Russet Boots
-						3594,    -- Russet Bracers
-						2434,    -- Russet Gloves
-						3889,    -- Russet Hat
-						2431,    -- Russet Pants
-						2429,    -- Russet Vest
-						2464,    -- Studded Belt
-						2467,    -- Studded Boots
-						2468,    -- Studded Bracers
-						2463,    -- Studded Doublet
-						2469,    -- Studded Gloves
-						3890,    -- Studded Hat
-						2465,    -- Studded Pants
+						2142,	-- Cuirboulli Belt
+						2143,	-- Cuirboulli Boots
+						2144,	-- Cuirboulli Bracers
+						2145,	-- Cuirboulli Gloves
+						2146,	-- Cuirboulli Pants
+						2141,	-- Cuirboulli Vest
+						2435,	-- Embroidered Armor
+						3587,	-- Embroidered Belt
+						2438,	-- Embroidered Boots
+						3588,	-- Embroidered Bracers
+						2440,	-- Embroidered Gloves
+						3892,	-- Embroidered Hat
+						2437,	-- Embroidered Pants
+						2160,	-- Padded Armor
+						3591,	-- Padded Belt
+						2156,	-- Padded Boots
+						3592,	-- Padded Bracers
+						2158,	-- Padded Gloves
+						2159,	-- Padded Pants
+						2471,	-- Reinforced Leather Belt
+						2473,	-- Reinforced Leather Boots
+						2474,	-- Reinforced Leather Bracers
+						3893,	-- Reinforced Leather Cap
+						2475,	-- Reinforced Leather Gloves
+						2472,	-- Reinforced Leather Pants
+						2470,	-- Reinforced Leather Vest
+						3593,	-- Russet Belt
+						2432,	-- Russet Boots
+						3594,	-- Russet Bracers
+						2434,	-- Russet Gloves
+						3889,	-- Russet Hat
+						2431,	-- Russet Pants
+						2429,	-- Russet Vest
+						2464,	-- Studded Belt
+						2467,	-- Studded Boots
+						2468,	-- Studded Bracers
+						2463,	-- Studded Doublet
+						2469,	-- Studded Gloves
+						3890,	-- Studded Hat
+						2465,	-- Studded Pants
 					}},
 					["groups"] = {
 						i(12256, {	-- Cindercloth Leggings
@@ -5253,13 +5253,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 49.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(3024),    -- Bkp 2700 Enforcer
-						i(3025),    -- Bkp 42 Ultra
-						i(3027),    -- Heavy Recurve Bow
-						i(2511),    -- Hunter's Boomstick
-						i(3023),    -- Large Bore Blunderbuss
-						i(2509),    -- Ornate Blunderbuss
-						i(3026),    -- Reinforced Bow
+						i(3024),	-- Bkp 2700 Enforcer
+						i(3025),	-- Bkp 42 Ultra
+						i(3027),	-- Heavy Recurve Bow
+						i(2511),	-- Hunter's Boomstick
+						i(3023),	-- Large Bore Blunderbuss
+						i(2509),	-- Ornate Blunderbuss
+						i(3026),	-- Reinforced Bow
 						-- #if AFTER CATA
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -5299,33 +5299,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.8, 63.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						2520,    -- Broadsword
-						1198,    -- Claymore
-						851,    -- Cutlass
-						922,    -- Dacian Falx
-						2024,    -- Espadon
-						2528,    -- Falchion
-						2207,    -- Jambiya
-						2209,    -- Kris
-						923,    -- Longsword
-						2526,    -- Main Gauche
-						2208,    -- Poniad
-						2534,    -- Rondel
-						2027,    -- Scimitar
+						2520,	-- Broadsword
+						1198,	-- Claymore
+						851,	-- Cutlass
+						922,	-- Dacian Falx
+						2024,	-- Espadon
+						2528,	-- Falchion
+						2207,	-- Jambiya
+						2209,	-- Kris
+						923,	-- Longsword
+						2526,	-- Main Gauche
+						2208,	-- Poniad
+						2534,	-- Rondel
+						2027,	-- Scimitar
 					}},
 				}),
 				n(5816, {	-- Katis
 					["coord"] = { 45.8, 57.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5239),    -- Blackbone Wand
-						i(5210),    -- Burning Wand
-						i(5236),    -- Combustible Wand
-						i(5211),    -- Dusk Wand
-						i(5209),    -- Gloom Wand
-						i(5347),    -- Pestilent Wand
-						i(5238),    -- Pitchwood Wand
-						i(5208),    -- Smoldering Wand
+						i(5239),	-- Blackbone Wand
+						i(5210),	-- Burning Wand
+						i(5236),	-- Combustible Wand
+						i(5211),	-- Dusk Wand
+						i(5209),	-- Gloom Wand
+						i(5347),	-- Pestilent Wand
+						i(5238),	-- Pitchwood Wand
+						i(5208),	-- Smoldering Wand
 					},
 				}),
 				n(168623, {	-- Kazak Darkscream <Warlock Trainer>
@@ -5395,11 +5395,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.2, 37.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						1197,    -- Giant Mace
-						2030,    -- Gnarled Staff
-						928,    -- Long Staff
-						852,    -- Mace
-						854,    -- Quarter Staff
+						1197,	-- Giant Mace
+						2030,	-- Gnarled Staff
+						928,	-- Long Staff
+						852,	-- Mace
+						854,	-- Quarter Staff
 					}},
 					["groups"] = {
 						i(925),		-- Flail
@@ -6003,7 +6003,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 7.3.5.25692" },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
 					},
 					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
@@ -6031,7 +6031,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984", "removed 7.3.5.25961" },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
 					},
 					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
@@ -6062,34 +6062,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.0, 55.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
-						i(2371),    -- Battered Leather Belt
-						i(2373),    -- Battered Leather Boots
-						i(2374),    -- Battered Leather Bracers
-						i(2375),    -- Battered Leather Gloves
-						i(2370),    -- Battered Leather Harness
-						i(2372),    -- Battered Leather Pants
-						i(236),    -- Cured Leather Armor
-						i(1849),    -- Cured Leather Belt
-						i(238),    -- Cured Leather Boots
-						i(1850),    -- Cured Leather Bracers
-						i(239),    -- Cured Leather Gloves
-						i(237),    -- Cured Leather Pants
-						i(20896),    -- Lookouts Pants
-						i(20898),    -- Lookouts Shoes
-						i(58238),    -- Lookouts Vest
-						i(6124),    -- Novices Pants
-						i(6139),    -- Novices Robe
-						i(153),    -- Primitive Kilt
-						i(6135),    -- Primitive Kilt
-						i(1843),    -- Tanned Leather Belt
-						i(843),    -- Tanned Leather Boots
-						i(1844),    -- Tanned Leather Bracers
-						i(844),    -- Tanned Leather Gloves
-						i(846),    -- Tanned Leather Jerkin
-						i(845),    -- Tanned Leather Pants
-						i(121),    -- Thug Boots
-						i(120),    -- Thug Pants
-						i(58246),    -- Thug Vest
+						i(2371),	-- Battered Leather Belt
+						i(2373),	-- Battered Leather Boots
+						i(2374),	-- Battered Leather Bracers
+						i(2375),	-- Battered Leather Gloves
+						i(2370),	-- Battered Leather Harness
+						i(2372),	-- Battered Leather Pants
+						i(236),	-- Cured Leather Armor
+						i(1849),	-- Cured Leather Belt
+						i(238),	-- Cured Leather Boots
+						i(1850),	-- Cured Leather Bracers
+						i(239),	-- Cured Leather Gloves
+						i(237),	-- Cured Leather Pants
+						i(20896),	-- Lookouts Pants
+						i(20898),	-- Lookouts Shoes
+						i(58238),	-- Lookouts Vest
+						i(6124),	-- Novices Pants
+						i(6139),	-- Novices Robe
+						i(153),	-- Primitive Kilt
+						i(6135),	-- Primitive Kilt
+						i(1843),	-- Tanned Leather Belt
+						i(843),	-- Tanned Leather Boots
+						i(1844),	-- Tanned Leather Bracers
+						i(844),	-- Tanned Leather Gloves
+						i(846),	-- Tanned Leather Jerkin
+						i(845),	-- Tanned Leather Pants
+						i(121),	-- Thug Boots
+						i(120),	-- Thug Pants
+						i(58246),	-- Thug Vest
 					}),
 				}),
 				-- #endif
@@ -6097,7 +6097,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.8, 55.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						79740,    -- Plain Wooden Staff
+						79740,	-- Plain Wooden Staff
 					}},
 				}),
 				n(3330, {	-- Muragus
@@ -6113,22 +6113,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						2451,    -- Crested Heater Shield
-						62260,    -- Grunts Chain Belt
-						62261,    -- Grunts Chain Boots
-						62262,    -- Grunts Chain Bracers
-						62266,    -- Grunts Chain Circlet
-						62263,    -- Grunts Chain Gloves
-						62264,    -- Grunts Chain Leggings
-						62265,    -- Grunts Chain Vest
-						62253,    -- Grunts Plate Armor
-						62254,    -- Grunts Plate Belt
-						62255,    -- Grunts Plate Boots
-						62256,    -- Grunts Plate Bracers
-						62257,    -- Grunts Plate Gloves
-						62259,    -- Grunts Plate Helm
-						62258,    -- Grunts Plate Leggings
-						17190,    -- Ornate Buckler
+						2451,	-- Crested Heater Shield
+						62260,	-- Grunts Chain Belt
+						62261,	-- Grunts Chain Boots
+						62262,	-- Grunts Chain Bracers
+						62266,	-- Grunts Chain Circlet
+						62263,	-- Grunts Chain Gloves
+						62264,	-- Grunts Chain Leggings
+						62265,	-- Grunts Chain Vest
+						62253,	-- Grunts Plate Armor
+						62254,	-- Grunts Plate Belt
+						62255,	-- Grunts Plate Boots
+						62256,	-- Grunts Plate Bracers
+						62257,	-- Grunts Plate Gloves
+						62259,	-- Grunts Plate Helm
+						62258,	-- Grunts Plate Leggings
+						17190,	-- Ornate Buckler
 					}},
 					["groups"] = {
 						-- #if AFTER 10.0.5
@@ -6221,7 +6221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["timeline"] = { "added 4.0.3." },
 					["sym"] = {{"select","itemID",
-						6365,    -- Strong Fishing Pole
+						6365,	-- Strong Fishing Pole
 					}},
 				}),
 				n(3317, {	-- Ollanus <Cloth Armor Merchant>
@@ -6350,7 +6350,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.0, 77.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
 					["sym"] = {
-						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -6429,29 +6429,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.6, 77.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						847,    -- Chainmail Armor
-						1845,    -- Chainmail Belt
-						849,    -- Chainmail Boots
-						1846,    -- Chainmail Bracers
-						850,    -- Chainmail Gloves
-						848,    -- Chainmail Pants
-						2445,    -- Large Metal Shield
-						1853,    -- Scalemail Belt
-						287,    -- Scalemail Boots
-						1852,    -- Scalemail Bracers
-						718,    -- Scalemail Gloves
-						286,    -- Scalemail Pants
-						285,    -- Scalemail Vest
+						847,	-- Chainmail Armor
+						1845,	-- Chainmail Belt
+						849,	-- Chainmail Boots
+						1846,	-- Chainmail Bracers
+						850,	-- Chainmail Gloves
+						848,	-- Chainmail Pants
+						2445,	-- Large Metal Shield
+						1853,	-- Scalemail Belt
+						287,	-- Scalemail Boots
+						1852,	-- Scalemail Bracers
+						718,	-- Scalemail Gloves
+						286,	-- Scalemail Pants
+						285,	-- Scalemail Vest
 					}},
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(17187),	-- Banded Buckler
 						i(2445),	-- Large Metal Shield
-						i(2398),    -- Light Chain Armor
-						i(2399),    -- Light Chain Belt
-						i(2401),    -- Light Chain Boots
-						i(2402),    -- Light Chain Bracers
-						i(2403),    -- Light Chain Gloves
-						i(2400),    -- Light Chain Leggings
+						i(2398),	-- Light Chain Armor
+						i(2399),	-- Light Chain Belt
+						i(2401),	-- Light Chain Boots
+						i(2402),	-- Light Chain Bracers
+						i(2403),	-- Light Chain Gloves
+						i(2400),	-- Light Chain Leggings
 						i(17185),	-- Round Buckler
 						i(17188),	-- Ringed Buckler
 						i(1202),	-- Wall Shield
@@ -7086,56 +7086,56 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(2617),    -- Burning Robes
-						i(2615),    -- Chromatic Robe
-						i(2142),    -- Cuirboulli Belt
-						i(2143),    -- Cuirboulli Boots
-						i(2144),    -- Cuirboulli Bracers
-						i(2145),    -- Cuirboulli Gloves
-						i(2146),    -- Cuirboulli Pants
-						i(2141),    -- Cuirboulli Vest
-						i(2613),    -- Double Stitched Robes
-						i(2435),    -- Embroidered Armor
-						i(3587),    -- Embroidered Belt
-						i(2438),    -- Embroidered Boots
-						i(3588),    -- Embroidered Bracers
-						i(2440),    -- Embroidered Gloves
-						i(3892),    -- Embroidered Hat
-						i(2437),    -- Embroidered Pants
-						i(2160),    -- Padded Armor
-						i(3591),    -- Padded Belt
-						i(2156),    -- Padded Boots
-						i(3592),    -- Padded Bracers
-						i(2158),    -- Padded Gloves
-						i(2159),    -- Padded Pants
+						i(2617),	-- Burning Robes
+						i(2615),	-- Chromatic Robe
+						i(2142),	-- Cuirboulli Belt
+						i(2143),	-- Cuirboulli Boots
+						i(2144),	-- Cuirboulli Bracers
+						i(2145),	-- Cuirboulli Gloves
+						i(2146),	-- Cuirboulli Pants
+						i(2141),	-- Cuirboulli Vest
+						i(2613),	-- Double Stitched Robes
+						i(2435),	-- Embroidered Armor
+						i(3587),	-- Embroidered Belt
+						i(2438),	-- Embroidered Boots
+						i(3588),	-- Embroidered Bracers
+						i(2440),	-- Embroidered Gloves
+						i(3892),	-- Embroidered Hat
+						i(2437),	-- Embroidered Pants
+						i(2160),	-- Padded Armor
+						i(3591),	-- Padded Belt
+						i(2156),	-- Padded Boots
+						i(3592),	-- Padded Bracers
+						i(2158),	-- Padded Gloves
+						i(2159),	-- Padded Pants
 						i(12255, {	-- Pale Leggings
 							["isLimited"] = true,
 						}),
-						i(2612),    -- Plain Robe
-						i(2471),    -- Reinforced Leather Belt
-						i(2473),    -- Reinforced Leather Boots
-						i(2474),    -- Reinforced Leather Bracers
-						i(3893),    -- Reinforced Leather Cap
-						i(2475),    -- Reinforced Leather Gloves
-						i(2472),    -- Reinforced Leather Pants
-						i(2470),    -- Reinforced Leather Vest
-						i(2614),    -- Robe Of Apprenticeship
-						i(3593),    -- Russet Belt
-						i(2432),    -- Russet Boots
-						i(3594),    -- Russet Bracers
-						i(2434),    -- Russet Gloves
-						i(3889),    -- Russet Hat
-						i(2431),    -- Russet Pants
-						i(2429),    -- Russet Vest
-						i(2616),    -- Shimmering Silk Robes
-						i(2618),    -- Silver Dress Robes
-						i(2464),    -- Studded Belt
-						i(2467),    -- Studded Boots
-						i(2468),    -- Studded Bracers
-						i(2463),    -- Studded Doublet
-						i(2469),    -- Studded Gloves
-						i(3890),    -- Studded Hat
-						i(2465),    -- Studded Pants
+						i(2612),	-- Plain Robe
+						i(2471),	-- Reinforced Leather Belt
+						i(2473),	-- Reinforced Leather Boots
+						i(2474),	-- Reinforced Leather Bracers
+						i(3893),	-- Reinforced Leather Cap
+						i(2475),	-- Reinforced Leather Gloves
+						i(2472),	-- Reinforced Leather Pants
+						i(2470),	-- Reinforced Leather Vest
+						i(2614),	-- Robe Of Apprenticeship
+						i(3593),	-- Russet Belt
+						i(2432),	-- Russet Boots
+						i(3594),	-- Russet Bracers
+						i(2434),	-- Russet Gloves
+						i(3889),	-- Russet Hat
+						i(2431),	-- Russet Pants
+						i(2429),	-- Russet Vest
+						i(2616),	-- Shimmering Silk Robes
+						i(2618),	-- Silver Dress Robes
+						i(2464),	-- Studded Belt
+						i(2467),	-- Studded Boots
+						i(2468),	-- Studded Bracers
+						i(2463),	-- Studded Doublet
+						i(2469),	-- Studded Gloves
+						i(3890),	-- Studded Hat
+						i(2465),	-- Studded Pants
 					},
 				}),
 				-- #if AFTER CATA
@@ -7143,57 +7143,57 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 75.8, 35.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(2419),    -- Augmented Chain Belt
-						i(2420),    -- Augmented Chain Boots
-						i(2421),    -- Augmented Chain Bracers
-						i(2422),    -- Augmented Chain Gloves
-						i(3891),    -- Augmented Chain Helm
-						i(2418),    -- Augmented Chain Leggings
-						i(2417),    -- Augmented Chain Vest
-						i(847),   -- Chainmail Armor
-						i(1845),    -- Chainmail Belt
-						i(849),   -- Chainmail Boots
-						i(1846),    -- Chainmail Bracers
-						i(850),   -- Chainmail Gloves
-						i(848),   -- Chainmail Pants
-						i(2451),    -- Crested Heater Shield
-						i(62260),    -- Grunts Chain Belt
-						i(62261),    -- Grunts Chain Boots
-						i(62262),    -- Grunts Chain Bracers
-						i(62266),    -- Grunts Chain Circlet
-						i(62263),    -- Grunts Chain Gloves
-						i(62264), 	  -- Grunts Chain Leggings
-						i(62265),    -- Grunts Chain Vest
-						i(62253),    -- Grunts Plate Armor
-						i(62255),    -- Grunts Plate Belt
-						i(62255),    -- Grunts Plate Boots
-						i(62256),    -- Grunts Plate Bracers
-						i(62257),    -- Grunts Plate Gloves
-						i(62259),    -- Grunts Plate Helm
-						i(62258),    -- Grunts Plate Leggings
-						i(2448),    -- Heavy Pavise
-						i(2446),    -- Kite Shield
-						i(2392),    -- Light Mail Armor
-						i(2393),    -- Light Mail Belt
-						i(2395),    -- Light Mail Boots
-						i(2396),    -- Light Mail Bracers
-						i(2397),    -- Light Mail Gloves
-						i(2394),    -- Light Mail Leggings
-						i(17189),    -- Metal Buckler
-						i(17190),    -- Ornate Buckler
-						i(2148),    -- Polished Scale Belt
-						i(2149),    -- Polished Scale Boots
-						i(2150),    -- Polished Scale Bracers
-						i(2151),    -- Polished Scale Gloves
-						i(2152),    -- Polished Scale Leggings
-						i(2153),    -- Polished Scale Vest
-						i(17192),    -- Reinforced Targe
-						i(1853),    -- Scalemail Belt
-						i(287),   -- Scalemail Boots
-						i(1852),    -- Scalemail Bracers
-						i(718),   -- Scalemail Gloves
-						i(286),   -- Scalemail Pants
-						i(285),   -- Scalemail Vest
+						i(2419),	-- Augmented Chain Belt
+						i(2420),	-- Augmented Chain Boots
+						i(2421),	-- Augmented Chain Bracers
+						i(2422),	-- Augmented Chain Gloves
+						i(3891),	-- Augmented Chain Helm
+						i(2418),	-- Augmented Chain Leggings
+						i(2417),	-- Augmented Chain Vest
+						i(847),	-- Chainmail Armor
+						i(1845),	-- Chainmail Belt
+						i(849),	-- Chainmail Boots
+						i(1846),	-- Chainmail Bracers
+						i(850),	-- Chainmail Gloves
+						i(848),	-- Chainmail Pants
+						i(2451),	-- Crested Heater Shield
+						i(62260),	-- Grunts Chain Belt
+						i(62261),	-- Grunts Chain Boots
+						i(62262),	-- Grunts Chain Bracers
+						i(62266),	-- Grunts Chain Circlet
+						i(62263),	-- Grunts Chain Gloves
+						i(62264),	-- Grunts Chain Leggings
+						i(62265),	-- Grunts Chain Vest
+						i(62253),	-- Grunts Plate Armor
+						i(62255),	-- Grunts Plate Belt
+						i(62255),	-- Grunts Plate Boots
+						i(62256),	-- Grunts Plate Bracers
+						i(62257),	-- Grunts Plate Gloves
+						i(62259),	-- Grunts Plate Helm
+						i(62258),	-- Grunts Plate Leggings
+						i(2448),	-- Heavy Pavise
+						i(2446),	-- Kite Shield
+						i(2392),	-- Light Mail Armor
+						i(2393),	-- Light Mail Belt
+						i(2395),	-- Light Mail Boots
+						i(2396),	-- Light Mail Bracers
+						i(2397),	-- Light Mail Gloves
+						i(2394),	-- Light Mail Leggings
+						i(17189),	-- Metal Buckler
+						i(17190),	-- Ornate Buckler
+						i(2148),	-- Polished Scale Belt
+						i(2149),	-- Polished Scale Boots
+						i(2150),	-- Polished Scale Bracers
+						i(2151),	-- Polished Scale Gloves
+						i(2152),	-- Polished Scale Leggings
+						i(2153),	-- Polished Scale Vest
+						i(17192),	-- Reinforced Targe
+						i(1853),	-- Scalemail Belt
+						i(287),	-- Scalemail Boots
+						i(1852),	-- Scalemail Bracers
+						i(718),	-- Scalemail Gloves
+						i(286),	-- Scalemail Pants
+						i(285),	-- Scalemail Vest
 					},
 				}),
 				-- #endif
@@ -7283,9 +7283,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						1198,    -- Claymore
-						851,    -- Cutlass
-						2207,    -- Jambiya
+						1198,	-- Claymore
+						851,	-- Cutlass
+						2207,	-- Jambiya
 					}},
 					["groups"] = {
 						i(1194),	-- Bastard Sword
@@ -7362,19 +7362,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 34.6, 63.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						4565,    -- Simple Dagger
+						4565,	-- Simple Dagger
 					}},
 				}),
 				n(3409, {	-- Zendo'jian <Weapon Vendor>
 					["coord"] = { 75.0, 36.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						853,    -- Hatchet
-						2507,    -- Laminated Recurve Bow
-						854,    -- Quarter Staff
-						3026,    -- Reinforced Bow
-						1196,    -- Tabar
-						2495,    -- Walking Stick
+						853,	-- Hatchet
+						2507,	-- Laminated Recurve Bow
+						854,	-- Quarter Staff
+						3026,	-- Reinforced Bow
+						1196,	-- Tabar
+						2495,	-- Walking Stick
 					}},
 					["groups"] = {
 						i(926),		-- Battle Axe
@@ -7390,7 +7390,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.2, 83.2, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
 					["sym"] = {
-						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {

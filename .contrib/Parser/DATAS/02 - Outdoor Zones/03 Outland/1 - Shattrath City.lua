@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 25),
 						["groups"] = {
-							objective(1, {	-- 0/6 	Multiphase Readings Taken
+							objective(1, {	-- 0/6 Multiphase Readings Taken
 								["provider"] = { "i", 35233 },	-- Multiphase Spectrographic Goggles
 								["coord"] = { 36, 66, NAGRAND },
 							}),
@@ -1953,61 +1953,61 @@ root(ROOTS.Zones, {
 						["coord"] = { 50.8, 42.4, SHATTRATH_CITY },
 						["minReputation"] = { 935, NEUTRAL },	-- The Sha'tar, Neutral.
 						["groups"] = {
-							applyclassicphase(TBC_PHASE_FOUR, i(33585)), 	-- Achromic Trousers of the Naaru
-							applyclassicphase(TBC_PHASE_FOUR, i(33810)), 	-- Amani Mask of Death
-							applyclassicphase(TBC_PHASE_FOUR, i(33578)), 	-- Armwraps of the Kaldorei Protector
-							applyclassicphase(TBC_PHASE_ONE, i(29266)), 	-- Azure-Shield of Coldarra
-							applyclassicphase(TBC_PHASE_ONE, i(29373)), 	-- Band of Halos
+							applyclassicphase(TBC_PHASE_FOUR, i(33585)),	-- Achromic Trousers of the Naaru
+							applyclassicphase(TBC_PHASE_FOUR, i(33810)),	-- Amani Mask of Death
+							applyclassicphase(TBC_PHASE_FOUR, i(33578)),	-- Armwraps of the Kaldorei Protector
+							applyclassicphase(TBC_PHASE_ONE, i(29266)),	-- Azure-Shield of Coldarra
+							applyclassicphase(TBC_PHASE_ONE, i(29373)),	-- Band of Halos
 							applyclassicphase(TBC_PHASE_FOUR, i(33580)),	-- Band of the Swift Paw
-							applyclassicphase(TBC_PHASE_FOUR, i(35326)), 	-- Battlemaster's Alacrity
-							applyclassicphase(TBC_PHASE_FOUR, i(34049)), 	-- Battlemaster's Audacity
-							applyclassicphase(TBC_PHASE_FOUR, i(34163)), 	-- Battlemaster's Cruelty
-							applyclassicphase(TBC_PHASE_FOUR, i(34162)), 	-- Battlemaster's Depravity
-							applyclassicphase(TBC_PHASE_FOUR, i(33832)), 	-- Battlemaster's Determination
-							applyclassicphase(TBC_PHASE_FOUR, i(34050)), 	-- Battlemaster's Perseverance
-							applyclassicphase(TBC_PHASE_ONE, i(29375)), 	-- Bishop's Cloak
-							applyclassicphase(TBC_PHASE_FOUR, i(33566)), 	-- Blessed Elunite Coverings
-							applyclassicphase(TBC_PHASE_ONE, i(29382)), 	-- Blood Knight War Cloak
-							applyclassicphase(TBC_PHASE_ONE, i(29383)), 	-- Bloodlust Brooch
-							applyclassicphase(TBC_PHASE_FOUR, i(33501)), 	-- Bloodthirster's Wargreaves
-							applyclassicphase(TBC_PHASE_FOUR, i(33517)), 	-- Bonefist Gauntlets
-							applyclassicphase(TBC_PHASE_FOUR, i(33516)), 	-- Bracers of the Ancient Phalanx
-							applyclassicphase(TBC_PHASE_FOUR, i(33296)), 	-- Brooch of Deftness
-							applyclassicphase(TBC_PHASE_FOUR, i(33192)), 	-- Carved Witch Doctor's Stick
-							applyclassicphase(TBC_PHASE_FOUR, i(33331)), 	-- Chain of Unleashed Rage
-							applyclassicphase(TBC_PHASE_FOUR, i(33522)), 	-- Chestguard of the Stoic Guardian
+							applyclassicphase(TBC_PHASE_FOUR, i(35326)),	-- Battlemaster's Alacrity
+							applyclassicphase(TBC_PHASE_FOUR, i(34049)),	-- Battlemaster's Audacity
+							applyclassicphase(TBC_PHASE_FOUR, i(34163)),	-- Battlemaster's Cruelty
+							applyclassicphase(TBC_PHASE_FOUR, i(34162)),	-- Battlemaster's Depravity
+							applyclassicphase(TBC_PHASE_FOUR, i(33832)),	-- Battlemaster's Determination
+							applyclassicphase(TBC_PHASE_FOUR, i(34050)),	-- Battlemaster's Perseverance
+							applyclassicphase(TBC_PHASE_ONE, i(29375)),	-- Bishop's Cloak
+							applyclassicphase(TBC_PHASE_FOUR, i(33566)),	-- Blessed Elunite Coverings
+							applyclassicphase(TBC_PHASE_ONE, i(29382)),	-- Blood Knight War Cloak
+							applyclassicphase(TBC_PHASE_ONE, i(29383)),	-- Bloodlust Brooch
+							applyclassicphase(TBC_PHASE_FOUR, i(33501)),	-- Bloodthirster's Wargreaves
+							applyclassicphase(TBC_PHASE_FOUR, i(33517)),	-- Bonefist Gauntlets
+							applyclassicphase(TBC_PHASE_FOUR, i(33516)),	-- Bracers of the Ancient Phalanx
+							applyclassicphase(TBC_PHASE_FOUR, i(33296)),	-- Brooch of Deftness
+							applyclassicphase(TBC_PHASE_FOUR, i(33192)),	-- Carved Witch Doctor's Stick
+							applyclassicphase(TBC_PHASE_FOUR, i(33331)),	-- Chain of Unleashed Rage
+							applyclassicphase(TBC_PHASE_FOUR, i(33522)),	-- Chestguard of the Stoic Guardian
 							applyclassicphase(TBC_PHASE_ONE, i(29381)),	-- Choker of Vile Intent
 							applyclassicphase(TBC_PHASE_FOUR, i(35321)),	-- Cloak of Arcane Alacrity
-							applyclassicphase(TBC_PHASE_FOUR, i(33304)), 	-- Cloak of Subjugated Power
-							applyclassicphase(TBC_PHASE_FOUR, i(35324)), 	-- Cloak of Swift Reprieve
-							applyclassicphase(TBC_PHASE_ONE, i(32088)), 	-- Cowl of Beastly Rage
-							applyclassicphase(TBC_PHASE_ONE, i(32090)), 	-- Cowl of Naaru Blessings
-							applyclassicphase(TBC_PHASE_FOUR, i(33484)), 	-- Dory's Embrace
-							applyclassicphase(TBC_PHASE_FOUR, i(33535)), 	-- Earthquake Bracers
-							applyclassicphase(TBC_PHASE_ONE, i(29376)), 	-- Essence of the Martyr
-							applyclassicphase(TBC_PHASE_FOUR, i(33513)), 	-- Eternium Rage-Shackles
+							applyclassicphase(TBC_PHASE_FOUR, i(33304)),	-- Cloak of Subjugated Power
+							applyclassicphase(TBC_PHASE_FOUR, i(35324)),	-- Cloak of Swift Reprieve
+							applyclassicphase(TBC_PHASE_ONE, i(32088)),	-- Cowl of Beastly Rage
+							applyclassicphase(TBC_PHASE_ONE, i(32090)),	-- Cowl of Naaru Blessings
+							applyclassicphase(TBC_PHASE_FOUR, i(33484)),	-- Dory's Embrace
+							applyclassicphase(TBC_PHASE_FOUR, i(33535)),	-- Earthquake Bracers
+							applyclassicphase(TBC_PHASE_ONE, i(29376)),	-- Essence of the Martyr
+							applyclassicphase(TBC_PHASE_FOUR, i(33513)),	-- Eternium Rage-Shackles
 							applyclassicphase(TBC_PHASE_ONE, i(29390, {	-- Everbloom Idol
 								["timeline"] = { "removed 5.0.4" },
 							})),
-							applyclassicphase(TBC_PHASE_ONE, i(32083)), 	-- Faceguard of Domination
-							applyclassicphase(TBC_PHASE_ONE, i(29385)), 	-- Farstrider Defender's Cloak
-							applyclassicphase(TBC_PHASE_FOUR, i(33334)), 	-- Fetish of the Primal Gods
-							applyclassicphase(TBC_PHASE_ONE, i(29270)), 	-- Flametongue Seal
-							applyclassicphase(TBC_PHASE_FOUR, i(33582)), 	-- Footwraps of Wild Encroachment
-							applyclassicphase(TBC_PHASE_FOUR, i(33512)), 	-- Furious Deathgrips
+							applyclassicphase(TBC_PHASE_ONE, i(32083)),	-- Faceguard of Domination
+							applyclassicphase(TBC_PHASE_ONE, i(29385)),	-- Farstrider Defender's Cloak
+							applyclassicphase(TBC_PHASE_FOUR, i(33334)),	-- Fetish of the Primal Gods
+							applyclassicphase(TBC_PHASE_ONE, i(29270)),	-- Flametongue Seal
+							applyclassicphase(TBC_PHASE_FOUR, i(33582)),	-- Footwraps of Wild Encroachment
+							applyclassicphase(TBC_PHASE_FOUR, i(33512)),	-- Furious Deathgrips
 							applyclassicphase(TBC_PHASE_FOUR, i(33557)),	-- Gargon's Bracers of Peaceful Slumber
 							applyclassicphase(TBC_PHASE_FOUR, i(33528)),	-- Gauntlets of Sniping
-							applyclassicphase(TBC_PHASE_FOUR, i(33524)), 	-- Girdle of the Protector
-							applyclassicphase(TBC_PHASE_FOUR, i(33532)), 	-- Gleaming Earthen Bracers
-							applyclassicphase(TBC_PHASE_FOUR, i(33287)), 	-- Gnarled Ironwood Pauldrons
-							applyclassicphase(TBC_PHASE_ONE, i(29387)), 	-- Gnomeregan Auto-Dodger 600
-							applyclassicphase(TBC_PHASE_FOUR, i(33974)), 	-- Grasp of the Moonkin
-							applyclassicphase(TBC_PHASE_FOUR, i(33534)), 	-- Grips of Nature's Wrath
-							applyclassicphase(TBC_PHASE_FOUR, i(33519)), 	-- Handguards of the Templar
-							applyclassicphase(TBC_PHASE_FOUR, i(33965)), 	-- Hauberk of the Furious Elements
-							applyclassicphase(TBC_PHASE_ONE, i(32084)), 	-- Helmet of the Steadfast Champion
-							applyclassicphase(TBC_PHASE_FOUR, i(33518)), 	-- High Justicar's Legplates
-							applyclassicphase(TBC_PHASE_ONE, i(29370)), 	-- Icon of the Silver Crescent
+							applyclassicphase(TBC_PHASE_FOUR, i(33524)),	-- Girdle of the Protector
+							applyclassicphase(TBC_PHASE_FOUR, i(33532)),	-- Gleaming Earthen Bracers
+							applyclassicphase(TBC_PHASE_FOUR, i(33287)),	-- Gnarled Ironwood Pauldrons
+							applyclassicphase(TBC_PHASE_ONE, i(29387)),	-- Gnomeregan Auto-Dodger 600
+							applyclassicphase(TBC_PHASE_FOUR, i(33974)),	-- Grasp of the Moonkin
+							applyclassicphase(TBC_PHASE_FOUR, i(33534)),	-- Grips of Nature's Wrath
+							applyclassicphase(TBC_PHASE_FOUR, i(33519)),	-- Handguards of the Templar
+							applyclassicphase(TBC_PHASE_FOUR, i(33965)),	-- Hauberk of the Furious Elements
+							applyclassicphase(TBC_PHASE_ONE, i(32084)),	-- Helmet of the Steadfast Champion
+							applyclassicphase(TBC_PHASE_FOUR, i(33518)),	-- High Justicar's Legplates
+							applyclassicphase(TBC_PHASE_ONE, i(29370)),	-- Icon of the Silver Crescent
 							applyclassicphase(TBC_PHASE_FOUR, i(33508, {	-- Idol of Budding Life
 								["timeline"] = { "removed 5.0.4" },
 							})),
@@ -2017,26 +2017,26 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_FOUR, i(33510, {	-- Idol of the Unseen Moon
 								["timeline"] = { "removed 5.0.4" },
 							})),
-							applyclassicphase(TBC_PHASE_FOUR, i(33207)), 	-- Implacable Guardian Sabatons
-							applyclassicphase(TBC_PHASE_ONE, i(30770)), 	-- Inferno Forged Boots
-							applyclassicphase(TBC_PHASE_ONE, i(30774)), 	-- Inferno Forged Gloves
-							applyclassicphase(TBC_PHASE_ONE, i(30773)), 	-- Inferno Forged Hauberk
-							applyclassicphase(TBC_PHASE_ONE, i(30772)), 	-- Inferno Forged Leggings
-							applyclassicphase(TBC_PHASE_ONE, i(30779)), 	-- Inferno Hardened Boots
-							applyclassicphase(TBC_PHASE_ONE, i(30776)), 	-- Inferno Hardened Chestguard
-							applyclassicphase(TBC_PHASE_ONE, i(30780)), 	-- Inferno Hardened Gloves
-							applyclassicphase(TBC_PHASE_ONE, i(30778)), 	-- Inferno Hardened Leggings
-							applyclassicphase(TBC_PHASE_ONE, i(30768)), 	-- Inferno Tempered Boots
-							applyclassicphase(TBC_PHASE_ONE, i(30769)), 	-- Inferno Tempered Chestguard
-							applyclassicphase(TBC_PHASE_ONE, i(30767)), 	-- Inferno Tempered Gauntlets
-							applyclassicphase(TBC_PHASE_ONE, i(30766)), 	-- Inferno Tempered Leggings
-							applyclassicphase(TBC_PHASE_ONE, i(30763)), 	-- Infernoweave Boots
-							applyclassicphase(TBC_PHASE_ONE, i(30764)), 	-- Infernoweave Gloves
-							applyclassicphase(TBC_PHASE_ONE, i(30761)), 	-- Infernoweave Leggings
-							applyclassicphase(TBC_PHASE_ONE, i(30762)), 	-- Infernoweave Robe
-							applyclassicphase(TBC_PHASE_FOUR, i(33279)), 	-- Iron-Tusk Girdle
-							applyclassicphase(TBC_PHASE_ONE, i(29273)), 	-- Khadgar's Knapsack
-							applyclassicphase(TBC_PHASE_FOUR, i(33333)), 	-- Kharmaa's Shroud of Hope
+							applyclassicphase(TBC_PHASE_FOUR, i(33207)),	-- Implacable Guardian Sabatons
+							applyclassicphase(TBC_PHASE_ONE, i(30770)),	-- Inferno Forged Boots
+							applyclassicphase(TBC_PHASE_ONE, i(30774)),	-- Inferno Forged Gloves
+							applyclassicphase(TBC_PHASE_ONE, i(30773)),	-- Inferno Forged Hauberk
+							applyclassicphase(TBC_PHASE_ONE, i(30772)),	-- Inferno Forged Leggings
+							applyclassicphase(TBC_PHASE_ONE, i(30779)),	-- Inferno Hardened Boots
+							applyclassicphase(TBC_PHASE_ONE, i(30776)),	-- Inferno Hardened Chestguard
+							applyclassicphase(TBC_PHASE_ONE, i(30780)),	-- Inferno Hardened Gloves
+							applyclassicphase(TBC_PHASE_ONE, i(30778)),	-- Inferno Hardened Leggings
+							applyclassicphase(TBC_PHASE_ONE, i(30768)),	-- Inferno Tempered Boots
+							applyclassicphase(TBC_PHASE_ONE, i(30769)),	-- Inferno Tempered Chestguard
+							applyclassicphase(TBC_PHASE_ONE, i(30767)),	-- Inferno Tempered Gauntlets
+							applyclassicphase(TBC_PHASE_ONE, i(30766)),	-- Inferno Tempered Leggings
+							applyclassicphase(TBC_PHASE_ONE, i(30763)),	-- Infernoweave Boots
+							applyclassicphase(TBC_PHASE_ONE, i(30764)),	-- Infernoweave Gloves
+							applyclassicphase(TBC_PHASE_ONE, i(30761)),	-- Infernoweave Leggings
+							applyclassicphase(TBC_PHASE_ONE, i(30762)),	-- Infernoweave Robe
+							applyclassicphase(TBC_PHASE_FOUR, i(33279)),	-- Iron-Tusk Girdle
+							applyclassicphase(TBC_PHASE_ONE, i(29273)),	-- Khadgar's Knapsack
+							applyclassicphase(TBC_PHASE_FOUR, i(33333)),	-- Kharmaa's Shroud of Hope
 							applyclassicphase(TBC_PHASE_FOUR, i(33503, {	-- Libram of Divine Judgement
 								["timeline"] = { "removed 5.0.4" },
 							})),
@@ -2049,71 +2049,71 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_ONE, i(29388, {	-- Libram of Repentance
 								["timeline"] = { "removed 5.0.4" },
 							})),
-							applyclassicphase(TBC_PHASE_ONE, i(29267)), 	-- Light-Bearer's Faith Shield
-							applyclassicphase(TBC_PHASE_FOUR, i(33587)), 	-- Light-Blessed Bonds
-							applyclassicphase(TBC_PHASE_FOUR, i(33386)), 	-- Man'kin'do's Belt
-							applyclassicphase(TBC_PHASE_ONE, i(32089)), 	-- Mana-Binders Cowl
-							applyclassicphase(TBC_PHASE_ONE, i(29368)), 	-- Manasurge Pendant
-							applyclassicphase(TBC_PHASE_FOUR, i(33972)), 	-- Mask of Primal Power
-							applyclassicphase(TBC_PHASE_ONE, i(32087)), 	-- Mask of the Deceiver
-							applyclassicphase(TBC_PHASE_FOUR, i(33540)), 	-- Master Assassin Wristwraps
-							applyclassicphase(TBC_PHASE_ONE, i(29268)), 	-- Mazthoril Honor Shield
-							applyclassicphase(TBC_PHASE_FOUR, i(33577)), 	-- Moon-Walkers
-							applyclassicphase(TBC_PHASE_FOUR, i(33530)), 	-- Natural Life Leggings
-							applyclassicphase(TBC_PHASE_ONE, i(29374)), 	-- Necklace of Eternal Hope
-							applyclassicphase(TBC_PHASE_ONE, i(29386)), 	-- Necklace of the Juggernaut
+							applyclassicphase(TBC_PHASE_ONE, i(29267)),	-- Light-Bearer's Faith Shield
+							applyclassicphase(TBC_PHASE_FOUR, i(33587)),	-- Light-Blessed Bonds
+							applyclassicphase(TBC_PHASE_FOUR, i(33386)),	-- Man'kin'do's Belt
+							applyclassicphase(TBC_PHASE_ONE, i(32089)),	-- Mana-Binders Cowl
+							applyclassicphase(TBC_PHASE_ONE, i(29368)),	-- Manasurge Pendant
+							applyclassicphase(TBC_PHASE_FOUR, i(33972)),	-- Mask of Primal Power
+							applyclassicphase(TBC_PHASE_ONE, i(32087)),	-- Mask of the Deceiver
+							applyclassicphase(TBC_PHASE_FOUR, i(33540)),	-- Master Assassin Wristwraps
+							applyclassicphase(TBC_PHASE_ONE, i(29268)),	-- Mazthoril Honor Shield
+							applyclassicphase(TBC_PHASE_FOUR, i(33577)),	-- Moon-Walkers
+							applyclassicphase(TBC_PHASE_FOUR, i(33530)),	-- Natural Life Leggings
+							applyclassicphase(TBC_PHASE_ONE, i(29374)),	-- Necklace of Eternal Hope
+							applyclassicphase(TBC_PHASE_ONE, i(29386)),	-- Necklace of the Juggernaut
 							applyclassicphase(TBC_PHASE_FOUR, i(30183)),	-- Nether Vortex
-							applyclassicphase(TBC_PHASE_FOUR, i(33222)), 	-- Nyn'jah's Tabi Boots
-							applyclassicphase(TBC_PHASE_ONE, i(29272)), 	-- Orb of the Soul-Eater
-							applyclassicphase(TBC_PHASE_FOUR, i(33584)), 	-- Pantaloons of Arcane Annihilation
-							applyclassicphase(TBC_PHASE_FOUR, i(33552)), 	-- Pants of Splendid Recovery
-							applyclassicphase(TBC_PHASE_FOUR, i(33514)), 	-- Pauldrons of Gruesome Fate
-							applyclassicphase(TBC_PHASE_FOUR, i(33970)), 	-- Pauldrons of the Furious Elements
-							applyclassicphase(TBC_PHASE_FOUR, i(33973)), 	-- Pauldrons of Tribal Fury
-							applyclassicphase(TBC_PHASE_FOUR, i(33531)), 	-- Polished Waterscale Gloves
+							applyclassicphase(TBC_PHASE_FOUR, i(33222)),	-- Nyn'jah's Tabi Boots
+							applyclassicphase(TBC_PHASE_ONE, i(29272)),	-- Orb of the Soul-Eater
+							applyclassicphase(TBC_PHASE_FOUR, i(33584)),	-- Pantaloons of Arcane Annihilation
+							applyclassicphase(TBC_PHASE_FOUR, i(33552)),	-- Pants of Splendid Recovery
+							applyclassicphase(TBC_PHASE_FOUR, i(33514)),	-- Pauldrons of Gruesome Fate
+							applyclassicphase(TBC_PHASE_FOUR, i(33970)),	-- Pauldrons of the Furious Elements
+							applyclassicphase(TBC_PHASE_FOUR, i(33973)),	-- Pauldrons of Tribal Fury
+							applyclassicphase(TBC_PHASE_FOUR, i(33531)),	-- Polished Waterscale Gloves
 							applyclassicphase(TBC_PHASE_FOUR, i(23572)),	-- Primal Nether
-							applyclassicphase(TBC_PHASE_ONE, i(29379)), 	-- Ring of Arathi Warlords
+							applyclassicphase(TBC_PHASE_ONE, i(29379)),	-- Ring of Arathi Warlords
 							applyclassicphase(TBC_PHASE_ONE, i(29367)),	-- Ring of Cryptic Dreams
 							applyclassicphase(TBC_PHASE_ONE, i(29384)),	-- Ring of Unyielding Force
-							applyclassicphase(TBC_PHASE_FOUR, i(33588)), 	-- Runed Spell-Cuffs
-							applyclassicphase(TBC_PHASE_FOUR, i(33523)), 	-- Sabatons of the Righteous Defender
-							applyclassicphase(TBC_PHASE_ONE, i(29269)), 	-- Sapphiron's Wing Bone
-							applyclassicphase(TBC_PHASE_ONE, i(29275)), 	-- Searing Sunblade
-							applyclassicphase(TBC_PHASE_FOUR, i(33538)), 	-- Shallow-Grave Trousers
+							applyclassicphase(TBC_PHASE_FOUR, i(33588)),	-- Runed Spell-Cuffs
+							applyclassicphase(TBC_PHASE_FOUR, i(33523)),	-- Sabatons of the Righteous Defender
+							applyclassicphase(TBC_PHASE_ONE, i(29269)),	-- Sapphiron's Wing Bone
+							applyclassicphase(TBC_PHASE_ONE, i(29275)),	-- Searing Sunblade
+							applyclassicphase(TBC_PHASE_FOUR, i(33538)),	-- Shallow-Grave Trousers
 							applyclassicphase(TBC_PHASE_ONE, i(29369)),	-- Shawl of Shifting Probabilities
-							applyclassicphase(TBC_PHASE_FOUR, i(33527)), 	-- Shifting Camouflage Pants
+							applyclassicphase(TBC_PHASE_FOUR, i(33527)),	-- Shifting Camouflage Pants
 							applyclassicphase(TBC_PHASE_FOUR, i(33506, {	-- Skycall Totem
 								["timeline"] = { "removed 5.0.4" },
 							})),
-							applyclassicphase(TBC_PHASE_FOUR, i(33593)), 	-- Slikk's Cloak of Placation
-							applyclassicphase(TBC_PHASE_FOUR, i(33559)), 	-- Starfire Waistband
-							applyclassicphase(TBC_PHASE_FOUR, i(33529)), 	-- Steadying Bracers
+							applyclassicphase(TBC_PHASE_FOUR, i(33593)),	-- Slikk's Cloak of Placation
+							applyclassicphase(TBC_PHASE_FOUR, i(33559)),	-- Starfire Waistband
+							applyclassicphase(TBC_PHASE_FOUR, i(33529)),	-- Steadying Bracers
 							applyclassicphase(TBC_PHASE_FOUR, i(33507, {	-- Stonebreaker's Totem
 								["timeline"] = { "removed 5.0.4" },
 							})),
-							applyclassicphase(TBC_PHASE_ONE, i(32086)), 	-- Storm Master's Helmet
-							applyclassicphase(TBC_PHASE_FOUR, i(33536)), 	-- Stormwrap
-							applyclassicphase(TBC_PHASE_FOUR, i(33586)), 	-- Studious Wraps
-							applyclassicphase(TBC_PHASE_ONE, i(29271)), 	-- Talisman of Kalecgos
-							applyclassicphase(TBC_PHASE_ONE, i(29274)), 	-- Tears of Heaven
+							applyclassicphase(TBC_PHASE_ONE, i(32086)),	-- Storm Master's Helmet
+							applyclassicphase(TBC_PHASE_FOUR, i(33536)),	-- Stormwrap
+							applyclassicphase(TBC_PHASE_FOUR, i(33586)),	-- Studious Wraps
+							applyclassicphase(TBC_PHASE_ONE, i(29271)),	-- Talisman of Kalecgos
+							applyclassicphase(TBC_PHASE_ONE, i(29274)),	-- Tears of Heaven
 							applyclassicphase(TBC_PHASE_FOUR, i(33505, {	-- Totem of Living Water
 								["timeline"] = { "removed 5.0.4" },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(29389, {	-- Totem of the Pulsing Earth
 								["timeline"] = { "removed 5.0.4" },
 							})),
-							applyclassicphase(TBC_PHASE_FOUR, i(33537)), 	-- Treads of Booming Thunder
-							applyclassicphase(TBC_PHASE_FOUR, i(33324)), 	-- Treads of the Life Path
-							applyclassicphase(TBC_PHASE_FOUR, i(33539)), 	-- Trickster's Stickyfingers
-							applyclassicphase(TBC_PHASE_FOUR, i(33515)), 	-- Unwavering Legguards
-							applyclassicphase(TBC_PHASE_FOUR, i(33520)), 	-- Vambraces of the Naaru
-							applyclassicphase(TBC_PHASE_FOUR, i(33579)), 	-- Vestments of Hibernation
-							applyclassicphase(TBC_PHASE_FOUR, i(33325)), 	-- Voodoo Shaker
-							applyclassicphase(TBC_PHASE_FOUR, i(33291)), 	-- Voodoo-Woven Belt
-							applyclassicphase(TBC_PHASE_FOUR, i(33583)), 	-- Waistguard of the Great Beast
-							applyclassicphase(TBC_PHASE_FOUR, i(33280)), 	-- War-Feathered Loop
-							applyclassicphase(TBC_PHASE_ONE, i(32085)), 	-- Warpstalker Helm
-							applyclassicphase(TBC_PHASE_FOUR, i(33589)), 	-- Wristguards of Tranquil Thought
+							applyclassicphase(TBC_PHASE_FOUR, i(33537)),	-- Treads of Booming Thunder
+							applyclassicphase(TBC_PHASE_FOUR, i(33324)),	-- Treads of the Life Path
+							applyclassicphase(TBC_PHASE_FOUR, i(33539)),	-- Trickster's Stickyfingers
+							applyclassicphase(TBC_PHASE_FOUR, i(33515)),	-- Unwavering Legguards
+							applyclassicphase(TBC_PHASE_FOUR, i(33520)),	-- Vambraces of the Naaru
+							applyclassicphase(TBC_PHASE_FOUR, i(33579)),	-- Vestments of Hibernation
+							applyclassicphase(TBC_PHASE_FOUR, i(33325)),	-- Voodoo Shaker
+							applyclassicphase(TBC_PHASE_FOUR, i(33291)),	-- Voodoo-Woven Belt
+							applyclassicphase(TBC_PHASE_FOUR, i(33583)),	-- Waistguard of the Great Beast
+							applyclassicphase(TBC_PHASE_FOUR, i(33280)),	-- War-Feathered Loop
+							applyclassicphase(TBC_PHASE_ONE, i(32085)),	-- Warpstalker Helm
+							applyclassicphase(TBC_PHASE_FOUR, i(33589)),	-- Wristguards of Tranquil Thought
 						},
 					}),
 					n(22213, {	-- Gidge Spellweaver <Spellfire Tailoring Specialist>

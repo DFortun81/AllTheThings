@@ -328,9 +328,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["coord"] = { 42.2, 82.6, WESTFALL },
 					["groups"] = {
 						i(1875),	-- Thistlenettle's Badge
-						i(2167), 	-- Foreman's Gloves
-						i(2166), 	-- Foreman's Leggings
-						i(2168), 	-- Foreman's Boots [Classic] / Corpse Rompers [CATA+]
+						i(2167),	-- Foreman's Gloves
+						i(2166),	-- Foreman's Leggings
+						i(2168),	-- Foreman's Boots [Classic] / Corpse Rompers [CATA+]
 					},
 				}),
 				n(599, {	-- Marisa du'Paige

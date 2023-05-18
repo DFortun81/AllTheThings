@@ -299,7 +299,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					--
 					q(42519, {	-- Rise, Champions
 						["sourceQuests"] = {
-							40959, 	-- The Campaign Begins
+							40959,	-- The Campaign Begins
 							44090,	-- Pledge of Loyalty
 						},
 						["provider"] = { "n", 102940 },	-- Altar Keeper Biehn

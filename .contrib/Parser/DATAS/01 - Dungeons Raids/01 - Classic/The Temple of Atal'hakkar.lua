@@ -292,7 +292,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 46,
 					["groups"] = {
-						i(10773, { 		-- Hakkari Urn
+						i(10773, {	-- Hakkari Urn
 							["timeline"] = { "removed 4.0.3" },
 							["groups"] = {
 								i(10781, {	-- Hakkari Breastplate
@@ -745,9 +745,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					5720,	-- Weaver
 				},
 				["groups"] = {
-					i(12463), 	-- Drakefang Butcher
-					i(12243), 	-- Smoldering Claw
-					i(10797), 	-- Firebreather
+					i(12463),	-- Drakefang Butcher
+					i(12243),	-- Smoldering Claw
+					i(10797),	-- Firebreather
 					i(10796),	-- Drakestone
 					i(12465),	-- Nightfall Drape
 					i(12464),	-- Bloodfire Talons

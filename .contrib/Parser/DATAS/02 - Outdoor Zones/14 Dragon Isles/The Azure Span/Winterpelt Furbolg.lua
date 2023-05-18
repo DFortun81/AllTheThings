@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 
 				-- Language Furbolg 25
 				q(73550, {	-- Honeyfreeze Mead
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						72589,	-- Honor Their Sacrifice
 						72588,	-- Primalist Pillagers
 					 },
@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 				}),
 				q(73692, {	-- Hive Maintenance
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						72589,	-- Honor Their Sacrifice
 						72588,	-- Primalist Pillagers
 					},
@@ -181,20 +181,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 				}),
 
 				-- Language Furbolg 100
-				q(72598, {	-- Words of the Winterpelt 
+				q(72598, {	-- Words of the Winterpelt
 					["sourceQuests"] = { 72559 },	-- History Heist
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 				}),
 				q(72590, {	-- Ursol's Wisdom
-					["sourceQuests"] = { 72598 },	-- Words of the Winterpelt 
+					["sourceQuests"] = { 72598 },	-- Words of the Winterpelt
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
 					["provider"] = { "n", 189394 },	-- Kranac Sagesnow
 					["coord"] = { 65.9, 10.7, THE_AZURE_SPAN },
 				}),
 				q(72597, {	-- Ursoc's Strength
-					["sourceQuests"] = { 72598 },	-- Words of the Winterpelt 
+					["sourceQuests"] = { 72598 },	-- Words of the Winterpelt
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
 					["provider"] = { "n", 189394 },	-- Kranac Sagesnow
 					["coord"] = { 65.9, 10.7, THE_AZURE_SPAN },
@@ -344,6 +344,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(73185),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain weapons' during 'Our Path Ahead' (questID 72945)
 		q(73186),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain a new home' during 'Our Path Ahead' (questID 72945)
 		q(73187),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain allies' during 'Our Path Ahead' (questID 72945)
-		q(73547), 	-- Let Saza say goodbye to you after summoning the Ancients. Try not to cry like a little girl.
+		q(73547),	-- Let Saza say goodbye to you after summoning the Ancients. Try not to cry like a little girl.
 	}),
 }));

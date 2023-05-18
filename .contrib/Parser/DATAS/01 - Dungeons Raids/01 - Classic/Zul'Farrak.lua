@@ -278,17 +278,17 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			n(10080, {	-- Sandarr Dunereaver
 				["description"] = "This is a rare that is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
 				["groups"] = {
-					i(9512), 	-- Blackmetal Cape
-					i(9511), 	-- Bloodletter Scalpel
+					i(9512),	-- Blackmetal Cape
+					i(9511),	-- Bloodletter Scalpel
 					i(6440),	-- Brainlash
-					i(9480), 	-- Eyegouger
-					i(9483), 	-- Flaming Incinerator
-					i(5616), 	-- Gutwrencher
+					i(9480),	-- Eyegouger
+					i(9483),	-- Flaming Incinerator
+					i(5616),	-- Gutwrencher
 					i(862),		-- Runed Ring
-					i(9484), 	-- Spellshock Leggings
-					i(9481), 	-- The Minotaur
-					i(2040), 	-- Troll Protector (2022-02-07 confirmed from Sandfury Shadowcaster)
-					i(9482), 	-- Witch Doctor's Cane
+					i(9484),	-- Spellshock Leggings
+					i(9481),	-- The Minotaur
+					i(2040),	-- Troll Protector (2022-02-07 confirmed from Sandfury Shadowcaster)
+					i(9482),	-- Witch Doctor's Cane
 				},
 			}),
 			n(10082, {	-- Zerillis
@@ -427,11 +427,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = { ADDED_10_0_7 },
 					}),
 					i(8707),	-- Gahz'rilla's Electrified Scale
-					i(9467), 	-- Gahz'rilla Fang
+					i(9467),	-- Gahz'rilla Fang
 					i(151455, {	-- Gahz'rilla Scale Cloak
 						["timeline"] = { "added 7.3.0.24484" },
 					}),
-					i(9469), 	-- Gahz'rilla Scale Armor
+					i(9469),	-- Gahz'rilla Scale Armor
 				},
 			}),
 		},

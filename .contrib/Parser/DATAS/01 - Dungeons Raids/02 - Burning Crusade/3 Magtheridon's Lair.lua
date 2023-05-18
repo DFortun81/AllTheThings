@@ -35,7 +35,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuests"] = {
 						10884,	-- Trial of the Naaru: Mercy
-						10885, 	-- Trial of the Naaru: Strength
+						10885,	-- Trial of the Naaru: Strength
 						10886,	-- Trial of the Naaru: Tenacity
 					},
 					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
@@ -66,7 +66,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuests"] = {
 						10884,	-- Trial of the Naaru: Mercy
-						10885, 	-- Trial of the Naaru: Strength
+						10885,	-- Trial of the Naaru: Strength
 						10886,	-- Trial of the Naaru: Tenacity
 					},
 					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)

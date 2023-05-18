@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	m(ZARALEK_CAVERN, {
 		n(TREASURES, {
 			i(204849, {	-- Ratcipe: Charitable Cheddar (RECIPE!)
-				["cost"] = { { "i", 204872, 30 }, }, 	-- 30x Ripped Recipe Scrap
+				["cost"] = { { "i", 204872, 30 }, },	-- 30x Ripped Recipe Scrap
 			}),
 			i(204871),	-- Recipe Rat [Dont know where he is atm..]
 			o(386104, {	-- Ancient Zaqali Chest

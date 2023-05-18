@@ -24,7 +24,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(6424),	-- Blackforge Cape
 		i(14801),	-- Bloodlust Cape
 		i(15490),	-- Bloodspattered Cloak
-		i(14261),	-- Bloodwoven Cloak	
+		i(14261),	-- Bloodwoven Cloak
 		i(14300),	-- Bonecaster's Cape
 		i(15611),	-- Bonelink Cape
 		i(4680),	-- Brackwater Cloak
@@ -3568,7 +3568,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(4417),	-- Schematic: Large Seaforium Charge
 			i(16044),	-- Schematic: Lifelike Mechanical Toad
 			i(4408),	-- Schematic: Mechanical Squirrel Box [Wrath+] / Schematic: Mechanical Squirrel
-			i(10604), 	-- Schematic: Mithril Heavy-Bore Rifle [CATA+] / Schematic: Mithril Heavy-bore Rifle
+			i(10604),	-- Schematic: Mithril Heavy-Bore Rifle [CATA+] / Schematic: Mithril Heavy-bore Rifle
 			i(4412),	-- Schematic: Moonsight Rifle
 			i(10606),	-- Schematic: Parachute Cloak
 			i(4414),	-- Schematic: Portable Bronze Mortar

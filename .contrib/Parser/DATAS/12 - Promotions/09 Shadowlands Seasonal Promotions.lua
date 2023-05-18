@@ -50,7 +50,7 @@ root(ROOTS.Promotions, {
 			i(187958, {		-- Shrouded Banner of the Opportune (TOY!)
 				["description"] = "Break the Meta: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 4 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2022|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S4, and the Shrouded Banner of the Opportune will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on October 4th for US, October 5th for EU & October 6th for KR/TW & lasts for the entire reset of your region.\n\nThis was previously available through The Great Push: SL Season 4.",
 				["timeline"] = {
-					"added 9.2.7.45745", 	-- 23rd September 2022, 11 days before the event started.
+					"added 9.2.7.45745",	-- 23rd September 2022, 11 days before the event started.
 					REMOVED_10_0_0,	-- 16th August 2022, 1 day after the event ended.
 				},
 				["u"] = REMOVED_FROM_GAME, -- Removed again on October 12th 2022

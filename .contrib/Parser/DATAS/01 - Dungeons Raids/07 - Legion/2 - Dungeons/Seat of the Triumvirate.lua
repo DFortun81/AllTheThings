@@ -21,7 +21,7 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 					["questID"] = 48230,	-- Fragment of the Past
 					["maps"] = { 882 },	-- Eredath
 					["description"] = "You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",
-					["sourceQuest"] = 47654, 	-- Seat of the Triumvirate: The Crest of Knowledge
+					["sourceQuest"] = 47654,	-- Seat of the Triumvirate: The Crest of Knowledge
 					["crs"] = {
 						122316,	-- Saprish
 						126152,	-- General Zah'd
@@ -65,7 +65,7 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 				q(48231, {	-- The Seat of the Triumvirate: Armor of the Triumvirate
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, 830 },
-					["sourceQuest"] = 48803, 	-- Forging a Key to the Past
+					["sourceQuest"] = 48803,	-- Forging a Key to the Past
 					["g"] = {
 						i(152241, sharedData({["modID"] = 2}, { -- Ensemble: Light-Woven Triumvirate Regalia
 							i(151337),	-- Head

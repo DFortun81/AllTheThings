@@ -964,7 +964,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["groups"] = {
-					objective(1, {	-- 	Catch 4 torches in a row.
+					objective(1, {	-- Catch 4 torches in a row.
 						["provider"] = { "i", 34833 },	-- Unlit Torches
 					}),
 					i(23247),	-- Burning Blossom
@@ -978,7 +978,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["groups"] = {
-					objective(1, {	-- 	Catch 4 torches in a row.
+					objective(1, {	-- Catch 4 torches in a row.
 						["provider"] = { "i", 34833 },	-- Unlit Torches
 					}),
 					i(23247),	-- Burning Blossom
@@ -1421,7 +1421,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					objective(1, {	-- 	Catch 4 torches in a row.
+					objective(1, {	-- Catch 4 torches in a row.
 						["provider"] = { "i", 34833 },	-- Unlit Torches
 					}),
 					i(34599),	-- Juggling Torch
@@ -1435,7 +1435,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					objective(1, {	-- 	Catch 4 torches in a row.
+					objective(1, {	-- Catch 4 torches in a row.
 						["provider"] = { "i", 34833 },	-- Unlit Torches
 					}),
 					i(34599),	-- Juggling Torch

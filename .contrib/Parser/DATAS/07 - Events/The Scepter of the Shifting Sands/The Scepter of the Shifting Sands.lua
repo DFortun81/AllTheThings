@@ -350,7 +350,7 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					},
 					["lvl"] = 60,
 					["groups"] = {
-						objective(1, {	-- 0/1 	Draconic For Dummies: Volume II
+						objective(1, {	-- 0/1 Draconic For Dummies: Volume II
 							["provider"] = { "i", 21111 },	-- Draconic For Dummies: Volume II
 							["cost"] = {
 								{ "i", 21112, 1 },	-- Magical Book Binding

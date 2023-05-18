@@ -1198,7 +1198,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
-						objective(1, {	-- 	S.T.O.U.T. Hit
+						objective(1, {	-- S.T.O.U.T. Hit
 							["provider"] = { "i", 33096 },	-- Alcohol-Free Brewfest Sampler
 							["cr"] = 24108,	-- Self-Turning and Oscillating Utility Target <S.T.O.U.T.>
 						}),
@@ -1219,7 +1219,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
-						objective(1, {	-- 	S.T.O.U.T. Hit
+						objective(1, {	-- S.T.O.U.T. Hit
 							["provider"] = { "i", 33096 },	-- Alcohol-Free Brewfest Sampler
 							["cr"] = 24108,	-- Self-Turning and Oscillating Utility Target <S.T.O.U.T.>
 						}),

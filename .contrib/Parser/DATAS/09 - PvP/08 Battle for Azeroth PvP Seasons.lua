@@ -25,7 +25,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 					["timeline"] = { "added 8.0.5", "removed 8.1.0" },
 				}),
 				ach(12961, {	-- Gladiator: Battle for Azeroth Season 1
-					i(156879), 	-- Dread Gladiator's Proto-Drake (MOUNT!)
+					i(156879),	-- Dread Gladiator's Proto-Drake (MOUNT!)
 					i(164573),	-- Dread Gladiator's Tabard (A)
 					i(164572),	-- Dread Gladiator's Tabard (H)
 				}),

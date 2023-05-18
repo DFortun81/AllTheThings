@@ -2361,7 +2361,7 @@ creature = function(id, t)								-- Create a CREATURE Object
 	return struct("creatureID", id, t);
 end
 cr = creature;											-- Create a CREATURE Object (alternative shortcut)
-crit = function(criteriaUID, t)           				-- Create an Achievement Criteria Object (localized automatically)
+crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (localized automatically)
 	if not t then t = {};
 	elseif not t.groups then
 		if not isarray(t) then

@@ -1523,7 +1523,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
-					objective(1, {	-- 	Take your orphan out for ice cream.
+					objective(1, {	-- Take your orphan out for ice cream.
 						["provider"] = { "i", 69027 },	-- Cone of Cold
 						["coords"] = {
 							{ 49.01, 89.74, STORMWIND_CITY },	-- Hans Coldhearth

@@ -727,7 +727,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				}),
 				q(65952, {	-- A Chief of Legends
 					["sourceQuests"] = {
-						65955, 	-- A Centaur's Best Friend
+						65955,	-- A Centaur's Best Friend
 						65954,	-- Release the Hounds
 						65953,	-- The Ora-cull
 					},
@@ -1133,7 +1133,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			}),
 			q(71027, {	-- WANTED: Mara'nar the Thunderous
 				["sourceQuests"] = {
-					66201, 	-- Hooves of War
+					66201,	-- Hooves of War
 					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["sourceQuestNumRequired"] = 1,

@@ -1255,7 +1255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["sourceQuest"] = 5219,	-- Target: Dalson's Tears [A]
 					}),
 					["hordeQuestData"] = q(5232, {	-- Return to the Bulwark [H]
-						["sourceQuest"] = 5231, 	-- Target: Dalson's Tears [H]
+						["sourceQuest"] = 5231,	-- Target: Dalson's Tears [H]
 					}),
 					["providers"] = {
 						{ "o", 177289 },	-- Scourge Cauldron
@@ -2473,8 +2473,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								5513,	-- Mantles of the Dawn
 							},
 						}),
-						i(19447), 	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
-						i(19446), 	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
+						i(19447),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
+						i(19446),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
 						i(19442),	-- Recipe: Powerful Anti-Venom
 						i(19216),	-- Pattern: Argent Boots
 						i(19217),	-- Pattern: Argent Shoulders

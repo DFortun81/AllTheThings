@@ -692,7 +692,7 @@ for key,value in pairs({
 	-- World Events
 		[-53] = "Festival del Fuego del Solsticio de Verano",		-- Midsummer Fire Festival
 		[-55] = "Día de los Piratas",								-- Pirates' Day
-		[-59] = "Festividad de los Muertos", 						-- Day of the Dead
+		[-59] = "Festividad de los Muertos",						-- Day of the Dead
 		[-62] = "Gran espectáculo de pesca de Tuercespina",			-- Stranglethorn Fishing Extravaganza
 		[-63] = "Competición de pesca Kalu'ak",						-- Kalu'ak Fishing Derby
 	-- Zul'Aman

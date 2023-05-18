@@ -2968,7 +2968,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 44.2, 73.6, STORMWIND_CITY },
 					-- #endif
-					["cost"] = { { "i", 14047, 20 } }, 	-- Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -5090,7 +5090,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3681, {	-- The Tome of Divinity (1b/10)
 					["qg"] = 5149,	-- Brandur Ironhammer
 					["altQuests"] = {
-						2998, 	-- The Tome of Divinity (1a/10)
+						2998,	-- The Tome of Divinity (1a/10)
 						1787,	-- The Tome of Divinity (8)
 					},
 					["coord"] = { 23.4, 6.2, IRONFORGE },

@@ -657,9 +657,9 @@ i(0, 112430);	-- Glyph of Burning Anger Research: Blackfallow Ink
 i(0, 131152);	-- Glyph of the Cheetah Research: Shimmering Ink
 i(0, 124466);	-- Glyph of the Heavens Research: Blackfallow Ink
 i(0, 126800);	-- Glyph of Shadowy Friends Research: Blackfallow Ink
-i(0, 112466);	-- Glyph of Rising Tiger Kick 	Research: Shimmering Ink
+i(0, 112466);	-- Glyph of Rising Tiger Kick Research: Shimmering Ink
 i(0, 126696);	-- Glyph of the Val'kyr Research: Ink of Dreams
-i(0, 112429);	-- Glyph of Hawk Feast 	Research: Jadefire Ink
+i(0, 112429);	-- Glyph of Hawk Feast Research: Jadefire Ink
 
 
 -- Blackfallow

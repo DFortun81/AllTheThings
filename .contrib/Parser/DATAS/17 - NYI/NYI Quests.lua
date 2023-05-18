@@ -2700,21 +2700,21 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 7.1.5
 			tier(LEGION_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 7.1.5" } }, {
-				q(40631, { ["name"] = "Basking in Glory", }),	-- 	Basking in Glory
-				q(39770, { ["name"] = "Burn the Candle at Both Ends [NOT USED]", }),	-- 	Burn the Candle at Both Ends [NOT USED]
-				q(44941, { ["name"] = "Dances With Ravenbears (UNUSED)", }),	-- 	Dances With Ravenbears (UNUSED)
-				q(40693, { ["name"] = "Eyes of Nashal - Choice UI - Deadly Eye of Prophecy", ["_drop"] = { "g" }, }),	-- 	Eyes of Nashal - Choice UI - Deadly Eye of Prophecy
-				q(40696, { ["name"] = "Eyes of Nashal - Choice UI - Masterful Shadowruby", ["_drop"] = { "g" }, }),	-- 	Eyes of Nashal - Choice UI - Masterful Shadowruby
-				q(40695, { ["name"] = "Eyes of Nashal - Choice UI - Quick Dawnlight", ["_drop"] = { "g" }, }),	-- 	Eyes of Nashal - Choice UI - Quick Dawnlight
-				q(40600, { ["name"] = "Finishing Touches - Choice UI - Azsunite Loop", ["_drop"] = { "g" }, }),	-- 	Finishing Touches - Choice UI - Azsunite Loop
-				q(40599, { ["name"] = "Finishing Touches - Choice UI - Deep Amber Loop", ["_drop"] = { "g" }, }),	-- 	Finishing Touches - Choice UI - Deep Amber Loop
-				q(40583, { ["name"] = "Making the Cut - Choice UI - Deadly Deep Amber", ["_drop"] = { "g" }, }),	-- 	Making the Cut - Choice UI - Deadly Deep Amber
-				q(40587, { ["name"] = "Making the Cut - Choice UI - Masterful Queen's Opal", ["_drop"] = { "g" }, }),	-- 	Making the Cut - Choice UI - Masterful Queen's Opal
-				q(40586, { ["name"] = "Making the Cut - Choice UI - Quick Azsunite", ["_drop"] = { "g" }, }),	-- 	Making the Cut - Choice UI - Quick Azsunite
-				q(40637, { ["name"] = "Proof of Honor", }),	-- 	Proof of Honor
-				q(40635, { ["name"] = "Sashj'tar Slayer", }),	-- 	Sashj'tar Slayer
-				q(40676, { ["name"] = "You Must Make Haste", }),	-- 	You Must Make Haste
-				q(37532, { ["name"] = "[UNUSED]Rolling With the Tidestone", }),	-- 	[UNUSED]Rolling With the Tidestone
+				q(40631, { ["name"] = "Basking in Glory", }),	-- Basking in Glory
+				q(39770, { ["name"] = "Burn the Candle at Both Ends [NOT USED]", }),	-- Burn the Candle at Both Ends [NOT USED]
+				q(44941, { ["name"] = "Dances With Ravenbears (UNUSED)", }),	-- Dances With Ravenbears (UNUSED)
+				q(40693, { ["name"] = "Eyes of Nashal - Choice UI - Deadly Eye of Prophecy", ["_drop"] = { "g" }, }),	-- Eyes of Nashal - Choice UI - Deadly Eye of Prophecy
+				q(40696, { ["name"] = "Eyes of Nashal - Choice UI - Masterful Shadowruby", ["_drop"] = { "g" }, }),	-- Eyes of Nashal - Choice UI - Masterful Shadowruby
+				q(40695, { ["name"] = "Eyes of Nashal - Choice UI - Quick Dawnlight", ["_drop"] = { "g" }, }),	-- Eyes of Nashal - Choice UI - Quick Dawnlight
+				q(40600, { ["name"] = "Finishing Touches - Choice UI - Azsunite Loop", ["_drop"] = { "g" }, }),	-- Finishing Touches - Choice UI - Azsunite Loop
+				q(40599, { ["name"] = "Finishing Touches - Choice UI - Deep Amber Loop", ["_drop"] = { "g" }, }),	-- Finishing Touches - Choice UI - Deep Amber Loop
+				q(40583, { ["name"] = "Making the Cut - Choice UI - Deadly Deep Amber", ["_drop"] = { "g" }, }),	-- Making the Cut - Choice UI - Deadly Deep Amber
+				q(40587, { ["name"] = "Making the Cut - Choice UI - Masterful Queen's Opal", ["_drop"] = { "g" }, }),	-- Making the Cut - Choice UI - Masterful Queen's Opal
+				q(40586, { ["name"] = "Making the Cut - Choice UI - Quick Azsunite", ["_drop"] = { "g" }, }),	-- Making the Cut - Choice UI - Quick Azsunite
+				q(40637, { ["name"] = "Proof of Honor", }),	-- Proof of Honor
+				q(40635, { ["name"] = "Sashj'tar Slayer", }),	-- Sashj'tar Slayer
+				q(40676, { ["name"] = "You Must Make Haste", }),	-- You Must Make Haste
+				q(37532, { ["name"] = "[UNUSED]Rolling With the Tidestone", }),	-- [UNUSED]Rolling With the Tidestone
 			})),
 
 			-- 7.2.0

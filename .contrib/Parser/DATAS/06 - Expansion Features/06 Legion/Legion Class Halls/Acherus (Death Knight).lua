@@ -58,7 +58,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					follower(1009),	-- Ebon Knight Frostreavers
 					follower(1010),	-- Ebon Knight Frostreavers
 					follower(1011),	-- Ebon Knight Frostreavers
-					
+
 					-- TODO itemID 140767
 					follower(783),	-- Abomination
 					follower(941),	-- Alliance:Abomination \\ Horde:Abomination
@@ -484,7 +484,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["sourceQuests"] = {
 							43573,	-- Advancing the War Effort
 							43928,	-- Aggregates of Anguish
-							44690, 	-- A Thirst For Blood
+							44690,	-- A Thirst For Blood
 						},
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
 						["coord"] = { 51.6, 50.0, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },

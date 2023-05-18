@@ -166,7 +166,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(386, { 	-- What Comes Around...
+				q(386, {	-- What Comes Around...
 					["qg"] = 859,	-- Guard Berton
 					["coord"] = { 26, 43, REDRIDGE_MOUNTAINS },
 					["timeline"] = { "removed 4.0.1.12984" },
@@ -214,7 +214,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(1666, { 	-- Kam Deepfury
+			n(1666, {	-- Kam Deepfury
 				["timeline"] = { "removed 4.0.1.12984" },
 				["groups"] = {
 					i(3640, {	-- Head of Deepfury
@@ -225,7 +225,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(1663, { 	-- Dextren Ward
+			n(1663, {	-- Dextren Ward
 				["timeline"] = { "removed 4.0.1.12984" },
 				["groups"] = {
 					i(3628, {	-- Hand of Dextren Ward
@@ -233,10 +233,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(1717, { 	-- Hamhock
+			n(1717, {	-- Hamhock
 				["timeline"] = { "removed 4.0.1.12984" },
 			}),
-			n(1696, { 	-- Targorr the Dread
+			n(1696, {	-- Targorr the Dread
 				["timeline"] = { "removed 4.0.1.12984" },
 				["groups"] = {
 					i(3630, {	-- Head of Targorr
@@ -244,7 +244,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(1716, { 	-- Bazil Thredd
+			n(1716, {	-- Bazil Thredd
 				["timeline"] = { "removed 4.0.1.12984" },
 				["groups"] = {
 					-- #if BEFORE 4.0.1

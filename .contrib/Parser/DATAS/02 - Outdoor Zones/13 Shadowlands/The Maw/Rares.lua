@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["description"] = "Inside the cave.",
 				["coords"] = {
 					-- #if BEFORE 9.1.0
-					{ 59.2, 79.9, THE_MAW }, 	-- pre-9.1
+					{ 59.2, 79.9, THE_MAW },	-- pre-9.1
 					-- #else
 					{ 54.4, 79.2, THE_MAW },	-- 9.1 cave entrance
 					-- #endif

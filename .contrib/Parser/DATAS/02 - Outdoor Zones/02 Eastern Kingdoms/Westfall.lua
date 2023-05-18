@@ -956,7 +956,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {
 							["provider"] = { "i", 1381 },	-- A Mysterious Message
 							["coord"] = { 45.6, 68.6, WESTFALL },
-							["cr"] = 550, 	-- Defias Messenger
+							["cr"] = 550,	-- Defias Messenger
 						}),
 					},
 				}),

@@ -30,21 +30,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["repeatable"] = true,
-				["cost"] = { { "i", 192055, 1 }, }, 	-- 1x Dragon Isles Artifact
+				["cost"] = { { "i", 192055, 1 }, },	-- 1x Dragon Isles Artifact
 			}),
 			q(71035, {	-- Multiple Dragon Isles Artifacts
 				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["repeatable"] = true,
-				["cost"] = { { "i", 192055, 5 }, }, 	-- 5x Dragon Isles Artifact
+				["cost"] = { { "i", 192055, 5 }, },	-- 5x Dragon Isles Artifact
 			}),
 			q(72876, {	-- Multiple Dragon Isles Artifacts
 				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["repeatable"] = true,
-				["cost"] = { { "i", 192055, 20 }, }, 	-- 20x Dragon Isles Artifact
+				["cost"] = { { "i", 192055, 20 }, },	-- 20x Dragon Isles Artifact
 			}),
 				-- Binds to Blizard account A Titan Relic
 			q(71036, {	-- Dragon Isles Artifacts
@@ -52,21 +52,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["repeatable"] = true,
-				["cost"] = { { "i", 200443, 1 }, }, 	-- 1x Dragon Isles Artifact
+				["cost"] = { { "i", 200443, 1 }, },	-- 1x Dragon Isles Artifact
 			}),
 			q(71037, {	-- Multiple Dragon Isles Artifacts
 				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["repeatable"] = true,
-				["cost"] = { { "i", 200443, 5 }, }, 	-- 5x Dragon Isles Artifact
+				["cost"] = { { "i", 200443, 5 }, },	-- 5x Dragon Isles Artifact
 			}),
 			q(72877, {	-- Multiple Dragon Isles Artifacts
 				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["repeatable"] = true,
-				["cost"] = { { "i", 200443, 20 }, }, 	-- 20x Dragon Isles Artifact
+				["cost"] = { { "i", 200443, 20 }, },	-- 20x Dragon Isles Artifact
 			}),
 				-- RENOWN 3 --
 			q(70335, {	-- Simple Excavation Tools

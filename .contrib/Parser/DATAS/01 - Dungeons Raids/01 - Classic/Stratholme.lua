@@ -688,7 +688,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							-- #endif
 							i(13378),	-- Songbird Blouse
 							i(13384),	-- Rainbow Girdle
-							i(13383),  	-- Woollies of the Prancing Minstrel
+							i(13383),	-- Woollies of the Prancing Minstrel
 							i(16682, {	-- Magister's Boots
 								["timeline"] = { "removed 4.0.3" },
 							}),
@@ -736,7 +736,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						-- #if AFTER 8.0.1
-						i(22403), 	-- Nacreous Shell Necklace
+						i(22403),	-- Nacreous Shell Necklace
 						-- #endif
 					}),
 					n(11120, {	-- Crimson Hammersmith [Classic] / Risen Hammersmith [CATA+]
@@ -826,7 +826,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							}),
 						},
 					}),
-					applyclassicphase(PHASE_FIVE, o(181083, { 	-- Sothos and Jarien's Heirlooms
+					applyclassicphase(PHASE_FIVE, o(181083, {	-- Sothos and Jarien's Heirlooms
 						["crs"] = {
 							16101,	-- Jarien
 							16102,	-- Sothos
@@ -852,7 +852,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(22327, {	-- Amulet of the Redeemed
 								["timeline"] = { "removed 4.0.3" },
 							}),
-							i(22301, { 	-- Ironweave Robe
+							i(22301, {	-- Ironweave Robe
 								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(22328, {	-- Legplates of Vigilance
@@ -946,7 +946,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(13508),	-- Eye of Arachnida
 						},
 					}),
-					n(11121, { 	-- Black Guard Swordsmith
+					n(11121, {	-- Black Guard Swordsmith
 						["description"] = "Loot the Blacksmithing Plans on the ground to spawn this mob.",
 						["groups"] = {
 							i(18783, {	-- Bottom Half of Advanced Armorsmithing: Volume III

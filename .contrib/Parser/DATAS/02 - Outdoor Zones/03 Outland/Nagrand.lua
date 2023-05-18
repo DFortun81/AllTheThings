@@ -138,8 +138,8 @@ root(ROOTS.Zones, {
 							9863,	-- Vile Idolatry
 
 							-- Threats to Nagrand
-							10011, 	-- Forge Camp: Annihilated
-							9937, 	-- WANTED: Durn the Hungerer
+							10011,	-- Forge Camp: Annihilated
+							9937,	-- WANTED: Durn the Hungerer
 
 							-- The Ultimate Bloodsport
 							9852,	-- The Ultimate Bloodsport
@@ -192,8 +192,8 @@ root(ROOTS.Zones, {
 							}),
 							crit(6,	{	-- Threats to Nagrand
 								["sourceQuests"] = {
-									10011, 	-- Forge Camp: Annihilated
-									9937, 	-- WANTED: Durn the Hungerer
+									10011,	-- Forge Camp: Annihilated
+									9937,	-- WANTED: Durn the Hungerer
 								},
 							}),
 							crit(7,	{	-- The Ultimate Bloodsport
@@ -229,15 +229,15 @@ root(ROOTS.Zones, {
 							9933,	-- Message to Telaar
 
 							-- The Murkblood
-							9873,  	-- Ortor My Old Friend...
+							9873,	-- Ortor My Old Friend...
 							9878,	-- Solving the Problem
 							9874,	-- Stopping the Spread
 							9879,	-- The Totem of Kar'dash
 							9956,	-- The Ravaged Caravan
 
 							-- Threats to Nagrand
-							10011, 	-- Forge Camp: Annihilated
-							9938, 	-- WANTED: Durn the Hungerer
+							10011,	-- Forge Camp: Annihilated
+							9938,	-- WANTED: Durn the Hungerer
 
 							-- The Ultimate Bloodsport
 							9852,	-- The Ultimate Bloodsport
@@ -276,7 +276,7 @@ root(ROOTS.Zones, {
 							}),
 							crit(5,	{	-- The Murkblood
 								["sourceQuests"] = {
-									9873,  	-- Ortor My Old Friend...
+									9873,	-- Ortor My Old Friend...
 									9878,	-- Solving the Problem
 									9874,	-- Stopping the Spread
 									9879,	-- The Totem of Kar'dash
@@ -285,8 +285,8 @@ root(ROOTS.Zones, {
 							}),
 							crit(6,	{	-- Threats to Nagrand
 								["sourceQuests"] = {
-									10011, 	-- Forge Camp: Annihilated
-									9938, 	-- WANTED: Durn the Hungerer
+									10011,	-- Forge Camp: Annihilated
+									9938,	-- WANTED: Durn the Hungerer
 								},
 							}),
 							crit(7,	{	-- The Ultimate Bloodsport
@@ -1844,9 +1844,9 @@ root(ROOTS.Zones, {
 							i(29457),	-- Nethershard
 							i(29116),	-- Nomad's Leggings
 							i(24314),	-- Pattern: Bag of Jewels
-							i(25733), 	-- Pattern: Fel Leather Boots
-							i(25732), 	-- Pattern: Fel Leather Gloves
-							i(25734), 	-- Pattern: Fel Leather Leggings
+							i(25733),	-- Pattern: Fel Leather Boots
+							i(25732),	-- Pattern: Fel Leather Gloves
+							i(25734),	-- Pattern: Fel Leather Leggings
 							i(23874),	-- Schematic: Elemental Seaforium Charge
 							i(29118, {	-- Smuggler's Ammo Pouch
 								["timeline"] = { "removed 4.0.1.12941" },

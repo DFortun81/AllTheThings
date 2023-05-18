@@ -1380,7 +1380,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 35.4, 44.0, SWAMP_OF_SORROWS },
 					},
 					-- #endif
- 				}),
+				}),
 				n(50903, {	-- Orlix the Swamplord
 					["coords"] = {
 						{ 17.12, 36.45, SWAMP_OF_SORROWS },

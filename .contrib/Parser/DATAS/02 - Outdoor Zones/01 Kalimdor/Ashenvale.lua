@@ -854,7 +854,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						objective(1, { 	-- 0/1 Elune's Tear
+						objective(1, {	-- 0/1 Elune's Tear
 							["providers"] = {
 								{ "i", 5493 },	-- Elune's Tear
 								{ "o", 19015 },	-- Elune's Tear

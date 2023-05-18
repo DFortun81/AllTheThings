@@ -1647,7 +1647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(RARES, {
-				n(14461, { 	-- Baron Charr
+				n(14461, {	-- Baron Charr
 					-- TODO: Move this to an Elemental Invasion World Event file.
 					["description"] = "This is only available during an Elemental Invasion.",
 					["coords"] = {

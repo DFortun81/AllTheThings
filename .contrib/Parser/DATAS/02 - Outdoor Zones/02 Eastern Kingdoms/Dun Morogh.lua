@@ -1242,7 +1242,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 8,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mangy Claw
-							["provider"] = { "i", 3183 }, 	-- Mangy Claw
+							["provider"] = { "i", 3183 },	-- Mangy Claw
 							["coord"] = { 78.34, 37.74, DUN_MOROGH },
 							["cr"] = 1961,	-- Mangeclaw
 						}),
@@ -1265,7 +1265,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mangy Claw
-							["provider"] = { "i", 3183 }, 	-- Mangy Claw
+							["provider"] = { "i", 3183 },	-- Mangy Claw
 							["coord"] = { 78.34, 37.74, DUN_MOROGH },
 							["cr"] = 1961,	-- Mangeclaw
 						}),

@@ -6,8 +6,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 		ach(15684, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Fates of the Shadowlands Raids
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
-				15663, 	-- Fate of Nathria
-				15667, 	-- Fate of Domination
+				15663,	-- Fate of Nathria
+				15667,	-- Fate of Domination
 				15681,	-- Fate of the Sepulcher
 			}},
 			["g"] = {
@@ -16,8 +16,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 		})),
 		ach(15685, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fates of the Shadowlands Raids
 			["sym"] = {{"meta_achievement",
-				15664, 	-- Heroic: Fate of Nathria
-				15668, 	-- Heroic: Fate of Domination
+				15664,	-- Heroic: Fate of Nathria
+				15668,	-- Heroic: Fate of Domination
 				15682,	-- Heroic: Fate of the Sepulcher
 			}},
 			["g"] = {
@@ -26,8 +26,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 		})),
 		ach(15687, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fates of the Shadowlands Raids
 			["sym"] = {{"meta_achievement",
-				15665, 	-- Mythic: Fate of Nathria
-				15669, 	-- Mythic: Fate of Domination
+				15665,	-- Mythic: Fate of Nathria
+				15669,	-- Mythic: Fate of Domination
 				15683,	-- Mythic: Fate of the Sepulcher
 			}},
 			["g"] = {
@@ -73,7 +73,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				14331,	-- Goliath Offline
 				14323,	-- ExSPEARiential
 				14327,	-- I Can See My House From Here
-				14297, 	-- Three Choose One
+				14297,	-- Three Choose One
 				14607,	-- Fresh Meat!
 				14533,	-- Royal Rumble
 				14286,	-- Residue Evil

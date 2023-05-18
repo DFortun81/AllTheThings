@@ -883,7 +883,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { WARLOCK },
 					["lvl"] = 31,
 				}),
-				q(4782, { 	-- Components for the Enchanted Gold Bloodrobe (3/5)
+				q(4782, {	-- Components for the Enchanted Gold Bloodrobe (3/5)
 					["qg"] = 2670,	-- Xizk Goodstitch
 					["sourceQuest"] = 4781,	-- Components for the Enchanted Gold Bloodrobe (2/5)
 					["coord"] = { 28.6, 76.8, STRANGLETHORN_VALE },

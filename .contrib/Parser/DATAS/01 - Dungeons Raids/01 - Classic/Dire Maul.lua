@@ -1209,10 +1209,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 								["questID"] = 8990,	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
 								["provider"] = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
 							}),
-							i(22315), 	-- Hammer of Revitalization
-							i(22314), 	-- Huntsman's Harpoon
+							i(22315),	-- Hammer of Revitalization
+							i(22314),	-- Huntsman's Harpoon
 							i(22304),	-- Ironweave Gloves
-							i(22472), 	-- Boots of Ferocity
+							i(22472),	-- Boots of Ferocity
 							i(22401, {	-- Libram of Hope
 								["timeline"] = { "deleted 5.0.4" },
 							}),

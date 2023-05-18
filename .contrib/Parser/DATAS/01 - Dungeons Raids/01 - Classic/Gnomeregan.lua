@@ -82,7 +82,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(26, 26, 10),
 				}),
-				q(2926, { 	-- Gnogaine
+				q(2926, {	-- Gnogaine
 					["qg"] = 1268,	-- Ozzie Togglevolt
 					["sourceQuest"] = 2927,	-- The Day After
 					["coord"] = { 45.8, 49.2, DUN_MOROGH },
@@ -98,7 +98,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 				q(2948, {	-- Gnome Improvement
-					["qg"] = 6826, 	-- Talvash del Kissel
+					["qg"] = 6826,	-- Talvash del Kissel
 					["sourceQuest"] = 2947,	-- Return of the Ring [Alliance]
 					["coord"] = { 36.2, 3.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -129,7 +129,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(9362),	-- Brilliant Gold Ring
 					},
 				}),
-				q(2928, { 	-- Gyrodrillmatic Excavationators
+				q(2928, {	-- Gyrodrillmatic Excavationators
 					["qg"] = 6579,	-- Shoni the Shilent
 					["coord"] = { 55.6, 12.8, STORMWIND_CITY },
 					["timeline"] = { "removed 4.0.3" },
@@ -192,7 +192,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 				q(2950, {	-- Nogg's Ring Redo
-					["qg"] = 3412, 	-- Nogg <Expert Engineer>
+					["qg"] = 3412,	-- Nogg <Expert Engineer>
 					["sourceQuest"] = 2949,	-- Return of the Ring [Horde]
 					-- #if AFTER CATA
 					["coord"] = { 56.7, 57.0, ORGRIMMAR },
@@ -230,7 +230,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = lvlsquish(28, 28, 10),
 				}),
 				q(2841, {	-- Rig Wars
-					["qg"] = 3412, 	-- Nogg <Expert Engineer>
+					["qg"] = 3412,	-- Nogg <Expert Engineer>
 					["coord"] = { 75.8, 25.2, ORGRIMMAR },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
@@ -403,7 +403,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(2962, { 	-- The Only Cure is More Green Glow
+				q(2962, {	-- The Only Cure is More Green Glow
 					["qg"] = 1268,	-- Ozzie Togglevolt
 					["sourceQuest"] = 2926,	-- Gnogaine
 					["coord"] = { 45.8, 49.2, DUN_MOROGH },

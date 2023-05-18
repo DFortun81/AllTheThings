@@ -110,7 +110,7 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 		n(MAILBOX, {
 			i(21746, {	-- Lucky Red Envelope
 				i(21744),	-- Lucky Rocket Cluster
-				i(21745), 	-- Elder's Moonstone
+				i(21745),	-- Elder's Moonstone
 			}),
 		}),
 		n(QUESTS, {

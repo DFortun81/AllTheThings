@@ -264,7 +264,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(136687),	-- "The Felic"*
 			i(136688),	-- Shockinator*
 		}),
-		cat(472, { 	-- Devices
+		cat(472, {	-- Devices
 			i(134125, {	-- Mecha-Bond Imprint Matrix
 				["classes"] = { HUNTER },
 				["spellID"] = 205154,	-- Mecha-Bond Imprint Matrix

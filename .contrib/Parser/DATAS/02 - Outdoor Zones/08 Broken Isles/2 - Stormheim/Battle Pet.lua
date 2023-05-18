@@ -7,12 +7,12 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
 			petbattle(filter(BATTLE_PETS, {
-				pet(1708), 	-- Albatross Chick
-				pet(1743), 	-- Black-Footed Fox Kit
+				pet(1708),	-- Albatross Chick
+				pet(1743),	-- Black-Footed Fox Kit
 				pet(380, {	-- Bucktooth Flapper
 					["crs"] = { 62992 },	-- Bucktooth Flapper
 				}),
-				pet(1712), 	-- Golden Eaglet
+				pet(1712),	-- Golden Eaglet
 				pet(647, {	-- Grizzly Squirrel
 					["crs"] = { 62818 },	-- Grizzly Squirrel
 				}),
@@ -31,7 +31,7 @@ _.Zones =
 				pet(1713, {	-- Long-Eared Owl
 					["crs"] = { 97118 },	-- Long-Eared Owl
 				}),
-				pet(1744), 	-- Mist Fox Kit
+				pet(1744),	-- Mist Fox Kit
 				pet(633, {	-- Mountain Skunk
 					["crs"] = { 61677 },	-- Mountain Skunk
 				}),
@@ -41,10 +41,10 @@ _.Zones =
 				pet(743, {	-- Rapana Whelk
 					["crs"] = { 64352 },	-- Rapana Whelk
 				}),
-				pet(1749), 	-- Rose Taipan
-				pet(1736), 	-- Slithering Brownscale
-				pet(1917), 	-- Stormstruck Beaver
-				pet(1750), 	-- Tiny Apparition
+				pet(1749),	-- Rose Taipan
+				pet(1736),	-- Slithering Brownscale
+				pet(1917),	-- Stormstruck Beaver
+				pet(1750),	-- Tiny Apparition
 				n(115742, {	-- Orphaned Direbeak
 					["description"] = "1. Buy Pungent Vrykul Gamalost from Riala the Hearthwatcher in Valdisdall.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy your new Direbeak Hatchling! Do one quest each day for a mount!|r\n",
 					["g"] = {

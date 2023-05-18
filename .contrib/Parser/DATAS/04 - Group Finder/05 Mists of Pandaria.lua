@@ -470,7 +470,7 @@ _.GroupFinder =
 			-- 	i(89454),	-- Stormbrew Legguards
 			-- 	i(89453),	-- Stormbrew Spaulders
 			-- 	i(89452),	-- Stormbrew Vest
-			-- 	-- From wowhead comments
+			--	-- From wowhead comments
 			-- 	i(89463),	-- Scarshell Greaves
 			-- },
 		}),

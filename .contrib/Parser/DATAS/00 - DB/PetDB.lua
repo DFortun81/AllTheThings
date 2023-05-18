@@ -1901,7 +1901,7 @@ i(0, 3402);			-- Stormamu
 -- SPECIAL --
 i(0, 3248);			-- Ichabod
 -- NYI --
-i(190583, 0); 		-- Ichabod
+i(190583, 0);		-- Ichabod
 
 ------------------
 -- PATCH 10.0.5 --

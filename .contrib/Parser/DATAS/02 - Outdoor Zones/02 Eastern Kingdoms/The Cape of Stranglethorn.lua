@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				faction(87, {	-- Bloodsail Buccaneers
 					["icon"] = icon("INV_Misc_Bandana_03"),
 				}),
-				faction(21, { 	-- Booty Bay
+				faction(21, {	-- Booty Bay
 					["icon"] = icon("INV_Misc_Coin_01"),
 				}),
 			}),
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2494 },	-- Privateer Bloads
 						{ "i", 4028 },	-- Bundle of Akiris Reeds
 					},
-					["sourceQuest"] = 617, 	-- Akiris by the Bundle (1/2)
+					["sourceQuest"] = 617,	-- Akiris by the Bundle (1/2)
 					["coord"] = { 27.4, 76.8, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { DUSTWALLOW_MARSH },
@@ -1852,7 +1852,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(601, {	-- Water Elementals
 					["qg"] = 2496,	-- Baron Revilgaz
-					["sourceQuest"] = 578,	-- 	The Stone of the Tides
+					["sourceQuest"] = 578,	-- The Stone of the Tides
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,

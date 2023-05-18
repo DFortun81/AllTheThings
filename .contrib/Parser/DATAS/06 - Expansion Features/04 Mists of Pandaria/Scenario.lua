@@ -123,7 +123,7 @@ _.ExpansionFeatures =
 							h(ach(8315)),	-- Battle on the High Seas (H)
 							a(ach(8364)),	-- Heroic: Battle on the High Seas (A)
 							h(ach(8366)),	-- Heroic: Battle on the High Seas (H)
-							ach(8347), 	-- Keep those Bombs Away! (From Me)
+							ach(8347),	-- Keep those Bombs Away! (From Me)
 						}),
 					},
 				}),

@@ -851,5 +851,5 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(63943),	-- triggered when returning Stinky to Reldorn on "They Grow Up So Quickly"
 
 	-- Stolen Anima Vessels
-	q(64575), 	-- After anima vessel, in Maw (rifted)
+	q(64575),	-- After anima vessel, in Maw (rifted)
 });

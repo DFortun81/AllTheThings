@@ -228,7 +228,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14723,	-- Mistina Steelshield
 					["coord"] = { 43.2, 31.9, IRONFORGE },
 					["timeline"] = { "removed 4.0.3" },
-					["cost"] = { { "i", 4338, 60 } }, 	-- Mageweave Cloth
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14723,	-- Mistina Steelshield
 					["coord"] = { 43.2, 31.9, IRONFORGE },
 					["timeline"] = { "removed 4.0.3" },
-					["cost"] = { { "i", 4306, 60 } }, 	-- Silk Cloth
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 				}),
@@ -389,7 +389,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14723,	-- Mistina Steelshield
 					["sourceQuest"] = 7805,	-- A Donation of Runecloth
 					["coord"] = { 43.2, 31.9, IRONFORGE },
-					["cost"] = { { "i", 14047, 20 } }, 	-- Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -400,7 +400,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["sourceQuest"] = 7811,	-- A Donation of Runecloth
 					["coord"] = { 74.1, 48.1, IRONFORGE },
-					["cost"] = { { "i", 14047, 20 } }, 	-- Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,

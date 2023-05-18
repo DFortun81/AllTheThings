@@ -3699,8 +3699,8 @@ _.PVP =
 									i(124965, {	-- Wild Combatant's Silk Trousers (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
-									i(124909), 	-- Wild Combatant's Hood of Prowess (A)
-									i(124912), 	-- Wild Combatant's Amice of Prowess (A)
+									i(124909),	-- Wild Combatant's Hood of Prowess (A)
+									i(124912),	-- Wild Combatant's Amice of Prowess (A)
 									i(124911),	-- Wild Combatant's Robes of Prowess (A)
 									i(124908),	-- Wild Combatant's Gloves of Prowess (A)
 									i(124910),	-- Wild Combatant's Leggings of Prowess (A)
@@ -3798,8 +3798,8 @@ _.PVP =
 									i(125004, {	-- Wild Combatant's Satin Robe (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
-									i(124909), 	-- Wild Combatant's Hood of Prowess (A)
-									i(124912), 	-- Wild Combatant's Amice of Prowess (A)
+									i(124909),	-- Wild Combatant's Hood of Prowess (A)
+									i(124912),	-- Wild Combatant's Amice of Prowess (A)
 									i(124911),  -- Wild Combatant's Robes of Prowess (A)
 									i(124908),	-- Wild Combatant's Gloves of Prowess (A)
 									i(124910),	-- Wild Combatant's Leggings of Prowess (A)
@@ -3897,8 +3897,8 @@ _.PVP =
 									i(125055, {	-- Wild Combatant's Felweave Trousers (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
-									i(124909), 	-- Wild Combatant's Hood of Prowess (A)
-									i(124912), 	-- Wild Combatant's Amice of Prowess (A)
+									i(124909),	-- Wild Combatant's Hood of Prowess (A)
+									i(124912),	-- Wild Combatant's Amice of Prowess (A)
 									i(124911),	-- Wild Combatant's Robes of Prowess (A)
 									i(124908),	-- Wild Combatant's Gloves of Prowess (A)
 									i(124910),	-- Wild Combatant's Leggings of Prowess (A)

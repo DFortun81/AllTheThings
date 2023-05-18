@@ -1965,7 +1965,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(968, { 	-- The Powers Below
+				q(968, {	-- The Powers Below
 					["provider"] = { "i", 5352 },	-- Book: The Powers Below
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { IRONFORGE },

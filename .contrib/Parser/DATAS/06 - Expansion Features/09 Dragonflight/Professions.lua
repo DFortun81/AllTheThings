@@ -532,7 +532,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(205211),	-- Nutrient Diluted Protofluid
 					},
 				})),
-				o(401238, 	-- Marrow-Ripened Slime
+				o(401238,	-- Marrow-Ripened Slime
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 62.1, 41.1, ZARALEK_CAVERN },
 					["questID"] = 75649,
@@ -547,7 +547,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198712),	-- Firewater Powder Sample
 					},
 				}),
-				o(401240, 	-- Suspicious Mold
+				o(401240,	-- Suspicious Mold
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 40.4, 59.2, ZARALEK_CAVERN },
 					["questID"] = 75651,
@@ -752,7 +752,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(201004),	-- Ancient Spear Shards
 					},
 				}),
-				o(402632, 	-- Brimstone Rescue Ring
+				o(402632,	-- Brimstone Rescue Ring
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 48.3, 22.0, ZARALEK_CAVERN },
 					["questID"] = 76079,
@@ -812,7 +812,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(201011),	-- Spelltouched Tongs
 					},
 				}),
-				o(402627, 	-- Well-Worn Kiln
+				o(402627,	-- Well-Worn Kiln
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 57.2, 54.6, ZARALEK_CAVERN },
 					["questID"] = 76078,
@@ -820,7 +820,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(205986),	-- Well-Worn Kiln
 					},
 				})),
-				o(402634, 	-- Zaqali Elder Spear
+				o(402634,	-- Zaqali Elder Spear
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 					["coord"] = { 27.5, 42.9, ZARALEK_CAVERN },
 					["questID"] = 76080,

@@ -209,19 +209,19 @@ root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(CALL_OF_THE_SCARAB, bub
 				},
 				["g"] = {
 					n(117662, {	-- The Duke of Cynders <Abyssal Council>
-						i(143880), 	-- Cinder of Cynders [A]
+						i(143880),	-- Cinder of Cynders [A]
 						i(143872),	-- Cinder of Cynders [H]
 					}),
 					n(117663, {	-- The Duke of Fathoms <Abyssal Council>
-						i(143881), 	-- Pearl of Fathoms [A]
+						i(143881),	-- Pearl of Fathoms [A]
 						i(143873),	-- Pearl of Fathoms [H]
 					}),
 					n(117664, {	-- The Duke of Shards <Abyssal Council>
-						i(143882), 	-- Salt of Shards [A]
+						i(143882),	-- Salt of Shards [A]
 						i(143874),	-- Salt of Shards [H]
 					}),
 					n(117665, {	-- The Duke of Zephyrs <Abyssal Council>
-						i(143883), 	-- Song of Zephyrs [A]
+						i(143883),	-- Song of Zephyrs [A]
 						i(143875),	-- Song of Zephyrs [H]
 					}),
 				},
@@ -236,19 +236,19 @@ root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(CALL_OF_THE_SCARAB, bub
 				},
 				["g"] = {
 					n(15205, {	-- Baron Kazum <Abyssal High Council>
-						i(143886), 	-- Diamondine Sigil of Kazum [A]
+						i(143886),	-- Diamondine Sigil of Kazum [A]
 						i(143878),	-- Diamondine Sigil of Kazum [H]
 					}),
 					n(15204, {	-- High Marshal Whirlaxis <Abyssal High Council>
-						i(143885), 	-- Glimmering Sigil of Whirlaxis [A]
+						i(143885),	-- Glimmering Sigil of Whirlaxis [A]
 						i(143877),	-- Glimmering Sigil of Whirlaxis [H]
 					}),
 					n(15305, {	-- Lord Skwol <Abyssal High Council>
-						i(143887), 	-- Tidal Sigil of Skwol [A]
+						i(143887),	-- Tidal Sigil of Skwol [A]
 						i(143879),	-- Tidal Sigil of Skwol [H]
 					}),
 					n(15203, {	-- Prince Skaldrenox <Abyssal High Council>
-						i(143884), 	-- Coreforged Sigil of Skaldrenox [A]
+						i(143884),	-- Coreforged Sigil of Skaldrenox [A]
 						i(143876),	-- Coreforged Sigil of Skaldrenox [H]
 					}),
 				},

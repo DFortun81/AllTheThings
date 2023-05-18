@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 32,
 				}),
 				q(1394, {	-- Final Passage
-					["qg"] = 4488, 	-- Parqual Fintallas
+					["qg"] = 4488,	-- Parqual Fintallas
 					["sourceQuest"] = 6628,	-- Test of Lore (6/6)
 					["coord"] = { 57.75, 65.39, UNDERCITY },
 					["timeline"] = { "removed 4.0.3" },

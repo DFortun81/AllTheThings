@@ -15,13 +15,13 @@ _.Zones =
 					p(487, {	-- Alpine Chipmonk
 						["crs"] = { 62189 },	-- Alpine Chipmonk
 					}),
-					pet(1743), 	-- Black-Footed Fox Kit
-					pet(1726), 	-- Burrow Spiderling
-					p(1775), 	-- Coralback Fiddler
+					pet(1743),	-- Black-Footed Fox Kit
+					pet(1726),	-- Burrow Spiderling
+					p(1775),	-- Coralback Fiddler
 					p(1761, {	-- Echo Batling
 						["crs"] = { 88542 },	-- Echo Batling
 					}),
-					pet(1731), 	-- Felspider
+					pet(1731),	-- Felspider
 					p(407, {	-- Forest Spiderling
 						["crs"] = { 61320 },	-- Forest Spiderling
 					}),
@@ -31,23 +31,23 @@ _.Zones =
 					pet(1762, {	-- Hog-Nosed Bat
 						["coord"] = { 50.8, 33.6, HIGHMOUNTAIN },
 					}),
-					pet(1713), 	-- Long-Eared Owl
-					pet(1744), 	-- Mist Fox Kit
+					pet(1713),	-- Long-Eared Owl
+					pet(1744),	-- Mist Fox Kit
 					p(391, {	-- Mountain Cottontail
 						["crs"] = { 61167 },	-- Mountain Cottontail
 					}),
 					p(1441, {	-- Mud Jumper
 						["crs"] = { 83642 },	-- Mud Jumper
 					}),
-					pet(1776), 	-- Mudshell Conch
-					pet(1714), 	-- Northern Hawk Owl
+					pet(1776),	-- Mudshell Conch
+					pet(1714),	-- Northern Hawk Owl
 					p(417, {	-- Rat
 						["crs"] = { 61366 },	-- Rat
 					}),
 					p(496, {	-- Rusty Snail
 						["crs"] = { 62313 },	-- Rusty Snail
 					}),
-					p(1763), 	-- Spiketail Beaver
+					p(1763),	-- Spiketail Beaver
 					p(1590, {	-- Swamplighter Firefly
 						["crs"] = { 88359 },	-- Swamplighter Firefly
 					}),

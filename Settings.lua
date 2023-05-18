@@ -786,16 +786,16 @@ settings.CreateDropdown = function(self, opts, OnRefresh)
 	dropdown:SetHeight(19);
 	-- dropdown:SetBackdrop({
 	-- 	bgFile = "Interface\\COMMON\\Common-Input-Border",
-	-- 	-- edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border.PNG",
-	-- 	-- tile = true,
-	-- 	-- tileEdge = true,
-	-- 	-- tileSize = 8,
-	-- 	-- edgeSize = 3,
+	--	-- edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border.PNG",
+	--	-- tile = true,
+	--	-- tileEdge = true,
+	--	-- tileSize = 8,
+	--	-- edgeSize = 3,
 	-- 	insets = { left = 1, right = 1, top = 1, bottom = 1 },
 	-- });
     local dd_title = AddLabel(dropdown, title_text);
 
- 	-- Sets the dropdown width to the largest item string width.
+	-- Sets the dropdown width to the largest item string width.
 	 if width == 0 then
 		for _,item in ipairs(menu_items) do
 			dd_title:SetText(item);

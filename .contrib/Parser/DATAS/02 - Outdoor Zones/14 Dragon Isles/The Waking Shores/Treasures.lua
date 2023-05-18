@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			n(195939, {	-- Bubble Drifter
 				["coord"] = { 40.6, 41.2, THE_WAKING_SHORES },
 				["description"] = "Use nearby Fragrant Plant to attract Bubble Drifter.",
- 				["questID"] = 70599,
+				["questID"] = 70599,
 				["cost"] = { { "i", 199061, 1 }, },	-- 1x A Guide to Rare Fish
 				["g"] = {
 					i(193852),	-- Azure Frillfish (PET!)

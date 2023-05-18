@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			q(50877),	-- Gahz'ralka
 			h(q(54505, {	-- Get on the Payload (Faction Assault WQ)
-				h(ach(13441)), 	-- Pushing the Payload (H)
+				h(ach(13441)),	-- Pushing the Payload (H)
 			})),
 			q(50870),	-- G'Naat
 			q(54243, {	-- Gobliteration

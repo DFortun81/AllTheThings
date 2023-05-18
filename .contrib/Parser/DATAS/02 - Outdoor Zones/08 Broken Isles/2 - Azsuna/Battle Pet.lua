@@ -7,11 +7,11 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			petbattle(filter(BATTLE_PETS, {
-				pet(1708), 	-- Albatross Chick
+				pet(1708),	-- Albatross Chick
 				p(706, {	-- Bandicoon
 					["crs"] = { 63062 },	-- Bandicoon
 				}),
-				pet(1914), 	-- Coastal Sandpiper
+				pet(1914),	-- Coastal Sandpiper
 				p(396, {	-- Dusk Spiderling
 					["crs"] = { 61253 },	-- Dusk Spiderling
 				}),
@@ -21,7 +21,7 @@ _.Zones =
 				pet(1773, {	-- Erudite Manafiend
 					["description"] = "This pet can only spawn during the day between 6:30am to 8:30pm server time.",
 				}),
-				pet(1731), 	-- Felspider
+				pet(1731),	-- Felspider
 				pet(1709, {	-- Fledgling Kingfeather
 					["coord"] = { 44.4, 23.6, AZSUNA },
 				}),
@@ -59,7 +59,7 @@ _.Zones =
 				p(1587, {	-- Royal Moth
 					["crs"] = { 88417 },	-- Royal Moth
 				}),
-				pet(1736), 	-- Slithering Brownscale
+				pet(1736),	-- Slithering Brownscale
 				p(1935, {	-- Squirky
 					["crs"] = { 113440 },	-- Squirky
 				}),

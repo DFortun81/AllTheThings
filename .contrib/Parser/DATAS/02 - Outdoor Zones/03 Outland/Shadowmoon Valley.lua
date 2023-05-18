@@ -1669,7 +1669,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
-							objective(1, {	-- 	The Path of Conquest Discovered
+							objective(1, {	-- The Path of Conquest Discovered
 								["provider"] = { "i", 31310 },	-- Wildhammer Flare Gun (Provided)
 								["coord"] = { 51, 62, SHADOWMOON_VALLEY },
 							}),

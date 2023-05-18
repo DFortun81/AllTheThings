@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7842, {	-- Another Message to the Wildhammer
 					["qg"] = 14738,	-- Otho Moji'ko <Cooking Supplier>
-					["sourceQuest"] = 7841, 	-- Message to the Wildhammer
+					["sourceQuest"] = 7841,	-- Message to the Wildhammer
 					["coord"] = { 79.2, 79.0, THE_HINTERLANDS },
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
@@ -981,7 +981,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(836, { 	-- Rescue OOX-09/HL!
+				q(836, {	-- Rescue OOX-09/HL!
 					["qg"] = 7806,	-- Homing Robot OOX-09/HL
 					["sourceQuest"] = 485,	-- Find OOX-09/HL!
 					["coord"] = { 49.4, 37.6, THE_HINTERLANDS },
@@ -1406,7 +1406,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
-				q(2989, { 	-- The Altar of Zul
+				q(2989, {	-- The Altar of Zul
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["sourceQuest"] = 2988,	-- Witherbark Cages
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },

@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Inside the cave. Need to collect 5xLost Ovoids around Zereth Mortis.",
 				["coord"] = { 53.6, 72.2, ZERETH_MORTIS },
 				["questID"] = 65522,
-				["cost"] = { { "i", 190239, 5 } }, 	-- 5xLost Ovoid
+				["cost"] = { { "i", 190239, 5 } },	-- 5xLost Ovoid
 				["g"] = {
 					i(189435),	-- Schematic: Multichicken
 				},

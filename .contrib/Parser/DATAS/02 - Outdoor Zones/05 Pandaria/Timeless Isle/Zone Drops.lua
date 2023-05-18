@@ -251,38 +251,38 @@ _.Zones =
 				i(103982, {	-- Burden of Eternity
 					["sym"] = { {"fill"} },	-- fill this item with cached data
 					["crs"] = {
-						73174, 	-- Archiereus of Flame
+						73174,	-- Archiereus of Flame
 						73666,	-- Archiereus of Flame
-						72775, 	-- Bufo
-						73171, 	-- Champion of the Black Flame
-						72045, 	-- Chelon
-						73175, 	-- Cinderfall
-						72049, 	-- Cranegnasher
-						73281, 	-- Dread Ship Vazuvius
-						73158, 	-- Emerald Gander
-						73279, 	-- Evermaw <Gnawing Hunger of the Deep>
-						73172, 	-- Flintlord Gairan
-						73282, 	-- Garnia
-						72970, 	-- Golganarr
-						73161, 	-- Great Turtle Furyshell
-						72909, 	-- Gu'chi the Swarmbringer
-						73167, 	-- Huolon
-						73163, 	-- Imperial Python
-						73160, 	-- Ironfur Steelhorn
-						73169, 	-- Jakur of Ordon
-						72193, 	-- Karkanos
-						73277, 	-- Leafmender
-						73166, 	-- Monstrous Spineclaw
-						72048, 	-- Rattleskew
-						73157, 	-- Rock Moss
-						71864, 	-- Spelurk
-						73704, 	-- Stinkbraid
-						72769, 	-- Spirit of Jadefire
-						72808, 	-- Tsavo'ka
-						73173, 	-- Urdur the Cauterizer
-						73170, 	-- Watcher Osu
-						72245, 	-- Zesqua
-						71919, 	-- Zhu-Gon the Sour
+						72775,	-- Bufo
+						73171,	-- Champion of the Black Flame
+						72045,	-- Chelon
+						73175,	-- Cinderfall
+						72049,	-- Cranegnasher
+						73281,	-- Dread Ship Vazuvius
+						73158,	-- Emerald Gander
+						73279,	-- Evermaw <Gnawing Hunger of the Deep>
+						73172,	-- Flintlord Gairan
+						73282,	-- Garnia
+						72970,	-- Golganarr
+						73161,	-- Great Turtle Furyshell
+						72909,	-- Gu'chi the Swarmbringer
+						73167,	-- Huolon
+						73163,	-- Imperial Python
+						73160,	-- Ironfur Steelhorn
+						73169,	-- Jakur of Ordon
+						72193,	-- Karkanos
+						73277,	-- Leafmender
+						73166,	-- Monstrous Spineclaw
+						72048,	-- Rattleskew
+						73157,	-- Rock Moss
+						71864,	-- Spelurk
+						73704,	-- Stinkbraid
+						72769,	-- Spirit of Jadefire
+						72808,	-- Tsavo'ka
+						73173,	-- Urdur the Cauterizer
+						73170,	-- Watcher Osu
+						72245,	-- Zesqua
+						71919,	-- Zhu-Gon the Sour
 					},
 				}),
 				i(102318, {	-- Timeless Cloak

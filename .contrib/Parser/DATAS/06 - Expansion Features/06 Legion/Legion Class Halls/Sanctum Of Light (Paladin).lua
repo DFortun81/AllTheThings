@@ -130,7 +130,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["sourceQuests"] = {
 								40408,	-- Weapons of Legend
 								44063,	-- Bolstering Your Arsenal
-								44370, 	-- Completing Your Arsenal
+								44370,	-- Completing Your Arsenal
 							},
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus

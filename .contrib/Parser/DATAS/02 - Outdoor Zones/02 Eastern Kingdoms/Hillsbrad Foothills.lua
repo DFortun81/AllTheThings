@@ -1333,7 +1333,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 46, 32, HILLSBRAD_FOOTHILLS },
 							["cost"] = { { "i", 3710, 1 } },	-- Rod of Helcular
 						}),
-						objective(3, {	-- 	Flame of Uzel charged
+						objective(3, {	-- Flame of Uzel charged
 							["provider"] = { "o", 1770 },	-- Flame of Uzel
 							["coord"] = { 37, 68, ALTERAC_MOUNTAINS },
 							["cost"] = { { "i", 3710, 1 } },	-- Rod of Helcular

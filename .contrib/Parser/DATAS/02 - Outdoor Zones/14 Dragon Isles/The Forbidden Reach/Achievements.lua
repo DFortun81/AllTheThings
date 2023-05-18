@@ -220,13 +220,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				crit(9, {	-- Stonescaled Cairn
 					-- TODO: ["_quests"] = {  },
 				}),
-				crit(10, {	-- 	Blazing Cairn
+				crit(10, {	-- Blazing Cairn
 					-- TODO: ["_quests"] = {  },
 				}),
-				crit(11, {	-- 	Frozenheart Cairn
+				crit(11, {	-- Frozenheart Cairn
 					-- TODO: ["_quests"] = {  },
 				}),
-				crit(12, {	-- 	Morqut Provisions
+				crit(12, {	-- Morqut Provisions
 					-- TODO: ["_quests"] = {  },
 				}),
 			}),
@@ -284,17 +284,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			ach(17543, {	-- You Know How to Reach Me [META]
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
-					17525, 	-- Champion of the Forbidden Reach
+					17525,	-- Champion of the Forbidden Reach
 					17413,	-- Door Buster
 					17509,	-- Every Door, Everywhere, All At Once
 					17534,	-- Explore the Forbidden Reach
 					17529,	-- Forbidden Spoils
 					17528,	-- Hoarder of the Forbidden Reach
-					17530, 	-- Librarian of the Reach
+					17530,	-- Librarian of the Reach
 					17532,	-- Scroll Hunter
 					17526,	-- Treasures of the Forbidden Reach
-					17540, 	-- Under the Weather
-					17315, 	-- While We Were Sleeping
+					17540,	-- Under the Weather
+					17315,	-- While We Were Sleeping
 				}},
 				["g"] = {
 					title(495),	-- <Name> the Forbidden

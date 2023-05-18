@@ -841,7 +841,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
-		q(76118), 	-- Accept Untranslated Obsidian Tome from Wrathion
+		q(76118),	-- Accept Untranslated Obsidian Tome from Wrathion
 		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
 		q(75642),	-- Unknown Account-Wide trigger when zoning into Dragon Isles for first time on an alt
 

@@ -237,7 +237,7 @@ root(ROOTS.WorldEvents, m(503,
 					i(98093),	-- Sightless Mantle
 					i(98081),	-- The Boomshirt
 					i(98086),	-- Tuxedo-Like Shirt
-					i(144394), 	-- Tylarr Gronnden (PET!)
+					i(144394),	-- Tylarr Gronnden (PET!)
 					i(98082),	-- Undisputed Champion's Shirt
 					i(98543),	-- Wraps of the Blood-Soaked Brawler
 				},

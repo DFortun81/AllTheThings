@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			n(ACHIEVEMENTS, {
 				ach(17741, {	-- Slow and Steady Wins the Race
 					i(205231),	-- Roggy (PET!)
-					crit(1, { 	-- Bashful wins
+					crit(1, {	-- Bashful wins
 						["sourceQuests"] = { 75662 },	-- A Race To The Finish
 					}),
 					crit(2, {	-- Tricky wins
@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 				q(75598, {	-- Snailed It
-					["minReputation"] = { 2568, 5 },	-- Rank 5, Professional, 2800 
+					["minReputation"] = { 2568, 5 },	-- Rank 5, Professional, 2800
 					["provider"] = { "n", 201752 },	-- Briggul
 					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 					["g"] = {
@@ -93,7 +93,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 				q(75706, {	-- A Race To The Finish
-			 		["g"] = {
+					["g"] = {
 						i(205121),	-- Tricky (PET!)
 					},
 				}),

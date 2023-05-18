@@ -191,7 +191,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(15854, {	-- Dancing Sliver
 								["timeline"] = { "removed 4.0.3" },
 							}),
-							i(15853, { 	-- Windreaper
+							i(15853, {	-- Windreaper
 								["timeline"] = { "removed 4.0.3" },
 							}),
 						},
@@ -784,7 +784,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["description"] = "Can be found in the very back of the first room hidden behind some bookshelves.",
 					["timeline"] = { "removed 5.0.4" },
 				}),
-				n(10506, { 	-- Kirtonos the Herald
+				n(10506, {	-- Kirtonos the Herald
 					-- #if BEFORE 5.0.4
 					["providers"] = {
 						{ "o", 175564 },	-- Brazier of the Herald

@@ -1419,7 +1419,7 @@ _.ExpansionFeatures =
 
 						-- Escape of Saurfang
 						q(54097, {	-- The Dark Lady Calls
-							["sourceQuests"] = { 54165 }, 	-- The Return of Derek Proudmoore
+							["sourceQuests"] = { 54165 },	-- The Return of Derek Proudmoore
 							["provider"] = { "n", 146013 },	-- Dark Ranger Alina
 							["coord"] = { 58.4, 62.7, ZULDAZAR },
 							["races"] = HORDE_ONLY,

@@ -464,7 +464,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					["_npcs"] = { 151627 },
 				}),
 				crit(30, {	-- Vaultbot
-					["_npcs"] = { 150394 }, 	-- Armored Vaultbot
+					["_npcs"] = { 150394 },	-- Armored Vaultbot
 				}),
 				crit(31, {	-- Enforcer KX-T57
 					["_npcs"] = { 154153 },

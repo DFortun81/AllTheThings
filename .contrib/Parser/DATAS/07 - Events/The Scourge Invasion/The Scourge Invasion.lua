@@ -749,7 +749,7 @@ root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, --
 					},
 				}),
 			}),
-			n(14684, { 	-- Balzaphon
+			n(14684, {	-- Balzaphon
 				["description"] = "Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",
 				["maps"] = { STRATHOLME },
 				["groups"] = {

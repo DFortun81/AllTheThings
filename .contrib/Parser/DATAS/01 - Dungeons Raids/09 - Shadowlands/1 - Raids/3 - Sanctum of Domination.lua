@@ -626,7 +626,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 							i(186550),	-- Mawsworn Minion (PET!)
 							i(187542),	-- Jaithys, the Prison Blade
 							i(186410, {	-- Jaithys, the Prison Blade
-								["description"] = "Only availabe in the great Vault.",										
+								["description"] = "Only availabe in the great Vault.",
 								["timeline"] = { REMOVED_10_0_2_LAUNCH },
 							}),
 							i(186406),	-- Maledict Opus
@@ -848,7 +848,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
-							["description"] = "Only availabe in the great Vault.",										
+							["description"] = "Only availabe in the great Vault.",
 							["timeline"] = { REMOVED_10_0_2_LAUNCH },
 						}),
 						i(186406),	-- Maledict Opus
@@ -1057,7 +1057,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
-							["description"] = "Only availabe in the great Vault.",										
+							["description"] = "Only availabe in the great Vault.",
 							["timeline"] = { REMOVED_10_0_2_LAUNCH },
 						}),
 						i(186406),	-- Maledict Opus
@@ -1279,7 +1279,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
-							["description"] = "Only availabe in the great Vault.",										
+							["description"] = "Only availabe in the great Vault.",
 							["timeline"] = { REMOVED_10_0_2_LAUNCH },
 						}),
 						i(186406),	-- Maledict Opus
@@ -1453,7 +1453,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDE
 
 		q(64481),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
 		q(64482),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
-		q(64483), 	-- Soulrender Dormazain (Heroic) (Heroic-Week 2)
+		q(64483),	-- Soulrender Dormazain (Heroic) (Heroic-Week 2)
 		q(64633),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
 		q(64660),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
 		q(64484),	-- Soulrender Dormazain (Mythic)

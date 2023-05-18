@@ -445,7 +445,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
-						objective(1, {	-- 0/1 	Ram Collared and Returned
+						objective(1, {	-- 0/1 Ram Collared and Returned
 							["provider"] = { "i", 17689 },	-- Stormpike Training Collar
 							["cr"] = 10990,	-- Alterac Ram
 						}),
@@ -458,7 +458,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
-						objective(1, {	-- 0/1 	Frostwolf Muzzled and Returned
+						objective(1, {	-- 0/1 Frostwolf Muzzled and Returned
 							["provider"] = { "i", 17626 },	-- Frostwolf Muzzle
 							["cr"] = 10981,	-- Frostwolf
 						}),

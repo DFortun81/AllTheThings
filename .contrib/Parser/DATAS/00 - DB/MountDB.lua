@@ -310,8 +310,8 @@ i(0, 55164);		-- Swift Spectral Gryphon
 -----------------
 -- NYI --
 i(0, 44317);		-- Merciless Nether Drake
-i(27819, 24242);	-- Swift Razzashi Raptor 	/	Crazy Raptor 75
-i(27853, 24242);	-- Swift Razzashi Raptor 	/	Crazy Raptor 150
+i(27819, 24242);	-- Swift Razzashi Raptor	/	Crazy Raptor 75
+i(27853, 24242);	-- Swift Razzashi Raptor	/	Crazy Raptor 150
 i(37598, 48954);	-- Swift Zhevra				/	Swift Zhevra OLD
 i(28025, 33631);	-- Video Mount				/	Video Mount
 
@@ -1399,7 +1399,7 @@ i(186000, 352441);	-- Wild Hunt Legsplitter
 i(186495, 353858);	-- Winter Wilderling
 -- NYI --
 i(186639, 353264);	-- Pilfered Gearglider	/	Pilfered Gearglider
-i(187412, 0); 		-- Shardhide Ka-Sha
+i(187412, 0);		-- Shardhide Ka-Sha
 i(186640, 353265);	-- Silver Gearglider	/	Silver Gearglider
 i(186491, 353860);	-- Spring Wilderling	/	Spring Wilderling Harness
 
@@ -1441,7 +1441,7 @@ i(190580, 367673);	-- Heartbond Lupine
 i(187629, 359229);	-- Heartlight Vombata
 i(187679, 359403);	-- Ineffable Skitterer
 i(187667, 359372);	-- Mawdapted Raptora
-i(187639, 342671); 	-- Pale Regal Cervid
+i(187639, 342671);	-- Pale Regal Cervid
 i(188809, 363703);	-- Prototype Leaper
 i(187668, 359373);	-- Raptora Swooper
 i(188808, 363701);	-- Patient Bufonid

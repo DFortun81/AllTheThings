@@ -810,7 +810,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { WARLOCK },
 					["lvl"] = 31,
 				}),
-				q(4782, { 	-- Components for the Enchanted Gold Bloodrobe (3/5)
+				q(4782, {	-- Components for the Enchanted Gold Bloodrobe (3/5)
 					["qg"] = 2670,	-- Xizk Goodstitch
 					["sourceQuest"] = 4781,	-- Components for the Enchanted Gold Bloodrobe (2/5)
 					["coord"] = { 28.6, 76.8, STRANGLETHORN_VALE },
@@ -1565,8 +1565,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						objective(1, {	-- 0/1 	Ishamuhale's Fang
-							["provider"] = { "i", 5101 },	-- 	Ishamuhale's Fang
+						objective(1, {	-- 0/1 Ishamuhale's Fang
+							["provider"] = { "i", 5101 },	-- Ishamuhale's Fang
 							["coord"] = { 59.8, 30.6, THE_BARRENS },
 							["cost"] = {{ "i", 10338, 1 }},	-- Fresh Zhevra Carcass
 							["cr"] = 3257,	-- Ishamuhale

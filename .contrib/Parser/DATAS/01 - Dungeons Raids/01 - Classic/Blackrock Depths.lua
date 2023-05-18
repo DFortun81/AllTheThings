@@ -918,12 +918,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				
-				
-				
-				
-				
-				
+
+
+
+
+
+
 				q(4132, {	-- Operation: Death to Angerforge
 					["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
 					["sourceQuest"] = 4121,	-- Precarious Predicament
@@ -2324,11 +2324,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(15770, {	-- Pattern: Black Dragonscale Shoulders
 					["cr"] = 8898,	-- Anvilrage Marshal
 				}),
-				i(11614, { 	-- Plans: Dark Iron Mail (RECIPE!)
+				i(11614, {	-- Plans: Dark Iron Mail (RECIPE!)
 					["description"] = "|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables.  It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it.  This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room it will be in the back left corner where in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room you will continue straight until you see the ramp.  Instead of going down the ramp you will jump off the ledge to the right of the ramp.  After landing on the ground you will see the plans located here.",
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans
 				}),
-				i(11615, { 	-- Plans: Dark Iron Shoulders (RECIPE!)
+				i(11615, {	-- Plans: Dark Iron Shoulders (RECIPE!)
 					["description"] = "|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room.  When you come across the first split into two rooms you will enter the room on the left.  They will be located on the seat behind the bench which is located next to the 3 red jugs.",
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans
 				}),
@@ -2420,7 +2420,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(11623),	-- Spritecaster Cape
 					},
 				}),
-				applyclassicphase(PHASE_FIVE, n(16059, 	-- Theldren
+				applyclassicphase(PHASE_FIVE, n(16059,	-- Theldren
 				-- #if AFTER 4.0.3
 				{
 				-- This Update function unmarks the removed from game flag for folks with the banner.

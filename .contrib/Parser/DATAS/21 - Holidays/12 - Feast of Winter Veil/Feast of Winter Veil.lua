@@ -881,7 +881,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 			},
 		}),
 		n(QUESTS, {
-			q(8744, { 	-- A Carefully Wrapped Present
+			q(8744, {	-- A Carefully Wrapped Present
 				["providers"] = {
 					{ "o", 180743 },	-- Carefully Wrapped Present
 					{ "i", 21191 },	-- Carefully Wrapped Present
@@ -905,7 +905,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(21254),	-- Winter Veil Cookie
 				},
 			}),
-			q(8803, { 	-- A Festive Gift
+			q(8803, {	-- A Festive Gift
 				["providers"] = {
 					{ "o", 180793 },	-- Festive Gift
 					{ "i", 21363 },	-- Festive Gift
@@ -918,7 +918,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(21328),	-- Wand of Holiday Cheer
 				},
 			}),
-			q(8768, { 	-- A Gaily Wrapped Present
+			q(8768, {	-- A Gaily Wrapped Present
 				["providers"] = {
 					{ "o", 180747 },	-- Gaily Wrapped Present
 					{ "i", 21310 },	-- Gaily Wrapped Present
@@ -934,7 +934,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(21309),	-- Tiny Snowman (PET!)
 				},
 			}),
-			q(8767, { 	-- A Gently Shaken Gift [Non-Spell Casters Only] (Before 2015)
+			q(8767, {	-- A Gently Shaken Gift [Non-Spell Casters Only] (Before 2015)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 21270 },	-- Gently Shaken Gift
@@ -965,7 +965,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(8788, { 	-- A Gently Shaken Gift [Spell Casters Only] (Before 2015)
+			q(8788, {	-- A Gently Shaken Gift [Spell Casters Only] (Before 2015)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 21271 },	-- Gently Shaken Gift
@@ -996,7 +996,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(39658, { 	-- A Gently Shaken Gift (2015)
+			q(39658, {	-- A Gently Shaken Gift (2015)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 128652 },	-- Gently Shaken Gift
@@ -1014,7 +1014,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(43364, { 	-- A Gently Shaken Gift (2016)
+			q(43364, {	-- A Gently Shaken Gift (2016)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 139343 },	-- Gently Shaken Gift
@@ -1032,7 +1032,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(50420, { 	-- A Gently Shaken Gift (2017)
+			q(50420, {	-- A Gently Shaken Gift (2017)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 151345 },	-- Gently Shaken Gift
@@ -1055,7 +1055,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(53011, { 	-- A Gently Shaken Gift (2018)
+			q(53011, {	-- A Gently Shaken Gift (2018)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 162974 },	-- Gently Shaken Gift
@@ -1073,7 +1073,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(57643, { 	-- A Gently Shaken Gift (2019)
+			q(57643, {	-- A Gently Shaken Gift (2019)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 172225 },	-- Gently Shaken Gift
@@ -1091,7 +1091,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(60238, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, "removed 9.0.2.37142" } }, { 	-- A Gently Shaken Gift (2020)
+			q(60238, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, "removed 9.0.2.37142" } }, {	-- A Gently Shaken Gift (2020)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 178529 },	-- Gently Shaken Gift
@@ -1106,7 +1106,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			})),
-			q(64581, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" } }, { 	-- A Gently Shaken Gift (2021)
+			q(64581, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" } }, {	-- A Gently Shaken Gift (2021)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 187520 },	-- Gently Shaken Gift
@@ -1121,7 +1121,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			})),
-			q(66508, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" } }, { 	-- A Gently Shaken Gift (2022)
+			q(66508, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" } }, {	-- A Gently Shaken Gift (2022)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 192093 },	-- Gently Shaken Gift
@@ -1187,7 +1187,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(11528, { 	-- A Winter Veil Gift (2007)
+			q(11528, {	-- A Winter Veil Gift (2007)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 34426 },	-- Winter Veil Gift
@@ -1207,7 +1207,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(13203, { 	-- A Winter Veil Gift (2008)
+			q(13203, {	-- A Winter Veil Gift (2008)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 43504 },	-- Winter Veil Gift
@@ -1227,7 +1227,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(13966, { 	-- A Winter Veil Gift (2009)
+			q(13966, {	-- A Winter Veil Gift (2009)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 46740 },	-- Winter Veil Gift
@@ -1242,7 +1242,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(28878, { 	-- A Winter Veil Gift (2010)
+			q(28878, {	-- A Winter Veil Gift (2010)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 67443 },	-- Winter Veil Gift
@@ -1258,7 +1258,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(29385, { 	-- A Winter Veil Gift (2011)
+			q(29385, {	-- A Winter Veil Gift (2011)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 70938 },	-- Winter Veil Gift
@@ -1274,7 +1274,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(32106, { 	-- A Winter Veil Gift (2012)
+			q(32106, {	-- A Winter Veil Gift (2012)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 90892 },	-- Winter Veil Gift
@@ -1293,7 +1293,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(33252, { 	-- A Winter Veil Gift (2013)
+			q(33252, {	-- A Winter Veil Gift (2013)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 104319 },	-- Winter Veil Gift
@@ -1309,7 +1309,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(36617, { 	-- A Winter Veil Gift (2014)
+			q(36617, {	-- A Winter Veil Gift (2014)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 116761 },	-- Winter Veil Gift
@@ -1325,7 +1325,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(39659, { 	-- A Winter Veil Gift (2015)
+			q(39659, {	-- A Winter Veil Gift (2015)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 128653 },	-- Winter Veil Gift
@@ -1341,7 +1341,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(43363, { 	-- A Winter Veil Gift (2016)
+			q(43363, {	-- A Winter Veil Gift (2016)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 139341 },	-- Winter Veil Gift
@@ -1357,7 +1357,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(47751, { 	-- A Winter Veil Gift (2017)
+			q(47751, {	-- A Winter Veil Gift (2017)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 151350 },	-- Winter Veil Gift
@@ -1378,7 +1378,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(52965, { 	-- A Winter Veil Gift (2018)
+			q(52965, {	-- A Winter Veil Gift (2018)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 162644 },	-- Winter Veil Gift
@@ -1399,7 +1399,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(57642, { 	-- A Winter Veil Gift (2019)
+			q(57642, {	-- A Winter Veil Gift (2019)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 172224 },	-- Winter Veil Gift
@@ -1420,7 +1420,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(60239, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, "removed 9.0.2.37142" } }, { 	-- A Winter Veil Gift (2020)
+			q(60239, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, "removed 9.0.2.37142" } }, {	-- A Winter Veil Gift (2020)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 178528 },	-- Winter Veil Gift
@@ -1433,7 +1433,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(178533),	-- Shaking Pet Carrier
 				},
 			})),
-			q(64639, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" } }, { 	-- A Winter Veil Gift (2021)
+			q(64639, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" } }, {	-- A Winter Veil Gift (2021)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 187561 },	-- Winter Veil Gift
@@ -1446,7 +1446,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(187560),	-- Rockin' Rollin' Racer Pack
 				},
 			})),
-			q(66507, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" } }, { 	-- A Winter Veil Gift (2022)
+			q(66507, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" } }, {	-- A Winter Veil Gift (2022)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 192094 },	-- Winter Veil Gift

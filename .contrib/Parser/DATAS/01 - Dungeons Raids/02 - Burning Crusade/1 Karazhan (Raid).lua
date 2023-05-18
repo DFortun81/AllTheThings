@@ -82,7 +82,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["provider"] = { "i", 24474 },	-- Violet Scrying Crystal
 							["coord"] = { 53.4, 89.4, DEADWIND_PASS },
 						}),
-						objective(2, {	-- 	Underground Pond Reading
+						objective(2, {	-- Underground Pond Reading
 							["provider"] = { "i", 24474 },	-- Violet Scrying Crystal
 							["coord"] = { 43, 13, DEADWIND_PASS },
 						}),
@@ -586,7 +586,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["lvl"] = 70,
 					["groups"] = {
-						objective(1, {	-- 	Journal Entry Read
+						objective(1, {	-- Journal Entry Read
 							["provider"] = { "i", 23934 },	-- Medivh's Journal
 						}),
 					},

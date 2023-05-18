@@ -541,7 +541,7 @@ end
 
 -- Data Lib
 local attData;
-local AllTheThingsTempData = {}; 	-- For temporary data.
+local AllTheThingsTempData = {};	-- For temporary data.
 local AllTheThingsAD = {};			-- For account-wide data.
 local function SetDataMember(member, data)
 	rawset(AllTheThingsAD, member, data);
@@ -2443,7 +2443,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, c
 	tinsert(info, mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??");
 	tinsert(info, coord and ("coord:"..coord) or "coord:??");
 	tinsert(info, "ver:"..app.Version);
-	tinsert(info, "```"); 	-- discord fancy box end
+	tinsert(info, "```");	-- discord fancy box end
 
 	return info;
 end
@@ -7679,7 +7679,7 @@ app.CollectibleAsCost = function(t)
 			-- Found something collectible for t, make sure t is actually obtainable as well
 			-- Make sure this thing can actually be collectible via hierarchy
 			-- if GetRelativeValue(t, "altcollected") then
-			-- 	-- literally have not seen this message in months, maybe is pointless...
+			--	-- literally have not seen this message in months, maybe is pointless...
 			-- 	app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
 			-- 	return;
 			-- end
@@ -13807,9 +13807,9 @@ local recipeFields = RawCloneData(fields, {
 		-- TODO: revise? this prevents showing a BoP, wrong-profession Recipe under a BoE used to obtain it, when within a Popout and NOT tracking Account-Wide Recipes
 		-- return app.CollectibleRecipes and
 		-- 	(
-		-- 	-- If tracking Account-Wide, then all Recipes are inherently collectible
+		--	-- If tracking Account-Wide, then all Recipes are inherently collectible
 		-- 	app.AccountWideRecipes or
-		-- 	-- Otherwise must be learnable by the Character specifically
+		--	-- Otherwise must be learnable by the Character specifically
 		-- 	app.CurrentCharacter.Professions[t.requireSkill]
 		-- 	);
 	end,
@@ -14731,10 +14731,10 @@ local function UpdateGroup(parent, group)
 	-- 	if LOG then print("First Update") end
 	-- 	group._Updated = app._Updated;
 	-- else
-	-- 	-- group has already updated on this pass
+	--	-- group has already updated on this pass
 	-- 	if LOG then print("Skip Update") end
-	-- 	-- print("Skip Update",app._Updated,group.key,group.key and group[group.key],"t/p/v",group.total,group.progress,group.visible)
-	-- 	-- Increment the parent group's totals.
+	--	-- print("Skip Update",app._Updated,group.key,group.key and group[group.key],"t/p/v",group.total,group.progress,group.visible)
+	--	-- Increment the parent group's totals.
 	-- 	parent.total = (parent.total or 0) + (group.total or 0);
 	-- 	parent.progress = (parent.progress or 0) + (group.progress or 0);
 	-- 	return group.visible;
@@ -15246,20 +15246,20 @@ local function CreateMinimapButton()
 		-- quadrant booleans (same order as SetTexCoord)
 		-- {bottom-right, bottom-left, top-right, top-left}
 		-- true = rounded, false = squared
-		["ROUND"] 			= {true,  true,  true,  true },
-		["SQUARE"] 			= {false, false, false, false},
-		["CORNER-TOPLEFT"] 		= {false, false, false, true },
-		["CORNER-TOPRIGHT"] 		= {false, false, true,  false},
-		["CORNER-BOTTOMLEFT"] 		= {false, true,  false, false},
-		["CORNER-BOTTOMRIGHT"]	 	= {true,  false, false, false},
-		["SIDE-LEFT"] 			= {false, true,  false, true },
-		["SIDE-RIGHT"] 			= {true,  false, true,  false},
-		["SIDE-TOP"] 			= {false, false, true,  true },
-		["SIDE-BOTTOM"] 		= {true,  true,  false, false},
-		["TRICORNER-TOPLEFT"] 		= {false, true,  true,  true },
-		["TRICORNER-TOPRIGHT"] 		= {true,  false, true,  true },
-		["TRICORNER-BOTTOMLEFT"] 	= {true,  true,  false, true },
-		["TRICORNER-BOTTOMRIGHT"] 	= {true,  true,  true,  false},
+		["ROUND"]			= {true,  true,  true,  true },
+		["SQUARE"]			= {false, false, false, false},
+		["CORNER-TOPLEFT"]		= {false, false, false, true },
+		["CORNER-TOPRIGHT"]		= {false, false, true,  false},
+		["CORNER-BOTTOMLEFT"]		= {false, true,  false, false},
+		["CORNER-BOTTOMRIGHT"]		= {true,  false, false, false},
+		["SIDE-LEFT"]			= {false, true,  false, true },
+		["SIDE-RIGHT"]			= {true,  false, true,  false},
+		["SIDE-TOP"]			= {false, false, true,  true },
+		["SIDE-BOTTOM"]		= {true,  true,  false, false},
+		["TRICORNER-TOPLEFT"]		= {false, true,  true,  true },
+		["TRICORNER-TOPRIGHT"]		= {true,  false, true,  true },
+		["TRICORNER-BOTTOMLEFT"]	= {true,  true,  false, true },
+		["TRICORNER-BOTTOMRIGHT"]	= {true,  true,  true,  false},
 	};
 	button.update = function(self)
 		local position = GetDataMember("Position", -10.31);
@@ -15343,7 +15343,7 @@ function app:CreateMiniListForGroup(group)
 		end
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
-		-- 	-- make a search for this group if it is an item/currency and not already a container for things
+		--	-- make a search for this group if it is an item/currency and not already a container for things
 		-- 	if not group.g and (group.itemID or group.currencyID) then
 		-- 		local cmd = group.key .. ":" .. group[group.key];
 		-- 		group = GetCachedSearchResults(cmd, SearchForLink, cmd);
@@ -16073,7 +16073,7 @@ local function Refresh(self)
 	end
 	-- local headerAdjust = 0;
 	-- if startIndent ~= 8 then
-	-- 	-- header only adjust
+	--	-- header only adjust
 	-- 	headerAdjust = startIndent - 8;
 	-- 	print("header adjust",headerAdjust)
 	-- 	row = rawget(container.rows, 1);
@@ -16979,7 +16979,7 @@ RowOnEnter = function (self)
 					-- local specs = reference.specs;
 					-- if specs then
 					-- 	local class, specItems, min, count = app.ClassIndex, {}, 100;
-					-- 	-- get items per spec and min items
+					--	-- get items per spec and min items
 					-- 	for _,specID in pairs(specs) do
 					-- 		EJ_SetLootFilter(class, specID);
 					-- 		-- items for this spec
@@ -16992,35 +16992,35 @@ RowOnEnter = function (self)
 					-- 	end
 					-- 	local chance = 100 / min;
 					-- 	local bestSpecs = {};
-					-- 	-- define the best specs based on min
+					--	-- define the best specs based on min
 					-- 	for specID,count in pairs(specItems) do
 					-- 		if count == min then
 					-- 			tinsert(bestSpecs, specID);
 					-- 		end
 					-- 	end
-					-- 	-- print out the specs with min items
+					--	-- print out the specs with min items
 					-- 	local specString = GetSpecsString(bestSpecs, true, true) or "???";
 					-- 	GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2).."% ("..GetNumberWithZeros(chance / 5, 2).."%) "..specString);
 					-- elseif legacyLoot then
-					-- 	-- Not available at all, best loot spec is the one with the most number of items in it.
+					--	-- Not available at all, best loot spec is the one with the most number of items in it.
 					-- 	print("legacy loot?")
-					-- 	-- local most, bestSpecID = 0;
-					-- 	-- for i=1,numSpecializations,1 do
-					-- 	-- 	local id = GetSpecializationInfo(i);
-					-- 	-- 	local specHit = specHits[id] or 0;
-					-- 	-- 	if specHit > most then
-					-- 	-- 		most = specHit;
-					-- 	-- 		bestSpecID = i;
-					-- 	-- 	end
-					-- 	-- end
-					-- 	-- if bestSpecID then
-					-- 	-- 	local id, name, description, icon = GetSpecializationInfo(bestSpecID);
-					-- 	-- 	if totalItems > 0 then
-					-- 	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
-					-- 	-- 	else
-					-- 	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
-					-- 	-- 	end
-					-- 	-- end
+					--	-- local most, bestSpecID = 0;
+					--	-- for i=1,numSpecializations,1 do
+					--	-- 	local id = GetSpecializationInfo(i);
+					--	-- 	local specHit = specHits[id] or 0;
+					--	-- 	if specHit > most then
+					--	-- 		most = specHit;
+					--	-- 		bestSpecID = i;
+					--	-- 	end
+					--	-- end
+					--	-- if bestSpecID then
+					--	-- 	local id, name, description, icon = GetSpecializationInfo(bestSpecID);
+					--	-- 	if totalItems > 0 then
+					--	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+					--	-- 	else
+					--	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
+					--	-- 	end
+					--	-- end
 					-- end
 
 
@@ -22057,7 +22057,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				{ 1355 },	-- Nazjatar
 				-- Legion Continents
 				{
-					619, 	-- Broken Isles
+					619,	-- Broken Isles
 					{
 						{ 627 },	-- Dalaran (not a Zone, so doesn't list automatically)
 						{ 630, 5175, { 47063 }},	-- Azsuna
@@ -22083,7 +22083,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				-- WotLK Continents
 				{ 113 },	-- Northrend
 				-- BC Continents
-				{ 101 }, 	-- Outland
+				{ 101 },	-- Outland
 				-- Vanilla Continents
 				{
 					12,		-- Kalimdor
@@ -22940,8 +22940,8 @@ local function AttachTooltip(self, ttdata)
 		-- this is already covered by a default in-game tooltip line:
 		-- AUCTION_HOUSE_BUCKET_VARIATION_EQUIPMENT_TOOLTIP = "Items in this group may vary in stats and appearance. Check the auction's tooltip before buying.";
 		-- if owner.useCircularIconBorder and not self.AllTheThingsProcessing then
-		-- 	-- print("AH General Item Tooltip")
-		-- 	-- Generalized tooltip hover of a selected Auction Item -- not always accurate to the actual Items for sale
+		--	-- print("AH General Item Tooltip")
+		--	-- Generalized tooltip hover of a selected Auction Item -- not always accurate to the actual Items for sale
 		-- 	self:AddLine(L["AUCTION_GENERALIZED_ITEM_WARNING"]);
 		-- end
 		-- print("AttachTooltip-HasOwner");
@@ -24280,7 +24280,7 @@ app.InitDataCoroutine = function()
 		-- Ve'nari Items (The Quest Bonus is Accwide but quests itself are not accwide)
 		63193,	-- Bangle of Seniority
 		63523,	-- Broker Traversam Enhancer
-		63183, 	-- Extradimensional Pockets
+		63183,	-- Extradimensional Pockets
 		63201,	-- Loupe of Unusual Charm
 		61144,	-- Possibility Matrix
 		63200,	-- Rang Insignia: Acquisitionist
@@ -24288,7 +24288,7 @@ app.InitDataCoroutine = function()
 		63202,	-- Vessel of Unfortunate Spirits
 
 		-- Druid forms
-		65047, 	-- Mark of the Nightwing Raven
+		65047,	-- Mark of the Nightwing Raven
 
 		-- Heritage
 		51483,	-- Heritage o' the Dark Iron
@@ -24337,15 +24337,15 @@ app.InitDataCoroutine = function()
 	for _,questGroup in ipairs({
 		{ 32008, 32009, 31878, 31879, 31880, 31881, 31882, 31883, 31884, 31885, },	-- Pet Battle Intro quests
 		{
-			53063, 	-- A Mission of Unity (BFA Alliance WQ Unlock)
-			53064, 	-- A Mission of Unity (BFA Horde WQ Unlock)
+			53063,	-- A Mission of Unity (BFA Alliance WQ Unlock)
+			53064,	-- A Mission of Unity (BFA Horde WQ Unlock)
 		},
 		{
-			53061, 	-- The Azerite Advantage (BFA Alliance Island Unlock / AWHQT 51994)
+			53061,	-- The Azerite Advantage (BFA Alliance Island Unlock / AWHQT 51994)
 			53062,  -- The Azerite Advantage (BFA Horde Island Unlock / AWHQT 51994)
 		},
 		{
-			53055, 	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
+			53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
 			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
 		},
 		{
@@ -25046,7 +25046,7 @@ app.events.QUEST_LOG_UPDATE = function()
 	app.RefreshQuestInfo();
 end
 -- app.events.QUEST_FINISHED = function()
--- 	-- print("QUEST_FINISHED")
+--	-- print("QUEST_FINISHED")
 -- 	app.RefreshQuestInfo();
 -- end
 app.events.QUEST_REMOVED = function(questID)

@@ -7,7 +7,7 @@ _.Zones =
 	m(905, {	-- Argus
 		m(830, {	-- Krokuun
 			petbattle(filter(BATTLE_PETS, {
-				pet(2123), 	-- Bile Larva
+				pet(2123),	-- Bile Larva
 				pet(2124, {	-- Bilescourge
 					["coord"] = { 47.0, 46.8, 830 },
 				}),

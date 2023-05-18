@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 
 				-- q(QUEST, {	-- NAME
-				-- 	-- ["coord"] = { XX, YY, THE_WAKING_SHORES }
+				--	-- ["coord"] = { XX, YY, THE_WAKING_SHORES }
 				-- }),
 				petbattle(q(74841, { -- Adinakon
 					["coord"] = { 51.90, 72.39, THE_WAKING_SHORES },

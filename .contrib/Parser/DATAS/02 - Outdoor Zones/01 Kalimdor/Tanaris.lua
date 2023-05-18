@@ -2914,7 +2914,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			})),
 			-- #endif
 			n(FACTIONS, {
-				faction(369, { 	-- Gadgetzan
+				faction(369, {	-- Gadgetzan
 					["icon"] = icon("INV_Misc_Coin_01"),
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForGadgetzhan,

@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 22.1, 50.9, OHNAHRAN_PLAINS },
 				}),
 				q(65686, {	-- To the Azure Span
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						66340,	-- Into the Azure
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
@@ -856,7 +856,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						["provider"] = { "n", 186386 },	-- Kauj
 						["coord"] = { 45.5, 54.2, THE_AZURE_SPAN },
 					}),
-					q(65930, {	-- 	A Wrestle of Wind and Water
+					q(65930, {	-- A Wrestle of Wind and Water
 						["sourceQuests"] = {
 							65929,	-- Ice Breakers
 							65928,	-- Wayward Winds

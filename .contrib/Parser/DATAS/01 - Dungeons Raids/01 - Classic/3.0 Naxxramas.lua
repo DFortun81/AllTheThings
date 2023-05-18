@@ -1986,7 +1986,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					n(-367, { 	-- The Construct Quarter
+					n(-367, {	-- The Construct Quarter
 						["icon"] = "Interface\\Icons\\Spell_Shadow_AbominationExplosion",
 						["groups"] = {
 							n(16028, {	-- Patchwerk
@@ -2028,7 +2028,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					n(-371, { 	-- The Upper Necropolis
+					n(-371, {	-- The Upper Necropolis
 						["icon"] = "Interface\\Icons\\inv_misc_head_dragon_blue",
 						["groups"] = {
 							n(15989, {	-- Sapphiron

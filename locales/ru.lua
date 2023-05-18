@@ -880,7 +880,7 @@ for key,value in pairs({
 		[-7776] = "Гуляка Зимнего Покрова",							-- Winter Revelers (for Winter Veil)
 	-- Classes
 		[-9951] = GetSpellInfo(148462).." и "..GetSpellInfo(137031),	-- Discipline / Holy Priest Spec
-		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011), 	-- Guardian / Feral Druid Spec
+		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011),	-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Видения Н'Зота",								-- Visions of N'Zoth
 		[-10072] = "Нападение Н'Зота",								-- N'Zoth Assault

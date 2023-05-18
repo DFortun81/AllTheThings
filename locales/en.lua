@@ -831,7 +831,7 @@ app.L = {
 
 	["FILTER_ID_TYPES"] = {
 		-- "Armor Types"
-		[1] = INVTYPE_HOLDABLE, 								-- Held in Off-Hand
+		[1] = INVTYPE_HOLDABLE,									-- Held in Off-Hand
 		[2] = GetItemSubClassInfo(4,5),							-- Cosmetic
 		[3] = GetItemSubClassInfo(8,3),							-- Cloaks
 		[4] = GetItemSubClassInfo(4,1),							-- Cloth
@@ -938,7 +938,7 @@ app.L = {
 		[102] = app.asset("Category_ToyBox"),									-- Toy Box
 		[103] = "Interface\\Icons\\inv_inscription_weaponscroll03",				-- Illusions
 		[104] = app.asset("Interface_Quest_header"),							-- Quest Items
- 		[110] = app.asset("Category_Titles"),									-- Titles
+		[110] = app.asset("Category_Titles"),									-- Titles
 		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",						-- Glyph
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",							-- Bag
 		[114] = "Interface\\Icons\\inv_blacksmith_leystonehoofplates_orange",	-- Mount Equipment
@@ -1009,7 +1009,7 @@ app.L = {
 		[-15] = "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02",					-- Exploration
 		[-16] = app.asset("Interface_Rare"),												-- Rare
 		[-17] = app.asset("Interface_Quest_header"),										-- Quests
-		[-18] = app.asset("Interface_Rewards"),		 										-- Rewards
+		[-18] = app.asset("Interface_Rewards"),												-- Rewards
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
 		[-20] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
@@ -1546,14 +1546,14 @@ app.L = {
 		[-15] = "Exploration",													-- Exploration
 		[-16] = BATTLE_PET_BREED_QUALITY4,										-- Rares
 		[-17] = TRACKER_HEADER_QUESTS,											-- Quests
-		[-18] = QUEST_REWARDS, 													-- Rewards
+		[-18] = QUEST_REWARDS,													-- Rewards
 		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
 		[-20] = "Common Vendor Items",											-- Common Vendor Items
 		[-21] = "Captains",
 		[-22] = "Secrets",														-- Secrets
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
 		[-24] = BRAWL_TOOLTIP_MAPS,												-- Maps
- 		[-26] = "Drops",														-- Drops
+		[-26] = "Drops",														-- Drops
 		[-27] = "Lower",														-- Lower (Blackrock Spire)
 		[-28] = "Upper",														-- Upper (Blackrock Spire)
 		[-31] = select(1,GetCategoryInfo(15268)),								-- Promotions
@@ -1725,7 +1725,7 @@ app.L = {
 		[-368] = DUNGEON_FLOOR_NAXXRAMAS2,										-- The Arachnid Quarter
 		[-369] = DUNGEON_FLOOR_NAXXRAMAS3,										-- The Military Quarter
 		[-370] = DUNGEON_FLOOR_NAXXRAMAS4,										-- The Plague Quarter
-		[-371] = DUNGEON_FLOOR_NAXXRAMAS6, 										-- The Upper Necropolis
+		[-371] = DUNGEON_FLOOR_NAXXRAMAS6,										-- The Upper Necropolis
 	-- Operation: Mechagon
 		[-379] = "Junkyard",													-- Junkyard
 		[-380] = GetSpellInfo(251998),											-- Workshop
@@ -1874,7 +1874,7 @@ app.L = {
 	-- Timeless Isle
 		[-799] = GetSpellInfo(147343),											-- Burden of Eternity
 	-- Secret Header
-		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare
+		[-800] = GetSpellInfo(247402),											-- Lucid Nightmare
 		[-801] = GetSpellInfo(243025),											-- Riddler's Mind-Worm
 		[-802] = GetSpellInfo(231215),											-- Sun Darter Hatchling
 		[-804] = GetSpellInfo(254763),											-- Uuna
@@ -1948,7 +1948,7 @@ app.L = {
 		-- 9.2
 		[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
 	-- Sets
-		[-1000] = WARDROBE_SETS, 												-- Sets
+		[-1000] = WARDROBE_SETS,												-- Sets
 	-- Dragonflight
 		[-1100] = DRAKE_MANUSCRIPTS,												-- Drakewatcher Manuscripts
 		[-1101] = "Primal Storms",													-- Primal Storms
@@ -1958,7 +1958,7 @@ app.L = {
 		[-1112] = GetSpellInfo(381284),												-- Cataloging
 		[-1113] = GetSpellInfo(386485),												-- Ancient Waygates
 		[-1114] = GetSpellInfo(382288),												-- Cartographer's Flag
- 		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
+		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
 		[-1121] = "Clan Aylaag",													-- Clan Aylaag
 		[-1122] = "Grand Hunts",													-- Grand Hunts
 		[-1123] = "North",															-- North
@@ -1981,7 +1981,7 @@ app.L = {
 		[-1203] = "Sniffenseeking",													-- Sniffenseeking
 		[-1204] = AVAILABLE,														-- Available
 		[-1205] = UNAVAILABLE,														-- Unavailable
- 	-- Warrior order hall lore items
+	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",
 		[-2202] = "Halls of Gold and Glory",
@@ -2033,8 +2033,8 @@ app.L = {
 		[-7776] = "Winter Revelers",											-- Winter Revelers (for Winter Veil)
 	-- Factions
 		[-9912] = COMBATLOG_FILTER_STRING_NEUTRAL_UNITS,						-- Neutral
-		[-9913] = FACTION_HORDE, 												-- Horde
-		[-9914] = FACTION_ALLIANCE, 											-- Alliance
+		[-9913] = FACTION_HORDE,												-- Horde
+		[-9914] = FACTION_ALLIANCE,												-- Alliance
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
@@ -2045,7 +2045,7 @@ app.L = {
 		[-10058] = WORLD,														-- World
 		[-10061] = select(2,GetAchievementInfo(7333)),							-- The Four Celestials
 		[-10066] = BATTLE_PET_BREED_QUALITY6,									-- "Legendary";
-		[-10067] = ITEM_QUALITY6_DESC, 											-- Artifact
+		[-10067] = ITEM_QUALITY6_DESC,											-- Artifact
 	-- 8.3
 		[-10069] = SCENARIOS,													-- Scenarios
 		[-10071] = "Visions of N'Zoth",
@@ -2143,8 +2143,8 @@ app.L = {
 
 	-- Unobtainable Listing (for fellow 100%s out there)
 	["UNOBTAINABLE_ITEM_TEXTURES"] = {
-		"Interface\\FriendsFrame\\StatusIcon-DnD", 								-- No Hope
-		"Interface\\FriendsFrame\\StatusIcon-Away", 							-- Little Hope
+		"Interface\\FriendsFrame\\StatusIcon-DnD",								-- No Hope
+		"Interface\\FriendsFrame\\StatusIcon-Away",								-- Little Hope
 		"Interface\\FriendsFrame\\StatusIcon-Online",							-- There is Hope
 		"Interface\\FriendsFrame\\StatusIcon-Offline",							-- Seasonal
 	};

@@ -35,7 +35,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 			}),
 			n(DROPS, {
 				i(167051, {	-- Azure Windseeker (PET!)
-					["crs"] = { 62442 }, 	-- Tsulong
+					["crs"] = { 62442 },	-- Tsulong
 					["timeline"] = { ADDED_8_1_5 },
 				}),
 				i(167052, {	-- Spirit of the Spring (PET!)
@@ -150,7 +150,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 							},
 						}),
 						e(742, {	-- Tsulong
-							["crs"] = { 62442 }, 	-- Tsulong
+							["crs"] = { 62442 },	-- Tsulong
 							["g"] = {
 								i(86884),	-- Belt of Embodied Terror
 								i(86900),	-- Binder's Chain of Unending Summer
@@ -314,7 +314,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						},
 					}),
 					e(742, {	-- Tsulong
-						["crs"] = { 62442 }, 	-- Tsulong
+						["crs"] = { 62442 },	-- Tsulong
 						["g"] = {
 							ach(6933),	-- Who's Got Two Green Thumbs
 							i(86326),	-- Belt of Embodied Terror
@@ -470,7 +470,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						},
 					}),
 					e(742, {	-- Tsulong
-						["crs"] = { 62442 }, 	-- Tsulong
+						["crs"] = { 62442 },	-- Tsulong
 						["g"] = {
 							ach(6732),	-- Heroic: Tsulong
 							i(87161),	-- Belt of Embodied Terror

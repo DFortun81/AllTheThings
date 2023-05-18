@@ -1230,7 +1230,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/10 Gaea seed planted
-							["provider"] = { "i", 16208 },	-- 	Enchanted Gaea Seeds
+							["provider"] = { "i", 16208 },	-- Enchanted Gaea Seeds
 						}),
 						i(16985, {	-- Windseeker Boots
 							["timeline"] = { "removed 4.0.3" },

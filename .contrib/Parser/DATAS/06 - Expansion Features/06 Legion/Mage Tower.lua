@@ -269,7 +269,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				ach(15310, {	-- A Tour of Towers
 					i(188674),	-- Mage-Bound Spelltome (MOUNT!)
 				}),
-				ach(15308), 	-- Tower Overwhelming
+				ach(15308),	-- Tower Overwhelming
 			}),
 			cl(DEATHKNIGHT, {	-- Gravewarden Armaments set
 				i(188537),	-- Gravewarden Armplates

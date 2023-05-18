@@ -693,7 +693,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["sourceQuests"] = { 46791 },	-- Carried On the Wind
 						["provider"] = { "n", 106521 },	-- Consular Celestos
 						["coord"] = { 28.4, 45.0, THE_HEART_Of_AZEROTH },
-						["maps"] = { 857 },	-- 	Throne of the Four Winds (Scenario Map)
+						["maps"] = { 857 },	-- Throne of the Four Winds (Scenario Map)
 						["g"] = {
 							i(143489),	-- Farseer's Raging Tempest (MOUNT!)
 						},

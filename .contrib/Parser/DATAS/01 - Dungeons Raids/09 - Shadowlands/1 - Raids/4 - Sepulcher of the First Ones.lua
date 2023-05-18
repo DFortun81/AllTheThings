@@ -1217,7 +1217,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 						["g"] = {
 							i(190771),	-- Carcinized Zerethsteed (MOUNT!)
 						},
- 					})),
+					})),
 					q(65763, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
 						--["coord"] = { X, Y, Map },	He his moving with us in the raid

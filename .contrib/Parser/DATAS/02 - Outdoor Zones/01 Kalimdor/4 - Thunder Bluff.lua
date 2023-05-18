@@ -659,7 +659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 					["sourceQuests"] = {
 						936,	-- Assisting Arch Druid Runetotem [Orgrimmar]
-						3762, 	-- Assisting Arch Druid Runetotem [Thunder Bluff]
+						3762,	-- Assisting Arch Druid Runetotem [Thunder Bluff]
 						3784,	-- Assisting Arch Druid Runetotem [Undercity]
 					},
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },

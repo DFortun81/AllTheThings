@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 20513, 1 }},	-- Abyssal Crest
 					["lvl"] = 60,
 					["groups"] = {
-						i(20603, { 	-- Bag of Spoils
+						i(20603, {	-- Bag of Spoils
 							["timeline"] = { "removed 4.0.3" },
 							["groups"] = {
 								i(20694, {	-- Glowing Black Orb
@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
-						i(20603, { 	-- Bag of Spoils
+						i(20603, {	-- Bag of Spoils
 							["timeline"] = { "removed 4.0.3" },
 							["groups"] = {
 								i(20694, {	-- Glowing Black Orb
@@ -269,7 +269,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(20602, { 	-- Chest of Spoils
+						i(20602, {	-- Chest of Spoils
 							["timeline"] = { "removed 4.0.3" },
 							["groups"] = {
 								i(20721, {	-- Band of the Cultist
@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 20515, 1 }},	-- Abyssal Scepter
 					["lvl"] = 54,
 					["groups"] = {
-						i(20602, { 	-- Chest of Spoils
+						i(20602, {	-- Chest of Spoils
 							["timeline"] = { "removed 4.0.3" },
 							["groups"] = {
 								i(20721, {	-- Band of the Cultist
@@ -2437,7 +2437,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
-				n(14454, { 	-- The Windreaver
+				n(14454, {	-- The Windreaver
 					["description"] = "This is only available during an Elemental Invasion.",
 					["coords"] = {
 						{ 17.6, 27.0, SILITHUS },
