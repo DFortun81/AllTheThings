@@ -812,9 +812,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			q(73077, {	-- This Might Sting
-				--["sourceQuests"] = {  },
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 200550 },	-- Patroclosa
 				["coord"] = { 59.4, 63.8, ZARALEK_CAVERN },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
+			}),
+			q(73081, {	-- Stress Fractures
+				["sourceQuests"] = {
+					73077,	-- This Might Sting
+					75145,	-- In the Wake of the Ashes
+				},
+				["provider"] = { "n", 203233 },	-- Marithos
+				["coord"] = { 56.4, 57.0, ZARALEK_CAVERN },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
+			}),
+			q(73085, {	-- Cold Feet
+				["sourceQuests"] = { 73081 },	-- Stress Fractures
+				["provider"] = { "n", 200876 },	-- Captured Messenger <The Sundered Flame>
+				["coord"] = { 55.6, 57.0, ZARALEK_CAVERN },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
 			}),
 		}),
 	}),

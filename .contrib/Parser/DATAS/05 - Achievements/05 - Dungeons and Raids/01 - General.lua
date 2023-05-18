@@ -584,32 +584,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				}),
 			},
 		})),
-		ach(8124, {		-- Glory of the Thundering Raider
-			i(93662),		-- Armored Skyscreamer (MOUNT!)
-			crit(1),		-- Heroic: Jin'rokh the Breaker
-			crit(2),		-- Heroic: Horridon
-			crit(3),		-- Heroic: Council of Elders
-			crit(4),		-- Heroic: Tortos
-			crit(5),		-- Heroic: Megaera
-			crit(6),		-- Heroic: Ji-Kun
-			crit(7),		-- Heroic: Durumu the Forgotten
-			crit(8),		-- Heroic: Primordius
-			crit(9),		-- Heroic: Dark Animus
-			crit(10),		-- Heroic: Iron Qon
-			crit(11),		-- Heroic: Twin Empyreans
-			crit(12),		-- Lightning Overload
-			crit(13),		-- Cretaceous Collector
-			crit(14),		-- Cage Match
-			crit(15),		-- One-Up
-			crit(16),		-- Head Case
-			crit(17),		-- Soft Hands
-			crit(18),		-- You Said Crossing the Streams Was Bad
-			crit(19),		-- Genetically Unmodified Organism
-			crit(20),		-- Ritualist Who?
-			crit(21),		-- Can't Touch This
-			crit(22),		-- From Dusk 'til Dawn
-			crit(23),		-- A Complete Circuit
-		}),
 		ach(11763, {	-- Glory of the Tomb Raider
 			title(362, {	-- , the Tomb Raider
 				["style"] = 3,

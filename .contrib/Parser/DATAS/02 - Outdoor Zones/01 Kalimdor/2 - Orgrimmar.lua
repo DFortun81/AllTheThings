@@ -3271,20 +3271,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8410, {	-- Elemental Mastery
-					["qg"] = 5892,	-- Searn Firewarder
-					["coord"] = { 38.0, 37.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 7067, 1 },	-- Elemental Earth
-						{ "i", 7068, 1 },	-- Elemental Fire
-						{ "i", 7069, 1 },	-- Elemental Air
-						{ "i", 7070, 1 },	-- Elemental Water
-					},
-					["lvl"] = 50,
-				})),
 				q(2378, {	-- Find the Shattered Hand
 					["qg"] = 6467,	-- Mennet Carkad
 					["coord"] = { 83.2, 69, UNDERCITY },
