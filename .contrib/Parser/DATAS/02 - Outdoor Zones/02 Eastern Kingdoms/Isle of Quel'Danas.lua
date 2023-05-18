@@ -1497,7 +1497,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						objective(1, {	-- 0/3 Darkspine Iron Ore
-							["provider"] = { "i", 34479 },	-- Darkspine Iron Ore
+							["providers"] = {
+								{ "i",  34479 },	-- Darkspine Iron Ore
+								{ "o", 187264 },	-- Darkspine Ore Chest
+							},
 							["cost"] = { { "i", 34477, 1 } },	-- Darkspine Chest Key
 							["cr"] = 25060,	-- Darkspine Myrmidon
 						}),
@@ -1642,7 +1645,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/3 Darkspine Iron Ore
-							["provider"] = { "i", 34479 },	-- Darkspine Iron Ore
+							["providers"] = {
+								{ "i",  34479 },	-- Darkspine Iron Ore
+								{ "o", 187264 },	-- Darkspine Ore Chest
+							},
 							["cost"] = { { "i", 34477, 1 } },	-- Darkspine Chest Key
 							["cr"] = 25060,	-- Darkspine Myrmidon
 						}),
