@@ -7,7 +7,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(9210),	-- Ghost Dye
 			i(9061),	-- Goblin Rocket Fuel
 			applyclassicphase(PHASE_FOUR, i(19931, {	-- Gurubashi Mojo Madness
-				["timeline"] = { "removed 4.0.3.14732", ADDED_10_0_7  },
+				["timeline"] = { "removed 4.0.3.14732", ADDED_10_0_7 },
 				-- #if after 10.0.7
 				["description"] = "Has to be used near the 'Brazier of Madness' Toy to receive the 'Succumbed to Madness' Buff.",
 				-- #endif
@@ -467,7 +467,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(203802, {["timeline"] = {ADDED_10_0_7 }}),	-- Venomfang
 			i(203860, {["timeline"] = {ADDED_10_0_7 }}),	-- Venomreaver
 			i(12792, {	-- Volcanic Hammer
-				["timeline"] = { "added 1.0.0", "removed 4.0.3" },    -- NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
+				["timeline"] = { "added 1.0.0", "removed 4.0.3" },	-- NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
 			}),
 			i(203791, {["timeline"] = {ADDED_10_0_7 }}),	-- Warblades of the Hakkari, Reborn (MH)
 			i(203792, {["timeline"] = {ADDED_10_0_7 }}),	-- Warblades of the Hakkari, Reborn (OH)
@@ -959,7 +959,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			},
 		}),
 		filter(BATTLE_PETS, {
-			i(15996, {-- Lifelike Toad (PET!)
+			i(15996, {	-- Lifelike Toad (PET!)
 				["timeline"] = { "added 1.11.1.5462" },
 			}),
 			-- #if AFTER WRATH
@@ -967,11 +967,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				["timeline"] = { "added 1.11.1.5462" },
 			}),
 			-- #endif
-			i(4401, { -- Mechanical Squirrel (PET!)
+			i(4401, {	-- Mechanical Squirrel (PET!)
 				["timeline"] = { "added 1.11.1.5462" },
 			}),
 			-- #if AFTER WRATH
-			i(11825, { -- Pet Bombling (PET!)
+			i(11825, {	-- Pet Bombling (PET!)
 				["timeline"] = { "added 1.11.1.5462" },
 			}),
 			-- #endif
@@ -2511,7 +2511,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10041),	-- Dreamweave Circlet
 			i(4322),	-- Enchanter's Cowl
 			i(14111),	-- Felcloth Hood
-			i(203820, {["timeline"]={ADDED_10_0_7}}),	--  Gurubashi Headdress
+			i(203820, {["timeline"]={ADDED_10_0_7}}),	-- Gurubashi Headdress
 			i(14140),	-- Mooncloth Circlet
 			i(10033),	-- Red Mageweave Headband
 			i(13866),	-- Runecloth Headband

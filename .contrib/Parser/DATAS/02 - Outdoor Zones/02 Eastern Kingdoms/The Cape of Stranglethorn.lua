@@ -69,31 +69,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = { 61324 },
 					["description"] = "This wild pet can be found on Jaguero Isle in The Cape of Stranglethorn. It only spawns when it's raining on the island, but this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the isle.",
 				}),
-				p(406, { -- Beetle
+				p(406, {	-- Beetle
 					["crs"] = { 61319 },
 				}),
-				p(421, { -- Crimson Moth
+				p(421, {	-- Crimson Moth
 					["crs"] = { 61314 },
 				}),
-				p(407, { -- Forest Spiderling
+				p(407, {	-- Forest Spiderling
 					["crs"] = { 61320 },
 				}),
-				p(408, { -- Lizard Hatchling
+				p(408, {	-- Lizard Hatchling
 					["crs"] = { 61321 },
 				}),
-				p(404, { -- Long-tailed Mole
+				p(404, {	-- Long-tailed Mole
 					["crs"] = { 61317 },
 				}),
-				p(424, { -- Roach
+				p(424, {	-- Roach
 					["crs"] = { 61169 },
 				}),
-				p(401, { -- Strand Crab
+				p(401, {	-- Strand Crab
 					["crs"] = { 61312 },
 				}),
-				p(405, { -- Tree Python
+				p(405, {	-- Tree Python
 					["crs"] = { 61318 },
 				}),
-				p(410, { -- Wharf Rat
+				p(410, {	-- Wharf Rat
 					["crs"] = { 61323 },
 				}),
 			})),
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.0, 72.0, THE_CAPE_OF_STRANGLETHORN },
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
-						i(10398, { -- Mechanical Chicken (PET!)
+						i(10398, {	-- Mechanical Chicken (PET!)
 							["timeline"] = { "added 1.11.1.5462" },
 						}),
 					},
@@ -298,13 +298,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(61531, {  -- Veil of the Silent Listener
+						i(61531, {	-- Veil of the Silent Listener
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
-						i(61532, {  -- Monnion of the Bat
+						i(61532, {	-- Monnion of the Bat
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
-						i(61533, {  -- Small Pouch of Incense
+						i(61533, {	-- Small Pouch of Incense
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 						i(131606, {	-- Spaulders of the Bat
@@ -733,7 +733,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26435, {	-- I'm A Huge Liar and a Fraud -- TODO:: part of loremaster?
+				q(26435, {	-- I'm A Huge Liar and a Fraud	-- TODO:: part of loremaster?
 					["qg"] = 43096,	-- Flem Gizzix
 					["sourceQuests"] = {
 						26592,	-- Diffractory Chromascope
@@ -2219,13 +2219,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2955, {	-- First Mate Hat
 				}),
-				i(8494, { -- Hyacinth Macaw (PET!)
+				i(8494, {	-- Hyacinth Macaw (PET!)
 					["timeline"] = { "added 1.11.1.5462" },
 				}),
 				i(5789, {	-- Pattern: Murloc Scale Bracers
 					["cr"] = 1561,	-- Bloodsail Raider
 				}),
-				i(48126, { -- Razzashi Hatchling (PET!)
+				i(48126, {	-- Razzashi Hatchling (PET!)
 					["timeline"] = { "added 3.2.0.10128" },
 				}),
 			}),

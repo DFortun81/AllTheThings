@@ -3608,7 +3608,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1685, {	-- Gakin's Summons (Voidwalker)
 					["qg"] = 6121,	-- Remen Marcot
-					["altQuests"] = { 1715 }, -- The Slaughtered Lamb
+					["altQuests"] = { 1715 },	-- The Slaughtered Lamb
 					["coord"] = { 44.4, 66.2, ELWYNN_FOREST },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { HUMAN, GNOME },
@@ -6083,39 +6083,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.6, 57.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2419,    -- Augmented Chain Belt
-						2420,    -- Augmented Chain Boots
-						2421,    -- Augmented Chain Bracers
-						2422,    -- Augmented Chain Gloves
-						3891,    -- Augmented Chain Helm
-						2418,    -- Augmented Chain Leggings
-						2417,    -- Augmented Chain Vest
-						2424,    -- Brigandine Belt
-						2426,    -- Brigandine Boots
-						2427,    -- Brigandine Bracers
-						2428,    -- Brigandine Gloves
-						3894,    -- Brigandine Helm
-						2425,    -- Brigandine Leggings
-						2423,    -- Brigandine Vest
-						2451,    -- Crested Heater Shield
-						2448,    -- Heavy Pavise
-						2446,    -- Kite Shield
-						17189,    -- Metal Buckler
-						17190,    -- Ornate Buckler
-						8094,    -- Platemail Armor
-						8088,    -- Platemail Belt
-						8089,    -- Platemail Boots
-						8090,    -- Platemail Bracers
-						8091,    -- Platemail Gloves
-						8092,    -- Platemail Helm
-						8093,    -- Platemail Leggings
-						2148,    -- Polished Scale Belt
-						2149,    -- Polished Scale Boots
-						2150,    -- Polished Scale Bracers
-						2151,    -- Polished Scale Gloves
-						2152,    -- Polished Scale Leggings
-						2153,    -- Polished Scale Vest
-						17192,    -- Reinforced Targe
+						2419,	-- Augmented Chain Belt
+						2420,	-- Augmented Chain Boots
+						2421,	-- Augmented Chain Bracers
+						2422,	-- Augmented Chain Gloves
+						3891,	-- Augmented Chain Helm
+						2418,	-- Augmented Chain Leggings
+						2417,	-- Augmented Chain Vest
+						2424,	-- Brigandine Belt
+						2426,	-- Brigandine Boots
+						2427,	-- Brigandine Bracers
+						2428,	-- Brigandine Gloves
+						3894,	-- Brigandine Helm
+						2425,	-- Brigandine Leggings
+						2423,	-- Brigandine Vest
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						8094,	-- Platemail Armor
+						8088,	-- Platemail Belt
+						8089,	-- Platemail Boots
+						8090,	-- Platemail Bracers
+						8091,	-- Platemail Gloves
+						8092,	-- Platemail Helm
+						8093,	-- Platemail Leggings
+						2148,	-- Polished Scale Belt
+						2149,	-- Polished Scale Boots
+						2150,	-- Polished Scale Bracers
+						2151,	-- Polished Scale Gloves
+						2152,	-- Polished Scale Leggings
+						2153,	-- Polished Scale Vest
+						17192,	-- Reinforced Targe
 					}},
 				}),
 				n(1302, {	-- Bernard Gump
@@ -6134,12 +6134,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 69.6, 57.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2451,    -- Crested Heater Shield
-						2448,    -- Heavy Pavise
-						2446,    -- Kite Shield
-						17189,    -- Metal Buckler
-						17190,    -- Ornate Buckler
-						17192,    -- Reinforced Targe
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						17192,	-- Reinforced Targe
 					}},
 					["groups"] = {
 						i(2445),	-- Large Metal Shield
@@ -6899,12 +6899,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						3422,    -- Beautiful Wildflowers
-						3420,    -- Black Rose
-						3424,    -- Bouquet Of Black Roses
-						3423,    -- Bouquet Of White Roses
-						3419,    -- Red Rose
-						3421,    -- Simple Wildflowers
+						3422,	-- Beautiful Wildflowers
+						3420,	-- Black Rose
+						3424,	-- Bouquet Of Black Roses
+						3423,	-- Bouquet Of White Roses
+						3419,	-- Red Rose
+						3421,	-- Simple Wildflowers
 					}},
 					["groups"] = {
 						i(2665),	-- Stormwind Seasoning Herbs
@@ -6929,8 +6929,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						3027,    -- Heavy Recurve Bow
-						3026,    -- Reinforced Bow
+						3027,	-- Heavy Recurve Bow
+						3026,	-- Reinforced Bow
 					}},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
@@ -6963,15 +6963,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 48.2, 54.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						925,    -- Flail
-						1197,    -- Giant Mace
-						2030,    -- Gnarled Staff
-						2028,    -- Hammer
-						928,    -- Long Staff
-						852,    -- Mace
-						924,    -- Maul
-						854,    -- Quarter Staff
-						2026,    -- Rock Hammer
+						925,	-- Flail
+						1197,	-- Giant Mace
+						2030,	-- Gnarled Staff
+						2028,	-- Hammer
+						928,	-- Long Staff
+						852,	-- Mace
+						924,	-- Maul
+						854,	-- Quarter Staff
+						2026,	-- Rock Hammer
 					}},
 					["groups"] = {
 						i(2492),	-- Cudgel
@@ -7038,14 +7038,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(50480, {	-- Isabel Jones <Jewelcrafting Design Vendor>
 					["coord"] = { 63.8, 61.3, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3.13277" },
-					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }}, -- Marith Lazuria <Jewelcrafting Supplies>
+					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }},	-- Marith Lazuria <Jewelcrafting Supplies>
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(1325, {	-- Jasper Fel
 					["coord"] = { 80.6, 61.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						4565,    -- Simple Dagger
+						4565,	-- Simple Dagger
 					}},
 				}),
 				n(1318, {	-- Jessara Cordell <Enchanting Supplies>
@@ -7127,7 +7127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 56.3, 17.2, STORMWIND_CITY },
 					-- #endif
-					["sym"] = {{ "sub", "common_recipes_vendor", 3356 }}, -- Sumi <Blacksmithing Supplies>
+					["sym"] = {{ "sub", "common_recipes_vendor", 3356 }},	-- Sumi <Blacksmithing Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
@@ -7153,8 +7153,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 59.6, 34.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2523,    -- Bullova
-						2531,    -- Great Axe
+						2523,	-- Bullova
+						2531,	-- Great Axe
 					}},
 					["groups"] = {
 						i(2522),	-- Crescent Axe
@@ -7578,27 +7578,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 					-- added all
-						926,    -- Battle Axe
-						2025,    -- Bearded Axe
-						2029,    -- Cleaver
-						1198,    -- Claymore
-						851,    -- Cutlass
-						922,    -- Dacian Falx
-						927,    -- Double Axe
-						2024,    -- Espadon
-						925,    -- Flail
-						2030,    -- Gnarled Staff
-						1197,    -- Giant Mace
-						853,    -- Hatchet
-						2207,    -- Jambiya
-						2209,    -- Kris
-						928,    -- Long Staff
-						852,    -- Mace
-						924,    -- Maul
-						2208,    -- Poniard
-						854,    -- Quarter Staff
-						2026,    -- Rock Hammer
-						2027,    -- Scimitar
+						926,	-- Battle Axe
+						2025,	-- Bearded Axe
+						2029,	-- Cleaver
+						1198,	-- Claymore
+						851,	-- Cutlass
+						922,	-- Dacian Falx
+						927,	-- Double Axe
+						2024,	-- Espadon
+						925,	-- Flail
+						2030,	-- Gnarled Staff
+						1197,	-- Giant Mace
+						853,	-- Hatchet
+						2207,	-- Jambiya
+						2209,	-- Kris
+						928,	-- Long Staff
+						852,	-- Mace
+						924,	-- Maul
+						2208,	-- Poniard
+						854,	-- Quarter Staff
+						2026,	-- Rock Hammer
+						2027,	-- Scimitar
 					}},
 					["groups"] = {
 						i(15808),	-- Fine Light Crossbow
@@ -7927,39 +7927,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 77.0, 61.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2419,    -- Augmented Chain Belt
-						2420,    -- Augmented Chain Boots
-						2421,    -- Augmented Chain Bracers
-						2422,    -- Augmented Chain Gloves
-						3891,    -- Augmented Chain Helm
-						2418,    -- Augmented Chain Leggings
-						2417,    -- Augmented Chain Vest
-						2424,    -- Brigandine Belt
-						2426,    -- Brigandine Boots
-						2427,    -- Brigandine Bracers
-						2428,    -- Brigandine Gloves
-						3894,    -- Brigandine Helm
-						2425,    -- Brigandine Leggings
-						2423,    -- Brigandine Vest
-						2451,    -- Crested Heater Shield
-						2448,    -- Heavy Pavise
-						2446,    -- Kite Shield
-						17189,    -- Metal Buckler
-						17190,    -- Ornate Buckler
-						8094,    -- Platemail Armor
-						8088,    -- Platemail Belt
-						8089,    -- Platemail Boots
-						8090,    -- Platemail Bracers
-						8091,    -- Platemail Gloves
-						8092,    -- Platemail Helm
-						8093,    -- Platemail Leggings
-						2148,    -- Polished Scale Belt
-						2149,    -- Polished Scale Boots
-						2150,    -- Polished Scale Bracers
-						2151,    -- Polished Scale Gloves
-						2152,    -- Polished Scale Leggings
-						2153,    -- Polished Scale Vest
-						17192,    -- Reinforced Targe
+						2419,	-- Augmented Chain Belt
+						2420,	-- Augmented Chain Boots
+						2421,	-- Augmented Chain Bracers
+						2422,	-- Augmented Chain Gloves
+						3891,	-- Augmented Chain Helm
+						2418,	-- Augmented Chain Leggings
+						2417,	-- Augmented Chain Vest
+						2424,	-- Brigandine Belt
+						2426,	-- Brigandine Boots
+						2427,	-- Brigandine Bracers
+						2428,	-- Brigandine Gloves
+						3894,	-- Brigandine Helm
+						2425,	-- Brigandine Leggings
+						2423,	-- Brigandine Vest
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						8094,	-- Platemail Armor
+						8088,	-- Platemail Belt
+						8089,	-- Platemail Boots
+						8090,	-- Platemail Bracers
+						8091,	-- Platemail Gloves
+						8092,	-- Platemail Helm
+						8093,	-- Platemail Leggings
+						2148,	-- Polished Scale Belt
+						2149,	-- Polished Scale Boots
+						2150,	-- Polished Scale Bracers
+						2151,	-- Polished Scale Gloves
+						2152,	-- Polished Scale Leggings
+						2153,	-- Polished Scale Vest
+						17192,	-- Reinforced Targe
 					}},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -8064,20 +8064,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 71.8, 62.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2471,    -- Reinforced Leather Belt
-						2473,    -- Reinforced Leather Boots
-						2474,    -- Reinforced Leather Bracers
-						3893,    -- Reinforced Leather Cap
-						2475,    -- Reinforced Leather Gloves
-						2472,    -- Reinforced Leather Pants
-						2470,    -- Reinforced Leather Vest
-						2464,    -- Studded Belt
-						2467,    -- Studded Boots
-						2468,    -- Studded Bracers
-						2463,    -- Studded Doublet
-						2469,    -- Studded Gloves
-						3890,    -- Studded Hat
-						2465,    -- Studded Pants
+						2471,	-- Reinforced Leather Belt
+						2473,	-- Reinforced Leather Boots
+						2474,	-- Reinforced Leather Bracers
+						3893,	-- Reinforced Leather Cap
+						2475,	-- Reinforced Leather Gloves
+						2472,	-- Reinforced Leather Pants
+						2470,	-- Reinforced Leather Vest
+						2464,	-- Studded Belt
+						2467,	-- Studded Boots
+						2468,	-- Studded Bracers
+						2463,	-- Studded Doublet
+						2469,	-- Studded Gloves
+						3890,	-- Studded Hat
+						2465,	-- Studded Pants
 					}},
 				}),
 				n(12785, {	-- Sergeant Major Clate <Legacy Armor Quartermaster> [WRATH+] / Sergeant Major Clate <Armor Quartermaster>
@@ -8108,7 +8108,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.2, 62.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						4565,    -- Simple Dagger
+						4565,	-- Simple Dagger
 					}},
 				}),
 				n(30730, {	-- Stanly McCormick
@@ -8159,7 +8159,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.8, 36.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2509,    -- Ornate Blunderbuss
+						2509,	-- Ornate Blunderbuss
 					}},
 					["groups"] = {
 						i(2510),	-- Solid Blunderbuss
@@ -8179,31 +8179,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 77.4, 61.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2148,    -- Polished Scale Belt
-						2149,    -- Polished Scale Boots
-						2150,    -- Polished Scale Bracers
-						2151,    -- Polished Scale Gloves
-						2152,    -- Polished Scale Leggings
-						2153,    -- Polished Scale Vest
-						1853,    -- Scalemail Belt
-						287,    -- Scalemail Boots
-						1852,    -- Scalemail Bracers
-						718,    -- Scalemail Gloves
-						286,    -- Scalemail Pants
-						285,    -- Scalemail Vest
+						2148,	-- Polished Scale Belt
+						2149,	-- Polished Scale Boots
+						2150,	-- Polished Scale Bracers
+						2151,	-- Polished Scale Gloves
+						2152,	-- Polished Scale Leggings
+						2153,	-- Polished Scale Vest
+						1853,	-- Scalemail Belt
+						287,	-- Scalemail Boots
+						1852,	-- Scalemail Bracers
+						718,	-- Scalemail Gloves
+						286,	-- Scalemail Pants
+						285,	-- Scalemail Vest
 					}},
 				}),
 				n(1309, {	-- Wynne Larson
 					["coord"] = { 52.0, 83.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2617,    -- Burning Robes
-						2615,    -- Chromatic Robe
-						2613,    -- Double Stitched Robes
-						2612,    -- Plain Robe
-						2614,    -- Robe Of Apprenticeship
-						2616,    -- Shimmering Silk Robes
-						2618,    -- Silver Dress Robes
+						2617,	-- Burning Robes
+						2615,	-- Chromatic Robe
+						2613,	-- Double Stitched Robes
+						2612,	-- Plain Robe
+						2614,	-- Robe Of Apprenticeship
+						2616,	-- Shimmering Silk Robes
+						2618,	-- Silver Dress Robes
 					}},
 				}),
 			}),

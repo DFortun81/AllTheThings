@@ -97,14 +97,14 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				i(19293),	-- Last Year's Mutton
 			},
 		}),
-		q(7981,  {	-- 1200 Tickets - Amulet of the Darkmoon
+		q(7981, {	-- 1200 Tickets - Amulet of the Darkmoon
 			["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 			["u"] = REMOVED_FROM_GAME,
 			["g"] = {
 				un(REMOVED_FROM_GAME, i(19491)),	-- Amulet of the Darkmoon
 			},
 		}),
-		q(7940,  {	-- 1200 Tickets - Orb of the Darkmoon
+		q(7940, {	-- 1200 Tickets - Orb of the Darkmoon
 			["u"] = REMOVED_FROM_GAME,
 			["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 			["g"] = {
@@ -335,7 +335,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				i(62048),	-- Darkmoon Card: Earthquake
 			},
 		}),
-		applyclassicphase(PHASE_THREE, q(7929,  {	-- Darkmoon Elementals Deck
+		applyclassicphase(PHASE_THREE, q(7929, {	-- Darkmoon Elementals Deck
 			["providers"] = {
 				{ "i", 19267 },	-- Elementals Deck
 				{ "n", 14847 },	-- Professor Thaddeus
@@ -411,7 +411,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				i(79329),	-- Relic of Niuzao
 			},
 		}),
-		applyclassicphase(PHASE_THREE, q(7927,  {	-- Darkmoon Portals Deck
+		applyclassicphase(PHASE_THREE, q(7927, {	-- Darkmoon Portals Deck
 			["providers"] = {
 				{ "i", 19277 },	-- Portals Deck
 				{ "n", 14847 },	-- Professor Thaddeus
@@ -508,7 +508,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				i(62047),	-- Darkmoon Card: Volcano
 			},
 		}),
-		applyclassicphase(PHASE_THREE, q(7928,  {	-- Darkmoon Warlords Deck
+		applyclassicphase(PHASE_THREE, q(7928, {	-- Darkmoon Warlords Deck
 			["providers"] = {
 				{ "i", 19257 },	-- Warlords Deck
 				{ "n", 14847 },	-- Professor Thaddeus
@@ -701,19 +701,19 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 			},
 		}),
-		q(7941,  {	-- More Armor Kits
+		q(7941, {	-- More Armor Kits
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		q(7943,  {	-- More Bat Eyes
+		q(7943, {	-- More Bat Eyes
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		q(7939,  {	-- More Dense Grinding Stones
+		q(7939, {	-- More Dense Grinding Stones
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		q(8223,  {	-- More Glowing Scorpid Blood
+		q(8223, {	-- More Glowing Scorpid Blood
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		q(7942,  {	-- More Thorium Widgets
+		q(7942, {	-- More Thorium Widgets
 			["u"] = REMOVED_FROM_GAME,
 		}),
 		q(37868, {	-- More Big Racing!
@@ -738,7 +738,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["isMonthly"] = true,
 			["provider"] = { "n", 14833 },	-- Chronos
 			["coord"] = { 54.9, 70.7, 407 },
-			["u"] = REMOVED_FROM_GAME, -- First Aid removed in 8.0.1 BfA Prepatch
+			["u"] = REMOVED_FROM_GAME,	-- First Aid removed in 8.0.1 BfA Prepatch
 		}),
 		q(29509, {	-- Putting the Crunch in the Frog
 			["requireSkill"] = COOKING,
@@ -826,12 +826,12 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 			},
 		}),
-		q(7946,  {	-- Spawn of Jubjub
+		q(7946, {	-- Spawn of Jubjub
 			["provider"] = { "n", 14871 },	-- Morja
 			["coord"] = { 55.9, 70.7, 407 },
 			["g"] = {
 				i(19462, {		--	Unhatched Jubling Egg
-					i(19450, { -- Jubling (PET!)
+					i(19450, {	-- Jubling (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
 				}),
@@ -908,7 +908,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				currency(515),	-- Darkmoon Prize Ticket
 			},
 		}),
-		q(7926,  {	-- The Darkmoon Faire
+		q(7926, {	-- The Darkmoon Faire
 			["provider"] = { "n", 55382 },	-- Darkmoon Faire Mystic Mage
 			["coord"] = { 48.0, 62.0, ORGRIMMAR },
 			["races"] = HORDE_ONLY,

@@ -253,7 +253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(11474, {	-- Sprite Darter Egg (PET!)
-						["timeline"] = { "added 1.11.1.5462" },
+							["timeline"] = { "added 1.11.1.5462" },
 							-- #if BEFORE WRATH
 							["races"] = ALLIANCE_ONLY,
 							-- #endif

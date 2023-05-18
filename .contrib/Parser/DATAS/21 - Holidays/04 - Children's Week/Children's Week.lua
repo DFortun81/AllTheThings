@@ -66,14 +66,14 @@ local RETURN_TO_THE_BFA_ORPHANAGE_GROUPS = {
 	i(23022),	-- Curmudgeon's Payoff
 };
 local WARDEN_OF_THE_GROUPS = {
-	i(23007, { -- Mr. Wiggles (PET!)
+	i(23007, {	-- Mr. Wiggles (PET!)
 		["timeline"] = { "added 1.11.1.5462" },
 	}),
 	i(23015),	-- Rat Cage
 	i(66073, {	-- Scooter the Snail (PET!)
 		["timeline"] = { "added 4.0.3.13287" },
 	}),
-	i(23002, { -- Speedy (PET!)
+	i(23002, {	-- Speedy (PET!)
 		["timeline"] = { "added 1.11.1.5462" },
 	}),
 	PET_CARE_PACKAGE,
@@ -176,7 +176,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				}),
 				crit(6651, {	-- Tigule's Strawberry Ice Cream
 					["provider"] = { "i", 7228 },	-- Tigule's Strawberry Ice Cream
-					["crs"] = { -- TODO: Remove, add vendors to zones
+					["crs"] = {	-- TODO: Remove, add vendors to zones
 						-- Katrina Shimmerstar & Rachelle Gothena are listed on WoWHead, but only appear during Hallow's End.
 						14480,	-- Alowicious Czervik
 						-- #if AFTER 4.0.3.13277

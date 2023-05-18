@@ -393,7 +393,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 			}),
 			q(24613, {	-- A Gift for the Banshee Queen
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
-				["coord"] = { 66.4, 38.2,  UNDERCITY },
+				["coord"] = { 66.4, 38.2, UNDERCITY },
 				["timeline"] = { "added 3.3.0" },
 				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
@@ -449,7 +449,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4,  UNDERCITY },
+					{ 66.0, 38.4, UNDERCITY },
 				},
 				["timeline"] = { "added 3.3.0" },
 				["isDaily"] = true,
@@ -480,7 +480,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4,  UNDERCITY },
+					{ 66.0, 38.4, UNDERCITY },
 				},
 				["timeline"] = { "added 3.3.0" },
 				["isDaily"] = true,
@@ -1220,7 +1220,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["coords"] = {
 					{ 64.2, 70.0, SILVERMOON_CITY },
 					{ 42.2, 55.75, THUNDER_BLUFF },
-					{ 64.6, 37.4,  UNDERCITY },
+					{ 64.6, 37.4, UNDERCITY },
 				},
 				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
@@ -1985,7 +1985,7 @@ for i,o in ipairs({
 	applyholiday(LOVE_IS_IN_THE_AIR, n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
 		["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
 		-- #if AFTER 4.0.3
-		--["questID"] = 25485, -- NOTE: This is what it should be, but it's not checking off correctly.
+		--["questID"] = 25485,	-- NOTE: This is what it should be, but it's not checking off correctly.
 		-- #else
 		["questID"] = 14488,	-- You've Been Served
 		["isDaily"] = true,
@@ -2035,7 +2035,7 @@ for i,o in ipairs({
 			i(49715, {	-- Forever-Lovely Rose
 				["timeline"] = { "added 3.3.0" },
 			}),
-			i(50446, {	-- Toxic Wasteling (PE!T)
+			i(50446, {	-- Toxic Wasteling (PET!)
 				["timeline"] = { "added 3.3.0" },
 			}),
 			i(50741, {	-- Vile Fumigator's Mask

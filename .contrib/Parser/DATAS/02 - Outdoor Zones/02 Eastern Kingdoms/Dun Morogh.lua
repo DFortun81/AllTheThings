@@ -1174,12 +1174,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["240:185:155:403"] = 132,	-- Coldridge Valley
 				["315:200:397:163"] = 809,	-- Gates of Ironforge
 				--[[
-				[77] = 1,                                -- Anvilmar
-				[189] = 10,                              -- Steelgrill's Depot
-				[716] = 13,                              -- Ironband's Compound
-				[805] = 19,                              -- South Gate Pass
-				[807] = 21,                              -- North Gate Pass
-				[2102] = 24,                             -- Thunderbrew Distillery
+				[77] = 1,								-- Anvilmar
+				[189] = 10,								-- Steelgrill's Depot
+				[716] = 13,								-- Ironband's Compound
+				[805] = 19,								-- South Gate Pass
+				[807] = 21,								-- North Gate Pass
+				[2102] = 24,							-- Thunderbrew Distillery
 				]]--
 			})),
 			-- #endif
@@ -2069,7 +2069,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6084, {	-- Taming the Beast (2/3)
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
-					["sourceQuest"] = 6064,  -- Taming the Beast (1/3)
+					["sourceQuest"] = 6064,	-- Taming the Beast (1/3)
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { DWARF },
@@ -2084,7 +2084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6085, {	-- Taming the Beast (3/3)
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
-					["sourceQuest"] = 6084,  -- Taming the Beast (2/3)
+					["sourceQuest"] = 6084,	-- Taming the Beast (2/3)
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { DWARF },
@@ -2326,7 +2326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6086, {	-- Training the Beast
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
-					["sourceQuest"] = 6085,  -- Taming the Beast (3/3)
+					["sourceQuest"] = 6085,	-- Taming the Beast (3/3)
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { DWARF },
@@ -2469,8 +2469,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER CATA
 					["description"] = "Spawns at the very end of the cave.",
 					["coords"] = {
-						{ 77.9, 55.1, DUN_MOROGH }, -- cave entrance
-						{ 56.3, 39.1, 31 }, -- spawn area
+						{ 77.9, 55.1, DUN_MOROGH },	-- cave entrance
+						{ 56.3, 39.1, 31 },	-- spawn area
 					},
 					-- #else
 					["coords"] = {
@@ -2597,8 +2597,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(8497,	{ -- Snowshoe Rabbit (PET!)
-						 ["timeline"] = { "added 1.11.1.5462" },
+						i(8497,	{	-- Snowshoe Rabbit (PET!)
+							["timeline"] = { "added 1.11.1.5462" },
 						}),
 					},
 				}),

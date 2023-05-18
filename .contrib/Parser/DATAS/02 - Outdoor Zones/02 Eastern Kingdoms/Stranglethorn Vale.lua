@@ -185,24 +185,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["95:95:299:88"] = 125,		-- Kal'ai Ruins
 				["95:95:350:335"] = 311,	-- Ruins of Aboraz
 				--[[
-				[7] = 1,                                 -- Blackwater Cove
-				[106] = 13,                              -- The Stockpile
-				[126] = 18,                              -- Tkashi Ruins
-				[301] = 23,                              -- The Savage Coast
-				[302] = 24,                              -- The Crystal Shore
-				[303] = 25,                              -- Shell Beach
-				[312] = 28,                              -- Janeiro's Point
-				[1577] = 30,                             -- The Cape of Stranglethorn
-				[1578] = 31,                             -- Southern Savage Coast
-				[1742] = 37,                             -- Spirit Den
-				[1757] = 38,                             -- The Crimson Veil
-				[1758] = 39,                             -- The Riptide
-				[1759] = 40,                             -- The Damsel's Luck
-				[1760] = 41,                             -- Venture Co. Operations Center
-				[2177] = 42,                             -- Battle Ring
-				[2338] = 43,                             -- South Seas
-				[2339] = 44,                             -- The Great Sea
-				[3357] = 45,                             -- Yojamba Isle
+				[7] = 1,					-- Blackwater Cove
+				[106] = 13,					-- The Stockpile
+				[126] = 18,					-- Tkashi Ruins
+				[301] = 23,					-- The Savage Coast
+				[302] = 24,					-- The Crystal Shore
+				[303] = 25,					-- Shell Beach
+				[312] = 28,					-- Janeiro's Point
+				[1577] = 30,				-- The Cape of Stranglethorn
+				[1578] = 31,				-- Southern Savage Coast
+				[1742] = 37,				-- Spirit Den
+				[1757] = 38,				-- The Crimson Veil
+				[1758] = 39,				-- The Riptide
+				[1759] = 40,				-- The Damsel's Luck
+				[1760] = 41,				-- Venture Co. Operations Center
+				[2177] = 42,				-- Battle Ring
+				[2338] = 43,				-- South Seas
+				[2339] = 44,				-- The Great Sea
+				[3357] = 45,				-- Yojamba Isle
 				]]--
 			})),
 			-- #endif
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
-						i(10398, { -- Mechanical Chicken (PET!)
+						i(10398, {	-- Mechanical Chicken (PET!)
 							["timeline"] = { "added 1.11.1.5462" },
 						}),
 					},

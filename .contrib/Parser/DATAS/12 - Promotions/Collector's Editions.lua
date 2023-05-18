@@ -85,13 +85,13 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 					ach(662),	-- Collector's Edition: Mini-Diablo
 					ach(663),	-- Collector's Edition: Panda
 					ach(664),	-- Collector's Edition: Zergling
-					i(13584, { -- Mini Diablo (PET!)
+					i(13584, {	-- Mini Diablo (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
-					i(13583, { -- Panda Cub (PET!)
+					i(13583, {	-- Panda Cub (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
-					i(13582, { -- Zergling (PET!)
+					i(13582, {	-- Zergling (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
 				},
@@ -262,7 +262,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE, ["timeline"] = { ADDED_9_0_1 }, }, {
 		["description"] = "These rewards are available to anyone who purchases Shadowlands Heroic Edition.",
 		["groups"] = {
-			ach(14283, { -- Heroic Edition: Ensorcelled Everwyrm
+			ach(14283, {	-- Heroic Edition: Ensorcelled Everwyrm
 				-- ["provider"] = { "s", }	-- TODO maybe have a spell provider?
 			}),
 			mount(307932),	-- Ensorcelled Everwyrm (MOUNT!)

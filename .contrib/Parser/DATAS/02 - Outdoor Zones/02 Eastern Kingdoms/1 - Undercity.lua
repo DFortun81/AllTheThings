@@ -1618,13 +1618,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.6, 44.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(10393, { -- Undercity Cockroach (PET!)
+						i(10393, {	-- Undercity Cockroach (PET!)
 							["timeline"] = { "added 1.11.1.5462" },
 						}),
 					},
 				}),
 				n(4589, {	-- Joseph Moore <Leatherworking Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3366 } }, -- Tamar <Leatherworking Supplies>
+					["sym"] = { {"sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
 					["coord"] = { 70.1, 58.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1732,12 +1732,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER 8.0.1.26297
 					["crs"] = { 130966 },	-- Merill Pleasance <Tabard Vendor>
 					-- #endif
-					["sym"] = { {"sub", "common_vendor", 5188 } }, -- Garyl <Tabard Vendor>
+					["sym"] = { {"sub", "common_vendor", 5188 } },	-- Garyl <Tabard Vendor>
 					["coord"] = { 69.3, 44.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				n(4577, {	-- Millie Gregorian <Tailoring Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3364 } }, -- Borya <Tailoring Supplies>
+					["sym"] = { {"sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
 					["coord"] = { 70.6, 30.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1839,7 +1839,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
 					["coord"] = { 62.3, 43.1, UNDERCITY },
 					-- #if AFTER CATA
-					["sym"] = {{"sub", "common_recipes_vendor", 49737}}, -- Shazdar <Sous Chef>
+					["sym"] = {{"sub", "common_recipes_vendor", 49737}},	-- Shazdar <Sous Chef>
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1850,12 +1850,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4597, {	-- Samuel Van Brunt <Blacksmithing Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3356 } }, -- Sumi <Blacksmithing Supplies>
+					["sym"] = { {"sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
 					["coord"] = { 61.4, 30.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 50482 } }, -- Marith Lazuria <Jewelcrafting Supplies>
+					["sym"] = { {"sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 56.2, 36.6, UNDERCITY },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
@@ -1943,7 +1943,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3346 } }, -- Kithas <Enchanting Supplies>
+					["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
 					["coord"] = { 62.0, 60.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {

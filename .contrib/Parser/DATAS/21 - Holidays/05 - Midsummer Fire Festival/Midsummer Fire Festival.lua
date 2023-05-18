@@ -80,7 +80,7 @@ local FESTIVAL_TALESPINNER_COORDS = {
 	{ 46.8, 38.0, ORGRIMMAR },
 	{ 21.3, 26.4, THUNDER_BLUFF },
 	-- #endif
-	{ 67.6,  8.3, UNDERCITY },
+	{ 67.6, 8.3, UNDERCITY },
 	-- #if AFTER TBC
 	{ 62.2, 32.0, SHATTRATH_CITY },
 	{ 69.8, 43.0, SILVERMOON_CITY },
@@ -473,7 +473,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					["sym"] = {{ "achievement_criteria" }},
 				}),
 
-				ach(6011,  {	-- Flame Warden of Cataclysm (A)
+				ach(6011, {	-- Flame Warden of Cataclysm (A)
 					["timeline"] = { "added 4.3.0.15005" },
 					["sym"] = {{ "achievement_criteria" }},
 				}),
@@ -487,7 +487,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					["timeline"] = { "added 8.1.5.29701" },
 					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(6008,  {	-- Flame Warden of Northrend (A)
+				ach(6008, {	-- Flame Warden of Northrend (A)
 					["timeline"] = { "added 4.3.0.15005" },
 					["sym"] = {{ "achievement_criteria" }},
 				}),
@@ -554,7 +554,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(1033, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Outland (H)
-				ach(8043,  {	-- Extinguishing Pandaria (H)
+				ach(8043, {	-- Extinguishing Pandaria (H)
 					["timeline"] = { "added 5.2.0.16408" },
 					["sym"] = {{ "achievement_criteria" }},
 				}),
@@ -595,14 +595,14 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					["sym"] = {{ "achievement_criteria" }},
 				}),
 			})),
-			ach(271,  {	-- Burning Hot Pole Dance
+			ach(271, {	-- Burning Hot Pole Dance
 				["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
 			}),
 			ach(263),	-- Ice the Frost Lord
 			ach(1145, {	-- King of the Fire Festival
 				["sourceQuests"] = { 9365, 9339 },	-- A Thief's Reward (A, H)
 			}),
-			ach(272,  {	-- Torch Juggler
+			ach(272, {	-- Torch Juggler
 				["maps"] = { NORTHREND_DALARAN },
 			}),
 		}),
@@ -636,7 +636,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					objective(4),	-- Flame of the Scholomance
 					-- #endif
 					-- #if BEFORE 2.4.0.7994
-					i(23083, { -- Captured Flame (PET!)
+					i(23083, {	-- Captured Flame (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
 					-- #endif
@@ -726,7 +726,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["lvl"] = lvlsquish(65, 15, 15),
 			}),
 			q(11891, {	-- An Innocent Disguise
-				["qg"] = 25324,		 -- Earthen Ring Guide
+				["qg"] = 25324,	-- Earthen Ring Guide
 				["sourceQuest"] = 11886,	-- Unusual Activity
 				["description"] = "Use your Totemic Beacon to summon the quest giver.",
 				["coord"] = { 10.2, 15.3, ASHENVALE },
@@ -2615,7 +2615,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 51.0, 34.0, NAGRAND },
 					}),
 					q(54747, {	-- Honor the Flame — Nazmir
-						["qg"] = 148950,    -- Nazmir Flame Keeper
+						["qg"] = 148950,	-- Nazmir Flame Keeper
 						["coord"] = { 40.0, 74.3, NAZMIR },
 						["timeline"] = { "added 8.0.1" },
 					}),
@@ -2744,7 +2744,7 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["timeline"] = { "added 5.0.1" },
 					}),
 					q(54750, {	-- Honor the Flame — Vol'dun
-						["qg"] = 148986,    -- Vol'dun Flame Keeper
+						["qg"] = 148986,	-- Vol'dun Flame Keeper
 						["coord"] = { 56.0, 47.8, VOLDUN },
 						["timeline"] = { "added 8.0.1" },
 					}),

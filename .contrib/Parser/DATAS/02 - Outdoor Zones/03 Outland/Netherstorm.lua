@@ -1451,7 +1451,7 @@ root(ROOTS.Zones, {
 							i(29364),	-- Brown Rabbit (PET!)
 							i(8490),	-- Siamese Cat (PET!)
 							i(10392),	-- Crimson Snake (PET!)
-							i(29363, { -- Mana Wyrmling (PET!)
+							i(29363, {	-- Mana Wyrmling (PET!)
 								["timeline"] = { "added 2.0.1.6180"},
 							}),
 							i(8495),	-- Senegal (PET!)
@@ -2069,7 +2069,7 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					i(24162, {	-- Design: Arcane Khorium Band
-						["cr"] = 18866,  -- Mageslayer
+						["cr"] = 18866,	-- Mageslayer
 					}),
 					n(20520, {	-- Ethereum Prisoner (multiple named mobs with the same ID once spawned)
 						["sourceQuest"] = 10970,	-- A Mission of Mercy (required to be able to find the prison keys)
@@ -2108,8 +2108,8 @@ root(ROOTS.Zones, {
 							22822,	-- Ethereum Nullifier
 						},
 					}),
-					i(28277, {  -- Formula: Enchant Cloak - Greater Shadow Resistance (RECIPE!)
-						["cr"] = 18870,  -- Voidshrieker
+					i(28277, {	-- Formula: Enchant Cloak - Greater Shadow Resistance (RECIPE!)
+						["cr"] = 18870,	-- Voidshrieker
 						["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 					}),
 					i(22551, {	-- Formula: Enchant Weapon - Major Intellect
