@@ -1626,3 +1626,20 @@
 10.1.0.49092
 371176@@@Subterranean Magmammoth
 408651@@@Cataloged Shalewing
+10.1.5.49516
+413409@@@Highland Drake
+413825@@@Exuberant Scarlet Pterrordax
+413827@@@Sprightly Proudmoore Gryphon
+413922@@@Valiance
+414316@@@White War Wolf
+414323@@@Ravenous Black Gryphon
+414324@@@Gold-Toed Albatross
+414326@@@Felstorm Dragon
+414327@@@Sulfur Hound
+414328@@@Juggernaut Perfected
+414334@@@Scourgebound Frostbrood Vanquisher
+10.1.5.49595
+413825@@@Scarlet Pterrordax
+413827@@@Harbor Gryphon
+414328@@@Perfected Juggernaut
+414334@@@Scourgebound Vanquisher

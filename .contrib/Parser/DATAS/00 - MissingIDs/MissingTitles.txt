@@ -4,3 +4,6 @@ title(210),	-- Battlemaster %s
 title(453),	-- %s the [PH] TBD Title
 10.0.2.45779
 title(480),	-- %s, Knight of Feathersworth
+10.1.5.49516
+title(496),	-- Kalimdor Racer %s
+title(510),	-- Whelptender %s

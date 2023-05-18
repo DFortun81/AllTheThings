@@ -125,8 +125,8 @@ def get_quest_names() -> None:
                     expansion_dict = {
                         "Retail": "",
                     }
-                    print("Cata-BFA :", missing_line)
-                elif version.parse(missing_line) < version.parse("10.1.0.9999"):
+                    print("Cata-SL :", missing_line)
+                elif version.parse(missing_line) < version.parse("10.1.0.99999"):
                     expansion_dict = {
                         "Retail": "",
                         "PTR": "ptr",

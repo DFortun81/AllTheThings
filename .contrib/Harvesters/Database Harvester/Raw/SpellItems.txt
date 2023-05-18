@@ -11174,3 +11174,17 @@
 6904@@@Shadowed Belt Clasp|A:Professions-ChatIcon-Quality-Tier3:20:20|a
 6905@@@Shadowed Belt Clasp|A:Professions-ChatIcon-Quality-Tier2:20:20|a
 6906@@@Shadowed Belt Clasp|A:Professions-ChatIcon-Quality-Tier1:20:20|a
+10.1.5.49516
+6488@@@+$k2 Agility/Strength & +$k1 Stamina |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+6489@@@+$k2 Agility/Strength & +$k1 Stamina |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+6490@@@+$k2 Agility/Strength & +$k1 Stamina |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+6491@@@+$k1 Agility/Strength |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+6492@@@+$k1 Agility/Strength |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+6493@@@+$k1 Agility/Strength |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+6494@@@+$k2 Agility/Strength & +$k1 Armor |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+6495@@@+$k2 Agility/Strength & +$k1 Armor |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+6496@@@+$k2 Agility/Strength & +$k1 Armor |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+6828@@@+$k1 Primary Stat & +$k2 Versatility |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+6829@@@+$k1 Primary Stat & +$k2 Versatility |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+6830@@@+$k1 Primary Stat & +$k2 Versatility |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+6903@@@10.1.5 FX Testing - Enchant Visualt - Bronze Infinite

@@ -645,3 +645,6 @@
 10.1.0.49092
 508@@@Field Researcher %s
 509@@@Zaralek Cavern Racer %s
+10.1.5.49516
+496@@@Kalimdor Racer %s
+510@@@Whelptender %s

@@ -100,6 +100,18 @@ mount(276112),	-- Darkforge Ram
 mount(363608),	-- Lightforged Ruinstrider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
+10.1.5.49516
+mount(413409),	-- Highland Drake
+mount(413825),	-- Scarlet Pterrordax \\ Exuberant Scarlet Pterrordax
+mount(413827),	-- Harbor Gryphon \\ Sprightly Proudmoore Gryphon
+mount(413922),	-- Valiance
+mount(414316),	-- White War Wolf
+mount(414323),	-- Ravenous Black Gryphon
+mount(414324),	-- Gold-Toed Albatross
+mount(414326),	-- Felstorm Dragon
+mount(414327),	-- Sulfur Hound
+mount(414328),	-- Perfected Juggernaut \\ Juggernaut Perfected
+mount(414334),	-- Scourgebound Vanquisher \\ Scourgebound Frostbrood Vanquisher
 
 
 
@@ -210,3 +222,15 @@ mount(363608),	-- Lightforged Ruinstrider
 mount(370770),	-- Tuskarr Shoreglider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
+10.1.5.49516
+mount(413409),	-- Highland Drake
+mount(413825),	-- Scarlet Pterrordax \\ Exuberant Scarlet Pterrordax
+mount(413827),	-- Harbor Gryphon \\ Sprightly Proudmoore Gryphon
+mount(413922),	-- Valiance
+mount(414316),	-- White War Wolf
+mount(414323),	-- Ravenous Black Gryphon
+mount(414324),	-- Gold-Toed Albatross
+mount(414326),	-- Felstorm Dragon
+mount(414327),	-- Sulfur Hound
+mount(414328),	-- Perfected Juggernaut \\ Juggernaut Perfected
+mount(414334),	-- Scourgebound Vanquisher \\ Scourgebound Frostbrood Vanquisher

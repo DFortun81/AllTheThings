@@ -86,7 +86,6 @@ r(264581),	-- Northrend Leatherworking
 r(264583),	-- Cataclysm Leatherworking
 r(264585),	-- Pandaria Leatherworking
 r(264588),	-- Draenor Leatherworking
-r(264590),	-- Legion Leatherworking
 r(264592),	-- Kul Tiran Leatherworking
 8.0.1.25976
 r(265813),	-- Zandalari Leatherworking
@@ -163,6 +162,22 @@ r(309292),	-- Bonerivetted Waistguard \\ Necrolord Scale Waistguard
 r(309293),	-- Bonerivetted Armguards \\ Necrolord Scale Armguards
 9.0.1.35167
 r(338261),	-- Almost Thing
+10.1.5.49516
+r(413496),	-- Polar Helm
+r(413497),	-- Polar Spaulders
+r(413498),	-- Polar Belt
+r(413499),	-- Polar Leggings
+r(413500),	-- Polar Footwarmers
+r(413501),	-- Icy Scale Crown
+r(413502),	-- Icy Scale Shoulderpads
+r(413503),	-- Icy Scale Waistwrap
+r(413504),	-- Icy Scale Leggings
+r(413505),	-- Icy Scale Stompers
+r(413516),	-- Helm of Lingering Power
+r(413517),	-- Skyfury Headdress
+r(413738),	-- Nerubian Persuader
+r(413756),	-- Displacement Boots
+r(413761),	-- Lucien's Lost Soles
 
 
 
@@ -1873,3 +1888,19 @@ r(355354),	-- Elusive Pet Treat
 r(359662),	-- Crafter's Mark IV
 r(359669),	-- Crafter's Mark of the First Ones
 r(359702),	-- Vestige of the Eternal
+10.1.5.49516
+r(413496),	-- Polar Helm
+r(413497),	-- Polar Spaulders
+r(413498),	-- Polar Belt
+r(413499),	-- Polar Leggings
+r(413500),	-- Polar Footwarmers
+r(413501),	-- Icy Scale Crown
+r(413502),	-- Icy Scale Shoulderpads
+r(413503),	-- Icy Scale Waistwrap
+r(413504),	-- Icy Scale Leggings
+r(413505),	-- Icy Scale Stompers
+r(413516),	-- Helm of Lingering Power
+r(413517),	-- Skyfury Headdress
+r(413738),	-- Nerubian Persuader
+r(413756),	-- Displacement Boots
+r(413761),	-- Lucien's Lost Soles

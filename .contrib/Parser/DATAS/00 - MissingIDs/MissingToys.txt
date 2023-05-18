@@ -1,13 +1,20 @@
-7.3.0.24473
-i(21540),	-- e's Lantern \\ Elune's Lantern
-8.0.1.26567
-i(162642),	-- Toy Armor Set
-i(162643),	-- Toy Armor Set
-9.0.1.33978
-i(178530),	-- Wreath-A-Rang
-9.2.5.43254
-i(191925),	-- Falling Star Flinger
-i(191937),	-- Falling Star Catcher
+10.1.5.49516
+i(110560),	-- Garrison Hearthstone \\ ison Hearthstone
+i(140192),	-- Dalaran Hearthstone \\ ran Hearthstone
+i(206195),	-- Path of the Naaru
+i(206565),	-- Plagued Grain
+10.1.5.49595
+i(206993),	-- Investi-gator's Pocketwatch
 
 
-Nothing is Missing in ToyDB.lua! Good Work!
+
+
+Missing in ToyDB.lua
+
+10.1.5.49516
+i(110560),	-- Garrison Hearthstone \\ ison Hearthstone
+i(140192),	-- Dalaran Hearthstone \\ ran Hearthstone
+i(206195),	-- Path of the Naaru
+i(206565),	-- Plagued Grain
+10.1.5.49595
+i(206993),	-- Investi-gator's Pocketwatch

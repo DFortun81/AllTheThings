@@ -21,6 +21,7 @@ pet(510),	-- Rabbot
 pet(705),	-- Amorous Rooster
 pet(715),	-- Wild Silkworm
 pet(800),	-- Muffin
+pet(820),	-- Singing Cricket
 pet(824),	-- Ms. Croaker
 pet(825),	-- Mr. Growls
 pet(826),	-- Mrs. Skitters
@@ -226,6 +227,7 @@ pet(1301),	-- Alex
 pet(1311),	-- Chi-Chi, Hatchling of Chi-Ji
 pet(1317),	-- Yu'la, Broodling of Yu'lon
 pet(1319),	-- Zao, Calfling of Niuzao
+pet(1333),	-- Jademist Dancer
 pet(1339),	-- Lil' Oondasta
 pet(1352),	-- Lord Piglet
 pet(1354),	-- C92 Annihilator
@@ -786,6 +788,20 @@ pet(3570),	-- Swoggy
 pet(3571),	-- Brul'dan
 pet(3572),	-- Lifft
 pet(3573),	-- Swole
+10.1.5.49516
+pet(3587),	-- Lifelike Mechanical Duckling
+pet(3588),	-- Iggy
+pet(3589),	-- Rusziona
+pet(3590),	-- Belastrasza
+pet(3596),	-- Kabluey
+10.1.5.49595
+pet(3581),	-- Mote of Nasz'uro
+pet(3597),	-- Princess Vorquinstrasza
+pet(3598),	-- Zhusadormu
+pet(3599),	-- Zalethgos
+pet(3600),	-- Pallibrius
+pet(3601),	-- Posidriss
+pet(3602),	-- Somnius
 
 
 
@@ -1047,6 +1063,7 @@ pet(800),	-- Muffin
 pet(817),	-- Wild Jade Hatchling
 pet(818),	-- Wild Golden Hatchling
 pet(819),	-- Wild Crimson Hatchling
+pet(820),	-- Singing Cricket
 pet(823),	-- Highlands Skunk
 pet(824),	-- Ms. Croaker
 pet(825),	-- Mr. Growls
@@ -1721,165 +1738,17 @@ pet(2770),	-- Infectus
 pet(2771),	-- Plagued Mailemental
 pet(2772),	-- Soul Collector
 pet(2774),	-- Lefty
-8.3.0.32044
-pet(2799),	-- Alpha
-pet(2800),	-- Beta
-pet(2801),	-- Bomber
-pet(2802),	-- Logic
-pet(2803),	-- Math
-pet(2804),	-- Frill
-pet(2805),	-- Ruddy
-pet(2806),	-- Wanderer
-pet(2807),	-- Crushface
-pet(2808),	-- Fozling
-pet(2809),	-- Tremors
-pet(2810),	-- Presto
-pet(2811),	-- Fury
-pet(2812),	-- Glitzy
-8.3.0.32151
-pet(2814),	-- Gigacharged Mayhem Maker
-pet(2815),	-- Rampage
-pet(2816),	-- Liz
-pet(2817),	-- Ralf
-pet(2818),	-- Splint
-pet(2819),	-- Ninn Jah
-pet(2820),	-- Shred
-pet(2821),	-- Wilbur
-pet(2822),	-- Char
-pet(2823),	-- Tempton
-8.3.0.32414
-pet(2854),	-- Retinus the Seeker
-pet(2855),	-- Whispers
-pet(2856),	-- Aqir Sandcrawler
-pet(2857),	-- Blotto
-pet(2858),	-- K'tiny the Mad
-pet(2859),	-- Tormentius
-pet(2860),	-- Baruk Stone Defender
-pet(2861),	-- Vil'thik Hatchling
-9.0.1.34199
-pet(2885),	-- Whipper
-pet(2886),	-- Snipper
-pet(2887),	-- Flipper
-9.0.1.35256
-pet(2968),	-- Jawbone
-pet(2969),	-- Sunset Glimmerfly
-pet(2970),	-- Plains Peachick
-pet(2971),	-- Golden Grazer
-pet(2972),	-- Shelby
-pet(2973),	-- Tinyhoof
-pet(2974),	-- Glitterwing
-pet(2975),	-- Battery
-pet(2976),	-- Slasher
-pet(2977),	-- Pounder
-pet(2978),	-- Gorgemouth
-pet(2979),	-- Scorch
-pet(2980),	-- Bloog
-pet(2981),	-- Bone Crusher
-pet(2982),	-- Chipper
-pet(2983),	-- Leftovers
-pet(2984),	-- Leftovers
-pet(2985),	-- Leftovers
-pet(2986),	-- Whirly
-pet(2987),	-- Stinkdust
-pet(2988),	-- Trailblazer
-pet(2989),	-- Ash
-pet(2990),	-- Fang
-pet(2991),	-- Swarm
-pet(2992),	-- Boneclaw
-pet(2993),	-- Spindler
-pet(2994),	-- Rocko
-pet(2996),	-- Wretch
-pet(2998),	-- Nightfang
-pet(2999),	-- Rascal
-pet(3000),	-- Slugger
-pet(3001),	-- Runehoof
-pet(3002),	-- Duster
-pet(3003),	-- Star Tail
-pet(3004),	-- Needlenose
-pet(3005),	-- Brite
-9.0.2.36165
-pet(3068),	-- Crystalsnap
-pet(3070),	-- Briarpaw
-pet(3071),	-- Chittermaw
-pet(3072),	-- Mistwing
-pet(3073),	-- Sewer Creeper
-pet(3074),	-- The Countess
-pet(3075),	-- Digallo
-pet(3076),	-- Gelatinous
-pet(3077),	-- Kostos
-pet(3078),	-- Glurp
-9.1.0.38312
-pet(3089),	-- RT-3 M15
-pet(3090),	-- Squibbles
-pet(3091),	-- Churro
-9.1.0.38549
-pet(3155),	-- Gurgl
-pet(3156),	-- Hornswoggle
-pet(3158),	-- Missing1
-10.0.0.44649
-pet(3268),	-- Swog
-10.0.0.44999
-pet(3377),	-- Gwosh
-10.0.0.45232
-pet(3386),	-- Faceripper \\ Brown Duck \\ [PH] Brown Duck
-pet(3387),	-- Bloodbiter \\ REUSE ME \\ [PH] Brown Baby Thunder Lizard
-pet(3388),	-- Tina \\ [PH] White Shaggy Rabbit
-pet(3391),	-- Phantus
-pet(3392),	-- Skritches
-pet(3393),	-- Anubisath Idol
-pet(3394),	-- Mechanical Pandaren Dragonling
-pet(3395),	-- Spectral Tiger Cub
-10.0.0.45335
-pet(3396),	-- Enyobon
-pet(3397),	-- Cockroach
-pet(3398),	-- Cat
-pet(3400),	-- Chicken
-pet(3401),	-- Arcantus
-pet(3402),	-- Stormamu
-10.0.7.47910
-pet(3429),	-- Vortex
-pet(3430),	-- Tremblor
-pet(3431),	-- Wildfire
-pet(3432),	-- Flow
-pet(3433),	-- Vortex
-pet(3434),	-- Tremblor
-pet(3435),	-- Wildfire
-pet(3436),	-- Flow
-pet(3437),	-- Vortex
-pet(3438),	-- Tremblor
-pet(3439),	-- Wildfire
-pet(3440),	-- Flow
-pet(3441),	-- Storm-Touched Ohuna
-pet(3442),	-- Storm-Touched Skitterer
-pet(3443),	-- Storm-Touched Slyvern
-pet(3444),	-- Storm-Touched Swoglet
-pet(3450),	-- Feral Frogduck
-pet(3451),	-- Lord Flappinsby
-pet(3452),	-- Enchanted Tuskling
-pet(3453),	-- Adinakon
-pet(3454),	-- Lyver
-pet(3455),	-- Yu'shor
-pet(3456),	-- Drakeula
-pet(3457),	-- Arctichnid
-pet(3458),	-- Kazzquack
-pet(3459),	-- Mothoroth
-pet(3460),	-- Blu'jaeden
-pet(3465),	-- Enok the Stinky
-pet(3466),	-- Malfunctioning Matrix
-pet(3472),	-- Lil' Algalon
-pet(3473),	-- Cozmos
-pet(3474),	-- Celastro
-10.1.0.48537
-pet(3558),	-- Murrey
-pet(3559),	-- Clawz
-pet(3560),	-- Bassalt
-10.1.0.48661
-pet(3565),	-- Fethres
-pet(3566),	-- Beeks
-pet(3567),	-- Talons
-pet(3568),	-- Dustie
-pet(3569),	-- Tempe
-pet(3570),	-- Swoggy
-pet(3571),	-- Brul'dan
-pet(3572),	-- Lifft
-pet(3573),	-- Swole
+10.1.5.49516
+pet(3587),	-- Lifelike Mechanical Duckling
+pet(3588),	-- Iggy
+pet(3589),	-- Rusziona
+pet(3590),	-- Belastrasza
+pet(3596),	-- Kabluey
+10.1.5.49595
+pet(3581),	-- Mote of Nasz'uro
+pet(3597),	-- Princess Vorquinstrasza
+pet(3598),	-- Zhusadormu
+pet(3599),	-- Zalethgos
+pet(3600),	-- Pallibrius
+pet(3601),	-- Posidriss
+pet(3602),	-- Somnius
