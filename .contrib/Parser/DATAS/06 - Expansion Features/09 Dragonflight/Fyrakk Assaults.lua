@@ -12,7 +12,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				201673,	-- Kretchenwrath
 			},
 			["g"] = {
-				i(206043),	-- Fryrakk's Frenzy (TOY!)
+				i(206043),	-- Fyrakk's Frenzy (TOY!)
 				filter(BATTLE_PETS, {
 					i(205003),	-- Ambre (PET!)
 					i(205002),	-- Blaise (PET!)

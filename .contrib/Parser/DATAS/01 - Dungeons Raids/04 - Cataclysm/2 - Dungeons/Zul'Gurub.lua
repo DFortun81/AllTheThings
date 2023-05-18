@@ -260,14 +260,14 @@ root("Instances", tier(CATA_TIER, {
 							i(69864),	-- Tarnished Crown
 						},
 					}),
-					q(29208,  {	-- An Old Friend
+					q(29208, {	-- An Old Friend
 						["sourceQuests"] = {
 							26775,	-- Be Raptor [Alliance]
 							26362,	-- Be Raptor [Horde]
 						},
 						["provider"] = { "n", 52877 },	-- Lashtail Hatchling
 						["g"] = {
-							i(69251, { -- Lashtail Hatchling (PET!)
+							i(69251, {	-- Lashtail Hatchling (PET!)
 								["timeline"] = { "added 4.1.0.13698" },
 							}),
 						},
@@ -280,10 +280,10 @@ root("Instances", tier(CATA_TIER, {
 						["provider"] = { "n", 53151 },			-- Overseer Revilgaz
 						["races"] = HORDE_ONLY,
 					}),
-					q(29241,  {	-- Break the Godbreaker
+					q(29241, {	-- Break the Godbreaker
 						["provider"] = { "n", 53024 },			-- Bloodslayer Zala
 					}),
-					q(29175,  {	-- Break Their Spirits
+					q(29175, {	-- Break Their Spirits
 						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
 					}),
 					q(74696, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Gurubashi, Vilebranch, and Witherbark Coins
@@ -297,7 +297,7 @@ root("Instances", tier(CATA_TIER, {
 							i(ZANDALAR_BARGAINING_TOKEN),
 						},
 					})),
-					q(29242,  {	-- Putting a Price on Priceless
+					q(29242, {	-- Putting a Price on Priceless
 						["provider"] = { "n", 53043 },			-- Briney Boltcutter
 					}),
 					q(74576, {	-- Restored Hakkari Bijou
@@ -317,13 +317,13 @@ root("Instances", tier(CATA_TIER, {
 							i(ZANDALAR_BARGAINING_TOKEN),
 						},
 					})),
-					q(29173,  {	-- Secondary Targets
+					q(29173, {	-- Secondary Targets
 						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
 					}),
-					q(29172,  {	-- The Beasts Within
+					q(29172, {	-- The Beasts Within
 						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
 					}),
-					q(29262,  {	-- Zul'Gurub Voodoo
+					q(29262, {	-- Zul'Gurub Voodoo
 						--["objectID"] = 208550,	-- Voodoo Pile
 						["isDaily"] = true,
 						["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
@@ -758,7 +758,7 @@ root("Instances", tier(CATA_TIER, {
 					i(69606),	-- Hakkari Loa Drape
 					i(69608),	-- Deathcharged Wristguards
 				})),
-				n(-41,   {			-- Cache of Madness (Requires 225 Archeology)
+				n(-41, {			-- Cache of Madness (Requires 225 Archeology)
 					--[[ encounter IDs if we're ever able to use an array for them:
 						177,	-- Gri'lek
 						178,	-- Hazza'rah
@@ -771,7 +771,7 @@ root("Instances", tier(CATA_TIER, {
 					["description"] = "Requires Archaeology (225+) to spawn.",
 					-- #endif
 					["g"] = {
-						--[[ Using CRS // QGS doesn't apply the description.  Only applies to NPCID
+						--[[ Using CRS // QGS doesn't apply the description. Only applies to NPCID
 						{	-- Summon Artifacts
 							["npcID"] = 52446,	-- Ancient Dwarven Artifact
 							["description"] = "This artifact is used in summoning the boss.",

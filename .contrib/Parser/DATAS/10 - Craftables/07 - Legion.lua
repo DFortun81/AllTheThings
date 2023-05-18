@@ -215,7 +215,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(144304, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Master
 			i(144306, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Quick
 			i(141909),	-- Enchant Neck - Mark of the Trained Soldier
-			i(144305, {["timeline"]={"added 7.1.5"}}),	--Enchant Neck -  Mark of the Versatile
+			i(144305, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Versatile
 		}),
 		cat(490, {	-- Relics
 			i(136691),	-- Immaculate Fibril
@@ -265,9 +265,9 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(136688),	-- Shockinator*
 		}),
 		cat(472, { 	-- Devices
-			i(134125, { -- Mecha-Bond Imprint Matrix
+			i(134125, {	-- Mecha-Bond Imprint Matrix
 				["classes"] = { HUNTER },
-				["spellID"] = 205154, -- Mecha-Bond Imprint Matrix
+				["spellID"] = 205154,	-- Mecha-Bond Imprint Matrix
 				["f"] = RECIPES,
 			}),
 		}),

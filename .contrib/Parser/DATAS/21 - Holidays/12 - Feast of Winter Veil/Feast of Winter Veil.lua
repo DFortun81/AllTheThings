@@ -902,7 +902,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(128650, {	-- "Merry Munchkin" Costume
 						["timeline"] = { "added 6.2.2.20395" },
 					}),
-					i(21254),  -- Winter Veil Cookie
+					i(21254),	-- Winter Veil Cookie
 				},
 			}),
 			q(8803, { 	-- A Festive Gift
@@ -915,7 +915,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 				["lvl"] = 10,
 				["groups"] = {
-					i(21328),  -- Wand of Holiday Cheer
+					i(21328),	-- Wand of Holiday Cheer
 				},
 			}),
 			q(8768, { 	-- A Gaily Wrapped Present
@@ -960,7 +960,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 						["timeline"] = { "added 6.0.2" },
 					}),
 					-- #endif
-					i(21235, {  -- Winter Veil Roast
+					i(21235, {	-- Winter Veil Roast
 						["timeline"] = { "removed 6.2.3.20601" },
 					}),
 				},
@@ -991,7 +991,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 						["timeline"] = { "added 6.0.2" },
 					}),
 					-- #endif
-					i(21241, {  -- Winter Veil Eggnog
+					i(21241, {	-- Winter Veil Eggnog
 						["timeline"] = { "removed 6.2.3.20601" },
 					}),
 				},
@@ -1605,7 +1605,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 						i(21314),	-- Metzen's Letters and Notes
 						i(21211),	-- Pouch of Raindeer Dust
 					}),
-					i(21213),  -- Preserved Holly
+					i(21213),	-- Preserved Holly
 				},
 			}),
 			q(8746, {	-- Metzen the Reindeer (Horde)
@@ -1635,7 +1635,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 						i(21314),	-- Metzen's Letters and Notes
 						i(21211),	-- Pouch of Raindeer Dust
 					}),
-					i(21213),  -- Preserved Holly
+					i(21213),	-- Preserved Holly
 				},
 			}),
 			q(8860, {	-- New Year Celebrations! (Alliance)
@@ -1765,7 +1765,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 				["lvl"] = 40,
 				["groups"] = {
-					i(21213),  -- Preserved Holly
+					i(21213),	-- Preserved Holly
 				},
 			}),
 			q(8799, {	-- The Hero of the Day (Horde)
@@ -1787,7 +1787,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 				["lvl"] = 40,
 				["groups"] = {
-					i(21213),  -- Preserved Holly
+					i(21213),	-- Preserved Holly
 				},
 			}),
 			q(7062, {	-- The Reason for the Season (Alliance)
@@ -2052,13 +2052,13 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["lvl"] = 50,
 				["groups"] = {
 					-- Battle Pets/Companions
-					i(54436, { -- Blue Clockwork Rocket Bot (PET!)
+					i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
 						["timeline"] = { "added 3.3.3.11573" },
 					}),
-					i(34425, { -- Clockwork Rocket Bot (PET!)
+					i(34425, {	-- Clockwork Rocket Bot (PET!)
 						["timeline"] = { "added 2.3.0.7561" },
 					}),
-					i(73797, { -- Lumpy (PET!)
+					i(73797, {	-- Lumpy (PET!)
 						["timeline"] = { "added 4.3.0.15005" },
 					}),
 					i(104317, {	-- Rotten Helper Box
@@ -2399,20 +2399,20 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 			o(243911, {	-- Snow Mound
 				["timeline"] = { "added 6.2.2.20395" },
 				["coords"] = {
-                    { 42.8, 27.3, FROSTFIRE_RIDGE },
-                    { 43.2, 27.8, FROSTFIRE_RIDGE },
-                    { 43.9, 28.0, FROSTFIRE_RIDGE },
-                    { 44.1, 25.9, FROSTFIRE_RIDGE },
-                    { 44.4, 26.5, FROSTFIRE_RIDGE },
-                    { 45.0, 26.2, FROSTFIRE_RIDGE },
-                    { 45.3, 26.7, FROSTFIRE_RIDGE },
-                    { 45.8, 25.8, FROSTFIRE_RIDGE },
-                    { 45.8, 26.6, FROSTFIRE_RIDGE },
-                    { 47.0, 27.0, FROSTFIRE_RIDGE },
-                    { 47.0, 28.5, FROSTFIRE_RIDGE },
-                    { 47.4, 28.2, FROSTFIRE_RIDGE },
-                    { 47.6, 27.6, FROSTFIRE_RIDGE },
-                },
+					{ 42.8, 27.3, FROSTFIRE_RIDGE },
+					{ 43.2, 27.8, FROSTFIRE_RIDGE },
+					{ 43.9, 28.0, FROSTFIRE_RIDGE },
+					{ 44.1, 25.9, FROSTFIRE_RIDGE },
+					{ 44.4, 26.5, FROSTFIRE_RIDGE },
+					{ 45.0, 26.2, FROSTFIRE_RIDGE },
+					{ 45.3, 26.7, FROSTFIRE_RIDGE },
+					{ 45.8, 25.8, FROSTFIRE_RIDGE },
+					{ 45.8, 26.6, FROSTFIRE_RIDGE },
+					{ 47.0, 27.0, FROSTFIRE_RIDGE },
+					{ 47.0, 28.5, FROSTFIRE_RIDGE },
+					{ 47.4, 28.2, FROSTFIRE_RIDGE },
+					{ 47.6, 27.6, FROSTFIRE_RIDGE },
+				},
 				["groups"] = {
 					i(128770, {	-- Grumpling (PET!)
 						["timeline"] = { "added 6.2.2.20395" },

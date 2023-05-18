@@ -79,7 +79,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(39470),	-- Medallion of the Disgraced
 					}),
 					n(-368, {	-- The Arachnid Quarter
-						e(1601, { -- Anub'Rehkan
+						e(1601, {	-- Anub'Rehkan
 							["creatureID"] = 15956,	-- Anub'Rehkan
 							["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
 							["groups"] = {
@@ -247,7 +247,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
 									-- #endif
 								}),
-								i(93032, { -- Fungal Abomination (PET!)
+								i(93032, {	-- Fungal Abomination (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
 								i(40622),	-- Spaulders of the Lost Conqueror
@@ -420,7 +420,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							},
 						}),
 						e(1612, {	-- Gluth
-							["creatureID"] = 15932, -- Gluth
+							["creatureID"] = 15932,	-- Gluth
 							["lore"] = "The foul plague-dog of Naxxramas, was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
 							-- #IF NOT ANYCLASSIC
 							["sym"] = {
@@ -971,7 +971,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
 									-- #endif
 								}),
-								i(93032, { -- Fungal Abomination (PET!)
+								i(93032, {	-- Fungal Abomination (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
 								i(40637),	-- Mantle of the Lost Conqueror

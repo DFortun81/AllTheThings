@@ -108,7 +108,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			i(69838, {		-- Chirping Box (Blue / Gold Mini Jouster - which ever wasnt picked during !Vigilance on Wings)
 				["description"] = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
 				["groups"] = {
-					i(65661, { -- Blue Mini Jouster (PET!)
+					i(65661, {	-- Blue Mini Jouster (PET!)
 						["timeline"] = { "added 4.0.1.12984" },
 					}),
 					i(65662, {	-- Gold Mini Jouster (PET!)
@@ -183,8 +183,8 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(2),		-- Kill a Flamewaker Sentinel while it is carrying someone
 				crit(3),		-- Survive a Flamewaker Hunter's Wild Barrage without getting hit
 			}),
-			ach(5872),		-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
-			ach(5874, {		-- Death From Above  (Mount Hyjal - The Molten Front)
+			ach(5872),		-- King of the Spider-Hill (Mount Hyjal - The Molten Front)
+			ach(5874, {		-- Death From Above (Mount Hyjal - The Molten Front)
 				crit(1),		-- Ragepyre
 				crit(2),		-- Blazefury
 				crit(3),		-- Flashfire

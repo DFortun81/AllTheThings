@@ -3790,7 +3790,7 @@ root(ROOTS.Zones, {
 					}),
 					prof(FISHING, {
 						i(45903),	-- Corroded Jewelry
-						i(43698, { -- Giant Sewer Rat (PET!)
+						i(43698, {	-- Giant Sewer Rat (PET!)
 							["timeline"] = { "added 3.0.2.8926" },
 						}),
 					}),
@@ -3828,7 +3828,7 @@ root(ROOTS.Zones, {
 						n(29535, {	-- Alchemist Cinesra
 							["coord"] = { 63.2, 11.4, NORTHREND_THE_UNDERBELLY },
 							["sym"] = {{"select","itemID",
-								4565,    -- Simple Dagger
+								4565,	-- Simple Dagger
 							}},
 						}),
 						n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
@@ -3863,7 +3863,7 @@ root(ROOTS.Zones, {
 						n(29537, {	-- Darahir <Reagents & Magical Goods>
 							["coord"] = { 63.4, 16.2, NORTHREND_THE_UNDERBELLY },
 							["groups"] = {
-								i(39973, { -- Ghostly Skull (PET!)
+								i(39973, {	-- Ghostly Skull (PET!)
 									["timeline"] = { "added 3.0.2.8970" },
 								}),
 							},
@@ -4099,19 +4099,19 @@ root(ROOTS.Zones, {
 					ach(3217, {	-- Chasing Marcia
 						["requireSkill"] = FISHING,
 						["groups"] = {
-							crit(13367, { -- Blood Is Thicker
+							crit(13367, {	-- Blood Is Thicker
 								["_quests"] = { 13833 },
 							}),
-							crit(13365, { -- Dangerously Delicious
+							crit(13365, {	-- Dangerously Delicious
 								["_quests"] = { 13834 },
 							}),
-							crit(13366, { -- Disarmed!
+							crit(13366, {	-- Disarmed!
 								["_quests"] = { 13836 },
 							}),
-							crit(13364, { -- Jewel Of The Sewers
+							crit(13364, {	-- Jewel Of The Sewers
 								["_quests"] = { 13832 },
 							}),
-							crit(13363, { -- The Ghostfish
+							crit(13363, {	-- The Ghostfish
 								["_quests"] = { 13830 },
 							}),
 						},
@@ -4503,7 +4503,7 @@ root(ROOTS.Zones, {
 						["requireSkill"] = TAILORING,
 						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable.
 						["groups"] = {
-							spell(59390),	-- Cloth Scavenging -- NOTE: there doesn't appear to be a recipe for this
+							spell(59390),	-- Cloth Scavenging	-- NOTE: there doesn't appear to be a recipe for this
 						},
 					}),
 					{	-- Convention at the Legerdemain
@@ -5157,7 +5157,7 @@ root(ROOTS.Zones, {
 							{ "n", 23729 },	-- Baron Ulrik von Stromhearth
 							{ "n", 26673 },	-- Image of Archmage Modera
 							{ "n", 29158 },	-- Magister Dath'omere
-							{ "n", 29161 }, --	Magistrix Haelenai
+							{ "n", 29161 },	-- Magistrix Haelenai
 						},
 						["coords"] = {
 							{ 58.6, 68.2, BOREAN_TUNDRA },
@@ -5853,7 +5853,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.7, 39.2, NORTHREND_DALARAN },
 						["groups"] = {
 							i(44822),	-- Albino Snake (PET!)
-							i(46398, { -- Calico Cat (PET!)
+							i(46398, {	-- Calico Cat (PET!)
 								["timeline"] = { "added 3.3.0.10522" },
 							}),
 							i(129826, {	-- Nursery Spider (PET!)
@@ -5930,7 +5930,7 @@ root(ROOTS.Zones, {
 							i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 								["timeline"] = { "added 3.3.3.11573" },
 							}),
-							i(192099, {  -- Earpieces of Tranquil Focus (TOY!)
+							i(192099, {	-- Earpieces of Tranquil Focus (TOY!)
 								["timeline"] = { ADDED_9_2_5 },
 							}),
 							i(104324, {	-- Foot Ball (TOY!)

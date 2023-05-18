@@ -80,7 +80,7 @@ _.Factions =
 			ach(5144, {	-- Critter Kill Squad
 				["collectible"] = false,
 				["g"] = {
-					i(63398, { -- Armadillo Pup (PET!) - Revered
+					i(63398, {	-- Armadillo Pup (PET!) - Revered
 						["timeline"] = { "added 4.0.1.12941"},
 					}),
 				},

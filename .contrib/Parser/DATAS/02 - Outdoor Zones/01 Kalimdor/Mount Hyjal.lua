@@ -38,12 +38,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					crit(2, {	-- Shrine of Goldrinn
 						["sourceQuests"] = {
 							25298,	-- Free Your Mind, the Rest Follows
-							25332,	-- Get Me Outta Here! -- verify
+							25332,	-- Get Me Outta Here!	-- verify
 							25312,	-- Return to Duskwhisper
 						},
 					}),
 					crit(3, {	-- Foray into the Firelands
-						["sourceQuest"] = 25612,	-- Return from the Firelands -- verify
+						["sourceQuest"] = 25612,	-- Return from the Firelands	-- verify
 					}),
 					crit(4, {	-- Grove of Aessina
 						["sourceQuests"] = {
@@ -89,7 +89,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					i(69838, {		-- Chirping Box (Blue / Gold Mini Jouster - which ever wasnt picked during !Vigilance on Wings)
 						["description"] = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
 						["groups"] = {
-							i(65661, { -- Blue Mini Jouster (PET!)
+							i(65661, {	-- Blue Mini Jouster (PET!)
 								["timeline"] = { "added 4.0.1.12984" },
 							}),
 							i(65662, {	-- Gold Mini Jouster (PET!)
@@ -496,7 +496,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65662, {	-- Gold Mini Jouster (PET!)
 							["timeline"] = { "added 4.0.1.12984" },
 						}),
-						i(65661, { -- Blue Mini Jouster (PET!)
+						i(65661, {	-- Blue Mini Jouster (PET!)
 							["timeline"] = { "added 4.0.1.12984" },
 						}),
 					},
@@ -711,7 +711,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25901, {	-- Hyjal Recycling Program
 					["qg"] = 41497,	-- Logram
 					["coord"] = { 56.8, 56.0, MOUNT_HYJAL },
-					["sourceQuest"] = 25904,	-- The Hammer and the Key -- verify
+					["sourceQuest"] = 25904,	-- The Hammer and the Key	-- verify
 					["groups"] = {
 						i(57347),	-- Bloodbolt Crossbow
 						i(57345),	-- Razorproof Greaves
@@ -967,12 +967,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 26.3, 41.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25617,	-- Into the Maw!
 				}),
-				q(29248, {	-- Releasing the Pressure -- todo: unknown source quest
+				q(29248, {	-- Releasing the Pressure	-- todo: unknown source quest
 					["qg"] = 52986,	-- Dorda'en Nightweaver
 					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 				}),
-				q(29246, {	-- Relieving the Pain -- todo: unknown source quest
+				q(29246, {	-- Relieving the Pain	-- todo: unknown source quest
 					["qg"] = 52986,	-- Dorda'en Nightweaver
 					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
@@ -1188,7 +1188,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29437, {	-- The Fallen Guardian
 					["qg"] = 40289,	-- Ysera
 					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
-					["sourceQuest"] = 29326,	-- The Nordrassil Summit -- verify
+					["sourceQuest"] = 29326,	-- The Nordrassil Summit	-- verify
 				}),
 				q(29202, {	-- The Fate of Runetotem
 					["qg"] = 52669,	-- Matoclaw
@@ -1449,7 +1449,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25923,	-- Finish Nemesis
 				}),
-				q(29247, {	-- Treating the Wounds -- todo: unknown source quest
+				q(29247, {	-- Treating the Wounds	-- todo: unknown source quest
 					["qg"] = 52986,	-- Dorda'en Nightweaver
 					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,

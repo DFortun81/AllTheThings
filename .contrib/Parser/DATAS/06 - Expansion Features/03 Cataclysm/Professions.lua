@@ -12,16 +12,16 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			ach(4922),		-- Grand Master Archaeologist
 			ach(4923),		-- Illustrious Grand Master Archaeologist
 			ach(5193, {	-- Blue Streak
-				crit(1, { -- Notched Sword of Tunadil the Redeemer
+				crit(1, {	-- Notched Sword of Tunadil the Redeemer
 					["provider"] = { "i", 64337 },	-- Notched Sword of Tunadil the Redeemer
 				}),
-				crit(2, { -- Dented Shield of Horuz Killcrow
+				crit(2, {	-- Dented Shield of Horuz Killcrow
 					["provider"] = { "i", 64362 },	-- Dented Shield of Horuz Killcrow
 				}),
-				crit(3, { -- Scorched Staff of Shadow Priest Anund
+				crit(3, {	-- Scorched Staff of Shadow Priest Anund
 					["provider"] = { "i", 64366 },	-- Scorched Staff of Shadow Priest Anund
 				}),
-				crit(4, { -- Silver Kris of Korl
+				crit(4, {	-- Silver Kris of Korl
 					["provider"] = { "i", 64483 },	-- Silver Kris of Korl
 				}),
 			}),
@@ -41,82 +41,82 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				crit(9),		-- Vrykul
 			}),
 			ach(4859, {	-- Kings Under the Mountain
-				crit(1, { -- Mithril Chain of Angerforge
+				crit(1, {	-- Mithril Chain of Angerforge
 					["provider"] = { "i", 64368 },	-- Mithril Chain of Angerforge
 				}),
-				crit(2, { -- Moltenfist's Jeweled Goblet
+				crit(2, {	-- Moltenfist's Jeweled Goblet
 					["provider"] = { "i", 63414 },	-- Moltenfist's Jeweled Goblet
 				}),
-				crit(3, { -- Winged Helm of Corehammer
+				crit(3, {	-- Winged Helm of Corehammer
 					["provider"] = { "i", 64343 },	-- Winged Helm of Corehammer
 				}),
-				crit(4, { -- Ironstar's Petrified Shield
+				crit(4, {	-- Ironstar's Petrified Shield
 					["provider"] = { "i", 64344 },	-- Ironstar's Petrified Shield
 				}),
-				crit(5, { -- Skull Staff of Shadowforge
+				crit(5, {	-- Skull Staff of Shadowforge
 					["provider"] = { "i", 64371 },	-- Skull Staff of Shadowforge
 				}),
-				crit(6, { -- Spiked Gauntlets of Anvilrage
+				crit(6, {	-- Spiked Gauntlets of Anvilrage
 					["provider"] = { "i", 64485 },	-- Spiked Gauntlets of Anvilrage
 				}),
-				crit(7, { -- Warmaul of Burningeye
+				crit(7, {	-- Warmaul of Burningeye
 					["provider"] = { "i", 64484 },	-- Warmaul of Burningeye
 				}),
 			}),
 			ach(4858, {	-- Seven Scepters
-				crit(1, { -- Scepter of Charlga Razorflank
+				crit(1, {	-- Scepter of Charlga Razorflank
 					["provider"] = { "i", 64367 },	-- Scepter of Charlga Razorflank
 				}),
-				crit(2, { -- Atal'ai Scepter
+				crit(2, {	-- Atal'ai Scepter
 					["provider"] = { "i", 64348 },	-- Atal'ai Scepter
 				}),
-				crit(3, { -- Scepter of Xavius
+				crit(3, {	-- Scepter of Xavius
 					["provider"] = { "i", 64382 },	-- Scepter of Xavius
 				}),
-				crit(4, { -- Scepter of Nekros Skullcrusher
+				crit(4, {	-- Scepter of Nekros Skullcrusher
 					["provider"] = { "i", 64420 },	-- Scepter of Nekros Skullcrusher
 				}),
-				crit(5, { -- Scepter of the Nathrezim
+				crit(5, {	-- Scepter of the Nathrezim
 					["provider"] = { "i", 64444 },	-- Scepter of the Nathrezim
 				}),
-				crit(6, { -- Scepter of Nezar'Azret
+				crit(6, {	-- Scepter of Nezar'Azret
 					["provider"] = { "i", 64475 },	-- Scepter of Nezar'Azret
 				}),
-				crit(7, { -- Scepter of Bronzebeard
+				crit(7, {	-- Scepter of Bronzebeard
 					["provider"] = { "i", 64487 },	-- Scepter of Bronzebeard
 				}),
 			}),
 			ach(5301, {	-- The Boy Who Would be King
-				crit(1, { -- Cat Statue with Emerald Eyes
+				crit(1, {	-- Cat Statue with Emerald Eyes
 					["provider"] = { "i", 64653 },	-- Cat Statue with Emerald Eyes
 				}),
-				crit(2, { -- Soapstone Scarab Necklace
+				crit(2, {	-- Soapstone Scarab Necklace
 					["provider"] = { "i", 64654 },	-- Soapstone Scarab Necklace
 				}),
-				crit(3, { -- Tiny Oasis Mosaic
+				crit(3, {	-- Tiny Oasis Mosaic
 					["provider"] = { "i", 64655 },	-- Tiny Oasis Mosaic
 				}),
-				crit(4, { -- Engraved Scimitar Hilt
+				crit(4, {	-- Engraved Scimitar Hilt
 					["provider"] = { "i", 64656 },	-- Engraved Scimitar Hilt
 				}),
-				crit(5, { -- Sketch of a Desert Palace
+				crit(5, {	-- Sketch of a Desert Palace
 					["provider"] = { "i", 64658 },	-- Sketch of a Desert Palace
 				}),
-				crit(6, { -- Canopic Jar
+				crit(6, {	-- Canopic Jar
 					["provider"] = { "i", 64657 },	-- Canopic Jar
 				}),
 			}),
 			ach(5192, {	-- The Harder they Fall
-				crit(1, { -- Tiny Bronze Scorpion
+				crit(1, {	-- Tiny Bronze Scorpion
 					["provider"] = { "i", 64389 },	-- Tiny Bronze Scorpion
 				}),
-				crit(2, { -- Maul of Stone Guard Mur'og
+				crit(2, {	-- Maul of Stone Guard Mur'og
 					["provider"] = { "i", 64417 },	-- Maul of Stone Guard Mur'og
 				}),
-				crit(3, { -- Gray Candle Stub
+				crit(3, {	-- Gray Candle Stub
 					["provider"] = { "i", 64418 },	-- Gray Candle Stub
 				}),
-				crit(4, { -- Rusted Steak Knife
+				crit(4, {	-- Rusted Steak Knife
 					["provider"] = { "i", 64419 },	-- Rusted Steak Knife
 				}),
 			}),
@@ -130,22 +130,22 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				title(150),		-- Professor
 			}),
 			ach(5191, {	-- Tragedy in Three Acts
-				crit(1, { -- Delicate Music Box
+				crit(1, {	-- Delicate Music Box
 					["provider"] = { "i", 64357 },	-- Delicate Music Box
 				}),
-				crit(2, { -- Cloak Clasp with Antlers
+				crit(2, {	-- Cloak Clasp with Antlers
 					["provider"] = { "i", 63407 },	-- Cloak Clasp with Antlers
 				}),
-				crit(3, { -- Hairpin of Silver and Malachite
+				crit(3, {	-- Hairpin of Silver and Malachite
 					["provider"] = { "i", 64356 },	-- Hairpin of Silver and Malachite
 				}),
-				crit(4, { -- Chest of Tiny Glass Animals
+				crit(4, {	-- Chest of Tiny Glass Animals
 					["provider"] = { "i", 64379 },	-- Chest of Tiny Glass Animals
 				}),
-				crit(5, { -- Cracked Crystal Vial
+				crit(5, {	-- Cracked Crystal Vial
 					["provider"] = { "i", 64381 },	-- Cracked Crystal Vial
 				}),
-				crit(6, { -- Silver Scroll Case
+				crit(6, {	-- Silver Scroll Case
 					["provider"] = { "i", 64648 },	-- Silver Scroll Case
 				}),
 			}),
@@ -165,7 +165,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			currency(384, {	-- Dwarf
 				-- Solves
 				i(64373),	-- Chalice of the Mountain Kings (TOY!)
-				i(64372, { -- Clockwork Gnome (PET!)
+				i(64372, {	-- Clockwork Gnome (PET!)
 					["timeline"] = { "added 4.0.3.13287" },
 				}),
 				i(64489),	-- Staff of Sorcerer-Thane Thaurissan
@@ -202,11 +202,11 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				-- Solves
 				i(69776),	-- Ancient Amber (TOY!)
 				i(69764),	-- Extinct Turtle Shell
-				i(60955, { -- Fossilized Hatchling (PET!)
+				i(60955, {	-- Fossilized Hatchling (PET!)
 					["timeline"] = { "added 4.0.3.13287" },
 				}),
 				i(60954),	-- Fossilized Raptor (MOUNT!)
-				i(69821, { -- Pterrordax Hatchling (PET!)
+				i(69821, {	-- Pterrordax Hatchling (PET!)
 					["timeline"] = { "added 4.1.0.13793" },
 				}),
 				i(64355),	-- Ancient Shark Jaws
@@ -280,7 +280,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				i(64657, bubbleDownSelf({["requireSkill"] = ALCHEMY},{	-- Canopic Jar
 					i(67538),	-- Recipe: Vial of the Sands
 				})),
-				i(60847, { -- Crawling Claw (PET!)
+				i(60847, {	-- Crawling Claw (PET!)
 					["timeline"] = { "added 4.0.3.13287" },
 				}),
 				i(64881),	-- Pendant of the Scarab Storm (TOY!)
@@ -298,7 +298,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			currency(385, {	-- Troll
 				-- Solves
 				i(69777),	-- Haunted War Drum (TOY!)
-				i(69824, { -- Voodoo Figurine (PET!)
+				i(69824, {	-- Voodoo Figurine (PET!)
 					["timeline"] = { "added 4.1.0.13793" },
 				}),
 				i(64377),	-- Zin'rokh, Destroyer of Worlds
@@ -328,62 +328,62 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				i(64467),	-- Thorned Necklace
 			}),
 			i(87534, {	-- Crate of Draenei Archaeology Fragments
-				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
 				["g"] = {
 					{ ["currencyID"] = 398, }	-- Draenei Archaeology Fragment
 				},
 			}),
 			i(87533, {	-- Crate of Dwarven Archaeology Fragments
-				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
 				["g"] = {
 					{ ["currencyID"] = 384, }	-- Dwarf Archaeology Fragment
 				},
 			}),
 			i(87535, {	-- Crate of Fossil Archaeology Fragments
-				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
 				["g"] = {
 					{ ["currencyID"] = 393, }	-- Fossil Archaeology Fragment
 				},
 			}),
 			i(87536, {	-- Crate of Night Elf Archaeology Fragments
-				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
 				["g"] = {
 					{ ["currencyID"] = 394, }	-- Night Elf Archaeology Fragment
 				},
 			}),
 			i(87537, {	-- Crate of Nerubian Archaeology Fragments
-				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
 				["g"] = {
 					{ ["currencyID"] = 400, }	-- Nerubian Archaeology Fragment
 				},
 			}),
 			i(87538, {	-- Crate of Orc Archaeology Fragments
-				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
 				["g"] = {
 					{ ["currencyID"] = 397, }	-- Orc Archaeology Fragment
 				},
 			}),
 			i(87539, {	-- Crate of Tol'vir Archaeology Fragments
-				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
 				["g"] = {
 					{ ["currencyID"] = 401, }	-- Tol'vir Archaeology Fragment
 				},
 			}),
 			i(87540, {	-- Crate of Troll Archaeology Fragments
-				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
 				["g"] = {
 					{ ["currencyID"] = 385, }	-- Troll Archaeology Fragment
 				},
 			}),
 			i(87541, {	-- Crate of Vrykul Archaeology Fragments
-				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
 				["g"] = {
 					{ ["currencyID"] = 399, }	-- Vrykul Archaeology Fragment
 				},
 			}),
 		})),
 		prof(FISHING, {
-			ach(5851,  {	-- Gone Fishin'
+			ach(5851, {	-- Gone Fishin'
 				["timeline"] = { "added 4.2.0" },
 				["requireSkill"] = FISHING,
 				["sym"] = {{"meta_achievement",
@@ -397,7 +397,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			}),
 		}),
 		prof(FIRST_AID, {
-			ach(4918, { -- Illustrious Grand Master Medic (525)
+			ach(4918, {	-- Illustrious Grand Master Medic (525)
 				["timeline"] = { "added 4.0.1", "removed 8.0" },
 				["requireSkill"] = FIRST_AID,
 			}),
