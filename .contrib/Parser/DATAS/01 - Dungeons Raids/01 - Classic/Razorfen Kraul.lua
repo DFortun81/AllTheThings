@@ -418,8 +418,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			n(75590, {	-- Enormous Bullfrog
 				["timeline"] = { "added 6.0.2" },
 				["groups"] = {
-					i(11026),	-- Tree Frog Box
-					i(11027),	-- Wood Frog Box
+					i(11026),	-- Tree Frog (PET!)
+					i(11027),	-- Wood Frog (PET!)
 					i(2278),	-- Forest Tracker Epaulets
 					i(13045),	-- Viscous Hammer
 					i(2299),	-- Burning War Axe

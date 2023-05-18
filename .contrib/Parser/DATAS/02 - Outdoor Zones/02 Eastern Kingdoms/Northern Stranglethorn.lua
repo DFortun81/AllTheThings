@@ -2702,7 +2702,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 4260,	-- Venture Co. Shredder
 				}),
-				i(8494),	-- Parrot Cage (Hyacinth Macaw)
+				i(8494),	-- Hyacinth Macaw (PET!)
 				-- #if BEFORE CATA
 				i(5788, {	-- Pattern: Thick Murloc Armor
 					["cr"] = 938,	-- Kurzen Commando

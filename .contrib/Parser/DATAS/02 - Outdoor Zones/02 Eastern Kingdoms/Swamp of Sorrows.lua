@@ -1540,7 +1540,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 5477,	-- Noboru the Cudgel
 				}),
 				-- #if BEFORE CATA
-				i(8498, {	-- Tiny Emerald Whelpling
+				i(8498, {	-- Emerald Whelpling (PET!)
 					["cr"] = 741,	-- Dreaming Whelp
 				}),
 				-- #endif

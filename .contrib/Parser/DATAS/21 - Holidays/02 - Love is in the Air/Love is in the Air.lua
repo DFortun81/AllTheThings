@@ -1313,7 +1313,9 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					["timeline"] = { "added 2.4.0.7897" },
 				}),
 				i(22200),	-- Silver Shafted Arrow
-				i(22235),	-- Truesilver Shafted Arrow
+				i(22235, {	-- Peddlefeet (PET!)
+					["timeline"] = { "added 1.11.1.6692" },
+				}),
 				i(22259, {	-- Unbestowed Friendship Bracelet
 					["timeline"] = { "removed 3.3.2.11403" },
 				}),
@@ -1458,7 +1460,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 						["timeline"] = { "added 6.0.1.18566" },
 						["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
 					}),
-					i(22235, {	-- Truesilver Shafted Arrow
+					i(22235, {	-- Peddlefeet (PET!)
 						["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
 					}),
 					i(72146, {	-- Swift Lovebird (MOUNT!)
@@ -2033,7 +2035,7 @@ for i,o in ipairs({
 			i(49715, {	-- Forever-Lovely Rose
 				["timeline"] = { "added 3.3.0" },
 			}),
-			i(50446, {	-- Toxic Wasteling (PET!)
+			i(50446, {	-- Toxic Wasteling (PE!T)
 				["timeline"] = { "added 3.3.0" },
 			}),
 			i(50741, {	-- Vile Fumigator's Mask

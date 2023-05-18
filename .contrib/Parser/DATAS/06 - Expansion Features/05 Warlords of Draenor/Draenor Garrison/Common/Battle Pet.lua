@@ -82,9 +82,9 @@ _.ExpansionFeatures =
 								i(118578),	-- Firewing (PET!)
 								i(119467),	-- Puddle Terror (PET!)
 								i(113623),	-- Ghastly Kid (PET!)
-								i(119468),	-- Sunfire Kaliri
-								i(118598),	-- Sun Sproutling
-								i(113558),	-- Weebomination
+								i(119468),	-- Sunfire Kaliri (PET!)
+								i(118598),	-- Sun Sproutling (PET!)
+								i(113558),	-- Weebomination (PET!)
 							}),
 						},
 					}),
@@ -97,10 +97,10 @@ _.ExpansionFeatures =
 							i(118697, {	-- Big Bag of Pet Supplies
 								i(118578),	-- Firewing (PET!)
 								i(113623),	-- Ghastly Kid (PET!)
-								i(118598),	-- Sun Sproutling
-								i(119468),	-- Sunfire Kaliri
+								i(118598),	-- Sun Sproutling (PET!)
+								i(119468),	-- Sunfire Kaliri (PET!)
 								i(119467),	-- Puddle Terror (PET!)
-								i(113558),	-- Weebomination
+								i(113558),	-- Weebomination (PET!)
 								i(119434),	-- Albino Chimaeraling (PET!)
 							}),
 						},

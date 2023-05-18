@@ -16,11 +16,11 @@ root(ROOTS.Craftables, {
 							87251,	-- Geosynchronous World Spinner (MOUNT!)
 							41508,	-- Mechano-Hog (MOUNT!)
 							44413,	-- Mekgineer's Chopper (MOUNT!)
-							15996,	-- Lifelike Mechanical Toad Pet
-							11826,	-- Lil' Smoky Pet
-							4401,	-- Mechanical Squirrel Box Pet
-							11825,	-- Pet Bombling
-							21277,	-- Tranquil Mechanical Yeti Pet
+							15996,	-- Lifelike Toad (PET!)
+							11826,	-- Lil' Smoky (PET!)
+							4401,	-- Mechanical Squirrel (PET!)
+							11825,	-- Pet Bombling (PET!)
+							21277,	-- Tranquil Mechanical Yeti (PET!)
 						}},
 						["g"] = {
 							i(103670),	-- Lil' Bling (PET!)

@@ -1422,7 +1422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						-- #if BEFORE 4.0.3
-						i(8491, {	-- Cat Carrier (Black Tabby)
+						i(8491, {	-- Black Tabby Cat (PET!)
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 						}),
 						-- #endif

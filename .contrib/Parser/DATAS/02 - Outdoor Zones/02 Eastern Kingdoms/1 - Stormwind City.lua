@@ -3212,7 +3212,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.2.0.14133" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(72042, {	-- Alliance Balloon
+						i(72042, {	-- Alliance Balloon (PET!)
 							["timeline"] = { "added 4.2.0.14133" },
 						}),
 					},
@@ -7418,7 +7418,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(8489, {	-- Cat Carrier (White Kitten) (PET!)
+						i(8489, {	-- White Kitten (PET!)
+							["timeline"] = { "added 1.11.1.5462" },
 							["isLimited"] = true,
 						}),
 					},

@@ -327,7 +327,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
-						i(10398),	-- Mechanical Chicken
+						i(10398, { -- Mechanical Chicken (PET!)
+							["timeline"] = { "added 1.11.1.5462" },
+						}),
 					},
 				}),
 				q(9457, {	-- An Unusual Patron
@@ -2644,8 +2646,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.1, 74.4, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(8496),	-- Parrot Cage (Cockatiel) (PET!)
-						i(8495),	-- Parrot Cage (Senegal) (PET!)
+						i(8496),	-- Cockatiel (PET!)
+						i(8495),	-- Senegal (PET!)
 						i(10728, {	-- Pattern: Black Swashbuckler's Shirt
 							["isLimited"] = true,
 						}),
@@ -2852,7 +2854,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 4260,	-- Venture Co. Shredder
 				}),
-				i(8494, {	-- Parrot Cage (Hyacinth Macaw)
+				i(8494, {	-- Hyacinth Macaw (PET!)
 					-- #if BEFORE CATA
 					["crs"] = {
 						4505,	-- Bloodsail Deckhand

@@ -880,7 +880,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			["groups"] = {
 				-- #if BEFORE WRATH
 				filter(BATTLE_PETS, {
-					i(11826, {	-- Lil' Smoky
+					i(11826, {	-- Lil' Smoky (PET!)
 						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required, until Wrath)
 					}),
 				}),
@@ -922,7 +922,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			["groups"] = {
 				-- #if BEFORE WRATH
 				filter(BATTLE_PETS, {
-					i(11825, {	-- Pet Bombling
+					i(11825, {	-- Pet Bombling (PET!)
 						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required, until Wrath)
 					}),
 				}),
@@ -959,15 +959,23 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			},
 		}),
 		filter(BATTLE_PETS, {
-			i(15996),	-- Lifelike Mechanical Toad*
+			i(15996, {-- Lifelike Toad (PET!)
+				["timeline"] = { "added 1.11.1.5462" },
+			}),
 			-- #if AFTER WRATH
-			i(11826),	-- Lil' Smoky
+			i(11826, {	-- Lil' Smoky (PET!)
+				["timeline"] = { "added 1.11.1.5462" },
+			}),
 			-- #endif
-			i(4401),	-- Mechanical Squirrel Box*
+			i(4401, { -- Mechanical Squirrel (PET!)
+				["timeline"] = { "added 1.11.1.5462" },
+			}),
 			-- #if AFTER WRATH
-			i(11825),	-- Pet Bombling
+			i(11825, { -- Pet Bombling (PET!)
+				["timeline"] = { "added 1.11.1.5462" },
+			}),
 			-- #endif
-			i(21277),	-- Tranquil Mechanical Yeti*
+			i(21277),	-- Tranquil Mechanical Yeti (PET!)
 		}),
 		-- #if BEFORE 4.0.1
 		category(1, {	-- Bullets

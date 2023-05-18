@@ -59,6 +59,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(11711),	-- The Fierce and the Furious (PvP Season 6)
 		ach(14059),	-- The Eyes Have It (BFA PvP Season 4)
 		ach(11706),	-- The Original (PvP Season 1)
+		ach(11758),	-- Thunderwear (Throne of Thunder)
 		ach(11709),	-- Tough Threads (PvP Season 4)
 		ach(11750),	-- Undying Aesthetic (Naxxramas)
 		ach(11629),	-- Untamed Beauty (PvP Season 16)

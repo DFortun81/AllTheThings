@@ -928,10 +928,10 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 				["lvl"] = 20,
 				["groups"] = {
-					i(21301),	-- Green Helper Box
+					i(21301),	-- Father Winter's Helper (PET!)
 					i(21308),	-- Jingling Bell
 					i(21305),	-- Red Helper Box
-					i(21309),	-- Snowman Kit
+					i(21309),	-- Tiny Snowman (PET!)
 				},
 			}),
 			q(8767, { 	-- A Gently Shaken Gift [Non-Spell Casters Only] (Before 2015)

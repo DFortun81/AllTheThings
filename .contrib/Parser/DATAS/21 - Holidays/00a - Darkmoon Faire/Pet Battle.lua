@@ -28,7 +28,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 					}},
 					["g"] = {
 						currency(515),	-- Darkmoon Prize Ticket
-						i(116064),	-- Syd the Squid
+						i(116064),	-- Syd the Squid (PET!)
 					},
 				}),
 			},

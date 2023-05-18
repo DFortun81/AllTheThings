@@ -2626,7 +2626,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1806,	-- Vile Slime
 					},
 					["groups"] = {
-						i(20769),	-- Disgusting Oozeling
+						i(20769),	-- Disgusting Oozeling (PET!)
 					},
 				}),
 				i(13357, {	-- Osseous Agitator

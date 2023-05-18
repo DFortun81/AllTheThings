@@ -85,9 +85,15 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 					ach(662),	-- Collector's Edition: Mini-Diablo
 					ach(663),	-- Collector's Edition: Panda
 					ach(664),	-- Collector's Edition: Zergling
-					i(13584),	-- Diablo Stone
-					i(13583),	-- Panda Collar
-					i(13582),	-- Zergling Leash
+					i(13584, { -- Mini Diablo (PET!)
+						["timeline"] = { "added 1.11.1.5462" },
+					}),
+					i(13583, { -- Panda Cub (PET!)
+						["timeline"] = { "added 1.11.1.5462" },
+					}),
+					i(13582, { -- Zergling (PET!)
+						["timeline"] = { "added 1.11.1.5462" },
+					}),
 				},
 			}),
 		},

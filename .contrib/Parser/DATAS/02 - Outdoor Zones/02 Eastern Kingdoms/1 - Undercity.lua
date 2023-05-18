@@ -1618,7 +1618,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.6, 44.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(10393)	-- Undercity Cockroach (PET!)
+						i(10393, { -- Undercity Cockroach (PET!)
+							["timeline"] = { "added 1.11.1.5462" },
+						}),
 					},
 				}),
 				n(4589, {	-- Joseph Moore <Leatherworking Supplies>

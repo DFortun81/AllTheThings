@@ -111,9 +111,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 8412,	-- Spirit Totem
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["timeline"] = { "removed 4.0.3" },
-					-- #if BEFORE TBC
-					["races"] = HORDE_ONLY,
-					-- #endif
 					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 					["groups"] = {

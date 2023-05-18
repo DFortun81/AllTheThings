@@ -831,7 +831,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["coord"] = { 55.9, 70.7, 407 },
 			["g"] = {
 				i(19462, {		--	Unhatched Jubling Egg
-					i(19450),	-- Jubling-- Jubling
+					i(19450, { -- Jubling (PET!)
+						["timeline"] = { "added 1.11.1.5462" },
+					}),
 				}),
 			},
 		}),

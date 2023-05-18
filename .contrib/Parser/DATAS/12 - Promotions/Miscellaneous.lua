@@ -54,7 +54,7 @@ root(ROOTS.Promotions, filter(MISC, {
 			["description"] = "Reward from a Korean Promotional Event (Korea Only)",
 			["timeline"] = { "added 2.1.0.6678" },
 		}),
-		i(22114, {	-- Pink Murloc Egg (Gurky)
+		i(22114, {	-- Gurky (PET!)
 			["description"] = "Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",
 			["timeline"] = { "added 2.1.0.6678" },
 		}),
@@ -69,7 +69,7 @@ root(ROOTS.Promotions, filter(MISC, {
 		ach(414, {	-- Tyrael's Hilt
 			["timeline"] = { "added 3.0.1" },
 		}),
-		i(39656, {	-- Tyrael's Hilt (Mini Tyrael)
+		i(39656, {	-- Mini Tyrael (PET!)
 			["description"] = "Reward from the 2008 Worldwide Invitational in Paris.",
 			["timeline"] = { "added 2.4.2.8301" },
 		}),

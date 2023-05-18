@@ -696,7 +696,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								8607,	-- Rotting Sludge
 							},
 							["groups"] = {
-								i(20769),	-- Disgusting Oozeling
+								i(20769),	-- Disgusting Oozeling (PET!)
 							},
 						}),
 						-- #endif
@@ -3676,7 +3676,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						8605,	-- Carrion Devourer
 					},
 					["groups"] = {
-						i(20769),	-- Disgusting Oozeling
+						i(20769),	-- Disgusting Oozeling (PET!)
 					},
 				}),
 				i(14477, {	-- Pattern: Ghostweave Gloves

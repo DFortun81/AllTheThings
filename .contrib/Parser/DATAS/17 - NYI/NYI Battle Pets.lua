@@ -35,7 +35,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(164629),	-- Test Pet
 		i(166791),	-- Pristine Falcon Feather (unsued version)
 		i(113569),	-- Autumnal Sproutling (unused ver)
-		i(91031),	-- Darkmoon Glowfly (you get it via pet battles)
+		i(91031),	-- Darkmoon Glowfly (PET!)
 		i(119147),	-- Nether Ray Fry (unsed Version)
 		i(119112),	-- Son of Sethe (unsed Version)
 		i(88148),	-- Jade Crane Chick

@@ -704,8 +704,8 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 		n(14860,  {	-- Flik
 			["coord"] = { 55.4, 70.1, 407 },
 			["g"] = {
-				i(11026),	-- Tree Frog Box
-				i(11027, {	-- Wood Frog Box
+				i(11026),	-- Tree Frog (PET!)
+				i(11027, {	-- Wood Frog (PET!)
 					["isLimited"] = true,
 				}),
 			},

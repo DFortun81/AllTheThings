@@ -517,8 +517,8 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 			}),
 		}),
 		filter(BATTLE_PETS, {
-			i(89368),	-- Chi-Ji Kite
-			i(89367),	-- Yu'lon Kite
+			i(89368),	-- Chi-Ji Kite (PET!)
+			i(89367),	-- Yu'lon Kite (PET!)
 		}),
 		filter(TRINKET_F, {
 			i(102483),	-- Crafted Malevolent Gladiator's Medallion of Tenacity

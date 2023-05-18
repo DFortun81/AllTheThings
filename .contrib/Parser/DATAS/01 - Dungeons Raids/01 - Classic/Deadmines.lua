@@ -428,7 +428,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						624,	-- Undead Excavator
 					},
 				}),
-				i(8492, {	-- Parrot Cage (Green Wing Macaw)
+				i(8492, {	-- Green Wing Macaw (PET!)
 					-- #if AFTER 4.0.3
 					["crs"] = {
 						48417,	-- Defias Blood Wizard
@@ -616,7 +616,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
-						i(8490),	-- Cat Carrier (Siamese)
+						i(8490),	-- Siamese Cat (PET!)
 						i(5198),	-- Cookie's Stirring Rod
 						i(5197),	-- Cookie's Tenderizer
 					},

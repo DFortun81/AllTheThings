@@ -202,7 +202,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 39.0, 38.6, AZSUNA },
 						["sourceQuest"] = 41162,	-- And Into the Fel Fire
 						["g"] = {
-							i(136922),	-- Wyrmy Tunkins
+							i(136922),	-- Wyrmy Tunkins (PET!)
 						},
 					}),
 					-- Blood of Young Mannoroth

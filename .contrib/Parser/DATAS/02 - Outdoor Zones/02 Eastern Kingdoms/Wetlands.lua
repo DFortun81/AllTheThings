@@ -1907,7 +1907,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 6523,	-- Dark Iron Rifleman
 				}),
-				i(8499, {	-- Tiny Crimson Whelpling (PET!)
+				i(8499, {	-- Crimson Whelpling (PET!)
 					-- #if AFTER CATA
 					["description"] = "The best spot to farm this pet is exactly at 67.3, 47.2. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. Around four of them meet at this point to wage war with each other. They spawn roughly every 15 seconds and engage again, so you don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed.",
 					["crs"] = {

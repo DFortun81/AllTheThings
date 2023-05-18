@@ -1863,7 +1863,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6557,	-- Primal Ooze
 					},
 					["groups"] = {
-						i(20769),	-- Disgusting Oozeling
+						i(20769),	-- Disgusting Oozeling (PET!)
 					},
 				}),
 				-- #if BEFORE 4.0.3

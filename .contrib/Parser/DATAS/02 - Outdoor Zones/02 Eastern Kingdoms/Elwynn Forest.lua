@@ -2453,10 +2453,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.2, 53.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(8485),	-- Cat Carrier (Bombay) (PET!)
-						i(8486),	-- Cat Carrier (Cornish Rex) (PET!)
-						i(8487),	-- Cat Carrier (Orange Tabby) (PET!)
-						i(8488),	-- Cat Carrier (Silver Tabby) (PET!)
+						i(8485),	-- Bombay Cat (PET!)
+						i(8486),	-- Cornish Rex Cat (PET!)
+						i(8487),	-- Orange Tabby Cat (PET!)
+						i(8488),	-- Silver Tabby Cat (PET!)
 					},
 				}),
 				n(1250, {	-- Drake Lindgren <General & Trade Supplies>

@@ -2597,7 +2597,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(8497),	-- Rabbit Crate (Snowshoe) (PET!)
+						i(8497,	{ -- Snowshoe Rabbit (PET!)
+						 ["timeline"] = { "added 1.11.1.5462" },
+						}),
 					},
 				}),
 			}),

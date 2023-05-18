@@ -232,7 +232,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.0, 72.0, THE_CAPE_OF_STRANGLETHORN },
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
-						i(10398),	-- Mechanical Chicken
+						i(10398, { -- Mechanical Chicken (PET!)
+							["timeline"] = { "added 1.11.1.5462" },
+						}),
 					},
 				}),
 				q(603, {	-- Ansirem's Key
@@ -2020,8 +2022,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 46.6, 93.6, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						i(8495),	-- Parrot Cage (Senegal) (PET!)
-						i(8496),	-- Parrot Cage (Cockatiel) (PET!)
+						i(8495),	-- Senegal (PET!)
+						i(8496),	-- Cockatiel (PET!)
 					},
 				}),
 				n(2843, {	-- Jutak <Blade Trader>
@@ -2084,8 +2086,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2663, {	-- Narkk <Pirate Supplies>
 					["coord"] = { 42.6, 69.1, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(8496),	-- Parrot Cage (Cockatiel) (PET!)
-						i(8495),	-- Parrot Cage (Senegal) (PET!)
+						i(8496),	-- Cockatiel (PET!)
+						i(8495),	-- Senegal (PET!)
 						i(10728, {	-- Pattern: Black Swashbuckler's Shirt
 							["isLimited"] = true,
 						}),
@@ -2217,12 +2219,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2955, {	-- First Mate Hat
 				}),
-				i(8494, {	-- Parrot Cage (Hyacinth Macaw)
+				i(8494, { -- Hyacinth Macaw (PET!)
+					["timeline"] = { "added 1.11.1.5462" },
 				}),
 				i(5789, {	-- Pattern: Murloc Scale Bracers
 					["cr"] = 1561,	-- Bloodsail Raider
 				}),
-				i(48126, {	-- Razzashi Hatchling (PET!)
+				i(48126, { -- Razzashi Hatchling (PET!)
 					["timeline"] = { "added 3.2.0.10128" },
 				}),
 			}),

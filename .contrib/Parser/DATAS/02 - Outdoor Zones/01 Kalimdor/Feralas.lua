@@ -2960,6 +2960,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if AFTER 3.1.0
 				i(11474, {	-- Sprite Darter Egg (PET!)
+					["timeline"] = { "added 1.11.1.5462" },
 					-- #if AFTER CATA
 					["crs"] = {
 						5300,	-- Frayfeather Hippogryph

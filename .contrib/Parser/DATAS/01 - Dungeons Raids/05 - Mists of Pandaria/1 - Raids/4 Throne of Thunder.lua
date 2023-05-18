@@ -62,80 +62,23 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["_encounter"] = { 832, 7 },
 					}),
 				}),
-				ach(8124, {		-- Glory of the Thundering Raider
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						8056,	-- Heroic: Jin'rokh the Breaker
-						8057,	-- Heroic: Horridon
-						8058,	-- Heroic: Council of Elders
-						8059,	-- Heroic: Tortos
-						8060,	-- Heroic: Megaera
-						8061,	-- Heroic: Ji-Kun
-						8062,	-- Heroic: Durumu the Forgotten
-						8063,	-- Heroic: Primordius
-						8064,	-- Heroic: Dark Animus
-						8065,	-- Heroic: Iron Qon
-						8066,	-- Heroic: Twin Empyreans
-						8094,	-- Lightning Overload
-						8038,	-- Cretaceous Collector
-						8073,	-- Cage Match
-						8077,	-- One-Up
-						8082,	-- Head Case
-						8097,	-- Soft Hands
-						8098,	-- You Said Crossing the Streams Was Bad
-						8037,	-- Genetically Unmodified Organism
-						8081,	-- Ritualist Who?
-						8087,	-- Can't Touch This
-						8086,	-- From Dusk 'til Dawn
-						8090,	-- A Complete Circuit
-					}},
-					["g"] = {
-						i(93662),	-- Armored Skyscreamer (MOUNT!)
-					},
-				}),
-				ach(11758),	-- Thunderwear
-
-				-- Guild Achievements
 				ach(8140),	-- Throne of Thunder Guild Run
 			}),
-			n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 } }, {
-				i(87208),	-- Sigil of Power
-				i(87209),	-- Sigil of Wisdom
-				i(94593),	-- Secrets of the Empire
-				i(94594),	-- Titan Runestone
-			})),
-			n(QUESTS, sharedData({
-				["isWeekly"] = true,
-				["g"] = {
-					i(97153),	-- Spoils of the Thunder King
-				},
-			}, {
-				q(32711, {	-- Agony and Anima
-					["provider"] = { "n", 70243 },	-- Archritualist Kelada
+			n(COMMON_BOSS_DROPS, {
+				i(87208, {	-- Sigil of Power
+					["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 				}),
-				q(32716, {	-- Eyes of the Thunder King
-					["providers"] = {
-						{ "n", 70249 },	-- Focused Eye
-						{ "n", 70238 },	-- Unblinking Eye
-					},
+				i(87209, {	-- Sigil of Wisdom
+					["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 				}),
-				q(32715, {	-- Requiem for a Queen
-					["provider"] = { "n", 70440 },	-- Monara <The Last Queen>
+				i(94593, {	-- Secrets of the Empire
+					["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 				}),
-				q(32713, {	-- Rocks Fall, People Die
-					["provider"] = { "n", 70430 },	-- Rocky Horror
+				i(94594, {	-- Titan Runestone
+					["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 				}),
-				q(32710, {	-- Something Fouls is Afoot
-					["provider"] = { "n", 70429 },	-- Flesh'rok the Diseased <Primordial Saurok Horror>
-				}),
-				q(32714, {	-- Taming the Tempest
-					["provider"] = { "n", 70276 },	-- No'ku Stormsayer <Lord of Tempest>
-				}),
-				q(32712, {	-- Zao'cho the Wicked
-					["provider"] = { "n", 69843 },	-- Zao'cho <The Emperor's Shield>
-				}),
-			})),
-			n(REWARDS, {
+			}),
+			n(QUESTS, {
 				i(97153, {	-- Spoils of the Thunder King
 					["description"] = "This bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
 					["g"] = {
@@ -147,40 +90,62 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						i(95959),	-- Spiderweb Tabi
 					},
 				}),
-			}),
-			n(DROPS, {
-				i(95059, {	-- Clutch of Ji-Kun (MOUNT!)
-					["crs"] = { 69712 },	-- Ji-Kun
-				}),
-				i(93666, {	-- Spawn of Horridon (MOUNT!)
-					["crs"] = { 68476 },	-- Horridon
-				}),
-				i(94574, {	-- Pygmy Direhorn (PET!)
-					["crs"] = { 68476 },	-- Horridon
-				}),
-				i(94835, {	-- Ji-Kun Hatchling (PET!)
-					["crs"] = { 69712 },	-- Ji-Kun
-				}),
-				i(97960, {	-- Viscous Horror (PET!)
-					["crs"] = { 69017 },	-- Primordius
-				}),
-				i(94152, {	-- Son of Animus (PET!)
-					["crs"] = {
-						69756,	-- Anima Orb
-						69427,	-- Dark Animus
+				n(WEEKLY_HOLIDAYS, {
+					["description"] = "Only one of these quests are available in the raid at a time. As you progress through the raid, you should see ",
+					["g"] = {
+						q(32711, {	-- Agony and Anima
+							["provider"] = { "n", 70243 },	-- Archritualist Kelada
+							["isWeekly"] = true,
+							["g"] = {
+								i(97153),	-- Spoils of the Thunder King
+							},
+						}),
+						q(32716, {	-- Eyes of the Thunder King
+							["providers"] = {
+								{ "n", 70249 },	-- Focused Eye
+								{ "n", 70238 },	-- Unblinking Eye
+							},
+							["isWeekly"] = true,
+							["g"] = {
+								i(97153),	-- Spoils of the Thunder King
+							},
+						}),
+						q(32715, {	-- Requiem for a Queen
+							["provider"] = { "n", 70440 },	-- Monara <The Last Queen>
+							["isWeekly"] = true,
+							["g"] = {
+								i(97153),	-- Spoils of the Thunder King
+							},
+						}),
+						q(32713, {	-- Rocks Fall, People Die
+							["provider"] = { "n", 70430 },	-- Rocky Horror
+							["isWeekly"] = true,
+							["g"] = {
+								i(97153),	-- Spoils of the Thunder King
+							},
+						}),
+						q(32710, {	-- Something Fouls is Afoot
+							["provider"] = { "n", 70429 },	-- Flesh'rok the Diseased <Primordial Saurok Horror>
+							["isWeekly"] = true,
+							["g"] = {
+								i(97153),	-- Spoils of the Thunder King
+							},
+						}),
+						q(32714, {	-- Taming the Tempest
+							["provider"] = { "n", 70276 },	-- No'ku Stormsayer <Lord of Tempest>
+							["isWeekly"] = true,
+							["g"] = {
+								i(97153),	-- Spoils of the Thunder King
+							},
+						}),
+						q(32712, {	-- Zao'cho the Wicked
+							["provider"] = { "n", 69843 },	-- Zao'cho <The Emperor's Shield>
+							["isWeekly"] = true,
+							["g"] = {
+								i(97153),	-- Spoils of the Thunder King
+							},
+						}),
 					},
-				}),
-			}),
-			n(SPECIAL, {
-				i(98136, {	-- Gastropod Shell (TOY!)
-					["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
-					["crs"] = { 68220 },	-- Gastropod
-				}),
-				i(94125, {	-- Living Sandling (PET!)
-					["crs"] = { 69944 },	-- Sand Elemental
-				}),
-				i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
-					["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -238,384 +203,399 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
 			d(7, {	-- LFR
-				i(95343, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 } }, {	-- Treasures of the Thunder
-					["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
-					["g"] = {
-						i(94295),	-- Primal Egg
-						i(95961),	-- Abandoned Zandalari Firecord
-						i(95962),	-- Abandoned Zandalari Shadowgirdle
-						i(95970),	-- Abandoned Zandalari Silentbelt
-						i(95971),	-- Abandoned Zandalari Moonstrap
-						i(95972),	-- Abandoned Zandalarai Arrowlinks
-						i(95973),	-- Abandoned Zandarlari Waterchain
-						i(95974),	-- Abandoned Zandalari Greatbelt
-						i(95975),	-- Abandoned Zandalari Goreplate
-						i(95976),	-- Abandoned Zandalari Bucklebreaker
-						i(95979),	-- Columnbreaker Stompers
-						i(95966),	-- Deeproot Treads
-						i(95965),	-- Home-Warding Slippers
-						i(95978),	-- Locksmasher Greaves
-						i(95960),	-- Scalehide Spurs
-						i(95963),	-- Silentflame Sandals
-						i(95959),	-- Spiderweb Tabi
-						i(95967),	-- Spiritbound Boots
-						i(95968),	-- Vaultwalker Sabatons
-					},
-				})),
-				n(COMMON_BOSS_DROPS, {
-					["description"] = "These can drop from any of the bosses other than Ra-den.",
-					["crs"] = {
-						69465,	-- Jin'rokh the Breaker
-						68476,	-- Horridon
-						69131,	-- Frost King Malakk
-						69132,	-- High Priestess Mar'li
-						69134,	-- Kazra'jin
-						69078,	-- Sul the Sandrawler
-						67977,	-- Tortos
-						70212,	-- Flaming Head
-						70247,	-- Venomous Head
-						70235,	-- Frozen Head
-						69712,	-- Ji-Kun
-						68036,	-- Durumu the Forgotten
-						69017,	-- Primordius
-						69427,	-- Dark Animus
-						68078,	-- Iron Qon
-						68079,	-- Ro'shak
-						68080,	-- Quet'zal
-						68081,	-- Dam'ren
-						68904,	-- Suen <Mistress of Anger>
-						68905,	-- Lu'lin <Mistress of Solitude>
-						68397,	-- Lei Shen
-					},
-					["g"] = {
-						i(95870),	-- Abandoned Spaulders of Arrowflight
-						i(95871),	-- Abandoned Spaulders of Renewal
-						i(95877),	-- Bo-Ris, Horror in the Night
-						i(95862),	-- Darkwood Spiritstaff
-						i(95876),	-- Do-tharak, the Swordbreaker
-						i(95868),	-- Forgotten Mantle of the Moon
-						i(95869),	-- Forgotten Mantle of the Sun
-						i(95860),	-- Fyn's Flickering Dagger
-						i(95875),	-- Greatsword of Frozen Hells
-						i(95858),	-- Invocation of the Dawn
-						i(95867),	-- Jerthud, Graceful Hand of the Savior
-						i(95863),	-- Lost Shoulders of Fire
-						i(95864),	-- Lost Shoulders of Healing
-						i(95865),	-- Lost Shoulders of Fluidity
-						i(95859),	-- Miracoran, the Vehement Chord
-						i(95866),	-- Nadagast's Exsanguinator
-						i(95872),	-- Reconstructed Holy Shoulderplates
-						i(95873),	-- Reconstructed Furious Shoulderplates
-						i(95874),	-- Reconstructed Bloody Shoulderplates
-						i(97129),	-- Tia-Tia, the Scything Star
-						i(95878),	-- Visage of the Doomed
-						i(95861),	-- Zeeg's Ancient Kegsmasher
-					},
-				}),
-				header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
-					e(827, {	-- Jin'rokh the Breaker
-						["crs"] = { 69465 },	-- Jin'rokh the Breaker
+				["g"] = {
+					i(95343, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 } }, {	-- Treasures of the Thunder
+						["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 						["g"] = {
-							i(95635),	-- Al'set's Tormented Leggings
-							i(95631),	-- Bracers of Constant Implosion
-							i(95630),	-- Chestplate of Violent Detonation
-							i(95629),	-- Cloudbreaker Greatbelt
-							i(95639),	-- Drape of Booming Nights
-							i(95636),	-- Fissure-Split Shoulderwraps
-							i(95643),	-- Ghostbinder Greatboots
-							i(95642),	-- Infinitely Conducting Bracers
-							i(95644),	-- Ionized Yojamban Carapace
-							i(95633),	-- Jin'rokh's Soulcrystal
-							i(95638),	-- Jin'rokh's Dreamshard
-							i(95634),	-- Lightningweaver Gauntlets
-							i(95626),	-- Lightning-Eye Hood
-							i(95625),	-- Renataki's Soul Charm
-							i(95637),	-- Robes of Static Bursts
-							i(95624),	-- Sign of the Bloodied God
-							i(95640),	-- Soulblade of the Breaking Storm
-							i(95627),	-- Spearman's Jingling Leggings
-							i(95628),	-- Static-Shot Shoulderguards
-							i(95632),	-- Worldbreaker's Stormscythe
+							i(94295),	-- Primal Egg
+							i(95961),	-- Abandoned Zandalari Firecord
+							i(95962),	-- Abandoned Zandalari Shadowgirdle
+							i(95970),	-- Abandoned Zandalari Silentbelt
+							i(95971),	-- Abandoned Zandalari Moonstrap
+							i(95972),	-- Abandoned Zandalarai Arrowlinks
+							i(95973),	-- Abandoned Zandarlari Waterchain
+							i(95974),	-- Abandoned Zandalari Greatbelt
+							i(95975),	-- Abandoned Zandalari Goreplate
+							i(95976),	-- Abandoned Zandalari Bucklebreaker
+							i(95979),	-- Columnbreaker Stompers
+							i(95966),	-- Deeproot Treads
+							i(95965),	-- Home-Warding Slippers
+							i(95978),	-- Locksmasher Greaves
+							i(95960),	-- Scalehide Spurs
+							i(95963),	-- Silentflame Sandals
+							i(95959),	-- Spiderweb Tabi
+							i(95967),	-- Spiritbound Boots
+							i(95968),	-- Vaultwalker Sabatons
 						},
-					}),
-					e(819, {	-- Horridon
-						["crs"] = { 68476 },	-- Horridon
-						["g"] = {
-							i(95664),	-- Armplates of the Vanquished Abomination
-							i(95648),	-- Bindings of Multiplicative Strikes
-							i(95651),	-- Bloodlord's Bloodsoaked Legplates
-							i(95657),	-- Dinomancer's Spiritbinding Spire
-							i(95655),	-- Flamecaster's Burning Crown
-							i(95650),	-- Frozen Warlord's Bracers
-							i(95653),	-- Horn-Rimmed Doomcloak
-							i(95641),	-- Horridon's Last Gasp
-							i(95658),	-- Horridon's Tusk Fragment
-							i(95647),	-- Jalak's Maelstrom Staff
-							i(95663),	-- Legguards of Scintillating Scales
-							i(95659),	-- Petrified Eye of the Basilisk
-							i(95652),	-- Puncture-Proof Greathelm
-							i(95661),	-- Roots of Rampaging Earth
-							i(95654),	-- Spark of Zandalar
-							i(95662),	-- Spaulders of Dinomancy
-							i(95649),	-- Sul'lithuz Sandmail
-							i(95646),	-- Talisman of Living Poison
-							i(95656),	-- Vaccinator's Armwraps
-							i(95660),	-- Venomlord's Totemic Wand
-							i(95645),	-- Wastewalker's Sandblasted Drape
-						},
-					}),
-					e(816, {	-- Council of Elders
+					})),
+					n(COMMON_BOSS_DROPS, {
+						["description"] = "These can drop from any of the bosses other than Ra-den.",
 						["crs"] = {
+							69465,	-- Jin'rokh the Breaker
+							68476,	-- Horridon
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
 							69078,	-- Sul the Sandrawler
-						},
-						["g"] = {
-							i(95856),	-- Gauntlets of the Crackling Conqueror
-							i(95857),	-- Gauntlets of the Crackling Protector
-							i(95855),	-- Gauntlets of the Crackling Vanquisher
-							i(95670),	-- Amun-Thoth, Sul's Spiritrending Talons
-							i(95665),	-- Bad Juju
-							i(95677),	-- Fortitude of the Zandalari
-							i(95672),	-- Gaze of Gara'jal
-							i(95666),	-- Kura-Kura, Kazra'jin's Skullcleaver
-							i(95673),	-- Loa-Ridden Bracers
-							i(95667),	-- Mar'li's Bloodstained Sandals
-							i(95674),	-- Overloaded Bladebreaker Cuirass
-							i(95671),	-- Robes of Treacherous Ground
-							i(95676),	-- Talisman of Angry Spirits
-							i(95669),	-- Wushoolay's Final Choice
-							i(95668),	-- Zandalari Robes of the Final Rite
-							i(95675),	-- Zerat, Malakk's Soulburning Greatsword
-						},
-					}),
-				}),
-				header(HEADERS.Achievement, 8070, {	-- Forgotten Depths
-					e(825, {	-- Tortos
-						["crs"] = { 67977 },	-- Tortos
-						["g"] = {
-							i(95685),	-- Amulet of the Primal Turtle
-							i(95688),	-- Azure Shell Bracers
-							i(95681),	-- Beady-Eye Bracers
-							i(95687),	-- Beakbreaker Greatcloak
-							i(95690),	-- Crystal-Claw Gloves
-							i(95680),	-- Grips of Vampiric Cruelty
-							i(95682),	-- Quakestompers
-							i(95696),	-- Refreshing Abalone Girdle
-							i(95694),	-- Robes of Concussive Shocks
-							i(95679),	-- Rockfall Ribwraps
-							i(95678),	-- Shattered Tortoiseshell Longbow
-							i(95686),	-- Shellsplitter Greataxe
-							i(95684),	-- Shell-Coated Wristplates
-							i(95691),	-- Shimmershell Cape
-							i(95683),	-- Shoulderguards of Centripetal Destruction
-							i(95695),	-- Spaulders of Quaking Fear
-							i(95689),	-- Stonegaze Hood
-							i(95692),	-- Tortos' Discarded Shell
-							i(95697),	-- Tortos' Shellseizers
-							i(95693),	-- Vampire Bat-Hide Bracers
-						},
-					}),
-					e(821, {	-- Megaera
-						["crs"] = {
-							70252,	-- Arcane Head <Head of Megaera>
-							70212,	-- Flaming Head <Head of Megaera>
-							70235,	-- Frozen Head <Head of Megaera>
-							70247,	-- Venomous Head <Head of Megaera>
-						},
-						["g"] = {
-							i(95711),	-- Breath of the Hydra
-							i(95715),	-- Chain of Consuming Magic
-							i(95710),	-- Fetish of the Hydra
-							i(95708),	-- Frostborn Wristwraps
-							i(95707),	-- Gleaming-Eye Shoulderpads
-							i(95701),	-- Grips of Cinderflesh
-							i(95713),	-- Hood of Smoldering Flesh
-							i(95705),	-- Hydraskull Choker
-							i(95716),	-- Ice-Scored Treads
-							i(95712),	-- Inscribed Bag of Hydra-Spawn
-							i(95714),	-- Links of the Bifurcated Tongue
-							i(95698),	-- Megaera's Poisoned Fang
-							i(95709),	-- Megaera's Shining Eye
-							i(95702),	-- Plated Toothbreaker Girdle
-							i(95700),	-- Poisonblood Bladeshoulders
-							i(95699),	-- Quadra-Head Brooch
-							i(95703),	-- Rot-Proof Greatplate
-							i(95706),	-- Sandals of Arcane Fury
-							i(95704),	-- Spinescale Seal
-						},
-					}),
-					e(828, {	-- Ji-Kun
-						["crs"] = { 69712 },	-- Ji-Kun
-						["g"] = {
-							i(95888),	-- Leggings of the Crackling Conqueror
-							i(95889),	-- Leggings of the Crackling Protector
-							i(95887),	-- Leggings of the Crackling Vanquisher
-							i(95718),	-- Cord of Cacophonous Cawing
-							i(95723),	-- Crown of Potentiated Birth
-							i(95725),	-- Egg-Shard Grips
-							i(95726),	-- Fabled Feather of Ji-Kun
-							i(95721),	-- Featherflight Belt
-							i(95720),	-- Giorgio's Caduceus of Pure Moods
-							i(95722),	-- Grasp of the Ruthless Mother
-							i(95727),	-- Ji-Kun's Rising Winds
-							i(95717),	-- Pinionfeather Greatcloak
-							i(95719),	-- Robe of Midnight Dawn
-							i(95724),	-- Talonrender Chestplate
-						},
-					}),
-				}),
-				header(HEADERS.Achievement, 8071, {	-- Halls of Flesh-Shaping
-					e(818, {	-- Durumu the Forgotten
-						["crs"] = { 68036 },	-- Durumu the Forgotten
-						["g"] = {
-							i(95731),	-- Aberrant Chestguard of Torment
-							i(95735),	-- Artery Rippers
-							i(95732),	-- Caustic Spike Bracers
-							i(95740),	-- Chilblain Spaulders
-							i(95729),	-- Crimson Bloom Legguards
-							i(95741),	-- Deadly Glare Cape
-							i(95728),	-- Durumu's Baleful Gaze
-							i(95737),	-- Durumu's Severed Tentacle
-							i(95742),	-- Durumu's Captive Eyeball
-							i(95746),	-- Iceshatter Gauntlets
-							i(95739),	-- Leggings of Pulsing Blood
-							i(95733),	-- Legplates of the Dark Parasite
-							i(95747),	-- Legplates of Re-Emergence
-							i(95738),	-- Lifedrainer's Sordid Grip
-							i(95730),	-- Links of the Disintegrator
-							i(95736),	-- Reinforced Mirror-Sheen Cloak
-							i(95743),	-- Ritual Dagger of the Mind's Eye
-							i(95744),	-- Sandals of the Starving Eye
-							i(95734),	-- Treads of the Blind Eye
-							i(95745),	-- Vein-Cover Bracers
-						},
-					}),
-					e(820, {	-- Primordius
-						["crs"] = { 69017 },	-- Primordius
-						["g"] = {
-							i(97959),	-- Living Fluid (PET!)
-							i(95758),	-- Acid-Spine Bonemace
-							i(95756),	-- Band of the Scaled Tyrant
-							i(95753),	-- Black Blood Legplates
-							i(95766),	-- Bonemender Bracers
-							i(95750),	-- Bracers of Mutagenic Fervor
-							i(95762),	-- Bracers of Fragile Bone
-							i(95765),	-- Clear-Mind Helm
-							i(95749),	-- Gloves of Cushioned Air
-							i(95768),	-- Greatshield of the Gloaming
-							i(95760),	-- Helix-Breaker Gloves
-							i(95755),	-- Hydra-Scale Bloodcloak
-							i(95761),	-- Leggings of Ebon Veins
-							i(95764),	-- Leggings of the Malformed Sapling
-							i(95754),	-- Metabolically Boosted Shoulderplates
-							i(95752),	-- Pathogenic Gauntlets
-							i(95757),	-- Primordius' Talisman of Rage
-							i(95759),	-- Robes of Mutagenic Blood
-							i(95767),	-- Spaulders of Primordial Growth
-							i(95763),	-- Stolen Relic of Zuldazar
-							i(95751),	-- Synapse-String Handguards
-							i(95748),	-- Talisman of Bloodlust
-						},
-					}),
-					e(824, {	-- Dark Animus
-						["crs"] = {
-							69756,	-- Anima Orb
+							67977,	-- Tortos
+							70212,	-- Flaming Head
+							70247,	-- Venomous Head
+							70235,	-- Frozen Head
+							69712,	-- Ji-Kun
+							68036,	-- Durumu the Forgotten
+							69017,	-- Primordius
 							69427,	-- Dark Animus
-						},
-						["g"] = {
-							i(95823),	-- Chest of the Crackling Conqueror
-							i(95824),	-- Chest of the Crackling Protector
-							i(95822),	-- Chest of the Crackling Vanquisher
-							i(95776),	-- Anima-Ringed Fingers
-							i(95774),	-- Athame of the Sanguine Ritual
-							i(95772),	-- Cha-Ye's Essence of Brilliance
-							i(95773),	-- Constantly Accelerating Cloak
-							i(95778),	-- Crown of the Golden Golem
-							i(95779),	-- Delicate Vial of the Sanguinaire
-							i(95769),	-- Gore-Soaked Gear
-							i(95770),	-- Hand of the Dark Animus
-							i(95771),	-- Hood of the Crimson Wake
-							i(95777),	-- Matter-Swapped Legplates
-							i(95775),	-- Worldbinder Leggings
-						},
-					}),
-				}),
-				header(HEADERS.Achievement, 8072, {	-- Pinnacle of Storms
-					e(817, {	-- Iron Qon
-						["crs"] = {
-							68081,	-- Dam'ren <The Frozen Sage>
-							68078,	-- Iron Qon <Mastern of Quilen>
-							68080,	-- Quet'zal <The Stormcaller>
-							68079,	-- Ro'shak <The Molten Flare>
-						},
-						["g"] = {
-							i(95956),	-- Shoulders of the Crackling Conqueror
-							i(95957),	-- Shoulders of the Crackling Protector
-							i(95955),	-- Shoulders of the Crackling Vanquisher
-							i(95784),	-- Dam'ren's Frozen Footguards
-							i(95780),	-- Iron Qon's Boot Knife
-							i(95786),	-- Orb of Arcing Lightning
-							i(95790),	-- Qon's Flaming Scimitar
-							i(95782),	-- Quet'zal's Crackling Cord
-							i(95789),	-- Rein-Binder's Fists
-							i(95785),	-- Ro'shak's Remembrance
-							i(95788),	-- Ro'shak's Molten Chain
-							i(95783),	-- Saddle-Scarred Leggings
-							i(95787),	-- Spurs of the Storm Cavalry
-							i(95781),	-- Voice of the Quilen
-						},
-					}),
-					e(829, {	-- Twin Empyreans
-						["crs"] = {
+							68078,	-- Iron Qon
+							68079,	-- Ro'shak
+							68080,	-- Quet'zal
+							68081,	-- Dam'ren
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
+							68397,	-- Lei Shen
 						},
 						["g"] = {
-							i(95880),	-- Helm of the Crackling Conqueror
-							i(95881),	-- Helm of the Crackling Protector
-							i(95879),	-- Helm of the Crackling Vanquisher
-							i(95796),	-- Bracers of the Midnight Comet
-							i(95801),	-- Fingers of the Night
-							i(95799),	-- Gaze of the Twins
-							i(95797),	-- Girdle of Night and Day
-							i(95800),	-- Moonjade Necklace
-							i(95793),	-- Passionfire Choker
-							i(95792),	-- Robes of the Moon Lotus
-							i(95794),	-- Shield of Twinned Despair
-							i(95795),	-- Suen-Wo, Spire of the Falling Sun
-							i(95798),	-- Tidal Force Treads
-							i(95791),	-- Wu-Lai, Bladed Fan of the Consorts
+							i(95870),	-- Abandoned Spaulders of Arrowflight
+							i(95871),	-- Abandoned Spaulders of Renewal
+							i(95877),	-- Bo-Ris, Horror in the Night
+							i(95862),	-- Darkwood Spiritstaff
+							i(95876),	-- Do-tharak, the Swordbreaker
+							i(95868),	-- Forgotten Mantle of the Moon
+							i(95869),	-- Forgotten Mantle of the Sun
+							i(95860),	-- Fyn's Flickering Dagger
+							i(95875),	-- Greatsword of Frozen Hells
+							i(95858),	-- Invocation of the Dawn
+							i(95867),	-- Jerthud, Graceful Hand of the Savior
+							i(95863),	-- Lost Shoulders of Fire
+							i(95864),	-- Lost Shoulders of Healing
+							i(95865),	-- Lost Shoulders of Fluidity
+							i(95859),	-- Miracoran, the Vehement Chord
+							i(95866),	-- Nadagast's Exsanguinator
+							i(95872),	-- Reconstructed Holy Shoulderplates
+							i(95873),	-- Reconstructed Furious Shoulderplates
+							i(95874),	-- Reconstructed Bloody Shoulderplates
+							i(97129),	-- Tia-Tia, the Scything Star
+							i(95878),	-- Visage of the Doomed
+							i(95861),	-- Zeeg's Ancient Kegsmasher
 						},
 					}),
-					e(832, {	-- Lei Shen
-						["crs"] = { 68397 },	-- Lei Shen
-						["g"] = {
-							i(95805),	-- Conduit-Breaker Chain Leggings
-							i(95806),	-- Doomed Crown of Lei Shen
-							i(95804),	-- Fusion Slasher Chestguard
-							i(95813),	-- Gloves of the Maimed Vizier
-							i(95819),	-- Grips of Slicing Electricity
-							i(94867),	-- Heart of the Thunder King
-							i(95820),	-- Leggings of the Violent Gale
-							i(95807),	-- Legplates of the Lightning Throne
-							i(95808),	-- Legplates of Whipping Ionization
-							i(95812),	-- Legwraps of Cardinality
-							i(95818),	-- Lei Shen's Orb of Command
-							i(95821),	-- Lei Shen's Grounded Carapace
-							i(95817),	-- Lightning-Imbued Chalice
-							i(95802),	-- Rune of Re-Origination
-							i(95803),	-- Shan-Dun, Breaker of Hope
-							i(95811),	-- Soul Barrier
-							i(95816),	-- Soul Prism of Lei Shen
-							i(95815),	-- Torall, Rod of the Shattered Throne
-							i(95810),	-- Ultimate Protection of the Emperor
-							i(95814),	-- Unerring Vision of Lei Shen
-							i(95809),	-- Uroe, Harbinger of Terror
-						},
+					header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
+						e(827, {	-- Jin'rokh the Breaker
+							["crs"] = { 69465 },	-- Jin'rokh the Breaker
+							["g"] = {
+								i(95635),	-- Al'set's Tormented Leggings
+								i(95631),	-- Bracers of Constant Implosion
+								i(95630),	-- Chestplate of Violent Detonation
+								i(95629),	-- Cloudbreaker Greatbelt
+								i(95639),	-- Drape of Booming Nights
+								i(95636),	-- Fissure-Split Shoulderwraps
+								i(95643),	-- Ghostbinder Greatboots
+								i(95642),	-- Infinitely Conducting Bracers
+								i(95644),	-- Ionized Yojamban Carapace
+								i(95633),	-- Jin'rokh's Soulcrystal
+								i(95638),	-- Jin'rokh's Dreamshard
+								i(95634),	-- Lightningweaver Gauntlets
+								i(95626),	-- Lightning-Eye Hood
+								i(95625),	-- Renataki's Soul Charm
+								i(95637),	-- Robes of Static Bursts
+								i(95624),	-- Sign of the Bloodied God
+								i(95640),	-- Soulblade of the Breaking Storm
+								i(95627),	-- Spearman's Jingling Leggings
+								i(95628),	-- Static-Shot Shoulderguards
+								i(95632),	-- Worldbreaker's Stormscythe
+							},
+						}),
+						e(819, {	-- Horridon
+							["crs"] = { 68476 },	-- Horridon
+							["g"] = {
+								i(94574),	-- Pygmy Direhorn (PET!)
+								i(95664),	-- Armplates of the Vanquished Abomination
+								i(95648),	-- Bindings of Multiplicative Strikes
+								i(95651),	-- Bloodlord's Bloodsoaked Legplates
+								i(95657),	-- Dinomancer's Spiritbinding Spire
+								i(95655),	-- Flamecaster's Burning Crown
+								i(95650),	-- Frozen Warlord's Bracers
+								i(95653),	-- Horn-Rimmed Doomcloak
+								i(95641),	-- Horridon's Last Gasp
+								i(95658),	-- Horridon's Tusk Fragment
+								i(95647),	-- Jalak's Maelstrom Staff
+								i(95663),	-- Legguards of Scintillating Scales
+								i(95659),	-- Petrified Eye of the Basilisk
+								i(95652),	-- Puncture-Proof Greathelm
+								i(95661),	-- Roots of Rampaging Earth
+								i(95654),	-- Spark of Zandalar
+								i(95662),	-- Spaulders of Dinomancy
+								i(95649),	-- Sul'lithuz Sandmail
+								i(95646),	-- Talisman of Living Poison
+								i(95656),	-- Vaccinator's Armwraps
+								i(95660),	-- Venomlord's Totemic Wand
+								i(95645),	-- Wastewalker's Sandblasted Drape
+							},
+						}),
+						e(816, {	-- Council of Elders
+							["crs"] = {
+								69131,	-- Frost King Malakk
+								69132,	-- High Priestess Mar'li
+								69134,	-- Kazra'jin
+								69078,	-- Sul the Sandrawler
+							},
+							["g"] = {
+								i(95856),	-- Gauntlets of the Crackling Conqueror
+								i(95857),	-- Gauntlets of the Crackling Protector
+								i(95855),	-- Gauntlets of the Crackling Vanquisher
+								i(95670),	-- Amun-Thoth, Sul's Spiritrending Talons
+								i(95665),	-- Bad Juju
+								i(95677),	-- Fortitude of the Zandalari
+								i(95672),	-- Gaze of Gara'jal
+								i(95666),	-- Kura-Kura, Kazra'jin's Skullcleaver
+								i(95673),	-- Loa-Ridden Bracers
+								i(95667),	-- Mar'li's Bloodstained Sandals
+								i(95674),	-- Overloaded Bladebreaker Cuirass
+								i(95671),	-- Robes of Treacherous Ground
+								i(95676),	-- Talisman of Angry Spirits
+								i(95669),	-- Wushoolay's Final Choice
+								i(95668),	-- Zandalari Robes of the Final Rite
+								i(95675),	-- Zerat, Malakk's Soulburning Greatsword
+							},
+						}),
 					}),
-				}),
+					header(HEADERS.Achievement, 8070, {	-- Forgotten Depths
+						i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
+							["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
+						}),
+						e(825, {	-- Tortos
+							["crs"] = { 67977 },	-- Tortos
+							["g"] = {
+								i(95685),	-- Amulet of the Primal Turtle
+								i(95688),	-- Azure Shell Bracers
+								i(95681),	-- Beady-Eye Bracers
+								i(95687),	-- Beakbreaker Greatcloak
+								i(95690),	-- Crystal-Claw Gloves
+								i(95680),	-- Grips of Vampiric Cruelty
+								i(95682),	-- Quakestompers
+								i(95696),	-- Refreshing Abalone Girdle
+								i(95694),	-- Robes of Concussive Shocks
+								i(95679),	-- Rockfall Ribwraps
+								i(95678),	-- Shattered Tortoiseshell Longbow
+								i(95686),	-- Shellsplitter Greataxe
+								i(95684),	-- Shell-Coated Wristplates
+								i(95691),	-- Shimmershell Cape
+								i(95683),	-- Shoulderguards of Centripetal Destruction
+								i(95695),	-- Spaulders of Quaking Fear
+								i(95689),	-- Stonegaze Hood
+								i(95692),	-- Tortos' Discarded Shell
+								i(95697),	-- Tortos' Shellseizers
+								i(95693),	-- Vampire Bat-Hide Bracers
+							},
+						}),
+						e(821, {	-- Megaera
+							["crs"] = {
+								70252,	-- Arcane Head <Head of Megaera>
+								70212,	-- Flaming Head <Head of Megaera>
+								70235,	-- Frozen Head <Head of Megaera>
+								70247,	-- Venomous Head <Head of Megaera>
+							},
+							["g"] = {
+								i(95711),	-- Breath of the Hydra
+								i(95715),	-- Chain of Consuming Magic
+								i(95710),	-- Fetish of the Hydra
+								i(95708),	-- Frostborn Wristwraps
+								i(95707),	-- Gleaming-Eye Shoulderpads
+								i(95701),	-- Grips of Cinderflesh
+								i(95713),	-- Hood of Smoldering Flesh
+								i(95705),	-- Hydraskull Choker
+								i(95716),	-- Ice-Scored Treads
+								i(95712),	-- Inscribed Bag of Hydra-Spawn
+								i(95714),	-- Links of the Bifurcated Tongue
+								i(95698),	-- Megaera's Poisoned Fang
+								i(95709),	-- Megaera's Shining Eye
+								i(95702),	-- Plated Toothbreaker Girdle
+								i(95700),	-- Poisonblood Bladeshoulders
+								i(95699),	-- Quadra-Head Brooch
+								i(95703),	-- Rot-Proof Greatplate
+								i(95706),	-- Sandals of Arcane Fury
+								i(95704),	-- Spinescale Seal
+							},
+						}),
+						n(68220, {			-- Gastropod
+							["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
+							["g"] = {
+								i(98136)	-- Gastropod Shell (TOY!)
+							},
+						}),
+						e(828, {	-- Ji-Kun
+							["crs"] = { 69712 },	-- Ji-Kun
+							["g"] = {
+								i(94835),	-- Ji-Kun Hatchling (PET!)
+								i(95888),	-- Leggings of the Crackling Conqueror
+								i(95889),	-- Leggings of the Crackling Protector
+								i(95887),	-- Leggings of the Crackling Vanquisher
+								i(95718),	-- Cord of Cacophonous Cawing
+								i(95723),	-- Crown of Potentiated Birth
+								i(95725),	-- Egg-Shard Grips
+								i(95726),	-- Fabled Feather of Ji-Kun
+								i(95721),	-- Featherflight Belt
+								i(95720),	-- Giorgio's Caduceus of Pure Moods
+								i(95722),	-- Grasp of the Ruthless Mother
+								i(95727),	-- Ji-Kun's Rising Winds
+								i(95717),	-- Pinionfeather Greatcloak
+								i(95719),	-- Robe of Midnight Dawn
+								i(95724),	-- Talonrender Chestplate
+							},
+						}),
+					}),
+					header(HEADERS.Achievement, 8071, {	-- Halls of Flesh-Shaping
+						e(818, {	-- Durumu the Forgotten
+							["crs"] = { 68036 },	-- Durumu the Forgotten
+							["g"] = {
+								i(95731),	-- Aberrant Chestguard of Torment
+								i(95735),	-- Artery Rippers
+								i(95732),	-- Caustic Spike Bracers
+								i(95740),	-- Chilblain Spaulders
+								i(95729),	-- Crimson Bloom Legguards
+								i(95741),	-- Deadly Glare Cape
+								i(95728),	-- Durumu's Baleful Gaze
+								i(95737),	-- Durumu's Severed Tentacle
+								i(95742),	-- Durumu's Captive Eyeball
+								i(95746),	-- Iceshatter Gauntlets
+								i(95739),	-- Leggings of Pulsing Blood
+								i(95733),	-- Legplates of the Dark Parasite
+								i(95747),	-- Legplates of Re-Emergence
+								i(95738),	-- Lifedrainer's Sordid Grip
+								i(95730),	-- Links of the Disintegrator
+								i(95736),	-- Reinforced Mirror-Sheen Cloak
+								i(95743),	-- Ritual Dagger of the Mind's Eye
+								i(95744),	-- Sandals of the Starving Eye
+								i(95734),	-- Treads of the Blind Eye
+								i(95745),	-- Vein-Cover Bracers
+							},
+						}),
+						e(820, {	-- Primordius
+							["crs"] = { 69017 },	-- Primordius
+							["g"] = {
+								i(97959),	-- Living Fluid (PET!)
+								i(97960),	-- Viscous Horror (PET!)
+								i(95758),	-- Acid-Spine Bonemace
+								i(95756),	-- Band of the Scaled Tyrant
+								i(95753),	-- Black Blood Legplates
+								i(95766),	-- Bonemender Bracers
+								i(95750),	-- Bracers of Mutagenic Fervor
+								i(95762),	-- Bracers of Fragile Bone
+								i(95765),	-- Clear-Mind Helm
+								i(95749),	-- Gloves of Cushioned Air
+								i(95768),	-- Greatshield of the Gloaming
+								i(95760),	-- Helix-Breaker Gloves
+								i(95755),	-- Hydra-Scale Bloodcloak
+								i(95761),	-- Leggings of Ebon Veins
+								i(95764),	-- Leggings of the Malformed Sapling
+								i(95754),	-- Metabolically Boosted Shoulderplates
+								i(95752),	-- Pathogenic Gauntlets
+								i(95757),	-- Primordius' Talisman of Rage
+								i(95759),	-- Robes of Mutagenic Blood
+								i(95767),	-- Spaulders of Primordial Growth
+								i(95763),	-- Stolen Relic of Zuldazar
+								i(95751),	-- Synapse-String Handguards
+								i(95748),	-- Talisman of Bloodlust
+							},
+						}),
+						e(824, {	-- Dark Animus
+							["crs"] = {
+								69756,	-- Anima Orb
+								69427,	-- Dark Animus
+							},
+							["g"] = {
+								i(94152),	-- Son of Animus (PET!)
+								i(95823),	-- Chest of the Crackling Conqueror
+								i(95824),	-- Chest of the Crackling Protector
+								i(95822),	-- Chest of the Crackling Vanquisher
+								i(95776),	-- Anima-Ringed Fingers
+								i(95774),	-- Athame of the Sanguine Ritual
+								i(95772),	-- Cha-Ye's Essence of Brilliance
+								i(95773),	-- Constantly Accelerating Cloak
+								i(95778),	-- Crown of the Golden Golem
+								i(95779),	-- Delicate Vial of the Sanguinaire
+								i(95769),	-- Gore-Soaked Gear
+								i(95770),	-- Hand of the Dark Animus
+								i(95771),	-- Hood of the Crimson Wake
+								i(95777),	-- Matter-Swapped Legplates
+								i(95775),	-- Worldbinder Leggings
+							},
+						}),
+					}),
+					header(HEADERS.Achievement, 8072, {	-- Pinnacle of Storms
+						e(817, {	-- Iron Qon
+							["crs"] = {
+								68081,	-- Dam'ren <The Frozen Sage>
+								68078,	-- Iron Qon <Mastern of Quilen>
+								68080,	-- Quet'zal <The Stormcaller>
+								68079,	-- Ro'shak <The Molten Flare>
+							},
+							["g"] = {
+								i(95956),	-- Shoulders of the Crackling Conqueror
+								i(95957),	-- Shoulders of the Crackling Protector
+								i(95955),	-- Shoulders of the Crackling Vanquisher
+								i(95784),	-- Dam'ren's Frozen Footguards
+								i(95780),	-- Iron Qon's Boot Knife
+								i(95786),	-- Orb of Arcing Lightning
+								i(95790),	-- Qon's Flaming Scimitar
+								i(95782),	-- Quet'zal's Crackling Cord
+								i(95789),	-- Rein-Binder's Fists
+								i(95785),	-- Ro'shak's Remembrance
+								i(95788),	-- Ro'shak's Molten Chain
+								i(95783),	-- Saddle-Scarred Leggings
+								i(95787),	-- Spurs of the Storm Cavalry
+								i(95781),	-- Voice of the Quilen
+							},
+						}),
+						e(829, {	-- Twin Empyreans
+							["crs"] = {
+								68904,	-- Suen <Mistress of Anger>
+								68905,	-- Lu'lin <Mistress of Solitude>
+							},
+							["g"] = {
+								i(95880),	-- Helm of the Crackling Conqueror
+								i(95881),	-- Helm of the Crackling Protector
+								i(95879),	-- Helm of the Crackling Vanquisher
+								i(95796),	-- Bracers of the Midnight Comet
+								i(95801),	-- Fingers of the Night
+								i(95799),	-- Gaze of the Twins
+								i(95797),	-- Girdle of Night and Day
+								i(95800),	-- Moonjade Necklace
+								i(95793),	-- Passionfire Choker
+								i(95792),	-- Robes of the Moon Lotus
+								i(95794),	-- Shield of Twinned Despair
+								i(95795),	-- Suen-Wo, Spire of the Falling Sun
+								i(95798),	-- Tidal Force Treads
+								i(95791),	-- Wu-Lai, Bladed Fan of the Consorts
+							},
+						}),
+						e(832, {	-- Lei Shen
+							["crs"] = { 68397 },	-- Lei Shen
+							["g"] = {
+								i(95805),	-- Conduit-Breaker Chain Leggings
+								i(95806),	-- Doomed Crown of Lei Shen
+								i(95804),	-- Fusion Slasher Chestguard
+								i(95813),	-- Gloves of the Maimed Vizier
+								i(95819),	-- Grips of Slicing Electricity
+								i(94867),	-- Heart of the Thunder King
+								i(95820),	-- Leggings of the Violent Gale
+								i(95807),	-- Legplates of the Lightning Throne
+								i(95808),	-- Legplates of Whipping Ionization
+								i(95812),	-- Legwraps of Cardinality
+								i(95818),	-- Lei Shen's Orb of Command
+								i(95821),	-- Lei Shen's Grounded Carapace
+								i(95817),	-- Lightning-Imbued Chalice
+								i(95802),	-- Rune of Re-Origination
+								i(95803),	-- Shan-Dun, Breaker of Hope
+								i(95811),	-- Soul Barrier
+								i(95816),	-- Soul Prism of Lei Shen
+								i(95815),	-- Torall, Rod of the Shattered Throne
+								i(95810),	-- Ultimate Protection of the Emperor
+								i(95814),	-- Unerring Vision of Lei Shen
+								i(95809),	-- Uroe, Harbinger of Terror
+							},
+						}),
+					}),
+				},
 			}),
 			d(NORMAL_DUNGEON, {
 				["ignoreBonus"] = true,
@@ -749,6 +729,8 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 68476 },	-- Horridon
 						["g"] = {
 							ach(8038),	-- Cretaceous Collector
+							i(93666),	-- Spawn of Horridon (MOUNT!)
+							i(94574),	-- Pygmy Direhorn (PET!)
 							i(94751),	-- Armplates of the Vanquished Abomination
 							i(94743),	-- Bindings of Multiplicative Strikes
 							i(94747),	-- Bloodlord's Bloodsoaked Legplates
@@ -795,7 +777,10 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							}),
 						},
 					}),
-					e(816, {	-- Council of Elders
+					n(69944, {	-- Sand Elemental
+						i(94125),	-- Living Sandling (PET!)
+					}),
+					e(816, {	-- Council of Elders (Kazra'jin)
 						["crs"] = {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
@@ -836,6 +821,9 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 								i(96047),	-- Zerat, Malakk's Soulburning Greatsword
 							}),
 						},
+					}),
+					i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
+						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 					}),
 					e(825, {	-- Tortos
 						["crs"] = { 67977 },	-- Tortos
@@ -896,13 +884,13 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["g"] = {
 							ach(8082, {	-- Head Case
 								crit(1, {	-- Flaming
-									["crs"] = { 70212 },
+									["cr"] = 70212,
 								}),
 								crit(2, {	-- Frozen
-									["crs"] = { 70235 },
+									["cr"] = 70235,
 								}),
 								crit(3, {	-- Venomous
-									["crs"] = { 70247 },
+									["cr"] = 70247,
 								}),
 							}),
 							i(94521),	-- Breath of the Hydra
@@ -947,10 +935,18 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							}),
 						},
 					}),
+					n(68220, {			-- Gastropod
+						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
+						["g"] = {
+							i(98136)	-- Gastropod Shell (TOY!)
+						},
+					}),
 					e(828, {	-- Ji-Kun
 						["crs"] = { 69712 },	-- Ji-Kun
 						["g"] = {
 							ach(8097),	-- Soft Hands
+							i(95059),	-- Clutch of Ji-Kun (MOUNT!)
+							i(94835),	-- Ji-Kun Hatchling (PET!)
 							i(95576),	-- Leggings of the Crackling Conqueror
 							i(95581),	-- Leggings of the Crackling Protector
 							i(95572),	-- Leggings of the Crackling Vanquisher
@@ -1032,6 +1028,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 69017 },	-- Primordius
 						["g"] = {
 							ach(8037),	-- Genectically Unmodified Organism
+							i(97960),	-- Viscous Horror (PET!)
 							i(94937),	-- Acid-Spine Bonemace
 							i(95513),	-- Band of the Scaled Tyrant
 							i(94944),	-- Black Blood Legplates
@@ -1243,7 +1240,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 						["g"] = {
-							ach(8086),	-- From Dusk 'til Dawn
+							ach(8086),    -- From Dusk 'til Dawn
 							i(95577),	-- Helm of the Crackling Conqueror
 							i(95582),	-- Helm of the Crackling Protector
 							i(95571),	-- Helm of the Crackling Vanquisher
@@ -1468,6 +1465,8 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 68476 },	-- Horridon
 						["g"] = {
 							ach(8057),	-- Heroic: Horridon
+							i(93666),	-- Spawn of Horridon (MOUNT!)
+							i(94574),	-- Pygmy Direhorn (PET!)
 							i(96408),	-- Armplates of the Vanquished Abomination
 							i(96392),	-- Bindings of Multiplicative Strikes
 							i(96395),	-- Bloodlord's Bloodsoaked Legplates
@@ -1558,6 +1557,9 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 								i(96791),	-- Zerat, Malakk's Soulburning Greatsword
 							}),
 						},
+					}),
+					i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
+						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 					}),
 					e(825, {	-- Tortos
 						["crs"] = { 67977 },	-- Tortos
@@ -1658,10 +1660,18 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							}),
 						},
 					}),
+					n(68220, {			-- Gastropod
+						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
+						["g"] = {
+							i(98136),	-- Gastropod Shell (TOY!)
+						},
+					}),
 					e(828, {	-- Ji-Kun
 						["crs"] = { 69712 },	-- Ji-Kun
 						["g"] = {
 							ach(8061),	-- Heroic: Ji-Kun
+							i(95059),	-- Clutch of Ji-Kun (MOUNT!)
+							i(94835),	-- Ji-Kun Hatchling (PET!)
 							i(96632),	-- Leggings of the Crackling Conqueror
 							i(96633),	-- Leggings of the Crackling Protector
 							i(96631),	-- Leggings of the Crackling Vanquisher
@@ -1743,6 +1753,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 69017 },	-- Primordius
 						["g"] = {
 							ach(8063),	-- Heroic: Primordius
+							i(97960),	-- Viscous Horror (PET!)
 							i(96502),	-- Acid-Spine Bonemace
 							i(96500),	-- Band of the Scaled Tyrant
 							i(96497),	-- Black Blood Legplates
@@ -1907,7 +1918,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 								["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
 							}),
 							ach(8067, {	-- Heroic: Lei Shen
-								title(222),	-- <Name>, Storm's End
+								title(222),	-- , Storm's End
 							}),
 							ach(8139),	-- Heroic: Lei Shen Guild Run
 							i(96549),	-- Conduit-Breaker Chain Leggings
@@ -2022,8 +2033,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 		},
 	}),
 })));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		inst(362, {
 			filter(CONSUMABLES, {
@@ -2096,9 +2106,8 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(96723),	-- Columnbreaker Stompers
 		}),
 	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, {
+});
+root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(32752),	-- Dark Animus Dead - triggers on the first kill of the week
 		q(32750),	-- Durumu Dead - triggers on the first kill of the week

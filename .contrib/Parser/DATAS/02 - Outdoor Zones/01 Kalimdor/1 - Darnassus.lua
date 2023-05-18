@@ -1461,8 +1461,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(8500),	-- Great Horned Owl
-						i(8501),	-- Hawk Owl
+						i(8500),	-- Great Horned Owl (PET!)
+						i(8501),	-- Hawk Owl (PET!)
 					},
 				}),
 				n(52644, {	-- Tarien Silverdew <Jewelcrafting Supplies>

@@ -486,7 +486,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				i(20768, {	-- Oozing Bag
 					["cr"] = 15335,	-- Flesh Hunter
 					["groups"] = {
-						i(20769),	-- Disgusting Oozeling
+						i(20769),	-- Disgusting Oozeling (PET!)
 					},
 				}),
 				i(21761, {	-- Scarab Coffer Key

@@ -332,8 +332,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						objective(1, {	-- 0/15 Spire Spider Egg
 							["provider"] = { "i", 12530 },	-- Spire Spider Egg
 						}),
-						i(12529, {	-- Smolderweb Carrier
-							["timeline"] = { "removed 4.0.3" },
+						i(12529, {	-- Smolderweb Hatchling (PET!)
+							["timeline"] = { "added 1.11.1, removed 4.0.3" },
 						}),
 					},
 				}),
@@ -1422,7 +1422,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				e(391, {	-- Mother Smolderweb
 					["creatureID"] = 10596,	-- Mother Smolderweb
 					["groups"] = {
-						i(68673, {	-- Smolderthorn Egg (PET!)
+						i(68673, {	-- Smolderthorn Hatchling (PET!)
 							["timeline"] = { "added 4.0.6.13596" },
 						}),
 						i(13183),	-- Venomspitter

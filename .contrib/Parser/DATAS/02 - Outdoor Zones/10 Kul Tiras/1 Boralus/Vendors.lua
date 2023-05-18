@@ -209,7 +209,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 59.8, 22.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(11023),	-- Ancona Chicken
+					i(11023),	-- Ancona Chicken (PET!)
 				},
 			}),
 			n(142065, {	-- Dana Pull

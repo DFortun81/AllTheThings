@@ -66,12 +66,16 @@ local RETURN_TO_THE_BFA_ORPHANAGE_GROUPS = {
 	i(23022),	-- Curmudgeon's Payoff
 };
 local WARDEN_OF_THE_GROUPS = {
-	i(23007),	-- Piglet's Collar
+	i(23007, { -- Mr. Wiggles (PET!)
+		["timeline"] = { "added 1.11.1.5462" },
+	}),
 	i(23015),	-- Rat Cage
 	i(66073, {	-- Scooter the Snail (PET!)
 		["timeline"] = { "added 4.0.3.13287" },
 	}),
-	i(23002),	-- Turtle Box
+	i(23002, { -- Speedy (PET!)
+		["timeline"] = { "added 1.11.1.5462" },
+	}),
 	PET_CARE_PACKAGE,
 	i(23022),	-- Curmudgeon's Payoff
 };

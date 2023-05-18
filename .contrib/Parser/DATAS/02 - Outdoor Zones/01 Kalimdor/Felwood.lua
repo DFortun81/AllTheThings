@@ -2785,7 +2785,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7093,	-- Vile Ooze
 					},
 					["groups"] = {
-						i(20769),	-- Disgusting Oozeling
+						i(20769),	-- Disgusting Oozeling (PET!)
 					},
 				}),
 				i(15752, {	-- Pattern: Living Leggings

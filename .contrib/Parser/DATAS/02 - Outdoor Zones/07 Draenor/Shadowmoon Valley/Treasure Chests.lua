@@ -321,7 +321,7 @@ _.Zones =
 					["questID"] = 35600,
 					["coord"] = { 55.8, 20.0, DRAENOR_SHADOWMOON_VALLEY },
 					["g"] = {
-						i(118104),	-- Umbrafen Spore Pet
+						i(118104),	-- Umbrafen Spore (PET!)
 					},
 				}),
 				o(233101, {	-- Sunken Fishing Boat

@@ -636,7 +636,9 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					objective(4),	-- Flame of the Scholomance
 					-- #endif
 					-- #if BEFORE 2.4.0.7994
-					i(23083),	-- Captured Flame
+					i(23083, { -- Captured Flame (PET!)
+						["timeline"] = { "added 1.11.1.5462" },
+					}),
 					-- #endif
 					i(23247),	-- Burning Blossom
 				},
