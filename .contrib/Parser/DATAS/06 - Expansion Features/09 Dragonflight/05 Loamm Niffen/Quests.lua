@@ -97,7 +97,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(205286),	-- Loamm Niffen Tabard
 				}
 			}),
-			-- RENOWN 12 --
+				-- RENOWN 11 --
+			q(76028, {	-- Dragon Isles Supplies
+				-- TODO: It wasn't up for main, but pop for alt. Not sure why.
+				["minReputation"] = { 2564, 11 },	-- Loamm Niffen Renown 11
+				["provider"] = { "n", 205127 },	-- Newsy
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
+				["g"] = {
+					i(205965),	-- Large Loammian Supply Pack
+				}
+			}),			
+				-- RENOWN 12 --
 			q(75728, {	-- Bartering Boulders
 				["minReputation"] = { 2564, 12 },	-- Loamm Niffen Renown 12
 				["provider"] = { "n", 205127 },	-- Newsy
@@ -106,7 +116,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(205188),	-- Barter Boulder
 				}
 			}),
-			-- RENOWN 13 --
+				-- RENOWN 13 --
 			q(75730, {	-- Slitherdrake Watching
 				["minReputation"] = { 2564, 13 },	-- Loamm Niffen Renown 13
 				["provider"] = { "n", 205127 },	-- Newsy
