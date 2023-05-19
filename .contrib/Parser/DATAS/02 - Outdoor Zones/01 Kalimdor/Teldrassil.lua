@@ -746,7 +746,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 42,
 					["groups"] = {
 						objective(1, {	-- 0/15 Wildkin Feather
-							["provider"] = { "i", 10819 },	-- Wildkin Feather
+							["providers"] = {
+								{ "i",  10819 },	-- Wildkin Feather
+								{ "o", 153239 },	-- Wildkin Feather
+							},
 							["description"] = "Scattered on the ground around the Hinterlands.",
 						}),
 					},
