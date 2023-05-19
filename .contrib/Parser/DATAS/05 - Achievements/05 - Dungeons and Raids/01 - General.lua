@@ -468,38 +468,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(26),		-- Return to Sender
 			crit(27),		-- Run with the Wind
 		}),
-		ach(6932, {		-- Glory of the Pandaria Raider
-			i(87773),		-- Heavenly Crimson Cloud Serpent (MOUNT!)
-			crit(1),		-- Must Love Dogs
-			crit(2),		-- Anything You Can Do, I Can Do Better...
-			crit(3),		-- Sorry, Were You Looking for This?
-			crit(4),		-- Straight Six
-			crit(5),		-- Clouds of Zeal
-			crit(6),		-- Candle in the Wind
-			crit(7),		-- Like an Arrow to the Face
-			crit(8),		-- Less Than Three
-			crit(9),		-- I Heard You Like Amber...
-			crit(10),		-- Timing is Everything
-			crit(11),		-- Power Overwhelming
-			crit(12),		-- Face Clutchers
-			crit(13),		-- Who's Got Two Green Thumbs?
-			crit(14),		-- The Mind-Killer
-			crit(15),		-- Heroic: Stone Guard
-			crit(16),		-- Heroic: Feng the Accursed
-			crit(17),		-- Heroic: Gara'jal the Spiritbinder
-			crit(18),		-- Heroic: Four Kings
-			crit(19),		-- Heroic: Elegon
-			crit(20),		-- Heroic: Will of the Emperor
-			crit(21),		-- Heroic: Imperial Vizier Zor'lok
-			crit(22),		-- Heroic: Blade Lord Ta'yak
-			crit(23),		-- Heroic: Garalon
-			crit(24),		-- Heroic: Wind Lord Mel'jarak
-			crit(25),		-- Heroic: Amber-Shaper Un'sok
-			crit(26),		-- Heroic: Shek'zeer
-			crit(27),		-- Heroic: Protectors of the Endless
-			crit(28),		-- Heroic: Tsulong
-			crit(29),		-- Heroic: Lei Shi
-		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2137, {	-- Glory of the Raider (10 player)
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -784,15 +752,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(6),		-- Heroic: Spires of Ascension
 			crit(7),		-- Heroic: The Necrotic Wake
 			crit(8),		-- Heroic: Theater of Pain
-		}),
-		ach(6926, {		-- Tranquil Master
-			title(203),		-- the Tranquil Master
-			crit(1),		-- Sha of Doubt (Heroic)
-			crit(2),		-- Sha of Despair
-			crit(3),		-- Sha of Violence (Heroic)
-			crit(4),		-- Sha of Hatred
-			crit(5),		-- Sha of Anger
-			crit(6),		-- Sha of Fear (Normal or Heroic)
 		}),
 	}),
 }));

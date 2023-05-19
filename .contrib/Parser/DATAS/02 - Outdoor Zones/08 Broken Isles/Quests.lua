@@ -582,7 +582,7 @@ _.Zones =
 						}),
 					},
 				}),
-				header(HEADERS.Item, 135479, {	-- Lost Mail
+				header(HEADERS.Item, 135479, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- Lost Mail
 					o(247797, {	-- Lost Mail
 						["maps"] = {
 							LEGION_DALARAN, LEGION_THE_UNDERBELLY, 629,	-- Dalaran
@@ -629,15 +629,15 @@ _.Zones =
 						["provider"] = { "n", 52562 },	-- Johnny Awesome
 						["coord"] = { 68.6, 73.1, FERALAS },
 					}),
-					q(50247, {	-- The Mail Must Flow
+					q(50247, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- The Mail Must Flow
 						["sourceQuests"] = { 41395 },	-- Due Reward
 						["description"] = "After you finish performing menial tasks for Johnny Awesome, you'll receive another letter from the Postmaster requesting your presence in the mail room.",
 						["provider"] = { "n", 103976 },	-- The Postmaster
 						["g"] = {
 							ach(12416),	-- The Total Package
 						},
-					}),
-					ach(12431, {	-- Post Haste
+					})),
+					ach(12431, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Post Haste
 						["sourceQuests"] = { 50247 },	-- The Mail Must Flow
 						["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
 						["g"] = {
@@ -647,15 +647,15 @@ _.Zones =
 								i(135479),	-- Lost Mail
 							}),
 						},
-					}),
-					ach(12439, {	-- Priority Mail
+					})),
+					ach(12439, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Priority Mail
 						["sourceQuests"] = { 50247 },	-- The Mail Must Flow
 						["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
 						["g"] = {
 							title(372),	-- Postmaster %s
 						},
-					}),
-				}),
+					})),
+				})),
 			},
 		}),
 	}),

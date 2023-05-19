@@ -103,13 +103,6 @@ _.Zones =
 					}),
 					i(94295, {	-- Primal Egg
 						["description"] = "This egg can be obtained from the Treasures/Spoils of the Thunder King or zone wide on the Isle of Giants.",
-						["g"] = {
-							i(94296, {  -- Cracked Primal Egg
-								i(94292),	-- Black Primal Raptor (MOUNT!)
-								i(94293),	-- Green Primal Raptor  (MOUNT!)
-								i(94291),	-- Red Primal Raptor (MOUNT!)
-							}),
-						},
 						["crs"] = {
 							69991,	-- Primal Devilsaur [East - Blue]
 							70010,	-- Primal Devilsaur [East - Tan]
@@ -133,6 +126,17 @@ _.Zones =
 							70005,	-- Young Primal Devilsaur [Center - Brown + Gold]
 							70006,	-- Young Primal Devilsaur [West - Gold]
 							69993,	-- Young Primal Devilsaur [West - Red]
+							69099,	-- Nalak, the Storm Lord
+							69161,	-- Oondasta
+							62346,	-- Galleon
+							60491,	-- Sha of Anger
+						},
+						["g"] = {
+							i(94296, {  -- Cracked Primal Egg
+								i(94292),	-- Black Primal Raptor (MOUNT!)
+								i(94293),	-- Green Primal Raptor  (MOUNT!)
+								i(94291),	-- Red Primal Raptor (MOUNT!)
+							}),
 						},
 					}),
 					n(69925, {	-- Zandalari Dinomancer

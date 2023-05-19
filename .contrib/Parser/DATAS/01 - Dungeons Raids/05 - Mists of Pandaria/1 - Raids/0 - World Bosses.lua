@@ -1,80 +1,28 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(MOP_TIER, {
+root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
-		["lvl"] = 80,
-		["g"] = {
-			e(814, {	-- Nalak, The Storm Lord
-				["isWeekly"] = true,
-				["questID"] = 32518,
-				["isRaid"] = true,
+		["g"] = sharedData({
+			["isRaid"] = true,
+			["isWeekly"] = true,
+		},{
+			e(814, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Nalak, The Storm Lord
+				["crs"] = { 69099 },	-- Nalak, the Storm Lord
 				["coord"] = { 60.0, 37.7, ISLE_OF_THUNDER },
-				["maps"] = {	-- all Isle of Thunder maps
-					505,	-- Lightning Vein Mine
-					506,	-- The Swollen Vault
-					516,	-- Scenario [Phase 1]
-					517,	-- Lightning Vein Mine
-				},
-				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["creatureID"] = 69099,	-- Nalak, the Storm Lord
+				["questID"] = 32518,
 				["g"] = {
 					ach(8137),	-- Nalak Guild Run
 					ach(8028),	-- Praise the Sun!
 					-- Mounts, Caches, and Quest Items!
 					i(95057),	-- Thundering Cobalt Cloud Serpent (MOUNT!)
-					i(95602, {	-- Stormtouched Cache	-- TODO: should be symlink for duplicate rewards
-						i(95972),	-- Abandoned Zandalari Arrowlinks
-						i(95976),	-- Abandoned Zandalari Bucklebreaker
-						i(95961),	-- Abandoned Zandalari Firecord
-						i(95975),	-- Abandoned Zandalari Goreplate
-						i(95974),	-- Abandoned Zandalari Greatbelt
-						i(95971),	-- Abandoned Zandalari Moonstrap
-						i(95962),	-- Abandoned Zandalari Shadowgirdle
-						i(95970),	-- Abandoned Zandalari Silentbelt
-						i(95973),	-- Abandoned Zandalari Waterchain
-						i(95979),	-- Columnbreaker Stompers [Crieve got November 24, 2018 on stream]
-						i(95966),	-- Deeproot Treads
-						i(95978),	-- Locksmasher Greaves [Yunim - 2021-12-04]
-						i(95963),	-- Silentflame Sandals
-						i(95968),	-- Vaultwalker Sabatons
-						i(94295),	-- Primal Egg
+					i(95602, {	-- Stormtouched Cache
+						["sym"] = {
+							{ "select", "headerID", 95343 },
+							{ "pop" },
+						},
 					}),
-					i(95602, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Stormtouched Cache Pet Version -- Those Pets got removed, unknown when exactly.
-						i(44984),	-- Ammen Vale Lashling
-						i(54436),	-- Blue Clockwork Rocket Bot
-						i(44970),	-- Dun Morogh Cub
-						i(44973),	-- Durotar Scorpion
-						i(67282),	-- Elementium Geode
-						i(44974),	-- Elwynn Lamb
-						i(44982),	-- Enchanted Broom
-						i(64403),	-- Fox Kit
-						i(43698),	-- Giant Sewer Rat
-						i(45002),	-- Mechanopeep
-						i(44980),	-- Mulgore Hatchling
-						i(69992),	-- Shimmering Wyrmling
-						i(44965),	-- Teldrassil Sproutling
-						i(69991),	-- Tiny Sporebat
-						i(44971),	-- Tirisfal Batling
-						i(10360),	-- Black Kingsnake
-						i(29960),	-- Captured Firefly
-						i(8491),	-- Cat Carrier (Black Tabby)
-						i(46398),	-- Cat Carrier (Calico Cat)
-						i(8487),	-- Cat Carrier (Orange Tabby)
-						i(8488),	-- Cat Carrier (Silver Tabby)
-						i(10822),	-- Dark Whelpling
-						i(29953),	-- Golden Dragonhawk Hatchling
-						i(48116),	-- Gundrak Hatchling
-						i(48118),	-- Leaping Hatchling
-						i(48120),	-- Obsidian Hatchling
-						i(8496),	-- Parrot Cage (Cockatiel)
-						i(8492),	-- Parrot Cage (Green Wing Macaw)
-						i(8495),	-- Parrot Cage (Senegal)
-						i(48124),	-- Razormaw Hatchling
-						i(48126),	-- Razzashi Hatchling
-					})),
 					-- Necks
 					i(91414),	-- Tyrannical Gladiator's Choker of Accuracy
 					i(94354),	-- Tyrannical Gladiator's Choker of Accuracy
@@ -334,41 +282,20 @@ _.Instances = { tier(MOP_TIER, {
 					i(91416),	-- Tyrannical Gladiator's Signet of Cruelty
 					i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
 				},
-			}),
-			e(826, {	-- Oondasta
-				["isWeekly"] = true,
-				["questID"] = 32519,
-				["isRaid"] = true,
+			})),
+			e(826, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Oondasta
+				["crs"] = { 69161 },	-- Oondasta
 				["coord"] = { 49.9, 56.8, ISLE_OF_GIANTS },
-				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["creatureID"] = 69161,	-- Oondasta
+				["questID"] = 32519,
 				["g"] = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					ach(8138),	-- Oondasta Guild Run
 					i(94228),	-- Cobalt Primordial Direhorn (MOUNT!)
 					i(95601, {	-- Shiny Pile of Refuse
-						i(95972),	-- Abandoned Zandalari Arrowlinks
-						i(95976),	-- Abandoned Zandalari Bucklebreaker
-						i(95961),	-- Abandoned Zandalari Firecord
-						i(95975),	-- Abandoned Zandalari Goreplate
-						i(95974),	-- Abandoned Zandalari Greatbelt
-						i(95971),	-- Abandoned Zandalari Moonstrap
-						i(95962),	-- Abandoned Zandalari Shadowgirdle
-						i(95970),	-- Abandoned Zandalari Silentbelt
-						i(95973),	-- Abandoned Zandalari Waterchain
-						i(95979),	-- Columnbreaker Stompers [Crieve got November 24, 2018 on stream]
-						i(95966),	-- Deeproot Treads
-						i(94295),	-- Primal Egg
-						i(95965),	-- Home-Warding Slippers
-						i(95978),	-- Locksmasher Greaves [Yunim - 2021-12-04]
-						i(95980),	-- Necklace of the Terra-Cotta Protector
-						i(95958),	-- Necklace of the Terra-Cotta Archer
-						i(95969),	-- Necklace of the Terra-Cotta Mender
-						i(95960),	-- Scalehide Spurs
-						i(95963),	-- Silentflame Sandals
-						i(95959),	-- Spiderweb Tabi
-						i(95967),	-- Spiritbound Boots
-						i(95968),	-- Vaultwalker Sabatons 
+						["sym"] = {
+							{ "select", "headerID", 95343 },
+							{ "pop" },
+						},
 					}),
 
 					-- Necks
@@ -418,18 +345,15 @@ _.Instances = { tier(MOP_TIER, {
 					i(95167),	-- Ring of King Kangrom
 					i(95163),	-- Ring of Shamuru
 				},
-			}),
-			e(861, bubbleDownSelf({["u"]=38},{	-- Ordos, Fire-God of the Yaungol / Ordos - Legendary Cloak Filter
+			})),
+			e(861, bubbleDownSelf({	-- Ordos, Fire-God of the Yaungol
+				["u"] = 38,	-- Legendary Cloak Filter
+				["timeline"] = { ADDED_5_4_0 },
+			}, {
+				["crs"] = { 72057 },	-- Ordos, Fire-God of the Yaungol
 				["sourceQuests"] = { 33104 },	-- A Pandaren Legend
-				["isWeekly"] = true,
 				["questID"] = 33118,
-				["isRaid"] = true,
 				["coord"] = { 54.9, 17.3, TIMELESS_ISLE },
-				["maps"] = {	-- all Timeless Isle maps
-					555,	-- Cavern of Lost Spirits
-				},
-				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
-				["creatureID"] = 72057,	-- Ordos, Fire-God of the Yaungol
 				["g"] = {
 					ach(8533),	-- Ordos
 					ach(8790),	-- Ordos Guild Run
@@ -523,85 +447,19 @@ _.Instances = { tier(MOP_TIER, {
 				},
 			})),
 			e(725, {	-- Saylis's Warband [Galleon]
-				["isWeekly"] = true,
-				["questID"] = 32098,
-				["isRaid"] = true,
+				["crs"] = { 62346 },	-- Galleon
 				["coord"] = { 70.79, 63.51, VALLEY_OF_THE_FOUR_WINDS },
-				["maps"] = {	-- all Valley of the Four Winds maps
-					377,	-- Cavern of Endless Echoes
-				},
-				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["creatureID"] = 62346,	-- Galleon
+				["questID"] = 32098,
 				["g"] = {
 					ach(6517),	-- Extinction Event
 					ach(6708),	-- Salyis's Warband Guild Run
 					i(89783),	-- Son of Galleon (MOUNT!)
-					i(90840, {	-- Marauder's Gleaming Sack of Gold	-- TODO: should be symlink for duplicate rewards
-						-- Belts
-						i(86884),	-- Belt of Embodied Terror
-						i(86900),	-- Binder's Chain of Unending Summer
-						i(86895),	-- Healer's Belt of Final Winter
-						i(86896),	-- Invoker's Belt of Final Winter
-						i(86902),	-- Mender's Girdle of Endless Spring
-						i(86904),	-- Patroller's Girdle of Endless Spring
-						i(86903),	-- Protector's Girdle of Endless Spring
-						i(86901),	-- Ranger's Chain of Unending Summer
-						i(86897),	-- Sorcerer's Belt of Final Winter
-						i(86899),	-- Stalker's Cord of Eternal Autumn
-						i(86898),	-- Weaver's Cord of Eternal Autumn
-						-- Bracers
-						i(86850),	-- Darting Damselfly Cuffs
-						i(86844),	-- Gleaming Moth Cuffs
-						i(86846),	-- Inlaid Cricket Bracers
-						i(86847),	-- Jagged Hornet Bracers
-						i(86842),	-- Luminescent Firefly Wristguards
-						i(86845),	-- Pearlescent Butterfly Wristbands
-						i(86849),	-- Plated Locust Bracers
-						i(86848),	-- Serrated Wasp Bracers
-						i(86841),	-- Shining Cicada Bracers
-						i(86843),	-- Smooth Beetle Wristbands
-						-- Trinkets
-						i(86772),	-- Jade Bandit Figurine
-						i(86771),	-- Jade Charioteer Figurine
-						i(86774),	-- Jade Courtesan Figurine
-						i(86773),	-- Jade Magistrate Figurine
-						i(86775),	-- Jade Warlord Figurine
-						-- Pets
-						i(94295),	-- Primal Egg
+					i(90840, {	-- Marauder's Gleaming Sack of Gold
+						["sym"] = {
+							{ "select", "headerID", 95618 },
+							{ "pop" },
+						},
 					}),
-					i(90840, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Marauder's Gleaming Sack of Gold Pet Version -- Those Pets got removed, unknown when exactly.
-						i(44984),	-- Ammen Vale Lashling
-						i(10360),	-- Black Kingsnake
-						i(54436),	-- Blue Clockwork Rocket Bot
-						i(29960),	-- Captured Firefly
-						i(8491),	-- Cat Carrier (Black Tabby)
-						i(46398),	-- Cat Carrier (Calico Cat)
-						i(8487),	-- Cat Carrier (Orange Tabby)
-						i(8488),	-- Cat Carrier (Silver Tabby)
-						i(10822),	-- Dark Whelpling
-						i(44970),	-- Dun Morogh Cub
-						i(44973),	-- Durotar Scorpion
-						i(67282),	-- Elementium Geode
-						i(44974),	-- Elwynn Lamb
-						i(44982),	-- Enchanted Broom
-						i(64403),	-- Fox Kit
-						i(43698),	-- Giant Sewer Rat
-						i(29953),	-- Golden Dragonhawk Hatchling
-						i(48116),	-- Gundrak Hatchling
-						i(48118),	-- Leaping Hatchling
-						i(45002),	-- Mechanopeep
-						i(44980),	-- Mulgore Hatchling
-						i(48120),	-- Obsidian Hatchling
-						i(8496),	-- Parrot Cage (Cockatiel)
-						i(8492),	-- Parrot Cage (Green Wing Macaw)
-						i(8495),	-- Parrot Cage (Senegal)
-						i(48124),	-- Razormaw Hatchling
-						i(48126),	-- Razzashi Hatchling
-						i(69992),	-- Shimmering Wyrmling
-						i(44965),	-- Teldrassil Sproutling
-						i(69991),	-- Tiny Sporebat
-						i(44971),	-- Tirisfal Batling
-					})),
 					i(90410),	-- Cap of Wandering Pride
 					i(90413),	-- Crest of the Grand Warband
 					i(90416),	-- Crown of Ranging Invasion
@@ -651,95 +509,21 @@ _.Instances = { tier(MOP_TIER, {
 				},
 			}),
 			e(691, {	-- Sha of Anger
-				["isWeekly"] = true,
-				["questID"] = 32099,
-				["isRaid"] = true,
+				["crs"] = { 60491 },	-- Sha of Anger
 				["coord"] = { 53.53, 65.26, KUN_LAI_SUMMIT },
-				["maps"] = {	-- all Kun-Lai Summit maps
-					380,	-- Howlingwind Cavern
-					381,	-- Pranksters' Hollow
-					382,	-- Knucklethump Hole
-					383,	-- The Deeper (upper)
-					384,	-- The Deeper (lower)
-					385,	-- Tomb of Conquerors
-					386,	-- Ruins of Korune (Upper Floor)
-					387,	-- Ruins of Korune (Lower Floor)
-					434,	-- The Ancient Passage
-				},
-				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["creatureID"] = 60491,	-- Sha of Anger
+				["questID"] = 32099,
 				["g"] = {
 					ach(6480),	-- Settle Down, Bro
 					ach(6709),	-- Sha of Anger Guild Run
-					crit(5, {	-- Sha of Anger slain
-						["achievementID"] = 6926,	-- Tranquil Master
-					}),
 					-- Mounts, Caches, and Quest Items!
 					i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
 					i(89317),	-- Claw of Anger
-					i(90839, {	-- Cache of Sha-Touched Gold	-- TODO: should be symlink for duplicate rewards
-						i(86884),	-- Belt of Embodied Terror
-						i(86900),	-- Binder's Chain of Unending Summer
-						i(86850),	-- Darting Damselfly Cuffs
-						i(86844),	-- Gleaming Moth Cuffs
-						i(86895),	-- Healer's Belt of Final Winter
-						i(86846),	-- Inlaid Cricket Bracers
-						i(86896),	-- Invoker's Belt of Final Winter
-						i(86772),	-- Jade Bandit Figurine
-						i(86771),	-- Jade Charioteer Figurine
-						i(86774),	-- Jade Courtesan Figurine
-						i(86773),	-- Jade Magistrate Figurine
-						i(86775),	-- Jade Warlord Figurine
-						i(86847),	-- Jagged Hornet Bracers
-						i(86842),	-- Luminescent Firefly Wristguards
-						i(86902),	-- Mender's Girdle of Endless Spring
-						i(86904),	-- Patroller's Girdle of Endless Spring
-						i(86845),	-- Pearlescent Butterfly Wristbands
-						i(86849),	-- Plated Locust Bracers
-						i(86903),	-- Protector's Girdle of Endless Spring
-						i(86901),	-- Ranger's Chain of Unending Summer
-						i(86848),	-- Serrated Wasp Bracers
-						i(86841),	-- Shining Cicada Bracers
-						i(86843),	-- Smooth Beetle Wristbands
-						i(86897),	-- Sorcerer's Belt of Final Winter
-						i(86899),	-- Stalker's Cord of Eternal Autumn
-						i(86898),	-- Weaver's Cord of Eternal Autumn
-						i(94295),	-- Primal Egg
+					i(90839, {	-- Cache of Sha-Touched Gold
+						["sym"] = {
+							{ "select", "headerID", 95618 },
+							{ "pop" },
+						},
 					}),
-					i(90839, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Cache of Sha-Touched Gold Pet Version -- Those Pets got removed, unknown when exactly.
-						i(44984),	-- Ammen Vale Lashling
-						i(10360),	-- Black Kingsnake
-						i(54436),	-- Blue Clockwork Rocket Bot
-						i(29960),	-- Captured Firefly
-						i(8491),	-- Cat Carrier (Black Tabby)
-						i(46398),	-- Cat Carrier (Calico Cat)
-						i(8487),	-- Cat Carrier (Orange Tabby)
-						i(8488),	-- Cat Carrier (Silver Tabby)
-						i(10822),	-- Dark Whelpling
-						i(44970),	-- Dun Morogh Cub
-						i(44973),	-- Durotar Scorpion
-						i(67282),	-- Elementium Geode
-						i(44974),	-- Elwynn Lamb
-						i(44982),	-- Enchanted Broom
-						i(64403),	-- Fox Kit
-						i(43698),	-- Giant Sewer Rat
-						i(29953),	-- Golden Dragonhawk Hatchling
-						i(48116),	-- Gundrak Hatchling
-						i(48118),	-- Leaping Hatchling
-						i(45002),	-- Mechanopeep
-						i(44980),	-- Mulgore Hatchling
-						i(48120),	-- Obsidian Hatchling
-						i(8496),	-- Parrot Cage (Cockatiel)
-						i(8492),	-- Parrot Cage (Green Wing Macaw)
-						i(8495),	-- Parrot Cage (Senegal)
-						i(48124),	-- Razormaw Hatchling
-						i(48126),	-- Razzashi Hatchling
-						i(69992),	-- Shimmering Wyrmling
-						i(44965),	-- Teldrassil Sproutling
-						i(69991),	-- Tiny Sporebat
-						i(44971),	-- Tirisfal Batling
-					})),
-
 					-- Necks
 					i(84892),	-- Malevolent Gladiator's Choker of Accuracy
 					i(84891),	-- Malevolent Gladiator's Choker of Proficiency
@@ -880,20 +664,15 @@ _.Instances = { tier(MOP_TIER, {
 					i(84828),	-- Malevolent Gladiator's Signet of Cruelty
 				},
 			}),
-			n(-10061, {	-- The Four Celestials
-				["isWeekly"] = true,
-				["questID"] = 33117,
-				["maps"] = {	-- all Timeless Isle maps
-					555,	-- Cavern of Lost Spirits
-				},
-				["isRaid"] = true,
-				["coord"] = { 38.87, 55.29, TIMELESS_ISLE },
+			n(-10061, bubbleDown({ ["timeline"] = { ADDED_5_4_0 } }, {	-- The Four Celestials
 				["crs"] = {
 					71952,	-- Chi-Ji, The Red Crane
 					71954,	-- Niuzao, The Black Ox
 					71953,	-- Xuen, The White Tiger
 					71955,	-- Yu'lon, The Jade Serpent
 				},
+				["coord"] = { 38.87, 55.29, TIMELESS_ISLE },
+				["questID"] = 33117,
 				["g"] = {
 					ach(8535, {	-- Celestial Challenge
 						crit(1, {	-- Chi-Ji slain
@@ -1231,11 +1010,12 @@ _.Instances = { tier(MOP_TIER, {
 					i(102701),	-- Prideful Gladiator's Signet of Cruelty
 					i(103517),	-- Prideful Gladiator's Signet of Cruelty
 				},
-			}),
-		},
+			})),
+		}),
 	}),
-})};
-root(ROOTS.HiddenQuestTriggers,{
+})));
+
+root(ROOTS.HiddenQuestTriggers, {
 	tier(MOP_TIER, {
 		q(33226),	-- Short-Supply Reward - Celestials bonus roll
 		q(32923),	-- Short-Supply Reward - Galleon bonus roll

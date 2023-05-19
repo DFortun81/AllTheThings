@@ -1862,7 +1862,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 								i(105825),	-- Turtleshell Greatcloak
 								i(105822),	-- Zoid's Molten Gauntlets
 								-- Pets / Mounts
-								i(94295),	-- Primal Egg
 								i(44984),	-- Ammen Vale Lashling
 								i(54436),	-- Blue Clockwork Rocket Bot
 								i(44970),	-- Dun Morogh Cub

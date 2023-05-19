@@ -1,12 +1,10 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
-root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.3.5.25727" } }, {
+root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 	n(-93, {	-- Silithus (The Wound)
 		["description"] = "The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",
 		["maps"] = { SILITHUS },
-		["lvl"] = 110,
 		["groups"] = {
 			n(QUESTS, {
 				q(50373, {	-- A Recent Arrival

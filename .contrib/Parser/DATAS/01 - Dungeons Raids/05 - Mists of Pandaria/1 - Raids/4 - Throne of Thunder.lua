@@ -139,7 +139,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 				i(97153, {	-- Spoils of the Thunder King
 					["description"] = "This bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
 					["g"] = {
-						i(94295),	-- Primal Egg
 						i(95215),	-- Abandoned Zandalari Bucklebreaker
 						i(95202),	-- Necklace of the Terra-Cotta Archer
 						i(95203),	-- Necklace of the Terra-Cotta Invoker
@@ -238,30 +237,14 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
 			d(7, {	-- LFR
-				i(95343, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 } }, {	-- Treasures of the Thunder
+				i(95343, {	-- Treasures of the Thunder
 					["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
-					["g"] = {
-						i(94295),	-- Primal Egg
-						i(95961),	-- Abandoned Zandalari Firecord
-						i(95962),	-- Abandoned Zandalari Shadowgirdle
-						i(95970),	-- Abandoned Zandalari Silentbelt
-						i(95971),	-- Abandoned Zandalari Moonstrap
-						i(95972),	-- Abandoned Zandalarai Arrowlinks
-						i(95973),	-- Abandoned Zandarlari Waterchain
-						i(95974),	-- Abandoned Zandalari Greatbelt
-						i(95975),	-- Abandoned Zandalari Goreplate
-						i(95976),	-- Abandoned Zandalari Bucklebreaker
-						i(95979),	-- Columnbreaker Stompers
-						i(95966),	-- Deeproot Treads
-						i(95965),	-- Home-Warding Slippers
-						i(95978),	-- Locksmasher Greaves
-						i(95960),	-- Scalehide Spurs
-						i(95963),	-- Silentflame Sandals
-						i(95959),	-- Spiderweb Tabi
-						i(95967),	-- Spiritbound Boots
-						i(95968),	-- Vaultwalker Sabatons
+					["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 },
+					["sym"] = {
+						{ "select", "headerID", 95343 },
+						{ "pop" },
 					},
-				})),
+				}),
 				n(COMMON_BOSS_DROPS, {
 					["description"] = "These can drop from any of the bosses other than Ra-den.",
 					["crs"] = {

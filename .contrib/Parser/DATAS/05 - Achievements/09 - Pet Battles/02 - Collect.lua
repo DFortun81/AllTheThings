@@ -400,20 +400,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(14),		-- Corrupted Blood (Dragon Soul - Greater Cache of the Aspects from Spine of Deathwing)
 			crit(15),		-- Unstable Tendril (Dragon Soul - Elementium Fragment from Madness of Deathwing)
 		}),
-		ach(13469, {	-- Raiding with Leashes VI: Pets of Pandaria
-			i(167057),	-- Happiness (PET!)
-			crit(1),	-- Stoneclaw			( MSV  — The Stone Guard )
-			crit(2),	-- Wayward Spirit		( MSV  — Gara'jal the Spiritbinder )
-			crit(3),	-- Comet				( MSV  — Elegon )
-			crit(4),	-- Baoh-Xi				( MSV  — Will of the Emperor )
-			crit(5),	-- Azure Windseeker		( ToES — Tsulong )
-			crit(6),	-- Spirit of the Spring	( ToES — Lei Shi )
-			crit(7),	-- Kor'thik Swarmling	( HoF  — Imperial Vizier Zor'lok )
-			crit(8),	-- Amberglow Stinger	( HoF  — Blade Lord Ta'yak )
-			crit(9),	-- Spawn of Garalon		( HoF  — Garalon )
-			crit(10),	-- Living Amber			( HoF  — Amber-Shaper Un'sok )
-			crit(11),	-- Ravenous Prideling	( HoF  — Grand Empress Shek'zeer )
-		}),
 		petbattle(ach(14867, {	-- Shadowlands Safari
 			crit(1),		-- Animared Cruor
 			crit(2),		-- Bleak Skitterer

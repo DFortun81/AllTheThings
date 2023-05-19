@@ -73,73 +73,14 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				["description"] = "Loot from this LFR is NOT tradeable to others in group.",
 				["ignoreBonus"] = true,
 				["g"] = {
-					i(95619, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 } }, {	-- Amber Encased Treasure Pouch
+					i(95619, {	-- Amber Encased Treasure Pouch
 						["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
-						["g"] = {
-							i(86884),	-- Belt of Embodied Terror
-							i(86900),	-- Binder's Chain of Unending Summer
-							i(86850),	-- Darting Damselfly Cuffs
-							i(86844),	-- Gleaming Moth Cuffs
-							i(86895),	-- Healer's Belt of Final Winter
-							i(86846),	-- Inlaid Cricket Bracers
-							i(86896),	-- Invoker's Belt of Final Winter
-							i(86772),	-- Jade Bandit Figurine
-							i(86771),	-- Jade Charioteer Figurine
-							i(86774),	-- Jade Courtesan Figurine
-							i(86773),	-- Jade Magistrate Figurine
-							i(86775),	-- Jade Warlord Figurine
-							i(86847),	-- Jagged Hornet Bracers
-							i(86842),	-- Luminescent Firefly Wristguards
-							i(86902),	-- Mender's Girdle of Endless Spring
-							i(86904),	-- Patroller's Girdle of Endless Spring
-							i(86845),	-- Pearlescent Butterfly Wristbands
-							i(86849),	-- Plated Locust Bracers
-							i(86903),	-- Protector's Girdle of Endless Spring
-							i(86901),	-- Ranger's Chain of Unending Summer
-							i(86848),	-- Serrated Wasp Bracers
-							i(86841),	-- Shining Cicada Bracers
-							i(86843),	-- Smooth Beetle Wristbands
-							i(86897),	-- Sorcerer's Belt of Final Winter
-							i(86899),	-- Stalker's Cord of Eternal Autumn
-							i(86898),	-- Weaver's Cord of Eternal Autumn
-							i(44984),	-- Ammen Vale Lashling
-							i(54436),	-- Blue Clockwork Rocket Bot
-							i(44970),	-- Dun Morogh Cub
-							i(44973),	-- Durotar Scorpion
-							i(67282),	-- Elementium Geode
-							i(44974),	-- Elwynn Lamb
-							i(44982),	-- Enchanted Broom
-							i(64403),	-- Fox Kit
-							i(43698),	-- Giant Sewer Rat
-							i(45002),	-- Mechanopeep
-							i(44980),	-- Mulgore Hatchling
-							i(64403),	-- Fox Kit
-							i(43698),	-- Giant Sewer Rat
-							i(45002),	-- Mechanopeep
-							i(44980),	-- Mulgore Hatchling
-							i(45606),	-- Sen'jin Fetish
-							i(69992),	-- Shimmering Wyrmling
-							i(44965),	-- Teldrassil Sproutling
-							i(69991),	-- Tiny Sporebat
-							i(44971),	-- Tirisfal Batling
-							i(10360),	-- Black Kingsnake
-							i(29960),	-- Captured Firefly
-							i(8491),	-- Cat Carrier (Black Tabby)
-							i(46398),	-- Cat Carrier (Calico Cat)
-							i(8487),	-- Cat Carrier (Orange Tabby)
-							i(8488),	-- Cat Carrier (Silver Tabby)
-							i(10822),	-- Dark Whelpling
-							i(29953),	-- Golden Dragonhawk Hatchling
-							i(48116),	-- Gundrak Hatchling
-							i(48118),	-- Leaping Hatchling
-							i(48120),	-- Obsidian Hatchling
-							i(8496),	-- Parrot Cage (Cockatiel)
-							i(8492),	-- Parrot Cage (Green Wing Macaw)
-							i(8495),	-- Parrot Cage (Senegal)
-							i(48124),	-- Razormaw Hatchling
-							i(48126),	-- Razzashi Hatchling
+						["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
+						["sym"] = {
+							{ "select", "headerID", 95618 },
+							{ "pop" },
 						},
-					})),
+					}),
 					header(HEADERS.Achievement, 6718, {	-- The Dread Approach
 						e(745, {	-- Imperial Vizier Zor'lok
 							["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
@@ -160,7 +101,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 								i(87823),	-- Zor'lok's Fizzing Chestguard
 							},
 						}),
-						e(744, {  -- Blade Lord Ta'yak
+						e(744, {	-- Blade Lord Ta'yak
 							["crs"] = { 62543 },	-- Blade Lord Ta'yak
 							["g"] = {
 								i(86825),	-- Boots of the Blowing Wind
@@ -313,7 +254,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 							i(87824),	-- Zor'lok's Fizzing Chestguard
 						},
 					}),
-					e(744, {  -- Blade Lord Ta'yak
+					e(744, {	-- Blade Lord Ta'yak
 						["crs"] = { 62543 },	-- Blade Lord Ta'yak
 						["g"] = {
 							ach(6936),	-- Candle in the Wind
@@ -474,7 +415,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 							i(87822),	-- Zor'lok's Fizzing Chestguard
 						},
 					}),
-					e(744, {  -- Blade Lord Ta'yak
+					e(744, {	-- Blade Lord Ta'yak
 						["crs"] = { 62543 },	-- Blade Lord Ta'yak
 						["g"] = {
 							ach(6726),	-- Heroic: Blade Lord Ta'yak
