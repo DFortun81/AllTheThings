@@ -2,26 +2,21 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(MOP_TIER, {
+_.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(302, {	-- Stormstout Brewery
-		["lvl"] = 85,
-		["maps"] = {
-			439,
-			440,
-			441,
-			442,
-		},
+		["coord"] = { 36, 69, VALLEY_OF_THE_FOUR_WINDS },
+		["maps"] = { 439, 440, 441, 442 },
 		["g"] = {
 			n(QUESTS, {
 				q(31324, {	-- Family Secrets
 					["provider"] = { "n", 59822 },	-- Auntie Stormstout
 					["sourceQuest"] = 30085,	-- Into the Brewery
 					["g"] = {
-						i(87310),	-- Stormstout Drink Napkin
-						i(87311),	-- Used Bar Rag
 						i(87312),	-- Auntie's Cooking Apron
-						i(87313),	-- Tasting Room Tablecloth
 						i(87314),	-- Blackened Chain Cloak
+						i(87310),	-- Stormstout Drink Napkin
+						i(87313),	-- Tasting Room Tablecloth
+						i(87311),	-- Used Bar Rag
 					},
 				}),
 				q(30085, {	-- Into the Brewery
@@ -34,15 +29,15 @@ _.Instances = { tier(MOP_TIER, {
 					["provider"] = { "n", 59704 },	-- Chen Stormstout
 					["sourceQuest"] = 30085,	-- Into the Brewery
 					["g"] = {
-						i(87301),	-- Master Brewer's Gloves
-						i(87302),	-- Barrel Stacker's Mitts
-						i(87303),	-- Wine Tasting Gloves
-						i(87304),	-- Uncorking Gloves
 						i(87305),	-- Barrel-Aged Gloves
-						i(87306),	-- Virmen Exterminator Gloves
-						i(87307),	-- Vegetable Chopping Handguards
-						i(87308),	-- Partycrasher's Gauntlets
+						i(87302),	-- Barrel Stacker's Mitts
+						i(87301),	-- Master Brewer's Gloves
 						i(87309),	-- Handguards of Sturdy Constitution
+						i(87308),	-- Partycrasher's Gauntlets
+						i(87304),	-- Uncorking Gloves
+						i(87307),	-- Vegetable Chopping Handguards
+						i(87306),	-- Virmen Exterminator Gloves
+						i(87303),	-- Wine Tasting Gloves
 					},
 				}),
 			}),
@@ -52,50 +47,122 @@ _.Instances = { tier(MOP_TIER, {
 					i(86562),	-- Hopling (PET!)
 				}),
 				cr(56637, e(668, {	-- Ook-Ook
-					i(144084),	-- Ook's Hozen Slicer
-					i(143957),	-- Nimbletoe Chestguard
-					i(144087),	-- Bracers of Displaced Air
-					i(143989),	-- Barreldodger Boots
-					i(144119),	-- Empty Fruit Barrel
-					un(REMOVED_FROM_GAME, i(80892)),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(80896)),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(80897)),	-- Bracers of Displaced Air (7.1 - Removed from Game!)
+					-- Available
+					i(143989, { -- Barreldodger Boots
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(144087, { -- Bracers of Displaced Air
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(144119, { -- Empty Fruit Barrel
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(143957, { -- Nimbletoe Chestguard
+						["timeline"] = { ADDED_7_1_5 },
+						}),
+					i(144084, { -- Ook's Hozen Slicer
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+
+					-- Removed
+					i(80897, { -- Bracers of Displaced Air
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
+					i(80896, { -- Nimbletoe Chestguard
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
+					i(80892, { -- Ook's Hozen Slicer
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
 				})),
 				cr(56717, e(669, {	-- Hoptallus
-					i(144092),	-- Bottle of Potent Potables
-					i(144121),	-- Cloak of Hidden Flasks
-					i(144088),	-- Bubble-Breaker Bracers
-					i(144120),	-- Belt of Brazen Inebriation
-					i(143975),	-- Hopping Mad Leggings
-					un(REMOVED_FROM_GAME, i(80893)),	-- Bottle of Potent Potables (7.1 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(80899)),	-- Bubble-Breaker Bracers (7.1 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(80898)),	-- Hopping Mad Leggings (7.1 - Removed from Game!)
+					-- Available
+					i(144120, { -- Belt of Brazen Inebriation
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(144092, { -- Bottle of Potent Potables
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(144088, { -- Bubble-Breaker Bracers
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(144121, { -- Cloak of Hidden Flasks
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(143975, { -- Hopping Mad Leggings
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+
+					-- Removed
+					i(80893, { -- Bottle of Potent Potables
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
+					i(80899, { -- Bubble-Breaker Bracers
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
+					i(80898, { -- Hopping Mad Leggings
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
 				})),
 				cr(59479, e(670, {	-- Yan-Zhu the Uncasked
+					-- Available
 					ach(6457),	-- Stormstout Brewery
-					i(144124),	-- Wort Stirring Rod
+					i(144125, { -- Alemental Seal
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(144122, { -- Carbonic Carbuncle
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(144082, { -- Fermenting Belt
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(143969, { -- Fizzy Spaulders
+						["timeline"] = { ADDED_7_1_5 },
+					}),
 					i(144085),	-- Gao's Keg Tapper
 					un(NEVER_IMPLEMENTED, i(144217)),	-- Gao's Keg Tapper (unconfirmed)
 					-- Looks like while they updated the items in 7.1, they continued to use the old epic version
-					i(87545),	-- Inelava, Spirit of Inebriation — dropped for Carbion in Normal difficulty as well
-					i(144089),	-- Yan-Zhu's Pressure Valve
-					i(143969),	-- Fizzy Spaulders
-					i(143958),	-- Uncasked Chestguard
-					i(144082),	-- Fermenting Belt
-					i(143976),	-- Sudsy Legplates
-					i(144125),	-- Alemental Seal
-					i(144123),	-- Lime-Rimmed Signet
-					i(144122),	-- Carbonic Carbuncle
-					un(REMOVED_FROM_GAME, i(80894)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(80895)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(80900)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(80902)),	-- Uncasked Chestguard (7.1 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(80903)),	-- Fermenting Belt (7.1 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(80901)),	-- Sudsy Legplates (7.1 - Removed from Game!)
+					i(87545, { -- Inelava, Spirit of Inebriation — dropped for Carbion in Normal difficulty as well
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(144123, { -- Lime-Rimmed Signet
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(143976, { -- Sudsy Legplates
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(143958, { -- Uncasked Chestguard
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(144124, { -- Wort Stirring Rod
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+					i(144089, { -- Yan-Zhu's Pressure Valve
+						["timeline"] = { ADDED_7_1_5 },
+					}),
+
+					-- Removed
+					i(80894, { -- Gao's Keg Tapper
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
+					i(80895, { -- Yan-Zhu's Pressure Valve
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
+					i(80900, { -- Fizzy Spaulders
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
+					i(80902, { -- Uncasked Chestguard
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
+					i(80903, { -- Fermenting Belt
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
+					i(80901, { -- Sudsy Legplates
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+					}),
 				})),
 			}),
 			d(HEROIC_DUNGEON, {
-				["lvl"] = 90,
 				["g"] = {
 					ach(6420),	-- Hopocalypse Now!
 					ach(6400),	-- How Did He Get Up There?
@@ -103,54 +170,137 @@ _.Instances = { tier(MOP_TIER, {
 						i(86562),	-- Hopling (PET!)
 					}),
 					cr(56637, e(668, {	-- Ook-Ook
+						-- Available
 						ach(6089),	-- Keep Rollin' Rollin' Rollin'
-						i(144084),	-- Ook's Hozen Slicer
-						i(143957),	-- Nimbletoe Chestguard
-						i(144087),	-- Bracers of Displaced Air
-						i(143989),	-- Barreldodger Boots
-						i(144119),	-- Empty Fruit Barrel
-						un(REMOVED_FROM_GAME, i(81061)),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81080)),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81064)),	-- Bracers of Displaced Air (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81134)),	-- Barreldodger Boots (7.1 - Removed from Game!)
+						i(143989, { -- Barreldodger Boots
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144087, { -- Bracers of Displaced Air
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144119, { -- Empty Fruit Barrel
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143957, { -- Nimbletoe Chestguard
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144084, { -- Ook's Hozen Slicer
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+
+						-- Removed
+						i(81134, { -- Barreldodger Boots
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81064, { -- Bracers of Displaced Air
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81080, { -- Nimbletoe Chestguard
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81061, { -- Ook's Hozen Slicer
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
 					})),
 					cr(56717, e(669, {	-- Hoptallus
-						i(144092),	-- Bottle of Potent Potables
-						i(144121),	-- Cloak of Hidden Flasks
-						i(144088),	-- Bubble-Breaker Bracers
-						i(144120),	-- Belt of Brazen Inebriation
-						i(143975),	-- Hopping Mad Leggings
-						un(REMOVED_FROM_GAME, i(81076)),	-- Bottle of Potent Potables (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81136)),	-- Cloak of Hidden Flasks (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81065)),	-- Bubble-Breaker Bracers (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81135)),	-- Belt of Brazen Inebriation (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81077)),	-- Hopping Mad Leggings (7.1 - Removed from Game!)
+						-- Available
+						i(144120, { -- Belt of Brazen Inebriation
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144092, { -- Bottle of Potent Potables
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144088, { -- Bubble-Breaker Bracers
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144121, { -- Cloak of Hidden Flasks
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143975, { -- Hopping Mad Leggings
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+
+						-- Removed
+						i(81135, { -- Belt of Brazen Inebriation
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81076, { -- Bottle of Potent Potables
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81065, { -- Bubble-Breaker Bracers
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81136, { -- Cloak of Hidden Flasks
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81077, { -- Hopping Mad Leggings
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
 					})),
 					cr(59479, e(670, {	-- Yan-Zhu the Uncasked
+						-- Available
 						ach(6456),	-- Heroic: Stormstout Brewery
 						ach(6666),	-- Heroic: Stormstout Brewery Guild Run
 						ach(6457),	-- Stormstout Brewery
-						i(144124),	-- Wort Stirring Rod
-						i(144085),	-- Gao's Keg Tapper
+						i(144125, { -- Alemental Seal
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144122, { -- Carbonic Carbuncle
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144082, { -- Fermenting Belt
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143969, { -- Fizzy Spaulders
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144085, { -- Gao's Keg Tapper
+							["timeline"] = { ADDED_7_1_5 },
+						}),
 						i(144217, {	-- Inelava, Spirit of Inebriation
 							["timeline"] = { "created 7.1.5" },	-- don't think this has technically ever existed even though it shows in dungeon journal
 						}),
-						i(87545),	-- Inelava, Spirit of Inebriation — this specific itemID dropped for a discord user on May 4th, 2020 (a screenshot was provided).  possible that both versions drop?
-						i(144089),	-- Yan-Zhu's Pressure Valve
-						i(143969),	-- Fizzy Spaulders
-						i(143958),	-- Uncasked Chestguard
-						i(144082),	-- Fermenting Belt
-						i(143976),	-- Sudsy Legplates
-						i(144125),	-- Alemental Seal
-						i(144123),	-- Lime-Rimmed Signet
-						i(144122),	-- Carbonic Carbuncle
-						un(REMOVED_FROM_GAME, i(81140)),	-- Wort Stirring Rod (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81062)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81066)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81068)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81081)),	-- Uncasked Chestguard (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81059)),	-- Fermenting Belt (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(81078)),	-- Sudsy Legplates (7.1 - Removed from Game!)
+						i(87545, { -- Inelava, Spirit of Inebriation — this specific itemID dropped for a discord user on May 4th, 2020 (a screenshot was provided).  possible that both versions drop?
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144123, { -- Lime-Rimmed Signet
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143976, { -- Sudsy Legplates
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143958, { -- Uncasked Chestguard
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144124, { -- Wort Stirring Rod
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144089, { -- Yan-Zhu's Pressure Valve
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+
+						-- Removed
+						i(81059, { -- Fermenting Belt
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81068, { -- Fizzy Spaulders
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81062, { -- Gao's Keg Tapper
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81078, { -- Sudsy Legplates
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81081, { -- Uncasked Chestguard
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81140, { -- Wort Stirring Rod
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81066, { -- Yan-Zhu's Pressure Valve
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
 					})),
 				},
 			}),
@@ -163,7 +313,7 @@ _.Instances = { tier(MOP_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}))};
 root(ROOTS.HiddenQuestTriggers, {
 	tier(MOP_TIER, {
 		q(31621),	-- Stormstout Brewery Challenge Mode - Bronze Addition (Nth)

@@ -281,8 +281,8 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 							ach(6766),	-- Heroic: Mogu'shan Palace Guild Run
 							ach(6736),	-- What Does This Button Do?
 							i(144151, { -- Axebreaker Gauntlets
-							["timeline"] = { ADDED_7_1_5 },
-						}),
+								["timeline"] = { ADDED_7_1_5 },
+							}),
 							i(144152, { -- Blade Trap Signet
 								["timeline"] = { ADDED_7_1_5 },
 							}),
