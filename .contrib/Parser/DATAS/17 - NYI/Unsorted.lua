@@ -428,10 +428,8 @@ root(ROOTS.Unsorted, {
 				i(204433),	-- Everburning Fireshard
 				i(204434),	-- Lava-Quenched Blade
 				i(204435),	-- Obsidian Tablet
-				i(204436),	-- Chipped Horn Signet
 				i(204637),	-- Boulder Chunk
 				i(201956),	-- [DNT] Snakey Eyes
-				i(204794),	-- Whelkshell Crystals
 				i(204796),	-- Deepflayer Dust
 				i(204800),	-- Scaly Stone Hide
 				i(204801),	-- Gelcap Spores

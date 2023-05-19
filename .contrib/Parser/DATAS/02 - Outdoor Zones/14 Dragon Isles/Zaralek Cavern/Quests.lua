@@ -819,10 +819,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["classes"] = { EVOKER },
 			}),
 			q(73081, {	-- Stress Fractures
-				["sourceQuests"] = {
-					73077,	-- This Might Sting
-					75145,	-- In the Wake of the Ashes
-				},
+				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				["provider"] = { "n", 203233 },	-- Marithos
 				["coord"] = { 56.4, 57.0, ZARALEK_CAVERN },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },

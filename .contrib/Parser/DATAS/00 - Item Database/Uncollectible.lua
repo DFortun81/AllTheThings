@@ -690,6 +690,7 @@ i(204877);	-- 'The Resting Blade'
 i(203458);	-- Black Dragonscale Robes
 i(205031);	-- Broodmother Venom
 i(204833);	-- Buzzing Orb Core
+i(204436);	-- Chipped Horn Signet
 i(205030);	-- Crawler Venom
 i(203682);	-- Darkened Elemental Core
 i(203391);	-- Dented Dwarven Pocketwatch
@@ -708,12 +709,12 @@ i(205179);	-- Glimmerfish Scale
 i(204067);	-- Glowing Crystal
 i(204694);	-- Greater Flamesight Rune
 i(203388);	-- Gunky Insignia
-i(203456);	-- Obsidian Prayer Beads
-i(203392);	-- Old Mirror Shard
 i(204070);	-- Magma Crystal
 i(202868);	-- Mender's Signal
 i(204792);	-- Nightlight Conkerbell Sample
+i(203456);	-- Obsidian Prayer Beads
 i(203387);	-- Oddly Familiar Training Weapon
+i(203392);	-- Old Mirror Shard
 i(204329);	-- Petrified Spider Leg
 i(202180);	-- Pipsee Cheese Snack
 i(204088);	-- Quartzite Spore Bile
@@ -727,6 +728,7 @@ i(204713);	-- Sundered Flame Expedition Notes
 i(203653);	-- Vacant Elemental Core
 i(203012);	-- Viridian Heartcrystal
 i(203457);	-- Volcanic Herb Sachet
+i(204794);	-- Whelkshell Crystals
 i(204085);	-- Zaqali Dragonslayer's Spear
 i(203654);	-- Zaqali Flame Totem
 i(204817);	-- Underlight Cocoon Fibers
