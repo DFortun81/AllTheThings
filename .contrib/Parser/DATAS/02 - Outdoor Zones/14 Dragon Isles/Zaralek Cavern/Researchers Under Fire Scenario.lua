@@ -21,9 +21,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				ach(18209),	-- Nothing Stops the Research
 			}),
 			n(RARES, {
-				n(203355),	-- Captain Reykal
-				n(203834),	-- Contaminated Titan Watcher
-				n(202318),	-- Response Team Watcher
+				n(203355, {	-- Captain Reykal
+					["coord"] = { 49.2, 57.6, ZARALEK_CAVERN },
+					["questID"] = 75943,
+					["isWeekly"] = true,
+				}),
+				n(203834, {	-- Contaminated Titan Watcher
+					["coord"] = { 45.0, 62.0, ZARALEK_CAVERN },
+					["questID"] = 75944,
+					["isWeekly"] = true,
+				}),
+				n(202318, {	-- Response Team Watcher
+					["coord"] = { 47.8, 63.8, ZARALEK_CAVERN },
+					["questID"] = 75945,
+					["isWeekly"] = true,
+				}),
 			}),
 			n(QUESTS, {
 				q(74906),	-- Researchers Under Fire (Keeps unflagging? Might use as header?)
@@ -43,11 +55,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(RESEARCHERS, {
-		-- Event rares --
-		q(75943),	-- After Captain Reykal kill
-		q(75944),	-- After Contaminated Titan Watcher kill
-		q(75945),	-- After Response Team Watcher kill
-
 		-- Event reward hqts? --
 		q(74905),	-- At the end of event 'Titan Lockdown', unflagged after bag hqt
 		q(75628),	-- pop when Appreciative Researcher's Gift was awarded

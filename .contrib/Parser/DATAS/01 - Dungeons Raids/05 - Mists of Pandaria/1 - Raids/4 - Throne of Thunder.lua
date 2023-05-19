@@ -148,12 +148,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 				}),
 			}),
 			n(DROPS, {
-				i(95059, {	-- Clutch of Ji-Kun (MOUNT!)
-					["crs"] = { 69712 },	-- Ji-Kun
-				}),
-				i(93666, {	-- Spawn of Horridon (MOUNT!)
-					["crs"] = { 68476 },	-- Horridon
-				}),
 				i(94574, {	-- Pygmy Direhorn (PET!)
 					["crs"] = { 68476 },	-- Horridon
 				}),
@@ -732,6 +726,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 68476 },	-- Horridon
 						["g"] = {
 							ach(8038),	-- Cretaceous Collector
+							i(93666),	-- Spawn of Horridon (MOUNT!)
 							i(94751),	-- Armplates of the Vanquished Abomination
 							i(94743),	-- Bindings of Multiplicative Strikes
 							i(94747),	-- Bloodlord's Bloodsoaked Legplates
@@ -934,6 +929,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 69712 },	-- Ji-Kun
 						["g"] = {
 							ach(8097),	-- Soft Hands
+							i(95059),	-- Clutch of Ji-Kun (MOUNT!)
 							i(95576),	-- Leggings of the Crackling Conqueror
 							i(95581),	-- Leggings of the Crackling Protector
 							i(95572),	-- Leggings of the Crackling Vanquisher
@@ -1451,6 +1447,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 68476 },	-- Horridon
 						["g"] = {
 							ach(8057),	-- Heroic: Horridon
+							i(93666),	-- Spawn of Horridon (MOUNT!)
 							i(96408),	-- Armplates of the Vanquished Abomination
 							i(96392),	-- Bindings of Multiplicative Strikes
 							i(96395),	-- Bloodlord's Bloodsoaked Legplates
@@ -1645,6 +1642,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						["crs"] = { 69712 },	-- Ji-Kun
 						["g"] = {
 							ach(8061),	-- Heroic: Ji-Kun
+							i(95059),	-- Clutch of Ji-Kun (MOUNT!)
 							i(96632),	-- Leggings of the Crackling Conqueror
 							i(96633),	-- Leggings of the Crackling Protector
 							i(96631),	-- Leggings of the Crackling Vanquisher
