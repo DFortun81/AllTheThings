@@ -47,7 +47,7 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 		i(93669, {	-- Gusting Grimoire (PET!)
 			["timeline"] = { "added 5.2.0.16408" },
 		}),
-		i(23713, {	-- Hippogryph Hatchling
+		i(23713, {	-- Hippogryph Hatchling (PET!)
 			["timeline"] = { "added 2.0.0.5462" },
 		}),
 		i(68840, {	-- Landro's Lichling (PET!)

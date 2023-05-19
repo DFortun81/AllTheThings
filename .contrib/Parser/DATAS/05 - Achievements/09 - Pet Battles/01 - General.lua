@@ -160,7 +160,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(5),	-- Pet Battle Challenge: Blackrock Depths
 		})),
 		petbattle(ach(7521,  {	-- Time to Open a Pet Store [400)*
-			i(89686),	-- Jade Tentacle
+			i(89686),	-- Jade Tentacle (PET!)
 			ach(6600),	-- Ultimate Trainer [300)
 			ach(7483),	-- Battle Master [200)
 			ach(7482),	-- Trainer Extraordinaire [100)

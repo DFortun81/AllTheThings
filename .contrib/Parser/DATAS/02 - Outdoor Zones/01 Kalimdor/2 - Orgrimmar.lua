@@ -3056,7 +3056,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.2.0.14133" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(72045, {	-- Horde Balloon
+						i(72045, {	-- Horde Balloon (PET!)
 							["timeline"] = { "added 4.2.0.14133" },
 						}),
 					},

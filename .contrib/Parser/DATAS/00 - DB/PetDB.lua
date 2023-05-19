@@ -29,19 +29,6 @@ end
 --------------
 -- UNSORTED --
 --------------
-i(180034, 2888);	-- Glimr's Cracked Egg (Glimr)
-i(142089, 1958);	-- Glittering Ball of Yarn (Sanctum Cub)
-i(23713, 130);	-- Hippogryph Hatchling
-i(122116, 1635);	-- Holy Chime (K'ute)
-i(72045, 332);	-- Horde Balloon
-i(70140, 317);	-- Hyjal Bear Cub
-i(88148, 792);	-- Jade Crane Chick
-i(82774, 845);	-- Jade Owl
-i(89686, 856);	-- Jade Tentacle
-i(46894, 231);	-- Jade Tiger
-i(21308, 118);	-- Jingling Bell (Winter Reindeer)
-i(141894, 1940);	-- Knight-Captain Murky
-i(141895, 1939);	-- Legionnaire Murky
 i(136914, 1808);	-- Leyline Broodling
 i(71033, 320);	-- Lil' Tarecgosa
 i(142084, 1953);	-- Magnataur Hunting Horn (Snobold Runt)
@@ -120,6 +107,7 @@ i(21277, 116);		-- Tranquil Mechanical Yeti
 i(11026, 65);		-- Tree Frog
 i(10393, 55);		-- Undercity Cockroach
 i(8489, 46);		-- White Kitten
+i(21308, 118);		-- Winter Reindeer
 i(11027, 64);		-- Wood Frog
 i(12264, 89);		-- Worg Pup
 i(13582, 94);		-- Zergling
@@ -137,6 +125,10 @@ i(19054, 758);	-- Tiny Red Dragon
 -- NPC --
 n(7554, 69);	-- Snowy Owl
 
+-----------------
+-- PATCH 2.0.0 --
+-----------------
+i(23713, 130);	-- Hippogryph Hatchling
 
 -----------------
 -- PATCH 2.0.1 --
@@ -376,6 +368,7 @@ i(65363, 282);	-- Guild Herald (Alliance)
 i(65364, 283);	-- Guild Herald (Horde)
 i(65361, 280);	-- Guild Page (Alliance)
 i(65362, 281);	-- Guild Page (Horde)
+i(46894, 231);	-- Jade Tiger
 i(67128, 285);	-- Landro's Lil' XT
 i(62540, 268);	-- Lil' Deathwing
 i(68385, 297);	-- Lil' Ragnaros
@@ -420,6 +413,8 @@ i(69239, 306);	-- Winterspring Cub
 i(72042, 331);	-- Alliance Balloon
 i(71387, 325);	-- Brilliant Kaliri
 i(70160, 318);	-- Crimson Lasher
+i(72045, 332);	-- Horde Balloon
+i(70140, 317);	-- Hyjal Bear Cub
 
 -----------------
 -- PATCH 4.2.2 --
@@ -458,7 +453,8 @@ i(76062, 346);	-- Fetish Shaman
 i(84105, 847);	-- Fishy
 i(86564, 834);	-- Grinder
 i(86562, 835);	-- Hopling
-i(46894, 231);	-- Jade Tiger
+i(88148, 792);	-- Jade Crane Chick
+i(82774, 845);	-- Jade Owl
 i(85871, 671);	-- Lucky Quilen Cub
 i(89587, 381);	-- Porcupette
 i(72153, 665);	-- Sand Scarab
@@ -485,6 +481,7 @@ n(61367, 418);	-- Water Snake
 -----------------
 -- ITEM --
 i(89368, 849);	-- Chi-Ji Kite
+i(89686, 856);	-- Jade Tentacle
 i(89736, 855);	-- Venus
 i(89367, 850);	-- Yu'lon Kite
 
@@ -730,6 +727,7 @@ i(122108, 1626);	-- Fragment of Suffering
 i(122109, 1627);	-- Fragment of Desire
 i(122110, 1628);	-- Sister of Temptation
 i(122111, 1629);	-- Stinkrot
+i(122116, 1635);	-- K'ute
 i(122112, 1631);	-- Hyjal Wisp
 i(122113, 1632);	-- Sunblade Micro-Defender
 i(122114, 1633);	-- Chaos Pup
@@ -891,6 +889,9 @@ i(142379, 1978);	-- Dutiful Squire
 i(142092, 1961);	-- G0-R41-0N Ultratonk
 i(141714, 1949);	-- Igneous Flameling
 i(142087, 1956);	-- Ironbound Proto-Whelp
+i(141894, 1940);	-- Knight-Captain Murky
+i(141895, 1939);	-- Legionnaire Murky
+i(142089, 1958);	-- Sanctum Cub
 i(142091, 1960);	-- Snaplasher
 i(142099, 1968);	-- Wicked Soul
 -- QUEST? --
@@ -1426,6 +1427,7 @@ i(183192, 3032);	-- Frenzied Mawrat
 i(182661, 3016);	-- Fun Guss
 i(180638, 2913);	-- Fuzzy Shimmermoth
 i(180866, 2938);	-- Gilded Wader
+i(180034, 2888);	-- Glimr
 i(180634, 2917);	-- Gloober, as G'huun
 i(180812, 2925);	-- Golden Cloudfeather
 i(180857, 2934);	-- Goldenpaw Kit

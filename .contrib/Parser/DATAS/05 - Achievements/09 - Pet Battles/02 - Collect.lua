@@ -349,7 +349,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(10),		-- Phoenix Hawk Hatchling (The Eye - Al'ar)
 		}),
 		ach(9824, {		-- Raiding with Leashes III: Drinkin' From the Sunwell*
-			i(122116),		-- Holy Chime
+			i(122116),		-- K'ute (PET!)
 			crit(1),		-- Grotesque (Hyjal Summit - Azgalor)
 			crit(2),		-- Leviathan Hatchling (Black Temple - High Warlord Naj'entus)
 			crit(3),		-- Abyssius (Black Temple - Supremus)

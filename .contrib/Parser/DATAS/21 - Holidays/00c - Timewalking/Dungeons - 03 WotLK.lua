@@ -190,7 +190,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(156000),	-- Wrathstone
 				})),
 				cr(33515, e(1643, {	-- Auriaya
-					i(142089),	-- Glittering Ball of Yarn (PET!)
+					i(142089),	-- Sanctum Cub (PET!)
 					i(156159),	-- Runescribed Blade
 					i(156043),	-- Stonerender
 					i(156284),	-- Nurturing Touch

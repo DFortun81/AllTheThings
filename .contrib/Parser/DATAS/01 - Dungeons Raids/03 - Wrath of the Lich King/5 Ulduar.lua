@@ -757,7 +757,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(3076, {	-- Nine Lives (10 player)
 								["cr"] = 34035,	-- Feral Defender
 							}),
-							i(142089, {	-- Glittering Ball of Yarn (PET!)
+							i(142089, {	-- Sanctum Cub (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45713),	-- Nurturing Touch
@@ -1675,7 +1675,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(3077, {	-- Nine Lives (25 player)
 								["cr"] = 34035,	-- Feral Defender
 							}),
-							i(142089, {	-- Glittering Ball of Yarn (PET!)
+							i(142089, {	-- Sanctum Cub (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45437),	-- Runescribed Blade
@@ -2546,7 +2546,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					["groups"] = {
 						ach(12341),	-- Crazy Cat Lady
 						ach(12342),	-- Nine Lives
-						i(142089, {	-- Glittering Ball of Yarn (PET!)
+						i(142089, {	-- Sanctum Cub (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(45437),	-- Runescribed Blade

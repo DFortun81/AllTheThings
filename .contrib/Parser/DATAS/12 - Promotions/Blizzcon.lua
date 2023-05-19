@@ -62,10 +62,10 @@ root(ROOTS.Promotions, n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bl
 	ach(11294, {	-- Blizzcon 2016 - Murloc Battlemasters
 		["timeline"] = { "added 7.2.0.23478" },
 	}),
-	a(i(141894, {	-- Knight Captain Murky Pet
+	a(i(141894, {	-- Knight Captain Murky (PET!)
 		["timeline"] = { "added 7.1.0.22864" },
 	})),
-	h(i(141895, {	-- Legionnaire Murky Pet
+	h(i(141895, {	-- Legionnaire Murky (PET!)
 		["timeline"] = { "added 7.1.0.22864" },
 	})),
 
