@@ -6,7 +6,6 @@ _.Instances = { tier(MOP_TIER, {
 	inst(321, {	-- Mogu'shan Palace
 		["coord"] = { 80.5, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 		["maps"] = { 453, 454, 455 },
-		["lvl"] = 87,
 		["g"] = {
 			n(ZONE_DROPS, {
 				i(87806, {	-- Ancient Mogu Key
@@ -62,15 +61,36 @@ _.Instances = { tier(MOP_TIER, {
 						61444,	-- Ming the Cunning
 					},
 					["g"] = {
-						i(144020),	-- Crest of the Clan Lords
-						i(144021),	-- Meteoric Greathelm
-						i(144144),	-- Whirling Dervish Choker
-						i(144145),	-- Conflagrating Gloves
-						i(144143),	-- Hurricane Belt
-						un(REMOVED_FROM_GAME, i(85175)),	-- Crest of the Clan Lords (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(85179)),	-- Meteoric Greathelm (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(85178)),	-- Conflagrating Gloves (7.1 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(85176)),	-- Hurricane Belt (7.1 - Removed from Game!)
+						-- Available
+						i(144145, { -- Conflagrating Gloves
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144020, { -- Crest of the Clan Lords
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144143, { -- Hurricane Belt
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144021, { -- Meteoric Greathelm
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144144, { -- Whirling Dervish Choker
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+
+						-- Removed
+						i(85178, { -- Conflagrating Gloves
+							["timeline"] = { ADDED_5_0_1, REMOVED_7_1_5 },
+						}),
+						i(85175, { -- Crest of the Clan Lords
+							["timeline"] = { ADDED_5_0_1, REMOVED_7_1_5 },
+						}),
+						i(85176, { -- Hurricane Belt
+							["timeline"] = { ADDED_5_0_1, REMOVED_7_1_5 },
+						}),
+						i(85179, { -- Meteoric Greathelm
+							["timeline"] = { ADDED_5_0_1, REMOVED_7_1_5 },
+						}),
 					},
 				}),
 				e(690, {	-- Gekkan
