@@ -955,7 +955,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 42,
 					["groups"] = {
 						objective(1, {	-- 0/5 Gryphon Egg
-							["provider"] = { "i", 23694 },	-- Gryphon Egg
+							["providers"] = {
+								{ "i",  23694 },	-- Gryphon Egg
+								{ "o", 181645 },	-- Gryphon Egg
+							},
 							["coords"] = {
 								{ 39.9, 66.0, THE_HINTERLANDS },
 								{ 36.7, 71.2, THE_HINTERLANDS },
