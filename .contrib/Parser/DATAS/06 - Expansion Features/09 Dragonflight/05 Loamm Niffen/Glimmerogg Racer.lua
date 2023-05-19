@@ -83,21 +83,27 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
 			}, {
 				q(75662, {	-- A Race To The Finish
+					["repeatable"] = true,
 					["g"] = {
 						i(205119),	-- Bashful (PET!)
 					},
 				}),
 				q(75707, {	-- A Race To The Finish
+					["repeatable"] = true,
 					["g"] = {
 						i(205123),	-- Brulee (PET!)
 					},
 				}),
 				q(75706, {	-- A Race To The Finish
-					["g"] = {
+					["repeatable"] = true,
+			 		["g"] = {
 						i(205121),	-- Tricky (PET!)
 					},
 				}),
-				q(75708),	-- A Race To The Finish
+				q(75708, {	-- A Race To The Finish
+					["name"] = "Weekly: A Race To The Finish",
+					["isWeekly"] = true,
+				}),
 			})),
 		}),
 	}),
