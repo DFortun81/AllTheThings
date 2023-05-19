@@ -125,6 +125,10 @@ local function GetPusher()
 					app.PrintDebug("PUSH.Run.Error",co)
 					-- Throw the error. Returning nothing is the same as canceling the work.
 					-- local instanceTrace = debugstack(instance);
+					if app.DEBUG_PRINT then
+						local instanceTrace = debugstack(co);
+						print(instanceTrace)
+					end
 					error(err,2);
 					-- print(debugstack(instance));
 					-- print(err);
@@ -191,10 +195,10 @@ local function CreateRunner(name)
 				params = ParameterBucketQueue[i];
 				if params then
 					-- app.PrintDebug("FRC.Run.N."..name,i,unpack(params))
-					func(unpack(params));
+					pcall(func, unpack(params));
 				else
 					-- app.PrintDebug("FRC.Run.1."..name,i,ParameterSingleQueue[i])
-					func(ParameterSingleQueue[i]);
+					pcall(func, ParameterSingleQueue[i]);
 				end
 				-- app.PrintDebug("FRC.Done."..name,i)
 				if perFrame <= 0 then
@@ -233,7 +237,10 @@ local function CreateRunner(name)
 		else
 			app.PrintDebug("Stack.Run.Error",Name)
 			-- Throw the error. Returning nothing is the same as canceling the work.
-			-- local instanceTrace = debugstack(instance);
+			if app.DEBUG_PRINT then
+				local instanceTrace = debugstack(RunnerCoroutine);
+				print(instanceTrace)
+			end
 			error(err,2);
 			-- print(debugstack(instance));
 			-- print(err);
