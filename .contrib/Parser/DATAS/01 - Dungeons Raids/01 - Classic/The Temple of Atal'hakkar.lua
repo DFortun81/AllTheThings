@@ -317,7 +317,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ancient Egg
-							["provider"] = { "i", 12402 },	-- Ancient Egg
+							["providers"] = {
+								{ "i",  12402 },	-- Ancient Egg
+								{ "o", 175889 },	-- Ancient Egg
+							},
 							["coord"] = { 57.5, 86.7, THE_HINTERLANDS },
 						}),
 					},
