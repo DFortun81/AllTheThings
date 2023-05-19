@@ -43,6 +43,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				}),
 				q(66989, {	-- Helpful Harvest
 					["coord"] = { 58.2, 64.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(204343),	-- Trusty Dragonkin Rake
+					}
 				}),
 				q(67026, {	-- Hold the Shrine
 					["coord"] = { 58.4, 78.5, THE_WAKING_SHORES },

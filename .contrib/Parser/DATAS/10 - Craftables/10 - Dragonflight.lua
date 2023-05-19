@@ -455,14 +455,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71305, 367619);	-- Frostfire Legguards of Preparation
 			FirstCraft(71308, 367617);	-- Infurious Helm of Vengeance
 			FirstCraft(71307, 367616);	-- Infurious Warboots of Impunity
-			--FirstCraft(x, 403158, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Armguards
-			--FirstCraft(x, 403159, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Breastplate
-			--FirstCraft(x, 403160, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Gauntlets
-			--FirstCraft(x, 403161, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Greaves
-			--FirstCraft(x, 403162, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Helm
-			--FirstCraft(x, 403163, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Pauldrons
-			--FirstCraft(x, 403164, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Sabatons
-			--FirstCraft(x, 403165, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Waistguard
+			FirstCraft(74804, 403158, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Armguards
+			FirstCraft(74797, 403159, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Breastplate
+			FirstCraft(74799, 403160, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Gauntlets
+			FirstCraft(74801, 403161, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Greaves
+			FirstCraft(74800, 403162, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Helm
+			FirstCraft(74802, 403163, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Pauldrons
+			FirstCraft(74798, 403164, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Sabatons
+			FirstCraft(74803, 403165, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Waistguard
 			FirstCraft(71316, 367608);	-- Primal Molten Breastplate
 			FirstCraft(71318, 367606);	-- Primal Molten Gauntlets
 			FirstCraft(71322, 367602);	-- Primal Molten Greatbelt
@@ -476,7 +476,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(72183, 393404);	-- Draconium Defender
 			FirstCraft(71304, 367622);	-- Primal Molten Defender
 			FirstCraft(71303, 367623);	-- Shield of the Hearth
-			--FirstCraft(x, 408326, ADDED_10_1_0);	-- Shadowed Impact Buckler
+			FirstCraft(75595, 408326, ADDED_10_1_0);	-- Shadowed Impact Buckler
 			-- Weapons
 			FirstCraft(71332, 367600);	-- Draconium Axe
 			FirstCraft(71336, 367596);	-- Draconium Dirk
@@ -1702,7 +1702,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(72018, 391846);	-- Cliffside Wylderdrake: Steel and Yellow Armor
 			FirstCraft(71533, 383576);	-- Cliffside Wylderdrake: Triple Head Horns
 			-- Dragonriding -- Winding Slitherdrake
-			--FirstCraft(x, 408218, ADDED_10_1_0);	-- Winding Slitherdrake: Blue and Silver Armor
+			FirstCraft(75577, 408218, ADDED_10_1_0);	-- Winding Slitherdrake: Blue and Silver Armor
 			--FirstCraft(x, 408222, ADDED_10_1_0);	-- Winding Slitherdrake: Curved Chin Horn
 			--FirstCraft(x, 408223, ADDED_10_1_0);	-- Winding Slitherdrake: Small Finned Throat
 			--FirstCraft(x, 408221, ADDED_10_1_0);	-- Winding Slitherdrake: White Hair
@@ -2533,8 +2533,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			--FirstCraft(x, 403141, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Cowl
 			--FirstCraft(x, 403147, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Cuffs
 			--FirstCraft(x, 403144, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Epaulettes
-			--FirstCraft(x, 403145, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Gauntlets
-			--FirstCraft(x, 403148, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Girdle
+			FirstCraft(74817, 403145, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Gauntlets
+			FirstCraft(74821, 403148, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Girdle
 			--FirstCraft(x, 403143, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Leggings
 			--FirstCraft(x, 403146, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Treads
 			--FirstCraft(x, 403140, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Belt
@@ -2893,15 +2893,15 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71811, 376525);	-- Crimson Combatant's Wildercloth Shoulderpads
 			FirstCraft(71807, 376521);	-- Crimson Combatant's Wildercloth Treads
 			FirstCraft(71806, 376520);	-- Crimson Combatant's Wildercloth Tunic
-			--FirstCraft(x, 403157, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Bands
-			--FirstCraft(x, 403149, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Cloak
-			--FirstCraft(x, 403152, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Gloves
-			--FirstCraft(x, 403153, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Hood
-			--FirstCraft(x, 403154, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Leggings
-			--FirstCraft(x, 403156, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Sash
-			--FirstCraft(x, 403155, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Shoulderpads
-			--FirstCraft(x, 403151, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Treads
-			--FirstCraft(x, 403150, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Tunic
+			FirstCraft(74831, 403157, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Bands
+			FirstCraft(74823, 403149, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Cloak
+			FirstCraft(74826, 403152, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Gloves
+			FirstCraft(74827, 403153, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Hood
+			FirstCraft(74828, 403154, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Leggings
+			FirstCraft(74830, 403156, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Sash
+			FirstCraft(74829, 403155, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Shoulderpads
+			FirstCraft(74825, 403151, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Treads
+			FirstCraft(74824, 403150, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Tunic
 			FirstCraft(71795, 376509);	-- Surveyor's Cloth Bands
 			FirstCraft(71793, 376507);	-- Surveyor's Cloth Robe
 			FirstCraft(71794, 376508);	-- Surveyor's Cloth Treads
@@ -3026,6 +3026,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72345),	-- First Overload Decayed Herb
 			q(72348),	-- First Overload Infurious Herb
 
+			q(75142, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Bubble Poppy
 			q(75141, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambant Hochenblume
 			q(75143, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Saxifrage
 			q(75144, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Writhebark
@@ -3057,6 +3058,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72347),	-- First Draconium Seam
 			q(75139 , {["timeline"] = {ADDED_10_1_0}}),	-- First Metamorphic Serevite Deposit
 			q(75140 , {["timeline"] = {ADDED_10_1_0}}),	-- First Metamorphic Draconium Deposit
+			q(75137 , {["timeline"] = {ADDED_10_1_0}}),	-- First Overload Metamorphic Deposit
 
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
@@ -3155,6 +3157,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(75873, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Emberdusk
 			q(75872, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Flowfy
 			q(74238, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Karokta
+			q(74235, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Elusive Magma Cobra (204831)
 		}),
 		prof(TAILORING, {
 			q(71946),	-- Timeweaving unlocked

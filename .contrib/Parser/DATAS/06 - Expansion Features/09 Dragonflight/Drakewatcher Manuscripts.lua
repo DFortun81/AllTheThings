@@ -791,6 +791,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197390),	-- Renewed Proto-Drake: Blue Scales (DM!)
 			i(197377),	-- Renewed Proto-Drake: Bovine Horns (DM!)
 			i(197391),	-- Renewed Proto-Drake: Bronze Scales (DM!)
+			i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
 			i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 			i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
 			i(197380),	-- Renewed Proto-Drake: Curved Horns (DM!)
@@ -841,7 +842,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
 			i(197357),	-- Renewed Proto-Drake: Armor
-			i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197356),	-- Renewed Proto-Drake: Hairy Back

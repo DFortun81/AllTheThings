@@ -441,10 +441,6 @@ root(ROOTS.Unsorted, {
 				i(205187),	-- Artisan's Consortium Flier
 				i(202106),	-- Chewed Piece of Journal
 				i(202238),	-- Enforcer Grant's Signet
-				i(203689),	-- Horn Signet of Tetsos
-				i(203692),	-- Horn Signet of Arrosh
-				i(203697),	-- Horn Signet of Ekrati
-				i(203698),	-- Horn Signet of Talon Hermin
 				i(204063),	-- Windsor's Journal
 				i(204171),	-- Enforcer Jennive's Signet
 				i(204172),	-- Enforcer Tera's Signet
@@ -456,9 +452,7 @@ root(ROOTS.Unsorted, {
 				i(205901),	-- Crunchy Beetle
 				i(205902),	-- Deepflayer Claw
 				i(205906),	-- Feathered Friend
-				i(205907),	-- Soaked Totem
 				i(205911),	-- Mysterious Incense
-				i(205913),	-- Blank Notebook
 				i(205994),	-- Tome of the Earth-Warder
 				i(205996),	-- Tome of the Earth-Warder
 				i(205997),	-- Tome of the Earth-Warder
@@ -467,6 +461,7 @@ root(ROOTS.Unsorted, {
 				i(205034),	-- Enormous Ball of Yarn (TOY!)
 				i(205027),	-- Explorer's Banner (TOY!)
 				i(206038),	-- Flamin' Ring of Flashiness (TOY!)
+				i(205463),	-- Skornak's Lava Ball (TOY!)
 			}),
 			n(WEAPONS, {
 				i(204638),	-- Sunder Wing
@@ -601,7 +596,6 @@ root(ROOTS.Unsorted, {
 				i(203998),	-- Beetle Juice
 				i(204089),	-- Atrenosh's Spellsworn Sigil
 				i(204092),	-- Auric Fleece
-				i(204093),	-- Lunker Morsel
 				i(204213),	-- Short-Range Teleport
 				i(204216),	-- Primordial Pulverizing
 				i(204239),	-- Shadowy Mojo Crystal
@@ -615,8 +609,6 @@ root(ROOTS.Unsorted, {
 				i(204313),	-- Handful of Scales
 				i(204330),	-- Inert Primordial Fragments
 				i(114942),	-- Cracked Draenic Mortar
-				i(204343),	-- Trusty Dragonkin Rake
-				i(204442),	-- Clump of Tar
 				i(204632),	-- Tectonic Rock Fragment
 				i(202204),	-- Receiving Stone: Final Warning
 				i(202205),	-- Translated Journal of Adamanthia

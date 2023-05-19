@@ -103,6 +103,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75620, {	-- Liars in Light
 						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
 						["g"] = {
+							i(205913),	-- Blank Notebook
 							i(205202),	-- Small Key
 						},
 					}),
@@ -119,6 +120,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["coord"] = { 55.9, 52, ZARALEK_CAVERN },
 						["g"] = {
 							i(205689),	-- Champion's Crystal
+							i(205907),	-- Soaked Totem
 						},
 					}),
 					q(75517, {	-- Sneak and Sniff
@@ -217,10 +219,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(204985),  -- 2x Barter Brick
 						},
 					}),
+					q(75767, {	-- Good Time Boy
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["provider"] = { "i", 205907 },	-- Soaked Totem
+						["coord"] = { 56.0, 50.9, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
+					q(75773, {	-- Little Blank Book
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["provider"] = { "i", 205913 },	-- Blank Notebook
+						["coord"] = { 60.1, 57.4, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
 					--[[
 					q(75765, {	-- Liquid Art
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
-						["description"] = "Can be looted during ? (quest:?).",
 						["provider"] = { "i", 205366 },	-- Dripping Clay Pot
 						["coord"] = { x, y, ZARALEK_CAVERN },
 						["g"] = {
@@ -229,17 +246,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75766, {	-- Ruby in the Rough
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
-						["description"] = "Can be looted during ? (quest:?).",
 						["provider"] = { "i", 205900 },	-- Shimmering Draconic Gem
-						["coord"] = { x, y, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
-					}),
-					q(75767, {	-- Good Time Boy
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
-						["description"] = "Can be looted during ? (quest:?).",
-						["provider"] = { "i", 205907 },	-- Soaked Totem
 						["coord"] = { x, y, ZARALEK_CAVERN },
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
@@ -247,22 +254,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75768, {	-- Lucky Ducky
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
-						["description"] = "Can be looted during ? (quest:?).",
 						["provider"] = { "i", 205906 },	-- Feathered Friend
 						["coord"] = { x, y, ZARALEK_CAVERN },
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},
 					}),
-					q(75773, {	-- Little Blank Book
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
-						["description"] = "Can be looted during ? (quest:?).",
-						["provider"] = { "i", 205913 },	-- Blank Notebook
-						["coord"] = { x, y, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
-					}), ]]--
+					]]--
 				}),
 				n(REWARDS, {
 					i(205288),	-- Buried Niffen Collection (Frostfire)

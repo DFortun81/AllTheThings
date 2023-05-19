@@ -210,7 +210,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75348,	-- Old QuestID: 75563
 				["g"] = {
 					bo(75349, true),
-					i(205463),	-- Skornak's Lava Ball (TOY!)
 					i(203321),	-- Winding Slitherdrake: Curled Cheek Horn (DM!)
 					i(205301),	-- Hardened Lava Handwraps
 					i(205294),	-- Sandals of Molten Scorn

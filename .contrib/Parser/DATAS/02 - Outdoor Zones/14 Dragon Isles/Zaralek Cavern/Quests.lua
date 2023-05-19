@@ -890,6 +890,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75870),	-- Still too much! - 999
 		q(75871),	-- How about 50 boulders - 249
 
-		q(75208),	-- looted bonus supplies while on climbing WQ 75060 (A Veritable Dumping Ground)
+		q(75208),	-- looted lost supply while on climbing WQ 75060 (A Veritable Dumping Ground)
+		q(75210),	-- looted lost supply while on climbing WQ 75062 (Crystalline Conundrum)
 	}),
 }));

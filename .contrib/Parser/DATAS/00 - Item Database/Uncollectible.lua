@@ -654,13 +654,19 @@ i(7005);	-- Skinning Knife
 -- PATCH 10.0.7 --
 ------------------
 -- Quest Items --
-i(198834);	-- Scribbled Bark Chunks
-i(202181);	-- Best-root Tuber
-i(202185);	-- Chillwrought Worm Meat
 i(202362);	-- Arcane Focus
 i(203463);	-- Atrenosh's Journal
+i(202181);	-- Best-root Tuber
+i(202185);	-- Chillwrought Worm Meat
+i(203689);	-- Horn Signet of Tetsos
+i(203692);	-- Horn Signet of Arrosh
+i(203697);	-- Horn Signet of Ekrati
+i(203698);	-- Horn Signet of Talon Hermin
+i(204093);	-- Lunker Morsel
 i(202713);	-- Scattered Supplies
+i(198834);	-- Scribbled Bark Chunks
 -- Stupid Stuff
+i(204442);	-- Clump of Tar
 i(204308);	-- Sturdy Bone
 i(204873);	-- Tied-up Envelope
 --

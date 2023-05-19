@@ -73,6 +73,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 203603 },	-- Brena
 				["coord"] = { 58.6, 34.3, THE_AZURE_SPAN },
 			}),
+			q(75373, {	-- Charge of the Ottuk Brigade
+				["provider"] = { "n", 203601 },	-- Blubberwall
+				["coord"] = { 57.7, 34.4, THE_AZURE_SPAN },
+			}),
 			q(75239, {	-- Disciple of Fyrakk: Shadeisethal
 				["provider"] = { "i", 204683 },	-- Head of Shadeisethal
 				["maps"] = { THE_AZURE_SPAN },
@@ -87,6 +91,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			q(75377, {	-- Maintaining the Barricade
 				["provider"] = { "n", 203522 },	-- Archmage Khadgar
 				["coord"] = { 58.4, 34.4, THE_AZURE_SPAN },
+			}),
+			q(75384, {	-- Payback's a Mammoth
+				["provider"] = { "n", 203604 },	-- Old Grimtusk
+				["coord"] = { 58.4, 33.4, THE_AZURE_SPAN },
 			}),
 		})),
 		n(RARES, sharedData({ ["isWeekly"] = true }, {
@@ -190,6 +198,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 73.8, 72.5, OHNAHRAN_PLAINS },
 				["questID"] = 75525,
 				["cost"] = { { "i", 203710, 3 } },	-- 3x Everburning Key
+				["g"] = {
+					i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
+				}
 			}),
 			o(386559, {	-- Secured Shipment
 				["coord"] = { 53.8, 33.8, THE_AZURE_SPAN },

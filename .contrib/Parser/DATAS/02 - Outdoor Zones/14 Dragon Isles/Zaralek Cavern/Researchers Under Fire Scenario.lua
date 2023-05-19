@@ -44,8 +44,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(RESEARCHERS, {
 		-- Event rares --
-		q(75944),	-- After Captain Reykal kill
-		q(75944),	-- After Contaminated Titan Watcher kill
+		--q(75944),	-- After Captain Reykal kill
+		--q(75944),	-- After Contaminated Titan Watcher kill
 		q(75945),	-- After Response Team Watcher kill
 
 		-- Event reward hqts? --
