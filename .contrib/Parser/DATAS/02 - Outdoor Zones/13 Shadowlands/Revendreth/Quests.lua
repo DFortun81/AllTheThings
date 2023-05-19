@@ -600,7 +600,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["collectible"] = false,
 				["g"] = {
 					q(58093, {	-- Our Forgotten Purpose
-						["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
+						["sourceQuests"] = { 58086 },	-- The Master of Lies
 						["provider"] = { "n", 160248 },	-- Archivist Fane
 						["coord"] = { 72.9, 52.0, REVENDRETH },
 						["altQuests"] = { 57918 },	-- The Absolution of Souls
