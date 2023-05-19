@@ -455,7 +455,10 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["lvl"] = 60,
 				}),
 				q(8745, {	-- Treasure of the Timeless One
-					["qg"] = 15693,	-- Jonathan the Revelator
+					["providers"] = {
+						{ "n", 15693 },	-- Jonathan the Revelator
+						{ "i", 21175 },	-- The Scepter of the Shifting Sands
+					},
 					["sourceQuest"] = 8742,	-- The Might of Kalimdor
 					["coord"] = { 25.9, 91.0, SILITHUS },
 					["lvl"] = 60,
