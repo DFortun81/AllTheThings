@@ -670,7 +670,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 					i(183595),	-- Argent Conscript's Buckle
 					i(183542),	-- Argent Conscript's Wristplates
 					i(180454),	-- Anti-Doom Broom
-					i(183621, {	-- Putrid Geist
+					i(183621, {	-- Putrid Geist (PET!)
 						["cost"] = { { "c", 1754, 20 } },
 					}),
 				}),
@@ -770,7 +770,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 					i(183542),	-- Argent Conscript's Wristplates
 					-- Misc Items
 					i(180454),	-- Anti-Doom Broom
-					i(183621, {	-- Putrid Geist
+					i(183621, {	-- Putrid Geist (PET!)
 						["cost"] = { { "c", 1754, 20 } },
 					}),
 				}),
@@ -824,7 +824,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 					i(183572),	-- Argent Conscript's Greaves
 					i(183573),	-- Argent Conscript's Buckle
 					i(180454),	-- Anti-Doom Broom
-					i(183621, {	-- Putrid Geist
+					i(183621, {	-- Putrid Geist (PET!)
 						["cost"] = { { "c", 1754, 20 } },
 					}),
 				}),
@@ -925,7 +925,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 					i(183542),	-- Argent Conscript's Wristplates
 				-- Misc Items
 					i(180454),	-- Anti-Doom Broom
-					i(183621, {	-- Putrid Geist
+					i(183621, {	-- Putrid Geist (PET!)
 						["cost"] = { { "c", 1754, 20 } },	-- 20x Argent Commendation
 					}),
 				}),

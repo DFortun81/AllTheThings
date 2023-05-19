@@ -1272,7 +1272,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 						i(142083, {	-- Dreadmaw (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
-						i(142084, {	-- Magnataur Hunting Horn (PET!)
+						i(142084, {	-- Snobold Runt (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						a(i(47612)),	-- Rod of Imprisoned Souls
@@ -1436,7 +1436,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
 						ach(3800),	-- The Traitor King (10 player)
-						i(142085, {	-- Nerubian Relic (PET!)
+						i(142085, {	-- Nerubian Swarmer (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						h(i(47911)),	-- Anguish
@@ -1492,7 +1492,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 						i(142083, {	-- Dreadmaw (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
-						i(142084, {	-- Magnataur Hunting Horn (PET!)
+						i(142084, {	-- Snobold Runt (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						a(i(47922)),	-- Rod of Imprisoned Souls
@@ -1659,7 +1659,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 							["timeline"] = { "added 4.0.3" },
 						}),
 						ach(3800),	-- The Traitor King (10 player)
-						i(142085, {	-- Nerubian Relic (PET!)
+						i(142085, {	-- Nerubian Swarmer (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						h(i(48056)),	-- Anguish
@@ -1777,7 +1777,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 						i(142083, {	-- Dreadmaw (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
-						i(142084, {	-- Magnataur Hunting Horn (PET!)
+						i(142084, {	-- Snobold Runt (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						h(i(47261)),	-- Barb of Tarasque
@@ -1969,7 +1969,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
 						ach(3816),	-- The Traitor King (25 player)
-						i(142085, {	-- Nerubian Relic (PET!)
+						i(142085, {	-- Nerubian Swarmer (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						a(i(47233)),	-- Archon Glaive
@@ -2029,7 +2029,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 						i(142083, {	-- Dreadmaw (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
-						i(142084, {	-- Magnataur Hunting Horn (PET!)
+						i(142084, {	-- Snobold Runt (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						h(i(47422)),	-- Barb of Tarasque
@@ -2218,7 +2218,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 							["timeline"] = { "added 4.0.3" },
 						}),
 						ach(3816),	-- The Traitor King (25 player)
-						i(142085, {	-- Nerubian Relic (PET!)
+						i(142085, {	-- Nerubian Swarmer (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						a(i(47239)),	-- Archon Glaive

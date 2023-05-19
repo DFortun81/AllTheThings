@@ -568,7 +568,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2927),	-- Hot Pocket (10 player)
 							revampAch(2925),	-- Shattered (10 player)
 							revampAch(2930),	-- Stokin' the Furnace (10 player)
-							i(142086, {	-- Red-Hot Coal (PET!)
+							i(142086, {	-- Magma Rageling (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45311),	-- Relentless Edge
@@ -716,7 +716,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								i(45506),	-- Archivum Data Disc
 							}),
 							revampAch(2940),	-- I Choose You, Stormcaller Brundir (10 player)
-							i(142088, {	-- Stormforged Rune (PET!)
+							i(142088, {	-- Runeforged Servitor (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45331),	-- Rune-Etched Nightblade
@@ -787,7 +787,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							revampAch(2963),	-- I Have the Coolest Friends (10 player)
 							revampAch(2969),	-- Staying Buffed All Winter (10 player)
-							i(142090, {	-- Ominous Pile of Snow (PET!)
+							i(142090, {	-- Winter Rageling (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138800, {	-- Illusion: Blade Ward
@@ -1458,7 +1458,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2928),	-- Hot Pocket (25 player)
 							revampAch(2926),	-- Shattered (25 player)
 							revampAch(2929),	-- Stokin' the Furnace (25 player)
-							i(142086, {	-- Red-Hot Coal (PET!)
+							i(142086, {	-- Magma Rageling (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45171),	-- Intensity
@@ -1622,7 +1622,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								i(45857),	-- Archivum Data Disc
 							}),
 							revampAch(2943),	-- I Choose You, Stormcaller Brundir (25 player)
-							i(142088, {	-- Stormforged Rune (PET!)
+							i(142088, {	-- Runeforged Servitor (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45234),	-- Rapture
@@ -1713,7 +1713,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							revampAch(2965),	-- I Have the Coolest Friends (25 player)
 							revampAch(2970),	-- Staying Buffed All Winter (25 player)
-							i(142090, {	-- Ominous Pile of Snow (PET!)
+							i(142090, {	-- Winter Rageling (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138800, {	-- Illusion: Blade Ward
@@ -2255,7 +2255,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12324),	-- Hot Pocket
 						ach(12323),	-- Shattered
 						ach(12325),	-- Stokin' the Furnace
-						i(142086, {	-- Red-Hot Coal (PET!)
+						i(142086, {	-- Magma Rageling (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(45171),	-- Intensity
@@ -2475,7 +2475,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45857),	-- Archivum Data Disc
 						}),
 						ach(12333),	-- I Choose You, Stormcaller Brundir
-						i(142088, {	-- Stormforged Rune (PET!)
+						i(142088, {	-- Runeforged Servitor (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(45234),	-- Rapture
@@ -2600,7 +2600,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 						ach(12344),	-- I Have the Coolest Friends
 						ach(12346),	-- Staying Buffed All Winter
-						i(142090, {	-- Ominous Pile of Snow (PET!)
+						i(142090, {	-- Winter Rageling (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(138800, {	-- Illusion: Blade Ward

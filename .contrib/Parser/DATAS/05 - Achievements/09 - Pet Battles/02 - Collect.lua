@@ -250,7 +250,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			i(71387),		-- Brilliant Kaliri (PET!)
 		}))),
 		petbattle(ach(5876, bubbleDownSelf({ ["timeline"] = { "added 4.1.0" } }, {		-- Petting Zoo (100)
-			i(71140),		-- Nuts' Acorn (PET!)
+			i(71140),		-- Nuts (PET!)
 		}))),
 		petbattle(ach(2516, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {		-- Lil' Game Hunter (75)
 			i(44841),		-- Little Fawn (PET!)

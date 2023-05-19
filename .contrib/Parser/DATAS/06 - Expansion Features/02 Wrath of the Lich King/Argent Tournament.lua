@@ -4307,7 +4307,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 							["races"] = exclude(TAUREN, HORDE_ONLY),
 							-- #endif
 						}))),
-						champ(40, i(44980)),	-- Mulgore Hatchling (PET!)
+						champ(40, i(44980, { -- Mulgore Hatchling (PET!)
+							["timeline"] = { "added 3.1.0.9626" },
+						})),
 						champ(15, i(45013)),	-- Thunder Bluff Banner (TOY!)
 					},
 				}),

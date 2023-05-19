@@ -33,7 +33,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(163553),	-- Digitized Assistant (used to be a pet)
 		i(163554),	-- Finicky Gauntlet (used to be a pet)
 		i(164629),	-- Test Pet
-		i(166791),	-- Pristine Falcon Feather (unsued version)
+		i(166791),	-- Corlain Falcon (PET! (unsued version)
 		i(113569),	-- Autumnal Sproutling (unused ver)
 		i(91031),	-- Darkmoon Glowfly (PET!)
 		i(119147),	-- Nether Ray Fry (unsed Version)

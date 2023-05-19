@@ -236,7 +236,9 @@ _.Zones =
 					},
 					["g"] = {
 						n(109556, {	-- Treasure Chest
-							i(136914),	-- Leyline Broodling
+							i(136914, { -- Leyline Broodling (PET!)
+								["timeline"] = { ADDED_7_0_3 },
+							}),
 						}),
 						n(109564, {	-- Glimmering Treasure Chest
 							i(140495),	-- Torn Invitation [Fox Mount Quest]

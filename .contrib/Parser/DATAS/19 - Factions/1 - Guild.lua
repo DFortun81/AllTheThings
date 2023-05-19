@@ -88,7 +88,9 @@ _.Factions =
 			ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
 				["collectible"] = false,
 				["g"] = {
-					i(71033),	-- Lil' Tarecgosa (PET!) - Exalted
+					i(71033, { -- Lil' Tarecgosa (PET!) - Exalted
+						["timeline"] = { "added 4.2.0.14333" },
+					}),
 				},
 			}),
 			ach(4988, {	-- Guild Glory of the Cataclysm Raider

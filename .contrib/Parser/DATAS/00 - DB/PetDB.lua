@@ -25,38 +25,9 @@ end
 	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
 -- MissingIDs also host speciesIDs that are still missing in our database. For a full list of speciesID see Database Harvester > Raw > Pets.txt
 
-
 --------------
 -- UNSORTED --
 --------------
-i(136914, 1808);	-- Leyline Broodling
-i(71033, 320);	-- Lil' Tarecgosa
-i(142084, 1953);	-- Magnataur Hunting Horn (Snobold Runt)
-i(87526, 844);	-- Mechanical Pandaren Dragonling
-i(141893, 1936);	-- Mischief
-i(44980, 210);	-- Mulgore Hatchling
-i(71726, 329);	-- Murky's Little Soulstone (Murkablo)
-i(142085, 1954);	-- Nerubian Relic (Nerubian Swarmer)
-i(38628, 186);	-- Nether Ray Fry
-i(140761, 1933);	-- Nightmare Treant
-i(141532, 1943);	-- Noblegarden Bunny
-i(71140, 323);	-- Nuts' Acorn (Nuts)
-i(142090, 1959);	-- Ominous Pile of Snow (WInter Rageling)
-i(90173, 868);	-- Pandaren Water Spirit
-i(166791, 2405);	-- Pristine Falcon Feather
-i(166358, 2541);	-- Proper Parrot
-i(183621, 3046);	-- Putrid Geist
-i(23015, 127);	-- Rat Cage (Whiskers the Rat)
-i(21305, 120);	-- Red Helper Box (Winter's Little Helper)
-i(142086, 1955);	-- Red-Hot Coal (Magma Rageling)
-i(178533, 2622);	-- Shaking Pet Carrier (Jingles)
-i(142097, 1966);	-- Skull of A Frozen Whelp (Soulbroken Whelpling)
-i(142100, 1969);	-- Stardust
-i(129208, 1721);	-- Stormborne Whelpling
-i(142088, 1957);	-- Stormforged Rune (Runeforged Servitor)
-i(118598, 1434);	-- Sun Sproutling
-i(119468, 1570);	-- Sunfire Kaliri
-i(116064, 1478);	-- Syd the Squid
 
 
 -----------------
@@ -106,8 +77,10 @@ i(21309, 117);		-- Tiny Snowman
 i(21277, 116);		-- Tranquil Mechanical Yeti
 i(11026, 65);		-- Tree Frog
 i(10393, 55);		-- Undercity Cockroach
+i(23015, 127);		-- Whiskers the Rat
 i(8489, 46);		-- White Kitten
 i(21308, 118);		-- Winter Reindeer
+i(21305, 120);		-- Winter's Little Helper
 i(11027, 64);		-- Wood Frog
 i(12264, 89);		-- Worg Pup
 i(13582, 94);		-- Zergling
@@ -202,6 +175,7 @@ i(33816, 163);	-- Toothy
 -- ITEM --
 i(38050, 183);	-- Ethereal Soul-Trader
 i(39656, 189);	-- Mini Tyrael
+i(38628, 186);	-- Nether Ray Fry
 
 -----------------
 -- PATCH 2.4.3 --
@@ -245,6 +219,7 @@ i(44841, 203);	-- Little Fawn
 -- ITEM --
 i(45022, 216);	-- Argent Gruntling
 i(44998, 214);	-- Argent Squire
+i(44980, 210);	-- Mulgore Hatchling
 i(44983, 211);	-- Strand Crawler
 
 -----------------
@@ -415,6 +390,9 @@ i(71387, 325);	-- Brilliant Kaliri
 i(70160, 318);	-- Crimson Lasher
 i(72045, 332);	-- Horde Balloon
 i(70140, 317);	-- Hyjal Bear Cub
+i(71033, 320);	-- Lil' Tarecgosa
+i(71726, 329);	-- Murkablo
+i(71140, 323);	-- Nuts
 
 -----------------
 -- PATCH 4.2.2 --
@@ -456,6 +434,7 @@ i(86562, 835);	-- Hopling
 i(88148, 792);	-- Jade Crane Chick
 i(82774, 845);	-- Jade Owl
 i(85871, 671);	-- Lucky Quilen Cub
+i(87526, 844);	-- Mechanical Pandaren Dragonling
 i(89587, 381);	-- Porcupette
 i(72153, 665);	-- Sand Scarab
 i(82775, 846);	-- Sapphire Cub
@@ -490,6 +469,7 @@ i(89367, 850);	-- Yu'lon Kite
 -----------------
 -- ITEM --
 i(90177, 903);	-- Baneling
+i(90173, 868);	-- Pandaren Water Spirit
 i(85222, 1042);	-- Red Cricket
 
 -----------------
@@ -691,6 +671,8 @@ i(119328, 1569);	-- Soul of the Forge
 i(116402, 1515);	-- Stonegrinder
 i(118577, 1546);	-- Stormwing
 i(116756, 1518);	-- Stout Alemental
+i(118598, 1434);	-- Sun Sproutling
+i(116064, 1478);	-- Syd the Squid
 i(112699, 1416);	-- Teroclaw Hatchling
 i(118104, 1538);	-- Umbrafen Spore
 i(113558, 1394);	-- Weebomination
@@ -705,15 +687,15 @@ n(119466, 1532);	-- Ikky
 -- PATCH 6.0.2 --
 -----------------
 -- ITEM --
-i(120050, 1596);	-- Veilwatcher Hatchling
-i(120051, 1597);	-- Kaliri Hatchling
-i(127701, 1598);	-- Glowing Sporebat
-i(122532, 1600);	-- Bone Serpent
-i(119431, 1601);	-- Servant of Demidos
-i(118517, 1602);	-- Grommloc
 i(118516, 1603);	-- Argi
+i(122532, 1600);	-- Bone Serpent
+i(127701, 1598);	-- Glowing Sporebat
+i(118517, 1602);	-- Grommloc
+i(120051, 1597);	-- Kaliri Hatchling
+i(119431, 1601);	-- Servant of Demidos
+i(119468, 1570);	-- Sunfire Kaliri
 i(120121, 1605);	-- Trunks
-
+i(120050, 1596);	-- Veilwatcher Hatchling
 
 -----------------
 -- PATCH 6.1.0 --
@@ -784,58 +766,61 @@ i(134047, 1828);	-- Baby Winston
 -- PATCH 7.0.3 --
 -----------------
 -- ITEM --
+i(136910, 1805);	-- Alarm-o-Bot
+i(139775, 1918);	-- Alliance Enthusiast
+i(128690, 1706);	-- Ashmaw Cub
+i(136919, 1884);	-- Baby Elderhorn
+i(140934, 1934);	-- Benax
+i(129188, 1753);	-- Bleakwater Jelly
+i(129362, 1777);	-- Broot
+i(136923, 1888);	-- Celestial Calf
+i(136925, 1890);	-- Corgi Pup
+i(140320, 1929);	-- Corgnelius
+i(140672, 1931);	-- Court Scribe
+i(129175, 1752);	-- Crispin
+i(129178, 1720);	-- Emmigosa
 i(128533, 1699);	-- Enchanted Cauldron
 i(128534, 1700);	-- Enchanted Torch
 i(128535, 1701);	-- Enchanted Pen
-i(128354, 1705);	-- Grumpy
-i(128690, 1706);	-- Ashmaw Cub
-i(129277, 1711);	-- Skyhorn Nestling
-i(129878, 1715);	-- Nightwatch Swooper
-i(136898, 1716);	-- Fledgling Warden Owl
 i(136899, 1717);	-- Extinguished Eye
-i(136900, 1718);	-- Hateful Eye
 i(136901, 1719);	-- Eye of Inquisition
-i(129178, 1720);	-- Emmigosa
-i(136903, 1723);	-- Nightmare Whelpling
-i(129826, 1727);	-- Nursery Spider
-i(129175, 1752);	-- Crispin
-i(129188, 1753);	-- Bleakwater Jelly
-i(136904, 1754);	-- Sewer-Pipe Jelly
-i(129798, 1755);	-- Plump Jelly
-i(136905, 1756);	-- Ridgeback Piglet
-i(136908, 1759);	-- Thaumaturgical Piglet
 i(129760, 1760);	-- Fel Piglet
-i(129362, 1777);	-- Broot
-i(130168, 1802);	-- Fetid Waveling
-i(130167, 1803);	-- Thistleleaf Adventurer
-i(130166, 1804);	-- Risen Saber Kitten
-i(136910, 1805);	-- Alarm-o-Bot
-i(136911, 1806);	-- Knockoff Blingtron
-i(136919, 1884);	-- Baby Elderhorn
-i(136920, 1885);	-- Sunborne Val'kyr
-i(132519, 1886);	-- Trigger
-i(136923, 1888);	-- Celestial Calf
 i(136924, 1889);	-- Felbat Pup
-i(136925, 1890);	-- Corgi Pup
-i(137298, 1903);	-- Zoom
-i(130154, 1907);	-- Pygmy Owl
-i(138810, 1911);	-- Sting Ray Pup
-i(139775, 1918);	-- Alliance Enthusiast
-i(139776, 1919);	-- Horde Fanatic
-i(139789, 1920);	-- Transmutant
-i(139790, 1921);	-- Untethered Wyrmling
-i(139791, 1922);	-- Lurking Owl Kitten
-i(140261, 1926);	-- Hungering Claw
+i(130168, 1802);	-- Fetid Waveling
 i(140316, 1928);	-- Firebat Pup
-i(140320, 1929);	-- Corgnelius
+i(136898, 1716);	-- Fledgling Warden Owl
+i(128354, 1705);	-- Grumpy
+i(136900, 1718);	-- Hateful Eye
+i(139776, 1919);	-- Horde Fanatic
+i(140261, 1926);	-- Hungering Claw
+i(136911, 1806);	-- Knockoff Blingtron
 i(140323, 1930);	-- Lagan
-i(140672, 1931);	-- Court Scribe
+i(136914, 1808);	-- Leyline Broodling
+i(139791, 1922);	-- Lurking Owl Kitten
 i(140741, 1932);	-- Nightmare Lasher
-i(140934, 1934);	-- Benax
+i(140761, 1933);	-- Nightmare Treant
+i(136903, 1723);	-- Nightmare Whelpling
+i(129878, 1715);	-- Nightwatch Swooper
+i(129826, 1727);	-- Nursery Spider
+i(129798, 1755);	-- Plump Jelly
+i(130154, 1907);	-- Pygmy Owl
+i(141352, 1938);	-- Rescued Fawn
+i(136905, 1756);	-- Ridgeback Piglet
+i(130166, 1804);	-- Risen Saber Kitten
+i(136908, 1759);	-- Thaumaturgical Piglet
+i(130167, 1803);	-- Thistleleaf Adventurer
+i(136904, 1754);	-- Sewer-Pipe Jelly
+i(129277, 1711);	-- Skyhorn Nestling
+i(141530, 1941);	-- Snowfang
+i(138810, 1911);	-- Sting Ray Pup
+i(129208, 1721);	-- Stormborne Whelpling
+i(136920, 1885);	-- Sunborne Val'kyr
+i(139789, 1920);	-- Transmutant
+i(132519, 1886);	-- Trigger
+i(139790, 1921);	-- Untethered Wyrmling
 i(141348, 1937);	-- Wondrous Wisdomball
 i(136922, 1887);	-- Wyrmy Tunkins
-i(141352, 1938);	-- Rescued Fawn
-i(141530, 1941);	-- Snowfang
+i(137298, 1903);	-- Zoom
 -- NPC --
 n(97018, 1708);		-- Albatross Chick
 n(97076, 1709);		-- Fledgling Kingfeather
@@ -891,9 +876,18 @@ i(141714, 1949);	-- Igneous Flameling
 i(142087, 1956);	-- Ironbound Proto-Whelp
 i(141894, 1940);	-- Knight-Captain Murky
 i(141895, 1939);	-- Legionnaire Murky
+i(142086, 1955);	-- Magma Rageling
+i(141893, 1936);	-- Mischief
+i(142085, 1954);	-- Nerubian Swarmer
+i(141532, 1943);	-- Noblegarden Bunny
+i(142088, 1957);	-- Runeforged Servitor
 i(142089, 1958);	-- Sanctum Cub
 i(142091, 1960);	-- Snaplasher
+i(142084, 1953);	-- Snobold Runt
+i(142097, 1966);	-- Soulbroken Whelpling
+i(142100, 1969);	-- Stardust
 i(142099, 1968);	-- Wicked Soul
+i(142090, 1959);	-- Winter Rageling
 -- QUEST? --
 n(115787, 1977);	-- Bloodgazer Hatchling
 n(115785, 1975);	-- Direbeak Hatchling
@@ -1145,6 +1139,7 @@ i(166345, 2538);	-- Dasher
 i(166451, 2546);	-- Detective Ray
 i(166453, 2548);	-- Everburning Treant
 i(166493, 2557);	-- Firesting Buzzer
+i(166358, 2541);	-- Proper Parrot (Removed?)
 i(166448, 2545);	-- Gust of Cyclarus
 i(166452, 2547);	-- Hydrath Droplet
 i(166487, 2552);	-- Leatherwing Screecher
@@ -1155,6 +1150,7 @@ i(165849, 2530);	-- Mechantula
 i(165894, 2534);	-- Mini Spider Tank
 i(166489, 2554);	-- Needleback Pup
 i(166528, 2563);	-- Nightwreathed Watcher
+i(166791, 2405);	-- Corlain Falcon (Horde)
 i(166715, 2564);	-- Rebuilt Gorilla Bot
 i(166723, 2565);	-- Rebuilt Mechanical Spider
 i(165722, 2525);	-- Redridge Tarantula
@@ -1457,6 +1453,7 @@ i(173891, 2798);	-- Plagueborn Slime
 i(181264, 2954);	-- Plaguelouse Larva
 i(180588, 2896);	-- Primordial Bogling
 i(180859, 2935);	-- Purity
+i(183621, 3046);	-- Putrid Geist
 i(180591, 2898);	-- Raw Emotion
 i(175114, 2878);	-- Renny
 i(180644, 2907);	-- Rocky
@@ -1577,6 +1574,7 @@ i(0, 3005);			-- Brite
 -- ITEM --
 i(184221, 3054);	-- Archivist's Quill
 i(184400, 3065);	-- Courage
+i(178533, 2622);	-- Jingles
 i(184397, 3062);	-- Lost Featherling
 i(184399, 3064);	-- Larion Cub
 i(184401, 3063);	-- Larion Pouncer

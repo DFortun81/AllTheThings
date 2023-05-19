@@ -249,10 +249,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(68385, {	-- Lil' Ragnaros (PET!)
 			["timeline"] = { "added 4.0.3.13286" },
 		}),
-		i(85871, {	-- Lucky Quilen Cub
+		i(85871, {	-- Lucky Quilen Cub (PET!)
 			["timeline"] = { "added 5.0.1.15662" },
 		}),
-		i(141893, {	-- Mischief
+		i(141893, {	-- Mischief (PET!)
 			["timeline"] = { "added 7.1.0.22996" },
 		}),
 		i(68384, {	-- Moonkin Egg (You had to open the Egg on both faction sides before 6.0.1 to receive your Moonkin Pet). You get both now automaticly

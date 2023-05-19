@@ -1064,7 +1064,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					9695,	-- The Lil' Necromancer
 				}},
 			["groups"] = {
-				i(140761),	-- Nightmare Treant
+				i(140761),	-- Nightmare Treant (PET!)
 				ach(9686, {	-- Aquatic Acquiescence
 					crit(1, {	-- Nightwatcher Merayl (Azsuna)
 						["_quests"] = { 42159 },

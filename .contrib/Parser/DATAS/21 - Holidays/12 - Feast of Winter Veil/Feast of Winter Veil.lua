@@ -934,7 +934,9 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(21308, { -- Winter Reindeer (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
-					i(21305),	-- Red Helper Box
+					i(21305, { -- Winter's Little Helper (PET!)
+						["timeline"] = { "added 1.11.1.5462" },
+					}),
 					i(21309, { -- Tiny Snowman (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
@@ -1436,7 +1438,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
-					i(178533),	-- Shaking Pet Carrier
+					i(178533),	-- Jingles (PET!)
 				},
 			})),
 			q(64639, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" } }, {	-- A Winter Veil Gift (2021)
@@ -2070,7 +2072,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(104317, {	-- Rotten Helper Box
 						["timeline"] = { "added 5.4.0.17227" },
 					}),
-					i(178533, {	-- Shaking Pet Carrier
+					i(178533, {	-- Jingles (PET!)
 						["timeline"] = { ADDED_9_0_1 },
 					}),
 					-- Toys

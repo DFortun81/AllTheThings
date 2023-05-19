@@ -20,7 +20,9 @@ root(ROOTS.PetBattles, petbattle({
 			["provider"] = { "i", 142210 },	-- Celestial Invitation
 			["coord"] = { 41.4, 24.4, THE_STORM_PEAKS },
 			["g"] = {
-				i(142100),	-- Stardust
+				i(142100, { -- Stardust (PET!)
+				["timeline"] = { ADDED_7_1_0 },
+				}),
 			},
 		}),
 		-- Battle Pet Tamers Quests
@@ -1160,7 +1162,7 @@ root(ROOTS.PetBattles, petbattle({
 						37460,	-- Rope Pet Leash
 					}},
 					["g"] = {
-						i(90173),	-- Pandaren Water Spirit
+						i(90173),	-- Pandaren Water Spirit (PET!)
 					},
 				})
 			},

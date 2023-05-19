@@ -34,7 +34,7 @@ root(ROOTS.Promotions, n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bl
 	ach(6185, {	-- Blizzcon 2011 - Murkablo
 		["timeline"] = { "added 4.3.0.15005" },
 	}),
-	i(71726, {	-- Murky's Little Soulstone Pet
+	i(71726, {	-- Murkablo (PET!)
 		["timeline"] = { "added 4.2.0.14333" },
 	}),
 

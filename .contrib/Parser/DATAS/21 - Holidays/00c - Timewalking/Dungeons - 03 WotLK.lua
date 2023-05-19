@@ -56,7 +56,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(156016),	-- Pyrite Infuser
 				})),
 				cr(33118, e(1638, {	-- Ignis the Furnace Master
-					i(142086),	-- Red-Hot Coal (PET!)
+					i(142086),	-- Magma Rageling (PET!)
 					i(155961),	-- Intensity
 					i(156039),	-- Relentless Edge
 					i(155956),	-- Worldcarver
@@ -136,7 +136,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(155995),	-- Sandals of Rash Temperament
 				})),
 				cr(32867, e(1641, {	-- The Assembly of Iron
-					i(142088),	-- Stormforged Rune (PET!)
+					i(142088, {	-- Runeforged Servitor (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+			}		),
 					i(155973),	-- Rapture
 					i(155972),	-- Stormrune Edge
 					i(156611),	-- Fang of Oblivion
@@ -216,7 +218,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				})),
 				cr(32845, e(1644, {	-- Hodir
 					i(138800),	-- Illusion: Blade Ward
-					i(142090),	-- Ominous Pile of Snow
+					i(142090),	-- Winter Rageling (PET!)
 					i(156299),	-- Icecore Staff
 					i(156179),	-- Staff of Endless Winter
 					i(156180),	-- Stormedge

@@ -398,7 +398,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 							i(171588, {	-- Westfall Saber
 								["races"] = ALLIANCE_ONLY,
 							}),
-							i(142085),	-- Nerubian Relic (PET!)
+							i(142085),	-- Nerubian Swarmer (PET!)
 						},
 					}),
 					e(1636, {	-- The Lich King
