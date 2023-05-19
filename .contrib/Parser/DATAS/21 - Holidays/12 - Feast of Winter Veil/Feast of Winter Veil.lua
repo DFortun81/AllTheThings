@@ -2069,7 +2069,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(73797, {	-- Lumpy (PET!)
 						["timeline"] = { "added 4.3.0.15005" },
 					}),
-					i(104317, {	-- Rotten Helper Box
+					i(104317, {	-- Rotten Little Helper (PET!)
 						["timeline"] = { "added 5.4.0.17227" },
 					}),
 					i(178533, {	-- Jingles (PET!)

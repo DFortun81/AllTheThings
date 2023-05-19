@@ -649,6 +649,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2415,	-- Warden Belamoore
 				}),
 				i(8491, {	-- Black Tabby Cat (PET!)
+					["timeline"] = { "added 1.11.1.5462" },
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						2271,	-- Dalaran Shield Guard

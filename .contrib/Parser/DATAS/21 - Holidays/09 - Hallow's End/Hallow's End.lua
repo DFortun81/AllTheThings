@@ -162,6 +162,7 @@ local PET_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
 	}),
 	i(33154, {	-- Sinister Squashling (PET!)
+		["timeline"] = { "added 2.2.2.7318" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(116804, {	-- Widget the Departed (PET!)

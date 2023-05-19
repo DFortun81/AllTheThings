@@ -128,7 +128,9 @@ _.Instances = { tier(CATA_TIER, {
 							{ "i", 33865, 1 },	-- Amani Hex Stick
 						},
 						["groups"] = {
-							i(33993),	-- Mojo (PET!)
+							i(33993, { -- Mojo (PET!)
+								["timeline"] = { "added 2.3.0.7382" },
+							}),
 							ach(5761, {	-- Hex Mix
 								crit(1, {	-- Rosa saved.
 									["provider"] = { "n", 52905 },	-- Rosa

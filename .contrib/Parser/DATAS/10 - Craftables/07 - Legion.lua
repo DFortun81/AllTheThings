@@ -99,17 +99,27 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 					i(44822, {	-- Albino Snake (PET!)
 						["timeline"] = { "added 3.1.0.9658" },
 					}),
-					i(11023),	-- Ancona Chicken (PET!)
-					i(10360),	-- Black Kingsnake (PET!)
-					i(29958),	-- Blue Dragonhawk Hatchling (PET!)
+					i(11023, { -- Ancona Chicken (PET!)
+						["timeline"] = { "added 1.11.1.5462" },
+					}),
+					i(10360, { -- Black Kingsnake (PET!)
+						["timeline"] = { "added 1.11.1.5462" },
+					}),
+					i(29958, { -- Blue Dragonhawk Hatchling (PET!)
+						["timeline"] = { "added 2.0.1.6180" },
+					}),
 					i(70160, {	-- Crimson Lasher (PET!)
 						["timeline"] = { "added 4.2.0.14333" },
 					}),
-					i(8501),	-- Hawk Owl (PET!)
+					i(8501,	{ -- Hawk Owl (PET!)
+						["timeline"] = { "added 1.11.1.5462" },
+					}),
 					i(120051, {	-- Kaliri Hatchling (PET!)
 						["timeline"] = { "added 6.0.2.18764" },
 					}),
-					i(29363),	-- Mana Wyrmling
+					i(29363, { -- Mana Wyrmling (PET!)
+						["timeline"] = { "added 2.0.1.6180" },
+					}),
 					i(129826, {	-- Nursery Spider (PET!)
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
@@ -126,7 +136,9 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 					i(139789, {	-- Transmutant (PET!)
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(29903),	-- Yellow Moth Egg
+					i(29903, { -- Yellow Moth (PET!)
+						["timeline"] = { "added 2.0.1.6180" },
+					}),
 				},
 			}),
 		}),

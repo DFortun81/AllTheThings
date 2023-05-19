@@ -4167,7 +4167,9 @@ root(ROOTS.Zones, {
 								["description"] = "First floor of the Legerdemain Lounge in the bookcase nearest the stove.",
 								["coord"] = { 46.8, 40.0, NORTHREND_DALARAN },
 							}),
-							i(44738),	-- Kirin Tor Familiar (PET!)
+							i(44738, { -- Kirin Tor Familiar (PET!)
+								["timeline"] = { "added 3.0.3.9095" },
+							}),
 							i(43824, {	-- The Schools of Arcane Magic - Mastery (TOY!)
 								["description"] = "If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",
 								["cr"] = 16128,	-- Rhonin <Leader of the Kirin Tor>

@@ -1423,6 +1423,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						i(8491, {	-- Black Tabby Cat (PET!)
+							["timeline"] = { "added 1.11.1.5462" },
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 						}),
 						-- #endif

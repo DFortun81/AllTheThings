@@ -3118,7 +3118,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2415,	-- Warden Belamoore
 				}),
-				i(8491),	-- Black Tabby Cat (PET!)
+				i(8491,	{ -- Black Tabby Cat (PET!)
+					["timeline"] = { "added 1.11.1.5462" },
+				}),
 				i(1280, {	-- Cloaked Hood
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2246,	-- Syndicate Assassin

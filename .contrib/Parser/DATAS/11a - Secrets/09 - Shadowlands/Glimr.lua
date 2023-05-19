@@ -45,9 +45,8 @@ root(ROOTS.Secrets, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_1 } },
 				["provider"] = { "n", 169415 },  -- Glimmerfin Oracle
 				["coord"] = { 17.1, 93.8, GRIZZLY_HILLS },
 				["g"] = {
-					i(180034, {  -- Glimr
-						["timeline"] = { ADDED_9_0_1 },
-					}),
+					i(180034),  -- Glimr (PET!)
+
 				},
 			}),
 		},

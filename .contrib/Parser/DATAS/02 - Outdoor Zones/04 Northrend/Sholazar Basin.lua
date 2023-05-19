@@ -1256,7 +1256,9 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 39883 },	-- Cracked Egg
 								["groups"] = {
 									i(44707),	-- Green Proto-Drake (MOUNT!)
-									i(39898),	-- Cobra Hatchling (PET!)
+									i(39898, { -- Cobra Hatchling (PET!)
+										["timeline"] = { "added 3.0.3.9183" },
+									}),
 									i(44721),	-- Proto-Drake Whelp (PET!)
 									i(39896),	-- Tickbird Hatchling (PET!)
 									i(39899),	-- White Tickbird Hatchling (PET!)
