@@ -7698,7 +7698,10 @@ local HeaderCloneFields = {
 	-- Fields in the wrapped object which should not persist when represented as a Header
 	["collectible"] = app.ReturnNil,
 	["trackable"] = app.ReturnNil,
+	["collectibleAsCost"] = app.ReturnNil,
+	["costCollectibles"] = app.ReturnNil,
 	["g"] = app.ReturnNil,
+	-- Filter-affecting fields
 	["customCollect"] = app.ReturnNil,
 	["requireSkill"] = app.ReturnNil,
 	["u"] = app.ReturnNil,
@@ -7707,6 +7710,7 @@ local HeaderCloneFields = {
 	["c"] = app.ReturnNil,
 	["nmc"] = app.ReturnNil,
 	["nmr"] = app.ReturnNil,
+	["sym"] = app.ReturnNil,
 	-- ["back"] = function(t)
 	-- 	return 0.3;	-- visibility of which rows are cloned
 	-- end,
@@ -12622,6 +12626,7 @@ app.GetCurrentMapID = function()
 	if uiMapID then
 		local map = C_Map_GetMapInfo(uiMapID);
 		if map then
+			app.CurrentMapInfo = map;
 			local ZONE_TEXT_TO_MAP_ID = L["ZONE_TEXT_TO_MAP_ID"];
 			local real = GetRealZoneText();
 			local otherMapID = real and ZONE_TEXT_TO_MAP_ID[real];
@@ -19833,9 +19838,15 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		local function RefreshLocation()
 			-- Acquire the new map ID.
 			local mapID = app.GetCurrentMapID();
-			-- print("RefreshLocation",mapID)
+			-- app.PrintDebug("RefreshLocation",mapID)
 			if not mapID or mapID < 0 then
 				AfterCombatCallback(RefreshLocation);
+				return;
+			end
+			local mapInfo = app.CurrentMapInfo;
+			-- don't auto-load minimap to anything higher than a 'Zone', unless it has no parent?
+			if mapInfo and mapInfo.parentMapID and (mapInfo.mapType or 0) < 3 then
+				-- app.PrintDebug("Don't load Large Maps in minilist")
 				return;
 			end
 			OpenMiniList(mapID);
