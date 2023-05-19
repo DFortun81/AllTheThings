@@ -309,7 +309,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				-- Tailoring Items Acting Weird
-				i(205138),	-- Pattern: Medical Wrap Kit
 				i(205005),	-- Spore-infused Combat Bandage
 				i(205006),	-- Spore-infused Combat Bandage
 				i(205007),	-- Spore-infused Combat Bandage

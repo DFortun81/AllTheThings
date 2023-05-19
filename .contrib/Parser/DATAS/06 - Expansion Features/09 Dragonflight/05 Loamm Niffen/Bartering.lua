@@ -305,6 +305,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				n(203608, {	-- Rossmar
 					["coord"] = { 56.1, 56.7, ZARALEK_CAVERN },
 					["g"] = {
+						i(205138, {	-- Pattern: Medical Wrap Kit (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } }
+						}),
 						i(205139, {	-- Pattern: Reserve Parachute (RECIPE!)
 							["cost"] = { { "i", VOUCHER, 1 } }
 						}),
