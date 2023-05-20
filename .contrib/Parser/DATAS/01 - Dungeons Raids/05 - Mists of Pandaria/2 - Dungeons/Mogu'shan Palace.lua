@@ -2,30 +2,15 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
+root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(321, {	-- Mogu'shan Palace
 		["coord"] = { 80.5, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 		["maps"] = { 453, 454, 455 },
 		["g"] = {
-			n(ZONE_DROPS, {
-				i(87806, {	-- Ancient Mogu Key
-					["crs"] = {
-						61216,	-- Glintrok Hexxer
-						61242,	-- Glintrok Ironhide
-						61239,	-- Glintrok Oracle
-						61240,	-- Glintrok Skulker
-					},
-				}),
-				i(89428, {	-- Ancient Mogu Treasure
-					["description"] = "Contains some gold and a several green-quality gems.",
-					["cost"] = {
-						{ "i", 87806, 1 },	-- Ancient Mogu Key
-					},
-				}),
-			}),
 			n(QUESTS, {
 				q(31360, {	-- A New Lesson for the Master
 					["provider"] = { "n", 64432 },	-- Sinan the Dreamer
+					["coord"] = { 38.8, 81.8, 455 },
 					["g"] = {
 						i(87337),	-- Deposer's Leggings
 						i(87334),	-- Dreamer's Vigil Leggings
@@ -40,6 +25,7 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 				}),
 				q(31357, {	-- Relics of the Four Kings
 					["provider"] = { "n", 64432 },	-- Sinan the Dreamer
+					["coord"] = { 38.8, 81.8, 455 },
 					["g"] = {
 						i(87346),	-- Armbands of the Reawakened
 						i(87349),	-- Armplates of Martial Artistry
@@ -50,6 +36,22 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 						i(87347),	-- Lost Heritage Bracers
 						i(87350),	-- Poet-King's Vambraces
 						i(87342),	-- Subjugation Bracers
+					},
+				}),
+			}),
+			n(ZONE_DROPS, {
+				i(87806, {	-- Ancient Mogu Key
+					["crs"] = {
+						61216,	-- Glintrok Hexxer
+						61242,	-- Glintrok Ironhide
+						61239,	-- Glintrok Oracle
+						61240,	-- Glintrok Skulker
+					},
+				}),
+				i(89428, {	-- Ancient Mogu Treasure
+					["description"] = "Contains some gold and a several green-quality gems.",
+					["cost"] = {
+						{ "i", 87806, 1 },	-- Ancient Mogu Key
 					},
 				}),
 			}),
@@ -355,7 +357,7 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 			-- #endif
 		},
 	}),
-}))};
+})));
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(MOP_TIER, {

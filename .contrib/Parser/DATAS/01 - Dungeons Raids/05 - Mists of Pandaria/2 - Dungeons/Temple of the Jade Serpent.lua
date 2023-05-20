@@ -2,15 +2,21 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
+root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(313, {	-- Temple of the Jade Serpent
 		["coord"] = { 56.0, 57.8, THE_JADE_FOREST },
 		["maps"] = { 429, 430 },
-		["lvl"] = { 10 },
 		["g"] = {
 			n(QUESTS, {
+				q(33107, {	-- Bad Feeling, Worse Result
+					["provider"] = { "o", 221413 },	-- Lin Family Scroll
+					["coord"] = { 68.8, 58.4, 429 },
+					["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
+					["modelScale"] = 2,
+				}),
 				q(31356, {	-- Deep Doubts, Deep Wisdom
 					["provider"] = { "n", 64399 },	-- Master Windstrong
+					["coord"] = { 35.4, 44.4, 429 },
 					["g"] = {
 						i(87289),	-- Equilibrium Legwraps
 						i(87287),	-- Leggings of Inner Peace
@@ -25,6 +31,7 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 				}),
 				q(31355, {	-- Restoring Jade's Purity
 					["provider"] = { "n", 60578 },	-- Priestess Summerpetal
+					["coord"] = { 35.4, 44.4, 429 },
 					["g"] = {
 						i(87300),	-- Armplates of the Jade Idol
 						i(87298),	-- Bracers of Ancient Tales
@@ -38,168 +45,173 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 					},
 				}),
 			}),
+			n(ZONE_DROPS, {
+				n(65317, {	-- Xiang <The Two Jugglers>
+					i(87522),	-- Star Carrier Bracers  [Lucetia: Only drops from this mob don't remove]
+				}),
+			}),
 			d(NORMAL_DUNGEON, {
-				n(QUESTS, {
-					q(33107, {	-- Bad Feeling, Worse Result
-						["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
-						["modelScale"] = 2,
-						["provider"] = { "o", 221413 },	-- Lin Family Scroll
-					}),
+				e(672, {	-- Wise Mari
+					["crs"] = { 56448 },	-- Wise Mari
+					["g"] = {
+						-- Available
+						i(144112, { -- Crystallized Droplet
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143960, { -- Riverbed Chestguard
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143973, { -- Treads of Corrupted Water
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144017, { -- Waterburst Helm
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144111, { -- Wind-Soaked
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+
+						-- Removed
+						i(80861, { -- Riverbed Chestguard
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80862, { -- Treads of Corrupted Water
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80860, { -- Waterburst Helm
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+					},
 				}),
-				n(ZONE_DROPS, {
-					n(65317, {	-- Xiang <The Two Jugglers>
-						i(87522),	-- Star Carrier Bracers  [Lucetia: Only drops from this mob don't remove]
-					}),
+				e(664, {	-- Lorewalker Stonestep
+					["crs"] = { 56843 },	-- Lorewalker Stonestep
+					["g"] = {
+						-- Available
+						i(144081, { -- Girdle of Endemic Anger
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143987, { -- Leggings of Whispered Dreams
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143974, { -- Stonestep Boots
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144083, { -- Sunheart Waistband
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144113, { -- Windswept Pages
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+
+						-- Removed
+						i(80864, { -- Girdle of Endemic Anger
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80863, { -- Stonestep Boots
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80865, { -- Sunheart Waistband
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+					},
 				}),
-				cr(56448, e(672, {	-- Wise Mari
-					-- Available
-					i(144112, { -- Crystallized Droplet
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(143960, { -- Riverbed Chestguard
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(143973, { -- Treads of Corrupted Water
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144017, { -- Waterburst Helm
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144111, { -- Wind-Soaked
-						["timeline"] = { ADDED_7_1_5 },
-					}),
+				e(658, {	-- Liu Flameheart
+					["crs"] = { 56732 },	-- Liu Flameheart
+					["g"] = {
+						-- Available
+						i(144094, { -- Cape of Entaglement
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144090, { -- Firebelcher Hand Cannon
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143988, { -- Flameheart Sandals
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143971, { -- Serpentstrike Shoulderpads
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144114, { -- Signet of Dancing Jade
+							["timeline"] = { ADDED_7_1_5 },
+						}),
 
-					-- Removed
-					i(80861, { -- Riverbed Chestguard
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80862, { -- Treads of Corrupted Water
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80860, { -- Waterburst Helm
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-				})),
-				cr(56843, e(664, {	-- Lorewalker Stonestep
-					-- Available
-					i(144081, { -- Girdle of Endemic Anger
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(143987, { -- Leggings of Whispered Dreams
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(143974, { -- Stonestep Boots
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144083, { -- Sunheart Waistband
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144113, { -- Windswept Pages
-						["timeline"] = { ADDED_7_1_5 },
-					}),
+						-- Removed
+						i(80872, { -- Firebelcher Hand Cannon
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80867, { -- Serpentstrike Shoulderpads
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80866, { -- Cape of Entaglement
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+					},
+				}),
+				e(335, {	-- Sha of Doubt
+					["crs"] = { 56439 },	-- Sha of Doubt
+					["g"] = {
+						-- Available
+						ach(6757),	-- Temple of the Jade Serpent
+						i(144116, { -- Binding of Broken Dreams
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143959, { -- Chestguard of Despair
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144115, { -- Cloak of Failing Will
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143972, { -- Doubtridden Shoulderguards
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144086, { -- Dubious Handaxe
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144091, { -- Hopecrusher Gauntlets
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144216, { -- Je'lyu, Spirit of the Serpent
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144117, { -- Mindbreaker Pendant
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143970, { -- Neverdare Shoulders
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144118, { -- Paralyzing Gloves
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144093, { -- Staff of Trembling Will
+							["timeline"] = { ADDED_7_1_5 },
+						}),
 
-					-- Removed
-					i(80864, { -- Girdle of Endemic Anger
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80863, { -- Stonestep Boots
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80865, { -- Sunheart Waistband
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-				})),
-				cr(56732, e(658, {	-- Liu Flameheart
-					-- Available
-					i(144094, { -- Cape of Entaglement
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144090, { -- Firebelcher Hand Cannon
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(143988, { -- Flameheart Sandals
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(143971, { -- Serpentstrike Shoulderpads
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144114, { -- Signet of Dancing Jade
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-
-					-- Removed
-					i(80872, { -- Firebelcher Hand Cannon
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80867, { -- Serpentstrike Shoulderpads
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80866, { -- Cape of Entaglement
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-				})),
-				cr(56439, e(335, {	-- Sha of Doubt
-					-- Available
-					ach(6757),	-- Temple of the Jade Serpent
-					i(144116, { -- Binding of Broken Dreams
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(143959, { -- Chestguard of Despair
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144115, { -- Cloak of Failing Will
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(143972, { -- Doubtridden Shoulderguards
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144086, { -- Dubious Handaxe
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144091, { -- Hopecrusher Gauntlets
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144216, { -- Je'lyu, Spirit of the Serpent
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144117, { -- Mindbreaker Pendant
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(143970, { -- Neverdare Shoulders
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144118, { -- Paralyzing Gloves
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-					i(144093, { -- Staff of Trembling Will
-						["timeline"] = { ADDED_7_1_5 },
-					}),
-
-					-- Removed
-					i(80870, { -- Chestguard of Despair
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80868, { -- Doubtridden Shoulderguards
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80873, { -- Dubious Handaxe
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80869, { -- Hopecrusher Gauntlets
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80871, { -- Neverdare Shoulders
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-					i(80874, { -- Staff of Trembling Will
-						["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-					}),
-				})),
+						-- Removed
+						i(80870, { -- Chestguard of Despair
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80868, { -- Doubtridden Shoulderguards
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80873, { -- Dubious Handaxe
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80869, { -- Hopecrusher Gauntlets
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80871, { -- Neverdare Shoulders
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(80874, { -- Staff of Trembling Will
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+					},
+				}),
 			}),
 			d(HEROIC_DUNGEON, {
-				["lvl"] = 90,
-				["g"] = {
-					cr(56448, e(672, {	-- Wise Mari
+				e(672, {	-- Wise Mari
+					["crs"] = { 56448 },	-- Wise Mari
+					["g"] = {
 						-- Available
 						ach(6460),	-- Hydrophobia
 						i(144112, { -- Crystallized Droplet
@@ -231,8 +243,11 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 						i(81075, { -- Waterburst Helm
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-					})),
-					cr(56843, e(664, {	-- Lorewalker Stonestep
+					},
+				}),
+				e(664, {	-- Lorewalker Stonestep
+					["crs"] = { 56843 },	--Lorewalker Stonestep
+					["g"] = {
 						-- Available
 						i(144081, { -- Girdle of Endemic Anger
 							["timeline"] = { ADDED_7_1_5 },
@@ -263,8 +278,11 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 						i(81060, { -- Sunheart Waistband
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-					})),
-					cr(56732, e(658, {	-- Liu Flameheart
+					},
+				}),
+				e(658, {	-- Liu Flameheart
+					["crs"] = { 56732 },	-- Liu Flameheart
+					["g"] = {
 						-- Available
 						i(144094, { -- Cape of Entaglement
 							["timeline"] = { ADDED_7_1_5 },
@@ -295,8 +313,11 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 						i(81127, { -- Flameheart Sandals
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-					})),
-					cr(56439, e(335, {	-- Sha of Doubt
+					},
+				}),
+				e(335, {	-- Sha of Doubt
+					["crs"] = { 56439 },	-- Sha of Doubt
+					["g"] = {
 						-- Available
 						ach(6475),	-- Cleaning Up
 						ach(6758),	-- Heroic: Temple of the Jade Serpent
@@ -371,8 +392,8 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 						i(81079, { -- Staff of Trembling Will
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-					})),
-				},
+					},
+				}),
 			}),
 			-- #if AFTER 7.1.5.23360
 			d(TIMEWALKING_DUNGEON, {
@@ -383,7 +404,8 @@ _.Instances = { tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 			-- #endif
 		},
 	}),
-}))};
+})));
+
 root(ROOTS.HiddenQuestTriggers, {
 	tier(MOP_TIER, {
 		q(31499),	-- Jade Serpent Challenge Mode - Bronze Addition (Nth)

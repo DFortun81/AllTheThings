@@ -82,6 +82,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(50251),	-- Shadow's Edge One-Hander
 				}),
 			}),
+			tier(LEGION_TIER, {
+				tier(LEGION_TIER, 1.5, {
+					i(144217),	-- Gao's Keg Tapper
+				}),
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189692),	-- 10.0 Dungeon Template - Axe1H - Agi - Weapon

@@ -8,13 +8,20 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 		["maps"] = { 437, 438 },
 		["g"] = {
 			n(QUESTS, {
-				q(31363),	-- Lighting the Way
+				q(31363, {	-- Lighting the Way
+					["provider"] = { "n", 64467 },	-- Bowmistress Li
+					["coord"] = { 61.0, 88.2, 437 },
+				}),
 				q(31364, {	-- That's a Big Bug!
-					i(87351),	-- Carapace Inlaid Drape
-					i(87352),	-- Cloak of the Unending Swarm
-					i(87353),	-- Cloak of Collective Thought
-					i(87354),	-- Drape of the Burning Signal
-					i(87355),	-- Mantid Exterminator's Cloak
+					["provider"] = { "n", 64467 },	-- Bowmistress Li
+					["coord"] = { 61.0, 88.2, 437 },
+					["g"] = {
+						i(87351),	-- Carapace Inlaid Drape
+						i(87352),	-- Cloak of the Unending Swarm
+						i(87353),	-- Cloak of Collective Thought
+						i(87354),	-- Drape of the Burning Signal
+						i(87355),	-- Mantid Exterminator's Cloak
+					},
 				}),
 			}),
 			d(NORMAL_DUNGEON, {				
@@ -118,7 +125,9 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56877 },	-- Raigonn
 					["g"] = {
 						-- Available
-						ach(10010),	-- Gate of the Setting Sun
+						ach(10010, {	-- Gate of the Setting Sun
+							["timeline"] = { ADDED_6_2_0 },
+						}),
 						ach(6945),	-- Mantid Swarm
 						i(144101, {	-- Carapace Breaker
 							["timeline"] = { ADDED_7_1_5 },
@@ -144,7 +153,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						i(143991, {	-- Shoulders of Engulfing Winds
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						
 						i(143955, {	-- Swarmbringer Chestguards
 							["timeline"] = { ADDED_7_1_5 },
 						}),
@@ -291,7 +299,9 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56877 },	-- Raigonn
 					["g"] = {
 						-- Available
-						ach(10010),	-- Gate of the Setting Sun
+						ach(10010, {	-- Gate of the Setting Sun
+							["timeline"] = { ADDED_6_2_0 },
+						}),
 						ach(6759),	-- Heroic: Gate of the Setting Sun
 						ach(6768),	-- Heroic: Gate of the Setting Sun Guild Run
 						ach(6945),	-- Mantid Swarm

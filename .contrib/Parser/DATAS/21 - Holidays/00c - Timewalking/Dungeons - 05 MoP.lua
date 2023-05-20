@@ -238,9 +238,6 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 			cr(59479, e(670, {	-- Yan-Zhu the Uncasked
 				i(144124),	-- Wort Stirring Rod
 				i(144085),	-- Gao's Keg Tapper
-				i(144217, {	-- Inelava, Spirit of Inebriation
-					["timeline"] = { "created 7.1.5" },	-- don't think this has technically ever existed even though it shows in dungeon journal
-				}),
 				i(144089),	-- Yan-Zhu's Pressure Valve
 				i(143969),	-- Fizzy Spaulders
 				i(143958),	-- Uncasked Chestguard
