@@ -439,14 +439,19 @@ i(85513, 802);		-- Thundering Serpent Hatchling
 i(85447, 652);		-- Tiny Goldfish
 -- NPC --
 n(61325, 635);		-- Adder
+n(62693, 641);		-- Arctic Hare
 n(60649, 374);		-- Black Lamb
+n(62695, 639);		-- Borean Marmot
 n(62116, 468);		-- Creepy Crawly
 n(62115, 467);		-- Dung Beetle
 n(61751, 448);		-- Hare
+n(62697, 530);		-- Oily Slimeling
 n(61080, 378);		-- Rabbit
+n(61158, 388);		-- Shore Crab
 n(62114, 466);		-- Spiny Lizard
 n(61081, 379);		-- Squirrel
 n(61369, 420);		-- Toad
+n(62835, 536);		-- Tundra Penguin
 n(61367, 418);		-- Water Snake
 
 -----------------
@@ -494,6 +499,8 @@ i(90953, 1127);		-- Spectral Cub
 i(93029, 1146);		-- Stitched Pup
 i(93036, 1151);		-- Untamed Hatchling
 i(93039, 1154);		-- Viscidus Globule
+-- NPC --
+n(68845, 1165);		-- Nexus Whelpling
 
 
 -----------------
@@ -546,6 +553,8 @@ i(97553, 1231);		-- Tainted Waveling
 i(97552, 1230);		-- Tideskipper
 i(97558, 1236);		-- Tito
 i(97960, 1244);		-- Viscous Horror
+-- NPC --
+n(71163, 1238);		-- Unborn Val'kyr
 
 
 -----------------
