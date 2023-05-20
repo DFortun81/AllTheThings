@@ -7717,7 +7717,7 @@ local HeaderCloneFields = {
 };
 local BaseHeaderClone = app.BaseObjectFields(HeaderCloneFields, "HeaderClone");
 -- Wraps a given object such that it can act as a non-filtered Header of the object
-app.CreateClonedHeader = function(t)
+app.CreateWrapHeader = function(t)
 	return app.WrapObject(t, BaseHeaderClone);
 end
 end	-- Common Wrapper Types
@@ -12101,7 +12101,7 @@ app.CacheHeirlooms = function()
 	end
 	-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
 	local heirloom, upgrades, isWeapon, u;
-	local Search, ClonedHeader = app.SearchForObject, app.CreateClonedHeader;
+	local Search, ClonedHeader = app.SearchForObject, app.CreateWrapHeader;
 	local uniques = {};
 	for _,itemID in ipairs(heirloomIDs) do
 		if not uniques[itemID] then
