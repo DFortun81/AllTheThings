@@ -2753,6 +2753,18 @@ v = function(id, t)										-- Create a VIGNETTE Object
 	return struct("questID", id, t);
 end
 
+-- Common Object Types
+dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragonriding Race
+	t = q(id, t);
+	t.repeatable = true;
+	t.sourceQuestNumRequired = 1;
+	t.sourceQuests = {
+		68795,	-- Dragonriding
+		DF_ACCOUNT_CAMPAIGN_QUEST,
+	};
+	return t;
+end
+
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
 a = function(t)	-- Flag as Alliance Only
 	if t.races then

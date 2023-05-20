@@ -139,19 +139,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 				}),
-				n(QUESTS, sharedData({
-					["repeatable"] = true,
-					["sourceQuestNumRequired"] = 1,
-					["sourceQuests"] = {
-						68795,	-- Dragonriding
-						DF_ACCOUNT_CAMPAIGN_QUEST,
-					},
-				},{
+				n(QUESTS, {
 					q(74939, {	-- Brimstone Scramble
 						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
 						["coord"] = { 54.4, 23.7, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17447),	-- Brimstone Scramble: Bronze
 							ach(17448),	-- Brimstone Scramble: Silver
 							ach(17449),	-- Brimstone Scramble: Gold
@@ -161,7 +153,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
 						["coord"] = { 54.4, 23.7, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17450),	-- Brimstone Scramble Advanced: Bronze
 							ach(17451),	-- Brimstone Scramble Advanced: Silver
 							ach(17452),	-- Brimstone Scramble Advanced: Gold
@@ -171,7 +162,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
 						["coord"] = { 54.4, 23.7, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17453),	-- Brimstone Scramble Reverse: Bronze
 							ach(17454),	-- Brimstone Scramble Reverse: Silver
 							ach(17455),	-- Brimstone Scramble Reverse: Gold
@@ -181,7 +171,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
 						["coord"] = { 39.0, 49.8, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17438),	-- Caldera Cruise: Bronze
 							ach(17439),	-- Caldera Cruise: Silver
 							ach(17440),	-- Caldera Cruise: Gold
@@ -191,7 +180,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
 						["coord"] = { 39.0, 49.8, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17441),	-- Caldera Cruise Advanced: Bronze
 							ach(17442),	-- Caldera Cruise Advanced: Silver
 							ach(17443),	-- Caldera Cruise Advanced: Gold
@@ -201,7 +189,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
 						["coord"] = { 39.0, 49.8, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17444),	-- Caldera Cruise Reverse: Bronze
 							ach(17445),	-- Caldera Cruise Reverse: Silver
 							ach(17446),	-- Caldera Cruise Reverse: Gold
@@ -211,7 +198,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
 						["coord"] = { 38.6, 60.6, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17429),	-- Crystal Circuit: Bronze
 							ach(17430),	-- Crystal Circuit: Silver
 							ach(17431),	-- Crystal Circuit: Gold
@@ -221,7 +207,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
 						["coord"] = { 38.6, 60.6, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17432),	-- Crystal Circuit Advanced: Bronze
 							ach(17433),	-- Crystal Circuit Advanced: Silver
 							ach(17434),	-- Crystal Circuit Advanced: Gold
@@ -231,7 +216,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
 						["coord"] = { 38.6, 60.6, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17435),	-- Crystal Circuit Reverse: Bronze
 							ach(17436),	-- Crystal Circuit Reverse: Silver
 							ach(17437),	-- Crystal Circuit Reverse: Gold
@@ -241,7 +225,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
 						["coord"] = { 58.7, 45.1, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17456),	-- Shimmering Slalom: Bronze
 							ach(17457),	-- Shimmering Slalom: Silver
 							ach(17458),	-- Shimmering Slalom: Gold
@@ -251,7 +234,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
 						["coord"] = { 58.7, 45.1, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17459),	-- Shimmering Slalom Advanced: Bronze
 							ach(17460),	-- Shimmering Slalom Advanced: Silver
 							ach(17461),	-- Shimmering Slalom Advanced: Gold
@@ -261,7 +243,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
 						["coord"] = { 58.7, 45.1, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17462),	-- Shimmering Slalom Reverse: Bronze
 							ach(17463),	-- Shimmering Slalom Reverse: Silver
 							ach(17464),	-- Shimmering Slalom Reverse: Gold
@@ -271,7 +252,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
 						["coord"] = { 51.2, 46.6, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17474),	-- Sulfur Sprint: Bronze
 							ach(17475),	-- Sulfur Sprint: Silver
 							ach(17476),	-- Sulfur Sprint: Gold
@@ -281,7 +261,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
 						["coord"] = { 51.2, 46.6, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17477),	-- Sulfur Sprint Advanced: Bronze
 							ach(17478),	-- Sulfur Sprint Advanced: Silver
 							ach(17479),	-- Sulfur Sprint Advanced: Gold
@@ -291,7 +270,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
 						["coord"] = { 51.2, 46.6, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17480),	-- Sulfur Sprint Reverse: Bronze
 							ach(17481),	-- Sulfur Sprint Reverse: Silver
 							ach(17482),	-- Sulfur Sprint Reverse: Gold
@@ -301,7 +279,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
 						["coord"] = { 58.0, 57.6, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17465),	-- Loamm Roamm: Bronze
 							ach(17466),	-- Loamm Roamm: Silver
 							ach(17467),	-- Loamm Roamm: Gold
@@ -311,7 +288,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
 						["coord"] = { 58.0, 57.6, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17468),	-- Loamm Roamm Advanced: Bronze
 							ach(17469),	-- Loamm Roamm Advanced: Silver
 							ach(17470),	-- Loamm Roamm Advanced: Gold
@@ -321,13 +297,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
 						["coord"] = { 58.0, 57.6, ZARALEK_CAVERN },
 						["g"] = {
-							i(191140),	-- Bronze Timepiece
 							ach(17471),	-- Loamm Roamm Reverse: Bronze
 							ach(17472),	-- Loamm Roamm Reverse: Silver
 							ach(17473),	-- Loamm Roamm Reverse: Gold
 						},
 					}),
-				})),
+				}),
 			}),
 		}),
 	}),

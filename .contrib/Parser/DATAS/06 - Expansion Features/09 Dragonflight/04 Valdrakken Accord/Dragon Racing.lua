@@ -187,6 +187,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 				}),
 			}),
+			i(191140),	-- Bronze Timepiece
 		}),
 	}),
 })));

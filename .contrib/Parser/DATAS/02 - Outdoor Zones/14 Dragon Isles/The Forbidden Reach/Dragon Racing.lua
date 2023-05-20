@@ -132,195 +132,170 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 			}),
-			n(QUESTS, sharedData({
-				["repeatable"] = true,
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					68795,	-- Dragonriding
-					DF_ACCOUNT_CAMPAIGN_QUEST,
-				},
-			},{
-				q(73025, {	-- Aerie Chasm Cruise
+			n(QUESTS, {
+				dragonridingrace(73025, {	-- Aerie Chasm Cruise
 					["provider"] = { "n", 200236 },	-- Bronze Timekeeper
 					["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17243),	-- Aerie Chasm Cruise: Bronze
 						ach(17244),	-- Aerie Chasm Cruise: Silver
 						ach(17245),	-- Aerie Chasm Cruise: Gold
 					},
 				}),
-				q(73027, {	-- Aerie Chasm Cruise - Advanced
+				dragonridingrace(73027, {	-- Aerie Chasm Cruise - Advanced
 					["provider"] = { "n", 200236 },	-- Bronze Timekeeper
 					["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17246),	-- Aerie Chasm Cruise Advanced: Bronze
 						ach(17247),	-- Aerie Chasm Cruise Advanced: Silver
 						ach(17248),	-- Aerie Chasm Cruise Advanced: Gold
 					},
 				}),
-				q(73028, {	-- Aerie Chasm Cruise - Reverse
+				dragonridingrace(73028, {	-- Aerie Chasm Cruise - Reverse
 					["provider"] = { "n", 200236 },	-- Bronze Timekeeper
 					["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17249),	-- Aerie Chasm Cruise Reverse: Bronze
 						ach(17250),	-- Aerie Chasm Cruise Reverse: Silver
 						ach(17251),	-- Aerie Chasm Cruise Reverse: Gold
 					},
 				}),
-				q(73033, {	-- Caldera Climb
+				dragonridingrace(73033, {	-- Caldera Climb
 					["provider"] = { "n", 200316 },	-- Bronze Timekeeper
 					["coord"] = { 41.3, 14.7, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17261),	-- Caldera Climb: Bronze
 						ach(17262),	-- Caldera Climb: Silver
 						ach(17263),	-- Caldera Climb: Gold
 					},
 				}),
-				q(73034, {	-- Caldera Climb - Advanced
+				dragonridingrace(73034, {	-- Caldera Climb - Advanced
 					["provider"] = { "n", 200316 },	-- Bronze Timekeeper
 					["coord"] = { 41.3, 14.7, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17264),	-- Caldera Climb Advanced: Bronze
 						ach(17265),	-- Caldera Climb Advanced: Silver
 						ach(17266),	-- Caldera Climb Advanced: Gold
 					},
 				}),
-				q(73052, {	-- Caldera Climb - Reverse
+				dragonridingrace(73052, {	-- Caldera Climb - Reverse
 					["provider"] = { "n", 200316 },	-- Bronze Timekeeper
 					["coord"] = { 41.3, 14.7, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17267),	-- Caldera Climb Reverse: Bronze
 						ach(17268),	-- Caldera Climb Reverse: Silver
 						ach(17269),	-- Caldera Climb Reverse: Gold
 					},
 				}),
-				q(73061, {	-- Forbidden Reach Rush
+				dragonridingrace(73061, {	-- Forbidden Reach Rush
 					["provider"] = { "n", 200417 },	-- Bronze Timekeeper
 					["coord"] = { 49.4, 59.8, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17270),	-- Forbidden Reach Rush: Bronze
 						ach(17271),	-- Forbidden Reach Rush: Silver
 						ach(17272),	-- Forbidden Reach Rush: Gold
 					},
 				}),
-				q(73062, {	-- Forbidden Reach Rush - Advanced
+				dragonridingrace(73062, {	-- Forbidden Reach Rush - Advanced
 					["provider"] = { "n", 200417 },	-- Bronze Timekeeper
 					["coord"] = { 49.4, 59.8, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17273),	-- Forbidden Reach Rush Advanced: Bronze
 						ach(17274),	-- Forbidden Reach Rush Advanced: Silver
 						ach(17275),	-- Forbidden Reach Rush Advanced: Gold
 					},
 				}),
-				q(73065, {	-- Forbidden Reach Rush - Reverse
+				dragonridingrace(73065, {	-- Forbidden Reach Rush - Reverse
 					["provider"] = { "n", 200417 },	-- Bronze Timekeeper
 					["coord"] = { 49.4, 59.8, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17276),	-- Forbidden Reach Rush Reverse: Bronze
 						ach(17277),	-- Forbidden Reach Rush Reverse: Silver
 						ach(17278),	-- Forbidden Reach Rush Reverse: Gold
 					},
 				}),
-				q(73020, {	-- Morqut Ascent
+				dragonridingrace(73020, {	-- Morqut Ascent
 					["provider"] = { "n", 200212 },	-- Bronze Timekeeper
 					["coord"] = { 31.4, 65.9, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17223),	-- Morqut Ascent: Bronze
 						ach(17224),	-- Morqut Ascent: Silver
 						ach(17225),	-- Morqut Ascent: Gold
 					},
 				}),
-				q(73023, {	-- Morqut Ascent - Advanced
+				dragonridingrace(73023, {	-- Morqut Ascent - Advanced
 					["provider"] = { "n", 200212 },	-- Bronze Timekeeper
 					["coord"] = { 31.4, 65.9, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17237),	-- Morqut Ascent Advanced: Bronze
 						ach(17238),	-- Morqut Ascent Advanced: Silver
 						ach(17239),	-- Morqut Ascent Advanced: Gold
 					},
 				}),
-				q(73024, {	-- Morqut Ascent - Reverse
+				dragonridingrace(73024, {	-- Morqut Ascent - Reverse
 					["provider"] = { "n", 200212 },	-- Bronze Timekeeper
 					["coord"] = { 31.4, 65.9, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17240),	-- Morqut Ascent Reverse: Bronze
 						ach(17241),	-- Morqut Ascent Reverse: Silver
 						ach(17242),	-- Morqut Ascent Reverse: Gold
 					},
 				}),
-				q(73029, {	-- Southern Reach Route
+				dragonridingrace(73029, {	-- Southern Reach Route
 					["provider"] = { "n", 200247 },	-- Bronze Timekeeper
 					["coord"] = { 63.6, 84.3, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17252),	-- Southern Reach Route: Bronze
 						ach(17253),	-- Southern Reach Route: Silver
 						ach(17254),	-- Southern Reach Route: Gold
 					},
 				}),
-				q(73030, {	-- Southern Reach Route - Advanced
+				dragonridingrace(73030, {	-- Southern Reach Route - Advanced
 					["provider"] = { "n", 200247 },	-- Bronze Timekeeper
 					["coord"] = { 63.6, 84.3, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17255),	-- Southern Reach Route Advanced: Bronze
 						ach(17256),	-- Southern Reach Route Advanced: Silver
 						ach(17257),	-- Southern Reach Route Advanced: Gold
 					},
 				}),
-				q(73032, {	-- Southern Reach Route - Reverse
+				dragonridingrace(73032, {	-- Southern Reach Route - Reverse
 					["provider"] = { "n", 200247 },	-- Bronze Timekeeper
 					["coord"] = { 63.6, 84.3, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17258),	-- Southern Reach Route Reverse: Bronze
 						ach(17259),	-- Southern Reach Route Reverse: Silver
 						ach(17260),	-- Southern Reach Route Reverse: Gold
 					},
 				}),
-				q(73017, {	-- Stormsunder Crater Circuit
+				dragonridingrace(73017, {	-- Stormsunder Crater Circuit
 					["provider"] = { "n", 200183 },	-- Bronze Timekeeper
 					["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17214),	-- Stormsunder Crater Circuit: Bronze
 						ach(17215),	-- Stormsunder Crater Circuit: Silver
 						ach(17216),	-- Stormsunder Crater Circuit: Gold
 					},
 				}),
-				q(73018, {	-- Stormsunder Crater Circuit - Advanced
+				dragonridingrace(73018, {	-- Stormsunder Crater Circuit - Advanced
 					["provider"] = { "n", 200183 },	-- Bronze Timekeeper
 					["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17217),	-- Stormsunder Crater Circuit Advanced: Bronze
 						ach(17218),	-- Stormsunder Crater Circuit Advanced: Silver
 						ach(17219),	-- Stormsunder Crater Circuit Advanced: Gold
 					},
 				}),
-				q(73019, {	-- Stormsunder Crater Circuit - Reverse
+				dragonridingrace(73019, {	-- Stormsunder Crater Circuit - Reverse
 					["provider"] = { "n", 200183 },	-- Bronze Timekeeper
 					["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(191140),	-- Bronze Timepiece
 						ach(17220),	-- Stormsunder Crater Circuit Reverse: Bronze
 						ach(17221),	-- Stormsunder Crater Circuit Reverse: Silver
 						ach(17222),	-- Stormsunder Crater Circuit Reverse: Gold
 					},
 				}),
-			})),
+			}),
 		}),
 	}),
 })));
