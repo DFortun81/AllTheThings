@@ -139,6 +139,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						i(205205),	-- Shadowflame Shalewing (MOUNT!)
 					},
 				}),
+				ach(17878, {	-- Me Want Bite
+					["provider"] = { "i", 205684 },	-- Forbidden Flounder
+				}),
 				ach(17765),	-- What We Wear In The Shadowflame
 				-- Guild Achievements
 				ach(18177),	-- Aberrus, the Shadowed Crucible Guild Run
@@ -183,6 +186,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 			n(DROPS, {
 				i(205876, {	-- Highland Drake: Embodiment of the Hellforged (DM!)
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
+				}),
+				i(205684, {	-- Forbidden Flounder
+					["crs"] = { 201579 },	-- Magmorax
 				}),
 				i(204975, {	-- Formula: Enchant Weapon - Shadowflame Wreathe (RECIPE!)
 					["crs"] = { 201579 },	-- Magmorax

@@ -789,6 +789,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["description"] = "Becomes available in the Endmire north of Darkhaven after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn (technically this doesn't stay in your inventory, but i think this is a better way to display it - when it was added as a drop, the rare still showed up as something you needed to do, vs 'cost' that will disappear as soon as this quest is done)
+					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
 						i(182590),	-- Vinewormed Coin Pouch
 					}
@@ -796,6 +797,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				q(61840, {	-- Vineroot on the Menu
 					["sourceQuests"] = { 61839 },	-- Nipping at the Undergrowth
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
 						i(182591),	-- Vinecovered Infused Rubies
 					}
@@ -803,6 +805,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				q(61842, {	-- Vineroot Will Not Do
 					["sourceQuests"] = { 61840 },	-- Vineroot on the Menu
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
 						i(182592),	-- Infused Endmire Fruit
 					}
@@ -810,6 +813,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				q(61844, {	-- Hungry Hungry Gorger
 					["sourceQuests"] = { 61842 },	-- Vineroot Will Not Do
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
 						i(182593),	-- Sinrunner Carving
 					}
@@ -817,6 +821,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				q(62044, {	-- Standing Toe To Toe
 					["sourceQuests"] = { 61844 },	-- Hungry Hungry Gorger
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
 						i(182594),	-- A Sparkling Ruby Necklace
 					}
@@ -824,6 +829,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				q(62045, {	-- Ready for More
 					["sourceQuests"] = { 62044 },	-- Standing Toe To Toe
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
 						i(182586, {	-- A Venthyr Arm Holding a Cudgel
 							i(182588), -- A Bloody Hand
@@ -834,6 +840,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				q(62046, {	-- A New Pack
 					["sourceQuests"] = { 62045 },	-- Ready for More
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["g"] = {
 						i(182589, {	-- Loyal Gorger (MOUNT!)
 							-- tagged with cost here so that it shows under the Rare for the start of the quest chain item

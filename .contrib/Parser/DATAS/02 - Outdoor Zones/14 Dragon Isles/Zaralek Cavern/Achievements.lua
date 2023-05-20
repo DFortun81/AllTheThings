@@ -209,16 +209,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				crit(3, {	-- The Ancient Bargain
 					["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				}),
-				crit(5, {	-- Inherited Sin
+				crit(4, {	-- Inherited Sin
 					["sourceQuests"] = {
 						74562,	-- Break Them Out
 						74563,	-- Worst of the Worst
 					},
 				}),
-				crit(6, {	-- Inevitable Confrontation
+				crit(5, {	-- Inevitable Confrontation
 					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
 				}),
-				crit(7, {	-- A Flame, Extinguished
+				crit(6, {	-- A Flame, Extinguished
 					-- Confirm + TODO: ["sourceQuests"] = { 75417 },	-- ???
 				}),
 			}),

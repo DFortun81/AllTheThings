@@ -3053,11 +3053,7 @@ _.Zones =
 				}),
 				n(97009, {	-- Jawknee <Axe Merchant>
 					["coord"] = { 53.8, 61.6, LEGION_DALARAN },
-					["groups"] = {
-						i(44642),	-- Dalaran Axe
-						i(44640),	-- Dalaran Great Axe
-						i(44654),	-- Dalaran Spear
-					},
+					["sym"] = {{"sub", "common_vendor", 29496}},	-- Kerta the Bold
 				}),
 				n(96483,  {	-- Jepetto Joybuzz <Toymaker>
 					["coord"] = { 43.6, 45.6, LEGION_DALARAN },

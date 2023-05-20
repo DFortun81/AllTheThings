@@ -635,6 +635,7 @@ i(200788);	-- Mantacorn Horns
 i(200843);	-- Severely Chipped Broadsword
 i(200801);	-- Gilded Statuette
 i(200779);	-- Lava Jars
+i(200790);	-- Pungent Soup Spices
 i(191850);	-- Broken Severite Blade Tip
 i(191851);	-- Dull Draconium Weapon Head
 i(197862);	-- Primary Security Disc

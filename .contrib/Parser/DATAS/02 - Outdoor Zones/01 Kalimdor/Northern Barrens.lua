@@ -4307,6 +4307,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						71001,	-- Mercenary Shredder
 					},
 				}),
+				i(5020, {	-- Kolkar Booty Key
+					["timeline"] = { "added 1.11.1.5462" },
+					["crs"] = {
+						3394,	-- Barak Kodobane
+						3274,	-- Kolkar Pack Runner
+						3273,	-- Kolkar Stormer
+						3272,	-- Kolkar Wrangler
+					},
+				}),
 				i(97990, {	-- Raptorhide Boxing Gloves (still drops but has no purpose)
 					["timeline"] = { "added 5.3.0.16767" },
 				}),

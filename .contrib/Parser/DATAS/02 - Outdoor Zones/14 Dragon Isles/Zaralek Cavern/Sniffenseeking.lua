@@ -79,7 +79,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["g"] = {
 							i(205185),	-- Muddy Key
 							i(205186),	-- Sticky Key
-							i(205911),	-- Mysterious Incense
 						},
 					}),
 					q(75397, {	-- Those Rascally Worms
@@ -96,14 +95,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75996, {	-- Your Weight in Gold
 						["coord"] = { 58.5, 51.8, ZARALEK_CAVERN },
-						["g"] = {
-							i(205909),	-- Stretched Canvas
-						},
 					}),
 					q(75620, {	-- Liars in Light
 						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
 						["g"] = {
-							i(205913),	-- Blank Notebook
 							i(205202),	-- Small Key
 						},
 					}),
@@ -120,14 +115,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["coord"] = { 55.9, 52, ZARALEK_CAVERN },
 						["g"] = {
 							i(205689),	-- Champion's Crystal
-							i(205907),	-- Soaked Totem
 						},
 					}),
 					q(75517, {	-- Sneak and Sniff
 						["coord"] = { 56.9, 51.4, ZARALEK_CAVERN },
 						["g"] = {
 							i(205412),	-- Jangly Key
-							i(205910),	-- Bubbling Elixir
 						},
 					}),
 					q(76081, {	-- Liars of Spirit
@@ -139,7 +132,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(76014, {  -- Living Statue
 						["g"] = {
 							i(205938),  -- Heated Titan Key
-							i(205912),	-- Leather-Wrapped Flask
 						},
 					}),
 					q(76027, {	-- Flapping and Screaming
@@ -149,6 +141,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 				}),
+				-- Quest Starting Items... apparently random on any digs
+				n(DROPS, sharedData({
+					["description"] = "Randomly available to pick up during a Dig.",
+				},{
+					i(205913),	-- Blank Notebook
+					i(205910),	-- Bubbling Elixir
+					i(205366),	-- Dripping Clay Pot
+					i(205912),	-- Leather-Wrapped Flask
+					i(205911),	-- Mysterious Incense
+					i(205907),	-- Soaked Totem
+					i(205909),	-- Stretched Canvas
+				})),
 				n(QUESTS, {
 					-- Proof of Myrrit --
 					q(74876, {	-- The Buddy System
@@ -235,15 +239,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(204985),  -- 2x Barter Brick
 						},
 					}),
-					--[[
 					q(75765, {	-- Liquid Art
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205366 },	-- Dripping Clay Pot
-						["coord"] = { x, y, ZARALEK_CAVERN },
+						["coord"] = { 55.0, 48.9, ZARALEK_CAVERN },
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},
 					}),
+					--[[
 					q(75766, {	-- Ruby in the Rough
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205900 },	-- Shimmering Draconic Gem
@@ -278,6 +282,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205342),	-- Loamm Niffen Insignia
 					i(206009),	-- Ouroboros Tablet
 					i(206010),	-- Designs of Flesh
+					i(206014, {	-- Ouroboros Tablet
+						["cost"] = {
+							{ "i", 206009, 1 },	-- Ouroboros Tablet
+							{ "i", 206010, 1 },	-- Designs of Flesh
+						},
+					}),
 				}),
 			},
 		}),

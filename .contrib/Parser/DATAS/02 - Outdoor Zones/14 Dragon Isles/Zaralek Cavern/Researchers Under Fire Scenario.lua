@@ -48,6 +48,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(REWARDS, {
 				i(205369),	-- Appreciative Researcher's Gift
 				i(205371),	-- Appreciative Researcher's Scrounged Goods
+				i(205370),	-- Researcher's Gift
 			}),
 		}),
 	}),
@@ -57,6 +58,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(RESEARCHERS, {
 		-- Event reward hqts? --
 		q(74905),	-- At the end of event 'Titan Lockdown', unflagged after bag hqt
+		q(75627),	-- pop when Researcher's Gift was awarded
 		q(75628),	-- pop when Appreciative Researcher's Gift was awarded
 		q(75666),	-- pop when Appreciative Researcher's Scrounged Goods was awarded
 	}),

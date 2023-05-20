@@ -442,7 +442,6 @@ root(ROOTS.Unsorted, {
 				i(204171),	-- Enforcer Jennive's Signet
 				i(204172),	-- Enforcer Tera's Signet
 				i(204173),	-- Enforcer Horb's Signet
-				i(205366),	-- Dripping Clay Pot
 				i(205410),	-- Pungent Morsel
 				i(205795),	-- Wriggling Worm
 				i(205900),	-- Shimmering Draconic Gem
@@ -478,7 +477,6 @@ root(ROOTS.Unsorted, {
 				i(206011),	-- Designs of Bone
 				i(206012),	-- Designs of Mind
 				i(206013),	-- Designs of Soul
-				i(206014),	-- Ouroboros Tablet
 				i(206015),	-- Ouroboros Tablet
 				i(206016),	-- Ouroboros Tablet
 				i(206017),	-- Ouroboros Tablet
@@ -490,13 +488,10 @@ root(ROOTS.Unsorted, {
 				-- Research
 				i(205367),	-- Indebted Researcher's Gift
 				i(205368),	-- Thankful Researcher's Gift
-				i(205370),	-- Researcher's Gift
 				i(205372),	-- Indebted Researcher's Scrounged Goods
 				i(205373),	-- Researcher's Scrounged Goods
 				i(205374),	-- Thankful Researcher's Scrounged Goods
 				i(205454),	-- Researchers Wheel Barrow
-				-- Achievement
-				i(205684),	-- Forbidden Flounder
 				-- Special
 				i(205877),	-- Adventurer's Footlocker
 				i(205966),	-- Cache of Aberrus Treasures

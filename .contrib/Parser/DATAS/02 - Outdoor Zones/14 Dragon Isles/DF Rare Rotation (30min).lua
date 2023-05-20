@@ -117,7 +117,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["questID"] = 74029,
 					["g"] = {
 						bo(69859, true),
-						i(200202),	-- Tomorrow's Chains
 					},
 				}),
 				n(193258, {	-- Tempestrian <Stormbringer>
