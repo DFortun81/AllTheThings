@@ -1402,11 +1402,11 @@ end");
             }
             private static void ProcessNPCData(long npcID, Dictionary<string, object> data)
             {
-                // Do not include information about blacklisted npc data.
-                if (BLACKLISTED_NPC_IDS.TryGetValue(npcID, out bool blacklisted) && blacklisted) return;
-
                 // Do not include "Custom" NPC IDs. We use these for headers and most of these are going to be purged.
                 if (npcID < 1) return;
+
+                // Do not include information about blacklisted npc data.
+                if (BLACKLISTED_NPC_IDS.TryGetValue(npcID, out bool blacklisted) && blacklisted) return;
 
                 // Acquire the current NPC Data and add to it.
                 if (!NPC_DB.TryGetValue(npcID, out Dictionary<string, object> npcData))
@@ -1795,6 +1795,7 @@ end");
                     case "modelID":
                     case "style":
                     case "creatureID":
+                    case "npcID":
                     case "displayID":
                     case "modID":
                     case "bonusID":

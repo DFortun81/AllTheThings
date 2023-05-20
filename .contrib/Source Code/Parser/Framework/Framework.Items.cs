@@ -970,6 +970,22 @@ namespace ATT
                 ITEMS_WITH_REFERENCES[itemID] = true;
             }
 
+            public static void MarkItemAsReferenced(Dictionary<string, object> data)
+            {
+                // Mark this item as having a reference since it exists in a processed container
+                if (data.TryGetValue("itemID", out decimal itemID))
+                {
+                    MarkItemAsReferenced(itemID);
+                    MarkItemAsReferenced((long)itemID);
+
+                    // ensure marking the 'modItemID' as well (maybe someday that will be directly supported in itemID)
+                    if (data.TryGetValue("_modItemID", out itemID))
+                    {
+                        MarkItemAsReferenced(itemID);
+                    }
+                }
+            }
+
             /// <summary>
             /// Returns a specific ItemID value corresponding to how ItemID's are treated in-game since the
             /// modID/bonusID literally changes the functionality/uniqueness of an Item

@@ -699,14 +699,12 @@ namespace ATT
                 modID = Convert.ToInt64(objModID);
             }
 
-            Validate_Encounter(data);
-
             if (data.TryGetValue("categoryID", out long categoryID)) ProcessCategoryObject(data, categoryID);
             if (data.TryGetValue("creatureID", out long creatureID))
             {
                 if (data.TryGetValue("npcID", out object dupeNpcID))
                 {
-                    LogError($"Both CreatureID {creatureID} and NPCID {dupeNpcID}? --", data);
+                    LogError($"Both CreatureID {creatureID} and NPCID {dupeNpcID}?", data);
                 }
                 data["npcID"] = creatureID;
                 NPCS_WITH_REFERENCES[creatureID] = true;
@@ -759,6 +757,7 @@ namespace ATT
 
             Objects.AssignFactionID(data);
 
+            Validate_Encounter(data);
             Validate_Achievement(data);
             Validate_Criteria(data);
             Validate_Quest(data);
@@ -876,17 +875,7 @@ namespace ATT
             Objects.Merge(data);
 
             // Mark this item as having a reference since it exists in a processed container
-            if (data.TryGetValue("itemID", out decimal itemID))
-            {
-                Items.MarkItemAsReferenced(itemID);
-                Items.MarkItemAsReferenced((long)itemID);
-
-                // ensure marking the 'modItemID' as well (maybe someday that will be directly supported in itemID)
-                if (data.TryGetValue("_modItemID", out itemID))
-                {
-                    Items.MarkItemAsReferenced(itemID);
-                }
-            }
+            Items.MarkItemAsReferenced(data);
 
             return true;
         }
@@ -1255,15 +1244,15 @@ namespace ATT
             // Hash the Encounter for MergeIntos if needed
             data["_encounterHash"] = encounterID + NestedDifficultyID / 100M;
 
-            // Clean up Encounters which only have a single creatureID assigned via 'crs'
-            if (!data.ContainsKey("creatureID") && data.TryGetValue("crs", out List<object> crs) && crs.Count == 1 && crs[0].TryConvert(out long creatureID))
+            // Clean up Encounters which only have a single npcID assigned via 'crs'
+            if (!data.ContainsKey("npcID") && data.TryGetValue("crs", out List<object> crs) && crs.Count == 1 && crs[0].TryConvert(out long crID))
             {
-                data["creatureID"] = creatureID;
+                data["npcID"] = crID;
                 data.Remove("crs");
             }
 
             // Warn about Encounters with no NPCID assignment
-            if (!data.ContainsKey("creatureID") && !data.ContainsKey("crs"))
+            if (!data.ContainsKey("npcID") && !data.ContainsKey("crs"))
             {
                 switch (encounterID)
                 {
