@@ -294,25 +294,25 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				}),
 				cl(SHAMAN, {
 					-- High Warlord's Linked [Shaman]
-					i(28843),   -- High Warlord's Linked Helm
-					i(28845),   -- High Warlord's Linked Spaulders
-					i(28841),   -- High Warlord's Linked Armor
-					i(28842),   -- High Warlord's Linked Gauntlets
-					i(28844),   -- High Warlord's Linked Leggings
+					i(28843),	-- High Warlord's Linked Helm
+					i(28845),	-- High Warlord's Linked Spaulders
+					i(28841),	-- High Warlord's Linked Armor
+					i(28842),	-- High Warlord's Linked Gauntlets
+					i(28844),	-- High Warlord's Linked Leggings
 
 					-- High Warlord's Mail [Shaman]
-					i(28848),   -- High Warlord's Mail Helm
-					i(28850),   -- High Warlord's Mail Spaulders
-					i(28846),   -- High Warlord's Mail Armor
-					i(28847),   -- High Warlord's Mail Gauntlets
-					i(28849),   -- High Warlord's Mail Leggings
+					i(28848),	-- High Warlord's Mail Helm
+					i(28850),	-- High Warlord's Mail Spaulders
+					i(28846),	-- High Warlord's Mail Armor
+					i(28847),	-- High Warlord's Mail Gauntlets
+					i(28849),	-- High Warlord's Mail Leggings
 
 					-- High Warlord's Ringmail [Shaman]
-					i(31648),   -- High Warlord's Ringmail Headpiece
-					i(31650),   -- High Warlord's Ringmail Shoulders
-					i(31646),   -- High Warlord's Ringmail Chestguard
-					i(31647),   -- High Warlord's Ringmail Gloves
-					i(31649),   -- High Warlord's Ringmail Legguards
+					i(31648),	-- High Warlord's Ringmail Headpiece
+					i(31650),	-- High Warlord's Ringmail Shoulders
+					i(31646),	-- High Warlord's Ringmail Chestguard
+					i(31647),	-- High Warlord's Ringmail Gloves
+					i(31649),	-- High Warlord's Ringmail Legguards
 				}),
 				cl(MAGE, {
 					-- High Warlord's Silk [Mage]
@@ -471,9 +471,9 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 28447 },	-- General's Wyrmhide Boots
 						{"select", "itemID", 28976 },	-- Marshal's Dragonhide Belt
 						{"select", "itemID", 28977 },	-- Marshal's Dragonhide Boots
-						{"select", "itemID", 31596 },   -- Marshal's Kodohide Belt
+						{"select", "itemID", 31596 },	-- Marshal's Kodohide Belt
 						{"select", "itemID", 31597 },	-- Marshal's Kodohide Boots
-						{"select", "itemID", 29004 },   -- Marshal's Wyrmhide Belt
+						{"select", "itemID", 29004 },	-- Marshal's Wyrmhide Belt
 						{"select", "itemID", 29005 },	-- Marshal's Wyrmhide Boots
 					},
 				}),
@@ -559,7 +559,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, MAGE },
-						{"select", "itemID", 28409 },   -- General's Silk Belt
+						{"select", "itemID", 28409 },	-- General's Silk Belt
 						{"select", "itemID", 29001 },	-- Marshal's Silk Belt
 						{"select", "itemID", 28410 },	-- General's Silk Footguards
 						{"select", "itemID", 29003 },	-- Marshal's Silk Footguards
@@ -595,9 +595,9 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 28645 },	-- General's Scaled Greaves
 						{"select", "itemID", 28983 },	-- Marshal's Lamellar Belt
 						{"select", "itemID", 28985 },	-- Marshal's Lamellar Greaves
-						{"select", "itemID", 32985 },   -- Marshal's Ornamented Belt
+						{"select", "itemID", 32985 },	-- Marshal's Ornamented Belt
 						{"select", "itemID", 32987 },	-- Marshal's Ornamented Greaves
-						{"select", "itemID", 28998 },   -- Marshal's Scaled Belt
+						{"select", "itemID", 28998 },	-- Marshal's Scaled Belt
 						{"select", "itemID", 29000 },	-- Marshal's Scaled Greaves
 					},
 				}),
@@ -699,7 +699,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, ROGUE },
 						{"select", "itemID", 28423 },	-- General's Leather Belt
-						{"select", "itemID", 28422 },   -- General's Leather Boots
+						{"select", "itemID", 28422 },	-- General's Leather Boots
 						{"select", "itemID", 28986 },	-- Marshal's Leather Belt
 						{"select", "itemID", 28987 },	-- Marshal's Leather Boots
 					},
@@ -730,13 +730,13 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 28630 },	-- General's Linked Sabatons
 						{"select", "itemID", 28639 },	-- General's Mail Girdle
 						{"select", "itemID", 28640 },	-- General's Mail Sabatons
-						{"select", "itemID", 32992 },   -- General's Ringmail Girdle
+						{"select", "itemID", 32992 },	-- General's Ringmail Girdle
 						{"select", "itemID", 32993 },	-- General's Ringmail Sabatons
 						{"select", "itemID", 28990 },	-- Marshal's Linked Girdle
 						{"select", "itemID", 28991 },	-- Marshal's Linked Sabatons
-						{"select", "itemID", 28993 },   -- Marshal's Mail Girdle
+						{"select", "itemID", 28993 },	-- Marshal's Mail Girdle
 						{"select", "itemID", 28994 },	-- Marshal's Mail Sabatons
-						{"select", "itemID", 32995 },   -- Marshal's Ringmail Girdle
+						{"select", "itemID", 32995 },	-- Marshal's Ringmail Girdle
 						{"select", "itemID", 32996 },	-- Marshal's Ringmail Sabatons
 					},
 				}),
@@ -795,12 +795,16 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, WARLOCK },
 						{"merge"},	-- Merge all sub results for processing
-						{"exclude", "itemID", 24553 },	-- General's Dreadweave Hood
-						{"exclude", "itemID", 24554 },	-- General's Dreadweave Mantle
+						{"exclude", "itemID",
+							24553,	-- General's Dreadweave Hood
+							24554,	-- General's Dreadweave Mantle
+						},
 						-- Crieve NOTE: This list did not originally have the Dreadweave Hood/Mantle. Not sure if that was a bug or intentional.
-						{"select", "itemID", 147615 },	-- General's Felweave Belt
-						{"select", "itemID", 147616 },	-- General's Felweave Boots
-						{"select", "itemID", 147772 },  -- General's Felweave Cuffs
+						{"select", "itemID",
+							147615,	-- General's Felweave Belt
+							147616,	-- General's Felweave Boots
+							147772,	-- General's Felweave Cuffs
+						},
 					},
 				}),
 				i(24553, {	-- Gladiator's Dreadweave Hood
@@ -1422,7 +1426,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32788 },	-- Veteran's Kodohide Boots
 						{"select", "itemID", 32821 },	-- Veteran's Wyrmhide Bracers
 						{"select", "itemID", 32808 },	-- Veteran's Wyrmhide Belt
-						{"select", "itemID", 32796 },   -- Veteran's Wyrmhide Boots
+						{"select", "itemID", 32796 },	-- Veteran's Wyrmhide Boots
 					},
 				}),
 				i(31968, {	-- Merciless Gladiator's Dragonhide Helm
@@ -1541,7 +1545,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32990 },	-- Veteran's Ornamented Greaves
 						{"select", "itemID", 32819 },	-- Veteran's Scaled Bracers
 						{"select", "itemID", 32806 },	-- Veteran's Scaled Belt
-						{"select", "itemID", 32794 },   -- Veteran's Scaled Greaves
+						{"select", "itemID", 32794 },	-- Veteran's Scaled Greaves
 					},
 				}),
 				i(31997, {	-- Merciless Gladiator's Lamellar Helm
@@ -1676,7 +1680,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32792 },	-- Veteran's Mail Sabatons
 						{"select", "itemID", 32997 },	-- Veteran's Ringmail Bracers
 						{"select", "itemID", 32998 },	-- Veteran's Ringmail Girdle
-						{"select", "itemID", 32999 },   -- Veteran's Ringmail Sabatons
+						{"select", "itemID", 32999 },	-- Veteran's Ringmail Sabatons
 					},
 				}),
 				i(32004, {	-- Merciless Gladiator's Linked Armor
@@ -2169,7 +2173,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33886 },	-- Vindicator's Kodohide Boots
 						{"select", "itemID", 33917 },	-- Vindicator's Wyrmhide Bracers
 						{"select", "itemID", 33915 },	-- Vindicator's Wyrmhide Belt
-						{"select", "itemID", 33916 },   -- Vindicator's Wyrmhide Boots
+						{"select", "itemID", 33916 },	-- Vindicator's Wyrmhide Boots
 					},
 				}),
 				i(33672, {	-- Vengeful Gladiator's Dragonhide Helm
@@ -2288,7 +2292,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33905 },	-- Vindicator's Ornamented Greaves
 						{"select", "itemID", 33910 },	-- Vindicator's Scaled Bracers
 						{"select", "itemID", 33909 },	-- Vindicator's Scaled Belt
-						{"select", "itemID", 33911 },   -- Vindicator's Scaled Greaves
+						{"select", "itemID", 33911 },	-- Vindicator's Scaled Greaves
 					},
 				}),
 				i(33697, {	-- Vengeful Gladiator's Lamellar Helm
@@ -2423,7 +2427,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33899 },	-- Vindicator's Mail Sabatons
 						{"select", "itemID", 33906 },	-- Vindicator's Ringmail Bracers
 						{"select", "itemID", 33907 },	-- Vindicator's Ringmail Girdle
-						{"select", "itemID", 33908 },   -- Vindicator's Ringmail Sabatons
+						{"select", "itemID", 33908 },	-- Vindicator's Ringmail Sabatons
 					},
 				}),
 				i(33708, {	-- Vengeful Gladiator's Linked Helm
@@ -2966,7 +2970,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35139 },	-- Guardian's Kodohide Boots
 						{"select", "itemID", 35180 },	-- Guardian's Wyrmhide Bracers
 						{"select", "itemID", 35165 },	-- Guardian's Wyrmhide Belt
-						{"select", "itemID", 35150 },   -- Guardian's Wyrmhide Boots
+						{"select", "itemID", 35150 },	-- Guardian's Wyrmhide Boots
 					},
 				}),
 				i(34999, {	-- Brutal Gladiator's Dragonhide Helm
@@ -3085,7 +3089,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35145 },	-- Guardian's Ornamented Greaves
 						{"select", "itemID", 35178 },	-- Guardian's Scaled Bracers
 						{"select", "itemID", 35163 },	-- Guardian's Scaled Belt
-						{"select", "itemID", 35148 },   -- Guardian's Scaled Greaves
+						{"select", "itemID", 35148 },	-- Guardian's Scaled Greaves
 					},
 				}),
 				i(35029, {	-- Brutal Gladiator's Lamellar Helm
@@ -3220,7 +3224,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35143 },	-- Guardian's Mail Sabatons
 						{"select", "itemID", 35177 },	-- Guardian's Ringmail Bracers
 						{"select", "itemID", 35162 },	-- Guardian's Ringmail Girdle
-						{"select", "itemID", 35147 },   -- Guardian's Ringmail Sabatons
+						{"select", "itemID", 35147 },	-- Guardian's Ringmail Sabatons
 					},
 				}),
 				i(35044, {	-- Brutal Gladiator's Linked Helm

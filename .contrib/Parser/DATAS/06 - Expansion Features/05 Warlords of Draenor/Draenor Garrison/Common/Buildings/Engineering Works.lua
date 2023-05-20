@@ -39,8 +39,10 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sym"] = {
 								{"select","npcID",87552},{"pop"},	-- Nik Steelrings <Engineering Plans> (H)
-								{"exclude", "itemID", 111921 },	-- 
-								{"exclude", "itemID", 119299 },	-- 
+								{"exclude", "itemID",
+									111921,	-- Draenor Engineering
+									119299,	-- Secret of Draenor Engineering
+								},
 							},
 							["g"] = {
 								i(111921, {	-- Draenor Engineering
@@ -49,7 +51,7 @@ _.ExpansionFeatures =
 										recipe(169080),	-- Gearspring Parts
 										recipe(162204),	-- Goblin Glider Kit
 										recipe(173308),	-- Mecha-Blast Rocket
-										i(120134),		-- Recipe: Secrets of Draenor Engineering
+										i(120134),	-- Recipe: Secrets of Draenor Engineering
 										recipe(173309),	-- Shieldtronic Shield
 										recipe(162207),	-- Stealthman 54
 										recipe(169140),	-- Ultimate Gnomish Army Knife
@@ -61,8 +63,10 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["sym"] = {
 								{"select","npcID",87065},{"pop"},	-- Sean Catchpole <Engineering Plans> (A)
-								{"exclude", "itemID", 111921 },	-- 
-								{"exclude", "itemID", 119299 },	-- 
+								{"exclude", "itemID",
+									111921,	-- Draenor Engineering
+									119299,	-- Secret of Draenor Engineering
+								},
 							},
 							["g"] = {
 								i(111921, {	-- Draenor Engineering
@@ -71,7 +75,7 @@ _.ExpansionFeatures =
 										recipe(169080),	-- Gearspring Parts
 										recipe(162204),	-- Goblin Glider Kit
 										recipe(173308),	-- Mecha-Blast Rocket
-										i(120134),		-- Recipe: Secrets of Draenor Engineering
+										i(120134),	-- Recipe: Secrets of Draenor Engineering
 										recipe(173309),	-- Shieldtronic Shield
 										recipe(162207),	-- Stealthman 54
 										recipe(169140),	-- Ultimate Gnomish Army Knife
