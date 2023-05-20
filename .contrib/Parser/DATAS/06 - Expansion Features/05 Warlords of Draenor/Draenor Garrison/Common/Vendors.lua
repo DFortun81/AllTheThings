@@ -452,7 +452,7 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 						i(122599, {	-- Tome of Sorcerous Elements
-							["spellID"] = 0,
+							["f"] = MISC,
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 							["g"] = {
 								recipe(181637),	-- Transmute: Sorcerous Air to Earth
@@ -754,7 +754,7 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 						i(122599, {	-- Tome of Sorcerous Elements
-							["spellID"] = 0,
+							["f"] = MISC,
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 							["g"] = {
 								recipe(181637),	-- Transmute: Sorcerous Air to Earth
