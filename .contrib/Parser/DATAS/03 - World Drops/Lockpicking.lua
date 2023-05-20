@@ -74,7 +74,7 @@ root(ROOTS.WorldDrops, {
 				i(6375),	-- Formula: Enchant Bracer - Lesser Versatility / CLASSIC: Formula: Enchant Bracer - Lesser Spirit (RECIPE!)
 				i(5002),	-- Glowing Green Talisman
 				i(11969),	-- Jacinth Circle
-				i(6454),	-- Manula: Strong Anti-Venom
+				i(6454),	-- Manual: Strong Anti-Venom
 				i(12006),	-- Meadow Ring
 				i(7360),	-- Pattern: Dark Leather Gloves
 				i(5972),	-- Pattern: Fine Leatheere Pants
