@@ -27,39 +27,41 @@ app.PrintDebugPrior = function(...)
 		app.DEBUG_PRINT_LAST = GetTimePreciseSec();
 	end
 end
---[[ Performance Tracking section ]
-(function()
-	app.__perf = {};
-	app.PrintPerf = function()
-		local h = app.__perf;
-		if h then
-			local blob, line = {}, {};
-			for type,typeData in pairs(h) do
-				for k,v in pairs(typeData) do
-					if not k:find("_Time") then
-						line[1] = type;
-						line[2] = k;
-						line[3] = v;
-						line[4] = typeData[k.."_Time"];
-						tinsert(blob, table.concat(line, ","))
-					end
+--[[ Performance Tracking ]
+do
+local pairs, tinsert, table_concat
+	= pairs, tinsert, table.concat;
+app.__perf = {};
+app.PrintPerf = function()
+	local h = app.__perf;
+	if h then
+		local blob, line = {}, {};
+		for type,typeData in pairs(h) do
+			for k,v in pairs(typeData) do
+				if not k:find("_Time") then
+					line[1] = type;
+					line[2] = k;
+					line[3] = v;
+					line[4] = typeData[k.."_Time"];
+					tinsert(blob, table_concat(line, ","))
 				end
 			end
-			local csv = table.concat(blob, "\n");
-			app:ShowPopupDialogWithMultiLineEditBox(csv);
+		end
+		local csv = table_concat(blob, "\n");
+		app:ShowPopupDialogWithMultiLineEditBox(csv);
+	end
+end
+app.ClearPerf = function()
+	local h = app.__perf;
+	if h then
+		for _,typeData in pairs(h) do
+			wipe(typeData);
 		end
 	end
-	app.ClearPerf = function()
-		local h = app.__perf;
-		if h then
-			for _,typeData in pairs(h) do
-				wipe(typeData);
-			end
-		end
-		app.print("Cleared Performance Stats");
-	end
-end)(); --]]
--- app.DEBUG_PRINT = true;
+	app.print("Cleared Performance Stats");
+end
+end	-- Performance Tracking --]]
+app.DEBUG_PRINT = true;
 
 -- Create an Event Processor.
 local events = {};
