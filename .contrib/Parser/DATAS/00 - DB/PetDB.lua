@@ -439,20 +439,50 @@ i(85513, 802);		-- Thundering Serpent Hatchling
 i(85447, 652);		-- Tiny Goldfish
 -- NPC --
 n(61325, 635);		-- Adder
+n(62182, 838);		-- Amethyst Shale Hatchling
 n(62693, 641);		-- Arctic Hare
 n(60649, 374);		-- Black Lamb
+n(61257, 398);		-- Black Rat
 n(62695, 639);		-- Borean Marmot
+n(62019, 459);		-- Cat
+n(62664, 646);		-- Chicken
 n(62116, 468);		-- Creepy Crawly
+n(62927, 559);		-- Crimson Geode
+n(62922, 554);		-- Crimson Shale Hatchling
+n(62925, 556);		-- Crystal Beetle
+n(62924, 555);		-- Deepholm Cockroach
+n(62852, 537);		-- Dragonbone Hatchling
 n(62115, 467);		-- Dung Beetle
+n(61253, 396);		-- Dusk Spiderling
+n(62915, 837);		-- Emerald Shale Hatchling
+n(61165, 447);		-- Fawn
+n(62916, 756);		-- Fungal Moth
+n(62818, 647);		-- Grizzly Squirrel
 n(61751, 448);		-- Hare
+n(62819, 534);		-- Imperial Eagle Chick
+n(61677, 633);		-- Mountain Skunk
+n(61143, 385);		-- Mouse
 n(62697, 530);		-- Oily Slimeling
+n(61141, 386);		-- Prarie Dog
 n(61080, 378);		-- Rabbit
+n(61258, 399);		-- Rat Snake
+n(61169, 424);		-- Roach
 n(61158, 388);		-- Shore Crab
+n(61255, 397);		-- Skunk
+n(61071, 419);		-- Small Frog
+n(61142, 387);		-- Snake
 n(62114, 466);		-- Spiny Lizard
 n(61081, 379);		-- Squirrel
+n(62921, 553);		-- Stowaway Rat
+n(62954, 675);		-- Stormwind Rat
+n(61160, 389);		-- Tiny Harvester
 n(61369, 420);		-- Toad
+n(62181, 480);		-- Topaz Shale Hatchling
 n(62835, 536);		-- Tundra Penguin
+n(62118, 469);		-- Twilight Beetle
+n(62117, 470);		-- Twilight Spider
 n(61367, 418);		-- Water Snake
+n(61259, 400);		-- Widow Spiderling
 
 -----------------
 -- PATCH 5.0.3 --
@@ -1121,6 +1151,10 @@ n(143035, 2376);	-- Valley Chicken
 n(143050, 2392);	-- Young Sand Sifter
 -- SPECIAL --
 i(153541, 2143);	-- Tottle
+-- TRAINER --
+n(142237, 2368);	-- Scales
+n(142236, 2370);	-- Breaker
+n(142235, 2371);	-- Stickers
 
 -----------------
 -- PATCH 8.1.0 --
@@ -1169,6 +1203,26 @@ i(165907, 2535);	-- Wicker Wraith
 i(166455, 2550);	-- Zur'aj the Depleted
 -- NPC --
 n(148517, 2537);	-- Baby Zandalari Raptor
+-- TRAINER --
+n(145968, 2485);	-- Leper Rat
+n(145971, 2486);	-- Cockroach
+n(145986, 2487);	-- Automated Spider Tank
+n(145988, 2488);	-- Pulverizer Bot Mk 6001
+n(145990, 2489);	-- Autonomous Omni Chopper
+n(145995, 2490);	-- Automated Drilling Machine
+n(146002, 2492);	-- Gnomeregan Guard Wolf
+n(146003, 2493);	-- Gnomeregan Guard Tiger
+n(146004, 2494);	-- Gnomeregan Guard Mechanostrider
+n(146005, 2495);	-- Bloated Leper Rat
+n(146006, 2496);	-- Gnomish Rocket Chicken
+n(146148, 2497);	-- Ultra Safe Napalm Carrier
+n(146151, 2498);	-- Freeze Ray Robot Prototype
+n(146150, 2499);	-- Sludge Disposal Unit
+n(146176, 2500);	-- Accelerated Defrosting Unit
+n(146001, 2501);	-- Prototype Annoy-O-Tron
+n(146183, 2502);	-- Living Napalm
+n(146182, 2503);	-- Living Sludge
+n(146181, 2504);	-- Living Permafrost
 
 -----------------
 -- PATCH 8.1.5 --
@@ -1290,7 +1344,55 @@ n(154796, 2675);	-- Clanking Scrapsorter
 n(154798, 2676);	-- Malfunctioning Microbot
 n(154803, 2677);	-- Twilight Whelpling
 n(154814, 2678);	-- Abyssal Slitherling
+n(155267, 2751);	-- Risen Guard
+n(155268, 2752);	-- Risen Noble
+n(155966, 2768);	-- Smokey
+n(155967, 2769);	-- Pyro
+n(155968, 2770);	-- Infectus
+n(155971, 2771);	-- Plagued Mailemental
+n(155972, 2772);	-- Soul Collector
+n(155974, 2774);	-- Lefty
 -- TRAINER --
+n(150858, 2592);	-- Blackmane
+n(150906, 2593);	-- Plague Roach
+n(150907, 2594);	-- Plague Rat
+n(150908, 2595);	-- Diseased Rat
+n(150910, 2596);	-- Lost Soul
+n(150911, 2597);	-- Crypt Fiend
+n(150912, 2598);	-- Rotting Scavenger
+n(150913, 2599);	-- Wailing Haunt
+n(150914, 2600);	-- Wandering Phantasm
+n(150915, 2601);	-- Gargy
+n(150917, 2602);	-- Huncher
+n(150918, 2603);	-- Tommy the Cruel
+n(150919, 2605);	-- Risen Villager
+n(150920, 2606);	-- Plague Whelp
+n(150921, 2607);	-- Zasz the Tiny
+n(150922, 2608);	-- Sludge Belcher
+n(150923, 2609);	-- Belchling
+n(150924, 2611);	-- Tormented Spirit
+n(150925, 2612);	-- Liz the Tormentor
+n(150929, 2613);	-- Nefarious Terry
+n(154910, 2723);	-- Prince Wiggletail
+n(154911, 2724);	-- Chomp
+n(154912, 2725);	-- Silence
+n(154913, 2726);	-- Shadowspike Lurker
+n(154914, 2727);	-- Pearlhusk Crawler
+n(154915, 2728);	-- Elderspawn of Nalaada
+n(154916, 2729);	-- Ravenous Scalespawn
+n(154917, 2730);	-- Mindshackle
+n(154918, 2731);	-- Kelpstone
+n(154919, 2732);	-- Voltgorger
+n(154920, 2733);	-- Frenzied Knifefang
+n(154921, 2734);	-- Giant Opaline Conch
+n(154922, 2735);	-- Gnomefeaster
+n(154923, 2736);	-- Sputtertube
+n(154924, 2737);	-- Goldenbot XD
+n(154925, 2738);	-- Creakclank
+n(154926, 2739);	-- CK-9 Micro-Oppression Unit
+n(154927, 2740);	-- Unit 35
+n(154928, 2741);	-- Unit 6
+n(154929, 2742);	-- Unit 17
 
 -----------------
 -- PATCH 8.2.5 --
@@ -1994,6 +2096,7 @@ i(205026, 3524);	-- Devourer Lobstrok
 i(205118, 3535);	-- Diamondshell
 i(193377, 3294);	-- Gerald
 i(205052, 3530);	-- Miloh
+i(206040, 3581);	-- Mote of Nasz'uro (New Secret)
 i(205050, 3528);	-- Paulie
 i(205051, 3529);	-- Rango
 i(205147, 3541);	-- Ridged Shalewing
@@ -2018,6 +2121,7 @@ n(203364, 3487);	-- Scarlapod
 n(203367, 3488);	-- Deepridger
 n(203372, 3489);	-- Sunglow Cobra
 n(203377, 3490);	-- Ebonwing Moth
+n(198612, 3589);	-- Rusziona
 -- UNSORTED --
 i(205165, 3555);	-- Axel
 i(205004, 3513);	-- Azure Swoglet

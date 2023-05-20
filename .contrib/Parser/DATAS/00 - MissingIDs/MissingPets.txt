@@ -1,7 +1,7 @@
 5.0.3.15882
 pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	-- 
-pet(73),	-- 
+pet(71),	--
+pet(73),	--
 pet(154),	-- Lucky
 pet(230),	-- Macabre Marionette
 pet(257),	-- Murkimus the Gladiator
@@ -548,7 +548,7 @@ pet(2368),	-- Scales
 pet(2370),	-- Breaker
 pet(2371),	-- Stickers
 8.1.0.27934
-pet(2481),	-- 
+pet(2481),	--
 pet(2485),	-- Leper Rat
 pet(2486),	-- Cockroach
 pet(2487),	-- Automated Spider Tank
@@ -810,8 +810,8 @@ Missing in PetDB.lua
 
 5.0.3.15882
 pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	-- 
-pet(73),	-- 
+pet(71),	--
+pet(73),	--
 pet(154),	-- Lucky
 pet(230),	-- Macabre Marionette
 pet(257),	-- Murkimus the Gladiator
@@ -1657,95 +1657,19 @@ pet(2364),	-- Eighty Eight
 pet(2365),	-- Turbo
 pet(2366),	-- Whiplash
 pet(2367),	-- Jammer
-8.0.1.26624
-pet(2368),	-- Scales
-pet(2370),	-- Breaker
-pet(2371),	-- Stickers
 8.1.0.27934
-pet(2481),	-- 
-pet(2485),	-- Leper Rat
-pet(2486),	-- Cockroach
-pet(2487),	-- Automated Spider Tank
-pet(2488),	-- Pulverizer Bot Mk 6001
-pet(2489),	-- Autonomous Omni Chopper
-pet(2490),	-- Automated Drilling Machine
-pet(2492),	-- Gnomeregan Guard Wolf
-pet(2493),	-- Gnomeregan Guard Tiger
-pet(2494),	-- Gnomeregan Guard Mechanostrider
-pet(2495),	-- Bloated Leper Rat
-pet(2496),	-- Gnomish Rocket Chicken
-pet(2497),	-- Ultra Safe Napalm Carrier
-pet(2498),	-- Freeze Ray Robot Prototype
-pet(2499),	-- Sludge Disposal Unit
-pet(2500),	-- Accelerated Defrosting Unit
-pet(2501),	-- Prototype Annoy-O-Tron
-pet(2502),	-- Living Napalm
-pet(2503),	-- Living Sludge
-pet(2504),	-- Living Permafrost
+pet(2481),	--
 8.1.0.28048
 pet(2480),	-- Test Pet
 8.1.5.29141
-pet(2146),	-- Perculia's Peculiar Parrot
+pet(2146),	-- Perculia's Peculiar Parrot (Has an item to learn, but is unobtainable?)
 8.2.0.30080
-pet(2592),	-- Blackmane
-pet(2593),	-- Plague Roach
-pet(2594),	-- Plague Rat
-pet(2595),	-- Diseased Rat
-pet(2596),	-- Lost Soul
-pet(2597),	-- Crypt Fiend
-pet(2598),	-- Rotting Scavenger
-pet(2599),	-- Wailing Haunt
-pet(2600),	-- Wandering Phantasm
-pet(2601),	-- Gargy
-pet(2602),	-- Huncher
-pet(2603),	-- Tommy the Cruel
-pet(2605),	-- Risen Villager
-pet(2606),	-- Plague Whelp
-pet(2607),	-- Zasz the Tiny
-pet(2608),	-- Sludge Belcher
-pet(2609),	-- Belchling
-pet(2611),	-- Tormented Spirit
-pet(2612),	-- Liz the Tormentor
-pet(2613),	-- Nefarious Terry
-8.2.0.30168
-pet(2723),	-- Prince Wiggletail
-pet(2724),	-- Chomp
-pet(2725),	-- Silence
-pet(2726),	-- Shadowspike Lurker
-pet(2727),	-- Pearlhusk Crawler
-pet(2728),	-- Elderspawn of Nalaada
-pet(2729),	-- Ravenous Scalespawn
-pet(2730),	-- Mindshackle
-pet(2731),	-- Kelpstone
-pet(2732),	-- Voltgorger
-pet(2733),	-- Frenzied Knifefang
-pet(2734),	-- Giant Opaline Conch
-pet(2735),	-- Gnomefeaster
-pet(2736),	-- Sputtertube
-pet(2737),	-- Goldenbot XD
-pet(2738),	-- Creakclank
-pet(2739),	-- CK-9 Micro-Oppression Unit
-pet(2740),	-- Unit 35
-pet(2741),	-- Unit 6
-pet(2742),	-- Unit 17
-8.2.0.30262
-pet(2751),	-- Risen Guard
-pet(2752),	-- Risen Noble
-8.2.0.30495
-pet(2768),	-- Smokey
-pet(2769),	-- Pyro
-pet(2770),	-- Infectus
-pet(2771),	-- Plagued Mailemental
-pet(2772),	-- Soul Collector
-pet(2774),	-- Lefty
 10.1.5.49516
 pet(3587),	-- Lifelike Mechanical Duckling
 pet(3588),	-- Iggy
-pet(3589),	-- Rusziona
 pet(3590),	-- Belastrasza
 pet(3596),	-- Kabluey
 10.1.5.49595
-pet(3581),	-- Mote of Nasz'uro
 pet(3597),	-- Princess Vorquinstrasza
 pet(3598),	-- Zhusadormu
 pet(3599),	-- Zalethgos

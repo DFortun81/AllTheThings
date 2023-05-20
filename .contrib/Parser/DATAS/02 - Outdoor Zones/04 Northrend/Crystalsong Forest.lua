@@ -28,14 +28,10 @@ root(ROOTS.Zones, {
 					["sym"] = {{"select","speciesID",
 						378,	-- Rabbit
 						379,	-- Squirrel
+						1238,	-- Unborn Val'kyr
 					}},
 					["g"] = {
-						p(385, {	-- Mouse
-							["crs"] = { 61143 },	-- Mouse
-						}),
-						p(1238, {	-- Unborn Val'kyr
-							["crs"] = { 71163 },	-- Unborn Val'kyr
-						}),
+						pet(385),	-- Mouse
 					},
 				})),
 				-- #endif

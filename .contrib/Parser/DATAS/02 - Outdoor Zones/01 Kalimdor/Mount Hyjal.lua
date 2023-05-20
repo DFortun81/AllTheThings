@@ -156,8 +156,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				p(503, {	-- Silky Moth
 					["crs"] = { 62373 },	-- Silky Moth
 				}),
-				p(469, {	-- Twilight Beetle
-					["crs"] = { 62118 },	-- Twilight Beetle
+				pet(469, {	-- Twilight Beetle
 					["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
 				}),
 			})),

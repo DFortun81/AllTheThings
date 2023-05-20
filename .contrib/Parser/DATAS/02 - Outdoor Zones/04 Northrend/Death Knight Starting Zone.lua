@@ -10,15 +10,15 @@ root(ROOTS.Zones, {
 					["qg"] = 163016,	-- The Lich King
 					["coord"] = { 49.5, 90.7, 1602 },
 					["classes"] = { DEATHKNIGHT },
-					["groups"] = {
-						i(174488),	-- Freezing Greatsword of the Ebon Blade
-						i(174487),	-- Unholy Greatsword of the Ebon Blade
-						i(174486),	-- Crimson Greatsword of the Ebon Blade
+					["g"] = {
 						i(174485),	-- Burning Greatsword of the Ebon Blade
-						i(174660),	-- Freezing Saber of the Ebon Blade
-						i(174661),	-- Unholy Saber of the Ebon Blade
-						i(174659),	-- Crimson Saber of the Ebon Blade
 						i(174662),	-- Burning Saber of the Ebon Blade
+						i(174486),	-- Crimson Greatsword of the Ebon Blade
+						i(174659),	-- Crimson Saber of the Ebon Blade
+						i(174488),	-- Freezing Greatsword of the Ebon Blade
+						i(174660),	-- Freezing Saber of the Ebon Blade
+						i(174487),	-- Unholy Greatsword of the Ebon Blade
+						i(174661),	-- Unholy Saber of the Ebon Blade
 					},
 				})),
 				q(58902, {	-- Defender of Azeroth (A)

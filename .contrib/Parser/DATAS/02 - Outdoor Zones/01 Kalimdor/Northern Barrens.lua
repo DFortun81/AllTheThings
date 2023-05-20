@@ -101,9 +101,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["crs"] = { 68804 },	-- Harpy Youngling
 						["description"] = "Can be found at The Dry Hills, alongside Witchwing Harpies.",
 					}),
-					p(386, {	-- Prairie Dog
-						["crs"] = { 61141 },	-- Prairie Dog
-					}),
+					pet(386),	-- Prairie Dog
 					p(419, {	-- Small Frog
 						["crs"] = { 61071 },	-- Small Frog
 					}),

@@ -226,8 +226,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						["description"] = "Found in small areas around these coords."
 					}),
-					p(470, {	-- Twilight Spider
-						["crs"] = { 62117 },
+					pet(470, {	-- Twilight Spider
 						["coord"] = { 59.6, 51.0, TWILIGHT_HIGHLANDS },
 						["description"] = "Found most commonly around Firebeard's Patrol.",
 					}),

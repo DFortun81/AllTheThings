@@ -105,9 +105,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					p(398, {	-- Black Rat
 						["crs"] = { 61257 },	-- Black Rat
 					}),
-					p(385, {	-- Mouse
-						["crs"] = { 61143 },	-- Mouse
-					}),
+					pet(385),	-- Mouse
 					p(387, {	-- Snake
 						["crs"] = { 61142 },	-- Snake
 					}),
