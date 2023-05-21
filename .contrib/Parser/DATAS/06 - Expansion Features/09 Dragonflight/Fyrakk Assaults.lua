@@ -171,6 +171,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				i(204763),	-- Suffused Mantle
 				i(204766),	-- Suffused Sabatons
 			}),
+			filter(TRINKET_F, {
+				i(204901),	-- Firecaller's Focus
+			}),
 			n(WEAPONS, {
 				i(204757),	-- Suffused Barrier
 				i(204748),	-- Suffused Blade
@@ -231,7 +234,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(FYRAKK_ASSAULTS, {
 		q(75448),	-- Ward of Ingira Elite
-		q(75447),	-- Ward of Fyrakk Elite
+		q(75447),	-- Ward of Fyrakk Elite / Foremaster 1st kill
 		--q(75887),	-- Fyrakk Activated?
 	}),
 }));

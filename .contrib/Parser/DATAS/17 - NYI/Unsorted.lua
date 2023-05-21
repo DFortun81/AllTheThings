@@ -194,7 +194,6 @@ root(ROOTS.Unsorted, {
 			n(ARMOR, {
 				i(204087),	-- 10.1 Cloak Test Item
 				i(204736),	-- Heatbound Medallion
-				i(204901),	-- Firecaller's Focus
 				i(205193),	-- Sturdy Deepflayer Scute
 				i(205196),	-- Zaqali Hand Cauldron
 				i(205229),	-- Magma Serpent Lure

@@ -3158,6 +3158,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(75872, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Flowfy
 			q(74238, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Karokta
 			q(74235, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Elusive Magma Cobra (204831)
+			q(76534, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Crimson Oldblood
 		}),
 		prof(TAILORING, {
 			q(71946),	-- Timeweaving unlocked
