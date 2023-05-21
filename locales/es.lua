@@ -3954,7 +3954,7 @@ for key,value in pairs({
 	[398796] = "Cristal Arcano resonador",	-- Resonating Arcane Crystal
 	[398810] = "Recompensa de lealtad",	-- Fealty's Reward
 	[398814] = "Tesoro de magma",	-- Molten Hoard
-	--TODO: [398815] = "Secured Shipment",	-- Secured Shipment
+	[398815] = "Envío asegurado",	-- Secured Shipment
 	[401236] = "Espécimen malnutrido",	-- Malnourished Specimen
 	[401238] = "Babosa sin tuétano",	-- Marrow-Ripened Slime
 	[401240] = "Molde sospechoso",	-- Suspicious Mold

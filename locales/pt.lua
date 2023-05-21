@@ -3774,7 +3774,7 @@ for key,value in pairs({
 	[385952] = "Anel Incomum",	-- Unusual Ring
 	[386079] = "Baú Bem Mastigado",	-- Well-Chewed Chest
 	[386080] = "Chave Tórrida",	-- Scorching Key
-	--TODO: [386086] = "Seething Cache",	-- Seething Cache
+	[386086] = "Baú Fervilhante",	-- Seething Cache
 	[386088] = "Oferendas Ritualísticas",	-- Ritual Offerings
 	[386089] = "Oferendas Ritualísticas",	-- Ritual Offerings
 	[386090] = "Oferendas Ritualísticas",	-- Ritual Offerings
@@ -3918,7 +3918,7 @@ for key,value in pairs({
 	[392582] = "Pacote de Sobrevivência com Defeito",	-- Defective Survival Pack
 	[392583] = "Caixa-forte Atada ao Caos",	-- Void-Bound Strongbox
 	[392587] = "Gerador de Buraco de Serpe Quebrado",	-- Busted Wyrmhole Generator
-	--TODO: [392591] = "Chest of the Flights",	-- Chest of the Flights
+	[392591] = "Baú das Revoadas",	-- Chest of the Flights
 	[392593] = "Minerador de Dados Inconspícuo",	-- Inconspicuous Data Miner
 	[393218] = "Baú Arcano Primordial",	-- Primordial Arcane Cache
 	[393220] = "Baú de Tinta Primordial",	-- Primordial Paint Cache
@@ -3950,7 +3950,7 @@ for key,value in pairs({
 	[398796] = "Cristal Arcano Ressoante",	-- Resonating Arcane Crystal
 	[398810] = "Recompensa da Fidelidade",	-- Fealty's Reward
 	[398814] = "Acúmulo Derretido",	-- Molten Hoard
-	--TODO: [398815] = "Secured Shipment",	-- Secured Shipment
+	[398815] = "Carregamento Protegido",	-- Secured Shipment
 	[401236] = "Espécime Malnutrido",	-- Malnourished Specimen
 	[401238] = "Visgo de Tutano Maduro",	-- Marrow-Ripened Slime
 	[401240] = "Mofo Suspeito",	-- Suspicious Mold
