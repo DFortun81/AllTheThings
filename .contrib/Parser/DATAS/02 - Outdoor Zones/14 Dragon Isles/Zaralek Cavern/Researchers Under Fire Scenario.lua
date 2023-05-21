@@ -49,6 +49,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				i(205369),	-- Appreciative Researcher's Gift
 				i(205371),	-- Appreciative Researcher's Scrounged Goods
 				i(205370),	-- Researcher's Gift
+				i(205373),	-- Researcher's Scrounged Goods
 				i(205368),	-- Thankful Researcher's Gift
 			}),
 		}),

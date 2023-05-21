@@ -194,11 +194,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 					i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 				},
 			})),
-			n(DROPS, {
-				i(201790, {	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
-					["crs"] = { 193909 },	-- Raszageth the Storm-Eater
-				}),
-			}),
 			n(QUESTS, {
 				q(72261, {	-- More Than a Prison?
 					["provider"] = { "i", 201412 },	-- Ancient Vault Artifact
@@ -456,6 +451,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 							i(195533),	-- Shackles of Titanic Failure
 							i(194309),	-- Spiteful Storm
 							i(195529),	-- Stormlash's Last Resort
+							i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 						},
 					}),
 				}),
@@ -709,6 +705,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(195533),	-- Shackles of Titanic Failure
 						i(194309),	-- Spiteful Storm
 						i(195529),	-- Stormlash's Last Resort
+						i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 					},
 				}),
 			}),
@@ -978,6 +975,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(195533),	-- Shackles of Titanic Failure
 						i(194309),	-- Spiteful Storm
 						i(195529),	-- Stormlash's Last Resort
+						i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 					},
 				}),
 			}),
@@ -1254,6 +1252,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(195533),	-- Shackles of Titanic Failure
 						i(194309),	-- Spiteful Storm
 						i(195529),	-- Stormlash's Last Resort
+						i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 					},
 				}),
 			}),
