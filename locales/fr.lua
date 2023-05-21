@@ -1357,7 +1357,7 @@ for key,value in pairs({
 	[180642] = "Caisse anodine",	-- Inconspicuous Crate
 	[180652] = "Terre fraîchement remuée",	-- Freshly Dug Dirt
 	[180662] = "Débris de goélette",	-- Schooner Wreckage
-	--TODO: [180669] = "Swirling Maelstrom",	-- Swirling Maelstrom
+	[180669] = "Maelström tourbillonnant",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "Débris trempés",	-- Waterlogged Wreckage
 	[180690] = "Grand coffre de scarabées",	-- Large Scarab Coffer
 	[180691] = "Coffre de scarabées",	-- Scarab Coffer

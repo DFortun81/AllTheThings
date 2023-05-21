@@ -1362,7 +1362,7 @@ for key,value in pairs({
 	[180642] = "Cajón inadvertido",	-- Inconspicuous Crate
 	[180652] = "Tierra removida",	-- Freshly Dug Dirt
 	[180662] = "Restos de goleta",	-- Schooner Wreckage
-	--TODO: [180669] = "Swirling Maelstrom",	-- Swirling Maelstrom
+	[180669] = "Remolino de vorágine",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "Restos encharcados",	-- Waterlogged Wreckage
 	[180690] = "Arca del escarabajo grande",	-- Large Scarab Coffer
 	[180691] = "Arca del escarabajo",	-- Scarab Coffer

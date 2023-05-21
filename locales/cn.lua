@@ -1372,7 +1372,7 @@ for key, value in pairs({
 	[180642] = "不起眼的箱子",	-- Inconspicuous Crate	--TODO: This was taken from wotlk Wowhead
 	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180662] = "帆船残骸",	-- Schooner Wreckage
-	--TODO: [180669] = "Swirling Maelstrom",	-- Swirling Maelstrom
+	[180669] = "湍急的漩涡",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "浸水的残骸",	-- Waterlogged Wreckage
 	[180690] = "大型圣甲虫箱",	-- Large Scarab Coffer
 	[180691] = "圣甲虫箱",	-- Scarab Coffer

@@ -1358,7 +1358,7 @@ for key,value in pairs({
 	[180642] = "눈에 띄지 않는 궤짝",	-- Inconspicuous Crate
 	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180662] = "범선 잔해",	-- Schooner Wreckage
-	--TODO: [180669] = "Swirling Maelstrom",	-- Swirling Maelstrom
+	[180669] = "회오리치는 소용돌이",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "물에 젖은 잔해",	-- Waterlogged Wreckage
 	[180690] = "큰 스카라베 상자",	-- Large Scarab Coffer
 	[180691] = "스카라베 상자",	-- Scarab Coffer

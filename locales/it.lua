@@ -1350,7 +1350,7 @@ for key,value in pairs({
 	[180642] = "Cassa Incospicua",	-- Inconspicuous Crate
 	[180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt	--TODO: This was taken from wotlk Wowhead
 	[180662] = "Rottami di Goletta",	-- Schooner Wreckage
-	--TODO: [180669] = "Swirling Maelstrom",	-- Swirling Maelstrom
+	[180669] = "Maelstrom Turbinoso",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "Rottami Fradici",	-- Waterlogged Wreckage
 	[180690] = "Grande Forziere dello Scarabeo",	-- Large Scarab Coffer
 	[180691] = "Forziere dello Scarabeo",	-- Scarab Coffer

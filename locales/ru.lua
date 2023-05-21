@@ -1349,7 +1349,7 @@ for key,value in pairs({
 	[180642] = "Не вызывающий подозрений сундук",	-- Inconspicuous Crate
 	[180652] = "Только что выброшенная земля",	-- Freshly Dug Dirt
 	[180662] = "Разбитая шхуна",	-- Schooner Wreckage
-	--TODO: [180669] = "Swirling Maelstrom",	-- Swirling Maelstrom
+	[180669] = "Кружащий Водоворот",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "Плавающие обломки",	-- Waterlogged Wreckage
 	[180690] = "Большой сундук Скарабея",	-- Large Scarab Coffer
 	[180691] = "Сундук Скарабея",	-- Scarab Coffer
