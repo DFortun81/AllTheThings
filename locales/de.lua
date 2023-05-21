@@ -1148,6 +1148,7 @@ for key,value in pairs({
 	[152095] = "Mondblütenlilie",	-- Moonpetal Lily
 	[152622] = "Azsharitformation",	-- Azsharite Formation
 	[153123] = "Kim'jaels Ausrüstung",	-- Kim'jael's Equipment
+	[153239] = "Wildekinfeder",	-- Wildkin Feather
 	[157936] = "Erdhaufen von Un'Goro",	-- Un'Goro Dirt Pile
 	[160836] = "Reliktkasten",	-- Relic Coffer
 	[161495] = "Geheimsafe",	-- Secret Safe
@@ -1270,6 +1271,7 @@ for key,value in pairs({
 	[175855] = "Der Fall des Imperiums",	-- Empires' Fall
 	[175856] = "Der Zorn des Seelenschinders",	-- Wrath of Soulflayer
 	[175888] = "Fragment eines Hochgeborenenrelikts",	-- Highborne Relic Fragment
+	[175889] = "Uraltes Ei",	-- Ancient Egg
 	[175891] = "Fragment eines Hochgeborenenrelikts",	-- Highborne Relic Fragment
 	[175892] = "Fragment eines Hochgeborenenrelikts",	-- Highborne Relic Fragment
 	[175893] = "Fragment eines Hochgeborenenrelikts",	-- Highborne Relic Fragment
@@ -1342,8 +1344,10 @@ for key,value in pairs({
 	[180366] = "Ramponierter Ausrüstungskasten",	-- Battered Tackle Box
 	[180368] = "Schrifttafel des Wahnsinns",	-- Tablet of Madness
 	[180369] = "Schlammiges aufgewühltes Gewässer",	-- Muddy Churning Waters
+	[180435] = "Noggles Ranzen",	-- Noggle's Satchel
 	[180436] = "Zwielichtschrifttafelfragment",	-- Twilight Tablet Fragment
 	[180448] = "Steckbrief: Totenstachel",	-- Wanted Poster: Deathclasp
+	[180453] = "Glyphenverzierter Kristall des Regalschwarms",	-- Hive'Regal Glyphed Crystal
 	[180456] = "Geringer Windstein",	-- Lesser Wind Stone
 	[180461] = "Windstein",	-- Wind Stone
 	[180466] = "Großer Windstein",	-- Greater Wind Stone
@@ -1355,6 +1359,7 @@ for key,value in pairs({
 	[180642] = "Unscheinbare Kiste",	-- Inconspicuous Crate
 	[180652] = "Frisch aufgewühlter Dreck",	-- Freshly Dug Dirt
 	[180662] = "Schiffswrackteile",	-- Schooner Wreckage
+	--TODO: [180669] = "Swirling Maelstrom",	-- Swirling Maelstrom
 	[180685] = "Schwimmende Wrackteile",	-- Waterlogged Wreckage
 	[180690] = "Großer Skarabäuskasten",	-- Large Scarab Coffer
 	[180691] = "Skarabäuskasten",	-- Scarab Coffer
@@ -1380,6 +1385,7 @@ for key,value in pairs({
 	[181153] = "Gesucht: Kel'gash der Boshafte",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Steckbrief",	-- Wanted Poster
 	[181643] = "Federbarts Überreste",	-- Featherbeard's Remains
+	[181645] = "Greifenei",	-- Gryphon Egg
 	[181649] = "Federbarts Tagebuch",	-- Featherbeard's Journal
 	[181665] = "Grabtruhe",	-- Burial Chest
 	[181672] = "Weidenmann",	-- Wickerman Effigy
@@ -1440,6 +1446,7 @@ for key,value in pairs({
 	[186887] = "Große Kürbislaterne",	-- Large Jack-o'-Lantern
 	[187072] = "Messerdornwurzel",	-- Razorthorn Root
 	[187236] = "Winterhauchgeschenk",	-- Winter Veil Gift
+	[187264] = "Erzkiste der Dunkelflossen",	-- Darkspine Ore Chest
 	[187273] = "Verdächtiger Hufabdruck",	-- Suspicious Hoofprint
 	[187333] = "Blutbeerenbusch",	-- Bloodberry Bush
 	[187559] = "Freudenfeuer der Horde",	-- Horde Bonfire

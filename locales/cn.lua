@@ -1161,6 +1161,7 @@ for key, value in pairs({
 	[152095] = "月牙百合花",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
 	[152622] = "艾萨莱特晶体",	-- Azsharite Formation
 	[153123] = "基姆加尔的设备",	-- Kim'jael's Equipment	--TODO: This was taken from wotlk Wowhead
+	[153239] = "枭兽羽毛",	-- Wildkin Feather
 	[157936] = "安戈洛土堆",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "古物宝库",	-- Relic Coffer
 	[161495] = "秘密保险箱",	-- Secret Safe
@@ -1283,6 +1284,7 @@ for key, value in pairs({
 	[175855] = "帝国的陷落",	-- Empires' Fall
 	[175856] = "夺灵者的愤怒",	-- Wrath of Soulflayer
 	[175888] = "上层精灵遗物碎片",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
+	[175889] = "远古之卵",	-- Ancient Egg	--TODO: This was taken from wotlk Wowhead
 	[175891] = "上层精灵遗物碎片",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
 	[175892] = "上层精灵遗物碎片",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
 	[175893] = "上层精灵遗物碎片",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
@@ -1355,8 +1357,10 @@ for key, value in pairs({
 	[180366] = "破碎的工具箱",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "疯狂石板",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "混浊的水",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
+	[180435] = "诺格的背包",	-- Noggle's Satchel
 	[180436] = "暮光石板碎片",	-- Twilight Tablet Fragment
 	[180448] = "通缉布告：死亡弯钩",	-- Wanted Poster: Deathclasp
+	[180453] = "雷戈虫巢雕文水晶",	-- Hive'Regal Glyphed Crystal
 	[180456] = "次级风石",	-- Lesser Wind Stone
 	[180461] = "风石",	-- Wind Stone
 	[180466] = "强力风石",	-- Greater Wind Stone
@@ -1368,6 +1372,7 @@ for key, value in pairs({
 	[180642] = "不起眼的箱子",	-- Inconspicuous Crate	--TODO: This was taken from wotlk Wowhead
 	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180662] = "帆船残骸",	-- Schooner Wreckage
+	--TODO: [180669] = "Swirling Maelstrom",	-- Swirling Maelstrom
 	[180685] = "浸水的残骸",	-- Waterlogged Wreckage
 	[180690] = "大型圣甲虫箱",	-- Large Scarab Coffer
 	[180691] = "圣甲虫箱",	-- Scarab Coffer
@@ -1393,6 +1398,7 @@ for key, value in pairs({
 	[181153] = "通缉布告：邪恶的克尔加什",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "通缉布告",	-- Wanted Poster
 	[181643] = "羽须的遗骸",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
+	[181645] = "狮鹫卵",	-- Gryphon Egg
 	[181649] = "羽须的日记",	-- Featherbeard's Journal
 	--TODO: [181665] = "Burial Chest",	-- Burial Chest
 	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from wotlk Wowhead
@@ -1453,6 +1459,7 @@ for key, value in pairs({
 	[186887] = "大南瓜灯",	-- Large Jack-o'-Lantern
 	--TODO: [187072] = "Razorthorn Root",	-- Razorthorn Root
 	[187236] = "冬幕节礼物",	-- Winter Veil Gift
+	[187264] = "暗脊矿石箱",	-- Darkspine Ore Chest
 	[187273] = "可疑的蹄印",	-- Suspicious Hoofprint
 	[187333] = "血莓灌木",	-- Bloodberry Bush
 	[187559] = "部落篝火",	-- Horde Bonfire

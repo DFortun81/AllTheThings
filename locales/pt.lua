@@ -1147,6 +1147,7 @@ for key,value in pairs({
 	[152095] = "Lírio Lunapétala",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
 	[152622] = "Formação de Azsharita",	-- Azsharite Formation
 	[153123] = "Equipamento de Kam'arawn",	-- Kim'jael's Equipment	--TODO: This was taken from wotlk Wowhead
+	[153239] = "Pena de Coruscante",	-- Wildkin Feather
 	[157936] = "Monte de Terra de Un'Goro",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "Arca de Relíquia",	-- Relic Coffer
 	[161495] = "Cofre Secreto",	-- Secret Safe
@@ -1269,6 +1270,7 @@ for key,value in pairs({
 	[175855] = "A Queda do Império",	-- Empires' Fall
 	[175856] = "A Ira do Esfolador de Almas",	-- Wrath of Soulflayer
 	[175888] = "Fragmento da Relíquia dos Altaneiros",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
+	[175889] = "Ovo Velho",	-- Ancient Egg
 	[175891] = "Fragmento da Relíquia dos Altaneiros",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
 	[175892] = "Fragmento da Relíquia dos Altaneiros",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
 	[175893] = "Fragmento da Relíquia dos Altaneiros",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
@@ -1341,8 +1343,10 @@ for key,value in pairs({
 	[180366] = "Caixa de Ferramentas Desgastada",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "Tabuleta da Loucura",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "Águas Revoltas Barrentas",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
+	[180435] = "Algibeira do Noggel",	-- Noggle's Satchel
 	[180436] = "Fragmento de Tabuleta do Crepúsculo",	-- Twilight Tablet Fragment
 	[180448] = "Cartaz de Procura-se: Agarramata",	-- Wanted Poster: Deathclasp
+	[180453] = "Cristal Entalhado de Glifos de Colme'Régia",	-- Hive'Regal Glyphed Crystal
 	[180456] = "Pedra Eólica Menor",	-- Lesser Wind Stone
 	[180461] = "Pedra Eólica",	-- Wind Stone
 	[180466] = "Pedra Eólica Maior",	-- Greater Wind Stone
@@ -1354,6 +1358,7 @@ for key,value in pairs({
 	[180642] = "Caixote Inconspícuo",	-- Inconspicuous Crate
 	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180662] = "Destroços da Escuna",	-- Schooner Wreckage
+	--TODO: [180669] = "Swirling Maelstrom",	-- Swirling Maelstrom
 	[180685] = "Destroços Encharcados",	-- Waterlogged Wreckage
 	[180690] = "Grande Arca do Escaravelho",	-- Large Scarab Coffer
 	[180691] = "Arca do Escaravelho",	-- Scarab Coffer
@@ -1379,6 +1384,7 @@ for key,value in pairs({
 	[181153] = "Cartaz de Procura-se: Kel'gash, o Perverso",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Cartaz de Procura-se",	-- Wanted Poster
 	[181643] = "Restos Mortais de Barbapena",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
+	[181645] = "Ovo de Grifo",	-- Gryphon Egg
 	[181649] = "Diário de Barbapena",	-- Featherbeard's Journal
 	[181665] = "Baú de Enterro",	-- Burial Chest
 	[181672] = "Efígie do Homem de Palha",	-- Wickerman Effigy
@@ -1439,6 +1445,7 @@ for key,value in pairs({
 	[186887] = "Lanterna de Abóbora Grande",	-- Large Jack-o'-Lantern
 	[187072] = "Raiz Espinhosa",	-- Razorthorn Root
 	[187236] = "Presente de Véu de Inverno",	-- Winter Veil Gift
+	[187264] = "Baú de Minério dos Espinha Negra",	-- Darkspine Ore Chest
 	[187273] = "Pegada Suspeita",	-- Suspicious Hoofprint
 	[187333] = "Arbusto de Fruta-sangue",	-- Bloodberry Bush
 	[187559] = "Fogueira da Horda",	-- Horde Bonfire
