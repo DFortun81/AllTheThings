@@ -486,7 +486,6 @@ root(ROOTS.Unsorted, {
 				i(206006),	-- Earth-Warder's Thanks
 				-- Research
 				i(205367),	-- Indebted Researcher's Gift
-				i(205368),	-- Thankful Researcher's Gift
 				i(205372),	-- Indebted Researcher's Scrounged Goods
 				i(205373),	-- Researcher's Scrounged Goods
 				i(205374),	-- Thankful Researcher's Scrounged Goods
