@@ -912,7 +912,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12789, {	-- Into the Breach!
 						["coord"] = { 83.9, 26.0, DRAGONBLIGHT },
-						["altQuests"] = { 12770 },	-- Reallocating Resources -- TODO: confirm this
+						["altQuests"] = { 12770 },	-- Reallocating Resources	-- TODO: confirm this
 						["qg"] = 28228,	-- Crusader Valus
 						["sourceQuest"] = 12545,	-- The Cleansing of Jintha'kalar
 						["isBreadcrumb"] = true,
@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 76.7, 63.0, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 27337,	-- Spy Mistress Repine
-						["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths -- TODO:: verify this
+						["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths	-- TODO:: verify this
 					}),
 					q(12267, {	-- Neltharion's Flame
 						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
@@ -1094,7 +1094,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 76.7, 63.0, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 27337,	-- Spy Mistress Repine
-						["sourceQuest"] = 12205,	-- WANTED: The Scarlet Onslaught -- TODO: verify this
+						["sourceQuest"] = 12205,	-- WANTED: The Scarlet Onslaught	-- TODO: verify this
 					}),
 					q(12262, {	-- No One to Save You
 						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
@@ -2382,7 +2382,7 @@ root(ROOTS.Zones, {
 							i(41568),	-- Design: Purified Shadow Crystal [CATA+] / Design: Seer's Dark Jade [WRATH]
 							i(44057),	-- Ivory-Reinforced Chestguard
 							i(44050),	-- Mastercraft Kalu'ak Fishing Pole
-							i(44723, { -- Pengu (PET!)
+							i(44723, {	-- Pengu (PET!)
 								["timeline"] = { "added 3.0.2.8982" },
 							}),
 							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
@@ -2402,7 +2402,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(37659, { -- Enti's Quenched Sword
+					i(37659, {	-- Enti's Quenched Sword
 						["coord"] = { 90.6, 52.6, DRAGONBLIGHT },
 						["crs"] = {
 							27105,	-- Kreug Oathbreaker <Ymirjar Giant Lord>
@@ -2436,7 +2436,7 @@ root(ROOTS.Zones, {
 						["crs"] = { 26482 },	-- Arctic Grizzly
 						["f"] = RECIPES,
 					}),
-					i(38262, { -- Well-Worn Bat
+					i(38262, {	-- Well-Worn Bat
 						["coord"] = { 68.2, 74.2, DRAGONBLIGHT },
 						["crs"] = {
 							27238,	-- Foreman Kaleiki

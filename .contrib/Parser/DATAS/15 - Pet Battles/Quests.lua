@@ -20,8 +20,8 @@ root(ROOTS.PetBattles, petbattle({
 			["provider"] = { "i", 142210 },	-- Celestial Invitation
 			["coord"] = { 41.4, 24.4, THE_STORM_PEAKS },
 			["g"] = {
-				i(142100, { -- Stardust (PET!)
-				["timeline"] = { ADDED_7_1_0 },
+				i(142100, {	-- Stardust (PET!)
+					["timeline"] = { ADDED_7_1_0 },
 				}),
 			},
 		}),

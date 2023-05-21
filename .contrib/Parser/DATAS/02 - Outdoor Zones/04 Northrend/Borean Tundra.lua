@@ -21,9 +21,9 @@ root(ROOTS.Zones, {
 							11892,	-- The Assassination of Harold Lane
 							11931,	-- Cracking the Code
 							11914,	-- Keep the Secret Safe
-							12728,	-- Monitoring the Rift: Winterfin Cavern -- verify this
-							11900,	-- Reading the Meters -- verify this
-							11910,	-- Secrets of the Ancients -- verify this
+							12728,	-- Monitoring the Rift: Winterfin Cavern	-- verify this
+							11900,	-- Reading the Meters	-- verify this
+							11910,	-- Secrets of the Ancients	-- verify this
 							11969,	-- Springing the Trap
 							11733,	-- Traversing the Rift
 							11626,	-- The Emissary
@@ -61,9 +61,9 @@ root(ROOTS.Zones, {
 								["sourceQuests"] = {
 									11931,	-- Cracking the Code
 									11914,	-- Keep the Secret Safe
-									12728,	-- Monitoring the Rift: Winterfin Cavern -- verify this
-									11900,	-- Reading the Meters -- verify this
-									11910,	-- Secrets of the Ancients -- verify this
+									12728,	-- Monitoring the Rift: Winterfin Cavern	-- verify this
+									11900,	-- Reading the Meters	-- verify this
+									11910,	-- Secrets of the Ancients	-- verify this
 									11969,	-- Springing the Trap
 									11733,	-- Traversing the Rift
 								},
@@ -103,9 +103,9 @@ root(ROOTS.Zones, {
 							11892,	-- The Assassination of Harold Lane
 							11931,	-- Cracking the Code
 							11914,	-- Keep the Secret Safe
-							12728,	-- Monitoring the Rift: Winterfin Cavern -- verify this
-							11900,	-- Reading the Meters -- verify this
-							11910,	-- Secrets of the Ancients -- verify this
+							12728,	-- Monitoring the Rift: Winterfin Cavern	-- verify this
+							11900,	-- Reading the Meters	-- verify this
+							11910,	-- Secrets of the Ancients	-- verify this
 							11969,	-- Springing the Trap
 							11733,	-- Traversing the Rift
 							11626,	-- The Emissary
@@ -118,7 +118,7 @@ root(ROOTS.Zones, {
 							11916,	-- Hellscream's Champion
 							11906,	-- Cleaning Up the Pools
 							11909,	-- Defeat the Gearmaster
-							-- 11683,	-- Fallen Necropolis -- needs verification
+							-- 11683,	-- Fallen Necropolis	-- needs verification
 							11689,	-- Return with the Bad News
 							11706,	-- The Collapse
 							11907,	-- The Sub-Chieftains
@@ -148,9 +148,9 @@ root(ROOTS.Zones, {
 								["sourceQuests"] = {
 									11931,	-- Cracking the Code
 									11914,	-- Keep the Secret Safe
-									12728,	-- Monitoring the Rift: Winterfin Cavern -- verify this
-									11900,	-- Reading the Meters -- verify this
-									11910,	-- Secrets of the Ancients -- verify this
+									12728,	-- Monitoring the Rift: Winterfin Cavern	-- verify this
+									11900,	-- Reading the Meters	-- verify this
+									11910,	-- Secrets of the Ancients	-- verify this
 									11969,	-- Springing the Trap
 									11733,	-- Traversing the Rift
 								},
@@ -177,7 +177,7 @@ root(ROOTS.Zones, {
 								["sourceQuests"] = {
 									11906,	-- Cleaning Up the Pools
 									11909,	-- Defeat the Gearmaster
-									-- 11683,	-- Fallen Necropolis -- needs verification
+									-- 11683,	-- Fallen Necropolis	-- needs verification
 									11689,	-- Return with the Bad News
 									11706,	-- The Collapse
 									11907,	-- The Sub-Chieftains
@@ -715,7 +715,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.8, 68.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 25737,	-- Airman Skyhopper
-						["sourceQuest"] = 11897,	-- Plug the Sinkholes -- TODO: this doesn't appear to be correct but I didn't catch exactly when it became available
+						["sourceQuest"] = 11897,	-- Plug the Sinkholes	-- TODO: this doesn't appear to be correct but I didn't catch exactly when it became available
 						["isBreadcrumb"] = true,
 					}),
 					q(11682, {	-- Dragonspeak
@@ -841,7 +841,7 @@ root(ROOTS.Zones, {
 						["qg"] = 25590,	-- Fizzcrank Fullthrottle
 						["sourceQuest"] = 11712,	-- Re-Cursive
 					}),
-					q(11956, {	-- Finding the Phylactery -- aa
+					q(11956, {	-- Finding the Phylactery	-- aa
 						["coord"] = { 84.7, 41.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26170,	-- Thassarian
@@ -1038,7 +1038,7 @@ root(ROOTS.Zones, {
 							{ 43.0, 55.6, BOREAN_TUNDRA },
 						},
 						["races"] = HORDE_ONLY,
-						["description"] = "This version of the quest is only available if you have NOT completed the quest  'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently."
+						["description"] = "This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently."
 					}),
 					q(11876, {	-- Help Those That Cannot Help Themselves
 						["qg"] = 25809,	-- Archdruid Lathorius
@@ -2420,7 +2420,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.0, 88.0, BOREAN_TUNDRA },
 						["timeline"] = { "added 6.2.2.20444" },
 						["g"] = {
-							i(22780), -- White Murloc Egg (Terky)
+							i(22780),	-- White Murloc Egg (Terky)
 						},
 					}),
 				}),

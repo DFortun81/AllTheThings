@@ -69,12 +69,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["requireSkill"] = COOKING,
 					["cost"] = {
 						{ "i", 197793, 40 },	-- 40x Yusa's Hearty Stew
-						{ "i", 197794, 5 }, 	-- 5x Grand Banquet of the Kalu'ak
+						{ "i", 197794, 5 },		-- 5x Grand Banquet of the Kalu'ak
 					},
 				}),
 				q(75308, {	-- Scrybbil Engineering
 					["cost"] = {
-						{ "i", 198225, 2 }, 	-- 2x Draconium Fisherfriend
+						{ "i", 198225, 2 },		-- 2x Draconium Fisherfriend
 					},
 				}),
 			})),

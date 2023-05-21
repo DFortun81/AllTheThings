@@ -138,7 +138,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				cr(32867, e(1641, {	-- The Assembly of Iron
 					i(142088, {	-- Runeforged Servitor (PET!)
 						["timeline"] = { "added 7.1.0.22731" },
-			}		),
+					}),
 					i(155973),	-- Rapture
 					i(155972),	-- Stormrune Edge
 					i(156611),	-- Fang of Oblivion

@@ -237,16 +237,16 @@ root(ROOTS.Zones, {
 						379,	-- Squirrel
 					}},
 					["g"] = {
-						p(649, { -- Biletoad
+						p(649, {	-- Biletoad
 							["crs"] = { 62815 },	-- Biletoad
 						}),
-						p(1167, { -- Emerald Proto-Whelp
+						p(1167, {	-- Emerald Proto-Whelp
 							["crs"] = { 68850 },	-- Emerald Proto-Whelp
 						}),
-						p(387, { -- Snake
+						p(387, {	-- Snake
 							["crs"] = { 61142 },	-- Snake
 						}),
-						p(532, { -- Stunted Shardhorn
+						p(532, {	-- Stunted Shardhorn
 							["crs"] = { 62816 },	-- Stunted Shardhorn
 						}),
 						p(1238, {	-- Unborn Val'kyr
@@ -591,7 +591,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28046,	-- Korg the Cleaver
 						["sourceQuest"] = 12520,	-- Rhino Mastery: The Test
 					}),
-					q(12691, {  -- A Timeworn Coffer
+					q(12691, {	-- A Timeworn Coffer
 						["coord"] = { 80.4, 55.8, SHOLAZAR_BASIN },
 						["provider"] = { "o", 190768 },	-- Timeworn Coffer
 						["groups"] = {
@@ -611,7 +611,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28746,	-- Pilot Vic
 						["sourceQuest"] = 12523,	-- Have a Part, Give a Part
 					}),
-					q(12561, {  -- An Issue of Trust
+					q(12561, {	-- An Issue of Trust
 						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12803,	-- Force of Nature
@@ -645,7 +645,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.0, 28.6, SHOLAZAR_BASIN },
 						["qg"] = 28771,	-- Colvin Norrington
 					}),
-					q(12569, {  -- Crocolisk Mastery: The Ambush
+					q(12569, {	-- Crocolisk Mastery: The Ambush
 						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 						["qg"] = 28032,	-- Debaar
 						["sourceQuest"] = 12560,	-- Crocolisk Mastery: The Plan
@@ -682,7 +682,7 @@ root(ROOTS.Zones, {
 							12525,	-- Wipe That Grin Off His Face
 						},
 					}),
-					q(12558, {  -- Dreadsaber Mastery: Ready to Pounce
+					q(12558, {	-- Dreadsaber Mastery: Ready to Pounce
 						["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
 						["qg"] = 28031,	-- Buck Cantwell
 						["sourceQuest"] = 12550,	-- Dreadsaber Mastery: Stalking the Prey
@@ -703,7 +703,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 35.5, 47.4, SHOLAZAR_BASIN },
 						["qg"] = 28787,	-- Engineer Helice
 					}),
-					q(12617, {  -- Exterminate the Intruders
+					q(12617, {	-- Exterminate the Intruders
 						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12608,	-- Cultist Incursion
@@ -714,7 +714,7 @@ root(ROOTS.Zones, {
 							i(39449),	-- Wristguards of Titanic Vengeance
 						},
 					}),
-					q(12532, {  -- Flown the Coop!
+					q(12532, {	-- Flown the Coop!
 						["coord"] = { 55.4, 69.6, SHOLAZAR_BASIN },
 						["qg"] = 28138,	-- Elder Harkek
 						["sourceQuests"] = {
@@ -738,7 +738,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28114,	-- Mistcaller Soo-gan
 						["sourceQuest"] = 12574,	-- Back So Soon?
 					}),
-					q(12570, {  -- Fortunate Misunderstandings
+					q(12570, {	-- Fortunate Misunderstandings
 						["coord"] = { 56.6, 62.4, SHOLAZAR_BASIN },
 						["qg"] = 28217,	-- Injured Rainspeaker Oracle
 						["sourceQuest"] = 12540,	-- Just Following Orders
@@ -789,7 +789,7 @@ root(ROOTS.Zones, {
 							12556,	-- Rhino Mastery: The Kill
 						},
 					}),
-					q(12624, {  -- It Could Be Anywhere!
+					q(12624, {	-- It Could Be Anywhere!
 						["coord"] = { 26.8, 58.9, SHOLAZAR_BASIN },
 						["qg"] = 28497,	-- Chad
 						["groups"] = {
@@ -827,7 +827,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28122,	-- Moodle
 						["sourceQuest"] = 12578,	-- The Angry Gorloc
 					}),
-					q(12537, {  -- Lightning Definitely Strikes Twice
+					q(12537, {	-- Lightning Definitely Strikes Twice
 						["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
 						["qg"] = 28216,	-- Zepik the Gorloc Hunter
 						["sourceQuest"] = 12536,	-- A Rough Ride
@@ -843,7 +843,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28027,	-- High-Oracle Soo-say
 						["sourceQuest"] = 12570,	-- Fortunate Misunderstandings
 					}),
-					q(12573, {  -- Making Peace
+					q(12573, {	-- Making Peace
 						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
 						["qg"] = 28027,	-- High-Oracle Soo-say
 						["sourceQuest"] = 12571,	-- Make the Bad Snake Go Away
@@ -876,7 +876,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28095,	-- Tracker Gekgek
 						["description"] = "Available after you kill |cFFFFD700Pitch|r.",
 					}),
-					q(12614, {  -- Post-partum Aggression
+					q(12614, {	-- Post-partum Aggression
 						["qg"] = 28376,	-- Dorian Drakestalker
 						["sourceQuest"] = 12607,	-- A Mammoth Undertaking
 						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
@@ -902,7 +902,7 @@ root(ROOTS.Zones, {
 						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12621,	-- Freya's Pact
 					}),
-					q(12681, {  -- Reagent Agent
+					q(12681, {	-- Reagent Agent
 						["coord"] = { 42.0, 28.6, SHOLAZAR_BASIN },
 						["qg"] = 28771,	-- Colvin Norrington
 						["sourceQuests"] = {
@@ -916,7 +916,7 @@ root(ROOTS.Zones, {
 							i(39463),	-- Norrington's Burnished Breastplate
 						},
 					}),
-					q(12546, {  -- Reclamation
+					q(12546, {	-- Reclamation
 						["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12797,	-- Back Through the Waygate
@@ -936,7 +936,7 @@ root(ROOTS.Zones, {
 							12699,	-- An Embarrassing Incident
 						},
 					}),
-					q(12611, {  -- Returned Sevenfold
+					q(12611, {	-- Returned Sevenfold
 						["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12561,	-- An Issue of Trust
@@ -953,7 +953,7 @@ root(ROOTS.Zones, {
 						["qg"] = 27986,	-- Hemet Nesingwary
 						["sourceQuest"] = 12520,	-- Rhino Mastery: The Test
 					}),
-					q(12556, {  -- Rhino Mastery: The Kill
+					q(12556, {	-- Rhino Mastery: The Kill
 						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 						["qg"] = 27986,	-- Hemet Nesingwary
 						["sourceQuest"] = 12544,	-- The Bones of Nozroon
@@ -971,7 +971,7 @@ root(ROOTS.Zones, {
 							12523,	-- Have a Part, Give a Part
 							12525,	-- Wipe That Grin Off His Face
 							--[[TODO:: verify if It Could Be Anywhere! (questID 12624) is also needed
-									   for this, 12549 and 12589
+										for this, 12549 and 12589
 							]]--
 						},
 					}),
@@ -1048,7 +1048,7 @@ root(ROOTS.Zones, {
 						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12611,	-- Returned Sevenfold
 					}),
-					q(12592, {  -- The Great Hunter's Challenge
+					q(12592, {	-- The Great Hunter's Challenge
 						["coord"] = { 27.0, 59.9, SHOLAZAR_BASIN },
 						["qg"] = 28328,	-- Drostan
 						["sourceQuest"] = 12589,	-- Kick, What Kick?
@@ -1067,7 +1067,7 @@ root(ROOTS.Zones, {
 							12660,	-- Weapons of Destruction
 						},
 					}),
-					q(12575, {  -- The Lost Mistwhisper Treasure
+					q(12575, {	-- The Lost Mistwhisper Treasure
 						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
 						["qg"] = 28114,	-- Mistcaller Soo-gan
 						["sourceQuest"] = 12574,	-- Back So Soon?
@@ -1093,7 +1093,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28568,	-- Tamara Wobblesprocket
 						["sourceQuest"] = 12651,	-- Lakeside Landing
 					}),
-					q(12534, {  -- The Sapphire Queen
+					q(12534, {	-- The Sapphire Queen
 						["coord"] = { 55.5, 69.6, SHOLAZAR_BASIN },
 						["qg"] = 28138,	-- Elder Harkek
 						["sourceQuests"] = {
@@ -1256,7 +1256,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 39883 },	-- Cracked Egg
 								["groups"] = {
 									i(44707),	-- Green Proto-Drake (MOUNT!)
-									i(39898, { -- Cobra Hatchling (PET!)
+									i(39898, {	-- Cobra Hatchling (PET!)
 										["timeline"] = { "added 3.0.3.9183" },
 									}),
 									i(44721),	-- Proto-Drake Whelp (PET!)

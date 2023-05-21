@@ -928,16 +928,16 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 				["lvl"] = 20,
 				["groups"] = {
-					i(21301, { -- Father Winter's Helper (PET!)
+					i(21301, {	-- Father Winter's Helper (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
-					i(21308, { -- Winter Reindeer (PET!)
+					i(21308, {	-- Winter Reindeer (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
-					i(21305, { -- Winter's Little Helper (PET!)
+					i(21305, {	-- Winter's Little Helper (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
-					i(21309, { -- Tiny Snowman (PET!)
+					i(21309, {	-- Tiny Snowman (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
 				},

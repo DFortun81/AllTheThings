@@ -236,7 +236,7 @@ _.Zones =
 					},
 					["g"] = {
 						n(109556, {	-- Treasure Chest
-							i(136914, { -- Leyline Broodling (PET!)
+							i(136914, {	-- Leyline Broodling (PET!)
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 						}),
@@ -265,7 +265,7 @@ _.Zones =
 						n(109497, {	-- Small Treasure Chest
 							i(137823),	-- Design: Prophetic Band [Rank 2] (RECIPE!)
 							i(137892),	-- Pattern: Dreadleather Bindings [Rank 3] (RECIPE!)
-							i(137718),  -- Schematic: Ironsight Cranial Cannon [Rank 3] (RECIPE!)
+							i(137718),	-- Schematic: Ironsight Cranial Cannon [Rank 3] (RECIPE!)
 						}),
 					},
 				}),

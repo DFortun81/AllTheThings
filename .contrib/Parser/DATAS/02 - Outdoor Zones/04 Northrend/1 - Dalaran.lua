@@ -4167,7 +4167,7 @@ root(ROOTS.Zones, {
 								["description"] = "First floor of the Legerdemain Lounge in the bookcase nearest the stove.",
 								["coord"] = { 46.8, 40.0, NORTHREND_DALARAN },
 							}),
-							i(44738, { -- Kirin Tor Familiar (PET!)
+							i(44738, {	-- Kirin Tor Familiar (PET!)
 								["timeline"] = { "added 3.0.3.9095" },
 							}),
 							i(43824, {	-- The Schools of Arcane Magic - Mastery (TOY!)

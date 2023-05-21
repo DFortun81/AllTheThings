@@ -69,7 +69,7 @@ local WARDEN_OF_THE_GROUPS = {
 	i(23007, {	-- Mr. Wiggles (PET!)
 		["timeline"] = { "added 1.11.1.5462" },
 	}),
-	i(23015, { -- Whiskers the Rat (PET!)
+	i(23015, {	-- Whiskers the Rat (PET!)
 		["timeline"] = { "added 1.11.1.5462" },
 	}),
 	i(66073, {	-- Scooter the Snail (PET!)
