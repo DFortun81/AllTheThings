@@ -1138,6 +1138,7 @@ for key,value in pairs({
 	[152095] = "Лунная лилия",	-- Moonpetal Lily
 	[152622] = "Отложение азшарита",	-- Azsharite Formation
 	[153123] = "Оборудование Ким'джаеля",	-- Kim'jael's Equipment
+	[153239] = "Перо дикого совуха",	-- Wildkin Feather
 	[157936] = "Куча земли Ун'Горо",	-- Un'Goro Dirt Pile
 	[160836] = "Реликварий",	-- Relic Coffer
 	[161495] = "Потайной сейф",	-- Secret Safe
@@ -1260,6 +1261,7 @@ for key,value in pairs({
 	[175855] = "Падение Империи",	-- Empires' Fall
 	[175856] = "Гнев Свежевателя Душ",	-- Wrath of Soulflayer
 	[175888] = "Фрагмент реликвии высокорожденных",	-- Highborne Relic Fragment
+	[175889] = "Древнее яйцо",	-- Ancient Egg
 	[175891] = "Фрагмент реликвии высокорожденных",	-- Highborne Relic Fragment
 	[175892] = "Фрагмент реликвии высокорожденных",	-- Highborne Relic Fragment
 	[175893] = "Фрагмент реликвии высокорожденных",	-- Highborne Relic Fragment
@@ -1332,8 +1334,10 @@ for key,value in pairs({
 	[180366] = "Побитый ящик для рыболовных снастей",	-- Battered Tackle Box
 	[180368] = "Табличка Безумия",	-- Tablet of Madness
 	[180369] = "Грязный водоворот",	-- Muddy Churning Waters
+	[180435] = "Сумка Ноггла",	-- Noggle's Satchel
 	[180436] = "Фрагмент сумеречной таблички",	-- Twilight Tablet Fragment
 	[180448] = "Плакат: \"Разыскивается\": Смертехват",	-- Wanted Poster: Deathclasp
+	[180453] = "Покрытый письменами кристалл Улья Регал",	-- Hive'Regal Glyphed Crystal
 	[180456] = "Меньший камень Ветров",	-- Lesser Wind Stone
 	[180461] = "Камень Ветров",	-- Wind Stone
 	[180466] = "Больший Ветровой Камень",	-- Greater Wind Stone
@@ -1345,6 +1349,7 @@ for key,value in pairs({
 	[180642] = "Не вызывающий подозрений сундук",	-- Inconspicuous Crate
 	[180652] = "Только что выброшенная земля",	-- Freshly Dug Dirt
 	[180662] = "Разбитая шхуна",	-- Schooner Wreckage
+	[180669] = "Кружащий Водоворот",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "Плавающие обломки",	-- Waterlogged Wreckage
 	[180690] = "Большой сундук Скарабея",	-- Large Scarab Coffer
 	[180691] = "Сундук Скарабея",	-- Scarab Coffer
@@ -1370,6 +1375,7 @@ for key,value in pairs({
 	[181153] = "Плакат: \"Разыскивается\": Кел'гаш Коварный",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[181643] = "Останки Пероборода",	-- Featherbeard's Remains
+	[181645] = "Яйцо грифона",	-- Gryphon Egg
 	[181649] = "Дневник Пероборода",	-- Featherbeard's Journal
 	[181665] = "Погребальный сундук",	-- Burial Chest
 	[181672] = "Фигурка Плетеного человека",	-- Wickerman Effigy
@@ -1430,6 +1436,7 @@ for key,value in pairs({
 	[186887] = "Большой светильник из тыквы",	-- Large Jack-o'-Lantern
 	[187072] = "Корень острого шипа",	-- Razorthorn Root
 	[187236] = "Подарок к Зимнему Покрову",	-- Winter Veil Gift
+	[187264] = "Сундук с рудой Черноспинов",	-- Darkspine Ore Chest
 	[187273] = "Подозрительный след копыта",	-- Suspicious Hoofprint
 	[187333] = "Куст Кровяники",	-- Bloodberry Bush
 	[187559] = "Большой костер Орды",	-- Horde Bonfire

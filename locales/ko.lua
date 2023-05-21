@@ -1147,6 +1147,7 @@ for key,value in pairs({
 	[152095] = "달봉우리 백합",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
 	[152622] = "아즈샤리트 결정체",	-- Azsharite Formation
 	[153123] = "킴야엘의 장비",	-- Kim'jael's Equipment	--TODO: This was taken from wotlk Wowhead
+	[153239] = "올빼미야수 깃털",	-- Wildkin Feather
 	[157936] = "운고로 흙더미",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "유물 금고",	-- Relic Coffer
 	[161495] = "비밀 금고",	-- Secret Safe
@@ -1269,6 +1270,7 @@ for key,value in pairs({
 	[175855] = "제국의 몰락",	-- Empires' Fall
 	[175856] = "영혼약탈자의 격노",	-- Wrath of Soulflayer
 	[175888] = "귀족 유물 조각",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
+	[175889] = "고대의 알",	-- Ancient Egg
 	[175891] = "귀족 유물 조각",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
 	[175892] = "귀족 유물 조각",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
 	[175893] = "귀족 유물 조각",	-- Highborne Relic Fragment	--TODO: This was taken from wotlk Wowhead
@@ -1341,8 +1343,10 @@ for key,value in pairs({
 	[180366] = "찌그러진 낚시상자",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "광기의 서판",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "거품이는 진흙탕물",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
+	[180435] = "노글의 자루",	-- Noggle's Satchel
 	[180436] = "황혼의 서판 조각",	-- Twilight Tablet Fragment
 	[180448] = "현상 수배: 죽음의 갈고리",	-- Wanted Poster: Deathclasp
+	[180453] = "문자가 새겨진 하이브레갈 수정",	-- Hive'Regal Glyphed Crystal
 	[180456] = "하급 바람의 돌",	-- Lesser Wind Stone
 	[180461] = "바람의 돌",	-- Wind Stone
 	[180466] = "상급 바람의 돌",	-- Greater Wind Stone
@@ -1354,6 +1358,7 @@ for key,value in pairs({
 	[180642] = "눈에 띄지 않는 궤짝",	-- Inconspicuous Crate
 	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180662] = "범선 잔해",	-- Schooner Wreckage
+	[180669] = "회오리치는 소용돌이",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "물에 젖은 잔해",	-- Waterlogged Wreckage
 	[180690] = "큰 스카라베 상자",	-- Large Scarab Coffer
 	[180691] = "스카라베 상자",	-- Scarab Coffer
@@ -1379,6 +1384,7 @@ for key,value in pairs({
 	[181153] = "현상 수배 전단: 사악한 켈가쉬",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "현상 수배 전단",	-- Wanted Poster
 	[181643] = "페더비어드의 유골",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
+	[181645] = "그리핀 알",	-- Gryphon Egg
 	[181649] = "페더비어드의 일지",	-- Featherbeard's Journal
 	[181665] = "매장된 궤짝",	-- Burial Chest
 	[181672] = "밀짚인형",	-- Wickerman Effigy	--TODO: This was taken from wotlk Wowhead
@@ -1439,6 +1445,7 @@ for key,value in pairs({
 	[186887] = "커다란 호박등",	-- Large Jack-o'-Lantern
 	[187072] = "서슬가시 뿌리",	-- Razorthorn Root
 	[187236] = "겨울맞이 축제 선물",	-- Winter Veil Gift
+	[187264] = "어둠가시 광물 상자",	-- Darkspine Ore Chest
 	[187273] = "수상한 발굽 자국",	-- Suspicious Hoofprint
 	[187333] = "선홍딸기 덤불",	-- Bloodberry Bush
 	[187559] = "호드 화톳불",	-- Horde Bonfire

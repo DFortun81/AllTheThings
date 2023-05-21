@@ -1151,6 +1151,7 @@ for key,value in pairs({
 	[152095] = "Lirio alunado",	-- Moonpetal Lily
 	[152622] = "Formación de azsharita",	-- Azsharite Formation
 	[153123] = "Equipo de Kim'jael",	-- Kim'jael's Equipment
+	[153239] = "Pluma de lechúcico salvaje",	-- Wildkin Feather
 	[157936] = "Montón de porquería de Un'Goro",	-- Un'Goro Dirt Pile
 	[160836] = "Arca de reliquias",	-- Relic Coffer
 	[161495] = "Caja fuerte secreta",	-- Secret Safe
@@ -1273,6 +1274,7 @@ for key,value in pairs({
 	[175855] = "La caída de los imperios",	-- Empires' Fall
 	[175856] = "La cólera del Cazador de Almas",	-- Wrath of Soulflayer
 	[175888] = "Trozo de reliquia de Altonato",	-- Highborne Relic Fragment
+	[175889] = "Huevo antiguo",	-- Ancient Egg
 	[175891] = "Trozo de reliquia de Altonato",	-- Highborne Relic Fragment
 	[175892] = "Trozo de reliquia de Altonato",	-- Highborne Relic Fragment
 	[175893] = "Trozo de reliquia de Altonato",	-- Highborne Relic Fragment
@@ -1345,8 +1347,10 @@ for key,value in pairs({
 	[180366] = "Caja de aparejos maltrecha",	-- Battered Tackle Box
 	[180368] = "Tablilla de Locura",	-- Tablet of Madness
 	[180369] = "Aguas fangosas",	-- Muddy Churning Waters
+	[180435] = "Cartera de Noggle",	-- Noggle's Satchel
 	[180436] = "Fragmentos de tablilla Crepuscular",	-- Twilight Tablet Fragment
 	[180448] = "Cartel de Se busca: Pinzamorten",	-- Wanted Poster: Deathclasp
+	[180453] = "Cristal con inscripciones de Colmen'Regal",	-- Hive'Regal Glyphed Crystal
 	[180456] = "Piedra de viento inferior",	-- Lesser Wind Stone
 	[180461] = "Piedra de viento",	-- Wind Stone
 	[180466] = "Piedra de viento superior",	-- Greater Wind Stone
@@ -1358,6 +1362,7 @@ for key,value in pairs({
 	[180642] = "Cajón inadvertido",	-- Inconspicuous Crate
 	[180652] = "Tierra removida",	-- Freshly Dug Dirt
 	[180662] = "Restos de goleta",	-- Schooner Wreckage
+	[180669] = "Remolino de vorágine",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "Restos encharcados",	-- Waterlogged Wreckage
 	[180690] = "Arca del escarabajo grande",	-- Large Scarab Coffer
 	[180691] = "Arca del escarabajo",	-- Scarab Coffer
@@ -1383,6 +1388,7 @@ for key,value in pairs({
 	[181153] = "Cartel de Se busca: Kel'gash el Malvado",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Cartel de Se busca",	-- Wanted Poster
 	[181643] = "Restos de Barbapluma",	-- Featherbeard's Remains
+	[181645] = "Huevo de grifo",	-- Gryphon Egg
 	[181649] = "Diario de Barbapluma",	-- Featherbeard's Journal
 	[181665] = "Sarcófago",	-- Burial Chest
 	[181672] = "Efigie del Hombre de Mimbre",	-- Wickerman Effigy
@@ -1443,6 +1449,7 @@ for key,value in pairs({
 	[186887] = "Calabaza iluminada",	-- Large Jack-o'-Lantern
 	[187072] = "Raíz de Rajaespina",	-- Razorthorn Root
 	[187236] = "Obsequio del Festival de Invierno",	-- Winter Veil Gift
+	[187264] = "Cofre de mena de los Espina Siniestra",	-- Darkspine Ore Chest
 	[187273] = "Huella de casco sospechosa",	-- Suspicious Hoofprint
 	[187333] = "Arbusto de bayas de sangre",	-- Bloodberry Bush
 	[187559] = "Fogata de la Horda",	-- Horde Bonfire
