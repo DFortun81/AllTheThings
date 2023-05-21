@@ -3557,7 +3557,7 @@ for key,value in pairs({
 	[376657] = "Uraltes Monument",	-- Ancient Monument
 	[376757] = "GESUCHT: Frigellus",	-- WANTED: Frigellus
 	[377114] = "Rolle mit schwerem Seil",	-- Coil of Heavy Rope
-	--TODO: [377233] = "Hessethiash's Poorly Hidden Treasure",	-- Hessethiash's Poorly Hidden Treasure
+	[377233] = "Hessethiashs erbärmlich versteckter Schatz",	-- Hessethiash's Poorly Hidden Treasure
 	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
@@ -3660,9 +3660,9 @@ for key,value in pairs({
 	[381107] = "Sandhaufen",	-- Sand Pile
 	[381108] = "Yennus Karte",	-- Yennu's Map
 	--TODO: [381110] = "Forgotten Jewel Box",	-- Forgotten Jewel Box
-	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
+	[381153] = "Rubinedelsteinklumpen",	-- Ruby Gem Cluster
 	[381157] = "Saphiredelsteinklumpen",	-- Sapphire Gem Cluster
-	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
+	[381158] = "Dreschflegel des Gnollunholds",	-- Gnoll Fiend Flail
 	[381160] = "Verlorener Kompass",	-- Lost Compass
 	[381216] = "Landvermesserlupe",	-- Surveyor's Magnifying Glass
 	[381223] = "Gesprungenes Stundenglas",	-- Cracked Hourglass
@@ -3775,7 +3775,7 @@ for key,value in pairs({
 	[385952] = "Ungewöhnlicher Ring",	-- Unusual Ring
 	[386079] = "Ordentlich zerkaute Truhe",	-- Well-Chewed Chest
 	[386080] = "Sengender Schlüssel",	-- Scorching Key
-	--TODO: [386086] = "Seething Cache",	-- Seething Cache
+	[386086] = "Brodelnde Truhe",	-- Seething Cache
 	[386088] = "Ritualopfergaben",	-- Ritual Offerings
 	[386089] = "Ritualopfergaben",	-- Ritual Offerings
 	[386090] = "Ritualopfergaben",	-- Ritual Offerings
@@ -3951,7 +3951,7 @@ for key,value in pairs({
 	[398796] = "Resonierender Arkankristall",	-- Resonating Arcane Crystal
 	[398810] = "Belohnung der Treue",	-- Fealty's Reward
 	[398814] = "Geschmolzener Schatz",	-- Molten Hoard
-	--TODO: [398815] = "Secured Shipment",	-- Secured Shipment
+	[398815] = "Gesicherte Lieferung",	-- Secured Shipment
 	[401236] = "Unterernährte Exemplare",	-- Malnourished Specimen
 	[401238] = "Markgereifter Schleim",	-- Marrow-Ripened Slime
 	[401240] = "Verdächtiger Schimmel",	-- Suspicious Mold

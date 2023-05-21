@@ -3810,8 +3810,8 @@ for key,value in pairs({
 	[386461] = "Тайник изначальных чар",	-- Primordial Arcane Cache
 	[386462] = "Тайник изначальной крови",	-- Primordial Blood Cache
 	[386463] = "Тайник изначального золота",	-- Primordial Gold Cache
-	[386470] = "Груда золота",	-- Gold Pile	--TODO: this was manually translated
-	[386472] = "Груда золота",	-- Gold Pile	--TODO: this was manually translated
+	[386470] = "Груда золота",	-- Gold Pile
+	[386472] = "Груда золота",	-- Gold Pile
 	[386484] = "Груда золота",	-- Gold Pile
 	[386531] = "Груда золота",	-- Gold Pile
 	[386532] = "Тайник изначального золота",	-- Primordial Gold Cache
@@ -3861,7 +3861,7 @@ for key,value in pairs({
 	--TODO: [388471] = "Pillaged Primordial Cache",	-- Pillaged Primordial Cache
 	[388712] = "Оперный сундук",	-- Opera Chest
 	[388866] = "Котелок с реагентами",	-- Reagent Pot
-	[388873] = "Мешок с сокровищами братства Стальных Волн",	-- Irontide Coin Bag	--TODO: this was manually translated
+	[388873] = "Мешок с сокровищами братства Стальных Волн",	-- Irontide Coin Bag
 	[388876] = "Котелок с реагентами",	-- Reagent Pot
 	[388895] = "Небрежные записки",	-- Random Scribblings
 	[388896] = "Сундук в кристалле",	-- Crystal-encased Chest
@@ -3941,7 +3941,7 @@ for key,value in pairs({
 	[398796] = "Резонирующий магический кристалл",	-- Resonating Arcane Crystal
 	[398810] = "Награда за верность",	-- Fealty's Reward
 	[398814] = "Раскаленные сокровища",	-- Molten Hoard
-	--TODO: [398815] = "Secured Shipment",	-- Secured Shipment
+	[398815] = "Защищенные ресурсы",	-- Secured Shipment
 	[401236] = "Истощенный образец",	-- Malnourished Specimen
 	[401238] = "Костная слизь",	-- Marrow-Ripened Slime
 	[401240] = "Подозрительный грибок",	-- Suspicious Mold

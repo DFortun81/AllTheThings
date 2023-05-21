@@ -3556,7 +3556,7 @@ for key,value in pairs({
 	[377499] = "Sulle Origini delle Specie Draconiche",	-- On the Origin of Draconic Species
 	[377534] = "Scrigno Consegnato",	-- Delivered Vault
 	[377899] = "Ostaggio dei Drospi Cornuti Nascosto",	-- Hidden Hornswog Hostage
-	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	[377900] = "Lancia da Guerra Nokhud",	-- Nokhud Warspear
 	[377938] = "Banco di Saltatori Prismatici",	-- Prismatic Leaper School
 	[378010] = "Tesoro dei Draghi Dimenticato",	-- Forgotten Dragon Treasure
 	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
@@ -3650,8 +3650,8 @@ for key,value in pairs({
 	[381094] = "Spazzola Elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Mappa di Yennu",	-- Yennu's Map
-	--TODO: [381110] = "Forgotten Jewel Box",	-- Forgotten Jewel Box
-	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
+	[381110] = "Scrigno di Gioielli Dimenticati",	-- Forgotten Jewel Box
+	[381153] = "Formazione di Gemme di Rubino",	-- Ruby Gem Cluster
 	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
 	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
 	[381160] = "Bussola Perduta",	-- Lost Compass
@@ -3942,7 +3942,7 @@ for key,value in pairs({
 	[398796] = "Cristallo Arcano Risonante",	-- Resonating Arcane Crystal
 	[398810] = "Ricompensa della Fedeltà",	-- Fealty's Reward
 	[398814] = "Scorta Fusa",	-- Molten Hoard
-	--TODO: [398815] = "Secured Shipment",	-- Secured Shipment
+	[398815] = "Spedizione in Sicurezza",	-- Secured Shipment
 	[401236] = "Esemplare Malnutrito",	-- Malnourished Specimen
 	[401238] = "Poltiglia di Midollo Maturo",	-- Marrow-Ripened Slime
 	[401240] = "Muffa Sospetta",	-- Suspicious Mold
