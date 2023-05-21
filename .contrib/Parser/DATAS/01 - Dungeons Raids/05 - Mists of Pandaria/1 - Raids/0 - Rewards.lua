@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(REWARDS, {
-		header(HEADERS.item, 95618, {	-- Cache of Mogu Riches
+		header(HEADERS.Item, 95618, {	-- Cache of Mogu Riches
 			-- #if BEFORE 8.0.1
 			["sym"] = {{"select", "itemID",
 				44984,	-- Ammen Vale Lashling
@@ -69,7 +69,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				i(86898),	-- Weaver's Cord of Eternal Autumn
 			},
 		}),
-		header(HEADERS.item, 95343, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Treasures of the Thunder
+		header(HEADERS.Item, 95343, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Treasures of the Thunder
 			-- #if BEFORE 8.0.1
 			["sym"] = {{"select", "itemID",
 				44984,	-- Ammen Vale Lashling
