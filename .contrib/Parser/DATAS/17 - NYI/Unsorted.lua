@@ -843,7 +843,6 @@ root(ROOTS.Unsorted, {
 				mount(395095),	-- Whelpling (MOUNT!)
 				i(190767),	-- Armored Golden Pterrordax (MOUNT!)
 				mount(367875),	-- Armored Siege Kodo (MOUNT!)
-				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
 				i(190539),	-- Coral-Stalker Waveray (MOUNT!)
 				i(190168),	-- Crusty Crawler (MOUNT!)
 			}),

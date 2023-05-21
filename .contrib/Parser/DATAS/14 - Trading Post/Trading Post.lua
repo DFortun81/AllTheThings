@@ -63,8 +63,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	})),
 	n(VENDORS, {
 		n(AVAILABLE, {
-			filter(MOUNTS, {
-			}),
+			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
+			})),
 			filter(BATTLE_PETS, {
 				i(190175, {	-- Pippin (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
@@ -148,14 +148,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		}),
 		n(UNAVAILABLE, {
-			filter(MOUNTS, {
-				i(54811, {	-- Celestial Steed (MOUNT!)
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-				}),
-				i(189978, {	-- Magenta Cloud Serpent (MOUNT!)
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-				}),
-			}),
+			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
+				i(54811),	-- Celestial Steed (MOUNT!)
+				i(189978),	-- Magenta Cloud Serpent (MOUNT!)
+			})),
 			filter(BATTLE_PETS, {
 				i(190603, {	-- Egbob (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
@@ -618,30 +614,18 @@ root(ROOTS.NeverImplemented, {
 				i(190696),	-- Magister's Jeweled Drape
 				i(190201),	-- Sin'dorei Assassin's Shroud
 			}),
-			filter(MOUNTS, {
-				i(190767, {	-- Armored Golden Pterrordax (MOUNT!) (Unknown 2023)
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-				}),
-				mount(367875, {	-- Armored Siege Kodo (MOUNT!) (Unknown 2023) Horde only?
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-				}),
-				mount(369480, {	-- Cerulean Marsh Hopper (MOUNT!)
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-				}),
-				i(190539, {	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-				}),
-				i(190168, {	-- Crusty Crawler (MOUNT!) (Unknown 2023)
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-				}),
+			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
+				i(190767),	-- Armored Golden Pterrordax (MOUNT!) (Unknown 2023)
+				mount(367875),	-- Armored Siege Kodo (MOUNT!) (Unknown 2023) Horde only?
+				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
+				i(118515),	-- Cindermane Charger (MOUNT!)
+				i(190539),	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
+				i(190168),	-- Crusty Crawler (MOUNT!) (Unknown 2023)
 				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
 					["timeline"] = { "added 10.1.0" },
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 				}),
-				i(69846, {	-- Winged Guardian (MOUNT!) Blizz promised this when removing from store in Jan 2023
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-				}),
-			}),
+				i(69846),	-- Winged Guardian (MOUNT!) Blizz promised this when removing from store in Jan 2023
+			})),
 		})
 	})),
 });
