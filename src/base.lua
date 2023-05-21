@@ -61,7 +61,7 @@ app.ClearPerf = function()
 	app.print("Cleared Performance Stats");
 end
 end	-- Performance Tracking --]]
-app.DEBUG_PRINT = true;
+-- app.DEBUG_PRINT = true;
 
 -- Create an Event Processor.
 local events = {};
