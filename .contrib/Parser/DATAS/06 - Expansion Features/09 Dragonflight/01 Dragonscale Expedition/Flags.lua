@@ -11,7 +11,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coords"] = {
 						{ 73.4, 38.8, THE_WAKING_SHORES },
 						{ 56.0, 45.3, THE_WAKING_SHORES },
-						{ 43.9, 62.9, THE_WAKING_SHORES },
+						{ 43.4, 62.0, THE_WAKING_SHORES },
 						{ 28.7, 47.7, THE_WAKING_SHORES },
 						{ 54.8, 74.1, THE_WAKING_SHORES },
 						{ 86.3, 39.3, OHNAHRAN_PLAINS },
@@ -30,8 +30,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 46.1, 74.0, THALDRASZUS },
 						{ 34.0, 84.9, THALDRASZUS },
 						-- #if AFTER 10.0.7
-						{ 55.3, 26.4, THE_FORBIDDEN_REACH },
-						{ 34.8, 30.2, THE_FORBIDDEN_REACH },
+						{ 54.6, 34.6, THE_FORBIDDEN_REACH },
+						{ 36.9, 37.9, THE_FORBIDDEN_REACH },
 						-- #endif
 					},
 				}),
@@ -51,7 +51,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				o(381369, {	-- Dragonscale Expedition Flag
 					["questID"] = 70825,
-					["coord"] = { 43.9, 62.9, THE_WAKING_SHORES },
+					["coord"] = { 43.4, 62.0, THE_WAKING_SHORES },
 				}),
 				o(381370, {	-- Dragonscale Expedition Flag
 					["questID"] = 70826,
@@ -132,12 +132,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				-- The Forbidden Reach
 				o(386106, {	-- Dragonscale Expedition Flag
 					["questID"] = 73699,
-					["coord"] = { 55.3, 26.4, THE_FORBIDDEN_REACH },
+					["coord"] = { 54.6, 34.6, THE_FORBIDDEN_REACH },
 					["timeline"] = ADDED_10_0_7,
 				}),
 				o(386108, {	-- Dragonscale Expedition Flag
 					["questID"] = 73700,
-					["coord"] = { 34.8, 30.2, THE_FORBIDDEN_REACH },
+					["coord"] = { 36.9, 37.9, THE_FORBIDDEN_REACH },
 					["timeline"] = ADDED_10_0_7,
 				}),
 
