@@ -76,7 +76,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_10_0_7 },
 				["u"] = REMOVED_FROM_GAME,	-- 2nd April 2023
 			}),
-			i(203716, {		-- Thundering Banner of the Aspects (TOY!)
+			i(203716, {	-- Thundering Banner of the Aspects (TOY!)
 				["description"] = "Break the Meta: DF Season 1\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 1 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2023/signups|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S1, and the Thundering Banner of the Aspects will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on April 18th for US, April 19th for EU & April 20th for KR/TW & lasts for 2 entire resets of your region.",
 				["timeline"] = {
 					ADDED_10_0_7,
@@ -90,7 +90,11 @@ root(ROOTS.Promotions, {
 			i(54069, {	-- Blazing Hippogryph (MOUNT!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between May 9th, 10:00 a.m. & May 17th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { "added 10.1.0.49474", "removed 10.1.0.49570" },
-		}),
+			}),
+			-- i(XXXXXX, {	-- Smoldering Banner of the Aspectss (TOY!)
+			-- 	["description"] = "Participants in The Great Push 2023 whom complete the Proving Grounds will be eligible for the new Smoldering Banner of the Aspects.",
+			-- 	["timeline"] = { "added 10.1.0.XXXXX", "removed 10.1.0.99999" },
+			-- }),
 		},
 	}),
 });
