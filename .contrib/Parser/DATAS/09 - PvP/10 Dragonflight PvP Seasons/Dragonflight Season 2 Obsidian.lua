@@ -194,6 +194,26 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205885),	-- Obsidian Aspirant's Torch
 							i(205886),	-- Obsidian Aspirant's Warglaive
 						}),
+						i(201250, {	-- Victorious Contender's Strongbox
+							["cost"] = { { "c", HONOR, 5000 }, },
+							["sym"] = {
+								{"select", "tierID", DF_TIER},			-- Select Dragonflight
+								{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
+								{"where", "headerID", SEASON_CRIMSON},	-- Season 1
+								{"pop"},								-- Discard the Season Header and acquire all of their children.
+								{"where", "filterID", RECIPES },		-- Recipes
+								{"pop"},								-- Discard the Recipes Header and acquire all of their children.
+								-- #if AFTER 10.1.0
+								{"where", "npcID", 196661 },			-- Korganar Smolderforge
+								{"pop"}									-- Discard the NPC Header and acquire all of their children
+								-- #endif
+							},
+							["g"] = {
+								-- i(137642),    -- Mark of Honor		-- The Vendor has a different box for less Costs (2k) with more Marks of Honor (x5). Hidding this on purpose.
+								i(201254),	-- Cracked Medal of Honor [A]
+								i(201255),	-- Cracked Medal of Honor [H]
+							},
+						}),
 					},
 				}),
 			})),
