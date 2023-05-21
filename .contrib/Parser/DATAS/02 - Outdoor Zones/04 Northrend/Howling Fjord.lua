@@ -200,9 +200,18 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",
-						646,	-- Chicken
-						378,	-- Rabbit
-						379,	-- Squirrel
+						646,	-- Chicken (PET!)
+						647,	-- Grizzly Squirrel (PET!)
+						450,	-- Maggot (PET!)
+						378,	-- Rabbit (PET!)
+						417,	-- Rat (PET!)
+						424,	-- Roach (PET!)
+						388,	-- Shore Crab (PET!)
+						397,	-- Skunk (PET!)
+						387,	-- Snake (PET!)
+						412,	-- Spider (PET!)
+						379,	-- Squirrel (PET!)
+						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["g"] = {
 						p(523, {	-- Devouring Maggot
@@ -214,35 +223,8 @@ root(ROOTS.Zones, {
 						p(529, {	-- Fjord Worg Pup
 							["crs"] = { 62669 },	-- Fjord Worg Pup
 						}),
-						p(647, {	-- Grizzly Squirrel
-							["crs"] = { 62818 },	-- Grizzly Squirrel
-						}),
-						p(450, {	-- Maggot
-							["crs"] = { 61753 },	-- Maggot
-						}),
-						p(417, {	-- Rat
-							["crs"] = { 61366 },	-- Rat
-						}),
-						p(424, {	-- Roach
-							["crs"] = { 61169 },	-- Roach
-						}),
-						p(388, {	-- Shore Crab
-							["crs"] = { 61158 },	-- Shore Crab
-						}),
-						p(397, {	-- Skunk
-							["crs"] = { 61255 },	-- Skunk
-						}),
-						p(387, {	-- Snake
-							["crs"] = { 61142 },	-- Snake
-						}),
-						p(412, {	-- Spider
-							["crs"] = { 61327 },	-- Spider
-						}),
 						p(525, {	-- Turkey
 							["crs"] = { 62648 },	-- Turkey
-						}),
-						p(1238, {	-- Unborn Val'kyr
-							["crs"] = { 71163 },	-- Unborn Val'kyr
 						}),
 					},
 				})),

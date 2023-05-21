@@ -279,9 +279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				p(487, {	-- Alpine Chipmunk
 					["crs"] = { 62189 },	-- Alpine Chipmunk
 				}),
-				p(441, {	-- Alpine Hare
-					["crs"] = { 61690 },	-- Alpine Hare
-				}),
+				pet(441),	-- Alpine Hare (PET!)
 				p(1163, {	-- Anodized Robo Cub
 					["crs"] = { 68839 },	-- Anodized Robo Cub
 				}),
@@ -298,7 +296,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				p(471, {	-- Robo-Chick
 					["crs"] = { 62119 },	-- Robo-Chick
 				}),
-				pet(69, {	-- Snowy Owl
+				pet(69, {	-- Snowy Owl (PET!)
 					["description"] = "Starts spawning December 21st. Stops spawning March 20th",
 				}),
 			})),

@@ -96,8 +96,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					379,	-- Squirrel
-					420,	-- Toad
+					417,	-- Rat (PET!)
+					424,	-- Roach (PET!)
+					379,	-- Squirrel (PET!)
+					420,	-- Toad (PET!)
 				}},
 				["g"] = {
 					p(478, {	-- Forest Moth
@@ -106,15 +108,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					p(495, {	-- Frog
 						["crs"] = { 62312 },	-- Frog
 					}),
-					p(450, {	-- Maggot
-						["crs"] = { 61753 },	-- Maggot
-					}),
-					p(417, {	-- Rat
-						["crs"] = { 61366 },	-- Rat
-					}),
-					p(424, {	-- Roach
-						["crs"] = { 61169 },	-- Roach
-					}),
+					pet(450),	-- Maggot (PET!)
 					p(496, {	-- Rusty Snail
 						["crs"] = { 62313 },	-- Rusty Snail
 						["description"] = "Can be found on the beaches of the western coast in Ashenvale.",

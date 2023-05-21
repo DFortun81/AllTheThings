@@ -707,8 +707,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						p(1162, {	-- Fluxfire Feline
 							["crs"] = { 68838 },	-- Fluxfire Feline
 						}),
-						p(442, {	-- Irradiated Roach
-							["crs"] = { 61691 },	-- Irradiated Roach
+						pet(442, {	-- Irradiated Roach (PET!)
+							["description"] = "Found only in the Toxic Airfield near Gnomeregan.",
+							["coord"] = { 43, 59, NEW_TINKERTOWN },
 						}),
 					})),
 					-- #endif
@@ -1142,8 +1143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["maps"] = { COLDRIDGE_VALLEY },
 						-- #endif
 					}),
-					p(440, {	-- Snow Cub
-						["crs"] = { 61689 },	-- Snow Cub
+					pet(440, {	-- Snow Cub (PET!)
 						-- #if AFTER CATA
 						["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
 						-- #else

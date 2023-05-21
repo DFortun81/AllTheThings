@@ -44,20 +44,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					635,	-- Adder
+					635,	-- Adder (PET!)
+					415,	-- Fire Beetle (PET!)
+					414,	-- Scorpid (PET!)
+					412,	-- Spider (PET!)
 				}},
 				["groups"] = {
-					p(415, {	-- Fire Beetle
-						["crs"] = { 61328 },	-- Fire Beetle
-					}),
-					p(414, {	-- Scorpid
-						["crs"] = { 61326 },	-- Scorpid
-					}),
-					p(416, {	-- Scorpling
-						["crs"] = { 61329 },	-- Scorpling
-					}),
-					p(412, {	-- Spider
-						["crs"] = { 61327 },	-- Spider
+					pet(416, {	-- Scorpling (PET!)
+						["coord"] = { 59.6, 60.8, BLASTED_LANDS },
 					}),
 				},
 			})),

@@ -8,24 +8,21 @@ _.Zones =
 		m(SPIRES_OF_ARAK, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					635,	-- Adder
-					379,	-- Squirrel
+					635,	-- Adder (PET!)
+					407,	-- Forest Spiderling (PET!)
+					417,	-- Rat (PET!)
+					379,	-- Squirrel (PET!)
+					401,	-- Strand Crab (PET!)
 				}},
 				["groups"] = {
 					p(1462, {	-- Bloodsting Wasp
 						["crs"] = { 85255 },	-- Bloodsting Wasp
-					}),
-					p(407,  {	-- Forest Spiderling
-						["crs"] = { 61320 },	-- Forest Spiderling
 					}),
 					p(1573, {	-- Golden Dawnfeather
 						["crs"] = { 85798 },	-- Golden Dawnfeather
 					}),
 					p(1441, {	-- Mud Jumper
 						["crs"] = { 83642 },	-- Mud Jumper
-					}),
-					p(417,  {	-- Rat
-						["crs"] = { 61366 },	-- Rat
 					}),
 					p(1587, {	-- Royal Moth
 						["crs"] = { 88417 },	-- Royal Moth
@@ -48,9 +45,6 @@ _.Zones =
 					}),
 					p(568,  {	-- Silkbead Snail
 						["crs"] = { 63001 },	-- Silkbead Snail
-					}),
-					p(401,  {	-- Strand Crab
-						["crs"] = { 61312 },	-- Strand Crab
 					}),
 					p(1590, {	-- Swamplighter Firefly
 						["crs"] = { 88359 },	-- Swamplighter Firefly

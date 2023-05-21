@@ -37,24 +37,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit
+					646,	-- Chicken (PET!)
+					378,	-- Rabbit (PET!)
+					424,	-- Roach (PET!)
 				}},
 				["g"] = {
-					p(646, {	-- Chicken
-						["crs"] = { 62664 },	-- Chicken
-					}),
-					p(395, {	-- Fledgling Buzzard
-						["crs"] = { 61171 },	-- Fledgling Buzzard
-					}),
-					p(391, {	-- Mountain Cottontail
-						["crs"] = { 61167 },	-- Mountain Cottontail
-					}),
-					p(392, {	-- Redridge Rat
-						["crs"] = { 61168 },	-- Redridge Rat
-					}),
-					p(424, {	-- Roach
-						["crs"] = { 61169 },	-- Roach
-					}),
+					pet(395),	-- Fledgling Buzzard (PET!)
+					pet(391),	-- Mountain Cottontail (PET!)
+					pet(392),	-- Redridge Rat (PET!)
 				},
 			})),
 			-- #endif

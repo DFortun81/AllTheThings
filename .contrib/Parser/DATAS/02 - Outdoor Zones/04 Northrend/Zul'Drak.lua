@@ -113,22 +113,18 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(641, {	-- Arctic Hare
-						["crs"] = { 62693 },
-					}),
-					p(387, {	-- Snake
-						["crs"] = { 61142 },
-					}),
-					p(412, {	-- Spider
-						["crs"] = { 61327 },
-					}),
-					p(1238, {	-- Unborn Val'kyr
-						["crs"] = { 71163 },
-					}),
-					p(535, {	-- Water Waveling
-						["crs"] = { 62820 },
-						["description"] = "Spawns in the farms south of The Argent Stand.",
-					}),
+					["sym"] = {{"select","speciesID",
+						641,	-- Arctic Hare (PET!)
+						387,	-- Snake (PET!)
+						412,	-- Spider (PET!)
+						1238,	-- Unborn Val'kyr (PET!)
+					}},
+					["g"] = {
+						pet(535, {	-- Water Waveling (PET!)
+							["coord"] = { 43.0, 77.6,ZULDRAK },
+							["description"] = "Spawns in the farms south of The Argent Stand.",
+						}),
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC

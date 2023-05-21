@@ -141,13 +141,12 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",
-						378,	-- Rabbit
-						379,	-- Squirrel
+						449,	-- Brown Marmot (PET!)
+						378,	-- Rabbit (PET!)
+						414,	-- Scorpid (PET!)
+						379,	-- Squirrel (PET!)
 					}},
 					["g"] = {
-						p(449, {	-- Brown Marmot
-							["crs"] = { 61752 },	-- Brown Marmot
-						}),
 						p(1164, {	-- Cogblade Raptor
 							["crs"] = { 68841 },	-- Cogblade Raptor
 							["description"] ="Found often to the left and right of Death's Door."
@@ -159,9 +158,6 @@ root(ROOTS.Zones, {
 							["crs"] = { 62628 },	-- Scalded Basilisk Hatchling
 							["coord"] = { 72.8, 20.6, BLADES_EDGE_MOUNTAINS },
 							["description"] = "Found in a fairly large area around the coord, above the road.",
-						}),
-						p(414, {	-- Scorpid
-							["crs"] = { 61326 },	-- Scorpid
 						}),
 						p(637, {	-- Skittering Cavern Crawler
 							["crs"] = { 62638 },		-- Skittering Cavern Crawler

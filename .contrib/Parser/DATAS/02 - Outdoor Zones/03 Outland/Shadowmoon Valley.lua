@@ -141,19 +141,19 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(425, {	-- Ash Viper
-						["crs"] = { 61385 },	-- Ash Viper
-					}),
-					p(519, {	-- Fel Flame
-						["crs"] = { 62621 },	-- Fel Flame
-						["description"] = "Found around the Hand of Gul'dan in old Shadowmoon Valley and fel areas in Tanaan.",
-					}),
-					p(414, {	-- Scorpid
-						["crs"] = { 61326 },	-- Scorpid
-					}),
-					p(497, {	-- Tainted Cockroach
-						["crs"] = { 62314 },	-- Tainted Cockroach
-					}),
+					["sym"] = {{"select","speciesID",
+						414,	-- Scorpid (PET!)
+						425,	-- Ash Viper (PET!)
+					}},
+					["g"] = {
+						p(519, {	-- Fel Flame
+							["crs"] = { 62621 },	-- Fel Flame
+							["description"] = "Found around the Hand of Gul'dan in old Shadowmoon Valley and fel areas in Tanaan.",
+						}),
+						p(497, {	-- Tainted Cockroach
+							["crs"] = { 62314 },	-- Tainted Cockroach
+						}),
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC

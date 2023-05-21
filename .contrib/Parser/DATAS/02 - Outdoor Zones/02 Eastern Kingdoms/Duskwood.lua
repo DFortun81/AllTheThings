@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 				["g"] = {
 					pet(398),  -- Black Rat (PET!)
-					pet(396, { -- Dusk Spiderling (PET!)
+					pet(396, {	-- Dusk Spiderling (PET!)
 						["description"] = "Found commonly in the area around the coord.",
 						["coord"] = { 32.6, 51.6, DUSKWOOD },
 					}),

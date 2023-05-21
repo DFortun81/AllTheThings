@@ -30,11 +30,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					-- #if AFTER MOP
 					petbattle(filter(BATTLE_PETS, {
-						p(417, {	-- Rat
-							["crs"] = { 61366 },	-- Rat
+						pet(417, {	-- Rat
+							["description"] = "Found in MANY zones on Azeroth and Draenor, this place just seems to have the highest concentration of them."
 						}),
-						p(458, {	-- Lost of Lordaeron
-							["crs"] = { 61905 },	-- Lost of Lordaeron
+						pet(458, {	-- Lost of Lordaeron (PET!)
+							["description"] = "Found mostly around the Ruins of Lordaeron.",
 						}),
 					})),
 					-- #endif
@@ -679,18 +679,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(417, {	-- Bat
-					["crs"] = { 61829 },
-				}),
-				p(646, {	-- Chicken
-					["crs"] = { 62664 },
-				}),
-				p(458, {	-- Lost of Lordaeron
-					["crs"] = { 61905 },
-				}),
-				p(417, {	-- Rat
-					["crs"] = { 61366 },
-				}),
+				["sym"] = {{"select","speciesID",
+					646,	-- Chicken (PET!)
+					417,	-- Rat (PET!)
+					458,	-- Lost of Lordaeron (PET!)
+				}},
+				["g"] = {
+					p(417, {	-- Bat
+						["crs"] = { 61829 },
+					}),
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

@@ -264,17 +264,16 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(419, {	-- Small Frog
-						["crs"] = { 61071 },	-- Small Frog
-					}),
-					p(387, {	-- Snake
-						["crs"] = { 61142 },	-- Snake
-					}),
-					p(515, {	-- Sporeling Sprout
-						["crs"] = { 62564 },	-- Sporeling Sprout
-						["coord"] = { 20.0, 51.6, ZANGARMARSH },
-						["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with thr Sporeggar faction.",
-					}),
+					["sym"] = {{"select","speciesID",
+						419,	-- Small Frog (PET!)
+						387,	-- Snake (PET!)
+					}},
+					["g"] = {
+						pet(515, {	-- Sporeling Sprout (PET!)
+							["coord"] = { 20.0, 51.6, ZANGARMARSH },
+							["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with the Sporeggar faction.",
+						}),
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC

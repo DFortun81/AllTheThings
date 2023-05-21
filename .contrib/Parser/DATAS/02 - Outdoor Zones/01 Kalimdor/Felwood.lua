@@ -79,12 +79,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					420,	-- Toad
+					406,	-- Beetle (PET!)
+					420,	-- Toad (PET!)
 				}},
 				["g"] = {
-					p(406, {	-- Beetle
-						["crs"] = { 61319 },	-- Beetle
-					}),
 					p(500, {	-- Minfernal
 						["crs"] = { 62317 },	-- Minfernal
 						["description"] = "Can be found around Shatter Scar Vale near Infernal Sentries.",

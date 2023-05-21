@@ -56,19 +56,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(398, {	-- Black Rat
-					["crs"] = { 61257 },	-- Black Rat
-				}),
-				p(424, {	-- Roach
-					["crs"] = { 61169 },	-- Roach
-				}),
-				p(414, {	-- Scorpid
-					["crs"] = { 61326 },	-- Scorpid
-				}),
-				p(505, {	-- Twilight Iguana
-					["crs"] = { 62255 },	-- Twilight Iguana
-					["description"] = "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",
-				}),
+				["sym"] = {{"select","speciesID",
+					398,	-- Black Rat (PET!)
+					424,	-- Roach (PET!)
+					414,	-- Scorpid (PET!)
+				}},
+				["g"] = {
+					pet(505, {	-- Twilight Iguana (PET!)
+						["description"] = "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",
+						["coords"] = {
+							{ 55.8, 61.6, THOUSAND_NEEDLES },
+							{ 33.8, 58.4, THOUSAND_NEEDLES },
+						},
+					}),
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

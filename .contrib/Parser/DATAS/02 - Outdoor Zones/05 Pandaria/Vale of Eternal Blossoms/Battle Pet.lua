@@ -9,7 +9,7 @@ _.Zones =
 			petbattle(filter(BATTLE_PETS, {
 				p(751),	-- Dancing Water Skimmer
 				p(747),	-- Effevescent Glowfly
-				p(383),	-- Eternal Strider
+				pet(383),	-- Eternal Strider (PET!)
 				p(748),	-- Gilded Moth
 				p(749),	-- Golden Civet
 				p(750),	-- Golden Civet Kitten

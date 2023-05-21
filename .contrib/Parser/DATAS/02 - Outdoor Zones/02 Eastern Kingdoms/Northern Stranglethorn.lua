@@ -61,33 +61,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(406, {	-- Beetle
-					["crs"] = { 61319 },	-- Beetle
-				}),
-				p(421, {	-- Crimson Moth
-					["crs"] = { 61314 },	-- Crimson Moth
-				}),
-				p(407, {	-- Forest Spiderling
-					["crs"] = { 61320 },	-- Forest Spiderling
-				}),
-				p(408, {	-- Lizard Hatchling
-					["crs"] = { 61321 },	-- Lizard Hatchling
-				}),
-				p(404, {	-- Long-tailed Mole
-					["crs"] = { 61317 },	-- Long-tailed Mole
-				}),
-				p(409, {	-- Polly
-					["crs"] = { 61322 },	-- Polly
-				}),
-				p(424, {	-- Roach
-					["crs"] = { 61169 },	-- Roach
-				}),
-				p(401, {	-- Strand Crab
-					["crs"] = { 61312 },	-- Strand Crab
-				}),
-				p(405, {	-- Tree Python
-					["crs"] = { 61318 },	-- Tree Python
-				}),
+				["sym"] = {{"select","speciesID",
+					407,	-- Forest Spiderling (PET!)
+					404,	-- Long-tailed Mole (PET!)
+					424,	-- Roach (PET!)
+					401,	-- Strand Crab (PET!)
+				}},
+				["g"] = {
+					pet(406),	-- Beetle (PET!)
+					pet(421, {	-- Crimson Moth (PET!)
+						["coord"] = { 41.8, 41.6, NORTHERN_STRANGLETHORN },
+					}),
+					pet(408),	-- Lizard Hatchling (PET!)
+					pet(409),	-- Polly (PET!)
+					pet(405),	-- Tree Python (PET!)
+				},
 			})),
 			-- #endif
 			n(FLIGHT_PATHS, {

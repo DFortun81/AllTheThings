@@ -87,7 +87,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					635,	-- Adder
+					635,	-- Adder (PET!)
+					419,	-- Small Frog (PET!)
 				}},
 				["groups"] = {
 					p(474, {	-- Cheetah Cub
@@ -101,10 +102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["crs"] = { 68804 },	-- Harpy Youngling
 						["description"] = "Can be found at The Dry Hills, alongside Witchwing Harpies.",
 					}),
-					pet(386),	-- Prairie Dog
-					p(419, {	-- Small Frog
-						["crs"] = { 61071 },	-- Small Frog
-					}),
+					pet(386),	-- Prairie Dog (PET!)
 				},
 			})),
 			-- #endif

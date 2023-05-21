@@ -2641,8 +2641,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit
-					379,	-- Squirrel
+					378,	-- Rabbit (PET!)
+					379,	-- Squirrel (PET!)
 				}},
 				["g"] = {
 					p(675, {	-- Stormwind Rat

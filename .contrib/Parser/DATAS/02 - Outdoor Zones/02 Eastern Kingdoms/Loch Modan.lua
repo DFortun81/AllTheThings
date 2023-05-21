@@ -52,27 +52,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					379,	-- Squirrel
+					441, 	-- Alpine Hare (PET!)
+					417,	-- Rat (PET!)
+					419,	-- Small Frog (PET!)
+					387,	-- Snake (PET!)
+					440,	-- Snow Cub (PET!)
+					379,	-- Squirrel (PET!)
 				}},
 				["g"] = {
-					p(441, {	-- Alpine Hare
-						["crs"] = { 61690 },	-- Alpine Hare
-					}),
-					p(437, {	-- Little Black Lamb
-						["crs"] = { 61459 },	-- Little Black Lamb
-					}),
-					p(417, {	-- Rat
-						["crs"] = { 61366 },	-- Rat
-					}),
-					p(419, {	-- Small Frog
-						["crs"] = { 61071 },	-- Small Frog
-					}),
-					p(387, {	-- Snake
-						["crs"] = { 61142 },	-- Snake
-					}),
-					p(440, {	-- Snow Cub
-						["crs"] = { 61689 },	-- Snow Cub
-					}),
+					pet(437),	-- Little Black Ram (PET!)
 				},
 			})),
 			-- #endif

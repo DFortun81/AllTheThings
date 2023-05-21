@@ -72,37 +72,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit
-					379,	-- Squirrel
-					420,	-- Toad
+					646,	-- Chicken (PET!)
+					450,	-- Maggot (PET!)
+					378,	-- Rabbit (PET!)
+					417,	-- Rat (PET!)
+					412,	-- Spider (PET!)
+					379,	-- Squirrel (PET!)
+					420,	-- Toad (PET!)
 				}},
 				["g"] = {
-					p(646, {	-- Chicken
-						["crs"] = { 62664 },	-- Chicken
-					}),
 					p(648, {	-- Huge Toad
 						["crs"] = { 61368 },	-- Huge Toad
 					}),
-					p(453, {	-- Infested Bear Cub
-						["crs"] = { 61758 },	-- Infested Bear Cub
+					pet(453, {	-- Infested Bear Cub (PET!)
+						["crs"] = { 35.4, 69.6, HILLSBRAD_FOOTHILLS },
 					}),
-					p(1159, {	-- Lofty Libram
+					pet(1159, {	-- Lofty Libram (PET!)
 						["crs"] = { 68806 },	-- Lofty Libram
 					}),
-					p(450, {	-- Maggot
-						["crs"] = { 61753 },	-- Maggot
-					}),
-					p(417, {	-- Rat
-						["crs"] = { 61366 },	-- Rat
-					}),
-					p(452, {	-- Red-Tailed Chipmunk
-						["crs"] = { 61757 },	-- Red-Tailed Chipmunk
-					}),
+					pet(452),	-- Red-Tailed Chipmunk (PET!)
 					p(640, {	-- Snowshoe Hare
 						["crs"] = { 61755 },	-- Snowshoe Hare
-					}),
-					p(412, {	-- Spider
-						["crs"] = { 61327 },	--- Spider
 					}),
 				},
 			})),

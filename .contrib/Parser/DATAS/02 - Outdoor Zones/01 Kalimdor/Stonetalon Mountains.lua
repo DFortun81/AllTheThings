@@ -63,7 +63,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit
+					633,	-- Mountain Skunk (PET!)
+					378,	-- Rabbit (PET!)
+					417,	-- Rat (PET!)
+					424,	-- Roach (PET!)
 				}},
 				["g"] = {
 					p(487, {	-- Alpine Chipmunk
@@ -72,20 +75,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					p(488, {	-- Coral Snake
 						["crs"] = { 62190 },	-- Coral Snake
 					}),
-					p(633, {	-- Mountain Skunk
-						["crs"] = { 61677 },	-- Mountain Skunk
-					}),
 					p(472, {	-- Rabid Nut Varmint 5000
 						["crs"] = { 62120 },	-- Rabit Nut Varmint 5000
 					}),
-					p(417, {	-- Rat
-						["crs"] = { 61366 },	-- Rat
-					}),
-					p(424, {	-- Roach
-						["crs"] = { 61169 },	-- Roach
-					}),
-					p(412, {	-- Spider
-						["crs"] = { 61327 },	-- Spider
+					pet(412, {	-- Spider (PET!)
+						["description"] = "The best place to catch these seems to be south of Windshear Hold, but it can definitely be found in other listed places.",
 					}),
 					p(506, {	-- Venomspitter Hatchling
 						["crs"] = { 62191 },	-- Venomspitter Hatchling

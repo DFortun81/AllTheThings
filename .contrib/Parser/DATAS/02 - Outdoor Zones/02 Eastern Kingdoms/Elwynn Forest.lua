@@ -1404,16 +1404,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					646,	-- Chicken
+					646,	-- Chicken (PET!)
 				}},
 				["g"] = {
-					pet(374),	-- Black Lamb
-					pet(459),	-- Cat
-					pet(447),	-- Fawn
-					pet(378),	-- Rabbit
-					pet(419),	-- Small Frog
-					pet(379),	-- Squirrel
-					pet(675),	-- Stormwind Rat
+					pet(374),	-- Black Lamb (PET!)
+					pet(459, { -- Cat (PET!)
+						["description"] = "Found commonly around the small farmhouse SW of Northshire and on Sunstrider Isle.",
+					}),
+					pet(447),	-- Fawn (PET!)
+					pet(378),	-- Rabbit (PET!)
+					pet(419),	-- Small Frog (PET!)
+					pet(379),	-- Squirrel (PET!)
+					pet(675),	-- Stormwind Rat (PET!)
 				},
 			})),
 			-- #endif

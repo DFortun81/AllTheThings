@@ -240,25 +240,19 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(558, {	-- Arctic Fox Kit
-						["crs"] = { 62864 },	-- Arctic Fox Kit
-						["description"] = "Only spawns while it is snowing. Weather in this area seems to be character specific occasionally.",
-					}),
-					p(641, {	-- Arctic Hare
-						["crs"] = { 62693 },	-- Arctic Haire
-					}),
-					p(393, {	-- Cockroach
-						["crs"] = { 61384 },	-- Cockroach
-					}),
-					p(633, {	-- Mountain Skunk
-						["crs"] = { 61677 },	-- Mountain Skunk
-					}),
-					p(412, {	-- Spider
-						["crs"] = { 61327 },	-- Spider
-					}),
-					p(1238, {	-- Unborn Val'kyr
-						["crs"] = { 71163 },	-- Unborn Val'kyr
-					}),
+					["sym"] = {{"select","speciesID",
+						641,	-- Arctic Hare
+						393,	-- Cockroach (PET!)
+						633,	-- Mountain Skunk (PET!)
+						412,	-- Spider (PET!)
+						1238,	-- Unborn Val'kyr (PET!)
+					}},
+					["g"] = {
+						p(558, {	-- Arctic Fox Kit
+							["crs"] = { 62864 },	-- Arctic Fox Kit
+							["description"] = "Only spawns while it is snowing. Weather in this area seems to be character specific occasionally.",
+						}),
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC

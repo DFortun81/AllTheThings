@@ -43,8 +43,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				p(1160, {	-- Arcane Eye
 					["crs"] = { 68819 },	-- Arcane Eye
 				}),
-				p(439, {	-- Restless Shadeling
-					["crs"] = { 61375 },	-- Restless Shadeling
+				pet(439, {	-- Restless Shadeling (PET!)
 					["description"] = "Spawns in |cFFFFD700The Master's Cellar|r at midnight PST for a very limited amount of time.",
 				}),
 			})),

@@ -48,25 +48,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					420,	-- Toad
-					418,	-- Water Snake
+					403,	-- Parrot (PET!)
+					401,	-- Strand Crab (PET!)
+					420,	-- Toad (PET!)
+					418,	-- Water Snake (PET!)
 				}},
 				["g"] = {
 					p(648, {	-- Huge Toad
 						["crs"] = { 61368 },	-- Huge Toad
 					}),
-					p(422, {	-- Moccasin
-						["crs"] = { 61372 },	-- Moccasin
-					}),
-					p(403, {	-- Parrot
-						["crs"] = { 61313 },	-- Parrot
-					}),
-					p(401, {	-- Strand Crab
-						["crs"] = { 61312 },	-- Strand Crab
-					}),
-					p(402, {	-- Swamp Moth
-						["crs"] = { 61370 },	-- Swamp Moth
-					}),
+					pet(422),	-- Moccasin (PET!)
+					pet(402),	-- Swamp Moth (PET!)
 				},
 			})),
 			-- #endif

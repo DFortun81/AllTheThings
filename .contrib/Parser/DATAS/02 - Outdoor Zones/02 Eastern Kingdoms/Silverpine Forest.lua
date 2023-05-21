@@ -42,25 +42,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit
-					379,	-- Squirrel
-					420,	-- Toad
+					378,	-- Rabbit (PET!)
+					417,	-- Rat (PET!)
+					387,	-- Snake (PET!)
+					379,	-- Squirrel (PET!)
+					420,	-- Toad (PET!)
 				}},
 				["g"] = {
-					p(455, {	-- Blighted Squirrel
-						["crs"] = { 61890 },	-- Blighted Squirrel
-					}),
+					pet(455),	-- Blighted Squirrel (PET!)
 					p(628, {	-- Infected Fawn
 						["crs"] = { 61827 },	-- Infected Fawn
 					}),
 					p(627, {	-- Infected Squirrel
 						["crs"] = { 61828 },	-- Infected Squirrel
-					}),
-					p(417, {	-- Rat
-						["crs"] = { 61366 },	-- Rat
-					}),
-					p(387, {	-- Snake
-						["crs"] = { 61142 },	-- Snake
 					}),
 				},
 			})),

@@ -53,21 +53,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(443, {	-- Grasslands Cottontail
-					["crs"] = { 61704 },	-- Grasslands Cottontail
-				}),
-				p(386, {	-- Prairie Dog
-					["crs"] = { 61141 },	-- Prairie Dog
-				}),
-				p(417, {	-- Rat
-					["crs"] = { 61366 },	-- Rat
-				}),
-				p(419, {	-- Small Frog
-					["crs"] = { 61071 },	-- Small Frog
-				}),
-				p(445, {	-- Tiny Twister
-					["crs"] = { 61703 },	-- Tiny Twister
-				}),
+				["sym"] = {{"select","speciesID",
+					386,	-- Prarie Dog (PET!)
+					417,	-- Rat (PET!)
+					419,	-- Small Frog (PET!)
+				}},
+				["g"] = {
+					pet(443),	-- Grasslands Cottontail (PET!)
+					pet(445, {	-- Tiny Twister (PET!)
+						["coord"] = { 47.0, 53.0, ARATHI_HIGHLANDS },
+					}),
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

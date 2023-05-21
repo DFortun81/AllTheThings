@@ -136,9 +136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["description"] = "Found mostly around Nordrassil and the tree.",
 				}),
-				p(415, {	-- Fire Beetle
-					["crs"] = { 61328 },	-- Fire Beetle
-				}),
+				pet(415),	-- Fire Beetle
 				p(541, {	-- Fire-Proof Roach
 					["crs"] = { 62886 },	-- Fire-Proof Roach
 				}),

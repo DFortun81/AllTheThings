@@ -40,18 +40,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(427, {	-- Ash Spiderling
-					["crs"] = { 61420 },	-- Ash Spiderling
-				}),
-				p(415, {	-- Fire Beetle
-					["crs"] = { 61328 },	-- Fire Beetle
-				}),
-				p(423, {	-- Lava Crab
-					["crs"] = { 61383 },	-- Lava Crab
-				}),
-				p(428, {	-- Molten Hatchling
-					["crs"] = { 61425 },	-- Molten Hatchling
-				}),
+				["sym"] = {{"select","speciesID",
+					415,	-- Fire Beetle (PET!)
+				}},
+				["g"] = {
+					pet(427),	-- Ash Spiderling (PET!)
+					pet(423),	-- Lava Crab (PET!)
+					pet(428),	-- Molten Hatchling (PET!)
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

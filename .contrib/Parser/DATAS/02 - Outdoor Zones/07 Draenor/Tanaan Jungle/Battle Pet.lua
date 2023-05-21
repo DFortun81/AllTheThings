@@ -7,7 +7,12 @@ _.Zones =
 	m(DRAENOR, {
 		m(TANAAN_JUNGLE, {
 			petbattle(filter(BATTLE_PETS, {
-				ach(10052, {	-- Tiny Terrors in Tanaan
+				["sym"] = {{"select","speciesID",
+					417,	-- Rat (PET!)
+					405,	-- Tree Python (PET!)
+				}},
+				["g"] = {
+					ach(10052, {	-- Tiny Terrors in Tanaan
 					n(94601, {	-- Felsworn Sentry
 						["questID"] = 39157,
 						["isDaily"] = true,
@@ -213,33 +218,28 @@ _.Zones =
 						i(118101),	-- Zangar Spore (PET!)
 					},
 				}),
-				p(1468, {	--  Bloodbeak
-					["crs"] = { 85388 },	--  Bloodbeak
-				}),
-				p(1586, {	--  Cerulean Moth
-					["crs"] = { 88422 },	--  Cerulean Moth
-				}),
-				p(519, {	--  Fel Flame
-					["crs"] = { 62621 },	--  Fel Flame
-				}),
-				p(1581, {	--  Fen Crab
-					["crs"] = { 88473 },	--  Fen Crab
-				}),
-				p(483, {	--  Horny Toad
-					["crs"] = { 62185 },	--  Horny Toad
-				}),
-				p(417, {	--  Rat
-					["crs"] = { 61366 },	--  Rat
-				}),
-				p(405, {	--  Tree Python
-					["crs"] = { 61318 },	--  Tree Python
-				}),
-				p(1591, {	--  Violet Firefly
-					["crs"] = { 88357 },	--  Violet Firefly
-				}),
-				p(1593, {	--  Waterfly
-					["crs"] = { 88355 },	--  Waterfly
-				}),
+					p(1468, {	--  Bloodbeak
+						["crs"] = { 85388 },	--  Bloodbeak
+					}),
+					p(1586, {	--  Cerulean Moth
+						["crs"] = { 88422 },	--  Cerulean Moth
+					}),
+					p(519, {	--  Fel Flame
+						["crs"] = { 62621 },	--  Fel Flame
+					}),
+					p(1581, {	--  Fen Crab
+						["crs"] = { 88473 },	--  Fen Crab
+					}),
+					p(483, {	--  Horny Toad
+						["crs"] = { 62185 },	--  Horny Toad
+					}),
+					p(1591, {	--  Violet Firefly
+						["crs"] = { 88357 },	--  Violet Firefly
+					}),
+					p(1593, {	--  Waterfly
+						["crs"] = { 88355 },	--  Waterfly
+					}),
+				},
 			})),
 		}),
 	}),

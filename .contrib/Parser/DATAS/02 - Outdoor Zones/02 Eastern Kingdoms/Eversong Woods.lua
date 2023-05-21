@@ -852,22 +852,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					420,	-- Toad
+					459,	-- Cat (PET!)
+					419,	-- Small Frog (PET!)
+					387,	-- Snake (PET!)
+					420,	-- Toad (PET!)
 				}},
 				["g"] = {
-					p(459, {	-- Cat
-						["crs"] = { 62019 },	-- Cat
-						["maps"] = { SUNSTRIDER_ISLE },
-					}),
-					p(460, {	-- Ruby Sapling
-						["crs"] = { 62020 },	-- Ruby Sapling
-					}),
-					p(419, {	-- Small Frog
-						["crs"] = { 61071 },	-- Small Frog
-					}),
-					p(387, {	-- Snake
-						["crs"] = { 61142 },	-- Snake
-					}),
+					pet(460),	-- Ruby Sapling (PET!)
 				},
 			})),
 			-- #endif

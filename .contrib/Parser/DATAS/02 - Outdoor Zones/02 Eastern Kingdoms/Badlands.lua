@@ -51,27 +51,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(406, {	-- Beetle
-					["crs"] = { 61319 },
-				}),
-				p(398, {	-- Black Rat
-					["crs"] = { 61257 },
-				}),
-				p(430, {	-- Gold Beetle
-					["crs"] = { 61438 },
-				}),
-				p(438, {	-- King Snake
-					["crs"] = { 61443 },
-				}),
-				p(431, {	-- Rattlesnake
-					["crs"] = { 61439 },
-				}),
-				p(433, {	-- Spiky Lizard
-					["crs"] = { 61441 },
-				}),
-				p(432, {	-- Stripe-Tailed Scorpid
-					["crs"] = { 61440 },
-				}),
+				["sym"] = {{"select","speciesID",
+					406,	-- Beetle (PET!)
+					398,	-- Black Rat (PET!)
+					430,	-- Gold Beetle (PET!)
+					431,	-- Rattlesnake (PET!)
+					433,	-- Spiky Lizard (PET!)
+					432,	-- Stripe-Tailed Scorpid (PET!)
+				}},
+				["g"] = {
+					pet(438),	-- King Snake (PET!)
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

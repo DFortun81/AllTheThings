@@ -184,15 +184,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					418,	-- Water Snake
+					398,	-- Black Rat (PET!)
+					393,	-- Cockroach (PET!)
+					414,	-- Scorpid (PET!)
+					388,	-- Shore Crab (PET!)
+					418,	-- Water Snake (PET!)
 				}},
 				["g"] = {
-					p(398, {	-- Black Rat
-						["crs"] = { 61257 },
-					}),
-					p(393, {	-- Cockroach
-						["crs"] = { 61384 },
-					}),
 					p(647, {	-- Grizzly Squirrel
 						["crs"] = { 62818 },
 					}),
@@ -208,15 +206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					p(648, {	-- Huge Toad
 						["crs"] = { 61368 },
 					}),
-					p(431, {	-- Rattlesnake
-						["crs"] = { 61439 },
-					}),
-					p(414, {	-- Scorpid
-						["crs"] = { 61326 },
-					}),
-					p(388, {	-- Shore Crab
-						["crs"] = { 61158 },
-					}),
+					pet(431),	-- Rattlesnake (PET!)
 					p(552, {	-- Twilight Fiendling
 						["crs"] = { 62914 },
 						["coords"] = {
@@ -226,7 +216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						["description"] = "Found in small areas around these coords."
 					}),
-					pet(470, {	-- Twilight Spider
+					pet(470, {	-- Twilight Spider (PET!)
 						["coord"] = { 59.6, 51.0, TWILIGHT_HIGHLANDS },
 						["description"] = "Found most commonly around Firebeard's Patrol.",
 					}),

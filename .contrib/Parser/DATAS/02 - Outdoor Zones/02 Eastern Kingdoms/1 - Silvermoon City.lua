@@ -41,16 +41,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit
+					459,	-- Cat (PET!)
+					385,	-- Mouse (PET!)
+					378,	-- Rabbit (PET!)
 				}},
-				["g"] = {
-					p(459, {	-- Cat
-						["crs"] = { 62019 },	-- Cat
-					}),
-					p(385, {	-- Mouse
-						["crs"] = { 61143 },	-- Mouse
-					}),
-				},
 			})),
 			-- #endif
 			n(FACTIONS, {

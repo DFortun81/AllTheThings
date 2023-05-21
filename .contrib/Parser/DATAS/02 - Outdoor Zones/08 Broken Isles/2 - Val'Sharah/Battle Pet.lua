@@ -8,18 +8,18 @@ _.Zones =
 		m(VALSHARAH, {
 			filter(BATTLE_PETS,  {
 				["sym"] = {{"select","speciesID",
-					379,	-- Squirrel
+					398,	-- Black Rat (PET!)
+					393,	-- Cockroach (PET!)
+					396,	-- Dusk Spiderling (PET!)
+					397,	-- Skunk (PET!)
+					379,	-- Squirrel (PET!)
+					380,	-- Bucktooth Flapper (PET!)
 				}},
 				["g"] = {
 					p(1738),	-- Auburn Ringtail
-					p(398),	-- Black Rat
-					p(380),	-- Bucktooth Flapper
-					p(393),	-- Cockroach
-					p(396),	-- Dusk Spiderling
 					p(479),	-- Elfin Rabbit
 					p(1913),	-- Gleamhoof Fawn
 					p(1734),	-- Shimmering Aquafly
-					p(397),	-- Skunk
 					p(1736),	-- Slithering Brownsnake
 					p(1739),	-- Spring Strider
 					p(1735),	-- Terror Larva

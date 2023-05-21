@@ -123,21 +123,16 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(641, {	-- Arctic Hare
-						["crs"] = { 62693 },	-- Arctic Hare
-					}),
-					p(393, {	-- Cockroach
-						["crs"] = { 61384 },	-- Cockroach
-					}),
-					p(633, {	-- Mountain Skunk
-						["crs"] = { 61677 },	-- Mountain Skunk
-					}),
-					p(538, {	-- Scourged Whelpling
-						["crs"] = { 62854 },	-- Scourged Whelpling
-					}),
-					p(1238, {	-- Unborn Val'kyr
-						["crs"] = { 71163 },	-- Unborn Val'kyr
-					}),
+					["sym"] = {{"select","speciesID",
+						635,	-- Adder (PET!)
+						641,	-- Arctic Hare (PET!)
+						633,	-- Mountain Skunk (PET!)
+						1238,	-- Unborn Val'kyr (PET!)
+					}},
+					["g"] = {
+						pet(393),	-- Cockroach (PET!)
+						pet(538),	-- Scourged Whelpling (PET!)
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC

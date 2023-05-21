@@ -46,24 +46,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(425, {	-- Ash Viper
-					["crs"] = { 61385 },	-- Ash Viper
-				}),
-				p(393, {	-- Cockroach
-					["crs"] = { 61384 },	-- Cockroach
-				}),
-				p(415, {	-- Fire Beetle
-					["crs"] = { 61328 },	-- Fire Beetle
-				}),
-				p(429, {	-- Lava Beetle
-					["crs"] = { 61386 },	-- Lava Beetle
-				}),
-				p(423, {	-- Lava Crab
-					["crs"] = { 61383 },	-- Lava Crab
-				}),
-				p(414, {	-- Scorpid
-					["crs"] = { 61326 },	-- Scorpid
-				}),
+				["sym"] = {{"select","speciesID",
+					393,	-- Cockroach (PET!)
+					415,	-- Fire Beetle (PET!)
+					429,	-- Lava Beetle (PET!)
+					423,	-- Lava Crab (PET!)
+					414,	-- Scorpid (PET!)
+				}},
+				["g"] = {
+					pet(425),	-- Ash Viper (PET!)
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

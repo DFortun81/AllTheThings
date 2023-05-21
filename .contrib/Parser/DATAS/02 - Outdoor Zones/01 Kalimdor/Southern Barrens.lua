@@ -100,7 +100,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					635,	-- Adder
+					635,	-- Adder (PET!)
+					386,	-- Prarie Dog (PET!)
+					419,	-- Small Frog (PET!)
 				}},
 				["groups"] = {
 					p(474, {	-- Cheetah Cub
@@ -113,12 +115,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					p(475, {	-- Giraffe Calf
 						["crs"] = { 62130 },	-- Giraffe Calf
 						["description"] = "Can be found with groups of roaming Dusthoof Giraffe.",
-					}),
-					p(386, {	-- Prairie Dog
-						["crs"] = { 61141 },	-- Prairie Dog
-					}),
-					p(419, {	-- Small Frog
-						["crs"] = { 61071 },	-- Small Frog
 					}),
 				},
 			})),

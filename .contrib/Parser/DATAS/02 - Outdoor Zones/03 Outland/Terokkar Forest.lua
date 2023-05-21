@@ -274,24 +274,16 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",
-						379,	-- Squirrel
+						417,	-- Rat (PET!)
+						397,	-- Skunk (PET!)
+						387,	-- Snake (PET!)
+						379,	-- Squirrel (PET!)
+						432,	-- Stripe-Tailed Scorpid (PET!)
 					}},
 					["g"] = {
 						p(514, {	-- Flayer Youngling
 							["crs"] = { 62555 },	-- Flayer Youngling
 							["description"] = "Found in Razorthorn Rise on the border of Hellfire and Terokkar.",
-						}),
-						p(417, {	-- Rat
-							["crs"] = { 61366 },	-- Rat
-						}),
-						p(397, {	-- Skunk
-							["crs"] = { 61255 },	-- Skunk
-						}),
-						p(387, {	-- Snake
-							["crs"] = { 61142 },	-- Snake
-						}),
-						p(432, {	-- Stripe-Tailed Scorpid
-							["crs"] = { 61440 },	-- Stripe-Tailed Scorpid
 						}),
 						p(517, {	-- Warpstalker Hatchling
 							["crs"] = { 62583 },	-- Warpstalker Hatchling

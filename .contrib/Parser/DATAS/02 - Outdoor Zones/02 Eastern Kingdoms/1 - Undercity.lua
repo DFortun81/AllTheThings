@@ -82,15 +82,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(450, {	-- Maggot
-					["crs"] = { 61753 },	-- Maggot
-				}),
-				p(424, {	-- Roach
-					["crs"] = { 61169 },	-- Roach
-				}),
-				p(454, {	-- Undercity Rat
-					["crs"] = { 61889 },	-- Undercity Rat
-				}),
+				["sym"] = {{"select","speciesID",
+					450,	-- Maggot (PET!)
+					424,	-- Roach (PET!)
+				}},
+				["g"] = {
+					pet(454),	-- Undercity Rat (PET!)
+				},
 			})),
 			-- #endif
 			n(FACTIONS, {

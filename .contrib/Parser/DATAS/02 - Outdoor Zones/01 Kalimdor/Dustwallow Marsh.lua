@@ -99,22 +99,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					420,	-- Toad
+					398,	-- Black Rat (PET!)
+					387,	-- Snake (PET!)
+					412,	-- Spider (PET!)
+					420,	-- Toad (PET!)
 				}},
 				["g"] = {
-					p(398, {	-- Black Rat
-						["crs"] = { 61257 },	-- Black Rat
-					}),
-					pet(385),	-- Mouse
-					p(387, {	-- Snake
-						["crs"] = { 61142 },	-- Snake
-					}),
+					pet(385),	-- Mouse (PET!)
 					p(489, {	-- Spawn of Onyxia
 						["crs"] = { 62201 },	-- Spawn of Onyxia
 						["description"] = "Can be found in the area around Onyxia's Lair in Dustwallow Marsh.",
-					}),
-					p(412, {	-- Spider
-						["crs"] = { 61327 },	-- Spider
 					}),
 				},
 			})),

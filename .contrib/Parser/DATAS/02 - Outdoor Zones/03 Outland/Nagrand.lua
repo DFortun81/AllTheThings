@@ -316,20 +316,14 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",
-						635,	-- Adder
-						379,	-- Squirrel
-						420,	-- Toad
+						635,	-- Adder (PET!)
+						386,	-- Prarie Dog (PET!)
+						417,	-- Rat (PET!)
+						379,	-- Squirrel (PET!)
+						420,	-- Toad (PET!)
 					}},
-					["groups"] = {
-						p(518, {	-- Clefthoof Runt
-							["crs"] = { 62620 },	-- Clefthoof Runt
-						}),
-						p(386, {	-- Prairie Dog
-							["crs"] = { 61141 },	-- Prairie Dog
-						}),
-						p(417, {	-- Rat
-							["crs"] = { 61366 },	-- Rat
-						}),
+					["g"] = {
+						pet(518),	-- Clefthoof Runt (PET!)
 					},
 				})),
 				-- #endif

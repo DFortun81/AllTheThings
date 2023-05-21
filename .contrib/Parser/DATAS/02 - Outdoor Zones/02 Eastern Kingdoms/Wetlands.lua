@@ -71,23 +71,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					379,	-- Squirrel
-					420,	-- Toad
-					418,	-- Water Snake
+					398,	-- Black Rat (PET!)
+					393,	-- Cockroach (PET!)
+					633,	-- Mountain Skunk (PET!)
+					385,	-- Mouse (PET!)
+					379,	-- Squirrel (PET!)
+					420,	-- Toad (PET!)
+					418,	-- Water Snake (PET!)
 				}},
 				["g"] = {
-					p(398, {	-- Black Rat
-						["crs"] = { 61257 },	-- Black Rat
-					}),
-					p(393, {	-- Cockroach
-						["crs"] = { 61384 },	-- Cockroach
-					}),
-					p(633, {	-- Mountain Skunk
-						["crs"] = { 61677 },	-- Mountain Skunk
-					}),
-					p(385, {	-- Mouse
-						["crs"] = { 61143 },	-- Mouse
-					}),
 					p(509, {	-- Tiny Bog Beast
 						["crs"] = { 61686 },	-- Tiny Bog Beast
 					}),
