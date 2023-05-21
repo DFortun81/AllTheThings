@@ -9,15 +9,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 			2094,	-- Ruby Overlook
 		},
 		["g"] = {
-			-- Last Boss (any difficulty)
-			n(190485, {	-- Erkhart Stormvein
-				i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
-				i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
+			n(MYTHIC_PLUS, bubbleDownSelf({
+				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
+			},{
 				i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
-			}),
-			n(MYTHIC_PLUS, {
-				i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
-			}),
+			})),
 			n(QUESTS, {
 				q(66119, {	-- Defend the Life Pools!
 					["sourceQuests"] = { 66118 },	-- Basalt Assault
@@ -63,6 +59,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193691),	-- Sky Saddle Cord
 						i(193756),	-- Skyferno Rondel
 						i(193750),	-- Wind Soarer's Breeches
+						i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
+						i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
+						i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
 					},
 				}),
 			}),
@@ -104,6 +103,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193691),	-- Sky Saddle Cord
 						i(193756),	-- Skyferno Rondel
 						i(193750),	-- Wind Soarer's Breeches
+						i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
+						i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
+						i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
 					},
 				}),
 			}),
@@ -149,6 +151,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193691),	-- Sky Saddle Cord
 						i(193756),	-- Skyferno Rondel
 						i(193750),	-- Wind Soarer's Breeches
+						i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
+						i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
+						i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
 					},
 				}),
 			}),

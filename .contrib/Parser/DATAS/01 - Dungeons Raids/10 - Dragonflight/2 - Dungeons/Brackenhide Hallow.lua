@@ -14,11 +14,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 					i(200631),	-- Happy Tuskarr Palooza (TOY!)
 				}),
 			}),
-			-- Last Boss (any difficulty)
-			n(186121, {	-- Decatriarch Wratheye
-				i(197396),	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
-				i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
-			}),
 			n(QUESTS, {
 				q(66211, {	-- Brackenhide Hollow: To the Source
 					["sourceQuests"] = { 65849 },	-- To Iskaara
@@ -78,6 +73,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193662),	-- Densified Ooze Tassets
 						i(193660),	-- Idol of Pure Decay
 						i(193664),	-- Rot-Carved Totemic Shank
+						i(197396),	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
+						i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 					},
 				}),
 			}),
@@ -128,6 +125,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193662),	-- Densified Ooze Tassets
 						i(193660),	-- Idol of Pure Decay
 						i(193664),	-- Rot-Carved Totemic Shank
+						i(197396),	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
+						i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 					},
 				}),
 			}),
@@ -185,6 +184,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193662),	-- Densified Ooze Tassets
 						i(193660),	-- Idol of Pure Decay
 						i(193664),	-- Rot-Carved Totemic Shank
+						i(197396),	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
+						i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 					},
 				}),
 			}),

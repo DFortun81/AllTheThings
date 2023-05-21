@@ -10,10 +10,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 			2083,	-- Infusion Chamber
 		},
 		["g"] = {
-			n(189729, {	-- Primal Tsunami
-				i(196975),	-- Cliffside Wylderdrake: Head Fin (DM!)
-				i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
-			}),
 			n(QUESTS, {
 				q(72192, {	-- Halls of Infusion: Entropy to Order
 					-- ["sourceQuests"] = {  },	--
@@ -64,6 +60,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193739),	-- Treads of Restored Order
 						i(193742),	-- Undertow Tideblade
 						i(193736),	-- Water's Beating Heart
+						i(196975),	-- Cliffside Wylderdrake: Head Fin (DM!)
+						i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
 					},
 				}),
 			}),
@@ -110,6 +108,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193739),	-- Treads of Restored Order
 						i(193742),	-- Undertow Tideblade
 						i(193736),	-- Water's Beating Heart
+						i(196975),	-- Cliffside Wylderdrake: Head Fin (DM!)
+						i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
 					},
 				}),
 			}),
@@ -162,6 +162,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193739),	-- Treads of Restored Order
 						i(193742),	-- Undertow Tideblade
 						i(193736),	-- Water's Beating Heart
+						i(196975),	-- Cliffside Wylderdrake: Head Fin (DM!)
+						i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
 					},
 				}),
 			}),

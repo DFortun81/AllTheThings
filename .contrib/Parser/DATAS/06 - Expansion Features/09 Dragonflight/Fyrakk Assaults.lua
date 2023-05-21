@@ -10,6 +10,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		n(COMMON_BOSS_DROPS, {
 			["crs"] = {
 				201673,	-- Kretchenwrath
+				203411,	-- Shadeisethal
 			},
 			["g"] = {
 				i(206043),	-- Fyrakk's Frenzy (TOY!)
@@ -202,13 +203,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["questID"] = 75525,
 				["cost"] = { { "i", 203710, 3 } },	-- 3x Everburning Key
 				["g"] = {
+					i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 					i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
-				}
+				},
 			}),
 			o(386559, {	-- Secured Shipment
 				["coord"] = { 53.8, 33.8, THE_AZURE_SPAN },
 				["questID"] = 74526,
 				["cost"] = { { "i", 203710, 3 } },	-- 3x Everburning Key
+				["g"] = {
+					i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
+					i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
+				},
 			}),
 		})),
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {

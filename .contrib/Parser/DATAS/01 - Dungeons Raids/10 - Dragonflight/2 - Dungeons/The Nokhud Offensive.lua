@@ -6,12 +6,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 		["coord"] = { 60.9, 39.1, OHNAHRAN_PLAINS },
 		["maps"] = { 2093 },	-- The Nokhud Offensive
 		["g"] = {
-			-- Last Boss (any difficulty)
-			n(186151, {	-- Balakar Khan
-				i(201929),	-- Stolen Breath of Ohn'ahra
-				i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
-				i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
-			}),
 			n(FLIGHT_PATHS, {
 				fp(2847, {	-- Maruukai, The Nokhud Offensive
 					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
@@ -34,9 +28,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 					["crs"] = { 199616 },	-- Washengtu
 				}),
 			}),
-			n(MYTHIC_PLUS, {
+			n(MYTHIC_PLUS, bubbleDownSelf({
+				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
+			},{
 				i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
-			}),
+			})),
 			n(QUESTS, {
 				q(66690, {	-- The Final Ancestor
 					["sourceQuests"] = {
@@ -117,6 +113,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193685),	-- Lightning-Charged Striders
 						i(193686),	-- Nokhud Traditionalist's Pauldrons
 						i(193688),	-- Stormslash
+						i(201929),	-- Stolen Breath of Ohn'ahra
+						i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
+						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
+						i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
 					},
 				}),
 			}),
@@ -166,6 +166,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193685),	-- Lightning-Charged Striders
 						i(193686),	-- Nokhud Traditionalist's Pauldrons
 						i(193688),	-- Stormslash
+						i(201929),	-- Stolen Breath of Ohn'ahra
+						i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
+						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
+						i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
 					},
 				}),
 			}),
@@ -222,6 +226,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193685),	-- Lightning-Charged Striders
 						i(193686),	-- Nokhud Traditionalist's Pauldrons
 						i(193688),	-- Stormslash
+						i(201929),	-- Stolen Breath of Ohn'ahra
+						i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
+						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
+						i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
 					},
 				}),
 			}),

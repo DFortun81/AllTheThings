@@ -9,11 +9,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 			2081,	-- Chamber of Flames
 		},
 		["g"] = {
-			-- Last Boss (any difficulty)
-			n(189901, {	-- Warlord Sargha
-				i(197376),	-- Renewed Proto-Drake: Ears (DM!)
-				i(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
-			}),
 			n(QUESTS, {
 				q(72135, {	-- Neltharus: Secrets Wihtin
 					["provider"] = { "n", 193456 },	-- Archivist Edress
@@ -73,6 +68,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193779),	-- Sargha's Smasher
 						i(193773),	-- Spoils of Neltharus
 						i(193775),	-- Warlord's Cindermitts
+						i(197376),	-- Renewed Proto-Drake: Ears (DM!)
+						i(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
 					},
 				}),
 			}),
@@ -118,6 +115,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193779),	-- Sargha's Smasher
 						i(193773),	-- Spoils of Neltharus
 						i(193775),	-- Warlord's Cindermitts
+						i(197376),	-- Renewed Proto-Drake: Ears (DM!)
+						i(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
 					},
 				}),
 			}),
@@ -167,6 +166,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 						i(193779),	-- Sargha's Smasher
 						i(193773),	-- Spoils of Neltharus
 						i(193775),	-- Warlord's Cindermitts
+						i(197376),	-- Renewed Proto-Drake: Ears (DM!)
+						i(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
 					},
 				}),
 			}),
