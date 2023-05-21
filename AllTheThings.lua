@@ -24442,6 +24442,9 @@ app.InitDataCoroutine = function()
 	AllTheThingsHarvestItems = {};
 	AllTheThingsArtifactsItems = {};
 
+	-- warning about debug logging in case it sneaks in we can realize quicker
+	app.PrintDebug("NOTE: ATT debug prints enabled!")
+
 	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 	DelayedCallback(app.LocationTrigger, 3);
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")

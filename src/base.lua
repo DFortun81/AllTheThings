@@ -5,6 +5,7 @@
 --------------------------------------------------------------------------------
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local name, app = ...;
+-- app.DEBUG_PRINT = true;
 function app:GetName() return name; end
 _G["AllTheThings"] = app;
 app.asset = function(path)
@@ -61,7 +62,6 @@ app.ClearPerf = function()
 	app.print("Cleared Performance Stats");
 end
 end	-- Performance Tracking --]]
--- app.DEBUG_PRINT = true;
 
 -- Create an Event Processor.
 local events = {};
