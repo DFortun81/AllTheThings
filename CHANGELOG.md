@@ -18,6 +18,7 @@ Earn Lil' XT 🤖 through Prime Gaming until May 25, 2023. More details [here](h
 ### Logic fixes
 
 - Removed (via 'caging') Pets now properly trigger their warning when applicable.
+- Fixed First Aid Recipes that are now offered via Alchemy/Tailoring from being marked as 'removed'.
 
 
 ### Data additions/fixes
