@@ -1,11 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(324, {	-- Siege of Niuzao Temple
 		["coord"] = { 35, 82, TOWNLONG_STEPPES },
-		["maps"] = { 457, 458, 459},
+		["maps"] = {
+			457,	-- Siege of Niuzao Temple
+			458,	-- The Hollowed Out Tree
+			459,	-- Upper Tree Ring
+		},
 		["groups"] = {
 			n(QUESTS, {
 				q(31365, {	-- Somewhere Inside
@@ -24,8 +27,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					},
 				}),
 			}),
-			-- #if AFTER 5.4.0
-			d(NORMAL_DUNGEON, {
+			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
 				e(693, {	-- Vizier Jin'bak
 					["crs"] = { 61567 },	-- Vizier Jin'bak
 					["g"] = {
@@ -214,8 +216,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						}),
 					},
 				}),
-			}),
-			-- #endif
+			})),
 			d(HEROIC_DUNGEON, {
 				e(693, {	-- Vizier Jin'bak
 					["crs"] = { 61567 },	-- Vizier Jin'bak
@@ -330,9 +331,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						ach(6763),	-- Heroic: Siege of Niuzao Temple
 						ach(6772),	-- Heroic: Siege of Niuzao Temple Guild Run
 						ach(6822),	-- Run with the Wind
-						ach(10011, {	-- Siege of Niuzao Temple
-							["timeline"] = { ADDED_6_2_0 },
-						}),
 						i(144000, { -- Airbender Sandals
 							["timeline"] = { ADDED_7_1_5 },
 						}),

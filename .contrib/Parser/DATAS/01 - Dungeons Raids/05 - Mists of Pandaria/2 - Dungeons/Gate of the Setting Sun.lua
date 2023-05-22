@@ -1,11 +1,13 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(303, {	-- Gate of the Setting Sun
 		["coord"] = { 15.8, 74.8, VALE_OF_ETERNAL_BLOSSOMS },
-		["maps"] = { 437, 438 },
+		["maps"] = {
+			437,	-- Gate of the Setting Sun
+			438,	-- Gate Watch Tower
+		},
 		["g"] = {
 			n(QUESTS, {
 				q(31363, {	-- Lighting the Way
@@ -24,7 +26,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {				
+			d(NORMAL_DUNGEON, {
 				e(655, {	-- Saboteur Kip'tilak
 					["crs"] = { 56906 },	-- Saboteur Kip'tilak
 					["g"] = {
@@ -44,7 +46,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						i(144100, {	-- Saboteur's Stablizing Bracers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						
+
 						-- Removed
 						i(80920, {	-- Fallout Filter
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
@@ -299,12 +301,8 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56877 },	-- Raigonn
 					["g"] = {
 						-- Available
-						ach(10010, {	-- Gate of the Setting Sun
-							["timeline"] = { ADDED_6_2_0 },
-						}),
 						ach(6759),	-- Heroic: Gate of the Setting Sun
 						ach(6768),	-- Heroic: Gate of the Setting Sun Guild Run
-						ach(6945),	-- Mantid Swarm
 						i(144101, {	-- Carapace Breaker
 							["timeline"] = { ADDED_7_1_5 },
 						}),

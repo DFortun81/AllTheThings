@@ -1,11 +1,15 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(302, {	-- Stormstout Brewery
 		["coord"] = { 36, 69, VALLEY_OF_THE_FOUR_WINDS },
-		["maps"] = { 439, 440, 441, 442 },
+		["maps"] = {
+			439,	-- Grain Cellar
+			440,	-- Stormstout Brewhall
+			441,	-- The Great Wheel
+			442,	-- The Tasting Room
+		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6400),	-- How Did He Get Up There?
@@ -131,8 +135,10 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						i(143969, { -- Fizzy Spaulders
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144085),	-- Gao's Keg Tapper
-						i(87545),	-- Inelava, Spirit of Inebriation — dropped for Carbion in Normal difficulty as well
+						i(144085, {	-- Gao's Keg Tapper
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(87545),	-- Inelava, Spirit of Inebriation [Confirmed by Carbion to drop in Normal]
 						i(144123, { -- Lime-Rimmed Signet
 							["timeline"] = { ADDED_7_1_5 },
 						}),
@@ -255,7 +261,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						-- Available
 						ach(6456),	-- Heroic: Stormstout Brewery
 						ach(6666),	-- Heroic: Stormstout Brewery Guild Run
-						ach(6457),	-- Stormstout Brewery
 						i(144125, { -- Alemental Seal
 							["timeline"] = { ADDED_7_1_5 },
 						}),
@@ -271,7 +276,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						i(144085, { -- Gao's Keg Tapper
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(87545),	-- Inelava, Spirit of Inebriation — this specific itemID dropped for a discord user on May 4th, 2020 (a screenshot was provided).
+						i(87545),	-- Inelava, Spirit of Inebriation [Confirmed by Discord Member on May 4th, 2020 (a screenshot was provided)]
 						i(144123, { -- Lime-Rimmed Signet
 							["timeline"] = { ADDED_7_1_5 },
 						}),

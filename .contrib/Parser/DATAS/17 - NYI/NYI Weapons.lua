@@ -84,7 +84,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			tier(LEGION_TIER, {
 				tier(LEGION_TIER, 1.5, {
-					i(144217),	-- Gao's Keg Tapper
+					i(144217),	-- Inelava, Spirit of Inebriation
 				}),
 			}),
 			tier(DF_TIER, {

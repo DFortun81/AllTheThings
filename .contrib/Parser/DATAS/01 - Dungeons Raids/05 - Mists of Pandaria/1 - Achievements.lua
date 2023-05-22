@@ -40,6 +40,20 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				i(87773),	-- Heavenly Crimson Cloud Serpent (MOUNT!)
 			},
 		}),
+		ach(6925, {		-- Pandaria Dungeon Hero
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				6758,	-- Heroic: Temple of the Jade Serpent
+				6456,	-- Heroic: Stormstout Brewery
+				6756,	-- Heroic: Mogu'shan Palace
+				6470,	-- Heroic: Shado-Pan Monastery
+				6759,	-- Heroic: Gate of the Setting Sun
+				6760,	-- Heroic: Scarlet Halls
+				6761,	-- Heroic: Scarlet Monastery
+				6762,	-- Heroic: Scholomance
+				6763,	-- Heroic: Siege of Niuzao Temple
+			}},
+		}),
 		ach(6715, sharedData({	-- Polyformic Acid Science
 			["cost"] = {
 				{ "i", 85589, 1 },	-- Nearly Full Vial of Polyformic Acid

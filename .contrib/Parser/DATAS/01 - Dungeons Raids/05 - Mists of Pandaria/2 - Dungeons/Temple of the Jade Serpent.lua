@@ -1,11 +1,13 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(313, {	-- Temple of the Jade Serpent
 		["coord"] = { 56.0, 57.8, THE_JADE_FOREST },
-		["maps"] = { 429, 430 },
+		["maps"] = {
+			429,	-- Temple of the Jade Serpent
+			430,	-- 	The Scrollkeeper's Sanctum
+		},
 		["g"] = {
 			n(QUESTS, {
 				q(33107, {	-- Bad Feeling, Worse Result
@@ -45,9 +47,9 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					},
 				}),
 			}),
-			n(ZONE_DROPS, {
+			n(SPECIAL, {
 				n(65317, {	-- Xiang <The Two Jugglers>
-					i(87522),	-- Star Carrier Bracers  [Lucetia: Only drops from this mob don't remove]
+					i(87522),	-- Star Carrier Bracers
 				}),
 			}),
 			d(NORMAL_DUNGEON, {
@@ -323,7 +325,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						ach(6758),	-- Heroic: Temple of the Jade Serpent
 						ach(6764),	-- Heroic: Temple of the Jade Serpent Guild Run
 						ach(6671),	-- Seeds of Doubt
-						ach(6757),	-- Temple of the Jade Serpent
 						i(144116, { -- Binding of Broken Dreams
 							["timeline"] = { ADDED_7_1_5 },
 						}),

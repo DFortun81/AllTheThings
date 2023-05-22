@@ -1,11 +1,15 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(312, {	-- Shado-Pan Monastery
 		["coord"] = { 36.8 ,47.7, KUN_LAI_SUMMIT},
-		["maps"] = { 443, 444, 445, 446 },
+		["maps"] = {
+			443,	-- Shado-Pan Monastery
+			444,	-- Cloudstrike Dojo
+			445,	-- Snowdrift Dojo
+			446,	-- Sealed Chambers
+		},
 		["g"] = {
 			n(QUESTS, {
 				q(30757, {	-- Lord of the Shado-Pan
@@ -319,7 +323,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						ach(6471),	-- Hate Leads to Suffering
 						ach(6470),	-- Heroic: Shado-Pan Monastery
 						ach(6767),	-- Heroic: Shado-Pan Monastery Guild Run
-						ach(6469),	-- Shado-Pan Monastery
 						i(143986, { -- Blastwalker Footguards
 							["timeline"] = { ADDED_7_1_5 },
 						}),

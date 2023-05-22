@@ -1,11 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
 	inst(321, {	-- Mogu'shan Palace
 		["coord"] = { 80.5, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
-		["maps"] = { 453, 454, 455 },
+		["maps"] = {
+			453,	-- The Crimson Assembly Hall
+			454,	-- Vaults of Kings Past
+			455,	-- Throne of Ancient Conquerors
+		},
 		["g"] = {
 			n(QUESTS, {
 				q(31360, {	-- A New Lesson for the Master
@@ -50,9 +53,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 				}),
 				i(89428, {	-- Ancient Mogu Treasure
 					["description"] = "Contains some gold and a several green-quality gems.",
-					["cost"] = {
-						{ "i", 87806, 1 },	-- Ancient Mogu Key
-					},
+					["cost"] = { { "i", 87806, 1 } },	-- 1x Ancient Mogu Key
 				}),
 			}),
 			d(NORMAL_DUNGEON, {
@@ -198,155 +199,155 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 				}),
 			}),
 			d(HEROIC_DUNGEON, {
-				["g"] = {
+				n(ACHIEVEMENTS, {
 					ach(6713),	-- Quarrelsome Quilen Quintet
-					e(708, {	-- Trial of the King
-						["crs"] = {
-							61445,	-- Haiyan the Unstoppable
-							61442,	-- Kuai the Brute
-							61444,	-- Ming the Cunning
-						},
-						["g"] = {
-							-- Available
-							i(144145, { -- Conflagrating Gloves
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144020, { -- Crest of the Clan Lords
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144143, { -- Hurricane Belt
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144021, { -- Meteoric Greathelm
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144144, { -- Whirling Dervish Choker
-								["timeline"] = { ADDED_7_1_5 },
-							}),
+				}),
+				e(708, {	-- Trial of the King
+					["crs"] = {
+						61445,	-- Haiyan the Unstoppable
+						61442,	-- Kuai the Brute
+						61444,	-- Ming the Cunning
+					},
+					["g"] = {
+						-- Available
+						i(144145, { -- Conflagrating Gloves
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144020, { -- Crest of the Clan Lords
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144143, { -- Hurricane Belt
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144021, { -- Meteoric Greathelm
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144144, { -- Whirling Dervish Choker
+							["timeline"] = { ADDED_7_1_5 },
+						}),
 
-							-- Removed
-							i(81240, { -- Conflagrating Gloves
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81237, { -- Crest of the Clan Lords
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81238, { -- Hurricane Belt
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81241, { -- Meteoric Greathelm
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-						},
-					}),
-					e(690, {	-- Gekkan
-						["crs"] = { 61243 },	-- Gekkan
-						["g"] = {
-							-- Available
-							ach(6478),	-- Glintrok N' Roll
-							i(144148, { -- Claws of Gekkan
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144147, { -- Cloak of Cleansing Flames
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(143992, { -- Glintrok Sollerets
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144149, { -- Hexxer's Lethargic Gloves
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144146, { -- Iron Protector Talisman
-								["timeline"] = { ADDED_7_1_5 },
-							}),
+						-- Removed
+						i(81240, { -- Conflagrating Gloves
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81237, { -- Crest of the Clan Lords
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81238, { -- Hurricane Belt
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81241, { -- Meteoric Greathelm
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+					},
+				}),
+				e(690, {	-- Gekkan
+					["crs"] = { 61243 },	-- Gekkan
+					["g"] = {
+						-- Available
+						ach(6478),	-- Glintrok N' Roll
+						i(144148, { -- Claws of Gekkan
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144147, { -- Cloak of Cleansing Flames
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143992, { -- Glintrok Sollerets
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144149, { -- Hexxer's Lethargic Gloves
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144146, { -- Iron Protector Talisman
+							["timeline"] = { ADDED_7_1_5 },
+						}),
 
-							-- Removed
-							i(81245, { -- Claws of Gekkan
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81244, { -- Cloak of Cleansing Flames
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81242, { -- Glintrok Sollerets
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81246, { -- Hexxer's Lethargic Gloves
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-						},
-					}),
-					e(698, {	-- Xin the Weaponmaster
-						["crs"] = { 61398 },	-- Xin the Weaponmaster
-						["g"] = {
-							-- Available
-							ach(6756),	-- Heroic: Mogu'shan Palace
-							ach(6766),	-- Heroic: Mogu'shan Palace Guild Run
-							ach(6736),	-- What Does This Button Do?
-							i(144151, { -- Axebreaker Gauntlets
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144152, { -- Blade Trap Signet
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(143993, { -- Boots of Plummeting Death
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144154, { -- Firescribe Dagger
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144150, { -- Ghostheart
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144153, { -- Groundshaker Bracer
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(143956, { -- Mind's Eye Breastplate
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144155, { -- Mindcapture Pendant
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(144214, { -- Mogu'Dar, Blade of the Thousand Slaves
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(143995, { -- Regal Silk Shoulderpads
-								["timeline"] = { ADDED_7_1_5 },
-							}),
-							i(143994, { -- Soulbinder Treads
-								["timeline"] = { ADDED_7_1_5 },
-							}),
+						-- Removed
+						i(81245, { -- Claws of Gekkan
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81244, { -- Cloak of Cleansing Flames
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81242, { -- Glintrok Sollerets
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81246, { -- Hexxer's Lethargic Gloves
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+					},
+				}),
+				e(698, {	-- Xin the Weaponmaster
+					["crs"] = { 61398 },	-- Xin the Weaponmaster
+					["g"] = {
+						-- Available
+						ach(6756),	-- Heroic: Mogu'shan Palace
+						ach(6766),	-- Heroic: Mogu'shan Palace Guild Run
+						ach(6736),	-- What Does This Button Do?
+						i(144151, { -- Axebreaker Gauntlets
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144152, { -- Blade Trap Signet
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143993, { -- Boots of Plummeting Death
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144154, { -- Firescribe Dagger
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144150, { -- Ghostheart
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144153, { -- Groundshaker Bracer
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143956, { -- Mind's Eye Breastplate
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144155, { -- Mindcapture Pendant
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(144214, { -- Mogu'Dar, Blade of the Thousand Slaves
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143995, { -- Regal Silk Shoulderpads
+							["timeline"] = { ADDED_7_1_5 },
+						}),
+						i(143994, { -- Soulbinder Treads
+							["timeline"] = { ADDED_7_1_5 },
+						}),
 
-							-- Removed
-							i(81248, { -- Axebreaker Gauntlets
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81249, { -- Boots of Plummeting Death
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81253, { -- Firescribe Dagger
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81247, { -- Ghostheart
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81252, { -- Groundshaker Bracer
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81256, { -- Mind's Eye Breastplate
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(87542, { -- Mogu'Dar, Blade of the Thousand Slaves
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81257, { -- Regal Silk Shoulderpads
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-							i(81255, { -- Soulbinder Treads
-								["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
-							}),
-						},
-					}),
-				},
+						-- Removed
+						i(81248, { -- Axebreaker Gauntlets
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81249, { -- Boots of Plummeting Death
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81253, { -- Firescribe Dagger
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81247, { -- Ghostheart
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81252, { -- Groundshaker Bracer
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81256, { -- Mind's Eye Breastplate
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(87542, { -- Mogu'Dar, Blade of the Thousand Slaves
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81257, { -- Regal Silk Shoulderpads
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+						i(81255, { -- Soulbinder Treads
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
+						}),
+					},
+				}),
 			}),
 			-- #if AFTER 7.1.5.23360
 			d(TIMEWALKING_DUNGEON, {
