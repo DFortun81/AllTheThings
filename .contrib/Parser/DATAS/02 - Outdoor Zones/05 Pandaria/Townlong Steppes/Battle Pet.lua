@@ -25,9 +25,7 @@ _.Zones =
 				p(733, {	-- Grassland Hopper
 					["cr"] = 63549,
 				}),
-				p(680, {	-- Kuitan Mongoose
-					["cr"] = 63953,
-				}),
+				pet(680),	-- Kuitan Mongoose (PET!)
 				p(737, {	-- Mongoose
 					["cr"] = 65190,
 				}),

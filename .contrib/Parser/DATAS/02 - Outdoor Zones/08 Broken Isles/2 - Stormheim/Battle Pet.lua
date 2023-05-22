@@ -9,6 +9,8 @@ _.Zones =
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					380,	-- Bucktooth Flapper (PET!)
+					550,	-- Highlands Mouse (PET!)
+					645,	-- Highlands Turkey (PET!)
 					633,	-- Mountain Skunk (PET!)
 				}},
 				["g"] = {
@@ -17,12 +19,6 @@ _.Zones =
 					pet(1712),	-- Golden Eaglet (PET!)
 					pet(647, {	-- Grizzly Squirrel
 						["crs"] = { 62818 },	-- Grizzly Squirrel
-					}),
-					pet(550, {	-- Highlands Mouse
-						["crs"] = { 62905 },	-- Highlands Mouse
-					}),
-					pet(645, {	-- Highlands Turkey
-						["crs"] = { 62906 },	-- Highlands Turkey
 					}),
 					pet(1579, {	-- Ironclaw Scuttler
 						["crs"] = { 88474 },	-- Ironclaw Scuttler

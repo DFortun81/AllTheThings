@@ -42,25 +42,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					393,	-- Cockroach (PET!)
 					415,	-- Fire Beetle (PET!)
 					404,	-- Long-tailed Mole (PET!)
+					503,	-- Silky Moth (PET!)
 					405,	-- Tree Python (PET!)
 				}},
 				["g"] = {
-					p(632, {	-- Ash Lizard
-						["crs"] = { 62364 },	-- Ash Lizard
-					}),
-					p(504, {	-- Diemetradon Hatchling
-						["crs"] = { 62375 },	-- Diemetradon Hatchling
+					pet(632),	-- Ash Lizard (PET!)
+					pet(504, {	-- Diemetradon Hatchling (PET!)
 						["description"] = "Can be found around Golakka Hot Springs, near Elder Diemetradons.",
 					}),
-					p(631, {	-- Emerald Boa
-						["crs"] = { 62127 },	-- Emerald Boa
-					}),
+					pet(631),	-- Emerald Boa (PET!)
 					pet(403),	-- Parrot (PET!)
-					p(503, {	-- Silky Moth
-						["crs"] = { 62373 },	-- Silky Moth
-					}),
-					p(502, {	-- Spotted Bell Frog
-						["crs"] = { 62370 },	-- Spotted Bell Frog
+					pet(502, {	-- Spotted Bell Frog (PET!)
+						["description"] = "Only found around water in Un'goro.",
 					}),
 				},
 			})),

@@ -115,48 +115,39 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(487, {	-- Alpine Chipmunk
-					["crs"] = { 62189 },	-- Alpine Chipmunk
-				}),
-				p(632, {	-- Ash Lizard
-					["crs"] = { 62364 },	-- Ash Lizard
-				}),
-				p(540, {	-- Carrion Rat
-					["crs"] = { 62885 },	-- Carrion Rat
-				}),
-				p(755, {	-- Death's Head Cockroach
-					["crs"] = { 62887 },	-- Death's Head Cockroach
-					["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
-				}),
-				p(479, {	-- Elfin Rabbit
-					["crs"] = { 62178 },	-- Elfin Rabbit
-					["coords"] = {
-						{ 58.2, 16.6, MOUNT_HYJAL },
-						{ 65.8, 20.8, MOUNT_HYJAL },
-					},
-					["description"] = "Found mostly around Nordrassil and the tree.",
-				}),
-				pet(415),	-- Fire Beetle
-				p(541, {	-- Fire-Proof Roach
-					["crs"] = { 62886 },	-- Fire-Proof Roach
-				}),
-				p(539, {	-- Grotto Vole
-					["crs"] = { 62884 },	-- Grotto Vole
-					["description"] = "Can be found in caves in Mount Hyjal.",
-				}),
-				p(547, {	-- Nordrassil Wisp
-					["crs"] = { 62888 },	-- Nordrassil Wisp
-					["description"] = "Can be found in the area around the Nordrassil Inn.",
-				}),
-				p(482, {	-- Rock Viper
-					["crs"] = { 62184 },	-- Rock Viper
-				}),
-				p(503, {	-- Silky Moth
-					["crs"] = { 62373 },	-- Silky Moth
-				}),
-				pet(469, {	-- Twilight Beetle
-					["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
-				}),
+				["sym"] = {{"select","speciesID",
+					487,	-- Alpine Chipmunk (PET!)
+					632,	-- Ash Lizard (PET!)
+					482,	-- Rock Viper (PET!)
+				}},
+				["g"] = {
+					pet(540),	-- Carrion Rat (PET!)
+					p(755, {	-- Death's Head Cockroach
+						["crs"] = { 62887 },	-- Death's Head Cockroach
+						["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
+					}),
+					pet(479, {	-- Elfin Rabbit (PET!)
+						["coords"] = {
+							{ 58.2, 16.6, MOUNT_HYJAL },
+							{ 65.8, 20.8, MOUNT_HYJAL },
+						},
+						["description"] = "Found mostly around Nordrassil and the tree.",
+					}),
+					pet(415),	-- Fire Beetle (PET!)
+					pet(541),	-- Fire-Proof Roach (PET!)
+					pet(539, {	-- Grotto Vole (PET!)
+						["description"] = "Can be found in caves in Mount Hyjal.",
+					}),
+					pet(547, {	-- Nordrassil Wisp (PET!)
+						["description"] = "Can be found in the area around the Nordrassil Inn.",
+					}),
+					pet(503, {	-- Silky Moth (PET!)
+						["description"] = "Can be found around the Nordrassil pond.",
+					}),
+					pet(469, {	-- Twilight Beetle (PET!)
+						["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
+					}),
+				},
 			})),
 			-- #endif
 			prof(FISHING, {

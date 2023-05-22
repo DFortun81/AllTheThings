@@ -10,6 +10,8 @@ _.Zones =
 				["sym"] = {{"select","speciesID",
 					427,	-- Ash Spiderling (PET!)
 					452,	-- Red-Tailed Chipmunk (PET!)
+					560,	-- Sea Gull (PET!)
+					568,	-- Silkbead Snail (PET!)
 				}},
 				["g"] = {
 					p(1572, {	--  Brilliant Bloodfeather
@@ -67,15 +69,9 @@ _.Zones =
 					p(1587, {	--  Royal Moth
 						["crs"] = { 88417 },	--  Royal Moth
 					}),
-					p(560, {	--  Sea Gull
-						["crs"] = { 62953 },	--  Sea Gull
-					}),
 					p(1599, {	--  Shadow Sporebat
 						["crs"] = { 88576 },	--  Shadow Sporebat
 						["description"] = "Found only in Zangarra.",
-					}),
-					p(568, {	--  Silkbed Snail
-						["crs"] = { 63001 },	--  Silkbed Snail
 					}),
 					p(1593, {	--  Waterfly
 						["crs"] = { 88355 },	--  Waterfly

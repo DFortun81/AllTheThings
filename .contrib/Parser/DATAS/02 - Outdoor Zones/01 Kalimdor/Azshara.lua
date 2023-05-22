@@ -83,19 +83,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					470,	-- Twilight Spider (PET!)
 				}},
 				["g"] = {
-					p(472, {	-- Rabid Nut Varmint 5000
-						["crs"] = { 62120 },	-- Rabid Nut Varmint 5000
-					}),
-					p(471, {	-- Robo-Chick
-						["crs"] = { 62119 },	-- Robo-Chick
+					pet(472),	-- Rabid Nut Varmint 5000 (PET!)
+					pet(471, {	-- Robo-Chick (PET!)
 						["coords"] = {
 							{ 42.4, 76.8, AZSHARA },
 							{ 51.8, 74.8, AZSHARA },
 						},
 						["description"] = "Normally found close to these coords, as well as in Everlook.",
 					}),
-					p(473, {	-- Turquoise Turtle
-						["crs"] = { 62121 },	-- Turquise Turtle
+					pet(473, {	-- Turquoise Turtle (PET!)
 						["description"] = "Can commonly be found on the beaches of Azshara.",
 					}),
 				},

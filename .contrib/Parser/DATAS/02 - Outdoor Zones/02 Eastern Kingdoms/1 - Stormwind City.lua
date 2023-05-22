@@ -2643,12 +2643,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit (PET!)
 					379,	-- Squirrel (PET!)
+					675,	-- Stormwind Rat (PET!)
 				}},
-				["g"] = {
-					p(675, {	-- Stormwind Rat
-						["crs"] = { 62954 },	-- Stormwind Rat
-					}),
-				},
 			})),
 			-- #endif
 			n(FACTIONS, {

@@ -2852,30 +2852,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER CATA
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
+					484,	-- Desert Spider (PET!)
 					430,	-- Gold Beetle (PET!)
 					431,	-- Rattlesnake (PET!)
+					511,	-- Sidewinder (PET!)
 				}},
 				["g"] = {
-					p(484, {	-- Desert Spider
-						["crs"] = { 62186 },	-- Desert Spider
+					pet(491, {	-- Sand Kitten (PET!)
+						["description"] = "This pet has very few spawn points and may be easier to find as a second pet, but is sometimes around Gadgetzan. 'Rare' kittens are not easy to come across.",
 					}),
-					p(491, {	-- Sand Kitten
-						["crs"] = { 62257 },	-- Sand Kitten
-					}),
-					p(560, {	-- Sea Gull
-						["crs"] = { 62953 },	-- Sea Gull
+					pet(560, {	-- Sea Gull (PET!)
 						["description"] = "Most commonly found on beaches or near the ocean.",
 					}),
-					p(511, {	-- Sidewinder
-						["crs"] = { 62523 },	-- Sidewinder
-					}),
-					p(494, {	-- Silithid Hatchling
-						["crs"] = { 62258 },	-- Silithis Hatchling
+					pet(494, {	-- Silithid Hatchling (PET!)
 						["description"] = "This wild pet can be found in The Gaping Chasm and The Noxious Lair in Tanaris. It only spawns during sandstorms.",
 					}),
-					p(492, {	-- Stinkbug
-						["crs"] = { 62256 },	-- Stinkbug
-					}),
+					pet(492),	-- Stinkbug (PET!)
 					pet(432),	-- Stripe-Tailed Scorpid (PET!)
 				},
 			})),

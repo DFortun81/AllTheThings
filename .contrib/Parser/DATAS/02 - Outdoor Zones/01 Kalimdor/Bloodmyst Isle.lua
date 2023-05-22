@@ -54,21 +54,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					417,	-- Rat
+					628,	-- Infected Fawn (PET!)
+					627,	-- Infected Squirrel (PET!)
+					417,	-- Rat (PET!)
+					397,	-- Skunk (PET!)
 				}},
 				["g"] = {
-					p(628, {	-- Infected Fawn
-						["crs"] = { 61827 },	-- Infected Fawn
-					}),
-					p(627, {	-- Infected Squirrel
-						["crs"] = { 61828 },	-- Infected Squirrel
-					}),
-					p(465, {	-- Ravager Hatchling
-						["crs"] = { 62051 },	-- Ravager Hatchling
-					}),
-					p(397, {	-- Skunk
-						["crs"] = { 61255 },	-- Skunk
-					}),
+					pet(465),	-- Ravager Hatchling (PET!)
 				},
 			})),
 			-- #endif

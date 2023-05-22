@@ -83,19 +83,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					420,	-- Toad (PET!)
 				}},
 				["g"] = {
-					p(500, {	-- Minfernal
-						["crs"] = { 62317 },	-- Minfernal
+					pet(500, {	-- Minfernal (PET!)
 						["description"] = "Can be found around Shatter Scar Vale near Infernal Sentries.",
 					}),
-					p(497, {	-- Tainted Cockroach
-						["crs"] = { 62314 },	-- Tainted Cockroach
-					}),
-					p(498, {	-- Tainted Moth
-						["crs"] = { 62315 },	-- Tainted Moth
-					}),
-					p(499, {	-- Tainted Rat
-						["crs"] = { 62316 },	-- Tainted Rat
-					}),
+					pet(497),	-- Tainted Cockroach (PET!)
+					pet(498),	-- Tainted Moth (PET!)
+					pet(499),	-- Tainted Rat (PET!)
 				},
 			})),
 			-- #endif

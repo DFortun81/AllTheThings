@@ -11,7 +11,7 @@ root(ROOTS.PetBattles, {
 				pet(138, {	-- Blue Moth
 					["races"] = { DRAENEI },
 				}),
-				pet(630, {	-- Gilnean Raven
+				pet(630, {	-- Gilnean Raven (PET!)
 					["races"] = { WORGEN },
 				}),
 				pet(68, {	-- Great Horned Owl
@@ -152,22 +152,22 @@ root(ROOTS.PetBattles, {
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				p(75, {	-- Black Kingsnake
+				p(75, {	-- Black Kingsnake (PET!)
 					["races"] = { ORC, TROLL },
 				}),
-				p(70, {	-- Brown Praire Dog
+				p(70, {	-- Brown Praire Dog (PET!)
 					["races"] = { TAUREN },
 				}),
-				p(142, {	-- Golden Dragonhawk Hatchling
+				p(142, {	-- Golden Dragonhawk Hatchling (PET!)
 					["races"] = { BLOODELF },
 				}),
-				p(792, {	-- Jade Crane Chick
+				p(792, {	-- Jade Crane Chick (PET!)
 					["races"] = { PANDAREN_HORDE },
 				}),
-				p(629, {	-- Shore Crawler
+				pet(629, {	-- Shore Crawler (PET!)
 					["races"] = { GOBLIN },
 				}),
-				p(55, {	-- Undercity Cockroach
+				p(55, {	-- Undercity Cockroach (PET!)
 					["races"] = { UNDEAD },
 				}),
 			},

@@ -9,6 +9,7 @@ _.Zones =
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					417,	-- Rat (PET!)
+					560,	-- Sea Gull (PET!)
 				}},
 				["g"] = {
 					p(1427, {	-- Frostfur Rat
@@ -28,9 +29,6 @@ _.Zones =
 						["crs"] = { 88474 },	-- Ironclaw Scuttler
 						["coord"] = { 33.8, 41.6, FROSTFIRE_RIDGE },
 						["description"] = "Found in a line along the right side of Bladespire Citadel.",
-					}),
-					p(560, {	-- Sea Gull
-						["crs"] = { 62953 },	-- Sea Gull
 					}),
 					p(1464, {	-- Twilight Wasp
 						["crs"] = { 85253 },	-- Twilight Wasp

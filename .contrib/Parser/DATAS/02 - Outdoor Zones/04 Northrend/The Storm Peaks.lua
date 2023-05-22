@@ -248,9 +248,8 @@ root(ROOTS.Zones, {
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["g"] = {
-						p(558, {	-- Arctic Fox Kit
-							["crs"] = { 62864 },	-- Arctic Fox Kit
-							["description"] = "Only spawns while it is snowing. Weather in this area seems to be character specific occasionally.",
+						pet(558, {	-- Arctic Fox Kit (PET!)
+							["description"] = "Only spawns while it is snowing. Weather in this area seems to be character specific.",
 						}),
 					},
 				})),

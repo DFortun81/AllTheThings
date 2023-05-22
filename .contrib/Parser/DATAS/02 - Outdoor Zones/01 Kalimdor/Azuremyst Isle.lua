@@ -619,17 +619,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit
-					379,	-- Squirrel
+					378,	-- Rabbit (PET!)
+					397,	-- Skunk (PET!)
+					379,	-- Squirrel (PET!)
 				}},
 				["g"] = {
-					p(464, {	-- Grey Moth
-						["crs"] = { 62050 },	-- Grey Moth
-						["maps"] = { AMMEN_VALE },
-					}),
-					p(397, {	-- Skunk
-						["crs"] = { 61255 },	-- Skunk
-					}),
+					pet(464),	-- Grey Moth (PET!)
 				},
 			})),
 			-- #endif

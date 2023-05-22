@@ -25,9 +25,7 @@ _.Zones =
 				p(727, {	-- Prairie Mouse
 					["crs"] = { 59702 },	-- Prairie Mouse
 				}),
-				p(679, {	-- Summet Kid
-					["crs"] = { 64248 },	-- Summet Kid
-				}),
+				pet(679),	-- Summit Kid (PET!)
 				p(728, {	-- Szechuan Chicken
 					["crs"] = { 63585 },	-- Szechuan Chicken
 				}),

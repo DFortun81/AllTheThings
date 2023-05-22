@@ -73,6 +73,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					646,	-- Chicken (PET!)
+					648,	-- Huge Toad (PET!)
 					450,	-- Maggot (PET!)
 					378,	-- Rabbit (PET!)
 					417,	-- Rat (PET!)
@@ -81,9 +82,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					420,	-- Toad (PET!)
 				}},
 				["g"] = {
-					p(648, {	-- Huge Toad
-						["crs"] = { 61368 },	-- Huge Toad
-					}),
 					pet(453, {	-- Infested Bear Cub (PET!)
 						["crs"] = { 35.4, 69.6, HILLSBRAD_FOOTHILLS },
 					}),
@@ -91,8 +89,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["crs"] = { 68806 },	-- Lofty Libram
 					}),
 					pet(452),	-- Red-Tailed Chipmunk (PET!)
-					p(640, {	-- Snowshoe Hare
-						["crs"] = { 61755 },	-- Snowshoe Hare
+					pet(640, {	-- Snowshoe Hare (PET!)
+						["description"] = "Found around the Ruins of Alterac.",
 					}),
 				},
 			})),

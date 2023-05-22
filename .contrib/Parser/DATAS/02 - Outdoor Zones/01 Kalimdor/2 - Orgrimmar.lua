@@ -2653,16 +2653,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					467,	-- Dung Beetle
-					466,	-- Spiny Lizard
-					420,	-- Toad
-					418,	-- Water Snake
+					467,	-- Dung Beetle (PET!)
+					471,	-- Robo-Chick (PET!)
+					466,	-- Spiny Lizard (PET!)
+					420,	-- Toad (PET!)
+					418,	-- Water Snake (PET!)
 				}},
-				["g"] = {
-					p(471, {	-- Robo-Chick
-						["crs"] = { 62119 },	-- Robo-Chick
-					}),
-				},
 			})),
 			-- #endif
 			n(FACTIONS, {

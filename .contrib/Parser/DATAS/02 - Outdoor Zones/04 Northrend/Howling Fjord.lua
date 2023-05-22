@@ -214,17 +214,16 @@ root(ROOTS.Zones, {
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["g"] = {
-						p(523, {	-- Devouring Maggot
-							["crs"] = { 62640 },	-- Devouring Maggot
+						pet(523, {	-- Devouring Maggot (PET!)
+							["description"] = "Can be found in the Utgarde Catacombs at the very bottom in the zombie pit, occasionally as a second pet to Maggots above ground."
 						}),
-						p(644, {	-- Fjord Rat
-							["crs"] = { 62641 },	-- Fjord Rat
-						}),
-						p(529, {	-- Fjord Worg Pup
-							["crs"] = { 62669 },	-- Fjord Worg Pup
-						}),
-						p(525, {	-- Turkey
-							["crs"] = { 62648 },	-- Turkey
+						pet(644),	-- Fjord Rat (PET!)
+						pet(529),	-- Fjord Worg Pup (PET!)
+						pet(525, {	-- Turkey (PET!)
+							["coords"] = {
+								{ 32.2, 42.4, HOWLING_FJORD },
+								{ 60.6, 62.8, HOWLING_FJORD },
+							},
 						}),
 					},
 				})),

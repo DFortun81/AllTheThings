@@ -8,13 +8,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			["sym"] = {{"select","speciesID",
 				2383,	-- Giant Woodworm (PET!)
 				2378,	-- River Otter (PET!)
+				424,	-- Roach (PET!)
 				2377,	-- Sandyback Crawler (PET!)
 				2381,	-- Shack Crab (PET!)
 				379,	-- Squirrel (PET!)
 			}},
 			["g"] = {
 				pet(2386),	-- Coastal Scuttler (PET!)
-				pet(424),	-- Roach (PET!)
 			},
 		})),
 	}),

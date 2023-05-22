@@ -82,19 +82,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit
+					477,	-- Gazelle Fawn (PET!)
+					385,	-- Mouse  (PET!)
+					386,	-- Prarie Dog (PET!)
+					378,	-- Rabbit (PET!)
 				}},
-				["g"] = {
-					p(477, {	-- Gazelle Fawn
-						["crs"] = { 62176 },	-- Gazelle Fawn
-					}),
-					p(385, {	-- Mouse
-						["crs"] = { 61143 },	-- Mouse
-					}),
-					p(386, {	-- Prairie Dog
-						["crs"] = { 61141 },	-- Prairie Dog
-					}),
-				},
 			})),
 			-- #endif
 			n(FACTIONS, {

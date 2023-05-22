@@ -234,24 +234,16 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",
-						379,	-- Squirrel
+						387,	-- Snake (PET!)
+						379,	-- Squirrel (PET!)
+						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["g"] = {
-						p(649, {	-- Biletoad
-							["crs"] = { 62815 },	-- Biletoad
-						}),
+						pet(649),	-- Biletoad (PET!)
 						p(1167, {	-- Emerald Proto-Whelp
 							["crs"] = { 68850 },	-- Emerald Proto-Whelp
 						}),
-						p(387, {	-- Snake
-							["crs"] = { 61142 },	-- Snake
-						}),
-						p(532, {	-- Stunted Shardhorn
-							["crs"] = { 62816 },	-- Stunted Shardhorn
-						}),
-						p(1238, {	-- Unborn Val'kyr
-							["crs"] = { 71163 },	-- Unborn Val'kyr
-						}),
+						pet(532),	-- Stunted Shardhorn (PET!)
 					},
 				})),
 				-- #endif

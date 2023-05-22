@@ -143,6 +143,7 @@ root(ROOTS.Zones, {
 					["sym"] = {{"select","speciesID",
 						449,	-- Brown Marmot (PET!)
 						378,	-- Rabbit (PET!)
+						482,	-- Rock Viper (PET!)
 						414,	-- Scorpid (PET!)
 						379,	-- Squirrel (PET!)
 					}},
@@ -151,16 +152,11 @@ root(ROOTS.Zones, {
 							["crs"] = { 68841 },	-- Cogblade Raptor
 							["description"] ="Found often to the left and right of Death's Door."
 						}),
-						p(482, {	-- Rock Viper
-							["crs"] = { 62184 },	-- Rock Viper
-						}),
-						p(528, {	-- Scalded Basilisk Hatchling
-							["crs"] = { 62628 },	-- Scalded Basilisk Hatchling
+						pet(528, {	-- Scalded Basilisk Hatchling (PET!)
 							["coord"] = { 72.8, 20.6, BLADES_EDGE_MOUNTAINS },
 							["description"] = "Found in a fairly large area around the coord, above the road.",
 						}),
-						p(637, {	-- Skittering Cavern Crawler
-							["crs"] = { 62638 },		-- Skittering Cavern Crawler
+						pet(637, {	-- Skittering Cavern Crawler (PET!)
 							["description"] = "Found only in the two caves that connect Blade's Edge to Zangarmarsh.",
 						}),
 					},

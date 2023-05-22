@@ -88,15 +88,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					635,	-- Adder (PET!)
+					631,	-- Emerald Boa (PET!)
 					419,	-- Small Frog (PET!)
 				}},
 				["groups"] = {
-					p(474, {	-- Cheetah Cub
-						["crs"] = { 62129 },	-- Cheetah Cub
+					pet(474, {	-- Cheetah Cub (PET!)
 						["description"] = "Can be found under large trees alongside Plainsland Cheetahs.",
-					}),
-					p(631, {	-- Emerald Boa
-						["crs"] = { 62127 },	-- Emerald Boa
 					}),
 					p(1157, {	-- Harpy Youngling
 						["crs"] = { 68804 },	-- Harpy Youngling

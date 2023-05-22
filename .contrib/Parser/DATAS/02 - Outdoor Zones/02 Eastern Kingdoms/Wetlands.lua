@@ -80,8 +80,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					418,	-- Water Snake (PET!)
 				}},
 				["g"] = {
-					p(509, {	-- Tiny Bog Beast
-						["crs"] = { 61686 },	-- Tiny Bog Beast
+					pet(509, {	-- Tiny Bog Beast (PET!)
+						["coord"] = { 54.6, 33.0, WETLANDS },
 					}),
 				},
 			})),

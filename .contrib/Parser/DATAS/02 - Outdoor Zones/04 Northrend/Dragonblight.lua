@@ -214,12 +214,12 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",
-						641,	-- Arctic Hare
-						536,	-- Tundra Penguin
-						1236,	-- Unborn Val'kyr
+						641,	-- Arctic Hare (PET!)
+						536,	-- Tundra Penguin (PET!)
+						1236,	-- Unborn Val'kyr (PET!)
 					}},
 					["g"] = {
-						pet(537),-- Dragonbone Hatchling
+						pet(537),-- Dragonbone Hatchling (PET!)
 					},
 				})),
 				-- #endif

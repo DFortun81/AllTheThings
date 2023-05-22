@@ -7,9 +7,11 @@ _.Zones =
 	m(PANDARIA, {
 		m(THE_VEILED_STAIR, {
 			petbattle(filter(BATTLE_PETS, {
-				p(706),	-- Bandicoon
-				p(708),	-- Malayan Quillrat
-				p(709),	-- Malayan Quillrat Pup
+				["sym"] = {{"select","speciesID",
+					706,	-- Bandicoon (PET!)
+					708,	-- Malayan Quillrat (PET!)
+					709,	-- Malayan Quillrat Pup (PET!)
+				}},
 			})),
 		}),
 	}),

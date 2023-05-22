@@ -11,6 +11,7 @@ _.Zones =
 					635,	-- Adder (PET!)
 					407,	-- Forest Spiderling (PET!)
 					417,	-- Rat (PET!)
+					568,	-- Silkbead Snail (PET!)
 					379,	-- Squirrel (PET!)
 					401,	-- Strand Crab (PET!)
 				}},
@@ -42,9 +43,6 @@ _.Zones =
 							{ 57.8, 51.0, SPIRES_OF_ARAK },
 							{ 59.0, 68.6, SPIRES_OF_ARAK },
 						},
-					}),
-					p(568,  {	-- Silkbead Snail
-						["crs"] = { 63001 },	-- Silkbead Snail
 					}),
 					p(1590, {	-- Swamplighter Firefly
 						["crs"] = { 88359 },	-- Swamplighter Firefly

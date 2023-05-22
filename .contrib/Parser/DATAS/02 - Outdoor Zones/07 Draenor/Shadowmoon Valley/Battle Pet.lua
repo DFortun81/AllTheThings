@@ -8,6 +8,7 @@ _.Zones =
 		m(DRAENOR_SHADOWMOON_VALLEY, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
+					560,	-- Sea Gull (PET!)
 					412,	-- Spider (PET!)
 				}},
 				["g"] = {
@@ -26,9 +27,6 @@ _.Zones =
 					}),
 					p(1587, {	-- Royal Moth
 						["crs"] = { 88417 },	-- Royal Moth
-					}),
-					p(560, {	-- Sea Gull
-						["crs"] = { 62953 },	-- Sea Gull
 					}),
 					p(1593, {	-- Waterfly
 						["crs"] = { 88355 },	-- Waterfly

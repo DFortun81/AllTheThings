@@ -32,9 +32,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							447,	-- Fawn (PET!)
 						}},
 						["g"] = {
-							p(507, {	-- Crested Owl
-								["crs"] = { 62242 },	-- Crested Owl
-							}),
+							pet(507),	-- Crested Owl (PET!)
 						},
 					})),
 					-- #endif
@@ -518,21 +516,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
+					507,	-- Crested Owl (PET!)
+					479,	-- Elfin Rabbit (PET!)
 					447,	-- Fawn (PET!)
+					478,	-- Forest Moth (PET!)
 					452,	-- Red-Tailed Chipmunk (PET!)
 					419,	-- Small Frog (PET!)
 				}},
-				["g"] = {
-					p(507, {	-- Crested Owl
-						["crs"] = { 62242 },	-- Crested Owl
-					}),
-					p(479, {	-- Elfin Rabbit
-						["crs"] = { 62178 },	-- Elfin Rabbit
-					}),
-					p(478, {	-- Forest Moth
-						["crs"] = { 62177 },	-- Forest Moth
-					}),
-				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

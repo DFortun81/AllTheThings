@@ -39,12 +39,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		["groups"] = {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(464, {	-- Grey Moth
-					["crs"] = { 62050 },	-- Grey Moth
-				}),
-				p(385, {	-- Mouse
-					["crs"] = { 61143 },	-- Mouse
-				}),
+				["sym"] = {{"select","speciesID",
+					464,	-- Grey Moth (PET!)
+					385,	-- Mouse (PET!)
+				}},
 			})),
 			-- #endif
 			n(FACTIONS, {

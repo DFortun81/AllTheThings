@@ -60,13 +60,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					379,	-- Squirrel (PET!)
 				}},
 				["g"] = {
-					p(508, {	-- Darkshore Cub
-						["crs"] = { 62250 },	-- Darkshore Cub
+					pet(508, {	-- Darkshore Cub (PET!)
 						["description"] = "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach.",
 					}),
-					p(493, {	-- Shimmershell Snail
-						["crs"] = { 62246 },	-- Shimmershell Snail
-						["description"] = "Can commonly be found on the beaches of Darkshore.",
+					pet(493, {	-- Shimmershell Snail (PET!)
+						["description"] = "Can commonly be found on the beaches of Old Darkshore.",
 					}),
 				},
 			})),

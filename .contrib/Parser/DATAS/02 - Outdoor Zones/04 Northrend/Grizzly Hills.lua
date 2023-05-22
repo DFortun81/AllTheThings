@@ -163,12 +163,12 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",
-						1238,	-- Unborn Val'kyr
+						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["g"] = {
-						pet(647),	-- Grizzly Squirrel
-						pet(534),	-- Imperial Eagle Chick
-						pet(633),	-- Mountain Skunk
+						pet(647),	-- Grizzly Squirrel (PET!)
+						pet(534),	-- Imperial Eagle Chick (PET!)
+						pet(633),	-- Mountain Skunk (PET!)
 					},
 				})),
 				-- #endif

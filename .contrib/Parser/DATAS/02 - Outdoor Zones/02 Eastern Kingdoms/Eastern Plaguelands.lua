@@ -811,16 +811,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					398,	-- Black Rat (PET!)
 				}},
 				["g"] = {
-					p(626, {	-- Bat
-						["crs"] = { 61829 },	-- Bat
-					}),
+					pet(626),	-- Bat (PET!)
 					pet(457),	-- Festering Maggot (PET!)
-					p(628, {	-- Infected Fawn
-						["crs"] = { 61827 },	-- Infected Fawn
-					}),
-					p(627, {	-- Infected Squirrel
-						["crs"] = { 61828 },	-- Infected Squirrel
-					}),
+					pet(628),	-- Infected Fawn (PET!)
+					pet(627),	-- Infected Squirrel (PET!)
 				},
 			})),
 			-- #endif

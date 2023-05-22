@@ -63,26 +63,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
+					487,	-- Alpine Chipmunk (PET!)
 					633,	-- Mountain Skunk (PET!)
 					378,	-- Rabbit (PET!)
+					472,	-- Rabid Nut Varmint 5000 (PET!)
 					417,	-- Rat (PET!)
 					424,	-- Roach (PET!)
 				}},
 				["g"] = {
-					p(487, {	-- Alpine Chipmunk
-						["crs"] = { 62189 },	-- Alpine Chipmunk
-					}),
-					p(488, {	-- Coral Snake
-						["crs"] = { 62190 },	-- Coral Snake
-					}),
-					p(472, {	-- Rabid Nut Varmint 5000
-						["crs"] = { 62120 },	-- Rabit Nut Varmint 5000
-					}),
+					pet(488),	-- Coral Snake (PET!)
 					pet(412, {	-- Spider (PET!)
 						["description"] = "The best place to catch these seems to be south of Windshear Hold, but it can definitely be found in other listed places.",
 					}),
-					p(506, {	-- Venomspitter Hatchling
-						["crs"] = { 62191 },	-- Venomspitter Hatchling
+					pet(506, {	-- Venomspitter Hatchling (PET!)
 						["description"] = "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders.",
 					}),
 				},

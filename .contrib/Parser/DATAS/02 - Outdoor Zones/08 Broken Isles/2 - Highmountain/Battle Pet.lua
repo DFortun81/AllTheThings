@@ -8,16 +8,15 @@ _.Zones =
 		m(HIGHMOUNTAIN, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
+					487,	-- Alpine Chipmunk (PET!)
 					407,	-- Forest Spiderling (PET!)
+					569,	-- Garden Frog (PET!)
 					391,	-- Mountain Cottontail (PET!)
 					378,	-- Rabbit (PET!)
 					417,	-- Rat (PET!)
 					379,	-- Squirrel (PET!)
 				}},
 				["g"] = {
-					p(487, {	-- Alpine Chipmonk
-						["crs"] = { 62189 },	-- Alpine Chipmonk
-					}),
 					pet(1743),	-- Black-Footed Fox Kit (PET!)
 					pet(1726),	-- Burrow Spiderling (PET!)
 					pet(1775),	-- Coralback Fiddler (PET!)
@@ -25,9 +24,6 @@ _.Zones =
 						["crs"] = { 88542 },	-- Echo Batling
 					}),
 					pet(1731),	-- Felspider (PET!)
-					p(569, {	-- Garden Frog
-						["crs"] = { 63002 },	-- Garden Frog
-					}),
 					pet(1762, {	-- Hog-Nosed Bat
 						["coord"] = { 50.8, 33.6, HIGHMOUNTAIN },
 					}),

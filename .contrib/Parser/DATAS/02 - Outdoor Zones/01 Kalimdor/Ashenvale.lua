@@ -102,16 +102,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					420,	-- Toad (PET!)
 				}},
 				["g"] = {
-					p(478, {	-- Forest Moth
-						["crs"] = { 62177 },	-- Forest Moth
-					}),
-					p(495, {	-- Frog
-						["crs"] = { 62312 },	-- Frog
-					}),
+					pet(478),	-- Forest Moth (PET!)
+					pet(495),	-- Frog (PET!)
 					pet(450),	-- Maggot (PET!)
-					p(496, {	-- Rusty Snail
-						["crs"] = { 62313 },	-- Rusty Snail
-						["description"] = "Can be found on the beaches of the western coast in Ashenvale.",
+					pet(496, {	-- Rusty Snail (PET!)
+						["description"] = "Can be found on the Blackfathom Deeps beach in Ashenvale.",
 					}),
 				},
 			})),

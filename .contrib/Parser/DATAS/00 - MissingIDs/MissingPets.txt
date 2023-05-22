@@ -1,7 +1,7 @@
 5.0.3.15882
 pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	-- 
-pet(73),	-- 
+pet(71),	--
+pet(73),	--
 pet(154),	-- Lucky
 pet(230),	-- Macabre Marionette
 pet(257),	-- Murkimus the Gladiator
@@ -496,8 +496,8 @@ Missing in PetDB.lua
 
 5.0.3.15882
 pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	-- 
-pet(73),	-- 
+pet(71),	--
+pet(73),	--
 pet(154),	-- Lucky
 pet(230),	-- Macabre Marionette
 pet(257),	-- Murkimus the Gladiator
@@ -512,117 +512,11 @@ pet(431),	-- Rattlesnake
 pet(434),	-- Ram
 pet(438),	-- King Snake
 pet(444),	-- PattyMack 2.0 - WildBattlePet Test
-pet(456),	-- Blighthawk
-pet(457),	-- Festering Maggot
-pet(458),	-- Lost of Lordaeron
 pet(462),	-- Jacob the Test Seagull
-pet(464),	-- Grey Moth
-pet(465),	-- Ravager Hatchling
-pet(471),	-- Robo-Chick
-pet(472),	-- Rabid Nut Varmint 5000
-pet(473),	-- Turquoise Turtle
-pet(474),	-- Cheetah Cub
-pet(475),	-- Giraffe Calf
-pet(476),	-- Gazelle
-pet(477),	-- Gazelle Fawn
-pet(478),	-- Forest Moth
-pet(479),	-- Elfin Rabbit
-pet(482),	-- Rock Viper
-pet(483),	-- Horny Toad
-pet(484),	-- Desert Spider
-pet(485),	-- Stone Armadillo
-pet(486),	-- Mule Deer
-pet(487),	-- Alpine Chipmunk
-pet(488),	-- Coral Snake
-pet(489),	-- Spawn of Onyxia
-pet(491),	-- Sand Kitten
-pet(492),	-- Stinkbug
-pet(493),	-- Shimmershell Snail
-pet(494),	-- Silithid Hatchling
-pet(495),	-- Frog
-pet(496),	-- Rusty Snail
-pet(497),	-- Tainted Cockroach
-pet(498),	-- Tainted Moth
-pet(499),	-- Tainted Rat
-pet(500),	-- Minfernal
-pet(502),	-- Spotted Bell Frog
-pet(503),	-- Silky Moth
-pet(504),	-- Diemetradon Hatchling
-pet(506),	-- Venomspitter Hatchling
-pet(507),	-- Crested Owl
-pet(508),	-- Darkshore Cub
-pet(509),	-- Tiny Bog Beast
+pet(476),	-- Gazelle (Only available during MoP BETA, uncapturable now.)
+pet(486),	-- Mule Deer (Only available during MoP BETA, uncapturable now.)
 pet(510),	-- Rabbot
-pet(511),	-- Sidewinder
-pet(512),	-- Scarab Hatchling
-pet(513),	-- Qiraji Guardling
-pet(514),	-- Flayer Youngling
-pet(517),	-- Warpstalker Hatchling
-pet(519),	-- Fel Flame
-pet(521),	-- Fledgling Nether Ray
-pet(523),	-- Devouring Maggot
-pet(525),	-- Turkey
-pet(528),	-- Scalded Basilisk Hatchling
-pet(529),	-- Fjord Worg Pup
-pet(532),	-- Stunted Shardhorn
-pet(539),	-- Grotto Vole
-pet(540),	-- Carrion Rat
-pet(541),	-- Fire-Proof Roach
-pet(542),	-- Mac Frog
-pet(543),	-- Locust
-pet(544),	-- Oasis Moth
-pet(545),	-- Leopard Scorpid
-pet(546),	-- Tol'vir Scarab
-pet(547),	-- Nordrassil Wisp
-pet(548),	-- Wildhammer Gryphon Hatchling
-pet(549),	-- Yellow-Bellied Marmot
-pet(550),	-- Highlands Mouse
-pet(552),	-- Twilight Fiendling
-pet(557),	-- Nether Faerie Dragon
-pet(558),	-- Arctic Fox Kit
-pet(560),	-- Sea Gull
-pet(564),	-- Emerald Turtle
-pet(565),	-- Jungle Darter
-pet(566),	-- Mirror Strider
-pet(567),	-- Temple Snake
-pet(568),	-- Silkbead Snail
-pet(569),	-- Garden Frog
-pet(570),	-- Masked Tanuki
-pet(571),	-- Grove Viper
-pet(572),	-- Spirebound Crab
-pet(573),	-- Sandy Petrel
-pet(626),	-- Bat
-pet(627),	-- Infected Squirrel
-pet(628),	-- Infected Fawn \\ Infected Deer
-pet(629),	-- Shore Crawler
-pet(630),	-- Gilnean Raven
-pet(631),	-- Emerald Boa
-pet(632),	-- Ash Lizard
-pet(634),	-- Crystal Spider
-pet(637),	-- Skittering Cavern Crawler
-pet(638),	-- Nether Roach
-pet(640),	-- Snowshoe Hare
-pet(644),	-- Fjord Rat
-pet(645),	-- Highlands Turkey
-pet(648),	-- Huge Toad
-pet(649),	-- Biletoad
-pet(677),	-- Shy Bandicoon
-pet(678),	-- Jungle Grub
-pet(679),	-- Summit Kid
-pet(680),	-- Kuitan Mongoose
-pet(699),	-- Jumping Spider
-pet(702),	-- Leopard Tree Frog
-pet(703),	-- Masked Tanuki Pup
 pet(705),	-- Amorous Rooster
-pet(706),	-- Bandicoon
-pet(707),	-- Bandicoon Kit
-pet(708),	-- Malayan Quillrat
-pet(709),	-- Malayan Quillrat Pup
-pet(710),	-- Marsh Fiddler
-pet(711),	-- Sifang Otter
-pet(712),	-- Sifang Otter Pup
-pet(713),	-- Softshell Snapling
-pet(714),	-- Feverbite Hatchling
 pet(715),	-- Wild Silkworm
 pet(716),	-- Amethyst Spiderling
 pet(717),	-- Savory Beetle

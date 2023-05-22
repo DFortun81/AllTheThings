@@ -43,17 +43,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					-- #if AFTER MOP
 					petbattle(filter(BATTLE_PETS, {
-						p(513, {	-- Qiraji Guardling
-							["crs"] = { 62526 },	-- Qiraji Guardling
-							["description"] = "Starts spawning March 20th. Stops spawning September 23rd.",
-						}),
-						p(512, {	-- Scarab Hatchling
-							["crs"] = { 62524 },	-- Scarab Hatchling
-							["description"] = "Can be found near the gates of Ahn'Qiraj, or in the un-instanced zone south of Silithus.",
-						}),
-						p(511, {	-- Sidewinder
-							["crs"] = { 62523 },	-- Sidewinder
-						}),
+						["sym"] = {{"select","speciesID",
+							513,	-- Qiraji Guardling (PET!)
+							511,	-- Sidewinder (PET!)
+						}},
+						["g"] = {
+							pet(512, {	-- Scarab Hatchling (PET!)
+								["description"] = "Can be found near the gates of Ahn'Qiraj, or in the un-instanced zone south of Silithus.",
+							}),
+						},
 					})),
 					-- #endif
 					n(RARES, {
@@ -96,25 +94,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
+					484,	-- Desert Spider (PET!)
+					482,	-- Rock Viper (PET!)
+					512,	-- Scarab Hatchling (PET!)
 					414,	-- Scorpid (PET!)
+					511,	-- Sidewinder (PET!)
 				}},
 				["g"] = {
-					p(484, {	-- Desert Spider
-						["crs"] = { 62186 },	-- Desert Spider
-					}),
-					p(513, {	-- Qiraji Guardling
-						["crs"] = { 62526 },	-- Qiraji Guardling
+					pet(513, {	-- Qiraji Guardling (PET!)
 						["description"] = "Starts spawning June 21st. Stops spawning September 23rd.",
-					}),
-					p(482, {	-- Rock Viper
-						["crs"] = { 62184 },	-- Rock Viper
-					}),
-					p(512, {	-- Scarab Hatchling
-						["crs"] = { 62524 },	-- Scarab Hatchling
-						["description"] = "Can be found near the gates of Ahn'Qiraj, or in the un-instanced zone south of Silithus.",
-					}),
-					p(511, {	-- Sidewinder
-						["crs"] = { 62523 },	-- Sidewinder
 					}),
 					pet(433),	-- Spiky Lizard (PET!)
 				},

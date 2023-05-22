@@ -186,6 +186,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					393,	-- Cockroach (PET!)
+					648,	-- Huge Toad (PET!)
 					414,	-- Scorpid (PET!)
 					388,	-- Shore Crab (PET!)
 					418,	-- Water Snake (PET!)
@@ -194,21 +195,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					p(647, {	-- Grizzly Squirrel
 						["crs"] = { 62818 },
 					}),
-					p(550, {	-- Highlands Mouse
-						["crs"] = { 62905 },
-					}),
+					pet(550),	-- Highlands Mouse (PET!)
 					p(823, {	-- Highlands Skunk
 						["crs"] = { 62907 },
 					}),
-					p(645, {	-- Highlands Turkey
-						["crs"] = { 62906 },
-					}),
-					p(648, {	-- Huge Toad
-						["crs"] = { 61368 },
+					pet(645, {	-- Highlands Turkey (PET!)
+						["description"] = "Can be found around Vermillion Redoubt.",
 					}),
 					pet(431),	-- Rattlesnake (PET!)
-					p(552, {	-- Twilight Fiendling
-						["crs"] = { 62914 },
+					pet(552, {	-- Twilight Fiendling (PET!)
 						["coords"] = {
 							{ 59.6, 51.0, TWILIGHT_HIGHLANDS },
 							{ 40.2, 47.6, TWILIGHT_HIGHLANDS },
@@ -224,16 +219,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 20.6, 57.6, TWILIGHT_HIGHLANDS },
 						["timeline"] = { ADDED_8_2_0 },
 					}),
-					p(548, {	-- Wildhammer Gryphon Hatchling
-						["crs"] = { 62900 },
+					pet(548, {	-- Wildhammer Gryphon Hatchling (PET!)
 						["coords"] = {
 							{ 56.4, 15.8, TWILIGHT_HIGHLANDS },
 							{ 48.4, 28.6, TWILIGHT_HIGHLANDS },
 						},
 					}),
-					p(549, {	-- Yellow-Bellied Marmot
-						["crs"] = { 62904 },
-					}),
+					pet(549),	-- Yellow-Bellied Marmot (PET!)
 				},
 			})),
 			-- #endif

@@ -9,11 +9,9 @@ _.Zones =
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 						425,	-- Ash Viper (PET!)
+						706,	-- Bandicoon (PET!)
 					}},
 				["g"] = {
-					p(706, {	-- Bandicoon
-						["crs"] = { 63062 },	-- Bandicoon
-					}),
 					pet(1914),	-- Coastal Sandpiper  (PET!)
 					pet(1809),	-- Crystalline Broodling (PET!)
 					p(751, {	-- Dancing Water Skimmer

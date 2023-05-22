@@ -276,29 +276,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(487, {	-- Alpine Chipmunk
-					["crs"] = { 62189 },	-- Alpine Chipmunk
-				}),
-				pet(441),	-- Alpine Hare (PET!)
-				p(1163, {	-- Anodized Robo Cub
-					["crs"] = { 68839 },	-- Anodized Robo Cub
-				}),
-				p(634, {	-- Crystal Spider
-					["crs"] = { 62435 },	-- Crystal Spider
-					["description"] = "Can most commonly be found in Frostwhisper Gorge in southern Winterspring.",
-				}),
-				p(633, {	-- Mountain Skunk
-					["crs"] = { 61677 },	-- Mountain Skunk
-				}),
-				p(472, {	-- Rabid Nut Varmint 5000
-					["crs"] = { 62120 },	-- Rabid Nut Varmint 5000
-				}),
-				p(471, {	-- Robo-Chick
-					["crs"] = { 62119 },	-- Robo-Chick
-				}),
-				pet(69, {	-- Snowy Owl (PET!)
-					["description"] = "Starts spawning December 21st. Stops spawning March 20th",
-				}),
+				["sym"] = {{"select","speciesID",
+					633,	-- Mountain Skunk (PET!)
+					472,	-- Rabid Nut Varmint 5000 (PET!)
+					471,	-- Robo-Chick (PET!)
+				}},
+				["g"] = {
+					pet(487),	-- Alpine Chipmunk (PET!)
+					pet(441),	-- Alpine Hare (PET!)
+					p(1163, {	-- Anodized Robo Cub
+						["crs"] = { 68839 },	-- Anodized Robo Cub
+					}),
+					pet(634, {	-- Crystal Spider (PET!)
+						["description"] = "Can most commonly be found in Frostwhisper Gorge in southern Winterspring and Lake Kel'theril.",
+					}),
+					pet(69, {	-- Snowy Owl (PET!)
+						["description"] = "Starts spawning December 21st. Stops spawning March 20th",
+					}),
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

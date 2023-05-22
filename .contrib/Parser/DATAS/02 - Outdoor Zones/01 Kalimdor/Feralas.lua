@@ -60,15 +60,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit
-					379,	-- Squirrel
+					378,	-- Rabbit (PET!)
+					379,	-- Squirrel (PET!)
 				}},
 				["g"] = {
-					p(557, {	-- Nether Faerie Dragon
-						["crs"] = { 62395 },	-- Nether Faerie Dragon
+					pet(557, {	-- Nether Faerie Dragon (PET!)
 						["description"] = "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",
 					}),
-					pet(387),	-- Snake
+					pet(387),	-- Snake (PET!)
 					p(1158, {	-- Stunted Yeti
 						["crs"] = { 68805 },	-- Stunted Yeti
 						["description"] = "Can be found near Feral Scar Yetis south of Dire Maul.",

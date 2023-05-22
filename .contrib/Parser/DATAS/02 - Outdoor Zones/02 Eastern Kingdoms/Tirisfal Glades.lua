@@ -680,15 +680,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
+					417,	-- Bat (PET!)
 					646,	-- Chicken (PET!)
 					417,	-- Rat (PET!)
 					458,	-- Lost of Lordaeron (PET!)
 				}},
-				["g"] = {
-					p(417, {	-- Bat
-						["crs"] = { 61829 },
-					}),
-				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

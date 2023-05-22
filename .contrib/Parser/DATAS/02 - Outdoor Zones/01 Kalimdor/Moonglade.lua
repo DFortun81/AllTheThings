@@ -18,17 +18,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					378,	-- Rabbit
-					379,	-- Squirrel
+					478,	-- Forest Moth (PET!)
+					378,	-- Rabbit (PET!)
+					503,	-- Silky Moth (PET!)
+					379,	-- Squirrel (PET!)
 				}},
-				["g"] = {
-					p(478, {	-- Forest Moth
-						["crs"] = { 62177 },	-- Forest Moth
-					}),
-					p(503, {	-- Silky Moth
-						["crs"] = { 62373 },	-- Silky Moth
-					}),
-				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

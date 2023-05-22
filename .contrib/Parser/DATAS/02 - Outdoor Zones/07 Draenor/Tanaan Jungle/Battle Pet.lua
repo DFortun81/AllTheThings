@@ -8,6 +8,8 @@ _.Zones =
 		m(TANAAN_JUNGLE, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
+					519,	-- Fel Flame (PET!)
+					483,	-- Horny Toad (PET!)
 					417,	-- Rat (PET!)
 					405,	-- Tree Python (PET!)
 				}},
@@ -224,14 +226,8 @@ _.Zones =
 					p(1586, {	--  Cerulean Moth
 						["crs"] = { 88422 },	--  Cerulean Moth
 					}),
-					p(519, {	--  Fel Flame
-						["crs"] = { 62621 },	--  Fel Flame
-					}),
 					p(1581, {	--  Fen Crab
 						["crs"] = { 88473 },	--  Fen Crab
-					}),
-					p(483, {	--  Horny Toad
-						["crs"] = { 62185 },	--  Horny Toad
 					}),
 					p(1591, {	--  Violet Firefly
 						["crs"] = { 88357 },	--  Violet Firefly

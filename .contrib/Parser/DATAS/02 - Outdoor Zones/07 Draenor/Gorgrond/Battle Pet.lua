@@ -10,6 +10,7 @@ _.Zones =
 				["sym"] = {{"select","speciesID",
 					449,	-- Brown Marmot (PET!)
 					393,	-- Cockroach (PET!)
+					702,	-- Leopard Tree Frog (PET!)
 					410,	-- Wharf Rat (PET!)
 				}},
 				["g"] = {
@@ -23,9 +24,6 @@ _.Zones =
 					p(1469, {	-- Junglebeak
 						["crs"] = { 85192 },
 					}),
-					p(702, {	-- Leopard Tree Frog
-						["crs"] = { 63919 },
-					}),
 					p(1594, {	-- Mudback Calf
 						["crs"] = { 88571 },
 						["description"] = "Best general locations to find these are around the coords. Killing other nearby critters helps spawn them.",
@@ -38,9 +36,7 @@ _.Zones =
 						["crs"] = { 89194 },
 						["description"] = "Found mostly in and around Gronn Canyon.",
 					}),
-					p(568, {	-- Silkbead Snail
-						["crs"] = { 63001 },
-					}),
+					pet(568),	-- Silkbead Snail (PET!)
 					p(1464, {	-- Twilight Wasp
 						["crs"] = { 85253 },
 					}),

@@ -78,30 +78,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					838,	-- Amethyst Shale Hatchling (PET!)
+					479,	-- Elfin Rabbit (PET!)
+					478,	-- Forest Moth (PET!)
 					417,	-- Rat (PET!)
 					452,	-- Red-Tailed Chipmunk (PET!)
 					424,	-- Roach (PET!)
 					419,	-- Small Frog (PET!)
 				}},
 				["g"] = {
-					p(484, {	-- Desert Spider
-						["crs"] = { 62186 },	-- Desert Spider
-					}),
-					p(479, {	-- Elfin Rabbit
-						["crs"] = { 62178 },	-- Elfin Rabbit
-					}),
-					p(478, {	-- Forest Moth
-						["crs"] = { 62177 },	-- Forest Moth
-					}),
-					p(483, {	-- Horny Toad
-						["crs"] = { 62185 },	-- Horny Toad
-					}),
-					p(482, {	-- Rock Viper
-						["crs"] = { 62184 },	-- Rock Viper
-					}),
-					p(485, {	-- Stone Armadillo
-						["crs"] = { 62187 },	-- Stone Armadillo
-						["description"] = "This wild pet can be found in the south eastern area of Desolace. It only spawns at night.",
+					pet(484),	-- Desert Spider (PET!)
+					pet(483),	-- Horny Toad (PET!)
+					pet(482),	-- Rock Viper (PET!)
+					pet(485, {	-- Stone Armadillo (PET!)
+						["description"] = "This wild pet can be found in the southeastern area of Desolace. It only spawns at night.",
 					}),
 					pet(480),	-- Topaz Shale Hatchling (PET!)
 				},

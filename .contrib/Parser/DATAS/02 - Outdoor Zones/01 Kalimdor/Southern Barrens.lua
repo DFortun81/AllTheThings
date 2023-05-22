@@ -101,19 +101,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					635,	-- Adder (PET!)
+					474,	-- Cheetah Cub (PET!)
+					631,	-- Emerald Boa (PET!)
 					386,	-- Prarie Dog (PET!)
 					419,	-- Small Frog (PET!)
 				}},
 				["groups"] = {
-					p(474, {	-- Cheetah Cub
-						["crs"] = { 62129 },	-- Cheetah Cub
-						["description"] = "Can be found under large trees alongside Plainsland Cheetahs. There are only two spawn points for this pet in Southern Barrens. They spawn under a large tree near Hunter's Hill in the very northern-most tip of Southern Barrens.",
-					}),
-					p(631, {	-- Emerald Boa
-						["crs"] = { 62127 },	-- Emerald Boa
-					}),
-					p(475, {	-- Giraffe Calf
-						["crs"] = { 62130 },	-- Giraffe Calf
+					pet(475, {	-- Giraffe Calf (PET!)
 						["description"] = "Can be found with groups of roaming Dusthoof Giraffe.",
 					}),
 				},

@@ -92,13 +92,10 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(521, {	-- Fledgling Nether Ray
-						["crs"] = { 62627 },	-- Fledgling Nether Ray
+					pet(521, {	-- Fledgling Nether Ray (PET!)
 						["description"] = "Found only around Manaforges.",
 					}),
-					p(638, {	-- Nether Roach
-						["crs"] = { 62625 },	-- Nether Roach
-					}),
+					pet(638),	-- Nether Roach (PET!)
 				})),
 				-- #endif
 				-- #if ANYCLASSIC
