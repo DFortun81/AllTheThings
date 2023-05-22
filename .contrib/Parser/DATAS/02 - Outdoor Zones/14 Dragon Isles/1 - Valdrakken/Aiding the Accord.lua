@@ -83,5 +83,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75260),	-- After "Aiding the Accord" series
 		q(75862),	-- After "Aiding the Accord" series (Suffusion Camp was in Ohn'ahran Plains)
 		q(75864),	-- After "Aiding the Accord" series (Suffusion Camp was in The Azure Span)
+		q(75863),	-- After "Aiding the Accord" series (Sniffenseeking)
 	}),
 }));

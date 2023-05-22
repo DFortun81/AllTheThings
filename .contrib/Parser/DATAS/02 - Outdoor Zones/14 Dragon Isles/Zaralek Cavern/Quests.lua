@@ -846,7 +846,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--
 		q(75511),	-- Tracking Quest (that's the name)
 		q(75764),	-- Login
-		q(75863),	-- Turning in Aiding The Accord: Sniffenseeking (75859)
 		--q(73793),	-- Fly Through Azure Exit
 
 		q(76013),	-- After killing Dreadful Defender / cinematic during 'Stopping Sakareth' (questID 72930)
