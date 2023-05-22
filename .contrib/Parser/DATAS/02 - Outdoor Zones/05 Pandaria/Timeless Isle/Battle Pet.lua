@@ -10,16 +10,10 @@ _.Zones =
 				["sym"] = {{"select","speciesID",
 					417,	-- Rat (PET!)
 				}},
-				["g"] = {
-					p(1324, {	-- Ashwing Moth
-						["crs"] = { 73542 },	-- Ashwing Moth
-					}),
-					p(1325, {	-- Flamering Moth
-						["crs"] = { 73543 },	-- Flamering Moth
-					}),
-					p(1326, {	-- Skywisp Moth
-						["crs"] = { 73368 },	-- Skywisp Moth
-					}),
+				["groups"] = {
+					pet(1324),	-- Ashwing Moth (PET!)
+					pet(1325),	-- Flamering Moth (PET!)
+					pet(1326),	-- Skywisp Moth (PET!)
 				},
 			})),
 		}),

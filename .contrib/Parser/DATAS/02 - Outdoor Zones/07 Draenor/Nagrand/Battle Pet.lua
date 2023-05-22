@@ -9,6 +9,7 @@ _.Zones =
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					635,	-- Adder (PET!)
+					1441,	-- Mud Jumper (PET!)
 					386,	-- Prarie Dog (PET!)
 					378,	-- Rabbit (PET!)
 					417,	-- Rat (PET!)
@@ -16,13 +17,8 @@ _.Zones =
 					397,	-- Skunk (PET!)
 					379,	-- Squirrel (PET!)
 				}},
-				["g"] = {
-					p(1435, {	-- Leatherhide Runt
-						["crs"] = { 89198 },	-- Leatherhide Runt
-					}),
-					p(1441, {	-- Mud Jumper
-						["crs"] = { 83642 },	-- Mud Jumper
-					}),
+				["groups"] = {
+					pet(1435),	-- Leatherhide Runt (PET!)
 				},
 			})),
 		}),

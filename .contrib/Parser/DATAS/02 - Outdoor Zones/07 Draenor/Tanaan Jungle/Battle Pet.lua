@@ -12,8 +12,9 @@ _.Zones =
 					483,	-- Horny Toad (PET!)
 					417,	-- Rat (PET!)
 					405,	-- Tree Python (PET!)
+					1593,	-- Waterfly (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					ach(10052, {	-- Tiny Terrors in Tanaan
 					n(94601, {	-- Felsworn Sentry
 						["questID"] = 39157,
@@ -220,21 +221,12 @@ _.Zones =
 						i(118101),	-- Zangar Spore (PET!)
 					},
 				}),
-					p(1468, {	--  Bloodbeak
-						["crs"] = { 85388 },	--  Bloodbeak
+					pet(1468),	--  Bloodbeak (PET!)
+					pet(1586),	--  Cerulean Moth (PET!)
+					pet(1581, {	--  Fen Crab (PET!)
+						["description"] = "Found along the southern coast below Fang'rila.",
 					}),
-					p(1586, {	--  Cerulean Moth
-						["crs"] = { 88422 },	--  Cerulean Moth
-					}),
-					p(1581, {	--  Fen Crab
-						["crs"] = { 88473 },	--  Fen Crab
-					}),
-					p(1591, {	--  Violet Firefly
-						["crs"] = { 88357 },	--  Violet Firefly
-					}),
-					p(1593, {	--  Waterfly
-						["crs"] = { 88355 },	--  Waterfly
-					}),
+					pet(1591),	--  Violet Firefly (PET!)
 				},
 			})),
 		}),

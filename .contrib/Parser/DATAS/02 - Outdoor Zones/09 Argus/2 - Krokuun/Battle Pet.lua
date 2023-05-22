@@ -7,11 +7,11 @@ _.Zones =
 	m(905, {	-- Argus
 		m(830, {	-- Krokuun
 			petbattle(filter(BATTLE_PETS, {
-				pet(2123),	-- Bile Larva
-				pet(2124, {	-- Bilescourge
+				pet(2123),	-- Bile Larva (PET!)
+				pet(2124, {	-- Bilescourge (PET!)
 					["coord"] = { 47.0, 46.8, 830 },
 				}),
-				pet(2127, {	-- Flickering Argunite
+				pet(2127, {	-- Flickering Argunite (PET!)
 					["coord"] = { 35.4, 64.5, 830 },
 				}),
 				ach(12088, {	-- Anomalous Animals of Argus

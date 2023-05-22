@@ -10,7 +10,7 @@ _.Zones =
 				["sym"] = {{"select","speciesID",
 					564,	-- Emerald Turtle (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(706),	-- Bandicoon (PET!)
 					pet(707),	-- Bandicoon Kit (PET!)
 					pet(708),	-- Malayan Quillrat (PET!)

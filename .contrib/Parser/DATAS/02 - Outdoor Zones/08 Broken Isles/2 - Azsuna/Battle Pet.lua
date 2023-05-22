@@ -9,52 +9,43 @@ _.Zones =
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					706,	-- Bandicoon (PET!)
+					396,	-- Dusk Spidering (PET!)
 					478,	-- Forest Moth (PET!)
 					464,	-- Grey Moth (PET!)
 					647,	-- Grizzly Squirrel (PET!)
 					699,	-- Jumping Spider (PET!)
+					1583,	-- Kelp Scuttler (PET!)
+					743,	-- Rapana Whelk (PET!)
+					1587,	-- Royal Moth (PET!)
+					1736,	-- Slithering Brownscale (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(1708),	-- Albatross Chick (PET!)
-					pet(1914),	-- Coastal Sandpiper
-					p(396, {	-- Dusk Spiderling
-						["crs"] = { 61253 },	-- Dusk Spiderling
-					}),
-					pet(1774, {	-- Eldritch Manafiend
+					pet(1914),	-- Coastal Sandpiper (PET!)
+					pet(1774, {	-- Eldritch Manafiend (PET!)
 						["description"] = "This pet can only spawn during the night between 8:30pm to 6:30am server time.",
 					}),
-					pet(1773, {	-- Erudite Manafiend
+					pet(1773, {	-- Erudite Manafiend (PET!)
 						["description"] = "This pet can only spawn during the day between 6:30am to 8:30pm server time.",
 					}),
 					pet(1731),	-- Felspider (PET!)
-					pet(1709, {	-- Fledgling Kingfeather
+					pet(1709, {	-- Fledgling Kingfeather (PET!)
 						["coord"] = { 44.4, 23.6, AZSUNA },
 					}),
-					pet(1710, {	-- Fledgling Oliveback
+					pet(1710, {	-- Fledgling Oliveback (PET!)
 						["coord"] = { 44.4, 23.6, AZSUNA },
 					}),
-					pet(1728, {	-- Juvenile Scuttleback
+					pet(1728, {	-- Juvenile Scuttleback (PET!)
 						["coords"] = {
 							{ 61.8, 61.6, AZSUNA },
 							{ 55.8, 59.0, AZSUNA },
 							{ 31.2, 30.6, AZSUNA },
 						},
 					}),
-					p(1583, {	-- Kelp Scuttler
-						["crs"] = { 88465 },	-- Kelp Scuttler
-					}),
-					p(1729, {	-- Olivetail Hare
-						["crs"] = { 97294 },	-- Olivetail Hare
-					}),
-					p(743, {	-- Rapana Whelk
-						["crs"] = { 64352 },	-- Rapana Whelk
-					}),
-					p(1587, {	-- Royal Moth
-						["crs"] = { 88417 },	-- Royal Moth
-					}),
-					pet(1736),	-- Slithering Brownscale (PET!)
-					p(1935, {	-- Squirky
-						["crs"] = { 113440 },	-- Squirky
+					pet(1729),	-- Olivetail Hare (PET!)
+					pet(1935, {	-- Squirky (PET!)
+						["description"] = "Found at the given coord on Seabreak Isle.",
+						["coord"] = { 20.0, 21.8, AZSUNA },
 					}),
 					n(115741, {	-- Orphaned Bloodgazer
 						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling! Do one quest each day for a mount!|r",

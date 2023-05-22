@@ -122,8 +122,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(540),	-- Carrion Rat (PET!)
-					p(755, {	-- Death's Head Cockroach
-						["crs"] = { 62887 },	-- Death's Head Cockroach
+					pet(755, {	-- Death's Head Cockroach (PET!)
 						["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
 					}),
 					pet(479, {	-- Elfin Rabbit (PET!)

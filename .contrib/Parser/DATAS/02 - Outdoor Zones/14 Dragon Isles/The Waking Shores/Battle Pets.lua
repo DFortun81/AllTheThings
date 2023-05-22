@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				}),
 				pet(3272),	-- Pricklefury Hare (PET!)
 				pet(3280, {	-- Shyfly (PET!)
-					["description"] = "You won't be able to see these pets until you've accepted the quest |cffffff00A Friend for Lubbins|r.",
+					["description"] = "You won't be able to see these pets until you've accepted the quest |cffffff00A Friend for Lubbins|r. For some reason, these are tradeable.",
 					["coord"] = { 40.8, 81.2, THE_WAKING_SHORES },
 				}),
 				pet(3282),	-- Swoglet (PET!)

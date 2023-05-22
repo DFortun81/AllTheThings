@@ -8,26 +8,30 @@ _.Zones =
 		m(VALSHARAH, {
 			filter(BATTLE_PETS,  {
 				["sym"] = {{"select","speciesID",
+					1738,	-- Auburn Ringtail (PET!)
 					398,	-- Black Rat (PET!)
+					380,	-- Bucktooth Flapper (PET!)
 					393,	-- Cockroach (PET!)
 					396,	-- Dusk Spiderling (PET!)
+					479,	-- Elfin Rabbit (PET!)
 					397,	-- Skunk (PET!)
+					1736,	-- Slithering Brownscale (PET!)
 					379,	-- Squirrel (PET!)
-					380,	-- Bucktooth Flapper (PET!)
 				}},
-				["g"] = {
-					p(1738),	-- Auburn Ringtail
-					p(479),	-- Elfin Rabbit
-					p(1913),	-- Gleamhoof Fawn
-					p(1734),	-- Shimmering Aquafly
-					p(1736),	-- Slithering Brownsnake
-					p(1739),	-- Spring Strider
-					p(1735),	-- Terror Larva
-					p(1737),	-- Vale Flitter
+				["groups"] = {
+					pet(1913),	-- Gleamhoof Fawn (PET!)
+					pet(1734),	-- Shimmering Aquafly (PET!)
+					pet(1739, { -- Spring Strider (PET!)
+						["coord"] = { 46.8, 70.2, VALSHARAH },
+					}),
+					pet(1735, { -- Terror Larva (PET!)
+						["description"] = "Found around the large nightmare area.",
+					}),
+					pet(1737),	-- Vale Flitter (PET!)
 					n(115740, {	-- Orphaned Sharptalon
 						["description"] = "1. Buy Dried Bilberries from Nalysse Dawnsorrow in Azsuna.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling! Do one quest each day for a mount!|r",
 						["groups"] = {
-							p(1976, {	-- Sharptalon Hatchling
+							p(1976, {	-- Sharptalon Hatchling (PET!)
 								q(44997, {	-- Allies in Val'sharah
 									["provider"] = { "n", 115786 },	-- Sharptalon Hatchling
 									["sourceQuest"] = 44995,	-- Hunting Lesson: Spring Strider

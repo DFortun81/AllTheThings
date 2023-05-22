@@ -704,8 +704,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					-- #if AFTER MOP
 					petbattle(filter(BATTLE_PETS, {
-						p(1162, {	-- Fluxfire Feline
-							["crs"] = { 68838 },	-- Fluxfire Feline
+						pet(1162, {	-- Fluxfire Feline (PET!)
+							["description"] = "Found all around the Toxic Airfield and Lower Gnomeregan.",
 						}),
 						pet(442, {	-- Irradiated Roach (PET!)
 							["description"] = "Found only in the Toxic Airfield near Gnomeregan.",

@@ -196,9 +196,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["crs"] = { 62818 },
 					}),
 					pet(550),	-- Highlands Mouse (PET!)
-					p(823, {	-- Highlands Skunk
-						["crs"] = { 62907 },
-					}),
+					pet(823),	-- Highlands Skunk (PET!)
 					pet(645, {	-- Highlands Turkey (PET!)
 						["description"] = "Can be found around Vermillion Redoubt.",
 					}),

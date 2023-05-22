@@ -40,9 +40,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(1160, {	-- Arcane Eye
-					["crs"] = { 68819 },	-- Arcane Eye
-				}),
+				pet(1160),	-- Arcane Eye (PET!)
 				pet(439, {	-- Restless Shadeling (PET!)
 					["description"] = "Spawns in |cFFFFD700The Master's Cellar|r at midnight PST for a very limited amount of time.",
 				}),

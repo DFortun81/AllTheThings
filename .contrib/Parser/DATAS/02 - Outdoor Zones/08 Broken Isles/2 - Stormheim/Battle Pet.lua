@@ -9,41 +9,29 @@ _.Zones =
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					380,	-- Bucktooth Flapper (PET!)
+					647,	-- Grizzly Squirrel (PET!)
 					550,	-- Highlands Mouse (PET!)
 					645,	-- Highlands Turkey (PET!)
+					1579,	-- Ironclaw Scuttler (PET!)
+					1583,	-- Kelp Scuttler (PET!)
+					1713,	-- Long-Eared Owl (PET!)
 					633,	-- Mountain Skunk (PET!)
+					1441,	-- Mud Jumper (PET!)
+					743,	-- Rapan Whelk (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(1708),	-- Albatross Chick (PET!)
 					pet(1743),	-- Black-Footed Fox Kit (PET!)
 					pet(1712),	-- Golden Eaglet (PET!)
-					pet(647, {	-- Grizzly Squirrel
-						["crs"] = { 62818 },	-- Grizzly Squirrel
-					}),
-					pet(1579, {	-- Ironclaw Scuttler
-						["crs"] = { 88474 },	-- Ironclaw Scuttler
-					}),
-					pet(1583, {	-- Kelp Scuttler
-						["crs"] = { 88465 },	-- Kelp Scuttler
-					}),
-					pet(1713, {	-- Long-Eared Owl
-						["crs"] = { 97118 },	-- Long-Eared Owl
-					}),
 					pet(1744),	-- Mist Fox Kit (PET!)
-					pet(1441, {	-- Mud Jumper
-						["crs"] = { 83642 },	-- Mud Jumper
-					}),
-					pet(743, {	-- Rapana Whelk
-						["crs"] = { 64352 },	-- Rapana Whelk
-					}),
 					pet(1749),	-- Rose Taipan (PET!)
 					pet(1736),	-- Slithering Brownscale (PET!)
 					pet(1917),	-- Stormstruck Beaver (PET!)
 					pet(1750),	-- Tiny Apparition (PET!)
 					n(115742, {	-- Orphaned Direbeak
 						["description"] = "1. Buy Pungent Vrykul Gamalost from Riala the Hearthwatcher in Valdisdall.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy your new Direbeak Hatchling! Do one quest each day for a mount!|r\n",
-						["g"] = {
-							p(1975, {	-- Direbeak Hatchling
+						["groups"] = {
+							p(1975, {	-- Direbeak Hatchling (PET!)
 								q(44977, {	-- Allies in Stormheim
 									["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 									["sourceQuest"] = 44976,	-- Hunting Lesson: Rose Taipan

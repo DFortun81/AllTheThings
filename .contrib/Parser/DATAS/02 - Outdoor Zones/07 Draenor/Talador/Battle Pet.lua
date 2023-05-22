@@ -10,15 +10,14 @@ _.Zones =
 				["sym"] = {{"select","speciesID",
 					427,	-- Ash Spiderling (PET!)
 					452,	-- Red-Tailed Chipmunk (PET!)
+					1587,	-- Royal Moth (PET!)
 					560,	-- Sea Gull (PET!)
 					568,	-- Silkbead Snail (PET!)
+					1593,	-- Waterfly (PET!)
 				}},
-				["g"] = {
-					p(1572, {	--  Brilliant Bloodfeather
-						["crs"] = { 88385 },	--  Brilliant Bloodfeather
-					}),
-					p(1589, {	-- Crimsonwing Moth
-						["crs"] = { 88413 },	-- Crimsonwing Moth
+				["groups"] = {
+					pet(1572),	--  Brilliant Bloodfeather (PET!)
+					pet(1589, {	-- Crimsonwing Moth (PET!)
 						["description"] = "Only one is up at a time.  Once captured or killed, it immediately respawns.",
 						["coords"] = {
 							{ 32.4, 63.6, TALADOR },
@@ -57,24 +56,13 @@ _.Zones =
 							{ 75.0, 17.8, TALADOR },
 						},
 					}),
-					p(1595, {	--  Flat-Tooth Calf
-						["crs"] = { 88572 },	--  Flat-Tooth Calf
+					pet(1595),	--  Flat-Tooth Calf (PET!)
+					pet(1583, {	--  Kelp Scuttler (PET!)
+						["description"] = "Found on the Orunai Coast, Talador; Tideskorn Harbor, Stormheim; and around Nar'Thalas Academy, Azsuna."
 					}),
-					p(1583, {	--  Kelp Scuttler
-						["crs"] = { 88465 },	--  Kelp Scuttler
-					}),
-					p(1441, {	--  Mud Jumper
-						["crs"] = { 83642 },	--  Mud Jumper
-					}),
-					p(1587, {	--  Royal Moth
-						["crs"] = { 88417 },	--  Royal Moth
-					}),
-					p(1599, {	--  Shadow Sporebat
-						["crs"] = { 88576 },	--  Shadow Sporebat
+					pet(1441),	--  Mud Jumper (PET!)
+					pet(1599, {	--  Shadow Sporebat (PET!)
 						["description"] = "Found only in Zangarra.",
-					}),
-					p(1593, {	--  Waterfly
-						["crs"] = { 88355 },	--  Waterfly
 					}),
 				},
 			})),

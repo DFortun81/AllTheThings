@@ -445,8 +445,12 @@ i(85447, 652);		-- Tiny Goldfish
 -- NPC --
 n(61325, 635);		-- Adder
 n(62189, 487);		-- Alpine Chipmunk
+n(63550, 724);		-- Alpine Foxling
+n(63551, 725);		-- Alpine Foxling Kit
 n(61690, 441);		-- Alpine Hare
+n(65187, 732);		-- Amber Moth
 n(62182, 838);		-- Amethyst Shale Hatchling
+n(63288, 716);		-- Amethyst Spiderling
 n(62864, 558);		-- Arctic Fox Kit
 n(62693, 641);		-- Arctic Hare
 n(62364, 632);		-- Ash Lizard
@@ -470,6 +474,7 @@ n(62019, 459);		-- Cat
 n(62129, 474);		-- Cheetah Cub
 n(62664, 646);		-- Chicken
 n(62620, 518);		-- Clefthoof Runt
+n(64242, 742);		-- Clouded Hedgehog
 n(61384, 393);		-- Cockroach
 n(62991, 562);		-- Coral Adder
 n(62190, 488);		-- Coral Snake
@@ -478,9 +483,12 @@ n(62242, 507);		-- Crested Owl
 n(62927, 559);		-- Crimson Geode
 n(61314, 421);		-- Crimson Moth
 n(62922, 554);		-- Crimson Shale Hatchling
+n(63548, 745);		-- Crunchy Scorpion
 n(62925, 556);		-- Crystal Beetle
 n(62435, 634);		-- Crystal Spider
+n(63847, 751);		-- Dancing Water Skimmer
 n(62250, 508);		-- Darkshore Cub
+n(62887, 755);		-- Death's Head Cockroach
 n(62924, 555);		-- Deepholm Cockroach
 n(62186, 484);		-- Desert Spider
 n(62640, 523);		-- Devouring Maggot
@@ -489,9 +497,11 @@ n(62852, 537);		-- Dragonbone Hatchling
 n(62115, 467);		-- Dung Beetle
 n(61253, 396);		-- Dusk Spiderling
 n(62178, 479);		-- Elfin Rabbit
+n(63850, 747);		-- Effervescent Glowfly
 n(62127, 631);		-- Emerald Boa
 n(62915, 837);		-- Emerald Shale Hatchling
 n(62994, 564);		-- Emerald Turtle
+n(65203, 746);		-- Emperor Crab
 n(61088, 383);		-- Eternal Strider
 n(61165, 447);		-- Fawn
 n(62621, 519);		-- Fel Flame
@@ -511,17 +521,23 @@ n(62916, 756);		-- Fungal Moth
 n(63002, 569);		-- Garden Frog
 n(65215, 753);		-- Garden Moth
 n(62176, 477);		-- Gazelle Fawn
+n(63838, 748);		-- Gilded Moth
 n(63098, 630);		-- Gilnean Raven
 n(62130, 475);		-- Giraffe Calf
 n(61438, 430);		-- Gold Beetle
+n(63841, 749);		-- Golden Civet
+n(63842, 750);		-- Golden Civet Kitten
 n(61704, 443);		-- Grasslands Cottontail
+n(63549, 733);		-- Grasslands Hopper
 n(62050, 464);		-- Grey Moth
 n(62818, 647);		-- Grizzly Squirrel
 n(62884, 539);		-- Grotto Vole
 n(63004, 571);		-- Grove Viper
 n(61751, 448);		-- Hare
 n(62905, 550);		-- Highlands Mouse
+n(62907, 823);		-- Highlands Skunk
 n(62906, 645);		-- Highlands Turkey
+n(62894, 851);		-- Horned Lizard
 n(62185, 483);		-- Horny Toad
 n(61368, 648);		-- Huge Toad
 n(62819, 534);		-- Imperial Eagle Chick
@@ -533,6 +549,7 @@ n(61718, 446);		-- Jade Oozeling
 n(63715, 699);		-- Jumping Spider
 n(62997, 565);		-- Jungle Darter
 n(63304, 678);		-- Jungle Grub
+n(61443, 438);		-- King Snake
 n(63953, 680);		-- Kuitan Mongoose
 n(62022, 461);		-- Larva
 n(61386, 429);		-- Lava Beetle
@@ -544,6 +561,7 @@ n(61321, 408);		-- Lizard Hatchling
 n(62893, 543);		-- Locust
 n(61317, 404);		-- Long-tailed Mole
 n(61905, 458);		-- Lost of Lordaeron
+n(65124, 718);		-- Luyu Moth
 n(62892, 542);		-- Mac Frog
 n(61753, 450);		-- Maggot
 n(63094, 708);		-- Malayan Quillrat
@@ -551,10 +569,13 @@ n(63095, 709);		-- Malayan Quillrat Pup
 n(63096, 710);		-- Marsh Fiddler
 n(63003, 570);		-- Masked Tanuki
 n(63716, 703);		-- Masked Tanuki Pup
+n(65185, 722);		-- Mei-Li Sparkler
 n(62317, 500);		-- Minifernal
 n(62998, 566);		-- Mirror Strider
 n(61372, 422);		-- Moccasin
 n(61425, 428);		-- Molten Hatchling
+n(65190, 737);		-- Mongoose
+n(63954, 739);		-- Mongoose Pup
 n(61167, 391);		-- Mountain Cottontail
 n(61677, 633);		-- Mountain Skunk
 n(61143, 385);		-- Mouse
@@ -564,15 +585,19 @@ n(62888, 547);		-- Nordrassil Wisp
 n(62895, 544);		-- Oasis Moth
 n(62697, 530);		-- Oily Slimeling
 n(61313, 403);		-- Parrot
+n(63547, 726);		-- Plains Monitor
 n(61322, 409);		-- Polly
 n(61141, 386);		-- Prarie Dog
+n(59702, 727);		-- Prarie Mouse
 n(62526, 513);		-- Qiraji Guardling
 n(61080, 378);		-- Rabbit
 n(62120, 472);		-- Rabid Nut Varmint 5000
+n(64352, 743);		-- Rapana Whelk
 n(61366, 417);		-- Rat
 n(61258, 399);		-- Rat Snake
 n(61757, 452);		-- Red-Tailed Chipmunk
 n(61168, 392);		-- Redridge Rat
+n(64238, 744);		-- Resilient Roach
 n(61375, 439);		-- Restless Shadeling
 n(61755, 640);		-- Snowshoe Hare
 n(61169, 424);		-- Roach
@@ -582,6 +607,7 @@ n(62020, 460);		-- Ruby Sapling
 n(62313, 496);		-- Rusty Snail
 n(62257, 491);		-- Sand Kitten
 n(63006, 573);		-- Sandy Petrel
+n(63291, 717);		-- Savory Beetle
 n(62628, 528);		-- Scalded Basilisk Hatchling
 n(62524, 512);		-- Scarab Hatchling
 n(61326, 414);		-- Scorpid
@@ -596,6 +622,7 @@ n(64246, 677);		-- Shy Bandicoon
 n(62523, 511);		-- Sidewinder
 n(63057, 711);		-- Sifang Otter
 n(63358, 712);		-- Sifang Otter Pup
+n(64804, 741);		-- Silent Hedgehog
 n(62258, 494);		-- Silithis Hatchling
 n(63001, 568);		-- Silkbead Snail
 n(62373, 503);		-- Silky Moth
@@ -623,6 +650,7 @@ n(61440, 432);		-- Stripe-Tailed Scorpid
 n(62816, 532);		-- Stunted Shardhorn
 n(64248, 679);		-- Summit Kid
 n(61370, 402);		-- Swamp Moth
+n(63585, 728);		-- Szechuan Chicken
 n(62314, 497);		-- Tainted Cockroach
 n(62315, 498);		-- Tainted Moth
 n(62316, 499);		-- Tainted Rat
@@ -632,6 +660,8 @@ n(61160, 389);		-- Tiny Harvester
 n(61703, 445);		-- Tiny Twister
 n(61369, 420);		-- Toad
 n(62899, 546);		-- Tol'vir Scarab
+n(63557, 729);		-- Tolai Hare
+n(63558, 730);		-- Tolai Hare Pup
 n(62181, 480);		-- Topaz Shale Hatchling
 n(61318, 405);		-- Tree Python
 n(62835, 536);		-- Tundra Penguin
@@ -653,7 +683,10 @@ n(65324, 818);		-- Wild Golden Hatchling
 n(65323, 817);		-- Wild Jade Hatchling
 n(62900, 548);		-- Wildhammer Gryphon Hatchling
 n(85254, 1463);		-- Wood Wasp
+n(63957, 740);		-- Yakrat
+n(63849, 752);		-- Yellow-Bellied Bullfrog
 n(62904, 549);		-- Yellow-Bellied Marmot
+n(63555, 731);		-- Zooey Snake
 
 -----------------
 -- PATCH 5.0.3 --
@@ -671,6 +704,8 @@ i(89367, 850);		-- Yu'lon Kite
 i(90177, 903);		-- Baneling
 i(90173, 868);		-- Pandaren Water Spirit
 i(85222, 1042);		-- Red Cricket
+-- NPC ---
+n(67022, 1013);		-- Wanderer's Festival Hatchling
 
 -----------------
 -- PATCH 5.1.0 --
@@ -701,7 +736,18 @@ i(93029, 1146);		-- Stitched Pup
 i(93036, 1151);		-- Untamed Hatchling
 i(93039, 1154);		-- Viscidus Globule
 -- NPC --
+n(68839, 1163);		-- Anodized Robo Cub
+n(68819, 1160);		-- Arcane Eye
+n(68841, 1164);		-- Cogblade Raptor
+n(68850, 1167);		-- Emerald Proto-Whelp
+n(68838, 1162);		-- Fluxfire Feline
+n(68804, 1157);		-- Harpy Youngling
+n(68820, 1161);		-- Infinite Whelpling
+n(68846, 1166);		-- Kun-Lai Runt
+n(68806, 1159);		-- Lofty Libram
 n(68845, 1165);		-- Nexus Whelpling
+n(68805, 1158);		-- Stunted Yeti
+n(68506, 1128);		-- Sumprush Rodent
 
 
 -----------------
@@ -730,6 +776,11 @@ i(95422, 1211);		-- Zandalari Anklerender
 i(95423, 1212);		-- Zandalari Footslasher
 i(94126, 1180);		-- Zandalari Kneebiter
 i(95424, 1213);		-- Zandalari Toenibbler
+-- NPC --
+n(69818, 1181);		-- Elder Python
+n(69794, 1179);		-- Electrified Razortooth
+n(69819, 1182);		-- Swamp Croaker
+n(69648, 1175);		-- Thundertail Flapper
 
 
 -----------------
@@ -775,6 +826,7 @@ i(104291, 1345);	-- Gu'chi Swarmling
 i(104169, 1338);	-- Gulp Froglet
 i(104295, 1346);	-- Harmonious Porcupette
 i(104307, 1348);	-- Jadefire Spirit
+i(104164, 1333);	-- Jademist Dancer
 i(104165, 1334);	-- Kovok
 i(103670, 1320);	-- Lil' Bling
 i(101570, 1276);	-- Moon Moon
@@ -790,6 +842,10 @@ i(101771, 1266);	-- Xu-Fu, Cub of Xuen
 i(102147, 1304);	-- Yu'la, Broodling of Yu'lon
 i(102146, 1305);	-- Zao, Calfling of Niuzao
 i(128423, 1255);	-- Zeradar
+-- NPC --
+n(73542, 1324);		-- Ashwing Moth
+n(73543, 1325);		-- Flamering Moth
+n(73368, 1326);		-- Skywisp Moth
 
 
 -----------------
@@ -886,6 +942,34 @@ i(118101, 1536);	-- Zangar Spore
 i(113554, 1428);	-- Zomstrok
 -- QUEST --
 n(119466, 1532);	-- Ikky
+-- NPC --
+n(85257, 1465);		-- Amberbarb Wasp
+n(85389, 1470);		-- Axebeak Hatchling
+n(85388, 1468);		-- Bloodbeak
+n(85255, 1462);		-- Bloodsting Wasp
+n(88385, 1572);		-- Brilliant Bloodfeather
+n(88422, 1586);		-- Cerulean Moth
+n(88413, 1589);		-- Crimsonwing Moth
+n(88542, 1761);		-- Echo Batling
+n(88473, 1581);		-- Fen Crab
+n(82715, 1427);		-- Frostfur Rat
+n(88480, 1578);		-- Frostshell Pincher
+n(85798, 1573);		-- Golden Dawnfeather
+n(85003, 1457);		-- Icespine Hatchling
+n(88474, 1579);		-- Ironclaw Scuttler
+n(85192, 1469);		-- Junglebeak
+n(88465, 1583);		-- Kelp Scuttler
+n(82045, 1447);		-- Moonshell Crab
+n(85005, 1455);		-- Mossbite Skitterer
+n(83642, 1441);		-- Mud Jumper
+n(88417, 1587);		-- Royal Moth
+n(88356, 1592);		-- Sapphire Firefly
+n(88359, 1590);		-- Swamplighter Firefly
+n(85007, 1456);		-- Thicket Skitterer
+n(85253, 1464);		-- Twilight Wasp
+n(88357, 1591);		-- Violet Firefly
+n(88355, 1593);		-- Waterfly
+n(88466, 1582);		-- Zangar Crawler
 -- TRAINER --
 n(0, 872);		-- Slither
 n(0, 873);		-- Fangs
@@ -1104,6 +1188,12 @@ i(119431, 1601);	-- Servant of Demidos
 i(119468, 1570);	-- Sunfire Kaliri
 i(120121, 1605);	-- Trunks
 i(120050, 1596);	-- Veilwatcher Hatchling
+-- NPC --
+n(88572, 1595);		-- Flat-Tooth Calf
+n(89198, 1435);		-- Leatherhide Runt
+n(88571, 1594);		-- Mudback Calf
+n(89194, 1615);		-- Parched Lizard
+n(88576, 1599);		-- Shadow Sporebat
 
 -----------------
 -- PATCH 6.1.0 --
@@ -1229,40 +1319,41 @@ i(136922, 1887);	-- Wyrmy Tunkins
 i(137298, 1903);	-- Zoom
 -- NPC --
 n(97018, 1708);		-- Albatross Chick
+n(97555, 1738);		-- Auburn Ringtail
+n(97741, 1743);		-- Black-Footed Fox Kit
+n(111158, 1915);	-- Blind Rat
+n(97236, 1726);		-- Burrow Spiderling
+n(110826, 1914);	-- Coastal Sandpiper
+n(98428, 1775);		-- Coralback Fiddler
+n(99527, 1809);		-- Crystalline Broodling
+n(97206, 1722);		-- Dream Whelpling
+n(98506, 1778);		-- Dust Bunny
+n(98386, 1774);		-- Eldritch Manafiend
+n(98385, 1773);		-- Erudite Manafiend
+n(97323, 1731);		-- Felspider
 n(97076, 1709);		-- Fledgling Kingfeather
 n(97078, 1710);		-- Fledgling Oliveback
+n(110741, 1913);	-- Gleamhoof Fawn
 n(97080, 1712);		-- Golden Eaglet
-n(97118, 1713);		-- Long-Eared Owl
-n(97126, 1714);		-- Northern Hawk Owl
-n(97206, 1722);		-- Dream Whelpling
-n(97236, 1726);		-- Burrow Spiderling
-n(97283, 1728);		-- Juvenile Scuttleback
-n(97294, 1729);		-- Olivetail Hare
-n(97323, 1731);		-- Felspider
-n(97511, 1734);		-- Shimmering Aquafly
-n(97531, 1735);		-- Terror Larva
-n(97542, 1736);		-- Slithering Brownscale
-n(97547, 1737);		-- Vale Flitter
-n(97555, 1738);		-- Auburn Ringtail
-n(97559, 1739);		-- Spring Strider
-n(97741, 1743);		-- Black-Footed Fox Kit
-n(97743, 1744);		-- Mist Fox Kit
-n(97840, 1749);		-- Rose Taipan
-n(97952, 1750);		-- Tiny Apparition
 n(98192, 1762);		-- Hog-Nosed Bat
-n(98211, 1763);		-- Spiketail Beaver
-n(98385, 1773);		-- Erudite Manafiend
-n(98386, 1774);		-- Eldritch Manafiend
-n(98428, 1775);		-- Coralback Fiddler
+n(97283, 1728);		-- Juvenile Scuttleback
+n(97118, 1713);		-- Long-Eared Owl
+n(97743, 1744);		-- Mist Fox Kit
 n(98446, 1776);		-- Mudshell Conch
-n(98506, 1778);		-- Dust Bunny
-n(99513, 1807);		-- Vicious Broodling
-n(99527, 1809);		-- Crystalline Broodling
-n(99528, 1810);		-- Thornclaw Broodling
-n(110666, 1912);	-- Young Mutant Wartutle
-n(110826, 1914);	-- Coastal Sandpiper
-n(111158, 1915);	-- Blind Rat
+n(97126, 1714);		-- Northern Hawk Owl
+n(97294, 1729);		-- Olivetail Hare
+n(97840, 1749);		-- Rose Taipan
+n(97511, 1734);		-- Shimmering Aquafly
+n(97542, 1736);		-- Slithering Brownscale
+n(98211, 1763);		-- Spiketail Beaver
+n(97559, 1739);		-- Spring Strider
 n(111172, 1917);	-- Stormstruck Beaver
+n(97531, 1735);		-- Terror Larva
+n(99528, 1810);		-- Thornclaw Broodling
+n(97952, 1750);		-- Tiny Apparition
+n(97547, 1737);		-- Vale Flitter
+n(99513, 1807);		-- Vicious Broodling
+n(110666, 1912);	-- Young Mutant Wartutle
 
 -----------------
 -- PATCH 7.1.0 --
@@ -1297,6 +1388,8 @@ i(142090, 1959);	-- Winter Rageling
 -- QUEST? --
 n(115787, 1977);	-- Bloodgazer Hatchling
 n(115785, 1975);	-- Direbeak Hatchling
+-- NPC --
+n(113440, 1935);	-- Squirky
 
 
 -----------------
@@ -1601,7 +1694,6 @@ n(0, 1899);	-- Delicate Moth
 n(0, 1904);	-- Stumpers
 n(0, 1905);	-- Foof
 n(0, 1906);	-- Lil' Sizzle
-n(0, 1913);	-- Gleamhoof Fawn
 n(0, 1935);	-- Squirky
 n(0, 1971);	-- Comet
 n(0, 1972);	-- Cosmos

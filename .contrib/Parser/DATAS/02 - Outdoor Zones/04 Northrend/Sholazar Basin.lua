@@ -240,8 +240,8 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(649),	-- Biletoad (PET!)
-						p(1167, {	-- Emerald Proto-Whelp
-							["crs"] = { 68850 },	-- Emerald Proto-Whelp
+						pet(1167, {	-- Emerald Proto-Whelp (PET!)
+							["description"] = "Found all around the Savage Thicket, but they seem to be on an undisclosed timer. This pet is a strong PvE Dragonkin."
 						}),
 						pet(532),	-- Stunted Shardhorn (PET!)
 					},

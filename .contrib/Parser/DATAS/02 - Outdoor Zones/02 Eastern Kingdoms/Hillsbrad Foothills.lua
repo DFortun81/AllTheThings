@@ -83,10 +83,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 				["groups"] = {
 					pet(453, {	-- Infested Bear Cub (PET!)
-						["crs"] = { 35.4, 69.6, HILLSBRAD_FOOTHILLS },
+						["coord"] = { 35.4, 69.6, HILLSBRAD_FOOTHILLS },
 					}),
 					pet(1159, {	-- Lofty Libram (PET!)
-						["crs"] = { 68806 },	-- Lofty Libram
+						["description"] = "Found around the Dalaran Crater.",
 					}),
 					pet(452),	-- Red-Tailed Chipmunk (PET!)
 					pet(640, {	-- Snowshoe Hare (PET!)

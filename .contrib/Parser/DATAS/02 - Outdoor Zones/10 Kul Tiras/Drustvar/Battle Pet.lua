@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				2381,	-- Shack Crab (PET!)
 				379,	-- Squirrel (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(2386),	-- Coastal Scuttler (PET!)
 			},
 		})),

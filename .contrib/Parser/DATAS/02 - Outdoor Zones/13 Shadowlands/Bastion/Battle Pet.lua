@@ -11,23 +11,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			}),
 			pet(2927),	-- Fluttering Glimmerfly (PET!)
 			pet(2930, {	-- Glimmerpool Hatchling (PET!)
+				["description"] = "Found mostly around these few coords.",
 				["coords"] = {
 					{ 53.8, 32.8, BASTION },
 					{ 49.6, 62.0, BASTION },
 					{ 46.0, 34.0, BASTION },
 					{ 44.8, 29.8, BASTION },
 				},
-				["description"] = "Found mostly around these few coords.",
 			}),
 			pet(2937),	-- Rustfur Kit (PET!)
 			pet(2929),	-- Vibrant Glimmerfly (PET!)
 			pet(2939, {	-- Wader Chick (PET!)
+				["description"] = "Found mostly around these few coords.",
 				["coords"] = {
 					{ 54.2, 80.8, BASTION },
 					{ 53.4, 76.6, BASTION },
 					{ 53.4, 72.4, BASTION },
 				},
-				["description"] = "Found mostly around these few coords.",
 			}),
 			pet(2943),	-- Wild Etherwyrm (PET!)
 		})),

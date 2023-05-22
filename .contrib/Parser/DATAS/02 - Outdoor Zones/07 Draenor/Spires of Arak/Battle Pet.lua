@@ -10,26 +10,19 @@ _.Zones =
 				["sym"] = {{"select","speciesID",
 					635,	-- Adder (PET!)
 					407,	-- Forest Spiderling (PET!)
+					1441,	-- Mud Jumper (PET!)
 					417,	-- Rat (PET!)
+					1587,	-- Royal Moth (PET!)
 					568,	-- Silkbead Snail (PET!)
 					379,	-- Squirrel (PET!)
 					401,	-- Strand Crab (PET!)
+					1593,	-- Waterfly (PET!)
+					1582,	-- Zangar Crawler (PET!)
 				}},
 				["groups"] = {
-					p(1462, {	-- Bloodsting Wasp
-						["crs"] = { 85255 },	-- Bloodsting Wasp
-					}),
-					p(1573, {	-- Golden Dawnfeather
-						["crs"] = { 85798 },	-- Golden Dawnfeather
-					}),
-					p(1441, {	-- Mud Jumper
-						["crs"] = { 83642 },	-- Mud Jumper
-					}),
-					p(1587, {	-- Royal Moth
-						["crs"] = { 88417 },	-- Royal Moth
-					}),
-					p(1592, {	-- Sapphire Firefly
-						["crs"] = { 88356 },	-- Sapphire Firefly
+					pet(1462),	-- Bloodsting Wasp (PET!)
+					pet(1573),	-- Golden Dawnfeather (PET!)
+					pet(1592, {	-- Sapphire Firefly (PET!)
 						["description"] = "Only one is up at a time.  Once captured or killed, it immediately respawns.",
 						["coords"] = {
 							{ 37.8, 41.8, SPIRES_OF_ARAK },
@@ -44,19 +37,8 @@ _.Zones =
 							{ 59.0, 68.6, SPIRES_OF_ARAK },
 						},
 					}),
-					p(1590, {	-- Swamplighter Firefly
-						["crs"] = { 88359 },	-- Swamplighter Firefly
-					}),
-					p(1456, {	-- Thicket Skitterer
-						["crs"] = { 85007 },	-- Thicket Skitterer
-					}),
-					p(1593, {	-- Waterfly
-						["crs"] = { 88355 },	-- Waterfly
-					}),
-					p(1582, {	-- Zangar Crawler
-						["crs"] = { 88466 },	-- Zangar Crawler
-						["description"] = "Can be found on the Darktide Roost shoreline and NW Elodor in Shadowmoon, as well as around 73, 34 in Spires of Arak.",
-					}),
+					pet(1590),	-- Swamplighter Firefly (PET!)
+					pet(1456),	-- Thicket Skitterer (PET!)
 				},
 			})),
 		}),

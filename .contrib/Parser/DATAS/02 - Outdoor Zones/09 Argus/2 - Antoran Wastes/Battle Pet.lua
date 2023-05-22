@@ -7,10 +7,10 @@ _.Zones =
 	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			petbattle(filter(BATTLE_PETS, {
-				pet(2122, {	-- Antoran Bile Larva
+				pet(2122, {	-- Antoran Bile Larva (PET!)
 					["coord"] = { 70.2, 47.4, 885 },
 				}),
-				pet(2126, {	-- Antoran Bilescourge
+				pet(2126, {	-- Antoran Bilescourge (PET!)
 					["coord"] = { 74.6, 47.8, 885 },
 				}),
 				ach(12088, {	-- Anomalous Animals of Argus

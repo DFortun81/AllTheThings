@@ -7,40 +7,28 @@ _.Zones =
 	m(PANDARIA, {
 		m(TOWNLONG_STEPPES, {
 			petbattle(filter(BATTLE_PETS, {
-				p(724, {	-- Alpine Foxling
-					["cr"] = 63550,
-				}),
-				p(725, {	-- Alpine Foxling Kit
-					["cr"] = 63551,
-				}),
-				p(732, {	-- Amber Moth
-					["cr"] = 65187,
-				}),
-				p(742, {	-- Clouded Hedgehog
-					["cr"] = 64242,
-				}),
-				p(745, {	-- Crunchy Scorpion
-					["cr"] = 63548,
-				}),
-				p(733, {	-- Grassland Hopper
-					["cr"] = 63549,
-				}),
-				pet(680),	-- Kuitan Mongoose (PET!)
-				p(737, {	-- Mongoose
-					["cr"] = 65190,
-				}),
-				p(739, {	-- Mongoose Pup
-					["cr"] = 63954,
-				}),
-				p(741, {	-- Silent Hedgehog
-					["cr"] = 64804,
-				}),
-				p(729, {	-- Tolai Hare
-					["cr"] = 63557,
-				}),
-				p(740, {	-- Yakrat
-					["cr"] = 63957,
-				}),
+				["sym"] = {{"select","speciesID",
+					724,	-- Alpine Foxling (PET!)
+					725,	-- Alpine Foxling Kit (PET!)
+					742,	-- Clouded Hedgehog (PET!)
+					745,	-- Crunchy Scorpion (PET!)
+					741,	-- Silent Hedgehog (PET!)
+					729,	-- Tolai Hare (PET!)
+				}},
+				["groups"] = {
+					pet(732, {	-- Amber Moth (PET!)
+						["coords"] = {
+							{ 50.0, 80.2, TOWNLONG_STEPPES },
+							{ 66.8, 80.6, TOWNLONG_STEPPES },
+							{ 55.6, 33.6, DREAD_WASTES },
+						},
+					}),
+					pet(733),	-- Grassland Hopper (PET!)
+					pet(680),	-- Kuitan Mongoose (PET!)
+					pet(737),	-- Mongoose (PET!)
+					pet(739),	-- Mongoose Pup (PET!)
+					pet(740),	-- Yakrat (PET!)
+				},
 			})),
 		}),
 	}),

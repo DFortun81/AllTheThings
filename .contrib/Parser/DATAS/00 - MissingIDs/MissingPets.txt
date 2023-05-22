@@ -510,7 +510,6 @@ pet(390),	-- Deer
 pet(394),	-- Sheep
 pet(431),	-- Rattlesnake
 pet(434),	-- Ram
-pet(438),	-- King Snake
 pet(444),	-- PattyMack 2.0 - WildBattlePet Test
 pet(462),	-- Jacob the Test Seagull
 pet(476),	-- Gazelle (Only available during MoP BETA, uncapturable now.)
@@ -518,45 +517,8 @@ pet(486),	-- Mule Deer (Only available during MoP BETA, uncapturable now.)
 pet(510),	-- Rabbot
 pet(705),	-- Amorous Rooster
 pet(715),	-- Wild Silkworm
-pet(716),	-- Amethyst Spiderling
-pet(717),	-- Savory Beetle
-pet(718),	-- Luyu Moth
-pet(722),	-- Mei Li Sparkler
-pet(723),	-- Spiny Terrapin
-pet(724),	-- Alpine Foxling
-pet(725),	-- Alpine Foxling Kit
-pet(726),	-- Plains Monitor
-pet(727),	-- Prairie Mouse
-pet(728),	-- Szechuan Chicken
-pet(729),	-- Tolai Hare
-pet(730),	-- Tolai Hare Pup
-pet(731),	-- Zooey Snake
-pet(732),	-- Amber Moth
-pet(733),	-- Grassland Hopper
-pet(737),	-- Mongoose
-pet(739),	-- Mongoose Pup
-pet(740),	-- Yakrat
-pet(741),	-- Silent Hedgehog
-pet(742),	-- Clouded Hedgehog
-pet(743),	-- Rapana Whelk
-pet(744),	-- Resilient Roach \\ Wasted Roach
-pet(745),	-- Crunchy Scorpion
-pet(746),	-- Emperor Crab
-pet(747),	-- Effervescent Glowfly
-pet(748),	-- Gilded Moth
-pet(749),	-- Golden Civet
-pet(750),	-- Golden Civet Kitten
-pet(751),	-- Dancing Water Skimmer
-pet(752),	-- Yellow-Bellied Bullfrog
-pet(753),	-- Garden Moth
-pet(754),	-- Shrine Fly
-pet(755),	-- Death's Head Cockroach
 pet(800),	-- Muffin
-pet(817),	-- Wild Jade Hatchling
-pet(818),	-- Wild Golden Hatchling
-pet(819),	-- Wild Crimson Hatchling
 pet(820),	-- Singing Cricket
-pet(823),	-- Highlands Skunk
 pet(824),	-- Ms. Croaker
 pet(825),	-- Mr. Growls
 pet(826),	-- Mrs. Skitters
@@ -567,31 +529,7 @@ pet(830),	-- Sir Buckethead
 pet(831),	-- Miss Mystical
 pet(832),	-- Boomy Jr.
 pet(833),	-- Dr. Stinky
-pet(851),	-- Horned Lizard
-5.0.3.15890
-pet(863),	-- Widow Spiderling
-pet(864),	-- Spider
 6.0.1.18179
-pet(1013),	-- Wanderer's Festival Hatchling
-pet(1128),	-- Sumprush Rodent
-pet(1157),	-- Harpy Youngling
-pet(1158),	-- Stunted Yeti
-pet(1159),	-- Lofty Libram
-pet(1160),	-- Arcane Eye
-pet(1161),	-- Infinite Whelpling
-pet(1162),	-- Fluxfire Feline
-pet(1163),	-- Anodized Robo Cub
-pet(1164),	-- Cogblade Raptor
-pet(1166),	-- Kun-Lai Runt
-pet(1167),	-- Emerald Proto-Whelp
-pet(1175),	-- Thundertail Flapper
-pet(1179),	-- Electrified Razortooth
-pet(1181),	-- Elder Python
-pet(1182),	-- Swamp Croaker
-pet(1324),	-- Ashwing Moth
-pet(1325),	-- Flamering Moth
-pet(1326),	-- Skywisp Moth
-pet(1333),	-- Jademist Dancer
 pet(1354),	-- C92 Annihilator
 pet(1410),	-- Mechanical Training Dummy
 7.3.0.24473

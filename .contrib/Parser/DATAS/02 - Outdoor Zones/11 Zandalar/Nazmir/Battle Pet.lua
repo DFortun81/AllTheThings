@@ -44,8 +44,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				},
 			}),
 			pet(2394, {	-- Returned Hatchling (PET!)
-				["coord"] = { 31.8, 58.8, NAZMIR},
 				["description"] = "Found in a small area around coord.",
+				["coord"] = { 31.8, 58.8, NAZMIR},
 			}),
 			pet(2397, {	-- Spectral Raven (PET!)
 				["description"] = "Found on the outskirts of The Necropolis.",

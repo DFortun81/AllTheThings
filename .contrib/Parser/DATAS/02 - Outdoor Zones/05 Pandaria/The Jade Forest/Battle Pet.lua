@@ -13,7 +13,7 @@ _.Zones =
 					568,	-- Silkbead Snail (PET!)
 					723,	-- Spiny Terrapin (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(380),	-- Bucktooth Flapper (PET!)
 					pet(562),	-- Coral Adder (PET!)
 					pet(564),	-- Emerald Turtle (PET!)

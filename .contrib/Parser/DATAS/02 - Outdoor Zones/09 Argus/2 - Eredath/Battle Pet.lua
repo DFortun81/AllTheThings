@@ -7,29 +7,25 @@ _.Zones =
 	m(905, {	-- Argus
 		m(882, {	-- Eredath
 			petbattle(filter(BATTLE_PETS, {
-				p(2131, {	-- Arcane Gorger
-					["cr"] = 128172,
+				pet(2131, {	-- Arcane Gorger (PET!)
 					["coord"] = { 62.6, 51.6, 882 },
 				}),
-				pet(2132, {	-- Felcrazed Wyrm
+				pet(2132, {	-- Felcrazed Wyrm (PET!)
 					["coord"] = { 56.0, 34.6, 882 },
 				}),
-				p(2133, {	-- Pygmy Marsuul
-					["cr"] = 128173,
+				pet(2133, {	-- Pygmy Marsuul (PET!)
 					["coord"] = { 56.8, 64.8, 882 },
 				}),
-				p(2134, {	-- Skyfin Juvenile
-					["cr"] = 128167,
+				pet(2134, {	-- Skyfin Juvenile (PET!)
 					["coord"] = { 43.6, 66.2, 882 },
 				}),
-				pet(2130, {	-- Void Shardling
+				pet(2130, {	-- Void Shardling (PET!)
 					["coord"] = { 44.0, 47.0, 882 },
 				}),
-				pet(2129, {	-- Voidstalker Runt
+				pet(2129, {	-- Voidstalker Runt (PET!)
 					["coord"] = { 43.0, 65.0, 882 },
 				}),
-				p(2128, {	-- Warpstalker Runt
-					["cr"] = 128170,
+				p(2128, {	-- Warpstalker Runt (PET!)
 					["coord"] = { 46.6, 68.6, 882 },
 				}),
 				ach(12088, {	-- Anomalous Animals of Argus

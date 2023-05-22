@@ -72,9 +72,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					631,	-- Emerald Boa (PET!)
 				}},
 				["groups"] = {
-					p(851, {	-- Horned Lizard
-						["crs"] = { 62894 },	-- Horned Lizard
-					}),
+					pet(851),	-- Horned Lizard (PET!)
 					pet(545),	-- Leopard Scorpid (PET!)
 					pet(543),	-- Locust (PET!)
 					pet(542),	-- Mac Frog (PET!)

@@ -68,8 +68,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",
 					}),
 					pet(387),	-- Snake (PET!)
-					p(1158, {	-- Stunted Yeti
-						["crs"] = { 68805 },	-- Stunted Yeti
+					pet(1158, {	-- Stunted Yeti (PET!)
 						["description"] = "Can be found near Feral Scar Yetis south of Dire Maul.",
 					}),
 				},
