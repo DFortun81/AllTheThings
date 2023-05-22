@@ -214,6 +214,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["g"] = {
 					i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 					i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
+					i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
 				},
 			}),
 		})),

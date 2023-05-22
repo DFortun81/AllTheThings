@@ -280,12 +280,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					i(205342),	-- Loamm Niffen Insignia
+				}),
+				n(SPECIAL, {
 					i(206009),	-- Ouroboros Tablet
 					i(206010),	-- Designs of Flesh
 					i(206014, {	-- Ouroboros Tablet
 						["cost"] = {
 							{ "i", 206009, 1 },	-- Ouroboros Tablet
 							{ "i", 206010, 1 },	-- Designs of Flesh
+						},
+					}),
+					i(206011),	-- Designs of Bone
+					i(206015, {	-- Ouroboros Tablet
+						["cost"] = {
+							{ "i", 206014, 1 },	-- Ouroboros Tablet
+							{ "i", 206011, 1 },	-- Designs of Bone
+						},
+					}),
+					i(206012),	-- Designs of Mind
+					i(206016, {	-- Ouroboros Tablet
+						["cost"] = {
+							{ "i", 206015, 1 },	-- Ouroboros Tablet
+							{ "i", 206012, 1 },	-- Designs of Mind
+						},
+					}),
+					i(206013),	-- Designs of Soul
+					i(206017, {	-- Ouroboros Tablet
+						["cost"] = {
+							{ "i", 206016, 1 },	-- Ouroboros Tablet
+							{ "i", 206013, 1 },	-- Designs of Soul
+						},
+					}),
+					i(205151, {	-- Salverun (PET!)
+						["cost"] = {
+							{ "i", 206017, 1 },	-- Ouroboros Tablet
+							{ "i", 206021, 1 },	-- Kob'rok's Luminescent Scale
 						},
 					}),
 				}),

@@ -267,14 +267,9 @@ root(ROOTS.Unsorted, {
 				i(205198),	-- Detailed Titan Key
 				i(205220),	-- Corroded Key
 				i(205234),	-- Soiled Key
-				i(205235),	-- Hound Paw
 				i(205236),	-- Long-Toed Talon
-				i(205237),	-- Pristine Beast Fur
 				i(205238),	-- Rain-soaked Feather
 				i(205239),	-- Fluffy Ear
-				i(205240),	-- Wooden Eagle Statue
-				i(205241),	-- Bone Necklace
-				i(205242),	-- Serrated Stone
 				i(205243),	-- Spare Bow String
 				i(205244),	-- Rain-soaked pelt
 				i(205417),	-- Fungishine
@@ -472,14 +467,6 @@ root(ROOTS.Unsorted, {
 				i(205365),	-- Loamm Niffen Insignia
 				i(205968),	-- Overflowing Loammian Supply Pack
 				i(205985),	-- Loamm Niffen Insignia
-				-- Bartering
-				i(206011),	-- Designs of Bone
-				i(206012),	-- Designs of Mind
-				i(206013),	-- Designs of Soul
-				i(206015),	-- Ouroboros Tablet
-				i(206016),	-- Ouroboros Tablet
-				i(206017),	-- Ouroboros Tablet
-				i(206021),	-- Kob'rok's Luminescent Scale
 				-- Large Rep
 				i(205252),	-- Momento of Rekindled Bonds
 				i(205992),	-- Regurgitated Half-Digested Fish
@@ -562,7 +549,6 @@ root(ROOTS.Unsorted, {
 				i(198138),	-- Lightning-Infused Rock
 				i(202075),	-- Temp Currency
 				i(202202),	-- Revealing Mask
-				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber
 				i(202619),	-- Mender Supplies
 				i(202620),	-- Toxin Antidote

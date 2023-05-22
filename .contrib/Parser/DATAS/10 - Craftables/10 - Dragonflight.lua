@@ -941,9 +941,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			-- Artisan Curios
 			FirstCraft(74310, 400809, ADDED_10_0_7);	-- Glowing Crystal Bookmark
 			-- Infusions of Power
-			--FirstCraft(x, 406418, ADDED_10_1_0);	-- Enchanted Aspect's Shadowflame Crest
+			FirstCraft(75316, 406418, ADDED_10_1_0);	-- Enchanted Aspect's Shadowflame Crest
 			FirstCraft(75256, 406108, ADDED_10_1_0);	-- Enchanted Whelpling's Shadowflame Crest
-			--FirstCraft(x, 406413, ADDED_10_1_0);	-- Enchanted Wyrm's Shadowflame Crest
+			FirstCraft(75315, 406413, ADDED_10_1_0);	-- Enchanted Wyrm's Shadowflame Crest
 			--FirstCraft(x, 405937, ADDED_10_1_0);	-- Titan Training Matrix V
 		})),
 		filter(ILLUSIONS, {
@@ -2529,22 +2529,22 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71717, 375156);	-- Infurious Chainhelm Protector
 			FirstCraft(71688, 375149);	-- Infurious Footwraps of Indemnity
 			FirstCraft(71689, 375148);	-- Infurious Spirit's Hood
-			--FirstCraft(x, 403142, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Chainmail
-			--FirstCraft(x, 403141, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Cowl
-			--FirstCraft(x, 403147, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Cuffs
-			--FirstCraft(x, 403144, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Epaulettes
+			FirstCraft(74816, 403142, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Chainmail
+			FirstCraft(74818, 403141, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Cowl
+			FirstCraft(74822, 403147, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Cuffs
+			FirstCraft(74820, 403144, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Epaulettes
 			FirstCraft(74817, 403145, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Gauntlets
 			FirstCraft(74821, 403148, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Girdle
-			--FirstCraft(x, 403143, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Leggings
-			--FirstCraft(x, 403146, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Treads
-			--FirstCraft(x, 403140, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Belt
-			--FirstCraft(x, 403138, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Boots
-			--FirstCraft(x, 403134, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Chestpiece
-			--FirstCraft(x, 403137, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Gloves
-			--FirstCraft(x, 403133, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Mask
-			--FirstCraft(x, 403136, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Shoulderpads
-			--FirstCraft(x, 403135, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Trousers
-			--FirstCraft(x, 403139, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Wristwraps
+			FirstCraft(74819, 403143, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Leggings
+			FirstCraft(74815, 403146, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Treads
+			FirstCraft(74813, 403140, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Belt
+			FirstCraft(74807, 403138, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Boots
+			FirstCraft(74808, 403134, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Chestpiece
+			FirstCraft(74809, 403137, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Gloves
+			FirstCraft(74810, 403133, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Mask
+			FirstCraft(74812, 403136, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Shoulderpads
+			FirstCraft(74811, 403135, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Trousers
+			FirstCraft(74814, 403139, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Wristwraps
 			-- Decayed Patter
 			FirstCraft(71715, 375151);	-- Acidic Hailstone Treads
 			FirstCraft(71686, 375142);	-- Slimy Expulsion Boots

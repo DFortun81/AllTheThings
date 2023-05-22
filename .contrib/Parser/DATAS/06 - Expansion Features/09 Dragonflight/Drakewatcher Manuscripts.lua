@@ -855,6 +855,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197611),	-- Windborne Velocidrake: Black Scales (DM!)
 			i(197612),	-- Windborne Velocidrake: Blue Scales (DM!)
 			i(197613),	-- Windborne Velocidrake: Bronze Scales (DM!)
+			i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
 			i(197624),	-- Windborne Velocidrake: Club Tail (DM!)
 			i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
 			i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
@@ -895,7 +896,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
 			i(197588),	-- Windborne Velocidrake: Armor (DM!)
-			i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
 			i(197621),	-- Windborne Velocidrake: Exposed Finned Tail (DM!)
 			i(197615),	-- Windborne Velocidrake: Teal Scales (DM!)
 			i(197616),	-- Windborne Velocidrake: White Scales (DM!)

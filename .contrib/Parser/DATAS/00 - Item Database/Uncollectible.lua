@@ -659,6 +659,7 @@ i(202362);	-- Arcane Focus
 i(203463);	-- Atrenosh's Journal
 i(202181);	-- Best-root Tuber
 i(202185);	-- Chillwrought Worm Meat
+i(202394);	-- Fresh Plains Meat
 i(203689);	-- Horn Signet of Tetsos
 i(203692);	-- Horn Signet of Arrosh
 i(203697);	-- Horn Signet of Ekrati
@@ -667,9 +668,14 @@ i(204093);	-- Lunker Morsel
 i(202713);	-- Scattered Supplies
 i(198834);	-- Scribbled Bark Chunks
 -- Stupid Stuff
+i(205241);	-- Bone Necklace
 i(204442);	-- Clump of Tar
+i(205235);	-- Hound Paw
+i(205237);	-- Pristine Beast Fur
+i(205242);	-- Serrated Stone
 i(204308);	-- Sturdy Bone
 i(204873);	-- Tied-up Envelope
+i(205240);	-- Wooden Eagle Statue
 --
 i(204814);	-- Aged Journal
 i(204815);	-- Ambiguous Compendium
