@@ -1691,70 +1691,83 @@ n(143050, 2392);	-- Young Sand Sifter
 -- SPECIAL --
 i(153541, 2143);	-- Tottle
 -- TRAINER --
-n(0, 2145);	-- Bloodfeaster Larva
-n(0, 2164);	-- Colonel Shucks
-n(0, 2193);	-- Shelly
-n(0, 2194);	-- Sheldon
-n(0, 2195);	-- Shelby
-n(0, 2200);	-- Bristlespine
-n(0, 2203);	-- "Repaired" Portable Fire Starter
-n(0, 2204);	-- "Fixed" Remote Control Rocket Chicken
-n(0, 2205);	-- "Upgraded" Nightmare Weaver
-n(0, 2206);	-- Bybee
-n(0, 2208);	-- Jennings
-n(0, 2209);	-- Atherton
-n(0, 2210);	-- Azerite Slime
-n(0, 2211);	-- Azerite Geode
-n(0, 2212);	-- Azerite Elemental
-n(0, 2213);	-- Bumble B.
-n(0, 2214);	-- Fris B.
-n(0, 2215);	-- Busy B.
-n(0, 2220);	-- Dead Deckhand Leonard
-n(0, 2221);	-- Corrupted Slime
-n(0, 2222);	-- Reanimated Kraken Tentacle
-n(0, 2223);	-- Lesser Charged Gale
-n(0, 2225);	-- Lesser Twisted Current
-n(0, 2226);	-- Mind Warper
-n(0, 2227);	-- Maws Jr.
-n(0, 2228);	-- Bruce
-n(0, 2229);	-- Chum
-n(0, 2230);	-- Chitara
-n(0, 2231);	-- Old Blue
-n(0, 2232);	-- Murray
-n(0, 2233);	-- Fungus
-n(0, 2330);	-- Timbo
-n(0, 2332);	-- Pokey
-n(0, 2333);	-- Burly Jr.
-n(0, 2334);	-- Lilly
-n(0, 2335);	-- Molaze
-n(0, 2336);	-- Ticker
-n(0, 2337);	-- Bloodtusk
-n(0, 2338);	-- Delta
-n(0, 2339);	-- Scars
-n(0, 2340);	-- Little Blue
-n(0, 2341);	-- Feathers
-n(0, 2343);	-- Splat
-n(0, 2344);	-- Brite
-n(0, 2345);	-- Buzzbeak
-n(0, 2346);	-- Tikka
-n(0, 2347);	-- Milo
-n(0, 2353);	-- Squeezer
-n(0, 2354);	-- Squirt
-n(0, 2355);	-- Clubber
-n(0, 2356);	-- Spineleaf
-n(0, 2357);	-- Rawly
-n(0, 2358);	-- Stinger
-n(0, 2359);	-- Beets
-n(0, 2360);	-- Lazy
-n(0, 2361);	-- Spokes
-n(0, 2363);	-- Skeeto
-n(0, 2364);	-- Eighty Eight
-n(0, 2365);	-- Turbo
-n(0, 2366);	-- Whiplash
-n(0, 2367);	-- Jammer
-n(0, 2368);	-- Scales
-n(0, 2370);	-- Breaker
-n(0, 2371);	-- Stickers
+i(0, 2204);			-- "Fixed" Remote Control Rocket Chicken
+i(0, 2203);			-- "Repaired" Portable Fire Starter
+i(0, 2205);			-- "Upgraded" Nightmare Weaver
+i(0, 2209);			-- Atherton
+i(0, 2212);			-- Azerite Elemental
+i(0, 2211);			-- Azerite Geode
+i(0, 2210);			-- Azerite Slime
+i(0, 2349);			-- Baa'l
+i(0, 2350);			-- Baa'l
+i(0, 2359);			-- Beets
+i(0, 2145);			-- Bloodfeaster Larva
+i(0, 2337);			-- Bloodtusk
+i(0, 2370);			-- Breaker
+i(0, 2200);			-- Bristlespine
+i(0, 2344);			-- Brite
+i(0, 2228);			-- Bruce
+i(0, 2213);			-- Bumble B.
+i(0, 2333);			-- Burly Jr.
+i(0, 2215);			-- Busy B.
+i(0, 2345);			-- Buzzbeak
+i(0, 2206);			-- Bybee
+i(0, 2230);			-- Chitara
+i(0, 2229);			-- Chum
+i(0, 2355);			-- Clubber
+i(0, 2164);			-- Colonel Shucks
+i(0, 2221);			-- Corrupted Slime
+i(0, 2220);			-- Dead Deckhand Leonard
+i(0, 2338);			-- Delta
+i(0, 2364);			-- Eighty Eight
+i(0, 2341);			-- Feathers
+i(0, 2214);			-- Fris B.
+i(0, 2233);			-- Fungus
+i(0, 2367);			-- Jammer
+i(0, 2208);			-- Jennings
+i(0, 2360);			-- Lazy
+i(0, 2223);			-- Lesser Charged Gale
+i(0, 2225);			-- Lesser Twisted Current
+i(0, 2334);			-- Lilly
+i(0, 2340);			-- Little Blue
+i(0, 2227);			-- Maws Jr.
+i(0, 2347);			-- Milo
+i(0, 2226);			-- Mind Warper
+i(0, 2335);			-- Molaze
+i(0, 2232);			-- Murray
+i(0, 2231);			-- Old Blue
+i(0, 2332);			-- Pokey
+i(0, 2357);			-- Rawly
+i(0, 2222);			-- Reanimated Kraken Tentacle
+i(0, 2368);			-- Scales
+i(0, 2339);			-- Scars
+i(0, 2195);			-- Shelby
+i(0, 2194);			-- Sheldon
+i(0, 2193);			-- Shelly
+i(0, 2363);			-- Skeeto
+i(0, 2356);			-- Spineleaf
+i(0, 2343);			-- Splat
+i(0, 2361);			-- Spokes
+i(0, 2353);			-- Squeezer
+i(0, 2354);			-- Squirt
+i(0, 2371);			-- Stickers
+i(0, 2358);			-- Stinger
+i(0, 2336);			-- Ticker
+i(0, 2346);			-- Tikka
+i(0, 2330);			-- Timbo
+i(0, 2365);			-- Turbo
+i(0, 2366);			-- Whiplash
+-- NYI --
+i(0, 2076);			-- SpeedyNumberIII
+i(162686, 2144);	-- REUSE \\ Demon Goat
+i(163553, 0);		-- Digitized Assistant
+i(163554, 0);		-- Finicky Gauntlet
+i(163557, 0);		-- Gigan Tarantula
+i(154703, 0);		-- Hot Air Baloon
+i(163556, 0);		-- Mechanized Gulper
+i(163559, 0);		-- Queen Cobra
+i(152879, 0);		-- REUSE ME
+i(152880, 0);		-- REUSE ME
 
 -----------------
 -- PATCH 8.1.0 --
@@ -1773,7 +1786,6 @@ i(166345, 2538);	-- Dasher
 i(166451, 2546);	-- Detective Ray
 i(166453, 2548);	-- Everburning Treant
 i(166493, 2557);	-- Firesting Buzzer
-i(166358, 2541);	-- Proper Parrot (Removed?)
 i(166448, 2545);	-- Gust of Cyclarus
 i(166452, 2547);	-- Hydrath Droplet
 i(166487, 2552);	-- Leatherwing Screecher
@@ -1784,7 +1796,6 @@ i(165849, 2530);	-- Mechantula
 i(165894, 2534);	-- Mini Spider Tank
 i(166489, 2554);	-- Needleback Pup
 i(166528, 2563);	-- Nightwreathed Watcher
-i(166791, 2405);	-- Corlain Falcon (Horde)
 i(166715, 2564);	-- Rebuilt Gorilla Bot
 i(166723, 2565);	-- Rebuilt Mechanical Spider
 i(165722, 2525);	-- Redridge Tarantula
@@ -1804,25 +1815,30 @@ i(166455, 2550);	-- Zur'aj the Depleted
 -- NPC --
 n(148517, 2537);	-- Baby Zandalari Raptor
 -- TRAINER --
-n(0, 2485);	-- Leper Rat
-n(0, 2486);	-- Cockroach
-n(0, 2487);	-- Automated Spider Tank
-n(0, 2488);	-- Pulverizer Bot Mk 6001
-n(0, 2489);	-- Autonomous Omni Chopper
-n(0, 2490);	-- Automated Drilling Machine
-n(0, 2492);	-- Gnomeregan Guard Wolf
-n(0, 2493);	-- Gnomeregan Guard Tiger
-n(0, 2494);	-- Gnomeregan Guard Mechanostrider
-n(0, 2495);	-- Bloated Leper Rat
-n(0, 2496);	-- Gnomish Rocket Chicken
-n(0, 2497);	-- Ultra Safe Napalm Carrier
-n(0, 2498);	-- Freeze Ray Robot Prototype
-n(0, 2499);	-- Sludge Disposal Unit
-n(0, 2500);	-- Accelerated Defrosting Unit
-n(0, 2501);	-- Prototype Annoy-O-Tron
-n(0, 2502);	-- Living Napalm
-n(0, 2503);	-- Living Sludge
-n(0, 2504);	-- Living Permafrost
+i(0, 2500);			-- Accelerated Defrosting Unit
+i(0, 2490);			-- Automated Drilling Machine
+i(0, 2487);			-- Automated Spider Tank
+i(0, 2489);			-- Autonomous Omni Chopper
+i(0, 2495);			-- Bloated Leper Rat
+i(0, 2486);			-- Cockroach
+i(0, 2498);			-- Freeze Ray Robot Prototype
+i(0, 2494);			-- Gnomeregan Guard Mechanostrider
+i(0, 2493);			-- Gnomeregan Guard Tiger
+i(0, 2492);			-- Gnomeregan Guard Wolf
+i(0, 2496);			-- Gnomish Rocket Chicken
+i(0, 2485);			-- Leper Rat
+i(0, 2502);			-- Living Napalm
+i(0, 2504);			-- Living Permafrost
+i(0, 2503);			-- Living Sludge
+i(0, 2501);			-- Prototype Annoy-O-Tron
+i(0, 2488);			-- Pulverizer Bot Mk 6001
+i(0, 2499);			-- Sludge Disposal Unit
+i(0, 2497);			-- Ultra Safe Napalm Carrier
+-- NYI --
+i(0, 2481);			-- Unknown
+i(166358, 2541);	-- Proper Parrot
+i(164629, 2480);	-- Test Pet
+i(166791, 0);		-- Corlain Falcon
 
 -----------------
 -- PATCH 8.1.5 --
@@ -1848,6 +1864,8 @@ i(167052, 2584);	-- Spirit of the Spring
 i(167047, 2579);	-- Stoneclaw
 i(167048, 2580);	-- Wayward Spirit
 i(164970, 2482);	-- Wolf Balloon
+-- NYI --
+i(154902, 2146);	-- Perculia's Peculiar Parrot
 
 -----------------
 -- PATCH 8.2.0 --
@@ -1944,55 +1962,57 @@ n(154796, 2675);	-- Clanking Scrapsorter
 n(154798, 2676);	-- Malfunctioning Microbot
 n(154803, 2677);	-- Twilight Whelpling
 n(154814, 2678);	-- Abyssal Slitherling
-n(155267, 2751);	-- Risen Guard
-n(155268, 2752);	-- Risen Noble
-n(155966, 2768);	-- Smokey
-n(155967, 2769);	-- Pyro
-n(155968, 2770);	-- Infectus
-n(155971, 2771);	-- Plagued Mailemental
-n(155972, 2772);	-- Soul Collector
-n(155974, 2774);	-- Lefty
 -- TRAINER --
-n(0, 2592);	-- Blackmane
-n(0, 2593);	-- Plague Roach
-n(0, 2594);	-- Plague Rat
-n(0, 2595);	-- Diseased Rat
-n(0, 2596);	-- Lost Soul
-n(0, 2597);	-- Crypt Fiend
-n(0, 2598);	-- Rotting Scavenger
-n(0, 2599);	-- Wailing Haunt
-n(0, 2600);	-- Wandering Phantasm
-n(0, 2601);	-- Gargy
-n(0, 2602);	-- Huncher
-n(0, 2603);	-- Tommy the Cruel
-n(0, 2605);	-- Risen Villager
-n(0, 2606);	-- Plague Whelp
-n(0, 2607);	-- Zasz the Tiny
-n(0, 2608);	-- Sludge Belcher
-n(0, 2609);	-- Belchling
-n(0, 2611);	-- Tormented Spirit
-n(0, 2612);	-- Liz the Tormentor
-n(0, 2613);	-- Nefarious Terry
-n(0, 2723);	-- Prince Wiggletail
-n(0, 2724);	-- Chomp
-n(0, 2725);	-- Silence
-n(0, 2726);	-- Shadowspike Lurker
-n(0, 2727);	-- Pearlhusk Crawler
-n(0, 2728);	-- Elderspawn of Nalaada
-n(0, 2729);	-- Ravenous Scalespawn
-n(0, 2730);	-- Mindshackle
-n(0, 2731);	-- Kelpstone
-n(0, 2732);	-- Voltgorger
-n(0, 2733);	-- Frenzied Knifefang
-n(0, 2734);	-- Giant Opaline Conch
-n(0, 2735);	-- Gnomefeaster
-n(0, 2736);	-- Sputtertube
-n(0, 2737);	-- Goldenbot XD
-n(0, 2738);	-- Creakclank
-n(0, 2739);	-- CK-9 Micro-Oppression Unit
-n(0, 2740);	-- Unit 35
-n(0, 2741);	-- Unit 6
-n(0, 2742);	-- Unit 17
+i(0, 2609);			-- Belchling
+i(0, 2592);			-- Blackmane
+i(0, 2724);			-- Chomp
+i(0, 2739);			-- CK-9 Micro-Oppression Unit
+i(0, 2738);			-- Creakclank
+i(0, 2597);			-- Crypt Fiend
+i(0, 2595);			-- Diseased Rat
+i(0, 2728);			-- Elderspawn of Nalaada
+i(0, 2733);			-- Frenzied Knifefang
+i(0, 2601);			-- Gargy
+i(0, 2734);			-- Giant Opaline Conch
+i(0, 2735);			-- Gnomefeaster
+i(0, 2737);			-- Goldenbot XD
+i(0, 2602);			-- Huncher
+i(0, 2770);			-- Infectus
+i(0, 2731);			-- Kelpstone
+i(0, 2774);			-- Lefty
+i(0, 2612);			-- Liz the Tormentor
+i(0, 2596);			-- Lost Soul
+i(0, 2730);			-- Mindshackle
+i(0, 2613);			-- Nefarious Terry
+i(0, 2727);			-- Pearlhusk Crawler
+i(0, 2594);			-- Plague Rat
+i(0, 2593);			-- Plague Roach
+i(0, 2606);			-- Plague Whelp
+i(0, 2771);			-- Plagued Mailemental
+i(0, 2723);			-- Prince Wiggletail
+i(0, 2769);			-- Pyro
+i(0, 2729);			-- Ravenous Scalespawn
+i(0, 2751);			-- Risen Guard
+i(0, 2752);			-- Risen Noble
+i(0, 2605);			-- Risen Villager
+i(0, 2598);			-- Rotting Scavenger
+i(0, 2726);			-- Shadowspike Lurker
+i(0, 2725);			-- Silence
+i(0, 2608);			-- Sludge Belcher
+i(0, 2768);			-- Smokey
+i(0, 2772);			-- Soul Collector
+i(0, 2736);			-- Sputtertube
+i(0, 2603);			-- Tommy the Cruel
+i(0, 2611);			-- Tormented Spirit
+i(0, 2741);			-- Unit 6
+i(0, 2742);			-- Unit 17
+i(0, 2740);			-- Unit 35
+i(0, 2732);			-- Voltgorger
+i(0, 2599);			-- Wailing Haunt
+i(0, 2600);			-- Wandering Phantasm
+i(0, 2607);			-- Zasz the Tiny
+-- NYI --
+i(169195, 0);		-- Golden Cricket
 
 -----------------
 -- PATCH 8.2.5 --
@@ -2048,41 +2068,41 @@ n(162502, 2864);	-- Void-Scarred Locust
 n(162518, 2865);	-- Voidskimmer
 -- SPECIAL --
 i(0, 2623);			-- Dottie
--- NYI --
-i(0, 2871);			-- Pet Training Dummy
 -- TRAINER --
 i(0, 2799);			-- Alpha
+i(0, 2856);			-- Aqir Sandcrawler
+i(0, 2860);			-- Baruk Stone Defender
 i(0, 2800);			-- Beta
+i(0, 2857);			-- Blotto
 i(0, 2801);			-- Bomber
-i(0, 2802);			-- Logic
-i(0, 2803);			-- Math
-i(0, 2804);			-- Frill
-i(0, 2805);			-- Ruddy
-i(0, 2806);			-- Wanderer
+i(0, 2822);			-- Char
 i(0, 2807);			-- Crushface
 i(0, 2808);			-- Fozling
-i(0, 2809);			-- Tremors
-i(0, 2810);			-- Presto
+i(0, 2804);			-- Frill
 i(0, 2811);			-- Fury
-i(0, 2812);			-- Glitzy
 i(0, 2814);			-- Gigacharged Mayhem Maker
-i(0, 2815);			-- Rampage
-i(0, 2816);			-- Liz
-i(0, 2817);			-- Ralf
-i(0, 2818);			-- Splint
-i(0, 2819);			-- Ninn Jah
-i(0, 2820);			-- Shred
-i(0, 2821);			-- Wilbur
-i(0, 2822);			-- Char
-i(0, 2823);			-- Tempton
-i(0, 2854);			-- Retinus the Seeker
-i(0, 2855);			-- Whispers
-i(0, 2856);			-- Aqir Sandcrawler
-i(0, 2857);			-- Blotto
+i(0, 2812);			-- Glitzy
 i(0, 2858);			-- K'tiny the Mad
+i(0, 2816);			-- Liz
+i(0, 2802);			-- Logic
+i(0, 2803);			-- Math
+i(0, 2819);			-- Ninn Jah
+i(0, 2810);			-- Presto
+i(0, 2817);			-- Ralf
+i(0, 2815);			-- Rampage
+i(0, 2854);			-- Retinus the Seeker
+i(0, 2805);			-- Ruddy
+i(0, 2820);			-- Shred
+i(0, 2818);			-- Splint
+i(0, 2823);			-- Tempton
 i(0, 2859);			-- Tormentius
-i(0, 2860);			-- Baruk Stone Defender
+i(0, 2809);			-- Tremors
 i(0, 2861);			-- Vil'thik Hatchling
+i(0, 2806);			-- Wanderer
+i(0, 2855);			-- Whispers
+i(0, 2821);			-- Wilbur
+-- NYI --
+i(0, 2871);			-- Pet Training Dummy
 
 -----------------
 -- PATCH 9.0.1 --
@@ -2214,6 +2234,46 @@ n(173556, 3015);	-- Withering Creeper
 -- SPECIAL --
 i(0, 2779);			-- Anima Wyrmling
 i(0, 3047);			-- Spinebug
+-- TRAINER --
+i(0, 2989);			-- Ash
+i(0, 2975);			-- Battery
+i(0, 2980);			-- Bloog
+i(0, 2981);			-- Bone Crusher
+i(0, 2992);			-- Boneclaw
+i(0, 3005);			-- Brite
+i(0, 2982);			-- Chipper
+i(0, 3002);			-- Duster
+i(0, 2990);			-- Fang
+i(0, 2887);			-- Flipper
+i(0, 2974);			-- Glitterwing
+i(0, 2971);			-- Golden Grazer
+i(0, 2978);			-- Gorgemouth
+i(0, 2968);			-- Jawbone
+i(0, 2983);			-- Leftovers
+i(0, 2984);			-- Leftovers
+i(0, 2985);			-- Leftovers
+i(0, 3004);			-- Needlenose
+i(0, 2998);			-- Nightfang
+i(0, 2970);			-- Plains Peachick
+i(0, 2977);			-- Pounder
+i(0, 2999);			-- Rascal
+i(0, 2994);			-- Rocko
+i(0, 3001);			-- Runehoof
+i(0, 2979);			-- Scorch
+i(0, 2972);			-- Shelby
+i(0, 2976);			-- Slasher
+i(0, 3000);			-- Slugger
+i(0, 2886);			-- Snipper
+i(0, 2993);			-- Spindler
+i(0, 3003);			-- Star Tail
+i(0, 2987);			-- Stinkdust
+i(0, 2969);			-- Sunset Glimmerfly
+i(0, 2991);			-- Swarm
+i(0, 2973);			-- Tinyhoof
+i(0, 2988);			-- Trailblazer
+i(0, 2885);			-- Whipper
+i(0, 2986);			-- Whirly
+i(0, 2996);			-- Wretch
 -- NYI --
 i(0, 2951);			-- PH Slime
 i(180838, 0);		-- Blue Etherwyrm
@@ -2229,46 +2289,6 @@ i(180813, 0);		-- Silver Teroclaw
 i(183853, 0);		-- Sinfall Screecher
 i(184034, 0);		-- Stony's Infused Ruby
 i(183714, 0);		-- Swamp Reed
--- TRAINER --
-i(0, 2885);			-- Whipper
-i(0, 2886);			-- Snipper
-i(0, 2887);			-- Flipper
-i(0, 2968);			-- Jawbone
-i(0, 2969);			-- Sunset Glimmerfly
-i(0, 2970);			-- Plains Peachick
-i(0, 2971);			-- Golden Grazer
-i(0, 2972);			-- Shelby
-i(0, 2973);			-- Tinyhoof
-i(0, 2974);			-- Glitterwing
-i(0, 2975);			-- Battery
-i(0, 2976);			-- Slasher
-i(0, 2977);			-- Pounder
-i(0, 2978);			-- Gorgemouth
-i(0, 2979);			-- Scorch
-i(0, 2980);			-- Bloog
-i(0, 2981);			-- Bone Crusher
-i(0, 2982);			-- Chipper
-i(0, 2983);			-- Leftovers
-i(0, 2984);			-- Leftovers
-i(0, 2985);			-- Leftovers
-i(0, 2986);			-- Whirly
-i(0, 2987);			-- Stinkdust
-i(0, 2988);			-- Trailblazer
-i(0, 2989);			-- Ash
-i(0, 2990);			-- Fang
-i(0, 2991);			-- Swarm
-i(0, 2992);			-- Boneclaw
-i(0, 2993);			-- Spindler
-i(0, 2994);			-- Rocko
-i(0, 2996);			-- Wretch
-i(0, 2998);			-- Nightfang
-i(0, 2999);			-- Rascal
-i(0, 3000);			-- Slugger
-i(0, 3001);			-- Runehoof
-i(0, 3002);			-- Duster
-i(0, 3003);			-- Star Tail
-i(0, 3004);			-- Needlenose
-i(0, 3005);			-- Brite
 
 -----------------
 -- PATCH 9.0.2 --
@@ -2291,19 +2311,19 @@ n(176021, 3082);	-- Starmoth
 n(176019, 3080);	-- Verdant Kit
 -- SPECIAL --
 i(0, 3053);			-- Moon-Touched Netherwhelp
--- NYI --
-i(0, 184461);		-- Clutch
 -- TRAINER --
-i(0, 3068);			-- Crystalsnap
 i(0, 3070);			-- Briarpaw
 i(0, 3071);			-- Chittermaw
+i(0, 3068);			-- Crystalsnap
+i(0, 3075);			-- Digallo
+i(0, 3076);			-- Gelatinous
+i(0, 3078);			-- Glurp
+i(0, 3077);			-- Kostos
 i(0, 3072);			-- Mistwing
 i(0, 3073);			-- Sewer Creeper
 i(0, 3074);			-- The Countess
-i(0, 3075);			-- Digallo
-i(0, 3076);			-- Gelatinous
-i(0, 3077);			-- Kostos
-i(0, 3078);			-- Glurp
+-- NYI --
+i(0, 184461);		-- Clutch
 
 -----------------
 -- PATCH 9.0.5 --
@@ -2362,15 +2382,15 @@ n(179165, 3109);	-- Silver Purrkin
 n(179227, 3124);	-- Vile Deathroach
 n(179329, 3141);	-- Wild Corpsefly
 n(179250, 3135);	-- Young Garnetgullet
--- NYI --
-i(0, 186545);	-- REUSE
 -- TRAINER --
-i(0, 3089);			-- RT-3 M15
-i(0, 3090);			-- Squibbles
 i(0, 3091);			-- Churro
 i(0, 3155);			-- Gurgl
 i(0, 3156);			-- Hornswoggl
 i(0, 3158);			-- Missing1
+i(0, 3089);			-- RT-3 M15
+i(0, 3090);			-- Squibbles
+-- NYI --
+i(0, 186545);	-- REUSE
 
 -----------------
 -- PATCH 9.1.5 --

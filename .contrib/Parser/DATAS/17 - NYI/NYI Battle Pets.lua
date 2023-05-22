@@ -9,31 +9,18 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			p(1751),
 		})),
 		i(130145),	-- Unknown
-		i(154902),	-- Perculia's Peculiar Parrot
 		i(21168),	-- Baby Shark
 		i(39148),	-- Baby Coralshell Turtle
 		i(66070),	-- Lizzy
 		i(66075),	-- Bubbles
 		i(11903),	-- Cat Carrier (Corrupted Kitten)
 		i(109602),	-- Echo of Murmur (temp item)
-		i(169195),	-- Golden Cricket
 		i(115469),	-- Pet template
 		i(67417),	-- DND lil dw placeholder
-		i(163559),	-- Queen Cobra. Old Magni Rep Rewards, they added it via a different item
-		i(163557),	-- Gigan Tarantula. Old Magni Rep Rewards, they added it via a different item
-		i(163556),	-- Mechanized Gulper. Old Magni Rep Rewards, they added it via a different item
-		i(152879),	-- Reuuse me
-		i(152880),	-- Reuuse me
 		i(131737),	-- Wyrmy Tunkins
-		i(154703),	-- Hot Air Baloon
 		i(136906),	-- Brown Piglet
 		i(115282),	-- Draenei Micro Defender (different version is used)
 		i(118596),	-- Sassy Sproutling
-		i(162686),	-- Demon Goat (unused Baa'l ID)
-		i(163553),	-- Digitized Assistant (used to be a pet)
-		i(163554),	-- Finicky Gauntlet (used to be a pet)
-		i(164629),	-- Test Pet
-		i(166791),	-- Corlain Falcon (PET! (unsued version)
 		i(113569),	-- Autumnal Sproutling (unused ver)
 		i(91031),	-- Darkmoon Glowfly (PET!)
 		i(119147),	-- Nether Ray Fry (unsed Version)
@@ -77,15 +64,302 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(136902),	-- Toxic Whelpling (wild pet catchable, item was never used)
 		i(136921),	-- Trigger (132519 is crafted from engineering, doesn't appear this version was ever used)
 		i(67600),	-- Lil' Alexstrasza (Never added in Game)
-		p(2341),		-- Feathers (possibly tied to a quest?)
-		i(166358),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform. A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
 		-- #if BEFORE 7.0.3
 		i(23712),	-- White Tiger Cub -- later reused for Ash'ana.
 		-- #endif
+		tier(BFA_TIER, {
+			-- 8.0.1
+			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+				-- Trainer Pets --
+				pet(2204),	-- "Fixed" Remote Control Rocket Chicken (PET!)
+				pet(2203),	-- "Repaired" Portable Fire Starter (PET!)
+				pet(2205),	-- "Upgraded" Nightmare Weaver (PET!)
+				pet(2209),	-- Atherton (PET!)
+				pet(2212),	-- Azerite Elemental (PET!)
+				pet(2211),	-- Azerite Geode (PET!)
+				pet(2210),	-- Azerite Slime (PET!)
+				pet(2349),	-- Baa'l (PET!)
+				pet(2350),	-- Baa'l (PET!)
+				pet(2359),	-- Beets (PET!)
+				pet(2145),	-- Bloodfeaster Larva (PET!)
+				pet(2337),	-- Bloodtusk (PET!)
+				pet(2370),	-- Breaker (PET!)
+				pet(2200),	-- Bristlespine (PET!)
+				pet(2344),	-- Brite (PET!)
+				pet(2228),	-- Bruce (PET!)
+				pet(2213),	-- Bumble B. (PET!)
+				pet(2333),	-- Burly Jr. (PET!)
+				pet(2215),	-- Busy B. (PET!)
+				pet(2345),	-- Buzzbeak (PET!)
+				pet(2206),	-- Bybee (PET!)
+				pet(2230),	-- Chitara (PET!)
+				pet(2229),	-- Chum (PET!)
+				pet(2355),	-- Clubber (PET!)
+				pet(2164),	-- Colonel Shucks (PET!)
+				pet(2221),	-- Corrupted Slime (PET!)
+				pet(2220),	-- Dead Deckhand Leonard (PET!)
+				pet(2338),	-- Delta (PET!)
+				pet(2364),	-- Eighty Eight (PET!)
+				pet(2341),	-- Feathers (PET!)
+				pet(2214),	-- Fris B. (PET!)
+				pet(2233),	-- Fungus (PET!)
+				pet(2367),	-- Jammer (PET!)
+				pet(2208),	-- Jennings (PET!)
+				pet(2360),	-- Lazy (PET!)
+				pet(2223),	-- Lesser Charged Gale (PET!)
+				pet(2225),	-- Lesser Twisted Current (PET!)
+				pet(2334),	-- Lilly (PET!)
+				pet(2340),	-- Little Blue (PET!)
+				pet(2227),	-- Maws Jr. (PET!)
+				pet(2347),	-- Milo (PET!)
+				pet(2226),	-- Mind Warper (PET!)
+				pet(2335),	-- Molaze (PET!)
+				pet(2232),	-- Murray (PET!)
+				pet(2231),	-- Old Blue (PET!)
+				pet(2332),	-- Pokey (PET!)
+				pet(2357),	-- Rawly (PET!)
+				pet(2222),	-- Reanimated Kraken Tentacle (PET!)
+				pet(2368),	-- Scales (PET!)
+				pet(2339),	-- Scars (PET!)
+				pet(2195),	-- Shelby (PET!)
+				pet(2194),	-- Sheldon (PET!)
+				pet(2193),	-- Shelly (PET!)
+				pet(2363),	-- Skeeto (PET!)
+				pet(2356),	-- Spineleaf (PET!)
+				pet(2343),	-- Splat (PET!)
+				pet(2361),	-- Spokes (PET!)
+				pet(2353),	-- Squeezer (PET!)
+				pet(2354),	-- Squirt (PET!)
+				pet(2371),	-- Stickers (PET!)
+				pet(2358),	-- Stinger (PET!)
+				pet(2336),	-- Ticker (PET!)
+				pet(2346),	-- Tikka (PET!)
+				pet(2330),	-- Timbo (PET!)
+				pet(2365),	-- Turbo (PET!)
+				pet(2366),	-- Whiplash (PET!)
+				-- Only SpeciesID
+				pet(2076, {	-- SpeedyNumberIII (PET!)
+					["modelID"] = 304,
+				}),
+				-- With SpeciesID Attached
+				i(162686, {	-- REUSE \\ Demon Goat (PET!)
+					["modelID"] = 80456,
+				}),
+				-- Without SpeciesID Attached
+				i(163553, {	-- Digitized Assistant (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(163554, {	-- Finicky Gauntlet (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(163557, {	-- Gigan Tarantula (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(154703, {	-- Hot Air Baloon (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(163556, {	-- Mechanized Gulper (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(163559, {	-- Queen Cobra (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(152879, {	-- REUSE ME (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(152880, {	-- REUSE ME (PET!)
+					-- ["modelID"] = ,
+				}),
+			})),
+
+			-- 8.1.0
+			tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 8.1.0" } }, {
+				-- Trainer Pets --
+				pet(2500),	-- Accelerated Defrosting Unit (PET!)
+				pet(2490),	-- Automated Drilling Machine (PET!)
+				pet(2487),	-- Automated Spider Tank (PET!)
+				pet(2489),	-- Autonomous Omni Chopper (PET!)
+				pet(2495),	-- Bloated Leper Rat (PET!)
+				pet(2486),	-- Cockroach (PET!)
+				pet(2498),	-- Freeze Ray Robot Prototype (PET!)
+				pet(2494),	-- Gnomeregan Guard Mechanostrider (PET!)
+				pet(2493),	-- Gnomeregan Guard Tiger (PET!)
+				pet(2492),	-- Gnomeregan Guard Wolf (PET!)
+				pet(2496),	-- Gnomish Rocket Chicken (PET!)
+				pet(2485),	-- Leper Rat (PET!)
+				pet(2502),	-- Living Napalm (PET!)
+				pet(2504),	-- Living Permafrost (PET!)
+				pet(2503),	-- Living Sludge (PET!)
+				pet(2501),	-- Prototype Annoy-O-Tron (PET!)
+				pet(2488),	-- Pulverizer Bot Mk 6001 (PET!)
+				pet(2499),	-- Sludge Disposal Unit (PET!)
+				pet(2497),	-- Ultra Safe Napalm Carrier (PET!)
+				-- Only SpeciesID
+				pet(2481, {	-- Unknown (PET!)
+					-- ["modelID"] = ,
+				}),
+				-- With SpeciesID Attached
+				i(166358, {	-- Proper Parrot (PET!)
+					["modelID"] = 80413,
+				}),
+				i(164629, {	-- Test Pet (PET!)
+					["modelID"] = 38484,
+				}),
+				-- Without SpeciesID Attached
+				i(166791),	-- Corlain Falcon (PET!) [Item was never used]
+			})),
+
+			-- 8.1.5
+			tier(BFA_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 8.1.5" } }, {
+				-- With SpeciesID Attached
+				i(154902, {	-- Perculia's Peculiar Parrot (PET!)
+					["modelID"] = 58823,
+				}),
+			})),
+
+			-- 8.2.0
+			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
+				-- Trainer Pets --
+				pet(2609),	-- Belchling (PET!)
+				pet(2592),	-- Blackmane (PET!)
+				pet(2724),	-- Chomp (PET!)
+				pet(2739),	-- CK-9 Micro-Oppression Unit (PET!)
+				pet(2738),	-- Creakclank (PET!)
+				pet(2597),	-- Crypt Fiend (PET!)
+				pet(2595),	-- Diseased Rat (PET!)
+				pet(2728),	-- Elderspawn of Nalaada (PET!)
+				pet(2733),	-- Frenzied Knifefang (PET!)
+				pet(2601),	-- Gargy (PET!)
+				pet(2734),	-- Giant Opaline Conch (PET!)
+				pet(2735),	-- Gnomefeaster (PET!)
+				pet(2737),	-- Goldenbot XD (PET!)
+				pet(2602),	-- Huncher (PET!)
+				pet(2770),	-- Infectus (PET!)
+				pet(2731),	-- Kelpstone (PET!)
+				pet(2774),	-- Lefty (PET!)
+				pet(2612),	-- Liz the Tormentor (PET!)
+				pet(2596),	-- Lost Soul (PET!)
+				pet(2730),	-- Mindshackle (PET!)
+				pet(2613),	-- Nefarious Terry (PET!)
+				pet(2727),	-- Pearlhusk Crawler (PET!)
+				pet(2594),	-- Plague Rat (PET!)
+				pet(2593),	-- Plague Roach (PET!)
+				pet(2606),	-- Plague Whelp (PET!)
+				pet(2771),	-- Plagued Mailemental (PET!)
+				pet(2723),	-- Prince Wiggletail (PET!)
+				pet(2769),	-- Pyro (PET!)
+				pet(2729),	-- Ravenous Scalespawn (PET!)
+				pet(2751),	-- Risen Guard (PET!)
+				pet(2752),	-- Risen Noble (PET!)
+				pet(2605),	-- Risen Villager (PET!)
+				pet(2598),	-- Rotting Scavenger (PET!)
+				pet(2726),	-- Shadowspike Lurker (PET!)
+				pet(2725),	-- Silence (PET!)
+				pet(2608),	-- Sludge Belcher (PET!)
+				pet(2768),	-- Smokey (PET!)
+				pet(2772),	-- Soul Collector (PET!)
+				pet(2736),	-- Sputtertube (PET!)
+				pet(2603),	-- Tommy the Cruel (PET!)
+				pet(2611),	-- Tormented Spirit (PET!)
+				pet(2741),	-- Unit 6 (PET!)
+				pet(2742),	-- Unit 17 (PET!)
+				pet(2740),	-- Unit 35 (PET!)
+				pet(2732),	-- Voltgorger (PET!)
+				pet(2599),	-- Wailing Haunt (PET!)
+				pet(2600),	-- Wandering Phantasm (PET!)
+				pet(2607),	-- Zasz the Tiny (PET!)
+				-- Without SpeciesID Attached
+				i(169195, {	-- Golden Cricket (PET!)
+					["modelID"] = 88784,
+				}),
+			})),
+
+			-- 8.3.0
+			tier(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
+				-- Trainer Pets --
+				pet(2799),	-- Alpha (PET!)
+				pet(2856),	-- Aqir Sandcrawler (PET!)
+				pet(2860),	-- Baruk Stone Defender (PET!)
+				pet(2800),	-- Beta (PET!)
+				pet(2857),	-- Blotto (PET!)
+				pet(2801),	-- Bomber (PET!)
+				pet(2822),	-- Char (PET!)
+				pet(2807),	-- Crushface (PET!)
+				pet(2808),	-- Fozling (PET!)
+				pet(2804),	-- Frill (PET!)
+				pet(2811),	-- Fury (PET!)
+				pet(2814),	-- Gigacharged Mayhem Maker (PET!)
+				pet(2812),	-- Glitzy (PET!)
+				pet(2858),	-- K'tiny the Mad (PET!)
+				pet(2816),	-- Liz (PET!)
+				pet(2802),	-- Logic (PET!)
+				pet(2803),	-- Math (PET!)
+				pet(2819),	-- Ninn Jah (PET!)
+				pet(2810),	-- Presto (PET!)
+				pet(2817),	-- Ralf (PET!)
+				pet(2815),	-- Rampage (PET!)
+				pet(2854),	-- Retinus the Seeker (PET!)
+				pet(2805),	-- Ruddy (PET!)
+				pet(2820),	-- Shred (PET!)
+				pet(2818),	-- Splint (PET!)
+				pet(2823),	-- Tempton (PET!)
+				pet(2859),	-- Tormentius (PET!)
+				pet(2809),	-- Tremors (PET!)
+				pet(2861),	-- Vil'thik Hatchling (PET!)
+				pet(2806),	-- Wanderer (PET!)
+				pet(2855),	-- Whispers (PET!)
+				pet(2821),	-- Wilbur (PET!)
+				-- Only SpeciesID
+				pet(2871, {	-- Pet Training Dummy (PET!)
+					["modelID"] = 3019,
+				}),
+			})),
+		}),
 		tier(SL_TIER, {
 			-- 9.0.1
 			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
-				pet(2951, {	-- PH Slime
+				-- Trainer Pets --
+				pet(2989),	-- Ash (PET!)
+				pet(2975),	-- Battery (PET!)
+				pet(2980),	-- Bloog (PET!)
+				pet(2981),	-- Bone Crusher (PET!)
+				pet(2992),	-- Boneclaw (PET!)
+				pet(3005),	-- Brite (PET!)
+				pet(2982),	-- Chipper (PET!)
+				pet(3002),	-- Duster (PET!)
+				pet(2990),	-- Fang (PET!)
+				pet(2887),	-- Flipper (PET!)
+				pet(2974),	-- Glitterwing (PET!)
+				pet(2971),	-- Golden Grazer (PET!)
+				pet(2978),	-- Gorgemouth (PET!)
+				pet(2968),	-- Jawbone (PET!)
+				pet(2983),	-- Leftovers (PET!)
+				pet(2984),	-- Leftovers (PET!)
+				pet(2985),	-- Leftovers (PET!)
+				pet(3004),	-- Needlenose (PET!)
+				pet(2998),	-- Nightfang (PET!)
+				pet(2970),	-- Plains Peachick (PET!)
+				pet(2977),	-- Pounder (PET!)
+				pet(2999),	-- Rascal (PET!)
+				pet(2994),	-- Rocko (PET!)
+				pet(3001),	-- Runehoof (PET!)
+				pet(2979),	-- Scorch (PET!)
+				pet(2972),	-- Shelby (PET!)
+				pet(2976),	-- Slasher (PET!)
+				pet(3000),	-- Slugger (PET!)
+				pet(2886),	-- Snipper (PET!)
+				pet(2993),	-- Spindler (PET!)
+				pet(3003),	-- Star Tail (PET!)
+				pet(2987),	-- Stinkdust (PET!)
+				pet(2969),	-- Sunset Glimmerfly (PET!)
+				pet(2991),	-- Swarm (PET!)
+				pet(2973),	-- Tinyhoof (PET!)
+				pet(2988),	-- Trailblazer (PET!)
+				pet(2885),	-- Whipper (PET!)
+				pet(2986),	-- Whirly (PET!)
+				pet(2996),	-- Wretch (PET!)
+				-- Only SpeciesID
+				pet(2951, {	-- PH Slime (PET!)
 					-- ["modelID"] = ,
 				}),
 				-- Without SpeciesID Attached
@@ -106,12 +380,30 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 9.0.2
 			tier(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 9.0.2" } }, {
+				-- Trainer Pets --
+				pet(3070),	-- Briarpaw (PET!)
+				pet(3071),	-- Chittermaw (PET!)
+				pet(3068),	-- Crystalsnap (PET!)
+				pet(3075),	-- Digallo (PET!)
+				pet(3076),	-- Gelatinous (PET!)
+				pet(3078),	-- Glurp (PET!)
+				pet(3077),	-- Kostos (PET!)
+				pet(3072),	-- Mistwing (PET!)
+				pet(3073),	-- Sewer Creeper (PET!)
+				pet(3074),	-- The Countess (PET!)
 				-- Without SpeciesID Attached
 				i(184461),	-- Clutch (PET!) [Wild Pet, item was never used]
 			})),
 
 			-- 9.1.0
 			tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 9.1.0" } }, {
+				-- Trainer Pets --
+				pet(3091),	-- Churro (PET!)
+				pet(3155),	-- Gurgl (PET!)
+				pet(3156),	-- Hornswoggl (PET!)
+				pet(3158),	-- Missing1 (PET!)
+				pet(3089),	-- RT-3 M15 (PET!)
+				pet(3090),	-- Squibbles (PET!)
 				-- Without SpeciesID Attached
 				i(186545, {	-- REUSE (PET!)
 					-- ["modelID"] = ,
@@ -120,6 +412,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 9.1.5
 			tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 9.1.5" } }, {
+				-- Only SpeciesID
 				pet(3188, {	-- Trub'ul (PET!)
 					["modelID"] = 103091,
 				}),
@@ -129,6 +422,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 9.2.0
 			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
+				-- Only SpeciesID
 				pet(3246, {	-- Tezpet (PET!)
 					["modelID"] = 92261,
 				}),
@@ -143,7 +437,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		tier(DF_TIER, {
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
-				-- TRAINER --
+				-- Trainer Pets --
 				pet(3393),	-- Anubisath Idol (PET!)
 				pet(3401),	-- Arcantus (PET!)
 				pet(3387),	-- Bloodbiter (PET!)

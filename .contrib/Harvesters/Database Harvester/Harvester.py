@@ -510,9 +510,10 @@ def create_missing_files() -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        print(thing)
-        create_missing_file(thing)
-        post_process(thing)
+        if thing == Pets:
+            print(thing)
+            create_missing_file(thing)
+            post_process(thing)
 
 
 def give_name_item() -> None:
