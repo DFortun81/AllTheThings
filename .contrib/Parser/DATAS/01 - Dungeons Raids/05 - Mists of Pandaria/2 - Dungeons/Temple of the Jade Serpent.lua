@@ -6,7 +6,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 		["coord"] = { 56.0, 57.8, THE_JADE_FOREST },
 		["maps"] = {
 			429,	-- Temple of the Jade Serpent
-			430,	-- 	The Scrollkeeper's Sanctum
+			430,	-- The Scrollkeeper's Sanctum
 		},
 		["g"] = {
 			n(QUESTS, {

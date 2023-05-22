@@ -719,17 +719,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				698,		-- Sunwell Plateau
 			}},
 		}),
-		ach(6925, {		-- Pandaria Dungeon Hero
-			crit(1),		-- Heroic: Temple of the Jade Serpent
-			crit(2),		-- Heroic: Stormstout Brewery
-			crit(3),		-- Heroic: Mogu'shan Palace
-			crit(4),		-- Heroic: Shado-Pan Monastery
-			crit(5),		-- Heroic: Gate of the Setting Sun
-			crit(6),		-- Heroic: Scarlet Halls
-			crit(7),		-- Heroic: Scarlet Monastery
-			crit(8),		-- Heroic: Scholomance
-			crit(9),		-- Heroic: Siege of Niuzao Temple
-		}),
 		ach(9619, {		-- Savage Hero
 			title(300),		-- the Savage Hero
 			crit(1),		-- Gug'rokk (Bloodmaul Slag Mines)
