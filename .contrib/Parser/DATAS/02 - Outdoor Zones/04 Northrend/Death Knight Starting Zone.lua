@@ -10,7 +10,7 @@ root(ROOTS.Zones, {
 					["qg"] = 163016,	-- The Lich King
 					["coord"] = { 49.5, 90.7, 1602 },
 					["classes"] = { DEATHKNIGHT },
-					["g"] = {
+					["groups"] = {
 						i(174485),	-- Burning Greatsword of the Ebon Blade
 						i(174662),	-- Burning Saber of the Ebon Blade
 						i(174486),	-- Crimson Greatsword of the Ebon Blade

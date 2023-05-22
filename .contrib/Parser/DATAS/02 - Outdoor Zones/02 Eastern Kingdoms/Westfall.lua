@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_westfall_01",
 		-- #endif
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				explorationAch(802, {	-- Explore Westfall
 					-- #if BEFORE WRATH
@@ -26,15 +26,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4903, {	-- Westfall Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- Crime Scene Investigation
-							["sourceQuests"] = { 26270 },	-- You Have Our Thanks
+							["sourceQuest"] = 26270,	-- You Have Our Thanks
 						}),
 						crit(2, {	-- Investigating the Shadows
-							["sourceQuests"] = { 26297 },	-- The Dawning of a New Day
+							["sourceQuest"] = 26297,	-- The Dawning of a New Day
 						}),
 						crit(3, {	-- The Defias Brotherhood Reborn
-							["sourceQuests"] = { 26370 },	-- Return to Sentinel Hill
+							["sourceQuest"] = 26370,	-- Return to Sentinel Hill
 						}),
 					},
 				}),
@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					419,	-- Small Frog
 					379,	-- Squirrel
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(646), 	-- Chicken
 					pet(388), 	-- Shore Crab
 					pet(389),	-- Tiny Harvester
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			prof(FISHING, {
 				i(68795, {	-- Stendel's Bane
 					["timeline"] = { "added 4.1.0.13726" },
-					["g"] = {
+					["groups"] = {
 						i(68797, {	-- Stendel's Wedding Band
 							["timeline"] = { "added 4.1.0.13726" },
 						}),
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 68.2, 70.4, WESTFALL },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(58926, {	-- Gryan's Boots
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -191,7 +191,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 10,
-					["g"] = {
+					["groups"] = {
 						i(3343),	-- Captain Sander's Booty Bag
 						i(3344),	-- Captain Sander's Sash
 						i(3342),	-- Captain Sander's Shirt
@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 26355,	-- Captain Sanders' Hidden Treasure (3/4)
 					["coord"] = { 40.5, 16.8, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
-					["g"] = {
+					["groups"] = {
 						i(3344),	-- Captain Sanders' Sash
 						i(3342),	-- Captain Sanders' Shirt
 						i(3343),	-- Captain Sanders' Booty Bag
@@ -250,7 +250,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 3.1.0
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(11110, {	-- Westfall Chicken (PET!)
 							-- #if BEFORE 3.1.0
 							["description"] = "A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",
@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 26292,	-- To Moonbrook
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(58921, {	-- Evidence Collection Gloves
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -340,7 +340,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					-- #if BEFORE 4.0.3
-					["g"] = {
+					["groups"] = {
 						i(5057),	-- Ripe Watermelon
 						i(4656),	-- Small Pumpkin
 					},
@@ -353,7 +353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 723, 8 } },	-- Goretusk Liver
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
-					["g"] = {
+					["groups"] = {
 						i(724),		-- Goretusk Liver Pie
 						i(2697),	-- Recipe: Goretusk Liver Pie
 					},
@@ -412,7 +412,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(58914, {	-- Sentinel Hill Breastplate
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -433,7 +433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.7, 19.5, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(58905, {	-- Kobold Basher
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -457,7 +457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 55.9, 31.3, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(58916, {	-- Chewed Belt
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -478,7 +478,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(58920, {	-- Dust Plains Greaves
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Klaven Mortwake's Journal
 							["provider"] = { "i", 7908 },	-- Klaven Mortwake's Journal
 							["coord"] = { 71.0, 74.6, WESTFALL },
@@ -564,7 +564,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 60.1, 19.4, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(58907, {	-- Crime Scene Tape
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -582,7 +582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/8 Gnoll Paw
 							["provider"] = { "i", 725 },	-- Gnoll Paw
 							["crs"] = {
@@ -614,7 +614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/8 Handful of Oats
 							["provider"] = { "i", 1528 },	-- Handful of Oats
 						}),
@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/15 Red Leather Bandana
 							["provider"] = { "i", 829 },	-- Red Leather Bandana
 							["crs"] = {
@@ -706,7 +706,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.2, 47.6, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(58931, {	-- House Wrynn Claymore
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -755,7 +755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Holy Spring Water
 							["provider"] = { "i", 737 },	-- Holy Spring Water
 							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
@@ -770,7 +770,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { THE_HINTERLANDS, TANARIS, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Sack of Barley
 							["provider"] = { "i", 738 },	-- Sack of Barley
 							["coord"] = { 62.5, 23.3, SWAMP_OF_SORROWS },
@@ -802,7 +802,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 A Sycamore Branch
 							["provider"] = { "i", 742 },	-- A Sycamore Branch
 							["coord"] = { 54.8, 70.4, FERALAS },
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { SEARING_GORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Bundle of Charred Oak
 							["provider"] = { "i", 743 },	-- Bundle of Charred Oak
 							["coord"] = { 54.6, 50.7, SEARING_GORGE },
@@ -833,7 +833,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 30, 86, WESTFALL },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 10,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/7 Murloc Coastrunner slain
 							["provider"] = { "n", 126 },	-- Murloc Coastrunner
 						}),
@@ -860,7 +860,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 30, 86, WESTFALL },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 15,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Scale of Old Murk-Eye
 							["provider"] = { "i", 3636 },	-- Scale of Old Murk-Eye
 							["coord"] = { 34.4, 84.6, WESTFALL },
@@ -878,7 +878,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 30.5, 85.4, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(1557),	-- Buckler of the Seas
 						i(1172),	-- Grayson's Torch
 						i(5240),	-- Torchlight Wand
@@ -938,7 +938,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
-					["g"] = {
+					["groups"] = {
 						objective(1, {
 							["provider"] = { "i", 1381 },	-- A Mysterious Message
 							["coord"] = { 45.6, 68.6, WESTFALL },
@@ -960,7 +960,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Furlbrow's Pocket Watch
 							["provider"] = { "i", 841 },	-- Furlbrow's Pocket Watch
 							["coord"] = { 49.3, 19.5, WESTFALL },
@@ -973,7 +973,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/20 Harvest Watcher
 							["provider"] = { "n", 114 },	-- Harvest Watcher
 						}),
@@ -998,7 +998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/15 Defias Trapper
 							["provider"] = { "n", 504 },	-- Defias Trapper
 						}),
@@ -1014,7 +1014,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/15 Defias Pillager
 							["provider"] = { "n", 589 },	-- Defias Pillager
 						}),
@@ -1030,7 +1030,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/15 Defias Highwayman
 							["provider"] = { "n", 122 },	-- Defias Highwayman
 						}),
@@ -1073,7 +1073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 1274, 5 } },	-- Hops
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(1262, {	-- Keg of Thunderbrew
 							--["timeline"] = { "removed 4.0.3" },	-- Reported as existing on retail 10.0.5, maybe renamed to "Keg of Thunderbrew Lager"?
 							["races"] = ALLIANCE_ONLY,
@@ -1117,7 +1117,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 732, 3 },	-- Okra
 					},
 					["lvl"] = 9,
-					["g"] = {
+					["groups"] = {
 						i(728),	-- Recipe: Westfall Stew (RECIPE!)
 						i(733),	-- Westfall Stew
 						i(1479, {	-- Salma's Oven Mitts
@@ -1134,7 +1134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.3, 30.6, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(58910, {	-- Boiled Boots
 							["timeline"] = { "added 4.0.3" },
 						}),
@@ -1182,7 +1182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 33.6, 83.2, WESTFALL },
 					},
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(2235, {	-- Brackclaw
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1208,7 +1208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.6, 67.4, WESTFALL },
 					},
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(933, {	-- Large Rucksack
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1227,7 +1227,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 60.0, 77.6, WESTFALL },
 					},
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(1387, {	-- Ghoulfang
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1242,7 +1242,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 46.2, 18.8, WESTFALL },
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(6205, {	-- Burrowing Shovel
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1260,7 +1260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 37.6, 32.8, WESTFALL },
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(2203, {	-- Brashclaw's Chopper
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1293,7 +1293,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 33.6, 83.2, WESTFALL },
 					},
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(3188, {	-- Coral Claymore
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1321,7 +1321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 64.0, 73.8, WESTFALL },
 					},
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(5971, {	-- Feathered Cape
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1364,7 +1364,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 58.5, 15.9, WESTFALL },
 						{ 59.2, 18.9, WESTFALL },
 					},
-					["g"] = {
+					["groups"] = {
 						i(182581),	-- Handful of Oats
 					},
 				})),
@@ -1375,7 +1375,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
-					["g"] = {
+					["groups"] = {
 						i(4788, {	-- Agile Boots
 							["isLimited"] = true,
 						}),
@@ -1395,7 +1395,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.6, 54.0, WESTFALL },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(6274, {	-- Pattern: Blue Overalls
 							["isLimited"] = true,
 						}),
@@ -1413,7 +1413,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4305, {	-- Kriggon Talsone <Fisherman>
 					["coord"] = { 36.2, 90.0, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(5528),	-- Recipe: Clam Chowder
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(6326),	-- Recipe: Slitherskin Mackerel
@@ -1427,7 +1427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.6, 53.8, WESTFALL },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(11304, {	-- Fine Longbow
 							["isLimited"] = true,
 						}),

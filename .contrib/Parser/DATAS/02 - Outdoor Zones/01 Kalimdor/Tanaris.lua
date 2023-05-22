@@ -2857,7 +2857,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					431,	-- Rattlesnake (PET!)
 					511,	-- Sidewinder (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(491, {	-- Sand Kitten (PET!)
 						["description"] = "This pet has very few spawn points and may be easier to find as a second pet, but is sometimes around Gadgetzan. 'Rare' kittens are not easy to come across.",
 					}),

@@ -3170,12 +3170,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(58983, {	-- Battle for Azeroth: Tides of War
-					["sourceQuests"] = { 58912 },	-- An Urgent Meeting [A]
-					["provider"] = { "n", 163219 },	-- Captain Garrick
+					["qg"] = 163219,	-- Captain Garrick
+					["sourceQuest"] = 58912,	-- An Urgent Meeting [A]
 					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_9_0_1 },
-					["g"] = {
+					["groups"] = {
 						i(178941),	-- Alliance Dog Tags,
 					}
 				}),
@@ -4983,8 +4983,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59641, {	-- The Nation of Kul Tiras
-					["sourceQuests"] = { 58983 },	-- Battle for Azeroth: Tides of War
-					["provider"] = { "n", 165395 },	-- Anduin Wrynn
+					["qg"] = 165395,	-- Anduin Wrynn
+					["sourceQuest"] = 58983,	-- Battle for Azeroth: Tides of War
 					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_9_0_1 },

@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					417,	-- Rat (PET!)
 					424,	-- Roach (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(488),	-- Coral Snake (PET!)
 					pet(412, {	-- Spider (PET!)
 						["description"] = "The best place to catch these seems to be south of Windshear Hold, but it can definitely be found in other listed places.",

@@ -30,7 +30,7 @@ root(ROOTS.Zones, {
 						379,	-- Squirrel
 						1238,	-- Unborn Val'kyr
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(385),	-- Mouse
 					},
 				})),

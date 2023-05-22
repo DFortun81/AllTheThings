@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					450,	-- Maggot (PET!)
 					424,	-- Roach (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(454),	-- Undercity Rat (PET!)
 				},
 			})),

@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					424,	-- Roach (PET!)
 					414,	-- Scorpid (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(505, {	-- Twilight Iguana (PET!)
 						["description"] = "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",
 						["coords"] = {

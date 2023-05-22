@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					417,	-- Rat (PET!)
 					379,	-- Squirrel (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(508, {	-- Darkshore Cub (PET!)
 						["description"] = "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach.",
 					}),

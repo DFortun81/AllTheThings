@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							513,	-- Qiraji Guardling (PET!)
 							511,	-- Sidewinder (PET!)
 						}},
-						["g"] = {
+						["groups"] = {
 							pet(512, {	-- Scarab Hatchling (PET!)
 								["description"] = "Can be found near the gates of Ahn'Qiraj, or in the un-instanced zone south of Silithus.",
 							}),
@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					414,	-- Scorpid (PET!)
 					511,	-- Sidewinder (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(513, {	-- Qiraji Guardling (PET!)
 						["description"] = "Starts spawning June 21st. Stops spawning September 23rd.",
 					}),

@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					632,	-- Ash Lizard (PET!)
 					482,	-- Rock Viper (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(540),	-- Carrion Rat (PET!)
 					p(755, {	-- Death's Head Cockroach
 						["crs"] = { 62887 },	-- Death's Head Cockroach

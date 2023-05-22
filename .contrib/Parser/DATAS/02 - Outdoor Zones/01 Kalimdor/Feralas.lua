@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					378,	-- Rabbit (PET!)
 					379,	-- Squirrel (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(557, {	-- Nether Faerie Dragon (PET!)
 						["description"] = "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",
 					}),

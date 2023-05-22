@@ -247,7 +247,7 @@ root(ROOTS.Zones, {
 						412,	-- Spider (PET!)
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(558, {	-- Arctic Fox Kit (PET!)
 							["description"] = "Only spawns while it is snowing. Weather in this area seems to be character specific.",
 						}),

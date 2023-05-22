@@ -1134,7 +1134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit
 				}},
-				["g"] = {
+				["groups"] = {
 					p(441, {	-- Alpine Hare
 						["crs"] = { 61690 },	-- Alpine Hare
 						-- #if AFTER CATA

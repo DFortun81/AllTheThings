@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["sym"] = {{"select","speciesID",
 							378,	-- Rabbit
 						}},
-						["g"] = {
+						["groups"] = {
 							p(385, {	-- Mouse
 								["crs"] = { 61143 },	-- Mouse
 							}),
@@ -574,7 +574,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					386,	-- Prarie Dog (PET!)
 					378,	-- Rabbit (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(477),	-- Gazelle Fawn (PET!)
 				},
 			})),

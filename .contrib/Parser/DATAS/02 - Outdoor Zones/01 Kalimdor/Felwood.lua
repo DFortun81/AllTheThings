@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					406,	-- Beetle (PET!)
 					420,	-- Toad (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(500, {	-- Minfernal (PET!)
 						["description"] = "Can be found around Shatter Scar Vale near Infernal Sentries.",
 					}),

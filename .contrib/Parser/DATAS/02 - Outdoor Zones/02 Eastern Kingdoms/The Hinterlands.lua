@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						450,	-- Maggot (PET!)
 						417,	-- Rat (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(449),	-- Brown Marmot (PET!)
 					pet(446, {	-- Jade Oozeling (PET!)
 						["coord"] = { 58.8, 43.0, THE_HINTERLANDS },

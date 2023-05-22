@@ -147,7 +147,7 @@ root(ROOTS.Zones, {
 						414,	-- Scorpid (PET!)
 						379,	-- Squirrel (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						p(1164, {	-- Cogblade Raptor
 							["crs"] = { 68841 },	-- Cogblade Raptor
 							["description"] ="Found often to the left and right of Death's Door."

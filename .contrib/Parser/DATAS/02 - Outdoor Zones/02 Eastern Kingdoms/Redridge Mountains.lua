@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					646,	-- Chicken (PET!)
 					378,	-- Rabbit (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(395),	-- Fledgling Buzzard (PET!)
 					pet(391),	-- Mountain Cottontail (PET!)
 					pet(392),	-- Redridge Rat (PET!)

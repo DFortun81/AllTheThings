@@ -129,7 +129,7 @@ root(ROOTS.Zones, {
 						633,	-- Mountain Skunk (PET!)
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(393),	-- Cockroach (PET!)
 						pet(538),	-- Scourged Whelpling (PET!)
 					},

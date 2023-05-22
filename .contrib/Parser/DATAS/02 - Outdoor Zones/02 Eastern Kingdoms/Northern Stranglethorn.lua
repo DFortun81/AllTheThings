@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					424,	-- Roach (PET!)
 					401,	-- Strand Crab (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(406),	-- Beetle (PET!)
 					pet(421, {	-- Crimson Moth (PET!)
 						["coord"] = { 41.8, 41.6, NORTHERN_STRANGLETHORN },

@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Achievement_zone_duskwood",
 		-- #endif
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				explorationAch(778, {	-- Explore Duskwood
 					-- #if BEFORE WRATH
@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(12430, {	-- Duskwood Quests
 					["timeline"] = { "added 7.3.5.25727" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- The Legend of Stalvan
 							["sourceQuest"] = 26674,	-- Mistmantle's Revenge
 						}),
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					419,	-- Small Frog (PET!)
 					379,	-- Squirrel (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(398),  -- Black Rat (PET!)
 					pet(396, {	-- Dusk Spiderling (PET!)
 						["description"] = "Found commonly in the area around the coord.",
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
-					["g"] = {
+					["groups"] = {
 						i(2000, {	-- Archeus
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.6, 46.8, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(156955, {	-- Reconditioned Archeus
 							["timeline"] = { "added 7.3.5.25716" },
 						}),
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.9, 67.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60927, {	-- Cloak of Sanity
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["g"] = {
+					["groups"] = {
 						i(5817, {	-- Lunaris Bow
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -212,7 +212,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						i(7297, {	-- Morbent's Bane
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 18.6, 58.3, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60936, {	-- Jittering Band
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -259,7 +259,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(131581, {	-- Night Watcher's Mail
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
@@ -281,7 +281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 The Embalmer's Heart
 							["provider"] = { "i", 2382 },	-- The Embalmer's Heart
 							["coord"] = { 28.8, 31.2, DUSKWOOD },
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.5, 47.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60909, {	-- Astronomer's Handwraps
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -336,7 +336,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 18.3, 57.6, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60928, {	-- Consecrated Scepter
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -368,7 +368,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.7, 45.2, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60900, {	-- Beggar's Belt
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -424,7 +424,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 2251, 6 } },	-- Gooey Spider Leg
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
-					["g"] = {
+					["groups"] = {
 						i(3683),	-- Recipe: Gooey Spider Cake (RECIPE!)
 					},
 				}),
@@ -433,7 +433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.7, 43.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(3683),	-- Recipe: Gooey Spider Cake (RECIPE!)
 					},
 				}),
@@ -443,7 +443,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
-					["g"] = {
+					["groups"] = {
 						i(3559, {	-- Night Watch Gauntlets
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -467,7 +467,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/8 Rot Blossom
 							["provider"] = { "i", 1598 },	-- Rot Blossom
 							["crs"] = {
@@ -509,7 +509,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/7 Ghoul Rib
 							["provider"] = { "i", 884 },	-- Ghoul Rib
 							["crs"] = {
@@ -578,7 +578,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.7, 44.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60902, { -- Abercrombie's Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -616,7 +616,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Mary's Looking Glass
 							["provider"] = { "i", 1946 },	-- Mary's Looking Glass
 							["coord"] = { 80.8, 71.6, DUSKWOOD },
@@ -631,7 +631,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Ogre's Monocle
 							["provider"] = { "i", 1968 },	-- Ogre's Monocle
 							["coord"] = { 37.0, 82.4, DUSKWOOD },
@@ -658,7 +658,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.8, 45.2, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60919, {	-- Bracers of Forlorn Spirits
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -683,7 +683,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Mor'Ladim's Skull
 							["provider"] = { "i", 3514 },	-- Mor'Ladim's Skull
 							["coord"] = { 19.4, 34.6, DUSKWOOD },
@@ -705,7 +705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Morbent's Bane
 							["provider"] = { "i", 7297 },	-- Morbent's Bane
 							["coord"] = { 17.4, 33.6, DUSKWOOD },
@@ -731,7 +731,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 18.0, 25.3, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60939, {	-- Ashen Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -753,7 +753,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
-					["g"] = {
+					["groups"] = {
 						i(2154),	-- The Story of Morgan Ladimore
 					},
 				}),
@@ -797,7 +797,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { DESOLACE, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/5 Shadow Panther Heart
 							["provider"] = { "i", 6080 },	-- Shadow Panther Heart
 							["cr"] = 768,	-- Shadow Panther
@@ -850,7 +850,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Abercrombie's Crate
 							["provider"] = { "i", 1349 },	-- Abercrombie's Crate
 							["coord"] = { 33.5, 76.5, DUSKWOOD },
@@ -879,7 +879,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/15 Skeletal Raider slain
 							["provider"] = { "n", 1110 },	-- Skeletal Raider
 						}),
@@ -945,7 +945,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 72.4, 46.9, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60915, {	-- Daltry's Belt
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -979,7 +979,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
-					["g"] = {
+					["groups"] = {
 						i(1017),	-- Seasoned Wolf Kabob
 						i(2701),	-- Recipe: Seasoned Wolf Kabob (RECIPE!)
 					},
@@ -989,7 +989,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.7, 43.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(2701),	-- Recipe: Seasoned Wolf Kabob (RECIPE!)
 					},
 				}),
@@ -1069,7 +1069,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 20.0, 57.8, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60922, {	-- Aegis of Faith
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1113,7 +1113,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 71.9, 46.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60905, {	-- Ello's Band
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 An Undelivered Letter
 							["provider"] = { "i", 910 },	-- An Undelivered Letter
 							["coord"] = { 44.2, 65.8, ELWYNN_FOREST },
@@ -1249,7 +1249,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 A Faded Journal Page
 							["provider"] = { "i", 921 },	-- A Faded Journal Page
 							["coord"] = { 85.6, 69.6, ELWYNN_FOREST },
@@ -1304,7 +1304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Mistmantle Family Ring
 							["provider"] = { "i", 3629 },	-- Mistmantle Family Ring
 							["coord"] = { 77.6, 34.8, DUSKWOOD },
@@ -1337,7 +1337,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/8 Skeletal Warrior slain
 							["provider"] = { "n", 48 },	-- Skeletal Warrior
 						}),
@@ -1353,7 +1353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/15 Skeletal Fiend slain
 							["provider"] = { "n", 531 },	-- Skeletal Fiend
 						}),
@@ -1369,7 +1369,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/20 Plague Spreader slain
 							["provider"] = { "n", 604 },	-- Plague Spreader
 						}),
@@ -1405,7 +1405,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- Find evidence of the Scythe of Elune
 							["provider"] = { "o", 19030 },	-- Mound of Dirt
 							["coord"] = { 73.7, 79.0, DUSKWOOD },
@@ -1440,7 +1440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 72.4, 46.9, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60911, {	-- Archivist's Lighter
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1467,7 +1467,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/10 Ghoul Fang
 							["provider"] = { "i", 1129 },	-- Ghoul Fang
 							["crs"] = {
@@ -1548,7 +1548,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						i(3248),	-- Translated Letter from The Embalmer
 					},
 				}),
@@ -1594,7 +1594,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/12 Starving Dire Wolf slain
 							["provider"] = { "n", 213 },	-- Starving Dire Wolf
 						}),
@@ -1609,7 +1609,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60895, {	-- Ebonlocke Band
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1631,7 +1631,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/6 Nightbane Shadow Weaver
 							["provider"] = { "n", 533 },	-- Nightbane Shadow Weaver
 						}),
@@ -1644,7 +1644,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/12 Nightbane Dark Runner
 							["provider"] = { "n", 205 },	-- Nightbane Dark Runner
 						}),
@@ -1657,7 +1657,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/8 Nightbane Vile Fang
 							["provider"] = { "n", 206 },	-- Nightbane Vile Fang
 						}),
@@ -1676,7 +1676,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
-					["g"] = {
+					["groups"] = {
 						i(2902, {	-- Cloak of the Faith
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1703,7 +1703,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.3, 48.0, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(60931, {	-- Vigilante's Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1750,7 +1750,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["coord"] = { 18.0, 38.0, DUSKWOOD },
 					["timeline"] = { "removed 4.0.3" },
-					["g"] = {
+					["groups"] = {
 						i(4465, {	-- Bonefist Gauntlets [Classic] / Felstrom's Gauntlets [Wrath+]
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1781,7 +1781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 63.8, 51.6, DUSKWOOD },
 					},
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(4474, {	-- Ravenwood Bow
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1793,7 +1793,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(91592, {	-- Forlorn Composer
 					["description"] = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music roll requires speaking to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges).",
 					["timeline"] = { "added 6.1.0.19508" },
-					["g"] = {
+					["groups"] = {
 						i(122223, {	-- Music Roll: Ghost
 							["timeline"] = { "added 6.1.0.19508" },
 						}),
@@ -1805,7 +1805,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["coord"] = { 25.6, 30.2, DUSKWOOD },
 					["timeline"] = { "removed 4.0.3" },
-					["g"] = {
+					["groups"] = {
 						i(4462, {	-- Cloak of Rot
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1830,7 +1830,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 71.0, 24.4, DUSKWOOD },
 					},
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(3018, {	-- Hide of Lupos
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1859,7 +1859,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 86.6, 49.6, DUSKWOOD },
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(4448, {	-- Husk of Naraxis
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1875,7 +1875,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Spawns randomly in the south",
 					["coord"] = { 63.6, 82.4, DUSKWOOD },
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(4476, {	-- Beastwalker Robe
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1903,7 +1903,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(228, {	-- Avette Fellwood <Bowyer>
 					["coord"] = { 73.2, 44.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(11304, {	-- Fine Longbow
 							["isLimited"] = true,
 						}),
@@ -1912,14 +1912,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(274, {	-- Barkeep Hann <Bartender>
 					["coord"] = { 73.8, 44.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(1942),	-- Bottle of Moonshine
 					},
 				}),
 				n(2481, {	-- Bliztik <Alchemy Supplies>
 					["coord"] = { 18.0, 54.4, DUSKWOOD },
 					["timeline"] = { "removed 4.0.3" },
-					["g"] = {
+					["groups"] = {
 						i(6068, {	-- Recipe: Shadow Oil
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1928,7 +1928,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2668, {	-- Danielle Zipstitch <Tailoring Supplies>
 					["coord"] = { 75.8, 45.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(14627, {	-- Pattern: Bright Yellow Shirt
 							["isLimited"] = true,
 						}),
@@ -1937,7 +1937,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(225, {	-- Gavin Gnarltree <Weaponsmith>
 					["coord"] = { 73.6, 49.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(12247, {	-- Broad Bladed Knife
 							["isLimited"] = true,
 						}),
@@ -1948,7 +1948,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(3134, {	-- Kzixx <Rare Goods>
 					["coord"] = { 81.8, 19.8, DUSKWOOD },
-					["g"] = {
+					["groups"] = {
 						i(4836, {	-- Fireproof Orb
 							["isLimited"] = true,
 						}),
@@ -1978,7 +1978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(226, {	-- Morg Gnarltree <Armorer>
 					["coord"] = { 73.8, 48.6, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(4799, {	-- Antiquated Cloak
 							["isLimited"] = true,
 						}),
@@ -1999,7 +1999,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2669, {	-- Sheri Zipstitch <Tailoring Supplies>
 					["coord"] = { 75.6, 45.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(6401, {	-- Pattern: Dark Silk Shirt
 							["isLimited"] = true,
 						}),

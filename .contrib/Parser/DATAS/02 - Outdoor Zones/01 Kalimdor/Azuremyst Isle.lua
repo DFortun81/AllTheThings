@@ -623,7 +623,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					397,	-- Skunk (PET!)
 					379,	-- Squirrel (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(464),	-- Grey Moth (PET!)
 				},
 			})),

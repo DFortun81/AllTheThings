@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					387,	-- Snake (PET!)
 					420,	-- Toad (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(461),	-- Larva (PET!)
 					pet(463, { -- Spirit Crab (PET!)
 						["description"] = "Found along the western coastline and on the little island.",
@@ -1192,7 +1192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ 58.8, 28.6, GHOSTLANDS },
 						{ 62.9, 28.0, GHOSTLANDS },
 					},
-					["g"] = {
+					["groups"] = {
 						i(23923),	-- Amani Sacrificial Dagger
 						i(29518),	-- Amani Scimitar
 					},
@@ -1205,7 +1205,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ 65.4, 66.2, GHOSTLANDS },
 						{ 65.3, 80.0, GHOSTLANDS },
 					},
-					["g"] = {
+					["groups"] = {
 						i(29518),	-- Amani Scimitar
 					},
 				}),

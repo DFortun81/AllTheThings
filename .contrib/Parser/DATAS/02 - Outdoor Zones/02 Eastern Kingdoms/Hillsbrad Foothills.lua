@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					379,	-- Squirrel (PET!)
 					420,	-- Toad (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(453, {	-- Infested Bear Cub (PET!)
 						["crs"] = { 35.4, 69.6, HILLSBRAD_FOOTHILLS },
 					}),

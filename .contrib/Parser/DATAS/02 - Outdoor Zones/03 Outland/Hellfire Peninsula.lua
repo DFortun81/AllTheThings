@@ -299,7 +299,7 @@ root(ROOTS.Zones, {
 					["sym"] = {{"select","speciesID",
 						635,	-- Adder (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(414),	-- Scorpid (PET!)
 					},
 				})),
@@ -390,7 +390,7 @@ root(ROOTS.Zones, {
 							{ 56.8, 63.8, HELLFIRE_PENINSULA },
 							{ 53.2, 38.2, HELLFIRE_PENINSULA },
 						},
-						["g"] = TBC_BLACKSMITHING,
+						["groups"] = TBC_BLACKSMITHING,
 					}),
 					prof(FISHING, {
 						i(34867),	-- Monstrous Felblood Snapper
@@ -404,7 +404,7 @@ root(ROOTS.Zones, {
 							{ 53.6, 66.0, HELLFIRE_PENINSULA },
 							{ 52.5, 36.0, HELLFIRE_PENINSULA },
 						},
-						["g"] = TBC_ENCHANTING,
+						["groups"] = TBC_ENCHANTING,
 					}),
 				}),
 				n(QUESTS, {

@@ -3026,11 +3026,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(60361, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Battle for Azeroth: Mission Statement
-					["sourceQuests"] = { 60360 },	-- An Urgent Meeting
-					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+					["sourceQuest"] = 60360,	-- An Urgent Meeting
+					["qg"] = 168431,	-- Warlord Breka Grimaxe
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(178942),	-- War-Chain of the Horde
 					},
 				})),

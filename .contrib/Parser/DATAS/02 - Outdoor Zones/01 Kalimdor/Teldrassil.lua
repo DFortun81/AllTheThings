@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["sym"] = {{"select","speciesID",
 							447,	-- Fawn (PET!)
 						}},
-						["g"] = {
+						["groups"] = {
 							pet(507),	-- Crested Owl (PET!)
 						},
 					})),

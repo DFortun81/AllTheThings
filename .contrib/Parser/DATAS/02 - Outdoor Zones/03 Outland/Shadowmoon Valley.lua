@@ -146,7 +146,7 @@ root(ROOTS.Zones, {
 						414,	-- Scorpid (PET!)
 						497,	-- Tainted Cockroach (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(519, {	-- Fel Flame (PET!)
 							["description"] = "Found around the Hand of Gul'dan in old Shadowmoon Valley and fel areas in Tanaan.",
 						}),
@@ -2243,7 +2243,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
 						["timeline"] = { "added 6.1.0.19508" },
 						["modelScale"] = .5,
-						["g"] = {
+						["groups"] = {
 							i(122228),	-- Music Roll: The Black Temple
 						},
 					}),

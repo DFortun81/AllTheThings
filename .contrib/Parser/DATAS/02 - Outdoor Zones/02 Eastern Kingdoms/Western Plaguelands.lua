@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					379,	-- Squirrel (PET!)
 					420,	-- Toad (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(456, {	-- Blighthawk (PET!)
 						["coord"] = { 45.4, 70.0, WESTERN_PLAGUELANDS },
 					}),

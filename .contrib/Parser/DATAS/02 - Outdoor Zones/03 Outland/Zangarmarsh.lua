@@ -268,7 +268,7 @@ root(ROOTS.Zones, {
 						419,	-- Small Frog (PET!)
 						387,	-- Snake (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(515, {	-- Sporeling Sprout (PET!)
 							["coord"] = { 20.0, 51.6, ZANGARMARSH },
 							["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with the Sporeggar faction.",

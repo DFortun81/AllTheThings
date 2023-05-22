@@ -810,7 +810,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(626),	-- Bat (PET!)
 					pet(457),	-- Festering Maggot (PET!)
 					pet(628),	-- Infected Fawn (PET!)

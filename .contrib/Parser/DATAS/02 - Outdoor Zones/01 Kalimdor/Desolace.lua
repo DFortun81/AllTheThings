@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					424,	-- Roach (PET!)
 					419,	-- Small Frog (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(484),	-- Desert Spider (PET!)
 					pet(483),	-- Horny Toad (PET!)
 					pet(482),	-- Rock Viper (PET!)

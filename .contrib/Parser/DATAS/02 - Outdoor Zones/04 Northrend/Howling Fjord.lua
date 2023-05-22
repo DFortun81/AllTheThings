@@ -12,7 +12,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Beegle Blastfuse
 								["coord"] = { 28.6, 33.8, HOWLING_FJORD },
 								["cr"] = 66635,	-- Beegle Blastfuse <Master Pet Tamer>
@@ -64,7 +64,7 @@ root(ROOTS.Zones, {
 						["rank"] = 130,
 						-- #endif
 						-- #else
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- The Ill-Equipped Port
 								["sourceQuests"] = {
 									11291,	-- To Westguard Keep!
@@ -147,7 +147,7 @@ root(ROOTS.Zones, {
 						["rank"] = 105,
 						-- #endif
 						-- #else
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Visitors from the Keep
 								["sourceQuest"] = 11234,	-- Report to Anselm
 							}),
@@ -213,7 +213,7 @@ root(ROOTS.Zones, {
 						379,	-- Squirrel (PET!)
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(523, {	-- Devouring Maggot (PET!)
 							["description"] = "Can be found in the Utgarde Catacombs at the very bottom in the zombie pit, occasionally as a second pet to Maggots above ground."
 						}),

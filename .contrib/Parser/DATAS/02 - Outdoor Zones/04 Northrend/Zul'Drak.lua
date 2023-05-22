@@ -119,7 +119,7 @@ root(ROOTS.Zones, {
 						412,	-- Spider (PET!)
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(535, {	-- Water Waveling (PET!)
 							["coord"] = { 43.0, 77.6,ZULDRAK },
 							["description"] = "Spawns in the farms south of The Argent Stand.",

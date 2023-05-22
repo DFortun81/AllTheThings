@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			40,	-- Jasperlode Mine
 		},
 		-- #endif
-		["g"] = {
+		["groups"] = {
 			m(NORTHSHIRE_VALLEY, {
 				["lore"] = "Northshire was the pride of Stormwind's vineyards until recently when Defias bandits drove off the farmers and occupied the farm and fields. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",
 				-- #if ANYCLASSIC
@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #else
 				["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
 				-- #endif
-				["g"] = {
+				["groups"] = {
 					n(QUESTS, {
 						q(783, {	-- A Threat Within
 							["qg"] = 823,	-- Deputy Willem
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
-							["g"] = {
+							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.6.13596" },
 							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
-							["g"] = {
+							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
-							["g"] = {
+							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
-							["g"] = {
+							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
-							["g"] = {
+							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
-							["g"] = {
+							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -163,7 +163,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
-							["g"] = {
+							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
-							["g"] = {
+							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },	-- May also include DK and Druid
-							["g"] = {
+							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
-							["g"] = {
+							["groups"] = {
 								objective(1, {	-- 0/1 Garrick's Head
 									["provider"] = { "i", 182 },	-- Garrick's Head
 									["coord"] = { 57.4, 48.6, ELWYNN_FOREST },
@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
-							["g"] = {
+							["groups"] = {
 								objective(1, {	-- 0/12 Red Burlap Bandana
 									["provider"] = { "i", 752 },	-- Red Burlap Bandana
 									["cr"] = 38,	-- Defias Thug
@@ -349,7 +349,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
-							["g"] = {
+							["groups"] = {
 								i(57393, {	-- Abbey Defender's Crossbow
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -390,7 +390,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 33.3, 54.6, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
-							["g"] = {
+							["groups"] = {
 								i(57247, {	-- Grape-Picking Sack
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
-							["g"] = {
+							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -426,7 +426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
-							["g"] = {
+							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
-							["g"] = {
+							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -470,7 +470,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
-							["g"] = {
+							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -492,7 +492,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
-							["g"] = {
+							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -514,7 +514,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
-							["g"] = {
+							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -536,7 +536,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
-							["g"] = {
+							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -557,7 +557,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.6.13596" },
 							["races"] = exclude({ HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
-							["g"] = {
+							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -578,7 +578,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_9_0_5 },
 							["races"] = { KULTIRAN },
-							["g"] = {
+							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -614,7 +614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
-							["g"] = {
+							["groups"] = {
 								i(2690, {	-- Latched Belt
 									["timeline"] = { "removed 4.0.3.13277" },
 								}),
@@ -673,7 +673,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								objective(1, {	-- 0/10 Kobold Worker
 									["provider"] = { "n", 257 },	-- Kobold Worker
 								}),
@@ -755,7 +755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								objective(1, {	-- 0/10 Kobold Vermin
 									["provider"] = { "n", 6 },	-- Kobold Vermin
 								}),
@@ -778,7 +778,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
-							["g"] = {
+							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -800,7 +800,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
-							["g"] = {
+							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -822,7 +822,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
-							["g"] = {
+							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -844,7 +844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
-							["g"] = {
+							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -866,7 +866,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
-							["g"] = {
+							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -887,7 +887,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.6.13596" },
 							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
-							["g"] = {
+							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -909,7 +909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
-							["g"] = {
+							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -931,7 +931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
-							["g"] = {
+							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -953,7 +953,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
-							["g"] = {
+							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -991,7 +991,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
-							["g"] = {
+							["groups"] = {
 								objective(1, {	-- 0/8 Milly's Harvest
 									["providers"] = {
 										{ "o", 161557 },	-- Milly's Harvest
@@ -1020,7 +1020,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							-- #endif
 							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
-							["g"] = {
+							["groups"] = {
 								i(131876, {	-- Deputy's Chainmail
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -1046,7 +1046,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 20,
-							["g"] = {
+							["groups"] = {
 								i(6095, {	-- Wandering Boots
 									["timeline"] = { "removed 4.0.3.13277" },
 								}),
@@ -1069,7 +1069,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								objective(1, {	-- 0/12 Kobold Laborer
 									["provider"] = { "n", 80 },	-- Kobold Laborer
 								}),
@@ -1192,7 +1192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARLOCK },
 							-- #if BEFORE 3.3.0
-							["g"] = {
+							["groups"] = {
 								objective(1, {	-- 0/1 Powers of the Void
 									["provider"] = { "i", 6785 },	-- Powers of the Void
 									["coord"] = { 56.7, 44.0, ELWYNN_FOREST },
@@ -1208,7 +1208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
-							["g"] = {
+							["groups"] = {
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
@@ -1224,7 +1224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
-							["g"] = {
+							["groups"] = {
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
@@ -1240,7 +1240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
-							["g"] = {
+							["groups"] = {
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
@@ -1256,7 +1256,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
-							["g"] = {
+							["groups"] = {
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
@@ -1272,7 +1272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
-							["g"] = {
+							["groups"] = {
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
@@ -1288,7 +1288,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
-							["g"] = {
+							["groups"] = {
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
@@ -1304,7 +1304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
-							["g"] = {
+							["groups"] = {
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
@@ -1320,7 +1320,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
-							["g"] = {
+							["groups"] = {
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
@@ -1335,7 +1335,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.6.13596" },
 							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
-							["g"] = {
+							["groups"] = {
 								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
@@ -1350,7 +1350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 48.9, 40.1, ELWYNN_FOREST },
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								objective(1, {	-- 0/8 Tough Wolf Meat
 									["provider"] = { "i", 750 },
 									["crs"] = {
@@ -1372,7 +1372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						n(62, {	-- Gug Fatcandle
 							["coord"] = { 31.6, 16.7, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 4.0.3" },
-							["g"] = {
+							["groups"] = {
 								i(56147, {	-- Fatcandle Bag
 									["timeline"] = { "added 4.0.3" },
 								}),
@@ -1406,7 +1406,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = {{"select","speciesID",
 					646,	-- Chicken (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(374),	-- Black Lamb (PET!)
 					pet(459, { -- Cat (PET!)
 						["description"] = "Found commonly around the small farmhouse SW of Northshire and on Sunstrider Isle.",
@@ -1473,7 +1473,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.4, 66.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/8 Bundle of Wood
 							["provider"] = { "i", 13872 },	-- Bundle of Wood
 						}),
@@ -1520,7 +1520,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/8 Torn Murloc Fin
 							["provider"] = { "i", 780 },	-- Torn Murloc Fin
 							["crs"] = {
@@ -1562,7 +1562,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
-					["g"] = {
+					["groups"] = {
 						i(131194, {	-- Hand-Welded Leggings
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
@@ -1579,7 +1579,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/4 Crystal Kelp Frond
 							["provider"] = { "i", 1256 },	-- Crystal Kelp Frond
 							["crs"] = {
@@ -1604,7 +1604,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Marshal Haggard's Badge
 							["provider"] = { "i", 6782 },	-- Marshal Haggard's Badge
 							["cost"] = { { "i", 6783, 1 } },	-- Dead-tooth's Key
@@ -1670,7 +1670,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 278,	-- Sara Timberlain
 					["coord"] = { 79.4, 68.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(57405, {	-- Fine Leather Sash
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
@@ -1700,7 +1700,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
 					["lvl"] = 5,
-					["g"] = {
+					["groups"] = {
 						i(16605, {	-- Friar's Robes of the Light
 							["timeline"] = { "removed 4.0.3.13277" },
 						}),
@@ -1712,7 +1712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 159, 1 }, },	-- Refreshing Spring Water
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(4536),	-- Shiny Red Apple
 					},
 				}),
@@ -1722,7 +1722,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.2, 67.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/10 Gold Dust
 							["provider"] = { "i", 773 },	-- Gold Dust
 							["crs"] = {
@@ -1752,7 +1752,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43, 85.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 5,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Bernice's Necklace
 							["provider"] = { "i", 981 },	-- Bernice's Necklace
 							["coord"] = { 41.6, 78.8, ELWYNN_FOREST },
@@ -1773,7 +1773,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(3, 3, 1),
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/8 Large Candle
 							["provider"] = { "i", 772 },	-- Large Candle
 							["crs"] = {
@@ -1840,7 +1840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 123,	-- The Collector
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 The Collector's Ring
 							["provider"] = { "i", 2239 },	-- The Collector's Ring
 							["coord"] = { 71.0, 80.6, ELWYNN_FOREST },
@@ -1895,7 +1895,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 34.6, 84.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(6, 6, 1),
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Brass Collar
 							["provider"] = { "i", 1006 },	-- Brass Collar
 							["coord"] = { 69.8, 79.4, ELWYNN_FOREST },
@@ -1914,7 +1914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74, 72.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/8 Prowler
 							["provider"] = { "n", 118 },	-- Prowler
 						}),
@@ -1942,7 +1942,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/6 Red Linen Bandana
 							["provider"] = { "i", 1019 },	-- Red Linen Bandana
 							["crs"] = {
@@ -1977,7 +1977,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 45.6, 47.8, ELWYNN_FOREST },
 					["timeline"] = { "removed 6.0.1.18689" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(57395, {	-- Lion's Pride Bracer
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
@@ -1997,7 +1997,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 45.6, 47.8, ELWYNN_FOREST },
 					["timeline"] = { "added 6.0.1.18689" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(57395, {	-- Lion's Pride Bracer
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
@@ -2018,7 +2018,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 24.2, 74.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(6, 6, 1),
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/8 Painted Gnoll Armband
 							["provider"] = { "i", 782 },	-- Painted Gnoll Armband
 							["crs"] = {
@@ -2068,7 +2068,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 3,
 					-- #if BEFORE 4.0.3
-					["g"] = {
+					["groups"] = {
 						i(2454),	-- Elixir of Lion's Strength
 						i(1178),	-- Explosive Rocket
 						i(1177),	-- Oil of Olaf
@@ -2166,7 +2166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
-					["g"] = {
+					["groups"] = {
 						-- #if AFTER CATA
 						objective(1, {	-- 0/1 Dealt with "The Hogger Situation"
 							["provider"] = { "n", 448 },	-- Hogger
@@ -2248,7 +2248,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 68.0, 40.6, ELWYNN_FOREST },
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(3233),	-- Gnoll Hide Sack
 						i(5744, {	-- Pale Skinner
 							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
@@ -2265,7 +2265,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 27.6, 88.4, ELWYNN_FOREST },
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(38513, {	-- Boarhide Leggings
 							["timeline"] = { "added 3.0.1.8634" },
 						}),
@@ -2281,7 +2281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 31.8, 65.6, ELWYNN_FOREST },
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(1917, {	-- Jeweled Dagger
 							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
 						}),
@@ -2299,7 +2299,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 61.8, 47.8, ELWYNN_FOREST },
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(3000, {	-- Brood Mother Carapace
 							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
 						}),
@@ -2314,7 +2314,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 41.2, 78.8, ELWYNN_FOREST },
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(6147, {	-- Ratty Old Belt
 							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.
 						}),
@@ -2358,7 +2358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 89.6, 78.6, ELWYNN_FOREST },
 					},
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(6202, {	-- Fingerless Gloves
 							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.
 						}),
@@ -2375,7 +2375,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 32.3, 63.6, ELWYNN_FOREST },
 					["timeline"] = { "added 8.1.0.28724" },
 					["lvl"] = 110,
-					["g"] = {
+					["groups"] = {
 						i(3678),	-- Recipe: Crocolisk Steak
 						i(7997),	-- Red Defias Mask
 						i(2057, {	-- Pitted Defias Shortsword
@@ -2412,7 +2412,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						-- #if BEFORE 4.0.3
 						i(4777, {	-- Ironwood Maul
 							["isLimited"] = true,
@@ -2443,14 +2443,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(465, {	-- Barkeep Dobbins <Bartender>
 					["coord"] = { 43.8, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(1939),	-- Skin of Sweet Rum
 					},
 				}),
 				n(6367, {	-- Donni Anthania <Crazy Cat Lady>
 					["coord"] = { 44.2, 53.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(8485),	-- Bombay Cat (PET!)
 						i(8486),	-- Cornish Rex Cat (PET!)
 						i(8487),	-- Orange Tabby Cat (PET!)
@@ -2460,7 +2460,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1250, {	-- Drake Lindgren <General & Trade Supplies>
 					["coord"] = { 83.2, 66.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(6272, {	-- Pattern: Blue Linen Robe
 							["isLimited"] = true,
 						}),
@@ -2469,7 +2469,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(6749, {	-- Erma <Stable Master>
 					["coord"] = { 42.8, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(12354, {	-- Palomino (MOUNT!)
 							["timeline"] = { "removed 1.4.0" },
 						}),
@@ -2481,7 +2481,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(384, {	-- Katie Hunter <Horse Breeder>
 					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(5656),	-- Brown Horse (MOUNT!)
 						i(5655),	-- Chestnut Mare (MOUNT!)
 						i(2414),	-- Pinto (MOUNT!)
@@ -2493,7 +2493,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1198, {	-- Rallic Finn <Bowyer>
 					["coord"] = { 83.2, 66.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
 						}),
@@ -2502,7 +2502,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(66, {	-- Tharynn Bouden <Trade Supplies>
 					["coord"] = { 41.8, 67.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
 							["isLimited"] = true,
 						}),

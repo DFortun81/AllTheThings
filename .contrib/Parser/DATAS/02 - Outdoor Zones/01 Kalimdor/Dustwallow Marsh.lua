@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					412,	-- Spider (PET!)
 					420,	-- Toad (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(385),	-- Mouse (PET!)
 					pet(489, {	-- Spawn of Onyxia (PET!)
 						["description"] = "Can be found in the area around Onyxia's Lair in Dustwallow Marsh.",

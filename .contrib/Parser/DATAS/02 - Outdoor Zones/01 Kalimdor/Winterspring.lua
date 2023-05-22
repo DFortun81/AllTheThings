@@ -281,7 +281,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					472,	-- Rabid Nut Varmint 5000 (PET!)
 					471,	-- Robo-Chick (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(487),	-- Alpine Chipmunk (PET!)
 					pet(441),	-- Alpine Hare (PET!)
 					p(1163, {	-- Anodized Robo Cub

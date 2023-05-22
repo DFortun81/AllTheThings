@@ -707,11 +707,11 @@ root(ROOTS.Zones, {
 					prof(BLACKSMITHING, {
 						n(20124, {	-- Kradu Grimblade <Weaponsmith Trainer>
 							["coord"] = { 69.6, 43.6, SHATTRATH_CITY },
-							["g"] = TBC_WEAPONSMITHING,
+							["groups"] = TBC_WEAPONSMITHING,
 						}),
 						n(20125, {	-- Zula Slagfury <Armorsmith Trainer>
 							["coord"] = { 69.8, 42.6, SHATTRATH_CITY },
-							["g"] = TBC_ARMORSMITHING,
+							["groups"] = TBC_ARMORSMITHING,
 						}),
 					}),
 				}),

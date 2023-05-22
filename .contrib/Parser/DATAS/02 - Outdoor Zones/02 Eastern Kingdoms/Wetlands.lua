@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					420,	-- Toad (PET!)
 					418,	-- Water Snake (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(509, {	-- Tiny Bog Beast (PET!)
 						["coord"] = { 54.6, 33.0, WETLANDS },
 					}),

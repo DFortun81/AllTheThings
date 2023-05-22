@@ -238,7 +238,7 @@ root(ROOTS.Zones, {
 						379,	-- Squirrel (PET!)
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(649),	-- Biletoad (PET!)
 						p(1167, {	-- Emerald Proto-Whelp
 							["crs"] = { 68850 },	-- Emerald Proto-Whelp

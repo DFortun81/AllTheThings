@@ -280,7 +280,7 @@ root(ROOTS.Zones, {
 						379,	-- Squirrel (PET!)
 						432,	-- Stripe-Tailed Scorpid (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(514, {	-- Flayer Youngling (PET!)
 							["description"] = "Found in Razorthorn Rise on the border of Hellfire and Terokkar.",
 						}),

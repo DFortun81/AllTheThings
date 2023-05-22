@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					503,	-- Silky Moth (PET!)
 					405,	-- Tree Python (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(632),	-- Ash Lizard (PET!)
 					pet(504, {	-- Diemetradon Hatchling (PET!)
 						["description"] = "Can be found around Golakka Hot Springs, near Elder Diemetradons.",

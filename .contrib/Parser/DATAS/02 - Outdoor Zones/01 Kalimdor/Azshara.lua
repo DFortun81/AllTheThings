@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					469,	-- Twilight Beetle (PET!)
 					470,	-- Twilight Spider (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(472),	-- Rabid Nut Varmint 5000 (PET!)
 					pet(471, {	-- Robo-Chick (PET!)
 						["coords"] = {
@@ -2187,7 +2187,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.8, 50.2, AZSHARA },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(49265),	-- Recovered Knit Belt
 						i(49266),	-- Recovered Knit Boots
 						i(49267),	-- Recovered Knit Bracers
