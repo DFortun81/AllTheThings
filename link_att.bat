@@ -4,7 +4,7 @@
 @echo off
 
 call :make_hardlinks "..\..\..\..\_ptr_\Interface\Addons\AllTheThings"
-call :make_hardlinks "..\..\..\..\_ptr2_\Interface\Addons\AllTheThings"
+call :make_hardlinks "..\..\..\..\_xptr_\Interface\Addons\AllTheThings"
 goto :EOF
 
 :make_hardlinks
