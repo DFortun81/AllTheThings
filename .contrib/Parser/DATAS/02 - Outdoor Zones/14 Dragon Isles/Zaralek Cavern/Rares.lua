@@ -32,6 +32,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75325,
 				["g"] = {
 					bo(75326, true),
+					i(205114, {	-- Brul (PET!)
+						["description"] = "After defeating Brullo, eat Rocks on the Rocks to transform then open the chest.",
+						["cost"] = { { "i", 204845, 1 } },	-- 1x Rocks on the Rocks
+					}),
 					i(204847),	-- Recipe: Rocks on the Rocks (RECIPE!)
 					i(205313),	-- Brullo's Wristbraces
 					i(205320),	-- Greatbelt of the Stronk

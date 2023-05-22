@@ -536,6 +536,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71343, 377280);	-- Prototype Regal Barding Framework
 			-- Artisan Curios
 			FirstCraft(74477, 400808, ADDED_10_0_7);	-- Ancient Ceremonial Trident
+			-- Legendary
+			--FirstCraft(x, 409224, ADDED_10_1_0);	-- Reclaimed Gauntlet Chassis
 		})),
 		filter(MISC, {
 			i(203408, {["timeline"] = {ADDED_10_0_7}}),	-- Ancient Ceremonial Trident
@@ -553,6 +555,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(191933),	-- Primal Whetstone+
 			i(191939),	-- Primal Whetstone++
 			i(191940),	-- Primal Whetstone+++
+			i(204832, {["timeline"] = {ADDED_10_1_0}}),	-- Reclaimed Gauntlet Chassis
 			i(191260),	-- Serevite Repair Hammer
 			i(191256),	-- Serevite Skeleton Key
 			i(205043, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Clasp+
@@ -1119,10 +1122,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 		filter(BATTLE_PETS, {
 			i(193572),	-- Quack-E (PET!)
 		}),
-		filter(MISC, {
-			i(203411, {["timeline"] = {ADDED_10_0_7}}),	-- Gnomish Voicebox
-			i(198651),	-- Piece of Scrap
-		}),
 		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = ENGINEERING,
 		},{
@@ -1240,6 +1239,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71892, 382332);	-- Quack-E
 			-- Artisan Curios
 			FirstCraft(74312, 400810, ADDED_10_0_7);	-- Gnomish Voicebox
+			-- Legendary
+			--FirstCraft(x, 407170, ADDED_10_1_0);	-- Inspired Order Recalibrator
 		})),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
@@ -1288,6 +1289,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(198293),	-- Grease Grenade++
 			i(198294),	-- Grease Grenade+++
 			i(198224),	-- Green Fireflight
+			i(203411, {["timeline"] = {ADDED_10_0_7}}),	-- Gnomish Voicebox
 			i(198310),	-- Gyroscopic Kaleidoscope+
 			i(198311),	-- Gyroscopic Kaleidoscope++
 			i(198312),	-- Gyroscopic Kaleidoscope+++
@@ -1300,6 +1302,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(198157),	-- I.W.I.N. Button Mk10+
 			i(198158),	-- I.W.I.N. Button Mk10++
 			i(198159),	-- I.W.I.N. Button Mk10+++
+			i(204856, {["timeline"] = {ADDED_10_1_0}}),	-- Inspired Order Recalibrator
 			i(198256),	-- Magazine of Healing Darts+
 			i(198257),	-- Magazine of Healing Darts++
 			i(198258),	-- Magazine of Healing Darts+++
@@ -1313,6 +1316,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(198219),	-- Overcharged Overclocker+
 			i(198220),	-- Overcharged Overclocker++
 			i(198221),	-- Overcharged Overclocker+++
+			i(198651),	-- Piece of Scrap
 			i(204823, {["timeline"] = {ADDED_10_1_0}}),	-- Polarity Bomb+
 			i(204825, {["timeline"] = {ADDED_10_1_0}}),	-- Polarity Bomb++
 			i(204826, {["timeline"] = {ADDED_10_1_0}}),	-- Polarity Bomb+++
@@ -2183,6 +2187,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71653, 374550);	-- Timewatcher's Patience
 			-- Artisan Curios
 			FirstCraft(74482, 400812, ADDED_10_0_7);	-- Crystal Tuning Fork
+			-- Legendary
+			--FirstCraft(x, 407161, ADDED_10_1_0);	-- Immaculate Coalescing Dracothyst
 		})),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)
@@ -2202,6 +2208,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(205171, {["timeline"] = {ADDED_10_1_0}}),	-- Figurine of the Gathering Storm+
 			i(205172, {["timeline"] = {ADDED_10_1_0}}),	-- Figurine of the Gathering Storm++
 			i(205173, {["timeline"] = {ADDED_10_1_0}}),	-- Figurine of the Gathering Storm+++
+			i(204854, {["timeline"] = {ADDED_10_1_0}}),	-- Immaculate Coalescing Dracothyst
 			i(193007),	-- Narcissist's Sculpture+
 			i(193008),	-- Narcissist's Sculpture++
 			i(193009),	-- Narcissist's Sculpture+++

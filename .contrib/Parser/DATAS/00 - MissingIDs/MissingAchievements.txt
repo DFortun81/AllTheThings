@@ -138,7 +138,6 @@ ach(17838),	-- Drake's Shadowflame Crest Fragments earned
 ach(17839),	-- Wyrm's Shadowflame Crest Fragments earned
 ach(17840),	-- Aspect's Shadowflame Crest Fragments earned
 10.1.0.48776
-ach(17878),	-- Me Want Bite \\ The Forbidden Flounder
 ach(18129),	-- <DNT> Loamm Niffen Rank 01 (Character)
 ach(18130),	-- <DNT> Loamm Niffen Rank 02 (Character)
 ach(18131),	-- <DNT> Loamm Niffen Rank 03 (Character)
@@ -494,7 +493,6 @@ ach(18505),	-- Booty Bay Blast Reverse: Silver
 ach(18506),	-- Booty Bay Blast Reverse: Gold
 ach(18507),	-- <Hidden> Completed Legion based Tasks \\ <Hidden> Completed 5 Legion based Tasks
 10.1.5.49595
-ach(18256),	-- Nasz'uro, the Unbound Legacy
 ach(18509),	-- <Hidden> Completed Robot based Tasks
 ach(18510),	-- Fuselight Night Flight: Bronze
 ach(18511),	-- Fuselight Night Flight: Silver

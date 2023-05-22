@@ -143,6 +143,24 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		tier(DF_TIER, {
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
+				-- TRAINER --
+				pet(3393),	-- Anubisath Idol (PET!)
+				pet(3401),	-- Arcantus (PET!)
+				pet(3387),	-- Bloodbiter (PET!)
+				pet(3398),	-- Cat (PET!)
+				pet(3400),	-- Chicken (PET!)
+				pet(3397),	-- Cockroach (PET!)
+				pet(3396),	-- Enyobon (PET!)
+				pet(3386),	-- Faceripper (PET!)
+				pet(3377),	-- Gwosh (PET!)
+				pet(3394),	-- Mechanical Pandaren Dragonling (PET!)
+				pet(3391),	-- Phantus (PET!)
+				pet(3392),	-- Skritches (PET!)
+				pet(3395),	-- Spectral Tiger Cub (PET!)
+				pet(3402),	-- Stormamu (PET!)
+				pet(3268),	-- Swog (PET!)
+				pet(3388),	-- Tina (PET!)
+				-- Only SpeciesID
 				pet(3339, {	-- Black Dragon Whelp (PET!)
 					["name"] = "Black Dragon Whelp",
 					["modelID"] = 107459,
@@ -225,6 +243,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 10.0.5
 			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 10.0.5" } }, {
+				-- Only SpeciesID
 				pet(3255, {	-- Buttercup (PET!)
 					["modelID"] = 105497,
 				}),
@@ -248,6 +267,40 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 10.0.7
 			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { "created 10.0.7" } }, {
+				-- Trainer Pets --
+				pet(3453),	-- Adinakon (PET!)
+				pet(3457),	-- Arctichnid (PET!)
+				pet(3460),	-- Blu'jaeden (PET!)
+				pet(3474),	-- Celastro (PET!)
+				pet(3473),	-- Cozmos (PET!)
+				pet(3456),	-- Drakeula (PET!)
+				pet(3452),	-- Enchanted Tuskling (PET!)
+				pet(3465),	-- Enok the Stinky (PET!)
+				pet(3450),	-- Feral Frogduck (PET!)
+				pet(3432),	-- Flow (PET!)
+				pet(3436),	-- Flow (PET!)
+				pet(3440),	-- Flow (PET!)
+				pet(3458),	-- Kazzquack (PET!)
+				pet(3472),	-- Lil' Algalon (PET!)
+				pet(3451),	-- Lord Flappinsby (PET!)
+				pet(3454),	-- Lyver (PET!)
+				pet(3466),	-- Malfunctioning Matrix (PET!)
+				pet(3459),	-- Mothoroth (PET!)
+				pet(3441),	-- Storm-Touched Ohuna (PET!)
+				pet(3442),	-- Storm-Touched Skitterer (PET!)
+				pet(3443),	-- Storm-Touched Slyvern (PET!)
+				pet(3444),	-- Storm-Touched Swoglet (PET!)
+				pet(3430),	-- Tremblor (PET!)
+				pet(3434),	-- Tremblor (PET!)
+				pet(3438),	-- Tremblor (PET!)
+				pet(3429),	-- Vortex (PET!)
+				pet(3433),	-- Vortex (PET!)
+				pet(3437),	-- Vortex (PET!)
+				pet(3431),	-- Wildfire (PET!)
+				pet(3435),	-- Wildfire (PET!)
+				pet(3439),	-- Wildfire (PET!)
+				pet(3455),	-- Yu'shor (PET!)
+				-- Only SpeciesID
 				pet(3424, {	-- [DNT] Storm Pet Boss - Epic (PET!)
 					["modelID"] = 106894,
 				}),
@@ -263,6 +316,112 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				pet(3471, {	-- Gilded Mechafrog (PET!)
 					["name"] = "Gilded Mechafrog",
 					["modelID"] = 111667,
+				}),
+			})),
+
+			-- 10.1.0
+			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 10.1.0" } }, {
+				-- Trainer Pets --
+				pet(3560),	-- Bassalt (PET!)
+				pet(3566),	-- Beeks (PET!)
+				pet(3571),	-- Brul'dan (PET!)
+				pet(3559),	-- Clawz (PET!)
+				pet(3568),	-- Dustie (PET!)
+				pet(3565),	-- Fethres (PET!)
+				pet(3572),	-- Lifft (PET!)
+				pet(3558),	-- Murrey (PET!)
+				pet(3570),	-- Swoggy (PET!)
+				pet(3573),	-- Swole (PET!)
+				pet(3567),	-- Talons (PET!)
+				pet(3569),	-- Tempe (PET!)
+				-- With SpeciesID Attached
+				i(205165, {	-- Axel (PET!)
+					["modelID"] = 112204,
+				}),
+				i(205004, {	-- Azure Swoglet (PET!)
+					["modelID"] = 112144,
+				}),
+				i(205054, {	-- Amador (PET!)
+					["modelID"] = 112171,
+				}),
+				i(206018, {	-- Baa'lial (PET!)
+					["modelID"] = 112632,
+				}),
+				i(205032, {	-- Bestial Lurker (PET!)
+					["modelID"] = 112162,
+				}),
+				i(205011, {	-- Bronze Swoglet (PET!)
+					["modelID"] = 112148,
+				}),
+				i(205017, {	-- Byrn (PET!)
+					["modelID"] = 112151,
+				}),
+				i(205024, {	-- Cheddar (PET!)
+					["modelID"] = 112159,
+				}),
+				i(205010, {	-- Crimson Swoglet (PET!)
+					["modelID"] = 112147,
+				}),
+				i(205008, {	-- Emerald Swoglet (PET!)
+					["modelID"] = 112145,
+				}),
+				i(205148, {	-- Dread Shalewing (PET!)
+					["modelID"] = 112186,
+				}),
+				i(205156, {	-- Heartseeker Moth (PET!)
+					["modelID"] = 112195,
+				}),
+				i(205018, {	-- Jade Skitterbug (PET!)
+					["modelID"] = 112155,
+				}),
+				i(205116, {	-- Jerrie (PET!)
+					["modelID"] = 112173,
+				}),
+				i(205009, {	-- Karrit (PET!)
+					["modelID"] = 112146,
+				}),
+				i(205166, {	-- Kromos (PET!)
+					["modelID"] = 112205,
+				}),
+				i(205013, {	-- Lettuce (PET!)
+					["modelID"] = 112149,
+				}),
+				i(205153, {	-- Mikah (PET!)
+					["modelID"] = 112190,
+				}),
+				i(205149, {	-- Ravenous Shalewing (PET!)
+					["modelID"] = 112187,
+				}),
+				i(205160, {	-- Rithro (PET!)
+					["modelID"] = 111311,
+				}),
+				i(205122, {	-- Roseshell (PET!)
+					["modelID"] = 112179,
+				}),
+				i(205053, {	-- Rusty (PET!)
+					["modelID"] = 112170,
+				}),
+				i(205023, {	-- Savage Lobstrok (PET!)
+					["modelID"] = 112158,
+				}),
+				i(205164, {	-- Senega (PET!)
+					["modelID"] = 112203,
+				}),
+				i(205150, {	-- Shalewing Devourer (PET!)
+					["modelID"] = 112188,
+				}),
+				i(205035, {	-- Snapjaw Lurker (PET!)
+					["modelID"] = 112163,
+				}),
+				i(205157, {	-- Undermoth (PET!)
+					["modelID"] = 112196,
+				}),
+				i(205037, {	-- Void Lurker (PET!)
+					["modelID"] = 112164,
+				}),
+				-- Without SpeciesID Attached
+				i(205232, {	-- [DNT] REUSE (PET!)
+					["modelID"] = 112180,
 				}),
 			})),
 		}),

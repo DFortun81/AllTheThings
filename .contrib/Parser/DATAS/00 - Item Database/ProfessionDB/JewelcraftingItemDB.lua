@@ -211,3 +211,5 @@ i(205176, 408398);	-- Figurine of the Gathering Storm
 i(204146, 403131);	-- Obsidian Combatant's Jeweled Amulet
 i(204147, 403132);	-- Obsidian Combatant's Jeweled Signet
 i(205175, 408397);	-- Statuette of Foreseen Power
+-- SPECIAL --
+i(0, 407161);		-- Immaculate Coalescing Dracothyst

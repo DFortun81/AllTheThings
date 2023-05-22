@@ -29,8 +29,6 @@ r(413757),	-- Death's Gamble
 r(413758),	-- Belt of the Mentor
 r(413760),	-- Stygian Shield
 r(414590),	-- Feet Picklers
-10.1.5.49595
-r(409224),	-- Reclaimed Gauntlet Chassis
 
 
 
@@ -68,5 +66,3 @@ r(413757),	-- Death's Gamble
 r(413758),	-- Belt of the Mentor
 r(413760),	-- Stygian Shield
 r(414590),	-- Feet Picklers
-10.1.5.49595
-r(409224),	-- Reclaimed Gauntlet Chassis

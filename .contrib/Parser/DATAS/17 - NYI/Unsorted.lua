@@ -205,44 +205,6 @@ root(ROOTS.Unsorted, {
 				i(205957),	-- Azure Renewal Tabard
 				i(205958),	-- Ensemble: Azure Renewal Finery
 			}),
-			filter(BATTLE_PETS, {
-				i(205165),	-- Axel (PET!)
-				i(205004),	-- Azure Swoglet (PET!)
-				i(205054),	-- Amador (PET!)
-				i(206018),	-- Baa'lial (PET!)
-				i(205032),	-- Bestial Lurker (PET!)
-				i(205011),	-- Bronze Swoglet (PET!)
-				i(205114),	-- Brul (PET!)
-				i(205017),	-- Byrn (PET!)
-				i(205024),	-- Cheddar (PET!)
-				i(205010),	-- Crimson Swoglet (PET!)
-				i(205008),	-- Emerald Swoglet (PET!)
-				i(205148),	-- Dread Shalewing (PET!)
-				i(205156),	-- Heartseeker Moth (PET!)
-				i(205018),	-- Jade Skitterbug (PET!)
-				i(205116),	-- Jerrie (PET!)
-				i(205009),	-- Karrit (PET!)
-				i(205166),	-- Kromos (PET!)
-				i(205013),	-- Lettuce (PET!)
-				i(205021),	-- Lord Stantley (PET!)
-				i(205153),	-- Mikah (PET!)
-				i(205162),	-- Nelthara (PET!)
-				i(205937),	-- Newsy (PET!)
-				i(205149),	-- Ravenous Shalewing (PET!)
-				i(205160),	-- Rithro (PET!)
-				i(205122),	-- Roseshell (PET!)
-				i(205053),	-- Rusty (PET!)
-				i(205151),	-- Salverun (PET!)
-				i(205023),	-- Savage Lobstrok (PET!)
-				i(205164),	-- Senega (PET!)
-				i(205150),	-- Shalewing Devourer (PET!)
-				i(205035),	-- Snapjaw Lurker (PET!)
-				i(205121),	-- Tricky (PET!)
-				i(205157),	-- Undermoth (PET!)
-				i(205037),	-- Void Lurker (PET!)
-				-- Not attached
-				i(205232),	-- [DNT] REUSE
-			}),
 			filter(ILLUSIONS, {
 				ill(6836),	-- Shadow Flame
 			}),

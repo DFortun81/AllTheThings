@@ -129,6 +129,26 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}
 			}),
 
+
+				-- RENOWN 20 --
+			q(75744, {	-- A Token of Our Gratitude
+				["minReputation"] = { 2564, 20 },	-- Loamm Niffen Renown 20
+				["provider"] = { "n", 205127 },	-- Newsy
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
+				["g"] = {
+					i(204682),	-- Enchanted Wyrm's Shadowflame Crest
+				}
+			}),
+			q(76067, {	-- Signed, Sealed, Self-Delivered
+				["minReputation"] = { 2564, 20 },	-- Loamm Niffen Renown 20
+				["sourceQuests"] = { 75744 },	-- A Token of Our Gratitude
+				["provider"] = { "n", 205127 },	-- Newsy
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
+				["g"] = {
+					i(205937),	-- Newsy (PET!)
+				}
+			}),
+
 				-- Unsorted (which renown level?) --
 			q(75721, {
 				-- TODO: ["minReputation"] = { 2564, 5 },	-- Loamm Niffen Renown 5

@@ -15,7 +15,7 @@ end
 
 -- If the pet is obtained from an item, use i(itemID, speciesID);
 -- If the pet can be caught through pet battle use n(npcID, speciesID);
--- Otherwise use i(0, speciesID); example if the pet is obtained from store.
+-- Otherwise use i(0, speciesID);	example if the pet is obtained from store.
 -- At the end the comment should contain the pet name not npc or item name.
 -- To acquire itemID, npcID and speciesID one can use wowhead. If you want speciesID from wowhead it can be found in "Summoned by" tab.
 -- To manually collect the speciesID in-game (live or PTR):
@@ -2556,6 +2556,23 @@ n(189157, 3322);	-- Woodbiter Piculet
 i(0, 3356);			-- Chalkshell Turtle
 i(0, 3248);			-- Ichabod
 i(0, 3320);			-- Whitewhisker
+-- TRAINER --
+i(0, 3393);			-- Anubisath Idol
+i(0, 3401);			-- Arcantus
+i(0, 3387);			-- Bloodbiter
+i(0, 3398);			-- Cat
+i(0, 3400);			-- Chicken
+i(0, 3397);			-- Cockroach
+i(0, 3396);			-- Enyobon
+i(0, 3386);			-- Faceripper
+i(0, 3377);			-- Gwosh
+i(0, 3394);			-- Mechanical Pandaren Dragonling
+i(0, 3391);			-- Phantus
+i(0, 3392);			-- Skritches
+i(0, 3395);			-- Spectral Tiger Cub
+i(0, 3402);			-- Stormamu
+i(0, 3268);			-- Swog
+i(0, 3388);			-- Tina
 -- NYI --
 i(0, 3339);			-- Black Dragon Whelp
 i(0, 3340);			-- Blue Dragon Whelp
@@ -2579,23 +2596,6 @@ i(193863, 0);		-- zzOld - [PH] Dark Baby Vorquin (REUSE)
 i(193063, 0);		-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
 i(193862, 0);		-- zzOld - [PH] Pale Baby Vorquin (REUSE)
 i(191929, 0);		-- zzOld - [PH] White Flying Squirrel (REUSE)
--- TRAINER --
-i(0, 3268);			-- Swog
-i(0, 3377);			-- Gwosh
-i(0, 3386);			-- Faceripper \\ Brown Duck \\ [PH] Brown Duck
-i(0, 3387);			-- Bloodbiter \\ REUSE ME \\ [PH] Brown Baby Thunder Lizard
-i(0, 3388);			-- Tina \\ [PH] White Shaggy Rabbit
-i(0, 3391);			-- Phantus
-i(0, 3392);			-- Skritches
-i(0, 3393);			-- Anubisath Idol
-i(0, 3394);			-- Mechanical Pandaren Dragonling
-i(0, 3395);			-- Spectral Tiger Cub
-i(0, 3396);			-- Enyobon
-i(0, 3397);			-- Cockroach
-i(0, 3398);			-- Cat
-i(0, 3400);			-- Chicken
-i(0, 3401);			-- Arcantus
-i(0, 3402);			-- Stormamu
 
 ------------------
 -- PATCH 10.0.2 --
@@ -2643,45 +2643,45 @@ i(204183, 3475);	-- Volatile Self-Driving Toolbox
 i(202413, 3446);	-- Vortex
 i(191930, 3261);	-- Wakyn
 i(202412, 3448);	-- Wildfire
--- NYI --
-i(0, 3424);	-- [DNT] Storm Pet Boss - Epic
-i(0, 3422);	-- [DNT] Storm Pet Boss - Legendary
-i(0, 3425);	-- [DNT] Storm Pet Boss - Rare
-i(0, 3423);	-- [DNT] Storm Pet Fodder
-i(0, 3471);	-- Gilded Mechafrog
 -- TRAINER --
-i(0, 3429);			-- Vortex
-i(0, 3430);			-- Tremblor
-i(0, 3431);			-- Wildfire
+i(0, 3453);			-- Adinakon
+i(0, 3457);			-- Arctichnid
+i(0, 3460);			-- Blu'jaeden
+i(0, 3474);			-- Celastro
+i(0, 3473);			-- Cozmos
+i(0, 3456);			-- Drakeula
+i(0, 3452);			-- Enchanted Tuskling
+i(0, 3465);			-- Enok the Stinky
+i(0, 3450);			-- Feral Frogduck
 i(0, 3432);			-- Flow
-i(0, 3433);			-- Vortex
-i(0, 3434);			-- Tremblor
-i(0, 3435);			-- Wildfire
 i(0, 3436);			-- Flow
-i(0, 3437);			-- Vortex
-i(0, 3438);			-- Tremblor
-i(0, 3439);			-- Wildfire
 i(0, 3440);			-- Flow
+i(0, 3458);			-- Kazzquack
+i(0, 3472);			-- Lil' Algalon
+i(0, 3451);			-- Lord Flappinsby
+i(0, 3454);			-- Lyver
+i(0, 3466);			-- Malfunctioning Matrix
+i(0, 3459);			-- Mothoroth
 i(0, 3441);			-- Storm-Touched Ohuna
 i(0, 3442);			-- Storm-Touched Skitterer
 i(0, 3443);			-- Storm-Touched Slyvern
 i(0, 3444);			-- Storm-Touched Swoglet
-i(0, 3450);			-- Feral Frogduck
-i(0, 3451);			-- Lord Flappinsby
-i(0, 3452);			-- Enchanted Tuskling
-i(0, 3453);			-- Adinakon
-i(0, 3454);			-- Lyver
+i(0, 3430);			-- Tremblor
+i(0, 3434);			-- Tremblor
+i(0, 3438);			-- Tremblor
+i(0, 3429);			-- Vortex
+i(0, 3433);			-- Vortex
+i(0, 3437);			-- Vortex
+i(0, 3431);			-- Wildfire
+i(0, 3435);			-- Wildfire
+i(0, 3439);			-- Wildfire
 i(0, 3455);			-- Yu'shor
-i(0, 3456);			-- Drakeula
-i(0, 3457);			-- Arctichnid
-i(0, 3458);			-- Kazzquack
-i(0, 3459);			-- Mothoroth
-i(0, 3460);			-- Blu'jaeden
-i(0, 3465);			-- Enok the Stinky
-i(0, 3466);			-- Malfunctioning Matrix
-i(0, 3472);			-- Lil' Algalon
-i(0, 3473);			-- Cozmos
-i(0, 3474);			-- Celastro
+-- NYI --
+i(0, 3424);			-- [DNT] Storm Pet Boss - Epic
+i(0, 3422);			-- [DNT] Storm Pet Boss - Legendary
+i(0, 3425);			-- [DNT] Storm Pet Boss - Rare
+i(0, 3423);			-- [DNT] Storm Pet Fodder
+i(0, 3471);			-- Gilded Mechafrog
 
 ------------------
 -- PATCH 10.1.0 --
@@ -2691,45 +2691,61 @@ i(205003, 3512);	-- Ambre
 i(205154, 3548);	-- Aquapo
 i(205002, 3511);	-- Blaise
 i(205119, 3536);	-- Bashful
+i(205114, 3533);	-- Brul
 i(205123, 3540);	-- Brulee
 i(205026, 3524);	-- Devourer Lobstrok
 i(205118, 3535);	-- Diamondshell
 i(193377, 3294);	-- Gerald
+i(205021, 3521);	-- Lord Stantley
 i(205052, 3530);	-- Miloh
-i(206040, 3581);	-- Mote of Nasz'uro (New Secret)
+i(206040, 3581);	-- Mote of Nasz'uro
+i(205937, 3578);	-- Newsy
 i(205050, 3528);	-- Paulie
 i(205051, 3529);	-- Rango
 i(205147, 3541);	-- Ridged Shalewing
 i(205231, 3557);	-- Roggy
 i(204894, 3493);	-- Roland
+i(205151, 3545);	-- Salverun
 i(205152, 3546);	-- Skaarn
 i(205159, 3551);	-- Teardrop Moth
 i(205120, 3537);	-- Thimblerig
 i(205121, 3538);	-- Tricky
 -- NPC --
-n(203287, 3477);	-- Puddlehopper
-n(203288, 3478);	-- Rock Martin
-n(203289, 3479);	-- Yellabon
-n(203292, 3480);	-- Endmite
-n(203308, 3481);	-- Stonewhisker
-n(203310, 3482);	-- Cobbleshell
 n(203311, 3483);	-- Boulderfang
-n(203312, 3484);	-- Slabwing
+n(203310, 3482);	-- Cobbleshell
+n(203367, 3488);	-- Deepridger
+n(203377, 3490);	-- Ebonwing Moth
+n(203292, 3480);	-- Endmite
 n(203313, 3485);	-- Hollow Moth
 n(203358, 3486);	-- Lithengale
-n(203364, 3487);	-- Scarlapod
-n(203367, 3488);	-- Deepridger
-n(203372, 3489);	-- Sunglow Cobra
-n(203377, 3490);	-- Ebonwing Moth
+n(203287, 3477);	-- Puddlehopper
+n(203288, 3478);	-- Rock Martin
 n(198612, 3589);	-- Rusziona
--- UNSORTED --
+n(203364, 3487);	-- Scarlapod
+n(203312, 3484);	-- Slabwing
+n(203308, 3481);	-- Stonewhisker
+n(203372, 3489);	-- Sunglow Cobra
+n(203289, 3479);	-- Yellabon
+-- TRAINER --
+i(0, 3560);			-- Bassalt
+i(0, 3566);			-- Beeks
+i(0, 3571);			-- Brul'dan
+i(0, 3559);			-- Clawz
+i(0, 3568);			-- Dustie
+i(0, 3565);			-- Fethres
+i(0, 3572);			-- Lifft
+i(0, 3558);			-- Murrey
+i(0, 3570);			-- Swoggy
+i(0, 3573);			-- Swole
+i(0, 3567);			-- Talons
+i(0, 3569);			-- Tempe
+-- NYI --
 i(205165, 3555);	-- Axel
 i(205004, 3513);	-- Azure Swoglet
 i(205054, 3532);	-- Amador
 i(206018, 3580);	-- Baa'lial
 i(205032, 3525);	-- Bestial Lurker
 i(205011, 3517);	-- Bronze Swoglet
-i(205114, 3533);	-- Brul
 i(205017, 3519);	-- Byrn
 i(205024, 3523);	-- Cheddar
 i(205010, 3516);	-- Crimson Swoglet
@@ -2741,34 +2757,24 @@ i(205116, 3534);	-- Jerrie
 i(205009, 3515);	-- Karrit
 i(205166, 3556);	-- Kromos
 i(205013, 3518);	-- Lettuce
-i(205021, 3521);	-- Lord Stantley
 i(205153, 3547);	-- Mikah
-i(205162, 3553);	-- Nelthara
-i(205937, 3578);	-- Newsy
 i(205149, 3543);	-- Ravenous Shalewing
 i(205160, 3552);	-- Rithro
 i(205122, 3539);	-- Roseshell
 i(205053, 3531);	-- Rusty
-i(205151, 3545);	-- Salverun
 i(205023, 3522);	-- Savage Lobstrok
 i(205164, 3554);	-- Senega
 i(205150, 3544);	-- Shalewing Devourer
 i(205035, 3526);	-- Snapjaw Lurker
 i(205157, 3550);	-- Undermoth
 i(205037, 3527);	-- Void Lurker
--- TRAINER --
-i(0, 3558);			-- Murrey
-i(0, 3559);			-- Clawz
-i(0, 3560);			-- Bassalt
-i(0, 3565);			-- Fethres
-i(0, 3566);			-- Beeks
-i(0, 3567);			-- Talons
-i(0, 3568);			-- Dustie
-i(0, 3569);			-- Tempe
-i(0, 3570);			-- Swoggy
-i(0, 3571);			-- Brul'dan
-i(0, 3572);			-- Lifft
-i(0, 3573);			-- Swole
+i(205232, 0);		-- [DNT] REUSE
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+i(205162, 3553);	-- Nelthara
+
 
 -- #if ANYCLASSIC
 -----------------

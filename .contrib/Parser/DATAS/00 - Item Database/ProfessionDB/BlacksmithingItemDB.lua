@@ -2143,3 +2143,5 @@ i(205137, 408282);	-- Shadowed Alloy
 i(205143, 408288);	-- Shadowed Belt Clasp
 i(205145, 408326);	-- Shadowed Impact Buckler
 i(205144, 408283);	-- Shadowed Razing Annihilator
+-- SPECIAL --
+i(0, 409224);		-- Reclaimed Gauntlet Chassis

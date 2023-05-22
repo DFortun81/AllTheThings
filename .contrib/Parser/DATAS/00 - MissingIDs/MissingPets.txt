@@ -1,7 +1,7 @@
 5.0.3.15882
 pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	--
-pet(73),	--
+pet(71),	-- 
+pet(73),	-- 
 pet(154),	-- Lucky
 pet(230),	-- Macabre Marionette
 pet(257),	-- Murkimus the Gladiator
@@ -12,6 +12,7 @@ pet(375),	-- The Gurkster
 pet(384),	-- Otter Pup
 pet(390),	-- Deer
 pet(394),	-- Sheep
+pet(429),	-- Lava Beetle
 pet(434),	-- Ram
 pet(444),	-- PattyMack 2.0 - WildBattlePet Test
 pet(462),	-- Jacob the Test Seagull
@@ -243,7 +244,6 @@ pet(1423),	-- Bitey
 pet(1424),	-- Gyrexle, the Eternal Mechanic
 pet(1443),	-- Idol of Decay
 pet(1444),	-- Wishbright Lantern
-pet(1463),	-- Wood Wasp
 pet(1472),	-- Gnawface
 pet(1473),	-- Carrotus Maximus
 pet(1474),	-- Gorefu
@@ -549,7 +549,7 @@ pet(2368),	-- Scales
 pet(2370),	-- Breaker
 pet(2371),	-- Stickers
 8.1.0.27934
-pet(2481),	--
+pet(2481),	-- 
 pet(2485),	-- Leper Rat
 pet(2486),	-- Cockroach
 pet(2487),	-- Automated Spider Tank
@@ -722,73 +722,6 @@ pet(3091),	-- Churro
 pet(3155),	-- Gurgl
 pet(3156),	-- Hornswoggle
 pet(3158),	-- Missing1
-10.0.0.44649
-pet(3268),	-- Swog
-10.0.0.44999
-pet(3377),	-- Gwosh
-10.0.0.45232
-pet(3386),	-- Faceripper \\ Brown Duck \\ [PH] Brown Duck
-pet(3387),	-- Bloodbiter \\ REUSE ME \\ [PH] Brown Baby Thunder Lizard
-pet(3388),	-- Tina \\ [PH] White Shaggy Rabbit
-pet(3391),	-- Phantus
-pet(3392),	-- Skritches
-pet(3393),	-- Anubisath Idol
-pet(3394),	-- Mechanical Pandaren Dragonling
-pet(3395),	-- Spectral Tiger Cub
-10.0.0.45335
-pet(3396),	-- Enyobon
-pet(3397),	-- Cockroach
-pet(3398),	-- Cat
-pet(3400),	-- Chicken
-pet(3401),	-- Arcantus
-pet(3402),	-- Stormamu
-10.0.7.47910
-pet(3429),	-- Vortex
-pet(3430),	-- Tremblor
-pet(3431),	-- Wildfire
-pet(3432),	-- Flow
-pet(3433),	-- Vortex
-pet(3434),	-- Tremblor
-pet(3435),	-- Wildfire
-pet(3436),	-- Flow
-pet(3437),	-- Vortex
-pet(3438),	-- Tremblor
-pet(3439),	-- Wildfire
-pet(3440),	-- Flow
-pet(3441),	-- Storm-Touched Ohuna
-pet(3442),	-- Storm-Touched Skitterer
-pet(3443),	-- Storm-Touched Slyvern
-pet(3444),	-- Storm-Touched Swoglet
-pet(3450),	-- Feral Frogduck
-pet(3451),	-- Lord Flappinsby
-pet(3452),	-- Enchanted Tuskling
-pet(3453),	-- Adinakon
-pet(3454),	-- Lyver
-pet(3455),	-- Yu'shor
-pet(3456),	-- Drakeula
-pet(3457),	-- Arctichnid
-pet(3458),	-- Kazzquack
-pet(3459),	-- Mothoroth
-pet(3460),	-- Blu'jaeden
-pet(3465),	-- Enok the Stinky
-pet(3466),	-- Malfunctioning Matrix
-pet(3472),	-- Lil' Algalon
-pet(3473),	-- Cozmos
-pet(3474),	-- Celastro
-10.1.0.48537
-pet(3558),	-- Murrey
-pet(3559),	-- Clawz
-pet(3560),	-- Bassalt
-10.1.0.48661
-pet(3565),	-- Fethres
-pet(3566),	-- Beeks
-pet(3567),	-- Talons
-pet(3568),	-- Dustie
-pet(3569),	-- Tempe
-pet(3570),	-- Swoggy
-pet(3571),	-- Brul'dan
-pet(3572),	-- Lifft
-pet(3573),	-- Swole
 10.1.5.49516
 pet(3587),	-- Lifelike Mechanical Duckling
 pet(3588),	-- Iggy
@@ -796,7 +729,6 @@ pet(3589),	-- Rusziona
 pet(3590),	-- Belastrasza
 pet(3596),	-- Kabluey
 10.1.5.49595
-pet(3581),	-- Mote of Nasz'uro
 pet(3597),	-- Princess Vorquinstrasza
 pet(3598),	-- Zhusadormu
 pet(3599),	-- Zalethgos
@@ -811,8 +743,8 @@ Missing in PetDB.lua
 
 5.0.3.15882
 pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	--
-pet(73),	--
+pet(71),	-- 
+pet(73),	-- 
 pet(154),	-- Lucky
 pet(230),	-- Macabre Marionette
 pet(257),	-- Murkimus the Gladiator
@@ -823,13 +755,16 @@ pet(375),	-- The Gurkster
 pet(384),	-- Otter Pup
 pet(390),	-- Deer
 pet(394),	-- Sheep
+pet(431),	-- Rattlesnake
 pet(434),	-- Ram
+pet(438),	-- King Snake
 pet(444),	-- PattyMack 2.0 - WildBattlePet Test
+pet(456),	-- Blighthawk
+pet(457),	-- Festering Maggot
+pet(458),	-- Lost of Lordaeron
 pet(462),	-- Jacob the Test Seagull
 pet(464),	-- Grey Moth
 pet(465),	-- Ravager Hatchling
-pet(469),	-- Twilight Beetle
-pet(470),	-- Twilight Spider
 pet(471),	-- Robo-Chick
 pet(472),	-- Rabid Nut Varmint 5000
 pet(473),	-- Turquoise Turtle
@@ -839,7 +774,6 @@ pet(476),	-- Gazelle
 pet(477),	-- Gazelle Fawn
 pet(478),	-- Forest Moth
 pet(479),	-- Elfin Rabbit
-pet(480),	-- Topaz Shale Hatchling
 pet(482),	-- Rock Viper
 pet(483),	-- Horny Toad
 pet(484),	-- Desert Spider
@@ -861,7 +795,6 @@ pet(500),	-- Minfernal
 pet(502),	-- Spotted Bell Frog
 pet(503),	-- Silky Moth
 pet(504),	-- Diemetradon Hatchling
-pet(505),	-- Twilight Iguana
 pet(506),	-- Venomspitter Hatchling
 pet(507),	-- Crested Owl
 pet(508),	-- Darkshore Cub
@@ -871,21 +804,14 @@ pet(511),	-- Sidewinder
 pet(512),	-- Scarab Hatchling
 pet(513),	-- Qiraji Guardling
 pet(514),	-- Flayer Youngling
-pet(515),	-- Sporeling Sprout
 pet(517),	-- Warpstalker Hatchling
-pet(518),	-- Clefthoof Runt
 pet(519),	-- Fel Flame
 pet(521),	-- Fledgling Nether Ray
 pet(523),	-- Devouring Maggot
 pet(525),	-- Turkey
 pet(528),	-- Scalded Basilisk Hatchling
 pet(529),	-- Fjord Worg Pup
-pet(530),	-- Oily Slimeling
 pet(532),	-- Stunted Shardhorn
-pet(534),	-- Imperial Eagle Chick
-pet(536),	-- Tundra Penguin
-pet(537),	-- Dragonbone Hatchling
-pet(538),	-- Scourged Whelpling
 pet(539),	-- Grotto Vole
 pet(540),	-- Carrion Rat
 pet(541),	-- Fire-Proof Roach
@@ -899,15 +825,9 @@ pet(548),	-- Wildhammer Gryphon Hatchling
 pet(549),	-- Yellow-Bellied Marmot
 pet(550),	-- Highlands Mouse
 pet(552),	-- Twilight Fiendling
-pet(553),	-- Stowaway Rat
-pet(554),	-- Crimson Shale Hatchling
-pet(555),	-- Deepholm Cockroach
-pet(556),	-- Crystal Beetle
 pet(557),	-- Nether Faerie Dragon
 pet(558),	-- Arctic Fox Kit
-pet(559),	-- Crimson Geode
 pet(560),	-- Sea Gull
-pet(562),	-- Coral Adder
 pet(564),	-- Emerald Turtle
 pet(565),	-- Jungle Darter
 pet(566),	-- Mirror Strider
@@ -925,20 +845,14 @@ pet(629),	-- Shore Crawler
 pet(630),	-- Gilnean Raven
 pet(631),	-- Emerald Boa
 pet(632),	-- Ash Lizard
-pet(633),	-- Mountain Skunk
 pet(634),	-- Crystal Spider
 pet(637),	-- Skittering Cavern Crawler
 pet(638),	-- Nether Roach
-pet(639),	-- Borean Marmot
 pet(640),	-- Snowshoe Hare
-pet(641),	-- Arctic Hare
 pet(644),	-- Fjord Rat
 pet(645),	-- Highlands Turkey
-pet(646),	-- Chicken
-pet(647),	-- Grizzly Squirrel
 pet(648),	-- Huge Toad
 pet(649),	-- Biletoad
-pet(675),	-- Stormwind Rat
 pet(677),	-- Shy Bandicoon
 pet(678),	-- Jungle Grub
 pet(679),	-- Summit Kid
@@ -990,7 +904,6 @@ pet(752),	-- Yellow-Bellied Bullfrog
 pet(753),	-- Garden Moth
 pet(754),	-- Shrine Fly
 pet(755),	-- Death's Head Cockroach
-pet(756),	-- Fungal Moth
 pet(800),	-- Muffin
 pet(817),	-- Wild Jade Hatchling
 pet(818),	-- Wild Golden Hatchling
@@ -1007,14 +920,12 @@ pet(830),	-- Sir Buckethead
 pet(831),	-- Miss Mystical
 pet(832),	-- Boomy Jr.
 pet(833),	-- Dr. Stinky
-pet(837),	-- Emerald Shale Hatchling
-pet(838),	-- Amethyst Shale Hatchling
 pet(851),	-- Horned Lizard
 5.0.3.15890
 pet(863),	-- Widow Spiderling
 pet(864),	-- Spider
 6.0.1.18179
-n(0, 1013);	-- Wanderer's Festival Hatchling
+pet(1013),	-- Wanderer's Festival Hatchling
 pet(1128),	-- Sumprush Rodent
 pet(1157),	-- Harpy Youngling
 pet(1158),	-- Stunted Yeti
@@ -1024,7 +935,6 @@ pet(1161),	-- Infinite Whelpling
 pet(1162),	-- Fluxfire Feline
 pet(1163),	-- Anodized Robo Cub
 pet(1164),	-- Cogblade Raptor
-pet(1165),	-- Nexus Whelpling
 pet(1166),	-- Kun-Lai Runt
 pet(1167),	-- Emerald Proto-Whelp
 pet(1175),	-- Thundertail Flapper
@@ -1048,12 +958,11 @@ pet(2144),	-- REUSE \\ Demon Goat
 pet(2349),	-- Baa'l
 pet(2350),	-- Baa'l
 8.1.0.27934
-pet(2481),	--
+pet(2481),	-- 
 8.1.0.28048
 pet(2480),	-- Test Pet
 8.1.5.29141
-pet(2146),	-- Perculia's Peculiar Parrot (Has an item to learn, but is unobtainable?)
-8.2.0.30080
+pet(2146),	-- Perculia's Peculiar Parrot
 10.1.5.49516
 pet(3587),	-- Lifelike Mechanical Duckling
 pet(3588),	-- Iggy

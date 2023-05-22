@@ -112,8 +112,6 @@ r(310542),	-- Shadowlands Engineering
 r(340534),	-- Interact
 10.1.5.49516
 r(413759),	-- Replaced Servo Arm
-10.1.5.49595
-r(407170),	-- Inspired Order Recalibrator
 
 
 
@@ -927,5 +925,3 @@ r(360088),	-- Pure-Air Sail Extensions
 r(360126),	-- Erratic Genesis Matrix
 10.1.5.49516
 r(413759),	-- Replaced Servo Arm
-10.1.5.49595
-r(407170),	-- Inspired Order Recalibrator

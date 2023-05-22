@@ -14,6 +14,68 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 			2170,	-- Edge of Oblivion
 		},
 		["g"] = {
+			header(HEADERS.Item, 204177, {	-- Nasz'uro, the Unbound Legacy
+				i(204274, {	-- Ancient Memories
+					["description"] = "You need to find a Evoker thats doing this quest.",
+					["g"] = {
+						r(407161, {	-- Immaculate Coalescing Dracothyst
+							["requireSkill"] = JEWELCRAFTING,
+						}),
+						r(407170, {	-- Inspired Order Recalibrator
+							["requireSkill"] = ENGINEERING,
+						}),
+						r(409224, {	-- Reclaimed Gauntlet Chassis
+							["requireSkill"] = BLACKSMITHING,
+						}),
+					},
+				}),
+				i(205257, {	-- Temporal Vestigial
+					["description"] = "May drop from open world content. World Bosses drop 10 and rares drop 3.",
+				}),
+				n(QUESTS, bubbleDownSelf({
+					["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+					["classes"] = { EVOKER },
+				}, {
+					q(74912, {	-- Neltharion's Legacy
+						["provider"] = { "i", 204255 },	-- Cracked Titan Gem
+					}),
+					q(74913, {	-- Memories of an Artifact
+						["sourceQuests"] = { 74912 },	-- Neltharion's Legacy
+						-- ["provider"] = { "n",  },	--
+					}),
+					q(74923, {	-- It Takes a Village to Make an Artifact
+						["sourceQuests"] = { 74913 },	-- Memories of an Artifact
+						-- ["provider"] = { "n",  },	--
+						["cost"] = {
+							{ "i", 204854, 1 },	-- 1x Immaculate Coalescing Dracothyst
+							{ "i", 204856, 1 },	-- 1x Inspired Order Recalibrator
+							{ "i", 204832, 1 },	-- 1x Reclaimed Gauntlet Chassis
+						},
+						["g"] = {
+							i(204274),	-- Ancient Memories
+						},
+					}),
+					q(76158, {	-- Temporal Gossamer
+						["sourceQuests"] = { 74913 },	-- Memories of an Artifact
+						-- ["provider"] = { "n",  },	--
+						["g"] = {
+							i(204808),	-- Empowered Temporal Gossamer
+						},
+					}),
+					--q(, {	-- Nasz'uro, the Unbound Legacy
+					--	["sourceQuests"] = { 74923 },	-- It Takes a Village to Make an Artifact
+					--	["provider"] = { "n",  },	--
+					--	["g"] = {
+							i(204177),	-- Nasz'uro, the Unbound Legacy
+							ach(18256),	-- Nasz'uro, the Unbound Legacy
+					--	},
+					--}),
+				})),
+				n(TREASURES, {
+					-- Need to add all treasures...
+					i(206040),	-- Mote of Nasz'uro (PET!)
+				}),
+			}),
 			n(ACHIEVEMENTS, {
 				ach(18163, {	-- Discarded Works
 					crit(1, { -- Kazzara, the Hellforged
@@ -166,6 +228,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					203284,	-- Scalecommander Sarkareth
 				},
 				["g"] = {
+					i(204857),	-- Ancient Elementium Fragment
 					i(194642),	-- Design: Choker of Shielding (RECIPE!)
 					i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
 					i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
@@ -184,6 +247,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				},
 			}),
 			n(DROPS, {
+				i(204255, {	-- Cracked Titan Gem
+					["crs"] = { 203284 },	-- Scalecommander Sarkareth
+				}),
 				i(205876, {	-- Highland Drake: Embodiment of the Hellforged (DM!)
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 				}),

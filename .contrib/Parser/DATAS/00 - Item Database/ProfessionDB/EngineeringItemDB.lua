@@ -246,3 +246,5 @@ i(204844, 407005);	-- Polarity Bomb
 i(205036, 408052);	-- Tinker: Shadowflame Rockets
 -- DISCOVERY --
 i(0, 407006);	-- EZ-Thro Polarity Bomb
+-- SPECIAL --
+i(0, 407170);		-- Inspired Order Recalibrator

@@ -139,8 +139,6 @@ r(412557),	-- TEST CRUSHING (DNT)
 r(413743),	-- Gem of the Nerubians
 r(413751),	-- Frostwyrm's Icy Gaze
 r(413752),	-- Frostwyrm's Frigid Stare
-10.1.5.49595
-r(407161),	-- Immaculate Coalescing Dracothyst
 
 
 
@@ -1515,5 +1513,3 @@ r(412557),	-- TEST CRUSHING (DNT)
 r(413743),	-- Gem of the Nerubians
 r(413751),	-- Frostwyrm's Icy Gaze
 r(413752),	-- Frostwyrm's Frigid Stare
-10.1.5.49595
-r(407161),	-- Immaculate Coalescing Dracothyst

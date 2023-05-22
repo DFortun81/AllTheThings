@@ -267,6 +267,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					]]--
 				}),
 				n(REWARDS, {
+					i(205260),	-- Fleeting Glowspores
 					i(205288),	-- Buried Niffen Collection (Frostfire)
 					i(205347),	-- Gathered Niffen Resources (Thieving Critters)
 					i(205346, {	-- Hidden Niffen Treasure (Wroms, Vertical)

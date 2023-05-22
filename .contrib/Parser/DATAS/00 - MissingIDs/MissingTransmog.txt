@@ -55778,6 +55778,7 @@ s(84271)/i(143774),	--
 s(84272)/i(143774),	-- 
 s(84273)/i(143781),	-- 
 s(84282)/i(143916),	-- 
+s(84485)/i(144217),	-- Inelava, Spirit of Inebriation \\ ava, Spirit of Inebriation
 s(84492)/i(144237),	-- 
 s(84497)/i(144249),	-- Archimonde's Hatred Reborn \\ imonde's Hatred Reborn
 s(84498)/i(144257),	-- 
