@@ -49,6 +49,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				}),
 			}),
 			d(MYTHIC_DUNGEON, {
+				--[[
 				e(2521, {	-- Chronikar
 					--["crs"] = {  },	--
 					--["g"] = {
@@ -94,6 +95,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					--["g"] = {
 					--},
 				}),
+				--]]
 			}),
 		},
 	}),
