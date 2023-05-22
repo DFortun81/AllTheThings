@@ -244,5 +244,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75448),	-- Ward of Ingira Elite
 		q(75447),	-- Ward of Fyrakk Elite / Foremaster 1st kill
 		--q(75887),	-- Fyrakk Activated?
+		q(75157),	-- Completes alongside 75888
 	}),
 }));

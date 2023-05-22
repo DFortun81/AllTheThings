@@ -569,7 +569,6 @@ root(ROOTS.Unsorted, {
 				q(72716),	--
 				q(72718),	--
 				q(72906),	-- [DNT] Storm Pet Battle
-				q(72907),	--
 				q(74116),	-- PTR:Reach North
 				q(74309),	--
 				q(74314),	--

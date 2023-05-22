@@ -2882,5 +2882,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 			["isBreadcrumb"] = true,
 		}),
 		q(72340),	-- Triggered on unlocking alt spark skip
+
+		q(76126),	-- Completes alongside 75569
 	}),
 }));

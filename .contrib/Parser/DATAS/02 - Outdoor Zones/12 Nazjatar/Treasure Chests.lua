@@ -151,4 +151,5 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(57055),	-- Last Glowing Arcane Trunk or by using the rewarded item 'Mardivas's Universally Lauded Tote' (ID: 170477)
+	q(56897),	-- Upon looting Naga Deployment Orders (170085) from the Scrying treasure
 });
