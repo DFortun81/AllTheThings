@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
-			filter(BATTLE_PETS,  {
+			petbattle(filter(BATTLE_PETS,  {
 				["sym"] = {{"select","speciesID",
 					1738,	-- Auburn Ringtail (PET!)
 					398,	-- Black Rat (PET!)
@@ -110,7 +110,7 @@ _.Zones =
 						},
 					}),
 				},
-			}),
+			})),
 		}),
 	}),
 };
