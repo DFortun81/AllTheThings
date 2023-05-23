@@ -191,7 +191,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 			}),
 			ach(17527),	-- Scavenger of the Forbidden Reach
-			ach(17532),	-- Scroll Hunter
+			ach(17532, {	-- Scroll Hunter
+				["providers"] = {
+					{ "i", 202667 },	-- Sealed Artifact Scroll
+					{ "i", 202669 },	-- Sealed Fish Scroll
+					{ "i", 202670 },	-- Sealed Knowledge Scroll
+					{ "i", 202668 },	-- Sealed Spirit Scroll
+				},
+			}),
 			ach(17526, {	-- Treasures of the Forbidden Reach
 				crit(1, {	-- Forbidden Hoard
 					-- TODO: ["_quests"] = {  },
