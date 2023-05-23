@@ -744,6 +744,7 @@ i(204817);	-- Underlight Cocoon Fibers
 i(205869);	-- Aromatic Royal Jelly
 i(205868);	-- Cracked Chitin Carapace
 i(205457);	-- Delicate Crystal Shell
+i(205872);	-- Earthvermin Fluff
 i(205465);	-- Gleaming Rock Viper Eye
 i(205870);	-- Glittering Spore Dust
 i(205871);	-- Glowing Underlight Wings

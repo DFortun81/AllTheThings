@@ -28,7 +28,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202172),	-- Overflowing Satchel of Coins
 						},
 					}),
-				}
+				},
 			}),
 				-- RENOWN 2 --
 			q(76025, {	-- Dragon Isles Supplies
@@ -96,7 +96,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
 				["g"] = {
 					i(205286),	-- Loamm Niffen Tabard
-				}
+				},
 			}),
 				-- RENOWN 11 --
 			q(76028, {	-- Dragon Isles Supplies
@@ -106,7 +106,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
 				["g"] = {
 					i(205965),	-- Large Loammian Supply Pack
-				}
+				},
 			}),
 				-- RENOWN 12 --
 			q(75728, {	-- Bartering Boulders
@@ -115,7 +115,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
 				["g"] = {
 					i(205188),	-- Barter Boulder
-				}
+				},
 			}),
 				-- RENOWN 13 --
 			q(75730, {	-- Slitherdrake Watching
@@ -126,9 +126,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(203323),	-- Winding Slitherdrake: Brown Hair
 					i(203335),	-- Winding Slitherdrake: Curved Horns
 					i(203341),	-- Winding Slitherdrake: Long Jaw Horns
-				}
+				},
 			}),
-
+				-- RENOWN 14 --
+				-- TODO: wasn't up until 16th renown
+				q(75731, {	-- Scented Boot
+				["minReputation"] = { 2564, 14 },	-- Loamm Niffen Renown 14
+				["provider"] = { "n", 205127 },	-- Newsy
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
+			}),
+				-- RENOWN 16 --
+			q(76030, {	-- Airborne Winding
+				["minReputation"] = { 2564, 16 },	-- Loamm Niffen Renown 16
+				["provider"] = { "n", 205127 },	-- Newsy
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
+			}),
 
 				-- RENOWN 20 --
 			q(75744, {	-- A Token of Our Gratitude
@@ -137,7 +149,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
 				["g"] = {
 					i(204682),	-- Enchanted Wyrm's Shadowflame Crest
-				}
+				},
 			}),
 			q(76067, {	-- Signed, Sealed, Self-Delivered
 				["minReputation"] = { 2564, 20 },	-- Loamm Niffen Renown 20
@@ -146,7 +158,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
 				["g"] = {
 					i(205937),	-- Newsy (PET!)
-				}
+				},
 			}),
 
 				-- Unsorted (which renown level?) --
@@ -156,8 +168,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 58.0, 53.8, ZARALEK_CAVERN },
 				["g"] = {
 					i(204985),	-- Barter Brick
-				}
-			})
+				},
+			}),
 		}),
 	}),
 })));

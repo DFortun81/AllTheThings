@@ -26,9 +26,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["questID"] = 75943,
 					["isWeekly"] = true,
 				}),
+				n(202309, {	-- Cavern Flayer Matriarch
+					["coord"] = { 47.1, 57.1, ZARALEK_CAVERN },
+					["questID"] = 75948,
+					["isWeekly"] = true,
+				}),
 				n(203834, {	-- Contaminated Titan Watcher
 					["coord"] = { 45.0, 62.0, ZARALEK_CAVERN },
 					["questID"] = 75944,
+					["isWeekly"] = true,
+				}),
+				n(204214, {	-- Monstrous Magmaclaw Snapper
+					["coord"] = { 43.7, 56.8, ZARALEK_CAVERN },
+					["questID"] = 75942,
 					["isWeekly"] = true,
 				}),
 				n(202318, {	-- Response Team Watcher
@@ -39,7 +49,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(QUESTS, {
 				q(74906),	-- Researchers Under Fire (Keeps unflagging? Might use as header?)
-				q(75948),	-- Killed 202309 (Cavern Flayer Matriarch)
 			}),
 			n(ZONE_DROPS, {
 				i(205026),	-- Devourer Lobstrok (PET!)

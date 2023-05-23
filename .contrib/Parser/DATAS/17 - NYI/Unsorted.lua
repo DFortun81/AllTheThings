@@ -928,7 +928,6 @@ root(ROOTS.Unsorted, {
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205866),	-- Rough Coiled Horns
 				i(205867),	-- Steaming Drake Heart
-				i(205872),	-- Earthvermin Fluff
 				i(205873),	-- Foraged Rare Fungi
 				i(205875),	-- Massive Deepstrider Femur
 				i(205898),	-- Metal Key and shield disabled
