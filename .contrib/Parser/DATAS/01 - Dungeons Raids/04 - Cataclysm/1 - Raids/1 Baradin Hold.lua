@@ -9,13 +9,13 @@ _.Instances = { tier(CATA_TIER, {
 		["lvl"] = 85,
 		["mapID"] = 282,
 		["coord"] = { 46.1, 47.9, 244 },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(5425),	-- Baradin Hold Guild Run
 			}),
 			e(139, {	-- Argaloth
 				["creatureID"] = 47120,
-				["g"] = {
+				["groups"] = {
 					ach(5416),	-- Pit Lord Argaloth
 					i(60673),	-- Vicious Gladiator's Choker of Accuracy
 					i(60670),	-- Vicious Gladiator's Choker of Proficiency
@@ -157,7 +157,7 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			e(339, {	-- Alizabal, Mistress of Hate
 				["creatureID"] = 55869,
-				["g"] = {
+				["groups"] = {
 					ach(6108),	-- Alizabal
 					i(73493),	-- Cataclysmic Gladiator's Choker of Proficiency
 					i(73492),	-- Cataclysmic Gladiator's Choker of Prowess
@@ -314,7 +314,7 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			e(140, {	-- Occu'thar
 				["creatureID"] = 52363,
-				["g"] = {
+				["groups"] = {
 					ach(6045),	-- Occu'thar
 					i(70382),	-- Ruthless Gladiator's Choker of Accuracy
 					i(70381),	-- Ruthless Gladiator's Choker of Proficiency

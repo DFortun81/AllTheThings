@@ -18,7 +18,7 @@ _.Instances = { tier(CATA_TIER, {
 			})),
 			n(QUESTS, {
 				q(28779, {	-- A Long Way from Home
-					["provider"] = { "n", 49943 },	-- Itesh
+					["qg"] = 49943,	-- Itesh
 					["sourceQuest"] = 28845,	-- The Vortex Pinnacle
 					["groups"] = {
 						i(66898),	-- Cloak of Itesh
@@ -42,7 +42,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 				q(28760, {	-- Vengeance for Orsis
-					["provider"] = { "n", 49943 },	-- Itesh
+					["qg"] = 49943,	-- Itesh
 					["sourceQuest"] = 28845,	-- The Vortex Pinnacle
 					["groups"] = {
 						i(66901),	-- Greaves of Orsis

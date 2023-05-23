@@ -29,7 +29,7 @@ _.Zones =
 				}),
 				n(45286, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
 					["coord"] = { 45.7, 65.8, 174 },
-					["g"] = {
+					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
@@ -45,7 +45,7 @@ _.Zones =
 						{ 45.2, 65.6, 174 },
 						{ 42.6, 16.2, 174 },
 					},
-					["g"] = {
+					["groups"] = {
 						i(49247),	-- Drenched Leather Belt
 						i(49248),	-- Drenched Leather Boots
 						i(49249),	-- Drenched Leather Bracers

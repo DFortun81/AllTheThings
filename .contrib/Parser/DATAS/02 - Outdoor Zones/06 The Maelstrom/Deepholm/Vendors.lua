@@ -9,7 +9,7 @@ _.Zones =
 			n(VENDORS, {
 				n(45408, {	-- D'lom the Collector <Therazane Quartermaster>
 					["coord"] = { 56.8, 13.2, DEEPHOLM },
-					["g"] = {
+					["groups"] = {
 						i(62352),	-- Diamant's Ring of Temperance
 						i(62351),	-- Felsen's Ring of Resolve
 						i(62350),	-- Gorsik's Band of Shattering
@@ -19,7 +19,7 @@ _.Zones =
 				}),
 				n(44972, {	-- Rocky Cliffedge <Weapon Vendor>
 					["coord"] = { 24.8, 62.6, DEEPHOLM },
-					["g"] = {							
+					["groups"] = {							
 						i(60823),	-- Battlefront Sword
 						i(60828),	-- Earthen Champion's Cleaver
 						i(60821),	-- Earthen Mallet

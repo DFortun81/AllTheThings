@@ -1160,7 +1160,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				-- #endif
 				q(27988, {	-- Plague...Plague Everywhere!
 					["qg"] = 47293,	-- Deathstalker Commander Belmont
-					["sourceQuests"] = { 27974 },	-- This Land is Our Land
+					["sourceQuest"] = 27974,	-- This Land is Our Land
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 8),

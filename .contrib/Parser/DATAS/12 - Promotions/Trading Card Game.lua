@@ -238,7 +238,7 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 		i(45063, {	-- Foam Sword Rack (TOY!)
 			["model"] = 253206,
 			["timeline"] = { "added 3.1.0.9626" },
-			["g"] = {
+			["groups"] = {
 				i(45061, {	-- Foam Sword
 					["collectible"] = false,
 				}),

@@ -11,31 +11,31 @@ _.Instances = { tier(CATA_TIER, {
 			{ 66.2, 29.2, CAVERNS_OF_TIME },	-- dungeon entrance
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(30103, {	-- To Wyrmrest!
-					["sourceQuests"] = { 30102 },	-- The Hour of Twilight
+					["sourceQuest"] = 30102,	-- The Hour of Twilight
 					["providers"] = {
 						{ "n", 54548 },	-- Thrall (4 versions, all different areas of the dungeon)
 						{ "n", 54634 },
 						{ "n", 54972 },
 						{ "n", 55779 },
 					},
-					["g"] = {
+					["groups"] = {
 						i(72858),	-- Safeguard Gloves
 						i(72887),	-- Cinch of the World Shaman
 						i(72888),	-- Ring of the Loyal Companion
 					},
 				}),
 				{	-- Urgent Twilight Missive > The Twilight Prophet
-					["sourceQuests"] = { 30102 },	-- The Hour of Twilight (did not drop for me before completing the chain)
+					["sourceQuest"] = 30102,	-- The Hour of Twilight (did not drop for me before completing the chain)
 					["questID"] = 30105,	-- The Twilight Prophet
 					["itemID"] = 77957,	-- Urgent Twilight Missive
 					["providers"] = {
 						{ "n", 54590 },	-- Arcurion
 						{ "n", 54968 },	-- Asira Dawnslayer (apparently can drop from this boss if someone queues into the dungeon with the first boss dead)
 					},
-					["g"] = {
+					["groups"] = {
 						i(72884),	-- Writhing Wand
 						i(72886),	-- Thrall's Gratitude
 						i(76153),	-- Signet of the Twilight Prophet
@@ -53,7 +53,7 @@ _.Instances = { tier(CATA_TIER, {
 						55109,	-- Twilight Shadow-Walker
 						55111,	-- Twilight Thug
 					},
-					["g"] = {
+					["groups"] = {
 						i(76160),	-- Drapes of the Dragonshrine
 						i(76161),	-- Gauntlets of the Twilight Hour
 						i(76162),	-- Twilight Amulet

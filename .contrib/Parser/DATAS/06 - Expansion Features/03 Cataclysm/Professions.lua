@@ -329,55 +329,55 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			}),
 			i(87534, {	-- Crate of Draenei Archaeology Fragments
 				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-				["g"] = {
+				["groups"] = {
 					{ ["currencyID"] = 398, }	-- Draenei Archaeology Fragment
 				},
 			}),
 			i(87533, {	-- Crate of Dwarven Archaeology Fragments
 				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-				["g"] = {
+				["groups"] = {
 					{ ["currencyID"] = 384, }	-- Dwarf Archaeology Fragment
 				},
 			}),
 			i(87535, {	-- Crate of Fossil Archaeology Fragments
 				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-				["g"] = {
+				["groups"] = {
 					{ ["currencyID"] = 393, }	-- Fossil Archaeology Fragment
 				},
 			}),
 			i(87536, {	-- Crate of Night Elf Archaeology Fragments
 				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-				["g"] = {
+				["groups"] = {
 					{ ["currencyID"] = 394, }	-- Night Elf Archaeology Fragment
 				},
 			}),
 			i(87537, {	-- Crate of Nerubian Archaeology Fragments
 				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-				["g"] = {
+				["groups"] = {
 					{ ["currencyID"] = 400, }	-- Nerubian Archaeology Fragment
 				},
 			}),
 			i(87538, {	-- Crate of Orc Archaeology Fragments
 				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-				["g"] = {
+				["groups"] = {
 					{ ["currencyID"] = 397, }	-- Orc Archaeology Fragment
 				},
 			}),
 			i(87539, {	-- Crate of Tol'vir Archaeology Fragments
 				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-				["g"] = {
+				["groups"] = {
 					{ ["currencyID"] = 401, }	-- Tol'vir Archaeology Fragment
 				},
 			}),
 			i(87540, {	-- Crate of Troll Archaeology Fragments
 				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-				["g"] = {
+				["groups"] = {
 					{ ["currencyID"] = 385, }	-- Troll Archaeology Fragment
 				},
 			}),
 			i(87541, {	-- Crate of Vrykul Archaeology Fragments
 				["cost"] = { { "i", 87399, 1 } },	-- 1x Restored Artifact
-				["g"] = {
+				["groups"] = {
 					{ ["currencyID"] = 399, }	-- Vrykul Archaeology Fragment
 				},
 			}),

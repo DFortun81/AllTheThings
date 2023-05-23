@@ -8,7 +8,7 @@ root(ROOTS.WorldEvents, m(503,
 	["races"] = HORDE_ONLY,
 	["lvl"] = 120,
 	["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
-	["g"] = {
+	["groups"] = {
 		n(REWARDS, {
 			--	attaching questIDs and sourceQuests here makes the SQ list not display correctly (the items display instead of the quests).
 			i(92718, {	-- Brawler's Purse
@@ -26,141 +26,141 @@ root(ROOTS.WorldEvents, m(503,
 		}),
 		n(QUESTS, {
 			q(36702, {	-- Meatball
-				["provider"] = { "n", 86272 },	-- Meatball
+				["qg"] = 86272,	-- Meatball
 				["description"] = "Reach Rank 5 in the arena.",
-				["g"] = {
+				["groups"] = {
 					follower(203),	-- Meatball
 				},
 			}),
 			q(53914, {	-- Murder at the Brawl'gar Arena
+				["qg"] = 68364,	-- Paul North
 				["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
-				["provider"] = { "n", 68364 },	-- Paul North
 				["coord"] = { 48.4, 29.2, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53915, {	-- Put Up Your Dukes
-				["sourceQuests"] = { 53914 },	-- Murder at the Brawl'gar Arena
-				["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
+				["sourceQuest"] = 53914,	-- Murder at the Brawl'gar Arena
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53917, {	-- Undercover Agent: Sharisanda
-				["sourceQuests"] = { 53915 },	-- Put Up Your Dukes
-				["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
+				["sourceQuest"] = 53915,	-- Put Up Your Dukes
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53918, {	-- The Financial Participation Incentive
-				["sourceQuests"] = { 53917 },	-- Undercover Agent: Sharisanda
-				["provider"] = { "n", 145582 },	-- Sharisanda
+				["qg"] = 145582,	-- Sharisanda
+				["sourceQuest"] = 53917,	-- Undercover Agent: Sharisanda
 				["cost"] = { { "i", 142318, 1, } },	-- High Roller's Contract
 				["coord"] = { 48.8, 79.8, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53920, {	-- A Favor for Your Ol' Pal Buxdoggle
-				["sourceQuests"] = { 53918 },	-- The Financial Participation Incentive
-				["provider"] = { "n", 68372 },	-- Pit Boss Buxdoggle
+				["qg"] = 68372,	-- Pit Boss Buxdoggle
+				["sourceQuest"] = 53918,	-- The Financial Participation Incentive
 				["coord"] = { 49.2, 68.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53921, {	-- The Pit Boss's Debts
-				["sourceQuests"] = { 53920 },	-- A Favor for Your Ol' Pal Buxdoggle
-				["provider"] = { "n", 68372 },	-- Pit Boss Buxdoggle
+				["qg"] = 68372,	-- Pit Boss Buxdoggle
+				["sourceQuest"] = 53920,	-- A Favor for Your Ol' Pal Buxdoggle
 				["coord"] = { 49.2, 68.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53922, {	-- Evidence Packet: Pit Boss Buxdoggle
-				["sourceQuests"] = { 53921 },	-- The Pit Boss's Debts
-				["provider"] = { "n", 145582 },	-- Sharisanda
+				["qg"] = 145582,	-- Sharisanda
+				["sourceQuest"] = 53921,	-- The Pit Boss's Debts
 				["coord"] = { 48.8, 79.8, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53923, {	-- Undercover Agent: Stone Guard Mollivox
-				["sourceQuests"] = { 53922 },	-- Evidence Packet: Pit Boss Buxdoggle
-				["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
+				["sourceQuest"] = 53922,	-- Evidence Packet: Pit Boss Buxdoggle
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53924, {	-- Soul Splinters
-				["sourceQuests"] = { 53923 },	-- Undercover Agent: Stone Guard Mollivox
+				["qg"] = 145691,	-- Shadowmaster Skrizzik
+				["sourceQuest"] = 53923,	-- Undercover Agent: Stone Guard Mollivox
 				["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
-				["provider"] = { "n", 145691 },	-- Shadowmaster Skrizzik
 				["coord"] = { 37.4, 33.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53925, {	-- Super Soul Splinters
-				["sourceQuests"] = { 53924 },	-- Soul Splinters
-				["provider"] = { "n", 145691 },	-- Shadowmaster Skrizzik
+				["qg"] = 145691,	-- Shadowmaster Skrizzik
+				["sourceQuest"] = 53924,	-- Soul Splinters
 				["coord"] = { 37.4, 33.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53926, {	-- Cause for Concern
-				["sourceQuests"] = { 53925 },	-- Super Soul Splinters
+				["sourceQuest"] = 53925,	-- Super Soul Splinters
 				["races"] = HORDE_ONLY,
 			}),
 			q(53927, {	-- The Precious 13-Tooth Gogglegear
-				["sourceQuests"] = { 53926 },	-- Cause for Concern
-				["provider"] = { "n", 145583 },	-- Stone Guard Mollivox
+				["qg"] = 145583,	-- Stone Guard Mollivox
+				["sourceQuest"] = 53926,	-- Cause for Concern
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53928, {	-- The Mollivox Goggle Experiment
-				["sourceQuests"] = { 53927 },	-- The Precious 13-Tooth Gogglegear
-				["provider"] = { "n", 145583 },	-- Stone Guard Mollivox
+				["qg"] = 145583,	-- Stone Guard Mollivox
+				["sourceQuest"] = 53927,	-- The Precious 13-Tooth Gogglegear
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53929, {	-- Evidence Packet: Shadowmaster Skrizzik
-				["sourceQuests"] = { 53928 },	-- The Mollivox Goggle Experiment
-				["provider"] = { "n", 145583 },	-- Stone Guard Mollivox
+				["qg"] = 145583,	-- Stone Guard Mollivox
+				["sourceQuest"] = 53928,	-- The Mollivox Goggle Experiment
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53930, {	-- Undercover Agent: Nugg Lumbo
-				["sourceQuests"] = { 53929 },	-- Evidence Packet: Shadowmaster Skrizzik
-				["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
+				["sourceQuest"] = 53929,	-- Evidence Packet: Shadowmaster Skrizzik
 				["cost"] = { { "i", 143759, 1, } },	-- VIP Room Rental Form
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53931, {	-- Flaunt It If You Got It
-				["sourceQuests"] = { 53930 },	-- Undercover Agent: Nugg Lumbo
-				["provider"] = { "n", 70716 },	-- Libbiara Blightrunner
+				["qg"] = 70716,	-- Libbiara Blightrunner
+				["sourceQuest"] = 53930,	-- Undercover Agent: Nugg Lumbo
 				["cost"] = { { "i", 142311, 1, } },	-- Free Drinks Voucher
 				["coord"] = { 31.2, 54.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53952, {	-- Simply Dying of Boredom
-				["sourceQuests"] = { 53931 },	-- Flaunt It If You Got It
-				["provider"] = { "n", 70716 },	-- Libbiara Blightrunner
+				["qg"] = 70716,	-- Libbiara Blightrunner
+				["sourceQuest"] = 53931,	-- Flaunt It If You Got It
 				["coord"] = { 31.2, 54.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53932, {	-- Evidence Packet: Libbiara Blightrunner
-				["sourceQuests"] = { 53952 },	-- Simply Dying of Boredom
-				["provider"] = { "n", 145584 },	-- Nugg Lumbo
+				["qg"] = 145584,	-- Nugg Lumbo
+				["sourceQuest"] = 53952,	-- Simply Dying of Boredom
 				["coord"] = { 29.8, 50.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53933, {	-- The Brawl'gar Trial
-				["sourceQuests"] = { 53932 },	-- Evidence Packet: Libbiara Blightrunner
-				["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
+				["sourceQuest"] = 53932,	-- Evidence Packet: Libbiara Blightrunner
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53934, {	-- A Clue from Area 52
-				["sourceQuests"] = { 53933 },	-- The Brawl'gar Trial
-				["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
+				["sourceQuest"] = 53933,	-- The Brawl'gar Trial
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53935, {	-- Solving the Mystery
-				["sourceQuests"] = { 53934 },	-- A Clue from Area 52
-				["provider"] = { "n", 149808 },	-- Boss Bazzelflange
+				["qg"] = 149808,	-- Boss Bazzelflange
+				["sourceQuest"] = 53934,	-- A Clue from Area 52
 				["races"] = HORDE_ONLY,
 				["maps"] = { NETHERSTORM },
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					i(166724),	-- Bruce (MOUNT!)
 				},
 			}),
@@ -195,7 +195,7 @@ root(ROOTS.WorldEvents, m(503,
 			n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>  This vendor will change if you start the murder questline  New vendor = 145695 "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
 				["races"] = HORDE_ONLY,
 				["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
-				["g"] = {
+				["groups"] = {
 					i(142403, {	-- Brawler's Burly Basilisk (MOUNT!) unobtainable as of BFA prepatch
 						["timeline"] = { "added 7.1", "removed 8.0" },
 					}),
@@ -209,7 +209,7 @@ root(ROOTS.WorldEvents, m(503,
 					i(98092),	-- Digmaster's Bodysleeve
 					i(167892, {	-- Ensemble: Brawlers Garb
 						["ignoreBonus"] = true,
-						["g"] = {
+						["groups"] = {
 							i(167829),	-- Brawler's Bracer Chains
 							i(167823),	-- Brawler's Footpads
 							i(167824),	-- Brawler's Gloves
@@ -244,14 +244,14 @@ root(ROOTS.WorldEvents, m(503,
 			}),
 			n(115797, {	-- Tiana Nevermorn <Gold Exchange>
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(142319, {		-- Bag of Chipped Dice
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
-						["g"] = {
+						["groups"] = {
 							ach(9177, {	-- Deck Your Collection [Season 2]
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									i(98543),	-- Wraps of the Blood-Soaked Brawler
 								},
 							}),
@@ -373,7 +373,7 @@ root(ROOTS.WorldEvents, m(503,
 					}),
 					i(142290, {	-- Rumble Card: Battle of the Brew
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Battle of the Brew
 								["achievementID"] = 11573,	-- Rumble Club
 							}),
@@ -381,7 +381,7 @@ root(ROOTS.WorldEvents, m(503,
 					}),
 					i(142288, {	-- Rumble Card: Grief Warden
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["g"] = {
+						["groups"] = {
 							n(114943, {	-- Grief Warden <Enmity Moose>
 								crit(2, {	-- Grief Warden
 									["achievementID"] = 11573,	-- Rumble Club
@@ -391,7 +391,7 @@ root(ROOTS.WorldEvents, m(503,
 					}),
 					i(142294, {	-- Rumble Card: Mazhareen
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["g"] = {
+						["groups"] = {
 							n(68251, {	-- Mazhareen
 								crit(1, {	-- Mazhareen
 									["achievementID"] = 11573,	-- Rumble Club
@@ -401,7 +401,7 @@ root(ROOTS.WorldEvents, m(503,
 					}),
 					i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["g"] = {
+						["groups"] = {
 							n(117102, {	-- Mindbreaker Gzzaj
 								crit(4, {	-- Mindbreaker Gzzaj
 									["achievementID"] = 11573,	-- Rumble Club
@@ -411,7 +411,7 @@ root(ROOTS.WorldEvents, m(503,
 					}),
 					i(142289, {	-- Rumble Card: Penguin Stampede
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["g"] = {
+						["groups"] = {
 							n(115185, {	-- Penguin Stampede
 								crit(6, {	-- Penguin Stampede
 									["achievementID"] = 11573,	-- Rumble Club
@@ -421,7 +421,7 @@ root(ROOTS.WorldEvents, m(503,
 					}),
 					i(142291, {	-- Rumble Card: Senya
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["g"] = {
+						["groups"] = {
 							n(115357, {	-- Senya
 								crit(5, {	-- Senya
 									["achievementID"] = 11573,	-- Rumble Club
@@ -431,7 +431,7 @@ root(ROOTS.WorldEvents, m(503,
 					}),
 					i(142292, {	-- Rumble Card: Stranglethorn Streak
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-						["g"] = {
+						["groups"] = {
 							crit(7, {	-- Stranglethorn Streak
 								["achievementID"] = 11573,	-- Rumble Club
 							}),

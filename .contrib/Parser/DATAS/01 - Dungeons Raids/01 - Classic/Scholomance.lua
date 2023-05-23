@@ -1312,10 +1312,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				n(59613, {	-- Professor Slate <Potions Master>
 					["timeline"] = { "added 5.0.4" },
-					["g"] = bubbleDown({["ignoreBonus"] = true},{
+					["groups"] = bubbleDown({["ignoreBonus"] = true},{
 						i(85580, {	-- Empty Polyformic Acid Vial
 							["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
-							["g"] = {
+							["groups"] = {
 								i(85589),	-- Nearly Full Vial of Polyformic Acid
 								i(85592),	-- Half Full Vial of Polyformic Acid
 								i(85593),	-- Nearly Empty Vial of Polyformic Acid
@@ -1351,7 +1351,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(6396),	-- Sanguinarian
 					n(QUESTS, sharedData({["modID"] = 0},{
 						q(31448, {	-- An End to the Suffering
-							["provider"] = { "n", 64563 },	-- Talking Skull
+							["qg"] = 64563,	-- Talking Skull
 							["groups"] = {
 								i(87379),	-- Runed Deathbone Chestplate
 								i(87380),	-- Carver's Bloodspattered Chestpiece
@@ -1365,7 +1365,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							},
 						}),
 						q(31442, {	-- The Four Tomes
-							["provider"] = { "n", 64563 },	-- Talking Skull
+							["qg"] = 64563,	-- Talking Skull
 						}),
 					})),
 					e(659, {	-- Instructor Chillheart
@@ -1539,10 +1539,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 					n(59613, {	-- Professor Slate <Potions Master>
 						["timeline"] = { "added 5.0.4" },
-						["g"] = bubbleDown({["ignoreBonus"] = true},{
+						["groups"] = bubbleDown({["ignoreBonus"] = true},{
 							i(85580, {	-- Empty Polyformic Acid Vial
 								["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
-								["g"] = {
+								["groups"] = {
 									i(85589),	-- Nearly Full Vial of Polyformic Acid
 									i(85592),	-- Half Full Vial of Polyformic Acid
 									i(85593),	-- Nearly Empty Vial of Polyformic Acid

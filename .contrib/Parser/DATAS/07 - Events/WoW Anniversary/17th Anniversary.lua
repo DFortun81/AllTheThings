@@ -18,7 +18,7 @@ root(ROOTS.WorldEvents, n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_
 root(ROOTS.WorldEvents, n(SEVENTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(QUESTS, {
 		q(60215, {	-- Doomwalkin' Has Come Knockin'
-			["provider"] = { "n", 157113 },	-- Chromie
+			["qg"] = 157113,	-- Chromie
 			["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 			["isWeekly"] = true,
 		}),
@@ -26,7 +26,7 @@ root(ROOTS.WorldEvents, n(SEVENTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_
 	n(VENDORS, {
 		n(158061, {	-- Historian Ma'di
 			["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
-			["g"] = {
+			["groups"] = {
 				i(186556, {	-- Timeless Mechanical Dragonling (PET!)
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),
@@ -43,7 +43,7 @@ root(ROOTS.WorldEvents, n(SEVENTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_
 				74,	--	Caverns of Time Entrance
 				CAVERNS_OF_TIME,
 			},
-			["g"] = {
+			["groups"] = {
 				i(186506),	-- Akama's Edge
 				i(186460),	-- Anger-Spark Gloves
 				i(186459),	-- Archaic Charm of Presence

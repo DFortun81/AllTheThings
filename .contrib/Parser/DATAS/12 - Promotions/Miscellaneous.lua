@@ -16,7 +16,7 @@ root(ROOTS.Promotions, filter(MISC, {
 		i(48527, {	-- Onyx Panther (PET!)
 			["description"] = "Reward from a Korean-exclusive World Event that mailed you this pet.",
 			["timeline"] = { "created 3.0.1", "added 4.0.3.13287" },
-			["g"] = {
+			["groups"] = {
 				ach(3896, {	-- Onyx Panther
 					["timeline"] = { "added 4.0.3.13287" },
 				}),

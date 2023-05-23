@@ -34,7 +34,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(QUESTS, {
 		q(47253, {	-- The Originals [Alliance]
-			["provider"] = { "n", 110034 },		-- Historian Llore
+			["qg"] = 110034,	-- Historian Llore
 			["isDaily"] = true,
 			["races"] = ALLIANCE_ONLY,
 			["coord"] = { 51.5, 38.7, CAVERNS_OF_TIME },
@@ -48,7 +48,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 			}},
 		}),
 		q(47254, {	-- The Originals [Horde]
-			["provider"] = { "n", 110035 },		-- Historian Jupa
+			["qg"] = 110035,	-- Historian Jupa
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
 			["coord"] = { 51.5, 38.7, CAVERNS_OF_TIME },
@@ -68,7 +68,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 			["questID"] = 47462,
 			["isDaily"] = true,
 			["coord"] = { 48.76, 83.82, AZSHARA },
-			["g"] = {
+			["groups"] = {
 				i(150424),	-- Cold Snap
 				i(150428),	-- Eskhandar's Left Claw
 				i(150423),	-- Fang of the Mystics
@@ -87,7 +87,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 			["questID"] = 47461,
 			["isDaily"] = true,
 			["coord"] = { 32.42, 48.21, BLASTED_LANDS },
-			["g"] = {
+			["groups"] = {
 				i(150383),	-- Amberseal Keeper
 				i(150427),	-- Empyrean Demolisher
 				i(150379),	-- Infernal Headcage
@@ -104,7 +104,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 			["questID"] = 47463,
 			["isRaid"] = true,
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						121913,	-- Emeriss
@@ -112,7 +112,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 						121911,	-- Taerar
 						121912,	-- Ysondre
 					},
-					["g"] = {
+					["groups"] = {
 						i(150429),	-- Emerald Dragonfang
 						i(150412),	-- Hammer of Bestial Fury
 						i(150393),	-- Nightmare Blade
@@ -128,7 +128,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 				n(121913, {	-- Emeriss [Duskwood - 4th Rotation]
 					["isRaid"] = true,
 					["coord"] = { 46.54, 39.73, DUSKWOOD },
-					["g"] = {
+					["groups"] = {
 						i(150405),	-- Circlet of Restless Dreams
 						i(150415),	-- Dragonspur Wraps
 						i(150416),	-- Gloves of Delusional Power
@@ -139,7 +139,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 				n(121821, {	-- Lethon [The Hinterlands - 3rd Rotation]
 					["isRaid"] = true,
 					["coord"] = { 62.87, 25.2, THE_HINTERLANDS },
-					["g"] = {
+					["groups"] = {
 						i(150401),	-- Deviate Growth Cap
 						i(150399),	-- Black Bark Wristbands
 						i(150402),	-- Gauntlets of the Shining Light
@@ -150,7 +150,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 				n(121911, {	-- Taerar [Ashenvale - 1st Rotation] [1st one in 2017]
 					["isRaid"] = true,
 					["coord"] = { 93.8, 40.8, ASHENVALE },
-					["g"] = {
+					["groups"] = {
 						i(150395),	-- Unnatural Leather Spaulders
 						i(150413),	-- Dragonbone Wristguards
 						i(150414),	-- Ancient Corroded Leggings
@@ -161,7 +161,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 				n(121912, {	-- Ysondre [Feralas - 2nd Rotation] [1st one in 2018]
 					["isRaid"] = true,
 					["coord"] = { 50.93, 11.91, FERALAS },
-					["g"] = {
+					["groups"] = {
 						i(150409),	-- Trance Stone
 						i(150387),	-- Acid Inscribed Pauldrons
 						i(150391),	-- Jade Inlaid Vestments
@@ -177,7 +177,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 		n(110035, {	-- Historian Jupa [Horde]
 			["coord"] = { 36.6, 74.6, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(147885, {	-- Bronze-Tinted Sunglasses
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),
@@ -195,7 +195,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 		n(110034, {	-- Historian Llore [Alliance]
 			["races"] = ALLIANCE_ONLY,
 			["coord"] = { 84.6, 25.0, STORMWIND_CITY },
-			["g"] = {
+			["groups"] = {
 				i(147885, {	-- Bronze-Tinted Sunglasses
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),

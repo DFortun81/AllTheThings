@@ -24,91 +24,91 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 			}),
 			q(60116, {	-- Cause for Distraction (A)
 				["coord"] = { 39.4, 64.1, STORMWIND_CITY },
-				["provider"] = { "n", 167329 },	-- Genn Greymane
+				["qg"] = 167329,	-- Genn Greymane
 				["sourceQuest"] = 60113,	-- An Urgent Request (A)
 				["lvl"] = { 50 },
 			}),
 			q(60669, {	-- Cause for Distraction (H)
 				["coord"] = { 49.2, 73.7, ORGRIMMAR },
-				["provider"] = { "n", 169928 },	-- Lor'themar Theron
+				["qg"] = 169928,	-- Lor'themar Theron
 				["sourceQuest"] = 60115,	-- An Urgent Request (H)
 				["lvl"] = { 50 },
 			}),
 			q(60117, {	-- Return of the Crusade (A)
 				["coord"] = { 39.4, 64.1, STORMWIND_CITY },
-				["provider"] = { "n", 167329 },	-- Genn Greymane
+				["qg"] = 167329,	-- Genn Greymane
 				["sourceQuest"] = 60116,	-- Cause for Distraction (A)
 				["lvl"] = { 50 },
 			}),
 			q(60670, {	-- Return of the Crusade (H)
 				["coord"] = { 49.2, 73.7, ORGRIMMAR },
-				["provider"] = { "n", 169928 },	-- Lor'themar Theron
+				["qg"] = 169928,	-- Lor'themar Theron
 				["sourceQuest"] = 60669,	-- Cause for Distraction (H)
 				["lvl"] = { 50 },
 			}),
 			q(59876, {	-- Field Reports (A)
 				["coord"] = { 65.7, 77.1, STORMWIND_CITY },
-				["provider"] = { "n", 166383 },	-- Commander Gregor
+				["qg"] = 166383,	-- Commander Gregor
 				["sourceQuest"] = 60117,	-- Return of the Crusade (A)
 				["lvl"] = { 50 },
 			}),
 			q(60725, {	-- Field Reports (H)
 				["coord"] = { 52.9, 77.3, ORGRIMMAR },
-				["provider"] = { "n", 169878 },	-- Commander Throgg
+				["qg"] = 169878,	-- Commander Throgg
 				["sourceQuest"] = 60670,	-- Return of the Crusade (H)
 				["lvl"] = { 50 },
 			}),
 			q(60766, {	-- Damned Intruders (A)
 				["coord"] = { 73.50, 47.20, DUSKWOOD },
-				["provider"] = { "n", 166184 },	-- Lieutenant Vernon
+				["qg"] = 166184,	-- Lieutenant Vernon
 				["sourceQuest"] = 59876,	-- Field Reports (A)
 				["lvl"] = { 50 },
 			}),
 			q(60759, {	-- Damned Intruders (H)
 				["coord"] = { 49.5, 59.4, NORTHERN_BARRENS },
-				["provider"] = { "n", 170084 },	-- Lieutenant Althera
+				["qg"] = 170084,	-- Lieutenant Althera
 				["sourceQuest"] = 60725,	-- Field Reports (H)
 				["lvl"] = { 50 },
 			}),
 			q(60767, {	-- Return of the Scourge (A)
 				["coord"] = { 73.50, 47.20, DUSKWOOD },
-				["provider"] = { "n", 166184 },	-- Lieutenant Vernon
+				["qg"] = 166184,	-- Lieutenant Vernon
 				["sourceQuest"] = 60766,	-- Damned Intruders (A)
 				["lvl"] = { 50 },
 			}),
 			q(60761, {	-- Return of the Scourge (H)
 				["coord"] = { 49.4, 59.3, NORTHERN_BARRENS },
-				["provider"] = { "n", 170084 },	-- Lieutenant Althera
+				["qg"] = 170084,	-- Lieutenant Althera
 				["sourceQuest"] = 60759,	-- Damned Intruders (H)
 				["lvl"] = { 50 },
 			}),
 			q(61486, {	-- The Banshee's Champion (A)
 				["coord"] = { 65.55, 77.0, STORMWIND_CITY },
-				["provider"] = { "n", 172510 },	-- Light's Hope Messenger
+				["qg"] = 172510,	-- Light's Hope Messenger
 				["sourceQuest"] = 60767,	-- Return of the Scourge (A)
 				["lvl"] = { 50 },
 			}),
 			q(61488, {	-- The Banshee's Champion (H)
 				["coord"] = { 53.0, 77.0, ORGRIMMAR },
-				["provider"] = { "n", 172514 },	-- Light's Hope Messenger
+				["qg"] = 172514,	-- Light's Hope Messenger
 				["sourceQuest"] = 60761,	-- Return of the Scourge (H)
 				["lvl"] = { 50 },
 			}),
 			q(59877, {	-- A Message from Icecrown (A)
 				["coord"] = { 65.7, 77.1, STORMWIND_CITY },
-				["provider"] = { "n", 166383 },	-- Commander Gregor
+				["qg"] = 166383,	-- Commander Gregor
 				["sourceQuest"] = 60767,	-- Return of the Scourge (A)
 				["lvl"] = { 50 },
 			}),
 			q(60727, {	-- A Message from Icecrown (H)
 				["coord"] = { 52.9, 77.2, ORGRIMMAR },
-				["provider"] = { "n", 169878 },	-- Commander Throgg
+				["qg"] = 169878,	-- Commander Throgg
 				["sourceQuest"] = 60761,	-- Return of the Scourge (H)
 				["lvl"] = { 50 },
 			}),
 			q(60169, {	-- Securing the Area
 				["coord"] = { 71.0, 22.0, ICECROWN },
-				["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
+				["qg"] = 167045,	-- Justicar Mariel Trueheart
 				["sourceQuests"] = {
 					59877,	-- A Message from Icecrown (A)
 					60727,	-- A Message from Icecrown (H)
@@ -117,19 +117,19 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 			}),
 			q(60003, {	-- A Valiant Effort (A)
 				["coord"] = { 71.0, 22.0, ICECROWN },
-				["provider"] = { "n", 168123 },	-- Crusader Renn
+				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuest"] = 59877,	-- A Message from Icecrown (A)
 				["lvl"] = { 50 },
 			}),
 			q(60004, {	-- A Valiant Effort (H)
 				["coord"] = { 71.0, 22.0, ICECROWN },
-				["provider"] = { "n", 168123 },	-- Crusader Renn
+				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuest"] = 60727,	-- A Message from Icecrown (H)
 				["lvl"] = { 50 },
 			}),
 			q(62157, {	-- Scouting from a Safe Distance
 				["coord"] = { 71.0, 22.0, ICECROWN },
-				["provider"] = { "n", 168123 },	-- Crusader Renn
+				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuests"] = {
 					60003,	-- A Valiant Effort (A)
 					60004,	-- A Valiant Effort (H)
@@ -139,63 +139,63 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 			}),
 			q(60827, {	-- Advancing the Effort
 				["coord"] = { 71.0, 22.0, ICECROWN },
-				["provider"] = { "n", 168123 },	-- Crusader Renn
+				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
 			}),
 			-------------------------- Dailies --------------------------
 			q(59863, {	-- Combat Nullifier 07-X
 				["coord"] = { 73.1, 35.6, ICECROWN },
-				["provider"] = { "n", 173124 },	-- Binkie Brightgear
+				["qg"] = 173124,	-- Binkie Brightgear
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
 			}),
 			q(59783, {	-- Cultist Captors
 				["coord"] = { 66.0, 21.9, ICECROWN },
-				["provider"] = { "n", 168880 },	-- Sentry Joren
+				["qg"] = 168880,	-- Sentry Joren
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
 			}),
 			q(62553, {	-- Delaying Their Efforts
 				["coord"] = { 71.0, 21.9, ICECROWN },
-				["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
+				["qg"] = 167045,	-- Justicar Mariel Trueheart
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
 			}),
 			q(60841, {	-- Evacuation Effort
 				["coord"] = { 71.0, 21.9, ICECROWN },
-				["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
+				["qg"] = 167045,	-- Justicar Mariel Trueheart
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
 			}),
 			q(62262, {	-- Fungal Feeding
 				["coord"] = { 71.6, 21.0, ICECROWN },
-				["provider"] = { "n", 167572 },	-- Crystal Brightspark
+				["qg"] = 167572,	-- Crystal Brightspark
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
 			}),
 			q(59782, {	-- The Deathspeaker's Devout
 				["coord"] = { 66.0, 21.9, ICECROWN },
-				["provider"] = { "n", 168880 },	-- Sentry Joren
+				["qg"] = 168880,	-- Sentry Joren
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
 			}),
 			q(59878, {	-- Too Many Whelps
 				["coord"] = { 71.0, 21.9, ICECROWN },
-				["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
+				["qg"] = 167045,	-- Justicar Mariel Trueheart
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
 			}),
 			q(59839, {	-- WARNING: This is Only a Test!
 				["coord"] = { 66.0, 22.4, ICECROWN },
-				["provider"] = { "n", 172905 },	-- Fizzix Blastbolt
+				["qg"] = 172905,	-- Fizzix Blastbolt
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 				["lvl"] = { 50 },
 			}),
 			-------------------------- Week 2 --------------------------
 			q(62162, {	-- A Message from the Justicar (A)
 				["coord"] = { 65.7, 77.1, STORMWIND_CITY },
-				["provider"] = { "n", 166383 },	-- Commander Gregor
+				["qg"] = 166383,	-- Commander Gregor
 				["isBreadcrumb"] = true,
 				["sourceQuest"] = 60827,	-- Advancing the Effort
 				["lvl"] = { 50 },
@@ -213,7 +213,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 			q(62163, {	-- A Message from the Justicar (H)
 				["isBreadcrumb"] = true,
 				["coord"] = { 52.9, 77.3, ORGRIMMAR },
-				["provider"] = { "n", 169878 },	-- Commander Throgg
+				["qg"] = 169878,	-- Commander Throgg
 				["sourceQuest"] = 60827,	-- Advancing the Effort
 				["lvl"] = { 50 },
 				["description"] = "Only available if you've done \"Advancing the Effort\" in week 1."
@@ -229,7 +229,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 			}),
 			q(60828, {	-- A New Foothold
 				["coord"] = { 71.0, 22.0, ICECROWN },
-				["provider"] = { "n", 168123 },	-- Crusader Renn
+				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuests"] = {
 					62162,	-- A Message from the Justicar (A)
 					62163,	-- A Message from the Justicar (H)
@@ -239,19 +239,19 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 			}),
 			q(60843, {	-- Cult Couture
 				["coord"] = { 44.9, 44.7, ICECROWN },
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60828,	-- A New Foothold
 				["lvl"] = { 50 },
 			}),
 			q(62185, {	-- Fighting for Attention
 				["coord"] = { 44.9, 44.7, ICECROWN },
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60828,	-- A New Foothold
 				["lvl"] = { 50 },
 			}),
 			q(60861, {	-- Secrets in Shadows
 				["coord"] = { 44.9, 44.7, ICECROWN },
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuests"] = {
 					60843,	-- Cult Couture
 					62185,	-- Fighting for Attention
@@ -266,88 +266,88 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 			}),
 			q(60867, {	-- A Message from Above
 				["coord"] = { 44.9, 44.7, ICECROWN },
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 62225,	-- Bursting the Bubble
 				["lvl"] = { 50 },
 			}),
 			q(60932, {	-- Only Shadows Remain
 				["coord"] = { 44.9, 44.7, ICECROWN },
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60867,	-- A Message from Above
 				["lvl"] = { 50 },
 			}),
 			q(60871, {	-- With Hope in Hand (A)
 				["coord"] = { 44.9, 44.7, ICECROWN },
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
 			}),
 			q(60869, {	-- With Hope in Hand (H)
 				["coord"] = { 44.9, 44.7, ICECROWN },
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
 			}),
 			-------------------------- Dailies --------------------------
 			q(62365, {	-- Careful Creations
 				["coord"] = { 35.3, 66.3, ICECROWN },
-				["provider"] = { "n", 173997 },	-- Darkrider Arly
+				["qg"] = 173997,	-- Darkrider Arly
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
 			}),
 			q(62295, {	-- Cleaning Out the Vault
 				["coord"] = { 42.8, 29.9, ICECROWN },
-				["provider"] = { "n", 173869 },	-- Crusader Renn
+				["qg"] = 173869,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
 			}),
 			q(59847, {	-- Defending the Rampart
 				["coord"] = { 44.9, 44.7, ICECROWN },
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
 			}),
 			q(62584, {	-- Frontline Resupply
 				["coord"] = { 44.9, 44.7, ICECROWN },
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
 			}),
 			q(59851, {	-- Frozen Solid
 				["coord"] = { 44.9, 44.7, ICECROWN },
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
 			}),
 			q(59772, {	-- Research Ruination
 				-- i know i picked it up in this area, but not sure about the provider.  didn't realize it wasn't added until i turned it in
-				["sourceQuests"] = { 60932 },	-- Only Shadows Remain
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 170467,	-- Crusader Renn
 				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(59838, {	-- Scourge War Machines
-				["sourceQuests"] = { 60932 },	-- Only Shadows Remain
-				["provider"] = { "n", 170467 },	-- Crusader Renn
+				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 170467,	-- Crusader Renn
 				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(62484, {	-- Werk In Progress
 				["coord"] = { 35.3, 66.3, ICECROWN },
-				["provider"] = { "n", 173997 },	-- Darkrider Arly
+				["qg"] = 173997,	-- Darkrider Arly
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
 			}),
 			q(62473, {	-- What's Old is New
 				["coord"] = { 72.08, 20.72, ICECROWN },
-				["provider"] = { "n", 167577 },	-- Brollen Wheatbeard
+				["qg"] = 167577,	-- Brollen Wheatbeard
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["lvl"] = { 50 },
 			}),
 			-- repeatables below
 			q(62401, {	-- Strange Scourgestones
 				["coord"] = { 71.0, 21.6, ICECROWN },
-				["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
+				["qg"] = 169718,	-- Veteran Crusader Aliocha Segard
 				["groups"] = {
 					i(12844),	-- Argent Dawn Valor Token
 				},
@@ -355,7 +355,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 			}),
 			q(62293, {	-- Darkened Scourgestones
 				["coord"] = { 71.0, 21.6, ICECROWN },
-				["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
+				["qg"] = 169718,	-- Veteran Crusader Aliocha Segard
 				["repeatable"] = true,
 				["sourceQuest"] = 62401,	-- Strange Scourgestones
 				["cost"] = { { "i", 180720, 25 } },	-- 25x Darkened Scourgestone
@@ -366,7 +366,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOV
 			}),
 			q(62292, {	-- Pitch Black Scourgestones
 				["coord"] = { 71.0, 21.6, ICECROWN },
-				["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
+				["qg"] = 169718,	-- Veteran Crusader Aliocha Segard
 				["repeatable"] = true,
 				["sourceQuest"] = 62401,	-- Strange Scourgestones
 				["cost"] = { { "i", 183200, 25 } },	-- 25x Pitch Black Scourgestone

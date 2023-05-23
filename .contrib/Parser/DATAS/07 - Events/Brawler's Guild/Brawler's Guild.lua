@@ -16,7 +16,7 @@ root(ROOTS.WorldEvents, n(-78,	-- Brawler's Guild
 		503,	-- Brawlgar Arena
 		DEEPRUN_TRAM,
 	},
-	["g"] = {
+	["groups"] = {
 		n(REWARDS, {
 			--	attaching questIDs and sourceQuests here makes the SQ list not display correctly (the items display instead of the quests).
 			i(92718, {	-- Brawler's Purse

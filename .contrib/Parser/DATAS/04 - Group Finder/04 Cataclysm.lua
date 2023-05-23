@@ -7,7 +7,7 @@ _.GroupFinder =
 	tier(CATA_TIER, {
 		i(156689, {	-- Scorched Satchel of Helpful Goods (30 - 50)
 			["description"] = "Bag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
-			["g"] = {
+			["groups"] = {
 				i(113760),	-- Smoldercloth Bracers*
 				i(113759),	-- Smoldercloth Cap*
 				i(113763),	-- Smoldercloth Gloves*
@@ -46,7 +46,7 @@ _.GroupFinder =
 		i(114648, {	-- Scorched Satchel of Helpful Goods 80-83
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random Cataclysm dungeon in the level 80-84 range.",
-			["g"] = {
+			["groups"] = {
 				i(113760),	-- Smoldercloth Bracers
 				i(113759),	-- Smoldercloth Cap
 				i(113786),	-- Smoldercloth Slippers
@@ -73,7 +73,7 @@ _.GroupFinder =
 		i(114655, {	-- Scorched Satchel of Helpful Goods 84-85
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random Cataclysm dungeon in the level 84-85 range.",
-			["g"] = {
+			["groups"] = {
 				i(113763),	-- Smoldercloth Gloves
 				i(113761),	-- Smoldercloth Leggings
 				i(113762),	-- Smoldercloth Robe

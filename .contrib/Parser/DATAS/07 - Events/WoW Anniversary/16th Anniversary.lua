@@ -19,7 +19,7 @@ root(ROOTS.WorldEvents, n(SIXTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 	n(VENDORS, {
 		n(158061, {	-- Historian Ma'di
 			["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
-			["g"] = {
+			["groups"] = {
 				i(178514, {	-- Crafted Cloak of War
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),

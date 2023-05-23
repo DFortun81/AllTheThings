@@ -14,8 +14,8 @@ _.Instances = { tier(CATA_TIER, {
 		["groups"] = {
 			n(QUESTS, {
 				q(28746, {	-- Penetrating Their Defenses
-					["provider"] = { "n", 39908 },	-- Brann Bronzebeard
-					["sourceQuests"] = { 28654 },	-- The Heart of the Matter
+					["qg"] = 39908,	-- Brann Bronzebeard
+					["sourceQuest"] = 28654,	-- The Heart of the Matter
 					["groups"] = {
 						i(66913),	-- Repository Gauntlets
 						i(66911),	-- Offline Greaves
@@ -23,8 +23,8 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 				q(28753, {	-- Doing it the Hard Way
-					["provider"] = { "n", 39908 },	-- Brann Bronzebeard
-					["sourceQuests"] = { 28746 },	-- Penetrating Their Defenses
+					["qg"] = 39908,	-- Brann Bronzebeard
+					["sourceQuest"] = 28746,	-- Penetrating Their Defenses
 					["groups"] = {
 						i(66917),	-- True Archaeologist's Bracers
 						i(66921),	-- Helm of Reorigination

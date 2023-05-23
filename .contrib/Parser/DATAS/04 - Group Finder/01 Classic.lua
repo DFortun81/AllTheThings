@@ -48,7 +48,7 @@ _.GroupFinder =
 		i(52000, {	-- Satchel of Helpful Goods 24-34
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random dungeon in the level 24-34 range.",
-			["g"] = {
+			["groups"] = {
 				i(51973),	-- Enumerated Handwraps
 				i(143581),	-- Earthbound Grips
 				--i(51980),	-- Earthbound Handgrips; Probably unobtainable.
@@ -58,7 +58,7 @@ _.GroupFinder =
 		i(67248, {	-- Satchel of Helpful Goods 35-39
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random dungeon in the level 35-39 range.",
-			["g"] = {
+			["groups"] = {
 				i(51974),	-- Enumerated Shoulderpads
 				i(51966),	-- Vigorous Spaulders;	  These two share name, possible
 				i(51998),	-- Vigorous Spaulders;		one is now unobtainable.
@@ -71,7 +71,7 @@ _.GroupFinder =
 		i(52001, {	-- Satchel of Helpful Goods 40-45
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random dungeon in the level 40-45 range.",
-			["g"] = {
+			["groups"] = {
 				i(51974),	-- Enumerated Shoulderpads
 				i(51966),	-- Vigorous Spaulders
 				i(51976),	-- Earthbound Shoulderguards
@@ -81,7 +81,7 @@ _.GroupFinder =
 		i(52002, {	-- Satchel of Helpful Goods 46-55
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random dungeon in the level 46-55 range.",
-			["g"] = {
+			["groups"] = {
 				i(51972),	-- Enumerated Bracers
 				i(51967),	-- Enumerated Sandals
 				i(51962),	-- Vigorous Bracers
@@ -95,7 +95,7 @@ _.GroupFinder =
 		i(52003, {	-- Satchel of Helpful Goods 56-60
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random dungeon in the level 56-60 range.",
-			["g"] = {
+			["groups"] = {
 				i(51993),	-- Turbulent Cloak
 				i(51971),	-- Enumerated Belt
 				i(51959),	-- Vigorous Belt

@@ -7,7 +7,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 	["lvl"] = 120,
 	["maps"] = { DEEPRUN_TRAM },
 	["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
-	["g"] = {
+	["groups"] = {
 		n(REWARDS, {
 			--	attaching questIDs and sourceQuests here makes the SQ list not display correctly (the items display instead of the quests).
 			i(92718, {	-- Brawler's Purse
@@ -25,62 +25,62 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 		}),
 		n(QUESTS, {
 			q(36702, {	-- Meatball
-				["provider"] = { "n", 86272 },	-- Meatball
+				["qg"] = 86272,	-- Meatball
 				["description"] = "Reach Rank 5 in the arena.",
-				["g"] = {
+				["groups"] = {
 					follower(203),	-- Meatball
 				},
 			}),
 			q(55002, {	-- Murder at the Brawlpub
+				["qg"] = 68363,	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 				["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
-				["provider"] = { "n", 68363 },	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 				["coord"] = { 50.2, 23.1, 500 },
 			}),
 			q(55003, {	-- Put Up Your Dukes
-				["provider"] = { "n", 150313 },	-- Commander Daalo
+				["qg"] = 150313,	-- Commander Daalo
 				["sourceQuest"] = 55002,	-- Murder at the Brawlpub
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55004, {	-- Undercover Agent: Ann Dennyson
-				["provider"] = { "n", 150313 },	-- Commander Daalo
+				["qg"] = 150313,	-- Commander Daalo
 				["sourceQuest"] = 55003,	-- Put Up Your Dukes
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55005, {	-- The Financial Participation Incentive
-				["provider"] = { "n", 150314 },	-- Ann Dennyson
+				["qg"] = 150314,	-- Ann Dennyson
 				["cost"] = { { "i", 143762, 1 }, },	-- High Roller's Contract
 				["sourceQuest"] = 55004,	-- Undercover Agent: Ann Dennyson
 				["coord"] = { 69.7, 36.7, 500 },
 			}),
 			q(55006, {	-- A Favor for Your Old Chum Winifred
-				["provider"] = { "n", 68365 },	-- Lord Winifred Browne <Prediction Incentives>
+				["qg"] = 68365,	-- Lord Winifred Browne <Prediction Incentives>
 				["sourceQuest"] = 55005,	-- The Financial Participation Incentive
 				["coord"] = { 63.2, 40.9, 500 },
 			}),
 			q(55007, {	-- Lord Browne's Debts
-				["provider"] = { "n", 68365 },	-- Lord Winifred Browne <Prediction Incentives>
+				["qg"] = 68365,	-- Lord Winifred Browne <Prediction Incentives>
 				["cost"] = { { "i", 164935, 1 }, },	-- Challenge Card: Lord Sylysthrel
 				["sourceQuest"] = 55006,	-- A Favor for Your Old Chum Winifred
 				["coord"] = { 63.3, 40.6, 500 },
 			}),
 			q(55008, {	-- Evidence Packet: Lord Winifred Browne
-				["provider"] = { "n", 150314 },	-- Ann Dennyson
+				["qg"] = 150314,	-- Ann Dennyson
 				["sourceQuest"] = 55007,	-- Lord Browne's Debts
 				["coord"] = { 68.0, 36.6, 500 },
 			}),
 			q(55009, {	-- Undercover Agent: Saralara Fizzlesprang
-				["provider"] = { "n", 150313 },	-- Commander Daalo
+				["qg"] = 150313,	-- Commander Daalo
 				["sourceQuest"] = 55008,	-- Evidence Packet: Lord Winifred Browne
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55010, {	-- Soul Splinters
-				["provider"] = { "n", 150317 },	-- Shadowmaster O'Flannerty
+				["qg"] = 150317,	-- Shadowmaster O'Flannerty
 				["sourceQuest"] = 55009,	-- Undercover Agent: Saralara Fizzlesprang
 				["coord"] = { 68.0, 24.8, 500 },
 				["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
 			}),
 			q(55011, {	-- Super Soul Splinters
-				["provider"] = { "n", 150317 },	-- Shadowmaster O'Flannerty
+				["qg"] = 150317,	-- Shadowmaster O'Flannerty
 				["sourceQuest"] = 55010,	-- Soul Splinters
 				["coord"] = { 68.0, 24.8, 500 },
 				["description"] = "You can save previously earned Rumbler's Purses and open them while on this quest - Each Rumbler's Purse gives 1 Super Soul Splinter, so you will need 3 Rumbler's Purses to complete this quest.",
@@ -89,29 +89,29 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				["sourceQuest"] = 55011,	-- Super Soul Splinters
 			}),
 			q(55013, {	-- The Precious 13-Tooth Gogglegear
-				["provider"] = { "n", 150315 },	-- Saralara Fizzlesprang
+				["qg"] = 150315,	-- Saralara Fizzlesprang
 				["cost"] = { { "i", 94178, 1 }, },	-- Challenge Card: G.G. Engineering
 				["sourceQuest"] = 55012,	-- Cause for Concern
 				["coord"] = { 44.4, 34.6, 500 },
 			}),
 			q(55014, {	-- The Fizzlesprang Goggle Experiment
-				["provider"] = { "n", 150315 },	-- Saralara Fizzlesprang
+				["qg"] = 150315,	-- Saralara Fizzlesprang
 				["sourceQuest"] = 55013,	-- The Precious 13-Tooth Gogglegear
 				["coord"] = { 44.4, 34.6, 500 },
 			}),
 			q(55015, {	-- Evidence Packet: Shadowmaster O'Flannerty
-				["provider"] = { "n", 150315 },	-- Saralara Fizzlesprang
+				["qg"] = 150315,	-- Saralara Fizzlesprang
 				["sourceQuest"] = 55014,	-- The Fizzlesprang Goggle Experiment
 				["coord"] = { 44.4, 34.6, 500 },
 			}),
 			q(55016, {	-- Undercover Agent: Silent Jussho
-				["provider"] = { "n", 150313 },	-- Commander Daalo
+				["qg"] = 150313,	-- Commander Daalo
 				["cost"] = { { "i", 143759, 1 }, },	-- VIP Room Rental Form
 				["sourceQuest"] = 55015,	-- Evidence Packet: Shadowmaster O'Flannerty
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55017, {	-- Flaunt It If You Got It
-				["provider"] = { "n", 70722 },	-- Grant Lazarby
+				["qg"] = 70722,	-- Grant Lazarby
 				["cost"] = {
 					{ "i", 98121, 1, },		-- Amberseed Bun
 					{ "i", 98117, 1, },		-- Moneybrau
@@ -121,33 +121,33 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				["coord"] = { 33.1, 64.3, 500 },
 			}),
 			q(55018, {	-- Simply Dying of Boredom
-				["provider"] = { "n", 70722 },	-- Grant Lazarby
+				["qg"] = 70722,	-- Grant Lazarby
 				["sourceQuest"] = 55017,	-- Flaunt It If You Got It
 				["coord"] = { 33.1, 64.3, 500 },
 			}),
 			q(55019, {	-- Evidence Packet: Grant Lazarby
-				["provider"] = { "n", 150316 },	-- Silent Jussho
+				["qg"] = 150316,	-- Silent Jussho
 				["sourceQuest"] = 55018,	-- Simply Dying of Boredom
 				["coord"] = { 30.3, 87.7, 500 },
 			}),
 			q(55020, {	-- The Brawlpub Trial
-				["provider"] = { "n", 150313 },	-- Commander Daalo
+				["qg"] = 150313,	-- Commander Daalo
 				["sourceQuest"] = 55019,	-- Evidence Packet: Grant Lazarby
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55021, {	-- A Clue from Area 52
-				["provider"] = { "n", 150313 },	-- Commander Daalo
+				["qg"] = 150313,	-- Commander Daalo
 				["sourceQuest"] = 55020,	-- The Brawlpub Trial
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55022, {	-- Solving the Mystery
-				["provider"] = { "n", 150320 },	-- Bizmo
+				["qg"] = 150320,	-- Bizmo
 				["cost"] = { { "i", 164936, 1 }, },	-- Mysterious Challenge Card
 				["sourceQuest"] = 55021,	-- A Clue from Area 52
 				["coord"] = { 31.1, 66.5, NETHERSTORM },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					i(166724),	-- Bruce (MOUNT!)
 				},
 			}),
@@ -184,7 +184,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				i(164935),	-- Challenge Card: Lord Sylysthrel
 				i(164936, {	-- Mysterious Challenge Card
 					["description"] = "If you fail to kill Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
-					["g"] = {
+					["groups"] = {
 						n(145782, {	-- Xan-Sallish <Blade of the Watcher>
 							i(164940, {	-- Mysterious Satchel
 								i(164942),	-- Shadowscrawled Tome
@@ -200,7 +200,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 			}),
 			n(151941, {	-- Dershway the Triggered <Bizmo's Brawlpub Quartermaster>
 				["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
-				["g"] = {
+				["groups"] = {
 					i(142403, {	-- Brawler's Burly Basilisk (MOUNT!) unobtainable as of BFA prepatch
 						["timeline"] = { "added 7.1", "removed 8.0" },
 					}),
@@ -214,7 +214,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 					i(98092),	-- Digmaster's Bodysleeve
 					i(167891, {	-- Ensemble: Brawler's Garb
 						["ignoreBonus"] = true,
-						["g"] = {
+						["groups"] = {
 							i(167821),	-- Brawler's Bracer Chains
 							i(167815),	-- Brawler's Footpads
 							i(167816),	-- Brawler's Gloves
@@ -255,10 +255,10 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 			n(118898, {	-- Ulaani
 				i(143763, {	-- Bag of Chipped Dice
 					["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
-					["g"] = {
+					["groups"] = {
 						ach(9176, {	-- Deck Your Collection [Season 2]
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(98543),	-- Wraps of the Blood-Soaked Brawler
 							},
 						}),
@@ -381,7 +381,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				}),
 				i(142290, {	-- Rumble Card: Battle of the Brew
 					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["g"] = {
+					["groups"] = {
 						crit(3, {	-- Battle of the Brew
 							["achievementID"] = 11573,	-- Rumble Club
 						}),
@@ -389,7 +389,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				}),
 				i(142288, {	-- Rumble Card: Grief Warden
 					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["g"] = {
+					["groups"] = {
 						n(114943, {	-- Grief Warden <Enmity Moose>
 							crit(2, {	-- Grief Warden
 								["achievementID"] = 11573,	-- Rumble Club
@@ -399,7 +399,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				}),
 				i(142294, {	-- Rumble Card: Mazhareen
 					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["g"] = {
+					["groups"] = {
 						n(68251, {	-- Mazhareen
 							crit(1, {	-- Mazhareen
 								["achievementID"] = 11573,	-- Rumble Club
@@ -409,7 +409,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				}),
 				i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
 					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["g"] = {
+					["groups"] = {
 						n(117102, {	-- Mindbreaker Gzzaj
 							crit(4, {	-- Mindbreaker Gzzaj
 								["achievementID"] = 11573,	-- Rumble Club
@@ -419,7 +419,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				}),
 				i(142289, {	-- Rumble Card: Penguin Stampede
 					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["g"] = {
+					["groups"] = {
 						n(115185, {	-- Penguin Stampede
 							crit(6, {	-- Penguin Stampede
 								["achievementID"] = 11573,	-- Rumble Club
@@ -429,7 +429,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				}),
 				i(142291, {	-- Rumble Card: Senya
 					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["g"] = {
+					["groups"] = {
 						n(115357, {	-- Senya
 							crit(5, {	-- Senya
 								["achievementID"] = 11573,	-- Rumble Club
@@ -439,7 +439,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				}),
 				i(142292, {	-- Rumble Card: Stranglethorn Streak
 					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["g"] = {
+					["groups"] = {
 						crit(7, {	-- Stranglethorn Streak
 							["achievementID"] = 11573,	-- Rumble Club
 						}),

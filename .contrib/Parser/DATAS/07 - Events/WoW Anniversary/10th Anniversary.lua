@@ -13,7 +13,7 @@ root(ROOTS.WorldEvents, n(TENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_G
 		["crs"] = {
 			11502,	-- Ragnaros
 		},
-		["g"] = {
+		["groups"] = {
 			ach(9550, {	-- Boldly, You Sought the Power of Ragnaros
 				i(115484, {	-- Core Hound (MOUNT!)
 				}),

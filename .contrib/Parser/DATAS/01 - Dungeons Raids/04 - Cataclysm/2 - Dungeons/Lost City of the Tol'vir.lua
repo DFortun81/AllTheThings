@@ -10,13 +10,13 @@ _.Instances = { tier(CATA_TIER, {
 		["groups"] = {
 			n(QUESTS, {
 				q(28870, {	-- Return to the Lost City
+					["qg"] = 47684,	-- King Phaoris
 					["sourceQuest"] = 28520,	-- The Fall of Neferset City
-					["provider"] = { "n", 47684 },	-- King Phaoris
 					["coord"] = { 54.9, 32.7, ULDUM },
 					["isBreadcrumb"] = true,
 				}),
 				q(28781, {	-- Targets of Opportunity
-					["provider"] = { "n", 50038 },	-- Captain Hadan
+					["qg"] = 50038,	-- Captain Hadan
 					["sourceQuest"] = 28870,	-- Return to the Lost City
 					["groups"] = {
 						i(66905),	-- Clandestine Spaulders
@@ -25,7 +25,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 				q(28783, {	-- The Source of Their Power
-					["provider"] = { "n", 50038 },	-- Captain Hadan
+					["qg"] = 50038,	-- Captain Hadan
 					["sourceQuest"] = 28870,	-- Return to the Lost City
 					["groups"] = {
 						i(66910),	-- Blight-Lifter's Mantle
@@ -102,7 +102,7 @@ _.Instances = { tier(CATA_TIER, {
 			d(NORMAL_DUNGEON, {
 				e(117, {	-- General Husam
 					["crs"] = { 44577 },	-- General Husam
-					["g"] = {
+					["groups"] = {
 						i(56382),	-- Siliza's Spear
 						i(157600),	-- Necklace of Rumbling Earth
 						i(56379),	-- Kaleti Cloak
@@ -118,7 +118,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 				e(118, {	-- Lockmaw
 					["crs"] = { 43614 },	-- Lockmaw
-					["g"] = {
+					["groups"] = {
 						i(56384),	-- Resonant Kris (7.3.5 - Moved from High Prophet Barim)
 						i(56385),	-- Tauntka's Necklace
 						i(56386),	-- Balkar's Waders (7.3.5 - Moved from High Prophet Barim)
@@ -133,7 +133,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 				e(119, {	-- High Prophet Barim
 					["crs"] = { 43612 },	-- High Prophet Barim
-					["g"] = {
+					["groups"] = {
 						-- i(56384),	-- Resonant Kris (7.3.5 - Moved to Lockmaw)
 						-- i(56386),	-- Balkar's Waders (7.3.5 - Moved to Lockmaw)
 						-- i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved to Lockmaw)
@@ -151,7 +151,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 				e(122, {	-- Siamat
 					["crs"] = { 44819 },	-- Siamat
-					["g"] = {
+					["groups"] = {
 						ach(4848),	-- Lost City of the Tol'vir
 						i(56396),	-- Hammer of Sparks
 						i(157599),	-- Sceptre of  Swirling Winds
@@ -182,7 +182,7 @@ _.Instances = { tier(CATA_TIER, {
 				["groups"] = {
 					e(117, {	-- General Husam
 						["crs"] = { 44577 },	-- General Husam
-						["g"] = {
+						["groups"] = {
 							i(56382),	-- Siliza's Spear
 							i(157600),	-- Necklace of Rumbling Earth
 							i(56379),	-- Kaleki Cloak
@@ -196,7 +196,7 @@ _.Instances = { tier(CATA_TIER, {
 							43614,	-- Lockmaw
 							49045,	-- Augh
 						},
-						["g"] = {
+						["groups"] = {
 							ach(5291),	-- Acrocalypse Now
 							-- i(56390),	-- Barim's Main Gauche (7.3.5 - Moved to High Prophet Barim!)
 							-- i(56389),	-- Sand Silk Wristband (7.3.5 - Moved to High Prophet Barim!)
@@ -210,7 +210,7 @@ _.Instances = { tier(CATA_TIER, {
 					}),
 					e(119, {	-- High Prophet Barim
 						["crs"] = { 43612 },	-- High Prophet Barim
-						["g"] = {
+						["groups"] = {
 							ach(5290),	-- Kill It With Fire!
 							-- i(56384),	-- Resonant Kris (7.3.5 - Moved to Lockmaw)
 							-- i(56386),	-- Balkar's Waders (7.3.5 - Moved to Lockmaw)
@@ -224,7 +224,7 @@ _.Instances = { tier(CATA_TIER, {
 					}),
 					e(122, {	-- Siamat
 						["crs"] = { 44819 },	-- Siamat
-						["g"] = {
+						["groups"] = {
 							ach(5292),	-- Headed South
 							ach(5066),	-- Heroic: Lost City of the Tol'vir
 							ach(5140),	-- Heroic: Lost City of the Tol'vir Guild Run

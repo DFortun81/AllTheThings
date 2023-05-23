@@ -8,17 +8,17 @@ root(ROOTS.WorldDrops, {
 		["groups"] = {
 			tier(WOD_TIER, {
 				q(39107, {	-- An Even Bigga Score
-					["provider"] = { "n", 83006 },	-- Griftah
+					["qg"] = 83006,	-- Griftah
 					["classes"] = { ROGUE },
 					["isWeekly"] = true,
 				}),
 				q(37284, {	-- Da Big Score
-					["provider"] = { "n", 83006 },	-- Griftah
+					["qg"] = 83006,	-- Griftah
 					["classes"] = { ROGUE },
 					["isWeekly"] = true,
 				}),
 				q(37285, {	-- If You're Sure
-					["provider"] = { "n", 83006 },	-- Griftah
+					["qg"] = 83006,	-- Griftah
 					["classes"] = { ROGUE },
 					["isWeekly"] = true,
 				}),

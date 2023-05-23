@@ -6,7 +6,7 @@ _.Instances = { tier(CATA_TIER, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 85,
-		["g"] = sharedData({
+		["groups"] = sharedData({
 			["isRaid"] = true,
 		},{
 			n(COMMON_BOSS_DROPS, {
@@ -41,7 +41,7 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			n(50063, {	-- Akma'hat
 				["coord"] = { 38.0, 60.6, ULDUM },
-				["g"] = {
+				["groups"] = {
 					i(69877),	-- Belt of a Thousand Gaping Mouths
 					un(REMOVED_FROM_GAME, i(67240)),	-- Belt of A Thousand Mouths [Replaced with 69877]
 				},
@@ -51,7 +51,7 @@ _.Instances = { tier(CATA_TIER, {
 					{ 37.6, 73.4, MOUNT_HYJAL },
 					{ 40.4, 81.8, MOUNT_HYJAL },
 				},
-				["g"] = {
+				["groups"] = {
 					i(69842),	-- Garr's Reinforced Girdle of Memories
 					un(REMOVED_FROM_GAME, i(67235)), --	Garr's Girdle of Memories [Replaced with 69842]
 				},
@@ -64,7 +64,7 @@ _.Instances = { tier(CATA_TIER, {
 					{ 57.2, 7.8, TWILIGHT_HIGHLANDS },
 					{ 59.8, 6.8, TWILIGHT_HIGHLANDS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(69844),	-- Vitreous Beak of Julak-Doom
 					un(REMOVED_FROM_GAME, i(67246)),	-- Beak of Julak-Doom [Replaced with 69844]
 				},
@@ -77,7 +77,7 @@ _.Instances = { tier(CATA_TIER, {
 					{ 75.6, 36.6, 204 },
 					{ 77.0, 25.4, 204 },
 				},
-				["g"] = {
+				["groups"] = {
 					i(69843),	-- Mobus's Dripping Halberd
 					i(67153, {	-- Mobus's Vile Halberd
 						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
@@ -92,7 +92,7 @@ _.Instances = { tier(CATA_TIER, {
 					{ 56.6, 42.6, DEEPHOLM },
 					{ 57.2, 59.0, DEEPHOLM },
 				},
-				["g"] = {
+				["groups"] = {
 					i(69876),	-- Xariona's Spectral Gauntlets
 					un(REMOVED_FROM_GAME, i(67239)),	-- Xariona's Spectral Claws [Replaced with 69876]
 				},

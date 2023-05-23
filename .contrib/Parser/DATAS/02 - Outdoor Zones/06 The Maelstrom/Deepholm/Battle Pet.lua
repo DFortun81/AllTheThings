@@ -12,7 +12,7 @@ _.Zones =
 					469,	-- Twilight Beetle (PET!)
 					470,	-- Twilight Spider (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 				pet(838),	-- Amethyst Shale Hatchling (PET!)
 				pet(559),	-- Crimson Geode (PET!)
 				pet(554),	-- Crimson Shale Hatchling (PET!)

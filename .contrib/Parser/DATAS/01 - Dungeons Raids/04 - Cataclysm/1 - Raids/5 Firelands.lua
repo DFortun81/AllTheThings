@@ -74,7 +74,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		["coord"] = { 47.3, 78.1, MOUNT_HYJAL },
 		["maps"] = { 367, 368, 369 },
 		["lvl"] = 85,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(5802, {	-- Firelands
 					crit(1, {	-- Beth'tilac
@@ -108,42 +108,42 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 				["isRaid"] = true,
 				["lvl"] = 85,
 				-- TODO: coords for all these quests
-				["g"] = sharedData({["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER }},{
+				["groups"] = sharedData({["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER }},{
 					-- the achieve is a little out of place but FL is structured quite differently with the legendary quest line so eh....
 					ach(5839, {	-- Dragonwrath, Tarecgosa's Rest
-						["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, MONK, DRUID, EVOKER },
 						["provider"] = { "i", 71086 },	-- Dragonwrath, Tarecgosa's Rest
+						["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, MONK, DRUID, EVOKER },
 					}),
 					a(q(29453, {	-- Your Time Has Come [A]
+						["qg"] = 53115,	-- Molten Lord
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-						["provider"] = { "n", 53115 },	-- Molten Lord
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					})),
 					h(q(29452, {	-- Your Time Has Come [H]
+						["qg"] = 53115,	-- Molten Lord
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-						["provider"] = { "n", 53115 },	-- Molten Lord
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					})),
-					h(q(29129, {	-- A Legendary Engagement [H]
-						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
-						["provider"] = { "n", 52382 },	-- Ziradormi
-						["sourceQuests"] = { 29452 },	-- Your Time Has Come
-					})),
 					a(q(29132, {	-- A Legendary Engagement [A]
+						["qg"] = 52382,	-- Ziradormi
+						["sourceQuest"] = 29453,	-- Your Time Has Come [A]
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
-						["provider"] = { "n", 52382 },	-- Ziradormi
-						["sourceQuests"] = { 29453 },	-- Your Time Has Come
+					})),
+					h(q(29129, {	-- A Legendary Engagement [H]
+						["qg"] = 52382,	-- Ziradormi
+						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
+						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
 					})),
 					q(29134, {	-- A Wrinkle in Time
-						["provider"] = { "n", 15192 },	-- Anachronos
+						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = {
 							29129,	-- A Legendary Engagement (horde)
 							29132,	-- A Legendary Engagement (alliance)
 						},
 					}),
 					q(29135, {	-- All-Seeing Eye
-						["provider"] = { "n", 15192 },	-- Anachronos
-						["sourceQuests"] = { 29134 },	-- A Wrinkle in Time
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuest"] = 29134,	-- A Wrinkle in Time
 						["cost"] = {
 							{ "i", 65893, 3, },	-- Sands of Time
 						},
@@ -171,23 +171,23 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						},
 					}),
 					q(29193, {	-- On a Wing and a Prayer
-						["provider"] = { "n", 15192 },	-- Anachronos
-						["sourceQuests"] = { 29135 },	-- All-Seeing Eye
+						["qg"] = 15192,	-- Anachronos
+						["sourceQuest"] = 29135,	-- All-Seeing Eye
 					}),
 					q(29194, {	-- Through a Glass, Darkly
-						["provider"] = { "n", 52835 },	-- Tarecgosa
-						["sourceQuests"] = { 29193 },	-- On a Wing and a Prayer
+						["qg"] = 52835,	-- Tarecgosa
+						["sourceQuest"] = 29193,	-- On a Wing and a Prayer
 						["maps"] = { 370 },				-- The Nexus (Scenario Map)
 					}),
 					q(29225, {	-- Actionable Intelligence
-						["provider"] = { "n", 53567 },	-- Tarecgosa
-						["sourceQuests"] = { 29194 },	-- Through a Glass, Darkly
+						["qg"] = 53567,	-- Tarecgosa
+						["sourceQuest"] = 29194,	-- Through a Glass, Darkly
 					}),
 					q(29234, {	-- Delegation
+						["qg"] = 52995,	-- Kalecgos
+						["sourceQuest"] = 29225,	-- Actionable Intelligence
 						["description"] = "This is exactly how to do the quest... Start by walking into Firelands. DO NOT KILL ANY OF THE BOSSES. You will need them alive so that you can loot the items for the next phase of the quest after this one.\n\nMouse over each of the requirements below for further instructions.\n\nAfter you are finished, go to Borean Tundra.",
-						["provider"] = { "n", 52995 },	-- Kalecgos
-						["sourceQuests"] = { 29225 },	-- Actionable Intelligence
-						["g"] = {
+						["groups"] = {
 							i(71008, {	-- Charged Rhyolite Focus
 								["description"] = "While fighting Lord Rhyolith you loot the Rhyolite Fragments which randomly spawn around the edge of the area (note: possible link to the volcano spawns, but those are random as well). Gather three of these and create a Dull Rhyolite Focus, which is then used just before he uses Concussive Stomp. (STOMP NOW!) He has to stand on it almost directly so make sure you're pretty close before using it. Loot the Charged Rhyolite Focus afterwards.",
 								["crs"] = { 52558 },	-- Lord Rhyolith
@@ -198,7 +198,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 									{ "i", 71015, 1 },	-- Charged Emberstone Focus
 									{ "i", 71016, 1 },	-- Charged Pyreshell Focus
 								},
-								["g"] = {
+								["groups"] = {
 									i(70997),	-- Rhyolite Fragment
 									i(70996),	-- Dull Rhyolite Focus
 								},
@@ -207,7 +207,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 								["description"] = "While fighting Beth'tilac you loot the Obsidian-Flecked Chitin Fragments, three of which spawn when a Cinderweb Drone is killed. Gather them and create a Dull Chitinous Focus, which is then used on top of the web just before she uses Smoldering Devastation at 0 Energy.\n\nThis may take a while, just keep an eye on her energy bar and don't fall through the holes created by the meteors.",
 								["crs"] = { 52498 },	-- Beth'tilac <The Red Widow>
 								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
-								["g"] = {
+								["groups"] = {
 									i(70999),	-- Obsidian-Flecked Chitin Fragment
 									i(70998),	-- Dull Chitinous Focus
 								},
@@ -216,7 +216,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 								["description"] = "While fighting Shannox you loot the Emberstone Fragments, one of which spawns when a Crystal Prison Trap is destroyed. Gather three of them and create a Dull Emberstone Focus, which is then used just before he uses Hurl Spear. The spear has to hit the focus so make sure you're close. Once the fire has died down loot the Charged Emberstone Focus.\n\nNOTE: This requires at least two targets:\nA mage can use the Frost Elemental.\nA shaman can summon the Earth Elemental.\nA Warlock can use its pet.\nA Priest or Druid needs a friend. :(",
 								["crs"] = { 53691 },	-- Shannox
 								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
-								["g"] = {
+								["groups"] = {
 									i(71000),	-- Emberstone Fragment
 									i(71001),	-- Dull Emberstone Focus
 								},
@@ -225,7 +225,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 								["description"] = "While fighting Alysrazor you loot the Pyreshell Fragments, one of which spawns when a Molten Egg hatches. Gather three and create a Dull Pyreshell Focus, to be used when she is on the ground and close to full resources during Burnout.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
 								["crs"] = { 52530 },	-- Alysrazor
 								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
-								["g"] = {
+								["groups"] = {
 									i(70994),	-- Pyreshell Fragment
 									i(70995),	-- Dull Pyreshell Focus
 								},
@@ -240,26 +240,26 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						},
 					}),
 					q(29239, {	-- Nordrassil's Bough
-						["provider"] = { "n", 53009 },	-- Kalecgos
-						["sourceQuests"] = { 29234 },	-- Delegation
-						["g"] = {
+						["qg"] = 53009,	-- Kalecgos
+						["sourceQuest"] = 29234,	-- Delegation
+						["groups"] = {
 							i(71084),  -- Branch of Nordrassil
 						},
 					}),
 					q(29240, {	-- Emergency Extraction
-						["provider"] = { "n", 53009 },	-- Kalecgos
-						["sourceQuests"] = { 29239 },	-- Nordrassil's Bough
+						["qg"] = 53009,	-- Kalecgos
+						["sourceQuest"] = 29239,	-- Nordrassil's Bough
 					}),
-					q(29269, {	--  At One
-						["provider"] = { "n", 53149 },	-- Kalecgos
-						["sourceQuests"] = { 29240 },	-- Emergency Extraction
+					q(29269, {	-- At One
+						["qg"] = 53149,	-- Kalecgos
+						["sourceQuest"] = 29240,	-- Emergency Extraction
 					}),
 					q(29270, {	-- Time Grows Short
+						["qg"] = 53210,	-- Kalecgos
+						["sourceQuest"] = 29269,	-- At One
 						-- If someone wants to re-write this description to be 'accurate' for current content, feel free
 						-- ["description"] = "You should clear this raid on 25H difficulty for the most gain per boss:\n\n10 Man\n    Normal ---- 18-23\n    Heroic ------ 23-26\n\n25 Man\n    Normal ---- 48-55\n    Heroic ----- 55-66",
-						["provider"] = { "n", 53210 },	-- Kalecgos
-						["sourceQuests"] = { 29269 },	-- At One
-						["g"] = {
+						["groups"] = {
 							i(69815, {	-- Seething Cinder
 								["description"] = "Need 1000 of these for the Time Grows Short quest.",
 								["crs"] = {
@@ -275,20 +275,20 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						},
 					}),
 					q(29285, {	-- Alignment
-						["provider"] = { "n", 53215 },	-- Kalecgos
-						["sourceQuests"] = { 29270 },	-- Time Grows Short
-						["g"] = {
+						["qg"] = 53215,	-- Kalecgos
+						["sourceQuest"] = 29270,	-- Time Grows Short
+						["groups"] = {
 							i(71085),	-- Runestaff of Nordrassil
 						},
 					}),
 					q(29307, {	-- Heart of Flame [A]
-						["provider"] = { "n", 53349 },	-- Kalecgos
-						["sourceQuests"] = { 29285 },	-- Alignment
+						["qg"] = 53349,	-- Kalecgos
+						["sourceQuest"] = 29285,	-- Alignment
 						["altQuests"] = {
 							29308,	-- Heart of Flame [H]
 						},
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(69848, {	-- Heart of Flame
 								["description"] = "The heart has 100% drop rate from Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty.\n\nGather Essences by killing the bosses and syphoning the essences with your staff.",
 								["crs"] = {
@@ -305,13 +305,13 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						},
 					}),
 					q(29308, {	-- Heart of Flame [H]
-						["provider"] = { "n", 53349 },	-- Kalecgos
-						["sourceQuests"] = { 29285 },	-- Alignment
+						["qg"] = 53349,	-- Kalecgos
+						["sourceQuest"] = 29285,	-- Alignment
 						["altQuests"] = {
 							29307,	-- Heart of Flame [A]
 						},
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(69848, {	-- Heart of Flame
 								["description"] = "The heart has 100% drop rate from Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty.\n\nGather Essences by killing the bosses and syphoning the essences with your staff.",
 								["crs"] = {
@@ -328,24 +328,24 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						},
 					}),
 					q(29312, {	-- The Stuff of Legends [A]
-						["provider"] = { "n", 53466 },	-- Hallegosa
-						["sourceQuests"] = { 29307 },	-- Heart of Flame
+						["qg"] = 53466,	-- Hallegosa
+						["sourceQuest"] = 29307,	-- Heart of Flame
 						["altQuests"] = {
 							29309,	-- The Stuff of Legends [H]
 						},
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 						},
 					}),
 					q(29309, {	-- The Stuff of Legends [H]
-						["provider"] = { "n", 53466 },	-- Hallegosa
-						["sourceQuests"] = { 29308 },	-- Heart of Flame
+						["qg"] = 53466,	-- Hallegosa
+						["sourceQuest"] = 29308,	-- Heart of Flame
 						["altQuests"] = {
 							29312,	-- The Stuff of Legends [A]
 						},
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 						},
 					}),
@@ -369,7 +369,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				["g"] = {
+				["groups"] = {
 					i(69976),	-- Pattern: Boots of the Black Flame
 					i(69966),	-- Pattern: Don Tayo's Inferno Mittens
 					i(69975),	-- Pattern: Endless Dream  Walkers
@@ -403,7 +403,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 			}),
 			d(NORMAL_RAID, {
 				["difficulties"] = { 1, 3, 4 },
-				["g"] = {
+				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							53691,	-- Shannox
@@ -414,7 +414,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							52571,	-- Majordomo Staghelm <Archdruid of the Flame>
 							52409,	-- Ragnaros
 						},
-						["g"] = {
+						["groups"] = {
 							i(71779),	-- Avool's Incendiary Shanker
 							i(71787),	-- Entrail Disgorger
 							i(71776),	-- Eye of Purification
@@ -427,7 +427,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(192, {	-- Beth'tilac
 						["creatureID"] = 52498,
-						["g"] = {
+						["groups"] = {
 							ach(5821),	-- Death from Above
 							i(152976,	{	-- Cinderweb Recluse (PET!)
 								["timeline"] = { ADDED_7_3_0 },
@@ -450,7 +450,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(193, {	-- Lord Rhyolith
 						["creatureID"] = 52558,
-						["g"] = {
+						["groups"] = {
 							ach(5810),	-- Not an Ambi-Turner
 							i(71006),	-- Volcanospike
 							i(70991),	-- Arbalest of Erupting Fury
@@ -469,7 +469,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
-						["g"] = {
+						["groups"] = {
 							ach(5813, {	-- Do a Barrel Roll!
 								crit(1),	-- Brushfire
 								crit(2),	-- Lava Spew
@@ -495,7 +495,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
-						["g"] = {
+						["groups"] = {
 							ach(5829, {	-- Bucket List
 								crit(1),	-- Beth'tilac's Lair
 								crit(2),	-- Flamebreach
@@ -524,7 +524,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(196, {	-- Baleroc, the Gatekeeper
 						["creatureID"] = 53494,
-						["g"] = {
+						["groups"] = {
 							ach(5830),	-- Share the Pain
 							i(152977,	{	-- Surger (PET!)
 								["timeline"] = { ADDED_7_3_0 },
@@ -546,7 +546,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(197, {	-- Majordomo Staghelm
 						["creatureID"] = 52571,
-						["g"] = {
+						["groups"] = {
 							ach(5799, {	-- Only the Penitent...
 								["description"] = "This achievement requires a group of 2.",
 							}),
@@ -573,7 +573,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
-						["g"] = {
+						["groups"] = {
 							ach(5855),	-- Ragnar-O's
 							HELM_CONQ,	-- Crown of the Fiery Conqueror
 							HELM_PROT,	-- Crown of the Fiery Protector
@@ -603,11 +603,11 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 			}),
 			d(HEROIC_RAID, {
 				["difficulties"] = { 2, 5, 6 },
-				["g"] = {
+				["groups"] = {
 					n(VENDORS, {
 						n(54402, {	-- Lurah Wrathvine
 							["description"] = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
-							["g"] = {
+							["groups"] = {
 								i(69113, {	-- Apparatus of Khaz'goroth
 									["cost"] = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
@@ -699,7 +699,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							52571,	-- Majordomo Staghelm <Archdruid of the Flame>
 							52409,	-- Ragnaros
 						},
-						["g"] = {
+						["groups"] = {
 							i(71778),	-- Avool's Incendiary Shanker
 							i(71786),	-- Entrail Disgorger
 							i(71777),	-- Eye of Purification
@@ -715,7 +715,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(192, {	-- Beth'tilac
 						["creatureID"] = 52498,
-						["g"] = {
+						["groups"] = {
 							ach(5807),	-- Heroic: Beth'tilac
 							i(152976,	{	-- Cinderweb Recluse (PET!)
 								["timeline"] = { ADDED_7_3_0 },
@@ -738,7 +738,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(193, {	-- Lord Rhyolith
 						["creatureID"] = 52558,
-						["g"] = {
+						["groups"] = {
 							ach(5808),	-- Heroic: Lord Rhyolith
 							i(71422),	-- Volcanospike
 							i(71414),	-- Arbalest of Erupting Fury
@@ -757,7 +757,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
-						["g"] = {
+						["groups"] = {
 							ach(5809),	-- Heroic: Alysrazor
 							i(71679),	-- Chest of the Fiery Conqueror
 							i(71686),	-- Chest of the Fiery Protector
@@ -781,7 +781,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
-						["g"] = {
+						["groups"] = {
 							ach(5806),	-- Heroic: Shannox
 							i(71678),	-- Leggings of the Fiery Conqueror
 							i(71685),	-- Leggings of the Fiery Protector
@@ -807,7 +807,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(196, {	-- Baleroc, the Gatekeeper
 						["creatureID"] = 53494,
-						["g"] = {
+						["groups"] = {
 							ach(5805),	-- Heroic: Baleroc
 							i(71676),	-- Gauntlets of the Fiery Conqueror
 							i(71683),	-- Gauntlets of the Fiery Protector
@@ -831,7 +831,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 					e(197, {	-- Majordomo Staghelm
 						["creatureID"] = 52571,
-						["g"] = {
+						["groups"] = {
 							ach(5804),	-- Heroic: Majordomo Fandral Staghelm
 							i(152978,	{	-- Infernal Pyreclaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
@@ -857,7 +857,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
 						["sym"] = {{"select","itemID",175158}},	-- Flames of Fury (Bag of Tricks addition)
-						["g"] = {
+						["groups"] = {
 							ach(5803, {	-- Heroic: Ragnaros
 								title(190),	-- Firelord
 							}),

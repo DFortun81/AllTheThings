@@ -34,7 +34,7 @@ root(ROOTS.Promotions, {
 			-- SEASON 4
 			ach(15594, {	-- Fearless Spectator
 				["description"] = "Granted to players who watch MDI Global Finals, AWC Grand Finals or AWC Cross-Region Tournament for 2 total hours in July 2022. You have to link your Battle.net account to your YouTube account and watch eligible streams.",
-				["g"] = {
+				["groups"] = {
 					title(459),	-- Fearless Spectator <Name>
 				},
 				["timeline"] = {

@@ -10,15 +10,15 @@ _.Instances = { tier(CATA_TIER, {
 			{ 22.9, 64.4, CAVERNS_OF_TIME },	-- dungeon entrance
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(30104, {	-- Documenting the Timeways
-					["provider"] = { "n", 57864 },	-- Alurmi
+					["qg"] = 57864,	-- Alurmi
 					["sourceQuests"] = {
 						30097,	-- Archival Purposes
 						30096,	-- Murozond
 					},
-					["g"] = {
+					["groups"] = {
 						i(72880),	-- Alurmi's Ring
 						i(72881),	-- Treads of the Past
 						i(72882),	-- Chronicler's Chestguard
@@ -26,18 +26,18 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 				q(30099, {	-- In Unending Numbers
-					["provider"] = { "n", 55624 },	-- Nozdormu
-					["sourceQuests"] = { 30098 },	-- The Well of Eternity
+					["qg"] = 55624,	-- Nozdormu
+					["sourceQuest"] = 30098,	-- The Well of Eternity
 				}),
 				q(30102, {	-- The Hour of Twilight
-					["provider"] = { "n", 57913 },	-- Chromie
-					["sourceQuests"] = { 30101 },	-- The Path of the Dragon Soul
+					["qg"] = 57913,	-- Chromie
+					["sourceQuest"] = 30101,	-- The Path of the Dragon Soul
 					["isBreadcrumb"] = true,
 				}),
 				q(30101, {	-- The Path of the Dragon Soul
-					["sourceQuests"] = { 30100 },	-- The Vainglorious
-					["provider"] = { "n", 55624 },	-- Nozdormu
-					["g"] = {
+					["qg"] = 55624,	-- Nozdormu
+					["sourceQuest"] = 30100,	-- The Vainglorious
+					["groups"] = {
 						i(72876),	-- Ironfeather Longbow
 						i(72877),	-- Chain of the Demon Hunter
 						i(72878),	-- Demonic Skull
@@ -45,8 +45,8 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 				q(30100, {	-- The Vainglorious
-					["provider"] = { "n", 55624 },	-- Nozdormu
-					["sourceQuests"] = { 30099 },	-- In Unending Numbers
+					["qg"] = 55624,	-- Nozdormu
+					["sourceQuest"] = 30099,	-- In Unending Numbers
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -62,7 +62,7 @@ _.Instances = { tier(CATA_TIER, {
 					54645,	-- Royal Handmaiden
 					55453,	-- Shadowbat
 				},
-				["g"] = {
+				["groups"] = {
 					i(76158),	-- Courtier's Slippers
 					i(76157),	-- Waterworn Handguards
 					i(76159),	-- Legion Bindings

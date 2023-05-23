@@ -13,15 +13,15 @@ _.Instances = { tier(CATA_TIER, {
 				["groups"] = {
 					n(QUESTS, {
 						q(29188, {	-- A Troll Among Trolls
-							["provider"] = { "n", 23761 },	-- Prigmon
+							["qg"] = 23761,	-- Prigmon
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(29217, {	-- The Captive Scouts
-							["provider"] = { "n", 52933 },	-- Blood Guard Hakkuz
+							["qg"] = 52933,	-- Blood Guard Hakkuz
 						}),
 						q(29186, {	-- The Hex Lord's Fetish
-							["provider"] = { "n", 52925 },	-- Witch Doctor T'wansi
-							["g"] = {
+							["qg"] = 52925,	-- Witch Doctor T'wansi
+							["groups"] = {
 								i(69595),	-- Fetish Greaves
 								i(69594),	-- T'wansi's Handwraps
 								i(69596),	-- Voodoo Hunting Bow
@@ -29,8 +29,8 @@ _.Instances = { tier(CATA_TIER, {
 							},
 						}),
 						q(11196, {	-- Warlord of the Amani
-							["provider"] = { "n", 52924 },	-- Vol'jin
-							["g"] = {
+							["qg"] = 52924,	-- Vol'jin
+							["groups"] = {
 								i(69599),	-- Pauldrons of Ambition
 								i(69598),	-- Robes of Dissention
 							},
@@ -44,7 +44,7 @@ _.Instances = { tier(CATA_TIER, {
 								{ 58.8, 28.6, GHOSTLANDS },
 								{ 62.9, 28.0, GHOSTLANDS },
 							},--]]
-							["g"] = {
+							["groups"] = {
 								i(23923),	-- Amani Sacrificial Dagger
 								i(29518),	-- Amani Scimitar
 							},
@@ -146,7 +146,7 @@ _.Instances = { tier(CATA_TIER, {
 								}),
 								crit(5, {	-- Harald saved.
 									["provider"] = { "n", 52915 },	-- Harald
-									["g"] = {
+									["groups"] = {
 										i(33926, {	-- Sealed Scroll Case
 											["description"] = "Can contain profession recipes."
 										})

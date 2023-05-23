@@ -2393,9 +2393,9 @@ profession(COOKING, {
 			["groups"] = {
 				ach(7325),	-- Now I Am the Master
 				q(31820, {	-- A Present for Teacher
+					["qg"] = 64337,	-- Nomi
 					["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.",
 					["cost"] = { { "i", 86425, 1 } },	-- Cooking School Bell
-					["provider"] = { "n", 64337 },	-- Nomi
 					["groups"] = {
 						i(86468),	-- Apron
 					},

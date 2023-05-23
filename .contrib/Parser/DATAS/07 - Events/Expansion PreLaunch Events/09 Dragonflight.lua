@@ -34,61 +34,61 @@ root(ROOTS.WorldEvents, n(-520,	-- Expansion Prelaunch Events
 		}),
 		n(QUESTS, {
 			q(70050, {	-- Chasing Storms [A]
-				["sourceQuests"] = { 66596 },	--  Whispers in the Winds [A]
-				["provider"] = { "n", 189077 },	-- Toddy Whiskers
+				["sourceQuest"] = 66596,	-- Whispers in the Winds [A]
+				["qg"] = 189077,	-- Toddy Whiskers
 				["coord"] = { 22.8, 55.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(69944, {	-- Chasing Storms [H]
-				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
-				["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
+				["sourceQuest"] = 65439,	-- Whispers in the Winds [H]
+				["qg"] = 197279,	-- Naleidea Rivergleam
 				["coord"] = { 55.8, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(70048, {	-- A Primal Threat [A]
-				["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
-				["provider"] = { "n", 193450 },	-- Archmage Khadgar
+				["sourceQuest"] = 66596,	-- Whispers in the Winds [A]
+				["qg"] = 193450,	-- Archmage Khadgar
 				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(199109),	-- Primal Stormling (PET!)
 					i(199211),	-- Primeval Essence
 				},
 			}),
 			q(69923, {	-- A Primal Threat [H]
-				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
-				["provider"] = { "n", 193450 },	-- Archmage Khadgar
+				["sourceQuest"] = 65439,	-- Whispers in the Winds [H]
+				["qg"] = 193450,	-- Archmage Khadgar
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(199109),	-- Primal Stormling (PET!)
 					i(199211),	-- Primeval Essence
 				},
 			}),
 			q(70055, {	-- Sigil of Storms [A]
-				["sourceQuests"] = { 70050 },	-- Chasing Storms [A]
+				["sourceQuest"] = 70050,	-- Chasing Storms [A]
 				["provider"] = { "i", 198352 },	-- Sigil of Storms [A]
-				["g"] = {
+				["groups"] = {
 					i(199211),	-- Primeval Essence
 				},
 			}),
 			q(69992, {	-- Sigil of Storms [H]
-				["sourceQuests"] = { 69944 },	-- Chasing Storms [H]
+				["sourceQuest"] = 69944,	-- Chasing Storms [H]
 				["provider"] = { "i", 198080 },	-- Sigil of Storms [H]
-				["g"] = {
+				["groups"] = {
 					i(199211),	-- Primeval Essence
 				},
 			}),
 			q(70049, {	-- Calming the Storms [H]
-				["sourceQuests"] = { 70048 },	-- A Primal Threat [A]
-				["provider"] = { "n", 193450 },	-- Archmage Khadgar
+				["sourceQuest"] = 70048,	-- A Primal Threat [A]
+				["qg"] = 193450,	-- Archmage Khadgar
 				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
 			q(69925, {	-- Calming the Storms [H]
-				["sourceQuests"] = { 69923 },	-- A Primal Threat [H]
-				["provider"] = { "n", 193450 },	-- Archmage Khadgar
+				["sourceQuest"] = 69923,	-- A Primal Threat [H]
+				["qg"] = 193450,	-- Archmage Khadgar
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -282,29 +282,29 @@ root(ROOTS.WorldEvents, n(-520,	-- Expansion Prelaunch Events
 				TIRISFAL_GLADES,
 				UNGORO_CRATER,
 			},
-			["g"] = {
+			["groups"] = {
 				n(COMMON_BOSS_DROPS, {
 					i(199211),	-- Primeval Essence
 					i(198352),	-- Sigil of Storms [A]
 					i(198080),	-- Sigil of Storms [H]
 				}),
 				n(189933, {	-- Glacial Ice Lord
-					["g"] = {
+					["groups"] = {
 						i(199839),	-- Dimmed Primeval Water
 					},
 				}),
 				n(189955, {	-- Raging Fire Lord
-					["g"] = {
+					["groups"] = {
 						i(199836),	-- Dimmed Primeval Fire
 					},
 				}),
 				n(189954, {	-- Rumbling Earth Lord
-					["g"] = {
+					["groups"] = {
 						i(199837),	-- Dimmed Primeval Earth
 					},
 				}),
 				n(185784, {	-- Unbridled Storm Lord
-					["g"] = {
+					["groups"] = {
 						i(199838),	-- Dimmed Primeval Storm
 					},
 				}),

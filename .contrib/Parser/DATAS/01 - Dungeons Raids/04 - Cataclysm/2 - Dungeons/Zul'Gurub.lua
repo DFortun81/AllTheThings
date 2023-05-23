@@ -24,7 +24,7 @@ root("Instances", tier(CATA_TIER, {
 	inst(76, {	-- Zul'Gurub
 		["mapID"] = ZULGURUB,
 		["coord"] = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
-		["g"] = {
+		["groups"] = {
 			d(HEROIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(17367, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Deadliest Cache
@@ -58,7 +58,7 @@ root("Instances", tier(CATA_TIER, {
 						}),
 					}),
 					ach(17366, {	-- Relics of a Fallen Empire
-						["sourceQuests"] = { 74576 },	-- Restored Hakkari Bijou
+						["sourceQuest"] = 74576,	-- Restored Hakkari Bijou
 						["timeline"] = { ADDED_10_0_7 }
 					}),
 				}),
@@ -230,7 +230,7 @@ root("Instances", tier(CATA_TIER, {
 							{ "n", 2496 },	-- Baron Revilgaz
 							{ "n", 53151 },	-- Overseer Blingbang
 						},
-						["g"] = {
+						["groups"] = {
 							i(69262, {	-- Black Ice
 								["timeline"] = { "removed 7.0.3" },
 							}),
@@ -250,7 +250,7 @@ root("Instances", tier(CATA_TIER, {
 							{ "n", 2496 },	-- Baron Revilgaz
 							{ "n", 53151 },	-- Overseer Blingbang
 						},
-						["g"] = {
+						["groups"] = {
 							i(69262, {	-- Black Ice
 								["timeline"] = { "removed 7.0.3" },
 							}),
@@ -265,26 +265,26 @@ root("Instances", tier(CATA_TIER, {
 							26775,	-- Be Raptor [Alliance]
 							26362,	-- Be Raptor [Horde]
 						},
-						["provider"] = { "n", 52877 },	-- Lashtail Hatchling
-						["g"] = {
+						["qg"] = 52877,	-- Lashtail Hatchling
+						["groups"] = {
 							i(69251, {	-- Lashtail Hatchling (PET!)
 								["timeline"] = { "added 4.1.0.13698" },
 							}),
 						},
 					}),
 					q(29154, {	-- Booty Bay's Interests
-						["provider"] = { "n", 53151 },			-- Overseer Revilgaz
+						["qg"] = 53151,	-- Overseer Revilgaz
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(29252, {	-- Booty Bay's Interests
-						["provider"] = { "n", 53151 },			-- Overseer Revilgaz
+						["qg"] = 53151,	-- Overseer Revilgaz
 						["races"] = HORDE_ONLY,
 					}),
 					q(29241, {	-- Break the Godbreaker
-						["provider"] = { "n", 53024 },			-- Bloodslayer Zala
+						["qg"] = 53024,	-- Bloodslayer Zala
 					}),
 					q(29175, {	-- Break Their Spirits
-						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
+						["qg"] = 53023,	-- Bloodslayer T'ara
 					}),
 					q(74696, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Gurubashi, Vilebranch, and Witherbark Coins
 						["cost"] = {
@@ -298,7 +298,7 @@ root("Instances", tier(CATA_TIER, {
 						},
 					})),
 					q(29242, {	-- Putting a Price on Priceless
-						["provider"] = { "n", 53043 },			-- Briney Boltcutter
+						["qg"] = 53043,	-- Briney Boltcutter
 					}),
 					q(74576, {	-- Restored Hakkari Bijou
 						["description"] = "|cFFFF0000This achievement is required to have any of the materials, bijous or recipes added in 10.0.7 drop.|r\n\nTo get the achievement, kill any two of the four bosses to unlock Jin'do & then enter the interior of the pyramid in the middle of the dungeon. The first Bijou named 'Fragmented Hakkari Bijou' is near one the gongs at roughly 48.6, 42.3 & the second Bijou is at the same spot, but during phase 2 of the Jin'do Boss Encounter. Collect both, combine them & deliver them to Rin'wosho in Zandalar at 55.0 86.8",
@@ -318,10 +318,10 @@ root("Instances", tier(CATA_TIER, {
 						},
 					})),
 					q(29173, {	-- Secondary Targets
-						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
+						["qg"] = 53023,	-- Bloodslayer T'ara
 					}),
 					q(29172, {	-- The Beasts Within
-						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
+						["qg"] = 53023,	-- Bloodslayer T'ara
 					}),
 					q(29262, {	-- Zul'Gurub Voodoo
 						--["objectID"] = 208550,	-- Voodoo Pile
@@ -682,7 +682,7 @@ root("Instances", tier(CATA_TIER, {
 					n(52442, {	-- Florawing Hive Queen
 						["questID"] = 53809,	-- KillID
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(69817),	-- Hive Queen's Honeycomb
 						},
 					}),
@@ -770,7 +770,7 @@ root("Instances", tier(CATA_TIER, {
 					-- #else
 					["description"] = "Requires Archaeology (225+) to spawn.",
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						--[[ Using CRS // QGS doesn't apply the description. Only applies to NPCID
 						{	-- Summon Artifacts
 							["npcID"] = 52446,	-- Ancient Dwarven Artifact

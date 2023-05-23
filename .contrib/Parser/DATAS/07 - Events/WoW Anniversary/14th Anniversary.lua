@@ -22,7 +22,7 @@ root(ROOTS.WorldEvents, n(FOURTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 		n(110035, {	-- Historian Jupa [Horde]
 			["coord"] = { 36.6, 74.6, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(158149, {	-- Overtuned Corgi Goggles (TOY!)
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),
@@ -31,7 +31,7 @@ root(ROOTS.WorldEvents, n(FOURTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 		n(110034, {	-- Historian Llore [Alliance]
 			["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(158149, {	-- Overtuned Corgi Goggles (TOY!)
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),

@@ -7,10 +7,10 @@ _.PVP =
 	pvp(tier(CATA_TIER, {
 		n(RATED_BATTLEGROUNDS, {
 			["description"] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.|r",
-			["g"] = {
+			["groups"] = {
 				n(FACTION_HEADER_ALLIANCE, {
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						n(WEAPONS, {
 							i(77549),	-- Replica Grand Marshal's Demolisher
 							i(77550),	-- Replica Grand Marshal's Swiftblade
@@ -215,7 +215,7 @@ _.PVP =
 				}),
 				n(FACTION_HEADER_HORDE, {
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						n(WEAPONS, {
 							i(77567),	-- Replica High Warlord's Battle Mace
 							i(77568),	-- Replica High Warlord's Spellblade
@@ -456,7 +456,7 @@ _.PVP =
 							{"select", "itemID", 70573 },	-- Vicious Gladiator's Girdle of Cruelty
 							{"select", "itemID", 70668 },	-- Vicious Gladiator's Warboots of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(64735, {	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -517,7 +517,7 @@ _.PVP =
 							{"select", "itemID", 70571 },	-- Vicious Gladiator's Footguards of Alacrity
 							{"select", "itemID", 70572 },	-- Vicious Gladiator's Footguards of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(64727, {	-- Bloodthirsty Gladiator's Dragonhide Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -611,7 +611,7 @@ _.PVP =
 							{"select", "itemID", 70639 },	-- Vicious Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 70641 },	-- Vicious Gladiator's Sabatons of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(64708, {	-- Bloodthirsty Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -659,7 +659,7 @@ _.PVP =
 							{"select", "itemID", 70545 },	-- Vicious Gladiator's Cord of Cruelty
 							{"select", "itemID", 70661 },	-- Vicious Gladiator's Treads of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(64853, {	-- Bloodthirsty Gladiator's Silk Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -725,7 +725,7 @@ _.PVP =
 							{"select", "itemID", 70575 },	-- Vicious Gladiator's Greaves of Alacrity
 							{"select", "itemID", 70576 },	-- Vicious Gladiator's Greaves of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(64802, {	-- Bloodthirsty Gladiator's Ornamented Chestguard
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -798,7 +798,7 @@ _.PVP =
 							{"select", "itemID", 70546 },	-- Vicious Gladiator's Cord of Meditation
 							{"select", "itemID", 70662 },	-- Vicious Gladiator's Treads of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(64795, {	-- Bloodthirsty Gladiator's Mooncloth Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -869,7 +869,7 @@ _.PVP =
 							{"select", "itemID", 70527 },	-- Vicious Gladiator's Boots of Alacrity
 							{"select", "itemID", 70528 },	-- Vicious Gladiator's Boots of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(64769, {	-- Bloodthirsty Gladiator's Leather Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -933,7 +933,7 @@ _.PVP =
 							{"select", "itemID", 70640 },	-- Vicious Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 70642 },	-- Vicious Gladiator's Sabatons of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(64776, {	-- Bloodthirsty Gladiator's Linked Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1021,7 +1021,7 @@ _.PVP =
 							{"select", "itemID", 70544 },	-- Vicious Gladiator's Cord of Accuracy
 							{"select", "itemID", 70660 },	-- Vicious Gladiator's Treads of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(64745, {	-- Bloodthirsty Gladiator's Felweave Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1066,7 +1066,7 @@ _.PVP =
 							{"select", "itemID", 70574 },	-- Vicious Gladiator's Girdle of Prowess
 							{"select", "itemID", 70667 },	-- Vicious Gladiator's Warboots of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(64811, {	-- Bloodthirsty Gladiator's Plate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1315,7 +1315,7 @@ _.PVP =
 						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(61360, {	-- Vicious Gladiator's Barrier
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1421,7 +1421,7 @@ _.PVP =
 							{"select", "itemID", 60508 },	-- Vicious Gladiator's Girdle of Cruelty
 							{"select", "itemID", 60509 },	-- Vicious Gladiator's Warboots of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(60408, {	-- Vicious Gladiator's Dreadplate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1452,7 +1452,7 @@ _.PVP =
 							{"select", "itemID", 60607 },	-- Vicious Gladiator's Footguards of Alacrity
 							{"select", "itemID", 60581 },	-- Vicious Gladiator's Footguards of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(60443, {	-- Vicious Gladiator's Dragonhide Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1513,7 +1513,7 @@ _.PVP =
 							{"select", "itemID", 60557 },	-- Vicious Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 60554 },	-- Vicious Gladiator's Sabatons of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(60423, {	-- Vicious Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1541,7 +1541,7 @@ _.PVP =
 							{"select", "itemID", 60612 },	-- Vicious Gladiator's Cord of Cruelty
 							{"select", "itemID", 60613 },	-- Vicious Gladiator's Treads of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(60467, {	-- Vicious Gladiator's Silk Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1572,7 +1572,7 @@ _.PVP =
 							{"select", "itemID", 60516 },	-- Vicious Gladiator's Greaves of Alacrity
 							{"select", "itemID", 60540 },	-- Vicious Gladiator's Greaves of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(60601, {	-- Vicious Gladiator's Ornamented Chestguard
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1615,7 +1615,7 @@ _.PVP =
 							{"select", "itemID", 60637 },	-- Vicious Gladiator's Cord of Meditation
 							{"select", "itemID", 60636 },	-- Vicious Gladiator's Treads of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(60468, {	-- Vicious Gladiator's Mooncloth Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1661,7 +1661,7 @@ _.PVP =
 							{"select", "itemID", 60593 },	-- Vicious Gladiator's Boots of Alacrity
 							{"select", "itemID", 60587 },	-- Vicious Gladiator's Boots of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(60459, {	-- Vicious Gladiator's Leather Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1692,7 +1692,7 @@ _.PVP =
 							{"select", "itemID", 60567 },	-- Vicious Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 60534 },	-- Vicious Gladiator's Sabatons of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(60433, {	-- Vicious Gladiator's Linked Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1750,7 +1750,7 @@ _.PVP =
 							{"select", "itemID", 60626 },	-- Vicious Gladiator's Cord of Accuracy
 							{"select", "itemID", 60630 },	-- Vicious Gladiator's Treads of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(60482, {	-- Vicious Gladiator's Felweave Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1778,7 +1778,7 @@ _.PVP =
 							{"select", "itemID", 60521 },	-- Vicious Gladiator's Girdle of Prowess
 							{"select", "itemID", 60513 },	-- Vicious Gladiator's Warboots of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(60418, {	-- Vicious Gladiator's Plate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2465,7 +2465,7 @@ _.PVP =
 						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(70242, {	-- Ruthless Gladiator's Barrier
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2580,7 +2580,7 @@ _.PVP =
 							{"select", "itemID", 72394 },	-- Ruthless Gladiator's Girdle of Accuracy/Cruelty
 							{"select", "itemID", 72396 },	-- Ruthless Gladiator's Warboots of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(70244, {	-- Ruthless Gladiator's Dreadplate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2641,7 +2641,7 @@ _.PVP =
 							{"select", "itemID", 72351 },	-- Ruthless Gladiator's Footguards of Alacrity
 							{"select", "itemID", 72343 },	-- Ruthless Gladiator's Footguards of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(70279, {	-- Ruthless Gladiator's Dragonhide Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2755,7 +2755,7 @@ _.PVP =
 							{"select", "itemID", 72365 },	-- Ruthless Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 72364 },	-- Ruthless Gladiator's Sabatons of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(70259, {	-- Ruthless Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2803,7 +2803,7 @@ _.PVP =
 							{"select", "itemID", 72313 },	-- Ruthless Gladiator's Cord of Cruelty
 							{"select", "itemID", 72316 },	-- Ruthless Gladiator's Treads of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(70303, {	-- Ruthless Gladiator's Silk Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2859,7 +2859,7 @@ _.PVP =
 							{"select", "itemID", 72385 },	-- Ruthless Gladiator's Greaves of Alacrity
 							{"select", "itemID", 72386 },	-- Ruthless Gladiator's Greaves of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(70353, {	-- Ruthless Gladiator's Ornamented Chestguard
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2932,7 +2932,7 @@ _.PVP =
 							{"select", "itemID", 72315 },	-- Ruthless Gladiator's Cord of Meditation
 							{"select", "itemID", 72318 },	-- Ruthless Gladiator's Treads of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(70304, {	-- Ruthless Gladiator's Mooncloth Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -3003,7 +3003,7 @@ _.PVP =
 							{"select", "itemID", 72419 },	-- Ruthless Gladiator's Boots of Alacrity
 							{"select", "itemID", 72418 },	-- Ruthless Gladiator's Boots of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(70295, {	-- Ruthless Gladiator's Leather Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -3067,7 +3067,7 @@ _.PVP =
 							{"select", "itemID", 72428 },	-- Ruthless Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 72429 },	-- Ruthless Gladiator's Sabatons of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(70269, {	-- Ruthless Gladiator's Linked Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -3155,7 +3155,7 @@ _.PVP =
 							{"select", "itemID", 72314 },	-- Ruthless Gladiator's Cord of Accuracy
 							{"select", "itemID", 72317 },	-- Ruthless Gladiator's Treads of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(70318, {	-- Ruthless Gladiator's Felweave Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -3200,7 +3200,7 @@ _.PVP =
 							{"select", "itemID", 72395 },	-- Ruthless Gladiator's Girdle of Prowess
 							{"select", "itemID", 72397 },	-- Ruthless Gladiator's Warboots of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(70254, {	-- Ruthless Gladiator's Plate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -3602,7 +3602,7 @@ _.PVP =
 			})),
 			n(HONOR_CATACLYSMIC, {
 				["description"] = "These items are only available from Ruthless Gladiator class ensembles.",
-				["g"] = {
+				["groups"] = {
 					cl(DEATHKNIGHT, {
 						i(72332),	-- Ruthless Gladiator's Dreadplate Chestpiece
 						i(72333),	-- Ruthless Gladiator's Dreadplate Gauntlets
@@ -3834,7 +3834,7 @@ _.PVP =
 						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(73468, {	-- Cataclysmic Gladiator's Barrier
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -3940,7 +3940,7 @@ _.PVP =
 							{"select", "itemID", 73555 },	-- Cataclysmic Gladiator's Girdle of Cruelty
 							{"select", "itemID", 73553 },	-- Cataclysmic Gladiator's Warboots of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(73620, {	-- Cataclysmic Gladiator's Dreadplate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -3971,7 +3971,7 @@ _.PVP =
 							{"select", "itemID", 73601 },	-- Cataclysmic Gladiator's Footguards of Alacrity
 							{"select", "itemID", 73609 },	-- Cataclysmic Gladiator's Footguards of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(73615, {	-- Cataclysmic Gladiator's Dragonhide Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4032,7 +4032,7 @@ _.PVP =
 							{"select", "itemID", 73587 },	-- Cataclysmic Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 73588 },	-- Cataclysmic Gladiator's Sabatons of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(73584, {	-- Cataclysmic Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -4060,7 +4060,7 @@ _.PVP =
 							{"select", "itemID", 73639 },	-- Cataclysmic Gladiator's Cord of Cruelty
 							{"select", "itemID", 73636 },	-- Cataclysmic Gladiator's Treads of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(73572, {	-- Cataclysmic Gladiator's Silk Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4091,7 +4091,7 @@ _.PVP =
 							{"select", "itemID", 73564 },	-- Cataclysmic Gladiator's Greaves of Alacrity
 							{"select", "itemID", 73563 },	-- Cataclysmic Gladiator's Greaves of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(88170, {	-- Cataclysmic Gladiator's Ornamented Battlerobe
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -4137,7 +4137,7 @@ _.PVP =
 							{"select", "itemID", 73637 },	-- Cataclysmic Gladiator's Cord of Meditation
 							{"select", "itemID", 73634 },	-- Cataclysmic Gladiator's Treads of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(73549, {	-- Cataclysmic Gladiator's Mooncloth Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4183,7 +4183,7 @@ _.PVP =
 							{"select", "itemID", 73530 },	-- Cataclysmic Gladiator's Boots of Alacrity
 							{"select", "itemID", 73531 },	-- Cataclysmic Gladiator's Boots of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(73526, {	-- Cataclysmic Gladiator's Leather Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4214,7 +4214,7 @@ _.PVP =
 							{"select", "itemID", 73521 },	-- Cataclysmic Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 73520 },	-- Cataclysmic Gladiator's Sabatons of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(73512, {	-- Cataclysmic Gladiator's Linked Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -4272,7 +4272,7 @@ _.PVP =
 							{"select", "itemID", 73638 },	-- Cataclysmic Gladiator's Cord of Accuracy
 							{"select", "itemID", 73635 },	-- Cataclysmic Gladiator's Treads of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(73483, {	-- Cataclysmic Gladiator's Felweave Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4300,7 +4300,7 @@ _.PVP =
 							{"select", "itemID", 73554 },	-- Cataclysmic Gladiator's Girdle of Prowess
 							{"select", "itemID", 73552 },	-- Cataclysmic Gladiator's Warboots of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(73482, {	-- Cataclysmic Gladiator's Plate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),

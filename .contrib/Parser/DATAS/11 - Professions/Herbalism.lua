@@ -203,8 +203,8 @@ profession(HERBALISM, {
 			}),
 			q(40014, {	-- Spayed by the Spade
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40013 },	-- Aethril Sample
-				["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride <Herbalism Trainer>
+				["sourceQuest"] = 40013,	-- Aethril Sample
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
 				["groups"] = {
 					recipe(193292),	-- Aethril (Rank 1)
@@ -218,10 +218,10 @@ profession(HERBALISM, {
 			}),
 			q(40016, {	-- Desperation Breeds Ingenuity
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40015 },	-- Ragged Strips of Silk
-				["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
+				["sourceQuest"] = 40015,	-- Ragged Strips of Silk
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					recipe(193293),	-- Aethril (Rank 2)
 				},
 			}),
@@ -229,7 +229,7 @@ profession(HERBALISM, {
 				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40016,	-- Desperation Breeds Ingenuity
 				["maps"] = { AZSUNA, },
-				["g"] = {
+				["groups"] = {
 					recipe(193294),	-- Aethril (Rank 3)
 				},
 			}),
@@ -241,7 +241,7 @@ profession(HERBALISM, {
 					830,	-- Krokuun
 					882,	-- Eredath
 				},
-				["g"] = {
+				["groups"] = {
 					recipe(247812),	-- Astral Glory (Rank 1)
 				},
 			}),
@@ -254,7 +254,7 @@ profession(HERBALISM, {
 					830,	-- Krokuun
 					882,	-- Eredath
 				},
-				["g"] = {
+				["groups"] = {
 					recipe(247813),	-- Astral Glory (Rank 2)
 				},
 			}),
@@ -267,7 +267,7 @@ profession(HERBALISM, {
 					830,	-- Krokuun
 					882,	-- Eredath
 				},
-				["g"] = {
+				["groups"] = {
 					recipe(247814),	-- Astral Glory (Rank 3)
 				},
 			}),
@@ -278,10 +278,10 @@ profession(HERBALISM, {
 			}),
 			q(40019, {	-- An Empathetic Herb
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40018 },	-- Dreamleaf Sample
-				["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride <Herbalism Trainer>
+				["sourceQuest"] = 40018,	-- Dreamleaf Sample
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					recipe(193295),	-- Dreamleaf [Rank 1]
 				},
 			}),
@@ -294,8 +294,8 @@ profession(HERBALISM, {
 			q(40021, {	-- One Dead Plant is One Too Many
 				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40020,	-- Twisted to Death
-				["provider"] = { "n", 98135 },	-- Wildcrafter Osme <Herbalism Trainer>
-				["g"] = {
+				["qg"] = 98135,	-- Wildcrafter Osme <Herbalism Trainer>
+				["groups"] = {
 					recipe(193296),	-- Dreamleaf [Rank 2]
 				},
 			}),
@@ -308,8 +308,8 @@ profession(HERBALISM, {
 			q(40023, {	-- The Last Straw
 				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40022,	-- Choked by Nightmare
-				["provider"] = { "n", 98135 },	-- Wildcrafter Osme <Herbalism Trainer>
-				["g"] = {
+				["qg"] = 98135,	-- Wildcrafter Osme <Herbalism Trainer>
+				["groups"] = {
 					recipe(193297),	-- Dreamleaf [Rank 3]
 				},
 			}),
@@ -323,25 +323,25 @@ profession(HERBALISM, {
 					SURAMAR,
 					VALSHARAH,
 				},
-				["g"] = {
+				["groups"] = {
 					recipe(193307),	-- Felwort [Rank 1]
 				},
 			}),
 			q(40041, {	-- Felwort Analysis
 				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40040,	-- Felwort Sample
-				["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					recipe(193308),	-- Felwort [Rank 2]
 				},
 			}),
 			q(40042, {	-- The Emerald Nightmare: Felwort Mastery
 				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40041,	-- Felwort Analysis
-				["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					recipe(193309),	-- Felwort [Rank 3]
 				},
 			}),
@@ -349,37 +349,37 @@ profession(HERBALISM, {
 				["requireSkill"] = HERBALISM,
 				["provider"] = { "i", 129120 },	-- Fjarnskaggl Sample
 				["maps"] = { STORMHEIM },
-				["g"] = {
+				["groups"] = {
 					recipe(193301),	-- Fjarnskaggl [Rank 1]
 				},
 			}),
 			q(40030, {	-- Ram's-Horn Trowel
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40029 },	-- Fjarnskaggl Sample
+				["sourceQuest"] = 40029,	-- Fjarnskaggl Sample
 				["provider"] = { "i", 129138 },	-- Ram's-Horn Trowel
 				["maps"] = { STORMHEIM },
 			}),
 			q(40031, {	-- Vrykul Herblore
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40030 },	-- Ram's-Horn Trowel
-				["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
+				["sourceQuest"] = 40030,	-- Ram's-Horn Trowel
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					recipe(193302),	-- Fjarnskaggl [Rank 2]
 				},
 			}),
 			q(40032, {	-- The Missing Page
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40031 },	-- Vrykul Herblore
+				["sourceQuest"] = 40031,	-- Vrykul Herblore
 				["provider"] = { "i", 129142 },		-- Runed Journal Page
 				["maps"] = { STORMHEIM },
 			}),
 			q(40033, {	-- Fjarnskaggl
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40032 },	-- The Missing Page
-				["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
+				["sourceQuest"] = 40032,	-- The Missing Page
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					recipe(193303),	-- Fjarnskaggl [Rank 3]
 				},
 			}),
@@ -387,31 +387,31 @@ profession(HERBALISM, {
 				["requireSkill"] = HERBALISM,
 				["provider"] = { "i", 129119 },	-- Foxflower Sample
 				["maps"] = { HIGHMOUNTAIN },
-				["g"] = {
+				["groups"] = {
 					recipe(193298),	-- Foxflower [Rank 1]
 				},
 			}),
 			q(40025, {	-- Teeny Bite Marks
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40024 },	-- Foxflower Sample
+				["sourceQuest"] = 40024,	-- Foxflower Sample
 				["provider"] = { "i", 129137 },	-- Nibbled Foxflower Stem
 				["maps"] = { HIGHMOUNTAIN },
 			}),
 			q(40026, {	-- Chase the Culprit
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40025 },	-- Teeny Bite Marks
-				["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
+				["sourceQuest"] = 40025,	-- Teeny Bite Marks
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					recipe(193299),	-- Foxflower [Rank 2]
 				},
 			}),
 			q(40028, {	-- The Pied Picker
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40026 },	-- Chase the Culprit
+				["sourceQuest"] = 40026,	-- Chase the Culprit
 				["provider"] = { "i", 129278 },		-- Foxflower Scent Gland
 				["maps"] = { HIGHMOUNTAIN },
-				["g"] = {
+				["groups"] = {
 					recipe(193300),	-- Foxflower [Rank 3]
 				},
 			}),
@@ -422,10 +422,10 @@ profession(HERBALISM, {
 			}),
 			q(40035, {	-- The Gentlest Touch
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40034 },	-- Starlight Rosedust
-				["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride <Herbalism Trainer>
+				["sourceQuest"] = 40034,	-- Starlight Rosedust
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					recipe(193304),	-- Starlight Rose [Rank 1]
 				},
 			}),
@@ -437,10 +437,10 @@ profession(HERBALISM, {
 			}),
 			q(40037, {	-- The Spade's Blade
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40036 },	-- Jeweled Spade Handle
-				["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride <Herbalism Trainer>
+				["sourceQuest"] = 40036,	-- Jeweled Spade Handle
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					recipe(193305),	-- Starlight Rose [Rank 2]
 				},
 			}),
@@ -452,11 +452,11 @@ profession(HERBALISM, {
 			}),
 			q(40039, {	-- Tharillon's Fall
 				["requireSkill"] = HERBALISM,
-				["sourceQuests"] = { 40038 },	-- Insane Ramblings
-				["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride <Herbalism Trainer>
+				["sourceQuest"] = 40038,	-- Insane Ramblings
+				["qg"] = 92464,	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
 				["cost"] = { { "i", 129158, 20 } },	-- Starlight Rosedust
-				["g"] = {
+				["groups"] = {
 					recipe(193306),	-- Starlight Rose [Rank 3]
 				},
 			}),
@@ -599,7 +599,7 @@ profession(HERBALISM, {
 		n(QUESTS, {
 			-- Akunda's Bite
 			q(51398, {	-- An Unusual Mentor (A)
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["description"] = "Requires 50 Kul Tiran Herbalism.",
 				["isBreadcrumb"] = true,
@@ -607,7 +607,7 @@ profession(HERBALISM, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51432, {	-- An Unusual Mentor (H)
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["description"] = "Requires 50 Zandalari Herbalism.",
 				["isBreadcrumb"] = true,
@@ -615,7 +615,7 @@ profession(HERBALISM, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(51399, {	-- Foul Harvest
-				["provider"] = { "n", 137572 },	-- Patu
+				["qg"] = 137572,	-- Patu
 				["coord"] = { 62.21, 25.81, VOLDUN },
 				["sourceQuests"] = {
 					51398,	-- An Unusual Mentor (A)
@@ -625,234 +625,234 @@ profession(HERBALISM, {
 				-- TODO: Akunda's Bite Rank 3?
 			}),
 			q(51408, {	-- Giving Back to Nature
-				["provider"] = { "n", 137572 },	-- Patu
+				["qg"] = 137572,	-- Patu
 				["coord"] = { 62.21, 25.81, VOLDUN },
 				["sourceQuest"] = 51399,	-- Foul Harvest
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					recipe(252412),	-- Akunda's Bite Rank 2
 				},
 			}),
 			-- Anchor Weed
 			q(51016, {	-- Seeking More Knowledge
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = HERBALISM,
 				["description"] = "Requires 100 Kul Tiran Herbalism.",
-				["g"] = {
+				["groups"] = {
 					recipe(252425),	-- Anchor Weed [Rank 2]
 				},
 			}),
 			q(51482, {	-- Seeking More Knowledge (H)
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["description"] = "Requires 100 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252425),	-- Anchor Weed (Rank 2)
 				},
 			}),
 			q(51361, {	-- More Anchor Pods (A)
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["description"] = "Requires 150 Kul Tiran Herbalism.",
 				["sourceQuest"] = 51360,	-- Enormous Anchor Pod (A)
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					recipe(252426),	-- Anchor Weed (Rank 3)
 				},
 			}),
 			q(51481, {	-- More Anchor Pods (H)
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["sourceQuest"] = 51480,	-- Enormous Anchor Pod (H)
 				["description"] = "Requires 150 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252426),	-- Anchor Weed (Rank 3)
 				},
 			}),
 			-- Riverbud
 			q(48753, {	-- Emergency Transplants (A)
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["description"] = "Requires 50 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252406),	-- Riverbud (Rank 2)
 				},
 			}),
 			q(51230, {	-- Emergency Transplants [H]
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["description"] = "Requires 50 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252406),	-- Riverbud (Rank 2)
 				},
 			}),
 			q(48754, {	-- Breaking the Food Chain (A)
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["sourceQuest"] = 48753,	-- Emergency Transplants (A)
 				["description"] = "Requires 150 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252407),	-- Riverbud (Rank 3)
 				},
 			}),
 			q(51243, {	-- Breaking the Food Chain [H]
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["sourceQuest"] = 51230,	-- Emergency Transplants
 				["description"] = "Requires 150 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252407),	-- Riverbud (Rank 3)
 				},
 			}),
 			-- Sea Stalk
 			q(51365, {	-- Cultural Signifcance (A)
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["description"] = "Requires 50 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252422),	-- Sea Stalk (Rank 2)
 				},
 			}),
 			q(51498, {	-- Cultural Signifcance (H)
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["description"] = "Requires 50 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252422),	-- Sea Stalk (Rank 2)
 				},
 			}),
 			q(48769, {	-- Gathering Mementos (A)
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["sourceQuest"] = 51365,	-- Cultural Significance (A)
 				["description"] = "Requires 150 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252423),	-- Sea Stalk (Rank 3)
 				},
 			}),
 			q(51503, {	-- Gathering Mementos (H)
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["sourceQuest"] = 51498,	-- Cultural Significance (H)
 				["description"] = "Requires 150 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252423),	-- Sea Stalk (Rank 3)
 				},
 			}),
 			-- Star Moss
 			q(48756, {	-- Here in Spirit (A)
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["description"] = "Requires 50 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252409),	-- Star Moss (Rank 2)
 				},
 			}),
 			q(51464, {	-- Here in Spirit (H)
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["description"] = "Requires 50 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252409),	-- Star Moss (Rank 2)
 				},
 			}),
 			q(48757, {	-- Ghost Busting (A)
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["sourceQuest"] = 48756,	-- Here in Spirit (A)
 				["description"] = "Requires 150 Kul Tiran Herbalism.",
-				["g"] = {
+				["groups"] = {
 					recipe(252410),	-- Star Moss (Rank 3)
 				},
 			}),
 			q(51478, {	-- Ghost Busting (H)
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["sourceQuest"] = 51464,	-- Here in Spirit (H)
 				["description"] = "Requires 150 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252410),	-- Star Moss (Rank 3)
 				},
 			}),
 			-- Siren's Pollen
 			q(51313, {	-- Learn From the Best (A)
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["sourceQuest"] = 51312,	-- Aromatic Pollenator (A)
 				["description"] = "Requires 50 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252419),	-- Siren's Pollen (Rank 2)
 				},
 			}),
 			q(51448, {	-- Learn From the Best (H)
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["sourceQuest"] = 51447,	-- Aromatic Pollenator (H)
 				["description"] = "Requires 50 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252419),	-- Siren's Pollen (Rank 2)
 				},
 			}),
 			q(48755, {	-- Pollen Punching (A)
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["sourceQuest"] = 48758,	-- Disgustingly Damp Flower (A)
 				["description"] = "Requires 150 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252420),	-- Siren's Pollen (Rank 3)
 				},
 			}),
 			q(51452, {	-- Pollen Punching (H)
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["sourceQuest"] = 48758,	-- Disgustingly Damp Flower (H)
 				["description"] = "Requires 150 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(252420),	-- Siren's Pollen (Rank 3)
 				},
 			}),
 			-- Winter's Kiss
 			q(48762, {	-- Meet Sweetflower (A)
 				["isBreadcrumb"] = true,
-				["provider"] = { "n", 136096 },	-- Declan Senal
+				["qg"] = 136096,	-- Declan Senal
 				["coord"] = { 70.45, 5.13, BORALUS },
 				["description"] = "Requires 50 Kul Tiran Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",
 				["requireSkill"] = HERBALISM,
@@ -860,21 +860,21 @@ profession(HERBALISM, {
 			}),
 			q(51446, {	-- Meet Sweetflower (H)
 				["isBreadcrumb"] = true,
-				["provider"] = { "n", 122704 },	-- Jahden Fla
+				["qg"] = 122704,	-- Jahden Fla
 				["coord"] = { 42.2, 35.6, DAZARALOR },
 				["description"] = "Requires 50 Zandalari Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
 			}),
 			q(51376, {	-- Can't Teach on an Empty Stomach
-				["provider"] = { "n", 136141 },	-- Xun Xun Sweetflower
+				["qg"] = 136141,	-- Xun Xun Sweetflower
 				["coord"] = { 20.61, 45.61, DRUSTVAR },
 				["sourceQuests"] = {
 					48762,	-- Meet Sweetflower (A)
 					51446,	-- Meet Sweetflower (H)
 				},
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					recipe(252416),	-- Winter's Kiss (Rank 2)
 				},
 			}),
@@ -901,26 +901,26 @@ profession(HERBALISM, {
 		n(QUESTS, sharedData({["maps"] = {DRUSTVAR}},{
 			-- Siren's Pollen
 			q(51312, {	-- Aromatic Pollenator (A)
-				["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+				["qg"] = 159877,	-- Dead Pollen-Covered Bee
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51447, {	-- Aromatic Pollenator (H)
-				["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+				["qg"] = 159877,	-- Dead Pollen-Covered Bee
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
 			}),
 			q(48758, {	-- Disgustingly Damp Flower (A)
-				["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+				["qg"] = 159956,	-- Disgustingly Damp Flower
 				["sourceQuest"] = 51313,	-- Learn From the Best
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51451, {	-- Disgustingly Damp Flower (H)
-				["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+				["qg"] = 159956,	-- Disgustingly Damp Flower
 				["sourceQuest"] = 51448,	-- Learn From the Best
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 				["itemID"] = 159956,	-- Disgustingly Damp Flower
@@ -933,7 +933,7 @@ profession(HERBALISM, {
 				["sourceQuest"] = 51376,	-- Can't Teach on an Empty Stomach
 				["description"] = "This can drop from |cFFFFD700Winter's Kiss|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran / Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					recipe(252417),	-- Winter's Kiss (Rank 3)
 				},
 			}),
@@ -942,26 +942,26 @@ profession(HERBALISM, {
 		n(QUESTS, sharedData({["maps"] = {STORMSONG_VALLEY}}, {
 			-- Siren's Pollen
 			q(51312, {	-- Aromatic Pollenator (A)
-				["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+				["qg"] = 159877,	-- Dead Pollen-Covered Bee
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51447, {	-- Aromatic Pollenator (H)
-				["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+				["qg"] = 159877,	-- Dead Pollen-Covered Bee
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
 			}),
 			q(48758, {	-- Disgustingly Damp Flower (A)
-				["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+				["qg"] = 159956,	-- Disgustingly Damp Flower
 				["sourceQuest"] = 51313,	-- Learn From the Best
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51451, {	-- Disgustingly Damp Flower (H)
-				["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+				["qg"] = 159956,	-- Disgustingly Damp Flower
 				["sourceQuest"] = 51448,	-- Learn From the Best
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 				["itemID"] = 159956,	-- Disgustingly Damp Flower
@@ -973,26 +973,26 @@ profession(HERBALISM, {
 		n(QUESTS, sharedData({["maps"] = {TIRAGARDE_SOUND}}, {
 			-- Siren's Pollen
 			q(51312, {	-- Aromatic Pollenator (A)
-				["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+				["qg"] = 159877,	-- Dead Pollen-Covered Bee
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51447, {	-- Aromatic Pollenator (H)
-				["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+				["qg"] = 159877,	-- Dead Pollen-Covered Bee
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
 			}),
 			q(48758, {	-- Disgustingly Damp Flower (A)
-				["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+				["qg"] = 159956,	-- Disgustingly Damp Flower
 				["sourceQuest"] = 51313,	-- Learn From the Best
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51451, {	-- Disgustingly Damp Flower (H)
-				["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+				["qg"] = 159956,	-- Disgustingly Damp Flower
 				["sourceQuest"] = 51448,	-- Learn From the Best
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 				["itemID"] = 159956,	-- Disgustingly Damp Flower
@@ -1004,26 +1004,26 @@ profession(HERBALISM, {
 		n(QUESTS, sharedData({["maps"] = {NAZMIR}}, {
 			-- Siren's Pollen
 			q(51312, {	-- Aromatic Pollenator (A)
-				["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+				["qg"] = 159877,	-- Dead Pollen-Covered Bee
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51447, {	-- Aromatic Pollenator (H)
-				["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+				["qg"] = 159877,	-- Dead Pollen-Covered Bee
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
 			}),
 			q(48758, {	-- Disgustingly Damp Flower (A)
-				["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+				["qg"] = 159956,	-- Disgustingly Damp Flower
 				["sourceQuest"] = 51313,	-- Learn From the Best
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51451, {	-- Disgustingly Damp Flower (H)
-				["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+				["qg"] = 159956,	-- Disgustingly Damp Flower
 				["sourceQuest"] = 51448,	-- Learn From the Best
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 				["itemID"] = 159956,	-- Disgustingly Damp Flower
@@ -1038,7 +1038,7 @@ profession(HERBALISM, {
 				["description"] = "This can drop from |cFFFFD700Akunda's Bite|r at Level 150 Kul Tiran / Zandalari Herbalism.",
 				["sourceQuest"] = 51408,	-- Giving Back to Nature
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					recipe(252413),	-- Akunda's Bite (Rank 3)
 				},
 			}),
@@ -1047,26 +1047,26 @@ profession(HERBALISM, {
 		n(QUESTS, sharedData({["maps"] = {ZULDAZAR}}, {
 			-- Siren's Pollen
 			q(51312, {	-- Aromatic Pollenator (A)
-				["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+				["qg"] = 159877,	-- Dead Pollen-Covered Bee
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51447, {	-- Aromatic Pollenator (H)
-				["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+				["qg"] = 159877,	-- Dead Pollen-Covered Bee
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,
 			}),
 			q(48758, {	-- Disgustingly Damp Flower (A)
-				["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+				["qg"] = 159956,	-- Disgustingly Damp Flower
 				["sourceQuest"] = 51313,	-- Learn From the Best
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51451, {	-- Disgustingly Damp Flower (H)
-				["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+				["qg"] = 159956,	-- Disgustingly Damp Flower
 				["sourceQuest"] = 51448,	-- Learn From the Best
 				["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 				["itemID"] = 159956,	-- Disgustingly Damp Flower
@@ -1079,14 +1079,14 @@ profession(HERBALISM, {
 			q(56098, {	-- Defensive in Death (A)
 				["provider"] = { "i", 168919 },	-- Zin'anthid Tentacle
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(298144),	-- Herbalism Technique: Zin'anthid (Rank 3)
 				},
 			}),
 			q(56430, {	-- Defensive in Death (H)
 				["provider"] = { "i", 169596 },	-- Zin'anthid Tentacle
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					recipe(298144),	-- Herbalism Technique: Zin'anthid (Rank 3)
 				},
 			}),

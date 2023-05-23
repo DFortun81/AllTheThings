@@ -8,7 +8,7 @@ _.Instances = { tier(CATA_TIER, {
 		["lvl"] = 83,
 		["mapID"] = 293,
 		["coord"] = { 19.2, 54.2, TWILIGHT_HIGHLANDS },
-		["g"] = {
+		["groups"] = {
 			d(NORMAL_DUNGEON, {
 				n(QUESTS, {
 					q(28854, {	-- Closing A Dark Chapter
@@ -126,7 +126,7 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(HEROIC_DUNGEON, {
 				["lvl"] = 85,
-				["g"] = {
+				["groups"] = {
 					cr(39625, e(131, {	-- General Umbriss
 						ach(5297),	-- Umbrage for Umbriss
 						i(56441),	-- Modgug's Blade

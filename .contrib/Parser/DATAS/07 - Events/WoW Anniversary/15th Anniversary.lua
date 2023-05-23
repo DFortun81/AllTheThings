@@ -23,7 +23,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 			1561,	-- Firelands
 		},
 		["cr"] = 154233,	-- Chromie
-		["g"] = {
+		["groups"] = {
 			d(TIMEWALKING_DUNGEON, {
 				ach(13931, {	-- Memories of Fel, Frost and Fire
 					i(172012),	-- Obsidian Worldbreaker (MOUNT!)
@@ -31,7 +31,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 				tier(TBC_TIER, {
 					e(1572, {	-- Lady Vashj
 						["creatureID"] = 21212,	-- Lady Vashj
-						["g"] = {
+						["groups"] = {
 							-- Old Token Items
 							i(171912),	-- Crystalforge Faceguard
 							i(171914),	-- Crystalforge Greathelm
@@ -68,7 +68,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 					}),
 					e(1576, {	-- Kael'thas Sunstrider
 						["creatureID"] = 19622,	-- Kael'thas Sunstrider
-						["g"] = {
+						["groups"] = {
 							-- Old Token Items
 							i(171902),	-- Cataclysm Chestguard
 							i(171903),	-- Cataclysm Chestpiece
@@ -106,7 +106,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 					}),
 					e(1581, {	-- Archimonde
 						["creatureID"] = 17968,	-- Archimonde
-						["g"] = {
+						["groups"] = {
 							--	ach(695),	-- The Battle for Mount Hyjal
 							-- Old Token Items
 							i(171942),	-- Cowl of Absolution
@@ -146,7 +146,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 				tier(WOTLK_TIER, {
 					e(1605, {	-- Heigan the Unclean
 						["creatureID"] = 15936,	-- Heigan the Unclean
-						["g"] = {
+						["groups"] = {
 							i(171618),	-- Amulet of Autopsy
 							i(171515),	-- Bindings of the Decrepit
 							i(171509),	-- Breastplate of Tormented Rage
@@ -175,7 +175,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 					}),
 					e(1623, {	-- Anub'arak
 						["creatureID"] = 34564,	-- Anub'arak
-						["g"] = {
+						["groups"] = {
 							i(171615, {	-- Aegis of the Coliseum
 								["races"] = HORDE_ONLY,
 							}),
@@ -403,7 +403,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 					}),
 					e(1636, {	-- The Lich King
 						["creatureID"] = 36597,	-- The Lich King
-						["g"] = {
+						["groups"] = {
 							i(172021),	-- Marks of Sanctification Purse
 							i(171571),	-- Archus, Greatstaff of Antonidas
 							i(171569),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
@@ -435,7 +435,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 				tier(CATA_TIER,  {
 					e(167, {	-- Cho'gall
 						["creatureID"] = 43324,
-						["g"] = {
+						["groups"] = {
 							-- Old tier Items
 							i(171856),	-- Shadowflame Mantle
 							i(171872),	-- Reinforced Sapphirium Shoulderguards
@@ -477,7 +477,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 							41376,	-- Nefarian
 							41270,	-- Onyxia
 						},
-						["g"] = {
+						["groups"] = {
 							-- Old tier Items
 							i(171875),	-- Shadowflame Hood
 							i(171889),	-- Reinforced Sapphirium Helmet
@@ -517,7 +517,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 					}),
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
-						["g"] = {
+						["groups"] = {
 							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
 							i(171804),	-- Balespider's Hood
 							i(171794),	-- Cowl of the Cleansing Flame
@@ -567,8 +567,8 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 	}),
 	n(QUESTS, {
 		q(57298, {	-- How Things "Really" Happened...
-			["sourceQuests"] = { 57249 },	-- A Timely Invitation
-			["provider"] = { "n", 157113 },	-- Chromie
+			["sourceQuest"] = 57249,	-- A Timely Invitation
+			["qg"] = 157113,	-- Chromie
 			["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 			["lvl"] = 60,
 		}),
@@ -580,7 +580,7 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 	m(1537, {	-- Alterac Valley
 		["icon"] = 236711,	-- Alterac Valley
 		["maps"] = { HILLSBRAD_FOOTHILLS },
-		["g"] = {
+		["groups"] = {
 			ach(13928, {	-- Alterac Valley of Olde (A)
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -589,14 +589,14 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 			}),
 			n(QUESTS, {
 				q(57302, {	-- Alterac Valley Graveyards
-					["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
+					["qg"] = 159811,	-- Sergeant Durgen Stormpike
 					["isDaily"] = true,
 					["coord"] = { 43.6, 17.2, 1537 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57305, {	-- Armor Scraps
-					["provider"] = { "n", 13257 },	-- Murgot Deepforge
+					["qg"] = 13257,	-- Murgot Deepforge
 					["isDaily"] = true,
 					["coord"] = { 43.6, 15.9, 1537 },
 					["races"] = ALLIANCE_ONLY,
@@ -604,7 +604,7 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 				}),
 				q(57309, {	-- Begin the Attack
 					["repeatable"] = true,	-- presumably
-					["provider"] = { "n", 13446 },	-- Field Marshal Teravaine
+					["qg"] = 13446,	-- Field Marshal Teravaine
 					["coord"] = { 52.3, 44.0, 1537 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -637,34 +637,34 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 				}),
 				q(57311, {	-- Coldtooth Supplies (A)
 					["repeatable"] = true,
-					["provider"] = { "n", 12096 },	-- Stormpike Quartermaster
+					["qg"] = 12096,	-- Stormpike Quartermaster
 					["coord"] = { 43.3, 17.0, 1537 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57321, {	-- Coldtooth Supplies (H)
 					["repeatable"] = true,
-					["provider"] = { "n", 12097 },	-- Frostwolf Quartermaster
+					["qg"] = 12097,	-- Frostwolf Quartermaster
 					["coord"] = { 46.8, 83.5, 1537 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57722, {	-- Empty Stables (A)
 					["repeatable"] = true,
-					["provider"] = { "n", 158863 },	-- Stormpike Stable Master
+					["qg"] = 158863,	-- Stormpike Stable Master
 					["coord"] = { 42.6, 16.9, 1537 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57723, {	-- Empty Stables (H)
 					["repeatable"] = true,
-					["provider"] = { "n", 158864 },	-- Frostwolf Stable Master
+					["qg"] = 158864,	-- Frostwolf Stable Master
 					["coord"] = { 57.1, 82.5, 1537 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57317, {	-- Enemy Booty
-					["provider"] = { "n", 13176 },	-- Smith Regzar
+					["qg"] = 13176,	-- Smith Regzar
 					["isDaily"] = true,
 					["coord"] = { 49.9, 82.6, 1537 },
 					["races"] = HORDE_ONLY,
@@ -672,14 +672,14 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 				}),
 				q(57310, {	-- Irondeep Supplies (A)
 					["repeatable"] = true,
-					["provider"] = { "n", 12096 },	-- Stormpike Quartermaster
+					["qg"] = 12096,	-- Stormpike Quartermaster
 					["coord"] = { 43.3, 17.0, 1537 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57322, {	-- Irondeep Supplies (H)
 					["repeatable"] = true,
-					["provider"] = { "n", 12097 },	-- Frostwolf Quartermaster
+					["qg"] = 12097,	-- Frostwolf Quartermaster
 					["coord"] = { 46.8, 83.5, 1537 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -692,11 +692,11 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 					["isWeekly"] = true,
 				}),
 				q(57638, {	-- Korrak the Bloodrager
-					["provider"] = { "n", 158515 },	-- Lieutenant Haggerdin
+					["qg"] = 158515,	-- Lieutenant Haggerdin
 					["coord"] = { 43.6, 16.0, 1537 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
-					["g"] = {
+					["groups"] = {
 						i(172122),	-- Bloodseeker
 						i(172125),	-- Cold Forged Blade
 						i(172139),	-- Cold Forged Hammer
@@ -719,7 +719,7 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 				}),
 				q(57320, {	-- Launch the Attack!
 					["repeatable"] = true,	-- presumably
-					["provider"] = { "n", 13449 },	-- Warmaster Garrick
+					["qg"] = 13449,	-- Warmaster Garrick
 					["coord"] = { 45.0, 48.0, 1537 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -738,50 +738,50 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 				}),
 				q(57306, {	-- More Armor Scraps
 					["repeatable"] = true,
-					["provider"] = { "n", 13257 },	-- Murgot Deepforge
+					["qg"] = 13257,	-- Murgot Deepforge
 					["coord"] = { 43.6, 15.9, 1537 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57318, {	-- More Booty!
 					["repeatable"] = true,
-					["provider"] = { "n", 13176 },	-- Smith Regzar
+					["qg"] = 13176,	-- Smith Regzar
 					["coord"] = { 49.9, 82.6, 1537 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57313, {	-- Speak with our Quartermaster
-					["provider"] = { "n", 13798 },	-- Jotek
+					["qg"] = 13798,	-- Jotek
 					["isWeekly"] = true,
 					["coord"] = { 50.6, 82.0, 1537 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(56256, {	-- The Battle for Alterac (A)
-					["provider"] = { "n", 154478 },	-- Prospector Stonehewer
+					["qg"] = 154478,	-- Prospector Stonehewer
 				--	["coord"] = { , ALTERAC_VALLEY },
 					["isWeekly"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56257, {	-- The Battle for Alterac (H)
-					["provider"] = { "n", 154473 },	-- Voggah Deathgrip
+					["qg"] = 154473,	-- Voggah Deathgrip
 					["coord"] = { 55.0, 87.2, ALTERAC_VALLEY },
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,
 				}),
 				q(57312, {	-- The Graveyards of Alterac
-					["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
+					["qg"] = 158579,	-- Corporal Teeka Bloodsnarl
 					["isDaily"] = true,
 					["coord"] = { 50.8, 82.3, 1537 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57639, {	-- The Legend of Korrak
-					["provider"] = { "n", 158501 },	-- Warmaster Laggrond
+					["qg"] = 158501,	-- Warmaster Laggrond
 					["coord"] = { 50.1, 82.5, 1537 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
-					["g"] = {
+					["groups"] = {
 						i(172122),	-- Bloodseeker
 						i(172125),	-- Cold Forged Blade
 						i(172139),	-- Cold Forged Hammer
@@ -791,20 +791,20 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 					},
 				}),
 				q(57303, {	-- The Quartermaster
-					["provider"] = { "n", 13797 },	-- Mountaineer Boombellow
+					["qg"] = 13797,	-- Mountaineer Boombellow
 					["isWeekly"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57307, {	-- Towers and Bunkers (A)
-					["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
+					["qg"] = 159811,	-- Sergeant Durgen Stormpike
 					["isDaily"] = true,
 					["coord"] = { 43.6, 17.2, 1537 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57315, {	-- Towers and Bunkers (H)
-					["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
+					["qg"] = 158579,	-- Corporal Teeka Bloodsnarl
 					["isDaily"] = true,
 					["coord"] = { 50.8, 82.3, 1537 },
 					["races"] = HORDE_ONLY,
@@ -813,14 +813,14 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 				q(57730, {	-- Zinfizzlex's Portable Shredder Unit (A)
 					["description"] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
 					["repeatable"] = true,
-					["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
+					["qg"] = 13377,	-- Master Engineer Zinfizzlex
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57731, {	-- Zinfizzlex's Portable Shredder Unit (H)
 					["description"] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
 					["repeatable"] = true,
-					["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
+					["qg"] = 13377,	-- Master Engineer Zinfizzlex
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -829,7 +829,7 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 				n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
 					["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						n(BACK, {
 							i(172100, {	-- Frostwolf Advisor's Cloak
 								["cost"] = {
@@ -1043,7 +1043,7 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 				n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
 					["coord"] = { 44.7, 46.4, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						n(BACK, {
 							i(172101, {	-- Stormpike Sage's Cloak
 								["cost"] = {
@@ -1264,7 +1264,7 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 			["isYearly"] = true,
 		}),
 		q(57300, {	-- Soldier of Time
-			["provider"] = { "n", 157113 },	-- Chromie
+			["qg"] = 157113,	-- Chromie
 			["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 			["isWeekly"] = true,
 			["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
@@ -1273,7 +1273,7 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 	n(VENDORS, {
 		n(158061, {	-- Historian Ma'di
 			["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
-			["g"] = {
+			["groups"] = {
 				i(147885, {	-- Bronze-Tinted Sunglasses
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),
@@ -1297,7 +1297,7 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 				}),
 				i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
 					["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
-					["g"] = {
+					["groups"] = {
 						ach(10335),	-- Did Someone Say...?
 					},
 				}),

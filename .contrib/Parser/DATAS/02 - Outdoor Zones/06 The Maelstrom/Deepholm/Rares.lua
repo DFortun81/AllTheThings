@@ -8,22 +8,22 @@ _.Zones =
 		m(DEEPHOLM, {
 			n(RARES, {
 				n(50062, {	-- Aeonaxx <Mate of Aeosera>
-					["g"] = {
+					["groups"] = {
 						i(63042),	-- Phosphorescent Stone Drake (MOUNT!)
 					},
 				}),
 				n(50059, {	-- Golgarok <The Crimson Shatterer>
-					["g"] = {
+					["groups"] = {
 						i(67237),	-- Golgarok's Tenderized Treads
 					},
 				}),
 				n(49822, {	-- Jadefang
-					["g"] = {
+					["groups"] = {
 						i(64494),	-- Tiny Shale Spider (PET!)
 					},
 				}),
 				n(50060, {	-- Terborus
-					["g"] = {
+					["groups"] = {
 						i(67238),	-- Terborus's Rotating Bands
 					},
 				}),

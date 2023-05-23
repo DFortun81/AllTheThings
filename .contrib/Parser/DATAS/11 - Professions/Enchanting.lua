@@ -627,7 +627,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}),
 		cat(653, {	-- Illusions
 			["description"] = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
-			["g"] = {
+			["groups"] = {
 				r(217655),	-- Tome of Illusions: Draenor
 			},
 		}),

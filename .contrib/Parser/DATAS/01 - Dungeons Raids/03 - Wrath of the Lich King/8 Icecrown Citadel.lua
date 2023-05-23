@@ -76,8 +76,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				["lvl"] = 80,
 				["groups"] = {
 					q(24545, {	-- The Sacred and the Corrupt
+						["qg"] = 37120,	-- Highlord Darion Mograine
 						["minReputation"] = { 1156, FRIENDLY },	-- The Ashen Verdict
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["groups"] = {
 							i(49869, {	-- Light's Vengeance
 								["description"] = "Fly out to Dragonblight and collect this item from a cave after some short RP.",
@@ -93,31 +93,31 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 					q(24743, {	-- Shadow's Edge
+						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24545,	-- The Sacred and the Corrupt
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["groups"] = {
 							i(49888),	-- Shadow's Edge
 						},
 					}),
 					q(24547, {	-- A Feast of Souls
+						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24743,	-- Shadow's Edge
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 					}),
 					q(24749, {	-- Unholy Infusion
+						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24547,	-- A Feast of Souls
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 					}),
 					q(24756, {	-- Blood Infusion
+						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24749,	-- Unholy Infusion
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 					}),
 					q(24757, {	-- Frost Infusion
+						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24756,	-- Blood Infusion
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 					}),
 					q(24548, {	-- The Splintered Throne
+						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24757,	-- Frost Infusion
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["groups"] = {
 							i(50274, {	-- Shadowfrost Shard
 								["description"] = "These can drop from any of the bosses on 25-Man Normal or Heroic. You need 50 of these, so this quest will take you several weeks to finish.",
@@ -212,9 +212,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 			}),
 			n(QUESTS, {
 				q(24815, {	-- Choose Your Path
+					["qg"] = 38316,	-- Ormus the Penitent
 					["minReputation"] = { 1156, FRIENDLY },	-- The Ashen Verdict
 					["description"] = "If the quest does not appear when you hit Friendly, you may have to relog.",
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					["groups"] = {
 						i(50375, {	-- Ashen Band of Courage
 							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -235,10 +235,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 			-- Quest Chain: Path of Courage
 				q(24827, {	-- Path of Courage (Honored)
-					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
+					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					["groups"] = {
 						i(50388, {	-- Ashen Band of Greater Courage
 							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -246,10 +246,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(24834, {	-- Path of Courage (Revered)
-					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24827,	-- Path of Courage (Honored)
+					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					["groups"] = {
 						i(50403, {	-- Ashen Band of Unmatched Courage
 							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -257,10 +257,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(24835, {	-- Path of Courage (Exalted)
-					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24834,	-- Path of Courage (Revered)
+					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					["groups"] = {
 						i(50404, {	-- Ashen Band of Endless Courage
 							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -269,10 +269,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 			--	Quest Chain: Path of Destruction
 				q(24828, {	-- Path of Destruction (Honored)
-					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
+					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					["groups"] = {
 						i(50384, {	-- Ashen Band of Greater Destruction
 							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
@@ -280,10 +280,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(24823, {	-- Path of Destruction (Revered)
-					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24828,	-- Path of Destruction [Honored]
+					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					["groups"] = {
 						i(50397, {	-- Ashen Band of Unmatched Destruction
 							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
@@ -291,10 +291,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(24829, {	-- Path of Destruction (Exalted)
-					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24823,	-- Path of Destruction (Revered)
+					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					["groups"] = {
 						i(50398, {	-- Ashen Band of Endless Destruction
 							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
@@ -303,10 +303,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 			--	Quest Chain: Path of Might
 				q(25239, {	-- Path of Might (Honored)
-					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
+					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					["groups"] = {
 						i(52570, {	-- Ashen Band of Greater Might
 							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -314,9 +314,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(25240, {	-- Path of Might [Revered]
-					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 25239,	-- Path of Might [Honored]
+					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 					["groups"] = {
 						i(52571, {	-- Ashen Band of Unmatched Might
@@ -325,9 +325,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(25242, {	-- Path of Might [Exalted]
-					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 25240,	-- Path of Might [Revered]
+					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 					["groups"] = {
 						i(52572, {	-- Ashen Band of Endless Might
@@ -337,9 +337,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 			--	Quest Chain: Path of Vengeance
 				q(24826, {	-- Path of Vengeance [Honored]
-					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
+					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 					["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 					["groups"] = {
 						i(50387, {	-- Ashen Band of Greater Vengeance
@@ -348,9 +348,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(24832, {	-- Path of Vengeance [Revered]
-					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24826,	-- Path of Vengeance [Honored]
+					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 					["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 					["groups"] = {
 						i(50401, {	-- Ashen Band of Unmatched Vengeance
@@ -359,9 +359,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(24833, {	-- Path of Vengeance [Exalted]
-					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24832,	-- Path of Vengeance [Revered]
+					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 					["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 					["groups"] = {
 						i(50402, {	-- Ashen Band of Endless Vengeance
@@ -371,9 +371,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 			--	Quest Chain: Path of Wisdom
 				q(24825, {	-- Path of Wisdom [Honored]
-					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
+					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 					["groups"] = {
 						i(50386, {	-- Ashen Band of Greater Wisdom
@@ -382,9 +382,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(24830, {	-- Path of Wisdom [Revered]
-					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24825,	-- Path of Wisdom [Honored]
+					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 					["groups"] = {
 						i(50399, {	-- Ashen Band of Unmatched Wisdom
@@ -393,9 +393,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(24831, {	-- Path of Wisdom [Exalted]
-					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24830,	-- Path of Wisdom [Revered]
+					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 					["groups"] = {
 						i(50400, {	-- Ashen Band of Endless Wisdom
@@ -404,84 +404,84 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				q(24819, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24820, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24821, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24822, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24836, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24837, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24838, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24839, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24840, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24841, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24842, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24843, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24844, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24845, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24846, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(24847, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(25246, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(25247, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(25248, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 				q(25249, { -- A Change of Heart
+					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
-					["provider"] = { "n", 38316 },	-- Ormus the Penitent
 				}),
 			}),
 			n(VENDORS, {

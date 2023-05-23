@@ -4885,144 +4885,144 @@ profession(TAILORING, {
 		n(QUESTS, {
 			-- Tools of Trade Questline
 			q(53805, {	-- A Friend in Needle (A)
-				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["qg"] = 145022,	-- Timeweaver Delormi
 				["coord"] = { 76.6, 11.8, BORALUS },
 				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 			}),
 			q(53938, {	-- A Friend in Needle (H)
-				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["qg"] = 145022,	-- Timeweaver Delormi
 				["coord"] = { 43.5, 34.8, DAZARALOR },
 				["requireSkill"] = TAILORING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 			}),
 			q(53807, {	-- A Stitch in Time (A)
-				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
-				["coord"] = { 76.6, 11.8, BORALUS },
+				["qg"] = 145022,	-- Timeweaver Delormi
 				["sourceQuest"] = 53805,	-- A Friend in Needle (A)
+				["coord"] = { 76.6, 11.8, BORALUS },
 				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 			}),
 			q(53940, {	-- A Stitch in Time (H)
-				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
-				["coord"] = { 43.5, 34.8, DAZARALOR },
+				["qg"] = 145022,	-- Timeweaver Delormi
 				["sourceQuest"] = 53938,	-- A Friend in Needle (H)
+				["coord"] = { 43.5, 34.8, DAZARALOR },
 				["requireSkill"] = TAILORING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 			}),
 			q(55177, {	-- Tearing at the Seams (A)
-				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["qg"] = 145022,	-- Timeweaver Delormi
 				["sourceQuest"] = 53807,	-- A Stitch in Time (A)
 				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 			}),
 			q(55188, {	-- Tearing at the Seams (H)
-				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["qg"] = 145022,	-- Timeweaver Delormi
 				["sourceQuest"] = 53940,	-- A Stitch in Time (H)
 				["requireSkill"] = TAILORING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 			}),
 			q(53810, {	-- The Severed Thread
-				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 62.0, 53.9, CAVERNS_OF_TIME },
+				["qg"] = 151134,	-- Timeweaver Delormi
 				["sourceQuests"] = {
 					55177,	-- Tearing at the Seams (A)
 					55188,	-- Tearing at the Seams (H)
 				},
+				["coord"] = { 62.0, 53.9, CAVERNS_OF_TIME },
 				["requireSkill"] = TAILORING,
 				["lvl"] = 120,
 			}),
 			q(53813, {	-- Rolling Up the Sleeves
-				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 43.5, 34.8, CAVERNS_OF_TIME },
+				["qg"] = 151134,	-- Timeweaver Delormi
 				["sourceQuests"] = {
 					55177,	-- Tearing at the Seams (A)
 					55188,	-- Tearing at the Seams (H)
 				},
+				["coord"] = { 43.5, 34.8, CAVERNS_OF_TIME },
 				["requireSkill"] = TAILORING,
 				["lvl"] = 120,
 			}),
 			q(53858, {	-- Step Into Her Shoes
-				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 39.1, 63.3, CAVERNS_OF_TIME },
+				["qg"] = 151134,	-- Timeweaver Delormi
 				["sourceQuests"] = {
 					53810,	-- The Severed Thread
 					53813,	-- Rolling Up the Sleeves
 				},
+				["coord"] = { 39.1, 63.3, CAVERNS_OF_TIME },
 				["requireSkill"] = TAILORING,
 				["lvl"] = 120,
 			}),
 			q(53866, {	-- If The Shoe Fits...
-				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 63.8, 68.8, SURAMAR },
+				["qg"] = 151134,	-- Timeweaver Delormi
 				["sourceQuest"] = 53858,	-- Step Into Her Shoes
+				["coord"] = { 63.8, 68.8, SURAMAR },
 				["requireSkill"] = TAILORING,
 				["lvl"] = 120,
 			}),
 			q(55214, {	-- Seam Stress
-				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 64.2, 69.5, SURAMAR },
+				["qg"] = 151134,	-- Timeweaver Delormi
 				["sourceQuest"] = 53866,	-- If The Shoe Fits...
+				["coord"] = { 64.2, 69.5, SURAMAR },
 				["requireSkill"] = TAILORING,
 				["lvl"] = 120,
 			}),
 			q(53868, {	-- Saving Nine
-				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 7.2, 24.5, STORMSONG_VALLEY },
+				["qg"] = 151134,	-- Timeweaver Delormi
 				["sourceQuest"] = 55214,	-- Seam Stress
+				["coord"] = { 7.2, 24.5, STORMSONG_VALLEY },
 				["requireSkill"] = TAILORING,
 				["lvl"] = 120,
 			}),
 			q(54483, {	-- Tailored Training (A)
-				["requireSkill"] = TAILORING,
-				["provider"] = { "n", 136071 },	-- Daniel Brineweaver <Tailoring Trainer>
+				["qg"] = 136071,	-- Daniel Brineweaver <Tailoring Trainer>
 				["coord"] = { 76.8, 11.2, BORALUS },
+				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 110,
 				["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 			}),
 			q(54484, {	-- Tailored Training (H)
-				["requireSkill"] = TAILORING,
-				["provider"] = { "n", 122700 },	-- Pin'jin the Patient <Tailoring Trainer>
+				["qg"] = 122700,	-- Pin'jin the Patient <Tailoring Trainer>
 				["coord"] = { 44.5, 33.9, DAZARALOR },
+				["requireSkill"] = TAILORING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 110,
 				["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 			}),
 			q(53869, {	-- Killing Time
-				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+				["qg"] = 151134,	-- Timeweaver Delormi
 				["sourceQuest"] = 53868,	-- Saving Nine
+				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
 				["requireSkill"] = TAILORING,
 				["lvl"] = 120,
 			}),
 			q(53881, {	-- Cut from the Same Cloth (A)
-				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+				["qg"] = 151134,	-- Timeweaver Delormi
 				["sourceQuest"] = 53869,	-- Killing Time
+				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
 				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					recipe(292946, {	-- Recipe: Synchronous Thread
 						["requireSkill"] = TAILORING,
 					}),
 				},
 			}),
 			q(53962, {	-- Cut from the Same Cloth (H)
-				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+				["qg"] = 151134,	-- Timeweaver Delormi
 				["sourceQuest"] = 53869,	-- Killing Time
+				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
 				["requireSkill"] = TAILORING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					recipe(292946, {	-- Recipe: Synchronous Thread
 						["requireSkill"] = TAILORING,
 					}),
@@ -5388,10 +5388,10 @@ profession(TAILORING, {
 	n(QUESTS, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 		applyclassicphase(TBC_PHASE_ONE, q(10831, {	-- Becoming a Mooncloth Tailor
 			["qg"] = 22208,	-- Nasmara Moonsong <Mooncloth Specialist>
-			["requireSkill"] = TAILORING,
 			["description"] = "Upon finishing this quest, you will become a Mooncloth Tailor.",
 			["coord"] = { 66.5, 69.3, SHATTRATH_CITY },
 			["maps"] = { ZANGARMARSH },
+			["requireSkill"] = TAILORING,
 			["altQuests"] = {
 				-- 10831,	-- Becoming a Mooncloth Tailor
 				10833,	-- Becoming a Shadoweave Tailor
@@ -5415,10 +5415,10 @@ profession(TAILORING, {
 		})),
 		applyclassicphase(TBC_PHASE_ONE, q(10833, {	-- Becoming a Shadoweave Tailor
 			["qg"] = 22212,	-- Andrion Darkspinner <Shadoweave Specialist>
-			["requireSkill"] = TAILORING,
 			["description"] = "Upon finishing this quest, you will become a Shadoweave Tailor.",
 			["coord"] = { 66.6, 68.2, SHATTRATH_CITY },
 			["maps"] = { SHADOWMOON_VALLEY },
+			["requireSkill"] = TAILORING,
 			["altQuests"] = {
 				10831,	-- Becoming a Mooncloth Tailor
 				-- 10833,	-- Becoming a Shadoweave Tailor
@@ -5434,10 +5434,10 @@ profession(TAILORING, {
 		})),
 		applyclassicphase(TBC_PHASE_ONE, q(10832, {	-- Becoming a Spellfire Tailor
 			["qg"] = 22213,	-- Gidge Spellweaver <Spellfire Specialist>
-			["requireSkill"] = TAILORING,
 			["description"] = "Upon finishing this quest, you will become a Spellfire Tailor.",
 			["coord"] = { 66.6, 68.4, SHATTRATH_CITY },
 			["maps"] = { NETHERSTORM },
+			["requireSkill"] = TAILORING,
 			["altQuests"] = {
 				10831,	-- Becoming a Mooncloth Tailor
 				10833,	-- Becoming a Shadoweave Tailor

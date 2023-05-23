@@ -208,7 +208,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248
 				q(43243, { ["isRepeatable"] = true, }),	-- Demon Commander (Tanaris)
 				q(43242, { ["isRepeatable"] = true, }),	-- Demon Commander (Westfall)
 				q(44184, {	-- In the Blink of an Eye
-					["provider"] = { "n", 114562 },	-- Khadgar's Upgraded Servant
+					["qg"] = 114562,	-- Khadgar's Upgraded Servant
 					["sourceQuests"] = {
 						44500,	-- Author! Author!
 						43926,	-- Legion: The Legion Returns
@@ -220,7 +220,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248
 					-- TODO: confirm if this can somehow be picked up via Party Sync
 					["DisablePartySync"] = false,	-- false = "hasn't been verified yet"
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(143780),	-- Tome of the Tranquil Mind
 					},
 				}),
@@ -256,13 +256,13 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248
 			n(RARES, {
 				n(112527, {	-- Doomsayer
 					["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.",
-					["g"] = {
+					["groups"] = {
 						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
 					n(112198, {	-- Doomsayer
 					["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.\n",
-					["g"] = {
+					["groups"] = {
 						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
@@ -274,7 +274,7 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248
 						{ 41.2, 78.8, STORMWIND_CITY },
 					},
 					["timeline"] = { "added 7.0.3.22290" },
-					["g"] = {
+					["groups"] = {
 						i(136924),	-- Felbat Pup (PET!)
 						i(141604),	-- Glaive of the Fallen
 						i(142526),	-- Glaive of the Fallen (this 2nd version was seen in game Oct 2020)

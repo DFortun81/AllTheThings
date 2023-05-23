@@ -9,8 +9,8 @@ _.Instances = { tier(CATA_TIER, {
 		["groups"] = {
 			n(QUESTS, {
 				q(28814, {	-- Followers and Leaders
-					["provider"] = { "n", 50048 },	-- Earthwarden Yrsa
-					["sourceQuests"] = { 28815 },	-- Twilight Documents
+					["qg"] = 50048,	-- Earthwarden Yrsa
+					["sourceQuest"] = 28815,	-- Twilight Documents
 					["groups"] = {
 						i(66892),	-- Band of the One Hundred and One
 						i(66893),	-- High Priestess' Signet
@@ -18,7 +18,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 				q(28815, {	-- Twilight Documents
-					["provider"] = { "n", 50048 },	-- Earthwarden Yrsa
+					["qg"] = 50048,	-- Earthwarden Yrsa
 				}),
 				q(28824, {	-- Wayward Child
 					["qg"] = 42465,	-- Therazane <The Stonemother>

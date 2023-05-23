@@ -177,7 +177,7 @@ _.Instances = { tier(CATA_TIER, {
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["sourceQuest"] = 30109,	-- Blood of the Betrayer
 						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
-						["g"] = {
+						["groups"] = {
 							i(77947),	-- The Sleeper
 							i(77948),	-- The Dreamer
 						},
@@ -614,7 +614,7 @@ _.Instances = { tier(CATA_TIER, {
 						},
 					}),
 					n(ZONE_DROPS, {
-						["g"] = {
+						["groups"] = {
 							i(78886),	-- Belt of Ghostly Graces
 							i(78885),	-- Dragoncarver Belt
 							i(77938),	-- Dragonfire Orb

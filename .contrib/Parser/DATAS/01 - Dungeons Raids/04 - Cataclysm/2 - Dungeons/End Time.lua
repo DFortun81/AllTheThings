@@ -10,11 +10,11 @@ _.Instances = { tier(CATA_TIER, {
 			{ 57.7, 30.4, CAVERNS_OF_TIME },	-- dungeon entrance
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(30097, {	-- Archival Purposes
-					["provider"] = { "n", 57864 },	-- Alurmi
-					["g"] = {
+					["qg"] = 57864,	-- Alurmi
+					["groups"] = {
 						i(72871),	-- Crescent Wand
 						i(72852),	-- Archivist's Gloves
 						i(72872),	-- Time Strand Gauntlets
@@ -29,7 +29,7 @@ _.Instances = { tier(CATA_TIER, {
 						{ "n", 54751 },	-- Nozdormu
 						{ "n", 54476 },	-- Nozdormu
 					},
-					["g"] = {
+					["groups"] = {
 						i(72873),	-- Bronze Blaster
 						i(76152),	-- Cowl of Destiny
 						i(72875),	-- Time Twister's Gauntlets
@@ -49,8 +49,8 @@ _.Instances = { tier(CATA_TIER, {
 					["isBreadcrumb"] = true,
 				}),
 				q(30098, {	-- The Well of Eternity
-					["provider"] = { "n", 54751 },	-- Nozdormu
-					["sourceQuests"] = { 30096 },	-- Murozond
+					["qg"] = 54751,	-- Nozdormu
+					["sourceQuest"] = 30096,	-- Murozond
 				}),
 			}),
 			d(HEROIC_DUNGEON, {
@@ -93,7 +93,7 @@ _.Instances = { tier(CATA_TIER, {
 						54123,	-- Echo of Sylvannas
 						54544,	-- Echo of Tyrande
 					},
-					["g"] = {
+					["groups"] = {
 						i(72804),	-- Dragonshrine Scepter
 						i(72806),	-- Echoing Headguard
 						i(72801),	-- Breastplate of Sorrow

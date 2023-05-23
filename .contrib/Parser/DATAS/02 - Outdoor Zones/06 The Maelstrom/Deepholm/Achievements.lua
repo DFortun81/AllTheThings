@@ -11,7 +11,7 @@ _.Zones =
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
-					["g"] = {
+					["groups"] = {
 						crit(6, {	-- Bordin Steadyfist
 							["coord"] = { 49.8, 57.0, DEEPHOLM },
 							["cr"] = 66815,	-- Bordin Steadyfist <Master Pet Tamer>

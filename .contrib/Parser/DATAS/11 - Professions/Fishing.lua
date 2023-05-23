@@ -55,7 +55,7 @@ profession(FISHING, {
 		["crs"] = {
 			152121,	-- Hyper-Compressed Ocean NPC
 		},
-		["g"] = {	-- Confirmed Drops
+		["groups"] = {	-- Confirmed Drops
 			i(139408, {	-- Deck Sandals
 				["bonusID"] = 1812,
 			}),
@@ -124,16 +124,16 @@ profession(FISHING, {
 			["provider"] = { "i", 133887 },	-- Luminous Pearl
 		}),
 		q(40961, {	-- The Dalaran Fountain
+			["qg"] = 90417,	-- Archmage Khadgar
 			["sourceQuest"] = 40960,	-- Luminous Pearl
-			["provider"] = { "n", 90417 },	-- Archmage Khadgar
 			["coord"] = { 28.8, 48.6, LEGION_DALARAN },
 		}),
 		q(41010, {	-- Fish Frenzy
-			["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
+			["qg"] = 102639,	-- Nat Pagle
 			["sourceQuest"] = 40961,	-- The Dalaran Fountain
-			["provider"] = { "n", 102639 },	-- Nat Pagle
+			["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
 			["maps"] = { LEGION_DALARAN },	-- TODO replace with coord?
-			["g"] = {
+			["groups"] = {
 				artifact(841),	-- Base Skin
 			},
 		}),

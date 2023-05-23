@@ -4291,9 +4291,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		n(QUESTS, {
 			q(39847, {	-- Sign This
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					r(195115, {	-- Inscription (Legion)
 						["timeline"]={ "added 7.0.3", "deleted 8.0.1" },
 						["collectible"] = false,
@@ -4302,137 +4302,141 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				},
 			}),
 			q(39931, {	-- Smashing Herbs
-				["sourceQuests"] = { 39847 },	-- Sign This
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 39847,	-- Sign This
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			}),
 			q(39932, {	-- Fish Ink
-				["sourceQuests"] = { 39931 },	-- Smashing Herbs
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 39931,	-- Smashing Herbs
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			}),
 			q(39933, {	-- The Card Shark
-				["sourceQuests"] = { 39932 },	-- Fish Ink
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 39932,	-- Fish Ink
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					r(192854),	-- Prophecy Tarot [Rank 1]
 				},
 			}),
 			q(40056, {	-- Our New Allies (DH)
-				["classes"] = { DEMONHUNTER },
-				["sourceQuests"] = { 39933 },	-- The Card Shark
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 39933,	-- The Card Shark
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["classes"] = { DEMONHUNTER },
 			}),
 			q(39934, {	-- Our New Allies (non-DH)
-				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-				["sourceQuests"] = { 39933 },	-- The Card Shark
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 39933,	-- The Card Shark
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 			}),
 			q(40057, {	-- The Price of Power (DH)
-				["classes"] = { DEMONHUNTER },
-				["sourceQuests"] = { 40056 },	-- Our New Allies (DH)
-				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["qg"] = 89398,	-- Allari the Souleater <Illidari>
+				["sourceQuest"] = 40056,	-- Our New Allies (DH)
 				["coord"] = { 43.2, 43.2, AZSUNA },
-				["g"] = {
+				["classes"] = { DEMONHUNTER },
+				["groups"] = {
 					r(192849),	-- Glyph of Fel Touched Souls
 				},
 			}),
 			q(39935, {	-- The Price of Power (non-DH)
-				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-				["sourceQuests"] = { 39934 },	-- Our New Allies (non-DH)
-				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["qg"] = 89398,	-- Allari the Souleater <Illidari>
+				["sourceQuest"] = 39934,	-- Our New Allies (non-DH)
 				["coord"] = { 43.2, 43.2, AZSUNA },
-				["g"] = {
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["groups"] = {
 					r(192849),	-- Glyph of Fel Touched Souls
 				},
 			}),
 			q(40058, {	-- Defense Symbology (DH)
-				["classes"] = { DEMONHUNTER },
-				["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
-				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["qg"] = 89398,	-- Allari the Souleater <Illidari>
+				["sourceQuest"] = 40057,	-- The Price of Power (DH)
 				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = { DEMONHUNTER },
 			}),
 			q(39936, {	-- Inscription of the Body (non-DH)
-				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-				["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
-				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["qg"] = 89398,	-- Allari the Souleater <Illidari>
+				["sourceQuest"] = 39935,	-- The Price of Power (non-DH)
 				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 			}),
 			q(40059, {	-- Opposites Repel (DH)
-				["classes"] = { DEMONHUNTER },
-				["sourceQuests"] = { 40058 },	--  Defense Symbology (DH)
-				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["qg"] = 97736,	-- Baric Stormrunner <Illidari>
+				["sourceQuest"] = 40058,	-- Defense Symbology (DH)
 				["coord"] = { 54.0, 15.4, AZSUNA },
-				["g"] = {
+				["classes"] = { DEMONHUNTER },
+				["groups"] = {
 					i(129105),	-- Ley Dust
 				},
 			}),
 			q(39937, {	-- Opposites Repel (non-DH)
-				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-				["sourceQuests"] = { 39936 },	-- Inscription of the Body (non-DH)
-				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["qg"] = 97736,	-- Baric Stormrunner <Illidari>
+				["sourceQuest"] = 39936,	-- Inscription of the Body (non-DH)
 				["coord"] = { 54.0, 15.4, AZSUNA },
-				["g"] = {
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["groups"] = {
 					i(129105),	-- Ley Dust
 				},
 			}),
 			q(40060, {	-- Containing the Demon Within (DH)
-				["classes"] = { DEMONHUNTER },
-				["sourceQuests"] = { 40059 },	-- Opposites Repel (DH)
-				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["qg"] = 97736,	-- Baric Stormrunner <Illidari>
+				["sourceQuest"] = 40059,	-- Opposites Repel (DH)
 				["coord"] = { 54.0, 15.4, AZSUNA },
-				["g"] = {
+				["classes"] = { DEMONHUNTER },
+				["groups"] = {
 					r(192851),	-- Glyph of Fallow Wings
 				},
 			}),
 			q(39938, {	-- Containing the Demon Within (non-DH)
-				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-				["sourceQuests"] = { 39937 },	-- Opposites Repel (non-DH)
-				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["qg"] = 97736,	-- Baric Stormrunner <Illidari>
+				["sourceQuest"] = 39937,	-- Opposites Repel (non-DH)
 				["coord"] = { 54.0, 15.4, AZSUNA },
-				["g"] = {
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["groups"] = {
 					r(192851),	-- Glyph of Fallow Wings
 				},
 			}),
 			q(40061, {	-- To Know Your Enemy (DH)
-				["classes"] = { DEMONHUNTER },
-				["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
-				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["qg"] = 89398,	-- Allari the Souleater <Illidari>
+				["sourceQuest"] = 40057,	-- The Price of Power (DH)
 				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = { DEMONHUNTER },
 			}),
 			q(39939, {	-- Scribal Knowledge (non-DH)
-				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-				["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
-				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["qg"] = 89398,	-- Allari the Souleater <Illidari>
+				["sourceQuest"] = 39935,	-- The Price of Power (non-DH)
 				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 			}),
 			q(39940, {	-- Runes of Power
+				["qg"] = 97734,	-- Zaria Shadowheart <Illidari>
 				["sourceQuests"] = {
 					40061,	-- To Know Your Enemy (DH)
 					39939,	-- Scribal Knowledge (non-DH)
 				},
-				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
 				["coord"] = { 43.2, 43.2, AZSUNA },
-				["g"] = {
+				["groups"] = {
 					r(192850),	-- Glyph of Crackling Flames
 				},
 			}),
 			q(40063, {	-- Control is Key (DH)
-				["classes"] = { DEMONHUNTER },
-				["sourceQuests"] = { 40061 },	-- To Know Your Enemy (DH)
-				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+				["qg"] = 97734,	-- Zaria Shadowheart <Illidari>
+				["sourceQuest"] = 40061,	-- To Know Your Enemy (DH)
 				["coord"] = { 65.0, 25.8, AZSUNA },
+				["classes"] = { DEMONHUNTER },
 			}),
 			q(39941, {	-- Control is Key (non-DH)
-				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-				["sourceQuests"] = { 39939 },	-- Scribal Knowledge (non-DH)
-				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+				["qg"] = 97734,	-- Zaria Shadowheart <Illidari>
+				["sourceQuest"] = 39939,	-- Scribal Knowledge (non-DH)
 				["coord"] = { 43.2, 43.2, AZSUNA },
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 			}),
 			q(39943, {	-- The Burdens of Hunting
+				["providers"] = {
+					{ "n", 97734 },	-- Zaria Shadowheart
+					{ "n", 98026 },	-- Baric Stormrunner
+				},
 				["sourceQuests"] = {
 					40060,	-- Containing the Demon Within (DH)
 					39938,	-- Containing the Demon Within (non-DH)
@@ -4440,128 +4444,124 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					40063,	-- Control is Key (DH)
 					39941,	-- Control is Key (non-DH)
 				},
-				["providers"] = {
-					{ "n", 97734 },	-- Zaria Shadowheart
-					{ "n", 98026 },	-- Baric Stormrunner
-				},
 				["coords"] = {
 					{ 54.0, 15.4, AZSUNA },
 					{ 43.2, 43.2, AZSUNA },
 				},
-				["g"] = {
+				["groups"] = {
 					r(192852),	-- Glyph of Tattered Wings
 				},
 			}),
 			q(39944, {	-- Mysterious Messages
-				["sourceQuests"] = { 39933 },	-- The Card Shark
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 39933,	-- The Card Shark
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			}),
 			q(39945, {	-- Runes Within the Ruins
-				["sourceQuests"] = { 39944 },	-- Mysterious Messages
-				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["qg"] = 97748,	-- Nicholo Swiftfuse
+				["sourceQuest"] = 39944,	-- Mysterious Messages
 				["coord"] = { 69.2, 40.6, STORMHEIM },
 			}),
 			q(39946, {	-- Right Tool for the Job
-				["sourceQuests"] = { 39944 },	-- Mysterious Messages
-				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["qg"] = 97748,	-- Nicholo Swiftfuse
+				["sourceQuest"] = 39944,	-- Mysterious Messages
 				["coord"] = { 69.2, 40.6, STORMHEIM },
 			}),
 			q(39947, {	-- Not So Complex?
+				["qg"] = 97748,	-- Nicholo Swiftfuse
 				["sourceQuests"] = {
 					39945,	-- Runes Within the Ruins
 					39946,	-- Right Tool for the Job
 				},
-				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
 				["coord"] = { 69.2, 40.6, STORMHEIM },
 			}),
 			q(40052, {	-- Ancient Vrykul Mastered
-				["sourceQuests"] = { 39947 },	-- Not So Complex?
-				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["qg"] = 97748,	-- Nicholo Swiftfuse
+				["sourceQuest"] = 39947,	-- Not So Complex?
 				["coord"] = { 69.2, 40.6, STORMHEIM },
-				["g"] = {
+				["groups"] = {
 					r(192802),	-- Scroll of Forgotten Knowledge
 				},
 			}),
 			q(39948, {	-- The Ink Flows
-				["sourceQuests"] = { 40052 },	-- Ancient Vrykul Mastered
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 40052,	-- Ancient Vrykul Mastered
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			}),
 			q(39949, {	-- Once a Scribe Like You
-				["sourceQuests"] = { 39948 },	-- The Ink Flows
-				["provider"] = { "n", 97359 },	-- Raethan
+				["qg"] = 97359,	-- Raethan
+				["sourceQuest"] = 39948,	-- The Ink Flows
 				["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
 			}),
 			q(39950, {	-- An Odd Trinket
-				["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
-				["provider"] = { "n", 97359 },	-- Raethan
+				["qg"] = 97359,	-- Raethan
+				["sourceQuest"] = 39949,	-- Once a Scribe Like You
 				["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
-				["g"] = {
+				["groups"] = {
 					r(192855),	-- Prophecy Tarot [Rank 2]
 				},
 			}),
 			q(39954, {	-- Mass Milling Techniques
-				["sourceQuests"] = { 39933 },	-- The Card Shark
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 39933,	-- The Card Shark
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					r(210116),	-- Mass Mill Yseralline Seeds
 				},
 			}),
 			q(39961, {	-- An Embarrassing Revelation
-				["sourceQuests"] = { 39933 },	-- The Card Shark
 				["provider"] = { "o", 244651 },	-- Steamy Romance Novel
+				["sourceQuest"] = 39933,	-- The Card Shark
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			}),
 			q(39955, {	-- The Plot Thickens (A)
-				["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 39961,	-- An Embarrassing Revelation
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
 			q(39959, {	-- The Plot Thickens (H)
-				["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 39961,	-- An Embarrassing Revelation
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
 			q(39956, {	-- The Legacy Passed On (A)
+				["qg"] = 97762,	-- Bill Spearshaker <Author Extrodinaire>
 				["sourceQuest"] = 39955,	-- The Plot Thickens (A)
-				["provider"] = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
 				["coord"] = { 77.2, 10.4, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					r(192804),	-- Steamy Romance Novel Kit
 				},
 			}),
 			q(39960, {	-- The Legacy Passed On (H)
-				["sourceQuests"] = { 39959 },	-- The Plot Thickens (H)
-				["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
+				["qg"] = 97766,	-- Francis Serbacon <Author Extrodinaire>
+				["sourceQuest"] = 39959,	-- The Plot Thickens (H)
 				["coord"] = { 77.8, 38.8, UNDERCITY },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					r(192804),	-- Steamy Romance Novel Kit
 				},
 			}),
 			q(39953, {	-- Halls of Valor: Vision of Valor
+				["qg"] = 92195,	-- Professor Pallin
 				["sourceQuests"] = {
 					40052,	-- Ancient Vrykul Mastered
 					39950,	-- An Odd Trinket
 					39943,	-- The Burdens of Hunting
 				},
-				["provider"] = { "n", 92195 },	-- Professor Pallin
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 				["maps"] = { 703, 704, 705 },	-- Halls of Valor
 			}),
 			q(39957, {	-- Demon Ink
-				["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["qg"] = 92195,	-- Professor Pallin
+				["sourceQuest"] = 39953,	-- Halls of Valor: Vision of Valor
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 				["cost"] = { { "i", 124124, 1 } },	-- 1x Blood of Sargeras
-				["g"] = {
+				["groups"] = {
 					i(129204),	-- Vial of Felsoul Blood
 					r(191659),	-- Darkmoon Card of the Legion [Rank 1]
 				},
@@ -4569,49 +4569,49 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			q(39942, {	-- Aethrem Crystal
 				["provider"] = { "i", 136909 },	-- Aethrem Crystal
 				["description"] = "There is a chance of getting this quest when milling Aethril.",
-				["g"] = {
+				["groups"] = {
 					r(209658),	-- Mass Mill Aethril
 				},
 			}),
 			q(40062, {	-- Bulging Nightmare Pod
 				["provider"] = { "i", 136912 },	-- Bulging Nightmare Pod
 				["description"] = "There is a chance of getting this quest when milling Dreamleaf.",
-				["g"] = {
+				["groups"] = {
 					r(209659),	-- Mass Mill Dreamleaf
 				},
 			}),
 			q(40065, {	-- Fjarnsk
 				["provider"] = { "i", 136916 },	-- Fjarnsk
 				["description"] = "There is a chance of getting this quest when milling Fjarnskaggl.",
-				["g"] = {
+				["groups"] = {
 					r(209661),	-- Mass Mill Fjarnskaggl
 				},
 			}),
 			q(39951, {	-- Roseate Essence
 				["provider"] = { "i", 136917 },	-- Roseate Essence
 				["description"] = "There is a chance of getting this quest when milling Starlight Rose.",
-				["g"] = {
+				["groups"] = {
 					r(209662),	-- Mass Mill Starlight Rose
 				},
 			}),
 			q(39952, {	-- Sallow Essence
 				["provider"] = { "i", 136918 },	-- Sallow Essence
 				["description"] = "There is a chance of getting this quest when milling Felwort.",
-				["g"] = {
+				["groups"] = {
 					r(209664),	-- Mass Mill Felwort
 				},
 			}),
 			q(40064, {	-- Woody Seed Cluster
 				["provider"] = { "i", 136915 },	-- Woody Seed Cluster
 				["description"] = "There is a chance of getting this quest when milling Foxflower.",
-				["g"] = {
+				["groups"] = {
 					r(209660),	-- Mass Mill Foxflower
 				},
 			}),
 			q(43929, bubbleDownSelf({ ["timeline"] = { "added 7.1.0" } }, {	-- Vantus Mastery
+				["qg"] = 90417,	-- Archmage Khadgar
 				["description"] = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
-				["provider"] = { "n", 90417 },	-- Archmage Khadgar
-				["g"] = {
+				["groups"] = {
 					i(137783),	-- Vantus Rune Technique: Gul'dan [Rank 3]
 				},
 			})),
@@ -4812,121 +4812,121 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		})),
 		n(QUESTS, {
 			q(54477, {	-- Inscribed Methods (A)
-				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
+				["qg"] = 130399,	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.1.0", REMOVED_9_0_1 },	-- Might no be correct removed patch
 			}),
 			q(54478, {	-- Inscribed Methods (H)
-				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
+				["qg"] = 130901,	-- Chronicler Grazzul
 				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { "added 8.1.0", REMOVED_9_0_1 },	-- Might no be correct removed patch
 			}),
 			q(40537, { --Drawing Blood (A)
-				["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
+				["qg"] = 130399,	-- Zooey Inksprocket
 				["sourceQuest"] = 54477,	-- Inscribed Methods
-				["provider"] = { "n", 130399 }, -- Zooey Inksprocket
+				["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.1.5" },
 			}),
 			q(49943, { --Drawing Blood (H)
-				["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
+				["qg"] = 130901,	-- Chronicler Grazzul
 				["sourceQuest"] = 54478,	-- Inscribed Methods
-				["provider"] = { "n", 130901 }, -- Chronicler Grazzul
+				["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
 				["coord"] = { 42.2, 39.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { "added 8.1.5" },
 			}),
 			q(49694, { -- Turn to Drust (A)
+				["qg"] = 130399,	-- Zooey Inksprocket
 				["sourceQuest"] = 40537,	-- Drawing Blood (A)
-				["provider"] = { "n", 130399 }, -- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.1.5" },
 			}),
 			q(49944, { -- Turn to Drust (H)
+				["qg"] = 130901,	-- Chronicler Grazzul
 				["sourceQuest"] = 49943,	-- Drawing Blood (H)
-				["provider"] = { "n", 130901 }, -- Chronicler Grazzul
 				["coord"] = { 42.2, 39.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { "added 8.1.5" },
 			}),
 			q(49873, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, { --Sacrificial Writes
+				["provider"] = { "o", 279647 }, -- Tome of Sacrifice
 				["sourceQuests"] = {
 					49694,	-- Turn to Drust (A)
 					49944,	-- Turn to Drust (H)
 				},
-				["provider"] = { "o", 279647 }, -- Tome of Sacrifice
 				["coord"] = { 20.6, 44, DRUSTVAR },
-				["g"] = {
+				["groups"] = {
 					r(259665), -- Blood Contract: Sacrifice
 				},
 			})),
 			q(49874, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, { -- By the Book
+				["qg"] = 131657,	-- Bloodshed Compendium
 				["sourceQuest"] = 49873,	-- Sacrificial Writes
-				["provider"] = { "n", 131657 }, -- Bloodshed Compendium
 				["coord"] = { 20.7, 44, DRUSTVAR },
 				["maps"] = { 1407 }, -- Prison of Ink (Scenario Map)
-				["g"] = {
+				["groups"] = {
 					r(292012), -- Blood Contract: Bloodshed
 				},
 			})),
 			q(49876, { -- Lines in the Sand (A)
+				["qg"] = 131386,	-- Kronah
 				["sourceQuest"] = 49874,	-- By the Book
-				["provider"] = { "n", 131386 }, -- Kronah
 				["coord"] = { 20.6, 44, DRUSTVAR },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.1.5" },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49946, { -- Lines in the Sand (H)
+				["qg"] = 131386,	-- Kronah
 				["sourceQuest"] = 49874,	-- By the Book
-				["provider"] = { "n", 131386 }, -- Kronah
 				["coord"] = { 20.6, 44, DRUSTVAR },
-				["races"] = HORDE_ONLY,
 				["timeline"] = { "added 8.1.5" },
+				["races"] = HORDE_ONLY,
 			}),
 			q(49877, { -- Temple of Sethraliss: Booking on a Favor
+				["qg"] = 150318,	-- Veriss
 				["sourceQuests"] = {
 					49876,	-- Lines in the Sand (A)
 					49946,	-- Lines in the Sand (H)
 				},
-				["provider"] = { "n", 150318 }, -- Veriss
 				["coord"] = { 27.6, 52.3, VOLDUN },
 				["maps"] = { 1038, 1043 }, -- Temple of Sethraliss
 				["timeline"] = { "added 8.1.5" },
 			}),
 			q(49879, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, { -- Brush With Death
-				["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
 				["provider"] = { "o", 279645 }, -- Tome of Oblivion
+				["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
 				["coord"] = { 27.6, 52.3, VOLDUN },
-				["g"] = {
+				["groups"] = {
 					r(292322), -- Blood Contract: Oblivion
 				},
 			})),
 			q(49878, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, { --Penning In Protection
-				["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
 				["provider"] = { "o", 279646 }, -- Bloodguard Chronicles
+				["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
 				["coord"] = { 27.6, 52.2, VOLDUN },
-				["g"] = {
+				["groups"] = {
 					r(292320), -- Blood Contract: Bloodguard
 				},
 			})),
 			q(49881, { -- The Final Verse
+				["qg"] = 150318,	-- Veriss
 				["sourceQuests"] = {
 					49878, -- Penning In Protection
 					49879, -- Brush With Death
 				},
-				["provider"] = { "n", 150318 }, -- Veriss
 				["coord"] = { 27.6, 52.3, VOLDUN },
 				["timeline"] = { "added 8.1.5" },
 			}),
 			q(49882, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, { -- A Test of Quills
+				["qg"] = 131397,	-- Miju
 				["sourceQuest"] = 49881,	-- The Final Verse
-				["provider"] = { "n", 131397 }, -- Miju
 				["coord"] = { 32.6, 86, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					r(256301),	-- Sanguine Feather Quill of Lana'thel
 				},
 			})),
