@@ -236,17 +236,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(193873),	-- Pattern: Old Spirit's Wristwraps (RECIPE!)
 					i(193881),	-- Pattern: Scale Rein Grips (RECIPE!)
 					i(193872),	-- Pattern: String of Spiritual Knick-Knacks (RECIPE!)
-					i(205140),	-- Pattern: Undulating Sporecloak (RECIPE!)
 					i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
 					i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
 					i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
-					i(205145),	-- Plans: Shadowed Impact Buckler (RECIPE!)
-					i(205144),	-- Plans: Shadowed Razing Annihilator (RECIPE!)
 					i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
 					i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 				},
 			}),
 			n(DROPS, {
+				-- Please don't touch this until we have 'Any Difficulty' tech available... I don't want to re-do all the work of deleting the duplication
 				i(204255, {	-- Cracked Titan Gem
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 				}),
@@ -261,6 +259,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 				i(204968, {	-- Pattern: Shadowflame-Tempered Armor Patch (RECIPE!)
 					["crs"] = { 203133 },	-- Echo of Neltharion
+				}),
+				i(205140, {	-- Pattern: Undulating Sporecloak (RECIPE!)
+					["crs"] = {
+						200912,	-- The Forgotten Experiments - Neldris <Experiment 4>
+						200918,	-- The Forgotten Experiments - Rionthus <Experiment 328>
+						200913,	-- The Forgotten Experiments - Thadrion <Experiment 147>
+					},
+				}),
+				i(205145, {	-- Plans: Shadowed Impact Buckler (RECIPE!)
+					["crs"] = { 201261 },	-- Kazzara, the Hellforged
+				}),
+				i(205144, {	-- Plans: Shadowed Razing Annihilator (RECIPE!)
+					["crs"] = { 201320 },	-- Rashok, the Elder
 				}),
 				i(204696, {	-- Recipe: Draconic Phial Cauldron (RECIPE!)
 					["crs"] = {
