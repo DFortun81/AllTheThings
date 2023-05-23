@@ -214,9 +214,11 @@ root(ROOTS.ExpansionFeatures, tier(TBC_TIER, bubbleDown({ ["timeline"] = { "adde
 			crit(3747, {	-- Shore Crab (Borean Tundra, Azshara, The Lost Isles, Twilight Highlands, Northern Stranglethorn, Dragonblight, The Cape of Stranglethorn, Blackfathom Deeps)
 				["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, BOREAN_TUNDRA, AZSHARA, STRANGLETHORN_VALE, BLACKFATHOM_DEEPS },
 				["crs"] = {
+					-- #if BEFORE 5.0.1.15544
 					6827,	-- Crab
-					-- #if AFTER 5.0.1.15544
-					61158,	-- Shore Crab
+					-- #else
+					60761,	-- Shore Crab
+					61158,	-- Shore Crab (Battle Pet)
 					-- #endif
 				},
 			}),
