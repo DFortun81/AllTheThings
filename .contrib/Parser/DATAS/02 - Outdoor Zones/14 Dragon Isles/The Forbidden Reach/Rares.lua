@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(200537, {	-- Gahz'raxes
 				["description"] = "In an underwater Cave. Western waypoint is the entrance.",
-				["coords"] = { 
+				["coords"] = {
 					{ 25.5, 38.0, THE_FORBIDDEN_REACH },	-- Gahz
 					{ 26.8, 41.3, THE_FORBIDDEN_REACH },	-- Cave Entrance
 				},
