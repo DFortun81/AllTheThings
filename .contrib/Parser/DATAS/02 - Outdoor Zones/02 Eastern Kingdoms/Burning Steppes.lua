@@ -49,12 +49,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = {{"select","speciesID",
 					393,	-- Cockroach (PET!)
 					415,	-- Fire Beetle (PET!)
-					429,	-- Lava Beetle (PET!)
 					423,	-- Lava Crab (PET!)
 					414,	-- Scorpid (PET!)
 				}},
 				["groups"] = {
 					pet(425),	-- Ash Viper (PET!)
+					pet(429),	-- Lava Beetle (PET!)
 				},
 			})),
 			-- #endif

@@ -971,208 +971,208 @@ n(88357, 1591);		-- Violet Firefly
 n(88355, 1593);		-- Waterfly
 n(88466, 1582);		-- Zangar Crawler
 -- TRAINER --
-n(0, 872);		-- Slither
-n(0, 873);		-- Fangs
-n(0, 874);		-- Teensy
-n(0, 875);		-- Clucks
-n(0, 876);		-- Foe Reaper 800
-n(0, 877);		-- Flipsy
-n(0, 878);		-- Dipsy
-n(0, 879);		-- Flufftail
-n(0, 880);		-- Darkwidow
-n(0, 881);		-- Blackfang
-n(0, 882);		-- Webwinder
-n(0, 883);		-- Emeralda
-n(0, 884);		-- Moonstalker
-n(0, 885);		-- Nanners
-n(0, 886);		-- Young Beaky
-n(0, 887);		-- Eyegouger
-n(0, 888);		-- Burgle
-n(0, 889);		-- Mumtar
-n(0, 890);		-- Spike
-n(0, 891);		-- Ripper
-n(0, 892);		-- Springtail
-n(0, 893);		-- Longneck
-n(0, 894);		-- Flutterby
-n(0, 895);		-- Oozer
-n(0, 896);		-- Mister Pinch
 n(0, 897);		-- Acidous
-n(0, 898);		-- Odoron
-n(0, 899);		-- Constrictor
-n(0, 900);		-- Rockhide
+n(0, 1301);		-- Alex
 n(0, 901);		-- Ambershell
-n(0, 902);		-- Bounder
-n(0, 904);		-- Prancer
-n(0, 905);		-- Rasp
-n(0, 906);		-- Glimmer
-n(0, 907);		-- Whirls
-n(0, 908);		-- Cluckatron
-n(0, 909);		-- Gizmo
-n(0, 911);		-- Firetooth
-n(0, 912);		-- Flameclaw
-n(0, 913);		-- Blaze
-n(0, 915);		-- Cho'guana
-n(0, 916);		-- Plague
-n(0, 917);		-- Indigon
-n(0, 921);		-- Ultramus
-n(0, 922);		-- Beamer
-n(0, 923);		-- Hatewalker
-n(0, 924);		-- Lacewing
-n(0, 925);		-- Beacon
-n(0, 926);		-- Willow
-n(0, 927);		-- Blizzy
-n(0, 928);		-- Frostmaw
-n(0, 929);		-- Tinygos
-n(0, 931);		-- Plop
-n(0, 932);		-- Corpsefeeder
-n(0, 933);		-- Subject 142
-n(0, 934);		-- Plaguebringer
-n(0, 935);		-- Bleakspinner
-n(0, 936);		-- Carrion
-n(0, 937);		-- Obsidion
-n(0, 938);		-- Veridia
-n(0, 939);		-- Garnestrasz
-n(0, 941);		-- Anklor
-n(0, 942);		-- Croaker
-n(0, 943);		-- Dampwing
-n(0, 944);		-- Moltar
-n(0, 945);		-- Ignious
-n(0, 946);		-- Comet
-n(0, 947);		-- Nightstalker
-n(0, 948);		-- Bishibosh
-n(0, 949);		-- Jack
-n(0, 950);		-- Sploder
-n(0, 951);		-- Goliath
-n(0, 952);		-- ED-005
-n(0, 953);		-- Fungor
-n(0, 954);		-- Tripod
-n(0, 955);		-- Glitterfly
-n(0, 956);		-- Stompy
-n(0, 957);		-- Dramaticus
-n(0, 958);		-- Prince Wart
-n(0, 959);		-- Cragmaw
-n(0, 960);		-- Gnasher
-n(0, 961);		-- Chomps
-n(0, 962);		-- Netherbite
-n(0, 963);		-- Jadefire
-n(0, 964);		-- Arcanus
-n(0, 965);		-- Warble
-n(0, 966);		-- Gobbles
-n(0, 967);		-- Dinner
-n(0, 968);		-- Mort
-n(0, 969);		-- Stitch
-n(0, 970);		-- Spooky Strangler
-n(0, 971);		-- Rot
-n(0, 972);		-- Sleet
-n(0, 973);		-- Drogar
-n(0, 974);		-- Blight
-n(0, 975);		-- Fleshrender
-n(0, 976);		-- Cadavus
-n(0, 977);		-- Bloom
-n(0, 978);		-- Beakmaster X-225
-n(0, 979);		-- Grizzle
-n(0, 980);		-- Incinderous
-n(0, 981);		-- Ashtail
-n(0, 982);		-- Kali
-n(0, 983);		-- Fracture
-n(0, 984);		-- Crystallus
-n(0, 985);		-- Ruby
-n(0, 986);		-- Helios
 n(0, 987);		-- Amythel
-n(0, 988);		-- Twilight
-n(0, 989);		-- Clatter
-n(0, 990);		-- Spring
-n(0, 991);		-- Pyth
-n(0, 992);		-- Dor the Wall
-n(0, 993);		-- Fangor
-n(0, 994);		-- Skyshaper
-n(0, 995);		-- Brood of Mothallus
-n(0, 996);		-- Toothbreaker
-n(0, 997);		-- Siren
-n(0, 998);		-- Woodcarver
-n(0, 999);		-- Needleback
-n(0, 1000);		-- Lightstalker
-n(0, 1001);		-- Bleat
-n(0, 1002);		-- Lapin
-n(0, 1003);		-- Piqua
-n(0, 1004);		-- Skimmer
-n(0, 1005);		-- Mollus
-n(0, 1006);		-- Diamond
-n(0, 1007);		-- Mutilator
-n(0, 1008);		-- Pounder
-n(0, 1009);		-- Crusher
-n(0, 1010);		-- Whiskers
-n(0, 1011);		-- Stormlash
-n(0, 1012);		-- Chirrup
-n(0, 1065);		-- Judgment
-n(0, 1066);		-- Fezwick
-n(0, 1067);		-- Honky-Tonk
-n(0, 1068);		-- Crow
-n(0, 1129);		-- Ka'wi the Gorger
-n(0, 1130);		-- Crimson
-n(0, 1131);		-- Glowy
-n(0, 1132);		-- Marley
-n(0, 1133);		-- Tiptoe
-n(0, 1134);		-- Sludgy
-n(0, 1135);		-- Dusty
-n(0, 1136);		-- Whispertail
-n(0, 1137);		-- Darnak the Tunneler
-n(0, 1138);		-- Pandaren Water Spirit
-n(0, 1139);		-- Pandaren Fire Spirit
-n(0, 1140);		-- Pandaren Air Spirit
-n(0, 1141);		-- Pandaren Earth Spirit
-n(0, 1187);		-- Gorespine
-n(0, 1188);		-- No-No
-n(0, 1189);		-- Greyhoof
-n(0, 1190);		-- Lucky Yi
-n(0, 1191);		-- Ti'un the Wanderer
-n(0, 1192);		-- Kafi
-n(0, 1193);		-- Dos-Ryga
-n(0, 1194);		-- Nitun
-n(0, 1195);		-- Skitterer Xi'a
-n(0, 1238);		-- Unborn Val'kyr
-n(0, 1247);		-- Doopy
-n(0, 1257);		-- Crafty
 n(0, 1258);		-- Angara
-n(0, 1259);		-- Widowling
-n(0, 1267);		-- Xu-Fu, Cub of Xuen
-n(0, 1268);		-- Trike
-n(0, 1269);		-- Screamer
-n(0, 1271);		-- Chaos
-n(0, 1277);		-- Lil' B
+n(0, 941);		-- Anklor
+n(0, 964);		-- Arcanus
+n(0, 981);		-- Ashtail
 n(0, 1278);		-- Au
 n(0, 1279);		-- Banks
-n(0, 1280);		-- Brewly
-n(0, 1281);		-- Chirps
-n(0, 1282);		-- Tonsa
-n(0, 1283);		-- Knowledge
-n(0, 1284);		-- Patience
-n(0, 1285);		-- Wisdom
-n(0, 1286);		-- Summer
-n(0, 1287);		-- Stormoen
-n(0, 1288);		-- Nairn
-n(0, 1289);		-- Monte
-n(0, 1290);		-- Rikki
-n(0, 1291);		-- Socks
+n(0, 925);		-- Beacon
+n(0, 978);		-- Beakmaster X-225
+n(0, 922);		-- Beamer
+n(0, 948);		-- Bishibosh
+n(0, 881);		-- Blackfang
+n(0, 913);		-- Blaze
+n(0, 935);		-- Bleakspinner
+n(0, 1001);		-- Bleat
+n(0, 974);		-- Blight
+n(0, 927);		-- Blizzy
+n(0, 977);		-- Bloom
 n(0, 1292);		-- Bolo
-n(0, 1293);		-- Li
-n(0, 1295);		-- Yen
+n(0, 902);		-- Bounder
+n(0, 1280);		-- Brewly
+n(0, 995);		-- Brood of Mothallus
+n(0, 888);		-- Burgle
+n(0, 976);		-- Cadavus
 n(0, 1296);		-- Carpe Diem
-n(0, 1297);		-- River
-n(0, 1298);		-- Spirus
-n(0, 1299);		-- Cindy
-n(0, 1300);		-- Dah'da
-n(0, 1301);		-- Alex
+n(0, 936);		-- Carrion
+n(0, 1271);		-- Chaos
 n(0, 1311);		-- Chi-Chi, Hatchling of Chi-Ji
+n(0, 1281);		-- Chirps
+n(0, 1012);		-- Chirrup
+n(0, 915);		-- Cho'guana
+n(0, 961);		-- Chomps
+n(0, 1299);		-- Cindy
+n(0, 989);		-- Clatter
+n(0, 908);		-- Cluckatron
+n(0, 875);		-- Clucks
+n(0, 946);		-- Comet
+n(0, 899);		-- Constrictor
+n(0, 932);		-- Corpsefeeder
+n(0, 1257);		-- Crafty
+n(0, 959);		-- Cragmaw
+n(0, 1130);		-- Crimson
+n(0, 942);		-- Croaker
+n(0, 1068);		-- Crow
+n(0, 1009);		-- Crusher
+n(0, 984);		-- Crystallus
+n(0, 1300);		-- Dah'da
+n(0, 943);		-- Dampwing
+n(0, 880);		-- Darkwidow
+n(0, 1137);		-- Darnak the Tunneler
+n(0, 1400);		-- Deebs
+n(0, 1006);		-- Diamond
+n(0, 967);		-- Dinner
+n(0, 878);		-- Dipsy
+n(0, 1247);		-- Doopy
+n(0, 992);		-- Dor the Wall
+n(0, 1193);		-- Dos-Ryga
+n(0, 957);		-- Dramaticus
+n(0, 973);		-- Drogar
+n(0, 1135);		-- Dusty
+n(0, 952);		-- ED-005
+n(0, 1409);		-- Eleanor
+n(0, 883);		-- Emeralda
+n(0, 887);		-- Eyegouger
+n(0, 993);		-- Fangor
+n(0, 873);		-- Fangs
+n(0, 1066);		-- Fezwick
+n(0, 911);		-- Firetooth
+n(0, 912);		-- Flameclaw
+n(0, 975);		-- Fleshrender
+n(0, 877);		-- Flipsy
+n(0, 879);		-- Flufftail
+n(0, 894);		-- Flutterby
+n(0, 876);		-- Foe Reaper 800
+n(0, 983);		-- Fracture
+n(0, 928);		-- Frostmaw
+n(0, 953);		-- Fungor
+n(0, 939);		-- Garnestrasz
+n(0, 909);		-- Gizmo
+n(0, 906);		-- Glimmer
+n(0, 955);		-- Glitterfly
+n(0, 1131);		-- Glowy
+n(0, 960);		-- Gnasher
+n(0, 966);		-- Gobbles
+n(0, 951);		-- Goliath
+n(0, 1187);		-- Gorespine
+n(0, 1189);		-- Greyhoof
+n(0, 979);		-- Grizzle
+n(0, 923);		-- Hatewalker
+n(0, 986);		-- Helios
+n(0, 1067);		-- Honky-Tonk
+n(0, 945);		-- Ignious
+n(0, 980);		-- Incinderous
+n(0, 917);		-- Indigon
+n(0, 949);		-- Jack
+n(0, 963);		-- Jadefire
+n(0, 1065);		-- Judgment
+n(0, 1129);		-- Ka'wi the Gorger
+n(0, 1192);		-- Kafi
+n(0, 982);		-- Kali
+n(0, 1283);		-- Knowledge
+n(0, 924);		-- Lacewing
+n(0, 1002);		-- Lapin
+n(0, 1293);		-- Li
+n(0, 1000);		-- Lightstalker
+n(0, 1277);		-- Lil' B
+n(0, 1339);		-- Lil' Oondasta
+n(0, 893);		-- Longneck
+n(0, 1352);		-- Lord Piglet
+n(0, 1190);		-- Lucky Yi
+n(0, 1132);		-- Marley
+n(0, 1404);		-- Mechanical Scorpid
+n(0, 896);		-- Mister Pinch
+n(0, 1005);		-- Mollus
+n(0, 944);		-- Moltar
+n(0, 1289);		-- Monte
+n(0, 884);		-- Moonstalker
+n(0, 968);		-- Mort
+n(0, 889);		-- Mumtar
+n(0, 1007);		-- Mutilator
+n(0, 1288);		-- Nairn
+n(0, 885);		-- Nanners
+n(0, 999);		-- Needleback
+n(0, 962);		-- Netherbite
+n(0, 947);		-- Nightstalker
+n(0, 1194);		-- Nitun
+n(0, 1188);		-- No-No
+n(0, 937);		-- Obsidion
+n(0, 898);		-- Odoron
+n(0, 895);		-- Oozer
+n(0, 1140);		-- Pandaren Air Spirit
+n(0, 1141);		-- Pandaren Earth Spirit
+n(0, 1139);		-- Pandaren Fire Spirit
+n(0, 1138);		-- Pandaren Water Spirit
+n(0, 1284);		-- Patience
+n(0, 1003);		-- Piqua
+n(0, 916);		-- Plague
+n(0, 934);		-- Plaguebringer
+n(0, 931);		-- Plop
+n(0, 1008);		-- Pounder
+n(0, 904);		-- Prancer
+n(0, 958);		-- Prince Wart
+n(0, 1402);		-- Puzzle
+n(0, 991);		-- Pyth
+n(0, 905);		-- Rasp
+n(0, 1290);		-- Rikki
+n(0, 891);		-- Ripper
+n(0, 1297);		-- River
+n(0, 900);		-- Rockhide
+n(0, 971);		-- Rot
+n(0, 985);		-- Ruby
+n(0, 1269);		-- Screamer
+n(0, 997);		-- Siren
+n(0, 1004);		-- Skimmer
+n(0, 1195);		-- Skitterer Xi'a
+n(0, 994);		-- Skyshaper
+n(0, 972);		-- Sleet
+n(0, 872);		-- Slither
+n(0, 1134);		-- Sludgy
+n(0, 1291);		-- Socks
+n(0, 890);		-- Spike
+n(0, 1298);		-- Spirus
+n(0, 950);		-- Sploder
+n(0, 990);		-- Spring
+n(0, 892);		-- Springtail
+n(0, 970);		-- Spooky Strangler
+n(0, 969);		-- Stitch
+n(0, 956);		-- Stompy
+n(0, 1287);		-- Stormoen
+n(0, 1011);		-- Stormlash
+n(0, 933);		-- Subject 142
+n(0, 1286);		-- Summer
+n(0, 874);		-- Teensy
+n(0, 1191);		-- Ti'un the Wanderer
+n(0, 929);		-- Tinygos
+n(0, 1133);		-- Tiptoe
+n(0, 1282);		-- Tonsa
+n(0, 996);		-- Toothbreaker
+n(0, 1268);		-- Trike
+n(0, 954);		-- Tripod
+n(0, 988);		-- Twilight
+n(0, 1401);		-- Tyri
+n(0, 921);		-- Ultramus
+n(0, 1238);		-- Unborn Val'kyr
+n(0, 938);		-- Veridia
+n(0, 965);		-- Warble
+n(0, 882);		-- Webwinder
+n(0, 907);		-- Whirls
+n(0, 1010);		-- Whiskers
+n(0, 1136);		-- Whispertail
+n(0, 1259);		-- Widowling
+n(0, 926);		-- Willow
+n(0, 1285);		-- Wisdom
+n(0, 998);		-- Woodcarver
+n(0, 1267);		-- Xu-Fu, Cub of Xuen
+n(0, 1295);		-- Yen
+n(0, 886);		-- Young Beaky
 n(0, 1317);		-- Yu'la, Broodling of Yu'lon
 n(0, 1319);		-- Zao, Calfling of Niuzao
-n(0, 1339);		-- Lil' Oondasta
-n(0, 1352);		-- Lord Piglet
-n(0, 1400);		-- Deebs
-n(0, 1401);		-- Tyri
-n(0, 1402);		-- Puzzle
-n(0, 1404);		-- Mechanical Scorpid
-n(0, 1409);		-- Eleanor
 
 
 -----------------
@@ -2037,10 +2037,10 @@ i(0, 2488);			-- Pulverizer Bot Mk 6001
 i(0, 2499);			-- Sludge Disposal Unit
 i(0, 2497);			-- Ultra Safe Napalm Carrier
 -- NYI --
-i(0, 2481);			-- Unknown
+i(166791, 0);		-- Corlain Falcon
 i(166358, 2541);	-- Proper Parrot
 i(164629, 2480);	-- Test Pet
-i(166791, 0);		-- Corlain Falcon
+i(0, 2481);			-- Unknown
 
 -----------------
 -- PATCH 8.1.5 --
@@ -2133,37 +2133,37 @@ i(169366, 2700);	-- Wriggler
 i(169348, 2680);	-- Zanj'ir Poker
 i(169678, 2748);	-- Ziggy
 -- NPC --
-n(154697, 2645);	-- Sandclaw Pincher
-n(154702, 2646);	-- Sandclaw Sunshell
-n(154704, 2647);	-- Glimmershell Scuttler
-n(154706, 2648);	-- Chitterspine Skitterling
-n(154708, 2649);	-- Hissing Chitterspine
-n(154710, 2650);	-- Great Sea Albatross
-n(154712, 2651);	-- Deeptide Fingerling
-n(154714, 2652);	-- Bloodseeker
-n(154716, 2653);	-- Spireshell Snail
+n(154814, 2678);	-- Abyssal Slitherling
+n(154789, 2672);	-- Alloyed Alleyrat
 n(154718, 2657);	-- Blackchasm Crawler
+n(154714, 2652);	-- Bloodseeker
 n(154720, 2658);	-- Chitterspine Deepstalker
-n(154722, 2659);	-- Trench Slug
-n(154724, 2660);	-- Muck Slug
-n(154767, 2661);	-- Rustyroot Snooter
+n(154706, 2648);	-- Chitterspine Skitterling
+n(154796, 2675);	-- Clanking Scrapsorter
+n(154781, 2668);	-- Copper Hopper
+n(154712, 2651);	-- Deeptide Fingerling
 n(154769, 2662);	-- Duskytooth Snooter
-n(154771, 2663);	-- Junkheap Roach
 n(154773, 2664);	-- Experimental Roach
 n(154775, 2665);	-- Fleeting Frog
-n(154777, 2666);	-- Yellow Junkhopper
-n(154779, 2667);	-- Motorized Croaker
-n(154781, 2668);	-- Copper Hopper
-n(154783, 2669);	-- Rustbolt Clucker
-n(154785, 2670);	-- Mechagon Marmot
-n(154787, 2671);	-- Specimen 97
-n(154789, 2672);	-- Alloyed Alleyrat
-n(154791, 2673);	-- Scrapyard Tunneler
+n(154704, 2647);	-- Glimmershell Scuttler
+n(154710, 2650);	-- Great Sea Albatross
 n(154794, 2674);	-- H4ND-EE
-n(154796, 2675);	-- Clanking Scrapsorter
+n(154708, 2649);	-- Hissing Chitterspine
+n(154771, 2663);	-- Junkheap Roach
 n(154798, 2676);	-- Malfunctioning Microbot
+n(154785, 2670);	-- Mechagon Marmot
+n(154779, 2667);	-- Motorized Croaker
+n(154724, 2660);	-- Muck Slug
+n(154783, 2669);	-- Rustbolt Clucker
+n(154767, 2661);	-- Rustyroot Snooter
+n(154697, 2645);	-- Sandclaw Pincher
+n(154702, 2646);	-- Sandclaw Sunshell
+n(154791, 2673);	-- Scrapyard Tunneler
+n(154787, 2671);	-- Specimen 97
+n(154716, 2653);	-- Spireshell Snail
+n(154722, 2659);	-- Trench Slug
 n(154803, 2677);	-- Twilight Whelpling
-n(154814, 2678);	-- Abyssal Slitherling
+n(154777, 2666);	-- Yellow Junkhopper
 -- TRAINER --
 i(0, 2609);			-- Belchling
 i(0, 2592);			-- Blackmane

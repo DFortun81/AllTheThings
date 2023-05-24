@@ -557,7 +557,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6038),	-- Giant Clam Scorcho
 			i(5527),	-- Goblin Deviled Clams
 			i(10841, {	-- Goldthorn Tea
-				["timeline"] = { "removed 6.0.1" },
+				["timeline"] = { "removed 6.0.1", ADDED_10_0_5 },
 			}),
 			i(3666),	-- Gooey Spider Cake
 			i(724),		-- Goretusk Liver Pie
