@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 				i(205966, {	-- Cache of Aberrus Treasures (N)
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 					["sym"] = {
-						{"select", "instanceID", 1208},			-- Vault of the Incarnates
+						{"select", "instanceID", 1208},			-- Aberrus, the Shadowed Crucible
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
 						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 				i(205967, {	-- Cache of Aberrus Treasures (H)
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 					["sym"] = {
-						{"select", "instanceID", 1208},			-- Vault of the Incarnates
+						{"select", "instanceID", 1208},			-- Aberrus, the Shadowed Crucible
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
 						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.

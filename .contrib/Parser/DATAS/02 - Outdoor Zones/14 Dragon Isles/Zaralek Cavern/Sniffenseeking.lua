@@ -140,6 +140,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205969),	-- Glowing Key
 						},
 					}),
+					q(76016, {  -- The Living Drill
+						["g"] = {
+							i(205941),  -- Spit-covered Key
+						},
+					}),
 				}),
 				-- Quest Starting Items... apparently random on any digs
 				n(DROPS, sharedData({
@@ -147,11 +152,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},{
 					i(205913),	-- Blank Notebook
 					i(205910),	-- Bubbling Elixir
+					i(205901),	-- Crunchy Beetle
+					i(205902),	-- Deepflayer Claw
 					i(205366),	-- Dripping Clay Pot
 					i(205912),	-- Leather-Wrapped Flask
 					i(205911),	-- Mysterious Incense
 					i(205907),	-- Soaked Totem
 					i(205909),	-- Stretched Canvas
+					i(205795),	-- Wriggling Worm
 				})),
 				n(QUESTS, {
 					-- Proof of Myrrit --
@@ -185,11 +193,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202766 },	-- Myrrit
 						["coord"] = { 54.6, 54.4, ZARALEK_CAVERN },
 					}),
-					q(76016, {  -- The Living Drill
-						["g"] = {
-							i(205941),  -- Spit-covered Key
-						},
-					}),
+
 					-- Sniffen Sage --
 					q(75772, {	-- Flask Manage
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
@@ -263,8 +267,33 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},
+					}),]]--
+
+					-- Treasurewhiskers --
+					q(75998, {	-- Crispety Crunchety
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["provider"] = { "i", 205901 },	-- Crunchy Beetle
+						--["coord"] = { x, y, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
 					}),
-					]]--
+					q(76004, {	-- Deep Cuts
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["provider"] = { "i", 205902 },	-- Deepflayer Claw
+						["coord"] = { 57.6, 56.4, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
+					q(75936, {	-- Slimy Yet Satisfying
+						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+						["provider"] = { "i", 205795 },	-- Wriggling Worm
+						["coord"] = { 56.9, 52.1, ZARALEK_CAVERN },
+						["g"] = {
+							i(204985),  -- 2x Barter Brick
+						},
+					}),
 				}),
 				n(REWARDS, {
 					i(205260),	-- Fleeting Glowspores

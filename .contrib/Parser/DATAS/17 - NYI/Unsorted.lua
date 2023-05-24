@@ -1078,12 +1078,8 @@ root(ROOTS.Unsorted, {
 				i(204172),	-- Enforcer Tera's Signet
 				i(204173),	-- Enforcer Horb's Signet
 				i(205410),	-- Pungent Morsel
-				i(205795),	-- Wriggling Worm
 				i(205900),	-- Shimmering Draconic Gem
-				i(205901),	-- Crunchy Beetle
-				i(205902),	-- Deepflayer Claw
 				i(205906),	-- Feathered Friend
-				i(205911),	-- Mysterious Incense
 				i(205994),	-- Tome of the Earth-Warder
 				i(205996),	-- Tome of the Earth-Warder
 				i(205997),	-- Tome of the Earth-Warder
