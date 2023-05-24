@@ -10,9 +10,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		["maps"] = {
 			OHNAHRAN_PLAINS,
 			THE_AZURE_SPAN,
-			VALDRAKKEN,
-			-- THE_WAKING_SHORES,
-			-- THALDRASZUS,
+			--	VALDRAKKEN,
+			--	THE_WAKING_SHORES,
+			--	THALDRASZUS,
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
