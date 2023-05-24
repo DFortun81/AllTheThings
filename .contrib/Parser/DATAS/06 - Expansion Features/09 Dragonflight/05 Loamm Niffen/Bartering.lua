@@ -28,6 +28,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["cost"] = {
 						{ "i", 191304, 10 },	-- 10x Sturdy Expedition Shovel
 					},
+					["altQuests"] = { 75288, 75304, 75289, 75309, 75351, 75301, 75307, 75308 },
 				}),
 				q(75288, {	-- Enchanted Tales with Topuiz
 					["cost"] = {
@@ -35,17 +36,20 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ "i", 200035, 5 },		-- 5x Enchant Cloak - Writ of Leech+++
 						{ "i", 200036, 5 },		-- 5x Enchant Cloak - Writ of Speed+++
 					},
+					["altQuests"] = { 75286, 75304, 75289, 75309, 75351, 75301, 75307, 75308 },
 				}),
 				q(75304, {	-- I Need... a Tailor
 					["cost"] = {
 						{ "i", 193930, 75 },	-- 75x Vibrant Wildercloth Bolt++
 					},
+					["altQuests"] = { 75286, 75288, 75289, 75309, 75351, 75301, 75307, 75308 },
 				}),
 				q(75289, {	-- Ink Master
 					["cost"] = {
 						{ "i", 198423, 30 },	-- 30x Shimmering Pigment+++
 						{ "i", 194767, 15 },	-- 15x Chilled Rune++
 					},
+					["altQuests"] = { 75286, 75288, 75304, 75309, 75351, 75301, 75307, 75308 },
 				}),
 				q(75309, {	-- If a Gem Isn't Pretty
 					["cost"] = {
@@ -53,17 +57,20 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ "i", 193370, 50 },	-- 50x Silken Gemdust+++
 						{ "i", 192861, 5 },		-- 5x Ysemerald+++
 					},
+					["altQuests"] = { 75286, 75288, 75304, 75289, 75351, 75301, 75307, 75308 },
 				}),
 				q(75351, {	-- Keep a Leather Eye Open
 					["cost"] = {
 						{ "i", 193470, 10 },	-- 10x Feral Hide Drums
 					},
+					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75301, 75307, 75308 },
 				}),
 				q(75301, {	-- Mistie's Mix Magic
 					["cost"] = {
 						{ "i", 191386, 50 },	-- 50x Aerated Mana Potion+++
 						{ "i", 191497, 15 },	-- 15x Omnium Draconis++
 					},
+					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75307, 75308 },
 				}),
 				q(75307, {	-- Road to Season City
 					["requireSkill"] = COOKING,
@@ -71,11 +78,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ "i", 197793, 40 },	-- 40x Yusa's Hearty Stew
 						{ "i", 197794, 5 },		-- 5x Grand Banquet of the Kalu'ak
 					},
+					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75301, 75308 },
 				}),
 				q(75308, {	-- Scrybbil Engineering
 					["cost"] = {
 						{ "i", 198225, 2 },		-- 2x Draconium Fisherfriend
 					},
+					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75301, 75307 },
 				}),
 			})),
 			n(VENDORS, {
