@@ -840,7 +840,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(387500, {	-- Chilly Snowman
 							["questID"] = 74757,
 							["g"] = {
-								i(17202),	-- Snowball
+							--	i(17202),	-- Snowball
+							--	Removed the snowball, otherwise we get 11 layers of currency tracking
 							},
 						}),
 						o(398778, {	-- Disgusting Vat
