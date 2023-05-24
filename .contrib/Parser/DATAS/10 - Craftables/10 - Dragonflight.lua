@@ -2144,8 +2144,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(72349, 394621);	-- Torc of Passed Time
 			FirstCraft(71608, 374495);	-- Crimson Combatant's Jeweled Amulet
 			FirstCraft(71609, 374496);	-- Crimson Combatant's Jeweled Signet
-			--FirstCraft(x, 403131, ADDED_10_1_0);	-- Obsidian Combatant's Jeweled Amulet
-			--FirstCraft(x, 403132, ADDED_10_1_0);	-- Obsidian Combatant's Jeweled Signet
+			FirstCraft(74805, 403131, ADDED_10_1_0);	-- Obsidian Combatant's Jeweled Amulet
+			FirstCraft(74806, 403132, ADDED_10_1_0);	-- Obsidian Combatant's Jeweled Signet
 			FirstCraft(71607, 376233);	-- Band of New Beginnings
 			FirstCraft(71602, 374494);	-- Pendant of Impending Perils
 			-- Statues & Carvings

@@ -739,6 +739,7 @@ i(204794);	-- Whelkshell Crystals
 i(204085);	-- Zaqali Dragonslayer's Spear
 i(203654);	-- Zaqali Flame Totem
 i(204817);	-- Underlight Cocoon Fibers
+i(203454);	-- Zaqali Equipment
 
 -- Poor Trash --
 i(205869);	-- Aromatic Royal Jelly
@@ -753,6 +754,7 @@ i(205468);	-- Hooked Tail Claw
 i(205459);	-- Luminous Gloop
 i(205698);	-- Mangled Niffen Pack
 i(205460);	-- Pulverized Living Earth
+i(205466);	-- Regurgitated Spores
 i(205699);	-- Rock Worm Frills
 i(205462);	-- Royal Nerubian Capsa
 i(205700);	-- Sensitive Scotopic Eye

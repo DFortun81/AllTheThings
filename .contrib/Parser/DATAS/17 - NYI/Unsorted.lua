@@ -919,7 +919,6 @@ root(ROOTS.Unsorted, {
 				i(205417),	-- Fungishine
 				i(205456),	-- Lost Dragonscale
 				i(205458),	-- Lost Dragonscale
-				i(205466),	-- Regurgitated Spores
 				i(205467),	-- Preserved Krolusk Crest
 				i(205472),	-- Wad of Sparkling Somethings
 				i(205691),	-- Hypnotic Murloc Lure
@@ -1046,7 +1045,6 @@ root(ROOTS.Unsorted, {
 				i(202705),	-- Snail Slime
 				i(202875),	-- Snail Lasso
 				i(203229),	-- Snail Slime
-				i(203454),	-- Zaqali Equipment
 				i(203707),	-- Water Bucket
 				i(204175),	-- Unknown Core
 				i(204197),	-- Shard of an Earth Portal
@@ -1122,8 +1120,6 @@ root(ROOTS.Unsorted, {
 				i(205454),	-- Researchers Wheel Barrow
 				-- Special
 				i(205877),	-- Adventurer's Footlocker
-				i(205966),	-- Cache of Aberrus Treasures
-				i(205967),	-- Cache of Aberrus Treasures
 				i(205999),	-- Volcanic Sculptor
 				i(205289),	-- Crimson Equipment Chest
 				-- Diablo
