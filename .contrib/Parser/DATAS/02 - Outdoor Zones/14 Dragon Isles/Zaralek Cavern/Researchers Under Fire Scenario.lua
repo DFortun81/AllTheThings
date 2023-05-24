@@ -65,6 +65,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				i(205370),	-- Researcher's Gift
 				i(205373),	-- Researcher's Scrounged Goods
 				i(205368),	-- Thankful Researcher's Gift
+				i(205367),	-- Indebted Researcher's Gift
 			}),
 		}),
 	}),
@@ -79,6 +80,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 			q(75628),	-- pop when Appreciative Researcher's Gift was awarded
 			q(75629),	-- pop when Thankful Researcher's Gift was awarded
 			q(75666),	-- pop when Appreciative Researcher's Scrounged Goods was awarded
+			q(75630),	-- pop when Indebted Researcher's Gift was awarded
 		}),
 	}),
 }));
