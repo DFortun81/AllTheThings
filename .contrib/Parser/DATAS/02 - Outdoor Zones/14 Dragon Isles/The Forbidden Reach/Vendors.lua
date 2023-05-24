@@ -64,11 +64,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(203341, {	-- Researcher Baneflare
 				["coord"] = { 35.7, 59.4, THE_FORBIDDEN_REACH },
-				["g"] = bubbleDown({
+				["g"] = bubbleDownFiltered({
 					["cost"] = { { "i", 204276, 1 } },	-- Untapped Forbidden Knowledge
 					["modID"] = 14,
 					["bonusID"] = 9344,
-				},{
+				},
+				-- only apply the bubbleDown to Items
+				function(t) return t.itemID; end,
+				{
 					n(BACK, {
 						i(199450),	-- Cape of Raging Tempests
 						i(199451),	-- Cloak of Raging Tempests
