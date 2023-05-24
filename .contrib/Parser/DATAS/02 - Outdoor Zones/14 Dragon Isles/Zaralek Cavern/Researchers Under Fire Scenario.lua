@@ -21,6 +21,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				ach(18209),	-- Nothing Stops the Research
 			}),
 			n(RARES, {
+				n(202270, { -- Animated Contaminant
+					["coord"] = { 45.5, 61.6, ZARALEK_CAVERN },
+					["questID"] = 75946,
+					["isWeekly"] = true,
+				}),
 				n(203355, {	-- Captain Reykal
 					["coord"] = { 49.2, 57.6, ZARALEK_CAVERN },
 					["questID"] = 75943,

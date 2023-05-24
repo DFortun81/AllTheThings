@@ -1079,7 +1079,6 @@ root(ROOTS.Unsorted, {
 				i(204173),	-- Enforcer Horb's Signet
 				i(205410),	-- Pungent Morsel
 				i(205900),	-- Shimmering Draconic Gem
-				i(205906),	-- Feathered Friend
 				i(205994),	-- Tome of the Earth-Warder
 				i(205996),	-- Tome of the Earth-Warder
 				i(205997),	-- Tome of the Earth-Warder

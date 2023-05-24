@@ -155,6 +155,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205901),	-- Crunchy Beetle
 					i(205902),	-- Deepflayer Claw
 					i(205366),	-- Dripping Clay Pot
+					i(205906),	-- Feathered Friend
 					i(205912),	-- Leather-Wrapped Flask
 					i(205911),	-- Mysterious Incense
 					i(205907),	-- Soaked Totem
@@ -251,18 +252,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(204985),  -- 2x Barter Brick
 						},
 					}),
-					--[[
-					q(75766, {	-- Ruby in the Rough
+					q(75768, {	-- Lucky Ducky
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
-						["provider"] = { "i", 205900 },	-- Shimmering Draconic Gem
-						["coord"] = { x, y, ZARALEK_CAVERN },
+						["provider"] = { "i", 205906 },	-- Feathered Friend
+						["coord"] = { 58.7, 50.0, ZARALEK_CAVERN },
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},
 					}),
-					q(75768, {	-- Lucky Ducky
+					--[[
+					q(75766, {	-- Ruby in the Rough
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
-						["provider"] = { "i", 205906 },	-- Feathered Friend
+						["provider"] = { "i", 205900 },	-- Shimmering Draconic Gem
 						["coord"] = { x, y, ZARALEK_CAVERN },
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
@@ -273,7 +274,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75998, {	-- Crispety Crunchety
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205901 },	-- Crunchy Beetle
-						--["coord"] = { x, y, ZARALEK_CAVERN },
+						["coord"] = { 57.3, 49.3, ZARALEK_CAVERN },
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},

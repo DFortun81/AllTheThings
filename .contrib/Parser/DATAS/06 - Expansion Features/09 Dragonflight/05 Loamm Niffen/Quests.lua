@@ -141,6 +141,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 205127 },	-- Newsy
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
 			}),
+				-- RENOWN 17 --
+			q(75741, {	-- Bundle of Boulders
+				["minReputation"] = { 2564, 17 },	-- Loamm Niffen Renown 17
+				["provider"] = { "n", 205127 },	-- Newsy
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
+				["g"] = {
+					i(205188),	-- 10x Barter Boulder
+				}
+			}),
 
 				-- RENOWN 20 --
 			q(75744, {	-- A Token of Our Gratitude
