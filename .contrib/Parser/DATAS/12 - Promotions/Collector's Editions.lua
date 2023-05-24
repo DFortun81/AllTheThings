@@ -340,13 +340,20 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			i(76062),	-- Fetish Shaman (PET!)
 		},
 	}),
-
 	n(-575, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Diablo III: Reaper of Souls
 		["description"] = "These rewards are available to anyone who purchases the Diablo III: Reaper of Souls Collector's Edition.",
 		["timeline"] = { "added 5.4.2.17585" },
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin
 			i(106256),	-- Treasure Goblin (PET!)
+		},
+	})),
+	n(-585, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, { -- Diablo IV
+		["timeline"] = { "added 10.0.2.46999" },
+		["description"] = "Granted to owners of Diablo IV Base Version.",
+		["groups"] = {
+			i(191114),	-- Amalgam of Rage (MOUNT!)
+			ach(15640),	-- Return to Darkness
 		},
 	})),
 	n(-568, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Overwatch: Origins
