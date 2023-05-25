@@ -58,9 +58,15 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 			}),
 			n(205722, {	-- Demon Portal
 				["coords"] = { 
-					{ 64.3, 30.4, THE_AZURE_SPAN },
+					{ 68.3, 40.8, ORGRIMMAR },
 					{ 50.6, 85.6, STORMWIND_CITY },
 					{ 54.7, 54.4, STORMWIND_CITY },
+					{ 55.2, 79.4, THALDRASZUS },
+					{ 58.8, 78.2, THALDRASZUS },
+					{ 64.3, 30.4, THE_AZURE_SPAN },
+					{ 26.7, 56.8, VALKDRAKKEN },
+					{ 54.3, 78.6, VALKDRAKKEN },
+					{ 57.5, 20.1, VALKDRAKKEN },
 				};
 				["description"] = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone & or in a Capital, causing a Treasure Goblin to spawn after 5 minutes.",
 				["groups"] = {
@@ -85,6 +91,8 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 							i(206007),	-- Treasure Nabbin Bag
 							i(142542),	-- Tome of Town Portal (TOY!)
 							i(143543),	-- Twelve String Guitar (TOY!)
+							i(76755, {	-- Tyrael's Charger (MOUNT!)
+							}),
 							i(206275),	-- Wirt's Fightin' Leg (BOE)
 							i(206276),	-- Wirt's Haunted Leg (BOE)
 							i(206005),	-- Wirt's Last Leg (BOE)
