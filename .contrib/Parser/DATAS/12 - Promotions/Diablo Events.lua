@@ -51,31 +51,44 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 		-- Event begins on May 25, 2023, and ends on June 13, 2023. 
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(18258),	--	Little Lord of Lies
+				ach(18258, {	--	Little Lord of Lies
+					["provider"] = { "i", 206018 },	-- Baa'lial Soulstone
+					["filterID"] = PETS,
+				}),
 			}),
 			n(205722, {	-- Demon Portal
-				["coord"] = { 64.3, 30.4, THE_AZURE_SPAN },
-				-- OG
-				-- SW
-				["description"] = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone & or in a Capital, causing a Treasure Goblin after 5 minutes.",
+				["coords"] = { 
+					{ 64.3, 30.4, THE_AZURE_SPAN },
+					{ 50.6, 85.6, STORMWIND_CITY },
+					{ 54.7, 54.4, STORMWIND_CITY },
+				};
+				["description"] = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone & or in a Capital, causing a Treasure Goblin to spawn after 5 minutes.",
 				["groups"] = {
 					n(205490, {	-- Treasure Goblin
-						i(206018),	-- Baa'lial Soulstone
-						i(206039, {	-- Enmity Bundle
-							i(206004),	-- Enmity Cloak
-							i(206020),	-- Enmity Hood
-						}),
-						i(206003),	-- Horadric Haversack (BAG)
-						i(142548),	-- Large Charm of Dexterity
-						i(206274),	-- Large Charm of Intelligence
-						i(142547),	-- Large Charm of Strength
-						i(143327),	-- Lovestock Lochaber Axe
-						i(206008),	-- Nightmare Banner
-						i(142549),	-- Serpent's Grand Charm
-						i(142546),	-- Small Charm of Inertia
-						i(142551),	-- Stalwart's Grand Charm
-						i(206007),	-- Treasure Nabbin Bag
-						i(206005),	-- Wirt's Last Leg (BOE)
+						["questID"] = 76215,
+						["isDaily"] = true,
+						["groups"] = {
+							i(206018),	-- Baa'lial Soulstone
+							i(206039, {	-- Enmity Bundle
+								i(206004),	-- Enmity Cloak
+								i(206020),	-- Enmity Hood
+							}),
+							i(206003),	-- Horadric Haversack (BAG)
+							i(142548),	-- Large Charm of Dexterity
+							i(206274),	-- Large Charm of Intelligence
+							i(142547),	-- Large Charm of Strength
+							i(143327),	-- Lovestock Lochaber Axe
+							i(206008),	-- Nightmare Banner (TOY!)
+							i(142549),	-- Serpent's Grand Charm
+							i(142546),	-- Small Charm of Inertia
+							i(142551),	-- Stalwart's Grand Charm
+							i(206007),	-- Treasure Nabbin Bag
+							i(142542),	-- Tome of Town Portal (TOY!)
+							i(143543),	-- Twelve String Guitar (TOY!)
+							i(206275),	-- Wirt's Fightin' Leg (BOE)
+							i(206276),	-- Wirt's Haunted Leg (BOE)
+							i(206005),	-- Wirt's Last Leg (BOE)
+						},
 					}),
 				},
 			}),
