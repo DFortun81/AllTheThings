@@ -393,11 +393,17 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 						},
 						{
 							["itemID"] = 21106,	-- Draconic for Dummies [Chapter IV]
+							["provider"] = { "o", 180666 },	-- Draconic for Dummies
 							["coord"] = { 77, 38, UNDERCITY },
 						},
 						{
 							["itemID"] = 21107,	-- Draconic for Dummies [Chapter V]
+							["provider"] = { "o", 180665 },	-- Draconic for Dummies
+							-- #if AFTER WRATH
+							["coord"] = { 75.35, 29.73, STORMWIND_CITY },
+							-- #else
 							["coord"] = { 72, 6, STORMWIND_CITY },
+							-- #endif
 						},
 						{
 							["itemID"] = 21108,	-- Draconic for Dummies [Chapter VI]
@@ -405,7 +411,9 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 						},
 						{
 							["itemID"] = 21109,	-- Draconic for Dummies [Chapter VII]
+							["provider"] = { "o", 180667 },	-- Draconic for Dummies
 							["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
+							["coord"] = { 32, 42.9, BLACKWING_LAIR },
 						},
 						{
 							["itemID"] = 21110,	-- Draconic for Dummies [Chapter VIII]
