@@ -60,9 +60,11 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 					{ 68.3, 40.8, ORGRIMMAR },
 					{ 50.6, 85.6, STORMWIND_CITY },
 					{ 54.7, 54.4, STORMWIND_CITY },
+					-- Plains here
 					{ 55.2, 79.4, THALDRASZUS },
 					{ 58.8, 78.2, THALDRASZUS },
 					{ 64.3, 30.4, THE_AZURE_SPAN },
+					-- Waking Shores here
 					{ 26.7, 56.8, VALDRAKKEN },
 					{ 54.3, 78.6, VALDRAKKEN },
 					{ 57.5, 20.1, VALDRAKKEN },
@@ -86,6 +88,7 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 							i(206008),	-- Nightmare Banner (TOY!)
 							i(142549),	-- Serpent's Grand Charm
 							i(142546),	-- Small Charm of Inertia
+							i(142545),	-- Small Charm of Life
 							i(142551),	-- Stalwart's Grand Charm
 							i(206007),	-- Treasure Nabbin Bag
 							i(142542),	-- Tome of Town Portal (TOY!)
