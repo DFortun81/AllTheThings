@@ -638,9 +638,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(205054, {	-- Amador (PET!)
 					["modelID"] = 112171,
 				}),
-				i(206018, {	-- Baa'lial (PET!)
-					["modelID"] = 112632,
-				}),
 				i(205032, {	-- Bestial Lurker (PET!)
 					["modelID"] = 112162,
 				}),

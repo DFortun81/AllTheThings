@@ -1112,18 +1112,8 @@ root(ROOTS.Unsorted, {
 				i(205999),	-- Volcanic Sculptor
 				i(205289),	-- Crimson Equipment Chest
 				-- Diablo
-				i(206003),	-- Horadric Haversack
-				i(206004),	-- Enmity Cloak
-				i(206005),	-- Wirt's Last Leg
-				i(206007),	-- Treasure Nabbin' Bag
-				i(206008),	-- Nightmare Banner (TOY!)
-				i(206020),	-- Enmity Hood
 				i(206026),	-- Ensemble: Enmity Hood and Cloak
 				i(206028),	-- Chest of Gold
-				i(206039),	-- Enmity Bundle
-				i(206274),	-- Large Charm of Intelligence
-				i(206275),	-- Wirt's Fightin' Leg
-				i(206276),	-- Wirt's Haunted Leg
 				-- New Stuff
 				i(206044),	-- Obsidian Gladiator's Axe
 				i(206137),	-- Obsidian Gladiator's Dagger

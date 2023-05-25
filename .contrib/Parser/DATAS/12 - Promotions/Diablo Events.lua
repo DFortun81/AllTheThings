@@ -48,25 +48,24 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 	})),
 	n(-585, { -- Diablo IV
 		--[[n(-585, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, { -- Diablo IV--]]
-		-- Event begins on May 25, 2023, and ends on June 13, 2023. 
+		-- Event begins on May 25, 2023, and ends on June 13, 2023.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(18258, {	--	Little Lord of Lies
 					["provider"] = { "i", 206018 },	-- Baa'lial Soulstone
-					["filterID"] = PETS,
 				}),
 			}),
 			n(205722, {	-- Demon Portal
-				["coords"] = { 
+				["coords"] = {
 					{ 68.3, 40.8, ORGRIMMAR },
 					{ 50.6, 85.6, STORMWIND_CITY },
 					{ 54.7, 54.4, STORMWIND_CITY },
 					{ 55.2, 79.4, THALDRASZUS },
 					{ 58.8, 78.2, THALDRASZUS },
 					{ 64.3, 30.4, THE_AZURE_SPAN },
-					{ 26.7, 56.8, VALKDRAKKEN },
-					{ 54.3, 78.6, VALKDRAKKEN },
-					{ 57.5, 20.1, VALKDRAKKEN },
+					{ 26.7, 56.8, VALDRAKKEN },
+					{ 54.3, 78.6, VALDRAKKEN },
+					{ 57.5, 20.1, VALDRAKKEN },
 				};
 				["description"] = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone & or in a Capital, causing a Treasure Goblin to appear after 5 minutes.",
 				["groups"] = {
