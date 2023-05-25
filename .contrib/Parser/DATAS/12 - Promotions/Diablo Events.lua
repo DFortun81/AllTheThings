@@ -46,8 +46,7 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 			}),
 		},
 	})),
-	n(-585, { -- Diablo IV
-		--[[n(-585, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, { -- Diablo IV--]]
+	n(-585, bubbleDown({ ["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.99999" } }, { -- Diablo IV
 		-- Event begins on May 25, 2023, and ends on June 13, 2023.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -93,8 +92,7 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 							i(206007),	-- Treasure Nabbin Bag
 							i(142542),	-- Tome of Town Portal (TOY!)
 							i(143543),	-- Twelve String Guitar (TOY!)
-							i(76755, {	-- Tyrael's Charger (MOUNT!)
-							}),
+							i(76755),	-- Tyrael's Charger (MOUNT!)
 							i(206275),	-- Wirt's Fightin' Leg (BOE)
 							i(206276),	-- Wirt's Haunted Leg (BOE)
 							i(206005),	-- Wirt's Last Leg (BOE)
@@ -103,5 +101,5 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 				},
 			}),
 		},
-	}),
+	})),
 }));
