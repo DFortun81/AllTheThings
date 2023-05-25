@@ -718,6 +718,7 @@ i(204694);	-- Greater Flamesight Rune
 i(203388);	-- Gunky Insignia
 i(204070);	-- Magma Crystal
 i(202868);	-- Mender's Signal
+i(202619);	-- Mender Supplies
 i(204792);	-- Nightlight Conkerbell Sample
 i(203456);	-- Obsidian Prayer Beads
 i(203387);	-- Oddly Familiar Training Weapon
@@ -732,6 +733,8 @@ i(203393);	-- Spongy Loamshroom
 i(202647);	-- Stolen Goods
 i(204069);	-- Sulfuric Crystal
 i(204713);	-- Sundered Flame Expedition Notes
+i(202620);	-- Toxin Antidote
+i(204435);	-- Obsidian Tablet
 i(203653);	-- Vacant Elemental Core
 i(203012);	-- Viridian Heartcrystal
 i(203457);	-- Volcanic Herb Sachet

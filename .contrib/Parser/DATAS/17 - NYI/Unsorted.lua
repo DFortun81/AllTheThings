@@ -1062,7 +1062,6 @@ root(ROOTS.Unsorted, {
 				i(204407),	-- Rebel Detonator
 				i(204433),	-- Everburning Fireshard
 				i(204434),	-- Lava-Quenched Blade
-				i(204435),	-- Obsidian Tablet
 				i(204637),	-- Boulder Chunk
 				i(201956),	-- [DNT] Snakey Eyes
 				i(204796),	-- Deepflayer Dust
@@ -1079,9 +1078,6 @@ root(ROOTS.Unsorted, {
 				i(204173),	-- Enforcer Horb's Signet
 				i(205410),	-- Pungent Morsel
 				i(205900),	-- Shimmering Draconic Gem
-				i(205994),	-- Tome of the Earth-Warder
-				i(205996),	-- Tome of the Earth-Warder
-				i(205997),	-- Tome of the Earth-Warder
 			}),
 			filter(TOYS, {
 				i(205034),	-- Enormous Ball of Yarn (TOY!)
@@ -1188,8 +1184,6 @@ root(ROOTS.Unsorted, {
 				i(202075),	-- Temp Currency
 				i(202202),	-- Revealing Mask
 				i(202396),	-- Plains Timber
-				i(202619),	-- Mender Supplies
-				i(202620),	-- Toxin Antidote
 				i(202642),	-- Proto-Killing Spear
 				i(202874),	-- Healing Draught
 				i(203210),	-- Dragonscale Supply Box

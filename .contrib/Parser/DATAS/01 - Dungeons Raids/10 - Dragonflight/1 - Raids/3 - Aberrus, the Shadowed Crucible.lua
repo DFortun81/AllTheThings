@@ -1117,9 +1117,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				n(QUESTS, {
 					q(76086, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (M)
 						["provider"] = { "n", 201574 },	-- Wrathion
-						-- ["g"] = {
-						-- 	i(),	-- Tome of the Earth-Warder (M)
-						-- },
+						["g"] = {
+							i(205997),	-- Tome of the Earth-Warder
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
