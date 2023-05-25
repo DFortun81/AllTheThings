@@ -1811,7 +1811,6 @@ app.L = {
 		[-584] = "Dragonflight Seasonal Promotions",							-- Dragonflight Seasonal Promotions
 		[-585] = "Diablo IV",													-- Diablo IV
 		[-586] = "Amazon Prime Gaming",											-- Amazon Prime Gaming
-
 		[-600] = "Diablo Events",												-- Diablo Events
 	-- PvP Header
 		-- Special Season Tags

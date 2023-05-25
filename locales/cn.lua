@@ -792,6 +792,7 @@ for key,value in pairs({
 		[-583] = "巫妖王之怒经典怀旧服诺森德史诗礼包",			-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "巨龙时代季节性促销",			-- Dragonflight Seasonal Promotions
 		[-585] = "暗黑破坏神IV",													-- Diablo IV
+		--TODO: [-600] = "Diablo Events",							-- Diablo Events
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)

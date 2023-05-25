@@ -767,6 +767,7 @@ for key,value in pairs({
 		[-582] = "WotLK Classic Heroic",							-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "WotLK Classic Epic",								-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "Промо Dragonflight",								-- Dragonflight Seasonal Promotions
+		[-600] = "События Diablo",									-- Diablo Events
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)
