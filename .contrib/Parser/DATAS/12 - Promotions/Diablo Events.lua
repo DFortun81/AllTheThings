@@ -68,7 +68,7 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 					{ 54.3, 78.6, VALKDRAKKEN },
 					{ 57.5, 20.1, VALKDRAKKEN },
 				};
-				["description"] = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone & or in a Capital, causing a Treasure Goblin to spawn after 5 minutes.",
+				["description"] = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone & or in a Capital, causing a Treasure Goblin to appear after 5 minutes.",
 				["groups"] = {
 					n(205490, {	-- Treasure Goblin
 						["questID"] = 76215,
