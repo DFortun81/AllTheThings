@@ -16,7 +16,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 		["g"] = {
 			header(HEADERS.Item, 204177, {	-- Nasz'uro, the Unbound Legacy
 				i(204274, {	-- Ancient Memories
-					["description"] = "You need to find a Evoker thats doing this quest.",
+					["description"] = "You need to find an Evoker who is doing this quest.",
 					["g"] = {
 						r(407161, {	-- Immaculate Coalescing Dracothyst
 							["requireSkill"] = JEWELCRAFTING,
