@@ -10602,9 +10602,10 @@ local fields = {
 		return cache.GetCachedField(t, "lore", CacheInfo);
 	end,
 	["icon"] = function(t)
-		return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
+		local icon = t.achievementID and select(10, GetAchievementInfo(t.achievementID))
 			or L["FACTION_ID_ICONS"][t.factionID]
-			or t.isFriend and GetFriendshipReputation(t.factionID, "texture")
+			or t.isFriend and GetFriendshipReputation(t.factionID, "texture");
+		return icon ~= 0 and icon ~= "" and icon
 			or app.asset("Category_Factions");
 	end,
 	["link"] = function(t)

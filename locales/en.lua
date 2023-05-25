@@ -1429,6 +1429,8 @@ app.L = {
 		[-1200] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_ring_4_omni",					-- Zskera Vaults
 		[-1202] = "Interface\\Icons\\inv_fyrakk_dragonbreath",										-- Fyrakk Assaults
 		[-1203] = "Interface\\Icons\\inv_pet_mole",													-- Sniffenseeking
+		[-1204] = 133642,																			-- Available (Inv_misc_bag_10_green)
+		[-1205] = 133643,																			-- Unavailable (Inv_misc_bag_10_red)
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1809,7 +1811,7 @@ app.L = {
 		[-584] = "Dragonflight Seasonal Promotions",							-- Dragonflight Seasonal Promotions
 		[-585] = "Diablo IV",													-- Diablo IV
 		[-586] = "Amazon Prime Gaming",											-- Amazon Prime Gaming
-		
+
 		[-600] = "Diablo Events",												-- Diablo Events
 	-- PvP Header
 		-- Special Season Tags
