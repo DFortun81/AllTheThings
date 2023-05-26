@@ -372,9 +372,12 @@ root(ROOTS.NeverImplemented, {
 	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_10_0_5 }, }, {
 		n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
 			-- i(XXXXXX),	-- The Battlespoon (2H Staff)
-			i(190169),	-- Quawks (MOUNT!)
 			i(206156, {	-- Grotto Netherwing Drake (MOUNT!)
 				["timeline"] = { "added 10.1.0" },
+			}),
+			i(190169),	-- Quawks (MOUNT!)
+			i(76755, {	-- Tyrael's Charger (MOUNT!)
+				["timeline"] = { "added 10.1.5" },
 			}),
 		})),
 		n(VENDORS, {
