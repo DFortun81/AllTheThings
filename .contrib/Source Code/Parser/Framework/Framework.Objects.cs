@@ -2395,6 +2395,11 @@ end");
                 {
                     PerformDrops(entry, drops);
                 }
+                // also once contrib data has been merged, we can also prevent other data from merging in as well (Item/Quest API data)
+                else if (entry.TryGetValue("_drop", out drops))
+                {
+                    PerformDrops(data, drops);
+                }
             }
 
             /// <summary>
