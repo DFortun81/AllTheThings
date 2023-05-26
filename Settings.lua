@@ -2570,6 +2570,7 @@ settings.AutoSeasonalFilters = setmetatable({}, {
 });
 -- Icon = Holiday Filter
 local IconMonthFilterMappings = {
+	-- Holidays
 	[235471] = 1007,	-- Lunar Festival
 	[235462] = 1004,	-- Hallow's End
 	[235465.09] = 1005,	-- Harvest Festival (September)
@@ -2592,7 +2593,8 @@ local IconMonthFilterMappings = {
 	[1129683] = 1016,	-- Timewalking
 	[1129685] = 1016,	-- Timewalking WotLK (tested)
 	[1129686] = 1016,	-- Timewalking
-	[1304688] = 1016,	-- Timewalking
+	[1304687] = 1016,	-- Timewalking Cata (tested)
+	[1304688] = 1016,	-- Timewalking Cata
 	[1530590] = 1016,	-- Timewalking
 	[1467046] = 1016,	-- Timewalking (tested)
 
@@ -2605,6 +2607,41 @@ local IconMonthFilterMappings = {
 	[2827082] = 1014,	-- Free T-Shirt Day
 };
 
+local EventIdFilterMappings = {
+	-- Holidays
+	-- [235471] = 1007,	-- Lunar Festival
+	-- [235462] = 1004,	-- Hallow's End
+	-- [235465.09] = 1005,	-- Harvest Festival (September)
+	-- [235465.11] = 1013,	-- Pilgrim's Bounty (November)
+	-- [235468] = 1006,	-- Love is in the Air
+	-- [235481] = 1011,	-- Pirate's Day
+	-- [235442] = 1000,	-- Brewfest
+	[341] = 1008,	-- Midsummer
+	[201] = 1001,	-- Children's Week
+	-- [307365] = 1002,	-- Day of the Dead
+	[479] = 1012,	-- Darkmoon Faire
+	-- [235448] = 1012,	-- Darkmoon Faire
+	-- [235477] = 1010,	-- Noblegarden
+	-- [235485] = 1003,	-- Feast of Winter Veil
+
+	-- Timewalking
+	-- [1129673] = 1016,	-- Timewalking BC
+	-- [1129685] = 1016,	-- Timewalking WotLK
+	[587] = 1016,	-- Timewalking Cata
+	[643] = 1016,	-- Timewalking MoP
+	[1056] = 1016,	-- Timewalking WoD
+
+	-- Micro Holidays
+	-- [1574965] = 1014,	-- Call of the Scarab
+	-- [1574966] = 1014,	-- Hatching of the Hippogryphs
+	-- [1671627] = 1014,	-- Great Gnomergan Run
+	-- [1671628] = 1014,	-- Moonkin Festival
+	-- [1671631] = 1014,	-- Trial of Style
+	-- [2827082] = 1014,	-- Free T-Shirt Day
+	[642] = 1014,	-- Thousand Boat Bash
+	[62] = 1014,	-- Fireworks Spectacular
+};
+
 local function CheckActiveHolidayFilters(self, event)
 	-- unregister whichever event caused this check
 	-- app.PrintDebug("CheckActiveHolidayFilters",event)
@@ -2615,11 +2652,17 @@ local function CheckActiveHolidayFilters(self, event)
 	local events = C_Calendar.GetNumDayEvents(0, monthDay) or 0;
 	for i=1,events do
 		local event = C_Calendar.GetDayEvent(0, monthDay, i);
+		-- TODO: oof maybe account for time of day?
 		-- app.PrintDebug(event.title,event.calendarType,event.iconTexture)
 		if event and event.calendarType == "HOLIDAY" then
 			local icon = event.iconTexture or 0;
 			local filterKey = icon + (month / 100);
-			settings.AutoSeasonalFilters[IconMonthFilterMappings[filterKey] or IconMonthFilterMappings[icon] or -1] = true;
+			local eventID = event.eventID;
+			settings.AutoSeasonalFilters[
+				EventIdFilterMappings[eventID or 0] or
+				IconMonthFilterMappings[filterKey] or
+				IconMonthFilterMappings[icon] or
+				-1] = true;
 		end
 	end
 	-- app.PrintDebug("CheckActiveHolidayFilters:Done",event)
