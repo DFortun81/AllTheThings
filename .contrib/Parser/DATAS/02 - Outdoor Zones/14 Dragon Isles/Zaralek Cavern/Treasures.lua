@@ -192,13 +192,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 			}),
 			o_repeated({	-- Smelly Trash Pile
-				-- Contains
-				i(203313),	-- Winding Slitherdrake: Spiked Chin (DM!)
-				-- Objects
-				o(401844, {	-- Smelly Trash Pile
-					["isRepeatable"] = true,
-					-- Dont link coords. Its 2 many
-				}),
+				-- Shared
+				["sym"] = {{"select","itemID",
+					202275,	-- Renewed Proto-Drake: Plated Jaw (DM!)
+				}},
+				["g"] = {
+					-- Contains
+					i(203313),	-- Winding Slitherdrake: Spiked Chin (DM!)
+					-- Objects
+					o(401844, {	-- Smelly Trash Pile
+						["isRepeatable"] = true,
+						-- Dont link coords. Its 2 many
+					}),
+				},
 			}),
 			o_repeated({	-- Stolen Stash
 				-- Contains
