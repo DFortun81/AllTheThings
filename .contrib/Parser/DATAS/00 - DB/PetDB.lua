@@ -1056,17 +1056,18 @@ i(106256, 1365);	-- Treasure Goblin
 -- ITEM --
 i(109014, 1386);	-- Dread Hatchling
 
-
 -----------------
--- PATCH 6.0.1 --
+-- PATCH 6.0.2 --
 -----------------
 -- ITEM --
 i(119434, 1385);	-- Albino Chimaeraling
 i(119148, 1571);	-- Albino River Calf
 i(117354, 1531);	-- Ancient Nest Guardian
+i(118516, 1603);	-- Argi
 i(118599, 1429);	-- Autumnal Sproutling
 i(116439, 1517);	-- Blazing Cindercrawler
 i(127704, 1577);	-- Bloodthorn Hatchling
+i(122532, 1600);	-- Bone Serpent
 i(119146, 1458);	-- Bone Wasp
 i(128424, 1466);	-- Brightpaw
 i(118107, 1540);	-- Brilliant Spore
@@ -1088,10 +1089,13 @@ i(117380, 1530);	-- Frostwolf Ghostpup
 i(119141, 1542);	-- Frostwolf Pup
 i(117564, 1471);	-- Fruit Hunter
 i(113623, 1442);	-- Ghastly Kid
+i(127701, 1598);	-- Glowing Sporebat
+i(118517, 1602);	-- Grommloc
 i(118574, 1544);	-- Hatespark the Tiny
 i(123862, 1384);	-- Hogs
 i(118207, 1541);	-- Hydraling
 i(111660, 1387);	-- Iron Starlette
+i(120051, 1597);	-- Kaliri Hatchling
 i(117404, 115);		-- Land Shark
 i(117528, 1533);	-- Lanticore Spawnling
 i(112057, 1412);	-- Lifelike Mechanical Frostboar
@@ -1112,6 +1116,7 @@ i(111866, 1411);	-- Royal Peachick
 i(118105, 1539);	-- Seaborne Spore
 i(114919, 1448);	-- Sea Calf
 i(118923, 1567);	-- Sentinel's Companion
+i(119431, 1601);	-- Servant of Demidos
 i(115483, 1467);	-- Sky-Bo
 i(119150, 1575);	-- Sky Fry
 i(119143, 1574);	-- Son of Sethe
@@ -1120,15 +1125,16 @@ i(116402, 1515);	-- Stonegrinder
 i(118577, 1546);	-- Stormwing
 i(116756, 1518);	-- Stout Alemental
 i(118598, 1434);	-- Sun Sproutling
+i(119468, 1570);	-- Sunfire Kaliri
 i(116064, 1478);	-- Syd the Squid
 i(112699, 1416);	-- Teroclaw Hatchling
+i(120121, 1605);	-- Trunks
 i(118104, 1538);	-- Umbrafen Spore
+i(120050, 1596);	-- Veilwatcher Hatchling
 i(113558, 1394);	-- Weebomination
 i(116804, 1523);	-- Widget the Departed
 i(118101, 1536);	-- Zangar Spore
 i(113554, 1428);	-- Zomstrok
--- QUEST --
-n(119466, 1532);	-- Ikky
 -- NPC --
 n(85257, 1465);		-- Amberbarb Wasp
 n(85389, 1470);		-- Axebeak Hatchling
@@ -1139,6 +1145,7 @@ n(88422, 1586);		-- Cerulean Moth
 n(88413, 1589);		-- Crimsonwing Moth
 n(88542, 1761);		-- Echo Batling
 n(88473, 1581);		-- Fen Crab
+n(88572, 1595);		-- Flat-Tooth Calf
 n(82715, 1427);		-- Frostfur Rat
 n(88480, 1578);		-- Frostshell Pincher
 n(85798, 1573);		-- Golden Dawnfeather
@@ -1146,49 +1153,96 @@ n(85003, 1457);		-- Icespine Hatchling
 n(88474, 1579);		-- Ironclaw Scuttler
 n(85192, 1469);		-- Junglebeak
 n(88465, 1583);		-- Kelp Scuttler
+n(89198, 1435);		-- Leatherhide Runt
 n(82045, 1447);		-- Moonshell Crab
 n(85005, 1455);		-- Mossbite Skitterer
 n(83642, 1441);		-- Mud Jumper
+n(88571, 1594);		-- Mudback Calf
+n(88814, 1604);		-- Nethaera's Light
+n(89194, 1615);		-- Parched Lizard
 n(88417, 1587);		-- Royal Moth
 n(88356, 1592);		-- Sapphire Firefly
+n(88576, 1599);		-- Shadow Sporebat
 n(88359, 1590);		-- Swamplighter Firefly
 n(85007, 1456);		-- Thicket Skitterer
 n(85253, 1464);		-- Twilight Wasp
 n(88357, 1591);		-- Violet Firefly
 n(88355, 1593);		-- Waterfly
 n(88466, 1582);		-- Zangar Crawler
+-- QUEST --
+n(119466, 1532);	-- Ikky
 -- TRAINER --
+n(0, 1503);		-- Acidtooth
+n(0, 1559);		-- Apexis Guardian
+n(0, 1498);		-- Archimedes
+n(0, 1562);		-- Atonement
+n(0, 1423);		-- Bitey
+n(0, 1504);		-- Blingtron 4999b
+n(0, 1479);		-- Brutus
+n(0, 1484);		-- Carroteye
+n(0, 1473);		-- Carrotus Maximus
+n(0, 1608);		-- Carrotus Maximus
+n(0, 1557);		-- Darkwing
 n(0, 1400);		-- Deebs
+n(0, 1548);		-- Doodle
 n(0, 1409);		-- Eleanor
+n(0, 1552);		-- Fangra
+n(0, 1510);		-- Fatos
+n(0, 1499);		-- Fiero
+n(0, 1554);		-- Gladiator Deathy
+n(0, 1555);		-- Gladiator Murkalot
+n(0, 1556);		-- Gladiator Murkimus
+n(0, 1472);		-- Gnawface
+n(0, 1609);		-- Gnawface
+n(0, 1474);		-- Gorefu
+n(0, 1607);		-- Gorefu
+n(0, 1561);		-- Grace
+n(0, 1490);		-- Gromli
+n(0, 1492);		-- Grubbles
+n(0, 1424);		-- Gyrexle, the Eternal Mechanic
+n(0, 1509);		-- Hanos
+n(0, 1443);		-- Idol of Decay
+n(0, 1496);		-- Jahan
+n(0, 1431);		-- Kelp Sproutling
+n(0, 1487);		-- King Floret
+n(0, 1489);		-- Kromli
+n(0, 1508);		-- Manos
+n(0, 1476);		-- Mr. Pointy
+n(0, 1483);		-- Mr. Terrible
+n(0, 1475);		-- Otto
+n(0, 1547);		-- Pixiebell
+n(0, 1506);		-- Protectron 011803
+n(0, 1505);		-- Protectron 022481
 n(0, 1402);		-- Puzzle
+n(0, 1488);		-- Queen Floret
+n(0, 1480);		-- Quintessence of Light
+n(0, 1501);		-- Rockbiter
+n(0, 1482);		-- Rukus
+n(0, 1433);		-- Sassy Sproutling
+n(0, 1497);		-- Samm
+n(0, 1494);		-- Scrags
+n(0, 1560);		-- Serendipity
+n(0, 1485);		-- Sloppus
+n(0, 1493);		-- Stings
+n(0, 1507);		-- Stitches Jr.
+n(0, 1502);		-- Stonechewer
+n(0, 1477);		-- Syd
+n(0, 1549);		-- Tally
+n(0, 1486);		-- The Beakinator
+n(0, 1558);		-- The Great Kaliri
+n(0, 1500);		-- Tirs
 n(0, 1401);		-- Tyri
+n(0, 1444);		-- Wishbright Lantern
+n(0, 1553);		-- Wolfgar
+n(0, 1550);		-- Wolfus
+-- NYI --
+n(0, 1420);		-- Evil Widowling
 -- UNSURE --
 n(0, 1257);		-- Crafty
 n(0, 1352);		-- Lord Piglet
 n(0, 1404);		-- Mechanical Scorpid
+n(0, 1610);		-- Unborn Val'kyr
 n(0, 1259);		-- Widowling
-
------------------
--- PATCH 6.0.2 --
------------------
--- ITEM --
-i(118516, 1603);	-- Argi
-i(122532, 1600);	-- Bone Serpent
-i(127701, 1598);	-- Glowing Sporebat
-i(118517, 1602);	-- Grommloc
-i(120051, 1597);	-- Kaliri Hatchling
-i(119431, 1601);	-- Servant of Demidos
-i(119468, 1570);	-- Sunfire Kaliri
-i(120121, 1605);	-- Trunks
-i(120050, 1596);	-- Veilwatcher Hatchling
--- NPC --
-n(88572, 1595);		-- Flat-Tooth Calf
-n(89198, 1435);		-- Leatherhide Runt
-n(88571, 1594);		-- Mudback Calf
-n(89194, 1615);		-- Parched Lizard
-n(88576, 1599);		-- Shadow Sporebat
--- TRAINER --
-n(0, 1238);		-- Unborn Val'kyr
 
 -----------------
 -- PATCH 6.1.0 --
@@ -1211,6 +1265,22 @@ i(122111, 1629);	-- Stinkrot
 i(122113, 1632);	-- Sunblade Micro-Defender
 i(122115, 1634);	-- Wretched Servant
 i(122533, 1656);	-- Young Talbuk
+-- TRAINER --
+n(0, 1647);		-- Bones
+n(0, 1653);		-- Brisby
+n(0, 1644);		-- Carl
+n(0, 1641);		-- Dusty
+n(0, 1646);		-- Enbi'see
+n(0, 1652);		-- Jenner
+n(0, 1645);		-- Mal
+n(0, 1637);		-- Moon
+n(0, 1643);		-- Mouthy
+n(0, 1654);		-- Nicodemus
+n(0, 1651);		-- Prince Charming
+n(0, 1649);		-- Runts
+n(0, 1642);		-- Salad
+n(0, 1640);		-- Spores
+n(0, 1648);		-- Sprouts
 
 -----------------
 -- PATCH 6.2.0 --
@@ -1229,6 +1299,22 @@ i(127753, 1664);	-- Nightmare Bell
 i(127754, 1663);	-- Periwinkle Calf
 i(128477, 1692);	-- Savage Cub
 i(128309, 1690);	-- Shard of Cyrukh
+-- TRAINER --
+n(0, 1681);	-- Bleakclaw
+n(0, 1674);	-- Chaos Pup
+n(0, 1673);	-- Corrupted Thundertail
+n(0, 1675);	-- Cursed Spirit
+n(0, 1680);	-- Dark Gazer
+n(0, 1686);	-- Defiled Earth
+n(0, 1678);	-- Direflame
+n(0, 1683);	-- Dreadwalker
+n(0, 1676);	-- Felfly
+n(0, 1671);	-- Felsworn Sentry
+n(0, 1679);	-- Mirecroak
+n(0, 1684);	-- Netherfist
+n(0, 1685);	-- Skrillix
+n(0, 1677);	-- Tainted Maulclaw
+n(0, 1682);	-- Vile Blood of Draenor
 
 -----------------
 -- PATCH 6.2.1 --
@@ -1245,6 +1331,10 @@ i(129216, 1764);	-- Energized Manafiend
 i(128770, 1725);	-- Grumpling
 i(128427, 1454);	-- Murkidan
 i(128426, 1691);	-- Nibbles
+-- NPC --
+n(97568, 1741);		-- Ghastly Rat
+n(97569, 1740);		-- Ghost Maggot
+n(97324, 1730);		-- Spectral Spinner
 
 
 -----------------
@@ -1349,6 +1439,66 @@ n(97952, 1750);		-- Tiny Apparition
 n(97547, 1737);		-- Vale Flitter
 n(99513, 1807);		-- Vicious Broodling
 n(110666, 1912);	-- Young Mutant Wartutle
+-- TRAINER --
+n(0, 1893);		-- Allured Tadpole
+n(0, 1866);		-- Baby Bjorn
+n(0, 1771);		-- Baeloth
+n(0, 1788);		-- Beaky
+n(0, 1883);		-- Blottis
+n(0, 1897);		-- Breezy Book
+n(0, 1851);		-- Cackling Flame
+n(0, 1882);		-- Chromadon
+n(0, 1796);		-- Coach
+n(0, 1894);		-- Confused Tadpole
+n(0, 1899);		-- Delicate Moth
+n(0, 1852);		-- Devouring Blaze
+n(0, 1875);		-- Dinner
+n(0, 1793);		-- Egcellent
+n(0, 1879);		-- Eye of Impetration
+n(0, 1877);		-- Eye of Inquisition
+n(0, 1878);		-- Eye of Interrogation
+n(0, 1792);		-- Fethyr
+n(0, 1905);		-- Foof
+n(0, 1846);		-- Globs
+n(0, 1799);		-- Grommet
+n(0, 1798);		-- Gulp
+n(0, 1873);		-- Gusteau
+n(0, 1871);		-- Harbinger of Dark
+n(0, 1815);		-- Heliosus
+n(0, 1898);		-- Helpful Spirit
+n(0, 1872);		-- Herald of Light
+n(0, 1843);		-- Hungry Icefang
+n(0, 1895);		-- Hungry Owl
+n(0, 1896);		-- Hungry Rat
+n(0, 1748);		-- Jinx
+n(0, 1906);		-- Lil' Sizzle
+n(0, 1790);		-- Lil' Spirit Guide
+n(0, 1881);		-- Lil'idan
+n(0, 1853);		-- Living Coals
+n(0, 1745);		-- Marshmallow
+n(0, 1867);		-- Mini Musken
+n(0, 1848);		-- Nightmare Sprout
+n(0, 1791);		-- Quillino
+n(0, 1794);		-- Red Wire
+n(0, 1874);		-- Remy
+n(0, 1746);		-- Rocket
+n(0, 1842);		-- Rocklick
+n(0, 1811);		-- Rocko
+n(0, 1787);		-- Roots
+n(0, 1841);		-- Slow Moe
+n(0, 1840);		-- Snot
+n(0, 1519);		-- Snowfang
+n(0, 1855);		-- Splint Jr.
+n(0, 1880);		-- Stitches Jr. Jr.
+n(0, 1904);		-- Stumpers
+n(0, 1892);		-- Subjugated Tadpole
+n(0, 1789);		-- Sunny
+n(0, 1849);		-- The Maw
+n(0, 1850);		-- Thistleleaf Bully
+n(0, 1770);		-- Thrugtusk
+n(0, 1847);		-- Trixy
+n(0, 1891);		-- Vinu
+n(0, 1772);		-- Wumpas
 
 -----------------
 -- PATCH 7.1.0 --
@@ -1381,10 +1531,45 @@ i(142100, 1969);	-- Stardust
 i(142099, 1968);	-- Wicked Soul
 i(142090, 1959);	-- Winter Rageling
 -- QUEST? --
-n(115787, 1977);	-- Bloodgazer Hatchling
+n(115787, 1977); 	-- Bloodgazer Hatchling
 n(115785, 1975);	-- Direbeak Hatchling
+n(0, 1976);		-- Sharptalon Hatchling
+n(0, 1974);		-- Snowfeather Hatchling
 -- NPC --
 n(113440, 1935);	-- Squirky
+-- TRAINER --
+n(0, 1860);		-- Ancient Catacomb Spider
+n(0, 1857);		-- Beauty
+n(0, 1758);		-- Black Piglet
+n(0, 1757);		-- Brown Piglet
+n(0, 1982);		-- Buzz
+n(0, 1861);		-- Catacomb Bat
+n(0, 1862);		-- Catacomb Snake
+n(0, 1983);		-- Cherry
+n(0, 1782);		-- Clamps
+n(0, 1971);		-- Comet
+n(0, 1973);		-- Constellatius
+n(0, 1858);		-- Conviction
+n(0, 1972);		-- Cosmos
+n(0, 1869);		-- Crawdead
+n(0, 1859);		-- Dignity
+n(0, 1865);		-- Essence of Mana
+n(0, 1863);		-- Font of Mana
+n(0, 1870);		-- Gnaw
+n(0, 1797);		-- Greatest Foe
+n(0, 1800);		-- Itchy
+n(0, 1780);		-- Kiazor the Destroyer
+n(0, 1742);		-- Master Tamer Flummox
+n(0, 1817);		-- Mini Arcanotron
+n(0, 1818);		-- Mini Electron
+n(0, 1816);		-- Mini Magmatron
+n(0, 1868);		-- Mist Wraith
+n(0, 1801);		-- Salty Bird
+n(0, 1781);		-- Scuttles
+n(0, 1864);		-- Seed of Mana
+n(0, 1795);		-- Sir Murkeston
+n(0, 1751);		-- Son of Goredome
+n(0, 1981);		-- Swoop
 
 
 -----------------
@@ -1414,6 +1599,26 @@ i(146953, 2042);	-- Scraps
 i(147543, 2049);	-- Son of Skum
 i(147541, 2037);	-- Vilebrood Whelpling
 i(143755, 2000);	-- Young Venomfang
+-- TRAINER --
+n(0, 1996);	-- Budding Everliving Spore
+n(0, 1988);	-- Deviate Chomper
+n(0, 1987);	-- Deviate Flapper
+n(0, 1989);	-- Deviate Smallclaw
+n(0, 1992);	-- Dreadcoil
+n(0, 2008);	-- Fido
+n(0, 2010);	-- Flickering Fel
+n(0, 1995);	-- Growing Ectoplasm
+n(0, 1994);	-- Hiss
+n(0, 2011);	-- Imply
+n(0, 2014);	-- Living Pool
+n(0, 1993);	-- Phyxia
+n(0, 2016);	-- Rock Lobster
+n(0, 2012);	-- Rover
+n(0, 2013);	-- Seduction
+n(0, 2009);	-- Seer's Eye
+n(0, 1990);	-- Son of Skum
+n(0, 2015);	-- Tia Mia and Larry
+n(0, 1991);	-- Vilefang
 
 -----------------
 -- PATCH 7.2.5 --
@@ -1429,6 +1634,19 @@ i(151632, 2064);	-- Mining Monkey
 i(151569, 2063);	-- Sneaky Marmot
 i(150741, 2057);	-- Tricorne
 i(147900, 2051);	-- Twilight
+-- TRAINER --
+n(0, 2033);	-- "Captain" Klutz
+n(0, 2027);	-- Angry Geode
+n(0, 2032);	-- Cookie's Leftovers
+n(0, 2039);	-- Deadmines Parrot
+n(0, 2038);	-- Deadmines Rat
+n(0, 2031);	-- Foe Reaper 50
+n(0, 2040);	-- Ironclad Crab
+n(0, 2025);	-- Klutz's Battle Bird
+n(0, 2024);	-- Klutz's Battle Monkey
+n(0, 2026);	-- Klutz's Battle Rat
+n(0, 2028);	-- Mining Monkey
+n(0, 2023);	-- Unfortunate Defias
 
 -----------------
 -- PATCH 7.3.0 --
@@ -1477,279 +1695,27 @@ n(128171, 2130);	-- Void Shardling
 n(128168, 2129);	-- Voidstalker Runt
 n(128170, 2128);	-- Warpstalker Runt
 -- TRAINER --
-n(0, 1420);	-- Evil Widowling
-n(0, 1423);	-- Bitey
-n(0, 1424);	-- Gyrexle, the Eternal Mechanic
-n(0, 1427);	-- Frostfur Rat
-n(0, 1431);	-- Kelp Sproutling
-n(0, 1433);	-- Sassy Sproutling
-n(0, 1435);	-- Leatherhide Runt
-n(0, 1441);	-- Mud Jumper
-n(0, 1443);	-- Idol of Decay
-n(0, 1444);	-- Wishbright Lantern
-n(0, 1447);	-- Moonshell Crab
-n(0, 1455);	-- Mossbite Skitterer
-n(0, 1456);	-- Thicket Skitterer
-n(0, 1457);	-- Icespine Hatchling
-n(0, 1462);	-- Bloodsting Wasp
-n(0, 1464);	-- Twilight Wasp
-n(0, 1465);	-- Amberbarb Wasp
-n(0, 1468);	-- Bloodbeak
-n(0, 1469);	-- Junglebeak
-n(0, 1470);	-- Axebeak Hatchling
-n(0, 1472);	-- Gnawface
-n(0, 1473);	-- Carrotus Maximus
-n(0, 1474);	-- Gorefu
-n(0, 1475);	-- Otto
-n(0, 1476);	-- Mr. Pointy
-n(0, 1477);	-- Syd
-n(0, 1479);	-- Brutus
-n(0, 1480);	-- Quintessence of Light
-n(0, 1482);	-- Rukus
-n(0, 1483);	-- Mr. Terrible
-n(0, 1484);	-- Carroteye
-n(0, 1485);	-- Sloppus
-n(0, 1486);	-- The Beakinator
-n(0, 1487);	-- King Floret
-n(0, 1488);	-- Queen Floret
-n(0, 1489);	-- Kromli
-n(0, 1490);	-- Gromli
-n(0, 1492);	-- Grubbles
-n(0, 1493);	-- Stings
-n(0, 1494);	-- Scrags
-n(0, 1496);	-- Jahan
-n(0, 1497);	-- Samm
-n(0, 1498);	-- Archimedes
-n(0, 1499);	-- Fiero
-n(0, 1500);	-- Tirs
-n(0, 1501);	-- Rockbiter
-n(0, 1502);	-- Stonechewer
-n(0, 1503);	-- Acidtooth
-n(0, 1504);	-- Blingtron 4999b
-n(0, 1505);	-- Protectron 022481
-n(0, 1506);	-- Protectron 011803
-n(0, 1507);	-- Stitches Jr.
-n(0, 1508);	-- Manos
-n(0, 1509);	-- Hanos
-n(0, 1510);	-- Fatos
-n(0, 1519);	-- Snowfang
-n(0, 1547);	-- Pixiebell
-n(0, 1548);	-- Doodle
-n(0, 1549);	-- Tally
-n(0, 1550);	-- Wolfus
-n(0, 1552);	-- Fangra
-n(0, 1553);	-- Wolfgar
-n(0, 1554);	-- Gladiator Deathy
-n(0, 1555);	-- Gladiator Murkalot
-n(0, 1556);	-- Gladiator Murkimus
-n(0, 1557);	-- Darkwing
-n(0, 1558);	-- The Great Kaliri
-n(0, 1559);	-- Apexis Guardian
-n(0, 1560);	-- Serendipity
-n(0, 1561);	-- Grace
-n(0, 1562);	-- Atonement
-n(0, 1572);	-- Brilliant Bloodfeather
-n(0, 1573);	-- Golden Dawnfeather
-n(0, 1578);	-- Frostshell Pincher
-n(0, 1579);	-- Ironclaw Scuttler
-n(0, 1581);	-- Fen Crab
-n(0, 1582);	-- Zangar Crawler
-n(0, 1583);	-- Kelp Scuttler
-n(0, 1586);	-- Cerulean Moth
-n(0, 1587);	-- Royal Moth
-n(0, 1589);	-- Crimsonwing Moth
-n(0, 1590);	-- Swamplighter Firefly
-n(0, 1591);	-- Violet Firefly
-n(0, 1592);	-- Sapphire Firefly
-n(0, 1593);	-- Waterfly
-n(0, 1594);	-- Mudback Calf
-n(0, 1595);	-- Flat-Tooth Calf
-n(0, 1599);	-- Shadow Sporebat
-n(0, 1604);	-- Nethaera's Light
-n(0, 1607);	-- Gorefu
-n(0, 1608);	-- Carrotus Maximus
-n(0, 1609);	-- Gnawface
-n(0, 1610);	-- Unborn Val'kyr
-n(0, 1615);	-- Parched Lizard
-n(0, 1637);	-- Moon
-n(0, 1640);	-- Spores
-n(0, 1641);	-- Dusty
-n(0, 1642);	-- Salad
-n(0, 1643);	-- Mouthy
-n(0, 1644);	-- Carl
-n(0, 1645);	-- Mal
-n(0, 1646);	-- Enbi'see
-n(0, 1647);	-- Bones
-n(0, 1648);	-- Sprouts
-n(0, 1649);	-- Runts
-n(0, 1651);	-- Prince Charming
-n(0, 1652);	-- Jenner
-n(0, 1653);	-- Brisby
-n(0, 1654);	-- Nicodemus
-n(0, 1671);	-- Felsworn Sentry
-n(0, 1673);	-- Corrupted Thundertail
-n(0, 1674);	-- Chaos Pup
-n(0, 1675);	-- Cursed Spirit
-n(0, 1676);	-- Felfly
-n(0, 1677);	-- Tainted Maulclaw
-n(0, 1678);	-- Direflame
-n(0, 1679);	-- Mirecroak
-n(0, 1680);	-- Dark Gazer
-n(0, 1681);	-- Bleakclaw
-n(0, 1682);	-- Vile Blood of Draenor
-n(0, 1683);	-- Dreadwalker
-n(0, 1684);	-- Netherfist
-n(0, 1685);	-- Skrillix
-n(0, 1686);	-- Defiled Earth
-n(0, 1730);	-- Spectral Spinner
-n(0, 1740);	-- Ghost Maggot
-n(0, 1741);	-- Ghastly Rat
-n(0, 1742);	-- Master Tamer Flummox
-n(0, 1745);	-- Marshmallow
-n(0, 1746);	-- Rocket
-n(0, 1748);	-- Jinx
-n(0, 1751);	-- Son of Goredome
-n(0, 1757);	-- Brown Piglet
-n(0, 1758);	-- Black Piglet
-n(0, 1761);	-- Echo Batling
-n(0, 1770);	-- Thrugtusk
-n(0, 1771);	-- Baeloth
-n(0, 1772);	-- Wumpas
-n(0, 1780);	-- Kiazor the Destroyer
-n(0, 1781);	-- Scuttles
-n(0, 1782);	-- Clamps
-n(0, 1787);	-- Roots
-n(0, 1788);	-- Beaky
-n(0, 1789);	-- Sunny
-n(0, 1790);	-- Lil' Spirit Guide
-n(0, 1791);	-- Quillino
-n(0, 1792);	-- Fethyr
-n(0, 1793);	-- Egcellent
-n(0, 1794);	-- Red Wire
-n(0, 1795);	-- Sir Murkeston
-n(0, 1796);	-- Coach
-n(0, 1797);	-- Greatest Foe
-n(0, 1798);	-- Gulp
-n(0, 1799);	-- Grommet
-n(0, 1800);	-- Itchy
-n(0, 1801);	-- Salty Bird
-n(0, 1811);	-- Rocko
-n(0, 1815);	-- Heliosus
-n(0, 1816);	-- Mini Magmatron
-n(0, 1817);	-- Mini Arcanotron
-n(0, 1818);	-- Mini Electron
-n(0, 1840);	-- Snot
-n(0, 1841);	-- Slow Moe
-n(0, 1842);	-- Rocklick
-n(0, 1843);	-- Hungry Icefang
-n(0, 1846);	-- Globs
-n(0, 1847);	-- Trixy
-n(0, 1848);	-- Nightmare Sprout
-n(0, 1849);	-- The Maw
-n(0, 1850);	-- Thistleleaf Bully
-n(0, 1851);	-- Cackling Flame
-n(0, 1852);	-- Devouring Blaze
-n(0, 1853);	-- Living Coals
-n(0, 1855);	-- Splint Jr.
-n(0, 1857);	-- Beauty
-n(0, 1858);	-- Conviction
-n(0, 1859);	-- Dignity
-n(0, 1860);	-- Ancient Catacomb Spider
-n(0, 1861);	-- Catacomb Bat
-n(0, 1862);	-- Catacomb Snake
-n(0, 1863);	-- Font of Mana
-n(0, 1864);	-- Seed of Mana
-n(0, 1865);	-- Essence of Mana
-n(0, 1866);	-- Baby Bjorn
-n(0, 1867);	-- Mini Musken
-n(0, 1868);	-- Mist Wraith
-n(0, 1869);	-- Crawdead
-n(0, 1870);	-- Gnaw
-n(0, 1871);	-- Harbinger of Dark
-n(0, 1872);	-- Herald of Light
-n(0, 1873);	-- Gusteau
-n(0, 1874);	-- Remy
-n(0, 1875);	-- Dinner
-n(0, 1877);	-- Eye of Inquisition
-n(0, 1878);	-- Eye of Interrogation
-n(0, 1879);	-- Eye of Impetration
-n(0, 1880);	-- Stitches Jr. Jr.
-n(0, 1881);	-- Lil'idan
-n(0, 1882);	-- Chromadon
-n(0, 1883);	-- Blottis
-n(0, 1891);	-- Vinu
-n(0, 1892);	-- Subjugated Tadpole
-n(0, 1893);	-- Allured Tadpole
-n(0, 1894);	-- Confused Tadpole
-n(0, 1895);	-- Hungry Owl
-n(0, 1896);	-- Hungry Rat
-n(0, 1897);	-- Breezy Book
-n(0, 1898);	-- Helpful Spirit
-n(0, 1899);	-- Delicate Moth
-n(0, 1904);	-- Stumpers
-n(0, 1905);	-- Foof
-n(0, 1906);	-- Lil' Sizzle
-n(0, 1935);	-- Squirky
-n(0, 1971);	-- Comet
-n(0, 1972);	-- Cosmos
-n(0, 1973);	-- Constellatius
-n(0, 1974);	-- Snowfeather Hatchling
-n(0, 1976);	-- Sharptalon Hatchling
-n(0, 1981);	-- Swoop
-n(0, 1982);	-- Buzz
-n(0, 1983);	-- Cherry
-n(0, 1987);	-- Deviate Flapper
-n(0, 1988);	-- Deviate Chomper
-n(0, 1989);	-- Deviate Smallclaw
-n(0, 1990);	-- Son of Skum
-n(0, 1991);	-- Vilefang
-n(0, 1992);	-- Dreadcoil
-n(0, 1993);	-- Phyxia
-n(0, 1994);	-- Hiss
-n(0, 1995);	-- Growing Ectoplasm
-n(0, 1996);	-- Budding Everliving Spore
-n(0, 2008);	-- Fido
-n(0, 2009);	-- Seer's Eye
-n(0, 2010);	-- Flickering Fel
-n(0, 2011);	-- Imply
-n(0, 2012);	-- Rover
-n(0, 2013);	-- Seduction
-n(0, 2014);	-- Living Pool
-n(0, 2015);	-- Tia Mia and Larry
-n(0, 2016);	-- Rock Lobster
-n(0, 2023);	-- Unfortunate Defias
-n(0, 2024);	-- Klutz's Battle Monkey
-n(0, 2025);	-- Klutz's Battle Bird
-n(0, 2026);	-- Klutz's Battle Rat
-n(0, 2027);	-- Angry Geode
-n(0, 2028);	-- Mining Monkey
-n(0, 2031);	-- Foe Reaper 50
-n(0, 2032);	-- Cookie's Leftovers
-n(0, 2033);	-- "Captain" Klutz
-n(0, 2038);	-- Deadmines Rat
-n(0, 2039);	-- Deadmines Parrot
-n(0, 2040);	-- Ironclad Crab
-n(0, 2066);	-- Clamp
-n(0, 2067);	-- M-37
-n(0, 2068);	-- Corporal Hammer
-n(0, 2095);	-- Ruinhoof
-n(0, 2096);	-- Foulclaw
-n(0, 2097);	-- Baneglow
-n(0, 2098);	-- Retch
-n(0, 2099);	-- Deathscreech
-n(0, 2100);	-- Gnasher
-n(0, 2101);	-- Bucky
-n(0, 2102);	-- Snozz
-n(0, 2103);	-- Gloamwing
-n(0, 2104);	-- Shadeflicker
-n(0, 2105);	-- Corrupted Blood of Argus
-n(0, 2106);	-- Mar'cuus
-n(0, 2107);	-- Watcher
-n(0, 2108);	-- Bloat
-n(0, 2109);	-- Earseeker
-n(0, 2110);	-- One-of-Many
-n(0, 2111);	-- Minixis
-n(0, 2112);	-- Pilfer
+n(0, 2097);		-- Baneglow
+n(0, 2108);		-- Bloat
+n(0, 2101);		-- Bucky
+n(0, 2066);		-- Clamp
+n(0, 2068);		-- Corporal Hammer
+n(0, 2105);		-- Corrupted Blood of Argus
+n(0, 2099);		-- Deathscreech
+n(0, 2109);		-- Earseeker
+n(0, 2096);		-- Foulclaw
+n(0, 2103);		-- Gloamwing
+n(0, 2100);		-- Gnasher
+n(0, 2067);		-- M-37
+n(0, 2106);		-- Mar'cuus
+n(0, 2111);		-- Minixis
+n(0, 2110);		-- One-of-Many
+n(0, 2112);		-- Pilfer
+n(0, 2098);		-- Retch
+n(0, 2095);		-- Ruinhoof
+n(0, 2104);		-- Shadeflicker
+n(0, 2102);		-- Snozz
+n(0, 2107);		-- Watcher
 
 -----------------
 -- PATCH 7.3.5 --
