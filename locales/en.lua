@@ -811,6 +811,7 @@ app.L = {
 		[CLASS.." %> "] = "",
 		["The Primalist Future"] = "Primalist Future",
 		["The Storm's Fury"] = "Storm's Fury",
+		["Zaralek Cavern Racing Completionist: Gold"] = "Racing: Gold",
 	};
 
 	["CUSTOM_DIFFICULTIES"] = {
