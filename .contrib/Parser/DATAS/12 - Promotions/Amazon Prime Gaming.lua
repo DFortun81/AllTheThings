@@ -13,7 +13,11 @@ root(ROOTS.Promotions, {
 			}),
 			i(54847, {	-- Lil' XT (PET!)
 				["description"] = "Amazon Prime Gaming reward from April 27th 2023 till May 25th 2023.",
-				["timeline"] = { ADDED_10_0_7, "removed 10.1.0.99999" },
+				["timeline"] = { ADDED_10_0_7, "removed 10.1.0.49741" },
+			}),
+			i(45037, {	-- Epic Purple Shirt
+				["description"] = "Amazon Prime Gaming reward from May 25th 2023 till June 22nd 2023.",
+				["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.99999" },
 			}),
 		},
 	}),
