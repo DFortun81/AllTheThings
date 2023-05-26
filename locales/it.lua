@@ -1350,6 +1350,9 @@ for key,value in pairs({
 	[180642] = "Cassa Incospicua",	-- Inconspicuous Crate
 	[180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt	--TODO: This was taken from wotlk Wowhead
 	[180662] = "Rottami di Goletta",	-- Schooner Wreckage
+	[180665] = "Draconico per Negati",	-- Draconic for Dummies
+	[180666] = "Draconico per Negati",	-- Draconic for Dummies
+	[180667] = "Draconico per Negati",	-- Draconic for Dummies
 	[180669] = "Maelstrom Turbinoso",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "Rottami Fradici",	-- Waterlogged Wreckage
 	[180690] = "Grande Forziere dello Scarabeo",	-- Large Scarab Coffer
@@ -3927,6 +3930,7 @@ for key,value in pairs({
 	[398135] = "Trivella di Dracotista Abbandonata",	-- Discarded Dracothyst Drill
 	[398138] = "Esplorabot Fuso",	-- Molten Scoutbot
 	[398200] = "Scrigno Dimenticato",	-- Forgotten Lockbox
+	[398698] = "Groviera Squittente",	-- Squeaking Swiss
 	[398770] = "Scatola di Rocce",	-- Box of Rocks
 	[398778] = "Tinozza Disgustosa",	-- Disgusting Vat
 	[398783] = "Olio di Scaglie Infuse di Fiamma",	-- Flame-Infused Scale Oil

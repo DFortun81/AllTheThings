@@ -1350,6 +1350,9 @@ for key,value in pairs({
 	[180642] = "Не вызывающий подозрений сундук",	-- Inconspicuous Crate
 	[180652] = "Только что выброшенная земля",	-- Freshly Dug Dirt
 	[180662] = "Разбитая шхуна",	-- Schooner Wreckage
+	[180665] = "\"Драконий язык для чайников\"",	-- Draconic for Dummies
+	[180666] = "\"Драконий язык для чайников\"",	-- Draconic for Dummies
+	[180667] = "\"Драконий язык для чайников\"",	-- Draconic for Dummies
 	[180669] = "Кружащий Водоворот",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "Плавающие обломки",	-- Waterlogged Wreckage
 	[180690] = "Большой сундук Скарабея",	-- Large Scarab Coffer
@@ -3927,6 +3930,7 @@ for key,value in pairs({
 	[398135] = "Использованный дракотистовый бур",	-- Discarded Dracothyst Drill
 	[398138] = "Огненный разведобот",	-- Molten Scoutbot
 	[398200] = "Позабытый ларец",	-- Forgotten Lockbox
+	[398698] = "Скрипящий сыр",	-- Squeaking Swiss
 	[398770] = "Ящик с камнями",	-- Box of Rocks
 	[398778] = "Мерзкий чан",	-- Disgusting Vat
 	[398783] = "Напитанное огнем прогорклое масло",	-- Flame-Infused Scale Oil
