@@ -1,6 +1,6 @@
 # AllTheThings
 
-## [DF-3.4.5](https://github.com/DFortun81/AllTheThings/tree/DF-3.4.5) (2023-05-25)
+## [DF-3.4.5](https://github.com/DFortun81/AllTheThings/tree/DF-3.4.5) (2023-05-26)
 [Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.4.4...DF-3.4.5) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
