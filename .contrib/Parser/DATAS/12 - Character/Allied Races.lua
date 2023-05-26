@@ -570,6 +570,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(57486, {	-- Waning Energy
+				["sourceQuests"] = { 58214 },	-- Urgent Care
 				["provider"] = { "n", 160101 },	-- Kelsey Steelspark
 				["coord"] = { 73.1, 16.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
