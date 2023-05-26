@@ -6438,10 +6438,11 @@ local function SearchForSpecificGroups(found, group, hashes)
 end
 -- Returns the first found cached group for a given SourceID
 -- NOTE: Do not use this function when the results are being passed into an Update afterward
+-- or if ATT data has not been loaded yet
 local function SearchForSourceIDQuickly(sourceID)
-	if sourceID and sourceID > 0 and app:GetDataCache() then
-		local group = rawget(rawget(fieldCache, "s"),sourceID);
-		if group and #group > 0 then return group[1]; end
+	if sourceID then
+		local cache = fieldCache.s[sourceID];
+		return cache and cache[1];
 	end
 end
 local function SearchForLink(link)
@@ -6505,6 +6506,8 @@ local function SearchForLink(link)
 			return SearchForField("azeriteEssenceID", id);
 		elseif kind == "rfp" or kind == "runeforgepowerid" then
 			return SearchForField("runeforgePowerID", id);
+		elseif kind == "objectID" or kind == "object" or kind == "o" then
+			return SearchForField("objectID", id);
 		else
 			return SearchForField(string.gsub(kind, "id", "ID"), id);
 		end
@@ -14140,9 +14143,10 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
 		if item then
 			local knownItem, knownSource, valid;
+			local acctSources = ATTAccountWideData.Sources;
 			for _,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				-- only compare against other Sources of the VisualID which the Account knows
-				if sourceID ~= sourceInfo.sourceID and rawget(ATTAccountWideData.Sources, sourceID) == 1 then
+				if sourceID ~= sourceInfo.sourceID and acctSources[sourceID] == 1 then
 					knownItem = SearchForSourceIDQuickly(sourceID);
 					if knownItem then
 						-- filter matches or one item is Cosmetic
@@ -14223,7 +14227,7 @@ local function FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
 		if item and not item.nmc and not item.nmr then
 			-- This item is for my race and class.
-			for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+			for i,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
 					local otherItem = SearchForSourceIDQuickly(sourceID);
 					if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) and not otherItem.nmc and not otherItem.nmr then
@@ -14265,12 +14269,12 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		for _,sourceID in ipairs(visualIDs) do
 			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",rawget(acctSources, sourceID)) end
 			-- If it is not currently marked collected on the account
-			if not rawget(acctSources, sourceID) then
+			if not acctSources[sourceID] then
 				-- for current character only, all we care is that the knownItem is not exclusive to another
 				-- race/class to consider all shared appearances as 'collected' for the current character
 				if currentCharacterUsable then
 					-- if app.DEBUG_PRINT then print("current character usable") end
-					rawset(acctSources, sourceID, 2);
+					acctSources[sourceID] = 2;
 				else
 					-- Find the check Source in ATT
 					checkItem = SearchForSourceIDQuickly(sourceID);
@@ -14320,7 +14324,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
 								then
 									-- if app.DEBUG_PRINT then print("Unique Collected s:",sourceID); end
-									rawset(acctSources, sourceID, 2);
+									acctSources[sourceID] = 2;
 								-- else print("sources share visual and filters but different equips",item.s,sourceID)
 								end
 							end
@@ -14336,7 +14340,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 								or app.SlotByInventoryType[checkSource.invType] == app.SlotByInventoryType[knownSource.invType])
 						then
 							-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-							rawset(acctSources, sourceID, 2);
+							acctSources[sourceID] = 2;
 						-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
 						end
 					end
