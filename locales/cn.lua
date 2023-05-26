@@ -1373,6 +1373,9 @@ for key, value in pairs({
 	[180642] = "不起眼的箱子",	-- Inconspicuous Crate	--TODO: This was taken from wotlk Wowhead
 	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180662] = "帆船残骸",	-- Schooner Wreckage
+	[180665] = "龙语傻瓜教程",	-- Draconic for Dummies
+	[180666] = "龙语傻瓜教程",	-- Draconic for Dummies
+	[180667] = "龙语傻瓜教程",	-- Draconic for Dummies
 	[180669] = "湍急的漩涡",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "浸水的残骸",	-- Waterlogged Wreckage
 	[180690] = "大型圣甲虫箱",	-- Large Scarab Coffer
@@ -3950,6 +3953,7 @@ for key, value in pairs({
 	[398135] = "被抛弃的龙晶电钻",	-- Discarded Dracothyst Drill
 	[398138] = "熔火斥候机器人",	-- Molten Scoutbot
 	--TODO: [398200] = "Forgotten Lockbox",	-- Forgotten Lockbox
+	--TODO: [398698] = "Squeaking Swiss",	-- Squeaking Swiss
 	[398770] = "一箱岩石",	-- Box of Rocks
 	[398778] = "恶心的大缸",	-- Disgusting Vat
 	[398783] = "烈焰注能鳞油",	-- Flame-Infused Scale Oil

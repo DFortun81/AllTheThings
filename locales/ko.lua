@@ -1359,6 +1359,9 @@ for key,value in pairs({
 	[180642] = "눈에 띄지 않는 궤짝",	-- Inconspicuous Crate
 	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180662] = "범선 잔해",	-- Schooner Wreckage
+	[180665] = "왕초보를 위한 용언 완전정복",	-- Draconic for Dummies
+	[180666] = "왕초보를 위한 용언 완전정복",	-- Draconic for Dummies
+	[180667] = "왕초보를 위한 용언 완전정복",	-- Draconic for Dummies
 	[180669] = "회오리치는 소용돌이",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "물에 젖은 잔해",	-- Waterlogged Wreckage
 	[180690] = "큰 스카라베 상자",	-- Large Scarab Coffer
@@ -3936,6 +3939,7 @@ for key,value in pairs({
 	--TODO: [398135] = "Discarded Dracothyst Drill",	-- Discarded Dracothyst Drill
 	--TODO: [398138] = "Molten Scoutbot",	-- Molten Scoutbot
 	[398200] = "잊혀진 금고",	-- Forgotten Lockbox
+	--TODO: [398698] = "Squeaking Swiss",	-- Squeaking Swiss
 	[398770] = "돌멩이 상자",	-- Box of Rocks
 	[398778] = "역겨운 보관통",	-- Disgusting Vat
 	[398783] = "불꽃 주입 비늘 기름",	-- Flame-Infused Scale Oil

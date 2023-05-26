@@ -1359,6 +1359,9 @@ for key,value in pairs({
 	[180642] = "Caixote Inconspícuo",	-- Inconspicuous Crate
 	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180662] = "Destroços da Escuna",	-- Schooner Wreckage
+	[180665] = "Dracônico para Leigos",	-- Draconic for Dummies
+	[180666] = "Dracônico para Leigos",	-- Draconic for Dummies
+	[180667] = "Dracônico para Leigos",	-- Draconic for Dummies
 	[180669] = "Voragem Serpenteante",	-- Swirling Maelstrom	--TODO: this was manually translated
 	[180685] = "Destroços Encharcados",	-- Waterlogged Wreckage
 	[180690] = "Grande Arca do Escaravelho",	-- Large Scarab Coffer
@@ -3936,6 +3939,7 @@ for key,value in pairs({
 	[398135] = "Perfuratriz de Dracotista Descartada",	-- Discarded Dracothyst Drill
 	[398138] = "Robô-vigia Derretido",	-- Molten Scoutbot
 	[398200] = "Cofre Esquecido",	-- Forgotten Lockbox
+	[398698] = "Queijo Furado Guinchante",	-- Squeaking Swiss
 	[398770] = "Caixa de Rochas",	-- Box of Rocks
 	[398778] = "Tanque Nojento",	-- Disgusting Vat
 	[398783] = "Óleo de Escama Infuso em Chamas",	-- Flame-Infused Scale Oil
