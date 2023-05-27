@@ -1920,6 +1920,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
+					["groups"] = {
+						objective(1, {	-- 0/7 Plainstrider Beak
+							["provider"] = { "i", 5087 },	-- Plainstrider Beak
+							["crs"] = {
+								3244,	-- Greater Plainstrider
+								3246,	-- Fleeting Plainstrider
+								3245,	-- Ornery Plainstrider
+							},
+						}),
+					},
 				}),
 				q(2381, {	-- Plundering the Plunderers
 					["qg"] = 7161,	-- Wrenix the Wretched
