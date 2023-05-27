@@ -35,7 +35,7 @@ _.Zones =
 					pet(1776),	-- Mudshell Conch (PET!)
 					pet(1714),	-- Northern Hawk Owl (PET!)
 					pet(1763),	-- Spiketail Beaver (PET!)
-					header(HEADERS.Npc, 115784, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Snowfeather Hatchling
+					n(115784, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Snowfeather Hatchling
 						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",
 						["crs"] = { 115737 },	-- Orphaned Snowfeather
 						["groups"] = {

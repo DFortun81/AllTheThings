@@ -55,17 +55,54 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(QUESTS, {
 				q(74906),	-- Researchers Under Fire (Keeps unflagging? Might use as header?)
 			}),
-			n(ZONE_DROPS, {
-				i(205026),	-- Devourer Lobstrok (PET!)
-				i(205204),	-- Cataloged Shalewing (MOUNT!)
-			}),
 			n(REWARDS, {
-				i(205369),	-- Appreciative Researcher's Gift
-				i(205371),	-- Appreciative Researcher's Scrounged Goods
-				i(205367),	-- Indebted Researcher's Gift
-				i(205370),	-- Researcher's Gift
-				i(205373),	-- Researcher's Scrounged Goods
-				i(205368),	-- Thankful Researcher's Gift
+				i(205204),	-- Cataloged Shalewing (MOUNT!)
+				i(205026),	-- Devourer Lobstrok (PET!)
+				i(205369, {	-- Appreciative Researcher's Gift
+					["sym"] = {{"select","itemID",
+						205204,	-- Cataloged Shalewing (MOUNT!)
+						205026,	-- Devourer Lobstrok (PET!)
+					}},
+				}),
+				i(205371, {	-- Appreciative Researcher's Scrounged Goods
+					["sym"] = {{"select","itemID",
+						205026,	-- Devourer Lobstrok (PET!)
+					}},
+				}),
+				i(205367, {	-- Indebted Researcher's Gift
+					["sym"] = {{"select","itemID",
+						205204,	-- Cataloged Shalewing (MOUNT!)
+						205026,	-- Devourer Lobstrok (PET!)
+					}},
+				}),
+				i(205372, {	-- Indebted Researcher's Scrounged Goods
+					["sym"] = {{"select","itemID",
+						205204,	-- Cataloged Shalewing (MOUNT!)
+						205026,	-- Devourer Lobstrok (PET!)
+					}},
+				}),
+				i(205370, {	-- Researcher's Gift
+					["sym"] = {{"select","itemID",
+						205204,	-- Cataloged Shalewing (MOUNT!)
+						205026,	-- Devourer Lobstrok (PET!)
+					}},
+				}),
+				i(205373, {	-- Researcher's Scrounged Goods
+					["sym"] = {{"select","itemID",
+						205026,	-- Devourer Lobstrok (PET!)
+					}},
+				}),
+				i(205368, {	-- Thankful Researcher's Gift
+					["sym"] = {{"select","itemID",
+						205204,	-- Cataloged Shalewing (MOUNT!)
+						205026,	-- Devourer Lobstrok (PET!)
+					}},
+				}),
+				i(205374, {	-- Thankful Researcher's Scrounged Goods
+					["sym"] = {{"select","itemID",
+						205026,	-- Devourer Lobstrok (PET!)
+					}},
+				}),
 			}),
 		}),
 	}),
@@ -74,13 +111,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
 		header(HEADERS.Quest, 74906, {	-- Researchers Under Fire
-			-- Event reward hqts? --
+			q(75628),	-- Appreciative Researcher's Gift
+			q(75666),	-- Appreciative Researcher's Scrounged Goods
+			q(75630),	-- Indebted Researcher's Gift
+			--q(TODO),	-- Indebted Researcher's Scrounged Goods
+			q(75627),	-- Researcher's Gift
+			--q(TODO),	-- Researcher's Scrounged Goods
+			q(75629),	-- Thankful Researcher's Gift
+			--q(TODO),	-- Thankful Researcher's Scrounged Goods
+
 			q(74905),	-- At the end of event 'Titan Lockdown', unflagged after bag hqt
-			q(75627),	-- pop when Researcher's Gift was awarded
-			q(75628),	-- pop when Appreciative Researcher's Gift was awarded
-			q(75629),	-- pop when Thankful Researcher's Gift was awarded
-			q(75666),	-- pop when Appreciative Researcher's Scrounged Goods was awarded
-			q(75630),	-- pop when Indebted Researcher's Gift was awarded
 		}),
 	}),
 }));

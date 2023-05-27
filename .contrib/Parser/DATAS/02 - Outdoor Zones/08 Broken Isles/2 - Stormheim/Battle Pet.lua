@@ -28,7 +28,7 @@ _.Zones =
 					pet(1736),	-- Slithering Brownscale (PET!)
 					pet(1917),	-- Stormstruck Beaver (PET!)
 					pet(1750),	-- Tiny Apparition (PET!)
-					header(HEADERS.Npc, 115785, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Direbeak Hatchling
+					n(115785, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Direbeak Hatchling
 						["description"] = "1. Buy Pungent Vrykul Gamalost from Riala the Hearthwatcher in Valdisdall.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy your new Direbeak Hatchling! Do one quest each day for a mount!|r\n",
 						["crs"] = { 115742 },	-- Orphaned Direbeak
 						["groups"] = {

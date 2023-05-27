@@ -1103,8 +1103,6 @@ root(ROOTS.Unsorted, {
 				i(205992),	-- Regurgitated Half-Digested Fish
 				i(206006),	-- Earth-Warder's Thanks
 				-- Research
-				i(205372),	-- Indebted Researcher's Scrounged Goods
-				i(205374),	-- Thankful Researcher's Scrounged Goods
 				i(205454),	-- Researchers Wheel Barrow
 				-- Special
 				i(205877),	-- Adventurer's Footlocker
