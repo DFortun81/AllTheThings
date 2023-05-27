@@ -275,6 +275,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205901 },	-- Crunchy Beetle
 						["coord"] = { 57.3, 49.3, ZARALEK_CAVERN },
+						["isWeekly"] = true,
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},
@@ -283,6 +284,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205902 },	-- Deepflayer Claw
 						["coord"] = { 57.6, 56.4, ZARALEK_CAVERN },
+						["isWeekly"] = true,
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},
@@ -291,6 +293,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205795 },	-- Wriggling Worm
 						["coord"] = { 56.9, 52.1, ZARALEK_CAVERN },
+						["isWeekly"] = true,
 						["g"] = {
 							i(204985),  -- 2x Barter Brick
 						},
