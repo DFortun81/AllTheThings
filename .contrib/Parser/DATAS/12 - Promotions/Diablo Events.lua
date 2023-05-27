@@ -103,3 +103,9 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 		},
 	})),
 }));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+	n(-600, {
+		q(76216),	-- 'Bonus loot' if Tyrael's Charger unlearned / first goblin kill per day for account
+	}),
+}));

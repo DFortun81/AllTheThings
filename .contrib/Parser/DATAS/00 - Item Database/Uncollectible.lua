@@ -759,6 +759,7 @@ i(205698);	-- Mangled Niffen Pack
 i(205460);	-- Pulverized Living Earth
 i(205466);	-- Regurgitated Spores
 i(205699);	-- Rock Worm Frills
+i(205866);	-- Rough Coiled Horns
 i(205462);	-- Royal Nerubian Capsa
 i(205700);	-- Sensitive Scotopic Eye
 i(205469);	-- Serrated Sporebat Spine
