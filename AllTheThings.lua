@@ -2694,56 +2694,60 @@ NestObjects,
 PriorityNestObjects;
 app.searchCache = searchCache;
 (function()
-local keysByPriority = {	-- Sorted by frequency of use.
-	"s",
-	"toyID",
-	"itemID",
-	"speciesID",
-	"questID",
-	"npcID",
-	"creatureID",
-	"objectID",
-	"mapID",
-	"criteriaID",
-	"achID",
-	"currencyID",
-	"encounterID",
-	"instanceID",
-	"factionID",
-	"recipeID",
-	"spellID",
-	"classID",
-	"professionID",
-	"categoryID",
-	"followerID",
-	"illusionID",
-	"tierID",
-	"unit",
-	"dungeonID",
-	"headerID"
-};
-local function GetKey(t)
-	for _,key in ipairs(keysByPriority) do
-		if rawget(t, key) then
-			return key;
-		end
-	end
-	for _,key in ipairs(keysByPriority) do
-		if t[key] then	-- This goes a bit deeper.
-			return key;
-		end
-	end
-	--[[
-	print("could not determine key for object")
-	for key,value in pairs(t) do
-		print(key, value);
-	end
-	--]]
-end
+-- local keysByPriority = {	-- Sorted by frequency of use.
+-- 	"s",
+-- 	"toyID",
+-- 	"itemID",
+-- 	"speciesID",
+-- 	"questID",
+-- 	"npcID",
+-- 	"creatureID",
+-- 	"objectID",
+-- 	"mapID",
+-- 	"criteriaID",
+-- 	"achID",
+-- 	"currencyID",
+-- 	"encounterID",
+-- 	"instanceID",
+-- 	"factionID",
+-- 	"recipeID",
+-- 	"spellID",
+-- 	"classID",
+-- 	"professionID",
+-- 	"categoryID",
+-- 	"followerID",
+-- 	"illusionID",
+-- 	"tierID",
+-- 	"unit",
+-- 	"dungeonID",
+-- 	"headerID"
+-- };
+-- This function has basically 0 useful utilization that I have found
+-- local function GetKey(t)
+-- 	for _,key in ipairs(keysByPriority) do
+-- 		if rawget(t, key) then
+-- 			app.PrintDebug("rawget.key",key,t[key])
+-- 			return key;
+-- 		end
+-- 	end
+-- 	for _,key in ipairs(keysByPriority) do
+-- 		if t[key] then	-- This goes a bit deeper.
+-- 			app.PrintDebug("t[key]",key,t[key])
+-- 			return key;
+-- 		end
+-- 	end
+-- 	--[[
+-- 	print("could not determine key for object")
+-- 	for key,value in pairs(t) do
+-- 		print(key, value);
+-- 	end
+-- 	--]]
+-- 	app.PrintDebug("GetKey.none")
+-- end
 local function CreateHash(t)
-	local key = t.key or GetKey(t) or t.text;
+	local key = t.key or t.text;
 	if key then
-		local hash = key .. (rawget(t, key) or t[key] or "NOKEY");
+		local hash = key .. (t[key] or "NOKEY");
 		if key == "criteriaID" and t.achievementID then
 			hash = hash .. ":" .. t.achievementID;
 		elseif key == "itemID" and t.modItemID and t.modItemID ~= t.itemID then
@@ -2793,7 +2797,7 @@ local function CreateHash(t)
 			hash = hash .. "." .. t.rank;
 			-- app.PrintDebug("hash.rank",hash)
 		end
-		rawset(t, "hash", hash);
+		t.hash = hash;
 		return hash;
 	end
 end
