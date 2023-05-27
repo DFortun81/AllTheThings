@@ -7437,6 +7437,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { "created 10.0.7" } }, {
 				q(74955, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
 			})),
+
+			-- 10.1.0
+			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 10.1.0" } }, {
+				q(75528),	-- A Tester's Guide to Entering Zaralek
+			})),
 		}),
 	}),
 }));

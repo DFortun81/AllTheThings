@@ -5,11 +5,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	m(ZARALEK_CAVERN, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
-					-- Chapter 1 --
-				q(75528, {	-- A Tester's Guide to Entering Zaralek [Probably NYI on live?]
-					["provider"] = { "n", 204252 },	-- Questaniffen
-					["coord"] = { 49.7, 55.3, VALDRAKKEN },
-				}),
 				q(72975, {	-- The Land Beneath
 					["sourceQuests"] = { 72717 },	-- A Creche Divided
 					["provider"] = { "n", 201401 },	-- Hadexian
