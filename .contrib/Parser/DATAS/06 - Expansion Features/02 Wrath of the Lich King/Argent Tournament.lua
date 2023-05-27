@@ -1058,7 +1058,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuest"] = 13679,	-- The Aspirant's Challenge (A)
 					["coord"] = { 76.5, 19.4, ICECROWN },
-					["races"] = { NIGHTELF },
+					["races"] = { NIGHTELF, WORGEN },
 				}),
 				q(13688, {	-- A Valiant Of Gnomeregan
 					["qg"] = 33625,	-- Arcanist Taelis
@@ -1076,7 +1076,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["sourceQuest"] = 13680,	-- The Aspirant's Challenge (H)
 					["coord"] = { 76.3, 24.4, ICECROWN },
-					["races"] = { ORC },
+					["races"] = { ORC, GOBLIN, PANDAREN_HORDE, NIGHTBORNE, HIGHMOUNTAIN_TAUREN, ZANDALARI, VULPERA, MAGHAR, DRACTHYR_HORDE },
 				}),
 				q(13693, {	-- A Valiant Of Sen'jin
 					["qg"] = 33542,	-- Magister Edien Sunhollow
@@ -1094,7 +1094,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuest"] = 13679,	-- The Aspirant's Challenge (A)
 					["coord"] = { 76.5, 19.4, ICECROWN },
-					["races"] = { HUMAN },
+					["races"] = { HUMAN, PANDAREN_ALLIANCE, VOIDELF, LIGHTFORGED, KULTIRAN, DARKIRON, MECHAGNOME, DRACTHYR_ALLIANCE },
 				}),
 				q(13690, {	-- A Valiant Of The Exodar
 					["qg"] = 33625,	-- Arcanist Taelis
@@ -3713,7 +3713,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						13695,	-- A Valiant Of Undercity
 					},
 					["coord"] = { 76.5, 24.6, ICECROWN },
-					["races"] = exclude(ORC, HORDE_ONLY),
+					["races"] = exclude({ ORC, GOBLIN, PANDAREN_HORDE, NIGHTBORNE, HIGHMOUNTAIN_TAUREN, ZANDALARI, VULPERA, MAGHAR, DRACTHYR_HORDE }, HORDE_ONLY),
 				}),
 				q(13708, {	-- Valiant Of Sen'jin
 					["qg"] = 33372,	-- Zul'tore
@@ -3724,7 +3724,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						13695,	-- A Valiant Of Undercity
 					},
 					["coord"] = { 76.0, 24.5, ICECROWN },
-					["races"] = exclude({ TROLL, ZANDALARI }, HORDE_ONLY),
+					["races"] = exclude(TROLL, HORDE_ONLY),
 				}),
 				q(13711, {	-- Valiant Of Silvermoon
 					["qg"] = 33379,	-- Eressea Dawnsinger
@@ -3746,7 +3746,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						13690,	-- A Valiant Of The Exodar
 					},
 					["coord"] = { 76.6, 19.1, ICECROWN },
-					["races"] = exclude(HUMAN, ALLIANCE_ONLY),
+					["races"] = exclude({ HUMAN, PANDAREN_ALLIANCE, VOIDELF, LIGHTFORGED, KULTIRAN, DARKIRON, MECHAGNOME, DRACTHYR_ALLIANCE }, ALLIANCE_ONLY),
 				}),
 				q(13705, {	-- Valiant Of The Exodar
 					["qg"] = 33593,	-- Colosos
