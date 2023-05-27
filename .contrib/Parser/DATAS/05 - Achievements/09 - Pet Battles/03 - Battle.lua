@@ -1537,35 +1537,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 				}),
 			},
 		}),
-		ach(12100, {	-- Family Fighter
-			-- Meta Achievement should symlink the contained Achievements from Source
-			["sym"] = {
-				{"meta_achievement",
-					12089,	-- Aquatic Assault
-					12091,	-- Beast Blitz
-					12092,	-- Critical Critters
-					12093,	-- Draconic Destruction
-					12094,	-- Elemental Escalation
-					12095,	-- Fierce Fliers
-					12096,	-- Humanoid Havoc
-					12097,	-- Magical Mayhem
-					12098,	-- Mechanical Melee
-					12099,	-- Unstoppable Undead
-				}},
-			["groups"] = {
-				i(153040),	-- Felclaw Marsuul
-				ach(12089),	-- Aquatic Assault
-				ach(12091),	-- Beast Blitz
-				ach(12092),	-- Critical Critters
-				ach(12093),	-- Draconic Destruction
-				ach(12094),	-- Elemental Escalation
-				ach(12095),	-- Fierce Fliers
-				ach(12096),	-- Humanoid Havoc
-				ach(12097),	-- Magical Mayhem
-				ach(12098),	-- Mechanical Melee
-				ach(12099),	-- Unstoppable Undead
-			},
-		}),
 
 		ach(6592, {    -- Legendary Pet Battler (5000)
 			ach(6591),    -- Grand Master Pet Battler (1000)

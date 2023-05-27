@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(905, {	-- Argus
 					crit(10, {	-- The Many-Faced Devourer
 						["achievementID"] = 12078,	-- Commander of Argus
 					}),
-					i(153195),	-- Uuna's Doll (PET!)
+					i(153195),	-- Uuna (PET!)
 				},
 			}),
 			n(126208, {	-- Varga

@@ -242,7 +242,9 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 					i(98093),	-- Sightless Mantle
 					i(98081),	-- The Boomshirt
 					i(98086),	-- Tuxedo-Like Shirt
-					i(144394),	-- Tylarr Gronnden (PET!)
+					i(144394, {	-- Tylarr Gronnden (PET!)
+						["timeline"] = { ADDED_7_1_5 },
+					}),
 					i(98082),	-- Undisputed Champion's Shirt
 					i(98543),	-- Wraps of the Blood-Soaked Brawler
 				},

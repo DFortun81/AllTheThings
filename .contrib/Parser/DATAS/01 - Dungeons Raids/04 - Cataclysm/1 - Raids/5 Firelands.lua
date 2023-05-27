@@ -526,7 +526,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 53494,
 						["groups"] = {
 							ach(5830),	-- Share the Pain
-							i(152977,	{	-- Surger (PET!)
+							i(152977, {	-- Surger (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(71312),	-- Gatecrasher
@@ -550,7 +550,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							ach(5799, {	-- Only the Penitent...
 								["description"] = "This achievement requires a group of 2.",
 							}),
-							i(152978,	{	-- Infernal Pyreclaw (PET!)
+							i(152978, {	-- Infernal Pyreclaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
@@ -812,9 +812,10 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(71676),	-- Gauntlets of the Fiery Conqueror
 							i(71683),	-- Gauntlets of the Fiery Protector
 							i(71669),	-- Gauntlets of the Fiery Vanquisher
-							i(152977,	{	-- Surger (PET!)
+							i(152977, {	-- Surger (PET!)
 								["timeline"] = { ADDED_7_3_0 },
-							}),i(71454),	-- Gatecrasher
+							}),
+							i(71454),	-- Gatecrasher
 							i(71460),	-- Shard of Torment
 							i(71462),	-- Molten Scream
 							i(71465),	-- Casque of Flame
@@ -833,7 +834,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 52571,
 						["groups"] = {
 							ach(5804),	-- Heroic: Majordomo Fandral Staghelm
-							i(152978,	{	-- Infernal Pyreclaw (PET!)
+							i(152978, {	-- Infernal Pyreclaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(122304),	-- Fandral's Seed Pouch (TOY!)

@@ -10,8 +10,10 @@ _.Zones =
 			["icon"] = "Interface\\Icons\\achievement_dungeon_eyeofazshara",
 			["g"] = {
 				petbattle(filter(BATTLE_PETS, {
-					pet(1914),	-- Coastal Sandpiper
-					pet(1728),	-- Juvenile Scuttleback
+					["sym"] = {{"select","speciesID",
+						1914,	-- Coastal Sandpiper (PET!)
+						1728,	-- Juvenile Scuttleback (PET!)
+					}},
 				})),
 				n(FLIGHT_PATHS, {
 					fp(1870, {	-- Eye of Azshara, Azsuna

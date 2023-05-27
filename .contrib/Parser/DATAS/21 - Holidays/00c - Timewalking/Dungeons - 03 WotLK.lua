@@ -56,7 +56,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(156016),	-- Pyrite Infuser
 				})),
 				cr(33118, e(1638, {	-- Ignis the Furnace Master
-					i(142086),	-- Magma Rageling (PET!)
+					i(142086, {	-- Magma Rageling (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(155961),	-- Intensity
 					i(156039),	-- Relentless Edge
 					i(155956),	-- Worldcarver
@@ -81,7 +83,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(155952),	-- Heart of Iron
 				})),
 				cr(33186, e(1639, {	-- Razorscale
-					i(142087),	-- Ironbound Proto-Whelp (PET!)
+					i(142087, {	-- Ironbound Proto-Whelp (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(155946),	-- Guiding Star
 					i(156026),	-- Razorscale Talon
 					i(155943),	-- Remorse
@@ -192,7 +196,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(156000),	-- Wrathstone
 				})),
 				cr(33515, e(1643, {	-- Auriaya
-					i(142089),	-- Sanctum Cub (PET!)
+					i(142089, {	-- Sanctum Cub (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(156159),	-- Runescribed Blade
 					i(156043),	-- Stonerender
 					i(156284),	-- Nurturing Touch
@@ -218,7 +224,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				})),
 				cr(32845, e(1644, {	-- Hodir
 					i(138800),	-- Illusion: Blade Ward
-					i(142090),	-- Winter Rageling (PET!)
+					i(142090, {	-- Winter Rageling (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(156299),	-- Icecore Staff
 					i(156179),	-- Staff of Endless Winter
 					i(156180),	-- Stormedge
@@ -362,7 +370,9 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					},
 					["g"] = {
 						i(138800),	-- Illusion: Blade Ward
-						i(142092),	-- G0-R41-0N Ultratonk (PET!)
+						i(142092, {	-- G0-R41-0N Ultratonk (PET!)
+							["timeline"] = { ADDED_7_1_0 }
+						}),
 						i(156211),	-- Delirium's Touch
 						i(156329),	-- Fusion Blade
 						i(156206),	-- Insanity's Grip

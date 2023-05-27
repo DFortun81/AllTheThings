@@ -43,9 +43,24 @@ _.Zones =
 						i(152343),	-- Lustrous Eventide Staff
 					}),
 				}),
-				petbattle(ach(12100, {	-- Family Fighter
-					i(153040),	-- Felclaw Marsuul (PET!)
-				})),
+				ach(12100, {	-- Family Fighter
+					-- Meta Achievements
+					["sym"] = {{"meta_achievement",
+						12089,	-- Aquatic Assault
+						12091,	-- Beast Blitz
+						12092,	-- Critical Critters
+						12093,	-- Draconic Destruction
+						12094,	-- Elemental Escalation
+						12095,	-- Fierce Fliers
+						12096,	-- Humanoid Havoc
+						12097,	-- Magical Mayhem
+						12098,	-- Mechanical Melee
+						12099,	-- Unstoppable Undead
+					}},
+					["g"] = {
+						i(153040),	-- Felclaw Marsuul (PET!)
+					},
+				}),
 				ach(12073, {	-- Locked and Loaded
 					crit(1, {	-- Light's Judgement
 						["sourceQuests"] = { 47287 },	-- The Vindicaar Matrix Core

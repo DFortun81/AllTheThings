@@ -73,7 +73,7 @@ _.Instances = { tier(CATA_TIER, {
 									["cr"] = 49864,	-- Twilight Fiend
 								}),
 							}),
-							i(152969,	{	-- Twilight Clutch-Sister (PET!)
+							i(152969, {	-- Twilight Clutch-Sister (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(63536),	-- Blade of the Witching Hour
@@ -124,7 +124,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(64315),	-- Mantle of the Forlorn Conqueror
 							i(64316),	-- Mantle of the Forlorn Protector
 							i(64314),	-- Mantle of the Forlorn Vanquisher
-							i(152972),	-- Twilight Summoning Portal (PET!)
+							i(152972),	-- Faceless Minion (PET!)
 							i(175159, {	-- Sinister Shadows (Bag of Tricks addition)
 								["races"] = { VULPERA },
 								["questID"] = 59032,
@@ -179,7 +179,7 @@ _.Instances = { tier(CATA_TIER, {
 						},
 						["groups"] = {
 							ach(5117),	-- Heroic: Valiona and Theralion
-							i(152969,	{	-- Twilight Clutch-Sister (PET!)
+							i(152969, {	-- Twilight Clutch-Sister (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(65091),	-- Blade of the Witching Hour
@@ -232,7 +232,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(65088),	-- Shoulders of the Forlorn Conqueror
 							i(65087),	-- Shoulders of the Forlorn Protector
 							i(65089),	-- Shoulders of the Forlorn Vanquisher
-							i(152972),	-- Twilight Summoning Portal (PET!)
+							i(152972),	-- Faceless Minion (PET!)
 							i(65145),	-- Shalug'doom, the Axe of Unmaking
 							i(65090),	-- Twilight's Hammer
 							i(68600),	-- Uhn'agh Fash, the Darkest Betrayal

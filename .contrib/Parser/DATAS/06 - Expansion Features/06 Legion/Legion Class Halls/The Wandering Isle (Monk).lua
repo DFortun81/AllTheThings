@@ -810,7 +810,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(147542, {	-- Ban-Fu, Cub of Ban-Lu (PET!)
 								["sourceQuest"] = 46350,	-- The Trial of Ban-Lu
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								["timeline"] = { "added 7.2.0" },
+								["timeline"] = { ADDED_7_2_0 },
 							}),
 						},
 					}),

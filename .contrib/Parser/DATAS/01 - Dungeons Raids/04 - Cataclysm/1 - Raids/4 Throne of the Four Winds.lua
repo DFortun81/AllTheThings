@@ -58,7 +58,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(64316),	-- Mantle of the Forlorn Protector
 							i(64314),	-- Mantle of the Forlorn Vanquisher
 							i(63041),	-- Drake of the South Wind (MOUNT!)
-							i(152973,	{	-- Zephyrian Prince (PET!)
+							i(152973, {	-- Zephyrian Prince (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(68127),	-- Stormwake, the Tempest's Reach
@@ -127,7 +127,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(65088),	-- Shoulders of the Forlorn Conqueror
 							i(65087),	-- Shoulders of the Forlorn Protector
 							i(65089),	-- Shoulders of the Forlorn Vanquisher
-							i(152973,	{	-- Zephyrian Prince (PET!)
+							i(152973, {	-- Zephyrian Prince (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(68132),	-- Stormwake, the Tempest's Reach

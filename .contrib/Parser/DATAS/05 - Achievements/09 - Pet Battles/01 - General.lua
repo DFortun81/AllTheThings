@@ -12,12 +12,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		petbattle(ach(14020, {	-- Pet Battle Challenge: Blackrock Depths
 			i(174830),	-- Shadowy Disguise (TOY!)
 		})),
-		petbattle(ach(11856, {	-- Pet Battle Challenge: Deadmines*
-			i(151632),	-- Mining Monkey (PET!)
-		})),
-		petbattle(ach(11765, {	-- Pet Battle Challenge: Wailing Caverns*
-			i(147543),	-- Son of Skum (PET!)
-		})),
 		ach(12927),		-- Polished Pet Charmer*
 		ach(9712),		-- Shiny Pet Charmer*
 		petbattle(ach(6607,  {	-- Taming Azeroth*

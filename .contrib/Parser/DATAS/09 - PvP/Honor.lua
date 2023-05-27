@@ -12,6 +12,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 				145837,	-- Violet Shadowmend (Horde / Zuldazar)
 				146626,	-- Legionaire Voladis (Horde / OG)
 			},
+			["timeline"] = { ADDED_7_1_0 },
 		}),
 		i(142379, {	-- Dutiful Squire (PET!)
 			["races"] = ALLIANCE_ONLY,
@@ -20,6 +21,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 				146633,	-- Knight-Captain Jessica (Ally / SW)
 				145838,	-- Marshal Frazer (Ally / Boralus)
 			},
+			["timeline"] = { ADDED_7_1_0 },
 		}),
 	}),
 	ach(12894, {	-- Honor Level 10

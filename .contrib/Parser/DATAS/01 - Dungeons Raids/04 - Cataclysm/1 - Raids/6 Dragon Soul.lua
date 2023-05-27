@@ -272,7 +272,7 @@ _.Instances = { tier(CATA_TIER, {
 								i(77969),	-- Seal of the Signs [Dropped for Lucetia]
 							})),
 							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-								i(152979,	{	-- Faceless Mindlasher (PET!)
+								i(152979, {	-- Faceless Mindlasher (PET!)
 									["timeline"] = { ADDED_7_3_0 },
 								}),
 								i(78409),	-- Experimental Specimen Slicer
@@ -340,7 +340,7 @@ _.Instances = { tier(CATA_TIER, {
 								i(122198),	-- Music Roll: The Shattering [Note: Crieve got on stream]
 							})),
 							cr(56173, e(333, {	-- Madness of Deathwing
-								i(152981,	{	-- Unstable Tendril (PET!)
+								i(152981, {	-- Unstable Tendril (PET!)
 									["timeline"] = { ADDED_7_3_0 },
 								}),
 								i(78482),	-- Kiril, Fury of Beasts
@@ -468,7 +468,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(78181),	-- Leggings of the Corrupted Conqueror
 						i(78176),	-- Leggings of the Corrupted Protector
 						i(78171),	-- Leggings of the Corrupted Vanquisher
-						i(152979,	{	-- Faceless Mindlasher (PET!)
+						i(152979, {	-- Faceless Mindlasher (PET!)
 							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(77217),	-- Experimental Specimen Slicer
@@ -564,7 +564,7 @@ _.Instances = { tier(CATA_TIER, {
 							title(196),	-- , Destroyer's End
 						}),
 						i(77067),	-- Blazing Drake (MOUNT!)
-						i(152981,	{	-- Unstable Tendril (PET!)
+						i(152981, {	-- Unstable Tendril (PET!)
 							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(77191),	-- Gurthalak, Voice of the Deeps
@@ -681,7 +681,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(78856),	-- Leggings of the Corrupted Conqueror
 						i(78857),	-- Leggings of the Corrupted Protector
 						i(78858),	-- Leggings of the Corrupted Vanquisher
-						i(152979,	{	-- Faceless Mindlasher (PET!)
+						i(152979, {	-- Faceless Mindlasher (PET!)
 							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(78403),	-- Experimental Specimen Slicer
@@ -766,7 +766,7 @@ _.Instances = { tier(CATA_TIER, {
 						un(REMOVED_FROM_GAME, ach(6126)),	-- Realm First! Deathwing
 						i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
 						i(77067),	-- Blazing Drake (MOUNT!)
-						i(152981,	{	-- Unstable Tendril (PET!)
+						i(152981, {	-- Unstable Tendril (PET!)
 							["timeline"] = { ADDED_7_3_0 },
 						}),
 						i(78478),	-- Gurthalak, Voice of the Deeps

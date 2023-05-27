@@ -199,9 +199,9 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(124441),	-- Leylight Shard
 		}),
 		filter(BATTLE_PETS, {
-			i(128533),	-- Enchanted Cauldron
-			i(128535),	-- Enchanted Pen
-			i(128534),	-- Enchanted Torch
+			i(128533),	-- Enchanted Cauldron (PET!)
+			i(128535),	-- Enchanted Pen (PET!)
+			i(128534),	-- Enchanted Torch (PET!)
 		}),
 		cat(446, {	-- Cloak Enchantments
 			i(128549),	-- Enchant Cloak - Binding of Agility
@@ -252,7 +252,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 	}),
 	prof(ENGINEERING, {
 		filter(BATTLE_PETS, {
-			i(132519),	-- Trigger* (PET!)
+			i(132519),	-- Trigger (PET!)
 		}),
 		filter(TOYS, {
 			i(132518),	-- Blingtron's Circuit Design Tutorial (TOY!)

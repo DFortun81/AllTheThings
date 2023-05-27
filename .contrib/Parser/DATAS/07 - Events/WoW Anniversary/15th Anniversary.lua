@@ -398,7 +398,9 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 							i(171588, {	-- Westfall Saber
 								["races"] = ALLIANCE_ONLY,
 							}),
-							i(142085),	-- Nerubian Swarmer (PET!)
+							i(142085, {	-- Nerubian Swarmer (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 						},
 					}),
 					e(1636, {	-- The Lich King
@@ -424,7 +426,9 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 							i(171573),	-- Warmace of Menethil
 							i(171579),	-- Windrunner's Heartseeker
 							i(50818),	-- Invincible (MOUNT!)
-							i(142098),	-- Drudge Ghoul (PET!)
+							i(142098, {	-- Drudge Ghoul (PET!)
+								["timeline"] = { ADDED_7_1_0 },
+							}),
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown

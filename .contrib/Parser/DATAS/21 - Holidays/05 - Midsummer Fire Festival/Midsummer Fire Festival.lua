@@ -162,7 +162,7 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
 		["timeline"] = { "added 9.2.0.00000" },
 	}),
-	i(141714, {	-- Igneous Flameling (Pet)
+	i(141714, {	-- Igneous Flameling (PET!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { "added 7.1.0.22731" },
 	}),

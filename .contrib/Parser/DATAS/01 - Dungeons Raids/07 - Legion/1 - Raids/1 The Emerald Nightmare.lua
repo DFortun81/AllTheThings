@@ -55,7 +55,7 @@ _.Instances = { tier(LEGION_TIER, {
 				ach(10866),	-- The Emerald Nightmare Guild Run
 			}),
 			petbattle(filter(BATTLE_PETS, {
-				p(1722, {	-- Dream Whelpling
+				pet(1722, {	-- Dream Whelpling (PET!)
 					["description"] = "Once you defeat Xavius these will spawn in the room after him."
 				}),
 			})),

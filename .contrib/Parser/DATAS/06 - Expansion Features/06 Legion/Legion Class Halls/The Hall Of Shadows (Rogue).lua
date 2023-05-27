@@ -959,7 +959,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							}),
 							i(151633, {	-- Dig Rat (PET!)
 								["cost"] = { { "c", 1416, 10000 }, },	-- 10,000x Coin of Air
-								["timeline"] = { "added 7.2.5" },
+								["timeline"] = { ADDED_7_2_5 },
 							}),
 							i(151749),	-- Dubious Lamp
 							i(120439, {	-- Embroidered Crimson and Gold Mask
@@ -1011,7 +1011,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							}),
 							i(151569, {	-- Sneaky Marmot (PET!)
 								["cost"] = { { "c", 1416, 10000 }, },	-- 10,000x Coin of Air
-								["timeline"] = { "added 7.2.5" },
+								["timeline"] = { ADDED_7_2_5 },
 							}),
 							i(27978),	-- Soap on a Rope
 							i(27979),	-- Stone of Stupendous Springing Strides

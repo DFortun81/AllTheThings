@@ -29,7 +29,7 @@ _.Zones =
 									["sourceQuest"] = 44411,    -- Strange Humming Crystal
 									["provider"] = { "n", 90417 },	-- Archmage Khadgar
 									["g"] = {
-										i(141348),	-- Wondrous Wisdomball
+										i(141348),	-- Wondrous Wisdomball (PET!)
 									},
 								}),
 							}),

@@ -568,6 +568,7 @@ _.Zones =
 							}),
 							i(143842, {	-- Trashy (PET!)
 								["cost"] = { { "i", 138777, 50 }, },	-- 50x Drowned Mana
+								["timeline"] = { ADDED_7_1_5 },
 							}),
 						},
 					}),

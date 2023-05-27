@@ -778,17 +778,17 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(147539, {	-- Bloodbrood Whelpling (PET!)
 								["sourceQuest"] = 46813,	-- The Lost Glacier
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								["timeline"] = { "added 7.2.0" },
+								["timeline"] = { ADDED_7_2_0 },
 							}),
 							i(147540, {	-- Frostbrood Whelpling (PET!)
 								["sourceQuest"] = 46813,	-- The Lost Glacier
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								["timeline"] = { "added 7.2.0" },
+								["timeline"] = { ADDED_7_2_0 },
 							}),
 							i(147541, {	-- Vilebrood Whelpling (PET!)
 								["sourceQuest"] = 46813,	-- The Lost Glacier
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								["timeline"] = { "added 7.2.0" },
+								["timeline"] = { ADDED_7_2_0 },
 							}),
 						},
 					}),

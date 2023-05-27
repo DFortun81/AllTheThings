@@ -5,10 +5,6 @@
 
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	filter(BATTLE_PETS, {
-		model(65527, i(129108, {	-- Son of Goredome						(Never added in Game)
-			p(1751),
-		})),
-		i(130145),	-- Unknown
 		i(21168),	-- Baby Shark
 		i(39148),	-- Baby Coralshell Turtle
 		i(66070),	-- Lizzy
@@ -17,8 +13,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(109602),	-- Echo of Murmur (temp item)
 		i(115469),	-- Pet template
 		i(67417),	-- DND lil dw placeholder
-		i(131737),	-- Wyrmy Tunkins
-		i(136906),	-- Brown Piglet
 		i(115282),	-- Draenei Micro Defender (different version is used)
 		i(118596),	-- Sassy Sproutling
 		i(113569),	-- Autumnal Sproutling (unused ver)
@@ -49,24 +43,202 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(13342),	-- Pet Fish
 		i(13343),	-- Pet Stone
 		i(82800),	-- "Pet Cage"
-		i(62769, {	-- Hardboiled Egg
-			["description"] = "Unable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.",
-			["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
-				p(1758),
-			},
-		}),
-		model(65670, i(136907, {	-- Black Piglet
-			p(1758),
-		})),
-		i(136897),	-- Northern Hawk Owl (wild pet catchable, item was never used)
-		i(141316),	-- Odd Murloc Egg (wild pet catchable, item was never used)
-		i(136913),	-- Red Broodling (wild pet catchable, item was never used)
-		i(136902),	-- Toxic Whelpling (wild pet catchable, item was never used)
-		i(136921),	-- Trigger (132519 is crafted from engineering, doesn't appear this version was ever used)
+		i(62769),	-- Hardboiled Egg
 		i(67600),	-- Lil' Alexstrasza (Never added in Game)
 		-- #if BEFORE 7.0.3
 		i(23712),	-- White Tiger Cub -- later reused for Ash'ana.
 		-- #endif
+		tier(LEGION_TIER, {
+			-- 7.0.3
+			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
+				-- Trainer Pets --
+				pet(1893),	-- Allured Tadpole (PET!)
+				pet(1860),	-- Ancient Catacomb Spider (PET!)
+				pet(1866),	-- Baby Bjorn (PET!)
+				pet(1771),	-- Baeloth (PET!)
+				pet(1788),	-- Beaky (PET!)
+				pet(1857),	-- Beauty (PET!)
+				pet(1883),	-- Blottis (PET!)
+				pet(1897),	-- Breezy Book (PET!)
+				pet(1851),	-- Cackling Flame (PET!)
+				pet(1861),	-- Catacomb Bat (PET!)
+				pet(1862),	-- Catacomb Snake (PET!)
+				pet(1882),	-- Chromadon (PET!)
+				pet(1782),	-- Clamps (PET!)
+				pet(1796),	-- Coach (PET!)
+				pet(1894),	-- Confused Tadpole (PET!)
+				pet(1858),	-- Conviction (PET!)
+				pet(1869),	-- Crawdead (PET!)
+				pet(1899),	-- Delicate Moth (PET!)
+				pet(1852),	-- Devouring Blaze (PET!)
+				pet(1859),	-- Dignity (PET!)
+				pet(1875),	-- Dinner (PET!)
+				pet(1793),	-- Egcellent (PET!)
+				pet(1865),	-- Essence of Mana (PET!)
+				pet(1877),	-- Eye of Inquisition (PET!)
+				pet(1878),	-- Eye of Interrogation (PET!)
+				pet(1879),	-- Eye of Impetration (PET!)
+				pet(1792),	-- Fethyr (PET!)
+				pet(1863),	-- Font of Mana (PET!)
+				pet(1905),	-- Foof (PET!)
+				pet(1846),	-- Globs (PET!)
+				pet(1870),	-- Gnaw (PET!)
+				pet(1797),	-- Greatest Foe (PET!)
+				pet(1799),	-- Grommet (PET!)
+				pet(1798),	-- Gulp (PET!)
+				pet(1873),	-- Gusteau (PET!)
+				pet(1871),	-- Harbinger of Dark (PET!)
+				pet(1815),	-- Heliosus (PET!)
+				pet(1898),	-- Helpful Spirit (PET!)
+				pet(1872),	-- Herald of Light (PET!)
+				pet(1843),	-- Hungry Icefang (PET!)
+				pet(1895),	-- Hungry Owl (PET!)
+				pet(1896),	-- Hungry Rat (PET!)
+				pet(1800),	-- Itchy (PET!)
+				pet(1748),	-- Jinx (PET!)
+				pet(1780),	-- Kiazor the Destroyer (PET!)
+				pet(1790),	-- Lil' Spirit Guide (PET!)
+				pet(1906),	-- Lil' Sizzle (PET!)
+				pet(1881),	-- Lil'idan (PET!)
+				pet(1853),	-- Living Coals (PET!)
+				pet(1745),	-- Marshmallow (PET!)
+				pet(1742),	-- Master Tamer Flummox (PET!)
+				pet(1816),	-- Mini Magmatron (PET!)
+				pet(1817),	-- Mini Arcanotron (PET!)
+				pet(1818),	-- Mini Electron (PET!)
+				pet(1867),	-- Mini Musken (PET!)
+				pet(1868),	-- Mist Wraith (PET!)
+				pet(1848),	-- Nightmare Sprout (PET!)
+				pet(1791),	-- Quillino (PET!)
+				pet(1794),	-- Red Wire (PET!)
+				pet(1874),	-- Remy (PET!)
+				pet(1746),	-- Rocket (PET!)
+				pet(1842),	-- Rocklick (PET!)
+				pet(1811),	-- Rocko (PET!)
+				pet(1787),	-- Roots (PET!)
+				pet(1801),	-- Salty Bird (PET!)
+				pet(1781),	-- Scuttles (PET!)
+				pet(1864),	-- Seed of Mana (PET!)
+				pet(1795),	-- Sir Murkeston (PET!)
+				pet(1841),	-- Slow Moe (PET!)
+				pet(1840),	-- Snot (PET!)
+				pet(1519),	-- Snowfang (PET!)
+				pet(1855),	-- Splint Jr. (PET!)
+				pet(1880),	-- Stitches Jr. Jr. (PET!)
+				pet(1904),	-- Stumpers (PET!)
+				pet(1892),	-- Subjugated Tadpole (PET!)
+				pet(1789),	-- Sunny (PET!)
+				pet(1849),	-- The Maw (PET!)
+				pet(1850),	-- Thistleleaf Bully (PET!)
+				pet(1770),	-- Thrugtusk (PET!)
+				pet(1847),	-- Trixy (PET!)
+				pet(1891),	-- Vinu (PET!)
+				pet(1772),	-- Wumpas (PET!)
+				-- With SpeciesID Attached
+				i(136907, {	-- Black Piglet (PET!)
+					["modelID"] = 65670,
+				}),
+				i(136906, {	-- Brown Piglet (PET!)
+					["modelID"] = 65669,
+				}),
+				i(129108, {	-- Son of Goredome (PET!)
+					["modelID"] = 65527,
+				}),
+				-- Without SpeciesID Attached
+				i(136897),	-- Northern Hawk Owl (PET!) [Northern Hawk Owl, item was never used]
+				i(136913),	-- Red Broodling (PET!) [Squirky, item was never used]
+				i(136902),	-- Toxic Whelpling (PET!) [Vicious Broodling, item was never used]
+				i(136921),	-- Trigger (PET!) [Trigger, item was never used]
+				i(131737),	-- Wyrmy Tunkins (PET!) [Wyrmy Tunkins, item was never used]
+				i(130145),	-- Unknown (PET!)
+			})),
+
+			-- 7.1.0
+			tier(LEGION_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 7.1.0" } }, {
+				-- Trainer Pets --
+				pet(1982),	-- Buzz (PET!)
+				pet(1983),	-- Cherry (PET!)
+				pet(1971),	-- Comet (PET!)
+				pet(1973),	-- Constellatius (PET!)
+				pet(1972),	-- Cosmos (PET!)
+				pet(1981),	-- Swoop (PET!)
+				-- Without SpeciesID Attached
+				i(141316),	-- Odd Murloc Egg (PET!) [Squirky, item was never used]
+			})),
+
+			-- 7.2.0
+			tier(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 7.2.0" } }, {
+				-- Trainer Pets --
+				pet(1996),	-- Budding Everliving Spore (PET!)
+				pet(1988),	-- Deviate Chomper (PET!)
+				pet(1987),	-- Deviate Flapper (PET!)
+				pet(1989),	-- Deviate Smallclaw (PET!)
+				pet(1992),	-- Dreadcoil (PET!)
+				pet(2008),	-- Fido (PET!)
+				pet(2010),	-- Flickering Fel (PET!)
+				pet(1995),	-- Growing Ectoplasm (PET!)
+				pet(1994),	-- Hiss (PET!)
+				pet(2011),	-- Imply (PET!)
+				pet(2014),	-- Living Pool (PET!)
+				pet(1993),	-- Phyxia (PET!)
+				pet(2016),	-- Rock Lobster (PET!)
+				pet(2012),	-- Rover (PET!)
+				pet(2013),	-- Seduction (PET!)
+				pet(2009),	-- Seer's Eye (PET!)
+				pet(1990),	-- Son of Skum (PET!)
+				pet(2015),	-- Tia Mia and Larry (PET!)
+				pet(1991),	-- Vilefang (PET!)
+				-- Only SpeciesID
+				pet(2046),	-- Arne's Test Pet (PET!)
+			})),
+
+			-- 7.2.5
+			tier(LEGION_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 7.2.5" } }, {
+				-- Trainer Pets --
+				pet(2033),	-- "Captain" Klutz (PET!)
+				pet(2027),	-- Angry Geode (PET!)
+				pet(2032),	-- Cookie's Leftovers (PET!)
+				pet(2039),	-- Deadmines Parrot (PET!)
+				pet(2038),	-- Deadmines Rat (PET!)
+				pet(2031),	-- Foe Reaper 50 (PET!)
+				pet(2040),	-- Ironclad Crab (PET!)
+				pet(2025),	-- Klutz's Battle Bird (PET!)
+				pet(2024),	-- Klutz's Battle Monkey (PET!)
+				pet(2026),	-- Klutz's Battle Rat (PET!)
+				pet(2028),	-- Mining Monkey (PET!)
+				pet(2023),	-- Unfortunate Defias (PET!)
+				-- Only SpeciesID
+				pet(2061),	-- Test Dragon Pet (PET!)
+			})),
+
+			-- 7.3.0
+			tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
+				-- Trainer Pets --
+				pet(2097),	-- Baneglow (PET!)
+				pet(2108),	-- Bloat (PET!)
+				pet(2101),	-- Bucky (PET!)
+				pet(2066),	-- Clamp (PET!)
+				pet(2068),	-- Corporal Hammer (PET!)
+				pet(2105),	-- Corrupted Blood of Argus (PET!)
+				pet(2099),	-- Deathscreech (PET!)
+				pet(2109),	-- Earseeker (PET!)
+				pet(2096),	-- Foulclaw (PET!)
+				pet(2103),	-- Gloamwing (PET!)
+				pet(2100),	-- Gnasher (PET!)
+				pet(2067),	-- M-37 (PET!)
+				pet(2106),	-- Mar'cuus (PET!)
+				pet(2111),	-- Minixis (PET!)
+				pet(2110),	-- One-of-Many (PET!)
+				pet(2112),	-- Pilfer (PET!)
+				pet(2098),	-- Retch (PET!)
+				pet(2095),	-- Ruinhoof (PET!)
+				pet(2104),	-- Shadeflicker (PET!)
+				pet(2102),	-- Snozz (PET!)
+				pet(2107),	-- Watcher (PET!)
+				-- Only SpeciesID
+				pet(2048),	-- Golden Retriever (PET!)
+			})),
+		}),
 		tier(BFA_TIER, {
 			-- 8.0.1
 			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {

@@ -16,15 +16,13 @@ i(116415, {	-- Shiny Pet Charm
 });
 root(ROOTS.PetBattles, petbattle({
 	n(QUESTS, {
-		q(44767, {	-- A Celestial Invitation
+		q(44767, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- A Celestial Invitation
 			["provider"] = { "i", 142210 },	-- Celestial Invitation
 			["coord"] = { 41.4, 24.4, THE_STORM_PEAKS },
 			["g"] = {
-				i(142100, {	-- Stardust (PET!)
-					["timeline"] = { ADDED_7_1_0 },
-				}),
+				i(142100),	-- Stardust (PET!)
 			},
-		}),
+		})),
 		-- Battle Pet Tamers Quests
 		q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms (A)
 			-- ["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
@@ -919,16 +917,16 @@ root(ROOTS.PetBattles, petbattle({
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31814 },	-- Analynn
 		}),
-		q(47895, {	-- Bert's Bots
+		q(47895, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Bert's Bots
+			["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan.",
 			["provider"] = { "n", 124617 },	-- Environeer Bert
 			["coord"] = { 42.9, 74.2, NEW_TINKERTOWN_LOWER },
-			["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan.",
 			["g"] = {
 				i(151638, {	-- Leprous Sack of Pet Supplies
 					i(151645),	-- Dibbler (PET!)
 				}),
 			},
-		}),
+		})),
 		q(31851, {	-- Bill Buckler
 			["provider"] = { "n", 65656 },	-- Bill Buckler
 			["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
@@ -941,16 +939,16 @@ root(ROOTS.PetBattles, petbattle({
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31870 },	-- Cassandra Kaboom
 		}),
-		q(45083, {	-- Crysa's Flyers
+		q(45083, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Crysa's Flyers
 			["provider"] = { "n", 115286 },	-- Crysa
 			["coord"] = { 63.6, 35.8, NORTHERN_BARRENS },
 			["groups"] = {
 				i(142447, {	-- Torn Sack of Pet Supplies
 					i(142448),	-- Albino Buzzard (PET!)
 					i(89587),	-- Porcupette (PET!)
-				}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
+				}),
 			},
-		}),
+		})),
 		q(31819, {	-- Dagra the Fierce
 			["provider"] = { "n", 66135 },	-- Dagra the Fierce
 			["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },

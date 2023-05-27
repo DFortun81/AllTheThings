@@ -25,7 +25,7 @@ _.Zones =
 				pet(2129, {	-- Voidstalker Runt (PET!)
 					["coord"] = { 43.0, 65.0, 882 },
 				}),
-				p(2128, {	-- Warpstalker Runt (PET!)
+				pet(2128, {	-- Warpstalker Runt (PET!)
 					["coord"] = { 46.6, 68.6, 882 },
 				}),
 				ach(12088, {	-- Anomalous Animals of Argus

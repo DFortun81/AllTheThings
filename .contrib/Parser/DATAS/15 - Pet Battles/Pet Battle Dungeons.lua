@@ -106,12 +106,11 @@ root(ROOTS.PetBattles, petbattle({
 				}),
 			},
 		}),
-		q(46292, {	-- Pet Battle Challenge: Deadmines
+		q(46292, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- Pet Battle Challenge: Deadmines
 			["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 			["coord"] = { 41.6, 71.2, WESTFALL },
 			["sourceQuest"] = 46291,	-- The Deadmines Strike Back
 			["isWeekly"] = true,
-			["lvl"] = 110,
 			["maps"] = {
 				835,	-- Pet Dungeon 1
 				836,	-- Pet Dungeon 2
@@ -123,13 +122,11 @@ root(ROOTS.PetBattles, petbattle({
 				q(46293, {	-- Deadmines, Part Three?
 					["provider"] = { "n", 96479 },	-- Breanni
 					["coord"] = { 58.2, 39.4, LEGION_DALARAN },
-					["lvl"] = 110,
 				}),
 				q(46291, {	-- The Deadmines Strike Back
 					["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 					["coord"] = { 41.6, 71.2, WESTFALL },
 					["sourceQuest"] = 46263,	-- Deadmines, Part Three?
-					["lvl"] = 110,
 					["g"] = {
 						spell(244502),	-- Manapoof Link: Westfall
 						i(122457),	-- Ultimate Battle-Training Stone
@@ -153,13 +150,12 @@ root(ROOTS.PetBattles, petbattle({
 					},
 				}),
 			},
-		}),
+		})),
 		q(54186, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Pet Battle Challenge: Gnomeregan
 			["provider"] = { "n", 147070 },	-- Micro Zoox
 			["coord"] = { 31.2, 37.4, NEW_TINKERTOWN },
 			["sourceQuest"] = 54185,	-- Gnomeregan's New Guardians
 			["isWeekly"] = true,
-			["lvl"] = 120,
 			["maps"] = {
 				NEW_TINKERTOWN_LOWER,
 				840,	-- Pet Dungeon
@@ -224,7 +220,6 @@ root(ROOTS.PetBattles, petbattle({
 			["coord"] = { 43.1, 19.9, EASTERN_PLAGUELANDS },
 			["sourceQuest"] = 56491,	-- Tiny Terrors of Stratholme
 			["isWeekly"] = true,
-			["lvl"] = 120,
 			["maps"] = {
 				1505,	-- Pet Dungeon
 			},
@@ -299,12 +294,11 @@ root(ROOTS.PetBattles, petbattle({
 				}),
 			},
 		})),
-		q(45539, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Pet Battle Challenge: Wailing Caverns
+		q(45539, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Pet Battle Challenge: Wailing Caverns
 			["provider"] = { "n", 116781 },	-- Muyani
 			["coord"] = { 38.8, 68.2, NORTHERN_BARRENS },
 			["sourceQuest"] = 45423,	-- Wailing Critters
 			["isWeekly"] = true,
-			["lvl"] = 110,
 			["maps"] = {
 				825,	-- Pet Dungeon
 			},
@@ -335,8 +329,8 @@ root(ROOTS.PetBattles, petbattle({
 				}),
 				i(143753, {	-- Damp Pet Supplies
 					i(143754),	-- Cavern Moccasin (PET!)
-					i(143755),	-- Young Venomfang (PET!)
 					i(143756),	-- Everliving Spore (PET!)
+					i(143755),	-- Young Venomfang (PET!)
 				}),
 			},
 		})),

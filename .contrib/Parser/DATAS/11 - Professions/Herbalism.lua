@@ -192,7 +192,9 @@ profession(HERBALISM, {
 			}
 		}),
 		filter(BATTLE_PETS, {
-			i(153045),	-- Fel Lasher (PET!)
+			i(153045, {	-- Fel Lasher (PET!)
+				["timeline"] = { ADDED_7_3_0 }
+			}),
 		}),
 		n(QUESTS, {
 			-- TODO: map these

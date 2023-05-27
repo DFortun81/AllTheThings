@@ -19,7 +19,7 @@ _.Zones =
 					}),
 				}),
 				petbattle(filter(BATTLE_PETS, {
-					p(1915),	-- Blind Rat
+					pet(1915),	-- Blind Rat (PET!)
 				})),
 				n(VENDORS, {
 					n(106056, {	-- Charles Seaton
@@ -136,7 +136,7 @@ _.Zones =
 							i(139412, {	-- Young Mutant War Turtles
 								["cost"] = { { "c", 1149, 1500 }, },	-- 1,500x Sightless Eye
 								["g"] = {
-									p(1912),	-- Young Mutant Warturtle (PET!)
+									pet(1912),	-- Young Mutant Warturtle (PET!)
 								},
 							}),
 						},

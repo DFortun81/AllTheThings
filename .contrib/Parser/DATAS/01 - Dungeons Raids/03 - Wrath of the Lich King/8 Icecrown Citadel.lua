@@ -3239,7 +3239,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142099, {	-- Call of the Frozen Blade (PET!)
+							i(142099, {	-- Wicked Soul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice
@@ -3980,7 +3980,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142099, {	-- Call of the Frozen Blade (PET!)
+							i(142099, {	-- Wicked Soul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice
