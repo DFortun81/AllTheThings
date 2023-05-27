@@ -23,6 +23,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			o(398698, {	-- Squeaking Swiss
 				["coord"] = { 52.4, 26.8, ZARALEK_CAVERN },
+				["questID"] = 75648,
 				["g"] = {
 					i(204871, {	-- Recipe Rat
 						["cost"] = { { "i", 3927, 20 } },	-- 20x Fine Aged Cheddar
