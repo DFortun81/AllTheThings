@@ -25,10 +25,6 @@ end
 	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
 -- MissingIDs also host speciesIDs that are still missing in our database. For a full list of speciesID see Database Harvester > Raw > Pets.txt
 
---------------
--- UNSORTED --
---------------
-
 
 -----------------
 -- PATCH 1.11.1 --
@@ -85,7 +81,6 @@ i(11027, 64);		-- Wood Frog
 i(12264, 89);		-- Worg Pup
 i(13582, 94);		-- Zergling
 
-
 -----------------
 -- PATCH 1.12.1 --
 -----------------
@@ -139,7 +134,6 @@ i(32617, 157);		-- Willy
 -- ITEM --
 i(33154, 162);		-- Sinister Squashling
 i(32233, 153);		-- Wolpertinger
-
 
 -----------------
 -- PATCH 2.3.0 --
@@ -197,7 +191,6 @@ i(39896, 194);		-- Tickbird Hatchling
 i(38658, 187);		-- Vampiric Batling
 i(11110, 84);		-- Westfall Chicken
 i(39899, 195);		-- White Tickbird Hatchling
-
 
 -----------------
 -- PATCH 3.0.3 --
@@ -267,8 +260,6 @@ i(69992, 229);		-- Shimmering Wyrmling (No Rep Requirement)
 i(46820, 229);		-- Shimmering Wyrmling (Alliance)
 i(46821, 229);		-- Shimmering Wyrmling (Horde)
 
-
-
 -----------------
 -- PATCH 3.2.2 --
 -----------------
@@ -288,7 +279,6 @@ i(49287, 241);		-- Tuskarr Kite
 i(46398, 224);		-- Calico Cat
 i(49646, 244);		-- Core Hound Pup
 i(49912, 250);		-- Perky Pug
-
 
 -----------------
 -- PATCH 3.3.2 --
@@ -443,6 +433,7 @@ i(85222, 1042);		-- Red Cricket
 i(72153, 665);		-- Sand Scarab
 i(82775, 846);		-- Sapphire Cub
 i(78916, 347);		-- Soul of the Aspects
+i(90953, 1127);		-- Spectral Cub
 i(142223, 382);		-- Sun Darter Hatchling
 i(85220, 650);		-- Terrible Turnip
 i(85513, 802);		-- Thundering Serpent Hatchling
@@ -841,7 +832,6 @@ i(92707, 1117);		-- Cinder Kitten
 i(93025, 1142);		-- Clock'em
 i(93034, 1149);		-- Corefire Imp
 i(91040, 1063);		-- Darkmoon Eye
-i(91031, 1062);		-- Darkmoon Glowfly
 i(91003, 1061);		-- Darkmoon Hatchling
 i(93037, 1153);		-- Death Talon Whelpguard
 i(93032, 1144);		-- Fungal Abomination
@@ -854,7 +844,6 @@ i(93031, 1145);		-- Mr. Bigglesworth
 i(92799, 1125);		-- Pandaren Air Spirit
 i(92800, 1126);		-- Pandaren Earth Spirit
 i(92798, 1124);		-- Pandaren Fire Spirit
-i(90953, 1127);		-- Spectral Cub
 i(93029, 1146);		-- Stitched Pup
 i(93036, 1151);		-- Untamed Hatchling
 i(93039, 1154);		-- Viscidus Globule
@@ -863,6 +852,7 @@ n(68839, 1163);		-- Anodized Robo Cub
 n(68819, 1160);		-- Arcane Eye
 n(68841, 1164);		-- Cogblade Raptor
 n(67443, 1068);		-- Crow
+n(67329, 1062);		-- Darkmoon Glowfly
 n(68850, 1167);		-- Emerald Proto-Whelp
 n(68838, 1162);		-- Fluxfire Feline
 n(68804, 1157);		-- Harpy Youngling
@@ -873,20 +863,23 @@ n(68845, 1165);		-- Nexus Whelpling
 n(68805, 1158);		-- Stunted Yeti
 n(68506, 1128);		-- Sumprush Rodent
 -- TRAINER --
-n(0, 1193);		-- Dos-Ryga
-n(0, 1066);		-- Fezwick
-n(0, 1187);		-- Gorespine
-n(0, 1189);		-- Greyhoof
-n(0, 1067);		-- Honky-Tonk
-n(0, 1065);		-- Judgment
-n(0, 1129);		-- Ka'wi the Gorger
-n(0, 1192);		-- Kafi
-n(0, 1190);		-- Lucky Yi
-n(0, 1194);		-- Nitun
-n(0, 1188);		-- No-No
-n(0, 1195);		-- Skitterer Xi'a
-n(0, 1191);		-- Ti'un the Wanderer
-
+i(0, 1130);			-- Crimson
+i(0, 1137);			-- Darnak the Tunneler
+i(0, 1135);			-- Dusty
+i(0, 1066);			-- Fezwick
+i(0, 1131);			-- Glowy
+i(0, 1067);			-- Honky-Tonk
+i(0, 1065);			-- Judgment
+i(0, 1132);			-- Marley
+i(0, 1140);			-- Pandaren Air Spirit
+i(0, 1141);			-- Pandaren Earth Spirit
+i(0, 1139);			-- Pandaren Fire Spirit
+i(0, 1138);			-- Pandaren Water Spirit
+i(0, 1134);			-- Sludgy
+i(0, 1133);			-- Tiptoe
+i(0, 1136);			-- Whispertail
+-- NYI --
+i(91031, 0);		-- Darkmoon Glowfly
 
 -----------------
 -- PATCH 5.2.0 --
@@ -919,7 +912,17 @@ n(69818, 1181);		-- Elder Python
 n(69794, 1179);		-- Electrified Razortooth
 n(69819, 1182);		-- Swamp Croaker
 n(69648, 1175);		-- Thundertail Flapper
-
+-- TRAINER --
+i(0, 1193);			-- Dos-Ryga
+i(0, 1187);			-- Gorespine
+i(0, 1189);			-- Greyhoof
+i(0, 1129);			-- Ka'wi the Gorger
+i(0, 1192);			-- Kafi
+i(0, 1190);			-- Lucky Yi
+i(0, 1194);			-- Nitun
+i(0, 1188);			-- No-No
+i(0, 1195);			-- Skitterer Xi'a
+i(0, 1191);			-- Ti'un the Wanderer
 
 -----------------
 -- PATCH 5.3.0 --
@@ -946,8 +949,7 @@ i(97960, 1244);		-- Viscous Horror
 -- NPC --
 n(71163, 1238);		-- Unborn Val'kyr
 -- TRAINER --
-n(0, 1247);		-- Doopy
-
+i(0, 1247);			-- Doopy
 
 -----------------
 -- PATCH 5.4.0 --
@@ -981,58 +983,45 @@ i(103637, 1344);	-- Vengeful Porcupette
 i(101771, 1266);	-- Xu-Fu, Cub of Xuen
 i(102147, 1304);	-- Yu'la, Broodling of Yu'lon
 i(102146, 1305);	-- Zao, Calfling of Niuzao
-i(128423, 1255);	-- Zeradar
 -- NPC --
 n(73542, 1324);		-- Ashwing Moth
 n(73543, 1325);		-- Flamering Moth
 n(73368, 1326);		-- Skywisp Moth
 -- TRAINER --
-n(0, 1301);		-- Alex
-n(0, 1278);		-- Au
-n(0, 1279);		-- Banks
-n(0, 1292);		-- Bolo
-n(0, 1280);		-- Brewly
-n(0, 1296);		-- Carpe Diem
-n(0, 1271);		-- Chaos
-n(0, 1311);		-- Chi-Chi, Hatchling of Chi-Ji
-n(0, 1281);		-- Chirps
-n(0, 1299);		-- Cindy
-n(0, 1130);		-- Crimson
-n(0, 1300);		-- Dah'da
-n(0, 1137);		-- Darnak the Tunneler
-n(0, 1135);		-- Dusty
-n(0, 1131);		-- Glowy
-n(0, 1283);		-- Knowledge
-n(0, 1293);		-- Li
-n(0, 1277);		-- Lil' B
-n(0, 1339);		-- Lil' Oondasta
-n(0, 1132);		-- Marley
-n(0, 1289);		-- Monte
-n(0, 1288);		-- Nairn
-n(0, 1140);		-- Pandaren Air Spirit
-n(0, 1141);		-- Pandaren Earth Spirit
-n(0, 1139);		-- Pandaren Fire Spirit
-n(0, 1138);		-- Pandaren Water Spirit
-n(0, 1284);		-- Patience
-n(0, 1290);		-- Rikki
-n(0, 1297);		-- River
-n(0, 1269);		-- Screamer
-n(0, 1134);		-- Sludgy
-n(0, 1291);		-- Socks
-n(0, 1298);		-- Spirus
-n(0, 1287);		-- Stormoen
-n(0, 1286);		-- Summer
-n(0, 1133);		-- Tiptoe
-n(0, 1282);		-- Tonsa
-n(0, 1268);		-- Trike
-n(0, 1136);		-- Whispertail
-n(0, 1285);		-- Wisdom
-n(0, 1267);		-- Xu-Fu, Cub of Xuen
-n(0, 1295);		-- Yen
-n(0, 1317);		-- Yu'la, Broodling of Yu'lon
-n(0, 1319);		-- Zao, Calfling of Niuzao
+i(0, 1301);			-- Alex
+i(0, 1278);			-- Au
+i(0, 1279);			-- Banks
+i(0, 1292);			-- Bolo
+i(0, 1280);			-- Brewly
+i(0, 1296);			-- Carpe Diem
+i(0, 1271);			-- Chaos
+i(0, 1311);			-- Chi-Chi, Hatchling of Chi-Ji
+i(0, 1281);			-- Chirps
+i(0, 1299);			-- Cindy
+i(0, 1300);			-- Dah'da
+i(0, 1283);			-- Knowledge
+i(0, 1293);			-- Li
+i(0, 1277);			-- Lil' B
+i(0, 1339);			-- Lil' Oondasta
+i(0, 1289);			-- Monte
+i(0, 1288);			-- Nairn
+i(0, 1284);			-- Patience
+i(0, 1290);			-- Rikki
+i(0, 1297);			-- River
+i(0, 1269);			-- Screamer
+i(0, 1291);			-- Socks
+i(0, 1298);			-- Spirus
+i(0, 1287);			-- Stormoen
+i(0, 1286);			-- Summer
+i(0, 1282);			-- Tonsa
+i(0, 1268);			-- Trike
+i(0, 1285);			-- Wisdom
+i(0, 1267);			-- Xu-Fu, Cub of Xuen
+i(0, 1295);			-- Yen
+i(0, 1317);			-- Yu'la, Broodling of Yu'lon
+i(0, 1319);			-- Zao, Calfling of Niuzao
 -- NYI --
-n(0, 1258);		-- Angara
+i(0, 1258);			-- Angara
 i(0, 1257);			-- Crafty
 
 -----------------
@@ -1042,13 +1031,11 @@ i(0, 1257);			-- Crafty
 i(106240, 1363);	-- Alterac Brew-Pup
 i(106244, 1364);	-- Murkalot
 
-
 -----------------
 -- PATCH 5.4.2 --
 -----------------
 -- ITEM --
 i(106256, 1365);	-- Treasure Goblin
-
 
 -----------------
 -- PATCH 5.4.7 --
@@ -1339,6 +1326,7 @@ i(129216, 1764);	-- Energized Manafiend
 i(128770, 1725);	-- Grumpling
 i(128427, 1454);	-- Murkidan
 i(128426, 1691);	-- Nibbles
+i(128423, 1255);	-- Zeradar
 -- NPC --
 n(97568, 1741);		-- Ghastly Rat
 n(97569, 1740);		-- Ghost Maggot

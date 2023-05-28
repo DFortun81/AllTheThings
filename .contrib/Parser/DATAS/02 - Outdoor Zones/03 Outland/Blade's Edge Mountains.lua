@@ -149,7 +149,8 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(1164, {	-- Cogblade Raptor
-							["description"] ="Found often to the left and right of Death's Door."
+							["description"] ="Found often to the left and right of Death's Door.",
+							["timeline"] = { ADDED_5_1_0 },
 						}),
 						pet(528, {	-- Scalded Basilisk Hatchling (PET!)
 							["coord"] = { 72.8, 20.6, BLADES_EDGE_MOUNTAINS },

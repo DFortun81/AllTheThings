@@ -4,11 +4,11 @@
 
 root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Island
 	filter(BATTLE_PETS, {
-		petbattle(p(1068, {	-- Crow
-			["crs"] = { 67443 },	-- Crow
+		petbattle(pet(1068, {	-- Crow (PET!)
+			["timeline"] = { ADDED_5_1_0 },
 		})),
-		petbattle(p(1062, {	-- Darkmoon Glowfly
-			["crs"] = { 67329 },	-- Darkmoon Glowfly
+		petbattle(pet(1062, {	-- Darkmoon Glowfly (PET!)
+			["timeline"] = { ADDED_5_1_0 },
 		})),
 		prof(FISHING, {
 			i(73953, {	-- Sea Pony (PET!)

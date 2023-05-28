@@ -168,65 +168,6 @@ pet(1009),	-- Crusher \\ Emperor Crab
 pet(1010),	-- Whiskers \\ Golden Civet Kitten
 pet(1011),	-- Stormlash \\ Wild Golden Hatchling
 pet(1012),	-- Chirrup \\ Singing Cricket
-pet(1065),	-- Judgment
-pet(1066),	-- Fezwick
-pet(1067),	-- Honky-Tonk
-pet(1129),	-- Ka'wi the Gorger
-pet(1130),	-- Crimson
-pet(1131),	-- Glowy
-pet(1132),	-- Marley
-pet(1133),	-- Tiptoe
-pet(1134),	-- Sludgy
-pet(1135),	-- Dusty
-pet(1136),	-- Whispertail
-pet(1137),	-- Darnak the Tunneler
-pet(1138),	-- Pandaren Water Spirit
-pet(1139),	-- Pandaren Fire Spirit
-pet(1140),	-- Pandaren Air Spirit
-pet(1141),	-- Pandaren Earth Spirit
-pet(1187),	-- Gorespine
-pet(1188),	-- No-No
-pet(1189),	-- Greyhoof
-pet(1190),	-- Lucky Yi
-pet(1191),	-- Ti'un the Wanderer
-pet(1192),	-- Kafi
-pet(1193),	-- Dos-Ryga
-pet(1194),	-- Nitun
-pet(1195),	-- Skitterer Xi'a
-pet(1247),	-- Doopy
-pet(1258),	-- Angara
-pet(1267),	-- Xu-Fu, Cub of Xuen
-pet(1268),	-- Trike
-pet(1269),	-- Screamer
-pet(1271),	-- Chaos
-pet(1277),	-- Lil' B
-pet(1278),	-- Au
-pet(1279),	-- Banks
-pet(1280),	-- Brewly
-pet(1281),	-- Chirps
-pet(1282),	-- Tonsa
-pet(1283),	-- Knowledge
-pet(1284),	-- Patience
-pet(1285),	-- Wisdom
-pet(1286),	-- Summer
-pet(1287),	-- Stormoen
-pet(1288),	-- Nairn
-pet(1289),	-- Monte
-pet(1290),	-- Rikki
-pet(1291),	-- Socks
-pet(1292),	-- Bolo
-pet(1293),	-- Li
-pet(1295),	-- Yen
-pet(1296),	-- Carpe Diem
-pet(1297),	-- River
-pet(1298),	-- Spirus
-pet(1299),	-- Cindy
-pet(1300),	-- Dah'da
-pet(1301),	-- Alex
-pet(1311),	-- Chi-Chi, Hatchling of Chi-Ji
-pet(1317),	-- Yu'la, Broodling of Yu'lon
-pet(1319),	-- Zao, Calfling of Niuzao
-pet(1339),	-- Lil' Oondasta
 pet(1354),	-- C92 Annihilator
 pet(1410),	-- Mechanical Training Dummy
 10.1.5.49516

@@ -622,7 +622,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["creatureID"] = 12098,
 				["groups"] = {
 					i(17330),	-- Hand of Sulfuron
-					i(93033, {	-- Harbinger of Flame (Pet)
+					i(93033, {	-- Harbinger of Flame (PET!)
 						["timeline"] = { "added 5.1.0.16309" },
 					}),
 					i(17074),	-- Shadowstrike

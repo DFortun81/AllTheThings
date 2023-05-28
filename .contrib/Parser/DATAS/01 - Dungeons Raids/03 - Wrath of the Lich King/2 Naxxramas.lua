@@ -456,7 +456,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
 									-- #endif
 								}),
-								i(93029, {	-- Gluth's Bone (PET!)
+								i(93029, {	-- Stitched Pup (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
 								-- #IF ANYCLASSIC
@@ -1231,7 +1231,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
 									-- #endif
 								}),
-								i(93029, {	-- Gluth's Bone (PET!)
+								i(93029, {	-- Stitched Pup (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
 								-- #IF ANYCLASSIC

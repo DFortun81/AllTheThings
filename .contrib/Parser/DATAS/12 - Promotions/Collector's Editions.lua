@@ -228,7 +228,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 	tier(WOD_TIER, {
 		n(-534, {	-- Original WoD Collectors Edition
 			["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
-			["timeline"] = { "added 6.0.1" },
+			["timeline"] = { ADDED_5_4_7 },
 			["groups"] = {
 				ach(8917),	-- Collector's Edition: Dread Hatchling
 				ach(8916),	-- Collector's Edition: Dread Raven

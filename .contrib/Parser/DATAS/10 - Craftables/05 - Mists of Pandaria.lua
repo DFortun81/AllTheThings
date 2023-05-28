@@ -415,8 +415,12 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 		}),
 		filter(BATTLE_PETS, {
 			i(87526),	-- Mechanical Pandaren Dragonling (PET!)
-			i(94903),	-- Pierre (PET!)
-			i(100905),	-- Rascal-Bot (PET!)
+			i(94903, {	-- Pierre (PET!)
+				["timeline"] = { ADDED_5_2_0 },
+			}),
+			i(100905, {	-- Rascal-Bot (PET!)
+				["timeline"] = { ADDED_5_4_0 },
+			}),
 		}),
 		filter(TOYS, {
 			i(87214),	-- Blingtron 4000 (TOY!)
@@ -838,10 +842,10 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 	}),
 	prof(TAILORING, {
 		filter(BATTLE_PETS, {
-			i(92960, {	-- Silkworm Cocoon
+			i(92960, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {	-- Silkworm Cocoon
 				i(90900),	-- Imperial Moth (PET!)
 				i(90902),	-- Imperial Silkworm (PET!)
-			}),
+			})),
 		}),
 		filter(BAGS, {
 			i(82446),	-- Royal Satchel

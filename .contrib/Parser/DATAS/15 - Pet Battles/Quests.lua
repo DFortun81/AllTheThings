@@ -799,7 +799,7 @@ root(ROOTS.PetBattles, petbattle({
 				SACK_OF_PET_SUPPLIES
 			},
 		}),
-		q(32603, {	-- Beasts of Fable
+		q(32603, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Beasts of Fable
 			["description"] = "Account-Wide Quest. Need to have completed the achievement, |cffffff00Taming The World.|r",
 			["providers"] = {
 				{ "n", 64572 },	-- Sara Finkleswitch
@@ -810,9 +810,9 @@ root(ROOTS.PetBattles, petbattle({
 				{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 			},
 			["g"] = {
-				i(94025),	-- Red Panda
+				i(94025),	-- Red Panda (PET!)
 			},
-		}),
+		})),
 		q(32428, {	-- Pandaren Spirit Tamer
 			["description"] = "Account-Wide Quest. Need to have completed the achievement, |cffffff00Taming The World.|r These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.|r",
 			["providers"] = {

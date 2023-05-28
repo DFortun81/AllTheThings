@@ -211,7 +211,7 @@ root(ROOTS.Zones, {
 					pet(641),	-- Arctic Hare (PET!)
 					pet(639),	-- Borean Marmot (PET!)
 					pet(1165, {	-- Nexus Whelpling (PET!)
-						["timeline"] = { "added 5.1.0.16208" },
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					pet(530, {	-- Oily Slimeling (PET!)
 						["description"] = "Found in the oil pools from Fizzcrank Airstrip to the Geyser Fields.",

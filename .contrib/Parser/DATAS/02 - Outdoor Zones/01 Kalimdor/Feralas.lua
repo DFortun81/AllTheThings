@@ -70,6 +70,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(387),	-- Snake (PET!)
 					pet(1158, {	-- Stunted Yeti (PET!)
 						["description"] = "Can be found near Feral Scar Yetis south of Dire Maul.",
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 				},
 			})),

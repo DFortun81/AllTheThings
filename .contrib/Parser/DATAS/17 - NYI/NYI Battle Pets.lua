@@ -11,7 +11,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(66075),	-- Bubbles
 		i(11903),	-- Cat Carrier (Corrupted Kitten)
 		i(67417),	-- DND lil dw placeholder
-		i(91031),	-- Darkmoon Glowfly (PET!)
 		i(88148),	-- Jade Crane Chick (PET!)
 		model(38311, n(51634)),	-- Bubbles
 		model(36583, n(51636)),	-- Lizzy
@@ -21,9 +20,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		model(36131, n(48378)),	-- Whirling Waveling
 		model(29060, n(34031)),	-- XS-001 Constructor Bot
 		i(44972),	-- Alarming Clockbot (NOT IN USE)
-		model(49086, n(71700, {	-- Crafty [5.4.0]
-			p(1257),
-		})),
 		i(31665),	-- Toy RC Mortar Tank
 		i(13342),	-- Pet Fish
 		i(13343),	-- Pet Stone
@@ -33,6 +29,98 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- #if BEFORE 7.0.3
 		i(23712),	-- White Tiger Cub -- later reused for Ash'ana.
 		-- #endif
+		tier(MOP_TIER, {
+			-- 5.0.4
+			tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { "created 5.0.4" } }, {
+			})),
+
+			-- 5.1.0
+			tier(MOP_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 5.1.0" } }, {
+				-- Trainer Pets --
+				pet(1130),	-- Crimson (PET!)
+				pet(1137),	-- Darnak the Tunneler (PET!)
+				pet(1135),	-- Dusty (PET!)
+				pet(1066),	-- Fezwick (PET!)
+				pet(1131),	-- Glowy (PET!)
+				pet(1067),	-- Honky-Tonk (PET!)
+				pet(1065),	-- Judgment (PET!)
+				pet(1132),	-- Marley (PET!)
+				pet(1140),	-- Pandaren Air Spirit (PET!)
+				pet(1141),	-- Pandaren Earth Spirit (PET!)
+				pet(1139),	-- Pandaren Fire Spirit (PET!)
+				pet(1138),	-- Pandaren Water Spirit (PET!)
+				pet(1134),	-- Sludgy (PET!)
+				pet(1133),	-- Tiptoe (PET!)
+				pet(1136),	-- Whispertail (PET!)
+				-- Without SpeciesID Attached
+				i(91031),	-- Darkmoon Glowfly (PET!) [Darkmoon Glowfly, item was never used]
+			})),
+
+			-- 5.2.0
+			tier(MOP_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 5.2.0" } }, {
+				-- Trainer Pets --
+				pet(1193),	-- Dos-Ryga (PET!)
+				pet(1187),	-- Gorespine (PET!)
+				pet(1189),	-- Greyhoof (PET!)
+				pet(1129),	-- Ka'wi the Gorger (PET!)
+				pet(1192),	-- Kafi (PET!)
+				pet(1190),	-- Lucky Yi (PET!)
+				pet(1194),	-- Nitun (PET!)
+				pet(1188),	-- No-No (PET!)
+				pet(1195),	-- Skitterer Xi'a (PET!)
+				pet(1191),	-- Ti'un the Wanderer (PET!)
+			})),
+
+			-- 5.3.0
+			tier(MOP_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 5.3.0" } }, {
+				-- Trainer Pets --
+				pet(1247),	-- Doopy (PET!)
+			})),
+
+			-- 5.4.0
+			tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { "created 5.4.0" } }, {
+				-- Trainer Pets --
+				pet(1301),	-- Alex (PET!)
+				pet(1278),	-- Au (PET!)
+				pet(1279),	-- Banks (PET!)
+				pet(1292),	-- Bolo (PET!)
+				pet(1280),	-- Brewly (PET!)
+				pet(1296),	-- Carpe Diem (PET!)
+				pet(1271),	-- Chaos (PET!)
+				pet(1311),	-- Chi-Chi, Hatchling of Chi-Ji (PET!)
+				pet(1281),	-- Chirps (PET!)
+				pet(1299),	-- Cindy (PET!)
+				pet(1300),	-- Dah'da (PET!)
+				pet(1283),	-- Knowledge (PET!)
+				pet(1293),	-- Li (PET!)
+				pet(1277),	-- Lil' B (PET!)
+				pet(1339),	-- Lil' Oondasta (PET!)
+				pet(1289),	-- Monte (PET!)
+				pet(1288),	-- Nairn (PET!)
+				pet(1284),	-- Patience (PET!)
+				pet(1290),	-- Rikki (PET!)
+				pet(1297),	-- River (PET!)
+				pet(1269),	-- Screamer (PET!)
+				pet(1291),	-- Socks (PET!)
+				pet(1298),	-- Spirus (PET!)
+				pet(1287),	-- Stormoen (PET!)
+				pet(1286),	-- Summer (PET!)
+				pet(1282),	-- Tonsa (PET!)
+				pet(1268),	-- Trike (PET!)
+				pet(1285),	-- Wisdom (PET!)
+				pet(1267),	-- Xu-Fu, Cub of Xuen (PET!)
+				pet(1295),	-- Yen (PET!)
+				pet(1317),	-- Yu'la, Broodling of Yu'lon (PET!)
+				pet(1319),	-- Zao, Calfling of Niuzao (PET!)
+				-- Only SpeciesID
+				pet(1258, {	-- Angara (PET!)
+					-- ["modelID"] = ,
+				}),
+				pet(1257, {	-- Crafty (PET!)
+					["modelID"] = 49086,
+				}),
+			})),
+		}),
 		tier(WOD_TIER, {
 			-- 6.0.2
 			tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 6.0.2" } }, {

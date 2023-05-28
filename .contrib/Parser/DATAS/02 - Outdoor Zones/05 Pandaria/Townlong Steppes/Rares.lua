@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 					}),
 				},
 			}),
-			n(66467, {	-- G'nathus
+			n(66467, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- G'nathus
 				["coords"] = {
 					{ 17.8, 11.6, TOWNLONG_STEPPES },
 					{ 20.4, 7.40, TOWNLONG_STEPPES },
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 				["g"] = {
 					i(94595),	-- Spawn of G'nathus (PET!)
 				},
-			}),
+			})),
 			n(66900, {	-- Huggalon the Heart Watcher
 				["coord"] = { 37.2, 57.6, TOWNLONG_STEPPES },
 				["g"] = {

@@ -286,6 +286,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(441),	-- Alpine Hare (PET!)
 					pet(1163, {	-- Anodized Robo Cub (PET!)
 						["description"] = "Found in Everlook.",
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					pet(634, {	-- Crystal Spider (PET!)
 						["description"] = "Can most commonly be found in Frostwhisper Gorge in southern Winterspring and Lake Kel'theril.",

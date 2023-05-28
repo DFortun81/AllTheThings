@@ -180,7 +180,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 			e(1531,  {	-- Broodlord Lashlayer
 				["creatureID"] = 12017,
 				["groups"] = {
-					i(93037, {	-- Death Talon Whelpguard (Pet)
+					i(93037, {	-- Death Talon Whelpguard (PET!)
 						["timeline"] = { "added 5.1.0.16309" },
 					}),
 					i(19351),	-- Maladath, Runed Blade of the Black Flight

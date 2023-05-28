@@ -21,9 +21,6 @@ _.Zones =
 					pet(717),	-- Savory Beetle (PET!)
 					pet(712),	-- Sifang Otter Pup (PET!)
 					pet(723),	-- Spiny Terrapin (PET!)
-					pet(1128, {	-- Sumprush Rodent (PET!)
-						["description"] = "This wild pet can only be spawned by using the item, Rodent Crate, bought from vendor. Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.",
-					}),
 					pet(1013, {	-- Wanderer's Festival Hatchling (PET!)
 						["description"] = "This wild pet can be found on Turtle Beach in Krasarang Wilds. It only spawns during the Wanderer's Festival. The festival is held only on Sunday night from 9 PM to 11 PM (Pacific Standard Time, GMT-8). During the festival, floating lanterns appear on the surface of the water and Pandaren NPCs wander onto the beach to set up bonfires and shoot off fireworks. Shortly after, the Wanderer's Festival Hatchlings appear.",
 					}),

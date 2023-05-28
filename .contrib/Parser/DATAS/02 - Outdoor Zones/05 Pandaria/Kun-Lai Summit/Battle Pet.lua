@@ -15,6 +15,7 @@ _.Zones =
 					pet(725),	-- Alpine Foxling Kit (PET!)
 					pet(1166, {	-- Kun-Lai Runt (PET!)
 						["description"] = "This is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					pet(726),	-- Plains Monitor (PET!)
 					pet(727),	-- Prairie Mouse (PET!)

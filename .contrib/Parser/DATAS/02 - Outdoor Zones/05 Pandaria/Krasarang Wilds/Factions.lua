@@ -686,7 +686,7 @@ _.Zones =
 										["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
 										["cost"] = { { "i", 91838, 2000 }, },	-- 2,000x Lion's Landing Commission
 										["g"] = {
-											p(1128),	-- Sumprush Rodent
+											pet(1128),	-- Sumprush Rodent (PET!)
 										},
 									}),
 								},
@@ -1426,7 +1426,7 @@ _.Zones =
 										["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
 										["cost"] = { { "i", 91877, 2000 }, },	-- 2,000x Domination Point Commission
 										["g"] = {
-											p(1128),	-- Sumprush Rodent
+											pet(1128),	-- Sumprush Rodent (PET!)
 										},
 									}),
 								},

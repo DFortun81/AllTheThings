@@ -87,6 +87,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					pet(1159, {	-- Lofty Libram (PET!)
 						["description"] = "Found around the Dalaran Crater.",
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					pet(452),	-- Red-Tailed Chipmunk (PET!)
 					pet(640, {	-- Snowshoe Hare (PET!)

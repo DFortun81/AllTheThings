@@ -4,7 +4,7 @@
 
 root(ROOTS.PetBattles, petbattle({
 	n(-795, {	-- Pet Battle Dungeons
-		q(33137, {	-- The Celestial Tournament
+		q(33137, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- The Celestial Tournament
 			["provider"] = { "n", 73082 },	-- Master Li
 			["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 			["isWeekly"] = true,
@@ -40,7 +40,7 @@ root(ROOTS.PetBattles, petbattle({
 					},
 				}),
 			},
-		}),
+		})),
 		q(58458, {	-- Pet Battle Challenge: Blackrock Depths
 			["provider"] = { "n", 161782 },	-- Burt Macklyn
 			["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },

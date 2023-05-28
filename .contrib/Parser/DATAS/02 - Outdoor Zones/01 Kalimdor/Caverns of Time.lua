@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattle(filter(BATTLE_PETS, {
 				pet(1161, {	-- Infinite Whelpling (PET!)
 					["description"] = "This pet can be found around the Caverns of Time entrance and the pathway leading to the main chamber.",
+					["timeline"] = { ADDED_5_1_0 },
 				}),
 			})),
 			-- #endif

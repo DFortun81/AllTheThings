@@ -95,8 +95,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(474, {	-- Cheetah Cub (PET!)
 						["description"] = "Can be found under large trees alongside Plainsland Cheetahs.",
 					}),
-					pet(1157, {	-- Harpy Youngling
+					pet(1157, {	-- Harpy Youngling (PET!)
 						["description"] = "Can be found at The Dry Hills, alongside Witchwing Harpies.",
+						["timeline"] = { ADDED_5_1_0 },
 					}),
 					pet(386),	-- Prairie Dog (PET!)
 				},

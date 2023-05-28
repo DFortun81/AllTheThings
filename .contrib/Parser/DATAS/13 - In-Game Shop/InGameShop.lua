@@ -224,7 +224,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.3.0.33062" },
 		}),
 		i(109014, {	-- Dread Hatchling (PET!)
-			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
+			["timeline"] = { ADDED_5_4_7, "removed 8.3.0" },
 		}),
 		i(69847, {	-- Guardian Cub (Original Version which was bound for 24h)
 			["timeline"] = { "added 4.1.0.13793", "removed 4.2.0.14313" },

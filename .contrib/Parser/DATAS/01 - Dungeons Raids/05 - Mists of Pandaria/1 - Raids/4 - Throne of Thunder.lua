@@ -150,12 +150,14 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 			n(DROPS, {
 				i(94574, {	-- Pygmy Direhorn (PET!)
 					["crs"] = { 68476 },	-- Horridon
+					["timeline"] = { ADDED_5_3_0 },
 				}),
 				i(94835, {	-- Ji-Kun Hatchling (PET!)
 					["crs"] = { 69712 },	-- Ji-Kun
 				}),
 				i(97960, {	-- Viscous Horror (PET!)
 					["crs"] = { 69017 },	-- Primordius
+					["timeline"] = { ADDED_5_3_0 },
 				}),
 				i(94152, {	-- Son of Animus (PET!)
 					["crs"] = {
@@ -472,7 +474,9 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 					e(820, {	-- Primordius
 						["crs"] = { 69017 },	-- Primordius
 						["g"] = {
-							i(97959),	-- Living Fluid (PET!)
+							i(97959, {	-- Living Fluid (PET!)
+								["timeline"] = { ADDED_5_3_0 },
+							}),
 							i(95758),	-- Acid-Spine Bonemace
 							i(95756),	-- Band of the Scaled Tyrant
 							i(95753),	-- Black Blood Legplates
@@ -1140,7 +1144,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(95574),	-- Chest of the Crackling Conqueror
 							i(95579),	-- Chest of the Crackling Protector
 							i(95569),	-- Chest of the Crackling Vanquisher
-							i(94152),	-- Son of Animus (PET!)
 							i(94957),	-- Anima-Ringed Fingers
 							i(94955),	-- Athame of the Sanguine Ritual
 							i(94531),	-- Cha-Ye's Essence of Brilliance
@@ -1494,9 +1497,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							}),
 						},
 					}),
-					n(69944, {	-- Sand Elemental
-						i(94125),	-- Living Sandling (PET!)
-					}),
 					e(816, {	-- Council of Elders
 						["crs"] = {
 							69131,	-- Frost King Malakk
@@ -1777,7 +1777,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 						},
 						["g"] = {
 							ach(8064),	-- Heroic: Dark Animus
-							i(94152),	-- Son of Animus (PET!)
 							i(96567),	-- Chest of the Crackling Conqueror
 							i(96568),	-- Chest of the Crackling Protector
 							i(96566),	-- Chest of the Crackling Vanquisher

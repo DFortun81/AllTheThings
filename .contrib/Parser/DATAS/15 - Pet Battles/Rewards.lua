@@ -9,7 +9,7 @@ root(ROOTS.PetBattles, {
 		i(44820),	-- Red Ribbon Pet Leash
 		i(37460),	-- Rope Pet Leash
 		i(116415),	-- Shiny Pet Charm
-		i(94207, {	-- Fabled Pandaren Pet Supplies
+		i(94207, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Fabled Pandaren Pet Supplies
 			["sym"] = {{"select","itemID",
 				89139,	-- Chain Pet Leash
 				44820,	-- Red Ribbon Pet Leash
@@ -29,7 +29,7 @@ root(ROOTS.PetBattles, {
 				i(92680),	-- Flawless Mechanical Battle-Stone
 				i(92681),	-- Flawless Undead Battle-Stone
 			},
-		}),
+		})),
 		-- Both Items wont show up until I found the Quest ID
 		pvp(i(165944, {	-- A Shady Message (Ally). ItemID confirmed 16.01.2019 -Gold
 			["description"] = "Rewarded from winning PvP Pet Battles",
