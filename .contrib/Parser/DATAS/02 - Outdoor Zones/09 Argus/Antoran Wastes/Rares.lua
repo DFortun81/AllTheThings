@@ -1,34 +1,27 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.Zones, m(905, {	-- Argus
-	m(885, {	-- Antoran Wastes
+root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+	m(ANTORAN_WASTES, {
 		n(RARES, {
 			n(127090, {	-- Admiral Rel'var
 				["questID"] = 48817,
 				["isDaily"] = true,
-				["coord"] = { 73.6, 71.8, 885 },
+				["coord"] = { 73.6, 71.8, ANTORAN_WASTES },
 				["sym"] = {
-					{"select","mapID",885},{"pop"},	-- get Antoran Wastes
+					{"select","mapID",ANTORAN_WASTES},{"pop"},	-- get Antoran Wastes
 					{"where","headerID",SPECIAL},{"pop"},	-- get Special
 					{"where","filterID",CLOTH},{"pop"},	-- get Plate
 				},
 				["g"] = {
-					crit(56, {	-- Admiral Rel'var
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153324),	-- Eredath Vigilant's Bastion
 				},
 			}),
 			n(127096, {	-- All-Seer Xanarian
 				["questID"] = 48818,
 				["isDaily"] = true,
-				["coord"] = { 76.0, 56.2, 885 },
+				["coord"] = { 76.0, 56.2, ANTORAN_WASTES },
 				["g"] = {
-					crit(58, {	-- All-Seer Xanarian
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153123),	-- Cracked Radinax Control Gem
 				},
 			}),
@@ -36,34 +29,25 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				["modelScale"] = 0.80,
 				["questID"] = 49183,
 				["isDaily"] = true,
-				["coord"] = { 61.8, 37.6, 885 },
+				["coord"] = { 61.8, 37.6, ANTORAN_WASTES },
 				["g"] = {
-					crit(7, {	-- Blistermaw
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(152905),	-- Crimson Slavermaw (MOUNT!)
 				},
 			}),
 			n(127376, {	-- Chief Alchemist Munculus
 				["questID"] = 48865,
 				["isDaily"] = true,
-				["coord"] = { 61.2, 21.6, 885 },
+				["coord"] = { 61.2, 21.6, ANTORAN_WASTES },
 				["g"] = {
-					crit(3, {	-- Chief Alchemist Munculus
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
 			n(127084, {	-- Commander Texlaz
 				["questID"] = 48816,
 				["isDaily"] = true,
-				["coord"] = { 80.5, 62.7, 885 },
+				["coord"] = { 80.5, 62.7, ANTORAN_WASTES },
 				["crs"] = { 126680 },	-- portal to rare
 				["g"] = {
-					crit(57, {	-- Commander Texlaz
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153123),	-- Cracked Radinax Control Gem (Green Item)
 				},
 			}),
@@ -71,22 +55,16 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				["description"] = "Run through all three runes to summon the rare.  He will give you a debuff that will instantly kill you, ignoring immunities, unless you kill him before it expires or you walk into Doom Stars.",
 				["questID"] = 48968,
 				["isDaily"] = true,
-				["coord"] = { 58.0, 12.0, 885 },
+				["coord"] = { 58.0, 12.0, ANTORAN_WASTES },
 				["g"] = {
-					crit(12, {	-- Doomcaster Suprax
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153194),	-- Legion Communication Orb (TOY!)
 				},
 			}),
 			n(122999, {	-- Gar'zoth
 				["questID"] = 49241,
 				["isDaily"] = true,
-				["coord"] = { 56.0, 45.8, 885 },
+				["coord"] = { 56.0, 45.8, ANTORAN_WASTES },
 				["g"] = {
-					crit(6, {	-- Gar'zoth
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
@@ -94,49 +72,37 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				["modelScale"] = 0.73,
 				["questID"] = 48821,
 				["isDaily"] = true,
-				["coord"] = { 63.8, 22.0, 885 },
+				["coord"] = { 63.8, 22.0, ANTORAN_WASTES },
 				["g"] = {
-					crit(52, {	-- Houndmaster Kerrax
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(152790),	-- Vile Fiend (MOUNT!)
 				},
 			}),
 			n(126946, {	-- Inquisitor Vethroz
 				["questID"] = 48815,
 				["isDaily"] = true,
-				["coord"] = { 60.6, 48.6, 885 },
+				["coord"] = { 60.6, 48.6, ANTORAN_WASTES },
 				["g"] = {
-					crit(59, {	-- Inquisitor Vethroz
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(151543),	-- Technique: Glyph of Fel-Touched Shards (RECIPE!)
 				},
 			}),
 			n(126254, {	-- Lieutenant Xakaar
 				["questID"] = 48813,
 				["isDaily"] = true,
-				["coord"] = { 62.6, 54.4, 885 },
+				["coord"] = { 62.6, 54.4, ANTORAN_WASTES },
 				["g"] = {
-					crit(55, {	-- Lieutenant Xakaar
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
 			n(122947, {	-- Mistress Il'thendra
 				["questID"] = 49240,
 				["isDaily"] = true,
-				["coord"] = { 57.6, 33.6, 885 },
+				["coord"] = { 57.6, 33.6, ANTORAN_WASTES },
 				["sym"] = {
 					{"select","mapID",830},{"pop"},	-- get Krokuun
 					{"where","headerID",SPECIAL},{"pop"},	-- get Special
 					{"where","filterID",PLATE},{"pop"},	-- get Plate
 				},
 				["g"] = {
-					crit(8, {	-- Mistress Il'thendra
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153327),	-- Mystic Wakener's Dagger
 				},
 			}),
@@ -146,8 +112,8 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				["questID"] = 48970,
 				["isDaily"] = true,
 				["coords"] = {
-					{ 65.5, 26.6, 885 },	-- Cave Entrance
-					{ 66.6, 17.8, 885 },	-- Inside the Cave
+					{ 65.5, 26.6, ANTORAN_WASTES },	-- Cave Entrance
+					{ 66.6, 17.8, ANTORAN_WASTES },	-- Inside the Cave
 				},
 				["cost"] = {
 					{ "i", 152999, 100 },	-- 100x Imp Meat
@@ -155,21 +121,25 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				},
 				["crs"] = { 126073 },	-- Felspawn Imp
 				["g"] = {
-					crit(1, {	-- Mother Rosula
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153252),	-- Rebellious Imp (PET!)
 				},
 			}),
 			n(126040, {	-- Puscilla
 				["questID"] = 48809,
 				["isDaily"] = true,
-				["coord"] = { 64.0, 20.8, 885 },
+				["coord"] = { 64.0, 20.8, ANTORAN_WASTES },
 				["g"] = {
-					crit(20, {	-- Puscilla
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(152903),	-- Biletooth Gnasher (MOUNT!)
+				},
+			}),
+			n(127706, {	-- Rezira the Seer
+				["description"] = "In order to reach this rare you must use the Observer's Locus Resonator, purchaseable from Orix the All-Seer, use someone else's portal, or use an item like Falling Flame with a Goblin Glider to help you land in the correct place.",
+				["questID"] = 48971,
+				["isDaily"] = true,
+				["coord"] = { 65.4, 81.4, ANTORAN_WASTES },
+				["cost"] = { { "i", 153226, 1 } },	-- 1x Observer's Locus Resonator
+				["g"] = {
+					i(153293),	-- Sightless Eye (TOY!)
 				},
 			}),
 			n(127700, {	-- Squadron Commander Vishax
@@ -177,12 +147,9 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				["modelScale"] = 0.63,
 				["questID"] = 48967,
 				["isDaily"] = true,
-				["coord"] = { 77.5, 74.7, 885 },	-- Vishax's Portal
+				["coord"] = { 77.5, 74.7, ANTORAN_WASTES },	-- Vishax's Portal
 				["crs"] = { 127943 },	-- Vishax's Portal
 				["g"] = {
-					crit(11, {	-- Squadron Commander Vishax
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153253),	-- S.F.E. Interceptor (TOY!)
 				},
 			}),
@@ -191,12 +158,9 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				["modelScale"] = 0.63,
 				["questID"] = 48966,
 				["isDaily"] = true,
-				["coord"] = { 54.8, 39.1, 885 },
+				["coord"] = { 54.8, 39.1, ANTORAN_WASTES },
 				["crs"] = { 127577 },	-- Bone Effigy
 				["g"] = {
-					crit(10, {	-- The Many-Faced Devourer
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153195),	-- Uuna (PET!)
 				},
 			}),
@@ -204,11 +168,8 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				["modelScale"] = 0.63,
 				["questID"] = 48812,
 				["isDaily"] = true,
-				["coord"] = { 65.0, 51.6, 885 },
+				["coord"] = { 65.0, 51.6, ANTORAN_WASTES },
 				["g"] = {
-					crit(60, {	-- Varga
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153190, {	-- Fel-Spotted Egg
 						["provider"] = { "i", 153191 },	-- Cracked Fel-Spotted Egg
 						["groups"] = {
@@ -226,65 +187,50 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				["description"] = "Inside the cave.",
 				["questID"] = 48811,
 				["isDaily"] = true,
-				["coord"] = { 66.4, 54.2, 885 },
+				["coord"] = { 66.4, 54.2, ANTORAN_WASTES },
 				["g"] = {
-					crit(19, {	-- Ven'orn
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
 			n(127300, {	-- Void Warden Valsuran
 				["questID"] = 48824,
 				["isDaily"] = true,
-				["coord"] = { 55.6, 21.8, 885 },
+				["coord"] = { 55.6, 21.8, ANTORAN_WASTES },
 				["sym"] = {
-					{"select","mapID",885},{"pop"},	-- get Antoran Wastes content
+					{"select","mapID",ANTORAN_WASTES},{"pop"},	-- get Antoran Wastes content
 					{"where","headerID",SPECIAL},{"pop"},	-- get the Special header
 					{"where","filterID",CLOTH},{"pop"},	-- get the Cloth header
 				},
 				["g"] = {
-					crit(53, {	-- Void Warden Valsuran
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153319),	-- Ardent Vindicator's Greatmace
 				},
 			}),
 			n(126199, {	-- Vrax'thul
 				["questID"] = 48810,
 				["isDaily"] = true,
-				["coord"] = { 53.0, 36.6, 885 },
+				["coord"] = { 53.0, 36.6, ANTORAN_WASTES },
 				["g"] = {
-					crit(18, {	-- Vrax'thul
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(152903),	-- Biletooth Gnasher (MOUNT!)
 				},
 			}),
 			n(127291, {	-- Watcher Aival
 				["questID"] = 48822,
 				["isDaily"] = true,
-				["coord"] = { 53.2, 28.4, 885 },
+				["coord"] = { 53.2, 28.4, ANTORAN_WASTES },
 				["g"] = {
-					crit(54, {	-- Watcher Aival
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
 			n(127118, {	-- Worldsplitter Skuul
 				["questID"] = 48820,
 				["isDaily"] = true,
-				["coord"] = { 51.6, 54.6, 885 },
+				["coord"] = { 51.6, 54.6, ANTORAN_WASTES },
 				["sym"] = {
-					{"select","mapID",885},{"pop"},	-- get Antoran Wastes content
+					{"select","mapID",ANTORAN_WASTES},{"pop"},	-- get Antoran Wastes content
 					{"where","headerID",SPECIAL},{"pop"},	-- get the Special header
 					{"where","filterID",CLOTH},{"pop"},	-- get the Cloth header
 				},
 				["g"] = {
-					crit(2, {	-- Worldsplitter Skuul
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153312),	-- Praetor's Ornamental Greatsword
 				},
 			}),
@@ -292,14 +238,11 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				["modelScale"] = 0.65,
 				["questID"] = 48814,
 				["isDaily"] = true,
-				["coord"] = { 61.6, 65.0, 885 },
+				["coord"] = { 61.6, 65.0, ANTORAN_WASTES },
 				["g"] = {
-					crit(51, {	-- Wrath-Lord Yarez
-						["achievementID"] = 12078,	-- Commander of Argus
-					}),
 					i(153126),	-- Micro-Artillery Controller (TOY!)
 				},
 			}),
 		}),
 	}),
-}));
+})));

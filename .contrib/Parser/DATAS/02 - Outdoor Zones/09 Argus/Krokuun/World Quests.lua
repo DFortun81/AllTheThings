@@ -1,9 +1,8 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.Zones, m(905, {	-- Argus
-	m(830, {	-- Krokuun
+root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+	m(KROKUUN, {
 		n(WORLD_QUESTS, sharedData({
 			["isWorldQuest"] = true,
 		},{
@@ -108,4 +107,4 @@ root(ROOTS.Zones, m(905, {	-- Argus
 			}),
 		})),
 	}),
-}));
+})));

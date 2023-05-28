@@ -114,14 +114,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(19),		-- Unguarded Thistleleaf Treasure
 			crit(20),		-- Marius & Tehd versus a Satyr
 		}),
-		ach(12104, {	-- And We're All Out of Mana Buns
-			title(367),		-- Demonslayer
-			ach(12103, {	-- ...And Chew Mana Buns
-				i(153041),		-- Bleakhoof Ruinstrider (MOUNT!)
-			}),
-			ach(12102),		-- To Kill Demons...
-			ach(12101),		-- We Came Here For Two Reasons
-		}),
 		ach(11802, {	-- Bringing Home the Beacon
 			crit(1),		-- Shadow Fracture
 			crit(2),		-- Soul Ruin
@@ -144,70 +136,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				crit(2),		-- Explore Broken Shore
 				crit(3),		-- Legionfall Commander
 			}),
-		}),
-		ach(12078, {	-- Commander of Argus
-			i(152396),		-- Arsenal: Weapons of the Lightforged
-			crit(1),		-- Mother Rosula
-			crit(2),		-- Worldsplitter Skuul
-			crit(3),		-- Chief Alchemist Munculus
-			crit(4),		-- Shadowcaster Voruun
-			crit(5),		-- Talestra the Vile
-			crit(6),		-- Gar'zoth
-			crit(7),		-- Blistermaw
-			crit(8),		-- Mistress Il'thendra
-			crit(9),		-- Siegemaster Voraan
-			crit(10),		-- The Many-Faced Devourer
-			crit(11),		-- Squadron Commander Vishax
-			crit(12),		-- Doomcaster Suprax
-			crit(13),		-- Rezira the Seer
-			crit(14),		-- Tereck the Selector
-			crit(15),		-- Vagath the Betrayed
-			crit(16),		-- Tar Spitter
-			crit(17),		-- Imp Mother Laglath
-			crit(18),		-- Vrax'thul
-			crit(19),		-- Ven'orn
-			crit(20),		-- Puscilla
-			crit(21),		-- Khazaduum
-			crit(22),		-- Naroua
-			crit(23),		-- Commander Sathrenael
-			crit(24),		-- Commander Vecaya
-			crit(25),		-- Commander Endaxis
-			crit(26),		-- Sister Subversia
-			crit(27),		-- Soultwisted Monstrosity
-			crit(28),		-- Wrangler Kravos
-			crit(29),		-- Kaara the Pale
-			crit(30),		-- Baruut the Bloodthirsty
-			crit(31),		-- Feasel the Muffin Thief
-			crit(32),		-- Vigilant Thanos
-			crit(33),		-- Vigilant Kuro
-			crit(34),		-- Venomtail Skyfin
-			crit(35),		-- Turek the Lucid
-			crit(36),		-- Captain Faruq
-			crit(37),		-- Umbraliss
-			crit(38),		-- Ataxon
-			crit(39),		-- Sorolis the Ill-Fated
-			crit(40),		-- Herald of Chaos
-			crit(41),		-- Sabuul
-			crit(42),		-- Jed'hin Champion Vorusk
-			crit(43),		-- Overseer Y'Beda
-			crit(44),		-- Overseer Y'Sorna
-			crit(45),		-- Overseer Y'Morna
-			crit(46),		-- Instructor Tarahna
-			crit(47),		-- Zul'tan the Numerous
-			crit(48),		-- Commander Xethgar
-			crit(49),		-- Skreeg the Devourer
-			crit(50),		-- Slithon the Last
-			crit(51),		-- Wrath-Lord Yarez
-			crit(52),		-- Houndmaster Kerrax
-			crit(53),		-- Void Warden Valsuran
-			crit(54),		-- Watcher Aival
-			crit(55),		-- Lieutenant Xakaar
-			crit(56),		-- Admiral Rel'var
-			crit(57),		-- Commander Texlaz
-			crit(58),		-- All-Seer Xanarian
-			crit(59),		-- Inquisitor Vethroz
-			crit(60),		-- Varga
-			ach(12077),		-- Adventurer of Argus
 		}),
 		ach(12028, {	-- Envision Invasion Eradication
 			crit(1),		-- Mazgoroth
@@ -339,44 +267,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(6),		-- Beginner's Guide to Dimensional Rifting Ch. 6 - Pent up Energy
 			crit(7),		-- Beginner's Guide to Dimensional Rifting Ch. 7 - Our Legacy
 		}),
-		ach(12084),		-- Infused and Abused (Argus)
 		ach(12026),	-- Invasion Obliteration
-		ach(12083, {	-- Paragon of Argus
-			title(366),		-- the Lightbringer
-			crit(1),		-- You Are Now Prepared!
-			crit(2),		-- Locked and Loaded
-			crit(3),		-- Officer of the Light
-			crit(4),		-- Protector of the Argussian Reach
-			crit(5),		-- Shoot First, Loot Later
-			crit(6),		-- Envision Invasion Eradication
-			crit(7),		-- Invasion Obliteration
-			crit(8),		-- Heroic: Seat of the Triumvirate
-			crit(9),		-- Seat of the Pantheon
-		}),
-		ach(12074, {	-- Shoot First, Loot Later
-			crit(1),		-- Krokul Emergency Cache
-			crit(2),		-- Legion Tower Chest
-			crit(3),		-- Lost Krokul Chest
-			crit(4),		-- Eredar Treasure Cache
-			crit(5),		-- Chest of Ill-Gotten Gains
-			crit(6),		-- Student's Surprising Surplus
-			crit(7),		-- Void-Tinged Chest
-			crit(8),		-- Augari Secret Stash
-			crit(9),		-- Desperate Eredar's Cache
-			crit(10),		-- Shattered House Chest
-			crit(11),		-- Doomseeker's Treasure
-			crit(12),		-- Forgotten Legion Supplies
-			crit(13),		-- Ancient Legion War Cache
-			crit(14),		-- Fel-Bound Chest
-			crit(15),		-- Legion Treasure Hoard
-			crit(16),		-- Timeworn Fel Chest
-			crit(17),		-- Augari-Runed Chest
-			crit(18),		-- Secret Augari Chest
-			crit(19),		-- Augari Goods
-			crit(20),		-- Long-Lost Augari Treasure
-			crit(21),		-- Precious Augari Keepsakes
-			crit(22),		-- Missing Augari Chest
-		}),
 		ach(14729, {		-- To All The Squirrels I Love Despite Their Scars
 			crit(1, {	-- Felspider
 				["crs"] = { 113345 },	-- Felspider

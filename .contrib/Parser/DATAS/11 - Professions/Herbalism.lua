@@ -193,6 +193,7 @@ profession(HERBALISM, {
 		}),
 		filter(BATTLE_PETS, {
 			i(153045, {	-- Fel Lasher (PET!)
+				["description"] = "This can be looted from any herb on Argus.",
 				["timeline"] = { ADDED_7_3_0 }
 			}),
 		}),

@@ -266,7 +266,10 @@ profession(SKINNING, {
 		}),
 	}),
 	filter(BATTLE_PETS, {
-		i(153057),	-- Fossorial Bile Larva (PET!)
+		i(153057, {	-- Fossorial Bile Larva (PET!)
+			["description"] = "This can be obtained from any skinnable Argus mob.",
+			["timeline"] = { ADDED_7_3_0 },
+		}),
 	}),
 	filter(TOYS, {
 		i(130102),	--  Mother's Skinning Knife (TOY!)
