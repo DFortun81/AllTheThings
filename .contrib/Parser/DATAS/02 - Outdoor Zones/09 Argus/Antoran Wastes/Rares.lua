@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 57.6, 33.6, ANTORAN_WASTES },
 				["sym"] = {
-					{"select","mapID",830},{"pop"},	-- get Krokuun
+					{"select","mapID",KROKUUN},{"pop"},	-- get Krokuun
 					{"where","headerID",SPECIAL},{"pop"},	-- get Special
 					{"where","filterID",PLATE},{"pop"},	-- get Plate
 				},

@@ -7,7 +7,7 @@ dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(946, {	-- Antorus, the Burning Throne
 		["isRaid"] = true,
-		["coord"] = { 54.9, 62.3, 885 },
+		["coord"] = { 54.9, 62.3, ANTORAN_WASTES },
 		["maps"] = {
 			909,
 			910,

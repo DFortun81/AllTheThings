@@ -6,7 +6,7 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 	inst(945, {	-- Seat of the Triumvirate
 		["lvl"] = 110,
 		["mapID"] = 903,
-		["coord"] = { 22.2, 55.9, 882 },	-- Eredath
+		["coord"] = { 22.2, 55.9, EREDATH },
 		["g"] = {
 			n(TREASURES, {
 				o(277384, {	-- Abandoned Treasure
@@ -19,7 +19,7 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 			n(QUESTS, {
 				i(152204, {	-- Glowing Key Fragment
 					["questID"] = 48230,	-- Fragment of the Past
-					["maps"] = { 882 },	-- Eredath
+					["maps"] = { EREDATH },
 					["description"] = "You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",
 					["sourceQuest"] = 47654,	-- Seat of the Triumvirate: The Crest of Knowledge
 					["crs"] = {
@@ -42,21 +42,21 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 				q(48864, {	-- The Broken Blacksmith
 					["provider"] = { "n", 123668 },	-- Captain Fareeya <The Crescent Glaive>
 					["sourceQuest"] = 48230,	-- Fragment of the Past
-					["coord"] = { 62.6, 39.4, 882 },
+					["coord"] = { 62.6, 39.4, EREDATH },
 				}),
 				q(48271, {	-- Recovering the Pieces
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
-					["coord"] = { 56.9, 68.6, 830 },
+					["coord"] = { 56.9, 68.6, KROKUUN },
 					["sourceQuest"] = 48864,	-- The Broken Blacksmith
 				}),
 				q(48261, {	-- The Power to Reforge
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
-					["coord"] = { 56.9, 68.6, 830 },
+					["coord"] = { 56.9, 68.6, KROKUUN },
 					["sourceQuest"] = 48864,	-- The Broken Blacksmith
 				}),
 				q(48803, {	-- Forging a Key to the Past
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
-					["coord"] = { 56.9, 68.6, 830 },
+					["coord"] = { 56.9, 68.6, KROKUUN },
 					["sourceQuests"] = {
 						48271,	-- Recovering the Pieces
 						48261,	-- The Power to Reforge
@@ -64,7 +64,7 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 				}),
 				q(48231, {	-- The Seat of the Triumvirate: Armor of the Triumvirate
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
-					["coord"] = { 56.9, 68.6, 830 },
+					["coord"] = { 56.9, 68.6, KROKUUN },
 					["sourceQuest"] = 48803,	-- Forging a Key to the Past
 					["g"] = {
 						i(152241, sharedData({["modID"] = 2}, { -- Ensemble: Light-Woven Triumvirate Regalia

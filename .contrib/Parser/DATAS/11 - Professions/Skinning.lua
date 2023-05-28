@@ -48,9 +48,9 @@ profession(SKINNING, {
 			q(48040, {	-- Tainted Scraps
 				["provider"] = { "i", 151866 },	-- Tainted Scraps
 				["maps"] = {
-					885,	-- Antoran Wastes
-					830,	-- Krokuun
-					882,	-- Eredath
+					ANTORAN_WASTES,
+					KROKUUN,
+					EREDATH,
 				},
 				["groups"] = {
 					recipe(247842),	-- Fiendish Leather [Rank 1]
@@ -60,9 +60,9 @@ profession(SKINNING, {
 				["provider"] = { "i", 151867 },	-- Spoiled Fiendish Leather
 				["sourceQuest"] = 48040,	-- Tainted Scraps
 				["maps"] = {
-					885,	-- Antoran Wastes
-					830,	-- Krokuun
-					882,	-- Eredath
+					ANTORAN_WASTES,
+					KROKUUN,
+					EREDATH,
 				},
 				["groups"] = {
 					recipe(247843),	-- Fiendish Leather [Rank 2]
@@ -72,9 +72,9 @@ profession(SKINNING, {
 				["provider"] = { "i", 151868 },	-- Corrupted Tooth
 				["sourceQuest"] = 48041,	-- A Larger Cut
 				["maps"] = {
-					885,	-- Antoran Wastes
-					830,	-- Krokuun
-					882,	-- Eredath
+					ANTORAN_WASTES,
+					KROKUUN,
+					EREDATH,
 				},
 				["groups"] = {
 					recipe(247844),	-- Fiendish Leather [Rank 3]

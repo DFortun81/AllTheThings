@@ -7,8 +7,8 @@ _.Instances = { tier(LEGION_TIER, {
 		["isRaid"] = true,
 		-- ["sourceQuests"] = { },	-- TODO pretty sure a quest is required to unlock these
 		["coords"] = {
-			{ 38.8, 12.4, 882 },	-- Eredath
-			{ 70.5, 38.8, 882 },	-- Eredath
+			{ 38.8, 12.4, EREDATH },
+			{ 70.5, 38.8, EREDATH },
 			-- TODO more coords for possible spawns
 			-- then remove the maps for Krokuun and Antoran Wastes once coords added
 		},
@@ -22,14 +22,14 @@ _.Instances = { tier(LEGION_TIER, {
 					924,	-- Invasion Point: Naigtal
 					925,	-- Invasion Point: Sangua
 					926,	-- Invasion Point: Val
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["crs"] = {
 					125849,	-- Invasion Point: Aurinor
@@ -102,14 +102,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["crs"] = { 127528 },	-- Greater Invasion Point: Matron Folnuna
 				["maps"] = {
 					929,	-- Greater Invasion Point: Matron Folnuna
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					crit(3, {	-- Matron Folnuna
@@ -139,14 +139,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["crs"] = { 127536 },	-- Greater Invasion Point: Mistress Alluradel
 				["maps"] = {
 					928,	-- Greater Invasion Point: Mistress Alluradel
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					crit(5, {	-- Mistress Alluradel
@@ -176,14 +176,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["crs"] = { 127535 },	-- Greater Invasion Point: Inquisitor Meto
 				["maps"] = {
 					930,	-- Greater Invasion Point: Inquisitor Meto
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					crit(4, {	-- Inquisitor Meto
@@ -213,14 +213,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["crs"] = { 127533 },	-- Greater Invasion Point: Occularus
 				["maps"] = {
 					932,	-- Greater Invasion Point: Occularus
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					crit(1, {	-- Occularus
@@ -248,14 +248,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["crs"] = { 127532 },	-- Greater Invasion Point: Sotanathor
 				["maps"] = {
 					931,	-- Greater Invasion Point: Sotanathor
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					crit(2, {	-- Sotanathor
@@ -285,14 +285,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["crs"] = { 127531 },	-- Greater Invasion Point: Pit Lord Vilemus
 				["maps"] = {
 					927,	-- Greater Invasion Point: Pit Lord Vilemus
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					crit(6, {	-- Pit Lord Vilemus
@@ -319,14 +319,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["repeatable"] = true,
 				["maps"] = {
 					921,	-- Invasion Point: Aurinor
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					i(153265),	-- Enclave Aspirant's Battleaxe
@@ -339,14 +339,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["repeatable"] = true,
 				["maps"] = {
 					922,	-- Invasion Point: Bonich
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					i(153320),	-- Ardent Vindicator's Demolisher
@@ -359,14 +359,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["repeatable"] = true,
 				["maps"] = {
 					923,	-- Invasion Point: Cen'gar
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					i(153262),	-- Forlorn Artificer's Gavel
@@ -379,14 +379,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["repeatable"] = true,
 				["maps"] = {
 					924,	-- Invasion Point: Naigtal
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					i(153264),	-- Enclave Aspirant's Splitter
@@ -399,14 +399,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["repeatable"] = true,
 				["maps"] = {
 					925,	-- Invasion Point: Sangua
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					i(153307),	-- Oronaar Miner's Pickaxe
@@ -419,14 +419,14 @@ _.Instances = { tier(LEGION_TIER, {
 				["repeatable"] = true,
 				["maps"] = {
 					926,	-- Invasion Point: Val
-					830,	-- Krokuun
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					885,	-- Antoran Wastes
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					KROKUUN,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					ANTORAN_WASTES,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
 					i(153258),	-- Forlorn Artificer's Mace

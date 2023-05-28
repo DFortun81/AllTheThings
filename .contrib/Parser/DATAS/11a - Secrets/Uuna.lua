@@ -49,8 +49,8 @@ _.Secrets =
 				["sourceQuests"] = { 50103 },	-- Step 6: Wanna be Friends?
 				["description"] = "Most classes will need 2 |cffffffffGoblin Glider Kits|r to reach Nuu, who is in a house on a floating island in southwest Eredath.\n\nStart near the entrance to Seat of the Triumvirate and glide to the small rock, and then use your second glider to coast to the island further to the south.",
 				["coords"] = {
-					{ 32.6, 74.9, 882 },	-- house with Nuu
-					{ 25.1, 59.8, 882 },	-- first little rock to jump to
+					{ 32.6, 74.9, EREDATH },	-- house with Nuu
+					{ 25.1, 59.8, EREDATH },	-- first little rock to jump to
 				},
 				["name"] = "Step 7: Finding Nuu",
 				["icon"] = "Interface\\Icons\\inv_misc_bag_07_red",

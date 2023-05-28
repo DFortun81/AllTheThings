@@ -1663,18 +1663,15 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 		prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
 			o(272768, {	-- Empyrium Deposit
 				["maps"] = {
-					885,	-- Antoran Wastes
-					830,	-- Krokuun
-					882,	-- Eredath
-					885,	-- Antoran Wastes
-					830,	-- Krokuun
-					882,	-- Eredath
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					ANTORAN_WASTES,
+					KROKUUN,
+					EREDATH,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 					-- Added LFD back 5th July 2022
 					940,	-- Upper Deck [The Vindicaar: LFD]
 					941,	-- Lower Deck [The Vindicaar: LFD]
@@ -1704,15 +1701,15 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 			}),
 			o(272780, {	-- Empyrium Seam
 				["maps"] = {
-					885,	-- Antoran Wastes
-					830,	-- Krokuun
-					882,	-- Eredath
-					831,	-- Upper Deck [The Vindicaar: Krokuun]
-					832,	-- Lower Deck [The Vindicaar: Krokuun]
-					883,	-- Upper Deck [The Vindicaar: Eredath]
-					884,	-- Lower Deck [The Vindicaar: Eredath]
-					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+					ANTORAN_WASTES,
+					KROKUUN,
+					EREDATH,
+					THE_VINDICAAR_KROKUUN_UPPER,
+					THE_VINDICAAR_KROKUUN_LOWER,
+					THE_VINDICAAR_EREDATH_UPPER,
+					THE_VINDICAAR_EREDATH_LOWER,
+					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 					-- Added LFD back 5th July 2022
 					940,	-- Upper Deck [The Vindicaar: LFD]
 					941,	-- Lower Deck [The Vindicaar: LFD]
