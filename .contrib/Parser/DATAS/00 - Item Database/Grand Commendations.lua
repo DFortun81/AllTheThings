@@ -162,10 +162,10 @@ i(168018, 1847);	-- Commendation of the Hand of the Prophet
 -- Legion
 i(147418, 1859);	-- Arcane Remnant of Falanaar [The Nightfallen]
 i(147416, 1859);	-- Arcane Tablet of Falanaar [The Nightfallen]
-i(152959, 2170);	-- Argussian Reach Insignia [Argussian Reach]
-i(152960, 2170);	-- Argussian Reach Insignia [Argussian Reach]
-i(152957, 2165);	-- Army of the Light Insignia [Army of the Light]
-i(152958, 2165);	-- Army of the Light Insignia [Army of the Light]
+i(152959, ARGUSSIAN_REACH);	-- Argussian Reach Insignia
+i(152960, ARGUSSIAN_REACH);	-- Argussian Reach Insignia
+i(152957, ARMY_OF_THE_LIGHT);	-- Army of the Light Insignia
+i(152958, ARMY_OF_THE_LIGHT);	-- Army of the Light Insignia
 i(141340, 1900);	-- Court of Farondis Insignia [Court of Farondis]
 i(139023, 1900);	-- Court of Farondis Insignia [Court of Farondis]
 i(146937, 1900);	-- Court of Farondis Insignia [Court of Farondis]
@@ -174,10 +174,10 @@ i(141339, 1883);	-- Dreamweaver Insignia [Dreamweavers]
 i(139021, 1883);	-- Dreamweaver Insignia [Dreamweavers]
 i(146942, 1883);	-- Dreamweaver Insignia [Dreamweavers]
 i(146936, 1883);	-- Dreamweaver Insignia [Dreamweavers]
-i(152954, 2170);	-- Greater Argussian Reach Insignia [Argussian Reach]
-i(152961, 2170);	-- Greater Argussian Reach Insignia [Argussian Reach]
-i(152955, 2165);	-- Greater Army of the Light Insignia [Army of the Light]
-i(152956, 2165);	-- Greater Army of the Light Insignia [Army of the Light]
+i(152954, ARGUSSIAN_REACH);	-- Greater Argussian Reach Insignia
+i(152961, ARGUSSIAN_REACH);	-- Greater Argussian Reach Insignia
+i(152955, ARMY_OF_THE_LIGHT);	-- Greater Army of the Light Insignia
+i(152956, ARMY_OF_THE_LIGHT);	-- Greater Army of the Light Insignia
 i(147410, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
 i(141989, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
 i(150927, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]

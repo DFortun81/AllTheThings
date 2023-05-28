@@ -191,9 +191,9 @@ _.Factions =
 		faction(1736),	-- Tormmok
 	}),
 	tier(LEGION_TIER, {
-		faction(2170),	-- Argussian Reach
+		faction(ARGUSSIAN_REACH),
 		faction(2045),	-- Armies of Legionfall
-		faction(2165),	-- Army of the Light
+		faction(ARMY_OF_THE_LIGHT),
 		faction(1900),	-- Court of Farondis
 		faction(1883),	-- Dreamweavers
 		faction(1828),	-- Highmountain Tribe
