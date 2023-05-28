@@ -34,7 +34,7 @@ _.ExpansionFeatures =
 								{ 32.6, 39.8, FROSTWALL },
 							},
 						}),
-						q(38299,  {	-- Critters of Draenor
+						q(38299,  bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Critters of Draenor
 							["isDaily"] = true,
 							["coord"] = { 28.8, 39.2, LUNARFALL },
 							["races"] = ALLIANCE_ONLY,
@@ -47,13 +47,13 @@ _.ExpansionFeatures =
 							},
 							["g"] = {
 								i(122535, {	-- Traveler's Pet Supplies
-									i(122532),	-- Bone Serpent
+									i(122532),	-- Bone Serpent (PET!)
 									i(122534),	-- Slithershock Elver (PET!)
 									i(122533),	-- Young Talbuk (PET!)
 								}),
 							},
-						}),
-						q(38300, {	-- Critters of Draenor
+						})),
+						q(38300, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Critters of Draenor
 							["isDaily"] = true,
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
@@ -66,12 +66,12 @@ _.ExpansionFeatures =
 							},
 							["g"] = {
 								i(122535, {	-- Traveler's Pet Supplies
-									i(122532),	-- Bone Serpent
+									i(122532),	-- Bone Serpent (PET!)
 									i(122534),	-- Slithershock Elver (PET!)
 									i(122533),	-- Young Talbuk (PET!)
 								}),
 							},
-						}),
+						})),
 						q(37644,  {	-- Mastering the Menagerie
 							["isDaily"] = true,
 							["provider"] = { "n", 85418 },	-- Lio the Lioness

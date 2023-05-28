@@ -512,7 +512,7 @@ _.Zones =
 					["coord"] = { 79.2, 52.6, DRAENOR_NAGRAND },
 					["sourceQuest"] = 34819,	-- Fruitful Ventures
 					["g"] = {
-						i(114834),	-- Meadowstomper Calf
+						i(114834),	-- Meadowstomper Calf (PET!)
 					},
 				}),
 				q(35332, {	-- Nobundo Sends Word

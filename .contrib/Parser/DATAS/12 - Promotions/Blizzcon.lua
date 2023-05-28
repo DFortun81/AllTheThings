@@ -49,7 +49,7 @@ root(ROOTS.Promotions, n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bl
 		["timeline"] = { "added 6.1.0.19445" },
 	}),
 	i(118517, {	-- Grommloc (PET!)
-		["timeline"] = { "added 6.0.1.18711" },
+		["timeline"] = { ADDED_6_0_3 },
 	}),
 
 	ach(10322, {	-- Blizzcon 2015 - Murkidan

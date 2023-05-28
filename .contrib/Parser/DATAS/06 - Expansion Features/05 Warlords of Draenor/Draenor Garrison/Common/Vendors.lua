@@ -1216,6 +1216,7 @@ _.ExpansionFeatures =
 					["g"] = {
 						i(127868, {	-- Crusher (PET!)
 							["cost"] = 10000000,	-- 1,000g
+							["timeline"] = { ADDED_6_2_0 },
 						}),
 						i(128308),	-- Draenic Armor Set
 						i(128307),	-- Draenic Weaponry
@@ -1233,6 +1234,7 @@ _.ExpansionFeatures =
 					["g"] = {
 						i(127868, {	-- Crusher (PET!)
 							["cost"] = 10000000,	-- 1,000g
+							["timeline"] = { ADDED_6_2_0 },
 						}),
 						i(128308),	-- Draenic Armor Set
 						i(128307),	-- Draenic Weaponry

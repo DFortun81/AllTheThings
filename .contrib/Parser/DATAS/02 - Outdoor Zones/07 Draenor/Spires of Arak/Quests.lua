@@ -631,7 +631,7 @@ _.Zones =
 					["coord"] = { 46.2, 45.6, SPIRES_OF_ARAK },
 					["provider"] = { "n", 85320 },	-- Ikky
 					["g"] = {
-						i(119466),	-- Ikky (PET!)
+						pet(1532),	-- Ikky (PET!)
 					},
 				}),
 				q(34838, {	-- Ikky's Egg

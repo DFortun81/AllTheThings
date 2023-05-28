@@ -2127,9 +2127,9 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				{ "i", 128664, 1 },	-- Creepy Crawlers
 			},
 			["groups"] = {
-				p(1741),	-- Ghastly Rat
-				p(1740),	-- Ghost Maggot
-				p(1730),	-- Spectral Spinner
+				pet(1741),	-- Ghastly Rat (PET!)
+				pet(1740),	-- Ghost Maggot (PET!)
+				pet(1730),	-- Spectral Spinner (PET!)
 			},
 		})),
 		n(QUESTS, {

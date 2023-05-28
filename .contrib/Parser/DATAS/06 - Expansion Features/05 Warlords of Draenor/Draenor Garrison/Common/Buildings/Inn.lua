@@ -779,7 +779,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 88025 },	-- Mylune
 							["maps"] = { 620, 621 },	-- The Everbloom
 							["g"] = {
-								i(118921),	-- Everbloom Peachick
+								i(118921),	-- Everbloom Peachick (PET!)
 							},
 						}),
 						q(37179, {	-- For the Children!

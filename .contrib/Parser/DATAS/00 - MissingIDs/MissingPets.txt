@@ -195,7 +195,6 @@ pet(1194),	-- Nitun
 pet(1195),	-- Skitterer Xi'a
 pet(1247),	-- Doopy
 pet(1258),	-- Angara
-pet(1259),	-- Widowling
 pet(1267),	-- Xu-Fu, Cub of Xuen
 pet(1268),	-- Trike
 pet(1269),	-- Screamer
@@ -228,107 +227,8 @@ pet(1311),	-- Chi-Chi, Hatchling of Chi-Ji
 pet(1317),	-- Yu'la, Broodling of Yu'lon
 pet(1319),	-- Zao, Calfling of Niuzao
 pet(1339),	-- Lil' Oondasta
-pet(1352),	-- Lord Piglet
 pet(1354),	-- C92 Annihilator
-pet(1400),	-- Deebs
-pet(1401),	-- Tyri
-pet(1402),	-- Puzzle
-pet(1404),	-- Mechanical Scorpid
-pet(1409),	-- Eleanor
 pet(1410),	-- Mechanical Training Dummy
-7.3.0.24473
-pet(1420),	-- Evil Widowling
-pet(1423),	-- Bitey
-pet(1424),	-- Gyrexle, the Eternal Mechanic
-pet(1443),	-- Idol of Decay
-pet(1444),	-- Wishbright Lantern
-pet(1472),	-- Gnawface
-pet(1473),	-- Carrotus Maximus
-pet(1474),	-- Gorefu
-pet(1475),	-- Otto
-pet(1476),	-- Mr. Pointy
-pet(1477),	-- Syd
-pet(1479),	-- Brutus
-pet(1480),	-- Quintessence of Light
-pet(1482),	-- Rukus
-pet(1483),	-- Mr. Terrible
-pet(1484),	-- Carroteye
-pet(1485),	-- Sloppus
-pet(1486),	-- The Beakinator
-pet(1487),	-- King Floret
-pet(1488),	-- Queen Floret
-pet(1489),	-- Kromli
-pet(1490),	-- Gromli
-pet(1492),	-- Grubbles
-pet(1493),	-- Stings
-pet(1494),	-- Scrags
-pet(1496),	-- Jahan
-pet(1497),	-- Samm
-pet(1498),	-- Archimedes
-pet(1499),	-- Fiero
-pet(1500),	-- Tirs
-pet(1501),	-- Rockbiter
-pet(1502),	-- Stonechewer
-pet(1503),	-- Acidtooth
-pet(1504),	-- Blingtron 4999b
-pet(1505),	-- Protectron 022481
-pet(1506),	-- Protectron 011803
-pet(1507),	-- Stitches Jr.
-pet(1508),	-- Manos
-pet(1509),	-- Hanos
-pet(1510),	-- Fatos
-pet(1532),	-- Ikky
-pet(1547),	-- Pixiebell
-pet(1548),	-- Doodle
-pet(1549),	-- Tally
-pet(1550),	-- Wolfus
-pet(1552),	-- Fangra
-pet(1553),	-- Wolfgar
-pet(1554),	-- Gladiator Deathy
-pet(1555),	-- Gladiator Murkalot
-pet(1556),	-- Gladiator Murkimus
-pet(1557),	-- Darkwing
-pet(1558),	-- The Great Kaliri
-pet(1559),	-- Apexis Guardian
-pet(1560),	-- Serendipity
-pet(1561),	-- Grace
-pet(1562),	-- Atonement
-pet(1604),	-- Nethaera's Light
-pet(1607),	-- Gorefu
-pet(1608),	-- Carrotus Maximus
-pet(1609),	-- Gnawface
-pet(1610),	-- Unborn Val'kyr
-pet(1637),	-- Moon
-pet(1640),	-- Spores
-pet(1641),	-- Dusty
-pet(1642),	-- Salad
-pet(1643),	-- Mouthy
-pet(1644),	-- Carl
-pet(1645),	-- Mal
-pet(1646),	-- Enbi'see
-pet(1647),	-- Bones
-pet(1648),	-- Sprouts
-pet(1649),	-- Runts
-pet(1651),	-- Prince Charming
-pet(1652),	-- Jenner
-pet(1653),	-- Brisby
-pet(1654),	-- Nicodemus
-pet(1671),	-- Felsworn Sentry
-pet(1673),	-- Corrupted Thundertail
-pet(1674),	-- Chaos Pup
-pet(1675),	-- Cursed Spirit
-pet(1676),	-- Felfly
-pet(1677),	-- Tainted Maulclaw
-pet(1678),	-- Direflame
-pet(1679),	-- Mirecroak
-pet(1680),	-- Dark Gazer
-pet(1681),	-- Bleakclaw
-pet(1682),	-- Vile Blood of Draenor
-pet(1683),	-- Dreadwalker
-pet(1684),	-- Netherfist
-pet(1685),	-- Skrillix
-pet(1686),	-- Defiled Earth
-pet(1738),	-- Auburn Ringtail
 10.1.5.49516
 pet(3587),	-- Lifelike Mechanical Duckling
 pet(3588),	-- Iggy

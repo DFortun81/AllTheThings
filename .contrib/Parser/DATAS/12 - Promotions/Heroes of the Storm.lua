@@ -10,7 +10,7 @@ root(ROOTS.Promotions, n(-532, {	-- Heroes of the Storm
 	n(REWARDS, bubbleDown({
 		["u"] = BLIZZARD_BALANCE,
 		["description"] = "Obtained by playing Heroes of the Storm and reaching level 20.",
-		["timeline"] = { "added 6.0.1.18711" },
+		["timeline"] = { ADDED_6_1_2 },
 	}, {
 		classicAch(9926),	-- Hero of the Storm
 		i(118518),	-- Graves (PET!)

@@ -139,7 +139,9 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 							i(171498),	-- Savior's Grasp
 							i(171506),	-- Leggings of Eternity
 							i(171497),	-- Legguards of Endless Rage
-							i(122112),	-- Hyjal Wisp (PET!)
+							i(122112, {	-- Hyjal Wisp (PET!)
+								["timeline"] = { "added 6.1.0.19445" },
+							}),
 						},
 					}),
 				}),

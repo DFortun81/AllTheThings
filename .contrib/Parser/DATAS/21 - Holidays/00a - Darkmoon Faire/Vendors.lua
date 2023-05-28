@@ -715,6 +715,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["g"] = {
 				i(126925, {	-- Blorp (PET!)
 					["cost"] = { { "i", 124669, 50 }, },	-- 50x Darkmoon Daggermaw
+					["timeline"] = { ADDED_6_2_0 },
 				}),
 				i(142398, {	-- Darkwater Skate (MOUNT!)
 					["cost"] = { { "i", 124669, 500 }, },	-- 500x Darkmoon Daggermaw
@@ -743,8 +744,9 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				i(126931, {	-- Seafarer's Slidewhistle (TOY!)
 					["cost"] = { { "i", 124669, 25 }, },	-- 25x Darkmoon Daggermaw
 				}),
-				i(126926, {	-- Translucent Shell (PET!)
+				i(126926, {	-- Ghostshell Crab (PET!)
 					["cost"] = { { "i", 124669, 100 }, },	-- 100x Darkmoon Daggermaw
+					["timeline"] = { ADDED_6_2_0 },
 				}),
 			},
 		}),

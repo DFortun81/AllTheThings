@@ -407,7 +407,9 @@ _.ExpansionFeatures =
 						i(118191),	-- Archmage Vargoth's Spare (TOY!)
 						i(128310),	-- Burning Blad (TOY!)
 						i(128311),	-- Coalfist Gronnling (MOUNT!)
-						i(127748),	-- Cinder Pup (PET!)
+						i(127748, {	-- Cinder Pup (PET!)
+							["timeline"] = { ADDED_6_2_0 }
+						}),
 						i(128319, {	-- Void-Shrouded Satchel
 							i(128318),	-- Touch of the Void
 						}),

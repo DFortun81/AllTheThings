@@ -10,34 +10,19 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(66070),	-- Lizzy
 		i(66075),	-- Bubbles
 		i(11903),	-- Cat Carrier (Corrupted Kitten)
-		i(109602),	-- Echo of Murmur (temp item)
-		i(115469),	-- Pet template
 		i(67417),	-- DND lil dw placeholder
-		i(115282),	-- Draenei Micro Defender (different version is used)
-		i(118596),	-- Sassy Sproutling
-		i(113569),	-- Autumnal Sproutling (unused ver)
 		i(91031),	-- Darkmoon Glowfly (PET!)
-		i(119147),	-- Nether Ray Fry (unsed Version)
-		i(119112),	-- Son of Sethe (unsed Version)
 		i(88148),	-- Jade Crane Chick (PET!)
 		model(38311, n(51634)),	-- Bubbles
 		model(36583, n(51636)),	-- Lizzy
 		model(14657, n(14629)),	-- Loggerhead Snapjaw
 		model(36129, n(48376)),	-- Rumbling Rockling
-		model(57820, n(83592, {	-- Sassy Sproutling
-				p(1433),
-		})),
 		model(36130, n(48377)),	-- Swirling Stormling
 		model(36131, n(48378)),	-- Whirling Waveling
 		model(29060, n(34031)),	-- XS-001 Constructor Bot
-		i(118600),	-- Forest Sproutling (unsed Version)
-		i(118597),	-- Never added
 		i(44972),	-- Alarming Clockbot (NOT IN USE)
-		model(49086, n(71700, {	-- Crafty
+		model(49086, n(71700, {	-- Crafty [5.4.0]
 			p(1257),
-		})),
-		model(57821, n(83589, {		-- Kelp Sproutling
-			p(1431),
 		})),
 		i(31665),	-- Toy RC Mortar Tank
 		i(13342),	-- Pet Fish
@@ -48,6 +33,147 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- #if BEFORE 7.0.3
 		i(23712),	-- White Tiger Cub -- later reused for Ash'ana.
 		-- #endif
+		tier(WOD_TIER, {
+			-- 6.0.2
+			tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 6.0.2" } }, {
+				-- Trainer Pets --
+				pet(1503),	-- Acidtooth (PET!)
+				pet(1559),	-- Apexis Guardian (PET!)
+				pet(1498),	-- Archimedes (PET!)
+				pet(1562),	-- Atonement (PET!)
+				pet(1504),	-- Blingtron 4999b (PET!)
+				pet(1479),	-- Brutus (PET!)
+				pet(1484),	-- Carroteye (PET!)
+				pet(1473),	-- Carrotus Maximus (PET!)
+				pet(1608),	-- Carrotus Maximus (PET!)
+				pet(1557),	-- Darkwing (PET!)
+				pet(1400),	-- Deebs (PET!)
+				pet(1548),	-- Doodle (PET!)
+				pet(1409),	-- Eleanor (PET!)
+				pet(1552),	-- Fangra (PET!)
+				pet(1510),	-- Fatos (PET!)
+				pet(1499),	-- Fiero (PET!)
+				pet(1554),	-- Gladiator Deathy (PET!)
+				pet(1555),	-- Gladiator Murkalot (PET!)
+				pet(1556),	-- Gladiator Murkimus (PET!)
+				pet(1472),	-- Gnawface (PET!)
+				pet(1609),	-- Gnawface (PET!)
+				pet(1474),	-- Gorefu (PET!)
+				pet(1607),	-- Gorefu (PET!)
+				pet(1561),	-- Grace (PET!)
+				pet(1490),	-- Gromli (PET!)
+				pet(1492),	-- Grubbles (PET!)
+				pet(1424),	-- Gyrexle, the Eternal Mechanic (PET!)
+				pet(1509),	-- Hanos (PET!)
+				pet(1443),	-- Idol of Decay (PET!)
+				pet(1496),	-- Jahan (PET!)
+				pet(1487),	-- King Floret (PET!)
+				pet(1489),	-- Kromli (PET!)
+				pet(1508),	-- Manos (PET!)
+				pet(1476),	-- Mr. Pointy (PET!)
+				pet(1483),	-- Mr. Terrible (PET!)
+				pet(1475),	-- Otto (PET!)
+				pet(1547),	-- Pixiebell (PET!)
+				pet(1506),	-- Protectron 011803 (PET!)
+				pet(1505),	-- Protectron 022481 (PET!)
+				pet(1402),	-- Puzzle (PET!)
+				pet(1488),	-- Queen Floret (PET!)
+				pet(1480),	-- Quintessence of Light (PET!)
+				pet(1501),	-- Rockbiter (PET!)
+				pet(1482),	-- Rukus (PET!)
+				pet(1497),	-- Samm (PET!)
+				pet(1494),	-- Scrags (PET!)
+				pet(1560),	-- Serendipity (PET!)
+				pet(1485),	-- Sloppus (PET!)
+				pet(1493),	-- Stings (PET!)
+				pet(1507),	-- Stitches Jr. (PET!)
+				pet(1502),	-- Stonechewer (PET!)
+				pet(1477),	-- Syd (PET!)
+				pet(1549),	-- Tally (PET!)
+				pet(1486),	-- The Beakinator (PET!)
+				pet(1558),	-- The Great Kaliri (PET!)
+				pet(1500),	-- Tirs (PET!)
+				pet(1401),	-- Tyri (PET!)
+				pet(1444),	-- Wishbright Lantern (PET!)
+				pet(1553),	-- Wolfgar (PET!)
+				pet(1550),	-- Wolfus (PET!)
+				-- Only SpeciesID
+				pet(1423, {	-- Bitey (PET!)
+					["modelID"] = 47731,
+				}),
+				pet(1420, {	-- Evil Widowling (PET!)
+					-- ["modelID"] = ,
+				}),
+				pet(1352, {	-- Lord Piglet (PET!)
+					["modelID"] = 22938,
+				}),
+				pet(1404, {	-- Mechanical Scorpid (PET!)
+					["modelID"] = 5905,
+				}),
+				pet(1610, {	-- Unborn Val'kyr (PET!)
+					["modelID"] = 48650,
+				}),
+				pet(1259, {	-- Widowling (PET!)
+					["modelID"] = 40337,
+				}),
+				-- With SpeciesID Attached
+				i(118597, {	-- Kelp Sproutling (PET!)
+					["modelID"] = 57822,
+				}),
+				i(118596, {	-- Sassy Sproutling (PET!)
+					["modelID"] = 57820,
+				}),
+				-- Without SpeciesID Attached
+				i(113569),	-- Autumnal Sproutling (PET!) [Autumnal Sproutling, item was never used]
+				i(115282),	-- Draenei Micro Defender (PET!) [Draenei Micro Defender, item was never used]
+				i(109602),	-- Echo of Murmur [TEMP ITEM & SPELL] (PET!) [Summons Terrible Turnip]
+				i(118600),	-- Forest Sproutling (PET!) [Forest Sproutling, item was never used]
+				i(119466),	-- Ikky (PET!) [Ikky, item was never used]
+				i(119147),	-- Nether Ray Fry (PET!) [Nether Ray Fry, item was never used]
+				i(115469),	-- Pet Template (PET!) [Summons Meadowstomper Calf]
+				i(119112),	-- Son of Sethe (PET!) [Son of Sethe, item was never used]
+			})),
+
+			-- 6.1.0
+			tier(WOD_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 6.1.0" } }, {
+				-- Trainer Pets --
+				pet(1647),	-- Bones (PET!)
+				pet(1653),	-- Brisby (PET!)
+				pet(1644),	-- Carl (PET!)
+				pet(1641),	-- Dusty (PET!)
+				pet(1646),	-- Enbi'see (PET!)
+				pet(1652),	-- Jenner (PET!)
+				pet(1645),	-- Mal (PET!)
+				pet(1637),	-- Moon (PET!)
+				pet(1643),	-- Mouthy (PET!)
+				pet(1654),	-- Nicodemus (PET!)
+				pet(1651),	-- Prince Charming (PET!)
+				pet(1649),	-- Runts (PET!)
+				pet(1642),	-- Salad (PET!)
+				pet(1640),	-- Spores (PET!)
+				pet(1648),	-- Sprouts (PET!)
+			})),
+
+			-- 6.2.0
+			tier(WOD_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 6.2.0" } }, {
+				-- Trainer Pets --
+				pet(1681),	-- Bleakclaw (PET!)
+				pet(1674),	-- Chaos Pup (PET!)
+				pet(1673),	-- Corrupted Thundertail (PET!)
+				pet(1675),	-- Cursed Spirit (PET!)
+				pet(1680),	-- Dark Gazer (PET!)
+				pet(1686),	-- Defiled Earth (PET!)
+				pet(1678),	-- Direflame (PET!)
+				pet(1683),	-- Dreadwalker (PET!)
+				pet(1676),	-- Felfly (PET!)
+				pet(1671),	-- Felsworn Sentry (PET!)
+				pet(1679),	-- Mirecroak (PET!)
+				pet(1684),	-- Netherfist (PET!)
+				pet(1685),	-- Skrillix (PET!)
+				pet(1677),	-- Tainted Maulclaw (PET!)
+				pet(1682),	-- Vile Blood of Draenor (PET!)
+			})),
+		}),
 		tier(LEGION_TIER, {
 			-- 7.0.3
 			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
@@ -189,7 +315,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				pet(2015),	-- Tia Mia and Larry (PET!)
 				pet(1991),	-- Vilefang (PET!)
 				-- Only SpeciesID
-				pet(2046),	-- Arne's Test Pet (PET!)
+				pet(2046, {	-- Arne's Test Pet (PET!)
+					["modelID"] = 70068,
+				}),
 			})),
 
 			-- 7.2.5
@@ -208,7 +336,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				pet(2028),	-- Mining Monkey (PET!)
 				pet(2023),	-- Unfortunate Defias (PET!)
 				-- Only SpeciesID
-				pet(2061),	-- Test Dragon Pet (PET!)
+				pet(2061, {	-- Test Dragon Pet (PET!)
+					["modelID"] = 90413,
+				}),
 			})),
 
 			-- 7.3.0
@@ -236,7 +366,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				pet(2102),	-- Snozz (PET!)
 				pet(2107),	-- Watcher (PET!)
 				-- Only SpeciesID
-				pet(2048),	-- Golden Retriever (PET!)
+				pet(2048, {	-- Golden Retriever (PET!)
+					["modelID"] = 76046,
+				}),
 			})),
 		}),
 		tier(BFA_TIER, {

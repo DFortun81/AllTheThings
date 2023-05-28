@@ -4330,6 +4330,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				-- #if AFTER MOP
+				filter(BATTLE_PETS, {
+					pet(1604, {	-- Nethaera's Light (PET!)
+						["description"] = "To obtain this pet do /cheer at it.",
+						["timeline"] = { ADDED_6_2_0 },
+					}),
+				}),
+				-- #endif
 				prof(COOKING, {
 					i(43143, {	-- Wild Mustard
 						["provider"] = { "o", 192827 },	-- Wild Mustard

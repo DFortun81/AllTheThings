@@ -193,7 +193,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(106240, {	-- Alterac Brew-Pup (PET!)
 			["timeline"] = { "added 5.4.1.17481" },
 		}),
-		i(118516, {	-- Argi
+		i(118516, {	-- Argi (PET!)
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
 		battlepet(156, {	-- Bananas
@@ -206,7 +206,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 5.3.0.16825" },
 		}),
 		i(128424, {	-- Brightpaw (PET!)
-			["timeline"] = { "added 6.2.2.20395" },
+			["timeline"] = { ADDED_6_2_3 },
 		}),
 		i(160588, {	-- Cap'n Crackers (PET!)
 			["timeline"] = { "added 8.0.1.27602" },

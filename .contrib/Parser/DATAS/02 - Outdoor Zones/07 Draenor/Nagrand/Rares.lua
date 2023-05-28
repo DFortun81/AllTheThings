@@ -164,7 +164,7 @@ _.Zones =
 						i(118687),	-- Grizzled Wolfskin Cloak
 					},
 				}),
-				n(98200, {	-- Guk
+				n(98200, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {	-- Guk
 					["questID"] = 40074,
 					["isDaily"] = true,
 					["coord"] = { 23.7, 38.5, DRAENOR_NAGRAND },
@@ -172,7 +172,7 @@ _.Zones =
 					["g"] = {
 						i(129218),	-- Empyreal Manafiend (PET!)
 					},
-				}),
+				})),
 				n(83603, {	-- Hunter Blacktooth
 					["questID"] = 35923,
 					["coord"] = { 80.6, 30.6, DRAENOR_NAGRAND },
@@ -310,7 +310,7 @@ _.Zones =
 						i(119389),	-- Pit-Slayer's Magmastone
 					},
 				}),
-				n(98199, {	-- Pugg
+				n(98199, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {	-- Pugg
 					["questID"] = 40073,
 					["isDaily"] = true,
 					["coord"] = { 28.1, 29.6, DRAENOR_NAGRAND },
@@ -318,7 +318,7 @@ _.Zones =
 					["g"] = {
 						i(129217),	-- Empowered Manafiend (PET!)
 					},
-				}),
+				})),
 				n(82755, {	-- Redclaw the Feral
 					["questID"] = 35712,
 					["coord"] = { 73.6, 57.8, DRAENOR_NAGRAND },
@@ -333,7 +333,7 @@ _.Zones =
 						i(118688),	-- Carapace Shell Shoulders
 					},
 				}),
-				n(98198, {	-- Rukdug
+				n(98198, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {	-- Rukdug
 					["questID"] = 40075,
 					["isDaily"] = true,
 					["coord"] = { 25.9, 34.7, DRAENOR_NAGRAND },
@@ -341,7 +341,7 @@ _.Zones =
 					["g"] = {
 						i(129216),	-- Energized Manafiend (PET!)
 					},
-				}),
+				})),
 				n(83634, {	-- Scout Pokhar
 					["questID"] = 35931,
 					["coord"] = { 54.8, 61.2, DRAENOR_NAGRAND },

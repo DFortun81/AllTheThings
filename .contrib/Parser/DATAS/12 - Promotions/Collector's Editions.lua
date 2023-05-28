@@ -239,7 +239,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 	}),
 	tier(LEGION_TIER, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",
-		["timeline"] = { "added 7.0.1" },
+		["timeline"] = { ADDED_6_2_2 },
 		["groups"] = {
 			ach(10321),	-- Collector's Edition: Nibbles
 			ach(10320),	-- Collector's Edition: Illidari Felstalker

@@ -19,6 +19,7 @@ _.Zones =
 					379,	-- Squirrel (PET!)
 				}},
 				["groups"] = {
+					pet(1738),	-- Auburn Ringtail (PET!)
 					pet(1913),	-- Gleamhoof Fawn (PET!)
 					pet(1734),	-- Shimmering Aquafly (PET!)
 					pet(1739, {	-- Spring Strider (PET!)

@@ -84,9 +84,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 46.0, 71.8, DRAENOR_SHADOWMOON_VALLEY },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(119431,	{	-- Servant of Demidos (PET!)
-							["timeline"] = "added 6.0.2.18764"
-						}),
+						i(119431),	-- Servant of Demidos (PET!)
 						i(119377),	-- Void-Touched Diamond Necklace
 					},
 				}),
