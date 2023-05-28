@@ -3955,7 +3955,7 @@ for key,value in pairs({
 	--TODO: [398796] = "Resonating Arcane Crystal",	-- Resonating Arcane Crystal
 	--TODO: [398810] = "Fealty's Reward",	-- Fealty's Reward
 	--TODO: [398814] = "Molten Hoard",	-- Molten Hoard
-	--TODO: [398815] = "Secured Shipment",	-- Secured Shipment
+	[398815] = "보호되는 화물",	-- Secured Shipment
 	--TODO: [401236] = "Malnourished Specimen",	-- Malnourished Specimen
 	[401238] = "골수 발효 점액",	-- Marrow-Ripened Slime
 	[401240] = "수상한 거푸집",	-- Suspicious Mold

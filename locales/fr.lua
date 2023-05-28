@@ -3870,7 +3870,7 @@ for key,value in pairs({
 	[387746] = "Cache d’esprit primordial",	-- Primordial Spirit Cache
 	[387749] = "Cristalépine animé",	-- Animate Crystalspine
 	[387853] = "Cristaux brisés",	-- Shattered Crystals
-	--TODO: [388471] = "Pillaged Primordial Cache",	-- Pillaged Primordial Cache
+	[388471] = "Cache primordiale pillée",	-- Pillaged Primordial Cache
 	[388712] = "Coffre d’opéra",	-- Opera Chest
 	[388866] = "Pot de composants",	-- Reagent Pot
 	[388873] = "Sac de pièces des Lamineurs",	-- Irontide Coin Bag

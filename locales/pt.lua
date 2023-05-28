@@ -3849,8 +3849,8 @@ for key,value in pairs({
 	[386633] = "Baú das Tempestades",	-- Chest of Storms
 	[386648] = "Pergaminho Misterioso",	-- Mysterious Scroll
 	[386660] = "Pilha de Ouro",	-- Gold Pile
-	--TODO: [386668] = "Shattered Hakkari Bijou",	-- Shattered Hakkari Bijou
-	--TODO: [386669] = "Fragmented Hakkari Bijou",	-- Fragmented Hakkari Bijou
+	[386668] = "Joia Hakkari Estilhaçada",	-- Shattered Hakkari Bijou
+	[386669] = "Joia Hakkari Fragmentada",	-- Fragmented Hakkari Bijou
 	[386680] = "Almanaque Misterioso",	-- Mysterious Almanac
 	[386683] = "Livro Incinerado",	-- Seared Book
 	[386687] = "Diário Envelhecido",	-- Aged Journal
@@ -3858,7 +3858,7 @@ for key,value in pairs({
 	[386690] = "Compêndio Ambíguo",	-- Ambiguous Compendium
 	[386762] = "Baú de Armadura Arcano Primordial",	-- Primordial Armor Cache
 	[387493] = "Peixe Singular",	-- Unique Fish
-	[387496] = "Braseiro da LoucuraBrazier of Madness",	-- Brazier of Madness	--TODO: this was manually translated
+	[387496] = "Braseiro da Loucura",	-- Brazier of Madness
 	[387500] = "Bonequinho de Neve",	-- Chilly Snowman
 	[387501] = "Ficha de Presente de Neltharion",	-- Neltharion Gift Token
 	[387503] = "Carta Lacrada para Neltharion",	-- Sealed Letter To Neltharion
