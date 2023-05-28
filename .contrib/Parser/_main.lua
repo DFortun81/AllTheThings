@@ -2488,6 +2488,9 @@ gssh = function(id, t)									-- Create a GEAR SET SUB HEADER Object (IE: "Glad
 end
 header = function(type, id, t)							-- Create an Automatic Header which will use the plain Text of the specified in-game object based on Type-ID combination
 	t = struct("headerID", id, t);
+	if not type then
+		error("Invalid header type for id",id);
+	end
 	t.type = type;
 	return t;
 end
