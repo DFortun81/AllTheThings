@@ -185,7 +185,7 @@ local function LocalizeGlobal(globalName, init)
 end
 local constructor = function(id, t, typeID)
 	if t then
-		if not rawget(t, "g") and rawget(t, 1) then
+		if not t.g and t[1] then
 			return { g=t, [typeID]=id };
 		else
 			t[typeID] = id;
@@ -5870,11 +5870,11 @@ app.CreateDataCache = function(name)
 	cache["mountID"] = {};
 	cache["nextQuests"] = {};
 	-- identical cache as creatureID (probably deprecate creatureID use eventually)
-	cache["npcID"] = rawget(cache, "creatureID");
+	cache["npcID"] = cache.creatureID;
 	cache["objectID"] = {};
 	cache["professionID"] = {};
 	-- identical cache as professionID
-	cache["requireSkill"] = rawget(cache, "professionID");
+	cache["requireSkill"] = cache.professionID;
 	cache["questID"] = {};
 	cache["runeforgePowerID"] = {};
 	cache["rwp"] = {};
@@ -6050,7 +6050,7 @@ fieldConverters = {
 		end
 	end,
 	["titleIDs"] = function(group, value)
-		_cache = rawget(fieldConverters, "titleID");
+		_cache = fieldConverters.titleID;
 		for _,titleID in ipairs(value) do
 			_cache(group, titleID);
 		end
@@ -6170,7 +6170,7 @@ local mapKeyUncachers = {
 };
 CacheFields = function(group)
 	local mapKeys;
-	local hasG = rawget(group, "g");
+	local hasG = group.g;
 	-- track if this group is a 'real' instance (instanceID + mapID/maps)
 	if not currentInstance and group.key == "instanceID" and (group.mapID or group.maps) then
 		currentInstance = group;
@@ -8159,8 +8159,8 @@ local questFields = {
 		local sourceQuests = t.sourceQuests;
 		if sourceQuests and #sourceQuests > 0 then
 			local sq, filter, onQuest;
-			local prereqs = rawget(t, "prereqs") or {};
-			local sqreq = rawget(t, "sqreq") or #sourceQuests;
+			local prereqs = t.prereqs or {};
+			local sqreq = t.sqreq or #sourceQuests;
 			local missing = 0;
 			t.prereqs = prereqs;
 			wipe(prereqs);
@@ -8688,7 +8688,7 @@ local TypeQuests = {
 app.CreateQuest = function(id, t)
 	if t then
 		-- extract specific faction data
-		local aqd = rawget(t, "aqd");
+		local aqd = t.aqd;
 		if aqd then
 			-- Apply the faction specific quest data to this object.
 			if app.FactionID == Enum.FlightPathFaction.Horde then
@@ -8698,7 +8698,7 @@ app.CreateQuest = function(id, t)
 			end
 		end
 		-- special type
-		local type = rawget(t, "type");
+		local type = t.type;
 		if type then
 			local q = TypeQuests[type];
 			if q then
@@ -10932,7 +10932,7 @@ local fields = {
 		return "s";
 	end,
 	["info"] = function(t)
-		return C_TransmogCollection_GetSourceInfo(rawget(t, "s")) or {};
+		return C_TransmogCollection_GetSourceInfo(t.s) or {};
 	end,
 	["itemID"] = function(t)
 		local itemID = t.info.itemID;
@@ -10951,14 +10951,14 @@ local fields = {
 		return t.itemID and select(5, GetItemInfoInstant(t.itemID));
 	end,
 	["collectible"] = function(t)
-		return rawget(t, "s") and app.CollectibleTransmog;
+		return t.s and app.CollectibleTransmog;
 	end,
 	["collected"] = function(t)
-		return ATTAccountWideData.Sources[rawget(t, "s")];
+		return ATTAccountWideData.Sources[t.s];
 	end,
 	["modItemID"] = function(t)
 		t.modItemID = GetGroupItemIDWithModID(t) or t.itemID;
-		return rawget(t, "modItemID");
+		return t.modItemID;
 	end,
 	["specs"] = function(t)
 		return t.itemID and GetFixedItemSpecInfo(t.itemID);
@@ -11265,14 +11265,14 @@ local cache = app.CreateCache("modItemID");
 -- Consolidated function to handle how many retries for information an Item may have
 local function HandleItemRetries(t)
 	local _t, id = cache.GetCached(t);
-	local retries = rawget(_t, "retries");
+	local retries = _t.retries;
 	if retries then
 		if retries > app.MaximumItemInfoRetries then
 			local itemName = L["ITEM_NAMES"][id] or "Item #" .. tostring(id) .. "*";
 			_t.title = L["FAILED_ITEM_INFO"];
 			_t.link = nil;
 			_t.s = nil;
-			-- print("itemRetriesMax",itemName,rawget(t, "retries"))
+			-- print("itemRetriesMax",itemName,t.retries)
 			-- save the "name" field in the source group to prevent further requests to the cache
 			t.name = itemName;
 			return itemName;
@@ -11418,7 +11418,7 @@ local itemFields = {
 	["f"] = function(t)
 		-- Unknown item type after Parser, so make sure we save the filter for later references
 		t.f = -1;
-		return rawget(t, "f");
+		return t.f;
 	end,
 	["tsm"] = function(t)
 		local itemLink = t.itemID;
@@ -11435,7 +11435,7 @@ local itemFields = {
 	end,
 	["modItemID"] = function(t)
 		t.modItemID = GetGroupItemIDWithModID(t) or t.itemID;
-		return rawget(t, "modItemID");
+		return t.modItemID;
 	end,
 	["indicatorIcon"] = app.GetQuestIndicator,
 	["trackableAsQuest"] = function(t)
@@ -11496,7 +11496,7 @@ local itemFields = {
 		return t.collectedAsFaction or t.collectedAsQuest;
 	end,
 	["collectedAsTransmog"] = function(t)
-		return ATTAccountWideData.Sources[rawget(t, "s")];
+		return ATTAccountWideData.Sources[t.s];
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
@@ -11603,18 +11603,18 @@ app.CreateItemSource = function(sourceID, itemID, t)
 end
 app.CreateItem = function(id, t)
 	if t then
-		if rawget(t, "s") then
+		if t.s then
 			return setmetatable(constructor(id, t, "itemID"), app.BaseItemSource);
-		elseif rawget(t, "factionID") then
-			if rawget(t, "questID") then
+		elseif t.factionID then
+			if t.questID then
 				return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestIDAndFactionID);
 			else
 				return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithFactionID);
 			end
-		elseif rawget(t, "questID") then
+		elseif t.questID then
 			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestID);
-		elseif rawget(t, "achID") then
-			t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
+		elseif t.achID then
+			t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithAchievementID);
 		end
 	end
@@ -11847,7 +11847,7 @@ fields.g = function(t)
 				heirloomUnlockID = t.itemID,
 				u = t.u
 			}) };
-			return rawget(t, "g");
+			return t.g;
 		end
 	end
 
@@ -12494,8 +12494,8 @@ fields.icon = mapFields.iconForAchievement;
 app.BaseMapWithAchievementID = app.BaseObjectFields(fields, "BaseMapWithAchievementID");
 app.CreateMap = function(id, t)
 	t = constructor(id, t, "mapID");
-	if rawget(t, "achID") then
-		t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
+	if t.achID then
+		t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 		t = setmetatable(t, app.BaseMapWithAchievementID);
 	else
 		t = setmetatable(t, app.BaseMap);
@@ -12861,7 +12861,7 @@ local npcFields = {
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
+		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
 	end,
 	["altcollectedAsQuest"] = function(t)
 		if t.altQuests then
@@ -13050,35 +13050,35 @@ end
 app.CreateNPC = function(id, t)
 	if t then
 		-- TEMP: clean MoH tagging from random Vendors
-		if rawget(t, "itemID") == 137642 then
+		if t.itemID == 137642 then
 			t.itemID = nil;
-			-- print("ItemID",rawget(t, "itemID"),"used on NPC/Header group... Don't do that!",id);
+			-- print("ItemID",t.itemID,"used on NPC/Header group... Don't do that!",id);
 		end
 		if id < 1 then
-			if rawget(t, "achID") then
-				t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
-				if rawget(t, "questID") then
+			if t.achID then
+				t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
+				if t.questID then
 					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithAchievementAndQuest);
 				else
 					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithAchievement);
 				end
 			else
-				if rawget(t, "questID") then
+				if t.questID then
 					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithQuest);
 				else
 					return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
 				end
 			end
 		else
-			if rawget(t, "achID") then
-				t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
-				if rawget(t, "questID") then
+			if t.achID then
+				t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
+				if t.questID then
 					return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithAchievementAndQuest);
 				else
 					return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithAchievement);
 				end
 			else
-				if rawget(t, "questID") or rawget(t, "questIDA") then
+				if t.questID or t.questIDA then
 					return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithQuest);
 				else
 					return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
@@ -13125,7 +13125,7 @@ local objectFields = {
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
+		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
 	end,
 	["altcollectedAsQuest"] = function(t)
 		if t.altQuests then
@@ -13219,15 +13219,15 @@ fields.locked = objectFields.lockedAsQuest;
 app.BaseObjectWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseObjectWithAchievementAndQuest");
 app.CreateObject = function(id, t)
 	if t then
-		if rawget(t, "achID") then
-			t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
-			if rawget(t, "questID") then
+		if t.achID then
+			t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
+			if t.questID then
 				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithAchievementAndQuest);
 			else
 				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithAchievement);
 			end
 		else
-			if rawget(t, "questID") then
+			if t.questID then
 				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithQuest);
 			end
 		end
@@ -13737,7 +13737,7 @@ local fields = {
 	end,
 	["title"] = function(t)
 		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
-			if rawget(t, "_title") then return rawget(t, "_title") end
+			if t._title then return t._title end
 			local ids = t.titleIDs;
 			local m, f = ids[1], ids[2];
 			local acctTitles = ATTAccountWideData.Titles;
@@ -13749,7 +13749,7 @@ local fields = {
 				(acctTitles[m] and complete or missing)..mt.."|r // |c"..
 				(acctTitles[f] and complete or missing)..ft.."|r";
 			t._title = acctTitleInfo;
-			return rawget(t, "_title");
+			return t._title;
 		end
 	end,
 	["style"] = function(t)
@@ -15839,7 +15839,7 @@ local function Refresh(self)
 	end
 
 	-- If there is no raw data, then return immediately.
-	local rowData = rawget(self, "rowData");
+	local rowData = self.rowData;
 	if not rowData then return; end
 
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
@@ -19152,7 +19152,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 					local results = SearchForField("mapID", t.mapID);
 					t.collected = results and true or false;
 					t.title = results and #results or 0;
-					return rawget(t, "collected");
+					return t.collected;
 				end,
 			};
 			-- an override base table for the normal map base table...
@@ -19929,7 +19929,7 @@ customWindowUpdates["Harvester"] = function(self, force)
 			-- add artifacts
 			for artifactID,groups in pairs(fieldCache["artifactID"]) do
 				for _,group in pairs(groups) do
-					if not rawget(group, "s") then
+					if not group.s then
 						tinsert(g, setmetatable({
 							visible = true,
 							artifactID = tonumber(artifactID),
