@@ -4077,7 +4077,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		else
 			for i,j in ipairs(group) do
-				if j.rank == rank and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+				if j.rank == rank and app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 					if j.mapID or j.parent == nil or j.parent.parent == nil then
 						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 					else
@@ -4099,7 +4099,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		else
 			for i,j in ipairs(group) do
-				if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+				if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 				end
 			end
@@ -4117,7 +4117,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		else
 			for i,j in ipairs(group) do
-				if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+				if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 				end
 			end
@@ -4467,7 +4467,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if not app.RecursiveUnobtainableFilter(j) then
 						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
 					-- from obtainable, different character source
-					elseif not app.RecursiveClassAndRaceFilter(j) then
+					elseif not app.RecursiveCharacterRequirementsFilter(j) then
 						tinsert(temp, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
 					else
 						-- check if this needs an unobtainable icon even though it's being shown
@@ -14068,6 +14068,7 @@ local function CurrentCharacterFilters(item)
 		and FilterItemClass_RequireClasses(item)
 		and FilterItemClass_RequireRaces(item)
 		and FilterItemClass_CustomCollect(item)
+		and FilterItemClass_RequireItemFilter(item)
 		and ItemIsInGame(item);
 end
 local function FilterItemSource(sourceInfo)
@@ -14389,75 +14390,64 @@ app.VerifyRecursion = function(group, checked)
 	return true;
 end
 -- Recursively check outwards to find if any parent group restricts the filter for the current character (regardless of settings)
-app.RecursiveCharacterRequirementsFilter = function(group)
+local function RecursiveCharacterRequirementsFilter(group)
 	if CurrentCharacterFilters(group) then
 		local filterParent = group.sourceParent or group.parent;
 		if filterParent then
-			return app.RecursiveCharacterRequirementsFilter(filterParent)
+			return RecursiveCharacterRequirementsFilter(filterParent)
 		end
 		return true;
 	end
 	return false;
 end
+app.RecursiveCharacterRequirementsFilter = RecursiveCharacterRequirementsFilter;
 -- Recursively check outwards to find if any parent group restricts the filter for the current settings
-app.RecursiveGroupRequirementsFilter = function(group)
+local function RecursiveGroupRequirementsFilter(group)
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 		local filterParent = group.sourceParent or group.parent;
 		if filterParent then
-			return app.RecursiveGroupRequirementsFilter(filterParent)
+			return RecursiveGroupRequirementsFilter(filterParent)
 		end
 		return true;
 	end
 	return false;
 end
+app.RecursiveGroupRequirementsFilter = RecursiveGroupRequirementsFilter;
 -- Recursively check outwards within the direct parent chain only to find if any parent group restricts the filter for this character
-app.RecursiveDirectGroupRequirementsFilter = function(group)
+local function RecursiveDirectGroupRequirementsFilter(group)
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 		local filterParent = group.parent;
 		if filterParent then
-			return app.RecursiveDirectGroupRequirementsFilter(filterParent)
+			return RecursiveDirectGroupRequirementsFilter(filterParent)
 		end
 		return true;
 	end
 	return false;
 end
-app.RecursiveClassAndRaceFilter = function(group)
-	if app.ClassRequirementFilter(group) and app.RaceRequirementFilter(group) then
-		if group.parent then return app.RecursiveClassAndRaceFilter(group.parent); end
-		return true;
-	end
-	return false;
-end
-app.RecursiveUnobtainableFilter = function(group)
+app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter;
+local function RecursiveUnobtainableFilter(group)
 	if app.SeasonalOrUnobtainableFilter(group) then
-		if group.parent then return app.RecursiveUnobtainableFilter(group.parent); end
+		if group.parent then return RecursiveUnobtainableFilter(group.parent); end
 		return true;
 	end
 	return false;
 end
+app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
 -- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
 -- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
-app.RecursiveFirstParentWithField = function(group, field, followSource)
+local function RecursiveFirstParentWithField(group, field, followSource)
 	if group then
-		return group[field] or app.RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
+		return group[field] or RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
 	end
 end
+app.RecursiveFirstParentWithField = RecursiveFirstParentWithField;
 -- Returns the first encountered group tracing upwards in direct parent hierarchy which has a value for the provided field
-app.RecursiveFirstDirectParentWithField = function(group, field)
+local function RecursiveFirstDirectParentWithField(group, field)
 	if group then
-		return group[field] or app.RecursiveFirstDirectParentWithField(rawget(group, "parent"), field);
+		return group[field] or RecursiveFirstDirectParentWithField(rawget(group, "parent"), field);
 	end
 end
--- Returns the first found recursive Parent of the group which meets the provided field and value combination
-app.RecursiveFirstParentWithFieldValue = function(group, field, value)
-	if group and field then
-		if group[field] == value then
-			return group;
-		else
-			return app.RecursiveFirstParentWithFieldValue(group.parent, field, value);
-		end
-	end
-end
+app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
 -- Cleans any groups which are nested under any group with any specified fields
 app.CleanInheritingGroups = function(groups, ...)
 	local arrs = select("#", ...);
@@ -14552,6 +14542,13 @@ local function SetThingVisibility(parent, group)
 	group.visible = visible;
 end
 local UpdateGroups;
+local RecursiveGroupRequirementsFilter, GroupRequirementsFilter, GroupFilter;
+-- Local caches for some heavily used functions within updates
+local function CacheFilterFunctions()
+	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
+	GroupRequirementsFilter = app.GroupRequirementsFilter;
+	GroupFilter = app.GroupFilter;
+end
 local function UpdateGroup(parent, group)
 	-- local debug = group.criteriaID == 2204;
 	-- if debug then print("UG",group.hash,group.__type) end
@@ -14579,10 +14576,10 @@ local function UpdateGroup(parent, group)
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
 	-- so need to verify filtering based on that instead of only itself
 	if group.sourceParent then
-		valid = app.RecursiveGroupRequirementsFilter(group);
+		valid = RecursiveGroupRequirementsFilter(group);
 		-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
 	else
-		valid = app.GroupRequirementsFilter(group) and app.GroupFilter(group);
+		valid = GroupRequirementsFilter(group) and GroupFilter(group);
 		-- if debug then print("UG.GRF/GF",valid) end
 	end
 
@@ -14686,6 +14683,7 @@ local function TopLevelUpdateGroup(group)
 	group.TLUG = GetTimePreciseSec();
 	group.total = 0;
 	group.progress = 0;
+	CacheFilterFunctions();
 	-- app.PrintDebug("TLUG",group.hash)
 	local ItemBindFilter = app.ItemBindFilter;
 	if ItemBindFilter ~= app.NoFilter and ItemBindFilter(group) then
