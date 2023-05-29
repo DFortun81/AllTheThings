@@ -127,9 +127,49 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					["maps"] = { 1662 },	-- Queen's Conservatory
 					["g"] = {
 						n(ACHIEVEMENTS, {
-							ach(14676),	-- Divine Spirit Savior
-							ach(14675),	-- Spirit Talker
-							ach(14670),	-- That's the Spirit
+							ach(14676, {	-- Divine Spirit Savior
+								crit(1, {	-- Infuse Divine Martial Spirit
+									["provider"] = { "i", 178878 },	-- Divine Martial Spirit
+								}),
+								crit(2, {	-- Infuse Divine Dutiful Spirit
+									["provider"] = { "i", 178879 },	-- Divine Dutiful Spirit
+								}),
+								crit(3, {	-- Infuse Divine Prideful Spirit
+									["provider"] = { "i", 178884 },	-- Divine Prideful Spirit
+								}),
+								crit(4, {	-- Infuse Divine Untamed Spirit
+									["provider"] = { "i", 177700 },	-- Divine Untamed Spirit
+								}),
+							}),
+							ach(14675, {	-- Spirit Talker
+								crit(1, {	-- Infuse Greater Martial Spirit
+									["provider"] = { "i", 178877 },	-- Greater Martial Spirit
+								}),
+								crit(2, {	-- Infuse Greater Dutiful Spirit
+									["provider"] = { "i", 178880 },	-- Greater Dutiful Spirit
+								}),
+								crit(3, {	-- Infuse Prideful Spirit [This one is missing 'Greater' in-game]
+									["provider"] = { "i", 178883 },	-- Greater Prideful Spirit
+								}),
+								crit(4, {	-- Infuse Greater Untamed Spirit
+									["provider"] = { "i", 177699 },	-- Greater Untamed Spirit
+								}),
+							}),
+							ach(14670, {	-- That's the Spirit
+								-- [These are in a different order]
+								crit(1, {	-- Infuse Untamed Spirit
+									["provider"] = { "i", 177698 },	-- Untamed Spirit
+								}),
+								crit(2, {	-- Infuse Martial Spirit
+									["provider"] = { "i", 178874 },	-- Martial Spirit
+								}),
+								crit(3, {	-- Infuse Dutiful Spirit
+									["provider"] = { "i", 178881 },	-- Dutiful Spirit
+								}),
+								crit(4, {	-- Infuse Prideful Spirit [Yes this one is missing 'Greater' in-game]
+									["provider"] = { "i", 178882 },	-- Prideful Spirit
+								}),
+							}),
 						}),
 						n(TIER_ONE, {
 							["icon"] = "Interface\\Icons\\Ability_ardenweald_shaman",

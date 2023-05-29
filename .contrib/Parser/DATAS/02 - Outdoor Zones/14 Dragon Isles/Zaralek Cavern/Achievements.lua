@@ -481,7 +481,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
 				}),
 				crit(9, {	-- Phoenix Hatchling
-					["crs"] = { 192135 },	-- Phoenix Hatchling
+					["crs"] = {
+						192135,	-- Phoenix Hatchling
+						202720,	-- Phoenix Hatchling
+					},
 					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
 				}),
 				crit(10, {	-- Scuttering Bettle

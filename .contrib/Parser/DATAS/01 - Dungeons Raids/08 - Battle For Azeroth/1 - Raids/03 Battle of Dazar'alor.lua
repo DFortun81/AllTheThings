@@ -26,12 +26,12 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 				ach(13319),	-- Battle of Dazar'alor Guild Run (H)
 				ach(13320),	-- Battle of Dazar'alor Guild Run (A)
 				-- TODO: this requires further revision....
-				ach(13286),	-- Siege of Dazar'alor (A)
-				ach(13289),	-- Defense of Dazar'alor (H)
-				ach(13287),	-- Empire's Fall (A)
-				ach(13290),	-- Death's Bargain (H)
-				ach(13288),	-- Might of the Alliance (A)
-				ach(13291),	-- Victory or Death (H)
+				a(ach(13286)),	-- Siege of Dazar'alor (A)
+				h(ach(13289)),	-- Defense of Dazar'alor (H)
+				a(ach(13287)),	-- Empire's Fall (A)
+				h(ach(13290)),	-- Death's Bargain (H)
+				a(ach(13288)),	-- Might of the Alliance (A)
+				h(ach(13291)),	-- Victory or Death (H)
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(165703),	-- Breath of Bwonsamdi

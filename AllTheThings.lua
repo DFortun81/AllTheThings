@@ -10653,6 +10653,7 @@ local FlightPathMapIDs = {
 	2046,	-- Zereth Mortis
 	2057,	-- Dragon Isles
 	2055,	-- Sepulcher of the First Ones (has FPs inside)
+	2149,	-- Ohn'ahran Plains [The Nokhud Offensive] (has FPs inside)
 	2175,	-- Zaralek Cavern
 };
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID
