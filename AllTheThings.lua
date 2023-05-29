@@ -567,60 +567,6 @@ local function GetTempDataMember(member, default)
 		return attData;
 	end
 end
--- local function SetDataSubMember(member, submember, data)
--- 	attData = rawget(AllTheThingsAD, member);
--- 	if attData == nil then
--- 		attData = {};
--- 		attData[submember] = data;
--- 		AllTheThingsAD[member] = attData;
--- 	else
--- 		attData[submember] = data;
--- 	end
--- end
--- local function GetDataSubMember(member, submember, default)
--- 	attData = rawget(AllTheThingsAD,member);
--- 	if attData then
--- 		attData = rawget(attData, submember);
--- 		if attData == nil then
--- 			rawset(rawget(AllTheThingsAD,member), submember, default);
--- 			return default;
--- 		else
--- 			return attData;
--- 		end
--- 	else
--- 		attData = {};
--- 		attData[submember] = default;
--- 		AllTheThingsAD[member] = attData;
--- 		return default;
--- 	end
--- end
--- local function SetTempDataSubMember(member, submember, data)
--- 	attData = rawget(AllTheThingsTempData, member);
--- 	if attData == nil then
--- 		attData = {};
--- 		attData[submember] = data;
--- 		AllTheThingsTempData[member] = attData;
--- 	else
--- 		attData[submember] = data;
--- 	end
--- end
--- local function GetTempDataSubMember(member, submember, default)
--- 	attData = rawget(AllTheThingsTempData,member);
--- 	if attData then
--- 		attData = rawget(attData, submember);
--- 		if attData == nil then
--- 			rawset(rawget(AllTheThingsTempData,member), submember, default);
--- 			return default;
--- 		else
--- 			return attData;
--- 		end
--- 	else
--- 		attData = {};
--- 		attData[submember] = default;
--- 		AllTheThingsTempData[member] = attData;
--- 		return default;
--- 	end
--- end
 
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
@@ -678,10 +624,6 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
--- app.SetDataSubMember = SetDataSubMember;
--- app.GetDataSubMember = GetDataSubMember;
--- app.GetTempDataMember = GetTempDataMember;
--- app.GetTempDataSubMember = GetTempDataSubMember;
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
 app.ReturnNil = function() return; end
