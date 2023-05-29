@@ -7343,15 +7343,16 @@ app.WrapObject = function(t, base)
 end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField)
-	local cache, _t = {};
+	local cache, _t, v = {};
 	cache.GetCached = function(t)
 		local id = t[idField];
 		if id then
 			_t = cache[id];
 			if not _t then
-				cache[id] = {};
+				_t = {};
+				cache[id] = _t;
 			end
-			return cache[id], id;
+			return _t, id;
 		end
 	end;
 	cache.GetCachedField = function(t, field, default_function)
@@ -7364,11 +7365,15 @@ app.CreateCache = function(idField)
 		_t = cache.GetCached(t);
 		if _t then
 			-- set a default provided cache value if any default function was provided and evalutes to a value
-			if not _t[field] and default_function then
+			v = _t[field];
+			if not v and default_function then
 				local defVal = default_function(t, field);
-				if defVal then _t[field] = defVal; end
+				if defVal then
+					v = defVal;
+					_t[field] = v;
+				end
 			end
-			return _t[field];
+			return v;
 		end
 	end;
 	cache.SetCachedField = function(t, field, value)
