@@ -5823,7 +5823,6 @@ local currentMaps = {};
 local currentInstance, currentCache, fieldCache_g, fieldCache_f, fieldConverters;
 local wipe, type =
 	  wipe, type;
-local delayedRawSets = {};
 -- Allows caching the given 'group' using the provided field and value into the 'currentCache'
 local CacheField = function(group, field, value)
 	fieldCache_g = rawget(currentCache, field);
@@ -6124,21 +6123,6 @@ fieldConverters = {
 			end
 		end
 	end,
-	["c"] = function(group, value)
-		if not containsValue(value, app.ClassIndex) then
-			delayedRawSets["nmc"] = true; -- "Not My Class"
-		end
-	end,
-	["r"] = function(group, value)
-		if value ~= app.FactionID then
-			delayedRawSets["nmr"] = true; -- "Not My Race"
-		end
-	end,
-	["races"] = function(group, value)
-		if not containsValue(value, app.RaceIndex) then
-			delayedRawSets["nmr"] = true; -- "Not My Race"
-		end
-	end,
 };
 
 -- Performance Tracking for Caching
@@ -6202,11 +6186,6 @@ CacheFields = function(group)
 			end
 		end
 	end
-	-- any delayed rawsets following the iteration across the group
-	for k,value in pairs(delayedRawSets) do
-		rawset(group, k, value);
-	end
-	wipe(delayedRawSets);
 	-- do sub-groups last
 	if hasG then
 		for _,subgroup in ipairs(hasG) do
@@ -7269,6 +7248,21 @@ local ObjectFunctions = {
 		end
 		t._missing = missing;
 		return missing;
+	end,
+	["nmc"] = function(t)
+		local c = t.c;
+		local nmc = c and not containsValue(c, app.ClassIndex) or false;
+		-- app.PrintDebug("base.nmc",t.__type,nmc)
+		t.nmc = nmc;
+		return nmc;
+	end,
+	["nmr"] = function(t)
+		local races = t.races;
+		local r = t.r;
+		local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
+		-- app.PrintDebug("base.nmr",t.__type,nmr)
+		t.nmr = nmr;
+		return nmr;
 	end,
 };
 local objFunc;
@@ -10658,19 +10652,6 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		return app.CurrentCharacter.FlightPaths[t.flightPathID];
-	end,
-	["nmc"] = function(t)
-		local c = t.c;
-		if c and not containsValue(c, app.ClassIndex) then
-			rawset(t, "nmc", true); -- "Not My Class"
-			return true;
-		end
-		rawset(t, "nmc", false); -- "My Class"
-		return false;
-	end,
-	["nmr"] = function(t)
-		local r = t.r;
-		return r and r ~= app.FactionID;
 	end,
 };
 app.BaseFlightPath = app.BaseObjectFields(fields, "BaseFlightPath");
