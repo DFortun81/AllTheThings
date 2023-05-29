@@ -69,8 +69,9 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				}),
 				-- Alliance Quests
 				n(QUESTS, bubbleDown({
-					["provider"] = { "n", 86677 },	-- Kuros
 					["races"] = ALLIANCE_ONLY,
+				}, sharedData({
+					["provider"] = { "n", 86677 },	-- Kuros
 				},{
 					q(36957),	-- Nemesis: Becoming Death (Blood Elf)
 					q(36959),	-- Nemesis: Becoming Death (Forsaken)
@@ -140,11 +141,12 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 						["isRepeatable"] = true,
 					}),
 					q(36876),	-- Warlord of Draenor
-				})),
+				}))),
 				-- Horde Quests
 				n(QUESTS, bubbleDown({
-					["provider"] = { "n", 86629 },	-- Raza'kul
 					["races"] = HORDE_ONLY,
+				}, sharedData({
+					["provider"] = { "n", 86629 },	-- Raza'kul
 				},{
 					q(36929),	-- Nemesis: Becoming Death (Draenei)
 					q(36923),	-- Nemesis: Becoming Death (Dwarf)
@@ -214,7 +216,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 						["isRepeatable"] = true,
 					}),
 					q(36874),	-- Warlord of Draenor
-				})),
+				}))),
 				n(-153, {	-- Work Orders
 					n(86639, {	-- Altar of Bones
 						i(118043, {	-- Broken Bones
