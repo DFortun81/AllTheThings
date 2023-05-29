@@ -188,7 +188,7 @@ local constructor = function(id, t, typeID)
 		if not rawget(t, "g") and rawget(t, 1) then
 			return { g=t, [typeID]=id };
 		else
-			rawset(t, typeID, id);
+			t[typeID] = id;
 			return t;
 		end
 	else
@@ -544,83 +544,83 @@ local attData;
 local AllTheThingsTempData = {};	-- For temporary data.
 local AllTheThingsAD = {};			-- For account-wide data.
 local function SetDataMember(member, data)
-	rawset(AllTheThingsAD, member, data);
+	AllTheThingsAD[member] = data;
 end
 local function GetDataMember(member, default)
 	attData = rawget(AllTheThingsAD, member);
 	if attData == nil then
-		rawset(AllTheThingsAD, member, default);
+		AllTheThingsAD[member] = default;
 		return default;
 	else
 		return attData;
 	end
 end
 local function SetTempDataMember(member, data)
-	rawset(AllTheThingsTempData, member, data);
+	AllTheThingsTempData[member] = data;
 end
 local function GetTempDataMember(member, default)
 	attData = rawget(AllTheThingsTempData, member);
 	if attData == nil then
-		rawset(AllTheThingsTempData, member, default);
+		AllTheThingsTempData[member] = default;
 		return default;
 	else
 		return attData;
 	end
 end
-local function SetDataSubMember(member, submember, data)
-	attData = rawget(AllTheThingsAD, member);
-	if attData == nil then
-		attData = {};
-		rawset(attData, submember, data);
-		rawset(AllTheThingsAD, member, attData);
-	else
-		rawset(attData, submember, data);
-	end
-end
-local function GetDataSubMember(member, submember, default)
-	attData = rawget(AllTheThingsAD,member);
-	if attData then
-		attData = rawget(attData, submember);
-		if attData == nil then
-			rawset(rawget(AllTheThingsAD,member), submember, default);
-			return default;
-		else
-			return attData;
-		end
-	else
-		attData = {};
-		rawset(attData, submember, default);
-		rawset(AllTheThingsAD, member, attData);
-		return default;
-	end
-end
-local function SetTempDataSubMember(member, submember, data)
-	attData = rawget(AllTheThingsTempData, member);
-	if attData == nil then
-		attData = {};
-		rawset(attData, submember, data);
-		rawset(AllTheThingsTempData, member, attData);
-	else
-		rawset(attData, submember, data);
-	end
-end
-local function GetTempDataSubMember(member, submember, default)
-	attData = rawget(AllTheThingsTempData,member);
-	if attData then
-		attData = rawget(attData, submember);
-		if attData == nil then
-			rawset(rawget(AllTheThingsTempData,member), submember, default);
-			return default;
-		else
-			return attData;
-		end
-	else
-		attData = {};
-		rawset(attData, submember, default);
-		rawset(AllTheThingsTempData, member, attData);
-		return default;
-	end
-end
+-- local function SetDataSubMember(member, submember, data)
+-- 	attData = rawget(AllTheThingsAD, member);
+-- 	if attData == nil then
+-- 		attData = {};
+-- 		attData[submember] = data;
+-- 		AllTheThingsAD[member] = attData;
+-- 	else
+-- 		attData[submember] = data;
+-- 	end
+-- end
+-- local function GetDataSubMember(member, submember, default)
+-- 	attData = rawget(AllTheThingsAD,member);
+-- 	if attData then
+-- 		attData = rawget(attData, submember);
+-- 		if attData == nil then
+-- 			rawset(rawget(AllTheThingsAD,member), submember, default);
+-- 			return default;
+-- 		else
+-- 			return attData;
+-- 		end
+-- 	else
+-- 		attData = {};
+-- 		attData[submember] = default;
+-- 		AllTheThingsAD[member] = attData;
+-- 		return default;
+-- 	end
+-- end
+-- local function SetTempDataSubMember(member, submember, data)
+-- 	attData = rawget(AllTheThingsTempData, member);
+-- 	if attData == nil then
+-- 		attData = {};
+-- 		attData[submember] = data;
+-- 		AllTheThingsTempData[member] = attData;
+-- 	else
+-- 		attData[submember] = data;
+-- 	end
+-- end
+-- local function GetTempDataSubMember(member, submember, default)
+-- 	attData = rawget(AllTheThingsTempData,member);
+-- 	if attData then
+-- 		attData = rawget(attData, submember);
+-- 		if attData == nil then
+-- 			rawset(rawget(AllTheThingsTempData,member), submember, default);
+-- 			return default;
+-- 		else
+-- 			return attData;
+-- 		end
+-- 	else
+-- 		attData = {};
+-- 		attData[submember] = default;
+-- 		AllTheThingsTempData[member] = attData;
+-- 		return default;
+-- 	end
+-- end
 
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
@@ -678,10 +678,10 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
-app.SetDataSubMember = SetDataSubMember;
-app.GetDataSubMember = GetDataSubMember;
-app.GetTempDataMember = GetTempDataMember;
-app.GetTempDataSubMember = GetTempDataSubMember;
+-- app.SetDataSubMember = SetDataSubMember;
+-- app.GetDataSubMember = GetDataSubMember;
+-- app.GetTempDataMember = GetTempDataMember;
+-- app.GetTempDataSubMember = GetTempDataSubMember;
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
 app.ReturnNil = function() return; end
@@ -1091,11 +1091,11 @@ local function GetDisplayID(data, all)
 		local displayInfo, _ = {};
 		-- specific displayID
 		_ = data.displayID;
-		if _ then tinsert(displayInfo, _); rawset(data,"displayInfo",displayInfo); return displayInfo; end
+		if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
 
 		-- specific creatureID for displayID
 		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
-		if _ then tinsert(displayInfo, _); rawset(data,"displayInfo",displayInfo); return displayInfo; end
+		if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
 
 		-- loop through "n" providers
 		if data.providers then
@@ -1107,7 +1107,7 @@ local function GetDisplayID(data, all)
 				end
 			end
 		end
-		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
+		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
 
 		-- for quest givers
 		if data.qgs then
@@ -1116,7 +1116,7 @@ local function GetDisplayID(data, all)
 				if _ then tinsert(displayInfo, _); end
 			end
 		end
-		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
+		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
 
 		-- otherwise use the attached crs if so
 		if data.crs then
@@ -1125,7 +1125,7 @@ local function GetDisplayID(data, all)
 				if _ then tinsert(displayInfo, _); end
 			end
 		end
-		if displayInfo[1] then rawset(data,"displayInfo",displayInfo); return displayInfo; end
+		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
 	else
 		-- specific displayID
 		local _ = data.displayID or data.fetchedDisplayID;
@@ -1133,7 +1133,7 @@ local function GetDisplayID(data, all)
 
 		-- specific creatureID for displayID
 		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
-		if _ then rawset(data,"fetchedDisplayID",_); return _; end
+		if _ then data.fetchedDisplayID = _; return _; end
 
 		-- loop through "n" providers
 		if data.providers then
@@ -1141,7 +1141,7 @@ local function GetDisplayID(data, all)
 				-- if one of the providers is an NPC, we should show its texture regardless of other providers
 				if v[1] == "n" then
 					_ = v[2] and app.NPCDisplayIDFromID[v[2]];
-					if _ then rawset(data,"fetchedDisplayID",_); return _; end
+					if _ then data.fetchedDisplayID = _; return _; end
 				end
 			end
 		end
@@ -1150,7 +1150,7 @@ local function GetDisplayID(data, all)
 		if data.qgs then
 			for k,v in pairs(data.qgs) do
 				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then rawset(data,"fetchedDisplayID",_); return _; end
+				if _ then data.fetchedDisplayID = _; return _; end
 			end
 		end
 
@@ -1158,7 +1158,7 @@ local function GetDisplayID(data, all)
 		if data.crs then
 			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then rawset(data,"fetchedDisplayID",_); return _; end
+				if _ then data.fetchedDisplayID = _; return _; end
 			end
 		end
 	end
@@ -1378,7 +1378,7 @@ local progress_colors = setmetatable({[1] = app.Colors.Completed}, {
 		CS:SetColorHSV(h, red.s-(red.s-green.s)*p, red.v-(red.v-green.v)*p);
 		local r,g,b = CS:GetColorRGB();
 		local color = RGBToHex(r * 255, g * 255, b * 255);
-		rawset(t, p, color);
+		t[p] = color;
 		return color;
 	end
 });
@@ -1733,11 +1733,11 @@ local function MergeProperties(g, t, noReplace, clone)
 				-- certain keys should never transfer to the merge group directly
 				if k == "parent" then
 					if not rawget(g, "sourceParent") then
-						rawset(g, "sourceParent", v);
+						g.sourceParent = v;
 					end
 				elseif not skips[k] then
 					if not rawget(g, k) then
-						rawset(g, k, v);
+						g[k] = v;
 					end
 				end
 			end
@@ -1746,10 +1746,10 @@ local function MergeProperties(g, t, noReplace, clone)
 				-- certain keys should never transfer to the merge group directly
 				if k == "parent" then
 					if not rawget(g, "sourceParent") then
-						rawset(g, "sourceParent", v);
+						g.sourceParent = v;
 					end
 				elseif skips[k] ~= true then
-					rawset(g, k, v);
+					g[k] = v;
 				end
 			end
 		else
@@ -1757,10 +1757,10 @@ local function MergeProperties(g, t, noReplace, clone)
 				-- certain keys should never transfer to the merge group directly
 				if k == "parent" then
 					if not rawget(g, "sourceParent") then
-						rawset(g, "sourceParent", v);
+						g.sourceParent = v;
 					end
 				elseif not skips[k] then
-					rawset(g, k, v);
+					g[k] = v;
 				end
 			end
 		end
@@ -1932,7 +1932,7 @@ local function RawCloneData(data, clone)
 	clone = clone or {};
 	for key,value in pairs(data) do
 		if not clone[key] then
-			rawset(clone, key, value);
+			clone[key] = value;
 		end
 	end
 	-- maybe better solution at another time?
@@ -1945,7 +1945,7 @@ local GetSlotForInventoryType = C_Transmog.GetSlotForInventoryType;
 app.SlotByInventoryType = setmetatable({}, {
 	__index = function(t, key)
 		local slot = GetSlotForInventoryType(key);
-		rawset(t, key, slot);
+		t[key] = slot;
 		return slot;
 	end
 })
@@ -2656,19 +2656,19 @@ app.NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	id = tonumber(id);
 	if id > 0 then
 		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE");
-		NPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id));
+		NPCHarvester:SetHyperlink(sformat("unit:Creature-0-0-0-0-%d-0000000000",id));
 		local title = AllTheThingsNPCHarvesterTextLeft1:GetText();
 		if title and NPCHarvester:NumLines() > 2 then
-			rawset(NPCTitlesFromID, id, AllTheThingsNPCHarvesterTextLeft2:GetText());
+			NPCTitlesFromID[id] = AllTheThingsNPCHarvesterTextLeft2:GetText();
 		end
 		NPCHarvester:Hide();
 		if not IsRetrieving(title) then
-			rawset(t, id, title);
+			t[id] = title;
 			return title;
 		end
 	else
 		local title = L["HEADER_NAMES"][id];
-		rawset(t, id, title);
+		t[id] = title;
 		return title;
 	end
 	return RETRIEVING_DATA;
@@ -5889,7 +5889,7 @@ local CacheField = function(group, field, value)
 	if fieldCache_f then
 		fieldCache_f[#fieldCache_f + 1] = group;
 	else
-		rawset(fieldCache_g, value, {group});
+		fieldCache_g[value] = {group};
 	end
 end
 
@@ -6679,17 +6679,17 @@ do
 local math_floor, C_SuperTrack = math.floor, C_SuperTrack;
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
 	local o = {};
-	rawset(t, y, o);
+	t[y] = o;
 	return o;
 end };
 local __TomTomWaypointCacheIndexX = { __index = function(t, x)
 	local o = setmetatable({}, __TomTomWaypointCacheIndexY);
-	rawset(t, x, o);
+	t[x] = o;
 	return o;
 end };
 local __TomTomWaypointCache = setmetatable({}, { __index = function(t, mapID)
 	local o = setmetatable({}, __TomTomWaypointCacheIndexX);
-	rawset(t, mapID, o);
+	t[mapID] = o;
 	return o;
 end });
 local __TomTomWaypointCount, __PlottedGroup;
@@ -7325,7 +7325,7 @@ local ObjectFunctions = {
 			missing = rawget(o, "_missing");
 			o = not missing and (o.sourceParent or o.parent) or nil;
 		end
-		rawset(t, "_missing", missing);
+		t._missing = missing;
 		return missing;
 	end,
 };
@@ -7411,7 +7411,7 @@ app.CreateCache = function(idField)
 	cache.GetCached = function(t)
 		local id = t[idField];
 		if id then
-			if not rawget(cache, id) then rawset(cache, id, {}); end
+			if not rawget(cache, id) then cache[id] = {}; end
 			return rawget(cache, id), id;
 		end
 	end;
@@ -7427,7 +7427,7 @@ app.CreateCache = function(idField)
 			-- set a default provided cache value if any default function was provided and evalutes to a value
 			if not rawget(_t, field) and default_function then
 				local defVal = default_function(t, field);
-				if defVal then rawset(_t, field, defVal); end
+				if defVal then _t[field] = defVal; end
 			end
 			return rawget(_t, field);
 		end
@@ -7442,7 +7442,7 @@ app.CreateCache = function(idField)
 		end
 		--]]
 		local _t = cache.GetCached(t);
-		if _t then rawset(_t, field, value);
+		if _t then _t[field] = value;
 		else
 			print("Failed to get cache table using",idField)
 			print(t.__type,field,value)
@@ -7535,7 +7535,7 @@ app.CollectibleAsCost = function(t)
 	local collectibles = t.costCollectibles;
 	-- literally nothing to collect with 't' as a cost, so don't process the logic anymore
 	if not collectibles or #collectibles == 0 then
-		rawset(t, "collectibleAsCost", false);
+		t.collectibleAsCost = false;
 		return;
 	end
 	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
@@ -7547,7 +7547,7 @@ app.CollectibleAsCost = function(t)
 		end
 	end
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
-	rawset(t, "collectibleAsCost", false);
+	t.collectibleAsCost = false;
 	-- check the collectibles if any are considered collectible currently
 	local collectible, collected;
 	for _,ref in ipairs(collectibles) do
@@ -7616,7 +7616,7 @@ local QuestNameFromServer = setmetatable({}, { __index = function(t, id)
 	if id then
 		local name = QuestUtils_GetQuestName(id);
 		if name and name ~= "" then
-			rawset(t, id, name);
+			t[id] = name;
 			return name;
 		end
 
@@ -7626,7 +7626,7 @@ end});
 local QuestNameDefault = setmetatable({}, { __index = function(t, id)
 	if id then
 		local name = "Quest #"..id.."*";
-		rawset(t, id, name);
+		t[id] = name;
 		return name;
 	end
 end});
@@ -7641,14 +7641,14 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 		local name = QuestUtils_GetQuestName(questID);
 		if name and name ~= "" then
 			-- app.PrintDebug("Available QuestData",questID,title)
-			rawset(QuestNameFromServer, questID, name);
+			QuestNameFromServer[questID] = name;
 			-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
 			app:RefreshWindows();
 		end
 	else
 	-- 	this quest name cannot be populated by the server
 		-- app.PrintDebug("No Server QuestData",questID)
-		rawset(QuestNameFromServer, questID, false);
+		QuestNameFromServer[questID] = false;
 	end
 	-- see if this Quest is awaiting Reward population & Updates
 	local data = QuestsToPopulate[questID];
@@ -7824,11 +7824,11 @@ local function IsGroupLocked(t)
 			if criteriaRequired <= 0 then
 				-- we can rawset this since there's no real way for a player to 'remove' this lock during a session
 				-- and this does not come into play during party sync
-				rawset(t, "locked", true);
+				t.locked = true;
 				-- if this was locked due to something other than a Quest/Level specifically, indicate it cannot be done in Party Sync
 				if nonQuestLock then
 					-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(t.hash, app.Colors.ChatLink, "search:"..t.key..":"..t[t.key]))
-					rawset(t, "DisablePartySync", true);
+					t.DisablePartySync = true;
 				end
 				-- app.PrintDebug("Locked", app:Linkify(t.hash, app.Colors.ChatLink, "search:"..t.key..":"..t[t.key]))
 				return true;
@@ -7853,13 +7853,13 @@ local function LockedAsQuest(t)
 			local nq;
 			for _,questID in ipairs(t.nextQuests) do
 				if IsQuestFlaggedCompleted(questID) then
-					rawset(t, "locked", questID);
+					t.locked = questID;
 					return questID;
 				else
 					-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
 					nq = Search("questID", questID, "field");
 					if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.locked) then
-						rawset(t, "locked", questID);
+						t.locked = questID;
 						-- app.PrintDebug("Locked Quest", app:Linkify(t.hash, app.Colors.ChatLink, "search:"..t.key..":"..t[t.key]))
 						return questID;
 					end
@@ -7869,7 +7869,7 @@ local function LockedAsQuest(t)
 	end
 	-- rawset means that this will persist as a non-locked quest until reload, so quests that become locked while playing will not immediately update
 	-- maybe can revise that somehow without also having this entire logic be calculated billions of times when nothing changes....
-	rawset(t, "locked", false);
+	t.locked = false;
 end
 app.LockedAsQuest = LockedAsQuest;
 
@@ -8069,8 +8069,8 @@ local questFields = {
 		if t.type then
 			local type, id = strsplit(":", t.type);
 			local name, icon = app.GetAutomaticHeaderData(id, type);
-			rawset(t, "name", name);
-			rawset(t, "icon", icon);
+			t.name = name;
+			t.icon = icon;
 			return name;
 		end
 		local id = t.questID;
@@ -8090,7 +8090,7 @@ local questFields = {
 		if questID then
 			local objectives = C_QuestLog_GetQuestObjectives(questID);
 			if objectives then
-				rawset(t, "objectiveInfo", objectives);
+				t.objectiveInfo = objectives;
 				return objectives;
 			end
 		end
@@ -8146,7 +8146,7 @@ local questFields = {
 				icon = app.asset("Interface_Quest");
 			end
 		end
-		rawset(t, "icon", icon);
+		t.icon = icon;
 		return icon;
 	end,
 	["model"] = function(t)
@@ -8193,7 +8193,7 @@ local questFields = {
 			for _,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
 					-- if LOG then print(LOG,"altCollected by",questID) end
-					rawset(t, "altcollected", questID);
+					t.altcollected = questID;
 					return questID;
 				end
 			end
@@ -8226,7 +8226,7 @@ local questFields = {
 			local prereqs = rawget(t, "prereqs") or {};
 			local sqreq = rawget(t, "sqreq") or #sourceQuests;
 			local missing = 0;
-			rawset(t, "prereqs", prereqs);
+			t.prereqs = prereqs;
 			wipe(prereqs);
 			for _,sourceQuestID in ipairs(sourceQuests) do
 				if not IsQuestFlaggedCompletedForce(sourceQuestID) then
@@ -8491,18 +8491,18 @@ app.CreateQuestWithFactionData = function(t)
 	if not otherQuestData.questID or otherQuestData.questID == original.questID then
 		-- Situations where a single quest has faction-specific data
 		setmetatable(otherQuestData, { __index = t });
-		rawset(t, "otherQuestData", otherQuestData);
+		t.otherQuestData = otherQuestData;
 		return original;
 	else
 		-- Situations where for some reason two different quests have been merged together as one quest and need to be split apart to be useful
 		setmetatable(otherQuestData, app.BaseQuest);
 		for key,value in pairs(t) do
 			if not rawget(otherQuestData, key) then
-				rawset(otherQuestData, key, value);
+				otherQuestData[key] = value;
 			end
 		end
 		rawset(t, "r", app.FactionID);
-		rawset(otherQuestData, "r", otherFaction);
+		otherQuestData.r = otherFaction;
 		local oldOnUpdate = original.OnUpdate;
 		original.OnUpdate = function(t)
 			CacheFields(otherQuestData);
@@ -8724,7 +8724,7 @@ local function BuildTextFromNPCIDs(t, npcIDs)
 	end
 	if retry then return RETRIEVING_DATA; end
 	name = table.concat(textTbl);
-	rawset(t, "name", name);
+	t.name = name;
 	return name;
 end
 local fields = RawCloneData(questFields, {
@@ -8799,7 +8799,7 @@ local fields = {
 	["achievementID"] = function(t)
 		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 		if achievementID then
-			rawset(t, "achievementID", achievementID);
+			t.achievementID = achievementID;
 			return achievementID;
 		end
 	end,
@@ -8924,13 +8924,13 @@ local criteriaFields = {
 	["achievementID"] = function(t)
 		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 		if achievementID then
-			rawset(t, "achievementID", achievementID);
+			t.achievementID = achievementID;
 			return achievementID;
 		end
 		local sourceAch = t.sourceParent or t.parent;
 		achievementID = sourceAch and (sourceAch.achievementID or (sourceAch.parent and sourceAch.parent.achievementID));
 		if achievementID then
-			rawset(t, "achievementID", achievementID);
+			t.achievementID = achievementID;
 			return achievementID;
 		end
 	end,
@@ -9287,7 +9287,7 @@ harvesterFields.text = function(t)
 
 			HarvestedAchievementDatabase[achievementID] = info;
 			setmetatable(t, app.BaseAchievement);
-			rawset(t, "collected", true);
+			t.collected = true;
 			return Name;
 		end
 		-- Save an empty value just so the Saved Variable table is always in order for easier partial-replacements if needed
@@ -9297,7 +9297,7 @@ harvesterFields.text = function(t)
 	AllTheThingsHarvestItems = HarvestedAchievementDatabase;
 	local name = t.name;
 	-- retries exceeded, so check the raw .name on the group (gets assigned when retries exceeded during cache attempt)
-	if name then rawset(t, "collected", true); end
+	if name then t.collected = true; end
 	return name;
 end
 app.BaseAchievementHarvester = app.BaseObjectFields(harvesterFields, "BaseAchievementHarvester");
@@ -9353,7 +9353,7 @@ local fields = {
 			modelAlpha, modelDesaturation, suppressGlobalAnim = C_ArtifactUI_GetAppearanceInfoByID(t.artifactID);
 		]]--
 		local info = { C_ArtifactUI_GetAppearanceInfoByID(t.artifactID) };
-		rawset(t, "artifactinfo", info);
+		t.artifactinfo = info;
 		return info;
 	end,
 	["f"] = function(t)
@@ -9453,7 +9453,7 @@ local fields = {
 			s = GetSourceID(s);
 			-- print("Artifact Source",s,t.silentLink)
 			if s and s > 0 then
-				rawset(t, "_s", s);
+				t._s = s;
 				if ATTAccountWideData.Sources[s] ~= 1 and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
 					-- print("Saved Known Source",s)
 					ATTAccountWideData.Sources[s] = 1;
@@ -9479,7 +9479,7 @@ local fields = {
 	end,
 	["info"] = function(t)
 		local info = GetInfo(t.azeriteEssenceID) or app.EmptyTable;
-		rawset(t, "info", info);
+		t.info = info;
 		return info;
 	end,
 	["collectible"] = function(t)
@@ -9519,7 +9519,7 @@ local fields = {
 	end,
 	["link"] = function(t)
 		local link = GetLink(t.azeriteEssenceID, t.rank);
-		rawset(t, "link", link);
+		t.link = link;
 		return link;
 	end,
 	["rank"] = function(t)
@@ -9575,7 +9575,7 @@ local CollectedSpeciesHelper = setmetatable({}, {
 		if not num then
 			app.PrintDebug("SpeciesID " .. key .. " was not found.");
 		elseif num > 0 then
-			rawset(t, key, 1);
+			t[key] = 1;
 			return 1;
 		end
 	end
@@ -9671,7 +9671,7 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	-- Check against all of the collected species for a species that is no longer 1/X
 	if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) < 1 then
 		-- app.PrintDebug("Pet Missing",speciesID);
-		rawset(CollectedSpeciesHelper, speciesID, nil);
+		CollectedSpeciesHelper[speciesID] = nil;
 		UpdateRawID("speciesID", speciesID);
 		app:PlayRemoveSound();
 	end
@@ -9769,7 +9769,7 @@ app.ClassDB = setmetatable({}, { __index = function(t, className)
 	for i,_ in pairs(classIcons) do
 		local info = C_CreatureInfo.GetClassInfo(i);
 		if info and info.className == className then
-			rawset(t, className, i);
+			t[className] = i;
 			return i;
 		end
 	end
@@ -9780,7 +9780,7 @@ local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
 	-- specc can be included in the id
 	local classID = math_floor(id);
-	rawset(t, "classKey", classID);
+	t.classKey = classID;
 	local specc_decimal = 1000 * (id - classID);
 	local specc = math_floor(specc_decimal + 0.00001);
 	if specc > 0 then
@@ -9815,7 +9815,7 @@ local fields = {
 	end,
 	["c"] = function(t)
 		local c = { math_floor(t.classID) };
-		rawset(t, "c", c);
+		t.c = c;
 		return c;
 	end,
 	["nmc"] = function(t)
@@ -9859,7 +9859,7 @@ local unitFields = {
 			if realm and realm ~= "" then name = name .. "-" .. realm; end
 			local _, classFile, classID = UnitClass(t.unit);
 			if classFile then
-				rawset(t, "classID", classID);
+				t.classID = classID;
 				name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r";
 			end
 			return name;
@@ -10133,7 +10133,7 @@ local fields = {
 					if difficultyKey == "shared" then
 						-- ignore this one
 					elseif difficultyKey == t.difficultyID then
-						rawset(t, "locks", lock);
+						t.locks = lock;
 						return lock;
 					end
 				end
@@ -10288,7 +10288,7 @@ local StandingByID = {
 app.FactionNameByID = setmetatable({}, { __index = function(t, id)
 	local name = select(1, GetFactionInfoByID(id)) or GetFriendshipReputation(id, "name");
 	if name then
-		rawset(t, id, name);
+		t[id] = name;
 		rawset(app.FactionIDByName, name, id);
 		return name;
 	end
@@ -10296,7 +10296,7 @@ end });
 app.FactionIDByName = setmetatable({}, { __index = function(t, name)
 	for i=1,3000,1 do
 		if app.FactionNameByID[i] == name then
-			rawset(t, name, i);
+			t[name] = i;
 			return i;
 		end
 	end
@@ -10452,7 +10452,7 @@ local function CacheInfo(t, field)
 		_t.description = L["FACTION_SPECIFIC_REP"];
 	end
 	if friendshipName then
-		rawset(t, "isFriend", true);
+		t.isFriend = true;
 		local friendship = GetFriendshipReputation(id, "text");
 		if friendship then
 			if _t.lore then
@@ -10494,7 +10494,7 @@ local fields = {
 	["achievementID"] = function(t)
 		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 		if achievementID then
-			rawset(t, "achievementID", achievementID);
+			t.achievementID = achievementID;
 			return achievementID;
 		end
 	end,
@@ -10565,10 +10565,10 @@ local fields = {
 	end,
 	["isFriend"] = function(t)
 		if GetFriendshipReputation(t.factionID) then
-			rawset(t, "isFriend", true);
+			t.isFriend = true;
 			return true;
 		else
-			rawset(t, "isFriend", false);
+			t.isFriend = false;
 			return false;
 		end
 	end,
@@ -10588,7 +10588,7 @@ local fields = {
 			return app.GetFactionStanding(t.minReputation[2]);
 		end
 		local _, maxStanding = GetCurrentFactionStandings(t.factionID);
-		rawset(t, "maxStanding", maxStanding);
+		t.maxStanding = maxStanding;
 		return maxStanding;
 	end,
 	["sortProgress"] = function(t)
@@ -10967,7 +10967,7 @@ local fields = {
 				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 				if sourceInfo and sourceInfo.invType == 2 then
 					local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));
-					if icon then rawset(t, "icon", icon); end
+					if icon then t.icon = icon; end
 					return icon;
 				end
 			end
@@ -10994,7 +10994,7 @@ local fields = {
 	["sources"] = function(t)
 		local sources = C_TransmogSets_GetAllSourceIDs(t.setID);
 		if sources then
-			rawset(t, "sources", sources);
+			t.sources = sources;
 			return sources;
 		end
 	end,
@@ -11014,7 +11014,7 @@ local fields = {
 	["itemID"] = function(t)
 		local itemID = t.info.itemID;
 		if itemID then
-			rawset(t, "itemID", itemID);
+			t.itemID = itemID;
 			return itemID;
 		end
 	end,
@@ -11034,7 +11034,7 @@ local fields = {
 		return ATTAccountWideData.Sources[rawget(t, "s")];
 	end,
 	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
+		t.modItemID = GetGroupItemIDWithModID(t) or t.itemID;
 		return rawget(t, "modItemID");
 	end,
 	["specs"] = function(t)
@@ -11068,7 +11068,7 @@ local fields = {
 	["achievementID"] = function(t)
 		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 		if achievementID then
-			rawset(t, "achievementID", achievementID);
+			t.achievementID = achievementID;
 			return achievementID;
 		end
 	end,
@@ -11097,7 +11097,7 @@ local fields = {
 	["achievementID"] = function(t)
 		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 		if achievementID then
-			rawset(t, "achievementID", achievementID);
+			t.achievementID = achievementID;
 			return achievementID;
 		end
 	end,
@@ -11189,7 +11189,7 @@ local fields = {
 	["info"] = function(t)
 		local info = GetHolidayCache()[t.holidayID];
 		if info then
-			rawset(t, "info", info);
+			t.info = info;
 			return info;
 		end
 		return {};
@@ -11231,10 +11231,10 @@ local fields = {
 		if t.itemID then
 			local name, link = GetItemInfo(t.itemID);
 			if link then
-				rawset(t, "name", name);
+				t.name = name;
 				name = "|cffff80ff[" .. name .. "]|r";
-				rawset(t, "link", link);
-				rawset(t, "text", name);
+				t.link = link;
+				t.text = name;
 				return name;
 			end
 		end
@@ -11250,10 +11250,10 @@ local fields = {
 		if t.itemID then
 			local name, link = GetItemInfo(t.itemID);
 			if link then
-				rawset(t, "name", name);
+				t.name = name;
 				name = "|cffff80ff[" .. name .. "]|r";
-				rawset(t, "link", link);
-				rawset(t, "text", name);
+				t.link = link;
+				t.text = name;
 				return link;
 			end
 		end
@@ -11320,7 +11320,7 @@ local fields = {
 	["locks"] = function(t)
 		local locks = app.CurrentCharacter.Lockouts[t.name];
 		if locks then
-			rawset(t, "locks", locks);
+			t.locks = locks;
 			return locks;
 		end
 	end,
@@ -11345,18 +11345,18 @@ local function HandleItemRetries(t)
 	if retries then
 		if retries > app.MaximumItemInfoRetries then
 			local itemName = L["ITEM_NAMES"][id] or "Item #" .. tostring(id) .. "*";
-			rawset(_t, "title", L["FAILED_ITEM_INFO"]);
-			rawset(_t, "link", nil);
-			rawset(_t, "s", nil);
+			_t.title = L["FAILED_ITEM_INFO"];
+			_t.link = nil;
+			_t.s = nil;
 			-- print("itemRetriesMax",itemName,rawget(t, "retries"))
 			-- save the "name" field in the source group to prevent further requests to the cache
-			rawset(t, "name", itemName);
+			t.name = itemName;
 			return itemName;
 		else
-			rawset(_t, "retries", retries + 1);
+			_t.retries = retries + 1;
 		end
 	else
-		rawset(_t, "retries", 1);
+		_t.retries = 1;
 	end
 end
 -- Consolidated function to cache available Item information
@@ -11368,16 +11368,16 @@ local function RawSetItemInfoFromLink(t, link)
 		print("rawset item info",id,link,name,quality,b)
 		--]]
 		t = cache.GetCached(t);
-		rawset(t, "retries", nil);
-		rawset(t, "name", name);
-		rawset(t, "link", link);
-		rawset(t, "icon", icon);
-		rawset(t, "q", quality);
+		t.retries = nil;
+		t.name = name;
+		t.link = link;
+		t.icon = icon;
+		t.q = quality;
 		if quality > 6 then
 			-- heirlooms return as 1 but are technically BoE for our concern
-			rawset(t, "b", 2);
+			t.b = 2;
 		else
-			rawset(t, "b", b);
+			t.b = b;
 		end
 		return link;
 	else
@@ -11415,7 +11415,7 @@ local function default_link(t)
 			itemLink = sformat("item:%d:::::::::::::", itemLink);
 		end
 		-- save this link so it doesn't need to be built again
-		rawset(t, "rawlink", itemLink);
+		t.rawlink = itemLink;
 		return RawSetItemInfoFromLink(t, itemLink);
 	-- elseif t.s then
 		-- local s = t.s;
@@ -11493,7 +11493,7 @@ local itemFields = {
 	end,
 	["f"] = function(t)
 		-- Unknown item type after Parser, so make sure we save the filter for later references
-		rawset(t, "f", -1);
+		t.f = -1;
 		return rawget(t, "f");
 	end,
 	["tsm"] = function(t)
@@ -11510,7 +11510,7 @@ local itemFields = {
 		end
 	end,
 	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
+		t.modItemID = GetGroupItemIDWithModID(t) or t.itemID;
 		return rawget(t, "modItemID");
 	end,
 	["indicatorIcon"] = app.GetQuestIndicator,
@@ -11666,7 +11666,7 @@ local fields = RawCloneData(itemFields, {
 		if t.__autolink then return; end
 		-- async generation of the proper Item Link
 		-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
-		rawset(t, "__autolink", true);
+		t.__autolink = true;
 		app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
 	end,
 });
@@ -11860,10 +11860,10 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 	["isWeapon"] = function(t)
 		if t.f and contains(isWeapon, t.f) then
-			rawset(t, "isWeapon", true);
+			t.isWeapon = true;
 			return true;
 		end
-		rawset(t, "isWeapon", false);
+		t.isWeapon = false;
 		return false;
 	end,
 };
@@ -11910,10 +11910,10 @@ fields.saved = function(t)
 fields.isWeapon = function(t)
 		local f = t.f;
 		if f and contains(isWeapon, f) then
-			rawset(t, "isWeapon", true);
+			t.isWeapon = true;
 			return true;
 		end
-		rawset(t, "isWeapon", false);
+		t.isWeapon = false;
 		return false;
 	end
 fields.g = function(t)
@@ -12146,7 +12146,7 @@ itemHarvesterFields.text = function(t)
 
 	local name = t.name;
 	-- retries exceeded, so check the raw .name on the group (gets assigned when retries exceeded during cache attempt)
-	if name then rawset(t, "collected", true); end
+	if name then t.collected = true; end
 	return name;
 end
 app.BaseItemHarvester = app.BaseObjectFields(itemHarvesterFields, "BaseItemHarvester");
@@ -12377,8 +12377,8 @@ itemTooltipHarvesterFields.text = function(t)
 			end
 			-- if debugPrint then print("---") end
 			t.info.retries = nil;
-			rawset(t, "text", link);
-			rawset(t, "collected", true);
+			t.text = link;
+			t.collected = true;
 		end
 		ItemHarvester:Hide();
 		return link;
@@ -12623,7 +12623,7 @@ local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
 		local spellID;
 		for i,mountID in ipairs(allMountIDs) do
 			spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
-			if spellID then rawset(t, spellID, mountID); end
+			if spellID then t[spellID] = mountID; end
 		end
 		setmetatable(t, nil);
 		return rawget(t, id);
@@ -12766,16 +12766,16 @@ local fields = {
 	["link"] = function(t)
 		local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
 		if link then
-			rawset(t, "link", link);
-			rawset(t, "icon", icon);
+			t.link = link;
+			t.icon = icon;
 			return link;
 		end
 	end,
 	["icon"] = function(t)
 		local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
 		if link then
-			rawset(t, "link", link);
-			rawset(t, "icon", icon);
+			t.link = link;
+			t.icon = icon;
 			return icon;
 		end
 	end,
@@ -12864,7 +12864,7 @@ app.NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 		npcModelHarvester:SetCreature(id);
 		local displayID = npcModelHarvester:GetDisplayInfo();
 		if displayID and displayID ~= 0 then
-			rawset(t, id, displayID);
+			t[id] = displayID;
 			return displayID;
 		end
 	end
@@ -12905,12 +12905,12 @@ local npcFields = {
 		local qh = t.questIDH;
 		if qa then
 			if app.FactionID == Enum.FlightPathFaction.Horde then
-				rawset(t, "questID", qh);
-				rawset(t, "otherFactionQuestID", qa);
+				t.questID = qh;
+				t.otherFactionQuestID = qa;
 				return qh;
 			else
-				rawset(t, "questID", qa);
-				rawset(t, "otherFactionQuestID", qh);
+				t.questID = qa;
+				t.otherFactionQuestID = qh;
 				return qa;
 			end
 		end
@@ -12920,12 +12920,12 @@ local npcFields = {
 		local qh = t.questIDH;
 		if qa then
 			if app.FactionID == Enum.FlightPathFaction.Horde then
-				rawset(t, "questID", qh);
-				rawset(t, "otherFactionQuestID", qa);
+				t.questID = qh;
+				t.otherFactionQuestID = qa;
 				return qa;
 			else
-				rawset(t, "questID", qa);
-				rawset(t, "otherFactionQuestID", qh);
+				t.questID = qa;
+				t.otherFactionQuestID = qh;
 				return qh;
 			end
 		end
@@ -12943,7 +12943,7 @@ local npcFields = {
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
-					rawset(t, "altcollected", questID);
+					t.altcollected = questID;
 					return questID;
 				end
 			end
@@ -13127,7 +13127,7 @@ app.CreateNPC = function(id, t)
 	if t then
 		-- TEMP: clean MoH tagging from random Vendors
 		if rawget(t, "itemID") == 137642 then
-			rawset(t, "itemID", nil);
+			t.itemID = nil;
 			-- print("ItemID",rawget(t, "itemID"),"used on NPC/Header group... Don't do that!",id);
 		end
 		if id < 1 then
@@ -13207,7 +13207,7 @@ local objectFields = {
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
-					rawset(t, "altcollected", questID);
+					t.altcollected = questID;
 					return questID;
 				end
 			end
@@ -13550,8 +13550,8 @@ local GetSpellName = function(spellID)
 	if spellName then return spellName; end
 	spellName = GetSpellInfo(spellID);
 	if spellName and spellName ~= "" then
-		rawset(SpellIDToSpellName, spellID, spellName);
-		rawset(SpellNameToSpellID, spellName, spellID);
+		SpellIDToSpellName[spellID] = spellName;
+		SpellNameToSpellID[spellName] = spellID;
 		return spellName;
 	end
 end
@@ -13581,7 +13581,7 @@ SpellNameToSpellID = setmetatable({}, {
 						currentSpellRank = 1;
 					end
 					GetSpellName(spellID, currentSpellRank);
-					rawset(SpellNameToSpellID, spellName, spellID);
+					SpellNameToSpellID[spellName] = spellID;
 				-- else
 				-- 	print("GetSpellInfo:Failed",offset + spellIndex);
 				end
@@ -13726,14 +13726,14 @@ local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
 	-- patch can be included in the id
 	local tierID = math_floor(id);
-	rawset(t, "tierKey", tierID);
+	t.tierKey = tierID;
 	local info = rawget(L.TIER_DATA, tierID);
 	-- assign the cached values from locale
 	if info then
 		-- app.PrintDebug("tier cache locale data",id,tierID,"via",field)
 		for key,val in pairs(info) do
 			-- app.PrintDebug("--",key,val)
-			rawset(_t, key, val);
+			_t[key] = val;
 		end
 	end
 	if id > tierID then
@@ -13807,7 +13807,7 @@ local fields = {
 		local name = t.name;
 		if name then
 			name = "|cff00ccff" .. name .. "|r";
-			rawset(t, "link", name);
+			t.link = name;
 			return name;
 		end
 	end,
@@ -13824,7 +13824,7 @@ local fields = {
 			local acctTitleInfo = "|c"..
 				(acctTitles[m] and complete or missing)..mt.."|r // |c"..
 				(acctTitles[f] and complete or missing)..ft.."|r";
-			rawset(t, "_title", acctTitleInfo);
+			t._title = acctTitleInfo;
 			return rawget(t, "_title");
 		end
 	end,
@@ -13837,35 +13837,35 @@ local fields = {
 				first = string.sub(name, 2, 2);
 				if first == string.upper(first) then
 					-- Comma Separated
-					rawset(t, "style", 3);
+					t.style = 3;
 					return 3;
 				end
 
 				-- Player Name First
-				rawset(t, "style", 1);
+				t.style = 1;
 				return 1;
 			else
 				local last = string.sub(name, -1);
 				if last == " " then
 					-- Prefix
-					rawset(t, "style", 0);
+					t.style = 0;
 					return 0;
 				end
 
 				-- Suffix
 				if first == string_lower(first) then
 					-- Player Name First with a space
-					rawset(t, "style", 2);
+					t.style = 2;
 					return 2;
 				end
 
 				-- Comma Separated
-				rawset(t, "style", 3);
+				t.style = 3;
 				return 3;
 			end
 		end
 
-		rawset(t, "style", 1);
+		t.style = 1;
 		return 1;	-- Player Name First
 	end,
 	["name"] = function(t)
@@ -18407,7 +18407,7 @@ function app:GetDataCache()
 			if o.u and o.u == 1 then
 				return nil;
 			else
-				for key,value in pairs(o) do rawset(inst, key, value); end
+				for key,value in pairs(o) do inst[key] = value; end
 				if o.parent then
 					if not o.sourceQuests then
 						local questID = GetRelativeValue(o, "questID");
@@ -18588,7 +18588,7 @@ function app:GetDataCache()
 			if not self.achievements[i] then
 				local achievement = app.CreateAchievement(tonumber(i));
 				for j,o in ipairs(_) do
-					for key,value in pairs(o) do rawset(achievement, key, value); end
+					for key,value in pairs(o) do achievement[key] = value; end
 					if o.parent and not o.sourceQuests then
 						local questID = GetRelativeValue(o, "questID");
 						if questID then
@@ -19226,8 +19226,8 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 			local meta = {
 				["collected"] = function(t)
 					local results = SearchForField("mapID", t.mapID);
-					rawset(t, "collected", results and true or false);
-					rawset(t, "title", results and #results or 0);
+					t.collected = results and true or false;
+					t.title = results and #results or 0;
 					return rawget(t, "collected");
 				end,
 			};
@@ -22363,7 +22363,7 @@ app.LoadDebugger = function()
 				else
 					for k,v in pairs(obj) do
 						if not CleanFields[k] then
-							rawset(clean, k, v);
+							clean[k] = v;
 						end
 					end
 					if clean.g then
