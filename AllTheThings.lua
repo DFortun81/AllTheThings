@@ -6140,8 +6140,8 @@ if app.__perf then
 			local now = GetTimePreciseSec();
 			func(group, value);
 			local typeData = rawget(app.__perf, type);
-			rawset(typeData, key, (rawget(typeData, key) or 0) + 1);
-			rawset(typeData, key.."_Time", (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now));
+			typeData[key] = (rawget(typeData, key) or 0) + 1;
+			typeData[key.."_Time"] = (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now);
 		end
 	end
 	fieldConverters = cacheConverters;
@@ -7317,8 +7317,8 @@ function(fields, type)
 			end
 		end
 		if typeData then
-			rawset(typeData, key, (rawget(typeData, key) or 0) + 1);
-			rawset(typeData, key.."_Time", (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now));
+			typeData[key] = (rawget(typeData, key) or 0) + 1;
+			typeData[key.."_Time"] = (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now);
 		end
 		return result;
 	end;
@@ -7781,7 +7781,7 @@ local function LockedAsQuest(t)
 		if IsGroupLocked(t) then return true; end
 		-- if an alt-quest is completed, then this quest is locked
 		if t.altcollected then
-			rawset(t, "locked", t.altcollected);
+			t.locked = t.altcollected;
 			return true;
 		end
 		-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
@@ -8030,7 +8030,7 @@ local questFields = {
 				return objectives;
 			end
 		end
-		rawset(t, "objectiveInfo", app.EmptyTable)
+		t.objectiveInfo = app.EmptyTable;
 	end,
 	["description"] = function(t)
 		-- Provide a fall-back description as to collectibility of a Quest due to granting reputation
@@ -8437,7 +8437,7 @@ app.CreateQuestWithFactionData = function(t)
 				otherQuestData[key] = value;
 			end
 		end
-		rawset(t, "r", app.FactionID);
+		t.r = app.FactionID;
 		otherQuestData.r = otherFaction;
 		local oldOnUpdate = original.OnUpdate;
 		original.OnUpdate = function(t)
@@ -8845,10 +8845,10 @@ local function GetParentAchievementInfo(t, key)
 	end
 	local achievement = app.SearchForObject("achievementID", id, "key");
 	if achievement then
-		rawset(t, "c", achievement.c);
-		rawset(t, "classID", achievement.classID);
-		rawset(t, "races", achievement.races);
-		rawset(t, "r", achievement.r);
+		t.c = achievement.c;
+		t.classID = achievement.classID;
+		t.races = achievement.races;
+		t.r = achievement.r;
 		return rawget(t, key);
 	end
 	DelayedCallback(app.report, 1, "Missing Referenced Achievement!",id);
@@ -9776,15 +9776,15 @@ local unitFields = {
 	["text"] = function(t)
 		for guid,character in pairs(ATTCharacterData) do
 			if guid == t.unit or character.name == t.unit then
-				rawset(t, "text", character.text);
-				rawset(t, "level", character.lvl);
+				t.text = character.text;
+				t.level = character.lvl;
 				if character.classID then
-					rawset(t, "classID", character.classID);
-					rawset(t, "class", C_CreatureInfo.GetClassInfo(character.classID).className);
+					t.classID = character.classID;
+					t.class = C_CreatureInfo.GetClassInfo(character.classID).className;
 				end
 				if character.raceID then
-					rawset(t, "raceID", character.raceID);
-					rawset(t, "race", C_CreatureInfo.GetRaceInfo(character.raceID).raceName);
+					t.raceID = character.raceID;
+					t.race = C_CreatureInfo.GetRaceInfo(character.raceID).raceName;
 				end
 				return character.text;
 			end
@@ -10061,7 +10061,7 @@ local fields = {
 		local locks = t.parent and t.parent.locks;
 		if locks then
 			if t.parent.isLockoutShared and not (t.difficultyID == 7 or t.difficultyID == 17) then
-				rawset(t, "locks", locks.shared);
+				t.locks = locks.shared;
 				return locks.shared;
 			else
 				-- Look for this difficulty's lockout.
@@ -10225,7 +10225,7 @@ app.FactionNameByID = setmetatable({}, { __index = function(t, id)
 	local name = select(1, GetFactionInfoByID(id)) or GetFriendshipReputation(id, "name");
 	if name then
 		t[id] = name;
-		rawset(app.FactionIDByName, name, id);
+		app.FactionIDByName[name] = id;
 		return name;
 	end
 end });
@@ -11122,9 +11122,10 @@ local fields = {
 	end,
 	["icon"] = function(t)
 		-- Use the custom icon if defined
-		if L["HOLIDAY_ID_ICONS"][t.holidayID] then
-			rawset(t, "icon", L["HOLIDAY_ID_ICONS"][t.holidayID]);
-			return rawget(t, "icon");
+		local icon = L["HOLIDAY_ID_ICONS"][t.holidayID];
+		if icon then
+			t.icon = icon;
+			return icon;
 		end
 		return t.holidayID == 235466 and 235465 or t.holidayID;
 	end,
@@ -11613,7 +11614,7 @@ app.CreateItem = function(id, t)
 		elseif rawget(t, "questID") then
 			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestID);
 		elseif rawget(t, "achID") then
-			rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
+			t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
 			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithAchievementID);
 		end
 	end
@@ -11842,10 +11843,10 @@ fields.isWeapon = function(t)
 fields.g = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
 		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
-			rawset(t, "g", { CreateHeirloomUnlock({
+			t.g = { CreateHeirloomUnlock({
 				heirloomUnlockID = t.itemID,
 				u = t.u
-			}) });
+			}) };
 			return rawget(t, "g");
 		end
 	end
@@ -12494,7 +12495,7 @@ app.BaseMapWithAchievementID = app.BaseObjectFields(fields, "BaseMapWithAchievem
 app.CreateMap = function(id, t)
 	t = constructor(id, t, "mapID");
 	if rawget(t, "achID") then
-		rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
+		t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
 		t = setmetatable(t, app.BaseMapWithAchievementID);
 	else
 		t = setmetatable(t, app.BaseMap);
@@ -13055,7 +13056,7 @@ app.CreateNPC = function(id, t)
 		end
 		if id < 1 then
 			if rawget(t, "achID") then
-				rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
+				t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
 				if rawget(t, "questID") then
 					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithAchievementAndQuest);
 				else
@@ -13070,7 +13071,7 @@ app.CreateNPC = function(id, t)
 			end
 		else
 			if rawget(t, "achID") then
-				rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
+				t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
 				if rawget(t, "questID") then
 					return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithAchievementAndQuest);
 				else
@@ -13219,7 +13220,7 @@ app.BaseObjectWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseObject
 app.CreateObject = function(id, t)
 	if t then
 		if rawget(t, "achID") then
-			rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
+			t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
 			if rawget(t, "questID") then
 				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithAchievementAndQuest);
 			else
@@ -13795,7 +13796,7 @@ local fields = {
 		-- return the gender-proper name for the title
 		local name = t.titleName;
 		if name then
-			rawset(t, "name", StylizePlayerTitle(name, t.style, UnitName("player")));
+			t.name = StylizePlayerTitle(name, t.style, UnitName("player"));
 		end
 		return name;
 	end,
@@ -23504,25 +23505,25 @@ app.SetupProfiles = function()
 		-- General Settings
 		if AllTheThingsSettings.General then
 			for k,v in pairs(AllTheThingsSettings.General) do
-				rawset(default.General, k, v);
+				default.General[k] = v;
 			end
 		end
 		-- Tooltip Settings
 		if AllTheThingsSettings.Tooltips then
 			for k,v in pairs(AllTheThingsSettings.Tooltips) do
-				rawset(default.Tooltips, k, v);
+				default.Tooltips[k] = v;
 			end
 		end
 		-- Seasonal Filters
 		if AllTheThingsSettings.Seasonal then
 			for k,v in pairs(AllTheThingsSettings.Seasonal) do
-				rawset(default.Seasonal, k, v);
+				default.Seasonal[k] = v;
 			end
 		end
 		-- Unobtainable Filters
 		if AllTheThingsSettings.Unobtainable then
 			for k,v in pairs(AllTheThingsSettings.Unobtainable) do
-				rawset(default.Unobtainable, k, v);
+				default.Unobtainable[k] = v;
 			end
 		end
 	end
