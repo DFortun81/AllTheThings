@@ -3949,7 +3949,7 @@ local function ResolveSymlinkGroupAsync(group)
 	local groups = ResolveSymbolicLink(group);
 	group.sym = nil;
 	if groups then
-		PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
+		PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
 		-- app.PrintDebug("RSGa",group.g and #group.g,group.hash)
 		-- newly added group data needs to be checked again for further content to fill, since it will not have been recursively checked
 		-- on the initial pass due to the async nature
@@ -4536,7 +4536,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						if not root then
 							for _,o in ipairs(refinedMatches[depth]) do
 								-- object meets filter criteria and is exactly what is being searched
-								if app.RecursiveGroupRequirementsFilter(o) then
+								if app.RecursiveCharacterRequirementsFilter(o) then
 									-- print("filtered root");
 									if root then
 										local otherRoot = root;
@@ -4572,7 +4572,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- print(o.key,o[o.key],o.modItemID,"=parent>",o.parent and o.parent.key,o.parent and o.parent.key and o.parent[o.parent.key]);
 				if GroupMatchesParams(o, paramA, paramB) then
 					-- object meets filter criteria and is exactly what is being searched
-					if app.RecursiveGroupRequirementsFilter(o) then
+					if app.RecursiveCharacterRequirementsFilter(o) then
 						-- print("filtered root");
 						if root then
 							local otherRoot = root;
@@ -4619,13 +4619,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- app.PrintDebug(#nested,"Nested total");
 		-- Nest the objects by matching filter priority if it's not a currency
 		if paramA ~= "currencyID" then
-			PriorityNestObjects(root, nested, nil, app.RecursiveGroupRequirementsFilter);
+			PriorityNestObjects(root, nested, nil, app.RecursiveCharacterRequirementsFilter);
 		else
 			-- do roughly the same logic for currency, but will not add the skipped objects afterwards
 			local added = {};
 			for i,o in ipairs(nested) do
 				-- If the obj meets the recursive group filter
-				if app.RecursiveGroupRequirementsFilter(o) then
+				if app.RecursiveCharacterRequirementsFilter(o) then
 					-- Merge the obj into the merged results
 					-- print("Merge object",o.key,o[o.key])
 					tinsert(added, o);
@@ -5213,7 +5213,7 @@ local function FillGroupsRecursive(group, FillData)
 	-- 	app.PrintDebug("FillGroups-MergeResults",group.hash,groups and #groups)
 	-- end
 	-- Adding the groups normally based on available-source priority
-	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
+	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
 
 	if group.g then
 		-- app.PrintDebug(".g",group.hash,#group.g)
@@ -5245,7 +5245,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	-- 	app.PrintDebug("FillGroupsAsync-MergeResults",group.hash,groups and #groups)
 	-- end
 	-- Adding the groups normally based on available-source priority
-	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
+	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
 	if #groups > 0 then
 		BuildGroups(group);
 		app.DirectGroupUpdate(group);
@@ -5506,7 +5506,7 @@ app.BuildSourceParent = function(group)
 				end
 				tinsert(clones, clonedParent);
 			end
-			PriorityNestObjects(sourceGroup, clones, nil, app.RecursiveGroupRequirementsFilter);
+			PriorityNestObjects(sourceGroup, clones, nil, app.RecursiveCharacterRequirementsFilter);
 			NestObject(group, sourceGroup, nil, 1);
 		end
 	end
@@ -6281,7 +6281,7 @@ app.SearchForObject = function(field, id, require)
 		end
 		-- find a filter-match object first
 		local keyMatch, fieldMatch, match;
-		local Filter = app.RecursiveGroupRequirementsFilter;
+		local Filter = app.RecursiveCharacterRequirementsFilter;
 		for i=1,count,1 do
 			fcacheObj = fcache[i];
 			-- field matching id
@@ -7398,8 +7398,8 @@ end
 -- Function which returns both collectible/collected based on a given 'ref' Thing, which has been previously determined as a
 -- possible collectible without regard to filtering
 local function CheckCollectible(ref)
-	-- don't include groups which do not meet the current filter requirements
-	if app.RecursiveGroupRequirementsFilter(ref) then
+	-- don't include groups which do not meet the current character requirements
+	if app.RecursiveCharacterRequirementsFilter(ref) then
 		-- app.PrintDebug("CheckCollectible",ref.hash)
 		local total = ref.total;
 		-- Used as a cost for something which has an incomplete progress
@@ -8403,7 +8403,7 @@ app.CheckForBreadcrumbPrevention = function(title, questID)
 	if nextQuests then
 		local warning;
 		for _,group in pairs(nextQuests) do
-			if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
+			if not group.collected and app.RecursiveCharacterRequirementsFilter(group) then
 				app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
 					title,
 					app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
@@ -14388,7 +14388,18 @@ app.VerifyRecursion = function(group, checked)
 	end
 	return true;
 end
--- Recursively check outwards to find if any parent group restricts the filter for this character
+-- Recursively check outwards to find if any parent group restricts the filter for the current character (regardless of settings)
+app.RecursiveCharacterRequirementsFilter = function(group)
+	if CurrentCharacterFilters(group) then
+		local filterParent = group.sourceParent or group.parent;
+		if filterParent then
+			return app.RecursiveCharacterRequirementsFilter(filterParent)
+		end
+		return true;
+	end
+	return false;
+end
+-- Recursively check outwards to find if any parent group restricts the filter for the current settings
 app.RecursiveGroupRequirementsFilter = function(group)
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 		local filterParent = group.sourceParent or group.parent;
@@ -14404,7 +14415,7 @@ app.RecursiveDirectGroupRequirementsFilter = function(group)
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 		local filterParent = group.parent;
 		if filterParent then
-			return app.RecursiveGroupRequirementsFilter(filterParent)
+			return app.RecursiveDirectGroupRequirementsFilter(filterParent)
 		end
 		return true;
 	end
