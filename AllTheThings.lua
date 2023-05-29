@@ -547,7 +547,7 @@ local function SetDataMember(member, data)
 	AllTheThingsAD[member] = data;
 end
 local function GetDataMember(member, default)
-	attData = rawget(AllTheThingsAD, member);
+	attData = AllTheThingsAD[member];
 	if attData == nil then
 		AllTheThingsAD[member] = default;
 		return default;
@@ -559,7 +559,7 @@ local function SetTempDataMember(member, data)
 	AllTheThingsTempData[member] = data;
 end
 local function GetTempDataMember(member, default)
-	attData = rawget(AllTheThingsTempData, member);
+	attData = AllTheThingsTempData[member];
 	if attData == nil then
 		AllTheThingsTempData[member] = default;
 		return default;
@@ -2312,7 +2312,7 @@ local DirtyQuests, TotalQuests = {}, 0;
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	key = tonumber(key);
 	if value then
-		if not rawget(t, key) then
+		if not t[key] then
 			TotalQuests = TotalQuests + 1;
 		end
 		rawset(t, key, value);
@@ -2667,7 +2667,7 @@ app.searchCache = searchCache;
 -- This function has basically 0 useful utilization that I have found
 -- local function GetKey(t)
 -- 	for _,key in ipairs(keysByPriority) do
--- 		if rawget(t, key) then
+-- 		if t[key] then
 -- 			app.PrintDebug("rawget.key",key,t[key])
 -- 			return key;
 -- 		end
@@ -4359,7 +4359,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 						-- Special case to double-check VisualID collection in Unique/Main modes because blizzard doesn't return consistent data
 						-- non-collected SourceID, non-collected* for Account, and in Unique Mode
-						if not sourceInfo.isCollected and not rawget(ATTAccountWideData.Sources, sourceID) and not app.Settings:Get("Completionist") then
+						if not sourceInfo.isCollected and not ATTAccountWideData.Sources[sourceID] and not app.Settings:Get("Completionist") then
 							local collected = app.ItemSourceFilter(sourceInfo);
 							if collected then
 								-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
@@ -5825,8 +5825,8 @@ local wipe, type =
 	  wipe, type;
 -- Allows caching the given 'group' using the provided field and value into the 'currentCache'
 local CacheField = function(group, field, value)
-	fieldCache_g = rawget(currentCache, field);
-	fieldCache_f = rawget(fieldCache_g, value);
+	fieldCache_g = currentCache[field];
+	fieldCache_f = fieldCache_g[value];
 	if fieldCache_f then
 		fieldCache_f[#fieldCache_f + 1] = group;
 	else
@@ -6139,9 +6139,9 @@ if app.__perf then
 		cacheConverters[key] = function(group, value)
 			local now = GetTimePreciseSec();
 			func(group, value);
-			local typeData = rawget(app.__perf, type);
-			typeData[key] = (rawget(typeData, key) or 0) + 1;
-			typeData[key.."_Time"] = (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now);
+			local typeData = app.__perf[type];
+			typeData[key] = (typeData[key] or 0) + 1;
+			typeData[key.."_Time"] = (typeData[key.."_Time"] or 0) + (GetTimePreciseSec() - now);
 		end
 	end
 	fieldConverters = cacheConverters;
@@ -6177,10 +6177,10 @@ CacheFields = function(group)
 	end
 	-- cache any matching converter fields within the group
 	for k,value in pairs(group) do
-		_cache = rawget(fieldConverters, k);
+		_cache = fieldConverters[k];
 		if _cache then
 			_cache(group, value);
-			if rawget(mapKeyUncachers, k) then
+			if mapKeyUncachers[k] then
 				if mapKeys then mapKeys[k] = value;
 				else mapKeys = { [k] = value }; end
 			end
@@ -6195,7 +6195,7 @@ CacheFields = function(group)
 	-- clear currentMapIDs used by this group
 	if mapKeys then
 		for key,value in pairs(mapKeys) do
-			rawget(mapKeyUncachers, key)(group, value);
+			mapKeyUncachers[key](group, value);
 		end
 	end
 	-- clear the 'real' instance if this group was it
@@ -6239,14 +6239,14 @@ local function SearchForFieldRecursively(group, field, value)
 	end
 end
 local function SearchForFieldContainer(field)
-	if field then return rawget(fieldCache, field); end
+	if field then return fieldCache[field]; end
 end
 app.SearchForFieldContainer = SearchForFieldContainer;
 -- This method returns a table containing all groups which contain the provided field with id value
 local function SearchForField(field, id)
 	if field and id then
-		_cache = rawget(fieldCache, field);
-		return (_cache and rawget(_cache, id)), field, id;
+		_cache = fieldCache[field];
+		return (_cache and _cache[id]), field, id;
 	end
 end
 app.SearchForField = SearchForField;
@@ -6512,8 +6512,8 @@ local function UpdateRawID(field, id)
 	if field and id then
 		local groups, append, _cache = {}, app.ArrayAppend;
 		for _,cache in ipairs(DataCaches) do
-			_cache = rawget(cache, field);
-			append(groups, _cache and rawget(_cache, id));
+			_cache = cache[field];
+			append(groups, _cache and _cache[id]);
 			-- app.PrintDebug("Update in DataCache",cache.name,id)
 		end
 		UpdateSearchResults(groups);
@@ -6526,8 +6526,8 @@ local function UpdateRawIDs(field, ids)
 		local groups, append, _cache = {}, app.ArrayAppend;
 		for _,cache in ipairs(DataCaches) do
 			for _,id in ipairs(ids) do
-				_cache = rawget(cache, field);
-				append(groups, _cache and rawget(_cache, id));
+				_cache = cache[field];
+				append(groups, _cache and _cache[id]);
 				-- app.PrintDebug("Update in DataCache",cache.name,id)
 			end
 		end
@@ -7273,10 +7273,10 @@ app.BaseObjectFields = not app.__perf and function(fields, type)
 
 	fields.__type = function() return type; end;
 	fields.__index = function(t, key)
-		objFunc = rawget(fields, key) or rawget(ObjectFunctions, key);
+		objFunc = rawget(fields, key) or ObjectFunctions[key];
 		if objFunc then return objFunc(t); end
 		-- use default key value if existing
-		local def = rawget(ObjectDefaults, key);
+		local def = ObjectDefaults[key];
 		if def ~= nil then return def; end
 		-- object is a wrapper for another Type object?
 		local base = rawget(t, "__base");
@@ -7297,14 +7297,14 @@ function(fields, type)
 
 	fields.__type = function() return type; end;
 	fields.__index = function(t, key)
-		local typeData, result = rawget(app.__perf, type);
+		local typeData, result = app.__perf[type];
 		local now = GetTimePreciseSec();
-		objFunc = rawget(fields, key) or rawget(ObjectFunctions, key);
+		objFunc = rawget(fields, key) or ObjectFunctions[key];
 		if objFunc then
 			result = objFunc(t);
 			key = tostring(key);
 		else
-			result = rawget(ObjectDefaults, key);
+			result = ObjectDefaults[key];
 			if result == nil and not objFunc then
 				-- object is a wrapper for another Type object?
 				local base = rawget(t, "__base");
@@ -7317,8 +7317,8 @@ function(fields, type)
 			end
 		end
 		if typeData then
-			typeData[key] = (rawget(typeData, key) or 0) + 1;
-			typeData[key.."_Time"] = (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now);
+			typeData[key] = (typeData[key] or 0) + 1;
+			typeData[key.."_Time"] = (typeData[key.."_Time"] or 0) + (GetTimePreciseSec() - now);
 		end
 		return result;
 	end;
@@ -7343,12 +7343,15 @@ app.WrapObject = function(t, base)
 end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField)
-	local cache = {};
+	local cache, _t = {};
 	cache.GetCached = function(t)
 		local id = t[idField];
 		if id then
-			if not rawget(cache, id) then cache[id] = {}; end
-			return rawget(cache, id), id;
+			_t = cache[id];
+			if not _t then
+				cache[id] = {};
+			end
+			return cache[id], id;
 		end
 	end;
 	cache.GetCachedField = function(t, field, default_function)
@@ -7358,14 +7361,14 @@ app.CreateCache = function(idField)
 			print("GetCachedField",id,field,_t[field]);
 		end
 		--]]
-		local _t = cache.GetCached(t);
+		_t = cache.GetCached(t);
 		if _t then
 			-- set a default provided cache value if any default function was provided and evalutes to a value
-			if not rawget(_t, field) and default_function then
+			if not _t[field] and default_function then
 				local defVal = default_function(t, field);
 				if defVal then _t[field] = defVal; end
 			end
-			return rawget(_t, field);
+			return _t[field];
 		end
 	end;
 	cache.SetCachedField = function(t, field, value)
@@ -7377,7 +7380,7 @@ app.CreateCache = function(idField)
 			print("SetCachedField",id,field,"New",value);
 		end
 		--]]
-		local _t = cache.GetCached(t);
+		_t = cache.GetCached(t);
 		if _t then _t[field] = value;
 		else
 			print("Failed to get cache table using",idField)
@@ -13470,7 +13473,7 @@ app.IsSpellKnownHelper = IsSpellKnownHelper;
 local SpellIDToSpellName = {};
 local SpellNameToSpellID;
 local GetSpellName = function(spellID)
-	local spellName = rawget(SpellIDToSpellName, spellID);
+	local spellName = SpellIDToSpellName[spellID];
 	if spellName then return spellName; end
 	spellName = GetSpellInfo(spellID);
 	if spellName and spellName ~= "" then
@@ -13651,7 +13654,7 @@ local function CacheInfo(t, field)
 	-- patch can be included in the id
 	local tierID = math_floor(id);
 	t.tierKey = tierID;
-	local info = rawget(L.TIER_DATA, tierID);
+	local info = L.TIER_DATA[tierID];
 	-- assign the cached values from locale
 	if info then
 		-- app.PrintDebug("tier cache locale data",id,tierID,"via",field)
@@ -14198,7 +14201,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		end
 		if not canMog then return; end
 		for _,sourceID in ipairs(visualIDs) do
-			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",rawget(acctSources, sourceID)) end
+			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)] end
 			-- If it is not currently marked collected on the account
 			if not acctSources[sourceID] then
 				-- for current character only, all we care is that the knownItem is not exclusive to another
@@ -15851,16 +15854,16 @@ local function Refresh(self)
 	local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 
 	-- Ensure that the first row doesn't move out of position.
-	local row = rawget(container.rows, 1) or CreateRow(container);
-	SetRowData(self, row, rawget(rowData, 1));
+	local row = container.rows[1] or CreateRow(container);
+	SetRowData(self, row, rowData[1]);
 	local containerHeight = container:GetHeight();
 	totalHeight = totalHeight + row:GetHeight();
 	current = current + 1;
 	rowCount = rowCount + 1;
 
 	for i=2,totalRowCount do
-		row = rawget(container.rows, i) or CreateRow(container);
-		SetRowData(self, row, rawget(rowData, current));
+		row = container.rows[i] or CreateRow(container);
+		SetRowData(self, row, rowData[current]);
 		-- track the minimum indentation within the set of rows so they can be adjusted later
 		if row.indent and (not minIndent or row.indent < minIndent) then
 			minIndent = row.indent;
@@ -15877,7 +15880,7 @@ local function Refresh(self)
 
 	-- Readjust the indent of visible rows
 	-- if there's actually an indent to adjust on top row (due to possible indicator)
-	row = rawget(container.rows, 1);
+	row = container.rows[1];
 	if row.indent ~= windowPad then
 		AdjustRowIndent(row, row.indent - windowPad);
 		-- increase the window pad extra for sub-rows so they will indent slightly more than the header row with indicator
@@ -15890,7 +15893,7 @@ local function Refresh(self)
 	--	-- header only adjust
 	-- 	headerAdjust = startIndent - 8;
 	-- 	print("header adjust",headerAdjust)
-	-- 	row = rawget(container.rows, 1);
+	-- 	row = container.rows[1];
 	-- 	AdjustRowIndent(row, headerAdjust);
 	-- end
 	-- adjust remaining rows to align on the left
@@ -15898,14 +15901,14 @@ local function Refresh(self)
 		-- print("minIndent",minIndent,windowPad)
 		local adjust = minIndent - windowPad;
 		for i=2,rowCount do
-			row = rawget(container.rows, i);
+			row = container.rows[i];
 			AdjustRowIndent(row, adjust);
 		end
 	end
 
 	-- Hide the extra rows if any exist
 	for i=math.max(2, rowCount + 1),#container.rows do
-		row = rawget(container.rows, i);
+		row = container.rows[i];
 		ClearRowData(row);
 		row:Hide();
 	end
