@@ -175,6 +175,56 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				16301,	-- Treasures of Thaldraszus
 			}},
 		}),
+		ach(16729, {	-- To All the Squirrels Hidden Til Now
+			crit(1, {	-- Kelp Nibbler
+				["crs"]	= { 189737 }, -- Kelp Nibbler
+				["coord"] = { 76.81, 44.12, THE_WAKING_SHORES },
+			}),
+			crit(2, {	-- Phoenix Hatchling
+				["crs"]	= { 192135 }, -- Phoenix Hatchling
+				["coord"] = { 65.13, 28.58, THE_WAKING_SHORES },
+			}),
+			crit(3, {	-- Docile Kit
+				["crs"]	= { 193756 }, -- Docile Kit
+				["coord"] = { 58.35, 72.55, THE_WAKING_SHORES },
+			}),
+			crit(4, {	-- Frilled Hatchling
+				["crs"]	= { 186306 }, -- Frilled Hatchling
+				["coord"] = { 22.07, 63.78, OHNAHRAN_PLAINS },
+			}),
+			crit(5, {	-- Thicket Glider
+				["crs"]	= { 192948 }, -- Thicket Glider
+				["coord"] = { 52.05, 50.54, OHNAHRAN_PLAINS },
+			}),
+			crit(6, {	-- Thunderspine Calf
+				["crs"]	= { 192942 }, -- Thunderspine Calf
+				["coord"] = { 51.72, 51.79, OHNAHRAN_PLAINS },
+			}),
+			crit(7, {	-- Timbertooth Kit
+				["crs"]	= { 193594 }, -- Timbertooth Kit
+				["coord"] = { 52.95, 58.41, THE_AZURE_SPAN },
+			}),
+			crit(8, {	-- Frosty Spiderling
+				["crs"]	= { 186481 }, -- Frosty Spiderling
+				["coord"] = { 49.92, 57.61, THE_AZURE_SPAN },
+			}),
+			crit(9, {	-- Crimson Knocker
+				["crs"]	= { 197718 }, -- Crimson Knocker
+				["coord"] = { 28.89, 41.94, THE_AZURE_SPAN },
+			}),
+			crit(10, {	-- Diminuitive Boghopper
+				["crs"]	= { 195869 }, -- Diminuitive Boghopper
+				["coord"] = { 56.09, 68.71, THALDRASZUS },
+			}),
+			crit(11, {	-- Reservoir Filly
+				["crs"]	= { 196652 }, -- Reservoir Filly
+				["coord"] = { 51.24, 56.82, THALDRASZUS },
+			}),
+			crit(12, {	-- Rocdrop Scarab
+				["crs"]	= { 185148 }, -- Rocdrop Scarab
+				["coord"] = { 51.35, 72.61, THALDRASZUS },
+			}),
+		}),
 		ach(16323, {	-- Fragments of History
 			crit(1, {	-- Dislodged Dragoneye
 				["_quests"] = { 70236 },	-- Dislodged Dragoneye
