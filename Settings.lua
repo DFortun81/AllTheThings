@@ -295,7 +295,7 @@ end
 local function rawcopy(source, copy)
 	if source and copy then
 		for k,v in pairs(source) do
-			rawset(copy, k, v);
+			copy[k] = v;
 		end
 	end
 end
@@ -2561,11 +2561,11 @@ do
 settings.AutoSeasonalFilters = setmetatable({}, {
 	__newindex = function(t, key, val)
 		-- app.PrintDebug("ASF-Set",key,val)
-		rawset(SeasonalSettingsBase.__index, key, val);
+		SeasonalSettingsBase.__index[key] = val;
 	end,
 	__index = function(t, key)
 		-- app.PrintDebug("ASF-Get",key)
-		return rawget(SeasonalSettingsBase.__index, key);
+		return SeasonalSettingsBase.__index[key];
 	end
 });
 -- Icon = Holiday Filter
