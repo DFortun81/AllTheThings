@@ -12995,7 +12995,6 @@ local HeaderTypeAbbreviations = {
 	["a"] = "achievementID",
 	["c"] = "classID",
 	["m"] = "mapID",
-	["n"] = "npcID",
 	["i"] = "itemID",
 	["q"] = "questID",
 	["s"] = "spellID",
@@ -13022,6 +13021,9 @@ local AlternateDataTypes = {
 		id = app.FactionID == Enum.FlightPathFaction.Alliance and tonumber(aid) or tonumber(hid);
 		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
 		return name, textureFilename;
+	end,
+	["n"] = function(id)
+		return app.NPCNameFromID[id], app.NPCDisplayIDFromID[id];
 	end,
 };
 -- Returns the 'name' and 'icon' values to use for a given id/type automatic name lookup

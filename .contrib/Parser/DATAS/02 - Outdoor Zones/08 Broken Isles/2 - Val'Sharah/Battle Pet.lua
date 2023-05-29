@@ -29,7 +29,7 @@ _.Zones =
 						["description"] = "Found around the large nightmare area.",
 					}),
 					pet(1737),	-- Vale Flitter (PET!)
-					n(115786, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Sharptalon Hatchling
+					header(HEADERS.NPC, 115786, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Sharptalon Hatchling
 						["description"] = "1. Buy Dried Bilberries from Nalysse Dawnsorrow in Azsuna.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling! Do one quest each day for a mount!|r",
 						["crs"] = { 115740 },	-- Orphaned Sharptalon
 						["groups"] = {

@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(180645),	-- Dodger (PET!)
 				},
 			}),
-			n(168135, {	-- Night Mare
+			header(HEADERS.NPC, 168135, {	-- Night Mare
 				["description"] = "Enable Debug Mode to view all the steps.\n\nYou will need at least 2 |cFFFFFFFFGoblin Gliders|r and 10 |cff16bf0dLightless Silk|r.  (I encountered a bug where, until I had more than 10 cloth in my bags, I could not progress to the next step, so you may want to bring a few extra.)\n\nYou will also need to have completed the 'Trouble at the Gormling Corral' and 'Tricky Spriggans' criteria of the |cffffff00Sojourner of Ardenweald|r achievement.  You must also fight a 62 rare elite, so bringing a couple friends along is a good idea.",
 				["g"] = {
 					i(181243, {	-- Broken Soulweb
