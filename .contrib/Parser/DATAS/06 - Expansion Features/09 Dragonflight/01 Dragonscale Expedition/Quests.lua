@@ -237,7 +237,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 196643 },	-- Doc Nanners
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				["maps"] = { THE_WAKING_SHORES },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 			}),
 			q(66012, {	-- The Sealed Door
 				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
