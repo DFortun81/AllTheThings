@@ -16301,7 +16301,7 @@ RowOnEnter = function (self)
 			GameTooltip:ClearLines();
 		end
 
-		local link = reference.link;
+		local link = reference.link or reference.silentLink;
 		local _, linkAdded;
 		if link then
 			-- app.PrintDebug("OnRowEnter-SetDirectlink",link);
