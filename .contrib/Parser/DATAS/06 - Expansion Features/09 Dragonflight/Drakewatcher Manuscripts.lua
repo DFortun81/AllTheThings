@@ -666,6 +666,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197012),	-- Cliffside Wylderdrake: Blue Scales (DM!)
 			i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
 			i(196996),	-- Cliffside Wylderdrake: Branched Horns (DM!)
+			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
 			i(196981),	-- Cliffside Wylderdrake: Conical Head (DM!)
 			i(196979),	-- Cliffside Wylderdrake: Curled Head Horns (DM!)
 			i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
@@ -712,7 +713,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
 			i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
-			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw (DM!)
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor (DM!)
 			i(196990),	-- Cliffside Wylderdrake: Helm (DM!)

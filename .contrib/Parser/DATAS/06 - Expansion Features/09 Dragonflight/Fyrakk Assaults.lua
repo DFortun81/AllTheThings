@@ -35,7 +35,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205002),	-- Blaise (PET!)
 					}),
 					n(DRAKEWATCHER_MANUSCRIPTS, {
-						i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
 						i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
 					}),
@@ -233,6 +232,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					-- ["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					["g"] = {
 						-- Rewards
+						i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
 						i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 						i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
 						i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
