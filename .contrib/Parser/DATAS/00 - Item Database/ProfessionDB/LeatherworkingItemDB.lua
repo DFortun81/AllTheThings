@@ -35,6 +35,131 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 	end
 end
 
+------------------
+-- PATCH 8.3.0 --
+------------------
+-- TRAINER --
+i(0, 304412);	-- Uncanny Combatant's Leather Treads [Rank 1]
+i(0, 304413);	-- Uncanny Combatant's Leather Treads [Rank 2]
+i(0, 304414);	-- Uncanny Combatant's Leather Treads [Rank 3]
+-- ITEM --
+i(171122, 305801);	-- Eldritch Cragscale Boots
+i(171118, 305807);	-- Eldritch Cragscale Greaves
+i(171126, 305805);	-- Eldritch Dredged Leather Boots
+i(171124, 305799);	-- Eldritch Dredged Leather Leggings
+i(171123, 305802);	-- Maddening Cragscale Boots
+i(171128, 305806);	-- Maddening Cragscale Greaves
+i(171125, 305798);	-- Maddening Dredged Leather Leggings
+i(174368, 305803);	-- Unsettling Cragscale Boots
+i(174369, 305800);	-- Unsettling Cragscale Greaves
+i(174367, 305804);	-- Unsettling Dredged Leather Leggings
+-- UNSURE --
+i(0, 307176);	-- Void Focus
+
+------------------
+-- PATCH 9.0.1 --
+------------------
+-- TRAINER --
+i(0, 309190);	-- Bone Bound Knuckles
+i(0, 308896);	-- Callous Hide
+i(0, 324735);	-- Comfortable Rider's Barding
+i(0, 309192);	-- Composite Bow
+i(0, 309193);	-- Composite Crossbow
+i(0, 343195);	-- Crafter's Mark I
+i(0, 324087);	-- Desolate Armor Kit
+i(0, 308895);	-- Desolate Leather
+i(0, 309181);	-- Desolate Leather Armguards
+i(0, 309191);	-- Desolate Leather Cestus
+i(0, 309176);	-- Desolate Leather Gauntlets
+i(0, 309186);	-- Desolate Scale Greaves
+i(0, 309177);	-- Desolate Leather Helm
+i(0, 309178);	-- Desolate Leather Leggings
+i(0, 309179);	-- Desolate Leather Pauldrons
+i(0, 309174);	-- Desolate Leather Treads
+i(0, 309175);	-- Desolate Leather Vest
+i(0, 309180);	-- Desolate Leather Waistguard
+i(0, 309184);	-- Desolate Scale Gauntlets
+i(0, 309185);	-- Desolate Scale Helm
+i(0, 309187);	-- Desolate Scale Pauldrons
+i(0, 309182);	-- Desolate Scale Treads
+i(0, 309183);	-- Desolate Scale Vest
+i(0, 309173);	-- Drums of Deathly Ferocity
+i(0, 308897);	-- Heavy Callous Hide
+i(0, 308899);	-- Heavy Desolate Leather
+i(0, 343660);	-- Novice Crafter's Mark
+i(0, 330196);	-- Relic of the Past I (Cataclysm)
+i(0, 330180);	-- Relic of the Past I (Classic)
+i(0, 330206);	-- Relic of the Past I (Draenor)
+i(0, 330216);	-- Relic of the Past I (Kul Tiran)
+i(0, 330211);	-- Relic of the Past I (Legion)
+i(0, 330191);	-- Relic of the Past I (Northrend)
+i(0, 330186);	-- Relic of the Past I (Outland)
+i(0, 330201);	-- Relic of the Past I (Pandaria)
+i(0, 330197);	-- Relic of the Past II (Cataclysm)
+i(0, 330181);	-- Relic of the Past II (Classic)
+i(0, 330207);	-- Relic of the Past II (Draenor)
+i(0, 330218);	-- Relic of the Past II (Kul Tiran)
+i(0, 330212);	-- Relic of the Past II (Legion)
+i(0, 330192);	-- Relic of the Past II (Northrend)
+i(0, 330187);	-- Relic of the Past II (Outland)
+i(0, 330202);	-- Relic of the Past II (Pandaria)
+i(0, 330198);	-- Relic of the Past III (Cataclysm)
+i(0, 330183);	-- Relic of the Past III (Classic)
+i(0, 330208);	-- Relic of the Past III (Draenor)
+i(0, 330219);	-- Relic of the Past III (Kul Tiran)
+i(0, 330213);	-- Relic of the Past III (Legion)
+i(0, 330193);	-- Relic of the Past III (Northrend)
+i(0, 330188);	-- Relic of the Past III (Outland)
+i(0, 330203);	-- Relic of the Past III (Pandaria)
+i(0, 330199);	-- Relic of the Past IV (Cataclysm)
+i(0, 330184);	-- Relic of the Past IV (Classic)
+i(0, 330209);	-- Relic of the Past IV (Draenor)
+i(0, 330220);	-- Relic of the Past IV (Kul Tiran)
+i(0, 330214);	-- Relic of the Past IV (Legion)
+i(0, 330194);	-- Relic of the Past IV (Northrend)
+i(0, 330189);	-- Relic of the Past IV (Outland)
+i(0, 330204);	-- Relic of the Past IV (Pandaria)
+i(0, 330200);	-- Relic of the Past V (Cataclysm)
+i(0, 330185);	-- Relic of the Past V (Classic)
+i(0, 330210);	-- Relic of the Past V (Draenor)
+i(0, 330221);	-- Relic of the Past V (Kul Tiran)
+i(0, 330215);	-- Relic of the Past V (Legion)
+i(0, 330195);	-- Relic of the Past V (Northrend)
+i(0, 330190);	-- Relic of the Past V (Outland)
+i(0, 330205);	-- Relic of the Past V (Pandaria)
+i(0, 309038);	-- Shadowlands Leatherworking
+i(0, 309245);	-- Shadowscale Armguards
+i(0, 309241);	-- Shadowscale Helm
+i(0, 309242);	-- Shadowscale Leggings
+i(0, 309243);	-- Shadowscale Pauldrons
+i(0, 309244);	-- Shadowscale Waistguard
+-- ITEM --
+i(183870, 343193);	-- Crafter's Mark II
+i(183100, 324088);	-- Heavy Desolate Armor Kit
+-- UNSURE --
+i(0, 309196);	-- Heavy Composite Bow
+i(0, 309197);	-- Heavy Composite Crossbow
+i(0, 309195);	-- Reinforced Desolate Leather Cestus
+
+
+------------------
+-- PATCH 9.1.0 --
+------------------
+-- ITEM --
+i(186598, 343192);	-- Crafter's Mark III
+i(186470, 343189);	-- Crafter's Mark of the Chained Isle
+i(187000, 355354);	-- Elusive Pet Treat
+i(186999, 354800);	-- Pallid Bone Flute
+i(186998, 354797);	-- Pallid Oracle Bones
+i(187218, 352444);	-- Vestige of Origins
+
+------------------
+-- PATCH 9.2.0 --
+------------------
+-- ITEM --
+i(187750, 359662);	-- Crafter's Mark IV
+i(187749, 359669);	-- Crafter's Mark of the First Ones
+i(187785, 359702);	-- Vestige of the Eternal
 
 ------------------
 -- PATCH 10.0.0 --
@@ -204,3 +329,7 @@ i(204150, 403135);	-- Obsidian Combatant's Resilient Trousers
 i(204154, 403139);	-- Obsidian Combatant's Resilient Wristwraps
 i(204968, 406275);	-- Shadowflame-Tempered Armor Patch
 i(204969, 406266);	-- Spore Colony Shoulderguards
+
+------------------
+-- PATCH 10.1.5 --
+------------------

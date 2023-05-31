@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							i(185114),	-- Redeemed Inquisitor's Wraps
 						},
 					}),
-					i(187000),	-- Pattern: Elusive Pet Treat
+					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 					i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 					i(186548),	-- Chompy (PET!)
 					i(187184),	-- Vesper of Clarity (TOY!)

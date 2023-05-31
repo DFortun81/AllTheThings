@@ -812,16 +812,16 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(162494),	-- Imbued Tempest Leggings [Alliance]
 			i(162469),	-- Imbued Tempest Leggings [Horde]
 			i(170442, {	-- Maddening Cragscale Greaves
-				i(171118),	-- Pattern: Eldritch Cragscale Greaves
+				i(171118),	-- Pattern: Eldritch Cragscale Greaves (RECIPE!)
 			}),
 			i(170436, {	-- Maddening Dredged Leather Leggings
-				i(171124),	-- Pattern: Eldritch Dredged Leather Leggings
+				i(171124),	-- Pattern: Eldritch Dredged Leather Leggings (RECIPE!)
 			}),
 			i(161962, {	-- Mistscale Leggings [Alliance]
-				i(162505),	-- Pattern: Imbued Mistscale Leggings
+				i(162505),	-- Pattern: Imbued Mistscale Leggings (RECIPE!)
 			}),
 			i(154157, {	-- Mistscale Greaves [Horde]
-				i(162505),	-- Pattern: Imbued Mistscale Leggings
+				i(162505),	-- Pattern: Imbued Mistscale Leggings (RECIPE!)
 			}),
 			i(167949),	-- Notorious Combatant's Leather Leggings [Alliance]
 			i(167948),	-- Notorious Combatant's Leather Leggings [Horde]
