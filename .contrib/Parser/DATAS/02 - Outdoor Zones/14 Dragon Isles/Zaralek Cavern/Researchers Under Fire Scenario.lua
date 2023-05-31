@@ -25,11 +25,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 45.5, 61.6, ZARALEK_CAVERN },
 					["questID"] = 75946,
 					["isWeekly"] = true,
+					["groups"] = {
+						i(205195),	-- Drakeforged Magma Charm
+						i(205200),	-- Stirring Twilight Ember
+						i(205201),	-- Smoldering Howler Horn
+						i(205196),	-- Zaqali Hand Cauldron
+					},
 				}),
 				n(203355, {	-- Captain Reykal
 					["coord"] = { 49.2, 57.6, ZARALEK_CAVERN },
 					["questID"] = 75943,
 					["isWeekly"] = true,
+					["groups"] = {
+						i(205195),	-- Drakeforged Magma Charm
+						i(205200),	-- Stirring Twilight Ember
+						i(205201),	-- Smoldering Howler Horn
+						i(205196),	-- Zaqali Hand Cauldron
+					},
 				}),
 				n(202309, {	-- Cavern Flayer Matriarch
 					["coord"] = { 47.1, 57.1, ZARALEK_CAVERN },
@@ -37,22 +49,40 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["isWeekly"] = true,
 					["groups"] = {
 						i(205276),	-- Deepflayer Lure
+						i(205193),	-- Sturdy Deepflayer Scute
 					},
 				}),
 				n(203834, {	-- Contaminated Titan Watcher
 					["coord"] = { 45.0, 62.0, ZARALEK_CAVERN },
 					["questID"] = 75944,
 					["isWeekly"] = true,
+					["groups"] = {
+						i(205194),	-- Fractured Crystalspine Quill
+						i(205193),	-- Sturdy Deepflayer Scute
+						i(205191),	-- Underlight Globe
+						i(205192),	-- Volatile Crystal Shard
+					},
 				}),
 				n(204214, {	-- Monstrous Magmaclaw Snapper
 					["coord"] = { 43.7, 56.8, ZARALEK_CAVERN },
 					["questID"] = 75942,
 					["isWeekly"] = true,
+					["groups"] = {
+						i(205262),	-- Magmaclaw Lure
+						i(205200),	-- Stirring Twilight Ember
+						i(205196),	-- Zaqali Hand Cauldron
+					},
 				}),
 				n(202318, {	-- Response Team Watcher
 					["coord"] = { 47.8, 63.8, ZARALEK_CAVERN },
 					["questID"] = 75945,
 					["isWeekly"] = true,
+					["groups"] = {
+						i(205194),	-- Fractured Crystalspine Quill
+						i(205193),	-- Sturdy Deepflayer Scute
+						i(205191),	-- Underlight Globe
+						i(205192),	-- Volatile Crystal Shard
+					},
 				}),
 			}),
 			n(QUESTS, {
