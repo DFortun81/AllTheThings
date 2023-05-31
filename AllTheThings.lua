@@ -19721,12 +19721,18 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
-			-- self.dirty = true;
 
-			self.Clear = function(self)
+			function self:Clear()
 				local temp = self.data.g[1];
 				wipe(self.data.g);
 				tinsert(self.data.g, temp);
+			end
+
+			function self:Search(field, value)
+				app.PrintDebug("Search",field,value)
+				local results = app:BuildSearchResponse(app:GetDataCache().g, field, value, true);
+				app.PrintDebug("Results",#results)
+				app.ArrayAppend(self.data.g, results);
 			end
 
 			-- Item Filter
@@ -19744,8 +19750,8 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 						['visible'] = true,
 						['OnUpdate'] = app.AlwaysShowUpdate,
 						['OnClick'] = function(row, button)
-							app:ShowPopupDialogWithEditBox(L["ITEM_FILTER_POPUP_TEXT"], "", function(text)
-								text = string_lower(text);
+							app:ShowPopupDialogWithEditBox(L["ITEM_FILTER_POPUP_TEXT"], "", function(input)
+								local text = string_lower(input);
 								local f = tonumber(text);
 								if text ~= "" and tostring(f) ~= text then
 									-- The string form did not match, the filter must have been by name.
@@ -19760,9 +19766,18 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 								self:Clear();
 
 								if f then
-									local g = self.data.g;
-									app.ArrayAppend(g, app:BuildSearchResponse(app:GetDataCache().g, "f", f, true));
+									self:Search("f", f);
+								else
+									-- direct field search
+									local field, value = strsplit("=",input);
+									value = tonumber(value) or value;
+									if value and value ~= "" then
+										self:Search(field, value);
+									else
+										self:Search(field);
+									end
 								end
+								-- maybe local table of common fields from lowercase -> match
 
 								self:BuildData();
 								self:Update(true);
