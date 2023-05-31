@@ -432,7 +432,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						},
 					}),
 					e(2532, {	-- The Vigilant Steward, Zskarn
-						["crs"] = { 202637 },	-- Zskarn <the Vigilant Steward>
+						["crs"] = { 
+							202637,	-- Zskarn <the Vigilant Steward>
+							202375,	-- Zskarn <the Vigilant Steward>
+						},
 						["g"] = {
 							i(202631, {	-- Dreadful Ventilation Fluid
 								i(202464),	-- Lingering Phantom's Plackart
