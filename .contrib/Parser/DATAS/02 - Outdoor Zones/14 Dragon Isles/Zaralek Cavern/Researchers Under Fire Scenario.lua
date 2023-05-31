@@ -35,6 +35,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 47.1, 57.1, ZARALEK_CAVERN },
 					["questID"] = 75948,
 					["isWeekly"] = true,
+					["groups"] = {
+						i(205276),	-- Deepflayer Lure
+					},
 				}),
 				n(203834, {	-- Contaminated Titan Watcher
 					["coord"] = { 45.0, 62.0, ZARALEK_CAVERN },
