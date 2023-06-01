@@ -100,7 +100,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190827),	-- Vagabond's Crimson Cape
 						i(190828),	-- Vagabond's Crimson Hood
 				-- 	},
-				i(202179, {	-- Ensemble: Wanderer's Carrot Trappings
+				i(202178, {	-- Ensemble: Wanderer's Carrot Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
 						i(202175),	-- Wanderer's Carrot Cloak
