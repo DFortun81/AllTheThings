@@ -76,6 +76,11 @@ _.Instances = { tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+				i(205975),	-- Hate-Sculpted Magma
+				i(205974),	-- Monstrous GLuttony
+				i(205973),	-- Rod of Crystalline Energies
+			})),
 			d(NORMAL_DUNGEON, {
 				cr(91003, e(1662, {	-- Rokmora
 					i(134481),	-- Boulderbuckle Strap
