@@ -1,8 +1,6 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
--- Still debating on whether mapping the entire event to all zones vs. individually mapping the content actually present in a zone under assault...
--- Please don't clean up random comments and formatting in this file until we've established that it is 'finalized' after a few more weeks of the event
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(FYRAKK_ASSAULTS, {
 		["questID"] = 75467,	-- completion of the assault via killing the respective 'Disciple' dragon
@@ -10,26 +8,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		["maps"] = {
 			OHNAHRAN_PLAINS,
 			THE_AZURE_SPAN,
-			--	VALDRAKKEN,
-			--	THE_WAKING_SHORES,
-			--	THALDRASZUS,
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				-- ["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
-				-- ["g"] = {
-					ach(17506),	-- Still Standing in the Fire
-					ach(17735),	-- We Didn't Start the Fire
-				-- },
+				ach(17506),	-- Still Standing in the Fire
+				ach(17735),	-- We Didn't Start the Fire
 			}),
 			n(COMMON_BOSS_DROPS, {
-				-- ["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				["crs"] = {
 					201673,	-- Kretchenwrath
 					203411,	-- Shadeisethal
 				},
 				["g"] = {
-					i(206043),	-- Fyrakk's Frenzy (TOY!)
 					filter(BATTLE_PETS, {
 						i(205003),	-- Ambre (PET!)
 						i(205002),	-- Blaise (PET!)
@@ -38,6 +28,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
 						i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
 					}),
+					i(203710),	-- Everburning Key
+					i(206043),	-- Fyrakk's Frenzy (TOY!)
 				},
 			}),
 			n(QUESTS, sharedData({ ["isWeekly"] = true, ["_drop"] = { "g" } }, {
@@ -48,12 +40,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ 55.6, 55.0, ZARALEK_CAVERN },
 					},
 					["isWeekly"] = IGNORED_VALUE,
-					-- ["maps"] = {
-					-- 	-- THE_WAKING_SHORES,
-					-- 	OHNAHRAN_PLAINS,
-					-- 	THE_AZURE_SPAN,
-					-- 	-- THALDRASZUS,
-					-- },
 				}),
 					-- Ohn'haran Plains --
 				q(74573, {	-- Aerial Support
@@ -82,7 +68,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(74775, {	-- Disciple of Fyrakk: Kretchenwrath
 					["provider"] = { "i", 204071 },	-- Head of Kretchenwrath
 					-- ["maps"] = { OHNAHRAN_PLAINS },
-					["isWeekly"] = IGNORED_VALUE,	-- didn't reset with weekly, maybe one-time?
+					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["g"] = {
 						i(204195),	-- Drake's Shadowflame Crest
 					}
@@ -107,7 +93,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(75239, {	-- Disciple of Fyrakk: Shadeisethal
 					["provider"] = { "i", 204683 },	-- Head of Shadeisethal
 					-- ["maps"] = { THE_AZURE_SPAN },
-					["isWeekly"] = IGNORED_VALUE,	-- didn't reset with weekly, maybe one-time?
+					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["g"] = {
 						i(204195),	-- Drake's Shadowflame Crest
 					}
@@ -127,111 +113,110 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			})),
 			n(RARES, sharedData({ ["isWeekly"] = true }, {
 				n(201673, {	-- Kretchenwrath
-					-- ["maps"] = { OHNAHRAN_PLAINS },
 					["g"] = {
 						i(204071),	-- Head of Kretchenwrath
 					},
 				}),
 				n(203411, {	-- Shadeisethal
-					-- ["maps"] = { THE_AZURE_SPAN },
 					["g"] = {
 						i(204683),	-- Head of Shadeisethal
 					},
 				}),
+				i(203683),	-- Ward of Fyrakk
 			})),
 			n(REWARDS, {
-				-- ["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
-				-- ["g"] = {
-					i(205258),	-- Everburning Shadowflame
-					i(200453),	-- Iskaara Tuskarr Insignia
-					i(200454),	-- Maruuk Centaur Insignia
-					i(204076),	-- Drake's Shadowflame Crest Fragments
-					n(BACK, {
-						i(204897),	-- Suffused Cloak
-						i(204898),	-- Suffused Drape
-						i(204896),	-- Suffused Greatcloak
-						i(204733),	-- Suffused Shawl
-					}),
-					filter(CLOTH, {
-						i(204784),	-- Suffused Cord
-						i(204786),	-- Suffused Cowl
-						i(204783),	-- Suffused Cuffs
-						i(204787),	-- Suffused Handwraps
-						i(204785),	-- Suffused Leggings
-						i(204788),	-- Suffused Sandals
-						i(204758),	-- Suffused Shoulderpads
-						i(204789),	-- Suffused Vestment
-					}),
-					filter(FINGER, {
-						i(204735),	-- Suffused Band
-						i(204746),	-- Suffused Loop
-						i(204745),	-- Suffused Signet
-					}),
-					filter(LEATHER, {
-						i(204777),	-- Suffused Bindings
-						i(204779),	-- Suffused Breeches
-						i(204759),	-- Suffused Epaulets
-						i(204781),	-- Suffused Grips
-						i(204780),	-- Suffused Helm
-						i(204778),	-- Suffused Sash
-						i(204760),	-- Suffused Vest
-						i(204782),	-- Suffused Waders
-					}),
-					filter(MAIL, {
-						i(204769),	-- Suffused Bracers
-						i(204776),	-- Suffused Chainmail
-						i(204770),	-- Suffused Cinch
-						i(204773),	-- Suffused Coif
-						i(204772),	-- Suffused Greaves
-						i(204774),	-- Suffused Grips
-						i(204771),	-- Suffused Shoulderguards
-						i(204775),	-- Suffused Striders
-					}),
-					filter(NECK_F, {
-						i(204732),	-- Suffused Choker
-					}),
-					filter(PLATE, {
-						i(204761),	-- Suffused Armplates
-						i(204767),	-- Suffused Breastplate
-						i(204762),	-- Suffused Girdle
-						i(204765),	-- Suffused Gauntlets
-						i(204768),	-- Suffused Helm
-						i(204764),	-- Suffused Legguards
-						i(204763),	-- Suffused Mantle
-						i(204766),	-- Suffused Sabatons
-					}),
-					filter(TRINKET_F, {
-						i(204901),	-- Firecaller's Focus
-					}),
-					n(WEAPONS, {
-						i(204757),	-- Suffused Barrier
-						i(204748),	-- Suffused Blade
-						i(204742),	-- Suffused Censer
-						i(204743),	-- Suffused Cleaver
-						i(204740),	-- Suffused Cudgel
-						i(204747),	-- Suffused Greatsword
-						i(204744),	-- Suffused Hacker
-						i(204739),	-- Suffused Halberd
-						i(204750),	-- Suffused Kris
-						i(204741),	-- Suffused Mallet
-						i(204754),	-- Suffused Polearm
-						i(204753),	-- Suffused Rifle
-						i(204756),	-- Suffused Scepter
-						i(204751),	-- Suffused Shank
-						i(204752),	-- Suffused Spellblade
-						i(204738),	-- Suffused Staff
-						i(204749),	-- Suffused Sword
-						i(204755),	-- Suffused Wand
-						i(204737),	-- Suffused Warglaive
-					}),
-				-- },
+				i(205258),	-- Everburning Shadowflame
+				i(200453),	-- Iskaara Tuskarr Insignia
+				i(200454),	-- Maruuk Centaur Insignia
+				i(204076),	-- Drake's Shadowflame Crest Fragments
+				n(BACK, {
+					i(204897),	-- Suffused Cloak
+					i(204898),	-- Suffused Drape
+					i(204896),	-- Suffused Greatcloak
+					i(204733),	-- Suffused Shawl
+				}),
+				filter(CLOTH, {
+					i(204784),	-- Suffused Cord
+					i(204786),	-- Suffused Cowl
+					i(204783),	-- Suffused Cuffs
+					i(204787),	-- Suffused Handwraps
+					i(204785),	-- Suffused Leggings
+					i(204788),	-- Suffused Sandals
+					i(204758),	-- Suffused Shoulderpads
+					i(204789),	-- Suffused Vestment
+				}),
+				filter(FINGER, {
+					i(204735),	-- Suffused Band
+					i(204746),	-- Suffused Loop
+					i(204745),	-- Suffused Signet
+				}),
+				filter(LEATHER, {
+					i(204777),	-- Suffused Bindings
+					i(204779),	-- Suffused Breeches
+					i(204759),	-- Suffused Epaulets
+					i(204781),	-- Suffused Grips
+					i(204780),	-- Suffused Helm
+					i(204778),	-- Suffused Sash
+					i(204760),	-- Suffused Vest
+					i(204782),	-- Suffused Waders
+				}),
+				filter(MAIL, {
+					i(204769),	-- Suffused Bracers
+					i(204776),	-- Suffused Chainmail
+					i(204770),	-- Suffused Cinch
+					i(204773),	-- Suffused Coif
+					i(204772),	-- Suffused Greaves
+					i(204774),	-- Suffused Grips
+					i(204771),	-- Suffused Shoulderguards
+					i(204775),	-- Suffused Striders
+				}),
+				filter(NECK_F, {
+					i(204732),	-- Suffused Choker
+				}),
+				filter(PLATE, {
+					i(204761),	-- Suffused Armplates
+					i(204767),	-- Suffused Breastplate
+					i(204762),	-- Suffused Girdle
+					i(204765),	-- Suffused Gauntlets
+					i(204768),	-- Suffused Helm
+					i(204764),	-- Suffused Legguards
+					i(204763),	-- Suffused Mantle
+					i(204766),	-- Suffused Sabatons
+				}),
+				filter(TRINKET_F, {
+					i(204901),	-- Firecaller's Focus
+				}),
+				n(WEAPONS, {
+					i(204757),	-- Suffused Barrier
+					i(204748),	-- Suffused Blade
+					i(204742),	-- Suffused Censer
+					i(204743),	-- Suffused Cleaver
+					i(204740),	-- Suffused Cudgel
+					i(204747),	-- Suffused Greatsword
+					i(204744),	-- Suffused Hacker
+					i(204739),	-- Suffused Halberd
+					i(204750),	-- Suffused Kris
+					i(204741),	-- Suffused Mallet
+					i(204754),	-- Suffused Polearm
+					i(204753),	-- Suffused Rifle
+					i(204756),	-- Suffused Scepter
+					i(204751),	-- Suffused Shank
+					i(204752),	-- Suffused Spellblade
+					i(204738),	-- Suffused Staff
+					i(204749),	-- Suffused Sword
+					i(204755),	-- Suffused Wand
+					i(204737),	-- Suffused Warglaive
+				}),
 			}),
 			n(TREASURES, {
 				o_repeated({	-- Secured Shipment
 					["cost"] = { { "i", 203710, 3 } },	-- 3x Everburning Key
-					-- ["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					["g"] = {
 						-- Rewards
+						filter(BATTLE_PETS, {
+							i(205003),	-- Ambre (PET!)
+							i(205002),	-- Blaise (PET!)
+						}),
 						i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
 						i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 						i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
@@ -249,6 +234,22 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 					},
 				}),
+				o(386547, {	-- Suffusion Mold
+					["cost"] = { { "i", 203683, 5 } },	-- 5x Ward of Fyrakk
+					["coords"] = { 
+						{ 75.0, 69.0, OHNAHRAN_PLAINS },
+						{ 55.0, 32.0, THE_AZURE_SPAN },
+					},
+					["g"] = {
+						n(203709, {	-- Forgemaster Algrin
+							i(203710),	-- Everburning Key
+						}),
+						n(201625, {	-- Forgemaster Kraglin
+							i(203710),	-- Everburning Key
+						}),
+					},
+				}),
+				
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
 				q(74501, {	-- Suffusion Camp: Cinderwind
@@ -259,16 +260,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			})),
 			n(ZONE_DROPS, {
-				-- ["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
-				-- ["g"] = {
-					i(203710, {	-- Everburning Key
-						["cost"] = { { "i", 203683, 5 } },	-- 5x Ward of Fyrakk
-					}),
-					i(203683, {	-- Ward of Fyrakk
-						["cost"] = { { "i", 203430, 5 } },	-- 5x Ward of Igira
-					}),
-					i(203430),	-- Ward of Igira
-				-- },
+				i(203683, {	-- Ward of Fyrakk
+					["cost"] = { { "i", 203430, 5 } },	-- 5x Ward of Igira
+				}),
+				i(203430),	-- Ward of Igira
 			}),
 		},
 	}),
