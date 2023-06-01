@@ -63,6 +63,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205192),	-- Volatile Crystal Shard
 					},
 				}),
+				n(203846, {	-- Elder Magma Serpent
+					--["coord"] = { x, y, ZARALEK_CAVERN },
+					--["questID"] = ,
+					["isWeekly"] = true,
+					["groups"] = {
+						i(205229),	-- Magma Serpent Lure
+					},
+				}),
 				n(204214, {	-- Monstrous Magmaclaw Snapper
 					["coord"] = { 43.7, 56.8, ZARALEK_CAVERN },
 					["questID"] = 75942,

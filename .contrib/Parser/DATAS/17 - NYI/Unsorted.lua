@@ -876,11 +876,6 @@ root(ROOTS.Unsorted, {
 			n(ARMOR, {
 				i(204087),	-- 10.1 Cloak Test Item
 				i(204736),	-- Heatbound Medallion
-				i(205193),	-- Sturdy Deepflayer Scute
-				i(205196),	-- Zaqali Hand Cauldron
-				i(205229),	-- Magma Serpent Lure
-				i(205262),	-- Magmaclaw Lure
-				i(205276),	-- Deepflayer Lure
 				-- Blue Dragonflight Questline
 				i(205955),	-- Azure Renewal Mantle
 				i(205956),	-- Azure Renewal Cape
@@ -926,7 +921,6 @@ root(ROOTS.Unsorted, {
 				i(205697),	-- Gelatinous Egg Mass
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205867),	-- Steaming Drake Heart
-				i(205873),	-- Foraged Rare Fungi
 				i(205875),	-- Massive Deepstrider Femur
 				i(205898),	-- Metal Key and shield disabled
 				i(205933),	-- Add Keystone Affix: Entangling
@@ -959,8 +953,6 @@ root(ROOTS.Unsorted, {
 				i(205047),	-- Shadowed Impact Buckler
 				i(205048),	-- Shadowed Impact Buckler
 				i(205049),	-- Shadowed Impact Buckler
-				-- New Skinning?
-				i(205413),	-- Obsidian Cobraskin
 				-- Proff knowledge (not treasure?)
 				i(205451),	-- Flawless Crystal Scale
 			}),
@@ -1059,7 +1051,6 @@ root(ROOTS.Unsorted, {
 				i(204349),	-- Bigger Wrench
 				i(204351),	-- Animated Crystal Shard
 				i(204407),	-- Rebel Detonator
-				i(204433),	-- Everburning Fireshard
 				i(204434),	-- Lava-Quenched Blade
 				i(204637),	-- Boulder Chunk
 				i(201956),	-- [DNT] Snakey Eyes

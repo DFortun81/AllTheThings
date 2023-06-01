@@ -2884,5 +2884,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(72340),	-- Triggered on unlocking alt spark skip
 
 		q(76126),	-- Completes alongside 75569
+
+		q(76128),	-- After turn in 75865 (Relic Rustler)
+		q(76129),	-- After turn in 75150 (Incandescence)
+		q(76137),	-- After turn in 75368 (Stones and Scales)
+		q(76138),	-- After turn in 75407 (Silk Scavenging)
 	}),
 }));

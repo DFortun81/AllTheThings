@@ -709,6 +709,7 @@ i(203396);	-- Displayed Armor Piece
 i(204184);	-- Ebon Eviscerator
 i(204803);	-- Echoed Lurker Flesh
 i(203394);	-- Elementally Charged Orb
+i(204433);	-- Everburning Fireshard
 i(205797);	-- Filthy Bundle
 i(203385);	-- Flamesight Rune
 i(205169);	-- Glimmer Mushroom
@@ -749,6 +750,7 @@ i(205869);	-- Aromatic Royal Jelly
 i(205868);	-- Cracked Chitin Carapace
 i(205457);	-- Delicate Crystal Shell
 i(205872);	-- Earthvermin Fluff
+i(205873);	-- Foraged Rare Fungi
 i(205465);	-- Gleaming Rock Viper Eye
 i(205870);	-- Glittering Spore Dust
 i(205871);	-- Glowing Underlight Wings

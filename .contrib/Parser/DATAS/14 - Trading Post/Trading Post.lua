@@ -31,6 +31,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["timeline"] = { ADDED_10_0_7 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
+		q(76103, {	-- Report to the Trading Post -- June 2023
+			["timeline"] = { ADDED_10_1_0 },
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+		}),
 	}),
 	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Travel Points in the month." }, {
 		n(AVAILABLE, {

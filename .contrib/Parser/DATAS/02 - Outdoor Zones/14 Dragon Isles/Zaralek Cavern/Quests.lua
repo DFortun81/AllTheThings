@@ -844,14 +844,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(73793),	-- Fly Through Azure Exit
 
 		q(76013),	-- After killing Dreadful Defender / cinematic during 'Stopping Sakareth' (questID 72930)
-		--q(75706),	-- Some Tracker vid Glimrogg
 
-
-		q(75708),	-- Completing A Race to Finish?
-
-
-		--q(75710),	-- Some Tracker vid Glimrogg / First Time?
-		--
 		-- Talk to npc during Respite (73041)
 		q(75425),	-- Tellywin Sharpfizzle
 		q(75424),	-- Chef Butterfingers

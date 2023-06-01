@@ -108,3 +108,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+	n(LOAMM_NIFFEN, {
+		q(75710),	-- After turn in 75662 (A Race To The Finish) / first race finished
+	}),
+}));

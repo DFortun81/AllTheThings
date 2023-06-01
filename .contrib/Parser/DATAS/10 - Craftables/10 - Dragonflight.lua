@@ -1708,7 +1708,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			-- Dragonriding -- Winding Slitherdrake
 			FirstCraft(75577, 408218, ADDED_10_1_0);	-- Winding Slitherdrake: Blue and Silver Armor
 			--FirstCraft(x, 408222, ADDED_10_1_0);	-- Winding Slitherdrake: Curved Chin Horn
-			--FirstCraft(x, 408223, ADDED_10_1_0);	-- Winding Slitherdrake: Small Finned Throat
+			FirstCraft(75581, 408223, ADDED_10_1_0);	-- Winding Slitherdrake: Small Finned Throat
 			--FirstCraft(x, 408221, ADDED_10_1_0);	-- Winding Slitherdrake: White Hair
 			--FirstCraft(x, 408220, ADDED_10_1_0);	-- Winding Slitherdrake: Yellow and Silver Armor
 			-- Artisan Curios
@@ -2699,6 +2699,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(193222),	-- Lustrous Scaled Hide+
 			i(193223),	-- Lustrous Scaled Hide++
 			i(193224),	-- Lustrous Scaled Hide+++
+			i(205413, {["timeline"]={ADDED_10_1_0}}),	-- Obisidian Cobraskin
 			i(193255),	-- Pristine Vorquin Horn
 			i(203417, {["timeline"]={ADDED_10_0_7}}),	-- Razor-Sharp Animal Bone
 			i(193208),	-- Resilient Leather+

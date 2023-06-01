@@ -201,9 +201,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(LOAMM_NIFFEN, {
 		q(76208),	-- Triggered at Renown 3
-		q(76209),	-- Triggered at Renown 3
-		q(69190),   -- Triggered after turn in 75742 (Drake Helms)
-        q(69574),   -- Triggered after turn in 75742 (Drake Helms)
-		q(76019),	-- Triggered after turn in 75730 (Slitherdrake Watching), Brown Hair was picked up as reward
+		q(76209),	-- Triggered at Renown 3 
+		q(76020),	-- Triggered at Renown 5
+		q(76019),	-- Triggered at Renown 13
+		q(69190),   -- Triggered at Renown 19
+        q(69574),   -- Triggered at Renown 19
 	}),
 }));
