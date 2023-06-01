@@ -193,6 +193,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				filter(TRINKET_F, {
 					i(204901),	-- Firecaller's Focus
+					i(204736),	-- Heatbound Medallion
 				}),
 				n(WEAPONS, {
 					i(204757),	-- Suffused Barrier

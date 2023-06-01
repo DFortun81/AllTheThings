@@ -875,7 +875,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(ARMOR, {
 				i(204087),	-- 10.1 Cloak Test Item
-				i(204736),	-- Heatbound Medallion
 				-- Blue Dragonflight Questline
 				i(205955),	-- Azure Renewal Mantle
 				i(205956),	-- Azure Renewal Cape
