@@ -2254,7 +2254,31 @@ end
 end
 
 -- Quest Completion Lib
-local PrintQuestInfo = function(questID, new, info)
+local PrintQuestInfo, CompletedQuests;
+do
+local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs;
+local MAX = 999999;
+local npcQuestsCache = {};
+app.IsNPCQuestGiver = function(self, npcID)
+	if not npcID then return false; end
+	if npcQuestsCache[npcID] ~= nil then
+		return npcQuestsCache[npcID];
+	else
+		local group = app.SearchForField("creatureID", npcID);
+		if group then
+			for _,v in pairs(group) do
+				if v.visible and v.questID then
+					npcQuestsCache[npcID] = true;
+					return true;
+				end
+			end
+		end
+
+		npcQuestsCache[npcID] = false;
+		return false;
+	end
+end
+PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local questRef = app.SearchForObject("questID", questID, "field");
 		questRef = (questRef and questRef[1]) or questRef;
@@ -2308,27 +2332,121 @@ local PrintQuestInfo = function(questID, new, info)
 		print("Quest",questChange,chatMsg,(info or ""));
 	end
 end
-local DirtyQuests, TotalQuests = {}, 0;
-local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
-	key = tonumber(key);
-	if value then
-		if not t[key] then
-			TotalQuests = TotalQuests + 1;
+local DirtyQuests = {};
+local RawQuests = {};
+local CompleteQuestSequence = {};
+CompletedQuests = setmetatable({}, {
+	__newindex = function(t, key, value)
+		key = tonumber(key);
+		if value then
+			if not RawQuests[key] then
+				RawQuests[key] = true;
+				tinsert(DirtyQuests, key);
+				ATTAccountWideData.Quests[key] = 1;
+				app.CurrentCharacter.Quests[key] = 1;
+				PrintQuestInfo(key);
+			end
+		else
+			RawQuests[key] = nil;
+			tinsert(DirtyQuests, key);
+			-- no need to actually set the key in the table since it's been marked as incomplete
+			-- and this meta function only triggers on NEW key assignments
+			PrintQuestInfo(key, false);
 		end
-		rawset(t, key, value);
-		tinsert(DirtyQuests, key);
-		ATTAccountWideData.Quests[key] = 1;
-		app.CurrentCharacter.Quests[key] = 1;
-		PrintQuestInfo(key);
-	elseif value == false then
-		TotalQuests = TotalQuests - 1;
-		tinsert(DirtyQuests, key);
-		-- no need to actually set the key in the table since it's been marked as incomplete
-		-- and this meta function only triggers on NEW key assignments
-		PrintQuestInfo(key, false);
+	end,
+	__index = function(t, key)
+		return RawQuests[key];
 	end
-end});
+});
 -- app.CompletedQuests = CompletedQuests;
+local function QueryCompletedQuests()
+	wipe(DirtyQuests);
+	local freshCompletes = C_QuestLog_GetAllCompletedQuestIDs();
+	-- sometimes Blizz pretends that 0 Quests are completed. How silly of them!
+	if not freshCompletes or #freshCompletes == 0 then
+		return;
+	end
+	-- app.PrintDebug("QueryCompletedQuests",#freshCompletes,#CompleteQuestSequence)
+	local oldReportSetting = app.Settings:GetTooltipSetting("Report:CompletedQuests");
+	-- check if Blizzard is being dumb / should we print a summary instead of individual lines
+	local questDiff = #freshCompletes - #CompleteQuestSequence;
+	local manyQuests;
+	if app.IsReady and oldReportSetting then
+		if questDiff > 50 then
+			manyQuests = true;
+			print(questDiff,"Quests Completed");
+		elseif questDiff < -50 then
+			manyQuests = true;
+			print(questDiff,"Quests Unflagged");
+		end
+	end
+	if manyQuests then
+		app.Settings:SetTooltipSetting("Report:CompletedQuests", false);
+	end
+
+	-- Dual Step tracking method
+	-- app.PrintDebug("DualStep")
+	local Ci, Ni = 1, 1;
+	local c, n = CompleteQuestSequence[Ci] or MAX, freshCompletes[Ni] or MAX;
+	while c ~= MAX or n ~= MAX do
+		-- same questID, complete and new, no change
+		if c == n then
+			Ci = Ci + 1;
+			Ni = Ni + 1;
+			c, n = CompleteQuestSequence[Ci] or MAX, freshCompletes[Ni] or MAX;
+		else
+			if c < n then
+				-- unflagged quest
+				CompletedQuests[c] = false;
+				Ci = Ci + 1;
+				c = CompleteQuestSequence[Ci] or MAX;
+			else
+				-- new completed quest
+				CompletedQuests[n] = true;
+				Ni = Ni + 1;
+				n = freshCompletes[Ni] or MAX;
+			end
+		end
+	end
+	CompleteQuestSequence = freshCompletes;
+	-- app.PrintDebugPrior("---")
+
+	if manyQuests then
+		app.Settings:SetTooltipSetting("Report:CompletedQuests", oldReportSetting);
+	end
+end
+app.QueryCompletedQuests = QueryCompletedQuests;
+local function RefreshQuestCompletionState(questID)
+	-- app.PrintDebug("RefreshQuestCompletionState",questID)
+	if questID then
+		wipe(DirtyQuests);
+		questID = tonumber(questID);
+		CompletedQuests[questID] = true;
+	else
+		QueryCompletedQuests();
+	end
+
+	-- update if any quests were even changed to ensure visible changes occur
+	if #DirtyQuests > 0 then
+		app.UpdateRawIDs("questID", DirtyQuests);
+	end
+	-- re-register the criteria update event
+	app:RegisterEvent("CRITERIA_UPDATE");
+	wipe(npcQuestsCache);
+	-- app.PrintDebugPrior("RefreshedQuestCompletionState")
+end
+app.RefreshQuestInfo = function(questID)
+	-- app.PrintDebug("RefreshQuestInfo",questID)
+	-- unregister criteria update until the quest refresh actually completes
+	app:UnregisterEvent("CRITERIA_UPDATE");
+	if questID then
+		RefreshQuestCompletionState(questID);
+	else
+		AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
+	end
+end
+end -- Quest Completion Lib
+
 -- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
 app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, checks)
 	local info = {
@@ -6361,6 +6479,71 @@ local function SearchForSpecificGroups(found, group, hashes)
 		end
 	end
 end
+-- Dynamically increments the progress for the parent heirarchy of each collectible search result
+local function UpdateSearchResults(searchResults)
+	-- app.PrintDebug("UpdateSearchResults",searchResults and #searchResults)
+	if searchResults then
+		-- Update all the results within visible windows
+		local hashes = {};
+		local found = {};
+		-- Directly update the Source groups of the search results, and collect their hashes for updates in other windows
+		for _,result in ipairs(searchResults) do
+			hashes[result.hash] = true;
+			tinsert(found, result);
+		end
+
+		-- loop through visible ATT windows and collect matching groups
+		-- app.PrintDebug("Checking Windows...")
+		for suffix,window in pairs(app.Windows) do
+			-- Collect matching groups from the updating groups from visible windows other than Main list
+			if window.Suffix ~= "Prime" and window:IsVisible() then
+				-- app.PrintDebug(window.Suffix)
+				for _,result in ipairs(searchResults) do
+					SearchForSpecificGroups(found, window.data, hashes);
+				end
+			end
+		end
+
+		-- apply direct updates to all found groups
+		local Update = app.DirectGroupUpdate;
+		-- app.PrintDebug("Updating",#found,"groups")
+		for _,o in ipairs(found) do
+			Update(o, true);
+		end
+		wipe(searchCache);
+	end
+	-- app.PrintDebug("UpdateSearchResults Done")
+end
+-- Pulls all cached fields for the field/id and passes the results into UpdateSearchResults
+local function UpdateRawID(field, id)
+	-- app.PrintDebug("UpdateRawID",field,id)
+	if field and id then
+		local groups, append, _cache = {}, app.ArrayAppend;
+		for _,cache in ipairs(DataCaches) do
+			_cache = cache[field];
+			append(groups, _cache and _cache[id]);
+			-- app.PrintDebug("Update in DataCache",cache.name,id)
+		end
+		UpdateSearchResults(groups);
+	end
+end
+app.UpdateRawID = UpdateRawID;
+-- Pulls all cached fields for the field/ids and passes the results into UpdateSearchResults
+local function UpdateRawIDs(field, ids)
+	-- app.PrintDebug("UpdateRawIDs",field,ids and #ids)
+	if field and ids and #ids > 0 then
+		local groups, append, _cache = {}, app.ArrayAppend;
+		for _,cache in ipairs(DataCaches) do
+			for _,id in ipairs(ids) do
+				_cache = cache[field];
+				append(groups, _cache and _cache[id]);
+				-- app.PrintDebug("Update in DataCache",cache.name,id)
+			end
+		end
+		UpdateSearchResults(groups);
+	end
+end
+app.UpdateRawIDs = UpdateRawIDs;
 -- Returns the first found cached group for a given SourceID
 -- NOTE: Do not use this function when the results are being passed into an Update afterward
 -- or if ATT data has not been loaded yet
@@ -6470,69 +6653,6 @@ local function SearchForMissingItemNames(group)
 		tinsert(arr, key);
 	end
 	return arr;
-end
--- Dynamically increments the progress for the parent heirarchy of each collectible search result
-local function UpdateSearchResults(searchResults)
-	-- app.PrintDebug("UpdateSearchResults",searchResults and #searchResults)
-	if searchResults then
-		-- Update all the results within visible windows
-		local hashes = {};
-		local found = {};
-		-- Directly update the Source groups of the search results, and collect their hashes for updates in other windows
-		for _,result in ipairs(searchResults) do
-			hashes[result.hash] = true;
-			tinsert(found, result);
-		end
-
-		-- loop through visible ATT windows and collect matching groups
-		-- app.PrintDebug("Checking Windows...")
-		for suffix,window in pairs(app.Windows) do
-			-- Collect matching groups from the updating groups from visible windows other than Main list
-			if window.Suffix ~= "Prime" and window:IsVisible() then
-				-- app.PrintDebug(window.Suffix)
-				for _,result in ipairs(searchResults) do
-					SearchForSpecificGroups(found, window.data, hashes);
-				end
-			end
-		end
-
-		-- apply direct updates to all found groups
-		local Update = app.DirectGroupUpdate;
-		-- app.PrintDebug("Updating",#found,"groups")
-		for _,o in ipairs(found) do
-			Update(o, true);
-		end
-		wipe(searchCache);
-	end
-	-- app.PrintDebug("UpdateSearchResults Done")
-end
--- Pulls all cached fields for the field/id and passes the results into UpdateSearchResults
-local function UpdateRawID(field, id)
-	-- app.PrintDebug("UpdateRawID",field,id)
-	if field and id then
-		local groups, append, _cache = {}, app.ArrayAppend;
-		for _,cache in ipairs(DataCaches) do
-			_cache = cache[field];
-			append(groups, _cache and _cache[id]);
-			-- app.PrintDebug("Update in DataCache",cache.name,id)
-		end
-		UpdateSearchResults(groups);
-	end
-end
--- Pulls all cached fields for the field/ids and passes the results into UpdateSearchResults
-local function UpdateRawIDs(field, ids)
-	-- app.PrintDebug("UpdateRawIDs",field,ids and #ids)
-	if field and ids and #ids > 0 then
-		local groups, append, _cache = {}, app.ArrayAppend;
-		for _,cache in ipairs(DataCaches) do
-			for _,id in ipairs(ids) do
-				_cache = cache[field];
-				append(groups, _cache and _cache[id]);
-				-- app.PrintDebug("Update in DataCache",cache.name,id)
-			end
-		end
-		UpdateSearchResults(groups);
-	end
 end
 app.SearchForLink = SearchForLink;
 
@@ -7173,29 +7293,6 @@ app.ToggleMainList = function()
 end
 app.RefreshSaves = RefreshSaves;
 end -- Refresh Functions
-
-
-local npcQuestsCache = {}
-function app.IsNPCQuestGiver(self, npcID)
-	if not npcID then return false; end
-	if npcQuestsCache[npcID] ~= nil then
-		return npcQuestsCache[npcID];
-	else
-		local group = app.SearchForField("creatureID", npcID);
-		if group then
-			for _,v in pairs(group) do
-				if v.visible and v.questID then
-					npcQuestsCache[npcID] = true;
-					return true;
-				end
-			end
-		end
-
-		npcQuestsCache[npcID] = false;
-		return false;
-	end
-end
-
 
 -- Lib Helpers
 (function()
@@ -8477,79 +8574,6 @@ end
 app.ShowIfReplayableQuest = function(data)
 	data.visible = C_QuestLog_IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
 	return true;
-end
-local CompletedKeys = {};
-local function QueryCompletedQuests()
-	wipe(DirtyQuests);
-	local freshCompletes = C_QuestLog_GetAllCompletedQuestIDs();
-	-- sometimes Blizz pretends that 0 Quests are completed. How silly of them!
-	if not freshCompletes or #freshCompletes == 0 then
-		return;
-	end
-	-- app.PrintDebug("QueryCompletedQuests",#freshCompletes,TotalQuests)
-	local oldReportSetting = app.Settings:GetTooltipSetting("Report:CompletedQuests");
-	-- check if Blizzard is being dumb / should we print a summary instead of individual lines
-	local questDiff = #freshCompletes - TotalQuests;
-	local manyQuests;
-	if app.IsReady and oldReportSetting then
-		if questDiff > 50 then
-			manyQuests = true;
-			print(questDiff,"Quests Completed");
-		elseif questDiff < -50 then
-			manyQuests = true;
-			print(questDiff,"Quests Unflagged");
-		end
-	end
-	if manyQuests then
-		app.Settings:SetTooltipSetting("Report:CompletedQuests", false);
-	end
-	wipe(CompletedKeys);
-	-- allow individual prints
-	for _,v in ipairs(freshCompletes) do
-		CompletedQuests[v] = true;
-		CompletedKeys[v] = true;
-	end
-	-- check for 'unflagged' questIDs (this seems to basically not impact lag at all... i hope)
-	for q,_ in pairs(CompletedQuests) do
-		if not CompletedKeys[q] then
-			CompletedQuests[q] = nil;	-- delete the key
-			CompletedQuests[q] = false;	-- trigger the metatable function
-		end
-	end
-	if manyQuests then
-		app.Settings:SetTooltipSetting("Report:CompletedQuests", oldReportSetting);
-	end
-end
-app.QueryCompletedQuests = QueryCompletedQuests;
-local function RefreshQuestCompletionState(questID)
-	-- app.PrintDebug("RefreshQuestCompletionState",questID)
-	if questID then
-		wipe(DirtyQuests);
-		questID = tonumber(questID);
-		CompletedQuests[questID] = true;
-	else
-		QueryCompletedQuests();
-	end
-
-	-- update if any quests were even changed to ensure visible changes occur
-	if #DirtyQuests > 0 then
-		UpdateRawIDs("questID", DirtyQuests);
-		wipe(searchCache);
-	end
-	-- re-register the criteria update event
-	app:RegisterEvent("CRITERIA_UPDATE");
-	wipe(npcQuestsCache);
-	-- app.PrintDebugPrior("RefreshedQuestCompletionState")
-end
-app.RefreshQuestInfo = function(questID)
-	-- app.PrintDebug("RefreshQuestInfo",questID)
-	-- unregister criteria update until the quest refresh actually completes
-	app:UnregisterEvent("CRITERIA_UPDATE");
-	if questID then
-		RefreshQuestCompletionState(questID);
-	else
-		AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
-	end
 end
 
 -- Quest Objective Lib
