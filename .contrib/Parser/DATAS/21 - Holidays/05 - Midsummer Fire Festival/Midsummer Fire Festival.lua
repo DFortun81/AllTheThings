@@ -130,6 +130,7 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
+	
 	i(116439, {	-- Blazing Cindercrawler (PET!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { "added 6.0.1.18594" },
@@ -145,6 +146,10 @@ local MERCHANT_GROUPS = {
 	i(116435, {	-- Cozy Bonfire (TOY!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { "added 6.0.1.18594" },
+	}),
+	i(116435, {	-- Flamin' Ring of Flashiness (TOY!)
+		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
+		["timeline"] = { "added 10.1.0.00000" },
 	}),
 	i(166746, {	-- Fire Eater's Hearthstone (TOY!)
 		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
