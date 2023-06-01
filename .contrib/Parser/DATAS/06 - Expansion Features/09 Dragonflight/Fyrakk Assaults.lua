@@ -110,6 +110,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 203604 },	-- Old Grimtusk
 					["coord"] = { 58.4, 33.4, THE_AZURE_SPAN },
 				}),
+				q(75382, {	-- Portal Combat
+					["provider"] = { "n", 203520 },	-- Stellagosa
+					["coord"] = { 57.9, 34.5, THE_AZURE_SPAN },
+				}),
+				q(75374, {	-- To Defend the Span
+					["provider"] = { "n", 203603 },	-- Brena
+					["coord"] = { 58.6, 34.3, THE_AZURE_SPAN },
+				}),
 			})),
 			n(RARES, sharedData({ ["isWeekly"] = true }, {
 				n(201673, {	-- Kretchenwrath
