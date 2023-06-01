@@ -958,12 +958,6 @@ root(ROOTS.Unsorted, {
 			n(PVP, {
 				i(204179),	-- Medal of Honor
 				i(204180),	-- Medal of Honor
-				i(204186),	-- Greater Trophy of Conquest
-				i(204187),	-- Trophy of Conquest
-				i(204188),	-- Lesser Trophy of Conquest
-				i(204189),	-- Greater Crest of Honor
-				i(204190),	-- Crest of Honor
-				i(204191),	-- Lesser Crest of Honor
 				--
 				i(205798),	-- Pauldrons of the Onyx Crucible
 				i(205799),	-- Legplates of the Onyx Crucible

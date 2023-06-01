@@ -626,9 +626,8 @@ i(203420, 400270);	-- Draconic Suppression Powder
 -- ITEM --
 i(204695, 405879);	-- Cauldron of Extracted Putrescence
 i(204696, 406106);	-- Draconic Phial Cauldron
+i(204984, 405832);	-- Stinky Bright Potion
 i(204631, 405847);	-- Transmute: Dracothyst
 -- DISCOVERY --
 -- Potion --
 i(0, 405832);	-- Stinky Bright Potion
--- NYI --
-i(204984, 0);	-- Recipe: Stinky Bright Potion
