@@ -9571,8 +9571,9 @@ local PetIDSpeciesIDHelper = setmetatable({}, {
 		return speciesID;
 	end
 });
-local function RefreshCollectedBattlePets()
+app.RefreshFunctions.RefreshCollectedBattlePets = function()
 	-- app.PrintDebug("RCBP")
+	wipe(CollectedSpeciesHelper);
 	local petID, speciesID;
 	local totalPets = C_PetJournal.GetNumPets();
 	for i=1,totalPets do
@@ -9694,7 +9695,6 @@ local BasePetType = app.BaseObjectFields(fields, "BasePetType");
 app.CreatePetType = function(id, t)
 	return setmetatable(constructor(id, t, "petTypeID"), BasePetType);
 end
-RefreshCollectedBattlePets();
 end	-- Battle Pet Lib
 
 -- Category Lib

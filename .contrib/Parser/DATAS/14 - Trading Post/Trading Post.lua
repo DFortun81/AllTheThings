@@ -71,7 +71,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		n(AVAILABLE, {
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(118515),	-- Cindermane Charger (MOUNT!)
-				i(206976),	-- Royal Swarmer's Reins (MOUNT!)
+				i(206976, {	-- Royal Swarmer's Reins (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 800 }, },
+				}),
 			})),
 			filter(BATTLE_PETS, {
 				i(190604, {	-- Buzzworth (PET!)
