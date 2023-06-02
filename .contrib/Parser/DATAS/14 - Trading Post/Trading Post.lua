@@ -75,7 +75,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			})),
 			filter(BATTLE_PETS, {
 				i(190604, {	-- Buzzworth (PET!)
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
 				}),
 			}),
 			filter(COSMETIC, {
