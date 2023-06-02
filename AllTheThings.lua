@@ -13698,9 +13698,12 @@ local function CacheInfo(t, field)
 		local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
 		-- app.PrintDebug("tier cache patch ID",id,tierID,patch_decimal,patch,rev)
 		_t.name = tostring(tierID).."."..tostring(patch).."."..tostring(rev);
-	else
-		-- only use API for name if not set from locale
-		_t.name = _t.name or EJ_GetTierInfo(tierID);
+	elseif not _t.name then
+		-- only use API for name if not set from locale (this throws errors randomly for no reason, but not consistently)
+		local success, name = pcall(EJ_GetTierInfo, tierID);
+		if success then
+			_t.name = name;
+		end
 	end
 	if field then return _t[field]; end
 end
