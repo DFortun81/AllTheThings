@@ -3152,7 +3152,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["crs"] = {
+						-- #if BEFORE CATA
 						2344,	-- Dun Garok Mountaineer
+						-- #endif
 						14275,	-- Tamra Stormpike
 					},
 				}),
