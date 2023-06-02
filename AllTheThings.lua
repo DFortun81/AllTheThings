@@ -15068,10 +15068,10 @@ local function CreateMinimapButton()
 
 	-- Create the Button Texture
 	local oldtexture = button:CreateTexture(nil, "BACKGROUND");
-	oldtexture:SetPoint("CENTER", 0, 0);
+	oldtexture:SetPoint("CENTER", 1, 0);
 	oldtexture:SetTexture(L["LOGO_SMALL"]);
 	oldtexture:SetSize(21, 21);
-	oldtexture:SetTexCoord(0,1,0,1);
+	oldtexture:SetTexCoord(0.1,0.9,0.1,0.9);
 	button.oldtexture = oldtexture;
 
 	-- Create the Button Tracking Border
