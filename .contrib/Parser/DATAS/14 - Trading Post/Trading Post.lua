@@ -18,9 +18,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["races"] = HORDE_ONLY,
 		}),
 		q(72681, {	-- Report to the Trading Post -- February & March 2023, also cross-completed after 'Tour the Trading Post' (questID 66858 & 66959)
-			["timeline"] = { ADDED_10_0_5, REMOVED_10_0_7 },
+			["timeline"] = { ADDED_10_0_5 },
+			["u"] = REMOVED_FROM_GAME,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isMonthly"] = true,
 		}),
 		q(75833, {	-- Report to the Trading Post -- April 2023
 			["timeline"] = { ADDED_10_0_7 },
@@ -29,6 +29,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		}),
 		q(76159, {	-- Report to the Trading Post -- May 2023
 			["timeline"] = { ADDED_10_0_7 },
+			["u"] = REMOVED_FROM_GAME,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76103, {	-- Report to the Trading Post -- June 2023
@@ -94,13 +95,20 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190554),	-- Helarjar Berserker Pauldrons
 					},
 				}),
+				i(202178, {	-- Ensemble: Vagabond's Carrot Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(202177),	-- Vagabond's Carrot Cape
+						i(202176),	-- Vagabond's Carrot Hood
+					},
+				}),
 				-- i(, {	-- Ensemble: Vagabond's Crimson Trappings	-- spellID 368272
 				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				-- 	["g"] = {
-						i(190827),	-- Vagabond's Crimson Cape
-						i(190828),	-- Vagabond's Crimson Hood
+						-- i(190827),	-- Vagabond's Crimson Cape
+						-- i(190828),	-- Vagabond's Crimson Hood
 				-- 	},
-				i(202178, {	-- Ensemble: Wanderer's Carrot Trappings
+				i(202179, {	-- Ensemble: Wanderer's Carrot Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
 						i(202175),	-- Wanderer's Carrot Cloak
@@ -522,13 +530,6 @@ root(ROOTS.NeverImplemented, {
 						i(190572),	-- Vagabond's Azure Hood
 					},
 				}),
-				i(202178, {	-- Ensemble: Vagabond's Carrot Threads
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(202177),	-- Vagabond's Carrot Cape
-						i(202176),	-- Vagabond's Carrot Hood
-					},
-				}),
 				-- }),
 				-- i(, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
 				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
@@ -636,7 +637,6 @@ root(ROOTS.NeverImplemented, {
 				i(189869),	-- Distinguished Warcloak
 				i(190068),	-- Emerald Drape
 				i(67108),	-- Lord Crowley's Old Spectacles
-				i(190696),	-- Magister's Jeweled Drape
 				i(190201),	-- Sin'dorei Assassin's Shroud
 			}),
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{

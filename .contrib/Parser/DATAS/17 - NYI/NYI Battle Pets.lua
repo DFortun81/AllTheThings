@@ -940,9 +940,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["modelID"] = 105429,
 				}),
 				-- With SpeciesID Attached
-				i(190604, {	-- Buzzworth (PET!)
-					["modelID"] = 111370,
-				}),
 				i(190176, {	-- Drazka'zet the Wrathful (PET!)
 					["modelID"] = 105301,
 				}),

@@ -1616,6 +1616,7 @@ i(205197, 408627);	-- Igneous Shalewing
 i(204798, 406637);	-- Inferno Armoredon
 i(205207, 408655);	-- Morsel Sniffer
 i(205233, 408977);	-- Obsidian Gladiator's Slitherdrake
+i(206976, 414986);	-- Royal Swarmer
 i(192779, 374138);	-- Seething Slug
 i(205205, 408649);	-- Shadowflame Shalewing
 i(191838, 371176);	-- Subterranean Magmammoth

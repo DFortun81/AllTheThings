@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 500 },
 								},
-							}),							
+							}),
 							i(206265, {	-- Scalewarden's Sabre
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 400 },
