@@ -52,7 +52,7 @@ IsRetrieving = function(s)
 		or s == RETRIEVING_DATA
 		or s == RETRIEVING_ITEM_INFO
 		or s:find(RETRIEVING)
-		or s:find("%[%]");
+		or s:find("^%[%]");
 end
 end	-- Retrieving Data Locals
 local ALLIANCE_ONLY = {
@@ -7646,8 +7646,8 @@ end	-- Common Wrapper Types
 -- Quest Lib
 -- Quests first because a lot of other Thing libs use Quest logic
 (function()
-local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_GetAllCompletedQuestIDs,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog_GetQuestTagInfo =
-	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.GetAllCompletedQuestIDs,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog.GetQuestTagInfo;
+local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog_GetQuestTagInfo =
+	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog.GetQuestTagInfo;
 local GetSpellInfo,math_floor =
 	  GetSpellInfo,math.floor;
 local Search = app.SearchForObject;
@@ -24143,88 +24143,6 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			return true;
 		elseif cmd == "unsorted" then
 			app:GetWindow("Unsorted"):Toggle();
-			return true;
-		elseif cmd == "harvest12345" then
-			StartCoroutine("Harvesting", function()
-				print("Harvesting...");
-				local totalItems = 200000;
-				local itemsPerYield = 25;
-				local counts = {};
-				local items = GetDataMember("ItemDB", {});
-				for itemID=1,totalItems do
-					tinsert(counts, {itemID=itemID,retries=0});
-				end
-				local slots = {
-					["INVTYPE_AMMO"] = INVSLOT_AMMO;
-					["INVTYPE_HEAD"] = INVSLOT_HEAD;
-					["INVTYPE_NECK"] = INVSLOT_NECK;
-					["INVTYPE_SHOULDER"] = INVSLOT_SHOULDER;
-					["INVTYPE_BODY"] = INVSLOT_BODY;
-					["INVTYPE_CHEST"] = INVSLOT_CHEST;
-					["INVTYPE_ROBE"] = INVSLOT_CHEST;
-					["INVTYPE_WAIST"] = INVSLOT_WAIST;
-					["INVTYPE_LEGS"] = INVSLOT_LEGS;
-					["INVTYPE_FEET"] = INVSLOT_FEET;
-					["INVTYPE_WRIST"] = INVSLOT_WRIST;
-					["INVTYPE_HAND"] = INVSLOT_HAND;
-					["INVTYPE_FINGER"] = INVSLOT_FINGER1;
-					["INVTYPE_TRINKET"] = INVSLOT_TRINKET1;
-					["INVTYPE_CLOAK"] = INVSLOT_BACK;
-					["INVTYPE_WEAPON"] = INVSLOT_MAINHAND;
-					["INVTYPE_SHIELD"] = INVSLOT_OFFHAND;
-					["INVTYPE_2HWEAPON"] = INVSLOT_MAINHAND;
-					["INVTYPE_WEAPONMAINHAND"] = INVSLOT_MAINHAND;
-					["INVTYPE_WEAPONOFFHAND"] = INVSLOT_OFFHAND;
-					["INVTYPE_HOLDABLE"] = INVSLOT_OFFHAND;
-					["INVTYPE_RANGED"] = INVSLOT_RANGED;
-					["INVTYPE_THROWN"] = INVSLOT_RANGED;
-					["INVTYPE_RANGEDRIGHT"] = INVSLOT_RANGED;
-					["INVTYPE_RELIC"] = INVSLOT_RANGED;
-					["INVTYPE_TABARD"] = INVSLOT_TABARD;
-					["INVTYPE_BAG"] = CONTAINER_BAG_OFFSET;
-					["INVTYPE_QUIVER"] = CONTAINER_BAG_OFFSET;
-				};
-				while #counts > 0 do
-					for i=math.min(#counts,itemsPerYield),1,-1 do
-						local o = counts[i];
-						local itemID = o.itemID;
-						local _, itemType, itemSubType, itemEquipLoc, icon, itemClassID, itemSubClassID = GetItemInfoInstant(itemID);
-						if itemType then
-							local info = {};
-							info.itemID = itemID;
-							if itemClassID then info.class = itemClassID; end
-							if itemSubClassID then info.subclass = itemSubClassID; end
-							if itemEquipLoc then info.inventoryType = slots[itemEquipLoc]; end
-
-							-- Extra information
-							local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, isCraftingReagent = GetItemInfo(itemID);
-							local spellName, spellID = GetItemSpell(itemID);
-							if itemName then
-								info.name = itemName;
-								if expacID then info.expacID = expacID; end
-								if itemMinLevel then info.lvl = itemMinLevel; end
-								if itemRarity then info.q = itemRarity; end
-								if itemLevel then info.ilvl = itemLevel; end
-								if bindType then info.b = bindType; end
-								if spellID then info.spellID = spellID; end
-								items[itemID] = info;
-								print("Added item ", itemID, itemName);
-								o.retries = o.retries + 100;
-							else
-								o.retries = o.retries + 1;
-							end
-						else
-							o.retries = o.retries + 1;
-						end
-						if o.retries > 5 then
-							table.remove(counts, i);
-						end
-					end
-					print((totalItems - #counts) .. " / " .. totalItems);
-					coroutine.yield();
-				end
-				print("Harvest Done.");
-			end);
 			return true;
 		elseif strsub(cmd, 1, 4) == "mini" then
 			app:ToggleMiniListForCurrentZone();
