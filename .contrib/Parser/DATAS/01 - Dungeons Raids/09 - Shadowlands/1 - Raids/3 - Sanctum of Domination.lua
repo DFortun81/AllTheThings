@@ -158,7 +158,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				}),
 				ach(15110),		-- Dominating the Catwalk
 				-- Fated
-				ach(15667, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Fate of Domination
+				ach(15667,	-- Fate of Domination
+				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
 					crit(1, { -- The Tarragrue
 						["_encounter"] = { 2435, LFR_RAID },
 					}),
@@ -190,7 +191,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				})),
-				ach(15668, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of Domination
+				ach(15668,	-- Heroic: Fate of Domination
+				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
 					crit(1, { -- The Tarragrue
 						["_encounter"] = { 2435, HEROIC_RAID },
 					}),
@@ -200,11 +202,11 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 					crit(3, { -- The Nine
 						["_encounter"] = { 2439, HEROIC_RAID },
 					}),
-					crit(4, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, HEROIC_RAID },
-					}),
-					crit(5, { -- Soulrender Dormazain
+					crit(4, { -- Soulrender Dormazain
 						["_encounter"] = { 2445, HEROIC_RAID },
+					}),
+					crit(5, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, HEROIC_RAID },
 					}),
 					crit(6, { -- Painsmith Raznal
 						["_encounter"] = { 2443, HEROIC_RAID },
@@ -222,7 +224,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						["_encounter"] = { 2441, HEROIC_RAID },
 					}),
 				})),
-				ach(15669, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of Domination
+				ach(15669,	-- Mythic: Fate of Domination
+				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
 					crit(1, { -- The Tarragrue
 						["_encounter"] = { 2435, MYTHIC_RAID },
 					}),
@@ -232,11 +235,11 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 					crit(3, { -- The Nine
 						["_encounter"] = { 2439, MYTHIC_RAID },
 					}),
-					crit(4, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, MYTHIC_RAID },
-					}),
-					crit(5, { -- Soulrender Dormazain
+					crit(4, { -- Soulrender Dormazain
 						["_encounter"] = { 2445, MYTHIC_RAID },
+					}),
+					crit(5, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, MYTHIC_RAID },
 					}),
 					crit(6, { -- Painsmith Raznal
 						["_encounter"] = { 2443, MYTHIC_RAID },

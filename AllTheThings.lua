@@ -8870,6 +8870,9 @@ end
 -- Achievement Criteria Lib
 local EJ_GetCreatureInfo = EJ_GetCreatureInfo;
 local function GetParentAchievementInfo(t, key)
+	-- if the Achievement data was already cached, but the criteria is still getting here
+	-- then the Achievement's data field was nil
+	if t._cached then return nil; end
 	local id = t.achievementID;
 	if not id then
 		app.PrintDebug("Missing achievementID for criteria reference",t.hash)
@@ -8881,6 +8884,8 @@ local function GetParentAchievementInfo(t, key)
 		t.classID = achievement.classID;
 		t.races = achievement.races;
 		t.r = achievement.r;
+		t.u = achievement.u;
+		t._cached = true;
 		return rawget(t, key);
 	end
 	DelayedCallback(app.report, 1, "Missing Referenced Achievement!",id);
@@ -9000,6 +9005,9 @@ local criteriaFields = {
 	end,
 	["r"] = function(t)
 		return GetParentAchievementInfo(t, "r");
+	end,
+	["u"] = function(t)
+		return GetParentAchievementInfo(t, "u");
 	end,
 };
 criteriaFields.collectible = fields.collectible;

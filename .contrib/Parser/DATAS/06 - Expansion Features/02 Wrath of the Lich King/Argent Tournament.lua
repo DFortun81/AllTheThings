@@ -2492,11 +2492,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				},
 				q(13634, {	-- The Black Knight of Silverpine?
 					["qg"] = 33417,	-- Crusader Rhydalla
-					["sourceQuests"] = {
-						13829,	-- Mastery Of Melee (H)
-						13839,	-- Mastery Of The Charge (H)
-						13838,	-- Mastery Of The Shield-Breaker (H)
-					},
+					["sourceQuest"] = 13668,	-- The Argent Tournament (H)
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
@@ -2512,11 +2508,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				}),
 				q(13633, {	-- The Black Knight of Westfall?
 					["qg"] = 33417,	-- Crusader Rhydalla
-					["sourceQuests"] = {
-						13828,	-- Mastery Of Melee (A)
-						13837,	-- Mastery Of The Charge (A)
-						13835,	-- Mastery Of The Shield-Breaker (A)
-					},
+					["sourceQuest"] = 13667,	-- The Argent Tournament (A)
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["maps"] = { WESTFALL },
 					["races"] = ALLIANCE_ONLY,
