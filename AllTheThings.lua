@@ -1622,11 +1622,13 @@ app.SourceSpecificFields = {
 -- Returns the 'most obtainable' unobtainable value from the provided set of unobtainable values
 	["u"] = function(...)
 		-- print("GetMostObtainableValue:")
-		local vals, max, check, new = {...}, -1;
+		local max, check, new = -1;
 		-- app.PrintTable(vals)
 		local reasons = L["UNOBTAINABLE_ITEM_REASONS"];
-		local record;
-		for _,u in pairs(vals) do
+		local record, u;
+		local vals = select("#", ...);
+		for i=1,vals do
+			u = select(i, ...);
 			-- missing u value means NOT unobtainable
 			if not u then return; end
 			record = reasons[u];
@@ -1648,8 +1650,10 @@ app.SourceSpecificFields = {
 	end,
 -- Returns the 'highest' Removed with Patch value from the provided set of `rwp` values
 	["rwp"] = function(...)
-		local vals, max = {...}, -1;
-		for _,rwp in pairs(vals) do
+		local max, rwp = -1;
+		local vals = select("#", ...);
+		for i=1,vals do
+			rwp = select(i, ...);
 			-- missing rwp value means NOT removed
 			if not rwp then return; end
 			-- track the highest rwp value, which is the furthest-future patch
@@ -1721,14 +1725,14 @@ local function MergeProperties(g, t, noReplace, clone)
 				if gk then
 					tk = t[k];
 					-- no value on merger
-					if not tk then
-						-- print("remove",k,gk,tk)
+					if tk == nil then
+						-- app.PrintDebug(g.hash,"remove",k,gk,tk)
 						g[k] = nil;
 					elseif f and type(f) == "function" then
 						-- two different values with a compare function
-						-- print("compare",k,gk,tk)
+						-- app.PrintDebug(g.hash,"compare",k,gk,tk)
 						g[k] = f(gk, tk);
-						-- print("result",gk)
+						-- app.PrintDebug(g.hash,"result",g[k])
 					end
 				end
 			end
@@ -12426,27 +12430,9 @@ app.SaveHarvestSource = function(data)
 		end
 	end
 end
--- Refines a set of items down to the most-accurate matches to the provided modItemID
--- The sets of items will be returned based on their respective match depth to the given modItemID
--- Ex: { [1] = { { ItemID }, { ItemID2 } }, [2] = { { ModID } }, [3] = { { BonusID } } }
-app.GroupBestMatchingItems = function(items, modItemID)
-	if not items or #items == 0 then return; end
-	-- print("refining",#items,"by depth to",modItemID)
-	-- local i, m, b = GetItemIDAndModID(modItemID);
-	local refinedBuckets, GetDepth, depth = {}, app.ItemMatchDepth;
-	for _,item in ipairs(items) do
-		depth = GetDepth(item, modItemID);
-		if depth then
-			-- print("added refined item",depth,item.modItemID,item.key,item.key and item[item.key])
-			if refinedBuckets[depth] then tinsert(refinedBuckets[depth], item)
-			else refinedBuckets[depth] = { item }; end
-		end
-	end
-	return refinedBuckets;
-end
 -- Returns the depth at which a given Item matches the provided modItemID
 -- 1 = ItemID, 2 = ModID, 3 = BonusID
-app.ItemMatchDepth = function(item, modItemID)
+local function ItemMatchDepth(item, modItemID)
 	if not item or not item.itemID then return; end
 	local i, m, b = GetItemIDAndModID(modItemID);
 	local depth = 0;
@@ -12460,6 +12446,24 @@ app.ItemMatchDepth = function(item, modItemID)
 		end
 	end
 	return depth;
+end
+-- Refines a set of items down to the most-accurate matches to the provided modItemID
+-- The sets of items will be returned based on their respective match depth to the given modItemID
+-- Ex: { [1] = { { ItemID }, { ItemID2 } }, [2] = { { ModID } }, [3] = { { BonusID } } }
+app.GroupBestMatchingItems = function(items, modItemID)
+	if not items or #items == 0 then return; end
+	-- print("refining",#items,"by depth to",modItemID)
+	-- local i, m, b = GetItemIDAndModID(modItemID);
+	local refinedBuckets,  depth = {};
+	for _,item in ipairs(items) do
+		depth = ItemMatchDepth(item, modItemID);
+		if depth then
+			-- print("added refined item",depth,item.modItemID,item.key,item.key and item[item.key])
+			if refinedBuckets[depth] then tinsert(refinedBuckets[depth], item)
+			else refinedBuckets[depth] = { item }; end
+		end
+	end
+	return refinedBuckets;
 end
 end)();
 
