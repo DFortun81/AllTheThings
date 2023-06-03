@@ -3423,6 +3423,7 @@ namespace ATT
                             else
                             {
                                 LogError("IllusionDB not in the correct format!");
+                                Console.WriteLine(Framework.CurrentFileName);
                                 Console.ReadLine();
                             }
                             break;
@@ -3443,6 +3444,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemDB not in the correct format!");
+                                        Console.WriteLine(Framework.CurrentFileName);
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3459,6 +3461,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemDB not in the correct format!");
+                                        Console.WriteLine(Framework.CurrentFileName);
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3467,6 +3470,7 @@ namespace ATT
                             else
                             {
                                 LogError("ItemDB not in the correct format!");
+                                Console.WriteLine(Framework.CurrentFileName);
                                 Console.ReadLine();
                             }
                         }
@@ -3487,6 +3491,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemDB not in the correct format!");
+                                        Console.WriteLine(Framework.CurrentFileName);
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3503,6 +3508,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemDB not in the correct format!");
+                                        Console.WriteLine(Framework.CurrentFileName);
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3511,6 +3517,7 @@ namespace ATT
                             else
                             {
                                 LogError("ItemDB not in the correct format!");
+                                Console.WriteLine(Framework.CurrentFileName);
                                 Console.ReadLine();
                             }
                         }
@@ -3524,6 +3531,7 @@ namespace ATT
                             else
                             {
                                 LogError($"{pair.Key} not in the correct format!");
+                                Console.WriteLine(Framework.CurrentFileName);
                                 Console.ReadLine();
                             }
                         }
@@ -3543,6 +3551,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("RecipeDB not in the correct format!");
+                                        Console.WriteLine(Framework.CurrentFileName);
                                         Console.WriteLine(ToJSON(recipeValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3559,6 +3568,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemDB not in the correct format!");
+                                        Console.WriteLine(Framework.CurrentFileName);
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3567,6 +3577,7 @@ namespace ATT
                             else
                             {
                                 LogError("ItemDB not in the correct format!");
+                                Console.WriteLine(Framework.CurrentFileName);
                                 Console.ReadLine();
                             }
                         }
@@ -3586,6 +3597,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemMountDB not in the correct format!");
+                                        Console.WriteLine(Framework.CurrentFileName);
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3594,6 +3606,7 @@ namespace ATT
                             else
                             {
                                 LogError("ItemMountDB not in the correct format!");
+                                Console.WriteLine(Framework.CurrentFileName);
                                 Console.ReadLine();
                             }
                             break;
@@ -3614,6 +3627,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemSpeciesDB not in the correct format!");
+                                        Console.WriteLine(Framework.CurrentFileName);
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3622,6 +3636,7 @@ namespace ATT
                             else
                             {
                                 LogError("ItemSpeciesDB not in the correct format!");
+                                Console.WriteLine(Framework.CurrentFileName);
                                 Console.ReadLine();
                             }
                             break;
@@ -3629,6 +3644,7 @@ namespace ATT
                     case "ItemToyDB":
                         {
                             LogError("ItemToyDB not supported. Please use 'ItemDBConditional' and parser.config to assign Toy objects.");
+                            Console.WriteLine(Framework.CurrentFileName);
                             Console.ReadLine();
                             break;
                         }
