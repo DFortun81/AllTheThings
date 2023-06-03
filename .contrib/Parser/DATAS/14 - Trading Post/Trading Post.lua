@@ -146,6 +146,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		}),
 		n(UNAVAILABLE, {
+			filter(ACHIEVEMENTS, {	--[[	
+				ach(9925, {	-- Friends In Places Yet Even Higher Than That
+					["provider"] = { "i", 118515 },	-- Cindermane Charger (MOUNT!)
+				}),	--]]
+			}),
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(54811),	-- Celestial Steed (MOUNT!)
 				i(189978),	-- Magenta Cloud Serpent (MOUNT!)
@@ -944,4 +949,83 @@ i(190199, {	-- Well-Worn Grimskull Cinch
 }),
 i(190613),	-- Savage Green Battle Turtle (MOUNT!)
 ),
+--------------------
+-- JUNE 2023 --
+--------------------
+ach(9925, {	-- Friends In Places Yet Even Higher Than That
+		["provider"] = { "i", 118515 },	-- Cindermane Charger (MOUNT!)
+	}),
+}),
+filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
+	i(118515),	-- Cindermane Charger (MOUNT!)
+	i(206976, {	-- Royal Swarmer's Reins (MOUNT!)
+		["cost"] = { { "c", TRADERS_TENDER, 800 }, },
+	}),
+})),
+filter(BATTLE_PETS, {
+	i(190604, {	-- Buzzworth (PET!)
+		["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+	}),
+}),
+filter(COSMETIC, {
+	i(190869, {	-- Emberstone Dress
+		["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+	}),
+	i(201230, {	-- Ensemble: Helarjar Berserker Warplate
+		["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+		["g"] = {
+i(190134),	-- Helarjar Berserker Warboots
+i(190135),	-- Helarjar Berserker Gauntlets
+i(190138),	-- Helarjar Berserker Horns
+i(190139),	-- Helarjar Berserker Greaves
+i(190550),	-- Helarjar Berserker Girdle
+i(190551),	-- Helarjar Berserker Bracers
+i(190553),	-- Helarjar Berserker Cuirass
+i(190554),	-- Helarjar Berserker Pauldrons
+		},
+	}),
+	i(202178, {	-- Ensemble: Vagabond's Carrot Threads
+		["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+		["g"] = {
+i(202177),	-- Vagabond's Carrot Cape
+i(202176),	-- Vagabond's Carrot Hood
+		},
+	}),
+	i(202179, {	-- Ensemble: Wanderer's Carrot Trappings
+		["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+		["g"] = {
+i(202175),	-- Wanderer's Carrot Cloak
+i(202174),	-- Wanderer's Carrot Scarf
+		},
+	}),
+	i(190690, {	-- Flame-Forged Fel Fang
+		["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+	}),
+	i(95474, {	-- Jewel of the Firelord
+		["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+	}),
+	i(190696, {	-- Magister's Jeweled Drape
+		["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+	}),
+	i(190443, {	-- Pustulent Demonheart Fetish
+		["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+	}),
+	i(190817, {	-- Sentinel's Tower Shield
+		["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+	}),
+	i(190433, {	-- Shifty Merchant's Tunic
+		["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+	}),
+	i(190447, {	-- Soulburner Bardiche
+		["cost"] = { { "c", TRADERS_TENDER, 550 }, },
+	}),
+	i(190821, {	-- Sunspire Battle Staff
+		["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+	}),
+	i(190431, {	-- Veteran Grunt's Chopper
+		["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+	}),
+filter(MOUNTS, {
+	i(190169),	-- Quawks (MOUNT!)
+}),
 --]]
