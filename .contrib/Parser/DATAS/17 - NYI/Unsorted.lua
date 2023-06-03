@@ -924,9 +924,6 @@ root(ROOTS.Unsorted, {
 				i(205867),	-- Steaming Drake Heart
 				i(205875),	-- Massive Deepstrider Femur
 				i(205898),	-- Metal Key and shield disabled
-				i(205933),	-- Add Keystone Affix: Entangling
-				i(205934),	-- Add Keystone Affix: Afflicted
-				i(205935),	-- Add Keystone Affix: Incorporeal
 				i(205939),	-- Iron Titan Key
 				i(205962),	-- Echoing Storm Flightstone
 				i(205970),	-- Azure Flightstone
@@ -1107,7 +1104,6 @@ root(ROOTS.Unsorted, {
 				i(206152),	-- Obsidian Gladiator's Shield
 				i(206153),	-- Obsidian Gladiator's Claws
 				i(206154),	-- Obsidian Gladiator's Bow
-				i(206158),	-- Add Keystone Affix: Shielding
 				i(206200),	-- Obsidian Equipment Chest
 				i(206270),	-- Volcanic Equipment Chest
 				-- New
