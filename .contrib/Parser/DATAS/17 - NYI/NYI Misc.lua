@@ -764,6 +764,14 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
 				i(203854),	-- Warblades of the Hakkari, Reborn
 			})),
+
+			-- 10.1.0
+			tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
+				i(205934),	-- Add Keystone Affix: Afflicted
+				i(205933),	-- Add Keystone Affix: Entangling
+				i(205935),	-- Add Keystone Affix: Incorporeal
+				i(206158),	-- Add Keystone Affix: Shielding
+			})),
 		}),
 	}),
 }));
