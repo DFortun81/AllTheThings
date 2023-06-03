@@ -1158,6 +1158,7 @@ i(201930);	-- H.E.L.P.
 i(204257);	-- Holoviewer: The Lady of Dreams
 i(204256);	-- Holoviewer: The Scarlet Queen
 i(204262);	-- Holoviewer: The Timeless One
+i(205908);	-- Inherited Wisdom of Senegos
 i(204687);	-- Obsidian Battle Horn
 i(202283);	-- Reading Glasses
 i(199900);	-- Secondhand Survey Tools

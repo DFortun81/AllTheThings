@@ -663,6 +663,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 							i(205957),	-- Azure Renewal Tabard
 						},
 					}),
+					i(205908, {	-- Inherited Wisdom of Senegos (TOY!)
+						["description"] = "You will find this in your mailbox upon completing this quest",
+					}),
 				},
 			}),
 		}),
