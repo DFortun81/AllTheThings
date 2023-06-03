@@ -2,8 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-_.PVP =
-{
+root(ROOTS.PVP, {
 	pvp(tier(CATA_TIER, {
 		n(RATED_BATTLEGROUNDS, {
 			["description"] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.|r",
@@ -4698,7 +4697,7 @@ _.PVP =
 			})),
 		}),
 	})),
-};
+});
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
@@ -4751,7 +4750,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(SEASON_VICIOUS, {
 			n(WEAPONS, {
@@ -4872,4 +4871,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));

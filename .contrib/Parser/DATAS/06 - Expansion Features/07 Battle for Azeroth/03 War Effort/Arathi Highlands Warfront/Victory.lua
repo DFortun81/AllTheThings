@@ -134,7 +134,7 @@ root(ROOTS.ExpansionFeatures,
 		}),
 	})
 );
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
 			n(ARMOR, {
@@ -333,4 +333,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));

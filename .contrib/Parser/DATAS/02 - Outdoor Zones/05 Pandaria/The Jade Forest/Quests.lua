@@ -1762,7 +1762,7 @@ root(ROOTS.HiddenQuestTriggers,{
 		q(29884),	-- Tracking Event: Spies Leave — triggers after turning in "The Pearlfin Situation" and "Road Rations" (questID 29883 & 29885)
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -1871,4 +1871,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(80981),	-- Scavenged Rotor Blade
 		}),
 	}),
-});
+}));

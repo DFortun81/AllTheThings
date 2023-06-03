@@ -1281,7 +1281,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 		}),
 	},
 })));
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -1306,4 +1306,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));

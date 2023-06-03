@@ -2,8 +2,7 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-_.Secrets =
-{
+root(ROOTS.Secrets, {
 	n(-801, {	-- Riddler's Mind-Worm
 		["description"] = "***'Show All Trackable Things' is required to see all the steps.***\n\nBelow is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",
 		["modelScale"] = .7,
@@ -88,4 +87,4 @@ _.Secrets =
 			}),
 		},
 	}),
-};
+});

@@ -2,8 +2,7 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-_.Secrets =
-{
+root(ROOTS.Secrets, {
 	-- TODO: missing coords... anyone not finished this?
 	n(-800, {	-- Lucid Nightmare
 		["description"] = "***Quest tracking enabled is required to see all the steps.***",
@@ -88,4 +87,4 @@ _.Secrets =
 			}),
 		},
 	}),
-};
+});

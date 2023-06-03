@@ -2,8 +2,7 @@
 --    G R O U P   F I N D E R   M O D U L E     --
 --------------------------------------------------
 
-_.GroupFinder =
-{
+root(ROOTS.GroupFinder, {
 	tier(TBC_TIER, {
 		i(156682, {	-- Otherworldy Satchel of Helpful Goods
 			i(51969),	-- Enumerated Shoulders
@@ -56,4 +55,4 @@ _.GroupFinder =
 			},
 		}),
 	}),
-};
+});

@@ -277,10 +277,10 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		},
 	}),
 }));
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		inst(72, {	-- The Bastion of Twilight
 			i(65099),	-- Tsanga's Helm
 		}),
 	}),
-});
+}));

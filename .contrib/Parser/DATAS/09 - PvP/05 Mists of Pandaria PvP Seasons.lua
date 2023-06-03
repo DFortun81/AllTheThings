@@ -2,8 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-_.PVP =
-{
+root(ROOTS.PVP, {
 	pvp(tier(MOP_TIER, {
 		n(SEASON_MALEVOLENT, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.0.0", "removed 5.2.0" }, }, {
@@ -10366,7 +10365,7 @@ _.PVP =
 			}),
 		}),
 	})),
-};
+});
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
@@ -10473,7 +10472,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- The items never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		n(SEASON_MALEVOLENT, {
 			n(WEAPONS, {
@@ -10656,4 +10655,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));

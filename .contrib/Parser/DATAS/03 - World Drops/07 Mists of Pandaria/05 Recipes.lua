@@ -2,8 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-_.WorldDrops =
-{
+root(ROOTS.WorldDrops, {
 	tier(MOP_TIER, {
 		filter(RECIPES, {
 			prof(BLACKSMITHING, {
@@ -88,4 +87,4 @@ _.WorldDrops =
 			}),
 		}),
 	}),
-};
+});

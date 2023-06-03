@@ -2,8 +2,7 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-_.Secrets =
-{
+root(ROOTS.Secrets, {
 	n(159783, {	-- Jenafur
 		["description"] = "***Debug Mode is required to see all the steps.***\n",
 		["g"] = {
@@ -62,4 +61,4 @@ _.Secrets =
 			}),
 		},
 	}),
-};
+});

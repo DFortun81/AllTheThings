@@ -14,15 +14,14 @@ local honorLevel10 = {};
 local honorLevel30 = {};
 local honorLevel50 = {};
 local honorLevel80 = {};
-_.PVP =
-{
+root(ROOTS.PVP, {
 	n(PVP_HONOR, {
 		ach(12894, { ["groups"] = honorLevel10 }),	-- Honor Level 10
 		ach(12902, { ["groups"] = honorLevel30 }),	-- Honor Level 30
 		ach(12904, { ["groups"] = honorLevel50 }),	-- Honor Level 50
 		ach(12907, { ["groups"] = honorLevel80 }),	-- Honor Level 80
 	}),
-};
+});
 local thisSideUpAch = {};
 local oldcl = cl;
 local prestige = {};
@@ -2579,7 +2578,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 		}),
 	}),
 })));
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(ARTIFACTS, {
 			n(WEAPONS, {
@@ -2627,4 +2626,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));

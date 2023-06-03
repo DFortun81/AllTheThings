@@ -2,8 +2,7 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-_.Secrets =
-{
+root(ROOTS.Secrets, {
 	n(111573, {	-- Kosumoth the Hungering
 		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nThis will show you how to unlock |cFFFFD700Kosumoth the Hungering|r, which has a world quest that awards the |cFFFFD700Hungering Claw|r pet or the |cFFFFD700Fathom Dweller|r mount.",
 		["g"] = {
@@ -105,4 +104,4 @@ _.Secrets =
 			}),
 		},
 	}),
-};
+});

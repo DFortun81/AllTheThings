@@ -2,8 +2,8 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-_.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its ModID3)
-{
+-- TODO: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe it's ModID3)
+root(ROOTS.PVP, {
 	pvp(tier(BFA_TIER, {
 		n(SEASON_DREAD, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {
@@ -2222,7 +2222,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			}),
 		}),
 	})),
-};
+});
 -- #if AFTER SHADOWLANDS
 root(ROOTS.HiddenQuestTriggers, {
 	tier(SL_TIER, {
@@ -2301,7 +2301,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- The items never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(SEASON_DREAD, {
 			n(ARMOR, {
@@ -2492,4 +2492,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));

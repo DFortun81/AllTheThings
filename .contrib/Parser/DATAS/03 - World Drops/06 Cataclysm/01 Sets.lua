@@ -2,8 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-_.WorldDrops =
-{
+root(ROOTS.WorldDrops, {
 	tier(CATA_TIER, {
 		n(SETS, {
 			i(55635),	-- Aboraz Bindings
@@ -264,4 +263,4 @@ _.WorldDrops =
 			i(55697),	-- Yojamba Waistband
 		}),
 	}),
-};
+});

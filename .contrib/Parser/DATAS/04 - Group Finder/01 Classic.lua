@@ -2,8 +2,7 @@
 --    G R O U P   F I N D E R   M O D U L E     --
 --------------------------------------------------
 
-_.GroupFinder =
-{
+root(ROOTS.GroupFinder, {
 	tier(CLASSIC_TIER, {
 		i(156683, {	-- Satchel of Helpful Goods [Level 7-50]
 			i(51982),			-- Earthbound Boots				— 01/14/22
@@ -104,4 +103,4 @@ _.GroupFinder =
 			},
 		}),
 	}),
-};
+});

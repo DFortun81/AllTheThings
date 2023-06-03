@@ -2,8 +2,7 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-_.Secrets =
-{
+root(ROOTS.Secrets, {
 	n(-802, {	-- Sun Darter Hatchling
 		["modelID"] = 74529,
 		["description"] = "***This secret requires you to have debug mode enabled to see the consumables/steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.*** \n\nIt also requires the battle pet Perky Pug from the Dungeons and Raids achievement Looking For Multitudes.\n\nEnjoy!\n\n!Note If coords are not plotting, you might need to make a standalone item, plot it, and then plot again from the main list.",
@@ -200,4 +199,4 @@ _.Secrets =
 			}),
 		},
 	}),
-};
+});

@@ -2,9 +2,7 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
---TODO: commenting out until secret is finished
-_.Secrets =
-{
+root(ROOTS.Secrets, {
 	n(-807, {	-- The Hivemind
 		["description"] = "Below is a detailed explanation on how to obtain The Hivemind mount.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",
 		["modelScale"] = 1.1,
@@ -292,4 +290,4 @@ _.Secrets =
 			}),
 		},
 	}),
-};
+});

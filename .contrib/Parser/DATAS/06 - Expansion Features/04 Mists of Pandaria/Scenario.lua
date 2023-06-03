@@ -660,7 +660,7 @@ root(ROOTS.ExpansionFeatures,
 		}),
 	})
 );
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		n(SCENARIOS, {
 			["icon"] = "Interface\\Icons\\pandarenracial_innerpeace",
@@ -749,4 +749,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			},
 		}),
 	}),
-});
+}));

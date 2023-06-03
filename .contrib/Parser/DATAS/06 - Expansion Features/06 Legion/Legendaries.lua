@@ -294,10 +294,10 @@ root(ROOTS.ExpansionFeatures,
 		}),
 	})
 );
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(LEGENDARIES, {
 			i(138489),	-- Kargath's Sacrified Hands
 		}),
 	}),
-});
+}));

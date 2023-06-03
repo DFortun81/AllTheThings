@@ -2,8 +2,7 @@
 --     F A C T I O N S     M O D U L E     --
 ---------------------------------------------
 
-_.Factions =
-{
+root(ROOTS.Factions, {
 	faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
 		["coords"] = {
 			{ 48.4, 75.5, ORGRIMMAR },	-- Goram
@@ -469,4 +468,4 @@ _.Factions =
 			}),
 		},
 	}),
-};
+});

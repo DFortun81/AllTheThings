@@ -2,8 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-_.WorldDrops =
-{
+root(ROOTS.WorldDrops, {
 	tier(CATA_TIER, {
 		n(WEAPONS, {
 			filter(ONE_HANDED_AXES, {
@@ -234,4 +233,4 @@ _.WorldDrops =
 			}),
 		}),
 	}),
-};
+});

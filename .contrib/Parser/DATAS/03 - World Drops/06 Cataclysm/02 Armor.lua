@@ -2,8 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-_.WorldDrops =
-{
+root(ROOTS.WorldDrops, {
 	tier(CATA_TIER, {
 		n(ARMOR, {
 			n(HEAD, {
@@ -203,4 +202,4 @@ _.WorldDrops =
 			i(68729),	-- Elementium Lockbox
 		}),
 	}),
-};
+});

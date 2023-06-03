@@ -2,8 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-_.PVP =
-{
+root(ROOTS.PVP, {
 	pvp(tier(LEGION_TIER, {
 		n(SEASON_VINDICTIVE, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3", "removed 7.1.0.23222" } }, {
@@ -12748,7 +12747,7 @@ _.PVP =
 			}),
 		}),
 	})),
-};
+});
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
@@ -12972,7 +12971,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(SEASON_FIERCE, {
 			filter(NECK_F, {
@@ -12980,4 +12979,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));

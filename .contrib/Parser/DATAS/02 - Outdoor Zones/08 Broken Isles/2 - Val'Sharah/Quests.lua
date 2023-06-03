@@ -760,10 +760,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(43447),	-- Vignette: Wraithtalon - secondary trigger for Wraithtalon rare in Val'sharah
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(-387,	{	-- Relics
 			i(130162),	-- Val-Sharah Artifact Gem #1 [Holy]
 		}),
 	}),
-});
+}));

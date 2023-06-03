@@ -2,8 +2,7 @@
 --    G R O U P   F I N D E R   M O D U L E     --
 --------------------------------------------------
 
-_.GroupFinder =
-{
+root(ROOTS.GroupFinder, {
 	tier(WOTLK_TIER, {
 		i(156688, {	-- Icy Satchel of Helpful Goods
 			i(112348),	-- Snow-Coated Cloth Cap*
@@ -89,4 +88,4 @@ _.GroupFinder =
 			},
 		}),
 	}),
-};
+});

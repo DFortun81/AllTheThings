@@ -2,8 +2,7 @@
 --    G R O U P   F I N D E R   M O D U L E     --
 --------------------------------------------------
 
-_.GroupFinder =
-{
+root(ROOTS.GroupFinder, {
 	tier(MOP_TIER, {
 		i(156698, {	-- Tranquil Satchel of Helpful Goods
 			["description"] = "Bag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
@@ -659,4 +658,4 @@ _.GroupFinder =
 			},
 		}),
 	}),
-};
+});

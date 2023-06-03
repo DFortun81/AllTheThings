@@ -4,8 +4,7 @@
 
 
 -- TODO: should eventually just be Dynamic because Factions should all be Sourced by Primary Location, not Type
-_.Factions =
-{
+root(ROOTS.Factions, {
 	faction(1168),	-- Guild
 	n(FACTION_HEADER_ALLIANCE, {
 		n(-6014, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- Cities
@@ -209,4 +208,4 @@ _.Factions =
 		faction(2163),	-- Tortollan Seekers
 		faction(2417),	-- Uldum Accord
 	}),
-};
+});

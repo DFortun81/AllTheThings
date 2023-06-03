@@ -2,8 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-_.WorldDrops =
-{
+root(ROOTS.WorldDrops, {
 	tier(MOP_TIER, {
 		n(SETS, {
 			i(82139),	-- Brewer's Cord
@@ -200,4 +199,4 @@ _.WorldDrops =
 			i(82248),	-- Yak Vest
 		}),
 	}),
-};
+});

@@ -259,10 +259,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(35414),	-- Lost City of the Tol'vir Reward Quest
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		inst(69, {	-- Lost City of the Tol'vir
 			i(56405),	-- Oasis Bracers (Lost City)
 		}),
 	}),
-});
+}));

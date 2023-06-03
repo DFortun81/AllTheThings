@@ -2,8 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-_.PVP =
-{
+root(ROOTS.PVP, {
 	---- This gear is listed here to reduce the bloat.
 	---- The actual sources include:
 	---- arena win&lose, rbg win&lose, bg win&lose, arena skirmish win&lose, ashran boxes win&lose, 13 ashran quests & broken bones work orders
@@ -9777,7 +9776,7 @@ _.PVP =
 			}),
 		}),
 	})),
-};
+});
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
@@ -9932,7 +9931,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- The items never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(SEASON_PRIMAL, {
 			n(WEAPONS, {
@@ -9969,4 +9968,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));

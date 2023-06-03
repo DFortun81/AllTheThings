@@ -2,8 +2,7 @@
 --    G R O U P   F I N D E R   M O D U L E     --
 --------------------------------------------------
 
-_.GroupFinder =
-{
+root(ROOTS.GroupFinder, {
 	tier(CATA_TIER, {
 		i(156689, {	-- Scorched Satchel of Helpful Goods (30 - 50)
 			["description"] = "Bag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
@@ -92,8 +91,8 @@ _.GroupFinder =
 			},
 		}),
 	}),
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+});
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(ARMOR, {
 			filter(MAIL, {
@@ -101,4 +100,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));
