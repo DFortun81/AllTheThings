@@ -877,11 +877,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(ARMOR, {
 				i(204087),	-- 10.1 Cloak Test Item
-				-- Blue Dragonflight Questline
-				i(205955),	-- Azure Renewal Mantle
-				i(205956),	-- Azure Renewal Cape
-				i(205957),	-- Azure Renewal Tabard
-				i(205958),	-- Ensemble: Azure Renewal Finery
 			}),
 			filter(ILLUSIONS, {
 				ill(6836),	-- Shadow Flame

@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["isWeekly"] = true,
 						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 2 } },
 						["g"] = {
-							i(204075),	-- Drake's Shadowflame Crest Fragment x5
+							i(204075),	-- Whelpling's Shadowflame Crest Fragment x5
 						}
 					}),
 					i(COVETED_BAUBLE, {

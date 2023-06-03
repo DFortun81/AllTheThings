@@ -1620,6 +1620,7 @@ i(206976, 414986);	-- Royal Swarmer
 i(192779, 374138);	-- Seething Slug
 i(205205, 408649);	-- Shadowflame Shalewing
 i(191838, 371176);	-- Subterranean Magmammoth
+i(206162, 407555);	-- Tarecgosa's Visage
 i(205246, 409034);	-- Vicious War Snail [A]
 i(205245, 409032);	-- Vicious War Snail [H]
 i(204361, 368893);	-- Winding Slitherdrake

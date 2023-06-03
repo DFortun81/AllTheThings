@@ -781,7 +781,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197099),	-- Highland Drake: Armor (DM!)
 			i(197095),	-- Highland Drake: Gold and White Armor (DM!)
 			i(197119),	-- Highland Drake: Helm (DM!)
-			i(197134),	-- Highland Drake: Spiked Legs (DM!)
 			i(197146),	-- Highland Drake: White Scales (DM!)
 		})),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
@@ -958,6 +957,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 			i(197120),	-- Highland Drake: Ornate Helm (DM!)
 			i(197109),	-- Highland Drake: Spiked Head (DM!)
+			i(197134),	-- Highland Drake: Spiked Legs (DM!)
 			i(197104),	-- Highland Drake: Tapered Chin (DM!)
 		}),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
