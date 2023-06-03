@@ -669,7 +669,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 			}),
 		}),
-		header(HEADERS.Quest, 73196, {	-- Tarecgosa's Rest
+		header(HEADERS.Quest, 73196, sharedData({ ["classes"] = { DRUID, EVOKER, MAGE, PRIEST, SHAMAN, WARLOCK }, }, {	-- Tarecgosa's Rest
 			q(73196, {	-- Tarecgosa's Rest
 				["provider"] = { "n", 190000 },	-- Kalecgos
 				["sourceQuests"] = {
@@ -707,7 +707,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(206162),	-- Tarecgosa's Visage (MOUNT!)
 				},
 			}),
-		}),
+		})),
 	})),
 })));
 
