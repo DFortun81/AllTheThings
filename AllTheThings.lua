@@ -9814,12 +9814,18 @@ app.BaseCharacterClass = app.BaseObjectFields(fields, "BaseCharacterClass");
 app.CreateCharacterClass = function(id, t)
 	return setmetatable(constructor(id, t, "classID"), app.BaseCharacterClass);
 end
+
+-- Unit Lib
 local unitFields = {
 	["key"] = function(t)
 		return "unit";
 	end,
 	["icon"] = function(t)
 		if t.classID then return classIcons[t.classID]; end
+	end,
+	["text"] = function(t)
+		-- name is already colorized, so don't re-colorize via BaseObjectDefaults.text
+		return t.name;
 	end,
 	["name"] = function(t)
 		local unit = t.unit;
@@ -9858,7 +9864,7 @@ local unitFields = {
 		return UnitClass(t.unit);
 	end,
 	["OnUpdate"] = function(t)
-		if t._OnUpdate then return; end
+		if t._OnUpdate then return t.BaseOnUpdate; end
 		t._OnUpdate = true;
 		local unit = t.unit;
 		-- If this is a user's character, grab some cached information
@@ -9872,11 +9878,12 @@ local unitFields = {
 					t.raceID = character.raceID;
 					t.race = C_CreatureInfo.GetRaceInfo(character.raceID).raceName;
 				end
-				t.name = app.TryColorizeName(t, character.name);
+				t.name = app.TryColorizeName(t, character.name).."-"..(character.realm or UNKNOWN);
 				t.level = character.lvl;
 				break;
 			end
 		end
+		return t.BaseOnUpdate;
 	end,
 };
 app.BaseUnit = app.BaseObjectFields(unitFields, "BaseUnit");
@@ -21109,6 +21116,9 @@ customWindowUpdates["Sync"] = function(self)
 		if not self.initialized then
 			self.initialized = true;
 
+			local function OnClick_IgnoreRightButton(row, button)
+				return button == "RightButton";
+			end
 			local function OnRightButtonDeleteCharacter(row, button)
 				if button == "RightButton" then
 					app:ShowPopupDialog("CHARACTER DATA: " .. (row.ref.text or RETRIEVING_DATA) .. L["CONFIRM_DELETE"],
@@ -21177,12 +21187,14 @@ customWindowUpdates["Sync"] = function(self)
 				['visible'] = true,
 				['back'] = 1,
 				['OnUpdate'] = app.AlwaysShowUpdate,
+				["OnClick"] = OnClick_IgnoreRightButton,
 				['g'] = {
 					{
 						['text'] = L["ADD_LINKED_CHARACTER_ACCOUNT"],
 						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
 						['description'] = L["ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP"],
 						['visible'] = true,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 						['OnClick'] = function(row, button)
 							app:ShowPopupDialogWithEditBox(L["ADD_LINKED_POPUP"], "", function(cmd)
 								if cmd and cmd ~= "" then
@@ -21192,13 +21204,16 @@ customWindowUpdates["Sync"] = function(self)
 							end);
 							return true;
 						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					-- Characters Section
 					{
 						['text'] = L["CHARACTERS"],
 						['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 						["description"] = L["SYNC_CHARACTERS_TOOLTIP"],
+						['visible'] = true,
+						['expanded'] = true,
+						['g'] = {},
+						["OnClick"] = OnClick_IgnoreRightButton,
 						['OnUpdate'] = function(data)
 							-- this forces a sort after the population update pass using the app.SortDefaults.Name sort function
 							app.SortGroupDelayed(data, "Name");
@@ -21209,6 +21224,7 @@ customWindowUpdates["Sync"] = function(self)
 										['datalink'] = guid,
 										['OnClick'] = OnRightButtonDeleteCharacter,
 										['OnTooltip'] = OnTooltipForCharacter,
+										["BaseOnUpdate"] = app.AlwaysShowUpdate,
 										['visible'] = true,
 									}));
 								end
@@ -21219,6 +21235,7 @@ customWindowUpdates["Sync"] = function(self)
 									['text'] = L["NO_CHARACTERS_FOUND"],
 									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 									['visible'] = true,
+									["OnClick"] = OnClick_IgnoreRightButton,
 									["OnUpdate"] = app.AlwaysShowUpdate,
 								});
 							end
@@ -21226,9 +21243,6 @@ customWindowUpdates["Sync"] = function(self)
 							BuildGroups(data);
 							return true;
 						end,
-						['visible'] = true,
-						['expanded'] = true,
-						['g'] = {},
 					},
 
 					-- Linked Accounts Section
@@ -21236,6 +21250,9 @@ customWindowUpdates["Sync"] = function(self)
 						['text'] = L["LINKED_ACCOUNTS"],
 						['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 						["description"] = L["LINKED_ACCOUNTS_TOOLTIP"],
+						['visible'] = true,
+						['g'] = {},
+						["OnClick"] = OnClick_IgnoreRightButton,
 						['OnUpdate'] = function(data)
 							data.g = {};
 							local charactersByName = {};
@@ -21252,7 +21269,7 @@ customWindowUpdates["Sync"] = function(self)
 										['datalink'] = playerName,
 										['OnClick'] = OnRightButtonDeleteLinkedAccount,
 										['OnTooltip'] = OnTooltipForLinkedAccount,
-										['OnUpdate'] = app.AlwaysShowUpdate,
+										["BaseOnUpdate"] = app.AlwaysShowUpdate,
 										['visible'] = true,
 									}));
 								elseif string.find("#", playerName) then
@@ -21285,13 +21302,13 @@ customWindowUpdates["Sync"] = function(self)
 									['text'] = L["NO_LINKED_ACCOUNTS"],
 									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 									['visible'] = true,
+									["OnClick"] = OnClick_IgnoreRightButton,
+									["OnUpdate"] = app.AlwaysShowUpdate,
 								});
 							end
 							BuildGroups(data, data.g);
 							return true;
 						end,
-						['visible'] = true,
-						['g'] = {},
 					},
 				}
 			};
