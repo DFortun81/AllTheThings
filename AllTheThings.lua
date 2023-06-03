@@ -15903,7 +15903,7 @@ local function Refresh(self)
 	if totalRowCount <= 0 then return; end
 
 	-- Fill the remaining rows up to the (visible) row count.
-	local container, rowCount, totalHeight, windowPad, minIndent = self.Container, 0, 0, 8;
+	local container, rowCount, totalHeight, windowPad, minIndent = self.Container, 0, 0, 0;
 	local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 
 	-- Ensure that the first row doesn't move out of position.
@@ -17512,6 +17512,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		scrollbar.back:SetAllPoints(scrollbar);
 		scrollbar:SetMinMaxValues(1, 1);
 		scrollbar:SetValueStep(1);
+		scrollbar:SetValue(1);
 		scrollbar:SetObeyStepOnDrag(true);
 		scrollbar.CurrentValue = 1;
 		scrollbar:SetWidth(16);
@@ -17529,12 +17530,12 @@ function app:GetWindow(suffix, parent, onUpdate)
 
 		-- The Row Container. This contains all of the row frames.
 		local container = CreateFrame("FRAME", nil, window);
-		container:SetPoint("TOPLEFT", window, "TOPLEFT", 0, -6);
-		container:SetPoint("RIGHT", scrollbar, "LEFT", 0, 0);
+		container:SetPoint("TOPLEFT", window, "TOPLEFT", 5, -5);
+		container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
 		container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
+		-- container:SetClipsChildren(true);
 		window.Container = container;
 		container.rows = {};
-		scrollbar:SetValue(1);
 		container:Show();
 
 		-- Allows the window to toggle whether it shows it is currently processing changes/updates
