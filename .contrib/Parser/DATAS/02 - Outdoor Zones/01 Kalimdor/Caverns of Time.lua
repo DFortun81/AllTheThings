@@ -93,6 +93,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66, 49.6, TANARIS },
 					-- #endif
 					["lvl"] = lvlsquish(66, 66, 15),
+					["isBreadcrumb"] = true,
 				})),
 			}),
 			-- #endif
