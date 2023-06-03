@@ -154,9 +154,7 @@ local HiddenAppearance = function(icon, t)
 	return header;
 end;
 
-_.ExpansionFeatures =
------------------------------------------------------
-{
+root(ROOTS.ExpansionFeatures,
 	tier(LEGION_TIER, {
 		n(ARTIFACTS, {
 			["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
@@ -2367,8 +2365,8 @@ _.ExpansionFeatures =
 				}),
 			},
 		}),
-	}),
-};
+	})
+);
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		-- Death Knight

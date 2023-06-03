@@ -2,8 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-_.ExpansionFeatures =
-{
+root(ROOTS.ExpansionFeatures,
 	tier(LEGION_TIER, {
 		n(LEGENDARIES, {
 			cl(DEMONHUNTER, {
@@ -293,8 +292,8 @@ _.ExpansionFeatures =
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID }
 			}),
 		}),
-	}),
-};
+	})
+);
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(LEGENDARIES, {

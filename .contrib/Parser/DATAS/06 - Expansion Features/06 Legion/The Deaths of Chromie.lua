@@ -2,8 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-_.ExpansionFeatures =
-{
+root(ROOTS.ExpansionFeatures,
 	tier(LEGION_TIER, {
 		m(897, {	-- Death's of Chromie Scenario
 			["lvl"] = 110,
@@ -384,8 +383,8 @@ _.ExpansionFeatures =
 				}),
 			},
 		}),
-	}),
-};
+	})
+);
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(47920),	-- Ensemble: Timewarden's Plate
@@ -409,7 +408,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47934),	-- Tracking Quest - kill Dregmar Runebrand
 		q(47937),	-- Tracking Quest - kill Iceshatter
 		q(47935),	-- Tracking Quest - kill Icefist
-	}),	
+	}),
 	tier(SL_TIER, {
 		qNYI(64652),	-- unknown reason in Chromie Scenario
 	}),

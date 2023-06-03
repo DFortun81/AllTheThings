@@ -2,8 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-_.ExpansionFeatures =
-{
+root(ROOTS.ExpansionFeatures,
 	tier(WOD_TIER, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 			n(BUILDINGS, {
@@ -252,8 +251,8 @@ _.ExpansionFeatures =
 				}),
 			}),
 		})),
-	}),
-};
+	})
+);
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		garrisonBuilding(141, {

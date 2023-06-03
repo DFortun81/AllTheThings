@@ -2,8 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-_.ExpansionFeatures =
-{
+root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
 			n(-253, {	-- Horde War Campaign
@@ -1579,8 +1578,8 @@ _.ExpansionFeatures =
 				},
 			}),
 		}),
-	}),
-};
+	})
+);
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(54316),	-- 7500/12000 Honored with Honorbound. unlock for storyline quests

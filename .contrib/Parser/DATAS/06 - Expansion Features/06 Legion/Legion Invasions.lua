@@ -2,8 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-_.ExpansionFeatures =
-{
+root(ROOTS.ExpansionFeatures,
 	tier(LEGION_TIER, {
 		n(-543, {	-- Broken Isles: Legion Invasions
 			["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
@@ -188,8 +187,8 @@ _.ExpansionFeatures =
 				}),
 			},
 		}),
-	}),
-};
+	})
+);
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(46964),	-- Assault Treasure - Azsuna
