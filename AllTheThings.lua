@@ -462,11 +462,13 @@ local function SortGroup(group, sortType, row, recur, conditionField)
 				end);
 			else
 				local sortA, sortB;
-				app.Sort(group.g, function(a, b)
-					sortA = a and tostring(a[sortType]);
-					sortB = b and tostring(b[sortType]);
-					return sortA < sortB;
-				end);
+				local sortFunc = app.SortDefaults[sortType] or
+					(sortType and function(a, b)
+						sortA = a and tostring(a[sortType]);
+						sortB = b and tostring(b[sortType]);
+						return sortA < sortB;
+					end) or nil;
+				app.Sort(group.g, sortFunc);
 			end
 			-- since this group was sorted, clear any SortInfo which may have caused it
 			group.SortInfo = nil;
@@ -485,11 +487,10 @@ local function SortGroup(group, sortType, row, recur, conditionField)
 end
 app.SortGroup = SortGroup;
 -- Allows defining SortGroup data which is only executed when the group is actually expanded
-local function SortGroupDelayed(group, sortType, row, recur, conditionField)
+app.SortGroupDelayed = function(group, sortType, row, recur, conditionField)
 	-- app.PrintDebug("Delayed Sort defined for",group.text)
 	group.SortInfo = { sortType, row, recur, conditionField };
 end
-app.SortGroupDelayed = SortGroupDelayed;
 end	-- Sorting Logic
 
 -- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
