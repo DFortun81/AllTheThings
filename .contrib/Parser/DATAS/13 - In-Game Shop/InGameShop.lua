@@ -431,15 +431,15 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(204879),	-- Waveborne Diplomat's Waders
 		})),
 		i(190216, {	-- Feathered Cowl of the Guardian
-			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.99999" },	-- Removed from store May 31
+			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.49801" },	-- Removed from store May 31
 			["description"] = "Will be available from Trading Post later in 2023.",
 		}),
 		i(190200, {	-- Feathered Drape of the Guardian
-			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.99999" },	-- Removed from store May 31
+			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.49801" },	-- Removed from store May 31
 			["description"] = "Will be available from Trading Post later in 2023.",
 		}),
 		i(190220, {	-- Standard of the Guardian
-			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.99999" },	-- Removed from store May 31
+			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.49801" },	-- Removed from store May 31
 			["description"] = "Will be available from Trading Post later in 2023.",
 		}),
 	}),
