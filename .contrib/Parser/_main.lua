@@ -2476,6 +2476,9 @@ flightpath = function(id, t)							-- Create a FLIGHT PATH Object
 end
 fp = flightpath;										-- Create a FLIGHT PATH Object (Alternative)
 filter = function(id, t)								-- Create a FILTER Object
+	if not id or id < 0 then
+		error("Used filter() with bad filter value "..(id or "")..". Did you mean to use n()?")
+	end
 	return struct("f", id, t);
 end
 f = filter;												-- Create a FILTER Object (Alternative)

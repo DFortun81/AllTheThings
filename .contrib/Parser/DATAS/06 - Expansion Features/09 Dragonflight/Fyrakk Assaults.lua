@@ -153,7 +153,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(204758),	-- Suffused Shoulderpads
 					i(204789),	-- Suffused Vestment
 				}),
-				filter(FINGER, {
+				filter(FINGER_F, {
 					i(204735),	-- Suffused Band
 					i(204746),	-- Suffused Loop
 					i(204745),	-- Suffused Signet
@@ -245,7 +245,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				o(386547, {	-- Suffusion Mold
 					["cost"] = { { "i", 203683, 5 } },	-- 5x Ward of Fyrakk
-					["coords"] = { 
+					["coords"] = {
 						{ 75.0, 69.0, OHNAHRAN_PLAINS },
 						{ 55.0, 32.0, THE_AZURE_SPAN },
 					},
@@ -258,7 +258,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 					},
 				}),
-				
+
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
 				q(74501, {	-- Suffusion Camp: Cinderwind

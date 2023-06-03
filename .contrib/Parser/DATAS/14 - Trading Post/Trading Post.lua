@@ -69,7 +69,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	})),
 	n(VENDORS, {
 		n(AVAILABLE, {
-			filter(ACHIEVEMENTS, {	
+			n(ACHIEVEMENTS, {
 				ach(9925, {	-- Friends In Places Yet Even Higher Than That
 					["provider"] = { "i", 118515 },	-- Cindermane Charger (MOUNT!)
 				}),
@@ -146,7 +146,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		}),
 		n(UNAVAILABLE, {
-			filter(ACHIEVEMENTS, {	--[[	
+			n(ACHIEVEMENTS, {	--[[
 				ach(9925, {	-- Friends In Places Yet Even Higher Than That
 					["provider"] = { "i", 118515 },	-- Cindermane Charger (MOUNT!)
 				}),	--]]
