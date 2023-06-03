@@ -7646,6 +7646,23 @@ local BaseHeaderClone = app.BaseObjectFields(HeaderCloneFields, "HeaderClone");
 app.CreateWrapHeader = function(t)
 	return app.WrapObject(t, BaseHeaderClone);
 end
+
+local FilterHeaderCloneFields = {
+	-- Fields in the wrapped object which should not persist when represented as a Header
+	["collectible"] = app.ReturnNil,
+	["trackable"] = app.ReturnNil,
+	["collectibleAsCost"] = app.ReturnNil,
+	["costCollectibles"] = app.ReturnNil,
+	["g"] = app.ReturnNil,
+	-- ["back"] = function(t)
+	-- 	return 0.3;	-- visibility of which rows are cloned
+	-- end,
+};
+local BaseFilterHeaderClone = app.BaseObjectFields(FilterHeaderCloneFields, "FilterHeaderClone");
+-- Wraps a given object such that it can act as a filtered Header of the object
+app.CreateWrapFilterHeader = function(t)
+	return app.WrapObject(t, BaseFilterHeaderClone);
+end
 end	-- Common Wrapper Types
 
 -- Quest Lib
@@ -18679,26 +18696,19 @@ end
 end	-- Dynamic/Main Data
 
 do -- Search Response Logic
-local IncludeUnavailableRecipes, IgnoreBoEFilter;
+local IncludeUnavailableRecipes, IgnoreBoEFilter, CloneGroup;
 -- Set some logic which is used during recursion without needing to set it on every recurse
 local function SetRescursiveFilters()
 	IncludeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
 	IgnoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
+	CloneGroup = app.CreateWrapFilterHeader;
 end
 local MainRoot, UnsortedRoot;
 local ClonedHierarchyGroups = {};
 local ClonedHierarachyMapping = {};
 local SearchGroups = {};
 local function CloneGroupIntoHeirarchy(group)
-	-- new cloned parent
-	local groupCopy = {};
-	-- copy direct group values only
-	MergeProperties(groupCopy, group);
-	-- the group itself does not meet the field/value expectation, so force it to be uncollectible
-	groupCopy.collectible = false;
-	-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
-	groupCopy.sym = nil;
-	groupCopy.sourceParent = nil;
+	local groupCopy = CloneGroup(group);
 	-- always a parent, so it will have a .g
 	groupCopy.g = {};
 	ClonedHierarachyMapping[group] = groupCopy;
