@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(CATA_TIER, {
+root(ROOTS.Instances, tier(CATA_TIER, {
 	inst(66, {	-- Blackrock Caverns
 		["lvl"] = 77,
 		["mapID"] = 283,
@@ -245,7 +245,7 @@ _.Instances = { tier(CATA_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35348),	-- Blackrock Caverns Reward Quest

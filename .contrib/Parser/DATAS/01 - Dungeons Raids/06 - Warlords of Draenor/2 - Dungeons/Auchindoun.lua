@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	inst(547, {	-- Auchindoun
 		["lvl"] = 94,
 		["mapID"] = 593,
@@ -195,7 +195,7 @@ _.Instances = { tier(WOD_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35960),	-- Auchindoun Reward Quest

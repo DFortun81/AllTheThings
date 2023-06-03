@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	inst(476, {	-- Skyreach
 		["lvl"] = 96,
 		["maps"] = { 601, 602 },
@@ -198,7 +198,7 @@ _.Instances = { tier(WOD_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35961),	-- Skyreach Reward Quest

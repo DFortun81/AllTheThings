@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(LEGION_TIER, {
+root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(726, {	-- The Arcway
 		["mapID"] = 749,
 		["lvl"] = 110,
@@ -198,4 +198,4 @@ _.Instances = { tier(LEGION_TIER, {
 			}),
 		},
 	}),
-})};
+}));

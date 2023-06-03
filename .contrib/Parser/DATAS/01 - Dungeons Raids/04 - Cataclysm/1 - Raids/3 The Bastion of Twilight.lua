@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(CATA_TIER, {
+root(ROOTS.Instances, tier(CATA_TIER, {
 	inst(72, {	-- The Bastion of Twilight
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
@@ -276,7 +276,7 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		inst(72, {	-- The Bastion of Twilight

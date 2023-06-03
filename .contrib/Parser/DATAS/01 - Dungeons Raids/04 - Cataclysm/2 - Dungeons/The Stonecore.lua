@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(CATA_TIER, {
+root(ROOTS.Instances, tier(CATA_TIER, {
 	inst(67, {	-- The Stonecore
 		["lvl"] = 80,
 		["mapID"] = 324,
@@ -192,7 +192,7 @@ _.Instances = { tier(CATA_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35911),	-- Stonecore Reward Quest - Normal completion

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	inst(558, {	-- Iron Docks
 		["mapID"] = 595,
 		["coord"] = { 45.36, 13.52, GORGROND },
@@ -228,7 +228,7 @@ _.Instances = { tier(WOD_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34536),	-- Iron Docks Challenge Mode - Bronze Addition (Nth)

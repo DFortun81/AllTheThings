@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	inst(457, {	-- Blackrock Foundry
 		["isRaid"] = true,
 		["lvl"] = 100,
@@ -1792,7 +1792,7 @@ _.Instances = { tier(WOD_TIER, {
 			})
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34405),	-- DEPRECATED - REUSE - triggers after looting Blackrock Ore chest after Operator Thogar in LFR Blackrock Foundry

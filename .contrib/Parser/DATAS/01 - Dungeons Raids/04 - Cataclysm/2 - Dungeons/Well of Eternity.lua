@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(CATA_TIER, {
+root(ROOTS.Instances, tier(CATA_TIER, {
 	inst(185, {	-- Well of Eternity
 		["lvl"] = 85,
 		["mapID"] = 398,
@@ -104,7 +104,7 @@ _.Instances = { tier(CATA_TIER, {
 			})),
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35435),	-- Well of Eternity Reward Quest - Heroic completion

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(BFA_TIER, {
+root(ROOTS.Instances, tier(BFA_TIER, {
 	inst(1012, {	-- The MOTHERLODE!!
 		["coords"] = {
 			{ 39.2, 71.5, ZULDAZAR },	-- Alliance
@@ -299,4 +299,4 @@ _.Instances = { tier(BFA_TIER, {
 			}),
 		},
 	}),
-})};
+}));

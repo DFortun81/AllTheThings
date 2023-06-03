@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
-_.Instances = { tier(LEGION_TIER, {
+root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(786, {	-- The Nighthold
 		["isRaid"] = true,
 		["coords"] = {
@@ -1524,7 +1524,7 @@ _.Instances = { tier(LEGION_TIER, {
 			})
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(45318),	-- Skorpyron

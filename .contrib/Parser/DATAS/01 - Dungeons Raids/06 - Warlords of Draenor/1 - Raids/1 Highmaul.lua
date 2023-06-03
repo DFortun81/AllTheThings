@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	inst(477, {	-- Highmaul
 		["isRaid"] = true,
 		["lvl"] = 100,
@@ -670,7 +670,7 @@ _.Instances = { tier(WOD_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		inst(477, {	-- Highmaul

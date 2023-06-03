@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(CATA_TIER, {
+root(ROOTS.Instances, tier(CATA_TIER, {
 	inst(186, {	-- Hour of Twilight
 		["lvl"] = 85,
 		["mapID"] = 399,
@@ -96,7 +96,7 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35439),	-- Hour of Twilight Quest Reward - Heroic completion

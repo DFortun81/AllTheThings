@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(LEGION_TIER, {
+root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(860, {	-- Return to Karazhan
 		["coord"] = { 46.7, 70.1, DEADWIND_PASS },
 		["maps"] = {
@@ -571,7 +571,7 @@ _.Instances = { tier(LEGION_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(45393),	-- Moroes cutscene

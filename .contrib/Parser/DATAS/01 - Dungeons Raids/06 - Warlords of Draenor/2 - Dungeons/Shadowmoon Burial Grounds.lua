@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	inst(537, {	-- Shadowmoon Burial Grounds
 		["lvl"] = 100,
 		["maps"] = { 574, 575, 576 },
@@ -188,7 +188,7 @@ _.Instances = { tier(WOD_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34545),	-- Shadowmoon Burial Grounds Challenge Mode - Bronze Addition (Nth)

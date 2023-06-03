@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(LEGION_TIER, {
+root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(707, {	-- Vault of the Wardens
 		["coord"] = { 48.0, 82.1, AZSUNA },
 		["maps"] = { 710, 711, 712 },
@@ -271,4 +271,4 @@ _.Instances = { tier(LEGION_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));

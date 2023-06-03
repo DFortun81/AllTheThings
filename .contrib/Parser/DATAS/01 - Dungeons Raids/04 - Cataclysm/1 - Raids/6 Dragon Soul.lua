@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(CATA_TIER, {
+root(ROOTS.Instances, tier(CATA_TIER, {
 	inst(187, {	-- Dragon Soul
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
@@ -786,7 +786,7 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {

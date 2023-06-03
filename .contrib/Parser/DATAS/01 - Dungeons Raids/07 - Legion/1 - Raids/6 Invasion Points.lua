@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(LEGION_TIER, {
+root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(959, {	-- Invasion Points
 		["isRaid"] = true,
 		-- ["sourceQuests"] = { },	-- TODO pretty sure a quest is required to unlock these
@@ -435,7 +435,7 @@ _.Instances = { tier(LEGION_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {

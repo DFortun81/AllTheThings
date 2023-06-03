@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	inst(556, {	-- The Everbloom
 		["coord"] = { 59.55, 45.45, GORGROND },
 		["maps"] = { 620, 621 },
@@ -249,7 +249,7 @@ _.Instances = { tier(WOD_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34551),	-- Shaper Dungeon [PH] Challenge Mode - Bronze Addition (Nth)

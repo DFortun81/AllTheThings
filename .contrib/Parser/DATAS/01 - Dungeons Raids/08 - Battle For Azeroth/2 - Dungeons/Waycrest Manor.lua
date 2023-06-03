@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(BFA_TIER, {
+root(ROOTS.Instances, tier(BFA_TIER, {
 	inst(1021, {	-- Waycrest Manor
 		["coord"] = { 33.6, 12.6, DRUSTVAR },
 		["maps"] = {
@@ -327,4 +327,4 @@ _.Instances = { tier(BFA_TIER, {
 			}),
 		},
 	}),
-})};
+}));

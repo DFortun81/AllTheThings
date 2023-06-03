@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	inst(536, {	-- Grimrail Depot
 		["coord"] = { 55.0, 31.3, GORGROND },
 		["maps"] = { 606, 607, 608, 609 },
@@ -171,7 +171,7 @@ _.Instances = { tier(WOD_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34548),	-- Iron Depot Challenge Mode - Bronze Addition (Nth)

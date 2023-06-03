@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(BFA_TIER, {
+root(ROOTS.Instances, tier(BFA_TIER, {
 	inst(1001, {	-- Freehold
 		["coord"] = { 84.6, 78.7, TIRAGARDE_SOUND },
 		["maps"] = {
@@ -246,4 +246,4 @@ _.Instances = { tier(BFA_TIER, {
 			}),
 		},
 	}),
-})};
+}));

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(LEGION_TIER, {
+root(ROOTS.Instances, tier(LEGION_TIER, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 3,
@@ -337,7 +337,7 @@ _.Instances = { tier(LEGION_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq

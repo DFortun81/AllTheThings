@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	inst(385, {	-- Bloodmaul Slag Mines
 		["lvl"] = 90,
 		["mapID"] = 573,
@@ -205,7 +205,7 @@ _.Instances = { tier(WOD_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34533),	-- Bloodmaul Slag Mines Challenge Mode - Bronze Addition (Nth)

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	inst(559, {	-- Upper Blackrock Spire
 		["coord"] = { 78.94, 33.62, BLACKROCK_MOUNTAIN },
 		["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },
@@ -291,7 +291,7 @@ _.Instances = { tier(WOD_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(36865),	-- UBRS Event Dungeon Reward Quest
