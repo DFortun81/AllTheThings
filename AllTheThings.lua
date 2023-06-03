@@ -9818,40 +9818,23 @@ local unitFields = {
 	["key"] = function(t)
 		return "unit";
 	end,
-	["text"] = function(t)
-		for guid,character in pairs(ATTCharacterData) do
-			if guid == t.unit or character.name == t.unit then
-				t.text = character.text;
-				t.level = character.lvl;
-				if character.classID then
-					t.classID = character.classID;
-					t.class = C_CreatureInfo.GetClassInfo(character.classID).className;
-				end
-				if character.raceID then
-					t.raceID = character.raceID;
-					t.race = C_CreatureInfo.GetRaceInfo(character.raceID).raceName;
-				end
-				return character.text;
-			end
-		end
-
-		local name, realm = UnitName(t.unit);
-		if name then
-			if realm and realm ~= "" then name = name .. "-" .. realm; end
-			local _, classFile, classID = UnitClass(t.unit);
-			if classFile then
-				t.classID = classID;
-				name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r";
-			end
-			return name;
-		end
-		return t.unit;
-	end,
 	["icon"] = function(t)
 		if t.classID then return classIcons[t.classID]; end
 	end,
 	["name"] = function(t)
-		return UnitName(t.unit);
+		local unit = t.unit;
+		local name, realm = UnitName(unit);
+		if name then
+			if realm and realm ~= "" then name = name .. "-" .. realm; end
+			local _, classFile, classID = UnitClass(unit);
+			if classFile then
+				t.classID = classID;
+			end
+			-- include the Class coloring as part of the 'name' to make sorting neat
+			t.name = app.TryColorizeName(t, name);
+			return name;
+		end
+		return unit;
 	end,
 	["guid"] = function(t)
 		return UnitGUID(t.unit);
@@ -9873,6 +9856,27 @@ local unitFields = {
 	end,
 	["class"] = function(t)
 		return UnitClass(t.unit);
+	end,
+	["OnUpdate"] = function(t)
+		if t._OnUpdate then return; end
+		t._OnUpdate = true;
+		local unit = t.unit;
+		-- If this is a user's character, grab some cached information
+		for guid,character in pairs(ATTCharacterData) do
+			if guid == unit or character.name == unit then
+				if character.classID then
+					t.classID = character.classID;
+					t.class = C_CreatureInfo.GetClassInfo(character.classID).className;
+				end
+				if character.raceID then
+					t.raceID = character.raceID;
+					t.race = C_CreatureInfo.GetRaceInfo(character.raceID).raceName;
+				end
+				t.name = app.TryColorizeName(t, character.name);
+				t.level = character.lvl;
+				break;
+			end
+		end
 	end,
 };
 app.BaseUnit = app.BaseObjectFields(unitFields, "BaseUnit");
@@ -21166,8 +21170,7 @@ customWindowUpdates["Sync"] = function(self)
 				end
 			end
 
-			local syncHeader;
-			syncHeader = {
+			local syncHeader = {
 				['text'] = L["ACCOUNT_MANAGEMENT"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
 				["description"] = L["ACCOUNT_MANAGEMENT_TOOLTIP"],
@@ -21197,29 +21200,31 @@ customWindowUpdates["Sync"] = function(self)
 						['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 						["description"] = L["SYNC_CHARACTERS_TOOLTIP"],
 						['OnUpdate'] = function(data)
-							data.g = {};
+							-- this forces a sort after the population update pass using the app.SortDefaults.Name sort function
+							app.SortGroupDelayed(data, "Name");
+							local g = {};
 							for guid,character in pairs(ATTCharacterData) do
 								if character then
-									table.insert(data.g, app.CreateUnit(guid, {
+									table.insert(g, app.CreateUnit(guid, {
 										['datalink'] = guid,
 										['OnClick'] = OnRightButtonDeleteCharacter,
 										['OnTooltip'] = OnTooltipForCharacter,
-										['OnUpdate'] = app.AlwaysShowUpdate,
 										['visible'] = true,
 									}));
 								end
 							end
 
-							if #data.g < 1 then
-								table.insert(data.g, {
+							if #g < 1 then
+								table.insert(g, {
 									['text'] = L["NO_CHARACTERS_FOUND"],
 									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 									['visible'] = true,
+									["OnUpdate"] = app.AlwaysShowUpdate,
 								});
 							end
-							app.Sort(data.g, syncHeader.Sort);
-							BuildGroups(data, data.g);
-							return app.AlwaysShowUpdate(data);
+							data.g = g;
+							BuildGroups(data);
+							return true;
 						end,
 						['visible'] = true,
 						['expanded'] = true,
@@ -21283,15 +21288,12 @@ customWindowUpdates["Sync"] = function(self)
 								});
 							end
 							BuildGroups(data, data.g);
-							return app.AlwaysShowUpdate(data);
+							return true;
 						end,
 						['visible'] = true,
 						['g'] = {},
 					},
-				},
-				['Sort'] = function(a, b)
-					return b.text > a.text;
-				end,
+				}
 			};
 
 			self.Reset = function()
