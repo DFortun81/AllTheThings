@@ -865,7 +865,7 @@ for key,value in pairs({
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
 		[-1200] = "지스케라 금고",										-- Zskera Vaults
 		[-1202] = "피락의 습격",											-- Fyrakk Assaults
-		--TODO: [-1203] = "Sniffenseeking",							-- Sniffenseeking
+		[-1203] = "냄새 추적",											-- Sniffenseeking
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
