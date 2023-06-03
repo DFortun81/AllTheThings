@@ -1626,6 +1626,8 @@
 10.1.0.49092
 371176@@@Subterranean Magmammoth
 408651@@@Cataloged Shalewing
+10.1.0.49741
+407555@@@Tarecgosa's Visage
 10.1.5.49516
 413409@@@Highland Drake
 413825@@@Exuberant Scarlet Pterrordax
@@ -1643,3 +1645,4 @@
 413827@@@Harbor Gryphon
 414328@@@Perfected Juggernaut
 414334@@@Scourgebound Vanquisher
+10.1.5.49719

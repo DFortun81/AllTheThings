@@ -1158,7 +1158,6 @@ i(201930);	-- H.E.L.P.
 i(204257);	-- Holoviewer: The Lady of Dreams
 i(204256);	-- Holoviewer: The Scarlet Queen
 i(204262);	-- Holoviewer: The Timeless One
-i(205908);	-- Inherited Wisdom of Senegos
 i(204687);	-- Obsidian Battle Horn
 i(202283);	-- Reading Glasses
 i(199900);	-- Secondhand Survey Tools
@@ -1169,26 +1168,28 @@ i(203852);	-- Spore-Bound Essence
 -- PATCH 10.1.0 --
 ------------------
 i(205045);	-- B.B.F. Fist
-i(206343);	-- Crimson Legend's Pennant
-i(205419);	-- Jrumm's Drum
 i(205418);	-- Blazing Shadowflame Cinder
+i(206343);	-- Crimson Legend's Pennant
+i(205419);	-- Dinn's Drum
+i(206043);	-- Fyrakk's Frenzy
+i(205688);	-- Glutinous Glitterscale Glob
 i(204220);	-- Hraxian's Unbreakable Will
+i(205908);	-- Inherited Wisdom of Senegos
 i(204818);	-- Mallard Mortar
 i(205796);	-- Molten Lava Pack
 i(205936);	-- New Niffen No-Sniffin' Tonic
 i(205255);	-- Niffen Diggin' Mitts
+i(206008);	-- Nightmare Banner
 i(206267);	-- Obsidian Legend's Pennant
 i(205463);	-- Skornak's Lava Ball
 i(205963);	-- Sniffin' Salts
 i(204389);	-- Stone Breaker
 i(205904);	-- Vibrant Clacking Claw
 -- Unsorted --
+i(206038);	-- Flamin' Ring of Flashiness [Midsummer]
+-- NYI --
 i(205034);	-- Enormous Ball of Yarn
 i(205027);	-- Explorer's Banner
-i(206038);	-- Flamin' Ring of Flashiness
-i(206043);	-- Fyrakk's Frenzy
-i(205688);	-- Glutinous Glitterscale Glob
-i(206008);	-- Nightmare Banner
 
 
 -- #if ANYCLASSIC

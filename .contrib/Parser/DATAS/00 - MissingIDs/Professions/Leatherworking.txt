@@ -18,10 +18,10 @@ r(351769),	-- Greater Drums of Restoration
 r(351770),	-- Greater Drums of Panic
 r(351771),	-- Greater Drums of Battle
 3.0.1.8303
-r(45541),	--
-r(48038),	--
+r(45541),	-- 
+r(48038),	-- 
 3.0.1.8622
-r(50935),	--
+r(50935),	-- 
 r(51302),	-- Leatherworking
 r(53681),	-- Garok's Battle
 r(53686),	-- Verdant Tundra Belt
@@ -43,8 +43,8 @@ r(78413),	-- Windbound Belt
 r(78414),	-- Razorshell Gloves
 r(78417),	-- Windbound Shoulders
 r(78418),	-- Razorshell Belt
-r(78421),	--
-r(78422),	--
+r(78421),	-- 
+r(78422),	-- 
 r(78425),	-- Windbound Leggings
 r(78426),	-- Razorshell Helm
 r(78429),	-- Windbound Chest
@@ -52,23 +52,23 @@ r(78430),	-- Razorshell Leggings
 r(78434),	-- Windbound Helm
 r(78435),	-- Razorshell Chest
 r(81199),	-- Leatherworking
-r(85007),	--
-r(85008),	--
-r(85009),	--
-r(85010),	--
-r(85067),	--
-r(85068),	--
+r(85007),	-- 
+r(85008),	-- 
+r(85009),	-- 
+r(85010),	-- 
+r(85067),	-- 
+r(85068),	-- 
 4.3.4.15595
-r(101600),	--
+r(101600),	-- 
 5.0.3.15890
 r(102366),	-- Exotic Leather
 r(110423),	-- Leatherworking
-r(110955),	--
-r(124549),	--
-r(124551),	--
-r(124552),	--
-r(124553),	--
-r(124554),	--
+r(110955),	-- 
+r(124549),	-- 
+r(124551),	-- 
+r(124552),	-- 
+r(124553),	-- 
+r(124554),	-- 
 r(124564),	-- Primal Leg Reinforcements
 r(124565),	-- Heavy Leg Reinforcements
 r(124566),	-- Draconic Leg Reinforcements
@@ -178,6 +178,11 @@ r(413517),	-- Skyfury Headdress
 r(413738),	-- Nerubian Persuader
 r(413756),	-- Displacement Boots
 r(413761),	-- Lucien's Lost Soles
+10.1.5.49719
+r(416692),	-- Sanctified Leather Hat
+10.1.5.49824
+r(414565),	-- Languished Leather
+r(414566),	-- Scourged Scales
 
 
 
@@ -582,10 +587,10 @@ r(351769),	-- Greater Drums of Restoration
 r(351770),	-- Greater Drums of Panic
 r(351771),	-- Greater Drums of Battle
 3.0.1.8303
-r(45541),	--
-r(48038),	--
+r(45541),	-- 
+r(48038),	-- 
 3.0.1.8622
-r(50935),	--
+r(50935),	-- 
 r(50936),	-- Heavy Borean Leather
 r(50943),	-- Iceborne Belt
 r(50944),	-- Arctic Chestpiece
@@ -789,8 +794,8 @@ r(78417),	-- Windbound Shoulders
 r(78418),	-- Razorshell Belt
 r(78419),	-- Scorched Leg Armor
 r(78420),	-- Twilight Leg Armor
-r(78421),	--
-r(78422),	--
+r(78421),	-- 
+r(78422),	-- 
 r(78423),	-- Tsunami Chestguard
 r(78424),	-- Darkbrand Helm
 r(78425),	-- Windbound Leggings
@@ -853,12 +858,12 @@ r(78489),	-- Twilight Scale Chestguard
 r(78490),	-- Dragonkiller Tunic
 r(81199),	-- Leatherworking
 r(84950),	-- Savage Leather
-r(85007),	--
-r(85008),	--
-r(85009),	--
-r(85010),	--
-r(85067),	--
-r(85068),	--
+r(85007),	-- 
+r(85008),	-- 
+r(85009),	-- 
+r(85010),	-- 
+r(85067),	-- 
+r(85068),	-- 
 4.3.4.15595
 r(99443),	-- Dragonfire Gloves
 r(99445),	-- Gloves of Unforgiving Flame
@@ -873,7 +878,7 @@ r(99536),	-- Vicious Fur Cloak
 r(100583),	-- Royal Scribe's Satchel
 r(100586),	-- Triple-Reinforced Mining Bag
 r(101599),	-- Drakehide Leg Armor
-r(101600),	--
+r(101600),	-- 
 r(101933),	-- Leggings of Nature's Champion
 r(101934),	-- Deathscale Leggings
 r(101935),	-- Bladeshadow Leggings
@@ -885,18 +890,18 @@ r(101941),	-- Bracers of the Hunter-Killer
 5.0.3.15890
 r(102366),	-- Exotic Leather
 r(110423),	-- Leatherworking
-r(110955),	--
+r(110955),	-- 
 r(124124),	-- Sha-Touched Leg Armor
 r(124125),	-- Toughened Leg Armor
 r(124126),	-- Brutal Leg Armor
 r(124127),	-- Angerhide Leg Armor
 r(124128),	-- Ironscale Leg Armor
 r(124129),	-- Shadowleather Leg Armor
-r(124549),	--
-r(124551),	--
-r(124552),	--
-r(124553),	--
-r(124554),	--
+r(124549),	-- 
+r(124551),	-- 
+r(124552),	-- 
+r(124553),	-- 
+r(124554),	-- 
 r(124559),	-- Primal Leg Reinforcements
 r(124561),	-- Draconic Leg Reinforcements
 r(124563),	-- Heavy Leg Reinforcements
@@ -1598,7 +1603,6 @@ r(299030),	-- Banded Cragscale Greaves
 r(301405),	-- Dredged Leather Bladder
 r(301411),	-- Comfortable Rider's Barding
 8.3.0.32044
-
 r(304415),	-- Uncanny Combatant's Leather Gauntlets
 r(304416),	-- Uncanny Combatant's Leather Gauntlets
 r(304417),	-- Uncanny Combatant's Leather Gauntlets
@@ -1670,8 +1674,6 @@ r(309237),	-- Shadebound Armguards \\ Dutybound Armguards \\ Kyrian Leather Armg
 r(309238),	-- Shadowscale Treads \\ Stalwart Mail Treads \\ Kyrian Scale Treads
 r(309239),	-- Shadowscale Vest \\ Stalwart Mail Vest \\ Kyrian Scale Vest
 r(309240),	-- Shadowscale Gauntlets \\ Stalwart Mail Gauntlets \\ Kyrian Scale Gauntlets
-
-
 r(309246),	-- Sintanned Treads \\ Venthyr Leather Treads
 r(309247),	-- Sintanned Vest \\ Venthyr Leather Vest
 r(309248),	-- Sintanned Gauntlets \\ Venthyr Leather Gauntlets
@@ -1799,3 +1801,8 @@ r(413517),	-- Skyfury Headdress
 r(413738),	-- Nerubian Persuader
 r(413756),	-- Displacement Boots
 r(413761),	-- Lucien's Lost Soles
+10.1.5.49719
+r(416692),	-- Sanctified Leather Hat
+10.1.5.49824
+r(414565),	-- Languished Leather
+r(414566),	-- Scourged Scales

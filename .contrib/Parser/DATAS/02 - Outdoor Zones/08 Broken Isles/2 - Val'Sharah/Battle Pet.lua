@@ -8,7 +8,6 @@ _.Zones =
 		m(VALSHARAH, {
 			petbattle(filter(BATTLE_PETS,  {
 				["sym"] = {{"select","speciesID",
-					1738,	-- Auburn Ringtail (PET!)
 					398,	-- Black Rat (PET!)
 					380,	-- Bucktooth Flapper (PET!)
 					393,	-- Cockroach (PET!)

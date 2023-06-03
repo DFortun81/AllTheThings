@@ -432,7 +432,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						},
 					}),
 					e(2532, {	-- The Vigilant Steward, Zskarn
-						["crs"] = { 
+						["crs"] = {
 							202637,	-- Zskarn <the Vigilant Steward>
 							202375,	-- Zskarn <the Vigilant Steward>
 						},
@@ -1432,5 +1432,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		-- q(),	-- Magmorax
 		-- q(),	-- Echo of Neltharion
 		-- q(),	-- Scalecommander Sarkareth
+
+		q(76088),	-- Normal Sarkareth Kill?
+		q(76089),	-- Normal Sarkareth Kill?
 	}),
 })));

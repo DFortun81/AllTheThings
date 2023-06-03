@@ -1579,30 +1579,28 @@ i(0, 369451);		-- Jade Foreseer
 ------------------
 -- PATCH 10.0.5 --
 ------------------
+i(190231, 366962);	-- Ash'adar, Harbinger of Dawn
 i(192800, 352926);	-- Skyskin Hornstrider
 -- NYI --
 i(0, 397406);		-- [PH] Magical Fish Mount
-i(203226, 399708);	-- Stormfused Salamanther
-i(0, 395095);		-- Whelpling
--- Trading Post (According To Data)
-i(190231, 366962);	-- Ash'adar, Harbinger of Dawn
 i(190767, 368126);	-- Armored Golden Pterrordax
 i(0, 367875);		-- Armored Siege Kodo
 i(0, 369480);		-- Cerulean Marsh Hopper
 i(190539, 367620);	-- Coral-Stalker Waveray
 i(190168, 366789);	-- Crusty Crawler
-i(189978, 366647);	-- Magenta Cloud Serpent
-i(190169, 366790);	-- Quawks
-i(190613, 367826);	-- Savage Green Battle Turtle
+i(203226, 399708);	-- Stormfused Salamanther
+i(0, 395095);		-- Whelpling
 
 ------------------
 -- PATCH 10.0.7 --
 ------------------
 i(192772, 374090);	-- Ancient Salamanther
 i(192785, 374157);	-- Gooey Snailemental
+i(189978, 366647);	-- Magenta Cloud Serpent
 i(192790, 374194);	-- Mossy Mammoth
 i(204382, 349935);	-- Noble Bruffalon
 i(204091, 400733);	-- Rocket Shredder 9001
+i(190613, 367826);	-- Savage Green Battle Turtle
 
 ------------------
 -- PATCH 10.1.0 --
@@ -1611,11 +1609,11 @@ i(205155, 408313);	-- Big Slick in the City
 i(205209, 408653);	-- Boulder Hauler
 i(205204, 408651);	-- Cataloged Shalewing
 i(205203, 408647);	-- Cobalt Shalewing
-i(206027, 411565);	-- Felcrystal Scorpion
 i(205197, 408627);	-- Igneous Shalewing
 i(204798, 406637);	-- Inferno Armoredon
 i(205207, 408655);	-- Morsel Sniffer
 i(205233, 408977);	-- Obsidian Gladiator's Slitherdrake
+i(190169, 366790);	-- Quawks
 i(206976, 414986);	-- Royal Swarmer
 i(192779, 374138);	-- Seething Slug
 i(205205, 408649);	-- Shadowflame Shalewing
@@ -1624,9 +1622,10 @@ i(206162, 407555);	-- Tarecgosa's Visage
 i(205246, 409034);	-- Vicious War Snail [A]
 i(205245, 409032);	-- Vicious War Snail [H]
 i(204361, 368893);	-- Winding Slitherdrake
--- Not Attached
-i(0, 205206);	-- Sporebat, Fire (Yellow) [PH]
-i(0, 205208);	-- Sporebat, Stone (Orange) [PH]
+-- NYI
+i(206027, 411565);	-- Felcrystal Scorpion
+i(205206, 408648);	-- Shalewing, Fire [PH]
+i(205208, 408654);	-- Shalewing, Stone [PH]
 
 -- #if ANYCLASSIC
 -----------------

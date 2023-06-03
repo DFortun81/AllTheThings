@@ -19897,6 +19897,121 @@
 205391@@@Sabellian
 205392@@@Wrathion
 206940@@@Blacktalon Breacher
+10.1.0.49679
+202729@@@Nozdormu
+202744@@@Neltharion
+202760@@@Scalecommander Emberthal
+202761@@@Scalecommander Sarkareth
+202762@@@Viridia
+202806@@@Deathwing
+202818@@@Nozdormu
+204465@@@<Away> Johnny Awesome
+204468@@@Airhorn
+204469@@@Vulajin
+204470@@@Darragh
+204473@@@Dreadpaw
+204474@@@Muffinmon
+204475@@@Merciless Gladiator Saifu
+204476@@@Vhell
+204477@@@Oku
+204478@@@Astrylian
+204480@@@Twirhp
+204481@@@Jarud
+204482@@@Wheatizzle
+204483@@@Wodyn
+204484@@@Anenga
+204485@@@Butchie
+204486@@@Kesak
+204488@@@Spoogledorf
+204489@@@Guard
+204490@@@Scarab Lord Hamlet
+204491@@@Nulil
+204492@@@Nisstyr
+204493@@@Scarab Lord Ahzesh
+204494@@@Jesibelle
+204495@@@Velgrim
+205649@@@Mote of Nasz'uro
+10.1.0.49741
+199219@@@Senegos
+199361@@@Kirygosa
+199363@@@Kalecgos
+199961@@@Senegos
+199966@@@Skittering Boneborer
+199967@@@Darkclaw Scythid
+199968@@@Veiled Damselfly
+199977@@@Kalecgos
+200007@@@Kalecgos
+200008@@@Alexstrasza the Life-Binder
+200019@@@Azuregos
+200020@@@Haleh
+200022@@@Surigosa
+200023@@@Zeros
+200036@@@Stellagosa
+200099@@@Stellagosa
+200167@@@Stellagosa
+200169@@@Rolling Sphere
+200256@@@Arcane Trail
+200264@@@Stellagosa
+200447@@@Senegos
+200448@@@Stellagosa
+200478@@@Senegos
+200479@@@Sindragosa
+200524@@@Disruptive Arcana
+200531@@@Disruptive Arcana
+200532@@@Disruptive Arcana
+200573@@@Awbee
+200574@@@Andorgos
+200575@@@Narygos
+200793@@@Kirygosa
+200794@@@Zeros
+200795@@@Haleh
+200797@@@Lanigosa
+200798@@@Surigosa
+200826@@@Memory of a Traitorous Sister
+200827@@@Memory of a Master
+200828@@@Memory of a Betrayer
+200863@@@Generic Bunny
+200882@@@Lanigosa
+200979@@@Kalecgos
+201019@@@Kalecgos
+201061@@@Azuregos
+201080@@@Azuregos
+201107@@@Malygos
+201126@@@Stellagosa
+201127@@@Emmigosa
+201133@@@Professor Intinosa
+201136@@@Haleh
+201167@@@Stellagosa
+201168@@@Azuregos
+201169@@@Haleh
+201170@@@Zeros
+201171@@@Surigosa
+201172@@@Lanigosa
+203431@@@Azuregos
+203728@@@Emmigosa
+203729@@@Stellagosa
+203732@@@Kalecgos
+204733@@@Kalecgos
+204736@@@Sindragosa
+204737@@@Blue Dragon
+204745@@@Pandi
+204748@@@Invisible Bunny (IGC)
+204942@@@Awbee
+204943@@@Blue Dragon
+204945@@@Haleh
+204946@@@Professor Intinosa
+204948@@@Narygos
+204950@@@Surigosa
+204951@@@Tharkago
+204952@@@Senegos
+204953@@@Stellagosa
+204954@@@Kalecgos
+204955@@@Emmigosa
+204956@@@Kalecgos
+204957@@@Invisible Bunny (IGC)
+205311@@@Disruptive Arcana
+10.1.0.49801
+204974@@@Dinn's Drum
 10.1.5.49516
 200541@@@Iggy
 200810@@@Emerald Whelpling
@@ -19921,7 +20036,6 @@
 204809@@@Time Rift
 204810@@@Time Rift
 204919@@@Hexlord Raal
-204974@@@Dinn's Drum
 205036@@@Gillidan
 205037@@@Minion of Deathwingurlugull
 205058@@@Time Rift
@@ -19987,40 +20101,7 @@
 207310@@@Kabluey
 207346@@@Finduin Wryngrrlgulgll
 10.1.5.49595
-202729@@@Nozdormu
-202744@@@Neltharion
-202760@@@Scalecommander Emberthal
-202761@@@Scalecommander Sarkareth
-202762@@@Viridia
-202806@@@Deathwing
-202818@@@Nozdormu
 204225@@@Annuna
-204465@@@<Away> Johnny Awesome
-204468@@@Airhorn
-204469@@@Vulajin
-204470@@@Darragh
-204473@@@Dreadpaw
-204474@@@Muffinmon
-204475@@@Merciless Gladiator Saifu
-204476@@@Vhell
-204477@@@Oku
-204478@@@Astrylian
-204480@@@Twirhp
-204481@@@Jarud
-204482@@@Wheatizzle
-204483@@@Wodyn
-204484@@@Anenga
-204485@@@Butchie
-204486@@@Kesak
-204488@@@Spoogledorf
-204489@@@Guard
-204490@@@Scarab Lord Hamlet
-204491@@@Nulil
-204492@@@Nisstyr
-204493@@@Scarab Lord Ahzesh
-204494@@@Jesibelle
-204495@@@Velgrim
-205649@@@Mote of Nasz'uro
 207518@@@Yuangol
 207519@@@Watchers log
 207525@@@Watchers log
@@ -20059,3 +20140,116 @@
 207661@@@Lich Magus
 207665@@@Magic Book
 207673@@@Sleepy Bear
+10.1.5.49719
+200541@@@Princess Vorquistrasza
+207525@@@Watcher's Log
+207535@@@Princess Vorquistrasza
+207599@@@Blessed Inquisitor
+207686@@@Warmage Bernante
+207756@@@Murloc You
+207757@@@Murloc You
+207765@@@Belastrasza
+207848@@@Azmerlothian Citizen
+207913@@@Gillvanas
+207914@@@Finduin Wryngrrlgulgll
+207917@@@"Captain" Cookie
+207919@@@Old Murk-Eye
+207921@@@Zhusadormu
+207932@@@Time Rift
+207955@@@Zalethgos
+207959@@@Somnius
+207964@@@Posidriss
+207970@@@Time Rift
+207992@@@Pallibrius
+208001@@@Zhusadormu
+208034@@@Lifelike Mechanical Turtle
+208048@@@Great Glorious Alliance Paladin
+208049@@@Great Glorious Alliance Musketeer
+208050@@@Great Glorious Alliance Footman
+208051@@@Great Glorious Alliance Cannonneer
+208058@@@Sporeflower
+208083@@@Blood Horde Bomber
+208084@@@Blood Horde Engineer
+208085@@@Blood Horde Grunt
+208086@@@Blood Horde Reaver
+208087@@@Blood Horde Shaman
+208096@@@Midnight Terrorwing
+208098@@@Blood Horde Grunt
+208099@@@Blood Horde Reaver
+208100@@@Great Glorious Alliance Footman
+208101@@@Great Glorious Alliance Paladin
+208125@@@Treanthony
+10.1.5.49824
+204516@@@Cenrrrn Cirrgl Tideshifter
+205428@@@Peeved
+205612@@@Field Despair Bot K156
+205706@@@Future Chromie
+205851@@@Cenrrrn Cirrgl Mooncaller
+205852@@@Cenrrrn Cirrgl Mender
+205862@@@Vorus'arak
+205884@@@Azerite Excavator
+205885@@@Excavator Processing Unit
+205886@@@Rusted Surveyor Drone
+205887@@@Corroded Taskmaster
+205889@@@Haywire Harvester
+205992@@@Risen Adventurer
+206006@@@Anub'ar Champion
+206007@@@Anub'ar Shadowcaster
+206010@@@Hungering Ghoul
+206016@@@Hungering Ghoul
+206090@@@Felhound
+206121@@@[DNT] Spell Target Bunny
+206131@@@Meantron 7000
+206132@@@Meantron Prototype
+206146@@@Fel-Corrupted Kaldorei
+206179@@@Fel Defender
+206182@@@Fel-Touched Shu'halo
+206189@@@Felbolg
+206463@@@Faceless One
+206474@@@Dark Prophet
+206615@@@Fel Spreader
+206617@@@Rude Crude
+206624@@@Portal Stabilizer
+206627@@@Walking Nightmare
+206630@@@Legion Portal
+206643@@@Void Eater
+206765@@@Invading Infernal
+206834@@@Ursoc the Destroyer
+206861@@@Servant of Kruul
+206925@@@Fel-Watcher Mara
+207094@@@Felbark the Defiler
+207097@@@Slayer
+207111@@@Malfunctioning Robotic Cauldron
+207170@@@Illidan Stormrage
+207206@@@Fel Pylon
+207278@@@Greaves
+207386@@@[DNT] Player Clone - Boss
+207539@@@Mechanized Mekgineer Hologram
+207804@@@Valhalas Vargul
+207805@@@Vargul Mystic
+207808@@@Rotted Gladiator
+207812@@@Rotting Colossus
+207815@@@Shackled Flames of the Betrayer
+207816@@@Vereesa Windrunner
+207818@@@Uther
+207821@@@Kirkessen the Zealous
+207822@@@Lord Thassarian
+207823@@@Queen Angerboda
+207893@@@Aqir Shadowcaster
+207896@@@Aqir Fanatic
+207910@@@Aqir Scarab
+207911@@@Aqir Locust
+207912@@@Aqir Destroyer
+207915@@@Klaxxi Assassin
+207916@@@Klaxxi Warrior
+207918@@@Klaxxi Amber Shaper
+207922@@@Klaxxi Blade Lord
+207923@@@Klaxxi Monstrosity
+207924@@@Void Eater Shad'har
+207925@@@Dest'Agath the Corrupted
+208153@@@Time Rift
+208183@@@Giant Time Rift
+208224@@@Great Glorious Alliance Footman
+208225@@@Blood Horde Grunt
+208248@@@Time Rift
+208253@@@Time Rift

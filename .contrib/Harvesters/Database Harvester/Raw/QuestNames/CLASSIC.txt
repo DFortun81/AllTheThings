@@ -270,12 +270,20 @@
 8973@@@REUSE
 9031@@@<TXT>Anthion's Parting Words
 9065@@@The "Chow" Quest (123)aa
-9378@@@--
 9411@@@<UNUSED>Infused Bandages
 9412@@@<UNUSED>Crystal Flake Throat Lozenge
 9413@@@<UNUSED>Crystal Flake Throat Lozenge
 9414@@@<UNUSED>Infused Bandages
 9556@@@To The Victor...
+8571@@@<UNUSED> Armor Kits
+65593@@@Hearts of the Lovers
+65597@@@The Binding
+65601@@@Love Hurts
+65602@@@What Is Love?
+65603@@@The Binding
+65604@@@The Binding
+65610@@@Wish You Were Here
+9378@@@--
 55296@@@--
 60860@@@--
 60863@@@--
@@ -286,15 +294,7 @@
 60870@@@--
 61547@@@--
 63769@@@--
-8571@@@<UNUSED> Armor Kits
 65309@@@--
-65593@@@Hearts of the Lovers
-65597@@@The Binding
-65601@@@Love Hurts
-65602@@@What Is Love?
-65603@@@The Binding
-65604@@@The Binding
-65610@@@Wish You Were Here
 65616@@@--
 66145@@@--
 66193@@@--

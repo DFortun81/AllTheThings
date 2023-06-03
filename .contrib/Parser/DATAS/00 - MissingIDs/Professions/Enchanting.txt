@@ -1,3 +1,14 @@
-Good Work! Nothing to do here!
+10.1.5.49719
+r(416684),	-- Magebane Nexus
+r(416685),	-- Smokesworth's Fireshooter
+r(416686),	-- Stormwatcher
 
-Nothing is Missing in EnchantingItemDB.lua! Good Work!
+
+
+
+Missing in EnchantingItemDB.lua
+
+10.1.5.49719
+r(416684),	-- Magebane Nexus
+r(416685),	-- Smokesworth's Fireshooter
+r(416686),	-- Stormwatcher

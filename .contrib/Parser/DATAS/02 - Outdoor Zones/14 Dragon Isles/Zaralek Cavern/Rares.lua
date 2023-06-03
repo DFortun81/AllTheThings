@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75352,	-- Old QuestID: 75564
 				["g"] = {
 					bo(75353, true),
-					i(205419),	-- Jrumm's Drum (TOY!)
+					i(205419),	-- Dinn's Drum (TOY!)
 					i(203320),	-- Winding Slitherdrake: Ears (DM!)
 					i(205195),	-- Drakeforged Magma Charm
 					i(205299),	-- Rudiment Cuffs

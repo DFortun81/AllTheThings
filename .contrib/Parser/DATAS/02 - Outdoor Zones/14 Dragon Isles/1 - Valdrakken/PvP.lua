@@ -33,6 +33,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["g"] = {
 					i(206271, {	-- Malicia's Hoard
 						["timeline"] = { ADDED_10_1_0 },
+						["g"] = {
+							i(204717),	-- Splintered Spark of Shadowflame
+						},
 					}),
 					i(200452),	-- Dragonscale Expedition Insignia
 					i(200453),	-- Iskaara Tuskarr Insignia

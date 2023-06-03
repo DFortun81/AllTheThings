@@ -878,9 +878,6 @@ root(ROOTS.Unsorted, {
 			n(ARMOR, {
 				i(204087),	-- 10.1 Cloak Test Item
 			}),
-			filter(ILLUSIONS, {
-				ill(6836),	-- Shadow Flame
-			}),
 			filter(MISC, {
 				i(202206),	-- Thumper Part
 				i(202387),	-- Slightly Ruffled Top Hat
@@ -907,7 +904,6 @@ root(ROOTS.Unsorted, {
 				i(205239),	-- Fluffy Ear
 				i(205243),	-- Spare Bow String
 				i(205244),	-- Rain-soaked pelt
-				i(205417),	-- Fungishine
 				i(205456),	-- Lost Dragonscale
 				i(205458),	-- Lost Dragonscale
 				i(205467),	-- Preserved Krolusk Crest
@@ -919,34 +915,12 @@ root(ROOTS.Unsorted, {
 				i(205867),	-- Steaming Drake Heart
 				i(205875),	-- Massive Deepstrider Femur
 				i(205898),	-- Metal Key and shield disabled
-				i(205939),	-- Iron Titan Key
 				i(205962),	-- Echoing Storm Flightstone
 				i(205970),	-- Azure Flightstone
 				i(205993),	-- Set Keystone Map: The Vortex Pinnacle
 				i(206037),	-- Ruby Flightstone
 			}),
-			filter(MOUNTS, {
-				i(205206),	-- Sporebat, Fire (Yellow) [PH] (MOUNT!)
-				i(205208),	-- Sporebat, Stone (Orange) [PH] (MOUNT!)
-			}),
 			n(PROFESSIONS, {
-				-- Tailoring Items Acting Weird
-				i(205005),	-- Spore-infused Combat Bandage
-				i(205006),	-- Spore-infused Combat Bandage
-				i(205007),	-- Spore-infused Combat Bandage
-				i(205142),	-- Pattern: Enormous Ball of Yarn [Think is NYI?]
-				i(205411),	-- Medical Wrap Kit
-				i(205141),	-- Pattern: Explorer's Banner
-				i(205028),	-- Explorer's Banner of Comradery
-				i(205029),	-- Explorer's Banner of Comradery
-				-- Blacksmith Stuff? NYI?? --
-				i(205040),	-- Shadowed Belt Buckle
-				i(205041),	-- Shadowed Belt Buckle
-				i(205042),	-- Shadowed Belt Buckle
-				i(205047),	-- Shadowed Impact Buckler
-				i(205048),	-- Shadowed Impact Buckler
-				i(205049),	-- Shadowed Impact Buckler
-				-- Proff knowledge (not treasure?)
 				i(205451),	-- Flawless Crystal Scale
 			}),
 			n(PVP, {
@@ -1043,39 +1017,26 @@ root(ROOTS.Unsorted, {
 				i(201956),	-- [DNT] Snakey Eyes
 				i(204796),	-- Deepflayer Dust
 				i(204800),	-- Scaly Stone Hide
-				i(204801),	-- Gelcap Spores
 				i(204824),	-- Torn Journal Entry
 				i(204830),	-- Shattered Horn Signet
 				i(205187),	-- Artisan's Consortium Flier
 				i(202106),	-- Chewed Piece of Journal
-				i(202238),	-- Enforcer Grant's Signet
 				i(204063),	-- Windsor's Journal
-				i(204171),	-- Enforcer Jennive's Signet
-				i(204172),	-- Enforcer Tera's Signet
-				i(204173),	-- Enforcer Horb's Signet
 				i(205410),	-- Pungent Morsel
-				i(205900),	-- Shimmering Draconic Gem
 			}),
 			filter(TOYS, {
-				i(205034),	-- Enormous Ball of Yarn (TOY!)
-				i(205027),	-- Explorer's Banner (TOY!)
-				i(206038),	-- Flamin' Ring of Flashiness (TOY!)
-				i(205463),	-- Skornak's Lava Ball (TOY!)
+				i(206038),	-- Flamin' Ring of Flashiness (TOY!) [Midsummer?]
 			}),
 			n(WEAPONS, {
 				i(204638),	-- Sunder Wing
 			}),
 			n(REWARDS, {
-				-- New System
-				i(204717),	-- Splintered Spark of Shadowflame
 				-- Loamm Niffen
-				i(204712),	-- Brimming Loamm Niffen Supply Satchel
 				i(205365),	-- Loamm Niffen Insignia
 				i(205968),	-- Overflowing Loammian Supply Pack
 				i(205985),	-- Loamm Niffen Insignia
 				-- Large Rep
 				i(205252),	-- Momento of Rekindled Bonds
-				i(205992),	-- Regurgitated Half-Digested Fish
 				i(206006),	-- Earth-Warder's Thanks
 				-- Research
 				i(205454),	-- Researchers Wheel Barrow
@@ -1103,14 +1064,271 @@ root(ROOTS.Unsorted, {
 				i(206270),	-- Volcanic Equipment Chest
 				-- New
 				i(189885),	-- The Battlespoon
-				i(204797),	-- Djaradin Boasting Tablets
-				i(204805),	-- Suspended Sulfuric Droplet
 				-- new new
 				i(206671),	-- Obsidian Gladiator's Halberd
-				i(204255),	-- Cracked Titan Gem
 				i(206820),	-- Scalewarden's Dagger
 				i(206830),	-- Scalewarden's Dirk
 				i(206955),	-- Highland Drake: Embodiment of the Hellforged
+			}),
+			n(QUESTS, {
+				-- 10.1.0.48480
+				q(71053),	-- Hermit Kill Quest
+				q(72027),	-- [DNT] Training Kill Quest JKP
+				q(72454),	-- [PH] Moved to 10.1.5
+				q(72455),	--
+				q(72457),	--
+				q(72458),	--
+				q(72459),	--
+				q(72460),	-- [PH] Moved to 10.1.5
+				q(72461),	-- [PH] Moved to 10.1.5
+				q(72480),	-- [DNT] Training Collect Quest
+				q(72513),	-- Our Destiny
+				q(72514),	-- The High Creche
+				q(72515),	-- The Contingency
+				q(72664),	--
+				q(72665),	-- [PH] Moved to 10.1.5
+				q(72666),	-- [PH] Moved to 10.1.5
+				q(72667),	-- [PH] Moved to 10.1.5
+				q(72668),	-- [PH] Moved to 10.1.5
+				q(72885),	-- Loamm Placeholder Quest
+				q(72887),	--
+				q(72932),	-- Our Father's Legacy - DEPRECATED
+				q(72957),	-- A Sundered Road [DNT]
+				q(72960),	-- [NYI] Refti Cleaning
+				q(73086),	-- Healthy Competition
+				q(73092),	-- Something Like Family
+				q(73093),	-- Empty Chairs
+				q(73099),	--
+				q(73151),	-- Hats Off
+				q(73195),	--
+				q(73695),	--
+				q(73712),	--
+				q(73713),	--
+				q(74438),	--
+				q(74522),	-- Remnants
+				q(74523),	-- A Traitor's Due
+				q(74524),	--
+				q(74525),	-- Honorbound
+				q(74537),	--
+				q(74560),	--
+				q(74564),	--
+				q(74571),	-- Clear a Path
+				q(74572),	-- Make it Rain
+				q(74832),	--
+				q(74833),	--
+				q(74834),	--
+				q(74893),	--
+				q(74904),	--
+				q(74958),	--
+				q(75017),	--
+				q(75018),	-- Into the Dark
+				q(75021),	--
+				q(75022),	-- Vinyeti
+				q(75027),	-- Aerial Domination
+				q(75028),	-- All the Broken Pieces
+				q(75029),	-- A Legacy, Reforged
+				q(75182),	-- Grand Theft Mammoth
+				q(75201),	--
+				q(75203),	--
+				q(75204),	--
+				q(75205),	--
+				q(75209),	--
+				q(75213),	--
+				q(75220),	--
+				q(75225),	--
+				q(75226),	--
+				q(75229),	--
+				q(75235),	--
+				q(75242),	--
+				q(75243),	--
+				q(75264),	--
+				q(75279),	--
+				q(75282),	--
+				q(75287),	--
+				q(75305),	-- Sparks of Life: Zaralek Cavern
+				q(75313),	--
+				q(75314),	-- Hadexia
+				q(75337),	--
+				q(75338),	-- Lavermix
+				q(75341),	--
+				q(75342),	-- Kronkapace
+				q(75372),	-- Drive Them Before Us
+				q(75376),	-- Suffuse, Reuse, Recycle
+				q(75389),	--
+				q(75398),	-- Honor the Flame
+				q(75408),	-- Calling All Dracthyr!
+				q(75415),	--
+				q(75416),	--
+				q(75417),	-- Symbol of Hope
+				q(75418),	--
+				q(75429),	--
+				q(75434),	--
+				q(75435),	--
+				q(75442),	--
+				q(75443),	--
+				q(75445),	--
+				q(75446),	--
+				q(75452),	--
+				q(75453),	--
+				q(75458),	--
+				q(75477),	--
+				q(75524),	--
+				q(75545),	--
+				q(75546),	--
+				q(75547),	--
+				q(75548),	--
+				q(75549),	--
+				q(75550),	--
+				q(75551),	--
+				q(75552),	--
+				q(75553),	--
+				q(75554),	--
+				q(75555),	--
+				q(75556),	--
+				q(75557),	--
+				q(75558),	--
+				q(75560),	--
+				q(75561),	--
+				q(75562),	--
+				q(75563),	--
+				q(75564),	--
+				q(75565),	--
+				q(75566),	--
+				q(75567),	--
+				q(75570),	--
+				q(75571),	--
+				q(75572),	--
+				q(75574),	--
+				q(75576),	-- Grim Guzzler Invasion!
+				q(75578),	--
+				q(75579),	--
+				q(75580),	--
+				q(75582),	--
+				q(75583),	--
+				q(75584),	--
+				q(75585),	--
+				q(75586),	--
+				q(75587),	--
+				q(75588),	--
+				q(75589),	--
+				q(75591),	--
+				q(75592),	--
+				q(75593),	--
+				q(75594),	--
+				q(75596),	--
+				q(75597),	--
+				q(75599),	--
+				q(75606),	--
+				q(75607),	--
+				q(75609),	--
+				q(75613),	--
+				q(75614),	--
+				q(75615),	--
+				q(75616),	--
+				q(75617),	-- Honor the Flame
+				q(75618),	--
+				-- 10.1.0.48537
+				q(75622),	-- Calling All Competitors!
+				q(75631),	--
+				q(75640),	-- Honor the Flame
+				q(75645),	-- Honor the Flame
+				q(75647),	-- Honor the Flame
+				q(75650),	-- Honor the Flame
+				-- 10.1.0.48661
+				q(75715),	--
+				q(75716),	--
+				q(75717),	--
+				q(75718),	--
+				q(75719),	-- [DNT] Test Quest
+				q(75726),	-- Sweaty Armor
+				q(75763),	--
+				q(75774),	--
+				q(75775),	--
+				q(75818),	--
+				q(75819),	--
+				q(75831),	-- Barter Up
+				q(75866),	--
+				-- 10.1.0.48776
+				q(75894),	--
+				q(75896),	--
+				q(75897),	--
+				q(75899),	--
+				q(75900),	--
+				q(75902),	--
+				q(75903),	--
+				q(75905),	--
+				q(75909),	--
+				q(75911),	--
+				q(75912),	--
+				q(75937),	-- No Time Like The Present
+				q(75947),	--
+				q(75968),	--
+				q(75995),	--
+				q(75999),	--
+				q(76001),	--
+				q(76002),	--
+				q(76005),	--
+				q(76006),	--
+				q(76007),	--
+				q(76008),	--
+				q(76009),	--
+				q(76010),	--
+				q(76012),	--
+				-- 10.1.0.48898
+				q(76029),	-- Dragon Isles Supplies
+				q(76031),	-- Dragon Isles Supplies
+				q(76082),	--
+				q(76104),	--
+				q(76105),	--
+				q(76106),	--
+				q(76107),	--
+				q(76108),	--
+				q(76109),	--
+				q(76111),	--
+				q(76112),	--
+				q(76113),	--
+				q(76114),	--
+				q(76123),	--
+				q(76127),	--
+				q(76130),	--
+				q(76131),	--
+				q(76132),	--
+				q(76133),	--
+				q(76136),	--
+				q(76139),	--
+				-- 10.1.0.49092
+				q(76172),	--
+				q(76173),	--
+				q(76174),	--
+				q(76200),	--
+				q(76202),	--
+				-- 10.1.0.49679
+				q(74924),	-- Nasz'uro, the Unbound Legacy
+				q(75623),	--
+				q(75659),	--
+				q(76087),	--
+				q(76178),	--
+				q(76179),	--
+				q(76180),	--
+				q(76181),	--
+				q(76182),	--
+				q(76183),	--
+				q(76184),	--
+				q(76185),	--
+				q(76186),	--
+				q(76187),	--
+				q(76188),	--
+				q(76189),	--
+				q(76190),	--
+				q(76191),	--
+				q(76192),	--
+				q(76193),	--
+				-- 10.1.0.49741
+				q(72943),	--
+				q(74521),	-- A Flame, Extinguished
+				q(75054),	--
+				q(75388),	-- The Azure Vaults
+				q(75391),	--
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
@@ -1133,7 +1351,6 @@ root(ROOTS.Unsorted, {
 				i(202202),	-- Revealing Mask
 				i(202396),	-- Plains Timber
 				i(202642),	-- Proto-Killing Spear
-				i(202874),	-- Healing Draught
 				i(203210),	-- Dragonscale Supply Box
 				i(203218),	-- Iskaara Supply Pouch
 				i(203221),	-- Maruuk Supply Sack
@@ -1187,15 +1404,16 @@ root(ROOTS.Unsorted, {
 				q(72716),	--
 				q(72718),	--
 				q(72906),	-- [DNT] Storm Pet Battle
-				q(74116),	-- PTR:Reach North
+				q(74116),	-- Reach North
 				q(74309),	--
 				q(74314),	--
 				q(74316),	--
 				q(74317),	--
-				q(74360),	-- PTR:Signed, Sealed, Delivered
-				q(74361),	-- PTR:Deprecated Quest
-				q(74362),	-- PTR:Deprecated Quest
+				q(74360),	-- Signed, Sealed, Delivered
+				q(74361),	-- Deprecated Quest
+				q(74362),	-- Deprecated Quest
 				q(74384),	--
+				q(74392),	-- Reach South
 				q(74418),	--
 				q(74427),	--
 				q(74478),	--
@@ -1212,7 +1430,7 @@ root(ROOTS.Unsorted, {
 				q(74761),	--
 				q(74762),	--
 				q(74763),	--
-				q(74774),	-- PTR:More Keys
+				q(74774),	-- More Keys
 				q(74890),	--
 				q(74891),	--
 				-- 10.0.7.47983
@@ -1253,6 +1471,8 @@ root(ROOTS.Unsorted, {
 				q(74541),	--
 				q(74672),	--
 				q(74677),	--
+				-- 10.0.7.48966
+				q(75449),	--
 			})
 		})),
 		tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {
@@ -1401,15 +1621,6 @@ root(ROOTS.Unsorted, {
 				i(203461),	-- Chronologically Reallocated Rations
 				i(204236),	-- Sack of Stolen Dragon Glyphs
 				i(204277),	-- Ruby Whelp Treat
-			}),
-			filter(MOUNTS, {
-				mount(397406),	-- [PH] Magical Fish Mount (MOUNT!)
-				i(203226),	-- Stormfused Salamanther (MOUNT!)
-				mount(395095),	-- Whelpling (MOUNT!)
-				i(190767),	-- Armored Golden Pterrordax (MOUNT!)
-				mount(367875),	-- Armored Siege Kodo (MOUNT!)
-				i(190539),	-- Coral-Stalker Waveray (MOUNT!)
-				i(190168),	-- Crusty Crawler (MOUNT!)
 			}),
 			n(PROFESSIONS, {
 				i(203382),	-- Peripheral Vision Projectors
@@ -1596,10 +1807,6 @@ root(ROOTS.Unsorted, {
 				q(74232),	--
 				q(74233),	--
 				q(74234),	--
-				q(74235),	--
-				q(74236),	--
-				q(74237),	--
-				q(74238),	--
 				q(74239),	--
 				q(74240),	--
 				-- 10.0.2.46999
@@ -2388,7 +2595,6 @@ root(ROOTS.Unsorted, {
 				q(70276),	--
 				-- 10.0.0.44795
 				q(70340),	-- Professions Quest - Part 5 - Challenge 2
-				q(70369),	-- Blasting the Past
 				q(70375),	-- The Rewards of Onboarding
 				q(70387),	--
 				q(70388),	--
@@ -2484,7 +2690,7 @@ root(ROOTS.Unsorted, {
 				-- 10.0.0.45335
 				q(70993),	--
 				q(71186),	--
-				q(71201),	-- Hide and Sneak
+				q(71201),	--
 				q(71214),	--
 				q(71226),	-- Kill Rock Snails
 				q(71236),	--
@@ -2520,8 +2726,6 @@ root(ROOTS.Unsorted, {
 				q(71927),	--
 				q(71928),	--
 				q(71929),	--
-				q(71937),	--
-				q(71938),	--
 				q(71949),	--
 				q(71968),	--
 				-- 10.0.0.45454
@@ -2551,6 +2755,7 @@ root(ROOTS.Unsorted, {
 				q(72257),	--
 				q(72307),	-- Thieving Gnolls
 			}),
+			--]]
 		})),
 	}),
 });

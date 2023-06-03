@@ -488,8 +488,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		tier(DF_TIER, {
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
-				-- Probably in game
-				--
 				i(194722, {	-- Carrier Yeti / Carrier Yeti (MOUNT!)
 					--["modelID"] = ,
 				}),
@@ -600,6 +598,47 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				mount(385771, {	-- PH Yellow Slyvern (MOUNT!)
 					--["modelID"] = ,
+				}),
+			})),
+
+			-- 10.0.5
+			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 10.0.5" } }, {
+				mount(397406, {	-- [PH] Magical Fish Mount (MOUNT!)
+					-- ["modelID"] =
+				}),
+				i(190767, {	-- Armored Golden Pterrordax (MOUNT!)
+					["modelID"] = 105477,
+				}),
+				mount(367875, {	-- Armored Siege Kodo (MOUNT!)
+					-- ["modelID"] =
+				}),
+				mount(369480, {	-- Cerulean Marsh Hopper
+					["modelID"] = 105766,
+				}),
+				i(190539, {	-- Coral-Stalker Waveray (MOUNT!)
+					["modelID"] = 105400,
+				}),
+				i(190168, {	-- Crusty Crawler (MOUNT!)
+					["modelID"] = 104791,
+				}),
+				i(203226, {	-- Stormfused Salamanther (MOUNT!)
+					-- ["modelID"] =
+				}),
+				mount(395095, {	-- Whelpling (MOUNT!)
+					["modelID"] = 107459,
+				}),
+			})),
+
+			-- 10.1.0
+			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 10.1.0" } }, {
+				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
+					["modelID"] = 112606,
+				}),
+				i(205206, {	-- Shalewing, Fire (MOUNT!)
+					-- ["modelID"] =
+				}),
+				i(205208, {	-- Shalewing, Stone (MOUNT!)
+					-- ["modelID"] =
 				}),
 			})),
 		}),

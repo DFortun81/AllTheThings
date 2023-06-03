@@ -2816,6 +2816,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(194011),	-- Frozen Spellthread+
 			i(194012),	-- Frozen Spellthread++
 			i(194013),	-- Frozen Spellthread+++
+			i(205411, {["timeline"]={ADDED_10_1_0}}),	-- Medical Wrap Kit
 			i(202287, {["timeline"]={ADDED_10_0_7}}),	-- Paw-Made Winterpelt Reagent Bag
 			i(205012, {["timeline"]={ADDED_10_1_0}}),	-- Reserve Parachute
 			i(193962),	-- Shimmering Embroidery Thread+
@@ -2884,6 +2885,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			-- Optional Reagents --
 			FirstCraft(71827, 376541);	-- Blue Silken Lining
 			FirstCraft(71828, 376542);	-- Bronzed Grip Wrappings
+			--FirstCraft(x, 409839, ADDED_10_1_0);	-- Medical Wrap Kit
 			--FirstCraft(x, 376542, ADDED_10_1_0);	-- Reserve Parachute
 			-- Finishing Reagents --
 			FirstCraft(71819, 376533);	-- Abrasive Polishing Cloth

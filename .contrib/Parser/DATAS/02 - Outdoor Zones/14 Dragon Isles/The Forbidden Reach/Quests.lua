@@ -307,6 +307,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73398, {	-- Too Far Forward
 				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
 				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202874),	-- Healing Draught
+				},
 			}),
 			q(73190, {	-- Toxic Infestation
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh

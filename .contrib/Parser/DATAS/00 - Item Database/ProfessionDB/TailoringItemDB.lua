@@ -157,6 +157,7 @@ i(203428, 400815);	-- Traditional Morqut Kite
 -- PATCH 10.1.0 --
 ------------------
 -- ITEM --
+i(205138, 409839);	-- Medical Wrap Kit
 i(204129, 403157);	-- Obsidian Combatant's Wildercloth Bands
 i(204130, 403149);	-- Obsidian Combatant's Wildercloth Cloak
 i(204131, 403152);	-- Obsidian Combatant's Wildercloth Gloves
@@ -168,8 +169,7 @@ i(204136, 403151);	-- Obsidian Combatant's Wildercloth Treads
 i(204137, 403150);	-- Obsidian Combatant's Wildercloth Tunic
 i(205139, 408304);	-- Reserve Parachute
 i(205140, 408318);	-- Undulating Sporecloak
--- Weird --
-i(205141, 408319);	-- Explorer's Banner [NYI?]
-i(205034, 408305);	-- Enormous Ball of Yarn [Think NYI?]
-i(0, 408316);	-- Spore-Infused Combat Bandage [NYI?] Switch itemID to Medical Wrap Kit?
-i(205138, 409839);	-- Medical Wrap Kit [NYI]
+-- NYI --
+i(0, 408316);	-- Spore-Infused Combat Bandage
+i(205141, 408319);	-- Explorer's Banner
+i(205142, 408305);	-- Enormous Ball of Yarn

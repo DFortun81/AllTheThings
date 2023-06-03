@@ -2,15 +2,12 @@
 137@@@<NYI> <TXT> Stormwind Commendation
 242@@@<UNUSED>
 259@@@<UNUSED>
-260@@@--
 352@@@<UNUSED>
 406@@@<UNUSED>
 462@@@<UNUSED>
 490@@@<UNUSED>
 497@@@<UNUSED>
-534@@@--
 548@@@<NYI> <TXT> Bloodstone Pendant
-612@@@--
 614@@@The Captain's Chest
 615@@@The Captain's Cutlass
 618@@@Facing Negolash
@@ -18,15 +15,11 @@
 636@@@Legends of the Earth <NYI>
 807@@@<UNUSED>
 810@@@<UNUSED>
-811@@@--
 814@@@<UNUSED>
 820@@@<UNUSED>
 839@@@<UNUSED>
-856@@@--
 934@@@Crown of the Earth
 946@@@<UNUSED>
-988@@@--
-989@@@--
 1155@@@<NYI> <TXT> bug crystal side quest
 1156@@@<NYI> <TXT> speak to alchemist pestlezugg
 1157@@@<NYI> <TXT> pestlezugg needs items
@@ -39,40 +32,27 @@
 1279@@@<nyi> <TXT>The Centaur Hoofprints
 1280@@@<nyi> <TXT>The Centaur Hoofprints
 1288@@@Vimes's Report
-1289@@@--
 1290@@@<nyi> Investigating Mosarn
-1291@@@--
-1292@@@--
 1293@@@<nyi> <TXT> Centaur Hoofprints
 1294@@@<nyi> <TXT>Centaur Sympathies
 1295@@@<nyi> <TXT> Course of Action
 1296@@@<nyi> <TXT> Course of Action
 1297@@@<nyi> <TXT> Course of Action
-1298@@@--
 1299@@@<nyi> <TXT> Thrall's Dirty Work
 1300@@@<nyi> <TXT> Lorn Grim Totem
-1390@@@--
-1397@@@--
 1441@@@<UNUSED>
-1443@@@--
 1460@@@<UNUSED>
 1461@@@<UNUSED>
 1531@@@Call of Air
 1532@@@Call of Air
-1533@@@--
 1537@@@<NYI> Call of Air
-1538@@@--
 1659@@@<UNUSED>
 1660@@@<UNUSED>
 1662@@@<UNUSED>
 1663@@@<UNUSED>
 1664@@@<UNUSED>
 2000@@@Rokar Bladeshadow
-2018@@@--
-2019@@@--
-2020@@@--
 2058@@@<UNUSED>
-2059@@@--
 2358@@@Horns of Nez'ra
 2868@@@<TXT> The Shriveled Heart
 2971@@@<UNUSED>
@@ -80,7 +60,6 @@
 2999@@@Tome of Divinity
 3000@@@Tome of Divinity
 3023@@@<UNUSED>
-3111@@@--
 3241@@@<NYI> <TXT><redux> Dreadmist Peak
 3383@@@<UNUSED>
 3384@@@<UNUSED>
@@ -94,25 +73,17 @@
 3425@@@<UNUSED>
 3482@@@<NYI> <TXT> The Pocked Black Box
 3515@@@<UNUSED>
-3516@@@--
 3529@@@<UNUSED>
-3530@@@--
-3531@@@--
 3622@@@<UNUSED>
-3623@@@--
-3624@@@--
 3885@@@<NYI> <TXT> The Gadgetzan Run
-3910@@@--
 4299@@@<NYI> <TXT>The Tomb of the Seven
 4323@@@<NYI> <TXT> Get those Hyenas!!!
-4541@@@--
 4905@@@<UNUSED>
 5101@@@Lee's Ultimate Test Quest... of Doom!
 5205@@@<UNUSED>
 5207@@@<NYI> <TXT> The True Summoner
 5208@@@<NYI> <TXT> The Blessing of Evil
 5209@@@<UNUSED>
-5303@@@--
 5304@@@<UNUSED>
 5506@@@<UNUSED>
 5512@@@<UNUSED>
@@ -140,7 +111,6 @@
 5645@@@A Lack of Fear
 5646@@@Devouring Plague
 5647@@@A Lack of Fear
-5653@@@--
 5654@@@Hex of Weakness
 5655@@@Hex of Weakness
 5656@@@Hex of Weakness
@@ -151,68 +121,16 @@
 5661@@@Touch of Weakness
 5662@@@Touch of Weakness
 5663@@@Touch of Weakness
-5664@@@--
-5665@@@--
-5666@@@--
-5667@@@--
-5668@@@--
-5669@@@--
-5670@@@--
-5671@@@--
 5673@@@Elune's Grace
 5674@@@Elune's Grace
 5675@@@Elune's Grace
 5677@@@Arcane Feedback
 5678@@@Arcane Feedback
-5681@@@--
-5682@@@--
-5683@@@--
-5684@@@--
-5685@@@--
-5686@@@--
-5687@@@--
-5688@@@--
-5689@@@--
-5690@@@--
-5691@@@--
-5692@@@--
-5693@@@--
-5694@@@--
-5695@@@--
-5696@@@--
-5697@@@--
-5698@@@--
-5699@@@--
-5700@@@--
-5701@@@--
-5702@@@--
-5703@@@--
-5704@@@--
-5705@@@--
-5706@@@--
-5707@@@--
-5708@@@--
-5709@@@--
-5710@@@--
-5711@@@--
-5712@@@--
-6003@@@--
 6165@@@<NYI> <TXT> Archmage Timolain's Remains
 6201@@@<UNUSED> The Legacy of the Ashbringer
-6202@@@--
 6606@@@A Little Luck
-6702@@@--
-6704@@@--
-6706@@@--
-6708@@@--
-6710@@@--
 6841@@@<UNUSED>
-6843@@@--
-7384@@@--
 7487@@@Attunement to the Core
-7521@@@--
-7522@@@--
-7561@@@--
 7637@@@Emphasis on Sacrifice
 7638@@@Lord Grayson Shadowbreaker
 7639@@@To Show Due Judgment
@@ -227,12 +145,9 @@
 7670@@@Lord Grayson Shadowbreaker
 7681@@@Hunter test quest
 7682@@@Hunter test quest2
-7741@@@--
 7788@@@Vanquish the Invaders!
 7789@@@Quell the Silverwing Usurpers
 7790@@@REUSE
-7869@@@--
-7870@@@--
 7871@@@Vanquish the Invaders!
 7872@@@Vanquish the Invaders!
 7873@@@Vanquish the Invaders!
@@ -242,16 +157,12 @@
 7904@@@<UNUSED>
 8080@@@Arathi Basin Resources!
 8123@@@Cut Arathor Supply Lines
-8152@@@--
 8154@@@Arathi Basin Resources!
 8155@@@Arathi Basin Resources!
 8156@@@Arathi Basin Resources!
 8160@@@Cut Arathor Supply Lines
 8161@@@Cut Arathor Supply Lines
 8162@@@Cut Arathor Supply Lines
-8230@@@--
-8247@@@--
-8248@@@--
 8266@@@Ribbons of Sacrifice
 8268@@@Ribbons of Sacrifice
 8290@@@Vanquish the Invaders
@@ -270,24 +181,16 @@
 8973@@@REUSE
 9031@@@<TXT>Anthion's Parting Words
 9065@@@The Pattymac Special
-9378@@@--
 9411@@@<UNUSED>Infused Bandages
 9412@@@<UNUSED>Crystal Flake Throat Lozenge
 9413@@@<UNUSED>Crystal Flake Throat Lozenge
 9414@@@<UNUSED>Infused Bandages
 9556@@@To The Victor...
-55296@@@--
-60860@@@--
 60863@@@[Never used]
 60864@@@[Never used]
 60865@@@[Never used]
 60866@@@[Never used]
 60868@@@[Never used]
-60870@@@--
-61547@@@--
-63769@@@--
-8571@@@--
-65309@@@--
 65593@@@Hearts of the Lovers
 65597@@@The Binding
 65601@@@Love Hurts
@@ -295,29 +198,9 @@
 65603@@@The Binding
 65604@@@The Binding
 65610@@@Wish You Were Here
-65616@@@--
-66145@@@--
-66193@@@--
-66281@@@--
-66286@@@--
-66287@@@--
-66288@@@--
-66289@@@--
-66290@@@--
-66291@@@--
-66292@@@--
-66293@@@--
-66294@@@--
-66295@@@--
-66317@@@--
-66318@@@--
-8337@@@--
 8339@@@Royalty of the Council <NYI> <TXT> UNUSED
-8340@@@--
 8344@@@Windows to the Source
 9168@@@Heart of Deatholme
-9306@@@--
-9307@@@--
 9308@@@<DEPRECATED>Blood Elf Remains?
 9316@@@[TXT] Goblin Savages
 9347@@@Voidwalkers Gone Wild
@@ -333,9 +216,7 @@
 9485@@@Taming the Beast
 9486@@@Taming the Beast
 9497@@@Emblem of the Fel Horde
-9507@@@--
 9532@@@Find Keltus Darkleaf
-9546@@@--
 9547@@@Call of Air
 9551@@@Call of Air
 9552@@@Call of Air
@@ -347,8 +228,6 @@
 9591@@@Taming the Beast
 9592@@@Taming the Beast
 9593@@@Taming the Beast
-9596@@@--
-9597@@@--
 9599@@@<UNUSED>
 9613@@@Deprecated: Keanna's Will
 9614@@@Deprecated: Reforge a Short Blade
@@ -368,12 +247,7 @@
 9660@@@Deprecated: Lethality First
 9661@@@Deprecated: A Well Rounded Defense
 9662@@@Deprecated: Keanna's Freedom
-9679@@@--
 9712@@@The Thalassian Warhorse
-9713@@@--
-9745@@@--
-9754@@@--
-9755@@@--
 9757@@@Seek Huntress Kella Nightbow
 9767@@@Know Your Enemy
 9768@@@Coilfang Spellbooks
@@ -382,10 +256,6 @@
 9926@@@FLAG Shadow Council/Warmaul Questline
 10080@@@Forge Camps of the Legion
 10083@@@The Legion's Plans
-10181@@@--
-10215@@@--
-10217@@@--
-10219@@@--
 10244@@@R.T.F.R.C.M.
 10260@@@Netherologist Coppernickels
 10292@@@More Power!
@@ -406,7 +276,6 @@
 10534@@@Returning Home
 10535@@@Arathi Basin Resources!
 10539@@@Returning Home
-10591@@@--
 10605@@@Carendin Summons
 10616@@@<nyi>Breadcrumb
 10631@@@Back In Business
@@ -428,8 +297,6 @@
 11121@@@DAILY TEST QUEST (RAID)
 11125@@@[PH] New Hinterlands Quest
 11127@@@<NYI>Thunderbrew Secrets
-11197@@@--
-11226@@@--
 11335@@@Call to Arms: Arathi Basin
 11336@@@Call to Arms: Alterac Valley
 11337@@@Call to Arms: Eye of the Storm
@@ -438,7 +305,6 @@
 11340@@@Call to Arms: Alterac Valley
 11341@@@Call to Arms: Eye of the Storm
 11342@@@Call to Arms: Warsong Gulch
-11353@@@--
 11425@@@Test Quest - Craig
 11435@@@Gathered Pumpkins NYI
 11437@@@[PH] Beer Garden A
@@ -446,14 +312,6 @@
 11444@@@[PH] Beer Garden A
 11445@@@[PH] Beer Garden B
 11493@@@UNUSED
-11577@@@--
-11588@@@--
-11589@@@--
-11874@@@--
-11974@@@--
-12186@@@--
-12187@@@--
-12600@@@--
 63448@@@A Deluxe Delivery
 63450@@@A Deluxe Delivery
 63546@@@[NEVER USED]
@@ -466,11 +324,8 @@
 63978@@@Cloak and Daggers
 64028@@@A New Beginning
 64031@@@Tools for Survival
-64032@@@--
-64033@@@--
 64034@@@Combat Training
 64035@@@Talented
-64036@@@--
 64037@@@Eastern Plaguelands
 64038@@@The Dark Portal
 64046@@@A New Beginning
@@ -485,8 +340,6 @@
 64062@@@Unused
 64063@@@The Dark Portal
 64064@@@Eastern Plaguelands
-64071@@@--
-64095@@@--
 64128@@@Eastern Plaguelands
 64139@@@A Summons from Lady Liadrin
 64140@@@The Master's Path
@@ -495,10 +348,8 @@
 64143@@@True Masters of the Light
 64144@@@True Masters of the Light
 64217@@@The Dark Portal
-64275@@@--
 64319@@@A Study in Power
 9298@@@reuse
-10549@@@--
 65284@@@Goblin Gumbo Kettle
 65285@@@Goblin Gumbo Kettle
 65561@@@Tabard of Flame
@@ -510,14 +361,11 @@
 11463@@@Pirates of the North Seas
 11578@@@The "Chow" Quest (123)aa COPY
 11579@@@The "Chow" Quest (123)aa COPY
-11934@@@--
 11992@@@Navigation Charts (Deprecated)
-11994@@@--
 12001@@@zzOLDHunting Tarot: Lesser Beasts
 12015@@@Test Quest for Craig
 12018@@@Sweet Revenge
 12021@@@A Letter Home
-12023@@@--
 12024@@@Recording the Fallen
 12025@@@A Scarlet Among Us
 12087@@@A Little Help Here? DEPRECATED
@@ -527,17 +375,12 @@
 12163@@@The Evil Below
 12313@@@UNUSED Save Brewfest!
 12426@@@DEPRECATED
-12445@@@--
 12493@@@PvP Test
 12586@@@In Search of Bigger Game
 12601@@@The Alchemist's Apprentice
 12602@@@The Alchemist's Apprentice
 12625@@@Dominion Over Acherus
-12626@@@--
 12682@@@Uncharted Territory (DEPRECATED)
-12731@@@--
-12764@@@--
-12765@@@--
 12780@@@DEPRICATED>>Enemy of Our Enemy
 12825@@@Expressions of Gratitude
 12834@@@Not Rain, Nor Snow, Nor Exploding Plane
@@ -545,12 +388,8 @@
 12837@@@Tore's Got the Goods
 12881@@@The Brothers Bronzebeard
 12923@@@
-13123@@@--
 13173@@@Amidst the Confusion
-13210@@@--
 13299@@@ZZOLDWisp Cloak
-13303@@@--
-13317@@@----
 13378@@@Chief Engineer Copperclaw
 13404@@@Static Shock Troops: the Bombardment
 13405@@@Call to Arms: Strand of the Ancients
@@ -565,7 +404,6 @@
 13915@@@Hungry, Hungry Hatchling
 13916@@@Poached, Scrambled, Or Raw?
 13917@@@Gorishi Grub
-13990@@@--
 13997@@@If You're Reading This While I'm In Combat...
 14032@@@Kobold Camp Cleanup
 14163@@@Call to Arms: Isle of Conquest
@@ -576,19 +414,13 @@
 14181@@@Call to Arms: Arathi Basin
 14182@@@Call to Arms: Eye of the Storm
 14183@@@Call to Arms: Warsong Gulch
-14185@@@--
-14186@@@--
-14187@@@--
-14200@@@--
 14349@@@The Call to Command
 14350@@@The Crimson Courier
 14351@@@Battle of Hillsbrad
-14409@@@--
 14418@@@The Deathstalkers
 14419@@@The Deathstalkers
 14420@@@The Deathstalkers
 14421@@@The Deathstalkers
-14441@@@--
 24216@@@Call to Arms: Warsong Gulch
 24217@@@Call to Arms: Warsong Gulch
 24218@@@Call to Arms: Warsong Gulch
@@ -600,11 +432,8 @@
 24224@@@Call to Arms: Warsong Gulch
 24225@@@Call to Arms: Warsong Gulch
 24226@@@Call to Arms: Arathi Basin
-24227@@@--
 24426@@@Call to Arms: Alterac Valley
 24427@@@Call to Arms: Alterac Valley
-24508@@@--
-24509@@@--
 24746@@@REUSE
 24869@@@Deprogramming
 24870@@@Securing the Ramparts
@@ -618,10 +447,6 @@
 24878@@@Residue Rendezvous
 24879@@@Blood Quickening
 24880@@@Respite for a Tormented Soul
-25238@@@--
-70349@@@--
-66990@@@--
-66991@@@--
 70354@@@Northrend Expedition Supplies
 70356@@@Northrend Expedition Supplies
 70395@@@A New Beginning
@@ -632,6 +457,100 @@
 70411@@@To the Dockmaster
 70448@@@Elite Northrend Expedition Supplies
 70449@@@Elite Northrend Expedition Supplies
+70734@@@Tools for Survival
+70735@@@Combat Training
+70736@@@Talented
+70737@@@To the Zeppelin Master
+70761@@@Tools for Survival
+70762@@@A New Beginning
+70764@@@Combat Training
+70765@@@Talented
+70862@@@Hoplet
+70863@@@Hoplet
+70865@@@To Shattrath City
+70868@@@Talented
+70869@@@Talented
+70870@@@Talented
+70998@@@Frosty
+70999@@@Frosty
+72522@@@Festering Emerald Drake
+72523@@@Festering Emerald Drake
+11691@@@Summon Ahune
+11883@@@Fire Dancing?
+12420@@@Brew of the Month Club
+12421@@@Brew of the Month Club
+11621@@@The Tablet of Leviroth
+11622@@@Secrets of Riplash
+12590@@@Blahblah[PH]
+12816@@@Investigate the Scourge of Silvermoon
+12817@@@Investigate the Scourge of Exodar
+9357@@@Report to Aeldon Sunbrand
+2018@@@--
+2019@@@--
+6843@@@--
+7521@@@--
+7522@@@--
+7561@@@--
+9378@@@--
+55296@@@--
+60860@@@--
+60870@@@--
+61547@@@--
+63769@@@--
+65309@@@--
+65616@@@--
+66145@@@--
+66193@@@--
+66281@@@--
+66286@@@--
+66287@@@--
+66288@@@--
+66289@@@--
+66290@@@--
+66291@@@--
+66292@@@--
+66293@@@--
+66294@@@--
+66295@@@--
+66317@@@--
+66318@@@--
+9546@@@--
+9713@@@--
+10217@@@--
+10219@@@--
+64032@@@--
+64033@@@--
+64036@@@--
+64071@@@--
+64095@@@--
+64275@@@--
+10549@@@--
+66990@@@--
+66991@@@--
+11934@@@--
+11994@@@--
+12023@@@--
+12445@@@--
+12626@@@--
+12731@@@--
+12764@@@--
+12765@@@--
+13123@@@--
+13210@@@--
+13303@@@--
+13317@@@----
+13990@@@--
+14185@@@--
+14186@@@--
+14187@@@--
+14200@@@--
+14409@@@A Cautious Return
+14441@@@--
+24227@@@--
+24508@@@--
+24509@@@--
+25238@@@--
+70349@@@--
 70663@@@--
 70664@@@--
 70665@@@--
@@ -666,26 +585,10 @@
 70694@@@--
 70695@@@--
 70696@@@--
-70734@@@Tools for Survival
-70735@@@Combat Training
-70736@@@Talented
-70737@@@To the Zeppelin Master
 70760@@@--
-70761@@@Tools for Survival
-70762@@@A New Beginning
-70764@@@Combat Training
-70765@@@Talented
 70855@@@--
 70860@@@--
 70861@@@--
-70862@@@Hoplet
-70863@@@Hoplet
-70865@@@To Shattrath City
-70868@@@Talented
-70869@@@Talented
-70870@@@Talented
-70998@@@Frosty
-70999@@@Frosty
 71098@@@--
 71099@@@--
 71100@@@--
@@ -724,17 +627,5 @@
 71133@@@--
 71134@@@--
 72433@@@--
-72522@@@Festering Emerald Drake
-72523@@@Festering Emerald Drake
-11691@@@Summon Ahune
-11883@@@Fire Dancing?
-12420@@@Brew of the Month Club
-12421@@@Brew of the Month Club
-11621@@@The Tablet of Leviroth
-11622@@@Secrets of Riplash
-12590@@@Blahblah[PH]
-12816@@@Investigate the Scourge of Silvermoon
-12817@@@Investigate the Scourge of Exodar
-25286@@@--
 76175@@@--
-9357@@@Report to Aeldon Sunbrand
+25286@@@--

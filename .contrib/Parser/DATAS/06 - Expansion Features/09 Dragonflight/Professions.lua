@@ -2889,5 +2889,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(76129),	-- After turn in 75150 (Incandescence)
 		q(76137),	-- After turn in 75368 (Stones and Scales)
 		q(76138),	-- After turn in 75407 (Silk Scavenging)
+
+		q(76125),	-- After turn in 75371 (Fascinating Fungi)
+		q(76135),	-- After turn in 75602 (Chips off the Old Crystal Block)
+		q(76124),	-- After turn in 75363 (Deepflayer Dust)
+		q(76134),	-- After turn in 75362 (Cephalo-Crystalization)
 	}),
 }));

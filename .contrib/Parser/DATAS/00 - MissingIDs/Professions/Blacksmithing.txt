@@ -29,6 +29,13 @@ r(413757),	-- Death's Gamble
 r(413758),	-- Belt of the Mentor
 r(413760),	-- Stygian Shield
 r(414590),	-- Feet Picklers
+10.1.5.49719
+r(416682),	-- Intrepid Shortblade
+r(416683),	-- Valiant Shortblade
+r(416687),	-- Sacred Guardian
+r(416688),	-- Ichor Slicer
+10.1.5.49824
+r(414567),	-- Undeath Metal
 
 
 
@@ -66,3 +73,10 @@ r(413757),	-- Death's Gamble
 r(413758),	-- Belt of the Mentor
 r(413760),	-- Stygian Shield
 r(414590),	-- Feet Picklers
+10.1.5.49719
+r(416682),	-- Intrepid Shortblade
+r(416683),	-- Valiant Shortblade
+r(416687),	-- Sacred Guardian
+r(416688),	-- Ichor Slicer
+10.1.5.49824
+r(414567),	-- Undeath Metal

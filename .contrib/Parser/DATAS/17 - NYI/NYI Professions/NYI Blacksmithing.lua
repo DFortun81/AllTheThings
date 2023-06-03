@@ -277,6 +277,16 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(190520),	-- zzOldPauldrons of the Dragon
 						i(190521),	-- zzOldTraitorous Primal Gauntlets of the Dragon
 					})),
+
+					-- 10.1.0
+					tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
+						i(205040),	-- Shadowed Belt Buckle
+						i(205041),	-- Shadowed Belt Buckle
+						i(205042),	-- Shadowed Belt Buckle
+						i(205047),	-- Shadowed Impact Buckler
+						i(205048),	-- Shadowed Impact Buckler
+						i(205049),	-- Shadowed Impact Buckler
+					})),
 				}),
 			}),
 			filter(RECIPES, {

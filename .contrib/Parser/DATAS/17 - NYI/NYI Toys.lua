@@ -115,6 +115,10 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(199926),	-- Portable J.A.M. (TOY!)
 				i(197961),	-- Whelps on Strings (TOY!)
 			}),
+			tier(DF_TIER, 1.0, {
+				i(205034),	-- Enormous Ball of Yarn (TOY!)
+				i(205027),	-- Explorer's Banner (TOY!)
+			}),
 		}),
 	}),
 }));

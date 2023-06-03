@@ -3,9 +3,10 @@
 -----------------------------------------------------
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 	inst(1209, {	-- Dawn of the Infinite
-		--["coord"] = { X, Y, THALDRASZUS },
-		--["maps"] = {
-		--},
+		["coord"] = { 61.0, 84.3, THALDRASZUS },
+		["maps"] = {
+			2190,	-- Sanctum of Chronology
+		},
 		["g"] = {
 			n(QUESTS, {
 				q(76140, {	-- Dawn of the Infinite

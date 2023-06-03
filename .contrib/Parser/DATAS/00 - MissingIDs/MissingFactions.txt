@@ -630,7 +630,7 @@ faction(2548),	-- Valdrakken Accord (Renown)
 faction(2551),	-- Iskaara Tuskarr (Paragon)
 faction(2552),	-- Valdrakken Accord (Paragon)
 10.0.0.44999
-faction(2553),	-- Timewalkers
+faction(2553),	-- Soridormi \\ Timewalkers
 10.0.0.45141
 faction(2554),	-- Clan Toghus
 faction(2555),	-- Clan Kaighan

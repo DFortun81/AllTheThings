@@ -7,3 +7,5 @@ title(480),	-- %s, Knight of Feathersworth
 10.1.5.49516
 title(496),	-- Kalimdor Racer %s
 title(510),	-- Whelptender %s
+10.1.5.49824
+title(513),	-- %s Unparalleled

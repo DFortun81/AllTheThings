@@ -56,7 +56,7 @@ def get_quest_names() -> None:
         "CLASSIC": "classic",
         "TBC": "tbc",
         "WOTLK": "wotlk",
-        "PTR": "ptr",
+        "PTR": "ptr-2",
     }
     raw_path_dict: dict[str, Path] = {
         expansion: Path("Raw", "QuestNames", f"{expansion}.txt")

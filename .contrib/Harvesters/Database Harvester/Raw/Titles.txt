@@ -648,3 +648,5 @@
 10.1.5.49516
 496@@@Kalimdor Racer %s
 510@@@Whelptender %s
+10.1.5.49824
+513@@@%s Unparalleled

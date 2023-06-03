@@ -660,6 +660,7 @@ i(203463);	-- Atrenosh's Journal
 i(202181);	-- Best-root Tuber
 i(202185);	-- Chillwrought Worm Meat
 i(202394);	-- Fresh Plains Meat
+i(202244);	-- Frosty Foraged Foods
 i(203689);	-- Horn Signet of Tetsos
 i(203692);	-- Horn Signet of Arrosh
 i(203697);	-- Horn Signet of Ekrati
@@ -667,6 +668,7 @@ i(203698);	-- Horn Signet of Talon Hermin
 i(204093);	-- Lunker Morsel
 i(202713);	-- Scattered Supplies
 i(198834);	-- Scribbled Bark Chunks
+i(202246);	-- Winterpelt Jewelry
 -- Stupid Stuff
 i(205241);	-- Bone Necklace
 i(204442);	-- Clump of Tar
@@ -712,6 +714,7 @@ i(203394);	-- Elementally Charged Orb
 i(204433);	-- Everburning Fireshard
 i(205797);	-- Filthy Bundle
 i(203385);	-- Flamesight Rune
+i(204801);	-- Gelcap Spores
 i(205169);	-- Glimmer Mushroom
 i(205179);	-- Glimmerfish Scale
 i(204067);	-- Glowing Crystal

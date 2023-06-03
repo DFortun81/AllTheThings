@@ -90,6 +90,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72445 },	-- To Northshire
 					["provider"] = { "n", 198983 },	-- Master Mathias Shaw
 					["coord"] = { 27.9, 66.7, NORTHSHIRE_VALLEY },
+					["g"] = {
+						i(202238),	-- Enforcer Grant's Signet
+						i(204173),	-- Enforcer Horb's Signet
+						i(204171),	-- Enforcer Jennive's Signet
+						i(204172),	-- Enforcer Tera's Signet
+					},
 				}),
 				q(72446, {	-- What's Their Problem?
 					["sourceQuests"] = { 72445 },	-- To Northshire

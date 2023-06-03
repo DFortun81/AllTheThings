@@ -158,12 +158,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205906),	-- Feathered Friend
 					i(205912),	-- Leather-Wrapped Flask
 					i(205911),	-- Mysterious Incense
+					i(205900),	-- Shimmering Draconic Gem
 					i(205907),	-- Soaked Totem
 					i(205909),	-- Stretched Canvas
 					i(205795),	-- Wriggling Worm
 				})),
 				n(QUESTS, {
-					-- Proof of Myrrit --
+					-- Intro Quests --
 					q(74876, {	-- The Buddy System
 						["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 						["provider"] = { "n", 201426 },	-- Myrrit
@@ -194,111 +195,68 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 202766 },	-- Myrrit
 						["coord"] = { 54.6, 54.4, ZARALEK_CAVERN },
 					}),
-
+				}),
+				n(QUESTS, sharedData({
+					["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+					["g"] = {
+						i(204985),  -- 2x Barter Brick
+					},
+				}, {
 					-- Sniffen Sage --
 					q(75772, {	-- Flask Manage
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205912 },	-- Leather-Wrapped Flask
 						["coord"] = { 58.5, 56.4, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
 					q(75770, {	-- A Glass of Bubbly
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205910 },	-- Bubbling Elixir
 						["coord"] = { 56.7, 52.9, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
 					q(75769, {	-- Drawing a Blank
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205909 },	-- Stretched Canvas
 						["coord"] = { 58.5, 51.5, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
 					q(75771, {	-- Incense Replay
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205911 },	-- Mysterious Incense
 						["coord"] = { 56.0, 57.5, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
 					q(75767, {	-- Good Time Boy
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205907 },	-- Soaked Totem
 						["coord"] = { 56.0, 50.9, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
 					q(75773, {	-- Little Blank Book
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205913 },	-- Blank Notebook
 						["coord"] = { 60.1, 57.4, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
 					q(75765, {	-- Liquid Art
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205366 },	-- Dripping Clay Pot
 						["coord"] = { 55.0, 48.9, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
 					q(75768, {	-- Lucky Ducky
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205906 },	-- Feathered Friend
 						["coord"] = { 58.7, 50.0, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
-					--[[
 					q(75766, {	-- Ruby in the Rough
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205900 },	-- Shimmering Draconic Gem
-						["coord"] = { x, y, ZARALEK_CAVERN },
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
-					}),]]--
+						-- ["coord"] = { x, y, ZARALEK_CAVERN },
+					}),
 
 					-- Treasurewhiskers --
 					q(75998, {	-- Crispety Crunchety
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205901 },	-- Crunchy Beetle
 						["coord"] = { 57.3, 49.3, ZARALEK_CAVERN },
 						["isWeekly"] = true,
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
 					q(76004, {	-- Deep Cuts
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205902 },	-- Deepflayer Claw
 						["coord"] = { 57.6, 56.4, ZARALEK_CAVERN },
 						["isWeekly"] = true,
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
 					q(75936, {	-- Slimy Yet Satisfying
-						["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
 						["provider"] = { "i", 205795 },	-- Wriggling Worm
 						["coord"] = { 56.9, 52.1, ZARALEK_CAVERN },
 						["isWeekly"] = true,
-						["g"] = {
-							i(204985),  -- 2x Barter Brick
-						},
 					}),
-				}),
+				})),
 				n(REWARDS, {
 					i(205260),	-- Fleeting Glowspores
 					i(205288),	-- Buried Niffen Collection (Frostfire)

@@ -1267,56 +1267,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			}),
 
 			-- #if AFTER 10.1.5
-			-- Red Dragonflight Storyline
-			q(72664, {	-- Eggs in Abundance
-				-- ["sourceQuests"] = {  },	--
-				["provider"] = { "n", 197478 },	-- Herald Flaps
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
-			}),
-			q(72665, {	-- Whelptender's Wisdom
-				["sourceQuests"] = { 72664 },	-- Eggs in Abundance
-				["provider"] = { "n", 187130 },	-- Amella
-				["coord"] = { 62.2, 73.4, THE_WAKING_SHORES },
-			}),
-			q(72666, {	-- Daycare Director Agapanthus
-				["sourceQuests"] = { 72665 },	-- Whelptender's Wisdom
-				["provider"] = { "n", 191881 },	-- Lasztak
-				["coord"] = { 55.1, 63.6, THE_WAKING_SHORES },
-			}),
-			q(73021, {	-- A Lesson in Responsibility
-				["sourceQuests"] = { 72666 },	-- Daycare Director Agapanthus
-				["provider"] = { "n", 182082 },	-- Agapanthus
-				["coord"] = { 13.3, 57.2, VALDRAKKEN },
-			}),
-			q(72668, {	-- A Nuturing Enviroment
-				["sourceQuests"] = { 72666 },	-- Daycare Director Agapanthus
-				["provider"] = { "n", 182082 },	-- Agapanthus
-				["coord"] = { 13.3, 57.2, VALDRAKKEN },
-			}),
-			q(72667, {	-- Snack Run
-				["sourceQuests"] = { 72666 },	-- Daycare Director Agapanthus
-				["provider"] = { "n", 182082 },	-- Agapanthus
-				["coord"] = { 13.3, 57.2, VALDRAKKEN },
-			}),
-			q(72454, {	-- The Obsidian Hatchling
-				["sourceQuests"] = {
-					73021,	-- A Lesson in Responsibility
-					72668,	-- A Nuturing Enviroment
-					72667,	-- Snack Run
-				},
-				["provider"] = { "n", 199259 },	-- Lasztak
-				["coord"] = { 13.3, 57.5, VALDRAKKEN },
-			}),
-			q(72455, {	-- Warmth and Comfort
-				["sourceQuests"] = {
-					73021,	-- A Lesson in Responsibility
-					72668,	-- A Nuturing Enviroment
-					72667,	-- Snack Run
-				},
-				["provider"] = { "n", 199259 },	-- Lasztak
-				["coord"] = { 13.3, 57.5, VALDRAKKEN },
-			}),
-
 
 
 

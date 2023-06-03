@@ -96,9 +96,6 @@ r(310940),	-- Modified Crafting Reagent 08
 r(310949),	-- Shadowlands Tailoring
 9.0.1.35679
 r(343634),	-- Shadowlands Cloth Scavenging
-10.1.0.48480
-r(408305),	-- Enourmous Ball of Yarn
-r(408316),	-- Spore-Infused Combat Bandage
 10.1.5.49516
 r(413490),	-- Glacial Chapeau
 r(413491),	-- Glacial Epaulets
@@ -109,6 +106,8 @@ r(413747),	-- Bindings of the Harvested Soul
 r(413754),	-- Necrotic Gown
 r(413788),	-- Shroud of Forbidden Magic
 r(413903),	-- Peculiar Glacial Mantle
+10.1.5.49824
+r(414564),	-- Cursed Cloth
 
 
 
@@ -1273,3 +1272,5 @@ r(413747),	-- Bindings of the Harvested Soul
 r(413754),	-- Necrotic Gown
 r(413788),	-- Shroud of Forbidden Magic
 r(413903),	-- Peculiar Glacial Mantle
+10.1.5.49824
+r(414564),	-- Cursed Cloth
