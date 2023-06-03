@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(KUN_LAI_SUMMIT, {
 			n(ACHIEVEMENTS, {
@@ -252,4 +251,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

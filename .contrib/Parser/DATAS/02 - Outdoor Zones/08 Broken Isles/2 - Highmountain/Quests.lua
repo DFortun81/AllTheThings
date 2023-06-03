@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(QUESTS, {
@@ -993,7 +992,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(40609),	-- 7.0 Highmountain - Vignette - Windripper Peak - Taurson - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing The Beastly Boxer

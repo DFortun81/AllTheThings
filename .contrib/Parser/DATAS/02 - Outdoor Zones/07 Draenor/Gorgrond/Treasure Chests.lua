@@ -71,8 +71,7 @@ local COMMON_TREASURE_SYM = {{"select","itemID",
 	116704,	-- Evermorn Ring
 }};
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(GORGROND, {
 			n(TREASURES, {
@@ -591,4 +590,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

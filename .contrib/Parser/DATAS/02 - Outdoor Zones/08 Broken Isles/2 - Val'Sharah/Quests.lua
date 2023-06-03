@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(QUESTS, {
@@ -746,7 +745,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(38666),	-- entering the burning house during 38644	(The Farmsteads)

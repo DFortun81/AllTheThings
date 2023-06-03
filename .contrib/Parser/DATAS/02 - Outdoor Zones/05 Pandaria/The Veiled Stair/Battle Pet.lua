@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(THE_VEILED_STAIR, {
 			petbattle(filter(BATTLE_PETS, {
@@ -15,4 +14,4 @@ _.Zones =
 			})),
 		}),
 	}),
-};
+});

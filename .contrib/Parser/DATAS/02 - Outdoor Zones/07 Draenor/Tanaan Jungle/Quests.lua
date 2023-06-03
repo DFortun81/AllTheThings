@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(TANAAN_JUNGLE, {
 			n(QUESTS, {
@@ -601,7 +600,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(38836),	-- Aktar's Post - Aktar's Post visited

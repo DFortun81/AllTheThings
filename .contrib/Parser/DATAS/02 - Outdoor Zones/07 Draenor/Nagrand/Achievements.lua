@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(DRAENOR_NAGRAND, {
 			n(ACHIEVEMENTS, {
@@ -147,7 +146,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(37250),	-- Broken Precipice POI Tracking Quest - triggers after finding Krog the Dominator's Hammer (achievementID 9610)

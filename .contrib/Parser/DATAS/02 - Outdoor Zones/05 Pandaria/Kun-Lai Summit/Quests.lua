@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(KUN_LAI_SUMMIT, {
 			n(QUESTS, {
@@ -1458,7 +1457,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(30453),	-- Binan Village Intro Event Tracking Event - triggeres when flying into Binan village through the Ancient Passage on mount

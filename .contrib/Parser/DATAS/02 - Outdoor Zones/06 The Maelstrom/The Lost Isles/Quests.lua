@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(948, {	-- The Maelstrom
 		m(174, {	-- The Lost Isles
 			n(QUESTS, {
@@ -587,7 +586,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(WEAPONS, {

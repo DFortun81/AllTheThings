@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
 			n(VENDORS, {
@@ -311,7 +310,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(47256),	-- learning Arsenal: Armaments of the Silver Hand

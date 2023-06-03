@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(THE_VEILED_STAIR, {
 			n(QUESTS, {
@@ -30,7 +29,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		n(WEAPONS, {

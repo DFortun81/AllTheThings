@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(DRAENOR_SHADOWMOON_VALLEY, {
 			n(ZONE_DROPS, {
@@ -17,7 +16,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(ARMOR, {

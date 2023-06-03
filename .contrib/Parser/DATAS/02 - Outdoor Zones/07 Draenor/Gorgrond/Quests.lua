@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(GORGROND, {
 			n(QUESTS, {
@@ -1997,7 +1996,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(36249),	-- Active Choice: Lumbermill - triggers if the Lumbermill is currently active

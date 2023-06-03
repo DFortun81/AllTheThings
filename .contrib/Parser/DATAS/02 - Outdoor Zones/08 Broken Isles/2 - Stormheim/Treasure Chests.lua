@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
 			n(TREASURES, {
@@ -272,4 +271,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

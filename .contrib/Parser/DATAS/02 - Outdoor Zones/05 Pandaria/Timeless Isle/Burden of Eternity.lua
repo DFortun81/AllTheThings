@@ -4,8 +4,7 @@
 --[[
 -- NOTE: Leaving this document in here if we ever adjust toolips to function properly.
 -- This would be the desired format for how upgrades should be.
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(TIMELESS_ISLE, {
 			n(-799, {	-- Burden of Eternity
@@ -548,5 +547,5 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 --]]--

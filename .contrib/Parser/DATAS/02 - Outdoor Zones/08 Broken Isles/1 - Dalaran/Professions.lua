@@ -196,8 +196,7 @@ local THE_WISH_REMOVER = {
 	COIN_BY_LURE(56, 138948),	-- Li Li's Coin
 };
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(PROFESSIONS,  {
@@ -599,4 +598,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

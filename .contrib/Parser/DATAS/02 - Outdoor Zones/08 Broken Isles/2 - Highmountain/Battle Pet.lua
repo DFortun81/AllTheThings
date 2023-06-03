@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			petbattle(filter(BATTLE_PETS, {
@@ -120,4 +119,4 @@ _.Zones =
 			})),
 		}),
 	}),
-};
+});

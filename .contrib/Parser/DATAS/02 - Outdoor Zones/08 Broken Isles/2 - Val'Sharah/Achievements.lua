@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(ACHIEVEMENTS, {
@@ -198,4 +197,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

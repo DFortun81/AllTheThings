@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(672, {	-- Mardum, the Shattered Abyss
 			["lore"] = "Mardum, the Shattered Abyss, colloquially known simply as Mardum and originally called the Plane of Banishment, is a prison world that was created by Sargeras prior to his becoming the Fallen Titan to hold all the demons he killed in the Great Dark Beyond. After his decision to destroy all world-souls in the universe, Sargeras shattered Mardum to free the demons that would become his Burning Legion. This is the starting scenario for Demon Hunters.",
@@ -539,7 +538,7 @@ _.Zones =
 			},
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(40375),	-- A New Direction: Obtained Altruis - chose Altruis during "A New Direction" (questID 40373) in the Vault of the Wardens scenario

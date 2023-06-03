@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		n(QUESTS, {
 			q(31055, {    -- Between a Saurok and a Hard Place
@@ -44,4 +43,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		o(239828, {	-- Edge of Reality
 			["description"] = "When you click on the Edge of Reality, it will teleport you.  Click on the egg to receive the mount.\n\nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you.",
@@ -51,7 +50,7 @@ _.Zones =
 			},
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(37864),	-- Voidtalon of the Dark Star - triggers after the player leaves the scenario

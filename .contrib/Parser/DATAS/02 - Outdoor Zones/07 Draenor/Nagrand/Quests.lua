@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(DRAENOR_NAGRAND, {
 			n(QUESTS, {
@@ -1356,7 +1355,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34679),	-- Alliance Stables Tracking Event

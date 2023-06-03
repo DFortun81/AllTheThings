@@ -1,6 +1,5 @@
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		n(PROFESSIONS, {
 			["maps"] = {
@@ -1328,7 +1327,7 @@ _.Zones =
 			},
 		}),
 	}),
-};
+});
 
 root(ROOTS.HiddenQuestTriggers, {
 	n(PROFESSIONS, {

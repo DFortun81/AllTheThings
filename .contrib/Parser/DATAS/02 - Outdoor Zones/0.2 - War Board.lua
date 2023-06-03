@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	o(207303, {	-- Adventure Board
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["g"] = {
@@ -652,7 +651,7 @@ _.Zones =
 			}),
 		},
 	}),
-};
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 	}),

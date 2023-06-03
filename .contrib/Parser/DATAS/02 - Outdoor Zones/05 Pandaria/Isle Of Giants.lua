@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(ISLE_OF_GIANTS, {
 			["lore"] = "The Isle of Giants is an island that has been lost in time, home to primal devilsaurs, direhorns, and skyscreamers raised by the Zandalar tribe on the isle since the loss of Zandalar.",
@@ -154,4 +153,4 @@ _.Zones =
 			},
 		}),
 	}),
-};
+});

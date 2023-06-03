@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
 			["achievementID"] = 11543,
@@ -11,4 +10,4 @@ _.Zones =
 			["maps"] = { 676 },	-- Broken Shore (Opening Warrior OH map)
 		}),
 	}),
-};
+});

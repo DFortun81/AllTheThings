@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(ZONE_DROPS, {	-- (Note: have to list crs separately for every item because some items (recipes) don't drop from every single mob in the zone)
@@ -162,4 +161,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

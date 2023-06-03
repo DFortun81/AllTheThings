@@ -65,8 +65,7 @@ local COMMON_TREASURE_SYM = {{"select","itemID",
 	106484,	-- Tangleheart Greaves
 }};
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(DRAENOR_SHADOWMOON_VALLEY, {
 			n(TREASURES, {
@@ -376,4 +375,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
 			n(QUESTS, {
@@ -1120,7 +1119,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(30566),	-- FLAG - Pest Problems Training — triggered after turning in daily quest "Pest Problems" (questID 30319)

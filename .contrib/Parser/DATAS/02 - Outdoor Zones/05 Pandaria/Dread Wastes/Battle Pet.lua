@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(DREAD_WASTES, {
 			petbattle(filter(BATTLE_PETS, {
@@ -23,4 +22,4 @@ _.Zones =
 			})),
 		}),
 	}),
-};
+});

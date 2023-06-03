@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(SPIRES_OF_ARAK, {
 			n(QUESTS, {
@@ -1258,7 +1257,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35874),	-- Apparatus - triggers after finishing "The Ebon Hunter" (questID 35835 & 35797)

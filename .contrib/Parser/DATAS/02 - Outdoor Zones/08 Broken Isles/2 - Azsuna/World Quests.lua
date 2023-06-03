@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, },{
@@ -313,7 +312,7 @@ _.Zones =
 			})),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(43961),	-- Azsuna - WQ rare: Bestrix

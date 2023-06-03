@@ -73,8 +73,7 @@ local COMMON_TREASURE_SYM = {{"select","itemID",
 	116920,	-- True Steel Lockbox
 }};
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(SPIRES_OF_ARAK, {
 			n(TREASURES, {
@@ -491,4 +490,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

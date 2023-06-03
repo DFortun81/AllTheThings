@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(-213, {	-- The Underbelly
@@ -282,7 +281,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(42527),	-- FLAG - Portal - Guard Station - using "Portal Key: Sewer Guard Station" (itemID 138027)

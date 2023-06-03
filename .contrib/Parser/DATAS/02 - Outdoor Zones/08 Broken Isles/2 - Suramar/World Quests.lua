@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, },{
@@ -329,7 +328,7 @@ _.Zones =
 			})),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		-- Suramar - Withered Training

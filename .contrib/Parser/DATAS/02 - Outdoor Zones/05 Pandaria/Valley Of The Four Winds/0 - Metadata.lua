@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
 			["achievementID"] = 6969,
@@ -13,4 +12,4 @@ _.Zones =
 			},
 		}),
 	}),
-};
+});

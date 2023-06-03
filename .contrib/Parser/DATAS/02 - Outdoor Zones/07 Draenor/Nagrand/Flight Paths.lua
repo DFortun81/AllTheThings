@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(DRAENOR_NAGRAND, {
 			n(FLIGHT_PATHS, {
@@ -41,4 +40,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

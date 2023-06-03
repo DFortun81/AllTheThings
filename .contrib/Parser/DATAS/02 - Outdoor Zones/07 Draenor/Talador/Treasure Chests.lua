@@ -68,8 +68,7 @@ local COMMON_TREASURE_SYM = {{"select","itemID",
 	116920,	-- True Steel Lockbox
 }};
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(TALADOR, {
 			n(TREASURES, {
@@ -345,4 +344,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

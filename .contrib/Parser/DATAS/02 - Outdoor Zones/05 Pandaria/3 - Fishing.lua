@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 -- Should be with 5.2.0
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		prof(FISHING, {
 			["maps"] = {
@@ -35,4 +34,4 @@ _.Zones =
 			},
 		}),
 	}),
-};
+});

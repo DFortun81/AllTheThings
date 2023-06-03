@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
 			n(QUESTS, {
@@ -1068,7 +1067,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(39607),	-- God-King Scene (Vault) - triggers when turning in "Ahead of the Game" (questID 39590)

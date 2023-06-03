@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(TOWNLONG_STEPPES, {
 			n(QUESTS, {
@@ -980,7 +979,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(31123),	-- Chose Arms Warrior

@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(KUN_LAI_SUMMIT, {
 			petbattle(filter(BATTLE_PETS, {
@@ -30,4 +29,4 @@ _.Zones =
 			})),
 		}),
 	}),
-};
+});

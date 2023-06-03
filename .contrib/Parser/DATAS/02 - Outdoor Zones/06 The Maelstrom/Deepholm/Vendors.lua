@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(948, {	-- The Maelstrom
 		m(DEEPHOLM, {
 			n(VENDORS, {
@@ -19,7 +18,7 @@ _.Zones =
 				}),
 				n(44972, {	-- Rocky Cliffedge <Weapon Vendor>
 					["coord"] = { 24.8, 62.6, DEEPHOLM },
-					["groups"] = {							
+					["groups"] = {
 						i(60823),	-- Battlefront Sword
 						i(60828),	-- Earthen Champion's Cleaver
 						i(60821),	-- Earthen Mallet
@@ -35,4 +34,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(378, {	-- The Wandering Isle Starter Zones
 			["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },	-- [Adding faction just to be safe]
@@ -565,7 +564,7 @@ _.Zones =
 			},
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(30454),	-- Pandaren Alliance Tracking Quest - triggers after choosing Alliance faction

@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(TALADOR, {
 			n(QUESTS, {
@@ -1661,7 +1660,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34935),	-- After Wall Greeting - triggers during "Dropping In" after taking the portal (questID 34913 & 34879)

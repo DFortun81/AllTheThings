@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(948, {	-- The Maelstrom
 		m(DEEPHOLM, {
 			n(QUESTS, {
@@ -1125,4 +1124,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

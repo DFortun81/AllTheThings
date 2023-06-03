@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(FLIGHT_PATHS, {
@@ -19,4 +18,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

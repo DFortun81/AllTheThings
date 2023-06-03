@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(DRAENOR_SHADOWMOON_VALLEY, {
 			n(QUESTS, {
@@ -1003,7 +1002,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35626),	-- Apprentice Artificer Andren - Apprentice Artificer Andren selected during "Friend of the Exarchs" (questID 34788)

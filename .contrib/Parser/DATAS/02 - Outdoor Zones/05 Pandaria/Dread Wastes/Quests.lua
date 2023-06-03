@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(DREAD_WASTES, {
 			-- NOTE:: this zone is largely driven by reputation. If verifying any sourceQuest chains, I recommend doing all dailies in Klaxxi'vess as they become available to ensure you don't miss something
@@ -1152,7 +1151,7 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(31666),	-- FLAG - Wind-Reaver's Dagger - second trigger for Wind-Reaver's Dagger of Quick Strikes treasure
