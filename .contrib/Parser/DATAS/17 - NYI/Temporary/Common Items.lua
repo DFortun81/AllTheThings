@@ -6,6 +6,291 @@
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(-123457, {	-- Common
+		tier(CLASSIC_TIER, {
+			-- NYI Classic Common Items
+			n(WEAPONS, {
+				filter(ONE_HANDED_AXES, {
+					i(4965),	-- Bloodhoof Hand Axe
+					i(1719),	-- Deprecated Flint Troll Axe
+					i(2482),	-- Inferior Tomahawk
+					i(2498),	-- Small Tomahawk
+				}),
+				filter(TWO_HANDED_AXES, {
+					i(2499),	-- Double-Bladed Axe
+					i(2483),	-- Rough Broad Axe
+					i(1386),	-- Thistlewood Axe
+				}),
+				filter(BOWS, {
+					i(14394),	-- Durability Bow
+					i(3028),	-- Longbow
+				}),
+				filter(DAGGERS, {
+					i(2812),	-- Deprecated Lightforge Dagger
+					i(3145),	-- Off Hand Test Dagger
+					i(2502),	-- Scuffed Dagger
+					i(2484),	-- Small Knife
+					i(3865),	-- Test Offhand Weapon
+				}),
+				filter(GUNS, {
+					i(1047),	-- Deprecated Heavy Blunderbuss
+					i(1046),	-- Deprecated Light Blunderbuss
+				}),
+				filter(HELD_IN_OFF_HAND, {
+					i(5230),	-- Deprecated Bloodstone
+					i(5231),	-- Deprecated Greater Bloodstone
+					i(5409),	-- Deprecated Lesser Bloodstone
+					i(5408),	-- Deprecated Minor Bloodstone
+					i(11170),	-- Deprecated Silver Totem of Aquementas
+					i(618),	-- Dim Torch
+					i(13843),	-- Fall/Winter Afternoon
+					i(13844),	-- Fall/Winter Evening
+					i(13842),	-- Fall/Winter Morning
+					i(13845),	-- Fall/Winter Night
+					i(12442),	-- Charm Pouch (DND)
+					i(12443),	-- Knucklebone Pouch (DND)
+					i(2410),	-- Smoky Torch
+					i(13847),	-- Spring/Summer Afternoon
+					i(13848),	-- Spring/Summer Evening
+					i(13846),	-- Spring/Summer Morning
+					i(13849),	-- Spring/Summer Night
+				}),
+				filter(ONE_HANDED_MACES, {
+					i(2500),	-- Light Hammer
+					i(2485),	-- Splintered Board
+				}),
+				filter(TWO_HANDED_MACES, {
+					i(2814),	-- Deprecated Lightforge Hammer
+					i(2486),	-- Large Stone Mace
+					i(4943),	-- Torka's Egg Cracker [UNUSED]
+					i(2501),	-- Wooden Warhammer
+				}),
+				filter(MISC, {
+					i(5410),	-- OLDCeremonial Club
+					i(4704),	-- OLDCeremonial Club
+					i(4956),	-- Test Totem
+					i(2808),	-- Torch of Flame
+				}),
+				filter(SHIELDS, {
+					i(1193),	-- Banded Buckler
+					i(1166),	-- Dented Buckler
+					i(14691),	-- Deprecated Battle Chain Buckler
+					i(14696),	-- Deprecated Battle Chain Shield
+					i(4950),	-- Deprecated Orc Protector
+					i(14393),	-- Durability Shield
+					i(11199),	-- Engineer's Shield 1
+					i(11200),	-- Engineer's Shield 2
+					i(11201),	-- Engineer's Shield 3
+					i(12961),	-- JEFF TEST SHIELD
+					i(2443),	-- Metal Buckler
+					i(2442),	-- Reinforced Targe
+					i(2441),	-- Ringed Buckler
+					i(2377),	-- Round Buckler
+					i(2444),	-- Rusted Buckler
+					i(2133),	-- Small Shield
+					i(1167),	-- Small Targe
+					i(3648),	-- Warrior's Buckler
+					i(876),	-- Worn Wooden Buckler
+				}),
+				filter(STAVES, {
+					i(2487),	-- Acolyte Staff
+					i(2503),	-- Adept Short Staff
+					i(2811),	-- Deprecated Lightforge Staff
+					i(14392),	-- Durability Staff
+					i(14083),	-- Tyrande's Staff
+				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(14391),	-- Durability Sword
+					i(997),	-- Fire Sword of Crippling
+					i(1018),	-- Chows Blade of DOOM! (Test)
+					i(12971),	-- JEFF TEST SWORD
+					i(12972),	-- JEFF TEST SWORD II
+					i(17342),	-- JYoo Random Item Test
+					i(948),	-- Nature Sword
+					i(2481),	-- Peon Sword
+					i(2496),	-- Raider Shortsword
+					i(945),	-- Shadow Sword
+					i(788),	-- Test Fire Sword
+					i(14883),	-- Test Glaive A
+					i(14884),	-- Test Glaive B
+					i(14885),	-- Test Glaive C
+					i(14886),	-- Test Glaive D
+					i(14887),	-- Test Glaive E
+					i(14888),	-- Test Glaive F
+					i(14889),	-- Test Glaive G
+					i(14890),	-- Test Glaive H
+					i(14891),	-- Test Glaive I
+					i(14892),	-- Test Glaive J
+					i(5953),	-- TEST SWORD
+					i(5954),	-- TEST SWORD 2
+					i(16212),	-- TEST SWORD 3
+					i(7171),	-- TWAIN TEST ITEM VISUAL SWORD
+				}),
+				filter(TWO_HANDED_SWORDS, {
+					i(12755),	-- Monster - Sword2H, Blackblade of Shahram
+					i(2497),	-- Rusted Claymore
+					i(2128),	-- Scratched Claymore
+				}),
+				filter(WANDS, {
+					i(5235),	-- Alchemist's Wand
+					i(4902),	-- Deprecated Apprentice Wand
+				}),
+			}),
+		}),
+		tier(TBC_TIER, {
+			-- NYI The Burning Crusade Common Items
+			n(WEAPONS, {
+				filter(ONE_HANDED_AXES, {
+					i(33981),	-- Monster - Zul'Aman - Axe, 1H - Amani'shi Axe Thrower
+					i(33980),	-- Monster - Zul'Aman - Axe, 1H - Amani'shi Tribesman
+					i(33982),	-- Monster - Zul'Aman - Axe, 1H - Amani'shi Warbringer
+					i(20979),	-- Warder's Axe
+				}),
+				filter(TWO_HANDED_AXES, {
+					i(21034),	-- 3300 Test 2h Axe 60 white
+					i(30502),	-- Monster - Draenei_D01_Red	
+				}),
+				filter(BOWS, {
+					i(21036),	-- 2800 test bow
+					i(33991),	-- Monster - Zul'Aman - Bow - Amani'shi Handler
+				}),
+				filter(DAGGERS, {
+					i(21035),	-- 1700 Test Dagger 60 white
+					i(37596),	-- Direbrew's Bottle DO NOT USE
+					i(34045),	-- Monster - Zul'Aman - Dagger - Amani'shi Tempest
+					i(24100),	-- Warder's Dagger
+				}),
+				filter(FIST_WEAPONS, {
+					i(33975),	-- Monster - Zul'jin Weapon
+				}),
+				filter(ONE_HANDED_MACES, {
+					i(28736),	-- Monster - Mace, Aurastone Hammer
+					i(30445),	-- Monster - Mace, Kurdran's Hammer
+				}),
+				filter(TWO_HANDED_MACES, {
+					i(29479),	-- Monster - Mace2H, Firemaul of Destruction
+					i(29484),	-- Monster - Mace2H, Firemaul of Destruction (No Fire)
+					i(33979),	-- Monster - Zul'Aman - Hammer, 2H - Amani'shi Guardian
+				}),
+				filter(POLEARMS, {
+					i(31266),	-- (Action Figure) Tauren Hunter Polearm
+					i(28914),	-- Monster - Spear, Darkspear
+				}),
+				filter(SHIELDS, {
+					i(31265),	-- (Action Figure) Human Warrior Shield
+					i(20913),	-- Medium Guard
+					i(28737),	-- Monster - Shield, Malistar's Defender
+					i(20984),	-- Recruit's Shield
+					i(23365),	-- Steel Rimmed Buckler
+				}),
+				filter(STAVES, {
+					i(31253),	-- (Action Figure) Night Elf Druid Staff
+					i(31257),	-- (Action Figure) Troll Priest Staff
+					i(28739),	-- Monster - Staff, Anathema
+					i(28738),	-- Monster - Staff, Benediction
+					i(23240),	-- Monster - Staff, Blood Elf A01 Blue
+					i(30423),	-- Monster - Staff, Blood Elf A01 Blue - Med Blue Glow
+					i(29715),	-- Monster - Staff, Blood Elf A01 Green
+					i(29716),	-- Monster - Staff, Blood Elf A01 Red
+					i(30424),	-- Monster - Staff, Blood Elf A01 Red - High Red Glow
+					i(30441),	-- Monster - Staff, Blood Elf A02 Red (Yellow Flame)
+					i(33983),	-- Monster - Zul'Aman - Staff, 2H - Amani'shi Flame Caster
+				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(31259),	-- (Action Figure) Human Warrior Sword
+					i(23741),	-- Monster - 1H Sword - Widow's Remore
+					i(30647),	-- Monster - Ruul's Thunderfury
+					i(23673),	-- Monster - Sword, Lightsaber Blue
+					i(33992),	-- Monster - Zul'Aman - Knife, 1H - Amani'shi Handler
+					i(33984),	-- Monster - Zul'Aman - Sword, 1H - Amani'shi Protector
+					i(33990),	-- Monster - Zul'Aman - Sword, 1H - Halazzi
+				}),
+				filter(TWO_HANDED_SWORDS, {
+					i(31267),	-- (Action Figure) Gnome Warrior Sword
+					i(22596),	-- Monster - Sword2H, Horde A02
+					i(32953),	-- Monster - Sword2H, Kaz'rogal
+					i(28916),	-- Monster - Sword2H, Sin'dorei Warblade
+				}),
+			}),
+		}),
+		tier(WOTLK_TIER, {
+			-- NYI Wrath of the Lich King Common Items
+			n(WEAPONS, {
+				filter(ONE_HANDED_AXES, {
+					i(34816),	-- Monster - Vrykul - Axe, 1H
+					i(37608),	-- Monster - Vrykul - Axe, 1H - Black Glow
+					i(40540),	-- Monster - Vrykul - Axe, 1H - Blue Glow, High
+				}),
+				filter(TWO_HANDED_AXES, {
+					i(34817),	-- Monster - Vrykul - Axe, 2H
+				}),
+				filter(DAGGERS, {
+					i(46090),	-- Monster - Alliance Lance
+					i(46107),	-- Monster - Argent Lance
+					i(45925),	-- Monster - Ebon Cavalry Blade [PH]
+					i(45918),	-- Monster - Forsaken Lance [PH]
+					i(46089),	-- Monster - Horde Lance
+				}),
+				filter(HELD_IN_OFF_HAND, {
+					i(39147),	-- 113 Pound Swordfish
+				}),
+				filter(ONE_HANDED_MACES, {
+					i(45123),	-- Monster - (Weapon) Blacksmith Hammer
+					i(53785),	-- Monster - Bwonsamdi's Mace
+					i(54555),	-- Monster - Mace, 1H - Troll Head
+					i(37120),	-- Monster - Mace, Alliance 1H
+					i(52037),	-- Monster - Mace, Bloodqueen - D01
+					i(35727),	-- Monster - Mace, Iron Dwarf Lightning
+					i(34819),	-- Monster - Vrykul - Mace, 1H
+					i(43581),	-- Monster - Vrykul - Mace, 1H Spiked
+				}),
+				filter(TWO_HANDED_MACES, {
+					i(44821),	-- Monster - Mace2H, Northrend C03 Blue (Frozen Rune)
+					i(35724),	-- Monster - Northrend - Hammer, 2H - Agmar's Hammer
+					i(34818),	-- Monster - Vrykul - Mace, 2H
+					i(40434),	-- Monster - Vrykul - Mace, 2H - Blue Glow, High
+				}),
+				filter(MISC, {
+					i(45765),	-- Ebon Cavalry Blade [PH]
+					i(44915),	-- Elune's Candle
+				}),
+				filter(SHIELDS, {
+					i(43222),	-- Monster - Shandaral - Shield
+					i(33596),	-- Monster - Shield, Dragonflayer Gladiator (Jlarborn)
+					i(33294),	-- Monster, Shield - Dragonflayer Tribesman
+				}),
+				filter(STAVES, {
+					i(43223),	-- Monster - Shandaral - Staff
+					i(43220),	-- Monster - Staff, Blood Elf A01 Blue - High Yellow Glow
+					i(43093),	-- Monster - Staff, Dalaran
+					i(43617),	-- Monster - Staff, Dalaran Blue
+					i(43618),	-- Monster - Staff, Dalaran Green
+					i(43619),	-- Monster - Staff, Dalaran Red
+					i(35942),	-- Monster - Staff, Greatmother Icemist
+					i(41090),	-- Monster - Zul'Aman - Staff, 2H, Drakuru Prophet
+				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(50252),	-- Monster - 1H, Highlord Darion Mograine
+					i(49346),	-- Monster - Icecrown - 1H Axe - D01 - Blue
+					i(49341),	-- Monster - Icecrown - 1H Sword - D01 - Blue
+					i(49340),	-- Monster - Icecrown - 1H Sword - D03 - Blue
+					i(49342),	-- Monster - Icecrown - 1H Sword - D04 - Blue
+					i(49344),	-- Monster - Icecrown - 2H Mace - D01 - Blue
+					i(49345),	-- Monster - Icecrown - 2H Sword - D01 - Purple
+					i(43221),	-- Monster - Shandaral - 1H Sword
+					i(42932),	-- Monster - Sword, Zul'aman 1H - D01 Dark
+					i(42933),	-- Monster - Sword, Zul'aman 1H - D01 Red
+					i(34821),	-- Monster - Vrykul - Sword, 1H
+					i(40894),	-- Monster - Vrykul - Sword, 1H (Blue Glow, High)
+				}),
+				filter(TWO_HANDED_SWORDS, {
+					i(45899),	-- Monster - 1H Sword - Varian's Blade
+					i(50039),	-- Monster - 2H, Highlord Darion Mograine
+					i(42934),	-- Monster - Sword, Zul'aman 2H - D01 Blue
+					i(42935),	-- Monster - Sword, Zul'aman 2H - D01 Red
+					i(34820),	-- Monster - Vrykul - Sword, 2H
+				}),
+			}),
+		}),
 		tier(CATA_TIER, {
 			-- NYI Cataclysm Common Items
 			n(ARMOR, {
@@ -65,6 +350,67 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			}),
 			n(WEAPONS, {
+				filter(ONE_HANDED_AXES, {
+					i(60822),	-- Monster - Zul'Aman - Axe, 1H (No FX)
+				}),
+				filter(TWO_HANDED_AXES, {
+					i(49672),	-- Goblin Military Rifle, Melee Version
+					i(62491),	-- Monster - Neferset Guardian's Axe
+				}),
+				filter(CROSSBOWS, {
+					i(49392),	-- Goblin Plugger
+				}),
+				filter(DAGGERS, {
+					i(49605),	-- Battlescarred Dagger
+					i(49395),	-- Rigging Slicer
+				}),
+				filter(FIST_WEAPONS, {
+					i(56090),	-- Monster, Controller
+					i(56065),	-- Monster, Grimtotem Alliance Weapon (Fist Left)
+					i(56066),	-- Monster, Grimtotem Alliance Weapon (Fist Right)
+				}),
+				filter(GUNS, {
+					i(49608),	-- Old Smoothbore
+				}),
+				filter(ONE_HANDED_MACES, {
+					i(49604),	-- Battlescarred Mace
+					i(49394),	-- Keel Smasher
+					i(57173),	-- Monster - Mace, Worgen B01
+					i(68013),	-- Monster - Mace1H, Firemaul of Destruction
+				}),
+				filter(TWO_HANDED_MACES, {
+					i(58164),	-- Monster - Northrend - Hammer, 2H - Aponi's Hammer
+					i(56062),	-- Monster, Grimtotem Alliance Weapon (2H Hammer)
+					i(49371),	-- Oversized Tenderizer
+				}),
+				filter(MISC, {
+					i(67604),	-- [DND] Horde Guild Banner - Handheld
+					i(67436),	-- Alliance Guild Banner - Handheld
+					i(71969),	-- Darkmoon Mallet
+				}),
+				filter(SHIELDS, {
+					i(57174),	-- Monster - Shield, Goblin B01
+				}),
+				filter(STAVES, {
+					i(49606),	-- Battlescarred Stave
+					i(76364),	-- Monster - Staff, Dalaran (Fire)
+					i(76363),	-- Monster - Staff, Dalaran Blue (Frost)
+					i(56063),	-- Monster, Grimtotem Alliance Weapon (Staff)
+					i(54301),	-- Promotion Prodder
+					i(49391),	-- Shattered Oar
+				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(49617),	-- Gob Squad Rifle, Back Mounted
+					i(49393),	-- Goblin Ripsaw
+					i(57407),	-- Hobo Stick
+					i(57411),	-- Monster - Sword, S.A.F.E Operative
+					i(67598),	-- Monster - Sword, Sword Dancer
+				}),
+				filter(TWO_HANDED_SWORDS, {
+					i(49607),	-- Battlescarred Claymore
+					i(56064),	-- Monster, Grimtotem Alliance Weapon (2H Sword)
+					i(49396),	-- Rusty Prybar
+				}),
 				filter(WANDS, {
 					i(57394),	-- Long Lost Wand
 				}),
@@ -77,6 +423,44 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					n(FEET, {
 						i(72021),	-- Trainee's Boots
 					}),
+				}),
+			}),
+			n(WEAPONS, {
+				filter(ONE_HANDED_AXES, {
+					i(72038),	-- Placeholder 1H Axe
+				}),
+				filter(CROSSBOWS, {
+					i(72022),	-- Placeholder Crossbow
+				}),
+				filter(DAGGERS, {
+					i(90144),	-- Fillet Knife
+					i(90145),	-- Fillet Knife
+					i(72036),	-- Placeholder Dagger 1
+					i(72037),	-- Placeholder Dagger 2
+				}),
+				filter(FIST_WEAPONS, {
+					i(77278),	-- Trainee's Handwrap
+					i(77279),	-- Trainee's Handwrap
+				}),
+				filter(HELD_IN_OFF_HAND, {
+					i(72034),	-- Placeholder Offhand 1
+					i(72024),	-- Placeholder Offhand 2
+				}),
+				filter(ONE_HANDED_MACES, {
+					i(72023),	-- Placeholder 1H Mace
+				}),
+				filter(SHIELDS, {
+					i(72039),	-- Placeholder Shield 1
+				}),
+				filter(STAVES, {
+					i(72040),	-- Placeholder Staff
+					i(71080),	-- Training Staff
+				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(72032),	-- Placeholder 1H Sword
+				}),
+				filter(TWO_HANDED_SWORDS, {
+					i(72041),	-- Placeholder 2H Sword
 				}),
 			}),
 		}),
@@ -109,6 +493,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				filter(MISC, {
 					i(118108),	-- Darkmoon Ring
 					i(118102),	-- Darkmoon Ring
+				}),
+				filter(STAVES, {
+					i(109068),	-- Monster - Staff, Velen TEMP
 				}),
 			}),
 		}),

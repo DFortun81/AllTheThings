@@ -10,6 +10,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(DF_TIER, 0.01, {
 					i(189689),	-- 10.0 Dungeon Template - Bows - Ranged
 					i(189127),	-- 10.0 QRP Template <Descriptor> Longbow
+					i(189346),	-- 10.0 Zone Uncommon Template <Descriptor> Longbow
 				}),
 			}),
 		}),
@@ -18,6 +19,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(DF_TIER, 0.01, {
 					i(189690),	-- 10.0 Dungeon Template - Crossbow - RangedRight
 					i(189128),	-- 10.0 QRP Template <Descriptor> Crossbow
+					i(189347),	-- 10.0 Zone Uncommon Template <Descriptor> Crossbow
 				}),
 			}),
 		}),
@@ -33,6 +35,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189045),	-- 10.0 End Game Template <Descriptor> Shank
 					i(189111),	-- 10.0 QRP Template <Descriptor> Dagger
 					i(189112),	-- 10.0 QRP Template <Descriptor> Dagger
+					i(189341),	-- 10.0 Zone Uncommon Template <Descriptor> Dagger
+					i(189342),	-- 10.0 Zone Uncommon Template <Descriptor> Dagger
 					i(201235),	-- Awakened Pick
 					i(201236),	-- Bonefed Emerald Shiv
 					i(200130),	-- Corpse Ripper
@@ -51,6 +55,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(DF_TIER, 0.01, {
 					i(189699),	-- 10.0 Dungeon Template - FistWeapon - Weapon
 					i(189137),	-- 10.0 QRP Template <Descriptor> Fist
+					i(189356),	-- 10.0 Zone Uncommon Template <Descriptor> Fist
 					i(198411),	-- Claw of Preparedness
 				}),
 			}),
@@ -61,6 +66,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189675),	-- 10.0 Dungeon Template - Guns - RangedRight
 					i(189042),	-- 10.0 End Game Template <Descriptor> Gun
 					i(189107),	-- 10.0 QRP Template <Descriptor> Gun
+					i(189337),	-- 10.0 Zone Uncommon Template <Descriptor> Gun
 					i(201232),	-- Bonedust Spreader
 					i(200176),	-- Missingway Hand Canno
 				}),
@@ -72,11 +78,19 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189672),	-- 10.0 Dungeon Template - Generic - Holdable
 					i(189040),	-- 10.0 End Game Template <Descriptor> Offhand
 					i(189104),	-- 10.0 QRP Template <Descriptor> Offhand
+					i(189334),	-- 10.0 Zone Uncommon Template <Descriptor> Offhand
 					i(201249),	-- Dreamfire Imbued Drakehorn
 				}),
 			}),
 		}),
 		filter(ONE_HANDED_AXES, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.01, {
+					i(189348),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
+					i(189349),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
+					i(189350),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
+				}),
+			}),
 			tier(WOTLK_TIER, {
 				n(P3xx, {
 					i(50251),	-- Shadow's Edge One-Hander
@@ -123,6 +137,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189121),	-- 10.0 QRP Template <Descriptor> Mace
 					i(189132),	-- 10.0 QRP Template <Descriptor> Mace
 					i(189134),	-- 10.0 QRP Template <Descriptor> Mace
+					i(189345),	-- 10.0 Zone Uncommon Template <Descriptor> Mace
+					i(189351),	-- 10.0 Zone Uncommon Template <Descriptor> Mace
+					i(189353),	-- 10.0 Zone Uncommon Template <Descriptor> Mace
 					i(201243),	-- Drakebone Tenderizer
 					i(201242),	-- Growth Evoking Furnace
 					i(201238),	-- Vision Enforcing Bludgeon
@@ -150,6 +167,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189109),	-- 10.0 QRP Template <Descriptor> Sword
 					i(189113),	-- 10.0 QRP Template <Descriptor> Sword
 					i(189133),	-- 10.0 QRP Template <Descriptor> Sword
+					i(189339),	-- 10.0 Zone Uncommon Template <Descriptor> Sword
+					i(189343),	-- 10.0 Zone Uncommon Template <Descriptor> Sword
+					i(189352),	-- 10.0 Zone Uncommon Template <Descriptor> Sword
 					i(200995),	-- Obsidian Soldier's Cutlass
 				}),
 			}),
@@ -163,6 +183,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189041),	-- 10.0 End Game Template <Descriptor> Polearm
 					i(189110),	-- 10.0 QRP Template <Descriptor> Staff
 					i(189141),	-- 10.0 QRP Template <Descriptor> Staff
+					i(189340),	-- 10.0 Zone Uncommon Template <Descriptor> Staff
+					i(189360),	-- 10.0 Zone Uncommon Template <Descriptor> Staff
 					i(201234),	-- Draketooth Harpoon
 					i(201247),	-- Whaler's Fang
 				}),
@@ -177,6 +199,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189671),	-- 10.0 Dungeon Template - Shield - Shield
 					i(189039),	-- 10.0 End Game Template <Descriptor> Shield
 					i(189103),	-- 10.0 QRP Template <Descriptor> Shield
+					i(189333),	-- 10.0 Zone Uncommon Template <Descriptor> Shield
 					i(201248),	-- Dreamfused Scaled Protector
 				}),
 			}),
@@ -191,6 +214,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189106),	-- 10.0 QRP Template <Descriptor> Staff
 					i(189120),	-- 10.0 QRP Template <Descriptor> Staff
 					i(197806),	-- 10.0 Rare Reward TBD - Staff_2H_Titan_C_01 - Staff - Int
+					i(189336),	-- 10.0 Zone Uncommon Template <Descriptor> Staff
+					i(189344),	-- 10.0 Zone Uncommon Template <Descriptor> Staff
 					i(201231),	-- Bident of Hallucinations
 					i(201237),	-- Dreamer's Creator
 				}),
@@ -201,6 +226,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(DF_TIER, 0.01, {
 					i(189697),	-- 10.0 Dungeon Template - Axe2H - Str - 2 Hand
 					i(189135),	-- 10.0 QRP Template <Descriptor> Axe
+					i(189354),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
 				}),
 			}),
 		}),
@@ -214,10 +240,18 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189138),	-- 10.0 QRP Template <Descriptor> Greatmace
 					i(189105),	-- 10.0 QRP Template <Descriptor> Mace
 					i(197796),	-- 10.0 Rare Reward TBD - Mace2H - Str - 2 Hand
+					i(189357),	-- 10.0 Zone Uncommon Template <Descriptor> Greatmace
+					i(189335),	-- 10.0 Zone Uncommon Template <Descriptor> Mace
 				}),
 			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.01, {
+					i(189355),	-- 10.0 Zone Uncommon Template <Descriptor> Greatsword
+					i(189358),	-- 10.0 Zone Uncommon Template <Descriptor> Greatsword
+				}),
+			}),
 			tier(CLASSIC_TIER, {
 				i(13262),	-- Ashbringer
 			}),
@@ -239,6 +273,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
 					i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
 					i(189140),	-- 10.0 QRP Template <Descriptor> Wand
+					i(189359),	-- 10.0 Zone Uncommon Template <Descriptor> Wand
 					i(201246),	-- Coiled Green Draketail
 					i(201775),	-- Crimson Aspirant's Wand
 				}),
@@ -250,6 +285,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189676),	-- 10.0 Dungeon Template - Warglaives - Weapon
 					i(189057),	-- 10.0 End Game Template <Descriptor> Warglaive
 					i(189108),	-- 10.0 QRP Template <Descriptor> Glaive
+					i(189338),	-- 10.0 Zone Uncommon Template <Descriptor> Glaive
 					i(201233),	-- Verdant Drakespine Glaive
 				}),
 			}),

@@ -33,6 +33,8 @@ root(ROOTS.Unsorted, {
 				-- PvP (probably from some Ensemble)
 				i(42214),	-- Savage Gladiator's Waraxe	-- I collected it somehow -Darkal
 				i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- I collected it somehow -Darkal
+				i(91496),	-- Malevolent Gladiator's Touch of Defeat	-- I collected it somehow -Darkal
+				i(91755),	-- Malevolent Gladiator's Baton of Light	-- I collected it somehow -Darkal
 				i(169725),	-- Notorious Gladiator's Bonegrinder (A)	-- I collected it somehow -Darkal
 				i(169724),	-- Notorious Gladiator's Bonegrinder (H)	-- I collected it somehow -Darkal
 			})),

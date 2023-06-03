@@ -3677,6 +3677,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(183461),	-- Mining Pick
 					i(174304),	-- Monster - Maldraxxus Axe1H - Covenant
 					i(174306),	-- Monster - Maldraxxus Axe1H - Covenant
+					i(176095),	-- PH Ardenweald Humanoid Drop
 					i(176096),	-- PH Mawsworn Humanoid Drop
 				}),
 				filter(TWO_HANDED_AXES, {
