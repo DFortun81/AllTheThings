@@ -12498,8 +12498,8 @@ end)();
 
 -- Map Lib
 (function()
-local C_Map_GetMapLevels = C_Map.GetMapLevels;
-local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
+local C_Map_GetMapLevels, C_Map_GetBestMapForUnit, C_Map_GetPlayerMapPosition
+	= C_Map.GetMapLevels, C_Map.GetBestMapForUnit, C_Map.GetPlayerMapPosition;
 app.GetCurrentMapID = function()
 	local uiMapID = C_Map_GetBestMapForUnit("player");
 	if uiMapID then
@@ -12551,6 +12551,25 @@ local mapFields = {
 	end,
 	["lvl"] = function(t)
 		return C_Map_GetMapLevels(t.mapID);
+	end,
+	["coord"] = function(t)
+		-- if this map is the same map as the one the player is currently within, allow displaying the player's current coordinates
+		local myMapID = app.CurrentMapID;
+		local mapID, maps = t.mapID, t.maps;
+		if myMapID == mapID or (maps and contains(maps, myMapID)) then
+			local position = C_Map_GetPlayerMapPosition(myMapID, "player")
+			if position then
+				local x,y = position:GetXY()
+				x = math.floor(x * 1000) / 10;
+				y = math.floor(y * 1000) / 10;
+				local _coord = t._coord or {};
+				t._coord = _coord;
+				_coord[1] = x;
+				_coord[2] = y;
+				_coord[3] = myMapID;
+				return _coord;
+			end
+		end
 	end,
 	["iconForAchievement"] = function(t)
 		return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or app.asset("Category_Zones");
