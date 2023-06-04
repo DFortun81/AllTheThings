@@ -1103,10 +1103,7 @@ root(ROOTS.Unsorted, {
 				q(73712),	--
 				q(73713),	--
 				q(74438),	--
-				q(74522),	-- Remnants
-				q(74523),	-- A Traitor's Due
 				q(74524),	--
-				q(74525),	-- Honorbound
 				q(74537),	--
 				q(74560),	--
 				q(74564),	--
@@ -1119,12 +1116,9 @@ root(ROOTS.Unsorted, {
 				q(74904),	--
 				q(74958),	--
 				q(75017),	--
-				q(75018),	-- Into the Dark
 				q(75021),	--
 				q(75022),	-- Vinyeti
 				q(75027),	-- Aerial Domination
-				q(75028),	-- All the Broken Pieces
-				q(75029),	-- A Legacy, Reforged
 				q(75182),	-- Grand Theft Mammoth
 				q(75201),	--
 				q(75203),	--
@@ -1157,7 +1151,6 @@ root(ROOTS.Unsorted, {
 				q(75408),	-- Calling All Dracthyr!
 				q(75415),	--
 				q(75416),	--
-				q(75417),	-- Symbol of Hope
 				q(75418),	--
 				q(75429),	--
 				q(75434),	--
@@ -1323,7 +1316,6 @@ root(ROOTS.Unsorted, {
 				q(76193),	--
 				-- 10.1.0.49741
 				q(72943),	--
-				q(74521),	-- A Flame, Extinguished
 				q(75054),	--
 				q(75388),	-- The Azure Vaults
 				q(75391),	--
