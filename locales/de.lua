@@ -3577,7 +3577,7 @@ for key,value in pairs({
 	[378088] = "Kristalline Blume",	-- Crystalline Flower
 	[378820] = "Sprudelpunsch",	-- Popfizz Punch
 	[378857] = "Verlorene Obsidiantruhe",	-- Lost Obsidian Cache
-	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
+	[379168] = "Verlorener Truhenschlüssel",	-- Lost Cache Key
 	[379290] = "Verzierte Statue",	-- Ornamented Statue
 	[379296] = "Abgebrochene Leiste",	-- Broken Banding
 	[379297] = "Krach-Bumm-Gesöff",	-- Slam Bam Swill
@@ -3652,7 +3652,7 @@ for key,value in pairs({
 	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
 	[380859] = "Spielzeugboot der Tuskarr",	-- Tuskarr Toy Boat
 	[380860] = "Zentaurenhorn",	-- Centaur Horn
-	--TODO: [380867] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	[380867] = "Bernsteinklumpen",	-- Amber Gem Cluster
 	[380902] = "Felder der Wildheit",	-- Fields of Ferocity
 	[380918] = "Zerbrochene verzierte Statue",	-- Broken Ornamented Statue
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
@@ -3831,7 +3831,7 @@ for key,value in pairs({
 	[386532] = "Urzeitliche Goldtruhe",	-- Primordial Gold Cache
 	[386547] = "Durchdringungsform",	-- Suffusion Mold
 	[386556] = "Staubige Vase",	-- Dusty Vase
-	--TODO: [386559] = "Secured Shipment",	-- Secured Shipment
+	[386559] = "Gesicherte Lieferung",	-- Secured Shipment
 	[386573] = "Verzierte Schlüsselschatulle",	-- Ornate Key Box
 	[386578] = "Neltharions Geschenkmarke",	-- Neltharion Gift Token
 	[386579] = "Neltharions Geschenkmarke",	-- Neltharion Gift Token

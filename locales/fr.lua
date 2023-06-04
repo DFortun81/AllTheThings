@@ -3662,7 +3662,7 @@ for key,value in pairs({
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Carte de Yennu",	-- Yennu's Map
 	[381110] = "Boîte à bijoux oubliée",	-- Forgotten Jewel Box
-	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
+	[381153] = "Amas de rubis",	-- Ruby Gem Cluster
 	[381157] = "Amas de saphirs",	-- Sapphire Gem Cluster
 	[381158] = "Fléau de démon gnoll",	-- Gnoll Fiend Flail
 	[381160] = "Boussole perdue",	-- Lost Compass
@@ -3829,7 +3829,7 @@ for key,value in pairs({
 	[386532] = "Cache d’or primordial",	-- Primordial Gold Cache
 	[386547] = "Moule de suffusion",	-- Suffusion Mold
 	[386556] = "Vase poussiéreux",	-- Dusty Vase
-	--TODO: [386559] = "Secured Shipment",	-- Secured Shipment
+	[386559] = "Cargaison sécurisée",	-- Secured Shipment
 	[386573] = "Boîte à clé ornée",	-- Ornate Key Box
 	[386578] = "Jeton offert par Neltharion",	-- Neltharion Gift Token
 	[386579] = "Jeton offert par Neltharion",	-- Neltharion Gift Token

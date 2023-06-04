@@ -3830,7 +3830,7 @@ for key,value in pairs({
 	[386532] = "Baú Áureo Primordial",	-- Primordial Gold Cache
 	[386547] = "Molde de Impregnação",	-- Suffusion Mold
 	--TODO: [386556] = "Dusty Vase",	-- Dusty Vase
-	--TODO: [386559] = "Secured Shipment",	-- Secured Shipment
+	[386559] = "Carregamento Protegido",	-- Secured Shipment
 	[386573] = "Baú Ornado",	-- Ornate Key Box
 	[386578] = "Ficha de Presente de Neltharion",	-- Neltharion Gift Token
 	[386579] = "Ficha de Presente de Neltharion",	-- Neltharion Gift Token
