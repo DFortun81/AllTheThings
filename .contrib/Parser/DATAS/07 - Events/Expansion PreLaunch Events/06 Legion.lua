@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "removed 7.0.3.22810" } }, {	-- Expansion Prelaunch Events
+root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "removed 7.0.3.22810" } }, {
 	tier(LEGION_TIER, {
 		["lvl"] = 98,
 		["groups"] = {

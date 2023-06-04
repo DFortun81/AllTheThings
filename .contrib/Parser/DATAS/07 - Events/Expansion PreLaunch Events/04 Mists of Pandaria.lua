@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldEvents, n(-520, {	-- Expansion Prelaunch Events
+root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	tier(MOP_TIER, {
 		["timeline"] = { "added 5.0.1" },
 		["OnUpdate"] = [[function(t)

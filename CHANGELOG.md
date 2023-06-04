@@ -22,6 +22,7 @@ Earn Smoldering Banner of the Aspects toy for participating in the The Great Pus
 ### Logic changes
 
 - Fixed/improved logic for some NPC headers we use.
+- Map minilist header now shows Player coordinates in tooltip.
 
 
 ### Logic fixes
