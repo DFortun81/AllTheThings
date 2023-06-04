@@ -2836,7 +2836,7 @@ local function CreateHash(t)
 				end
 			end
 		elseif key == "difficultyID" then
-			local instanceID = GetRelativeValue(t, "instanceID");
+			local instanceID = GetRelativeValue(t, "instanceID") or GetRelativeValue(t, "headerID");
 			if instanceID then hash = hash .. "-" .. instanceID; end
 		elseif key == "headerID" then
 			-- for custom headers, they may be used in conjunction with other bits of data that we don't want to merge together (because it makes no sense)
@@ -3982,23 +3982,6 @@ local SubroutineCache = {
 		extract(finalized, searchResults, o, "extract", "c");
 
 		local orig;
-		-- If there's a Class, filter by Class
-		if classID then
-			if #searchResults > 0 then
-				orig = RawCloneData(searchResults);
-			end
-			wipe(searchResults);
-			local c;
-			if orig then
-				for _,o in ipairs(orig) do
-					c = o.c;
-					if c and ContainsAnyValue(c, classID) then
-						tinsert(searchResults, o);
-					end
-				end
-			end
-		end
-
 		-- Pop out any actual Tier Tokens
 		if #searchResults > 0 then
 			orig = RawCloneData(searchResults);
@@ -4024,6 +4007,23 @@ local SubroutineCache = {
 			"INVTYPE_LEGS",
 			"INVTYPE_HAND"
 		);
+
+		-- If there's a Class, filter by Class
+		if classID then
+			if #searchResults > 0 then
+				orig = RawCloneData(searchResults);
+			end
+			wipe(searchResults);
+			local c;
+			if orig then
+				for _,o in ipairs(orig) do
+					c = o.c;
+					if c and ContainsAnyValue(c, classID) then
+						tinsert(searchResults, o);
+					end
+				end
+			end
+		end
 	end,
 };
 -- Instruction to perform a specific subroutine using provided input values
