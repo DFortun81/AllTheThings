@@ -3629,7 +3629,7 @@ for key,value in pairs({
 	[380604] = "Estandarte misterioso",	-- Mysterious Banner
 	[380605] = "Brebaje de contrabando",	-- Contraband Concoction
 	[380607] = "Tejido chamuscado itinerante",	-- Itinerant Singed Fabric
-	--TODO: [380608] = "Silky Surprise",	-- Silky Surprise
+	[380608] = "Sorpresa sedosa",	-- Silky Surprise
 	[380610] = "Runa de Tierra palpitante",	-- Pulsing Earth Rune
 	[380611] = "Cantimplora de agua sospechosa",	-- Canteen of Suspicious Water
 	[380612] = "Hoja de referencia de lengua de signos",	-- Sign Language Reference Sheet
@@ -3705,7 +3705,7 @@ for key,value in pairs({
 	[381650] = "Petición de los archivistas",	-- Archivists' Request
 	[381653] = "Inscripción a colmillo, ala o fuego",	-- Fang Flap Fire Signups
 	[381661] = "Petición de los archivistas",	-- Archivists' Request
-	[381662] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381662] = "Petición de los archivistas",	-- Archivists' Request
 	[381663] = "Tormentas de maná para principiantes",	-- Manastorming For Beginners
 	[381664] = "Petición de los archivistas",	-- Archivists' Request
 	[381667] = "Petición de los archivistas",	-- Archivists' Request
@@ -3834,7 +3834,7 @@ for key,value in pairs({
 	[386532] = "Alijo de oro primordial",	-- Primordial Gold Cache
 	[386547] = "Molde de carga",	-- Suffusion Mold
 	[386556] = "Jarrón polvoriento",	-- Dusty Vase
-	--TODO: [386559] = "Secured Shipment",	-- Secured Shipment
+	[386559] = "Envío asegurado",	-- Secured Shipment
 	[386573] = "Caja de llave ornamentada",	-- Ornate Key Box
 	[386578] = "Vale de obsequio de Neltharion",	-- Neltharion Gift Token
 	[386579] = "Vale de obsequio de Neltharion",	-- Neltharion Gift Token

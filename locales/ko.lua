@@ -3582,7 +3582,7 @@ for key,value in pairs({
 	[379297] = "극통 꿀꺽주",	-- Slam Bam Swill
 	[379314] = "완전한 낚시 그물",	-- Full Fishing Net
 	[379321] = "수수께끼의 발자취",	-- Mysterious Paw Print
-	--TODO: [380429] = "Golden Claw",	-- Golden Claw
+	[380429] = "황금 발톱",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
 	[380457] = "실험적인 부패 가마솥",	-- Experimental Decay Cauldron
 	[380516] = "지혜의 빛티끌",	-- Glimmer of Wisdom
@@ -3674,7 +3674,7 @@ for key,value in pairs({
 	[381297] = "엉뚱한 곳에 놓인 짐",	-- Misplaced Luggage
 	--TODO: [381353] = "Stone Dragontooth",	-- Stone Dragontooth
 	--TODO: [381354] = "Wrapped Gold Band",	-- Wrapped Gold Band
-	--TODO: [381355] = "Finely Carved Wing",	-- Finely Carved Wing
+	[381355] = "섬세하게 조각한 날개",	-- Finely Carved Wing
 	--TODO: [381356] = "Coldwashed Dragonclaw",	-- Coldwashed Dragonclaw
 	[381357] = "돌 서판",	-- Stone Tablet
 	[381358] = "돌 서판",	-- Stone Tablet
@@ -3944,7 +3944,7 @@ for key,value in pairs({
 	[398770] = "돌멩이 상자",	-- Box of Rocks
 	[398778] = "역겨운 보관통",	-- Disgusting Vat
 	[398783] = "불꽃 주입 비늘 기름",	-- Flame-Infused Scale Oil
-	--TODO: [398785] = "Lava-Forged Leatherworker's 'Knife'",	-- Lava-Forged Leatherworker's 'Knife'
+	[398785] = "용암벼림 가죽세공 \"칼\"",	-- Lava-Forged Leatherworker's \"Knife\"
 	[398786] = "자아낸 거미줄",	-- Spun Webs
 	[398787] = "자아낸 거미줄",	-- Spun Webs
 	[398788] = "자아낸 거미줄",	-- Spun Webs
@@ -3971,7 +3971,7 @@ for key,value in pairs({
 	[402634] = "자칼리 장로의 창",	-- Zaqali Elder Spear
 	[402868] = "버려진 예비용 낙하산",	-- Abandoned Reserve Chute
 	[402878] = "다 쓴 마법 붕대 도구",	-- Used Medical Wrap Kit
-	--TODO: [402887] = "Exquisitely Embroidered Banner",	-- Exquisitely Embroidered Banner
+	[402887] = "정교하게 수놓은 깃발",	-- Exquisitely Embroidered Banner
 	[402888] = "섬세한 자칼리 룬",	-- Intricate Zaqali Runes
 	--TODO: [402890] = "Hissing Rune Draft",	-- Hissing Rune Draft
 	--TODO: [402892] = "Ancient Research",	-- Ancient Research

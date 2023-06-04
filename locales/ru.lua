@@ -3639,7 +3639,7 @@ for key,value in pairs({
 	[380840] = "Порванная сумка наездника",	-- Torn Riding Pack
 	[380842] = "Золотая монета",	-- Gold Coin
 	[380843] = "Резиновая рыба",	-- Rubber Fish
-	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
+	[380847] = "Друза изумрудов",	-- Emerald Gem Cluster
 	[380859] = "Игрушечная лодка клыкарров",	-- Tuskarr Toy Boat
 	[380860] = "Кентаврский рог",	-- Centaur Horn
 	[380867] = "Янтарная друза",	-- Amber Gem Cluster
@@ -3692,7 +3692,7 @@ for key,value in pairs({
 	[381650] = "Просьба архивариуса",	-- Archivists' Request
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
 	[381661] = "Просьба архивариуса",	-- Archivists' Request
-	[381662] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
+	[381662] = "Просьба архивариуса",	-- Archivists' Request
 	[381663] = "\"Манаштормы для новичков\"",	-- Manastorming For Beginners
 	[381664] = "Просьба архивариуса",	-- Archivists' Request
 	[381667] = "Просьба архивариуса",	-- Archivists' Request
@@ -3821,7 +3821,7 @@ for key,value in pairs({
 	[386532] = "Тайник изначального золота",	-- Primordial Gold Cache
 	[386547] = "Форма насыщения",	-- Suffusion Mold
 	[386556] = "Пыльная ваза",	-- Dusty Vase
-	--TODO: [386559] = "Secured Shipment",	-- Secured Shipment
+	[386559] = "Защищенные ресурсы",	-- Secured Shipment
 	[386573] = "Изысканная коробка для ключей",	-- Ornate Key Box
 	[386578] = "Подарочный жетон Нелтариона",	-- Neltharion Gift Token
 	[386579] = "Подарочный жетон Нелтариона",	-- Neltharion Gift Token

@@ -3769,7 +3769,7 @@ for key,value in pairs({
 	[385952] = "Anello Inusuale",	-- Unusual Ring
 	[386079] = "Cassa Ben Masticata",	-- Well-Chewed Chest
 	[386080] = "Chiave Incandescente",	-- Scorching Key
-	--TODO: [386086] = "Seething Cache",	-- Seething Cache
+	[386086] = "Cassa Ribollente",	-- Seething Cache
 	[386088] = "Offerte Rituali",	-- Ritual Offerings
 	[386089] = "Offerte Rituali",	-- Ritual Offerings
 	[386090] = "Offerte Rituali",	-- Ritual Offerings
@@ -3821,7 +3821,7 @@ for key,value in pairs({
 	[386532] = "Cassa dell'Oro primordiale",	-- Primordial Gold Cache
 	[386547] = "Stampo di Soffusione",	-- Suffusion Mold
 	[386556] = "Vaso Polveroso",	-- Dusty Vase
-	--TODO: [386559] = "Secured Shipment",	-- Secured Shipment
+	[386559] = "Spedizione in Sicurezza",	-- Secured Shipment
 	[386573] = "Cassetta Portachiavi Adornata",	-- Ornate Key Box
 	[386578] = "Emblema Dono di Neltharion",	-- Neltharion Gift Token
 	[386579] = "Emblema Dono di Neltharion",	-- Neltharion Gift Token
