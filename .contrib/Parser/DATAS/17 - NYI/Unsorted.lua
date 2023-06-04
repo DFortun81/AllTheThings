@@ -1001,7 +1001,6 @@ root(ROOTS.Unsorted, {
 				i(204175),	-- Unknown Core
 				i(204197),	-- Shard of an Earth Portal
 				i(204198),	-- Shard of an Fire Portal
-				i(204271),	-- Blacktalon Napalm
 				i(204273),	-- Stolen Supplies
 				i(204315),	-- Zaqali Bone Needle
 				i(204325),	-- Crude Key Fragment
@@ -1037,7 +1036,6 @@ root(ROOTS.Unsorted, {
 				i(205985),	-- Loamm Niffen Insignia
 				-- Large Rep
 				i(205252),	-- Momento of Rekindled Bonds
-				i(206006),	-- Earth-Warder's Thanks
 				-- Research
 				i(205454),	-- Researchers Wheel Barrow
 				-- Special

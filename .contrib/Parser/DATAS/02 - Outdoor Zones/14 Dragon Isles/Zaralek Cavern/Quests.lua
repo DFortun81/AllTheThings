@@ -496,6 +496,56 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204682),	-- Enchanted Wyrm's Shadowflame Crest
 					},
 				}),
+				q(74521, {	-- A Flame, Extinguished
+					-- Requires kill of Sarkareth (questID 75694 is not required in order to start this)
+					["provider"] = { "n", 201727 },	-- Ebyssian
+					["coord"] = { 48.0, 11.8, ZARALEK_CAVERN },
+				}),
+				q(74522, {	-- Remnants
+					["sourceQuests"] = { 74521 },	-- A Flame, Extinguished
+					["provider"] = { "n", 202809 },	-- Wrathion
+					["maps"] = { 2171, 2172 },	-- Aberrus, the Shadowed Crucible
+					["g"] = {
+						i(204271),	-- Blacktalon Napalm
+					},
+				}),
+				q(74523, {	-- A Traitor's Due
+					["sourceQuests"] = { 74521 },	-- A Flame, Extinguished
+					["provider"] = { "n", 202810 },	-- Seballian
+					["maps"] = { 2171, 2172 },	-- Aberrus, the Shadowed Crucible
+				}),
+				q(74525, {	-- Honorbound
+					["sourceQuests"] = { 74521 },	-- A Flame, Extinguished
+					["provider"] = { "n", 202858 },	-- Drained Djaradin
+					["coord"] = { 43.3, 51.8, 2171 },	-- Aberrus, the Shadowed Crucible
+				}),
+				q(75018, {	-- Into the Dark
+					["sourceQuests"] = {
+						74523,	-- A Traitor's Due
+						74525,	-- Honorbound
+						74522,	-- Remnants
+					},
+					["provider"] = { "n", 202809 },	-- Wrathion
+					["maps"] = { 2171, 2172 },	-- Aberrus, the Shadowed Crucible
+				}),
+				q(75028, {	-- All the Broken Pieces
+					["sourceQuests"] = { 75018 },	-- Into the Dark
+					["provider"] = { "n", 202928 },	-- Ebyssian
+					["coord"] = { 49.9, 70.9, 2174 },	-- Aberrus, the Shadowed Crucible
+				}),
+				q(75029, {	-- A Legacy, Reforged
+					["sourceQuests"] = { 75028 },	-- All the Broken Pieces
+					["provider"] = { "n", 202928 },	-- Ebyssian
+					["coord"] = { 49.9, 70.9, 2174 },	-- Aberrus, the Shadowed Crucible
+					["g"] = {
+						i(206006),	-- Earth-Warder's Thanks
+					},
+				}),
+				q(75417, {	-- Symbol of Hope
+					["sourceQuests"] = { 75029 },	-- A Legacy, Reforged
+					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 58.1, 34.9, VALDRAKKEN },
+				}),
 			}),
 			------ New System ------
 			q(76101, {	-- Tougher Down Under

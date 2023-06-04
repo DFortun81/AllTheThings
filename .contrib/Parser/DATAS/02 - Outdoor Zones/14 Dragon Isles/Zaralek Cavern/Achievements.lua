@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
 				}),
 				crit(6, {	-- A Flame, Extinguished
-					-- Confirm + TODO: ["sourceQuests"] = { 75417 },	-- ???
+					["sourceQuests"] = { 75417 },	-- Symbol of Hope
 				}),
 			}),
 			ach(17766, {	-- Explore Zaralek Cavern
