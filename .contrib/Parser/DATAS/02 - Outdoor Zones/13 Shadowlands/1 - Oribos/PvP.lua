@@ -88,7 +88,7 @@ local SymPvPClass = function(ClassID, Extra)
 	end
 	return SymLink
 end
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		pvp(n(PVP, {
 			n(QUESTS, {

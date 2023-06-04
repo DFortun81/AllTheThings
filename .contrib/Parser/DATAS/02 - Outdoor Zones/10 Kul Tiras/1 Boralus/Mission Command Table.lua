@@ -137,12 +137,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				mission(1877, {	-- The Shadow War
 					i(160982),	-- Recruitment Orders
 				}),
-				pvp(battlepet(mission(2121, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- A Shady Character
+				mission(2121, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- A Shady Character
 					["provider"] = { "i", 165944 },	-- A Shady Message [A]
 					["g"] = {
-						q(54424),	-- A Shady Character
+						q(54424, {	-- A Shady Character
+							["pvp"] = true,
+							["pb"] = true,
+						}),
 					},
-				})))),
+				})),
 			},
 		})),
 	}),

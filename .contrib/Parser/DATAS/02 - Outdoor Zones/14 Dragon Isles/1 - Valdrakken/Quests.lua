@@ -44,104 +44,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			--}),
 		}),
 		n(QUESTS, {
-			header(HEADERS.Achievement, 17734, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Active Listening Skills
-				q(72411, {	-- Cause Without a Rebel
-					-- ["sourceQuests"] = {  },	--
-					["provider"] = { "n", 189842 },	-- Captain Drine
-					["coord"] = { 56.5, 40.1, VALDRAKKEN },
-				}),
-				q(72412, {	-- Explosive Interruption
-					["sourceQuests"] = { 72411 },	-- Cause Without a Rebel
-					["provider"] = { "n", 200754 },	-- Captain Drine
-					["coord"] = { 55.5, 33.8, VALDRAKKEN },
-				}),
-				q(72413, {	-- Irreconcilable Differences
-					["sourceQuests"] = { 72412 },	-- Explosive Interruption
-					["provider"] = { "n", 199397 },	-- Investigator Erima
-					["coord"] = { 46.4, 50.8, VALDRAKKEN },
-				}),
-				q(72414, {	-- Know Prisoners!
-					["sourceQuests"] = { 72412 },	-- Explosive Interruption
-					["provider"] = { "n", 199396 },	-- Maldra Flametongue
-					["coord"] = { 46.3, 50.7, VALDRAKKEN },
-					["g"] = {
-						i(202855),	-- Maldra's Ring of Elemental Binding
-					},
-				}),
-				q(72415, {	-- Rebel Rousing Writings
-					["sourceQuests"] = { 72412 },	-- Explosive Interruption
-					["provider"] = { "n", 199396 },	-- Maldra Flametongue
-					["coord"] = { 46.3, 50.7, VALDRAKKEN },
-					["g"] = {
-						i(202702),	-- The Dragonkin Voice 1: A Dragonkin's Worth
-						i(202699),	-- The Dragonkin Voice 2: 100 Centuries Abandoned
-						i(202700),	-- The Dragonkin Voice 3: 100 Centuries Independent
-						i(202698),	-- The Dragonkin Voice 4: Might & Right
-						i(202701),	-- The Dragonkin Voice 5: The Rebel Code
-					},
-				}),
-				q(72416, {	-- Temporary Accommodations
-					["sourceQuests"] = {
-						72413,	-- Irreconcilable Differences
-						72414,	-- Know Prisoners!
-						72415,	-- Rebel Rousing Writings
-					},
-					["provider"] = { "n", 199396 },	-- Maldra Flametongue
-					["coord"] = { 46.3, 50.7, THALDRASZUS },
-				}),
-				q(72417, {	-- Persistent Dissidents
-					["sourceQuests"] = { 72416 },	-- Temporary Accommodations
-					["provider"] = { "n", 199382 },	-- Alexstrasza the Life-Binder
-					["coord"] = { 38.8, 52.5, THALDRASZUS },
-				}),
-				q(72418, {	-- Solicited Opinions
-					["sourceQuests"] = { 72417 },	-- Persistent Dissidents
-					["provider"] = { "n", 201211 },	-- Alexstrasza the Life-Binder
-					["coord"] = { 38.8, 52.5, THALDRASZUS },
-				}),
-				q(72419, {	-- Cleaning up the Cliffraff
-					["sourceQuests"] = { 72418 },	-- Solicited Opinions
-					["provider"] = { "n", 200788 },	-- Captain Drime
-					["coord"] = { 38.8, 52.6, THALDRASZUS },
-				}),
-				q(72422, {	-- Stop the Presses
-					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
-					--["provider"] = { "n", 199301 },	-- Investigator Erima
-					--["coord"] = { 46.4, 55.9, THALDRASZUS },
-					["g"] = {
-						i(203390),	-- Maldra's Ring of Elemental Binding
-					},
-				}),
-				q(72421, {	-- The Quill to Power
-					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
-					--["provider"] = { "n", 199301 },	-- Investigator Erima
-					--["coord"] = { 46.4, 55.9, THALDRASZUS },
-				}),
-				q(72420, {	-- Wreckonciliation
-					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
-					["provider"] = { "n", 199301 },	-- Investigator Erima
-					["coord"] = { 46.4, 55.9, THALDRASZUS },
-					["g"] = {
-						i(203383),	-- Notes on Dragonkin Equality
-					},
-				}),
-				q(75230, {	-- Reconcilable Dissidents
-					["sourceQuests"] = {
-						72422,	-- Stop the Presses
-						72421,	-- The Quill to Power
-						72420,	-- Wreckonciliation
-					},
-					["provider"] = { "n", 200839 },	-- Alexstrasza the Life-Binder
-					["coord"] = { 76.8, 33.5, VALDRAKKEN },
-					["g"] = {
-						ach(17734),	-- Active Listening Skills
-						title(498),	-- <Name> the Reconciler
-					},
-				}),
-			})),
 			header(HEADERS.Achievement, 16556, {	-- Great Gourmand of The Ruby Feast
 				["description"] = "Every Day a new sequence of Quests will appear.",
 				["g"] = {
+					------ Day 1 ------
 					q(71238, {	-- The Ruby Feast!
 						["provider"] = { "o", 382166 },	-- The Ruby Feast!
 						["coords"] = {
@@ -167,7 +73,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(200886),	-- Lemon Silverleaf Tea
 						},
 					}),
-					-- Next day
+					------ Day 2 ------
 					q(70932, {	-- The Life of Spice
 						["sourceQuests"] = { 67047 },	-- Warm Away These Shivers
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
@@ -184,7 +90,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(200889),	-- Highly-Spiced Haunch
 						},
 					}),
-					-- Next day
+					------ Day 3 ------
 					q(70957, {	-- The Sea Out West
 						["sourceQuests"] = { 67063 },	-- 10,000 Years of Roasting
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
@@ -201,7 +107,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(200890),	-- Stonetalon Bloom Skewer
 						},
 					}),
-					-- Next day
+					------ Day 4 ------
 					q(70958, {	-- Finest Fungi at the Feast
 						["sourceQuests"] = { 67064 },	-- Rambling Delight
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
@@ -218,7 +124,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(200895),	-- Fine Taladorian Cheese Platter
 						},
 					}),
-					-- Next day
+					------ Day 5 ------
 					q(70981, {	-- Savory Seas
 						["sourceQuests"] = { 67065 },	-- Future-Fresh Fungi
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
@@ -235,7 +141,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(200898),	-- Mantis Shrimp Cocktail
 						},
 					}),
-					-- Next day
+					------ Day 6 ------
 					q(70987, {	-- Hearts of Starch
 						["sourceQuests"] = { 67066 },	-- Delights to Delve For
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
@@ -252,7 +158,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(200901),	-- Roquefort-Stuffed Peppers
 						},
 					}),
-					-- Next day
+					------ Day 7 ------
 					q(70988, {	-- The Egg's the Thing
 						["sourceQuests"] = { 67067 },	-- Navigating the Leapmaize
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
@@ -269,6 +175,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(200904),	-- Picante Pomfruit Cake
 						},
 					}),
+					------ Day 8 ------
 					q(67071, {	-- What a Long, Sweet Trip It's Been
 						["sourceQuests"] = { 67068 },	-- Anything But a Breeze
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
@@ -280,7 +187,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
-			-- A Dryad Questline
+			------ Dryad Storyline ------
 			q(67094, {	-- A Dryad's Work Is Never Done
 				["sourceQuests"] = {
 					66244,	-- To Valdrakken
@@ -354,7 +261,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
-			-- MISC
+			------ Misc ------
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note
 				["coord"] = { 47.8, 46.6, VALDRAKKEN },
@@ -368,7 +275,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 49.9, 56, VALDRAKKEN },
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
-			-- Repeatable
+			------ Repeatables ------
 			q(75164, {	-- In Need of Primal Foci
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.4, 58.8, VALDRAKKEN },
@@ -510,18 +417,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(67061),	-- triggered after 'Anything But a Breeze' (67068)
 		q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (67071)
 		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
-		-- During Solicited Opinions (72418)
-		q(75199),    -- Solicited Opinions question 3 answer 3
-		q(75198),    -- Solicited Opinions question 3 answer 2
-		q(75197),    -- Solicited Opinions question 3 answer 1
-		q(75196),    -- Solicited Opinions question 2 answer 3
-		q(75195),    -- Solicited Opinions question 2 answer 2
-		q(75194),    -- Solicited Opinions question 2 answer 1
-		q(75193),    -- Solicited Opinions question 1 answer 3
-		q(75192),    -- Solicited Opinions question 1 answer 2
-		q(75191),    -- Solicited Opinions question 1 answer 1
-		-- Stay awhile Listening
-		q(73960),	--
 	}),
 }));
 

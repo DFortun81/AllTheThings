@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 	m(THE_FORBIDDEN_REACH, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
-				-- Chapter 0 --
+				------ Prologue ------
 				q(74381, {	-- Hidden Legacies
 					["maps"] = { VALDRAKKEN },
 				}),
@@ -95,8 +95,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 199539 },	-- Scalecommander Emberthal
 					["coord"] = { 76.6, 38.6, THE_FORBIDDEN_REACH },
 				}),
+				------ Continues in Zaralek Cavern ------
 			}),
-			--
 			q(74359, {	-- Plunder Siege
 				["sourceQuests"] = {
 					75050,	-- An Eclectic Accord

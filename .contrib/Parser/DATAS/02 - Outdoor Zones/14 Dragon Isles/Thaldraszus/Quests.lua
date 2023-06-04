@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(THALDRASZUS, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 16363, {	-- Just Don't Ask Me to Spell It
-					-- Chapter 1 --
+				------ Chapter 1 ------
 				q(66244, {	-- To Valdrakken
 					["sourceQuests"] = { 66015 },	-- The Blue Dragon Oathstone
 					["provider"] = { "n", 190000 },	-- Kalecgos
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190562 },	-- Guardian Velomir
 					["coord"] = { 40.2, 85.1, THALDRASZUS },
 				}),
-					-- Chapter 2 --
+				------ Chapter 2 ------
 				q(66320, {	-- The Flow of Time
 					["sourceQuests"] = { 66252 },	-- Reporting In
 					["provider"] = { "n", 187669 },	-- Nozdormu
@@ -245,7 +245,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 186711 },	-- Chromie
 					["coord"] = { 59.6, 81.7, THALDRASZUS },
 				}),
-					-- Chapter 3 --
+				------ Chapter 3 ------
 				q(70040, {	-- Tumbling Through Time
 					["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
 					["provider"] = { "n", 186931 },	-- Nozdormu
@@ -255,10 +255,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70040 },	-- Tumbling Through Time
 					["provider"] = { "n", 186931 },	-- Nozdormu
 					["coord"] = { 60.1, 82.4, THALDRASZUS },
-					["g"] = {
-					--	currency(2118),	-- Elemental Overflow
-					-- dont need to show 60x one time reward when rares drop 1k+ in 10.0.7
-					},
 				}),
 				q(66029, {	-- Temporal Tuning
 					["sourceQuests"] = { 70040 },	-- Tumbling Through Time
@@ -274,8 +270,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 186953 },	-- Possible Future You
 					["coord"] = { 61.4, 50.2, THE_PRIMALIST_FUTURE },
 					["g"] = {
-					--	currency(2118),	-- Elemental Overflow
-					-- dont need to show 60x one time reward when rares drop 1k+ in 10.0.7
 						i(195185),	-- Annihilation Warder's Cloak
 					},
 				}),
@@ -284,8 +278,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 183860 },	-- Soridormi
 					["coord"] = { 61.1, 50.8, THE_PRIMALIST_FUTURE },
 					["g"] = {
-					--	currency(2118),	-- Elemental Overflow
-					-- dont need to show 60x one time reward when rares drop 1k+ in 10.0.7
 						i(192467),	-- Bandages
 					},
 				}),
@@ -397,7 +389,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 72.5, 56.2, THALDRASZUS },
 				}),
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(70437, {	-- To Tyrhold
 					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
@@ -426,552 +418,617 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(197921),	-- Primal Infusion
 					},
 				}),
+				------ Epilogue ------
 				q(72380, {	-- Together We Are Unstoppable
 					["sourceQuests"] = { 66847 },	-- Vault of the Incarnates: Fury of the Storm-Eater
 					["provider"] = { "n", 193460 },	-- Kalegos
 					["maps"] = { 2119, 2120, 2121, 2122, 2123, 2124, 2125, 2126, 2135, },	-- Vault of the Incarnates
 				}),
+				------ The End ------
 			}),
-			crit(1, {	-- Gelikyr Overlook
-				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-				["collectible"] = false,
-				["g"] = {
-					q(71179, {	-- Look to the Overlook
-						["sourceQuests"] = { 66252 },	-- Reporting In
-						["provider"] = { "n", 189842 },	-- Captain Drine
-						["coord"] = { 56.0, 40.0, VALDRAKKEN },
-						["isBreadcrumb"] = true,	-- Probably?
-					}),
-					q(66468, {	-- What Once Was Ours
-						-- ["sourceQuests"] = { 66252 },	-- Reporting In (inaccurate)
-						["provider"] = { "n", 189174 },	-- Commander Thadezus
-						["coord"] = { 52.7, 67.3, THALDRASZUS },
-						["g"] ={
-							i(197097),	-- Highland Drake: Spined Back (DM!)
-							i(192795),	-- Rejuvenating Draught
-						},
-					}),
-					q(66471, {	-- Prime Planning
-						["sourceQuests"] = { 66468 },	-- What Once Was Ours
-						["provider"] = { "n", 189188 },	-- Sharnax
-						["coord"] = { 54.4, 65.2, THALDRASZUS },
-					}),
-					q(66470, {	-- The Forward Push
-						["sourceQuests"] = { 66468 },	-- What Once Was Ours
-						["provider"] = { "n", 189188 },	-- Sharnax
-						["coord"] = { 54.4, 65.2, THALDRASZUS },
-					}),
-					q(66473, {	-- The Land Awakens
-						["sourceQuests"] = {
-							66471,	-- Prime Planning
-							66470,	-- The Forward Push
-						},
-						["provider"] = { "n", 189188 },	-- Sharnax
-						["coord"] = { 54.8, 64.3, THALDRASZUS },
-						["g"] = {
-							i(197103),	--	Highland Drake: Maned Chin (DM!)
-						},
-					}),
-					q(66472, {	-- Primal List
-						["sourceQuests"] = { 66473 },	-- The Land Awakens
-						["provider"] = { "n", 189188 },	-- Sharnax
-						["coord"] = { 54.8, 64.3, THALDRASZUS },
-						["g"] = {
-							i(200537),	-- Bundle of Primalist Orders
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16398.01, {	-- Gelikyr Overlook
+				q(71179, {	-- Look to the Overlook
+					["sourceQuests"] = { 66252 },	-- Reporting In
+					["provider"] = { "n", 189842 },	-- Captain Drine
+					["coord"] = { 56.0, 40.0, VALDRAKKEN },
+					["isBreadcrumb"] = true,	-- Probably?
+				}),
+				q(66468, {	-- What Once Was Ours
+					-- ["sourceQuests"] = { 66252 },	-- Reporting In (inaccurate)
+					["provider"] = { "n", 189174 },	-- Commander Thadezus
+					["coord"] = { 52.7, 67.3, THALDRASZUS },
+					["g"] ={
+						i(197097),	-- Highland Drake: Spined Back (DM!)
+						i(192795),	-- Rejuvenating Draught
+					},
+				}),
+				q(66471, {	-- Prime Planning
+					["sourceQuests"] = { 66468 },	-- What Once Was Ours
+					["provider"] = { "n", 189188 },	-- Sharnax
+					["coord"] = { 54.4, 65.2, THALDRASZUS },
+				}),
+				q(66470, {	-- The Forward Push
+					["sourceQuests"] = { 66468 },	-- What Once Was Ours
+					["provider"] = { "n", 189188 },	-- Sharnax
+					["coord"] = { 54.4, 65.2, THALDRASZUS },
+				}),
+				q(66473, {	-- The Land Awakens
+					["sourceQuests"] = {
+						66471,	-- Prime Planning
+						66470,	-- The Forward Push
+					},
+					["provider"] = { "n", 189188 },	-- Sharnax
+					["coord"] = { 54.8, 64.3, THALDRASZUS },
+					["g"] = {
+						i(197103),	--	Highland Drake: Maned Chin (DM!)
+					},
+				}),
+				q(66472, {	-- Primal List
+					["sourceQuests"] = { 66473 },	-- The Land Awakens
+					["provider"] = { "n", 189188 },	-- Sharnax
+					["coord"] = { 54.8, 64.3, THALDRASZUS },
+					["g"] = {
+						i(200537),	-- Bundle of Primalist Orders
+					},
+				}),
 			}),
-			crit(2, {	-- Drawing Conclusions
-				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-				["collectible"] = false,
-				["g"] = {
-					q(71219, {	-- The Wayward Waywatcher
-						-- ["sourceQuests"] = {  },	--
-						["provider"] = { "n", 197533 },	-- Waywatcher Lorin
-						["coord"] = { 50.2, 62.4, VALDRAKKEN },
-						["isBreadcrumb"] = true,
-					}),
-					q(66448, {	-- The Wayward Waywatcher
-						-- ["sourceQuests"] = {  },	--
-						["provider"] = { "n", 187202 },	-- Waywatcher Nori
-						["coord"] = { 52.4, 68.7, THALDRASZUS },
-						["isBreadcrumb"] = true,
-					}),
-					q(66230, {	-- A Sketchy Request
-						["sourceQuests"] = {
-							71219,	-- The Wayward Waywatcher
-							66448,	-- The Wayward Waywatcher
-						},
-						["provider"] = { "n", 191753 },	-- Waywatcher Alvi
-						["coord"] = { 54.7, 69.5, THALDRASZUS },
-					}),
-					q(66100, {	-- Supplying in Weight
-						["sourceQuests"] = {
-							71219,	-- The Wayward Waywatcher
-							66448,	-- The Wayward Waywatcher
-						},
-						["provider"] = { "n", 191753 },	-- Waywatcher Alvi
-						["coord"] = { 54.7, 69.5, THALDRASZUS },
-						["g"] = {
-							i(191405),	-- Alvi's "Ledger"
-						},
-					}),
-					q(66456, {	-- A Poisonous Palette
-						["sourceQuests"] = {
-							66230,	-- A Sketchy Request
-							66100,	-- Supplying in Weight
-						},
-						["provider"] = { "n", 187289 },	-- Waywatcher Alvi
-						["coord"] = { 57.0, 67.7, THALDRASZUS },
-					}),
-					q(66457, {	-- Ending the Blue Period
-						["sourceQuests"] = {
-							66230,	-- A Sketchy Request
-							66100,	-- Supplying in Weight
-						},
-						["provider"] = { "n", 187289 },	-- Waywatcher Alvi
-						["coord"] = { 57.0, 67.7, THALDRASZUS },
-					}),
-					q(66467, {	-- Art Inmitates Life
-						["sourceQuests"] = {
-							66456,	-- A Poisonous Palette
-							66457,	-- Ending the Blue Period
-						},
-						["provider"] = { "n", 187289 },	-- Waywatcher Alvi
-						["coord"] = { 57.0, 67.7, THALDRASZUS },
-						["g"] = {
-							i(195187),	-- Artist's Belt
-							i(195186),	-- Artist's Cinch
-							i(195188),	-- Artist's Sash
-							i(195189),	-- Artist's Waistguard
-						},
-					}),
-					q(66465, {	-- Cache and Release
-						["sourceQuests"] = {
-							66456,	-- A Poisonous Palette
-							66457,	-- Ending the Blue Period
-						},
-						["provider"] = { "n", 187289 },	-- Waywatcher Alvi
-						["coord"] = { 57.0, 67.7, THALDRASZUS },
-						["g"] = {
-							i(197122),	-- Highland Drake: Heavy Horns (DM!)
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16398.02, {	-- Drawing Conclusions
+				q(71219, {	-- The Wayward Waywatcher
+					-- ["sourceQuests"] = {  },	--
+					["provider"] = { "n", 197533 },	-- Waywatcher Lorin
+					["coord"] = { 50.2, 62.4, VALDRAKKEN },
+					["isBreadcrumb"] = true,
+				}),
+				q(66448, {	-- The Wayward Waywatcher
+					-- ["sourceQuests"] = {  },	--
+					["provider"] = { "n", 187202 },	-- Waywatcher Nori
+					["coord"] = { 52.4, 68.7, THALDRASZUS },
+					["isBreadcrumb"] = true,
+				}),
+				q(66230, {	-- A Sketchy Request
+					["sourceQuests"] = {
+						71219,	-- The Wayward Waywatcher
+						66448,	-- The Wayward Waywatcher
+					},
+					["provider"] = { "n", 191753 },	-- Waywatcher Alvi
+					["coord"] = { 54.7, 69.5, THALDRASZUS },
+				}),
+				q(66100, {	-- Supplying in Weight
+					["sourceQuests"] = {
+						71219,	-- The Wayward Waywatcher
+						66448,	-- The Wayward Waywatcher
+					},
+					["provider"] = { "n", 191753 },	-- Waywatcher Alvi
+					["coord"] = { 54.7, 69.5, THALDRASZUS },
+					["g"] = {
+						i(191405),	-- Alvi's "Ledger"
+					},
+				}),
+				q(66456, {	-- A Poisonous Palette
+					["sourceQuests"] = {
+						66230,	-- A Sketchy Request
+						66100,	-- Supplying in Weight
+					},
+					["provider"] = { "n", 187289 },	-- Waywatcher Alvi
+					["coord"] = { 57.0, 67.7, THALDRASZUS },
+				}),
+				q(66457, {	-- Ending the Blue Period
+					["sourceQuests"] = {
+						66230,	-- A Sketchy Request
+						66100,	-- Supplying in Weight
+					},
+					["provider"] = { "n", 187289 },	-- Waywatcher Alvi
+					["coord"] = { 57.0, 67.7, THALDRASZUS },
+				}),
+				q(66467, {	-- Art Inmitates Life
+					["sourceQuests"] = {
+						66456,	-- A Poisonous Palette
+						66457,	-- Ending the Blue Period
+					},
+					["provider"] = { "n", 187289 },	-- Waywatcher Alvi
+					["coord"] = { 57.0, 67.7, THALDRASZUS },
+					["g"] = {
+						i(195187),	-- Artist's Belt
+						i(195186),	-- Artist's Cinch
+						i(195188),	-- Artist's Sash
+						i(195189),	-- Artist's Waistguard
+					},
+				}),
+				q(66465, {	-- Cache and Release
+					["sourceQuests"] = {
+						66456,	-- A Poisonous Palette
+						66457,	-- Ending the Blue Period
+					},
+					["provider"] = { "n", 187289 },	-- Waywatcher Alvi
+					["coord"] = { 57.0, 67.7, THALDRASZUS },
+					["g"] = {
+						i(197122),	-- Highland Drake: Heavy Horns (DM!)
+					},
+				}),
 			}),
-			crit(3, {	-- The Screetchflight Scramble
-				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-				["collectible"] = false,
-				["g"] = {
-					q(71239, {	-- Lost to the Skies
-						-- ["sourceQuests"] = {  },	--
-						["provider"] = { "n", 194578 },	-- Grimla Fizzlecrank
-						["coord"] = { 25.2, 66.1, VALDRAKKEN },
-						["isBreadcrumb"] = true,
-					}),
-					q(70781, {	-- Out of the Blue
-						-- ["sourceQuests"] = {  },	--
-						["provider"] = { "n", 196392 },	-- Lieutenant Conure
-						["coord"] = { 50.5, 67.4, THALDRASZUS },
-						["isBreadcrumb"] = true,
-					}),
-					q(66071, {	-- Flying Rocs
-						["sourceQuests"] = {
-							71239,	-- Lost to the Skies
-							70781,	-- Out of the Blue
-						},
-						["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
-						["coord"] = { 50.0, 69.8, THALDRASZUS },
-						["g"] = {
-							i(189384),	-- Ornithological Medical Kit
-						},
-					}),
-					q(65267, {	-- Smash'Em to Feathereens
-						["sourceQuests"] = { 71239 },	-- Lost to the Skies
-						["provider"] = { "n", 184591 },	-- Segallia
-						["coord"] = { 50.0, 69.8, THALDRASZUS },
-					}),
-					q(65313, {	-- A Roc-ing Appetite
-						["sourceQuests"] = {
-							66071,	-- Flying Rocs
-							65267,	-- Smash'Em to Feathereens
-						},
-						["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
-						["coord"] = { 50.0, 69.8, THALDRASZUS },
-					}),
-					q(65490, {	-- Explosive Excrement
-						["sourceQuests"] = {
-							66071,	-- Flying Rocs
-							65267,	-- Smash'Em to Feathereens
-						},
-						["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
-						["coord"] = { 50.0, 69.8, THALDRASZUS },
-						["g"] = {
-							i(190188),	-- The Chirpsnide Auto-Excre-Collector
-						},
-					}),
-					q(65373, {	-- Plucking Parts
-						["sourceQuests"] = {
-							66071,	-- Flying Rocs
-							65267,	-- Smash'Em to Feathereens
-						},
-						["provider"] = { "n", 184591 },	-- Segallia
-						["coord"] = { 50.0, 69.8, THALDRASZUS },
-					}),
-					q(65475, {	-- Rollling in the Screech
-						["sourceQuests"] = {
-							66071,	-- Flying Rocs
-							65267,	-- Smash'Em to Feathereens
-						},
-						["provider"] = { "i", 189361 },	-- Screechflight Scroll
-						["coord"] = { 48.8, 75.1, THALDRASZUS },
-					}),
-					q(65371, {	-- A Nest of Our Own
-						["sourceQuests"] = {
-							65313,	-- A Roc-ing Appetite
-							65490,	-- Explosive Excrement
-							65373,	-- Plucking Parts
-							65475,	-- Rollling in the Screech
-						},
-						["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
-						["coord"] = { 50.0, 69.8, THALDRASZUS },
-					}),
-					q(65374, {	-- It's Plucking Time
-						["sourceQuests"] = {
-							65313,	-- A Roc-ing Appetite
-							65490,	-- Explosive Excrement
-							65373,	-- Plucking Parts
-							65475,	-- Rollling in the Screech
-						},
-						["provider"] = { "n", 184591 },	-- Segallia
-						["coord"] = { 50.0, 69.8, THALDRASZUS },
-						["g"] = {
-							i(189454),	-- Feather-Plucker 3300
-						},
-					}),
-					q(65287, {	-- Separating the Yolk
-						["sourceQuests"] = {
-							65313,	-- A Roc-ing Appetite
-							65490,	-- Explosive Excrement
-							65373,	-- Plucking Parts
-							65475,	-- Rollling in the Screech
-						},
-						["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
-						["coord"] = { 50.0, 69.8, THALDRASZUS },
-					}),
-					q(65778, {	-- Screechflight Potluck
-						["sourceQuests"] = {
-							65371,	-- A Nest of Our Own
-							65374,	-- It's Plucking Time
-							65287,	-- Separating the Yolk
-						},
-						["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
-						["coord"] = { 43.5, 70.7, THALDRASZUS },
-						["g"] = {
-							i(191681),	-- Im-PECK-able Screechflight Disguise
-						},
-					}),
-					q(66299, {	-- The Awaited Egg-splosion
-						["sourceQuests"] = { 65778 },	-- Screechflight Potluck
-						["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
-						["coord"] = { 43.5, 72.1, THALDRASZUS },
-						["g"] = {
-							i(197133),	-- Highland Drake: Spined Cheek (DM!)
-							i(191891),	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise (TOY!)
-							i(191763),	-- Im-PECK-able Screechflight Disguise v2
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16398.03, {	-- The Screetchflight Scramble
+				q(71239, {	-- Lost to the Skies
+					-- ["sourceQuests"] = {  },	--
+					["provider"] = { "n", 194578 },	-- Grimla Fizzlecrank
+					["coord"] = { 25.2, 66.1, VALDRAKKEN },
+					["isBreadcrumb"] = true,
+				}),
+				q(70781, {	-- Out of the Blue
+					-- ["sourceQuests"] = {  },	--
+					["provider"] = { "n", 196392 },	-- Lieutenant Conure
+					["coord"] = { 50.5, 67.4, THALDRASZUS },
+					["isBreadcrumb"] = true,
+				}),
+				q(66071, {	-- Flying Rocs
+					["sourceQuests"] = {
+						71239,	-- Lost to the Skies
+						70781,	-- Out of the Blue
+					},
+					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
+					["coord"] = { 50.0, 69.8, THALDRASZUS },
+					["g"] = {
+						i(189384),	-- Ornithological Medical Kit
+					},
+				}),
+				q(65267, {	-- Smash'Em to Feathereens
+					["sourceQuests"] = { 71239 },	-- Lost to the Skies
+					["provider"] = { "n", 184591 },	-- Segallia
+					["coord"] = { 50.0, 69.8, THALDRASZUS },
+				}),
+				q(65313, {	-- A Roc-ing Appetite
+					["sourceQuests"] = {
+						66071,	-- Flying Rocs
+						65267,	-- Smash'Em to Feathereens
+					},
+					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
+					["coord"] = { 50.0, 69.8, THALDRASZUS },
+				}),
+				q(65490, {	-- Explosive Excrement
+					["sourceQuests"] = {
+						66071,	-- Flying Rocs
+						65267,	-- Smash'Em to Feathereens
+					},
+					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
+					["coord"] = { 50.0, 69.8, THALDRASZUS },
+					["g"] = {
+						i(190188),	-- The Chirpsnide Auto-Excre-Collector
+					},
+				}),
+				q(65373, {	-- Plucking Parts
+					["sourceQuests"] = {
+						66071,	-- Flying Rocs
+						65267,	-- Smash'Em to Feathereens
+					},
+					["provider"] = { "n", 184591 },	-- Segallia
+					["coord"] = { 50.0, 69.8, THALDRASZUS },
+				}),
+				q(65475, {	-- Rollling in the Screech
+					["sourceQuests"] = {
+						66071,	-- Flying Rocs
+						65267,	-- Smash'Em to Feathereens
+					},
+					["provider"] = { "i", 189361 },	-- Screechflight Scroll
+					["coord"] = { 48.8, 75.1, THALDRASZUS },
+				}),
+				q(65371, {	-- A Nest of Our Own
+					["sourceQuests"] = {
+						65313,	-- A Roc-ing Appetite
+						65490,	-- Explosive Excrement
+						65373,	-- Plucking Parts
+						65475,	-- Rollling in the Screech
+					},
+					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
+					["coord"] = { 50.0, 69.8, THALDRASZUS },
+				}),
+				q(65374, {	-- It's Plucking Time
+					["sourceQuests"] = {
+						65313,	-- A Roc-ing Appetite
+						65490,	-- Explosive Excrement
+						65373,	-- Plucking Parts
+						65475,	-- Rollling in the Screech
+					},
+					["provider"] = { "n", 184591 },	-- Segallia
+					["coord"] = { 50.0, 69.8, THALDRASZUS },
+					["g"] = {
+						i(189454),	-- Feather-Plucker 3300
+					},
+				}),
+				q(65287, {	-- Separating the Yolk
+					["sourceQuests"] = {
+						65313,	-- A Roc-ing Appetite
+						65490,	-- Explosive Excrement
+						65373,	-- Plucking Parts
+						65475,	-- Rollling in the Screech
+					},
+					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
+					["coord"] = { 50.0, 69.8, THALDRASZUS },
+				}),
+				q(65778, {	-- Screechflight Potluck
+					["sourceQuests"] = {
+						65371,	-- A Nest of Our Own
+						65374,	-- It's Plucking Time
+						65287,	-- Separating the Yolk
+					},
+					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
+					["coord"] = { 43.5, 70.7, THALDRASZUS },
+					["g"] = {
+						i(191681),	-- Im-PECK-able Screechflight Disguise
+					},
+				}),
+				q(66299, {	-- The Awaited Egg-splosion
+					["sourceQuests"] = { 65778 },	-- Screechflight Potluck
+					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
+					["coord"] = { 43.5, 72.1, THALDRASZUS },
+					["g"] = {
+						i(197133),	-- Highland Drake: Spined Cheek (DM!)
+						i(191891),	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise (TOY!)
+						i(191763),	-- Im-PECK-able Screechflight Disguise v2
+					},
+				}),
 			}),
-			crit(4, {	-- Gardens of Unity
-				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-				["collectible"] = false,
-				["g"] = {
-					q(72189, {	-- Garden Variety
-						-- ["sourceQuests"] = {  },	--
-						["provider"] = { "n", 189364 },	-- Tender Xina
-						["coord"] = { 77.4, 67.3, VALDRAKKEN },
-						["isBreadcrumb"] = true,	-- unconfirmed
-					}),
-					q(66134, {	-- Azeroth Pest Control
-						["sourceQuests"] = { 72189 },	-- Garden Variety
-						["provider"] = { "n", 187300 },	-- Gryrmpech
-						["coord"] = { 37.9, 75.4, THALDRASZUS },
-					}),
-					q(66135, {	-- The Gardener's Apprentice
-						["sourceQuests"] = { 66134 },	-- Azeroth Pest Control
-						["provider"] = { "n", 187300 },	-- Gryrmpech
-						["coord"] = { 37.9, 75.4, THALDRASZUS },
-					}),
-					q(66278, {	-- One Drakonid's Junk
-						["sourceQuests"] = { 66134 },	-- Azeroth Pest Control
-						["provider"] = { "o", 376451 },	-- Bronze Stopwatch
-						["coord"] = { 38.9, 74.3, THALDRASZUS },
-						["g"] = {
-							i(191548),	-- Bronze Pocket Watch
-						},
-					}),
-					q(66136, {	-- Elemental Extract
-						["sourceQuests"] = { 66278 },	-- One Drakonid's Junk
-						["provider"] = { "n", 187300 },	-- Gryrmpech
-						["coord"] = { 37.9, 75.4, THALDRASZUS },
-					}),
-					q(66137, {	-- Lashing Out
-						["sourceQuests"] = { 66278 },	-- One Drakonid's Junk
-						["provider"] = { "n", 187300 },	-- Gryrmpech
-						["coord"] = { 37.9, 75.4, THALDRASZUS },
-					}),
-					q(66279, {	-- New Kid on the Clock
-						["sourceQuests"] = { 66278 },	-- One Drakonid's Junk
-						["provider"] = { "n", 187300 },	-- Gryrmpech
-						["coord"] = { 37.9, 75.4, THALDRASZUS },
-					}),
-					q(66138, {	-- Like Sands Through the Hourglass
-						["sourceQuests"] = { 66279 },	-- New Kid on the Clock
-						["provider"] = { "n", 187310 },	-- Orizmu
-						["coord"] = { 35.2, 72.6, THALDRASZUS },
-					}),
-					q(66139, {	-- Flame at Last
-						["sourceQuests"] = {
-							66136,	-- Elemental Extract
-							66137,	-- Lashing Out
-							66138,	-- Like Sands Through the Hourglass
-						},
-						["provider"] = { "n", 187300 },	-- Gryrmpech
-						["coord"] = { 37.9, 75.4, THALDRASZUS },
-						["g"] = {
-							i(191676),	-- Concentrated Essence of Water
-						},
-					}),
-					q(66412, {	-- Carry On, Basilton
-						["sourceQuests"] = { 66139 },	-- Flame at Last
-						["provider"] = { "n", 187300 },	-- Gryrmpech
-						["coord"] = { 37.9, 75.4, THALDRASZUS },
-						["g"] = {
-							i(194098),	-- Lord Basilton (PET!)
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16398.04, {	-- Gardens of Unity
+				q(72189, {	-- Garden Variety
+					-- ["sourceQuests"] = {  },	--
+					["provider"] = { "n", 189364 },	-- Tender Xina
+					["coord"] = { 77.4, 67.3, VALDRAKKEN },
+					["isBreadcrumb"] = true,	-- unconfirmed
+				}),
+				q(66134, {	-- Azeroth Pest Control
+					["sourceQuests"] = { 72189 },	-- Garden Variety
+					["provider"] = { "n", 187300 },	-- Gryrmpech
+					["coord"] = { 37.9, 75.4, THALDRASZUS },
+				}),
+				q(66135, {	-- The Gardener's Apprentice
+					["sourceQuests"] = { 66134 },	-- Azeroth Pest Control
+					["provider"] = { "n", 187300 },	-- Gryrmpech
+					["coord"] = { 37.9, 75.4, THALDRASZUS },
+				}),
+				q(66278, {	-- One Drakonid's Junk
+					["sourceQuests"] = { 66134 },	-- Azeroth Pest Control
+					["provider"] = { "o", 376451 },	-- Bronze Stopwatch
+					["coord"] = { 38.9, 74.3, THALDRASZUS },
+					["g"] = {
+						i(191548),	-- Bronze Pocket Watch
+					},
+				}),
+				q(66136, {	-- Elemental Extract
+					["sourceQuests"] = { 66278 },	-- One Drakonid's Junk
+					["provider"] = { "n", 187300 },	-- Gryrmpech
+					["coord"] = { 37.9, 75.4, THALDRASZUS },
+				}),
+				q(66137, {	-- Lashing Out
+					["sourceQuests"] = { 66278 },	-- One Drakonid's Junk
+					["provider"] = { "n", 187300 },	-- Gryrmpech
+					["coord"] = { 37.9, 75.4, THALDRASZUS },
+				}),
+				q(66279, {	-- New Kid on the Clock
+					["sourceQuests"] = { 66278 },	-- One Drakonid's Junk
+					["provider"] = { "n", 187300 },	-- Gryrmpech
+					["coord"] = { 37.9, 75.4, THALDRASZUS },
+				}),
+				q(66138, {	-- Like Sands Through the Hourglass
+					["sourceQuests"] = { 66279 },	-- New Kid on the Clock
+					["provider"] = { "n", 187310 },	-- Orizmu
+					["coord"] = { 35.2, 72.6, THALDRASZUS },
+				}),
+				q(66139, {	-- Flame at Last
+					["sourceQuests"] = {
+						66136,	-- Elemental Extract
+						66137,	-- Lashing Out
+						66138,	-- Like Sands Through the Hourglass
+					},
+					["provider"] = { "n", 187300 },	-- Gryrmpech
+					["coord"] = { 37.9, 75.4, THALDRASZUS },
+					["g"] = {
+						i(191676),	-- Concentrated Essence of Water
+					},
+				}),
+				q(66412, {	-- Carry On, Basilton
+					["sourceQuests"] = { 66139 },	-- Flame at Last
+					["provider"] = { "n", 187300 },	-- Gryrmpech
+					["coord"] = { 37.9, 75.4, THALDRASZUS },
+					["g"] = {
+						i(194098),	-- Lord Basilton (PET!)
+					},
+				}),
 			}),
-			crit(5, {	-- Tyrhold Reservoir
-				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-				["collectible"] = false,
-				["g"] = {
-					q(72190, {	-- Reservoir Reservations
-						["sourceQuests"] = {
-							66244,	-- To Valdrakken
-							DF_ACCOUNT_CAMPAIGN_QUEST,
-						},
-						["sourceQuestNumRequired"] = 1,
-						["provider"] = { "n", 198349 },	-- Talikka
-						["coord"] = { 25.5, 40.9, VALDRAKKEN },
-						["isBreadcrumb"] = true,
-					}),
-					q(65913, {	-- Wotcher, Watcher?
-						["sourceQuests"] = { 72190 },	-- Reservoir Reservations
-						["provider"] = { "n", 190527 },	-- Zuttiki
-						["coord"] = { 49.5, 58.9, THALDRASZUS },
-					}),
-					q(65918, {	-- Preventative Maintenance
-						["sourceQuests"] = { 65913 },	-- Wotcher, Watcher?
-						["provider"] = { "n", 190527 },	-- Zuttiki
-						["coord"] = { 49.5, 58.9, THALDRASZUS },
-					}),
-					q(70139, {	-- Where There's a Ward, There's a Way
-						["sourceQuests"] = { 65913 },	-- Wotcher, Watcher?
-						["provider"] = { "n", 189045 },	-- Mara
-						["coord"] = { 49.6, 58.8, THALDRASZUS },
-					}),
-					q(65921, {	-- Refti Retribution
-						["sourceQuests"] = {
-							65918,	-- Preventative Maintenance
-							70139,	-- Where There's a Ward, There's a Way
-						},
-						["provider"] = { "n", 190527 },	-- Zuttiki
-						["coord"] = { 49.5, 58.9, THALDRASZUS },
-					}),
-					q(65916, {	-- We Don't Negotiate with Primalists
-						["sourceQuests"] = {
-							65918,	-- Preventative Maintenance
-							70139,	-- Where There's a Ward, There's a Way
-						},
-						["provider"] = { "n", 189045 },	-- Mara
-						["coord"] = { 49.6, 58.8, THALDRASZUS },
-					}),
-					q(65920, {	-- For the Ward!
-						["sourceQuests"] = {
-							65921,	-- Refti Retribution
-							65916,	-- We Don't Negotiate with Primalists
-						},
-						["provider"] = { "n", 189045 },	-- Mara
-						["coord"] = { 49.6, 58.7, THALDRASZUS },
-						["g"] = {
-							i(195192),	-- Sister's Gift
-							i(195193),	-- Sister's Keeper
-							i(195190),	-- Sister's Token
-							i(195191),	-- Sister's Embrace
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16398.05, {	-- Tyrhold Reservoir
+				q(72190, {	-- Reservoir Reservations
+					["sourceQuests"] = {
+						66244,	-- To Valdrakken
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 198349 },	-- Talikka
+					["coord"] = { 25.5, 40.9, VALDRAKKEN },
+					["isBreadcrumb"] = true,
+				}),
+				q(65913, {	-- Wotcher, Watcher?
+					["sourceQuests"] = { 72190 },	-- Reservoir Reservations
+					["provider"] = { "n", 190527 },	-- Zuttiki
+					["coord"] = { 49.5, 58.9, THALDRASZUS },
+				}),
+				q(65918, {	-- Preventative Maintenance
+					["sourceQuests"] = { 65913 },	-- Wotcher, Watcher?
+					["provider"] = { "n", 190527 },	-- Zuttiki
+					["coord"] = { 49.5, 58.9, THALDRASZUS },
+				}),
+				q(70139, {	-- Where There's a Ward, There's a Way
+					["sourceQuests"] = { 65913 },	-- Wotcher, Watcher?
+					["provider"] = { "n", 189045 },	-- Mara
+					["coord"] = { 49.6, 58.8, THALDRASZUS },
+				}),
+				q(65921, {	-- Refti Retribution
+					["sourceQuests"] = {
+						65918,	-- Preventative Maintenance
+						70139,	-- Where There's a Ward, There's a Way
+					},
+					["provider"] = { "n", 190527 },	-- Zuttiki
+					["coord"] = { 49.5, 58.9, THALDRASZUS },
+				}),
+				q(65916, {	-- We Don't Negotiate with Primalists
+					["sourceQuests"] = {
+						65918,	-- Preventative Maintenance
+						70139,	-- Where There's a Ward, There's a Way
+					},
+					["provider"] = { "n", 189045 },	-- Mara
+					["coord"] = { 49.6, 58.8, THALDRASZUS },
+				}),
+				q(65920, {	-- For the Ward!
+					["sourceQuests"] = {
+						65921,	-- Refti Retribution
+						65916,	-- We Don't Negotiate with Primalists
+					},
+					["provider"] = { "n", 189045 },	-- Mara
+					["coord"] = { 49.6, 58.7, THALDRASZUS },
+					["g"] = {
+						i(195192),	-- Sister's Gift
+						i(195193),	-- Sister's Keeper
+						i(195190),	-- Sister's Token
+						i(195191),	-- Sister's Embrace
+					},
+				}),
 			}),
-			crit(6, {	-- Bleeding Hearts
-				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-				["collectible"] = false,
-				["g"] = {
-					q(72399, {	-- The Hermit's Garden
-						["provider"] = { "n", 198507 },	-- Agues
-						["coord"] = { 52.6, 69.9, THALDRASZUS },
-						["isBreadcrumb"] = true,
-					}),
-					q(69933, {	-- Curiosity's Price
-						["provider"] = { "n", 193538 },	-- Szareth
-						["coord"] = { 50.3, 67.7, THALDRASZUS },
-					}),
-					q(69932, {	-- Every Life Counts
-						["sourceQuests"] = { 72399 },	-- The Hermit's Garden
-						["provider"] = { "n", 193538 },	-- Szareth
-						["coord"] = { 50.3, 67.7, THALDRASZUS },
-					}),
-					q(69934, {	-- Bleeding Hearts
-						["sourceQuests"] = {
-							69933,	-- Curiosity's Price
-							69932,	-- Every Life Counts
-						},
-						["provider"] = { "n", 193538 },	-- Szareth
-						["coord"] = { 50.3, 67.7, THALDRASZUS },
-					}),
-				},
+			header(HEADERS.AchCriteria, 16398.06, {	-- Bleeding Hearts
+				q(72399, {	-- The Hermit's Garden
+					["provider"] = { "n", 198507 },	-- Agues
+					["coord"] = { 52.6, 69.9, THALDRASZUS },
+					["isBreadcrumb"] = true,
+				}),
+				q(69933, {	-- Curiosity's Price
+					["provider"] = { "n", 193538 },	-- Szareth
+					["coord"] = { 50.3, 67.7, THALDRASZUS },
+				}),
+				q(69932, {	-- Every Life Counts
+					["sourceQuests"] = { 72399 },	-- The Hermit's Garden
+					["provider"] = { "n", 193538 },	-- Szareth
+					["coord"] = { 50.3, 67.7, THALDRASZUS },
+				}),
+				q(69934, {	-- Bleeding Hearts
+					["sourceQuests"] = {
+						69933,	-- Curiosity's Price
+						69932,	-- Every Life Counts
+					},
+					["provider"] = { "n", 193538 },	-- Szareth
+					["coord"] = { 50.3, 67.7, THALDRASZUS },
+				}),
 			}),
-			crit(7, {	-- Serene Dreams Spa
-				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-				["collectible"] = false,
-				["g"] = {
-					q(72067, {	-- Relaxation Time!
-						-- ["sourceQuests"] = {  },	--
-						["provider"] = { "n", 197986 },	-- Hot Springs Spa Promoter
-						["coord"] = { 48.1, 59.6, VALDRAKKEN },
-						["isBreadcrumb"] = true,	-- Probably?
-					}),
-					q(72246, {	-- Serene Dreams
-						["sourceQuests"] = { 72067 },	-- Relaxation Time!
-						["provider"] = { "n", 197670 },	-- Spa Concierge
-						["coord"] = { 40.4, 49.5, THALDRASZUS },
-					}),
-					q(70738, {	-- Good Reviews
-						["sourceQuests"] = { 72246 },	-- Serene Dreams
-						["provider"] = { "n", 194717 },	-- Xijan Thornpaw
-						["coord"] = { 40.5, 48.9, THALDRASZUS },
-					}),
-					q(70741, {	-- Some Favorite Things
-						-- ["sourceQuests"] = {  },	--
-						["provider"] = { "o", 381297 },	-- Misplaced Luggage
-						["coord"] = { 41.5, 47.5, THALDRASZUS },
-					}),
-					q(70740, {	-- Steam Cleaning
-						["sourceQuests"] = { 72246 },	-- Serene Dreams
-						["provider"] = { "n", 196160 },	-- Quilius
-						["coord"] = { 40.5, 48.9, THALDRASZUS },
-					}),
-					q(70743, {	-- Precious Baby
-						["sourceQuests"] = {
-							70738,	-- Good Reviews
-							70740,	-- Steam Cleaning
-						},
-						["provider"] = { "n", 194812 },	-- Cae'Ryn
-						["coord"] = { 40.5, 49.0, THALDRASZUS },
-					}),
-					q(70744, {	-- Look at the Bones!
-						["sourceQuests"] = { 70743 },	-- Precious Baby
-						["provider"] = { "o", 381296 },	-- Horrible Mess
-						["coord"] = { 38.9, 45.3, THALDRASZUS },
-					}),
-					q(70745, {	-- Enforced Relaxation
-						["sourceQuests"] = { 70744 },	-- Look at the Bones!
-						["provider"] = { "n", 196160 },	-- Quilius
-						["coord"] = { 40.5, 48.9, THALDRASZUS },
-					}),
-				},
+			header(HEADERS.AchCriteria, 16398.07, {	-- Serene Dreams Spa
+				q(72067, {	-- Relaxation Time!
+					-- ["sourceQuests"] = {  },	--
+					["provider"] = { "n", 197986 },	-- Hot Springs Spa Promoter
+					["coord"] = { 48.1, 59.6, VALDRAKKEN },
+					["isBreadcrumb"] = true,	-- Probably?
+				}),
+				q(72246, {	-- Serene Dreams
+					["sourceQuests"] = { 72067 },	-- Relaxation Time!
+					["provider"] = { "n", 197670 },	-- Spa Concierge
+					["coord"] = { 40.4, 49.5, THALDRASZUS },
+				}),
+				q(70738, {	-- Good Reviews
+					["sourceQuests"] = { 72246 },	-- Serene Dreams
+					["provider"] = { "n", 194717 },	-- Xijan Thornpaw
+					["coord"] = { 40.5, 48.9, THALDRASZUS },
+				}),
+				q(70741, {	-- Some Favorite Things
+					-- ["sourceQuests"] = {  },	--
+					["provider"] = { "o", 381297 },	-- Misplaced Luggage
+					["coord"] = { 41.5, 47.5, THALDRASZUS },
+				}),
+				q(70740, {	-- Steam Cleaning
+					["sourceQuests"] = { 72246 },	-- Serene Dreams
+					["provider"] = { "n", 196160 },	-- Quilius
+					["coord"] = { 40.5, 48.9, THALDRASZUS },
+				}),
+				q(70743, {	-- Precious Baby
+					["sourceQuests"] = {
+						70738,	-- Good Reviews
+						70740,	-- Steam Cleaning
+					},
+					["provider"] = { "n", 194812 },	-- Cae'Ryn
+					["coord"] = { 40.5, 49.0, THALDRASZUS },
+				}),
+				q(70744, {	-- Look at the Bones!
+					["sourceQuests"] = { 70743 },	-- Precious Baby
+					["provider"] = { "o", 381296 },	-- Horrible Mess
+					["coord"] = { 38.9, 45.3, THALDRASZUS },
+				}),
+				q(70745, {	-- Enforced Relaxation
+					["sourceQuests"] = { 70744 },	-- Look at the Bones!
+					["provider"] = { "n", 196160 },	-- Quilius
+					["coord"] = { 40.5, 48.9, THALDRASZUS },
+				}),
 			}),
-			crit(8, {	-- Misty Vale
-				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-				["collectible"] = false,
-				["g"] = {
-					q(71024, {	-- Chaos and Commotion
-						["sourceQuests"] = { 66252 },	-- Reporting In
-						["provider"] = { "n", 189842 },	-- Captain Drine
-						["coord"] = { 56.0, 40.0, VALDRAKKEN },
-					}),
-					q(70837, {	-- Follow the Clues
-						["sourceQuests"] = { 71024 },	-- Chaos and Commotion
-						["provider"] = { "n", 196984 },	-- Investigator Erima
-						["coord"] = { 56.4, 43.8, VALDRAKKEN },
-					}),
-					q(70842, {	-- Detonation Locations
-						["sourceQuests"] = { 70837 },	-- Follow the Clues
-						["provider"] = { "n", 196416 },	-- Investigator Erima
-						["coord"] = { 42.7, 81.9, THALDRASZUS },
-						["g"] = {
-							i(200463),	-- Mistyvale Map: Black Market Auction House
-							i(200462),	-- Mistyvale Map: Butterfly Garden
-							i(200461),	-- Mistyvale Map: Training Grounds
-						},
-					}),
-					q(70838, {	-- Rebels With a Cause
-						["sourceQuests"] = { 70837 },	-- Follow the Clues
-						["provider"] = { "n", 196416 },	-- Investigator Erima
-						["coord"] = { 42.7, 81.9, THALDRASZUS },
-					}),
-					q(70843, {	-- Ruin The Runestones
-						["sourceQuests"] = { 70837 },	-- Follow the Clues
-						["provider"] = { "n", 196464 },	-- Unfinished Runestone
-						["coord"] = { 43.6, 81.0, THALDRASZUS },
-					}),
-					q(70850, {	-- Maldra's in Hot Water
-						["sourceQuests"] = {
-							70842,	-- Detonation Locations
-							70838,	-- Rebels With a Cause
-							70843,	-- Ruin The Runestones
-						},
-						["provider"] = { "n", 196432 },	-- Investigator Erima
-						["coord"] = { 42.6, 78.8, THALDRASZUS },
-					}),
-					q(70873, {	-- Chasing Waterfalls
-						["sourceQuests"] = { 70850 },	-- Maldra's in Hot Water
-						["provider"] = { "n", 196562 },	-- Maldra Flametongue
-						["coord"] = { 42.7, 78.8, THALDRASZUS },
-					}),
-					q(70874, {	-- To Breach a Fire Wall
-						["sourceQuests"] = { 70873 },	-- Chasing Waterfalls
-						["provider"] = { "n", 196562 },	-- Maldra Flametongue
-						["coord"] = { 42.7, 78.8, THALDRASZUS },
-					}),
-					q(70876, {	-- Fracture Foci
-						["sourceQuests"] = { 70874 },	-- To Breach a Fire Wall
-						["provider"] = { "n", 196566 },	-- Investigator Erima
-						["coord"] = { 42.4, 78.9, THALDRASZUS },
-					}),
-					q(70878, {	-- Ring of Fire
-						["sourceQuests"] = { 70874 },	-- To Breach a Fire Wall
-						["provider"] = { "n", 196608 },	-- Maldra Flametongue
-						["coord"] = { 42.3, 78.9, THALDRASZUS },
-					}),
-					q(70875, {	-- Worst of the Worst
-						["sourceQuests"] = { 70874 },	-- To Breach a Fire Wall
-						["provider"] = { "n", 196566 },	-- Investigator Erima
-						["coord"] = { 42.4, 78.9, THALDRASZUS },
-					}),
-					q(70879, {	-- Report on the Rebels
-						["sourceQuests"] = {
-							70876,	-- Fracture Foci
-							70878,	-- Ring of Fire
-							70875,	-- Worst of the Worst
-						},
-						["provider"] = { "n", 196566 },	-- Investigator Erima
-						["coord"] = { 42.4, 78.9, THALDRASZUS },
-					}),
-				},
+			header(HEADERS.AchCriteria, 16398.08, {	-- Misty Vale
+				q(71024, {	-- Chaos and Commotion
+					["sourceQuests"] = { 66252 },	-- Reporting In
+					["provider"] = { "n", 189842 },	-- Captain Drine
+					["coord"] = { 56.0, 40.0, VALDRAKKEN },
+				}),
+				q(70837, {	-- Follow the Clues
+					["sourceQuests"] = { 71024 },	-- Chaos and Commotion
+					["provider"] = { "n", 196984 },	-- Investigator Erima
+					["coord"] = { 56.4, 43.8, VALDRAKKEN },
+				}),
+				q(70842, {	-- Detonation Locations
+					["sourceQuests"] = { 70837 },	-- Follow the Clues
+					["provider"] = { "n", 196416 },	-- Investigator Erima
+					["coord"] = { 42.7, 81.9, THALDRASZUS },
+					["g"] = {
+						i(200463),	-- Mistyvale Map: Black Market Auction House
+						i(200462),	-- Mistyvale Map: Butterfly Garden
+						i(200461),	-- Mistyvale Map: Training Grounds
+					},
+				}),
+				q(70838, {	-- Rebels With a Cause
+					["sourceQuests"] = { 70837 },	-- Follow the Clues
+					["provider"] = { "n", 196416 },	-- Investigator Erima
+					["coord"] = { 42.7, 81.9, THALDRASZUS },
+				}),
+				q(70843, {	-- Ruin The Runestones
+					["sourceQuests"] = { 70837 },	-- Follow the Clues
+					["provider"] = { "n", 196464 },	-- Unfinished Runestone
+					["coord"] = { 43.6, 81.0, THALDRASZUS },
+				}),
+				q(70850, {	-- Maldra's in Hot Water
+					["sourceQuests"] = {
+						70842,	-- Detonation Locations
+						70838,	-- Rebels With a Cause
+						70843,	-- Ruin The Runestones
+					},
+					["provider"] = { "n", 196432 },	-- Investigator Erima
+					["coord"] = { 42.6, 78.8, THALDRASZUS },
+				}),
+				q(70873, {	-- Chasing Waterfalls
+					["sourceQuests"] = { 70850 },	-- Maldra's in Hot Water
+					["provider"] = { "n", 196562 },	-- Maldra Flametongue
+					["coord"] = { 42.7, 78.8, THALDRASZUS },
+				}),
+				q(70874, {	-- To Breach a Fire Wall
+					["sourceQuests"] = { 70873 },	-- Chasing Waterfalls
+					["provider"] = { "n", 196562 },	-- Maldra Flametongue
+					["coord"] = { 42.7, 78.8, THALDRASZUS },
+				}),
+				q(70876, {	-- Fracture Foci
+					["sourceQuests"] = { 70874 },	-- To Breach a Fire Wall
+					["provider"] = { "n", 196566 },	-- Investigator Erima
+					["coord"] = { 42.4, 78.9, THALDRASZUS },
+				}),
+				q(70878, {	-- Ring of Fire
+					["sourceQuests"] = { 70874 },	-- To Breach a Fire Wall
+					["provider"] = { "n", 196608 },	-- Maldra Flametongue
+					["coord"] = { 42.3, 78.9, THALDRASZUS },
+				}),
+				q(70875, {	-- Worst of the Worst
+					["sourceQuests"] = { 70874 },	-- To Breach a Fire Wall
+					["provider"] = { "n", 196566 },	-- Investigator Erima
+					["coord"] = { 42.4, 78.9, THALDRASZUS },
+				}),
+				q(70879, {	-- Report on the Rebels
+					["sourceQuests"] = {
+						70876,	-- Fracture Foci
+						70878,	-- Ring of Fire
+						70875,	-- Worst of the Worst
+					},
+					["provider"] = { "n", 196566 },	-- Investigator Erima
+					["coord"] = { 42.4, 78.9, THALDRASZUS },
+				}),
 			}),
+			header(HEADERS.Achievement, 17734, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Active Listening Skills
+				q(72411, {	-- Cause Without a Rebel
+					-- ["sourceQuests"] = {  },	--
+					["provider"] = { "n", 189842 },	-- Captain Drine
+					["coord"] = { 56.5, 40.1, VALDRAKKEN },
+				}),
+				q(72412, {	-- Explosive Interruption
+					["sourceQuests"] = { 72411 },	-- Cause Without a Rebel
+					["provider"] = { "n", 200754 },	-- Captain Drine
+					["coord"] = { 55.5, 33.8, VALDRAKKEN },
+				}),
+				q(72413, {	-- Irreconcilable Differences
+					["sourceQuests"] = { 72412 },	-- Explosive Interruption
+					["provider"] = { "n", 199397 },	-- Investigator Erima
+					["coord"] = { 46.4, 50.8, VALDRAKKEN },
+				}),
+				q(72414, {	-- Know Prisoners!
+					["sourceQuests"] = { 72412 },	-- Explosive Interruption
+					["provider"] = { "n", 199396 },	-- Maldra Flametongue
+					["coord"] = { 46.3, 50.7, VALDRAKKEN },
+					["g"] = {
+						i(202855),	-- Maldra's Ring of Elemental Binding
+					},
+				}),
+				q(72415, {	-- Rebel Rousing Writings
+					["sourceQuests"] = { 72412 },	-- Explosive Interruption
+					["provider"] = { "n", 199396 },	-- Maldra Flametongue
+					["coord"] = { 46.3, 50.7, VALDRAKKEN },
+					["g"] = {
+						i(202702),	-- The Dragonkin Voice 1: A Dragonkin's Worth
+						i(202699),	-- The Dragonkin Voice 2: 100 Centuries Abandoned
+						i(202700),	-- The Dragonkin Voice 3: 100 Centuries Independent
+						i(202698),	-- The Dragonkin Voice 4: Might & Right
+						i(202701),	-- The Dragonkin Voice 5: The Rebel Code
+					},
+				}),
+				q(72416, {	-- Temporary Accommodations
+					["sourceQuests"] = {
+						72413,	-- Irreconcilable Differences
+						72414,	-- Know Prisoners!
+						72415,	-- Rebel Rousing Writings
+					},
+					["provider"] = { "n", 199396 },	-- Maldra Flametongue
+					["coord"] = { 46.3, 50.7, THALDRASZUS },
+				}),
+				q(72417, {	-- Persistent Dissidents
+					["sourceQuests"] = { 72416 },	-- Temporary Accommodations
+					["provider"] = { "n", 199382 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 38.8, 52.5, THALDRASZUS },
+				}),
+				q(72418, {	-- Solicited Opinions
+					["sourceQuests"] = { 72417 },	-- Persistent Dissidents
+					["provider"] = { "n", 201211 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 38.8, 52.5, THALDRASZUS },
+				}),
+				q(72419, {	-- Cleaning up the Cliffraff
+					["sourceQuests"] = { 72418 },	-- Solicited Opinions
+					["provider"] = { "n", 200788 },	-- Captain Drime
+					["coord"] = { 38.8, 52.6, THALDRASZUS },
+				}),
+				q(72422, {	-- Stop the Presses
+					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
+					--["provider"] = { "n", 199301 },	-- Investigator Erima
+					--["coord"] = { 46.4, 55.9, THALDRASZUS },
+					["g"] = {
+						i(203390),	-- Maldra's Ring of Elemental Binding
+					},
+				}),
+				q(72421, {	-- The Quill to Power
+					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
+					--["provider"] = { "n", 199301 },	-- Investigator Erima
+					--["coord"] = { 46.4, 55.9, THALDRASZUS },
+				}),
+				q(72420, {	-- Wreckonciliation
+					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
+					["provider"] = { "n", 199301 },	-- Investigator Erima
+					["coord"] = { 46.4, 55.9, THALDRASZUS },
+					["g"] = {
+						i(203383),	-- Notes on Dragonkin Equality
+					},
+				}),
+				q(75230, {	-- Reconcilable Dissidents
+					["sourceQuests"] = {
+						72422,	-- Stop the Presses
+						72421,	-- The Quill to Power
+						72420,	-- Wreckonciliation
+					},
+					["provider"] = { "n", 200839 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 76.8, 33.5, VALDRAKKEN },
+					["g"] = {
+						ach(17734),	-- Active Listening Skills
+						title(498),	-- <Name> the Reconciler
+					},
+				}),
+			})),
 			header(HEADERS.Quest, 70377, {	-- Derelict Fashion
 				q(70377, {	-- Derelict Fashion
 					["description"] = "Drops from Mudgatu.",
@@ -1017,7 +1074,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 57.1, 64.6, THALDRASZUS },
 				}),
 			}),
-				-- MISC --
+			------ Misc ------
 			q(67093, {	-- An Anomalous Shrine
 				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
 				["provider"] = { "n", 192543 },	-- Archivist Arenial
@@ -1117,5 +1174,17 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(72150),	-- Shadow Ledge
 		q(72151),	-- Valdrakken's Portal Room
 		q(72152),	-- Tryhold Reservoir
+		-- During Solicited Opinions (72418)
+		q(75199),    -- Solicited Opinions question 3 answer 3
+		q(75198),    -- Solicited Opinions question 3 answer 2
+		q(75197),    -- Solicited Opinions question 3 answer 1
+		q(75196),    -- Solicited Opinions question 2 answer 3
+		q(75195),    -- Solicited Opinions question 2 answer 2
+		q(75194),    -- Solicited Opinions question 2 answer 1
+		q(75193),    -- Solicited Opinions question 1 answer 3
+		q(75192),    -- Solicited Opinions question 1 answer 2
+		q(75191),    -- Solicited Opinions question 1 answer 1
+		-- Stay awhile Listening
+		q(73960),	--
 	}),
 }));

@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 	m(REVENDRETH, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 13878, {	-- The Master of Revendreth
-					-- Chapter 1 --
+				------ Chapter 1 ------
 				q(57025, {	-- A Plea to Revendreth
 					["sourceQuests"] = { 58724 },	-- The Queen's Request
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 168341 },	-- Lady Moonberry
 					["coord"] = { 70.7, 84.1, REVENDRETH },
 				}),
-					-- Chapter 2 --
+				------ Chapter 2 ------
 				q(57174, {	-- The Stoneborn
 					["sourceQuests"] = { 56978 },	-- To Darkhaven
 					["provider"] = { "n", 156374 },	-- Lord Chamberlain
@@ -90,8 +90,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 156644 },	-- Sire Denathrius
 					["coord"] = { 57.4, 49.4, REVENDRETH },
 				}),
-
-					-- Chapter 3 --
+				------ Chapter 3 ------
 				q(57161, {	-- I Don't Get My Hands Dirty
 					["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
 					["provider"] = { "n", 156605 },	-- Lord Chamberlain
@@ -174,8 +173,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						i(175435),	-- Stoneforged Spaulders
 					},
 				}),
-
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(57098, {	-- The Grove of Terror
 					["sourceQuests"] = { 59232 },	-- A Lesson in Humility
 					["provider"] = { "n", 156381 },	-- Sire Denathrius
@@ -280,8 +278,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						i(175484),	-- Stoneforged Sabatons
 					},
 				}),
-
-					-- Chapter 5 --
+				------ Chapter 5 ------
 				q(57240, {	-- Where is Prince Renathal?
 					["sourceQuests"] = { 59256 },	-- The Fearstalker
 					["provider"] = { "n", 168217 },	-- The Accuser
@@ -367,8 +364,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						i(184326),	-- Sinfall Stoneborn Cudgel
 					},
 				}),
-
-					-- Chapter 6 --
+				------ Chapter 6 ------
 				q(59327, {	-- In the Ruin of Rebellion
 					["sourceQuests"] = { 57724 },	-- Securing Sinfall
 					["provider"] = { "n", 158716 },	-- Theotar
@@ -402,8 +398,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 162688 },	-- Prince Renathal
 					["coord"] = { 25.8, 57.1, SINFALL_REACHES },
 				}),
-
-					-- Chapter 7 --
+				------ Chapter 7 ------
 				q(59644, {	-- Blinded By The Light
 					["sourceQuests"] = { 57694 },	-- Refuge of Revendreth
 					["provider"] = { "n", 162688 },	-- Prince Renathal
@@ -425,7 +420,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						i(175481),	-- Stoneforged Hauberk
 					},
 				}),
-					-- The End --
+				------ The End ------
 			}),
 			crit(1, {	-- The Duelist's Debt
 				["achievementID"] = 14798,	-- Sojourner of Revendreth

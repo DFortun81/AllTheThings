@@ -251,7 +251,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 84.9, 54.4, VALDRAKKEN },
 			}),
 			header(HEADERS.Achievement, 16683, {	-- In Tyr's Footsteps
-					-- Chapter 1 --
+				------ Chapter 1 ------
 				q(72773, {	-- Learning Ingenuity
 					["provider"] = { "n", 196499 },	-- Therazal
 					["coord"] = { 50.2, 55.9, VALDRAKKEN },
@@ -262,7 +262,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
 					["coord"] = { 84.2, 54.4, VALDRAKKEN },
 				}),
-					-- Chapter 2 --
+				------ Chapter 2 ------
 				q(70845, {	-- In Tyr's Footsteeps
 					["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
@@ -286,7 +286,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["coord"] = { 84.3, 53.5, VALDRAKKEN },
 				}),
-					-- Chapter 3 --
+				------ Chapter 3 ------
 				q(70339, {	-- In Tyr's Footsteps: The Ohn'ahran Plains
 					["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
@@ -305,7 +305,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 195924 },	-- Maiden of Inspiration
 					["coord"] = { 66.3, 55.3, VALDRAKKEN },
 				}),
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(70650, {	-- In Tyr's Footsteps: The Waking Shores
 					["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
@@ -329,7 +329,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 195737 },	-- Maiden of Inspiration
 					["coord"] = { 64, 41.3, THE_WAKING_SHORES },
 				}),
-					-- Chapter 5 --
+				------ Chapter 5 ------
 				q(70881, {	-- Fourth Challenge of Tyr: Resourcefulness
 					["sourceQuests"] = { 70510 },	-- Victorious
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
@@ -338,7 +338,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(199197),	-- Bottled Essence
 					},
 				}),
-					-- Chapter 6 --
+				------ Chapter 6 ------
 				q(70899, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Fifth Challenge of Tyr: Ingenuity
 					["sourceQuests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration

@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 			}),
 			header(HEADERS.Achievement, 15259, {	-- Secrets of the First Ones
-					-- Chapter 1 --
+				------ Chapter 1 ------
 				q(64942, {	-- Call of the Primus
 					["maps"] = { ORIBOS },
 				}),
@@ -95,8 +95,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						i(188048),	-- Truthseeker's Staff
 					},
 				}),
-
-					-- Chapter 2 --
+				------ Chapter 2 ------
 				q(65768, {	-- Our Forward Scouts
 					["sourceQuests"] = { 64958 },	-- The Forces Gather
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
@@ -222,8 +221,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						i(190751),	-- Dimensional Oracular Wrists
 					},
 				}),
-
-					-- Chapter 3 --
+				------ Chapter 3 ------
 				q(64218, {	-- Danger Near and Far
 					["sourceQuests"] = { 64825 },	-- Seeking Haven
 					["provider"] = { "n", 179611 },	-- Pelagos
@@ -303,8 +301,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						i(188035),	-- Staccato Vest
 					}),
 				}),
-
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(65335, {	-- News from Oribos
 					["sourceQuests"] = { 65305 },	-- The Way Forward
 					["provider"] = { "n", 183677 },	-- Uther the Lightbringer
@@ -437,8 +434,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						i(188016),	-- Staccato Leggings
 					}),
 				}),
-
-					-- Chapter 5 --
+				------ Chapter 5 ------
 				q(64799, {	-- The Broken Crown
 					["sourceQuests"] = { 64844 },	-- The Pilgrimage Ends
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
@@ -566,8 +562,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						}),
 					},
 				}),
-
-					-- Chapter 6 --
+				------ Chapter 6 ------
 				q(64816, {	-- Reality's Doorstep
 					["sourceQuests"] = { 64813 },	-- The Crown of Wills
 					["provider"] = { "n", 181379 },	-- Highlord Bolvar Fordragon
@@ -659,8 +654,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["provider"] = { "n", 181090 },	-- Pelagos
 					["coord"] = { 34.3, 48.6, ZERETH_MORTIS },
 				}),
-
-					-- Chapter 7 --
+				------ Chapter 7 ------
 				q(64879, {	-- A Monumental Discovery
 					["sourceQuests"] = { 65328 },	-- Arbiter in the Making
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
@@ -784,7 +778,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						i(190465),	-- Cinch of Unity
 					},
 				}),
-					-- Epilogue --
+				------ Epilogue ------
 				q(65329, {	-- Safe Haven
 					["sourceQuests"] = { 65238 },	-- Souls Entwined
 					["provider"] = { "n", 184584 },	-- Kleia
@@ -822,7 +816,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coord"] = { 46.6, 55.9, 1671 },
 					["timeline"] = { ADDED_9_2_5 },
 				}),
-					-- The End --
+				------ The End ------
 			}),
 			crit(1, {	--  Small Pet Problems
 				["achievementID"] = 15515,	-- Path to Enlightenment

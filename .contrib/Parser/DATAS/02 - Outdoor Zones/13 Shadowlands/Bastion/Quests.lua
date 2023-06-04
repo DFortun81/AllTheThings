@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 	m(BASTION, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14281, {	-- The Path to Ascension
-					-- Chapter 1 --
+				------ Chapter 1 ------
 				q(59774, {	-- Welcome to Eternity
 					["sourceQuests"] = { 59773 },	-- Seek the Ascended
 					["provider"] = { "n", 166227 },	-- Kleia
@@ -47,8 +47,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						i(175624),	-- Pure Aspirant's Leggings
 					},
 				}),
-
-					-- Chapter 2 --
+				------ Chapter 2 ------
 				q(57709, {	-- The Aspirant's Crucible
 					["sourceQuests"] = {
 						57677,	-- A Soulbind In Need
@@ -241,7 +240,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 158862 },	-- Kleia
 					["coord"] = { 53.5, 87.3, BASTION },
 				}),
-					-- Chapter 3 --
+				------ Chapter 3 ------
 				q(57270, {	-- The Temple of Purity
 					["sourceQuests"] = { 58174 },	-- All An Aspirant Can Do
 					["provider"] = { "n", 157673 },	-- Disciple Kosmas
@@ -333,7 +332,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 157687 },	-- Vesiphone
 					["coord"] = { 64.4, 71.0, BASTION },
 				}),
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(58976, {	-- Chasing a Memory
 					["sourceQuests"] = { 57447 },	-- Purity's Prerogative
 					["provider"] = { "n", 156238 },	-- Kleia
@@ -401,7 +400,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 167504 },	-- Vault-Keeper Mnemis
 					["coord"] = { 56.1, 67.6, BASTION },
 				}),
-					-- Chapter 5 --
+				------ Chapter 5 ------
 				q(59196, {	-- Go in Service
 					["sourceQuests"] = { 60013 },	-- Leave it to Mnemis
 					["provider"] = { "n", 167038 },	-- Kleia
@@ -415,7 +414,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 165045 },	-- Kalisthene
 					["coord"] = { 52.8, 47.8, BASTION },
 				}),
-					-- Chapter 6 --
+				------ Chapter 6 ------
 				q(59197, {	-- Steward at Work
 					["sourceQuests"] = { 59426 },	-- Your Personal Assistant
 					["provider"] = { "n", 165045 },	-- Kalisthene
@@ -504,7 +503,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 167460 },	-- Thanikos
 					["coord"] = { 38.9, 55.2, BASTION },
 				}),
-					-- Chapter 7 --
+				------ Chapter 7 ------
 				q(60056, {	-- Follow the Path
 					["sourceQuests"] = { 60055 },	-- A Time for Courage
 					["provider"] = { "n", 167583 },	-- Disciple Apolon
@@ -520,7 +519,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
 					["coord"] = {61.1, 36.9, ORIBOS },
 				}),
-					-- The End
+				------ Continues in Maldraxxus ------
 			}),
 			crit(1, {	-- In Agthia's Memory
 				["achievementID"] = 14801,	-- Sojourner of Bastion

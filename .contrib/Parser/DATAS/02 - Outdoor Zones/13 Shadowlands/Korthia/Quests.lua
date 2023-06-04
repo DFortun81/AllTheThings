@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["coord"] = { 40.3, 67.9, ORIBOS },	-- Ring of Fates
 					["isBreadcrumb"] = true,
 				}),
-					-- Chapter 1 --
+				------ Chapter 1 ------
 				q(63576, {	-- The First Move
 					["sourceQuests"] = { 62569 },	-- The Jailer's Grasp
 				}),
@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 177460 },	-- Winter Queen
 					["coord"] = { 47.1, 48.5, ARDENWEALD },
 				}),
-					-- Chapter 2 --
+				------ Chapter 2 ------
 				q(63660, {	-- Opening the Maw
 					["sourceQuests"] = { 63639 },	-- Report to Oribos
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 179216 },	-- Mikanikos
 					["coord"] = { 61.4, 23.2, KORTHIA },
 				}),
-					-- Chapter 3 --
+				------ Chapter 3 ------
 				q(63848, {	-- A Show of Gratitude
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 177927 },	-- Tal-Galan
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 178950 },	-- Danica
 					["coord"] = { 37.0, 19.3, THE_MAW },
 				}),
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(63703, {	-- Vault of Secrets
 					["description"] = "Requires Renown 44 and completion of the original 9 chapters of your covenant's campaign.",
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						}),
 					},
 				}),
-					-- Chapter 5 --
+				------ Chapter 5 ------
 				q(63612, {	-- The Chains of Command
 					["description"] = "Requires Renown 47.",
 					["sourceQuests"] = { 63727 },	-- The Primus Returns
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["coord"] = { 62.0, 41.6, THE_MAW },
 					["_drop"] = { "g" },	-- Anima Trash
 				}),
-					-- Chapter 6 --
+				------ Chapter 6 ------
 				q(63659, {	-- Dreadlords!
 					["description"] = "Requires Renown 50.",
 					["sourceQuests"] = { 63622 },	-- Victory in Our Name
@@ -531,7 +531,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 179978 },	-- The Accuser
 					["coord"] = { 23.1, 45.9, REVENDRETH },
 				}),
-					-- Chapter 7 --
+				------ Chapter 7 ------
 				q(63672, {	-- A Cry From the Heart
 					["description"] = "Requires Renown 52.",
 					["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
@@ -652,7 +652,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						{ 45.2, 64.8, ARDENWEALD },	-- Ysera [Ardenweald]
 					},
 				}),
-					-- Chapter 8 --
+				------ Chapter 8 ------
 				q(63579, {	-- A Paladin's Soul
 					["description"] = "Requires Renown 56.",
 					["sourceQuests"] = { 64437 },	-- Inform the Primus
@@ -745,7 +745,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 179379 },	-- Polemarch Adrestes
 					["coord"] = { 46.0, 58.0, 2018 },	-- Spires of Ascension (Scenario Map)
 				}),
-					-- Chapter 9 --
+				------ Chapter 9 ------
 				q(64211, {	-- Doorway in the Dark (A)
 					["sourceQuests"] = {
 						63593,	-- New Sigil of the Kyrian
@@ -782,7 +782,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["coord"] = { 63.1, 24.5, KORTHIA },
 					["_drop"] = { "g" },	-- Anima Trash
 				}),
-					-- The End
+				------ Misc ------
 				q(63623, {	-- Filling an Empty Throne
 					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					["sourceQuests"] = { 63622 },	-- Victory in Our Name
@@ -802,12 +802,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 168898 },	-- Prince Renathal
 					["coord"] = { 22.9, 43.7, REVENDRETH },
 				}),
-				-- Epilogue
+				------ Epilogue ------
 				q(64441, {	-- A Loose Thread
 					["sourceQuests"] = { 64314 },	-- Covenants Renewed
 					["provider"] = { "o", 369432 },	-- Misplaced Venthyr Tome
 					["coord"] = { 61.0, 25.5, KORTHIA },
 				}),
+				------ The End ------
 			}),
 
 				-- Archivists of Korthia --

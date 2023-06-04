@@ -2,9 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 local PRIMEVAL_ESSENCE = 199211;
-
-root(ROOTS.WorldEvents, n(-520,	-- Expansion Prelaunch Events
-	bubbleDown({ ["timeline"] = { CREATED_10_0_0, ADDED_10_0_2, REMOVED_10_0_2_LAUNCH } }, {
+root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_10_0_2, REMOVED_10_0_2_LAUNCH } }, {
 	tier(DF_TIER, {
 		n(ACHIEVEMENTS, {
 			ach(16431, {	-- Against the Elements
@@ -312,8 +310,8 @@ root(ROOTS.WorldEvents, n(-520,	-- Expansion Prelaunch Events
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, n(-520, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {	-- Expansion Prelaunch Events
-	tier(DF_TIER, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
+	n(EXPANSION_PRELAUNCH, {
 		q(74363),	-- Cloudburst Regalia transmog set
 		q(74364),	-- Dust Devil Armor transmog set
 		q(74365),	-- Cyclonic Battlegear transmog set

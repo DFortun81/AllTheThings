@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 	m(MALDRAXXUS, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14206, {	-- Blade of the Primus
-					-- Chapter 1
+				------ Chapter 1 ------
 				q(57386, {	-- If You Want Peace...
 					["sourceQuests"] = { 61107 },	-- A Land of Strife
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					},
 					["provider"] = { "n", 167535 },	-- Chosen Scrapper
 				}),
-					-- Chapter 2
+				------ Chapter 2 ------
 				q(57514, {	-- The First Act of War
 					["sourceQuests"] = { 57515 },	-- The House of the Chosen
 					["provider"] = { "n", 159065 },	-- Baroness Draka
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						i(180821),	-- Bonefused Warblade
 					},
 				}),
-					-- Chpater 3 --
+				------ Chapter 3 ------
 				q(58751, {	-- A Common Peril
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
 					["provider"] = { "n", 168381 },	-- Baroness Draka
@@ -229,7 +229,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						i(175453),	-- Flesh Architect's Footguards
 					},
 				}),
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(57912, {	-- Baron of the Chosen
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
 					["provider"] = { "n", 168381 },	-- Baroness Draka
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 170094 },	-- Secutor Mevix
 					["coord"] = { 37.6, 29.1, MALDRAXXUS },
 				}),
-					-- Chapter 5 --
+				------ Chapter 5 ------
 				q(59130, {	-- The House of Plagues
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
 					["provider"] = { "n", 168381 },	-- Baroness Draka
@@ -398,7 +398,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 60.4, 71.6, MALDRAXXUS },
 				}),
-					-- Chapter 6 --
+				------ Chapter 6 ------
 				q(59202, {	-- Among the Chosen
 					["sourceQuests"] = {
 						59231,	-- Fathomless Power
@@ -474,7 +474,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 167903 },	-- Baroness Draka
 					["coord"] = { 39.1, 49.9, ORIBOS },
 				}),
-					-- Chapter 7 --
+				------ Chapter 7 ------
 				q(59011, {	-- In Death We Are Truly Tested
 					["sourceQuests"] = { 59974 },	-- A Soul Saved
 					["provider"] = { "n", 162801 },	-- Alexandros Mograine
@@ -501,7 +501,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 170309 },	-- Baroness Draka
 					["coord"] = { 50.5, 67.8, MALDRAXXUS },
 				}),
-					-- Epilogue --
+				------ Epilogue ------
 				q(59206, {	-- Words of the Primus
 					["sourceQuests"] = { 60737 },	-- The Door to the Unknown
 					["provider"] = { "n", 164545 },	-- Baroness Draka
@@ -520,7 +520,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						i(184165),	-- Seal of Fordragon
 					},
 				}),
-					-- The End --
+				------ Continues in Ardenweald ------
 			}),
 			crit(1, {	-- Theater of Pain
 				["achievementID"] = 14799,	-- Sojourner of Maldraxxus

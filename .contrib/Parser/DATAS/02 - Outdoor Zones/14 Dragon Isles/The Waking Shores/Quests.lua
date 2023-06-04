@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(THE_WAKING_SHORES, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 16334, {	-- Waking Hope
-					-- Chapter 0 --
+				------ Prologue ------
 				q(70122, {	-- Explorers in Peril [A]
 					["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
 					["provider"] = { "n", 189022 },	-- Toddy Whiskers
@@ -80,8 +80,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 193372 },	-- Majordomo Selistra
 					["coord"] = { 76.6, 33.7, THE_WAKING_SHORES },
 				}),
-
-					-- Chapter 1 --
+				------ Chapter 1 ------
 				q(65760, {	-- Reporting for Duty
 					["sourceQuests"] = { 69914 },	-- The Djaradin Have Awoken
 					["provider"] = { "n", 193363 },	-- Sendrax
@@ -186,8 +185,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(194383),	-- Field Scout's Boots
 					},
 				}),
-
-					-- Chapter 2 --
+				------ Chapter 2 ------
 				q(66114, {	-- For the Benefit of the Queen
 					["sourceQuests"] = { 66001 },	-- A Last Hope
 					["provider"] = { "n", 186795 },	-- Majordomo Selistra
@@ -329,8 +327,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(197378),	-- Renewed Proto-Drake: Subtle Horns (DM!)
 					},
 				}),
-
-					-- Chapter 3 --
+				------ Chapter 3 ------
 				q(66079, {	-- Wrathion Awaits
 					["sourceQuests"] = { 66124 },	-- Exeunt, Triumphant
 					["provider"] = { "n", 187115 },	-- Alexstrasza the Life-Binder
@@ -431,8 +428,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(194342),	-- Field Scout's Pants
 					},
 				}),
-
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(66780, {	-- Claimant to the Throne
 					["sourceQuests"] = { 66057 },	-- Restoring the Faith
 					["provider"] = { "n", 187495 },	-- Wrathion
@@ -491,511 +487,471 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 185905 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
 					["classes"] = { EVOKER },
+					["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				}),
+				------ Continues in Ohn'ahran Plains ------
+			}),
+			header(HEADERS.AchCriteria, 16401.01, {	-- Beyond the Barrier
+				q(69896, {	-- Disastrous Detour
+					["sourceQuests"] = { 66001 },	-- A Last Hope
+					["provider"] = { "n", 190273 },	-- Scout Kuvaeth
+					["coord"] = { 63.5, 61.8, THE_WAKING_SHORES },
+					["isBreadcrumb"] = true,
+				}),
+				q(66437, {	-- A Key Element
+					["sourceQuests"] = { 69896 },	-- Disastrous Detour
+					["provider"] = { "i", 191904 },	-- Orb of Primal Stone
+					["coord"] = { 66.5, 57.7, THE_WAKING_SHORES },
+				}),
+				q(66435, {	-- Site Salvage
+					["sourceQuests"] = { 69896 },	-- Disastrous Detour
+					["provider"] = { "n", 188735 },	-- Elementalist Taiyang
+					["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
+				}),
+				q(66436, {	-- Unearthed Troublemakers
+					--["sourceQuests"] = {  },	-- Unknown
+					["provider"] = { "n", 188735 },	-- Elementalist Taiyang
+					["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(194410),	-- Cinch of the Ruby Defenders
+						i(194409),	-- Earth Binding Chain
+						i(194408),	-- Life Vault Cord
+						i(194407),	-- Ruby Guardian's Girdle
+					},
+				}),
+				q(66441, {	-- Distilled Effort
+					["sourceQuests"] = {
+						66437,	-- A Key Element
+						66435,	-- Site Salvage
+						66436,	-- Unearthed Troublemakers
+					},
+					["provider"] = { "n", 190352 },	-- Elementalist Taiyang
+					["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(194367),	-- Band of Focused Elements
+					},
+				}),
+				q(66438, {	-- Lofty Goals
+					["sourceQuests"] = {
+						66437,	-- A Key Element
+						66435,	-- Site Salvage
+						66436,	-- Unearthed Troublemakers
+					},
+					["provider"] = { "n", 188503 },	-- Examiner Tae'Shara Bloodwatcher
+					["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
+				}),
+				q(66439, {	-- Rapid Fire Plans
+					["sourceQuests"] = {
+						66437,	-- A Key Element
+						66435,	-- Site Salvage
+						66436,	-- Unearthed Troublemakers
+					},
+					["provider"] = { "n", 188053 },	-- Acadia Chistlestone
+					["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
+				}),
+				q(66442, {	-- Let's Get Theoretical
+					["sourceQuests"] = {
+						66441,	-- Distilled Effort
+						66438,	-- Lofty Goals
+						66439,	-- Rapid Fire Plans
+					},
+					["provider"] = { "n", 190352 },	-- Elementalist Taiyang
+					["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
+				}),
+				q(66447, {	-- Beyond the Barrier
+					["sourceQuests"] = { 66442 },	-- Let's Get Theoretical
+					["provider"] = { "n", 190353 },	-- Elementalist Taiyang
+					["coord"] = { 66.4, 55.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(194393),	-- Expedition Guard's Cudgel
+						i(194371),	-- Expedition Guard's Shield
+						i(194379),	-- Field Scout's Longblade
+						i(194386),	-- League Mercenary's Mace
+						i(194416),	-- Titan Lightning Generator
+						i(194372),	-- Vault Guardian's Missive
+						i(194376),	-- Vault Guardian's Poleaxe
+						i(194417),	-- Vault Guard's Talon
+					},
 				}),
 			}),
-			crit(1, {	-- Beyond the Barrier
-				["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-				["collectible"] = false,
-				["g"] = {
-					q(69896, {	-- Disastrous Detour
-						["sourceQuests"] = { 66001 },	-- A Last Hope
-						["provider"] = { "n", 190273 },	-- Scout Kuvaeth
-						["coord"] = { 63.5, 61.8, THE_WAKING_SHORES },
-						["isBreadcrumb"] = true,
-					}),
-					q(66437, {	-- A Key Element
-						["sourceQuests"] = { 69896 },	-- Disastrous Detour
-						["provider"] = { "i", 191904 },	-- Orb of Primal Stone
-						["coord"] = { 66.5, 57.7, THE_WAKING_SHORES },
-					}),
-					q(66435, {	-- Site Salvage
-						["sourceQuests"] = { 69896 },	-- Disastrous Detour
-						["provider"] = { "n", 188735 },	-- Elementalist Taiyang
-						["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
-					}),
-					q(66436, {	-- Unearthed Troublemakers
-						--["sourceQuests"] = {  },	-- Unknown
-						["provider"] = { "n", 188735 },	-- Elementalist Taiyang
-						["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
-						["g"] = {
-							i(194410),	-- Cinch of the Ruby Defenders
-							i(194409),	-- Earth Binding Chain
-							i(194408),	-- Life Vault Cord
-							i(194407),	-- Ruby Guardian's Girdle
-						},
-					}),
-					q(66441, {	-- Distilled Effort
-						["sourceQuests"] = {
-							66437,	-- A Key Element
-							66435,	-- Site Salvage
-							66436,	-- Unearthed Troublemakers
-						},
-						["provider"] = { "n", 190352 },	-- Elementalist Taiyang
-						["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
-						["g"] = {
-							i(194367),	-- Band of Focused Elements
-						},
-					}),
-					q(66438, {	-- Lofty Goals
-						["sourceQuests"] = {
-							66437,	-- A Key Element
-							66435,	-- Site Salvage
-							66436,	-- Unearthed Troublemakers
-						},
-						["provider"] = { "n", 188503 },	-- Examiner Tae'Shara Bloodwatcher
-						["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
-					}),
-					q(66439, {	-- Rapid Fire Plans
-						["sourceQuests"] = {
-							66437,	-- A Key Element
-							66435,	-- Site Salvage
-							66436,	-- Unearthed Troublemakers
-						},
-						["provider"] = { "n", 188053 },	-- Acadia Chistlestone
-						["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
-					}),
-					q(66442, {	-- Let's Get Theoretical
-						["sourceQuests"] = {
-							66441,	-- Distilled Effort
-							66438,	-- Lofty Goals
-							66439,	-- Rapid Fire Plans
-						},
-						["provider"] = { "n", 190352 },	-- Elementalist Taiyang
-						["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
-					}),
-					q(66447, {	-- Beyond the Barrier
-						["sourceQuests"] = { 66442 },	-- Let's Get Theoretical
-						["provider"] = { "n", 190353 },	-- Elementalist Taiyang
-						["coord"] = { 66.4, 55.7, THE_WAKING_SHORES },
-						["g"] = {
-							i(194393),	-- Expedition Guard's Cudgel
-							i(194371),	-- Expedition Guard's Shield
-							i(194379),	-- Field Scout's Longblade
-							i(194386),	-- League Mercenary's Mace
-							i(194416),	-- Titan Lightning Generator
-							i(194372),	-- Vault Guardian's Missive
-							i(194376),	-- Vault Guardian's Poleaxe
-							i(194417),	-- Vault Guard's Talon
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16401.02, {	-- Brave Researchers
+				q(69897, {	-- Behavior Analysis "Homework"
+					["sourceQuests"] = { 66963 },	-- Out For Delivery
+					["provider"] = { "n", 193500 },	-- Iyali
+					["coord"] = { 45.9, 81.4, THE_WAKING_SHORES },
+				}),
+				q(69898, {	-- Scientfic Meat-thod
+					["sourceQuests"] = { 66963 },	-- Out For Delivery
+					["provider"] = { "n", 193500 },	-- Iyali
+					["coord"] = { 45.9, 81.4, THE_WAKING_SHORES },
+				}),
+				q(69899, {	-- Secret Research
+					["sourceQuests"] = {
+						69897,	-- Behavior Analysis "Homework"
+						69898,	-- Scientfic Meat-thod
+					},
+					["provider"] = { "n", 193500 },	-- Iyali
+					["coord"] = { 45.9, 81.4, THE_WAKING_SHORES },
+				}),
+				q(69901, {	-- Bring In the Expert
+					["sourceQuests"] = { 69899 },	-- Secret Research
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+				}),
+				q(69900, {	-- Identifying the Source
+					["sourceQuests"] = { 69899 },	-- Secret Research
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+				}),
+				q(69902, {	-- Theory in Practice
+					["sourceQuests"] = {
+						69901,	-- Bring In the Expert
+						69900,	-- Identifying the Source
+					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+				}),
 			}),
-			crit(2, {	-- Brave Researchers
-				["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-				["collectible"] = false,
-				["g"] = {
-					q(69897, {	-- Behavior Analysis "Homework"
-						["sourceQuests"] = { 66963 },	-- Out For Delivery
-						["provider"] = { "n", 193500 },	-- Iyali
-						["coord"] = { 45.9, 81.4, THE_WAKING_SHORES },
-					}),
-					q(69898, {	-- Scientfic Meat-thod
-						["sourceQuests"] = { 66963 },	-- Out For Delivery
-						["provider"] = { "n", 193500 },	-- Iyali
-						["coord"] = { 45.9, 81.4, THE_WAKING_SHORES },
-					}),
-					q(69899, {	-- Secret Research
-						["sourceQuests"] = {
-							69897,	-- Behavior Analysis "Homework"
-							69898,	-- Scientfic Meat-thod
-						},
-						["provider"] = { "n", 193500 },	-- Iyali
-						["coord"] = { 45.9, 81.4, THE_WAKING_SHORES },
-					}),
-					q(69901, {	-- Bring In the Expert
-						["sourceQuests"] = { 69899 },	-- Secret Research
-						["provider"] = { "n", 192298 },	-- Tyrgon
-						["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
-					}),
-					q(69900, {	-- Identifying the Source
-						["sourceQuests"] = { 69899 },	-- Secret Research
-						["provider"] = { "n", 192298 },	-- Tyrgon
-						["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
-					}),
-					q(69902, {	-- Theory in Practice
-						["sourceQuests"] = {
-							69901,	-- Bring In the Expert
-							69900,	-- Identifying the Source
-						},
-						["provider"] = { "n", 192298 },	-- Tyrgon
-						["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
-					}),
-				},
+			header(HEADERS.AchCriteria, 16401.03, {	-- Professional Protographer
+				q(66963, {	-- Out For Delivery
+					["provider"] = { "n", 191698 },	-- Hauler Bennet
+					["coord"] = { 48.5, 78.9, THE_WAKING_SHORES },
+					["isBreadcrumb"] = true,
+				}),
+				q(66524, {	-- Amateur Protography
+					["sourceQuests"] = { 66963 },	-- Out For Delivery
+					["provider"] = { "n", 187705 },	-- Cataloger Wulferd
+					["coord"] = { 48.5, 82.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(192465),	-- Wulferd's Award-Winning Camera
+					},
+				}),
+				q(66525, {	-- Competitive Protography
+					["sourceQuests"] = { 66524 },	-- Amateur Protography
+					["provider"] = { "n", 193740 },	-- Cataloger Wulferd
+					["coord"] = { 39.0, 83.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(192465),	-- Wulferd's Award-Winning Camera
+					},
+				}),
+				q(66526, {	-- Preserving the Wild
+					["sourceQuests"] = { 66524 },	-- Amateur Protography
+					["provider"] = { "n", 193954 },	-- Dervishian
+					["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
+				}),
+				q(66527, {	-- Professional Protography
+					["sourceQuests"] = {
+						66525,	-- Competitive Protography
+						66526,	-- Preserving the Wild
+					},
+					["provider"] = { "n", 193740 },	-- Cataloger Wulferd
+					["coord"] = { 39.0, 83.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(192465),	-- Wulferd's Award-Winning Camera
+					},
+				}),
+				q(66528, {	-- King Without a Crown
+					["sourceQuests"] = { 66527 },	-- Professional Protography
+					["provider"] = { "n", 193954 },	-- Dervishian
+					["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
+				}),
+				q(66529, {	-- A Thousand Words
+					["sourceQuests"] = { 66528 },	-- King Without a Crown
+					["provider"] = { "n", 193954 },	-- Dervishian
+					["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
+					["g"] = {
+						i(192465),	-- Wulferd's Award-Winning Camera
+					},
+				}),
 			}),
-			crit(3, {	-- Professional Protographer
-				["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-				["collectible"] = false,
-				["g"] = {
-					q(66963, {	-- Out For Delivery
-						-- ["sourceQuests"] = { 66123 },	-- Cut Off the Head (inaccurate)
-						["provider"] = { "n", 191698 },	-- Hauler Bennet
-						["coord"] = { 48.5, 78.9, THE_WAKING_SHORES },
-						["isBreadcrumb"] = true,
-					}),
-					q(66524, {	-- Amateur Protography
-						["sourceQuests"] = { 66963 },	-- Out For Delivery
-						["provider"] = { "n", 187705 },	-- Cataloger Wulferd
-						["coord"] = { 48.5, 82.7, THE_WAKING_SHORES },
-						["g"] = {
-							i(192465),	-- Wulferd's Award-Winning Camera
-						},
-					}),
-					q(66525, {	-- Competitive Protography
-						["sourceQuests"] = { 66524 },	-- Amateur Protography
-						["provider"] = { "n", 193740 },	-- Cataloger Wulferd
-						["coord"] = { 39.0, 83.2, THE_WAKING_SHORES },
-						["g"] = {
-							i(192465),	-- Wulferd's Award-Winning Camera
-						},
-					}),
-					q(66526, {	-- Preserving the Wild
-						["sourceQuests"] = { 66524 },	-- Amateur Protography
-						["provider"] = { "n", 193954 },	-- Dervishian
-						["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
-					}),
-					q(66527, {	-- Professional Protography
-						["sourceQuests"] = {
-							66525,	-- Competitive Protography
-							66526,	-- Preserving the Wild
-						},
-						["provider"] = { "n", 193740 },	-- Cataloger Wulferd
-						["coord"] = { 39.0, 83.2, THE_WAKING_SHORES },
-						["g"] = {
-							i(192465),	-- Wulferd's Award-Winning Camera
-						},
-					}),
-					q(66528, {	-- King Without a Crown
-						["sourceQuests"] = { 66527 },	-- Professional Protography
-						["provider"] = { "n", 193954 },	-- Dervishian
-						["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
-					}),
-					q(66529, {	-- A Thousand Words
-						["sourceQuests"] = { 66528 },	-- King Without a Crown
-						["provider"] = { "n", 193954 },	-- Dervishian
-						["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
-						["g"] = {
-							i(192465),	-- Wulferd's Award-Winning Camera
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16401.04, {	-- Ruby Lifecalling
+				q(66825, {	-- A Ruby Lifecalling
+					["sourceQuests"] = {
+						66114,	-- For the Benefit of the Queen
+						70125,	-- Where is Wrathion? (A)
+						69910,	-- Where is Wrathion? (H)
+					},
+					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 191025 },	-- Lifecaller Tzadrak
+					["coord"] = { 61.9, 73.8, THE_WAKING_SHORES },
+				}),
+				q(70351, {	-- Garden Party
+					["sourceQuests"] = { 66825 },	-- A Ruby Lifecalling
+					["provider"] = { "n", 191012 },	-- Akora
+					["coord"] = { 61.7, 73.7, THE_WAKING_SHORES },
+				}),
+				q(66827, {	-- Flowers of our Labor
+					["sourceQuests"] = { 70351 },	-- Garden Party
+					["provider"] = { "n", 190866 },	-- Akora
+					["coord"] = { 60.2, 66.4, THE_WAKING_SHORES },
+					["g"] = {
+						i(193826),	-- Trusty Dragonkin Rake
+					},
+				}),
+				q(66828, {	-- Huddle at the Hollow
+					["sourceQuests"] = { 66827 },	-- Flowers of our Labor
+					["provider"] = { "n", 190868 },	-- Keshki
+					["coord"] = { 60.2, 66.4, THE_WAKING_SHORES },
+				}),
+				q(66830, {	-- Hornswoggled!
+					["sourceQuests"] = { 66828 },	-- Huddle at the Hollow
+					["provider"] = { "n", 191011 },	-- Keshki
+					["coord"] = { 65.3, 63.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(193918),	-- Jar of Fireflies
+					},
+				}),
+				q(66831, {	-- Home Is Where the Frogs Are
+					["sourceQuests"] = { 66830 },	-- Hornswoggled!
+					["provider"] = { "n", 191011 },	-- Keshki
+					["coord"] = { 65.3, 63.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(197399),	-- Renewed Proto-Drake: Razor Snout (DM!)
+					},
+				}),
+				q(66879, {	-- Hornstrider Havoc
+					["sourceQuests"] = { 66825 },	-- A Ruby Lifecalling
+					["provider"] = { "n", 191176 },	-- Dazakros
+					["coord"] = { 61.7, 73.8, THE_WAKING_SHORES },
+				}),
+				q(66893, {	-- Beaky Reclamation
+					["sourceQuests"] = { 66879 },	-- Hornstrider Havoc
+					["provider"] = { "n", 191280 },	-- Dazakros
+					["coord"] = { 53.4, 58.4, THE_WAKING_SHORES },
+					["g"] = {
+						i(194434),	-- Pungent Salve
+					},
+				}),
+				q(66892, {	-- Deluge Dilemma
+					["sourceQuests"] = { 66879 },	-- Hornstrider Havoc
+					["provider"] = { "n", 191280 },	-- Dazakros
+					["coord"] = { 53.4, 58.4, THE_WAKING_SHORES },
+				}),
+				q(66997, {	-- Nursery Direction
+					["sourceQuests"] = { 66825 },	-- A Ruby Lifecalling
+					["provider"] = { "n", 191174 },	-- Vaeros
+					["coord"] = { 61.8, 73.6, THE_WAKING_SHORES },
+				}),
+				q(66735, {	-- Just a Trim
+					["sourceQuests"] = { 66997 },	-- Nursery Direction
+					["provider"] = { "n", 190525 },	-- Vaeros
+					["coord"] = { 55.3, 63.5, THE_WAKING_SHORES },
+				}),
+				q(66734, {	-- Leave Bee Alone
+					["sourceQuests"] = { 66997 },	-- Nursery Direction
+					["provider"] = { "n", 190525 },	-- Vaeros
+					["coord"] = { 55.3, 63.5, THE_WAKING_SHORES },
+					["g"] = {
+						i(194404),	-- Beetender's Hood
+						i(194415),	-- Reinforced Beekeeper's Helm
+						i(194406),	-- Stingerproof Helmet
+						i(194405),	-- Wasp Repelling Skullcap
+						i(193064),	-- Smoke Diffuser
+					},
+				}),
+				q(66737, {	-- A Better Start
+					["sourceQuests"] = {
+						66735,	-- Just a Trim
+						66734,	-- Leave Bee Alone
+					},
+					["provider"] = { "n", 190533 },	-- Adazius
+					["coord"] = { 55.2, 63.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(194419),	-- Life Pool Herb Pouch
+						i(194418),	-- Life Pools Watering Can
+					},
+				}),
 			}),
-			crit(4, {	-- Ruby Lifecalling
-				["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-				["collectible"] = false,
-				["g"] = {
-					q(66825, {	-- A Ruby Lifecalling
-						["sourceQuests"] = {
-							66114,	-- For the Benefit of the Queen
-							70125,	-- Where is Wrathion? (A)
-							69910,	-- Where is Wrathion? (H)
-						},
-						["sourceQuestNumRequired"] = 1,
-						["provider"] = { "n", 191025 },	-- Lifecaller Tzadrak
-						["coord"] = { 61.9, 73.8, THE_WAKING_SHORES },
-					}),
-					q(70351, {	-- Garden Party
-						["sourceQuests"] = { 66825 },	-- A Ruby Lifecalling
-						["provider"] = { "n", 191012 },	-- Akora
-						["coord"] = { 61.7, 73.7, THE_WAKING_SHORES },
-					}),
-					q(66827, {	-- Flowers of our Labor
-						["sourceQuests"] = { 70351 },	-- Garden Party
-						["provider"] = { "n", 190866 },	-- Akora
-						["coord"] = { 60.2, 66.4, THE_WAKING_SHORES },
-						["g"] = {
-							i(193826),	-- Trusty Dragonkin Rake
-						},
-					}),
-					q(66828, {	-- Huddle at the Hollow
-						["sourceQuests"] = { 66827 },	-- Flowers of our Labor
-						["provider"] = { "n", 190868 },	-- Keshki
-						["coord"] = { 60.2, 66.4, THE_WAKING_SHORES },
-					}),
-					q(66830, {	-- Hornswoggled!
-						["sourceQuests"] = { 66828 },	-- Huddle at the Hollow
-						["provider"] = { "n", 191011 },	-- Keshki
-						["coord"] = { 65.3, 63.7, THE_WAKING_SHORES },
-						["g"] = {
-							i(193918),	-- Jar of Fireflies
-						},
-					}),
-					q(66831, {	-- Home Is Where the Frogs Are
-						["sourceQuests"] = { 66830 },	-- Hornswoggled!
-						["provider"] = { "n", 191011 },	-- Keshki
-						["coord"] = { 65.3, 63.7, THE_WAKING_SHORES },
-						["g"] = {
-							i(197399),	-- Renewed Proto-Drake: Razor Snout (DM!)
-						},
-					}),
-					q(66879, {	-- Hornstrider Havoc
-						["sourceQuests"] = { 66825 },	-- A Ruby Lifecalling
-						["provider"] = { "n", 191176 },	-- Dazakros
-						["coord"] = { 61.7, 73.8, THE_WAKING_SHORES },
-					}),
-					q(66893, {	-- Beaky Reclamation
-						["sourceQuests"] = { 66879 },	-- Hornstrider Havoc
-						["provider"] = { "n", 191280 },	-- Dazakros
-						["coord"] = { 53.4, 58.4, THE_WAKING_SHORES },
-						["g"] = {
-							i(194434),	-- Pungent Salve
-						},
-					}),
-					q(66892, {	-- Deluge Dilemma
-						["sourceQuests"] = { 66879 },	-- Hornstrider Havoc
-						["provider"] = { "n", 191280 },	-- Dazakros
-						["coord"] = { 53.4, 58.4, THE_WAKING_SHORES },
-					}),
-					q(66997, {	-- Nursery Direction
-						["sourceQuests"] = { 66825 },	-- A Ruby Lifecalling
-						["provider"] = { "n", 191174 },	-- Vaeros
-						["coord"] = { 61.8, 73.6, THE_WAKING_SHORES },
-					}),
-					q(66735, {	-- Just a Trim
-						["sourceQuests"] = { 66997 },	-- Nursery Direction
-						["provider"] = { "n", 190525 },	-- Vaeros
-						["coord"] = { 55.3, 63.5, THE_WAKING_SHORES },
-					}),
-					q(66734, {	-- Leave Bee Alone
-						["sourceQuests"] = { 66997 },	-- Nursery Direction
-						["provider"] = { "n", 190525 },	-- Vaeros
-						["coord"] = { 55.3, 63.5, THE_WAKING_SHORES },
-						["g"] = {
-							i(194404),	-- Beetender's Hood
-							i(194415),	-- Reinforced Beekeeper's Helm
-							i(194406),	-- Stingerproof Helmet
-							i(194405),	-- Wasp Repelling Skullcap
-							i(193064),	-- Smoke Diffuser
-						},
-					}),
-					q(66737, {	-- A Better Start
-						["sourceQuests"] = {
-							66735,	-- Just a Trim
-							66734,	-- Leave Bee Alone
-						},
-						["provider"] = { "n", 190533 },	-- Adazius
-						["coord"] = { 55.2, 63.7, THE_WAKING_SHORES },
-						["g"] = {
-							i(194419),	-- Life Pool Herb Pouch
-							i(194418),	-- Life Pools Watering Can
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16401.05, {	-- Save the Hippos!
+				q(72122, {	-- Erstwhile Ecologists
+					["sourceQuests"] = {
+						65990,	-- Deliver Whelps From Evil
+						65989,	-- Invader Djaradin
+					},
+					["provider"] = { "n", 195303 },	-- Mender Eskros
+					["coord"] = { 71.2, 40.5, THE_WAKING_SHORES },
+					["isBreadcrumb"] = true, -- Prob?
+				}),
+				q(66105, {	-- A Scalpel of a Solution
+					["sourceQuests"] = { 72122 },	-- Erstwhile Ecologists
+					["provider"] = { "n", 186410 },	-- Ecologist Iskha
+					["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(194350),	-- Expedition Guard's Legguards
+						i(194352),	-- Expedition Mercenary's Leggings
+						i(194351),	-- Expedition Researcher's Leggings
+						i(194353),	-- Field Scout's Breeches
+					},
+				}),
+				q(66107, {	-- Wildlife Rescue
+					["sourceQuests"] = { 72122 },	-- Erstwhile Ecologists
+					["provider"] = { "n", 186428 },	-- Ecologist Tharu
+					["coord"] = { 74.5, 42.2, THE_WAKING_SHORES },
+				}),
+				q(66104, {	-- Forensic Ecology
+					["sourceQuests"] = {
+						66105,	-- A Scalpel of a Solution
+						66107,	-- Wildlife Rescue
+					},
+					["provider"] = { "n", 186410 },	-- Ecologist Iskha
+					["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
+				}),
+				q(66108, {	-- A Sledgehammer of a Solution
+					["sourceQuests"] = { 66104 },	-- Forensic Ecology
+					["provider"] = { "n", 186410 },	-- Ecologist Iskha
+					["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(194412),	-- Expedition Guard's Wristguards
+						i(194413),	-- Expedition Mercenary's Wristwraps
+						i(194411),	-- Expedition Researcher's Binders
+						i(194414),	-- Field Scout's Bindings
+					},
+				}),
+				q(66106, {	-- Don't Be So Shellfish
+					["sourceQuests"] = { 66104 },	-- Forensic Ecology
+					["provider"] = { "n", 186428 },	-- Ecologist Tharu
+					["coord"] = { 74.5, 42.2, THE_WAKING_SHORES },
+				}),
 			}),
-			crit(5, {	-- Save the Hippos!
-				["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-				["collectible"] = false,
-				["g"] = {
-					q(72122, {	-- Erstwhile Ecologists
-						["sourceQuests"] = {
-							65990,	-- Deliver Whelps From Evil
-							65989,	-- Invader Djaradin
-						},
-						["provider"] = { "n", 195303 },	-- Mender Eskros
-						["coord"] = { 71.2, 40.5, THE_WAKING_SHORES },
-						["isBreadcrumb"] = true, -- Prob?
-					}),
-					q(66105, {	-- A Scalpel of a Solution
-						["sourceQuests"] = { 72122 },	-- Erstwhile Ecologists
-						["provider"] = { "n", 186410 },	-- Ecologist Iskha
-						["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
-						["g"] = {
-							i(194350),	-- Expedition Guard's Legguards
-							i(194352),	-- Expedition Mercenary's Leggings
-							i(194351),	-- Expedition Researcher's Leggings
-							i(194353),	-- Field Scout's Breeches
-						},
-					}),
-					q(66107, {	-- Wildlife Rescue
-						["sourceQuests"] = { 72122 },	-- Erstwhile Ecologists
-						["provider"] = { "n", 186428 },	-- Ecologist Tharu
-						["coord"] = { 74.5, 42.2, THE_WAKING_SHORES },
-					}),
-					q(66104, {	-- Forensic Ecology
-						["sourceQuests"] = {
-							66105,	-- A Scalpel of a Solution
-							66107,	-- Wildlife Rescue
-						},
-						["provider"] = { "n", 186410 },	-- Ecologist Iskha
-						["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
-					}),
-					q(66108, {	-- A Sledgehammer of a Solution
-						["sourceQuests"] = { 66104 },	-- Forensic Ecology
-						["provider"] = { "n", 186410 },	-- Ecologist Iskha
-						["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
-						["g"] = {
-							i(194412),	-- Expedition Guard's Wristguards
-							i(194413),	-- Expedition Mercenary's Wristwraps
-							i(194411),	-- Expedition Researcher's Binders
-							i(194414),	-- Field Scout's Bindings
-						},
-					}),
-					q(66106, {	-- Don't Be So Shellfish
-						["sourceQuests"] = { 66104 },	-- Forensic Ecology
-						["provider"] = { "n", 186428 },	-- Ecologist Tharu
-						["coord"] = { 74.5, 42.2, THE_WAKING_SHORES },
-					}),
-				},
+			header(HEADERS.AchCriteria, 16401.06, {	-- The Shadow of His Wings
+				q(65690, {	-- A Cultist's Misgivings
+					["sourceQuests"] = {
+						66079,	-- Wrathion Awaits
+						70125,	-- Where is Wrathion? (A)
+						69910,	-- Where is Wrathion? (H)
+					},
+					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 185627 },	-- Ingot
+					["coord"] = { 39.4, 48.3, THE_WAKING_SHORES },
+				}),
+				q(65782, {	-- Under Lock and Key
+					["sourceQuests"] = { 65690 },	-- A Cultist's Misgivings
+					["provider"] = { "n", 185628 },	-- Ayasanth
+					["coord"] = { 37.4, 46.7, THE_WAKING_SHORES },
+				}),
+				q(65687, {	-- Punching Up
+					["sourceQuests"] = {
+						66079,	-- Wrathion Awaits
+						70125,	-- Where is Wrathion? (A)
+						69910,	-- Where is Wrathion? (H)
+					},
+					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 185627 },	-- Ingot
+					["coord"] = { 39.4, 48.3, THE_WAKING_SHORES },
+					["g"] = {
+						i(194368),	-- Worldbreaker's Charm
+					},
+				}),
+				q(65691, {	-- The Shadow of His Wings
+					["sourceQuests"] = {
+						65687,	-- Punching Up
+						65782,	-- Under Lock and Key
+					},
+					["provider"] = { "n", 185628 },	-- Ayasanth
+					["coord"] = { 37.4, 46.6, THE_WAKING_SHORES },
+					["g"] = {
+						i(194420),	-- Blacktalon Blade
+						i(194396),	-- Blacktalon Claw
+						i(194397),	-- Darkscale Twinblade
+						i(194395),	-- Doomsayer's Greatsword
+						i(194385),	-- Neltharian Channeler's Rod
+						i(194388),	-- Obsidian Guardian's Cleaver
+						i(194390),	-- Obsidian Spellsplitter
+						i(194387),	-- Obsidian Watcher's Crossbow
+					},
+				}),
 			}),
-			crit(6, {	-- The Shadow of His Wings
-				["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-				["collectible"] = false,
-				["g"] = {
-					q(65690, {	-- A Cultist's Misgivings
-						["sourceQuests"] = {
-							66079,	-- Wrathion Awaits
-							70125,	-- Where is Wrathion? (A)
-							69910,	-- Where is Wrathion? (H)
-						},
-						["sourceQuestNumRequired"] = 1,
-						["provider"] = { "n", 185627 },	-- Ingot
-						["coord"] = { 39.4, 48.3, THE_WAKING_SHORES },
-					}),
-					q(65782, {	-- Under Lock and Key
-						["sourceQuests"] = { 65690 },	-- A Cultist's Misgivings
-						["provider"] = { "n", 185628 },	-- Ayasanth
-						["coord"] = { 37.4, 46.7, THE_WAKING_SHORES },
-					}),
-					q(65687, {	-- Punching Up
-						["sourceQuests"] = {
-							66079,	-- Wrathion Awaits
-							70125,	-- Where is Wrathion? (A)
-							69910,	-- Where is Wrathion? (H)
-						},
-						["sourceQuestNumRequired"] = 1,
-						["provider"] = { "n", 185627 },	-- Ingot
-						["coord"] = { 39.4, 48.3, THE_WAKING_SHORES },
-						["g"] = {
-							i(194368),	-- Worldbreaker's Charm
-						},
-					}),
-					q(65691, {	-- The Shadow of His Wings
-						["sourceQuests"] = {
-							65687,	-- Punching Up
-							65782,	-- Under Lock and Key
-						},
-						["provider"] = { "n", 185628 },	-- Ayasanth
-						["coord"] = { 37.4, 46.6, THE_WAKING_SHORES },
-						["g"] = {
-							i(194420),	-- Blacktalon Blade
-							i(194396),	-- Blacktalon Claw
-							i(194397),	-- Darkscale Twinblade
-							i(194395),	-- Doomsayer's Greatsword
-							i(194385),	-- Neltharian Channeler's Rod
-							i(194388),	-- Obsidian Guardian's Cleaver
-							i(194390),	-- Obsidian Spellsplitter
-							i(194387),	-- Obsidian Watcher's Crossbow
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16406.01, {	-- Captain Garrick & Shuja Grimaxe
+				q(67053, {	-- Give Peace a Chance [A]
+					["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
+					["provider"] = { "n", 184449 },	-- Captain Garrick
+					["coord"] = { 76.7, 34.6, THE_WAKING_SHORES },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(66110, {	-- Give Peace a Chance [H]
+					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
+					["provider"] = { "n", 184452 },	-- Warlord Breka Grimaxe
+					["coord"] = { 76.4, 33.1, THE_WAKING_SHORES },
+					["races"] = HORDE_ONLY,
+				}),
+				q(70135, {	-- Encroaching Elementals [A]
+					["sourceQuests"] = { 67053 },	-- Give Peace a Chance [A]
+					["provider"] = { "n", 184452 },	-- Warlord Breka Grimaxe
+					["coord"] = { 76.4, 33.1, THE_WAKING_SHORES },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(66111, {	-- Encroaching Elementals [H]
+					["sourceQuests"] = { 66110 },	-- Give Peace a Chance [H]
+					["provider"] = { "n", 184449 },	-- Captain Garrick
+					["coord"] = { 76.7, 34.6, THE_WAKING_SHORES },
+					["races"] = HORDE_ONLY,
+				}),
 			}),
-			crit(1, {	-- Captain Garrick & Shuja Grimaxe
-				["achievementID"] = 16406,	-- All Sides of the Story
-				["collectible"] = false,
-				["g"] = {
-					q(67053, {	-- Give Peace a Chance [A]
-						["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
-						["provider"] = { "n", 184449 },	-- Captain Garrick
-						["coord"] = { 76.7, 34.6, THE_WAKING_SHORES },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(66110, {	-- Give Peace a Chance [H]
-						["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-						["provider"] = { "n", 184452 },	-- Warlord Breka Grimaxe
-						["coord"] = { 76.4, 33.1, THE_WAKING_SHORES },
-						["races"] = HORDE_ONLY,
-					}),
-					q(70135, {	-- Encroaching Elementals [A]
-						["sourceQuests"] = { 67053 },	-- Give Peace a Chance [A]
-						["provider"] = { "n", 184452 },	-- Warlord Breka Grimaxe
-						["coord"] = { 76.4, 33.1, THE_WAKING_SHORES },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(66111, {	-- Encroaching Elementals [H]
-						["sourceQuests"] = { 66110 },	-- Give Peace a Chance [H]
-						["provider"] = { "n", 184449 },	-- Captain Garrick
-						["coord"] = { 76.7, 34.6, THE_WAKING_SHORES },
-						["races"] = HORDE_ONLY,
-					}),
-				},
+			header(HEADERS.AchCriteria, 16406.02, {	-- Duroz & Kolgar
+				q(70239, {	-- Untold Regrets
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 194801 },	-- Kolgar Flameguard
+					["coord"] = { 58.7, 67.8, THE_WAKING_SHORES },
+				}),
+				q(70240, {	-- Pain Management
+					["sourceQuests"] = { 70239 },	-- Untold Regrets
+					["provider"] = { "n", 194805 },	-- Bathoras
+					["coord"] = { 57.4, 65.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(198673),	-- Empty Life Pool Vial
+					},
+				}),
+				q(70241, {	-- The Bitter End
+					-- TODO: Requirement to continue?? Next Day/Time/Finish Chap 3/4?
+					["sourceQuests"] = { 70240 },	-- Pain Management
+					["provider"] = { "n", 194801 },	-- Kolgar Flameguard
+					["coord"] = { 56.8, 64.5, THE_WAKING_SHORES },
+				}),
+				q(70242, {	-- Life After Life
+					["sourceQuests"] = { 70241 },	-- The Bitter End
+					["provider"] = { "n", 194805 },	-- Bathoras
+					["coord"] = { 56.8, 64.4, THE_WAKING_SHORES },
+				}),
+				q(70708, {	-- Hallow
+					["sourceQuests"] = { 70242 },	-- Life After Life
+					["provider"] = { "n", 194801 },	-- Bathoras
+					["coord"] = { 58.4, 67.5, THE_WAKING_SHORES },
+				}),
 			}),
-			crit(2, {	-- Duroz & Kolgar
-				["achievementID"] = 16406,	-- All Sides of the Story
-				["collectible"] = false,
-				["g"] = {
-					q(70239, {	-- Untold Regrets
-						["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-						["provider"] = { "n", 194801 },	-- Kolgar Flameguard
-						["coord"] = { 58.7, 67.8, THE_WAKING_SHORES },
-					}),
-					q(70240, {	-- Pain Management
-						["sourceQuests"] = { 70239 },	-- Untold Regrets
-						["provider"] = { "n", 194805 },	-- Bathoras
-						["coord"] = { 57.4, 65.7, THE_WAKING_SHORES },
-						["g"] = {
-							i(198673),	-- Empty Life Pool Vial
-						},
-					}),
-					q(70241, {	-- The Bitter End
-						-- TODO: Requirement to continue?? Next Day/Time/Finish Chap 3/4?
-						["sourceQuests"] = { 70240 },	-- Pain Management
-						["provider"] = { "n", 194801 },	-- Kolgar Flameguard
-						["coord"] = { 56.8, 64.5, THE_WAKING_SHORES },
-					}),
-					q(70242, {	-- Life After Life
-						["sourceQuests"] = { 70241 },	-- The Bitter End
-						["provider"] = { "n", 194805 },	-- Bathoras
-						["coord"] = { 56.8, 64.4, THE_WAKING_SHORES },
-					}),
-					q(70708, {	-- Hallow
-						["sourceQuests"] = { 70242 },	-- Life After Life
-						["provider"] = { "n", 194801 },	-- Bathoras
-						["coord"] = { 58.4, 67.5, THE_WAKING_SHORES },
-					}),
-				},
+			header(HEADERS.AchCriteria, 16406.03, {	-- Tarjin the Blind
+				q(70779, {	-- Tarjin's Tales
+					["provider"] = { "n", 196214 },	-- Tarjin the Blind
+					["coord"] = { 16.1, 62.6, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+					["g"] = {
+						i(200143),	-- Fenistrasza's Skull
+					},
+				}),
 			}),
-			crit(3, {	-- Tarjin the Blind
-				["achievementID"] = 16406,	-- All Sides of the Story
-				["collectible"] = false,
-				["g"] = {
-					q(70779, {	-- Tarjin's Tales
-						-- ["sourceQuests"] = {  },	--
-						["provider"] = { "n", 196214 },	-- Tarjin the Blind
-						["coord"] = { 16.1, 62.6, THE_WAKING_SHORES },
-						["isWeekly"] = true,
-						["g"] = {
-							i(200143),	-- Fenistrasza's Skull
-						},
-					}),
-				},
-			}),
-			crit(4, {	-- Veritistrasz
-				["achievementID"] = 16406,	-- All Sides of the Story
-				["collectible"] = false,
-				["g"] = {
-					q(70132, {	-- Stay a While
-						["sourceQuests"] = {
-							66114,	-- For the Benefit of the Queen
-							DF_ACCOUNT_CAMPAIGN_QUEST,
-						},
-						["sourceQuestNumRequired"] = 1,
-						["provider"] = { "n", 194076 },	-- Veritistrasz
-						["coord"] = { 57.8, 66.8, THE_WAKING_SHORES },
-					}),
-					q(70134, {	-- Memories
-						["sourceQuests"] = { 70223 },	-- Stay a While [Post-RP #9]
-						["provider"] = { "n", 194076 },	-- Veritistrasz
-						["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
-						["g"] = {
-							i(197361),	-- Renewed Proto-Drake: Spiked Crest (DM!)
-						},
-					}),
-					q(70268, {	-- Memories Revived
-						["sourceQuests"] = { 70134 },	-- Memories
-						["provider"] = { "i", 198661 },	-- Partially Destroyed Diary
-						["coord"] = { 23, 60, THE_WAKING_SHORES },
-						["description"] = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
-					}),
-				},
+			header(HEADERS.AchCriteria, 16406.04, {	-- Veritistrasz
+				q(70132, {	-- Stay a While
+					["sourceQuests"] = {
+						66114,	-- For the Benefit of the Queen
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.8, THE_WAKING_SHORES },
+				}),
+				q(70134, {	-- Memories
+					["sourceQuests"] = { 70223 },	-- Stay a While [Post-RP #9]
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(197361),	-- Renewed Proto-Drake: Spiked Crest (DM!)
+					},
+				}),
+				q(70268, {	-- Memories Revived
+					["sourceQuests"] = { 70134 },	-- Memories
+					["provider"] = { "i", 198661 },	-- Partially Destroyed Diary
+					["coord"] = { 23, 60, THE_WAKING_SHORES },
+					["description"] = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
+				}),
 			}),
 			header(HEADERS.Achievement, 16409, {	-- Let's Get Quacking
 				q(66196, {	-- A Quack For Help
@@ -1073,24 +1029,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
 				}),
 			}),
-
-				-- MISC --
-			q(70446, {	-- A Personal History
-				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
-				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
-				["classes"] = { EVOKER },
-			}),
-			q(70159, {	-- A Taste of Home
-				["provider"] = { "n", 194462 },	 -- Talon Scaralesh
-				["coord"] = { 47.1, 82.9, THE_WAKING_SHORES },
-				["classes"] = { EVOKER },
-				["races"] = HORDE_ONLY,
-			}),
-			q(70164, {	-- A Tinker's Chance
-				["provider"] = { "n", 194136 },	-- Eralshek
-				["coord"] = { 65.4, 58.5, THE_WAKING_SHORES },
-				["classes"] = { EVOKER },
-			}),
+			------ Misc ------
 			q(70179, {	-- A Two for One Deal
 				["sourceQuests"] = { 66001 },	-- A Last Hope, -- TODO: Wasnt available when picking up 65997, but available before 66001....
 				["provider"] = { "n", 194525 },	-- Apprentice Caretaker Zefren
@@ -1184,17 +1123,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
 			}),
 			q(66003, {	-- Rings To Bind Them
-				-- ["sourceQuests"] = {} Unknown
 				["provider"] = { "n", 187609 },	-- Earthcaller Yevaa
 				["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
 				["g"] = {
 					i(194384),	-- Elemental Binding Ring
 				},
-			}),
-			q(70742, {	-- Runs in the Family
-				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
-				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
-				["classes"] = { EVOKER },
 			}),
 			q(70414, {	-- Shaky Grounds
 				["provider"] = { "n", 195234 },	-- Earthmender Govrum
@@ -1212,21 +1145,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(191837),	-- Earthen Charm
 				},
 			}),
+			------ Evoker Quests ------
+			q(70446, {	-- A Personal History
+				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
+				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
+				["classes"] = { EVOKER },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+			}),
+			q(70159, {	-- A Taste of Home
+				["provider"] = { "n", 194462 },	 -- Talon Scaralesh
+				["coord"] = { 47.1, 82.9, THE_WAKING_SHORES },
+				["classes"] = { EVOKER },
+				["races"] = { DRACTHYR_HORDE },
+			}),
+			q(70164, {	-- A Tinker's Chance
+				["provider"] = { "n", 194136 },	-- Eralshek
+				["coord"] = { 65.4, 58.5, THE_WAKING_SHORES },
+				["classes"] = { EVOKER },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+			}),
+			q(70368, {	-- Occupation Examination
+				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
+				["provider"] = { "n", 192498 },	-- Hephaesta
+				["coord"] = { 57.8, 68.2, THE_WAKING_SHORES },
+				["classes"] = { EVOKER },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+			}),
+			q(70742, {	-- Runs in the Family
+				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
+				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
+				["classes"] = { EVOKER },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+			}),
 			q(70148, {	-- Without Purpose
 				["provider"] = { "n", 192438 },	-- Hephaesta
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
 				["sourceQuests"] = 70124,	-- Practice Materials
 				["classes"] = { EVOKER },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
-			q(70368, {	-- Occupation Examination
-				["provider"] = { "n", 192498 },	-- Hephaesta
-				["coord"] = { 57.8, 68.2, THE_WAKING_SHORES },
-				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
-				["classes"] = { EVOKER },
-			}),
-				--TODO: At some point this quest will need to be looked at and changed to either a Dracthyr-specific race tag or adjusted to whatever classes Dracthyr are eventually opened up to. For now Evoker covers all the bases.
-
-				-- Alt Quest --
+			------ Alt Quests ------
 			q(72293, {	-- Adventuring in the Dragon Isles
 				["sourceQuests"] = {
 					70125,	-- Where is Wrathion? (A)
@@ -1267,10 +1225,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 
 			-- #if AFTER 10.1.5
-
-
-
-
 			-- Evoker Storyline?
 			q(72513, {	-- Our Destiny
 				-- ["sourceQuests"] = {  },	--

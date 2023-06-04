@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(OHNAHRAN_PLAINS, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 15394, {	-- Ohn'a'Roll
-					-- Chapter 1 --
+				------ Chapter 1 ------
 				q(65795, {	-- Next Steppes
 					["sourceQuests"] = { 65794 },	-- A Change of Care
 					["provider"] = { "n", 193377 },	-- Alexstrasza the Life-Binder
@@ -111,7 +111,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 181217 },	-- Sansok Khan
 					["coord"] = { 70.0, 38.0, OHNAHRAN_PLAINS },
 				}),
-					-- Chapter 2 --
+				------ Chapter 2 ------
 				q(66018, {	-- Clan Nokhud
 					["sourceQuests"] = { 65806 },	-- Maruukai
 					["provider"] = { "n", 191283 },	-- Sansok Khan
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 181198 },	-- Khanam Matra Sarest
 					["coord"] = { 60.3,38.0, OHNAHRAN_PLAINS },
 				}),
-					-- Chapter 3 --
+				------ Chapter 3 ------
 				q(66201, {	-- Hooves of War
 					["sourceQuests"] = { 66025 },	-- The Nokhud Threat
 					["provider"] = { "n", 181198 },	-- Khanam Matra Sarest
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(197846),	-- Ohn'ahra's Carving
 					},
 				}),
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(66327, {	-- Chasing the Wind
 					["sourceQuests"] = { 66259 },	-- A Storm of Ill Tidings
 					["provider"] = { "n", 181198 },	-- Khanam Matra Sarest
@@ -381,6 +381,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
 					},
 				}),
+				------ Continues in Azure Span ------
 			}),
 			header(HEADERS.AchCriteria, 16405.01, {	-- Taivan's Purpose
 				q(67772, {	-- The Trouble with Taivan
@@ -789,6 +790,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
 					["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
 					["classes"] = { EVOKER },
+					["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				}),
 				q(65898, {	-- Proto Problems
 					["sourceQuests"] = { 65895 },	-- Competing Company
@@ -1109,11 +1111,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 			})),
-				-- MISC --
+			------ Misc ------
 			q(70155, {	-- Look, Listen, and Breathe
 				["provider"] = { "n", 194282 },	-- Threshrak
 				["coord"] = { 34.1, 59.4, OHNAHRAN_PLAINS },
 				["classes"] = { EVOKER },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
 			q(70319, {	-- Nergazurai
 				["sourceQuests"] = { 65783 },	-- Welcome at Our Fire

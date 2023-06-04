@@ -5,6 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	m(ZARALEK_CAVERN, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
+				------ Chapter 1 ------
 				q(72975, {	-- The Land Beneath
 					["sourceQuests"] = { 72717 },	-- A Creche Divided
 					["provider"] = { "n", 201401 },	-- Hadexian
@@ -128,7 +129,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						spell(408876),	-- Zaralek Cavern World Quests
 					},
 				}),
-					-- Chapter 2
+				------ Chapter 2 ------
 				q(74334, {	-- Future Aspects
 					["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 					["provider"] = { "n", 201366 },	-- Ebyssian
@@ -210,8 +211,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205991),	-- Shiny Token of Gratitude
 					},
 				}),
-
-					-- Chapter 3 --
+				------ Chapter 3 ------
 				q(72966, {	-- Where There's Smoke, There's Fire
 					["sourceQuests"] = { 72965 },	-- Aspects of Our Legacy
 					["provider"] = { "n", 199849 },	-- Sabellian
@@ -347,7 +347,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204592),	-- Inherited Mask
 					},
 				}),
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(72987, {	-- Here We Go Again
 					["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 					["provider"] = { "n", 203965 },	-- Ebyssian
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204361),	-- Winding Slitherdrake (MOUNT!)
 					},
 				}),
-					-- Chapter 5 --
+				------ Chapter 5 ------
 				q(72922, {	-- Fading Embers
 					["sourceQuests"] = {
 						74562,	-- Break Them Out
@@ -486,17 +486,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205998),	-- Sign of Respect
 					},
 				}),
-					-- Chapter 6 --
+				------ Chapter 6 ------
 				q(75694, {	-- Aberrus, the Shadowed Crucible: Sarkareth
 					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
 					["provider"] = { "n", 199965 },	-- Ebyssian
 					["coord"] = { 47.9, 15.0, ZARALEK_CAVERN },
+					["maps"] = { 2166, 2167, 2168, 2169, 2170 },	-- Aberrus, the Shadowed Crucible
 					["g"] = {
 						i(204682),	-- Enchanted Wyrm's Shadowflame Crest
 					},
 				}),
 			}),
-				-- Teaches New System --
+			------ New System ------
 			q(76101, {	-- Tougher Down Under
 				["sourceQuests"] = { 72973 },	-- Smells Like Loamm
 				["provider"] = { "n", 204522 },	-- Aurantia
@@ -528,7 +529,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(202171),	-- Obsidian Flightstone
 				},
 			}),
-				--
 			q(75641, {	-- Power Unified
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
@@ -537,8 +537,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204717),	-- Splintered Spark of Shadowflame
 				},
 			}),
-
-				-- Incense Questline --
+			------ Incense Storyline ------
 			q(72878, {	-- Slime Time Live
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 200054 },	-- Elder Honeypelt
@@ -560,8 +559,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205249),	-- Pugent Niffen Incense
 				},
 			}),
-
-				-- Imposter Questline --
+			------ Imposter Storyline ------
 			q(72881, {	-- A Swallow's Tale
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 200053 },	-- Effervesta
@@ -596,8 +594,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205250),	-- Gift of the High Redolence
 				},
 			}),
-
-				-- Mouse Friend Questline --
+			------ Mouse Storyline ------
 			q(74857, {	-- Mouse Detective
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 202597 },	-- Yarren
@@ -640,8 +637,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205253),	-- Farmhand's Abudant Harvest
 				},
 			}),
-
-				-- Glimmerogg Questline --
+			------ Glimmerogg Storyline ------
 			q(73707, {	-- TICKET: Glimmerogg Games
 				["sourceQuests"] = { 72979 },	-- The Earth Gives Way
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
@@ -674,8 +670,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205251),	-- Champion's Rock Bar
 				},
 			}),
-
-				-- Dragonscale Expedition Side Questline --
+			------ Hraxian Storyline ------
 			q(73037, {	-- Healing Crystals
 				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				["provider"] = { "n", 200291 },	-- Rupert, the Gentleman Elemental
@@ -782,26 +777,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204220),	-- Hraxian's Unbreakable Will (TOY!)
 				},
 			}),
-
-				-- Misc --
-			q(75232, {	-- Fallen Effects
-				--["sourceQuests"] = {  },
-				["provider"] = { "i", 204642 },	-- Sheridon Hastle's Effects
-				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
-			}),
-			q(75233, {	-- Flesh to Bone
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 203378 },	-- Gorgul
-				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
-				["g"] = {
-					i(204714),	-- Satchel of Healing Spores
-					i(204728),	-- Friendship Censer
-					i(204797),	-- Djaradin Boasting Tablets
-					i(204805),	-- Suspended Sulfuric Droplet
-					i(204810),	-- Drogbar Rocks
-					i(204811),	-- Drogbar Stones
-				},
-			}),
+			------ Turncloak Storyline [Evoker Only!] ------
 			q(73077, {	-- This Might Sting
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 200550 },	-- Patroclosa
@@ -822,6 +798,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 55.6, 57.0, ZARALEK_CAVERN },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["classes"] = { EVOKER },
+			}),
+			------ Misc ------
+			q(75232, {	-- Fallen Effects
+				--["sourceQuests"] = {  },
+				["provider"] = { "i", 204642 },	-- Sheridon Hastle's Effects
+				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
+			}),
+			q(75233, {	-- Flesh to Bone
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["provider"] = { "n", 203378 },	-- Gorgul
+				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
+				["g"] = {
+					i(204714),	-- Satchel of Healing Spores
+					i(204728),	-- Friendship Censer
+					i(204797),	-- Djaradin Boasting Tablets
+					i(204805),	-- Suspended Sulfuric Droplet
+					i(204810),	-- Drogbar Rocks
+					i(204811),	-- Drogbar Stones
+				},
 			}),
 		}),
 	}),

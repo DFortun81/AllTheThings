@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 	m(ARDENWEALD, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14164, {	-- Awaken, Ardenweald
-					-- Chapter 1 --
+				------ Chapter 1 ------
 				q(60338, {	-- Journey to Ardenweald
 					["sourceQuests"] = { 61715 },	-- Request of the Highlord
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 170533 },	-- Featherlight
 					["coord"] = { 65.6, 27.9, ARDENWEALD },
 				}),
-					-- Chapter 2 --
+				------ Chapter 2 ------
 				q(57816, {	-- Dreamweaver
 					["sourceQuests"] = { 57787 },	-- Keep to the Path
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						i(175656),	-- Starshroud Gloves
 					},
 				}),
-					-- Chpater 3 --
+				------ Chapter 3 ------
 				q(60600, {	-- Preparing for the Winter Queen
 					["sourceQuests"] = {
 						60594,	-- One Special Spirit
@@ -207,7 +207,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.4, 36.0, ARDENWEALD },
 				}),
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(60521, {	-- Call of the Hunt
 					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 169142 },	-- Dreamweaver
 					["coord"] = { 65.2, 36.6, ARDENWEALD },
 				}),
-					-- Chapter 5 --
+				------ Chapter 5 ------
 				q(60738, {	-- The Way to Hibernal Hollow
 					["sourceQuests"] = { 60520 },	-- Nightmares Manifest
 					["provider"] = { "n", 169142 },	-- Dreamweaver
@@ -312,7 +312,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
 					["coord"] = { 60.0, 53.9, ARDENWEALD },
 				}),
-					-- Chapter 6 --
+				------ Chapter 6 ------
 				q(58473, {	-- Echoes of Tirna Noch
 					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 					["provider"] = { "n", 160963 },	-- Ara'lon
@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						i(175767),	-- Glitterwing Greatcloak
 					},
 				}),
-					-- Chapter 7 --
+				------ Chapter 7 ------
 				q(58592, {	-- Caring for the Caretakers
 					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
 					["provider"] = { "n", 160962 },	-- Dreamweaver
@@ -417,7 +417,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					},
 					["maps"] = { 1642 },	-- Val'sharah (Scenario Map)
 				}),
-					-- Chapter 8 --
+				------ Chapter 8 ------
 				q(58719, {	-- The Droman's Call
 					["sourceQuests"] = { 58593 },	-- End of the Dream
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
@@ -469,7 +469,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["provider"] = { "n", 161847 },	-- Winter Queen
 					["coord"] = { 48.9, 33.5, ARDENWEALD },
 				}),
-					-- The End --
+				------ Continues in Revendreth ------
 			}),
 			crit(1, {	-- Thread of Hope
 				["achievementID"] = 14800,	-- Sojourner of Ardenweald

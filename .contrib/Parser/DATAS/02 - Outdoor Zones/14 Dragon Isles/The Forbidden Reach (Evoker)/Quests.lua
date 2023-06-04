@@ -5,7 +5,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 	m(THE_FORBIDDEN_REACH_EVOKER, bubbleDownSelf({ ["classes"] = { EVOKER }, ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE } }, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 15325, {	-- Dracthyr, Awaken
-					-- Chapter 1 --
+				------ Chapter 1 ------
 				q(64864),	-- Awaken, Dracthyr
 				q(64863, {	-- Arcane Guardians
 					["sourceQuests"] = { 64864 },	-- Awaken, Dracthyr
@@ -39,8 +39,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 						i(193914),	--	Crystalline Lapis
 					},
 				}),
-
-					-- Chapter 2 --
+				------ Chapter 2 ------
 				q(65615, {	-- Arcane Intrusion
 					["sourceQuests"] = { 64871 },	-- The Dragon at the Door
 					["provider"] = { "n", 182251 },	-- Scalecommander Azurathel
@@ -67,8 +66,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					["provider"] = { "n", 192889 },	-- Dervishian
 					["coord"] = { 44.7, 57.6, THE_FORBIDDEN_REACH_EVOKER },
 				}),
-
-					-- Chapter 3 --
+				------ Chapter 3 ------
 				q(65060, {	-- Caldera of the Menders
 					["sourceQuests"] = { 65036 },	-- Train Like We Fight
 					["provider"] = { "n", 181054 },	-- Scalecommander Emberthal
@@ -123,8 +121,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 						i(191812),	-- Crimson Dracthyr Battlegear Treads
 					},
 				}),
-
-					-- Chapter 4 --
+				------ Chapter 4 ------
 				q(72263, {	-- Cavalry Has Its Place
 					["sourceQuests"] = { 65075 },	-- The Healing Wings
 					["provider"] = { "n", 198429 },	-- Treysh
@@ -177,8 +174,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					["provider"] = { "n", 182275 },	-- Scalecommander Sarkareth
 					["coord"] = { 81.2, 54.0, THE_FORBIDDEN_REACH_EVOKER },
 				}),
-
-					-- Chapter 5 --
+				------ Chapter 5 ------
 				q(65701, {	-- Preservation or Devastation
 					["sourceQuests"] = { 65057 },	-- Rally to Emberthal
 					["provider"] = { "n", 182258 },	-- Scalecommander Emberthal
@@ -200,8 +196,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 						i(194335),	-- Emerald Tear Necklace
 					},
 				}),
-
-					-- Chapter 6 --
+				------ Chapter 6 ------
 				q(65097, {	-- Run!
 					["sourceQuests"] = { 65087 },	-- The Prize Inside
 					["provider"] = { "n", 182441 },	-- Scalecommander Emberthal
@@ -223,9 +218,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 						i(193916),	-- Dragonkin Signet Ring
 					},
 				}),
-
-					-- Chapter 6 --
-				-- Stormwind
+				------ Chapter 6 ------
+				------ Alliance ------
 				q(65286, {	-- Draconic Connections
 					["sourceQuests"] = { 65100 },	-- Final Orders
 					["provider"] = { "n", 189322 },	-- Wrathion
@@ -250,7 +244,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 						i(194675),	-- Gilded Dracthyr's Tabard
 					},
 				}),
-				-- Org
+				------ Horde ------
 				q(66237, {	-- Spiritual Allies
 					["sourceQuests"] = { 65100 },	-- Final Orders
 					["provider"] = { "n", 189386 },	-- Spiritwalker Ebonhorn
@@ -273,7 +267,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					},
 				}),
 			}),
-				-- To'no --
+			------ To'no ------
 			q(65065, {	-- The Tuskarr
 				["sourceQuests"] = { 66324 },	-- Never Forgotten
 				["provider"] = { "n", 184164 },	-- Explorer Ko'nali
