@@ -3819,6 +3819,7 @@ for key,value in pairs({
 	[386484] = "Груда золота",	-- Gold Pile
 	[386531] = "Груда золота",	-- Gold Pile
 	[386532] = "Тайник изначального золота",	-- Primordial Gold Cache
+	[386547] = "Форма насыщения",	-- Suffusion Mold
 	[386556] = "Пыльная ваза",	-- Dusty Vase
 	--TODO: [386559] = "Secured Shipment",	-- Secured Shipment
 	[386573] = "Изысканная коробка для ключей",	-- Ornate Key Box

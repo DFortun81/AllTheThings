@@ -3842,6 +3842,7 @@ for key, value in pairs({
 	[386484] = "金子堆",	-- Gold Pile
 	[386531] = "金子堆",	-- Gold Pile
 	--TODO: [386532] = "Primordial Gold Cache",	-- Primordial Gold Cache
+	--TODO: [386547] = "Suffusion Mold",	-- Suffusion Mold
 	[386556] = "满是尘土的花瓶",	-- Dusty Vase
 	[386559] = "夺得的货物",	-- Secured Shipment
 	--TODO: [386573] = "Ornate Key Box",	-- Ornate Key Box

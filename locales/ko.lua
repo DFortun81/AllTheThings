@@ -3828,6 +3828,7 @@ for key,value in pairs({
 	[386484] = "황금 더미",	-- Gold Pile
 	[386531] = "황금 더미",	-- Gold Pile
 	[386532] = "태고의 황금 보관함",	-- Primordial Gold Cache
+	[386547] = "열화의 거푸집",	-- Suffusion Mold
 	--TODO: [386556] = "Dusty Vase",	-- Dusty Vase
 	--TODO: [386559] = "Secured Shipment",	-- Secured Shipment
 	[386573] = "화려한 열쇠 상자",	-- Ornate Key Box

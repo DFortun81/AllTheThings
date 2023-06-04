@@ -3819,6 +3819,7 @@ for key,value in pairs({
 	[386484] = "Mucchio d'Oro",	-- Gold Pile
 	[386531] = "Mucchio d'Oro",	-- Gold Pile
 	[386532] = "Cassa dell'Oro primordiale",	-- Primordial Gold Cache
+	[386547] = "Stampo di Soffusione",	-- Suffusion Mold
 	[386556] = "Vaso Polveroso",	-- Dusty Vase
 	--TODO: [386559] = "Secured Shipment",	-- Secured Shipment
 	[386573] = "Cassetta Portachiavi Adornata",	-- Ornate Key Box
