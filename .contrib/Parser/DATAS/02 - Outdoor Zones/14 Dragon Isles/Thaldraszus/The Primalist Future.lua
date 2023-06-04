@@ -3,7 +3,7 @@
 ---------------------------------------------------
 local ESSENCE_OF_THE_STORM = 202039;
 local ELEMENTAL_OVERFLOW = 2118;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		m(THE_PRIMALIST_FUTURE, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			n(ACHIEVEMENTS, {
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				o(382193, {	-- Chest of the Elements
 					["questID"] = 71995,
 					["coord"] = { 28.0, 25.9, THE_PRIMALIST_FUTURE },
-					["timeline"] = TIMELINE_10_0_2_LAUNCH,
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["g"]= {
 						i(194640),	-- Design: Ring-Bound Hourglass (RECIPE!)
 						i(201447),	-- Primal Revenant's Breezeblade
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				});
 			}),
 			n(VENDORS, {
-				n(198831, bubbleDownSelf({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {	-- Bivogosa <Head Chef>
+				n(198831, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Bivogosa <Head Chef>
 					["coord"] = { 61.5, 53.3, THE_PRIMALIST_FUTURE },
 					["g"] = {
 						i(201047),	-- Arcanostabilized Provisions

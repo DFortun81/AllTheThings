@@ -11,7 +11,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			filter(RECIPES, {
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						r(382582),	-- Opening
 					})),
 				}),

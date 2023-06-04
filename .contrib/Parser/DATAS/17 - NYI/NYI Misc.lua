@@ -82,7 +82,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(47558),	-- Regalia of the Grand Protector
 				i(47559),	-- Regalia of the Grand Vanquisher
 			})),
-			
+
 			-- 3.3.3
 			tier(WOTLK_TIER, 3.3, bubbleDown({ ["timeline"] = { "created 3.3.3" } }, {
 				i(50329),	-- Icecrown-10 Normal Loot Token
@@ -607,7 +607,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
-			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 				i(194110),	-- [PH] Dragon Rider's Honor
 				i(193682),	-- [PH] Plains Feather
 				i(193702),	-- 10.0 Dungeon - Optional Reagent
@@ -704,7 +704,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 10.0.2
-			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 10.0.2" } }, {
+			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
 				i(201252),	-- 10.0 Bronze PvP Chest (DNT)
 				i(193057),	-- 10.0 Placeholder Enchanting Crystal
 				i(193067),	-- Acadia's Tools [DNT/Unused]
@@ -734,7 +734,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 10.0.7
-			tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
+			tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 				i(202663),	-- [DNT] Dragonscale Expedition Item 01
 				i(202671),	-- [DNT] Dragonscale Expedition Item 02
 				i(202672),	-- [DNT] Dragonscale Expedition Item 03
@@ -766,7 +766,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 10.1.0
-			tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
+			tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 				i(205934),	-- Add Keystone Affix: Afflicted
 				i(205933),	-- Add Keystone Affix: Entangling
 				i(205935),	-- Add Keystone Affix: Incorporeal

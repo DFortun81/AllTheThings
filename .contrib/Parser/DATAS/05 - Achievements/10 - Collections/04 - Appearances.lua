@@ -74,6 +74,3 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(11759),	-- Yaass'shaarj (Siege of Orgrimmar)
 	}),
 }));
-root(ROOTS.HiddenQuestTriggers, {
-	q(72248),	-- triggers when using Gleaming Incarnate Thunderstone 202047
-});

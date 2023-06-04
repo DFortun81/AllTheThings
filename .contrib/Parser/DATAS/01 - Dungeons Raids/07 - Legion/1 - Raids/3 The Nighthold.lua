@@ -1,8 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(786, {	-- The Nighthold
 		["isRaid"] = true,

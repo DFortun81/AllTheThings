@@ -21,7 +21,7 @@ local SUNDERED_ONYX = 192847;
 local TALLSTRIDER_SINEW = 201404;
 local VIBRANT_EMERALD = 192844;
 local WILDERCLOTH = 193050;
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(VENDORS, {
 			n(195770, {	-- Armorsmith Terisk

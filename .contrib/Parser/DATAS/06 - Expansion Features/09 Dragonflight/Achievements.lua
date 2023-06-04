@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		ach(17119, {	-- Deep Cuts From the Vault
 			-- Meta Achievement
@@ -727,5 +727,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				16530,	-- Ally of the Flights
 			}},
 		}),
+		ach(17978),		-- Stones Can Fly!
+		ach(17977),		-- Stones Can Try To Fly!
+		ach(17830),		-- Stones Can't Fly!
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(72248),	-- Triggered when using Gleaming Incarnate Thunderstone 202047
+	q(75968),	-- Triggered when using Obsidian Aspectral Earthstone 205878
+});

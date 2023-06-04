@@ -167,7 +167,7 @@ root(ROOTS.Unsorted, {
 		},
 	}),
 	tier(DF_TIER, {
-		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { "created 10.1.5" } }, {
+		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			i(12840),	-- Inert Minion's Scourgestone
 			i(12841),	-- Inert Invader's Scourgestone
 			i(12843),	-- Inert Corruptor's Scourgestone
@@ -849,7 +849,7 @@ root(ROOTS.Unsorted, {
 			i(206998),	-- Ragged Mantid Sword
 			i(207003),	-- Gilded Vase
 		})),
-		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
+		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			filter(RECIPES, {
 				i(122549),	-- Pattern: Powerful Hexweave Essence (doesn't seem to exist anywhere?)
 			}),
@@ -1331,7 +1331,7 @@ root(ROOTS.Unsorted, {
 				q(75391),	--
 			}),
 		})),
-		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
+		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 			n(ARMOR, {
 				i(204258),	-- Goblin Trainee's Wristwraps
 				i(204259),	-- Goblin Trainee's Cord
@@ -1475,7 +1475,7 @@ root(ROOTS.Unsorted, {
 				q(75449),	--
 			})
 		})),
-		tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {
+		tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
 			filter(COSMETIC, {
 				n(ARMOR, {
 					-- Cloth
@@ -1653,7 +1653,7 @@ root(ROOTS.Unsorted, {
 				q(74898),	--
 			}),
 		})),
-		tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 10.0.2" } }, {
+		tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
 			n(SETS, {
 				i(203366),	-- Blue Winglord's Staff
 				i(203367),	-- Blue Winglord's Hauberk
@@ -1824,7 +1824,7 @@ root(ROOTS.Unsorted, {
 				q(74416),	--
 			}),
 		})),
-		tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+		tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 			n(ARMOR, {
 				n(SETS, {
 					-- Evoker Set --

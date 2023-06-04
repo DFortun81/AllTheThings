@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1198, {	-- The Nokhud Offensive
 		["coord"] = { 60.9, 39.1, OHNAHRAN_PLAINS },
 		["maps"] = { 2093 },	-- The Nokhud Offensive

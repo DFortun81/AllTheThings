@@ -477,6 +477,22 @@ CLASS_HALL_MAPS = {
 	THE_WANDERING_ISLE,
 	TRUESHOT_LODGE,
 };
+CLASS_HALL_MISSION_TABLES = {
+	97379,	-- Death Knight
+	98613,	-- Demon Hunter
+	98000,	-- Druid
+	102669,	-- Hunter
+	98695,	-- Mage
+	99041,	-- Monk
+	93787,	-- Paladin
+	102589,	-- Priest
+	98093,	-- Rogue
+	99428,	-- Shaman
+	101979,	-- Warlock
+	97389,	-- Warrior
+	-- Other Scouting Tables
+	122719,	-- Deliverance Point, Broken Shore
+};
 
 -- Argus
 KROKUUN = 830;
@@ -1504,28 +1520,28 @@ REMOVED_9_2_7 = "removed 9.2.7.45114";					-- Shadowlands 9.2.7 Launch on August
 CREATED_10_0_0 = "created 10.0.0.46293";				-- Dragonflight 10.0.0/Pre-Patch Launch on October 25th, 2022
 ADDED_10_0_0 = "added 10.0.0.46293";					-- Dragonflight 10.0.0/Pre-Patch Launch on October 25th, 2022
 REMOVED_10_0_0 = "removed 10.0.0.46293";				-- Dragonflight 10.0.0/Pre-Patch Launch on October 25th, 2022
-ADDED_10_0_2 = "added 10.0.2.46658"						-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
-REMOVED_10_0_2 = "removed 10.0.2.46658"					-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
-TIMELINE_10_0_2 = {										-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
-	CREATED_10_0_0,
-	ADDED_10_0_2,
-};
+CREATED_10_0_2 = "created 10.0.2.46658";				-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
+ADDED_10_0_2 = "added 10.0.2.46658";					-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
+REMOVED_10_0_2 = "removed 10.0.2.46658";				-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
+CREATED_10_0_2_LAUNCH = "added 10.0.2.46801";			-- Dragonflight Launch on November 28th, 2022
 ADDED_10_0_2_LAUNCH = "added 10.0.2.46801";				-- Dragonflight Launch on November 28th, 2022
 REMOVED_10_0_2_LAUNCH = "removed 10.0.2.46801";			-- Dragonflight Launch on November 28th, 2022
-TIMELINE_10_0_2_LAUNCH = {								-- Dragonflight Launch on November 28th, 2022
-	CREATED_10_0_0,
-	ADDED_10_0_2_LAUNCH,
-};
+CREATED_10_0_5 = "created 10.0.5.47799";				-- Dragonflight 10.0.5 Launch on January 24th, 2023
 ADDED_10_0_5 = "added 10.0.5.47799";					-- Dragonflight 10.0.5 Launch on January 24th, 2023
 REMOVED_10_0_5 = "removed 10.0.5.47799";				-- Dragonflight 10.0.5 Launch on January 24th, 2023
+CREATED_10_0_7 = "created 10.0.7.48676";				-- Dragonflight 10.0.7 Launch on March 21st, 2023
 ADDED_10_0_7 = "added 10.0.7.48676";					-- Dragonflight 10.0.7 Launch on March 21st, 2023
 REMOVED_10_0_7 = "removed 10.0.7.48676";				-- Dragonflight 10.0.7 Launch on March 21st, 2023
+CREATED_10_1_0 = "created 10.1.0.49407";				-- Dragonflight 10.1.0 Launch on May 2nd, 2023
 ADDED_10_1_0 = "added 10.1.0.49407";					-- Dragonflight 10.1.0 Launch on May 2nd, 2023
 REMOVED_10_1_0 = "removed 10.1.0.49407";				-- Dragonflight 10.1.0 Launch on May 2nd, 2023
+CREATED_10_1_5 = "created 10.1.5";						-- Dragonflight 10.1.5 Launch on
 ADDED_10_1_5 = "added 10.1.5";							-- Dragonflight 10.1.5 Launch on
 REMOVED_10_1_5 = "removed 10.1.5";						-- Dragonflight 10.1.5 Launch on
+CREATED_10_1_7 = "created 10.1.7";						-- Dragonflight 10.1.7 Launch on
 ADDED_10_1_7 = "added 10.1.7";							-- Dragonflight 10.1.7 Launch on
 REMOVED_10_1_7 = "removed 10.1.7";						-- Dragonflight 10.1.7 Launch on
+CREATED_10_2_0 = "created 10.2.0";						-- Dragonflight 10.2.0 Launch on
 ADDED_10_2_0 = "added 10.2.0";							-- Dragonflight 10.2.0 Launch on
 REMOVED_10_2_0 = "removed 10.2.0";						-- Dragonflight 10.2.0 Launch on
 

@@ -12,6 +12,80 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 		ach(12104, {	-- And We're All Out of Mana Buns
 			title(367),	-- Demonslayer <Name>
 		}),
+		petbattle(ach(12088, {	-- Anomalous Animals of Argus
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
+		})),
 		ach(12078, {	-- Commander of Argus
 			i(152396, {	-- Arsenal: Weapons of the Lightforged
 				i(152332),	-- Brilliant Daybreak Aegis
@@ -225,6 +299,746 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			["g"] = {
 				i(153040),	-- Felclaw Marsuul (PET!)
 			},
+		})),
+		petbattle(ach(12089, {	-- Aquatic Assault
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
+		})),
+		petbattle(ach(12091, {	-- Beast Blitz
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
+		})),
+		petbattle(ach(12092, {	-- Critical Critters
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
+		})),
+		petbattle(ach(12093, {	-- Draconic Destruction
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
+		})),
+		petbattle(ach(12094, {	-- Elemental Escalation
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
+		})),
+		petbattle(ach(12095, {	-- Fierce Fliers
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
+		})),
+		petbattle(ach(12096, {	-- Humanoid Havoc
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
+		})),
+		petbattle(ach(12097, {	-- Magical Mayhem
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
+		})),
+		petbattle(ach(12098, {	-- Mechanical Melee
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
+		})),
+		petbattle(ach(12099, {	-- Unstoppable Undead
+			crit(1, {	-- Ruinhoof
+				["crs"] = { 128007 },
+				["coord"] = { 66.7, 72.6, KROKUUN },
+			}),
+			crit(2, {	-- Foulclaw
+				["crs"] = { 128008 },
+				["coord"] = { 51.5, 63.8, KROKUUN },
+			}),
+			crit(3, {	-- Baneglow
+				["crs"] = { 128009 },
+				["coord"] = { 43.0, 52.0, KROKUUN },
+			}),
+			crit(4, {	-- Retch
+				["crs"] = { 128010 },
+				["coord"] = { 58.3, 29.7, KROKUUN },
+			}),
+			crit(5, {	-- Deathscreech
+				["crs"] = { 128011 },
+				["coord"] = { 29.6, 57.9, KROKUUN },
+			}),
+			crit(6, {	-- Gnasher
+				["crs"] = { 128012 },
+				["coord"] = { 39.6, 66.5, KROKUUN },
+			}),
+			crit(7, {	-- Bucky
+				["crs"] = { 128013 },
+				["coord"] = { 67.6, 43.9, EREDATH },
+			}),
+			crit(8, {	-- Snozz
+				["crs"] = { 128014 },
+				["coord"] = { 69.7, 51.9, EREDATH },
+			}),
+			crit(9, {	-- Gloamwing
+				["crs"] = { 128015 },
+				["coord"] = { 60.0, 71.1, EREDATH },
+			}),
+			crit(10, {	-- Shadeflicker
+				["crs"] = { 128016 },
+				["coord"] = { 36.0, 54.1, EREDATH },
+			}),
+			crit(11, {	-- Corrupted Blood of Argus
+				["crs"] = { 128017 },
+				["coord"] = { 31.9, 31.2, EREDATH },
+			}),
+			crit(12, {	-- Mar'cuus
+				["crs"] = { 128018 },
+				["coord"] = { 74.7, 36.2, EREDATH },
+			}),
+			crit(13, {	-- Watcher
+				["crs"] = { 128019 },
+				["coord"] = { 51.6, 41.4, ANTORAN_WASTES },
+			}),
+			crit(14, {	-- Bloat
+				["crs"] = { 128020 },
+				["coord"] = { 56.6, 54.2, ANTORAN_WASTES },
+			}),
+			crit(15, {	-- Earseeker
+				["crs"] = { 128021 },
+				["coord"] = { 56.1, 28.7, ANTORAN_WASTES },
+			}),
+			crit(16, {	-- Pilfer
+				["crs"] = { 128022 },
+				["coord"] = { 64.1, 66.0, ANTORAN_WASTES },
+			}),
+			crit(17, {	-- Minixis
+				["crs"] = { 128023 },
+				["coord"] = { 76.7, 73.9, ANTORAN_WASTES },
+			}),
+			crit(18, {	-- One-of-Many
+				["crs"] = { 128024 },
+				["coord"] = { 59.8, 40.3, ANTORAN_WASTES },
+			}),
 		})),
 		ach(12084),	-- Infused and Abused
 		ach(12073, {	-- Locked and Loaded

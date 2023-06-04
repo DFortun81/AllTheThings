@@ -1,7 +1,7 @@
 -------------------------------------------
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
-root(ROOTS.Secrets, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Secrets, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Spell, 376873, {	-- Otto
 		["description"] = "***Debugg Mode enabled is required to see all the steps. Fishing is required for this Secret!***\n\nYou need to buy an Immaculate Bag of Swog Treasures to get the Aquatic Shades, which costs 1 Gold Coin of the Isles. If you're unlucky, this means fishing up a total of 75 Copper Coins of the Isles to trade up!",
 		["modelScale"] = .8,

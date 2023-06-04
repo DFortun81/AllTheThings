@@ -74,6 +74,4 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		}),
 		ach(5794),		-- Time Flies When You're Having Fun
 	}),
-	achcat(ACHIEVEMENT_CATEGORY_CLASSIC_REP),
-	achcat(ACHIEVEMENT_CATEGORY_THE_BURNING_CRUSADE_REP),
 }));

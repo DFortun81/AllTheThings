@@ -1863,7 +1863,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
-			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 				-- Green Dragon Set
 
 				-- Verdant Wing [Cloth]
@@ -1907,7 +1907,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(201082),	-- Dreamfire Wristguards
 			})),
 			-- 10.0.2
-			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 10.0.2" } }, {
+			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
 				header(HEADERS.LFGDungeon, 2390, {	-- Vault of the Incarnates
 					d(LFR_RAID, bubbleDown({ ["bonusID"] = 451 }, {
 						cl(DEATHKNIGHT, {

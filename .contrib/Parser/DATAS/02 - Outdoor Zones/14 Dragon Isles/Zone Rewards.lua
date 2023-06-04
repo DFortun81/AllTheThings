@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ZONE_DROPS, {	-- Drops available from pretty much anywhere in Dragon Isles
 		["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 		["g"] = {
@@ -15,7 +15,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 		}),
 		i(191784),	-- Dragon Shard of Knowledge
 		i(198058),	-- Titan Training Matrix III
-
 		i(205423, {	-- Shadowflame Residue Sack
 			["timeline"] = { ADDED_10_1_0 },
 		}),

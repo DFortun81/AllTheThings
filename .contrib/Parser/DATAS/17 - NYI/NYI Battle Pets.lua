@@ -828,7 +828,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
-			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
+			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 				-- Trainer Pets --
 				pet(3393),	-- Anubisath Idol (PET!)
 				pet(3401),	-- Arcantus (PET!)
@@ -922,13 +922,13 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 10.0.2
-			tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 10.0.2" } }, {
+			tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 				-- Without SpeciesID Attached
 				i(190583),	-- Ichabod (PET!) [Item Never Available]
 			})),
 
 			-- 10.0.5
-			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 10.0.5" } }, {
+			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 				-- Only SpeciesID
 				pet(3255, {	-- Buttercup (PET!)
 					["modelID"] = 105497,
@@ -949,7 +949,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 10.0.7
-			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { "created 10.0.7" } }, {
+			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 				-- Trainer Pets --
 				pet(3453),	-- Adinakon (PET!)
 				pet(3457),	-- Arctichnid (PET!)
@@ -1003,7 +1003,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 10.1.0
-			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 10.1.0" } }, {
+			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				-- Trainer Pets --
 				pet(3560),	-- Bassalt (PET!)
 				pet(3566),	-- Beeks (PET!)

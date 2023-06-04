@@ -9,7 +9,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			n(CRAFTABLES, {
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						i(193232),	-- Deathchill Hide+
 						i(193233),	-- Deathchill Hide++
 						i(193234),	-- Deathchill Hide+++
@@ -22,7 +22,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			filter(RECIPES, {
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						r(382587),	-- Opening
 					})),
 				}),

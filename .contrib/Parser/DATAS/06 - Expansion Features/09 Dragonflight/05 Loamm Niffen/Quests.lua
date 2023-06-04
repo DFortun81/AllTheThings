@@ -68,9 +68,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["minReputation"] = { 2564, 4 },	-- Loamm Niffen Renown 4
 				["provider"] = { "n", 205127 },	-- Newsy
 				["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
-				["g"] = {
-					i(204195),	-- Drake's Shadowflame Crest
-				},
+				["_drop"] = { "g" },	-- Drop Crest
 			}),
 				-- RENOWN 5 --
 			q(75723, {	-- Cavern Drakewatching
@@ -200,7 +198,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(LOAMM_NIFFEN, {
 		q(76208),	-- Triggered at Renown 3
-		q(76209),	-- Triggered at Renown 3 
+		q(76209),	-- Triggered at Renown 3
 		q(76020),	-- Triggered at Renown 5
 		q(76019),	-- Triggered at Renown 13
 		q(69190),   -- Triggered at Renown 19

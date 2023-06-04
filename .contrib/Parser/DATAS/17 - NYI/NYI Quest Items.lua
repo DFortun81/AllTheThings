@@ -134,7 +134,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
-			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 				i(194445),	-- [DNT] Ceremonial Necklace
 				i(191633),	-- A Shard of Crystallized Mana
 				i(191023),	-- Mudcaked Necklace

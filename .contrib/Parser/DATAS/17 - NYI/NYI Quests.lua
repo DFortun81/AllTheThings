@@ -7421,7 +7421,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
-			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
+			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 				q(70045),	-- Truths and Revelations [H]
 				q(70044),	-- Truths and Revelations [A]
 				q(70053),	-- Lessons From Our Past [A]
@@ -7429,17 +7429,17 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 10.0.5
-			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 10.0.5" } }, {
+			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 				q(73192, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
 			})),
 
 			-- 10.0.7
-			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { "created 10.0.7" } }, {
+			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 				q(74955, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
 			})),
 
 			-- 10.1.0
-			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 10.1.0" } }, {
+			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				q(75528),	-- A Tester's Guide to Entering Zaralek
 			})),
 		}),

@@ -270,7 +270,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						i(191261),	-- Draconium Repair Hammer
 						i(191884),	-- Draconium Repair Hammer
 						i(191885),	-- Draconium Repair Hammer
@@ -279,7 +279,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					})),
 
 					-- 10.1.0
-					tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
+					tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 						i(205040),	-- Shadowed Belt Buckle
 						i(205041),	-- Shadowed Belt Buckle
 						i(205042),	-- Shadowed Belt Buckle
@@ -629,7 +629,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						r(371396),	-- Draconium Repair Hammer
 						r(382579),	-- Opening
 						r(376698),	-- Wisp of Tyr

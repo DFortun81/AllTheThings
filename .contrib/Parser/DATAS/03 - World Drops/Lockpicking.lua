@@ -259,7 +259,7 @@ root(ROOTS.WorldDrops, {
 				i(3395),	-- Recipe: Limited Invulnerability Potion
 			}),
 			i(190954, {	-- Serevite Lockbox
-				["timeline"] = TIMELINE_10_0_2_LAUNCH,
+				["timeline"] = { ADDED_10_0_2_LAUNCH },
 				["sym"] = {{"select","itemID",
 					-- add notable Item IDs here
 					-- 12345,	-- Item name

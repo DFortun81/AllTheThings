@@ -486,7 +486,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
 				ach(14529),	-- <Hidden> Shadowlands Alt - Trigger Alt Progression
 				ach(14300),	-- Ardenweald Achieved \\ [PH] Ardenweald Zone Achievement
-				ach(14299),	-- Bastion Bested \\ [PH] Bastion Zone Achievement			
+				ach(14299),	-- Bastion Bested \\ [PH] Bastion Zone Achievement
 				ach(14520),	-- Deathbringer
 				ach(14517),	-- First Trial, First Try
 				ach(14234),	-- Kyrian Campaign
@@ -581,14 +581,14 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
-			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
+			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 				ach(15517),	-- Solo Shuffle rounds participated in
 				ach(15516),	-- Solo Shuffle rounds won
 				ach(15798),	-- Winding Slitherdrake
 			})),
 
 			-- 10.0.2
-			tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 10.0.2" } }, {
+			tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 				ach(16731),	-- Court is Now in Session
 				ach(16794),	-- Dragon Isles Crafting Order Apprentice
 				ach(16795),	-- Dragon Isles Crafting Order Journeyman
@@ -596,7 +596,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 10.0.5
-			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 10.0.5" } }, {
+			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 				ach(17316),	-- Dragon Isles Crafting Order Apprentice
 				ach(17317),	-- Dragon Isles Crafting Order Journeyman
 				ach(17318),	-- Dragon Isles Crafting Order Master

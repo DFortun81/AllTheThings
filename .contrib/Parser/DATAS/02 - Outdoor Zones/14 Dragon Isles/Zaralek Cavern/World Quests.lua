@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75343, {	-- All That Glitter
 						["coord"] = { 58.1, 73.5, ZARALEK_CAVERN },
 						["g"] = {
-							i(205688, {	-- Glutinous Glitterscale Glob
+							i(205688, {	-- Glutinous Glitterscale Glob (TOY!)
 								["description"] = "Gets sometimes rewarded as bonus loot upon completing the Quest.",
 							}),
 						},

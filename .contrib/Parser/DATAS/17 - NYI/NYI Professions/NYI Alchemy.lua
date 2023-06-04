@@ -9,7 +9,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			n(CRAFTABLES, {
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						i(202116),	-- Alacritous Alchemist Stone
 						i(191535),	-- Alchemical Flavor Pocket+
 						i(191536),	-- Alchemical Flavor Pocket++
@@ -26,7 +26,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			filter(RECIPES, {
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						r(371635),	-- Demonstration Item Recipe
 						r(370771),	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
 						r(382571),	-- Opening

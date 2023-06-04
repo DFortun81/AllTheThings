@@ -389,9 +389,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 					["provider"] = { "n", 200051 },	-- Field Commander Ignax
 					["coord"] = { 46.7, 29.6, ZARALEK_CAVERN },
-					["g"] = {
-						i(204193),	-- Whelpling's Shadowflame Crest
-					},
+					["_drop"] = { "g" },	-- Drop Crest
 				}),
 				q(74557, {	-- Investigating the Unknown
 					["sourceQuests"] = { 74542 },	-- Air Superiority
@@ -463,9 +461,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72925 },	-- With Our Powers Combined
 					["provider"] = { "n", 199973 },	-- Sabellian
 					["coord"] = { 47.1, 27.1, ZARALEK_CAVERN },
-					["g"] = {
-						i(204193),	-- Whelpling's Shadowflame Crest
-					},
+					["_drop"] = { "g" },	-- Drop Crest
 				}),
 				q(72927, {	-- Finding Sarkareth
 					["sourceQuests"] = {
@@ -485,8 +481,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72929 },	-- Cracking His Shell
 					["provider"] = { "n", 199964 },	-- Scalecommander Emberthal
 					["coord"] = { 47.4, 15.6, ZARALEK_CAVERN },
+					["_drop"] = { "g" },	-- Drop Crest
 					["g"] = {
-						i(204195),	-- Drake's Shadowflame Crest
 						i(205998),	-- Sign of Respect
 					},
 				}),
@@ -527,9 +523,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75506 },	-- Shadowflame Crests
 				["provider"] = { "n", 203404 },	-- Vaskarn
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["_drop"] = { "g" },	-- Drop Crest
 				["g"] = {
 					i(202171),	-- Obsidian Flightstone
-					i(204075),	-- Whelpling's Shadowflame Crest Fragment
 				},
 			}),
 				--

@@ -4,7 +4,7 @@
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(RARES, {
 		n(-1143, {	-- DF Rare Rotation
 			["description"] = "Every 30 minutes 1 rare will spawn, based on a fixed 14h rotation, and they will be marked with a skull on the map if you are in the respective zone.\n\nRotation: |cFFFFFFFF1. |rPhleep |cFFFFFFFF2. |rMagmaton |cFFFFFFFF3. |rGruffy |cFFFFFFFF4. |rRonsak |cFFFFFFFF5. |rRiverwalker Tamopo |cFFFFFFFF6. |rAmethyzar |cFFFFFFFF7. |rEldoren the Reborn\n\n|cFFFFFFFF8. |rPenumbrus |cFFFFFFFF9. |rSkag the Thrower |cFFFFFFFF10. |rMikrin |cFFFFFFFF11. |rRokmur |cFFFFFFFF12. |rSmogswog |cFFFFFFFF13. |rMatriarch Remalla |cFFFFFFFF14. |rO'nank Shorescour\n\n|cFFFFFFFF15. |rResearcher Sneakwing |cFFFFFFFF16. |rTreasure-Mad Trambladd |cFFFFFFFF17. |rHarkyn Grymstone |cFFFFFFFF18. |rFulgurb |cFFFFFFFF19. |rSandana the Tempest |cFFFFFFFF20. |rGorjo the Crab Shackler |cFFFFFFFF21. |rSteamgill\n\n|cFFFFFFFF22. |rTempestrian |cFFFFFFFF23. |rMassive Magmashell |cFFFFFFFF24. |rGrumbletrunk |cFFFFFFFF25. |rOshigol |cFFFFFFFF26. |rBroodweaver Araznae |cFFFFFFFF27. |rAzra's Prized Peony |cFFFFFFFF28. |rMalsegan\n\nExample: Phleep spawned at 8am. Rokmur would spawn at 1pm. Phleep's next spawn would be at 10pm.",
@@ -15,7 +15,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				n(193170, {	-- Fulgurb
 					["coord"] = { 74.4, 47.6, OHNAHRAN_PLAINS },
 					["questID"] = 73994,
-					["isDaily"] = true,
 					["g"] = {
 						bo(69856, true),
 						i(200433),	-- Footwraps of Subjugation
@@ -149,7 +148,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				n(193269, {	-- Grumbletrunk
 					["coord"] = { 19.3, 43.1, THE_AZURE_SPAN },
 					["questID"] = 74002,
-					["isDaily"] = true,
 					["g"] = {
 						bo(69892, true),
 						i(200206),	-- Behemoth Slayer Greatbow

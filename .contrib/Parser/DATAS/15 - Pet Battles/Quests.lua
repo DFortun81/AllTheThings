@@ -1,6 +1,6 @@
----------------------------------------------------
---          Z O N E S        M O D U L E         --
----------------------------------------------------
+----------------------------------------------
+--   P E T    B A T T L E    M O D U L E    --
+----------------------------------------------
 -- Various simplified rewards
 local SACK_OF_PET_SUPPLIES =
 i(89125, {	-- Sack of Pet Supplies
@@ -833,9 +833,8 @@ root(ROOTS.PetBattles, petbattle({
 	}),
 	-- Dragonflight
 	n(QUESTS, bubbleDown({
-		["timeline"] = TIMELINE_10_0_2_LAUNCH,
+		["timeline"] = { ADDED_10_0_2_LAUNCH },
 	},{
-		-- PET QUESTS?!
 		q(70647, {	-- Oh Where, Oh Where Can He Be?
 			["description"] = "Account-Wide Quest.",
 			["sourceQuests"] = { 66244 },	-- To Valdrakken

@@ -9,7 +9,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			n(CRAFTABLES, {
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						i(198836),	-- Arclight Vital Correctors
 						i(198250),	-- Convincingly Realistic Jumper Cables+
 						i(198251),	-- Convincingly Realistic Jumper Cables++
@@ -39,7 +39,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			filter(RECIPES, {
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						r(384311),	-- Bronze Fireflight
 						r(382581),	-- Opening
 						r(382352),	-- Perfectly Calibrated Lenses

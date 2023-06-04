@@ -690,7 +690,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
-			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 				fp(2693, {["description"] = "Seamless Proto, Revendreth"}),
 				fp(2694, {["description"] = "Seamless Proto, Boralus"}),
 				fp(2717, {["description"] = "Quest Path 8628: 10.0 - Pre-Prod - Krav'rel to Azure Archives - (STM)"}),
@@ -722,7 +722,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 10.0.7
-			tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
+			tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 				fp(2856, {["description"] = "Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up - EJC"}),
 				fp(2857, {["description"] = "Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC"}),
 			})),

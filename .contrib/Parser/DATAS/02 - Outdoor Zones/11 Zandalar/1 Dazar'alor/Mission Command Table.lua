@@ -142,6 +142,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				mission(1878, {	-- The Shadow War
 					i(160983),	-- Recruitment Orders
 				}),
+				pvp(battlepet(mission(2122, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- A Shady Character
+					["provider"] = { "i", 166242 },	-- A Shady Message [H]
+					["g"] = {
+						q(54447),	-- A Shady Character
+					},
+				})))),
 			},
 		})),
 	}),

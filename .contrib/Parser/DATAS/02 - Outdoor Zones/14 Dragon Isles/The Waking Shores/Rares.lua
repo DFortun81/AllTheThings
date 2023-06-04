@@ -5,7 +5,7 @@ local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 		--	n(193132),	-- Amethyzar the Glittering // under DF/Timed Based Rare
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		q(74000),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
 		q(74033),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)

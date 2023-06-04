@@ -3,7 +3,7 @@
 ---------------------------------------------------
 
 local PARACAUSAL_FLAKES = 2594;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(TIME_RIFTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 			["maps"] = {

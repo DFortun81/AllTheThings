@@ -6,6 +6,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 		["icon"] = 4661645,
 		["lore"] = "Valdrakken is a major settlement on the Dragon Isles. The city is the culmination of all the dragons' efforts and provides several vignettes to enjoy from the blue dragonflight's public library to the red and green dragonflights own separate gardens.",
 		["isRaid"] = true,
-		["timeline"] = TIMELINE_10_0_2_LAUNCH,
+		["timeline"] = { ADDED_10_0_2_LAUNCH },
 	}),
 }));

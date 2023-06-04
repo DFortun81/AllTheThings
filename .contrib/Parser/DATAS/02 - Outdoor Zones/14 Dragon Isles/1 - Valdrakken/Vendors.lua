@@ -3,7 +3,7 @@
 ---------------------------------------------------
 local ARTISANS_METTLE = 190456;
 local ASPECTS_TOKEN_OF_MERIT = 201836;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(VENDORS, {
 			n(198587, {	-- Andoris <Enchanting Supplies>

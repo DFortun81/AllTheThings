@@ -224,7 +224,7 @@ local RARE_GROUP_TEMPEST = {
 	193258,	-- Tempestrian <Stormbringer>
 	201562,	-- Shardwing
 };
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(RARES, {
 		n(COMMON_BOSS_DROPS, {
 			["description"] = "These items can drop from any Lv70 Elite Rare or named Elite from any The Hunt Stage.",

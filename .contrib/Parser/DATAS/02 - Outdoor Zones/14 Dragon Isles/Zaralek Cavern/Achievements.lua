@@ -235,16 +235,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
-					17881,	-- Aquatic Battler of zaralek Cavern
-					17882,	-- Beast Battler of zaralek Cavern
-					17883,	-- Critter Battler of zaralek Cavern
-					17890,	-- Dragonkin Battler of zaralek Cavern
-					17904,	-- Elemental Battler of zaralek Cavern
-					17905,	-- Flying Battler of zaralek Cavern
-					17915,	-- Humanoid Battler of zaralek Cavern
-					17916,	-- Magic Battler of zaralek Cavern
-					17917,	-- Mechanical Battler of zaralek Cavern
-					17918,	-- Undead Battler of zaralek Cavern
+					17881,	-- Aquatic Battler of Zaralek Cavern
+					17882,	-- Beast Battler of Zaralek Cavern
+					17883,	-- Critter Battler of Zaralek Cavern
+					17890,	-- Dragonkin Battler of Zaralek Cavern
+					17904,	-- Elemental Battler of Zaralek Cavern
+					17905,	-- Flying Battler of Zaralek Cavern
+					17915,	-- Humanoid Battler of Zaralek Cavern
+					17916,	-- Magic Battler of Zaralek Cavern
+					17917,	-- Mechanical Battler of Zaralek Cavern
+					17918,	-- Undead Battler of Zaralek Cavern
 				}},
 				["g"] = {
 					i(193377),	-- Gerald (PET!)
@@ -261,11 +261,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
 				crit(4, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17882, {	-- Beast Battler of Zaralek Cavern
@@ -279,11 +279,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
 				crit(4, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17883, {	-- Critter Battler of Zaralek Cavern
@@ -297,11 +297,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
 				crit(4, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17890, {	-- Dragonkin Battler of Zaralek Cavern
@@ -315,11 +315,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
 				crit(4, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17904, {	-- Elemental Battler of Zaralek Cavern
@@ -333,11 +333,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
 				crit(4, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17905, {	-- Flying Battler of Zaralek Cavern
@@ -351,11 +351,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
 				crit(4, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17915, {	-- Humanoid Battler of Zaralek Cavern
@@ -369,11 +369,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
 				crit(4, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17916, {	-- Magic Battler of Zaralek Cavern
@@ -387,11 +387,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
 				crit(4, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17917, {	-- Mechanical Battler of Zaralek Cavern
@@ -405,11 +405,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
 				crit(4, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17918, {	-- Undead Battler of Zaralek Caverm
@@ -423,11 +423,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
 				crit(4, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			ach(17785, {	-- Que Zara(lek), Zara(lek)
@@ -443,9 +443,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- TODO: 17773,	--
 				}},
 			}),
-			ach(17978),		-- Stones Can Fly!
-			ach(17977),		-- Stones Can Try To Fly!
-			ach(17830),		-- Stones Can't Fly!
 			ach(17781),		-- The Smell of Money
 			ach(18361, {	-- To All the Squirrels Burrowed Beneath
 				crit(1, {	-- Hissing Dustmoth
@@ -536,15 +533,33 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}},
 			}),
 			petbattle(ach(17879, {	-- Zaralek Cavern Safari
-				crit(1),	-- Puddlehopper
-				crit(2),	-- Rock Martin
-				crit(3),	-- Yellabon
-				crit(4),	-- Endmite
-				crit(5),	-- Stonewhisker
-				crit(6),	-- Cobbleshell
-				crit(7),	-- Boulderfang
-				crit(8),	-- Slabwing
-				crit(9),	-- Hollow Moth
+				crit(1, {	-- Puddlehopper
+					["crs"] = { 203287 },
+				}),
+				crit(2, {	-- Rock Martin
+					["crs"] = { 203288 },
+				}),
+				crit(3, {	-- Yellabon
+					["crs"] = { 203289 },
+				}),
+				crit(4, {	-- Endmite
+					["crs"] = { 203292 },
+				}),
+				crit(5, {	-- Stonewhisker
+					["crs"] = { 203308 },
+				}),
+				crit(6, {	-- Cobbleshell
+					["crs"] = { 203310 },
+				}),
+				crit(7, {	-- Boulderfang
+					["crs"] = { 203311 },
+				}),
+				crit(8, {	-- Slabwing
+					["crs"] = { 203312 },
+				}),
+				crit(9, {	-- Hollow Moth
+					["crs"] = { 203313 },
+				}),
 			})),
 		}),
 	}),

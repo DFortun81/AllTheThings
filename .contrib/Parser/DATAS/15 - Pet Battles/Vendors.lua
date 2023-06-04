@@ -1,9 +1,10 @@
 ----------------------------------------------
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
-
-root(ROOTS.PetBattles, {
-	n(VENDORS, sharedData({ ["description"] = "You may only learn the pet offered once per character from this Battle Pet Trainer.|r" }, {
+root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+	n(VENDORS, sharedData({
+		["description"] = "You may only learn the pet offered once per character from this Battle Pet Trainer.|r"
+	}, {
 		n(63596, {  -- Audrey Burnhep
 			["coord"] = { 69.4, 24.4, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -173,4 +174,4 @@ root(ROOTS.PetBattles, {
 			},
 		}),
 	})),
-});
+}));

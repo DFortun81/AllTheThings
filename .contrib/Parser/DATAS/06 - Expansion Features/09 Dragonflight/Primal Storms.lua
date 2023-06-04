@@ -6,7 +6,7 @@ local function bo(questID, isWeekly)
 end
 
 local ELEMENTAL_OVERFLOW = 2118;
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(PRIMAL_STORMS, {
 		["maps"] = { VALDRAKKEN },
 		["g"] = {

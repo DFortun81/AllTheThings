@@ -65,6 +65,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				i(205084),	-- Zaralek Surveyor's Mantle
 				i(205081),	-- Zaralek Surveyor's Sabatons
 			}),
+			filter(TRINKET_F, {
+				i(204714),	-- Satchel of Healing Spores
+				i(204728),	-- Friendship Censer
+				i(204797),	-- Djaradin Boasting Tablets
+				i(204805),	-- Suspended Sulfuric Droplet
+				i(204810),	-- Drogbar Rocks
+				i(204811),	-- Drogbar Stones
+			}),
 			n(WEAPONS, {
 				i(205090),	-- Zaralek Surveyor's Barrier
 				i(205099),	-- Zaralek Surveyor's Blade

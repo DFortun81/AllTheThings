@@ -25,8 +25,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205002),	-- Blaise (PET!)
 					}),
 					n(DRAKEWATCHER_MANUSCRIPTS, {
-						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
-						i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
+						i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
+						i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
+						i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
+						i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
+						i(203299),	-- Winding Slitherdrake: Green and Bronze Armor (DM!)
 					}),
 					i(203710),	-- Everburning Key
 					i(206043),	-- Fyrakk's Frenzy (TOY!)
@@ -69,9 +72,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "i", 204071 },	-- Head of Kretchenwrath
 					-- ["maps"] = { OHNAHRAN_PLAINS },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
-					["g"] = {
-						i(204195),	-- Drake's Shadowflame Crest
-					}
+					["_drop"] = { "g" },	-- Drop Crest
 				}),
 				q(75888, {	-- Suffusion Camp
 					["provider"] = { "n", 201648 },	-- Somnikus
@@ -94,9 +95,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "i", 204683 },	-- Head of Shadeisethal
 					-- ["maps"] = { THE_AZURE_SPAN },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
-					["g"] = {
-						i(204195),	-- Drake's Shadowflame Crest
-					}
+					["_drop"] = { "g" },	-- Drop Crest
 				}),
 				q(75383, {	-- Hideaway No More
 					["provider"] = { "n", 203604 },	-- Old Grimtusk
@@ -230,6 +229,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 						i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
 						i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
+						i(203299),	-- Winding Slitherdrake: Green and Bronze Armor (DM!)
 						-- Objects
 						o(398815, {	-- Secured Shipment
 							["coord"] = { 73.8, 72.5, OHNAHRAN_PLAINS },
@@ -281,7 +281,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(FYRAKK_ASSAULTS, {
 		q(75448),	-- Ward of Ingira Elite
 		q(75447),	-- Ward of Fyrakk Elite / Forgemaster 1st kill
-		--q(75887),	-- Fyrakk Activated?
 		q(75157),	-- Completes alongside 75888
 	}),
 }));

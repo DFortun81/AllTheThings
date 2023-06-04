@@ -30,7 +30,7 @@ local MINING_KNOWLEDGE = 2035;
 local SKINNING_KNOWLEDGE = 2033;
 local TAILORING_KNOWLEDGE = 2026;
 
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(PROFESSIONS, {
 		n(ACHIEVEMENTS, {
 			ach(16683, {	-- In Tyr's Footsteps

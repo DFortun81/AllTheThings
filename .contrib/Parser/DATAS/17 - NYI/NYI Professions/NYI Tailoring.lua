@@ -9,14 +9,14 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			n(CRAFTABLES, {
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						i(193531),	-- Blue Dragon Rider's Robe
 						i(193535),	-- Bronze Dragon Rider's Wraps
 						i(194051),	-- Wildercloth Weapon Upholstery
 					})),
 
 					-- 10.1.0
-					tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
+					tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 						i(205034),	-- Enormous Ball of Yarn (TOY!)
 						i(205027),	-- Explorer's Banner (TOY!)
 						i(205028),	-- Explorer's Banner of Comradery++
@@ -30,7 +30,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			filter(RECIPES, {
 				tier(DF_TIER, {
 					-- 10.0.0
-					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 						r(382588);	-- Opening
 						r(376697),	-- Pattern: Wisp of Tyr
 						-- With SpellID attached
@@ -42,7 +42,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					})),
 
 					-- 10.1.0
-					tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
+					tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 						r(408316),	-- Spore-Infused Combat Bandage
 						-- With SpellID attached
 						i(205141),	-- Pattern: Explorer's Banner (RECIPE!)

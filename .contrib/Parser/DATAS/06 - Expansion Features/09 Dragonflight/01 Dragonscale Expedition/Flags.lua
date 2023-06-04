@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(CARTOGRAPHERS_FLAG, {
 			n(ACHIEVEMENTS, {
@@ -37,7 +37,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			}),
 			n(TREASURES, {
-				-- Object IDs and quest IDs are put at random to each other. 
+				-- Object IDs and quest IDs are put at random to each other.
 				-- There seems to be no way of getting the correct object ID for the flags in game. (does not matter for ATT purpose)
 
 				-- The Waking Shores
@@ -75,7 +75,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 71207,
 					["coord"] = { 30.4, 36.4, OHNAHRAN_PLAINS },
 				}),
-				
+
 				o(382086, {	-- Dragonscale Expedition Flag
 					["questID"] = 71208,
 					["coord"] = { 86.3, 39.3, OHNAHRAN_PLAINS },

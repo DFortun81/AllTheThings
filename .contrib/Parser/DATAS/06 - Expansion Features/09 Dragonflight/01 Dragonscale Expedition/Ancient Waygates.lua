@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(ANCIENT_WAYGATES, {
 			n(ACHIEVEMENTS, {
@@ -332,7 +332,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(71183),	-- triggered together with 'Continued Waygate Exploration' (70702)
 		q(71185),	-- triggered together with 'Continued Waygate Exploration' (71146)

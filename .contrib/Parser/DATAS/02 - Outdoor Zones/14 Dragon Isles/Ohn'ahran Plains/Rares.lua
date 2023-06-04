@@ -4,7 +4,7 @@
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
 		n(RARES, sharedData({ ["isDaily"] = true },{
 			n(193168, {	-- Biryuk
