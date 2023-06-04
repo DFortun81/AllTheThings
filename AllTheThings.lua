@@ -3083,7 +3083,8 @@ local function FillSymLinks(group, recursive)
 	return group;
 end
 
-(function()
+-- Symlink Lib
+do
 local select, tremove, unpack =
 	  select, tremove, unpack;
 local FinalizeModID, PruneFinalized;
@@ -3374,11 +3375,12 @@ local ResolveFunctions = {
 			print("'",cmd,"' had empty value set")
 			return;
 		end
-		local s, invtype;
+		local s, invtype, itemID;
 		for k=#searchResults,1,-1 do
 			s = searchResults[k];
-			if s.itemID then
-				invtype = select(4, GetItemInfoInstant(s.itemID));
+			itemID = s.itemID;
+			if itemID then
+				invtype = select(4, GetItemInfoInstant(itemID));
 				local match;
 				for i=1,vals do
 					if invtype == select(i, ...) then
@@ -3958,6 +3960,71 @@ local SubroutineCache = {
 			push(finalized, searchResults, o, "push", "f", 50);	-- Miscellaneous Filter header
 		end
 	end,
+	["instance_tier"] = function(finalized, searchResults, o, cmd, instanceID, difficultyID, classID)
+		local select, pop, where, extract, invtype =
+			ResolveFunctions.select,
+			ResolveFunctions.pop,
+			ResolveFunctions.where,
+			ResolveFunctions.extract,
+			ResolveFunctions.invtype;
+
+		-- Select the Instance & pop out all results
+		select(finalized, searchResults, o, "select", "instanceID",instanceID);
+		pop(finalized, searchResults);
+
+		-- If there's a Difficulty, filter by Difficulty
+		if difficultyID then
+			where(finalized, searchResults, o, "where", "difficultyID", difficultyID);
+			pop(finalized, searchResults);
+		end
+
+		-- Extract the Items that have a Class restriction
+		extract(finalized, searchResults, o, "extract", "c");
+
+		local orig;
+		-- If there's a Class, filter by Class
+		if classID then
+			if #searchResults > 0 then
+				orig = RawCloneData(searchResults);
+			end
+			wipe(searchResults);
+			local c;
+			if orig then
+				for _,o in ipairs(orig) do
+					c = o.c;
+					if c and ContainsAnyValue(c, classID) then
+						tinsert(searchResults, o);
+					end
+				end
+			end
+		end
+
+		-- Pop out any actual Tier Tokens
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
+		end
+		wipe(searchResults);
+		for _,o in ipairs(orig) do
+			if o.f == -1 then
+				if o.g then
+					-- no filter Item with sub-groups
+					ArrayAppend(searchResults, o.g)
+				else
+					-- no filter Item without sub-groups, keep it directly in case it is a cost for the actual Tier pieces
+					tinsert(searchResults, o);
+				end
+			end
+		end
+
+		-- Exclude anything that isn't a Tier slot
+		invtype(finalized, searchResults, o, "invtype",
+			"INVTYPE_HEAD",
+			"INVTYPE_SHOULDER",
+			"INVTYPE_CHEST", "INVTYPE_ROBE",
+			"INVTYPE_LEGS",
+			"INVTYPE_HAND"
+		);
+	end,
 };
 -- Instruction to perform a specific subroutine using provided input values
 ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
@@ -4087,7 +4154,7 @@ end
 app.FillSymlinkAsync = function(o)
 	app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
 end
-end)();
+end	-- Symlink Lib
 
 local function BuildContainsInfo(item, entries, indent, layer)
 	if item and item.g then

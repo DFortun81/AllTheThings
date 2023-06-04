@@ -544,7 +544,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					e(2520, {	-- Scalecommander Sarkareth
 						["crs"] = { 203284 },	-- Scalecommander Sarkareth
 						["g"] = {
-							i(206046),	-- Void-Touched Curio
+							i(206046, {	-- Void-Touched Curio
+								["sym"] = {{"sub","instance_tier",1208,LFR_RAID}}
+							}),
 							i(203963),	-- Beacon to the Beyond
 							i(204390),	-- Bonds of Desperate Ascension
 							i(202585),	-- Coattails of the Rightful Heir
@@ -827,7 +829,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 					["g"] = {
 						ach(17877),	-- We'll Never See That Again, Surely
-						i(206046),	-- Void-Touched Curio
+						i(206046, {	-- Void-Touched Curio
+							["sym"] = {{"sub","instance_tier",1208,NORMAL_RAID}}
+						}),
 						i(203963),	-- Beacon to the Beyond
 						i(204390),	-- Bonds of Desperate Ascension
 						i(202585),	-- Coattails of the Rightful Heir
@@ -1101,7 +1105,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 					["g"] = {
 						ach(18253, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Ahead of the Curve: Scalecommander Sarkareth
-						i(206046),	-- Void-Touched Curio
+						i(206046, {	-- Void-Touched Curio
+							["sym"] = {{"sub","instance_tier",1208,HEROIC_RAID}}
+						}),
 						i(203963),	-- Beacon to the Beyond
 						i(204390),	-- Bonds of Desperate Ascension
 						i(202585),	-- Coattails of the Rightful Heir
@@ -1389,7 +1395,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							title(506),	-- <Name>, Famed Slayer of Sarkareth
 						})),
 						ach(18254, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
-						i(206046),	-- Void-Touched Curio
+						i(206046, {	-- Void-Touched Curio
+							["sym"] = {{"sub","instance_tier",1208,MYTHIC_RAID}}
+						}),
 						i(203963),	-- Beacon to the Beyond
 						i(204390),	-- Bonds of Desperate Ascension
 						i(202585),	-- Coattails of the Rightful Heir

@@ -144,18 +144,18 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						e(741, {	-- Wind Lord Mel'jarak
 							["crs"] = { 62397 },	-- Wind Lord Mel'jarak
 							["g"] = {
-							i(89271, {	-- Gauntlets of the Shadowy Conqueror
-								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							}),
-							i(89272),	-- Gauntlets of the Shadowy Protector
-							i(89270),	-- Gauntlets of the Shadowy Vanquisher
-							i(86853),	-- Cloak of Raining Blades
-							i(86912),	-- Clutches of Dying Hope
-							i(86852),	-- Impaling Treads
-							i(86856),	-- Korven's Amber-Sealed Beetle
-							i(86851),	-- Painful Thorned Ring
-							i(86911),	-- Robes of Torn Nightmares
-							i(86855),	-- Wingslasher Pauldrons
+								i(89271, {	-- Gauntlets of the Shadowy Conqueror
+									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
+								}),
+								i(89272),	-- Gauntlets of the Shadowy Protector
+								i(89270),	-- Gauntlets of the Shadowy Vanquisher
+								i(86853),	-- Cloak of Raining Blades
+								i(86912),	-- Clutches of Dying Hope
+								i(86852),	-- Impaling Treads
+								i(86856),	-- Korven's Amber-Sealed Beetle
+								i(86851),	-- Painful Thorned Ring
+								i(86911),	-- Robes of Torn Nightmares
+								i(86855),	-- Wingslasher Pauldrons
 							},
 						}),
 						e(737, {	-- Amber-Shaper Un'sok
