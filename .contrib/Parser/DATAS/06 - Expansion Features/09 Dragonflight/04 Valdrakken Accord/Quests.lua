@@ -264,7 +264,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuest"] = 67081,	-- An Infusion of Materials
 				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192496 },	-- Keeper Tyr
-				["coord"] = { 60.4, 58.8, THALDRASZUS },
+				["coord"] = { 60.5, 58.6, THALDRASZUS },
 				["g"] = {
 					i(201781),	-- Memory of Tyr
 				},
@@ -273,7 +273,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuest"] = 67084,	-- The Silver Purpose
 				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 198941 },	-- Nozdormu
-				["coord"] = { 60.5, 58.6, THALDRASZUS },
+				["coord"] = { 60.4, 58.8, THALDRASZUS },
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			q(72441, {	-- Breaching the Tomb
