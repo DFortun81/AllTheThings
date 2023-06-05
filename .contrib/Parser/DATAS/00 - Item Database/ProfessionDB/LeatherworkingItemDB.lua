@@ -36,12 +36,17 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 end
 
 ------------------
+-- PATCH 1.11.1 --
+------------------
+-- ITEMS --
+i(17722, 21943);	-- Gloves of the Greatfather
+i(18239, 22711);	-- Shadowskin Gloves
+
+------------------
 -- PATCH 8.3.0 --
 ------------------
 -- TRAINER --
 i(0, 304412);	-- Uncanny Combatant's Leather Treads [Rank 1]
-i(0, 304413);	-- Uncanny Combatant's Leather Treads [Rank 2]
-i(0, 304414);	-- Uncanny Combatant's Leather Treads [Rank 3]
 -- ITEM --
 i(171122, 305801);	-- Eldritch Cragscale Boots
 i(171118, 305807);	-- Eldritch Cragscale Greaves
@@ -50,15 +55,57 @@ i(171124, 305799);	-- Eldritch Dredged Leather Leggings
 i(171123, 305802);	-- Maddening Cragscale Boots
 i(171128, 305806);	-- Maddening Cragscale Greaves
 i(171125, 305798);	-- Maddening Dredged Leather Leggings
+i(170412, 304413);	-- Uncanny Combatant's Leather Treads [Rank 2]
+i(170413, 304414);	-- Uncanny Combatant's Leather Treads [Rank 3]
 i(174368, 305803);	-- Unsettling Cragscale Boots
 i(174369, 305800);	-- Unsettling Cragscale Greaves
 i(174367, 305804);	-- Unsettling Dredged Leather Leggings
--- UNSURE --
 i(0, 307176);	-- Void Focus
 
 ------------------
 -- PATCH 9.0.1 --
 ------------------
+-- RELICS --
+i(0, 330180);	-- Relic of the Past I [CLASSIC]
+i(0, 330181);	-- Relic of the Past II [CLASSIC]
+i(0, 330183);	-- Relic of the Past III [CLASSIC]
+i(0, 330184);	-- Relic of the Past IV [CLASSIC]
+i(0, 330185);	-- Relic of the Past V [CLASSIC]
+i(0, 330186);	-- Relic of the Past I [The Burning Crusade]
+i(0, 330187);	-- Relic of the Past II [The Burning Crusade]
+i(0, 330188);	-- Relic of the Past III [The Burning Crusade]
+i(0, 330189);	-- Relic of the Past IV [The Burning Crusade]
+i(0, 330190);	-- Relic of the Past V [The Burning Crusade]
+i(0, 330191);	-- Relic of the Past I [Wrath of the Lich King]
+i(0, 330192);	-- Relic of the Past II [Wrath of the Lich King]
+i(0, 330193);	-- Relic of the Past III [Wrath of the Lich King]
+i(0, 330194);	-- Relic of the Past IV [Wrath of the Lich King]
+i(0, 330195);	-- Relic of the Past V [Wrath of the Lich King]
+i(0, 330196);	-- Relic of the Past I [Cataclysm]
+i(0, 330197);	-- Relic of the Past II [Cataclysm]
+i(0, 330198);	-- Relic of the Past III [Cataclysm]
+i(0, 330199);	-- Relic of the Past IV [Cataclysm]
+i(0, 330200);	-- Relic of the Past V [Cataclysm]
+i(0, 330201);	-- Relic of the Past I [Mists of Pandaria]
+i(0, 330202);	-- Relic of the Past II [Mists of Pandaria]
+i(0, 330203);	-- Relic of the Past III [Mists of Pandaria]
+i(0, 330204);	-- Relic of the Past IV [Mists of Pandaria]
+i(0, 330205);	-- Relic of the Past V [Mists of Pandaria]
+i(0, 330206);	-- Relic of the Past I [Warlords of Draenor]
+i(0, 330207);	-- Relic of the Past II [Warlords of Draenor]
+i(0, 330208);	-- Relic of the Past III [Warlords of Draenor]
+i(0, 330209);	-- Relic of the Past IV [Warlords of Draenor]
+i(0, 330210);	-- Relic of the Past V [Warlords of Draenor]
+i(0, 330211);	-- Relic of the Past I [Legion]
+i(0, 330212);	-- Relic of the Past II [Legion]
+i(0, 330213);	-- Relic of the Past III [Legion]
+i(0, 330214);	-- Relic of the Past IV [Legion]
+i(0, 330215);	-- Relic of the Past V [Legion]
+i(0, 330216);	-- Relic of the Past I [Battle for Azeroth]
+i(0, 330218);	-- Relic of the Past II [Battle for Azeroth]
+i(0, 330219);	-- Relic of the Past III [Battle for Azeroth]
+i(0, 330220);	-- Relic of the Past IV [Battle for Azeroth]
+i(0, 330221);	-- Relic of the Past V [Battle for Azeroth]
 -- TRAINER --
 i(0, 309190);	-- Bone Bound Knuckles
 i(0, 308896);	-- Callous Hide
@@ -78,69 +125,125 @@ i(0, 309179);	-- Desolate Leather Pauldrons
 i(0, 309174);	-- Desolate Leather Treads
 i(0, 309175);	-- Desolate Leather Vest
 i(0, 309180);	-- Desolate Leather Waistguard
+i(0, 309189);	-- Desolate Scale Armguards
 i(0, 309184);	-- Desolate Scale Gauntlets
 i(0, 309185);	-- Desolate Scale Helm
 i(0, 309187);	-- Desolate Scale Pauldrons
 i(0, 309182);	-- Desolate Scale Treads
 i(0, 309183);	-- Desolate Scale Vest
+i(0, 309188);	-- Desolate Scale Waistguard
 i(0, 309173);	-- Drums of Deathly Ferocity
 i(0, 308897);	-- Heavy Callous Hide
 i(0, 308899);	-- Heavy Desolate Leather
 i(0, 343660);	-- Novice Crafter's Mark
-i(0, 330196);	-- Relic of the Past I (Cataclysm)
-i(0, 330180);	-- Relic of the Past I (Classic)
-i(0, 330206);	-- Relic of the Past I (Draenor)
-i(0, 330216);	-- Relic of the Past I (Kul Tiran)
-i(0, 330211);	-- Relic of the Past I (Legion)
-i(0, 330191);	-- Relic of the Past I (Northrend)
-i(0, 330186);	-- Relic of the Past I (Outland)
-i(0, 330201);	-- Relic of the Past I (Pandaria)
-i(0, 330197);	-- Relic of the Past II (Cataclysm)
-i(0, 330181);	-- Relic of the Past II (Classic)
-i(0, 330207);	-- Relic of the Past II (Draenor)
-i(0, 330218);	-- Relic of the Past II (Kul Tiran)
-i(0, 330212);	-- Relic of the Past II (Legion)
-i(0, 330192);	-- Relic of the Past II (Northrend)
-i(0, 330187);	-- Relic of the Past II (Outland)
-i(0, 330202);	-- Relic of the Past II (Pandaria)
-i(0, 330198);	-- Relic of the Past III (Cataclysm)
-i(0, 330183);	-- Relic of the Past III (Classic)
-i(0, 330208);	-- Relic of the Past III (Draenor)
-i(0, 330219);	-- Relic of the Past III (Kul Tiran)
-i(0, 330213);	-- Relic of the Past III (Legion)
-i(0, 330193);	-- Relic of the Past III (Northrend)
-i(0, 330188);	-- Relic of the Past III (Outland)
-i(0, 330203);	-- Relic of the Past III (Pandaria)
-i(0, 330199);	-- Relic of the Past IV (Cataclysm)
-i(0, 330184);	-- Relic of the Past IV (Classic)
-i(0, 330209);	-- Relic of the Past IV (Draenor)
-i(0, 330220);	-- Relic of the Past IV (Kul Tiran)
-i(0, 330214);	-- Relic of the Past IV (Legion)
-i(0, 330194);	-- Relic of the Past IV (Northrend)
-i(0, 330189);	-- Relic of the Past IV (Outland)
-i(0, 330204);	-- Relic of the Past IV (Pandaria)
-i(0, 330200);	-- Relic of the Past V (Cataclysm)
-i(0, 330185);	-- Relic of the Past V (Classic)
-i(0, 330210);	-- Relic of the Past V (Draenor)
-i(0, 330221);	-- Relic of the Past V (Kul Tiran)
-i(0, 330215);	-- Relic of the Past V (Legion)
-i(0, 330195);	-- Relic of the Past V (Northrend)
-i(0, 330190);	-- Relic of the Past V (Outland)
-i(0, 330205);	-- Relic of the Past V (Pandaria)
+i(0, 309237);	-- Shadebound Armguards
+i(0, 309232);	-- Shadebound Gauntlets
+i(0, 309233);	-- Shadebound Helm
+i(0, 309234);	-- Shadebound Leggings
+i(0, 309235);	-- Shadebound Pauldrons
+i(0, 309230);	-- Shadebound Treads
+i(0, 309231);	-- Shadebound Vest
+i(0, 309236);	-- Shadebound Waistguard
 i(0, 309038);	-- Shadowlands Leatherworking
 i(0, 309245);	-- Shadowscale Armguards
+i(0, 309240);	-- Shadowscale Gauntlets
 i(0, 309241);	-- Shadowscale Helm
 i(0, 309242);	-- Shadowscale Leggings
 i(0, 309243);	-- Shadowscale Pauldrons
+i(0, 309238);	-- Shadowscale Treads
+i(0, 309239);	-- Shadowscale Vest
 i(0, 309244);	-- Shadowscale Waistguard
 -- ITEM --
 i(183870, 343193);	-- Crafter's Mark II
 i(183100, 324088);	-- Heavy Desolate Armor Kit
+-- LEGENDARY --
+i(0, 309205);	-- Umbrahide Armguards [Rank 1]
+i(0, 332021);	-- Umbrahide Armguards [Rank 2]
+i(0, 332056);	-- Umbrahide Armguards [Rank 3]
+i(0, 338986);	-- Umbrahide Armguards [Rank 4]
+i(0, 309200);	-- Umbrahide Gauntlets [Rank 1]
+i(0, 332016);	-- Umbrahide Gauntlets [Rank 2]
+i(0, 332051);	-- Umbrahide Gauntlets [Rank 3]
+i(0, 338981);	-- Umbrahide Gauntlets [Rank 4]
+i(0, 309201);	-- Umbrahide Helm [Rank 1]
+i(0, 332017);	-- Umbrahide Helm [Rank 2]
+i(0, 332052);	-- Umbrahide Helm [Rank 3]
+i(0, 338982);	-- Umbrahide Helm [Rank 4]
+i(0, 309202);	-- Umbrahide Leggings [Rank 1]
+i(0, 332018);	-- Umbrahide Leggings [Rank 2]
+i(0, 332053);	-- Umbrahide Leggings [Rank 3]
+i(0, 338983);	-- Umbrahide Leggings [Rank 4]
+i(0, 309203);	-- Umbrahide Pauldrons [Rank 1]
+i(0, 332019);	-- Umbrahide Pauldrons [Rank 2]
+i(0, 332054);	-- Umbrahide Pauldrons [Rank 3]
+i(0, 338984);	-- Umbrahide Pauldrons [Rank 4]
+i(0, 309198);	-- Umbrahide Treads [Rank 1]
+i(0, 332014);	-- Umbrahide Treads [Rank 2]
+i(0, 332049);	-- Umbrahide Treads [Rank 3]
+i(0, 338980);	-- Umbrahide Treads [Rank 4]
+i(0, 309199);	-- Umbrahide Vest [Rank 1]
+i(0, 332015);	-- Umbrahide Vest [Rank 2]
+i(0, 332050);	-- Umbrahide Vest [Rank 3]
+i(0, 338979);	-- Umbrahide Vest [Rank 4]
+i(0, 309204);	-- Umbrahide Waistguard [Rank 1]
+i(0, 332020);	-- Umbrahide Waistguard [Rank 2]
+i(0, 332055);	-- Umbrahide Waistguard [Rank 3]
+i(0, 338985);	-- Umbrahide Waistguard [Rank 4]
+i(0, 309213);	-- Boneshatter Armguards [Rank 1]
+i(0, 332029);	-- Boneshatter Armguards [Rank 2]
+i(0, 332064);	-- Boneshatter Armguards [Rank 3]
+i(0, 338994);	-- Boneshatter Armguards [Rank 4]
+i(0, 309208);	-- Boneshatter Gauntlets [Rank 1]
+i(0, 332024);	-- Boneshatter Gauntlets [Rank 2]
+i(0, 332059);	-- Boneshatter Gauntlets [Rank 3]
+i(0, 338989);	-- Boneshatter Gauntlets [Rank 4]
+i(0, 309210);	-- Boneshatter Greaves [Rank 1]
+i(0, 332026);	-- Boneshatter Greaves [Rank 2]
+i(0, 332061);	-- Boneshatter Greaves [Rank 3]
+i(0, 338991);	-- Boneshatter Greaves [Rank 4]
+i(0, 309209);	-- Boneshatter Helm [Rank 1]
+i(0, 332025);	-- Boneshatter Helm [Rank 2]
+i(0, 332060);	-- Boneshatter Helm [Rank 3]
+i(0, 338990);	-- Boneshatter Helm [Rank 4]
+i(0, 309211);	-- Boneshatter Pauldrons [Rank 1]
+i(0, 332027);	-- Boneshatter Pauldrons [Rank 2]
+i(0, 332062);	-- Boneshatter Pauldrons [Rank 3]
+i(0, 338992);	-- Boneshatter Pauldrons [Rank 4]
+i(0, 309206);	-- Boneshatter Treads [Rank 1]
+i(0, 332022);	-- Boneshatter Treads [Rank 2]
+i(0, 332057);	-- Boneshatter Treads [Rank 3]
+i(0, 338988);	-- Boneshatter Treads [Rank 4]
+i(0, 309207);	-- Boneshatter Vest [Rank 1]
+i(0, 332023);	-- Boneshatter Vest [Rank 2]
+i(0, 332058);	-- Boneshatter Vest [Rank 3]
+i(0, 338987);	-- Boneshatter Vest [Rank 4]
+i(0, 309212);	-- Boneshatter Waistguard [Rank 1]
+i(0, 332028);	-- Boneshatter Waistguard [Rank 2]
+i(0, 332063);	-- Boneshatter Waistguard [Rank 3]
+i(0, 338993);	-- Boneshatter Waistguard [Rank 4]
+-- QUEST --
+i(0, 338260);	-- Bonestudded Fist
+i(0, 338262);	-- Cleaned Hide
+i(0, 338263);	-- Courtly Leather Boots
+i(0, 338253);	-- Dyed Runestag Leather
+i(0, 338254);	-- Runestag Leather Strap
+i(0, 338265);	-- Softened Leather
+i(0, 338255);	-- Stalker's Leather Quiver
+i(0, 338258);	-- Steelhide Leather Belt
+i(0, 338257);	-- Steelhide Leather Harness
+i(0, 338259);	-- Steelhide Leather Strap
+i(0, 338264);	-- Tortured Sole
 -- UNSURE --
 i(0, 309196);	-- Heavy Composite Bow
 i(0, 309197);	-- Heavy Composite Crossbow
+i(182669, 309222);	-- Loosened Belt
 i(0, 309195);	-- Reinforced Desolate Leather Cestus
-
+-- NYI --
+i(0, 338261);	-- Almost Thing
+i(0, 309194);	-- Macabre Striker
+i(0, 309223);	-- Modified Crafting Reagent 02
+i(0, 309224);	-- Modified Crafting Reagent 03
+i(0, 309225);	-- Modified Crafting Reagent 04
 
 ------------------
 -- PATCH 9.1.0 --
@@ -333,3 +436,6 @@ i(204969, 406266);	-- Spore Colony Shoulderguards
 ------------------
 -- PATCH 10.1.5 --
 ------------------
+-- TRAINER --
+-- ITEM --
+i(207577, 416692);	-- Sanctified Leather Hat

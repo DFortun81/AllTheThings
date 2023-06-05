@@ -2095,7 +2095,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(14635, {	-- Pattern: Gem-Studded Leather Belt
 							["isLimited"] = true,
 						}),
-						i(18239, {	-- Pattern: Shadowskin Gloves
+						i(18239, {	-- Pattern: Shadowskin Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
