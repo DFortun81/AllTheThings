@@ -72,7 +72,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Core Fragment
-							["provider"] = { "i", 18412 },	-- Core Fragment
+							["providers"] = {
+								{ "o", 179553 },	-- Core Fragment
+								{ "i",  18412 },	-- Core Fragment
+							},
 						}),
 					},
 				}),
