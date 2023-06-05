@@ -7925,7 +7925,7 @@ local criteriaFuncs = {
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
-		local name = GetFactionInfoByID(factionID);
+		local name = GetFactionInfoByID(factionID) or "#"..(factionID or "??");
         return sformat(L["LOCK_CRITERIA_FACTION_FORMAT"], app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
     end,
 };
