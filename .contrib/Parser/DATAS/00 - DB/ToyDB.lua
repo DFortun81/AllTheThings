@@ -1184,6 +1184,7 @@ i(206267);	-- Obsidian Legend's Pennant
 i(205463);	-- Skornak's Lava Ball
 i(205963);	-- Sniffin' Salts
 i(204389);	-- Stone Breaker
+i(204686);	-- Titan's Containment Device
 i(205904);	-- Vibrant Clacking Claw
 -- Unsorted --
 i(206038);	-- Flamin' Ring of Flashiness [Midsummer]

@@ -264,9 +264,55 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuest"] = 67081,	-- An Infusion of Materials
 				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192496 },	-- Keeper Tyr
-				["coord"] = { 60.5, 58.6, THALDRASZUS },
+				["coord"] = { 60.4, 58.8, THALDRASZUS },
 				["g"] = {
 					i(201781),	-- Memory of Tyr
+				},
+			}),
+			q(72440, {	-- Silver Mettle
+				["sourceQuest"] = 67084,	-- The Silver Purpose
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
+				["provider"] = { "n", 198941 },	-- Nozdormu
+				["coord"] = { 60.5, 58.6, THALDRASZUS },
+				["timeline"] = { ADDED_10_1_0 },
+			}),
+			q(72441, {	-- Breaching the Tomb
+				["sourceQuest"] = 72440,	-- Silver Mettle
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
+				["provider"] = { "n", 198947 },	-- Travard
+				["coord"] = { 39.2, 41.2, 20 },	-- Keeper's Rest
+				["timeline"] = { ADDED_10_1_0 },
+			}),
+			q(72442, {	-- The Remains of Tyr
+				["sourceQuest"] = 72441,	-- Breaching the Tomb
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
+				["provider"] = { "n", 199114 },	-- Watcher Koranos
+				["coord"] = { 38.0, 54.9, 20 },	-- Keeper's Rest
+				["timeline"] = { ADDED_10_1_0 },
+			}),
+			q(72526, {	-- Keeper's Rest
+				["sourceQuest"] = 72442,	-- The Remains of Tyr
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
+				["provider"] = { "n", 199114 },	-- Watcher Koranos
+				["coord"] = { 38.0, 54.9, 20 },	-- Keeper's Rest
+				["timeline"] = { ADDED_10_1_0 },
+			}),
+			q(72443, {	-- Tyr's Fall
+				["sourceQuest"] = 72526,	-- Keeper's Rest
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
+				["provider"] = { "n", 200078 },	-- Watcher Koranos
+				["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
+				["maps"] = 2146,	-- The Eastern Glades
+				["timeline"] = { ADDED_10_1_0 },
+			}),
+			q(72444, {	-- A Sliver of Silver
+				["sourceQuest"] = 72443,	-- Tyr's Fall
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
+				["provider"] = { "n", 200078 },	-- Watcher Koranos
+				["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
+				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					i(204686),	-- Titan's Containment Device (TOY!)
 				},
 			}),
 			q(72688, {	-- Renown Supplies
@@ -931,6 +977,9 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(72777),	-- triggered with 'Emerald Summons' (66620)
 		q(72759),	-- triggered with 'And Yet So Far' (66191)
 		q(72758),	-- triggered with 'Like Mother, Like Daughter' (66402)
+		q(72439, {	-- triggered when you accept 'Silver Mettle' (questID 72440)
+			["timeline"] = { ADDED_10_1_0 },
+		}),
 
 		-- Ensembles
 		q(70755),	-- Ensemble: Crimson Valdrakken Clothing
