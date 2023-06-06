@@ -41,12 +41,137 @@ end
 -- ITEMS --
 i(17722, 21943);	-- Gloves of the Greatfather
 i(18239, 22711);	-- Shadowskin Gloves
+------------------
+-- PATCH 8.1.0 --
+------------------
+-- TRAINER --
+i(0, 287273);	-- Aqueous Reskinning
+i(0, 286019);	-- Coarse Leather Barding [Rank 2]
+i(0, 285079);	-- Enhanced Mistscale Boots
+i(0, 285080);	-- Enhanced Mistscale Greaves
+i(0, 285083);	-- Enhanced Tempest Boots
+i(0, 285084);	-- Enhanced Tempest Leggings
+i(0, 286652);	-- Sanguinated Reskinning
+i(0, 285895);	-- Scarlet Herring Lure
+i(0, 282277);	-- Sinister Combatant's Bow [Rank 1]
+i(0, 282312);	-- Sinister Combatant's Leather Armguards [Rank 1]
+i(0, 282324);	-- Sinister Combatant's Leather Gauntlets [Rank 1]
+i(0, 282321);	-- Sinister Combatant's Leather Leggings [Rank 1]
+i(0, 282327);	-- Sinister Combatant's Leather Treads [Rank 1]
+i(0, 282318);	-- Sinister Combatant's Leather Waistguard [Rank 1]
+i(0, 282287);	-- Sinister Combatant's Mail Armguards [Rank 1]
+i(0, 282306);	-- Sinister Combatant's Mail Gauntlets [Rank 1]
+i(0, 282302);	-- Sinister Combatant's Mail Leggings [Rank 1]
+i(0, 282309);	-- Sinister Combatant's Mail Treads [Rank 1]
+i(0, 282290);	-- Sinister Combatant's Mail Waistguard [Rank 1]
+-- ITEM --
+i(166313, 286021);	-- Coarse Leather Barding [Rank 3]
+i(165648, 285087);	-- Fortified Mistscale Boots
+i(165650, 285088);	-- Fortified Mistscale Greaves
+i(165644, 285091);	-- Fortified Tempest Boots
+i(165646, 285092);	-- Fortified Tempest Leggings
+i(165330, 282278);	-- Sinister Combatant's Bow [Rank 2]
+i(165331, 282281);	-- Sinister Combatant's Bow [Rank 3]
+i(165318, 282313);	-- Sinister Combatant's Leather Armguards [Rank 2]
+i(165319, 282314);	-- Sinister Combatant's Leather Armguards [Rank 3]
+i(165312, 282325);	-- Sinister Combatant's Leather Gauntlets [Rank 2]
+i(165313, 282326);	-- Sinister Combatant's Leather Gauntlets [Rank 3]
+i(165314, 282322);	-- Sinister Combatant's Leather Leggings [Rank 2]
+i(165315, 282323);	-- Sinister Combatant's Leather Leggings [Rank 3]
+i(165310, 282328);	-- Sinister Combatant's Leather Treads [Rank 2]
+i(165311, 282329);	-- Sinister Combatant's Leather Treads [Rank 3]
+i(165316, 282319);	-- Sinister Combatant's Leather Waistguard [Rank 2]
+i(165317, 282320);	-- Sinister Combatant's Leather Waistguard [Rank 3]
+i(165328, 282288);	-- Sinister Combatant's Mail Armguards [Rank 2]
+i(165329, 282289);	-- Sinister Combatant's Mail Armguards [Rank 3]
+i(165322, 282307);	-- Sinister Combatant's Mail Gauntlets [Rank 2]
+i(165323, 282308);	-- Sinister Combatant's Mail Gauntlets [Rank 3]
+i(165324, 282303);	-- Sinister Combatant's Mail Leggings [Rank 2]
+i(165325, 282305);	-- Sinister Combatant's Mail Leggings [Rank 3]
+i(165320, 282310);	-- Sinister Combatant's Mail Treads [Rank 2]
+i(165321, 282311);	-- Sinister Combatant's Mail Treads [Rank 3]
+i(165326, 282291);	-- Sinister Combatant's Mail Waistguard [Rank 2]
+i(165327, 282292);	-- Sinister Combatant's Mail Waistguard [Rank 3]
+i(165649, 285095);	-- Tempered Mistscale Boots
+i(165651, 285096);	-- Tempered Mistscale Greaves
+i(165645, 285099);	-- Tempered Tempest Boots
+i(165647, 285100);	-- Tempered Tempest Leggings
+
+------------------
+-- PATCH 8.1.5 --
+------------------
+-- QUEST --
+i(0, 293135);	-- Drum of Primal Might
+i(0, 293076);	-- Mallet of Thunderous Skins
+
+------------------
+-- PATCH 8.2.0 --
+------------------
+-- TRAINER --
+i(0, 299027);	-- Banded Cragscale Boots
+i(0, 299030);	-- Banded Cragscale Greaves
+i(0, 299021);	-- Banded Dredged Boots
+i(0, 299024);	-- Banded Dredged Leggings
+i(0, 301411);	-- Comfortable Rider's Barding
+i(0, 299025);	-- Cragscale Boots
+i(0, 299028);	-- Cragscale Greaves
+i(0, 301405);	-- Dredged Leather Bladder
+i(0, 299019);	-- Dredged Leather Boots
+i(0, 299022);	-- Dredged Leather Leggings
+i(0, 294826);	-- Notorious Combatant's Bow [Rank 1]
+i(0, 294808);	-- Notorious Combatant's Leather Armguards [Rank 1]
+i(0, 294799);	-- Notorious Combatant's Leather Gauntlets [Rank 1]
+i(0, 294802);	-- Notorious Combatant's Leather Leggings [Rank 1]
+i(0, 294796);	-- Notorious Combatant's Leather Treads [Rank 1]
+i(0, 294805);	-- Notorious Combatant's Leather Waistguard [Rank 1]
+i(0, 294823);	-- Notorious Combatant's Mail Armguards [Rank 1]
+i(0, 294814);	-- Notorious Combatant's Mail Gauntlets [Rank 1]
+i(0, 294817);	-- Notorious Combatant's Mail Leggings [Rank 1]
+i(0, 294811);	-- Notorious Combatant's Mail Treads [Rank 1]
+i(0, 294820);	-- Notorious Combatant's Mail Waistguard [Rank 1]
+i(0, 299026);	-- Reinforced Cragscale Boots
+i(0, 299029);	-- Reinforced Cragscale Greaves
+i(0, 299020);	-- Reinforced Dredged Boots
+i(0, 299023);	-- Reinforced Dredged Leggings
+-- ITEM --
+i(169573, 294827);	-- Notorious Combatant's Bow [Rank 2]
+i(169574, 294828);	-- Notorious Combatant's Bow [Rank 3]
+i(169557, 294809);	-- Notorious Combatant's Leather Armguards [Rank 2]
+i(169558, 294810);	-- Notorious Combatant's Leather Armguards [Rank 3]
+i(169555, 294800);	-- Notorious Combatant's Leather Gauntlets [Rank 2]
+i(169556, 294801);	-- Notorious Combatant's Leather Gauntlets [Rank 3]
+i(169561, 294803);	-- Notorious Combatant's Leather Leggings [Rank 2]
+i(169562, 294804);	-- Notorious Combatant's Leather Leggings [Rank 3]
+i(169553, 294797);	-- Notorious Combatant's Leather Treads [Rank 2]
+i(169554, 294798);	-- Notorious Combatant's Leather Treads [Rank 3]
+i(169559, 294806);	-- Notorious Combatant's Leather Waistguard [Rank 2]
+i(169560, 294807);	-- Notorious Combatant's Leather Waistguard [Rank 3]
+i(169565, 294824);	-- Notorious Combatant's Mail Armguards [Rank 2]
+i(169566, 294825);	-- Notorious Combatant's Mail Armguards[Rank 3]
+i(169563, 294815);	-- Notorious Combatant's Mail Gauntlets [Rank 2]
+i(169564, 294816);	-- Notorious Combatant's Mail Gauntlets[Rank 3]
+i(169571, 294818);	-- Notorious Combatant's Mail Leggings [Rank 2]
+i(169572, 294819);	-- Notorious Combatant's Mail Leggings [Rank 3]
+i(169569, 294812);	-- Notorious Combatant's Mail Treads [Rank 2]
+i(169570, 294813);	-- Notorious Combatant's Mail Treads [Rank 3]
+i(169567, 294821);	-- Notorious Combatant's Mail Waistguard [Rank 2]
+i(169568, 294822);	-- Notorious Combatant's Mail Waistguard [Rank 3]
 
 ------------------
 -- PATCH 8.3.0 --
 ------------------
 -- TRAINER --
+i(0, 304442);	-- Uncanny Combatant's Bow [Rank 1]
+i(0, 304424);	-- Uncanny Combatant's Leather Armguards [Rank 1]
+i(0, 304415);	-- Uncanny Combatant's Leather Gauntlets [Rank 1]
+i(0, 304418);	-- Uncanny Combatant's Leather Leggings [Rank 1]
 i(0, 304412);	-- Uncanny Combatant's Leather Treads [Rank 1]
+i(0, 304421);	-- Uncanny Combatant's Leather Waistguard [Rank 1]
+i(0, 304439);	-- Uncanny Combatant's Mail Armguards [Rank 1]
+i(0, 304430);	-- Uncanny Combatant's Mail Gauntlets [Rank 1]
+i(0, 304433);	-- Uncanny Combatant's Mail Leggings [Rank 1]
+i(0, 304427);	-- Uncanny Combatant's Mail Treads [Rank 1]
+i(0, 304436);	-- Uncanny Combatant's Mail Waistguard [Rank 1]
 -- ITEM --
 i(171122, 305801);	-- Eldritch Cragscale Boots
 i(171118, 305807);	-- Eldritch Cragscale Greaves
@@ -54,11 +179,33 @@ i(171126, 305805);	-- Eldritch Dredged Leather Boots
 i(171124, 305799);	-- Eldritch Dredged Leather Leggings
 i(171123, 305802);	-- Maddening Cragscale Boots
 i(171128, 305806);	-- Maddening Cragscale Greaves
+i(171127, 305795);	-- Maddening Dredged Leather Boots
 i(171125, 305798);	-- Maddening Dredged Leather Leggings
+i(170586, 304443);	-- Uncanny Combatant's Bow [Rank 2]
+i(170587, 304444);	-- Uncanny Combatant's Bow [Rank 3]
+i(170420, 304425);	-- Uncanny Combatant's Leather Armguards [Rank 2]
+i(170421, 304426);	-- Uncanny Combatant's Leather Armguards [Rank 3]
+i(170414, 304416);	-- Uncanny Combatant's Leather Gauntlets [Rank 2]
+i(170415, 304417);	-- Uncanny Combatant's Leather Gauntlets [Rank 3]
+i(170416, 304419);	-- Uncanny Combatant's Leather Leggings [Rank 2]
+i(170417, 304420);	-- Uncanny Combatant's Leather Leggings [Rank 3]
 i(170412, 304413);	-- Uncanny Combatant's Leather Treads [Rank 2]
 i(170413, 304414);	-- Uncanny Combatant's Leather Treads [Rank 3]
+i(170418, 304422);	-- Uncanny Combatant's Leather Waistguard [Rank 2]
+i(170419, 304423);	-- Uncanny Combatant's Leather Waistguard [Rank 3]
+i(170430, 304440);	-- Uncanny Combatant's Mail Armguards [Rank 2]
+i(170431, 304441);	-- Uncanny Combatant's Mail Armguards [Rank 3]
+i(170424, 304431);	-- Uncanny Combatant's Mail Gauntlets [Rank 2]
+i(170425, 304432);	-- Uncanny Combatant's Mail Gauntlets [Rank 3]
+i(170426, 304434);	-- Uncanny Combatant's Mail Leggings [Rank 2]
+i(170427, 304435);	-- Uncanny Combatant's Mail Leggings [Rank 3]
+i(170422, 304428);	-- Uncanny Combatant's Mail Treads [Rank 2]
+i(170423, 304429);	-- Uncanny Combatant's Mail Treads [Rank 3]
+i(170428, 304437);	-- Uncanny Combatant's Mail Waistguard [Rank 2]
+i(170429, 304438);	-- Uncanny Combatant's Mail Waistguard [Rank 3]
 i(174368, 305803);	-- Unsettling Cragscale Boots
 i(174369, 305800);	-- Unsettling Cragscale Greaves
+i(174366, 305796);	-- Unsettling Dredged Leather Boots
 i(174367, 305804);	-- Unsettling Dredged Leather Leggings
 i(0, 307176);	-- Void Focus
 
