@@ -13206,26 +13206,6 @@ app.BaseAutomaticHeader = app.BaseObjectFields(fields, "BaseAutomaticHeader");
 app.CreateHeader = function(id, t)
 	return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeader);
 end
-
-local referenceCounter = {};
-app.CheckReferenceCounters = function()
-	local CUSTOM_HEADERS = {};
-	local ONLY_ONE_REFERENCE,LESS_THAN_FIVE = {},{};
-	CUSTOM_HEADERS.ONLY_ONE_REFERENCE = ONLY_ONE_REFERENCE;
-	CUSTOM_HEADERS.LESS_THAN_FIVE = LESS_THAN_FIVE;
-	for id,count in pairs(referenceCounter) do
-		if tonumber(id) < 1 then
-			if count == 1 then
-				ONLY_ONE_REFERENCE[id] = 1;
-				print("Custom Header " .. id .. " ONLY has 1 reference!");
-			elseif count < 5 then
-				--print("Custom Header " .. id .. " has a handful of references [" .. count .. "]");
-				LESS_THAN_FIVE[id] = count;
-			end
-		end
-	end
-	app.SetDataMember("CUSTOM_HEADERS", CUSTOM_HEADERS);
-end
 app.CreateNPC = function(id, t)
 	if t then
 		-- TEMP: clean MoH tagging from random Vendors
@@ -13234,7 +13214,6 @@ app.CreateNPC = function(id, t)
 			-- print("ItemID",t.itemID,"used on NPC/Header group... Don't do that!",id);
 		end
 		if id < 1 then
-			referenceCounter[id] = (referenceCounter[id] or 0) + 1;
 			if t.achID then
 				t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 				if t.questID then
@@ -13268,7 +13247,6 @@ app.CreateNPC = function(id, t)
 	elseif id > 1 then
 		return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
 	else
-		referenceCounter[id] = (referenceCounter[id] or 0) + 1;
 		return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
 	end
 end
