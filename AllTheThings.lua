@@ -7568,7 +7568,7 @@ end
 -- possible collectible without regard to filtering
 local function CheckCollectible(ref)
 	-- don't include groups which do not meet the current character requirements
-	if app.RecursiveCharacterRequirementsFilter(ref) then
+	if app.RecursiveGroupRequirementsFilter(ref) then
 		-- app.PrintDebug("CheckCollectible",ref.hash)
 		local total = ref.total;
 		-- Used as a cost for something which has an incomplete progress
