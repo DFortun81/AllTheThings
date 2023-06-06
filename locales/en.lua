@@ -1332,7 +1332,6 @@ app.L = {
 	-- Timeless Isle
 		[-799] = "775461",																	-- Burden of Eternity
 	-- Secret Header
-		[-800] = "Interface\\Icons\\inv_horse2purple",										-- Lucid Nightmare
 		[-801] = "Interface\\Icons\\inv_serpentmount_darkblue",								-- Riddler's Mind-Worm
 		[-802] = "Interface\\Icons\\inv_faeriedragon2_orange",								-- Sun Darter Hatchling
 		[-804] = "Interface\\Icons\\inv_misc_toy_02",										-- Uuna
@@ -1878,7 +1877,6 @@ app.L = {
 	-- Timeless Isle
 		[-799] = GetSpellInfo(147343),											-- Burden of Eternity
 	-- Secret Header
-		[-800] = GetSpellInfo(247402),											-- Lucid Nightmare
 		[-801] = GetSpellInfo(243025),											-- Riddler's Mind-Worm
 		[-802] = GetSpellInfo(231215),											-- Sun Darter Hatchling
 		[-804] = GetSpellInfo(254763),											-- Uuna

@@ -4,7 +4,7 @@
 
 root(ROOTS.Secrets, {
 	-- TODO: missing coords... anyone not finished this?
-	n(-800, {	-- Lucid Nightmare
+	header(HEADERS.Spell, 247402, {	-- Lucid Nightmare
 		["description"] = "***Quest tracking enabled is required to see all the steps.***",
 		["modelScale"] = .8,
 		["modelID"] = 78092,
