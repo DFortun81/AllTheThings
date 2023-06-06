@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
-	n(-863, bubbleDownSelf({ ["lvl"] = lvlsquish(120, 120, 50), ["races"] = HORDE_ONLY }, {
+	header(HEADERS.Achievement, 12719, bubbleDownSelf({ ["lvl"] = lvlsquish(120, 120, 50), ["races"] = HORDE_ONLY }, {	-- Spirits Be With You
 		ach(12719),	-- Spirits Be With You
 		q(51513, {	-- Zalazane Returns
 			["sourceQuest"] = 50954,	-- Zandalar Forever!
