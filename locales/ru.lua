@@ -799,8 +799,6 @@ for key,value in pairs({
 			[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
 	-- Pets
 		[-795] = "Подземелья Боевых питомцев",						-- Pet Battle Dungeons
-	-- Secret Header
-		[-806] = "Часовой пояс",									-- Waist of Time
 	-- Chests
 		[-851] = "Тайник Темной Империи",							-- Black Empire Cache
 	-- Heart of Azeroth

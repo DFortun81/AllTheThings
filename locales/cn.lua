@@ -824,8 +824,6 @@ for key,value in pairs({
 			[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
 	-- Pets
 		[-795] = "宠物对战地下城",										-- Pet Battle Dungeons
-	-- Secret Header
-		[-806] = "钟示贤德腰带",												-- Waist of Time
 	-- Chests
 		[-851] = "黑暗帝国宝箱",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Heart of Azeroth

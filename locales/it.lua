@@ -802,8 +802,6 @@ for key,value in pairs({
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
 	-- Pets
 		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
-	-- Secret Header
-		[-806] = "Cinta del Perditempo",							-- Waist of Time
 	-- Chests
 		[-851] = "Cassa dell'Impero Nero",							-- Black Empire Cache
 	-- Heart of Azeroth

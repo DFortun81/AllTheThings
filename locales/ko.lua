@@ -811,8 +811,6 @@ for key,value in pairs({
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
 	-- Pets
 		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
-	-- Secret Header
-		[-806] = "금쪽같은 시간을 버려낸 허리띠",								-- Waist of Time
 	-- Chests
 		[-851] = "검은 제국 보관함",										-- Black Empire Cache
 	-- Heart of Azeroth

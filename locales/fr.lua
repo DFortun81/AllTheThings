@@ -810,8 +810,6 @@ for key,value in pairs({
 			[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Pets
 		[-795] = "Mascotte des combat des donjons",					-- Pet Battle Dungeons
-	-- Secret Header
-		[-806] = "Boucle temporelle",								-- Waist of Time
 	-- Chests
 		[-851] = "Cache de l’Empire noir",							-- Black Empire Cache
 	-- Heart of Azeroth

@@ -1332,10 +1332,6 @@ app.L = {
 	-- Timeless Isle
 		[-799] = "775461",																	-- Burden of Eternity
 	-- Secret Header
-		[-801] = "Interface\\Icons\\inv_serpentmount_darkblue",								-- Riddler's Mind-Worm
-		[-802] = "Interface\\Icons\\inv_faeriedragon2_orange",								-- Sun Darter Hatchling
-		[-804] = "Interface\\Icons\\inv_misc_toy_02",										-- Uuna
-		[-806] = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",						-- Waist of Time
 		[-807] = "Interface\\Icons\\inv_hivemind",											-- Hivemind
 	-- Chests
 		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
@@ -1877,10 +1873,6 @@ app.L = {
 	-- Timeless Isle
 		[-799] = GetSpellInfo(147343),											-- Burden of Eternity
 	-- Secret Header
-		[-801] = GetSpellInfo(243025),											-- Riddler's Mind-Worm
-		[-802] = GetSpellInfo(231215),											-- Sun Darter Hatchling
-		[-804] = GetSpellInfo(254763),											-- Uuna
-		[-806] = "Waist of Time",												-- Waist of Time
 		[-807] = GetSpellInfo(261395),											-- The Hivemind
 	-- Chests
 		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)

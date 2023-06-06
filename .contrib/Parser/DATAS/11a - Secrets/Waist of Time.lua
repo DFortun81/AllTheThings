@@ -2,7 +2,7 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-root(ROOTS.Secrets, n(-806, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {	-- Waist of Time
+root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {	-- Waist of Time
 	["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nYou will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
 	["lvl"] = 110,
 	["g"] = {
@@ -50,7 +50,7 @@ root(ROOTS.Secrets, n(-806, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }
 			["description"] = "Spires of Arak\n\nNext to a large candle. \n\nThe Misplaced Candle reads:\n\n\"<Something is written here.>\n\nRankest Goldfish\"",
 			["coord"] = { 67.9, 41.0, SPIRES_OF_ARAK },	-- Misplaced Candle
 		}),
-		o(294101, {		-- Odd Cup
+		o(294101, {	-- Odd Cup
 			["model"] = 1822968,
 			["modelScale"] = .5,
 			["questID"] = 52901,
