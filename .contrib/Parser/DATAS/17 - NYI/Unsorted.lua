@@ -1107,7 +1107,6 @@ root(ROOTS.Unsorted, {
 				q(74537),	--
 				q(74560),	--
 				q(74564),	--
-				q(74571),	-- Clear a Path
 				q(74572),	-- Make it Rain
 				q(74832),	--
 				q(74833),	--

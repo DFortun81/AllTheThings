@@ -60,9 +60,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 201090 },	-- Mayla Highmountain
 					["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
 				}),
-				q(74568, {	-- They Who Would Burn Us
-					["provider"] = { "n", 201090 },	-- Mayla Highmountain
-					["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
+				q(74571, {	-- Clear a Path
+					["provider"] = { "n", 201876 },	-- Baine Bloodhoof
+					["coord"] = { 75.1, 69.6, OHNAHRAN_PLAINS },
 				}),
 				q(74569, {	-- Deny Them Resources
 					["provider"] = { "n", 201860 },	-- Tigari Khan
@@ -77,6 +77,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(75888, {	-- Suffusion Camp
 					["provider"] = { "n", 201648 },	-- Somnikus
 					["coord"] = { 75.2, 69.2, OHNAHRAN_PLAINS },
+				}),
+				q(74568, {	-- They Who Would Burn Us
+					["provider"] = { "n", 201090 },	-- Mayla Highmountain
+					["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
 				}),
 				q(75181, {	-- Volunteer Fire Fighters
 					["provider"] = { "n", 201861 },	-- Tigari Khan
