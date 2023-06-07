@@ -886,6 +886,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["icon"] = icon("INV_Misc_Token_ArgentDawn3"),
 					["maps"] = {
 						WESTERN_PLAGUELANDS,
+						SCHOLOMANCE,
+						STRATHOLME,
 						-- #if BEFORE WRATH
 						NAXXRAMAS,
 						-- #endif
