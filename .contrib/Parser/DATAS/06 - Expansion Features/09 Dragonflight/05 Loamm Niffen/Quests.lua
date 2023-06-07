@@ -163,6 +163,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
                 ["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
                 ["g"] = {
                     spell(409471),    -- Drake Helms
+					-- auto learns these Drakewatcher Manuscripts
+					i(196990),	-- Cliffside Wylderdrake: Helm (DM!)
+					i(197120),	-- Highland Drake: Ornate Helm (DM!)
+					i(197373),	-- Renewed Proto-Drake: Helm (DM!)
+					i(197600),	-- Windborne Velocidrake: Helm (DM!)
+					i(203326),	-- Winding Slitherdrake: Helm (DM!)
                 }
             }),
 				-- RENOWN 20 --
@@ -201,7 +207,5 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(76209),	-- Triggered at Renown 3
 		q(76020),	-- Triggered at Renown 5
 		q(76019),	-- Triggered at Renown 13
-		q(69190),   -- Triggered at Renown 19
-        q(69574),   -- Triggered at Renown 19
 	}),
 }));

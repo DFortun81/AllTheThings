@@ -714,7 +714,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(196961),	-- Cliffside Wylderdrake: Armor
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
-			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 		})),
@@ -842,7 +841,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197356),	-- Renewed Proto-Drake: Hairy Back
-			i(197373),	-- Renewed Proto-Drake: Helm
 			i(197354),	-- Renewed Proto-Drake: Horned Back
 			i(197393),	-- Renewed Proto-Drake: White Scales
 		})),
@@ -865,7 +863,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197580),	-- Windborne Velocidrake: Gold and Red Armor (DM!)
 			i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 			i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
-			i(197600),	-- Windborne Velocidrake: Helm
 			i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
 			i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
 			i(197589),	-- Windborne Velocidrake: Large Head Fin (DM!)
@@ -940,6 +937,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		pvp(i(205865)),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
+			i(196990),	-- Cliffside Wylderdrake: Helm (DM!)
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
 			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail (DM!)
 			i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
@@ -955,12 +953,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
 			i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
 			i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
+			i(197373),	-- Renewed Proto-Drake: Helm (DM!)
 			i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
 			i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
 			i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)
 		}),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
 			i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
+			i(197600),	-- Windborne Velocidrake: Helm (DM!)
 		}),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
 			i(203338),	-- Winding Slitherdrake: Antler Horns (DM!)
@@ -987,6 +987,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203362),	-- Winding Slitherdrake: Hairy Tail (DM!)
 			i(203365),	-- Winding Slitherdrake: Hairy Throat (DM!)
 			i(205341),	-- Winding Slitherdrake: Heavy Scales (DM!)
+			i(203326),	-- Winding Slitherdrake: Helm (DM!)
 			i(203339),	-- Winding Slitherdrake: Impaler Horns (DM!)
 			i(203316),	-- Winding Slitherdrake: Large Finned Crest (DM!)
 			i(203347),	-- Winding Slitherdrake: Large Spiked Nose (DM!)
@@ -1019,7 +1020,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203311),	-- Winding Slitherdrake: Hairy Chin
 			i(203343),	-- Winding Slitherdrake: Hairy Jaw
 			i(203329),	-- Winding Slitherdrake: Heavy Horns
-			i(203326),	-- Winding Slitherdrake: Helm
 			i(203306),	-- Winding Slitherdrake: Horned Brow
 			i(203360),	-- Winding Slitherdrake: Large Finned Tail
 			i(203363),	-- Winding Slitherdrake: Large Finned Throat
