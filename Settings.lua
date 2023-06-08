@@ -1295,6 +1295,7 @@ settings.UpdateMode = function(self, doRefresh)
 			app.RefreshAppearanceSources();
 		end
 		app:RefreshData(nil,nil,true);
+		app._SettingsRefresh = GetTimePreciseSec();
 	else
 		-- lazy refresh instead
 		app:RefreshData(true,nil,true);

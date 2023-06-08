@@ -7027,7 +7027,7 @@ local function AddTomTomWaypointInternal(group, depth)
 		if app.ThingKeys[group.key or 0] then
 			-- app.PrintDebug("WP:SearchScan",group.hash)
 			local key = group.key;
-			local searchResults = app.SearchForField(key, group[key], "field");
+			local searchResults = SearchForField(key, group[key], "field");
 			for _,o in ipairs(searchResults) do
 				-- app.PrintDebug("WP:Search:",o.hash)
 				if o.coords then
@@ -7569,36 +7569,37 @@ end
 local function CheckCollectible(ref)
 	-- don't include groups which do not meet the current character requirements
 	if app.RecursiveGroupRequirementsFilter(ref) then
-		-- app.PrintDebug("CheckCollectible",ref.hash)
-		local total = ref.total;
-		-- Used as a cost for something which has an incomplete progress
-		if total and total > 0 then
-			-- app.PrintDebug("Cost Required via Total/Prog",ref.hash)
-			return true,ref.progress == total;
-		-- Used as a cost for something which is collectible itself and not collected
-		elseif ref.collectible then
-			-- app.PrintDebug("Cost Required via Collectible",ref.hash)
-			return true,ref.collected;
-		-- Used as a cost for something which is collectible as a cost itself and not collected
-		elseif ref.collectibleAsCost then
-			-- app.PrintDebug("Cost Required via collectibleAsCost",ref.hash)
-			return true;	-- we never have 'collected costs'
+		local settingsChange = ref._SettingsRefresh;
+		-- previously checked without Settings changed
+		if settingsChange then
+			if app._SettingsRefresh == settingsChange then
+				return ref._CheckCollectible;
+			end
 		end
-		-- If this group has sub-groups and not yet updated, then update this group and check the total to see if it has collectibles
-		if ref.g and (total or 0) == 0 then
-			-- checking last update time is needed for groups which have a cost but nothing actually collectible due to filters... total is 0
-			local lastUpdate = ref._LastUpdateTime;
-			-- app.PrintDebug("Updating sub-groups...",ref.hash)
-			-- do an Update pass for the ref if necessary
-			if not lastUpdate or lastUpdate < app._LastUpdateTime then
-				ref._LastUpdateTime = app._LastUpdateTime;
-				app.TopLevelUpdateGroup(ref);
-				-- app.PrintDebug("Updated sub-groups",ref.hash,ref.progress,ref.total,ref._LastUpdateTime,"<=",app._LastUpdateTime)
-				-- app.PrintTable(ref)
-				-- raw sub-groups have something collectible, so return
-				if total and ref.progress < total then
-					return true,false;
-				end
+		ref._SettingsRefresh = app._SettingsRefresh;
+		ref._CheckCollectible = nil;
+		-- app.PrintDebug("CheckCollectible",ref.hash)
+		-- Used as a cost for something which is collectible itself and not collected
+		if ref.collectible and not ref.collected then
+			-- app.PrintDebug("Cost via Collectible",ref.hash)
+			ref._CheckCollectible = true;
+			return true;
+		end
+		-- Used as a cost for something which is collectible as a cost itself
+		if ref.collectibleAsCost then
+			-- app.PrintDebug("Cost via collectibleAsCost",ref.hash)
+			ref._CheckCollectible = true;
+			return true;
+		end
+		-- If this group has sub-groups
+		if ref.g then
+			-- Update the group
+			app.TopLevelUpdateGroup(ref);
+			-- Check the total
+			if ref.progress < ref.total then
+				-- app.PrintDebug("Cost via .g progress",ref.hash)
+				ref._CheckCollectible = true;
+				return true;
 			end
 		end
 		-- If this group has a symlink, generate the symlink into a cached version of the ref and see if it has collectibles
@@ -7609,10 +7610,15 @@ local function CheckCollectible(ref)
 				-- Already have a cached version of this reference with populated content
 				local expItem = refCache.GetCachedField(ref, "_populated");
 				if expItem then
-					-- app.PrintDebug("Cached symlink",expItem.hash,expItem.progress,expItem.total)
-					if expItem.total and expItem.total > 0 then
-						return true,expItem.progress == expItem.total;
+					-- Update the group
+					app.TopLevelUpdateGroup(expItem);
+					-- Check the total
+					if expItem.progress < expItem.total then
+						-- app.PrintDebug("Cost via cached sym progress",ref.hash)
+						ref._CheckCollectible = true;
+						return true;
 					end
+					-- Nothing missing currently
 					return;
 				end
 				-- app.PrintDebug("Filling symlink...",ref.hash)
@@ -7623,15 +7629,16 @@ local function CheckCollectible(ref)
 				FillSymLinks(expItem);
 				-- Build the Item's groups if any
 				BuildGroups(expItem, expItem.g);
-				-- do an Update pass for the copied Item
+				-- Update the group
 				app.TopLevelUpdateGroup(expItem);
-				-- app.PrintDebug("Fresh symlink",expItem.hash,expItem.progress,expItem.total)
-				-- app.PrintTable(expItem)
 				-- save it in the Item cache in case something else is able to purchase this reference
 				refCache.SetCachedField(ref, "_populated", expItem);
-				-- check if this expItem has been completed
-				if expItem.total and expItem.total > 0 then
-					return true,expItem.progress == expItem.total;
+				-- app.PrintDebug("Fresh symlink",expItem.hash,expItem.progress,expItem.total)
+				-- Check the total
+				if expItem.progress < expItem.total then
+					-- app.PrintDebug("Cost via fresh sym progress",ref.hash)
+					ref._CheckCollectible = true;
+					return true;
 				end
 			end
 			-- print("cannot determine collectibility")
@@ -7662,11 +7669,11 @@ app.CollectibleAsCost = function(t)
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
 	t.collectibleAsCost = false;
 	-- check the collectibles if any are considered collectible currently
-	local collectible, collected;
+	local costNeeded;
 	for _,ref in ipairs(collectibles) do
 		-- Use the common collectibility check logic
-		collectible, collected = CheckCollectible(ref);
-		if collectible and not collected then
+		costNeeded = CheckCollectible(ref);
+		if costNeeded then
 			t.collectibleAsCost = nil;
 			-- app.PrintDebug("CollectibleAsCost:true",t.hash,"from",ref.hash)
 			-- Found something collectible for t, make sure t is actually obtainable as well
@@ -7679,7 +7686,7 @@ app.CollectibleAsCost = function(t)
 			return true;
 		end
 	end
-	-- app.PrintDebug("CollectibleAsCost:false",t.hash)
+	-- app.PrintDebug("CollectibleAsCost:nil",t.hash)
 	t.collectibleAsCost = nil;
 end
 end)();
@@ -8566,7 +8573,7 @@ local function TryPopulateQuestRewards(questObject)
 			if item.g then
 				for k,o in ipairs(item.g) do
 					if o.itemID == 140495 then	-- Torn Invitation
-						local searchResults = app.SearchForField("questID", 44058);	-- Volpin the Elusive
+						local searchResults = SearchForField("questID", 44058);	-- Volpin the Elusive
 						NestObjects(o, searchResults, true);
 					end
 				end
@@ -8585,7 +8592,7 @@ end
 -- Will print a warning message and play a warning sound if the given QuestID being completed will prevent being able to complete a breadcrumb
 -- (as far as ATT is capable of knowing)
 app.CheckForBreadcrumbPrevention = function(title, questID)
-	local nextQuests = app.SearchForField("nextQuests", questID);
+	local nextQuests = SearchForField("nextQuests", questID);
 	if nextQuests then
 		local warning;
 		for _,group in pairs(nextQuests) do
@@ -9990,7 +9997,7 @@ end
 local function default_costCollectibles(t)
 	local id = t.currencyID;
 	if id then
-		local results = app.SearchForField("currencyIDAsCost", id);
+		local results = SearchForField("currencyIDAsCost", id);
 		if results and #results > 0 then
 			-- app.PrintDebug("default_costCollectibles",t.hash,#results)
 			return results;
@@ -10023,6 +10030,12 @@ local fields = {
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
 	["collectibleAsCost"] = app.CollectibleAsCost,
+	["trackable"] = function(t)
+		return #t.costCollectibles > 0;
+	end,
+	["saved"] = function(t)
+		return not t.filledCost and not t.collectibleAsCost;
+	end,
 };
 local BaseCurrencyClass = app.BaseObjectFields(fields, "BaseCurrencyClass");
 
@@ -11501,21 +11514,21 @@ local function default_costCollectibles(t)
 	-- Search by modItemID if possible for accuracy
 	if modItemID and modItemID ~= t.itemID then
 		id = modItemID;
-		results = app.SearchForField("itemIDAsCost", id);
+		results = SearchForField("itemIDAsCost", id);
 		-- if app.DEBUG_PRINT then print("itemIDAsCost.modItemID",id,results and #results) end
 	end
 	-- If no results, search by itemID + modID only if different
 	if not results then
 		id = GetGroupItemIDWithModID(nil, t.itemID, t.modID);
 		if id ~= modItemID then
-			results = app.SearchForField("itemIDAsCost", id);
+			results = SearchForField("itemIDAsCost", id);
 			-- if app.DEBUG_PRINT then print("itemIDAsCost.modID",id,results and #results) end
 		end
 	end
 	-- If no results, search by plain itemID only
 	if not results and t.itemID then
 		id = t.itemID;
-		results = app.SearchForField("itemIDAsCost", id);
+		results = SearchForField("itemIDAsCost", id);
 	end
 	if results and #results > 0 then
 		-- not sure we need to copy these into another table
@@ -12088,7 +12101,7 @@ app.CacheHeirlooms = function()
 	-- where the sources of the upgrade tokens exist
 	local cachedTokenGroups;
 	for i,item in ipairs(armorTokens) do
-		cachedTokenGroups = app.SearchForField("itemID", item.itemID);
+		cachedTokenGroups = SearchForField("itemID", item.itemID);
 		for _,token in ipairs(cachedTokenGroups) do
 			-- ensure the tokens do not have a modID attached
 			token.modID = nil;
@@ -12102,7 +12115,7 @@ app.CacheHeirlooms = function()
 		end
 	end
 	for i,item in ipairs(weaponTokens) do
-		cachedTokenGroups = app.SearchForField("itemID", item.itemID);
+		cachedTokenGroups = SearchForField("itemID", item.itemID);
 		for _,token in ipairs(cachedTokenGroups) do
 			-- ensure the tokens do not have a modID attached
 			token.modID = nil;
@@ -12743,7 +12756,7 @@ end
 local function default_costCollectibles(t)
 	local id = t.itemID;
 	if id then
-		local results = app.SearchForField("itemIDAsCost", id);
+		local results = SearchForField("itemIDAsCost", id);
 		if results and #results > 0 then
 			-- app.PrintDebug("default_costCollectibles",t.hash,id,#results)
 			return results;
@@ -17311,9 +17324,9 @@ RowOnEnter = function (self)
 		local fields = {
 			"__type",
 			"__base",
-			"name",
 			"key",
 			"hash",
+			"name",
 			"link",
 			"sourceParent",
 			"sourceIgnored",
@@ -17321,6 +17334,9 @@ RowOnEnter = function (self)
 			"collected",
 			"trackable",
 			"saved",
+			"collectibleAsCost",
+			"costTotal",
+			"costProgress"
 		};
 		GameTooltip:AddLine("-- Extra Fields:");
 		for _,key in ipairs(fields) do
@@ -21655,7 +21671,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		app.HarvestRecipes = function()
 			app.FunctionRunner.SetPerFrame(100);
 			local Run = app.FunctionRunner.Run;
-			for spellID,data in pairs(app.SearchForFieldContainer("spellID")) do
+			for spellID,data in pairs(SearchForFieldContainer("spellID")) do
 				Run(CacheRecipeSchematic, spellID);
 			end
 			app.FunctionRunner.OnEnd(function()
@@ -21773,7 +21789,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			if app.CollectibleRecipes then
 				-- app.PrintDebug("RefreshRecipes")
 				-- Cache Learned Spells
-				local skillCache = app.SearchForFieldContainer("spellID");
+				local skillCache = SearchForFieldContainer("spellID");
 				if not skillCache then return; end
 
 				local tradeSkillID = app.GetTradeSkillLine();
