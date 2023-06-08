@@ -1105,8 +1105,6 @@ app.L = {
 		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
 	-- Class Trial
 		[-160] = 236567,																	-- Level 60 Class Trial
-	-- Junkboxes
-		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
 	-- Emissary
 		[-169] = app.asset("Interface_Emissary_Callings"),									-- Emissary Quests
 	-- Events
@@ -1121,7 +1119,6 @@ app.L = {
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
 	-- Fishing
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
-		[-218] = "Interface\\Icons\\Achievement_Profession_Fishing_NorthrendAngler",		-- Coastal (for Fishing)
 	-- Class
 		[-219] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",										-- Class
@@ -1215,12 +1212,8 @@ app.L = {
 		[-420] = "Interface\\Icons\\INV_Chest_Plate03",										-- Tier 0.5 Sets
 	-- BFA War Chest
 		[-488] = "Interface\\Icons\\inv_misc_treasurechest04b",								-- Daily War Chest
-	-- Tarot Cards
-		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",							-- Tarot Cards
 	-- Misc
 		[-493] = "Interface\\Icons\\Inv_icon_mission_complete_order",						-- Temporary Header WoD Mission Loot
-	-- Class Hall Demon Hunter
-		[-498] = "Interface\\Icons\\inv_offhand_hyjal_d_01",								-- Twisting Nether (Demon Hunter Order Hall advancement)
 	-- Mole Machine
 		[-517] = "Interface\\Icons\\ability_racial_molemachine",							-- Mole Machine
 	-- Blizzard Events and Anniversaries
@@ -1317,7 +1310,6 @@ app.L = {
 	-- Pets
 		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
 		[-796] = app.asset("Category_PetBattles"),											-- Battle
-		[-797] = 631719,																	-- Journal
 	-- Toys
 		[-798] = app.asset("Category_SelfieFilters"),										-- Selfie Filter
 	-- Timeless Isle
@@ -1622,8 +1614,6 @@ app.L = {
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
 	-- Class Trial
 		[-160] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 60 Class Trial
-	-- Junkboxes
-		[-165] = GetItemSubClassInfo(13,1),										-- Junkboxes
 	-- Emissary
 		[-169] = BOUNTY_BOARD_LOCKED_TITLE,										-- Emissary Quests
 	-- Events
@@ -1638,7 +1628,6 @@ app.L = {
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 	-- Fishing
 		[-217] = "Lures",														-- Lures (for Fishing)
-		[-218] = "Coastal",														-- Coastal (for Fishing)
 	[-219] = "Sourceless",														-- Sourceless
 	-- Class
 		[-220] = CLASS,															-- Class
@@ -1709,7 +1698,6 @@ app.L = {
 		[-379] = "Junkyard",													-- Junkyard
 		[-380] = GetSpellInfo(251998),											-- Workshop
 	-- Misc Armor Slots
-		[-383] = GetItemSubClassInfo(2,14),										-- Miscellaneous
 		[-384] = GetItemSubClassInfo(8,1),										-- Neck
 		[-385] = GetItemSubClassInfo(8,10),										-- Finger
 		[-386] = INVTYPE_TRINKET,												-- Trinket
@@ -1736,12 +1724,8 @@ app.L = {
 		[-423] = "The Four Horsemen",											-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "War Chest",													-- Daily War Chest
-	-- Tarot Cards
-		[-491] = "Tarot Cards",													-- Tarot Cards
 	-- Misc
 		[-493] = "Broken Mission Loot",											-- Temporary Header for WoD Mission Loot.
-	-- Class Hall Demon Hunter
-		[-498] = C_Map.GetAreaInfo(7576),										-- Twisting Nether (Demon Hunter Order Hall advancement)
 	-- Mole Machine
 		[-517] = GetSpellInfo(265225),											-- Mole Machine
 	-- Blizzard Events and Anniversaries
@@ -1844,7 +1828,6 @@ app.L = {
 	-- Pets
 		[-795] = "Pet Battle Dungeons",											-- Pet Battle Dungeons
 		[-796] = BATTLE_PET_SOURCE_5,											-- Pet Battle
-		[-797] = PET_JOURNAL,													-- Pet Journal
 	-- Toys
 		[-798] = GetSpellInfo(181765),											-- S.E.L.F.I.E. Camera
 	-- Timeless Isle

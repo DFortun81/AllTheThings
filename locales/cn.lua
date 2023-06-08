@@ -725,7 +725,6 @@ for key,value in pairs({
 		[-159] = "事件投骰",										-- Daily Dreamway Event Roll
 	-- Fishing
 		[-217] = "鱼竿",												-- Lures (for Fishing)
-		[-218] = "鱼饵",												-- Coastal (for Fishing)
 	[-219] = "无来源",													-- Sourceless
 	-- PvP
 		[-242] = "无评级",												-- Unrated
@@ -752,8 +751,6 @@ for key,value in pairs({
 		[-423] = "四骑士",												-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "战争宝箱",											-- Daily War Chest
-	-- Tarot Cards
-		[-491] = "塔罗牌",												-- Tarot Cards
 	-- Misc
 		[-493] = "破碎前置任务拾取",										-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries

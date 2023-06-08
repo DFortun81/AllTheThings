@@ -710,7 +710,6 @@ for key,value in pairs({
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
 	-- Fishing
 		[-217] = "Наживки",											-- Lures (for Fishing)
-		[-218] = "Побережье",										-- Coastal (for Fishing)
 	[-219] = "Без Источника",										-- Sourceless
 	[-228] = "Точка полета",										-- GetSpellInfo(218950),  -- Flight Path
 	-- PvP
@@ -740,8 +739,6 @@ for key,value in pairs({
 		[-423] = "Четыре Всадника",									-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "Трофейный сундук",								-- Daily War Chest
-	-- Tarot Cards
-		[-491] = "Карты таро",										-- Tarot Cards
 	-- Misc
 		[-493] = "Сломанный лут с миссий",							-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries

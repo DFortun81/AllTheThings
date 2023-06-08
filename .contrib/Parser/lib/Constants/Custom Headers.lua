@@ -93,7 +93,6 @@ SEASON_SMOLDERING = 17846;
 
 -- Pet
 PET_BATTLE = -796;
-PET_JOURNAL = -797;
 
 -- Expansion Features
 LEGENDARIES = -364;

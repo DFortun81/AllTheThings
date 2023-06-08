@@ -720,7 +720,6 @@ for key,value in pairs({
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
 		[-217] = "Appâts",											-- Lures (for Fishing)
-		[-218] = "Côtier",											-- Coastal (for Fishing)
 	--TODO: [-219] = "Sourceless",									-- Sourceless
 	-- PvP
 		--TODO: [-242] = "Unrated",									-- Unrated
@@ -749,8 +748,6 @@ for key,value in pairs({
 		[-423] = "Les quatre cavaliers",							-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "Coffre de Guerre",								-- Daily War Chest
-	-- Tarot Cards
-		[-491] = "Cartes du Jeu de tarot",
 	-- Misc
 		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
