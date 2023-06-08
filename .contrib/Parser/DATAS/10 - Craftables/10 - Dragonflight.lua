@@ -1710,7 +1710,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			--FirstCraft(x, 408222, ADDED_10_1_0);	-- Winding Slitherdrake: Curved Chin Horn
 			FirstCraft(75581, 408223, ADDED_10_1_0);	-- Winding Slitherdrake: Small Finned Throat
 			--FirstCraft(x, 408221, ADDED_10_1_0);	-- Winding Slitherdrake: White Hair
-			--FirstCraft(x, 408220, ADDED_10_1_0);	-- Winding Slitherdrake: Yellow and Silver Armor
+			FirstCraft(75578, 408220, ADDED_10_1_0);	-- Winding Slitherdrake: Yellow and Silver Armor
 			-- Artisan Curios
 			FirstCraft(74481, 400811, ADDED_10_0_7);	-- Arcane Dispelling Rune
 			-- Glyphs

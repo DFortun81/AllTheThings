@@ -1567,7 +1567,6 @@ root(ROOTS.Unsorted, {
 				q(75572),	--
 				q(75574),	--
 				q(75576),	-- Grim Guzzler Invasion!
-				q(75578),	--
 				q(75579),	--
 				q(75580),	--
 				q(75582),	--
