@@ -92,12 +92,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 55.9, 56.8, ZARALEK_CAVERN },
 					["g"] = {
 						i(204978, {	-- Formula: Enchant Weapon - Spore Tender (RECIPE!)
+							["requireSkill"] = TAILORING,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(204977, {	-- Formula: Illusory Adornment: Spores (RECIPE!)
+							["requireSkill"] = TAILORING,	
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204976, {	-- Formula: Spore Keeper's Baton (RECIPE!)
+							["requireSkill"] = TAILORING,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205263, {	-- Empowered Flightstone
@@ -109,12 +112,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 56.7, 55.3, ZARALEK_CAVERN },
 					["g"] = {
 						i(205174, {	-- Design: B.B.F. Fist (RECIPE!)
+							["requireSkill"] = JEWELCRAFTING,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(205176, {	-- Design: Figurine of the Gathering Storm (RECIPE!)
+							["requireSkill"] = JEWELCRAFTING,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205175, {	-- Design: Statuette of Foreseen Power (RECIPE!)
+							["requireSkill"] = JEWELCRAFTING,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 					},
@@ -123,12 +129,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 57.3, 55.9, ZARALEK_CAVERN },
 					["g"] = {
 						i(204970, {	-- Pattern: Adaptive Dracothyst Armguards (RECIPE!)
+							["requireSkill"] = LEATHERWORKING,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204974, {	-- Pattern: Lambent Armor Kit (RECIPE!)
+							["requireSkill"] = LEATHERWORKING,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204969, {	-- Pattern: Spore Colony Shoulderguards (RECIPE!)
+							["requireSkill"] = LEATHERWORKING,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 					},
@@ -137,9 +146,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 57.1, 55.0, ZARALEK_CAVERN },
 					["g"] = {
 						i(205137, {	-- Plans: Shadowed Alloy (RECIPE!)
+							["requireSkill"] = BLACKSMITHING,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205143, {	-- Plans: Shadowed Belt Clasp (RECIPE!)
+							["requireSkill"] = BLACKSMITHING,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204634),	-- Rot Resistant Cauldron
@@ -149,9 +160,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 56.0, 56.5, ZARALEK_CAVERN },
 					["g"] = {
 						i(204984, {	-- Recipe: Stinky Bright Potion (RECIPE!)
+							["requireSkill"] = ALCHEMY,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204631, {	-- Recipe: Transmute: Dracothyst (RECIPE!)
+							["requireSkill"] = ALCHEMY,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 					},
@@ -315,9 +328,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 56.1, 56.7, ZARALEK_CAVERN },
 					["g"] = {
 						i(205138, {	-- Pattern: Medical Wrap Kit (RECIPE!)
+							["requireSkill"] = TAILORING,
 							["cost"] = { { "i", VOUCHER, 1 } }
 						}),
 						i(205139, {	-- Pattern: Reserve Parachute (RECIPE!)
+							["requireSkill"] = TAILORING,
 							["cost"] = { { "i", VOUCHER, 1 } }
 						}),
 					}
@@ -326,24 +341,31 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 55.8, 55.7, ZARALEK_CAVERN },
 					["g"] = {
 						i(205136, {	-- Technique: Contract: Loamm Niffen (RECIPE!)
+							["requireSkill"] = INSCRIPTION,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(205132, {	-- Technique: Glyph of the Chosen Glaive (RECIPE!)
+							["requireSkill"] = INSCRIPTION,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(205133, {	-- Technique: Glyph of the Heaved Armament (RECIPE!)
+							["requireSkill"] = INSCRIPTION,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(205135, {	-- Technique: Hissing Rune (RECIPE!)
+							["requireSkill"] = INSCRIPTION,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205134, {	-- Technique: Vantus Rune: Aberrus, the Shadowed Crucible (RECIPE!)
+							["requireSkill"] = INSCRIPTION,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205131, {	-- Technique: Winding Slitherdrake: Small Finned Throat (RECIPE!)
+							["requireSkill"] = INSCRIPTION,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(205130, {	-- Technique: Winding Slitherdrake: White Hair (RECIPE!)
+							["requireSkill"] = INSCRIPTION,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 					},
@@ -352,9 +374,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 55.8, 55.9, ZARALEK_CAVERN },
 					["g"] = {
 						i(205178, {	-- Schematic: Mallard Mortar (RECIPE!)
+							["requireSkill"] = ENGINEERING,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204844, {	-- Schematic: Polarity Bomb (RECIPE!)
+							["requireSkill"] = ENGINEERING,
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 					},
