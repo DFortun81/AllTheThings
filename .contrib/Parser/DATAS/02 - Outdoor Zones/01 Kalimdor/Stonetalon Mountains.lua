@@ -2130,7 +2130,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(42028, {	-- Krom'gar Quartermaster <Quartermaster>
 					["coord"] = { 65.8, 64.0, STONETALON_MOUNTAINS },
-					["description"] = "Some items require specific Krom'Gar ranks, which are obtained by completing the main storyline in the zone. The story line starts with 'We're Here to Do One Thing, Maybe Two...' & ends with 'To Be Horde...'",
+					["description"] = "Some items require specific Krom'gar ranks, which are obtained by completing the main storyline in the zone. The story line starts with 'We're Here to Do One Thing, Maybe Two...' & ends with 'To Be Horde...'",
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" }, }, {
