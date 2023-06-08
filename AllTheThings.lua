@@ -6084,6 +6084,42 @@ currentCache = fieldCache;
 -- This is referenced by FlightPath objects when pulling their Info from the DB
 app.CacheField = CacheField;
 
+-- WARNING: DEV ONLY START
+local referenceCounter = {};
+app.ReferenceCounter = referenceCounter;
+app.CheckReferenceCounters = function()
+	local CUSTOM_HEADERS = {};
+	local NO_REFERENCES,ONLY_ONE_REFERENCE,LESS_THAN_FIVE = {},{},{};
+	CUSTOM_HEADERS.NO_REFERENCES = NO_REFERENCES;
+	CUSTOM_HEADERS.ONLY_ONE_REFERENCE = ONLY_ONE_REFERENCE;
+	CUSTOM_HEADERS.LESS_THAN_FIVE = LESS_THAN_FIVE;
+	for id,count in pairs(referenceCounter) do
+		if tonumber(id) < 1 then
+			if count == 1 then
+				ONLY_ONE_REFERENCE[id] = 1;
+				print("Custom Header " .. id .. " ONLY has 1 reference!");
+			elseif count < 5 then
+				--print("Custom Header " .. id .. " has a handful of references [" .. count .. "]");
+				LESS_THAN_FIVE[id] = count;
+			end
+		end
+	end
+	for id,_ in pairs(L.HEADER_NAMES) do
+		if not referenceCounter[id] then
+			NO_REFERENCES[id] = 1;
+			print("Custom Header " .. id .. " has no references.");
+		end
+	end
+	for id,_ in pairs(L.HEADER_ICONS) do
+		if not referenceCounter[id] then
+			NO_REFERENCES[id] = 1;
+			print("Custom Header " .. id .. " has no references, but exists in the icons.");
+		end
+	end
+	app.SetDataMember("CUSTOM_HEADERS", CUSTOM_HEADERS);
+end
+-- WARNING: DEV ONLY END
+
 -- Toggle being able to cache things inside maps
 app.ToggleCacheMaps = function(skipCaching)
 	currentMaps[-1] = skipCaching;
@@ -6096,6 +6132,10 @@ end
 local cacheCreatureID = function(group, npcID)
 	if npcID > 0 then
 		CacheField(group, "creatureID", npcID);
+	-- WARNING: DEV ONLY START
+	else
+		app.ReferenceCounter[npcID] = (app.ReferenceCounter[npcID] or 0) + 1;
+	-- WARNING: DEV ONLY END
 	end
 end
 -- special map cache function, will only cache a group for the mapID if the current hierarchy has not already been cached in this map
@@ -6162,6 +6202,7 @@ fieldConverters = {
 			print("Header Missing Name ", value);
 			L["HEADER_NAMES"][value] = "Header #" .. value;
 		end
+		app.ReferenceCounter[value] = (app.ReferenceCounter[value] or 0) + 1;
 		-- WARNING: DEV ONLY END
 		CacheField(group, "headerID", value);
 	end,
