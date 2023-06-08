@@ -1325,7 +1325,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205520),	-- Obsidian Gladiator's Silk Armbands
 						i(205518),	-- Obsidian Gladiator's Silk Belt
 						i(205517),	-- Obsidian Gladiator's Silk Cord
-						i(205512),	-- Obsidian Gladiator's Silk Gloves
+						i(205509),	-- Obsidian Gladiator's Silk Gloves
 						i(205512),	-- Obsidian Gladiator's Silk Guise
 						i(205510),	-- Obsidian Gladiator's Silk Handwraps
 						i(205511),	-- Obsidian Gladiator's Silk Hood

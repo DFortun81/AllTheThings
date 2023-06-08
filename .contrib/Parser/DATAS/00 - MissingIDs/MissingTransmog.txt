@@ -65171,7 +65171,6 @@ s(186697)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs -
 s(186700)/i(204465),	-- Voice of the Silent Star
 s(186715)/i(205381),	-- Obsidian Gladiator's Silk Hood
 s(186716)/i(205381),	-- Obsidian Gladiator's Silk Hood
-s(186862)/i(205509),	-- Obsidian Gladiator's Silk Gloves
 10.1.0.48776
 s(184013)/i(201972),	-- Crimson Gladiator's Splitter
 s(187207)/i(205687),	-- 
