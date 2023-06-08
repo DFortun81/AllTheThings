@@ -2602,10 +2602,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								i(11944),	-- Dark Iron Baby Booties
 							},
 						}),
-						o(161495, {	-- Secret Safe
-							["description"] = "This lootable chest spawns after defeating Watchman Doomgrip.",
+						o(165554, {	-- Heart of the Mountain
+							["description"] = "This spawns after defeating Watchman Doomgrip.",
 							["groups"] = {
 								i(11309),	-- The Heart of the Mountain
+							},
+						}),
+						o(161495, {	-- Secret Safe
+							["description"] = "This spawns after defeating Watchman Doomgrip.",
+							["groups"] = {
 								-- #if BEFORE 1.13.5
 								i(11923),	-- The Hammer of Grace
 								i(11920),	-- Wraith Scythe
@@ -2631,9 +2636,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						9441,	-- Dark Keeper Zimrel
 					},
 					["groups"] = {
-						i(11197, {	-- Dark Keeper Key
-							["description"] = "The Dark Coffer contains one or more random world drop BoEs. Usually greens.",
+						o(160845, {	-- Dark Coffer
+							["description"] = "Contains one or more random world drop BoEs. Usually greens. The named unique items found within are used to turn in Librams.",
+							["cost"] = {{ "i", 11197, 1 }},	-- Dark Keeper Key
+							["groups"] = {
+								i(11752),	-- Black Blood of the Tormented
+								i(11751),	-- Burning Essence
+								i(11753),	-- Eye of Kajal
+							},
 						}),
+						i(11197),	-- Dark Keeper Key
 					},
 				}),
 				e(378, {	-- General Angerforge
