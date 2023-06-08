@@ -26,7 +26,7 @@ namespace ATT
         static Tracer()
         {
             LogFileName = Path.Combine(Path.GetFullPath(Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location)), "log.txt");
-            File.WriteAllText(LogFileName, "");
+            File.WriteAllText(LogFileName, "", Encoding.UTF8);
             OnWrite += delegate (string message)
             {
                 File.AppendAllText(LogFileName, message);

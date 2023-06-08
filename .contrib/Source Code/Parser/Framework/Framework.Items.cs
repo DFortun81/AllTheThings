@@ -294,9 +294,9 @@ namespace ATT
                 }
 
                 // Export all of the Items to the Item DB folder.
-                File.WriteAllText(Path.Combine(directory, "AllItemsByID.lua"), builder2.ToString());
-                File.WriteAllText(Path.Combine(directory, "AllItems.lua"), ATT.Export.ExportRawLua(allItems).ToString());
-                File.WriteAllText(Path.Combine(directory, "ItemsMissingData.lua"), ATT.Export.ExportRawLua(itemsMissingData).ToString());
+                File.WriteAllText(Path.Combine(directory, "AllItemsByID.lua"), builder2.ToString(), Encoding.UTF8);
+                File.WriteAllText(Path.Combine(directory, "AllItems.lua"), ATT.Export.ExportRawLua(allItems).ToString(), Encoding.UTF8);
+                File.WriteAllText(Path.Combine(directory, "ItemsMissingData.lua"), ATT.Export.ExportRawLua(itemsMissingData).ToString(), Encoding.UTF8);
 
                 // Export all items into their respective filter locations
                 var filtersFolder = Path.Combine(directory, "Filters/");
@@ -317,7 +317,7 @@ namespace ATT
                             builder.AppendLine();
                         }
                     }
-                    File.WriteAllText(Path.Combine(filtersDirectory.FullName, $"{group.Key}.json"), builder.ToString());
+                    File.WriteAllText(Path.Combine(filtersDirectory.FullName, $"{group.Key}.json"), builder.ToString(), Encoding.UTF8);
                 }
 
                 // Export all recipes into their respective recipe locations
@@ -375,7 +375,7 @@ namespace ATT
                                 builder.AppendLine(");");
                             }
                         }
-                        File.WriteAllText(Path.Combine(recipesDirectory.FullName, $"{requireSkillPair.Key}.json"), builder.ToString());
+                        File.WriteAllText(Path.Combine(recipesDirectory.FullName, $"{requireSkillPair.Key}.json"), builder.ToString(), Encoding.UTF8);
                     }
                 }
             }

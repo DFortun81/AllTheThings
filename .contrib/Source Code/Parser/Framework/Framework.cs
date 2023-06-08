@@ -4165,7 +4165,7 @@ namespace ATT
                         // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
                         foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
                         {
-                            File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), ToJSON(dbKeyDatas.Value));
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), ToJSON(dbKeyDatas.Value), Encoding.UTF8);
                         }
 
                         // Export the Category DB file.
@@ -4212,7 +4212,7 @@ namespace ATT
                                 }
                             }
                             builder.AppendLine("};");
-                            File.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString());
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString(), Encoding.UTF8);
                         }
 
                         // Export the Object DB file.
@@ -4253,7 +4253,7 @@ namespace ATT
                                 builder.AppendLine();
                             }
                             builder.AppendLine("};");
-                            File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString());
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString(), Encoding.UTF8);
                         }
 
                         // Export the Mount DB file.
@@ -4284,7 +4284,7 @@ namespace ATT
                                     }
                                 }
                             }
-                            File.WriteAllText(Path.Combine(debugFolder.FullName, "RawMountDB.lua"), builder.ToString());
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, "RawMountDB.lua"), builder.ToString(), Encoding.UTF8);
                         }
                     }
                 }
@@ -4326,7 +4326,7 @@ namespace ATT
                     // Check to make sure the content is different since Diff tools are dumb as hell.
                     var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}CategoryDB.lua");
                     var content = builder.ToString().Replace("\r\n", "\n").Trim();
-                    if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
+                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
                 }
 
                 // Export the Object DB file.
@@ -4383,7 +4383,7 @@ namespace ATT
                     // Check to make sure the content is different since Diff tools are dumb as hell.
                     var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}ObjectDB.lua");
                     var content = builder.ToString().Replace("\r\n", "\n").Trim();
-                    if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
+                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
                 }
 
                 CurrentParseStage = ParseStage.ExportAddonData;

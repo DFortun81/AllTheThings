@@ -92,11 +92,11 @@ namespace ATT
                     return;
                 }
                 luaFiles.Sort();
-
                 Lua lua = new Lua();
+                lua.State.Encoding = Encoding.UTF8;
                 // link the Lua 'print' function to instead perform a Trace print
                 lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
-                lua.DoString(ProcessContent(File.ReadAllText(mainFileName)));
+                lua.DoString(ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
                 Framework.IgnoredValue = lua.GetString("IGNORED_VALUE");
 
                 // Try to Copy in the Alliance Only / Horde Only lists
@@ -223,7 +223,7 @@ namespace ATT
                 //const string TOC_PATH = "..\\..\\AllTheThings.toc";
                 //if (File.Exists(TOC_PATH))
                 //{
-                //    string fullToc = File.ReadAllText(TOC_PATH);
+                //    string fullToc = File.ReadAllText(TOC_PATH, Encoding.UTF8);
 
                 //}
             }
@@ -418,13 +418,13 @@ namespace ATT
                 {
                     if (fileCount > 0) builder.AppendLine();
                     builder.Append("-- ").Append(shortname).Append(file.Replace(filename, "")).AppendLine();
-                    builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(file))).Append("\nend)();");
+                    builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(file, Encoding.UTF8))).Append("\nend)();");
                     ++fileCount;
                 }
             }
             else if (File.Exists(filename))
             {
-                builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(filename))).Append("\nend)();");
+                builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(filename, Encoding.UTF8))).Append("\nend)();");
             }
             else
             {
@@ -488,7 +488,7 @@ namespace ATT
         private static void ParseJSONFile(string fileName)
         {
             // Load the text and then convert it to a common JSON data format.
-            var data = Framework.ToDictionary(File.ReadAllText(fileName));
+            var data = Framework.ToDictionary(File.ReadAllText(fileName, Encoding.UTF8));
             if (data == null)
             {
                 Trace.WriteLine(fileName + ": Invalid format!");
@@ -516,7 +516,7 @@ namespace ATT
                 {
                     //Trace.WriteLine("Parsing:" + fileName);
                     lua.DoString("AllTheThings = {};_ = AllTheThings;");
-                    lua.DoString(content = ProcessContent(File.ReadAllText(fileName)));
+                    lua.DoString(content = ProcessContent(File.ReadAllText(fileName, Encoding.UTF8)));
                     Framework.Merge(lua.GetTable("AllTheThings"));
                     break;
                 }
@@ -525,7 +525,7 @@ namespace ATT
                 {
                     Framework.Log(e.Message);
 #if CRIEVE
-                    File.WriteAllText("D://ATT-ERROR-FILE.txt", content);
+                    File.WriteAllText("D://ATT-ERROR-FILE.txt", content, Encoding.UTF8);
 #endif
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
@@ -557,7 +557,7 @@ namespace ATT
                     }
                     else Trace.WriteLine(e);
 #if CRIEVE
-                    File.WriteAllText("D://ATT-ERROR-FILE.txt", content);
+                    File.WriteAllText("D://ATT-ERROR-FILE.txt", content, Encoding.UTF8);
 #endif
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();

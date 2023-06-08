@@ -1055,10 +1055,10 @@ namespace ATT
             public static void ExportDebug(string directory)
             {
                 // Export all of the Containers
-                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportRawLua(AllContainers).ToString());
+                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportRawLua(AllContainers).ToString(), Encoding.UTF8);
 
                 // Export as JSON!
-                File.WriteAllText(Path.Combine(directory, "Categories.json"), ToJSON(AllContainers));
+                File.WriteAllText(Path.Combine(directory, "Categories.json"), ToJSON(AllContainers), Encoding.UTF8);
 
                 // Cache the "Unsorted" list.
                 if (AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
@@ -1104,7 +1104,7 @@ namespace ATT
                             else listOfItems.Add(itemNameBuilder.ToString());
                         }
                     }
-                    File.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString());
+                    File.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString(), Encoding.UTF8);
 
                     // Export the Binding Filtered Dictionary List.
                     builder2.Clear();
@@ -1135,10 +1135,10 @@ namespace ATT
                             builder2.AppendLine();
                         }
                     }
-                    File.WriteAllText(Path.Combine(directory, "SortedItemsByFilteredBinding.lua"), builder2.ToString());
+                    File.WriteAllText(Path.Combine(directory, "SortedItemsByFilteredBinding.lua"), builder2.ToString(), Encoding.UTF8);
 
                     // Export all Unsorted.
-                    File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ATT.Export.ExportRawLua(unsorted).ToString());
+                    File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ATT.Export.ExportRawLua(unsorted).ToString(), Encoding.UTF8);
                 }
 
                 // Load in the Locale File and Warn about Unused Header IDs.
@@ -1208,7 +1208,7 @@ namespace ATT
 
                 var filename = Path.Combine(directory, "Categories.lua");
                 var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
-                if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
+                if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
             }
 
             public static void ExportAutoLocale(string directory)
@@ -1238,7 +1238,7 @@ for k,t in pairs(keys) do
 end");
 
                 string content = locale.ToString();
-                if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);
+                if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
             }
 
             public static void ExportAutoItemSources(string directory)
@@ -1263,7 +1263,7 @@ end");
                 data.Append(");");
 
                 string content = data.ToString();
-                if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);
+                if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
             }
             #endregion
 
@@ -1313,7 +1313,7 @@ end");
                         if (entryName != null) builder.Append("\t-- ").Append(entryName);
                     }
                 }
-                File.WriteAllText(Path.Combine(directory, $"{name}.lua"), builder.AppendLine().Append("};").ToString());
+                File.WriteAllText(Path.Combine(directory, $"{name}.lua"), builder.AppendLine().Append("};").ToString(), Encoding.UTF8);
             }
 
             private static void ProcessDB(List<object> list)
