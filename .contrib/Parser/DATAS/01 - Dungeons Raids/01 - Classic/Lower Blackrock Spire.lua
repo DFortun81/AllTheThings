@@ -1147,425 +1147,436 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 			}),
 			-- #if BEFORE 6.0.1
-			n(-27, {	-- Lower
+			header(HEADERS.Global, "DUNGEON_FLOOR_BLACKROCKSPIRE3", {	-- Hordemar City (Lower)
+				-- #if ANYCLASSIC
+				["icon"] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Boss_Overlord_Wyrmthalak",
+				-- #else
+				["icon"] = "Interface\\Icons\\Achievement_Boss_Overlord_Wyrmthalak",
+				-- #endif
+				["description"] = "Also known as 'Lower' Blackrock Spire.",
+				["groups"] = {
 			-- #endif
-				n(ZONE_DROPS, {
-					i(16244, {	-- Formula: Enchant Gloves - Greater Strength
-						["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
-						["cr"] = 9198,	-- Spirestone Mystic
-					}),
-					i(16250, {	-- Formula: Enchant Weapon - Superior Striking (RECIPE!)
-						["cr"] = 9216,	-- Spirestone Warlord
-					}),
-					i(14513, {	-- Pattern: Robe of the Archmage
-						["cr"] = 9264,	-- Firebrand Pyromancer
-					}),
-					i(15749, {	-- Pattern: Volcanic Breastplate
-						["cr"] = 9259,	-- Firebrand Grunt
-					}),
-					i(15775, {	-- Pattern: Volcanic Shoulders
-						["cr"] = 9260,	-- Firebrand Legionnaire
-					}),
-					i(13494, {	-- Recipe: Greater Fire Protection Potion
-						["crs"] = {
-							9262,	-- Firebrand Invoker
-							9264,	-- Firebrand Pyromancer
-						},
-					}),
-					-- #if AFTER 6.0.2
-					i(13260, {	-- Wind Dancer Boots
-						["cr"] = 9216,	-- Spirestone Warlord
-					}),
-					-- #endif
-					applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
-						["timeline"] = { "removed 4.0.3" },
-						-- #if BEFORE 4.0.3
-						["crs"] = {
-							9196,	-- Highlord Omokk
-							10584,	-- Urok Doomhowl
-							9218,	-- Spirestone Battle Lord
-							9197,	-- Spirestone Battle Mage
-							9199,	-- Spirestone Enforcer
-							9217,	-- Spirestone Lord Magus
-							9198,	-- Spirestone Mystic
-							9201,	-- Spirestone Ogre Magus
-							9200,	-- Spirestone Reaver
-							9216,	-- Spirestone Warlord
-						},
-						-- #endif
-					})),
-					i(12219, {	-- Unadorned Seal of Ascension
-						["timeline"] = { "removed 4.0.3" },
-					}),
-				}),
-				n(9257, {	-- Scarshield Warlock
-					["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
-					["groups"] = {
-						i(9214, {	-- Grimoire of Inferno
-							["timeline"] = { "removed 4.0.1" },
-							["classes"] = { WARLOCK },
-							-- #if AFTER 4.0.1
-							["spellID"] = 0,
-							-- #else
-							["spellID"] = 1122,	-- Inferno
-							-- #endif
+					n(ZONE_DROPS, {
+						i(16244, {	-- Formula: Enchant Gloves - Greater Strength
+							["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+							["cr"] = 9198,	-- Spirestone Mystic
 						}),
-						n(10263, {	-- Burning Felguard
-							["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
-							["groups"] = {
-								i(13181),	-- Demonskin Gloves
-								i(13182),	-- Phase Blade
+						i(16250, {	-- Formula: Enchant Weapon - Superior Striking (RECIPE!)
+							["cr"] = 9216,	-- Spirestone Warlord
+						}),
+						i(14513, {	-- Pattern: Robe of the Archmage
+							["cr"] = 9264,	-- Firebrand Pyromancer
+						}),
+						i(15749, {	-- Pattern: Volcanic Breastplate
+							["cr"] = 9259,	-- Firebrand Grunt
+						}),
+						i(15775, {	-- Pattern: Volcanic Shoulders
+							["cr"] = 9260,	-- Firebrand Legionnaire
+						}),
+						i(13494, {	-- Recipe: Greater Fire Protection Potion
+							["crs"] = {
+								9262,	-- Firebrand Invoker
+								9264,	-- Firebrand Pyromancer
 							},
 						}),
-					},
-				}),
-				i(12533, {	-- Roughshod Pike
-					["description"] = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Vorash.",
-				}),
-				n(9218, {	-- Spirestone Battle Lord (Rare)
-					["coord"] = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
-					["description"] = "This is a rare that is not always present.",
-					["groups"] = {
-						i(13285),	-- The Blackrock Slicers
-						i(13284),	-- Swiftdart Battleboots
-					},
-				}),
-				n(9219, {	-- Spirestone Butcher (Rare)
-					["coord"] = { 54.0, 58.0, LBRS_HORDEMAR_CITY },
-					["description"] = "This is a rare that is not always present.",
-					["groups"] = {
-						i(13286),	-- Rivenspike
-						i(12608),	-- Butcher's Apron
-					},
-				}),
-				n(9217, {	-- Spirestone Lord Magus (Rare)
-					["coord"] = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
-					["description"] = "This is a rare that is not always present.",
-					["groups"] = {
-						i(13261),	-- Globe of D'sak
-						i(13282),	-- Ogreseer Tower Boots
-						i(13283),	-- Magus Ring
-					},
-				}),
-				e(388, {	-- Highlord Omokk
-					["creatureID"] = 9196,	-- Highlord Omokk
-					["groups"] = {
-						i(12534),	-- Omokk's Head
-						i(12336),	-- Gemstone of Spirestone
-						i(13167),	-- Fist of Omokk
-						i(151412, {	-- Ogre Highlord's Casque
-							["timeline"] = { "added 7.3.0.24484" },
+						-- #if AFTER 6.0.2
+						i(13260, {	-- Wind Dancer Boots
+							["cr"] = 9216,	-- Spirestone Warlord
 						}),
-						i(13166),	-- Slamshot Shoulders
-						i(13168),	-- Plate of the Shaman King
-						i(13170),	-- Skyshroud Leggings
-						i(13169),	-- Tressermane Leggings
-						i(16670, {	-- Boots of Elements
-							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
-				e(389, {	-- Shadow Hunter Vosh'gajin
-					["creatureID"] = 9236,	-- Shadow Hunter Vosh'gajin
-					["groups"] = {
-						i(12740, {	-- Fifth Mosh'aru Tablet
+						-- #endif
+						applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
 							["timeline"] = { "removed 4.0.3" },
 							-- #if BEFORE 4.0.3
-							["description"] = "Located directly behind the boss.",
+							["crs"] = {
+								9196,	-- Highlord Omokk
+								10584,	-- Urok Doomhowl
+								9218,	-- Spirestone Battle Lord
+								9197,	-- Spirestone Battle Mage
+								9199,	-- Spirestone Enforcer
+								9217,	-- Spirestone Lord Magus
+								9198,	-- Spirestone Mystic
+								9201,	-- Spirestone Ogre Magus
+								9200,	-- Spirestone Reaver
+								9216,	-- Spirestone Warlord
+							},
 							-- #endif
-						}),
-						i(13352, {	-- Vosh'gajin's Snakestone
+						})),
+						i(12219, {	-- Unadorned Seal of Ascension
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(12651),	-- Blackcrow
-						i(12653),	-- Riphook
-						i(13257),	-- Demonic Runed Spaulders
-						i(12626),	-- Funeral Cuffs
-						i(13255),	-- Trueaim Gauntlets
-						i(16712, {	-- Shadowcraft Gloves
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(151413, {	-- Smolderthorn Greatbelt
-							["timeline"] = { "added 7.3.0.24484" },
-						}),
-						-- #if BEFORE 4.0.1
-						i(12654, {	-- Doomshot
-							["timeline"] = { "removed 4.0.1" },
-						}),
+					}),
+					n(9257, {	-- Scarshield Warlock
+						["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
+						["groups"] = {
+							i(9214, {	-- Grimoire of Inferno
+								["timeline"] = { "removed 4.0.1" },
+								["classes"] = { WARLOCK },
+								-- #if AFTER 4.0.1
+								["spellID"] = 0,
+								-- #else
+								["spellID"] = 1122,	-- Inferno
+								-- #endif
+							}),
+							n(10263, {	-- Burning Felguard
+								["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
+								["groups"] = {
+									i(13181),	-- Demonskin Gloves
+									i(13182),	-- Phase Blade
+								},
+							}),
+						},
+					}),
+					i(12533, {	-- Roughshod Pike
+						["description"] = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Vorash.",
+					}),
+					n(9218, {	-- Spirestone Battle Lord (Rare)
+						["coord"] = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
+						["description"] = "This is a rare that is not always present.",
+						["groups"] = {
+							i(13285),	-- The Blackrock Slicers
+							i(13284),	-- Swiftdart Battleboots
+						},
+					}),
+					n(9219, {	-- Spirestone Butcher (Rare)
+						["coord"] = { 54.0, 58.0, LBRS_HORDEMAR_CITY },
+						["description"] = "This is a rare that is not always present.",
+						["groups"] = {
+							i(13286),	-- Rivenspike
+							i(12608),	-- Butcher's Apron
+						},
+					}),
+					n(9217, {	-- Spirestone Lord Magus (Rare)
+						["coord"] = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
+						["description"] = "This is a rare that is not always present.",
+						["groups"] = {
+							i(13261),	-- Globe of D'sak
+							i(13282),	-- Ogreseer Tower Boots
+							i(13283),	-- Magus Ring
+						},
+					}),
+					e(388, {	-- Highlord Omokk
+						["creatureID"] = 9196,	-- Highlord Omokk
+						["groups"] = {
+							i(12534),	-- Omokk's Head
+							i(12336),	-- Gemstone of Spirestone
+							i(13167),	-- Fist of Omokk
+							i(151412, {	-- Ogre Highlord's Casque
+								["timeline"] = { "added 7.3.0.24484" },
+							}),
+							i(13166),	-- Slamshot Shoulders
+							i(13168),	-- Plate of the Shaman King
+							i(13170),	-- Skyshroud Leggings
+							i(13169),	-- Tressermane Leggings
+							i(16670, {	-- Boots of Elements
+								["timeline"] = { "removed 4.0.3" },
+							}),
+						},
+					}),
+					e(389, {	-- Shadow Hunter Vosh'gajin
+						["creatureID"] = 9236,	-- Shadow Hunter Vosh'gajin
+						["groups"] = {
+							i(12740, {	-- Fifth Mosh'aru Tablet
+								["timeline"] = { "removed 4.0.3" },
+								-- #if BEFORE 4.0.3
+								["description"] = "Located directly behind the boss.",
+								-- #endif
+							}),
+							i(13352, {	-- Vosh'gajin's Snakestone
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(12651),	-- Blackcrow
+							i(12653),	-- Riphook
+							i(13257),	-- Demonic Runed Spaulders
+							i(12626),	-- Funeral Cuffs
+							i(13255),	-- Trueaim Gauntlets
+							i(16712, {	-- Shadowcraft Gloves
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(151413, {	-- Smolderthorn Greatbelt
+								["timeline"] = { "added 7.3.0.24484" },
+							}),
+							-- #if BEFORE 4.0.1
+							i(12654, {	-- Doomshot
+								["timeline"] = { "removed 4.0.1" },
+							}),
+							-- #endif
+						},
+					}),
+					e(390, {	-- War Master Voone
+						["creatureID"] = 9237,	-- War Master Voone
+						["groups"] = {
+							i(12741, {	-- Sixth Mosh'aru Tablet
+								["timeline"] = { "removed 4.0.3" },
+								-- #if BEFORE 4.0.3
+								["description"] = "Located directly behind the boss.",
+								-- #endif
+							}),
+							i(12335),	-- Gemstone of Smolderthorn
+							i(12582),	-- Keris of Zul'Serak
+							i(13175, {	-- Voone's Twitchbow
+								["timeline"] = { "removed 6.0.2" },
+							}),
+							i(13177),	-- Talisman of Evasion
+							i(13179),	-- Brazecore Armguards
+							i(16676, {	-- Beaststalker's Gloves
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(22231),	-- Kayser's Boots of Precision
+							-- #if BEFORE MOP
+							i(28972, {	-- Flightblade Throwing Axe [TBC]
+								["timeline"] = {
+									"added 2.0.1.5678",
+									"removed 5.0.4"
+								},
+							}),
+							i(13173, {	-- Flightblade Throwing Axe [Classic] / Broken Flightblade Throwing Axe [TBC]
+								["timeline"] = {
+									"added 1.11.1.5462",
+									"removed 2.0.1.5678"
+								},
+							}),
+							-- #endif
+						},
+					}),
+					applyclassicphase(PHASE_FIVE, n(16080,	-- Mor Grayhoof
+					-- #if BEFORE 4.0.3
+					bubbleDown({
+						["timeline"] = { "removed 4.0.3" },
+						-- #if NOT ANYCLASSIC
+						["u"] = 11,
 						-- #endif
 					},
-				}),
-				e(390, {	-- War Master Voone
-					["creatureID"] = 9237,	-- War Master Voone
-					["groups"] = {
-						i(12741, {	-- Sixth Mosh'aru Tablet
-							["timeline"] = { "removed 4.0.3" },
-							-- #if BEFORE 4.0.3
-							["description"] = "Located directly behind the boss.",
-							-- #endif
-						}),
-						i(12335),	-- Gemstone of Smolderthorn
-						i(12582),	-- Keris of Zul'Serak
-						i(13175, {	-- Voone's Twitchbow
-							["timeline"] = { "removed 6.0.2" },
-						}),
-						i(13177),	-- Talisman of Evasion
-						i(13179),	-- Brazecore Armguards
-						i(16676, {	-- Beaststalker's Gloves
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(22231),	-- Kayser's Boots of Precision
-						-- #if BEFORE MOP
-						i(28972, {	-- Flightblade Throwing Axe [TBC]
-							["timeline"] = {
-								"added 2.0.1.5678",
-								"removed 5.0.4"
-							},
-						}),
-						i(13173, {	-- Flightblade Throwing Axe [Classic] / Broken Flightblade Throwing Axe [TBC]
-							["timeline"] = {
-								"added 1.11.1.5462",
-								"removed 2.0.1.5678"
-							},
-						}),
-						-- #endif
-					},
-				}),
-				applyclassicphase(PHASE_FIVE, n(16080,	-- Mor Grayhoof
-				-- #if BEFORE 4.0.3
-				bubbleDown({
-					["timeline"] = { "removed 4.0.3" },
-					-- #if NOT ANYCLASSIC
-					["u"] = 11,
 					-- #endif
-				},
-				-- #endif
-				{
-					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
-					["cost"] = {
-						{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
-						{ "i", 22057, 1 },	-- Brazier of Invocation
-					},
-					-- #if AFTER 4.0.3
-					-- This Update function unmarks the removed from game flag for folks with the brazier.
-					["OnUpdate"] = [[function(t)
-						t.OnUpdate = nil;
-						if GetItemCount(22057, true) > 0 then
-							t.u = nil;
-							for i,o in ipairs(t.g) do
-								if o.u and o.u == 11 then
-									o.u = nil;
-								end
-							end
-						else
-							t.u = 11;
-							for i,o in ipairs(t.g) do
-								if not o.u then
-									o.u = 11;
-								end
-							end
-						end
-					end]],
-					-- #endif
-					["groups"] = {
-						objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-							["questID"] = 8966,	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
-							["provider"] = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
-						}),
-						objective(2, {	-- 0/1 Right Piece of Lord Valthalak's Amulet
-							["questID"] = 8989,	-- The Right Piece of Lord Valthalak's Amulet [DRUID, PALADIN, SHAMAN]
-							["provider"] = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
-						}),
-						i(22322),	-- The Jaw Breaker
-						i(22319),	-- Tome of Divine Right
-						i(22325),	-- Belt of the Trickster
-						i(22306),	-- Ironweave Belt
-						i(22398, {	-- Idol of Rejuvenation
-							["timeline"] = { "removed 5.0.4" },
-						}),
-					},
-				}
-				-- #if BEFORE 4.0.3
-				)
-				-- #endif
-				)),
-				n(9596, {	-- Bannok Grimaxe (Rare)
-					["coords"] = {
-						{ 53.0, 67.0, LBRS_TAZZALOR },
-						{ 49.0, 55.0, LBRS_TAZZALOR },
-					},
-					["description"] = "This is a rare that is not always present.",
-					["groups"] = {
-						i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
-						i(12621),	-- Demonfork
-						i(12637),	-- Backusarian Gauntlets
-						i(12634),	-- Chiselbrand Girdle
-					},
-				}),
-				-- #if BEFORE 4.0.3
-				o(175606, {	-- Spire Spider Egg
-					["description"] = "Interacting with a spider egg may spawn baby spiders, beware!",
-					["groups"] = {
-						i(12530, {	-- Spire Spider Egg
-							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
-				-- #endif
-				n(10376, {	-- Crystal Fang (Rare)
-					["coord"] = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
-					["description"] = "This is a rare that is not always present.",
-					["groups"] = {
-						i(13218),	-- Fang of the Crystal Spider
-						i(13185),	-- Sunderseer Mantle
-						i(13184),	-- Fallbrush Handgrips
-					},
-				}),
-				e(391, {	-- Mother Smolderweb
-					["creatureID"] = 10596,	-- Mother Smolderweb
-					["groups"] = {
-						i(68673, {	-- Smolderthorn Hatchling (PET!)
-							["timeline"] = { "added 4.0.6.13596" },
-						}),
-						i(13183),	-- Venomspitter
-						i(151414, {	-- Arcanophile's Greatcloak
-							["timeline"] = { "added 7.3.0.24484" },
-						}),
-						i(13244),	-- Gilded Gauntlets
-						i(16715, {	-- Wildheart Boots
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(13213),	-- Smolderweb's Eye
-					},
-				}),
-				e(392, {	-- Urok Doomhowl
-					["creatureID"] = 10584,	-- Urok Doomhowl
-					["description"] = "Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
-					["cost"] = {
-						{ "i", 12533, 1 },	-- Roughshod Pike
-						{ "i", 12534, 1 },	-- Omokk's Head
-					},
-					["groups"] = {
-						i(12712, {	-- Warosh's Mojo
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(18784, {	-- Top Half of Advanced Armorsmithing: Volume III
-							["timeline"] = { "removed 4.0.1" },
-						}),
-						i(13258),	-- Slaghide Gauntlets
-						applyclassicphase(PHASE_FIVE, i(22232)),	-- Marksman's Girdle
-						i(13259),	-- Ribsteel Footguards
-						i(13178),	-- Rosewine Circle
-					},
-				}),
-				e(393, {	-- Quartermaster Zigris
-					["creatureID"] = 9736,	-- Quartermaster Zigris
-					["groups"] = {
-						applyclassicphase(TBC_PHASE_ONE, i(21955)),	-- Design: Black Diamond Crab
-						i(12835),	-- Plans: Annihilator (RECIPE!)
+					{
+						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+						["cost"] = {
+							{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
+							{ "i", 22057, 1 },	-- Brazier of Invocation
+						},
 						-- #if AFTER 4.0.3
-						i(12264),	-- Worg Carrier (PET!)
+						-- This Update function unmarks the removed from game flag for folks with the brazier.
+						["OnUpdate"] = [[function(t)
+							t.OnUpdate = nil;
+							if GetItemCount(22057, true) > 0 then
+								t.u = nil;
+								for i,o in ipairs(t.g) do
+									if o.u and o.u == 11 then
+										o.u = nil;
+									end
+								end
+							else
+								t.u = 11;
+								for i,o in ipairs(t.g) do
+									if not o.u then
+										o.u = 11;
+									end
+								end
+							end
+						end]],
 						-- #endif
-						i(13253),	-- Hands of Power
-						i(13252),	-- Cloudrunner Girdle
-						i(151416, {	-- Dark Horde Grunt's Legplates
-							["timeline"] = { "added 7.3.0.24484" },
-						}),
-						i(151415, {	-- Veteran Spearman's Chain Boots
-							["timeline"] = { "added 7.3.0.24484" },
-						}),
-						i(13247, {	-- Quartermaster Zigris' Footlocker
-							["description"] = "Contains a random green item.",
-							["timeline"] = { "removed 6.0.2" },	-- NOTE: Exact patch not known
-						}),
-					},
-				}),
-				e(394, {	-- Halycon
-					["creatureID"] = 10220,	-- Halycon
-					["groups"] = {
-						i(13212),	-- Halcyon's Spiked Collar
-						applyclassicphase(PHASE_FIVE, i(22313)),	-- Ironweave Bracers
-						i(13211),	-- Slashclaw Bracers
-						i(13210),	-- Pads of the Dread Wolf
-					},
-				}),
-				e(395, {	-- Gizrul the Slavener
-					["creatureID"] = 10268,	-- Gizrul the Slavener
-					["description"] = "Summoned immediately after Halycon is defeated.",
-					["groups"] = {
-						i(13205),	-- Rhombeard Protector
-						i(151418, {	-- Raider Aspirant's Helm
-							["timeline"] = { "added 7.3.0.24484" },
-						}),
-						i(16718, {	-- Wildheart Spaulders
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(151417, {	-- Worg-Keeper's Spaulders
-							["timeline"] = { "added 7.3.0.24484" },
-						}),
-						i(13208),	-- Bleak Howler Armguards
-						i(13206),	-- Wolfshear Leggings
-					},
-				}),
-				n(9718, {	-- Ghok Bashguud <Bloodaxe Champion> (Rare)
-					["coords"] = {
-						{ 36.0, 72.0, LBRS_HALYCONS_LAIR },
-						{ 36.0, 60.0, LBRS_HALYCONS_LAIR },
-					},
-					["description"] = "This is a rare that is not always present.",
-					["groups"] = {
-						i(13204),	-- Bashguuder
-						i(13198),	-- Hurd Smasher
-						i(13203),	-- Armswake Cloak
-					},
-				}),
-				e(396, {	-- Overlord Wyrmthalak
-					["creatureID"] = 9568,	-- Overlord Wyrmthalak
-					["groups"] = {
-						classicAch(643, {	-- Lower Blackrock Spire
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								5089,	-- General Drakkisath's Command
-								5081,	-- Maxwell's Mission
-								4742,	-- Seal of Ascension
-								4903,	-- Warlord's Command
-							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
+						["groups"] = {
+							objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
+								["questID"] = 8966,	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
+								["provider"] = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+							}),
+							objective(2, {	-- 0/1 Right Piece of Lord Valthalak's Amulet
+								["questID"] = 8989,	-- The Right Piece of Lord Valthalak's Amulet [DRUID, PALADIN, SHAMAN]
+								["provider"] = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
+							}),
+							i(22322),	-- The Jaw Breaker
+							i(22319),	-- Tome of Divine Right
+							i(22325),	-- Belt of the Trickster
+							i(22306),	-- Ironweave Belt
+							i(22398, {	-- Idol of Rejuvenation
+								["timeline"] = { "removed 5.0.4" },
+							}),
+						},
+					}
+					-- #if BEFORE 4.0.3
+					)
+					-- #endif
+					)),
+					n(9596, {	-- Bannok Grimaxe (Rare)
+						["coords"] = {
+							{ 53.0, 67.0, LBRS_TAZZALOR },
+							{ 49.0, 55.0, LBRS_TAZZALOR },
+						},
+						["description"] = "This is a rare that is not always present.",
+						["groups"] = {
+							i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
+							i(12621),	-- Demonfork
+							i(12637),	-- Backusarian Gauntlets
+							i(12634),	-- Chiselbrand Girdle
+						},
+					}),
+					-- #if BEFORE 4.0.3
+					o(175606, {	-- Spire Spider Egg
+						["description"] = "Interacting with a spider egg may spawn baby spiders, beware!",
+						["groups"] = {
+							i(12530, {	-- Spire Spider Egg
+								["timeline"] = { "removed 4.0.3" },
+							}),
+						},
+					}),
+					-- #endif
+					n(10376, {	-- Crystal Fang (Rare)
+						["coord"] = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
+						["description"] = "This is a rare that is not always present.",
+						["groups"] = {
+							i(13218),	-- Fang of the Crystal Spider
+							i(13185),	-- Sunderseer Mantle
+							i(13184),	-- Fallbrush Handgrips
+						},
+					}),
+					e(391, {	-- Mother Smolderweb
+						["creatureID"] = 10596,	-- Mother Smolderweb
+						["groups"] = {
+							i(68673, {	-- Smolderthorn Hatchling (PET!)
+								["timeline"] = { "added 4.0.6.13596" },
+							}),
+							i(13183),	-- Venomspitter
+							i(151414, {	-- Arcanophile's Greatcloak
+								["timeline"] = { "added 7.3.0.24484" },
+							}),
+							i(13244),	-- Gilded Gauntlets
+							i(16715, {	-- Wildheart Boots
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(13213),	-- Smolderweb's Eye
+						},
+					}),
+					e(392, {	-- Urok Doomhowl
+						["creatureID"] = 10584,	-- Urok Doomhowl
+						["description"] = "Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
+						["cost"] = {
+							{ "i", 12533, 1 },	-- Roughshod Pike
+							{ "i", 12534, 1 },	-- Omokk's Head
+						},
+						["groups"] = {
+							i(12712, {	-- Warosh's Mojo
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(18784, {	-- Top Half of Advanced Armorsmithing: Volume III
+								["timeline"] = { "removed 4.0.1" },
+							}),
+							i(13258),	-- Slaghide Gauntlets
+							applyclassicphase(PHASE_FIVE, i(22232)),	-- Marksman's Girdle
+							i(13259),	-- Ribsteel Footguards
+							i(13178),	-- Rosewine Circle
+						},
+					}),
+					e(393, {	-- Quartermaster Zigris
+						["creatureID"] = 9736,	-- Quartermaster Zigris
+						["groups"] = {
+							applyclassicphase(TBC_PHASE_ONE, i(21955)),	-- Design: Black Diamond Crab
+							i(12835),	-- Plans: Annihilator (RECIPE!)
+							-- #if AFTER 4.0.3
+							i(12264),	-- Worg Carrier (PET!)
 							-- #endif
-						}),
-						ach(5052, {	-- Lower Blackrock Spire Guild Run
-							["timeline"] = { "added 4.0.3" },
-						}),
-						i(142370, {	-- Plans: Arcanite Champion
-							["timeline"] = { "added 7.1.5.23360" },
-						}),
-						i(12780, {	-- General Drakkisath's Command
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(12337),	-- Gemstone of Bloodaxe
-						i(13148, {	-- Chillpike
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(13163),	-- Relentless Scythe
-						i(13161),	-- Trindlehaven Staff
-						i(13162),	-- Reiver Claws
-						i(16679, {	-- Beaststalker's Mantle
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(13143),	-- Mark of the Dragon Lord
-						i(13164, {	-- Heart of the Scale
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						applyclassicphase(PHASE_FIVE, i(22321)),	-- Heart of Wyrmthalak
-					},
-				}),
+							i(13253),	-- Hands of Power
+							i(13252),	-- Cloudrunner Girdle
+							i(151416, {	-- Dark Horde Grunt's Legplates
+								["timeline"] = { "added 7.3.0.24484" },
+							}),
+							i(151415, {	-- Veteran Spearman's Chain Boots
+								["timeline"] = { "added 7.3.0.24484" },
+							}),
+							i(13247, {	-- Quartermaster Zigris' Footlocker
+								["description"] = "Contains a random green item.",
+								["timeline"] = { "removed 6.0.2" },	-- NOTE: Exact patch not known
+							}),
+						},
+					}),
+					e(394, {	-- Halycon
+						["creatureID"] = 10220,	-- Halycon
+						["groups"] = {
+							i(13212),	-- Halcyon's Spiked Collar
+							applyclassicphase(PHASE_FIVE, i(22313)),	-- Ironweave Bracers
+							i(13211),	-- Slashclaw Bracers
+							i(13210),	-- Pads of the Dread Wolf
+						},
+					}),
+					e(395, {	-- Gizrul the Slavener
+						["creatureID"] = 10268,	-- Gizrul the Slavener
+						["description"] = "Summoned immediately after Halycon is defeated.",
+						["groups"] = {
+							i(13205),	-- Rhombeard Protector
+							i(151418, {	-- Raider Aspirant's Helm
+								["timeline"] = { "added 7.3.0.24484" },
+							}),
+							i(16718, {	-- Wildheart Spaulders
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(151417, {	-- Worg-Keeper's Spaulders
+								["timeline"] = { "added 7.3.0.24484" },
+							}),
+							i(13208),	-- Bleak Howler Armguards
+							i(13206),	-- Wolfshear Leggings
+						},
+					}),
+					n(9718, {	-- Ghok Bashguud <Bloodaxe Champion> (Rare)
+						["coords"] = {
+							{ 36.0, 72.0, LBRS_HALYCONS_LAIR },
+							{ 36.0, 60.0, LBRS_HALYCONS_LAIR },
+						},
+						["description"] = "This is a rare that is not always present.",
+						["groups"] = {
+							i(13204),	-- Bashguuder
+							i(13198),	-- Hurd Smasher
+							i(13203),	-- Armswake Cloak
+						},
+					}),
+					e(396, {	-- Overlord Wyrmthalak
+						["creatureID"] = 9568,	-- Overlord Wyrmthalak
+						["groups"] = {
+							classicAch(643, {	-- Lower Blackrock Spire
+								-- #if BEFORE WRATH
+								["sourceQuests"] = {
+									5089,	-- General Drakkisath's Command
+									5081,	-- Maxwell's Mission
+									4742,	-- Seal of Ascension
+									4903,	-- Warlord's Command
+								},
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
+								-- #endif
+							}),
+							ach(5052, {	-- Lower Blackrock Spire Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
+							i(142370, {	-- Plans: Arcanite Champion
+								["timeline"] = { "added 7.1.5.23360" },
+							}),
+							i(12780, {	-- General Drakkisath's Command
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(12337),	-- Gemstone of Bloodaxe
+							i(13148, {	-- Chillpike
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(13163),	-- Relentless Scythe
+							i(13161),	-- Trindlehaven Staff
+							i(13162),	-- Reiver Claws
+							i(16679, {	-- Beaststalker's Mantle
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(13143),	-- Mark of the Dragon Lord
+							i(13164, {	-- Heart of the Scale
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							applyclassicphase(PHASE_FIVE, i(22321)),	-- Heart of Wyrmthalak
+						},
+					}),
 			-- #if BEFORE 6.0.1
+				},
 			}),
 			-- #endif
-			n(-28, {	-- Upper
+			header(HEADERS.Global, "DUNGEON_FLOOR_UPPERBLACKROCKSPIRE1", {	-- Dragonspire Hall (Upper)
+				["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
 				-- #if BEFORE 3.0.8
-				["description"] = "One member of your group must have completed the Seal of Ascension quest chain in order for the fires to light and the door to open to this portion of the instance.",
+				["description"] = "One member of your group must have completed the Seal of Ascension quest chain in order for the fires to light and the door to open to this portion of the instance. Also known as 'Upper' Blackrock Spire.",
 				["cost"] = { { "i", 12344, 1 } },	-- Seal of Ascension
+				-- #else
+				["description"] = "Also known as 'Upper' Blackrock Spire.",
 				-- #endif
 				["timeline"] = { "removed 6.0.2" },
 				["groups"] = {

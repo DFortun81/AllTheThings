@@ -13163,6 +13163,9 @@ local AlternateDataTypes = {
 	["n"] = function(id)
 		return app.NPCNameFromID[id], app.NPCDisplayIDFromID[id];
 	end,
+	["_G"] = function(id)
+		return _G[id];
+	end,
 };
 -- Returns the 'name' and 'icon' values to use for a given id/type automatic name lookup
 local function GetAutomaticHeaderData(id, type)

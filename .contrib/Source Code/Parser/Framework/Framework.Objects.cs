@@ -1761,7 +1761,8 @@ end");
                             }
                             else
                             {
-                                LogError($"Invalid Numeric Format for Merge - {field}:{value}");
+                                // In order to support _G, it was necessary.
+                                item[field] = value;
                             }
                             break;
                         }
