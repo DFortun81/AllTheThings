@@ -24,10 +24,10 @@ r(12691),	-- Artisan Gemology
 r(29354),	-- Mining
 r(32606),	-- Mining
 3.0.1.8303
-r(49253),	-- 
-r(49254),	-- 
-r(49255),	-- 
-r(49260),	-- 
+r(49253),	--
+r(49254),	--
+r(49255),	--
+r(49260),	--
 3.0.1.8622
 r(50310),	-- Mining
 r(53040),	-- Toughness
@@ -36,14 +36,14 @@ r(53121),	-- Toughness
 r(53122),	-- Toughness
 r(53123),	-- Toughness
 r(53124),	-- Toughness
-r(53417),	-- 
+r(53417),	--
 4.0.1.12911
-r(74496),	-- 
+r(74496),	--
 r(74517),	-- Mining
 5.0.3.15890
 r(102161),	-- Mining
-r(102163),	-- 
-r(110955),	-- 
+r(102163),	--
+r(110955),	--
 6.0.1.18179
 r(158754),	-- Mining
 7.3.0.24473
@@ -141,11 +141,11 @@ r(35751),	-- Fire Sunder
 r(46353),	-- Smelt Hardened Khorium
 3.0.1.8303
 r(49252),	-- Smelt Cobalt
-r(49253),	-- 
-r(49254),	-- 
-r(49255),	-- 
+r(49253),	--
+r(49254),	--
+r(49255),	--
 r(49258),	-- Smelt Saronite
-r(49260),	-- 
+r(49260),	--
 3.0.1.8622
 r(50310),	-- Mining
 r(53040),	-- Toughness
@@ -154,14 +154,14 @@ r(53121),	-- Toughness
 r(53122),	-- Toughness
 r(53123),	-- Toughness
 r(53124),	-- Toughness
-r(53417),	-- 
+r(53417),	--
 3.0.1.8874
 r(55208),	-- Smelt Titansteel
 r(55211),	-- Smelt Titanium
 3.3.5.12340
 r(70524),	-- Enchanted Thorium Bar \\ Enchanted Thorium
 4.0.1.12911
-r(74496),	-- 
+r(74496),	--
 r(74517),	-- Mining
 r(74529),	-- Smelt Pyrite
 r(74530),	-- Smelt Elementium
@@ -169,10 +169,10 @@ r(74537),	-- Smelt Hardened Elementium
 r(84038),	-- Smelt Obsidium
 5.0.3.15890
 r(102161),	-- Mining
-r(102163),	-- 
+r(102163),	--
 r(102165),	-- Smelt Ghost Iron
 r(102167),	-- Smelt Trillium
-r(110955),	-- 
+r(110955),	--
 6.0.1.18179
 r(158754),	-- Mining
 7.3.0.24473

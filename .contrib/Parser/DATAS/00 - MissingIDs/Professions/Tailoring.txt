@@ -18,24 +18,24 @@ r(56048),	-- Duskweave Boots
 3.1.0.9767
 r(59390),	-- Cloth Scavenging \\ Northern Cloth Scavenging
 4.0.1.12911
-r(75143),	-- 
+r(75143),	--
 r(75154),	-- Master's Spellthread
 r(75155),	-- Sanctified Spellthread
 r(75156),	-- Tailoring
-r(75172),	-- 
-r(75175),	-- 
-r(75178),	-- 
+r(75172),	--
+r(75175),	--
+r(75178),	--
 r(75183),	-- Unravel Embersilk Cloth
-r(75287),	-- 
+r(75287),	--
 4.3.4.15595
-r(102171),	-- 
+r(102171),	--
 5.0.3.15890
 r(104115),	-- Release Fire Spirit
 r(110426),	-- Tailoring
-r(110955),	-- 
-r(125481),	-- 
-r(125482),	-- 
-r(125483),	-- 
+r(110955),	--
+r(125481),	--
+r(125482),	--
+r(125483),	--
 6.0.1.18179
 r(158758),	-- Tailoring
 7.3.0.24473
@@ -571,16 +571,16 @@ r(75597),	-- Frosty Flying Carpet
 r(74964),	-- Bolt of Embersilk Cloth
 r(75141),	-- Dream of Skywall
 r(75142),	-- Dream of Deepholm
-r(75143),	-- 
+r(75143),	--
 r(75144),	-- Dream of Hyjal
 r(75145),	-- Dream of Ragnaros
 r(75146),	-- Dream of Azshara
 r(75154),	-- Master's Spellthread
 r(75155),	-- Sanctified Spellthread
 r(75156),	-- Tailoring
-r(75172),	-- 
-r(75175),	-- 
-r(75178),	-- 
+r(75172),	--
+r(75175),	--
+r(75178),	--
 r(75183),	-- Unravel Embersilk Cloth
 r(75247),	-- Embersilk Net
 r(75248),	-- Deathsilk Belt
@@ -606,7 +606,7 @@ r(75267),	-- Spiritmend Robe
 r(75268),	-- Hyjal Expedition Bag
 r(75269),	-- Vicious Fireweave Belt
 r(75270),	-- Vicious Embersilk Bracers
-r(75287),	-- 
+r(75287),	--
 r(75288),	-- Black Embersilk Gown
 r(75289),	-- High Society Top Hat
 r(75290),	-- Vicious Fireweave Bracers
@@ -642,14 +642,14 @@ r(101920),	-- World Mender's Pants
 r(101921),	-- Lavaquake Legwraps
 r(101922),	-- Dreamwraps of the Light
 r(101923),	-- Bracers of Unconquered Power
-r(102171),	-- 
+r(102171),	--
 5.0.3.15890
 r(104115),	-- Release Fire Spirit
 r(110426),	-- Tailoring
-r(110955),	-- 
-r(125481),	-- 
-r(125482),	-- 
-r(125483),	-- 
+r(110955),	--
+r(125481),	--
+r(125482),	--
+r(125483),	--
 r(125496),	-- Master's Spellthread
 r(125497),	-- Sanctified Spellthread
 r(125523),	-- Windwool Hood

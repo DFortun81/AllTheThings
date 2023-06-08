@@ -650,3 +650,5 @@
 510@@@Whelptender %s
 10.1.5.49824
 513@@@%s Unparalleled
+10.1.5.49908
+512@@@%s The Inquisitve

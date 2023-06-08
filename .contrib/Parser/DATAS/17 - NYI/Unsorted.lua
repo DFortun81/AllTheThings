@@ -848,6 +848,383 @@ root(ROOTS.Unsorted, {
 			i(206997),	-- Gilded Sunglasses
 			i(206998),	-- Ragged Mantid Sword
 			i(207003),	-- Gilded Vase
+			i(16222),	-- Formula: Enchant Shield - Vitality
+			i(206749),	-- Oil-Soaked Log Book
+			i(206958),	-- Paracausal Fragment of Val'anyr
+			i(206983),	-- Paracausal Fragment of Frostmourne
+			i(206998),	-- Amber Sword
+			i(207005),	-- Paracausal Fragment of Thunderfin, Humid Blade of the Tideseeker
+			i(207008),	-- A Fish
+			i(207011),	-- Warblades of the Hakkari, Reborn
+			i(207014),	-- Jingoist's Slicer
+			i(207015),	-- Warmonger's Ripper
+			i(207016),	-- Time Mender's Tabard
+			i(207017),	-- Time Mender's Cape
+			i(207018),	-- Time Mender's Spaulders
+			i(207019),	-- Princess Vorquistrasza
+			i(207020),	-- Ensemble: Time Mender's Vestments
+			i(207024),	-- Paracausal Fragment of Shalamayne
+			i(207027),	-- Greater Encapsulated Destiny
+			i(207029),	-- Scarlet Zealot's Heater Shield
+			i(207030),	-- Dilated Time Capsule
+			i(207031),	-- Bomb Lobber
+			i(207032),	-- Shrapnel Spreader
+			i(207033),	-- Flamethrower
+			i(207034),	-- Railgun
+			i(207035),	-- Thunderbolt
+			i(207036),	-- Crankshot
+			i(207037),	-- Empty Gun Rack
+			i(207038),	-- Empty Gun Rack
+			i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
+			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
+			i(207046),	-- Ensemble: Valhalas Ceremonial Armor
+			i(207047),	-- Ensemble: Hauberk of Discipline
+			i(207048),	-- Ensemble: Overgrown Garms
+			i(207049),	-- Ensemble: Decorous Garments
+			i(207050),	-- Warmonger's Plate Gear Bag
+			i(207051),	-- Warmonger's Plate Equipment Bag
+			i(207052),	-- Jingoist's Plate Equipment Bag
+			i(207053),	-- Jingoist's Plate Gear Bag
+			i(207057),	-- Gift of the White War Wolf
+			i(207058),	-- Fractured Shin
+			i(207059),	-- Skeletal Knight's Blade
+			i(207060),	-- Skeletal Knight's Buckler
+			i(207063),	-- Jingoist's Mail Equipment Bag
+			i(207064),	-- Jingoist's Mail Gear Bag
+			i(207065),	-- Warmonger's Mail Gear Bag
+			i(207066),	-- Warmonger's Mail Equipment Bag
+			i(207067),	-- Jingoist's Leather Gear Bag
+			i(207068),	-- Jingoist's Leather Equipment Bag
+			i(207069),	-- Warmonger's Leather Equipment Bag
+			i(207070),	-- Warmonger's Leather Gear Bag
+			i(207071),	-- Jingoist's Cloth Gear Bag
+			i(207072),	-- Jingoist's Cloth Equipment Bag
+			i(207073),	-- Warmonger's Cloth Equipment Bag
+			i(207074),	-- Warmonger's Cloth Gear Bag
+			i(207075),	-- Jingoist's Plate Armor Bag
+			i(207076),	-- Warmonger's Plate Armor Bag
+			i(207077),	-- Warmonger's Mail Armor Bag
+			i(207078),	-- Jingoist's Mail Armor Bag
+			i(207079),	-- Warmonger's Leather Armor Bag
+			i(207080),	-- Jingoist's Leather Armor Bag
+			i(207081),	-- Warmonger's Cloth Armor Bag
+			i(207082),	-- Jingoist's Cloth Armor Bag
+			i(207083),	-- Gift of the Ravenous Black Gryphon
+			i(207088),	-- Glyph of the Shath'Yar
+			i(207091),	-- Technique: Glyph of the Shath'Yar
+			i(207093),	-- Jingoist's Mail Suit Bag
+			i(207094),	-- Warmonger's Leather Suit Bag
+			i(207096),	-- Paracausal Chest
+			i(207099),	-- Tiny Box of Tiny Rocks
+			i(207101),	-- Glyph of Banehollow's Soulstone
+			i(207102),	-- TESTING ITEM DELETE ME
+			i(207111),	-- Grimoire of the Hellfire Fel Imp
+			i(207112),	-- Grimoire of the Void-Touched Fel Imp
+			i(207113),	-- Grimoire of the Trickster Fel Imp
+			i(207114),	-- Grimoire of the Fiendish Imp
+			i(207178),	-- Grimoire of the Darkfire Imp
+			i(207294),	-- Grimoire of the Felfrost Imp
+			i(207295),	-- Grimoire of the Dreadfire Imp
+			i(207296),	-- Grimoire of the Netherbound Imp
+			i(207297),	-- Grimoire of the Felblaze Imp
+			i(207528),	-- Prophetic Stonescales
+			i(207552),	-- Echoing Tyrstone
+			i(207555),	-- Intrepid Shortblade
+			i(207556),	-- Valiant Shortblade
+			i(207557),	-- Magebane Nexus
+			i(207558),	-- Smokesworth's Fireshooter
+			i(207559),	-- Stormwatcher
+			i(207560),	-- Sacred Guardian
+			i(207561),	-- Ichor Slicer
+			i(207562),	-- Skullstone Bludgeon
+			i(207563),	-- Wanderer's Guide
+			i(207564),	-- Refurbished Purifier
+			i(207565),	-- Sanctified Leather Hat
+			i(207566),	-- Accelerating Sandglass
+			i(207567),	-- Ancient Plans: Intrepid Shortblade
+			i(207568),	-- Ancient Plans: Valiant Shortblade
+			i(207569),	-- Ancient Formula: Magebane Nexus
+			i(207570),	-- Ancient Formula: Smokesworth's Fireshooter
+			i(207571),	-- Ancient Formula: Stormwatcher
+			i(207572),	-- Ancient Plans: Sacred Guardian
+			i(207573),	-- Ancient Plans: Ichor Slicer
+			i(207574),	-- Ancient Schematic: Skullstone Bludgeon
+			i(207575),	-- Ancient Technique: Wanderer's Guide
+			i(207576),	-- Ancient Schematic: Refurbished Purifier
+			i(207577),	-- Ancient Pattern: Sanctified Leather Hat
+			i(207579),	-- Time-Thief's Gambit
+			i(207581),	-- Deios's Infinite Mirror
+			i(139312),	-- Charred Glyph
+			i(141063),	-- Charred Recipe
+			i(205199),	-- Slime Sheathed Shell
+			i(206005),	-- Wirt's Fightin' Leg
+			i(206275),	-- Wirt's Haunted Leg
+			i(206276),	-- Wirt's Last Leg
+			i(206638),	-- Azmourne's Corrupted Ashbringer
+			i(206926),	-- Keeper's Mallet
+			i(206928),	-- Attendant's Hammer
+			i(207048),	-- Ensemble: Lifegiver's Garms
+			i(207581),	-- Mirror of Fractured Tomorrows
+			i(207582),	-- Box of Tampered Reality
+			i(207583),	-- Box of Collapsed Reality
+			i(207584),	-- Box of Volatile Reality
+			i(207594),	-- Looter's Purse
+			i(207595),	-- Anachronistic Robes
+			i(207596),	-- Anachronistic Slippers
+			i(207597),	-- Anachronistic Mitts
+			i(207598),	-- Anachronistic Hood
+			i(207599),	-- Anachronistic Breeches
+			i(207600),	-- Anachronistic Mantle
+			i(207601),	-- Anachronistic Sash
+			i(207602),	-- Anachronistic Bindings
+			i(207603),	-- Raiment of Discontinuity
+			i(207604),	-- Treads of Discontinuity
+			i(207605),	-- Gloves of Discontinuity
+			i(207606),	-- Mask of Discontinuity
+			i(207607),	-- Leggings of Discontinuity
+			i(207608),	-- Epaulets of Discontinuity
+			i(207609),	-- Cincture of Discontinuity
+			i(207610),	-- Wristbands of Discontinuity
+			i(207611),	-- Paradoxical Chainmail
+			i(207612),	-- Paradoxical Striders
+			i(207613),	-- Paradoxical Gauntlets
+			i(207614),	-- Paradoxical Cowl
+			i(207615),	-- Paradoxical Tassets
+			i(207616),	-- Paradoxical Spaulders
+			i(207617),	-- Paradoxical Cinch
+			i(207618),	-- Paradoxical Bracers
+			i(207619),	-- Anomalous Chestplate
+			i(207620),	-- Anomalous Stompers
+			i(207621),	-- Anomalous Crushers
+			i(207622),	-- Anomalous Greathelm
+			i(207623),	-- Anomalous Greaves
+			i(207624),	-- Anomalous Pauldrons
+			i(207625),	-- Anomalous Girdle
+			i(207626),	-- Anomalous Vambraces
+			i(207627),	-- Anachronistic Wrap
+			i(207628),	-- Anomalous Cape
+			i(207629),	-- Paradoxical Drape
+			i(207630),	-- Cloak of Discontinuity
+			i(207702),	-- Wartorn Scrap
+			i(207817),	-- Mega Dungeon Bronze Cloth Slippers
+			i(207818),	-- Mega Dungeon Bronze Plate Greaves
+			i(207819),	-- Mega Dungeon Bronze Mail Tassets
+			i(207820),	-- Mega Dungeon Bronze Leather Tassets
+			i(207824),	-- Mega Dungeon Infinite Plate Greaves
+			i(207825),	-- Mega Dungeon Infinite Cloth Slippers
+			i(207828),	-- Mega Dungeon Bronze Cloth Robes
+			i(207829),	-- Mega Dungeon Bronze Cloth Wrap
+			i(207831),	-- Mega Dungeon Bronze Cloth Hood
+			i(207832),	-- Mega Dungeon Bronze Cloth Breeches
+			i(207836),	-- Mega Dungeon Bronze Mail Chainmail
+			i(207837),	-- Mega Dungeon Bronze Leather Drape
+			i(207838),	-- Mega Dungeon Bronze Leather Striders
+			i(207840),	-- Mega Dungeon Bronze Leather Cowl
+			i(207842),	-- Mega Dungeon Bronze Leather Cinch
+			i(207843),	-- Mega Dungeon Bronze Leather Bracers
+			i(207844),	-- Mega Dungeon Bronze Mail Chainmail
+			i(207845),	-- Mega Dungeon Bronze Mail Drape
+			i(207846),	-- Mega Dungeon Bronze Mail Striders
+			i(207851),	-- Mega Dungeon Bronze Mail Bracers
+			i(207854),	-- Mega Dungeon Bronze Plate Stompers
+			i(207855),	-- Mega Dungeon Bronze Plate Crushers
+			i(207858),	-- Mega Dungeon Bronze Plate Girdle
+			i(207860),	-- Mega Dungeon Infinite Cloth Robes
+			i(207861),	-- Mega Dungeon Infinite Cloth Wrap
+			i(207862),	-- Mega Dungeon Infinite Cloth Mitts
+			i(207867),	-- Mega Dungeon Infinite Cloth Bindings
+			i(207868),	-- Mega Dungeon Infinite Leather Raiment
+			i(207869),	-- Mega Dungeon Infinite Leather Cloak
+			i(207870),	-- Mega Dungeon Infinite Leather Treads
+			i(207873),	-- Mega Dungeon Infinite Leather Epaulets
+			i(207874),	-- Mega Dungeon Infinite Leather Cincture
+			i(207876),	-- Mega Dungeon Infinite Mail Chainmail
+			i(207878),	-- Mega Dungeon Infinite Mail Striders
+			i(207879),	-- Mega Dungeon Infinite Mail Gauntlets
+			i(207880),	-- Mega Dungeon Infinite Mail Cowl
+			i(207884),	-- Mega Dungeon Infinite Plate Chestplate
+			i(207891),	-- Mega Dungeon Infinite Plate Vambraces
+			i(207894),	-- Mega Dungeon Bronze Cloth Mitts
+			i(207897),	-- Mega Dungeon Bronze Cloth Mantle
+			i(207898),	-- Mega Dungeon Bronze Cloth Sash
+			i(207899),	-- Mega Dungeon Bronze Cloth Bindings
+			i(207903),	-- Mega Dungeon Bronze Leather Gauntlets
+			i(207905),	-- Mega Dungeon Bronze Leather Spaulders
+			i(207911),	-- Mega Dungeon Bronze Mail Gauntlets
+			i(207912),	-- Mega Dungeon Bronze Mail Cowl
+			i(207913),	-- Mega Dungeon Bronze Mail Spaulders
+			i(207914),	-- Mega Dungeon Bronze Mail Cinch
+			i(207916),	-- Mega Dungeon Bronze Plate Chestplate
+			i(207917),	-- Mega Dungeon Bronze Plate Cape
+			i(207920),	-- Mega Dungeon Bronze Plate Greathelm
+			i(207921),	-- Mega Dungeon Bronze Plate Pauldrons
+			i(207923),	-- Mega Dungeon Bronze Plate Vambraces
+			i(207927),	-- Mega Dungeon Infinite Cloth Hood
+			i(207928),	-- Mega Dungeon Infinite Cloth Breeches
+			i(207929),	-- Mega Dungeon Infinite Cloth Mantle
+			i(207930),	-- Mega Dungeon Infinite Cloth Sash
+			i(207935),	-- Mega Dungeon Infinite Leather Gloves
+			i(207936),	-- Mega Dungeon Infinite Leather Mask
+			i(207939),	-- Mega Dungeon Infinite Leather Wristbands
+			i(207941),	-- Mega Dungeon Infinite Mail Drape
+			i(207945),	-- Mega Dungeon Infinite Mail Spaulders
+			i(207946),	-- Mega Dungeon Infinite Mail Cinch
+			i(207947),	-- Mega Dungeon Infinite Mail Bracers
+			i(207949),	-- Mega Dungeon Infinite Plate Cape
+			i(207950),	-- Mega Dungeon Infinite Plate Stompers
+			i(207951),	-- Mega Dungeon Infinite Plate Crushers
+			i(207952),	-- Mega Dungeon Infinite Plate Greathelm
+			i(207953),	-- Mega Dungeon Infinite Plate Pauldrons
+			i(207954),	-- Mega Dungeon Infinite Plate Girdle
+			i(207956),	-- Thunderspine Nest
+			i(207958),	-- Mega Dungeon Infinite Mail Tassets
+			i(207960),	-- Mega Dungeon Infinite Leather Tassets
+			i(207961),	-- 10.1.5 Time Rifts - Plate Bronze Sets - Capture Media
+			i(207965),	-- 10.1.5 Time Rifts - Mail Bronze Sets - Capture Media
+			i(207966),	-- 10.1.5 Time Rifts - Leather Bronze Sets - Capture Media
+			i(207967),	-- 10.1.5 Time Rifts - Cloth Bronze Sets - Capture Media
+			i(207968),	-- 10.1.5 Time Rifts - Plate Infinite Sets - Capture Media
+			i(207969),	-- 10.1.5 Time Rifts - Mail Infinite Sets - Capture Media
+			i(207970),	-- 10.1.5 Time Rifts - Leather Infinite Sets - Capture Media
+			i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
+			i(207976),	-- Wand of Concurrence
+			i(207977),	-- Rift Render
+			i(207978),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Shield
+			i(207979),	-- Timespan Scepter
+			i(207980),	-- Inevitable Claymore
+			i(207981),	-- Time Spliter
+			i(207982),	-- Timeless Bulwark
+			i(207983),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Offhand
+			i(207984),	-- Suffused Wand
+			i(207985),	-- Rifle In Time
+			i(207986),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Gun
+			i(207987),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Polearm - 2H AGI
+			i(207988),	-- Time Keeper's Polearm
+			i(207989),	-- Chronospire
+			i(207990),	-- Temporal Battle Staff
+			i(207991),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Warglaive
+			i(207992),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Axe - 1H AGI
+			i(207993),	-- Spacetime Cleaver
+			i(207994),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Sword - 1H AGI
+			i(207995),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H STR
+			i(207996),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Dagger - 1H AGI
+			i(207997),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Dagger - 1H INT
+			i(207998),	-- Concussive Antecedent
+			i(207999),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Mace - 1H INT
+			i(208000),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Mace - 1H AGI
+			i(208001),	-- Suffused Cudgel
+			i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
+			i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
+			i(208006),	-- Greater Paracausal Chest
+			i(208015),	-- Stuffed Deviate Scale Pouch
+			i(208016),	-- Deviate Scale Pouch
+			i(208018),	-- Fangblade
+			i(208019),	-- Quagmire Trudgers
+			i(208020),	-- Dagmire Gloves
+			i(208021),	-- Sizzling Stick
+			i(208028),	-- Knot Thimblejack's Cache
+			i(208029),	-- Scareloc Parts
+			i(208030),	-- Advanced Titan Gizmo
+			i(208031),	-- Convenient Crate
+			i(208042),	-- Cuts In Time
+			i(208043),	-- Precedented Mallet
+			i(190077),	-- Scarlet Zealot's Heater Shield
+			i(190169),	-- Quawks
+			i(190427),	-- Scarlet Zealot's Cloak
+			i(190431),	-- Veteran Grunt's Chopper
+			i(190433),	-- Shifty Merchant's Tunic
+			i(190443),	-- Pustulent Demonheart Fetish
+			i(190444),	-- Scarlet Zealot's Cassock
+			i(190447),	-- Soulburner Bardiche
+			i(190690),	-- Flame-Forged Fel Fang
+			i(190796),	-- Ensemble: Slumbering Caldera Regalia
+			i(190817),	-- Sentinel's Tower Shield
+			i(190821),	-- Sunspire Battle Staff
+			i(190869),	-- Emberstone Dress
+			i(201230),	-- Ensemble: Helarjar Berserker Warplate
+			i(202174),	-- Wanderer's Carrot Scarf
+			i(202175),	-- Wanderer's Carrot Cloak
+			i(202176),	-- Vagabond's Carrot Hood
+			i(202177),	-- Vagabond's Carrot Cape
+			i(202178),	-- Ensemble: Vagabond's Carrot Threads
+			i(202179),	-- Ensemble: Wanderer's Carrot Trappings
+			i(204686),	-- Titan's Containment Device
+			i(206161),	-- Time-Displaced Toy
+			i(206926),	-- Off-Sync Off-Hammer
+			i(206927),	-- Depleted Chronoforged Mallet
+			i(206928),	-- Echoing Temporadic Gavel
+			i(206976),	-- Royal Swarmer's Reins
+			i(207016),	-- Rift-Mender's Tabard
+			i(207017),	-- Rift-Mender's Cape
+			i(207018),	-- Rift-Mender's Spaulders
+			i(207020),	-- Ensemble: Rift-Mender's Vestments
+			i(207558),	-- Smoked Fireshooter
+			i(207570),	-- Ancient Formula: Smoked Fireshooter
+			i(207976),	-- Chroniton Wand
+			i(207981),	-- Time Splitter
+			i(207984),	-- Chroniton Wand
+			i(207985),	-- Ever-Repeating Rifle
+			i(207996),	-- Nick of Time
+			i(207998),	-- Hoursteel Mace
+			i(208001),	-- Timewalker's Cudgel
+			i(208008),	-- Doomrubble
+			i(208009),	-- Gill'dan
+			i(208011),	-- Obsidian Warwhelp
+			i(208012),	-- Briarhorn Hatchling
+			i(208042),	-- Edge of Tomorrow
+			i(208043),	-- Bronzegift Mallet
+			i(208048),	-- Ritual of the Voidmaw Felhunter
+			i(208050),	-- Grimoire of the Xorothian Felhunter
+			i(208051),	-- Grimoire of the Antoran Felhunter
+			i(208052),	-- Grimoire of the Voracious Felmaw
+			i(208053),	-- Time Inert Souvenir
+			i(208057),	-- Smoldering Banner of the Aspects
+			i(208058),	-- Minute Glass
+			i(208061),	-- Quantum Headpiece
+			i(208062),	-- Quantum Shoulders
+			i(208063),	-- Quantum Gloves
+			i(208064),	-- Quantum Chestpiece
+			i(208065),	-- Quantum Legs
+			i(208068),	-- Rotten Delicious
+			i(208090),	-- Contained Paracausality
+			i(208091),	-- Cache of Timewarped Treasures
+			i(208094),	-- Cache of Timewarped Treasures
+			i(208095),	-- Cache of Timewarped Treasures
+			i(208096),	-- Familiar Journal
+			i(208097),	-- Flamethrower
+			i(208100),	-- Seashellamayne the Shattered
+			i(208102),	-- Cliffside Wylderdrake: Infinite Scales
+			i(208103),	-- Highland Drake: Infinite Scales
+			i(208104),	-- Renewed Proto-Drake: Infinite Scales
+			i(208105),	-- Windborne Velocidrake: Infinite Scales
+			i(208106),	-- Winding Slitherdrake: Infinite Scales
+			i(208108),	-- Madam Shadow's Old Grimoire
+			i(208109),	-- Quantum Sword
+			i(208110),	-- Quantum Mace
+			i(208111),	-- Quantum Axe
+			i(208112),	-- Quantum Greatsword
+			i(208113),	-- Quantum Greataxe
+			i(208114),	-- Quantum Greathammer
+			i(208115),	-- Quantum Staff
+			i(208116),	-- Quantum Polearm
+			i(208117),	-- Quantum Bow
+			i(208118),	-- Quantum Crossbow
+			i(208119),	-- Quantum Firearm
+			i(208120),	-- Quantum Knife
+			i(208121),	-- Quantum Knuckles
+			i(208122),	-- Quantum Warglaives
+			i(208123),	-- Quantum Wand
+			i(208125),	-- Quantum Focus
+			i(208126),	-- Quantum Shield
+			i(208132),	-- Stormwind Insignia
+			i(208133),	-- Orgrimmar Insignia
+			i(208134),	-- Rustbolt Resistance Insignia
+			i(208138),	-- N'Ruby
+			i(208147),	-- Yellow Tweed Cap
+			i(208148),	-- Burgandy Cap
+			i(208149),	-- Brown Tweed Cap
+			i(208150),	-- Blue Tweed Cap
+			i(208152),	-- Pattie's Cap
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			filter(RECIPES, {

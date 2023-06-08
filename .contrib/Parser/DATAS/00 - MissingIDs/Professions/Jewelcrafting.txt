@@ -82,7 +82,7 @@ r(73642),	-- Figurine - Jeweled Serpent
 r(73643),	-- Figurine - Dream Owl
 5.0.3.15890
 r(110420),	-- Jewelcrafting
-r(110955),	-- 
+r(110955),	--
 6.0.1.18179
 r(158750),	-- Jewelcrafting
 7.3.0.24473
@@ -1097,7 +1097,7 @@ r(107766),	-- Powerful Primal Diamond
 r(107767),	-- Reverberating Primal Diamond
 r(107768),	-- Revitalizing Primal Diamond
 r(110420),	-- Jewelcrafting
-r(110955),	-- 
+r(110955),	--
 r(120045),	-- Jeweled Onyx Panther
 r(121841),	-- Ruby Panther
 r(121842),	-- Sapphire Panther

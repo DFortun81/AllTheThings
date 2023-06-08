@@ -108,7 +108,6 @@ r(309214),	-- Unseelie Leather \\ Tooled Fae Leather
 r(309215),	-- Sinful Leather \\ Tooled Venthyr Leather
 r(309216),	-- Necrotic Leather \\ Tooled Necro Leather
 r(309217),	-- Purified Leather \\ Tooled Kyrian Leather
-r(309222),	-- Loosened Belt \\ Modified Crafting Reagent 01
 r(309223),	-- Modified Crafting Reagent 02
 r(309224),	-- Modified Crafting Reagent 03
 r(309225),	-- Modified Crafting Reagent 04

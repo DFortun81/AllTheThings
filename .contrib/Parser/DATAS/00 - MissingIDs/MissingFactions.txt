@@ -1,4 +1,4 @@
-0.5.3.3368
+0.5.3.3368 
 faction(1),	-- PLAYER, Human \\ Human (Player)
 faction(2),	-- PLAYER, Orc \\ Orc (Player)
 faction(3),	-- PLAYER, Dwarf \\ Dwarf (Player)
@@ -86,28 +86,28 @@ faction(148),	-- Ambient
 faction(168),	-- Nethergarde Caravan
 faction(189),	-- Alliance Generic
 faction(209),	-- Nethergarde
-0.5.5.3494
+0.5.5.3494 
 faction(229),	-- Wailing Caverns
 faction(249),	-- Silithid
-0.6.0.3592
+0.6.0.3592 
 faction(269),	-- Silvermoon Remnant \\ Alliance Red Team
 faction(289),	-- Blacksmithing - Weaponsmithing \\ Blacksmithing - Weaponsmithing \\ Blackwater Pirates
-0.7.0.3694
+0.7.0.3694 
 faction(309),	-- Scorpid
 faction(310),	-- Beast - Bat \\ Beast, Bat \\ Bat
 faction(311),	-- Titan
 faction(329),	-- Taskmaster Fizzule
 faction(389),	-- Gnomeregan Bug
 faction(409),	-- Harpy
-0.8.0.3734
+0.8.0.3734 
 faction(429),	-- Burning Blade
 faction(449),	-- Shadowsilk Poacher
 faction(450),	-- Searing Spider \\ Beast, Spider, Searing \\ Searing Spiders
-0.9.0.3807
+0.9.0.3807 
 faction(469),	-- Alliance \\ _REUSE ME 002
 faction(471),	-- DEPRECATED Wildhammer Clan, DEPRECATED \\ Dwarf, Wildhammer \\ Wildhammer Clan
 faction(489),	-- Goblin, Dark Iron Bar Patron \\ Goblin, Darkiron Bar Patron
-1.0.0.3980
+1.0.0.3980 
 faction(511),	-- Giant
 faction(531),	-- Dragonflight, Bronze
 faction(532),	-- Dragonflight, Blue
@@ -123,7 +123,7 @@ faction(574),	-- Caer Darrow
 faction(575),	-- Furbolg, Uncorrupted
 faction(629),	-- Shatterspear Trolls
 faction(630),	-- Ravasaur Trainers
-1.1.2.4125
+1.1.2.4125 
 faction(649),	-- Majordomo Executus
 faction(669),	-- Beast - Carrion Bird
 faction(670),	-- Beast - Cat
@@ -137,7 +137,7 @@ faction(677),	-- Beast - Turtle
 faction(678),	-- Beast - Wind Serpent
 faction(679),	-- Training Dummy
 faction(689),	-- Dragonflight, Black - Bait
-1.13.0.28211
+1.13.0.28211 
 faction(709),	-- Battleground Neutral
 faction(750),	-- Sulfuron Firelords
 faction(769),	-- Gizlock's Dummy
@@ -164,14 +164,14 @@ faction(931),	-- Test Faction (not a real faction)
 faction(950),	-- ToWoW - Flag
 faction(951),	-- ToWoW - Flag Trigger Alliance (DND)
 faction(954),	-- ToWoW - Flag Trigger Horde (DND)
-1.13.2.30172
+1.13.2.30172 
 faction(2402),	-- CTF - Flag - Horde
 faction(2403),	-- CTF - Flag - Alliance
-1.14.1.41077
+1.14.1.41077 
 faction(1041),	-- Frenzy
-1.14.2.41959
+1.14.2.41959 
 faction(2505),	-- Dragonflight, Chromatic
-2.0.0.6080
+2.0.0.6080 
 faction(914),	-- PLAYER, Blood Elf
 faction(923),	-- Farstriders
 faction(924),	-- DEPRECATED
@@ -237,7 +237,7 @@ faction(1002),	-- Ethereum Sparbuddy
 faction(1003),	-- Protectorate
 faction(1004),	-- Arcane Annihilator (DNR)
 faction(1005),	-- Friendly, Hidden \\ REUSE
-2.4.3.8606
+2.4.3.8606 
 faction(1006),	-- Kirin'Var - Dathric
 faction(1007),	-- Kirin'Var - Belmara
 faction(1008),	-- Kirin'Var - Luminrath
@@ -281,7 +281,7 @@ faction(1078),	-- Fighting Vanity Pet
 faction(1080),	-- Friendly, Force Reaction 1 \\ Friendly, Force Reaction \\ Monster, Force Reaction
 faction(1081),	-- Object, Force Reaction
 faction(1087),	-- Holiday Monster
-3.0.1.8303
+3.0.1.8303 
 faction(1045),	-- Vrykul
 faction(1046),	-- Northsea Pirates
 faction(1047),	-- Tuskarr
@@ -316,7 +316,7 @@ faction(1097),	-- Wrath of the Lich King \\ Northrend
 faction(1099),	-- Wrathgate Scourge
 faction(1100),	-- Wrathgate Alliance
 faction(1101),	-- Wrathgate Horde
-3.0.1.8622
+3.0.1.8622 
 faction(1102),	-- CTF - Flag - Horde
 faction(1103),	-- CTF - Flag - Neutral
 faction(1107),	-- Troll, Drakkari
@@ -331,15 +331,15 @@ faction(1115),	-- Elemental, Water
 faction(1116),	-- Elemental, Air
 faction(1117),	-- Sholazar Basin
 faction(1118),	-- Classic
-3.0.1.8874
+3.0.1.8874 
 faction(1120),	-- Iron Giants
 faction(1121),	-- Frost Vrykul
 faction(1122),	-- Earthen
 faction(1123),	-- Monster Referee
 faction(1125),	-- Hyldsmeet
-3.1.0.9767
+3.1.0.9767 
 faction(1127),	-- Orgrimmar (Alex Test)
-3.3.5.12340
+3.3.5.12340 
 faction(1136),	-- Tranquillien Conversion
 faction(1137),	-- Wintersaber Conversion
 faction(1145),	-- Hates Everything
@@ -347,7 +347,7 @@ faction(1154),	-- Silver Covenant Conversion
 faction(1155),	-- Sunreavers Conversion
 faction(1159),	-- CTF - Flag - Alliance 2
 faction(1160),	-- CTF - Flag - Horde 2
-4.0.1.12911
+4.0.1.12911 
 faction(1128),	-- Twilight's Hammer
 faction(1129),	-- Furbolg, Blackwood
 faction(1130),	-- Stag, Darkshore
@@ -366,7 +366,7 @@ faction(1163),	-- New test rep for Alex
 faction(1166),	-- Test Faction 5
 faction(1167),	-- Test Faction 5
 faction(1169),	-- Guild
-4.3.4.15595
+4.3.4.15595 
 faction(1179),	-- Slime
 faction(1181),	-- Friendly, New
 faction(1189),	-- K3
@@ -377,7 +377,7 @@ faction(1237),	-- CoT Well of Eternity - Demons
 faction(1240),	-- CoT Well of Eternity - Demon Balls
 faction(1241),	-- CoT Well of Eternity - Hunter Stalkers
 faction(1265),	-- Shen'dralar
-5.0.3.15882
+5.0.3.15882 
 faction(1216),	-- Shang Xi's Academy
 faction(1243),	-- Hozen
 faction(1245),	-- Mists of Pandaria
@@ -397,7 +397,7 @@ faction(1367),	-- Friendly, Force Reaction 4
 faction(1368),	-- Friendly, Force Reaction 5
 faction(1369),	-- Friendly, Force Reaction 6
 faction(1370),	-- Friendly, Force Reaction 7
-6.0.1.18179
+6.0.1.18179 
 faction(1371),	-- Paw'don Village
 faction(1372),	-- Honeydew Village
 faction(1374),	-- Brawl'gar Arena (Season 1) \\ Brawl'gar Arena
@@ -419,7 +419,7 @@ faction(1514),	-- Adherents of Rukhmar \\ Adherents of Arakk
 faction(1520),	-- Shadowmoon Exiles \\ Palemoon Orc
 faction(1521),	-- Shadow Council
 faction(1591),	-- Draenei, Draenor
-7.3.0.24473
+7.3.0.24473 
 faction(1617),	-- Primal
 faction(1618),	-- Breaker
 faction(1623),	-- The Iron Horde
@@ -488,17 +488,17 @@ faction(2100),	-- Corbyn
 faction(2101),	-- Sha'leth
 faction(2102),	-- Impus
 faction(2135),	-- Chromie
-7.3.0.24608
+7.3.0.24608 
 faction(2166),	-- Army of the Light (Paragon)
 faction(2167),	-- Argussian Reach (Paragon)
-7.3.0.24727
+7.3.0.24727 
 faction(2180),	-- _JKL - test rep
-7.3.5.25928
+7.3.5.25928 
 faction(2229),	-- PLAYER, Void Elf
 faction(2230),	-- PLAYER, Highmountain Tauren
 faction(2231),	-- PLAYER, Nightborne
 faction(2232),	-- PLAYER, Lightforged Draenei
-8.0.1.25902
+8.0.1.25902 
 faction(2104),	-- Battle for Azeroth
 faction(2105),	-- Nazmani
 faction(2111),	-- Zandalari Dinosaurs
@@ -522,34 +522,34 @@ faction(2222),	-- 8.0 Hidden Object - Withered - Yellow
 faction(2227),	-- Beast - Bee
 faction(2228),	-- Beast - Wendigo
 faction(2233),	-- Dino Training - Pterrodax
-8.0.1.26032
+8.0.1.26032 
 faction(2242),	-- 8.0 - Stormsong - Crazed Diggers Anti-Social (MDE)
 faction(2243),	-- 8.0 - Stormsong - Crazed Diggers Social (MDE)
-8.0.1.26095
+8.0.1.26095 
 faction(2245),	-- Horde Commanders (MDE)
-8.0.1.26433
+8.0.1.26433 
 faction(2258),	-- Wendigo
 faction(2259),	-- Bees
-8.0.1.26476
+8.0.1.26476 
 faction(2264),	-- Kul Tiras - Drustvar
 faction(2265),	-- Kul Tiras - Stormsong
-8.1.0.27826
+8.1.0.27826 
 faction(2370),	-- Dino Training - Direhorn
 faction(2378),	-- Zandalari Empire (Paragon)
 faction(2379),	-- Proudmoore Admiralty (Paragon)
 faction(2380),	-- Talanji's Expedition (Paragon)
 faction(2381),	-- Storm's Wake (Paragon)
-8.1.0.28048
+8.1.0.28048 
 faction(2382),	-- Voldunai (Paragon)
 faction(2383),	-- Order of Embers (Paragon)
 faction(2384),	-- 7th Legion (Paragon)
 faction(2385),	-- The Honorbound (Paragon)
 faction(2386),	-- Champions of Azeroth (Paragon)
 faction(2387),	-- Tortollan Seekers (Paragon)
-8.1.5.28938
+8.1.5.28938 
 faction(2371),	-- Bizmo's Brawlpub
 faction(2372),	-- Brawl'gar Arena
-8.2.0.30080
+8.2.0.30080 
 faction(2374),	-- The Unshackled (Paragon) \\ Unshackled (Paragon)
 faction(2375),	-- Hunter Akana
 faction(2376),	-- Farseer Ori
@@ -563,15 +563,15 @@ faction(2396),	-- Honeyback Drone \\ Tidebreak Guardian \\ Drone
 faction(2397),	-- Honeyback Hivemother \\ Tidebreak Hivemother \\ Queen
 faction(2398),	-- Honeyback Harvester \\ Tidebreak Harvester \\ Honey Bee
 faction(2401),	-- Waveblade Ankoan (Paragon) \\ Ankoan (Paragon)
-8.3.0.32044
+8.3.0.32044 
 faction(2416),	-- Rajani (Paragon)
 faction(2418),	-- Uldum Accord (Paragon)
 faction(2419),	-- Nzoth
-8.3.0.32489
+8.3.0.32489 
 faction(2427),	-- Aqir Hatchling
-8.3.0.32593
+8.3.0.32593 
 faction(2431),	-- Owen Test
-9.0.1.33978
+9.0.1.33978 
 faction(2404),	-- House of Constructs \\ 9.0 Maldraxxus - Abominations
 faction(2405),	-- House of Rituals \\ 9.0 Maldraxxus - Lich
 faction(2406),	-- House of the Chosen \\ 9.0 Maldraxxus - Warriors
@@ -582,25 +582,25 @@ faction(2414),	-- Shadowlands
 faction(2422),	-- The Wild Hunt \\ Night Fae
 faction(2437),	-- Torghast - Guard
 faction(2438),	-- Torghast - Prisoner
-9.0.1.34714
+9.0.1.34714 
 faction(2440),	-- The Undying Army (Paragon)
 faction(2441),	-- The Ascended (Paragon)
 faction(2442),	-- Court of Harvesters (Paragon)
 faction(2443),	-- The Wild Hunt
 faction(2444),	-- The Wild Hunt (Paragon)
-9.1.0.38312
+9.1.0.38312 
 faction(2468),	-- Korthia
 faction(2471),	-- Death's Advance (Paragon)
-9.1.0.38511
+9.1.0.38511 
 faction(2473),	-- The Archivists' Codex (Paragon) \\ The Archivist's Codex (Paragon)
 faction(2474),	-- Ve'nari (Paragon)
-9.2.0.41089
+9.2.0.41089 
 faction(2469),	-- Fractal Lore
 faction(2479),	-- The Enlightened (Paragon)
 faction(2480),	-- Automa
 faction(2481),	-- Automa (Paragon)
 faction(2502),	-- Zereth Mortis Lured Monsters
-10.0.0.44649
+10.0.0.44649 
 faction(2503),	-- Maruuk Centaur
 faction(2504),	-- Maruuk Centaur (Paragon)
 faction(2506),	-- Dragonflight
@@ -626,16 +626,16 @@ faction(2545),	-- Maruuk Centaur (Renown)
 faction(2546),	-- Iskaara Tuskarr (Renown)
 faction(2547),	-- Dragonscale Expedition (Renown)
 faction(2548),	-- Valdrakken Accord (Renown)
-10.0.0.44795
+10.0.0.44795 
 faction(2551),	-- Iskaara Tuskarr (Paragon)
 faction(2552),	-- Valdrakken Accord (Paragon)
-10.0.0.44999
+10.0.0.44999 
 faction(2553),	-- Soridormi \\ Timewalkers
-10.0.0.45141
+10.0.0.45141 
 faction(2554),	-- Clan Toghus
 faction(2555),	-- Clan Kaighan
-10.0.7.47910
+10.0.7.47910 
 faction(2557),	-- Hearthfire Fellowship
-10.1.0.48480
+10.1.0.48480 
 faction(2564),	-- Loamm Niffen
 faction(2565),	-- Loamm Niffen (Paragon)

@@ -1,7 +1,7 @@
 5.0.3.15882
 pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	-- 
-pet(73),	-- 
+pet(71),	--
+pet(73),	--
 pet(154),	-- Lucky
 pet(230),	-- Macabre Marionette
 pet(257),	-- Murkimus the Gladiator
@@ -188,6 +188,15 @@ pet(3608),	-- Lifelike Mechanical Turtle
 pet(3609),	-- Sporeflower
 pet(3975),	-- Midnight Terrorwing
 pet(4237),	-- Treanthony
+10.1.5.49908
+pet(4255),	-- Briarhorn Hatchling
+pet(4257),	-- Gill'dan
+pet(4258),	-- Jeepers
+pet(4259),	-- Doomrubble
+pet(4260),	-- Killbot 9000
+pet(4261),	-- Obsidian Warwhelp
+pet(4262),	-- N'Ruby
+pet(4263),	-- Tobias
 
 
 
@@ -196,8 +205,8 @@ Missing in PetDB.lua
 
 5.0.3.15882
 pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	-- 
-pet(73),	-- 
+pet(71),	--
+pet(73),	--
 pet(154),	-- Lucky
 pet(230),	-- Macabre Marionette
 pet(257),	-- Murkimus the Gladiator
@@ -254,3 +263,12 @@ pet(3608),	-- Lifelike Mechanical Turtle
 pet(3609),	-- Sporeflower
 pet(3975),	-- Midnight Terrorwing
 pet(4237),	-- Treanthony
+10.1.5.49908
+pet(4255),	-- Briarhorn Hatchling
+pet(4257),	-- Gill'dan
+pet(4258),	-- Jeepers
+pet(4259),	-- Doomrubble
+pet(4260),	-- Killbot 9000
+pet(4261),	-- Obsidian Warwhelp
+pet(4262),	-- N'Ruby
+pet(4263),	-- Tobias

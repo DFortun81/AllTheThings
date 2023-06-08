@@ -1,11 +1,13 @@
-3.4.1.47966
+3.4.1.47966 
 title(210),	-- Battlemaster %s
-9.2.0.41726
+9.2.0.41726 
 title(453),	-- %s the [PH] TBD Title
-10.0.2.45779
+10.0.2.45779 
 title(480),	-- %s, Knight of Feathersworth
-10.1.5.49516
+10.1.5.49516 
 title(496),	-- Kalimdor Racer %s
 title(510),	-- Whelptender %s
-10.1.5.49824
+10.1.5.49824 
 title(513),	-- %s Unparalleled
+10.1.5.49908 
+title(512),	-- %s The Inquisitve

@@ -34,7 +34,7 @@ r(30573),	-- Gnomish Tonk Controller
 r(49383),	-- Engineering
 3.0.1.8622
 r(51306),	-- Engineering
-r(53280),	-- 
+r(53280),	--
 3.0.1.8874
 r(56273),	-- Wormhole: Gadgetzan
 r(56474),	-- Mammoth Cutters
@@ -44,29 +44,29 @@ r(67790),	-- Dimensional Folder: K3
 r(72952),	-- Shatter Rounds
 r(72953),	-- Iceblade Arrow
 4.0.1.12911
-r(82175),	-- 
-r(82177),	-- 
-r(82180),	-- 
-r(82201),	-- 
+r(82175),	--
+r(82177),	--
+r(82180),	--
+r(82201),	--
 r(82774),	-- Engineering
-r(84344),	-- 
-r(84407),	-- 
-r(84422),	-- 
-r(84423),	-- 
-r(84433),	-- 
-r(84434),	-- 
+r(84344),	--
+r(84407),	--
+r(84422),	--
+r(84423),	--
+r(84433),	--
+r(84434),	--
 4.3.4.15595
 r(82207),	-- Explosive Bolts
 r(105518),	-- Open Box
 5.0.3.15890
-r(108789),	-- 
-r(109077),	-- 
+r(108789),	--
+r(109077),	--
 r(110403),	-- Engineering
-r(110955),	-- 
-r(126731),	-- 
+r(110955),	--
+r(126731),	--
 6.0.1.18179
 r(158739),	-- Engineering
-r(161543),	-- 
+r(161543),	--
 7.3.0.24473
 r(195112),	-- Engineering
 8.0.1.25902
@@ -100,12 +100,12 @@ r(310481),	-- Kyrian Glider Kit
 r(310482),	-- Maldraxxian Glider Kit
 r(310483),	-- Stoneborn Glider Kit
 r(310488),	-- Disposable Ectoplasmic Specs
-r(310489),	-- 
+r(310489),	--
 r(310491),	-- Torghast Reconfiguration Rig
-r(310494),	-- 
+r(310494),	--
 r(310513),	-- Necrostatic Micro Capacitor \\ Elecxine Alloy
 r(310515),	-- Hydrodynamic Accelerators \\ Phaevon Alloy
-r(310527),	-- 
+r(310527),	--
 r(310537),	-- Re-Calibrated Proton Blaster
 r(310542),	-- Shadowlands Engineering
 9.0.1.35432
@@ -393,7 +393,7 @@ r(46697),	-- Rocket Boots Xtreme Lite
 r(49383),	-- Engineering
 3.0.1.8622
 r(51306),	-- Engineering
-r(53280),	-- 
+r(53280),	--
 r(53281),	-- Volatile Blasting Trigger
 3.0.1.8874
 r(54353),	-- Mark "S" Boomstick
@@ -463,16 +463,16 @@ r(81720),	-- Energized Bio-Optic Killshades
 r(81722),	-- Agile Bio-Optic Killshades
 r(81724),	-- Camouflage Bio-Optic Killshades
 r(81725),	-- Lightweight Bio-Optic Killshades
-r(82175),	-- 
-r(82177),	-- 
-r(82180),	-- 
+r(82175),	--
+r(82177),	--
+r(82180),	--
 r(82200),	-- Spinal Healing Injector
-r(82201),	-- 
+r(82201),	--
 r(82774),	-- Engineering
-r(84344),	-- 
+r(84344),	--
 r(84403),	-- Handful of Obsidium Bolts
 r(84406),	-- Authentic Jr. Engineer Goggles
-r(84407),	-- 
+r(84407),	--
 r(84408),	-- R19 Threatfinder
 r(84409),	-- Volatile Seaforium Blastpack
 r(84410),	-- Safety Catch Removal Kit
@@ -485,8 +485,8 @@ r(84417),	-- Volatile Thunderstick
 r(84418),	-- Elementium Dragonling
 r(84420),	-- Finely-Tuned Throat Needler
 r(84421),	-- Loot-a-Rang
-r(84422),	-- 
-r(84423),	-- 
+r(84422),	--
+r(84423),	--
 r(84425),	-- Cardboard Assassin
 r(84427),	-- Grounded Plasma Shield
 r(84428),	-- Gnomish X-Ray Scope
@@ -494,8 +494,8 @@ r(84429),	-- Goblin Barbecue
 r(84430),	-- Heat-Treated Spinning Lure
 r(84431),	-- Overpowered Chicken Splitter
 r(84432),	-- Kickback 5000
-r(84433),	-- 
-r(84434),	-- 
+r(84433),	--
+r(84434),	--
 4.3.4.15595
 r(82207),	-- Explosive Bolts
 r(84424),	-- Invisibility Field
@@ -507,13 +507,13 @@ r(100587),	-- Flintlocke's Woodchucker
 r(100687),	-- Extreme-Impact Hole Puncher
 r(105518),	-- Open Box
 5.0.3.15890
-r(108789),	-- 
-r(109077),	-- 
+r(108789),	--
+r(109077),	--
 r(109099),	-- Watergliding Jets
 r(110403),	-- Engineering
-r(110955),	-- 
+r(110955),	--
 r(126392),	-- Goblin Glider
-r(126731),	-- 
+r(126731),	--
 r(127113),	-- Ghost Iron Bolts
 r(127114),	-- High-Explosive Gunpowder
 r(127115),	-- Lord Blastington's Scope of Doom
@@ -560,7 +560,7 @@ r(139196),	-- Pierre
 r(139197),	-- Advanced Refrigeration Unit
 r(143714),	-- Rascal-Bot
 r(158739),	-- Engineering
-r(161543),	-- 
+r(161543),	--
 7.3.0.24473
 r(162195),	-- Cybergenetic Mechshades
 r(162196),	-- Night-Vision Mechshades
@@ -869,12 +869,12 @@ r(310484),	-- Nutcracker Grenade \\ Holy Hand Grenade of Ardenweald
 r(310485),	-- Shadow Land Mine
 r(310486),	-- Bomb Bola Launcher \\ Bouncing Boomer
 r(310488),	-- Disposable Ectoplasmic Specs
-r(310489),	-- 
+r(310489),	--
 r(310490),	-- Momentum Redistributor Boots \\ Short-range Teleportation Unit
 r(310491),	-- Torghast Reconfiguration Rig
 r(310492),	-- Gravimetric Scrambler Cannon \\ Portable Micro-Maw Cannon \\ Portable Micro-Maw \\ Deployable Black Hole Generator
 r(310493),	-- 50UL-TR4P \\ 50UL-7RAP \\ SL-00X Soul Shackler
-r(310494),	-- 
+r(310494),	--
 r(310495),	-- Dimensional Shifter
 r(310496),	-- Electro-Jump
 r(310497),	-- Damage Retaliator
@@ -888,7 +888,7 @@ r(310522),	-- Handful of Laestrite Bolts
 r(310524),	-- Porous Polishing Abrasive
 r(310525),	-- Mortal Coiled Spring
 r(310526),	-- Wormfed Gear Assembly
-r(310527),	-- 
+r(310527),	--
 r(310533),	-- Optical Target Embiggener
 r(310534),	-- Infra-green Reflex Sight
 r(310535),	-- Wormhole Generator: Shadowlands

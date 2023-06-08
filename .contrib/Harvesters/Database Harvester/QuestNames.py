@@ -98,7 +98,7 @@ def get_quest_names() -> None:
                             quest_name = quest_name+f" {name_dict[expansion]}\t"
                         else:
                             quest_name = quest_name+f" {expansion}:{name_dict[expansion]}\t"
-                missing_lines[index] = f"{quest_name}\n"
+                missing_lines[index] = f"{quest_name.rstrip()}\n"
             else:
                 if version.parse(missing_line) < version.parse("2.0.0.0"):
                     expansion_dict = {

@@ -9,6 +9,13 @@ i(206565),	-- Plagued Grain
 i(206993),	-- Investi-gator's Pocketwatch
 10.1.5.49719
 i(207099),	-- Tiny Box of Tiny Rocks
+10.1.5.49908
+i(206696),	--
+i(207730),	--
+i(208057),	-- Smoldering Banner of the Aspects
+i(208058),	-- Minute Glass
+i(208092),	--
+i(208096),	-- Familiar Journal
 
 
 
@@ -24,3 +31,10 @@ i(206565),	-- Plagued Grain
 i(206993),	-- Investi-gator's Pocketwatch
 10.1.5.49719
 i(207099),	-- Tiny Box of Tiny Rocks
+10.1.5.49908
+i(206696),	--
+i(207730),	--
+i(208057),	-- Smoldering Banner of the Aspects
+i(208058),	-- Minute Glass
+i(208092),	--
+i(208096),	-- Familiar Journal

@@ -20253,3 +20253,20 @@
 208225@@@Blood Horde Grunt
 208248@@@Time Rift
 208253@@@Time Rift
+10.1.5.49908
+201902@@@Iron Vrykul
+203049@@@Keeper Tyr
+207925@@@Drest'Agath the Corrupted
+208491@@@Prophet Skitra
+208500@@@Imperial Vizier Zor'lok
+208514@@@Klaxxi
+208542@@@Empowered Felguard
+208545@@@Empowered Imp
+208624@@@Briarhorn Hatchling
+208630@@@Gill'dan
+208631@@@Jeepers
+208634@@@Doomrubble
+208636@@@Killbot 9000
+208637@@@Obsidian Warwhelp
+208639@@@N'Ruby
+208643@@@Tobias

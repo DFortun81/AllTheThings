@@ -318,11 +318,11 @@ def post_process_recipes() -> None:
             for index, id in enumerate(missing_lines):
                 id = re.sub("[^\\d^.]", "", id.strip())
                 if id.isdigit():
-                    missing_lines[index] = f"r({id}),\t-- "
+                    missing_lines[index] = f"r({id}),\t--"
                     if id in spell_dict.keys():
                         name_list: list[str] = spell_dict[id].copy()
                         name_list.reverse()
-                        missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                        missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                     else:
                         missing_lines[index] += "\n"
         with open(missing_path, "w") as missing_file:
@@ -356,7 +356,7 @@ def post_process(thing: type[Thing]) -> None:
             missing_line = missing_line.strip()
             missing_line = re.sub("[^\\d^.]", "", missing_line)
             if missing_line.isdigit():
-                missing_lines[index] = f"{thing.new_prefix()}{missing_line}),\t-- "
+                missing_lines[index] = f"{thing.new_prefix()}{missing_line}),\t--"
             else:
                 missing_lines[index] = missing_lines[index].strip()
             name_list: list[str] = []
@@ -364,7 +364,7 @@ def post_process(thing: type[Thing]) -> None:
                 if missing_line == id.strip() and names[index_raw] != "--\n":
                     name_list.append(names[index_raw].rstrip())
             name_list.reverse()
-            missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+            missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
         with open(missing_path, "w") as missing_file:
             missing_file.writelines(missing_lines)
         return
@@ -375,7 +375,7 @@ def post_process(thing: type[Thing]) -> None:
         for index, follower_id in enumerate(missing_lines):
             follower_id = re.sub("[^\\d^.]", "", follower_id.strip())
             if follower_id.isdigit():
-                missing_lines[index] = f"{thing.new_prefix()}{follower_id}),\t-- "
+                missing_lines[index] = f"{thing.new_prefix()}{follower_id}),\t--"
                 name_horde_id = follower_alliance_dict[follower_id][0]
                 name_alliance_id = follower_horde_dict[follower_id][0]
                 if name_alliance_id == name_horde_id:
@@ -383,7 +383,7 @@ def post_process(thing: type[Thing]) -> None:
                     if name_id in creature_dict.keys():
                         name_list = creature_dict[name_id].copy()
                         name_list.reverse()
-                        missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                        missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                     else:
                         missing_lines[index] += "\n"
                 else:
@@ -391,14 +391,14 @@ def post_process(thing: type[Thing]) -> None:
                         name_list = creature_dict[name_alliance_id].copy()
                         name_list.reverse()
                         missing_lines[index] += "Alliance:"
-                        missing_lines[index] += " \\\\ ".join(name_list) + "\t"
+                        missing_lines[index] += " " + " \\\\ ".join(name_list) + "\t"
                     else:
                         missing_lines[index] += "\n"
                     if name_horde_id in creature_dict.keys():
                         name_list = creature_dict[name_horde_id].copy()
                         name_list.reverse()
                         missing_lines[index] += "Horde:"
-                        missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                        missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                     else:
                         missing_lines[index] += "\n"
         with open(missing_path, "w") as missing_file:
@@ -409,11 +409,11 @@ def post_process(thing: type[Thing]) -> None:
         for index, id in enumerate(missing_lines):
             id = re.sub("[^\\d^.]", "", id.strip())
             if id.isdigit():
-                missing_lines[index] = f"{thing.new_prefix()}{id}),\t-- "
+                missing_lines[index] = f"{thing.new_prefix()}{id}),\t--"
                 if id in spell_dict.keys():
                     name_list = spell_dict[id].copy()
                     name_list.reverse()
-                    missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                    missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
         with open(missing_path, "w") as missing_file:
@@ -427,12 +427,12 @@ def post_process(thing: type[Thing]) -> None:
         for index, pet_id in enumerate(missing_lines):
             pet_id = re.sub("[^\\d^.]", "", pet_id.strip())
             if pet_id.isdigit():
-                missing_lines[index] = f"{thing.new_prefix()}{pet_id}),\t-- "
+                missing_lines[index] = f"{thing.new_prefix()}{pet_id}),\t--"
                 name_id = pet_dict[pet_id][0]
                 if name_id in creature_dict.keys():
                     name_list = creature_dict[name_id].copy()
                     name_list.reverse()
-                    missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                    missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
         with open(missing_path, "w") as missing_file:
@@ -443,11 +443,11 @@ def post_process(thing: type[Thing]) -> None:
         for index, id in enumerate(missing_lines):
             id = re.sub("[^\\d^.]", "", id.strip())
             if id.isdigit():
-                missing_lines[index] = f"{thing.new_prefix()}{id}),\t-- "
+                missing_lines[index] = f"{thing.new_prefix()}{id}),\t--"
                 if id in item_dict.keys():
                     name_list = item_dict[id].copy()
                     name_list.reverse()
-                    missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                    missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
         with open(missing_path, "w") as missing_file:
@@ -460,11 +460,11 @@ def post_process(thing: type[Thing]) -> None:
             transmog_id = re.sub("[^\\d^.]", "", transmog_id.strip())
             if transmog_id.isdigit():
                 name_id = transmog_dict[transmog_id][0]
-                missing_lines[index] = f"{thing.existing_prefixes()[0]}{transmog_id})/{thing.new_prefix()}{name_id}),\t-- "
+                missing_lines[index] = f"{thing.existing_prefixes()[0]}{transmog_id})/{thing.new_prefix()}{name_id}),\t--"
                 if name_id in item_dict.keys():
                     name_list = item_dict[name_id].copy()
                     name_list.reverse()
-                    missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                    missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
         with open(missing_path, "w") as missing_file:
@@ -537,7 +537,7 @@ def give_name_item() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.1.5.49595", "Retail")
+# add_latest_data("1.14.3.49821", "Classic Era")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
