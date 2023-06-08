@@ -718,7 +718,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							}),
 						}),
 						i(12344, {	-- Seal of Ascension
+							-- #if BEFORE 3.0.8
 							["description"] = "This item must be in your bags to open the door to UBRS.",
+							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
