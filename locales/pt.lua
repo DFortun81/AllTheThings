@@ -755,13 +755,9 @@ for key,value in pairs({
 	-- Misc
 		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
-		--TODO: [-519] = "World Events",							-- World Events
 		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
 		--TODO: [-522] = "Zalazane's Fall",												-- Zalazane's Fall
 		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
-		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",	-- Warlords of Draenor: Iron Horde Incursion
-		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",		-- Legion: Legion Invasion
-		--TODO: [-527] = EXPANSION_NAME7..": War of the Thorns",	-- Battle for Azeroth: War of the Thorns
 		--TODO: [-532] = "Heroes of the Storm",						-- Heroes of the Storm
 		--TODO: [-533] = "Hearthstone",								-- Hearthstone
 		--TODO: [-534] = "Collector's Edition",						-- Collector's Edition
@@ -888,15 +884,9 @@ for key,value in pairs({
 			--TODO: [-5204] = "Challenge Appearance",				-- Challenge Appearance
 			--TODO: [-5205] = "Hidden Appearance",					-- Hidden Appearance
 
-		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
 		--TODO: [-10071] = "Visions of N'Zoth",						-- Visions of N'Zoth
 		--TODO: [-10072] = "N'Zoth Assault",						-- N'Zoth Assault
-		[-10075] = "Ataque: avanço Amatet",							-- Assault: Amathet Advance
-		[-10076] = "Ataque: o Império Negro",						-- Assault: The Black Empire
-		[-10077] = "Ataque: os clãs em guerra",						-- Assault: The Warring Clans
-		[-10078] = "Ataque: enxame infinito",						-- Assault: The Endless Swarm
-		[-10079] = "Ataque: os aqir desenterrados",					-- Assault: Aqir Unearthed
 		--TODO: [-10081] = "Corrupted Area",						-- Corrupted Area
 		--TODO: [-10082] = "Lost Area",								-- Lost Area
 		-- Shadowlands Achievement Headers

@@ -745,13 +745,9 @@ for key,value in pairs({
 	-- Misc
 		[-493] = "Сломанный лут с миссий",							-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
-		[-519] = "Игровые события",									-- World Events
 		[-520] = "Препатч",											-- Expansion Pre-Launch
 		[-522] = "Падение Залазана",								-- Zalazane's Fall
 		[-523] = "Буйство элементалей",								-- Elemental Unrest
-		[-525] = "Warlords of Draenor: Вторжение Железной Орды",	-- Warlords of Draenor: Iron Horde Incursion
-		[-526] = "Legion: Вторжение Легиона",						-- Legion: Legion Invasion
-		[-527] = "Battle for Azeroth: Война Шипов",					-- Battle for Azeroth: War of the Thorns
 		[-534] = "Коллекционное издание",							-- Collector's Edition
 		[-536] = "Hearthstone Наемники",							-- Hearthstone Mercenaries
 		[-537] = "20-ая годовщина Diablo",							-- Diablo 20th Anniversary
@@ -876,18 +872,12 @@ for key,value in pairs({
 			[-5204] = "Облик Испытаний",							-- Challenge Appearance
 			[-5205] = "Скрытый облик",								-- Hidden Appearance
 
-		[-7776] = "Гуляка Зимнего Покрова",							-- Winter Revelers (for Winter Veil)
 	-- Classes
 		[-9951] = GetSpellInfo(148462).." и "..GetSpellInfo(137031),	-- Discipline / Holy Priest Spec
 		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011),	-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Видения Н'Зота",								-- Visions of N'Zoth
 		[-10072] = "Нападение Н'Зота",								-- N'Zoth Assault
-		[-10075] = "Нападение: наступление аматетов",				-- Assault: Amathet Advance
-		[-10076] = "Нападение: Темная Империя",						-- Assault: The Black Empire
-		[-10077] = "Нападение: враждебные кланы",					-- Assault: The Warring Clans
-		[-10078] = "Нападение: нескончаемый рой",					-- Assault: The Endless Swarm
-		[-10079] = "Нападение: появление акиров",					-- Assault: Aqir Unearthed
 		[-10081] = "Заражённая область",							-- Corrupted Area
 		[-10082] = "Захваченная область",							-- Lost Area
 		-- Shadowlands Achievement Headers

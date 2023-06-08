@@ -757,13 +757,9 @@ for key,value in pairs({
 	-- Misc
 		[-493] = "破碎前置任务拾取",										-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
-		[-519] = "世界事件",											-- World Events
 		[-520] = "资料片前夕",											-- Expansion Pre-Launch
 		[-522] = "扎拉赞恩的灭亡",										-- Zalazane's Fall
 		[-523] = "元素动荡",												-- Elemental Unrest
-		[-525] = EXPANSION_NAME5.."：钢铁部落入侵",						-- Warlords of Draenor: Iron Horde Incursion
-		[-526] = EXPANSION_NAME6.."：军团入侵",							-- Legion: Legion Invasion
-		[-527] = EXPANSION_NAME7.."：荆棘战争",							-- Battle for Azeroth: War of the Thorns
 		[-532] = "风暴英雄",											-- Heroes of the Storm
 		[-533] = "炉石传说",											-- Hearthstone
 		[-534] = "典藏版",												-- Collector's Edition
@@ -895,15 +891,9 @@ for key,value in pairs({
 			[-5204] = "挑战外观",										-- Challenge Appearance
 			[-5205] = "隐藏外观",										-- Hidden Appearance
 
-		[-7776] = "冬季狂欢者",											-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "恩佐斯的幻象",										-- Visions of N'Zoth
 		[-10072] = "恩佐斯突袭",											-- N'Zoth Assault
-		[-10075] = "突袭：阿玛赛特进军",										-- Assault: Amathet Advance
-		[-10076] = "突袭：黑暗帝国",										-- Assault: The Black Empire
-		[-10077] = "突袭：战争氏族",										-- Assault: The Warring Clans
-		[-10078] = "突袭：无尽虫群",										-- Assault: The Endless Swarm
-		[-10079] = "突袭：亚基重现",										-- Assault: Aqir Unearthed
 		[-10081] = "腐化区域",											-- Corrupted Area
 		[-10082] = "失落区域",											-- Lost Area
 		-- Shadowlands Achievement Headers

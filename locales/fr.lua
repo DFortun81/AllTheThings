@@ -754,13 +754,9 @@ for key,value in pairs({
 	-- Misc
 		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
-		[-519] = "Événements mondiaux",								-- World Events
 		[-520] = "Pré-Lancement de l’Extension",					-- Expansion Pre-Launch
 		[-522] = "La chute de Zalazane",							-- Zalazane's Fall
 		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
-		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",	-- Warlords of Draenor: Iron Horde Incursion
-		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",		-- Legion: Legion Invasion
-		--TODO: [-527] = EXPANSION_NAME7..": War of the Thorns",	-- Battle for Azeroth: War of the Thorns
 		[-532] = "Heroes of the Storm",								-- Heroes of the Storm
 		[-533] = "Hearthstone",										-- Hearthstone
 		[-534] = "Edition Collector",								-- Collector's Edition
@@ -887,15 +883,9 @@ for key,value in pairs({
 			[-5204] = "Apparence de Challenge",						-- Challenge Appearance
 			[-5205] = "Apparence Cachée",							-- Hidden Appearance
 
-		[-7776] = "Fêtard de l’Hiver",							-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Visions de N'Zoth",								-- Visions of N'Zoth
 		[-10072] = "Assaut de N'Zoth Assault",						-- N'Zoth Assault
-		[-10075] = "Assaut : Avancée amathet",						-- Assault: Amathet Advance
-		[-10076] = "Assaut : L’Empire noir",						-- Assault: The Black Empire
-		[-10077] = "Assaut : La guerre des clans",					-- Assault: The Warring Clans
-		[-10078] = "Assaut : L’essaim infini",						-- Assault: The Endless Swarm
-		[-10079] = "Assaut : Aqir exhumés",							-- Assault: Aqir Unearthed
 		[-10081] = "Zone corrompue",								-- Corrupted Area
 		[-10082] = "Zone perdue",									-- Lost Area
 		-- Shadowlands Achievement Headers

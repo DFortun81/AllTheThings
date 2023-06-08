@@ -144,16 +144,15 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 					},
 				}),
 			}),
-			-- #else
-			mount(346136),	-- Viridian Phase-Hunter (MOUNT!)
-			-- #endif
-
 			n(-579, {	-- Dark Portal Pass
 				["description"] = "These rewards were made available to anyone who purchased a Dark Portal Pass for TBC Classic.\n\nThe act of adding items for real money to the In-Game Shop in Classic has widely been frowned upon.",
 				["groups"] = {
 					-- Appropriate Gear for the Boosted Character
 				},
 			}),
+			-- #else
+			mount(346136),	-- Viridian Phase-Hunter (MOUNT!)
+			-- #endif
 		},
 	}),
 	tier(WOTLK_TIER, {
@@ -164,42 +163,45 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			i(39286),	-- Frosty (PET!)
 		},
 	}),
-	n(-583, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- WOTLK Northrend Heroic Upgrade
+	-- #if ANYCLASSIC
+	n(-582, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- WOTLK Northrend Heroic Upgrade ("Cheap")
+		["timeline"] = { "added 3.3.5" },
+		["groups"] = {
+		i(198665),	-- Pebble's Pebble
+		i(198647),	-- Fishspeaker's Lucky Lure
+			ach(16332, {	-- The Perfect Pebble
+				["providers"] = {
+					{ "n", 194870 },	-- Pebble
+					{ "i", 199914 },	-- Glowing Pebble
+				},
+				["cost"] = {
+					{ "i", 41812, 1 },	-- Barrelhead Goby
+					{ "i", 41808, 1 },	-- Bonescale Snapper
+					{ "i", 41805, 1 },	-- Borean Man O' War
+					{ "i", 41800, 1 },	-- Deep Sea Monsterbelly
+					{ "i", 41807, 1 },	-- Dragonfin Angelfish
+					{ "i", 41810, 1 },	-- Fangtooth Herring
+					{ "i", 43646, 1 },	-- Fountain Goldfish
+					{ "i", 41809, 1 },	-- Glacial Salmon
+					{ "i", 41814, 1 },	-- Glassfin Minnow
+					{ "i", 41802, 1 },	-- Imperial Manta Ray
+					{ "i", 41801, 1 },	-- Moonglow Cuttlefish
+					{ "i", 41806, 1 },	-- Musselback Sculpin
+					{ "i", 41813, 1 },	-- Nettlefish
+					{ "i", 40199, 1 },	-- Pygmy Suckerfish
+					{ "i", 41803, 1 },	-- Rockfin Grouper
+				},
+			}),
+		},
+	})),
+	-- #endif
+	n(-583, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- WOTLK Northrend Epic Upgrade
 		["timeline"] = { "added 3.3.5" },
 		["groups"] = {
 			-- #if ANYCLASSIC
 			i(192455),	-- Kalu'ak Whalebone Glider
 			-- #else
 			mount(370770),	-- Tuskarr Shoreglider
-			-- #endif
-			-- #if ANYCLASSIC
-			n(-582, {	-- WOTLK Northrend Epic Upgrade ("Cheap")
-				i(198665),	-- Pebble's Pebble
-				i(198647),	-- Fishspeaker's Lucky Lure
-				ach(16332, {	-- The Perfect Pebble
-					["providers"] = {
-						{ "n", 194870 },	-- Pebble
-						{ "i", 199914 },	-- Glowing Pebble
-					},
-					["cost"] = {
-						{ "i", 41812, 1 },	-- Barrelhead Goby
-						{ "i", 41808, 1 },	-- Bonescale Snapper
-						{ "i", 41805, 1 },	-- Borean Man O' War
-						{ "i", 41800, 1 },	-- Deep Sea Monsterbelly
-						{ "i", 41807, 1 },	-- Dragonfin Angelfish
-						{ "i", 41810, 1 },	-- Fangtooth Herring
-						{ "i", 43646, 1 },	-- Fountain Goldfish
-						{ "i", 41809, 1 },	-- Glacial Salmon
-						{ "i", 41814, 1 },	-- Glassfin Minnow
-						{ "i", 41802, 1 },	-- Imperial Manta Ray
-						{ "i", 41801, 1 },	-- Moonglow Cuttlefish
-						{ "i", 41806, 1 },	-- Musselback Sculpin
-						{ "i", 41813, 1 },	-- Nettlefish
-						{ "i", 40199, 1 },	-- Pygmy Suckerfish
-						{ "i", 41803, 1 },	-- Rockfin Grouper
-					},
-				}),
-			}),
 			-- #endif
 		},
 	})),
