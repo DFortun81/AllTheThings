@@ -41,6 +41,73 @@ end
 -- ITEMS --
 i(17722, 21943);	-- Gloves of the Greatfather
 i(18239, 22711);	-- Shadowskin Gloves
+
+------------------
+-- PATCH 8.0.1 --
+------------------
+i(0, 264577);	-- Leatherworking
+i(0, 264579);	-- Outland Leatherworking
+i(0, 264581);	-- Northrend Leatherworking
+i(0, 264583);	-- Cataclysm Leatherworking
+i(0, 264585);	-- Pandaria Leatherworking
+i(0, 264588);	-- Draenor Leatherworking
+i(0, 264590);	-- Legion Leatherworking
+i(0, 264592);	-- Kul Tiran Leatherworking
+i(0, 265813);	-- Zandalari Leatherworking
+-- TRAINER --
+i(0, 278423);	-- Amber Rallying Horn
+i(0, 256756);	-- Coarse Leather Armguards
+i(0, 256790);	-- Coarse Leather Barding [Rank 1]
+i(0, 256778);	-- Coarse Leather Cestus
+i(0, 256750);	-- Coarse Leather Gauntlets
+i(0, 256751);	-- Coarse Leather Helm
+i(0, 256752);	-- Coarse Leather Leggings
+i(0, 256754);	-- Coarse Leather Pauldrons
+i(0, 256748);	-- Coarse Leather Treads
+i(0, 256749);	-- Coarse Leather Vest
+i(0, 256755);	-- Coarse Leather Waistguard
+i(0, 256791);	-- Drums of the Maelstrom
+i(0, 256765);	-- Hardened Tempest Boots
+i(0, 272278);	-- Hardened Tempest Hide
+i(0, 256782);	-- Hardened Tempest Knuckles [Rank 1]
+i(0, 256783);	-- Hardened Tempest Knuckles [Rank 2]
+i(0, 256768);	-- Hardened Tempest Leggings
+i(0, 256771);	-- Mistscale Boots
+i(0, 256779);	-- Mistscale Knuckles [Rank 1]
+i(0, 256780);	-- Mistscale Knuckles [Rank 2]
+i(0, 256774);	-- Mistscale Leggings
+i(0, 256787);	-- Recurve Bow of the Strands [Rank 1]
+i(0, 256788);	-- Recurve Bow of the Strands [Rank 2]
+i(0, 256757);	-- Shimmerscale Armguards
+i(0, 256793);	-- Shimmerscale Diving Helmet
+i(0, 256792);	-- Shimmerscale Diving Suit
+i(0, 256762);	-- Shimmerscale Gauntlets
+i(0, 256761);	-- Shimmerscale Helm
+i(0, 256760);	-- Shimmerscale Leggings
+i(0, 256759);	-- Shimmerscale Pauldrons
+i(0, 256777);	-- Shimmerscale Striker
+i(0, 256764);	-- Shimmerscale Treads
+i(0, 256763);	-- Shimmerscale Vest
+i(0, 256758);	-- Shimmerscale Waistguard
+i(0, 276256);	-- Tempest Hide Pouch
+-- ITEM --
+i(162504, 256773);	-- Emblazoned Mistscale Boots
+i(162506, 256776);	-- Emblazoned Mistscale Leggings
+i(162500, 256767);	-- Emblazoned Tempest Boots
+i(162502, 256770);	-- Emblazoned Tempest Leggings
+i(162414, 256784);	-- Hardened Tempest Knuckles [Rank 3] (A)
+i(162768, 256784);	-- Hardened Tempest Knuckles [Rank 3] (H)
+i(162503, 256772);	-- Imbued Mistscale Boots
+i(162505, 256775);	-- Imbued Mistscale Leggings
+i(162499, 256766);	-- Imbued Tempest Boots
+i(162501, 256769);	-- Imbued Tempest Leggings
+i(162413, 256781);	-- Mistscale Knuckles [Rank 3] (A)
+i(162767, 256781);	-- Mistscale Knuckles [Rank 3] (H)
+i(162412, 256789);	-- Recurve Bow of the Strands [Rank 3] (A)
+i(162766, 256789);	-- Recurve Bow of the Strands [Rank 3] (H)
+
+
+
 ------------------
 -- PATCH 8.1.0 --
 ------------------

@@ -1394,61 +1394,6 @@ r(247802),	-- Fiendish Shoulderguards
 r(247803),	-- Fiendish Spaulders
 r(247804),	-- Fiendish Spaulders
 r(247805),	-- Fiendish Spaulders
-8.0.1.25902
-r(256748),	-- Coarse Leather Treads
-r(256749),	-- Coarse Leather Vest \\ Coarse Leather Breastplate
-r(256750),	-- Coarse Leather Gauntlets
-r(256751),	-- Coarse Leather Helm
-r(256752),	-- Coarse Leather Leggings \\ Coarse Leather Greaves
-r(256754),	-- Coarse Leather Pauldrons
-r(256755),	-- Coarse Leather Waistguard
-r(256756),	-- Coarse Leather Armguards
-r(256757),	-- Shimmerscale Armguards
-r(256758),	-- Shimmerscale Waistguard
-r(256759),	-- Shimmerscale Pauldrons
-r(256760),	-- Shimmerscale Leggings \\ Shimmerscale Greaves
-r(256761),	-- Shimmerscale Helm
-r(256762),	-- Shimmerscale Gauntlets
-r(256763),	-- Shimmerscale Vest \\ Shimmerscale Breastplate
-r(256764),	-- Shimmerscale Treads
-r(256765),	-- Hardened Tempest Boots
-r(256766),	-- Imbued Tempest Boots \\ Hardened Tempest Boots
-r(256767),	-- Emblazoned Tempest Boots \\ Hardened Tempest Boots
-r(256768),	-- Hardened Tempest Leggings
-r(256769),	-- Imbued Tempest Leggings \\ Hardened Tempest Leggings
-r(256770),	-- Emblazoned Tempest Leggings \\ Hardened Tempest Leggings
-r(256771),	-- Mistscale Boots
-r(256772),	-- Imbued Mistscale Boots \\ Mistscale Boots
-r(256773),	-- Emblazoned Mistscale Boots \\ Mistscale Boots
-r(256774),	-- Mistscale Leggings \\ Mistscale Greaves
-r(256775),	-- Imbued Mistscale Leggings \\ Mistscale Greaves
-r(256776),	-- Emblazoned Mistscale Leggings \\ Mistscale Greaves
-r(256777),	-- Shimmerscale Striker
-r(256778),	-- Coarse Leather Cestus
-r(256779),	-- Mistscale Knuckles
-r(256780),	-- Mistscale Knuckles
-r(256781),	-- Mistscale Knuckles
-r(256782),	-- Hardened Tempest Knuckles
-r(256783),	-- Hardened Tempest Knuckles
-r(256784),	-- Hardened Tempest Knuckles
-r(256786),	-- Honorable Combatant's Spellblade \\ REUSE ME \\ Skeletal Composite Bow
-r(256787),	-- Recurve Bow of the Strands
-r(256788),	-- Recurve Bow of the Strands
-r(256789),	-- Recurve Bow of the Strands
-r(256790),	-- Coarse Leather Barding
-r(256791),	-- Drums of the Maelstrom
-r(256792),	-- Shimmerscale Diving Suit
-r(256793),	-- Shimmerscale Diving Helmet
-r(264577),	-- Leatherworking
-r(264579),	-- Outland Leatherworking
-r(264581),	-- Northrend Leatherworking
-r(264583),	-- Cataclysm Leatherworking
-r(264585),	-- Pandaria Leatherworking
-r(264588),	-- Draenor Leatherworking
-r(264590),	-- Legion Leatherworking
-r(264592),	-- Kul Tiran Leatherworking
-8.0.1.25976
-r(265813),	-- Zandalari Leatherworking
 8.0.1.26175
 r(269516),	-- Honorable Combatant's Leather Treads
 r(269517),	-- Honorable Combatant's Leather Treads
@@ -1489,11 +1434,6 @@ r(269551),	-- Honorable Combatant's Cestus
 r(269552),	-- Honorable Combatant's Bow
 r(269553),	-- Honorable Combatant's Bow
 r(269554),	-- Honorable Combatant's Bow
-8.0.1.26310
-r(272278),	-- Hardened Tempest Hide
-8.0.1.26624
-r(276256),	-- Tempest Hide Pouch
-r(278423),	-- Amber Rallying Horn
 9.0.1.33978
 r(309214),	-- Unseelie Leather \\ Tooled Fae Leather
 r(309215),	-- Sinful Leather \\ Tooled Venthyr Leather
