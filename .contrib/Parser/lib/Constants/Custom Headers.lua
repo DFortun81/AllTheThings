@@ -7,11 +7,6 @@ BONUS_OBJECTIVES = -221;				-- Not used in Classic
 CAMPAIGN = -1099;						-- Not used in Classic
 DROPS = -26;
 EMISSARY_QUESTS = -169;					-- Not used in Classic
--- #if ANYCLASSIC
-FLIGHT_PATHS = -6;
--- #else
-FLIGHT_PATHS = -228;
--- #endif
 HIDDEN_QUESTS = -999;					-- Not used in Classic
 MAPS = -24;
 -- #if ANYCLASSIC
@@ -27,12 +22,10 @@ ZONE_REWARDS = -903;					-- Not used in Classic
 
 -- Factions
 -- #if ANYCLASSIC
-FACTIONS = -8;
 FACTION_HEADER_NEUTRAL = -29;
 FACTION_HEADER_ALLIANCE = -30;
 FACTION_HEADER_HORDE = -31;
 -- #else
-FACTIONS = -6013;
 FACTION_HEADER_NEUTRAL = -9912;
 FACTION_HEADER_ALLIANCE = -9914;
 FACTION_HEADER_HORDE = -9913;

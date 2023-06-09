@@ -706,7 +706,6 @@ for key,value in pairs({
 	-- Fishing
 		[-217] = "Наживки",											-- Lures (for Fishing)
 	[-219] = "Без Источника",										-- Sourceless
-	[-228] = "Точка полета",										-- GetSpellInfo(218950),  -- Flight Path
 	-- PvP
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty

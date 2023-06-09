@@ -18290,10 +18290,7 @@ function app:GetDataCache()
 
 	-- Factions
 	if app.Categories.Factions then
-		db = app.CreateNPC(-6013);
-		db.g = app.Categories.Factions;
-		db.text = L["FACTIONS"];
-		db.icon = app.asset("Category_Factions");
+		db = app.CreateNPC(app.HeaderConstants.FACTIONS, app.Categories.Factions);
 		tinsert(g, db);
 	end
 
@@ -19494,10 +19491,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
 		-- EMISSARY_QUESTS = -169;
 			[-169] = true,
-		-- FACTIONS = -6013;
-			[-6013] = "factionID",
-		-- FLIGHT_PATHS = -228;
-			[-228] = "flightPathID",
+			[app.HeaderConstants.FACTIONS] = "factionID",
+			[app.HeaderConstants.FLIGHT_PATHS] = "flightPathID",
 		-- HIDDEN_QUESTS = -999;	-- currently nested under 'Quests' due to Type
 		-- [-999] = true,
 			[app.HeaderConstants.HOLIDAYS] = "holidayID",

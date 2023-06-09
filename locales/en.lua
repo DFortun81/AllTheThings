@@ -1005,7 +1005,6 @@ app.L = {
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
 		[-24] = "Interface\\Icons\\Inv_misc_map02",											-- Maps
 		[-26] = app.asset("Category_WorldDrops"),											-- Drop
-		[-32] = "Interface\\Icons\\inv_sword_48",											-- Honor Titles
 		[-34] = app.asset("Interface_WorldQuest"),											-- World Quests
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
 		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",							-- Discovery
@@ -1111,8 +1110,6 @@ app.L = {
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",										-- Class
 	-- Bonus Objectives
 		[-221] = 237387,																	-- Bonus Objectives
-	-- Flight Path
-		[-228] = app.asset("Category_FlightPaths"),											-- Flight Paths
 	-- Warfronts
 		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",					-- Warfront: The Battle for Stromgarde
 	-- War Campaign
@@ -1432,7 +1429,6 @@ app.L = {
 		[-5366] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 17th Anniversary
 		[-5367] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 18th Anniversary
 	--
-		[-6013] = app.asset("Category_Factions"),											-- Faction
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
 	-- Horde/Alliance/Neutral
 		[-9912] = "Interface\\FriendsFrame\\PlusManz-PlusManz",						-- Neutral
@@ -1502,7 +1498,6 @@ app.L = {
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
 		[-24] = BRAWL_TOOLTIP_MAPS,												-- Maps
 		[-26] = "Drops",														-- Drops
-		[-32] = HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES,						-- Honor Titles
 		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
 		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
@@ -1607,8 +1602,6 @@ app.L = {
 		[-220] = CLASS,															-- Class
 	-- Bonus Objectives
 		[-221] = TRACKER_HEADER_BONUS_OBJECTIVES,								-- Bonus Objectives
-	-- Flight Path
-		[-228] = GetSpellInfo(218950),											-- Flight Path
 	-- Warfronts
 		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde
 	-- War Campaign
@@ -1952,7 +1945,6 @@ app.L = {
 		[-5366] = select(2,GetAchievementInfo(14942)),							-- 17th Anniversary
 		[-5367] = select(2,GetAchievementInfo(15218)),							-- 18th Anniversary
 
-		[-6013] = FACTION,														-- Faction
 		[-6014] = BUG_CATEGORY4,												-- Cities
 
 	-- Factions
