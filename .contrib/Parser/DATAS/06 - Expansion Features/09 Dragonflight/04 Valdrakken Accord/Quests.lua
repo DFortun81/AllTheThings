@@ -853,6 +853,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(197093),	-- Highland Drake: Silver and Purple Armor (DM!)
 					i(197350),	-- Renewned Proto-Drake: Silver and Purple Armor (DM!)
 					i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
+
+					-- auto learns these Drakewatcher Manuscripts
+					i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
+					i(197099),	-- Highland Drake: Armor (DM!)
+					i(197357),	-- Renewed Proto-Drake: Armor (DM!)
+					i(197588),	-- Windborne Velocidrake: Armor (DM!)
+					i(203305, {	-- Winding Slitherdrake: Armor (DM!)
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 				},
 			}),
 			q(72284, {	-- Renown Supplies

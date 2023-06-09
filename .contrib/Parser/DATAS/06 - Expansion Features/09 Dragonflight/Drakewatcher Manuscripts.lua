@@ -659,6 +659,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
 		i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
+			i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
 			i(196991),	-- Cliffside Wylderdrake: Black Horns (DM!)
 			i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
 			i(197013),	-- Cliffside Wylderdrake: Black Scales (DM!)
@@ -711,13 +712,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
-			i(196961),	-- Cliffside Wylderdrake: Armor
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 		})),
 		header(HEADERS.Item, 194705, {	-- Highland Drake
+			i(197099),	-- Highland Drake: Armor (DM!)
 			i(197117),	-- Highland Drake: Black Hair (DM!)
 			i(197142),	-- Highland Drake: Black Scales (DM!)
 			i(197153),	-- Highland Drake: Bladed Tail (DM!)
@@ -776,12 +777,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
-			i(197099),	-- Highland Drake: Armor
 			i(197095),	-- Highland Drake: Gold and White Armor
 			i(197119),	-- Highland Drake: Helm
 			i(197146),	-- Highland Drake: White Scales
 		})),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
+			i(197357),	-- Renewed Proto-Drake: Armor (DM!)
 			i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
 			i(197392),	-- Renewed Proto-Drake: Black Scales (DM!)
 			i(197368),	-- Renewed Proto-Drake: Blue Hair (DM!)
@@ -837,7 +838,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
-			i(197357),	-- Renewed Proto-Drake: Armor
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197356),	-- Renewed Proto-Drake: Hairy Back
@@ -845,6 +845,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197393),	-- Renewed Proto-Drake: White Scales
 		})),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
+			i(197588),	-- Windborne Velocidrake: Armor (DM!)
 			i(197620),	-- Windborne Velocidrake: Beaked Snout (DM!)
 			i(197597),	-- Windborne Velocidrake: Black Fur (DM!)
 			i(197611),	-- Windborne Velocidrake: Black Scales (DM!)
@@ -888,7 +889,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
-			i(197588),	-- Windborne Velocidrake: Armor
 			i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
 			i(197616),	-- Windborne Velocidrake: White Scales
 			i(197582),	-- Windborne Velocidrake: White and Pink Armor
@@ -963,6 +963,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197600),	-- Windborne Velocidrake: Helm (DM!)
 		}),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
+			i(203305),	-- Winding Slitherdrake: Armor (DM!)
 			i(203338),	-- Winding Slitherdrake: Antler Horns (DM!)
 			i(203322),	-- Winding Slitherdrake: Blonde Hair (DM!)
 			i(203300),	-- Winding Slitherdrake: Blue and Silver Armor (DM!)
@@ -1014,7 +1015,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
-			i(203305),	-- Winding Slitherdrake: Armor
 			i(203349),	-- Winding Slitherdrake: Curved Nose Horn
 			i(203319),	-- Winding Slitherdrake: Finned Cheek
 			i(203311),	-- Winding Slitherdrake: Hairy Chin
