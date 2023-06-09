@@ -790,7 +790,6 @@ for key,value in pairs({
 			[-661] = "角斗士套装",									-- Gladiator PvP Gear
 			[-662] = "精锐套装",										-- Elite PvP Gear
 		-- The Burning Crusade PvP Seasons
-			[-664] = select(2, GetAchievementInfo(2091)).."：第1赛季",	-- Gladiator: Season 1
 			[-665] = select(2, GetAchievementInfo(418)).."：第2赛季",	-- Merciless Gladiator: Season 2
 			[-666] = select(2, GetAchievementInfo(419)).."：第3赛季",	-- Vengeful Gladiator: Season 3
 			[-667] = select(2, GetAchievementInfo(420)).."：第4赛季",	-- Brutal Gladiator: Season 4

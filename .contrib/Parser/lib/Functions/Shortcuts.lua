@@ -1080,6 +1080,7 @@ end
 -- Here's an example showing all the different supported fields.
 CRIEVES_SUPER_COOL_HEADER = createHeader({
 	readable = "Crieve's Super Cool Header",
+	constant = "CRIEVES_SUPER_COOL_HEADER",	-- If you specify a constant, the identifier will become accessible in the addon code (app.HeaderConstants.CRIEVES_SUPER_COOL_HEADER)
 	icon = "INTERFACE\\ICONS\\Interface_Icon_Lol",
 	text = {
 		en = "Crieve's Super Cool Header",

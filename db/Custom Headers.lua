@@ -40,8 +40,9 @@ for key,value in pairs({
 	[-1000012] = _.asset("Interface_Zone_drop"),
 	[-1000013] = "Interface/Icons/inv_sword_48",
 	[-1000014] = _.asset("Category_PvP"),
-	[-1000015] = "Interface/Icons/INV_Chest_Plate03",
-	[-1000016] = "Interface/Icons/inv_jewelry_amulet_03",
+	[-1000015] = "Interface/Icons/achievement_featsofstrength_gladiator_01",
+	[-1000016] = "Interface/Icons/INV_Chest_Plate03",
+	[-1000017] = "Interface/Icons/inv_jewelry_amulet_03",
 }) do a[key] = value; end
 
 local a = L.HEADER_NAMES;
@@ -61,19 +62,20 @@ for key,value in pairs({
 	[-1000012] = ZONE.." "..BATTLE_PET_SOURCE_1,
 	[-1000013] = HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES,
 	[-1000014] = BUG_CATEGORY14,
-	[-1000015] = "Tier 0.5 Sets",
-	[-1000016] = C_PetJournal.GetPetInfoBySpeciesID(179),
+	[-1000015] = select(2, GetAchievementInfo(2091))..": Season 1",
+	[-1000016] = "Tier 0.5 Sets",
+	[-1000017] = C_PetJournal.GetPetInfoBySpeciesID(179),
 }) do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
 	[-1000009] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
-	[-1000016] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
+	[-1000017] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
 }) do a[key] = value; end
 
 local a = L.HEADER_LORE;
 for key,value in pairs({
-	[-1000015] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
+	[-1000016] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
 }) do a[key] = value; end
 
 if simplifiedLocale == "de" then
@@ -87,7 +89,8 @@ if simplifiedLocale == "fr" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1000002] = "Objets communs des vendeurs",
-	[-1000015] = "Ensembles Tier 0.5",
+	[-1000015] = select(2, GetAchievementInfo(2091))..": Saison 1",
+	[-1000016] = "Ensembles Tier 0.5",
 }) do a[key] = value; end
 end
 
@@ -100,7 +103,8 @@ for key,value in pairs({
 	[-1000008] = "Редкие",
 	[-1000011] = "Мировые Боссы",
 	[-1000012] = "Добыча локации",
-	[-1000015] = "Комплекты T0.5",
+	[-1000015] = select(2, GetAchievementInfo(2091))..": Сезон 1",
+	[-1000016] = "Комплекты T0.5",
 }) do a[key] = value; end
 end
 
@@ -109,7 +113,8 @@ a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1000002] = "常规商人物品",
 	[-1000010] = "商人",
-	[-1000015] = "等级 0.5 套装",
+	[-1000015] = select(2, GetAchievementInfo(2091)).."：第1赛季",
+	[-1000016] = "等级 0.5 套装",
 }) do a[key] = value; end
 end
 

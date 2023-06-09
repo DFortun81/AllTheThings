@@ -761,7 +761,6 @@ for key,value in pairs({
 			[-661] = "Доспехи Гладиатора",							-- Gladiator PvP Gear
 			[-662] = "Элитные доспехи",								-- Elite PvP Gear
 		-- The Burning Crusade PvP Seasons
-			[-664] = select(2, GetAchievementInfo(2091))..": Сезон 1",	-- Gladiator: Season 1
 			[-665] = select(2, GetAchievementInfo(418))..": Сезон 2",	-- Merciless Gladiator: Season 2
 			[-666] = select(2, GetAchievementInfo(419))..": Сезон 3",	-- Vengeful Gladiator: Season 3
 			[-667] = select(2, GetAchievementInfo(420))..": Сезон 4",	-- Brutal Gladiator: Season 4
