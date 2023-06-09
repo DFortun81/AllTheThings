@@ -328,8 +328,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				},
 			}),
 			-- #if BEFORE 6.0.2
-			e(433, {	-- Mordresh Fire Eye
-				["creatureID"] = 7357,	-- Mordresh Fire Eye
+			n(7357, {	-- Mordresh Fire Eye
 				["timeline"] = { "removed 6.0.2" },
 				["groups"] = {
 					i(10770),	-- Mordresh's Lifeless Skull
