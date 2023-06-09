@@ -730,9 +730,7 @@ for key,value in pairs({
 		[-397] = "Außenposten",										-- Outposts
 	-- 5.3
 		[-398] = "Schlachtfeld: Brachland",							-- Battlefield: Barrens
-	-- T0.5 & Classic
-		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
-		--TODO: [-422] = "Atal'ai Defenders",						-- Atal'ai Defenders
+	-- Classic
 		[-423] = "Die Vier Reiter",									-- The Four Horsemen
 	-- BFA War Chest
 		--TODO: [-488] = "War Chest",								-- Daily War Chest

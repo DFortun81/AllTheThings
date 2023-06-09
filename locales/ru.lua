@@ -727,8 +727,7 @@ for key,value in pairs({
 		[-397] = "Аванпосты",										-- Outposts
 	-- 5.3
 		[-398] = "Поле битвы: Степи",								-- Battlefield: Barrens
-	-- T0.5 & Classic
-		[-420] = "Комплекты T0.5",									-- Tier 0.5 Sets
+	-- Classic
 		[-422] = "Защитники Атал'ай",								-- Atal'ai Defenders
 		[-423] = "Четыре Всадника",									-- The Four Horsemen
 	-- BFA War Chest

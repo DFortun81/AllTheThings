@@ -737,8 +737,7 @@ for key,value in pairs({
 		[-397] = "Avant-postes",									-- Outposts
 	-- 5.3
 		[-398] = "Champ de bataille : les Tarides",					-- Battlefield: Barrens
-	-- T0.5 & Classic
-		[-420] = "Ensembles Tier 0.5",								-- Tier 0.5 Sets
+	-- Classic
 		[-422] = "Défenseurs Atal'ai",								-- Atal'ai Defenders
 		[-423] = "Les quatre cavaliers",							-- The Four Horsemen
 	-- BFA War Chest

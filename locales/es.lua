@@ -729,9 +729,7 @@ for key,value in pairs({
 		--TODO: [-397] = "Outposts",								-- Outposts
 	-- 5.3
 		[-398] = "Campo de batalla: Los Baldíos",					-- Battlefield: Barrens
-	-- T0.5 & Classic
-		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
-		--TODO: [-422] = "Atal'ai Defenders",						-- Atal'ai Defenders
+	-- Classic
 		[-423] = "Los Cuatro Jinetes",								-- The Four Horsemen
 	-- BFA War Chest
 		--TODO: [-488] = "War Chest",								-- Daily War Chest

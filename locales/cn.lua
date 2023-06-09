@@ -743,8 +743,7 @@ for key,value in pairs({
 		[-397] = "哨站",												-- Outposts
 	-- 5.3
 		[-398] = "战场：贫瘠之地",											-- Battlefield: Barrens
-	-- T0.5 & Classic
-		[-420] = "等级 0.5 套装",										-- Tier 0.5 Sets
+	-- Classic
 		[-422] = "阿塔莱防御者",											-- Atal'ai Defenders
 		[-423] = "四骑士",												-- The Four Horsemen
 	-- BFA War Chest

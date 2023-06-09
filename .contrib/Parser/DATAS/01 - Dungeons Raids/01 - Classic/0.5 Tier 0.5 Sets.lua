@@ -1,11 +1,26 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local TIER_ZEROFIVE_RACES = { DRUID, HUNTER, MAGE, PALADIN, PRIEST, ROGUE, SHAMAN, WARLOCK, WARRIOR };
-root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
-	bubbleDownFiltered({ ["timeline"] = { "removed 4.0.3" } }, (function(t) return not t.objectiveID; end), n(-420, {	-- Tier 0.5 Sets
-		["lore"] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
-		["classes"] = TIER_ZEROFIVE_RACES,
+TIER_ZERO_POINT_FIVE_SETS = createHeader({
+	readable = "Tier 0.5 Sets",
+	-- #if ANYCLASSIC
+	constant = "TIER_ZERO_POINT_FIVE_SETS",
+	-- #endif
+	icon = "Interface\\Icons\\INV_Chest_Plate03",
+	text = {
+		en = "Tier 0.5 Sets",
+		fr = "Ensembles Tier 0.5",
+		ru = "Комплекты T0.5",
+		cn = "等级 0.5 套装",
+	},
+	lore = {
+		en = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
+	},
+});
+local TIER_ZERO_POINT_FIVE_RACES = { DRUID, HUNTER, MAGE, PALADIN, PRIEST, ROGUE, SHAMAN, WARLOCK, WARRIOR };
+root(ROOTS.Instances, tier(CLASSIC_TIER, bubbleDownFiltered({ ["timeline"] = { "removed 4.0.3" } }, (function(t) return not t.objectiveID; end), {
+	applyclassicphase(PHASE_FIVE, n(TIER_ZERO_POINT_FIVE_SETS, {
+		["classes"] = TIER_ZERO_POINT_FIVE_RACES,
 		["groups"] = {
 			cl(DRUID, {
 				{	-- An Earnest Proposition
@@ -1200,7 +1215,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 				},
 			}),
-			n(QUESTS, bubbleDownFiltered({ ["classes"] = TIER_ZEROFIVE_RACES }, (function(t) return t.questID or t.allianceQuestData; end), {
+			n(QUESTS, bubbleDownFiltered({ ["classes"] = TIER_ZERO_POINT_FIVE_RACES }, (function(t) return t.questID or t.allianceQuestData; end), {
 				q(8925, {	-- A Portable Power Source
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm

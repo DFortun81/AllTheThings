@@ -1192,8 +1192,6 @@ app.L = {
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
 	-- 5.3
 		[-398] = "Interface\\Icons\\ability_vehicle_oiljets",								-- Battlefield: Barrens
-	-- T0.5 & Classic
-		[-420] = "Interface\\Icons\\INV_Chest_Plate03",										-- Tier 0.5 Sets
 	-- BFA War Chest
 		[-488] = "Interface\\Icons\\inv_misc_treasurechest04b",								-- Daily War Chest
 	-- Misc
@@ -1685,8 +1683,7 @@ app.L = {
 		[-397] = "Outposts",													-- Outposts
 	-- 5.3
 		[-398] = "Battlefield: Barrens",										-- Battlefield: Barrens
-	-- T0.5 & Classic
-		[-420] = "Tier 0.5 Sets",												-- Tier 0.5 Sets
+	-- Classic
 		[-422] = "Atal'ai Defenders",											-- Atal'ai Defenders
 		[-423] = "The Four Horsemen",											-- The Four Horsemen
 	-- BFA War Chest
@@ -2009,6 +2006,9 @@ app.L = {
 		[-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 		[-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
+	};
+	["HEADER_LORE"] = {
+		
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

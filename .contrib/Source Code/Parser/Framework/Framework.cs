@@ -4402,7 +4402,8 @@ namespace ATT
                     var keys = new List<long>();
                     var icons = new Dictionary<long, string>();
                     var constants = new Dictionary<long, string>();
-                    var localization = new Dictionary<string, Dictionary<long, string>>();
+                    var localizationForText = new Dictionary<string, Dictionary<long, string>>();
+                    var localizationForLore = new Dictionary<string, Dictionary<long, string>>();
                     var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
                     foreach (var key in CustomHeaders.Keys)
                     {
@@ -4431,9 +4432,9 @@ namespace ATT
                                 }
                                 foreach (var locale in localeData)
                                 {
-                                    if (!localization.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                    if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
                                     {
-                                        localization[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
                                     }
                                     sublocale[key] = locale.Value.ToString();
                                 }
@@ -4452,6 +4453,24 @@ namespace ATT
                                     if (!localizationForDescriptions.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
                                     {
                                         localizationForDescriptions[locale.Key] = sublocale = new Dictionary<long, string>();
+                                    }
+                                    sublocale[key] = locale.Value.ToString();
+                                }
+                            }
+                            if (header.TryGetValue("lore", out value))
+                            {
+                                if (!(value is Dictionary<string, object> localeData))
+                                {
+                                    localeData = new Dictionary<string, object>
+                                    {
+                                        ["en"] = value
+                                    };
+                                }
+                                foreach (var locale in localeData)
+                                {
+                                    if (!localizationForLore.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                    {
+                                        localizationForLore[locale.Key] = sublocale = new Dictionary<long, string>();
                                     }
                                     sublocale[key] = locale.Value.ToString();
                                 }
@@ -4482,12 +4501,12 @@ namespace ATT
                     builder.AppendLine("}) do a[key] = value; end").AppendLine();
 
                     // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
-                    if (localization.TryGetValue("cn", out Dictionary<long, string> data))
+                    if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
                     {
-                        localization.Remove("cn");
-                        if (!localization.TryGetValue("zh", out Dictionary<long, string> zh))
+                        localizationForText.Remove("cn");
+                        if (!localizationForText.TryGetValue("zh", out Dictionary<long, string> zh))
                         {
-                            localization["zh"] = data;
+                            localizationForText["zh"] = data;
                         }
                         else
                         {
@@ -4497,9 +4516,11 @@ namespace ATT
                             }
                         }
                     }
-                    if (localization.TryGetValue("en", out data))
+
+                    // Get all of the english translations and always write them to the file.
+                    if (localizationForText.TryGetValue("en", out data))
                     {
-                        localization.Remove("en");
+                        localizationForText.Remove("en");
                         builder.AppendLine("local a = L.HEADER_NAMES;").AppendLine("for key,value in pairs({");
                         foreach (var key in keys)
                         {
@@ -4510,7 +4531,6 @@ namespace ATT
                         }
                         builder.AppendLine("}) do a[key] = value; end").AppendLine();
                     }
-
                     if (localizationForDescriptions.TryGetValue("en", out data))
                     {
                         localizationForDescriptions.Remove("en");
@@ -4524,12 +4544,26 @@ namespace ATT
                         }
                         builder.AppendLine("}) do a[key] = value; end").AppendLine();
                     }
+                    if (localizationForLore.TryGetValue("en", out data))
+                    {
+                        localizationForLore.Remove("en");
+                        builder.AppendLine("local a = L.HEADER_LORE;").AppendLine("for key,value in pairs({");
+                        foreach (var key in keys)
+                        {
+                            if (data.TryGetValue(key, out string name))
+                            {
+                                ExportStringKeyValue(builder, key, name).AppendLine();
+                            }
+                        }
+                        builder.AppendLine("}) do a[key] = value; end").AppendLine();
+                    }
 
-                    var localeKeys = localization.Keys.ToList();
+                    // Now grab the non-english localizations and conditionally write them to the file.
+                    var localeKeys = localizationForText.Keys.ToList();
                     localeKeys.Sort();
                     foreach (var localeKey in localeKeys)
                     {
-                        if (localization.TryGetValue(localeKey, out data) && data.Any())
+                        if (localizationForText.TryGetValue(localeKey, out data) && data.Any())
                         {
                             builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
                             builder.AppendLine("a = L.HEADER_NAMES;").AppendLine("for key,value in pairs({");
@@ -4553,6 +4587,26 @@ namespace ATT
                         {
                             builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
                             builder.AppendLine("a = L.HEADER_DESCRIPTIONS;").AppendLine("for key,value in pairs({");
+                            foreach (var key in keys)
+                            {
+                                if (data.TryGetValue(key, out string name))
+                                {
+                                    ExportStringKeyValue(builder, key, name).AppendLine();
+                                }
+                            }
+                            builder.AppendLine("}) do a[key] = value; end");
+                            builder.AppendLine("end").AppendLine();
+                        }
+                    }
+
+                    localeKeys = localizationForLore.Keys.ToList();
+                    localeKeys.Sort();
+                    foreach (var localeKey in localeKeys)
+                    {
+                        if (localizationForLore.TryGetValue(localeKey, out data) && data.Any())
+                        {
+                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
+                            builder.AppendLine("a = L.HEADER_LORE;").AppendLine("for key,value in pairs({");
                             foreach (var key in keys)
                             {
                                 if (data.TryGetValue(key, out string name))

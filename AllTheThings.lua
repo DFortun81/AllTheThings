@@ -13212,6 +13212,9 @@ local headerFields = {
 	["description"] = function(t)
 		return L["HEADER_DESCRIPTIONS"][t.headerID];
 	end,
+	["lore"] = function(t)
+		return L["HEADER_LORE"][t.headerID];
+	end,
 	["nameAsAchievement"] = function(t)
 		return L["HEADER_NAMES"][t.headerID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
