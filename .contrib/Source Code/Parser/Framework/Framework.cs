@@ -3957,14 +3957,14 @@ namespace ATT
             builder.Append("\t[").Append(key).Append("] = ");
             if (value.StartsWith("~"))
             {
-                return builder.Append(value.Substring(1).Replace("\n", "\\\n").Replace("\r", "\\\r")).Append(",");
+                return builder.Append(value.Substring(1).Replace("\n", "\\n").Replace("\r", "\\r")).Append(",");
             }
             else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(")
                 || value.StartsWith("_."))
             {
-                return builder.Append(value.Replace("\n", "\\\n").Replace("\r", "\\\r")).Append(",");
+                return builder.Append(value.Replace("\n", "\\n").Replace("\r", "\\r")).Append(",");
             }
-            return builder.Append("\"").Append(value.Replace("\n", "\\\n").Replace("\r", "\\\r")).Append("\",");
+            return builder.Append("\"").Append(value.Replace("\n", "\\n").Replace("\r", "\\r")).Append("\",");
         }
         #endregion
 
