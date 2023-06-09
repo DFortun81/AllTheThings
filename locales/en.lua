@@ -995,9 +995,6 @@ app.L = {
 	["HEADER_ICONS"] = {
 		--[-] = "Interface\\Icons\\",														--
 	-- Commonly used
-		[0] = app.asset("Interface_Zone_drop"),												-- Zone Drop
-		[-1] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE",							-- Common Boss Drop
-		[-2] = app.asset("Interface_Vendor"),												-- Vendors
 		[-3] = app.asset("Category_Holidays"),												-- Holidays
 		[-4] = app.asset("Category_Achievements"),											-- Achievement
 		[-7] = app.asset("Interface_World_boss"),											-- World Bosses
@@ -1505,9 +1502,6 @@ app.L = {
 	};
 	["HEADER_NAMES"] = {
 	-- Commonly used
-		[0] = ZONE.." "..BATTLE_PET_SOURCE_1,									-- Zone Drop
-		[-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,				-- Common Boss Drop
-		[-2] = TUTORIAL_TITLE20,												-- Vendors
 		[-3] = GetItemSubClassInfo(15,3),										-- Holiday
 		[-4] = ACHIEVEMENTS,													-- Achievements
 		[-7] = WORLD.." "..RAID_BOSSES,											-- World Bosses

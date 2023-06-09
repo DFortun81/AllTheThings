@@ -655,8 +655,6 @@ do a[key] = value; end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
-		[0] = "Добыча локации",									-- Zone Drop
-		[-1] = "Общая добыча с боссов",							-- Common Boss Drop
 		[-7] = "Мировые Боссы",									-- World Bosses
 		[-11] = "Обычная добыча из Сундуков",					-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [Восток - Демоны]",	-- Warpwood Quarter [East - Demon]

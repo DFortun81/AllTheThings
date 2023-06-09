@@ -18,6 +18,7 @@
         DataIntegrityAnalysis,
         ExportDebugData,
         ExportCategoryDB,
+        ExportCustomHeaders,
         ExportObjectDB,
         ExportAddonData,
         ExportAutoSources,

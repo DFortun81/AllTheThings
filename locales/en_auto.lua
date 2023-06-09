@@ -1,4 +1,4 @@
---   WARNING: This file is dynamically generated   --
+﻿--   WARNING: This file is dynamically generated   --
 local _, app = ...;
 local keys = {
 ["ITEM_NAMES"]={
@@ -245,7 +245,7 @@ local keys = {
 [9507]="<DEPRECATED>From the Desk of Mogul Razdunk",
 [9510]="Bristlehide Clefthoof Hides",
 [9511]="Kargath's Battle Plans",
-[9577]="DAILY TEST QUEST (PVP) ? ? TBC:DAILY TEST QUEST (PVP) ?WOTLK:DAILY TEST QUEST (PVP)",
+[9577]="DAILY TEST QUEST (PVP)     TBC:DAILY TEST QUEST (PVP)  WOTLK:DAILY TEST QUEST (PVP)",
 [9583]="Omar's Test Quest bk",
 [9596]="<DEPRECATED>Control",
 [9597]="<UNUSED>",

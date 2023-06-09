@@ -1057,3 +1057,37 @@ model = function(displayID, t)
 	return t;
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
+
+-- Create a Header. Returns a UNIQUE ID, starting at 0.
+(function()
+local customHeaders,nextHeaderID = {},-1000000;	-- TODO: Change this to 0.
+CustomHeaders = customHeaders;	-- This is global, so that it can be found by Parser!
+createHeader = function(data)
+	if not data then
+		print("INVALID HEADER: You must pass data into the createHeader function.");
+	elseif not (data.text and (type(data.text) == "string" or (type(data.text) == "table" and data.text.en))) then
+		print("INVALID HEADER", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
+	else
+		local headerID = nextHeaderID;
+		customHeaders[headerID] = data;
+		nextHeaderID = nextHeaderID - 1;
+		--print("HEADER", headerID .. ":", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
+		if data.readable then data.readable = nil; end	-- We don't want this in the final product.
+		return headerID;
+	end
+end
+--[[
+-- Here's an example showing all the different supported fields.
+CRIEVES_SUPER_COOL_HEADER = createHeader({
+	readable = "Crieve's Super Cool Header",
+	icon = "INTERFACE\\ICONS\\Interface_Icon_Lol",
+	text = {
+		en = "Crieve's Super Cool Header",
+		ru = "TODO: Russion Translation Here",
+	},
+	description = {
+		en = "This is just an example!",
+	},
+});
+]]--
+end)();

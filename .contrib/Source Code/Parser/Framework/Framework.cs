@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
+using System.Reflection;
 using System.Text;
 using static ATT.Export;
 
@@ -356,6 +358,11 @@ namespace ATT
         /// the Item is Sourced elsewhere for the specific ATT Build
         /// </summary>
         internal static List<Dictionary<string, object>> ConditionalItemData { get; } = new List<Dictionary<string, object>>();
+
+        /// <summary>
+        /// The CustomHeaders table from main.lua that is used to generate custom headers.
+        /// </summary>
+        internal static Dictionary<long, object> CustomHeaders;
 
         /// <summary>
         /// Contains two Keys for sets of field names relating to a 'trackable' nature within ATT
@@ -3877,7 +3884,7 @@ namespace ATT
             return new List<object>();
         }
 
-        static Dictionary<TKey, object> ParseAsDictionary<TKey>(LuaTable table)
+        public static Dictionary<TKey, object> ParseAsDictionary<TKey>(LuaTable table)
         {
             var dict = new Dictionary<TKey, object>();
             foreach (var key in table.Keys)
@@ -3938,6 +3945,26 @@ namespace ATT
                     }
             }
             return null;
+        }
+
+        static StringBuilder ExportObjectKeyValue(StringBuilder builder, object key, object value)
+        {
+            return builder.Append("\t[").Append(key).Append("] = ").Append(value).Append(",");
+        }
+
+        static StringBuilder ExportStringKeyValue(StringBuilder builder, object key, string value)
+        {
+            builder.Append("\t[").Append(key).Append("] = ");
+            if (value.StartsWith("~"))
+            {
+                return builder.Append(value.Substring(1)).Append(",");
+            }
+            else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(")
+                || value.StartsWith("_."))
+            {
+                return builder.Append(value).Append(",");
+            }
+            return builder.Append("\"").Append(value).Append("\",");
         }
         #endregion
 
@@ -4178,6 +4205,7 @@ namespace ATT
                             foreach (var key in keys)
                             {
                                 var name = CATEGORY_NAMES[key];
+
                                 builder.Append("\t[").Append(key).Append("] = ");
                                 if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
                                 {
@@ -4329,6 +4357,116 @@ namespace ATT
                     if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
                 }
 
+                // Export the Custom Headers file.
+                if (CustomHeaders != null && CustomHeaders.Any())
+                {
+                    CurrentParseStage = ParseStage.ExportCustomHeaders;
+                    var builder = new StringBuilder("-------------------------------------------------------\n--   C U S T O M   H E A D E R S   M O D U L E   --\n-------------------------------------------------------\n")
+                        .AppendLine("local _ = select(2, ...);")
+                        .AppendLine("local L = _.L;")
+                        .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
+                    var keys = new List<long>();
+                    var icons = new Dictionary<long, string>();
+                    var localization = new Dictionary<string, Dictionary<long, string>>();
+                    foreach (var key in CustomHeaders.Keys)
+                    {
+                        // TODO: Include Only Referenced Headers!
+                        //if (CUSTOM_HEADERS_WITH_REFERENCES.ContainsKey(key))
+                        //{
+                        if (CustomHeaders.TryGetValue(key, out object o) && o is Dictionary<string, object> header)
+                        {
+                            keys.Add(key);
+                            if (header.TryGetValue("icon", out object value))
+                            {
+                                icons[key] = value.ToString();
+                            }
+                            if (header.TryGetValue("text", out value))
+                            {
+                                if (!(value is Dictionary<string, object> localeData))
+                                {
+                                    localeData = new Dictionary<string, object>
+                                    {
+                                        ["en"] = value
+                                    };
+                                }
+                                foreach (var locale in localeData)
+                                {
+                                    if (!localization.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                    {
+                                        localization[locale.Key] = sublocale = new Dictionary<long, string>();
+                                    }
+                                    sublocale[key] = locale.Value.ToString();
+                                }
+                            }
+                        }
+                        //}
+                    }
+                    keys.Sort();
+                    builder.AppendLine("local a = L.HEADER_ICONS;").AppendLine("for key,value in pairs({");
+                    foreach (var key in keys)
+                    {
+                        if (icons.TryGetValue(key, out string icon))
+                        {
+                            ExportStringKeyValue(builder, key, icon).AppendLine();
+                        }
+                    }
+                    builder.AppendLine("}) do a[key] = value; end").AppendLine();
+
+                    // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
+                    if (localization.TryGetValue("cn", out Dictionary<long, string> data))
+                    {
+                        localization.Remove("cn");
+                        if (!localization.TryGetValue("zh", out Dictionary<long, string> zh))
+                        {
+                            localization["zh"] = data;
+                        }
+                        else
+                        {
+                            foreach(var pair in data)
+                            {
+                                zh[pair.Key] = pair.Value;
+                            }
+                        }
+                    }
+                    if (localization.TryGetValue("en", out data))
+                    {
+                        localization.Remove("en");
+                        builder.AppendLine("local a = L.HEADER_NAMES;").AppendLine("for key,value in pairs({");
+                        foreach (var key in keys)
+                        {
+                            if (data.TryGetValue(key, out string name))
+                            {
+                                ExportStringKeyValue(builder, key, name).AppendLine();
+                            }
+                        }
+                        builder.AppendLine("}) do a[key] = value; end").AppendLine();
+                    }
+                    var localeKeys = localization.Keys.ToList();
+                    localeKeys.Sort();
+                    foreach (var localeKey in localeKeys)
+                    {
+                        if (localization.TryGetValue(localeKey, out data) && data.Any())
+                        {
+                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
+                            builder.AppendLine("local a = L.HEADER_NAMES;").AppendLine("for key,value in pairs({");
+                            foreach (var key in keys)
+                            {
+                                if (data.TryGetValue(key, out string name))
+                                {
+                                    ExportStringKeyValue(builder, key, name).AppendLine();
+                                }
+                            }
+                            builder.AppendLine("}) do a[key] = value; end");
+                            builder.AppendLine("end").AppendLine();
+                        }
+                    }
+
+                    // Check to make sure the content is different since Diff tools are dumb as hell.
+                    var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}Custom Headers.lua");
+                    var content = builder.ToString().Replace("\r\n", "\n").Trim();
+                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                }
+
                 // Export the Object DB file.
                 if (OBJECT_NAMES.Any())
                 {
@@ -4341,13 +4479,7 @@ namespace ATT
                     {
                         if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
                         {
-                            var name = OBJECT_NAMES[key];
-                            builder.Append("\t[").Append(key).Append("] = ");
-                            if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~") || name.StartsWith("_."))
-                            {
-                                builder.Append(name).Append(",").AppendLine();
-                            }
-                            else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                            ExportStringKeyValue(builder, key, OBJECT_NAMES[key]).AppendLine();
                         }
                     }
                     builder.AppendLine("};");
@@ -4358,13 +4490,7 @@ namespace ATT
                     {
                         if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
                         {
-                            var icon = OBJECT_ICONS[key];
-                            builder.Append("\t[").Append(key).Append("] = ");
-                            if (icon.StartsWith("GetSpellInfo") || icon.StartsWith("GetItem") || icon.StartsWith("select(") || icon.StartsWith("~") || icon.StartsWith("_."))
-                            {
-                                builder.Append(icon).Append(",").AppendLine();
-                            }
-                            else builder.Append("\"").Append(icon).Append("\",").AppendLine();
+                            ExportStringKeyValue(builder, key, OBJECT_ICONS[key]).AppendLine();
                         }
                     }
                     builder.AppendLine("};");
@@ -4375,7 +4501,7 @@ namespace ATT
                     {
                         if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
                         {
-                            builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",").AppendLine();
+                            ExportObjectKeyValue(builder, key, OBJECT_MODELS[key]).AppendLine();
                         }
                     }
                     builder.AppendLine("};");

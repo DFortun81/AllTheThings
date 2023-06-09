@@ -163,6 +163,21 @@ namespace ATT
                     }
                 }
                 while (true);
+
+                try
+                {
+                    // Try to grab the contents of the global variable "CustomHeaders".
+                    var customHeaders = lua.GetTable("CustomHeaders");
+                    if (customHeaders != null && customHeaders.Keys.Count > 0)
+                    {
+                        Trace.WriteLine($"Found {customHeaders.Keys.Count} Custom Headers...");
+                        Framework.CustomHeaders = Framework.ParseAsDictionary<long>(customHeaders);
+                    }
+                }
+                catch(Exception e)
+                {
+                    Trace.WriteLine(e);
+                }
                 lua.Close();
 
                 // Now that all of the data and items have been loaded into the Database, let's Process it!

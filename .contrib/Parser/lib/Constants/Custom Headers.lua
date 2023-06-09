@@ -31,10 +31,8 @@ RARES = -16;
 REWARDS = -18;
 SPECIAL = -77;
 TREASURES = -212;
-VENDORS = -2;
 WEEKLY_HOLIDAYS = -176;					-- Not used in Classic
 WORLD_QUESTS = -34;
-ZONE_DROPS = 0;
 ZONE_REWARDS = -903;					-- Not used in Classic
 
 -- Factions
@@ -69,7 +67,6 @@ SETS = -1000;
 TITANFORGED = -355;
 
 -- D&R
-COMMON_BOSS_DROPS = -1;
 WORLD_BOSSES = -7;
 -- #if ANYCLASSIC
 BOSSES = -10;
