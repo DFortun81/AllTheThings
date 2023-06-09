@@ -7,7 +7,6 @@ BONUS_OBJECTIVES = -221;				-- Not used in Classic
 CAMPAIGN = -1099;						-- Not used in Classic
 DROPS = -26;
 EMISSARY_QUESTS = -169;					-- Not used in Classic
-EXPLORATION = -15;
 -- #if ANYCLASSIC
 FLIGHT_PATHS = -6;
 -- #else
