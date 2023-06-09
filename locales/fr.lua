@@ -667,9 +667,6 @@ do a[key] = value; end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
-		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [Est - Démons]",			-- Warpwood Quarter [East - Demon]
-		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [Nord - Ogres]",			-- Gordok Commons [North - Ogres]
-		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [Ouest - Elfes]",		-- Capital Gardens [West - Elves]
 		[-15] = "Exploration",										-- Exploration
 		[-19] = "Dragons du Cauchemar",								-- Dragons of Nightmare
 		[-21] = "Capitaines",										-- Captains

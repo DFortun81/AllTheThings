@@ -656,9 +656,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[-11] = "Обычная добыча из Сундуков",					-- Common Box Drops
-		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [Восток - Демоны]",	-- Warpwood Quarter [East - Demon]
-		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [Север - Огры]",		-- Gordok Commons [North - Ogres]
-		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [Запад - Эльфы]",	-- Capital Gardens [West - Elves]
 		[-15] = "Исследование",									-- Exploration
 		[-19] = "Драконы Кошмара",								-- Dragons of Nightmare
 		[-21] = "Капитаны",										-- Captains

@@ -684,9 +684,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[-11] = "一般宝箱掉落",											-- Common Box Drops
-		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [东 - 恶魔]",				-- Warpwood Quarter [East - Demon]
-		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [北 - 食人魔]",				-- Gordok Commons [North - Ogres]
-		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [西 - 精灵]",				-- Capital Gardens [West - Elves]
 		[-15] = "勘探",												-- Exploration
 		[-19] = "梦魇之龙",												-- Dragons of Nightmare
 		[-21] = "船长",												-- Captains

@@ -994,9 +994,6 @@ app.L = {
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
 		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
-		[-12] = "Interface\\Icons\\Ability_Warlock_DemonicEmpowerment",						-- East entrance demons
-		[-13] = "Interface\\Icons\\Achievement_Reputation_Ogre",							-- North entrance ogres
-		[-14] = "Interface\\Icons\\INV_Misc_Head_Elf_02",									-- West entrace elves
 		[-15] = "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02",					-- Exploration
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
@@ -1437,9 +1434,6 @@ app.L = {
 	};
 	["HEADER_NAMES"] = {
 		[-11] = "Common Box Drops",												-- Common Box Drops
-		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",					-- Warpwood Quarter [East - Demon]
-		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",					-- Gordok Commons [North - Ogres]
-		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",						-- Capital Gardens [West - Elves]
 		[-15] = "Exploration",													-- Exploration
 		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
 		[-21] = "Captains",

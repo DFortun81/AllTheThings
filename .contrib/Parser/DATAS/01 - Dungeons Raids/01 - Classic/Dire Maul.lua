@@ -1,6 +1,53 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+WARPWOOD_QUARTER = createHeader({
+	readable = "Warpwood Quarter",
+	-- #if AFTER WRATH
+	icon = "Interface\\Icons\\Ability_Warlock_DemonicEmpowerment",
+	-- #else
+	icon = "Interface\\Icons\\Spell_Shadow_SummonImp",
+	-- #endif
+	text = {
+		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (East)"]],
+		fr = [[~DUNGEON_FLOOR_DIREMAUL5.." (Est)"]],
+		ru = [[~DUNGEON_FLOOR_DIREMAUL5.." (Восток)"]],
+		cn = [[~DUNGEON_FLOOR_DIREMAUL5.." (东)"]],
+	},
+	description = {
+		en = "This part of the instance can be accessed from the eastern-most portal. (right side)",
+	},
+});
+GORDOK_COMMONS = createHeader({
+	readable = "Gordok Commons",
+	-- #if AFTER WRATH
+	icon = "Interface\\Icons\\Achievement_Reputation_Ogre",
+	-- #else
+	icon = "Interface\\Icons\\inv_axe_10",
+	-- #endif
+	text = {
+		en = [[~DUNGEON_FLOOR_DIREMAUL1.." (North)"]],
+		fr = [[~DUNGEON_FLOOR_DIREMAUL1.." (Nord)"]],
+		ru = [[~DUNGEON_FLOOR_DIREMAUL1.." (Север)"]],
+		cn = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
+	},
+	description = {
+		en = "This part of the instance can be accessed from the northern-most portal.",
+	},
+});
+CAPITAL_GARDENS = createHeader({
+	readable = "Capital Gardens",
+	icon = "Interface\\Icons\\INV_Misc_Head_Elf_02",
+	text = {
+		en = [[~DUNGEON_FLOOR_DIREMAUL2.." (West)"]],
+		fr = [[~DUNGEON_FLOOR_DIREMAUL2.." (Ouest)"]],
+		ru = [[~DUNGEON_FLOOR_DIREMAUL2.." (Запад)"]],
+		cn = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
+	},
+	description = {
+		en = "This part of the instance can be accessed from the western-most portal. (left side)",
+	},
+});
 -- #if BEFORE 4.0.3
 local OnTooltipForShendralar = [[function(t)
 	local reputation = t.reputation;
@@ -1057,9 +1104,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					}),
 				},
 			}),
-			m(239, {	-- Warpwood Quarter [East - Demon]
-				["creatureID"] = -12,	-- Warpwood Quarter [East - Demon]
-				["description"] = "This part of the instance can be accessed from the eastern-most portal. (right side)",
+			m(239, {	-- Warpwood Quarter (East)
+				["creatureID"] = WARPWOOD_QUARTER,
 				["coord"] = { 64.83, 30.24, FERALAS },	-- Dire Maul [East]
 				["maps"] = { 240 },	-- The Shrine of Eldretharr
 				["groups"] = {
@@ -1248,9 +1294,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					}),
 				},
 			}),
-			m(235, {	-- Gordok Commons [North - Ogres] [Straight]
-				["creatureID"] = -13,	-- Gordok Commons [North - Ogres] [Straight]
-				["description"] = "This part of the instance can be accessed from the northern-most portal.",
+			m(235, {	-- Gordok Commons (North)
+				["creatureID"] = GORDOK_COMMONS,
 				["coord"] = { 62.48, 24.48, FERALAS },	-- Dire Maul [North]
 				-- #if BEFORE 4.0.3
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
@@ -1488,9 +1533,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					}),
 				},
 			}),
-			m(236, {	-- Capital Gardens [West - Elves] [Left Side]
-				["creatureID"] = -14,	-- Capital Gardens [West - Elves] [Left Side]
-				["description"] = "This part of the instance can be accessed from the western-most portal. (left side)",
+			m(236, {	-- Capital Gardens (West)
+				["creatureID"] = CAPITAL_GARDENS,
 				["coord"] = { 60.32, 30.17, FERALAS },	-- Dire Maul [West]
 				["maps"] = {
 					237,	-- Court of the Highborne
