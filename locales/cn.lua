@@ -789,16 +789,6 @@ for key,value in pairs({
 			[-660] = "争斗者套装",									-- Combatant PvP Gear (WoD, Legion)
 			[-661] = "角斗士套装",									-- Gladiator PvP Gear
 			[-662] = "精锐套装",										-- Elite PvP Gear
-		-- The Burning Crusade PvP Seasons
-			[-665] = select(2, GetAchievementInfo(418)).."：第2赛季",	-- Merciless Gladiator: Season 2
-			[-666] = select(2, GetAchievementInfo(419)).."：第3赛季",	-- Vengeful Gladiator: Season 3
-			[-667] = select(2, GetAchievementInfo(420)).."：第4赛季",	-- Brutal Gladiator: Season 4
-		-- Wrath of the Lich-King PvP Seasons
-			[-668] = select(2, GetAchievementInfo(3336)).."第5赛季",	-- Deadly Gladiator: Season 5
-			[-657] = "憎恨角斗士",										-- Hateful Gladiator: Season 5 ("medium pvp gear")
-			[-669] = select(2, GetAchievementInfo(3436)).."第6赛季",	-- Furious Gladiator: Season 6
-			[-670] = select(2, GetAchievementInfo(3758)).."第7赛季",	-- Relentless Gladiator: Season 7
-			[-671] = select(2, GetAchievementInfo(4599)).."第8赛季",	-- Wrathful Gladiator: Season 8
 		-- Cataclysm PvP Seasons
 			[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",	-- Vicious Gladiator: Season 9
 			[-656] = "荣誉装备冷酷赛季",									-- Honor Gear Ruthless (S10)

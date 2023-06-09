@@ -772,16 +772,6 @@ for key,value in pairs({
 			[-660] = "Équipement Combattant",						-- Combatant PvP Gear (WoD, Legion)
 			[-661] = "Équipement Gladiateur",						-- Gladiator PvP Gear
 			[-662] = "Équipement Élite",							-- Elite PvP Gear
-		-- The Burning Crusade PvP Seasons
-			[-665] = select(2, GetAchievementInfo(418)).." : Saison 2",		-- Merciless Gladiator: Season 2
-			[-666] = select(2, GetAchievementInfo(419)).." : Saison 3",		-- Vengeful Gladiator: Season 3
-			[-667] = select(2, GetAchievementInfo(420)).." : Saison 4",		-- Brutal Gladiator: Season 4
-		-- Wrath of the Lich-King PvP Seasons
-			[-668] = select(2, GetAchievementInfo(3336)).." : Saison 5",	-- Deadly Gladiator: Season 5
-			[-657] = "Gladiateur Haineux",									-- Hateful Gladiator: Season 5 ("medium pvp gear")
-			[-669] = select(2, GetAchievementInfo(3436)).." : Saison 6",	-- Furious Gladiator: Season 6
-			[-670] = select(2, GetAchievementInfo(3758)).." : Saison 7",	-- Relentless Gladiator: Season 7
-			[-671] = select(2, GetAchievementInfo(4599)).." : Saison 8",	-- Wrathful Gladiator: Season 8
 		-- Cataclysm PvP Seasons
 			[-672] = select(2, GetAchievementInfo(6002)).." : Saison 9",	-- Vicious Gladiator: Season 9
 			[-656] = "Équipement Honneur Gladiateur sans pitié",			-- Honor Gear Ruthless Season

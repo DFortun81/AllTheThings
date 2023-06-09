@@ -760,16 +760,6 @@ for key,value in pairs({
 			[-660] = "Доспехи Бойца",								-- Combatant PvP Gear (WoD, Legion)
 			[-661] = "Доспехи Гладиатора",							-- Gladiator PvP Gear
 			[-662] = "Элитные доспехи",								-- Elite PvP Gear
-		-- The Burning Crusade PvP Seasons
-			[-665] = select(2, GetAchievementInfo(418))..": Сезон 2",	-- Merciless Gladiator: Season 2
-			[-666] = select(2, GetAchievementInfo(419))..": Сезон 3",	-- Vengeful Gladiator: Season 3
-			[-667] = select(2, GetAchievementInfo(420))..": Сезон 4",	-- Brutal Gladiator: Season 4
-		-- Wrath of the Lich-King PvP Seasons
-			[-668] = select(2, GetAchievementInfo(3336))..": Сезон 5",	-- Deadly Gladiator: Season 5
-			[-657] = "Злобный гладиатор",								-- Hateful Gladiator
-			[-669] = select(2, GetAchievementInfo(3436))..": Сезон 6",	-- Furious Gladiator: Season 6
-			[-670] = select(2, GetAchievementInfo(3758))..": Сезон 7",	-- Relentless Gladiator: Season 7
-			[-671] = select(2, GetAchievementInfo(4599))..": Сезон 8",	-- Wrathful Gladiator: Season 8
 		-- Cataclysm PvP Seasons
 			[-672] = select(2, GetAchievementInfo(6002))..": Сезон 9",	-- Vicious Gladiator: Season 9
 			[-656] = "Доспехи Беспощадного гладиатора за очки чести",	-- Honor Gear Ruthless Season
