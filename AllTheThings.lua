@@ -7004,8 +7004,8 @@ end
 local function AddTomTomWaypointCache(coord, group)
 	local mapID = coord[3];
 	if mapID then
-		-- app.PrintDebug("WP:Cache",group.hash)
 		__TomTomWaypointCount = __TomTomWaypointCount + 1;
+		-- app.PrintDebug("WP:Cache",__TomTomWaypointCount,group.hash)
 		__TomTomWaypointCache[mapID][math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
 	else
 		-- coord[3] not existing is checked by Parser and shouldn't ever happen
@@ -7023,7 +7023,8 @@ local function AddTomTomParentCoord(group)
 			end
 			break;
 		end
-		if parent.coord then
+		-- ignore parent if it has no parent itself (window header)
+		if parent.coord and rawget(parent, "parent") then
 			AddTomTomWaypointCache(parent.coord, parent);
 			break;
 		end
@@ -7045,10 +7046,6 @@ local function AddTomTomWaypointInternal(group, depth)
 			end
 			if group.coord then AddTomTomWaypointCache(group.coord, group); end
 		end
-		-- also check for first coord(s) on parent chain of plotted group
-		if depth == 0 and __TomTomWaypointCount == 0 then
-			AddTomTomParentCoord(group);
-		end
 		-- sub-groups coords?
 		if group.g then
 			-- app.PrintDebug("WP:SubGroups",group.hash)
@@ -7064,8 +7061,12 @@ local function AddTomTomWaypointInternal(group, depth)
 				AddTomTomWaypointInternal(o, depth + 1);
 			end
 		end
-		-- also check for first coord(s) on alternate search results/parents of the group if it's a Thing
-		if app.ThingKeys[group.key or 0] then
+		-- also check for first coord(s) on parent chain of plotted group if no coords at or below the plotted group
+		if depth == 0 and __TomTomWaypointCount == 0 then
+			AddTomTomParentCoord(group);
+		end
+		-- also check for first coord(s) on alternate search results/parents of the group if it's a Thing and no other coords found
+		if __TomTomWaypointCount == 0 and app.ThingKeys[group.key or 0] then
 			-- app.PrintDebug("WP:SearchScan",group.hash)
 			local key = group.key;
 			local searchResults = SearchForField(key, group[key], "field");
