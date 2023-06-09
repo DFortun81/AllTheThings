@@ -673,9 +673,7 @@ for key,value in pairs({
 		[-15] = "Exploration",										-- Exploration
 		[-19] = "Dragons du Cauchemar",								-- Dragons of Nightmare
 		[-21] = "Capitaines",										-- Captains
-		[-22] = "Secrets",											-- Secrets
 		[-23] = "Objet commun de donjon",							-- WoD Common Dungeon Drop
-		--TODO: [-26] = "Drops",									-- Drops
 		[-27] = "Bas",												-- Lower (Blackrock Spire)
 		[-28] = "Haut",												-- Upper (Blackrock Spire)
 		[-41] = "L'antre de la Folie",
@@ -696,23 +694,6 @@ for key,value in pairs({
 		[-86] = "Librairie",
 		[-87] = "Armurerie",
 		[-88] = "Cathédrale",
-	-- Garrisons
-		--TODO: [-99] = "Buildings",
-	-- Alliance [Swaps based on faction ONLY after a reloadui]
-		--TODO: [-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),	-- Duskwood Active
-		--TODO: [-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),	-- The Hinterlands Active
-		--TODO: [-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),	-- Feralas Active
-		--TODO: [-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),	-- Duskwood Activated
-	-- Garrison
-		--TODO: [-152] = "Garrison Campaign",						-- Garrison Campaign
-	-- Druid Feral Druid Hidden Artifact Appearance
-		--TODO: [-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),	-- The Hinterlands Activated
-		--TODO: [-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),	-- Feralas Activated
-	-- Class Hall /Artifact
-		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
-	-- Other
-		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
-		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
 		[-217] = "Appâts",											-- Lures (for Fishing)
 	--TODO: [-219] = "Sourceless",									-- Sourceless
@@ -793,7 +774,6 @@ for key,value in pairs({
 		[-860] = "Rang 3",											-- Rank 3
 		[-861] = "Rang 4",											-- Rank 4
 	-- Shadowlands Header
-		[-903] = "Récompenses de la zone",							-- Zone Rewards
 		[-979] = "Négociant Ve'ken & Négociant Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Améliorations du sanctum",						-- Sanctum Upgrades
 		[-924] = "Réseau de transport",								-- Transport Network
@@ -834,21 +814,6 @@ for key,value in pairs({
 		[-1200] = "Caveaux de Zskera",								-- Zskera Vaults
 		[-1202] = "Assauts de Fyrakka",								-- Fyrakk Assaults
 		[-1203] = "Recherches olfactives",							-- Sniffenseeking
-	-- Warrior order hall lore items
-		[-2200] = "Le grand Odyn et le seigneur du feu",
-		--TODO: [-2201] = "The Wanderer and the Serpent",
-		--TODO: [-2202] = "Halls of Gold and Glory",
-		--TODO: [-2203] = "The Keeper's Eye",
-		--TODO: [-2204] = "First of the Val'kyr",
-		--TODO: [-2205] = "The Sealing of the Halls of Valor",
-		[-2206] = "Il s’appelait Sang de dragon",					-- His Name Is Dragonblood
-		[-2207] = "Les dernières paroles d’Asgrim le Tueur de l’effroi",	-- The Last Words of Asgrim the Dreadkiller
-		[-2208] = "Le credo de la vierge guerrière",				-- A Shieldmaiden's Creed
-		[-2209] = "La prophétie de Rythas l’Oracle",				-- The Prophecy of Rythas the Oracle
-		[-2210] = "Les leçons du poing noir",						-- The Lessons of the Blacklist
-		[-2211] = "La folie de Volund",								-- Volund's Folly
-	-- T3
-		--TODO: [-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "Apparence de base",							-- Base Appearance
@@ -884,11 +849,8 @@ do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
-	[-22] = "Vilains secrets...",
-	[-34] = "Les quêtes mondiales sont des quêtes limitées dans le temps, disponibles dans des lieux spécifiques avec des récompenses variables.\n\nN’oublie pas de consulter souvent la fenêtre des quêtes mondiales ATT (/attwq) pour voir quelles sont les objets limités dans le temps que tu dois collecter !",
 	[-169] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
 	[-799] = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
-	[-903] = "Ces objets peuvent provenir de coffres au trésor répétitifs, Criquet à souhait, de quêtes mondiales ou des missions de la table de commandement.",
 })
 do a[key] = value; end
 

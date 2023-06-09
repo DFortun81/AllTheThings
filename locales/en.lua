@@ -993,7 +993,6 @@ app.L = {
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
-		[-10] = "Interface\\Icons\\achievement_reputation_05",								-- Party Sync
 		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
 		[-12] = "Interface\\Icons\\Ability_Warlock_DemonicEmpowerment",						-- East entrance demons
 		[-13] = "Interface\\Icons\\Achievement_Reputation_Ogre",							-- North entrance ogres
@@ -1001,11 +1000,7 @@ app.L = {
 		[-15] = "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02",					-- Exploration
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
-		[-22] = app.asset("Category_Secrets"),												-- Secrets
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
-		[-24] = "Interface\\Icons\\Inv_misc_map02",											-- Maps
-		[-26] = app.asset("Category_WorldDrops"),											-- Drop
-		[-34] = app.asset("Interface_WorldQuest"),											-- World Quests
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
 		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",							-- Discovery
 		[-38] = app.asset("Category_Professions"),											-- Professions
@@ -1033,7 +1028,6 @@ app.L = {
 
 		[-75] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Detention Block
 		[-76] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Shadowforge City
-		[-77] = "Interface\\Icons\\Inv_archaeology_70_starlightbeacon",						-- Special
 	-- Zul'Aman
 		[-78] = "Interface\\Icons\\INV_Misc_Basket_05",										-- Timed Event
 		[-79] = "Interface\\Icons\\INV_Misc_Bag_28_Halloween",								-- First Chest
@@ -1064,8 +1058,6 @@ app.L = {
 	-- Class Trial
 		[-137] = "Interface\\Icons\\achievement_level_90",									-- Level 90
 		[-138] = "Interface\\Icons\\achievement_level_100",									-- Level 100
-	--
-		[-139] = app.asset("Interface_World_boss"),											-- Bosses
 	-- WoD Dungeons(Fake npcid)
 		[-140] = select(6, EJ_GetInstanceInfo(547)),										-- Auchindoun
 		[-141] = select(6, EJ_GetInstanceInfo(385)),										-- Bloodmaul Slag Mines
@@ -1097,8 +1089,6 @@ app.L = {
 		[-176] = 3753381,																	-- Weekly Holidays
 	-- New Characters
 		[-211] = 1530081,																	-- New Character
-	-- Treasure Chest
-		[-212] = app.asset("Interface_Tchest"),												-- Treasure Chest
 	-- Dalaran Sub-Zone
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
 	-- PvP
@@ -1108,8 +1098,6 @@ app.L = {
 	-- Class
 		[-219] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",										-- Class
-	-- Bonus Objectives
-		[-221] = 237387,																	-- Bonus Objectives
 	-- Warfronts
 		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",					-- Warfront: The Battle for Stromgarde
 	-- War Campaign
@@ -1300,7 +1288,6 @@ app.L = {
 		[-900] = 3675495,																	-- Covenant Sanctums
 		[-901] = 3726261,																	-- Covenant Callings
 		[-902] = 3726261,																	-- Renown
-		[-903] = app.asset("Interface_Rewards"),											-- Zone Rewards
 		[-905] = "Interface\\Icons\\Sanctum_features_missiontable",							-- Command Table
 		--[-915] = Uses Different Icons														-- Anima Conductor
 		--[-916] = Uses Different Icons														-- Tier 1
@@ -1375,19 +1362,6 @@ app.L = {
 		[-1203] = "Interface\\Icons\\inv_pet_mole",													-- Sniffenseeking
 		[-1204] = 133642,																			-- Available (Inv_misc_bag_10_green)
 		[-1205] = 133643,																			-- Unavailable (Inv_misc_bag_10_red)
-	-- Warrior order hall lore items
-		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2202] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2203] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2204] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2205] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2206] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2207] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2208] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2209] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2210] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2211] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 	-- T3
 		[-3179] = "Interface\\Icons\\achievement_dungeon_naxxramas",						-- Tier 3 Sets
 	-- Island Expeditions
@@ -1470,7 +1444,6 @@ app.L = {
 		[-123457] = "Interface\\Icons\\Inv_gauntlets_16",						-- Common Quality Items
 	};
 	["HEADER_NAMES"] = {
-		[-10] = SPLASH_BATTLEFORAZEROTH_8_2_5_FEATURE1_TITLE,					-- Party Sync
 		[-11] = "Common Box Drops",												-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",					-- Warpwood Quarter [East - Demon]
 		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",					-- Gordok Commons [North - Ogres]
@@ -1478,11 +1451,7 @@ app.L = {
 		[-15] = "Exploration",													-- Exploration
 		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
 		[-21] = "Captains",
-		[-22] = "Secrets",														-- Secrets
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
-		[-24] = BRAWL_TOOLTIP_MAPS,												-- Maps
-		[-26] = "Drops",														-- Drops
-		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
 		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
 		[-38] = TRADE_SKILLS,													-- Professions
@@ -1508,7 +1477,6 @@ app.L = {
 		[-71] = DUNGEON_FLOOR_DESOLACE21.." - "..GetSpellInfo(251095),			-- The Wicked Grotto [Purple]
 		[-75] = DUNGEON_FLOOR_BLACKROCKDEPTHS1,									-- Detention Block
 		[-76] = DUNGEON_FLOOR_BLACKROCKDEPTHS2,									-- Shadowforge City
-		[-77] = SPECIAL,														-- Special
 	-- Zul'Aman
 		[-78] = "Timed Event",
 		[-79] = "First Chest",
@@ -1538,8 +1506,6 @@ app.L = {
 	-- Class Trial
 		[-137] = string.format(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
 		[-138] = string.format(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
-	--
-		[-139] = RAID_BOSSES,													-- Bosses
 	-- WoD Dungeons(Fake npcid)
 		[-140] = select(2, GetAchievementInfo(9039)),							-- Auchindoun
 		[-141] = select(2, GetAchievementInfo(9037)),							-- Bloodmaul Slag Mines
@@ -1573,8 +1539,6 @@ app.L = {
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 	-- Item Sets
 		[-211] = NEW.." "..CHARACTER,											-- New Character
-	-- Treasure Chest
-		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
 	-- Dalaran Sub-Zone
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
 	-- PvP
@@ -1584,8 +1548,6 @@ app.L = {
 	[-219] = "Sourceless",														-- Sourceless
 	-- Class
 		[-220] = CLASS,															-- Class
-	-- Bonus Objectives
-		[-221] = TRACKER_HEADER_BONUS_OBJECTIVES,								-- Bonus Objectives
 	-- Warfronts
 		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde
 	-- War Campaign
@@ -1785,7 +1747,6 @@ app.L = {
 		[-900] = select(1,GetCategoryInfo(15441)),								-- Covenant Sanctums
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
-		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-905] = GetSpellInfo(280630),											-- Command Table
 		[-914] = COVENANT_MISSIONS_TITLE,										-- Adventures
 		[-915] = ANIMA_DIVERSION_ORIGIN_TOOLTIP,								-- Anima Conductor
@@ -1867,19 +1828,6 @@ app.L = {
 		[-1203] = "Sniffenseeking",													-- Sniffenseeking
 		[-1204] = AVAILABLE,														-- Available
 		[-1205] = UNAVAILABLE,														-- Unavailable
-	-- Warrior order hall lore items
-		[-2200] = "Great Odyn and the Firelord",
-		[-2201] = "The Wanderer and the Serpent",
-		[-2202] = "Halls of Gold and Glory",
-		[-2203] = "The Keeper's Eye",
-		[-2204] = "First of the Val'kyr",
-		[-2205] = "The Sealing of the Halls of Valor",
-		[-2206] = "His Name Is Dragonblood",
-		[-2207] = "The Last Words of Asgrim the Dreadkiller",
-		[-2208] = "A Shieldmaiden's Creed",
-		[-2209] = "The Prophecy of Rythas the Oracle",
-		[-2210] = "The Lessons of the Blacklist",
-		[-2211] = "Volund's Folly",
 	-- T3
 		[-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),	-- Tier 3 Sets
 	-- Island Expeditions
@@ -1972,11 +1920,8 @@ app.L = {
 		[-123457] = BATTLE_PET_BREED_QUALITY2,									-- Common
 	};
 	["HEADER_DESCRIPTIONS"] = {
-		[-22] = "Naughty secrets...",
-		[-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
 		[-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
-		[-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
 	};
 	["HEADER_LORE"] = {
 		

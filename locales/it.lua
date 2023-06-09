@@ -673,56 +673,11 @@ for key,value in pairs({
 		[-59] = "Giorno dei Morti",									-- Day of the Dead
 		[-62] = "Gara di Pesca a Rovotorto",						-- Stranglethorn Fishing Extravaganza
 		[-63] = "La gara di pesca dei Kalu'ak",						-- Kalu'ak Fishing Derby
-	-- Zul'Aman
-		--TODO: [-78] = "Timed Event",
-		--TODO: [-79] = "First Chest",
-		--TODO: [-80] = "Second Chest",
-		--TODO: [-81] = "Third Chest",
-		--TODO: [-82] = "Final Chest",
-	-- SM
-		--TODO: [-85] = "Graveyard",
-		--TODO: [-86] = "Library",
-		--TODO: [-87] = "Armory",
-		--TODO: [-88] = "Cathedral",
-	-- Garrisons
-		--TODO: [-99] = "Buildings",
-	-- Alliance [Swaps based on faction ONLY after a reloadui]
-		--TODO: [-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),	-- Duskwood Active
-		--TODO: [-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),	-- The Hinterlands Active
-		--TODO: [-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),	-- Feralas Active
-		--TODO: [-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),	-- Duskwood Activated
-	-- Garrison
-		--TODO: [-152] = "Garrison Campaign",						-- Garrison Campaign
-	-- Druid Feral Druid Hidden Artifact Appearance
-		--TODO: [-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),	-- The Hinterlands Activated
-		--TODO: [-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),	-- Feralas Activated
-	-- Class Hall /Artifact
-		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
-	-- Other
-		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
-		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
-	-- Fishing
-		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
-	--TODO: [-219] = "Sourceless",									-- Sourceless
-	-- PvP
-		--TODO: [-242] = "Unrated",									-- Unrated
-		--TODO: [-243] = "Bounty",									-- Bounty
 	-- Allied Races
 		[-254] = "Razze Alleate",									-- Allied Races
 		[-255] = "Armatura Retaggio",								-- Heritage
-	-- First Questline Draenor
-		--TODO: [-356] = "Assault on the Dark Portal",				-- Assault on the Dark Portal
-	-- Outposts in Draenor
-		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
-	-- Legendaries
-		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
 	-- Operation: Mechagon
 		[-379] = "Discarica",										-- Junkyard
-	-- Icecrown Citadel
-		--TODO: [-393] = "Storming the Citadel",					-- Storming the Citadel
-		--TODO: [-394] = "The Plagueworks",							-- The Plagueworks
-	-- BFA Outposts
-		--TODO: [-397] = "Outposts",								-- Outposts
 	-- 5.3
 		[-398] = "Campo di battaglia: le Savane",					-- Battlefield: Barrens
 	-- Classic
@@ -735,17 +690,7 @@ for key,value in pairs({
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 	-- Chests
 		[-851] = "Cassa dell'Impero Nero",							-- Black Empire Cache
-	-- Heart of Azeroth
-		--TODO: [-853] = "All Roles",								-- All Roles
-		--TODO: [-854] = "DPS",										-- DPS
-		--TODO: [-855] = "Healers",									-- Healers
-		--TODO: [-856] = "Tanks",									-- Tanks
-		--TODO: [-858] = "Rank 1",									-- Rank 1
-		--TODO: [-859] = "Rank 2",									-- Rank 2
-		--TODO: [-860] = "Rank 3",									-- Rank 3
-		--TODO: [-861] = "Rank 4",									-- Rank 4
 	-- Shadowlands Header
-		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
 		[-979] = "Alienatore Ve'ken & Alienatore Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Potenziamenti al Santuario",						-- Sanctum Upgrades
 		[-924] = "Rete di Trasporto",								-- Transport Network
@@ -770,54 +715,21 @@ for key,value in pairs({
 		[-1110] = "Spedizione delle Scaglie di Drago",				-- Dragonscale Expedition
 		[-1120] = "Centauro Maruuk",								-- Maruuk Centaur
 		[-1121] = "Clan Aylaag",									-- Clan Aylaag
-		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
-		--TODO: [-1123] = "North",									-- North
-		--TODO: [-1124] = "East",									-- East
-		--TODO: [-1125] = "South",									-- South
-		--TODO: [-1126] = "West",									-- West
 		[-1130] = "Tuskarr di Iskaara",								-- Iskaara Tuskarr
-		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Accordo di Valdrakken",							-- Valdrakken Accord
-		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
-		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 		[-1150] = "Niffen di Loamm",								-- Loamm Niffen
 		[-1151] = "Baratto",										-- Bartering
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
 		[-1200] = "Cripte di Zskera",								-- Zskera Vaults
 		[-1202] = "Assalti di Fyrakk",								-- Fyrakk Assaults
 		[-1203] = "Il Fiutatutto",									-- Sniffenseeking
-	-- Warrior order hall lore items
-		--TODO: [-2200] = "Great Odyn and the Firelord",
-		--TODO: [-2201] = "The Wanderer and the Serpent",
-		--TODO: [-2202] = "Halls of Gold and Glory",
-		--TODO: [-2203] = "The Keeper's Eye",
-		--TODO: [-2204] = "First of the Val'kyr",
-		--TODO: [-2205] = "The Sealing of the Halls of Valor",
-		--TODO: [-2206] = "His Name Is Dragonblood",
-		--TODO: [-2207] = "The Last Words of Asgrim the Dreadkiller",
-		--TODO: [-2208] = "A Shieldmaiden's Creed",
-		--TODO: [-2209] = "The Prophecy of Rythas the Oracle",
-		--TODO: [-2210] = "The Lessons of the Blacklist",
-		--TODO: [-2211] = "Volund's Folly",
-	-- T3
-		--TODO: [-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			--TODO: [-5200] = "Base Appearance",					-- Base Appearance
-			--TODO: [-5201] = "Class Hall Campaign",				-- Class Hall Campaign
 			[-5202] = "Equilibrio di potere",						-- Balance of Power
-			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
-			--TODO: [-5204] = "Challenge Appearance",				-- Challenge Appearance
-			--TODO: [-5205] = "Hidden Appearance",					-- Hidden Appearance
 
 	------ ACHIEVEMENT HEADERS SECTION ------
-		--TODO: [-10071] = "Visions of N'Zoth",						-- Visions of N'Zoth
-		--TODO: [-10072] = "N'Zoth Assault",						-- N'Zoth Assault
-		--TODO: [-10081] = "Corrupted Area",						-- Corrupted Area
-		--TODO: [-10082] = "Lost Area",								-- Lost Area
 		-- Shadowlands Achievement Headers
 			-- 9.1
-				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Specchio Rotto A-1",					-- Broken Mirror
 				[-1433952] = "Specchio Rotto A-2",					-- Broken Mirror

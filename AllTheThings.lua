@@ -3725,7 +3725,7 @@ local SubroutineCache = {
 
 		-- Process the World Quest Rewards
 		pop(finalized, searchResults);	-- Discard the Map Headers and acquire all of their children.
-		where(finalized, searchResults, o, "where", "headerID", -903);	-- Select only the Zone Rewards Headers
+		where(finalized, searchResults, o, "where", "headerID", app.HeaderConstants.ZONE_REWARDS);	-- Select only the Zone Rewards Headers
 		pop(finalized, searchResults);	-- Discard the Zone Rewards Headers and acquire all of their children.
 
 		-- Process the headers for the Azerite Armor pieces.
@@ -3885,7 +3885,7 @@ local SubroutineCache = {
 
 		-- Process the World Quest Rewards
 		pop(finalized, searchResults);	-- Discard the Map Headers and acquire all of their children.
-		where(finalized, searchResults, o, "where", "headerID", -34);	-- Select only the World Quest Headers
+		where(finalized, searchResults, o, "where", "headerID", app.HeaderConstants.WORLD_QUESTS);	-- Select only the World Quest Headers
 		pop(finalized, searchResults);	-- Discard the World Quest Headers and acquire all of their children.
 		is(finalized, searchResults, o, "is", "headerID");	-- Only use the item sets themselves, no zone drops.
 		finalize(finalized, searchResults);	-- Push the unprocessed Headers to the finalized list.
@@ -5301,7 +5301,7 @@ end
 local NPCExpandHeaders = {
 	[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
 	[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
-	[-26] = true,	-- DROPS
+	[app.HeaderConstants.DROPS] = true,
 	[app.HeaderConstants.ZONE_DROPS] = true,
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
@@ -5544,7 +5544,7 @@ local SpecificSources = {
 	["headerID"] = {
 		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
 		[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
-		[-26] = true,	-- DROPS
+		[app.HeaderConstants.DROPS] = true,
 	},
 };
 local tremove = tremove;
@@ -18247,7 +18247,7 @@ function app:GetDataCache()
 
 	-- Secrets
 	if app.Categories.Secrets then
-		db = app.CreateNPC(-22);
+		db = app.CreateNPC(app.HeaderConstants.SECRETS);
 		db.g = app.Categories.Secrets;
 		tinsert(g, db);
 	end
@@ -19293,7 +19293,7 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 						return true;
 					end,
 				},
-				app.CreateNPC(-34, {
+				app.CreateNPC(app.HeaderConstants.WORLD_QUESTS, {
 					['description'] = L["TWO_CLOAKS"],
 					['g'] = {
 						app.CreateItemSource(102106, 165685),	-- House of Nobles Cape
@@ -19487,8 +19487,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
 			[app.HeaderConstants.ACHIEVEMENTS] = "achievementID",
-		-- BONUS_OBJECTIVES = -221;
-			[-221] = true,
+			[app.HeaderConstants.BONUS_OBJECTIVES] = true,
 		-- BUILDINGS = -99;
 			[-99] = true,
 			[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
@@ -19504,19 +19503,14 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			[app.HeaderConstants.PVP] = true,
 			[app.HeaderConstants.QUESTS] = "questID",
 			[app.HeaderConstants.RARES] = true,
-		-- SECRETS = -22;
-			[-22] = true,
-		-- SPECIAL = -77;
-			[-77] = true,
-		-- TREASURES = -212;
-			[-212] = "objectID",
+			[app.HeaderConstants.SECRETS] = true,
+			[app.HeaderConstants.SPECIAL] = true,
+			[app.HeaderConstants.TREASURES] = "objectID",
 			[app.HeaderConstants.VENDORS] = true,
 		-- WEEKLY_HOLIDAYS = -176;
 			[-176] = true,
-		-- WORLD_QUESTS = -34;
-			[-34] = true,
-		-- ZONE_REWARDS = -903;
-			[-903] = true,
+			[app.HeaderConstants.WORLD_QUESTS] = true,
+			[app.HeaderConstants.ZONE_REWARDS] = true,
 			[app.HeaderConstants.ZONE_DROPS] = true,
 		};
 		-- Headers possible in a hierarchy that should just be ignored

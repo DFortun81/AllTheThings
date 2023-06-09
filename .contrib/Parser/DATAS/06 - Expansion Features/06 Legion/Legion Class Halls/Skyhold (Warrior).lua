@@ -1,7 +1,151 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
+GREAT_ODYN_AND_THE_FIRELORD = createHeader({
+	readable = "Great Odyn and the Firelord",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "Great Odyn and the Firelord",
+		es = "El gran Odyn y el Señor del Fuego",
+		de = "Der große Odyn und der Feuerlord",
+		fr = "Le grand Odyn et le seigneur du feu",
+		pt = "O Grande Odyn e o Senhor do Fogo",
+		ru = "Великий Один и Повелитель Огня",
+		cn = "伟大的奥丁与炎魔之王",
+	},
+});
+THE_WANDERER_AND_THE_SERPENT = createHeader({
+	readable = "The Wanderer and the Serpent",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "The Wanderer and the Serpent",
+		es = "El nómada y la serpiente",
+		de = "Der Wanderer und die Schlange",
+		pt = "O Andarilho e a Serpente",
+		ru = "Странник и змей",
+		cn = "流浪者与蛇",
+	},
+});
+HALLS_OF_GOLD_AND_GLORY = createHeader({
+	readable = "Halls of Gold and Glory",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "Halls of Gold and Glory",
+		es = "Cámaras de oro y gloria",
+		de = "Hallen des Goldes und des Ruhmes",
+		pt = "Os Salões de Ouro e Glória",
+		ru = "Чертоги золота и славы",
+		cn = "黄金与荣耀的殿堂",
+	},
+});
+THE_KEEPERS_EYE = createHeader({
+	readable = "The Keeper's Eye",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "The Keeper's Eye",
+		es = "El ojo del guardián",
+		de = "Das Auge des Hüters",
+		pt = "O Olho do Guardião",
+		ru = "Глаз Хранителя",
+		cn = "守护者之眼",
+	},
+});
+FIRST_OF_THE_VALKYR = createHeader({
+	readable = "First of the Val'kyr",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "First of the Val'kyr",
+		es = "La primera Val'kyr",
+		de = "Die erste der Val'kyr",
+		pt = "A Primeira das Val'kyren",
+		ru = "Первая из валь'кир",
+		cn = "首位瓦格里",
+	},
+});
+THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
+	readable = "The Sealing of the Halls of Valor",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "The Sealing of the Halls of Valor",
+		es = "El sello de las Cámaras del Valor",
+		de = "Die Versiegelung der Hallen der Tapferkeit",
+		pt = "O Selamento dos Salões da Bravura",
+		ru = "Печать на Чертогах Доблести",
+		cn = "封印英灵殿",
+	},
+});
+HIS_NAME_IS_DRAGONBLOOD = createHeader({
+	readable = "His Name Is Dragonblood",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "His Name Is Dragonblood",
+		es = "Se llama Sangredragón",
+		fr = "Il s’appelait Sang de dragon",
+		pt = "Ele se chama Sangue de Dragão",
+		ru = "Октель Драконья Кровь",
+		cn = "他名叫龙血",
+	},
+});
+THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
+	readable = "The Last Words of Asgrim the Dreadkiller",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "The Last Words of Asgrim the Dreadkiller",
+		es = "Las últimas palabras de Asgrim el Mataterrador",
+		fr = "Les dernières paroles d’Asgrim le Tueur de l’effroi",
+		pt = "As Últimas Palavras de Asgrim, o Algoz Medonho",
+		ru = "Последние слова Азгрима Смертоубийцы",
+		cn = "亡灵杀手艾斯格里姆的遗言",
+	},
+});
+A_SHIELDMAIDENS_CREED = createHeader({
+	readable = "A Shieldmaiden's Creed",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "A Shieldmaiden's Creed",
+		es = "El credo de una doncella escudera",
+		fr = "Le credo de la vierge guerrière",
+		pt = "A Crença de uma Dama Escudeira",
+		ru = "Кредо девы щита",
+		cn = "女武神的信条",
+	},
+});
+THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
+	readable = "The Prophecy of Rythas the Oracle",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "The Prophecy of Rythas the Oracle",
+		es = "La profecía de Rythas el Oráculo",
+		fr = "La prophétie de Rythas l’Oracle",
+		pt = "A Profecia de Rythas, o Oráculo",
+		ru = "Пророчество Райтаса Провидца",
+		cn = "神谕者莱萨斯的预言",
+	},
+});
+THE_LESSONS_OF_THE_BLACKFIST = createHeader({
+	readable = "The Lessons of the Blackfist",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "The Lessons of the Blackfist",
+		es = "Las lecciones de Puño Opaco",
+		fr = "Les leçons du poing noir",
+		pt = "As Lições do Punho Negro",
+		ru = "Уроки Черного Кулака",
+		cn = "黑拳的教诲",
+	},
+});
+VOLUNDS_FOLLY = createHeader({
+	readable = "Volund's Folly",
+	icon = "Interface\\Icons\\inv_scroll_11",
+	text = {
+		en = "Volund's Folly",
+		es = "La locura de Volund",
+		fr = "La folie de Volund",
+		pt = "A Tolice de Volund",
+		ru = "Безрассудный Волунд",
+		cn = "沃伦德的愚行",
+	},
+});
 root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(CLASS_HALL, {
 		cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
@@ -636,24 +780,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					i(144436, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Lost Legend of Odyn
 						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
 						["g"] = {
-							n(-2200, {	-- Great Odyn and the Firelord
-								["questID"] = 46223,
-							}),
-							n(-2201, {	-- The Wanderer and the Serpent
-								["questID"] = 46224,
-							}),
-							n(-2202, {	-- Halls of Gold and Glory
-								["questID"] = 46225,
-							}),
-							n(-2203, {	-- The Keeper's Eye
-								["questID"] = 46226,
-							}),
-							n(-2204, {	-- First of the Val'kyr
-								["questID"] = 46227,
-							}),
-							n(-2205, {	-- The Sealing of the Halls of Valor
-								["questID"] = 46228,
-							}),
+							n(GREAT_ODYN_AND_THE_FIRELORD, { ["questID"] = 46223, }),
+							n(THE_WANDERER_AND_THE_SERPENT, { ["questID"] = 46224, }),
+							n(HALLS_OF_GOLD_AND_GLORY, { ["questID"] = 46225, }),
+							n(THE_KEEPERS_EYE, { ["questID"] = 46226, }),
+							n(FIRST_OF_THE_VALKYR, { ["questID"] = 46227, }),
+							n(THE_SEALING_OF_THE_HALLS_OF_VALOR, { ["questID"] = 46228, }),
 						}
 					})),
 					i(144437, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Lost Legend of the Valarjar
@@ -662,24 +794,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							115732,	-- Jorvild the Trusted (highest drop chance)
 						},
 						["g"] = {
-							n(-2206, {	-- His Name Is Dragonblood
-								["questID"] = 46229,
-							}),
-							n(-2207, {	-- The Last Words of Asgrim the Dreadkiller
-								["questID"] = 46230,
-							}),
-							n(-2208, {	-- A Shieldmaiden's Creed
-								["questID"] = 46231,
-							}),
-							n(-2209, {	-- The Prophecy of Rythas the Oracle
-								["questID"] = 46232,
-							}),
-							n(-2210, {	-- The Lessons of the Blackfist
-								["questID"] = 46233,
-							}),
-							n(-2211, {	-- Volund's Folly
-								["questID"] = 46234,
-							}),
+							n(HIS_NAME_IS_DRAGONBLOOD, { ["questID"] = 46229, }),
+							n(THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER, { ["questID"] = 46230, }),
+							n(A_SHIELDMAIDENS_CREED, { ["questID"] = 46231, }),
+							n(THE_PROPHECY_OF_RYTHAS_THE_ORACLE, { ["questID"] = 46232, }),
+							n(THE_LESSONS_OF_THE_BLACKFIST, { ["questID"] = 46233, }),
+							n(VOLUNDS_FOLLY, { ["questID"] = 46234, }),
 						}
 					})),
 				}),

@@ -673,56 +673,11 @@ for key,value in pairs({
 		[-59] = "Dia dos Mortos",									-- Day of the Dead
 		[-62] = "Festerê de Pesca da Selva do Espinhaço",			-- Stranglethorn Fishing Extravaganza
 		[-63] = "Campeonato de Pesca dos Kalu'ak",					-- Kalu'ak Fishing Derby
-	-- Zul'Aman
-		--TODO: [-78] = "Timed Event",
-		--TODO: [-79] = "First Chest",
-		--TODO: [-80] = "Second Chest",
-		--TODO: [-81] = "Third Chest",
-		--TODO: [-82] = "Final Chest",
-	-- SM
-		--TODO: [-85] = "Graveyard",
-		--TODO: [-86] = "Library",
-		--TODO: [-87] = "Armory",
-		--TODO: [-88] = "Cathedral",
-	-- Garrisons
-		--TODO: [-99] = "Buildings",
-	-- Alliance [Swaps based on faction ONLY after a reloadui]
-		--TODO: [-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),	-- Duskwood Active
-		--TODO: [-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),	-- The Hinterlands Active
-		--TODO: [-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),	-- Feralas Active
-		--TODO: [-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),	-- Duskwood Activated
-	-- Garrison
-		--TODO: [-152] = "Garrison Campaign",						-- Garrison Campaign
-	-- Druid Feral Druid Hidden Artifact Appearance
-		--TODO: [-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),	-- The Hinterlands Activated
-		--TODO: [-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),	-- Feralas Activated
-	-- Class Hall /Artifact
-		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
-	-- Other
-		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
-		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
-	-- Fishing
-		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
-	--TODO: [-219] = "Sourceless",									-- Sourceless
-	-- PvP
-		--TODO: [-242] = "Unrated",									-- Unrated
-		--TODO: [-243] = "Bounty",									-- Bounty
 	-- Allied Races
 		[-254] = "Raças Aliadas",									-- Allied Races
 		[-255] = "Armadura Tradicional",							-- Heritage
-	-- First Questline Draenor
-		--TODO: [-356] = "Assault on the Dark Portal",				-- Assault on the Dark Portal
-	-- Outposts in Draenor
-		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
-	-- Legendaries
-		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
 	-- Operation: Mechagon
 		[-379] = "Ferro-velho",										-- Junkyard
-	-- Icecrown Citadel
-		--TODO: [-393] = "Storming the Citadel",					-- Storming the Citadel
-		--TODO: [-394] = "The Plagueworks",							-- The Plagueworks
-	-- BFA Outposts
-		--TODO: [-397] = "Outposts",								-- Outposts
 	-- 5.3
 		[-398] = "Campo de Batalha: Sertões",						-- Battlefield: Barrens
 	-- Classic
@@ -735,17 +690,7 @@ for key,value in pairs({
 		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
 	-- Chests
 		[-851] = "Depósito do Império Negro",						-- Black Empire Cache
-	-- Heart of Azeroth
-		--TODO: [-853] = "All Roles",								-- All Roles
-		--TODO: [-854] = "DPS",										-- DPS
-		--TODO: [-855] = "Healers",									-- Healers
-		--TODO: [-856] = "Tanks",									-- Tanks
-		--TODO: [-858] = "Rank 1",									-- Rank 1
-		--TODO: [-859] = "Rank 2",									-- Rank 2
-		--TODO: [-860] = "Rank 3",									-- Rank 3
-		--TODO: [-861] = "Rank 4",									-- Rank 4
 	-- Shadowlands Header
-		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
 		[-979] = "Corretor Ve'ken & Corretor Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Aprimoramentos de Santuário",						-- Sanctum Upgrades
 		[-924] = "Rede de Transporte",								-- Transport Network
@@ -786,38 +731,13 @@ for key,value in pairs({
 		[-1200] = "Câmaras de Zskera",								-- Zskera Vaults
 		[-1202] = "Ofensivas de Fyrakk",							-- Fyrakk Assaults
 		[-1203] = "Busca farejante",								-- Sniffenseeking
-	-- Warrior order hall lore items
-		[-2200] = "O Grande Odyn e o Senhor do Fogo",				-- Great Odyn and the Firelord
-		[-2201] = "O Andarilho e a Serpente",						-- The Wanderer and the Serpent
-		[-2202] = "Os Salões de Ouro e Glória",						-- Halls of Gold and Glory
-		[-2203] = "O Olho do Guardião",								-- The Keeper's Eye
-		[-2204] = "A Primeira das Val'kyren",						-- First of the Val'kyr
-		[-2205] = "O Selamento dos Salões da Bravura",				-- The Sealing of the Halls of Valor
-		[-2206] = "Ele se chama Sangue de Dragão",					-- His Name Is Dragonblood
-		[-2207] = "As Últimas Palavras de Asgrim, o Algoz Medonho",	-- The Last Words of Asgrim the Dreadkiller
-		[-2208] = "A Crença de uma Dama Escudeira",					-- A Shieldmaiden's Creed
-		[-2209] = "A Profecia de Rythas, o Oráculo",				-- The Prophecy of Rythas the Oracle
-		[-2210] = "As Lições do Punho Negro",						-- The Lessons of the Blacklist
-		[-2211] = "A Tolice de Volund",								-- Volund's Folly
-	-- T3
-		--TODO: [-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			--TODO: [-5200] = "Base Appearance",					-- Base Appearance
-			--TODO: [-5201] = "Class Hall Campaign",				-- Class Hall Campaign
 			[-5202] = "Equilíbrio de poder",						-- Balance of Power
-			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
-			--TODO: [-5204] = "Challenge Appearance",				-- Challenge Appearance
-			--TODO: [-5205] = "Hidden Appearance",					-- Hidden Appearance
 
 	------ ACHIEVEMENT HEADERS SECTION ------
-		--TODO: [-10071] = "Visions of N'Zoth",						-- Visions of N'Zoth
-		--TODO: [-10072] = "N'Zoth Assault",						-- N'Zoth Assault
-		--TODO: [-10081] = "Corrupted Area",						-- Corrupted Area
-		--TODO: [-10082] = "Lost Area",								-- Lost Area
 		-- Shadowlands Achievement Headers
 			-- 9.1
-				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Espelho Quebrado A-1",				-- Broken Mirror
 				[-1433952] = "Espelho Quebrado A-2",				-- Broken Mirror

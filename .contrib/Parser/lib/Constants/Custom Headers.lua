@@ -3,22 +3,10 @@
 -------------------------------------------
 -- TODO: Reduce the number of custom headers and consolidate IDs
 -- Zone Headers --
-BONUS_OBJECTIVES = -221;				-- Not used in Classic
 CAMPAIGN = -1099;						-- Not used in Classic
-DROPS = -26;
 EMISSARY_QUESTS = -169;					-- Not used in Classic
 HIDDEN_QUESTS = -999;					-- Not used in Classic
-MAPS = -24;
--- #if ANYCLASSIC
-PARTY_SYNC = -11;
--- #else
-PARTY_SYNC = -10;
--- #endif
-SPECIAL = -77;
-TREASURES = -212;
 WEEKLY_HOLIDAYS = -176;					-- Not used in Classic
-WORLD_QUESTS = -34;
-ZONE_REWARDS = -903;					-- Not used in Classic
 
 -- Factions
 -- #if ANYCLASSIC
@@ -50,11 +38,6 @@ SETS = -1000;
 TITANFORGED = -355;
 
 -- D&R
--- #if ANYCLASSIC
-BOSSES = -10;
--- #else
-BOSSES = -139;
--- #endif
 SCENARIOS = -10069;
 MYTHIC_PLUS = -857;
 

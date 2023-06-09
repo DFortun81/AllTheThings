@@ -671,19 +671,12 @@ for key,value in pairs({
 	-- Commonly used
 		[-15] = "Erkundung",										-- Exploration
 		[-19] = "Drachen des Alptraums",							-- Dragons of Nightmare
-		[-22] = "Rätsel",											-- Secrets
 	-- World Events
 		[-53] = "Sonnenwendfest",									-- Midsummer Fire Festival
 		[-55] = "Piratentag",										-- Pirates' Day
 		[-59] = "Tag der Toten",									-- Day of the Dead
 		[-62] = "Anglerwettbewerb im Schlingendorntal",				-- Stranglethorn Fishing Extravaganza
 		[-63] = "Angelwettstreit der Kalu'ak",						-- Kalu'ak Fishing Derby
-	-- Zul'Aman
-		--TODO: [-78] = "Timed Event",
-		--TODO: [-79] = "First Chest",
-		--TODO: [-80] = "Second Chest",
-		--TODO: [-81] = "Third Chest",
-		--TODO: [-82] = "Final Chest",
 	-- SM
 		[-85] = "Friedhof",											-- Graveyard
 		[-86] = "Bibliothek",										-- Library
@@ -691,21 +684,8 @@ for key,value in pairs({
 		[-88] = "Kathedrale",										-- Cathedral
 	-- Garrisons
 		[-99] = "Gebäude",											-- Buildings
-	-- Alliance [Swaps based on faction ONLY after a reloadui]
-		--TODO: [-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),	-- Duskwood Active
-		--TODO: [-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),	-- The Hinterlands Active
-		--TODO: [-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),	-- Feralas Active
-		--TODO: [-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),	-- Duskwood Activated
 	-- Garrison
 		[-152] = "Garnisonskampagne",								-- Garrison Campaign
-	-- Druid Feral Druid Hidden Artifact Appearance
-		--TODO: [-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),	-- The Hinterlands Activated
-		--TODO: [-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),	-- Feralas Activated
-	-- Class Hall /Artifact
-		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
-	-- Other
-		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
-		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
 		[-217] = "Köder",											-- Lures (for Fishing)
 	--TODO: [-219] = "Sourceless",									-- Sourceless
@@ -717,10 +697,6 @@ for key,value in pairs({
 		[-255] = "Traditionsrüstung",								-- Heritage
 	-- First Questline Draenor
 		[-356] = "Angriff auf das Dunkle Portal",					-- Assault on the Dark Portal
-	-- Outposts in Draenor
-		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
-	-- Legendaries
-		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
 	-- Operation: Mechagon
 		[-379] = "Schrottplatz",									-- Junkyard
 	-- Icecrown Citadel
@@ -763,7 +739,6 @@ for key,value in pairs({
 		[-860] = "Rang 3",											-- Rank 3
 		[-861] = "Rang 4",											-- Rank 4
 	-- Shadowlands Header
-		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Sanktumaufwertungen",								-- Sanctum Upgrades
 		[-924] = "Reisenetzwerk",									-- Transport Network
@@ -804,35 +779,13 @@ for key,value in pairs({
 		[-1200] = "Gewölbe von Zskera",								-- Zskera Vaults
 		[-1202] = "Angriffe von Fyrakk",							-- Fyrakk Assaults
 		[-1203] = "Schnüffelsuchen",								-- Sniffenseeking
-	-- Warrior order hall lore items
-		[-2200] = "Der große Odyn und der Feuerlord",				-- Great Odyn and the Firelord
-		[-2201] = "Der Wanderer und die Schlange",					-- The Wanderer and the Serpent
-		[-2202] = "Hallen des Goldes und des Ruhmes",				-- Halls of Gold and Glory
-		[-2203] = "Das Auge des Hüters",							-- The Keeper's Eye
-		[-2204] = "Die erste der Val'kyr",							-- First of the Val'kyr
-		[-2205] = "Die Versiegelung der Hallen der Tapferkeit",		-- The Sealing of the Halls of Valor
-		--TODO: [-2206] = "His Name Is Dragonblood",
-		--TODO: [-2207] = "The Last Words of Asgrim the Dreadkiller",
-		--TODO: [-2208] = "A Shieldmaiden's Creed",
-		--TODO: [-2209] = "The Prophecy of Rythas the Oracle",
-		--TODO: [-2210] = "The Lessons of the Blacklist",
-		--TODO: [-2211] = "Volund's Folly",
-	-- T3
-		--TODO: [-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			--TODO: [-5200] = "Base Appearance",
 			[-5201] = "Ordenskampagne",								-- Class Hall Campaign
 			[-5202] = "Gleichgewicht der Kräfte",					-- Balance of Power
-			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
-			--TODO: [-5204] = "Challenge Appearance",				-- Challenge Appearance
-			--TODO: [-5205] = "Hidden Appearance",					-- Hidden Appearance
 
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Visionen von N'Zoth",							-- Visions of N'Zoth
-		--TODO: [-10072] = "N'Zoth Assault",						-- N'Zoth Assault
-		--TODO: [-10081] = "Corrupted Area",						-- Corrupted Area
-		--TODO: [-10082] = "Lost Area",								-- Lost Area
 		-- Shadowlands Achievement Headers
 			-- 9.1
 				[-10083] = "Paktangriffe",							-- Covenant Assaults

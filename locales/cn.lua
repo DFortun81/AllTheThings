@@ -690,9 +690,7 @@ for key,value in pairs({
 		[-15] = "勘探",												-- Exploration
 		[-19] = "梦魇之龙",												-- Dragons of Nightmare
 		[-21] = "船长",												-- Captains
-		[-22] = "秘密",												-- Secrets
 		[-23] = "一般地下城掉落",											-- WoD Common Dungeon Drop
-		[-26] = "掉落",												-- Drops
 		[-27] = "下层",												-- Lower (Blackrock Spire)
 		[-28] = "上层",												-- Upper (Blackrock Spire)
 		[-41] = "疯狂宝箱",												-- Cache of Madness
@@ -808,7 +806,6 @@ for key,value in pairs({
 		[-855] = "治疗",												-- Healers
 		[-856] = "坦克",												-- Tanks
 	-- Shadowlands Header
-		[-903] = "区域奖励",											-- Zone Rewards
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "圣所升级",											-- Sanctum Upgrades
 		[-924] = "传送网络",											-- Transport Network
@@ -849,19 +846,6 @@ for key,value in pairs({
 		[-1200] = "兹斯克拉宝库",										-- Zskera Vaults
 		[-1202] = "菲莱克突袭",											-- Fyrakk Assaults
 		[-1203] = "嗅味探寻",							                -- Sniffenseeking
-	-- Warrior order hall lore items
-		[-2200] = "伟大的奥丁与炎魔之王",
-		[-2201] = "流浪者与蛇",
-		[-2202] = "黄金与荣耀的殿堂",
-		[-2203] = "守护者之眼",
-		[-2204] = "首位瓦格里",
-		[-2205] = "封印英灵殿",
-		[-2206] = "他名叫龙血",
-		[-2207] = "亡灵杀手艾斯格里姆的遗言",
-		[-2208] = "女武神的信条",
-		[-2209] = "神谕者莱萨斯的预言",
-		[-2210] = "黑拳的教诲",
-		[-2211] = "沃伦德的愚行",
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "基础外观",										-- Base Appearance
@@ -904,11 +888,8 @@ end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
-	[-22] = "淘气的秘密…",
-	[-34] = "世界任务是有时间限制的任务，可在特定地点进行，奖励不一。\n\n一定要经常查看 ATT 世界任务窗口(/attwq)，看看有什么限时的东西你应该去收藏！",
 	[-169] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
 	[-799] = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
-	[-903] = "这些物品可以从可重复的宝箱、祈愿蟋蟀、世界任务或桌面任务中掉落。",
 })
 do a[key] = value; end
 

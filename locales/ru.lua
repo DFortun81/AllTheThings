@@ -662,9 +662,7 @@ for key,value in pairs({
 		[-15] = "Исследование",									-- Exploration
 		[-19] = "Драконы Кошмара",								-- Dragons of Nightmare
 		[-21] = "Капитаны",										-- Captains
-		[-22] = "Секреты",										-- Secrets
 		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop
-		[-26] = BATTLE_PET_SOURCE_1,							-- Drops
 		[-27] = "Нижняя часть",									-- Lower (Blackrock Spire)
 		[-28] = "Верхняя часть",								-- Upper (Blackrock Spire)
 		[-41] = "Тайник Безумия",
@@ -702,7 +700,6 @@ for key,value in pairs({
 		[-159] = "Ролл События",									-- Daily Dreamway Event Roll
 	-- Other
 		[-211] = "Новый персонаж",									-- New Character
-		[-212] = "Сундук с сокровищами",							-- Treasure Chest
 	-- Fishing
 		[-217] = "Наживки",											-- Lures (for Fishing)
 	[-219] = "Без Источника",										-- Sourceless
@@ -784,7 +781,6 @@ for key,value in pairs({
 		[-860] = "Ранг 3",											-- Rank 3
 		[-861] = "Ранг 4",											-- Rank 4
 	-- Shadowlands Header
-		[-903] = "Добыча локации",									-- Zone Rewards
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Улучшения для Обители",							-- Sanctum Upgrades
 		[-924] = "Транспортная Сеть",								-- Transport Network
@@ -825,19 +821,6 @@ for key,value in pairs({
 		[-1200] = "Зкерские хранилища",								-- Zskera Vaults
 		[-1202] = "Налеты Фиракка",									-- Fyrakk Assaults
 		[-1203] = "Нюхорысканье",									-- Sniffenseeking
-	-- Warrior order hall lore items
-		[-2200] = "Великий Один и Повелитель Огня",
-		[-2201] = "Странник и змей",
-		[-2202] = "Чертоги золота и славы",
-		[-2203] = "Глаз Хранителя",
-		[-2204] = "Первая из валь'кир",
-		[-2205] = "Печать на Чертогах Доблести",
-		[-2206] = "Октель Драконья Кровь",							-- His Name Is Dragonblood
-		[-2207] = "Последние слова Азгрима Смертоубийцы",			-- The Last Words of Asgrim the Dreadkiller
-		[-2208] = "Кредо девы щита",								-- A Shieldmaiden's Creed
-		[-2209] = "Пророчество Райтаса Провидца",					-- The Prophecy of Rythas the Oracle
-		[-2210] = "Уроки Черного Кулака",							-- The Lessons of the Blacklist
-		[-2211] = "Безрассудный Волунд",							-- Volund's Folly
 	-- T3
 		[-3179] = "Комплект 3-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
@@ -878,11 +861,8 @@ do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
-	[-22] = "Секретики...",
-	[-34] = "Локальные задания – это ограниченные по времени задания, доступные в определённых местах с переменными наградами.\n\nЧаще проверяйте окно локальных заданий ATT (/attwq), чтобы увидеть какие ограниченные по времени Штучки можно собрать!",
 	[-169] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
 	[-799] = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
-	[-903] = "Эти предметы можно получить в награду из повторяемых сокровищ, заветных сверчков, локальных заданий или заданий командирского стола.",
 })
 do a[key] = value; end
 
