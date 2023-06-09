@@ -994,7 +994,6 @@ app.L = {
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
 		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
-		[-15] = "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02",					-- Exploration
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
@@ -1434,7 +1433,6 @@ app.L = {
 	};
 	["HEADER_NAMES"] = {
 		[-11] = "Common Box Drops",												-- Common Box Drops
-		[-15] = "Exploration",													-- Exploration
 		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
 		[-21] = "Captains",
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop

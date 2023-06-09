@@ -656,7 +656,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[-11] = "Обычная добыча из Сундуков",					-- Common Box Drops
-		[-15] = "Исследование",									-- Exploration
 		[-19] = "Драконы Кошмара",								-- Dragons of Nightmare
 		[-21] = "Капитаны",										-- Captains
 		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop

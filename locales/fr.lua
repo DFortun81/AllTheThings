@@ -667,7 +667,6 @@ do a[key] = value; end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
-		[-15] = "Exploration",										-- Exploration
 		[-19] = "Dragons du Cauchemar",								-- Dragons of Nightmare
 		[-21] = "Capitaines",										-- Captains
 		[-23] = "Objet commun de donjon",							-- WoD Common Dungeon Drop

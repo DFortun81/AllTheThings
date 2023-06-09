@@ -684,7 +684,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[-11] = "一般宝箱掉落",											-- Common Box Drops
-		[-15] = "勘探",												-- Exploration
 		[-19] = "梦魇之龙",												-- Dragons of Nightmare
 		[-21] = "船长",												-- Captains
 		[-23] = "一般地下城掉落",											-- WoD Common Dungeon Drop
