@@ -1153,7 +1153,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
+						{"exclude", "headerID", NECK, FINGER, TRINKET, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
 						{"isnt","c"},	-- Discard headers for Classes [c]
 					},
 					["groups"] = {

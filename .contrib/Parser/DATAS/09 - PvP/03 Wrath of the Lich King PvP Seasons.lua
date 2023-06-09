@@ -458,7 +458,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				}),
 			}),
 			-- #if ANYCLASSIC
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.0.1", "removed 3.1.0" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
@@ -1132,7 +1132,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				i(42110),	-- Hateful Gladiator's Band of Dominance
 				i(42112),	-- Hateful Gladiator's Band of Triumph
 			})),
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.0.1", "removed 3.1.0" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = HATEFUL_GLADIATOR_ONUPDATE,
@@ -1795,7 +1795,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				i(42114),	-- Deadly Gladiator's Band of Ascendancy
 				i(42115),	-- Deadly Gladiator's Band of Victory
 			}),
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.0.1", "removed 3.1.0" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
@@ -2507,7 +2507,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				i(42116),	-- Furious Gladiator's Band of Dominance
 				i(42117),	-- Furious Gladiator's Band of Triumph
 			}),
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.1.0", "removed 3.2.0" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
@@ -3254,7 +3254,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				i(42118),	-- Relentless Gladiator's Band of Ascendancy
 				i(42119),	-- Relentless Gladiator's Band of Victory
 			}),
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.2.0", "removed 3.3.2" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
@@ -4002,7 +4002,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				i(51336),	-- Wrathful Gladiator's Band of Dominance
 				i(51358),	-- Wrathful Gladiator's Band of Triumph
 			}),
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.3.2", "removed 5.0.4" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,

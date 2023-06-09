@@ -11,7 +11,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			["lvl"] = 110,
 			["sourceIgnored"] = true,
 			["groups"] = {
-				n(-387,  {	-- Relics
+				n(RELICS, {
 					un(REMOVED_FROM_GAME, i(156805)),	-- Bloodtotem Band
 					un(REMOVED_FROM_GAME, i(156804)),	-- Bloody Kvaldir Pennant
 					un(REMOVED_FROM_GAME, i(156821)),	-- Darkened Brulstone

@@ -732,8 +732,6 @@ for key,value in pairs({
 		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
 	-- Outposts in Draenor
 		[-361] = GetSpellInfo(182108).." 塔",						-- Artillery Tower
-	-- Operation: Mechagon
-		[-379] = "垃圾场",												-- Junkyard
 	-- Icecrown Citadel
 		[-393] = "进攻堡垒",											-- Storming the Citadel
 		[-394] = "天灾工厂",											-- The Plagueworks

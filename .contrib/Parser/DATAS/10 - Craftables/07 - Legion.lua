@@ -185,7 +185,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 		filter(MOUNTS, {
 			i(137686, {["timeline"] = {ADDED_7_1_0}}),	-- Steelbound Devourer (MOUNT!)
 		}),
-		filter(RELICS, {
+		filter(RELICS_F, {
 			i(136685),	-- Consecrated Spike
 			i(136686),	-- Flamespike
 			i(136684),	-- Gleaming Iron Spike
@@ -272,7 +272,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(132501),	-- Tactical Headgun*
 			i(144331),	-- Tailored Skullblasters*
 		}),
-		filter(RELICS, {
+		filter(RELICS_F, {
 			i(136687),	-- "The Felic"*
 			i(136688),	-- Shockinator*
 		}),
@@ -360,7 +360,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 		filter(TRINKET_F, {
 			i(128978),	-- Prophecy Tarot
 		}),
-		filter(RELICS, {
+		filter(RELICS_F, {
 			i(136692),	-- Aqual Mark
 			i(136693),	-- Straszan Mark
 		}),

@@ -4502,7 +4502,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 								}),
 							}),
-							n(-386, {	-- Trinkets
+							n(TRINKET, {
 								i(172849, {	-- Corrupted Aspirant's Badge
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
@@ -4587,7 +4587,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(54659, {	-- Blood Guard Zar'shi Original CATA S10 ELITE VENDOR
@@ -4776,7 +4776,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.
 					},
 				}),
@@ -6599,7 +6599,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},	-- Subroutines are automatically finalized
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(3333, {	-- Shankys <Fishing Supplies>

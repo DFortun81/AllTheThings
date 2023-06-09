@@ -1002,8 +1002,6 @@ app.L = {
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
-		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",							-- Discovery
-		[-38] = app.asset("Category_Professions"),											-- Professions
 		[-40] = "Interface\\Icons\\Inv_misc_book_17",										-- Legacy
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
 		[-42] = app.asset("Category_Crafting"),												-- Crafted Item
@@ -1156,17 +1154,11 @@ app.L = {
 		[-369] = "Interface\\Icons\\spell_deathknight_classicon",							-- The Military Quarter
 		[-370] = "Interface\\Icons\\inv_misc_cauldron_nature",								-- The Plague Quarter
 		[-371] = "Interface\\Icons\\inv_misc_head_dragon_blue",								-- The Upper Necropolis
-	-- Operation:Mechagon
-		[-379] = "Interface\\Icons\\inv_misc_blizzcon09_graphicscard",						-- Junkyard
-		[-380] = "Interface\\Icons\\inv_misc_key_06",										-- Workshop
 	-- Misc Armor Slots
 		[-384] = "Interface\\Icons\\inv_jewelcrafting_70_maxlvlneck_green",					-- Neck
 		[-385] = "Interface\\Icons\\inv_70_dungeon_ring5a",									-- Finger
 		[-386] = "Interface\\Icons\\inv_qirajidol_obsidian",								-- Trinket
 		[-387] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",							-- Relic
-	-- Stratholme
-		[-388] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",							-- Main Gate (Stratholme)
-		[-389] = "Interface\\Icons\\INV_MISC_KEY_13",										-- Service Entrance (Stratholme)
 	-- Draenor Outposts
 		[-390] = "Interface\\Icons\\inv_misc_coinbag_special",								-- Smuggler's Den
 		[-391] = "Interface\\Icons\\achievement_guildperk_hastyhearth",						-- Stoktron Brewery (alliance)
@@ -1453,8 +1445,6 @@ app.L = {
 		[-21] = "Captains",
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
-		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
-		[-38] = TRADE_SKILLS,													-- Professions
 		[-40] = LFG_LIST_LEGACY,												-- Legacy
 		[-41] = "Cache of Madness",												-- Cache of Madness
 		[-42] = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,					-- Crafted Item
@@ -1607,17 +1597,11 @@ app.L = {
 		[-369] = DUNGEON_FLOOR_NAXXRAMAS3,										-- The Military Quarter
 		[-370] = DUNGEON_FLOOR_NAXXRAMAS4,										-- The Plague Quarter
 		[-371] = DUNGEON_FLOOR_NAXXRAMAS6,										-- The Upper Necropolis
-	-- Operation: Mechagon
-		[-379] = "Junkyard",													-- Junkyard
-		[-380] = GetSpellInfo(251998),											-- Workshop
 	-- Misc Armor Slots
 		[-384] = GetItemSubClassInfo(8,1),										-- Neck
 		[-385] = GetItemSubClassInfo(8,10),										-- Finger
 		[-386] = INVTYPE_TRINKET,												-- Trinket
 		[-387] = GetItemSubClassInfo(3,11),										-- Relic
-	-- Stratholme
-		[-388] = C_Map.GetAreaInfo(5916),										-- Stratholme - Main Gate
-		[-389] = C_Map.GetAreaInfo(5917),										-- Stratholme - Service Entrance
 	-- Draenor Outposts
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)

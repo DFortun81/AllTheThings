@@ -4007,7 +4007,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},
 						{"exclude", "itemID", 146550 },	-- Exclude DK Ensemble
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
+						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, TRINKET },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
 				})),
 				n(33853, {	-- Broxel Goldgrasp <Souvenirs>
@@ -4445,7 +4445,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["sym"] = {
 						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
+						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, TRINKET },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
 				})),
 				n(33595, {	-- Mera Mistrunner <Cooking Supplies>

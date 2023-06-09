@@ -1,6 +1,34 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+MAIN_GATE = createHeader({
+	readable = "Main Gate",
+	icon = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",
+	text = {
+		-- #if ANYCLASSIC
+		en = "Main Gate",
+		-- #else
+		en = [[~C_Map.GetAreaInfo(5916)]],	-- Stratholme - Main Gate
+		-- #endif
+	},
+	description = {
+		en = [[Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.]],
+	},
+});
+SERVICE_ENTRANCE = createHeader({
+	readable = "Service Entrance",
+	icon = "Interface\\Icons\\INV_MISC_KEY_13",
+	text = {
+		-- #if ANYCLASSIC
+		en = "Service Entrance",
+		-- #else
+		en = [[~C_Map.GetAreaInfo(5917)]],	-- Stratholme - Service Entrance
+		-- #endif
+	},
+	description = {
+		en = [[Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.]],
+	},
+});
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(236, {	-- Stratholme
 		-- #if BEFORE MOP
@@ -568,7 +596,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			n(-388, {	-- Main Gate
+			n(MAIN_GATE, {
 				-- #if AFTER 4.0.3
 				["mapID"] = STRATHOLME, -- Main Gate
 				["sym"] = {
@@ -576,7 +604,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					{"contains","headerID",ACHIEVEMENTS,QUESTS,ZONE_DROPS},	-- Select the common Achievements/Quests/Zone Drops
 				},
 				-- #endif
-				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 				-- #if AFTER 4.0.3
 				["coord"] = { 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
 				-- #else
@@ -880,7 +907,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					})),
 				},
 			}),
-			n(-389, {	-- Service Entrance
+			n(SERVICE_ENTRANCE, {
 				-- #if AFTER 4.0.3
 				["mapID"] = 318, -- Service Entrance
 				["sym"] = {
@@ -888,7 +915,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					{"contains","headerID",ACHIEVEMENTS,QUESTS,ZONE_DROPS},	-- Select the common Achievements/Quests/Zone Drops
 				},
 				-- #endif
-				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 				-- #if AFTER 4.0.3
 				["coord"] = { 43.76, 17.52, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
 				-- #else

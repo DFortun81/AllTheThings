@@ -1379,7 +1379,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								gold(500, i(122373)),	-- Pristine Lightforge Spaulders
 								gold(500, i(122372)),	-- Strengthened Stockade Pauldrons
 							}),
-							n(-386, {	-- Trinket
+							n(TRINKET, {
 								gold(700, i(122362)),	-- Discerning Eye of the Beast
 								gold(700, i(122370, {	-- Inherited Insignia of the Horde
 									["races"] = HORDE_ONLY,

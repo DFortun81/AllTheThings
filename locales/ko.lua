@@ -676,8 +676,6 @@ for key,value in pairs({
 	-- Allied Races
 		[-254] = "동맹 종족",										-- Allied Races
 		[-255] = "유산 방어구",											-- Heritage
-	-- Operation: Mechagon
-		[-379] = "고철장",												-- Junkyard
 	-- 5.3
 		[-398] = "전쟁터: 불모의 땅",										-- Battlefield: Barrens
 	-- Classic

@@ -846,7 +846,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(115146)),	-- Primal Combatant's Signet of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115172)),	-- Primal Combatant's Signet of Ruthlessness (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(115521)),	-- Primal Combatant's Badge of Adaptation (A)
 							un(REMOVED_FROM_GAME, i(115149)),	-- Primal Combatant's Badge of Conquest (A)
 							un(REMOVED_FROM_GAME, i(115154)),	-- Primal Combatant's Badge of Dominance (A)
@@ -1564,7 +1564,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(115661)),	-- Primal Gladiator's Band of Cruelty
 							un(REMOVED_FROM_GAME, i(120104)),	-- Primal Gladiator's Signet of Endurance
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(122706)),	-- Primal Gladiator's Medallion of Adaptation
 							un(REMOVED_FROM_GAME, i(115749)),	-- Primal Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(115750)),	-- Primal Gladiator's Insignia of Conquest
@@ -2301,7 +2301,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(119923)),	-- Primal Combatant's Signet of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119949)),	-- Primal Combatant's Signet of Ruthlessness (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(120049)),	-- Primal Combatant's Badge of Adaptation (H)
 							un(REMOVED_FROM_GAME, i(119926)),	-- Primal Combatant's Badge of Conquest (H)
 							un(REMOVED_FROM_GAME, i(119931)),	-- Primal Combatant's Badge of Dominance (H)
@@ -3018,7 +3018,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(111271)),	-- Primal Gladiator's Ring of Triumph
 							un(REMOVED_FROM_GAME, i(120103)),	-- Primal Gladiator's Signet of Endurance
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(111272)),	-- Primal Gladiator's Signet of Ruthlessness
 							un(REMOVED_FROM_GAME, i(111222)),	-- Primal Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(111223)),	-- Primal Gladiator's Insignia of Conquest
@@ -3465,7 +3465,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(125089)),	-- Wild Aspirant's Band of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(127118)),	-- Wild Aspirant's Signet of Accuracy (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(125140)),	-- Wild Aspirant's Accolade of Dominance (A)
 							un(REMOVED_FROM_GAME, i(125142)),	-- Wild Aspirant's Accolade of Meditation (A)
 							un(REMOVED_FROM_GAME, i(125141)),	-- Wild Aspirant's Accolade of Victory (A)
@@ -4070,7 +4070,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(125052)),	-- Wild Combatant's Signet of Dedication (A)
 							un(REMOVED_FROM_GAME, i(125028)),	-- Wild Combatant's Signet of Endurance (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(125043)),	-- Wild Combatant's Badge of Adaptation (A)
 							un(REMOVED_FROM_GAME, i(125030)),	-- Wild Combatant's Badge of Conquest (A)
 							un(REMOVED_FROM_GAME, i(125035)),	-- Wild Combatant's Badge of Dominance (A)
@@ -4802,7 +4802,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(124854)),	-- Wild Gladiator's Signet of Dedication (A)
 							un(REMOVED_FROM_GAME, i(124855)),	-- Wild Gladiator's Signet of Endurance (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(124869)),	-- Wild Gladiator's Badge of Adaptation (A)
 							un(REMOVED_FROM_GAME, i(124856)),	-- Wild Gladiator's Badge of Conquest (A)
 							un(REMOVED_FROM_GAME, i(124861)),	-- Wild Gladiator's Badge of Dominance (A)
@@ -4946,7 +4946,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(125543)),	-- Wild Aspirant's Ring of Prowess (H)
 							un(REMOVED_FROM_GAME, i(127119)),	-- Wild Aspirant's Signet of Accuracy (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(125618)),	-- Wild Aspirant's Accolade of Victory (H)
 							un(REMOVED_FROM_GAME, i(125616)),	-- Wild Aspirant's Accolade of Conquest (H)
 							un(REMOVED_FROM_GAME, i(125619)),	-- Wild Aspirant's Accolade of Meditation (H)
@@ -5551,7 +5551,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(125528)),	-- Wild Combatant's Signet of Dedication (H)
 							un(REMOVED_FROM_GAME, i(125529)),	-- Wild Combatant's Signet of Endurance (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(125520)),	-- Wild Combatant's Badge of Adaptation (H)
 							un(REMOVED_FROM_GAME, i(125507)),	-- Wild Combatant's Badge of Conquest (H)
 							un(REMOVED_FROM_GAME, i(125512)),	-- Wild Combatant's Badge of Dominance (H)
@@ -6283,7 +6283,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(125333)),	-- Wild Gladiator's Signet of Dedication (H)
 							un(REMOVED_FROM_GAME, i(125334)),	-- Wild Gladiator's Signet of Endurance (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(125346)),	-- Wild Gladiator's Badge of Adaptation (H)
 							un(REMOVED_FROM_GAME, i(125335)),	-- Wild Gladiator's Badge of Conquest (H)
 							un(REMOVED_FROM_GAME, i(125340)),	-- Wild Gladiator's Badge of Dominance (H)
@@ -6733,7 +6733,7 @@ root(ROOTS.PVP, {
 							i(126251),	-- Warmongering Aspirant's Signet of Dedication (A)
 							i(126252),	-- Warmongering Aspirant's Signet of Endurance (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(126253),	-- Warmongering Aspirant's Accolade of Conquest (A)
 							i(126254),	-- Warmongering Aspirant's Accolade of Dominance (A)
 							i(126257),	-- Warmongering Aspirant's Accolade of Endurance (A)
@@ -7338,7 +7338,7 @@ root(ROOTS.PVP, {
 							i(126166),	-- Warmongering Combatant's Signet of Endurance (A)
 							i(126142),	-- Warmongering Combatant's Signet of Ruthlessness (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(126158),	-- Warmongering Combatant's Accolade of Conquest (A)
 							i(126159),	-- Warmongering Combatant's Accolade of Dominance (A)
 							i(126162),	-- Warmongering Combatant's Accolade of Endurance (A)
@@ -8072,7 +8072,7 @@ root(ROOTS.PVP, {
 							i(125969),	-- Warmongering Gladiator's Signet of Endurance (A)
 							i(125964),	-- Warmongering Gladiator's Signet of Ruthlessness (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(125984),	-- Warmongering Gladiator's Accolade of Conquest (A)
 							i(125985),	-- Warmongering Gladiator's Accolade of Dominance (A)
 							i(125988),	-- Warmongering Gladiator's Accolade of Endurance (A)
@@ -8221,7 +8221,7 @@ root(ROOTS.PVP, {
 							i(126728),	-- Warmongering Aspirant's Signet of Dedication (H)
 							i(126729),	-- Warmongering Aspirant's Signet of Endurance (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(126730),	-- Warmongering Aspirant's Accolade of Conquest (H)
 							i(126731),	-- Warmongering Aspirant's Accolade of Dominance (H)
 							i(126734),	-- Warmongering Aspirant's Accolade of Endurance (H)
@@ -8830,7 +8830,7 @@ root(ROOTS.PVP, {
 							i(126643),	-- Warmongering Combatant's Signet of Endurance (H)
 							i(126619),	-- Warmongering Combatant's Signet of Ruthlessness (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(126635),	-- Warmongering Combatant's Accolade of Conquest (H)
 							i(126636),	-- Warmongering Combatant's Accolade of Dominance (H)
 							i(126639),	-- Warmongering Combatant's Accolade of Endurance (H)
@@ -9564,7 +9564,7 @@ root(ROOTS.PVP, {
 							i(126448),	-- Warmongering Gladiator's Signet of Endurance (H)
 							i(126443),	-- Warmongering Gladiator's Signet of Ruthlessness (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(126461),	-- Warmongering Gladiator's Accolade of Conquest (H)
 							i(126462),	-- Warmongering Gladiator's Accolade of Dominance (H)
 							i(126465),	-- Warmongering Gladiator's Accolade of Endurance (H)
@@ -9944,7 +9944,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(SEASON_WILD, {
-			n(-386, {	-- Trinket
+			n(TRINKET, {
 				i(125045),	-- Wild Combatant's Accolade of Dominance
 				i(125047),	-- Wild Combatant's Accolade of Meditation
 				i(125044),	-- Wild Combatant's Accolade of Conquest

@@ -13562,7 +13562,7 @@ local fields = {
 	--[[
 	["sym"] = function(t)
 		return {{"selectprofession", t.professionID},
-				{"not","headerID",-38}};	-- Ignore the Main Professions header that will get pulled in
+				{"not","headerID",app.HeaderConstants.PROFESSIONS}};	-- Ignore the Main Professions header that will get pulled in
 	end,
 	--]]--
 };
@@ -18237,18 +18237,13 @@ function app:GetDataCache()
 
 	-- Professions
 	if app.Categories.Professions then
-		db = app.CreateNPC(-38);
-		db.g = app.Categories.Professions;
-		db.text = TRADE_SKILLS;
-		db.icon = app.asset("Category_Professions");
-		db.description = "This section will only show your character's professions outside of Account and Debug Mode.";
+		db = app.CreateNPC(app.HeaderConstants.PROFESSIONS, app.Categories.Professions);
 		tinsert(g, db);
 	end
 
 	-- Secrets
 	if app.Categories.Secrets then
-		db = app.CreateNPC(app.HeaderConstants.SECRETS);
-		db.g = app.Categories.Secrets;
+		db = app.CreateNPC(app.HeaderConstants.SECRETS, app.Categories.Secrets);
 		tinsert(g, db);
 	end
 
@@ -19498,8 +19493,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		-- HIDDEN_QUESTS = -999;	-- currently nested under 'Quests' due to Type
 		-- [-999] = true,
 			[app.HeaderConstants.HOLIDAYS] = "holidayID",
-		-- PROFESSIONS = -38;
-			[-38] = "professionID",
+			[app.HeaderConstants.PROFESSIONS] = "professionID",
 			[app.HeaderConstants.PVP] = true,
 			[app.HeaderConstants.QUESTS] = "questID",
 			[app.HeaderConstants.RARES] = true,

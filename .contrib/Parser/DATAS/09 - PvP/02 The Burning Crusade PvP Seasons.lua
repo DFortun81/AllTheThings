@@ -1270,7 +1270,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 2.0.3", "removed 6.0.1" },
 				}),
 			}),
-			filter(RELICS, {
+			filter(RELICS_F, {
 				i(33945, { -- Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -1989,7 +1989,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 				}),
 			}),
-			filter(RELICS, {
+			filter(RELICS_F, {
 				i(33946, { -- Merciless Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -2730,7 +2730,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
 			}),
-			filter(RELICS, {
+			filter(RELICS_F, {
 				i(33947, { -- Vengeful Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -3534,7 +3534,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
 				}),
 			}),
-			filter(RELICS, {
+			filter(RELICS_F, {
 				i(35019, {	-- Brutal Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
 				}),

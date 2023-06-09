@@ -48,7 +48,7 @@ root(ROOTS.Zones, {
 					i(139990),	-- Inspector's Pendant
 					i(134275),	-- Nightborne's Jeweled Necklace
 				}),
-				n(-386,  {	-- Trinkets
+				n(TRINKET, {
 					i(140030),	-- Devilsaur Shock-Baton (caster version)
 					i(140031),	-- Mana Spark
 					i(134278),	-- Nightborne Defender's Badge
@@ -56,7 +56,7 @@ root(ROOTS.Zones, {
 					i(134291),	-- Nightborne's Hunting Horn
 					i(140026),	-- The Devilsaur's Bite (melee version)
 				}),
-				n(-387,  {	-- Relics
+				n(RELICS, {
 					i(140042),	-- Ancient Sacred Candle
 					i(141267),	-- Aspect of Disregard
 					i(140088),	-- Everblooming Sunflower

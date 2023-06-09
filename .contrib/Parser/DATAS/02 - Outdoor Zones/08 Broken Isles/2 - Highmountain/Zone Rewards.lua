@@ -77,13 +77,13 @@ root(ROOTS.Zones, {
 				}),
 				n(NECK, {
 				}),
-				n(-386,  {	-- Trinkets
+				n(TRINKET, {
 					i(139114),	-- An'she's Infusion of Light
 					i(139102),	-- An'she's Invigoring Charm
 					i(139113),	-- An'she's Token of Guile
 					i(134160),	-- Huge Roggstone
 				}),
-				n(-387,  {	-- Relics
+				n(RELICS, {
 					i(143693),	-- Darkened Brulstone
 					i(143692),	-- Earthshaper's Mantra
 				}),

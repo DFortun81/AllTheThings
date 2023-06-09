@@ -77,13 +77,13 @@ root(ROOTS.Zones, {
 					i(134245),	-- Nazjatar Manapearl Ring
 					i(134323),	-- Glinting Quartz Ring
 				}),
-				n(-386,  {	-- Trinkets
+				n(TRINKET, {
 					i(134234),	-- Barnacled Azsharan Insignia
 					i(134248),	-- Leycoral Shard
 					i(134247),	-- Silent Seashell
 					i(136750),	-- Vault Guardian's Talisman
 				}),
-				n(-387,  {	-- Relics
+				n(RELICS, {
 					i(141280),	-- Demonic Shackles
 					i(141273),	-- Echo of Eons
 					i(143702),	-- Eternity of Wisdom

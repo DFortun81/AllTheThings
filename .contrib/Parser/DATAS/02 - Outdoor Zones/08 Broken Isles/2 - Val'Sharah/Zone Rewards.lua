@@ -78,12 +78,12 @@ root(ROOTS.Zones, {
 				n(NECK, {
 					i(121284),	-- Nightmare Pendant
 				}),
-				n(-386,  {	-- Trinkets
+				n(TRINKET, {
 					i(121287),	-- Nightmare Bark
 					i(121311),	-- Nightmare Bloom
 					i(121310),	-- Nightmare Thorn
 				}),
-				n(-387,  {	-- Relics
+				n(RELICS, {
 					i(139076),	-- Bloom of New Growth
 					i(143698),	-- Effervescent Leyblossom
 					i(141271),	-- Hope of the Forest

@@ -180,7 +180,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(162965)),	-- Dread Aspirant's Seal
 					un(REMOVED_FROM_GAME, i(162964)),	-- Dread Aspirant's Signet
 				}),
-				n(-386, {	-- Trinkets
+				n(TRINKET, {
 					un(REMOVED_FROM_GAME, i(162966)),	-- Dread Aspirant's Badge
 					un(REMOVED_FROM_GAME, i(162898)),	-- Dread Aspirant's Emblem
 					un(REMOVED_FROM_GAME, i(162899)),	-- Dread Aspirant's Insignia
@@ -392,7 +392,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(161899)),	-- Dread Gladiator's Seal
 					un(REMOVED_FROM_GAME, i(161898)),	-- Dread Gladiator's Signet
 				}),
-				n(-386, {	-- Trinkets
+				n(TRINKET, {
 					un(REMOVED_FROM_GAME, i(161902)),	-- Dread Gladiator's Badge
 					un(REMOVED_FROM_GAME, i(161675)),	-- Dread Gladiator's Emblem
 					un(REMOVED_FROM_GAME, i(161676)),	-- Dread Gladiator's Insignia
@@ -697,7 +697,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(165219)),	-- Sinister Aspirant's Band
 					un(REMOVED_FROM_GAME, i(165217)),	-- Sinister Aspirant's Ring
 				}),
-				n(-386, {	-- Trinkets
+				n(TRINKET, {
 					un(REMOVED_FROM_GAME, i(165220)),	-- Sinister Aspirant's Medallion
 					un(REMOVED_FROM_GAME, i(165221)),	-- Sinister Aspirant's Emblem
 					un(REMOVED_FROM_GAME, i(165222)),	-- Sinister Aspirant's Insignia
@@ -946,7 +946,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(165052)),	-- Sinister Gladiator's Ring
 					un(REMOVED_FROM_GAME, i(165054)),	-- Sinister Gladiator's Signet
 				}),
-				n(-386, {	-- Trinkets
+				n(TRINKET, {
 					un(REMOVED_FROM_GAME, i(165058)),	-- Sinister Gladiator's Badge
 					un(REMOVED_FROM_GAME, i(165056)),	-- Sinister Gladiator's Emblem
 					un(REMOVED_FROM_GAME, i(165057)),	-- Sinister Gladiator's Insignia
@@ -1259,7 +1259,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(167523)),	-- Notorious Aspirant's Ring
 					un(REMOVED_FROM_GAME, i(167524)),	-- Notorious Aspirant's Band
 				}),
-				n(-386, {	-- Trinkets
+				n(TRINKET, {
 					un(REMOVED_FROM_GAME, i(167528)),	-- Notorious Aspirant's Badge
 					un(REMOVED_FROM_GAME, i(167526)),	-- Notorious Aspirant's Emblem
 					un(REMOVED_FROM_GAME, i(167527)),	-- Notorious Aspirant's Insignia
@@ -1542,7 +1542,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(167374)),	-- Notorious Gladiator's Ring
 					un(REMOVED_FROM_GAME, i(167376)),	-- Notorious Gladiator's Signet
 				}),
-				n(-386, {	-- Trinkets
+				n(TRINKET, {
 					un(REMOVED_FROM_GAME, i(167380)),	-- Notorious Gladiator's Badge
 					un(REMOVED_FROM_GAME, i(167378)),	-- Notorious Gladiator's Emblem
 					un(REMOVED_FROM_GAME, i(167379)),	-- Notorious Gladiator's Insignia
@@ -1848,7 +1848,7 @@ root(ROOTS.PVP, {
 					i(172845),	-- Corrupted Aspirant's Band
 					i(172844),	-- Corrupted Aspirant's Ring
 				}),
-				n(-386, {	-- Trinkets
+				n(TRINKET, {
 					i(172849),	-- Corrupted Aspirant's Badge
 					i(172847),	-- Corrupted Aspirant's Emblem
 					i(172848),	-- Corrupted Aspirant's Insignia
@@ -2091,7 +2091,7 @@ root(ROOTS.PVP, {
 					i(172663),	-- Corrupted Gladiator's Ring
 					i(172665),	-- Corrupted Gladiator's Signet
 				}),
-				n(-386, {	-- Trinkets
+				n(TRINKET, {
 					i(172669),	-- Corrupted Gladiator's Badge
 					i(174276),	-- Corrupted Gladiator's Breach
 					i(172667),	-- Corrupted Gladiator's Emblem
@@ -2484,7 +2484,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(172855),	-- Corrupted Aspirant's Greatcloak
 				}),
 				-- These were added 9.0.1??
-				n(-386, {	-- Trinkets
+				n(TRINKET, {
 					i(184055),	-- Corrupted Gladiator's Medallion
 					i(184056),	-- Corrupted Gladiator's Relentless Brooch
 					i(184057),	-- Corrupted Gladiator's Sigil of Adaptation

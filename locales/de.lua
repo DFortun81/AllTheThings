@@ -697,8 +697,6 @@ for key,value in pairs({
 		[-255] = "Traditionsrüstung",								-- Heritage
 	-- First Questline Draenor
 		[-356] = "Angriff auf das Dunkle Portal",					-- Assault on the Dark Portal
-	-- Operation: Mechagon
-		[-379] = "Schrottplatz",									-- Junkyard
 	-- Icecrown Citadel
 		[-393] = "Sturm auf die Zitadelle",							-- Storming the Citadel
 		[-394] = "Die Seuchenwerke",								-- The Plagueworks

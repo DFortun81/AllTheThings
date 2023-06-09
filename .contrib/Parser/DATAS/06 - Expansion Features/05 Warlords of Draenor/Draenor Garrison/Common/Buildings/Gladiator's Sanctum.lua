@@ -429,7 +429,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 									i(126728),	-- Warmongering Aspirant's Signet of Dedication (H)
 									i(126729),	-- Warmongering Aspirant's Signet of Endurance (H)
 								}),
-								n(-386,	{	-- Trinket
+								n(TRINKET, {
 									i(126253),	-- Warmongering Aspirant's Accolade of Conquest (A)
 									i(126254),	-- Warmongering Aspirant's Accolade of Dominance (A)
 									i(126257),	-- Warmongering Aspirant's Accolade of Endurance (A)

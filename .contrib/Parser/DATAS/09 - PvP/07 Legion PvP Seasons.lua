@@ -471,7 +471,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(135908)),	-- Vindictive Combatant's Ring (A)
 						un(REMOVED_FROM_GAME, i(135916)),	-- Vindictive Combatant's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(135917)),	-- Vindictive Combatant's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(135918)),	-- Vindictive Combatant's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(135919)),	-- Vindictive Combatant's Insignia of Conquest (A)
@@ -858,7 +858,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(135682)),	-- Vindictive Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(135690)),	-- Vindictive Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(135691)),	-- Vindictive Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(135692)),	-- Vindictive Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(135693)),	-- Vindictive Gladiator's Insignia of Conquest (A)
@@ -1245,7 +1245,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(136134)),	-- Vindictive Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(136142)),	-- Vindictive Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(136143)),	-- Vindictive Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(136144)),	-- Vindictive Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(136145)),	-- Vindictive Gladiator's Insignia of Conquest (A)
@@ -1634,7 +1634,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(136021)),	-- Vindictive Combatant's Ring (H)
 						un(REMOVED_FROM_GAME, i(136029)),	-- Vindictive Combatant's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(136030)),	-- Vindictive Combatant's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(136031)),	-- Vindictive Combatant's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(136032)),	-- Vindictive Combatant's Insignia of Conquest (H)
@@ -2021,7 +2021,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(135795)),	-- Vindictive Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(135803)),	-- Vindictive Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(135804)),	-- Vindictive Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(135805)),	-- Vindictive Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(135806)),	-- Vindictive Gladiator's Insignia of Conquest (H)
@@ -2408,7 +2408,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(136247)),	-- Vindictive Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(136255)),	-- Vindictive Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(136256)),	-- Vindictive Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(136257)),	-- Vindictive Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(136258)),	-- Vindictive Gladiator's Insignia of Conquest (H)
@@ -2665,7 +2665,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(142881)),	-- Fearless Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(142885)),	-- Fearless Combatant's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(142886)),	-- Fearless Combatant's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(142887)),	-- Fearless Combatant's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(142888)),	-- Fearless Combatant's Insignia of Conquest (A)
@@ -2824,7 +2824,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(142655)),	-- Fearless Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(142659)),	-- Fearless Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(142660)),	-- Fearless Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(142661)),	-- Fearless Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(142662)),	-- Fearless Gladiator's Insignia of Conquest (A)
@@ -2983,7 +2983,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(143107)),	-- Fearless Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(143111)),	-- Fearless Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(143112)),	-- Fearless Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(143113)),	-- Fearless Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(143114)),	-- Fearless Gladiator's Insignia of Conquest (A)
@@ -3144,7 +3144,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(142994)),	-- Fearless Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(142998)),	-- Fearless Combatant's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(142999)),	-- Fearless Combatant's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(143000)),	-- Fearless Combatant's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(143001)),	-- Fearless Combatant's Insignia of Conquest (H)
@@ -3303,7 +3303,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(142768)),	-- Fearless Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(142772)),	-- Fearless Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(142773)),	-- Fearless Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(142774)),	-- Fearless Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(142775)),	-- Fearless Gladiator's Insignia of Conquest (H)
@@ -3462,7 +3462,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(143220)),	-- Fearless Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(143224)),	-- Fearless Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(143225)),	-- Fearless Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(143226)),	-- Fearless Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(143227)),	-- Fearless Gladiator's Insignia of Conquest (H)
@@ -3947,7 +3947,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(145186)),	-- Cruel Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(145188)),	-- Cruel Combatant's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(145222)),	-- Cruel Combatant's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(145224)),	-- Cruel Combatant's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(145226)),	-- Cruel Combatant's Insignia of Conquest (A)
@@ -3958,7 +3958,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(145236)),	-- Cruel Combatant's Accolade of Victory (A)
 						un(REMOVED_FROM_GAME, i(145238)),	-- Cruel Combatant's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(144512)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(144531)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(144522)),	-- Battle-Tempered Hilt
@@ -4362,7 +4362,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(144694)),	-- Cruel Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(144696)),	-- Cruel Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(144730)),	-- Cruel Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(144732)),	-- Cruel Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(144734)),	-- Cruel Gladiator's Insignia of Conquest (A)
@@ -4747,7 +4747,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(144940)),	-- Cruel Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(144942)),	-- Cruel Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(144976)),	-- Cruel Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(144978)),	-- Cruel Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(144980)),	-- Cruel Gladiator's Insignia of Conquest (A)
@@ -5132,7 +5132,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(145187)),	-- Cruel Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(145189)),	-- Cruel Combatant's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(145223)),	-- Cruel Combatant's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(145225)),	-- Cruel Combatant's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(145227)),	-- Cruel Combatant's Insignia of Conquest (H)
@@ -5143,7 +5143,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(145237)),	-- Cruel Combatant's Accolade of Victory (H)
 						un(REMOVED_FROM_GAME, i(145239)),	-- Cruel Combatant's Insignia of Victory (H)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(144512)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(144531)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(144522)),	-- Battle-Tempered Hilt
@@ -5547,7 +5547,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(144695)),	-- Cruel Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(144697)),	-- Cruel Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(144731)),	-- Cruel Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(144733)),	-- Cruel Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(144735)),	-- Cruel Gladiator's Insignia of Conquest (H)
@@ -5932,7 +5932,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(144941)),	-- Cruel Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(144943)),	-- Cruel Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(144977)),	-- Cruel Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(144979)),	-- Cruel Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(144981)),	-- Cruel Gladiator's Insignia of Conquest (H)
@@ -6185,7 +6185,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(146028)), -- Ferocious Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(146030)), -- Ferocious Combatant's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(146064)), -- Ferocious Combatant's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(146066)), -- Ferocious Combatant's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(146068)), -- Ferocious Combatant's Insignia of Conquest (A)
@@ -6196,7 +6196,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(146078)), -- Ferocious Combatant's Accolade of Victory (A)
 						un(REMOVED_FROM_GAME, i(146080)), -- Ferocious Combatant's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(145354)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(145373)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(145364)),	-- Battle-Tempered Hilt
@@ -6372,7 +6372,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(145536)), -- Ferocious Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(145538)), -- Ferocious Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(145572)), -- Ferocious Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(145574)), -- Ferocious Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(145576)), -- Ferocious Gladiator's Insignia of Conquest (A)
@@ -6383,7 +6383,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(145586)), -- Ferocious Gladiator's Accolade of Victory (A)
 						un(REMOVED_FROM_GAME, i(145588)), -- Ferocious Gladiator's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(151502)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(151521)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(151512)),	-- Battle-Tempered Hilt
@@ -6561,7 +6561,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(145782)), -- Ferocious Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(145784)), -- Ferocious Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(145818)), -- Ferocious Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(145820)), -- Ferocious Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(145822)), -- Ferocious Gladiator's Insignia of Conquest (A)
@@ -6718,7 +6718,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(146029)), -- Ferocious Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(146031)), -- Ferocious Combatant's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(146067)), -- Ferocious Combatant's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(146069)), -- Ferocious Combatant's Insignia of Conquest (H)
 						un(REMOVED_FROM_GAME, i(146071)), -- Ferocious Combatant's Badge of Dominance (H)
@@ -6729,7 +6729,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(146081)), -- Ferocious Combatant's Insignia of Victory (H)
 						un(REMOVED_FROM_GAME, i(146065)), -- Ferocious Combatant's Badge of Conquest (H)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(145354)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(145373)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(145364)),	-- Battle-Tempered Hilt
@@ -6905,7 +6905,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(145537)), -- Ferocious Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(145539)), -- Ferocious Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(145573)), -- Ferocious Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(145575)), -- Ferocious Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(145577)), -- Ferocious Gladiator's Insignia of Conquest (H)
@@ -6916,7 +6916,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(145587)), -- Ferocious Gladiator's Accolade of Victory (H)
 						un(REMOVED_FROM_GAME, i(145589)), -- Ferocious Gladiator's Insignia of Victory (H)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(151502)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(151521)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(151512)),	-- Battle-Tempered Hilt
@@ -7094,7 +7094,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(145783)), -- Ferocious Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(145785)), -- Ferocious Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(145819)), -- Ferocious Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(145821)), -- Ferocious Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(145823)), -- Ferocious Gladiator's Insignia of Conquest (H)
@@ -7695,7 +7695,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149666)), -- Fierce Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(149668)), -- Fierce Combatant's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(149702)), -- Fierce Combatant's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(149704)), -- Fierce Combatant's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(149706)), -- Fierce Combatant's Insignia of Conquest (A)
@@ -7706,7 +7706,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149716)), -- Fierce Combatant's Accolade of Victory (A)
 						un(REMOVED_FROM_GAME, i(149718)), -- Fierce Combatant's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(150282)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(150351)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(150292)),	-- Battle-Tempered Hilt
@@ -8230,7 +8230,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148069)), -- Fierce Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(148071)), -- Fierce Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(148105)), -- Fierce Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(148107)), -- Fierce Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(148109)), -- Fierce Gladiator's Insignia of Conquest (A)
@@ -8735,7 +8735,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148315)), -- Fierce Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(148317)), -- Fierce Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(148351)), -- Fierce Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(148353)), -- Fierce Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(148355)), -- Fierce Gladiator's Insignia of Conquest (A)
@@ -9240,7 +9240,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149667)), -- Fierce Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(149669)), -- Fierce Combatant's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(149703)), -- Fierce Combatant's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(149705)), -- Fierce Combatant's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(149707)), -- Fierce Combatant's Insignia of Conquest (H)
@@ -9251,7 +9251,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149717)), -- Fierce Combatant's Accolade of Victory (H)
 						un(REMOVED_FROM_GAME, i(149719)), -- Fierce Combatant's Insignia of Victory (H)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(150282)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(150351)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(150292)),	-- Battle-Tempered Hilt
@@ -9775,7 +9775,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148070)), -- Fierce Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(148072)), -- Fierce Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(148106)), -- Fierce Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(148108)), -- Fierce Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(148110)), -- Fierce Gladiator's Insignia of Conquest (H)
@@ -10280,7 +10280,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148316)), -- Fierce Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(148318)), -- Fierce Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(148352)), -- Fierce Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(148354)), -- Fierce Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(148356)), -- Fierce Gladiator's Insignia of Conquest (H)
@@ -10533,7 +10533,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149916)), -- Dominant Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(149918)), -- Dominant Combatant's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(149952)), -- Dominant Combatant's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(149954)), -- Dominant Combatant's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(149956)), -- Dominant Combatant's Insignia of Conquest (A)
@@ -10544,7 +10544,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149966)), -- Dominant Combatant's Accolade of Victory (A)
 						un(REMOVED_FROM_GAME, i(149968)), -- Dominant Combatant's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(150306)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(150357)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(150316)),	-- Battle-Tempered Hilt
@@ -10720,7 +10720,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148562)), -- Dominant Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(148564)), -- Dominant Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(148600)), -- Dominant Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(148602)), -- Dominant Gladiator's Insignia of Conquest (A)
 						un(REMOVED_FROM_GAME, i(148604)), -- Dominant Gladiator's Badge of Dominance (A)
@@ -10731,7 +10731,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148614)), -- Dominant Gladiator's Insignia of Victory (A)
 						un(REMOVED_FROM_GAME, i(148598)), -- Dominant Gladiator's Badge of Conquest (A)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(154060)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(154079)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(154070)),	-- Battle-Tempered Hilt
@@ -10909,7 +10909,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148808)), -- Dominant Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(148810)), -- Dominant Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(148844)), -- Dominant Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(148846)), -- Dominant Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(148848)), -- Dominant Gladiator's Insignia of Conquest (A)
@@ -10920,7 +10920,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148858)), -- Dominant Gladiator's Accolade of Victory (A)
 						un(REMOVED_FROM_GAME, i(148860)), -- Dominant Gladiator's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(155716)),	-- "Borrowed Soul" Essence
 						un(REMOVED_FROM_GAME, i(155703)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(155722)),	-- Battering Tempest
@@ -11098,7 +11098,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149917)), -- Dominant Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(149919)), -- Dominant Combatant's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(149953)), -- Dominant Combatant's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(149955)), -- Dominant Combatant's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(149957)), -- Dominant Combatant's Insignia of Conquest (H)
@@ -11109,7 +11109,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149967)), -- Dominant Combatant's Accolade of Victory (H)
 						un(REMOVED_FROM_GAME, i(149969)), -- Dominant Combatant's Insignia of Victory (H)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(150306)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(150357)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(150316)),	-- Battle-Tempered Hilt
@@ -11285,7 +11285,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148563)), -- Dominant Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(148565)), -- Dominant Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(148599)), -- Dominant Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(148601)), -- Dominant Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(148603)), -- Dominant Gladiator's Insignia of Conquest (H)
@@ -11296,7 +11296,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148613)), -- Dominant Gladiator's Accolade of Victory (H)
 						un(REMOVED_FROM_GAME, i(148615)), -- Dominant Gladiator's Insignia of Victory (H)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(154060)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(154079)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(154070)),	-- Battle-Tempered Hilt
@@ -11474,7 +11474,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148809)), -- Dominant Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(148811)), -- Dominant Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(148845)), -- Dominant Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(148847)), -- Dominant Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(148849)), -- Dominant Gladiator's Insignia of Conquest (H)
@@ -11485,7 +11485,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(148859)), -- Dominant Gladiator's Accolade of Victory (H)
 						un(REMOVED_FROM_GAME, i(148861)), -- Dominant Gladiator's Insignia of Victory (H)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(155703)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(155722)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(155713)),	-- Battle-Tempered Hilt
@@ -11759,7 +11759,7 @@ root(ROOTS.PVP, {
 						i(150162),	-- Demonic Combatant's Band (A)
 						i(150164),	-- Demonic Combatant's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						i(150198),	-- Demonic Combatant's Badge of Conquest (A)
 						i(150200),	-- Demonic Combatant's Accolade of Conquest (A)
 						i(150202),	-- Demonic Combatant's Insignia of Conquest (A)
@@ -11770,7 +11770,7 @@ root(ROOTS.PVP, {
 						i(150212),	-- Demonic Combatant's Accolade of Victory (A)
 						i(150214),	-- Demonic Combatant's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						i(150331),	-- Alliance of Convenience
 						i(150363),	-- Battering Tempest
 						i(150341),	-- Battle-Tempered Hilt
@@ -11946,7 +11946,7 @@ root(ROOTS.PVP, {
 						i(149054), -- Demonic Gladiator's Band (A)
 						i(149056), -- Demonic Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						i(149090), -- Demonic Gladiator's Badge of Conquest (A)
 						i(149092), -- Demonic Gladiator's Accolade of Conquest (A)
 						i(149094), -- Demonic Gladiator's Insignia of Conquest (A)
@@ -11957,7 +11957,7 @@ root(ROOTS.PVP, {
 						i(149104), -- Demonic Gladiator's Accolade of Victory (A)
 						i(149106), -- Demonic Gladiator's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						i(154090),	-- Alliance of Convenience
 						i(154109),	-- Battering Tempest
 						i(154100),	-- Battle-Tempered Hilt
@@ -12135,7 +12135,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149300)), -- Demonic Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(149302)), -- Demonic Gladiator's Signet (A)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(149336)), -- Demonic Gladiator's Badge of Conquest (A)
 						un(REMOVED_FROM_GAME, i(149338)), -- Demonic Gladiator's Accolade of Conquest (A)
 						un(REMOVED_FROM_GAME, i(149340)), -- Demonic Gladiator's Insignia of Conquest (A)
@@ -12146,7 +12146,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149350)), -- Demonic Gladiator's Accolade of Victory (A)
 						un(REMOVED_FROM_GAME, i(149352)), -- Demonic Gladiator's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(155733)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(155752)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(155743)),	-- Battle-Tempered Hilt
@@ -12324,7 +12324,7 @@ root(ROOTS.PVP, {
 						i(150163),	-- Demonic Combatant's Band (H)
 						i(150165),	-- Demonic Combatant's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						i(150199),	-- Demonic Combatant's Badge of Conquest (H)
 						i(150201),	-- Demonic Combatant's Accolade of Conquest (H)
 						i(150203),	-- Demonic Combatant's Insignia of Conquest (H)
@@ -12335,7 +12335,7 @@ root(ROOTS.PVP, {
 						i(150213),	-- Demonic Combatant's Accolade of Victory (H)
 						i(150215),	-- Demonic Combatant's Insignia of Victory (H)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						i(150331),	-- Alliance of Convenience
 						i(150363),	-- Battering Tempest
 						i(150341),	-- Battle-Tempered Hilt
@@ -12511,7 +12511,7 @@ root(ROOTS.PVP, {
 						i(149055), -- Demonic Gladiator's Band (H)
 						i(149057), -- Demonic Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						i(149091), -- Demonic Gladiator's Badge of Conquest (H)
 						i(149093), -- Demonic Gladiator's Accolade of Conquest (H)
 						i(149095), -- Demonic Gladiator's Insignia of Conquest (H)
@@ -12522,7 +12522,7 @@ root(ROOTS.PVP, {
 						i(149105), -- Demonic Gladiator's Accolade of Victory (H)
 						i(149107), -- Demonic Gladiator's Insignia of Victory (H)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						i(154090),	-- Alliance of Convenience
 						i(154109),	-- Battering Tempest
 						i(154100),	-- Battle-Tempered Hilt
@@ -12700,7 +12700,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149301)), -- Demonic Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(149303)), -- Demonic Gladiator's Signet (H)
 					}),
-					n(-386,	{	-- Trinket
+					n(TRINKET, {
 						un(REMOVED_FROM_GAME, i(149337)), -- Demonic Gladiator's Badge of Conquest (H)
 						un(REMOVED_FROM_GAME, i(149339)), -- Demonic Gladiator's Accolade of Conquest (H)
 						un(REMOVED_FROM_GAME, i(149341)), -- Demonic Gladiator's Insignia of Conquest (H)
@@ -12711,7 +12711,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(149351)), -- Demonic Gladiator's Accolade of Victory (H)
 						un(REMOVED_FROM_GAME, i(149353)), -- Demonic Gladiator's Insignia of Victory (H)
 					}),
-					n(-387, {	-- Relic
+					n(RELICS, {
 						un(REMOVED_FROM_GAME, i(155733)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(155752)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(155743)),	-- Battle-Tempered Hilt

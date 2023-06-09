@@ -501,7 +501,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(165271),	-- Fallback Weapon - Polearm
 			i(176904),	-- Bonegrafted Spear
 		}),
-		n(-387,	{	-- Relics
+		n(RELICS, {
 			-- Load In Game
 			i(132252),	-- Owen Test Relic
 			i(136988),	-- QA Combat Test Relic Holy 1

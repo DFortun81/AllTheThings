@@ -762,7 +762,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
-		n(-387,	{	-- Relics
+		n(RELICS, {
 			i(130162),	-- Val-Sharah Artifact Gem #1 [Holy]
 		}),
 	}),

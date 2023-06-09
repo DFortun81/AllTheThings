@@ -814,7 +814,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
-		n(-387,	{	-- Relics
+		n(RELICS, {
 			i(133018),	-- Azsuna Package 3 - Holy 1 - Unused
 		}),
 	}),

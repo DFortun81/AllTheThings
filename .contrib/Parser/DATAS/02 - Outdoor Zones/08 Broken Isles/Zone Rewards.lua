@@ -86,7 +86,7 @@ root(ROOTS.Zones, {
 				i(134279),	-- Nightborne Signet Ring
 				i(121799),	-- Tel'anor Magister's Ring
 			}),
-			n(-386, {	-- Trinkets
+			n(TRINKET, {
 				i(134204),	-- Bleached Skull Talisman
 				i(134380),	-- Burning Portal Key
 				i(139075),	-- Forest Creeper's Guile
@@ -94,7 +94,7 @@ root(ROOTS.Zones, {
 				i(134159),	-- Rocksunder Lucky Statue
 				i(134336),	-- Stolen Mana Crystal
 			}),
-			n(-387, {	-- Relics
+			n(RELICS, {
 				i(143695),	-- Ambition of the Forlorn
 				i(143701),	-- Ancient Flamewaking
 				i(143694),	-- Aristocratic Menace

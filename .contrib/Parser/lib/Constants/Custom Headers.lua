@@ -31,6 +31,8 @@ LEGS = -329;
 FEET = -330;
 NECK = -384;
 FINGER = -385;
+TRINKET = -386;
+RELICS = -387;
 -- Meta Slot
 ARMOR = -318;
 WEAPONS = -319;

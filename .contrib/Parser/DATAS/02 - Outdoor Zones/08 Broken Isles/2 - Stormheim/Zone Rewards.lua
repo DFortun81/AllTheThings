@@ -45,11 +45,11 @@ root(ROOTS.Zones, {
 				n(NECK, {
 					i(134187),	-- Rough-Hammered Silver Necklace
 				}),
-				n(-386,  {	-- Trinkets
+				n(TRINKET, {
 					i(134190),	-- Ironrune Charm
 					i(134203),	-- Three-Toed Rabbit Foot
 				}),
-				n(-387, {	-- Relics
+				n(RELICS, {
 					i(143691),	-- Bloody Kvaldir Pennant
 					i(143687),	-- Felskorn Mania
 					i(141262),	-- Rune-Etched Quill

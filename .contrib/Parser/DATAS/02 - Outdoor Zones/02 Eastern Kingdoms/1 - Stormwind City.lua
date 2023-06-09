@@ -5951,7 +5951,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 								}),
 							}),
-							n(-386, {	-- Trinkets
+							n(TRINKET, {
 								i(172849, {	-- Corrupted Aspirant's Badge
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
@@ -6149,7 +6149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				-- 54661: Captain Dirgehammer <Cataclysmic Gladiator> (Cataclysmic?)
@@ -6208,13 +6208,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"merge"},
 						{"pop"},
 						{ "exclude", "headerID", WEAPONS, BACK },
-						{ "exclude", "filterID", NECK_F, FINGER_F, RELICS, TRINKET_F },
+						{ "exclude", "filterID", NECK_F, FINGER_F, RELICS_F, TRINKET_F },
 						{"postprocess"},
 					},
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
-				n(49877, {	-- Captain Lancy Revshon <Stormwind Quartermaster>
+				n(49877, {	-- Captain Lancy Revshon <Stormwind Quartermaster>
 					["coord"] = { 67.6, 72.8, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
@@ -7216,7 +7216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(40606, {	-- Knight-Lieutenant T'Maire Sydes >S10< Elite Vendor
@@ -7352,7 +7352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},	-- Vicious Gladiator: Season 9 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.
 					},
 				}),

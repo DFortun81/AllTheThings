@@ -173,7 +173,7 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 			i(122372),	-- Strengthened Stockade Pauldrons
 
 		}),
-		n(-386, {	-- Trinket
+		n(TRINKET, {
 			un(REMOVED_FROM_GAME, i(93899)),	-- Bequeathed Insignia of the Alliance
 			un(REMOVED_FROM_GAME, i(93898)),	-- Bequeathed Insignia of the Horde
 			i(126948),	-- Defending Champion
