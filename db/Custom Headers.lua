@@ -22,8 +22,8 @@ _.HeaderConstants = {
 local a = L.HEADER_ICONS;
 for key,value in pairs({
 	[-1000000] = _.asset("Category_Achievements"),
-	[-1000001] = "Interface\Icons\Achievement_Garrison_Horde_PVE",
-	[-1000002] = "Interface\Icons\INV_Misc_Coin_02",
+	[-1000001] = "Interface/Icons/Achievement_Garrison_Horde_PVE",
+	[-1000002] = "Interface/Icons/INV_Misc_Coin_02",
 	[-1000003] = _.asset("Category_Holidays"),
 	[-1000004] = _.asset("Category_PvP"),
 	[-1000005] = _.asset("Interface_Quest_header"),
@@ -32,7 +32,7 @@ for key,value in pairs({
 	[-1000008] = _.asset("Interface_Vendor"),
 	[-1000009] = _.asset("Interface_World_boss"),
 	[-1000010] = _.asset("Interface_Zone_drop"),
-	[-1000011] = "Interface\Icons\inv_jewelry_amulet_03",
+	[-1000011] = "Interface/Icons/inv_jewelry_amulet_03",
 }) do a[key] = value; end
 
 local a = L.HEADER_NAMES;

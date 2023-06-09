@@ -4414,7 +4414,7 @@ namespace ATT
                             keys.Add(key);
                             if (header.TryGetValue("icon", out object value))
                             {
-                                icons[key] = value.ToString();
+                                icons[key] = value.ToString().Replace("\\", "/");
                             }
                             if (header.TryGetValue("constant", out value))
                             {
