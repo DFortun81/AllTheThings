@@ -28,7 +28,6 @@ PARTY_SYNC = -10;
 -- #endif
 QUESTS = -17;
 RARES = -16;
-REWARDS = -18;
 SPECIAL = -77;
 TREASURES = -212;
 WEEKLY_HOLIDAYS = -176;					-- Not used in Classic

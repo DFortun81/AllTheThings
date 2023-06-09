@@ -18,6 +18,10 @@ lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 db\Presets.lua
+db\CategoryDB.lua
+db\ObjectDB.lua
+db\RaceDB.lua
+db\ReagentsDB.lua
 locales\en.lua
 locales\en_auto.lua
 locales\es.lua
@@ -29,10 +33,6 @@ locales\pt.lua
 locales\ru.lua
 locales\cn.lua
 db\Custom Headers.lua
-db\CategoryDB.lua
-db\ObjectDB.lua
-db\RaceDB.lua
-db\ReagentsDB.lua
 Settings.lua
 AllTheThings.lua
 db\Categories.lua

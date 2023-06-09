@@ -3957,14 +3957,14 @@ namespace ATT
             builder.Append("\t[").Append(key).Append("] = ");
             if (value.StartsWith("~"))
             {
-                return builder.Append(value.Substring(1)).Append(",");
+                return builder.Append(value.Substring(1).Replace("\n", "\\\n").Replace("\r", "\\\r")).Append(",");
             }
             else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(")
                 || value.StartsWith("_."))
             {
-                return builder.Append(value).Append(",");
+                return builder.Append(value.Replace("\n", "\\\n").Replace("\r", "\\\r")).Append(",");
             }
-            return builder.Append("\"").Append(value).Append("\",");
+            return builder.Append("\"").Append(value.Replace("\n", "\\\n").Replace("\r", "\\\r")).Append("\",");
         }
         #endregion
 
@@ -4368,6 +4368,7 @@ namespace ATT
                     var keys = new List<long>();
                     var icons = new Dictionary<long, string>();
                     var localization = new Dictionary<string, Dictionary<long, string>>();
+                    var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
                     foreach (var key in CustomHeaders.Keys)
                     {
                         // TODO: Include Only Referenced Headers!
@@ -4394,6 +4395,24 @@ namespace ATT
                                     if (!localization.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
                                     {
                                         localization[locale.Key] = sublocale = new Dictionary<long, string>();
+                                    }
+                                    sublocale[key] = locale.Value.ToString();
+                                }
+                            }
+                            if (header.TryGetValue("description", out value))
+                            {
+                                if (!(value is Dictionary<string, object> localeData))
+                                {
+                                    localeData = new Dictionary<string, object>
+                                    {
+                                        ["en"] = value
+                                    };
+                                }
+                                foreach (var locale in localeData)
+                                {
+                                    if (!localizationForDescriptions.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                    {
+                                        localizationForDescriptions[locale.Key] = sublocale = new Dictionary<long, string>();
                                     }
                                     sublocale[key] = locale.Value.ToString();
                                 }
@@ -4441,6 +4460,21 @@ namespace ATT
                         }
                         builder.AppendLine("}) do a[key] = value; end").AppendLine();
                     }
+
+                    if (localizationForDescriptions.TryGetValue("en", out data))
+                    {
+                        localizationForDescriptions.Remove("en");
+                        builder.AppendLine("local a = L.HEADER_DESCRIPTIONS;").AppendLine("for key,value in pairs({");
+                        foreach (var key in keys)
+                        {
+                            if (data.TryGetValue(key, out string name))
+                            {
+                                ExportStringKeyValue(builder, key, name).AppendLine();
+                            }
+                        }
+                        builder.AppendLine("}) do a[key] = value; end").AppendLine();
+                    }
+
                     var localeKeys = localization.Keys.ToList();
                     localeKeys.Sort();
                     foreach (var localeKey in localeKeys)
@@ -4448,7 +4482,27 @@ namespace ATT
                         if (localization.TryGetValue(localeKey, out data) && data.Any())
                         {
                             builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
-                            builder.AppendLine("local a = L.HEADER_NAMES;").AppendLine("for key,value in pairs({");
+                            builder.AppendLine("a = L.HEADER_NAMES;").AppendLine("for key,value in pairs({");
+                            foreach (var key in keys)
+                            {
+                                if (data.TryGetValue(key, out string name))
+                                {
+                                    ExportStringKeyValue(builder, key, name).AppendLine();
+                                }
+                            }
+                            builder.AppendLine("}) do a[key] = value; end");
+                            builder.AppendLine("end").AppendLine();
+                        }
+                    }
+
+                    localeKeys = localizationForDescriptions.Keys.ToList();
+                    localeKeys.Sort();
+                    foreach (var localeKey in localeKeys)
+                    {
+                        if (localizationForDescriptions.TryGetValue(localeKey, out data) && data.Any())
+                        {
+                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
+                            builder.AppendLine("a = L.HEADER_DESCRIPTIONS;").AppendLine("for key,value in pairs({");
                             foreach (var key in keys)
                             {
                                 if (data.TryGetValue(key, out string name))
