@@ -740,7 +740,6 @@ for key,value in pairs({
 		[-523] = "Буйство элементалей",								-- Elemental Unrest
 		[-534] = "Коллекционное издание",							-- Collector's Edition
 		[-536] = "Hearthstone Наемники",							-- Hearthstone Mercenaries
-		[-537] = "20-ая годовщина Diablo",							-- Diablo 20th Anniversary
 		[-538] = "Война в Ан'Кираже",								-- The Ahn'Qiraj War Effort
 		[-539] = "Скипетр Зыбучих песков",							-- The Scepter of the Shifting Sands
 		[-540] = "Вторжение Плети",									-- The Scourge Invasion
@@ -753,7 +752,6 @@ for key,value in pairs({
 		[-582] = "WotLK Classic Heroic",							-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "WotLK Classic Epic",								-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "Промо Dragonflight",								-- Dragonflight Seasonal Promotions
-		[-600] = "События Diablo",									-- Diablo Events
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)

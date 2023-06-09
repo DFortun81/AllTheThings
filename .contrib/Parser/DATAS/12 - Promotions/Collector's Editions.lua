@@ -350,7 +350,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			i(106256),	-- Treasure Goblin (PET!)
 		},
 	})),
-	n(-585, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, { -- Diablo IV
+	n(DIABLO_IV, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, { -- Diablo IV
 		["timeline"] = { "added 10.0.2.46999" },
 		["description"] = "Granted to owners of Diablo IV Base Version.",
 		["groups"] = {

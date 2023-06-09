@@ -1208,7 +1208,6 @@ app.L = {
 		[-534] = app.asset("Promotion_Collector"),											-- Collector's Edition
 		[-535] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_LADYLUCK",						-- Trading Card Game
 		[-536] = "Interface\\Icons\\Inv_misc_rune_01",										-- Hearthstone Mercenaries
-		[-537] = "Interface\\Icons\\diabloanniversary_achievement",							-- Diablo 20th Anniversary
 		[-538] = "Interface\\Icons\\inv_box_01",											-- The Ahn'Qiraj War Effort
 		[-539] = "Interface\\Icons\\Inv_hammer_25",											-- The Scepter of the Shifting Sands
 		[-540] = "Interface\\Icons\\inv_stone_02",											-- The Scourge Invasion
@@ -1234,9 +1233,7 @@ app.L = {
 		[-582] = app.asset("Expansion_WOTLK"),												-- Northrend Heroic Upgrade ("Cheap")
 		[-583] = app.asset("Expansion_WOTLK"),												-- Northrend Epic Upgrade
 		[-584] = app.asset("Expansion_DF"),													-- Dragonflight Seasonal Promotions
-		[-585] = "Interface\\Icons\\DiabloAnniversary_HoradricCube",						-- Diablo IV
 		[-586] = 136101,																	-- Amazon Prime Gaming
-		[-600] = "Interface\\Icons\\DiabloAnniversary_HoradricCube",						-- Diablo Events
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1691,7 +1688,6 @@ app.L = {
 		[-534] = "Collector's Edition",											-- Collector's Edition
 		[-535] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
 		[-536] = "Hearthstone Mercenaries",										-- Hearthstone Mercenaries
-		[-537] = "Diablo 20th Anniversary",										-- Diablo 20th Anniversary
 		[-538] = "The Ahn'Qiraj War Effort",									-- The Ahn'Qiraj War Effort
 		[-539] = "The Scepter of the Shifting Sands",							-- The Scepter of the Shifting Sands
 		[-540] = "The Scourge Invasion",										-- The Scourge Invasion
@@ -1717,9 +1713,7 @@ app.L = {
 		[-582] = "WotLK Classic Northrend Heroic Upgrade",						-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "WotLK Classic Northrend Epic Upgrade",						-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "Dragonflight Seasonal Promotions",							-- Dragonflight Seasonal Promotions
-		[-585] = "Diablo IV",													-- Diablo IV
 		[-586] = "Amazon Prime Gaming",											-- Amazon Prime Gaming
-		[-600] = "Diablo Events",												-- Diablo Events
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons

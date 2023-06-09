@@ -1,8 +1,32 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root(ROOTS.Promotions, n(-600, {	-- Diablo Events
-	n(-537, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Diablo 20th Anniversary
+-- #if AFTER 7.1.0.22908
+DIABLO_EVENTS = createHeader({
+	readable = "Diablo Events",
+	icon = "Interface\\Icons\\DiabloAnniversary_HoradricCube",
+	text = {
+		en = "Diablo Events",
+		ru = "События Diablo",
+	},
+});
+DIABLO_TWENTIETH_ANNIVERSARY = createHeader({
+	readable = "Diablo 20th Anniversary",
+	-- #if ANYCLASSIC
+	icon = [[_.asset("diabloanniversary_achievement")]],
+	-- #else
+	icon = "Interface\\Icons\\diabloanniversary_achievement",
+	-- #endif
+	text = {
+		en = "Diablo 20th Anniversary",
+		de = "20. Geburtstag von Diablo",
+		fr = "20e anniversaire de Diablo",
+		ru = "20-ая годовщина Diablo",
+		cn = "暗黑破坏神20周年庆",
+	},
+});
+root(ROOTS.Promotions, n(DIABLO_EVENTS, {
+	n(DIABLO_TWENTIETH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["timeline"] = { "added 7.1.0.22908" },
 		["maps"] = { DUSKWOOD },
 		["groups"] = {
@@ -46,7 +70,7 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 			}),
 		},
 	})),
-	n(-585, bubbleDown({ ["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.99999" } }, { -- Diablo IV
+	n(DIABLO_IV, bubbleDown({ ["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.99999" } }, {
 		-- Event begins on May 25, 2023, and ends on June 13, 2023.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -103,9 +127,12 @@ root(ROOTS.Promotions, n(-600, {	-- Diablo Events
 		},
 	})),
 }));
+-- #endif
 
+-- #if AFTER 10.1.0
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	n(-600, {
+	n(DIABLO_EVENTS, {
 		q(76216),	-- 'Bonus loot' if Tyrael's Charger unlearned / first goblin kill per day for account
 	}),
 }));
+-- #endif

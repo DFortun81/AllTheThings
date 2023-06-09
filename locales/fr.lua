@@ -752,7 +752,6 @@ for key,value in pairs({
 		[-533] = "Hearthstone",										-- Hearthstone
 		[-534] = "Edition Collector",								-- Collector's Edition
 		[-536] = "Hearthstone Mercenaires",							-- Hearthstone Mercenaries
-		[-537] = "20e anniversaire de Diablo",						-- Diablo 20th Anniversary
 		[-538] = "Effort de guerre d’Ahn'Qiraj",					-- The Ahn'Qiraj War Effort
 		[-539] = "Le Sceptre des Sables changeants",				-- The Scepter of the Shifting Sands
 		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
@@ -762,10 +761,6 @@ for key,value in pairs({
 		[-579] = "Passe Porte des ténèbres",						-- Dark Portal Pass
 		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
 		[-581] = "Édition BC Classic Deluxe",						-- TBC Classic Deluxe Edition
-		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
-		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
-		--TODO: [-584] = "Dragonflight Seasonal Promotions",		-- Dragonflight Seasonal Promotions
-		--TODO: [-600] = "Diablo Events",							-- Diablo Events
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Équipement Aspirant",							-- Aspirant PvP Gear (WoD, BfA)

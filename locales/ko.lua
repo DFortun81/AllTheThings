@@ -727,32 +727,12 @@ for key,value in pairs({
 		[-398] = "전쟁터: 불모의 땅",										-- Battlefield: Barrens
 	-- Classic
 		[-423] = "4인 기사단",											-- The Four Horsemen
-	-- BFA War Chest
-		--TODO: [-488] = "War Chest",								-- Daily War Chest
-	-- Misc
-		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
-	-- Blizzard Events and Anniversaries
-		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
-		--TODO: [-522] = "Zalazane's Fall",												-- Zalazane's Fall
-		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
-		--TODO: [-532] = "Heroes of the Storm",						-- Heroes of the Storm
-		--TODO: [-533] = "Hearthstone",								-- Hearthstone
-		--TODO: [-534] = "Collector's Edition",						-- Collector's Edition
-		--TODO: [-536] = "Hearthstone Mercenaries",					-- Hearthstone Mercenaries
-		--TODO: [-537] = "Diablo 20th Anniversary",					-- Diablo 20th Anniversary
-		--TODO: [-538] = "The Ahn'Qiraj War Effort",				-- The Ahn'Qiraj War Effort
 		[-539] = "흐르는 모래의 홀",										-- The Scepter of the Shifting Sands
 		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
 		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "어둠의 문 열기",										-- The Opening of the Dark Portal
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 		[-579] = "다크 포털 패스",										-- Dark Portal Pass
-		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
-		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
-		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
-		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
-		--TODO: [-584] = "Dragonflight Seasonal Promotions",		-- Dragonflight Seasonal Promotions
-		--TODO: [-600] = "Diablo Events",							-- Diablo Events
 	-- Chests
 		[-851] = "검은 제국 보관함",										-- Black Empire Cache
 	-- Heart of Azeroth

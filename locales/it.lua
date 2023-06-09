@@ -727,20 +727,7 @@ for key,value in pairs({
 		[-398] = "Campo di battaglia: le Savane",					-- Battlefield: Barrens
 	-- Classic
 		[-423] = "I Cavalieri dell'Apocalisse",						-- The Four Horsemen
-	-- BFA War Chest
-		--TODO: [-488] = "War Chest",								-- Daily War Chest
-	-- Misc
-		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
-	-- Blizzard Events and Anniversaries
-		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
-		--TODO: [-522] = "Zalazane's Fall",												-- Zalazane's Fall
-		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
-		--TODO: [-532] = "Heroes of the Storm",						-- Heroes of the Storm
-		--TODO: [-533] = "Hearthstone",								-- Hearthstone
-		--TODO: [-534] = "Collector's Edition",						-- Collector's Edition
 		[-536] = "Hearthstone Mercenari",							-- Hearthstone Mercenaries
-		--TODO: [-537] = "Diablo 20th Anniversary",					-- Diablo 20th Anniversary
-		--TODO: [-538] = "The Ahn'Qiraj War Effort",				-- The Ahn'Qiraj War Effort
 		[-539] = "Scettro delle Sabbie Mutevoli",					-- The Scepter of the Shifting Sands
 		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
 		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow

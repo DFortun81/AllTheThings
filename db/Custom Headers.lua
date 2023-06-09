@@ -19,8 +19,8 @@ _.HeaderConstants = {
 	VENDORS = -1000010,
 	WORLD_BOSSES = -1000011,
 	ZONE_DROPS = -1000012,
-	HONOR_TITLES = -1000013,
-	PVP = -1000014,
+	HONOR_TITLES = -1000014,
+	PVP = -1000015,
 };
 
 local a = L.HEADER_ICONS;
@@ -38,19 +38,22 @@ for key,value in pairs({
 	[-1000010] = _.asset("Interface_Vendor"),
 	[-1000011] = _.asset("Interface_World_boss"),
 	[-1000012] = _.asset("Interface_Zone_drop"),
-	[-1000013] = "Interface/Icons/inv_sword_48",
-	[-1000014] = _.asset("Category_PvP"),
-	[-1000015] = "Interface/Icons/achievement_featsofstrength_gladiator_01",
-	[-1000016] = "Interface/Icons/achievement_featsofstrength_gladiator_02",
-	[-1000017] = "Interface/Icons/achievement_featsofstrength_gladiator_03",
-	[-1000018] = "Interface/Icons/achievement_featsofstrength_gladiator_04",
-	[-1000019] = "Interface/Icons/ability_mount_redfrostwyrm_01",
+	[-1000013] = "Interface/Icons/DiabloAnniversary_HoradricCube",
+	[-1000014] = "Interface/Icons/inv_sword_48",
+	[-1000015] = _.asset("Category_PvP"),
+	[-1000016] = "Interface/Icons/achievement_featsofstrength_gladiator_01",
+	[-1000017] = "Interface/Icons/achievement_featsofstrength_gladiator_02",
+	[-1000018] = "Interface/Icons/achievement_featsofstrength_gladiator_03",
+	[-1000019] = "Interface/Icons/achievement_featsofstrength_gladiator_04",
 	[-1000020] = "Interface/Icons/ability_mount_redfrostwyrm_01",
 	[-1000021] = "Interface/Icons/ability_mount_redfrostwyrm_01",
 	[-1000022] = "Interface/Icons/ability_mount_redfrostwyrm_01",
 	[-1000023] = "Interface/Icons/ability_mount_redfrostwyrm_01",
-	[-1000024] = "Interface/Icons/INV_Chest_Plate03",
-	[-1000025] = "Interface/Icons/inv_jewelry_amulet_03",
+	[-1000024] = "Interface/Icons/ability_mount_redfrostwyrm_01",
+	[-1000025] = "Interface/Icons/INV_Chest_Plate03",
+	[-1000026] = "Interface/Icons/DiabloAnniversary_HoradricCube",
+	[-1000027] = "Interface/Icons/diabloanniversary_achievement",
+	[-1000028] = "Interface/Icons/inv_jewelry_amulet_03",
 }) do a[key] = value; end
 
 local a = L.HEADER_NAMES;
@@ -68,44 +71,48 @@ for key,value in pairs({
 	[-1000010] = TUTORIAL_TITLE20,
 	[-1000011] = WORLD.." "..RAID_BOSSES,
 	[-1000012] = ZONE.." "..BATTLE_PET_SOURCE_1,
-	[-1000013] = HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES,
-	[-1000014] = BUG_CATEGORY14,
-	[-1000015] = select(2, GetAchievementInfo(2091))..": Season 1",
-	[-1000016] = select(2, GetAchievementInfo(418))..": Season 2",
-	[-1000017] = select(2, GetAchievementInfo(419))..": Season 3",
-	[-1000018] = select(2, GetAchievementInfo(420))..": Season 4",
-	[-1000019] = select(2, GetAchievementInfo(3336))..": Season 5",
-	[-1000020] = "Hateful Gladiator",
-	[-1000021] = select(2, GetAchievementInfo(3436))..": Season 6",
-	[-1000022] = select(2, GetAchievementInfo(3758))..": Season 7",
-	[-1000023] = select(2, GetAchievementInfo(4599))..": Season 8",
-	[-1000024] = "Tier 0.5 Sets",
-	[-1000025] = C_PetJournal.GetPetInfoBySpeciesID(179),
+	[-1000013] = "Diablo IV",
+	[-1000014] = HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES,
+	[-1000015] = BUG_CATEGORY14,
+	[-1000016] = select(2, GetAchievementInfo(2091))..": Season 1",
+	[-1000017] = select(2, GetAchievementInfo(418))..": Season 2",
+	[-1000018] = select(2, GetAchievementInfo(419))..": Season 3",
+	[-1000019] = select(2, GetAchievementInfo(420))..": Season 4",
+	[-1000020] = select(2, GetAchievementInfo(3336))..": Season 5",
+	[-1000021] = "Hateful Gladiator",
+	[-1000022] = select(2, GetAchievementInfo(3436))..": Season 6",
+	[-1000023] = select(2, GetAchievementInfo(3758))..": Season 7",
+	[-1000024] = select(2, GetAchievementInfo(4599))..": Season 8",
+	[-1000025] = "Tier 0.5 Sets",
+	[-1000026] = "Diablo Events",
+	[-1000027] = "Diablo 20th Anniversary",
+	[-1000028] = C_PetJournal.GetPetInfoBySpeciesID(179),
 }) do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
 	[-1000009] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
-	[-1000025] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
+	[-1000028] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
 }) do a[key] = value; end
 
 local a = L.HEADER_LORE;
 for key,value in pairs({
-	[-1000024] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
+	[-1000025] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
 }) do a[key] = value; end
 
 if simplifiedLocale == "de" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1000001] = "Gemeinsame Bossbeute",
-	[-1000020] = "Hasserfüllten Gladiator",
+	[-1000021] = "Hasserfüllten Gladiator",
+	[-1000027] = "20. Geburtstag von Diablo",
 }) do a[key] = value; end
 end
 
 if simplifiedLocale == "es" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
-	[-1000020] = "Gladiador Odioso",
+	[-1000021] = "Gladiador Odioso",
 }) do a[key] = value; end
 end
 
@@ -113,37 +120,38 @@ if simplifiedLocale == "fr" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1000002] = "Objets communs des vendeurs",
-	[-1000015] = select(2, GetAchievementInfo(2091))..": Saison 1",
-	[-1000016] = select(2, GetAchievementInfo(418))..": Saison 2",
-	[-1000017] = select(2, GetAchievementInfo(419))..": Saison 3",
-	[-1000018] = select(2, GetAchievementInfo(420))..": Saison 4",
-	[-1000019] = select(2, GetAchievementInfo(3336))..": Saison 5",
-	[-1000020] = "Gladiateur Haineux",
-	[-1000021] = select(2, GetAchievementInfo(3436))..": Saison 6",
-	[-1000022] = select(2, GetAchievementInfo(3758))..": Saison 7",
-	[-1000023] = select(2, GetAchievementInfo(4599))..": Saison 8",
-	[-1000024] = "Ensembles Tier 0.5",
+	[-1000016] = select(2, GetAchievementInfo(2091))..": Saison 1",
+	[-1000017] = select(2, GetAchievementInfo(418))..": Saison 2",
+	[-1000018] = select(2, GetAchievementInfo(419))..": Saison 3",
+	[-1000019] = select(2, GetAchievementInfo(420))..": Saison 4",
+	[-1000020] = select(2, GetAchievementInfo(3336))..": Saison 5",
+	[-1000021] = "Gladiateur Haineux",
+	[-1000022] = select(2, GetAchievementInfo(3436))..": Saison 6",
+	[-1000023] = select(2, GetAchievementInfo(3758))..": Saison 7",
+	[-1000024] = select(2, GetAchievementInfo(4599))..": Saison 8",
+	[-1000025] = "Ensembles Tier 0.5",
+	[-1000027] = "20e anniversaire de Diablo",
 }) do a[key] = value; end
 end
 
 if simplifiedLocale == "it" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
-	[-1000020] = "Gladiatore Perfido",
+	[-1000021] = "Gladiatore Perfido",
 }) do a[key] = value; end
 end
 
 if simplifiedLocale == "ko" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
-	[-1000020] = "원한에 검투사",
+	[-1000021] = "원한에 검투사",
 }) do a[key] = value; end
 end
 
 if simplifiedLocale == "pt" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
-	[-1000020] = "Gladiador Odioso",
+	[-1000021] = "Gladiador Odioso",
 }) do a[key] = value; end
 end
 
@@ -156,16 +164,18 @@ for key,value in pairs({
 	[-1000008] = "Редкие",
 	[-1000011] = "Мировые Боссы",
 	[-1000012] = "Добыча локации",
-	[-1000015] = select(2, GetAchievementInfo(2091))..": Сезон 1",
-	[-1000016] = select(2, GetAchievementInfo(418))..": Сезон 2",
-	[-1000017] = select(2, GetAchievementInfo(419))..": Сезон 3",
-	[-1000018] = select(2, GetAchievementInfo(420))..": Сезон 4",
-	[-1000019] = select(2, GetAchievementInfo(3336))..": Сезон 5",
-	[-1000020] = "Злобный гладиатор",
-	[-1000021] = select(2, GetAchievementInfo(3436))..": Сезон 6",
-	[-1000022] = select(2, GetAchievementInfo(3758))..": Сезон 7",
-	[-1000023] = select(2, GetAchievementInfo(4599))..": Сезон 8",
-	[-1000024] = "Комплекты T0.5",
+	[-1000016] = select(2, GetAchievementInfo(2091))..": Сезон 1",
+	[-1000017] = select(2, GetAchievementInfo(418))..": Сезон 2",
+	[-1000018] = select(2, GetAchievementInfo(419))..": Сезон 3",
+	[-1000019] = select(2, GetAchievementInfo(420))..": Сезон 4",
+	[-1000020] = select(2, GetAchievementInfo(3336))..": Сезон 5",
+	[-1000021] = "Злобный гладиатор",
+	[-1000022] = select(2, GetAchievementInfo(3436))..": Сезон 6",
+	[-1000023] = select(2, GetAchievementInfo(3758))..": Сезон 7",
+	[-1000024] = select(2, GetAchievementInfo(4599))..": Сезон 8",
+	[-1000025] = "Комплекты T0.5",
+	[-1000026] = "События Diablo",
+	[-1000027] = "20-ая годовщина Diablo",
 }) do a[key] = value; end
 end
 
@@ -174,16 +184,18 @@ a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1000002] = "常规商人物品",
 	[-1000010] = "商人",
-	[-1000015] = select(2, GetAchievementInfo(2091)).."：第1赛季",
-	[-1000016] = select(2, GetAchievementInfo(418)).."：第2赛季",
-	[-1000017] = select(2, GetAchievementInfo(419)).."：第3赛季",
-	[-1000018] = select(2, GetAchievementInfo(420)).."：第4赛季",
-	[-1000019] = select(2, GetAchievementInfo(3336)).."：第5赛季",
-	[-1000020] = "憎恨角斗士",
-	[-1000021] = select(2, GetAchievementInfo(3436)).."：第6赛季",
-	[-1000022] = select(2, GetAchievementInfo(3758)).."：第7赛季",
-	[-1000023] = select(2, GetAchievementInfo(4599)).."：第8赛季",
-	[-1000024] = "等级 0.5 套装",
+	[-1000013] = "暗黑破坏神IV",
+	[-1000016] = select(2, GetAchievementInfo(2091)).."：第1赛季",
+	[-1000017] = select(2, GetAchievementInfo(418)).."：第2赛季",
+	[-1000018] = select(2, GetAchievementInfo(419)).."：第3赛季",
+	[-1000019] = select(2, GetAchievementInfo(420)).."：第4赛季",
+	[-1000020] = select(2, GetAchievementInfo(3336)).."：第5赛季",
+	[-1000021] = "憎恨角斗士",
+	[-1000022] = select(2, GetAchievementInfo(3436)).."：第6赛季",
+	[-1000023] = select(2, GetAchievementInfo(3758)).."：第7赛季",
+	[-1000024] = select(2, GetAchievementInfo(4599)).."：第8赛季",
+	[-1000025] = "等级 0.5 套装",
+	[-1000027] = "暗黑破坏神20周年庆",
 }) do a[key] = value; end
 end
 

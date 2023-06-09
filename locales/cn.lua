@@ -758,7 +758,6 @@ for key,value in pairs({
 		[-533] = "炉石传说",											-- Hearthstone
 		[-534] = "典藏版",												-- Collector's Edition
 		[-536] = "炉石传说佣兵战纪",										-- Hearthstone Mercenaries
-		[-537] = "暗黑破坏神20周年庆",										-- Diablo 20th Anniversary
 		[-538] = "安其拉之战捐献",											-- The Ahn'Qiraj War Effort
 		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
 		[-540] = "天灾入侵",											-- The Scourge Invasion
@@ -781,8 +780,6 @@ for key,value in pairs({
 		[-582] = "巫妖王之怒经典怀旧服诺森德英雄礼包",			-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "巫妖王之怒经典怀旧服诺森德史诗礼包",			-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "巨龙时代季节性促销",			-- Dragonflight Seasonal Promotions
-		[-585] = "暗黑破坏神IV",													-- Diablo IV
-		--TODO: [-600] = "Diablo Events",							-- Diablo Events
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
