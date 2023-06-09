@@ -3959,7 +3959,7 @@ namespace ATT
             {
                 return builder.Append(value.Substring(1).Replace("\n", "\\n").Replace("\r", "\\r")).Append(",");
             }
-            else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(")
+            else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(") || value.StartsWith("C_")
                 || value.StartsWith("_."))
             {
                 return builder.Append(value.Replace("\n", "\\n").Replace("\r", "\\r")).Append(",");
@@ -4573,7 +4573,7 @@ namespace ATT
 
 #if RETAIL
                 CurrentParseStage = ParseStage.ExportAutoSources;
-                Objects.ExportAutoItemSources(Config["root-data"]);
+                Objects.ExportAutoItemSources(Config["root-data"] ?? "./DATAS");
                 CurrentParseStage = ParseStage.ExportAutoLocale;
                 Objects.ExportAutoLocale(outputFolder.FullName);
 #endif

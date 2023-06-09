@@ -1243,7 +1243,7 @@ end");
 
             public static void ExportAutoItemSources(string directory)
             {
-                var sourcesDir = Path.Combine(directory, "DATAS", "00 - Item Database", "Source IDs");
+                var sourcesDir = Path.Combine(directory, "00 - Item Database", "Source IDs");
                 var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
 
                 foreach (string sourceFile in Directory.EnumerateFiles(sourcesDir, "*.lua"))

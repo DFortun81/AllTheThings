@@ -7,6 +7,7 @@ local simplifiedLocale = string.sub(GetLocale(),1,2);
 
 local a = L.HEADER_ICONS;
 for key,value in pairs({
+	[-1000004] = "Interface\Icons\inv_jewelry_amulet_03",
 	[-1000003] = _.asset("Interface_Zone_drop"),
 	[-1000002] = _.asset("Interface_Vendor"),
 	[-1000001] = _.asset("Interface_Rewards"),
@@ -15,6 +16,7 @@ for key,value in pairs({
 
 local a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000004] = C_PetJournal.GetPetInfoBySpeciesID(179),
 	[-1000003] = ZONE.." "..BATTLE_PET_SOURCE_1,
 	[-1000002] = TUTORIAL_TITLE20,
 	[-1000001] = QUEST_REWARDS,
@@ -23,6 +25,7 @@ for key,value in pairs({
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
+	[-1000004] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
 	[-1000001] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
 }) do a[key] = value; end
 

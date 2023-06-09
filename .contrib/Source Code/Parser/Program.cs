@@ -52,7 +52,7 @@ namespace ATT
 #if ANYCLASSIC
                 string databaseRootFolder = "../.db";
 #else
-                string databaseRootFolder = Framework.Config["root-data"] ?? ".";
+                string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
 #endif
 
 
@@ -80,10 +80,10 @@ namespace ATT
                 while (Errored);
 
                 // Load all of the Lua files into the database.
-                var mainFileName = $"{databaseRootFolder}\\_main.lua";
+                var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";
                 var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
                 // Do not iterate over the header file.
-                if (!luaFiles.Remove(mainFileName))
+                if (!File.Exists(mainFileName))
                 {
                     Trace.WriteLine("Could not find the '_main.lua' header file.");
                     Trace.WriteLine("Operation cannot continue without it.");
@@ -145,6 +145,21 @@ namespace ATT
                     ParseLUAFile(lua, fileName);
                 }
 
+                try
+                {
+                    // Try to grab the contents of the global variable "CustomHeaders".
+                    var customHeaders = lua.GetTable("CustomHeaders");
+                    if (customHeaders != null)
+                    {
+                        Framework.CustomHeaders = Framework.ParseAsDictionary<long>(customHeaders);
+                        Trace.WriteLine($"Found {Framework.CustomHeaders.Count} Custom Headers...");
+                    }
+                }
+                catch (Exception e)
+                {
+                    Trace.WriteLine(e);
+                }
+
                 Framework.CurrentParseStage = ParseStage.PreProcessingSetup;
                 do
                 {
@@ -163,21 +178,6 @@ namespace ATT
                     }
                 }
                 while (true);
-
-                try
-                {
-                    // Try to grab the contents of the global variable "CustomHeaders".
-                    var customHeaders = lua.GetTable("CustomHeaders");
-                    if (customHeaders != null && customHeaders.Keys.Count > 0)
-                    {
-                        Trace.WriteLine($"Found {customHeaders.Keys.Count} Custom Headers...");
-                        Framework.CustomHeaders = Framework.ParseAsDictionary<long>(customHeaders);
-                    }
-                }
-                catch(Exception e)
-                {
-                    Trace.WriteLine(e);
-                }
                 lua.Close();
 
                 // Now that all of the data and items have been loaded into the Database, let's Process it!
