@@ -667,14 +667,11 @@ do a[key] = value; end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
-		--TODO: [-7] = WORLD.." "..RAID_BOSSES,						-- World Bosses
-		--TODO: [-11] = "Common Box Drops",							-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [Est - Démons]",			-- Warpwood Quarter [East - Demon]
 		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [Nord - Ogres]",			-- Gordok Commons [North - Ogres]
 		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [Ouest - Elfes]",		-- Capital Gardens [West - Elves]
 		[-15] = "Exploration",										-- Exploration
 		[-19] = "Dragons du Cauchemar",								-- Dragons of Nightmare
-		[-20] = "Objets communs des vendeurs",						-- Common Vendor Items
 		[-21] = "Capitaines",										-- Captains
 		[-22] = "Secrets",											-- Secrets
 		[-23] = "Objet commun de donjon",							-- WoD Common Dungeon Drop

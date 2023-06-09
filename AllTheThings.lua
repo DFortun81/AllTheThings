@@ -1555,11 +1555,11 @@ local function BuildSourceText(group, l)
 	if parent then
 		-- From ATT-Classic .. needs some modification to handle Retail source depths
 		-- if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID))
-		-- 	and ((parent.headerID == -2 or parent.headerID == -17 or parent.headerID == -7) or (parent.parent and parent.parent.parent)))) then
+		-- 	and ((parent.headerID == app.HeaderConstants.VENDORS or parent.headerID == app.HeaderConstants.QUESTS or parent.headerID == app.HeaderConstants.WORLD_BOSSES) or (parent.parent and parent.parent.parent)))) then
 		-- 	return BuildSourceText(parent.sourceParent or parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
 		-- end
 		-- if group.headerID then
-		-- 	if group.headerID == 0 then
+		-- 	if group.headerID == app.HeaderConstants.ZONE_DROPS then
 		-- 		if group.crs and #group.crs == 1 then
 		-- 			return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (app.NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
 		-- 		end
@@ -3027,9 +3027,9 @@ do
 local SkipAutoExpands = {
 	-- Specific HeaderID values should not expand
 	headerID = {
-		[0] = true,	-- Zone Drops
-		[-1] = true,	-- Common Boss Drops
-		[-3] = true	-- Holiday
+		[app.HeaderConstants.ZONE_DROPS] = true,
+		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
+		[app.HeaderConstants.HOLIDAYS] = true
 	},
 	-- Item/Difficulty as Headers should not expand
 	itemID = true,
@@ -3642,7 +3642,7 @@ local SubroutineCache = {
 	["tw_instance"] = function(finalized, searchResults, o, cmd, instanceID)
 		local select, pop, where, push, finalize = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.push, ResolveFunctions.finalize;
 		select(finalized, searchResults, o, "select", "itemID", 133543);	-- Infinite Timereaver
-		push(finalized, searchResults, o, "push", "headerID", -1);	-- Push into 'Common Boss Drops' header
+		push(finalized, searchResults, o, "push", "headerID", app.HeaderConstants.COMMON_BOSS_DROPS);	-- Push into 'Common Boss Drops' header
 		finalize(finalized, searchResults);	-- capture current results
 		select(finalized, searchResults, o, "select", "instanceID", instanceID);	-- select this instance
 		where(finalized, searchResults, o, "where", "u", 1016);	-- only the instance which is marked as TIMEWALKING
@@ -3705,7 +3705,7 @@ local SubroutineCache = {
 		pop(finalized, searchResults);	-- Discard the War Effort Header and acquire the children.
 		where(finalized, searchResults, o, "where", "mapID", 14);	-- Arathi Highlands
 		pop(finalized, searchResults);	-- Discard the Map Header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", -1);	-- Select the Common Boss Drop Header.
+		where(finalized, searchResults, o, "where", "headerID", app.HeaderConstants.COMMON_BOSS_DROPS);	-- Select the Common Boss Drop Header.
 		pop(finalized, searchResults);	-- Discard the Common Boss Drop Header and acquire the children.
 		is(finalized, searchResults, o, "is", "itemID");	-- Only Items!
 		invtype(finalized, searchResults, o, "invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE");	-- Only Head, Shoulders, and Chest items. (azerite)
@@ -5299,10 +5299,10 @@ local function DetermineSymlinkGroups(group)
 	end
 end
 local NPCExpandHeaders = {
-	[-1] = true,	-- COMMON_BOSS_DROPS
-	[-20] = true,	-- COMMON_VENDOR_ITEMS
+	[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
+	[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
 	[-26] = true,	-- DROPS
-	[0] = true,		-- ZONE_DROPS
+	[app.HeaderConstants.ZONE_DROPS] = true,
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group)
@@ -5542,8 +5542,8 @@ app.ThingKeys = {
 };
 local SpecificSources = {
 	["headerID"] = {
-		[-1] = true,	-- COMMON_BOSS_DROPS
-		[-20] = true,	-- COMMON_VENDOR_ITEMS
+		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
+		[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
 		[-26] = true,	-- DROPS
 	},
 };
@@ -13025,7 +13025,7 @@ local npcFields = {
 	end,
 
 	["iconAsDefault"] = function(t)
-		return (t.parent and t.parent.headerID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
+		return (t.parent and t.parent.headerID == app.HeaderConstants.VENDORS and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
 	end,
 	["nameAsAchievement"] = function(t)
@@ -18027,7 +18027,7 @@ function app:GetDataCache()
 		tinsert(g, DynamicCategory(db, "toyID"));
 
 		-- Various Quest groups
-		local quests = app.CreateNPC(-17);
+		local quests = app.CreateNPC(app.HeaderConstants.QUESTS);
 		quests.sourceIgnored = true;
 		quests.g = {};
 		quests.parent = primeData;
@@ -18155,10 +18155,7 @@ function app:GetDataCache()
 
 	-- Achievements
 	if app.Categories.Achievements then
-		db = app.CreateNPC(-4);
-		db.g = app.Categories.Achievements;
-		db.text = TRACKER_HEADER_ACHIEVEMENTS;
-		db.icon = app.asset("Category_Achievements")
+		db = app.CreateNPC(app.HeaderConstants.ACHIEVEMENTS, app.Categories.Achievements);
 		tinsert(g, db);
 	end
 
@@ -18175,11 +18172,8 @@ function app:GetDataCache()
 
 	-- Holidays
 	if app.Categories.Holidays then
-		db = app.CreateNPC(-3);
-		db.g = app.Categories.Holidays;
-		db.icon = app.asset("Category_Holidays");
+		db = app.CreateNPC(app.HeaderConstants.HOLIDAYS, app.Categories.Holidays);
 		db.isHolidayCategory = true;
-		db.text = GetItemSubClassInfo(15,3);
 		tinsert(g, db);
 	end
 
@@ -18595,10 +18589,10 @@ function app:GetDataCache()
 					end
 
 					if GetRelativeValue(o, "isHolidayCategory") then
-						header = headers[-3];
+						header = headers[app.HeaderConstants.HOLIDAYS];
 						if not header then
-							header = app.CreateNPC(-3);
-							headers[-3] = header;
+							header = app.CreateNPC(app.HeaderConstants.HOLIDAYS);
+							headers[app.HeaderConstants.HOLIDAYS] = header;
 							tinsert(self.g, header);
 							header.parent = self;
 							header.g = {};
@@ -18625,7 +18619,7 @@ function app:GetDataCache()
 							header.parent = self;
 							header.g = {};
 						end
-					elseif o.parent.headerID == 0 or o.parent.headerID == -1 or o.parent.headerID == -82 or GetRelativeValue(o, "isWorldDropCategory") then
+					elseif o.parent.headerID == app.HeaderConstants.ZONE_DROPS or o.parent.headerID == app.HeaderConstants.COMMON_BOSS_DROPS or o.parent.headerID == -82 or GetRelativeValue(o, "isWorldDropCategory") then
 						header = headers["drop"];
 						if not header then
 							header = {};
@@ -18637,11 +18631,11 @@ function app:GetDataCache()
 							header.g = {};
 						end
 					elseif o.parent.key == "npcID" then
-						if GetRelativeValue(o, "headerID") == -2 then
-							header = headers[-2];
+						if GetRelativeValue(o, "headerID") == app.HeaderConstants.VENDORS then
+							header = headers[app.HeaderConstants.VENDORS];
 							if not header then
-								header = app.CreateNPC(-2);
-								headers[-2] = header;
+								header = app.CreateNPC(app.HeaderConstants.VENDORS);
+								headers[app.HeaderConstants.VENDORS] = header;
 								tinsert(self.g, header);
 								header.parent = self;
 								header.g = {};
@@ -19306,7 +19300,7 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 						app.CreateItemSource(102105, 165684),	-- Gurubashi Empire Greatcloak
 					},
 				}),
-				app.CreateNPC(-16, {	-- Rares
+				app.CreateNPC(app.HeaderConstants.RARES, {
 					app.CreateNPC(87622, {	-- Ogom the Mangler
 						['description'] = L["OGOM_THE_MANGLER_DESC"],
 						['g'] = {
@@ -19492,14 +19486,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		};
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
-		-- ACHIEVEMENTS = -4
-			[-4] = "achievementID",
+			[app.HeaderConstants.ACHIEVEMENTS] = "achievementID",
 		-- BONUS_OBJECTIVES = -221;
 			[-221] = true,
 		-- BUILDINGS = -99;
 			[-99] = true,
-		-- COMMON_BOSS_DROPS = -1;
-			[-1] = true,
+			[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
 		-- EMISSARY_QUESTS = -169;
 			[-169] = true,
 		-- FACTIONS = -6013;
@@ -19508,32 +19500,26 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			[-228] = "flightPathID",
 		-- HIDDEN_QUESTS = -999;	-- currently nested under 'Quests' due to Type
 		-- [-999] = true,
-		-- HOLIDAY = -3;
-			[-3] = "holidayID",
+			[app.HeaderConstants.HOLIDAYS] = "holidayID",
 		-- PROFESSIONS = -38;
 			[-38] = "professionID",
-		-- PVP = -9;
-			[-9] = true,
-		-- QUESTS = -17;
-			[-17] = "questID",
-		-- RARES = -16;
-			[-16] = true,
+			[app.HeaderConstants.PVP] = true,
+			[app.HeaderConstants.QUESTS] = "questID",
+			[app.HeaderConstants.RARES] = true,
 		-- SECRETS = -22;
 			[-22] = true,
 		-- SPECIAL = -77;
 			[-77] = true,
 		-- TREASURES = -212;
 			[-212] = "objectID",
-		-- VENDORS = -2;
-			[-2] = true,
+			[app.HeaderConstants.VENDORS] = true,
 		-- WEEKLY_HOLIDAYS = -176;
 			[-176] = true,
 		-- WORLD_QUESTS = -34;
 			[-34] = true,
 		-- ZONE_REWARDS = -903;
 			[-903] = true,
-		-- ZONE_DROPS = 0;
-			[0] = true,
+			[app.HeaderConstants.ZONE_DROPS] = true,
 		};
 		-- Headers possible in a hierarchy that should just be ignored
 		local ignoredHeaders = {
@@ -19687,11 +19673,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- 		for j,subgroup in ipairs(g) do
 				-- 			groupHeaderID = subgroup.headerID;
 				-- 			-- Common Boss Drops
-				-- 			if groupHeaderID == -1 then
+				-- 			if groupHeaderID == app.HeaderConstants.COMMON_BOSS_DROPS then
 				-- 				cbd = j;
 				-- 			end
 				-- 			-- Zone Drops
-				-- 			if groupHeaderID == 0 then
+				-- 			if groupHeaderID == app.HeaderConstants.ZONE_DROPS then
 				-- 				zd = j;
 				-- 			end
 				-- 		end
@@ -19744,7 +19730,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 									ExpandGroupsRecursively(row, false, true);
 								end
 							-- Zone Drops/Common Boss Drops should also be expanded within instances
-							-- elseif row.headerID == 0 or row.headerID == -1 then
+							-- elseif row.headerID == app.HeaderConstants.ZONE_DROPS or row.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
 							-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
 							end
 						end

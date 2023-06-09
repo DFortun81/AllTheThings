@@ -1,5 +1,6 @@
 VENDORS = createHeader({
 	readable = "Vendors",
+	constant = "VENDORS",
 	icon = [[_.asset("Interface_Vendor")]],
 	text = {
 		-- #if ANYCLASSIC

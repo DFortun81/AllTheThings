@@ -689,7 +689,6 @@ for key,value in pairs({
 		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [西 - 精灵]",				-- Capital Gardens [West - Elves]
 		[-15] = "勘探",												-- Exploration
 		[-19] = "梦魇之龙",												-- Dragons of Nightmare
-		[-20] = "常规商人物品",										-- Common Vendor Items
 		[-21] = "船长",												-- Captains
 		[-22] = "秘密",												-- Secrets
 		[-23] = "一般地下城掉落",											-- WoD Common Dungeon Drop

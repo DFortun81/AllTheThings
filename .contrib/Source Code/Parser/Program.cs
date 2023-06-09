@@ -151,8 +151,7 @@ namespace ATT
                     var customHeaders = lua.GetTable("CustomHeaders");
                     if (customHeaders != null)
                     {
-                        Framework.CustomHeaders = Framework.ParseAsDictionary<long>(customHeaders);
-                        Trace.WriteLine($"Found {Framework.CustomHeaders.Count} Custom Headers...");
+                        Framework.AssignCustomHeaders(Framework.ParseAsDictionary<long>(customHeaders));
                     }
                 }
                 catch (Exception e)

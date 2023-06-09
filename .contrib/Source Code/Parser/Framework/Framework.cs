@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
@@ -190,6 +191,11 @@ namespace ATT
         private static Dictionary<long, bool> CATEGORY_WITH_REFERENCES = new Dictionary<long, bool>();
 
         /// <summary>
+        /// All of the Custom Header Constants listed by their constant name and id value.
+        /// </summary>
+        private static Dictionary<string, long> CUSTOM_HEADER_CONSTANTS = new Dictionary<string, long>();
+
+        /// <summary>
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>
         private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new Dictionary<long, bool>();
@@ -266,6 +272,26 @@ namespace ATT
         {
             "sourceIgnored",
         };
+
+        /// <summary>
+        /// Assign the custom headers to the Framework's internal reference.
+        /// </summary>
+        /// <param name="headers">The headers.</param>
+        public static void AssignCustomHeaders(Dictionary<long, object> headers)
+        {
+            CustomHeaders = headers;
+            Trace.WriteLine($"Found {headers.Count} Custom Headers...");
+            foreach (var pair in headers)
+            {
+                if (pair.Value is Dictionary<string, object> header)
+                {
+                    if (header.TryGetValue("constant", out object value))
+                    {
+                        CUSTOM_HEADER_CONSTANTS[value.ToString()] = pair.Key;
+                    }
+                }
+            }
+        }
 
         private static HashSet<string> _autoLocalizeTypes;
         private static bool AutoLocalizeType(string type)
@@ -362,7 +388,7 @@ namespace ATT
         /// <summary>
         /// The CustomHeaders table from main.lua that is used to generate custom headers.
         /// </summary>
-        internal static Dictionary<long, object> CustomHeaders;
+        internal static Dictionary<long, object> CustomHeaders { get; private set; }
 
         /// <summary>
         /// Contains two Keys for sets of field names relating to a 'trackable' nature within ATT
@@ -2665,11 +2691,19 @@ namespace ATT
                 }
                 if (unsortedQuests.Count > 0)
                 {
-                    Objects.Merge(unsorted, new Dictionary<string, object>
+                    if (CUSTOM_HEADER_CONSTANTS.TryGetValue("QUESTS", out long value))
                     {
-                        { "npcID", -17 },
-                        { "g", unsortedQuests },
-                    });
+                        Objects.Merge(unsorted, new Dictionary<string, object>
+                        {
+                            { "npcID", value },
+                            { "g", unsortedQuests },
+                        });
+                    }
+                    else
+                    {
+                        Trace.WriteLine("ERROR: COULD NOT FIND CONSTANT VALUE FOR 'QUESTS'!");
+                        Objects.Merge(unsorted, unsortedQuests);
+                    }
                 }
             }
 
@@ -4367,6 +4401,7 @@ namespace ATT
                         .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
                     var keys = new List<long>();
                     var icons = new Dictionary<long, string>();
+                    var constants = new Dictionary<long, string>();
                     var localization = new Dictionary<string, Dictionary<long, string>>();
                     var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
                     foreach (var key in CustomHeaders.Keys)
@@ -4380,6 +4415,10 @@ namespace ATT
                             if (header.TryGetValue("icon", out object value))
                             {
                                 icons[key] = value.ToString();
+                            }
+                            if (header.TryGetValue("constant", out value))
+                            {
+                                constants[key] = value.ToString();
                             }
                             if (header.TryGetValue("text", out value))
                             {
@@ -4420,7 +4459,18 @@ namespace ATT
                         }
                         //}
                     }
-                    keys.Sort();
+                    keys.Sort(new Comparison<long>((i1, i2) => i2.CompareTo(i1)));
+
+                    builder.AppendLine("_.HeaderConstants = {");
+                    foreach (var key in keys)
+                    {
+                        if (constants.TryGetValue(key, out string constant))
+                        {
+                            builder.Append("\t").Append(constant).Append(" = ").Append(key).AppendLine(",");
+                        }
+                    }
+                    builder.AppendLine("};").AppendLine();
+
                     builder.AppendLine("local a = L.HEADER_ICONS;").AppendLine("for key,value in pairs({");
                     foreach (var key in keys)
                     {

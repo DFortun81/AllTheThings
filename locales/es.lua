@@ -671,22 +671,6 @@ do a[key] = value; end
 
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Commonly used
-		--TODO: [-7] = WORLD.." "..RAID_BOSSES,						-- World Bosses
-		--TODO: [-11] = "Common Box Drops",							-- Common Box Drops
-		--TODO: [-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",-- Warpwood Quarter [East - Demon]
-		--TODO: [-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",-- Gordok Commons [North - Ogres]
-		--TODO: [-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",	-- Capital Gardens [West - Elves]
-		--TODO: [-15] = "Exploration",								-- Exploration
-		--TODO: [-19] = "Dragons of Nightmare",						-- Dragons of Nightmare
-		--TODO: [-20] = "Common Vendor Items",						-- Common Vendor Items
-		--TODO: [-21] = "Captains",									-- Captains
-		--TODO: [-22] = "Secrets",									-- Secrets
-		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
-		--TODO: [-26] = "Drops",									-- Drops
-		--TODO: [-27] = "Lower",									-- Lower (Blackrock Spire)
-		--TODO: [-28] = "Upper",									-- Upper (Blackrock Spire)
-		--TODO: [-41] = "Cache of Madness",
 	-- World Events
 		[-53] = "Festival del Fuego del Solsticio de Verano",		-- Midsummer Fire Festival
 		[-55] = "Día de los Piratas",								-- Pirates' Day

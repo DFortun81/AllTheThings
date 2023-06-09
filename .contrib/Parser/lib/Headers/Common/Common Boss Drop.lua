@@ -1,5 +1,6 @@
 COMMON_BOSS_DROPS = createHeader({
 	readable = "Common Boss Drop",
+	constant = "COMMON_BOSS_DROPS",
 	-- #if ANYCLASSIC
 	icon = [[_.asset("Achievement_Garrison_Horde_PVE")]],
 	-- #else

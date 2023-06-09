@@ -14,7 +14,6 @@ WINTERGRASP_BG = 1334;
 -- #endif
 
 -- PvP Headers
-PVP = -9;
 PVP_HONOR = -9983;
 PVP_ASPIRANT = -659;
 PVP_COMBATANT = -660;

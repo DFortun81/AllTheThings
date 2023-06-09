@@ -655,15 +655,12 @@ do a[key] = value; end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
-		[-7] = "Мировые Боссы",									-- World Bosses
 		[-11] = "Обычная добыча из Сундуков",					-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [Восток - Демоны]",	-- Warpwood Quarter [East - Demon]
 		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [Север - Огры]",		-- Gordok Commons [North - Ogres]
 		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [Запад - Эльфы]",	-- Capital Gardens [West - Elves]
 		[-15] = "Исследование",									-- Exploration
-		[-16] = "Редкие",										-- Rares
 		[-19] = "Драконы Кошмара",								-- Dragons of Nightmare
-		[-20] = "Обычные предметы у Торговцев",					-- Common Vendor Items
 		[-21] = "Капитаны",										-- Captains
 		[-22] = "Секреты",										-- Secrets
 		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop

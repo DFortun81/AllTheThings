@@ -3,14 +3,8 @@
 -------------------------------------------
 -- TODO: Reduce the number of custom headers and consolidate IDs
 -- Zone Headers --
-ACHIEVEMENTS = -4;
 BONUS_OBJECTIVES = -221;				-- Not used in Classic
 CAMPAIGN = -1099;						-- Not used in Classic
--- #if ANYCLASSIC
-COMMON_VENDOR_ITEMS = -3;
--- #else
-COMMON_VENDOR_ITEMS = -20;
--- #endif
 DROPS = -26;
 EMISSARY_QUESTS = -169;					-- Not used in Classic
 EXPLORATION = -15;
@@ -26,8 +20,6 @@ PARTY_SYNC = -11;
 -- #else
 PARTY_SYNC = -10;
 -- #endif
-QUESTS = -17;
-RARES = -16;
 SPECIAL = -77;
 TREASURES = -212;
 WEEKLY_HOLIDAYS = -176;					-- Not used in Classic
@@ -66,7 +58,6 @@ SETS = -1000;
 TITANFORGED = -355;
 
 -- D&R
-WORLD_BOSSES = -7;
 -- #if ANYCLASSIC
 BOSSES = -10;
 -- #else
@@ -177,7 +168,6 @@ CRAFTABLES = -42;
 MAILBOX = -297;
 TCG_HEADER = -535;
 IN_GAME_SHOP = -36;
-HOLIDAYS = -3;
 HEIRLOOMS = -365;
 AVAILABLE = -1204;
 UNAVAILABLE = -1205;

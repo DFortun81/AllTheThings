@@ -993,22 +993,13 @@ app.L = {
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
-		--[-] = "Interface\\Icons\\",														--
-	-- Commonly used
-		[-3] = app.asset("Category_Holidays"),												-- Holidays
-		[-4] = app.asset("Category_Achievements"),											-- Achievement
-		[-7] = app.asset("Interface_World_boss"),											-- World Bosses
-		[-9] = app.asset("Category_PvP"),													-- Player vs. Player
 		[-10] = "Interface\\Icons\\achievement_reputation_05",								-- Party Sync
 		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
 		[-12] = "Interface\\Icons\\Ability_Warlock_DemonicEmpowerment",						-- East entrance demons
 		[-13] = "Interface\\Icons\\Achievement_Reputation_Ogre",							-- North entrance ogres
 		[-14] = "Interface\\Icons\\INV_Misc_Head_Elf_02",									-- West entrace elves
 		[-15] = "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02",					-- Exploration
-		[-16] = app.asset("Interface_Rare"),												-- Rare
-		[-17] = app.asset("Interface_Quest_header"),										-- Quests
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
-		[-20] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
 		[-22] = app.asset("Category_Secrets"),												-- Secrets
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
@@ -1499,21 +1490,13 @@ app.L = {
 		[-123457] = "Interface\\Icons\\Inv_gauntlets_16",						-- Common Quality Items
 	};
 	["HEADER_NAMES"] = {
-	-- Commonly used
-		[-3] = GetItemSubClassInfo(15,3),										-- Holiday
-		[-4] = ACHIEVEMENTS,													-- Achievements
-		[-7] = WORLD.." "..RAID_BOSSES,											-- World Bosses
-		[-9] = BUG_CATEGORY14,													-- Player vs. Player
 		[-10] = SPLASH_BATTLEFORAZEROTH_8_2_5_FEATURE1_TITLE,					-- Party Sync
 		[-11] = "Common Box Drops",												-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",					-- Warpwood Quarter [East - Demon]
 		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",					-- Gordok Commons [North - Ogres]
 		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",						-- Capital Gardens [West - Elves]
 		[-15] = "Exploration",													-- Exploration
-		[-16] = BATTLE_PET_BREED_QUALITY4,										-- Rares
-		[-17] = TRACKER_HEADER_QUESTS,											-- Quests
 		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
-		[-20] = "Common Vendor Items",											-- Common Vendor Items
 		[-21] = "Captains",
 		[-22] = "Secrets",														-- Secrets
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
