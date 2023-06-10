@@ -1,7 +1,7 @@
 -------------------------------------------
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
-MOTE_OF_NASZURO_1 = createHeader({
+local MOTE_OF_NASZURO_INFO = {
 	readable = "Mote of Nasz'uro",
 	icon = "Interface\\Icons\\spell_holy_dizzy",
 	text = {
@@ -13,202 +13,23 @@ MOTE_OF_NASZURO_1 = createHeader({
 		ru = "Частица Наз'уро",
 		cn = "纳兹乌罗微粒",
 	},
-});
-MOTE_OF_NASZURO_2 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_3 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_4 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_5 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_6 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_7 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_8 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_9 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_10 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_11 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_12 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_13 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_14 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_15 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
-MOTE_OF_NASZURO_16 = createHeader({
-	readable = "Mote of Nasz'uro",
-	icon = "Interface\\Icons\\spell_holy_dizzy",
-	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
-	},
-});
+};
+MOTE_OF_NASZURO_1 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_2 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_3 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_4 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_5 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_6 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_7 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_8 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_9 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_10 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_11 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_12 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_13 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_14 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_15 = createHeader( MOTE_OF_NASZURO_INFO );
+MOTE_OF_NASZURO_16 = createHeader( MOTE_OF_NASZURO_INFO );
 root(ROOTS.Secrets, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	header(HEADERS.Item, 206040, {	-- Mote of Nasz'uro
 		n(REWARDS, {
