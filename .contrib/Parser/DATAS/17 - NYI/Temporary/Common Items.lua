@@ -5,7 +5,7 @@
 -- Never Implemented Common Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	n(-123457, {	-- Common
+	n(QUALITY_COMMON, {
 		tier(CLASSIC_TIER, {
 			-- NYI Classic Common Items
 			n(WEAPONS, {

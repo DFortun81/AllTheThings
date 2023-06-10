@@ -705,8 +705,6 @@ for key,value in pairs({
 		[-356] = "Атака на Темный портал",							-- Assault on the Dark Portal
 	-- Outposts in Draenor
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
-	-- Legendaries
-		[-364] = "Легендарные предметы",							-- Legendaries
 	-- Icecrown Citadel
 		[-393] = "Штурм цитадели",									-- Storming the Citadel
 		[-394] = "Чумодельня",										-- The Plagueworks

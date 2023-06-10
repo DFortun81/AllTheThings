@@ -17944,7 +17944,7 @@ function app:GetDataCache()
 		tinsert(g, DynamicCategory(db, "rwp"));
 
 		-- Artifacts (Dynamic)
-		local db = app.CreateNPC(-10067);
+		local db = app.CreateNPC(app.HeaderConstants.ARTIFACTS);
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "artifactID"));
 
@@ -18017,7 +18017,7 @@ function app:GetDataCache()
 		NestDynamicValueCategories(db, "professionID");
 
 		-- Runeforge Powers - Dynamic
-		-- local db = app.CreateNPC(-364);
+		-- local db = app.CreateNPC(app.HeaderConstants.LEGENDARIES);
 		-- db.name = db.name .. " (" .. EXPANSION_NAME8 .. ")";
 		-- db.parent = primeData;
 		-- tinsert(g, DynamicCategory(db, "runeforgePowerID"));

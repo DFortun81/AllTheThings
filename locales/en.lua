@@ -886,7 +886,7 @@ app.L = {
 		[106] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,				-- Holiday
 		[107] = "Vignettes",
 		[108] = ENABLE_MUSIC.." "..ROLL,						-- Music Rolls
-		[109] = HEIRLOOMS,										-- Heirlooms
+		[109] = HEIRLOOMS,										-- Heirlooms		-- NOTE: This shouldn't be a filter, it's extra
 		[110] = PAPERDOLL_SIDEBAR_TITLES,						-- Titles
 		[111] = GetItemClassInfo(16),							-- Glyph
 		[112] = FACTION,										-- Factions
@@ -939,6 +939,7 @@ app.L = {
 		[102] = app.asset("Category_ToyBox"),									-- Toy Box
 		[103] = "Interface\\Icons\\inv_inscription_weaponscroll03",				-- Illusions
 		[104] = app.asset("Interface_Quest_header"),							-- Quest Items
+		[109] = app.asset("Weapon_Type_Heirloom"),								-- Heirlooms
 		[110] = app.asset("Category_Titles"),									-- Titles
 		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",						-- Glyph
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",							-- Bag
@@ -1118,10 +1119,6 @@ app.L = {
 		[-363] = "Interface\\Icons\\achievement_reputation_argentchampion",					-- The Argent Tournament
 	-- Pre Class Hall Monk
 		[-362] = "Interface\\Icons\\ability_monk_legacyoftheemperor",						-- Peak of Serenity
-	-- Legendaries
-		[-364] = app.asset("Weapon_Type_Legendary"),										-- Legendaries
-	-- Heirlooms
-		[-365] = app.asset("Weapon_Type_Heirloom"),											-- Heirlooms
 	-- Naxxramas
 		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",							-- The Construct Quarter
 		[-368] = "Interface\\Icons\\inv_trinket_naxxramas04",								-- The Arachnid Quarter
@@ -1354,7 +1351,6 @@ app.L = {
 		[-10057] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",				-- War Effort
 		[-10058] = app.asset("Category_Zones"),										-- World
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
-		[-10067] = app.asset("Weapon_Type_Artifact"),								-- Artifacts
 	-- 8.3
 		[-10071] = "Interface\\Icons\\Paladin_Protection",							-- Vision of N'zotth
 		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault
@@ -1378,9 +1374,6 @@ app.L = {
 		[-2186] = app.asset("Expansion_LEGION"),								-- Patch 7.x.x
 		[-2187] = app.asset("Expansion_BFA"),									-- Patch 8.x.x
 		[-2188] = app.asset("Expansion_SL"),									-- Patch 9.x.x
-	-- Temporary headers for unsorted poor and common items
-		[-123456] = "Interface\\Icons\\Inv_chest_cloth_46",						-- Poor Quality Items
-		[-123457] = "Interface\\Icons\\Inv_gauntlets_16",						-- Common Quality Items
 	};
 	["HEADER_NAMES"] = {
 		[-11] = "Common Box Drops",												-- Common Box Drops
@@ -1508,10 +1501,6 @@ app.L = {
 		[-362] = DUNGEON_FLOOR_KUNLAISUMMITSCENARIO0,							-- Peak of Serenity
 	-- Argent Tournament
 		[-363] = select(1,GetCategoryInfo(14941)),								-- The Argent Tournament
-	-- Legendaries
-		[-364] = LOOT_JOURNAL_LEGENDARIES,										-- Legendaries
-	-- Heirlooms
-		[-365] = HEIRLOOMS,														-- Heirlooms
 	-- Naxxramas
 		[-367] = DUNGEON_FLOOR_NAXXRAMAS1,										-- The Construct Quarter
 		[-368] = DUNGEON_FLOOR_NAXXRAMAS2,										-- The Arachnid Quarter
@@ -1769,7 +1758,6 @@ app.L = {
 		[-10058] = WORLD,														-- World
 		[-10061] = select(2,GetAchievementInfo(7333)),							-- The Four Celestials
 		[-10066] = BATTLE_PET_BREED_QUALITY6,									-- "Legendary";
-		[-10067] = ITEM_QUALITY6_DESC,											-- Artifact
 	-- 8.3
 		[-10069] = SCENARIOS,													-- Scenarios
 		[-10071] = "Visions of N'Zoth",
@@ -1794,9 +1782,6 @@ app.L = {
 		[-2186] = "7.x.x",														-- Patch 7.x.x
 		[-2187] = "8.x.x",														-- Patch 8.x.x
 		[-2188] = "9.x.x",														-- Patch 9.x.x
-	-- Temporary headers for unsorted poor and common items
-		[-123456] = BATTLE_PET_BREED_QUALITY1,									-- Poor
-		[-123457] = BATTLE_PET_BREED_QUALITY2,									-- Common
 	};
 	["HEADER_DESCRIPTIONS"] = {};
 	["HEADER_LORE"] = {};
