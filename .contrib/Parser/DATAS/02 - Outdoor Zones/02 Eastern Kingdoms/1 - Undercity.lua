@@ -1626,10 +1626,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 70.1, 58.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(18949, {	-- Pattern: Barbaric Bracers
+						i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

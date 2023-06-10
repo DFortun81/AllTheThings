@@ -390,51 +390,6 @@ r(20650),	-- Thick Leather
 r(20853),	-- Corehound Boots
 r(20854),	-- Molten Helm
 r(20855),	-- Black Dragonscale Boots
-1.13.0.28211
-r(22331),	-- Rugged Leather
-r(22727),	-- Core Armor Kit
-r(22815),	-- Gordok Ogre Suit
-r(22921),	-- Girdle of Insight
-r(22922),	-- Mongoose Boots
-r(22923),	-- Swift Flight Bracers
-r(22926),	-- Chromatic Cloak
-r(22927),	-- Hide of the Wild
-r(22928),	-- Shifting Cloak
-r(23190),	-- Heavy Leather Ball
-r(23399),	-- Barbaric Bracers
-r(23703),	-- Might of the Timbermaw
-r(23704),	-- Timbermaw Brawlers
-r(23705),	-- Dawn Treaders
-r(23706),	-- Golden Mantle of the Dawn
-r(23707),	-- Lava Belt
-r(23708),	-- Chromatic Gauntlets
-r(23709),	-- Corehound Belt
-r(23710),	-- Molten Belt
-r(24121),	-- Primal Batskin Jerkin
-r(24122),	-- Primal Batskin Gloves
-r(24123),	-- Primal Batskin Bracers
-r(24124),	-- Blood Tiger Breastplate
-r(24125),	-- Blood Tiger Shoulders
-r(24654),	-- Blue Dragonscale Leggings
-r(24655),	-- Green Dragonscale Gauntlets
-r(24703),	-- Dreamscale Breastplate
-r(24846),	-- Spitfire Bracers
-r(24847),	-- Spitfire Gauntlets
-r(24848),	-- Spitfire Breastplate
-r(24849),	-- Sandstalker Bracers
-r(24850),	-- Sandstalker Gauntlets
-r(24851),	-- Sandstalker Breastplate
-r(24940),	-- Black Whelp Tunic
-r(26279),	-- Stormshroud Gloves
-r(28219),	-- Polar Tunic
-r(28220),	-- Polar Gloves
-r(28221),	-- Polar Bracers
-r(28222),	-- Icy Scale Breastplate
-r(28223),	-- Icy Scale Gauntlets
-r(28224),	-- Icy Scale Bracers
-r(28472),	-- Bramblewood Helm
-r(28473),	-- Bramblewood Boots
-r(28474),	-- Bramblewood Belt
 2.0.0.6080
 r(32454),	-- Knothide Leather
 r(32455),	-- Heavy Knothide Leather
@@ -1488,19 +1443,14 @@ r(309291),	-- Bonerivetted Pauldrons \\ Necrolord Scale Pauldrons
 r(309292),	-- Bonerivetted Waistguard \\ Necrolord Scale Waistguard
 r(309293),	-- Bonerivetted Armguards \\ Necrolord Scale Armguards
 10.1.5.49516
-r(413496),	-- Polar Helm
-r(413497),	-- Polar Spaulders
-r(413498),	-- Polar Belt
-r(413499),	-- Polar Leggings
-r(413500),	-- Polar Footwarmers
-r(413501),	-- Icy Scale Crown
-r(413502),	-- Icy Scale Shoulderpads
-r(413503),	-- Icy Scale Waistwrap
-r(413504),	-- Icy Scale Leggings
-r(413505),	-- Icy Scale Stompers
-r(413516),	-- Helm of Lingering Power
-r(413517),	-- Skyfury Headdress
-r(413738),	-- Nerubian Persuader
+
+
+
+
+
+
+
+r(206538, 413738),	-- Nerubian Persuader
 r(413756),	-- Displacement Boots
 r(413761),	-- Lucien's Lost Soles
 10.1.5.49824

@@ -1428,10 +1428,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"sub", "common_recipes_vendor", 3366},	-- Tamar <Leatherworking Supplies>
 					},
 					["groups"] = {
-						i(18949, {	-- Pattern: Barbaric Bracers
+						i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

@@ -348,7 +348,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
-				i(18252, {	-- Pattern: Core Armor Kit
+				i(18252, {	-- Pattern: Core Armor Kit (RECIPE!)
 					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar

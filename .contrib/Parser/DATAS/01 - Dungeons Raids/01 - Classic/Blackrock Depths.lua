@@ -2238,10 +2238,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					applyclassicphase(PHASE_THREE, i(19219, {	-- Pattern: Flarecore Robe
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					})),
-					applyclassicphase(PHASE_THREE, i(19330, {	-- Pattern: Lava Belt
+					applyclassicphase(PHASE_THREE, i(19330, {	-- Pattern: Lava Belt (RECIPE!)
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					})),
-					applyclassicphase(PHASE_THREE, i(19333, {	-- Pattern: Molten Belt
+					applyclassicphase(PHASE_THREE, i(19333, {	-- Pattern: Molten Belt (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
 					i(17023, {	-- Pattern: Molten Helm

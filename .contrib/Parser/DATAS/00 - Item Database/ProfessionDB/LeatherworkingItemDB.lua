@@ -38,9 +38,62 @@ end
 ------------------
 -- PATCH 1.11.1 --
 ------------------
--- ITEMS --
+-- ITEM --
+i(19772, 24124);	-- Blood Tiger Breastplate
+i(19773, 24125);	-- Blood Tiger Shoulders
+i(19769, 24121);	-- Primal Batskin Jerkin
+i(19770, 24122);	-- Primal Batskin Gloves
+i(19771, 24123);	-- Primal Batskin Bracers
 i(17722, 21943);	-- Gloves of the Greatfather
 i(18239, 22711);	-- Shadowskin Gloves
+i(21548, 26279);	-- Stormshroud Gloves
+
+------------------
+-- PATCH 1.13.0 --
+------------------
+-- TRAINER --
+i(0, 24654);	-- Blue Dragonscale Leggings
+i(0, 24655);	-- Green Dragonscale Gauntlets
+i(0, 22331);	-- Rugged Leather
+-- ITEM --
+i(18949, 23399);	-- Barbaric Bracers
+i(20576, 24940);	-- Black Whelp Tunic
+i(22769, 28474);	-- Bramblewood Belt
+i(22770, 28473);	-- Bramblewood Boots
+i(22771, 28472);	-- Bramblewood Helm
+i(18517, 22926);	-- Chromatic Cloak
+i(19331, 23708);	-- Chromatic Gauntlets
+i(18252, 22727);	-- Core Armor Kit
+i(19332, 23709);	-- Corehound Belt
+i(19328, 23705);	-- Dawn Treaders
+i(20382, 24703);	-- Dreamscale Breastplate
+i(18514, 22921);	-- Girdle of Insight
+i(19329, 23706);	-- Golden Mantle of the Dawn
+i(18731, 23190);	-- Heavy Leather Ball
+i(18518, 22927);	-- Hide of the Wild
+i(19330, 23707);	-- Lava Belt
+i(19326, 23703);	-- Might of the Timbermaw
+i(19333, 23710);	-- Molten Belt
+i(18515, 22922);	-- Mongoose Boots
+i(20511, 24851);	-- Sandstalker Breastplate
+i(20509, 24849);	-- Sandstalker Bracers
+i(20510, 24850);	-- Sandstalker Gauntlets
+i(18519, 22928);	-- Shifting Cloak
+i(20508, 24848);	-- Spitfire Breastplate
+i(20506, 24846);	-- Spitfire Bracers
+i(20507, 24847);	-- Spitfire Gauntlets
+i(18516, 22923);	-- Swift Flight Bracers
+i(19327, 23704);	-- Timbermaw Brawlers
+-- SPECIAL --
+i(0, 22815);	-- Gordok Ogre Suit
+-- UNSURE --
+i(0, 28224);	-- Icy Scale Bracers
+i(0, 28222);	-- Icy Scale Breastplate
+i(0, 28223);	-- Icy Scale Gauntlets
+i(0, 28221);	-- Polar Bracers
+i(0, 28220);	-- Polar Gloves
+i(0, 28219);	-- Polar Tunic
+
 
 ------------------
 -- PATCH 8.0.1 --
@@ -105,8 +158,6 @@ i(162413, 256781);	-- Mistscale Knuckles [Rank 3] (A)
 i(162767, 256781);	-- Mistscale Knuckles [Rank 3] (H)
 i(162412, 256789);	-- Recurve Bow of the Strands [Rank 3] (A)
 i(162766, 256789);	-- Recurve Bow of the Strands [Rank 3] (H)
-
-
 
 ------------------
 -- PATCH 8.1.0 --
@@ -650,6 +701,22 @@ i(204969, 406266);	-- Spore Colony Shoulderguards
 ------------------
 -- PATCH 10.1.5 --
 ------------------
--- TRAINER --
 -- ITEM --
+i(206556, 413756);	-- Displacement Boots
+i(206529, 413516);	-- Helm of Lingering Power
+i(206411, 413501);	-- Icy Scale Crown
+i(206417, 413504);	-- Icy Scale Leggings
+i(206412, 413502);	-- Icy Scale Shoulderpads
+i(206418, 413505);	-- Icy Scale Stompers
+i(206416, 413503);	-- Icy Scale Waistwrap
+i(206772, 414565);	-- Languished Leather
+i(206561, 413761);	-- Lucien's Lost Soles
+i(206538, 413738);	-- Nerubian Persuader
+i(206408, 413498);	-- Polar Belt
+i(206410, 413500);	-- Polar Footwarmers
+i(206403, 413496);	-- Polar Helm
+i(206409, 413499);	-- Polar Leggings
+i(206404, 413497);	-- Polar Spaulders
 i(207577, 416692);	-- Sanctified Leather Hat
+i(206773, 414566);	-- Scourged Scales
+i(206530, 413517);	-- Skyfury Headdress

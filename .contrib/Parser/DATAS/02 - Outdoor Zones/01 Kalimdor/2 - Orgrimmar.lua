@@ -6838,7 +6838,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
-						i(18731, {	-- Pattern: Heavy Leather Ball
+						i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
 							["isLimited"] = true,
 						}),
 					}),

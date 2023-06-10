@@ -1446,7 +1446,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(20576, {	-- Pattern: Black Whelp Tunic
+						i(20576, {	-- Pattern: Black Whelp Tunic (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5772, {	-- Pattern: Red Woolen Bag

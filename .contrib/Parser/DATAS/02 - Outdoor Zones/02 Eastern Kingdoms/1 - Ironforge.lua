@@ -1307,7 +1307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = { {"sub", "common_recipes_vendor", 3366} }, -- Tamar <Leatherworking Supplies>
 					-- #endif
 					["groups"] = {
-						i(18731, {	-- Pattern: Heavy Leather Ball
+						i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

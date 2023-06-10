@@ -2711,16 +2711,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.6, 49.8, SILITHUS },
 					-- #endif
 					["groups"] = {
-						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22769)),	-- Pattern: Bramblewood Belt
-						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22770)),	-- Pattern: Bramblewood Boots
-						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22771)),	-- Pattern: Bramblewood Helm
-						applyclassicphase(PHASE_FOUR, i(20382)),	-- Pattern: Dreamscale Breastplate
-						applyclassicphase(PHASE_FOUR, i(20509)),	-- Pattern: Sandstalker Bracers
-						applyclassicphase(PHASE_FOUR, i(20511)),	-- Pattern: Sandstalker Breastplate
-						applyclassicphase(PHASE_FOUR, i(20510)),	-- Pattern: Sandstalker Gauntlets
-						applyclassicphase(PHASE_FOUR, i(20506)),	-- Pattern: Spitfire Bracers
-						applyclassicphase(PHASE_FOUR, i(20508)),	-- Pattern: Spitfire Breastplate
-						applyclassicphase(PHASE_FOUR, i(20507)),	-- Pattern: Spitfire Gauntlets
+						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22769)),	-- Pattern: Bramblewood Belt (RECIPE!)
+						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22770)),	-- Pattern: Bramblewood Boots (RECIPE!)
+						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22771)),	-- Pattern: Bramblewood Helm (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20382)),	-- Pattern: Dreamscale Breastplate (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20509)),	-- Pattern: Sandstalker Bracers (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20511)),	-- Pattern: Sandstalker Breastplate (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20510)),	-- Pattern: Sandstalker Gauntlets (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20506)),	-- Pattern: Spitfire Bracers (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20508)),	-- Pattern: Spitfire Breastplate (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20507)),	-- Pattern: Spitfire Gauntlets (RECIPE!)
 					},
 				}),
 				n(15174, {	-- Calandrath <Innkeeper>

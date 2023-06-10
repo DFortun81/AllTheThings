@@ -1423,17 +1423,17 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 						-- #endif
 						["groups"] = {
-							i(18414),	-- Pattern: Belt of the Archmage
-							i(18517),	-- Pattern: Chromatic Cloak
-							i(18418),	-- Pattern: Cloak of Warding
-							i(18415),	-- Pattern: Felcloth Gloves
-							i(18514),	-- Pattern: Girdle of Insight
-							i(18518),	-- Pattern: Hide of the Wild
-							i(18416),	-- Pattern: Inferno Gloves
-							i(18515),	-- Pattern: Mongoose Boots
-							i(18417),	-- Pattern: Mooncloth Gloves
-							i(18519),	-- Pattern: Shifting Cloak
-							i(18516),	-- Pattern: Swift Flight Bracers
+							i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
+							i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
+							i(18418),	-- Pattern: Cloak of Warding (RECIPE!)
+							i(18415),	-- Pattern: Felcloth Gloves (RECIPE!)
+							i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
+							i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
+							i(18416),	-- Pattern: Inferno Gloves (RECIPE!)
+							i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
+							i(18417),	-- Pattern: Mooncloth Gloves (RECIPE!)
+							i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
+							i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
 							-- #if BEFORE 4.0.3
 							i(18240),	-- Ogre Tannin
 							-- #endif

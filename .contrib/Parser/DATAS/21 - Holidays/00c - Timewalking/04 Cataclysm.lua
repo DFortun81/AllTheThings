@@ -149,7 +149,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),
-					i(21548, {	-- Pattern: Stormshroud Gloves
+					i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),
