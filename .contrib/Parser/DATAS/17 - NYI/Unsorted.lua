@@ -759,7 +759,6 @@ root(ROOTS.Unsorted, {
 			i(205258),	-- Everburning Shadowflame
 			i(205259),	-- Order Soul
 			i(205260),	-- Fleeting Glowspores
-			i(206040),	-- Mote of Nasz'uro
 			i(206163),	-- Temporal Gossamer
 			i(206164),	-- Weak Resonating Vestigial
 			i(206165),	-- Major Resonating Vestigial
@@ -1673,22 +1672,6 @@ root(ROOTS.Unsorted, {
 				q(75623),	--
 				q(75659),	--
 				q(76087),	--
-				q(76178),	--
-				q(76179),	--
-				q(76180),	--
-				q(76181),	--
-				q(76182),	--
-				q(76183),	--
-				q(76184),	--
-				q(76185),	--
-				q(76186),	--
-				q(76187),	--
-				q(76188),	--
-				q(76189),	--
-				q(76190),	--
-				q(76191),	--
-				q(76192),	--
-				q(76193),	--
 				-- 10.1.0.49741
 				q(72943),	--
 				q(75054),	--

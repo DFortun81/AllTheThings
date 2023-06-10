@@ -71,10 +71,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					--	},
 					--}),
 				})),
-				n(TREASURES, {
-					-- Need to add all treasures...
-					i(206040),	-- Mote of Nasz'uro (PET!)
-				}),
 			}),
 			n(ACHIEVEMENTS, {
 				ach(18163, {	-- Discarded Works
