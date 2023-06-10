@@ -26,7 +26,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					["g"] = {
 						i(110040),	-- Crushto's Neck Separator
 						i(110000),	-- Crushto's Runic Alarm
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110040),	-- Crushto's Neck Separator
 							i(110000),	-- Crushto's Runic Alarm
 						})),
@@ -51,7 +51,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					["g"] = {
 						i(110041),	-- Roltall's Brutal Crescent
 						i(110015),	-- Toria's Unseeing Eye
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110041),	-- Roltall's Brutal Crescent
 							i(110015),	-- Toria's Unseeing Eye
 						})),
@@ -69,7 +69,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						i(110042),	-- Gug'rokk's Smasher
 						i(110044),	-- Ogre Dinner Plate
 						i(110043),	-- Gug'rokk's Grandmother
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110042),	-- Gug'rokk's Smasher
 							i(110044),	-- Ogre Dinner Plate
 							i(110043),	-- Gug'rokk's Grandmother

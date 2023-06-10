@@ -1,43 +1,7 @@
 -------------------------------------------
 --     C U S T O M   H E A D E R S       --
 -------------------------------------------
--- TODO: Reduce the number of custom headers and consolidate IDs
--- Zone Headers --
-CAMPAIGN = -1099;						-- Not used in Classic
-EMISSARY_QUESTS = -169;					-- Not used in Classic
-HIDDEN_QUESTS = -999;					-- Not used in Classic
-WEEKLY_HOLIDAYS = -176;					-- Not used in Classic
-
--- Factions
--- #if ANYCLASSIC
-FACTION_HEADER_NEUTRAL = -29;
-FACTION_HEADER_ALLIANCE = -30;
-FACTION_HEADER_HORDE = -31;
--- #else
-FACTION_HEADER_NEUTRAL = -9912;
-FACTION_HEADER_ALLIANCE = -9914;
-FACTION_HEADER_HORDE = -9913;
--- #endif
-
--- Slot Categories
-HEAD = -320;
-SHOULDER = -321;
-BACK = -322;
-CHEST = -323;
-WRIST = -326;
-HANDS = -327;
-WAIST = -328;
-LEGS = -329;
-FEET = -330;
-NECK = -384;
-FINGER = -385;
-TRINKET = -386;
-RELICS = -387;
--- Meta Slot
-ARMOR = -318;
-WEAPONS = -319;
 SETS = -1000;
-TITANFORGED = -355;
 
 -- D&R
 SCENARIOS = -10069;
@@ -63,7 +27,6 @@ LEGENDARIES = -364;
 LEGENDARY_QUESTLINE = -10066;
 	-- WoD
 	GARRISONS = -9966;
-	BUILDINGS = -99;
 	FOLLOWERS = -101;
 	-- Legion
 	ARTIFACTS = -10067;

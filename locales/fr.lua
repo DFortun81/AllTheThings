@@ -833,7 +833,6 @@ do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
-	[-169] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
 	[-799] = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
 })
 do a[key] = value; end

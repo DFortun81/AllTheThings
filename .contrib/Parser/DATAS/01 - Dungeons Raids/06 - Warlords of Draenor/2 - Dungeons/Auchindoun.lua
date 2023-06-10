@@ -25,7 +25,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					},
 					["g"] = {
 						i(110045),	-- Kamui's Crystalline Staff of Wizardry
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110045),	-- Kamui's Crystalline Staff of Wizardry
 						})),
 					},
@@ -39,7 +39,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					["g"] = {
 						i(110046),	-- Hammer of the Soulbinder
 						i(110047),	-- Soulcutter Mageblade
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110046),	-- Hammer of the Soulbinder
 							i(110047),	-- Soulcutter Mageblade
 						})),
@@ -54,7 +54,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					["g"] = {
 						i(110048),	-- Azzakel's Boltslinger
 						i(109995),	-- Blood Seal of Azzakel
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110048),	-- Azzakel's Boltslinger
 							i(109995),	-- Blood Seal of Azzakel
 						})),
@@ -73,7 +73,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						i(110050),	-- Dagger of the Sanguine Emeralds
 						i(110005),	-- Crystalline Blood Drop
 						i(110010),	-- Mote of Corruption
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110049),	-- Bloodblade of Teron'Gor
 							i(110050),	-- Dagger of the Sanguine Emeralds
 							i(110005),	-- Crystalline Blood Drop

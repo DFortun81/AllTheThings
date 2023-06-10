@@ -680,8 +680,6 @@ for key,value in pairs({
 		[-87] = "Оружейная",
 		[-88] = "Собор",
 		[-90] = "Элитный",										-- Elite
-	-- Garrisons
-		[-99] = "Строения",
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-130] = "Сумеречный лес - активен",						-- Duskwood Active
 		[-131] = "Внутренние земли - активен",						-- The Hinterlands Active
@@ -855,7 +853,6 @@ do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
-	[-169] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
 	[-799] = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
 })
 do a[key] = value; end

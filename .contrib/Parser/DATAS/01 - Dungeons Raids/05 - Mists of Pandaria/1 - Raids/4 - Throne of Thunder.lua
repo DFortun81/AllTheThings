@@ -202,7 +202,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 				i(95219),	-- Spiderweb Tabi
 				i(95222),	-- Spiritbound Boots
 				i(95216),	-- Vaultwalker Sabatons
-				n(TITANFORGED, {
+				n(THUNDERFORGED, {
 					i(96333),	-- Abandoned Zandalari Firecord
 					i(96334),	-- Abandoned Zandalari Shadowgirdle
 					i(96342),	-- Abandoned Zandalari Silentbelt
@@ -630,7 +630,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							68397,	-- Lei Shen
 						},
 						["g"] = {
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96242),	-- Abandoned Spaulders of Arrowflight
 								i(96243),	-- Abandoned Spaulders of Renewal
 								i(96249),	-- Bo-Ris, Horror in the Night
@@ -702,7 +702,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94728),	-- Spearman's Jingling Leggings
 							i(94725),	-- Static-Shot Shoulderguards
 							i(94722),	-- Worldbreaker's Stormscythe
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96007),	-- Al'set's Tormented Leggings
 								i(96003),	-- Bracers of Constant Implosion
 								i(96002),	-- Chestplate of Violent Detonation
@@ -752,7 +752,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94750),	-- Vaccinator's Armwraps
 							i(94755),	-- Venomlord's Totemic Wand
 							i(94748),	-- Wastewalker's Sandblasted Drape
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96036),	-- Armplates of the Vanquished Abomination
 								i(96020),	-- Bindings of Multiplicative Strikes
 								i(96023),	-- Bloodlord's Bloodsoaked Legplates
@@ -802,7 +802,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94513),	-- Wushoolay's Final Choice
 							i(94761),	-- Zandalari Robes of the Final Rite
 							i(94758),	-- Zerat, Malakk's Soulburning Greatsword
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96042),	-- Amun-Thoth, Sul's Spiritrending Talons
 								i(96037),	-- Bad Juju
 								i(96049),	-- Fortitude of the Zandalari
@@ -843,7 +843,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94778),	-- Tortos' Discarded Shell
 							i(94787),	-- Tortos' Shellseizers
 							i(94786),	-- Vampire Bat-Hide Bracers
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96057),	-- Amulet of the Primal Turtle
 								i(96060),	-- Azure Shell Bracers
 								i(96053),	-- Beady-Eye Bracers
@@ -906,7 +906,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94789),	-- Rot-Proof Greatplate
 							i(94799),	-- Sandals of Arcane Fury
 							i(94795),	-- Spinescale Seal
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96083),	-- Breath of the Hydra
 								i(96087),	-- Chain of Consuming Magic
 								i(96082),	-- Fetish of the Hydra
@@ -948,7 +948,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94812),	-- Pinionfeather Greatcloak
 							i(94806),	-- Robe of Midnight Down
 							i(94810),	-- Talonrender Chestplate
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96090),	-- Cord of Cacophonous Cawing
 								i(96095),	-- Crown of Potentiated Birth
 								i(96097),	-- Egg-Shard Grips
@@ -987,7 +987,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94927),	-- Sandals of the Starving Eye
 							i(94817),	-- Treads of the Blind Eye
 							i(94926),	-- Vein-Cover Bracers
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96103),	-- Aberrant Chestguard of Torment
 								i(96107),	-- Artery Rippers
 								i(96104),	-- Caustic Spike Bracers
@@ -1036,7 +1036,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94525),	-- Stolen Relic of Zuldazar
 							i(94943),	-- Synapse-String Handguards
 							i(94522),	-- Talisman of Bloodlust
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96130),	-- Acid-Spine Bonemace
 								i(96128),	-- Band of the Scaled Tyrant
 								i(96125),	-- Black Blood Legplates
@@ -1155,7 +1155,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94959),	-- Hood of the Crimson Wake
 							i(94956),	-- Matter-Swapped Legplates
 							i(94962),	-- Worldbinder Leggings
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96148),	-- Anima-Ringed Fingers
 								i(96146),	-- Athame of the Sanguine Ritual
 								i(96144),	-- Cha-Ye's Essence of Brilliance
@@ -1204,7 +1204,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94966),	-- Saddle-Scarred Leggings
 							i(94967),	-- Spurs of the Storm Cavalry
 							i(94963),	-- Voice of the Quilen
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96156),	-- Dam'ren's Frozen Footguards
 								i(96152),	-- Iron Qon's Boot Knife
 								i(96158),	-- Orb of Arcing Lightning
@@ -1240,7 +1240,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(94974),	-- Suen-Wo, Spire of the Falling Sun
 							i(94976),	-- Tidal Force Treads
 							i(94973),	-- Wu-Lai, Bladed Fan of the Consorts
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96168),	-- Bracers of the Midnight Comet
 								i(96173),	-- Fingers of the Night
 								i(96171),	-- Gaze of the Twins
@@ -1292,7 +1292,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(95472),	-- Ultimate Protection of the Emperor
 							i(94524),	-- Unerring Vision of Lei Shen
 							i(94982),	-- Uroe, Harbinger of Terror
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96177),	-- Conduit-Breaker Chain Leggings
 								i(96178),	-- Doomed Crown of Lei Shen
 								i(96176),	-- Fusion Slasher Chestguard
@@ -1350,7 +1350,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							68397,	-- Lei Shen
 						},
 						["g"] = {
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96986),	-- Abandoned Spaulders of Arrowflight
 								i(96987),	-- Abandoned Spaulders of Renewal
 								i(96993),	-- Bo-Ris, Horror in the Night
@@ -1422,7 +1422,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96371),	-- Spearman's Jingling Leggings
 							i(96372),	-- Static-Shot Shoulderguards
 							i(96376),	-- Worldbreaker's Stormscythe
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96751),	-- Al'set's Tormented Leggings
 								i(96747),	-- Bracers of Constant Implosion
 								i(96746),	-- Chestplate of Violent Detonation
@@ -1472,7 +1472,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96400),	-- Vaccinator's Armwraps
 							i(96404),	-- Venomlord's Totemic Wand
 							i(96389),	-- Wastewalker's Sandblasted Drape
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96780),	-- Armplates of the Vanquished Abomination
 								i(96764),	-- Bindings of Multiplicative Strikes
 								i(96767),	-- Bloodlord's Bloodsoaked Legplates
@@ -1522,7 +1522,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96413),	-- Wushoolay's Final Choice
 							i(96412),	-- Zandalari Robes of the Final Rite
 							i(96419),	-- Zerat, Malakk's Soulburning Greatsword
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96786),	-- Amun-Thoth, Sul's Spiritrending Talons
 								i(96781),	-- Bad Juju
 								i(96793),	-- Fortitude of the Zandalari
@@ -1563,7 +1563,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96436),	-- Tortos' Discarded Shell
 							i(96441),	-- Tortos' Shellseizers
 							i(96437),	-- Vampire Bat-Hide Bracers
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96801),	-- Amulet of the Primal Turtle
 								i(96804),	-- Azure Shell Bracers
 								i(96797),	-- Beady-Eye Bracers
@@ -1615,7 +1615,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96447),	-- Rot-Proof Greatplate
 							i(96450),	-- Sandals of Arcane Fury
 							i(96448),	-- Spinescale Seal
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96827),	-- Breath of the Hydra
 								i(96831),	-- Chain of Consuming Magic
 								i(96826),	-- Fetish of the Hydra
@@ -1657,7 +1657,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96461),	-- Pinionfeather Greatcloak
 							i(96463),	-- Robe of Midnight Down
 							i(96468),	-- Talonrender Chestplate
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96834),	-- Cord of Cacophonous Cawing
 								i(96839),	-- Crown of Potentiated Birth
 								i(96841),	-- Egg-Shard Grips
@@ -1696,7 +1696,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96488),	-- Sandals of the Starving Eye
 							i(96478),	-- Treads of the Blind Eye
 							i(96489),	-- Vein-Cover Bracers
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96847),	-- Aberrant Chestguard of Torment
 								i(96851),	-- Artery Rippers
 								i(96848),	-- Caustic Spike Bracers
@@ -1745,7 +1745,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96507),	-- Stolen Relic of Zuldazar
 							i(96495),	-- Synapse-String Handguards
 							i(96492),	-- Talisman of Bloodlust
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96874),	-- Acid-Spine Bonemace
 								i(96872),	-- Band of the Scaled Tyrant
 								i(96869),	-- Black Blood Legplates
@@ -1791,7 +1791,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96515),	-- Hood of the Crimson Wake
 							i(96521),	-- Matter-Swapped Legplates
 							i(96519),	-- Worldbinder Leggings
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96892),	-- Anima-Ringed Fingers
 								i(96890),	-- Athame of the Sanguine Ritual
 								i(96888),	-- Cha-Ye's Essence of Brilliance
@@ -1829,7 +1829,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96527),	-- Saddle-Scarred Leggings
 							i(96531),	-- Spurs of the Storm Cavalry
 							i(96525),	-- Voice of the Quilen
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96900),	-- Dam'ren's Frozen Footguards
 								i(96896),	-- Iron Qon's Boot Knife
 								i(96902),	-- Orb of Arcing Lightning
@@ -1865,7 +1865,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96539),	-- Suen-Wo, Spire of the Falling Sun
 							i(96542),	-- Tidal Force Treads
 							i(96535),	-- Wu-Lai, Bladed Fan of the Consorts
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96912),	-- Bracers of the Midnight Comet
 								i(96917),	-- Fingers of the Night
 								i(96915),	-- Gaze of the Twins
@@ -1911,7 +1911,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 							i(96554),	-- Ultimate Protection of the Emperor
 							i(96558),	-- Unerring Vision of Lei Shen
 							i(96553),	-- Uroe, Harbinger of Terror
-							n(TITANFORGED, {
+							n(THUNDERFORGED, {
 								i(96921),	-- Conduit-Breaker Chain Leggings
 								i(96922),	-- Doomed Crown of Lei Shen
 								i(96920),	-- Fusion Slasher Chestguard

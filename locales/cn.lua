@@ -708,8 +708,6 @@ for key,value in pairs({
 		[-87] = "武器库",												-- Armory
 		[-88] = "修道院",												-- Cathedral
 	-- Garrisons
-		[-99] = "建筑",												-- Buildings
-	-- Garrison
 		[-152] = "要塞战役",											-- Garrison Campaign
 	-- Class Trial
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."（直升）",	-- Level 50 (Boost)
@@ -882,7 +880,6 @@ end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
-	[-169] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
 	[-799] = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
 })
 do a[key] = value; end

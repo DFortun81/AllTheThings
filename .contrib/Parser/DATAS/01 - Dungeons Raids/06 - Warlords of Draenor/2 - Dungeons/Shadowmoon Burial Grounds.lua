@@ -25,7 +25,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					},
 					["g"] = {
 						i(110035),	-- Sadana's Grisly Visage
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110035),	-- Sadana's Grisly Visage
 						})),
 					},
@@ -39,7 +39,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					["g"] = {
 						i(110036),	-- Nhallish's Bloody Polearm
 						i(110007),	-- Voidmender's Shadowgem
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110036),	-- Nhallish's Bloody Polearm
 							i(110007),	-- Voidmender's Shadowgem
 						})),
@@ -54,7 +54,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					["g"] = {
 						i(110037),	-- Bonetooth Longbow
 						i(110012),	-- Bonemaw's Big Toe
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110037),	-- Bonetooth Longbow
 							i(110012),	-- Bonemaw's Big Toe
 						})),
@@ -72,7 +72,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						i(138806),	-- Illusion: Mark of Shadowmoon
 						i(110039),	-- Portal-Ripper's Staff
 						i(110038),	-- Ner'zhul's Ritual Blade
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110039),	-- Portal-Ripper's Staff
 							i(110038),	-- Ner'zhul's Ritual Blade
 						})),

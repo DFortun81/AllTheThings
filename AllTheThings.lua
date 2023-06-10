@@ -3586,7 +3586,7 @@ local SubroutineCache = {
 		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
 		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Set header
 		pop(finalized, searchResults);	-- Discard the Set header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", -319);	-- Select the "Weapons" header.
+		where(finalized, searchResults, o, "where", "headerID", app.HeaderConstants.WEAPONS);	-- Select the "Weapons" header.
 		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
 	end,
 	["pvp_weapons_faction_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3)
@@ -3599,7 +3599,7 @@ local SubroutineCache = {
 		pop(finalized, searchResults);	-- Discard the Faction header and acquire the children.
 		where(finalized, searchResults, o, "where", "headerID", headerID3);	-- Select the Set header
 		pop(finalized, searchResults);	-- Discard the Set header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", -319);	-- Select the "Weapons" header.
+		where(finalized, searchResults, o, "where", "headerID", app.HeaderConstants.WEAPONS);	-- Select the "Weapons" header.
 		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
 	end,
 	-- Common Northrend/Cataclysm Recipes Vendor
@@ -19483,15 +19483,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		local topHeaders = {
 			[app.HeaderConstants.ACHIEVEMENTS] = "achievementID",
 			[app.HeaderConstants.BONUS_OBJECTIVES] = true,
-		-- BUILDINGS = -99;
-			[-99] = true,
+			[app.HeaderConstants.BUILDINGS] = true,
 			[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
-		-- EMISSARY_QUESTS = -169;
-			[-169] = true,
+			[app.HeaderConstants.EMISSARY_QUESTS] = true,
 			[app.HeaderConstants.FACTIONS] = "factionID",
 			[app.HeaderConstants.FLIGHT_PATHS] = "flightPathID",
-		-- HIDDEN_QUESTS = -999;	-- currently nested under 'Quests' due to Type
-		-- [-999] = true,
 			[app.HeaderConstants.HOLIDAYS] = "holidayID",
 			[app.HeaderConstants.PROFESSIONS] = "professionID",
 			[app.HeaderConstants.PVP] = true,
@@ -19501,8 +19497,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			[app.HeaderConstants.SPECIAL] = true,
 			[app.HeaderConstants.TREASURES] = "objectID",
 			[app.HeaderConstants.VENDORS] = true,
-		-- WEEKLY_HOLIDAYS = -176;
-			[-176] = true,
+			[app.HeaderConstants.WEEKLY_HOLIDAYS] = true,
 			[app.HeaderConstants.WORLD_QUESTS] = true,
 			[app.HeaderConstants.ZONE_REWARDS] = true,
 			[app.HeaderConstants.ZONE_DROPS] = true,

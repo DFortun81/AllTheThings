@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109856),	-- Incarnadine Gauntlets
 					i(109860),	-- Rivet-Sealed Crushers
 					i(109857),	-- Verdant Plate Grips
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109861),	-- Felflame Grips
 						i(109845),	-- Frost-Touched Gloves
 						i(109847),	-- Lightbinder Gloves
@@ -84,7 +84,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109837),	-- Incarnadine Girdle
 					i(109841),	-- Rivet-Sealed Waistplate
 					i(109838),	-- Verdant Plate Belt
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109827),	-- Lightbinder Girdle
@@ -128,7 +128,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109818),	-- Incarnadine Legplates
 					i(109822),	-- Rivet-Sealed Legplates
 					i(109819),	-- Verdant Plate Legguards
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109808),	-- Felflame Legwraps
 						i(109805),	-- Frost-Touched Legwraps
 						i(109807),	-- Lightbinder Leggings
@@ -172,7 +172,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109892),	-- Incarnadine Breastplate
 					i(109896),	-- Rivet-Sealed Breastplate
 					i(109893),	-- Verdant Plate Chest
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109903),	-- Felflame Robes
 						i(109900),	-- Frost-Touched Robes
 						i(109902),	-- Lightbinder Robes
@@ -216,7 +216,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109793),	-- Incarnadine Greaves
 					i(109803),	-- Rivet-Sealed Treads
 					i(109794),	-- Verdant Plate Treads
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109797),	-- Felflame Sandals
 						i(109785),	-- Frost-Touched Boots
 						i(109796),	-- Lightbinder Treads
@@ -260,7 +260,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109985),	-- Incarnadine Greathelm
 					i(109989),	-- Rivet-Sealed Casque
 					i(109986),	-- Verdant Plate Crown
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109974),	-- Felflame Hood
 						i(109971),	-- Frost-Touched Hood
 						i(109973),	-- Lightbinder Cover
@@ -304,7 +304,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109876),	-- Incarnadine Bracers
 					i(109880),	-- Rivet-Sealed Bracers
 					i(109877),	-- Verdant Plate Wristguards
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109881),	-- Felflame Bracers
 						i(109865),	-- Frost-Touched Wristwraps
 						i(109867),	-- Lightbinder Wristwraps
@@ -348,7 +348,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109943),	-- Incarnadine Shoulderguard
 					i(109947),	-- Rivet-Sealed Shoulderplates
 					i(109944),	-- Verdant Plate Spaulders
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109948),	-- Felflame Spaulders
 						i(109931),	-- Frost-Touched Shoulderpads
 						i(109933),	-- Lightbinder Shoulderpads
@@ -392,7 +392,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109928),	-- Skullcracker Cloak
 					i(109918),	-- Soot-Scarred Longcloak
 					i(109917),	-- Three-Clefthoof Cape
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109912),	-- Bloody-Blade Drape
 						i(109911),	-- Cloak of Annealing Flesh
 						i(109908),	-- Cloak of Arcane Mysteries
@@ -436,7 +436,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109950),	-- Stormshot Choker
 					i(109960),	-- Wavesurge Choker
 					i(109953),	-- Windseal Necklace
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109957),	-- Alc's Pendant of Fiery Dreams
 						i(109962),	-- Bloodmist Pendant
 						i(109959),	-- Chain of Soothing Light
@@ -485,7 +485,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(109778),	-- Signet of the Glorious Protector
 					i(109769),	-- Slicebinder Loop
 					i(109777),	-- Unsullied Signet
-					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+					n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(109779),	-- Ancient Draenic Loop
 						i(109768),	-- Band of Growing Leaves
 						i(109773),	-- Band of Iron Scale

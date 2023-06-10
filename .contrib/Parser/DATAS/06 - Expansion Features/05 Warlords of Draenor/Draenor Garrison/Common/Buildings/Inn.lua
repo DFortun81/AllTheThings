@@ -563,7 +563,7 @@ root(ROOTS.ExpansionFeatures,
 								{"sub", "common_wod_dungeon_drop", 1, FINGER},
 								{"merge"},	-- Merge all sub results for processing
 								{"pop"},	-- Get the raw Items from each slot header
-								{"is", "itemID"},	-- Only Items (discards Titanforged headers)
+								{"is", "itemID"},	-- Only Items (discards Warforged headers)
 							},
 						}),
 						i(119037, {	-- Supply of Storied Rarities [16]
@@ -582,7 +582,7 @@ root(ROOTS.ExpansionFeatures,
 								{"sub", "common_wod_dungeon_drop", 2, FINGER},
 								{"merge"},	-- Merge all sub results for processing
 								{"pop"},	-- Get the raw Items from each slot header
-								{"is", "itemID"},	-- Only Items (discards Titanforged headers)
+								{"is", "itemID"},	-- Only Items (discards Warforged headers)
 							},
 						}),
 						q(37228, {	-- A Fruitful Proposition
@@ -683,7 +683,7 @@ root(ROOTS.ExpansionFeatures,
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
 										{"merge"},	-- Merge all sub results for processing
 										{"pop"},	-- Get the raw Items from each slot header
-										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
+										{"is", "itemID"},	-- Only Items (discards Warforged headers)
 									},
 								}),
 							},
@@ -808,7 +808,7 @@ root(ROOTS.ExpansionFeatures,
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
 										{"merge"},	-- Merge all sub results for processing
 										{"pop"},	-- Get the raw Items from each slot header
-										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
+										{"is", "itemID"},	-- Only Items (discards Warforged headers)
 									},
 								}),
 							},
@@ -870,7 +870,7 @@ root(ROOTS.ExpansionFeatures,
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
 										{"merge"},	-- Merge all sub results for processing
 										{"pop"},	-- Get the raw Items from each slot header
-										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
+										{"is", "itemID"},	-- Only Items (discards Warforged headers)
 									},
 								}),
 							},
@@ -923,7 +923,7 @@ root(ROOTS.ExpansionFeatures,
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
 										{"merge"},	-- Merge all sub results for processing
 										{"pop"},	-- Get the raw Items from each slot header
-										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
+										{"is", "itemID"},	-- Only Items (discards Warforged headers)
 									},
 								}),
 							},

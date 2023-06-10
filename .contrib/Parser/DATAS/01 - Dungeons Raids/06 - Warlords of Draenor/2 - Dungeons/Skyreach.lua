@@ -25,7 +25,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					},
 					["g"] = {
 						i(110030),	-- Chakram-Breaker Greatsword
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110030),	-- Chakram-Breaker Greatsword
 						})),
 					},
@@ -39,7 +39,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					["g"] = {
 						i(110031),	-- Spire of the Furious Construct
 						i(110016),	-- Solar Containment Unit
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110031),	-- Spire of the Furious Construct
 							i(110016),	-- Solar Containment Unit
 						})),
@@ -54,7 +54,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					["g"] = {
 						i(110032),	-- Beakbreaker Scimitar
 						i(110006),	-- Rukhran's Quill
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110032),	-- Beakbreaker Scimitar
 							i(110006),	-- Rukhran's Quill
 						})),
@@ -73,7 +73,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						i(110034),	-- Viryx's Indomitable Bulwark
 						i(110011),	-- Fires of the Sun
 						un(REMOVED_FROM_GAME, i(114780)),	-- Pure Solium Band
-						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
+						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110033),	-- Arcanic of the High Sage
 							i(110034),	-- Viryx's Indomitable Bulwark
 							i(110011),	-- Fires of the Sun

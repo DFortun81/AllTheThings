@@ -681,8 +681,6 @@ for key,value in pairs({
 		[-86] = "Bibliothek",										-- Library
 		[-87] = "Waffenkammer",										-- Armory
 		[-88] = "Kathedrale",										-- Cathedral
-	-- Garrisons
-		[-99] = "Gebäude",											-- Buildings
 	-- Garrison
 		[-152] = "Garnisonskampagne",								-- Garrison Campaign
 	-- Fishing

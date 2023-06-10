@@ -1040,7 +1040,6 @@ app.L = {
 		[-93] = "Interface\\Icons\\Achievement_zone_silithus_01",							-- Silithus (The Wound)
 		[-94] = "Interface\\Icons\\inv_misc_lockbox_1",										-- Black Market AH
 	-- Garrisons
-		[-99] = "Interface\\Icons\\inv_garrison_resource",									-- Buildings
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-130] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Active
@@ -1077,10 +1076,6 @@ app.L = {
 		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
 	-- Class Trial
 		[-160] = 236567,																	-- Level 60 Class Trial
-	-- Emissary
-		[-169] = app.asset("Interface_Emissary_Callings"),									-- Emissary Quests
-	-- Events
-		[-176] = 3753381,																	-- Weekly Holidays
 	-- New Characters
 		[-211] = 1530081,																	-- New Character
 	-- Dalaran Sub-Zone
@@ -1115,21 +1110,6 @@ app.L = {
 		[-302] = "Interface\\Icons\\expansionicon_cataclysm",								-- Level Range 80-84
 		[-303] = "Interface\\Icons\\expansionicon_mistsofpandaria",							-- Level Range 85-89
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",										-- Battlegrounds
-	-- Meta Armor/Weapon
-		[-318] = "Interface\\Icons\\garrison_purplearmor",									-- Armor
-		[-319] = "Interface\\Icons\\garrison_purpleweapon",									-- Weapons
-	-- Armor Slots
-		[-320] = "Interface\\Icons\\inv_helmet_03",											-- Head
-		[-321] = "Interface\\Icons\\inv_shoulder_05",										-- Shoulder
-		[-322] = "Interface\\Icons\\inv_misc_cape_11",										-- Back
-		[-323] = "Interface\\Icons\\inv_chest_chain",										-- Chest
-		[-326] = "Interface\\Icons\\inv_bracer_07",											-- Wrist
-		[-327] = "Interface\\Icons\\Inv_gauntlets_24",										-- Hands
-		[-328] = "Interface\\Icons\\inv_belt_24",											-- Waist
-		[-329] = "Interface\\Icons\\inv_pants_09",											-- Legs
-		[-330] = "Interface\\Icons\\inv_boots_09",											-- Feet
-	-- Titanforged/Warforged
-		[-355] = "Interface\\Icons\\misc_arrowlup",											-- Titanforged
 	-- First Questline Draenor
 		[-356] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -1150,11 +1130,6 @@ app.L = {
 		[-369] = "Interface\\Icons\\spell_deathknight_classicon",							-- The Military Quarter
 		[-370] = "Interface\\Icons\\inv_misc_cauldron_nature",								-- The Plague Quarter
 		[-371] = "Interface\\Icons\\inv_misc_head_dragon_blue",								-- The Upper Necropolis
-	-- Misc Armor Slots
-		[-384] = "Interface\\Icons\\inv_jewelcrafting_70_maxlvlneck_green",					-- Neck
-		[-385] = "Interface\\Icons\\inv_70_dungeon_ring5a",									-- Finger
-		[-386] = "Interface\\Icons\\inv_qirajidol_obsidian",								-- Trinket
-		[-387] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",							-- Relic
 	-- Draenor Outposts
 		[-390] = "Interface\\Icons\\inv_misc_coinbag_special",								-- Smuggler's Den
 		[-391] = "Interface\\Icons\\achievement_guildperk_hastyhearth",						-- Stoktron Brewery (alliance)
@@ -1313,9 +1288,6 @@ app.L = {
 		[-985] = 1392911,																	-- Coldheart Interstitia
 		[-986] = 2178500,																	-- Mort'regar
 		[-987] = 2178509,																	-- The Upper Reaches
-		-- 9.2
-		[-999] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
-		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 	-- Dragonflight
@@ -1376,10 +1348,6 @@ app.L = {
 		[-5367] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 18th Anniversary
 	--
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
-	-- Horde/Alliance/Neutral
-		[-9912] = "Interface\\FriendsFrame\\PlusManz-PlusManz",						-- Neutral
-		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde",						-- Horde
-		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance",						-- Alliance
 	------ ACHIEVEMENT HEADERS SECTION ------
 	-- Is Used Somewhere
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
@@ -1476,7 +1444,6 @@ app.L = {
 		[-93] = C_Map.GetAreaInfo(9310),										-- Silithus: The Wound
 		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
 	-- Garrisons
-		[-99] = "Buildings",
 		[-101] = GARRISON_FOLLOWERS,											-- Followers
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),		-- Duskwood Active
@@ -1515,10 +1482,6 @@ app.L = {
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
 	-- Class Trial
 		[-160] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 60 Class Trial
-	-- Emissary
-		[-169] = BOUNTY_BOARD_LOCKED_TITLE,										-- Emissary Quests
-	-- Events
-		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 	-- Item Sets
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 	-- Dalaran Sub-Zone
@@ -1553,21 +1516,6 @@ app.L = {
 		[-302] = BATTLEFIELD_LEVEL.." 80-84",									-- Level Range 80-84
 		[-303] = BATTLEFIELD_LEVEL.." 85-89",									-- Level Range 85-89
 		[-304] = BATTLEGROUNDS,													-- Battlegrounds
-	-- Meta Armor/Weapon
-		[-318] = ARMOR,															-- Armor
-		[-319] = AUCTION_CATEGORY_WEAPONS,										-- Weapons
-	-- Armor Slots
-		[-320] = INVTYPE_HEAD,													-- Head
-		[-321] = INVTYPE_SHOULDER,												-- Shoulder
-		[-322] = INVTYPE_CLOAK,													-- Back
-		[-323] = INVTYPE_CHEST,													-- Chest
-		[-326] = INVTYPE_WRIST,													-- Wrist
-		[-327] = INVTYPE_HAND,													-- Hands
-		[-328] = INVTYPE_WAIST,													-- Waist
-		[-329] = INVTYPE_LEGS,													-- Legs
-		[-330] = INVTYPE_FEET,													-- Feet
-	-- Titanforged/Warforged
-		[-355] = GetSpellInfo(257215),											-- Titanforged
 	-- First Questline Draenor
 		[-356] = "Assault on the Dark Portal",									-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -1589,11 +1537,6 @@ app.L = {
 		[-369] = DUNGEON_FLOOR_NAXXRAMAS3,										-- The Military Quarter
 		[-370] = DUNGEON_FLOOR_NAXXRAMAS4,										-- The Plague Quarter
 		[-371] = DUNGEON_FLOOR_NAXXRAMAS6,										-- The Upper Necropolis
-	-- Misc Armor Slots
-		[-384] = GetItemSubClassInfo(8,1),										-- Neck
-		[-385] = GetItemSubClassInfo(8,10),										-- Finger
-		[-386] = INVTYPE_TRINKET,												-- Trinket
-		[-387] = GetItemSubClassInfo(3,11),										-- Relic
 	-- Draenor Outposts
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
@@ -1768,8 +1711,6 @@ app.L = {
 		[-985] = select(2, GetAchievementInfo(14483)),							-- Coldheart Interstitia
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
-		-- 9.2
-		[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
 	-- Sets
 		[-1000] = WARDROBE_SETS,												-- Sets
 	-- Dragonflight
@@ -1839,10 +1780,6 @@ app.L = {
 
 		[-6014] = BUG_CATEGORY4,												-- Cities
 
-	-- Factions
-		[-9912] = COMBATLOG_FILTER_STRING_NEUTRAL_UNITS,						-- Neutral
-		[-9913] = FACTION_HORDE,												-- Horde
-		[-9914] = FACTION_ALLIANCE,												-- Alliance
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
@@ -1896,12 +1833,9 @@ app.L = {
 		[-123457] = BATTLE_PET_BREED_QUALITY2,									-- Common
 	};
 	["HEADER_DESCRIPTIONS"] = {
-		[-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 	};
-	["HEADER_LORE"] = {
-		
-	};
+	["HEADER_LORE"] = {};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
 	-- If your saves aren't lining up, it's probably because Blizzard
