@@ -37,7 +37,7 @@ root(ROOTS.Secrets, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["description"] = "You need to collect all the motes to recieve this pet.",
 			}),
 		}),
-		n(TREASURES, {
+		n(TREASURES, sharedData({ ["crs"] = 205876 }, {
 			n(MOTE_OF_NASZURO_1, { ["questID"] = 76182, ["coord"] = { 61.2, 64.4, OHNAHRAN_PLAINS }, }),
 			n(MOTE_OF_NASZURO_2, { ["questID"] = 76183, ["coord"] = { 34.3, 58.7, OHNAHRAN_PLAINS }, }),
 			n(MOTE_OF_NASZURO_3, { ["questID"] = 76189, ["coord"] = { 62.7, 13.2, THALDRASZUS }, }),
@@ -54,6 +54,6 @@ root(ROOTS.Secrets, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(MOTE_OF_NASZURO_14, { ["questID"] = 76179, ["coord"] = { 24.1, 55.6, THE_WAKING_SHORES }, }),
 			n(MOTE_OF_NASZURO_15, { ["questID"] = 76180, ["coord"] = { 58.5, 67.7, THE_WAKING_SHORES }, }),
 			n(MOTE_OF_NASZURO_16, { ["questID"] = 76181, ["coord"] = { 63.9, 44.8, THE_WAKING_SHORES }, }),
-		}),
+		})),
 	}),
 })));
