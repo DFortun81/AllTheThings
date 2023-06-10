@@ -170,10 +170,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 					EXECUTIONER_RECIPE,
 				}),
 				FOREST_FROG,
-				n(-78, {	-- Timed Events
+				n(ZULAMAN_TIMED_EVENT, {
 					["description"] = "The event starts as soon as you open the gate. You now have 20 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, however killing Nalorakk will add 15 minutes and killing Akil'zon will add an additional 10 minutes to your timer. This is generally why players kill these two bosses first.\n\nThe loot from the event is dependent on the number of hostages you rescue, not which chest you loot first.",
 					["groups"] = {
-						n(-79, {	-- First Chest
+						n(ZULAMAN_CHEST_1, {
 							i(33489),	-- Mantle of Ill Intent
 							i(33481),	-- Pauldrons of Stone Resolve
 							i(33590),	-- Cloak of Fiends
@@ -183,7 +183,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 							i(33971),	-- Elunite Imbued Leggings
 							i(33805),	-- Shadowhunter's Treads
 						}),
-						n(-80, {	-- Second Chest
+						n(ZULAMAN_CHEST_2, {
 							i(33494),	-- Amani Divining Staff
 							i(33495),	-- Rage
 							i(33490),	-- Staff of Dark Mending
@@ -191,14 +191,14 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 							i(33491),	-- Tuskbreaker
 							i(33493),	-- Umbral Shiv
 						}),
-						n(-81, {	-- Third Chest
+						n(ZULAMAN_CHEST_3, {
 							i(33497),	-- Mana Attuned Band
 							i(33500),	-- Signet of Eternal Life
 							i(33499),	-- Signet of the Last Defender
 							i(33496),	-- Signet of Primal Wrath
 							i(33498),	-- Signet of the Quiet Forest
 						}),
-						n(-82, {	-- Final Chest
+						n(ZULAMAN_CHEST_4, {
 							["description"] = "This item could only be found after the fourth animal boss had been defeated within the required time limit for the event.\n\nOnly one player can receive this within a given raid lockout.",
 							["groups"] = {
 								classicAch(430, {	-- Amani War Bear

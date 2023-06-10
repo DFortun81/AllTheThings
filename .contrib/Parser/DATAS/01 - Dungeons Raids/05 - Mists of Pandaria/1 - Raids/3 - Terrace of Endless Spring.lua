@@ -219,7 +219,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 									["cr"] = 60586,	-- Elder Asani
 								}),
 							}),
-							n(-90, {	-- Elite
+							n(QUALITY_ELITE, {
 								["description"] = "You must kill Protector Kaolan last!",
 								["g"] = {
 									i(90528),	-- Asani's Uncleansed Sandals (Elite)
@@ -375,7 +375,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						},
 						["g"] = {
 							ach(6731),	-- Heroic: Protectors of the Endless
-							n(-90, {	-- Elite
+							n(QUALITY_ELITE, {
 								["description"] = "You must kill Protector Kaolan last!",
 								["g"] = {
 									i(90514),	-- Asani's Uncleansed Sandals (Elite)

@@ -671,8 +671,6 @@ for key,value in pairs({
 		[-53] = "한여름 불꽃축제",											-- Midsummer Fire Festival
 		[-55] = "해적의 날",											-- Pirates' Day
 		[-59] = "망자의 날",											-- Day of the Dead
-		[-62] = "가시덤불 골짜기 낚시왕 선발대회",								-- Stranglethorn Fishing Extravaganza
-		[-63] = "칼루아크 낚시 대회",										-- Kalu'ak Fishing Derby
 	-- Allied Races
 		[-254] = "동맹 종족",										-- Allied Races
 		[-255] = "유산 방어구",											-- Heritage

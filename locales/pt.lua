@@ -671,8 +671,6 @@ for key,value in pairs({
 		[-53] = "Festival do Fogo do Solstício",					-- Midsummer Fire Festival
 		[-55] = "Dia dos Piratas",									-- Pirates' Day
 		[-59] = "Dia dos Mortos",									-- Day of the Dead
-		[-62] = "Festerê de Pesca da Selva do Espinhaço",			-- Stranglethorn Fishing Extravaganza
-		[-63] = "Campeonato de Pesca dos Kalu'ak",					-- Kalu'ak Fishing Derby
 	-- Allied Races
 		[-254] = "Raças Aliadas",									-- Allied Races
 		[-255] = "Armadura Tradicional",							-- Heritage

@@ -1,6 +1,28 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+DETENTION_BLOCK = createHeader({
+	readable = "Detention Block",
+	-- #if AFTER WRATH
+	icon = "Interface\\Icons\\Achievement_Zone_Blackrock_01",
+	-- #else
+	icon = [[~_.asset("Achievement_Zone_Blackrock_01")]],
+	-- #endif
+	text = {
+		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS1]],
+	},
+});
+SHADOWFORGE_CITY = createHeader({
+	readable = "Shadowforge City",
+	-- #if AFTER WRATH
+	icon = "Interface\\Icons\\Achievement_Zone_Blackrock_01",
+	-- #else
+	icon = [[~_.asset("Achievement_Zone_Blackrock_01")]],
+	-- #endif
+	text = {
+		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS2]],
+	},
+});
 local OnTooltipForThoriumBrotherhood = [[function(t)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -2376,7 +2398,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(12551),	-- Stoneshield Cloak
 				i(12528),	-- The Judge's Gavel
 			}),
-			n(-75, {	-- Detention Block
+			n(DETENTION_BLOCK, {
 				e(369, {	-- High Interrogator Gerstahn
 					["creatureID"] = 9018,
 					["groups"] = {
@@ -2557,7 +2579,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			n(-76, {	-- Shadowforge City
+			n(SHADOWFORGE_CITY, {
 				e(373, {	-- Pyromancer Loregrain
 					["creatureID"] = 9024,
 					["groups"] = {

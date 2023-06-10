@@ -206,7 +206,7 @@ root(ROOTS.ExpansionFeatures,
 							i(151368),	-- Experimental Alchemy Reagent
 						},
 					}),
-					n(-90, {	-- Elite
+					n(QUALITY_ELITE, {
 						["g"] = {
 							i(151370),	-- Military Explosives
 						},

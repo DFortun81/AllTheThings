@@ -176,27 +176,27 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							}),
 						},
 					}),
-					n(-78, {	-- Timed Events
+					n(ZULAMAN_TIMED_EVENT, {
 						["description"] = "Enter the instance and talk to Vol'Jin to start the event and open the doors. You will now have 15 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\n    Killing Nalorakk (bear) will add 5 minutes to your timer.\n    Killing Akil'zon (eagle) will add 5 minutes to your timer.\n    Other bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue.",
 						["groups"] = {
-							n(-79, {	-- First Chest
+							n(ZULAMAN_CHEST_1, {
 								i(69886),	-- Bag of Coins
 							}),
-							n(-80, {	-- Second Chest
+							n(ZULAMAN_CHEST_2, {
 								i(69584),	-- Recovered Cloak of Frostheim
 								i(69587),	-- Chestplate of Hubris
 								i(69585),	-- Wristwraps of Madness
 								i(69586),	-- Two-Toed Boots
 								i(69588),	-- Skullcrusher Warboots
 							}),
-							n(-81, {	-- Third Chest
+							n(ZULAMAN_CHEST_3, {
 								i(69592),	-- Reforged Trollbane
 								i(69591),	-- Voodoo Hexblade
 								i(69593),	-- Battleplate of the Amani Empire
 								i(69590),	-- Mojo-Mender's Gloves
 								i(69589),	-- Leggings of Dancing Blades
 							}),
-							n(-82, {	-- Final Chest
+							n(ZULAMAN_CHEST_4, {
 								["description"] = "This item is found in the prisoner's loot chest associated with the fourth animal boss you defeat within the time limit of the event.\n\nOnly one player can receive this within a given instance lockout.",
 								["groups"] = {
 									ach(5858),	-- Bear-ly Made It

@@ -18624,7 +18624,7 @@ function app:GetDataCache()
 							header.parent = self;
 							header.g = {};
 						end
-					elseif o.parent.headerID == app.HeaderConstants.ZONE_DROPS or o.parent.headerID == app.HeaderConstants.COMMON_BOSS_DROPS or o.parent.headerID == -82 or GetRelativeValue(o, "isWorldDropCategory") then
+					elseif o.parent.headerID == app.HeaderConstants.ZONE_DROPS or o.parent.headerID == app.HeaderConstants.COMMON_BOSS_DROPS or o.parent.headerID == app.HeaderConstants.ZULAMAN_CHEST_4 or GetRelativeValue(o, "isWorldDropCategory") then
 						header = headers["drop"];
 						if not header then
 							header = {};

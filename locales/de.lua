@@ -672,8 +672,6 @@ for key,value in pairs({
 		[-53] = "Sonnenwendfest",									-- Midsummer Fire Festival
 		[-55] = "Piratentag",										-- Pirates' Day
 		[-59] = "Tag der Toten",									-- Day of the Dead
-		[-62] = "Anglerwettbewerb im Schlingendorntal",				-- Stranglethorn Fishing Extravaganza
-		[-63] = "Angelwettstreit der Kalu'ak",						-- Kalu'ak Fishing Derby
 	-- SM
 		[-85] = "Friedhof",											-- Graveyard
 		[-86] = "Bibliothek",										-- Library

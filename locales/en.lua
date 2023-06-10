@@ -1012,31 +1012,13 @@ app.L = {
 		[-59] = "Interface\\Icons\\inv_misc_bone_humanskull_02",							-- Day of the Dead
 		[-60] = "Interface\\Icons\\inv_thanksgiving_turkey",								-- Pilgrim's Bounty
 		[-61] = "Interface\\Icons\\achievement_worldevent_merrymaker",						-- The Feast of Winter Veil
-		[-62] = "Interface\\Icons\\inv_misc_fish_06",										-- Stranglethorn Fishing Extravaganza
-		[-63] = "Interface\\Icons\\inv_fishingpole_03",										-- Kalu'ak Fishing Derby
-	-- Maraudon
-		[-69] = "Interface\\Icons\\spell_arcane_portalironforge",							-- Maraudon Purple
-		[-70] = "Interface\\Icons\\INV_Jewelcrafting_ArgusGemUncut_Orange_MiscIcons",		-- Orange
-		[-71] = "Interface\\Icons\\INV_Jewelcrafting_ArgusGemUncut_Purple_MiscIcons",		-- Purple
-
-		[-75] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Detention Block
-		[-76] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Shadowforge City
-	-- Zul'Aman
-		[-78] = "Interface\\Icons\\INV_Misc_Basket_05",										-- Timed Event
-		[-79] = "Interface\\Icons\\INV_Misc_Bag_28_Halloween",								-- First Chest
-		[-80] = "Interface\\Icons\\inv_misc_treasurechest03a",								-- Second Chest
-		[-81] = "Interface\\Icons\\INV_Misc_Bag_10",										-- Third Chest
-		[-82] = "Interface\\Icons\\INV_Box_01",												-- Final Chest
 
 	-- SM
 		[-85] = "Interface\\Icons\\Achievement_BG_Xkills_AVgraveyard",						-- Graveyard (SM)
 		[-86] = "Interface\\Icons\\INV_Misc_Book_13",										-- Library (SM)
 		[-87] = "Interface\\Icons\\Garrison_Building_Armory",								-- Armory (SM)
 		[-88] = "Interface\\Icons\\Ability_Paladin_GaurdedbytheLight",						-- Cathedral (SM)
-	-- Terrace of Endless Spring loot
-		[-90] = "Interface\\Icons\\INV_Misc_Bone_Skull_01",									-- Elite
 
-		[-93] = "Interface\\Icons\\Achievement_zone_silithus_01",							-- Silithus (The Wound)
 		[-94] = "Interface\\Icons\\inv_misc_lockbox_1",										-- Black Market AH
 	-- Garrisons
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
@@ -1384,29 +1366,12 @@ app.L = {
 		[-59] = "Day of the Dead",												-- Day of the Dead
 		[-60] = select(1,GetCategoryInfo(14981)),								-- Pilgrim's Bounty
 		[-61] = GetSpellInfo(21953),											-- The Feast of Winter Veil
-		[-62] = "Stranglethorn Fishing Extravaganza",							-- Stranglethorn Fishing Extravaganza
-		[-63] = "Kalu'ak Fishing Derby",										-- Kalu'ak Fishing Derby
-
-		[-69] = GetSpellInfo(21127),											-- Maraudon Portal
-		[-70] = DUNGEON_FLOOR_DESOLACE22.." - "..GetSpellInfo(251097),			-- Foulspore Cavern [Orange]
-		[-71] = DUNGEON_FLOOR_DESOLACE21.." - "..GetSpellInfo(251095),			-- The Wicked Grotto [Purple]
-		[-75] = DUNGEON_FLOOR_BLACKROCKDEPTHS1,									-- Detention Block
-		[-76] = DUNGEON_FLOOR_BLACKROCKDEPTHS2,									-- Shadowforge City
-	-- Zul'Aman
-		[-78] = "Timed Event",
-		[-79] = "First Chest",
-		[-80] = "Second Chest",
-		[-81] = "Third Chest",
-		[-82] = "Final Chest",
 	-- SM
 		[-85] = "Graveyard",
 		[-86] = "Library",
 		[-87] = "Armory",
 		[-88] = "Cathedral",
-	-- Terrace of Endless Spring loot
-		[-90] = ELITE,															-- Elite
-
-		[-93] = C_Map.GetAreaInfo(9310),										-- Silithus: The Wound
+		
 		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
 	-- Garrisons
 		[-101] = GARRISON_FOLLOWERS,											-- Followers

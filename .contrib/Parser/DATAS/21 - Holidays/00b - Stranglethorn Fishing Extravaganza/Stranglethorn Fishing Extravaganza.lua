@@ -1,14 +1,29 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
+	readable = "Stranglethorn Fishing Extravaganza",
+	icon = "Interface\\Icons\\inv_misc_fish_06",
+	text = {
+		en = "Stranglethorn Fishing Extravaganza",
+		es = "Gran espectáculo de pesca de Tuercespina",
+		de = "Anglerwettbewerb im Schlingendorntal",
+		fr = "Concours de pêche de Strangleronce",
+		it = "Gara di Pesca a Rovotorto",
+		ko = "가시덤불 골짜기 낚시왕 선발대회",
+		pt = "Festerê de Pesca da Selva do Espinhaço",
+		ru = "Рыбомания Тернистой долины",
+		cn = "荆棘谷钓鱼大赛",
+	},
+});
+
 local BOOTS_OF_THE_BAY = i(50287, {	-- Boots of the Bay
 	["timeline"] = { "added 3.3.0.10772" },
 });
 local DREAD_PIRATE_RING = i(122529, {	-- Dread Pirate Ring
 	["timeline"] = { "added 6.1.0.19480" },
 });
-root(ROOTS.Holidays, applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
-	["npcID"] = -62,	-- Stranglethorn Fishing Extravaganza
+root(ROOTS.Holidays, applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER, {
 	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
 	["maps"] = {
 		-- #if AFTER CATA
@@ -202,4 +217,4 @@ root(ROOTS.Holidays, applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 			}),
 		}),
 	},
-}));
+})));

@@ -664,20 +664,11 @@ for key,value in pairs({
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
 		[-55] = "День пирата",									-- Pirates' Day
 		[-59] = "День мертвых",									-- Day of the Dead
-		[-62] = "Рыбомания Тернистой долины",					-- Stranglethorn Fishing Extravaganza
-		[-63] = "Калуакское рыбоборье",							-- Kalu'ak Fishing Derby
-	-- Zul'Aman
-		[-78] = "Временное Событие",
-		[-79] = "Первый Сундук",
-		[-80] = "Второй Сундук",
-		[-81] = "Третий Сундук",
-		[-82] = "Последний Сундук",
 	-- SM
 		[-85] = "Кладбище",
 		[-86] = "Библиотека",
 		[-87] = "Оружейная",
 		[-88] = "Собор",
-		[-90] = "Элитный",										-- Elite
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-130] = "Сумеречный лес - активен",						-- Duskwood Active
 		[-131] = "Внутренние земли - активен",						-- The Hinterlands Active

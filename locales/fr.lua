@@ -675,14 +675,6 @@ for key,value in pairs({
 		[-53] = "Fête du Feu du solstice d’été",					-- Midsummer Fire Festival
 		[-55] = "Jour des pirates",									-- Pirates' Day
 		[-59] = "Jour des morts",									-- Day of the Dead
-		[-62] = "Concours de pêche de Strangleronce",				-- Stranglethorn Fishing Extravaganza
-		[-63] = "Le tournoi de pêche kalu'ak",						-- Kalu'ak Fishing Derby
-	-- Zul'Aman
-		[-78] = "Événement chronométré",
-		[-79] = "Premier coffre",
-		[-80] = "Second coffre",
-		[-81] = "Troisième coffre",
-		[-82] = "Coffre final",
 	-- SM
 		[-85] = "Cimetière",
 		[-86] = "Librairie",

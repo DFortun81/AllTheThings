@@ -692,14 +692,6 @@ for key,value in pairs({
 		[-53] = "仲夏火焰节",											-- Midsummer Fire Festival
 		[-55] = "海盗日",												-- Pirates' Day
 		[-59] = "悼念日",												-- Day of the Dead
-		[-62] = "荆棘谷钓鱼大赛",											-- Stranglethorn Fishing Extravaganza
-		[-63] = "卡鲁亚克钓鱼大赛",											-- Kalu'ak Fishing Derby
-	-- Zul'Aman
-		[-78] = "限时事件",												-- Timed Event
-		[-79] = "一箱",												-- First Chest
-		[-80] = "二箱",												-- Second Chest
-		[-81] = "三箱",												-- Third Chest
-		[-82] = "最终宝箱",												-- Final Chest
 	-- SM
 		[-85] = "墓地",												-- Graveyard
 		[-86] = "图书馆",												-- Library
