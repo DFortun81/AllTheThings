@@ -6088,41 +6088,43 @@ app.CacheField = CacheField;
 local referenceCounter = {};
 app.ReferenceCounter = referenceCounter;
 app.CheckReferenceCounters = function()
-	local CUSTOM_HEADERS, SORTED_LIST, SORTED_LIST_BY_COUNT = {},{},{};
-	CUSTOM_HEADERS.SORTED_LIST = SORTED_LIST;
-	CUSTOM_HEADERS.SORTED_LIST_BY_COUNT = SORTED_LIST_BY_COUNT;
+	local CUSTOM_HEADERS = {};
 	for id,count in pairs(referenceCounter) do
 		if type(id) == "number" and tonumber(id) < 1 and tonumber(id) > -100000 then
-			tinsert(SORTED_LIST, { id, count });
-			tinsert(SORTED_LIST_BY_COUNT, { id, count });
+			tinsert(CUSTOM_HEADERS, { id, count });
 		end
 	end
 	for id,_ in pairs(L.HEADER_NAMES) do
 		if not referenceCounter[id] then
-			tinsert(SORTED_LIST, { id, 0 });
-			tinsert(SORTED_LIST_BY_COUNT, { id, 0 });
+			referenceCounter[id] = 1;
+			tinsert(CUSTOM_HEADERS, { id, 0 });
 		end
 	end
 	for id,_ in pairs(L.HEADER_DESCRIPTIONS) do
 		if not referenceCounter[id] then
-			tinsert(SORTED_LIST, { id, 0, " and only exists as a description..." });
-			tinsert(SORTED_LIST_BY_COUNT, { id, 0, " and only exists as a description..." });
+			tinsert(CUSTOM_HEADERS, { id, 0, " and only exists as a description..." });
 		end
 	end
 	for id,_ in pairs(L.HEADER_ICONS) do
 		if not referenceCounter[id] then
-			tinsert(SORTED_LIST, { id, 0, " and only exists as an icon..." });
-			tinsert(SORTED_LIST_BY_COUNT, { id, 0, " and only exists as an icon..." });
+			tinsert(CUSTOM_HEADERS, { id, 0, " and only exists as an icon..." });
 		end
 	end
-	table.sort(SORTED_LIST, function(a, b)
+	table.sort(CUSTOM_HEADERS, function(a, b)
 		return (a[1] or 0) < (b[1] or 0);
 	end);
-	table.sort(SORTED_LIST_BY_COUNT, function(a, b)
-		return (a[2] or 0) < (b[2] or 0);
-	end);
-	for _,data in ipairs(SORTED_LIST) do
-		print("Custom Header " .. data[1] .. " has " .. data[2] .. " references" .. (data[3] or "."));
+	for _,data in ipairs(CUSTOM_HEADERS) do
+		local id = data[1];
+		print("Custom Header " .. id .. " has " .. data[2] .. " references" .. (data[3] or "."));
+		local header = {};
+		if L.HEADER_NAMES[id] then header.name = L.HEADER_NAMES[id]; end
+		if L.HEADER_ICONS[id] then header.icon = L.HEADER_ICONS[id]; end
+		if L.HEADER_DESCRIPTIONS[id] then header.description = L.HEADER_DESCRIPTIONS[id]; end
+		if data[3] then
+			data[3] = header;
+		else
+			tinsert(data, header);
+		end
 	end
 	app.SetDataMember("CUSTOM_HEADERS", CUSTOM_HEADERS);
 end
