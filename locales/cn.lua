@@ -853,19 +853,6 @@ for key,value in pairs({
 		-- Shadowlands Achievement Headers
 			-- 9.1
 				[-10083] = "盟约突袭",									-- Covenant Assaults
-			--	hopefully temp objects, these currently do not have accessible object data on wowhead
-				[-1433951] = "残破的镜子 A-1",							-- Broken Mirror
-				[-1433952] = "残破的镜子 A-2",							-- Broken Mirror
-				[-1433953] = "残破的镜子 A-3",							-- Broken Mirror
-				[-1433954] = "残破的镜子 B-1",							-- Broken Mirror
-				[-1433955] = "残破的镜子 B-2",							-- Broken Mirror
-				[-1433956] = "残破的镜子 B-3",							-- Broken Mirror
-				[-1433957] = "残破的镜子 C-1",							-- Broken Mirror
-				[-1433958] = "残破的镜子 C-2",							-- Broken Mirror
-				[-1433959] = "残破的镜子 C-3",							-- Broken Mirror
-				[-1433960] = "残破的镜子 D-1",							-- Broken Mirror
-				[-1433961] = "残破的镜子 D-2",							-- Broken Mirror
-				[-1433962] = "残破的镜子 D-3",							-- Broken Mirror
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then

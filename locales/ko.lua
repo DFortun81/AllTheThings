@@ -732,24 +732,6 @@ for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "힘의 균형",										-- Balance of Power
-
-	------ ACHIEVEMENT HEADERS SECTION ------
-		-- Shadowlands Achievement Headers
-			-- 9.1
-				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
-			--	hopefully temp objects, these currently do not have accessible object data on wowhead
-				[-1433951] = "깨진 거울 A-1",							-- Broken Mirror
-				[-1433952] = "깨진 거울 A-2",							-- Broken Mirror
-				[-1433953] = "깨진 거울 A-3",							-- Broken Mirror
-				[-1433954] = "깨진 거울 B-1",							-- Broken Mirror
-				[-1433955] = "깨진 거울 B-2",							-- Broken Mirror
-				[-1433956] = "깨진 거울 B-3",							-- Broken Mirror
-				[-1433957] = "깨진 거울 C-1",							-- Broken Mirror
-				[-1433958] = "깨진 거울 C-2",							-- Broken Mirror
-				[-1433959] = "깨진 거울 C-3",							-- Broken Mirror
-				[-1433960] = "깨진 거울 D-1",							-- Broken Mirror
-				[-1433961] = "깨진 거울 D-2",							-- Broken Mirror
-				[-1433962] = "깨진 거울 D-3",							-- Broken Mirror
 })
 do a[key] = value; end
 

@@ -732,23 +732,6 @@ for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "Equilíbrio de poder",						-- Balance of Power
-
-	------ ACHIEVEMENT HEADERS SECTION ------
-		-- Shadowlands Achievement Headers
-			-- 9.1
-			--	hopefully temp objects, these currently do not have accessible object data on wowhead
-				[-1433951] = "Espelho Quebrado A-1",				-- Broken Mirror
-				[-1433952] = "Espelho Quebrado A-2",				-- Broken Mirror
-				[-1433953] = "Espelho Quebrado A-3",				-- Broken Mirror
-				[-1433954] = "Espelho Quebrado B-1",				-- Broken Mirror
-				[-1433955] = "Espelho Quebrado B-2",				-- Broken Mirror
-				[-1433956] = "Espelho Quebrado B-3",				-- Broken Mirror
-				[-1433957] = "Espelho Quebrado C-1",				-- Broken Mirror
-				[-1433958] = "Espelho Quebrado C-2",				-- Broken Mirror
-				[-1433959] = "Espelho Quebrado C-3",				-- Broken Mirror
-				[-1433960] = "Espelho Quebrado D-1",				-- Broken Mirror
-				[-1433961] = "Espelho Quebrado D-2",				-- Broken Mirror
-				[-1433962] = "Espelho Quebrado D-3",				-- Broken Mirror
 })
 do a[key] = value; end
 

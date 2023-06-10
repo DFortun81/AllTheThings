@@ -782,19 +782,6 @@ for key,value in pairs({
 		-- Shadowlands Achievement Headers
 			-- 9.1
 				[-10083] = "Paktangriffe",							-- Covenant Assaults
-			--	hopefully temp objects, these currently do not have accessible object data on wowhead
-				[-1433951] = "Zerbrochener Spiegel A-1",			-- Broken Mirror
-				[-1433952] = "Zerbrochener Spiegel A-2",			-- Broken Mirror
-				[-1433953] = "Zerbrochener Spiegel A-3",			-- Broken Mirror
-				[-1433954] = "Zerbrochener Spiegel B-1",			-- Broken Mirror
-				[-1433955] = "Zerbrochener Spiegel B-2",			-- Broken Mirror
-				[-1433956] = "Zerbrochener Spiegel B-3",			-- Broken Mirror
-				[-1433957] = "Zerbrochener Spiegel C-1",			-- Broken Mirror
-				[-1433958] = "Zerbrochener Spiegel C-2",			-- Broken Mirror
-				[-1433959] = "Zerbrochener Spiegel C-3",			-- Broken Mirror
-				[-1433960] = "Zerbrochener Spiegel D-1",			-- Broken Mirror
-				[-1433961] = "Zerbrochener Spiegel D-2",			-- Broken Mirror
-				[-1433962] = "Zerbrochener Spiegel D-3",			-- Broken Mirror
 })
 do a[key] = value; end
 

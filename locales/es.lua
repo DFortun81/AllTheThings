@@ -737,24 +737,6 @@ for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "Equilibrio de poderes",						-- Balance of Power
-
-	------ ACHIEVEMENT HEADERS SECTION ------
-		-- Shadowlands Achievement Headers
-			-- 9.1
-				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
-			--	hopefully temp objects, these currently do not have accessible object data on wowhead
-				[-1433951] = "Espejo roto A-1",						-- Broken Mirror
-				[-1433952] = "Espejo roto A-2",						-- Broken Mirror
-				[-1433953] = "Espejo roto A-3",						-- Broken Mirror
-				[-1433954] = "Espejo roto B-1",						-- Broken Mirror
-				[-1433955] = "Espejo roto B-2",						-- Broken Mirror
-				[-1433956] = "Espejo roto B-3",						-- Broken Mirror
-				[-1433957] = "Espejo roto C-1",						-- Broken Mirror
-				[-1433958] = "Espejo roto C-2",						-- Broken Mirror
-				[-1433959] = "Espejo roto C-3",						-- Broken Mirror
-				[-1433960] = "Espejo roto D-1",						-- Broken Mirror
-				[-1433961] = "Espejo roto D-2",						-- Broken Mirror
-				[-1433962] = "Espejo roto D-3",						-- Broken Mirror
 })
 do a[key] = value; end
 

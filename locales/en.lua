@@ -1366,19 +1366,6 @@ app.L = {
 	-- Shadowlands Achievement Headers
 	-- 9.1
 		[-10083] = "236373",														-- Covenant Assaults
-	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
-		[-1433951] = "3854020",															-- Broken Mirror
-		[-1433952] = "3854020",															-- Broken Mirror
-		[-1433953] = "3854020",															-- Broken Mirror
-		[-1433954] = "3854020",															-- Broken Mirror
-		[-1433955] = "3854020",															-- Broken Mirror
-		[-1433956] = "3854020",															-- Broken Mirror
-		[-1433957] = "3854020",															-- Broken Mirror
-		[-1433958] = "3854020",															-- Broken Mirror
-		[-1433959] = "3854020",															-- Broken Mirror
-		[-1433960] = "3854020",															-- Broken Mirror
-		[-1433961] = "3854020",															-- Broken Mirror
-		[-1433962] = "3854020",															-- Broken Mirror
 	-- NYI
 		-- Unknown patch
 		--[-?] = ?,																-- Patch 0.x.x
@@ -1795,19 +1782,6 @@ app.L = {
 	-- Shadowlands Achievement Headers
 	-- 9.1
 		[-10083] = "Covenant Assaults",											-- Covenant Assaults
-	--	hopefully temp objects, these currently do not have accessible object data on wowhead
-		[-1433951] = "Broken Mirror A-1",										-- Broken Mirror
-		[-1433952] = "Broken Mirror A-2",										-- Broken Mirror
-		[-1433953] = "Broken Mirror A-3",										-- Broken Mirror
-		[-1433954] = "Broken Mirror B-1",										-- Broken Mirror
-		[-1433955] = "Broken Mirror B-2",										-- Broken Mirror
-		[-1433956] = "Broken Mirror B-3",										-- Broken Mirror
-		[-1433957] = "Broken Mirror C-1",										-- Broken Mirror
-		[-1433958] = "Broken Mirror C-2",										-- Broken Mirror
-		[-1433959] = "Broken Mirror C-3",										-- Broken Mirror
-		[-1433960] = "Broken Mirror D-1",										-- Broken Mirror
-		[-1433961] = "Broken Mirror D-2",										-- Broken Mirror
-		[-1433962] = "Broken Mirror D-3",										-- Broken Mirror
 	-- NYI
 		-- Unknown patch
 		--[-?] = "0.x.x",														-- Patch 0.x.x
