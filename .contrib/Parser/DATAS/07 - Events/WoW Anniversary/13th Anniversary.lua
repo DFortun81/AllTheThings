@@ -100,7 +100,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_A
 				i(150384),	-- Ring of Entropy
 			},
 		}),
-		n(-19, {	-- Dragons of Nightmare
+		n(DRAGONS_OF_NIGHTMARE, {
 			["questID"] = 47463,
 			["isRaid"] = true,
 			["isDaily"] = true,

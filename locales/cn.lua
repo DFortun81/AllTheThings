@@ -684,8 +684,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[-11] = "一般宝箱掉落",											-- Common Box Drops
-		[-19] = "梦魇之龙",												-- Dragons of Nightmare
-		[-21] = "船长",												-- Captains
 		[-23] = "一般地下城掉落",											-- WoD Common Dungeon Drop
 		[-27] = "下层",												-- Lower (Blackrock Spire)
 		[-28] = "上层",												-- Upper (Blackrock Spire)
@@ -877,12 +875,6 @@ if GetLocale() == "zhTW" then
 	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarr
 	a[-1140] = "沃卓肯協調者";											-- Valdrakken Accord
 end
-
-local a = L.HEADER_DESCRIPTIONS;
-for key,value in pairs({
-	[-799] = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
-})
-do a[key] = value; end
 
 -- Fall-back 'name' values for Quests based on QuestID
 local a = L.QUEST_NAMES;

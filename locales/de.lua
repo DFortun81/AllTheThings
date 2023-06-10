@@ -668,8 +668,6 @@ do a[key] = value; end
 
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Commonly used
-		[-19] = "Drachen des Alptraums",							-- Dragons of Nightmare
 	-- World Events
 		[-53] = "Sonnenwendfest",									-- Midsummer Fire Festival
 		[-55] = "Piratentag",										-- Pirates' Day

@@ -1319,9 +1319,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
 				["groups"] = {
 			-- #endif
-					n(	-- Silithid Royalty
+					n(
 					-- #if ANYCLASSIC
-					-20,
+					createHeader({
+						readable = "Silithid Royalty",
+						icon = "Interface\\Icons\\Inv_misc_ahnqirajtrinket_06",
+						text = {
+							en = "Silithid Royalty",
+						},
+					}),
 					-- #else
 					COMMON_BOSS_DROPS,
 					-- #endif

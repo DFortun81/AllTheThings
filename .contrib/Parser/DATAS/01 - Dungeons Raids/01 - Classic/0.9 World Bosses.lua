@@ -34,8 +34,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(18547),	-- Unmelting Ice Girdle
 				},
 			}))),
-			applyclassicphase(PHASE_FOUR, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, n(-19, {	-- Dragons of Nightmare
-				["description"] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
+			applyclassicphase(PHASE_FOUR, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, n(DRAGONS_OF_NIGHTMARE, {
 				["coords"] = {
 					{ 51.2, 10.9, FERALAS },
 					{ 63.3, 27.8, THE_HINTERLANDS },

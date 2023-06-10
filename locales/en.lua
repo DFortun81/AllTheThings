@@ -994,8 +994,6 @@ app.L = {
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
 		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
-		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
-		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
 		[-40] = "Interface\\Icons\\Inv_misc_book_17",										-- Legacy
@@ -1230,8 +1228,6 @@ app.L = {
 		[-796] = app.asset("Category_PetBattles"),											-- Battle
 	-- Toys
 		[-798] = app.asset("Category_SelfieFilters"),										-- Selfie Filter
-	-- Timeless Isle
-		[-799] = "775461",																	-- Burden of Eternity
 	-- Secret Header
 		[-807] = "Interface\\Icons\\inv_hivemind",											-- Hivemind
 	-- Chests
@@ -1401,8 +1397,6 @@ app.L = {
 	};
 	["HEADER_NAMES"] = {
 		[-11] = "Common Box Drops",												-- Common Box Drops
-		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
-		[-21] = "Captains",
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
 		[-40] = LFG_LIST_LEGACY,												-- Legacy
@@ -1645,8 +1639,6 @@ app.L = {
 		[-796] = BATTLE_PET_SOURCE_5,											-- Pet Battle
 	-- Toys
 		[-798] = GetSpellInfo(181765),											-- S.E.L.F.I.E. Camera
-	-- Timeless Isle
-		[-799] = GetSpellInfo(147343),											-- Burden of Eternity
 	-- Secret Header
 		[-807] = GetSpellInfo(261395),											-- The Hivemind
 	-- Chests
@@ -1832,9 +1824,7 @@ app.L = {
 		[-123456] = BATTLE_PET_BREED_QUALITY1,									-- Poor
 		[-123457] = BATTLE_PET_BREED_QUALITY2,									-- Common
 	};
-	["HEADER_DESCRIPTIONS"] = {
-		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
-	};
+	["HEADER_DESCRIPTIONS"] = {};
 	["HEADER_LORE"] = {};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

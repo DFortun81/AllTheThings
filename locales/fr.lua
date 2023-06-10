@@ -667,8 +667,6 @@ do a[key] = value; end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
-		[-19] = "Dragons du Cauchemar",								-- Dragons of Nightmare
-		[-21] = "Capitaines",										-- Captains
 		[-23] = "Objet commun de donjon",							-- WoD Common Dungeon Drop
 		[-27] = "Bas",												-- Lower (Blackrock Spire)
 		[-28] = "Haut",												-- Upper (Blackrock Spire)
@@ -828,12 +826,6 @@ for key,value in pairs({
 				[-1433960] = "Miroir brisé D-1",					-- Broken Mirror
 				[-1433961] = "Miroir brisé D-2",					-- Broken Mirror
 				[-1433962] = "Miroir brisé D-3",					-- Broken Mirror
-})
-do a[key] = value; end
-
-local a = L.HEADER_DESCRIPTIONS;
-for key,value in pairs({
-	[-799] = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
 })
 do a[key] = value; end
 

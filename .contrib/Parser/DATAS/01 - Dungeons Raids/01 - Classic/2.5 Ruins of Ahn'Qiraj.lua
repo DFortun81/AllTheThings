@@ -1,6 +1,19 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+CAPTAINS = createHeader({
+	readable = "Captains",
+	icon = "Interface\\Icons\\achievement_pvp_h_12",
+	text = {
+		en = "Captains",
+		fr = "Capitaines",
+		ru = "Капитаны",
+		cn = "船长",
+	},
+	lore = {
+		en = "These can be farmed infinitely by resetting the boss.",
+	},
+});
 -- #if BEFORE CATA
 local KEYL_LOCATION = { 51.8, 39.5, SILITHUS };
 local WARDEN_LOCATION = { 51.1, 38.9, SILITHUS };
@@ -896,7 +909,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				["description"] = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
 				["creatureID"] = 15341,
 				["groups"] = {
-					n(-21, {	-- Captains
+					n(CAPTAINS, {
 						["qgs"] = {
 							15390,	-- Captain Xurrem
 							15391,	-- Captain Qeez

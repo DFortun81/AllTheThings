@@ -656,8 +656,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[-11] = "Обычная добыча из Сундуков",					-- Common Box Drops
-		[-19] = "Драконы Кошмара",								-- Dragons of Nightmare
-		[-21] = "Капитаны",										-- Captains
 		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop
 		[-27] = "Нижняя часть",									-- Lower (Blackrock Spire)
 		[-28] = "Верхняя часть",								-- Upper (Blackrock Spire)
@@ -848,12 +846,6 @@ for key,value in pairs({
 				[-1433960] = "Разбитое зеркало D-1",				-- Broken Mirror
 				[-1433961] = "Разбитое зеркало D-2",				-- Broken Mirror
 				[-1433962] = "Разбитое зеркало D-3",				-- Broken Mirror
-})
-do a[key] = value; end
-
-local a = L.HEADER_DESCRIPTIONS;
-for key,value in pairs({
-	[-799] = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
 })
 do a[key] = value; end
 
