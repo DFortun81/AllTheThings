@@ -6857,8 +6857,9 @@ local __TomTomWaypointCache = setmetatable({}, { __index = function(t, mapID)
 	return o;
 end });
 local __TomTomWaypointCount, __PlottedGroup;
-local function SendCachedCoordsToTomTom()
+local function PlotCachedCoords()
 	if TomTom then
+		-- app.PrintDebug("WP:TomTom:Plot",__PlottedGroup.text,__TomTomWaypointCount)
 		local xnormal;
 		for mapID,c in pairs(__TomTomWaypointCache) do
 			for x,d in pairs(c) do
@@ -6983,6 +6984,7 @@ local function SendCachedCoordsToTomTom()
 		end
 		TomTom:SetClosestWaypoint();
 	elseif C_SuperTrack then
+		-- app.PrintDebug("WP:C_SuperTrack:Plot",__PlottedGroup.text,__TomTomWaypointCount)
 		-- try to track the first available waypoint in the cache
 		for mapID,c in pairs(__TomTomWaypointCache) do
 			for x,d in pairs(c) do
@@ -7014,7 +7016,6 @@ end
 local function AddTomTomWaypointCache(coord, group)
 	local mapID = coord[3];
 	if mapID then
-		__TomTomWaypointCount = __TomTomWaypointCount + 1;
 		-- app.PrintDebug("WP:Cache",__TomTomWaypointCount,group.hash)
 		__TomTomWaypointCache[mapID][math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
 	else
@@ -7022,26 +7023,35 @@ local function AddTomTomWaypointCache(coord, group)
 		print("Missing mapID for", group.text, coord[1], coord[2], mapID);
 	end
 end
+-- Tracks attempted addition of coordinates. Sometimes we want to 'know' that coords exist but don't actually want to plot them
+local function TryAddGroupWaypoints(group)
+	local c = group.coords;
+	if c then
+		for _,coord in ipairs(c) do
+			__TomTomWaypointCount = __TomTomWaypointCount + 1;
+			AddTomTomWaypointCache(coord, group);
+		end
+	end
+	c = group.coord;
+	if c then
+		__TomTomWaypointCount = __TomTomWaypointCount + 1;
+		AddTomTomWaypointCache(c, group);
+	end
+end
 local function AddTomTomParentCoord(group)
 	-- app.PrintDebug("WP:ParentChain")
 	local parent = group.sourceParent or group.parent;
 	while parent do
 		-- app.PrintDebug("WP:Parent:",parent.hash)
-		if parent.coords then
-			for _,coord in ipairs(parent.coords) do
-				AddTomTomWaypointCache(coord, parent);
-			end
-			break;
-		end
-		-- ignore parent if it has no parent itself (window header)
-		if parent.coord and rawget(parent, "parent") then
-			AddTomTomWaypointCache(parent.coord, parent);
+		TryAddGroupWaypoints(parent);
+		if __TomTomWaypointCount > 0 then
 			break;
 		end
 		parent = parent.sourceParent or parent.parent;
 	end
 end
-local function AddTomTomWaypointInternal(group, depth)
+-- Attempt to add TomTom waypoints for all directly nested/symlinked content from the group
+local function AddNestedTomTomWaypoints(group, depth)
 	if group.visible then
 		if group.plotting then return false; end
 		group.plotting = true;
@@ -7049,18 +7059,13 @@ local function AddTomTomWaypointInternal(group, depth)
 		-- always plot directly clicked otherwise don't plot saved or inaccessible groups
 		if depth == 0 or (not group.saved and not group.missingSourceQuests) then
 			-- app.PrintDebug("WP:Group",group.hash)
-			if group.coords then
-				for _,coord in ipairs(group.coords) do
-					AddTomTomWaypointCache(coord, group);
-				end
-			end
-			if group.coord then AddTomTomWaypointCache(group.coord, group); end
+			TryAddGroupWaypoints(group);
 		end
 		-- sub-groups coords?
 		if group.g then
 			-- app.PrintDebug("WP:SubGroups",group.hash)
 			for _,o in ipairs(group.g) do
-				AddTomTomWaypointInternal(o, depth + 1);
+				AddNestedTomTomWaypoints(o, depth + 1);
 			end
 		end
 		-- symlink of the group coords?
@@ -7068,69 +7073,69 @@ local function AddTomTomWaypointInternal(group, depth)
 		if searchResults then
 			-- app.PrintDebug("WP:Sym",group.hash)
 			for _,o in ipairs(searchResults) do
-				AddTomTomWaypointInternal(o, depth + 1);
+				AddNestedTomTomWaypoints(o, depth + 1);
 			end
 		end
+		group.plotting = nil;
+	end
+end
+local function AddTomTomParentChainWaypoint(group, depth)
+	if group.visible then
+		if group.plotting then return false; end
+		group.plotting = true;
 		-- also check for first coord(s) on parent chain of plotted group if no coords at or below the plotted group
 		if depth == 0 and __TomTomWaypointCount == 0 then
 			AddTomTomParentCoord(group);
 		end
+		group.plotting = nil;
+	end
+end
+local function AddTomTomSearchResultWaypoints(group)
+	if group.visible then
+		local key = group.key;
+		local searchResults = SearchForField(key, group[key], "field");
+		for _,o in ipairs(searchResults) do
+			-- app.PrintDebug("WP:Search:",o.hash)
+			TryAddGroupWaypoints(o);
+			AddTomTomParentCoord(o);
+		end
+	end
+end
+local function AddTomTomAlternateDirectResults(group, depth)
+	if group.visible then
 		-- also check for first coord(s) on alternate search results/parents of the group if it's a Thing and no other coords found
 		if __TomTomWaypointCount == 0 and app.ThingKeys[group.key or 0] then
-			-- app.PrintDebug("WP:SearchScan",group.hash)
-			local key = group.key;
-			local searchResults = SearchForField(key, group[key], "field");
-			for _,o in ipairs(searchResults) do
-				-- app.PrintDebug("WP:Search:",o.hash)
-				if o.coords then
-					for _,coord in ipairs(o.coords) do
-						AddTomTomWaypointCache(coord, o);
-					end
-					break;
-				end
-				if o.coord then
-					AddTomTomWaypointCache(o.coord, o);
-					break;
-				end
-				AddTomTomParentCoord(o);
-			end
+			-- app.PrintDebug("WP:Search",group.hash)
+			AddTomTomSearchResultWaypoints(group);
 		end
-		group.plotting = nil;
 		-- if STILL nothing was found to plot (plotting meta-achievements whose achievements are under other groups)
-		-- pop off the first layer of groups under the group to plot waypoints as if they were each individually plotted
-		-- to process as normal waypoint plotting
-		if TomTom and __TomTomWaypointCount == 0 and depth < 2 then
+		-- pop off the first/second layer of groups under the plotted group to plot their possible waypoints via the various means (nested & search)
+		if __TomTomWaypointCount == 0 and depth == 0 then
 			-- app.PrintDebug("WP:NestedSearchScan",group.hash)
-			-- grab raw groups
-			local g = group.g;
-			if g then
-				for _,o in ipairs(g) do
-					app.WaypointRunner.Run(AddTomTomWaypointInternal, o, 0);
+			-- queue searches for 2 layers of groups
+			local e = app.EmptyTable;
+			for _,o in ipairs(group.g or e) do
+				app.WaypointRunner.Run(AddTomTomSearchResultWaypoints, o);
+				for _,p in ipairs(o.g or e) do
+					app.WaypointRunner.Run(AddTomTomSearchResultWaypoints, p);
 				end
-				return;
 			end
 		end
-		-- TODO: if still no coords (Achievement Criteria with Providers/Cost)
-		-- further Search Providers/Cost/crs/etc to find coords
 	end
 end
 AddTomTomWaypoint = function(group)
+	-- app.PrintDebug("WP:Global",group.hash)
 	wipe(__TomTomWaypointCache);
 	__TomTomWaypointCount = 0;
 	__PlottedGroup = group;
-	if TomTom then
-		-- attempt to cache all coords
-		app.WaypointRunner.Run(AddTomTomWaypointInternal, group, 0);
-		-- actually send the coords to TomTom now that every coord has been cached
-		app.WaypointRunner.OnEnd(SendCachedCoordsToTomTom);
-	elseif C_SuperTrack then
-		-- attempt to cache all coords
-		AddTomTomWaypointInternal(group, 0);
-		-- actually send the coords to SuperTrack now that possible coords have been cached
-		SendCachedCoordsToTomTom();
-	else
-		app.print(L["TOM_TOM_NOT_FOUND"]);
-	end
+	-- attempt to cache all coords
+	app.WaypointRunner.Run(AddNestedTomTomWaypoints, group, 0);
+	app.WaypointRunner.Run(AddTomTomParentChainWaypoint, group, 0);
+	app.WaypointRunner.Run(AddTomTomAlternateDirectResults, group, 0);
+	-- TODO: if still no coords (Achievement Criteria with Providers/Cost)
+	-- further Search Providers/Cost/crs/etc to find coords
+	-- actually send the coords now that every coord has been cached
+	app.WaypointRunner.OnEnd(PlotCachedCoords);
 end
 end	-- Map Information Lib
 
