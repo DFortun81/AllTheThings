@@ -23,7 +23,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(MAPS),
 	filter(MISC),
 	filter(MOUNTS),
-	n(PARTY_SYNC),			-- completed up to 10.0.7
+	n(PARTY_SYNC, {	-- completed up to 10.0.7
+		["timeline"] = { "added 8.2.5" },
+	}),
 	n(PROFESSIONS, {
 		prof(ALCHEMY),
 		prof(BLACKSMITHING),

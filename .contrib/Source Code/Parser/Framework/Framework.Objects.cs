@@ -2283,6 +2283,7 @@ end");
                             else if (newProvider.Item1 == "n")
                             {
                                 NPCS_WITH_REFERENCES[newProvider.Item2] = true;
+                                MarkCustomHeaderAsRequired(newProvider.Item2);
                             }
                             else if (newProvider.Item1 == "o")
                             {

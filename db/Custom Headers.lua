@@ -13,7 +13,6 @@ _.HeaderConstants = {
 	DISCOVERY = -1000005,
 	DROPS = -1000006,
 	EMISSARY_QUESTS = -1000007,
-	EXPLORATION = -1000008,
 	FACTIONS = -1000009,
 	FLIGHT_PATHS = -1000010,
 	HOLIDAYS = -1000012,
@@ -46,7 +45,6 @@ for key,value in pairs({
 	[-1000005] = "Interface/Icons/Garrison_Building_MageTower",
 	[-1000006] = _.asset("Category_WorldDrops"),
 	[-1000007] = _.asset("Interface_Emissary_Callings"),
-	[-1000008] = "Interface/Icons/INV_Misc_Map02",
 	[-1000009] = _.asset("Category_Factions"),
 	[-1000010] = _.asset("Category_FlightPaths"),
 	[-1000011] = "Interface/Icons/inv_misc_questionmark",
@@ -86,7 +84,6 @@ for key,value in pairs({
 	[-1000045] = "Interface/FriendsFrame/PlusManz-Horde",
 	[-1000046] = "Interface/FriendsFrame/PlusManz-PlusManz",
 	[-1000047] = "Interface/Icons/Ability_thunderking_overcharge",
-	[-1000048] = "Interface/Icons/misc_arrowlup",
 	[-1000049] = "Interface/Icons/misc_arrowlup",
 	[-1000050] = "Interface/Icons/DiabloAnniversary_HoradricCube",
 	[-1000051] = "Interface/Icons/inv_sword_48",
@@ -135,7 +132,6 @@ for key,value in pairs({
 	[-1000005] = BATTLE_PET_SOURCE_11,
 	[-1000006] = "Drops",
 	[-1000007] = BOUNTY_BOARD_LOCKED_TITLE,
-	[-1000008] = "Exploration",
 	[-1000009] = FACTION,
 	[-1000010] = GetSpellInfo(218950),
 	[-1000011] = MINIMAP_TRACKING_HIDDEN_QUESTS,
@@ -175,7 +171,6 @@ for key,value in pairs({
 	[-1000045] = FACTION_HORDE,
 	[-1000046] = COMBATLOG_FILTER_STRING_NEUTRAL_UNITS,
 	[-1000047] = "Thunderforged",
-	[-1000048] = GetSpellInfo(257215),
 	[-1000049] = "Warforged",
 	[-1000050] = "Diablo IV",
 	[-1000051] = HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES,
@@ -239,7 +234,6 @@ if simplifiedLocale == "de" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1000003] = "Gemeinsame Bossbeute",
-	[-1000008] = "Erkundung",
 	[-1000019] = "Rätsel",
 	[-1000043] = "Gebäude",
 	[-1000058] = "Hasserfüllten Gladiator",
@@ -278,7 +272,6 @@ if simplifiedLocale == "fr" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1000004] = "Objets communs des vendeurs",
-	[-1000008] = "Exploration",
 	[-1000027] = "Récompenses de la zone",
 	[-1000053] = select(2, GetAchievementInfo(2091))..": Saison 1",
 	[-1000054] = select(2, GetAchievementInfo(418))..": Saison 2",
@@ -347,7 +340,6 @@ for key,value in pairs({
 	[-1000003] = "Общая добыча с боссов",
 	[-1000004] = "Обычные предметы у Торговцев",
 	[-1000006] = BATTLE_PET_SOURCE_1,
-	[-1000008] = "Исследование",
 	[-1000010] = "Точка полета",
 	[-1000017] = "Редкие",
 	[-1000019] = "Секреты",
@@ -392,7 +384,6 @@ a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1000004] = "常规商人物品",
 	[-1000006] = "掉落",
-	[-1000008] = "勘探",
 	[-1000019] = "秘密",
 	[-1000022] = "商人",
 	[-1000027] = "区域奖励",

@@ -196,6 +196,11 @@ namespace ATT
         private static Dictionary<string, long> CUSTOM_HEADER_CONSTANTS = new Dictionary<string, long>();
 
         /// <summary>
+        /// All of the Custom Header IDs that have been referenced somewhere in the database.
+        /// </summary>
+        private static Dictionary<long, bool> CUSTOM_HEADERS_WITH_REFERENCES = new Dictionary<long, bool>();
+
+        /// <summary>
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>
         private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new Dictionary<long, bool>();
@@ -290,6 +295,34 @@ namespace ATT
                         CUSTOM_HEADER_CONSTANTS[value.ToString()] = pair.Key;
                     }
                 }
+            }
+        }
+
+        /// <summary>
+        /// Mark the Custom Header as Required.
+        /// This will force it to be included in the export if it exists as a constant.
+        /// NOTE: Only headers with a constant defined can be explicitly marked.
+        /// </summary>
+        /// <param name="headerID">The header ID.</param>
+        public static void MarkCustomHeaderAsRequired(long headerID)
+        {
+            if (headerID < 1)
+            {
+                CUSTOM_HEADERS_WITH_REFERENCES[headerID] = true;
+            }
+        }
+
+        /// <summary>
+        /// Mark the Custom Header as Required.
+        /// This will force it to be included in the export if it exists as a constant.
+        /// NOTE: Only headers with a constant defined can be explicitly marked.
+        /// </summary>
+        /// <param name="headerConstant">The header constant.</param>
+        public static void MarkCustomHeaderAsRequired(string headerConstant)
+        {
+            if (CUSTOM_HEADER_CONSTANTS.TryGetValue(headerConstant, out long headerID))
+            {
+                CUSTOM_HEADERS_WITH_REFERENCES[headerID] = true;
             }
         }
 
@@ -741,22 +774,35 @@ namespace ATT
                 }
                 data["npcID"] = creatureID;
                 NPCS_WITH_REFERENCES[creatureID] = true;
+                MarkCustomHeaderAsRequired(creatureID);
             }
             if (data.TryGetValue("npcID", out creatureID))
             {
                 NPCS_WITH_REFERENCES[creatureID] = true;
+                MarkCustomHeaderAsRequired(creatureID);
             }
             if (data.TryGetValue("qg", out creatureID))
             {
                 NPCS_WITH_REFERENCES[creatureID] = true;
+                MarkCustomHeaderAsRequired(creatureID);
             }
             if (data.TryGetValue("qgs", out List<object> qgs))
             {
-                foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt64(qg)] = true;
+                foreach (var qg in qgs)
+                {
+                    var id = Convert.ToInt64(qg);
+                    NPCS_WITH_REFERENCES[id] = true;
+                    MarkCustomHeaderAsRequired(id);
+                }
             }
             if (data.TryGetValue("crs", out qgs))
             {
-                foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt64(qg)] = true;
+                foreach (var qg in qgs)
+                {
+                    var id = Convert.ToInt64(qg);
+                    NPCS_WITH_REFERENCES[id] = true;
+                    MarkCustomHeaderAsRequired(id);
+                }
             }
             if (data.TryGetValue("objectID", out creatureID)) ProcessObjectInstance(data, creatureID);
             if (data.TryGetValue("artifactID", out creatureID) && !data.ContainsKey("s") && Objects.ArtifactSources.TryGetValue(creatureID, out Dictionary<string, long> sources))
@@ -4395,6 +4441,48 @@ namespace ATT
                 if (CustomHeaders != null && CustomHeaders.Any())
                 {
                     CurrentParseStage = ParseStage.ExportCustomHeaders;
+
+                    // Headers referenced dynamically in the addon should be added explicitly here.
+                    // For example, there's a header for Holidays in the addon that used the localization data as a root.
+                    // An easy way to check is to search for "app.HeaderConstants"
+                    // NOTE to self... Rather than do this, why not include all of the ones that specify a constant?
+                    // ERRRRRRR... Yeah... Wait no, I don't want that! Investigate that idea later!
+                    MarkCustomHeaderAsRequired("ACHIEVEMENTS");  // This shouldn't be possible to exclude, but make sure anyways.
+                    MarkCustomHeaderAsRequired("COMMON_BOSS_DROPS");  // This shouldn't be possible to exclude, but make sure anyways.
+                    MarkCustomHeaderAsRequired("FACTIONS");  // This shouldn't be possible to exclude, but make sure anyways.
+                    MarkCustomHeaderAsRequired("FLIGHT_PATHS");  // This shouldn't be possible to exclude, but make sure anyways.
+                    MarkCustomHeaderAsRequired("HOLIDAYS");
+                    MarkCustomHeaderAsRequired("PROFESSIONS");  // This shouldn't be possible to exclude, but make sure anyways.
+                    MarkCustomHeaderAsRequired("PVP");  // This shouldn't be possible to exclude, but make sure anyways.
+                    MarkCustomHeaderAsRequired("QUESTS");  // This shouldn't be possible to exclude, but make sure anyways.
+                    MarkCustomHeaderAsRequired("RARES");  // This shouldn't be possible to exclude, but make sure anyways.
+                    MarkCustomHeaderAsRequired("VENDORS");  // This shouldn't be possible to exclude, but make sure anyways.
+                    MarkCustomHeaderAsRequired("WORLD_BOSSES");  // This shouldn't be possible to exclude, but make sure anyways.
+                    MarkCustomHeaderAsRequired("ZONE_DROPS");  // This shouldn't be possible to exclude, but make sure anyways.
+#if !ANYCLASSIC
+                    // These should probably have their requirement refactored into the parser folder to allow for situational inclusion.
+                    MarkCustomHeaderAsRequired("WEAPONS");  // This is referenced in the pvp_weapons symlink
+                    MarkCustomHeaderAsRequired("ZONE_REWARDS");  // This is referenced in the bfa_azerite_armor_chest_zonedrops symlink
+
+                    // These are referenced in the NPCExpandHeaders / SpecificSources, possibly include as a field option on the definition? (like expand = true or something)
+                    MarkCustomHeaderAsRequired("COMMON_VENDOR_ITEMS");
+                    MarkCustomHeaderAsRequired("DROPS");
+
+                    // These are referenced in GetDataCache, but not used in Classic.
+                    MarkCustomHeaderAsRequired("SECRETS");
+                    MarkCustomHeaderAsRequired("WORLD_QUESTS");
+
+                    // These are referenced in topHeaders, possibly include as a field option on the definition? (like top = true/value or something)
+                    MarkCustomHeaderAsRequired("BONUS_OBJECTIVES");
+                    MarkCustomHeaderAsRequired("BUILDINGS");
+                    MarkCustomHeaderAsRequired("EMISSARY_QUESTS");
+                    MarkCustomHeaderAsRequired("SPECIAL");
+                    MarkCustomHeaderAsRequired("TREASURES");
+                    MarkCustomHeaderAsRequired("WEEKLY_HOLIDAYS");
+
+#endif
+
+                    // Now export it based on what we know.
                     var builder = new StringBuilder("-------------------------------------------------------\n--   C U S T O M   H E A D E R S   M O D U L E   --\n-------------------------------------------------------\n")
                         .AppendLine("local _ = select(2, ...);")
                         .AppendLine("local L = _.L;")
@@ -4407,76 +4495,76 @@ namespace ATT
                     var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
                     foreach (var key in CustomHeaders.Keys)
                     {
-                        // TODO: Include Only Referenced Headers!
-                        //if (CUSTOM_HEADERS_WITH_REFERENCES.ContainsKey(key))
-                        //{
-                        if (CustomHeaders.TryGetValue(key, out object o) && o is Dictionary<string, object> header)
+                        // Include Only Referenced Headers!
+                        if (CUSTOM_HEADERS_WITH_REFERENCES.ContainsKey(key))
                         {
-                            keys.Add(key);
-                            if (header.TryGetValue("icon", out object value))
+                            if (CustomHeaders.TryGetValue(key, out object o) && o is Dictionary<string, object> header)
                             {
-                                icons[key] = value.ToString().Replace("\\", "/");
-                            }
-                            if (header.TryGetValue("constant", out value))
-                            {
-                                constants[key] = value.ToString();
-                            }
-                            if (header.TryGetValue("text", out value))
-                            {
-                                if (!(value is Dictionary<string, object> localeData))
+                                keys.Add(key);
+                                if (header.TryGetValue("icon", out object value))
                                 {
-                                    localeData = new Dictionary<string, object>
-                                    {
-                                        ["en"] = value
-                                    };
+                                    icons[key] = value.ToString().Replace("\\", "/");
                                 }
-                                foreach (var locale in localeData)
+                                if (header.TryGetValue("constant", out value))
                                 {
-                                    if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                    constants[key] = value.ToString();
+                                }
+                                if (header.TryGetValue("text", out value))
+                                {
+                                    if (!(value is Dictionary<string, object> localeData))
                                     {
-                                        localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        localeData = new Dictionary<string, object>
+                                        {
+                                            ["en"] = value
+                                        };
                                     }
-                                    sublocale[key] = locale.Value.ToString();
-                                }
-                            }
-                            if (header.TryGetValue("description", out value))
-                            {
-                                if (!(value is Dictionary<string, object> localeData))
-                                {
-                                    localeData = new Dictionary<string, object>
+                                    foreach (var locale in localeData)
                                     {
-                                        ["en"] = value
-                                    };
-                                }
-                                foreach (var locale in localeData)
-                                {
-                                    if (!localizationForDescriptions.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
-                                    {
-                                        localizationForDescriptions[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                        {
+                                            localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        }
+                                        sublocale[key] = locale.Value.ToString();
                                     }
-                                    sublocale[key] = locale.Value.ToString();
                                 }
-                            }
-                            if (header.TryGetValue("lore", out value))
-                            {
-                                if (!(value is Dictionary<string, object> localeData))
+                                if (header.TryGetValue("description", out value))
                                 {
-                                    localeData = new Dictionary<string, object>
+                                    if (!(value is Dictionary<string, object> localeData))
                                     {
-                                        ["en"] = value
-                                    };
-                                }
-                                foreach (var locale in localeData)
-                                {
-                                    if (!localizationForLore.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
-                                    {
-                                        localizationForLore[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        localeData = new Dictionary<string, object>
+                                        {
+                                            ["en"] = value
+                                        };
                                     }
-                                    sublocale[key] = locale.Value.ToString();
+                                    foreach (var locale in localeData)
+                                    {
+                                        if (!localizationForDescriptions.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                        {
+                                            localizationForDescriptions[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        }
+                                        sublocale[key] = locale.Value.ToString();
+                                    }
+                                }
+                                if (header.TryGetValue("lore", out value))
+                                {
+                                    if (!(value is Dictionary<string, object> localeData))
+                                    {
+                                        localeData = new Dictionary<string, object>
+                                        {
+                                            ["en"] = value
+                                        };
+                                    }
+                                    foreach (var locale in localeData)
+                                    {
+                                        if (!localizationForLore.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                        {
+                                            localizationForLore[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        }
+                                        sublocale[key] = locale.Value.ToString();
+                                    }
                                 }
                             }
                         }
-                        //}
                     }
                     keys.Sort(new Comparison<long>((i1, i2) => i2.CompareTo(i1)));
 
