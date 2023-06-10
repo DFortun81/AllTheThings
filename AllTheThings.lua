@@ -6088,33 +6088,41 @@ app.CacheField = CacheField;
 local referenceCounter = {};
 app.ReferenceCounter = referenceCounter;
 app.CheckReferenceCounters = function()
-	local CUSTOM_HEADERS = {};
-	local NO_REFERENCES,ONLY_ONE_REFERENCE,LESS_THAN_FIVE = {},{},{};
-	CUSTOM_HEADERS.NO_REFERENCES = NO_REFERENCES;
-	CUSTOM_HEADERS.ONLY_ONE_REFERENCE = ONLY_ONE_REFERENCE;
-	CUSTOM_HEADERS.LESS_THAN_FIVE = LESS_THAN_FIVE;
+	local CUSTOM_HEADERS, SORTED_LIST, SORTED_LIST_BY_COUNT = {},{},{};
+	CUSTOM_HEADERS.SORTED_LIST = SORTED_LIST;
+	CUSTOM_HEADERS.SORTED_LIST_BY_COUNT = SORTED_LIST_BY_COUNT;
 	for id,count in pairs(referenceCounter) do
-		if tonumber(id) < 1 then
-			if count == 1 then
-				ONLY_ONE_REFERENCE[id] = 1;
-				print("Custom Header " .. id .. " ONLY has 1 reference!");
-			elseif count < 5 then
-				--print("Custom Header " .. id .. " has a handful of references [" .. count .. "]");
-				LESS_THAN_FIVE[id] = count;
-			end
+		if type(id) == "number" and tonumber(id) < 1 and tonumber(id) > -100000 then
+			tinsert(SORTED_LIST, { id, count });
+			tinsert(SORTED_LIST_BY_COUNT, { id, count });
 		end
 	end
 	for id,_ in pairs(L.HEADER_NAMES) do
 		if not referenceCounter[id] then
-			NO_REFERENCES[id] = 1;
-			print("Custom Header " .. id .. " has no references.");
+			tinsert(SORTED_LIST, { id, 0 });
+			tinsert(SORTED_LIST_BY_COUNT, { id, 0 });
+		end
+	end
+	for id,_ in pairs(L.HEADER_DESCRIPTIONS) do
+		if not referenceCounter[id] then
+			tinsert(SORTED_LIST, { id, 0, " and only exists as a description..." });
+			tinsert(SORTED_LIST_BY_COUNT, { id, 0, " and only exists as a description..." });
 		end
 	end
 	for id,_ in pairs(L.HEADER_ICONS) do
 		if not referenceCounter[id] then
-			NO_REFERENCES[id] = 1;
-			print("Custom Header " .. id .. " has no references, but exists in the icons.");
+			tinsert(SORTED_LIST, { id, 0, " and only exists as an icon..." });
+			tinsert(SORTED_LIST_BY_COUNT, { id, 0, " and only exists as an icon..." });
 		end
+	end
+	table.sort(SORTED_LIST, function(a, b)
+		return (a[1] or 0) < (b[1] or 0);
+	end);
+	table.sort(SORTED_LIST_BY_COUNT, function(a, b)
+		return (a[2] or 0) < (b[2] or 0);
+	end);
+	for _,data in ipairs(SORTED_LIST) do
+		print("Custom Header " .. data[1] .. " has " .. data[2] .. " references" .. (data[3] or "."));
 	end
 	app.SetDataMember("CUSTOM_HEADERS", CUSTOM_HEADERS);
 end

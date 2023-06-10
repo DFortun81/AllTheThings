@@ -167,8 +167,8 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 	n(-582, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- WOTLK Northrend Heroic Upgrade ("Cheap")
 		["timeline"] = { "added 3.3.5" },
 		["groups"] = {
-		i(198665),	-- Pebble's Pebble
-		i(198647),	-- Fishspeaker's Lucky Lure
+			i(198665),	-- Pebble's Pebble
+			i(198647),	-- Fishspeaker's Lucky Lure
 			ach(16332, {	-- The Perfect Pebble
 				["providers"] = {
 					{ "n", 194870 },	-- Pebble
