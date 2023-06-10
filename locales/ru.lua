@@ -759,15 +759,6 @@ for key,value in pairs({
 		[-795] = "Подземелья Боевых питомцев",						-- Pet Battle Dungeons
 	-- Chests
 		[-851] = "Тайник Темной Империи",							-- Black Empire Cache
-	-- Heart of Azeroth
-		[-853] = "Все роли",										-- All Roles
-		[-854] = "Боец",											-- DPS
-		[-855] = "Лекарь",											-- Healers
-		[-856] = "Танк",											-- Tanks
-		[-858] = "Ранг 1",											-- Rank 1
-		[-859] = "Ранг 2",											-- Rank 2
-		[-860] = "Ранг 3",											-- Rank 3
-		[-861] = "Ранг 4",											-- Rank 4
 	-- Shadowlands Header
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Улучшения для Обители",							-- Sanctum Upgrades

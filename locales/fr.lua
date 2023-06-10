@@ -746,15 +746,6 @@ for key,value in pairs({
 		[-795] = "Mascotte des combat des donjons",					-- Pet Battle Dungeons
 	-- Chests
 		[-851] = "Cache de l’Empire noir",							-- Black Empire Cache
-	-- Heart of Azeroth
-		[-853] = "Tous les Rôles",									-- All Roles
-		[-854] = "Dégâts",											-- DPS
-		[-855] = "Soigneurs",										-- Healers
-		[-856] = "Tanks",											-- Tanks
-		[-858] = "Rang 1",											-- Rank 1
-		[-859] = "Rang 2",											-- Rank 2
-		[-860] = "Rang 3",											-- Rank 3
-		[-861] = "Rang 4",											-- Rank 4
 	-- Shadowlands Header
 		[-979] = "Négociant Ve'ken & Négociant Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Améliorations du sanctum",						-- Sanctum Upgrades

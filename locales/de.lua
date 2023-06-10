@@ -722,15 +722,6 @@ for key,value in pairs({
 		[-795] = "Haustierkampf Instanzen",							-- Pet Battle Dungeons
 	-- Chests
 		[-851] = "Truhe des Schwarzen Imperiums",					-- Black Empire Cache
-	-- Heart of Azeroth
-		[-853] = "Alle Rollen",										-- All Roles
-		[-854] = "DDs",												-- DPS
-		[-855] = "Heiler",											-- Healers
-		[-856] = "Tanks",											-- Tanks
-		[-858] = "Rang 1",											-- Rank 1
-		[-859] = "Rang 2",											-- Rank 2
-		[-860] = "Rang 3",											-- Rank 3
-		[-861] = "Rang 4",											-- Rank 4
 	-- Shadowlands Header
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Sanktumaufwertungen",								-- Sanctum Upgrades

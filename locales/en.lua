@@ -1230,16 +1230,7 @@ app.L = {
 	-- Chests
 		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Heart of Azeroth
-		[-852] = app.asset("Category_AzeriteEssences"),										-- Azerite Essences
-		[-853] = "Interface\\Icons\\inv_azeritedebuff",										-- All Roles
-		[-854] = "Interface\\Icons\\spell_fire_twilightpyroblast",							-- DPS
-		[-855] = "Interface\\Icons\\spell_nature_healingwavegreater",						-- Healers
-		[-856] = "Interface\\Icons\\ability_warrior_shieldwall",							-- Tanks
 		[-857] = "Interface\\Icons\\inv_relics_hourglass",									-- Mythic+
-		[-858] = "Interface\\Icons\\inv_smallazeritefragment",								-- Rank 1
-		[-859] = "Interface\\Icons\\inv_tinyazeritesplinter",								-- Rank 2
-		[-860] = "Interface\\Icons\\inv_smallazeriteshard",									-- Rank 3
-		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 	-- SL Headers
 		[-900] = 3675495,																	-- Covenant Sanctums
 		[-901] = 3726261,																	-- Covenant Callings
@@ -1620,16 +1611,7 @@ app.L = {
 	-- Chests
 		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Heart of Azeroth
-		[-852] = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE,					-- Heart of Azeroth Essences
-		[-853] = "All Roles",													-- All Roles
-		[-854] = "DPS",															-- DPS
-		[-855] = "Healers",														-- Healers
-		[-856] = "Tanks",														-- Tanks
 		[-857] = PLAYER_DIFFICULTY_MYTHIC_PLUS,									-- Mythic+
-		[-858] = string.format(AZERITE_ESSENCE_RANK, 1),						-- Rank 1
-		[-859] = string.format(AZERITE_ESSENCE_RANK, 2),						-- Rank 2
-		[-860] = string.format(AZERITE_ESSENCE_RANK, 3),						-- Rank 3
-		[-861] = string.format(AZERITE_ESSENCE_RANK, 4),						-- Rank 4
 	-- Shadowlands Header
 		[-900] = select(1,GetCategoryInfo(15441)),								-- Covenant Sanctums
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings

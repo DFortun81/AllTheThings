@@ -17949,7 +17949,7 @@ function app:GetDataCache()
 		tinsert(g, DynamicCategory(db, "artifactID"));
 
 		-- Azerite Essences (Dynamic)
-		local db = app.CreateNPC(-852);
+		local db = app.CreateNPC(app.HeaderConstants.AZERITE_ESSENCES);
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "azeriteEssenceID"));
 

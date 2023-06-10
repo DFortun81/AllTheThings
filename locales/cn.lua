@@ -790,11 +790,6 @@ for key,value in pairs({
 		[-795] = "宠物对战地下城",										-- Pet Battle Dungeons
 	-- Chests
 		[-851] = "黑暗帝国宝箱",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
-	-- Heart of Azeroth
-		[-853] = "全部角色",											-- All Roles
-		[-854] = "输出",												-- DPS
-		[-855] = "治疗",												-- Healers
-		[-856] = "坦克",												-- Tanks
 	-- Shadowlands Header
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "圣所升级",											-- Sanctum Upgrades
