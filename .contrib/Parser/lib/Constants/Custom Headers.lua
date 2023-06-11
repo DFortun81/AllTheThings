@@ -3,9 +3,6 @@
 -------------------------------------------
 SETS = -1000;
 
--- D&R
-MYTHIC_PLUS = -857;
-
 -- Mythic Seasons
 SEASON_INFESTED = 13080;
 SEASON_REAPING = 13449;
@@ -99,7 +96,6 @@ SOURCELESS = -219;
 CRAFTABLES = -42;
 MAILBOX = -297;
 TCG_HEADER = -535;
-IN_GAME_SHOP = -36;
 AVAILABLE = -1204;
 UNAVAILABLE = -1205;
 EXPANSION_PRELAUNCH = -520;

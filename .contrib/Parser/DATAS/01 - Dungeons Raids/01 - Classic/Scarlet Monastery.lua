@@ -1,6 +1,50 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+SCARLET_MONASTERY_GRAVEYARD = createHeader({
+	readable = "Graveyard",
+	icon = "Interface\\Icons\\Inv_misc_bone_humanskull_01",
+	text = {
+		en = "Graveyard",
+		de = "Friedhof",
+		fr = "Cimetière",
+		ru = "Кладбище",
+		cn = "墓地",
+	},
+});
+SCARLET_MONASTERY_LIBRARY = createHeader({
+	readable = "Library",
+	icon = "Interface\\Icons\\INV_Misc_Book_13",
+	text = {
+		en = "Library",
+		de = "Bibliothek",
+		fr = "Librairie",
+		ru = "Библиотека",
+		cn = "图书馆",
+	},
+});
+SCARLET_MONASTERY_ARMORY = createHeader({
+	readable = "Armory",
+	icon = "Interface\\Icons\\inv_helmet_25",
+	text = {
+		en = "Armory",
+		de = "Waffenkammer",
+		fr = "Armurerie",
+		ru = "Оружейная",
+		cn = "武器库",
+	},
+});
+SCARLET_MONASTERY_CATHEDRAL = createHeader({
+	readable = "Cathedral",
+	icon = "Interface\\Icons\\inv_helmet_12",
+	text = {
+		en = "Cathedral",
+		de = "Kathedrale",
+		fr = "Cathédrale",
+		ru = "Собор",
+		cn = "修道院",
+	},
+});
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(316, {	-- Scarlet Monastery
 		-- #if BEFORE MOP
@@ -216,7 +260,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(7727),	-- Watchman Pauldrons
 					i(7757),	-- Windweaver Staff
 				}),
-				n(-85, {	-- Graveyard
+				n(SCARLET_MONASTERY_GRAVEYARD, {
 					["timeline"] = { "removed 5.0.4" },
 					["groups"] = {
 						n(QUESTS, {
@@ -397,7 +441,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				n(-86, {	-- Library
+				n(SCARLET_MONASTERY_LIBRARY, {
 					["timeline"] = { "removed 5.0.4" },
 					["lvl"] = 28,
 					["groups"] = {
@@ -590,7 +634,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				n(-87, {	-- Armory
+				n(SCARLET_MONASTERY_ARMORY, {
 					["timeline"] = { "removed 5.0.4" },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key
@@ -735,7 +779,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				n(-88, {	-- Cathedral
+				n(SCARLET_MONASTERY_CATHEDRAL, {
 					["timeline"] = { "removed 5.0.4" },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key

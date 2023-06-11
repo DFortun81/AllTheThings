@@ -672,11 +672,6 @@ for key,value in pairs({
 		[-53] = "Sonnenwendfest",									-- Midsummer Fire Festival
 		[-55] = "Piratentag",										-- Pirates' Day
 		[-59] = "Tag der Toten",									-- Day of the Dead
-	-- SM
-		[-85] = "Friedhof",											-- Graveyard
-		[-86] = "Bibliothek",										-- Library
-		[-87] = "Waffenkammer",										-- Armory
-		[-88] = "Kathedrale",										-- Cathedral
 	-- Garrison
 		[-152] = "Garnisonskampagne",								-- Garrison Campaign
 	-- Fishing

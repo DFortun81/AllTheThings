@@ -996,7 +996,6 @@ app.L = {
 	["HEADER_ICONS"] = {
 		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
-		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
 		[-40] = "Interface\\Icons\\Inv_misc_book_17",										-- Legacy
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
 		[-42] = app.asset("Category_Crafting"),												-- Crafted Item
@@ -1012,12 +1011,6 @@ app.L = {
 		[-59] = "Interface\\Icons\\inv_misc_bone_humanskull_02",							-- Day of the Dead
 		[-60] = "Interface\\Icons\\inv_thanksgiving_turkey",								-- Pilgrim's Bounty
 		[-61] = "Interface\\Icons\\achievement_worldevent_merrymaker",						-- The Feast of Winter Veil
-
-	-- SM
-		[-85] = "Interface\\Icons\\Achievement_BG_Xkills_AVgraveyard",						-- Graveyard (SM)
-		[-86] = "Interface\\Icons\\INV_Misc_Book_13",										-- Library (SM)
-		[-87] = "Interface\\Icons\\Garrison_Building_Armory",								-- Armory (SM)
-		[-88] = "Interface\\Icons\\Ability_Paladin_GaurdedbytheLight",						-- Cathedral (SM)
 
 		[-94] = "Interface\\Icons\\inv_misc_lockbox_1",										-- Black Market AH
 	-- Garrisons
@@ -1203,8 +1196,6 @@ app.L = {
 		[-807] = "Interface\\Icons\\inv_hivemind",											-- Hivemind
 	-- Chests
 		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
-	-- Heart of Azeroth
-		[-857] = "Interface\\Icons\\inv_relics_hourglass",									-- Mythic+
 	-- SL Headers
 		[-900] = 3675495,																	-- Covenant Sanctums
 		[-901] = 3726261,																	-- Covenant Callings
@@ -1341,7 +1332,6 @@ app.L = {
 	["HEADER_NAMES"] = {
 		[-11] = "Common Box Drops",												-- Common Box Drops
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
-		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
 		[-40] = LFG_LIST_LEGACY,												-- Legacy
 		[-41] = "Cache of Madness",												-- Cache of Madness
 		[-42] = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,					-- Crafted Item
@@ -1356,11 +1346,6 @@ app.L = {
 		[-59] = "Day of the Dead",												-- Day of the Dead
 		[-60] = select(1,GetCategoryInfo(14981)),								-- Pilgrim's Bounty
 		[-61] = GetSpellInfo(21953),											-- The Feast of Winter Veil
-	-- SM
-		[-85] = "Graveyard",
-		[-86] = "Library",
-		[-87] = "Armory",
-		[-88] = "Cathedral",
 		
 		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
 	-- Garrisons
@@ -1556,8 +1541,6 @@ app.L = {
 		[-807] = GetSpellInfo(261395),											-- The Hivemind
 	-- Chests
 		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
-	-- Heart of Azeroth
-		[-857] = PLAYER_DIFFICULTY_MYTHIC_PLUS,									-- Mythic+
 	-- Shadowlands Header
 		[-900] = select(1,GetCategoryInfo(15441)),								-- Covenant Sanctums
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings

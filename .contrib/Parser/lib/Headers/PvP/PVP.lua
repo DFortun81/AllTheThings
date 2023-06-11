@@ -1,9 +1,9 @@
 PVP = createHeader({
-	readable = "Player vs. Player",
+	readable = "PvP",
 	constant = "PVP",
 	export = true,
 	icon = [[_.asset("Category_PvP")]],
 	text = {
-		en = [[~BUG_CATEGORY14]],
+		en = [[~PVP]],
 	},
 });

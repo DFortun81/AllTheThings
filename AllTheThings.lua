@@ -18245,12 +18245,8 @@ function app:GetDataCache()
 
 	-- PvP
 	if app.Categories.PVP then
-		db = {};
-		db.g = app.Categories.PVP;
+		db = app.CreateNPC(app.HeaderConstants.PVP, app.Categories.PVP);
 		db.isPVPCategory = true;
-		db.text = STAT_CATEGORY_PVP;
-		db.name = db.text;
-		db.icon = app.asset("Category_PvP");
 		tinsert(g, db);
 	end
 
@@ -18289,11 +18285,7 @@ function app:GetDataCache()
 
 	-- In-Game Store
 	if app.Categories.InGameShop then
-		db = {};
-		db.g = app.Categories.InGameShop;
-		db.text = BATTLE_PET_SOURCE_10;
-		db.name = db.text;
-		db.icon = app.asset("Category_InGameShop");
+		db = app.CreateNPC(app.HeaderConstants.IN_GAME_SHOP, app.Categories.InGameShop);
 		tinsert(g, db);
 	end
 

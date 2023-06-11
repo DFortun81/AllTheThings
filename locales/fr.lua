@@ -675,11 +675,6 @@ for key,value in pairs({
 		[-53] = "Fête du Feu du solstice d’été",					-- Midsummer Fire Festival
 		[-55] = "Jour des pirates",									-- Pirates' Day
 		[-59] = "Jour des morts",									-- Day of the Dead
-	-- SM
-		[-85] = "Cimetière",
-		[-86] = "Librairie",
-		[-87] = "Armurerie",
-		[-88] = "Cathédrale",
 	-- Fishing
 		[-217] = "Appâts",											-- Lures (for Fishing)
 	-- Allied Races

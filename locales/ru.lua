@@ -664,11 +664,6 @@ for key,value in pairs({
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
 		[-55] = "День пирата",									-- Pirates' Day
 		[-59] = "День мертвых",									-- Day of the Dead
-	-- SM
-		[-85] = "Кладбище",
-		[-86] = "Библиотека",
-		[-87] = "Оружейная",
-		[-88] = "Собор",
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-130] = "Сумеречный лес - активен",						-- Duskwood Active
 		[-131] = "Внутренние земли - активен",						-- The Hinterlands Active

@@ -692,11 +692,6 @@ for key,value in pairs({
 		[-53] = "仲夏火焰节",											-- Midsummer Fire Festival
 		[-55] = "海盗日",												-- Pirates' Day
 		[-59] = "悼念日",												-- Day of the Dead
-	-- SM
-		[-85] = "墓地",												-- Graveyard
-		[-86] = "图书馆",												-- Library
-		[-87] = "武器库",												-- Armory
-		[-88] = "修道院",												-- Cathedral
 	-- Garrisons
 		[-152] = "要塞战役",											-- Garrison Campaign
 	-- Class Trial
