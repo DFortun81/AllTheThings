@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using KeraLua;
 using NLua;
 
 namespace ATT
@@ -92,10 +93,11 @@ namespace ATT
                     return;
                 }
                 luaFiles.Sort();
-                Lua lua = new Lua();
+                NLua.Lua lua = new NLua.Lua();
                 lua.State.Encoding = Encoding.UTF8;
                 // link the Lua 'print' function to instead perform a Trace print
                 lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
+                lua.DoString($"CurrentFileName = [[{mainFileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
                 lua.DoString(ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
                 Framework.IgnoredValue = lua.GetString("IGNORED_VALUE");
 
@@ -432,6 +434,7 @@ namespace ATT
                 {
                     if (fileCount > 0) builder.AppendLine();
                     builder.Append("-- ").Append(shortname).Append(file.Replace(filename, "")).AppendLine();
+                    builder.Append("CurrentSubFileName = \"").Append(shortname.Replace("\\", "/").Replace("..//", "")).Append(file.Replace(filename, "").Replace("\\", "/")).AppendLine("\";");
                     builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(file, Encoding.UTF8))).Append("\nend)();");
                     ++fileCount;
                 }
@@ -517,7 +520,7 @@ namespace ATT
             }
         }
 
-        private static void ParseLUAFile(Lua lua, string fileName)
+        private static void ParseLUAFile(NLua.Lua lua, string fileName)
         {
             // copy the base LUA state for use on this file due to shared access issues
             //Lua lua = new Lua(mainLua.State);
@@ -529,7 +532,7 @@ namespace ATT
                 try
                 {
                     //Trace.WriteLine("Parsing:" + fileName);
-                    lua.DoString("AllTheThings = {};_ = AllTheThings;");
+                    lua.DoString($"AllTheThings = {{}};_ = AllTheThings;CurrentFileName = [[{fileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
                     lua.DoString(content = ProcessContent(File.ReadAllText(fileName, Encoding.UTF8)));
                     Framework.Merge(lua.GetTable("AllTheThings"));
                     break;

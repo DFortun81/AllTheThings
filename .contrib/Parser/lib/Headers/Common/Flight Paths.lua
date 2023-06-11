@@ -7,7 +7,7 @@ FLIGHT_PATHS = createHeader({
 		-- #if ANYCLASSIC
 		en = "Flight Paths",
 		-- #else
-		en = [[GetSpellInfo(218950)]],
+		en = [[~GetSpellInfo(218950)]],
 		-- #endif
 		ru = "Точка полета",
 	},

@@ -1065,14 +1065,16 @@ CustomHeaders = customHeaders;	-- This is global, so that it can be found by Par
 createHeader = function(data)
 	if not data then
 		print("INVALID HEADER: You must pass data into the createHeader function.");
+	elseif not data.readable then
+		print("INVALID HEADER (missing 'readable')", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
 	elseif not (data.text and (type(data.text) == "string" or (type(data.text) == "table" and data.text.en))) then
 		print("INVALID HEADER", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
 	else
 		local headerID = nextHeaderID;
 		customHeaders[headerID] = data;
 		nextHeaderID = nextHeaderID - 1;
+		data.filepath = CurrentSubFileName or CurrentFileName;
 		--print("HEADER", headerID .. ":", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
-		if data.readable then data.readable = nil; end	-- We don't want this in the final product.
 		return headerID;
 	end
 end

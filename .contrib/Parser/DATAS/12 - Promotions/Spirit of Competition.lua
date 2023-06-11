@@ -6,7 +6,7 @@ SPIRIT_OF_COMPETITION = createHeader({
 	icon = "Interface\\Icons\\inv_jewelry_amulet_03",
 	text = {
 		-- #if AFTER MOP
-		en = [[C_PetJournal.GetPetInfoBySpeciesID(179)]],
+		en = [[~C_PetJournal.GetPetInfoBySpeciesID(179)]],
 		-- #else
 		en = "Spirit of Competition",
 		-- #endif

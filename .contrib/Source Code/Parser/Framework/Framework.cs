@@ -35,6 +35,14 @@ namespace ATT
         internal static CustomConfiguration Config { get; set; }
 
         /// <summary>
+        /// All of the locales that we support.
+        /// </summary>
+        internal static List<string> SupportedLocales = new List<string>
+        {
+            "en", "es", "de", "fr", "it", "pt", "ru", "ko", "cn"
+        };
+
+        /// <summary>
         /// The very first Phase ID as indicated in _main.lua.
         /// </summary>
         public static readonly Dictionary<string, int> FIRST_EXPANSION_PHASE = new Dictionary<string, int>
@@ -4051,6 +4059,38 @@ namespace ATT
             }
             return builder.Append("\"").Append(value.Replace("\n", "\\n").Replace("\r", "\\r")).Append("\",");
         }
+
+        static StringBuilder ExportStringKeyFieldValue(StringBuilder builder, object key, string field, string value)
+        {
+            builder.Append("[").Append(key).Append("]").Append(field).Append(" = ");
+            if (value.StartsWith("~"))
+            {
+                return builder.Append(value.Substring(1).Replace("\n", "\\n").Replace("\r", "\\r"));
+            }
+            else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(") || value.StartsWith("C_")
+                || value.StartsWith("_."))
+            {
+                return builder.Append(value.Replace("\n", "\\n").Replace("\r", "\\r"));
+            }
+            return builder.Append("\"").Append(value.Replace("\n", "\\n").Replace("\r", "\\r")).Append("\"");
+        }
+
+        static StringBuilder ExportReadableFilepathComment(StringBuilder builder, string readable, string filepath)
+        {
+            if (string.IsNullOrEmpty(readable))
+            {
+                builder.Append("\t-- (MISSING 'readable')");
+            }
+            else
+            {
+                builder.Append("\t-- ").Append(readable);
+            }
+            if (!string.IsNullOrEmpty(filepath))
+            {
+                return builder.Append(" [").Append(filepath).Append("]");
+            }
+            return builder;
+        }
         #endregion
 
         #region Export (Clean)
@@ -4265,6 +4305,7 @@ namespace ATT
                 if (DebugMode)
                 {
                     CurrentParseStage = ParseStage.ExportDebugData;
+
                     ATT.Export.DebugMode = true;
                     var debugFolder = Directory.CreateDirectory($"{addonRootFolder}/.contrib/Debugging");
                     if (debugFolder.Exists)
@@ -4326,6 +4367,157 @@ namespace ATT
                             }
                             builder.AppendLine("};");
                             File.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString(), Encoding.UTF8);
+                        }
+
+                        // Export the Custom Headers file.
+                        if (CustomHeaders != null && CustomHeaders.Any())
+                        {
+                            // Now export it based on what we know.
+                            var builder = new StringBuilder("-------------------------------------------------------\n--   C U S T O M   H E A D E R S   M O D U L E   --\n-------------------------------------------------------\n")
+                                .AppendLine("local headers = CustomHeaders or {};");
+                            var keys = new List<long>();
+                            var icons = new Dictionary<long, string>();
+                            var constants = new Dictionary<long, string>();
+                            var localizationForText = new Dictionary<string, Dictionary<long, string>>();
+                            var localizationForLore = new Dictionary<string, Dictionary<long, string>>();
+                            var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
+                            foreach (var key in CustomHeaders.Keys)
+                            {
+                                if (CustomHeaders.TryGetValue(key, out object o) && o is Dictionary<string, object> header)
+                                {
+                                    keys.Add(key);
+                                    string readable = null, filepath = null, icon = null, constant = null;
+                                    if (header.TryGetValue("readable", out object value))
+                                    {
+                                        readable = value.ToString();
+                                    }
+                                    else
+                                    {
+                                        builder.Append("headers[").Append(key).Append("].readable = \"\";\t-- MISSING 'readable'! This is required!").AppendLine();
+                                    }
+                                    if (header.TryGetValue("constant", out value))
+                                    {
+                                        constant = value.ToString();
+                                    }
+                                    if (header.TryGetValue("filepath", out value))
+                                    {
+                                        filepath = value.ToString();
+                                    }
+                                    if (header.TryGetValue("icon", out value))
+                                    {
+                                        icon = value.ToString().Replace("\\", "/");
+                                    }
+                                    else
+                                    {
+                                        builder.Append("headers");
+                                        ExportStringKeyFieldValue(builder, key, ".icon", "Interface/Icons/inv_misc_questionmark");
+                                        builder.Append(";");
+                                        ExportReadableFilepathComment(builder, readable, filepath).AppendLine();
+                                    }
+                                    if (header.TryGetValue("text", out value))
+                                    {
+                                        if (!(value is Dictionary<string, object> localeData))
+                                        {
+                                            localeData = new Dictionary<string, object>
+                                            {
+                                                ["en"] = value
+                                            };
+                                        }
+                                        if (!localeData.TryGetValue("en", out string enString))
+                                        {
+                                            enString = readable;
+                                            builder.Append("headers");
+                                            ExportStringKeyFieldValue(builder, key, ".text.en", enString);
+                                            builder.Append(";");
+                                            ExportReadableFilepathComment(builder, readable, filepath).AppendLine(" - You MUST supply an 'en' localization!");
+                                            localeData["en"] = enString;    // This will prevent it from getting written twice
+                                        }
+                                        if (!enString.Contains("~"))
+                                        {
+                                            foreach (var locale in SupportedLocales)
+                                            {
+                                                if (!localeData.TryGetValue(locale, out value))
+                                                {
+                                                    builder.Append("headers");
+                                                    ExportStringKeyFieldValue(builder, key, $".text.{locale}", enString);
+                                                    builder.Append(";");
+                                                    ExportReadableFilepathComment(builder, readable, filepath).AppendLine();
+                                                }
+                                            }
+                                        }
+                                    }
+                                    if (header.TryGetValue("description", out value))
+                                    {
+                                        if (!(value is Dictionary<string, object> localeData))
+                                        {
+                                            localeData = new Dictionary<string, object>
+                                            {
+                                                ["en"] = value
+                                            };
+                                        }
+                                        if (!localeData.TryGetValue("en", out string enString))
+                                        {
+                                            enString = readable;
+                                            builder.Append("headers");
+                                            ExportStringKeyFieldValue(builder, key, ".description.en", enString);
+                                            builder.Append(";");
+                                            ExportReadableFilepathComment(builder, readable, filepath).AppendLine(" - You MUST supply an 'en' localization!");
+                                            localeData["en"] = enString;    // This will prevent it from getting written twice
+                                        }
+                                        if (!enString.Contains("~"))
+                                        {
+                                            foreach (var locale in SupportedLocales)
+                                            {
+                                                if (!localeData.TryGetValue(locale, out value))
+                                                {
+                                                    builder.Append("headers");
+                                                    ExportStringKeyFieldValue(builder, key, $".description.{locale}", enString);
+                                                    builder.Append(";");
+                                                    ExportReadableFilepathComment(builder, readable, filepath).AppendLine();
+                                                }
+                                            }
+                                        }
+                                    }
+                                    if (header.TryGetValue("lore", out value))
+                                    {
+                                        if (!(value is Dictionary<string, object> localeData))
+                                        {
+                                            localeData = new Dictionary<string, object>
+                                            {
+                                                ["en"] = value
+                                            };
+                                        }
+                                        if (!localeData.TryGetValue("en", out string enString))
+                                        {
+                                            enString = readable;
+                                            builder.Append("headers");
+                                            ExportStringKeyFieldValue(builder, key, ".lore.en", enString);
+                                            builder.Append(";");
+                                            ExportReadableFilepathComment(builder, readable, filepath).AppendLine(" - You MUST supply an 'en' localization!");
+                                            localeData["en"] = enString;    // This will prevent it from getting written twice
+                                        }
+                                        if (!enString.Contains("~"))
+                                        {
+                                            foreach (var locale in SupportedLocales)
+                                            {
+                                                if (!localeData.TryGetValue(locale, out value))
+                                                {
+                                                    builder.Append("headers");
+                                                    ExportStringKeyFieldValue(builder, key, $".lore.{locale}", enString);
+                                                    builder.Append(";");
+                                                    ExportReadableFilepathComment(builder, readable, filepath).AppendLine();
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            keys.Sort(new Comparison<long>((i1, i2) => i2.CompareTo(i1)));
+
+                            // Check to make sure the content is different since Diff tools are dumb as hell.
+                            var filename = Path.Combine(debugFolder.FullName, "Custom Headers.lua");
+                            var content = builder.ToString().Replace("\r\n", "\n").Trim();
+                            if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
                         }
 
                         // Export the Object DB file.
