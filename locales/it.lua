@@ -3449,7 +3449,7 @@ for key,value in pairs({
 	[381110] = "Scrigno di Gioielli Dimenticati",	-- Forgotten Jewel Box
 	[381153] = "Formazione di Gemme di Rubino",	-- Ruby Gem Cluster
 	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
-	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
+	[381158] = "Flagello Demoniaco degli Gnoll",	-- Gnoll Fiend Flail
 	[381160] = "Bussola Perduta",	-- Lost Compass
 	[381216] = "Lente d'Ingrandimento dell'Ispettore",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
