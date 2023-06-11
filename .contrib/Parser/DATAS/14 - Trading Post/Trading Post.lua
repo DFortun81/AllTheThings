@@ -69,11 +69,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	})),
 	n(VENDORS, {
 		n(AVAILABLE, {
-			n(ACHIEVEMENTS, {
-				ach(9925, {	-- Friends In Places Yet Even Higher Than That
-					["provider"] = { "i", 118515 },	-- Cindermane Charger (MOUNT!)
-				}),
-			}),
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(118515),	-- Cindermane Charger (MOUNT!)
 				i(206976, {	-- Royal Swarmer's Reins (MOUNT!)
