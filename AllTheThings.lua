@@ -7630,9 +7630,11 @@ local function CheckCollectible(ref)
 		-- previously checked without Settings changed
 		if settingsChange then
 			if app._SettingsRefresh == settingsChange then
+				-- app.PrintDebug("CC:Cached",ref.hash,ref._CheckCollectible)
 				return ref._CheckCollectible;
 			end
 		end
+		-- app.PrintDebug("CC:Check",ref.hash)
 		ref._SettingsRefresh = app._SettingsRefresh;
 		ref._CheckCollectible = nil;
 		-- app.PrintDebug("CheckCollectible",ref.hash)
@@ -7723,6 +7725,17 @@ app.CollectibleAsCost = function(t)
 			return;
 		end
 	end
+	local settingsChange = t._SettingsRefresh;
+	-- previously checked without Settings changed
+	if settingsChange then
+		if app._SettingsRefresh == settingsChange then
+			-- app.PrintDebug("CAC:Cached",t.hash,t._CheckCollectible)
+			return t._CheckCollectible;
+		end
+	end
+	-- app.PrintDebug("CAC:Check",t.hash)
+	t._SettingsRefresh = app._SettingsRefresh;
+	t._CheckCollectible = nil;
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
 	t.collectibleAsCost = false;
 	-- check the collectibles if any are considered collectible currently
@@ -7731,6 +7744,7 @@ app.CollectibleAsCost = function(t)
 		-- Use the common collectibility check logic
 		costNeeded = CheckCollectible(ref);
 		if costNeeded then
+			t._CheckCollectible = true;
 			t.collectibleAsCost = nil;
 			-- app.PrintDebug("CollectibleAsCost:true",t.hash,"from",ref.hash)
 			-- Found something collectible for t, make sure t is actually obtainable as well
@@ -12689,7 +12703,7 @@ local mapFields = {
 	["lvl"] = function(t)
 		return C_Map_GetMapLevels(t.mapID);
 	end,
-	["coord"] = function(t)
+	["coord_tooltip"] = function(t)
 		-- if this map is the same map as the one the player is currently within, allow displaying the player's current coordinates
 		local myMapID = app.CurrentMapID;
 		local mapID, maps = t.mapID, t.maps;
@@ -16790,10 +16804,11 @@ RowOnEnter = function (self)
 				first = nil;
 			end
 		end
-		if reference.coord and app.Settings:GetTooltipSetting("Coordinates") then
+		local coord = reference.coord or reference.coord_tooltip;
+		if coord and app.Settings:GetTooltipSetting("Coordinates") then
 			GameTooltip:AddDoubleLine("Coordinate",
-				GetNumberWithZeros(math.floor(reference.coord[1] * 10) * 0.1, 1) .. ", " ..
-				GetNumberWithZeros(math.floor(reference.coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
+				GetNumberWithZeros(math.floor(coord[1] * 10) * 0.1, 1) .. ", " ..
+				GetNumberWithZeros(math.floor(coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 		end
 		if reference.speciesID then
 			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);

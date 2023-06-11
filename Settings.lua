@@ -2654,7 +2654,7 @@ local function CheckActiveHolidayFilters(self, event)
 	for i=1,events do
 		local event = C_Calendar.GetDayEvent(0, monthDay, i);
 		-- TODO: oof maybe account for time of day?
-		-- app.PrintDebug(event.title,event.calendarType,event.iconTexture)
+		-- app.PrintDebug(event.title,event.calendarType,event.iconTexture,event.eventID)
 		if event and event.calendarType == "HOLIDAY" then
 			local icon = event.iconTexture or 0;
 			local filterKey = icon + (month / 100);

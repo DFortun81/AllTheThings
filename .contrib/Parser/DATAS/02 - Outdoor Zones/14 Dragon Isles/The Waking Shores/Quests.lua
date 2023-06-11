@@ -45,8 +45,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(70125, {	-- Where is Wrathion? [A]
 					["sourceQuests"] = {
 						70122,	-- Explorers in Peril [A]
-						70124,	-- Practice Materials [A]
-						70123,	-- Primal Pests [A]
+						-- 70124,	-- Practice Materials [A]
+						-- 70123,	-- Primal Pests [A]
 					},
 					["provider"] = { "n", 187251 },	-- Toddy Whiskers
 					["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
@@ -55,8 +55,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(69910, {	-- Where is Wrathion? [H]
 					["sourceQuests"] = {
 						65452,	-- Explorers in Peril [H]
-						65451,	-- Practice Materials [H]
-						65453,	-- Primal Pests [H]
+						-- 65451,	-- Practice Materials [H]
+						-- 65453,	-- Primal Pests [H]
 					},
 					["provider"] = { "n", 184870 },	-- Naleidea Rivergleam
 					["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
