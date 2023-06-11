@@ -292,7 +292,12 @@ namespace ATT
                 {
                     if (header.TryGetValue("constant", out object value))
                     {
-                        CUSTOM_HEADER_CONSTANTS[value.ToString()] = pair.Key;
+                        var constant = value.ToString();
+                        CUSTOM_HEADER_CONSTANTS[constant] = pair.Key;
+                        if (header.TryGetValue("export", out value) && (bool)value)
+                        {
+                            MarkCustomHeaderAsRequired(constant);
+                        }
                     }
                 }
             }
@@ -4441,46 +4446,6 @@ namespace ATT
                 if (CustomHeaders != null && CustomHeaders.Any())
                 {
                     CurrentParseStage = ParseStage.ExportCustomHeaders;
-
-                    // Headers referenced dynamically in the addon should be added explicitly here.
-                    // For example, there's a header for Holidays in the addon that used the localization data as a root.
-                    // An easy way to check is to search for "app.HeaderConstants"
-                    // NOTE to self... Rather than do this, why not include all of the ones that specify a constant?
-                    // ERRRRRRR... Yeah... Wait no, I don't want that! Investigate that idea later!
-                    MarkCustomHeaderAsRequired("ACHIEVEMENTS");  // This shouldn't be possible to exclude, but make sure anyways.
-                    MarkCustomHeaderAsRequired("COMMON_BOSS_DROPS");  // This shouldn't be possible to exclude, but make sure anyways.
-                    MarkCustomHeaderAsRequired("FACTIONS");  // This shouldn't be possible to exclude, but make sure anyways.
-                    MarkCustomHeaderAsRequired("FLIGHT_PATHS");  // This shouldn't be possible to exclude, but make sure anyways.
-                    MarkCustomHeaderAsRequired("HOLIDAYS");
-                    MarkCustomHeaderAsRequired("PROFESSIONS");  // This shouldn't be possible to exclude, but make sure anyways.
-                    MarkCustomHeaderAsRequired("PVP");  // This shouldn't be possible to exclude, but make sure anyways.
-                    MarkCustomHeaderAsRequired("QUESTS");  // This shouldn't be possible to exclude, but make sure anyways.
-                    MarkCustomHeaderAsRequired("RARES");  // This shouldn't be possible to exclude, but make sure anyways.
-                    MarkCustomHeaderAsRequired("VENDORS");  // This shouldn't be possible to exclude, but make sure anyways.
-                    MarkCustomHeaderAsRequired("WORLD_BOSSES");  // This shouldn't be possible to exclude, but make sure anyways.
-                    MarkCustomHeaderAsRequired("ZONE_DROPS");  // This shouldn't be possible to exclude, but make sure anyways.
-#if !ANYCLASSIC
-                    // These should probably have their requirement refactored into the parser folder to allow for situational inclusion.
-                    MarkCustomHeaderAsRequired("WEAPONS");  // This is referenced in the pvp_weapons symlink
-                    MarkCustomHeaderAsRequired("ZONE_REWARDS");  // This is referenced in the bfa_azerite_armor_chest_zonedrops symlink
-
-                    // These are referenced in the NPCExpandHeaders / SpecificSources, possibly include as a field option on the definition? (like expand = true or something)
-                    MarkCustomHeaderAsRequired("COMMON_VENDOR_ITEMS");
-                    MarkCustomHeaderAsRequired("DROPS");
-
-                    // These are referenced in GetDataCache, but not used in Classic.
-                    MarkCustomHeaderAsRequired("SECRETS");
-                    MarkCustomHeaderAsRequired("WORLD_QUESTS");
-
-                    // These are referenced in topHeaders, possibly include as a field option on the definition? (like top = true/value or something)
-                    MarkCustomHeaderAsRequired("BONUS_OBJECTIVES");
-                    MarkCustomHeaderAsRequired("BUILDINGS");
-                    MarkCustomHeaderAsRequired("EMISSARY_QUESTS");
-                    MarkCustomHeaderAsRequired("SPECIAL");
-                    MarkCustomHeaderAsRequired("TREASURES");
-                    MarkCustomHeaderAsRequired("WEEKLY_HOLIDAYS");
-
-#endif
 
                     // Now export it based on what we know.
                     var builder = new StringBuilder("-------------------------------------------------------\n--   C U S T O M   H E A D E R S   M O D U L E   --\n-------------------------------------------------------\n")
