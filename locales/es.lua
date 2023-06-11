@@ -945,6 +945,7 @@ for key,value in pairs({
 	[153239] = "Pluma de lechúcico salvaje",	-- Wildkin Feather
 	[157936] = "Montón de porquería de Un'Goro",	-- Un'Goro Dirt Pile
 	[160836] = "Arca de reliquias",	-- Relic Coffer
+	[160845] = "Arca oscura",	-- Dark Coffer
 	[161495] = "Caja fuerte secreta",	-- Secret Safe
 	[161504] = "Un paquetito",	-- A Small Pack
 	[161505] = "Una balsa estropeada",	-- A Wrecked Raft
@@ -972,6 +973,7 @@ for key,value in pairs({
 	[164956] = "Torre de cristal del Oeste",	-- Western Crystal Pylon
 	[164957] = "Torre de cristal del Este",	-- Eastern Crystal Pylon
 	[164958] = "Brote Sangrepétalo",	-- Bloodpetal Sprout
+	[165554] = "El corazón de la montaña",	-- Heart of the Mountain
 	[166863] = "Cadáver reciente de trillanodonte",	-- Fresh Threshadon Carcass
 	[169243] = "Cofre de los Siete",	-- Chest of The Seven
 	[171938] = "Manzana de cactus",	-- Cactus Apple
@@ -1124,6 +1126,7 @@ for key,value in pairs({
 	[179499] = "Cesta de tanino de ogro",	-- Ogre Tannin Basket
 	[179501] = "Alijo de Knot Thimblejack",	-- Knot Thimblejack's Cache
 	[179552] = "Esquema: robot de reparación de campo 74A",	-- Schematic: Field Repair Bot 74A
+	[179553] = "Trozo del Núcleo",	-- Core Fragment
 	[179562] = "Hoja antigua candente",	-- Ancient Heated Blade	--TODO: This was taken from wotlk Wowhead
 	[179564] = "Tributo a Gordok",	-- Gordok Tribute Chest
 	[179565] = "Relicario polvoriento",	-- Dusty Reliquary

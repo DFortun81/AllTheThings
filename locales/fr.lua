@@ -1012,6 +1012,7 @@ for key,value in pairs({
 	[153239] = "Plume d'Indomptable",	-- Wildkin Feather
 	[157936] = "Tas de poussière d'Un'Goro",	-- Un'Goro Dirt Pile
 	[160836] = "Coffret à relique",	-- Relic Coffer
+	[160845] = "Coffre sombre",	-- Dark Coffer
 	[161495] = "Coffre secret",	-- Secret Safe
 	[161504] = "Un petit paquet",	-- A Small Pack
 	[161505] = "Une épave de radeau",	-- A Wrecked Raft
@@ -1039,6 +1040,7 @@ for key,value in pairs({
 	[164956] = "Pylône de cristal ouest",	-- Western Crystal Pylon
 	[164957] = "Pylône de cristal est",	-- Eastern Crystal Pylon
 	[164958] = "Pousse de Pétale-de-sang",	-- Bloodpetal Sprout
+	[165554] = "Cœur de la montagne",	-- Heart of the Mountain
 	[166863] = "Carcasse fraîche de battrodon",	-- Fresh Threshadon Carcass
 	[169243] = "Coffre des sept",	-- Chest of The Seven
 	[171938] = "Pomme de cactus",	-- Cactus Apple
@@ -1191,6 +1193,7 @@ for key,value in pairs({
 	[179499] = "Panier de tanin ogre",	-- Ogre Tannin Basket
 	[179501] = "Réserve de Noué Dédodevie",	-- Knot Thimblejack's Cache
 	[179552] = "Schéma : Robot réparateur 74A",	-- Schematic: Field Repair Bot 74A
+	[179553] = "Fragment du Magma",	-- Core Fragment
 	[179562] = "Ancienne épée chauffée",	-- Ancient Heated Blade	--TODO: This was taken from wotlk Wowhead
 	[179564] = "Tribut des Gordok",	-- Gordok Tribute Chest
 	[179565] = "Reliquaire poussiéreux",	-- Dusty Reliquary

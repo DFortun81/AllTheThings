@@ -1027,6 +1027,7 @@ for key,value in pairs({
 	[153239] = "Перо дикого совуха",	-- Wildkin Feather
 	[157936] = "Куча земли Ун'Горо",	-- Un'Goro Dirt Pile
 	[160836] = "Реликварий",	-- Relic Coffer
+	[160845] = "Черный ящик",	-- Dark Coffer
 	[161495] = "Потайной сейф",	-- Secret Safe
 	[161504] = "Небольшая сумка",	-- A Small Pack
 	[161505] = "Разбитый плот",	-- A Wrecked Raft
@@ -1054,6 +1055,7 @@ for key,value in pairs({
 	[164956] = "Западный хрустальный пилон",	-- Western Crystal Pylon
 	[164957] = "Восточный хрустальный пилон",	-- Eastern Crystal Pylon
 	[164958] = "Росток кровоцвета",	-- Bloodpetal Sprout
+	[165554] = "Сердце Горы",	-- Heart of the Mountain
 	[166863] = "Свежий труп жесткозуба",	-- Fresh Threshadon Carcass
 	[169243] = "Сундук Семерых",	-- Chest of The Seven
 	[171938] = "Плод кактуса",	-- Cactus Apple
@@ -1206,6 +1208,7 @@ for key,value in pairs({
 	[179499] = "Огрский дубильный чан",	-- Ogre Tannin Basket
 	[179501] = "Тайник Уззла Наперстяка",	-- Knot Thimblejack's Cache
 	[179552] = "Схема: полевой ремонтный робот 74A",	-- Schematic: Field Repair Bot 74A
+	[179553] = "Осколок из Огненных Недр",	-- Core Fragment
 	[179562] = "Древний закаленный клинок",	-- Ancient Heated Blade
 	[179564] = "Приношения Гордока",	-- Gordok Tribute Chest
 	[179565] = "Пыльный реликварий",	-- Dusty Reliquary
