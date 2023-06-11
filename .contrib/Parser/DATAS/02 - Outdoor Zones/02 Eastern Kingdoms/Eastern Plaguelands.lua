@@ -1756,9 +1756,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 53,
 					["groups"] = {
 						objective(3, {	-- 0/1 Vial of Dire Water
-							["provider"] = { "i", 16973 },	-- Vial of Dire Water
-							["cost"] = { { "i", 16974, 1 } },	-- Empty Water Vial
+							["providers"] = {
+								{ "i",  16973 },	-- Vial of Dire Water
+								{ "o", 178224 },	-- Dire Pool
+							},
 							["coord"] = { 42.70, 68.63, FERALAS },
+							["cost"] = { { "i", 16974, 1 } },	-- Empty Water Vial
 						}),
 					},
 				}),
