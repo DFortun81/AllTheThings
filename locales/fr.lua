@@ -668,8 +668,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[-23] = "Objet commun de donjon",							-- WoD Common Dungeon Drop
-		[-27] = "Bas",												-- Lower (Blackrock Spire)
-		[-28] = "Haut",												-- Upper (Blackrock Spire)
 		[-41] = "L'antre de la Folie",
 	-- World Events
 		[-53] = "Fête du Feu du solstice d’été",					-- Midsummer Fire Festival

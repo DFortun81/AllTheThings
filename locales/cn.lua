@@ -685,8 +685,6 @@ for key,value in pairs({
 	-- Commonly used
 		[-11] = "一般宝箱掉落",											-- Common Box Drops
 		[-23] = "一般地下城掉落",											-- WoD Common Dungeon Drop
-		[-27] = "下层",												-- Lower (Blackrock Spire)
-		[-28] = "上层",												-- Upper (Blackrock Spire)
 		[-41] = "疯狂宝箱",												-- Cache of Madness
 	-- World Events
 		[-53] = "仲夏火焰节",											-- Midsummer Fire Festival

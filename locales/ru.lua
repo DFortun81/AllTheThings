@@ -657,8 +657,6 @@ for key,value in pairs({
 	-- Commonly used
 		[-11] = "Обычная добыча из Сундуков",					-- Common Box Drops
 		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop
-		[-27] = "Нижняя часть",									-- Lower (Blackrock Spire)
-		[-28] = "Верхняя часть",								-- Upper (Blackrock Spire)
 		[-41] = "Тайник Безумия",
 	-- World Events
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
