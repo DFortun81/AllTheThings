@@ -932,6 +932,7 @@ for key,value in pairs({
 	[153239] = "Penna di Silvagufo",	-- Wildkin Feather
 	[157936] = "Un'Goro Dirt Pile",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "Reliquiario",	-- Relic Coffer
+	[160845] = "Forziere Oscuro",	-- Dark Coffer
 	[161495] = "Cassaforte Segreta",	-- Secret Safe
 	[161504] = "A Small Pack",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
 	[161505] = "Zattera Distrutta",	-- A Wrecked Raft
@@ -959,6 +960,7 @@ for key,value in pairs({
 	[164956] = "Pilastro di Cristallo Occidentale",	-- Western Crystal Pylon
 	[164957] = "Pilastro di Cristallo Orientale",	-- Eastern Crystal Pylon
 	[164958] = "Germoglio Petalorosso",	-- Bloodpetal Sprout
+	[165554] = "Cuore della Montagna",	-- Heart of the Mountain
 	[166863] = "Carcassa Fresca di Plesiosauro",	-- Fresh Threshadon Carcass
 	[169243] = "Cassa dei Sette",	-- Chest of The Seven
 	[171938] = "Cactus",	-- Cactus Apple
@@ -1111,6 +1113,7 @@ for key,value in pairs({
 	[179499] = "Cestello di Colorante Ogre",	-- Ogre Tannin Basket
 	[179501] = "Knot Thimblejack's Cache",	-- Knot Thimblejack's Cache	--TODO: This was taken from wotlk Wowhead
 	[179552] = "Schema: Robot di Riparazione 74A",	-- Schematic: Field Repair Bot 74A
+	[179553] = "Frammento di Nucleo",	-- Core Fragment
 	[179562] = "Ancient Heated Blade",	-- Ancient Heated Blade	--TODO: This was taken from wotlk Wowhead
 	[179564] = "Tributo dei Gordok",	-- Gordok Tribute Chest
 	[179565] = "Reliquiario Polveroso",	-- Dusty Reliquary

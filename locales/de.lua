@@ -987,6 +987,7 @@ for key,value in pairs({
 	[153239] = "Wildekinfeder",	-- Wildkin Feather
 	[157936] = "Erdhaufen von Un'Goro",	-- Un'Goro Dirt Pile
 	[160836] = "Reliktkasten",	-- Relic Coffer
+	[160845] = "Dunkler Kasten",	-- Dark Coffer
 	[161495] = "Geheimsafe",	-- Secret Safe
 	[161504] = "Ein kleines Pack",	-- A Small Pack
 	[161505] = "Ein havariertes Floß",	-- A Wrecked Raft
@@ -1014,6 +1015,7 @@ for key,value in pairs({
 	[164956] = "Westlicher Kristallpylon",	-- Western Crystal Pylon
 	[164957] = "Östlicher Kristallpylon",	-- Eastern Crystal Pylon
 	[164958] = "Blutblütensprössling",	-- Bloodpetal Sprout
+	[165554] = "Herz des Berges",	-- Heart of the Mountain
 	[166863] = "Frisches Dreschadongerippe",	-- Fresh Threshadon Carcass
 	[169243] = "Truhe der Sieben",	-- Chest of The Seven
 	[171938] = "Kaktusapfel",	-- Cactus Apple
@@ -1166,6 +1168,7 @@ for key,value in pairs({
 	[179499] = "Gerbekorb der Oger",	-- Ogre Tannin Basket
 	[179501] = "Knot Zwingschraubs Behälter",	-- Knot Thimblejack's Cache
 	[179552] = "Bauplan: Feldreparaturbot 74A",	-- Schematic: Field Repair Bot 74A
+	[179553] = "Kernfragment",	-- Core Fragment
 	[179562] = "Erhitzte Uralte Klinge",	-- Ancient Heated Blade	--TODO: This was taken from wotlk Wowhead
 	[179564] = "Tribut der Gordok",	-- Gordok Tribute Chest
 	[179565] = "Staubiger Reliquienschrein",	-- Dusty Reliquary

@@ -940,6 +940,7 @@ for key,value in pairs({
 	[153239] = "Pena de Coruscante",	-- Wildkin Feather
 	[157936] = "Monte de Terra de Un'Goro",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "Arca de Relíquia",	-- Relic Coffer
+	[160845] = "Cofre Sombrio",	-- Dark Coffer
 	[161495] = "Cofre Secreto",	-- Secret Safe
 	[161504] = "Um Pacote Pequeno",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
 	[161505] = "Bote Naufragado",	-- A Wrecked Raft
@@ -967,6 +968,7 @@ for key,value in pairs({
 	[164956] = "Torre de Cristal Oeste",	-- Western Crystal Pylon
 	[164957] = "Torre de Cristal Oriental",	-- Eastern Crystal Pylon
 	[164958] = "Broto de Pétala Sangrenta",	-- Bloodpetal Sprout
+	[165554] = "Coração da Montanha",	-- Heart of the Mountain
 	[166863] = "Carcaça de Manguadonte Fresca",	-- Fresh Threshadon Carcass
 	[169243] = "Baú dos Sete",	-- Chest of The Seven
 	[171938] = "Sabra",	-- Cactus Apple
@@ -1119,6 +1121,7 @@ for key,value in pairs({
 	[179499] = "Cesta de Tanino Ôgrico",	-- Ogre Tannin Basket
 	[179501] = "Tesouro do Fiapo Agulhacerta",	-- Knot Thimblejack's Cache	--TODO: This was taken from wotlk Wowhead
 	[179552] = "Diagrama: Robô de Reparos em Campo 74A",	-- Schematic: Field Repair Bot 74A
+	[179553] = "Fragmento de Núcleo",	-- Core Fragment
 	[179562] = "Lâmina Antiga Incandescente",	-- Ancient Heated Blade	--TODO: This was taken from wotlk Wowhead
 	[179564] = "Homenagem a Gordok",	-- Gordok Tribute Chest
 	[179565] = "Relicário Empoeirado",	-- Dusty Reliquary

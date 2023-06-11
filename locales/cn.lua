@@ -1061,6 +1061,7 @@ for key, value in pairs({
 	[153239] = "枭兽羽毛",	-- Wildkin Feather
 	[157936] = "安戈洛土堆",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "古物宝库",	-- Relic Coffer
+	[160845] = "黑暗宝箱",	-- Dark Coffer
 	[161495] = "秘密保险箱",	-- Secret Safe
 	[161504] = "小背包",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
 	[161505] = "破碎的木筏",	-- A Wrecked Raft
@@ -1088,6 +1089,7 @@ for key, value in pairs({
 	[164956] = "西部水晶塔",	-- Western Crystal Pylon
 	[164957] = "东部水晶塔",	-- Eastern Crystal Pylon
 	[164958] = "血瓣花苗",	-- Bloodpetal Sprout
+	[165554] = "山脉之心",	-- Heart of the Mountain
 	[166863] = "新鲜的蛇颈龙肉",	-- Fresh Threshadon Carcass
 	[169243] = "七贤之箱",	-- Chest of The Seven
 	[171938] = "仙人掌果",	-- Cactus Apple
@@ -1240,6 +1242,7 @@ for key, value in pairs({
 	[179499] = "食人魔鞣酸篮",	-- Ogre Tannin Basket
 	[179501] = "诺特·希姆加克的储物箱",	-- Knot Thimblejack's Cache	--TODO: This was taken from wotlk Wowhead
 	[179552] = "结构图：修理机器人74A型",	-- Schematic: Field Repair Bot 74A
+	[179553] = "熔核碎片",	-- Core Fragment
 	[179562] = "上古淬火之剑",	-- Ancient Heated Blade	--TODO: This was taken from wotlk Wowhead
 	[179564] = "戈多克贡品",	-- Gordok Tribute Chest
 	[179565] = "覆满灰尘的箱子",	-- Dusty Reliquary

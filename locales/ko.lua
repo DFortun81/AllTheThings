@@ -940,6 +940,7 @@ for key,value in pairs({
 	[153239] = "올빼미야수 깃털",	-- Wildkin Feather
 	[157936] = "운고로 흙더미",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "유물 금고",	-- Relic Coffer
+	[160845] = "검은 금고",	-- Dark Coffer
 	[161495] = "비밀 금고",	-- Secret Safe
 	[161504] = "작은 배낭",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
 	[161505] = "난파된 나룻배",	-- A Wrecked Raft
@@ -967,6 +968,7 @@ for key,value in pairs({
 	[164956] = "서쪽 수정탑",	-- Western Crystal Pylon
 	[164957] = "동쪽 수정탑",	-- Eastern Crystal Pylon
 	[164958] = "붉은꽃잎덩굴손 씨눈",	-- Bloodpetal Sprout
+	[165554] = "산의 정수",	-- Heart of the Mountain
 	[166863] = "방금 죽은 트레샤돈 시체",	-- Fresh Threshadon Carcass
 	[169243] = "일곱 현자의 궤짝",	-- Chest of The Seven
 	[171938] = "선인장 사과",	-- Cactus Apple
@@ -1119,6 +1121,7 @@ for key,value in pairs({
 	[179499] = "오우거 타닌 광주리",	-- Ogre Tannin Basket
 	[179501] = "노트 팀블잭의 은닉품",	-- Knot Thimblejack's Cache	--TODO: This was taken from wotlk Wowhead
 	[179552] = "설계도: 야전수리로봇 74A",	-- Schematic: Field Repair Bot 74A
+	[179553] = "핵 조각",	-- Core Fragment
 	[179562] = "달궈진 고대의 검",	-- Ancient Heated Blade	--TODO: This was taken from wotlk Wowhead
 	[179564] = "고르독 공물",	-- Gordok Tribute Chest
 	[179565] = "더러운 성물함",	-- Dusty Reliquary
