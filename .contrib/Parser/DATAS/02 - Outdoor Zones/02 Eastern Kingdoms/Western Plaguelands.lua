@@ -779,7 +779,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 53,
 					["groups"] = {
 						objective(1, {	-- 0/5 Andorhal Watch
-							["provider"] = { "i", 12638 },	-- Andorhal Watch
+							["providers"] = {
+								{ "i",  12638 },	-- Andorhal Watch
+								{ "o", 175802 },	-- Small Lockbox
+							},
 						}),
 						i(12650, {	-- Attuned Dampener
 							["timeline"] = { "removed 4.0.3" },
@@ -795,7 +798,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 53,
 					["groups"] = {
 						objective(1, {	-- 0/5 Andorhal Watch
-							["provider"] = { "i", 12638 },	-- Andorhal Watch
+							["providers"] = {
+								{ "i",  12638 },	-- Andorhal Watch
+								{ "o", 175802 },	-- Small Lockbox
+							},
 						}),
 						i(12650, {	-- Attuned Dampener
 							["timeline"] = { "removed 4.0.3" },
