@@ -701,10 +701,10 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 					{ "i", 201360, 1 },	-- 1x Glimmer of Order
 				},
 				["g"] = {
-				--	q(71941, { ["name"] = "Disenchanted Glimmer of Fire" }),	-- Requires correct ID
-				--	q(71942, { ["name"] = "Disenchanted Glimmer of Frost" }),	-- Requires correct ID
-					q(71939, { ["name"] = "Disenchanted Glimmer of Air" }),
+					q(71936, { ["name"] = "Disenchanted Glimmer of Air" }),
 					q(71937, { ["name"] = "Disenchanted Glimmer of Earth" }),
+					q(71934, { ["name"] = "Disenchanted Glimmer of Fire" }),
+					q(71935, { ["name"] = "Disenchanted Glimmer of Frost" }),
 					q(71938, { ["name"] = "Disenchanted Glimmer of Order" }),
 				},
 			}),
@@ -938,9 +938,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71880, 391808);	-- Scepter of Spectacle: Order
 			-- Magical Merchandise
 			FirstCraft(71878, 390831);	-- Sophic Amalgamation
-			-- Disenchanting Mystic items, these quests are NOT tied to the specific item disenchanted, but unsure what their logic is.
-			q(71934, { ["name"] = "Disenchant ? Mystic items", }),
-			q(71935, { ["name"] = "Disenchant ? Mystic items", }),
 			-- Artisan Curios
 			FirstCraft(74310, 400809, ADDED_10_0_7);	-- Glowing Crystal Bookmark
 			-- Infusions of Power
@@ -2996,11 +2993,11 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom
 		}),
 		prof(ENCHANTING, {
-			q(71936),	-- Glimmer of Air Drop/Disenchant
-			q(71940),	-- Glimmer of Earth Drop/Disenchant
-			q(71941),	-- Glimmer of Fire Drop/Disenchant
-			q(71942),	-- Glimmer of Frost Drop/Disenchant
-			q(71943),	-- Glimmer of Order Drop/Disenchant
+			q(71939),	-- Glimmer of Air Drop
+			q(71940),	-- Glimmer of Earth Drop
+			q(71941),	-- Glimmer of Fire Drop
+			q(71942),	-- Glimmer of Frost Drop
+			q(71943),	-- Glimmer of Order Drop
 		}),
 		prof(HERBALISM, {
 			q(71969),	-- First Lush Hochenblume Harvest
