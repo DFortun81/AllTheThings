@@ -4075,7 +4075,7 @@ namespace ATT
             return builder.Append("\"").Append(value.Replace("\n", "\\n").Replace("\r", "\\r")).Append("\"");
         }
 
-        static StringBuilder ExportReadableFilepathComment(StringBuilder builder, string readable, string filepath)
+        static StringBuilder ExportReadableConstantComment(StringBuilder builder, string readable, string constant)
         {
             if (string.IsNullOrEmpty(readable))
             {
@@ -4085,9 +4085,9 @@ namespace ATT
             {
                 builder.Append("\t-- ").Append(readable);
             }
-            if (!string.IsNullOrEmpty(filepath))
+            if (!string.IsNullOrEmpty(constant))
             {
-                return builder.Append(" [").Append(filepath).Append("]");
+                return builder.Append(" [").Append(constant).Append("]");
             }
             return builder;
         }
@@ -4375,6 +4375,7 @@ namespace ATT
                             // Now export it based on what we know.
                             var builder = new StringBuilder("-------------------------------------------------------\n--   C U S T O M   H E A D E R S   M O D U L E   --\n-------------------------------------------------------\n")
                                 .AppendLine("local headers = CustomHeaders or {};");
+                            var subbuilder = new StringBuilder();
                             var keys = new List<long>();
                             var icons = new Dictionary<long, string>();
                             var constants = new Dictionary<long, string>();
@@ -4386,6 +4387,7 @@ namespace ATT
                                 if (CustomHeaders.TryGetValue(key, out object o) && o is Dictionary<string, object> header)
                                 {
                                     keys.Add(key);
+                                    subbuilder.Clear();
                                     string readable = null, filepath = null, icon = null, constant = null;
                                     if (header.TryGetValue("readable", out object value))
                                     {
@@ -4393,7 +4395,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        builder.Append("headers[").Append(key).Append("].readable = \"\";\t-- MISSING 'readable'! This is required!").AppendLine();
+                                        subbuilder.Append("headers[").Append(key).Append("].readable = \"\";\t-- MISSING 'readable'! This is required!").AppendLine();
                                     }
                                     if (header.TryGetValue("constant", out value))
                                     {
@@ -4402,6 +4404,7 @@ namespace ATT
                                     if (header.TryGetValue("filepath", out value))
                                     {
                                         filepath = value.ToString();
+                                        
                                     }
                                     if (header.TryGetValue("icon", out value))
                                     {
@@ -4409,10 +4412,10 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        builder.Append("headers");
-                                        ExportStringKeyFieldValue(builder, key, ".icon", "Interface/Icons/inv_misc_questionmark");
-                                        builder.Append(";");
-                                        ExportReadableFilepathComment(builder, readable, filepath).AppendLine();
+                                        subbuilder.Append("headers");
+                                        ExportStringKeyFieldValue(subbuilder, key, ".icon", "Interface/Icons/inv_misc_questionmark");
+                                        subbuilder.Append(";");
+                                        ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                     }
                                     if (header.TryGetValue("text", out value))
                                     {
@@ -4426,10 +4429,10 @@ namespace ATT
                                         if (!localeData.TryGetValue("en", out string enString))
                                         {
                                             enString = readable;
-                                            builder.Append("headers");
-                                            ExportStringKeyFieldValue(builder, key, ".text.en", enString);
-                                            builder.Append(";");
-                                            ExportReadableFilepathComment(builder, readable, filepath).AppendLine(" - You MUST supply an 'en' localization!");
+                                            subbuilder.Append("headers");
+                                            ExportStringKeyFieldValue(subbuilder, key, ".text.en", enString);
+                                            subbuilder.Append(";");
+                                            ExportReadableConstantComment(subbuilder, readable, constant).AppendLine(" - You MUST supply an 'en' localization!");
                                             localeData["en"] = enString;    // This will prevent it from getting written twice
                                         }
                                         if (!enString.Contains("~"))
@@ -4438,10 +4441,10 @@ namespace ATT
                                             {
                                                 if (!localeData.TryGetValue(locale, out value))
                                                 {
-                                                    builder.Append("headers");
-                                                    ExportStringKeyFieldValue(builder, key, $".text.{locale}", enString);
-                                                    builder.Append(";");
-                                                    ExportReadableFilepathComment(builder, readable, filepath).AppendLine();
+                                                    subbuilder.Append("headers");
+                                                    ExportStringKeyFieldValue(subbuilder, key, $".text.{locale}", enString);
+                                                    subbuilder.Append(";");
+                                                    ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                                 }
                                             }
                                         }
@@ -4458,10 +4461,10 @@ namespace ATT
                                         if (!localeData.TryGetValue("en", out string enString))
                                         {
                                             enString = readable;
-                                            builder.Append("headers");
-                                            ExportStringKeyFieldValue(builder, key, ".description.en", enString);
-                                            builder.Append(";");
-                                            ExportReadableFilepathComment(builder, readable, filepath).AppendLine(" - You MUST supply an 'en' localization!");
+                                            subbuilder.Append("headers");
+                                            ExportStringKeyFieldValue(subbuilder, key, ".description.en", enString);
+                                            subbuilder.Append(";");
+                                            ExportReadableConstantComment(subbuilder, readable, constant).AppendLine(" - You MUST supply an 'en' localization!");
                                             localeData["en"] = enString;    // This will prevent it from getting written twice
                                         }
                                         if (!enString.Contains("~"))
@@ -4470,10 +4473,10 @@ namespace ATT
                                             {
                                                 if (!localeData.TryGetValue(locale, out value))
                                                 {
-                                                    builder.Append("headers");
-                                                    ExportStringKeyFieldValue(builder, key, $".description.{locale}", enString);
-                                                    builder.Append(";");
-                                                    ExportReadableFilepathComment(builder, readable, filepath).AppendLine();
+                                                    subbuilder.Append("headers");
+                                                    ExportStringKeyFieldValue(subbuilder, key, $".description.{locale}", enString);
+                                                    subbuilder.Append(";");
+                                                    ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                                 }
                                             }
                                         }
@@ -4490,10 +4493,10 @@ namespace ATT
                                         if (!localeData.TryGetValue("en", out string enString))
                                         {
                                             enString = readable;
-                                            builder.Append("headers");
-                                            ExportStringKeyFieldValue(builder, key, ".lore.en", enString);
-                                            builder.Append(";");
-                                            ExportReadableFilepathComment(builder, readable, filepath).AppendLine(" - You MUST supply an 'en' localization!");
+                                            subbuilder.Append("headers");
+                                            ExportStringKeyFieldValue(subbuilder, key, ".lore.en", enString);
+                                            subbuilder.Append(";");
+                                            ExportReadableConstantComment(subbuilder, readable, constant).AppendLine(" - You MUST supply an 'en' localization!");
                                             localeData["en"] = enString;    // This will prevent it from getting written twice
                                         }
                                         if (!enString.Contains("~"))
@@ -4502,13 +4505,19 @@ namespace ATT
                                             {
                                                 if (!localeData.TryGetValue(locale, out value))
                                                 {
-                                                    builder.Append("headers");
-                                                    ExportStringKeyFieldValue(builder, key, $".lore.{locale}", enString);
-                                                    builder.Append(";");
-                                                    ExportReadableFilepathComment(builder, readable, filepath).AppendLine();
+                                                    subbuilder.Append("headers");
+                                                    ExportStringKeyFieldValue(subbuilder, key, $".lore.{locale}", enString);
+                                                    subbuilder.Append(";");
+                                                    ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                                 }
                                             }
                                         }
+                                    }
+
+                                    if (subbuilder.Length > 0)
+                                    {
+                                        builder.Append("-- ").AppendLine(Path.GetFullPath(filepath));
+                                        builder.Append(subbuilder.ToString());
                                     }
                                 }
                             }
