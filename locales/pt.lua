@@ -690,20 +690,7 @@ for key,value in pairs({
 		[-979] = "Corretor Ve'ken & Corretor Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Aprimoramentos de Santuário",						-- Sanctum Upgrades
 		[-924] = "Rede de Transporte",								-- Transport Network
-		-- SL Ardenweald/Night Fae
-			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
-		-- SL Bastion/Kyrian
-			--TODO: [-973] = "Loyalty",								-- Loyalty
-			--TODO: [-975] = "Humility",							-- Humility
-		-- SL Revendreth/Venthyr
-			--TODO: [-954] = "Inquisitors",							-- Inquisitors
-			--TODO: [-955] = "High Inquisitors",					-- High Inquisitors
-			--TODO: [-956] = "Grand Inquisitors",					-- Grand Inquisitors
-			[-967] = "Restauração de espelho",						-- Mirror Restoration
-			--TODO: [-968] = "Set A",								-- Set A
-			--TODO: [-969] = "Set B",								-- Set B
-			--TODO: [-970] = "Set C",								-- Set C
-			--TODO: [-971] = "Set D",								-- Set D
+		[-967] = "Restauração de espelho",							-- Mirror Restoration
 	-- Dragonflight
 		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
 		[-1101] = "Tempestades Primevas",							-- Primal Storms

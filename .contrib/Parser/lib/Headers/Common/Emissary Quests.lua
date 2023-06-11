@@ -1,6 +1,9 @@
 EMISSARY_QUESTS = createHeader({
 	readable = "Emissary Quests",
 	constant = "EMISSARY_QUESTS",
+	-- #if NOT ANYCLASSIC
+	export = true,	-- This is referenced in topHeaders
+	-- #endif
 	icon = [[_.asset("Interface_Emissary_Callings")]],
 	text = {
 		en = [[~BOUNTY_BOARD_LOCKED_TITLE]],

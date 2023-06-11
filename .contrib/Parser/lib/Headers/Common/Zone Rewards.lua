@@ -1,6 +1,9 @@
 ZONE_REWARDS = createHeader({
 	readable = "Zone Rewards",
 	constant = "ZONE_REWARDS",
+	-- #if NOT ANYCLASSIC
+	export = true,	-- This is referenced in the bfa_azerite_armor_chest_zonedrops symlink
+	-- #endif
 	icon = [[_.asset("Interface_Rewards")]],
 	text = {
 		en = "Zone Rewards",

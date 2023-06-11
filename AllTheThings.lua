@@ -18235,7 +18235,7 @@ function app:GetDataCache()
 
 	-- Pet Battles
 	if app.Categories.PetBattles then
-		db = app.CreateNPC(-796);
+		db = app.CreateNPC(app.HeaderConstants.PET_BATTLE);
 		db.g = app.Categories.PetBattles;
 		db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
 		db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles

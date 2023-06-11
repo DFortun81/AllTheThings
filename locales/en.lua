@@ -1098,15 +1098,8 @@ app.L = {
 		[-358] = "Interface\\Icons\\garrison_building_lumbermill",							-- Lumber Mill Outpost (Gorgrond)
 		[-360] = "Interface\\Icons\\inv_misc_runedorb_01",									-- Arcane Sanctum
 		[-361] = "Interface\\Icons\\ability_vehicle_siegeenginecannon",						-- Artillery Tower
-		[-363] = "Interface\\Icons\\achievement_reputation_argentchampion",					-- The Argent Tournament
 	-- Pre Class Hall Monk
 		[-362] = "Interface\\Icons\\ability_monk_legacyoftheemperor",						-- Peak of Serenity
-	-- Naxxramas
-		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",							-- The Construct Quarter
-		[-368] = "Interface\\Icons\\inv_trinket_naxxramas04",								-- The Arachnid Quarter
-		[-369] = "Interface\\Icons\\spell_deathknight_classicon",							-- The Military Quarter
-		[-370] = "Interface\\Icons\\inv_misc_cauldron_nature",								-- The Plague Quarter
-		[-371] = "Interface\\Icons\\inv_misc_head_dragon_blue",								-- The Upper Necropolis
 	-- Draenor Outposts
 		[-390] = "Interface\\Icons\\inv_misc_coinbag_special",								-- Smuggler's Den
 		[-391] = "Interface\\Icons\\achievement_guildperk_hastyhearth",						-- Stoktron Brewery (alliance)
@@ -1204,7 +1197,6 @@ app.L = {
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
 	-- Pets
 		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
-		[-796] = app.asset("Category_PetBattles"),											-- Battle
 	-- Toys
 		[-798] = app.asset("Category_SelfieFilters"),										-- Selfie Filter
 	-- Secret Header
@@ -1230,7 +1222,6 @@ app.L = {
 		--[-926] = Uses Different Icons														-- Tier 5
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Covenant: Night Fae
 		[-930] = "Interface\\Icons\\Sanctum_features_gardenweald",							-- Queen's Conservatory
-		[-936] = "Interface\\Icons\\Ability_nightfae_flicker",								-- Soulshape Forms (Night Fae)
 		[-939] = "Interface\\Icons\\ui_sigil_kyrian",										-- Covenant: Kyrian
 		[-942] = 3675496,																	-- Path of Ascension
 		[-949] = "Interface\\Icons\\ui_sigil_venthyr",										-- Covenant: Venthyr
@@ -1318,7 +1309,6 @@ app.L = {
 	-- Is Used Somewhere
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
 		[-9966] = 1041860,															-- Dreanor Garrison
-		[-9983] = "Interface\\Icons\\ability_pvp_gladiatormedallion",				-- Honor
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
 		[-10057] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",				-- War Effort
@@ -1455,14 +1445,6 @@ app.L = {
 		[-361] = GetSpellInfo(182108).." Tower",								-- Artillery Tower
 	-- Pre Class Hall Monk
 		[-362] = DUNGEON_FLOOR_KUNLAISUMMITSCENARIO0,							-- Peak of Serenity
-	-- Argent Tournament
-		[-363] = select(1,GetCategoryInfo(14941)),								-- The Argent Tournament
-	-- Naxxramas
-		[-367] = DUNGEON_FLOOR_NAXXRAMAS1,										-- The Construct Quarter
-		[-368] = DUNGEON_FLOOR_NAXXRAMAS2,										-- The Arachnid Quarter
-		[-369] = DUNGEON_FLOOR_NAXXRAMAS3,										-- The Military Quarter
-		[-370] = DUNGEON_FLOOR_NAXXRAMAS4,										-- The Plague Quarter
-		[-371] = DUNGEON_FLOOR_NAXXRAMAS6,										-- The Upper Necropolis
 	-- Draenor Outposts
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
@@ -1568,7 +1550,6 @@ app.L = {
 		[-692] = select(2, GetAchievementInfo(13957)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
 	-- Pets
 		[-795] = "Pet Battle Dungeons",											-- Pet Battle Dungeons
-		[-796] = BATTLE_PET_SOURCE_5,											-- Pet Battle
 	-- Toys
 		[-798] = GetSpellInfo(181765),											-- S.E.L.F.I.E. Camera
 	-- Secret Header
@@ -1600,7 +1581,6 @@ app.L = {
 		[-929] = GetSpellInfo(321077),											-- Night Fae
 		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory
 		[-934] = C_Map.GetAreaInfo(12840),										-- Star Lake Amphitheater
-		[-936] = "Soulshape Forms",												-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
 		[-939] = GetSpellInfo(321076),											-- Kyrian
 		[-942] = COVENANT_SANCTUM_FEATURE_KYRIAN,								-- Path of Ascension
@@ -1698,7 +1678,6 @@ app.L = {
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
-		[-9983] = HONOR,														-- Honor
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
 		[-10057] = select(1,GetCategoryInfo(15308)),							-- War Effort
@@ -1706,7 +1685,6 @@ app.L = {
 		[-10061] = select(2,GetAchievementInfo(7333)),							-- The Four Celestials
 		[-10066] = BATTLE_PET_BREED_QUALITY6,									-- "Legendary";
 	-- 8.3
-		[-10069] = SCENARIOS,													-- Scenarios
 		[-10071] = "Visions of N'Zoth",
 		[-10072] = "N'Zoth Assault",
 		[-10073] = select(2, GetAchievementInfo(14063)),						-- Horrific Vision of Orgrimmar

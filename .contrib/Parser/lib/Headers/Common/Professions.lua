@@ -1,6 +1,7 @@
 PROFESSIONS = createHeader({
 	readable = "Professions",
 	constant = "PROFESSIONS",
+	export = true,
 	icon = [[_.asset("Category_Professions")]],
 	text = {
 		en = [[~TRADE_SKILLS]],

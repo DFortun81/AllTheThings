@@ -78,7 +78,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(39472),	-- Chain of Latent Energies
 						i(39470),	-- Medallion of the Disgraced
 					}),
-					n(-368, {	-- The Arachnid Quarter
+					n(NAXX_ARACHNID_QUARTER, {
 						e(1601, {	-- Anub'Rehkan
 							["creatureID"] = 15956,	-- Anub'Rehkan
 							["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
@@ -167,7 +167,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							},
 						}),
 					}),
-					n(-370, {	-- The Plague Quarter
+					n(NAXX_PLAGUE_QUARTER, {
 						e(1604, {	-- Noth the Plaguebringer
 							["creatureID"] = 15954,	-- Noth the Plaguebringer
 							["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
@@ -261,7 +261,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							},
 						}),
 					}),
-					n(-369, {	-- The Military Quarter
+					n(NAXX_MILITARY_QUARTER, {
 						e(1607, {	-- Instructor Razuvious
 							["creatureID"] = 16061,	-- Instructor Razuvious
 							["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
@@ -350,7 +350,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							},
 						}),
 					}),
-					n(-367, {	-- The Construct Quarter
+					n(NAXX_CONSTRUCT_QUARTER, {
 						e(1610, {	-- Patchwerk
 							["creatureID"] = 16028,	-- Patchwerk
 							["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
@@ -614,7 +614,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							},
 						}),
 					}),
-					n(-371, {	-- The Upper Necropolis
+					n(NAXX_UPPER_NECROPOLIS, {
 						e(1614, {	-- Sapphiron
 							["creatureID"] = 15989,	-- Sapphiron
 							["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
@@ -737,7 +737,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(40406),	-- Inevitable Defeat
 						i(40412),	-- Ousted Bead Necklace
 					}),
-					n(-368, {	-- The Arachnid Quarter
+					n(NAXX_ARACHNID_QUARTER, {
 						e(1601, {	-- Anub'Rekhan
 							["creatureID"] = 15956,	-- Anub'Rekhan
 							["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
@@ -864,7 +864,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							},
 						}),
 					}),
-					n(-370, {	-- The Plague Quarter
+					n(NAXX_PLAGUE_QUARTER, {
 						e(1604, {	-- Noth the Plaguebringer
 							["creatureID"] = 15954,	-- Noth the Plaguebringer
 							["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
@@ -990,7 +990,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							},
 						}),
 					}),
-					n(-369, {	-- The Military Quarter
+					n(NAXX_MILITARY_QUARTER, {
 						e(1607, {	-- Instructor Razuvious
 							["creatureID"] = 16061,	-- Instructor Razuvious
 							["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
@@ -1110,7 +1110,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							},
 						}),
 					}),
-					n(-367, {	-- The Construct Quarter
+					n(NAXX_CONSTRUCT_QUARTER, {
 						e(1610, {	-- Patchwerk
 							["creatureID"] = 16028,	-- Patchwerk
 							["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
@@ -1446,7 +1446,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							},
 						}),
 					}),
-					n(-371, {	-- The Upper Necropolis
+					n(NAXX_UPPER_NECROPOLIS, {
 						e(1614, {	-- Sapphiron
 							["creatureID"] = 15989,	-- Sapphiron
 							["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",

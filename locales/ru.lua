@@ -754,8 +754,6 @@ for key,value in pairs({
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Улучшения для Обители",							-- Sanctum Upgrades
 		[-924] = "Транспортная Сеть",								-- Transport Network
-		-- SL Ardenweald/Night Fae
-			[-936] = "Формы души",									-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
 			[-973] = "Верность",									-- Loyalty
 			[-975] = "Смирение",									-- Humility

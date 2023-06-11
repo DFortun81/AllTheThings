@@ -1,6 +1,14 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+ARGENT_TOURNAMENT = createHeader({
+	readable = "The Argent Tournament",
+	icon = "Interface\\Icons\\achievement_reputation_argentchampion",
+	text = {
+		en = [[~select(1,GetCategoryInfo(14941))]],
+	},
+});
+
 local ASPIRANTS_SEAL = i(45192);	-- Aspirant's Seal
 local CHAMPIONS_PURSE = currency(241, {	-- Champion's Seal
 	["provider"] = { "i", 45724 },	-- Champion's Purse
@@ -87,7 +95,7 @@ local VALIANT_DAILY_OnUpdate = function() end
 -- #ENDIF
 
 root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
-	n(-363, {	-- The Argent Tournament
+	n(ARGENT_TOURNAMENT, {
 		["maps"] = { ICECROWN, 170 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {

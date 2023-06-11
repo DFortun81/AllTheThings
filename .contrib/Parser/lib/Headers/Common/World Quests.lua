@@ -1,6 +1,9 @@
 WORLD_QUESTS = createHeader({
 	readable = "World Quests",
 	constant = "WORLD_QUESTS",
+	-- #if NOT ANYCLASSIC
+	export = true,	-- These are referenced in GetDataCache, but not used in Classic.
+	-- #endif
 	icon = [[_.asset("Interface_WorldQuest")]],
 	text = {
 		en = [[~TRACKER_HEADER_WORLD_QUESTS]],

@@ -1819,7 +1819,7 @@ applyclassicphase(PHASE_SIX,
 							},
 						}),
 					}),
-					n(-368, {	-- The Arachnid Quarter
+					n(NAXX_ARACHNID_QUARTER, {
 						["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
 						["groups"] = {
 							n(15956, {	-- Anub'Rekhan
@@ -1848,7 +1848,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					n(-370, {	-- The Plague Quarter
+					n(NAXX_PLAGUE_QUARTER, {
 						["icon"] = "Interface\\Icons\\Spell_Shadow_PlagueCloud",
 						["groups"] = {
 							n(15954, {	-- Noth the Plaguebringer
@@ -1879,7 +1879,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					n(-369, {	-- The Military Quarter
+					n(NAXX_MILITARY_QUARTER, {
 						["icon"] = "Interface\\Icons\\Spell_Shadow_UnholyStrength",
 						["groups"] = {
 							n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
@@ -1986,7 +1986,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					n(-367, {	-- The Construct Quarter
+					n(NAXX_CONSTRUCT_QUARTER, {
 						["icon"] = "Interface\\Icons\\Spell_Shadow_AbominationExplosion",
 						["groups"] = {
 							n(16028, {	-- Patchwerk
@@ -2028,7 +2028,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					n(-371, {	-- The Upper Necropolis
+					n(NAXX_UPPER_NECROPOLIS, {
 						["icon"] = "Interface\\Icons\\inv_misc_head_dragon_blue",
 						["groups"] = {
 							n(15989, {	-- Sapphiron

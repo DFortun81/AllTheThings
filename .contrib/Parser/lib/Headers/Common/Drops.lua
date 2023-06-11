@@ -1,6 +1,9 @@
 DROPS = createHeader({
 	readable = "Drops",
 	constant = "DROPS",
+	-- #if NOT ANYCLASSIC
+	export = true,	-- These are referenced in the NPCExpandHeaders / SpecificSources
+	-- #endif
 	icon = [[_.asset("Category_WorldDrops")]],
 	text = {
 		en = "Drops",

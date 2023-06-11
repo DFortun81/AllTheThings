@@ -786,8 +786,6 @@ for key,value in pairs({
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "圣所升级",											-- Sanctum Upgrades
 		[-924] = "传送网络",											-- Transport Network
-		-- SL Ardenweald/Night Fae
-			[-936] = "灵魂变形形态",										-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
 			[-973] = "忠诚",											-- Loyalty
 			[-975] = "谦逊",											-- Humility

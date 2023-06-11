@@ -1,6 +1,9 @@
 SECRETS = createHeader({
 	readable = "Secrets",
 	constant = "SECRETS",
+	-- #if NOT ANYCLASSIC
+	export = true,	-- These are referenced in GetDataCache, but not used in Classic.
+	-- #endif
 	icon = [[_.asset("Category_Secrets")]],
 	text = {
 		en = "Secrets",

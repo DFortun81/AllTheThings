@@ -5,7 +5,6 @@
 root(ROOTS.ExpansionFeatures,
 	tier(MOP_TIER, {
 		n(SCENARIOS, {
-			["icon"] = "Interface\\Icons\\pandarenracial_innerpeace",
 			["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			["g"] = {
 				n(ACHIEVEMENTS, {
@@ -663,90 +662,87 @@ root(ROOTS.ExpansionFeatures,
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		n(SCENARIOS, {
-			["icon"] = "Interface\\Icons\\pandarenracial_innerpeace",
-			["g"] = {
-				n(ARMOR, {
-					filter(CLOTH, {
-						i(93068),	-- Yak Wool Robe
-						i(93069),	-- Yak Wool Sandals
-						i(93070),	-- Yak Wool Handwraps
-						i(93072),	-- Yak Wool Leggings
-						i(93073),	-- Yak Wool Shoulderpads
-						i(93074),	-- Yak Wool Cord
-						i(93075),	-- Yak Wool Wristwraps
-						i(93104),	-- Brewfather Sandals
-						i(93105),	-- Brewfather Handwraps
-						i(93106),	-- Brewfather Cowl
-						i(93107),	-- Brewfather Leggings
-						i(93108),	-- Brewfather Shoulderpads
-						i(93109),	-- Brewfather Cord
-					}),
-					filter(LEATHER, {
-						i(93049),	-- Mogubreaker Jerkin
-						i(93050),	-- Mogubreaker Boots
-						i(93051),	-- Mogubreaker Gloves
-						i(93055),	-- Mogubreaker Waistband
-						i(93056),	-- Mogubreaker Bindings
-						i(93078),	-- Hozen-Stitched Jerkin
-						i(93081),	-- Hozen-Stitched Hood
-						i(93082),	-- Hozen-Stitched Britches
-						i(93083),	-- Hozen-Stitched Shoulders
-						i(93084),	-- Hozen-Stitched Waistband
-					}),
-					filter(MAIL, {
-						i(89460),	-- Scarshell Belt
-						i(89461),	-- Scarshell Bracers
-						i(89462),	-- Scarshell Gauntlets
-						i(89464),	-- Scarshell Helm
-						i(89467),	-- Scarshell Vest
-						i(92838),	-- Danio-Scale Belt
-						i(92841),	-- Danio-Scale Greaves
-						i(92842),	-- Danio-Scale Helm
-						i(92843),	-- Danio-Scale Legguards
-						i(92845),	-- Danio-Scale Vest
-						i(93057),	-- Stormshaper Vest
-						i(93058),	-- Stormshaper Greaves
-						i(93059),	-- Stormshaper Gauntlets
-						i(93062),	-- Stormshaper Spaulders
-						i(93063),	-- Stormshaper Belt
-						i(93086),	-- Swashbuckling Vest
-						i(93087),	-- Swashbuckling Greaves
-						i(93088),	-- Swashbuckling Gauntlets
-						i(93089),	-- Swashbuckling Helm
-						i(93090),	-- Swashbuckling Legguards
-						i(93091),	-- Swashbuckling Spaulders
-						i(93093),	-- Swashbuckling Bracers
-					}),
-					filter(PLATE, {
-						i(89444),	-- Mogu-Wrought Breastplate
-						i(89445),	-- Mogu-Wrought Gauntlets
-						i(89451),	-- Mogu-Wrought Vambraces
-						i(92822),	-- Jinyu-Forged Breastplate
-						i(92823),	-- Jinyu-Forged Gauntlets
-						i(92824),	-- Jinyu-Forged Girdle
-						i(92825),	-- Jinyu-Forged Helm
-						i(92827),	-- Jinyu-Forged Pauldrons
-						i(92828),	-- Jinyu-Forged Sabatons
-						i(92829),	-- Jinyu-Forged Vambraces
-						i(93094),	-- Yaungolian Breastplate
-						i(93095),	-- Yaungolian Sabatons
-						i(93096),	-- Yaungolian Gauntlets
-						i(93097),	-- Yaungolian Helm
-						i(93098),	-- Yaungolian Legplates
-						i(93099),	-- Yaungolian Pauldrons
-						i(93100),	-- Yaungolian Girdle
-						i(93101),	-- Yaungolian Vambraces
-						i(93115),	-- Lightning Rod Breastplate
-						i(93116),	-- Lightning Rod Sabatons
-						i(93117),	-- Lightning Rod Gauntlets
-						i(93118),	-- Lightning Rod Helm
-						i(93121),	-- Lightning Rod Girdle
-					}),
-					n(WEAPONS, {
-						i(93145),	-- Scavenged Pandaren Sword
-					}),
+			n(ARMOR, {
+				filter(CLOTH, {
+					i(93068),	-- Yak Wool Robe
+					i(93069),	-- Yak Wool Sandals
+					i(93070),	-- Yak Wool Handwraps
+					i(93072),	-- Yak Wool Leggings
+					i(93073),	-- Yak Wool Shoulderpads
+					i(93074),	-- Yak Wool Cord
+					i(93075),	-- Yak Wool Wristwraps
+					i(93104),	-- Brewfather Sandals
+					i(93105),	-- Brewfather Handwraps
+					i(93106),	-- Brewfather Cowl
+					i(93107),	-- Brewfather Leggings
+					i(93108),	-- Brewfather Shoulderpads
+					i(93109),	-- Brewfather Cord
 				}),
-			},
+				filter(LEATHER, {
+					i(93049),	-- Mogubreaker Jerkin
+					i(93050),	-- Mogubreaker Boots
+					i(93051),	-- Mogubreaker Gloves
+					i(93055),	-- Mogubreaker Waistband
+					i(93056),	-- Mogubreaker Bindings
+					i(93078),	-- Hozen-Stitched Jerkin
+					i(93081),	-- Hozen-Stitched Hood
+					i(93082),	-- Hozen-Stitched Britches
+					i(93083),	-- Hozen-Stitched Shoulders
+					i(93084),	-- Hozen-Stitched Waistband
+				}),
+				filter(MAIL, {
+					i(89460),	-- Scarshell Belt
+					i(89461),	-- Scarshell Bracers
+					i(89462),	-- Scarshell Gauntlets
+					i(89464),	-- Scarshell Helm
+					i(89467),	-- Scarshell Vest
+					i(92838),	-- Danio-Scale Belt
+					i(92841),	-- Danio-Scale Greaves
+					i(92842),	-- Danio-Scale Helm
+					i(92843),	-- Danio-Scale Legguards
+					i(92845),	-- Danio-Scale Vest
+					i(93057),	-- Stormshaper Vest
+					i(93058),	-- Stormshaper Greaves
+					i(93059),	-- Stormshaper Gauntlets
+					i(93062),	-- Stormshaper Spaulders
+					i(93063),	-- Stormshaper Belt
+					i(93086),	-- Swashbuckling Vest
+					i(93087),	-- Swashbuckling Greaves
+					i(93088),	-- Swashbuckling Gauntlets
+					i(93089),	-- Swashbuckling Helm
+					i(93090),	-- Swashbuckling Legguards
+					i(93091),	-- Swashbuckling Spaulders
+					i(93093),	-- Swashbuckling Bracers
+				}),
+				filter(PLATE, {
+					i(89444),	-- Mogu-Wrought Breastplate
+					i(89445),	-- Mogu-Wrought Gauntlets
+					i(89451),	-- Mogu-Wrought Vambraces
+					i(92822),	-- Jinyu-Forged Breastplate
+					i(92823),	-- Jinyu-Forged Gauntlets
+					i(92824),	-- Jinyu-Forged Girdle
+					i(92825),	-- Jinyu-Forged Helm
+					i(92827),	-- Jinyu-Forged Pauldrons
+					i(92828),	-- Jinyu-Forged Sabatons
+					i(92829),	-- Jinyu-Forged Vambraces
+					i(93094),	-- Yaungolian Breastplate
+					i(93095),	-- Yaungolian Sabatons
+					i(93096),	-- Yaungolian Gauntlets
+					i(93097),	-- Yaungolian Helm
+					i(93098),	-- Yaungolian Legplates
+					i(93099),	-- Yaungolian Pauldrons
+					i(93100),	-- Yaungolian Girdle
+					i(93101),	-- Yaungolian Vambraces
+					i(93115),	-- Lightning Rod Breastplate
+					i(93116),	-- Lightning Rod Sabatons
+					i(93117),	-- Lightning Rod Gauntlets
+					i(93118),	-- Lightning Rod Helm
+					i(93121),	-- Lightning Rod Girdle
+				}),
+				n(WEAPONS, {
+					i(93145),	-- Scavenged Pandaren Sword
+				}),
+			}),
 		}),
 	}),
 }));

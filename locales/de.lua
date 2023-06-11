@@ -724,8 +724,6 @@ for key,value in pairs({
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Sanktumaufwertungen",								-- Sanctum Upgrades
 		[-924] = "Reisenetzwerk",									-- Transport Network
-		-- SL Ardenweald/Night Fae
-			[-936] = "Seelengestalt Formen",						-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
 			[-973] = "Loyalität",									-- Loyalty
 			[-975] = "Demut",										-- Humility
