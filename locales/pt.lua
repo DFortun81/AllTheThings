@@ -3417,7 +3417,7 @@ for key,value in pairs({
 	[380604] = "Estandarte Misterioso",	-- Mysterious Banner
 	[380605] = "Mistura de Contrabando",	-- Contraband Concoction
 	[380607] = "Tecido Chamuscado Itinerante",	-- Itinerant Singed Fabric
-	--TODO: [380608] = "Silky Surprise",	-- Silky Surprise
+	[380608] = "Surpresa Sedosa",	-- Silky Surprise
 	[380610] = "Runa da Terra Pulsante",	-- Pulsing Earth Rune
 	[380611] = "Cantil de Água Suspeita",	-- Canteen of Suspicious Water
 	[380612] = "Folha de Referências de Língua de Sinais",	-- Sign Language Reference Sheet
@@ -3443,7 +3443,7 @@ for key,value in pairs({
 	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
 	[380859] = "Barco de Brinquedo Morsano",	-- Tuskarr Toy Boat
 	[380860] = "Chifre de Centauro",	-- Centaur Horn
-	--TODO: [380867] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	[380867] = "Drusa de Gemas de Âmbar",	-- Amber Gem Cluster
 	[380902] = "Arenas da Ferocidade",	-- Fields of Ferocity
 	[380918] = "Estátua Ornamentada Quebrada",	-- Broken Ornamented Statue
 	[380991] = "Monturo de Terra",	-- Dirt Mound
@@ -3454,7 +3454,7 @@ for key,value in pairs({
 	[381094] = "Pincel Elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Mapa de Yennu",	-- Yennu's Map
-	--TODO: [381110] = "Forgotten Jewel Box",	-- Forgotten Jewel Box
+	[381110] = "Caixa de Joias Esquecida",	-- Forgotten Jewel Box
 	[381153] = "Drusa de Gemas de Rubi",	-- Ruby Gem Cluster
 	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
 	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
@@ -3521,7 +3521,7 @@ for key,value in pairs({
 	[382118] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
 	[382120] = "Bandeira da Expedição Escama de Dragão",	-- Dragonscale Expedition Flag
 	[382166] = "Banquete Rubi!",	-- The Ruby Feast!
-	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
+	[382180] = "Cardume de Mangual de Magma Superaquecido",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	[382325] = "Drusa de Gemas de Ônix",	-- Onyx Gem Cluster
 	[382621] = "Console de Catalisador de Revivescência",	-- Revival Catalyst Console
@@ -3705,11 +3705,11 @@ for key,value in pairs({
 	[392026] = "Molde de Moeda de Neltharion",	-- Neltharion Coin Mold
 	[392030] = "Martelo de Aço Negro",	-- Blacksteel Hammer
 	[392335] = "Baú de Armadura Arcano Primordial",	-- Primordial Armor Cache
-	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
+	[392569] = "Baú Primordial Acorrentado",	-- Chain-Bound Primordial Cache
 	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
-	--TODO: [392571] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
-	--TODO: [392572] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
-	--TODO: [392573] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
+	[392571] = "Caixa-forte Acorrentada",	-- Chain-Bound Strongbox
+	[392572] = "Caixa-forte Acorrentada",	-- Chain-Bound Strongbox
+	[392573] = "Caixa-forte Acorrentada",	-- Chain-Bound Strongbox
 	[392580] = "Diagramas de Escoamento de Aberrus Extraviados",	-- Misplaced Aberrus Outflow Blueprints
 	[392581] = "Bombas Descartadas de Qualquer Jeito",	-- Haphazardly Discarded Bombs
 	[392582] = "Pacote de Sobrevivência com Defeito",	-- Defective Survival Pack

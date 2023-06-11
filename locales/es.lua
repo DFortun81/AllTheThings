@@ -3445,7 +3445,7 @@ for key,value in pairs({
 	[380840] = "Talega de montar rota",	-- Torn Riding Pack
 	[380842] = "Moneda de oro",	-- Gold Coin
 	[380843] = "Pez de goma",	-- Rubber Fish
-	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
+	[380847] = "Montón de esmeraldas",	-- Emerald Gem Cluster
 	[380859] = "Barco de juguete colmillarr",	-- Tuskarr Toy Boat
 	[380860] = "Cuerno de centauro",	-- Centaur Horn
 	--TODO: [380867] = "Amber Gem Cluster",	-- Amber Gem Cluster
@@ -3462,7 +3462,7 @@ for key,value in pairs({
 	[381110] = "Joyero olvidado",	-- Forgotten Jewel Box
 	[381153] = "Montón de rubíes",	-- Ruby Gem Cluster
 	[381157] = "Montón de zafiros",	-- Sapphire Gem Cluster
-	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
+	[381158] = "Mayal de gnoll maligno",	-- Gnoll Fiend Flail
 	[381160] = "Brújula perdida",	-- Lost Compass
 	[381216] = "Lupa de perito",	-- Surveyor's Magnifying Glass
 	[381223] = "Reloj de arena agrietado",	-- Cracked Hourglass
@@ -3669,7 +3669,7 @@ for key,value in pairs({
 	[387746] = "Alijo espiritual primordial",	-- Primordial Spirit Cache
 	[387749] = "Espinacristal animado",	-- Animate Crystalspine
 	[387853] = "Cristales destrozados",	-- Shattered Crystals
-	--TODO: [388471] = "Pillaged Primordial Cache",	-- Pillaged Primordial Cache
+	[388471] = "Alijo primordial saqueado",	-- Pillaged Primordial Cache
 	[388712] = "Cofre de la ópera",	-- Opera Chest
 	[388866] = "Olla de componentes",	-- Reagent Pot
 	[388873] = "Bolsa de monedas Marea de Hierro",	-- Irontide Coin Bag

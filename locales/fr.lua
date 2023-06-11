@@ -3432,10 +3432,10 @@ for key,value in pairs({
 	[377499] = "De l’Origine des espèces draconiques",	-- On the Origin of Draconic Species
 	[377534] = "Coffre-fort livré",	-- Delivered Vault
 	[377899] = "Otage bufflacien caché",	-- Hidden Hornswog Hostage
-	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	[377900] = "Lance de guerre nokhud",	-- Nokhud Warspear
 	[377938] = "Banc de bondisseurs prismatiques",	-- Prismatic Leaper School
 	[378010] = "Trésor draconique oublié",	-- Forgotten Dragon Treasure
-	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
+	[378047] = "Coffret d’émeraude",	-- Emerald Chest
 	[378054] = "Bière des baïnes",	-- Riptide Brew
 	[378088] = "Fleur cristalline",	-- Crystalline Flower
 	[378820] = "Punch moussboum",	-- Popfizz Punch
@@ -3642,7 +3642,7 @@ for key,value in pairs({
 	[385952] = "Anneau inhabituel",	-- Unusual Ring
 	[386079] = "Coffre bien mâché",	-- Well-Chewed Chest
 	[386080] = "Clé brûlante",	-- Scorching Key
-	--TODO: [386086] = "Seething Cache",	-- Seething Cache
+	[386086] = "Cache bouillonnante",	-- Seething Cache
 	[386088] = "Offrandes rituelles",	-- Ritual Offerings
 	[386089] = "Offrandes rituelles",	-- Ritual Offerings
 	[386090] = "Offrandes rituelles",	-- Ritual Offerings

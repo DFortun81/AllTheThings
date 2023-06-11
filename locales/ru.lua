@@ -3455,7 +3455,7 @@ for key,value in pairs({
 	[378088] = "Кристаллический цветок",	-- Crystalline Flower
 	[378820] = "Искрометный пунш",	-- Popfizz Punch
 	[378857] = "Потерянный обсидиановый тайник",	-- Lost Obsidian Cache
-	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
+	[379168] = "Потерянный ключ от тайника",	-- Lost Cache Key
 	[379290] = "Украшенная узорами статуя",	-- Ornamented Statue
 	[379296] = "Сломанная окантовка",	-- Broken Banding
 	[379297] = "Пойло \"Бадабум\"",	-- Slam Bam Swill
@@ -3576,7 +3576,7 @@ for key,value in pairs({
 	[381513] = "Старая кирка",	-- Old Pickaxe
 	[381514] = "Отшлифованный волнами базальт",	-- Sea-Polished Basalt
 	[381575] = "Набор для ловли уток",	-- Duck Trap Kit
-	[381579] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
+	[381579] = "Просьба архивариуса",	-- Archivists' Request
 	[381650] = "Просьба архивариуса",	-- Archivists' Request
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
 	[381661] = "Просьба архивариуса",	-- Archivists' Request
@@ -3751,7 +3751,7 @@ for key,value in pairs({
 	[387746] = "Первозданный сундук духов",	-- Primordial Spirit Cache
 	[387749] = "Оживленный кристаллоспин",	-- Animate Crystalspine
 	[387853] = "Разбитые кристаллы",	-- Shattered Crystals
-	--TODO: [388471] = "Pillaged Primordial Cache",	-- Pillaged Primordial Cache
+	[388471] = "Разграбленный первозданный сундук",	-- Pillaged Primordial Cache
 	[388712] = "Оперный сундук",	-- Opera Chest
 	[388866] = "Котелок с реагентами",	-- Reagent Pot
 	[388873] = "Мешок с сокровищами братства Стальных Волн",	-- Irontide Coin Bag

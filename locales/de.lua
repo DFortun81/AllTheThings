@@ -3501,7 +3501,7 @@ for key,value in pairs({
 	[381094] = "Eleganter Leinwandpinsel",	-- Elegant Canvas Brush
 	[381107] = "Sandhaufen",	-- Sand Pile
 	[381108] = "Yennus Karte",	-- Yennu's Map
-	--TODO: [381110] = "Forgotten Jewel Box",	-- Forgotten Jewel Box
+	[381110] = "Vergessenes Schmuckkästchen",	-- Forgotten Jewel Box
 	[381153] = "Rubinedelsteinklumpen",	-- Ruby Gem Cluster
 	[381157] = "Saphiredelsteinklumpen",	-- Sapphire Gem Cluster
 	[381158] = "Dreschflegel des Gnollunholds",	-- Gnoll Fiend Flail
