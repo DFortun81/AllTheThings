@@ -2990,7 +2990,6 @@ root(ROOTS.Unsorted, {
 				q(70718),	-- Gushgut the Beaksinker
 				q(70733),	-- Djaradin War Party
 				-- 10.0.0.45141
-				q(70787),	-- Caught In a Dusk Storm
 				q(70811),	-- Expert Excavation Tools
 				q(70816),	-- Treasure Tracking Techniques
 				q(70829),	-- Cataloging Expeditions
