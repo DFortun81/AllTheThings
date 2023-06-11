@@ -1390,42 +1390,6 @@ r(269552),	-- Honorable Combatant's Bow
 r(269553),	-- Honorable Combatant's Bow
 r(269554),	-- Honorable Combatant's Bow
 9.0.1.33978
-r(309214),	-- Unseelie Leather \\ Tooled Fae Leather
-r(309215),	-- Sinful Leather \\ Tooled Venthyr Leather
-r(309216),	-- Necrotic Leather \\ Tooled Necro Leather
-r(309217),	-- Purified Leather \\ Tooled Kyrian Leather
-r(309246),	-- Sintanned Treads \\ Venthyr Leather Treads
-r(309247),	-- Sintanned Vest \\ Venthyr Leather Vest
-r(309248),	-- Sintanned Gauntlets \\ Venthyr Leather Gauntlets
-r(309249),	-- Sintanned Helm \\ Venthyr Leather Helm
-r(309250),	-- Sintanned Leggings \\ Venthyr Leather Leggings
-r(309251),	-- Sintanned Pauldrons \\ Venthyr Leather Pauldrons
-r(309252),	-- Sintanned Waistguard \\ Venthyr Leather Waistguard
-r(309253),	-- Sintanned Armguards \\ Venthyr Leather Armguards
-r(309254),	-- Sinscale Treads \\ Venthyr Scale Treads
-r(309255),	-- Sinscale Vest \\ Venthyr Scale Vest
-r(309256),	-- Sinscale Gauntlets \\ Venthyr Scale Gauntlets
-r(309257),	-- Sinscale Helm \\ Venthyr Scale Helm
-r(309258),	-- Sinscale Leggings \\ Venthyr Scale Leggings
-r(309259),	-- Sinscale Pauldrons \\ Venthyr Scale Pauldrons
-r(309260),	-- Sinscale Waistguard \\ Venthyr Scale Waistguard
-r(309261),	-- Sinscale Armguards \\ Venthyr Scale Armguards
-r(309262),	-- Gormhide Treads \\ Fae Leather Treads
-r(309263),	-- Gormhide Vest \\ Fae Leather Vest
-r(309264),	-- Gormhide Gauntlets \\ Fae Leather Gauntlets
-r(309265),	-- Gormhide Helm \\ Fae Leather Helm
-r(309266),	-- Gormhide Leggings \\ Fae Leather Leggings
-r(309267),	-- Gormhide Pauldrons \\ Fae Leather Pauldrons
-r(309268),	-- Gormhide Waistguard \\ Fae Leather Waistguard
-r(309269),	-- Gormhide Armguards \\ Fae Leather Armguards
-r(309270),	-- Wildskin Treads \\ Fae Scale Treads
-r(309271),	-- Wildskin Vest \\ Fae Scale Vest
-r(309272),	-- Wildskin Gauntlets \\ Fae Scale Gauntlets
-r(309273),	-- Wildskin Helm \\ Fae Scale Helm
-r(309274),	-- Wildskin Leggings \\ Fae Scale Leggings
-r(309275),	-- Wildskin Pauldrons \\ Fae Scale Pauldrons
-r(309276),	-- Wildskin Waistguard \\ Fae Scale Waistguard
-r(309277),	-- Wildskin Armguards \\ Fae Scale Armguards
 r(309278),	-- Flayed Hide Treads \\ Necrolord Leather Treads
 r(309279),	-- Flayed Hide Vest \\ Necrolord Leather Vest
 r(309280),	-- Flayed Hide Gauntlets \\ Necrolord Leather Gauntlets
@@ -1442,17 +1406,5 @@ r(309290),	-- Bonerivetted Leggings \\ Necrolord Scale Leggings
 r(309291),	-- Bonerivetted Pauldrons \\ Necrolord Scale Pauldrons
 r(309292),	-- Bonerivetted Waistguard \\ Necrolord Scale Waistguard
 r(309293),	-- Bonerivetted Armguards \\ Necrolord Scale Armguards
-10.1.5.49516
 
 
-
-
-
-
-
-r(206538, 413738),	-- Nerubian Persuader
-r(413756),	-- Displacement Boots
-r(413761),	-- Lucien's Lost Soles
-10.1.5.49824
-r(414565),	-- Languished Leather
-r(414566),	-- Scourged Scales

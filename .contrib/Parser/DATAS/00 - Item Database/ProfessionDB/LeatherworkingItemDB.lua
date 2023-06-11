@@ -505,10 +505,47 @@ i(182669, 309222);	-- Loosened Belt
 i(0, 309195);	-- Reinforced Desolate Leather Cestus
 -- NYI --
 i(0, 338261);	-- Almost Thing
+i(0, 309269);	-- Gormhide Armguards 
+i(0, 309264);	-- Gormhide Gauntlets 
+i(0, 309265);	-- Gormhide Helm 
+i(0, 309266);	-- Gormhide Leggings 
+i(0, 309267);	-- Gormhide Pauldrons 
+i(0, 309262);	-- Gormhide Treads  
+i(0, 309263);	-- Gormhide Vest 
+i(0, 309268);	-- Gormhide Waistguard
 i(0, 309194);	-- Macabre Striker
 i(0, 309223);	-- Modified Crafting Reagent 02
 i(0, 309224);	-- Modified Crafting Reagent 03
 i(0, 309225);	-- Modified Crafting Reagent 04
+i(0, 309261);	-- Sinscale Armguards 
+i(0, 309256);	-- Sinscale Gauntlets 
+i(0, 309257);	-- Sinscale Helm 
+i(0, 309258);	-- Sinscale Leggings 
+i(0, 309259);	-- Sinscale Pauldrons 
+i(0, 309254);	-- Sinscale Treads
+i(0, 309255);	-- Sinscale Vest 
+i(0, 309260);	-- Sinscale Waistguard
+i(0, 309253);	-- Sintanned Armguards 
+i(0, 309248);	-- Sintanned Gauntlets 
+i(0, 309249);	-- Sintanned Helm 
+i(0, 309250);	-- Sintanned Leggings 
+i(0, 309251);	-- Sintanned Pauldrons 
+i(0, 309246);	-- Sintanned Treads 
+i(0, 309247);	-- Sintanned Vest
+i(0, 309252);	-- Sintanned Waistguard
+i(0, 309270);	-- Wildskin Treads
+i(0, 309271);	-- Wildskin Vest 
+i(0, 309272);	-- Wildskin Gauntlets 
+i(0, 309273);	-- Wildskin Helm 
+i(0, 309274);	-- Wildskin Leggings 
+i(0, 309275);	-- Wildskin Pauldrons 
+i(0, 309276);	-- Wildskin Waistguard
+i(0, 309277);	-- Wildskin Armguards 
+-- UNSURE --
+i(0, 309214);	-- Unseelie Leather
+i(0, 309215);	-- Sinful Leather 
+i(0, 309216);	-- Necrotic Leather
+i(0, 309217);	-- Purified Leather
 
 ------------------
 -- PATCH 9.1.0 --
