@@ -1862,13 +1862,15 @@ local function CreateObject(t, rootOnly)
 
 	-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
 	-- if g, then replace each object in all sub groups with an object version of the table
-	if t.g then
-		local sourceg = t.g;
-		t.g = {};
+	local g = t.g;
+	if g then
+		local sourceg = g;
+		g = {};
 		-- if app.DEBUG_PRINT then print("CreateObject for sub-groups of",t.key,t[t.key]); end
 		for i,o in pairs(sourceg) do
-			t.g[i] = CreateObject(o);
+			g[i] = CreateObject(o);
 		end
+		t.g = g;
 	end
 
 	return t;
