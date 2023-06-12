@@ -3364,7 +3364,9 @@ namespace ATT
                 case "followerID":
                 case "heirloomID":
                 case "hideText":
+				#if !ANYCLASSIC
                 case "holidayID":
+				#endif
                 case "icon":
                 case "ignoreBonus":
                 case "ignoreSource":
