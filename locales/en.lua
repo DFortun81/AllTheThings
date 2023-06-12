@@ -1299,9 +1299,6 @@ app.L = {
 		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
-	-- Shadowlands Achievement Headers
-	-- 9.1
-		[-10083] = "236373",														-- Covenant Assaults
 	-- NYI
 		-- Unknown patch
 		--[-?] = ?,																-- Patch 0.x.x
@@ -1646,9 +1643,6 @@ app.L = {
 		[-10080] = SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE,				-- Horrific Visions
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
-	-- Shadowlands Achievement Headers
-	-- 9.1
-		[-10083] = "Covenant Assaults",											-- Covenant Assaults
 	-- NYI
 		-- Unknown patch
 		--[-?] = "0.x.x",														-- Patch 0.x.x

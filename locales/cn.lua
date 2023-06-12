@@ -823,9 +823,6 @@ for key,value in pairs({
 		[-10072] = "恩佐斯突袭",											-- N'Zoth Assault
 		[-10081] = "腐化区域",											-- Corrupted Area
 		[-10082] = "失落区域",											-- Lost Area
-		-- Shadowlands Achievement Headers
-			-- 9.1
-				[-10083] = "盟约突袭",									-- Covenant Assaults
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then

@@ -782,9 +782,6 @@ for key,value in pairs({
 		[-10072] = "Assaut de N'Zoth Assault",						-- N'Zoth Assault
 		[-10081] = "Zone corrompue",								-- Corrupted Area
 		[-10082] = "Zone perdue",									-- Lost Area
-		-- Shadowlands Achievement Headers
-			-- 9.1
-				[-10083] = "Assauts de congrégation",				-- Covenant Assaults
 })
 do a[key] = value; end
 

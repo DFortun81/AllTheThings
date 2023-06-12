@@ -758,9 +758,6 @@ for key,value in pairs({
 
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Visionen von N'Zoth",							-- Visions of N'Zoth
-		-- Shadowlands Achievement Headers
-			-- 9.1
-				[-10083] = "Paktangriffe",							-- Covenant Assaults
 })
 do a[key] = value; end
 
