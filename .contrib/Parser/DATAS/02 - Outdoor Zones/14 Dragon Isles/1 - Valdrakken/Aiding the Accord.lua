@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 				i(201922, {	-- Iskaara Tuskarr Insignia
-					["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 				i(201923, {	-- Maruuk Centaur Insignia

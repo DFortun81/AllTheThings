@@ -849,7 +849,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["classes"] = { EVOKER },
 			}),
-			------ Misc ------
+			------ Miscellaneous ------
 			q(75232, {	-- Fallen Effects
 				--["sourceQuests"] = {  },
 				["provider"] = { "i", 204642 },	-- Sheridon Hastle's Effects

@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						{ 44.6, 67.0, THE_VINDICAAR_EREDATH_UPPER },
 						{ 63.0, 63.6, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 					},
-					["g"] = repVendor(ARMY_OF_THE_LIGHT, {
+					["g"] = repVendor(FACTION_ARMY_OF_THE_LIGHT, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(152726),	-- Design: Mass Prospect Empyrium (RECIPE!)
@@ -472,7 +472,8 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 							i(152399),	-- Army of the Light Tabard
 							i(153023),	-- Lightforged Augment Rune
 							i(152788),	-- Lightforged Warframe (MOUNT!)
-						}}),
+						},
+					}),
 				}),
 				n(127151, {	-- Toraan the Revered <Argussian Reach Emissary>
 					["coords"] = {
@@ -480,33 +481,34 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						{ 66.2, 57.8, THE_VINDICAAR_EREDATH_UPPER },
 						{ 56.6, 30.2, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 					},
-					["g"] = repVendor(ARGUSSIAN_REACH, {
-					{		-- Neutral
-					}, {	-- Friendly
-						i(152658),	-- Formula: Chaos Shatter (RECIPE!)
-						i(152725),	-- Technique: Mass Mill Astral Glory (RECIPE!)
-					}, {	-- Honored
-						i(153039),	-- Crystalline Campfire (TOY!)
-						i(153290),	-- Krokul Mining Pick
-						i(153027),	-- Orphaned Marsuul (PET!)
-					}, {	-- Revered
-						i(153197),	-- Boon of the Steadfast
-						i(152964, {	-- Krokul Flute
-							["collectible"] = false,
-							["filterID"] = CONSUMABLES,
-						}),
-						i(151707),	-- Recipe: Astral Alchemist Stone [Rank 2] (RECIPE!)
-					}, {	-- Exalted
-						i(152669),	-- Argussian Reach Tabard
-						i(151708),	-- Recipe: Astral Alchemist Stone [Rank 3] (RECIPE!)
-						i(152618),	-- Recipe: Astral Healing Potion [Rank 3] (RECIPE!)
-						i(152794),	-- Amethyst Ruinstrider (MOUNT!)
-						i(152795),	-- Beryl Ruinstrider (MOUNT!)
-						i(152797),	-- Cerulean Ruinstrider (MOUNT!)
-						i(152793),	-- Russet Ruinstrider (MOUNT!)
-						i(152791),	-- Sable Ruinstrider (MOUNT!)
-						i(152796),	-- Umber Ruinstrider (MOUNT!)
-					}}),
+					["g"] = repVendor(FACTION_ARGUSSIAN_REACH, {
+						{		-- Neutral
+						}, {	-- Friendly
+							i(152658),	-- Formula: Chaos Shatter (RECIPE!)
+							i(152725),	-- Technique: Mass Mill Astral Glory (RECIPE!)
+						}, {	-- Honored
+							i(153039),	-- Crystalline Campfire (TOY!)
+							i(153290),	-- Krokul Mining Pick
+							i(153027),	-- Orphaned Marsuul (PET!)
+						}, {	-- Revered
+							i(153197),	-- Boon of the Steadfast
+							i(152964, {	-- Krokul Flute
+								["collectible"] = false,
+								["filterID"] = CONSUMABLES,
+							}),
+							i(151707),	-- Recipe: Astral Alchemist Stone [Rank 2] (RECIPE!)
+						}, {	-- Exalted
+							i(152669),	-- Argussian Reach Tabard
+							i(151708),	-- Recipe: Astral Alchemist Stone [Rank 3] (RECIPE!)
+							i(152618),	-- Recipe: Astral Healing Potion [Rank 3] (RECIPE!)
+							i(152794),	-- Amethyst Ruinstrider (MOUNT!)
+							i(152795),	-- Beryl Ruinstrider (MOUNT!)
+							i(152797),	-- Cerulean Ruinstrider (MOUNT!)
+							i(152793),	-- Russet Ruinstrider (MOUNT!)
+							i(152791),	-- Sable Ruinstrider (MOUNT!)
+							i(152796),	-- Umber Ruinstrider (MOUNT!)
+						},
+					}),
 				}),
 				n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 					["coords"] = {

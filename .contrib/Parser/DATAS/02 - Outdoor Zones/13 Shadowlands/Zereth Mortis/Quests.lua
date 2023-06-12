@@ -1005,8 +1005,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 			}),
-
-				-- MISC --
+			------ Miscellaneous ------
 			q(66383, {	-- Legendary Assistance
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon

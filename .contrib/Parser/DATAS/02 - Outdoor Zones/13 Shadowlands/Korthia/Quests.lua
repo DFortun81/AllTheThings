@@ -782,7 +782,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["coord"] = { 63.1, 24.5, KORTHIA },
 					["_drop"] = { "g" },	-- Anima Trash
 				}),
-				------ Misc ------
+				------ Miscellaneous ------
 				q(63623, {	-- Filling an Empty Throne
 					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					["sourceQuests"] = { 63622 },	-- Victory in Our Name
@@ -1093,7 +1093,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					i(187159),	-- Shadow Slicing Shortsword (TOY!)
 				},
 			}),
-				-- MISC --
+			------ Miscellaneous ------
 			q(64106, {	-- A Unified Effort
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon

@@ -734,7 +734,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					}),
 				},
 			}),
-				-- MISC --
+			------ Miscellaneous ------
 			q(57284, {	-- Blade of Blades
 				["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
 				["sourceQuests"] = { 57245 },	-- Ani-Matter Animator

@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ISKAARA_TUSKARR, {
-		q(70893, {	-- Community Feast
+		q(70893, bubbleDownSelf({ ["minReputation"] = { FACTION_ISKAARA_TUSKARR, 3 } }, {	-- Community Feast
 			["provider"] = { "n", 196620 },	-- Pleeqi
 			["isWeekly"] = true,
 			["g"] = {
@@ -72,7 +72,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(204291),	-- Thrice-Charred Mammoth Ribs
 				}),
 			},
-		}),
+		})),
 	}),
 })));
 

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(WORLD_QUESTS, {
 			n(REWARDS, {
@@ -28,9 +28,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			q(61564, {	-- Blacksmithing: Polished Kyrian Shield
 				["requireSkill"] = BLACKSMITHING,
 				["g"] = {
-					r(337619,{["u"]=15}),	-- Polished Kyrian Shield
-					r(337626,{["u"]=15}),	-- Reforged Kyrian Shield
-					r(337621,{["u"]=15}),	-- Tarnished Kyrian Shield
+					r(337619,{["u"]=TRAINING}),	-- Polished Kyrian Shield
+					r(337626,{["u"]=TRAINING}),	-- Reforged Kyrian Shield
+					r(337621,{["u"]=TRAINING}),	-- Tarnished Kyrian Shield
 					i(181791),	-- Polished Kyrian Shield
 					i(181790),	-- Reforged Kyrian Shield
 					i(181793),	-- Shattered Kyrian Shield Fragment
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			q(61629, {	-- Enchanting: True Aim
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					r(338121,{["u"]=15}),	-- True Aim Spear
+					r(338121,{["u"]=TRAINING}),	-- True Aim Spear
 					i(182021),	-- Antique Kyrian Javelin
 					i(181948),	-- Enchant: True Aim
 					i(182020),	-- Transcendent Dust
@@ -78,13 +78,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			q(61446, {	-- Inscription: Invocation of Duty
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
+					r(338228, {["u"]=TRAINING}),	-- Invocation of Duty
+					r(338230, {["u"]=TRAINING}),	-- Opalescent Ink
+					r(338229, {["u"]=TRAINING}),	-- Poem on Duty
 					i(182202),	-- Borrowed Parchment
-					r(338228, {["u"]=15}),	-- Invocation of Duty
 					i(181957),	-- Invocation of Duty
-					r(338230, {["u"]=15}),	-- Opalescent Ink
 					i(182014),	-- Opalescent Ink
 					i(182015),	-- Opalescent Pigment
-					r(338229, {["u"]=15}),	-- Poem on Duty
 					i(182013),	-- Poem on Duty
 				},
 			}),

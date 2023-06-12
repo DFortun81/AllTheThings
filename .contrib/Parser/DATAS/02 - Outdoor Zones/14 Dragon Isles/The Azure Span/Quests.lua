@@ -1392,7 +1392,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(202200),	-- Solemn Seashell String
 				},
 			}),
-			------ Misc ------
+			------ Miscellaneous ------
 			q(67174, {	-- Arcane Detection
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 192750 },	-- Miva Star-Eye

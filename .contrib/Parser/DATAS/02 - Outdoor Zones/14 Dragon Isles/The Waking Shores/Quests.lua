@@ -1029,7 +1029,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
 				}),
 			}),
-			------ Misc ------
+			------ Miscellaneous ------
 			q(70179, {	-- A Two for One Deal
 				["sourceQuests"] = { 66001 },	-- A Last Hope, -- TODO: Wasnt available when picking up 65997, but available before 66001....
 				["provider"] = { "n", 194525 },	-- Apprentice Caretaker Zefren

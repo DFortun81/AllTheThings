@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- #endif
 			}),
 			i(200453, {	-- Iskaara Tuskarr Insignia
-				["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
-			------ Misc ------
+			------ Miscellaneous ------
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note
 				["coord"] = { 47.8, 46.6, VALDRAKKEN },

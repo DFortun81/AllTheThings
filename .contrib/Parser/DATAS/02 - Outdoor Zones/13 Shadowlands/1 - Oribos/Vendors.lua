@@ -1,7 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+-- #if BEFORE 9.2.5
+local ATTENDANTS_TOKEN_OF_MERIT = 187219;	-- Shadowlands S3
+-- #else
 local ATTENDANTS_TOKEN_OF_MERIT = 199202;	-- Shadowlands Season 4
+-- #endif
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		n(VENDORS, {
@@ -33,125 +37,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Next to the flightmaster.",
 				["coord"] = { 59.7, 70.6, ORIBOS },
 				["g"] = {
-					i(194118, {	-- Cosmic Equipment Chest
-						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
-						["cost"] = {
-							{ "c", 1602, 375 },	-- 375x Conquest
-						},
-						["sym"] = {
-							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", SEASON_COSMIC },	-- Cosmic Gladiator: Shadowlands Season 3
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-						},
-					}),
-					i(194334, {	-- Encrypted Equipment Chest
-						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
-						["cost"] = {
-							{ "c", 1191, 500 },	-- 500x Valor
-						},
-						["sym"] = {{"select", "instanceID",
-							-- Dungeons
-							1188,	-- De Other Side
-							1185,	-- Halls of Atonement
-							1184,	-- Mists of Tirna Scithe
-							1182,	-- Necrotic Wake
-							1183,	-- Plaguefall
-							1189,	-- Sanguine Depths
-							1186,	-- Spires of Ascension
-							1194,	-- Tazavesh, the Veiled Market
-							1187,	-- Theater of Pain
-							},
-							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
-							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
-							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-						},
-					}),
-					i(201355, {	-- Eternal Equipment Chest
-						["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
-						["cost"] = {
-							{ "c", 1602, 375 },	-- 375x Conquest
-						},
-						["sym"] = {
-							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", SEASON_ETERNAL },	-- Eternal Gladiator: Shadowlands Season 4
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-						},
-					}),
-					i(201362, {	-- Fated Equipment Chest
-					["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
-						["cost"] = {
-							{ "c", 1191, 500 },	-- 500x Valor
-						},
-						["sym"] = {{"select", "instanceID",
-							-- Dungeons
-							1188,	-- De Other Side
-							1185,	-- Halls of Atonement
-							1184,	-- Mists of Tirna Scithe
-							1182,	-- Necrotic Wake
-							1183,	-- Plaguefall
-							1189,	-- Sanguine Depths
-							1186,	-- Spires of Ascension
-							1194,	-- Tazavesh, the Veiled Market
-							1187,	-- Theater of Pain
-							},
-							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
-							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
-							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-						},
-					}),
-					i(188198, {	-- Travlers Anima Cache
-						["description"] = "This item allows you to transfer anima between characters in a one-to-one ratio.",
-						["cost"] = {
-							{ "c", ANIMA, 1000 },	-- Anima
-						},
-						["g"] = {
-							currency(ANIMA),	-- 1000x Anima
-						},
-					}),
-					i(188167, {	-- Broker Mark of Distinction
-						["cost"] = {
-							{ "g", 5000000 },	-- 500g
-						},
-					}),
-					i(187997, {	-- Eternal Heirloom Armor Casing
-						["cost"] = {
-							{ "g", 50000000 },		-- 5000g
-						},
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(187998, {	-- Eternal Heirloom Scabbard
-						["cost"] = {
-							{ "g", 75000000 },		-- 7500g
-						},
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(190184, {	-- Incense of Infinity
-						["questID"] = 65623,
-						["cost"] = { { "g", 5000000 } },	-- 500g
-						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
-						},
-					}),
-					i(187869),	-- Scouting Map: Into the Shadowlands (TOY!)
-					i(188673),	-- Timebound Runimations
-					i(188174, {	-- Unchained Equipment Cache
-						["timeline"] = { ADDED_9_1_5, "removed 9.2.0" },
-						["cost"] = {
-							{ "c", 1602, 375 },	-- 375x Conquest
-						},
+					i(188174, {	-- Unchained Equipment Cache [PvP S2]
+						["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
+						["cost"] = {{ "c", CONQUEST, 375 }},
+						--[[
 						["sym"] = {
 							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
 							{"pop"},								-- Discard the Header and acquire all of the children.
@@ -160,12 +49,40 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
 							{"pop"},								-- Discard the Header and acquire all of the children.
 						},
+						--]]
 					}),
-					i(188173, {	-- Valorous Equipment Cache
-						["timeline"] = { ADDED_9_1_5, "removed 9.2.0" },
-						["cost"] = {
-							{ "c", 1191, 500 },	-- 500x Valor
+					i(194118, {	-- Cosmic Equipment Chest [PvP S3]
+						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
+						["cost"] = {{ "c", CONQUEST, 375 }},
+						--[[
+						["sym"] = {
+							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
+							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"where", "headerID", SEASON_COSMIC },	-- Cosmic Gladiator: Shadowlands Season 3
+							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
+							{"pop"},								-- Discard the Header and acquire all of the children.
 						},
+						--]]
+					}),
+					i(201355, {	-- Eternal Equipment Chest [PvP S4]
+						["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
+						["cost"] = {{ "c", CONQUEST, 375 }},
+						--[[
+						["sym"] = {
+							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
+							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"where", "headerID", SEASON_ETERNAL },	-- Eternal Gladiator: Shadowlands Season 4
+							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
+							{"pop"},								-- Discard the Header and acquire all of the children.
+						},
+						--]]
+					}),
+					i(188173, {	-- Valorous Equipment Cache [M+ S2]
+						["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
+						["cost"] = {{ "c", VALOR, 500 }},
+						--[[
 						["sym"] = {{"select", "instanceID",
 							-- Dungeons
 							1188,	-- De Other Side
@@ -185,6 +102,89 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{"is", "itemID"},						-- Only Items!
 							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 						},
+						--]]
+					}),
+					i(194334, {	-- Encrypted Equipment Chest [M+ S3]
+						["timeline"] = { ADDED_9_2_5, REMOVED_9_2_7 },
+						["cost"] = {{ "c", VALOR, 500 }},
+						--[[
+						["sym"] = {{"select", "instanceID",
+							-- Dungeons
+							1188,	-- De Other Side
+							1185,	-- Halls of Atonement
+							1184,	-- Mists of Tirna Scithe
+							1182,	-- Necrotic Wake
+							1183,	-- Plaguefall
+							1189,	-- Sanguine Depths
+							1186,	-- Spires of Ascension
+							1194,	-- Tazavesh, the Veiled Market
+							1187,	-- Theater of Pain
+							},
+							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
+							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+							{"is", "itemID"},						-- Only Items!
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
+						-]]
+					}),
+					i(201362, {	-- Fated Equipment Chest [M+ S4]
+						["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
+						["cost"] = {{ "c", VALOR, 500 }},
+						--[[
+						["sym"] = {{"select", "instanceID",
+							-- Dungeons
+							1188,	-- De Other Side
+							1185,	-- Halls of Atonement
+							1184,	-- Mists of Tirna Scithe
+							1182,	-- Necrotic Wake
+							1183,	-- Plaguefall
+							1189,	-- Sanguine Depths
+							1186,	-- Spires of Ascension
+							1194,	-- Tazavesh, the Veiled Market
+							1187,	-- Theater of Pain
+							},
+							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
+							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+							{"is", "itemID"},						-- Only Items!
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
+						--]]
+					}),
+					i(188198, {	-- Travlers Anima Cache
+						["description"] = "This item allows you to transfer anima between characters in a one-to-one ratio.",
+						["cost"] = {{ "c", ANIMA, 1000 }},
+						["g"] = {
+							currency(ANIMA),	-- 1000x Anima
+						},
+					}),
+					i(188167, {	-- Broker Mark of Distinction
+						["cost"] = 5000000,	-- 500g
+					}),
+					i(187997, {	-- Eternal Heirloom Armor Casing
+						["cost"] = 50000000,	-- 5000g
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(187998, {	-- Eternal Heirloom Scabbard
+						["cost"] = 75000000,	-- 7500g
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(190184, {	-- Incense of Infinity
+						["questID"] = 65623,
+						["cost"] = 5000000,	-- 500g
+						["sym"] = {
+							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
+							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+						},
+					}),
+					i(187869, {	-- Scouting Map: Into the Shadowlands (TOY!)
+						["cost"] = 100000000,	-- 10000g
+					}),
+					i(188673, {	-- Timebound Runimations
+						["cost"] = {{ "c", ANIMA, 10000 }},
 					}),
 				},
 			})),
@@ -249,13 +249,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					}),
 					i(186992, {	-- Formula: Anima-ted Leash (RECIPE!)
-						["cost"] = { { "i", 163036, 15 } },	-- 15x Polished Pet Charm
+						["cost"] = {{ "i", POLISHED_PET_CHARM, 15 }},
 					}),
 				}),
 			}),
 			n(188391, {	-- Ko'ropo <Sire Supplier>
 				["coord"] = { 66.7, 31.6, ORIBOS },
 				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+				--[[
 				["sym"] = {
 					{"select", "instanceID", 1190},			-- Castle Nathria
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -266,110 +267,105 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{"is", "itemID"},						-- Only Items!
 					{"invtype", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 				},
+				--]]
 			}),
 			n(177829, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5 } }, {	-- Ko'tul <Exchange Specialist>
 				["coord"] = { 63.8, 36.0, ORIBOS },
 				["g"] = {
-					i(187254, {	-- Arrangement of Anima
-						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { ADDED_9_1_0, "removed 9.2.0" },
+					i(187254, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Arrangement of Anima
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 						["g"] = {
 							currency(ANIMA),	-- Reservoir Anima
 						},
-					}),
-					i(191302, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH } }, {	-- Bottled Night Sky
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
+					})),
+					i(191302, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bottled Night Sky
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 						["g"] = {
 							i(188957),	-- Genesis Mote
 						},
 					})),
 					i(187503, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bundle of Archived Research
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 						["g"] = {
 							currency(1931),	-- Cataloged Research
 						},
 					})),
 					i(191300, {	-- Certified Vouchsafe
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0" }
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
+						["timeline"] = { ADDED_9_2_0 }
 					}),
-					i(191030, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH } }, {	-- Cosmic Flux Parcel
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
+					i(191030, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Cosmic Flux Parcel
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						["g"] = {
 							currency(2009),	-- Cosmic Flux
 						},
 					})),
 					i(191297, {	-- Ephemera-Infused Mesh
-						["cost"] = { { "i", 187219, 6 } },	-- 6x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0", REMOVED_9_2_5 },
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 6 }},
+						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 					}),
 					i(199112, {	-- Fated Matter Fractalizer
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
 						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 					}),
 					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Korthite Crystal Geode
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
 						["g"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
-					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, "removed 9.2.0" } }, {	-- Korthite Crystal Geode
-						["cost"] = { { "c", 1191, 1500 } },	-- 1500x Valor
+					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Korthite Crystal Geode
+						["cost"] = {{ "c", VALOR, 1500 }},
 						["g"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
 					i(191303, {	-- Overflowing Chest of Riches
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH }
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
+						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }
 					}),
 					i(187707, {	-- Progentior Essentia
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH }
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
+						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }
 					}),
-					i(185832, {	-- Shipment of Elethium Ore
-						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
+					i(185832, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Elethium Ore
+						["cost"] = {{ "c", VALOR, 750 }},
 						["g"] = {
 							i(171833),	-- Elethium Ore
 						},
-					}),
-					i(185765, {	-- Shipment of Heavy Callous Hide
-						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
+					})),
+					i(185765, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Heavy Callous Hide
+						["cost"] = {{ "c", VALOR, 750 }},
 						["g"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
-					}),
-					i(185833, {	-- Shipment of Lightless Silk
-						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
+					})),
+					i(185833, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Lightless Silk
+						["cost"] = {{ "c", VALOR, 750 }},
 						["g"] = {
 							i(173204),	-- Lightless Silk
 						},
-					}),
-					i(187221, {	-- Soul Ash Cache
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
+					})),
+					i(187221, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Soul Ash Cache
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 						["g"] = {
 							currency(1828),	-- Soul Ash
 						},
-					}),
-					i(187222, {	-- Stygic Singularity
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
+					})),
+					i(187222, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Stygic Singularity
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 						["g"] = {
 							currency(1767),	-- Stygia
 						},
-					}),
-					i(191301, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH } }, {	-- Treatise on Patterns in the Purpose
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
+					})),
+					i(191301, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Treatise on Patterns in the Purpose
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 						["g"] = {
 							currency(1979),	-- Cyphers of the First Ones
 						},
 					})),
-					i(191299, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH } }, {	-- Tribute of the Enlightened
-						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
+					i(191299, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Tribute of the Enlightened
+						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 					})),
 				},
 			})),
@@ -382,6 +378,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(188377, {	-- So'turu <Fence of the First Ones>
 				["coord"] = { 67.0, 32.2, ORIBOS },
 				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+				--[[
 				["sym"] = {
 					{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -392,10 +389,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{"is", "itemID"},						-- Only Items!
 					{"invtype", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 				},
+				--]]
 			}),
 			n(188386, {	-- Ta'choso <Domination Dealer>
 				["coord"] = { 67.3, 32.7, ORIBOS },
 				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+				--[[
 				["sym"] = {
 					{"select", "instanceID", 1193},			-- Sanctum of Domination
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -406,6 +405,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{"is", "itemID"},						-- Only Items!
 					{"invtype", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 				},
+				--]]
 			}),
 			n(167881, {	-- Ta'lan the Antiquary <Cartel Ta>
 				["coord"] = { 51.3, 43.0, 1672 },
@@ -419,32 +419,29 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 63.8, 36.0, ORIBOS },
 				["g"] = {
 					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Korthite Crystal Geode
-						["cost"] = { { "c", ANIMA, 15000 } },
+						["cost"] = {{ "c", ANIMA, 15000 }},
 						["g"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
 					i(187707, {	-- Progentior Essentia
-						["cost"] = { { "c", ANIMA, 25000 } },
-						["timeline"] = { "added 9.2.0" }
+						["cost"] = {{ "c", ANIMA, 25000 }},
+						["timeline"] = { ADDED_9_2_0 }
 					}),
 					i(185832, {	-- Shipment of Elethium Ore
-						["cost"] = { { "c", ANIMA, 7500 } },
-						["timeline"] = { ADDED_9_0_5 },
+						["cost"] = {{ "c", ANIMA, 7500 }},
 						["g"] = {
 							i(171833),	-- Elethium Ore
 						},
 					}),
 					i(185765, {	-- Shipment of Heavy Callous Hide
-						["cost"] = { { "c", ANIMA, 7500 } },
-						["timeline"] = { ADDED_9_0_5 },
+						["cost"] = {{ "c", ANIMA, 7500 }},
 						["g"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
 					}),
 					i(185833, {	-- Shipment of Lightless Silk
-						["cost"] = { { "c", ANIMA, 7500 } },
-						["timeline"] = { ADDED_9_0_5 },
+						["cost"] = {{ "c", ANIMA, 7500 }},
 						["g"] = {
 							i(173204),	-- Lightless Silk
 						},

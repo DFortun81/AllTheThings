@@ -162,10 +162,6 @@ i(168018, 1847);	-- Commendation of the Hand of the Prophet
 -- Legion
 i(147418, 1859);	-- Arcane Remnant of Falanaar [The Nightfallen]
 i(147416, 1859);	-- Arcane Tablet of Falanaar [The Nightfallen]
-i(152959, ARGUSSIAN_REACH);	-- Argussian Reach Insignia
-i(152960, ARGUSSIAN_REACH);	-- Argussian Reach Insignia
-i(152957, ARMY_OF_THE_LIGHT);	-- Army of the Light Insignia
-i(152958, ARMY_OF_THE_LIGHT);	-- Army of the Light Insignia
 i(141340, 1900);	-- Court of Farondis Insignia [Court of Farondis]
 i(139023, 1900);	-- Court of Farondis Insignia [Court of Farondis]
 i(146937, 1900);	-- Court of Farondis Insignia [Court of Farondis]
@@ -174,10 +170,6 @@ i(141339, 1883);	-- Dreamweaver Insignia [Dreamweavers]
 i(139021, 1883);	-- Dreamweaver Insignia [Dreamweavers]
 i(146942, 1883);	-- Dreamweaver Insignia [Dreamweavers]
 i(146936, 1883);	-- Dreamweaver Insignia [Dreamweavers]
-i(152954, ARGUSSIAN_REACH);	-- Greater Argussian Reach Insignia
-i(152961, ARGUSSIAN_REACH);	-- Greater Argussian Reach Insignia
-i(152955, ARMY_OF_THE_LIGHT);	-- Greater Army of the Light Insignia
-i(152956, ARMY_OF_THE_LIGHT);	-- Greater Army of the Light Insignia
 i(147410, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
 i(141989, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
 i(150927, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
@@ -215,6 +207,7 @@ i(141342, 1894);	-- Wardens Insignia [The Wardens]
 i(139025, 1894);	-- Wardens Insignia [The Wardens]
 i(146945, 1894);	-- Wardens Insignia [The Wardens]
 i(146939, 1894);	-- Wardens Insignia [The Wardens]
+
 
 
 -- Battle For Azeroth
@@ -306,11 +299,39 @@ i(146939, 1894);	-- Wardens Insignia [The Wardens]
 -- NEUTRAL
 -- 1598, 2163	-- Tortollan Seekers Commendation
 
--- Shadowlands
-i(187429, 2465);	-- Petrified Sylvan Antlers (The Wild Hunt)
 
--- TODO: these items are from quest #60256, "A Valuable Find: Halls of Atonement" -- they all say they award rep with "the denizens of [zone]," unsure if that means some can award rep for multiple factions
-i(178593, 2465);	-- Intricate Fae Groveweave (The Wild Hunt)
-i(178592, 2407);	-- Venerable Kyrian Defender (The Ascended)
-i(178590, 2410);	-- Storied Maldraxxian Boneblade (The Undying Army)
+
+-----------------
+-- PATCH 7.3.0 --
+-----------------
+i(152959, FACTION_ARGUSSIAN_REACH);		-- Argussian Reach Insignia
+i(152960, FACTION_ARGUSSIAN_REACH);		-- Argussian Reach Insignia
+i(152957, FACTION_ARMY_OF_THE_LIGHT);	-- Army of the Light Insignia
+i(152958, FACTION_ARMY_OF_THE_LIGHT);	-- Army of the Light Insignia
+i(152954, FACTION_ARGUSSIAN_REACH);		-- Greater Argussian Reach Insignia
+i(152961, FACTION_ARGUSSIAN_REACH);		-- Greater Argussian Reach Insignia
+i(152955, FACTION_ARMY_OF_THE_LIGHT);	-- Greater Army of the Light Insignia
+i(152956, FACTION_ARMY_OF_THE_LIGHT);	-- Greater Army of the Light Insignia
+
+-----------------
+-- PATCH 9.0.2 --
+-----------------
 i(178591, 2413);	-- Ancient Venthyr Relic (Court of Harvesters)
+i(178593, FACTION_THE_WILD_HUNT);		-- Intricate Fae Groveweave
+i(178590, FACTION_THE_UNDYING_ARMY);	-- Storied Maldraxxian Boneblade
+i(178592, FACTION_THE_ASCENDED);		-- Venerable Kyrian Defender
+
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+i(187425, FACTION_THE_UNDYING_ARMY);	-- Ancient Maldraxxi Armament
+i(187427, FACTION_THE_ASCENDED);		-- Lost Meditation Bell
+i(187429, FACTION_THE_WILD_HUNT);		-- Petrified Sylvan Antlers
+
+------------------
+-- PATCH 10.0.2 --
+------------------
+i(200287, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Uncommon]
+i(200453, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Rare]
+i(201922, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Epic]
+i(202092, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Epic]

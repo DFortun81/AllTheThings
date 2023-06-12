@@ -2,7 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local ARTISANS_METTLE = 190456;
-local ASPECTS_TOKEN_OF_MERIT = 201836;
+local ASPECTS_TOKEN_OF_MERIT_S1 = 201836;
+local ASPECTS_TOKEN_OF_MERIT_S2 = 205225;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(VENDORS, {
@@ -32,14 +33,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(199605, {	-- Evantkis <Token Exchange>
 				["coord"] = { 58.6, 57.6, VALDRAKKEN },
 				["g"] = {
+					i(199197, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Bottled Essence
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 12 }},
+						["g"] = {
+							i(190453),	-- Spark of Ingenuity
+						},
+					})),
+					i(206028, {	-- Chest of Gold
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 2 }},
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+					}),
+					i(204195, {	-- Drake's Shadowflame Crest
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 }},
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+					}),
 					i(202122, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Primal Chaos Cluster
-						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT, 3 }, },
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 3 }},
 						["g"] = {
 							i(190454),	-- Depleted Primal Chaos
 						},
 					})),
+					i(206037, {	-- Ruby Flightstone
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 }},
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+					}),
 					i(202152, {	-- Storm-Charged Manipulator
-						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT, 6 }, },
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 6 }},
+						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
+					}),
+					i(205999, {	-- Volcanic Sculptor
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 6 }},
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+					}),
+					i(204196, {	-- Wyrm's Shadowflame Crest
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 2 }},
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
 					}),
 				},
 			}),

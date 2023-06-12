@@ -199,3 +199,49 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		-- #endif
 	}),
 }));
+SL_INSCRIPTION = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	r(309805),	-- Shadowlands Inscription
+	cat(1409, {	-- Books & Scrolls
+		r(311425),	-- Tome of the Still Mind
+		r(311423),	-- Writ of Grave Robbing
+	}),
+	cat(1411, {	-- Cards
+		r(311441),	-- Darkmoon Card of Death
+		r(324037),	-- Darkmoon Card of Putrescence
+		r(324036),	-- Darkmoon Card of Repose
+		r(324039),	-- Darkmoon Card of the Indomitable
+		r(324035),	-- Darkmoon Card of Voracity
+	}),
+	cat(786, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 }},{	-- Glyphs
+		r(362412),	-- Glyph of the Wild Mushroom*
+	})),
+	cat(1408, {	-- Ink
+		r(311406),	-- Luminous Ink
+		r(321029),	-- Tranquil Ink
+		r(311405),	-- Umbral Ink
+	}),
+	cat(1412, {	-- Mass Milling
+		r(311413),	-- Mass Mill Deathblossom
+		r(359490, {["timeline"] = {ADDED_9_2_0}}),	-- Mass Mill First Flower
+		r(311416),	-- Mass Mill Marrowroot
+		r(311418),	-- Mass Mill Nightshade
+		r(311417),	-- Mass Mill Rising Glory
+		r(311414),	-- Mass Mill Vigil's Torch
+		r(311415),	-- Mass Mill Widowbloom
+	}),
+	cat(1407, {	-- Off-Hands
+		r(311408),	-- Newly Departed Codex
+	}),
+	cat(1474, {	-- Optional Reagents
+		r(343691),	-- Crafter's Mark I
+		r(324197),	-- Missive of Critical Strike
+		r(324198),	-- Missive of Haste
+		r(324196),	-- Missive of Mastery
+		r(324195),	-- Missive of Versatility
+		r(343686),	-- Novice Crafter's Mark
+	}),
+	cat(1415, {	-- Staves
+		r(311688),	-- Soul Keeper's Column
+		r(311689),	-- Soul Keeper's Spire
+	}),
+}));

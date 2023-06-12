@@ -30,47 +30,48 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			}),
 			n(173003, {	-- Nalcorn Talsen <Undying Army Quartermaster>
 				["coord"] = { 50.6, 53.4, MALDRAXXUS },
-				["g"] = repVendor(2410, {
-				{		-- Neutral
-					i(183112, {	-- Animated Radius
-						["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
-					}),
-					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { ADDED_9_2_0 },
-						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
-						},
-					}),
-				}, {	-- Friendly
-				}, {	-- Honored
-					i(184741),	-- Apprentice Necromancer's Gloves
-					i(184740),	-- Fortified Jawcrackers
-					i(184739),	-- Pallid Stitched Gloves
-					i(183101),	-- Pattern: Shadowlace Cloak (RECIPE!)
-					i(183095),	-- Plans: Shadowsteel Pauldrons (RECIPE!)
-					i(184742),	-- Rattling Bonefists
-					i(183858),	-- Schematic: Wormhole Generator: Shadowlands (RECIPE!)
-				}, {	-- Revered
-					i(184744),	-- Gnarled Boneloop
-					i(183244),	-- Memory of the Rattle of the Maw
-					i(183104),	-- Technique: Contract: The Undying Army (RECIPE!)
-					i(181272, {	-- Toenail (PET!)
-						["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
-					}),
-				}, {	-- Exalted
-					i(184738),	-- Chainmail of the March Warden
-					i(184737),	-- Chestplate of the March Warden
-					i(180456),	-- Colors of the Undying Army
-					i(183189),	-- Illusion: Undying Spirit
-					i(182082),	-- Lurid Bloodtusk (MOUNT!)
-					i(184736),	-- Robe of the March Warden
-					i(184745),	-- Tunic of the March Warden
-					n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }},{
-						i(181807),	-- Barbarous Osteowings
-						i(181808),	-- Death Fetish
-					})),
-				}}),
+				["g"] = repVendor(FACTION_THE_UNDYING_ARMY, {
+					{		-- Neutral
+						i(183112, {	-- Animated Radius
+							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+						}),
+						i(190644, {	-- Vessel of Profound Possibilities
+							["timeline"] = { ADDED_9_2_0 },
+							["sym"] = {
+								{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
+								{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+							},
+						}),
+					}, {	-- Friendly
+					}, {	-- Honored
+						i(184741),	-- Apprentice Necromancer's Gloves
+						i(184740),	-- Fortified Jawcrackers
+						i(184739),	-- Pallid Stitched Gloves
+						i(183101),	-- Pattern: Shadowlace Cloak (RECIPE!)
+						i(183095),	-- Plans: Shadowsteel Pauldrons (RECIPE!)
+						i(184742),	-- Rattling Bonefists
+						i(183858),	-- Schematic: Wormhole Generator: Shadowlands (RECIPE!)
+					}, {	-- Revered
+						i(184744),	-- Gnarled Boneloop
+						i(183244),	-- Memory of the Rattle of the Maw
+						i(183104),	-- Technique: Contract: The Undying Army (RECIPE!)
+						i(181272, {	-- Toenail (PET!)
+							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+						}),
+					}, {	-- Exalted
+						i(184738),	-- Chainmail of the March Warden
+						i(184737),	-- Chestplate of the March Warden
+						i(180456),	-- Colors of the Undying Army
+						i(183189),	-- Illusion: Undying Spirit
+						i(182082),	-- Lurid Bloodtusk (MOUNT!)
+						i(184736),	-- Robe of the March Warden
+						i(184745),	-- Tunic of the March Warden
+						n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }},{
+							i(181807),	-- Barbarous Osteowings
+							i(181808),	-- Death Fetish
+						})),
+					},
+				}),
 			}),
 			n(169964, {	-- One-Eyed Joby <Unusual Wares>
 				["coord"] = { 53.2, 41.2, MALDRAXXUS },

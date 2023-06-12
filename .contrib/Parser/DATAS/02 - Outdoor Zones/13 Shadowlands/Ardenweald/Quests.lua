@@ -827,8 +827,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					},
 				}),
 			}),
-
-				-- MISC --
+			------ Miscellaneous ------
 			q(62246, {	-- A Fallen Friend
 				["provider"] = { "i", 183091 },	-- Lifewoven Bracelet
 			}),

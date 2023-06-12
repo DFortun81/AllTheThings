@@ -1053,8 +1053,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-
-				-- MISC --
+			------ Miscellaneous ------
 			q(54933, {	-- Freeing the Light
 				["sourceQuests"] = {
 					55879,	-- Ride of the Scientifically Enhanced Boar

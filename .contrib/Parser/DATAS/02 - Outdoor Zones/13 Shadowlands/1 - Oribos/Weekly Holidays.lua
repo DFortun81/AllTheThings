@@ -1,13 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.Zones, m(SHADOWLANDS, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(184869, {	-- Cache of Nathrian Treasures (N)
 					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
+					--[[
 					["sym"] = {
 						{"select", "instanceID", 1190},			-- Castle Nathria
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -20,9 +20,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
+					--]]
 				}),
 				i(184868, {	-- Cache of Nathrian Treasures (HC)
 					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
+					--[[
 					["sym"] = {
 						{"select", "instanceID", 1190},			-- Castle Nathria
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -35,9 +37,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
+					--]]
 				}),
 				i(186531, {	-- Cache of Sanctum Treasures (N)
 					["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
+					--[[
 					["sym"] = {
 						{"select", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -50,9 +54,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
+					--]]
 				}),
 				i(186533, {	-- Cache of Sanctum Treasures (HC)
 					["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
+					--[[
 					["sym"] = {
 						{"select", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -65,9 +71,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
+					--]]
 				}),
 				i(190655, {	-- Cache of Sepulcher Treasures (N) or 190654
 					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
+					--[[
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -78,9 +86,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
+					--]]
 				}),
 				i(191040, {	-- Cache of Sepulcher Treasures (5x BC TW -> N) [Q:62632]
 					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
+					--[[
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -91,9 +101,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
+					--]]
 				}),
 				i(191041, {	-- Cache of Sepulcher Treasures (4x Mythic -> H)
 					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
+					--[[
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -104,9 +116,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
+					--]]
 				}),
 				i(190656, {	-- Cache of Sepulcher Treasures (H)
 					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
+					--[[
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -117,11 +131,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
+					--]]
 				}),
 				i(192437, {	-- Cache of Fated Treasures (Normal)
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 					["modID"] = 11,
 					["bonusID"] = 8157,
+					--[[
 					["sym"] = {
 						{"select", "instanceID"
 							,1190			-- Castle Nathria
@@ -143,11 +159,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						},
 						{"modID",89},	-- Fated ModID
 					},
+					--]]
 				}),
 				i(192438, {	-- Cache of Fated Treasures (Heroic)
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 					["modID"] = 11,
 					["bonusID"] = 8157,
+					--[[
 					["sym"] = {
 						{"select", "instanceID"
 							,1190			-- Castle Nathria
@@ -169,6 +187,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						},
 						{"modID",91},	-- Fated Heroic ModID
 					},
+					--]]
 				}),
 			}),
 			n(QUESTS, sharedData({
@@ -208,4 +227,4 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 			})),
 		}),
 	}),
-}));
+})));

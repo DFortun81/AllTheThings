@@ -246,6 +246,14 @@ i(48691);	-- Tattered Dreadmist Robe
 i(42945);	-- Venerable Dal'Rend's Sacred Charge
 i(48716);	-- Venerable Mass of McGowan
 
+------------------
+-- PATCH 10.0.2 --
+------------------
+i(200287);	-- Iskaara Tuskarr Insignia [Uncommon]
+i(200453);	-- Iskaara Tuskarr Insignia [Rare]
+i(201922);	-- Iskaara Tuskarr Insignia [Epic]
+i(202092);	-- Iskaara Tuskarr Insignia [Epic]
+i(200449);	-- Sacred Tuskarr Totem
 
 ------------------
 -- PATCH 10.0.7 --

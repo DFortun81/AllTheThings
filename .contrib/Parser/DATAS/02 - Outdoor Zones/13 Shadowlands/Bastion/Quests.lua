@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14281, {	-- The Path to Ascension
@@ -872,7 +872,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					}),
 				},
 			}),
-				-- Gift Questline --
+			------ Gift Questline ------
 			q(60466, {	-- The Old Ways
 				["sourceQuests"] = {
 					57677,	-- A Soulbind in Need
@@ -891,7 +891,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["provider"] = { "n", 174900 },	-- Acolyte Amalthina
 				["coord"] = { 47.8, 73.2, BASTION },
 			}),
-				-- MISC --
+			------ Miscellaneous ------
 			q(57444, {	-- An Inspired Moral Inventory
 				["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 				["provider"] = { "n", 160647 },	-- Acolyte Galistos
@@ -969,61 +969,57 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["coord"] = { 53.0, 47.6, BASTION },
 			}),
 			n(BONUS_OBJECTIVES, {
-				q(62737, {	-- Aspirant For a Day (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				q(59015, {	-- Hostile Recollection
+					["coord"] = { 56.9, 59.9, BASTION },
+				}),
+			}),
+			n(BONUS_OBJECTIVES, sharedData({
+				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				["lockCriteria"] = { 1, "lvl", 60 },
+			}, bubbleDown({
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2 },
+			}, {
+				q(62737, {	-- Aspirant For a Day
+					["coord"] = { 54.1, 80.4, BASTION },
 					["g"] = {
 						i(181571),	-- Spiritmender's Handwraps
 						i(181580),	-- Soulbearer's Gloves
 						i(181596),	-- Forgehand's Handguards
 						i(181608),	-- Shieldguard's Gauntlets
 					},
-					["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 				}),
-				q(59015, {	-- Hostile Recollection
-				}),
-				q(62735, {	-- Hostile Recollection (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				q(62735, {	-- Hostile Recollection
 					["coord"] = { 56.9, 59.9, BASTION },
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						i(181703),	-- Skychime Necklace
 					},
-					["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 				}),
-				q(62732, {	-- Locus Focus (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				q(62732, {	-- Locus Focus
 					["coord"] = { 54.7, 64.1, BASTION },
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						i(181575),	-- Spiritmender's Cord
 						i(181587),	-- Soulbearer's Belt
 						i(181603),	-- Forgehand's Chain
 						i(181612),	-- Shieldguard's Girdle
 					},
-					["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 				}),
-				q(62736, {	-- Maldraxxi Eviction Notice (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				q(62736, {	-- Maldraxxi Eviction Notice
+					["coord"] = { 40.4, 53.6, BASTION },
 					["g"] = {
 						i(181569),	-- Spiritmender's Robe
 						i(181577),	-- Soulbearer's Vest
 						i(181591),	-- Forgehand's Hauberk
 						i(181605),	-- Shieldguard's Breastplate
 					},
-					["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 				}),
-				q(62705, {	-- Scour the Temple (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				q(62705, {	-- Scour the Temple
 					["coord"] = { 58.4, 75.2, BASTION },
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						i(181721),	-- Ascendent Valor Signet
 					},
-					["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 				}),
-			}),
+			}))),
 		}),
 	}),
 })));

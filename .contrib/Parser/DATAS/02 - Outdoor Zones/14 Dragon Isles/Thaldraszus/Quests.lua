@@ -1074,7 +1074,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 57.1, 64.6, THALDRASZUS },
 				}),
 			}),
-			------ Misc ------
+			------ Miscellaneous ------
 			q(67093, {	-- An Anomalous Shrine
 				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
 				["provider"] = { "n", 192543 },	-- Archivist Arenial

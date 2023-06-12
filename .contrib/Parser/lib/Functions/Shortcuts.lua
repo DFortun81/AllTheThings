@@ -298,6 +298,16 @@ repVendor = function(rep, group)
 	end
 	return t;
 end
+repRenown = function(rep, group)
+	local t = {};
+	for i,groups in ipairs(group) do
+		groups = bubbleDown({["minReputation"] = {rep, i}}, groups)
+		for j,o in ipairs(groups) do
+			table.insert(t, o);
+		end
+	end
+	return t;
+end
 run = function(method, t)
 	if t then
 		if t.g or t.groups then
