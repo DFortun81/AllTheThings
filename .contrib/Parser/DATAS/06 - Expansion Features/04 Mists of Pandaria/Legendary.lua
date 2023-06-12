@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(MOP_TIER, {
-		n(LEGENDARY_QUESTLINE, {
+		n(QUALITY_LEGENDARY, {
 			["title"] = "The Black Prince",
 			["icon"] = 656543,
 			["isRaid"] = true,

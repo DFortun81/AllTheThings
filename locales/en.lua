@@ -1299,18 +1299,6 @@ app.L = {
 		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
-	-- NYI
-		-- Unknown patch
-		--[-?] = ?,																-- Patch 0.x.x
-		[-2180] = app.asset("Expansion_CLASSIC"),								-- Patch 1.x.x
-		[-2181] = app.asset("Expansion_TBC"),									-- Patch 2.x.x
-		[-2182] = app.asset("Expansion_WOTLK"),									-- Patch 3.x.x
-		[-2183] = app.asset("Expansion_CATA"),									-- Patch 4.x.x
-		[-2184] = app.asset("Expansion_MOP"),									-- Patch 5.x.x
-		[-2185] = app.asset("Expansion_WOD"),									-- Patch 6.x.x
-		[-2186] = app.asset("Expansion_LEGION"),								-- Patch 7.x.x
-		[-2187] = app.asset("Expansion_BFA"),									-- Patch 8.x.x
-		[-2188] = app.asset("Expansion_SL"),									-- Patch 9.x.x
 	};
 	["HEADER_NAMES"] = {
 		[-41] = "Cache of Madness",												-- Cache of Madness
@@ -1634,7 +1622,6 @@ app.L = {
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
 		[-10058] = WORLD,														-- World
 		[-10061] = select(2,GetAchievementInfo(7333)),							-- The Four Celestials
-		[-10066] = BATTLE_PET_BREED_QUALITY6,									-- "Legendary";
 	-- 8.3
 		[-10071] = "Visions of N'Zoth",
 		[-10072] = "N'Zoth Assault",
@@ -1643,18 +1630,6 @@ app.L = {
 		[-10080] = SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE,				-- Horrific Visions
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
-	-- NYI
-		-- Unknown patch
-		--[-?] = "0.x.x",														-- Patch 0.x.x
-		[-2180] = "1.x.x",														-- Patch 1.x.x
-		[-2181] = "2.x.x",														-- Patch 2.x.x
-		[-2182] = "3.x.x",														-- Patch 3.x.x
-		[-2183] = "4.x.x",														-- Patch 4.x.x
-		[-2184] = "5.x.x",														-- Patch 5.x.x
-		[-2185] = "6.x.x",														-- Patch 6.x.x
-		[-2186] = "7.x.x",														-- Patch 7.x.x
-		[-2187] = "8.x.x",														-- Patch 8.x.x
-		[-2188] = "9.x.x",														-- Patch 9.x.x
 	};
 	["HEADER_DESCRIPTIONS"] = {};
 	["HEADER_LORE"] = {};

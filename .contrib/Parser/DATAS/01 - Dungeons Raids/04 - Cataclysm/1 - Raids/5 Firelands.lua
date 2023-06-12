@@ -101,7 +101,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 				}),
 				ach(5983),	-- Firelands Guild Run
 			}),
-			n(LEGENDARY_QUESTLINE, {
+			n(QUALITY_LEGENDARY, {
 				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
 				["title"] = "Dragonwrath, Tarecgosa's Rest",
 				["icon"] = "Interface\\Icons\\Stave_2H_Tarecgosa_E_01StageFinal",

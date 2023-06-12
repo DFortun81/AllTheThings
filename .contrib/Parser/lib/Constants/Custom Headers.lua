@@ -16,7 +16,6 @@ SEASON_THUNDERING = 16429;
 SEASON_SMOLDERING = 17846;
 
 -- Expansion Features
-LEGENDARY_QUESTLINE = -10066;
 	-- WoD
 	GARRISONS = -9966;
 	FOLLOWERS = -101;
@@ -115,17 +114,6 @@ FIFTEENTH_ANNIVERSARY = -5364;
 SIXTEENTH_ANNIVERSARY = -5365;
 SEVENTEENTH_ANNIVERSARY = -5366;
 EIGHTEENTH_ANNIVERSARY = -5367;
-
--- NYI
-P1xx = -2180;
-P2xx = -2181;
-P3xx = -2182;
-P4xx = -2183;
-P5xx = -2184;
-P6xx = -2185;
-P7xx = -2186;
-P8xx = -2187;
-P9xx = -2188;
 --------------------------
 --     T H E  E N D     --
 --------------------------

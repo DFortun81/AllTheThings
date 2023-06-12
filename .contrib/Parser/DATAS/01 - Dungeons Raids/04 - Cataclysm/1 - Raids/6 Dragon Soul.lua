@@ -52,7 +52,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 				}),
 				ach(6123),	-- Dragon Soul Guild Run
 			}),
-			n(LEGENDARY_QUESTLINE, {
+			n(QUALITY_LEGENDARY, {
 				["title"] = "Fangs of the Father",
 				["icon"] = "Interface\\Icons\\ability_backstab",
 				["classes"] = { ROGUE },

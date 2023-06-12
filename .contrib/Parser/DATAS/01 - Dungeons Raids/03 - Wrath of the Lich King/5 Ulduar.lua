@@ -142,7 +142,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					},
 				}),
 			}),
-			applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(LEGENDARY_QUESTLINE, {
+			applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(QUALITY_LEGENDARY, {
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 				["title"] = "Val'anyr, Hammer of Ancient Kings",
@@ -1233,7 +1233,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 						}),
 					}),
-					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(LEGENDARY_QUESTLINE, {
+					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(QUALITY_LEGENDARY, {
 						["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
 						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 						["title"] = "Val'anyr, Hammer of Ancient Kings",

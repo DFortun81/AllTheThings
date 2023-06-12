@@ -124,7 +124,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 			n(FACTIONS, {
 				faction(1156),	-- The Ashen Verdict
 			}),
-			n(LEGENDARY_QUESTLINE, {
+			n(QUALITY_LEGENDARY, {
 				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				["title"] = "Shadowmourne",

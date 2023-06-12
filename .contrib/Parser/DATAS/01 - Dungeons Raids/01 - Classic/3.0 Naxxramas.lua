@@ -33,7 +33,7 @@ applyclassicphase(PHASE_SIX,
 				["lvl"] = 60,
 				["groups"] = {
 			-- #endif
-					n(LEGENDARY_QUESTLINE, {
+					n(QUALITY_LEGENDARY, {
 						["title"] = "Atiesh, Greatstaff of the Guardian",
 						["icon"] = "Interface\\Icons\\INV_Staff_Medivh",
 						-- #if BEFORE WRATH
