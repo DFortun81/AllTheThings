@@ -4,8 +4,8 @@
 
 root(ROOTS.ExpansionFeatures, {
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
-			n(-237, {	-- War Front: The Battle for Darkshore
+		n(WARFRONT, {
+			n(WARFRONT_BATTLE_FOR_DARKSHORE, {
 				n(QUESTS, {
 					-- Alliance Quests
 					q(53977, {	-- The War Chest (A)
@@ -301,7 +301,7 @@ root(ROOTS.ExpansionFeatures, {
 							i(166370, {	-- Sentinel Equipment Cache (A) [Heroic]
 								["modID"] = 23,
 								["sym"] = {
-									{"select","headerID",-10057},{"pop"},
+									{"select","headerID",WARFRONT},{"pop"},
 									{"where","mapID",DARKSHORE},{"pop"},
 									{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
 									{"extract","itemID"},
@@ -319,7 +319,7 @@ root(ROOTS.ExpansionFeatures, {
 							i(166370, {	-- Sentinel Equipment Cache (A) [Normal]
 								["modID"] = 6,
 								["sym"] = {
-									{"select","headerID",-10057},{"pop"},
+									{"select","headerID",WARFRONT},{"pop"},
 									{"where","mapID",DARKSHORE},{"pop"},
 									{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
 									{"extract","itemID"},
@@ -474,7 +474,7 @@ root(ROOTS.ExpansionFeatures, {
 							i(166369, {	-- Deathguard Equipment Cache (H) [Heroic]
 								["modID"] = 23,
 								["sym"] = {
-									{"select","headerID",-10057},{"pop"},
+									{"select","headerID",WARFRONT},{"pop"},
 									{"where","mapID",DARKSHORE},{"pop"},
 									{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
 									{"extract","itemID"},
@@ -491,7 +491,7 @@ root(ROOTS.ExpansionFeatures, {
 							i(166369, {	-- Deathguard Equipment Cache (H) [Normal]
 								["modID"] = 6,
 								["sym"] = {
-									{"select","headerID",-10057},{"pop"},
+									{"select","headerID",WARFRONT},{"pop"},
 									{"where","mapID",DARKSHORE},{"pop"},
 									{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
 									{"extract","itemID"},
@@ -508,8 +508,8 @@ root(ROOTS.ExpansionFeatures, {
 });
 
 root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
-	n(-10057, {	-- War Effort
-		n(-237, {	-- War Front: The Battle for Darkshore
+	n(WARFRONT, {
+		n(WARFRONT_BATTLE_FOR_DARKSHORE, {
 			q(53801),	-- The Battle for Darkshore (Heroic, Horde)
 			q(53800),	-- Battle for Darkshore — triggered after defeating Sira Moonwarden in Darkshore warfront
 		}),

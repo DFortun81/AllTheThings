@@ -994,11 +994,7 @@ app.L = {
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
-		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
-		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
-		[-40] = "Interface\\Icons\\Inv_misc_book_17",										-- Legacy
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
-		[-42] = app.asset("Category_Crafting"),												-- Crafted Item
 		[-43] = 618859,																		-- Proving Grounds [achievement_challengemode_platinum]
 	-- World Events (These are used by ATT Classic)
 		[-47] = "Interface\\Icons\\achievement_worldevent_lunar",							-- Lunar Festival
@@ -1061,12 +1057,8 @@ app.L = {
 	-- Class
 		[-219] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",										-- Class
-	-- Warfronts
-		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",					-- Warfront: The Battle for Stromgarde
 	-- War Campaign
 		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
-	-- Warfront
-		[-237] = "Interface\\Icons\\achievement_zone_darkshore_01",							-- Warfront: The Battle for Darkshore
 	-- PvP
 		[-240] = "Interface\\Icons\\Achievement_rankedpvp_06",								-- Rated
 		[-242] = "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",				-- Unrated
@@ -1097,11 +1089,6 @@ app.L = {
 		[-390] = "Interface\\Icons\\inv_misc_coinbag_special",								-- Smuggler's Den
 		[-391] = "Interface\\Icons\\achievement_guildperk_hastyhearth",						-- Stoktron Brewery (alliance)
 		[-392] = "Interface\\Icons\\achievement_guildperk_hastyhearth",						-- Hearthfire Tavern (horde)
-	-- Icecrown Citadel
-		[-393] = "Interface\\Icons\\achievement_dungeon_icecrown_icecrownentrance",			-- Storming the Citadel
-		[-394] = "Interface\\Icons\\achievement_dungeon_plaguewing",						-- The Plagueworks
-		[-395] = "Interface\\Icons\\achievement_dungeon_crimsonhall",						-- The Crimson Halls
-		[-396] = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",			-- The Frostwing Halls
 	-- BFA Outposts
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
 	-- 5.3
@@ -1302,7 +1289,6 @@ app.L = {
 		[-9966] = 1041860,															-- Dreanor Garrison
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
-		[-10057] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",				-- War Effort
 		[-10058] = app.asset("Category_Zones"),										-- World
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
 	-- 8.3
@@ -1330,11 +1316,7 @@ app.L = {
 		[-2188] = app.asset("Expansion_SL"),									-- Patch 9.x.x
 	};
 	["HEADER_NAMES"] = {
-		[-11] = "Common Box Drops",												-- Common Box Drops
-		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
-		[-40] = LFG_LIST_LEGACY,												-- Legacy
 		[-41] = "Cache of Madness",												-- Cache of Madness
-		[-42] = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,					-- Crafted Item
 		[-43] = TRACKER_HEADER_PROVINGGROUNDS,									-- Proving Grounds
 	-- World Events (These are used by ATT Classic)
 		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
@@ -1398,12 +1380,8 @@ app.L = {
 	[-219] = "Sourceless",														-- Sourceless
 	-- Class
 		[-220] = CLASS,															-- Class
-	-- Warfronts
-		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde
 	-- War Campaign
 		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
-	-- Warfront
-		[-237] = GetSpellInfo(290253),											-- Warfront: The Battle for Darkshore
 	-- PvP
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated
@@ -1434,11 +1412,6 @@ app.L = {
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
-	-- Icecrown Citadel
-		[-393] = "Storming the Citadel",										-- Storming the Citadel
-		[-394] = "The Plagueworks",												-- The Plagueworks
-		[-395] = C_Map.GetAreaInfo(4892),										-- The Crimson Hall
-		[-396] = C_Map.GetAreaInfo(7932),										-- The Frostwing Halls
 	-- BFA Outposts
 		[-397] = "Outposts",													-- Outposts
 	-- 5.3
@@ -1546,7 +1519,6 @@ app.L = {
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
 		[-905] = GetSpellInfo(280630),											-- Command Table
-		[-914] = COVENANT_MISSIONS_TITLE,										-- Adventures
 		[-915] = ANIMA_DIVERSION_ORIGIN_TOOLTIP,								-- Anima Conductor
 		[-916] = string.format(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
 		[-917] = string.format(COVENANT_SANCTUM_TIER, 2),						-- Tier 2
@@ -1663,7 +1635,6 @@ app.L = {
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
-		[-10057] = select(1,GetCategoryInfo(15308)),							-- War Effort
 		[-10058] = WORLD,														-- World
 		[-10061] = select(2,GetAchievementInfo(7333)),							-- The Four Celestials
 		[-10066] = BATTLE_PET_BREED_QUALITY6,									-- "Legendary";

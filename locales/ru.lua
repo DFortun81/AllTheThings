@@ -655,8 +655,6 @@ do a[key] = value; end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
-		[-11] = "Обычная добыча из Сундуков",					-- Common Box Drops
-		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop
 		[-41] = "Тайник Безумия",
 	-- World Events
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
@@ -689,9 +687,6 @@ for key,value in pairs({
 		[-356] = "Атака на Темный портал",							-- Assault on the Dark Portal
 	-- Outposts in Draenor
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
-	-- Icecrown Citadel
-		[-393] = "Штурм цитадели",									-- Storming the Citadel
-		[-394] = "Чумодельня",										-- The Plagueworks
 	-- BFA Outposts
 		[-397] = "Аванпосты",										-- Outposts
 	-- 5.3

@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			m(ARATHI_HIGHLANDS, {
 				n(RARES, {
 					n(142709, {	-- Beastrider Kama

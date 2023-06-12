@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
-	n(-10057, {	-- War Effort
+	n(WARFRONT, {
 		n(FOLLOWERS, bubbleDownSelf({
 			["u"] = 15,	-- Temporary troops
 		}, {

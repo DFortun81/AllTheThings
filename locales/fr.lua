@@ -667,7 +667,6 @@ do a[key] = value; end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
-		[-23] = "Objet commun de donjon",							-- WoD Common Dungeon Drop
 		[-41] = "L'antre de la Folie",
 	-- World Events
 		[-53] = "Fête du Feu du solstice d’été",					-- Midsummer Fire Festival
@@ -680,9 +679,6 @@ for key,value in pairs({
 	-- Allied Races
 		[-254] = "Races alliées",									-- Allied Races
 		[-255] = "Armure ancestrale",								-- Heritage
-	-- Icecrown Citadel
-		[-393] = "La prise de la citadelle",						-- Storming the Citadel
-		[-394] = "La Pesterie",										-- The Plagueworks
 	-- BFA Outposts
 		[-397] = "Avant-postes",									-- Outposts
 	-- 5.3

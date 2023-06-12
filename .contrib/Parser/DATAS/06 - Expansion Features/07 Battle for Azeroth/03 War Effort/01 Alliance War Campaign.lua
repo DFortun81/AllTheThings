@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			n(-236, {	-- Alliance War Campaign
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {

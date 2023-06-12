@@ -4,7 +4,7 @@
 
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(BORALUS, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			["lvl"] = 120,
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
@@ -342,7 +342,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["g"] = {
 							i(164578, {	-- Warfronts Equipment Cache
 								["sym"] = {
-									{"select", "headerID", -10057},	-- War Effort
+									{"select", "headerID", WARFRONT },
 									{"pop"},	-- Discard the War Effort Header and acquire the children.
 									{"where", "mapID", ARATHI_HIGHLANDS },
 									{"pop"},	-- Discard the Map Header and acquire the children.
@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
 						["description"] = "This cache is awarded for completing any incursion on an Alliance character.",
 						["sym"] = {
-							{"select", "headerID", -10057},	-- War Effort
+							{"select", "headerID", WARFRONT },
 							{"pop"},	-- Discard the War Effort Header and acquire the children.
 							{"where", "mapID", ARATHI_HIGHLANDS },
 							{"pop"},	-- Discard the Map Header and acquire the children.

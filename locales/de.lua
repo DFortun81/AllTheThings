@@ -685,9 +685,6 @@ for key,value in pairs({
 		[-255] = "Traditionsrüstung",								-- Heritage
 	-- First Questline Draenor
 		[-356] = "Angriff auf das Dunkle Portal",					-- Assault on the Dark Portal
-	-- Icecrown Citadel
-		[-393] = "Sturm auf die Zitadelle",							-- Storming the Citadel
-		[-394] = "Die Seuchenwerke",								-- The Plagueworks
 	-- BFA Outposts
 		[-397] = "Außenposten",										-- Outposts
 	-- 5.3

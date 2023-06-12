@@ -13,7 +13,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 		i(187905, {	-- Boar Soul
 			["timeline"] = { ADDED_9_1_5 },
 		}),
-		n(-23, {
+		n(COMMON_DUNGEON_DROP, {
 			["u"] = TIMEWALKING,
 			["g"] = {
 				n(HANDS, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM }, },{

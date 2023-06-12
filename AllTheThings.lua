@@ -3655,7 +3655,7 @@ local SubroutineCache = {
 	-- Wod Dungeon
 	["common_wod_dungeon_drop"] = function(finalized, searchResults, o, cmd, difficultyID, headerID)
 		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
-		select(finalized, searchResults, o, "select", "headerID", -23);	-- Common Dungeon Drops
+		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
 		pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
 		where(finalized, searchResults, o, "where", "difficultyID", difficultyID);	-- Normal/Heroic/Mythic/Timewalking
 		pop(finalized, searchResults);	-- Discard the Diffculty Header and acquire all of their children.
@@ -3664,7 +3664,7 @@ local SubroutineCache = {
 	-- Wod Dungeon TW
 	["common_wod_dungeon_drop_tw"] = function(finalized, searchResults, o, cmd, difficultyID, headerID)
 		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
-		select(finalized, searchResults, o, "select", "headerID", -23);	-- Common Dungeon Drops
+		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
 		where(finalized, searchResults, o, "where", "u", 1016);	-- only the Common Dungeon Drops which is marked as TIMEWALKING
 		pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
 		where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
@@ -3705,7 +3705,7 @@ local SubroutineCache = {
 	end,
 	["bfa_azerite_armor_chest_warfront"] = function(finalized, searchResults, o)
 		local select, pop, where, is, invtype, modID = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.invtype, ResolveFunctions.modID;
-		select(finalized, searchResults, o, "select", "headerID", -10057);	-- War Effort
+		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.WARFRONT);
 		pop(finalized, searchResults);	-- Discard the War Effort Header and acquire the children.
 		where(finalized, searchResults, o, "where", "mapID", 14);	-- Arathi Highlands
 		pop(finalized, searchResults);	-- Discard the Map Header and acquire the children.

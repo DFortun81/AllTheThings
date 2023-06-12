@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			m(ARATHI_HIGHLANDS, {
 				n(COMMON_BOSS_DROPS, {
 					["description"] = "These items can drop off any rare in the zone and in the warfront.",

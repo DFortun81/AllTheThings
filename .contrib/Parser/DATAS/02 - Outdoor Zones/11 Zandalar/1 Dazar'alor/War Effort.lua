@@ -4,7 +4,7 @@
 
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(THE_GREAT_SEAL, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			["lvl"] = 120,
 			["races"] = HORDE_ONLY,
 			["g"] = {
@@ -364,7 +364,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							i(164577, {	-- Warfronts Equipment Cache
 								["sym"] = {
-									{"select", "headerID", -10057},	-- War Effort
+									{"select", "headerID", WARFRONT},
 									{"pop"},	-- Discard the War Effort Header and acquire the children.
 									{"where", "mapID", ARATHI_HIGHLANDS },
 									{"pop"},	-- Discard the Map Header and acquire the children.
@@ -384,7 +384,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
 						["description"] = "This cache is awarded for completing any incursion on a Horde character.",
 						["sym"] = {
-							{"select", "headerID", -10057},	-- War Effort
+							{"select", "headerID", WARFRONT},
 							{"pop"},	-- Discard the War Effort Header and acquire the children.
 							{"where", "mapID", ARATHI_HIGHLANDS },
 							{"pop"},	-- Discard the Map Header and acquire the children.

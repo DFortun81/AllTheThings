@@ -94,7 +94,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 				ach(14836),		-- Unwavering Bond
 				ach(14637),		-- Your Covenant's Flavor
 			}),
-			n(-914, {	-- Adventures
+			n(ADVENTURES, {
 				["crs"] = {
 					154527,	-- Command Table [Kyrian]
 					175136,	-- Command Table [Necrolord]
@@ -234,7 +234,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 						i(92683),	-- Flawless Dragonkin Battle-Stone
 					},
 				}),
-				n(-11, {	-- Common Box Drops
+				n(COMMON_BOX_DROPS, {	-- Common Box Drops
 					i(187880),	-- Goat Soul
 					i(187862),	-- Snake Soul
 				}),
@@ -244,7 +244,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["sym"] = {
 						{ "select", "headerID", COVENANT_SANCTUMS },{"pop"}, -- Covenant Sanctum groups
 						{ "where", "headerID", COVENANT_CALLINGS },{"pop"},	-- Covenant Callings groups
-						{ "where", "headerID", -11 },	-- Common Box Drops
+						{ "where", "headerID", COMMON_BOX_DROPS },	-- Common Box Drops
 					},
 				},{
 				-- Rare Quality Calling Rewards / Zone

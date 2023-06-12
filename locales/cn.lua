@@ -683,8 +683,6 @@ do a[key] = value; end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
-		[-11] = "一般宝箱掉落",											-- Common Box Drops
-		[-23] = "一般地下城掉落",											-- WoD Common Dungeon Drop
 		[-41] = "疯狂宝箱",												-- Cache of Madness
 	-- World Events
 		[-53] = "仲夏火焰节",											-- Midsummer Fire Festival
@@ -709,9 +707,6 @@ for key,value in pairs({
 		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
 	-- Outposts in Draenor
 		[-361] = GetSpellInfo(182108).." 塔",						-- Artillery Tower
-	-- Icecrown Citadel
-		[-393] = "进攻堡垒",											-- Storming the Citadel
-		[-394] = "天灾工厂",											-- The Plagueworks
 	-- BFA Outposts
 		[-397] = "哨站",												-- Outposts
 	-- 5.3

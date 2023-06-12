@@ -4,8 +4,8 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
-			n(-233, {	-- War Front: The Battle for Stromgarde
+		n(WARFRONT, {
+			n(WARFRONT_BATTLE_FOR_STROMGARDE, {
 				n(REWARDS, {
 					-- 1 SourceIDs: Weapons
 					-- 3 SourceIDs: Cloaks, Armor (3) (5) (6/23)
@@ -136,7 +136,7 @@ root(ROOTS.ExpansionFeatures,
 );
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			n(ARMOR, {
 				filter(CLOTH, {
 					i(163269),	-- 7th Legionnaire's Mantle

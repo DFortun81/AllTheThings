@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			m(DARKSHORE, {
 				n(COMMON_BOSS_DROPS, bubbleDown({
 					["modID"] = 3,

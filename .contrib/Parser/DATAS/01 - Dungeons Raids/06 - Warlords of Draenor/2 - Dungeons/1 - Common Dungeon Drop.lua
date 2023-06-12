@@ -12,7 +12,7 @@ local BLOOM = -146;
 local UBRS = -147;
 
 root(ROOTS.Instances, tier(WOD_TIER, {
-	n(-23, {
+	n(COMMON_DUNGEON_DROP, {
 		["description"] = "tbd",
 		["g"] = {
 			i(141643, {	-- Technique: Codex of the Clear Mind (RECIPE!)

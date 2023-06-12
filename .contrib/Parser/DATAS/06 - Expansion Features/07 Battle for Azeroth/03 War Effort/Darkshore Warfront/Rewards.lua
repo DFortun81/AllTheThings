@@ -4,8 +4,8 @@
 
 root(ROOTS.ExpansionFeatures, {
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
-			n(-237, {	-- War Front: The Battle for Darkshore
+		n(WARFRONT, {
+			n(WARFRONT_BATTLE_FOR_DARKSHORE, {
 				-- Sources:
 				-- Rares/Treasures (5)
 				-- Normal Warfront Victory [6]
@@ -17,7 +17,7 @@ root(ROOTS.ExpansionFeatures, {
 					["modID"] = 6,
 				},{
 					["sym"] = {	-- when showing the Rewards in popout/minilist/tooltip, include the Weapons
-						{"select","headerID",-10057},{"pop"},
+						{"select","headerID",WARFRONT},{"pop"},
 						{"where","mapID",DARKSHORE},{"pop"},
 						{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
 						{"where","headerID",WEAPONS},
@@ -142,7 +142,7 @@ root(ROOTS.ExpansionFeatures, {
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			n(ARMOR, {
 				filter(CLOTH, {
 					i(183762),	-- Moonpriest's Coronet

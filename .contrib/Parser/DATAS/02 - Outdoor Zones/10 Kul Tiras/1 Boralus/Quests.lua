@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						i(167100, {	-- Alliance Champion's Cache
 							["modID"] = 53,	-- ilvl 415
 							["sym"] = {
-								{ "select", "headerID", -10057 },	-- War Effort
+								{ "select", "headerID", WARFRONT },
 								{ "pop" },	-- Discard the War Effort Header and acquire the children.
 								{ "where", "mapID", ARATHI_HIGHLANDS },
 								{ "pop" },	-- Discard the Map Header and acquire the children.

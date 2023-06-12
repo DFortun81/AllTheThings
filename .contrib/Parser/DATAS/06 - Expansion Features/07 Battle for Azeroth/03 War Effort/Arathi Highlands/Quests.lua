@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			m(ARATHI_HIGHLANDS, {
 				n(QUESTS, {
 					q(53198, {	-- Back to Boralus
@@ -39,7 +39,7 @@ root(ROOTS.ExpansionFeatures,
 						["g"] = {
 							i(164578, {	-- Warfronts Equipment Cache
 								["sym"] = {
-									{"select", "headerID", -10057},	-- War Effort
+									{"select", "headerID", WARFRONT },
 									{"pop"},	-- Discard the War Effort Header and acquire the children.
 									{"where", "mapID", ARATHI_HIGHLANDS },
 									{"pop"},	-- Discard the Map Header and acquire the children.
@@ -74,7 +74,7 @@ root(ROOTS.ExpansionFeatures,
 						["g"] = {
 							i(164577, {	-- Warfronts Equipment Cache
 								["sym"] = {
-									{"select", "headerID", -10057},	-- War Effort
+									{"select", "headerID", WARFRONT },
 									{"pop"},	-- Discard the War Effort Header and acquire the children.
 									{"where", "mapID", ARATHI_HIGHLANDS },
 									{"pop"},	-- Discard the Map Header and acquire the children.

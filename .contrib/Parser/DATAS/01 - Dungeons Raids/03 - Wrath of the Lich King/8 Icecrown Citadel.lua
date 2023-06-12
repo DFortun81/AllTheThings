@@ -1,6 +1,63 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+STORMING_THE_CITADEL = createHeader({
+	readable = "Storming the Citadel",
+	icon = "Interface\\Icons\\achievement_dungeon_icecrown_icecrownentrance",
+	text = {
+		en = "Storming the Citadel",
+		es = "Asaltar la Ciudadela",
+		de = "Sturm auf die Zitadelle",
+		fr = "La prise de la citadelle",
+		it = "Assalto alla rocca",
+		pt = "Invasão da Cidadela",
+		ru = "Штурм цитадели",
+		ko = "성채 몰아치기",
+		cn = "进攻堡垒",
+	},
+});
+THE_PLAGUEWORKS = createHeader({
+	readable = "The Plagueworks",
+	icon = "Interface\\Icons\\achievement_dungeon_plaguewing",
+	text = {
+		en = "The Plagueworks",
+		es = "Los Talleres de la Peste",
+		de = "Die Seuchenwerke",
+		fr = "La Pesterie",
+		it = "Sale della Pestilenza",
+		pt = "Antro da Peste",
+		ru = "Чумодельня",
+		ko = "역병작업장",
+		cn = "天灾工厂",
+	},
+});
+THE_CRIMSON_HALLS = createHeader({
+	readable = "The Crimson Halls",
+	icon = "Interface\\Icons\\achievement_dungeon_crimsonhall",
+	text = {
+		en = [[~C_Map.GetAreaInfo(4892)]],
+	},
+});
+THE_FROSTWING_HALLS = createHeader({
+	readable = "The Frostwing Halls",
+	icon = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",
+	text = {
+		-- #if AFTER BFA
+		en = [[~C_Map.GetAreaInfo(7932)]],
+		-- #else
+		en = "The Frostwing Halls",
+		es = "Las Cámaras de Alaescarcha",
+		de = "Die Frostschwingenhallen",
+		fr = "Les salles de l'Aile de givre",
+		it = "Sale delle Ali del Gelo",
+		pt = "Salões da Asa Gélida",
+		ru = "Залы Ледокрылых",
+		ko = "서리날개 전당",
+		cn = "霜翼大厅",
+		-- #endif
+	},
+});
+
 root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { "added 3.3.0" } }, {
 	inst(758, {	-- Icecrown Citadel
 		["mapID"] = ICECROWN_CITADEL,
@@ -2590,7 +2647,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 			}),
 			d(3, {	-- 10-Player (Normal)
-				n(-393, {	-- Storming the Citadel
+				n(STORMING_THE_CITADEL, {
 					ach(4531, {	-- Storming the Citadel (10 player)
 						crit(1, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 3 },
@@ -2698,7 +2755,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-394, {	-- The Plagueworks
+				n(THE_PLAGUEWORKS, {
 					ach(4528, {	-- The Plagueworks (10 player)
 						crit(1, {	-- Festergut
 							["_encounter"] = { 1629, 3 },
@@ -2773,7 +2830,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-395, {	-- The Crimson Hall
+				n(THE_CRIMSON_HALLS, {
 					ach(4529, {	-- The Crimson Hall (10 player)
 						crit(1, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 3 },
@@ -2826,7 +2883,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-396, {	-- The Frostwing Halls
+				n(THE_FROSTWING_HALLS, {
 					ach(4527, {	-- The Frostwing Halls (10 player)
 						crit(1, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 3 },
@@ -2929,7 +2986,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-393, {	-- Storming the Citadel
+				n(STORMING_THE_CITADEL, {
 					ach(4628, {	-- Heroic: Storming the Citadel (10 player)
 						crit(1, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 5 },
@@ -3040,7 +3097,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-394, {	-- The Plagueworks
+				n(THE_PLAGUEWORKS, {
 					ach(4629, {	-- Heroic: The Plagueworks (10 player)
 						crit(1, {	-- Festergut
 							["_encounter"] = { 1629, 5 },
@@ -3118,7 +3175,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-395, {	-- The Crimson Hall
+				n(THE_CRIMSON_HALLS, {
 					ach(4630, {	-- Heroic: The Crimson Hall (10 player)
 						crit(1, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 5 },
@@ -3174,7 +3231,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-396, {	-- The Frostwing Halls
+				n(THE_FROSTWING_HALLS, {
 					ach(4631, {	-- Heroic: The Frostwing Halls (10 player)
 						crit(1, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 5 },
@@ -3286,7 +3343,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-393, {	-- Storming the Citadel
+				n(STORMING_THE_CITADEL, {
 					ach(4604, {	-- Storming the Citadel (25 player)
 						crit(1, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 4 },
@@ -3399,7 +3456,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-394, {	-- The Plagueworks
+				n(THE_PLAGUEWORKS, {
 					ach(4605, {	-- The Plagueworks (25 player)
 						crit(1, {	-- Festergut
 							["_encounter"] = { 1629, 4 },
@@ -3483,7 +3540,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-395, {	-- The Crimson Hall
+				n(THE_CRIMSON_HALLS, {
 					ach(4606, {	-- The Crimson Hall (25 player)
 						crit(1, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 4 },
@@ -3536,7 +3593,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-396, {	-- The Frostwing Halls
+				n(THE_FROSTWING_HALLS, {
 					ach(4607, {	-- The Frostwing Halls (25 player)
 						crit(1, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 4 },
@@ -3645,7 +3702,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-393, {	-- Storming the Citadel
+				n(STORMING_THE_CITADEL, {
 					ach(4632, {	-- Heroic: Storming the Citadel (25 player)
 						crit(1, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 6 },
@@ -3761,7 +3818,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-394, {	-- The Plagueworks
+				n(THE_PLAGUEWORKS, {
 					ach(4633, {	-- Heroic: The Plagueworks (25 player)
 						crit(1, {	-- Festergut
 							["_encounter"] = { 1629, 6 },
@@ -3848,7 +3905,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-395, {	-- The Crimson Hall
+				n(THE_CRIMSON_HALLS, {
 					ach(4634, {	-- Heroic: The Crimson Hall (25 player)
 						crit(1, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 6 },
@@ -3904,7 +3961,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-396, {	-- The Frostwing Halls
+				n(THE_FROSTWING_HALLS, {
 					ach(4635, {	-- Heroic: The Frostwing Halls (25 player)
 						crit(1, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 6 },
