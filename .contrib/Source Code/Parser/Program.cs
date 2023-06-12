@@ -426,7 +426,14 @@ namespace ATT
             if (index > 0) builder.Append("\n");
             builder.Append("-- ").Append(shortname).AppendLine();
 
-            string filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + shortname;
+            // Are we already using the Retail DB?
+            string filename;
+            if (Path.GetFullPath(".").Contains("_retail_"))
+            {
+                filename = ".\\DATAS\\" + shortname;
+            }
+            else filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + shortname;
+
             if (Directory.Exists(filename))
             {
                 int fileCount = 0;
