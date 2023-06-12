@@ -777,8 +777,6 @@ for key,value in pairs({
 		[-1200] = "Зкерские хранилища",								-- Zskera Vaults
 		[-1202] = "Налеты Фиракка",									-- Fyrakk Assaults
 		[-1203] = "Нюхорысканье",									-- Sniffenseeking
-	-- T3
-		[-3179] = "Комплект 3-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "Основной облик",								-- Base Appearance

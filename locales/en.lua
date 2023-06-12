@@ -1257,8 +1257,6 @@ app.L = {
 		[-1203] = "Interface\\Icons\\inv_pet_mole",													-- Sniffenseeking
 		[-1204] = 133642,																			-- Available (Inv_misc_bag_10_green)
 		[-1205] = 133643,																			-- Unavailable (Inv_misc_bag_10_red)
-	-- T3
-		[-3179] = "Interface\\Icons\\achievement_dungeon_naxxramas",						-- Tier 3 Sets
 	-- Island Expeditions
 		[-3338] = "Interface\\Icons\\achievement_zone_darkshore_01",						-- Island Expeditions
 	-- Tournament
@@ -1580,8 +1578,6 @@ app.L = {
 		[-1203] = "Sniffenseeking",													-- Sniffenseeking
 		[-1204] = AVAILABLE,														-- Available
 		[-1205] = UNAVAILABLE,														-- Unavailable
-	-- T3
-		[-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),	-- Tier 3 Sets
 	-- Island Expeditions
 		[-3338] = ISLANDS_HEADER,												-- Island Expeditions
 	-- Tournament

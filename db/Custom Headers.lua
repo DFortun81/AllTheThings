@@ -224,8 +224,9 @@ for key,value in pairs({
 	[-1000182] = "Interface/Icons/DiabloAnniversary_HoradricCube",
 	[-1000183] = "Interface/Icons/diabloanniversary_achievement",
 	[-1000184] = "Interface/Icons/inv_jewelry_amulet_03",
-	[-1000185] = "Interface/Icons/inv_misc_fish_06",
-	[-1000186] = "Interface/Icons/inv_fishingpole_03",
+	[-1000185] = "Interface/Icons/achievement_dungeon_naxxramas",
+	[-1000186] = "Interface/Icons/inv_misc_fish_06",
+	[-1000187] = "Interface/Icons/inv_fishingpole_03",
 }) do a[key] = value; end
 
 local a = L.HEADER_NAMES;
@@ -408,8 +409,9 @@ for key,value in pairs({
 	[-1000182] = "Diablo Events",
 	[-1000183] = "Diablo 20th Anniversary",
 	[-1000184] = C_PetJournal.GetPetInfoBySpeciesID(179),
-	[-1000185] = "Stranglethorn Fishing Extravaganza",
-	[-1000186] = "Kalu'ak Fishing Derby",
+	[-1000185] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
+	[-1000186] = "Stranglethorn Fishing Extravaganza",
+	[-1000187] = "Kalu'ak Fishing Derby",
 }) do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
@@ -497,8 +499,8 @@ for key,value in pairs({
 	[-1000180] = "Partikel von Nasz'uro",
 	[-1000181] = "Partikel von Nasz'uro",
 	[-1000183] = "20. Geburtstag von Diablo",
-	[-1000185] = "Anglerwettbewerb im Schlingendorntal",
-	[-1000186] = "Angelwettstreit der Kalu'ak",
+	[-1000186] = "Anglerwettbewerb im Schlingendorntal",
+	[-1000187] = "Angelwettstreit der Kalu'ak",
 }) do a[key] = value; end
 end
 
@@ -550,8 +552,8 @@ for key,value in pairs({
 	[-1000179] = "Mota de Nasz'uro",
 	[-1000180] = "Mota de Nasz'uro",
 	[-1000181] = "Mota de Nasz'uro",
-	[-1000185] = "Gran espectáculo de pesca de Tuercespina",
-	[-1000186] = "Competición de pesca Kalu'ak",
+	[-1000186] = "Gran espectáculo de pesca de Tuercespina",
+	[-1000187] = "Competición de pesca Kalu'ak",
 }) do a[key] = value; end
 end
 
@@ -633,8 +635,8 @@ for key,value in pairs({
 	[-1000180] = "Granule de Nasz'uro",
 	[-1000181] = "Granule de Nasz'uro",
 	[-1000183] = "20e anniversaire de Diablo",
-	[-1000185] = "Concours de pêche de Strangleronce",
-	[-1000186] = "Le tournoi de pêche kalu'ak",
+	[-1000186] = "Concours de pêche de Strangleronce",
+	[-1000187] = "Le tournoi de pêche kalu'ak",
 }) do a[key] = value; end
 end
 
@@ -658,8 +660,8 @@ for key,value in pairs({
 	[-1000163] = "Specchio Rotto",
 	[-1000164] = "Specchio Rotto",
 	[-1000165] = "Specchio Rotto",
-	[-1000185] = "Gara di Pesca a Rovotorto",
-	[-1000186] = "La gara di pesca dei Kalu'ak",
+	[-1000186] = "Gara di Pesca a Rovotorto",
+	[-1000187] = "La gara di pesca dei Kalu'ak",
 }) do a[key] = value; end
 end
 
@@ -683,8 +685,8 @@ for key,value in pairs({
 	[-1000163] = "깨진 거울",
 	[-1000164] = "깨진 거울",
 	[-1000165] = "깨진 거울",
-	[-1000185] = "가시덤불 골짜기 낚시왕 선발대회",
-	[-1000186] = "칼루아크 낚시 대회",
+	[-1000186] = "가시덤불 골짜기 낚시왕 선발대회",
+	[-1000187] = "칼루아크 낚시 대회",
 }) do a[key] = value; end
 end
 
@@ -736,8 +738,8 @@ for key,value in pairs({
 	[-1000179] = "Partícula de Nasz'uro",
 	[-1000180] = "Partícula de Nasz'uro",
 	[-1000181] = "Partícula de Nasz'uro",
-	[-1000185] = "Festerê de Pesca da Selva do Espinhaço",
-	[-1000186] = "Campeonato de Pesca dos Kalu'ak",
+	[-1000186] = "Festerê de Pesca da Selva do Espinhaço",
+	[-1000187] = "Campeonato de Pesca dos Kalu'ak",
 }) do a[key] = value; end
 end
 
@@ -838,8 +840,9 @@ for key,value in pairs({
 	[-1000181] = "Частица Наз'уро",
 	[-1000182] = "События Diablo",
 	[-1000183] = "20-ая годовщина Diablo",
-	[-1000185] = "Рыбомания Тернистой долины",
-	[-1000186] = "Калуакское рыбоборье",
+	[-1000185] = "Комплект 3-го уровня",
+	[-1000186] = "Рыбомания Тернистой долины",
+	[-1000187] = "Калуакское рыбоборье",
 }) do a[key] = value; end
 end
 
@@ -929,8 +932,8 @@ for key,value in pairs({
 	[-1000180] = "纳兹乌罗微粒",
 	[-1000181] = "纳兹乌罗微粒",
 	[-1000183] = "暗黑破坏神20周年庆",
-	[-1000185] = "荆棘谷钓鱼大赛",
-	[-1000186] = "卡鲁亚克钓鱼大赛",
+	[-1000186] = "荆棘谷钓鱼大赛",
+	[-1000187] = "卡鲁亚克钓鱼大赛",
 }) do a[key] = value; end
 end
 

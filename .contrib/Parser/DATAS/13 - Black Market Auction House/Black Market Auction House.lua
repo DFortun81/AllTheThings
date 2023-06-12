@@ -1,7 +1,14 @@
 -----------------------------------------------------
 --     B L A C K   M A R K E T   M O D U L E       --
 -----------------------------------------------------
-
+TIER_THREE_SETS = createHeader({
+	readable = "Tier 3 Sets",
+	icon = "Interface\\Icons\\achievement_dungeon_naxxramas",
+	text = {
+		en = [[~string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3)]],
+		ru = "Комплект 3-го уровня",
+	},
+});
 root(ROOTS.BlackMarket, {
 	n(VENDORS, bubbleDown({
 			["sym"] = {
@@ -259,7 +266,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(38314),	-- Tabard of the Defender
 		i(38311),	-- Tabard of the Void
 	}),
-	n(-3179, {	-- Tier 3 (Naxxramas - Vanilla)
+	n(TIER_THREE_SETS, {
 		ach(11744),	-- Drop Dead, Gorgeous
 		gs(355, {	-- Vestments of Faith
 			i(22514),	-- Circlet of Faith
