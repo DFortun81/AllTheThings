@@ -168,6 +168,75 @@ root(ROOTS.Unsorted, {
 	}),
 	tier(DF_TIER, {
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+			filter(COSMETIC, {
+				---- TRADING POST ----
+				i(206277),	-- Vagabond's Sunny Cape
+				i(206278),	-- Vagabond's Aquatic Cape
+				i(206279),	-- Vagabond's Plum Cape
+				i(206280),	-- Vagabond's Faded Cape
+				i(206281),	-- Vagabond's Brick Cape
+				i(206282),	-- Vagabond's Camo Cape
+				i(206283),	-- Vagabond's Deep Cape
+				i(206284),	-- Vagabond's Cloudy Cape
+				i(206285),	-- Vagabond's Grassy Cape
+				i(206286),	-- Vagabond's Lively Cape
+				i(206287),	-- Vagabond's Sepia Cape
+				i(206288),	-- Vagabond's Sunny Hood
+				i(206289),	-- Vagabond's Aquatic Hood
+				i(206290),	-- Vagabond's Plum Hood
+				i(206291),	-- Vagabond's Faded Hood
+				i(206292),	-- Vagabond's Brick Hood
+				i(206293),	-- Vagabond's Camo Hood
+				i(206294),	-- Vagabond's Deep Hood
+				i(206295),	-- Vagabond's Cloudy Hood
+				i(206296),	-- Vagabond's Grassy Hood
+				i(206297),	-- Vagabond's Lively Hood
+				i(206298),	-- Vagabond's Sepia Hood
+				i(206299),	-- Wanderer's Aquatic Scarf
+				i(206300),	-- Wanderer's Sunny Scarf
+				i(206301),	-- Wanderer's Plum Scarf
+				i(206302),	-- Wanderer's Faded Scarf
+				i(206303),	-- Wanderer's Brick Scarf
+				i(206304),	-- Wanderer's Camo Scarf
+				i(206305),	-- Wanderer's Deep Scarf
+				i(206306),	-- Wanderer's Cloudy Scarf
+				i(206307),	-- Wanderer's Grassy Scarf
+				i(206308),	-- Wanderer's Lively Scarf
+				i(206309),	-- Wanderer's Sepia Scarf
+				i(206310),	-- Wanderer's Sunny Cloak
+				i(206311),	-- Wanderer's Aquatic Cloak
+				i(206312),	-- Wanderer's Plum Cloak
+				i(206313),	-- Wanderer's Faded Cloak
+				i(206314),	-- Wanderer's Brick Cloak
+				i(206315),	-- Wanderer's Camo Cloak
+				i(206316),	-- Wanderer's Deep Cloak
+				i(206317),	-- Wanderer's Cloudy Cloak
+				i(206318),	-- Wanderer's Grassy Cloak
+				i(206319),	-- Wanderer's Lively Cloak
+				i(206320),	-- Wanderer's Sepia Cloak
+				i(206321),	-- Ensemble: Vagabond's Sunny Threads
+				i(206322),	-- Ensemble: Vagabond's Aquatic Threads
+				i(206323),	-- Ensemble: Vagabond's Plum Threads
+				i(206324),	-- Ensemble: Vagabond's Faded Threads
+				i(206325),	-- Ensemble: Vagabond's Brick Threads
+				i(206326),	-- Ensemble: Vagabond's Camo Threads
+				i(206327),	-- Ensemble: Vagabond's Deep Threads
+				i(206328),	-- Ensemble: Vagabond's Cloudy Threads
+				i(206329),	-- Ensemble: Vagabond's Grassy Threads
+				i(206330),	-- Ensemble: Vagabond's Lively Threads
+				i(206331),	-- Ensemble: Vagabond's Sepia Threads
+				i(206332),	-- Ensemble: Wanderer's Sunny Trappings
+				i(206333),	-- Ensemble: Wanderer's Aquatic Trappings
+				i(206334),	-- Ensemble: Wanderer's Plum Trappings
+				i(206335),	-- Ensemble: Wanderer's Faded Trappings
+				i(206336),	-- Ensemble: Wanderer's Brick Trappings
+				i(206337),	-- Ensemble: Wanderer's Camo Trappings
+				i(206338),	-- Ensemble: Wanderer's Deep Trappings
+				i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
+				i(206340),	-- Ensemble: Wanderer's Grassy Trappings
+				i(206341),	-- Ensemble: Wanderer's Lively Trappings
+				i(206342),	-- Ensemble: Wanderer's Sepia Trappings
+			}),
 			i(12840),	-- Inert Minion's Scourgestone
 			i(12841),	-- Inert Invader's Scourgestone
 			i(12843),	-- Inert Corruptor's Scourgestone
@@ -293,72 +362,6 @@ root(ROOTS.Unsorted, {
 			i(206195),	-- Path of the Naaru
 			i(206268),	-- Ethereal Transmogrifier
 			i(206269),	-- Time-Lost Essence
-			i(206277),	-- Vagabond's Sunny Cape
-			i(206278),	-- Vagabond's Aquatic Cape
-			i(206279),	-- Vagabond's Plum Cape
-			i(206280),	-- Vagabond's Faded Cape
-			i(206281),	-- Vagabond's Brick Cape
-			i(206282),	-- Vagabond's Camo Cape
-			i(206283),	-- Vagabond's Deep Cape
-			i(206284),	-- Vagabond's Cloudy Cape
-			i(206285),	-- Vagabond's Grassy Cape
-			i(206286),	-- Vagabond's Lively Cape
-			i(206287),	-- Vagabond's Sepia Cape
-			i(206288),	-- Vagabond's Sunny Hood
-			i(206289),	-- Vagabond's Aquatic Hood
-			i(206290),	-- Vagabond's Plum Hood
-			i(206291),	-- Vagabond's Faded Hood
-			i(206292),	-- Vagabond's Brick Hood
-			i(206293),	-- Vagabond's Camo Hood
-			i(206294),	-- Vagabond's Deep Hood
-			i(206295),	-- Vagabond's Cloudy Hood
-			i(206296),	-- Vagabond's Grassy Hood
-			i(206297),	-- Vagabond's Lively Hood
-			i(206298),	-- Vagabond's Sepia Hood
-			i(206299),	-- Wanderer's Aquatic Scarf
-			i(206300),	-- Wanderer's Sunny Scarf
-			i(206301),	-- Wanderer's Plum Scarf
-			i(206302),	-- Wanderer's Faded Scarf
-			i(206303),	-- Wanderer's Brick Scarf
-			i(206304),	-- Wanderer's Camo Scarf
-			i(206305),	-- Wanderer's Deep Scarf
-			i(206306),	-- Wanderer's Cloudy Scarf
-			i(206307),	-- Wanderer's Grassy Scarf
-			i(206308),	-- Wanderer's Lively Scarf
-			i(206309),	-- Wanderer's Sepia Scarf
-			i(206310),	-- Wanderer's Sunny Cloak
-			i(206311),	-- Wanderer's Aquatic Cloak
-			i(206312),	-- Wanderer's Plum Cloak
-			i(206313),	-- Wanderer's Faded Cloak
-			i(206314),	-- Wanderer's Brick Cloak
-			i(206315),	-- Wanderer's Camo Cloak
-			i(206316),	-- Wanderer's Deep Cloak
-			i(206317),	-- Wanderer's Cloudy Cloak
-			i(206318),	-- Wanderer's Grassy Cloak
-			i(206319),	-- Wanderer's Lively Cloak
-			i(206320),	-- Wanderer's Sepia Cloak
-			i(206321),	-- Ensemble: Vagabond's Sunny Threads
-			i(206322),	-- Ensemble: Vagabond's Aquatic Threads
-			i(206323),	-- Ensemble: Vagabond's Plum Threads
-			i(206324),	-- Ensemble: Vagabond's Faded Threads
-			i(206325),	-- Ensemble: Vagabond's Brick Threads
-			i(206326),	-- Ensemble: Vagabond's Camo Threads
-			i(206327),	-- Ensemble: Vagabond's Deep Threads
-			i(206328),	-- Ensemble: Vagabond's Cloudy Threads
-			i(206329),	-- Ensemble: Vagabond's Grassy Threads
-			i(206330),	-- Ensemble: Vagabond's Lively Threads
-			i(206331),	-- Ensemble: Vagabond's Sepia Threads
-			i(206332),	-- Ensemble: Wanderer's Sunny Trappings
-			i(206333),	-- Ensemble: Wanderer's Aquatic Trappings
-			i(206334),	-- Ensemble: Wanderer's Plum Trappings
-			i(206335),	-- Ensemble: Wanderer's Faded Trappings
-			i(206336),	-- Ensemble: Wanderer's Brick Trappings
-			i(206337),	-- Ensemble: Wanderer's Camo Trappings
-			i(206338),	-- Ensemble: Wanderer's Deep Trappings
-			i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
-			i(206340),	-- Ensemble: Wanderer's Grassy Trappings
-			i(206341),	-- Ensemble: Wanderer's Lively Trappings
-			i(206342),	-- Ensemble: Wanderer's Sepia Trappings
 			i(206346),	-- Eva's Journal
 			i(206351),	-- Plans: Truesilver Champion
 			i(206352),	-- Plans: The Shatterer
@@ -409,14 +412,9 @@ root(ROOTS.Unsorted, {
 			i(206416),	-- Pattern: Icy Scale Waistwrap
 			i(206417),	-- Pattern: Icy Scale Leggings
 			i(206418),	-- Pattern: Icy Scale Stompers
-			i(206419),	-- Plans: Icebane Coif
-			i(206420),	-- Plans: Icebane Mantle
 			i(206421),	-- Plans: Icebane Breastplate
 			i(206422),	-- Plans: Icebane Bracers
 			i(206423),	-- Plans: Icebane Gauntlets
-			i(206424),	-- Plans: Icebane Waistguard
-			i(206425),	-- Plans: Icebane Leggings
-			i(206426),	-- Plans: Icebane Trudgers
 			i(206427),	-- Glacial Leggings
 			i(206428),	-- Glacial Epaulets
 			i(206429),	-- Glacial Chapeau
@@ -432,11 +430,83 @@ root(ROOTS.Unsorted, {
 			i(206439),	-- Icy Scale Crown
 			i(206440),	-- Icy Scale Waistwrap
 			i(206441),	-- Icy Scale Stompers
-			i(206442),	-- Icebane Leggings
-			i(206443),	-- Icebane Mantle
-			i(206444),	-- Icebane Coif
-			i(206445),	-- Icebane Waistguard
-			i(206446),	-- Icebane Trudgers
+			n(PROFESSIONS, {
+				prof(BLACKSMITHING, {
+					-- Recipes --
+					i(206540),	-- Ancient Plans: Axe of Sundered Bone (RECIPE!)
+					i(206558),	-- Ancient Plans: Belt of the Mentor (RECIPE!)
+					i(206539),	-- Ancient Plans: Blade of Unholy Might (RECIPE!)
+					i(206546),	-- Ancient Plans: Blade of the Fallen Seraph (RECIPE!)
+					i(206542),	-- Ancient Plans: Bracers of Vengeance (RECIPE!)
+					i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
+					i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
+					i(206553),	-- Ancient Plans: Dawn of Demise (RECIPE!)
+					i(206557),	-- Ancient Plans: Death's Gamble (RECIPE!)
+					i(206537),	-- Ancient Plans: Edict of the Redeemed Crusader (RECIPE!)
+					i(206805),	-- Ancient Plans: Feet Picklers (RECIPE!)
+					i(206555),	-- Ancient Plans: Gauntlets of the Unrelenting (RECIPE!)
+					i(206550),	-- Ancient Plans: Harbinger of Death (RECIPE!)
+					i(207573),	-- Ancient Plans: Ichor Slicer (RECIPE!)
+					i(207567),	-- Ancient Plans: Intrepid Shortblade (RECIPE!)
+					i(206533),	-- Ancient Plans: Midnight's Graze (RECIPE!)
+					i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
+					i(206545),	-- Ancient Plans: Plated Construct's Ribcage (RECIPE!)
+					i(207572),	-- Ancient Plans: Sacred Guardian (RECIPE!)
+					i(206536),	-- Ancient Plans: Shade's Blade (RECIPE!)
+					i(206531),	-- Ancient Plans: Strength of Menethil (RECIPE!)
+					i(206560),	-- Ancient Plans: Stygian Shield (RECIPE!)
+					i(206541),	-- Ancient Plans: The Plague Belcher (RECIPE!)
+					i(206544),	-- Ancient Plans: The Final Dream (RECIPE!)
+					i(206549),	-- Ancient Plans: The Face of Doom (RECIPE!)
+					i(207568),	-- Ancient Plans: Valiant Shortblade (RECIPE!)
+					i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
+					i(206534),	-- Ancient Plans: Weaver's Fang (RECIPE!)
+					i(206535),	-- Ancient Plans: Widow's Weep (RECIPE!)
+					i(206419),	-- Plans: Icebane Coif (RECIPE!)
+					i(206425),	-- Plans: Icebane Leggings (RECIPE!)
+					i(206420),	-- Plans: Icebane Mantle (RECIPE!)
+					i(206426),	-- Plans: Icebane Trudgers (RECIPE!)
+					i(206774),	-- Plans: Undeath Metal (RECIPE!)
+					i(206424),	-- Plans: Icebane Waistguard (RECIPE!)
+					-- Crafted --
+					i(206493),	-- Axe of Sundered Bone
+					i(206511),	-- Belt of the Mentor
+					i(206492),	-- Blade of Unholy Might
+					i(206499),	-- Blade of the Fallen Seraph
+					i(206495),	-- Bracers of Vengeance
+					i(206478),	-- Darrowdirk
+					i(206479),	-- Darrowshire Protector
+					i(206506),	-- Dawn of Demise
+					i(206510),	-- Death's Gamble
+					i(206490),	-- Edict of the Redeemed Crusader
+					i(206787),	-- Feet Picklers
+					i(206508),	-- Gauntlets of the Unrelenting
+					i(206503),	-- Harbinger of Death
+					i(206442),	-- Icebane Leggings
+					i(206443),	-- Icebane Mantle
+					i(206444),	-- Icebane Coif
+					i(206445),	-- Icebane Waistguard
+					i(206446),	-- Icebane Trudgers
+					i(207561),	-- Ichor Slicer
+					i(207555),	-- Intrepid Shortblade
+					i(206486),	-- Midnight's Graze
+					i(206480),	-- Mirah's Lullaby
+					i(206498),	-- Plated Construct's Ribcage
+					i(207560),	-- Sacred Guardian
+					i(206489),	-- Shade's Blade
+					i(206484),	-- Strength of Menethil
+					i(206513),	-- Stygian Shield
+					i(206494),	-- The Plague Belcher
+					i(206497),	-- The Final Dream
+					i(206502),	-- The Face of Doom
+					i(206648),	-- Undeath Metal
+					i(207556),	-- Valiant Shortblade
+					i(206477),	-- Warsword of Caer Darrow
+					i(206487),	-- Weaver's Fang
+					i(206488),	-- Widow's Weep
+				}),
+			}),
+
 			i(206447),	-- Task List for Adventurers
 			i(206449),	-- Omarion's Second Handbook
 			i(206450),	-- Omarion's Notes - Pages 1 & 2
@@ -461,81 +531,33 @@ root(ROOTS.Unsorted, {
 			i(206473),	-- Makeshift Grappling Hook
 			i(206474),	-- Smelly Cheese
 			i(206475),	-- Paracausal Fragment of Seschenal
-			i(206477),	-- Warsword of Caer Darrow
-			i(206478),	-- Darrowdirk
-			i(206479),	-- Darrowshire Protector
-			i(206480),	-- Mirah's Lullaby
 			i(206481),	-- Shifting Sliver
 			i(206482),	-- Helm of Lingering Power
 			i(206483),	-- Skyfury Headdress
-			i(206484),	-- Strength of Menethil
 			i(206485),	-- Soulscryer
-			i(206486),	-- Midnight's Graze
-			i(206487),	-- Weaver's Fang
-			i(206488),	-- Widow's Weep
-			i(206489),	-- Shade's Blade
-			i(206490),	-- Edict of the Redeemed Crusader
 			i(206491),	-- Nerubian Persuader
-			i(206492),	-- Blade of Unholy Might
-			i(206493),	-- Axe of Sundered Bone
-			i(206494),	-- The Plague Belcher
-			i(206495),	-- Bracers of Vengeance
 			i(206496),	-- Gem of the Nerubians
-			i(206497),	-- The Final Dream
-			i(206498),	-- Plated Construct's Ribcage
-			i(206499),	-- Blade of the Fallen Seraph
 			i(206500),	-- Bindings of the Harvested Soul
 			i(206501),	-- Encased Frigid Heart
-			i(206502),	-- The Face of Doom
-			i(206503),	-- Harbinger of Death
 			i(206504),	-- Frostwyrm's Icy Gaze
 			i(206505),	-- Frostwyrm's Frigid Stare
-			i(206506),	-- Dawn of Demise
 			i(206507),	-- Necrotic Gown
-			i(206508),	-- Gauntlets of the Unrelenting
 			i(206509),	-- Displacement Boots
-			i(206510),	-- Death's Gamble
-			i(206511),	-- Belt of the Mentor
 			i(206512),	-- Replaced Servo Arm
-			i(206513),	-- Stygian Shield
 			i(206514),	-- Lucien's Lost Soles
-			i(206522),	-- Ancient Plans: Warsword of Caer Darrow
-			i(206525),	-- Ancient Plans: Darrowdirk
-			i(206526),	-- Ancient Plans: Darrowshire Protector
-			i(206527),	-- Ancient Plans: Mirah's Lullaby
 			i(206528),	-- Ancient Technique: Shifting Sliver
 			i(206529),	-- Ancient Pattern: Helm of Lingering Power
 			i(206530),	-- Ancient Pattern: Skyfury Headdress
-			i(206531),	-- Ancient Plans: Strength of Menethil
 			i(206532),	-- Ancient Technique: Soulscryer
-			i(206533),	-- Ancient Plans: Midnight's Graze
-			i(206534),	-- Ancient Plans: Weaver's Fang
-			i(206535),	-- Ancient Plans: Widow's Weep
-			i(206536),	-- Ancient Plans: Shade's Blade
-			i(206537),	-- Ancient Plans: Edict of the Redeemed Crusader
 			i(206538),	-- Ancient Pattern: Nerubian Persuader
-			i(206539),	-- Ancient Plans: Blade of Unholy Might
-			i(206540),	-- Ancient Plans: Axe of Sundered Bone
-			i(206541),	-- Ancient Plans: The Plague Belcher
-			i(206542),	-- Ancient Plans: Bracers of Vengeance
 			i(206543),	-- Ancient Design: Gem of the Nerubians
-			i(206544),	-- Ancient Plans: The Final Dream
-			i(206545),	-- Ancient Plans: Plated Construct's Ribcage
-			i(206546),	-- Ancient Plans: Blade of the Fallen Seraph
 			i(206547),	-- Ancient Pattern: Bindings of the Harvested Soul
 			i(206548),	-- Ancient Technique: Encased Frigid Heart
-			i(206549),	-- Ancient Plans: The Face of Doom
-			i(206550),	-- Ancient Plans: Harbinger of Death
 			i(206551),	-- Ancient Design: Frostwyrm's Icy Gaze
 			i(206552),	-- Ancient Design: Frostwyrm's Frigid Stare
-			i(206553),	-- Ancient Plans: Dawn of Demise
 			i(206554),	-- Ancient Pattern: Necrotic Gown
-			i(206555),	-- Ancient Plans: Gauntlets of the Unrelenting
 			i(206556),	-- Ancient Pattern: Displacement Boots
-			i(206557),	-- Ancient Plans: Death's Gamble
-			i(206558),	-- Ancient Plans: Belt of the Mentor
 			i(206559),	-- Ancient Schematic: Replaced Servo Arm
-			i(206560),	-- Ancient Plans: Stygian Shield
 			i(206561),	-- Ancient Pattern: Lucien's Lost Soles
 			i(206562),	-- Shroud of Forbidden Magic
 			i(206563),	-- Ancient Pattern: Shroud of Forbidden Magic
@@ -573,7 +595,6 @@ root(ROOTS.Unsorted, {
 			i(206645),	-- Cursed Cloth
 			i(206646),	-- Languished Leather
 			i(206647),	-- Scourged Scales
-			i(206648),	-- Undeath Metal
 			i(206673),	-- Horn of the White War Wolf
 			i(206674),	-- Reins of the Ravenous Black Gryphon
 			i(206675),	-- Gold-Toed Albatross
@@ -597,7 +618,6 @@ root(ROOTS.Unsorted, {
 			i(206771),	-- Pattern: Cursed Cloth
 			i(206772),	-- Pattern: Languished Leather
 			i(206773),	-- Pattern: Scourged Scales
-			i(206774),	-- Plans: Undeath Metal
 			i(206775),	-- Map to Suramar
 			i(206776),	-- Heretical Gavel
 			i(206777),	-- Energy Projection Regulator
@@ -610,7 +630,6 @@ root(ROOTS.Unsorted, {
 			i(206784),	-- Blighted Greatbow
 			i(206785),	-- Defect Retirement Tool
 			i(206786),	-- Victorious Scourge Tabard
-			i(206787),	-- Feet Picklers
 			i(206788),	-- Utopian Tabard
 			i(206789),	-- Heart-Slicer
 			i(206790),	-- Fel-Ridden Divider
@@ -627,7 +646,6 @@ root(ROOTS.Unsorted, {
 			i(206802),	-- Plague-Touched Stave
 			i(206803),	-- Cursed Blade of the Scourge
 			i(206804),	-- Clockwork Mallet
-			i(206805),	-- Ancient Plans: Feet Picklers
 			i(206806),	-- Part Dislocator
 			i(206807),	-- Order Powered Mechblade
 			i(206808),	-- Warmonger's Robe
@@ -747,18 +765,7 @@ root(ROOTS.Unsorted, {
 			i(206927),	-- Curator's Warhammer
 			i(206928),	-- Attendent's Hammer
 			i(206931),	-- Truesilver Champion
-			i(204177),	-- Nasz'uro, the Unbound Legacy
-			i(204274),	-- Ancient Memories
-			i(204808),	-- Empowered Temporal Gossamer
-			i(204832),	-- Reclaimed Gauntlet Chassis
-			i(204854),	-- Immaculate Coalescing Dracothyst
-			i(204856),	-- Inspired Order Recalibrator
-			i(204857),	-- Ancient Elementium Fragment
-			i(205009),	-- Annuna
-			i(205257),	-- Temporal Vestigial
-			i(205258),	-- Everburning Shadowflame
 			i(205259),	-- Order Soul
-			i(205260),	-- Fleeting Glowspores
 			i(206163),	-- Temporal Gossamer
 			i(206164),	-- Weak Resonating Vestigial
 			i(206165),	-- Major Resonating Vestigial
@@ -928,25 +935,17 @@ root(ROOTS.Unsorted, {
 			i(207297),	-- Grimoire of the Felblaze Imp
 			i(207528),	-- Prophetic Stonescales
 			i(207552),	-- Echoing Tyrstone
-			i(207555),	-- Intrepid Shortblade
-			i(207556),	-- Valiant Shortblade
 			i(207557),	-- Magebane Nexus
 			i(207558),	-- Smokesworth's Fireshooter
 			i(207559),	-- Stormwatcher
-			i(207560),	-- Sacred Guardian
-			i(207561),	-- Ichor Slicer
 			i(207562),	-- Skullstone Bludgeon
 			i(207563),	-- Wanderer's Guide
 			i(207564),	-- Refurbished Purifier
 			i(207565),	-- Sanctified Leather Hat
 			i(207566),	-- Accelerating Sandglass
-			i(207567),	-- Ancient Plans: Intrepid Shortblade
-			i(207568),	-- Ancient Plans: Valiant Shortblade
 			i(207569),	-- Ancient Formula: Magebane Nexus
 			i(207570),	-- Ancient Formula: Smokesworth's Fireshooter
 			i(207571),	-- Ancient Formula: Stormwatcher
-			i(207572),	-- Ancient Plans: Sacred Guardian
-			i(207573),	-- Ancient Plans: Ichor Slicer
 			i(207574),	-- Ancient Schematic: Skullstone Bludgeon
 			i(207575),	-- Ancient Technique: Wanderer's Guide
 			i(207576),	-- Ancient Schematic: Refurbished Purifier

@@ -1018,6 +1018,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				pet(3567),	-- Talons (PET!)
 				pet(3569),	-- Tempe (PET!)
 				-- With SpeciesID Attached
+				i(205009, {	-- Annuna (PET!)
+					["modelID"] = 112146,
+				}),
 				i(205004, {	-- Azure Swoglet (PET!)
 					["modelID"] = 112144,
 				}),
@@ -1053,9 +1056,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				i(205116, {	-- Jerrie (PET!)
 					["modelID"] = 112173,
-				}),
-				i(205009, {	-- Karrit (PET!)
-					["modelID"] = 112146,
 				}),
 				i(205166, {	-- Kromos (PET!)
 					["modelID"] = 112205,

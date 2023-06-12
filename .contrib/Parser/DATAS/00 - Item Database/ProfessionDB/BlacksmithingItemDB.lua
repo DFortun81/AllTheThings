@@ -2145,3 +2145,42 @@ i(205145, 408326);	-- Shadowed Impact Buckler
 i(205144, 408283);	-- Shadowed Razing Annihilator
 -- SPECIAL --
 i(0, 409224);		-- Reclaimed Gauntlet Chassis
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+i(206540, 413740);	-- Axe of Sundered Bone
+i(206558, 413758);	-- Belt of the Mentor
+i(206539, 413739);	-- Blade of Unholy Might
+i(206546, 413746);	-- Blade of the Fallen Seraph
+i(206542, 413742);	-- Bracers of Vengeance
+i(206525, 413512);	-- Darrowdirk
+i(206526, 413513);	-- Darrowshire Protector
+i(206553, 413753);	-- Dawn of Demise
+i(206557, 413757);	-- Death's Gamble
+i(206537, 413524);	-- Edict of the Redeemed Crusader
+i(206805, 414590);	-- Feet Picklers
+i(206555, 413755);	-- Gauntlets of the Unrelenting
+i(206550, 413750);	-- Harbinger of Death
+i(206419, 413506);	-- Icebane Coif
+i(206420, 413507);	-- Icebane Mantle
+i(206424, 413508);	-- Icebane Waistguard
+i(206425, 413509);	-- Icebane Leggings
+i(206426, 413510);	-- Icebane Trudgers
+i(207573, 416688);	-- Ichor Slicer
+i(207567, 416682);	-- Intrepid Shortblade
+i(206533, 413520);	-- Midnight's Graze
+i(206527, 413514);	-- Mirah's Lullaby
+i(206545, 413745);	-- Plated Construct's Ribcage
+i(207572, 416687);	-- Sacred Guardian
+i(206536, 413523);	-- Shade's Blade
+i(206531, 413518);	-- Strength of Menethil
+i(206560, 413760);	-- Stygian Shield
+i(206541, 413741);	-- The Plague Belcher
+i(206544, 413744);	-- The Final Dream
+i(206549, 413749);	-- The Face of Doom
+i(206774, 414567);	-- Undeath Metal
+i(207568, 416683);	-- Valiant Shortblade
+i(206522, 413511);	-- Warsword of Caer Darrow
+i(206534, 413521);	-- Weaver's Fang
+i(206535, 413522);	-- Widow's Weep

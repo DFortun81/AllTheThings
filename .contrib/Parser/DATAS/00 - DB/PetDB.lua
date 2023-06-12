@@ -2934,6 +2934,7 @@ i(0, 3573);			-- Swole
 i(0, 3567);			-- Talons
 i(0, 3569);			-- Tempe
 -- NYI --
+i(205009, 3515);	-- Annuna
 i(205004, 3513);	-- Azure Swoglet
 i(205054, 3532);	-- Amador
 i(206018, 3580);	-- Baa'lial
@@ -2947,7 +2948,6 @@ i(205148, 3542);	-- Dread Shalewing
 i(205156, 3549);	-- Heartseeker Moth
 i(205018, 3520);	-- Jade Skitterbug
 i(205116, 3534);	-- Jerrie
-i(205009, 3515);	-- Karrit
 i(205166, 3556);	-- Kromos
 i(205013, 3518);	-- Lettuce
 i(205153, 3547);	-- Mikah
