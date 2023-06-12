@@ -3,12 +3,11 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
-		n(ACHIEVEMENTS, {
-			ach(17763, {	-- There's No Place Like Loamm
-				["minReputation"] = { 2564, 20 },	-- Loamm Niffen Renown 20
-				["g"] = {
+		n(FACTIONS, {
+			faction(FACTION_LOAMM_NIFFEN, {
+				ach(17763, {	-- There's No Place Like Loamm
 					title(501),	-- Smelly <Name>
-				},
+				}),
 			}),
 		}),
 	}),

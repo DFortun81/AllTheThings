@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					{ 48.4, 50.4, ARDENWEALD },
 					{ 59.6, 31.8, THE_TRUNK },	-- Heart of the Forest
 				},
-				["g"] = repVendor(FACTION_THE_WILD_HUNT, {
+				["g"] = bubbleDownRepSkip(FACTION_THE_WILD_HUNT, {
 					{		-- Neutral
 						i(190644, {	-- Vessel of Profound Possibilities
 							["timeline"] = { ADDED_9_2_0 },
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			}),
 			n(162447, {	-- Spindlenose <Court of Night Quartermaster>
 				["coord"] = { 59.6, 52.9, ARDENWEALD },
-				["g"] = repVendor(FACTION_COURT_OF_NIGHT, {
+				["g"] = bubbleDownRepSkip(FACTION_COURT_OF_NIGHT, {
 					{		-- Neutral
 						i(184665, {	-- Chronicle of Lost Memories
 							["sym"] = {

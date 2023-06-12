@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 				i(201924, {	-- Valdrakken Accord Insignia
-					["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+					["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 			}),

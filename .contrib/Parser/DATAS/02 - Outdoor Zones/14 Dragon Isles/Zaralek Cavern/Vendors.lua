@@ -6,11 +6,21 @@ local UNEARTHED_FRAGRANT_COIN = 204715;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(VENDORS, {
+			n(203301, {	-- Bottles <Food and Drink>
+				["coord"] = {  58.1, 55.1, ZARALEK_CAVERN },
+				["g"] = {
+					i(205417),	-- Fungishine
+				},
+			}),
+			n(204373, {	-- Cenka <Resourceful Chef>
+				i(205794),	-- Beetle Juice
+				i(205793),	-- Skitter Souf-fly
+			}),
 			n(201004, {	-- Explorer Bezzert <Intrepid Pet Trainer>
-				-- TODO: ["coord"] = { 0, 0, ZARALEK_CAVERN },
+				["coord"] = { 52.4, 66.0, ZARALEK_CAVERN },
 				["g"] = {
 					i(205052, {	-- Miloh (PET!)
-						["cost"] = { { "i", 163036, 2500 } },	-- 2500x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 2500 } },
 					}),
 				},
 			}),
@@ -42,6 +52,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(191838, {	-- Subterranean Magmammoth (MOUNT!)
 						["cost"] = { { "i", COVETED_BAUBLE, 100 } },
 					}),
+				},
+			}),
+			n(204371, {	-- Sniktak <Enterprising Mycologist>
+				["g"] = {
+					i(205696),	-- Amethyst Deceiver Mushroom
+					i(205417),	-- Fungishine
+					i(205693),	-- Latticed Stinkhorn
+					i(205692),	-- Stellaviatori Soup
 				},
 			}),
 			n(203602, {	-- Spinsoa

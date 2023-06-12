@@ -288,7 +288,7 @@ merge = function(...)
 	end
 	return t;
 end
-repVendor = function(rep, group)
+bubbleDownRepSkip = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
 		groups = bubbleDown({["minReputation"] = {rep, i+3}}, groups)
@@ -298,7 +298,7 @@ repVendor = function(rep, group)
 	end
 	return t;
 end
-repRenown = function(rep, group)
+bubbleDownRep = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
 		groups = bubbleDown({["minReputation"] = {rep, i}}, groups)

@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						{ 44.6, 67.0, THE_VINDICAAR_EREDATH_UPPER },
 						{ 63.0, 63.6, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 					},
-					["g"] = repVendor(FACTION_ARMY_OF_THE_LIGHT, {
+					["g"] = bubbleDownRepSkip(FACTION_ARMY_OF_THE_LIGHT, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(152726),	-- Design: Mass Prospect Empyrium (RECIPE!)
@@ -481,7 +481,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						{ 66.2, 57.8, THE_VINDICAAR_EREDATH_UPPER },
 						{ 56.6, 30.2, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 					},
-					["g"] = repVendor(FACTION_ARGUSSIAN_REACH, {
+					["g"] = bubbleDownRepSkip(FACTION_ARGUSSIAN_REACH, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(152658),	-- Formula: Chaos Shatter (RECIPE!)

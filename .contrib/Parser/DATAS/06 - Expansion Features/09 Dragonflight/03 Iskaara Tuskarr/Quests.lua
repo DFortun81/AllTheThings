@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ISKAARA_TUSKARR, {
-		n(QUESTS, repRenown(FACTION_ISKAARA_TUSKARR, {
+		n(QUESTS, bubbleDownRep(FACTION_ISKAARA_TUSKARR, {
 			{		-- RENOWN 1 --
 				q(72435, {	-- Orientation: Iskaara
 					["provider"] = { "n", 193006 },	-- Murik
@@ -26,6 +26,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
 					["provider"] = { "n", 186448 },	-- Elder Poa
 					["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+					["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 					["cost"] = {{ "i", 200071, 1 }},	-- 1x Sacred Tuskarr Totem
 					["repeatable"] = true,
 				}),
@@ -33,6 +34,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
 					["provider"] = { "n", 186448 },	-- Elder Poa
 					["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+					["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 					["cost"] = {{ "i", 200071, 5 }},	-- 5x Sacred Tuskarr Totem
 					["repeatable"] = true,
 				}),
@@ -41,6 +43,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
 					["provider"] = { "n", 186448 },	-- Elder Poa
 					["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+					["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 					["cost"] = {{ "i", 200449, 1 }},	-- 1x Sacred Tuskarr Totem
 					["repeatable"] = true,
 				}),
@@ -48,6 +51,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
 					["provider"] = { "n", 186448 },	-- Elder Poa
 					["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+					["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 					["cost"] = {{ "i", 200449, 5 }},	-- 5x Sacred Tuskarr Totem
 					["repeatable"] = true,
 				}),

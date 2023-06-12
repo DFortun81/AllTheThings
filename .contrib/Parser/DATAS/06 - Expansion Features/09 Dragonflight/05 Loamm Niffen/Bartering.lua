@@ -7,7 +7,7 @@ local PONZOS_CREAM = 205452;
 local VOUCHER = 205453;
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
-		n(BARTERING, {
+		n(BARTERING, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 3 } }, {
 			n(ACHIEVEMENTS, {
 				ach(17841, {	-- Pyramid Scheme
 					["provider"] = { "i", 205188 },	-- Barter Boulder
@@ -96,7 +96,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 						i(204977, {	-- Formula: Illusory Adornment: Spores (RECIPE!)
-							["requireSkill"] = TAILORING,	
+							["requireSkill"] = TAILORING,
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204976, {	-- Formula: Spore Keeper's Baton (RECIPE!)
@@ -384,6 +384,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}),
-		}),
+		})),
 	}),
 })));

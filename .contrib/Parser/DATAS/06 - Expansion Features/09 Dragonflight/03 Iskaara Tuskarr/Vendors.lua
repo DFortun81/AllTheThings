@@ -100,7 +100,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(193006, {	-- Murik
 				["coord"] = { 13.16, 49.2, THE_AZURE_SPAN },
-				["g"] = repRenown(FACTION_ISKAARA_TUSKARR, {
+				["g"] = bubbleDownRep(FACTION_ISKAARA_TUSKARR, {
 					{		-- RENOWN 1 --
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --

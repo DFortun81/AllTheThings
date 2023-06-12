@@ -16,14 +16,12 @@ local FIRST_CRAFT_HEADER = -1152;
 root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	i(190456),	-- Artisan's Mettle
 	-- Optional
-	i(190455),	-- Concentrated Primal Focus
 	i(198046),	-- Concentrated Primal Infusion
 	i(198048),	-- Titan Training Matrix I
 	i(198056),	-- Titan Training Matrix II
 	i(198058),	-- Titan Training Matrix III
 	i(198059),	-- Titan Training Matrix IV
 	i(190454, {["timeline"] = {ADDED_10_0_2_LAUNCH, REMOVED_10_1_0}}),	-- Depleted Primal Chaos
-	i(200686),	-- Primal Focus
 	i(197921),	-- Primal Infusion
 	-- VENDORS
 	i(201832),	-- Smudged Lens

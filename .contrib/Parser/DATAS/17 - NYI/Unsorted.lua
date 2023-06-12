@@ -1406,9 +1406,7 @@ root(ROOTS.Unsorted, {
 			}),
 			n(REWARDS, {
 				-- Loamm Niffen
-				i(205365),	-- Loamm Niffen Insignia
 				i(205968),	-- Overflowing Loammian Supply Pack
-				i(205985),	-- Loamm Niffen Insignia
 				-- Large Rep
 				i(205252),	-- Momento of Rekindled Bonds
 				-- Research

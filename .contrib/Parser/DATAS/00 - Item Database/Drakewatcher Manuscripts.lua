@@ -32,7 +32,6 @@ i(197011, 69211);	-- Cliffside Wylderdrake: Green Scales
 i(196975, 69175);	-- Cliffside Wylderdrake: Head Fin
 i(196976, 69176);	-- Cliffside Wylderdrake: Head Mane
 i(196992, 69192);	-- Cliffside Wylderdrake: Heavy Horns
-i(196990, 69190);	-- Cliffside Wylderdrake: Helm
 i(196998, 69198);	-- Cliffside Wylderdrake: Hook Horns
 i(196985, 69185);	-- Cliffside Wylderdrake: Horned Jaw
 i(197005, 69205);	-- Cliffside Wylderdrake: Horned Nose
@@ -145,7 +144,6 @@ i(197359, 69560);	-- Renewed Proto-Drake: Hairy Brow
 i(197395, 69596);	-- Renewed Proto-Drake: Harrier Pattern
 i(197383, 69584);	-- Renewed Proto-Drake: Heavy Horns
 i(197397, 69598);	-- Renewed Proto-Drake: Heavy Scales
-i(197373, 69574);	-- Renewed Proto-Drake: Helm
 i(197354, 69555);	-- Renewed Proto-Drake: Horned Back
 i(197385, 69586);	-- Renewed Proto-Drake: Horned Jaw
 i(197379, 69580);	-- Renewed Proto-Drake: Impaler Horns
@@ -194,7 +192,6 @@ i(197622, 69826);	-- Windborne Velocidrake: Finned Tail
 i(197580, 69784);	-- Windborne Velocidrake: Gold and Red Armor
 i(197598, 69802);	-- Windborne Velocidrake: Gray Hair
 i(197608, 69812);	-- Windborne Velocidrake: Gray Horns
-i(197600, 69804);	-- Windborne Velocidrake: Helm
 i(197619, 69823);	-- Windborne Velocidrake: Hooked Snout
 i(197596, 69800);	-- Windborne Velocidrake: Horned Jaw
 i(197589, 69793);	-- Windborne Velocidrake: Large Head Fin
@@ -273,6 +270,7 @@ i(197629, 69835);	-- Windborne Velocidrake: Spiked Neck
 -- PATCH 10.1.0 --
 ------------------
 i(196965, 69165);	-- Cliffside Wylderdrake: Bronze and Teal Armor
+i(196990, 69190);	-- Cliffside Wylderdrake: Helm
 i(196978, 69178);	-- Cliffside Wylderdrake: Small Head Spikes
 i(197021, 69221);	-- Cliffside Wylderdrake: Spiked Club Tail
 i(196997, 69197);	-- Cliffside Wylderdrake: Split Horns
@@ -284,10 +282,12 @@ i(197104, 69305);	-- Highland Drake: Tapered Chin
 i(197348, 69549);	-- Renewed Proto-Drake: Black and Red Armor
 i(197353, 69554);	-- Renewed Proto-Drake: Bronze and Pink Armor
 i(202277, 73057);	-- Renewed Proto-Drake: Bruiser Horns
+i(197373, 69574);	-- Renewed Proto-Drake: Helm
 i(202275, 73059);	-- Renewed Proto-Drake: Plated Jaw
 i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
 i(197364, 69565);	-- Renewed Proto-Drake: Short Spiked Crest
 i(197577, 69781);	-- Windborne Velocidrake: Bronze and Green Armor
+i(197600, 69804);	-- Windborne Velocidrake: Helm
 i(203338, 73829);	-- Winding Slitherdrake: Antler Horns
 i(203305, 73793);	-- Winding Slitherdrake: Armor
 i(203322, 73810);	-- Winding Slitherdrake: Blonde Hair

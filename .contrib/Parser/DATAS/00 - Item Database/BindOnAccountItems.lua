@@ -252,8 +252,12 @@ i(48716);	-- Venerable Mass of McGowan
 i(200287);	-- Iskaara Tuskarr Insignia [Uncommon]
 i(200453);	-- Iskaara Tuskarr Insignia [Rare]
 i(201922);	-- Iskaara Tuskarr Insignia [Epic]
-i(202092);	-- Iskaara Tuskarr Insignia [Epic]
+i(202092);	-- Iskaara Tuskarr Insignia [Epic 2.5k]
 i(200449);	-- Sacred Tuskarr Totem
+i(200289);	-- Valdrakken Accord Insignia [Uncommon]
+i(200455);	-- Valdrakken Accord Insignia [Rare]
+i(201924);	-- Valdrakken Accord Insignia [Epic]
+i(202093);	-- Valdrakken Accord Insignia [Epic 2.5k]
 
 ------------------
 -- PATCH 10.0.7 --
@@ -291,3 +295,10 @@ i(203611);	-- Primalist Plate Helm
 i(203623);	-- Primalist Plate Leggings
 i(203626);	-- Primalist Plate Spaulders
 i(203650);	-- Primalist Weapon
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(205365);	-- Loamm Niffen Insignia [Uncommon]
+i(205342);	-- Loamm Niffen Insignia [Rare]
+i(205985);	-- Loamm Niffen Insignia [Epic]

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
-		faction(2568, {	-- Glimmerogg Racer
+		faction(2568, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 7 } }, {	-- Glimmerogg Racer
 			n(ACHIEVEMENTS, {
 				ach(17741, {	-- Slow and Steady Wins the Race
 					i(205231),	-- Roggy (PET!)
@@ -64,6 +64,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 74787 },	-- Come Snail Away
 				["provider"] = { "n", 201752 },	-- Briggul
 				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
+				["maxReputation"] = { 2568, 5 },
 				["isDaily"] = true,
 			}, {
 				q(74516),	-- A Snail's Pace
@@ -105,7 +106,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isWeekly"] = true,
 				}),
 			})),
-		}),
+		})),
 	}),
 })));
 

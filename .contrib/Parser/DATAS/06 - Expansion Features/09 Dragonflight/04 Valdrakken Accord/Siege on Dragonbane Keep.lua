@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(VALDRAKKEN_ACCORD, {
-		n(SIEGE_ON_DRAGONBANE_KEEP, {
+		n(SIEGE_ON_DRAGONBANE_KEEP, bubbleDownSelf({ ["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 5 } }, {
 			["questID"] = 70866,
 			["isWeekly"] = true,
 			["maps"] = { THE_WAKING_SHORES },
@@ -41,19 +41,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							{ 65.8, 35.1, THE_WAKING_SHORES },
 							{ 63.2, 34.6, THE_WAKING_SHORES },
 						},
-						--["questID"] = ,
 						["g"] = {
-							i(192055),	-- Dragon Isles Artifact
-							i(200443),	-- Dragon Isles Artifact
-							i(199906),	-- Titan Relic
-							i(200450),	-- Titan Relic
-							--
 							i(199230),	-- Schematic: Projectile Propulsion Pinion (RECIPE!)
 						},
 					}),
 					o(381357, {	-- Stone Tablet
 						["coord"] = { 27.8, 68.4, THE_WAKING_SHORES },
-						--["questID"] = ,
 						["g"] = {
 							crit(1, {	-- Complaint to Scalepiercer
 								["achievementID"] = 16412,	-- Siege on Dragonbane Keep: Chiseled Record
@@ -62,7 +55,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 					o(381358, {	-- Stone Tablet
 						["coord"] = { 28.8, 72.5, THE_WAKING_SHORES },
-						--["questID"] = ,
 						["g"] = {
 							crit(2, {	-- Wyrmeater's Recipe
 								["achievementID"] = 16412,	-- Siege on Dragonbane Keep: Chiseled Record
@@ -71,7 +63,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 					o(381359, {	-- Stone Tablet
 						["coord"] = { 24.1, 69.2, THE_WAKING_SHORES },
-						--["questID"] = ,
 						["g"] = {
 							crit(3, {	-- The Grand Flame's Journal
 								["achievementID"] = 16412,	-- Siege on Dragonbane Keep: Chiseled Record
@@ -80,7 +71,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				}),
 			},
-		}),
+		})),
 	}),
 })));
 

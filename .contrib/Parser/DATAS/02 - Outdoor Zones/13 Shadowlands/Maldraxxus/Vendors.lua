@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			}),
 			n(173003, {	-- Nalcorn Talsen <Undying Army Quartermaster>
 				["coord"] = { 50.6, 53.4, MALDRAXXUS },
-				["g"] = repVendor(FACTION_THE_UNDYING_ARMY, {
+				["g"] = bubbleDownRepSkip(FACTION_THE_UNDYING_ARMY, {
 					{		-- Neutral
 						i(183112, {	-- Animated Radius
 							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm

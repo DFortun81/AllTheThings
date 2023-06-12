@@ -3,9 +3,9 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(VALDRAKKEN_ACCORD, {
-		n(ACHIEVEMENTS, {
-			ach(16530, {	-- Ally of the Flights
-				["minReputation"] = { 2510, 30 },	-- Valdrakken Renown 30
+		n(FACTIONS, {
+			faction(FACTION_VALDRAKKEN_ACCORD, {
+				ach(16530),	-- Ally of the Flights
 			}),
 		}),
 	}),

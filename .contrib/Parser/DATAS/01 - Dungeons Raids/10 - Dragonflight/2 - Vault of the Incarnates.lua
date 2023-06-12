@@ -200,11 +200,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				}),
 				q(72259, {	-- Vault Artifacts
 					["provider"] = { "n", 197095 },	-- Lillian Brightmoon
+					["maxReputation"] = { 2507, 25 },
 					["cost"] = { { "i", 201411, 1 } },	-- 1x Ancient Vault Artifact
 					["repeatable"] = true,
 				}),
 				q(72260, {	-- Vault Artifacts
 					["provider"] = { "n", 197095 },	-- Lillian Brightmoon
+					["maxReputation"] = { 2507, 25 },
 					["cost"] = { { "i", 201411, 5 } },	-- 5x Ancient Vault Artifact
 					["repeatable"] = true,
 				}),
@@ -732,6 +734,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 								r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
 							},
 						}),
+						i(200686),	-- Primal Focus
 					},
 				}),
 				n(QUESTS, {
@@ -1007,6 +1010,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202149, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Primalist Warden's Bracers [BoP]
 					i(202007, {["timeline"] = { ADDED_10_0_5 }}),		-- Woven Stone Bracelets [BoE]
 					i(202143, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5}}),	-- Woven Stone Bracelets [BoP]
+					i(190455),	-- Concentrated Primal Focus
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },	-- Eranog

@@ -334,4 +334,15 @@ i(187429, FACTION_THE_WILD_HUNT);		-- Petrified Sylvan Antlers
 i(200287, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Uncommon]
 i(200453, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Rare]
 i(201922, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Epic]
-i(202092, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Epic]
+i(202092, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Epic 2.5k]
+i(200289, FACTION_VALDRAKKEN_ACCORD);	-- Valdrakken Accord Insignia [Uncommon]
+i(200455, FACTION_VALDRAKKEN_ACCORD);	-- Valdrakken Accord Insignia [Rare]
+i(201924, FACTION_VALDRAKKEN_ACCORD);	-- Valdrakken Accord Insignia [Epic]
+i(202093, FACTION_VALDRAKKEN_ACCORD);	-- Valdrakken Accord Insignia [Epic 2.5k]
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(205365, FACTION_LOAMM_NIFFEN);		-- Loamm Niffen Insignia [Uncommon]
+i(205342, FACTION_LOAMM_NIFFEN);		-- Loamm Niffen Insignia [Rare]
+i(205985, FACTION_LOAMM_NIFFEN);		-- Loamm Niffen Insignia [Epic]

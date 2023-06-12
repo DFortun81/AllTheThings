@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				}),
 				n(QUESTS, sharedData({
-					["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
+					["minReputation"] = { FACTION_LOAMM_NIFFEN, 9 },
 					["g"] = {
 						i(204985),  -- 2x Barter Brick
 					},
@@ -244,16 +244,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75998, {	-- Crispety Crunchety
 						["provider"] = { "i", 205901 },	-- Crunchy Beetle
 						["coord"] = { 57.3, 49.3, ZARALEK_CAVERN },
+						["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
 						["isWeekly"] = true,
 					}),
 					q(76004, {	-- Deep Cuts
 						["provider"] = { "i", 205902 },	-- Deepflayer Claw
 						["coord"] = { 57.6, 56.4, ZARALEK_CAVERN },
+						["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
 						["isWeekly"] = true,
 					}),
 					q(75936, {	-- Slimy Yet Satisfying
 						["provider"] = { "i", 205795 },	-- Wriggling Worm
 						["coord"] = { 56.9, 52.1, ZARALEK_CAVERN },
+						["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
 						["isWeekly"] = true,
 					}),
 				})),
@@ -271,7 +274,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							{"pop"},
 						},
 					}),
-					i(205342),	-- Loamm Niffen Insignia
+					i(205342),	-- Loamm Niffen Insignia [Rare]
 				}),
 				n(SPECIAL, {
 					i(206009),	-- Ouroboros Tablet

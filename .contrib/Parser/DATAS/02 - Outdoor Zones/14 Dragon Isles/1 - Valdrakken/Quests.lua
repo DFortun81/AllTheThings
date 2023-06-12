@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- #endif
 			}),
 			i(200455, {	-- Valdrakken Accord Insignia
-				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+				["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
@@ -275,36 +275,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 49.9, 56, VALDRAKKEN },
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
+		}),
+		n(QUESTS, sharedData({
+			["provider"] = { "n", 194026 },	-- Azley
+			["coord"] = { 35.4, 58.8, VALDRAKKEN },
+			["repeatable"] = true,
+			["g"] = {
+				i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
+				i(200289),	-- Valdrakken Accord Insignia [Uncommon]
+			},
+		}, bubbleDown({
+			["timeline"] = { ADDED_10_0_7 },
+		}, {
 			------ Repeatables ------
 			q(75164, {	-- In Need of Primal Foci
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 200686, 2 } },	-- 2x Primal Focus
-				["repeatable"] = true,
-				["timeline"] = { ADDED_10_0_7 },
 			}),
 			q(75166, {	-- In Need of Many Primal Foci
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 200686, 10 } },	-- 10x Primal Focus
-				["repeatable"] = true,
-				["timeline"] = { ADDED_10_0_7 },
 			}),
 			q(75165, {	-- In Need of Concentrated Primal Foci
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.8, VALDRAKKEN },
-				["cost"] = { { "i", 200686, 1 } },	-- 1x Concentrated Primal Focus
-				["repeatable"] = true,
-				["timeline"] = { ADDED_10_0_7 },
+				["cost"] = { { "i", 190455, 1 } },	-- 1x Concentrated Primal Focus
 			}),
 			q(75167, {	-- In Need of Many Concentrated Primal Foci
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 190455, 10 } },	-- 10x Concentrated Primal Focus
-				["repeatable"] = true,
-				["timeline"] = { ADDED_10_0_7 },
 			}),
-		}),
+		}))),
 		n(QUESTS, sharedData({
 				["isWeekly"] = true,
 			}, {
@@ -315,6 +311,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = {
 					i(206135),	-- Heroic Dungeon Delver's Trophy Chest
 					i(206136),	-- Heroic Dungeon Delver's Trophy Crest
+					------ Reputation ------
+					i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
+					i(205365),	-- Loamm Niffen Insignia [Uncommon]
+					i(200289),	-- Valdrakken Accord Insignia [Uncommon]
 				},
 			}),
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
