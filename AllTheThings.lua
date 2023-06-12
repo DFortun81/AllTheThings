@@ -1445,7 +1445,6 @@ local function GetProgressTextForTooltip(data, iconOnly)
 	local stateText = GetStateIcon(data, iconOnly);
 
 	if isContainer then
-
 		-- Uncollected Collectible (show uncollected state & container info)
 		if isCollectible and not data.collected then
 			if stateText then
@@ -1458,19 +1457,21 @@ local function GetProgressTextForTooltip(data, iconOnly)
 
 		-- Cost & Progress (show cost icon & container info)
 		if data.filledCost then
+			local text = iconOnly and L["COST_ICON"] or L["COST_TEXT"];
 			if stateText then
-				return stateText.." "..L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+				return stateText.." "..text.." "..GetProgressColorText(data.progress or 0, total)
 			else
-				return L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+				return text.." "..GetProgressColorText(data.progress or 0, total);
 			end
 		end
 
 		-- Reagent & Progress (show reagent icon & container info)
 		if data.filledReagent then
+			local text = iconOnly and L["REAGENT_ICON"] or L["REAGENT_TEXT"];
 			if stateText then
-				return stateText.." "..L["REAGENT_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+				return stateText.." "..text.." "..GetProgressColorText(data.progress or 0, total)
 			else
-				return L["REAGENT_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+				return text.." "..GetProgressColorText(data.progress or 0, total);
 			end
 		end
 
@@ -1478,10 +1479,11 @@ local function GetProgressTextForTooltip(data, iconOnly)
 		local isCost = costTotal and costTotal > 0;
 		-- Cost (show cost icon)
 		if isCost then
+			local text = iconOnly and L["COST_ICON"] or L["COST_TEXT"];
 			if stateText then
-				return stateText.." "..L["COST_TEXT"];
+				return stateText.." "..text;
 			else
-				return L["COST_TEXT"];
+				return text;
 			end
 		end
 
@@ -5136,7 +5138,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 
 		-- If the user wants to show the progress of this search result, do so
-		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
+		if app.Settings:GetTooltipSetting("Enabled") and app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
 			group.collectionText = GetProgressTextForTooltip(group, app.Settings:GetTooltipSetting("ShowIconOnly"));
 
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
