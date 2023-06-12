@@ -1,6 +1,14 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+CHILDRENS_WEEK_HEADER = createHeader({
+	readable = "Children's Week",
+	constant = "CHILDRENS_WEEK_HEADER",
+	icon = [[~_.asset("Holiday_Children")]],
+	text = {
+		en = [[~select(1,GetCategoryInfo(163))]],
+	},
+});
 -- TODO: Add vendors for Tigule's Strawberry Ice Cream (7228)
 local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 	["timeline"] = { "added 6.0.1.18566" },
@@ -84,7 +92,7 @@ local WARDEN_OF_THE_GROUPS = {
 
 root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 	-- #if ANYCLASSIC
-	["npcID"] = -52,
+	["npcID"] = CHILDRENS_WEEK_HEADER,
 	-- #if AFTER CATA
 	["description"] = "Start: 05/02 at 10:00 AM\nEnd: 05/09 at 10:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. CHILDRENS_WEEK .. [[, 5, 2, 5, 9); end]],

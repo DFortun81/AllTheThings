@@ -1,6 +1,14 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+FEAST_OF_WINTER_VEIL_HEADER = createHeader({
+	readable = "Feast of Winter Veil",
+	constant = "FEAST_OF_WINTER_VEIL_HEADER",
+	icon = [[~_.asset("Holiday_winter_veil")]],
+	text = {
+		en = [[~GetSpellInfo(21953)]],
+	},
+});
 local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
 local FROZEN_ARMS_OF_A_HERO = i(128314, {	-- Frozen Arms of a Hero
 	["timeline"] = { "added 6.2.0.19973" },
@@ -50,7 +58,7 @@ local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
 };
 root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 	-- #if ANYCLASSIC
-	["npcID"] = -61,
+	["npcID"] = FEAST_OF_WINTER_VEIL_HEADER,
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. FEAST_OF_WINTER_VEIL .. [[, 12, 16, 1, 2); end]],
 	-- #else
 	["holidayID"] = 235485,

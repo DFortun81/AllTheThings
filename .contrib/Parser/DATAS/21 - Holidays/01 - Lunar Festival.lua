@@ -1,9 +1,17 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+LUNAR_FESTIVAL_HEADER = createHeader({
+	readable = "Lunar Festival",
+	constant = "LUNAR_FESTIVAL_HEADER",
+	icon = [[~_.asset("Holiday_Lunar")]],
+	text = {
+		en = [[~select(1,GetCategoryInfo(160))]],
+	},
+});
 root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 	-- #if ANYCLASSIC
-	["npcID"] = -47,
+	["npcID"] = LUNAR_FESTIVAL_HEADER,
 	["description"] = "Start: 01/20 at 10:00 AM\nEnd: 02/03 at 10:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LUNAR_FESTIVAL .. [[, 1, 20, 2, 3); end]],
 	-- #else

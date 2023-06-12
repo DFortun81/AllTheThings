@@ -1,6 +1,14 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+BREWFEST_HEADER = createHeader({
+	readable = "Brewfest",
+	constant = "BREWFEST_HEADER",
+	icon = [[~_.asset("Holiday_brewfest")]],
+	text = {
+		en = [[~select(1,GetCategoryInfo(162))]],
+	},
+});
 -- Developer note: Use the BREWFEST_TOKEN constant in place of the reward.
 local BREWFEST_TOKEN = {
 	-- #if AFTER 2.4.3
@@ -141,7 +149,7 @@ end]];
 
 root(ROOTS.Holidays, applyholiday(BREWFEST, {
 	-- #if ANYCLASSIC
-	["npcID"] = -56,
+	["npcID"] = BREWFEST_HEADER,
 	-- #if AFTER 3.0.0
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. BREWFEST .. [[, 9, 20, 10, 6); end]],
 	-- #else

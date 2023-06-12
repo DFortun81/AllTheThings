@@ -1,6 +1,22 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+DAY_OF_THE_DEAD_HEADER = createHeader({
+	readable = "Day of the Dead",
+	constant = "DAY_OF_THE_DEAD_HEADER",
+	icon = [[~_.asset("Holiday_Day_of_the_Dead")]],
+	text = {
+		en = "Day of the Dead",
+		es = "Festividad de los Muertos",
+		de = "Tag der Toten",
+		fr = "Jour des morts",
+		it = "Giorno dei Morti",
+		ko = "망자의 날",
+		pt = "Dia dos Mortos",
+		ru = "День мертвых",
+		cn = "悼念日",
+	},
+});
 local COSTUME_PROVIDERS = {
 	{ "i", 116856 },	-- "Blooming Rose" Contender's Costume
 	{ "i", 116888 },	-- "Night Demon" Contender's Costume
@@ -10,7 +26,7 @@ local COSTUME_PROVIDERS = {
 };
 root(ROOTS.Holidays, applyholiday(DAY_OF_THE_DEAD, {
 	-- #if ANYCLASSIC
-	["npcID"] = -59,
+	["npcID"] = DAY_OF_THE_DEAD_HEADER,
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. DAY_OF_THE_DEAD .. [[, 11, 1, 11, 3); end]],
 	-- #else
 	["holidayID"] = 307365,

@@ -996,18 +996,6 @@ app.L = {
 	["HEADER_ICONS"] = {
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
 		[-43] = 618859,																		-- Proving Grounds [achievement_challengemode_platinum]
-	-- World Events (These are used by ATT Classic)
-		[-47] = "Interface\\Icons\\achievement_worldevent_lunar",							-- Lunar Festival
-		[-52] = "Interface\\Icons\\inv_misc_toy_04",										-- Children's Week
-		[-53] = "Interface\\Icons\\inv_summerfest_symbol_high",								-- Midsummer Fire Festival
-		[-55] = "Interface\\Icons\\inv_helmet_66",											-- Pirates' Day",
-		[-56] = "Interface\\Icons\\achievement_worldevent_brewmaster",						-- Brewfest
-		[-57] = "Interface\\Icons\\INV_Holiday_Thanksgiving_Cornucopia",					-- Harvest Festival
-		[-58] = app.asset("hallows_end"),													-- Hallow's End
-		[-59] = "Interface\\Icons\\inv_misc_bone_humanskull_02",							-- Day of the Dead
-		[-60] = "Interface\\Icons\\inv_thanksgiving_turkey",								-- Pilgrim's Bounty
-		[-61] = "Interface\\Icons\\achievement_worldevent_merrymaker",						-- The Feast of Winter Veil
-
 		[-94] = "Interface\\Icons\\inv_misc_lockbox_1",										-- Black Market AH
 	-- Garrisons
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
@@ -1301,16 +1289,6 @@ app.L = {
 	["HEADER_NAMES"] = {
 		[-41] = "Cache of Madness",												-- Cache of Madness
 		[-43] = TRACKER_HEADER_PROVINGGROUNDS,									-- Proving Grounds
-	-- World Events (These are used by ATT Classic)
-		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
-		[-52] = select(1,GetCategoryInfo(163)),									-- Children's Week
-		[-53] = "Midsummer Fire Festival",										-- Midsummer Fire Festival
-		[-55] = "Pirates' Day",													-- Pirates' Day
-		[-56] = select(1,GetCategoryInfo(162)),									-- Brewfest
-		[-58] = select(1,GetCategoryInfo(158)),									-- Hallow's End
-		[-59] = "Day of the Dead",												-- Day of the Dead
-		[-60] = select(1,GetCategoryInfo(14981)),								-- Pilgrim's Bounty
-		[-61] = GetSpellInfo(21953),											-- The Feast of Winter Veil
 		
 		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
 	-- Garrisons

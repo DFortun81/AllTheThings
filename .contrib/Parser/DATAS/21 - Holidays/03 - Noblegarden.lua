@@ -1,6 +1,14 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+NOBLEGARDEN_HEADER = createHeader({
+	readable = "Noblegarden",
+	constant = "NOBLEGARDEN_HEADER",
+	icon = [[~_.asset("Holiday_noblegarden")]],
+	text = {
+		en = [[~select(1,GetCategoryInfo(159))]],
+	},
+});
 local NOBLEGARDEN_VENDOR_GROUPS = {
 	-- Appearances
 	i(74282, {	-- Black Spring Circlet
@@ -92,7 +100,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 };
 root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 	-- #if ANYCLASSIC
-	["npcID"] = -51,
+	["npcID"] = NOBLEGARDEN_HEADER,
 	-- #if AFTER WRATH
 	["description"] = "Start: 04/09 at 12:00 AM\nEnd: 04/16 at 12:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 9, 4, 16); end]],

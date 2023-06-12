@@ -668,10 +668,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[-41] = "L'antre de la Folie",
-	-- World Events
-		[-53] = "Fête du Feu du solstice d’été",					-- Midsummer Fire Festival
-		[-55] = "Jour des pirates",									-- Pirates' Day
-		[-59] = "Jour des morts",									-- Day of the Dead
 	-- Other
 		[-211] = "Nouveau personnage",								-- New Character
 	-- Fishing

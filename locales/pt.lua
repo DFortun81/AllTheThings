@@ -667,10 +667,6 @@ do a[key] = value; end
 
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- World Events
-		[-53] = "Festival do Fogo do Solstício",					-- Midsummer Fire Festival
-		[-55] = "Dia dos Piratas",									-- Pirates' Day
-		[-59] = "Dia dos Mortos",									-- Day of the Dead
 	-- Allied Races
 		[-254] = "Raças Aliadas",									-- Allied Races
 		[-255] = "Armadura Tradicional",							-- Heritage

@@ -1,6 +1,22 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+MIDSUMMER_FIRE_FESTIVAL_HEADER = createHeader({
+	readable = "Midsummer Fire Festival",
+	constant = "MIDSUMMER_FIRE_FESTIVAL_HEADER",
+	icon = [[~_.asset("Holiday_Midsummer")]],
+	text = {
+		en = "Midsummer Fire Festival",	-- Category 161 is "Midsummer", perhaps this is fine to use instead?
+		de = "Sonnenwendfest",
+		es = "Festival del Fuego del Solsticio de Verano",
+		fr = "Fête du Feu du solstice d’été",
+		it = "Fuochi di Mezza Estate",
+		pt = "Festival do Fogo do Solstício",
+		ru = "Огненный Солнцеворот",
+		ko = "한여름 불꽃축제",
+		cn = "仲夏火焰节",
+	},
+});
 local EARTHEN_RING_ELDER_ID = 26221;	-- Earthen Ring Elder
 local EARTHEN_RING_ELDER_COORDS = {
 	{ 49.4, 72.0, STORMWIND_CITY },
@@ -237,7 +253,7 @@ local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
 
 root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 	-- #if ANYCLASSIC
-	["npcID"] = -53,
+	["npcID"] = MIDSUMMER_FIRE_FESTIVAL_HEADER,
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. MIDSUMMER_FIRE_FESTIVAL .. [[, 6, 21, 7, 5); end]],
 	-- #else
 	["holidayID"] = 235474,

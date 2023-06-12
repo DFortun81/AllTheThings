@@ -1,6 +1,14 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+LOVE_IS_IN_THE_AIR_HEADER = createHeader({
+	readable = "Love is in the Air",
+	constant = "LOVE_IS_IN_THE_AIR_HEADER",
+	icon = [[~_.asset("Holiday_love")]],
+	text = {
+		en = [[~select(1,GetCategoryInfo(187))]],
+	},
+});
 local BOUQUET_RED = applyholiday(LOVE_IS_IN_THE_AIR, i(22206));	-- Bouquet of Red Roses
 local BOUQUET_EBON = applyholiday(LOVE_IS_IN_THE_AIR, i(44731, {	-- Bouquet of Ebon Roses
 	["timeline"] = { "added 3.0.3.9138" },
@@ -14,7 +22,7 @@ local POUCH_OF_EBON_ROSE_PETALS = applyholiday(LOVE_IS_IN_THE_AIR, i(188692, {	-
 local BOSS_GROUPS = {};
 root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 	-- #if ANYCLASSIC
-	["npcID"] = -50,
+	["npcID"] = LOVE_IS_IN_THE_AIR_HEADER,
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LOVE_IS_IN_THE_AIR .. [[, 2, 6, 2, 20); end]],
 	-- #else
 	["holidayID"] = 235468,
@@ -2395,7 +2403,7 @@ root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, 
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
-	["npcID"] = -50,
+	["npcID"] = LOVE_IS_IN_THE_AIR_HEADER,
 	-- #else
 	["holidayID"] = 235468,
 	-- #endif

@@ -1,6 +1,14 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+HALLOWS_END_HEADER = createHeader({
+	readable = "Hallow's End",
+	constant = "HALLOWS_END_HEADER",
+	icon = [[~_.asset("Holiday_hallows_end")]],
+	text = {
+		en = [[~select(1,GetCategoryInfo(158))]],
+	},
+});
 local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(122338, {	-- Ancient Heirloom Armor Casing
 		["timeline"] = { "added 6.1.0.19445" },
@@ -379,7 +387,7 @@ local SPECTRAL_GROG = i(104316, {	-- Spectral Grog
 
 root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 	-- #if ANYCLASSIC
-	["npcID"] = -58,
+	["npcID"] = HALLOWS_END_HEADER,
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HALLOWS_END .. [[, 10, 18, 11, 1); end]],
 	-- #else
 	["holidayID"] = 235462,
@@ -4488,7 +4496,7 @@ SPECTRAL_GROG.u = nil;
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 	-- #if ANYCLASSIC
-	["npcID"] = -58,
+	["npcID"] = HALLOWS_END_HEADER,
 	-- #else
 	["holidayID"] = 235462,
 	-- #endif

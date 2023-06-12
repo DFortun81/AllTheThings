@@ -684,10 +684,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[-41] = "疯狂宝箱",												-- Cache of Madness
-	-- World Events
-		[-53] = "仲夏火焰节",											-- Midsummer Fire Festival
-		[-55] = "海盗日",												-- Pirates' Day
-		[-59] = "悼念日",												-- Day of the Dead
 	-- Garrisons
 		[-152] = "要塞战役",											-- Garrison Campaign
 	-- Class Trial

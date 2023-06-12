@@ -1,9 +1,25 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+PIRATES_DAY_HEADER = createHeader({
+	readable = "Pirates' Day",
+	constant = "PIRATES_DAY_HEADER",
+	icon = [[~_.asset("Holiday_Pirate")]],
+	text = {
+		en = "Pirates' Day",
+		es = "Día de los Piratas",
+		de = "Piratentag",
+		fr = "Jour des pirates",
+		it = "Giorno dei Pirati",
+		pt = "Dia dos Piratas",
+		ru = "День пирата",
+		ko = "해적의 날",
+		cn = "海盗日",
+	},
+});
 root(ROOTS.Holidays, applyholiday(PIRATES_DAY, {
 	-- #if ANYCLASSIC
-	["npcID"] = -55,
+	["npcID"] = PIRATES_DAY_HEADER,
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PIRATES_DAY .. [[, 9, 19, 9, 20); end]],
 	-- #else
 	["holidayID"] = 235481,

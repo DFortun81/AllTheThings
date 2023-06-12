@@ -656,10 +656,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Commonly used
 		[-41] = "Тайник Безумия",
-	-- World Events
-		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
-		[-55] = "День пирата",									-- Pirates' Day
-		[-59] = "День мертвых",									-- Day of the Dead
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-130] = "Сумеречный лес - активен",						-- Duskwood Active
 		[-131] = "Внутренние земли - активен",						-- The Hinterlands Active

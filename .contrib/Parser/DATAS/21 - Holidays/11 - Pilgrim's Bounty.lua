@@ -1,6 +1,14 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+PILGRIMS_BOUNTY_HEADER = createHeader({
+	readable = "Pilgrim's Bounty",
+	constant = "PILGRIMS_BOUNTY_HEADER",
+	icon = [[~_.asset("Holiday_Pilgrim")]],
+	text = {
+		en = [[~select(1,GetCategoryInfo(14981))]],
+	},
+});
 local ALLIANCE_PILGRIM_MAPS = {
 	DARNASSUS,
 	TELDRASSIL,
@@ -24,7 +32,7 @@ local HORDE_PILGRIM_MAPS = {
 local ALL_PILGIM_MAPS = appendGroups(ALLIANCE_PILGRIM_MAPS, appendGroups(HORDE_PILGRIM_MAPS, {}));
 root(ROOTS.Holidays, applyholiday(PILGRIMS_BOUNTY, {
 	-- #if ANYCLASSIC
-	["npcID"] = -60,
+	["npcID"] = PILGRIMS_BOUNTY_HEADER,
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PILGRIMS_BOUNTY .. [[, 11, 22, 11, 29); end]],
 	-- #else
 	["holidayID"] = 235466,

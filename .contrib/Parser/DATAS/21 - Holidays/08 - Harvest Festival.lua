@@ -1,12 +1,20 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+HARVEST_FESTIVAL_HEADER = createHeader({
+	readable = "Harvest Festival",
+	constant = "HARVEST_FESTIVAL_HEADER",
+	icon = [[~_.asset("Holiday_Harvestfest")]],
+	text = {
+		en = "Harvest Festival",
+	},
+});
 local BLUE_FIREWORK = i(9312);	-- Blue Firework
 local GREEN_FIREWORK = i(9313);	-- Green Firework
 local RED_FIREWORK = i(9318);	-- Red Firework
 root(ROOTS.Holidays, applyholiday(HARVEST_FESTIVAL, {
 	-- #if ANYCLASSIC
-	["npcID"] = -57,
+	["npcID"] = HARVEST_FESTIVAL_HEADER,
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HARVEST_FESTIVAL .. [[, 9, 6, 9, 13); end]],
 	-- #else
 	["holidayID"] = 235465,
