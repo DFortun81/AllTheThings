@@ -44,6 +44,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					71232,	-- Renown of the Dragon Isles
 					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
+				["sourceQuestNumRequired"] = 1,
 				["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 				["isWorldQuest"] = true,
 				["sym"] = {{"select","itemID",199192}},	-- Dragon Racer's Purse
@@ -139,6 +140,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					71232,	-- Renown of the Dragon Isles
 					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
+				["sourceQuestNumRequired"] = 1,
 				["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 				["isWorldQuest"] = true,
 				["timeline"] = { ADDED_10_0_7 },
@@ -169,6 +171,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					71232,	-- Renown of the Dragon Isles
 					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
+				["sourceQuestNumRequired"] = 1,
 				["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 				["isWorldQuest"] = true,
 				["timeline"] = { ADDED_10_1_0 },
