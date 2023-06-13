@@ -15,7 +15,7 @@ local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
-		faction(2550, {	-- Cobalt Assembly
+		faction(FACTION_COBALT_ASSEMBLY, {
 			n(ACHIEVEMENTS, {
 				ach(16569),	-- Cobalt Enthusiast
 				ach(16537),	-- Maximum Power!
@@ -99,8 +99,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(VENDORS, {
 				n(194832, {	-- Meiz <Quartermaster>
 					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
-					["g"] = {
-						n(ARMOR, {
+					["g"] = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
+						{		-- Empty --
+							i(197584, {	-- Windborne Velocidrake: Finned Back (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 50 },
+								},
+							}),
+						}, {	-- Low --
+							i(196969, {	-- Cliffside Wylderdrake: Finned Back (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 100 },
+								},
+							}),
+							i(197355, {	-- Renewed Proto-Drake: Thick Spined Jaw (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 100 },
+								},
+							}),
+						}, {	-- Medium --
+							i(197148, {	-- Highland Drake: Vertical Finned Tail (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 200 },
+								},
+							}),
+							i(197620, {	-- Windborne Velocidrake: Beaked Snout (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 200 },
+								},
+							}),
+						}, {	-- High --
+							i(197018, {	-- Cliffside Wylderdrake: Finned Tail (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
+								},
+							}),
 							i(191834, {	-- Cobalt Guardian's Belt
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 100 },
@@ -149,45 +182,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "i", AWAKENED_FROST, 1 },
 								},
 							}),
-						}),
-						n(DRAKEWATCHER_MANUSCRIPTS, {
-							i(196969, {	-- Cliffside Wylderdrake: Finned Back (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 100 },
-								},
-							}),
-							i(197018, {	-- Cliffside Wylderdrake: Finned Tail (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 400 },
-								},
-							}),
-							i(197148, {	-- Highland Drake: Vertical Finned Tail (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 200 },
-								},
-							}),
+						}, {	-- Maximum --
 							i(197368, {	-- Renewed Proto-Drake: Blue Hair (DM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 								},
 							}),
-							i(197355, {	-- Renewed Proto-Drake: Thick Spined Jaw (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 100 },
-								},
-							}),
-							i(197620, {	-- Windborne Velocidrake: Beaked Snout (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 200 },
-								},
-							}),
-							i(197584, {	-- Windborne Velocidrake: Finned Back (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 50 },
-								},
-							}),
-						}),
-						n(WEAPONS, {
 							i(199731, {	-- Cobalt Bladewing Staff
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 600 },
@@ -272,8 +272,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "i", ADAMANT_SCALES, 10 },
 								},
 							}),
-						}),
-					},
+						},
+					}),
 				}),
 				n(196862, {	-- Steiz <Quartermaster>
 					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
@@ -301,36 +301,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						199733,	-- Cobalt Defender's Wingglaive
 						201371,	-- Cobalt Defender's Shredder
 					}},
-					["g"] = {
-						i(202117),	-- Assembly Preserver's Band
-						i(202119),	-- Assembly Scholar's Loop
-						i(202118),	-- Assembly Guardian's Ring
-						i(194265, {	-- Pattern: Blue Silken Lining (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
-						}),
-						i(201733, {	-- Pattern: Frosted Armor Kit (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
-						}),
-						i(194261, {	-- Pattern: Frozen Spellthread (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
-						}),
-						i(191579, {	-- Recipe: Transmute: Awakened Frost (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 50 },
-							},
-						}),
-						i(198895, {	-- Technique: Highland Drake: Spined Crest (RECIPE!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 25 },
-							},
-						}),
-					},
+					["g"] = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
+						{		-- Empty --
+						}, {	-- Low --
+						}, {	-- Medium --
+							i(194265, {	-- Pattern: Blue Silken Lining (RECIPE!)
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
+							}),
+							i(191579, {	-- Recipe: Transmute: Awakened Frost (RECIPE!)
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
+							}),
+						}, {	-- High --
+							i(202117),	-- Assembly Preserver's Band
+							i(202119),	-- Assembly Scholar's Loop
+							i(202118),	-- Assembly Guardian's Ring
+							i(201733, {	-- Pattern: Frosted Armor Kit (RECIPE!)
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
+							}),
+							i(194261, {	-- Pattern: Frozen Spellthread (RECIPE!)
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
+							}),
+							i(198895, {	-- Technique: Highland Drake: Spined Crest (RECIPE!)
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 25 }},
+							}),
+						}, {	-- Maximum --
+						},
+					}),
 				}),
 			}),
 			n(ZONE_DROPS, {

@@ -17,7 +17,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
 			n(ACHIEVEMENTS, {
-				ach(16532),	-- Friends with Sabellian
 				ach(16497, {	-- I'm Playing All Sides
 					crit(1, {	-- Sabellian
 						["_quests"] = {
@@ -38,9 +37,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["_quests"] = { 66129 },	-- Unlocking Our Past
 					}),
 				}),
-				ach(16494, {	-- Loyalty to the Prince
-					title(484),	-- %s, Agent of the Black Prince
-				}),
 				ach(16496, {	-- Obsidian Champion
 					crit(1, {
 						["_quests"] = { 67015 },	-- Forging the Answer
@@ -56,10 +52,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 				ach(16495),	-- Obsidian Keymaster
-				ach(16760, {	-- The Obsidian Bloodline
-					title(483),	-- %s, Paragon of the Obsidian Brood
+			}),
+			n(FACTIONS, {
+				faction(FACTION_SABELLIAN, {
+					ach(16532),	-- Friends with Sabellian
+					ach(16760, {	-- The Obsidian Bloodline
+						title(483),	-- %s, Paragon of the Obsidian Brood
+					}),
 				}),
-				ach(16536),	-- True Friends with Wrathion
+				faction(FACTION_WRATHION, {
+					ach(16494, {	-- Loyalty to the Prince
+						title(484),	-- %s, Agent of the Black Prince
+					}),
+					ach(16536),	-- True Friends with Wrathion
+				}),
 			}),
 			n(QUESTS, {
 				q(66133, {	-- Keys of Loyalty
@@ -505,143 +511,150 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(188625, {	-- Lorena Belle
 					["coord"] = { 25.2, 55.8, THE_WAKING_SHORES },
-					["g"] = {
-						i(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-								{ "i", AWAKENED_FIRE, 4 },
-								{ "i", AWAKENED_EARTH, 4 },
-							},
-							["g"] = {
-								i(191803),	-- Obsidian Dracthyr Battlegear Bracers
-								i(191804),	-- Obsidian Dracthyr Battlegear Cover
-								i(191798),	-- Obsidian Dracthyr Battlegear Grips
-								i(191797),	-- Obsidian Dracthyr Battlegear Hauberk
-								i(191799),	-- Obsidian Dracthyr Battlegear Helm
-								i(191800),	-- Obsidian Dracthyr Battlegear Leggings
-								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
-								i(191802),	-- Obsidian Dracthyr Battlegear Belt
-							},
-						}),
-						i(200707, {	-- Armoire of Endless Cloaks (TOY!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-								{ "i", WILDERCLOTH, 20 },
-							},
-						}),
-						i(200930, {	-- Obsidian Proto-Whelp (PET!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-								{ "i", LARGE_STURDY_FEMUR, 1 },
-								{ "i", PRIMAL_BEAR_SPINE, 3 },
-							},
-						}),
-						i(200970, {	-- Obsidian Collar
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
-						}),
-						i(200971, {	-- Obsidian Cape
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
-						}),
-						i(200996, {	-- Obsidian Guard's Claw
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
-								{ "i", SEREVITE_ORE, 10 },
-							},
-						}),
-						i(200997, {	-- Obsidian Guard's Saber
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
-								{ "i", DRACONIUM_ORE, 5 },
-							},
-						}),
-						i(200987, {	-- Obsidian Spellcarver's Stave
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
-								{ "i", SEREVITE_ORE, 10 },
-							},
-						}),
-						i(200992, {	-- Obsidian Spellweaver's Scepter
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
-								{ "i", SEREVITE_ORE, 10 },
-							},
-						}),
-						i(200998, {	-- Obsidian Wing Glaive
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
-								{ "i", SEREVITE_ORE, 10 },
-							},
-						}),
-						i(200985, {	-- Obsidian Wingedguard Polearm
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", ADAMANT_SCALES, 10 },
-								{ "i", SEREVITE_ORE, 10 },
-							},
-						}),
-						i(199740, {	-- Onyx Dragonflame Blade
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
-								{ "i", GLIMMERING_NELTHARITE_CLUSTER, 1 },
-							},
-						}),
-						i(197013, {	-- Cliffside Wylderdrake: Black Scales (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-								{ "i", AWAKENED_EARTH, 1 },
-							},
-						}),
-						i(196964, {	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-								{ "i", PRIMAL_BEAR_SPINE, 6 },
-								{ "i", DRACONIUM_ORE, 20 },
-							},
-						}),
-						i(197142, {	-- Highland Drake: Black Scales (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-								{ "i", AWAKENED_EARTH, 1 },
-							},
-						}),
-						i(197090, {	-- Highland Drake: Gold and Black Armor (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-								{ "i", PRIMAL_BEAR_SPINE, 6 },
-								{ "i", DRACONIUM_ORE, 20 },
-							},
-						}),
-						i(197392, {	-- Renewed Proto-Drake: Black Scales (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-								{ "i", AWAKENED_EARTH, 1 },
-							},
-						}),
-						i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-								{ "i", PRIMAL_BEAR_SPINE, 6 },
-								{ "i", DRACONIUM_ORE, 20 },
-							},
-						}),
-						i(197611, {	-- Windborne Velocidrake: Black Scales (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-								{ "i", AWAKENED_EARTH, 1 },
-							},
-						}),
-						i(201840),	-- Sturdy Obsidian Glasses
-					},
+					["g"] = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
+						{		-- Acquaintance --
+						}, {	-- Cohort --
+							i(200707, {	-- Armoire of Endless Cloaks (TOY!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 100 },
+									{ "i", WILDERCLOTH, 20 },
+								},
+							}),
+							i(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 750 },
+									{ "i", AWAKENED_FIRE, 4 },
+									{ "i", AWAKENED_EARTH, 4 },
+								},
+								["g"] = {
+									i(191803),	-- Obsidian Dracthyr Battlegear Bracers
+									i(191804),	-- Obsidian Dracthyr Battlegear Cover
+									i(191798),	-- Obsidian Dracthyr Battlegear Grips
+									i(191797),	-- Obsidian Dracthyr Battlegear Hauberk
+									i(191799),	-- Obsidian Dracthyr Battlegear Helm
+									i(191800),	-- Obsidian Dracthyr Battlegear Leggings
+									i(191801),	-- Obsidian Dracthyr Battlegear Monnion
+									i(191802),	-- Obsidian Dracthyr Battlegear Belt
+								},
+							}),
+						}, {	-- Ally --
+							i(200930, {	-- Obsidian Proto-Whelp (PET!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 100 },
+									{ "i", LARGE_STURDY_FEMUR, 1 },
+									{ "i", PRIMAL_BEAR_SPINE, 3 },
+								},
+							}),
+						}, {	-- Fang --
+							i(200996, {	-- Obsidian Guard's Claw
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", TALLSTRIDER_SINEW, 5 },
+									{ "i", SEREVITE_ORE, 10 },
+								},
+							}),
+							i(200997, {	-- Obsidian Guard's Saber
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", TALLSTRIDER_SINEW, 5 },
+									{ "i", DRACONIUM_ORE, 5 },
+								},
+							}),
+							i(200987, {	-- Obsidian Spellcarver's Stave
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", TALLSTRIDER_SINEW, 5 },
+									{ "i", SEREVITE_ORE, 10 },
+								},
+							}),
+							i(200992, {	-- Obsidian Spellweaver's Scepter
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", TALLSTRIDER_SINEW, 5 },
+									{ "i", SEREVITE_ORE, 10 },
+								},
+							}),
+							i(200998, {	-- Obsidian Wing Glaive
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", TALLSTRIDER_SINEW, 5 },
+									{ "i", SEREVITE_ORE, 10 },
+								},
+							}),
+							i(200985, {	-- Obsidian Wingedguard Polearm
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", ADAMANT_SCALES, 10 },
+									{ "i", SEREVITE_ORE, 10 },
+								},
+							}),
+							i(199740, {	-- Onyx Dragonflame Blade
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", TALLSTRIDER_SINEW, 5 },
+									{ "i", GLIMMERING_NELTHARITE_CLUSTER, 1 },
+								},
+							}),
+						}, {	-- Friend --
+							i(196964, {	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 750 },
+									{ "i", PRIMAL_BEAR_SPINE, 6 },
+									{ "i", DRACONIUM_ORE, 20 },
+								},
+							}),
+							i(197090, {	-- Highland Drake: Gold and Black Armor (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 750 },
+									{ "i", PRIMAL_BEAR_SPINE, 6 },
+									{ "i", DRACONIUM_ORE, 20 },
+								},
+							}),
+							i(200970, {	-- Obsidian Collar
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 150 },
+								},
+							}),
+							i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 750 },
+									{ "i", PRIMAL_BEAR_SPINE, 6 },
+									{ "i", DRACONIUM_ORE, 20 },
+								},
+							}),
+						}, {	-- True Friend --
+							i(197013, {	-- Cliffside Wylderdrake: Black Scales (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
+									{ "i", AWAKENED_EARTH, 1 },
+								},
+							}),
+							i(197142, {	-- Highland Drake: Black Scales (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
+									{ "i", AWAKENED_EARTH, 1 },
+								},
+							}),
+							i(200971, {	-- Obsidian Cape
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 150 },
+								},
+							}),
+							i(197392, {	-- Renewed Proto-Drake: Black Scales (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
+									{ "i", AWAKENED_EARTH, 1 },
+								},
+							}),
+							i(197611, {	-- Windborne Velocidrake: Black Scales (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
+									{ "i", AWAKENED_EARTH, 1 },
+								},
+							}),
+							i(201840),	-- Sturdy Obsidian Glasses
+						},
+					}),
 				}),
 				n(188349, {	-- Outfitter Tipech <Food and Drink>
 					["coord"] = { 25.6, 55.0, THE_WAKING_SHORES },
@@ -657,153 +670,160 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(188623, {	-- Samia Inkling
 					["coord"] = { 24.7, 56.8, THE_WAKING_SHORES },
-					["g"] = {
-						i(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-								{ "i", AWAKENED_FIRE, 4 },
-								{ "i", AWAKENED_EARTH, 4 },
-							},
-							["g"] = {
-								i(191803),	-- Obsidian Dracthyr Battlegear Bracers
-								i(191804),	-- Obsidian Dracthyr Battlegear Cover
-								i(191798),	-- Obsidian Dracthyr Battlegear Grips
-								i(191797),	-- Obsidian Dracthyr Battlegear Hauberk
-								i(191799),	-- Obsidian Dracthyr Battlegear Helm
-								i(191800),	-- Obsidian Dracthyr Battlegear Leggings
-								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
-								i(191802),	-- Obsidian Dracthyr Battlegear Belt
-							},
-						}),
-						i(200963, {	-- Ensemble: Sabellian's Battlegear Cloth Armor
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-								{ "i", WILDERCLOTH, 40 },
-							},
-							["g"] = {
-								i(200954),	-- Sabellian's Robes
-								i(200955),	-- Sabellian's Mantle
-								i(200956),	-- Sabellian's Sash
-								i(200957),	-- Sabellian's Leggings
-								i(200958),	-- Sabellian's Boots
-								i(200959),	-- Sabellian's Gloves
-								i(200961),	-- Sabellian's Cloak
-								i(200962),	-- Sabellian's Tunic
-							},
-						}),
-						i(200640, {	-- Obsidian Egg Clutch (TOY!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 100 },
-								{ "i", PRIMAL_BEAR_SPINE, 1 },
-								{ "i", LARGE_STURDY_FEMUR, 1 },
-							},
-						}),
-						i(200970, {	-- Obsidian Collar
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
-						}),
-						i(200971, {	-- Obsidian Cape
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 150 },
-							},
-						}),
-						i(200993, {	-- Obsidian Guard's Barrier
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", RAINBOW_PEARL, 1 },
-								{ "i", ADAMANT_SCALES, 10 },
-							},
-						}),
-						i(200996, {	-- Obsidian Guard's Claw
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
-								{ "i", SEREVITE_ORE, 10 },
-							},
-						}),
-						i(200990, {	-- Obsidian Guard's Cutlass
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", GLOWING_TITAN_ORB, 1 },
-								{ "i", SEREVITE_ORE, 10 },
-							},
-						}),
-						i(200988, {	-- Obsidian Guard's Skullspiltter
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", RAINBOW_PEARL, 1 },
-								{ "i", ADAMANT_SCALES, 10 },
-							},
-						}),
-						i(200986, {	-- Obsidian Spellcarver's Stave
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
-								{ "i", SEREVITE_ORE, 10 },
-							},
-						}),
-						i(200983, {	-- Obsidian Wingedguard Polearm
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
-								{ "i", SEREVITE_ORE, 10 },
-							},
-						}),
-						i(199740, {	-- Onyx Dragonflame Blade
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
-								{ "i", GLIMMERING_NELTHARITE_CLUSTER, 1 },
-							},
-						}),
-						i(197013, {	-- Cliffside Wylderdrake: Black Scales (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-								{ "i", AWAKENED_EARTH, 1 },
-							},
-						}),
-						i(196964, {	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-								{ "i", PRIMAL_BEAR_SPINE, 6 },
-								{ "i", DRACONIUM_ORE, 20 },
-							},
-						}),
-						i(197142, {	-- Highland Drake: Black Scales (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-								{ "i", AWAKENED_EARTH, 1 },
-							},
-						}),
-						i(197090, {	-- Highland Drake: Gold and Black Armor (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-								{ "i", PRIMAL_BEAR_SPINE, 6 },
-								{ "i", DRACONIUM_ORE, 20 },
-							},
-						}),
-						i(197392, {	-- Renewed Proto-Drake: Black Scales (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-								{ "i", AWAKENED_EARTH, 1 },
-							},
-						}),
-						i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-								{ "i", PRIMAL_BEAR_SPINE, 6 },
-								{ "i", DRACONIUM_ORE, 20 },
-							},
-						}),
-						i(197611, {	-- Windborne Velocidrake: Black Scales (DM!)
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 400 },
-								{ "i", AWAKENED_EARTH, 1 },
-							},
-						}),
-						i(201839),	-- Netherforged Lavaproof Boots
-					},
+					["g"] = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
+						{		-- Acquaintance --
+						}, {	-- Cohort --
+							i(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 750 },
+									{ "i", AWAKENED_FIRE, 4 },
+									{ "i", AWAKENED_EARTH, 4 },
+								},
+								["g"] = {
+									i(191803),	-- Obsidian Dracthyr Battlegear Bracers
+									i(191804),	-- Obsidian Dracthyr Battlegear Cover
+									i(191798),	-- Obsidian Dracthyr Battlegear Grips
+									i(191797),	-- Obsidian Dracthyr Battlegear Hauberk
+									i(191799),	-- Obsidian Dracthyr Battlegear Helm
+									i(191800),	-- Obsidian Dracthyr Battlegear Leggings
+									i(191801),	-- Obsidian Dracthyr Battlegear Monnion
+									i(191802),	-- Obsidian Dracthyr Battlegear Belt
+								},
+							}),
+							i(200640, {	-- Obsidian Egg Clutch (TOY!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 100 },
+									{ "i", PRIMAL_BEAR_SPINE, 1 },
+									{ "i", LARGE_STURDY_FEMUR, 1 },
+								},
+							}),
+						}, {	-- Ally --
+							i(200963, {	-- Ensemble: Sabellian's Battlegear Cloth Armor
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 750 },
+									{ "i", WILDERCLOTH, 40 },
+								},
+								["g"] = {
+									i(200954),	-- Sabellian's Robes
+									i(200955),	-- Sabellian's Mantle
+									i(200956),	-- Sabellian's Sash
+									i(200957),	-- Sabellian's Leggings
+									i(200958),	-- Sabellian's Boots
+									i(200959),	-- Sabellian's Gloves
+									i(200961),	-- Sabellian's Cloak
+									i(200962),	-- Sabellian's Tunic
+								},
+							}),
+						}, {	-- Fang --
+							i(200993, {	-- Obsidian Guard's Barrier
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", RAINBOW_PEARL, 1 },
+									{ "i", ADAMANT_SCALES, 10 },
+								},
+							}),
+							i(200996, {	-- Obsidian Guard's Claw
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", TALLSTRIDER_SINEW, 5 },
+									{ "i", SEREVITE_ORE, 10 },
+								},
+							}),
+							i(200990, {	-- Obsidian Guard's Cutlass
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", GLOWING_TITAN_ORB, 1 },
+									{ "i", SEREVITE_ORE, 10 },
+								},
+							}),
+							i(200988, {	-- Obsidian Guard's Skullspiltter
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", RAINBOW_PEARL, 1 },
+									{ "i", ADAMANT_SCALES, 10 },
+								},
+							}),
+							i(200986, {	-- Obsidian Spellcarver's Stave
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", TALLSTRIDER_SINEW, 5 },
+									{ "i", SEREVITE_ORE, 10 },
+								},
+							}),
+							i(200983, {	-- Obsidian Wingedguard Polearm
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", TALLSTRIDER_SINEW, 5 },
+									{ "i", SEREVITE_ORE, 10 },
+								},
+							}),
+							i(199740, {	-- Onyx Dragonflame Blade
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 600 },
+									{ "i", TALLSTRIDER_SINEW, 5 },
+									{ "i", GLIMMERING_NELTHARITE_CLUSTER, 1 },
+								},
+							}),
+						}, {	-- Friend --
+							i(196964, {	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 750 },
+									{ "i", PRIMAL_BEAR_SPINE, 6 },
+									{ "i", DRACONIUM_ORE, 20 },
+								},
+							}),
+							i(197090, {	-- Highland Drake: Gold and Black Armor (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 750 },
+									{ "i", PRIMAL_BEAR_SPINE, 6 },
+									{ "i", DRACONIUM_ORE, 20 },
+								},
+							}),
+							i(200970, {	-- Obsidian Collar
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 150 },
+								},
+							}),
+							i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 750 },
+									{ "i", PRIMAL_BEAR_SPINE, 6 },
+									{ "i", DRACONIUM_ORE, 20 },
+								},
+							}),
+						}, {	-- True Friend --
+							i(197013, {	-- Cliffside Wylderdrake: Black Scales (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
+									{ "i", AWAKENED_EARTH, 1 },
+								},
+							}),
+							i(197142, {	-- Highland Drake: Black Scales (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
+									{ "i", AWAKENED_EARTH, 1 },
+								},
+							}),
+							i(200971, {	-- Obsidian Cape
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 150 },
+								},
+							}),
+							i(197392, {	-- Renewed Proto-Drake: Black Scales (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
+									{ "i", AWAKENED_EARTH, 1 },
+								},
+							}),
+							i(197611, {	-- Windborne Velocidrake: Black Scales (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
+									{ "i", AWAKENED_EARTH, 1 },
+								},
+							}),
+							i(201839),	-- Netherforged Lavaproof Boots
+						},
+					}),
 				}),
 			}),
 			n(ZONE_DROPS, {

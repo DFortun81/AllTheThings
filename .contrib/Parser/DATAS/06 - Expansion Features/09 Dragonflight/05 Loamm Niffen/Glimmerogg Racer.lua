@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
-		faction(2568, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 7 } }, {	-- Glimmerogg Racer
+		faction(FACTION_GLIMMEROGG_RACER, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 7 } }, {
 			n(ACHIEVEMENTS, {
 				ach(17741, {	-- Slow and Steady Wins the Race
 					i(205231),	-- Roggy (PET!)
@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 				q(75598, {	-- Snailed It
-					["minReputation"] = { 2568, 5 },	-- Rank 5, Professional, 2800
+					["minReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },	-- Rank 5, Professional, 2800
 					["provider"] = { "n", 201752 },	-- Briggul
 					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 					["g"] = {
@@ -43,7 +43,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 74787 },	-- Come Snail Away
 				["provider"] = { "n", 201752 },	-- Briggul
 				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
-				["maxReputation"] = { 2568, 5 },
+				["maxReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },
 			}, {
 				q(74948),	-- Snailspiration: Amethyst Softshell
 				q(74949),	-- Snailspiration: Archetype of Vigilance
@@ -65,7 +65,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 74787 },	-- Come Snail Away
 				["provider"] = { "n", 201752 },	-- Briggul
 				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
-				["maxReputation"] = { 2568, 5 },
+				["maxReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },	-- Rank 5, Professional, 2800
 				["isDaily"] = true,
 			}, {
 				q(74516),	-- A Snail's Pace

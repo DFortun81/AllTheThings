@@ -5,13 +5,7 @@ local MOTE_OF_NASZURO_INFO = {
 	readable = "Mote of Nasz'uro",
 	icon = "Interface\\Icons\\spell_holy_dizzy",
 	text = {
-		en = "Mote of Nasz'uro",
-		es = "Mota de Nasz'uro",
-		de = "Partikel von Nasz'uro",
-		fr = "Granule de Nasz'uro",
-		pt = "Partícula de Nasz'uro",
-		ru = "Частица Наз'уро",
-		cn = "纳兹乌罗微粒",
+		en = [[~GetSpellInfo(411800)]],
 	},
 };
 MOTE_OF_NASZURO_1 = createHeader( MOTE_OF_NASZURO_INFO );

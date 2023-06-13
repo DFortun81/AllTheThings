@@ -1013,7 +1013,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["u"] = NEVER_IMPLEMENTED,
 		}, {
-			i(203322),	-- Winding Slitherdrake: Blonde Hair (DM!)
+			i(203322),	-- Winding Slitherdrake: Blonde Hair
 			i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns
 			i(203349),	-- Winding Slitherdrake: Curved Nose Horn
 			i(203319),	-- Winding Slitherdrake: Finned Cheek
@@ -1025,7 +1025,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203363),	-- Winding Slitherdrake: Large Finned Throat
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor
 			i(203336),	-- Winding Slitherdrake: Paired Horns
-			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor (Doesnt Load Ingame)
+			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor
 			i(203337),	-- Winding Slitherdrake: Thorn Horns
 			i(203359),	-- Winding Slitherdrake: Shark Finned Tail
 			i(203333),	-- Winding Slitherdrake: Short Horns

@@ -4,8 +4,7 @@
 local function bo(questID)
     return { ["questID"] = questID, ["isDaily"] = true };
 end
-
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(THE_MAW, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(COMMON_BOSS_DROPS, {

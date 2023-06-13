@@ -1231,7 +1231,6 @@ app.L = {
 		[-1130] = "Interface\\Icons\\ui_majorfaction_tuskarr",										-- Iskaara Tuskarr
 		[-1131] = "Interface\\Icons\\inv_polearm_2h_kultirasharpoon_a_01",							-- Iskaara Fishing
 		[-1132] = "Interface\\Icons\\inv_tradeskill_cooking_stonesouppot01",						-- Community Feast
-		[-1140] = "Interface\\Icons\\ui_majorfaction_valdrakken",									-- Valdrakken Accord
 		[-1141] = "Interface\\Icons\\inv_artifact_dragonscales",									-- Siege on Dragonbane Keep
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Dragonriding Racing
 		[-1143] = 237274,																			-- Every 30 min Rare
@@ -1288,7 +1287,6 @@ app.L = {
 	["HEADER_NAMES"] = {
 		[-41] = "Cache of Madness",												-- Cache of Madness
 		[-43] = TRACKER_HEADER_PROVINGGROUNDS,									-- Proving Grounds
-		
 		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
 	-- Garrisons
 		[-101] = GARRISON_FOLLOWERS,											-- Followers
@@ -1542,7 +1540,6 @@ app.L = {
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
 		[-1131] = "Iskaara Fishing",												-- Iskaara Fishing
 		[-1132] = GetSpellInfo(386441),												-- Community Feast
-		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
 		[-1141] = GetSpellInfo(388945),												-- Siege on Dragonbane Keep
 		[-1142] = GetSpellInfo(400433),												-- Dragonriding Racing
 		[-1143] = "DF Rare Rotation",												-- DF Rare Rotation (Every 30 min Rare)

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(VENDORS, {
 			n(166640, {	-- Au'larrynar <Enhancers>
@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(180771),	-- Potion of Unusual Strength
 					i(180659),	-- Soul Siphoning Shard
 					i(180969, {	-- Spiral Deathroc Horn
-						["timeline"] = { ADDED_9_0_2, "deleted 9.0.5" },
+						["timeline"] = { ADDED_9_0_2, REMOVED_9_0_5 },
 					}),
 					i(180694),	-- Tome of Power
 					i(180658),	-- Witherlight Crystal

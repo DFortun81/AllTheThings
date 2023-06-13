@@ -411,6 +411,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["g"] = {
 					i(198608),	-- Alchemy Notes
 				},
@@ -645,6 +646,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["g"] = {
 					i(198606),	-- Blacksmith's Writ
 				},
@@ -944,6 +946,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(QUESTS, sharedData({
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["isWeekly"] = true,
 				["g"] = {
 					i(198610),	-- Enchanter's Script
@@ -1198,6 +1201,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(QUESTS, sharedData({
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["isWeekly"] = true,
 				["g"] = {
 					i(198611),	-- Engineering Details
@@ -1487,6 +1491,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["coord"] = { 38.2, 68.6, VALDRAKKEN },
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["isWeekly"] = true,
 				["g"] = {
 					i(199115),	-- Herbalism Field Notes
@@ -1587,6 +1592,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(QUESTS, sharedData({
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["isWeekly"] = true,
 				["g"] = {
 					i(198607),	-- Scribe's Glyphs
@@ -1852,6 +1858,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(QUESTS, sharedData({
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["isWeekly"] = true,
 				["g"] = {
 					i(198612),	-- Jeweler's Cuts
@@ -2131,6 +2138,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(QUESTS, sharedData({
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["isWeekly"] = true,
 				["g"] = {
 					i(198613),	-- Leatherworking Designs
@@ -2376,6 +2384,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["coord"] = { 39.0, 51.2, VALDRAKKEN },
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["isWeekly"] = true,
 				["g"] = {
 					i(199122),	-- Mining Field Notes
@@ -2478,6 +2487,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["coord"] = { 28.8, 60.4, VALDRAKKEN },
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["isWeekly"] = true,
 				["g"] = {
 					i(199128),	-- Skinning Field Notes
@@ -2595,6 +2605,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(QUESTS, sharedData({
+				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 				["isWeekly"] = true,
 				["g"] = {
 					i(198609),	-- Tailoring Examples

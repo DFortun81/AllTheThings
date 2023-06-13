@@ -754,7 +754,6 @@ for key,value in pairs({
 		[-1126] = "Ouest",											-- West
 		[-1130] = "Rohart iskaarien",								-- Iskaara Tuskarr
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
-		[-1140] = "Concordat de Valdrakken",						-- Valdrakken Accord
 		[-1143] = "Rotation Rare de DF",							-- DF Rare Rotation
 		[-1144] = "Connaissance hebdomadaire de profession",		-- Weekly Profession Header
 		[-1150] = "Flairans de Terreau",							-- Loamm Niffen

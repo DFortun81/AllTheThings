@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14206, {	-- Blade of the Primus
@@ -522,217 +522,201 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				}),
 				------ Continues in Ardenweald ------
 			}),
-			crit(1, {	-- Theater of Pain
-				["achievementID"] = 14799,	-- Sojourner of Maldraxxus
-				["collectible"] = false,
-				["g"] = {
-					q(62785, {	-- I Could Be A Contender
-						["sourceQuests"] = { 57425 },	-- Land of Opportunity
-						["provider"] = { "n", 161733 },	-- Anzio The Infallible
-						["coord"] = { 50.5, 51.6, MALDRAXXUS },
-						["isBreadcrumb"] = true,
-					}),
-					q(58068, {	-- ...Even The Most Ridiculous Request!
-						["sourceQuests"] = { 62785 },	-- I Could Be A Contender
-						["provider"] = { "n", 159689 },	-- Overseer Kalvaros
-						["coord"] = { 54.0, 50.8, MALDRAXXUS },
-					}),
-					q(58088, {	-- Juicing Up
-						["sourceQuests"] = { 58068 },	-- ...Even The Most Ridiculous Request!
-						["provider"] = { "n", 159827 },	-- Scrapper Minoire
-						["coord"] = { 53.8, 50.5, MALDRAXXUS },
-					}),
-					q(58090, {	-- Side Effects
-						["sourceQuests"] = { 58088 },	-- Juicing Up
-						["provider"] = { "n", 159833 },	-- So'narynar
-						["coord"] = { 53.7, 47.8, MALDRAXXUS },
-					}),
-					q(59750, {	-- How To Get A Head
-						["sourceQuests"] = { 62785 },	-- I Could Be A Contender
-						["provider"] = { "n", 161559 },	-- Louison
-						["coord"] = { 54.4, 48.6, MALDRAXXUS },
-					}),
-					q(59781, {	-- The Last Guy
-						["sourceQuests"] = { 62785 },	-- I Could Be A Contender
-						["provider"] = { "n", 161559 },	-- Louison
-						["coord"] = { 54.4, 48.6, MALDRAXXUS },
-						["g"] = {
-							i(175725),	-- Newcomer's Gladiatorial Badge
-						},
-					}),
-					q(58575, {	-- Stuff We All Get
-						["sourceQuests"] = {
-							59750,	-- How To Get A Head
-							59781,	-- The Last Guy
-						},
-						["provider"] = { "n", 161559 },	-- Louison
-						["coord"] = { 54.4, 48.6, MALDRAXXUS },
-					}),
-					q(59800, {	-- Team Spirit
-						["sourceQuests"] = {
-							59750,	-- How To Get A Head
-							59781,	-- The Last Guy
-						},
-						["provider"] = { "n", 161559 },	-- Louison
-						["coord"] = { 54.4, 48.6, MALDRAXXUS },
-					}),
-					q(58947, {	-- Test Your Mettle
-						["sourceQuests"] = {
-							58575,	-- Stuff We All Get
-							59800,	-- Team Spirit
-						},
-						["provider"] = { "n", 161559 },	-- Louison
-						["coord"] = { 54.4, 48.6, MALDRAXXUS },
-					}),
-					q(59879, {	-- This Thing Of Ours
-						["sourceQuests"] = {
-							58947,	-- Test Your Mettle
-							58090,	-- Side Effects
-						},
-						["provider"] = { "n", 161559 },	-- Louison
-						["coord"] = { 54.4, 48.6, MALDRAXXUS },
-					}),
-					q(59203, {	-- Leave Me a Loan
-						["sourceQuests"] = { 59879 },	-- This Thing of Ours
-						["provider"] = { "n", 159830 },	-- Au'narim
-						["coord"] = { 53.6, 47.5, MALDRAXXUS },
-					}),
-					q(59837, {	-- Working For The Living
-						["sourceQuests"] = { 59203 },	-- Leave Me a Loan
-						["provider"] = { "n", 159830 },	-- Au'narim
-						["coord"] = { 53.6, 47.5, MALDRAXXUS },
-						["maps"] = { 1691 },	-- Shattered Grove (Scenario Map)
-					}),
-					q(58900, {	-- A Sure Bet
-						["sourceQuests"] = { 59837 },	-- Working For The Living
-						["provider"] = { "n", 161559 },	-- Louison
-						["coord"] = { 54.4, 48.6, MALDRAXXUS },
-					}),
-					q(57316, {	-- The Ladder
-						["sourceQuests"] = { 58900 },	-- A Sure Bet
-						["provider"] = { "n", 161733 },	-- Anzio The Infallible
-						["coord"] = { 50.5, 51.6, MALDRAXXUS },
-						["g"] = {
-							i(181529),	-- Ruthless Contender's Blade
-							i(176283),	-- Ruthless Contender's Claymore
-							i(176281),	-- Ruthless Contender's Crossbow
-							i(176277),	-- Ruthless Contender's Dagger
-							i(176278),	-- Ruthless Contender's Hammer
-							i(181534),	-- Ruthless Contender's Rod
-							i(176284),	-- Ruthless Contender's Shield
-							i(181531),	-- Ruthless Contender's Spellblade
-							i(176279),	-- Ruthless Contender's Staff
-							i(176444),	-- Ruthless Contender's Steel
-							i(176280),	-- Ruthless Contender's Sword
-							i(176285),	-- Ruthless Contender's Tome
-							i(176282),	-- Ruthless Contender's Wand
-							i(176286),	-- Ruthless Contender's Warglaive
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14799.01, {	-- Theater of Pain
+				q(62785, {	-- I Could Be A Contender
+					["sourceQuests"] = { 57425 },	-- Land of Opportunity
+					["provider"] = { "n", 161733 },	-- Anzio The Infallible
+					["coord"] = { 50.5, 51.6, MALDRAXXUS },
+					["isBreadcrumb"] = true,
+				}),
+				q(58068, {	-- ...Even The Most Ridiculous Request!
+					["sourceQuests"] = { 62785 },	-- I Could Be A Contender
+					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
+					["coord"] = { 54.0, 50.8, MALDRAXXUS },
+				}),
+				q(58088, {	-- Juicing Up
+					["sourceQuests"] = { 58068 },	-- ...Even The Most Ridiculous Request!
+					["provider"] = { "n", 159827 },	-- Scrapper Minoire
+					["coord"] = { 53.8, 50.5, MALDRAXXUS },
+				}),
+				q(58090, {	-- Side Effects
+					["sourceQuests"] = { 58088 },	-- Juicing Up
+					["provider"] = { "n", 159833 },	-- So'narynar
+					["coord"] = { 53.7, 47.8, MALDRAXXUS },
+				}),
+				q(59750, {	-- How To Get A Head
+					["sourceQuests"] = { 62785 },	-- I Could Be A Contender
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+				}),
+				q(59781, {	-- The Last Guy
+					["sourceQuests"] = { 62785 },	-- I Could Be A Contender
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+					["g"] = {
+						i(175725),	-- Newcomer's Gladiatorial Badge
+					},
+				}),
+				q(58575, {	-- Stuff We All Get
+					["sourceQuests"] = {
+						59750,	-- How To Get A Head
+						59781,	-- The Last Guy
+					},
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+				}),
+				q(59800, {	-- Team Spirit
+					["sourceQuests"] = {
+						59750,	-- How To Get A Head
+						59781,	-- The Last Guy
+					},
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+				}),
+				q(58947, {	-- Test Your Mettle
+					["sourceQuests"] = {
+						58575,	-- Stuff We All Get
+						59800,	-- Team Spirit
+					},
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+				}),
+				q(59879, {	-- This Thing Of Ours
+					["sourceQuests"] = {
+						58947,	-- Test Your Mettle
+						58090,	-- Side Effects
+					},
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+				}),
+				q(59203, {	-- Leave Me a Loan
+					["sourceQuests"] = { 59879 },	-- This Thing of Ours
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.6, 47.5, MALDRAXXUS },
+				}),
+				q(59837, {	-- Working For The Living
+					["sourceQuests"] = { 59203 },	-- Leave Me a Loan
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.6, 47.5, MALDRAXXUS },
+					["maps"] = { 1691 },	-- Shattered Grove (Scenario Map)
+				}),
+				q(58900, {	-- A Sure Bet
+					["sourceQuests"] = { 59837 },	-- Working For The Living
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+				}),
+				q(57316, {	-- The Ladder
+					["sourceQuests"] = { 58900 },	-- A Sure Bet
+					["provider"] = { "n", 161733 },	-- Anzio The Infallible
+					["coord"] = { 50.5, 51.6, MALDRAXXUS },
+					["g"] = {
+						i(181529),	-- Ruthless Contender's Blade
+						i(176283),	-- Ruthless Contender's Claymore
+						i(176281),	-- Ruthless Contender's Crossbow
+						i(176277),	-- Ruthless Contender's Dagger
+						i(176278),	-- Ruthless Contender's Hammer
+						i(181534),	-- Ruthless Contender's Rod
+						i(176284),	-- Ruthless Contender's Shield
+						i(181531),	-- Ruthless Contender's Spellblade
+						i(176279),	-- Ruthless Contender's Staff
+						i(176444),	-- Ruthless Contender's Steel
+						i(176280),	-- Ruthless Contender's Sword
+						i(176285),	-- Ruthless Contender's Tome
+						i(176282),	-- Ruthless Contender's Wand
+						i(176286),	-- Ruthless Contender's Warglaive
+					},
+				}),
 			}),
-			crit(2, {	-- Archival Protection
-				["achievementID"] = 14799,	-- Sojourner of Maldraxxus
-				["collectible"] = false,
-				["g"] = {
-					q(62605, {	-- Broker Business
-						["sourceQuests"] = { 60733 },	-- Front and Center
-						["provider"] = { "o", 358533 },	-- Forgotten Supplies
-						["coord"] = { 38.2, 31.3, MALDRAXXUS },
-						["isBreadcrumb"] = true,
-					}),
-					q(58619, {	-- Read Between the Lines
-						["sourceQuests"] = { 62605 },	-- Broker Business
-						["provider"] = { "n", 166657 },	-- Ta'eran
-						["coord"] = { 40.6, 33.0, MALDRAXXUS },
-					}),
-					q(59917, {	-- Kill Them, Of Course
-						["sourceQuests"] = { 58619 },	-- Read Between the Lines
-						["provider"] = { "n", 166664 },	-- Ta'eran
-						["coord"] = { 43.0, 25.1, MALDRAXXUS },
-					}),
-					q(58621, {	-- Repeat After Me
-						["sourceQuests"] = { 58619 },	-- Read Between the Lines
-						["provider"] = { "n", 166664 },	-- Ta'eran
-						["coord"] = { 43.0, 25.1, MALDRAXXUS },
-						["g"] = {
-							i(175707),	-- Signet of the Learned
-						},
-					}),
-					q(58620, {	-- Slaylines
-						["sourceQuests"] = { 58621 },	-- Repeat After Me
-						["provider"] = { "n", 166664 },	-- Ta'eran
-						["coord"] = { 43.0, 25.1, MALDRAXXUS },
-					}),
-					q(58622, {	-- Secrets Among the Shelves
-						["sourceQuests"] = {
-							59917,	-- Kill Them, Of Course
-							58620,	-- Slaylines
-						},
-						["provider"] = { "n", 166664 },	-- Ta'eran
-						["coord"] = { 43.0, 25.1, MALDRAXXUS },
-					}),
-					q(60900, {	-- Archival Protection
-						["sourceQuests"] = { 58622 },	-- Secrets Among the Shelves
-						["provider"] = { "n", 170667 },	-- Ta'eran
-						["coord"] = { 41.7, 23.6, MALDRAXXUS },
-					}),
-					q(59994, {	-- Trust Fall
-						["sourceQuests"] = { 60900 },	-- Archival Protection
-						["provider"] = { "n", 162476 },	-- Ta'eran
-						["g"] = {
-							i(175517),	-- Corpse-Stitcher's Slippers
-							i(175516),	-- Cruel Executioner's Stompers
-							i(175519),	-- Deceitful Agent's Treads
-							i(175518),	-- Flesh Architect's Galoshes
-						},
-					}),
-					q(58623, {	-- A Complete Set
-						["sourceQuests"] = { 59994 },	-- Trust Fall
-						["provider"] = { "n", 166806 },	-- Ta'eran
-						["coord"] = { 43.0, 25.1, MALDRAXXUS },
-					}),
-				},
+			header(HEADERS.AchCriteria, 14799.02, {	-- Archival Protection
+				q(62605, {	-- Broker Business
+					["sourceQuests"] = { 60733 },	-- Front and Center
+					["provider"] = { "o", 358533 },	-- Forgotten Supplies
+					["coord"] = { 38.2, 31.3, MALDRAXXUS },
+					["isBreadcrumb"] = true,
+				}),
+				q(58619, {	-- Read Between the Lines
+					["sourceQuests"] = { 62605 },	-- Broker Business
+					["provider"] = { "n", 166657 },	-- Ta'eran
+					["coord"] = { 40.6, 33.0, MALDRAXXUS },
+				}),
+				q(59917, {	-- Kill Them, Of Course
+					["sourceQuests"] = { 58619 },	-- Read Between the Lines
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, MALDRAXXUS },
+				}),
+				q(58621, {	-- Repeat After Me
+					["sourceQuests"] = { 58619 },	-- Read Between the Lines
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, MALDRAXXUS },
+					["g"] = {
+						i(175707),	-- Signet of the Learned
+					},
+				}),
+				q(58620, {	-- Slaylines
+					["sourceQuests"] = { 58621 },	-- Repeat After Me
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, MALDRAXXUS },
+				}),
+				q(58622, {	-- Secrets Among the Shelves
+					["sourceQuests"] = {
+						59917,	-- Kill Them, Of Course
+						58620,	-- Slaylines
+					},
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, MALDRAXXUS },
+				}),
+				q(60900, {	-- Archival Protection
+					["sourceQuests"] = { 58622 },	-- Secrets Among the Shelves
+					["provider"] = { "n", 170667 },	-- Ta'eran
+					["coord"] = { 41.7, 23.6, MALDRAXXUS },
+				}),
+				q(59994, {	-- Trust Fall
+					["sourceQuests"] = { 60900 },	-- Archival Protection
+					["provider"] = { "n", 162476 },	-- Ta'eran
+					["g"] = {
+						i(175517),	-- Corpse-Stitcher's Slippers
+						i(175516),	-- Cruel Executioner's Stompers
+						i(175519),	-- Deceitful Agent's Treads
+						i(175518),	-- Flesh Architect's Galoshes
+					},
+				}),
+				q(58623, {	-- A Complete Set
+					["sourceQuests"] = { 59994 },	-- Trust Fall
+					["provider"] = { "n", 166806 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, MALDRAXXUS },
+				}),
 			}),
-			crit(3, {	-- Mixing Monstrosities
-				["achievementID"] = 14799,	-- Sojourner of Maldraxxus
-				["collectible"] = false,
-				["g"] = {
-					q(59430, {	-- A Plague On Your House
-						["sourceQuests"] = { 57425 },	-- Land of Opportunity
-						["provider"] = { "n", 165049 },	-- Judas Sneap
-						["coord"] = { 58.0, 72.1, MALDRAXXUS },
-					}),
-					q(58431, {	-- Pool of Potions
-						["sourceQuests"] = { 59430 },	-- Plagues Aid
-						["provider"] = { "n", 157945 },	-- Boil Master Yetch
-						["coord"] = { 59.0, 73.8, MALDRAXXUS },
-					}),
-				},
+			header(HEADERS.AchCriteria, 14799.03, {	-- Mixing Monstrosities
+				q(59430, {	-- A Plague On Your House
+					["sourceQuests"] = { 57425 },	-- Land of Opportunity
+					["provider"] = { "n", 165049 },	-- Judas Sneap
+					["coord"] = { 58.0, 72.1, MALDRAXXUS },
+				}),
+				q(58431, {	-- Pool of Potions
+					["sourceQuests"] = { 59430 },	-- Plagues Aid
+					["provider"] = { "n", 157945 },	-- Boil Master Yetch
+					["coord"] = { 59.0, 73.8, MALDRAXXUS },
+				}),
 			}),
-			crit(4, {	-- Wasteland Work
-				["achievementID"] = 14799,	-- Sojourner of Maldraxxus
-				["collectible"] = false,
-				["g"] = {
-					q(58785, {	-- Smack And Grab
-						["sourceQuests"] = { 57425 },	-- Land of Opportunity
-						["provider"] = { "n", 162615 },	-- Caleesy
-						["coord"] = { 47.0, 49.0, MALDRAXXUS },
-					}),
-					q(58750, {	-- Take The Bull By The Horns
-						["sourceQuests"] = { 57425 },	-- Land of Opportunity
-						["provider"] = { "n", 162474 },	-- Dundae
-						["coord"] = { 46.8, 48.5, MALDRAXXUS },
-					}),
-					q(58794, {	-- Stabbing Wasteward
-						["sourceQuests"] = {
-							58785,	-- Smack And Grab
-							58750,	-- Take The Bull By The Horns
-						},
-						["provider"] = { "n", 162474 },	-- Dundae
-						["coord"] = { 46.8, 48.5, MALDRAXXUS },
-					}),
-				},
+			header(HEADERS.AchCriteria, 14799.04, {	-- Wasteland Work
+				q(58785, {	-- Smack And Grab
+					["sourceQuests"] = { 57425 },	-- Land of Opportunity
+					["provider"] = { "n", 162615 },	-- Caleesy
+					["coord"] = { 47.0, 49.0, MALDRAXXUS },
+				}),
+				q(58750, {	-- Take The Bull By The Horns
+					["sourceQuests"] = { 57425 },	-- Land of Opportunity
+					["provider"] = { "n", 162474 },	-- Dundae
+					["coord"] = { 46.8, 48.5, MALDRAXXUS },
+				}),
+				q(58794, {	-- Stabbing Wasteward
+					["sourceQuests"] = {
+						58785,	-- Smack And Grab
+						58750,	-- Take The Bull By The Horns
+					},
+					["provider"] = { "n", 162474 },	-- Dundae
+					["coord"] = { 46.8, 48.5, MALDRAXXUS },
+				}),
 			}),
 			------ Miscellaneous ------
 			q(57284, {	-- Blade of Blades
@@ -772,30 +756,45 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			n(BONUS_OBJECTIVES, sharedData({
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				["lockCriteria"] = { 1, "lvl", 60 },
 			}, bubbleDown({
-				["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
+				["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2 },
 			}, {
-				q(62742, {	-- Avoid 'Em Like the P	lague [Pre-60]
-					i(181638),	-- Gorewrought Drape
+				q(62742, {	-- Avoid 'Em Like the P	lague
+					["coord"] = { 58.0, 63.6, MALDRAXXUS },
+					["g"] = {
+						i(181638),	-- Gorewrought Drape
+					},
 				}),
-				q(62741),	-- Choice of Action [Pre-60]
-				q(62743, {	-- Decaying Situation [Pre-60]
-					i(181664),	-- Bloodsilk Hood
-					i(181666),	-- Corpsehide Helm
-					i(181665),	-- Fleshscale Coif
-					i(181651),	-- Steelcore Helmet
+				q(62741, {	-- Choice of Action
+					["coord"] = { 35.2, 66.6, MALDRAXXUS },
 				}),
-				q(62721, {	-- Deconstructing The Problem [Pre-60]
-					i(181679),	-- Bloodsilk Wristwraps
-					i(181682),	-- Corpsehide Wristwraps
-					i(181681),	-- Fleshscale Wristwraps
-					i(181680),	-- Steelcore Wristwraps
+				q(62743, {	-- Decaying Situation
+					["coord"] = { 69.6, 52.4, MALDRAXXUS },
+					["g"] = {
+						i(181664),	-- Bloodsilk Hood
+						i(181666),	-- Corpsehide Helm
+						i(181665),	-- Fleshscale Coif
+						i(181651),	-- Steelcore Helmet
+					},
 				}),
-				q(62712, {	-- War of Attrition [Pre-60]
-					i(181676),	-- Bloodsilk Cord
-					i(181678),	-- Corpsehide Belt
-					i(181677),	-- Fleshscale Belt
-					i(181675),	-- Steelcore Girdle
+				q(62721, {	-- Deconstructing The Problem
+					["coord"] = { 33.4, 27.2, MALDRAXXUS },
+					["g"] = {
+						i(181679),	-- Bloodsilk Wristwraps
+						i(181682),	-- Corpsehide Wristwraps
+						i(181681),	-- Fleshscale Wristwraps
+						i(181680),	-- Steelcore Wristwraps
+					},
+				}),
+				q(62712, {	-- War of Attrition
+					["coord"] = { 38.8, 48.4, MALDRAXXUS },
+					["g"] = {
+						i(181676),	-- Bloodsilk Cord
+						i(181678),	-- Corpsehide Belt
+						i(181677),	-- Fleshscale Belt
+						i(181675),	-- Steelcore Girdle
+					},
 				}),
 			}))),
 		}),

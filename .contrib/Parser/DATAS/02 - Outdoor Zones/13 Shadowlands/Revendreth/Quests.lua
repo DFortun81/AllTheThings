@@ -1,7 +1,7 @@
  ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 13878, {	-- The Master of Revendreth
@@ -422,362 +422,338 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				}),
 				------ The End ------
 			}),
-			crit(1, {	-- The Duelist's Debt
-				["achievementID"] = 14798,	-- Sojourner of Revendreth
-				["collectible"] = false,
-				["g"] = {
-					q(59710, {	-- A Curious Invitation
-						["sourceQuests"] = { 57174 },	-- The Stoneborn
-						["provider"] = { "n", 165859 },	-- Dimwiddle
-						["coord"] = { 60.7, 62.5, REVENDRETH },
-					}),
-					q(59712, {	-- The Lay of the Land
-						["sourceQuests"] = { 59710 },	-- A Curious Invitation
-						["provider"] = { "n", 169238 },	-- Courier Araak
-						["coord"] = { 59.5, 66.7, REVENDRETH },
-					}),
-					q(59846, {	-- Finders-Keepers, Sinners-Weepers
-						["sourceQuests"] = { 59712 },	-- The Lay of the Land
-						["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
-						["coord"] = { 59.9, 68.9, REVENDRETH },
-						["g"] = {
-							i(178071),	-- Amice of Pained Absolution
-							i(178067),	-- Mitts of Pained Absolution
-							i(178065),	-- Nightcloaked Mitts
-							i(178069),	-- Nightcloaked Mantle
-							i(178068),	-- Soul Hunter's Gloves
-							i(178072),	-- Soul Hunter's Shoulderguards
-							i(178066),	-- Stoneforged Gloves
-							i(178070),	-- Stoneforged Mantle
-						},
-					}),
-					q(59714, {	-- A Fine Vintage
-						["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
-						["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
-						["coord"] = { 59.9, 68.9, REVENDRETH },
-					}),
-					q(59713, {	-- Active Ingredients
-						["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
-						["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
-						["coord"] = { 59.9, 68.9, REVENDRETH },
-					}),
-					q(59715, {	-- Message for Matyas
-						["sourceQuests"] = {
-							59714,	-- A Fine Vintage
-							59713,	-- Active Ingredients
-						},
-						["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
-						["coord"] = { 59.9, 68.9, REVENDRETH },
-					}),
-					q(59716, {	-- Comfortably Numb
-						["sourceQuests"] = { 59715 },	-- Message for Matyas
-						["provider"] = { "n", 166081 },	-- Taskmaster Matyas
-						["coord"] = { 60.1, 69.4, REVENDRETH },
-						["g"] = {
-							i(175498),	-- Nightcloaked Pants
-							i(175418),	-- Nightcloaked Vest
-							i(175496),	-- Pantaloons of Pained Absolution
-							i(175417),	-- Soul Hunter's Hauberk
-							i(175497),	-- Soul Hunter's Legguards
-							i(175416),	-- Stoneforged Chestplate
-							i(175495),	-- Stoneforged Greaves
-							i(175415),	-- Vestments of Pained Absolution
-						},
-					}),
-					q(59868, {	-- Offer of Freedom
-						["sourceQuests"] = { 59716 },	-- Comfortably Numb
-						["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
-						["coord"] = { 60.1, 69.2, REVENDRETH },
-						["g"] = {
-							i(178077),	-- Briarbane Signet
-						},
-					}),
-					q(59724, {	-- The Field of Honor
-						["sourceQuests"] = { 59716 },	-- Comfortably Numb
-						["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
-						["coord"] = { 60.1, 69.2, REVENDRETH },
-					}),
-					q(59726, {	-- It's a Trap
-						["sourceQuests"] = {
-							59868,	-- Offer of Freedom
-							59724,	-- The Field of Honor
-						},
-						["provider"] = { "n", 166616 },	-- Nadjia the Mistblade
-						["coord"] = { 60.2, 78.6, REVENDRETH },
-						["g"] = {
-							i(178054),	-- Briarbane Carbine
-							i(178055),	-- Briarbane Glaive
-							i(178060),	-- Briarbane Halberd
-							i(178058),	-- Cavalier's Morningstar
-							i(178057),	-- Nobleman's Quickblade
-							i(178059),	-- Sacred Morningstar
-							i(177640),	-- Sinstealer's Staff
-							i(178056),	-- Stonevigil Rapier
-							i(178053),	-- Thicket Sweeper
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14798.01, {	-- The Duelist's Debt
+				q(59710, {	-- A Curious Invitation
+					["sourceQuests"] = { 57174 },	-- The Stoneborn
+					["provider"] = { "n", 165859 },	-- Dimwiddle
+					["coord"] = { 60.7, 62.5, REVENDRETH },
+				}),
+				q(59712, {	-- The Lay of the Land
+					["sourceQuests"] = { 59710 },	-- A Curious Invitation
+					["provider"] = { "n", 169238 },	-- Courier Araak
+					["coord"] = { 59.5, 66.7, REVENDRETH },
+				}),
+				q(59846, {	-- Finders-Keepers, Sinners-Weepers
+					["sourceQuests"] = { 59712 },	-- The Lay of the Land
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 59.9, 68.9, REVENDRETH },
+					["g"] = {
+						i(178071),	-- Amice of Pained Absolution
+						i(178067),	-- Mitts of Pained Absolution
+						i(178065),	-- Nightcloaked Mitts
+						i(178069),	-- Nightcloaked Mantle
+						i(178068),	-- Soul Hunter's Gloves
+						i(178072),	-- Soul Hunter's Shoulderguards
+						i(178066),	-- Stoneforged Gloves
+						i(178070),	-- Stoneforged Mantle
+					},
+				}),
+				q(59714, {	-- A Fine Vintage
+					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 59.9, 68.9, REVENDRETH },
+				}),
+				q(59713, {	-- Active Ingredients
+					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 59.9, 68.9, REVENDRETH },
+				}),
+				q(59715, {	-- Message for Matyas
+					["sourceQuests"] = {
+						59714,	-- A Fine Vintage
+						59713,	-- Active Ingredients
+					},
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 59.9, 68.9, REVENDRETH },
+				}),
+				q(59716, {	-- Comfortably Numb
+					["sourceQuests"] = { 59715 },	-- Message for Matyas
+					["provider"] = { "n", 166081 },	-- Taskmaster Matyas
+					["coord"] = { 60.1, 69.4, REVENDRETH },
+					["g"] = {
+						i(175498),	-- Nightcloaked Pants
+						i(175418),	-- Nightcloaked Vest
+						i(175496),	-- Pantaloons of Pained Absolution
+						i(175417),	-- Soul Hunter's Hauberk
+						i(175497),	-- Soul Hunter's Legguards
+						i(175416),	-- Stoneforged Chestplate
+						i(175495),	-- Stoneforged Greaves
+						i(175415),	-- Vestments of Pained Absolution
+					},
+				}),
+				q(59868, {	-- Offer of Freedom
+					["sourceQuests"] = { 59716 },	-- Comfortably Numb
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 60.1, 69.2, REVENDRETH },
+					["g"] = {
+						i(178077),	-- Briarbane Signet
+					},
+				}),
+				q(59724, {	-- The Field of Honor
+					["sourceQuests"] = { 59716 },	-- Comfortably Numb
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 60.1, 69.2, REVENDRETH },
+				}),
+				q(59726, {	-- It's a Trap
+					["sourceQuests"] = {
+						59868,	-- Offer of Freedom
+						59724,	-- The Field of Honor
+					},
+					["provider"] = { "n", 166616 },	-- Nadjia the Mistblade
+					["coord"] = { 60.2, 78.6, REVENDRETH },
+					["g"] = {
+						i(178054),	-- Briarbane Carbine
+						i(178055),	-- Briarbane Glaive
+						i(178060),	-- Briarbane Halberd
+						i(178058),	-- Cavalier's Morningstar
+						i(178057),	-- Nobleman's Quickblade
+						i(178059),	-- Sacred Morningstar
+						i(177640),	-- Sinstealer's Staff
+						i(178056),	-- Stonevigil Rapier
+						i(178053),	-- Thicket Sweeper
+					},
+				}),
 			}),
-			crit(2, {	-- Tithes of Darkhaven
-				["achievementID"] = 14798,	-- Sojourner of Revendreth
-				["collectible"] = false,
-				["g"] = {
-					q(60176, {	-- Bring Out Your Tithe
-						["sourceQuests"] = { 57174 },	-- The Stoneborn
-						["provider"] = { "n", 156822 },	-- Mistress Mihaela
-						["coord"] = { 61.3, 63.7, REVENDRETH },
-					}),
-					q(60177, {	-- Reason for the Treason
-						["sourceQuests"] = { 57174 },	-- The Stoneborn
-						["provider"] = { "n", 167489 },	-- Lajos
-						["coord"] = { 62.2, 61.3, REVENDRETH },
-					}),
-					q(60178, {	-- And Then There Were None
-						["sourceQuests"] = { 60177 },	-- Reason for the Treason
-						["provider"] = { "n", 167489 },	-- Lajos
-						["coord"] = { 62.2, 61.3, REVENDRETH },
-						["g"] = {
-							i(175766),	-- Ilka's Hunting Cloak
-							i(175737),	-- Samu's Inkwell Pendant
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14798.02, {	-- Tithes of Darkhaven
+				q(60176, {	-- Bring Out Your Tithe
+					["sourceQuests"] = { 57174 },	-- The Stoneborn
+					["provider"] = { "n", 156822 },	-- Mistress Mihaela
+					["coord"] = { 61.3, 63.7, REVENDRETH },
+				}),
+				q(60177, {	-- Reason for the Treason
+					["sourceQuests"] = { 57174 },	-- The Stoneborn
+					["provider"] = { "n", 167489 },	-- Lajos
+					["coord"] = { 62.2, 61.3, REVENDRETH },
+				}),
+				q(60178, {	-- And Then There Were None
+					["sourceQuests"] = { 60177 },	-- Reason for the Treason
+					["provider"] = { "n", 167489 },	-- Lajos
+					["coord"] = { 62.2, 61.3, REVENDRETH },
+					["g"] = {
+						i(175766),	-- Ilka's Hunting Cloak
+						i(175737),	-- Samu's Inkwell Pendant
+					},
+				}),
 			}),
-			crit(3, {	-- Dirty Jobs
-				["achievementID"] = 14798,	-- Sojourner of Revendreth
-				["collectible"] = false,
-				["g"] = {
-					q(60509, {	-- Not My Job
-						["sourceQuests"] = { 56942 },	-- On The Road Again
-						["provider"] = { "n", 158057 },	-- Rendle
-						["coord"] = { 67.5, 68.5, REVENDRETH },
-						["isBreadcrumb"] = true,
-					}),
-					q(57471, {	-- It's a Dirty Job
-						["sourceQuests"] = { 60509 },	-- Not My Job
-						["provider"] = { "n", 157846 },	-- Rendle
-						["coord"] = { 72.5, 73.2, REVENDRETH },
-						["altQuests"] = { 62190 },		-- It's a Dirty Job
-					}),
-					q(62190, {	-- It's a Dirty Job
-						["description"] = "This quest is available to players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
-						["sourceQuests"] = { 60509 },	-- Not My Job
-						["provider"] = { "n", 157846 },	-- Rendle
-						["coord"] = { 72.5, 73.2, REVENDRETH },
-						["altQuests"] = { 57471 },		-- It's a Dirty Job
-						["customCollect"] = "SL_COV_VEN",	-- Venthyr
-					}),
-					q(57474, {	-- Dredger Duty
-						["sourceQuests"] = { 57471 },	-- It's a Dirty Job
-						["provider"] = { "n", 157846 },	-- Rendle
-						["coord"] = { 72.5, 73.2, REVENDRETH },
-					}),
-					q(57477, {	-- We're Gonna Need a Bigger Dredger
-						["sourceQuests"] = { 57474 },	-- Dredger Duty
-						["provider"] = { "n", 157846 },	-- Rendle
-						["coord"] = { 72.5, 73.2, REVENDRETH },
-					}),
-					q(57481, {	-- Running a Muck
-						["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
-						["provider"] = { "n", 157898 },	-- Bootus
-						["coord"] = { 72.8, 73.9, REVENDRETH },
-						["g"] = {
-							i(177655),	-- Air Bootuses
-							i(177656),	-- Boot-a-Charge Flyers
-							i(177653),	-- Bootus Hardeneds
-							i(177654),	-- Bootus Shocks
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14798.03, {	-- Dirty Jobs
+				q(60509, {	-- Not My Job
+					["sourceQuests"] = { 56942 },	-- On The Road Again
+					["provider"] = { "n", 158057 },	-- Rendle
+					["coord"] = { 67.5, 68.5, REVENDRETH },
+					["isBreadcrumb"] = true,
+				}),
+				q(57471, {	-- It's a Dirty Job
+					["sourceQuests"] = { 60509 },	-- Not My Job
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, REVENDRETH },
+					["altQuests"] = { 62190 },		-- It's a Dirty Job
+				}),
+				q(62190, {	-- It's a Dirty Job
+					["description"] = "This quest is available to players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
+					["sourceQuests"] = { 60509 },	-- Not My Job
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, REVENDRETH },
+					["altQuests"] = { 57471 },		-- It's a Dirty Job
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+				}),
+				q(57474, {	-- Dredger Duty
+					["sourceQuests"] = { 57471 },	-- It's a Dirty Job
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, REVENDRETH },
+				}),
+				q(57477, {	-- We're Gonna Need a Bigger Dredger
+					["sourceQuests"] = { 57474 },	-- Dredger Duty
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, REVENDRETH },
+				}),
+				q(57481, {	-- Running a Muck
+					["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
+					["provider"] = { "n", 157898 },	-- Bootus
+					["coord"] = { 72.8, 73.9, REVENDRETH },
+					["g"] = {
+						i(177655),	-- Air Bootuses
+						i(177656),	-- Boot-a-Charge Flyers
+						i(177653),	-- Bootus Hardeneds
+						i(177654),	-- Bootus Shocks
+					},
+				}),
 			}),
-			crit(4, {	-- The Final Atonement
-				["achievementID"] = 14798,	-- Sojourner of Revendreth
-				["collectible"] = false,
-				["g"] = {
-					q(58093, {	-- Our Forgotten Purpose
-						["sourceQuests"] = { 58086 },	-- The Master of Lies
-						["provider"] = { "n", 160248 },	-- Archivist Fane
-						["coord"] = { 72.9, 52.0, REVENDRETH },
-						["altQuests"] = { 57918 },	-- The Absolution of Souls
-						["isBreadcrumb"] = true,
-					}),
-					q(57919, {	-- An Abuse of Power
-						["sourceQuests"] = {
-							58093,	-- Our Forgotten Purpose (neutral)
-							57918,	-- The Absolution of Souls (Venthyr)
-						},
-						["provider"] = { "n", 160116 },	-- The Accuser
-						["coord"] = { 71.7, 40.3, REVENDRETH },
-					}),
-					q(57922, {	-- The Proper Punishment
-						["sourceQuests"] = { 57919 },	-- An Abuse of Power
-						["provider"] = { "n", 160116 },	-- The Accuser
-						["coord"] = { 71.8, 40.3, REVENDRETH },
-					}),
-					q(57920, {	-- The Proper Souls
-						["sourceQuests"] = { 57919 },	-- An Abuse of Power
-						["provider"] = { "n", 160116 },	-- The Accuser
-						["coord"] = { 71.8, 40.3, REVENDRETH },
-					}),
-					q(57921, {	-- The Proper Tools
-						["sourceQuests"] = { 57919 },	-- An Abuse of Power
-						["provider"] = { "n", 160116 },	-- The Accuser
-						["coord"] = { 71.8, 40.3, REVENDRETH },
-					}),
-					q(57923, {	-- Ritual of Absolution
-						["sourceQuests"] = {
-							57922,	-- The Proper Punishment
-							57920,	-- The Proper Souls
-							57921,	-- The Proper Tools
-						},
-						["provider"] = { "n", 160139 },	-- The Accuser
-						["coord"] = { 70.7, 46.8, REVENDRETH },
-					}),
-					q(57924, {	-- Ritual of Judgment
-						["sourceQuests"] = { 57923 },	-- Ritual of Absolution
-						["provider"] = { "n", 160163 },	-- The Accuser
-						["coord"] = { 71.9, 46.3, REVENDRETH },
-					}),
-					q(57925, {	-- Archivist Fane
-						["sourceQuests"] = { 57924 },	-- Ritual of Judgment
-						["provider"] = { "n", 160294 },	-- The Accuser
-						["coord"] = { 74.2, 49.6, REVENDRETH },
-					}),
-					q(60127, {	-- Missing Stone Fiend
-						["sourceQuests"] = { 57925 },	-- Archivist Fane
-						["provider"] = { "n", 160248 },	-- Archivist Fane
-						["coord"] = { 73.0, 52.0, REVENDRETH },
-					}),
-					q(57927, {	-- Rebuilding Temel
-						["sourceQuests"] = { 60127 },	-- Missing Stone Fiend
-						["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
-						["coord"] = { 70.1, 56.1, REVENDRETH },
-					}),
-					q(60128, {	-- Ready to Serve
-						["sourceQuests"] = { 57927 },	-- Rebuilding Temel
-						["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
-						["coord"] = { 70.1, 56.1, REVENDRETH },
-					}),
-					q(57926, {	-- The Sinstone Archive
-						["sourceQuests"] = { 57925 },	-- Archivist Fane
-						["provider"] = { "n", 160248 },	-- Archivist Fane
-						["coord"] = { 73.0, 52.0, REVENDRETH },
-					}),
-					q(57929, {	-- Hunting an Inquisitor
-						["sourceQuests"] = {
-							60128,	-- Ready to Serve
-							57926,	-- The Sinstone Archive
-						},
-						["provider"] = { "n", 160248 },	-- Archivist Fane
-						["coord"] = { 73.0, 52.0, REVENDRETH },
-					}),
-					q(58092, {	-- Halls of Atonement: Your Absolution
-						["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
-						["provider"] = { "n", 160248 },	-- Archivist Fane
-						["coord"] = { 73.0, 52.0, REVENDRETH },
-						["maps"] = { 1663 },	-- Halls of Atonement
-						["g"] = {
-							i(184717),	-- Lord Chamberlain's Cloak
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14798.04, {	-- The Final Atonement
+				q(58093, {	-- Our Forgotten Purpose
+					["sourceQuests"] = { 58086 },	-- The Master of Lies
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 72.9, 52.0, REVENDRETH },
+					["altQuests"] = { 57918 },	-- The Absolution of Souls
+					["isBreadcrumb"] = true,
+				}),
+				q(57919, {	-- An Abuse of Power
+					["sourceQuests"] = {
+						58093,	-- Our Forgotten Purpose (neutral)
+						57918,	-- The Absolution of Souls (Venthyr)
+					},
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.7, 40.3, REVENDRETH },
+				}),
+				q(57922, {	-- The Proper Punishment
+					["sourceQuests"] = { 57919 },	-- An Abuse of Power
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.8, 40.3, REVENDRETH },
+				}),
+				q(57920, {	-- The Proper Souls
+					["sourceQuests"] = { 57919 },	-- An Abuse of Power
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.8, 40.3, REVENDRETH },
+				}),
+				q(57921, {	-- The Proper Tools
+					["sourceQuests"] = { 57919 },	-- An Abuse of Power
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.8, 40.3, REVENDRETH },
+				}),
+				q(57923, {	-- Ritual of Absolution
+					["sourceQuests"] = {
+						57922,	-- The Proper Punishment
+						57920,	-- The Proper Souls
+						57921,	-- The Proper Tools
+					},
+					["provider"] = { "n", 160139 },	-- The Accuser
+					["coord"] = { 70.7, 46.8, REVENDRETH },
+				}),
+				q(57924, {	-- Ritual of Judgment
+					["sourceQuests"] = { 57923 },	-- Ritual of Absolution
+					["provider"] = { "n", 160163 },	-- The Accuser
+					["coord"] = { 71.9, 46.3, REVENDRETH },
+				}),
+				q(57925, {	-- Archivist Fane
+					["sourceQuests"] = { 57924 },	-- Ritual of Judgment
+					["provider"] = { "n", 160294 },	-- The Accuser
+					["coord"] = { 74.2, 49.6, REVENDRETH },
+				}),
+				q(60127, {	-- Missing Stone Fiend
+					["sourceQuests"] = { 57925 },	-- Archivist Fane
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, REVENDRETH },
+				}),
+				q(57927, {	-- Rebuilding Temel
+					["sourceQuests"] = { 60127 },	-- Missing Stone Fiend
+					["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+					["coord"] = { 70.1, 56.1, REVENDRETH },
+				}),
+				q(60128, {	-- Ready to Serve
+					["sourceQuests"] = { 57927 },	-- Rebuilding Temel
+					["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+					["coord"] = { 70.1, 56.1, REVENDRETH },
+				}),
+				q(57926, {	-- The Sinstone Archive
+					["sourceQuests"] = { 57925 },	-- Archivist Fane
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, REVENDRETH },
+				}),
+				q(57929, {	-- Hunting an Inquisitor
+					["sourceQuests"] = {
+						60128,	-- Ready to Serve
+						57926,	-- The Sinstone Archive
+					},
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, REVENDRETH },
+				}),
+				q(58092, {	-- Halls of Atonement: Your Absolution
+					["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, REVENDRETH },
+					["maps"] = { 1663 },	-- Halls of Atonement
+					["g"] = {
+						i(184717),	-- Lord Chamberlain's Cloak
+					},
+				}),
 			}),
-			crit(5, {	-- Mirror Maker of the Master
-				["achievementID"] = 14798,	-- Sojourner of Revendreth
-				["collectible"] = false,
-				["g"] = {
-					q(57531, {	-- An Unfortunate Situation
-						["sourceQuests"] = { 60051 },	-- A Master of Their Craft
-						["provider"] = { "n", 158038 },	-- Laurent
-						["coord"] = { 26.3, 49.0, REVENDRETH },
-					}),
-					q(57532, {	-- Foraging for Fragments
-						["sourceQuests"] = { 57531 },	-- An Unfortunate Situation
-						["provider"] = { "n", 158038 },	-- Laurent
-						["coord"] = { 26.3, 49.0, REVENDRETH },
-					}),
-					q(57571, {	-- Moving Mirrors
-						["sourceQuests"] = { 57532 },	-- Foraging for Fragments
-						["provider"] = { "n", 158205 },	-- Laurent
-						["coord"] = { 24.2, 49.3, REVENDRETH },
-					}),
-					q(57533, {	-- Light Punishment
-						["sourceQuests"] = { 57571 },	-- Moving Mirrors
-						["provider"] = { "n", 158088 },	-- Simone
-						["coord"] = { 24.2, 49.4, REVENDRETH },
-					}),
-					q(57534, {	-- When Only Ash Remains
-						["sourceQuests"] = { 57571 },	-- Moving Mirrors
-						["provider"] = { "n", 158205 },	-- Laurent
-						["coord"] = { 24.2, 49.4, REVENDRETH },
-						["g"] = {
-							i(175507),	-- Bindings of Pained Absolution
-							i(175716),	-- Emberscorched Band
-							i(175510),	-- Nightcloaked Bracers
-							i(175509),	-- Soul Hunter's Wristguards
-							i(175508),	-- Stoneforged Wristguards
-						},
-					}),
-					q(57535, {	-- Escaping the Master
-						["sourceQuests"] = {
-							57533,	-- Light Punishment
-							57534,	-- When Only Ash Remains
-						},
-						["provider"] = { "n", 158205 },	-- Laurent
-						["coord"] = { 24.2, 49.4, REVENDRETH },
-					}),
-					q(59427, {	-- We Need More Power
-						["sourceQuests"] = {
-							57533,	-- Light Punishment
-							57534,	-- When Only Ash Remains
-						},
-						["provider"] = { "n", 158088 },	-- Simone
-						["coord"] = { 24.2, 49.4, REVENDRETH },
-					}),
-					q(57536, {	-- Mirror Making, Not Breaking
-						["sourceQuests"] = {
-							57535,	-- Escaping the Master
-							59427,	-- We Need More Power
-						},
-						["provider"] = { "n", 158205 },	-- Laurent
-						["coord"] = { 24.2, 49.4, REVENDRETH },
-						["g"] = {
-							i(175733),	-- Brimming Ember Shard
-							i(177657),	-- Overflowing Ember Mirror
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14798.05, {	-- Mirror Maker of the Master
+				q(57531, {	-- An Unfortunate Situation
+					["sourceQuests"] = { 60051 },	-- A Master of Their Craft
+					["provider"] = { "n", 158038 },	-- Laurent
+					["coord"] = { 26.3, 49.0, REVENDRETH },
+				}),
+				q(57532, {	-- Foraging for Fragments
+					["sourceQuests"] = { 57531 },	-- An Unfortunate Situation
+					["provider"] = { "n", 158038 },	-- Laurent
+					["coord"] = { 26.3, 49.0, REVENDRETH },
+				}),
+				q(57571, {	-- Moving Mirrors
+					["sourceQuests"] = { 57532 },	-- Foraging for Fragments
+					["provider"] = { "n", 158205 },	-- Laurent
+					["coord"] = { 24.2, 49.3, REVENDRETH },
+				}),
+				q(57533, {	-- Light Punishment
+					["sourceQuests"] = { 57571 },	-- Moving Mirrors
+					["provider"] = { "n", 158088 },	-- Simone
+					["coord"] = { 24.2, 49.4, REVENDRETH },
+				}),
+				q(57534, {	-- When Only Ash Remains
+					["sourceQuests"] = { 57571 },	-- Moving Mirrors
+					["provider"] = { "n", 158205 },	-- Laurent
+					["coord"] = { 24.2, 49.4, REVENDRETH },
+					["g"] = {
+						i(175507),	-- Bindings of Pained Absolution
+						i(175716),	-- Emberscorched Band
+						i(175510),	-- Nightcloaked Bracers
+						i(175509),	-- Soul Hunter's Wristguards
+						i(175508),	-- Stoneforged Wristguards
+					},
+				}),
+				q(57535, {	-- Escaping the Master
+					["sourceQuests"] = {
+						57533,	-- Light Punishment
+						57534,	-- When Only Ash Remains
+					},
+					["provider"] = { "n", 158205 },	-- Laurent
+					["coord"] = { 24.2, 49.4, REVENDRETH },
+				}),
+				q(59427, {	-- We Need More Power
+					["sourceQuests"] = {
+						57533,	-- Light Punishment
+						57534,	-- When Only Ash Remains
+					},
+					["provider"] = { "n", 158088 },	-- Simone
+					["coord"] = { 24.2, 49.4, REVENDRETH },
+				}),
+				q(57536, {	-- Mirror Making, Not Breaking
+					["sourceQuests"] = {
+						57535,	-- Escaping the Master
+						59427,	-- We Need More Power
+					},
+					["provider"] = { "n", 158205 },	-- Laurent
+					["coord"] = { 24.2, 49.4, REVENDRETH },
+					["g"] = {
+						i(175733),	-- Brimming Ember Shard
+						i(177657),	-- Overflowing Ember Mirror
+					},
+				}),
 			}),
-			crit(6, {	-- Revelations of the Light
-				["achievementID"] = 14798,	-- Sojourner of Revendreth
-				["collectible"] = false,
-				["g"] = {
-					q(60467, {	-- A Rousing Aroma
-						["provider"] = { "n", 168455 },	-- Sabina
-						["coord"] = { 35.0, 53.9, REVENDRETH },
-					}),
-					q(60468, {	-- Rubble Rummaging
-						["sourceQuests"] = { 60467 },	-- A Rousing Aroma
-						["provider"] = { "n", 168455 },	-- Sabina
-						["coord"] = { 35.0, 53.9, REVENDRETH },
-					}),
-					q(60469, {	-- Safe in the Shadows
-						["sourceQuests"] = { 60467 },	-- A Rousing Aroma
-						["provider"] = { "n", 168455 },	-- Sabina
-						["coord"] = { 35.0, 53.9, REVENDRETH },
-					}),
-					q(60470, {	-- Setting Sabina Free
-						["sourceQuests"] = {
-							60468,	-- Rubble Rummaging
-							60469,	-- Safe in the Shadows
-						},
-						["provider"] = { "n", 168455 },	-- Sabina
-						["coord"] = { 35.0, 53.9, REVENDRETH },
-						["g"] = {
-							i(175736),	-- Hopebreaker Pendant
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14798.06, {	-- Revelations of the Light
+				q(60467, {	-- A Rousing Aroma
+					["provider"] = { "n", 168455 },	-- Sabina
+					["coord"] = { 35.0, 53.9, REVENDRETH },
+				}),
+				q(60468, {	-- Rubble Rummaging
+					["sourceQuests"] = { 60467 },	-- A Rousing Aroma
+					["provider"] = { "n", 168455 },	-- Sabina
+					["coord"] = { 35.0, 53.9, REVENDRETH },
+				}),
+				q(60469, {	-- Safe in the Shadows
+					["sourceQuests"] = { 60467 },	-- A Rousing Aroma
+					["provider"] = { "n", 168455 },	-- Sabina
+					["coord"] = { 35.0, 53.9, REVENDRETH },
+				}),
+				q(60470, {	-- Setting Sabina Free
+					["sourceQuests"] = {
+						60468,	-- Rubble Rummaging
+						60469,	-- Safe in the Shadows
+					},
+					["provider"] = { "n", 168455 },	-- Sabina
+					["coord"] = { 35.0, 53.9, REVENDRETH },
+					["g"] = {
+						i(175736),	-- Hopebreaker Pendant
+					},
+				}),
 			}),
 			header(HEADERS.Item, 182589, {	-- Loyal Gorger
 				q(61839, {	-- Nipping at the Undergrowth
@@ -975,9 +951,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				q(57177, {	-- A Fresh Start
 					["description"] = "Probably have to be on quest 57175, Inquisitor Vilhelm's Sinstone for this to show up.",
 					["sourceQuests"] = { 59021 },	-- Herald Their Demise
+					["coord"] = { 65.2, 47.0, REVENDRETH },
 				}),
 				q(59211, {	-- Forgotten Village
 					["sourceQuests"] = { 60313 },	-- Dredhollow
+					["coord"] = { 42.0, 79.0, REVENDRETH },
 					["lvl"] = { 58, 59 },
 					["lockCriteria"] = { 1, "lvl", 60 },
 				}),
@@ -985,23 +963,51 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			n(BONUS_OBJECTIVES, sharedData({
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				["lockCriteria"] = { 1, "lvl", 60 },
 			}, bubbleDown({
-				["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
+				["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2 },
 			}, {
 				q(62781, {	-- Ash You Like It [Pre-60]
-					i(181334),	-- Essence Extractor
+					["coord"] = { 36.6, 56.0, REVENDRETH },
+					["g"] = {
+						i(181334),	-- Essence Extractor
+					},
 				}),
 				q(62784, {	-- Charlatans [Pre-60]
-					i(181185),	-- Soulstalker Breeches
+					["coord"] = { 72.0, 49.0, REVENDRETH },
+					["g"] = {
+						i(181189),	-- Darkwing Rebel's Striders
+						i(181179),	-- Sincollector's Leggings
+						i(181185),	-- Soulstalker Breeches
+						i(181200),	-- Stonewrought Legguards
+					}
 				}),
 				q(62780, {	-- Parasites of Reality [Pre-60]
-					i(181183),	-- Soulstalker Grips
+					["coord"] = { 67.2, 61.0, REVENDRETH },
+					["g"] = {
+						i(181194),	-- Darkwing Rebel's Cinch
+						i(181176),	-- Sincollector's Sandals
+						i(181183),	-- Soulstalker Grips
+						i(181199),	-- Stonewrought Gauntlets
+					}
 				}),
 				q(62783, {	-- Stalking Fear [Pre-60]
-					i(181187),	-- Soulstalker Bindings
+					["coord"] = { 41.6, 77.6, REVENDRETH },
+					["g"] = {
+						i(181195),	-- Darkwing Rebel's Bracers
+						i(181180),	-- Sincollector's Cord
+						i(181187),	-- Soulstalker Bindings
+						i(181203),	-- Stonewrought Armplates
+					}
 				}),
 				q(62782, {	-- The Banewood [Pre-60]
-					i(181184),	-- Soulstalker Helm
+					["coord"] = { 46.0, 67.0, REVENDRETH },
+					["g"] = {
+						i(181193),	-- Darkwing Rebel's Shoulderguards
+						i(181206),	-- Sincollector's Shoulderpads
+						i(181184),	-- Soulstalker Helm
+						i(181196),	-- Stonewrought Helm
+					}
 				}),
 			}))),
 		}),

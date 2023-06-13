@@ -795,7 +795,6 @@ for key,value in pairs({
 		[-1126] = "西部",												-- West
 		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
 		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
-		[-1140] = "瓦德拉肯联军",										-- Valdrakken Accord
 		[-1143] = "每30分钟稀有",										-- DF Rare Rotation (Every 30 min Rare)
 		[-1144] = "每周专业知识",										-- Weekly Profession Header
 		[-1150] = "峈姆鼹鼠人",											-- Loamm Niffen
@@ -824,8 +823,7 @@ if GetLocale() == "zhTW" then
 	a[-1101] = "洪荒風暴";												-- Primal Storms
 	a[-1110] = "龍鱗遠征隊";												-- Dragonscale Expedition
 	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
-	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarr
-	a[-1140] = "沃卓肯協調者";											-- Valdrakken Accord
+	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarrccord
 end
 
 -- Fall-back 'name' values for Quests based on QuestID

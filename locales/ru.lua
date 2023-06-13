@@ -763,7 +763,6 @@ for key,value in pairs({
 		[-1126] = "Запад",											-- West
 		[-1130] = "Искарские клыкарры",								-- Iskaara Tuskarr
 		[-1131] = "Искарское рыболовство",							-- Iskaara Fishing
-		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 		[-1143] = "Редкие DF по расписанию",						-- DF Rare Rotation
 		[-1144] = "Еженедельные Очки Знаний Профессий",				-- Weekly Profession Header
 		[-1150] = "Лоаммские ниффы",								-- Loamm Niffen

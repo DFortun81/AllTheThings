@@ -763,14 +763,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "i", TALLSTRIDER_SINEW, 10 },
 							},
 						}),
-						i(203302, {	-- Winding Slitherdrake: Purple and Silver Armor (DM!)
-							["timeline"] = { ADDED_10_1_0 },
-							["cost"] = {
-								{ "c", DRAGON_SUPPLIES, 750 },
-								{ "i", DRACONIUM_ORE, 20 },
-								{ "i", TALLSTRIDER_SINEW, 10 },
-							},
-						}),
 						i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
 						i(197099),	-- Highland Drake: Armor (DM!)
 						i(197357),	-- Renewed Proto-Drake: Armor (DM!)

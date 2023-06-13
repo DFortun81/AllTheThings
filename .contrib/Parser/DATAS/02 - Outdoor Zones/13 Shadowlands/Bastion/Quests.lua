@@ -521,358 +521,338 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				------ Continues in Maldraxxus ------
 			}),
-			crit(1, {	-- In Agthia's Memory
-				["achievementID"] = 14801,	-- Sojourner of Bastion
-				["collectible"] = false,
-				["g"] = {
-					q(59554, {	-- A Fine Journey
-						["sourceQuests"] = { 60735 },	-- Trouble in Paradise
-						["provider"] = { "o", 348558 },	-- Notice
-						["coord"] = { 51.9, 47.7, BASTION },
-						["isBreadcrumb"] = true,
-					}),
-					q(57549, {	-- In Agthia's Memory
-						["sourceQuests"] = { 59554 },	-- A Fine Journey
-						["provider"] = { "n", 158078 },	-- Keeper Mnemis
-						["coord"] = { 46.9, 63.4, BASTION },
-					}),
-					q(57551, {	-- Agthia's Path
-						["sourceQuests"] = { 57549 },	-- In Agthia's Memory
-						["provider"] = { "n", 158078 },	-- Keeper Mnemis
-						["coord"] = { 46.9, 63.4, BASTION },
-					}),
-					q(57553, {	-- On Wounded Wings
-						["sourceQuests"] = { 57551 },	-- Agthia's Path
-						["provider"] = { "n", 158178 },	-- Agthian Defender
-						["coord"] = { 46.4, 63.6, BASTION },
-					}),
-					q(57552, {	-- Warriors of the Void
-						["sourceQuests"] = { 57551 },	-- Agthia's Path
-						["provider"] = { "n", 158181 },	-- Agthia
-						["coord"] = { 46.5, 63.4, BASTION },
-					}),
-					q(57554, {	-- Wicked Gateways
-						["sourceQuests"] = { 57551 },	-- Agthia's Path
-						["provider"] = { "n", 158181 },	-- Agthia
-						["coord"] = { 46.5, 63.4, BASTION },
-					}),
-					q(57555, {	-- Shadow's Fall
-						["sourceQuests"] = {
-							57553,	-- On Wounded Wings
-							57552,	-- Warriors of the Void
-							57554,	-- Wicked Gateways
-						},
-						["provider"] = { "n", 158181 },	-- Agthia
-						["coord"] = { 46.5, 63.4, BASTION },
-						["g"] = {
-							i(175719),	-- Agitha's Void-Tinged Speartip
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14801.01, {	-- In Agthia's Memory
+				q(59554, {	-- A Fine Journey
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
+					["provider"] = { "o", 348558 },	-- Notice
+					["coord"] = { 51.9, 47.7, BASTION },
+					["isBreadcrumb"] = true,
+				}),
+				q(57549, {	-- In Agthia's Memory
+					["sourceQuests"] = { 59554 },	-- A Fine Journey
+					["provider"] = { "n", 158078 },	-- Keeper Mnemis
+					["coord"] = { 46.9, 63.4, BASTION },
+				}),
+				q(57551, {	-- Agthia's Path
+					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
+					["provider"] = { "n", 158078 },	-- Keeper Mnemis
+					["coord"] = { 46.9, 63.4, BASTION },
+				}),
+				q(57553, {	-- On Wounded Wings
+					["sourceQuests"] = { 57551 },	-- Agthia's Path
+					["provider"] = { "n", 158178 },	-- Agthian Defender
+					["coord"] = { 46.4, 63.6, BASTION },
+				}),
+				q(57552, {	-- Warriors of the Void
+					["sourceQuests"] = { 57551 },	-- Agthia's Path
+					["provider"] = { "n", 158181 },	-- Agthia
+					["coord"] = { 46.5, 63.4, BASTION },
+				}),
+				q(57554, {	-- Wicked Gateways
+					["sourceQuests"] = { 57551 },	-- Agthia's Path
+					["provider"] = { "n", 158181 },	-- Agthia
+					["coord"] = { 46.5, 63.4, BASTION },
+				}),
+				q(57555, {	-- Shadow's Fall
+					["sourceQuests"] = {
+						57553,	-- On Wounded Wings
+						57552,	-- Warriors of the Void
+						57554,	-- Wicked Gateways
+					},
+					["provider"] = { "n", 158181 },	-- Agthia
+					["coord"] = { 46.5, 63.4, BASTION },
+					["g"] = {
+						i(175719),	-- Agitha's Void-Tinged Speartip
+					},
+				}),
 			}),
-			crit(2, {	-- Wings of Freedom
-				["achievementID"] = 14801,	-- Sojourner of Bastion
-				["collectible"] = false,
-				["g"] = {
-					q(59262, {	-- Broken Wings
-						["sourceQuests"] = { 59773 },	-- Seek the Ascended
-						["provider"] = { "n", 164640 },	-- Kowalskos
-						["coord"] = { 42.8, 42.7, BASTION },
-					}),
-					q(59263, {	-- Feathers of Flight
-						["sourceQuests"] = { 59262 },	-- Broken Wings
-						["provider"] = { "n", 164640 },	-- Kowalskos
-						["coord"] = { 42.8, 42.7, BASTION },
-					}),
-					q(60660, {	-- Flight Test
-						["sourceQuests"] = { 59263 },	-- Feathers of Flight
-						["provider"] = { "n", 164640 },	-- Kowalskos
-						["coord"] = { 42.8, 42.7, BASTION },
-					}),
-					q(59348, {	-- More Wings!
-						["sourceQuests"] = { 60660 },	-- Flight Test
-						["provider"] = { "n", 164640 },	-- Kowalskos
-						["coord"] = { 42.8, 42.7, BASTION },
-					}),
-					q(59351, {	-- Strings and Things
-						["sourceQuests"] = { 60660 },	-- Flight Test
-						["provider"] = { "n", 164640 },	-- Kowalskos
-						["coord"] = { 42.8, 42.7, BASTION },
-					}),
-					q(59311, {	-- How to Catch a Glimmerfly
-						["sourceQuests"] = {
-							59348,	-- More Wings!
-							59351,	-- Strings and Things
-						},
-						["provider"] = { "n", 164640 },	-- Kowalskos
-						["coord"] = { 42.8, 42.7, BASTION },
-						["g"] = {
-							i(180839),	-- Helpful Glimmerfly (PET!)
-						},
-					}),
-					q(59865, {	-- Glimmerflight
-						["sourceQuests"] = { 59311 },	-- How to Catch a Glimmerfly
-						["provider"] = { "n", 164640 },	-- Kowalskos
-						["coord"] = { 42.82, 42.73, BASTION },
-						["g"] = {
-							i(177951),	-- Glimmerflies on Strings (TOY!)
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14801.02, {	-- Wings of Freedom
+				q(59262, {	-- Broken Wings
+					["sourceQuests"] = { 59773 },	-- Seek the Ascended
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, BASTION },
+				}),
+				q(59263, {	-- Feathers of Flight
+					["sourceQuests"] = { 59262 },	-- Broken Wings
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, BASTION },
+				}),
+				q(60660, {	-- Flight Test
+					["sourceQuests"] = { 59263 },	-- Feathers of Flight
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, BASTION },
+				}),
+				q(59348, {	-- More Wings!
+					["sourceQuests"] = { 60660 },	-- Flight Test
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, BASTION },
+				}),
+				q(59351, {	-- Strings and Things
+					["sourceQuests"] = { 60660 },	-- Flight Test
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, BASTION },
+				}),
+				q(59311, {	-- How to Catch a Glimmerfly
+					["sourceQuests"] = {
+						59348,	-- More Wings!
+						59351,	-- Strings and Things
+					},
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, BASTION },
+					["g"] = {
+						i(180839),	-- Helpful Glimmerfly (PET!)
+					},
+				}),
+				q(59865, {	-- Glimmerflight
+					["sourceQuests"] = { 59311 },	-- How to Catch a Glimmerfly
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.82, 42.73, BASTION },
+					["g"] = {
+						i(177951),	-- Glimmerflies on Strings (TOY!)
+					},
+				}),
 			}),
-			crit(3, {	-- In the Garden of Respite
-				["achievementID"] = 14801,	-- Sojourner of Bastion
-				["collectible"] = false,
-				["g"] = {
-					q(57529, {	-- Garden in Turmoil
-						["sourceQuests"] = { 60735 },	-- Trouble in Paradise
-						["provider"] = { "n", 158005 },	-- Tamesis
-						["coord"] = { 52.3, 61.3, BASTION },
-						["isBreadcrumb"] = true,
-					}),
-					q(57545, {	-- Distractions for Kala
-						["sourceQuests"] = { 57529 },	-- Garden in Turmoil
-						["provider"] = { "n", 158004 },	-- Zosime
-						["coord"] = { 51.3, 59.6, BASTION },
-					}),
-					q(57538, {	-- Disturbing the Peace
-						["sourceQuests"] = { 57529 },	-- Garden in Turmoil
-						["provider"] = { "n", 158004 },	-- Zosime
-						["coord"] = { 51.3, 59.6, BASTION },
-					}),
-					q(57547, {	-- A Test of Courage
-						["sourceQuests"] = {
-							57545,	-- Distractions for Kala
-							57538,	-- Disturbing the Peace
-						},
-						["provider"] = { "n", 158004 },	-- Zosime
-						["coord"] = { 51.3, 59.6, BASTION },
-					}),
-					q(57568, {	-- Tough Love
-						["sourceQuests"] = { 57547 },	-- A Test of Courage
-						["provider"] = { "n", 158004 },	-- Zosime
-						["coord"] = { 51.2, 56.8, BASTION },
-						["g"] = {
-							i(175616),	-- Courageous Aspirant's Gloves
-							i(175619),	-- Humble Aspirant's Gauntlets
-							i(175617),	-- Judicious Aspirant's Gauntlets
-							i(175618),	-- Pure Aspirant's Gloves
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14801.03, {	-- In the Garden of Respite
+				q(57529, {	-- Garden in Turmoil
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
+					["provider"] = { "n", 158005 },	-- Tamesis
+					["coord"] = { 52.3, 61.3, BASTION },
+					["isBreadcrumb"] = true,
+				}),
+				q(57545, {	-- Distractions for Kala
+					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.3, 59.6, BASTION },
+				}),
+				q(57538, {	-- Disturbing the Peace
+					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.3, 59.6, BASTION },
+				}),
+				q(57547, {	-- A Test of Courage
+					["sourceQuests"] = {
+						57545,	-- Distractions for Kala
+						57538,	-- Disturbing the Peace
+					},
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.3, 59.6, BASTION },
+				}),
+				q(57568, {	-- Tough Love
+					["sourceQuests"] = { 57547 },	-- A Test of Courage
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.2, 56.8, BASTION },
+					["g"] = {
+						i(175616),	-- Courageous Aspirant's Gloves
+						i(175619),	-- Humble Aspirant's Gauntlets
+						i(175617),	-- Judicious Aspirant's Gauntlets
+						i(175618),	-- Pure Aspirant's Gloves
+					},
+				}),
 			}),
-			crit(4, {	-- The Spear of Kalliope
-				["achievementID"] = 14801,	-- Sojourner of Bastion
-				["collectible"] = false,
-				["g"] = {
-					q(57860, {	-- How to Become Forsworn
-						["provider"] = { "n", 159248 },	-- Haetio
-						["coord"] = { 36.6, 37.6, BASTION },
-					}),
-					q(59207, {	-- Unshackled Knowledge
-						["provider"] = { "n", 159248 },	-- Haetio
-						["coord"] = { 36.6, 37.6, BASTION },
-					}),
-					q(57861, {	-- Just Act Natural
-						["sourceQuests"] = {
-							57860,	-- How to Become Forsworn
-							59207,	-- Unshackled Knowledge
-						},
-						["provider"] = { "n", 159248 },
-						["coord"] = { 36.6, 37.6, BASTION },
-					}),
-					q(57875, {	-- Mark of Humility
-						["sourceQuests"] = { 57861 },	-- Just Act Natural
-						["provider"] = { "n", 159272 },	-- Artificer Ligiea
-						["coord"] = { 42.7, 39.3, BASTION },
-					}),
-					q(57914, {	-- Mark of Knowledge
-						["sourceQuests"] = { 57861 },	-- Just Act Natural
-						["provider"] = { "n", 159272 },	-- Artificer Ligiea
-						["coord"] = { 42.7, 39.3, BASTION },
-					}),
-					q(57966, {	-- You Go First
-						["sourceQuests"] = {
-							57875,	-- Mark of Humility
-							57914,	-- Mark of Knowledge
-						},
-						["provider"] = { "n", 159272 },	-- Artificer Ligiea
-						["coord"] = { 43.1, 38.4, BASTION },
-					}),
-					q(57989, {	-- The Spear of Kalliope
-						["sourceQuests"] = { 57966 },	-- You Go First
-						["provider"] = { "n", 159272 },	-- Artificer Ligiea
-						["coord"] = { 61.8, 50.3, 1714 },	-- Third Chamber of Kalliope
-					}),
-					q(60906, {	-- Rightful Resting Place [Non-Kyrian]
-						["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
-						["provider"] = { "n", 159248 },	-- Haetio
-						["coord"] = { 43.2, 38.5, BASTION },
-					}),
-					q(57967, {	-- Rightful Resting Place [Kyrian]
-						["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
-						["provider"] = { "n", 159248 },	-- Haetio
-						["coord"] = { 43.2, 38.5, BASTION },
-						["customCollect"] = "SL_COV_KYR"
-					}),
-				},
+			header(HEADERS.AchCriteria, 14801.04, {	-- The Spear of Kalliope
+				q(57860, {	-- How to Become Forsworn
+					["provider"] = { "n", 159248 },	-- Haetio
+					["coord"] = { 36.6, 37.6, BASTION },
+				}),
+				q(59207, {	-- Unshackled Knowledge
+					["provider"] = { "n", 159248 },	-- Haetio
+					["coord"] = { 36.6, 37.6, BASTION },
+				}),
+				q(57861, {	-- Just Act Natural
+					["sourceQuests"] = {
+						57860,	-- How to Become Forsworn
+						59207,	-- Unshackled Knowledge
+					},
+					["provider"] = { "n", 159248 },
+					["coord"] = { 36.6, 37.6, BASTION },
+				}),
+				q(57875, {	-- Mark of Humility
+					["sourceQuests"] = { 57861 },	-- Just Act Natural
+					["provider"] = { "n", 159272 },	-- Artificer Ligiea
+					["coord"] = { 42.7, 39.3, BASTION },
+				}),
+				q(57914, {	-- Mark of Knowledge
+					["sourceQuests"] = { 57861 },	-- Just Act Natural
+					["provider"] = { "n", 159272 },	-- Artificer Ligiea
+					["coord"] = { 42.7, 39.3, BASTION },
+				}),
+				q(57966, {	-- You Go First
+					["sourceQuests"] = {
+						57875,	-- Mark of Humility
+						57914,	-- Mark of Knowledge
+					},
+					["provider"] = { "n", 159272 },	-- Artificer Ligiea
+					["coord"] = { 43.1, 38.4, BASTION },
+				}),
+				q(57989, {	-- The Spear of Kalliope
+					["sourceQuests"] = { 57966 },	-- You Go First
+					["provider"] = { "n", 159272 },	-- Artificer Ligiea
+					["coord"] = { 61.8, 50.3, 1714 },	-- Third Chamber of Kalliope
+				}),
+				q(60906, {	-- Rightful Resting Place [Non-Kyrian]
+					["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
+					["provider"] = { "n", 159248 },	-- Haetio
+					["coord"] = { 43.2, 38.5, BASTION },
+				}),
+				q(57967, {	-- Rightful Resting Place [Kyrian]
+					["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
+					["provider"] = { "n", 159248 },	-- Haetio
+					["coord"] = { 43.2, 38.5, BASTION },
+					["customCollect"] = "SL_COV_KYR"
+				}),
 			}),
-			crit(5, {	-- Pride or Unit
-				["achievementID"] = 14801,	-- Sojourner of Bastion
-				["collectible"] = false,
-				["g"] = {
-					q(59674, {	-- A Friendly Rivalry
-						["sourceQuests"] = { 60735 },	-- Trouble in Paradise
-						["provider"] = { "n", 158765 },	-- Pelodis
-						["coord"] = { 57.4, 54.2, BASTION },
-						["isBreadcrumb"] = true,
-						["altQuests"] = { 63068 },	-- Settling Disputes
-					}),
-					-- Nemea
-					q(58184, {	-- Antiquated Methodology
-						["description"] = "Only available if you complete all of Pelodis's quests before any of Nemea's quests.",
-						["sourceQuests"] = { 57937 },	-- Tactical Formation
-						["provider"] = { "n", 158765 },	-- Pelodis
-						["coord"] = { 54.7, 41.1, BASTION },
-						["isBreadcrumb"] = true,
-						["altQuests"] = { 58185 },	-- Success Without Soul
-					}),
-					q(58037, {	-- Part of the Pride
-						["sourceQuests"] = {
-							59674,	-- A Friendly Rivalry
-							63068,	-- Settling Disputes [Kyrian Only]
-							58184,	-- Antiquated Methodology
-						},
-						["provider"] = { "n", 157696 },	-- Nemea
-						["coord"] = { 57.2, 39.2, BASTION },
-					}),
-					q(58038, {	-- All Natural Chews
-						["sourceQuests"] = { 58037 },	-- Part of the Pride
-						["provider"] = { "n", 157696 },	-- Nemea
-						["coord"] = { 57.2, 39.2, BASTION },
-					}),
-					q(58039, {	-- Larion at Large
-						["sourceQuests"] = { 58037 },	-- Part of the Pride
-						["provider"] = { "n", 157696 },	-- Nemea
-						["coord"] = { 57.2, 39.2, BASTION },
-					}),
-					q(58040, {	-- With Lance and Larion
-						["sourceQuests"] = {
-							58038,	-- All Natural Chews
-							58039,	-- Larion at Large
-						},
-						["provider"] = { "n", 157696 },	-- Nemea
-						["coord"] = { 57.2, 39.2, BASTION },
-					}),
-					q(58041, {	-- Providing for the Pack
-						["sourceQuests"] = {
-							58038,	-- All Natural Chews
-							58039,	-- Larion at Large
-						},
-						["provider"] = { "n", 157696 },	-- Nemea
-						["coord"] = { 57.2, 39.2, BASTION },
-					}),
-					q(58042, {	-- On Larion Wings
-						["sourceQuests"] = {
-							58040,	-- With Lance and Larion
-							58041,	-- Providing for the Pack
-						},
-						["provider"] = { "n", 157696 },	-- Nemea
-						["coord"] = { 57.2, 39.2, BASTION },
-						["g"] = {
-							i(173335),	-- Courageous Aspirant's Breeches
-							i(173334),	-- Humble Aspirant's Leggings
-							i(173332),	-- Judicious Aspirant's Legguards
-							i(173333),	-- Pure Aspirant's Leggings
-						},
-					}),
-					-- Pelodis
-					q(58185, {	-- Success Without Soul
-						["description"] = "Only available if you complete all of Nemea's quests before any of Pelodis's quests.",
-						["sourceQuests"] = { 58042 },	-- On Larion Wings
-						["provider"] = { "n", 157696 },	-- Nemea
-						["coord"] = { 57.2, 39.2, BASTION },
-						["isBreadcrumb"] = true,
-						["altQuests"] = { 58184 },	-- Antiquated Methodology
-					}),
-					q(57931, {	-- Phalynx Malfunction
-						["sourceQuests"] = {
-							59674,	-- A Friendly Rivalry
-							63068,	-- Settling Disputes [Kyrian Only]
-							58185,	-- Success Without Soul
-						},
-						["provider"] = { "n", 158765 },	-- Pelodis
-						["coord"] = { 54.7, 41.1, BASTION },
-					}),
-					q(57932, {	-- Resource Drain
-						["sourceQuests"] = {
-							59674,	-- A Friendly Rivalry
-							58185,	-- Success Without Soul
-						},
-						["provider"] = { "n", 159609 },	-- Hopo
-						["coord"] = { 54.7, 41.2, BASTION },
-					}),
-					q(57933, {	-- We Can Rebuild Him
-						["sourceQuests"] = {
-							57931,	-- Phalynx Malfunction
-							57932,	-- Resource Drain
-						},
-						["provider"] = { "n", 158765 },	-- Pelodis
-						["coord"] = { 54.7, 41.1, BASTION },
-					}),
-					q(57934, {	-- Combat Drills
-						["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
-						["provider"] = { "n", 158765 },	-- Pelodis
-						["coord"] = { 54.7, 41.1, BASTION },
-					}),
-					q(57935, {	-- Laser Location
-						["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
-						["provider"] = { "n", 158765 },	-- Pelodis
-						["coord"] = { 54.7, 41.1, BASTION },
-					}),
-					q(57936, {	-- Superior Programming
-						["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
-						["provider"] = { "n", 159609 },	-- Hopo
-						["coord"] = { 54.7, 41.2, BASTION },
-						["g"] = {
-							i(175615),	-- Courageous Aspirant's Boots
-							i(175638),	-- Courageous Aspirant's Wristwraps
-							i(175614),	-- Humble Aspirant's Sabatons
-							i(175637),	-- Humble Aspirant's Wristwraps
-							i(175612),	-- Judicious Aspirant's Warboots
-							i(175636),	-- Judicious Aspirant's Wristwraps
-							i(175613),	-- Pure Aspirant's Treads
-							i(175635),	-- Pure Aspirant's Wristwraps
-						},
-					}),
-					q(57937, {	-- Tactical Formation
-						["sourceQuests"] = {
-							57934,	-- Combat Drills
-							57935,	-- Laser Location
-							57936,	-- Superior Programming
-						},
-						["provider"] = { "n", 158765 },	-- Pelodis
-						["coord"] = { 54.7, 41.1, BASTION },
-					}),
-					q(60296, {	-- Pride or Unit (Nemea - Larion)
-						["sourceQuests"] = {	-- requires completion of both chains.  both quests are available, it's just which NPC you want to pick it up from/which one you're nearest
-							58042,	-- On Larion Wings
-							57937,	-- Tactical Formation
-						},
-						["provider"] = { "n", 157696 },	-- Nemea
-						["coord"] = { 57.2, 39.2, BASTION },
-					}),
-					q(58103, {	-- Pride or Unit (Pelodis - Phalynx)
-						["sourceQuests"] = {	-- requires completion of both chains.  both quests are available, it's just which NPC you want to pick it up from/which one you're nearest
-							58042,	-- On Larion Wings
-							57937,	-- Tactical Formation
-						},
-						["provider"] = { "n", 158765 },	-- Pelodis
-						["coord"] = { 54.7, 41.1, BASTION },
-					}),
-				},
+			header(HEADERS.AchCriteria, 14801.05, {	-- Pride or Unit
+				q(59674, {	-- A Friendly Rivalry
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 57.4, 54.2, BASTION },
+					["isBreadcrumb"] = true,
+					["altQuests"] = { 63068 },	-- Settling Disputes
+				}),
+				-- Nemea
+				q(58184, {	-- Antiquated Methodology
+					["description"] = "Only available if you complete all of Pelodis's quests before any of Nemea's quests.",
+					["sourceQuests"] = { 57937 },	-- Tactical Formation
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, BASTION },
+					["isBreadcrumb"] = true,
+					["altQuests"] = { 58185 },	-- Success Without Soul
+				}),
+				q(58037, {	-- Part of the Pride
+					["sourceQuests"] = {
+						59674,	-- A Friendly Rivalry
+						63068,	-- Settling Disputes [Kyrian Only]
+						58184,	-- Antiquated Methodology
+					},
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, BASTION },
+				}),
+				q(58038, {	-- All Natural Chews
+					["sourceQuests"] = { 58037 },	-- Part of the Pride
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, BASTION },
+				}),
+				q(58039, {	-- Larion at Large
+					["sourceQuests"] = { 58037 },	-- Part of the Pride
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, BASTION },
+				}),
+				q(58040, {	-- With Lance and Larion
+					["sourceQuests"] = {
+						58038,	-- All Natural Chews
+						58039,	-- Larion at Large
+					},
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, BASTION },
+				}),
+				q(58041, {	-- Providing for the Pack
+					["sourceQuests"] = {
+						58038,	-- All Natural Chews
+						58039,	-- Larion at Large
+					},
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, BASTION },
+				}),
+				q(58042, {	-- On Larion Wings
+					["sourceQuests"] = {
+						58040,	-- With Lance and Larion
+						58041,	-- Providing for the Pack
+					},
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, BASTION },
+					["g"] = {
+						i(173335),	-- Courageous Aspirant's Breeches
+						i(173334),	-- Humble Aspirant's Leggings
+						i(173332),	-- Judicious Aspirant's Legguards
+						i(173333),	-- Pure Aspirant's Leggings
+					},
+				}),
+				-- Pelodis
+				q(58185, {	-- Success Without Soul
+					["description"] = "Only available if you complete all of Nemea's quests before any of Pelodis's quests.",
+					["sourceQuests"] = { 58042 },	-- On Larion Wings
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, BASTION },
+					["isBreadcrumb"] = true,
+					["altQuests"] = { 58184 },	-- Antiquated Methodology
+				}),
+				q(57931, {	-- Phalynx Malfunction
+					["sourceQuests"] = {
+						59674,	-- A Friendly Rivalry
+						63068,	-- Settling Disputes [Kyrian Only]
+						58185,	-- Success Without Soul
+					},
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, BASTION },
+				}),
+				q(57932, {	-- Resource Drain
+					["sourceQuests"] = {
+						59674,	-- A Friendly Rivalry
+						58185,	-- Success Without Soul
+					},
+					["provider"] = { "n", 159609 },	-- Hopo
+					["coord"] = { 54.7, 41.2, BASTION },
+				}),
+				q(57933, {	-- We Can Rebuild Him
+					["sourceQuests"] = {
+						57931,	-- Phalynx Malfunction
+						57932,	-- Resource Drain
+					},
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, BASTION },
+				}),
+				q(57934, {	-- Combat Drills
+					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, BASTION },
+				}),
+				q(57935, {	-- Laser Location
+					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, BASTION },
+				}),
+				q(57936, {	-- Superior Programming
+					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
+					["provider"] = { "n", 159609 },	-- Hopo
+					["coord"] = { 54.7, 41.2, BASTION },
+					["g"] = {
+						i(175615),	-- Courageous Aspirant's Boots
+						i(175638),	-- Courageous Aspirant's Wristwraps
+						i(175614),	-- Humble Aspirant's Sabatons
+						i(175637),	-- Humble Aspirant's Wristwraps
+						i(175612),	-- Judicious Aspirant's Warboots
+						i(175636),	-- Judicious Aspirant's Wristwraps
+						i(175613),	-- Pure Aspirant's Treads
+						i(175635),	-- Pure Aspirant's Wristwraps
+					},
+				}),
+				q(57937, {	-- Tactical Formation
+					["sourceQuests"] = {
+						57934,	-- Combat Drills
+						57935,	-- Laser Location
+						57936,	-- Superior Programming
+					},
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, BASTION },
+				}),
+				q(60296, {	-- Pride or Unit (Nemea - Larion)
+					["sourceQuests"] = {	-- requires completion of both chains.  both quests are available, it's just which NPC you want to pick it up from/which one you're nearest
+						58042,	-- On Larion Wings
+						57937,	-- Tactical Formation
+					},
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, BASTION },
+				}),
+				q(58103, {	-- Pride or Unit (Pelodis - Phalynx)
+					["sourceQuests"] = {	-- requires completion of both chains.  both quests are available, it's just which NPC you want to pick it up from/which one you're nearest
+						58042,	-- On Larion Wings
+						57937,	-- Tactical Formation
+					},
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, BASTION },
+				}),
 			}),
-			------ Gift Questline ------
+			------ Gift Storyline ------
 			q(60466, {	-- The Old Ways
 				["sourceQuests"] = {
 					57677,	-- A Soulbind in Need
@@ -980,7 +960,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}, bubbleDown({
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2 },
 			}, {
-				q(62737, {	-- Aspirant For a Day
+				q(62737, {	-- Aspirant For a Day [Pre-60]
 					["coord"] = { 54.1, 80.4, BASTION },
 					["g"] = {
 						i(181571),	-- Spiritmender's Handwraps
@@ -989,13 +969,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(181608),	-- Shieldguard's Gauntlets
 					},
 				}),
-				q(62735, {	-- Hostile Recollection
+				q(62735, {	-- Hostile Recollection [Pre-60]
 					["coord"] = { 56.9, 59.9, BASTION },
 					["g"] = {
 						i(181703),	-- Skychime Necklace
 					},
 				}),
-				q(62732, {	-- Locus Focus
+				q(62732, {	-- Locus Focus [Pre-60]
 					["coord"] = { 54.7, 64.1, BASTION },
 					["g"] = {
 						i(181575),	-- Spiritmender's Cord
@@ -1004,7 +984,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(181612),	-- Shieldguard's Girdle
 					},
 				}),
-				q(62736, {	-- Maldraxxi Eviction Notice
+				q(62736, {	-- Maldraxxi Eviction Notice [Pre-60]
 					["coord"] = { 40.4, 53.6, BASTION },
 					["g"] = {
 						i(181569),	-- Spiritmender's Robe
@@ -1013,7 +993,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(181605),	-- Shieldguard's Breastplate
 					},
 				}),
-				q(62705, {	-- Scour the Temple
+				q(62705, {	-- Scour the Temple [Pre-60]
 					["coord"] = { 58.4, 75.2, BASTION },
 					["g"] = {
 						i(181721),	-- Ascendent Valor Signet

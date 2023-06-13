@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ARDENWEALD, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14164, {	-- Awaken, Ardenweald
@@ -471,308 +471,284 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				}),
 				------ Continues in Revendreth ------
 			}),
-			crit(1, {	-- Thread of Hope
-				["achievementID"] = 14800,	-- Sojourner of Ardenweald
-				["collectible"] = false,
-				["g"] = {
-					q(57661, {	-- Silk Shortage
-						["provider"] = { "n", 158556 },	-- Aithlyn
-						["coord"] = { 59.5, 31.5, ARDENWEALD },
-					}),
-					q(60062, {	-- The Shattered Harp
-						["sourceQuests"] = { 57661 },	-- Silk Shortage
-						["provider"] = { "o", 350804 },	-- Broken Harp
-						["coord"] = { 38.1, 28.7, ARDENWEALD },
-					}),
-					q(60063, {	-- A Song for Silkstriders
-						["sourceQuests"] = { 60062 },	-- The Shattered Harp
-						["provider"] = { "n", 167047 },	-- Artisan Rees
-						["coord"] = { 37.0, 29.6, ARDENWEALD },
-					}),
-					q(60064, {	-- Save Ol' Gertie
-						["sourceQuests"] = { 60062 },	-- The Shattered Harp
-						["provider"] = { "n", 167047 },	-- Artisan Rees
-						["coord"] = { 37.0, 29.6, ARDENWEALD },
-					}),
-					q(60065, {	-- Thread of Hope
-						["sourceQuests"] = { 60064 },	-- Save Ol' Gertie
-						["provider"] = { "n", 159388 },	-- Gertie Jr.
-						["coord"] = { 37.2, 25.9, ARDENWEALD },
-					}),
-					q(60061, {	-- Tough as Silk
-						["sourceQuests"] = { 57661 },	-- Silk Shortage
-						["provider"] = { "n", 159270 },	-- Caretaker Lillythistle
-						["coord"] = { 38.9, 29.9, ARDENWEALD },
-					}),
-					q(60066, {	-- Silk for Ardenweald
-						["sourceQuests"] = {
-							60063,	-- A Song for Silkstriders
-							60065,	-- Thread of Hope
-							60061,	-- Tough as Silk
-						},
-						["provider"] = { "n", 159270 },	-- Caretaker Lillythistle
-						["coord"] = { 39.0, 29.9, ARDENWEALD },
-					}),
-				},
+			header(HEADERS.AchCriteria, 14800.01, {	-- Thread of Hope
+				q(57661, {	-- Silk Shortage
+					["provider"] = { "n", 158556 },	-- Aithlyn
+					["coord"] = { 59.5, 31.5, ARDENWEALD },
+				}),
+				q(60062, {	-- The Shattered Harp
+					["sourceQuests"] = { 57661 },	-- Silk Shortage
+					["provider"] = { "o", 350804 },	-- Broken Harp
+					["coord"] = { 38.1, 28.7, ARDENWEALD },
+				}),
+				q(60063, {	-- A Song for Silkstriders
+					["sourceQuests"] = { 60062 },	-- The Shattered Harp
+					["provider"] = { "n", 167047 },	-- Artisan Rees
+					["coord"] = { 37.0, 29.6, ARDENWEALD },
+				}),
+				q(60064, {	-- Save Ol' Gertie
+					["sourceQuests"] = { 60062 },	-- The Shattered Harp
+					["provider"] = { "n", 167047 },	-- Artisan Rees
+					["coord"] = { 37.0, 29.6, ARDENWEALD },
+				}),
+				q(60065, {	-- Thread of Hope
+					["sourceQuests"] = { 60064 },	-- Save Ol' Gertie
+					["provider"] = { "n", 159388 },	-- Gertie Jr.
+					["coord"] = { 37.2, 25.9, ARDENWEALD },
+				}),
+				q(60061, {	-- Tough as Silk
+					["sourceQuests"] = { 57661 },	-- Silk Shortage
+					["provider"] = { "n", 159270 },	-- Caretaker Lillythistle
+					["coord"] = { 38.9, 29.9, ARDENWEALD },
+				}),
+				q(60066, {	-- Silk for Ardenweald
+					["sourceQuests"] = {
+						60063,	-- A Song for Silkstriders
+						60065,	-- Thread of Hope
+						60061,	-- Tough as Silk
+					},
+					["provider"] = { "n", 159270 },	-- Caretaker Lillythistle
+					["coord"] = { 39.0, 29.9, ARDENWEALD },
+				}),
 			}),
-			crit(2, {	-- When a Gorm Eats a God
-				["achievementID"] = 14800,	-- Sojourner of Ardenweald
-				["collectible"] = false,
-				["g"] = {
-					q(57952, {	-- In Need of Gorm Gris
-						["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
-						["provider"] = { "n", 158921 },	-- Guardian Kota
-						["coord"] = { 62.6, 36.0, ARDENWEALD },
-					}),
-					q(57818, {	-- Nothing Goes to Waste
-						["sourceQuests"] = { 57952 },	-- In Need of Gorm Gris
-						["provider"] = { "n", 158969 },	-- Master Sha'lor
-						["coord"] = { 64.8, 38.9, ARDENWEALD },
-					}),
-					q(57824, {	-- Collection Day
-						["sourceQuests"] = { 57818 },	-- Nothing Goes to Waste
-						["provider"] = { "n", 158969 },	-- Master Sha'lor
-						["coord"] = { 64.8, 38.9, ARDENWEALD },
-					}),
-					q(57825, {	-- Delivery for Guardian Kota
-						["sourceQuests"] = { 57824 },	-- Collection Day
-						["provider"] = { "n", 158969 },	-- Master Sha'lor
-						["coord"] = { 64.8, 38.9, ARDENWEALD },
-						["g"] = {
-							i(175741),	-- Gormgris Gorget
-						},
-					}),
-					q(61051, {	-- The Absent-Minded Artisan
-						["sourceQuests"] = { 57825 },	-- Delivery for Guardian Kota
-						["provider"] = { "n", 158921 },	-- Guardian Kota
-						["coord"] = { 62.6, 36.0, ARDENWEALD },
-					}),
-					q(58024, {	-- Burrows Away
-						["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
-						["provider"] = { "n", 171195 },	-- Gorm Burrow
-						["coord"] = { 62.1, 29.9, ARDENWEALD },
-					}),
-					q(58022, {	-- Finish What He Started
-						["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
-						["provider"] = { "n", 171099 },	-- Guardian Kota
-						["coord"] = { 62.8, 32.1, ARDENWEALD },
-					}),
-					q(58023, {	-- One Big Problem
-						["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
-						["provider"] = { "n", 171099 },	-- Guardian Kota
-						["coord"] = { 62.8, 32.1, ARDENWEALD },
-					}),
-					q(58025, {	-- Queen of the Underground
-						["sourceQuests"] = { 58023 },	-- One Big Problem
-						["provider"] = { "n", 160155 },	-- Guardian Kota
-						["coord"] = { 59.6, 33.4, ARDENWEALD },
-					}),
-					q(58026, {	-- When a Gorm Eats a God
-						["sourceQuests"] = { 58025 },	-- Queen of the Underground
-						["provider"] = { "n", 160155 },	-- Guardian Kota
-						["coord"] = { 59.6, 33.4, ARDENWEALD },
-						["g"] = {
-							i(175665),	-- Dreamthorn Legguards
-							i(175663),	-- Grove Warden's Greaves
-							i(175664),	-- Spirit Tender's Leggings
-							i(175666),	-- Starshroud Breeches
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14800.02, {	-- When a Gorm Eats a God
+				q(57952, {	-- In Need of Gorm Gris
+					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
+					["provider"] = { "n", 158921 },	-- Guardian Kota
+					["coord"] = { 62.6, 36.0, ARDENWEALD },
+				}),
+				q(57818, {	-- Nothing Goes to Waste
+					["sourceQuests"] = { 57952 },	-- In Need of Gorm Gris
+					["provider"] = { "n", 158969 },	-- Master Sha'lor
+					["coord"] = { 64.8, 38.9, ARDENWEALD },
+				}),
+				q(57824, {	-- Collection Day
+					["sourceQuests"] = { 57818 },	-- Nothing Goes to Waste
+					["provider"] = { "n", 158969 },	-- Master Sha'lor
+					["coord"] = { 64.8, 38.9, ARDENWEALD },
+				}),
+				q(57825, {	-- Delivery for Guardian Kota
+					["sourceQuests"] = { 57824 },	-- Collection Day
+					["provider"] = { "n", 158969 },	-- Master Sha'lor
+					["coord"] = { 64.8, 38.9, ARDENWEALD },
+					["g"] = {
+						i(175741),	-- Gormgris Gorget
+					},
+				}),
+				q(61051, {	-- The Absent-Minded Artisan
+					["sourceQuests"] = { 57825 },	-- Delivery for Guardian Kota
+					["provider"] = { "n", 158921 },	-- Guardian Kota
+					["coord"] = { 62.6, 36.0, ARDENWEALD },
+				}),
+				q(58024, {	-- Burrows Away
+					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
+					["provider"] = { "n", 171195 },	-- Gorm Burrow
+					["coord"] = { 62.1, 29.9, ARDENWEALD },
+				}),
+				q(58022, {	-- Finish What He Started
+					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
+					["provider"] = { "n", 171099 },	-- Guardian Kota
+					["coord"] = { 62.8, 32.1, ARDENWEALD },
+				}),
+				q(58023, {	-- One Big Problem
+					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
+					["provider"] = { "n", 171099 },	-- Guardian Kota
+					["coord"] = { 62.8, 32.1, ARDENWEALD },
+				}),
+				q(58025, {	-- Queen of the Underground
+					["sourceQuests"] = { 58023 },	-- One Big Problem
+					["provider"] = { "n", 160155 },	-- Guardian Kota
+					["coord"] = { 59.6, 33.4, ARDENWEALD },
+				}),
+				q(58026, {	-- When a Gorm Eats a God
+					["sourceQuests"] = { 58025 },	-- Queen of the Underground
+					["provider"] = { "n", 160155 },	-- Guardian Kota
+					["coord"] = { 59.6, 33.4, ARDENWEALD },
+					["g"] = {
+						i(175665),	-- Dreamthorn Legguards
+						i(175663),	-- Grove Warden's Greaves
+						i(175664),	-- Spirit Tender's Leggings
+						i(175666),	-- Starshroud Breeches
+					},
+				}),
 			}),
-			crit(3, {	-- Trouble at the Gormling Corral
-				["achievementID"] = 14800,	-- Sojourner of Ardenweald
-				["collectible"] = false,
-				["g"] = {
-					q(57660, {	-- The Grove of Creation
-						["sourceQuests"] = { 58026 },	-- When a Gorm Eats a God
-						["provider"] = { "n", 160121 },	-- Master Sha'lor
-						["coord"] = { 62.9, 36.2, ARDENWEALD },
-						["isBreadcrumb"] = true,
-					}),
-					q(57651, {	-- Trouble in the Banks
-						["sourceQuests"] = { 57660 },	-- The Grove of Creation
-						["provider"] = { "n", 158345 },	-- Lady of the Falls
-						["coord"] = { 51.1, 33.8, ARDENWEALD },
-					}),
-					q(59621, {	-- Breaking A Few Eggs
-						["sourceQuests"] = { 57651 },	-- Trouble in the Banks
-						["provider"] = { "n", 158422 },	-- Foreman Thorodir
-						["coord"] = { 46.6, 29.4, ARDENWEALD },
-					}),
-					q(59622, {	-- Tending to the Tenders
-						["sourceQuests"] = { 57651 },	-- Trouble in the Banks
-						["provider"] = { "n", 158422 },	-- Foreman Thorodir
-						["coord"] = { 46.6, 29.4, ARDENWEALD },
-					}),
-					q(57653, {	-- Unsafe Workplace
-						["sourceQuests"] = {
-							59621,	-- Breaking A Few Eggs
-							59622,	-- Tending to the Tenders
-						},
-						["provider"] = { "n", 158422 },	-- Foreman Thorodir
-						["coord"] = { 46.6, 29.4, ARDENWEALD },
-					}),
-					q(57656, {	-- Gifts of the Forest
-						["sourceQuests"] = {
-							59621,	-- Breaking a Few Eggs
-							59622,	-- Tending to the Tenders
-						},
-						["provider"] = { "n", 158489 },	-- Fluttercatch
-						["coord"] = { 48.0, 24.3, ARDENWEALD },
-					}),
-					q(57657, {	-- Tied Totem Toter
-						["sourceQuests"] = { 57656 },	-- Gifts of the Forest
-						["provider"] = { "n", 158489 },	-- Fluttercatch
-						["coord"] = { 48.0, 24.3, ARDENWEALD },
-					}),
-					q(59656, {	-- Well, Tell the Lady
-						["sourceQuests"] = {
-							57657,	-- Tied Totem Toter
-							57653,	-- Unsafe Workplace
-						},
-						["provider"] = { "n", 158422 },	-- Foreman Thorodir
-						["coord"] = { 46.6, 29.4, ARDENWEALD },
-					}),
-				},
+			header(HEADERS.AchCriteria, 14800.03, {	-- Trouble at the Gormling Corral
+				q(57660, {	-- The Grove of Creation
+					["sourceQuests"] = { 58026 },	-- When a Gorm Eats a God
+					["provider"] = { "n", 160121 },	-- Master Sha'lor
+					["coord"] = { 62.9, 36.2, ARDENWEALD },
+					["isBreadcrumb"] = true,
+				}),
+				q(57651, {	-- Trouble in the Banks
+					["sourceQuests"] = { 57660 },	-- The Grove of Creation
+					["provider"] = { "n", 158345 },	-- Lady of the Falls
+					["coord"] = { 51.1, 33.8, ARDENWEALD },
+				}),
+				q(59621, {	-- Breaking A Few Eggs
+					["sourceQuests"] = { 57651 },	-- Trouble in the Banks
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, ARDENWEALD },
+				}),
+				q(59622, {	-- Tending to the Tenders
+					["sourceQuests"] = { 57651 },	-- Trouble in the Banks
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, ARDENWEALD },
+				}),
+				q(57653, {	-- Unsafe Workplace
+					["sourceQuests"] = {
+						59621,	-- Breaking A Few Eggs
+						59622,	-- Tending to the Tenders
+					},
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, ARDENWEALD },
+				}),
+				q(57656, {	-- Gifts of the Forest
+					["sourceQuests"] = {
+						59621,	-- Breaking a Few Eggs
+						59622,	-- Tending to the Tenders
+					},
+					["provider"] = { "n", 158489 },	-- Fluttercatch
+					["coord"] = { 48.0, 24.3, ARDENWEALD },
+				}),
+				q(57657, {	-- Tied Totem Toter
+					["sourceQuests"] = { 57656 },	-- Gifts of the Forest
+					["provider"] = { "n", 158489 },	-- Fluttercatch
+					["coord"] = { 48.0, 24.3, ARDENWEALD },
+				}),
+				q(59656, {	-- Well, Tell the Lady
+					["sourceQuests"] = {
+						57657,	-- Tied Totem Toter
+						57653,	-- Unsafe Workplace
+					},
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, ARDENWEALD },
+				}),
 			}),
-			crit(4, {	-- Tricky Spriggans
-				["achievementID"] = 14800,	-- Sojourner of Ardenweald
-				["collectible"] = false,
-				["g"] = {
-					q(57865, {	-- Ages-Echoing Wisdom
-						["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
-						["provider"] = { "n", 158345 },	-- Lady of the Falls
-						["coord"] = { 51.1, 33.8, ARDENWEALD },
-					}),
-					q(57866, {	-- Idle Hands
-						["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
-						["provider"] = { "n", 158345 },	-- Lady of the Falls
-						["coord"] = { 51.1, 33.8, ARDENWEALD },
-					}),
-					q(57868, {	-- Craftsman Needs No Tools
-						["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
-						["provider"] = { "n", 159427 },	-- Elder Finnan
-						["coord"] = { 55.8, 23.4, ARDENWEALD },
-					}),
-					q(57869, {	-- Spirit-Gathering Labor
-						["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
-						["provider"] = { "n", 159428 },	-- Groonoomcrooek
-						["coord"] = { 56.4, 29.2, ARDENWEALD },
-					}),
-					q(57867, {	-- The Sweat of Our Brow
-						["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
-						["provider"] = { "n", 160045 },	-- Helpful Faerie
-						["coord"] = { 53.8, 27.5, ARDENWEALD },
-					}),
-					q(57870, {	-- The Games We Play
-						["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
-						["provider"] = { "n", 159465 },	-- Elder Gwenna
-						["coord"] = { 59.0, 24.3, ARDENWEALD },
-					}),
-					q(57871, {	-- Outplayed
-						["sourceQuests"] = { 57870 },	-- The Games We Play
-						["provider"] = { "n", 159465 },	-- Elder Gwenna
-						["coord"] = { 59.0, 24.3, ARDENWEALD },
-						["g"] = {
-							i(183849),	-- Soulsifter Root
-							i(183850),	-- Wakener's Frond
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14800.04, {	-- Tricky Spriggans
+				q(57865, {	-- Ages-Echoing Wisdom
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 158345 },	-- Lady of the Falls
+					["coord"] = { 51.1, 33.8, ARDENWEALD },
+				}),
+				q(57866, {	-- Idle Hands
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 158345 },	-- Lady of the Falls
+					["coord"] = { 51.1, 33.8, ARDENWEALD },
+				}),
+				q(57868, {	-- Craftsman Needs No Tools
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 159427 },	-- Elder Finnan
+					["coord"] = { 55.8, 23.4, ARDENWEALD },
+				}),
+				q(57869, {	-- Spirit-Gathering Labor
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 159428 },	-- Groonoomcrooek
+					["coord"] = { 56.4, 29.2, ARDENWEALD },
+				}),
+				q(57867, {	-- The Sweat of Our Brow
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 160045 },	-- Helpful Faerie
+					["coord"] = { 53.8, 27.5, ARDENWEALD },
+				}),
+				q(57870, {	-- The Games We Play
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 159465 },	-- Elder Gwenna
+					["coord"] = { 59.0, 24.3, ARDENWEALD },
+				}),
+				q(57871, {	-- Outplayed
+					["sourceQuests"] = { 57870 },	-- The Games We Play
+					["provider"] = { "n", 159465 },	-- Elder Gwenna
+					["coord"] = { 59.0, 24.3, ARDENWEALD },
+					["g"] = {
+						i(183849),	-- Soulsifter Root
+						i(183850),	-- Wakener's Frond
+					},
+				}),
 			}),
-			crit(5, {	-- An Ominous Stone
-				["achievementID"] = 14800,	-- Sojourner of Ardenweald
-				["collectible"] = false,
-				["g"] = {
-					q(58161, {	-- Forest Disappearances
-						["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
-						["provider"] = { "n", 160440 },	-- Brigdin
-						["coord"] = { 64.4, 35.2, ARDENWEALD },
-					}),
-					q(58163, {	-- A Desperate Solution
-						["sourceQuests"] = { 58161 },	-- Forest Disappearances
-						["provider"] = { "o", 349515 },	-- Battered Journal
-						["coord"] = { 72.2, 33.9, ARDENWEALD },
-						["g"] = {
-							i(183851),	-- Withergrove Shardling
-						},
-					}),
-					q(58164, {	-- Cult of Personality
-						["sourceQuests"] = { 58161 },	-- Forest Disappearances
-						["provider"] = { "n", 160439 },	-- Partik
-						["coord"] = { 70.3, 32.5, ARDENWEALD },
-					}),
-					q(58162, {	-- Mysterious Masks
-						["sourceQuests"] = { 58161 },	-- Forest Disappearances
-						["provider"] = { "n", 160439 },	-- Partik
-						["coord"] = { 70.3, 32.5, ARDENWEALD },
-					}),
-					q(59802, {	-- The Crumbling Village
-						["sourceQuests"] = {
-							58163,	-- A Desperate Solution
-							58164,	-- Cult of Personality
-							58162,	-- Mysterious Masks
-						},
-						["provider"] = { "n", 160439 },	-- Partik
-						["coord"] = { 70.3, 32.5, ARDENWEALD },
-					}),
-					q(58165, {	-- Cut the Roots
-						["sourceQuests"] = { 59802 },	-- The Crumbling Village
-						["provider"] = { "n", 160439 },	-- Partik
-						["coord"] = { 74.3, 32.3, ARDENWEALD },
-					}),
-					q(59801, {	-- Take the Power
-						["sourceQuests"] = { 59802 },	-- The Crumbling Village
-						["provider"] = { "n", 160439 },	-- Partik
-						["coord"] = { 74.3, 32.3, ARDENWEALD },
-					}),
-					q(58166, {	-- Unknown Assailants
-						["sourceQuests"] = {
-							58165,	-- Cut the Roots
-							59801,	-- Take the Power
-						},
-						["provider"] = { "n", 160439 },	-- Partik
-						["coord"] = { 74.3, 32.3, ARDENWEALD },
-						["g"] = {
-							i(175677),	-- Dreamthorn Wristguards
-							i(175676),	-- Grove Warden's Vambraces
-							i(175675),	-- Spirit Tender's Cuffs
-							i(175678),	-- Starshroud Bracers
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14800.05, {	-- An Ominous Stone
+				q(58161, {	-- Forest Disappearances
+					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
+					["provider"] = { "n", 160440 },	-- Brigdin
+					["coord"] = { 64.4, 35.2, ARDENWEALD },
+				}),
+				q(58163, {	-- A Desperate Solution
+					["sourceQuests"] = { 58161 },	-- Forest Disappearances
+					["provider"] = { "o", 349515 },	-- Battered Journal
+					["coord"] = { 72.2, 33.9, ARDENWEALD },
+					["g"] = {
+						i(183851),	-- Withergrove Shardling
+					},
+				}),
+				q(58164, {	-- Cult of Personality
+					["sourceQuests"] = { 58161 },	-- Forest Disappearances
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 70.3, 32.5, ARDENWEALD },
+				}),
+				q(58162, {	-- Mysterious Masks
+					["sourceQuests"] = { 58161 },	-- Forest Disappearances
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 70.3, 32.5, ARDENWEALD },
+				}),
+				q(59802, {	-- The Crumbling Village
+					["sourceQuests"] = {
+						58163,	-- A Desperate Solution
+						58164,	-- Cult of Personality
+						58162,	-- Mysterious Masks
+					},
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 70.3, 32.5, ARDENWEALD },
+				}),
+				q(58165, {	-- Cut the Roots
+					["sourceQuests"] = { 59802 },	-- The Crumbling Village
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 74.3, 32.3, ARDENWEALD },
+				}),
+				q(59801, {	-- Take the Power
+					["sourceQuests"] = { 59802 },	-- The Crumbling Village
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 74.3, 32.3, ARDENWEALD },
+				}),
+				q(58166, {	-- Unknown Assailants
+					["sourceQuests"] = {
+						58165,	-- Cut the Roots
+						59801,	-- Take the Power
+					},
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 74.3, 32.3, ARDENWEALD },
+					["g"] = {
+						i(175677),	-- Dreamthorn Wristguards
+						i(175676),	-- Grove Warden's Vambraces
+						i(175675),	-- Spirit Tender's Cuffs
+						i(175678),	-- Starshroud Bracers
+					},
+				}),
 			}),
-			crit(6, {	-- Wicked Plan
-				["achievementID"] = 14800,	-- Sojourner of Ardenweald
-				["collectible"] = false,
-				["g"] = {
-					q(58265, {	-- Blooming Villains
-						["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
-						["provider"] = { "n", 160929 },	-- Guardian Molan
-						["coord"] = { 60.6, 51.3, ARDENWEALD },
-					}),
-					q(58266, {	-- Break It Down
-						["sourceQuests"] = { 58265 },	-- Blooming Villains
-						["provider"] = { "n", 160749 },	-- Primrose
-						["coord"] = { 53.4, 58.7, ARDENWEALD },
-					}),
-					q(58264, {	-- Wake Up, Get Up, Get Out There
-						["sourceQuests"] = { 58265 },	-- Blooming Villains
-						["provider"] = { "n", 160749 },	-- Primrose
-						["coord"] = { 53.4, 58.7, ARDENWEALD },
-					}),
-					q(58267, {	-- Beneath the Mask
-						["sourceQuests"] = {
-							58266,	-- Break it Down
-							58264,	-- Wake Up, Get Up, Get Out There
-						},
-						["provider"] = { "n", 160757 },	-- Primrose
-						["g"] = {
-							i(175712),	-- Shimmerbough Loop
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 14800.06, {	-- Wicked Plan
+				q(58265, {	-- Blooming Villains
+					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
+					["provider"] = { "n", 160929 },	-- Guardian Molan
+					["coord"] = { 60.6, 51.3, ARDENWEALD },
+				}),
+				q(58266, {	-- Break It Down
+					["sourceQuests"] = { 58265 },	-- Blooming Villains
+					["provider"] = { "n", 160749 },	-- Primrose
+					["coord"] = { 53.4, 58.7, ARDENWEALD },
+				}),
+				q(58264, {	-- Wake Up, Get Up, Get Out There
+					["sourceQuests"] = { 58265 },	-- Blooming Villains
+					["provider"] = { "n", 160749 },	-- Primrose
+					["coord"] = { 53.4, 58.7, ARDENWEALD },
+				}),
+				q(58267, {	-- Beneath the Mask
+					["sourceQuests"] = {
+						58266,	-- Break it Down
+						58264,	-- Wake Up, Get Up, Get Out There
+					},
+					["provider"] = { "n", 160757 },	-- Primrose
+					["g"] = {
+						i(175712),	-- Shimmerbough Loop
+					},
+				}),
 			}),
 			header(HEADERS.Achievement, 14788, {	-- Fractured Faerie Tales
 				q(62619, {	-- A Meandering Story
@@ -895,29 +871,42 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			n(BONUS_OBJECTIVES, sharedData({
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				["lockCriteria"] = { 1, "lvl", 60 },
 			}, bubbleDown({
-				["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
+				["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2 },
 			}, {
 				q(62773, {	-- Dreamshrine Basin [Pre-60]
-					i(175713),	-- Sprigthistle Loop
+					["coord"] = { 62.0, 52.8, ARDENWEALD },
+					["g"] = {
+						i(175713),	-- Sprigthistle Loop
+					},
 				}),
 				q(62720, {	-- The Fallen Tree [Pre-60]
-					i(181404),	-- Faemoss Shoes
-					i(181406),	-- Runetender Boots
-					i(181405),	-- Gormhusk Steps
-					i(181403),	-- Sapsteel Sabatons
+					["coord"] = { 72.0, 56.0, ARDENWEALD },
+					["g"] = {
+						i(181404),	-- Faemoss Shoes
+						i(181406),	-- Runetender Boots
+						i(181405),	-- Gormhusk Steps
+						i(181403),	-- Sapsteel Sabatons
+					},
 				}),
 				q(62775, {	-- The Waning Grove [Pre-60]
-					i(181415),	-- Faemoss Leggings
-					i(181417),	-- Runetender Pants
-					i(181416),	-- Gormhusk Kilt
-					i(181414),	-- Sapsteel Legplates
+					["coord"] = { 69.0, 22.4, ARDENWEALD },
+					["g"] = {
+						i(181415),	-- Faemoss Leggings
+						i(181417),	-- Runetender Pants
+						i(181416),	-- Gormhusk Kilt
+						i(181414),	-- Sapsteel Legplates
+					},
 				}),
 				q(62774, {	-- Tranquil Pools [Pre-60]
-					i(181420),	-- Faemoss Amice
-					i(181418),	-- Runetender Shoulderguards
-					i(181421),	-- Gormhusk Mantle
-					i(181419),	-- Sapsteel Pauldrons
+					["coord"] = { 63.3, 39.3, ARDENWEALD },
+					["g"] = {
+						i(181420),	-- Faemoss Amice
+						i(181418),	-- Runetender Shoulderguards
+						i(181421),	-- Gormhusk Mantle
+						i(181419),	-- Sapsteel Pauldrons
+					},
 				}),
 			}))),
 		}),

@@ -700,7 +700,6 @@ for key,value in pairs({
 		--TODO: [-1126] = "West",									-- West
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
-		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 		[-1150] = "로암 니펜",											-- Loamm Niffen
