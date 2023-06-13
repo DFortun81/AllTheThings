@@ -427,12 +427,11 @@ namespace ATT
             builder.Append("-- ").Append(shortname).AppendLine();
 
             // Are we already using the Retail DB?
-            string filename;
-            if (Path.GetFullPath(".").Contains("_retail_"))
-            {
-                filename = ".\\DATAS\\" + shortname;
-            }
-            else filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + shortname;
+#if ANYCLASSIC
+            string filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + shortname;
+#else
+            string filename = ".\\DATAS\\" + shortname;
+#endif
 
             if (Directory.Exists(filename))
             {
