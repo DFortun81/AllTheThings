@@ -8371,8 +8371,8 @@ local questFields = {
 	["collectibleAsCost"] = function(t)
 		-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing
 		-- and the Faction itself is Collectible & Not Collected
-		-- and the Quest is not locked from being completed
-		if app.CollectibleReputations and t.maxReputation and not t.locked then
+		-- and the Quest is not completed and not locked from being completed
+		if app.CollectibleReputations and t.maxReputation and not t.saved and not t.locked then
 			local factionID = t.maxReputation[1];
 			local factionRef = Search("factionID", factionID, "key");
 			if factionRef and not factionRef.collected then
