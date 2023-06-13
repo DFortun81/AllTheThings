@@ -1289,6 +1289,19 @@ app.TryColorizeName = function(group, name)
 	end
 	return name;
 end
+-- Returns 'Time Left: %s'
+app.GetColoredTimeRemaining = function(time)
+	if time and time > 0 then
+		local timeLeft = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(time * 60));
+		if time < 30 then
+			return Colorize(timeLeft, "FFFF0000");
+		elseif time < 120 then
+			return Colorize(timeLeft, "FFFFFF00");
+		else
+			return Colorize(timeLeft, "FF008000");
+		end
+	end
+end
 local CS = CreateFrame("ColorSelect", nil, app._);
 CS:Hide();
 local function ConvertColorRgbToHsv(r, g, b)
@@ -7143,45 +7156,14 @@ AddTomTomWaypoint = function(group)
 end
 end	-- Map Information Lib
 
--- Populates/replaces data within a questObject for displaying in a row
-local function PopulateQuestObject(questObject)
-	local questID = questObject and questObject.questID;
-	-- cannot do anything on a missing object or questID
-	if not questID then return; end
-
-	-- TODO: try moving this logic into the quest lib?
-	-- Get time remaining info (only works for World Quests)
-	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questID);
-	if timeRemaining and timeRemaining > 0 then
-		local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeRemaining * 60));
-		if timeRemaining < 30 then
-			description = "|cFFFF0000" .. description .. "|r";
-		elseif timeRemaining < 120 then
-			description = "|cFFFFFF00" .. description .. "|r";
-		else
-			description = "|cFF008000" .. description .. "|r";
-		end
-		questObject.timeRemaining = description;
-	end
-
-	-- If this is not a metatable yet, create a raw repeatable value for use prior to that
-	if not questObject.repeatable and
-		(questObject.isDaily or questObject.isWeekly or questObject.isMonthly or questObject.isYearly) then
-			questObject.repeatable = true;
-	end
-
-	-- Try populating quest rewards
-	app.TryPopulateQuestRewards(questObject);
-end
 -- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
 local function GetPopulatedQuestObject(questID)
-	local cachedVersion = app.SearchForObject("questID", questID, "field");
+	-- cannot do anything on a missing object or questID
+	if not questID then return; end
 	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
-	local data = cachedVersion or { questID = questID, _missing = true };
-	local questObject = CreateObject(data, true);
-	-- if this quest exists but is Sourced under a _missing group, then it is technically missing itself
-	questObject._missing = GetRelativeValue(data, "_missing");
-	PopulateQuestObject(questObject);
+	local questObject = CreateObject(app.SearchForObject("questID", questID, "field") or { questID = questID, _missing = true }, true);
+	-- Try populating quest rewards
+	app.TryPopulateQuestRewards(questObject);
 	return questObject;
 end
 local function ExportDataRecursively(group, indent)
@@ -7819,8 +7801,8 @@ end	-- Common Wrapper Types
 (function()
 local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog_GetQuestTagInfo =
 	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog.GetQuestTagInfo;
-local GetSpellInfo,math_floor =
-	  GetSpellInfo,math.floor;
+local GetSpellInfo,math_floor,C_TaskQuest_GetQuestTimeLeftMinutes =
+	  GetSpellInfo,math.floor,C_TaskQuest.GetQuestTimeLeftMinutes;
 local Search = app.SearchForObject;
 -- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
@@ -8314,6 +8296,10 @@ local questFields = {
 			local factionID = t.maxReputation[1];
 			return L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(factionID)) or ("Faction #" .. tostring(factionID))) .. "'";
 		end
+	end,
+	["timeRemaining"] = function(t)
+		-- Get time remaining info (only works for World Quests)
+		return app.GetColoredTimeRemaining(C_TaskQuest_GetQuestTimeLeftMinutes(t.questID));
 	end,
 	["icon"] = function(t)
 		local icon;
@@ -22310,22 +22296,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 										local timeLeft = C_AreaPoiInfo_GetAreaPOISecondsLeft(arr[2]);
 										if timeLeft and timeLeft > 0 then
 											local questObject = GetPopulatedQuestObject(questID);
-
 											-- Custom time remaining based on the map POI since the quest itself does not indicate time remaining
-											if not questObject.timeRemaining then
-												local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeLeft * 60));
-												if timeLeft < 30 then
-													description = "|cFFFF0000" .. description .. "|r";
-												elseif timeLeft < 60 then
-													description = "|cFFFFFF00" .. description .. "|r";
-												end
-												if not questObject.description then
-													questObject.description = description;
-												else
-													questObject.description = questObject.description .. "\n\n" .. description;
-												end
-											end
-
+											questObject.timeRemaining = app.GetColoredTimeRemaining(timeLeft);
 											local subMapObject = app.CreateMapWithStyle(arr[1]);
 											NestObject(subMapObject, questObject);
 											NestObject(mapObject, subMapObject);
