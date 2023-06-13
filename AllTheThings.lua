@@ -10559,7 +10559,7 @@ end
 app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textOverride)
 	local standing, maxStanding, isRenown = GetCurrentFactionStandings(factionID, requestedStanding);
 	if isRenown then
-		return Colorize(sformat(COVENANT_RENOWN_LEVEL_TOAST, standing), app.Colors.Renown);
+		return Colorize(textOverride or sformat(COVENANT_RENOWN_LEVEL_TOAST, standing), app.Colors.Renown);
 	end
 	local friendStandingText = GetFriendshipReputation(factionID, "reaction");
 	if friendStandingText then
