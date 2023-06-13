@@ -128,7 +128,6 @@ ACC_WIDE_DEFAULT = "Tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." by 
 	--TODO: L.OPEN_AUTOMATICALLY_DESC = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
 	--TODO: L.TWO_CLOAKS = "|cffFF0000These two cloaks have very limited confirmed drops if any and are presumed broken!|r";
 	--TODO: L.OGOM_THE_MANGLER_DESC = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r";
-	--TODO: L.HOLYDAY_DESC = "A specific holiday may need to be active for you to complete the referenced Things within this section.";
 	--TODO: L.DIFF_COMPLETED_1 = "You have collected everything from this difficulty. Switch to ";
 	--TODO: L.DIFF_COMPLETED_2 = " instead.";
 	--TODO: L.MINI_LIST = "Mini List";

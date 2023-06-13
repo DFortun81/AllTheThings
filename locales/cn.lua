@@ -130,7 +130,6 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 	L.OPEN_AUTOMATICALLY_DESC = "如果你不是暴雪开发者，最好是取消勾选此项。这样做是为了迫使暴雪修复和/或承认这些错误。";
 	L.TWO_CLOAKS = "|cffFF0000如果有的话，这两件披风的确认掉落非常有限，并且假定已损坏！ |r";
 	L.OGOM_THE_MANGLER_DESC = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r";
-	L.HOLYDAY_DESC = "你可能需要在特定的节日活动中才能完成本节中的事物。";
 	L.DIFF_COMPLETED_1 = "你已经收藏了这个难度的所有物品。切换到 ";
 	L.DIFF_COMPLETED_2 = " 来代替。";
 	L.MINI_LIST = "小列表";

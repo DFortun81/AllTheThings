@@ -6,6 +6,6 @@ WARFRONT = createHeader({
 	-- #endif
 	icon = "Interface\\Icons\\Ability_Warrior_OffensiveStance",
 	text = {
-		en = [[~GetSpellInfo(15308)]],
+		en = [[~select(1,GetCategoryInfo(15308))]],
 	},
 });
