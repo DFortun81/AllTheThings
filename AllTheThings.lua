@@ -16681,7 +16681,8 @@ RowOnEnter = function (self)
 		if reference.encounterID and app.Settings:GetTooltipSetting("encounterID") then GameTooltip:AddDoubleLine(L["ENCOUNTER_ID"], tostring(reference.encounterID)); end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
 		if reference.headerID and app.Settings:GetTooltipSetting("headerID") then GameTooltip:AddDoubleLine(L["HEADER_ID"], tostring(reference.headerID)); end
-		if reference.minReputation and not reference.maxReputation then
+		local minReputation, maxReputation = reference.minReputation, reference.maxReputation;
+		if minReputation and (not maxReputation or minReputation[1] ~= maxReputation[1]) then
 			local standingId, offset = app.GetReputationStanding(reference.minReputation)
 			local factionID = reference.minReputation[1];
 			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
@@ -16690,7 +16691,7 @@ RowOnEnter = function (self)
 			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
 			GameTooltip:AddLine(msg);
 		end
-		if reference.maxReputation and not reference.minReputation then
+		if maxReputation and (not minReputation or minReputation[1] ~= maxReputation[1]) then
 			local standingId, offset = app.GetReputationStanding(reference.maxReputation)
 			local factionID = reference.maxReputation[1];
 			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
@@ -16699,7 +16700,7 @@ RowOnEnter = function (self)
 			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
 			GameTooltip:AddLine(msg);
 		end
-		if reference.minReputation and reference.maxReputation then
+		if minReputation and maxReputation and minReputation[1] == maxReputation[1] then
 			local minStandingId, minOffset = app.GetReputationStanding(reference.minReputation)
 			local maxStandingId, maxOffset = app.GetReputationStanding(reference.maxReputation)
 			local factionID = reference.minReputation[1];
