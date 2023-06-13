@@ -43,6 +43,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 74787 },	-- Come Snail Away
 				["provider"] = { "n", 201752 },	-- Briggul
 				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
+				["maxReputation"] = { 2568, 5 },
 			}, {
 				q(74948),	-- Snailspiration: Amethyst Softshell
 				q(74949),	-- Snailspiration: Archetype of Vigilance
@@ -82,6 +83,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 73711 },	-- Marked Champion
 				["provider"] = { "n", 201099 },	-- Gorgul
 				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
+				["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
 			}, {
 				q(75662, {	-- A Race To The Finish
 					["repeatable"] = true,
