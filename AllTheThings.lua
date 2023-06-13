@@ -10515,7 +10515,7 @@ app.GetReputationStanding = function(reputationInfo)
 		local friend = GetFriendshipReputation(factionID);
 		if friend then
 			-- don't think there's a good standard way to determine friendship rank from an arbitrary amount of reputation...
-			print("Convert Friendship Reputation Threshold to StandingID",factionID,standingOrAmount)
+			app.print("Convert Friendship Reputation Threshold to StandingID",factionID,standingOrAmount)
 			return 1, standingOrAmount;
 		else
 			-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
@@ -10591,10 +10591,9 @@ local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
 	-- do not attempt caching more than 1 time per factionID since not every cached field may have a cached value
 	if _t.name then return end
-	local factionInfo = { GetFactionInfoByID(id) };
+	local name, lore = GetFactionInfoByID(id);
 	local friendshipName = GetFriendshipReputation(id, "name");
-	local name = factionInfo[1] or friendshipName;
-	local lore = factionInfo[2];
+	name = name or friendshipName;
 	_t.name = name or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. id);
 	if lore then
 		_t.lore = lore;
