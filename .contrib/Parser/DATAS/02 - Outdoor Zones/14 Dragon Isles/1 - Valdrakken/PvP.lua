@@ -2373,8 +2373,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["sym"] = {
 								{"select", "tierID", DF_TIER},			-- Select Dragonflight
 								{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
+								-- #if BEFORE 10.1.0
 								{"where", "headerID", SEASON_CRIMSON},	-- Season 1
 								{"pop"},								-- Discard the Season Header and acquire all of their children.
+								-- #endif
+								-- #if AFTER 10.1.0
+								{"where", "headerID", SEASON_OBSIDIAN},	-- Season 2
+								{"pop"},								-- Discard the Season Header and acquire all of their children.					
+								-- #endif
 								{"where", "filterID", RECIPES },		-- Recipes
 								{"pop"},								-- Discard the Recipes Header and acquire all of their children.
 								-- #if AFTER 10.1.0
@@ -2384,10 +2390,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 							["g"] = {
 								-- i(137642),    -- Mark of Honor		-- The Vendor has a different box for less Costs (2k) with more Marks of Honor (x5). Hidding this on purpose.
-								i(201254),	-- Cracked Medal of Honor [A]
-								i(201255),	-- Cracked Medal of Honor [H]
 								i(205187, {	-- Artisan's Consortium Flier
 									["timeline"] = { ADDED_10_1_0 },
+								}),
+								i(201254, {	-- Cracked Medal of Honor [A]
+									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 }
+								}),
+								i(201255, {	-- Cracked Medal of Honor [H]
+									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 }
+								}),
+								i(204179, {	-- Medal of Honor [A]
+									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+								}),
+								i(204180, {	-- Medal of Honor [H]
+									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
 								}),
 							},
 						}),

@@ -1299,9 +1299,6 @@ root(ROOTS.Unsorted, {
 				i(205451),	-- Flawless Crystal Scale
 			}),
 			n(PVP, {
-				i(204179),	-- Medal of Honor
-				i(204180),	-- Medal of Honor
-				--
 				i(205798),	-- Pauldrons of the Onyx Crucible
 				i(205799),	-- Legplates of the Onyx Crucible
 				i(205800),	-- Thraexhelm of the Onyx Crucible
@@ -1491,14 +1488,12 @@ root(ROOTS.Unsorted, {
 				q(75201),	--
 				q(75203),	--
 				q(75204),	--
-				q(75205),	--
 				q(75209),	--
 				q(75213),	--
 				q(75220),	--
 				q(75225),	--
 				q(75226),	--
 				q(75229),	--
-				q(75235),	--
 				q(75242),	--
 				q(75243),	--
 				q(75264),	--

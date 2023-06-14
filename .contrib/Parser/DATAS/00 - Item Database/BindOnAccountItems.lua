@@ -14,8 +14,10 @@ end
 
 -- DF Currencies
 i(199211);	-- Primeval Essence
-i(201254);	-- Medal of Honor [A]
-i(201255);	-- Medal of Honor [H]
+i(201254);	-- Medal of Honor [A] (Season 1)
+i(201255);	-- Medal of Honor [H] (Season 1)
+i(204179);	-- Medal of Honor [A] (Season 2)
+i(204180);	-- Medal of Honor [H] (Season 2)
 
 -- BoA Cost Items
 i(137642);	-- Mark of Honor

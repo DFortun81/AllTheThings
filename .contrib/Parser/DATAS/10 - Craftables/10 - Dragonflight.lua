@@ -896,7 +896,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71423, 389540);	-- Earthen Writ
 			FirstCraft(71428, 389551);	-- Frozen Devotion
 			FirstCraft(71427, 389543);	-- Frozen Writ
-			--FirstCraft(x, 405076, ADDED_10_1_0);	-- Shadowflame Wreathe
+			FirstCraft(75205, 405076, ADDED_10_1_0);	-- Shadowflame Wreathe
 			FirstCraft(71430, 389550);	-- Sophic Devotion
 			FirstCraft(71429, 389542);	-- Sophic Writ
 			--FirstCraft(x, 404859, ADDED_10_1_0);	-- Spore Tender
@@ -942,7 +942,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(75316, 406418, ADDED_10_1_0);	-- Enchanted Aspect's Shadowflame Crest
 			FirstCraft(75256, 406108, ADDED_10_1_0);	-- Enchanted Whelpling's Shadowflame Crest
 			FirstCraft(75315, 406413, ADDED_10_1_0);	-- Enchanted Wyrm's Shadowflame Crest
-			--FirstCraft(x, 405937, ADDED_10_1_0);	-- Titan Training Matrix V
+			FirstCraft(75235, 405937, ADDED_10_1_0);	-- Titan Training Matrix V
 		})),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air
