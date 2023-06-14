@@ -122,6 +122,9 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 		i(121377),	-- Beastmaster's Discarded Axe
 		i(121338),	-- Bent-Blade Axe
 		i(121381),	-- Chipped Colossus Blade
+		i(132168, {	-- Common Legion Blade
+			["timeline"] = { "added 7.0.3", "removed 7.1.0" } -- TODO: is it removed?
+		}),
 		i(121383),	-- Curious Nar'thalas Student's Staff
 		i(121335),	-- Fixing Axe
 		i(121339),	-- Kvaldir Skinning Knife

@@ -1393,7 +1393,6 @@ root(ROOTS.Unsorted, {
 				i(204800),	-- Scaly Stone Hide
 				i(204824),	-- Torn Journal Entry
 				i(204830),	-- Shattered Horn Signet
-				i(205187),	-- Artisan's Consortium Flier
 				i(202106),	-- Chewed Piece of Journal
 				i(204063),	-- Windsor's Journal
 				i(205410),	-- Pungent Morsel
@@ -1590,7 +1589,6 @@ root(ROOTS.Unsorted, {
 				q(75617),	-- Honor the Flame
 				q(75618),	--
 				-- 10.1.0.48537
-				q(75622),	-- Calling All Competitors!
 				q(75631),	--
 				q(75640),	-- Honor the Flame
 				q(75645),	-- Honor the Flame

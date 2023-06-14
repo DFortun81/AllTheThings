@@ -3266,7 +3266,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(138191),	-- Eredar Staff
 				}),
 				filter(ONE_HANDED_SWORDS, {
-					i(132168),	-- Common Legion Blade
 					i(132920),	-- Dreadblade
 					i(134069),	-- Felblade
 					i(134548),	-- Helya's Wrath

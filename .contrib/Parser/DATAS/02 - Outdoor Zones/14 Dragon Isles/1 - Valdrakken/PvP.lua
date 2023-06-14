@@ -25,6 +25,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),
+				q(75622, {	-- Calling All Competitors!
+					["provider"] = { "i", 205187 },	-- Artisan's Consortium Flier
+				}),
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 196191 },	-- Malicia
@@ -2379,6 +2382,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								-- i(137642),    -- Mark of Honor		-- The Vendor has a different box for less Costs (2k) with more Marks of Honor (x5). Hidding this on purpose.
 								i(201254),	-- Cracked Medal of Honor [A]
 								i(201255),	-- Cracked Medal of Honor [H]
+								i(205187, {	-- Artisan's Consortium Flier
+									["timeline"] = { ADDED_10_1_0 },
+								}),
 							},
 						}),
 						i(185834, {	-- Orboreal Distinguishment
