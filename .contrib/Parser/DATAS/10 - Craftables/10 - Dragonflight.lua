@@ -1614,7 +1614,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71557, 383529);	-- Howling Rune
 			FirstCraft(71562, 383538);	-- Jetscale Sigil+
 			FirstCraft(71563, 383534);	-- Sagescale Sigil
-			--FirstCraft(x, 408272, ADDED_10_1_0);	-- Vantus Rune: Vault of the Incarnates
+			FirstCraft(75584, 408272, ADDED_10_1_0);	-- Aberrus, the Shadowed Crucible
 			FirstCraft(71594, 383546);	-- Vantus Rune: Vault of the Incarnates
 			-- Trinkets
 			FirstCraft(74102, 400026, ADDED_10_0_5);	-- Crimson Combatant's Medallion

@@ -2894,16 +2894,34 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		}),
 		q(72340),	-- Triggered on unlocking alt spark skip
 
-		q(76126),	-- Completes alongside 75569
+		q(76124),	-- After turn in 'Deepflayer Dust' (questID 75363)
+		q(76125),	-- After turn in 'Fascinating Fungi' (questID 75371)
+		q(76126),	-- After turn in 'Blacksmith, Black Dragon' (questID 75569)
+		q(76128),	-- After turn in 'Relic Rustler' (questID 75865)
+		q(76129),	-- After turn in 'Incandescence' (questID 75150)
+		q(76133),	-- After turn in 'Obsidian Essays' (questID 75149)
+		q(76134),	-- After turn in 'Cephalo-Crystalization' (questID 75362)
+		q(76135),	-- After turn in 'Chips off the Old Crystal Block' (questID 75602)
+		q(76137),	-- After turn in 'Stones and Scales' (questID 75368)
+		q(76138),	-- After turn in 'Silk Scavenging' (questID 75407)
 
-		q(76128),	-- After turn in 75865 (Relic Rustler)
-		q(76129),	-- After turn in 75150 (Incandescence)
-		q(76137),	-- After turn in 75368 (Stones and Scales)
-		q(76138),	-- After turn in 75407 (Silk Scavenging)
+		-- TODO:
 
-		q(76125),	-- After turn in 75371 (Fascinating Fungi)
-		q(76135),	-- After turn in 75602 (Chips off the Old Crystal Block)
-		q(76124),	-- After turn in 75363 (Deepflayer Dust)
-		q(76134),	-- After turn in 75362 (Cephalo-Crystalization)
+		-- Weekly quests
+		--q(75148), -- Ancient Techniques
+		--q(75575), -- Ballistae Bits
+		--q(75608), -- Titan Trash or Titan Treasure?
+		--q(75573), -- Proclamation Reclamation
+		--q(75354), -- Mycelium Mastery
+		--q(75600), -- Silk's Silk
+
+		-- HQTs to choose from most likely (remove from unsorted when done)
+		--q(76123),	--
+		--q(76127),	--
+		--q(76130),	--
+		--q(76131),	--
+		--q(76132),	--
+		--q(76136),	--
+		--q(76139),	--
 	}),
 }));
