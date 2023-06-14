@@ -665,8 +665,6 @@ do a[key] = value; end
 
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Commonly used
-		[-41] = "L'antre de la Folie",
 	-- Other
 		[-211] = "Nouveau personnage",								-- New Character
 	-- Fishing

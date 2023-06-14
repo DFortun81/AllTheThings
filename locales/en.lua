@@ -951,7 +951,6 @@ app.L = {
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
-		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
 		[-43] = 618859,																		-- Proving Grounds [achievement_challengemode_platinum]
 		[-94] = "Interface\\Icons\\inv_misc_lockbox_1",										-- Black Market AH
 	-- Garrisons
@@ -1217,7 +1216,6 @@ app.L = {
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
 	};
 	["HEADER_NAMES"] = {
-		[-41] = "Cache of Madness",												-- Cache of Madness
 		[-43] = TRACKER_HEADER_PROVINGGROUNDS,									-- Proving Grounds
 		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
 	-- Garrisons

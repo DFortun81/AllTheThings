@@ -1,6 +1,23 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+CACHE_OF_MADNESS = createHeader({
+	readable = "Cache of Madness",
+	icon = "Interface\\Icons\\TRADE_ARCHAEOLOGY",
+	text = {
+		en = "Cache of Madness",
+		fr = "L'antre de la Folie",
+		ru = "Тайник Безумия",
+		cn = "疯狂宝箱",
+	},
+	description = {
+		-- #if AFTER 10.0.7
+		en = "Requires Archaeology to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
+		-- #else
+		en = "Requires Archaeology (225+) to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
+		-- #endif
+	},
+});
 local BLOODSCALP_COIN = 19706;
 local GURUBASHI_COIN = 19701;
 local HAKKARI_COIN = 19700;
@@ -758,134 +775,50 @@ root("Instances", tier(CATA_TIER, {
 					i(69606),	-- Hakkari Loa Drape
 					i(69608),	-- Deathcharged Wristguards
 				})),
-				n(-41, {			-- Cache of Madness (Requires 225 Archeology)
+				n(CACHE_OF_MADNESS, {
 					--[[ encounter IDs if we're ever able to use an array for them:
 						177,	-- Gri'lek
 						178,	-- Hazza'rah
 						179,	-- Renataki
 						180,	-- Wushoolay
 					--]]
-					-- #if AFTER 10.0.7
-					["description"] = "Requires Archaeology (1) to spawn.",
-					-- #else
-					["description"] = "Requires Archaeology (225+) to spawn.",
-					-- #endif
+					["crs"] = {
+						-- These artifacts are used to summon the boss.
+						52446,	-- Ancient Dwarven Artifact
+						52450,	-- Ancient Elven Artifact
+						52454,	-- Ancient Fossil
+						52452,	-- Ancient Troll Artifact
+					},
 					["groups"] = {
-						--[[ Using CRS // QGS doesn't apply the description. Only applies to NPCID
-						{	-- Summon Artifacts
-							["npcID"] = 52446,	-- Ancient Dwarven Artifact
-							["description"] = "This artifact is used in summoning the boss.",
-							["providers"] = {
-								{ "n", 52450 },	-- Ancient Elven Artifact
-								{ "n", 52454 },	-- Ancient Fossil
-								{ "n", 52452 },	-- Ancient Troll Artifact
-							},
-						},
-						{	-- Ignored Artifacts
-							["npcID"] = 52449,	-- Ancient Dwarven Artifact
-							["description"] = "|CFFFF0000IGNORE!|r",
-							["providers"] = {
-								{ "n", 52451 },	-- Ancient Elven Artifact
-								{ "n", 52455 },	-- Ancient Fossil
-								{ "n", 52453 },	-- Ancient Troll Artifact
-							},
-						},
-						--]]
-						{	-- Ancient Dwarven Artifact
-							["npcID"] = 52446,	-- Ancient Dwarven Artifact
-							["description"] = "This artifact is used in summoning the boss.",
-						},
-						--[[
-						{	-- Ancient Dwarven Artifact
-							["npcID"] = 52449,	-- Ancient Dwarven Artifact
-							["description"] = "|CFFFF0000IGNORE!|r",
-						},
-						--]]
-						{	-- Ancient Elven Artifact
-							["npcID"] = 52450,	-- Ancient Elven Artifact
-							["description"] = "This artifact is used in summoning the boss.",
-						},
-						--[[
-						{	-- Ancient Elven Artifact
-							["npcID"] = 52451,	-- Ancient Elven Artifact
-							["description"] = "|CFFFF0000IGNORE!|r",
-						},
-						--]]
-						{	-- Ancient Fossil
-							["npcID"] = 52454,	-- Ancient Fossil
-							["description"] = "This artifact is used in summoning the boss.",
-						},
-						--[[
-						{	-- Ancient Fossil
-							["npcID"] = 52455,	-- Ancient Fossil
-							["description"] = "|CFFFF0000IGNORE!|r",
-						},
-						--]]
-						{	-- Ancient Troll Artifact
-							["npcID"] = 52452,	-- Ancient Troll Artifact
-							["description"] = "This artifact is used in summoning the boss.",
-						},
-						--[[
-						{	-- Ancient Troll Artifact
-							["npcID"] = 52453,	-- Ancient Troll Artifact
-							["description"] = "|CFFFF0000IGNORE!|r",
-						},
-						--]]
-						i(69638, {	-- Arlokk's Claws
-							["crs"] = { 52269 },	-- Renataki
-						}),
-						i(69639, {	-- Renataki's Soul Slicer
-							["crs"] = { 52269 },	-- Renataki
-						}),
-						i(69636, {	-- Thekal's Claws
-							["crs"] = { 52271 },	-- Hazzarah
-						}),
-						i(69637, {	-- Gurubashi Destroyer
-							["crs"] = { 52271 },	-- Hazzarah
-						}),
-						i(69631, {	-- Zulian Voodoo Stick
+						n(DROPS, {
 							["crs"] = {
 								52258,	-- Gri'lek
 								52271,	-- Hazzarah
 								52269,	-- Renataki
 								52286,	-- Wushoolay
 							},
-						}),
-						i(69632, {	-- Lost Bag of Whammies
-							["crs"] = {
-								52258,	-- Gri'lek
-								52271,	-- Hazzarah
-								52269,	-- Renataki
-								52286,	-- Wushoolay
+							["groups"] = {
+								i(69631),	-- Zulian Voodoo Stick
+								i(69632),	-- Lost Bag of Whammies
+								i(69630),	-- Handguards of the Tormented
+								i(69633),	-- Plunderer's Gauntlets
 							},
 						}),
-						i(69635, {	-- Amulet of Protection
-							["crs"] = { 52258 },	-- Gri'lek
+						n(52258, {	-- Gri'lek
+							i(69635),	-- Amulet of Protection
+							i(69634),	-- Fasc's Preserved Boots
 						}),
-						i(69641, {	-- Troll Skull Chestplate
-							["crs"] = { 52286 },	-- Wushoolay
+						n(52271, {	-- Hazza'rah
+							i(69636),	-- Thekal's Claws
+							i(69637),	-- Gurubashi Destroyer
 						}),
-						i(69630, {	-- Handguards of the Tormented
-							["crs"] = {
-								52258,	-- Gri'lek
-								52271,	-- Hazzarah
-								52269,	-- Renataki
-								52286,	-- Wushoolay
-							},
+						n(52269, {	-- Renataki
+							i(69638),	-- Arlokk's Claws
+							i(69639),	-- Renataki's Soul Slicer
 						}),
-						i(69633, {	-- Plunderer's Gauntlets
-							["crs"] = {
-								52258,	-- Gri'lek
-								52271,	-- Hazzarah
-								52269,	-- Renataki
-								52286,	-- Wushoolay
-							},
-						}),
-						i(69640, {	-- Kilt of Forgotten Rites
-							["crs"] = { 52286 },	-- Wushoolay
-						}),
-						i(69634, {	-- Fasc's Preserved Boots
-							["crs"] = { 52258 },	-- Gri'lek
+						n(52286, {	-- Wushoolay
+							i(69641),	-- Troll Skull Chestplate
+							i(69640),	-- Kilt of Forgotten Rites
 						}),
 					},
 				}),

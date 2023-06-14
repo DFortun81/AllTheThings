@@ -681,8 +681,6 @@ do a[key] = value; end
 
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Commonly used
-		[-41] = "疯狂宝箱",												-- Cache of Madness
 	-- Garrisons
 		[-152] = "要塞战役",											-- Garrison Campaign
 	-- Class Trial
