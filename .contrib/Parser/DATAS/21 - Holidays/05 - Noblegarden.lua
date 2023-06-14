@@ -7,7 +7,11 @@ NOBLEGARDEN_HEADER = createHeader({
 	icon = [[~_.asset("Holiday_noblegarden")]],
 	eventID = 181,
 	text = {
+		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(159))]],
+		-- #else
+		en = "Noblegarden",
+		-- #endif
 	},
 });
 local NOBLEGARDEN_VENDOR_GROUPS = {

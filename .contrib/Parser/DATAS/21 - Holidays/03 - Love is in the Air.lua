@@ -7,7 +7,11 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 	icon = [[~_.asset("Holiday_love")]],
 	eventID = 423,
 	text = {
+		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(187))]],
+		-- #else
+		en = "Love is in the Air",
+		-- #endif
 	},
 });
 local BOUQUET_RED = applyholiday(LOVE_IS_IN_THE_AIR, i(22206));	-- Bouquet of Red Roses

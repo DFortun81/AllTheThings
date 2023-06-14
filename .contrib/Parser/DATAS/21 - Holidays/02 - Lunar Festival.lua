@@ -8,7 +8,11 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 	icon = [[~_.asset("Holiday_Lunar")]],
 	eventID = 327,
 	text = {
+		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(160))]],
+		-- #else
+		en = "Lunar Festival",
+		-- #endif
 	},
 });
 root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, {

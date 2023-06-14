@@ -7,7 +7,11 @@ HALLOWS_END_HEADER = createHeader({
 	icon = [[~_.asset("Holiday_hallows_end")]],
 	eventID = 324,
 	text = {
+		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(158))]],
+		-- #else
+		en = "Hallow's End",
+		-- #endif
 	},
 });
 local CANDY_AND_TOY_VENDOR_GROUPS = {

@@ -7,7 +7,11 @@ CHILDRENS_WEEK_HEADER = createHeader({
 	icon = [[~_.asset("Holiday_Children")]],
 	eventID = 201,
 	text = {
+		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(163))]],
+		-- #else
+		en = "Children's Week",
+		-- #endif
 	},
 });
 -- TODO: Add vendors for Tigule's Strawberry Ice Cream (7228)

@@ -7,7 +7,11 @@ BREWFEST_HEADER = createHeader({
 	icon = [[~_.asset("Holiday_brewfest")]],
 	eventID = 372,
 	text = {
+		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(162))]],
+		-- #else
+		en = "Brewfest",
+		-- #endif
 	},
 });
 -- Developer note: Use the BREWFEST_TOKEN constant in place of the reward.
