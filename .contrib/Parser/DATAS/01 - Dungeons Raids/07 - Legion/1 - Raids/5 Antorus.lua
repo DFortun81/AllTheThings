@@ -234,8 +234,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							122333,	-- General Erodus
 						},
 						["g"] = {
-							i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
-							i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
+							i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
+							i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 							i(151985),	-- General Erodus' Tricorne
 							i(152019),	-- Pauldrons of the Eternal Offensive
 							i(152125),	-- Bearmantle Cloak
@@ -634,8 +634,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(12129),	-- This is the War Room!
-						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
+						i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1034,8 +1034,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						122333,	-- General Erodus
 					},
 					["g"] = {
-						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
+						i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1427,8 +1427,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11994),	-- Mythic: Antoran High Command
-						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
+						i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak

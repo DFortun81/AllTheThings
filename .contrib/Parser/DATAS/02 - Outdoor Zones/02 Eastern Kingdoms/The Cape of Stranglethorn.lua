@@ -2092,7 +2092,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["coord"] = { 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(14635, {	-- Pattern: Gem-Studded Leather Belt
+						i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(18239, {	-- Pattern: Shadowskin Gloves (RECIPE!)

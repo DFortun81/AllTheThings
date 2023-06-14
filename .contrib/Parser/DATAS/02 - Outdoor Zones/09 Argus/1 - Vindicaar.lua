@@ -233,8 +233,8 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["provider"] = { "n", 125349 },	-- Enstraa
 					["coord"] = { 39.6, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
 					["g"] = {
-						i(151740),	-- Pattern: Fiendish Shoulderguards [Rank 1]
-						i(151743),	-- Pattern: Fiendish Spaulders [Rank 1]
+						i(151740),	-- Pattern: Fiendish Shoulderguards [Rank 1] (RECIPE!)
+						i(151743),	-- Pattern: Fiendish Spaulders [Rank 1] (RECIPE!)
 					},
 				}),
 				q(49143, {	-- Essence of the Light Mother

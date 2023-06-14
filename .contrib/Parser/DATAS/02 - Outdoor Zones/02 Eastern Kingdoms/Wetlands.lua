@@ -1795,7 +1795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(7114, {	-- Pattern: Azure Silk Gloves
 							["isLimited"] = true,
 						}),
-						i(7613, {	-- Pattern: Green Leather Armor
+						i(7613, {	-- Pattern: Green Leather Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(7290, {	-- Pattern: Red Whelp Gloves

@@ -765,7 +765,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93523 },	-- Namha Moonwater
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(137952),	-- Pattern: Stonehide Leather Barding
+							i(137952),	-- Pattern: Stonehide Leather Barding (RECIPE!)
 						},
 					}),
 					q(40241, {	-- Battle Bonds (H)
@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93523 },	-- Namha Moonwater
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(141850),	-- Pattern: Elderhorn Riding Harness
+							i(141850),	-- Pattern: Elderhorn Riding Harness (RECIPE!)
 						},
 					}),
 				}),

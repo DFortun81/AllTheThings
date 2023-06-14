@@ -2833,7 +2833,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(7613, {	-- Pattern: Green Leather Armor
+						i(7613, {	-- Pattern: Green Leather Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

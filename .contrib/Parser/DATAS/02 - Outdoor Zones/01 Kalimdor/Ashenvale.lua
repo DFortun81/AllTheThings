@@ -3245,7 +3245,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 34.8, 49.8, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5973, {	-- Pattern: Barbaric Leggings
+						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

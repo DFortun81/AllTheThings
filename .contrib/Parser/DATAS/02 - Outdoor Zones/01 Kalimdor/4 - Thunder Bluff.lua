@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
-						i(5083),	-- Pattern: Kodo Hide Bag
+						i(5083),	-- Pattern: Kodo Hide Bag (RECIPE!)
 					},
 				}),
 				q(1130, {	-- Melor Sends Word

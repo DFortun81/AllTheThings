@@ -5246,7 +5246,7 @@ root(ROOTS.Zones, {
 						i(137887),	-- Pattern: Dreadleather Pants [Rank 2] (RECIPE!)
 						i(137886),	-- Pattern: Dreadleather Shoulderguard [Rank 2] (RECIPE!)
 						i(142407),	-- Pattern: Drums of the Mountain [Rank 1] (RECIPE!)
-						i(141850, {	-- Pattern: Elderhorn Riding Harness
+						i(141850, {	-- Pattern: Elderhorn Riding Harness (RECIPE!)
 							["description"] = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
 							["g"] = {
 								i(129962),	-- Great Northern Elderhorn (MOUNT!)

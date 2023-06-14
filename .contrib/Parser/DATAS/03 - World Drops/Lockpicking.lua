@@ -294,8 +294,8 @@ root(ROOTS.WorldDrops, {
 				i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
 				i(7085),	-- Pattern: Azure Shoulders
 				i(7086),	-- Pattern: Earthen Silk Belt
-				i(5974),	-- Pattern: Guardian Cloak
-				i(4300),	-- Pattern: Guardian Leather Bracers
+				i(5974),	-- Pattern: Guardian Cloak (RECIPE!)
+				i(4300),	-- Pattern: Guardian Leather Bracers (RECIPE!)
 				i(10300),	-- Pattern: Red Mageweave Vest
 				i(4353),	-- Pattern: Spider Belt
 				i(8385),	-- Pattern: Turtle Scale Gloves

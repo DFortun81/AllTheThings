@@ -189,46 +189,32 @@ r(414566),	-- Scourged Scales
 Missing in LeatherworkingItemDB.lua
 
 0.5.3.3368
-r(2108),	-- Leatherworking
-r(2149),	-- Handstitched Leather Boots
-r(2152),	-- Light Armor Kit
-r(2153),	-- Handstitched Leather Pants
-r(2158),	-- Fine Leather Boots
-r(2159),	-- Fine Leather Cloak
-r(2160),	-- Embossed Leather Vest
-r(2161),	-- Embossed Leather Boots
-r(2162),	-- Embossed Leather Cloak
-r(2163),	-- White Leather Jerkin
-r(2164),	-- Fine Leather Gloves
-r(2165),	-- Medium Armor Kit
-r(2166),	-- Toughened Leather Armor
-r(2167),	-- Dark Leather Boots
-r(2168),	-- Dark Leather Cloak
-r(2169),	-- Dark Leather Tunic
-r(2881),	-- Light Leather
-r(3104),	-- Leatherworking
-r(3753),	-- Handstitched Leather Belt
-r(3756),	-- Embossed Leather Gloves
-r(3759),	-- Embossed Leather Pants
-r(3760),	-- Hillman's Cloak
-r(3761),	-- Fine Leather Tunic
-r(3762),	-- Hillman's Leather Vest
-r(3763),	-- Fine Leather Belt
-r(3764),	-- Hillman's Leather Gloves
-r(3765),	-- Dark Leather Gloves
-r(3766),	-- Dark Leather Belt
-r(3767),	-- Hillman's Belt
-r(3768),	-- Hillman's Shoulders
-r(3769),	-- Dark Leather Shoulders
-r(3770),	-- Toughened Leather Gloves
-r(3771),	-- Barbaric Gloves
-r(3772),	-- Green Leather Armor
-r(3773),	-- Guardian Armor
-r(3774),	-- Green Leather Belt
-r(3775),	-- Guardian Belt
-r(3776),	-- Green Leather Bracers
-r(3777),	-- Guardian Leather Bracers
-r(3778),	-- Gem-studded Leather Belt
+
+r(0, 2149),	-- Handstitched Leather Boots
+r(0, 2152),	-- Light Armor Kit
+r(0, 2153),	-- Handstitched Leather Pants
+r(0, 2159),	-- Fine Leather Cloak
+r(0, 2160),	-- Embossed Leather Vest
+r(0, 2161),	-- Embossed Leather Boots
+r(0, 2162),	-- Embossed Leather Cloak
+r(0, 2165),	-- Medium Armor Kit
+r(0, 2166),	-- Toughened Leather Armor
+r(0, 2167),	-- Dark Leather Boots
+r(0, 2168),	-- Dark Leather Cloak
+r(0, 2881),	-- Light Leather
+r(0, 3753),	-- Handstitched Leather Belt
+r(0, 3756),	-- Embossed Leather Gloves
+r(0, 3759),	-- Embossed Leather Pants
+r(0, 3760),	-- Hillman's Cloak
+r(0, 3761),	-- Fine Leather Tunic
+r(0, 3763),	-- Fine Leather Belt
+r(0, 3764),	-- Hillman's Leather Gloves
+r(0, 3766),	-- Dark Leather Belt
+r(0, 3768),	-- Hillman's Shoulders
+r(0, 3770),	-- Toughened Leather Gloves
+r(0, 3774),	-- Green Leather Belt
+r(0, 3776),	-- Green Leather Bracers
+r(14635, 3778),	-- Gem-studded Leather Belt
 r(3779),	-- Barbaric Belt
 r(3780),	-- Heavy Armor Kit
 r(3811),	-- Leatherworking
@@ -541,32 +527,6 @@ r(351771),	-- Greater Drums of Battle
 3.0.1.8303
 r(45541),	--
 r(48038),	--
-3.0.1.8622
-r(50935),	--
-r(50936),	-- Heavy Borean Leather
-r(50943),	-- Iceborne Belt
-r(50944),	-- Arctic Chestpiece
-r(50945),	-- Arctic Leggings
-r(50946),	-- Arctic Shoulderpads
-r(50947),	-- Arctic Gloves
-r(50948),	-- Arctic Boots
-r(50949),	-- Arctic Belt
-r(50955),	-- Frostscale Belt
-r(50961),	-- Nerubian Belt
-r(50962),	-- Borean Armor Kit
-r(50963),	-- Heavy Borean Armor Kit
-r(51302),	-- Leatherworking
-r(51571),	-- Arctic Wristguards
-r(52733),	-- Bracers of Shackled Souls
-r(53681),	-- Garok's Battle
-r(53686),	-- Verdant Tundra Belt
-r(53687),	-- Verdant Tundra Cap
-r(53688),	-- Verdant Tundra Boots
-r(53689),	-- Verdant Tundra Bracers
-r(53690),	-- Verdant Tundra Shoulderpads
-3.0.1.8874
-r(55199),	-- Cloak of Tormented Skies
-r(55243),	-- Bracers of Deflection
 3.1.0.9767
 r(50938),	-- Iceborne Chestguard
 r(50939),	-- Iceborne Leggings
@@ -1265,146 +1225,5 @@ r(194775),	-- Flaming Hoop
 r(194776),	-- Leather Pet Bed
 r(194778),	-- Leather Pet Leash
 r(194779),	-- Leather Love Seat
-r(194780),	-- Elderhorn Riding Harness
-r(194784),	-- Dreadleather Mask
-r(194785),	-- Dreadleather Footpads
-r(194786),	-- Dreadleather Pants
-r(194787),	-- Dreadleather Bindings
-r(194788),	-- Dreadleather Belt
-r(194789),	-- Dreadleather Shoulderguard
-r(194790),	-- Dreadleather Gloves
-r(194791),	-- Dreadleather Jerkin
-r(194792),	-- Gravenscale Leggings
-r(194793),	-- Gravenscale Treads
-r(194794),	-- Gravenscale Warhelm
-r(194795),	-- Gravenscale Hauberk
-r(194796),	-- Gravenscale Armbands
-r(194797),	-- Gravenscale Girdle
-r(194798),	-- Gravenscale Spaulders
-r(194799),	-- Gravenscale Grips
-r(195119),	-- Leatherworking
-r(196375),	-- Shaved Stonehide Pelt
-r(196379),	-- Tanned Stonehide Leather
-r(196382),	-- Stonehide Leather Lining
-r(196383),	-- Stonehide Leather Vamp
-r(196384),	-- Stonehide Boot Exterior
-r(196385),	-- Stonehide Leather Strip
-r(196387),	-- Shaved Felhide
-r(196388),	-- Tanned Fel Leather
-r(196395),	-- Fel Leather Strap
-r(196397),	-- Stonehide Leather Barding
-r(196425),	-- Stonehide Boot Base
-r(196427),	-- Sturdy Stonehide Boots
-r(196428),	-- Rough Warhide Mask
-r(196442),	-- Stonehide Leather Bed
-r(196456),	-- Felhide Bracers
-r(196457),	-- Fel Leather Cuff
-r(196467),	-- Stonehide Champron
-r(196468),	-- Stonehide Crinet
-r(196469),	-- Stonehide Caparison
-r(196648),	-- Stonehide Leather Barding
-r(208596),	-- Tanned Stonehide Pelt
-r(208615),	-- Stonehide Leather Strip
-r(226105),	-- Light Scale Gloves
-r(226106),	-- Light Scale Bracers
-r(226107),	-- Light Scale Belt
-r(226108),	-- Light Scale Jerkin
-r(226109),	-- Light Scale Boots
-r(226110),	-- Shamanic Treads
-r(226111),	-- Light Scale Pants
-r(226112),	-- Chain Hauberk
-r(226113),	-- Chain Boots
-r(226114),	-- Crackling Scale Breastplate
-r(226115),	-- Blue Chain Leggings
-r(226116),	-- Chain Bracers
-r(226117),	-- Chain Leggings
-r(226118),	-- Chain Gauntlets
-r(226119),	-- Chain Belt
-r(226120),	-- Spritescale Epaulets
-r(226121),	-- Chain Pauldrons
-r(226122),	-- Element Grips
-r(226123),	-- Heavy Scale Gauntlets
-r(226124),	-- Heavy Scale Wraps
-r(226125),	-- Spritescale Britches
-r(226126),	-- Heavy Scale Pants
-r(226127),	-- Spritescale Cinch
-r(226128),	-- Heavy Scale Shirt
-r(226129),	-- Heavy Scale Pauldrons
-r(226130),	-- Spritescale Jerkin
-r(226131),	-- Spritescale Gloves
-r(226132),	-- Heavy Scale Belt
-r(226133),	-- Spritescale Wraps
-r(226134),	-- Heavy Scale Boots
-r(226135),	-- Heavy Scale Hood
-r(226136),	-- Spritescale Circlet
-r(226137),	-- Spritescale Boots
-r(230936),	-- Drums of the Mountain
-r(230954),	-- Drums of the Mountain
-r(230955),	-- Drums of the Mountain
-r(239413),	-- The Sentinel's Eternal Refuge
-r(239414),	-- Vigilance Perch
-r(247800),	-- Fiendish Shoulderguards
-r(247801),	-- Fiendish Shoulderguards
-r(247802),	-- Fiendish Shoulderguards
-r(247803),	-- Fiendish Spaulders
-r(247804),	-- Fiendish Spaulders
-r(247805),	-- Fiendish Spaulders
-8.0.1.26175
-r(269516),	-- Honorable Combatant's Leather Treads
-r(269517),	-- Honorable Combatant's Leather Treads
-r(269518),	-- Honorable Combatant's Leather Treads
-r(269519),	-- Honorable Combatant's Leather Gauntlets
-r(269520),	-- Honorable Combatant's Leather Gauntlets
-r(269521),	-- Honorable Combatant's Leather Gauntlets
-r(269522),	-- Honorable Combatant's Leather Leggings \\ Honorable Combatant's Leather Greaves
-r(269523),	-- Honorable Combatant's Leather Leggings \\ Honorable Combatant's Leather Greaves
-r(269524),	-- Honorable Combatant's Leather Leggings \\ Honorable Combatant's Leather Greaves
-r(269525),	-- Honorable Combatant's Leather Waistguard
-r(269526),	-- Honorable Combatant's Leather Waistguard
-r(269527),	-- Honorable Combatant's Leather Waistguard
-r(269528),	-- Honorable Combatant's Leather Armguards
-r(269529),	-- Honorable Combatant's Leather Armguards
-r(269530),	-- Honorable Combatant's Leather Armguards
-r(269531),	-- Honorable Combatant's Mail Treads
-r(269532),	-- Honorable Combatant's Mail Treads
-r(269533),	-- Honorable Combatant's Mail Treads
-r(269534),	-- Honorable Combatant's Mail Gauntlets
-r(269535),	-- Honorable Combatant's Mail Gauntlets
-r(269536),	-- Honorable Combatant's Mail Gauntlets
-r(269537),	-- Honorable Combatant's Mail Leggings \\ Honorable Combatant's Mail Greaves
-r(269538),	-- Honorable Combatant's Mail Leggings \\ Honorable Combatant's Mail Greaves
-r(269539),	-- Honorable Combatant's Mail Leggings \\ Honorable Combatant's Mail Greaves
-r(269540),	-- Honorable Combatant's Mail Waistguard
-r(269541),	-- Honorable Combatant's Mail Waistguard
-r(269542),	-- Honorable Combatant's Mail Waistguard
-r(269543),	-- Honorable Combatant's Mail Armguards
-r(269544),	-- Honorable Combatant's Mail Armguards
-r(269545),	-- Honorable Combatant's Mail Armguards
-r(269546),	-- Honorable Combatant's Striker
-r(269547),	-- Honorable Combatant's Striker
-r(269548),	-- Honorable Combatant's Striker
-r(269549),	-- Honorable Combatant's Cestus
-r(269550),	-- Honorable Combatant's Cestus
-r(269551),	-- Honorable Combatant's Cestus
-r(269552),	-- Honorable Combatant's Bow
-r(269553),	-- Honorable Combatant's Bow
-r(269554),	-- Honorable Combatant's Bow
-9.0.1.33978
-r(309278),	-- Flayed Hide Treads \\ Necrolord Leather Treads
-r(309279),	-- Flayed Hide Vest \\ Necrolord Leather Vest
-r(309280),	-- Flayed Hide Gauntlets \\ Necrolord Leather Gauntlets
-r(309281),	-- Flayed Hide Helm \\ Necrolord Leather Helm
-r(309282),	-- Flayed Hide Leggings \\ Necrolord Leather Leggings
-r(309283),	-- Flayed Hide Pauldrons \\ Necrolord Leather Pauldrons
-r(309284),	-- Flayed Hide Waistguard \\ Necrolord Leather Waistguard
-r(309285),	-- Flayed Hide Armguards \\ Necrolord Leather Armguards
-r(309286),	-- Bonerivetted Treads \\ Necrolord Scale Treads
-r(309287),	-- Bonerivetted Vest \\ Necrolord Scale Vest
-r(309288),	-- Bonerivetted Gauntlets \\ Necrolord Scale Gauntlets
-r(309289),	-- Bonerivetted Helm \\ Necrolord Scale Helm
-r(309290),	-- Bonerivetted Leggings \\ Necrolord Scale Leggings
-r(309291),	-- Bonerivetted Pauldrons \\ Necrolord Scale Pauldrons
-r(309292),	-- Bonerivetted Waistguard \\ Necrolord Scale Waistguard
-r(309293),	-- Bonerivetted Armguards \\ Necrolord Scale Armguards
 
 

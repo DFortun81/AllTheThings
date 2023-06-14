@@ -35,6 +35,42 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 	end
 end
 
+
+------------------
+-- PATCH 0.5.3 --
+------------------
+-- ITEM --
+i(4301, 3779);	-- Barbaric Belt
+i(4297, 3771);	-- Barbaric Gloves
+i(5973, 7149);	-- Barbaric Leggings
+i(7360, 3765);	-- Dark Leather Gloves
+i(4296, 3769);	-- Dark Leather Shoulders
+i(2409, 2169);	-- Dark Leather Tunic
+i(2406, 2158);	-- Fine Leather Boots
+i(2408, 2164);	-- Fine Leather Gloves
+i(5972, 7133);	-- Fine Leather Pants
+i(14635, 3778);	-- Gem-studded Leather Belt
+i(7613, 3772);	-- Green Leather Armor
+i(4299, 3773);	-- Guardian Armor
+i(4298, 3775);	-- Guardian Belt
+i(5974, 7153);	-- Guardian Cloak
+i(4300, 3777);	-- Guardian Leather Bracers
+i(4294, 3767);	-- Hillman's Belt
+i(4293, 3762);	-- Hillman's Leather Vest
+i(5083, 5244);	-- Kodo Hide Bag
+i(5786, 6702);	-- Murloc Scale Belt
+i(5789, 6705);	-- Murloc Scale Bracers
+i(5787, 6703);	-- Murloc Scale Breastplate
+i(13288, 4097);	-- Raptor Hide Belt
+i(13287, 4096);	-- Raptor Hide Harness
+i(5788, 6704);	-- Thick Murloc Armor
+i(2407, 2163);	-- White Leather Jerkin
+-- REMOVED --
+i(0, 2108);	-- Leatherworking (Apprentice) (8.0.1)
+i(0, 3104);	-- Leatherworking (Journeyman) (8.0.1)
+i(0, 3811);	-- Leatherworking (Expert) (8.0.1)
+
+
 ------------------
 -- PATCH 1.11.1 --
 ------------------
@@ -94,6 +130,152 @@ i(0, 28221);	-- Polar Bracers
 i(0, 28220);	-- Polar Gloves
 i(0, 28219);	-- Polar Tunic
 
+------------------
+-- PATCH 2.0.1 --
+------------------
+
+------------------
+-- PATCH 2.1.0 --
+------------------
+-- ITEM --
+i(32430, 52733);	-- Bracers of Shackled Souls
+
+------------------
+-- PATCH 3.0.1 --
+------------------
+i(0, 51302);	-- Leatherworking
+-- TRAINER --
+i(0, 50949);	-- Arctic Belt
+i(0, 50948);	-- Arctic Boots
+i(0, 50944);	-- Arctic Chestpiece
+i(0, 50947);	-- Arctic Gloves
+i(0, 50945);	-- Arctic Leggings
+i(0, 50946);	-- Arctic Shoulderpads
+i(0, 51571);	-- Arctic Wristguards
+i(0, 50962);	-- Borean Armor Kit
+i(0, 55243);	-- Bracers of Deflection
+i(0, 55199);	-- Cloak of Tormented Skies
+i(0, 50955);	-- Frostscale Belt
+i(0, 50963);	-- Heavy Borean Armor Kit
+i(0, 50936);	-- Heavy Borean Leather
+i(0, 50943);	-- Iceborne Belt
+i(0, 50961);	-- Nerubian Belt
+-- NYI --
+i(0, 53681);	-- Garok's Battle
+i(0, 50935);	-- Unknown
+i(0, 53686);	-- Verdant Tundra Belt
+i(0, 53688);	-- Verdant Tundra Boots
+i(0, 53689);	-- Verdant Tundra Bracers
+i(0, 53687);	-- Verdant Tundra Cap
+i(0, 53690);	-- Verdant Tundra Shoulderpads
+
+------------------
+-- PATCH 7.0.1 --
+------------------
+i(0, 195119);	-- Leatherworking
+-- ITEM --
+i(137952, 196648);	-- Stonehide Leather Barding
+-- QUEST --
+i(0, 196457);	-- Fel Leather Cuff
+i(0, 196395);	-- Fel Leather Strap
+i(0, 196456);	-- Felhide Bracers
+i(0, 196428);	-- Rough Warhide Mask
+i(0, 196387);	-- Shaved Felhide
+i(0, 196375);	-- Shaved Stonehide Pelt
+i(0, 196425);	-- Stonehide Boot Base
+i(0, 196384);	-- Stonehide Boot Exterior
+i(0, 196469);	-- Stonehide Caparison
+i(0, 196467);	-- Stonehide Champron
+i(0, 196468);	-- Stonehide Crinet
+i(0, 196397);	-- Stonehide Leather Barding
+i(0, 196442);	-- Stonehide Leather Bed
+i(0, 196382);	-- Stonehide Leather Lining
+i(0, 196383);	-- Stonehide Leather Vamp
+i(0, 196385);	-- Stonehide Leather Strip
+i(0, 196427);	-- Sturdy Stonehide Boots
+i(0, 196379);	-- Tanned Stonehide Leather
+i(0, 196388);	-- Tanned Fel Leather
+
+------------------
+-- PATCH 7.0.3 --
+------------------
+-- TRAINER --
+i(0, 226115);	-- Blue Chain Leggings
+i(0, 226119);	-- Chain Belt
+i(0, 226113);	-- Chain Boots
+i(0, 226116);	-- Chain Bracers
+i(0, 226118);	-- Chain Gauntlets
+i(0, 226112);	-- Chain Hauberk
+i(0, 226117);	-- Chain Leggings
+i(0, 226121);	-- Chain Pauldrons
+i(0, 226114);	-- Crackling Scale Breastplate
+i(0, 226122);	-- Element Grips
+i(0, 226132);	-- Heavy Scale Belt
+i(0, 226134);	-- Heavy Scale Boots
+i(0, 226123);	-- Heavy Scale Gauntlets
+i(0, 226135);	-- Heavy Scale Hood
+i(0, 226126);	-- Heavy Scale Pants
+i(0, 226129);	-- Heavy Scale Pauldrons
+i(0, 226128);	-- Heavy Scale Shirt
+i(0, 226124);	-- Heavy Scale Wraps
+i(0, 226107);	-- Light Scale Belt
+i(0, 226109);	-- Light Scale Boots
+i(0, 226106);	-- Light Scale Bracers
+i(0, 226105);	-- Light Scale Gloves
+i(0, 226108);	-- Light Scale Jerkin
+i(0, 226111);	-- Light Scale Pants
+i(0, 226110);	-- Shamanic Treads
+i(0, 226137);	-- Spritescale Boots
+i(0, 226125);	-- Spritescale Britches
+i(0, 226127);	-- Spritescale Cinch
+i(0, 226136);	-- Spritescale Circlet
+i(0, 226120);	-- Spritescale Epaulets
+i(0, 226131);	-- Spritescale Gloves
+i(0, 226130);	-- Spritescale Jerkin
+i(0, 226133);	-- Spritescale Wraps
+-- ITEM --
+i(140637, 194788);	-- Dreadleather Belt [Rank 1]
+i(140636, 194787);	-- Dreadleather Bindings [Rank 1]
+i(140642, 194785);	-- Dreadleather Footpads [Rank 1]
+i(140641, 194790);	-- Dreadleather Gloves [Rank 1]
+i(140643, 194791);	-- Dreadleather Jerkin [Rank 1]
+i(140640, 194784);	-- Dreadleather Mask [Rank 1]
+i(140639, 194786);	-- Dreadleather Pants [Rank 1]
+i(140638, 194789);	-- Dreadleather Shoulderguard [Rank 1]
+i(141850, 194780);	-- Elderhorn Riding Harness
+i(140644, 194796);	-- Gravenscale Armbands [Rank 1]
+i(140645, 194797);	-- Gravenscale Girdle [Rank 1]
+i(140649, 194799);	-- Gravenscale Grips [Rank 1]
+i(140651, 194795);	-- Gravenscale Hauberk [Rank 1]
+i(140647, 194792);	-- Gravenscale Leggings [Rank 1]
+i(140646, 194798);	-- Gravenscale Spaulders [Rank 1]
+i(140650, 194793);	-- Gravenscale Treads [Rank 1]
+i(140648, 194794);	-- Gravenscale Warhelm [Rank 1]
+-- QUEST --
+i(0, 208596);	-- Tanned Stonehide Pelt
+i(0, 208615);	-- Stonehide Leather Strip
+
+------------------
+-- PATCH 7.1.0 --
+------------------
+-- ITEM --
+i(142407, 230936);	-- Drums of the Mountain [Rank 1]
+i(142408, 230954);	-- Drums of the Mountain [Rank 2]
+i(142409, 230955);	-- Drums of the Mountain [Rank 3]
+
+------------------
+-- PATCH 7.3.0 --
+------------------
+-- TRAINER --
+i(0, 239413);	-- The Sentinel's Eternal Refuge
+i(0, 239414);	-- Vigilance Perch
+-- ITEM --
+i(151740, 247800);	-- Fiendish Shoulderguards [Rank 1]
+i(151741, 247801);	-- Fiendish Shoulderguards [Rank 2]
+i(151742, 247802);	-- Fiendish Shoulderguards [Rank 3]
+i(151743, 247803);	-- Fiendish Spaulders [Rank 1]
+i(151744, 247804);	-- Fiendish Spaulders [Rank 2]
+i(151745, 247805);	-- Fiendish Spaulders [Rank 3]
 
 ------------------
 -- PATCH 8.0.1 --
@@ -125,6 +307,17 @@ i(0, 272278);	-- Hardened Tempest Hide
 i(0, 256782);	-- Hardened Tempest Knuckles [Rank 1]
 i(0, 256783);	-- Hardened Tempest Knuckles [Rank 2]
 i(0, 256768);	-- Hardened Tempest Leggings
+i(0, 269552);	-- Honorable Combatant's Bow [Rank 1]
+i(0, 269528);	-- Honorable Combatant's Leather Armguards [Rank 1]
+i(0, 269519);	-- Honorable Combatant's Leather Gauntlets [Rank 1]
+i(0, 269522);	-- Honorable Combatant's Leather Leggings [Rank 1]
+i(0, 269516);	-- Honorable Combatant's Leather Treads [Rank 1]
+i(0, 269525);	-- Honorable Combatant's Leather Waistguard [Rank 1]
+i(0, 269543);	-- Honorable Combatant's Mail Armguards [Rank 1]
+i(0, 269534);	-- Honorable Combatant's Mail Gauntlets [Rank 1]
+i(0, 269537);	-- Honorable Combatant's Mail Leggings [Rank 1]
+i(0, 269531);	-- Honorable Combatant's Mail Treads [Rank 1]
+i(0, 269540);	-- Honorable Combatant's Mail Waistguard [Rank 1]
 i(0, 256771);	-- Mistscale Boots
 i(0, 256779);	-- Mistscale Knuckles [Rank 1]
 i(0, 256780);	-- Mistscale Knuckles [Rank 2]
@@ -150,6 +343,28 @@ i(162500, 256767);	-- Emblazoned Tempest Boots
 i(162502, 256770);	-- Emblazoned Tempest Leggings
 i(162414, 256784);	-- Hardened Tempest Knuckles [Rank 3] (A)
 i(162768, 256784);	-- Hardened Tempest Knuckles [Rank 3] (H)
+i(162417, 269553);	-- Honorable Combatant's Bow [Rank 2]
+i(162418, 269554);	-- Honorable Combatant's Bow [Rank 3]
+i(162398, 269529);	-- Honorable Combatant's Leather Armguards [Rank 2]
+i(162399, 269530);	-- Honorable Combatant's Leather Armguards [Rank 3]
+i(162392, 269520);	-- Honorable Combatant's Leather Gauntlets [Rank 2]
+i(162393, 269521);	-- Honorable Combatant's Leather Gauntlets [Rank 3]
+i(162394, 269523);	-- Honorable Combatant's Leather Leggings [Rank 2]
+i(162395, 269524);	-- Honorable Combatant's Leather Leggings [Rank 3]
+i(162390, 269517);	-- Honorable Combatant's Leather Treads [Rank 2]
+i(162391, 269518);	-- Honorable Combatant's Leather Treads [Rank 3]
+i(162396, 269526);	-- Honorable Combatant's Leather Waistguard [Rank 2]
+i(162397, 269527);	-- Honorable Combatant's Leather Waistguard [Rank 3]
+i(162410, 269544);	-- Honorable Combatant's Mail Armguards [Rank 2]
+i(162411, 269545);	-- Honorable Combatant's Mail Armguards [Rank 3]
+i(162404, 269535);	-- Honorable Combatant's Mail Gauntlets [Rank 2]
+i(162405, 269536);	-- Honorable Combatant's Mail Gauntlets [Rank 3]
+i(162406, 269538);	-- Honorable Combatant's Mail Leggings [Rank 2]
+i(162407, 269539);	-- Honorable Combatant's Mail Leggings [Rank 3]
+i(162402, 269532);	-- Honorable Combatant's Mail Treads [Rank 2]
+i(162403, 269533);	-- Honorable Combatant's Mail Treads [Rank 3]
+i(162408, 269541);	-- Honorable Combatant's Mail Waistguard [Rank 2]
+i(162409, 269542);	-- Honorable Combatant's Mail Waistguard [Rank 3]
 i(162503, 256772);	-- Imbued Mistscale Boots
 i(162505, 256775);	-- Imbued Mistscale Leggings
 i(162499, 256766);	-- Imbued Tempest Boots
@@ -158,6 +373,13 @@ i(162413, 256781);	-- Mistscale Knuckles [Rank 3] (A)
 i(162767, 256781);	-- Mistscale Knuckles [Rank 3] (H)
 i(162412, 256789);	-- Recurve Bow of the Strands [Rank 3] (A)
 i(162766, 256789);	-- Recurve Bow of the Strands [Rank 3] (H)
+-- NYI --
+i(0, 269549);	-- Honorable Combatant's Cestus [Rank 1]
+i(0, 269550);	-- Honorable Combatant's Cestus [Rank 2]
+i(0, 269551);	-- Honorable Combatant's Cestus [Rank 3]
+i(0, 269546);	-- Honorable Combatant's Striker [Rank 1]
+i(0, 269547);	-- Honorable Combatant's Striker [Rank 2]
+i(0, 269548);	-- Honorable Combatant's Striker [Rank 3]
 
 ------------------
 -- PATCH 8.1.0 --
@@ -505,45 +727,61 @@ i(182669, 309222);	-- Loosened Belt
 i(0, 309195);	-- Reinforced Desolate Leather Cestus
 -- NYI --
 i(0, 338261);	-- Almost Thing
-i(0, 309269);	-- Gormhide Armguards 
-i(0, 309264);	-- Gormhide Gauntlets 
-i(0, 309265);	-- Gormhide Helm 
-i(0, 309266);	-- Gormhide Leggings 
-i(0, 309267);	-- Gormhide Pauldrons 
-i(0, 309262);	-- Gormhide Treads  
-i(0, 309263);	-- Gormhide Vest 
+i(0, 309293);	-- Bonerivetted Armguards
+i(0, 309288);	-- Bonerivetted Gauntlets
+i(0, 309289);	-- Bonerivetted Helm
+i(0, 309290);	-- Bonerivetted Leggings
+i(0, 309291);	-- Bonerivetted Pauldrons
+i(0, 309286);	-- Bonerivetted Treads
+i(0, 309287);	-- Bonerivetted Vest
+i(0, 309292);	-- Bonerivetted Waistguard
+i(0, 309285);	-- Flayed Hide Armguards
+i(0, 309280);	-- Flayed Hide Gauntlets
+i(0, 309281);	-- Flayed Hide Helm
+i(0, 309282);	-- Flayed Hide Leggings
+i(0, 309283);	-- Flayed Hide Pauldrons
+i(0, 309278);	-- Flayed Hide Treads
+i(0, 309279);	-- Flayed Hide Vest
+i(0, 309284);	-- Flayed Hide Waistguard
+i(0, 309269);	-- Gormhide Armguards
+i(0, 309264);	-- Gormhide Gauntlets
+i(0, 309265);	-- Gormhide Helm
+i(0, 309266);	-- Gormhide Leggings
+i(0, 309267);	-- Gormhide Pauldrons
+i(0, 309262);	-- Gormhide Treads
+i(0, 309263);	-- Gormhide Vest
 i(0, 309268);	-- Gormhide Waistguard
 i(0, 309194);	-- Macabre Striker
 i(0, 309223);	-- Modified Crafting Reagent 02
 i(0, 309224);	-- Modified Crafting Reagent 03
 i(0, 309225);	-- Modified Crafting Reagent 04
-i(0, 309261);	-- Sinscale Armguards 
-i(0, 309256);	-- Sinscale Gauntlets 
-i(0, 309257);	-- Sinscale Helm 
-i(0, 309258);	-- Sinscale Leggings 
-i(0, 309259);	-- Sinscale Pauldrons 
+i(0, 309261);	-- Sinscale Armguards
+i(0, 309256);	-- Sinscale Gauntlets
+i(0, 309257);	-- Sinscale Helm
+i(0, 309258);	-- Sinscale Leggings
+i(0, 309259);	-- Sinscale Pauldrons
 i(0, 309254);	-- Sinscale Treads
-i(0, 309255);	-- Sinscale Vest 
+i(0, 309255);	-- Sinscale Vest
 i(0, 309260);	-- Sinscale Waistguard
-i(0, 309253);	-- Sintanned Armguards 
-i(0, 309248);	-- Sintanned Gauntlets 
-i(0, 309249);	-- Sintanned Helm 
-i(0, 309250);	-- Sintanned Leggings 
-i(0, 309251);	-- Sintanned Pauldrons 
-i(0, 309246);	-- Sintanned Treads 
+i(0, 309253);	-- Sintanned Armguards
+i(0, 309248);	-- Sintanned Gauntlets
+i(0, 309249);	-- Sintanned Helm
+i(0, 309250);	-- Sintanned Leggings
+i(0, 309251);	-- Sintanned Pauldrons
+i(0, 309246);	-- Sintanned Treads
 i(0, 309247);	-- Sintanned Vest
 i(0, 309252);	-- Sintanned Waistguard
 i(0, 309270);	-- Wildskin Treads
-i(0, 309271);	-- Wildskin Vest 
-i(0, 309272);	-- Wildskin Gauntlets 
-i(0, 309273);	-- Wildskin Helm 
-i(0, 309274);	-- Wildskin Leggings 
-i(0, 309275);	-- Wildskin Pauldrons 
+i(0, 309271);	-- Wildskin Vest
+i(0, 309272);	-- Wildskin Gauntlets
+i(0, 309273);	-- Wildskin Helm
+i(0, 309274);	-- Wildskin Leggings
+i(0, 309275);	-- Wildskin Pauldrons
 i(0, 309276);	-- Wildskin Waistguard
-i(0, 309277);	-- Wildskin Armguards 
+i(0, 309277);	-- Wildskin Armguards
 -- UNSURE --
 i(0, 309214);	-- Unseelie Leather
-i(0, 309215);	-- Sinful Leather 
+i(0, 309215);	-- Sinful Leather
 i(0, 309216);	-- Necrotic Leather
 i(0, 309217);	-- Purified Leather
 

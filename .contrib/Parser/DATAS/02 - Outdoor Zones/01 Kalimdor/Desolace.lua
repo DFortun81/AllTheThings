@@ -2376,13 +2376,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.2, 38.0, DESOLACE },
 					["timeline"] = { "removed 5.0.4" },
 					["groups"] = {
-						i(5973, {	-- Pattern: Barbaric Leggings
+						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(14635, {	-- Pattern: Gem-studded Leather Belt
+						i(14635, {	-- Pattern: Gem-studded Leather Belt (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(7613, {	-- Pattern: Green Leather Armor
+						i(7613, {	-- Pattern: Green Leather Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(12232, {	-- Recipe: Carrion Surprise
