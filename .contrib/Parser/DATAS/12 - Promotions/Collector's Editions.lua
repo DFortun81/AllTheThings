@@ -1,6 +1,15 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+DIABLO_IV = createHeader({
+	-- https://www.wowhead.com/event=1382/a-greedy-emissary
+	readable = "Diablo IV",
+	icon = "Interface\\Icons\\DiabloAnniversary_HoradricCube",
+	text = {
+		en = "Diablo IV",
+		cn = "暗黑破坏神IV",
+	},
+});
 root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collector's Edition
 	tier(CLASSIC_TIER, {
 		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
