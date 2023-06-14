@@ -25,9 +25,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),
-				q(75622, {	-- Calling All Competitors!
+				q(75622, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Calling All Competitors!
 					["provider"] = { "i", 205187 },	-- Artisan's Consortium Flier
-				}),
+					["g"] = {
+						i(204186),	-- Greater Trophy of Conquest
+						i(204187),	-- Trophy of Conquest
+					},
+				})),
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 196191 },	-- Malicia

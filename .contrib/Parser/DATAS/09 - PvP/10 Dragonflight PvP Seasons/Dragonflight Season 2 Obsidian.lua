@@ -1012,6 +1012,17 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
 						}),
+						filter(REAGENTS, {
+							i(204186, {	-- Greater Trophy of Conquest
+								["cost"] = { { "c", CONQUEST, 875 } },
+							}),
+							i(204188, {	-- Lesser Trophy of Conquest
+								["cost"] = { { "c", CONQUEST, 525 } },
+							}),
+							i(204187, {	-- Trophy of Conquest
+								["cost"] = { { "c", CONQUEST, 700 } },
+							}),
+						}),
 						filter(TRINKET_F, {
 							i(205708, {	-- Obsidian Gladiator's Badge of Ferocity
 								["cost"] = { { "c", CONQUEST, 700 } },
