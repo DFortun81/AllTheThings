@@ -1150,10 +1150,10 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71448, 382385);	-- Deadline Deadeyes
 			FirstCraft(71441, 382388);	-- Lightweight Ocular Lenses
 			FirstCraft(71447, 382384);	-- Milestone Magnifiers
-			--FirstCraft(x, 409351, ADDED_10_1_0);	-- Obsidian Combatant's Cloth Goggles
-			--FirstCraft(x, 409353, ADDED_10_1_0);	-- Obsidian Combatant's Leather Goggles
-			--FirstCraft(x, 409355, ADDED_10_1_0);	-- Obsidian Combatant's Mail Goggles
-			--FirstCraft(x, 409356, ADDED_10_1_0);	-- Obsidian Combatant's Plate Goggles
+			FirstCraft(75715, 409351, ADDED_10_1_0);	-- Obsidian Combatant's Cloth Goggles
+			FirstCraft(75716, 409353, ADDED_10_1_0);	-- Obsidian Combatant's Leather Goggles
+			FirstCraft(75717, 409355, ADDED_10_1_0);	-- Obsidian Combatant's Mail Goggles
+			FirstCraft(75718, 409356, ADDED_10_1_0);	-- Obsidian Combatant's Plate Goggles
 			FirstCraft(71443, 382390);	-- Oscillating Wilderness Opticals
 			FirstCraft(71442, 382389);	-- Peripheral Vision Projectors
 			FirstCraft(71446, 382383);	-- Quality-Assured Optics
@@ -1624,9 +1624,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71591, 383325);	-- Darkmoon Deck Box: Inferno
 			FirstCraft(71590, 383767);	-- Darkmoon Deck Box: Rime
 			FirstCraft(71593, 383772);	-- Darkmoon Deck Box: Watcher
-			--FirstCraft(x, 403168, ADDED_10_1_0);	-- Obsidian Combatant's Medallion
-			--FirstCraft(x, 403167, ADDED_10_1_0);	-- Obsidian Combatant's Insignia of Alacrity
-			--FirstCraft(x, 403166, ADDED_10_1_0);	-- Obsidian Combatant's Emblem
+			FirstCraft(74832, 403168, ADDED_10_1_0);	-- Obsidian Combatant's Medallion
+			FirstCraft(74833, 403167, ADDED_10_1_0);	-- Obsidian Combatant's Insignia of Alacrity
+			FirstCraft(74834, 403166, ADDED_10_1_0);	-- Obsidian Combatant's Emblem
 			-- Weapons
 			FirstCraft(71596, 383539);	-- Core Explorer's Compendium
 			FirstCraft(71595, 383540);	-- Crackling Codex of the Isles
@@ -1702,7 +1702,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71533, 383576);	-- Cliffside Wylderdrake: Triple Head Horns
 			-- Dragonriding -- Winding Slitherdrake
 			FirstCraft(75577, 408218, ADDED_10_1_0);	-- Winding Slitherdrake: Blue and Silver Armor
-			--FirstCraft(x, 408222, ADDED_10_1_0);	-- Winding Slitherdrake: Curved Chin Horn
+			FirstCraft(75579, 408222, ADDED_10_1_0);	-- Winding Slitherdrake: Curved Chin Horn
 			FirstCraft(75581, 408223, ADDED_10_1_0);	-- Winding Slitherdrake: Small Finned Throat
 			--FirstCraft(x, 408221, ADDED_10_1_0);	-- Winding Slitherdrake: White Hair
 			FirstCraft(75578, 408220, ADDED_10_1_0);	-- Winding Slitherdrake: Yellow and Silver Armor

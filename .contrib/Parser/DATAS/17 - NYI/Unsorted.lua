@@ -1480,9 +1480,6 @@ root(ROOTS.Unsorted, {
 				q(74560),	--
 				q(74564),	--
 				q(74572),	-- Make it Rain
-				q(74832),	--
-				q(74833),	--
-				q(74834),	--
 				q(74893),	--
 				q(74904),	--
 				q(74958),	--
@@ -1562,7 +1559,6 @@ root(ROOTS.Unsorted, {
 				q(75572),	--
 				q(75574),	--
 				q(75576),	-- Grim Guzzler Invasion!
-				q(75579),	--
 				q(75580),	--
 				q(75582),	--
 				q(75583),	--
@@ -1595,10 +1591,6 @@ root(ROOTS.Unsorted, {
 				q(75647),	-- Honor the Flame
 				q(75650),	-- Honor the Flame
 				-- 10.1.0.48661
-				q(75715),	--
-				q(75716),	--
-				q(75717),	--
-				q(75718),	--
 				q(75719),	-- [DNT] Test Quest
 				q(75726),	-- Sweaty Armor
 				q(75763),	--
