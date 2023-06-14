@@ -14,13 +14,21 @@ root(ROOTS.Zones, {
 			n(ACHIEVEMENTS, {
 				classicAch(1678, {	-- Loremaster of Kalimdor (A)
 					-- #if BEFORE WRATH
+					-- #if AFTER TBC
 					["description"] = "Complete 700 quests in Kalimdor.",
+					-- #else
+					["description"] = "Complete 640 quests in Kalimdor.",
+					-- #endif
 					-- #endif
 					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_KALIMDOR_OnUpdate]],
+					-- #if AFTER TBC
 					["rank"] = 700,
+					-- #else
+					["rank"] = 640,
+					-- #endif
 					-- #else
 					["sym"] = {{"meta_achievement",
 						4925,	-- Ashenvale Quests (Alliance)
@@ -52,14 +60,22 @@ root(ROOTS.Zones, {
 				}),
 				classicAch(1680, {	-- Loremaster of Kalimdor (H)
 					-- #if BEFORE WRATH
+					-- #if AFTER TBC
 					["description"] = "Complete 685 quests in Kalimdor.",
+					-- #else
+					["description"] = "Complete 625 quests in Kalimdor.",
+					-- #endif
 					-- #endif
 					["timeline"] = { "deleted 4.0.3" },
 					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_KALIMDOR_OnUpdate]],
+					-- #if AFTER TBC
 					["rank"] = 685,
+					-- #else
+					["rank"] = 625,
+					-- #endif
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
