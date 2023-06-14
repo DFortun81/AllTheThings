@@ -5213,13 +5213,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.6, 74.6, ORGRIMMAR },
 					["timeline"] = { "added 7.1.0.22810" },
 					["races"] = HORDE_ONLY,
-					["u"] = WOW_ANNIVERSARY,
 					["sym"] = {
-						{"select", "headerID", FIFTEENTH_ANNIVERSARY },	-- Select WoW's 15th Anniversary
-						{"pop"},										-- Discard Header and aquire their children
-						{"where", "headerID", VENDORS },				-- Select Vendors
-						{"pop"},										-- Discard Header and aquire their children
-						{"where", "npcID", 158061},						-- Select Historian Ma'di
+						{"select", "npcID", 158061},					-- Select Historian Ma'di
 						{"pop"},										-- Discard Header and aquire their children
 					},
 				})),

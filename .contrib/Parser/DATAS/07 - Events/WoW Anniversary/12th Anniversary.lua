@@ -1,9 +1,15 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-
--- One-Time Anniversary Content
-root(ROOTS.WorldEvents, n(TWELFTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+WOW_ANNIVERSARY_TWELVE = createHeader({
+	readable = "WoW's 12th Anniversary",
+	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	eventID = 589,
+	text = {
+		en = [[~select(2,GetAchievementInfo(10741))]],
+	},
+});
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_TWELVE, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(10741),	-- 12th Anniversary
 	n(MAILBOX, {
 		i(139284, {	-- Anniversary Gift
@@ -29,7 +35,7 @@ root(ROOTS.WorldEvents, n(TWELFTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM
 })));
 
 -- Yearly Anniversary Content
-root(ROOTS.WorldEvents, n(TWELFTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_TWELVE, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(QUESTS, {
 		-- Correct answers is in the bottom
 		q(43461, {	-- A Time to Reflect

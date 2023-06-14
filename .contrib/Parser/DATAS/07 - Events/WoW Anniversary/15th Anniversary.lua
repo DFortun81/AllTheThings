@@ -1,9 +1,15 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-
--- One-Time Anniversary Content
-root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+WOW_ANNIVERSARY_FIFTEEN = createHeader({
+	readable = "WoW's 15th Anniversary",
+	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	eventID = 808,
+	text = {
+		en = [[~select(2,GetAchievementInfo(13917))]],
+	},
+});
+root(ROOTS.WorldEvents,  n(WOW_ANNIVERSARY_FIFTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(13917),	-- 15th Anniversary
 	n(157113, {	-- Chromie
 		--	inst(2235, {	-- doesn't show up in-game
@@ -582,7 +588,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 })));
 
 -- Yearly Anniversary Content
-root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_FIFTEEN, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	m(1537, {	-- Alterac Valley
 		["icon"] = 236711,	-- Alterac Valley
 		["maps"] = { HILLSBRAD_FOOTHILLS },

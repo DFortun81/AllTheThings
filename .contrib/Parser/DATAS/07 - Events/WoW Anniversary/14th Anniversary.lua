@@ -1,9 +1,15 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-
--- One-Time Anniversary Content
-root(ROOTS.WorldEvents, n(FOURTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+WOW_ANNIVERSARY_FOURTEEN = createHeader({
+	readable = "WoW's 14th Anniversary",
+	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	eventID = 807,
+	text = {
+		en = [[~select(2,GetAchievementInfo(12827))]],
+	},
+});
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_FOURTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(12827),	-- 14th Anniversary
 	n(MAILBOX, {
 		i(162637, {	-- Anniversary Gift
@@ -17,7 +23,7 @@ root(ROOTS.WorldEvents, n(FOURTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 })));
 
 -- Yearly Anniversary Content
-root(ROOTS.WorldEvents, n(FOURTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_FOURTEEN, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(VENDORS, {
 		n(110035, {	-- Historian Jupa [Horde]
 			["coord"] = { 36.6, 74.6, ORGRIMMAR },

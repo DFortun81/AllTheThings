@@ -1,8 +1,15 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-
-root(ROOTS.WorldEvents, n(ELEVENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+WOW_ANNIVERSARY_ELEVEN = createHeader({
+	readable = "WoW's 11th Anniversary",
+	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	eventID = 566,
+	text = {
+		en = [[~select(2,GetAchievementInfo(10058))]],
+	},
+});
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_ELEVEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(10058),	-- 11th Anniversary
 	n(MAILBOX, {
 		i(128513, {	-- Anniversary Gift

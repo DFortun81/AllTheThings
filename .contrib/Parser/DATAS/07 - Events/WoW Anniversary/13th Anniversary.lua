@@ -1,9 +1,15 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-
--- One-Time Anniversary Content
-root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+WOW_ANNIVERSARY_THIRTEEN = createHeader({
+	readable = "WoW's 13th Anniversary",
+	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	eventID = 693,
+	text = {
+		en = [[~select(2,GetAchievementInfo(11848))]],
+	},
+});
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_THIRTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(11848),	-- 13th Anniversary
 	n(MAILBOX, {
 		i(147876, {	-- Anniversary Gift
@@ -31,7 +37,7 @@ root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 })));
 
 -- Yearly Anniversary Content
-root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_THIRTEEN, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(QUESTS, {
 		q(47253, {	-- The Originals [Alliance]
 			["qg"] = 110034,	-- Historian Llore

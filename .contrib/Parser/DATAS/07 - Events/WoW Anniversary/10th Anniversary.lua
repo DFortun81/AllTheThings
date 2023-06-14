@@ -1,8 +1,15 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-
-root(ROOTS.WorldEvents, n(TENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+WOW_ANNIVERSARY_TEN = createHeader({
+	readable = "WoW's 10th Anniversary",
+	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	eventID = 514,
+	text = {
+		en = [[~select(2,GetAchievementInfo(8820))]],
+	},
+});
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_TEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(8820, {	-- 10th Anniversary
 		i(115301),	-- Molten Corgi (PET!)
 	}),

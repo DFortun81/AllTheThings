@@ -1,9 +1,15 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-
--- One-Time Anniversary Content
-root(ROOTS.WorldEvents, n(SIXTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+WOW_ANNIVERSARY_SIXTEEN = createHeader({
+	readable = "WoW's 16th Anniversary",
+	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	eventID = 1181,
+	text = {
+		en = [[~select(2,GetAchievementInfo(14271))]],
+	},
+});
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_SIXTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(14271),	-- 16th Anniversary
 	n(MAILBOX, {
 		i(178513, {	-- Anniversary Gift
@@ -15,7 +21,7 @@ root(ROOTS.WorldEvents, n(SIXTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FR
 })));
 
 -- Yearly Anniversary Content
-root(ROOTS.WorldEvents, n(SIXTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_SIXTEEN, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(VENDORS, {
 		n(158061, {	-- Historian Ma'di
 			["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },

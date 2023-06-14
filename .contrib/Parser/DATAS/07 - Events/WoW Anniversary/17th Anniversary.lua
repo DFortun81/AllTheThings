@@ -1,9 +1,15 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-
--- One-Time Anniversary Content
-root(ROOTS.WorldEvents, n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
+WOW_ANNIVERSARY_SEVENTEEN = createHeader({
+	readable = "WoW's 17th Anniversary",
+	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	eventID = 1225,
+	text = {
+		en = [[~select(2,GetAchievementInfo(14942))]],
+	},
+});
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(14942),	-- WoW's 17th Anniversary
 	n(MAILBOX, {
 		i(185906, {	-- Anniversary Gift
@@ -15,7 +21,7 @@ root(ROOTS.WorldEvents, n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_
 })));
 
 -- Yearly Anniversary Content -- also used for 18th anniversary
-root(ROOTS.WorldEvents, n(SEVENTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(QUESTS, {
 		q(60215, {	-- Doomwalkin' Has Come Knockin'
 			["qg"] = 157113,	-- Chromie
