@@ -3389,6 +3389,7 @@ namespace ATT
                 case "musicRollID":
                 case "name":
                 case "nextRecipeID":
+                case "nomerge":
                 case "npcID": // TODO: eventually consolidate with creatureID
                 case "objectID":
                 case "order":

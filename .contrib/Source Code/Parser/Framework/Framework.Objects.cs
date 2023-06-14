@@ -1716,6 +1716,7 @@ end");
                     case "ordered":
                     case "sort":
                     case "sourceIgnored":
+                    case "nomerge":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;
@@ -2605,6 +2606,12 @@ end");
             /// </summary>
             private static Dictionary<string, object> FindMatchingData(List<object> container, Dictionary<string, object> data2)
             {
+                // if the data is explicitly defined as not to merge
+                if (data2.TryGetValue("nomerge", out bool nomerge) && nomerge)
+                {
+                    return null;
+                }
+
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
                 if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out object keyObject))
                 {

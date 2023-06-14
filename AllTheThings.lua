@@ -2776,56 +2776,16 @@ NestObjects,
 PriorityNestObjects;
 app.searchCache = searchCache;
 (function()
--- local keysByPriority = {	-- Sorted by frequency of use.
--- 	"s",
--- 	"toyID",
--- 	"itemID",
--- 	"speciesID",
--- 	"questID",
--- 	"npcID",
--- 	"creatureID",
--- 	"objectID",
--- 	"mapID",
--- 	"criteriaID",
--- 	"achID",
--- 	"currencyID",
--- 	"encounterID",
--- 	"instanceID",
--- 	"factionID",
--- 	"recipeID",
--- 	"spellID",
--- 	"classID",
--- 	"professionID",
--- 	"categoryID",
--- 	"followerID",
--- 	"illusionID",
--- 	"tierID",
--- 	"unit",
--- 	"dungeonID",
--- 	"headerID"
--- };
--- This function has basically 0 useful utilization that I have found
--- local function GetKey(t)
--- 	for _,key in ipairs(keysByPriority) do
--- 		if t[key] then
--- 			app.PrintDebug("rawget.key",key,t[key])
--- 			return key;
--- 		end
--- 	end
--- 	for _,key in ipairs(keysByPriority) do
--- 		if t[key] then	-- This goes a bit deeper.
--- 			app.PrintDebug("t[key]",key,t[key])
--- 			return key;
--- 		end
--- 	end
--- 	--[[
--- 	print("could not determine key for object")
--- 	for key,value in pairs(t) do
--- 		print(key, value);
--- 	end
--- 	--]]
--- 	app.PrintDebug("GetKey.none")
--- end
+local uniques = {};
+-- Provides a Unique Counter value for the Key referenced on each reference
+local UniqueCounter = setmetatable({}, {
+	__index = function(t, key)
+		local next = (uniques[key] or 0) + 1;
+		-- app.PrintDebug("UniqueCounter",key,next)
+		uniques[key] = next;
+		return next;
+	end
+});
 local function CreateHash(t)
 	local key = t.key or t.text;
 	if key then
@@ -2878,6 +2838,9 @@ local function CreateHash(t)
 		if t.rank then
 			hash = hash .. "." .. t.rank;
 			-- app.PrintDebug("hash.rank",hash)
+		end
+		if t.nomerge then
+			hash = hash.."__"..UniqueCounter["Hash"];
 		end
 		t.hash = hash;
 		return hash;
@@ -4915,7 +4878,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if group.isLimited then
 			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
 		end
-		
+
 		-- Description for Items
 		if group.lore and app.Settings:GetTooltipSetting("Lore") then
 			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipLore });
@@ -13197,7 +13160,7 @@ app.GetEventCache = function()
 end
 local function GetEventTimeString(d)
 	if d then
-		return format("%s, %s %02d, %d at %02d:%02d", 
+		return format("%s, %s %02d, %d at %02d:%02d",
 			CALENDAR_WEEKDAY_NAMES[d.weekday],
 			CALENDAR_FULLDATE_MONTH_NAMES[d.month],
 			d.monthDay, d.year, d.hour, d.minute );
@@ -13218,7 +13181,7 @@ app.GetBestEventTimeStrings = function(times)
 		if nextData.endTime then
 			tinsert(schedule, "Start:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextData.startTime));
 			tinsert(schedule, "End:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextData.endTime));
-			
+
 		else
 			tinsert(schedule, "Active:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextData.startTime));
 		end
