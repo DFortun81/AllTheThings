@@ -10568,7 +10568,9 @@ end
 app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textOverride)
 	local standing, maxStanding, isRenown = GetCurrentFactionStandings(factionID, requestedStanding);
 	if isRenown then
-		return Colorize(textOverride or sformat(COVENANT_RENOWN_LEVEL_TOAST, standing), app.Colors.Renown);
+		local progress = math.min(standing, maxStanding) / maxStanding;
+			-- Renown %d
+		return Colorize(textOverride or sformat(COVENANT_RENOWN_LEVEL_TOAST, standing), GetProgressColor(progress));
 	end
 	local friendStandingText = GetFriendshipReputation(factionID, "reaction");
 	if friendStandingText then
@@ -10576,8 +10578,9 @@ app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textO
 		-- prevent any weirdness of requesting a standing higher than the max for the friendship
 		local progress = math.min(standing, maxStanding) / maxStanding;
 		-- if we requested a specific standing, we can't rely on the friendship text to be accurate
-		if requestedStanding then
-			friendStandingText = "Rank "..requestedStanding;
+		if requestedStanding and not textOverride then
+			-- Rank %d
+			friendStandingText = sformat(AZERITE_ESSENCE_RANK, requestedStanding);
 		end
 		-- friendships simply colored based on rank progress, some friendships have more ranks than faction standings... makes it weird to correlate them
 		return Colorize(textOverride or friendStandingText, GetProgressColor(progress));

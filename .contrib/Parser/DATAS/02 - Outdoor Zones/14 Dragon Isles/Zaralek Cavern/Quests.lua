@@ -526,7 +526,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						74522,	-- Remnants
 					},
 					["provider"] = { "n", 202809 },	-- Wrathion
-					["maps"] = { 2171, 2172 },	-- Aberrus, the Shadowed Crucible
+					["maps"] = { 2171, 2172, 2173 },	-- Aberrus, the Shadowed Crucible
 				}),
 				q(75028, {	-- All the Broken Pieces
 					["sourceQuests"] = { 75018 },	-- Into the Dark
