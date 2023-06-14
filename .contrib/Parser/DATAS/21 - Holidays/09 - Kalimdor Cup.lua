@@ -4,13 +4,12 @@
 KALIMDOR_CUP_HEADER = createHeader({
 	readable = "Kalimdor Cup",
 	constant = "KALIMDOR_CUP_HEADER",
-	--icon = [[~_.asset("")]],
-	--eventID = ,	-- Not known yet
+	icon = "Interface\\Icons\\misc_arrowrightcalendar_kalimdorcupstart",
+	eventID = 1395,
 	text = {
 		en = "Kalimdor Cup",
 	},
 });
---[[
 local RIDERS_OF_AZEROTH_BADGE = 2588;
 root(ROOTS.Holidays, applyholiday(KALIMDOR_CUP, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, n(KALIMDOR_CUP_HEADER, {
 	n(ACHIEVEMENTS, {
@@ -151,4 +150,3 @@ root(ROOTS.Holidays, applyholiday(KALIMDOR_CUP, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 }))));
---]]
