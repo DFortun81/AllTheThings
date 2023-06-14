@@ -65,6 +65,7 @@ _.HeaderConstants = {
 
 local a = L.HEADER_EVENTS;
 for key,value in pairs({
+	[-1000087] = 1382,
 	[-1000187] = 638,
 	[-1000188] = 1053,
 	[-1000189] = 647,
