@@ -3745,7 +3745,7 @@ local SubroutineCache = {
 		{"select", "headerID", -688},	-- Demonic Gladiator Season 7
 		{"pop"},	-- Remove Season Header and push the children into the processing queue.
 		{"pop"},	-- Remove Faction Header and push the children into the processing queue.
-		{"contains", "headerID", -660, -661},	-- Select only the Aspirant / Combatant Gear & Gladiator Headers.
+		{"contains", "headerID", app.HeaderConstants.PVP_COMBATANT, app.HeaderConstants.PVP_GLADIATOR},	-- Select only the Aspirant / Combatant Gear & Gladiator Headers.
 		{"pop"},	-- Remove Aspirant / Combatant Gear Header and push the children into the processing queue.
 		{"pop"},	-- Remove Class / Armor Header and push the children into the processing queue.
 		{"finalize"},	-- Push the items to the finalized list.

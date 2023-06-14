@@ -704,41 +704,25 @@ for key,value in pairs({
 		[-397] = "哨站",												-- Outposts
 	-- 5.3
 		[-398] = "战场：贫瘠之地",											-- Battlefield: Barrens
-	-- Classic
-		[-422] = "阿塔莱防御者",											-- Atal'ai Defenders
-		[-423] = "四骑士",												-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "战争宝箱",											-- Daily War Chest
 	-- Misc
 		[-493] = "破碎前置任务拾取",										-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-520] = "资料片前夕",											-- Expansion Pre-Launch
-		[-522] = "扎拉赞恩的灭亡",										-- Zalazane's Fall
-		[-523] = "元素动荡",												-- Elemental Unrest
-		[-538] = "安其拉之战捐献",											-- The Ahn'Qiraj War Effort
-		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
-		[-540] = "天灾入侵",											-- The Scourge Invasion
-		[-541] = "希利苏斯流沙",											-- The Silithyst Must Flow
-		[-542] = "开启黑暗之门",											-- The Opening of the Dark Portal
 		[-543] = "军团入侵",											-- Legion Invasions
-	-- PvP Header
-		-- PvP Set Names
-			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
-			[-660] = "争斗者套装",									-- Combatant PvP Gear (WoD, Legion)
-			[-661] = "角斗士套装",									-- Gladiator PvP Gear
-			[-662] = "精锐套装",										-- Elite PvP Gear
-		-- Cataclysm PvP Seasons
-			[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",	-- Vicious Gladiator: Season 9
-			[-656] = "荣誉装备冷酷赛季",									-- Honor Gear Ruthless (S10)
-			[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",	-- Ruthless Gladiator: Season 10
-			[-654] = "荣誉装备灾变赛季",									-- Honor Gear Cataclysmic (S11)
-			[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",	-- Cataclysmic Gladiator: Season 11
-		-- Mists of Pandaria PvP Seasons
-			[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
-			[-653] = "荣誉装备暴虐赛季",									-- Honor Gear Tyrannical (S13)
-			[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
-			[-652] = "荣誉装备恶孽赛季",									-- Honor Gear Grievous (S14)
-			[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
+	-- Cataclysm PvP Seasons
+		[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",	-- Vicious Gladiator: Season 9
+		[-656] = "荣誉装备冷酷赛季",									-- Honor Gear Ruthless (S10)
+		[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",	-- Ruthless Gladiator: Season 10
+		[-654] = "荣誉装备灾变赛季",									-- Honor Gear Cataclysmic (S11)
+		[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",	-- Cataclysmic Gladiator: Season 11
+	-- Mists of Pandaria PvP Seasons
+		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
+		[-653] = "荣誉装备暴虐赛季",									-- Honor Gear Tyrannical (S13)
+		[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
+		[-652] = "荣誉装备恶孽赛季",									-- Honor Gear Grievous (S14)
+		[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
 	-- Pets
 		[-795] = "宠物对战地下城",										-- Pet Battle Dungeons
 	-- Chests

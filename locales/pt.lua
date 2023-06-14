@@ -671,10 +671,6 @@ for key,value in pairs({
 		[-255] = "Armadura Tradicional",							-- Heritage
 	-- 5.3
 		[-398] = "Campo de Batalha: Sertões",						-- Battlefield: Barrens
-	-- Classic
-		[-423] = "Os Quatro Cavaleiros",							-- The Four Horsemen
-		[-539] = "Cetro das Areias Cambiantes",						-- The Scepter of the Shifting Sands
-		[-542] = "A abertura do Portal Negro",						-- The Opening of the Dark Portal
 	-- Chests
 		[-851] = "Depósito do Império Negro",						-- Black Empire Cache
 	-- Shadowlands Header

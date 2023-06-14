@@ -671,10 +671,6 @@ for key,value in pairs({
 		[-255] = "Armatura Retaggio",								-- Heritage
 	-- 5.3
 		[-398] = "Campo di battaglia: le Savane",					-- Battlefield: Barrens
-	-- Classic
-		[-423] = "I Cavalieri dell'Apocalisse",						-- The Four Horsemen
-		[-539] = "Scettro delle Sabbie Mutevoli",					-- The Scepter of the Shifting Sands
-		[-542] = "L'apertura del Portale Oscuro",					-- The Opening of the Dark Portal
 	-- Chests
 		[-851] = "Cassa dell'Impero Nero",							-- Black Empire Cache
 	-- Shadowlands Header

@@ -675,10 +675,6 @@ for key,value in pairs({
 		[-255] = "Armadura dinástica",								-- Heritage
 	-- 5.3
 		[-398] = "Campo de batalla: Los Baldíos",					-- Battlefield: Barrens
-	-- Classic
-		[-423] = "Los Cuatro Jinetes",								-- The Four Horsemen
-		[-539] = "El cetro del Mar de Dunas",						-- The Scepter of the Shifting Sands
-		[-542] = "La apertura del Portal Oscuro",					-- The Opening of the Dark Portal
 	-- Chests
 		[-851] = "Alijo del Imperio Negro",							-- Black Empire Cache
 	-- Shadowlands Header

@@ -676,36 +676,23 @@ for key,value in pairs({
 		[-397] = "Avant-postes",									-- Outposts
 	-- 5.3
 		[-398] = "Champ de bataille : les Tarides",					-- Battlefield: Barrens
-	-- Classic
-		[-422] = "Défenseurs Atal'ai",								-- Atal'ai Defenders
-		[-423] = "Les quatre cavaliers",							-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "Coffre de Guerre",								-- Daily War Chest
 	-- Misc
 		[-520] = "Pré-Lancement de l’Extension",					-- Expansion Pre-Launch
-		[-522] = "La chute de Zalazane",							-- Zalazane's Fall
-		[-538] = "Effort de guerre d’Ahn'Qiraj",					-- The Ahn'Qiraj War Effort
-		[-539] = "Le Sceptre des Sables changeants",				-- The Scepter of the Shifting Sands
-		[-542] = "L'ouverture de la Porte des ténèbres",			-- The Opening of the Dark Portal
 		[-543] = "Invasions de Legion ",							-- Legion Invasions
-	-- PvP Header
-		-- PvP Set Names
-			[-659] = "Équipement Aspirant",							-- Aspirant PvP Gear (WoD, BfA)
-			[-660] = "Équipement Combattant",						-- Combatant PvP Gear (WoD, Legion)
-			[-661] = "Équipement Gladiateur",						-- Gladiator PvP Gear
-			[-662] = "Équipement Élite",							-- Elite PvP Gear
-		-- Cataclysm PvP Seasons
-			[-672] = select(2, GetAchievementInfo(6002)).." : Saison 9",	-- Vicious Gladiator: Season 9
-			[-656] = "Équipement Honneur Gladiateur sans pitié",			-- Honor Gear Ruthless Season
-			[-673] = select(2, GetAchievementInfo(6124)).." : Saison 10",	-- Ruthless Gladiator: Season 10
-			[-654] = "Équipement Honneur Saison Cataclysmique",				-- Honor Gear Cataclysmic Season
-			[-674] = select(2, GetAchievementInfo(6938)).." : Saison 11",	-- Cataclysmic Gladiator: Season 11
-		-- Mists of Pandaria PvP Seasons
-			[-675] = select(2, GetAchievementInfo(8214))..": Saison 12",	-- Malevolent Gladiator: Season 12
-			[-653] = "Équipement Honneur Saison Tyrannique",				-- Honor Gear Tyrannical Season
-			[-676] = select(2, GetAchievementInfo(8791))..": Saison 13",	-- Tyrannical Gladiator: Season 13
-			[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
-			[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
+	-- Cataclysm PvP Seasons
+		[-672] = select(2, GetAchievementInfo(6002)).." : Saison 9",	-- Vicious Gladiator: Season 9
+		[-656] = "Équipement Honneur Gladiateur sans pitié",			-- Honor Gear Ruthless Season
+		[-673] = select(2, GetAchievementInfo(6124)).." : Saison 10",	-- Ruthless Gladiator: Season 10
+		[-654] = "Équipement Honneur Saison Cataclysmique",				-- Honor Gear Cataclysmic Season
+		[-674] = select(2, GetAchievementInfo(6938)).." : Saison 11",	-- Cataclysmic Gladiator: Season 11
+	-- Mists of Pandaria PvP Seasons
+		[-675] = select(2, GetAchievementInfo(8214))..": Saison 12",	-- Malevolent Gladiator: Season 12
+		[-653] = "Équipement Honneur Saison Tyrannique",				-- Honor Gear Tyrannical Season
+		[-676] = select(2, GetAchievementInfo(8791))..": Saison 13",	-- Tyrannical Gladiator: Season 13
+		[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
+		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Pets
 		[-795] = "Mascotte des combat des donjons",					-- Pet Battle Dungeons
 	-- Chests

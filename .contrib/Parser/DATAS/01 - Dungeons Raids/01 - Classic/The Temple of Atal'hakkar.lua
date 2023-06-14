@@ -1,6 +1,16 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+ATALAI_DEFENDERS = createHeader({
+	readable = "Atal'ai Defenders",
+	icon = "Interface\\Icons\\Inv_misc_head_troll_01",
+	text = {
+		en = "Atal'ai Defenders",
+		fr = "Défenseurs Atal'ai",
+		ru = "Защитники Атал'ай",
+		cn = "阿塔莱防御者",
+	},
+});
 local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
 	if not t.collected and C_QuestLog.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1 then
 		if not _.AccountWideQuests then
@@ -651,7 +661,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(-422, {	-- Atal'ai Defenders
+			n(ATALAI_DEFENDERS, {
 				["description"] = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
 				["providers"] = {
 					{ "n", 5713 },	-- Gasher

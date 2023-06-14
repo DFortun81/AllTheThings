@@ -684,40 +684,25 @@ for key,value in pairs({
 		[-397] = "Аванпосты",										-- Outposts
 	-- 5.3
 		[-398] = "Поле битвы: Степи",								-- Battlefield: Barrens
-	-- Classic
-		[-422] = "Защитники Атал'ай",								-- Atal'ai Defenders
-		[-423] = "Четыре Всадника",									-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "Трофейный сундук",								-- Daily War Chest
 	-- Misc
 		[-493] = "Сломанный лут с миссий",							-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-520] = "Препатч",											-- Expansion Pre-Launch
-		[-522] = "Падение Залазана",								-- Zalazane's Fall
-		[-523] = "Буйство элементалей",								-- Elemental Unrest
-		[-538] = "Война в Ан'Кираже",								-- The Ahn'Qiraj War Effort
-		[-539] = "Скипетр Зыбучих песков",							-- The Scepter of the Shifting Sands
-		[-540] = "Вторжение Плети",									-- The Scourge Invasion
-		[-542] = "Открытие Темного портала",						-- The Opening of the Dark Portal
 		[-543] = "Вторжение Легиона",								-- Legion Invasions
-	-- PvP Header
-		-- PvP Set Names
-			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)
-			[-660] = "Доспехи Бойца",								-- Combatant PvP Gear (WoD, Legion)
-			[-661] = "Доспехи Гладиатора",							-- Gladiator PvP Gear
-			[-662] = "Элитные доспехи",								-- Elite PvP Gear
-		-- Cataclysm PvP Seasons
-			[-672] = select(2, GetAchievementInfo(6002))..": Сезон 9",	-- Vicious Gladiator: Season 9
-			[-656] = "Доспехи Беспощадного гладиатора за очки чести",	-- Honor Gear Ruthless Season
-			[-673] = select(2, GetAchievementInfo(6124))..": Сезон 10",	-- Ruthless Gladiator: Season 10
-			[-654] = "Доспехи Гладиатора Катаклизма за очки чести",		-- Honor Gear Cataclysmic Season
-			[-674] = select(2, GetAchievementInfo(6938))..": Сезон 11",	-- Cataclysmic Gladiator: Season 11
-		-- Mists of Pandaria PvP Seasons
-			[-675] = select(2, GetAchievementInfo(8214))..": Сезон 12",	-- Malevolent Gladiator: Season 12
-			[-653] = "Доспехи Деспотичного гладиатора за очки чести",	-- Honor Gear Tyrannical Season
-			[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
-			[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
-			[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
+	-- Cataclysm PvP Seasons
+		[-672] = select(2, GetAchievementInfo(6002))..": Сезон 9",	-- Vicious Gladiator: Season 9
+		[-656] = "Доспехи Беспощадного гладиатора за очки чести",	-- Honor Gear Ruthless Season
+		[-673] = select(2, GetAchievementInfo(6124))..": Сезон 10",	-- Ruthless Gladiator: Season 10
+		[-654] = "Доспехи Гладиатора Катаклизма за очки чести",		-- Honor Gear Cataclysmic Season
+		[-674] = select(2, GetAchievementInfo(6938))..": Сезон 11",	-- Cataclysmic Gladiator: Season 11
+	-- Mists of Pandaria PvP Seasons
+		[-675] = select(2, GetAchievementInfo(8214))..": Сезон 12",	-- Malevolent Gladiator: Season 12
+		[-653] = "Доспехи Деспотичного гладиатора за очки чести",	-- Honor Gear Tyrannical Season
+		[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
+		[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
+		[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
 	-- Pets
 		[-795] = "Подземелья Боевых питомцев",						-- Pet Battle Dungeons
 	-- Chests

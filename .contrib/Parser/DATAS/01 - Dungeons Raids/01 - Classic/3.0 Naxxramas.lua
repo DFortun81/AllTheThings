@@ -1,6 +1,21 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+THE_FOUR_HORSEMEN = createHeader({
+	readable = "The Four Horsemen",
+	icon = "Interface\\Icons\\Ability_mount_undeadhorse",
+	text = {
+		en = "The Four Horsemen",
+		es = "Los Cuatro Jinetes",
+		de = "Die Vier Reiter",
+		fr = "Les quatre cavaliers",
+		it = "I Cavalieri dell'Apocalisse",
+		pt = "Os Quatro Cavaleiros",
+		ru = "Четыре Всадника",
+		ko = "4인 기사단",
+		cn = "四骑士",
+	},
+});
 root(ROOTS.Instances, tier(CLASSIC_TIER,
 -- #if BEFORE WRATH
 applyclassicphase(PHASE_SIX,
@@ -1959,7 +1974,7 @@ applyclassicphase(PHASE_SIX,
 								i(23021),	-- The Soul Harvester's Bindings
 								i(23073),	-- Boots of Displacement
 							}),
-							n(-423, {	-- The Four Horsemen
+							n(THE_FOUR_HORSEMEN, {
 								["qgs"] = {
 									16062,	-- Highlord Mograine <The Ashbringer>
 									16065,	-- Lady Blaumeux

@@ -1,9 +1,25 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
-root(ROOTS.WorldEvents, n(-538,	-- The Ahn'Qiraj War Effort
+THE_AHNQIRAJ_WAR_EFFORT = createHeader({
+	readable = "The Ahn'Qiraj War Effort",
+	icon = "Interface\\Icons\\inv_box_01",
+	text = {
+		en = "The Ahn'Qiraj War Effort",
+		fr = "Effort de guerre d’Ahn'Qiraj",
+		ru = "Война в Ан'Кираже",
+		cn = "安其拉之战捐献",
+	},
+	description = {
+		-- #if AFTER TBC
+		en = "The Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj were not be immediately available with the release of Phase 5. Instead, server communities had to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
+		-- #else
+		en = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
+		-- #endif
+	},
+});
+root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 	applyclassicphase(PHASE_FIVE_WAR_EFFORT, bubbleDown({ ["timeline"] = { "removed 2.0.1" } }, {
-		["description"] = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
 		["maps"] = {
 			ORGRIMMAR,
 			IRONFORGE,

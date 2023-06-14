@@ -1009,14 +1009,11 @@ app.L = {
 	-- Allied Races
 		[-254] = "Interface\\Icons\\FactionChange",											-- Allied Races
 		[-255] = "Interface\\Icons\\vas_guildfactionchange",								-- Heritage
-	-- Mailbox
-		[-297] = "Interface\\Icons\\inv_letter_17",											-- Mailbox
 	-- Garrison Missons
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000",						-- Missions
 	-- PvP
 		[-302] = "Interface\\Icons\\expansionicon_cataclysm",								-- Level Range 80-84
 		[-303] = "Interface\\Icons\\expansionicon_mistsofpandaria",							-- Level Range 85-89
-		[-304] = "Interface\\Icons\\INV_BannerPVP_03",										-- Battlegrounds
 	-- First Questline Draenor
 		[-356] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -1042,14 +1039,6 @@ app.L = {
 		[-517] = "Interface\\Icons\\ability_racial_molemachine",							-- Mole Machine
 	-- Blizzard Events and Anniversaries
 		[-520] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",					-- Expansion Pre-Launch
-		[-522] = "Interface\\Icons\\inv_misc_tournaments_banner_troll",						-- Zalazane's Fall
-		[-523] = app.asset("Expansion_CATA"),												-- Elemental Unrest
-		[-524] = "Interface\\Icons\\inv_misc_tournaments_symbol_gnome",						-- Operation: Gnomeregan
-		[-538] = "Interface\\Icons\\inv_box_01",											-- The Ahn'Qiraj War Effort
-		[-539] = "Interface\\Icons\\Inv_hammer_25",											-- The Scepter of the Shifting Sands
-		[-540] = "Interface\\Icons\\inv_stone_02",											-- The Scourge Invasion
-		[-541] = "Interface\\Icons\\spell_holiday_tow_spicecloud",							-- The Silithyst Must Flow
-		[-542] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- The Opening of the Dark Portal
 		[-543] = app.asset("Interface_Linvas"),												-- Legion Invasions
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
@@ -1060,11 +1049,6 @@ app.L = {
 		[-653] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Tyrannical (S13)
 		[-654] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Cataclysmic (S11)
 		[-656] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Ruthless (S10)
-	-- PvP Set Names
-		[-659] = "Interface\\Worldmap\\GlowSkull_64Green",									-- Aspirant PvP Gear
-		[-660] = "Interface\\Worldmap\\GlowSkull_64Blue",									-- Combatant PvP Gear
-		[-661] = "Interface\\Worldmap\\GlowSkull_64Purple",									-- Gladator PvP Gear
-		[-662] = "Interface\\Worldmap\\GlowSkull_64Red",									-- Elite PvP Gear
 	-- Cataclysm PvP Seasons
 		[-672] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Vicious Gladiator: Season 9
 		[-673] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Ruthless Gladiator: Season 10
@@ -1243,14 +1227,11 @@ app.L = {
 	-- Allied Races
 		[-254] = "Allied Races",												-- Allied Races, do not replace with CHARACTER_CREATE_MORE_RACES, it's nil
 		[-255] = "Heritage",													-- Heritage
-	-- Mailbox
-		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
 	-- Garrison Missions
 		[-299] = GARRISON_MISSIONS,												-- Missions
 	-- PvP
 		[-302] = BATTLEFIELD_LEVEL.." 80-84",									-- Level Range 80-84
 		[-303] = BATTLEFIELD_LEVEL.." 85-89",									-- Level Range 85-89
-		[-304] = BATTLEGROUNDS,													-- Battlegrounds
 	-- First Questline Draenor
 		[-356] = "Assault on the Dark Portal",									-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -1268,9 +1249,6 @@ app.L = {
 		[-397] = "Outposts",													-- Outposts
 	-- 5.3
 		[-398] = "Battlefield: Barrens",										-- Battlefield: Barrens
-	-- Classic
-		[-422] = "Atal'ai Defenders",											-- Atal'ai Defenders
-		[-423] = "The Four Horsemen",											-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "War Chest",													-- Daily War Chest
 	-- Misc
@@ -1279,15 +1257,6 @@ app.L = {
 		[-517] = GetSpellInfo(265225),											-- Mole Machine
 	-- Blizzard Events and Anniversaries
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
-		[-522] = "Zalazane's Fall",												-- Zalazane's Fall
-		[-523] = "Elemental Unrest",											-- Elemental Unrest
-		[-524] = select(2, GetAchievementInfo(4786)),							-- Operation: Gnomeregan
-		[-536] = "Hearthstone Mercenaries",										-- Hearthstone Mercenaries
-		[-538] = "The Ahn'Qiraj War Effort",									-- The Ahn'Qiraj War Effort
-		[-539] = "The Scepter of the Shifting Sands",							-- The Scepter of the Shifting Sands
-		[-540] = "The Scourge Invasion",										-- The Scourge Invasion
-		[-541] = "The Silithyst Must Flow",										-- The Silithyst Must Flow
-		[-542] = "The Opening of the Dark Portal",								-- The Opening of the Dark Portal
 		[-543] = "Legion Invasions",											-- Legion Invasions
 	-- PvP Header
 		-- Special Season Tags
@@ -1297,11 +1266,6 @@ app.L = {
 		--[-653] = "Honor Gear Tyrannical Season",								-- Listed under MoP PvP Seasons
 		--[-654] = "Honor Gear Cataclysmic Season",								-- Listed under Cata PvP Seasons
 		--[-656] = "Honor Gear Ruthless Season",								-- Listed under Cata PvP Seasons
-		-- PvP Set Names
-		[-659] = "Aspirant Gear",												-- Aspirant PvP Gear (WoD, BfA)
-		[-660] = "Combatant Gear",												-- Combatant PvP Gear (WoD, Legion)
-		[-661] = "Gladiator Gear",												-- Gladiator PvP Gear
-		[-662] = "Elite Gear",													-- Elite PvP Gear
 	-- Cataclysm PvP Seasons
 		[-650] = PVP_RATED_BATTLEGROUND,										-- Rated Battleground
 		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9

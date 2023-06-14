@@ -1,7 +1,17 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
-root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(-522, -- Zalazane's Fall
+ZALAZANES_FALL = createHeader({
+	readable = "Zalazane's Fall",
+	icon = "Interface\\Icons\\inv_misc_tournaments_banner_troll",
+	text = {
+		en = [[~select(2, GetAchievementInfo(4790))]],
+	},
+	description = {
+		en = "Zalazane's Fall (also referred to as the Battle to reclaim the Echo Isles) was the final push by Vol'jin and the Darkspear tribe to retake the Echo Isles from the clutches of the evil Zalazane. It was a culminating event for the Horde to occur before the release of the next expansion, Cataclysm. Furthermore, all troll characters created after the liberation of the Echo Isles now have their new starting point there.",
+	},
+});
+root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(ZALAZANES_FALL,
 	bubbleDown({
 		["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 		["races"] = HORDE_ONLY,
@@ -17,7 +27,6 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(-522, -- Zalazane's
 		end]],
 		-- #endif
 	}, {
-		["description"] = "Zalazane's Fall (also referred to as the Battle to reclaim the Echo Isles) was the final push by Vol'jin and the Darkspear tribe to retake the Echo Isles from the clutches of the evil Zalazane. It was a culminating event for the Horde to occur before the release of the next expansion, Cataclysm. Furthermore, all troll characters created after the liberation of the Echo Isles now have their new starting point there.",
 		["maps"] = { DUROTAR },
 		["groups"] = {
 			-- #if AFTER 4.0.1

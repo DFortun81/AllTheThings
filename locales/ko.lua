@@ -671,13 +671,6 @@ for key,value in pairs({
 		[-255] = "유산 방어구",											-- Heritage
 	-- 5.3
 		[-398] = "전쟁터: 불모의 땅",										-- Battlefield: Barrens
-	-- Classic
-		[-423] = "4인 기사단",											-- The Four Horsemen
-		[-539] = "흐르는 모래의 홀",										-- The Scepter of the Shifting Sands
-		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
-		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
-		[-542] = "어둠의 문 열기",										-- The Opening of the Dark Portal
-		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 	-- Chests
 		[-851] = "검은 제국 보관함",										-- Black Empire Cache
 	-- Shadowlands Header
@@ -687,14 +680,10 @@ for key,value in pairs({
 		[-967] = "거울 복구 작업",										-- Mirror Restoration
 	-- Dragonflight
 		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
-		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
 		[-1102] = "래시온과 사벨리안",										-- Wrathion & Sabellian
 		[-1120] = "마루크 켄타우로스",										-- Maruuk Centaur
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
-		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
-		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 		[-1150] = "로암 니펜",											-- Loamm Niffen
-		--TODO: [-1151] = "Bartering",								-- Bartering
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
 		[-1200] = "지스케라 금고",										-- Zskera Vaults
 		[-1202] = "피락의 습격",											-- Fyrakk Assaults

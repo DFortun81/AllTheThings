@@ -1,7 +1,17 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
-root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(-524, -- Operation Gnomeregan
+OPERATION_GNOMEREGAN = createHeader({
+	readable = "Operation: Gnomeregan",
+	icon = "Interface\\Icons\\inv_misc_tournaments_symbol_gnome",
+	text = {
+		en = [[~select(2, GetAchievementInfo(4786))]],
+	},
+	description = {
+		en = "Operation: Gnomeregan was the name of Gelbin Mekkatorque's plan for the retaking of the surface of Gnomeregan. Only Alliance players between level 75 and 80 were able to serve during the operation, but lower level players helped by motivating other gnomes or by turning in items.",
+	},
+});
+root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(OPERATION_GNOMEREGAN,
 	bubbleDown({
 		["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 		["races"] = ALLIANCE_ONLY,
@@ -17,7 +27,6 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(-524, -- Operation 
 		end]],
 		-- #endif
 	}, {
-		["description"] = "Operation: Gnomeregan was the name of Gelbin Mekkatorque's plan for the retaking of the surface of Gnomeregan. Only Alliance players between level 75 and 80 were able to serve during the operation, but lower level players helped by motivating other gnomes or by turning in items.",
 		["maps"] = { IRONFORGE, DUN_MOROGH },
 		["groups"] = {
 			-- #if AFTER 4.0.1

@@ -1,6 +1,18 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
+THE_SCOURGE_INVASION = createHeader({
+	readable = "The Scourge Invasion",
+	icon = "Interface\\Icons\\inv_stone_02",
+	text = {
+		en = "The Scourge Invasion",
+		ru = "Вторжение Плети",
+		cn = "天灾入侵",
+	},
+	description = {
+		en = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
+	},
+});
 -- Note: This is up here to prevent the unobtainable flag from getting put on the Major Healing and Mana Potions (for now)
 local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
 local MAJOR_MANA_POTION = i(13444);	-- Major Mana Potion
@@ -30,14 +42,13 @@ local REMOVED_AFTER_WRATH_PREPATCH = "removed 3.0.2";
 local BUBBLE_DOWN_FILTER = function(t) return true; end;
 -- #endif
 
-root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The Scourge Invasion
+root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(THE_SCOURGE_INVASION,
 	bubbleDownFiltered({
 		["timeline"] = { REMOVED_AFTER_WRATH_PREPATCH },
 		-- #if ANYCLASSIC
 		["OnUpdate"] = SCOURGE_INVASION_ONUPDATE,
 		-- #endif
 	}, BUBBLE_DOWN_FILTER, {
-		["description"] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 		["maps"] = {
 			AZSHARA,
 			BLASTED_LANDS,

@@ -683,16 +683,6 @@ for key,value in pairs({
 		[-397] = "Außenposten",										-- Outposts
 	-- 5.3
 		[-398] = "Schlachtfeld: Brachland",							-- Battlefield: Barrens
-	-- Classic
-		[-423] = "Die Vier Reiter",									-- The Four Horsemen
-		[-539] = "Das Szepter der Sandstürme",						-- The Scepter of the Shifting Sands
-		[-542] = "Die Öffnung des Dunklen Portals",					-- The Opening of the Dark Portal
-	-- PvP Header
-		-- PvP Set Names
-			[-659] = "Aspiranten Rüstung",							-- Aspirant PvP Gear (WoD, BfA)
-			[-660] = "Kämpfer Rüstung",								-- Combatant PvP Gear (WoD, Legion)
-			[-661] = "Gladiatoren Rüstung",							-- Gladiator PvP Gear
-			[-662] = "Elite Rüstung",								-- Elite PvP Gear
 	-- Pets
 		[-795] = "Haustierkampf Instanzen",							-- Pet Battle Dungeons
 	-- Chests
