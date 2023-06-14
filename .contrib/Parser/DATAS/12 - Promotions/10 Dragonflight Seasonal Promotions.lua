@@ -1,10 +1,21 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
+	readable = "Dragonflight Seasonal Promotions",
+	icon = [[~_.asset("Expansion_DF")]],
+	text = {
+		en = "Dragonflight Seasonal Promotions",
+		ru = "Промо Dragonflight",
+		cn = "巨龙时代季节性促销",
+	},
+	description = {
+		en = "These promotions happened during the time Dragonflight was the most recent content between 25th October 2022 & 12nd November 2024.\n\nThey are listed in the order of their first appearance.",
+	},
+});
 root(ROOTS.Promotions, {
-	n(-584, {	-- Dragonflight Seasonal Promotions
+	n(DRAGONFLIGHT_SEASONAL_PROMOTIONS, {
 		["timeline"] = { "added 10.0.0.46366" },
-		["description"] = "These promotions happened during the time Dragonflight was the most recent content between 25th October 2022 & 12nd November 2024.\n\nThey are listed in the order of their first appearance.",
 		["groups"] = {
 			-- "Pre" Season
 			mount(315132, {	-- Gargantuan Grrloc (MOUNT!)

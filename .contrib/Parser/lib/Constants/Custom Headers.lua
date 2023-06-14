@@ -1,12 +1,9 @@
 -------------------------------------------
 --     C U S T O M   H E A D E R S       --
 -------------------------------------------
-SETS = -1000;
-
 -- Expansion Features
 	-- WoD
 	GARRISONS = -9966;
-	FOLLOWERS = -101;
 	-- Legion
 	CLASS_HALL = -9965;
 	-- BFA
@@ -59,7 +56,6 @@ SETS = -1000;
 ALLIED_RACES = -254;
 HERITAGE = -255;
 NEW_CHARACTER = -211;
-CLASS_TRIAL = -5350;
 LEVEL_NINETY = -137;
 LEVEL_HUNDRED = -138;
 LEVEL_HUNDRED_TEN = -149;
@@ -71,10 +67,8 @@ LEVEL_SIXTY = -156;
 LEVEL_SIXTY_TRIAL = -160;
 
 -- Special
-CLASSES = -220;
 SOURCELESS = -219;
 MAILBOX = -297;
-TCG_HEADER = -535;
 AVAILABLE = -1204;
 UNAVAILABLE = -1205;
 EXPANSION_PRELAUNCH = -520;

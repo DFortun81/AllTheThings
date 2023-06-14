@@ -677,12 +677,8 @@ for key,value in pairs({
 		[-398] = "Campo de batalla: Los Baldíos",					-- Battlefield: Barrens
 	-- Classic
 		[-423] = "Los Cuatro Jinetes",								-- The Four Horsemen
-		[-536] = "Hearthstone Mercenarios",							-- Hearthstone Mercenaries
 		[-539] = "El cetro del Mar de Dunas",						-- The Scepter of the Shifting Sands
-		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
-		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "La apertura del Portal Oscuro",					-- The Opening of the Dark Portal
-		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 	-- Chests
 		[-851] = "Alijo del Imperio Negro",							-- Black Empire Cache
 	-- Shadowlands Header
@@ -696,8 +692,6 @@ for key,value in pairs({
 		[-1102] = "Wrathion y Sabellian",							-- Wrathion & Sabellian
 		[-1120] = "Centauros Maruuk",								-- Maruuk Centaur
 		[-1130] = "Colmillarr de Iskaara",							-- Iskaara Tuskarr
-		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
-		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 		[-1150] = "Niffen de Loamm",								-- Loamm Niffen
 		[-1151] = "Comercio",										-- Bartering
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize

@@ -1,10 +1,21 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+SHADOWLANDS_SEASONAL_PROMOTIONS = createHeader({
+	readable = "Shadowlands Seasonal Promotions",
+	icon = [[~_.asset("Expansion_SL")]],
+	text = {
+		en = "Shadowlands Seasonal Promotions",
+		ru = "Промо Shadowlands",
+		cn = "暗影国度季节性促销",
+	},
+	description = {
+		en = "These promotions happened during the time Shadowlands was the most recent content between 13th October 2020 & 25th October 2022.\n\nThey are listed in the order of their first appearance.",
+	},
+});
 root(ROOTS.Promotions, {
-	n(-580, {	-- Shadowlands Seasonal Promotions
+	n(SHADOWLANDS_SEASONAL_PROMOTIONS, {
 		["timeline"] = { ADDED_9_0_5 },
-		["description"] = "These promotions happened during the time Shadowlands was the most recent content between 13th October 2020 & 25th October 2022.\n\nThey are listed in the order of their first appearance.",
 		["groups"] = {
 			-- SEASON 1
 			mount(348162, {	-- Wandering Ancient (MOUNT!)

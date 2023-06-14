@@ -18062,7 +18062,7 @@ function app:GetDataCache()
 		tinsert(g, DynamicCategory(db, "flightPathID"));
 
 		-- Followers (Dynamic)
-		local db = app.CreateNPC(-101);
+		local db = app.CreateNPC(app.HeaderConstants.FOLLOWERS);
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "followerID"));
 

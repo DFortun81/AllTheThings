@@ -1,8 +1,20 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+RECRUIT_A_FRIEND = createHeader({
+	readable = "Recruit A Friend",
+	-- #if AFTER WRATH
+	icon = "Interface\\Icons\\achievement_reputation_08",
+	-- #else
+	icon = [[~_.asset("achievement_reputation_08")]],
+	-- #endif
+	text = {
+		en = [[~REFER_A_FRIEND]],
+	},
+});
 root(ROOTS.Promotions, {
-	n(-546, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Recruit A Friend
+	-- Retired Rewards
+	n(RECRUIT_A_FRIEND, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		ach(1436, {	-- Friends In High Places
 			["timeline"] = { "added 3.0.1" },
 		}),
@@ -102,7 +114,9 @@ root(ROOTS.Promotions, {
 			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
 	})),
-	n(-546, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Recruit A Friend (Current Rewards)
+	
+	-- Current Rewards
+	n(RECRUIT_A_FRIEND, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(173301, {	-- Game Time
 			["timeline"] = { "added 8.2.5.31958" },
 		}),

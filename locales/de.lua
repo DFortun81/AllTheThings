@@ -671,7 +671,6 @@ for key,value in pairs({
 		[-152] = "Garnisonskampagne",								-- Garrison Campaign
 	-- Fishing
 		[-217] = "Köder",											-- Lures (for Fishing)
-	--TODO: [-219] = "Sourceless",									-- Sourceless
 	-- PvP
 		[-242] = "Ungewertet",										-- Unrated
 		[-243] = "Preisgeld",										-- Bounty
@@ -686,15 +685,8 @@ for key,value in pairs({
 		[-398] = "Schlachtfeld: Brachland",							-- Battlefield: Barrens
 	-- Classic
 		[-423] = "Die Vier Reiter",									-- The Four Horsemen
-		[-532] = "Heroes of the Storm",								-- Heroes of the Storm
-		[-533] = "Hearthstone",										-- Hearthstone
-		[-536] = "Hearthstone Söldner",								-- Hearthstone Mercenaries
-		--TODO: [-538] = "The Ahn'Qiraj War Effort",				-- The Ahn'Qiraj War Effort
 		[-539] = "Das Szepter der Sandstürme",						-- The Scepter of the Shifting Sands
-		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
-		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "Die Öffnung des Dunklen Portals",					-- The Opening of the Dark Portal
-		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Aspiranten Rüstung",							-- Aspirant PvP Gear (WoD, BfA)
@@ -717,18 +709,12 @@ for key,value in pairs({
 			[-955] = "Hochinquisitor",								-- High Inquisitors
 			[-956] = "Großinquisitor",								-- Grand Inquisitors
 			[-967] = "Spiegelwiederherstellung",					-- Mirror Restoration
-			--TODO: [-968] = "Set A",								-- Set A
-			--TODO: [-969] = "Set B",								-- Set B
-			--TODO: [-970] = "Set C",								-- Set C
-			--TODO: [-971] = "Set D",								-- Set D
 	-- Dragonflight
 		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
 		[-1101] = "Urstürme",										-- Primal Storms
 		[-1102] = "Furorion und Sabellian",							-- Wrathion & Sabellian
 		[-1120] = "Zentauren der Maruuk",							-- Maruuk Centaur
 		[-1130] = "Tuskarr von Iskaara",							-- Iskaara Tuskarr
-		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
-		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 		[-1150] = "Niffen von Loamm",								-- Loamm Niffen
 		[-1151] = "Tauschhandels",									-- Bartering
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize

@@ -1,8 +1,18 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root(ROOTS.Promotions, n(-577, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Warcraft Movie
-	["description"] = "These were rewarded for logging in at least once per faction while the Warcraft movie was still in theaters.",
+WARCRAFT_MOVIE = createHeader({
+	readable = "Warcraft Movie",
+	icon = "Interface\\Icons\\INV_MISC_FILM_01",
+	text = {
+		en = "Warcraft Movie",
+		cn = "魔兽电影",
+	},
+	description = {
+		en = "These were rewarded for logging in at least once per faction while the Warcraft movie was still in theaters.",
+	},
+});
+root(ROOTS.Promotions, n(WARCRAFT_MOVIE, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	["timeline"] = { "added 7.0.3.22248" },
 	["groups"] = {
 		a(ach(11210)),	-- Fight for the Alliance

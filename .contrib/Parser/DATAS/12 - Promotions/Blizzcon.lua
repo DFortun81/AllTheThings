@@ -1,7 +1,16 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root(ROOTS.Promotions, n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzcon
+BLIZZCON = createHeader({
+	readable = "BlizzCon",
+	icon = [[~_.asset("Promotion_Blizzcon")]],
+	eventID = 1181,
+	text = {
+		en = "BlizzCon",
+		cn = "暴雪嘉年华",
+	},
+});
+root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(411),	-- Blizzcon 2005 - Murky
 	i(20371, {	-- Murky (PET!)
 		["timeline"] = { "added 1.11.1.6692" },

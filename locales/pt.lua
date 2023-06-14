@@ -673,11 +673,8 @@ for key,value in pairs({
 		[-398] = "Campo de Batalha: Sertões",						-- Battlefield: Barrens
 	-- Classic
 		[-423] = "Os Quatro Cavaleiros",							-- The Four Horsemen
-		[-536] = "Hearthstone Mercenários",							-- Hearthstone Mercenaries
 		[-539] = "Cetro das Areias Cambiantes",						-- The Scepter of the Shifting Sands
 		[-542] = "A abertura do Portal Negro",						-- The Opening of the Dark Portal
-	-- Pets
-		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
 	-- Chests
 		[-851] = "Depósito do Império Negro",						-- Black Empire Cache
 	-- Shadowlands Header
@@ -691,8 +688,6 @@ for key,value in pairs({
 		[-1102] = "Wrathion e Sabellian",							-- Wrathion & Sabellian
 		[-1120] = "Centauro Maruuk",								-- Maruuk Centaur
 		[-1130] = "Morsanos de Iskaara",							-- Iskaara Tuskarr
-		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
-		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 		[-1150] = "Farins de Argília",								-- Loamm Niffen
 		[-1151] = "Pechincha",										-- Bartering
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize

@@ -673,12 +673,8 @@ for key,value in pairs({
 		[-398] = "Campo di battaglia: le Savane",					-- Battlefield: Barrens
 	-- Classic
 		[-423] = "I Cavalieri dell'Apocalisse",						-- The Four Horsemen
-		[-536] = "Hearthstone Mercenari",							-- Hearthstone Mercenaries
 		[-539] = "Scettro delle Sabbie Mutevoli",					-- The Scepter of the Shifting Sands
-		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
-		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "L'apertura del Portale Oscuro",					-- The Opening of the Dark Portal
-		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 	-- Chests
 		[-851] = "Cassa dell'Impero Nero",							-- Black Empire Cache
 	-- Shadowlands Header

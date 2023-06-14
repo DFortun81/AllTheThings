@@ -1,7 +1,18 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
+TRADING_CARD_GAME = createHeader({
+	readable = "Trading Card Game",
+	-- #if AFTER CATA
+	icon = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_LADYLUCK",
+	-- #else
+	icon = "Interface\\Icons\\inv_misc_ticket_tarot_stack_01",
+	-- #endif
+	text = {
+		en = [[~BATTLE_PET_SOURCE_9]],
+	},
+});
+root(ROOTS.Promotions, n(TRADING_CARD_GAME, bubbleDown({
 	-- #if ANYCLASSIC
 	["u"] = REMOVED_FROM_GAME,
 	-- #else

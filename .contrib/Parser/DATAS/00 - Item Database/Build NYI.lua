@@ -14,7 +14,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(ARMOR),
 	filter(BAGS),
 	filter(BATTLE_PETS),
+	-- #if AFTER CATA
 	n(CLASS_TRIAL),			-- completed up to 10.0.7
+	-- #endif
 	filter(CONSUMABLES),
 	n(FACTIONS),
 	n(FLIGHT_PATHS),		-- completed up to 10.0.7

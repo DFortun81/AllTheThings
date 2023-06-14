@@ -684,9 +684,6 @@ for key,value in pairs({
 	-- Misc
 		[-520] = "Pré-Lancement de l’Extension",					-- Expansion Pre-Launch
 		[-522] = "La chute de Zalazane",							-- Zalazane's Fall
-		[-532] = "Heroes of the Storm",								-- Heroes of the Storm
-		[-533] = "Hearthstone",										-- Hearthstone
-		[-536] = "Hearthstone Mercenaires",							-- Hearthstone Mercenaries
 		[-538] = "Effort de guerre d’Ahn'Qiraj",					-- The Ahn'Qiraj War Effort
 		[-539] = "Le Sceptre des Sables changeants",				-- The Scepter of the Shifting Sands
 		[-542] = "L'ouverture de la Porte des ténèbres",			-- The Opening of the Dark Portal

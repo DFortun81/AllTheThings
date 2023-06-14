@@ -715,20 +715,12 @@ for key,value in pairs({
 		[-520] = "资料片前夕",											-- Expansion Pre-Launch
 		[-522] = "扎拉赞恩的灭亡",										-- Zalazane's Fall
 		[-523] = "元素动荡",												-- Elemental Unrest
-		[-532] = "风暴英雄",											-- Heroes of the Storm
-		[-533] = "炉石传说",											-- Hearthstone
-		[-536] = "炉石传说佣兵战纪",										-- Hearthstone Mercenaries
 		[-538] = "安其拉之战捐献",											-- The Ahn'Qiraj War Effort
 		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
 		[-540] = "天灾入侵",											-- The Scourge Invasion
 		[-541] = "希利苏斯流沙",											-- The Silithyst Must Flow
 		[-542] = "开启黑暗之门",											-- The Opening of the Dark Portal
 		[-543] = "军团入侵",											-- Legion Invasions
-		[-545] = "暴雪嘉年华",											-- Blizzcon
-		[-553] = "可口可乐活动",											-- iCoke
-		[-577] = "魔兽电影",											-- Warcraft Movie
-		[-580] = "暗影国度季节性促销",										-- Shadowlands Seasonal Promotions
-		[-584] = "巨龙时代季节性促销",			-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)

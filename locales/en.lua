@@ -953,8 +953,6 @@ app.L = {
 	["HEADER_ICONS"] = {
 		[-43] = 618859,																		-- Proving Grounds [achievement_challengemode_platinum]
 		[-94] = "Interface\\Icons\\inv_misc_lockbox_1",										-- Black Market AH
-	-- Garrisons
-		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-130] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Active
 		[-131] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Active
@@ -1000,7 +998,6 @@ app.L = {
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
 	-- Class
 		[-219] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
-		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",										-- Class
 	-- War Campaign
 		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
 	-- PvP
@@ -1048,24 +1045,12 @@ app.L = {
 		[-522] = "Interface\\Icons\\inv_misc_tournaments_banner_troll",						-- Zalazane's Fall
 		[-523] = app.asset("Expansion_CATA"),												-- Elemental Unrest
 		[-524] = "Interface\\Icons\\inv_misc_tournaments_symbol_gnome",						-- Operation: Gnomeregan
-		[-532] = "Interface\\Icons\\ability_shaman_stormstrike",							-- Heroes of the Storm
-		[-533] = "Interface\\Icons\\Inv_misc_rune_01",										-- Hearthstone
-		[-535] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_LADYLUCK",						-- Trading Card Game
-		[-536] = "Interface\\Icons\\Inv_misc_rune_01",										-- Hearthstone Mercenaries
 		[-538] = "Interface\\Icons\\inv_box_01",											-- The Ahn'Qiraj War Effort
 		[-539] = "Interface\\Icons\\Inv_hammer_25",											-- The Scepter of the Shifting Sands
 		[-540] = "Interface\\Icons\\inv_stone_02",											-- The Scourge Invasion
 		[-541] = "Interface\\Icons\\spell_holiday_tow_spicecloud",							-- The Silithyst Must Flow
 		[-542] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- The Opening of the Dark Portal
 		[-543] = app.asset("Interface_Linvas"),												-- Legion Invasions
-		[-545] = app.asset("Promotion_Blizzcon"),											-- Blizzcon
-		[-546] = "Interface\\Icons\\achievement_reputation_08",								-- Recruit A Friend
-		[-553] = "Interface\\Icons\\INV_Drink_33_BloodRedAle",								-- iCoke
-		[-573] = app.asset("Promotion_Scroll_of_Rez"),										-- Scroll of Resurrection
-		[-577] = "Interface\\Icons\\INV_MISC_FILM_01",										-- Warcraft Movie
-		[-580] = app.asset("Expansion_SL"),													-- Shadowlands Seasonal Promotions
-		[-584] = app.asset("Expansion_DF"),													-- Dragonflight Seasonal Promotions
-		[-586] = 136101,																	-- Amazon Prime Gaming
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1154,8 +1139,6 @@ app.L = {
 		[-985] = 1392911,																	-- Coldheart Interstitia
 		[-986] = 2178500,																	-- Mort'regar
 		[-987] = 2178509,																	-- The Upper Reaches
-	-- Sets
-		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 	-- Dragonflight
 		[-1100] = "Interface\\Icons\\ability_dragonriding_glyph01",									-- Drakewatcher Manuscripts
 		[-1101] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",	-- Primal Storms
@@ -1181,8 +1164,6 @@ app.L = {
 		[-3338] = "Interface\\Icons\\achievement_zone_darkshore_01",						-- Island Expeditions
 	-- Tournament
 		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",								-- Tournament
-	-- Class Trial
-		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial
 	--
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
 	------ ACHIEVEMENT HEADERS SECTION ------
@@ -1205,8 +1186,6 @@ app.L = {
 	["HEADER_NAMES"] = {
 		[-43] = TRACKER_HEADER_PROVINGGROUNDS,									-- Proving Grounds
 		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
-	-- Garrisons
-		[-101] = GARRISON_FOLLOWERS,											-- Followers
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),		-- Duskwood Active
 		[-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),		-- The Hinterlands Active
@@ -1253,8 +1232,6 @@ app.L = {
 	-- Fishing
 		[-217] = "Lures",														-- Lures (for Fishing)
 	[-219] = "Sourceless",														-- Sourceless
-	-- Class
-		[-220] = CLASS,															-- Class
 	-- War Campaign
 		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
 	-- PvP
@@ -1305,9 +1282,6 @@ app.L = {
 		[-522] = "Zalazane's Fall",												-- Zalazane's Fall
 		[-523] = "Elemental Unrest",											-- Elemental Unrest
 		[-524] = select(2, GetAchievementInfo(4786)),							-- Operation: Gnomeregan
-		[-532] = "Heroes of the Storm",											-- Heroes of the Storm
-		[-533] = "Hearthstone",													-- Hearthstone
-		[-535] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
 		[-536] = "Hearthstone Mercenaries",										-- Hearthstone Mercenaries
 		[-538] = "The Ahn'Qiraj War Effort",									-- The Ahn'Qiraj War Effort
 		[-539] = "The Scepter of the Shifting Sands",							-- The Scepter of the Shifting Sands
@@ -1315,14 +1289,6 @@ app.L = {
 		[-541] = "The Silithyst Must Flow",										-- The Silithyst Must Flow
 		[-542] = "The Opening of the Dark Portal",								-- The Opening of the Dark Portal
 		[-543] = "Legion Invasions",											-- Legion Invasions
-		[-545] = "Blizzcon",													-- Blizzcon
-		[-546] = REFER_A_FRIEND,												-- Recruit A Friend
-		[-553] = "iCoke",														-- iCoke
-		[-573] = SCROLL_OF_RESURRECTION,										-- Scroll of Resurrection
-		[-577] = "Warcraft Movie",												-- Warcraft Movie
-		[-580] = "Shadowlands Seasonal Promotions",								-- Shadowlands Seasonal Promotions
-		[-584] = "Dragonflight Seasonal Promotions",							-- Dragonflight Seasonal Promotions
-		[-586] = "Amazon Prime Gaming",											-- Amazon Prime Gaming
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
@@ -1423,8 +1389,6 @@ app.L = {
 		[-985] = select(2, GetAchievementInfo(14483)),							-- Coldheart Interstitia
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
-	-- Sets
-		[-1000] = WARDROBE_SETS,												-- Sets
 	-- Dragonflight
 		[-1100] = DRAKE_MANUSCRIPTS,												-- Drakewatcher Manuscripts
 		[-1101] = "Primal Storms",													-- Primal Storms
@@ -1458,8 +1422,6 @@ app.L = {
 		[-5203] = "Prestige Rewards",											-- Prestige Rewards
 		[-5204] = "Challenge Appearance",										-- Challenge Appearance
 		[-5205] = "Hidden Appearance",											-- Hidden Appearance
-		-- Class Sets
-		[-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,					-- Class Trial
 
 		[-6014] = BUG_CATEGORY4,												-- Cities
 
