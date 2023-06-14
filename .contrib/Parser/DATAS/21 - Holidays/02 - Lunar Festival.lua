@@ -21,6 +21,7 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, {
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LUNAR_FESTIVAL .. [[, 1, 20, 2, 3); end]],
 	-- #endif
 	["groups"] = {
+		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
 			ach(913, {	-- To Honor One's Elders
 				-- Meta Achievement should symlink the contained Achievements from Source
@@ -117,6 +118,7 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, {
 				["sourceQuest"] = 8868,	-- Elune's Blessing
 			}),
 		}),
+		-- #endif
 		n(MAILBOX, {
 			i(21746, {	-- Lucky Red Envelope
 				i(21744),	-- Lucky Rocket Cluster

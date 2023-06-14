@@ -222,7 +222,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
 			-- #endif
 		},
-		["timeline"] = { REMOVED_9_0_1 },
+		["timeline"] = { "added 3.0.1", REMOVED_9_0_1 },
 		["maps"] = { THUNDER_BLUFF },
 		["races"] = ALLIANCE_ONLY,
 	}),
@@ -282,7 +282,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #else
 		["provider"] = { "n", 4949 },	-- Thrall <Warchief>
 		-- #endif
-		["timeline"] = { "removed 7.0.3" },
+		["timeline"] = { "added 3.0.1", "removed 7.0.3" },
 		["maps"] = { ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,
 	}),
@@ -294,7 +294,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 10181 },	-- Lady Sylvanas Windrunner <Banshee Queen>
 			-- #endif
 		},
-		["timeline"] = { "removed 8.3.0" },
+		["timeline"] = { "added 3.0.1", "removed 8.3.0" },
 		["maps"] = {
 			-- #if AFTER 8.0.1
 			ORGRIMMAR,
@@ -374,7 +374,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(617, {	-- Immortal No More
 		["provider"] = { "n", 7999 },	-- Tyrande Whisperwind <High Priestess of Elune>
-		["timeline"] = { "removed 8.0.1" },
+		["timeline"] = { "added 3.0.1", "removed 8.0.1" },
 		["maps"] = { DARNASSUS },
 		["races"] = HORDE_ONLY,
 	}),
@@ -460,7 +460,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 29611 },	-- King Varian Wrynn <King of Stormwind>
 			-- #endif
 		},
-		["timeline"] = { REMOVED_9_0_1 },
+		["timeline"] = { "added 3.0.1", REMOVED_9_0_1 },
 		["maps"] = { STORMWIND_CITY },
 		["races"] = HORDE_ONLY,
 	}),

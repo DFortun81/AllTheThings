@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+-- #if AFTER WRATH
 root(ROOTS.Holidays, {	-- General Holiday Content
 	n(ACHIEVEMENTS, {
 		ach(2144, {	-- What a Long, Strange Trip It's Been
@@ -22,3 +23,4 @@ root(ROOTS.Holidays, {	-- General Holiday Content
 		}),
 	}),
 });
+-- #endif

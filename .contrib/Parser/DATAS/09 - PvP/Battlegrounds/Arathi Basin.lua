@@ -134,7 +134,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				faction(509, {	-- The League of Arathor
+					-- #if AFTER TBC
 					["icon"] = "Interface\\Icons\\ability_warrior_rallyingcry",
+					-- #else
+					["icon"] = "Interface\\Icons\\Ability_warrior_battleshout",
+					-- #endif
 					["OnTooltip"] = OnTooltipForArathiBasin,
 					["races"] = ALLIANCE_ONLY,
 				}),

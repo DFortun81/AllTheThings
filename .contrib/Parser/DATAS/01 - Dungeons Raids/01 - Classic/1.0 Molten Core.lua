@@ -30,6 +30,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			}),
 			n(FACTIONS, {
 				faction(749, {	-- Hydraxian Waterlords
+					["icon"] = "Interface\\Icons\\Spell_frost_summonwaterelemental",
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 				}),

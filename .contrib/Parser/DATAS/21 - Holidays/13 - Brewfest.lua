@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+-- #if AFTER 2.2.2
 BREWFEST_HEADER = createHeader({
 	readable = "Brewfest",
 	constant = "BREWFEST_HEADER",
@@ -2452,3 +2453,4 @@ root(ROOTS.NeverImplemented, n(BREWFEST_HEADER, {
 	["criteriaID"] = 9,	-- Stout Shrunken Head
 },
 --]]
+-- #endif

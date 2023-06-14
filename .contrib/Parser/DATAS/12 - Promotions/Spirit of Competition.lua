@@ -15,7 +15,7 @@ SPIRIT_OF_COMPETITION = createHeader({
 		en = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
 	},
 });
-root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDown({ ["timeline"] = { "added 2.0.1", "removed 2.0.8" } }, {
+root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = { "added 2.0.1", "removed 2.0.8" } }, {
 	classicAch(1637, {	-- Spirit of Competition
 		["provider"] = { "i", 37297 },	-- Spirit of Competition
 		["races"] = HORDE_ONLY,

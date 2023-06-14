@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+-- #if AFTER 2.3.0
 RECRUIT_A_FRIEND = createHeader({
 	readable = "Recruit A Friend",
 	-- #if AFTER WRATH
@@ -143,3 +144,4 @@ root(ROOTS.Promotions, {
 		}),
 	})),
 });
+-- #endif
