@@ -682,24 +682,15 @@ for key,value in pairs({
 	-- BFA War Chest
 		[-488] = "Coffre de Guerre",								-- Daily War Chest
 	-- Misc
-		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
-	-- Blizzard Events and Anniversaries
 		[-520] = "Pré-Lancement de l’Extension",					-- Expansion Pre-Launch
 		[-522] = "La chute de Zalazane",							-- Zalazane's Fall
-		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
 		[-532] = "Heroes of the Storm",								-- Heroes of the Storm
 		[-533] = "Hearthstone",										-- Hearthstone
-		[-534] = "Edition Collector",								-- Collector's Edition
 		[-536] = "Hearthstone Mercenaires",							-- Hearthstone Mercenaries
 		[-538] = "Effort de guerre d’Ahn'Qiraj",					-- The Ahn'Qiraj War Effort
 		[-539] = "Le Sceptre des Sables changeants",				-- The Scepter of the Shifting Sands
-		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
-		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "L'ouverture de la Porte des ténèbres",			-- The Opening of the Dark Portal
 		[-543] = "Invasions de Legion ",							-- Legion Invasions
-		[-579] = "Passe Porte des ténèbres",						-- Dark Portal Pass
-		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
-		[-581] = "Édition BC Classic Deluxe",						-- TBC Classic Deluxe Edition
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Équipement Aspirant",							-- Aspirant PvP Gear (WoD, BfA)

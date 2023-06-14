@@ -695,19 +695,13 @@ for key,value in pairs({
 		[-520] = "Препатч",											-- Expansion Pre-Launch
 		[-522] = "Падение Залазана",								-- Zalazane's Fall
 		[-523] = "Буйство элементалей",								-- Elemental Unrest
-		[-534] = "Коллекционное издание",							-- Collector's Edition
 		[-536] = "Hearthstone Наемники",							-- Hearthstone Mercenaries
 		[-538] = "Война в Ан'Кираже",								-- The Ahn'Qiraj War Effort
 		[-539] = "Скипетр Зыбучих песков",							-- The Scepter of the Shifting Sands
 		[-540] = "Вторжение Плети",									-- The Scourge Invasion
-		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "Открытие Темного портала",						-- The Opening of the Dark Portal
 		[-543] = "Вторжение Легиона",								-- Legion Invasions
-		[-579] = "Пропуск Темного портала",							-- Dark Portal Pass
 		[-580] = "Промо Shadowlands",								-- Shadowlands Seasonal Promotions
-		[-581] = "TBC Classic Deluxe",								-- TBC Classic Deluxe Edition
-		[-582] = "WotLK Classic Heroic",							-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
-		[-583] = "WotLK Classic Epic",								-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "Промо Dragonflight",								-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names

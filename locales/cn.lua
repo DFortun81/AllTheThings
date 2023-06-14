@@ -717,7 +717,6 @@ for key,value in pairs({
 		[-523] = "元素动荡",												-- Elemental Unrest
 		[-532] = "风暴英雄",											-- Heroes of the Storm
 		[-533] = "炉石传说",											-- Hearthstone
-		[-534] = "典藏版",												-- Collector's Edition
 		[-536] = "炉石传说佣兵战纪",										-- Hearthstone Mercenaries
 		[-538] = "安其拉之战捐献",											-- The Ahn'Qiraj War Effort
 		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
@@ -726,20 +725,9 @@ for key,value in pairs({
 		[-542] = "开启黑暗之门",											-- The Opening of the Dark Portal
 		[-543] = "军团入侵",											-- Legion Invasions
 		[-545] = "暴雪嘉年华",											-- Blizzcon
-		[-552] = "魔兽争霸III战争嘉奖版",									-- Warcraft 3 Spoils of War Edition
 		[-553] = "可口可乐活动",											-- iCoke
-		[-564] = "星际争霸II：自由之翼",										-- Starcraft II: Wings of Liberty
-		[-565] = "星际争霸II：虫群之心",										-- Starcraft II: Heart of the Swarm
-		[-566] = "暗黑破坏神III",										-- Diablo III
-		[-568] = "守望先锋：起源",											-- Overwatch: Origins
-		[-575] = "暗黑破坏神III：夺魂之镰",									-- Diablo III: Reaper of Souls
-		[-576] = "星际争霸II：虚空之遗",										-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽电影",											-- Warcraft Movie
-		[-579] = "穿过黑暗之门",											-- Dark Portal Pass
 		[-580] = "暗影国度季节性促销",										-- Shadowlands Seasonal Promotions
-		[-581] = "燃烧的远征经典怀旧服典藏包",				-- TBC Classic Deluxe Edition
-		[-582] = "巫妖王之怒经典怀旧服诺森德英雄礼包",			-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
-		[-583] = "巫妖王之怒经典怀旧服诺森德史诗礼包",			-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "巨龙时代季节性促销",			-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names

@@ -683,7 +683,6 @@ for key,value in pairs({
 		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "La apertura del Portal Oscuro",					-- The Opening of the Dark Portal
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
-		[-579] = "Pase para el Portal Oscuro",						-- Dark Portal Pass
 	-- Chests
 		[-851] = "Alijo del Imperio Negro",							-- Black Empire Cache
 	-- Shadowlands Header

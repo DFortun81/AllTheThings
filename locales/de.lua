@@ -688,7 +688,6 @@ for key,value in pairs({
 		[-423] = "Die Vier Reiter",									-- The Four Horsemen
 		[-532] = "Heroes of the Storm",								-- Heroes of the Storm
 		[-533] = "Hearthstone",										-- Hearthstone
-		--TODO: [-534] = "Collector's Edition",						-- Collector's Edition
 		[-536] = "Hearthstone Söldner",								-- Hearthstone Mercenaries
 		--TODO: [-538] = "The Ahn'Qiraj War Effort",				-- The Ahn'Qiraj War Effort
 		[-539] = "Das Szepter der Sandstürme",						-- The Scepter of the Shifting Sands
@@ -696,7 +695,6 @@ for key,value in pairs({
 		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "Die Öffnung des Dunklen Portals",					-- The Opening of the Dark Portal
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
-		[-579] = "Pass zum Dunklen Portal",							-- Dark Portal Pass
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Aspiranten Rüstung",							-- Aspirant PvP Gear (WoD, BfA)

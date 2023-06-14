@@ -678,7 +678,6 @@ for key,value in pairs({
 		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "어둠의 문 열기",										-- The Opening of the Dark Portal
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
-		[-579] = "다크 포털 패스",										-- Dark Portal Pass
 	-- Chests
 		[-851] = "검은 제국 보관함",										-- Black Empire Cache
 	-- Shadowlands Header

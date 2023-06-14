@@ -676,7 +676,6 @@ for key,value in pairs({
 		[-536] = "Hearthstone Mercenários",							-- Hearthstone Mercenaries
 		[-539] = "Cetro das Areias Cambiantes",						-- The Scepter of the Shifting Sands
 		[-542] = "A abertura do Portal Negro",						-- The Opening of the Dark Portal
-		[-579] = "Passe do Portal Negro",							-- Dark Portal Pass
 	-- Pets
 		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
 	-- Chests
