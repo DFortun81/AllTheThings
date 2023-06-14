@@ -690,9 +690,7 @@ for key,value in pairs({
 		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
 		[-1101] = "Tempeste Primordiali",							-- Primal Storms
 		[-1102] = "Irathion & Sabellian",							-- Wrathion & Sabellian
-		[-1110] = "Spedizione delle Scaglie di Drago",				-- Dragonscale Expedition
 		[-1120] = "Centauro Maruuk",								-- Maruuk Centaur
-		[-1121] = "Clan Aylaag",									-- Clan Aylaag
 		[-1130] = "Tuskarr di Iskaara",								-- Iskaara Tuskarr
 		[-1150] = "Niffen di Loamm",								-- Loamm Niffen
 		[-1151] = "Baratto",										-- Bartering

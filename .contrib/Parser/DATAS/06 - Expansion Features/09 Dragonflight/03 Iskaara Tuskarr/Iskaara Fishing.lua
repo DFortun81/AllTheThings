@@ -1,6 +1,15 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+ISKAARA_FISHING = createHeader({
+	readable = "Iskaara Fishing",
+	icon = "Interface\\Icons\\inv_polearm_2h_kultirasharpoon_a_01",
+	text = {
+		en = "Iskaara Fishing",
+		ru = "Искарское рыболовство",
+		cn = "伊斯卡拉渔具",
+	},
+});
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ISKAARA_TUSKARR, {
 		n(ISKAARA_FISHING, bubbleDownSelf({ ["minReputation"] = { FACTION_ISKAARA_TUSKARR, 4 } }, {
@@ -13,7 +22,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					crit(2, {	-- Harpoon head
 						["_quests"] = { 70797 },	-- Jagged Serevite Harpoon Head
 					}),
-					crit(3, {	-- harpoon rope
+					crit(3, {	-- Harpoon rope
 						["_quests"] = { 70799 },	-- Braided Seavine Harpoon Rope
 					}),
 					crit(4, {	-- Fishing net weights
@@ -23,10 +32,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						["_quests"] = { 70803 },	-- Double Imbu Knot
 					}),
 				}),
-				ach(16321),	-- Cutting Tusk Equipment
-				ach(16550),	-- Giving Back to Nature
-				ach(16552),	-- Giving Even More Back to Nature
-				ach(16551),	-- Giving More Back to Nature
+				ach(16321, {	-- Cutting Tusk Equipment
+					crit(1, {	-- Iskaaran Harpoon
+						["_quests"] = { 70792 },	-- Iskaaran Harpoon
+					}),
+					crit(2, {	-- Iskaaran Fishing Net
+						["_quests"] = { 70793 },	-- Iskaaran Fishing Net
+					}),
+				}),
 				ach(16548),	-- It Takes a Tuskarr Buddy
 				ach(16564),	-- It Takes a Tuskarr Family
 				ach(16565),	-- It Takes a Tuskarr Village
@@ -60,9 +73,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						i(199925),	-- Stone With Hole
 						i(199924),	-- Strong Sea Kelp
-						crit(2, {	-- Iskaaran Fishing Net
-							["achievementID"] = 16321,	-- Cutting Tusk Equipment
-						}),
 					},
 				}),
 				q(72584, {	-- Setting Your Very Own Net
@@ -195,6 +205,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					{ 74.2, 41.4, THE_FORBIDDEN_REACH },
 				},
 				["isRepeatable"] = true,
+				["g"] = {
+					ach(16550),	-- Giving Back to Nature
+					ach(16552),	-- Giving Even More Back to Nature
+					ach(16551),	-- Giving More Back to Nature
+				},
 			}, {
 				q(70201),	-- Catch and Release: Aileron Seamoth
 				q(70202),	-- Catch and Release: Cerulean Spinefish

@@ -690,16 +690,8 @@ for key,value in pairs({
 		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
 		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
 		[-1102] = "래시온과 사벨리안",										-- Wrathion & Sabellian
-		[-1110] = "용비늘 원정대",										-- Dragonscale Expedition
 		[-1120] = "마루크 켄타우로스",										-- Maruuk Centaur
-		[-1121] = "아일라그 부족",										-- Clan Aylaag
-		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
-		--TODO: [-1123] = "North",									-- North
-		--TODO: [-1124] = "East",									-- East
-		--TODO: [-1125] = "South",									-- South
-		--TODO: [-1126] = "West",									-- West
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
-		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 		[-1150] = "로암 니펜",											-- Loamm Niffen

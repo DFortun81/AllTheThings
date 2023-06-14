@@ -785,16 +785,8 @@ for key,value in pairs({
 		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
 		[-1101] = "原始风暴",											-- Primal Storms
 		[-1102] = "拉希奥和萨贝里安",										-- Wrathion & Sabellian
-		[-1110] = "龙鳞探险队",											-- Dragonscale Expedition
 		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
-		[-1121] = "艾拉格氏族",											-- Clan Aylaag
-		[-1122] = "洪荒狩猎",											-- Grand Hunts
-		[-1123] = "北部",												-- North
-		[-1124] = "东部",												-- East
-		[-1125] = "南部",												-- South
-		[-1126] = "西部",												-- West
 		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
-		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
 		[-1143] = "每30分钟稀有",										-- DF Rare Rotation (Every 30 min Rare)
 		[-1144] = "每周专业知识",										-- Weekly Profession Header
 		[-1150] = "峈姆鼹鼠人",											-- Loamm Niffen
@@ -821,7 +813,6 @@ for key,value in pairs({
 do a[key] = value; end
 if GetLocale() == "zhTW" then
 	a[-1101] = "洪荒風暴";												-- Primal Storms
-	a[-1110] = "龍鱗遠征隊";												-- Dragonscale Expedition
 	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
 	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarrccord
 end

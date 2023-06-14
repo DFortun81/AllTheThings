@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local ARTISANS_METTLE = 190456;
 local ASPECTS_TOKEN_OF_MERIT_S1 = 201836;
 local ASPECTS_TOKEN_OF_MERIT_S2 = 205225;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

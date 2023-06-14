@@ -78,11 +78,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ISKAARA_TUSKARR, {
-		n(COMMUNITY_FEAST, {
-			q(70925),	-- triggers repeatedly during 'Community Feast' (70925) to show in objective pane
-			q(74382),	-- catching a 'Gungle' / purchasing 'Piping Hot Orca Milk' during Community Feast event
-			q(72079),	-- tasting/sniffing the soup during Community Feast event
-			--q(70924),	-- probably some task during Community Feast event
-		}),
+		q(70925),	-- triggers repeatedly during 'Community Feast' (70925) to show in objective pane
+		q(74382),	-- catching a 'Gungle' / purchasing 'Piping Hot Orca Milk' during Community Feast event
+		q(72079),	-- tasting/sniffing the soup during Community Feast event
+		--q(70924),	-- probably some task during Community Feast event
 	}),
 })));

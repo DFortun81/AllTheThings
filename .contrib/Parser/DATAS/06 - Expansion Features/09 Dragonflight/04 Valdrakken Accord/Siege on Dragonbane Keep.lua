@@ -1,6 +1,13 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+SIEGE_ON_DRAGONBANE_KEEP = createHeader({
+	readable = "Siege on Dragonbane Keep",
+	icon = "Interface\\Icons\\inv_artifact_dragonscales",
+	text = {
+		en = [[~GetSpellInfo(388945)]],
+	},
+});
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(SIEGE_ON_DRAGONBANE_KEEP, bubbleDownSelf({ ["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 5 } }, {

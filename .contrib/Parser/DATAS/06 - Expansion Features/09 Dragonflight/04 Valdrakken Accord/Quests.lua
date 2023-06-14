@@ -847,8 +847,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			},
 		})),
-		i(199906),	-- Titan Relic
-		i(200450),	-- Titan Relic
+		i(199906),	-- Titan Relic [BoP]
+		i(200450),	-- Titan Relic [BoA]
 	}),
 })));
 

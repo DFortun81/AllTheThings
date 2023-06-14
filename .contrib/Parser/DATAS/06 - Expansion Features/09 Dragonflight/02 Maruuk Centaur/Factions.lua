@@ -3,9 +3,9 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(MARUUK_CENTAUR, {
-		n(ACHIEVEMENTS, {
-			ach(16528, {	-- Joining the Khansguard
-				["minReputation"] = { 2503, 25 },	-- Maruuk Centaur Renown 25
+		n(FACTIONS, {
+			faction(FACTION_MARUUK_CENTAUR, {
+				ach(16528),	-- Joining the Khansguard
 			}),
 		}),
 	}),

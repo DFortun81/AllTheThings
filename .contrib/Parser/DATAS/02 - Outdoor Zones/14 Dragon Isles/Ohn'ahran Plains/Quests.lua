@@ -811,9 +811,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 			}),
-			header(HEADERS.Item, 198821, {	-- Divine Kiss of Ohn'ahra
+			header(HEADERS.Item, 198821, bubbleDownSelf({ ["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 } }, {	-- Divine Kiss of Ohn'ahra
 				q(72512, {	-- A Whispering Breeze
-					["minReputation"] = { 2503, 25 },	-- Maruuk Centaur Renown 25
 					["description"] = "Speak to Godoloto to get the clues then gather the cost objects.",
 					["sourceQuests"] = { 66676 },	-- Sneaking In
 					["provider"] = { "n", 190022 },	-- Godoloto
@@ -827,10 +826,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(198821),	-- Divine Kiss of Ohn'ahra (MOUNT!)
 					},
 				}),
-			}),
-			header(HEADERS.Item, 192799, {	-- Lizi, Thunderspine Tramper
+			})),
+			header(HEADERS.Item, 192799, bubbleDownSelf({ ["minReputation"] = { FACTION_MARUUK_CENTAUR, 9 } }, {	-- Lizi, Thunderspine Tramper
 				q(71196, {	-- To Tame A Thunderspine
-					["minReputation"] = { 2503, 19 },	-- Maruuk Centaur Renown 19
 					["sourceQuests"] = { 66676 },	-- Sneaking In
 					["provider"] = { "n", 190014 },	-- Initiate Radiya
 					["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
@@ -883,7 +881,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(192799),	-- Lizi, Thunderspine Tramper (MOUNT!)
 					},
 				}),
-			}),
+			})),
 			header(HEADERS.Item, 200597, {	-- Lover's Bouquet
 				q(70739, {	-- Bloodlines, Sweets, and Teraai
 					["sourceQuests"] = { 65806 },	-- Maruukai

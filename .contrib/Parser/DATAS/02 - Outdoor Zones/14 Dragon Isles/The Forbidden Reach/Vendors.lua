@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local ARTISANS_METTLE = 190456;
 local ELEMENTAL_OVERFLOW = 2118;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
@@ -251,49 +250,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 35.9, 57.5, THE_FORBIDDEN_REACH },
 				["g"] = {
 					i(203426, {	-- Design: Crystal Tuning Fork (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203423, {	-- Formula: Glowing Crystal Bookmark (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203427, {	-- Pattern: Reinforced Pristine Leather (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203428, {	-- Pattern: Traditional Morqut Kite (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203421, {	-- Plans: Ancient Ceremonial Trident (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203420, {	-- Recipe: Draconic Suppression Powder (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203422, {	-- Recipe: Sparkling Spice Pouch (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203424, {	-- Schematic: Gnomish Voicebox (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203425, {	-- Technique: Arcane Dispelling Rune (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 				},
 			}),

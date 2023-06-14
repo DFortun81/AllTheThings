@@ -744,16 +744,8 @@ for key,value in pairs({
 		[-1100] = DRAKE_MANUSCRIPTS,								-- Drakewatcher Manuscripts
 		[-1101] = "Les Tempêtes Primordiales",						-- Primal Storms
 		[-1102] = "Irion et Sabellian",								-- Wrathion & Sabellian
-		[-1110] = "Expédition du Dracaret",							-- Dragonscale Expedition
 		[-1120] = "Centaure maruuk",								-- Maruuk Centaur
-		[-1121] = "Clan des Aylaags",								-- Clan Aylaag
-		[-1122] = "Grandes Chasses",								-- Grand Hunts
-		[-1123] = "Nord",											-- North
-		[-1124] = "Est",											-- East
-		[-1125] = "Sud",											-- South
-		[-1126] = "Ouest",											-- West
 		[-1130] = "Rohart iskaarien",								-- Iskaara Tuskarr
-		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1143] = "Rotation Rare de DF",							-- DF Rare Rotation
 		[-1144] = "Connaissance hebdomadaire de profession",		-- Weekly Profession Header
 		[-1150] = "Flairans de Terreau",							-- Loamm Niffen

@@ -641,8 +641,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			},
 		})),
-		i(200071),	-- Sacred Tuskarr Totem
-		i(200449),	-- Sacred Tuskarr Totem
+		i(200071),	-- Sacred Tuskarr Totem [BoP]
+		i(200449),	-- Sacred Tuskarr Totem [BoA]
 	}),
 })));
 

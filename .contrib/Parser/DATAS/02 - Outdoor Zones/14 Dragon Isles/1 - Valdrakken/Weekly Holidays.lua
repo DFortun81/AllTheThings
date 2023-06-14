@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 				i(202094, {	-- Maruuk Centaur Insignia
-					["minReputation"] = { 2503, 25 },	-- Maruuk Centaur renown 25
+					["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 				i(202093, {	-- Valdrakken Accord Insignia

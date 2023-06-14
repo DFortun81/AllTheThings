@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- #endif
 			}),
 			i(200454, {	-- Maruuk Centaur Insignia
-				["minReputation"] = { 2503, 25 },	-- Maruuk Centaur renown 25
+				["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
@@ -281,6 +281,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["coord"] = { 35.4, 58.8, VALDRAKKEN },
 			["repeatable"] = true,
 			["g"] = {
+				i(200288),	-- Maruuk Centaur Insignia [Uncommon]
 				i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
 				i(200289),	-- Valdrakken Accord Insignia [Uncommon]
 			},
@@ -312,6 +313,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(206135),	-- Heroic Dungeon Delver's Trophy Chest
 					i(206136),	-- Heroic Dungeon Delver's Trophy Crest
 					------ Reputation ------
+					i(200288),	-- Maruuk Centaur Insignia [Uncommon]
 					i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
 					i(205365),	-- Loamm Niffen Insignia [Uncommon]
 					i(200289),	-- Valdrakken Accord Insignia [Uncommon]

@@ -249,11 +249,17 @@ i(48716);	-- Venerable Mass of McGowan
 ------------------
 -- PATCH 10.0.2 --
 ------------------
+i(200447);	-- Centaur Hunting Trophy
 i(200287);	-- Iskaara Tuskarr Insignia [Uncommon]
 i(200453);	-- Iskaara Tuskarr Insignia [Rare]
 i(201922);	-- Iskaara Tuskarr Insignia [Epic]
 i(202092);	-- Iskaara Tuskarr Insignia [Epic 2.5k]
+i(200288);	-- Maruuk Centaur Insignia [Uncommon]
+i(200454);	-- Maruuk Centaur Insignia [Rare]
+i(201923);	-- Maruuk Centaur Insignia [Epic]
+i(202094);	-- Maruuk Centaur Insignia [Epic 2.5k]
 i(200449);	-- Sacred Tuskarr Totem
+i(200450);	-- Titan Relic
 i(200289);	-- Valdrakken Accord Insignia [Uncommon]
 i(200455);	-- Valdrakken Accord Insignia [Rare]
 i(201924);	-- Valdrakken Accord Insignia [Epic]
