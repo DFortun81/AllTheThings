@@ -5,6 +5,7 @@ DAY_OF_THE_DEAD_HEADER = createHeader({
 	readable = "Day of the Dead",
 	constant = "DAY_OF_THE_DEAD_HEADER",
 	icon = [[~_.asset("Holiday_Day_of_the_Dead")]],
+	eventID = 409,
 	text = {
 		en = "Day of the Dead",
 		es = "Festividad de los Muertos",
@@ -24,15 +25,12 @@ local COSTUME_PROVIDERS = {
 	{ "i", 116890 },	-- "Santo's Sun" Contender's Costume
 	{ "i", 116891 },	-- "Snowy Owl" Contender's Costume
 };
-root(ROOTS.Holidays, applyholiday(DAY_OF_THE_DEAD, {
-	-- #if ANYCLASSIC
-	["npcID"] = DAY_OF_THE_DEAD_HEADER,
+root(ROOTS.Holidays, applyholiday(DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER, {
+	-- #if BEFORE WRATH
+	["description"] = "Start: 11/01 at 11:00 AM\nEnd: 11/03 at 11:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. DAY_OF_THE_DEAD .. [[, 11, 1, 11, 3); end]],
-	-- #else
-	["holidayID"] = 307365,
 	-- #endif
 	["timeline"] = { "added 3.2.2.10505" },
-	["description"] = "Start: 11/01 at 11:00 AM\nEnd: 11/03 at 11:00 AM",
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
@@ -233,4 +231,4 @@ root(ROOTS.Holidays, applyholiday(DAY_OF_THE_DEAD, {
 			}),
 		}),
 	},
-}));
+})));

@@ -5,6 +5,7 @@ HALLOWS_END_HEADER = createHeader({
 	readable = "Hallow's End",
 	constant = "HALLOWS_END_HEADER",
 	icon = [[~_.asset("Holiday_hallows_end")]],
+	eventID = 324,
 	text = {
 		en = [[~select(1,GetCategoryInfo(158))]],
 	},
@@ -385,14 +386,11 @@ local SPECTRAL_GROG = i(104316, {	-- Spectral Grog
 	},
 });
 
-root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
-	-- #if ANYCLASSIC
-	["npcID"] = HALLOWS_END_HEADER,
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HALLOWS_END .. [[, 10, 18, 11, 1); end]],
-	-- #else
-	["holidayID"] = 235462,
-	-- #endif
+root(ROOTS.Holidays, applyholiday(HALLOWS_END, n(HALLOWS_END_HEADER, {
+	-- #if BEFORE WRATH
 	["description"] = "Start: 10/18 at 10:00 AM\nEnd: 11/01 at 11:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HALLOWS_END .. [[, 10, 18, 11, 1); end]],
+	-- #endif
 	["groups"] = {
 		-- #if AFTER 2.0.1
 		n(ACHIEVEMENTS, {
@@ -4489,34 +4487,35 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 			-- #endif
 		}),
 	},
-}));
+})));
 
 -- Remove the holiday flag.
 SPECTRAL_GROG.u = nil;
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
+-- #if BEFORE 2.0.1
+root(ROOTS.NeverImplemented, n(HALLOWS_END_HEADER, {
 	-- #if ANYCLASSIC
-	["npcID"] = HALLOWS_END_HEADER,
-	-- #else
-	["holidayID"] = 235462,
+	i(33176, {	-- Flying Broom (MOUNT!)
+		["timeline"] = { "created 2.2.2.7318", "deleted 4.2.2" },
+	}),
+	i(33182, {	-- Swift Flying Broom (MOUNT!)
+		["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
+	}),
+	i(33184, {	-- Swift Magic Broom (MOUNT!)
+		["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
+	}),
+	i(33183, {	-- Old Magic Broom (MOUNT!)
+		["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
+	}),
 	-- #endif
-	["groups"] = {
-		-- #if ANYCLASSIC
-		i(33176, {	-- Flying Broom (MOUNT!)
-			["timeline"] = { "created 2.2.2.7318", "deleted 4.2.2" },
-		}),
-		i(33182, {	-- Swift Flying Broom (MOUNT!)
-			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
-		}),
-		i(33184, {	-- Swift Magic Broom (MOUNT!)
-			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
-		}),
-		i(33183, {	-- Old Magic Broom (MOUNT!)
-			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
-		}),
-		-- #endif
-		i(33957),	-- Witches Band (unused version)
-		i(33958),	-- The Horseman's Signet Ring (unused version)
-		i(33959),	-- Ring of Ghoulish Delight (unused version)
-	},
-}}));
+	i(33957, {	-- Witches Band (unused version)
+		["timeline"] = { "created 2.3.0.7521" },
+	}),
+	i(33958, {	-- The Horseman's Signet Ring (unused version)
+		["timeline"] = { "created 2.3.0.7521" },
+	}),
+	i(33959, {	-- Ring of Ghoulish Delight (unused version)
+		["timeline"] = { "created 2.3.0.7521" },
+	}),
+}));
+-- #endif

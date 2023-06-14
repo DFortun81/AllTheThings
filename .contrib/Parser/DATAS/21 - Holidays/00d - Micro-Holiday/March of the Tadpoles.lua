@@ -1,7 +1,16 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(MARCH_OF_THE_TADPOLES, bubbleDown({ ["timeline"] = { "added 7.1.5" } }, {
+MARCH_OF_THE_TADPOLES_HEADER = createHeader({
+	readable = "March of the Tadpoles",
+	constant = "MARCH_OF_THE_TADPOLES_HEADER",
+	icon = [[~_.asset("Holiday_Marchofmurloc")]],
+	eventID = 647,
+	text = {
+		en = "March of the Tadpoles",
+	},
+});
+root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, n(MARCH_OF_THE_TADPOLES_HEADER, bubbleDown({ ["timeline"] = { "added 7.1.5" } }, {
 	n(QUESTS, sharedData({
 		["isWeekly"] = true,
 		["maps"] = { BOREAN_TUNDRA },

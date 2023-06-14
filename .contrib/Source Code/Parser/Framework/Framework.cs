@@ -3359,14 +3359,12 @@ namespace ATT
                 case "displayID":
                 case "encounterID":
                 case "equippable":
+                case "eventID":
                 case "factionID":
                 case "flightPathID":
                 case "followerID":
                 case "heirloomID":
                 case "hideText":
-				#if !ANYCLASSIC
-                case "holidayID":
-				#endif
                 case "icon":
                 case "ignoreBonus":
                 case "ignoreSource":
@@ -4656,6 +4654,8 @@ namespace ATT
                         .AppendLine("local L = _.L;")
                         .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
                     var keys = new List<long>();
+                    var eventIDs = new Dictionary<long, long>();
+                    var eventRemaps = new Dictionary<long, long>();
                     var icons = new Dictionary<long, string>();
                     var constants = new Dictionary<long, string>();
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
@@ -4669,7 +4669,19 @@ namespace ATT
                             if (CustomHeaders.TryGetValue(key, out object o) && o is Dictionary<string, object> header)
                             {
                                 keys.Add(key);
-                                if (header.TryGetValue("icon", out object value))
+                                if (header.TryGetValue("eventID", out object value))
+                                {
+                                    long eventID = Convert.ToInt64(value);
+                                    eventIDs[key] = eventID;
+                                    if (header.TryGetValue("eventIDs", out value) && value is List<object> ids)
+                                    {
+                                        foreach(var eventIDAsObj in ids)
+                                        {
+                                            eventRemaps[Convert.ToInt64(eventIDAsObj)] = eventID;
+                                        }
+                                    }
+                                }
+                                if (header.TryGetValue("icon", out value))
                                 {
                                     icons[key] = value.ToString().Replace("\\", "/");
                                 }
@@ -4745,6 +4757,29 @@ namespace ATT
                         }
                     }
                     builder.AppendLine("};").AppendLine();
+
+
+                    if (eventIDs.Any())
+                    {
+                        builder.AppendLine("local a = L.HEADER_EVENTS;").AppendLine("for key,value in pairs({");
+                        foreach (var key in keys)
+                        {
+                            if (eventIDs.TryGetValue(key, out long eventID))
+                            {
+                                ExportObjectKeyValue(builder, key, eventID).AppendLine();
+                            }
+                        }
+                        builder.AppendLine("}) do a[key] = value; end").AppendLine();
+                    }
+                    if (eventRemaps.Any())
+                    {
+                        builder.AppendLine("local a = L.EVENT_REMAPPING;").AppendLine("for key,value in pairs({");
+                        foreach (var pair in eventRemaps)
+                        {
+                            ExportObjectKeyValue(builder, pair.Key, pair.Value).AppendLine();
+                        }
+                        builder.AppendLine("}) do a[key] = value; end").AppendLine();
+                    }
 
                     builder.AppendLine("local a = L.HEADER_ICONS;").AppendLine("for key,value in pairs({");
                     foreach (var key in keys)

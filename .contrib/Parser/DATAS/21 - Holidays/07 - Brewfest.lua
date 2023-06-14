@@ -5,6 +5,7 @@ BREWFEST_HEADER = createHeader({
 	readable = "Brewfest",
 	constant = "BREWFEST_HEADER",
 	icon = [[~_.asset("Holiday_brewfest")]],
+	eventID = 372,
 	text = {
 		en = [[~select(1,GetCategoryInfo(162))]],
 	},
@@ -147,18 +148,11 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	end
 end]];
 
-root(ROOTS.Holidays, applyholiday(BREWFEST, {
-	-- #if ANYCLASSIC
-	["npcID"] = BREWFEST_HEADER,
-	-- #if AFTER 3.0.0
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. BREWFEST .. [[, 9, 20, 10, 6); end]],
-	-- #else
+root(ROOTS.Holidays, applyholiday(BREWFEST, n(BREWFEST_HEADER, {
+	-- #if BEFORE WRATH
+	["description"] = "Start: 09/20 at 10:00 AM\nEnd: 10/06 at 10:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. BREWFEST .. [[, 9, 20, 10, 4); end]],
 	-- #endif
-	-- #else
-	["holidayID"] = 235442,
-	-- #endif
-	["description"] = "Start: 09/20 at 10:00 AM\nEnd: 10/06 at 10:00 AM",
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			-- #if BEFORE MOP
@@ -2357,7 +2351,9 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 			},
 		}),
 	},
-}));
+})));
+
+-- #if AFTER 6.0.1
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(37247, {	-- Angry Brewfest Letter - triggers when using "Angry Brewfest Letter" to cancel Brew of the Month subscription
@@ -2365,18 +2361,15 @@ root(ROOTS.HiddenQuestTriggers, {
 		}),
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	-- #if ANYCLASSIC
-	["npcID"] = -56,
-	-- #else
-	["holidayID"] = 235442,
-	-- #endif
-	["groups"] = {
-		i(167998, {	-- Dark Iron Tankard
-			["timeline"] = { "created 8.1.5.29701" },
-		}),
-	},
+-- #endif
+
+-- #if AFTER 8.1.5.29701
+root(ROOTS.NeverImplemented, n(BREWFEST_HEADER, {
+	i(167998, {	-- Dark Iron Tankard
+		["timeline"] = { "created 8.1.5.29701" },
+	}),
 }));
+-- #endif
 
 --[[ TODO: Transfer these achievement criteria to the item on the actual vendor
 -- Alliance

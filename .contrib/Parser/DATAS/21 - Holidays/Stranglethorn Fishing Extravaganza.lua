@@ -4,6 +4,7 @@
 STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 	readable = "Stranglethorn Fishing Extravaganza",
 	icon = "Interface\\Icons\\inv_misc_fish_06",
+	eventID = 301,	-- Obtained from Wrath Classic
 	text = {
 		en = "Stranglethorn Fishing Extravaganza",
 		es = "Gran espectáculo de pesca de Tuercespina",
@@ -25,6 +26,7 @@ local DREAD_PIRATE_RING = i(122529, {	-- Dread Pirate Ring
 });
 root(ROOTS.Holidays, applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER, {
 	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
+	["OnUpdate"] = [[function() _.Settings:CheckWeekDay(]] .. STRANGLETHORN_FISHING_EXTRAVAGANZA .. [[, 1); end]],
 	["maps"] = {
 		-- #if AFTER CATA
 		THE_CAPE_OF_STRANGLETHORN,
@@ -32,7 +34,6 @@ root(ROOTS.Holidays, applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STRANGLE
 		STRANGLETHORN_VALE,
 		-- #endif
 	},
-	["OnUpdate"] = [[function() _.Settings:CheckWeekDay(]] .. STRANGLETHORN_FISHING_EXTRAVAGANZA .. [[, 1); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			classicAch(306, {	-- Master Angler of Azeroth

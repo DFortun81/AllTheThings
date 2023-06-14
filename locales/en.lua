@@ -946,49 +946,7 @@ app.L = {
 		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
 		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",			-- Event Item
 	};
-
-	-- Custom Icons for Holidays
-	["HOLIDAY_ID_ICONS"] = {
-		-- Examples --
-		-- [HOLIDAY_ID] = app.asset("PATH"),	-- Holiday Name
-		-- [HOLIDAY_ID] = "PATH//TO//ICON",	-- Holiday Name
-		-- [HOLIDAY_ID] = ICON_ID			-- Holiday Name
-
-		-- "Legit" Holidays
-		[235442] = app.asset("Holiday_brewfest"),	-- Brewfest
-		[235445] = app.asset("Holiday_Children"),	-- Children's Week
-		[235448] = app.asset("Event_dmf"),	-- Darkmoon Faire
-		[307365] = app.asset("Holiday_Day_of_the_Dead"),	-- Day of the Dead
-		[235485] = app.asset("Holiday_winter_veil"),	-- Feast of Winter Veil
-		-- [235457] = app.asset("TODO"),	-- Fireworks Spectacular
-		[235462] = app.asset("Holiday_hallows_end"),	-- Hallow's End
-		[235465] = app.asset("Holiday_Harvestfest"),	-- Harvest Festival
-		[235468] = app.asset("Holiday_love"),	-- Love is in the Air
-		[235471] = app.asset("Holiday_Lunar"),	-- Lunar Festival
-		[235474] = app.asset("Holiday_Midsummer"),	-- Midsummer Fire Festival
-		[235477] = app.asset("Holiday_noblegarden"),	-- Noblegarden
-		[235466] = app.asset("Holiday_Pilgrim"),	-- Pilgrim's Bounty
-		[235481] = app.asset("Holiday_Pirate"),	-- Pirates' Day
-
-		-- "Micro" Holidays
-		-- [1671624] = app.asset("TODO"),	-- Auction House Dance Party
-		[1574965] = app.asset("Holiday_call_of_the_scarab"),	-- Call of the Scarab
-		[2827082] = app.asset("Holiday_Tshirt"),	-- Free T-Shirt Day
-		-- [1572471] = app.asset("TODO"),	-- Glowcap Festival
-		-- [1574966] = app.asset("TODO"),	-- Hatching of the Hippogryphs
-		-- [1574967] = app.asset("TODO"),	-- Kirin Tor Tavern Crawl
-		-- [2827083] = app.asset("TODO"),	-- Luminous Luminaries
-		[1572472] = app.asset("Holiday_Marchofmurloc"),	-- March of the Tadpoles
-		-- [1671628] = app.asset("TODO"),	-- Moonkin Festival
-		-- [1572475] = app.asset("TODO"),	-- Spring Balloon Festival
-		[1671627] = 236445,					-- The Great Gnomeregan Run
-		-- [1572478] = app.asset("TODO"),	-- Thousand Boat Bash
-		[1671631] = app.asset("Holiday_Trialofstyle"),	-- Trial of Style
-		-- [1574970] = app.asset("TODO"),	-- Un'Goro Madness
-		-- [1572479] = app.asset("TODO"),	-- Volunteer Guard Day
-		-- [2827084] = app.asset("TODO"),	-- Wanderer's Festival
-	};
-
+	
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
@@ -1602,7 +1560,9 @@ app.L = {
 		[-10082] = "Lost Area",
 	};
 	["HEADER_DESCRIPTIONS"] = {};
+	["HEADER_EVENTS"] = {};
 	["HEADER_LORE"] = {};
+	["EVENT_REMAPPING"] = {};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
 	-- If your saves aren't lining up, it's probably because Blizzard

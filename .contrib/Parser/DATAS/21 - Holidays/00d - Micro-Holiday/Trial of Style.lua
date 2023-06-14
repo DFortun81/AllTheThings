@@ -1,8 +1,17 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+TRIAL_OF_STYLE_HEADER = createHeader({
+	readable = "Trial of Style",
+	constant = "TRIAL_OF_STYLE_HEADER",
+	icon = [[~_.asset("Holiday_Trialofstyle")]],
+	eventID = 691,
+	text = {
+		en = "Trial of Style",
+	},
+});
 local TRIAL_OF_STYLE_TOKEN = 151134;
-root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleDown({ ["timeline"] = { "added 7.2.5" } }, {
+root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, n(TRIAL_OF_STYLE_HEADER, bubbleDown({ ["timeline"] = { "added 7.2.5" } }, {
 	n(REWARDS, {
 		i(TRIAL_OF_STYLE_TOKEN),
 		i(147573),	-- Trial of Style Reward: First Place
@@ -389,7 +398,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	holiday(TRIAL_OF_STYLE, {
+	n(TRIAL_OF_STYLE_HEADER, {
 		i(188240),	-- Augur's Walkers
 		i(188246),	-- Bloodbathed Slippers
 		i(188247),	-- Boots of the Blightbelcher

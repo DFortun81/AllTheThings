@@ -5,6 +5,7 @@ MIDSUMMER_FIRE_FESTIVAL_HEADER = createHeader({
 	readable = "Midsummer Fire Festival",
 	constant = "MIDSUMMER_FIRE_FESTIVAL_HEADER",
 	icon = [[~_.asset("Holiday_Midsummer")]],
+	eventID = 341,
 	text = {
 		en = "Midsummer Fire Festival",	-- Category 161 is "Midsummer", perhaps this is fine to use instead?
 		de = "Sonnenwendfest",
@@ -251,14 +252,11 @@ local MERCHANT_GROUPS = {
 
 local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
 
-root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
-	-- #if ANYCLASSIC
-	["npcID"] = MIDSUMMER_FIRE_FESTIVAL_HEADER,
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. MIDSUMMER_FIRE_FESTIVAL .. [[, 6, 21, 7, 5); end]],
-	-- #else
-	["holidayID"] = 235474,
-	-- #endif
+root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE_FESTIVAL_HEADER, {
+	-- #if BEFORE WRATH
 	["description"] = "Start: 06/21 at 10:00 AM\nEnd: 07/05 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. MIDSUMMER_FIRE_FESTIVAL .. [[, 6, 21, 7, 5); end]],
+	-- #endif
 	["groups"] = {
 		n(25740, {	-- Ahune
 			-- #if AFTER WRATH
@@ -2838,13 +2836,15 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 			}),
 		}),
 	},
-}));
+})));
 
+-- #if AFTER TBC
 root(ROOTS.HiddenQuestTriggers, {
 	m(COILFANG_RESERVOIR_SLAVE_PENS, {
 		q(11976),	-- Cross completes on completion of Shards of Ahune
 	}),
 });
+-- #endif
 
 -- Remove the holiday flag.
 HUGE_SNOWBALL.u = nil;

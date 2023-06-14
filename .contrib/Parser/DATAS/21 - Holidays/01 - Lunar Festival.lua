@@ -1,22 +1,20 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+-- https://www.wowhead.com/event=327/lunar-festival
 LUNAR_FESTIVAL_HEADER = createHeader({
 	readable = "Lunar Festival",
 	constant = "LUNAR_FESTIVAL_HEADER",
 	icon = [[~_.asset("Holiday_Lunar")]],
+	eventID = 327,
 	text = {
 		en = [[~select(1,GetCategoryInfo(160))]],
 	},
 });
-root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
-	-- #if ANYCLASSIC
-	["npcID"] = LUNAR_FESTIVAL_HEADER,
+root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, {
+	-- #if BEFORE WRATH
 	["description"] = "Start: 01/20 at 10:00 AM\nEnd: 02/03 at 10:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LUNAR_FESTIVAL .. [[, 1, 20, 2, 3); end]],
-	-- #else
-	["holidayID"] = 235471,
-	["description"] = "Start and end dates change every year to coincide with the Lunar New Year.",
 	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {
@@ -1465,4 +1463,4 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 		}),
 		-- #endif
 	},
-}));
+})));

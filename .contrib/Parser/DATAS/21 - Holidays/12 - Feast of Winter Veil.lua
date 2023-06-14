@@ -5,6 +5,7 @@ FEAST_OF_WINTER_VEIL_HEADER = createHeader({
 	readable = "Feast of Winter Veil",
 	constant = "FEAST_OF_WINTER_VEIL_HEADER",
 	icon = [[~_.asset("Holiday_winter_veil")]],
+	eventID = 141,
 	text = {
 		en = [[~GetSpellInfo(21953)]],
 	},
@@ -56,14 +57,11 @@ local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
 	}),
 	-- #endif
 };
-root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
-	-- #if ANYCLASSIC
-	["npcID"] = FEAST_OF_WINTER_VEIL_HEADER,
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. FEAST_OF_WINTER_VEIL .. [[, 12, 16, 1, 2); end]],
-	-- #else
-	["holidayID"] = 235485,
-	-- #endif
+root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
+	-- #if BEFORE WRATH
 	["description"] = "Start: 12/16 at 10:00 AM\nEnd: 01/02 at 6:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. FEAST_OF_WINTER_VEIL .. [[, 12, 16, 1, 2); end]],
+	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			-- #if BEFORE MOP
@@ -2445,19 +2443,25 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 			}),
 		}),
 	},
-}));
+})));
 
+-- #if AFTER 7.1.0.22844
 root(ROOTS.HiddenQuestTriggers, {
-	holiday(235485, {	-- Winter's Veil
-		q(45766, {["isYearly"]=true}),	-- finding Greatfather Winter in Highmountain (npc ID 104710)
+	n(FEAST_OF_WINTER_VEIL_HEADER, {
+		q(45766, {	-- finding Greatfather Winter in Highmountain (npc ID 104710)
+			["timeline"] = { "added 7.1.0.22844" },
+			["isYearly"] = true,
+		}),
 		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy.
 			["timeline"] = { ADDED_9_1_5 },
 		}),
 	}),
 });
+-- #endif
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	holiday(235485, {	-- Feast of Winter Veil
+-- #if AFTER 7.2.0.23436
+root(ROOTS.NeverImplemented, {
+	n(FEAST_OF_WINTER_VEIL_HEADER, {
 		i(146305, {	-- Green Winter Hat	{STUCK ON RETRIEVING DATA)
 			["timeline"] = { "created 7.2.0.23436" },
 		}),
@@ -2486,7 +2490,8 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			["timeline"] = { "created 7.2.0.23436" },
 		}),
 	}),
-}));
+});
+-- #endif
 
 -- Remove the holiday flag.
 -- #if BEFORE 6.2.2.20395

@@ -5,6 +5,7 @@ PILGRIMS_BOUNTY_HEADER = createHeader({
 	readable = "Pilgrim's Bounty",
 	constant = "PILGRIMS_BOUNTY_HEADER",
 	icon = [[~_.asset("Holiday_Pilgrim")]],
+	eventID = 404,
 	text = {
 		en = [[~select(1,GetCategoryInfo(14981))]],
 	},
@@ -30,15 +31,12 @@ local HORDE_PILGRIM_MAPS = {
 	TIRISFAL_GLADES,
 };
 local ALL_PILGIM_MAPS = appendGroups(ALLIANCE_PILGRIM_MAPS, appendGroups(HORDE_PILGRIM_MAPS, {}));
-root(ROOTS.Holidays, applyholiday(PILGRIMS_BOUNTY, {
-	-- #if ANYCLASSIC
-	["npcID"] = PILGRIMS_BOUNTY_HEADER,
+root(ROOTS.Holidays, applyholiday(PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER, {
+	-- #if BEFORE WRATH
+	["description"] = "Start: 11/22 at 10:00 AM\nEnd: 11/29 at 9:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PILGRIMS_BOUNTY .. [[, 11, 22, 11, 29); end]],
-	-- #else
-	["holidayID"] = 235466,
 	-- #endif
 	["timeline"] = { "added 3.1.0.9658" },
-	["description"] = "Start: 11/22 at 10:00 AM\nEnd: 11/29 at 9:00 AM",
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
@@ -842,4 +840,4 @@ root(ROOTS.Holidays, applyholiday(PILGRIMS_BOUNTY, {
 			}),
 		}),
 	},
-}));
+})));

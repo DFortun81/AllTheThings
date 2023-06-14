@@ -5,6 +5,7 @@ CHILDRENS_WEEK_HEADER = createHeader({
 	readable = "Children's Week",
 	constant = "CHILDRENS_WEEK_HEADER",
 	icon = [[~_.asset("Holiday_Children")]],
+	eventID = 201,
 	text = {
 		en = [[~select(1,GetCategoryInfo(163))]],
 	},
@@ -90,18 +91,10 @@ local WARDEN_OF_THE_GROUPS = {
 	i(23022),	-- Curmudgeon's Payoff
 };
 
-root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
-	-- #if ANYCLASSIC
-	["npcID"] = CHILDRENS_WEEK_HEADER,
-	-- #if AFTER CATA
-	["description"] = "Start: 05/02 at 10:00 AM\nEnd: 05/09 at 10:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. CHILDRENS_WEEK .. [[, 5, 2, 5, 9); end]],
-	-- #else
+root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
+	-- #if BEFORE WRATH
 	["description"] = "Start: 05/01 at 12:00 AM\nEnd: 05/07 at 11:59 PM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. CHILDRENS_WEEK .. [[, 5, 1, 5, 8); end]],
-	-- #endif
-	-- #else
-	["holidayID"] = 235445,
 	-- #endif
 	["groups"] = {
 		-- #if AFTER WRATH
@@ -1668,9 +1661,13 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 		}),
 		-- #endif
 	},
-}));
+})));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(55376),	-- completing Hunting for Gold (53969)
-	q(55377),	-- completing Hunting for Gold (53969)
+	q(55376, {	-- completing Hunting for Gold (53969)
+		["timeline"] = { "added 8.0.1" },
+	}),
+	q(55377, {	-- completing Hunting for Gold (53969)
+		["timeline"] = { "added 8.0.1" },
+	}),
 });

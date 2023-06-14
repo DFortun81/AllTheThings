@@ -5,6 +5,7 @@ HARVEST_FESTIVAL_HEADER = createHeader({
 	readable = "Harvest Festival",
 	constant = "HARVEST_FESTIVAL_HEADER",
 	icon = [[~_.asset("Holiday_Harvestfest")]],
+	eventID = 321,
 	text = {
 		en = "Harvest Festival",
 	},
@@ -12,14 +13,11 @@ HARVEST_FESTIVAL_HEADER = createHeader({
 local BLUE_FIREWORK = i(9312);	-- Blue Firework
 local GREEN_FIREWORK = i(9313);	-- Green Firework
 local RED_FIREWORK = i(9318);	-- Red Firework
-root(ROOTS.Holidays, applyholiday(HARVEST_FESTIVAL, {
-	-- #if ANYCLASSIC
-	["npcID"] = HARVEST_FESTIVAL_HEADER,
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HARVEST_FESTIVAL .. [[, 9, 6, 9, 13); end]],
-	-- #else
-	["holidayID"] = 235465,
-	-- #endif
+root(ROOTS.Holidays, applyholiday(HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEADER, {
+	-- #if BEFORE WRATH
 	["description"] = "Start: 09/06 at 10:00 AM\nEnd: 09/13 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HARVEST_FESTIVAL .. [[, 9, 6, 9, 13); end]],
+	-- #endif
 	["groups"] = {
 		n(MAILBOX, {
 			i(19697),	-- Bounty of the Harvest
@@ -88,7 +86,7 @@ root(ROOTS.Holidays, applyholiday(HARVEST_FESTIVAL, {
 			},
 		}),
 	},
-}));
+})));
 
 -- Unmark as holiday.
 BLUE_FIREWORK.u = nil;

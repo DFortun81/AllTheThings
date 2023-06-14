@@ -4915,12 +4915,21 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if group.isLimited then
 			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
 		end
+		
 		-- Description for Items
 		if group.lore and app.Settings:GetTooltipSetting("Lore") then
 			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipLore });
 		end
 		if group.description and app.Settings:GetTooltipSetting("Descriptions") then
 			tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
+		end
+		if group.eventInfo and group.eventInfo.times then
+			local timeStrings = app.GetBestEventTimeStrings(group.eventInfo.times);
+			if timeStrings then
+				for i,timeString in ipairs(timeStrings) do
+					tinsert(info, 1, { left = timeString, wrap = true, color = app.Colors.TooltipDescription });
+				end
+			end
 		end
 		if group.rwp then
 			tinsert(info, 1, { left = GetRemovedWithPatchString(group.rwp), wrap = true, color = app.Colors.RemovedWithPatch });
@@ -11244,114 +11253,6 @@ app.CreateGearSetSubHeader = function(id, t)
 end
 end)();
 
--- Holiday Lib
-(function()
-local function GetHolidayCache()
-	local cache = GetTempDataMember("HOLIDAY_CACHE");
-	if not cache then
-		cache = {};
-		SetTempDataMember("HOLIDAY_CACHE", cache);
-		SetDataMember("HOLIDAY_CACHE", cache);
-		local date = C_DateAndTime.GetCurrentCalendarTime();
-		if date.month > 8 then
-			C_Calendar.SetAbsMonth(date.month - 8, date.year);
-		else
-			C_Calendar.SetAbsMonth(date.month + 4, date.year - 1);
-		end
-		--local date = C_Calendar.GetDate();
-		for month=1,12,1 do
-			-- We kick off the search from January 1 at the start of the year using SetAbsMonth/GetMonthInfo. All successive functions are built from the returns of these.
-			local absMonth = C_Calendar.SetAbsMonth(month, date.year);
-			local monthInfo = C_Calendar.GetMonthInfo(absMonth);
-			for day=1,monthInfo.numDays,1 do
-				local numEvents = C_Calendar.GetNumDayEvents(0, day);
-				if numEvents > 0 then
-					for index=1,numEvents,1 do
-						local event = C_Calendar.GetDayEvent(0, day, index);
-						if event then -- If this is nil, then attempting to index it on the same line will toss an error.
-							if event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
-								if event.iconTexture then
-									local t = cache[event.iconTexture];
-									if not t then
-										t = {
-											["name"] = event.title,
-											["icon"] = event.iconTexture,
-											["times"] = {},
-										};
-										cache[event.iconTexture] = t;
-									elseif event.iconTexture == 235465 then
-										-- Harvest Festival and Pilgrims Bounty use the same icon...
-										t = {
-											["name"] = event.title,
-											["icon"] = event.iconTexture,
-											["times"] = {},
-										};
-										cache[235466] = t;
-									end
-									tinsert(t.times,
-									{
-										["start"] = time({
-											year=event.startTime.year,
-											month=event.startTime.month,
-											day=event.startTime.monthDay,
-											hour=event.startTime.hour,
-											minute=event.startTime.minute,
-										}),
-										["end"] = time({
-											year=event.endTime.year,
-											month=event.endTime.month,
-											day=event.endTime.monthDay,
-											hour=event.endTime.hour,
-											minute=event.endTime.minute,
-										}),
-										["startTime"] = event.startTime,
-										["endTime"] = event.endTime,
-									});
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	return cache;
-end
-local texcoord = { 0.0, 0.7109375, 0.0, 0.7109375 };
-local fields = {
-	["key"] = function(t)
-		return "holidayID";
-	end,
-	["info"] = function(t)
-		local info = GetHolidayCache()[t.holidayID];
-		if info then
-			t.info = info;
-			return info;
-		end
-		return {};
-	end,
-	["name"] = function(t)
-		return t.info.name;
-	end,
-	["icon"] = function(t)
-		-- Use the custom icon if defined
-		local icon = L["HOLIDAY_ID_ICONS"][t.holidayID];
-		if icon then
-			t.icon = icon;
-			return icon;
-		end
-		return t.holidayID == 235466 and 235465 or t.holidayID;
-	end,
-	["texcoord"] = function(t)
-		return not rawget(t, "icon") and texcoord;
-	end,
-};
-app.BaseHoliday = app.BaseObjectFields(fields, "BaseHoliday");
-app.CreateHoliday = function(id, t)
-	return setmetatable(constructor(id, t, "holidayID"), app.BaseHoliday);
-end
-end)();
-
 -- Illusion Lib
 -- TODO: add caching for consistency/move to sub-item lib?
 (function()
@@ -13216,7 +13117,120 @@ local function CacheInfo(t, field)
 	if field then return _t[field]; end
 end
 
+-- Event Lib (using Headers!)
+do
+local remappedEventToMapID = {
+	[374] = 1429,	-- Elwynn Forest
+	[375] = 1456,	-- Thunder Bluff
+	[376] = 1952,	-- Terrokar Forest
+};
+app.GetEventCache = function()
+	local cache = GetDataMember("Events");
+	if not cache then
+		cache = {};
+		if C_DateAndTime and C_Calendar then
+			local date = C_DateAndTime.GetCurrentCalendarTime();
+			if date.month > 8 then
+				C_Calendar.SetAbsMonth(date.month - 8, date.year);
+			else
+				C_Calendar.SetAbsMonth(date.month + 4, date.year - 1);
+			end
+			for month=1,12,1 do
+				-- We kick off the search from January 1 at the start of the year using SetAbsMonth/GetMonthInfo. All successive functions are built from the returns of these.
+				local absMonth = C_Calendar.SetAbsMonth(month, date.year);
+				local monthInfo = C_Calendar.GetMonthInfo(absMonth);
+				for day=1,monthInfo.numDays,1 do
+					local numEvents = C_Calendar.GetNumDayEvents(0, day);
+					if numEvents > 0 then
+						for index=1,numEvents,1 do
+							local event = C_Calendar.GetDayEvent(0, day, index);
+							if event then -- If this is nil, then attempting to index it on the same line will toss an error.
+								if event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
+									local eventID = event.eventID;
+									local remappedID = L.EVENT_REMAPPING[eventID] or eventID;
+									if remappedID then
+										local t = cache[remappedID];
+										if not t then
+											t = {
+												["name"] = event.title,
+												["icon"] = event.iconTexture,
+												["times"] = {},
+											};
+											cache[remappedID] = t;
+											SetDataMember("Events", cache);
+										end
+										local schedule = {
+											["start"] = time({
+												year=event.startTime.year,
+												month=event.startTime.month,
+												day=event.startTime.monthDay,
+												hour=event.startTime.hour,
+												minute=event.startTime.minute,
+											}),
+											["end"] = time({
+												year=event.endTime.year,
+												month=event.endTime.month,
+												day=event.endTime.monthDay,
+												hour=event.endTime.hour,
+												minute=event.endTime.minute,
+											}),
+											["startTime"] = event.startTime,
+											["endTime"] = event.endTime,
+										};
+										if remappedID ~= eventID then
+											schedule.remappedID = eventID;
+										end
+										tinsert(t.times, schedule);
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	return cache;
+end
+local function GetEventTimeString(d)
+	if d then
+		return format("%s, %s %02d, %d at %02d:%02d", 
+			CALENDAR_WEEKDAY_NAMES[d.weekday],
+			CALENDAR_FULLDATE_MONTH_NAMES[d.month],
+			d.monthDay, d.year, d.hour, d.minute );
+	end
+	return "??";
+end
+app.GetBestEventTimeStrings = function(times)
+	if times and #times > 0 then
+		local now = C_DateAndTime.GetServerTimeLocal();
+		local nextData = times[1];
+		for i,data in ipairs(times) do
+			if now < data["end"] then
+				nextData = data;
+				break;
+			end
+		end
+		local schedule = {};
+		if nextData.endTime then
+			tinsert(schedule, "Start:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextData.startTime));
+			tinsert(schedule, "End:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextData.endTime));
+			
+		else
+			tinsert(schedule, "Active:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextData.startTime));
+		end
+		if nextData.remappedID then
+			local mapID = remappedEventToMapID[nextData.remappedID];
+			local info = C_Map.GetMapInfo(mapID);
+			tinsert(schedule, "Where:" .. DESCRIPTION_SEPARATOR .. (info.name or ("Map ID #" .. mapID)));
+		end
+		return schedule;
+	end
+end
+end
+
 -- Header Lib
+local texcoordForEvents = { 0.0, 0.7109375, 0.0, 0.7109375 };
 local headerFields = {
 	["key"] = function(t)
 		return "headerID";
@@ -13242,12 +13256,46 @@ local headerFields = {
 	["linkAsAchievement"] = function(t)
 		return GetAchievementLink(t.achievementID);
 	end,
+	["nameAsEvent"] = function(t)
+		return L["HEADER_NAMES"][t.headerID] or t.eventInfo.name;
+	end,
+	["iconAsEvent"] = function(t)
+		return L["HEADER_ICONS"][t.headerID] or t.eventInfo.icon;
+	end,
+	["texcoordAsEvent"] = function(t)
+		if t.icon == t.eventInfo.icon then
+			return texcoordForEvents;
+		end
+	end,
+	["eventIDAsEvent"] = function(t)
+		local eventID = L.HEADER_EVENTS[t.headerID];
+		if eventID then
+			t.eventID = eventID;
+			return eventID;
+		end
+	end,
+	["eventInfo"] = function(t)
+		local info = app.GetEventCache()[t.eventID];
+		if info then
+			t.eventInfo = info;
+			return info;
+		end
+		return {};
+	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 };
 app.BaseHeader = app.BaseObjectFields(headerFields, "BaseHeader");
+
+local fields = RawCloneData(headerFields);
+fields.name = headerFields.nameAsEvent;
+fields.icon = headerFields.iconAsEvent;
+fields.texcoord = headerFields.texcoordAsEvent;
+fields.eventID = headerFields.eventIDAsEvent;
+app.BaseHeaderWithEvent = app.BaseObjectFields(fields, "BaseHeaderWithEvent");
+
 local fields = RawCloneData(headerFields);
 fields.name = headerFields.nameAsAchievement;
 fields.icon = headerFields.iconAsAchievement;
@@ -13303,6 +13351,8 @@ app.CreateNPC = function(id, t)
 			else
 				if t.questID then
 					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithQuest);
+				elseif L.HEADER_EVENTS[id] then
+					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithEvent);
 				else
 					return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
 				end
@@ -16959,12 +17009,25 @@ RowOnEnter = function (self)
 		-- Additional information (search will insert this information if found in search)
 		if GameTooltip.AttachComplete == nil then
 			-- Lore
-			if app.Settings:GetTooltipSetting("Lore") and reference.lore then
+			if reference.lore and app.Settings:GetTooltipSetting("Lore") then
 				GameTooltip:AddLine(reference.lore, 0.4, 0.8, 1, 1);
 			end
 			-- Description
-			if app.Settings:GetTooltipSetting("Descriptions") and reference.description then
+			if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
 				GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
+			end
+			if reference.eventInfo and reference.eventInfo.times then
+				local timeStrings = app.GetBestEventTimeStrings(reference.eventInfo.times);
+				if timeStrings then
+					for i,timeString in ipairs(timeStrings) do
+						local left, right = strsplit(DESCRIPTION_SEPARATOR, timeString);
+						if right then
+							GameTooltip:AddDoubleLine(left, right, 0.4, 0.8, 1, 0.4, 0.8, 1, 1);
+						else
+							GameTooltip:AddLine(left, 0.4, 0.8, 1, 1);
+						end
+					end
+				end
 			end
 			if reference.rwp then
 				local rwp = GetRemovedWithPatchString(reference.rwp);
@@ -19483,7 +19546,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			"filterID",
 			"professionID",
 			"raceID",
-			"holidayID",
+			"eventID",
 			"instanceID",
 		};
 		-- set of keys for headers which can be nested in the minilist within an Instance automatically, but not confined to a direct top header
@@ -19491,7 +19554,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			"filterID",
 			"professionID",
 			"raceID",
-			"holidayID",
+			"eventID",
 		};
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
@@ -19502,7 +19565,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			[app.HeaderConstants.EMISSARY_QUESTS] = true,
 			[app.HeaderConstants.FACTIONS] = "factionID",
 			[app.HeaderConstants.FLIGHT_PATHS] = "flightPathID",
-			[app.HeaderConstants.HOLIDAYS] = "holidayID",
+			[app.HeaderConstants.HOLIDAYS] = "eventID",
 			[app.HeaderConstants.PROFESSIONS] = "professionID",
 			[app.HeaderConstants.PVP] = true,
 			[app.HeaderConstants.QUESTS] = "questID",
@@ -24037,7 +24100,7 @@ app.Startup = function()
 		"UserLocale",
 		"Position",
 		"RandomSearchFilter",
-		"HOLIDAY_CACHE"
+		"Events"
 	};
 	local removeKeys = {};
 	for key,_ in pairs(AllTheThingsAD) do

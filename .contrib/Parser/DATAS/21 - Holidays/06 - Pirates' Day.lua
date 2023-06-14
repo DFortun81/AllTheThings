@@ -5,6 +5,7 @@ PIRATES_DAY_HEADER = createHeader({
 	readable = "Pirates' Day",
 	constant = "PIRATES_DAY_HEADER",
 	icon = [[~_.asset("Holiday_Pirate")]],
+	eventID = 398,
 	text = {
 		en = "Pirates' Day",
 		es = "Día de los Piratas",
@@ -17,19 +18,12 @@ PIRATES_DAY_HEADER = createHeader({
 		cn = "海盗日",
 	},
 });
-root(ROOTS.Holidays, applyholiday(PIRATES_DAY, {
-	-- #if ANYCLASSIC
-	["npcID"] = PIRATES_DAY_HEADER,
+root(ROOTS.Holidays, applyholiday(PIRATES_DAY, n(PIRATES_DAY_HEADER, {
+	-- #if BEFORE WRATH
+	["description"] = "Start: 09/19 at 12:00 AM\nEnd: 09/20 at 12:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PIRATES_DAY .. [[, 9, 19, 9, 20); end]],
-	-- #else
-	["holidayID"] = 235481,
 	-- #endif
 	["timeline"] = { "added 2.4.3.8601" },
-	-- #if AFTER CATA
-	["description"] = "Start: 09/19 at 10:00 AM\nEnd: 09/20 at 10:00 AM",
-	-- #else
-	["description"] = "Start: 09/19 at 12:00 AM\nEnd: 09/20 at 12:00 AM",
-	-- #endif
 	["groups"] = {
 		-- #if BEFORE 6.0.2.18816
 		n(28048, {	-- Dread Captain DeMeza <Scourge of the South Seas>
@@ -100,4 +94,4 @@ root(ROOTS.Holidays, applyholiday(PIRATES_DAY, {
 		}),
 		-- #endif
 	},
-}));
+})));

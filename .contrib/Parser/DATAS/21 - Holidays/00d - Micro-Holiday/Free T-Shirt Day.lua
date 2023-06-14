@@ -1,7 +1,16 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(FREE_T_SHIRT_DAY, bubbleDown({ ["timeline"] = { "added 8.1.5" } }, {
+FREE_T_SHIRT_DAY_HEADER = createHeader({
+	readable = "Free T-Shirt Day",
+	constant = "FREE_T_SHIRT_DAY_HEADER",
+	icon = [[~_.asset("Holiday_Tshirt")]],
+	eventID = 1053,
+	text = {
+		en = "Free T-Shirt Day",
+	},
+});
+root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, n(FREE_T_SHIRT_DAY_HEADER, bubbleDown({ ["timeline"] = { "added 8.1.5" } }, {
 	n(RARES, {
 		n(145826, {	-- Orgrimmar Entertainer
 			["description"] = "This NPC wanders around in Ogrimmar and shoots T-Shirts on the ground where you can pick them up.",

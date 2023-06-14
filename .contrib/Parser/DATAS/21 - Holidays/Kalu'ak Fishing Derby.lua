@@ -4,6 +4,7 @@
 KALUAK_FISHING_DERBY_HEADER = createHeader({
 	readable = "Kalu'ak Fishing Derby",
 	icon = "Interface\\Icons\\inv_fishingpole_03",
+	eventID = 424,	-- Obtained from Wrath Classic
 	text = {
 		en = "Kalu'ak Fishing Derby",
 		es = "Competición de pesca Kalu'ak",
@@ -19,6 +20,9 @@ KALUAK_FISHING_DERBY_HEADER = createHeader({
 root(ROOTS.Holidays, applyholiday(KALUAK_FISHING_DERBY, n(KALUAK_FISHING_DERBY_HEADER, {
 	["description"] = "The Kalu'ak Fishing Derby was a fishing event held every Saturday between 14:00 and 15:00 server time by the Kalu'ak. The objective was to be the first player to catch a Blacktip Shark and bring it to Elder Clearwater in Dalaran. It was introduced with Patch 3.3.0.\n\nDue to problems that occurred with the introduction of cross-realm zones, all fishing tournaments were disabled. When they were reenabled in Patch 5.1.0 however, the Stranglethorn Fishing Extravaganza had been redesigned to allow three winners, and included the rewards from winning the fishing derby. Thus, the Kalu'ak Fishing Derby became redundant, and was removed altogether.",
 	["timeline"] = { "added 3.3.0", "removed 5.0.1" },
+	-- #if ANYCLASSIC
+	["OnUpdate"] = [[function() _.Settings:CheckWeekDay(]] .. KALUAK_FISHING_DERBY .. [[, 7); end]],
+	-- #endif
 	-- #if BEFORE 5.1.0
 	["maps"] = {
 		NORTHREND_DALARAN,
@@ -30,9 +34,6 @@ root(ROOTS.Holidays, applyholiday(KALUAK_FISHING_DERBY, n(KALUAK_FISHING_DERBY_H
 		BOREAN_TUNDRA,
 		ICECROWN,
 	},
-	-- #endif
-	-- #if ANYCLASSIC
-	["OnUpdate"] = [[function() _.Settings:CheckWeekDay(]] .. KALUAK_FISHING_DERBY .. [[, 7); end]],
 	-- #endif
 	["groups"] = {
 		-- #if BEFORE 5.1.0

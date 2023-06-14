@@ -762,6 +762,7 @@ namespace ATT
                     case "altQuestID":
                     case "altSpeciesID":
                     case "buildingID":
+                    case "eventID":
                     case "musicRollID":
                     case "illusionID":
                     case "recipeID":

@@ -5,6 +5,7 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 	readable = "Love is in the Air",
 	constant = "LOVE_IS_IN_THE_AIR_HEADER",
 	icon = [[~_.asset("Holiday_love")]],
+	eventID = 423,
 	text = {
 		en = [[~select(1,GetCategoryInfo(187))]],
 	},
@@ -20,14 +21,11 @@ local POUCH_OF_EBON_ROSE_PETALS = applyholiday(LOVE_IS_IN_THE_AIR, i(188692, {	-
 	["timeline"] = { ADDED_9_1_5 },
 }));
 local BOSS_GROUPS = {};
-root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
-	-- #if ANYCLASSIC
-	["npcID"] = LOVE_IS_IN_THE_AIR_HEADER,
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LOVE_IS_IN_THE_AIR .. [[, 2, 6, 2, 20); end]],
-	-- #else
-	["holidayID"] = 235468,
-	-- #endif
+root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_HEADER, {
+	-- #if BEFORE WRATH
 	["description"] = "Start: 02/06 at 10:00 AM\nEnd: 02/20 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LOVE_IS_IN_THE_AIR .. [[, 2, 6, 2, 20); end]],
+	-- #endif
 	["groups"] = {
 		-- #if BEFORE WRATH
 		n(COMMON_BOSS_DROPS, {
@@ -1987,7 +1985,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 			},
 		}),
 	},
-}));
+})));
 
 for i,o in ipairs({
 	applyholiday(LOVE_IS_IN_THE_AIR, n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
@@ -2401,19 +2399,16 @@ root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, 
 	q(74957),	-- daily tracker for Bad Luck Protection on Love Rocket drop
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	-- #if ANYCLASSIC
-	["npcID"] = LOVE_IS_IN_THE_AIR_HEADER,
-	-- #else
-	["holidayID"] = 235468,
-	-- #endif
-	["groups"] = {
-		q(11558),	-- Dangerous Love (H)
-		i(147374, {	-- Wooden Toy Shield [Alliance]
-			["timeline"] = { "created 7.3.0.24484" },
-		}),
-		i(147377, {	-- Wooden Toy Shield [Horde]
-			["timeline"] = { "created 7.3.0.24484" },
-		}),
-	},
+-- #if AFTER 3.3.0.10772
+root(ROOTS.NeverImplemented, n(LOVE_IS_IN_THE_AIR_HEADER, {
+	q(11558, {	-- Dangerous Love (H)
+		["timeline"] = { "created 3.3.0.10772" },
+	}),
+	i(147374, {	-- Wooden Toy Shield [Alliance]
+		["timeline"] = { "created 7.3.0.24484" },
+	}),
+	i(147377, {	-- Wooden Toy Shield [Horde]
+		["timeline"] = { "created 7.3.0.24484" },
+	}),
 }));
+-- #endif
