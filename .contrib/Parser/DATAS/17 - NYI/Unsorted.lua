@@ -1607,7 +1607,6 @@ root(ROOTS.Unsorted, {
 				q(75911),	--
 				q(75912),	--
 				q(75937),	-- No Time Like The Present
-				q(75947),	--
 				q(75968),	--
 				q(75995),	--
 				q(75999),	--

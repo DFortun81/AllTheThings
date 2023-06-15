@@ -168,6 +168,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 
 			q(74905),	-- At the end of event 'Titan Lockdown', unflagged after bag hqt
 			q(74906),	-- Probably Zaqali Event
+			q(75947),	-- 'Zaqali Ritual Buster' completed (maybe something prior during combat of stages...)
 		}),
 	}),
 }));
