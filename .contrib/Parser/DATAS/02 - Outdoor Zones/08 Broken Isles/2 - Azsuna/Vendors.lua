@@ -114,7 +114,16 @@ root(ROOTS.Zones, {
 						i(129276, {	-- Beginner's Guide to Dimensional Rifting
 							["cost"] = 5000000,	-- 500g
 							["g"] = {
-								ach(11175),	-- Higher Dimensional Rifting
+								ach(11175, {	-- Higher Dimensional Learning (Azsuna)
+									i(140493),		-- Adept's Guide to Dimensional Rifting
+									crit(1),		-- Beginner's Guide to Dimensional Rifting Ch. 1 - Navigating Through Time
+									crit(2),		-- Beginner's Guide to Dimensional Rifting Ch. 2 - Holy Places to Many
+									crit(3),		-- Beginner's Guide to Dimensional Rifting Ch. 3 - Water, Just Water
+									crit(4),		-- Beginner's Guide to Dimensional Rifting Ch. 4 - Risks and Rewards
+									crit(5),		-- Beginner's Guide to Dimensional Rifting Ch. 5 - Finding Others Along the Way
+									crit(6),		-- Beginner's Guide to Dimensional Rifting Ch. 6 - Pent up Energy
+									crit(7),		-- Beginner's Guide to Dimensional Rifting Ch. 7 - Our Legacy
+								}),
 							},
 						}),
 						i(139606, {	-- Cadet's Gaudy Scarf

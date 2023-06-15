@@ -13,86 +13,89 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			-- then remove the maps for Krokuun and Antoran Wastes once coords added
 		},
 		["g"] = {
-			ach(12028, {	-- Envision Invasion Eradication
-				["collectible"] = false;
-				["maps"] = {
-					921,	-- Invasion Point: Aurinor
-					922,	-- Invasion Point: Bonich
-					923,	-- Invasion Point: Cen'gar
-					924,	-- Invasion Point: Naigtal
-					925,	-- Invasion Point: Sangua
-					926,	-- Invasion Point: Val
-					KROKUUN,
-					THE_VINDICAAR_KROKUUN_UPPER,
-					THE_VINDICAAR_KROKUUN_LOWER,
-					THE_VINDICAAR_EREDATH_UPPER,
-					THE_VINDICAAR_EREDATH_LOWER,
-					ANTORAN_WASTES,
-					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
-					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
-				},
-				["crs"] = {
-					125849,	-- Invasion Point: Aurinor
-					126547,	-- Invasion Point: Bonich
-					126120,	-- Invasion Point: Cen'gar
-					126593,	-- Invasion Point: Naigtal
-					125863,	-- Invasion Point: Sangua
-					126499,	-- Invasion Point: Val
-				},
-				["g"] = {
-					{	-- Mazgoroth
-						["criteriaID"] = 1,	-- Mazgoroth
-						["creatureID"] = 125137,	-- Mazgoroth
+			n(ACHIEVEMENTS, {
+				ach(12028, {	-- Envision Invasion Eradication
+					-- TODO: instead of maps on entire achieve, have coords/maps on each criteria as needed
+					["maps"] = {
+						921,	-- Invasion Point: Aurinor
+						922,	-- Invasion Point: Bonich
+						923,	-- Invasion Point: Cen'gar
+						924,	-- Invasion Point: Naigtal
+						925,	-- Invasion Point: Sangua
+						926,	-- Invasion Point: Val
+						KROKUUN,
+						THE_VINDICAAR_KROKUUN_UPPER,
+						THE_VINDICAAR_KROKUUN_LOWER,
+						THE_VINDICAAR_EREDATH_UPPER,
+						THE_VINDICAAR_EREDATH_LOWER,
+						ANTORAN_WASTES,
+						THE_VINDICAAR_ANTORAN_WASTES_UPPER,
+						THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 					},
-					{	-- Gorgoloth
-						["criteriaID"] = 2,	-- Gorgoloth
-						["creatureID"] = 125148,	-- Gorgoloth
+					["crs"] = {
+						125849,	-- Invasion Point: Aurinor
+						126547,	-- Invasion Point: Bonich
+						126120,	-- Invasion Point: Cen'gar
+						126593,	-- Invasion Point: Naigtal
+						125863,	-- Invasion Point: Sangua
+						126499,	-- Invasion Point: Val
 					},
-					{	-- Dread Knight Zak'gal
-						["criteriaID"] = 3,	-- Dread Knight Zak'gal
-						["creatureID"] = 125252,	-- Dread Knight Zak'gal
+					["g"] = {
+						{	-- Mazgoroth
+							["criteriaID"] = 1,	-- Mazgoroth
+							["creatureID"] = 125137,	-- Mazgoroth
+						},
+						{	-- Gorgoloth
+							["criteriaID"] = 2,	-- Gorgoloth
+							["creatureID"] = 125148,	-- Gorgoloth
+						},
+						{	-- Dread Knight Zak'gal
+							["criteriaID"] = 3,	-- Dread Knight Zak'gal
+							["creatureID"] = 125252,	-- Dread Knight Zak'gal
+						},
+						{	-- Fel Lord Kaz'ral
+							["criteriaID"] = 4,	-- Fel Lord Kaz'ral
+							["creatureID"] = 125272,	-- Fel Lord Kaz'ral
+						},
+						{	-- Flamecaller Vezrah
+							["criteriaID"] = 5,	-- Flamecaller Vezrah
+							["creatureID"] = 125280,	-- Flamecaller Vezrah
+						},
+						{	-- Flameweaver Verathix
+							["criteriaID"] = 6,	-- Flameweaver Verathix
+							["creatureID"] = 125314,	-- Flameweaver Verathix
+						},
+						{	-- Harbinger Drel'nathar
+							["criteriaID"] = 7,	-- Harbinger Drel'nathar
+							["creatureID"] = 125483,	-- Harbinger Drel'nathar
+						},
+						{	-- Dreadbringer Valus
+							["criteriaID"] = 8,	-- Dreadbringer Valus
+							["creatureID"] = 125527,	-- Dreadbringer Valus
+						},
+						{	-- Malphazel
+							["criteriaID"] = 9,	-- Malphazel
+							["creatureID"] = 125578,	-- Malphazel
+						},
+						{	-- Vogrethar the Defiled
+							["criteriaID"] = 10,	-- Vogrethar the Defiled
+							["creatureID"] = 125587,	-- Vogrethar the Defiled
+						},
+						{	-- Vel'thrak the Punisher
+							["criteriaID"] = 11,	-- Vel'thrak the Punisher
+							["creatureID"] = 125634,	-- Vel'thrak the Punisher
+						},
+						{	-- Flamebringer Az'rothel
+							["criteriaID"] = 12,	-- Flamebringer Az'rothel
+							["creatureID"] = 125655,	-- Flamebringer Az'rothel
+						},
+						{	-- Baldrazar
+							["criteriaID"] = 13,	-- Baldrazar
+							["creatureID"] = 125666,	-- Baldrazar
+						},
 					},
-					{	-- Fel Lord Kaz'ral
-						["criteriaID"] = 4,	-- Fel Lord Kaz'ral
-						["creatureID"] = 125272,	-- Fel Lord Kaz'ral
-					},
-					{	-- Flamecaller Vezrah
-						["criteriaID"] = 5,	-- Flamecaller Vezrah
-						["creatureID"] = 125280,	-- Flamecaller Vezrah
-					},
-					{	-- Flameweaver Verathix
-						["criteriaID"] = 6,	-- Flameweaver Verathix
-						["creatureID"] = 125314,	-- Flameweaver Verathix
-					},
-					{	-- Harbinger Drel'nathar
-						["criteriaID"] = 7,	-- Harbinger Drel'nathar
-						["creatureID"] = 125483,	-- Harbinger Drel'nathar
-					},
-					{	-- Dreadbringer Valus
-						["criteriaID"] = 8,	-- Dreadbringer Valus
-						["creatureID"] = 125527,	-- Dreadbringer Valus
-					},
-					{	-- Malphazel
-						["criteriaID"] = 9,	-- Malphazel
-						["creatureID"] = 125578,	-- Malphazel
-					},
-					{	-- Vogrethar the Defiled
-						["criteriaID"] = 10,	-- Vogrethar the Defiled
-						["creatureID"] = 125587,	-- Vogrethar the Defiled
-					},
-					{	-- Vel'thrak the Punisher
-						["criteriaID"] = 11,	-- Vel'thrak the Punisher
-						["creatureID"] = 125634,	-- Vel'thrak the Punisher
-					},
-					{	-- Flamebringer Az'rothel
-						["criteriaID"] = 12,	-- Flamebringer Az'rothel
-						["creatureID"] = 125655,	-- Flamebringer Az'rothel
-					},
-					{	-- Baldrazar
-						["criteriaID"] = 13,	-- Baldrazar
-						["creatureID"] = 125666,	-- Baldrazar
-					},
-				},
+				}),
+				ach(12026),	-- Invasion Obliteration
 			}),
 			e(2010, {	-- Matron Folnuna
 				["questID"] = 49169,

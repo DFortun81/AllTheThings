@@ -56,6 +56,22 @@ root(ROOTS.Zones, {
 				ach(10398, {	-- Drum Circle
 					["description"] = "This achievement can be soloed since after 'Battle for Azeroth'. Repeatedly jump for 1-3 minutes in the middle ring on the lower floor of Thunder Totem. It CANNOT be completed while you are on 'Assault on Thunder Totem' and you must be able to hear the drum beats to know the achievement is working."
 				}),
+				ach(10667, {	-- Explore Highmountain
+					crit(1),	-- Bloodhunt Highlands
+					crit(2),	-- Blind Marshlands
+					crit(3),	-- Frosthoof Watch
+					crit(4),	-- Ironhorn Enclave
+					crit(5),	-- Nightwatcher's Perch
+					crit(6),	-- Pinerock Basin
+					crit(7),	-- Riverbend
+					crit(8),	-- Rockaway Shallows
+					crit(9),	-- Shipwreck Cove
+					crit(10),	-- Skyhorn
+					crit(11),	-- Stonehoof Watch
+					crit(12),	-- Sylvan Falls
+					crit(13),	-- Thunder Totem
+					crit(14),	-- Trueshot Lodge
+				}),
 				petbattle(ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -249,20 +265,6 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 41094 },	-- Hatchlings of the Talon
 					["g"] = {
 						i(139773),	-- Emerald Winds (TOY!)
-					},
-				}),
-				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
-					["collectible"] = false,
-					["g"] = {
-						crit(9,  {	-- Black-Footed Fox Kit
-							["crs"] = { 97730 },	-- Black-Footed Fox Kit
-						}),
-						crit(10, {	-- Long-Eared Owl
-							["crs"] = { 97735 },	-- Long-Eared Owl
-						}),
-						crit(13, {	-- Echo Batling
-							["crs"] = { 88281 },	-- Echo Batling
-						}),
 					},
 				}),
 				ach(11257),	-- Treasures of Highmountain

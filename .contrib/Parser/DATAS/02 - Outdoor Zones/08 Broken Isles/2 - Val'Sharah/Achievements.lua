@@ -6,7 +6,43 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(ACHIEVEMENTS, {
-				ach(11262),	-- Adventurer of Val'sharah
+				ach(11262, {	-- Adventurer of Val'sharah
+					crit(1),		-- Gorebeak
+					crit(2),		-- Seersei
+					crit(3),		-- Theryssia
+					crit(4),		-- Darkshade
+					crit(5),		-- Ironbranch
+					crit(6),		-- Thondrax
+					crit(7),		-- Elindya Featherlight
+					crit(8),		-- Antydas Nightcaller
+					crit(9),		-- Haunted Manor
+					crit(10),		-- Purging the River
+					crit(11),		-- Grelda the Hag
+					crit(12),		-- Old Bear Trap
+					crit(13),		-- Perrexx the Corruptor
+					crit(14),		-- Wraithtalon
+					crit(15),		-- Dreadbog
+					crit(16),		-- Lyrath Moonfeather
+					crit(17),		-- Undergrell Attack
+					crit(18),		-- Bahagar
+					crit(19),		-- Unguarded Thistleleaf Treasure
+					crit(20),		-- Marius & Tehd versus a Satyr
+				}),
+				ach(10666, {	-- Explore Val'sharah
+					crit(1),		-- Andutalah
+					crit(2),		-- Black Rook Hold
+					crit(3),		-- Bradensbrook
+					crit(4),		-- The Dreamgrove
+					crit(5),		-- Gloaming Reef
+					crit(6),		-- Grove of Cenarius
+					crit(7),		-- Lorlathil
+					crit(8),		-- Mistvale
+					crit(9),		-- Moonclaw Vale
+					crit(10),		-- Shala'nir
+					crit(11),		-- Smolderhide Thicket
+					crit(12),		-- Temple of Elune
+					crit(13),		-- Thas'talah
+				}),
 				petbattle(ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -178,20 +214,6 @@ root(ROOTS.Zones, {
 					crit(7, {	-- Black Rook Hold
 						["sourceQuests"] = { 38721 },	-- Lieutenant of the Tower
 					}),
-				}),
-				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
-					["collectible"] = false,
-					["g"] = {
-						crit(6, {	-- Gleamhoof Fawn
-							["crs"] = { 109818 },	-- Gleamhoof Fawn
-						}),
-						crit(7, {	-- Auburn Ringtail
-							["crs"] = { 95626 },	-- Auburn Ringtail
-						}),
-						crit(8, {	-- Blighthawk
-							["crs"] = { 98090 },	-- Blighthawk
-						}),
-					},
 				}),
 				ach(11258),	-- Treasures of Val'sharah
 			}),

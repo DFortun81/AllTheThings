@@ -6,6 +6,9 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
 			n(ACHIEVEMENTS, {
+				ach(11731),	-- A Magic Contribution
+				ach(11732),	-- A Magnificent Contribution
+				ach(11736),	-- Assume Command
 				ach(11546, {	-- Breaching the Tomb
 					crit(1,  {	-- Armies of Legionfall
 						["sourceQuests"] = { 46730 },	-- Armies of Legionfall
@@ -53,12 +56,30 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 46246 },	-- Strike Them Down
 					}),
 				}),
-				ach(11735),	-- Take Command
-				ach(11736),	-- Assume Command
-				ach(11731),	-- A Magic Contribution
-				ach(11732),	-- A Magnificent Contribution
+				ach(11802, {	-- Bringing Home the Beacon
+					crit(1),		-- Shadow Fracture
+					crit(2),		-- Soul Ruin
+					crit(3),		-- Dark Stockades
+					crit(4),		-- Coast of Anguish
+					crit(5),		-- Garrison of the Fel
+					crit(6),		-- Felfire Pass
+					crit(7),		-- Felrage Strand
+					crit(8),		-- Crescent Ruins
+					crit(9),		-- The Creeping Grotto
+				}),
 				ach(11737),	-- Disrupting the Nether
+				ach(11543, {	-- Explore Broken Shore
+					crit(1),	-- Deliverance Point
+					crit(2),	-- Deadwood Landing
+					crit(3),	-- Soul Ruin
+					crit(4),	-- Broken Valley
+					crit(5),	-- The Weeping Terrace
+					crit(6),	-- Tomb of Sargeras
+					crit(7),	-- Felrage Strand
+					crit(8),	-- Felfire Pass
+				}),
 				ach(11738),	-- It'll Nether Happen
+				ach(11735),	-- Take Command
 			}),
 		}),
 	}),

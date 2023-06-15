@@ -6,7 +6,53 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
 			n(ACHIEVEMENTS, {
-				ach(11265),		-- Adventurer of Suramar
+				ach(11265, {	-- Adventurer of Suramar
+					crit(1),		-- Garvrulg
+					crit(2),		-- Elfbane
+					crit(3),		-- Cora'kar
+					crit(4),		-- Rok'nash
+					crit(5),		-- Har'kess the Insatiable
+					crit(6),		-- Hertha Grimdottir
+					crit(7),		-- Reef Lord Raj'his
+					crit(8),		-- Shadowquil
+					crit(9),		-- Rauren
+					crit(10),		-- Artificer Lothaire
+					crit(11),		-- Pinchshank
+					crit(12),		-- Shal'an
+					crit(13),		-- Magister Phaedris
+					crit(14),		-- Mal'Dreth the Corrupter
+					crit(15),		-- Myonix
+					crit(16),		-- Seigemaster Aedrin
+					crit(17),		-- Oreth the Vile
+					crit(18),		-- Arcanist Lylandre
+					crit(19),		-- Cadraeus
+					crit(20),		-- Tideclaw
+					crit(21),		-- Gorgroth
+					crit(22),		-- Apothecary Faldren
+					crit(23),		-- Guardian Thor'el
+					crit(24),		-- Randril
+					crit(25),		-- Anax
+					crit(26),		-- Matron Hagatha
+					crit(27),		-- Ambassador D'vwinn
+					crit(28),		-- Degren
+					crit(29),		-- Miasu
+					crit(30),		-- Maia the White
+					crit(31),		-- Mar'tura
+					crit(32),		-- Lieutenant Strathmar
+				}),
+				ach(10669, {	-- Explore Suramar
+					crit(1),	-- Ambervale
+					crit(2),	-- Crimson Thicket
+					crit(3),	-- Falanaar
+					crit(4),	-- Felsoul Hold
+					crit(5),	-- The Grand Pomenade
+					crit(6),	-- Jandvik
+					crit(7),	-- Moon Guard Stronghold
+					crit(8),	-- Moonwhisper Gulch
+					crit(9),	-- Ruins of Elun'eth
+					crit(10),	-- Suramar City
+					crit(11),	-- Tel'anor
+				}),
 				petbattle(ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -314,14 +360,6 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				ach(11125),		-- Now You're Thinking With Portals
-				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
-					["collectible"] = false,
-					["g"] = {
-						crit(5, {	-- Glitterpool Frog
-							["crs"] = { 102492 },	-- Glitterpool Frog
-						}),
-					},
-				}),
 				ach(11260),		-- Treasures of Suramar
 				ach(11133, {	-- Why Can't I Hold All This Mana
 					-- TODO: can clean this up more... put actual objects, items in objects, sourceQuest the objects?, provider of the mana items

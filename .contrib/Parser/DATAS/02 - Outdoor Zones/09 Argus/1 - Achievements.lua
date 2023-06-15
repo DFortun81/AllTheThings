@@ -282,6 +282,21 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["_npcs"] = { 126208 },	-- Varga
 			}),
 		}),
+		ach(12069, {	-- Explore Argus
+			crit(1),		-- Annihilan Pits
+			crit(2),		-- Conservatory of the Arcane
+			crit(3),		-- Defiled Path
+			crit(4),		-- Felfire Armory
+			crit(5),		-- Nath'raxas Hold
+			crit(6),		-- Petrified Forest
+			crit(7),		-- Ruins of Oronaar
+			crit(8),		-- Azurelight Square
+			crit(9),		-- Shadowguard Incursion
+			crit(10),		-- Shattered Fields
+			crit(11),		-- Terminus
+			crit(12),		-- Triumvirate's End
+			crit(13),		-- Arinor Gardens
+		}),
 		petbattle(ach(12100, {	-- Family Fighter
 			-- Meta Achievements
 			["sym"] = {{"meta_achievement",
