@@ -187,6 +187,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72462 },	-- A People in Need of Healing
 					["provider"] = { "n", 200244 },	-- Aggra
 					["coord"] = { 54.4, 78.6, ORGRIMMAR },
+					["g"] = {
+						i(203713),	-- Mysterious Flower
+					},
 				}),
 				q(72465, {	-- The Blessing of the Land
 					["sourceQuests"] = { 72464 },	-- The Kosh'harg
@@ -347,6 +350,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, {
 		q(74894),	-- triggers after the scene ends after 'Go with Honor, Friend' (questID 72452)
 		q(73705),	-- triggers right after accepting 'The Kosh'harg' (questID 72464)
+		q(74541),	-- triggers when you find a 'Mysterious Orc' during 'The Kosh'harg' (questID 72464)
 		q(73396),	-- 'Saurfang had a message for you' dialog with Thrall during 'Honor and Glory' (questID 72478)
 		q(73397),	-- 'Saurfang had a message for you' dialog with Eitrigg during 'Aka'magosh' (questID 72479)
 		q(72468),	-- choosing Thrall (Forstworlf clan) during 'The Blessing of the Clan' (questID 72467)
