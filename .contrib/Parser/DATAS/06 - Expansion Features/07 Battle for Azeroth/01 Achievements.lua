@@ -66,6 +66,12 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				["coord"] = { 53.2, 9.3, DAZARALOR },
 			}),
 		}),
+		pvp(ach(12573, {	-- Band of Brothers
+			crit(1),		-- Honorable Kill
+			crit(2),		-- Loot Player Bounty
+			crit(3),		-- Complete Rare Elite World Quest
+			crit(4),		-- Loot War Supply Chest
+		})),
 		ach(12989, {	-- Battle for Azeroth Pathfinder, Part One
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -100,6 +106,45 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			ach(13701),	-- Battlefield Brawler
 			ach(13702),	-- Battlefield Tactician
 		}),
+		pvp(ach(12571)),	-- Bounty Hunting
+		pvp(ach(12605, {	-- Conqueror of Azeroth (A)
+			["races"] = ALLIANCE_ONLY,
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				12573,	-- Band of Brothers
+				12571,	-- Bounty Hunting
+				12572,	-- War Supplied
+				12574,	-- Tour of Duty: Nazmir
+				12576,	-- Tour of Duty: Vol'dun
+				12579,	-- Tour of Duty: Drustvar
+				12578,	-- Tour of Duty: Stormsong Valley
+				12577,	-- Tour of Duty: Tiragarde Sound
+				12575,	-- Tour of Duty: Zuldazar
+			}},
+			["g"] = {
+				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
+				title(377),	-- %s, Conqueror of Azeroth
+			},
+		})),
+		pvp(ach(12604, {	-- Conqueror of Azeroth (H)
+			["races"] = HORDE_ONLY,
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				12573,	-- Band of Brothers
+				12571,	-- Bounty Hunting
+				12572,	-- War Supplied
+				12574,	-- Tour of Duty: Nazmir
+				12576,	-- Tour of Duty: Vol'dun
+				12579,	-- Tour of Duty: Drustvar
+				12578,	-- Tour of Duty: Stormsong Valley
+				12577,	-- Tour of Duty: Tiragarde Sound
+				12575,	-- Tour of Duty: Zuldazar
+			}},
+			["g"] = {
+				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
+				title(377),	-- %s, Conqueror of Azeroth
+			},
+		})),
 		un(BLACK_MARKET, ach(14183, {	-- Conspicuous Consumption
 			["provider"] = { "i", 163042 },	-- Mighty Caravan Brutosaur
 		})),
@@ -506,5 +551,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				["coord"] = { 52.75, 83.73, VOLDUN },
 			}),
 		}),
+		pvp(ach(12572)),	-- War Supplied
 	}),
 }));
