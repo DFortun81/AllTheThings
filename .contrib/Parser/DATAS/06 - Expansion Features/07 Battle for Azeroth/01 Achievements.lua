@@ -152,6 +152,54 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				["maps"] = { NAZJATAR },
 			}),
 		})),
+		pvp(a(ach(13402))),	-- Frontline Slayer (A)
+		pvp(h(ach(13403))),	-- Frontline Slayer (H)
+		pvp(achraw(13387, {	-- Frontline Veteran (A)
+			["races"] = ALLIANCE_ONLY,
+			["g"] = bubbleDown({["description"] = "Requires War Mode Active" }, {
+				crit(1, {		-- A Sound Defense
+					["_quests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
+				}),
+				crit(2, {		-- Storm's Rage
+					["_quests"] = { 51982 },	-- Storm's Rage (Faction Assault WQ)
+				}),
+				crit(3, {		-- A Drust Cause
+					["_quests"] = { 53701 },	-- A Drust Cause (Faction Assault WQ)
+				}),
+				crit(4, {		-- Many Fine Heroes
+					["_quests"] = { 54134 },	-- Many Fine Heroes (Faction Assault WQ)
+				}),
+				crit(5, {		-- March on the Marsh
+					["_quests"] = { 54136 },	-- March on the Marsh (Faction Assault WQ)
+				}),
+				crit(6, {		-- Ritual Rampage
+					["_quests"] = { 54138 },	-- Ritual Rampage (Faction Assault WQ)
+				}),
+			}),
+		})),
+		pvp(achraw(13388, {	-- Frontline Veteran (H)
+			["races"] = HORDE_ONLY,
+			["g"] = bubbleDown({["description"] = "Requires War Mode Active" }, {
+				crit(1, {		-- Breaching Boralus
+					["_quests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
+				}),
+				crit(2, {		-- Romp in the Swamp
+					["_quests"] = { 54135 },	-- Romp in the Swamp (Faction Assault WQ)
+				}),
+				crit(3, {		-- Isolated Victory
+					["_quests"] = { 53885 },	-- Isolated Victory (Faction Assault WQ)
+				}),
+				crit(4, {		-- Shores of Zuldazar
+					["_quests"] = { 53883 },	-- Shores of Zuldazar (Faction Assault WQ)
+				}),
+				crit(5, {		-- In Every Dark Corner
+					["_quests"] = { 54137 },	-- In Every Dark Corner (Faction Assault WQ)
+				}),
+				crit(6, {		-- Horde of Heroes
+					["_quests"] = { 54132 },	-- Horde of Heroes (Faction Assault WQ)
+				}),
+			}),
+		})),
 		ach(12740, {	-- Full of Scrap!
 			["maps"] = {
 				BORALUS,
@@ -329,6 +377,16 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				["provider"] = { "i", 163719 },	-- Forbidden Sea Shanty of the Horse
 			}),
 		}),
+		pvp(ach(13317, {	-- Supplied and Ready
+			["maps"] = {
+				DRUSTVAR,
+				NAZMIR,
+				STORMSONG_VALLEY,
+				TIRAGARDE_SOUND,
+				VOLDUN,
+				ZULDAZAR
+			},
+		})),
 		ach(12872),	-- The Dirty Five
 		ach(13061, {	-- Three Sheets to the Wind
 			crit(1, {	-- "Aurora Borealis"

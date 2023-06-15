@@ -266,6 +266,13 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(1006, {	-- City Defender (Horde)
 		["races"] = HORDE_ONLY,
 	}),
+	pvp(ach(14519,	-- Covenant Combat
+	bubbleDownSelf({["timeline"] = ADDED_9_0_2_LAUNCH },{
+		crit(1),	-- Venthyr
+		crit(2),	-- Night Fae
+		crit(3),	-- Necrolord
+		crit(4),	-- Kyrian
+	}))),
 	ach(227),	-- Damage Control
 	-- #if BEFORE CATA
 	ach(616, {	-- Death to the King! [WRATH] / Overthrow the Council [CATA+]

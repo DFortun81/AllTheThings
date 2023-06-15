@@ -620,6 +620,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				14798,	-- Sojourner of Revendreth
 			}},
 		}),
+		pvp(ach(14516, {	-- Impressing Zo'Sorg
+			crit(1, {	-- Express Dominance
+				["_quests"] = { 59658 },	-- Express Dominance
+			}),
+			crit(2, {	-- For Honor
+				["_quests"] = { 59803 },	-- For Honor
+			}),
+			crit(3, {	-- Seed Hunting
+				["_quests"] = { 59825 },	-- Seed Hunting
+			}),
+			crit(4, {	-- State of Decay
+				["_quests"] = { 60231 },	-- State of Decay
+			}),
+		})),
 		ach(15388, {	-- Shadowlands Explorer
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -703,5 +717,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 		}),
+		pvp(ach(14515, {	-- Zo'Sorg's Bidding
+			crit(1, {	-- Express Dominance
+				["_quests"] = { 59658 },	-- Express Dominance
+			}),
+			crit(2, {	-- For Honor
+				["_quests"] = { 59803 },	-- For Honor
+			}),
+			crit(3, {	-- Seed Hunting
+				["_quests"] = { 59825 },	-- Seed Hunting
+			}),
+			crit(4, {	-- State of Decay
+				["_quests"] = { 60231 },	-- State of Decay
+			}),
+		})),
 	}),
 })));

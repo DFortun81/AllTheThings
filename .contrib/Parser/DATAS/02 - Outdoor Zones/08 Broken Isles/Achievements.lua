@@ -21,6 +21,19 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				11545,	-- Legionfall Commander
 			}},
 		}),
+		ach(11474, {	-- Free For All, More For Me
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				11475,	-- Mission Accomplished
+				11476,	-- Saddle Sore
+				11477,	-- Off the Top Rook
+				11478,	-- The Darkbrul-oh
+			}},
+			["g"] = {
+				a(i(129280)),	-- Prestigious War Steed (MOUNT!)
+				h(i(143864)),	-- Prestigious War Wolf (MOUNT!)
+			},
+		}),
 		ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 			crit(1, {	-- Felspider
 				["crs"] = { 113345 },	-- Felspider

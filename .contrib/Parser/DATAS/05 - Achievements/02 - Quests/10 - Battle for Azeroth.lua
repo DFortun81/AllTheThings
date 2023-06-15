@@ -68,46 +68,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		a(ach(13053)),	-- Deadliest Cache
 		h(ach(13435)),	-- Doomsoul Surprise
 		ach(13045),		-- Every Day I'm Truffling
-		a(achraw(13283, {	-- Frontline Warrior (A)
-			crit(1, {		-- A Sound Defense
-				["_quests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
-			}),
-			crit(2, {		-- Storm's Rage
-				["_quests"] = { 51982 },	-- Storm's Rage (Faction Assault WQ)
-			}),
-			crit(3, {		-- A Drust Cause
-				["_quests"] = { 53701 },	-- A Drust Cause (Faction Assault WQ)
-			}),
-			crit(4, {		-- Many Fine Heroes
-				["_quests"] = { 54134 },	-- Many Fine Heroes (Faction Assault WQ)
-			}),
-			crit(5, {		-- March on the Marsh
-				["_quests"] = { 54136 },	-- March on the Marsh (Faction Assault WQ)
-			}),
-			crit(6, {		-- Ritual Rampage
-				["_quests"] = { 54138 },	-- Ritual Rampage (Faction Assault WQ)
-			}),
-		})),
-		h(achraw(13284, {	-- Frontline Warrior (H)
-			crit(1, {		-- Breaching Boralus
-				["_quests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
-			}),
-			crit(2, {		-- Romp in the Swamp
-				["_quests"] = { 54135 },	-- Romp in the Swamp (Faction Assault WQ)
-			}),
-			crit(3, {		-- Isolated Victory
-				["_quests"] = { 53885 },	-- Isolated Victory (Faction Assault WQ)
-			}),
-			crit(4, {		-- Shores of Zuldazar
-				["_quests"] = { 53883 },	-- Shores of Zuldazar (Faction Assault WQ)
-			}),
-			crit(5, {		-- In Every Dark Corner
-				["_quests"] = { 54137 },	-- In Every Dark Corner (Faction Assault WQ)
-			}),
-			crit(6, {		-- Horde of Heroes
-				["_quests"] = { 54132 },	-- Horde of Heroes (Faction Assault WQ)
-			}),
-		})),
 		ach(12918),		-- Have a Heart
 		h(ach(13542, {	-- How to Train Your Direhorn
 			crit(1),		-- Naptime
