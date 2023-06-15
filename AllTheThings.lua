@@ -365,6 +365,25 @@ local defaultTotalComparison = function(a,b)
 	bcomp = b.total or 0;
 	return acomp < bcomp;
 end
+local defaultEventStartComparison = function(a,b)
+	-- If either object doesn't exist
+	if a then
+		if not b then
+			return true;
+		end
+	elseif b then
+		return false;
+	else
+		-- neither a or b exists, equality returns false
+		return false;
+	end
+	local acomp, bcomp;
+	acomp = a.nextEvent;
+	acomp = acomp and acomp.start or 0;
+	bcomp = b.nextEvent;
+	bcomp = bcomp and bcomp.start or 0;
+	return acomp < bcomp;
+end
 app.SortDefaults = {
 	["Global"] = defaultComparison,
 	["Text"] = defaultTextComparison,
@@ -374,6 +393,8 @@ app.SortDefaults = {
 	["Hierarchy"] = defaultHierarchyComparison,
 	-- Sorts objects first by how many total collectibles they contain
 	["Total"] = defaultTotalComparison,
+	-- Sorts objects first by their nextEvent.Start
+	["EventStart"] = defaultEventStartComparison,
 };
 local function Sort(t, compare, nested)
 	if t then
@@ -13100,17 +13121,17 @@ if C_DateAndTime and C_Calendar then
 			-- If our cache is still leased, then simply return it.
 			return cache;
 		end
-		
+
 		-- Create a new cache with a One Week Lease
 		local anyEvents = false;
 		cache = {};
 		cache.lease = now + 604800;
-		
+
 		-- Go back 2 months and then forward to the next year
 		local date = C_DateAndTime.GetCurrentCalendarTime();
 		C_Calendar.SetAbsMonth(date.month, date.year);
 		C_Calendar.SetMonth(-2);
-		
+
 		for offset=-2,12,1 do
 			local monthInfo = C_Calendar.GetMonthInfo(0);
 			for day=1,monthInfo.numDays,1 do
@@ -13163,7 +13184,7 @@ if C_DateAndTime and C_Calendar then
 			end
 			C_Calendar.SetMonth(1);
 		end
-		
+
 		-- If there were any events, cache it!
 		if anyEvents then SetDataMember("EventCache", cache); end
 		C_Calendar.SetAbsMonth(date.month, date.year);
@@ -18254,11 +18275,7 @@ function app:GetDataCache()
 	if app.Categories.Holidays then
 		db = app.CreateNPC(app.HeaderConstants.HOLIDAYS, app.Categories.Holidays);
 		db.isHolidayCategory = true;
-		db.OnUpdate = function(t)
-			table.sort(t.g, function(a, b)
-				return (a.nextEvent and a.nextEvent.start or 0) < (b.nextEvent and b.nextEvent.start or 0);
-			end)
-		end
+		app.SortGroupDelayed(db, "EventStart");
 		tinsert(g, db);
 	end
 
