@@ -923,6 +923,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4882, {	-- Guarding Secrets (1/2)
 					["provider"] = { "i", 12558 },	-- Blue-feathered Necklace
+					["sourceQuest"] = 4741,	-- Wild Guardians (2/3)
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { FELWOOD },
 					["crs"] = {
