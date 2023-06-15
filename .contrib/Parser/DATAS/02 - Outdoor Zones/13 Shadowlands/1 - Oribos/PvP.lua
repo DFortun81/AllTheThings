@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local MOH = 137642;
 local SymPvPFilter = function(SeasonID, HeaderID, FilterID, Extra)
 	SymLink = {
 		{"select", "tierID", SL_TIER},			-- Select Shadowlands
