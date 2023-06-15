@@ -3092,6 +3092,13 @@ namespace ATT
                         return "b";
                     }
 
+                case "e":
+                case "ev":
+                case "event":
+                    {
+                        return "e";
+                    }
+
                 case "f":
                 case "filter":
                 case "filterID":

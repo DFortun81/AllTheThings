@@ -1810,6 +1810,7 @@ end");
                     case "rank":
                     case "ilvl":
                     case "q":
+                    case "e":
                     case "r":
                     case "isOffHand":
                     case "parentCategoryID":

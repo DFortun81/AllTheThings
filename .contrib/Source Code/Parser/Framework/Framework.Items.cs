@@ -480,6 +480,7 @@ namespace ATT
                     case "inventoryType":
                     case "subclass":
                     case "q":
+                    case "e":
                         item[field] = Convert.ToInt64(value);
                         break;
 
@@ -782,6 +783,7 @@ namespace ATT
                     case "lvl":
                     case "q":
                     case "c":
+                    case "e":
                     case "specs":
                     case "sourceQuests":
                     case "altAchievements":
