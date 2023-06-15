@@ -6684,7 +6684,7 @@ root(ROOTS.Zones, {
 						i(136699, {	-- Plans: Flamespike (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
-						i(137935, {	-- Pattern: Leather Love Seat
+						i(137935, {	-- Pattern: Leather Love Seat (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix

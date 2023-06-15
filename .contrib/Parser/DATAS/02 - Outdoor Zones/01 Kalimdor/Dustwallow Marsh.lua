@@ -3372,7 +3372,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 2.0.1.6180" },
 							["isLimited"] = true,
 						}),
-						i(5789, {	-- Pattern: Murloc Scale Bracers
+						i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(12239),	-- Recipe: Dragonbreath Chili

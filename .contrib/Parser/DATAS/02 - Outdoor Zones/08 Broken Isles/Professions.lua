@@ -788,7 +788,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93523 },	-- Namha Moonwater
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(137933),	-- Pattern: Leather Pet Bed
+							i(137933),	-- Pattern: Leather Pet Bed (RECIPE!)
 						},
 					}),
 					q(40177,  {	-- Leather Lady

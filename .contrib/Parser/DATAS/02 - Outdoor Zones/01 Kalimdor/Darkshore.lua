@@ -2580,8 +2580,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
-						i(5786),	-- Pattern: Murloc Scale Belt
-						i(5787),	-- Pattern: Murloc Scale Breastplate
+						i(5786),	-- Pattern: Murloc Scale Belt (RECIPE!)
+						i(5787),	-- Pattern: Murloc Scale Breastplate (RECIPE!)
 					},
 					-- #endif
 				}),

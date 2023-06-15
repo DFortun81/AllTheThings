@@ -1875,7 +1875,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(3340),	-- Incendicite Ore
 				-- #if BEFORE 4.0.3
-				i(5788, {	-- Pattern: Thick Murloc Armor
+				i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 					["cr"] = 1160,	-- Captain Halyndor
 				}),
 				-- #endif

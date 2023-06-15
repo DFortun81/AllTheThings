@@ -2804,7 +2804,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 2.0.1", "removed 4.0.3" },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor
+						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(6054, {	-- Recipe: Shadow Protection Potion

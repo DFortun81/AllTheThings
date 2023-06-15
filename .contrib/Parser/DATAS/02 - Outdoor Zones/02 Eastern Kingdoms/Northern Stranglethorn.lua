@@ -2692,7 +2692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(8494),	-- Hyacinth Macaw (PET!)
 				-- #if BEFORE CATA
-				i(5788, {	-- Pattern: Thick Murloc Armor
+				i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 					["cr"] = 938,	-- Kurzen Commando
 				}),
 				-- #endif

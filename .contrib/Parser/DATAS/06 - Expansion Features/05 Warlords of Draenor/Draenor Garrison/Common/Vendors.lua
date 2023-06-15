@@ -273,20 +273,20 @@ root(ROOTS.ExpansionFeatures,
 								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
 							},
 						}),
-						i(127722, {	-- Pattern: Mighty Burnished Essence
+						i(127722, {	-- Pattern: Mighty Burnished Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
 						un(REMOVED_FROM_GAME, i(122547)),	-- Pattern: Powerful Burnished Essence
-						i(127740, {	-- Pattern: Savage Burnished Essence
+						i(127740, {	-- Pattern: Savage Burnished Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
-						i(122715, {	-- Pattern: Spiritual Leathercraft
+						i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 						}),
 					},
@@ -1337,20 +1337,20 @@ root(ROOTS.ExpansionFeatures,
 								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
 							},
 						}),
-						i(127722, {	-- Pattern: Mighty Burnished Essence
+						i(127722, {	-- Pattern: Mighty Burnished Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
 						un(REMOVED_FROM_GAME, i(122547)),	-- Pattern: Powerful Burnished Essence
-						i(127740, {	-- Pattern: Savage Burnished Essence
+						i(127740, {	-- Pattern: Savage Burnished Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
-						i(122715, {	-- Pattern: Spiritual Leathercraft
+						i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 						}),
 					},

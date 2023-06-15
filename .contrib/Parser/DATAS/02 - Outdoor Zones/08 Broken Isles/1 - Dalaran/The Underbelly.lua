@@ -123,10 +123,10 @@ root(ROOTS.Zones, {
 					n(97364, {	-- Laura Malley <Creatures>
 						["coord"] = { 58.0, 58.1, LEGION_THE_UNDERBELLY },
 						["g"] = {
-							i(137932, {	-- Pattern: Flaming Hoop
+							i(137932, {	-- Pattern: Flaming Hoop (RECIPE!)
 								["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
 							}),
-							i(137934, {	-- Pattern: Leather Pet Leash
+							i(137934, {	-- Pattern: Leather Pet Leash (RECIPE!)
 								["cost"] = { { "c", 1149, 50 }, },		-- 50x Sightless Eye
 							}),
 							i(136904, {	-- Sewer-Pipe Jelly  (PET!)

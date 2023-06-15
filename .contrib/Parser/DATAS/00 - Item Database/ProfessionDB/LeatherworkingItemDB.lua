@@ -39,6 +39,41 @@ end
 ------------------
 -- PATCH 0.5.3 --
 ------------------
+-- TRAINER --
+i(0, 6661);	-- Barbaric Harness
+i(0, 7151);	-- Barbaric Shoulders
+i(0, 3818);	-- Cured Heavy Hide
+i(0, 3816);	-- Cured Light Hide
+i(0, 3817);	-- Cured Medium Hide
+i(0, 3766);	-- Dark Leather Belt
+i(0, 2167);	-- Dark Leather Boots
+i(0, 2168);	-- Dark Leather Cloak
+i(0, 7135);	-- Dark Leather Pants
+i(0, 2161);	-- Embossed Leather Boots
+i(0, 2162);	-- Embossed Leather Cloak
+i(0, 3756);	-- Embossed Leather Gloves
+i(0, 3759);	-- Embossed Leather Pants
+i(0, 2160);	-- Embossed Leather Vest
+i(0, 3763);	-- Fine Leather Belt
+i(0, 2159);	-- Fine Leather Cloak
+i(0, 3761);	-- Fine Leather Tunic
+i(0, 3774);	-- Green Leather Belt
+i(0, 3776);	-- Green Leather Bracers
+i(0, 7156);	-- Guardian Gloves
+i(0, 7147);	-- Guardian Pants
+i(0, 3753);	-- Handstitched Leather Belt
+i(0, 2149);	-- Handstitched Leather Boots
+i(0, 2153);	-- Handstitched Leather Pants
+i(0, 7126);	-- Handstitched Leather Vest
+i(0, 3780);	-- Heavy Armor Kit
+i(0, 3760);	-- Hillman's Cloak
+i(0, 3764);	-- Hillman's Leather Gloves
+i(0, 3768);	-- Hillman's Shoulders
+i(0, 2152);	-- Light Armor Kit
+i(0, 2881);	-- Light Leather
+i(0, 2165);	-- Medium Armor Kit
+i(0, 2166);	-- Toughened Leather Armor
+i(0, 3770);	-- Toughened Leather Gloves
 -- ITEM --
 i(4301, 3779);	-- Barbaric Belt
 i(4297, 3771);	-- Barbaric Gloves
@@ -70,6 +105,21 @@ i(0, 2108);	-- Leatherworking (Apprentice) (8.0.1)
 i(0, 3104);	-- Leatherworking (Journeyman) (8.0.1)
 i(0, 3811);	-- Leatherworking (Expert) (8.0.1)
 
+------------------
+-- PATCH 0.5.5 --
+------------------
+-- ITEM --
+i(6476, 7955);	-- Deviate Scale Belt
+i(6474, 7953);	-- Deviate Scale Cloak
+i(6475, 7954);	-- Deviate Scale Gloves
+i(6710, 8322);	-- Moonglow Vest
+
+------------------
+-- PATCH 0.6.0 --
+------------------
+-- TRAINER --
+i(0, 9059);	-- Handstitched Leather Bracers
+i(0, 9058);	-- Handstitched Leather Cloak
 
 ------------------
 -- PATCH 1.11.1 --
@@ -170,6 +220,213 @@ i(0, 53687);	-- Verdant Tundra Cap
 i(0, 53690);	-- Verdant Tundra Shoulderpads
 
 ------------------
+-- PATCH 5.2.0 --
+------------------
+-- ITEM --
+i(95467, 140040);	-- Magnificence of Leather
+i(95468, 140041);	-- Magnificence of Scales
+-- DISCOVERY --
+i(0, 138596);	-- Cloud Serpent Helm
+i(0, 138595);	-- Cloud Serpent Sabatons
+i(0, 138592);	-- Dreadrunner Helm
+i(0, 138591);	-- Dreadrunner Sabatons
+i(0, 140185);	-- Magnificent Hide Pack
+i(0, 138589);	-- Quilen Hide Boots
+i(0, 138590);	-- Quilen Hide Helm
+i(0, 138593);	-- Spirit Keeper Footguards
+i(0, 138594);	-- Spirit Keeper Helm
+
+------------------
+-- PATCH 5.3.0 --
+------------------
+-- DISCOVERY --
+i(0, 142966);	-- Gorge Stalker Belt
+i(0, 142957);	-- Gorge Stalker Legplates
+i(0, 142962);	-- Krasari Prowler Belt
+i(0, 142953);	-- Krasari Prowler Britches
+i(0, 142961);	-- Pennyroyal Belt
+i(0, 142952);	-- Pennyroyal Leggings
+i(0, 142965);	-- Snow Lily Belt
+i(0, 142956);	-- Snow Lily Britches
+
+------------------
+-- PATCH 5.4.0 --
+------------------
+-- DISCOVERY --
+i(0, 143145);	-- Crafted Malevolent Gladiator's Armbands of Prowess
+i(0, 143146);	-- Crafted Malevolent Gladiator's Armbands of Meditation
+i(0, 143112);	-- Crafted Malevolent Gladiator's Armwraps of Accuracy
+i(0, 143125);	-- Crafted Malevolent Gladiator's Armwraps of Alacrity
+i(0, 143102);	-- Crafted Malevolent Gladiator's Belt of Cruelty
+i(0, 143094);	-- Crafted Malevolent Gladiator's Belt of Meditation
+i(0, 143096);	-- Crafted Malevolent Gladiator's Bindings of Meditation
+i(0, 143104);	-- Crafted Malevolent Gladiator's Bindings of Prowess
+i(0, 143111);	-- Crafted Malevolent Gladiator's Boots of Alacrity
+i(0, 143124);	-- Crafted Malevolent Gladiator's Boots of Cruelty
+i(0, 143137);	-- Crafted Malevolent Gladiator's Chain Armor
+i(0, 143138);	-- Crafted Malevolent Gladiator's Chain Gauntlets
+i(0, 143139);	-- Crafted Malevolent Gladiator's Chain Helm
+i(0, 143140);	-- Crafted Malevolent Gladiator's Chain Leggings
+i(0, 143141);	-- Crafted Malevolent Gladiator's Chain Spaulders
+i(0, 143118);	-- Crafted Malevolent Gladiator's Copperskin Gloves
+i(0, 143119);	-- Crafted Malevolent Gladiator's Copperskin Helm
+i(0, 143120);	-- Crafted Malevolent Gladiator's Copperskin Legguards
+i(0, 143121);	-- Crafted Malevolent Gladiator's Copperskin Spaulders
+i(0, 143122);	-- Crafted Malevolent Gladiator's Copperskin Tunic
+i(0, 143089);	-- Crafted Malevolent Gladiator's Dragonhide Gloves
+i(0, 143090);	-- Crafted Malevolent Gladiator's Dragonhide Helm
+i(0, 143091);	-- Crafted Malevolent Gladiator's Dragonhide Legguards
+i(0, 143092);	-- Crafted Malevolent Gladiator's Dragonhide Robes
+i(0, 143093);	-- Crafted Malevolent Gladiator's Dragonhide Spaulders
+i(0, 143103);	-- Crafted Malevolent Gladiator's Footguards of Alacrity
+i(0, 143143);	-- Crafted Malevolent Gladiator's Footguards of Alacrity
+i(0, 143095);	-- Crafted Malevolent Gladiator's Footguards of Meditation
+i(0, 143144);	-- Crafted Malevolent Gladiator's Footguards of Meditation
+i(0, 143113);	-- Crafted Malevolent Gladiator's Ironskin Gloves
+i(0, 143114);	-- Crafted Malevolent Gladiator's Ironskin Helm
+i(0, 143115);	-- Crafted Malevolent Gladiator's Ironskin Legguards
+i(0, 143116);	-- Crafted Malevolent Gladiator's Ironskin Spaulders
+i(0, 143117);	-- Crafted Malevolent Gladiator's Ironskin Tunic
+i(0, 143097);	-- Crafted Malevolent Gladiator's Kodohide Gloves
+i(0, 143098);	-- Crafted Malevolent Gladiator's Kodohide Helm
+i(0, 143099);	-- Crafted Malevolent Gladiator's Kodohide Legguards
+i(0, 143100);	-- Crafted Malevolent Gladiator's Kodohide Robes
+i(0, 143101);	-- Crafted Malevolent Gladiator's Kodohide Spaulders
+i(0, 143127);	-- Crafted Malevolent Gladiator's Leather Gloves
+i(0, 143128);	-- Crafted Malevolent Gladiator's Leather Helm
+i(0, 143129);	-- Crafted Malevolent Gladiator's Leather Legguards
+i(0, 143130);	-- Crafted Malevolent Gladiator's Leather Spaulders
+i(0, 143126);	-- Crafted Malevolent Gladiator's Leather Tunic
+i(0, 143152);	-- Crafted Malevolent Gladiator's Linked Armor
+i(0, 143153);	-- Crafted Malevolent Gladiator's Linked Gauntlets
+i(0, 143154);	-- Crafted Malevolent Gladiator's Linked Helm
+i(0, 143155);	-- Crafted Malevolent Gladiator's Linked Leggings
+i(0, 143156);	-- Crafted Malevolent Gladiator's Linked Spaulders
+i(0, 143132);	-- Crafted Malevolent Gladiator's Links of Accuracy
+i(0, 143131);	-- Crafted Malevolent Gladiator's Links of Cruelty
+i(0, 143158);	-- Crafted Malevolent Gladiator's Mail Armor
+i(0, 143159);	-- Crafted Malevolent Gladiator's Mail Gauntlets
+i(0, 143160);	-- Crafted Malevolent Gladiator's Mail Helm
+i(0, 143161);	-- Crafted Malevolent Gladiator's Mail Leggings
+i(0, 143162);	-- Crafted Malevolent Gladiator's Mail Spaulders
+i(0, 143147);	-- Crafted Malevolent Gladiator's Ringmail Armor
+i(0, 143148);	-- Crafted Malevolent Gladiator's Ringmail Gauntlets
+i(0, 143149);	-- Crafted Malevolent Gladiator's Ringmail Helm
+i(0, 143150);	-- Crafted Malevolent Gladiator's Ringmail Leggings
+i(0, 143151);	-- Crafted Malevolent Gladiator's Ringmail Spaulders
+i(0, 143134);	-- Crafted Malevolent Gladiator's Sabatons of Alacrity
+i(0, 143133);	-- Crafted Malevolent Gladiator's Sabatons of Cruelty
+i(0, 143123);	-- Crafted Malevolent Gladiator's Waistband of Accuracy
+i(0, 143110);	-- Crafted Malevolent Gladiator's Waistband of Cruelty
+i(0, 143157);	-- Crafted Malevolent Gladiator's Waistguard of Cruelty
+i(0, 143142);	-- Crafted Malevolent Gladiator's Waistguard of Meditation
+i(0, 143136);	-- Crafted Malevolent Gladiator's Wristguards of Accuracy
+i(0, 143135);	-- Crafted Malevolent Gladiator's Wristguards of Alacrity
+i(0, 143105);	-- Crafted Malevolent Gladiator's Wyrmhide Gloves
+i(0, 143106);	-- Crafted Malevolent Gladiator's Wyrmhide Helm
+i(0, 143107);	-- Crafted Malevolent Gladiator's Wyrmhide Legguards
+i(0, 143108);	-- Crafted Malevolent Gladiator's Wyrmhide Robes
+i(0, 143109);	-- Crafted Malevolent Gladiator's Wyrmhide Spaulders
+-- ITEM --
+i(0, 146923);	-- Accelerated Hardened Magnificent Hide
+i(102513, 146613);	-- Drums of Rage
+i(100864, 142976);	-- Hardened Magnificent Hide
+------------------
+-- PATCH 6.0.2 --
+------------------
+-- TRAINER --
+i(0, 163216);	-- Blackened Dragonscale
+i(0, 171391);	-- Burnished Leather
+i(0, 163231);	-- Cobra Scales
+i(0, 163226);	-- Crystal Infused Leather
+i(0, 163218);	-- Deepsea Scale
+i(0, 163229);	-- Fel Hide
+i(0, 163228);	-- Fel Scales
+i(0, 163222);	-- Icy Dragonscale
+i(0, 163224);	-- Jormungar Scale
+i(0, 163223);	-- Nerubian Chitin
+i(0, 163230);	-- Nether Dragonscales
+i(0, 163220);	-- Prismatic Scale
+i(0, 163225);	-- Thick Clefthoof Leather
+i(0, 163232);	-- Wind Scales
+-- ITEM --
+i(116328, 171269);	-- Brilliant Burnished Cloak
+i(116345, 171286);	-- Burnished Essence
+i(116349, 171290);	-- Burnished Inscription Bag
+i(116347, 171288);	-- Burnished Leather Bag
+i(116348, 171289);	-- Burnished Mining Bag
+i(120258, 178208);	-- Drums of Fury
+i(116319, 171260);	-- Journeying Helm
+i(116320, 171261);	-- Journeying Robes
+i(116321, 171262);	-- Journeying Slacks
+i(116325, 171266);	-- Leather Refurbishing Kit
+i(116327, 171268);	-- Nimble Burnished Cloak
+i(116326, 171267);	-- Powerful Burnished Cloak
+i(116350, 171291);	-- Riding Harness
+i(120130, 176089);	-- Secrets of Draenor Leatherworking
+i(116335, 171276);	-- Supple Boots
+i(116334, 171275);	-- Supple Bracers
+i(116332, 171273);	-- Supple Gloves
+i(116330, 171271);	-- Supple Helm
+i(116331, 171272);	-- Supple Leggings
+i(116329, 171270);	-- Supple Shoulderguards
+i(116333, 171274);	-- Supple Vest
+i(116336, 171277);	-- Supple Waistguard
+i(116322, 171263);	-- Traveling Helm
+i(116324, 171265);	-- Traveling Leggings
+i(116323, 171264);	-- Traveling Tunic
+i(116344, 171285);	-- Wayfaring Belt
+i(116343, 171284);	-- Wayfaring Boots
+i(116342, 171283);	-- Wayfaring Bracers
+i(116340, 171281);	-- Wayfaring Gloves
+i(116338, 171279);	-- Wayfaring Helm
+i(116339, 171280);	-- Wayfaring Leggings
+i(116337, 171278);	-- Wayfaring Shoulderguards
+i(116341, 171282);	-- Wayfaring Tunic
+-- REMOVED --
+i(0, 158752);	-- Leatherworking (Draenor Master) (8.0.1)
+-- TENTS --
+i(0, 176408);	-- Archmage's Tent
+i(0, 176413);	-- Blood Elven Tent
+i(0, 176409);	-- Brute's Tent
+i(0, 176412);	-- Crusader's Tent
+i(0, 176415);	-- Deathweaver's Hovel
+i(0, 176421);	-- Distressingly Furry Tent
+i(0, 176417);	-- Elune's Retreat
+i(0, 176404);	-- Enchanter's Tent
+i(0, 176392);	-- Fine Blue and Gold Tent
+i(0, 176399);	-- Fine Blue and Green Tent
+i(0, 176397);	-- Fine Blue and Purple Tent
+i(0, 176414);	-- High Elven Tent
+i(0, 176401);	-- Ironskin Tent
+i(0, 176426);	-- Nomad's Spiked Tent
+i(0, 176418);	-- Orgrimmar's Reach
+i(0, 176422);	-- Ornate Alliance Tent
+i(0, 176424);	-- Ornate Horde Tent
+i(0, 176402);	-- Outcast's Tent
+i(0, 176416);	-- Patchwork Hut
+i(0, 176405);	-- Savage Leather Tent
+i(0, 176420);	-- Simple Tent
+i(0, 176411);	-- Sturdy Tent
+i(0, 176425);	-- Voodoo Doctor's Hovel
+-- UNSURE --
+i(0, 171713);	-- Burnished Leather
+i(0, 173416);	-- Small Football
+
+------------------
+-- PATCH 6.1.0 --
+------------------
+-- ITEM --
+i(122715, 182121);	-- Spiritual Leathercraft
+
+------------------
+-- PATCH 6.2.0 --
+------------------
+-- ITEM --
+i(127722, 187489);	-- Mighty Burnished Essence
+i(127740, 187513);	-- Savage Burnished Essence
+
+------------------
 -- PATCH 7.0.1 --
 ------------------
 i(0, 195119);	-- Leatherworking
@@ -195,6 +452,14 @@ i(0, 196385);	-- Stonehide Leather Strip
 i(0, 196427);	-- Sturdy Stonehide Boots
 i(0, 196379);	-- Tanned Stonehide Leather
 i(0, 196388);	-- Tanned Fel Leather
+i(0, 194696);	-- Warhide Belt [Rank 1]
+i(0, 194695);	-- Warhide Bindings [Rank 1]
+i(0, 194701);	-- Warhide Footpads [Rank 1]
+i(0, 194700);	-- Warhide Gloves [Rank 1]
+i(0, 194702);	-- Warhide Jerkin [Rank 1]
+i(0, 194699);	-- Warhide Mask [Rank 1]
+i(0, 194698);	-- Warhide Pants [Rank 1]
+i(0, 194697);	-- Warhide Shoulderguard [Rank 1]
 
 ------------------
 -- PATCH 7.0.3 --
@@ -234,24 +499,100 @@ i(0, 226131);	-- Spritescale Gloves
 i(0, 226130);	-- Spritescale Jerkin
 i(0, 226133);	-- Spritescale Wraps
 -- ITEM --
+i(137900, 194743);	-- Battlebound Armbands [Rank 2]
+i(137908, 194751);	-- Battlebound Armbands [Rank 3]
+i(137901, 194744);	-- Battlebound Girdle [Rank 2]
+i(137913, 194756);	-- Battlebound Girdle [Rank 3]
+i(137905, 194748);	-- Battlebound Grips [Rank 2]
+i(137911, 194754);	-- Battlebound Grips [Rank 3]
+i(137907, 194750);	-- Battlebound Hauberk [Rank 2]
+i(137915, 194758);	-- Battlebound Hauberk [Rank 3]
+i(137903, 194746);	-- Battlebound Leggings [Rank 2]
+i(137909, 194752);	-- Battlebound Leggings [Rank 3]
+i(137902, 194745);	-- Battlebound Spaulders [Rank 2]
+i(137914, 194757);	-- Battlebound Spaulders [Rank 3]
+i(132124, 194741);	-- Battlebound Treads [Rank 1]
+i(137906, 194749);	-- Battlebound Treads [Rank 2]
+i(137912, 194755);	-- Battlebound Treads [Rank 3]
+i(132123, 194739);	-- Battlebound Warhelm [Rank 1]
+i(137904, 194747);	-- Battlebound Warhelm [Rank 2]
+i(137910, 194753);	-- Battlebound Warhelm [Rank 3]
 i(140637, 194788);	-- Dreadleather Belt [Rank 1]
+i(137885, 194720);	-- Dreadleather Belt [Rank 2]
+i(137893, 194728);	-- Dreadleather Belt [Rank 3]
 i(140636, 194787);	-- Dreadleather Bindings [Rank 1]
+i(137884, 194719);	-- Dreadleather Bindings [Rank 2]
+i(137892, 194727);	-- Dreadleather Bindings [Rank 3]
 i(140642, 194785);	-- Dreadleather Footpads [Rank 1]
+i(137890, 194725);	-- Dreadleather Footpads [Rank 2]
+i(137898, 194733);	-- Dreadleather Footpads [Rank 3]
 i(140641, 194790);	-- Dreadleather Gloves [Rank 1]
+i(137889, 194724);	-- Dreadleather Gloves [Rank 2]
+i(137897, 194732);	-- Dreadleather Gloves [Rank 3]
 i(140643, 194791);	-- Dreadleather Jerkin [Rank 1]
+i(137891, 194726);	-- Dreadleather Jerkin [Rank 2]
+i(137899, 194734);	-- Dreadleather Jerkin [Rank 3]
 i(140640, 194784);	-- Dreadleather Mask [Rank 1]
+i(137888, 194723);	-- Dreadleather Mask [Rank 2]
+i(137896, 194731);	-- Dreadleather Mask [Rank 3]
 i(140639, 194786);	-- Dreadleather Pants [Rank 1]
+i(137887, 194722);	-- Dreadleather Pants [Rank 2]
+i(137895, 194730);	-- Dreadleather Pants [Rank 3]
 i(140638, 194789);	-- Dreadleather Shoulderguard [Rank 1]
+i(137886, 194721);	-- Dreadleather Shoulderguard [Rank 2]
+i(137894, 194729);	-- Dreadleather Shoulderguard [Rank 3]
 i(141850, 194780);	-- Elderhorn Riding Harness
+i(137932, 194775);	-- Flaming Hoop
 i(140644, 194796);	-- Gravenscale Armbands [Rank 1]
+i(137916, 194759);	-- Gravenscale Armbands [Rank 2]
+i(137924, 194767);	-- Gravenscale Armbands [Rank 3]
 i(140645, 194797);	-- Gravenscale Girdle [Rank 1]
+i(137917, 194760);	-- Gravenscale Girdle [Rank 2]
+i(137925, 194768);	-- Gravenscale Girdle [Rank 3]
 i(140649, 194799);	-- Gravenscale Grips [Rank 1]
+i(137921, 194764);	-- Gravenscale Grips [Rank 2]
+i(137929, 194772);	-- Gravenscale Grips [Rank 3]
 i(140651, 194795);	-- Gravenscale Hauberk [Rank 1]
+i(137923, 194766);	-- Gravenscale Hauberk [Rank 2]
+i(137931, 194774);	-- Gravenscale Hauberk [Rank 3]
 i(140647, 194792);	-- Gravenscale Leggings [Rank 1]
+i(137919, 194762);	-- Gravenscale Leggings [Rank 2]
+i(137927, 194770);	-- Gravenscale Leggings [Rank 3]
 i(140646, 194798);	-- Gravenscale Spaulders [Rank 1]
+i(137918, 194761);	-- Gravenscale Spaulders [Rank 2]
+i(137926, 194769);	-- Gravenscale Spaulders [Rank 3]
 i(140650, 194793);	-- Gravenscale Treads [Rank 1]
+i(137922, 194765);	-- Gravenscale Treads [Rank 2]
+i(137930, 194773);	-- Gravenscale Treads [Rank 3]
 i(140648, 194794);	-- Gravenscale Warhelm [Rank 1]
+i(137920, 194763);	-- Gravenscale Warhelm [Rank 2]
+i(137928, 194771);	-- Gravenscale Warhelm [Rank 3]
+i(137935, 194779);	-- Leather Love Seat
+i(137933, 194776);	-- Leather Pet Bed
+i(137934, 194778);	-- Leather Pet Leash
+i(137869, 194704);	-- Warhide Belt [Rank 2]
+i(137881, 194716);	-- Warhide Belt [Rank 3]
+i(137868, 194703);	-- Warhide Bindings [Rank 2]
+i(137876, 194711);	-- Warhide Bindings [Rank 3]
+i(137874, 194709);	-- Warhide Footpads [Rank 2]
+i(137880, 194715);	-- Warhide Footpads [Rank 3]
+i(137873, 194708);	-- Warhide Gloves [Rank 2]
+i(137879, 194714);	-- Warhide Gloves [Rank 3]
+i(137875, 194710);	-- Warhide Jerkin [Rank 2]
+i(137883, 194718);	-- Warhide Jerkin [Rank 3]
+i(137872, 194707);	-- Warhide Mask [Rank 2]
+i(137878, 194713);	-- Warhide Mask [Rank 3]
+i(137871, 194706);	-- Warhide Pants [Rank 2]
+i(137877, 194712);	-- Warhide Pants [Rank 3]
+i(137870, 194705);	-- Warhide Shoulderguard [Rank 2]
+i(137882, 194717);	-- Warhide Shoulderguard [Rank 3]
 -- QUEST --
+i(0, 194735);	-- Battlebound Armbands [Rank 1]
+i(0, 194736);	-- Battlebound Girdle [Rank 1]
+i(0, 194740);	-- Battlebound Grips [Rank 1]
+i(0, 194742);	-- Battlebound Hauberk [Rank 1]
+i(0, 194738);	-- Battlebound Leggings [Rank 1]
+i(0, 194737);	-- Battlebound Spaulders [Rank 1]
 i(0, 208596);	-- Tanned Stonehide Pelt
 i(0, 208615);	-- Stonehide Leather Strip
 

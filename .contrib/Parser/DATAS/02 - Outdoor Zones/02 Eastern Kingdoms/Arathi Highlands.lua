@@ -1802,7 +1802,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(13288, {	-- Pattern: Raptor Hide Belt
+						i(13288, {	-- Pattern: Raptor Hide Belt (RECIPE!)
 							["races"] = ALLIANCE_ONLY,
 							["isLimited"] = true,
 							-- #if BEFORE 10.0.5
@@ -1974,7 +1974,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(13287, {	-- Pattern: Raptor Hide Harness
+						i(13287, {	-- Pattern: Raptor Hide Harness (RECIPE!)
 							["races"] = HORDE_ONLY,
 							["isLimited"] = true,
 						}),

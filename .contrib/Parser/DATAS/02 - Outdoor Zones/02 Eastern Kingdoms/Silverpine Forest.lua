@@ -1590,10 +1590,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6272, {	-- Pattern: Blue Linen Robe
 							["isLimited"] = true,
 						}),
-						i(5786, {	-- Pattern: Murloc Scale Belt
+						i(5786, {	-- Pattern: Murloc Scale Belt (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5787, {	-- Pattern: Murloc Scale Breastplate
+						i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5771, {	-- Pattern: Red Linen Bag

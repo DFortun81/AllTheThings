@@ -2455,10 +2455,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.2, 77.5, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(5789, {	-- Pattern: Murloc Scale Bracers
+						i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor
+						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2689,7 +2689,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.4, 76.0, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(14635, {	-- Pattern: Gem-Studded Leather Belt
+						i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(18239, {	-- Pattern: Shadowskin Gloves (RECIPE!)
@@ -2866,11 +2866,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				i(5789, {	-- Pattern: Murloc Scale Bracers
+				i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					["cr"] = 1561,	-- Bloodsail Raider
 				}),
 				-- #if BEFORE CATA
-				i(5788, {	-- Pattern: Thick Murloc Armor
+				i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 					["cr"] = 938,	-- Kurzen Commando
 				}),
 				-- #endif

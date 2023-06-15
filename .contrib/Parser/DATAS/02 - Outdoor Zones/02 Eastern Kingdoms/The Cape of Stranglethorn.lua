@@ -1952,10 +1952,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coord"] = { 42.8, 74.1, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(5789, {	-- Pattern: Murloc Scale Bracers
+						i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor
+						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2209,7 +2209,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8494, {	-- Hyacinth Macaw (PET!)
 					["timeline"] = { "added 1.11.1.5462" },
 				}),
-				i(5789, {	-- Pattern: Murloc Scale Bracers
+				i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					["cr"] = 1561,	-- Bloodsail Raider
 				}),
 				i(48126, {	-- Razzashi Hatchling (PET!)
