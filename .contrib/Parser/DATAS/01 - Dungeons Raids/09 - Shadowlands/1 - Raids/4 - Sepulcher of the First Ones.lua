@@ -592,7 +592,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 					{ 41.3, 71.0, ORIBOS },	-- Ta'elfar <Trader of Histories>
 				},
 			}),
-			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 }, {
+			d(LFR_RAID, bubbleDown({ ["timeline"] = { REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps
 					i(190630),	-- Devouring Pellicle Shoulderpads

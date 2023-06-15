@@ -636,7 +636,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					{ 41.3, 71.0, ORIBOS },	-- Ta'elfar <Trader of Histories>
 				},
 			}),
-			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 }, {
+			d(LFR_RAID, bubbleDown({ ["timeline"] = { REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				n(ZONE_DROPS, {
 					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
