@@ -213,7 +213,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(20030, {["timeline"]={"removed 6.0.1"}}),	-- Superior Impact
 			r(20031),	-- Superior Striking
 			r(20033),	-- Unholy Weapon
-			applyholiday(FEAST_OF_WINTER_VEIL, r(21931)),	-- Winter's Might
+			applyevent(EVENTS.FEAST_OF_WINTER_VEIL, r(21931)),	-- Winter's Might
 		}),
 	}),
 	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
@@ -332,19 +332,10 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}),
 		cat(686, {	-- Weapon Enchantments
 			r(28004),	-- Battlemaster
-			-- #if ANYCLASSIC
-			applyclassicphase(TBC_PHASE_THREE, {
+			applyclassicphase(TBC_PHASE_THREE, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, {
 				["name"] = "Deathfrost",
 				["recipeID"] = 46578,
-				-- This script makes it so that it's filtered out until Phase 3, but also applies the holiday filter when the appropriate phase is turned on.
-				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_THREE .. [[] and ]] .. MIDSUMMER_FIRE_FESTIVAL .. [[ or ]] .. TBC_PHASE_THREE .. [[; end]],
-			}),
-			-- #else
-			applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
-				["name"] = "Deathfrost",
-				["recipeID"] = 46578,
-			}),
-			-- #endif
+			})),
 			applyclassicphase(TBC_PHASE_FOUR, r(42974, {["timeline"]={"added 2.3.0"}})),	-- Executioner
 			applyclassicphase(TBC_PHASE_THREE, r(42620, {["timeline"]={"added 2.2.0"}})),	-- Greater Agility
 			r(27977),	-- Major Agility
@@ -1234,7 +1225,7 @@ itemrecipe("Formula: Brilliant Mana Oil", 20757, 25130, PHASE_FIVE);
 itemrecipe("Formula: Minor Wizard Oil", 20758, 25124, PHASE_FIVE);
 itemrecipe("Formula: Enchant 2H Weapon - Agility", 22392, 27837, PHASE_FIVE);
 
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Formula: Enchant Weapon - Winter's Might", 17725, 21931, FEAST_OF_WINTER_VEIL));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Formula: Enchant Weapon - Winter's Might", 17725, 21931, FEAST_OF_WINTER_VEIL));
 
 -- #if AFTER TBC
 -- TBC Recipes
@@ -1295,13 +1286,7 @@ itemrecipe("Formula: Enchant Gloves - Superior Agility", 33152, 25080, TBC_PHASE
 itemrecipe("Formula: Enchant Gloves - Threat", 33153, 25072, TBC_PHASE_ONE, true);
 itemrecipe("Formula: Enchant Weapon - Greater Agility", 33165, 42620, TBC_PHASE_THREE);
 
--- Technically a holiday?
--- #if ANYCLASSIC
-itemrecipe("Formula: Enchant Weapon - Deathfrost", 35498, 46578, TBC_PHASE_THREE);
--- #else
-itemrecipe("Formula: Enchant Weapon - Deathfrost", 35498, 46578, MIDSUMMER_FIRE_FESTIVAL);
--- #endif
-
+applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, itemrecipe("Formula: Enchant Weapon - Deathfrost", 35498, 46578, TBC_PHASE_THREE));
 itemrecipe("Formula: Enchant Weapon - Executioner", 33307, 42974, TBC_PHASE_FOUR);
 
 itemrecipe("Formula: Void Shatter", 34872, 45765, TBC_PHASE_FIVE);

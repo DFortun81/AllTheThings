@@ -2060,7 +2060,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				}),
 				i(8346),	-- Gauntlets of the Sea
 				-- #endif
-				applyholiday(FEAST_OF_WINTER_VEIL, i(17721)),	-- Gloves of the Greatfather
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, i(17721)),	-- Gloves of the Greatfather
 				i(5966),	-- Guardian Gloves
 				i(7359),	-- Heavy Earthen Gloves
 				i(7349),	-- Herbalist's Gloves

@@ -5,7 +5,7 @@ HALLOWS_END_HEADER = createHeader({
 	readable = "Hallow's End",
 	constant = "HALLOWS_END_HEADER",
 	icon = [[~_.asset("Holiday_hallows_end")]],
-	eventID = 324,
+	eventID = EVENTS.HALLOWS_END,
 	text = {
 		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(158))]],
@@ -390,10 +390,10 @@ local SPECTRAL_GROG = i(104316, {	-- Spectral Grog
 	},
 });
 
-root(ROOTS.Holidays, applyholiday(HALLOWS_END, n(HALLOWS_END_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	-- #if BEFORE WRATH
 	["description"] = "Start: 10/18 at 10:00 AM\nEnd: 11/01 at 11:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HALLOWS_END .. [[, 10, 18, 11, 1); end]],
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. EVENTS.HALLOWS_END .. [[, 10, 18, 11, 1); end]],
 	-- #endif
 	["groups"] = {
 		-- #if AFTER 2.0.1

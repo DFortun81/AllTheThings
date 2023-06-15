@@ -3874,31 +3874,6 @@ for key,value in pairs({
 do a[key] = value; end
 
 --TODO:
-local a = L.UNOBTAINABLE_ITEM_REASONS;
-for key,value in pairs({
-	-- Seasonal Filters
-		[1000] = {4, "|CFF00FFDEPour cela, l’événement la Fête des Brasseurs doit être actif.|r", "Fête des Brasseurs"},
-		[1001] = {4, "|CFF00FFDEPour cela, l’événement la Semaine des enfants doit être actif.|r", "Semaine des enfants"},
-		[1012] = {4, "|CFF00FFDEPour cela, l’événement la Foire de Sombrelune doit être actif.|r", "Foire de Sombrelune" },
-		[1002] = {4, "|CFF00FFDEPour cela, l’événement le Jour des morts doit être actif.|r", "Jour des morts"},
-		[1003] = {4, "|CFF00FFDEPour cela, l’événement le Voile d'hiver doit être actif.|r", "Voile d'hiver"},
-		[1009] = {4, "|CFF00FFDEPour cela, l’événement la Fêtes des artifices doit être actif.|r", "Fêtes des artifices" },
-		[1004] = {4, "|CFF00FFDEPour cela, l’événement la Sanssaint doit être actif.|r", "Sanssaint"},
-		[1005] = {4, "|CFF00FFDEPour cela, l’événement la Fête des moissons doit être actif.|r", "Fête des moissons"},
-		[1006] = {4, "|CFF00FFDEPour cela, l’événement De l'amour dans l'air doit être actif.|r", "De l'amour dans l'air"},
-		[1007] = {4, "|CFF00FFDEPour cela, l’événement la Fête lunaire doit être actif.|r", "Fête lunaire"},
-		[1014] = {4, "|CFF00FFDEPour cela, l’événement Micro Holiday doit être actif.|r", "Micro Holiday"},
-		[1008] = {4, "|CFF00FFDEPour cela, l’événement la Fête du Feu du solstice d'été doit être actif.|r", "Fête du Feu du solstice d'été"},
-		[1010] = {4, "|CFF00FFDEPour cela, l’événement Le Jardin des nobles doit être actif.|r", "Le Jardin des nobles"},
-		[1013] = {4, "|CFF00FFDEPour cela, l’événement Les Bienfaits du pèlerin doit être actif.|r", "Les Bienfaits du pèlerin"},
-		[1011] = {4, "|CFF00FFDEPour cela, l’événement le Jour des pirates doit être actif.|r", "Jour des pirates"},
-		[1015] = {4, "|CFF00FFDEPour cela, l’événement le Concours de pêche de Strangleronce doit être actif.|r", "Concours de pêche de Strangleronce"},
-		[1016] = {4, "|CFF00FFDEPour cela, l’événement les Marcheurs du temps doit être actif.|r", "Marcheurs du temps"},
-		[1017] = {4, "|CFF00FFDEPour cela, l’événement l'Anniversaire de WoW doit être actif.|r", "Anniversaire de WoW"},
-})
-do a[key] = value; end
-
---TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },

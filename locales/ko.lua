@@ -3811,39 +3811,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- Saved Instance Name => Dungeon Journal Instance Name Converter
--- If your saves aren't lining up, it's probably because Blizzard
--- didn't use the same localization for the instance. Sorry.
-local a = L.SAVED_TO_DJ_INSTANCES;
-for key,value in pairs({
-})
-do a[key] = value; end
-
---TODO:
-local a = L.UNOBTAINABLE_ITEM_REASONS;
-for key,value in pairs({
-	-- Seasonal Filters
-		[1000] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "가을 축제"},
-		[1001] = {4, "|CFF00FFDEThis requires the Children's Week Holiday to be Active.|r", "어린이 주간"},
-		[1012] = {4, "|CFF00FFDEThis requires the Darkmoon Faire Holiday to be Active.|r", "다크문 축제" },
-		[1002] = {4, "|CFF00FFDEThis requires the Day of the Dead Holiday to be Active.|r", "망자의 날"},
-		[1003] = {4, "|CFF00FFDEThis requires the Feast of Winter Veil Holiday to be Active.|r", "겨울맞이 축제"},
-		[1009] = {4, "|CFF00FFDEThis requires the Fireworks Celebration Holiday to be Active.|r", "새해맞이 축제" },
-		[1004] = {4, "|CFF00FFDEThis requires the Hallow's End Holiday to be Active.|r", "할로윈 축제"},
-		[1005] = {4, "|CFF00FFDEThis requires the Harvest Festival Holiday to be Active.|r", "추수절"},
-		[1006] = {4, "|CFF00FFDEThis requires the Love is in the Air Holiday to be Active.|r", "온누리에 사랑을"},
-		[1007] = {4, "|CFF00FFDEThis requires the Lunar Festival Holiday to be Active.|r", "달의 축제"},
-		[1014] = {4, "|CFF00FFDEThis requires a Specific Micro Holiday to be Active.|r", "Micro Holiday"},
-		[1008] = {4, "|CFF00FFDEThis requires the Midsummer Fire Festival Holiday to be Active.|r", "한여름 불꽃축제"},
-		[1010] = {4, "|CFF00FFDEThis requires the Noblegarden Holiday to be Active.|r", "귀족의 정원"},
-		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "순례자의 감사절"},
-		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "해적의 날"},
-		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "가시덤불 골짜기 낚시왕 선발대회"},
-		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "시간여행"},
-		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "월드 오브 워크래프트의 생일"},
-})
-do a[key] = value; end
-
 --TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({

@@ -5,7 +5,7 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 	readable = "Love is in the Air",
 	constant = "LOVE_IS_IN_THE_AIR_HEADER",
 	icon = [[~_.asset("Holiday_love")]],
-	eventID = 423,
+	eventID = EVENTS.LOVE_IS_IN_THE_AIR,
 	text = {
 		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(187))]],
@@ -14,21 +14,21 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 		-- #endif
 	},
 });
-local BOUQUET_RED = applyholiday(LOVE_IS_IN_THE_AIR, i(22206));	-- Bouquet of Red Roses
-local BOUQUET_EBON = applyholiday(LOVE_IS_IN_THE_AIR, i(44731, {	-- Bouquet of Ebon Roses
+local BOUQUET_RED = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(22206));	-- Bouquet of Red Roses
+local BOUQUET_EBON = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(44731, {	-- Bouquet of Ebon Roses
 	["timeline"] = { "added 3.0.3.9138" },
 }));
-local POUCH_OF_RED_ROSE_PETALS = applyholiday(LOVE_IS_IN_THE_AIR, i(188693, {	-- Pouch of Red Rose Petals
+local POUCH_OF_RED_ROSE_PETALS = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(188693, {	-- Pouch of Red Rose Petals
 	["timeline"] = { ADDED_9_1_5 },
 }));
-local POUCH_OF_EBON_ROSE_PETALS = applyholiday(LOVE_IS_IN_THE_AIR, i(188692, {	-- Pouch of Ebon Rose Petals
+local POUCH_OF_EBON_ROSE_PETALS = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(188692, {	-- Pouch of Ebon Rose Petals
 	["timeline"] = { ADDED_9_1_5 },
 }));
 local BOSS_GROUPS = {};
-root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_HEADER, {
 	-- #if BEFORE WRATH
 	["description"] = "Start: 02/06 at 10:00 AM\nEnd: 02/20 at 10:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LOVE_IS_IN_THE_AIR .. [[, 2, 6, 2, 20); end]],
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. EVENTS.LOVE_IS_IN_THE_AIR .. [[, 2, 6, 2, 20); end]],
 	-- #endif
 	["groups"] = {
 		-- #if BEFORE WRATH
@@ -1992,7 +1992,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_HEADE
 })));
 
 for i,o in ipairs({
-	applyholiday(LOVE_IS_IN_THE_AIR, n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
+	applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
 		["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
 		-- #if AFTER 4.0.3
 		--["questID"] = 25485,	-- NOTE: This is what it should be, but it's not checking off correctly.

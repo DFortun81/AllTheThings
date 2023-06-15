@@ -9,7 +9,7 @@ WOW_ANNIVERSARY_THIRTEEN = createHeader({
 		en = [[~select(2,GetAchievementInfo(11848))]],
 	},
 });
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_THIRTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_THIRTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(11848),	-- 13th Anniversary
 	n(MAILBOX, {
 		i(147876, {	-- Anniversary Gift
@@ -34,10 +34,10 @@ root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_THIRTEEN, bubbleDown({ ["u"] = REMOVED
 			["isYearly"] = true,
 		}),
 	}),
-})));
+}))));
 
 -- Yearly Anniversary Content
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_THIRTEEN, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_THIRTEEN, {
 	n(QUESTS, {
 		q(47253, {	-- The Originals [Alliance]
 			["qg"] = 110034,	-- Historian Llore

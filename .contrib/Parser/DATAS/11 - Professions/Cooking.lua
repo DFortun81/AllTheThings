@@ -400,81 +400,81 @@ profession(COOKING, {
 			["categoryID"] = 58,
 			["groups"] = {
 				-- #if AFTER WRATH
-				applyholiday(DAY_OF_THE_DEAD, {	-- Bread of the Dead [Day of the Dead]
+				applyevent(EVENTS.DAY_OF_THE_DEAD, {	-- Bread of the Dead [Day of the Dead]
 					["name"] = "Bread of the Dead",
 					["timeline"] = { "added 3.2.2.10505" },
 					["recipeID"] = 65454,
 				}),
-				applyholiday(PILGRIMS_BOUNTY, {	-- Candied Sweet Potato [A - Pilgrim's Bounty]
+				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Candied Sweet Potato [A - Pilgrim's Bounty]
 					["recipeID"] = 62051,	-- Candied Sweet Potato
 					["timeline"] = { "added 3.2.2.10505" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyholiday(PILGRIMS_BOUNTY, {	-- Candied Sweet Potato [H - Pilgrim's Bounty]
+				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Candied Sweet Potato [H - Pilgrim's Bounty]
 					["recipeID"] = 66034,	-- Candied Sweet Potato
 					["timeline"] = { "added 3.2.2.10505" },
 					["races"] = HORDE_ONLY,
 				}),
-				applyholiday(PILGRIMS_BOUNTY, {	-- Cranberry Chutney [A - Pilgrim's Bounty]
+				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Cranberry Chutney [A - Pilgrim's Bounty]
 					["recipeID"] = 62049,	-- Cranberry Chutney
 					["timeline"] = { "added 3.2.2.10505" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyholiday(PILGRIMS_BOUNTY, {	-- Cranberry Chutney [H - Pilgrim's Bounty]
+				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Cranberry Chutney [H - Pilgrim's Bounty]
 					["recipeID"] = 66035,	-- Cranberry Chutney
 					["timeline"] = { "added 3.2.2.10505" },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
 				-- #if BEFORE MOP
-				applyholiday(FEAST_OF_WINTER_VEIL, {	-- Egg Nog [Winter Veil]
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {	-- Egg Nog [Winter Veil]
 					["name"] = "Egg Nog",
 					["recipeID"] = 21144,
 				}),
 				-- #endif
-				applyholiday(FEAST_OF_WINTER_VEIL, {	-- Gingerbread Cookie [Winter Veil]
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {	-- Gingerbread Cookie [Winter Veil]
 					["name"] = "Gingerbread Cookie",
 					["recipeID"] = 21143,
 				}),
 				-- #if AFTER TBC
-				applyholiday(FEAST_OF_WINTER_VEIL, {	-- Hot Apple Cider [Winter Veil]
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {	-- Hot Apple Cider [Winter Veil]
 					["recipeID"] = 45022,	-- Hot Apple Cider
 				}),
 				-- #endif
 				-- #if AFTER WRATH
-				applyholiday(PILGRIMS_BOUNTY, {	-- Pumpkin Pie [A - Pilgrim's Bounty]
+				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Pumpkin Pie [A - Pilgrim's Bounty]
 					["recipeID"] = 62044,	-- Pumpkin Pie
 					["timeline"] = { "added 3.2.2.10505" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyholiday(PILGRIMS_BOUNTY, {	-- Pumpkin Pie [H - Pilgrim's Bounty]
+				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Pumpkin Pie [H - Pilgrim's Bounty]
 					["recipeID"] = 66036,	-- Pumpkin Pie
 					["timeline"] = { "added 3.2.2.10505" },
 					["races"] = HORDE_ONLY,
 				}),
-				applyholiday(PILGRIMS_BOUNTY, {	-- Slow-Roasted Turkey [A - Pilgrim's Bounty]
+				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Slow-Roasted Turkey [A - Pilgrim's Bounty]
 					["recipeID"] = 62045,	-- Slow-Roasted Turkey
 					["timeline"] = { "added 3.2.2.10505" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyholiday(PILGRIMS_BOUNTY, {	-- Slow-Roasted Turkey [H - Pilgrim's Bounty]
+				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Slow-Roasted Turkey [H - Pilgrim's Bounty]
 					["recipeID"] = 66037,	-- Slow-Roasted Turkey
 					["timeline"] = { "added 3.2.2.10505" },
 					["races"] = HORDE_ONLY,
 				}),
-				applyholiday(PILGRIMS_BOUNTY, {	-- Spice Bread Stuffing [A - Pilgrim's Bounty]
+				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Spice Bread Stuffing [A - Pilgrim's Bounty]
 					["recipeID"] = 62050,	-- Spice Bread Stuffing
 					["timeline"] = { "added 3.2.2.10505" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyholiday(PILGRIMS_BOUNTY, {	-- Spice Bread Stuffing [H - Pilgrim's Bounty]
+				applyevent(EVENTS.PILGRIMS_BOUNTY, {	-- Spice Bread Stuffing [H - Pilgrim's Bounty]
 					["recipeID"] = 66038,	-- Spice Bread Stuffing
 					["timeline"] = { "added 3.2.2.10505" },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
 				-- #if AFTER MOP
-				applyholiday(FEAST_OF_WINTER_VEIL, {	-- Winter Veil Egg Nog [Winter Veil]
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {	-- Winter Veil Egg Nog [Winter Veil]
 					["recipeID"] = 21144,	-- Winter Veil Egg Nog
 				}),
 				-- #endif
@@ -2548,8 +2548,8 @@ itemrecipe("Recipe: Monster Omelet", 16110, 15933);
 itemrecipe("Recipe: Spiced Chili Crab", 16111, 15915);
 itemrecipe("Recipe: Undermine Clam Chowder", 16767, 20626);
 itemrecipe("Recipe: Mithril Head Trout", 17062, 20916);
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Gingerbread Cookie", 17200, 21143, nil, true));
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Egg Nog", 17201, 21144, nil, true));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Gingerbread Cookie", 17200, 21143, nil, true));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Egg Nog", 17201, 21144, nil, true));
 itemrecipe("Recipe: Tender Wolf Steak", 18046, 22480);
 itemrecipe("Recipe: Thistle Tea", 18160, 9513);
 itemrecipe("Recipe: Smoked Sagefish", 21099, 25704);
@@ -2575,7 +2575,7 @@ itemrecipe("Recipe: Juicy Bear Burger", 35566, 46688, TBC_PHASE_ONE, "removed 4.
 itemrecipe("Recipe: Lynx Steak", 27685, 33276, TBC_PHASE_ONE, "added 2.0.1.6180");
 itemrecipe("Recipe: Roasted Moongraze Tenderloin", 27686, 33277, TBC_PHASE_ONE, "added 2.0.1.6180");
 itemrecipe("Recipe: Sporeling Snack", 27689, 33285, TBC_PHASE_ONE, "removed 4.2.0");
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Hot Apple Cider", 34413, 45022, true, "added 2.3.0.7501"));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Hot Apple Cider", 34413, 45022, true, "added 2.3.0.7501"));
 
 itemrecipe("Recipe: Buzzard Bites", 27684, 33279, TBC_PHASE_ONE);
 itemrecipe("Recipe: Ravager Dog", 27688, 33284, TBC_PHASE_ONE);
@@ -2612,11 +2612,11 @@ itemrecipe("Master Cookbook", 27736, 0--[[33359]], TBC_PHASE_ONE, true);
 itemrecipe("Recipe: Bad Clams", 43509, 58523, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Blackened Dragonfin", 43035, 57441, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Blackened Worg Steak", 43032, 57438, WRATH_PHASE_ONE);
-applyholiday(DAY_OF_THE_DEAD, itemrecipe("Recipe: Bread of the Dead", 46710, 65454, DAY_OF_THE_DEAD));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Candied Sweet Potato", 46806, 66034, PILGRIMS_BOUNTY));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Candied Sweet Potato", 44859, 62051, PILGRIMS_BOUNTY));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Cranberry Chutney", 44858, 62049, PILGRIMS_BOUNTY));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Cranberry Chutney", 46805, 66035, PILGRIMS_BOUNTY));
+applyevent(EVENTS.DAY_OF_THE_DEAD, itemrecipe("Recipe: Bread of the Dead", 46710, 65454));
+applyevent(EVENTS.PILGRIMS_BOUNTY, itemrecipe("Recipe: Candied Sweet Potato", 46806, 66034));
+applyevent(EVENTS.PILGRIMS_BOUNTY, itemrecipe("Recipe: Candied Sweet Potato", 44859, 62051));
+applyevent(EVENTS.PILGRIMS_BOUNTY, itemrecipe("Recipe: Cranberry Chutney", 44858, 62049));
+applyevent(EVENTS.PILGRIMS_BOUNTY, itemrecipe("Recipe: Cranberry Chutney", 46805, 66035));
 itemrecipe("Recipe: Critter Bites", 43029, 57435, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Cuttlesteak", 43033, 57439, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Dig Rat Stew", 44977, 6417);
@@ -2632,15 +2632,15 @@ itemrecipe("Recipe: Last Week's Mammoth", 43508, 58521, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Mega Mammoth Meal", 43018, 45555, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Mighty Rhino Dogs", 43022, 45559, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Poached Northern Sculpin", 43023, 45567, WRATH_PHASE_ONE);
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Pumpkin Pie", 46804, 66036, PILGRIMS_BOUNTY));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Pumpkin Pie", 44862, 62044, PILGRIMS_BOUNTY));
+applyevent(EVENTS.PILGRIMS_BOUNTY, itemrecipe("Recipe: Pumpkin Pie", 46804, 66036));
+applyevent(EVENTS.PILGRIMS_BOUNTY, itemrecipe("Recipe: Pumpkin Pie", 44862, 62044));
 itemrecipe("Recipe: Rhinolicious Wormsteak", 43028, 57434, WRATH_PHASE_ONE);
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Slow-Roasted Turkey", 44861, 62045, PILGRIMS_BOUNTY));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Slow-Roasted Turkey", 46807, 66037, PILGRIMS_BOUNTY));
+applyevent(EVENTS.PILGRIMS_BOUNTY, itemrecipe("Recipe: Slow-Roasted Turkey", 44861, 62045));
+applyevent(EVENTS.PILGRIMS_BOUNTY, itemrecipe("Recipe: Slow-Roasted Turkey", 46807, 66037));
 itemrecipe("Recipe: Small Feast", 43506, 58528, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Snapper Extreme", 43031, 57437, WRATH_PHASE_ONE);
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Spice Bread Stuffing", 44860, 62050, PILGRIMS_BOUNTY));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Spice Bread Stuffing", 46803, 66038, PILGRIMS_BOUNTY));
+applyevent(EVENTS.PILGRIMS_BOUNTY, itemrecipe("Recipe: Spice Bread Stuffing", 44860, 62050));
+applyevent(EVENTS.PILGRIMS_BOUNTY, itemrecipe("Recipe: Spice Bread Stuffing", 46803, 66038));
 itemrecipe("Recipe: Spiced Mammoth Treats", 43034, 57440, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Spiced Worm Burger", 43020, 45557, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Spicy Blue Nettlefish", 43025, 45571, WRATH_PHASE_ONE);

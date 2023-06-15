@@ -4202,10 +4202,10 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		cat(451, {	-- Cards
 			r(192854),	-- Prophecy Tarot [Rank 1]
 			r(192855),	-- Prophecy Tarot [Rank 2]
-			r(192856, {["u"]=DARKMOON_FAIRE}),	-- Prophecy Tarot [Rank 3]
+			applyevent(EVENTS.DARKMOON_FAIRE, r(192856)),	-- Prophecy Tarot [Rank 3]
 			r(191659),	-- Darkmoon Card of the Legion [Rank 1]
-			r(192859, {["u"]=DARKMOON_FAIRE}),	-- Darkmoon Card of the Legion [Rank 2]
-			r(192890, {["u"]=DARKMOON_FAIRE}),	-- Darkmoon Card of the Legion [Rank 3]
+			applyevent(EVENTS.DARKMOON_FAIRE, r(192859)),	-- Darkmoon Card of the Legion [Rank 2]
+			applyevent(EVENTS.DARKMOON_FAIRE, r(192890)),	-- Darkmoon Card of the Legion [Rank 3]
 		}),
 		cat(492, {	-- Mass Milling
 			r(209658),	-- Mass Mill Aethril

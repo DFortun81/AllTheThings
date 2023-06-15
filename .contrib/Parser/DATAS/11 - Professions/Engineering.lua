@@ -336,15 +336,15 @@ profession(ENGINEERING, {
 					["name"] = "Blue Firework",
 					["recipeID"] = 23067,
 				},
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Blue Rocket Cluster",
 					["recipeID"] = 26423,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Cluster Launcher",
 					["recipeID"] = 26443,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Firework Launcher",
 					["recipeID"] = 26442,
 				}),
@@ -352,31 +352,31 @@ profession(ENGINEERING, {
 					["name"] = "Green Firework",
 					["recipeID"] = 23068,
 				},
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Green Rocket Cluster",
 					["recipeID"] = 26424,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Blue Rocket",
 					["recipeID"] = 26420,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Blue Rocket Cluster",
 					["recipeID"] = 26426,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Green Rocket",
 					["recipeID"] = 26421,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Green Rocket Cluster",
 					["recipeID"] = 26427,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Red Rocket",
 					["recipeID"] = 26422,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Red Rocket Cluster",
 					["recipeID"] = 26428,
 				}),
@@ -384,19 +384,19 @@ profession(ENGINEERING, {
 					["name"] = "Red Firework",
 					["recipeID"] = 23066,
 				},
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Red Rocket Cluster",
 					["recipeID"] = 26425,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Small Blue Rocket",
 					["recipeID"] = 26416,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Small Green Rocket",
 					["recipeID"] = 26417,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Small Red Rocket",
 					["recipeID"] = 26418,
 				}),
@@ -3521,7 +3521,7 @@ itemrecipe("Schematic: Master Engineer's Goggles", 16053, 19825);
 itemrecipe("Schematic: Arcanite Dragonling", 16054, 19830);
 itemrecipe("Schematic: Arcane Bomb", 16055, 19831);
 itemrecipe("Schematic: Flawless Arcanite Rifle", 16056, 19833);
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Schematic: Snowmaster 9000", 17720, 21940));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Schematic: Snowmaster 9000", 17720, 21940));
 itemrecipe("Schematic: Field Repair Bot 74A", 18235, 22704);
 itemrecipe("Schematic: Biznicks 247x128 Accurascope", 18290, 22793);
 itemrecipe("Schematic: Force Reactive Disk", 18291, 22797);
@@ -3539,21 +3539,21 @@ itemrecipe("Schematic: Ultra-Flash Shadow Reflector", 18658, 23082);
 itemrecipe("Schematic: Snake Burst Firework", 19027, 23507);
 itemrecipe("Schematic: Bloodvine Goggles", 20000, 24356, PHASE_FOUR);
 itemrecipe("Schematic: Bloodvine Lens", 20001, 24357, PHASE_FOUR);
-applyholiday(LUNAR_FESTIVAL,{
-	itemrecipe("Schematic: Small Blue Rocket", 21724, 26416, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Small Green Rocket", 21725, 26417, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Small Red Rocket", 21726, 26418, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Blue Rocket", 21727, 26420, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Green Rocket", 21728, 26421, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Red Rocket", 21729, 26422, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Blue Rocket Cluster", 21730, 26423, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Green Rocket Cluster", 21731, 26424, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Red Rocket Cluster", 21732, 26425, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Blue Rocket Cluster", 21733, 26426, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Green Rocket Cluster", 21734, 26427, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Red Rocket Cluster", 21735, 26428, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Cluster Launcher", 21737, 26443, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Firework Launcher", 21738, 26442, LUNAR_FESTIVAL),
+applyevent(EVENTS.LUNAR_FESTIVAL,{
+	itemrecipe("Schematic: Small Blue Rocket", 21724, 26416),
+	itemrecipe("Schematic: Small Green Rocket", 21725, 26417),
+	itemrecipe("Schematic: Small Red Rocket", 21726, 26418),
+	itemrecipe("Schematic: Large Blue Rocket", 21727, 26420),
+	itemrecipe("Schematic: Large Green Rocket", 21728, 26421),
+	itemrecipe("Schematic: Large Red Rocket", 21729, 26422),
+	itemrecipe("Schematic: Blue Rocket Cluster", 21730, 26423),
+	itemrecipe("Schematic: Green Rocket Cluster", 21731, 26424),
+	itemrecipe("Schematic: Red Rocket Cluster", 21732, 26425),
+	itemrecipe("Schematic: Large Blue Rocket Cluster", 21733, 26426),
+	itemrecipe("Schematic: Large Green Rocket Cluster", 21734, 26427),
+	itemrecipe("Schematic: Large Red Rocket Cluster", 21735, 26428),
+	itemrecipe("Schematic: Cluster Launcher", 21737, 26443),
+	itemrecipe("Schematic: Firework Launcher", 21738, 26442),
 });
 
 -- #if AFTER TBC
@@ -3603,8 +3603,8 @@ itemrecipe("Schematic: Rocket Boots Xtreme Lite", 35582, 46697, TBC_PHASE_ONE);
 
 -- #if AFTER WRATH
 -- Wrath Recipes
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Schematic: Cluster Launcher", 44918, 26443, LUNAR_FESTIVAL));
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Schematic: Firework Launcher", 44919, 26442, LUNAR_FESTIVAL));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Schematic: Cluster Launcher", 44918, 26443));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Schematic: Firework Launcher", 44919, 26442));
 itemrecipe("Schematic: Jeeves", 49050, 68067, WRATH_PHASE_ONE);
 itemrecipe("Schematic: Mechano-hog", 44502, 60866, WRATH_PHASE_ONE);
 itemrecipe("Schematic: Mekgineer's Chopper", 44503, 60867, WRATH_PHASE_ONE);

@@ -6,7 +6,7 @@ BREWFEST_HEADER = createHeader({
 	readable = "Brewfest",
 	constant = "BREWFEST_HEADER",
 	icon = [[~_.asset("Holiday_brewfest")]],
-	eventID = 372,
+	eventID = EVENTS.BREWFEST,
 	text = {
 		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(162))]],
@@ -46,7 +46,7 @@ local BREWFEST_RIDING_RAMS_ONUPDATE = [[function(t)
 -- #else
 		t.description = "You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";
 		for i,item in ipairs(t.g) do
-			item.u = ]] .. BREWFEST .. [[;
+			item.u = ]] .. EVENTS.BREWFEST .. [[;
 		end
 -- #endif
 	else
@@ -56,7 +56,7 @@ local BREWFEST_RIDING_RAMS_ONUPDATE = [[function(t)
 		t.description = "You completed the 'Brewfest Riding Rams' quest and are now eligible to buy the rams!";
 -- #endif
 		for i,item in ipairs(t.g) do
-			item.u = ]] .. BREWFEST .. [[;
+			item.u = ]] .. EVENTS.BREWFEST .. [[;
 		end
 	end
 end]];
@@ -153,10 +153,10 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	end
 end]];
 
-root(ROOTS.Holidays, applyholiday(BREWFEST, n(BREWFEST_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	-- #if BEFORE WRATH
 	["description"] = "Start: 09/20 at 10:00 AM\nEnd: 10/06 at 10:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. BREWFEST .. [[, 9, 20, 10, 4); end]],
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. EVENTS.BREWFEST .. [[, 9, 20, 10, 4); end]],
 	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {

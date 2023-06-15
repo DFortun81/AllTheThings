@@ -1648,6 +1648,7 @@ app.MergeSkipFields = {
 	["modItemID"] = true,
 	["rawlink"] = true,
 	-- 1 -> only when cloning
+	["e"] = 1,
 	["u"] = 1,
 	["pvp"] = 1,
 	["pb"] = 1,
@@ -1656,6 +1657,19 @@ app.MergeSkipFields = {
 };
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
 app.SourceSpecificFields = {
+-- Returns the 'most obtainable' event value from the provided set of event values
+	["e"] = function(...)
+		-- print("GetMostObtainableValue:")
+		-- app.PrintTable(vals)
+		local e;
+		local vals = select("#", ...);
+		for i=1,vals do
+			e = select(i, ...);
+			-- missing e value means NOT requiring an event
+			if not e then return; end
+		end
+		return e;
+	end,
 -- Returns the 'most obtainable' unobtainable value from the provided set of unobtainable values
 	["u"] = function(...)
 		-- print("GetMostObtainableValue:")
@@ -1986,6 +2000,8 @@ local function VerifySourceID(item)
 	if not item.s or item.s == 0 then return; end
 	-- unobtainable item, don't change the sourceID
 	if item.u then return true; end
+	-- seasonal item, don't change the sourceID
+	if item.e then return true; end
 	local sourceInfo = C_TransmogCollection_GetSourceInfo(item.s);
 	-- no source info or no item for the source
 	-- ignore this, maybe blizz removed a sourceID that we tracked in the past...?
@@ -2061,28 +2077,30 @@ app.IsComplete = function(o)
 end
 app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 40;
-local function GetUnobtainableTexture(groupORu)
-	-- old reasons are set to 0, so use 1 instead
-	-- if unobtainable stuff changes again, this logic may need to adjust
-	local isTable = type(groupORu) == "table";
-	local u = isTable and groupORu.u or groupORu;
-	-- non-unobtainable group
-	if not u then return; end
-	-- non-NYI item or spell which is BoE and not a holiday (u<1000), use green dot
-	if isTable and (groupORu.itemID or groupORu.spellID) and u > 1 and u < 1000 and not app.IsBoP(groupORu) then
-		u = 3;
-	else
-		local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
-		if record then
-			u = record[1];
+local function GetUnobtainableTexture(group)
+	if type(group) ~= "table" then
+		-- This function shouldn't be used with only u anymore!
+		app.print("Invalid use of GetUnobtainableTexture", group);
+		return;
+	end
+	
+	-- Determine the texture color, default is green for events.
+	local filter, u = 4, group.u;
+	if u then
+		if (group.itemID or group.spellID) and u > 1 and u < 1000 and not app.IsBoP(group) then
+			filter = 3;
 		else
-			-- otherwise it's an invalid unobtainable filter
-			app.print("Invalid Unobtainable Filter:",u);
-			return;
+			local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
+			if record then
+				filter = record[1] or 0;
+			else
+				-- otherwise it's an invalid unobtainable filter
+				app.print("Invalid Unobtainable Filter:",u);
+				return;
+			end
 		end
 	end
-	-- found an unobtainable record, so grab the texture index [1]
-	return L["UNOBTAINABLE_ITEM_TEXTURES"][u or 0];
+	return L["UNOBTAINABLE_ITEM_TEXTURES"][filter];
 end
 -- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
 app.GetIndicatorIcon = function(group)
@@ -2096,7 +2114,7 @@ app.GetIndicatorIcon = function(group)
 		local asset = group.indicatorIcon;
 		if asset then
 			return app.asset(asset);
-		elseif group.u then
+		elseif group.e or group.u then
 			asset = GetUnobtainableTexture(group);
 			if asset then
 				return asset;
@@ -3646,7 +3664,7 @@ local SubroutineCache = {
 		push(finalized, searchResults, o, "push", "headerID", app.HeaderConstants.COMMON_BOSS_DROPS);	-- Push into 'Common Boss Drops' header
 		finalize(finalized, searchResults);	-- capture current results
 		select(finalized, searchResults, o, "select", "instanceID", instanceID);	-- select this instance
-		where(finalized, searchResults, o, "where", "u", 1016);	-- only the instance which is marked as TIMEWALKING
+		where(finalized, searchResults, o, "where", "e", 1271);	-- only the instance which is marked as TIMEWALKING
 		pop(finalized, searchResults);	-- pop the instance header
 	end,
 	-- Wod Dungeon
@@ -3662,7 +3680,7 @@ local SubroutineCache = {
 	["common_wod_dungeon_drop_tw"] = function(finalized, searchResults, o, cmd, difficultyID, headerID)
 		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
 		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROP);	-- Common Dungeon Drops
-		where(finalized, searchResults, o, "where", "u", 1016);	-- only the Common Dungeon Drops which is marked as TIMEWALKING
+		where(finalized, searchResults, o, "where", "e", 1271);	-- only the Common Dungeon Drops which is marked as TIMEWALKING
 		pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
 		where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
 	end,
@@ -4411,7 +4429,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												link = RETRIEVING_DATA;
 												working = true;
 											end
-											if sourceGroup.u then
+											if sourceGroup.e or sourceGroup.u then
 												local texture = GetUnobtainableTexture(sourceGroup);
 												if texture then
 													text = "|T" .. texture .. ":0|t";
@@ -4434,7 +4452,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												if otherATTSource.u then
+												if otherATTSource.e or otherATTSource.u then
 													local texture = GetUnobtainableTexture(otherATTSource);
 													if texture then
 														text = "|T" .. texture .. ":0|t";
@@ -4471,7 +4489,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												link = RETRIEVING_DATA;
 												working = true;
 											end
-											if sourceGroup.u then
+											if sourceGroup.e or sourceGroup.u then
 												local texture = GetUnobtainableTexture(sourceGroup);
 												if texture then
 													text = "|T" .. texture .. ":0|t";
@@ -4493,7 +4511,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												link = RETRIEVING_DATA;
 												working = true;
 											end
-											if otherATTSource.u then
+											if otherATTSource.e or otherATTSource.u then
 												local texture = GetUnobtainableTexture(otherATTSource);
 												if texture then
 													text = "|T" .. texture .. ":0|t";
@@ -4662,7 +4680,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						tinsert(temp, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
 					else
 						-- check if this needs an unobtainable icon even though it's being shown
-						uTexture = GetUnobtainableTexture(j.u or app.RecursiveFirstParentWithField(parent, "u"));
+						uTexture = GetUnobtainableTexture(
+							(j.e and j) or app.RecursiveFirstParentWithField(parent, "e")
+							or (j.u and j) or app.RecursiveFirstParentWithField(parent, "u"));
 						-- add the texture to the source line
 						if uTexture then
 							text = text .. " |T" .. uTexture .. ":0|t";
@@ -4932,6 +4952,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if topLevelSearch then tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
 				end
 			end
+		end
+		if group.e then
+			local reason = app.GetEventTooltipNoteForGroup(group);
+			if reason then tinsert(info, { left = reason, wrap = true }); end
 		end
 		-- an item used for a faction which is repeatable
 		if group.itemID and group.factionID and group.repeatable then
@@ -7755,6 +7779,7 @@ local HeaderCloneFields = {
 	["customCollect"] = app.ReturnNil,
 	["requireSkill"] = app.ReturnNil,
 	["u"] = app.ReturnNil,
+	["e"] = app.ReturnNil,
 	["races"] = app.ReturnNil,
 	["r"] = app.ReturnNil,
 	["c"] = app.ReturnNil,
@@ -8585,6 +8610,7 @@ local function TryPopulateQuestRewards(questObject)
 				MergeProperties(questObject, data, true);
 				-- need to exclusively copy cached values for certain fields since normal merge logic will not copy them
 				-- ref: quest 49675/58703
+				if data.e then questObject.e = data.e; end
 				if data.u then questObject.u = data.u; end
 				-- merge in sourced things under this quest object
 				if data.g then
@@ -9035,6 +9061,7 @@ local function GetParentAchievementInfo(t, key)
 		t.races = achievement.races;
 		t.r = achievement.r;
 		t.u = achievement.u;
+		t.e = achievement.e;
 		t._cached = true;
 		return rawget(t, key);
 	end
@@ -9155,6 +9182,9 @@ local criteriaFields = {
 	end,
 	["r"] = function(t)
 		return GetParentAchievementInfo(t, "r");
+	end,
+	["e"] = function(t)
+		return GetParentAchievementInfo(t, "e");
 	end,
 	["u"] = function(t)
 		return GetParentAchievementInfo(t, "u");
@@ -10283,9 +10313,9 @@ local fields = {
 			end
 		end
 	end,
-	["u"] = function(t)
+	["e"] = function(t)
 		if t.difficultyID == 24 or t.difficultyID == 33 then
-			return 1016;
+			return 1271;	-- TIMEWALKING event constant
 		end
 	end,
 	["description"] = function(t)
@@ -11946,6 +11976,7 @@ fields.g = function(t)
 		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
 			t.g = { CreateHeirloomUnlock({
 				heirloomUnlockID = t.itemID,
+				e = t.e,
 				u = t.u
 			}) };
 			return t.g;
@@ -12007,7 +12038,7 @@ app.CacheHeirlooms = function()
 		item.g = {};
 	end
 	-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
-	local heirloom, upgrades, isWeapon, u;
+	local heirloom, upgrades, isWeapon, u, e;
 	local Search, ClonedHeader = app.SearchForObject, app.CreateWrapHeader;
 	local uniques = {};
 	for _,itemID in ipairs(heirloomIDs) do
@@ -12019,6 +12050,7 @@ app.CacheHeirlooms = function()
 				if upgrades then
 					isWeapon = heirloom.isWeapon;
 					u = heirloom.u;
+					e = heirloom.e;
 
 					local heirloomHeader;
 					for i=1,upgrades,1 do
@@ -12029,6 +12061,7 @@ app.CacheHeirlooms = function()
 							level = i,
 							levelMax = upgrades,
 							heirloomLevelID = itemID,
+							e = e,
 							u = u,
 						}) };
 
@@ -13104,11 +13137,60 @@ local function CacheInfo(t, field)
 	if field then return _t[field]; end
 end
 
+-- Header Lib
+local headerFields = {
+	["key"] = function(t)
+		return "headerID";
+	end,
+	["name"] = function(t)
+		return L["HEADER_NAMES"][t.headerID];
+	end,
+	["icon"] = function(t)
+		return L["HEADER_ICONS"][t.headerID];
+	end,
+	["description"] = function(t)
+		return L["HEADER_DESCRIPTIONS"][t.headerID];
+	end,
+	["lore"] = function(t)
+		return L["HEADER_LORE"][t.headerID];
+	end,
+	["nameAsAchievement"] = function(t)
+		return L["HEADER_NAMES"][t.headerID] or select(2, GetAchievementInfo(t.achievementID));
+	end,
+	["iconAsAchievement"] = function(t)
+		return L["HEADER_ICONS"][t.headerID] or select(10, GetAchievementInfo(t.achievementID));
+	end,
+	["linkAsAchievement"] = function(t)
+		return GetAchievementLink(t.achievementID);
+	end,
+	["savedAsQuest"] = function(t)
+		return IsQuestFlaggedCompleted(t.questID);
+	end,
+	["trackableAsQuest"] = app.ReturnTrue,
+};
+app.BaseHeader = app.BaseObjectFields(headerFields, "BaseHeader");
+local fields = RawCloneData(headerFields);
+fields.name = headerFields.nameAsAchievement;
+fields.icon = headerFields.iconAsAchievement;
+--fields.link = headerFields.linkAsAchievement;
+app.BaseHeaderWithAchievement = app.BaseObjectFields(fields, "BaseHeaderWithAchievement");
+local fields = RawCloneData(headerFields);
+fields.saved = headerFields.savedAsQuest;
+fields.trackable = headerFields.trackableAsQuest;
+app.BaseHeaderWithQuest = app.BaseObjectFields(fields, "BaseHeaderWithQuest");
+local fields = RawCloneData(headerFields);
+fields.name = headerFields.nameAsAchievement;
+fields.icon = headerFields.iconAsAchievement;
+--fields.link = headerFields.linkAsAchievement;
+fields.saved = headerFields.savedAsQuest;
+fields.trackable = headerFields.trackableAsQuest;
+app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
+
 -- Event Lib (using Headers!)
 do
 local remappedEventToMapID = {
 	[374] = 1429,	-- Elwynn Forest
-	[375] = 1456,	-- Thunder Bluff
+	[375] = 1412,	-- Mulgore
 	[376] = 1952,	-- Terrokar Forest
 };
 -- Check to make sure these APIs are available on the environment.
@@ -13121,18 +13203,18 @@ if C_DateAndTime and C_Calendar then
 			-- If our cache is still leased, then simply return it.
 			return cache;
 		end
-
+		
 		-- Create a new cache with a One Week Lease
 		local anyEvents = false;
 		cache = {};
 		cache.lease = now + 604800;
-
-		-- Go back 2 months and then forward to the next year
+		
+		-- Go back 6 months and then forward to the next year
 		local date = C_DateAndTime.GetCurrentCalendarTime();
 		C_Calendar.SetAbsMonth(date.month, date.year);
-		C_Calendar.SetMonth(-2);
-
-		for offset=-2,12,1 do
+		C_Calendar.SetMonth(-6);
+		
+		for offset=-6,12,1 do
 			local monthInfo = C_Calendar.GetMonthInfo(0);
 			for day=1,monthInfo.numDays,1 do
 				local numEvents = C_Calendar.GetNumDayEvents(0, day);
@@ -13184,7 +13266,7 @@ if C_DateAndTime and C_Calendar then
 			end
 			C_Calendar.SetMonth(1);
 		end
-
+		
 		-- If there were any events, cache it!
 		if anyEvents then SetDataMember("EventCache", cache); end
 		C_Calendar.SetAbsMonth(date.month, date.year);
@@ -13194,16 +13276,78 @@ else
 	-- Not available, return an empty object!
 	app.GetEventCache = function() return {}; end
 end
-
-
 local function GetEventTimeString(d)
 	if d then
-		return format("%s, %s %02d, %d at %02d:%02d",
+		return format("%s, %s %02d, %d at %02d:%02d", 
 			CALENDAR_WEEKDAY_NAMES[d.weekday],
 			CALENDAR_FULLDATE_MONTH_NAMES[d.month],
 			d.monthDay, d.year, d.hour, d.minute );
 	end
 	return "??";
+end
+local UpcomingEventLeeway = 604800;	-- 86400, currently set to a week. 86400 is a day.
+local EventInformation = setmetatable({}, { __index = function(t, id)
+	local info = app.GetEventCache()[id];
+	if info and info.times then
+		rawset(t, id, info);
+		return info;
+	end
+	return {};
+end });
+local NextEventSchedule = setmetatable({}, { __index = function(t, id)
+	local info = EventInformation[id];
+	if info then
+		local times = info.times;
+		if times and #times > 0 then
+			local now = C_DateAndTime.GetServerTimeLocal();
+			local lastData;
+			for i,data in ipairs(times) do
+				lastData = data;
+				if now < data["end"] then
+					-- If the event is within the leeway, mark it active
+					if now > (data["start"] - UpcomingEventLeeway) then
+						rawset(app.ActiveEvents, id, true);
+					end
+					break;
+				end
+			end
+			rawset(t, id, lastData);
+			return lastData;
+		end
+	end
+end });
+app.ActiveEvents = setmetatable({}, { __index = function(t, id)
+	local nextEvent = NextEventSchedule[id];
+	if nextEvent then
+		-- If the event is within the leeway, mark it active
+		local now = C_DateAndTime.GetServerTimeLocal();
+		if now < nextEvent["end"] and now > (nextEvent["start"] - UpcomingEventLeeway) then
+			rawset(t, id, true);
+			return true;
+		end
+	end
+end });
+app.GetEventName = function(e)
+	local info = app.GetEventInformation(e);
+	if info then
+		local name = info.name;
+		if not name then
+			local headerID;
+			name = "Event #" .. e;
+			for id,eventID in pairs(L.HEADER_EVENTS) do
+				if e == eventID then
+					name = L.HEADER_NAMES[id];
+					break;
+				end
+			end
+			info.name = name;
+		end
+		return name;
+	end
+	return "Event #" .. e;
+end
+app.GetEventTooltipNoteForGroup = function(group)
+	return L["EVENT_TOOLTIPS"][group.e] or ("|CFF00FFDEThis requires the " .. app.GetEventName(group.e) .. " event to be Active.|r");
 end
 app.GetEventTimeStrings = function(nextEvent)
 	if nextEvent then
@@ -13222,111 +13366,44 @@ app.GetEventTimeStrings = function(nextEvent)
 		return schedule;
 	end
 end
+app.GetEventInformation = function(eventID)
+	return EventInformation[eventID];
+end;
+app.SetUpcomingEventLeeway = function(leeway)
+	UpcomingEventLeeway = leeway;
+	wipe(app.ActiveEvents);
+end;
+
+local texcoordForEvents = { 0.0, 0.7109375, 0.0, 0.7109375 };
+local fields = RawCloneData(headerFields);
+fields.name = function(t)
+	return L["HEADER_NAMES"][t.headerID] or t.eventInfo.name;
+end;
+fields.icon = function(t)
+	return L["HEADER_ICONS"][t.headerID] or t.eventInfo.icon;
+end;
+fields.texcoord = function(t)
+	if t.icon == t.eventInfo.icon then
+		return texcoordForEvents;
+	end
+end;
+fields.eventID = function(t)
+	local eventID = L.HEADER_EVENTS[t.headerID];
+	if eventID then
+		t.eventID = eventID;
+		return eventID;
+	end
+end;
+fields.eventInfo = function(t)
+	return EventInformation[t.eventID];
+end;
+fields.nextEvent = function(t)
+	return NextEventSchedule[t.eventID];
+end;
+app.BaseHeaderWithEvent = app.BaseObjectFields(fields, "BaseHeaderWithEvent");
 end
 
--- Header Lib
-local texcoordForEvents = { 0.0, 0.7109375, 0.0, 0.7109375 };
-local headerFields = {
-	["key"] = function(t)
-		return "headerID";
-	end,
-	["name"] = function(t)
-		return L["HEADER_NAMES"][t.headerID];
-	end,
-	["icon"] = function(t)
-		return L["HEADER_ICONS"][t.headerID];
-	end,
-	["description"] = function(t)
-		return L["HEADER_DESCRIPTIONS"][t.headerID];
-	end,
-	["lore"] = function(t)
-		return L["HEADER_LORE"][t.headerID];
-	end,
-	["nameAsAchievement"] = function(t)
-		return L["HEADER_NAMES"][t.headerID] or select(2, GetAchievementInfo(t.achievementID));
-	end,
-	["iconAsAchievement"] = function(t)
-		return L["HEADER_ICONS"][t.headerID] or select(10, GetAchievementInfo(t.achievementID));
-	end,
-	["linkAsAchievement"] = function(t)
-		return GetAchievementLink(t.achievementID);
-	end,
-	["nameAsEvent"] = function(t)
-		return L["HEADER_NAMES"][t.headerID] or t.eventInfo.name;
-	end,
-	["iconAsEvent"] = function(t)
-		return L["HEADER_ICONS"][t.headerID] or t.eventInfo.icon;
-	end,
-	["texcoordAsEvent"] = function(t)
-		if t.icon == t.eventInfo.icon then
-			return texcoordForEvents;
-		end
-	end,
-	["eventIDAsEvent"] = function(t)
-		local eventID = L.HEADER_EVENTS[t.headerID];
-		if eventID then
-			t.eventID = eventID;
-			return eventID;
-		end
-	end,
-	["eventInfoAsEvent"] = function(t)
-		local info = app.GetEventCache()[t.eventID];
-		if info and info.times then
-			t.eventInfo = info;
-			return info;
-		end
-		return {};
-	end,
-	["nextEventAsEvent"] = function(t)
-		local info = t.eventInfo;
-		if info then
-			local times = info.times;
-			if times and #times > 0 then
-				local now = C_DateAndTime.GetServerTimeLocal();
-				local lastData;
-				for i,data in ipairs(times) do
-					lastData = data;
-					if now < data["end"] then
-						break;
-					end
-				end
-				t.nextEvent = lastData;
-				return lastData;
-			end
-		end
-	end,
-	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompleted(t.questID);
-	end,
-	["trackableAsQuest"] = app.ReturnTrue,
-};
-app.BaseHeader = app.BaseObjectFields(headerFields, "BaseHeader");
 
-local fields = RawCloneData(headerFields);
-fields.name = headerFields.nameAsEvent;
-fields.icon = headerFields.iconAsEvent;
-fields.texcoord = headerFields.texcoordAsEvent;
-fields.eventID = headerFields.eventIDAsEvent;
-fields.eventInfo = headerFields.eventInfoAsEvent;
-fields.nextEvent = headerFields.nextEventAsEvent;
-app.BaseHeaderWithEvent = app.BaseObjectFields(fields, "BaseHeaderWithEvent");
-
-local fields = RawCloneData(headerFields);
-fields.name = headerFields.nameAsAchievement;
-fields.icon = headerFields.iconAsAchievement;
---fields.link = headerFields.linkAsAchievement;
-app.BaseHeaderWithAchievement = app.BaseObjectFields(fields, "BaseHeaderWithAchievement");
-local fields = RawCloneData(headerFields);
-fields.saved = headerFields.savedAsQuest;
-fields.trackable = headerFields.trackableAsQuest;
-app.BaseHeaderWithQuest = app.BaseObjectFields(fields, "BaseHeaderWithQuest");
-local fields = RawCloneData(headerFields);
-fields.name = headerFields.nameAsAchievement;
-fields.icon = headerFields.iconAsAchievement;
---fields.link = headerFields.linkAsAchievement;
-fields.saved = headerFields.savedAsQuest;
-fields.trackable = headerFields.trackableAsQuest;
-app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
 -- Automatic Type Header
 local fields = RawCloneData(headerFields, {
 	["headerCode"] = function(t)
@@ -14231,7 +14308,8 @@ end
 -- Represents filters which should be applied during Updates to groups
 local function FilterItemClass(item)
 	-- check Account trait filters
-	if app.SeasonalOrUnobtainableFilter(item)
+	if app.UnobtainableFilter(item)
+		and app.RequireEventFilter(item)
 		and app.PvPFilter(item)
 		and app.PetBattleFilter(item)
 		and app.RequireFactionFilter(item) then
@@ -14249,7 +14327,8 @@ end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
 local function FilterItemClass_IgnoreBoEFilter(item)
 	-- check Account trait filters
-	if app.SeasonalOrUnobtainableFilter(item)
+	if app.UnobtainableFilter(item)
+		and app.RequireEventFilter(item)
 		and app.PvPFilter(item)
 		and app.PetBattleFilter(item)
 		and app.RequireFactionFilter(item) then
@@ -14304,14 +14383,21 @@ local function FilterItemClass_RequireRacesCurrentFaction(item)
 		return true;
 	end
 end
-local function FilterItemClass_SeasonalOrUnobtainableItem(item)
-	return app.Settings:GetSeasonalOrUnobtainable(item.u);
+local function FilterItemClass_UnobtainableItem(item)
+	return app.Settings:GetUnobtainable(item.u);
 end
 local function ItemIsInGame(item)
 	return not item.u or item.u > 2;
 end
 local function FilterItemClass_RequireBinding(item)
 	return not item.itemID or IsBoP(item);
+end
+function app.FilterItemClass_RequireEvent(item)
+	if item.e and not app.ActiveEvents[item.e] then
+		return false;
+	else
+		return true;
+	end
 end
 local function FilterItemClass_PvP(item)
 	if item.pvp then
@@ -14608,7 +14694,7 @@ app.FilterItemClass_PetBattles = FilterItemClass_PetBattles;
 app.FilterItemClass_PvP = FilterItemClass_PvP;
 app.FilterItemClass_RequireBinding = FilterItemClass_RequireBinding;
 app.ItemIsInGame = ItemIsInGame;
-app.FilterItemClass_SeasonalOrUnobtainableItem = FilterItemClass_SeasonalOrUnobtainableItem;
+app.FilterItemClass_UnobtainableItem = FilterItemClass_UnobtainableItem;
 app.FilterItemClass_RequireRacesCurrentFaction = FilterItemClass_RequireRacesCurrentFaction;
 app.FilterItemClass_RequireRaces = FilterItemClass_RequireRaces;
 app.FilterItemClass_RequireItemFilter = FilterItemClass_RequireItemFilter;
@@ -14636,7 +14722,8 @@ app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.PvPFilter = app.NoFilter;
 app.PetBattleFilter = app.NoFilter;
-app.SeasonalOrUnobtainableFilter = app.NoFilter;
+app.UnobtainableFilter = app.NoFilter;
+app.RequireEventFilter = app.FilterItemClass_RequireEvent;
 app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
 app.RequiredSkillFilter = app.NoFilter;
@@ -14724,7 +14811,7 @@ local function RecursiveDirectGroupRequirementsFilter(group)
 end
 app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter;
 local function RecursiveUnobtainableFilter(group)
-	if app.SeasonalOrUnobtainableFilter(group) then
+	if app.UnobtainableFilter(group) and app.RequireEventFilter(group) then
 		if group.parent then return RecursiveUnobtainableFilter(group.parent); end
 		return true;
 	end
@@ -17062,6 +17149,11 @@ RowOnEnter = function (self)
 			if reference.u then
 				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
 			end
+			-- Event Data
+			if reference.e then
+				local reason = app.GetEventTooltipNoteForGroup(reference);
+				if reason then GameTooltip:AddLine(reason, 1, 1, 1, true); end
+			end
 			-- Pet Battles
 			if reference.pb then
 				GameTooltip:AddLine(L["REQUIRES_PETBATTLES"], 1, 1, 1, 1, true);
@@ -18006,6 +18098,7 @@ function app:GetDataCache()
 			-- if the Dynamic Value category itself is not collectible, then make sure it isn't filtered
 			if not cat.collectible then
 				cat.u = nil;
+				cat.e = nil;
 			end
 			NestObject(dynamicCategory, DynamicCategory(cat, field, id));
 		end
@@ -19547,6 +19640,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				header.minReputation = nil;
 				header.maxReputation = nil;
 				header.u = nil;
+				header.e = nil;
 				header.races = nil;
 				header.r = nil;
 				header.c = nil;
@@ -19769,6 +19863,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- end
 
 				header.u = nil;
+				header.e = nil;
 				header.mapID = self.mapID;
 				header.visible = true;
 				setmetatable(header,

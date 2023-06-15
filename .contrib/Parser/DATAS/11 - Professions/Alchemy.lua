@@ -407,7 +407,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["name"] = "Elixir of Fortitude",
 					["recipeID"] = 3450
 				},
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Elixir of Frost Power",
 					["recipeID"] = 21923
 				}),
@@ -3655,7 +3655,7 @@ itemrecipe("Recipe: Flask of Supreme Power", 13521, 17637);
 itemrecipe("Recipe: Flask of Chromatic Resistance", 13522, 17638);
 itemrecipe("Recipe: Frost Oil", 14634, 3454);
 itemrecipe("Recipe: Major Rejuvenation Potion", 18257, 22732);
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Elixir of Frost Power", 17709, 21923, FEAST_OF_WINTER_VEIL));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Elixir of Frost Power", 17709, 21923));
 itemrecipe("Recipe: Mageblood Potion", 20011, 24365, PHASE_FOUR);
 itemrecipe("Recipe: Greater Dreamless Sleep Potion", 20012, 24366, PHASE_FOUR, "removed 4.0.3");
 itemrecipe("Recipe: Living Action Potion", 20013, 24367, PHASE_FOUR);

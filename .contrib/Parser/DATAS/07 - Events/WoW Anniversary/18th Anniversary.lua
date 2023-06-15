@@ -9,7 +9,7 @@ WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 		en = [[~select(2,GetAchievementInfo(15218))]],
 	},
 });
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDown({ ["u"] = WOW_ANNIVERSARY, },{
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_EIGHTEEN, {
 	ach(15218),	-- WoW's 18th Anniversary
 	n(MAILBOX, {
 		i(187710, {	-- Anniversary Gift
@@ -21,6 +21,6 @@ root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDown({ ["u"] = WOW_ANN
 })));
 
 -- Yearly Anniversary Content -- TODO verify this after most recent anniversary starts
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_EIGHTEEN, {
 	
 })));

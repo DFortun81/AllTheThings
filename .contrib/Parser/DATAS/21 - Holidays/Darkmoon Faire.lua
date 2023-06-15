@@ -6,7 +6,7 @@ DARKMOON_FAIRE_HEADER = createHeader({
 	readable = "Darkmoon Faire",
 	constant = "DARKMOON_FAIRE_HEADER",
 	icon = [[~_.asset("Event_dmf")]],
-	eventID = 479,	-- Darkmoon Island
+	eventID = EVENTS.DARKMOON_FAIRE,	-- Darkmoon Island
 	-- #if BEFORE CATA
 	eventIDs = {
 		374,	-- Elwynn Forest
@@ -18,7 +18,7 @@ DARKMOON_FAIRE_HEADER = createHeader({
 		en = "Darkmoon Faire",
 	},
 });
-root(ROOTS.Holidays, applyholiday(DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, {
 	["maps"] = {
 	-- #if AFTER CATA
 		407,	-- Darkmoon Island

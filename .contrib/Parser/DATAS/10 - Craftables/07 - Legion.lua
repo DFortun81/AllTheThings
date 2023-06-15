@@ -430,7 +430,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 	}),
 	prof(LEATHERWORKING, {
 		filter(COSMETIC, {
-			un(FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
+			applyevent(EVENTS.FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
 		}),
 		filter(LEATHER, {
 			i(128890),	-- Dreadleather Belt

@@ -9,7 +9,7 @@ WOW_ANNIVERSARY_TWELVE = createHeader({
 		en = [[~select(2,GetAchievementInfo(10741))]],
 	},
 });
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_TWELVE, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_TWELVE, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(10741),	-- 12th Anniversary
 	n(MAILBOX, {
 		i(139284, {	-- Anniversary Gift
@@ -32,10 +32,10 @@ root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_TWELVE, bubbleDown({ ["u"] = REMOVED_F
 			["isYearly"] = true,
 		}),
 	}),
-})));
+}))));
 
 -- Yearly Anniversary Content
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_TWELVE, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_TWELVE, {
 	n(QUESTS, {
 		-- Correct answers is in the bottom
 		q(43461, {	-- A Time to Reflect

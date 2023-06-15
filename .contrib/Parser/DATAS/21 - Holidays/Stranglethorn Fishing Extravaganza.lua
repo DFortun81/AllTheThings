@@ -4,7 +4,7 @@
 STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 	readable = "Stranglethorn Fishing Extravaganza",
 	icon = "Interface\\Icons\\inv_misc_fish_06",
-	eventID = 301,	-- Obtained from Wrath Classic
+	eventID = EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA,
 	text = {
 		en = "Stranglethorn Fishing Extravaganza",
 		es = "Gran espectáculo de pesca de Tuercespina",
@@ -24,9 +24,11 @@ local BOOTS_OF_THE_BAY = i(50287, {	-- Boots of the Bay
 local DREAD_PIRATE_RING = i(122529, {	-- Dread Pirate Ring
 	["timeline"] = { "added 6.1.0.19480" },
 });
-root(ROOTS.Holidays, applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER, {
 	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
-	["OnUpdate"] = [[function() _.Settings:CheckWeekDay(]] .. STRANGLETHORN_FISHING_EXTRAVAGANZA .. [[, 1); end]],
+	-- #if BEFORE WRATH
+	["OnUpdate"] = [[function() _.Settings:CheckWeekDay(]] .. EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA .. [[, 1); end]],
+	-- #endif
 	["maps"] = {
 		-- #if AFTER CATA
 		THE_CAPE_OF_STRANGLETHORN,

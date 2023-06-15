@@ -6,7 +6,7 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 	readable = "Lunar Festival",
 	constant = "LUNAR_FESTIVAL_HEADER",
 	icon = [[~_.asset("Holiday_Lunar")]],
-	eventID = 327,
+	eventID = EVENTS.LUNAR_FESTIVAL,
 	text = {
 		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(160))]],
@@ -15,10 +15,10 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 		-- #endif
 	},
 });
-root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, {
 	-- #if BEFORE WRATH
 	["description"] = "Start: 01/20 at 10:00 AM\nEnd: 02/03 at 10:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LUNAR_FESTIVAL .. [[, 1, 20, 2, 3); end]],
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. EVENTS.LUNAR_FESTIVAL .. [[, 1, 20, 2, 3); end]],
 	-- #endif
 	["groups"] = {
 		-- #if AFTER WRATH

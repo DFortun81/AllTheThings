@@ -5,7 +5,7 @@ CHILDRENS_WEEK_HEADER = createHeader({
 	readable = "Children's Week",
 	constant = "CHILDRENS_WEEK_HEADER",
 	icon = [[~_.asset("Holiday_Children")]],
-	eventID = 201,
+	eventID = EVENTS.CHILDRENS_WEEK,
 	text = {
 		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(163))]],
@@ -95,10 +95,10 @@ local WARDEN_OF_THE_GROUPS = {
 	i(23022),	-- Curmudgeon's Payoff
 };
 
-root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
 	-- #if BEFORE WRATH
 	["description"] = "Start: 05/01 at 12:00 AM\nEnd: 05/07 at 11:59 PM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. CHILDRENS_WEEK .. [[, 5, 1, 5, 8); end]],
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. EVENTS.CHILDRENS_WEEK .. [[, 5, 1, 5, 8); end]],
 	-- #endif
 	["groups"] = {
 		-- #if AFTER WRATH
@@ -1622,10 +1622,10 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
 				},
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					applyholiday(CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
+					applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
 						["timeline"] = { "added 4.1.0.13682" },
 					})),
-					applyholiday(CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
+					applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
 						["timeline"] = { "added 4.1.0.13682" },
 					})),
 				},
@@ -1654,10 +1654,10 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
 				["timeline"] = { "added 4.1.0.13682" },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					applyholiday(CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
+					applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
 						["timeline"] = { "added 4.1.0.13682" },
 					})),
-					applyholiday(CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
+					applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
 						["timeline"] = { "added 4.1.0.13682" },
 					})),
 				},

@@ -3822,31 +3822,6 @@ for key,value in pairs({
 do a[key] = value; end
 
 --TODO:
-local a = L.UNOBTAINABLE_ITEM_REASONS;
-for key,value in pairs({
-	-- Seasonal Filters
-		[1000] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "Festa della Birra"},
-		[1001] = {4, "|CFF00FFDEThis requires the Children's Week Holiday to be Active.|r", "Settimana dei Bambini"},
-		[1012] = {4, "|CFF00FFDEThis requires the Darkmoon Faire Holiday to be Active.|r", "Fiera di Lunacupa" },
-		[1002] = {4, "|CFF00FFDEThis requires the Day of the Dead Holiday to be Active.|r", "Giorno dei Morti"},
-		[1003] = {4, "|CFF00FFDEThis requires the Feast of Winter Veil Holiday to be Active.|r", "Vigilia di Grande Inverno"},
-		[1009] = {4, "|CFF00FFDEThis requires the Fireworks Celebration Holiday to be Active.|r", "Celebrazione Pirotecnica" },
-		[1004] = {4, "|CFF00FFDEThis requires the Hallow's End Holiday to be Active.|r", "Veglia delle Ombre"},
-		[1005] = {4, "|CFF00FFDEThis requires the Harvest Festival Holiday to be Active.|r", "Sagra del Raccolto"},
-		[1006] = {4, "|CFF00FFDEThis requires the Love is in the Air Holiday to be Active.|r", "Amore nell'Aria"},
-		[1007] = {4, "|CFF00FFDEThis requires the Lunar Festival Holiday to be Active.|r", "Celebrazione della Luna"},
-		[1014] = {4, "|CFF00FFDEThis requires a Specific Micro Holiday to be Active.|r", "Micro Holiday"},
-		[1008] = {4, "|CFF00FFDEThis requires the Midsummer Fire Festival Holiday to be Active.|r", "Fuochi di Mezza Estate"},
-		[1010] = {4, "|CFF00FFDEThis requires the Noblegarden Holiday to be Active.|r", "Festa di Nobiluova"},
-		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "Ringraziamento del Pellegrino"},
-		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "Giorno dei Pirati"},
-		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "Gara di Pesca a Rovotorto"},
-		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "Viaggio nel Tempo"},
-		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary to be active.|r", "Anniversario di WoW"},
-})
-do a[key] = value; end
-
---TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },

@@ -3870,30 +3870,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.UNOBTAINABLE_ITEM_REASONS;
-for key,value in pairs({
-	-- Seasonal Filters
-		[1000] = {4, "|CFF00FFDEDies benötigt, dass das Braufest aktiv ist.|r", "Braufest"},
-		[1001] = {4, "|CFF00FFDEDies benötigt, dass die Kinderwoche aktiv ist.|r", "Kinderwoche"},
-		[1012] = {4, "|CFF00FFDEDies benötigt, dass der Duneklmond-Jahrmarkt aktiv ist.|r", "Dunkelmond-Jahrmarkt" },
-		[1002] = {4, "|CFF00FFDEDies benötigt, dass der Tag der Toten aktiv ist.|r", "Tag der Toten"},
-		[1003] = {4, "|CFF00FFDEDies benötigt, dass das Winterhauchfest aktiv ist.|r", "Winterhauchfest"},
-		[1009] = {4, "|CFF00FFDEDies benötigt, dass das Feuerwerksfestival aktiv ist.|r", "Feuerwerksfestival" },
-		[1004] = {4, "|CFF00FFDEDies benötigt, dass die Schlotternächte aktiv ist.|r", "Schlotternächte"},
-		[1005] = {4, "|CFF00FFDEDies benötigt, dass das Erntedankfest aktiv ist.|r", "Erntedankfest"},
-		[1006] = {4, "|CFF00FFDEDies benötigt, dass der Liebe liegt in der Luft Feiertag aktiv ist.|r", "Liebe liegt in der Luft"},
-		[1007] = {4, "|CFF00FFDEDies benötigt, dass das Mondfest aktiv ist.|r", "Mondfest"},
-		[1014] = {4, "|CFF00FFDEDies benötigt, dass ein bestimmter Mini-Feiertag aktiv ist.|r", "Micro Holiday"},
-		[1008] = {4, "|CFF00FFDEDies benötigt, dass das Sonnenwendfest aktiv ist.|r", "Sonnenwendfest"},
-		[1010] = {4, "|CFF00FFDEDies benötigt, dass das Nobelgartenfest aktiv ist.|r", "Nobelgartenfest"},
-		[1013] = {4, "|CFF00FFDEDies benötigt, dass das Pilgerfreudenfest aktiv ist.|r", "Pilgerfreudenfest"},
-		[1011] = {4, "|CFF00FFDEDies benötigt, dass der Piratentag aktiv ist.|r", "Piratentag"},
-		[1015] = {4, "|CFF00FFDEDies benötigt, dass der Anglerwettbewerb im Schlingendorntal aktiv ist.|r", "Anglerwettbewerb im Schlingendorntal"},
-		[1016] = {4, "|CFF00FFDEDies benötigt, dass die Zeitwanderung aktiv ist.|r", "Zeitwanderung"},
-		[1017] = {4, "|CFF00FFDEDies benötigt, dass der Geburtstag von WoW aktiv ist.|r", "Geburtstag von WoW"},
-})
-do a[key] = value; end
-
 --TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({

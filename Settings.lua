@@ -136,6 +136,7 @@ local GeneralSettingsBase = {
 		["Thing:Transmog"] = true,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
+		["Show:OnlyActiveEvents"] = true,
 		["Skip:AutoRefresh"] = false,
 		["Show:PetBattles"] = true,
 		["Hide:PvP"] = false,
@@ -148,11 +149,6 @@ local GeneralSettingsBase = {
 	},
 };
 local FilterSettingsBase = {};
-local SeasonalSettingsBase = {
-	__index = {
-		["DoFiltering"] = false,
-	},
-};
 local TooltipSettingsBase = {
 	__index = {
 		["Auto:BountyList"] = false,
@@ -238,10 +234,8 @@ settings.Initialize = function(self)
 		RawSettings = AllTheThingsSettings;
 		if not RawSettings.General then RawSettings.General = {}; end
 		if not RawSettings.Tooltips then RawSettings.Tooltips = {}; end
-		if not RawSettings.Seasonal then RawSettings.Seasonal = {}; end
 		if not RawSettings.Unobtainable then RawSettings.Unobtainable = {}; end
 		setmetatable(RawSettings.General, GeneralSettingsBase);
-		setmetatable(RawSettings.Seasonal, SeasonalSettingsBase);
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
 	end
 
@@ -308,7 +302,6 @@ settings.NewProfile = function(self, key)
 		local raw = {
 			General = {},
 			Tooltips = {},
-			Seasonal = {},
 			Unobtainable = {},
 			Windows = {},
 		};
@@ -332,7 +325,6 @@ settings.CopyProfile = function(self, key, copyKey)
 		if copy then
 			rawcopy(copy.General, raw.General);
 			rawcopy(copy.Tooltips, raw.Tooltips);
-			rawcopy(copy.Seasonal, raw.Seasonal);
 			rawcopy(copy.Unobtainable, raw.Unobtainable);
 			rawcopy(copy.Windows, raw.Windows);
 		end
@@ -380,7 +372,6 @@ settings.ApplyProfile = function()
 			RawSettings = settings:NewProfile(key);
 		end
 		setmetatable(RawSettings.General, GeneralSettingsBase);
-		setmetatable(RawSettings.Seasonal, SeasonalSettingsBase);
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
 
 		-- apply window positions when applying a Profile
@@ -437,11 +428,29 @@ settings.SetWindowFromProfile = function(suffix)
 		end
 	end
 end
-settings.CheckSeasonalDate = function(self, u, startMonth, startDay, endMonth, endDay)
+settings.CheckSeasonalDate = function(self, eventID, startMonth, startDay, endMonth, endDay)
+	local today = date("*t");
+	local now, start, ends = time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0});
+	if startMonth <= endMonth then
+		start = time({day=startDay,month=startMonth,year=today.year,hour=0,min=0,sec=0});
+		ends = time({day=endDay,month=endMonth,year=today.year,hour=0,min=0,sec=0});
+	else
+		local year = today.year;
+		if today.month < startMonth then year = year - 1; end
+		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
+		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
+	end
+	
+	local active = (now >= start and now <= ends);
+	app.ActiveEvents[eventID] = active;
+	
+	-- TODO: If AllTheThings is ever going to support OG Classic in this addon, this statement is untrue currently.
 	app.PrintDebug("CheckSeasonalDate: This should no longer be called")
 end
-settings.CheckWeekDay = function(self, u, weekDay)
-	SeasonalSettingsBase.__index[u] = date("*t").wday == weekDay;
+settings.CheckWeekDay = function(self, eventID, weekDay)
+	app.ActiveEvents[eventID] = date("*t").wday == weekDay;
+	-- TODO: If AllTheThings is ever going to support OG Classic in this addon, this statement is untrue currently.
+	app.PrintDebug("CheckWeekDay: This should no longer be called")
 end
 settings.Get = function(self, setting, container)
 	return RawSettings.General[setting];
@@ -449,9 +458,8 @@ end
 settings.GetValue = function(self, container, setting)
 	return RawSettings[container][setting];
 end
--- Allows verifying both Seasonal and Unobtainable at the same time since they use the same value
-settings.GetSeasonalOrUnobtainable = function(self, u)
-	return not u or RawSettings.Seasonal[u] or RawSettings.Unobtainable[u];
+settings.GetUnobtainable = function(self, u)
+	return not u or RawSettings.Unobtainable[u];
 end
 settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
@@ -609,7 +617,7 @@ settings.NonInsane = function(self)
 	-- Hiding Pet Battles
 	or not self:Get("Show:PetBattles")
 	-- Hiding any Seasonal content
-	or self:GetValue("Seasonal", "DoFiltering")
+	or self:Get("Show:OnlyActiveEvents")
 	-- Non-Account Mode with Covenants filtered
 	or (not self:Get("AccountMode")
 		-- TODO: maybe track custom collect filters through a different Get method for easier logic
@@ -1164,12 +1172,13 @@ settings.UpdateMode = function(self, doRefresh)
 	end
 	if self:Get("DebugMode") then
 		app.GroupFilter = app.NoFilter;
-		app.SeasonalOrUnobtainableFilter = app.NoFilter;
+		app.UnobtainableFilter = app.NoFilter;
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.ItemTypeFilter = app.NoFilter;
 		app.ClassRequirementFilter = app.NoFilter;
 		app.RaceRequirementFilter = app.NoFilter;
 		app.RequiredSkillFilter = app.NoFilter;
+		app.RequireEventFilter = app.NoFilter;
 		app.RequireFactionFilter = app.NoFilter;
 		app.RequireCustomCollectFilter = app.NoFilter;
 		-- Default filter fallback in Debug mode is based on Show Completed toggles so that uncollectible/completed content can still be hidden in Debug if desired
@@ -1185,10 +1194,10 @@ settings.UpdateMode = function(self, doRefresh)
 		app.DefaultGroupFilter = app.Filter;
 		app.DefaultThingFilter = app.Filter;
 		-- specifically hiding something
-		if settings:GetValue("Seasonal", "DoFiltering") or settings:GetValue("Unobtainable", "DoFiltering") then
-			app.SeasonalOrUnobtainableFilter = app.FilterItemClass_SeasonalOrUnobtainableItem;
+		if settings:GetValue("Unobtainable", "DoFiltering") then
+			app.UnobtainableFilter = app.FilterItemClass_UnobtainableItem;
 		else
-			app.SeasonalOrUnobtainableFilter = app.NoFilter;
+			app.UnobtainableFilter = app.NoFilter;
 		end
 		if self:Get("Show:TrackableThings") then
 			app.ShowTrackableThings = app.FilterItemTrackable;
@@ -1222,7 +1231,13 @@ settings.UpdateMode = function(self, doRefresh)
 			settings:SetThingTracking();
 			app.MODE_ACCOUNT = nil;
 		end
-
+		
+		if self:Get("Show:OnlyActiveEvents") then
+			app.RequireEventFilter = app.FilterItemClass_RequireEvent;
+		else
+			app.RequireEventFilter = app.NoFilter;
+		end
+		
 		app.MODE_DEBUG = nil;
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
@@ -2552,197 +2567,20 @@ SeasonalFiltersLabel:SetText(L["SEASONAL_LABEL"]);
 SeasonalFiltersLabel:SetPoint("LEFT", ItemFiltersLabel, "LEFT", 0, 0);
 SeasonalFiltersLabel:SetPoint("TOP", settings.equipfilterdefault, "BOTTOM", 0, -8);
 
--- Stuff to order the Holidays manually
 local unobtainables = L["UNOBTAINABLE_ITEM_REASONS"];
-local holidayOrder = { 1012, 1015, 1016, 1014, 1007, 1006, 1010, 1001, 1008, 1005, 1011, 1000, 1004, 1002, 1017, 1013, 1003 };
-
--- Automatic Holiday Calendar Syncs
-do
--- Acts as a wrapper for the base-Seasonal settings, which will be set based on currently-active calendar events
-settings.AutoSeasonalFilters = setmetatable({}, {
-	__newindex = function(t, key, val)
-		-- app.PrintDebug("ASF-Set",key,val)
-		SeasonalSettingsBase.__index[key] = val;
-	end,
-	__index = function(t, key)
-		-- app.PrintDebug("ASF-Get",key)
-		return SeasonalSettingsBase.__index[key];
-	end
-});
--- Icon = Holiday Filter
-local IconMonthFilterMappings = {
-	-- Holidays
-	[235471] = 1007,	-- Lunar Festival
-	[235462] = 1004,	-- Hallow's End
-	[235465.09] = 1005,	-- Harvest Festival (September)
-	[235465.11] = 1013,	-- Pilgrim's Bounty (November)
-	[235468] = 1006,	-- Love is in the Air
-	[235481] = 1011,	-- Pirate's Day
-	[235442] = 1000,	-- Brewfest
-	[235474] = 1008,	-- Midsummer
-	[235443] = 1001,	-- Children's Week (tested)
-	[235444] = 1001,	-- Children's Week (tested)
-	[235445] = 1001,	-- Children's Week (tested)
-	[307365] = 1002,	-- Day of the Dead
-	[235447] = 1012,	-- Darkmoon Faire (tested)
-	[235448] = 1012,	-- Darkmoon Faire
-	[235477] = 1010,	-- Noblegarden
-	[235485] = 1003,	-- Feast of Winter Veil
-
-	-- Timewalking
-	[1129673] = 1016,	-- Timewalking BC (tested)
-	[1129683] = 1016,	-- Timewalking
-	[1129685] = 1016,	-- Timewalking WotLK (tested)
-	[1129686] = 1016,	-- Timewalking
-	[1304687] = 1016,	-- Timewalking Cata (tested)
-	[1304688] = 1016,	-- Timewalking Cata
-	[1530590] = 1016,	-- Timewalking
-	[1467046] = 1016,	-- Timewalking (tested)
-
-	-- Micro Holidays
-	[1574965] = 1014,	-- Call of the Scarab
-	[1574966] = 1014,	-- Hatching of the Hippogryphs
-	[1671627] = 1014,	-- Great Gnomergan Run
-	[1671628] = 1014,	-- Moonkin Festival
-	[1671631] = 1014,	-- Trial of Style
-	[2827082] = 1014,	-- Free T-Shirt Day
-};
-
-local EventIdFilterMappings = {
-	-- Holidays
-	-- [235471] = 1007,	-- Lunar Festival
-	-- [235462] = 1004,	-- Hallow's End
-	-- [235465.09] = 1005,	-- Harvest Festival (September)
-	-- [235465.11] = 1013,	-- Pilgrim's Bounty (November)
-	-- [235468] = 1006,	-- Love is in the Air
-	-- [235481] = 1011,	-- Pirate's Day
-	-- [235442] = 1000,	-- Brewfest
-	[341] = 1008,	-- Midsummer
-	[201] = 1001,	-- Children's Week
-	-- [307365] = 1002,	-- Day of the Dead
-	[479] = 1012,	-- Darkmoon Faire
-	-- [235448] = 1012,	-- Darkmoon Faire
-	-- [235477] = 1010,	-- Noblegarden
-	-- [235485] = 1003,	-- Feast of Winter Veil
-
-	-- Timewalking
-	-- [1129673] = 1016,	-- Timewalking BC
-	-- [1129685] = 1016,	-- Timewalking WotLK
-	[587] = 1016,	-- Timewalking Cata
-	[643] = 1016,	-- Timewalking MoP
-	[1056] = 1016,	-- Timewalking WoD
-
-	-- Micro Holidays
-	-- [1574965] = 1014,	-- Call of the Scarab
-	-- [1574966] = 1014,	-- Hatching of the Hippogryphs
-	-- [1671627] = 1014,	-- Great Gnomergan Run
-	-- [1671628] = 1014,	-- Moonkin Festival
-	-- [1671631] = 1014,	-- Trial of Style
-	-- [2827082] = 1014,	-- Free T-Shirt Day
-	[642] = 1014,	-- Thousand Boat Bash
-	[62] = 1014,	-- Fireworks Spectacular
-};
-
-local function CheckActiveHolidayFilters(self, event)
-	-- unregister whichever event caused this check
-	-- app.PrintDebug("CheckActiveHolidayFilters",event)
-	settings:UnregisterEvent(event);
-	local currentDate = C_DateAndTime.GetCurrentCalendarTime();
-	local month = currentDate.month;
-	local monthDay = currentDate.monthDay;
-	local events = C_Calendar.GetNumDayEvents(0, monthDay) or 0;
-	for i=1,events do
-		local event = C_Calendar.GetDayEvent(0, monthDay, i);
-		-- TODO: oof maybe account for time of day?
-		-- app.PrintDebug(event.title,event.calendarType,event.iconTexture,event.eventID)
-		if event and event.calendarType == "HOLIDAY" then
-			local icon = event.iconTexture or 0;
-			local filterKey = icon + (month / 100);
-			local eventID = event.eventID;
-			settings.AutoSeasonalFilters[
-				EventIdFilterMappings[eventID or 0] or
-				IconMonthFilterMappings[filterKey] or
-				IconMonthFilterMappings[icon] or
-				-1] = true;
-		end
-	end
-	-- app.PrintDebug("CheckActiveHolidayFilters:Done",event)
-	settings:UpdateMode(1);
-end
-
--- Calendar Data Event
-settings:RegisterEvent("CALENDAR_UPDATE_EVENT_LIST")
-settings:SetScript("OnEvent", CheckActiveHolidayFilters);
-
--- Testing
--- settings.AutoSeasonalFilters[1016] = true;
--- settings.AutoSeasonalFilters[1014] = true;
--- settings.AutoSeasonalFilters[1004] = true;
-
-end -- Automatic Holiday Calendar Syncs
-
-local SeasonalAllCheckBox = child:CreateCheckBox(L["SEASONAL_ALL"],
+local SeasonalAllCheckBox = child:CreateCheckBox("Only Show Active Events",
 	function(self)
-		local anyFiltered = false;
-		for _,v in ipairs(holidayOrder) do
-			if unobtainables[v][1] == 4 then
-				if not settings:GetValue("Seasonal", v) then
-					anyFiltered = true;
-					settings:SetValue("Seasonal", v, nil);
-				end
-			end
-		end
-		self:SetChecked(not anyFiltered);
-		settings:SetValue("Seasonal", "DoFiltering", anyFiltered);
+		self:SetChecked(settings:Get("Show:OnlyActiveEvents"));
 		self:Enable();
 		self:SetAlpha(1);
 	end,
 	function(self)
-		local checked = self:GetChecked() or nil;
-		for _,v in ipairs(holidayOrder) do
-			if unobtainables[v][1] == 4 then
-				settings:SetValue("Seasonal", v, checked);
-			end
-		end
+		settings:Set("Show:OnlyActiveEvents", self:GetChecked());
 		settings:UpdateMode(1);
 	end
 );
 SeasonalAllCheckBox:SetPoint("TOPLEFT", SeasonalFiltersLabel, "BOTTOMLEFT", -2, 0);
-
 local last = SeasonalAllCheckBox;
-local count = 0;
-for _,v in ipairs(holidayOrder) do
-	if unobtainables[v][1] == 4 then
-		local seasonalFilter = child:CreateCheckBox(unobtainables[v][3],
-			function(self)
-				local auto = settings.AutoSeasonalFilters[v];
-				self:SetChecked(auto or settings:GetValue("Seasonal", v));
-				if auto then
-					self:SetAlpha(0.5);
-				else
-					self:SetAlpha(1);
-				end
-				self:Enable();
-				self.Text:SetTextColor(0.678, 0.847, 0.902); --Reinstated Insane color logic
-			end,
-			function(self)
-				settings:SetValue("Seasonal", v, self:GetChecked() or nil);
-				-- only do an update if this isn't auto enabled filter
-				if not settings.AutoSeasonalFilters[v] then
-					settings:UpdateMode(1);
-				end
-			end
-		);
-		seasonalFilter:SetATTTooltip(unobtainables[v][2]);
-		if count == 0 then
-			seasonalFilter:AlignBelow(last, 1);
-		else
-			seasonalFilter:AlignBelow(last);
-		end
-		last = seasonalFilter
-		count = count + 1;
-	end
-end
 
 local UnobtainableFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 UnobtainableFiltersLabel:SetText(L["UNOBTAINABLE_LABEL"]);
@@ -2753,12 +2591,10 @@ local UnobtainableAllCheckBox = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 	function(self)
 		local anyFiltered = false;
 		for k,v in pairs(unobtainables) do
-			if v[1] < 4 then
-				if not settings:GetValue("Unobtainable", k) then
-					anyFiltered = true;
-					-- ensure the filter is specifically marked as 'false' if it's not enabled
-					settings:SetValue("Unobtainable", k, false);
-				end
+			if not settings:GetValue("Unobtainable", k) then
+				anyFiltered = true;
+				-- ensure the filter is specifically marked as 'false' if it's not enabled
+				settings:SetValue("Unobtainable", k, false);
 			end
 		end
 		self:SetChecked(not anyFiltered);
@@ -2769,9 +2605,7 @@ local UnobtainableAllCheckBox = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 	function(self)
 		local checked = self:GetChecked();
 		for k,v in pairs(unobtainables) do
-			if v[1] < 4 then
-				settings:SetValue("Unobtainable", k, checked);
-			end
+			settings:SetValue("Unobtainable", k, checked);
 		end
 		settings:UpdateMode(1);
 	end

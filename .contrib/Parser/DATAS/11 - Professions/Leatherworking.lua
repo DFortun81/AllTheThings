@@ -916,7 +916,7 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 10630,
 				},
 				-- #endif
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Gloves of the Greatfather",
 					["recipeID"] = 21943,
 				}),
@@ -1431,7 +1431,7 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 10566,
 				},
 				-- #if AFTER 2.3.0
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Winter Boots",
 					["recipeID"] = 44953,
 				}),
@@ -8129,9 +8129,9 @@ itemrecipe("Pattern: Greater Drums of War", 185922, 351766, TBC_PHASE_FOUR);	-- 
 -- #endif
 -- #endif
 
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Gloves of the Greatfather", 17722, 21943, FEAST_OF_WINTER_VEIL));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Gloves of the Greatfather", 17722, 21943));
 -- #if AFTER TBC
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Winter Boots", 34262, 44953, FEAST_OF_WINTER_VEIL));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Winter Boots", 34262, 44953));
 -- #endif
 
 -- #if AFTER WRATH

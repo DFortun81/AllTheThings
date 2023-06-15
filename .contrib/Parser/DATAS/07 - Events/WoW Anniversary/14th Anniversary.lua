@@ -9,7 +9,7 @@ WOW_ANNIVERSARY_FOURTEEN = createHeader({
 		en = [[~select(2,GetAchievementInfo(12827))]],
 	},
 });
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_FOURTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_FOURTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(12827),	-- 14th Anniversary
 	n(MAILBOX, {
 		i(162637, {	-- Anniversary Gift
@@ -20,10 +20,10 @@ root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_FOURTEEN, bubbleDown({ ["u"] = REMOVED
 			i(139409),	-- Letter from the Timewalker [Alliance]
 		}),
 	}),
-})));
+}))));
 
 -- Yearly Anniversary Content
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_FOURTEEN, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_FOURTEEN, {
 	n(VENDORS, {
 		n(110035, {	-- Historian Jupa [Horde]
 			["coord"] = { 36.6, 74.6, ORGRIMMAR },

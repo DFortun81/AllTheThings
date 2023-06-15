@@ -5,12 +5,12 @@ MARCH_OF_THE_TADPOLES_HEADER = createHeader({
 	readable = "March of the Tadpoles",
 	constant = "MARCH_OF_THE_TADPOLES_HEADER",
 	icon = [[~_.asset("Holiday_Marchofmurloc")]],
-	eventID = 647,
+	eventID = EVENTS.MARCH_OF_THE_TADPOLES,
 	text = {
 		en = "March of the Tadpoles",
 	},
 });
-root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, n(MARCH_OF_THE_TADPOLES_HEADER, bubbleDown({ ["timeline"] = { "added 7.1.5" } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.MARCH_OF_THE_TADPOLES, n(MARCH_OF_THE_TADPOLES_HEADER, bubbleDown({ ["timeline"] = { "added 7.1.5" } }, {
 	n(QUESTS, sharedData({
 		["isWeekly"] = true,
 		["maps"] = { BOREAN_TUNDRA },

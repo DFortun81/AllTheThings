@@ -6478,7 +6478,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(104324, {	-- Foot Ball (TOY!)
 							["timeline"] = { "added 5.4.0.17227" },
 						}),
-						applyholiday(CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
+						applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
 							["timeline"] = { "added 4.1.0.13875" },
 						})),
 						i(137663, {	-- Soft Foam Sword (TOY!)
@@ -6499,7 +6499,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
-						applyholiday(CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
+						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
 							["timeline"] = { "added 4.1.0.13875" },
 						})),
 					},

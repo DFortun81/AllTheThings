@@ -9,7 +9,7 @@ WOW_ANNIVERSARY_FIFTEEN = createHeader({
 		en = [[~select(2,GetAchievementInfo(13917))]],
 	},
 });
-root(ROOTS.WorldEvents,  n(WOW_ANNIVERSARY_FIFTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_FIFTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(13917),	-- 15th Anniversary
 	n(157113, {	-- Chromie
 		--	inst(2235, {	-- doesn't show up in-game
@@ -585,10 +585,10 @@ root(ROOTS.WorldEvents,  n(WOW_ANNIVERSARY_FIFTEEN, bubbleDown({ ["u"] = REMOVED
 			["lvl"] = 60,
 		}),
 	}),
-})));
+}))));
 
 -- Yearly Anniversary Content
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_FIFTEEN, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_FIFTEEN, {
 	m(1537, {	-- Alterac Valley
 		["icon"] = 236711,	-- Alterac Valley
 		["maps"] = { HILLSBRAD_FOOTHILLS },

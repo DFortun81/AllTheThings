@@ -5,7 +5,7 @@ PIRATES_DAY_HEADER = createHeader({
 	readable = "Pirates' Day",
 	constant = "PIRATES_DAY_HEADER",
 	icon = [[~_.asset("Holiday_Pirate")]],
-	eventID = 398,
+	eventID = EVENTS.PIRATES_DAY,
 	text = {
 		en = "Pirates' Day",
 		es = "Día de los Piratas",
@@ -18,10 +18,10 @@ PIRATES_DAY_HEADER = createHeader({
 		cn = "海盗日",
 	},
 });
-root(ROOTS.Holidays, applyholiday(PIRATES_DAY, n(PIRATES_DAY_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 	-- #if BEFORE WRATH
 	["description"] = "Start: 09/19 at 12:00 AM\nEnd: 09/20 at 12:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PIRATES_DAY .. [[, 9, 19, 9, 20); end]],
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. EVENTS.PIRATES_DAY .. [[, 9, 19, 9, 20); end]],
 	-- #endif
 	["timeline"] = { "added 2.4.3.8601" },
 	["groups"] = {

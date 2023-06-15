@@ -5,12 +5,12 @@ FREE_T_SHIRT_DAY_HEADER = createHeader({
 	readable = "Free T-Shirt Day",
 	constant = "FREE_T_SHIRT_DAY_HEADER",
 	icon = [[~_.asset("Holiday_Tshirt")]],
-	eventID = 1053,
+	eventID = EVENTS.FREE_T_SHIRT_DAY,
 	text = {
 		en = "Free T-Shirt Day",
 	},
 });
-root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, n(FREE_T_SHIRT_DAY_HEADER, bubbleDown({ ["timeline"] = { "added 8.1.5" } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEADER, bubbleDown({ ["timeline"] = { "added 8.1.5" } }, {
 	n(RARES, {
 		n(145826, {	-- Orgrimmar Entertainer
 			["description"] = "This NPC wanders around in Ogrimmar and shoots T-Shirts on the ground where you can pick them up.",

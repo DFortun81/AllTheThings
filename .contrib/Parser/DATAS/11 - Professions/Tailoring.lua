@@ -402,11 +402,11 @@ profession(TAILORING, {
 					["name"] = "Felcloth Robe",
 					["recipeID"] = 18451
 				},
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Festival Dress",
 					["recipeID"] = 26403,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Festival Suit",
 					["recipeID"] = 26407,
 				}),
@@ -443,7 +443,7 @@ profession(TAILORING, {
 					["name"] = "Green Silk Armor",
 					["recipeID"] = 8784
 				},
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Green Winter Clothes",
 					["timeline"] = { "added 2.3.0.7382" },
 					["recipeID"] = 44950,
@@ -452,7 +452,7 @@ profession(TAILORING, {
 					["name"] = "Green Woolen Vest",
 					["recipeID"] = 2399
 				},
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Haliscan Jacket",
 					["timeline"] = { "added 2.4.2.8301" },
 					["recipeID"] = 50644
@@ -481,7 +481,7 @@ profession(TAILORING, {
 					["name"] = "Red Mageweave Vest",
 					["recipeID"] = 12056
 				},
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Red Winter Clothes",
 					["timeline"] = { "added 2.3.0.7382" },
 					["recipeID"] = 44958,
@@ -1025,7 +1025,7 @@ profession(TAILORING, {
 					["name"] = "Gray Woolen Shirt",
 					["recipeID"] = 2406
 				},
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Green Holiday Shirt",
 					["recipeID"] = 21945,
 				}),
@@ -5718,14 +5718,14 @@ itemrecipe("Pattern: Glacial Cloak", 22685, 28208, PHASE_SIX);
 itemrecipe("Pattern: Glacial Vest", 22686, 28207, PHASE_SIX);
 itemrecipe("Pattern: Glacial Wrists", 22687, 28209, PHASE_SIX);
 
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Green Holiday Shirt", 17724, 21945));
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Dress", 21722, 26403));
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 21723, 26407));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Green Holiday Shirt", 17724, 21945));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Dress", 21722, 26403));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 21723, 26407));
 
 -- #if AFTER TBC
 -- TBC Recipes
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Green Winter Clothes", 34261, 44950));
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Red Winter Clothes", 34319, 44958));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Green Winter Clothes", 34261, 44950));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Red Winter Clothes", 34319, 44958));
 
 itemrecipe("Pattern: Frozen Shadoweave Shoulders", 21912, 26756, TBC_PHASE_ONE);
 itemrecipe("Pattern: Frozen Shadoweave Robe", 21913, 26758, TBC_PHASE_ONE);
@@ -5870,8 +5870,8 @@ itemrecipe("Pattern: Spellweave Robe", 42201, 56028, WRATH_PHASE_ONE);	-- NYI, t
 itemrecipe("Pattern: Wispcloak", 42189, 56016, WRATH_PHASE_ONE);	-- NYI, taught by trainers
 itemrecipe("Pattern: Yellow Lumberjack Shirt", 42174, 55995, WRATH_PHASE_ONE);
 
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Dress", 44916, 26403));
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 44917, 26407));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Dress", 44916, 26403));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 44917, 26407));
 -- #endif
 
 -- #if AFTER CATA

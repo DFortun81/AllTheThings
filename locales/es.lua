@@ -3817,39 +3817,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- Saved Instance Name => Dungeon Journal Instance Name Converter
--- If your saves aren't lining up, it's probably because Blizzard
--- didn't use the same localization for the instance. Sorry.
-local a = L.SAVED_TO_DJ_INSTANCES;
-for key,value in pairs({
-})
-do a[key] = value; end
-
---TODO:
-local a = L.UNOBTAINABLE_ITEM_REASONS;
-for key,value in pairs({
-	-- Seasonal Filters
-		[1000] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "Fiesta de la Cerveza"},
-		[1001] = {4, "|CFF00FFDEThis requires the Children's Week Holiday to be Active.|r", "Semana de los Niños"},
-		[1012] = {4, "|CFF00FFDEThis requires the Darkmoon Faire Holiday to be Active.|r", "Feria de la Luna Negra" },
-		[1002] = {4, "|CFF00FFDEThis requires the Day of the Dead Holiday to be Active.|r", "Festividad de los Muertos"},
-		[1003] = {4, "|CFF00FFDEThis requires the Feast of Winter Veil Holiday to be Active.|r", "El festín del Festival de Invierno"},
-		[1009] = {4, "|CFF00FFDEThis requires the Fireworks Celebration Holiday to be Active.|r", "Celebración de Fuegos artificiales" },
-		[1004] = {4, "|CFF00FFDEThis requires the Hallow's End Holiday to be Active.|r", "Halloween"},
-		[1005] = {4, "|CFF00FFDEThis requires the Harvest Festival Holiday to be Active.|r", "Festival de la Cosecha"},
-		[1006] = {4, "|CFF00FFDEThis requires the Love is in the Air Holiday to be Active.|r", "Amor en el aire"},
-		[1007] = {4, "|CFF00FFDEThis requires the Lunar Festival Holiday to be Active.|r", "Festival Lunar"},
-		[1014] = {4, "|CFF00FFDEThis requires a Specific Micro Holiday to be Active.|r", "Micro Holiday"},
-		[1008] = {4, "|CFF00FFDEThis requires the Midsummer Fire Festival Holiday to be Active.|r", "Festival del Fuego del Solsticio de Verano"},
-		[1010] = {4, "|CFF00FFDEThis requires the Noblegarden Holiday to be Active.|r", "Jardín Noble"},
-		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "Generosidad del Peregrino"},
-		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "Día de los Piratas"},
-		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "Gran espectáculo de pesca de Tuercespina"},
-		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "Paseo temporal"},
-		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "Aniversario de WoW"},
-})
-do a[key] = value; end
-
 --TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({

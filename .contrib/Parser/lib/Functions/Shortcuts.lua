@@ -332,8 +332,12 @@ unpack = function(t, i)
 end
 
 -- Helper Functions
-applyholiday = function(holiday, data)
-	return bubbleDown({ ["u"] = holiday }, data);
+applyevent = function(eventID, data)
+	if not eventID then
+		print("INVALID EVENT ID PASSED TO APPLYHOLIDAY");
+		print(CurrentSubFileName or CurrentFileName);
+	end
+	return bubbleDown({ ["e"] = eventID }, data);
 end
 -- #if ANYCLASSIC
 -- Classic Only

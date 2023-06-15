@@ -9,7 +9,7 @@ WOW_ANNIVERSARY_SEVENTEEN = createHeader({
 		en = [[~select(2,GetAchievementInfo(14942))]],
 	},
 });
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(14942),	-- WoW's 17th Anniversary
 	n(MAILBOX, {
 		i(185906, {	-- Anniversary Gift
@@ -18,10 +18,10 @@ root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDown({ ["u"] = REMOVE
 			i(171177),	-- Invitation from the Timewalkers
 		}),
 	}),
-})));
+}))));
 
 -- Yearly Anniversary Content -- also used for 18th anniversary
-root(ROOTS.WorldEvents, n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_SEVENTEEN, {
 	n(QUESTS, {
 		q(60215, {	-- Doomwalkin' Has Come Knockin'
 			["qg"] = 157113,	-- Chromie

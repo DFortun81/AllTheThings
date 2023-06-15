@@ -5,7 +5,7 @@ FEAST_OF_WINTER_VEIL_HEADER = createHeader({
 	readable = "Feast of Winter Veil",
 	constant = "FEAST_OF_WINTER_VEIL_HEADER",
 	icon = [[~_.asset("Holiday_winter_veil")]],
-	eventID = 141,
+	eventID = EVENTS.FEAST_OF_WINTER_VEIL,
 	text = {
 		en = [[~GetSpellInfo(21953)]],
 	},
@@ -57,10 +57,10 @@ local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
 	}),
 	-- #endif
 };
-root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 	-- #if BEFORE WRATH
 	["description"] = "Start: 12/16 at 10:00 AM\nEnd: 01/02 at 6:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. FEAST_OF_WINTER_VEIL .. [[, 12, 16, 1, 2); end]],
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. EVENTS.FEAST_OF_WINTER_VEIL .. [[, 12, 16, 1, 2); end]],
 	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {

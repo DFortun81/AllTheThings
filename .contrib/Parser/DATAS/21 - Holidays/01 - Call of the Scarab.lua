@@ -5,12 +5,12 @@ CALL_OF_THE_SCARAB_HEADER = createHeader({
 	readable = "Call of the Scarab",
 	constant = "CALL_OF_THE_SCARAB_HEADER",
 	icon = [[~_.asset("Holiday_call_of_the_scarab")]],
-	eventID = 638,
+	eventID = EVENTS.CALL_OF_THE_SCARAB,
 	text = {
 		en = "Call of the Scarab",
 	},
 });
-root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, n(CALL_OF_THE_SCARAB_HEADER, bubbleDown({ ["timeline"] = { "added 7.1.5" } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, bubbleDown({ ["timeline"] = { "added 7.1.5" } }, {
 	["maps"] = { SILITHUS },
 	["g"] = {
 		n(QUESTS, {

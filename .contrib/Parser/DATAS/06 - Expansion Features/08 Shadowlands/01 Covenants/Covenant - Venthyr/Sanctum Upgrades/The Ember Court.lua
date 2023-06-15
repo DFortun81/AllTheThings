@@ -618,30 +618,25 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						})),
 						-- Repeatable Event quests within Ember Court
 						n(QUESTS, sharedData({["isDaily"] = true,},{
-							q(63721, {	-- Lord Garridan's Egg
+							applyevent(EVENTS.NOBLEGARDEN, q(63721, {	-- Lord Garridan's Egg
 								["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
-								["u"] = NOBLEGARDEN,
-							}),
-							q(63720, {	-- Prince Renethal's Egg
+							})),
+							applyevent(EVENTS.NOBLEGARDEN, q(63720, {	-- Prince Renethal's Egg
 								["cost"] = { { "i", 185683, 1 } },	-- Prince Renethal's Egg
-								["u"] = NOBLEGARDEN,
-							}),
-							q(63718, {	-- Theotar's Egg
+							})),
+							applyevent(EVENTS.NOBLEGARDEN, q(63718, {	-- Theotar's Egg
 								["cost"] = { { "i", 185681, 1 } },	-- Theotar's Egg
-								["u"] = NOBLEGARDEN,
-							}),
-							q(63719, {	-- Temel's Egg
+							})),
+							applyevent(EVENTS.NOBLEGARDEN, q(63719, {	-- Temel's Egg
 								["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
-								["u"] = NOBLEGARDEN,
-							}),
-							q(64546, {	-- Visions of Sire Denathrius
+							})),
+							applyevent(EVENTS.HALLOWS_END, q(64546, {	-- Visions of Sire Denathrius
 								["provider"] = { "n", 180458 },	-- Vision of Sire Denathrius
 								["repeatable"] = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
-								["u"] = HALLOWS_END,
 								["g"] = {
 									i(181442),	-- Vision of Sire Denathrius
 								},
-							}),
+							})),
 							q(62146),	-- A Little More Comfortable
 							q(62130),	-- A Quiet Moment
 							q(62126),	-- Animal Rescue
@@ -2185,10 +2180,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["cost"] = { { "c", ANIMA, 25 } },
 										["questID"] = 61457,
 									}),
-									i(187133, {	-- Bewitching Little Hat
+									applyevent(EVENTS.HALLOWS_END, i(187133, {	-- Bewitching Little Hat
 										["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
-										["u"] = HALLOWS_END,
-									}),
+									})),
 									i(181517, {	-- Building: Dredger Pool (EC!)
 										["cost"] = { { "c", ANIMA, 100 } },
 										["questID"] = 61493,

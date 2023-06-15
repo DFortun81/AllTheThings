@@ -5,7 +5,7 @@ NOBLEGARDEN_HEADER = createHeader({
 	readable = "Noblegarden",
 	constant = "NOBLEGARDEN_HEADER",
 	icon = [[~_.asset("Holiday_noblegarden")]],
-	eventID = 181,
+	eventID = EVENTS.NOBLEGARDEN,
 	text = {
 		-- #if AFTER TBC
 		en = [[~select(1,GetCategoryInfo(159))]],
@@ -103,10 +103,10 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 };
-root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	-- #if BEFORE WRATH
 	["description"] = "Start: 04/17 at 12:00 AM\nEnd: 04/18 at 12:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 17, 4, 18); end]],
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. EVENTS.NOBLEGARDEN .. [[, 4, 17, 4, 18); end]],
 	-- #endif
 	["groups"] = {
 		o(113768, {	-- Brightly Colored Egg

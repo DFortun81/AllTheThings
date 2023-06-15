@@ -480,7 +480,6 @@ namespace ATT
                     case "inventoryType":
                     case "subclass":
                     case "q":
-                    case "e":
                         item[field] = Convert.ToInt64(value);
                         break;
 
@@ -552,6 +551,10 @@ namespace ATT
                     // there are situations where the same Item is BoP in some places and BoE in others...
                     case "b":
 #endif
+                    case "e":
+                        if (!ProcessingMergeData) break;
+                        item[field] = Convert.ToInt64(value);
+                        break;
                     case "u":
                         if (!ProcessingMergeData) break;
 

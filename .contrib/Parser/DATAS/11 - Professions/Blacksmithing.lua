@@ -6445,7 +6445,7 @@ itemrecipe("Plans: Dark Iron Destroyer", 17060, 20897);
 itemrecipe("Plans: Enchanted Thorium Helm", 12725, 16742, PHASE_THREE);
 itemrecipe("Plans: Enchanted Thorium Leggings", 12726, 16744, PHASE_THREE);
 itemrecipe("Plans: Enchanted Thorium Breastplate", 12727, 16745, PHASE_THREE);
-un(FEAST_OF_WINTER_VEIL, itemrecipe("Plans: Edge of Winter", 17706, 21913));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Plans: Edge of Winter", 17706, 21913));
 itemrecipe("Plans: Elemental Sharpening Stone", 18264, 22757);
 itemrecipe("Plans: Sulfuron Hammer", 18592, 21161);
 itemrecipe("Plans: Heavy Timbermaw Belt", 19202, 23628, PHASE_THREE);
