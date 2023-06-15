@@ -2078,6 +2078,7 @@ end
 app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 40;
 local function GetUnobtainableTexture(group)
+	if not group then return; end
 	if type(group) ~= "table" then
 		-- This function shouldn't be used with only u anymore!
 		app.print("Invalid use of GetUnobtainableTexture", group);
