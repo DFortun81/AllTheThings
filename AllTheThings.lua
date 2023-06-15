@@ -4886,8 +4886,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if group.description and app.Settings:GetTooltipSetting("Descriptions") then
 			tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
 		end
-		if group.eventInfo and group.eventInfo.times then
-			local timeStrings = app.GetBestEventTimeStrings(group.eventInfo.times);
+		if group.nextEvent then
+			local timeStrings = app.GetEventTimeStrings(group.nextEvent);
 			if timeStrings then
 				for i,timeString in ipairs(timeStrings) do
 					tinsert(info, 1, { left = timeString, wrap = true, color = app.Colors.TooltipDescription });
@@ -13090,74 +13090,91 @@ local remappedEventToMapID = {
 	[375] = 1456,	-- Thunder Bluff
 	[376] = 1952,	-- Terrokar Forest
 };
-app.GetEventCache = function()
-	local cache = GetDataMember("Events");
-	if not cache then
+-- Check to make sure these APIs are available on the environment.
+if C_DateAndTime and C_Calendar then
+	-- Available, let's make this caching function legit.
+	app.GetEventCache = function()
+		local now = C_DateAndTime.GetServerTimeLocal();
+		local cache = GetDataMember("EventCache");
+		if cache and (cache.lease or 0) > now then
+			-- If our cache is still leased, then simply return it.
+			return cache;
+		end
+		
+		-- Create a new cache with a One Week Lease
+		local anyEvents = false;
 		cache = {};
-		if C_DateAndTime and C_Calendar then
-			local date = C_DateAndTime.GetCurrentCalendarTime();
-			if date.month > 8 then
-				C_Calendar.SetAbsMonth(date.month - 8, date.year);
-			else
-				C_Calendar.SetAbsMonth(date.month + 4, date.year - 1);
-			end
-			for month=1,12,1 do
-				-- We kick off the search from January 1 at the start of the year using SetAbsMonth/GetMonthInfo. All successive functions are built from the returns of these.
-				local absMonth = C_Calendar.SetAbsMonth(month, date.year);
-				local monthInfo = C_Calendar.GetMonthInfo(absMonth);
-				for day=1,monthInfo.numDays,1 do
-					local numEvents = C_Calendar.GetNumDayEvents(0, day);
-					if numEvents > 0 then
-						for index=1,numEvents,1 do
-							local event = C_Calendar.GetDayEvent(0, day, index);
-							if event then -- If this is nil, then attempting to index it on the same line will toss an error.
-								if event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
-									local eventID = event.eventID;
-									local remappedID = L.EVENT_REMAPPING[eventID] or eventID;
-									if remappedID then
-										local t = cache[remappedID];
-										if not t then
-											t = {
-												["name"] = event.title,
-												["icon"] = event.iconTexture,
-												["times"] = {},
-											};
-											cache[remappedID] = t;
-											SetDataMember("Events", cache);
-										end
-										local schedule = {
-											["start"] = time({
-												year=event.startTime.year,
-												month=event.startTime.month,
-												day=event.startTime.monthDay,
-												hour=event.startTime.hour,
-												minute=event.startTime.minute,
-											}),
-											["end"] = time({
-												year=event.endTime.year,
-												month=event.endTime.month,
-												day=event.endTime.monthDay,
-												hour=event.endTime.hour,
-												minute=event.endTime.minute,
-											}),
-											["startTime"] = event.startTime,
-											["endTime"] = event.endTime,
+		cache.lease = now + 604800;
+		
+		-- Go back 2 months and then forward to the next year
+		local date = C_DateAndTime.GetCurrentCalendarTime();
+		C_Calendar.SetAbsMonth(date.month, date.year);
+		C_Calendar.SetMonth(-2);
+		
+		for offset=-2,12,1 do
+			local monthInfo = C_Calendar.GetMonthInfo(0);
+			for day=1,monthInfo.numDays,1 do
+				local numEvents = C_Calendar.GetNumDayEvents(0, day);
+				if numEvents > 0 then
+					for index=1,numEvents,1 do
+						local event = C_Calendar.GetDayEvent(0, day, index);
+						if event then -- If this is nil, then attempting to index it on the same line will toss an error.
+							if event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
+								local eventID = event.eventID;
+								local remappedID = L.EVENT_REMAPPING[eventID] or eventID;
+								if remappedID then
+									local t = cache[remappedID];
+									if not t then
+										t = {
+											["name"] = event.title,
+											["icon"] = event.iconTexture,
+											["times"] = {},
 										};
-										if remappedID ~= eventID then
-											schedule.remappedID = eventID;
-										end
-										tinsert(t.times, schedule);
+										cache[remappedID] = t;
+										anyEvents = true;
 									end
+									local schedule = {
+										["start"] = time({
+											year=event.startTime.year,
+											month=event.startTime.month,
+											day=event.startTime.monthDay,
+											hour=event.startTime.hour,
+											minute=event.startTime.minute,
+										}),
+										["end"] = time({
+											year=event.endTime.year,
+											month=event.endTime.month,
+											day=event.endTime.monthDay,
+											hour=event.endTime.hour,
+											minute=event.endTime.minute,
+										}),
+										["startTime"] = event.startTime,
+										["endTime"] = event.endTime,
+									};
+									if remappedID ~= eventID then
+										schedule.remappedID = eventID;
+									end
+									tinsert(t.times, schedule);
 								end
 							end
 						end
 					end
 				end
 			end
+			C_Calendar.SetMonth(1);
 		end
+		
+		-- If there were any events, cache it!
+		if anyEvents then SetDataMember("EventCache", cache); end
+		C_Calendar.SetAbsMonth(date.month, date.year);
+		return cache;
 	end
-	return cache;
+else
+	-- Not available, return an empty object!
+	app.GetEventCache = function() return {}; end
 end
+
+
 local function GetEventTimeString(d)
 	if d then
 		return format("%s, %s %02d, %d at %02d:%02d",
@@ -13167,26 +13184,17 @@ local function GetEventTimeString(d)
 	end
 	return "??";
 end
-app.GetBestEventTimeStrings = function(times)
-	if times and #times > 0 then
-		local now = C_DateAndTime.GetServerTimeLocal();
-		local nextData = times[1];
-		for i,data in ipairs(times) do
-			if now < data["end"] then
-				nextData = data;
-				break;
-			end
-		end
+app.GetEventTimeStrings = function(nextEvent)
+	if nextEvent then
 		local schedule = {};
-		if nextData.endTime then
-			tinsert(schedule, "Start:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextData.startTime));
-			tinsert(schedule, "End:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextData.endTime));
-
+		if nextEvent.endTime then
+			tinsert(schedule, "Start:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextEvent.startTime));
+			tinsert(schedule, "End:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextEvent.endTime));
 		else
-			tinsert(schedule, "Active:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextData.startTime));
+			tinsert(schedule, "Active:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextEvent.startTime));
 		end
-		if nextData.remappedID then
-			local mapID = remappedEventToMapID[nextData.remappedID];
+		if nextEvent.remappedID then
+			local mapID = remappedEventToMapID[nextEvent.remappedID];
 			local info = C_Map.GetMapInfo(mapID);
 			tinsert(schedule, "Where:" .. DESCRIPTION_SEPARATOR .. (info.name or ("Map ID #" .. mapID)));
 		end
@@ -13240,13 +13248,31 @@ local headerFields = {
 			return eventID;
 		end
 	end,
-	["eventInfo"] = function(t)
+	["eventInfoAsEvent"] = function(t)
 		local info = app.GetEventCache()[t.eventID];
-		if info then
+		if info and info.times then
 			t.eventInfo = info;
 			return info;
 		end
 		return {};
+	end,
+	["nextEventAsEvent"] = function(t)
+		local info = t.eventInfo;
+		if info then
+			local times = info.times;
+			if times and #times > 0 then
+				local now = C_DateAndTime.GetServerTimeLocal();
+				local lastData;
+				for i,data in ipairs(times) do
+					lastData = data;
+					if now < data["end"] then
+						break;
+					end
+				end
+				t.nextEvent = lastData;
+				return lastData;
+			end
+		end
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
@@ -13260,6 +13286,8 @@ fields.name = headerFields.nameAsEvent;
 fields.icon = headerFields.iconAsEvent;
 fields.texcoord = headerFields.texcoordAsEvent;
 fields.eventID = headerFields.eventIDAsEvent;
+fields.eventInfo = headerFields.eventInfoAsEvent;
+fields.nextEvent = headerFields.nextEventAsEvent;
 app.BaseHeaderWithEvent = app.BaseObjectFields(fields, "BaseHeaderWithEvent");
 
 local fields = RawCloneData(headerFields);
@@ -16982,8 +17010,8 @@ RowOnEnter = function (self)
 			if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
 				GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
 			end
-			if reference.eventInfo and reference.eventInfo.times then
-				local timeStrings = app.GetBestEventTimeStrings(reference.eventInfo.times);
+			if reference.nextEvent then
+				local timeStrings = app.GetEventTimeStrings(reference.nextEvent);
 				if timeStrings then
 					for i,timeString in ipairs(timeStrings) do
 						local left, right = strsplit(DESCRIPTION_SEPARATOR, timeString);
@@ -18226,6 +18254,11 @@ function app:GetDataCache()
 	if app.Categories.Holidays then
 		db = app.CreateNPC(app.HeaderConstants.HOLIDAYS, app.Categories.Holidays);
 		db.isHolidayCategory = true;
+		db.OnUpdate = function(t)
+			table.sort(t.g, function(a, b)
+				return (a.nextEvent and a.nextEvent.start or 0) < (b.nextEvent and b.nextEvent.start or 0);
+			end)
+		end
 		tinsert(g, db);
 	end
 
@@ -24066,7 +24099,7 @@ app.Startup = function()
 		"UserLocale",
 		"Position",
 		"RandomSearchFilter",
-		"Events"
+		"EventCache"
 	};
 	local removeKeys = {};
 	for key,_ in pairs(AllTheThingsAD) do
