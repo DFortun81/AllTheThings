@@ -499,14 +499,11 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			}),
 			-- #endif
 			-- #if AFTER LEGION
-			d(TIMEWALKING_DUNGEON, {
-				-- #if ANYCLASSIC
-				["u"] = LEGION_PHASE_ONE,
-				-- #endif
+			applyclassicphase(LEGION_PHASE_ONE, d(TIMEWALKING_DUNGEON, {
 				["sym"] = {	-- link in Timewalking content
 					{"sub", "tw_instance", 751 },	-- this instance version of timewalking
 				},
-			}),
+			})),
 			-- #endif
 		},
 	}),
