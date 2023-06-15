@@ -4496,7 +4496,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, n(HALLOWS_END_HEADER, {
 -- Remove the holiday flag.
 SPECTRAL_GROG.u = nil;
 
--- #if BEFORE 2.0.1
+-- #if AFTER 2.0.1
 root(ROOTS.NeverImplemented, n(HALLOWS_END_HEADER, {
 	-- #if ANYCLASSIC
 	i(33176, {	-- Flying Broom (MOUNT!)

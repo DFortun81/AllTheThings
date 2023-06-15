@@ -265,7 +265,9 @@ i(46821, 229);		-- Shimmering Wyrmling (Horde)
 -----------------
 -- ITEM --
 i(49693, 249);		-- Lil' K.T.
-i(46831, 1351);		-- Macabre Marionette
+-- #if AFTER 5.4.0
+pet(46831, 1351);	-- Macabre Marionette [NOTE: This pet could not be learned until MOP!]
+-- #endif
 i(49362, 243);		-- Onyxian Whelpling
 i(49665, 248);		-- Pandaren Monk
 i(49343, 242);		-- Spectral Tiger Cub
