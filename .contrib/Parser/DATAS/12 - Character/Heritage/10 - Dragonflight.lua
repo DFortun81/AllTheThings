@@ -347,7 +347,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(DF_TIER, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 		q(74894),	-- triggers after the scene ends after 'Go with Honor, Friend' (questID 72452)
 		q(73705),	-- triggers right after accepting 'The Kosh'harg' (questID 72464)
 		q(74541),	-- triggers when you find a 'Mysterious Orc' during 'The Kosh'harg' (questID 72464)
@@ -359,5 +359,5 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(72469),	-- choosing Gorgonna (Warsong clan) during 'The Blessing of the Clan' (questID 72467)
 		q(72473),	-- choosing Gorfax Angerfang (Dragonmaw clan) during 'The Blessing of the Clan' (questID 72467)
 		q(72471),	-- choosing Thega Graveblade (Shattered Hand clan) during 'The Blessing of the Clan' (questID 72467)
-	}),
+	})),
 });
