@@ -8,6 +8,87 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 			2190,	-- Sanctum of Chronology
 		},
 		["g"] = {
+			------------------------------------------
+			-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
+			----------------LG GOLD ------------------
+			------------------------------------------
+			i(208064, {	-- Quantum chestpiece
+			
+			}),
+			i(208063, {	-- Quantum gloves
+			
+			}),
+			i(208061, {	-- Quantum headpiece
+			
+			}),
+			i(208065, {	-- Quantum legs
+			
+			}),
+			i(208062, {	-- Quantum shoulders
+			
+			}),
+			i(208216, {	-- Reins of the Quantum Courser
+				["sym"] = {{"select","itemID",
+					142236,	-- Midnight's Eternal Reins
+					45693,	-- Mimiron's Head
+				}},
+			}),
+			n(WEAPONS, {
+				i(208111, {	-- Quantum axe
+			
+				}),
+				i(29356, {	-- Quantum blade
+				
+				}),
+				i(208117, {	-- Quantum bow
+				
+				}),
+				i(208118, {	-- Quantum crossbow
+				
+				}),
+				i(208119, {	-- Quantum firearm
+				
+				}),
+				i(208125, {	-- Quantum focus
+				
+				}),
+				i(208112, {	-- Quantum greatsword
+				
+				}),
+				i(208113, {	-- Quantum greataxe
+				
+				}),
+				i(208114, {	-- Quantum greathammer
+				
+				}),
+				i(208120, {	-- Quantum knife
+				
+				}),
+				i(208121, {	-- Quantum knuckles
+				
+				}),
+				i(208110, {	-- Quantum mace
+				
+				}),
+				i(208116, {	-- Quantum polearm
+				
+				}),
+				i(208115, {	-- Quantum staff
+				
+				}),
+				i(208109, {	-- Quantum sword
+				
+				}),
+				i(208122, {	-- Quantum warglaives
+				
+				}),
+				i(208123, {	-- Quantum wand
+				
+				}),
+				i(208126, {	-- Quantum shield
+				
+				}),
+			}),
 			n(QUESTS, {
 				q(76140, {	-- Dawn of the Infinite
 					["provider"] = { "n", 187669 },	-- Nozdormu
