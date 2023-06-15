@@ -1550,6 +1550,10 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(199720, {	-- Glamora
 					["coord"] = { 45.9, 38.7, VALDRAKKEN },
 					["g"] = {
+						i(202090, {	-- Crimson Gladiator's Tabard
+							["cost"] = { { "c", HONOR, 100 }, },
+							["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
+						}),
 						n(WEAPONS, {
 							i(202129, {	-- Crimson Gladiator's Barrier
 								["cost"] = { { "i", MOH, 5 } },

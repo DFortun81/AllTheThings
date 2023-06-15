@@ -1397,25 +1397,50 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205711),	-- Obsidian Gladiator's Medallion
 					i(205712),	-- Obsidian Gladiator's Sigil of Adaptation
 				}),
-				n(WEAPONS, {
-					--i(202129),	-- Obsidian Gladiator's Barrier
-					--i(202133),	-- Obsidian Gladiator's Blade
-					--i(202130),	-- Obsidian Gladiator's Bulwark
-					--i(202127),	-- Obsidian Gladiator's Censer
-					--i(205928),	-- Obsidian Gladiator's Claws
-					--i(202124),	-- Obsidian Gladiator's Crossbow
-					--i(202134),	-- Obsidian Gladiator's Glaive
-					--i(202137),	-- Obsidian Gladiator's Greataxe
-					--i(202123),	-- Obsidian Gladiator's Greatbow
-					--i(202138),	-- Obsidian Gladiator's Greatmace
-					--i(202125),	-- Obsidian Gladiator's Greatstaff
-					--i(202135),	-- Obsidian Gladiator's Poleaxe
-					--i(202136),	-- Obsidian Gladiator's Quarterstaff
-					--i(202128),	-- Obsidian Gladiator's Rod
-					--i(202139),	-- Obsidian Gladiator's Scepter
-					--i(202126),	-- Obsidian Gladiator's Spellblade
-					--i(202131),	-- Obsidian Gladiator's Sword
-					--i(202132),	-- Obsidian Gladiator's Warhammer
+				n(199720, {	-- Glamora
+					["coord"] = { 45.9, 38.7, VALDRAKKEN },
+					["g"] = {
+						i(205362, {	-- Obsidian Gladiator's Tabard
+							["cost"] = { { "c", HONOR, 100 }, },
+						--	["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
+						--	Will be put later on vendor prolly
+						}),
+						n(WEAPONS, {
+							i(206044, {	-- Obsidian Gladiator's Axe
+								["cost"] = { { "i", MOH, 5 } },
+							}),
+							i(206154, {	-- Obsidian Gladiator's Bow
+								["cost"] = { { "i", MOH, 10 } },
+							}),
+							i(206153, {	-- Obsidian Gladiator's Claws
+								["cost"] = { { "i", MOH, 5 } },
+							}),
+							i(206137, {	-- Obsidian Gladiator's Dagger
+								["cost"] = { { "i", MOH, 5 } },
+							}),
+							i(206150, {	-- Obsidian Gladiator's Mace
+								["cost"] = { { "i", MOH, 5 } },
+							}),
+							i(206147, {	-- Obsidian Gladiator's Polearm
+								["cost"] = { { "i", MOH, 10 } },
+							}),
+							i(206149, {	-- Obsidian Gladiator's Rifle
+								["cost"] = { { "i", MOH, 10 } },
+							}),
+							i(206151, {	-- Obsidian Gladiator's Rod
+								["cost"] = { { "i", MOH, 5 } },
+							}),
+							i(206152, {	-- Obsidian Gladiator's Shield
+								["cost"] = { { "i", MOH, 5 } },
+							}),
+							i(206148, {	-- Obsidian Gladiator's Staff
+								["cost"] = { { "i", MOH, 10 } },
+							}),
+							i(206146, {	-- Obsidian Gladiator's Warglaive
+								["cost"] = { { "i", MOH, 5 } },
+							}),
+						}),
+					},
 				}),
 			})),
 			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
