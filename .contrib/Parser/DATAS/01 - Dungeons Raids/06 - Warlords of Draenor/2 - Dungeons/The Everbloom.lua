@@ -240,13 +240,6 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					},
 				}),
 			}),
-			-- #if AFTER 8.1.5.29701
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 556 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 }));

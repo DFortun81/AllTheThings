@@ -3260,6 +3260,19 @@ local ResolveFunctions = {
 			end
 		end
 	end,
+	-- Instruction to include only search results where a key value is a value
+	["whereany"] = function(finalized, searchResults, o, cmd, field, ...)
+		local hash = {};
+		for k,value in ipairs({...}) do
+			hash[value] = true;
+		end
+		for k=#searchResults,1,-1 do
+			local s = searchResults[k];
+			if not s[field] or not hash[s[field]] then
+				tremove(searchResults, k);
+			end
+		end
+	end,
 	-- Instruction to extract all nested results which contain a given field
 	["extract"] = function(finalized, searchResults, o, cmd, field)
 		local orig;
@@ -3660,12 +3673,12 @@ local SubroutineCache = {
 	end,
 	-- TW Instance
 	["tw_instance"] = function(finalized, searchResults, o, cmd, instanceID)
-		local select, pop, where, push, finalize = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.push, ResolveFunctions.finalize;
+		local select, pop, where, whereany, push, finalize = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.whereany, ResolveFunctions.push, ResolveFunctions.finalize;
 		select(finalized, searchResults, o, "select", "itemID", 133543);	-- Infinite Timereaver
 		push(finalized, searchResults, o, "push", "headerID", app.HeaderConstants.COMMON_BOSS_DROPS);	-- Push into 'Common Boss Drops' header
 		finalize(finalized, searchResults);	-- capture current results
 		select(finalized, searchResults, o, "select", "instanceID", instanceID);	-- select this instance
-		where(finalized, searchResults, o, "where", "e", 1271, 559, 562, 587, 643, 1056, 1263, 1271);	-- only the instance which is marked as TIMEWALKING
+		whereany(finalized, searchResults, o, "whereany", "e", 559, 562, 587, 643, 1056, 1263 );	-- Select the TIMEWALKING eventID
 		pop(finalized, searchResults);	-- pop the instance header
 	end,
 	-- Wod Dungeon

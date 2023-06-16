@@ -144,13 +144,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(137493),	-- Edge of the First Blade
 				})),
 			}),
-			-- #if AFTER 9.1.5
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 800 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 }));

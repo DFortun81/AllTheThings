@@ -173,13 +173,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					})),
 				},
 			}),
-			-- #if AFTER 6.2.3.20601
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 71 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 }));

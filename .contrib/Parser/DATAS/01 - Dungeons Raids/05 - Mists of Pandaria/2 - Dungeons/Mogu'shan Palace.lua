@@ -349,13 +349,6 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					},
 				}),
 			}),
-			-- #if AFTER 7.1.5.23360
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 321 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 })));

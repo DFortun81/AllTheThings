@@ -253,13 +253,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					})
 				}
 			}),
-			-- #if AFTER 6.2.3.20601
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 255 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 })));

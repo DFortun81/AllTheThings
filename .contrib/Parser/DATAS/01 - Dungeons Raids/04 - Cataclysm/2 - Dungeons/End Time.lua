@@ -142,13 +142,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					i(72897),	-- Arrow of Time
 				})),
 			}),
-			-- #if AFTER 6.2.3.20601
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 184 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 }));

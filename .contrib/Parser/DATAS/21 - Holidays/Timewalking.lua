@@ -19,7 +19,7 @@ TIMEWALKING_HEADER = createHeader({
 -- Helper function to build a CRS list for the Timereaver Mount.
 -- Since this data is all in the same file, we no longer have to do this as part of a post-processor.
 local TIMEWALKING_DUNGEON_CREATURE_IDS = {};
-local inst_tw = function(id, t)
+function inst_tw(id, t)
 	t = inst(id, t);
 	
 	-- Look for the CreatureID's
@@ -39,6 +39,17 @@ local inst_tw = function(id, t)
 		end
 	end
 	return t;
+end
+function AddInstancesToRotation(expansionTier, argument1, ...)
+	local instances = {};
+	for i,instanceID in ipairs(type(argument1) == "table" and argument1 or { argument1, ... }) do
+		if instanceID then
+			table.insert(instances, inst(instanceID, {
+				d(TIMEWALKING_DUNGEON, { ["sym"] = {{"sub", "tw_instance", instanceID }}, }),
+			}));
+		end
+	end
+	root(ROOTS.Instances, tier(expansionTier, instances));
 end
 
 root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
@@ -150,6 +161,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 		}),
 	},
 })));
+
+
 
 -- The Burning Crusade Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, {
@@ -1100,6 +1113,30 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 		})),
 	}),
 })));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(TBC_TIER, {
+	-- #if AFTER 7.2.5.23910
+	751,	-- Black Temple, not originally included with the rotation
+	-- #endif
+	
+	-- Dungeons
+	249,	-- Magisters' Terrace
+	250,	-- Mana Tombs
+	259,	-- The Shattered Halls
+	
+	-- #if AFTER 9.1.5
+	256,	-- The Blood Furnace
+	257,	-- The Botanica
+	262,	-- The Underbog
+	-- #else
+	254,	-- The Arcatraz
+	255,	-- The Black Morass
+	260,	-- The Slave Pens
+	-- #endif
+});
+
 
 -- Wrath of the Lich King Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, {
@@ -2175,6 +2212,31 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 	}),
 })));
 
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(WOTLK_TIER, {
+	-- #if AFTER 7.2.5.23910
+	759,	-- Ulduar, not originally included with the rotation
+	-- #endif
+	
+	-- Dungeons
+	274,	-- Gundrak
+	275,	-- Halls of Lightning
+	281,	-- The Nexus
+	
+	-- #if AFTER 9.1.5
+	272,	-- Azjol-Nerub
+	280,	-- The Forge of Souls
+	285,	-- Utgarde Keep
+	-- #else
+	271,	-- Ahn'kahet: The Old Kingdom
+	278,	-- Pit of Saron
+	286,	-- Utgarde Pinnacle
+	-- #endif
+});
+
+
+
 -- Cataclysm Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT, {
 	tier(CATA_TIER, {
@@ -2959,6 +3021,28 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 	}),
 })));
 
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(CATA_TIER, {
+	-- #if AFTER 8.2.5.31958
+	78,	-- Firelands not originally included with the rotation
+	-- #endif
+	
+	-- Dungeons
+	184,	-- End Time
+	 69,	-- Lost City of the Tol'vir
+	 67,	-- The Stonecore
+	 68,	-- The Vortex Pinnacle
+	 65,	-- Throne of the Tides
+	
+	-- #if AFTER 9.1.5
+	 66,	-- Blackrock Caverns
+	-- #else
+	 71,	-- Grim Batol
+	-- #endif
+});
+
+
 -- #if AFTER 7.1.5.23360
 -- Mists of Pandaria Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, {
@@ -3391,7 +3475,29 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 		}),
 	}),
 })));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(MOP_TIER, {
+	-- Raid not originally included with the rotation
+	-- It is expected that the raid will be Throne of Thunder.
+	
+	-- Dungeons
+	303,	-- Gate of the Setting Sun
+	321,	-- Mogu'shan Palace
+	312,	-- Shado-Pan Monastery
+	302,	-- Stormstout Brewery
+	313,	-- Temple of the Jade Serpent
+	
+	-- #if AFTER 9.1.5
+	246,	-- Scholomance
+	-- #else
+	324,	-- Siege of Niuzao Temple
+	-- #endif
+});
 -- #endif
+
+
 
 -- #if AFTER 8.1.5.29701
 -- Warlords of Draenor Timewalking
@@ -4228,6 +4334,26 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 		}),
 	}),
 })));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(WOD_TIER, {
+	-- Raid not originally included with the rotation
+	-- It is expected that the raid will be Blackrock Foundry.
+	
+	-- Dungeons
+	547,	-- Auchindoun
+	385,	-- Bloodmaul Slag Mines
+	537,	-- Shadowmoon Burial Grounds
+	476,	-- Skyreach
+	556,	-- The Everbloom
+	
+	-- #if AFTER 9.1.5
+	536,	-- Grimrail Depot
+	-- #else
+	558,	-- Iron Docks
+	-- #endif
+});
 -- #endif
 
 -- #if AFTER 9.1.5
@@ -4790,6 +4916,22 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 		}),
 	}),
 })));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(LEGION_TIER, {
+	-- Raid not originally included with the rotation
+	-- It is expected that the raid will be Nighthold.
+	
+	-- Dungeons
+	740,	-- Black Rook Hold
+	800,	-- Court of Stars
+	762,	-- Darkheart Thicket
+	716,	-- Eye of Azshara
+	767,	-- Neltharion's Lair
+	707,	-- Vault of the Wardens
+});
+
 root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, {
 	q(65176),	-- learning Ensemble: Ravencrest's Battleplate (188209)
 }));
