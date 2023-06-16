@@ -11,7 +11,7 @@ TRIAL_OF_STYLE_HEADER = createHeader({
 	},
 });
 local TRIAL_OF_STYLE_TOKEN = 151134;
-root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, bubbleDown({ ["timeline"] = { "added 7.2.5" } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, bubbleDownSelf({ ["timeline"] = { "added 7.2.5" } }, {
 	n(REWARDS, {
 		i(TRIAL_OF_STYLE_TOKEN),
 		i(147573),	-- Trial of Style Reward: First Place

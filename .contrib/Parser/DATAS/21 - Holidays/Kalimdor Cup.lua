@@ -11,7 +11,7 @@ KALIMDOR_CUP_HEADER = createHeader({
 	},
 });
 local RIDERS_OF_AZEROTH_BADGE = 2588;
-root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, n(KALIMDOR_CUP_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(17712, {	-- Kalimdor: Bronze
 

@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+-- #if AFTER CATA
 -- TODO: Crieve is going to overhaul this file!
 DARKMOON_FAIRE_HEADER = createHeader({
 	readable = "Darkmoon Faire",
@@ -2889,3 +2890,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 }));
+-- #endif

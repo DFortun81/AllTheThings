@@ -10,7 +10,7 @@ THOUSAND_BOAT_BASH_HEADER = createHeader({
 		en = "Thousand Boat Bash",
 	},
 });
-root(ROOTS.Holidays, applyevent(EVENTS.THOUSAND_BOAT_BASH, n(THOUSAND_BOAT_BASH_HEADER, bubbleDown({ ["timeline"] = { "added 7.1.5" } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.THOUSAND_BOAT_BASH, n(THOUSAND_BOAT_BASH_HEADER, bubbleDownSelf({ ["timeline"] = { "added 7.1.5" } }, {
 	n(WORLD_QUESTS, sharedData({
 		["description"] = "Thousand Boat Bash must be available for this World Quest to display.",
 		["isWorldQuest"] = true,

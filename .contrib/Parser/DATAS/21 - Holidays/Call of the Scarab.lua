@@ -10,7 +10,7 @@ CALL_OF_THE_SCARAB_HEADER = createHeader({
 		en = "Call of the Scarab",
 	},
 });
-root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, bubbleDown({ ["timeline"] = { "added 7.1.5" } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, bubbleDownSelf({ ["timeline"] = { "added 7.1.5" } }, {
 	["maps"] = { SILITHUS },
 	["g"] = {
 		n(QUESTS, {

@@ -11,6 +11,6 @@ SECRETS_OF_AZEROTH_HEADER = createHeader({
 	},
 });
 --[[
-root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, n(SECRETS_OF_AZEROTH_HEADER, {
+root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 }))));
 --]]
