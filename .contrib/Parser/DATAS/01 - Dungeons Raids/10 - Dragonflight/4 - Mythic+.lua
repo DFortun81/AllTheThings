@@ -5,11 +5,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 	n(MYTHIC_PLUS, {
 		i(201471),	-- Story of a Spectacular Victory
 		i(200686, {	-- Primal Focus
+			-- #if BEFORE 10.1
 			["description"] = "Drops in M+ 11-15",
+			-- #endif
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 		}),
 		i(190455, {	-- Concentrated Primal Focus
+			-- #if BEFORE 10.1
 			["description"] = "Drops in M+ 16+",
+			-- #endif
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 		}),
 		i(204075, {	-- Whelping's Shadowflame Crest Fragment
