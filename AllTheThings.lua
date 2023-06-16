@@ -2084,7 +2084,7 @@ local function GetUnobtainableTexture(group)
 		app.print("Invalid use of GetUnobtainableTexture", group);
 		return;
 	end
-	
+
 	-- Determine the texture color, default is green for events.
 	local filter, u = 4, group.u;
 	if u then
@@ -13216,17 +13216,17 @@ app.GetEventCache = function()
 		-- If our cache is still leased, then simply return it.
 		return cache;
 	end
-	
+
 	-- Create a new cache with a One Week Lease
 	local anyEvents = false;
 	cache = {};
 	cache.lease = now + 604800;
-	
+
 	-- Go back 6 months and then forward to the next year
 	local date = C_DateAndTime.GetCurrentCalendarTime();
 	C_Calendar.SetAbsMonth(date.month, date.year);
 	C_Calendar.SetMonth(-6);
-	
+
 	for offset=-6,12,1 do
 		local monthInfo = C_Calendar.GetMonthInfo(0);
 		for day=1,monthInfo.numDays,1 do
@@ -13279,7 +13279,7 @@ app.GetEventCache = function()
 		end
 		C_Calendar.SetMonth(1);
 	end
-	
+
 	-- If there were any events, cache it!
 	if anyEvents then SetDataMember("EventCache", cache); end
 	C_Calendar.SetAbsMonth(date.month, date.year);
@@ -13287,7 +13287,7 @@ app.GetEventCache = function()
 end
 local function GetEventTimeString(d)
 	if d then
-		return format("%s, %s %02d, %d at %02d:%02d", 
+		return format("%s, %s %02d, %d at %02d:%02d",
 			CALENDAR_WEEKDAY_NAMES[d.weekday],
 			CALENDAR_FULLDATE_MONTH_NAMES[d.month],
 			d.monthDay, d.year, d.hour, d.minute );
@@ -13468,7 +13468,7 @@ app.GetEventName = function(e)
 	return "Event #" .. e;
 end
 app.GetEventTooltipNoteForGroup = function(group)
-	return L["EVENT_TOOLTIPS"][group.e] or ("|CFF00FFDE" .. L["REQUIRES"] .. "|r" 
+	return L["EVENT_TOOLTIPS"][group.e] or ("|CFF00FFDE" .. L["REQUIRES"] .. "|r"
 	.. DESCRIPTION_SEPARATOR .. "|CFF00FFDE" .. app.GetEventName(group.e) .. "|r");
 end
 app.GetEventTimeStrings = function(nextEvent)
@@ -14942,19 +14942,20 @@ end
 app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
 -- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
 -- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
-function app.RecursiveFirstParentWithField(group, field, followSource)
+local function RecursiveFirstParentWithField(group, field, followSource)
 	if group then
-		return (group[field] and group) or app.RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
+		return (group[field] and group) or RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
 	end
 end
+app.RecursiveFirstParentWithField = RecursiveFirstParentWithField;
 -- Returns the first encountered group's value tracing upwards in parent hierarchy which has a value for the provided field.
 -- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
-function app.RecursiveFirstParentWithFieldValue(group, field, followSource)
+local function RecursiveFirstParentWithFieldValue(group, field, followSource)
 	if group then
-		return group[field] or app.RecursiveFirstParentWithFieldValue(followSource and group.sourceParent or group.parent, field);
+		return group[field] or RecursiveFirstParentWithFieldValue(followSource and group.sourceParent or group.parent, field);
 	end
 end
-
+app.RecursiveFirstParentWithFieldValue = RecursiveFirstParentWithFieldValue;
 -- Returns the first encountered group tracing upwards in direct parent hierarchy which has a value for the provided field
 local function RecursiveFirstDirectParentWithField(group, field)
 	if group then
