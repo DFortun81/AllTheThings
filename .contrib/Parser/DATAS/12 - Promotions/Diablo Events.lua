@@ -25,11 +25,12 @@ DIABLO_TWENTIETH_ANNIVERSARY = createHeader({
 		cn = "暗黑破坏神20周年庆",
 	},
 });
+A_GREEDY_EMISSARY = 1382;
 GREEDY_EMISSARY_EVENT = createHeader({
 	-- https://www.wowhead.com/event=1382/a-greedy-emissary
 	readable = "A Greedy Emissary",
 	icon = "Interface\\Icons\\inv_misc_bag_horadricsatchel",
-	eventID = 1382,
+	eventID = A_GREEDY_EMISSARY,
 	text = {
 		en = "A Greedy Emissary",
 		es = "Un Emisario Codicioso",
@@ -87,7 +88,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 			}),
 		},
 	})),
-	n(GREEDY_EMISSARY_EVENT, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.99999" } }, {
+	applyevent(A_GREEDY_EMISSARY, n(GREEDY_EMISSARY_EVENT, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.99999" } }, {
 		-- Event begins on May 25, 2023, and ends on June 13, 2023.
 		n(ACHIEVEMENTS, {
 			ach(18258, {	--	Little Lord of Lies
@@ -140,7 +141,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 				}),
 			},
 		}),
-	})),
+	}))),
 }));
 -- #endif
 
