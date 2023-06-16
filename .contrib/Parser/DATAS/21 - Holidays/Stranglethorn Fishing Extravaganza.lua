@@ -26,9 +26,6 @@ local DREAD_PIRATE_RING = i(122529, {	-- Dread Pirate Ring
 });
 root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER, {
 	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
-	-- #if BEFORE WRATH
-	["OnUpdate"] = [[function() _.Settings:CheckWeekDay(]] .. EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA .. [[, 1); end]],
-	-- #endif
 	["maps"] = {
 		-- #if AFTER CATA
 		THE_CAPE_OF_STRANGLETHORN,

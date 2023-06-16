@@ -447,11 +447,6 @@ settings.CheckSeasonalDate = function(self, eventID, startMonth, startDay, endMo
 	-- TODO: If AllTheThings is ever going to support OG Classic in this addon, this statement is untrue currently.
 	app.PrintDebug("CheckSeasonalDate: This should no longer be called")
 end
-settings.CheckWeekDay = function(self, eventID, weekDay)
-	app.ActiveEvents[eventID] = date("*t").wday == weekDay;
-	-- TODO: If AllTheThings is ever going to support OG Classic in this addon, this statement is untrue currently.
-	app.PrintDebug("CheckWeekDay: This should no longer be called")
-end
 settings.Get = function(self, setting, container)
 	return RawSettings.General[setting];
 end
