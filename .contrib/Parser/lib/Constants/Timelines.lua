@@ -1,6 +1,9 @@
 ----------------------------
 -- WRATH OF THE LICH KING --
 ----------------------------
+CREATED_3_0_1 = "created 3.0.1.8634";					-- Wrath of the Lich King 3.0.2/Alpha Launch on ?, 2008
+ADDED_3_0_1 = "added 3.0.1.8634";						-- Wrath of the Lich King 3.0.2/Alpha Launch on ?, 2008
+REMOVED_3_0_1 = "removed 3.0.1.8634";					-- Wrath of the Lich King 3.0.2/Alpha Launch on ?, 2008
 CREATED_3_0_2 = "created 3.0.2.9056";					-- Wrath of the Lich King 3.0.2/Pre-Patch Launch on October 14th, 2008
 ADDED_3_0_2 = "added 3.0.2.9056";						-- Wrath of the Lich King 3.0.2/Pre-Patch Launch on October 14th, 2008
 REMOVED_3_0_2 = "removed 3.0.2.9056";					-- Wrath of the Lich King 3.0.2/Pre-Patch Launch on October 14th, 2008
@@ -75,6 +78,9 @@ REMOVED_4_3_2 = "removed 4.3.2.15211";					-- Cataclysm 4.3.2 Launch on January 
 -----------------------
 -- MISTS OF PANDARIA --
 -----------------------
+CREATED_5_0_3 = "created 5.0.3.15882";					-- Mists of Pandaria 5.0.3/Beta Launch on July 13th, 2012
+ADDED_5_0_3 = "added 5.0.3.15882";						-- Mists of Pandaria 5.0.3/Beta Launch on July 13th, 2012
+REMOVED_5_0_3 = "removed 5.0.3.15882";					-- Mists of Pandaria 5.0.3/Beta Launch on July 13th, 2012
 CREATED_5_0_4 = "created 5.0.4.16016";					-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
 ADDED_5_0_4 = "added 5.0.4.16016";						-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
 REMOVED_5_0_4 = "removed 5.0.4.16016";					-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
@@ -97,6 +103,9 @@ REMOVED_5_4_7 = "removed 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on 
 -------------------------
 -- WARLORDS OF DRAENOR --
 -------------------------
+CREATED_6_0_1 = "created 6.0.1.18179";					-- Warlords of Draenor 6.0.2/Alpha Launch on April 24, 2014
+ADDED_6_0_1 = "added 6.0.1.18179";						-- Warlords of Draenor 6.0.2/Alpha Launch on April 24, 2014
+REMOVED_6_0_1 = "removed 6.0.1.18179";					-- Warlords of Draenor 6.0.2/Alpha Launch on April 24, 2014
 CREATED_6_0_2 = "created 6.0.2.19027";					-- Warlords of Draenor 6.0.2/Pre-Patch Launch on October 14th, 2014
 ADDED_6_0_2 = "added 6.0.2.19027";						-- Warlords of Draenor 6.0.2/Pre-Patch Launch on October 14th, 2014
 REMOVED_6_0_2 = "removed 6.0.2.19027";					-- Warlords of Draenor 6.0.2/Pre-Patch Launch on October 14th, 2014
@@ -128,6 +137,9 @@ REMOVED_6_2_4 = "removed 6.2.4.21345";					-- Warlords of Draenor 6.2.4 Launch o
 ------------
 -- LEGION --
 ------------
+CREATED_7_0_1 = "created 7.0.1.20740";					-- Legion 7.0.1/Alpha Launch on November 18, 2015
+ADDED_7_0_1 = "added 7.0.1.20740";						-- Legion 7.0.1/Alpha Launch on November 18, 2015
+REMOVED_7_0_1 = "removed 7.0.1.20740";					-- Legion 7.0.1/Alpha Launch on November 18, 2015
 CREATED_7_0_3 = "created 7.0.3.22248";					-- Legion 7.0.3/Pre-Patch Launch on July 19th, 2016
 ADDED_7_0_3 = "added 7.0.3.22248";						-- Legion 7.0.3/Pre-Patch Launch on July 19th, 2016
 REMOVED_7_0_3 = "removed 7.0.3.22248";					-- Legion 7.0.3/Pre-Patch Launch on July 19th, 2016
@@ -187,7 +199,7 @@ REMOVED_8_3_7 = "removed 8.3.7.35249";					-- Battle for Azeroth 8.3.7 Launch on
 -----------------
 -- SHADOWLANDS --
 -----------------
-CREATED_9_0_1 = "crated 9.0.1.36216";					-- Shadowlands 9.0.1/Pre-Patch Launch on October 13th, 2020
+CREATED_9_0_1 = "created 9.0.1.36216";					-- Shadowlands 9.0.1/Pre-Patch Launch on October 13th, 2020
 ADDED_9_0_1 = "added 9.0.1.36216";						-- Shadowlands 9.0.1/Pre-Patch Launch on October 13th, 2020
 REMOVED_9_0_1 = "removed 9.0.1.36216";					-- Shadowlands 9.0.1/Pre-Patch Launch on October 13th, 2020
 CREATED_9_0_2 = "created 9.0.2.36639";					-- Shadowlands 9.0.2/Pre-Patch Launch on November 17th, 2020
@@ -224,7 +236,7 @@ REMOVED_10_0_0 = "removed 10.0.0.46293";				-- Dragonflight 10.0.0/Pre-Patch Lau
 CREATED_10_0_2 = "created 10.0.2.46658";				-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
 ADDED_10_0_2 = "added 10.0.2.46658";					-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
 REMOVED_10_0_2 = "removed 10.0.2.46658";				-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
-CREATED_10_0_2_LAUNCH = "added 10.0.2.46801";			-- Dragonflight Launch on November 28th, 2022
+CREATED_10_0_2_LAUNCH = "created 10.0.2.46801";			-- Dragonflight Launch on November 28th, 2022
 ADDED_10_0_2_LAUNCH = "added 10.0.2.46801";				-- Dragonflight Launch on November 28th, 2022
 REMOVED_10_0_2_LAUNCH = "removed 10.0.2.46801";			-- Dragonflight Launch on November 28th, 2022
 CREATED_10_0_5 = "created 10.0.5.47799";				-- Dragonflight 10.0.5 Launch on January 24th, 2023

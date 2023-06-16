@@ -15,17 +15,17 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	filter(BAGS),
 	filter(BATTLE_PETS),
 	-- #if AFTER CATA
-	n(CLASS_TRIAL),			-- completed up to 10.0.7
+	n(CLASS_TRIAL),			-- completed up to 10.1.0
 	-- #endif
 	filter(CONSUMABLES),
 	n(FACTIONS),
-	n(FLIGHT_PATHS),		-- completed up to 10.0.7
-	n(FOLLOWERS),			-- completed up to 10.0.7
-	filter(ILLUSIONS),		-- completed up to 10.0.7
+	n(FLIGHT_PATHS),		-- completed up to 10.1.0
+	n(FOLLOWERS),			-- completed up to 10.1.0
+	filter(ILLUSIONS),		-- completed up to 10.1.0
 	n(MAPS),
 	filter(MISC),
 	filter(MOUNTS),
-	n(PARTY_SYNC, {	-- completed up to 10.0.7
+	n(PARTY_SYNC, {	-- completed up to 9.2.5
 		["timeline"] = { "added 8.2.5" },
 	}),
 	n(PROFESSIONS, {

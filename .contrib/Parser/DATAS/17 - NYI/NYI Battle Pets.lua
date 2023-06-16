@@ -5,6 +5,7 @@
 
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	filter(BATTLE_PETS, {
+		-- TODO:
 		i(21168),	-- Baby Shark
 		i(39148),	-- Baby Coralshell Turtle
 		i(66070),	-- Lizzy
@@ -31,11 +32,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- #endif
 		tier(MOP_TIER, {
 			-- 5.0.4
-			tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { "created 5.0.4" } }, {
+			tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 			})),
 
 			-- 5.1.0
-			tier(MOP_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 5.1.0" } }, {
+			tier(MOP_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_1_0 } }, {
 				-- Trainer Pets --
 				pet(1130),	-- Crimson (PET!)
 				pet(1137),	-- Darnak the Tunneler (PET!)
@@ -57,7 +58,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 5.2.0
-			tier(MOP_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 5.2.0" } }, {
+			tier(MOP_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
 				-- Trainer Pets --
 				pet(1193),	-- Dos-Ryga (PET!)
 				pet(1187),	-- Gorespine (PET!)
@@ -72,13 +73,13 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 5.3.0
-			tier(MOP_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 5.3.0" } }, {
+			tier(MOP_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_3_0 } }, {
 				-- Trainer Pets --
 				pet(1247),	-- Doopy (PET!)
 			})),
 
 			-- 5.4.0
-			tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { "created 5.4.0" } }, {
+			tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
 				-- Trainer Pets --
 				pet(1301),	-- Alex (PET!)
 				pet(1278),	-- Au (PET!)
@@ -123,7 +124,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(WOD_TIER, {
 			-- 6.0.2
-			tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 6.0.2" } }, {
+			tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 				-- Trainer Pets --
 				pet(1503),	-- Acidtooth (PET!)
 				pet(1559),	-- Apexis Guardian (PET!)
@@ -223,7 +224,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 6.1.0
-			tier(WOD_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 6.1.0" } }, {
+			tier(WOD_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_6_1_0 } }, {
 				-- Trainer Pets --
 				pet(1647),	-- Bones (PET!)
 				pet(1653),	-- Brisby (PET!)
@@ -243,7 +244,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 6.2.0
-			tier(WOD_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 6.2.0" } }, {
+			tier(WOD_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_6_2_0 } }, {
 				-- Trainer Pets --
 				pet(1681),	-- Bleakclaw (PET!)
 				pet(1674),	-- Chaos Pup (PET!)
@@ -264,7 +265,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(LEGION_TIER, {
 			-- 7.0.3
-			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
+			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 				-- Trainer Pets --
 				pet(1893),	-- Allured Tadpole (PET!)
 				pet(1860),	-- Ancient Catacomb Spider (PET!)
@@ -368,7 +369,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 7.1.0
-			tier(LEGION_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 7.1.0" } }, {
+			tier(LEGION_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_1_0 } }, {
 				-- Trainer Pets --
 				pet(1982),	-- Buzz (PET!)
 				pet(1983),	-- Cherry (PET!)
@@ -381,7 +382,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 7.2.0
-			tier(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 7.2.0" } }, {
+			tier(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 				-- Trainer Pets --
 				pet(1996),	-- Budding Everliving Spore (PET!)
 				pet(1988),	-- Deviate Chomper (PET!)
@@ -409,7 +410,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 7.2.5
-			tier(LEGION_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 7.2.5" } }, {
+			tier(LEGION_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_5 } }, {
 				-- Trainer Pets --
 				pet(2033),	-- "Captain" Klutz (PET!)
 				pet(2027),	-- Angry Geode (PET!)
@@ -430,7 +431,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 7.3.0
-			tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
+			tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
 				-- Trainer Pets --
 				pet(2097),	-- Baneglow (PET!)
 				pet(2108),	-- Bloat (PET!)
@@ -461,7 +462,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(BFA_TIER, {
 			-- 8.0.1
-			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 				-- Trainer Pets --
 				pet(2204),	-- "Fixed" Remote Control Rocket Chicken (PET!)
 				pet(2203),	-- "Repaired" Portable Fire Starter (PET!)
@@ -565,7 +566,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 8.1.0
-			tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 8.1.0" } }, {
+			tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
 				-- Trainer Pets --
 				pet(2500),	-- Accelerated Defrosting Unit (PET!)
 				pet(2490),	-- Automated Drilling Machine (PET!)
@@ -602,7 +603,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 8.1.5
-			tier(BFA_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 8.1.5" } }, {
+			tier(BFA_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
 				-- With SpeciesID Attached
 				i(154902, {	-- Perculia's Peculiar Parrot (PET!)
 					["modelID"] = 58823,
@@ -610,7 +611,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 8.2.0
-			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
+			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 				-- Trainer Pets --
 				pet(2609),	-- Belchling (PET!)
 				pet(2592),	-- Blackmane (PET!)
@@ -667,7 +668,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 8.3.0
-			tier(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
+			tier(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
 				-- Trainer Pets --
 				pet(2799),	-- Alpha (PET!)
 				pet(2856),	-- Aqir Sandcrawler (PET!)
@@ -709,7 +710,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
+			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 				-- Trainer Pets --
 				pet(2989),	-- Ash (PET!)
 				pet(2975),	-- Battery (PET!)
@@ -771,7 +772,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.0.2
-			tier(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 9.0.2" } }, {
+			tier(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
 				-- Trainer Pets --
 				pet(3070),	-- Briarpaw (PET!)
 				pet(3071),	-- Chittermaw (PET!)
@@ -788,7 +789,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.1.0
-			tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 9.1.0" } }, {
+			tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 				-- Trainer Pets --
 				pet(3091),	-- Churro (PET!)
 				pet(3155),	-- Gurgl (PET!)
@@ -803,7 +804,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.1.5
-			tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 9.1.5" } }, {
+			tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
 				-- Only SpeciesID
 				pet(3188, {	-- Trub'ul (PET!)
 					["modelID"] = 103091,
@@ -813,7 +814,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.2.0
-			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
+			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
 				-- Only SpeciesID
 				pet(3246, {	-- Tezpet (PET!)
 					["modelID"] = 92261,
@@ -821,7 +822,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.2.5
-			tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 9.2.5" } }, {
+			tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
 				-- Without SpeciesID Attached
 				i(190586),	-- Lil' Ursoc (PET!) [Item Never Available]
 			})),

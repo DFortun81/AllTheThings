@@ -177,10 +177,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["isDaily"] = true,
 				["g"] = {
 					i(204561),	-- Primalist Cache Key
+					i(204852),	-- Primalist Scriptures
 				},
 			}),
 			-- Iskaara
-			q(74909, {	-- New Catches [Confirmed]
+			q(74909, {	-- New Catches
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
 			}),
@@ -191,7 +192,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
-			q(74391, {	-- Harpooner's Challenge [Confirmed]
+			q(74391, {	-- Harpooner's Challenge
 				["sourceQuests"] = { 74909 },	-- New Catches
 				["sourceQuestNumRequired"] = 0, -- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200562 },	-- Turik

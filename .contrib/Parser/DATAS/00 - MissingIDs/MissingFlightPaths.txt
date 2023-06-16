@@ -1,9 +1,1 @@
-10.1.0.48480 
-fp(2860),	-- 10.1 UG - Campaign - Ch6 - Aberrus Upper Platform (SMART)
-fp(2866),	-- Cascades Canyon, Ohn'ahran Plains
-fp(2867),	-- The Throughway, Zaralek Cavern
-10.1.0.48661 
-fp(2874),	-- Old Loamm Road, Ohn'ahran Plains
-fp(2875),	-- Old Loamm Road, Zaralek Cavern
-fp(2876),	-- Lookout Breach, Zaralek Cavern
-fp(2877),	-- Lookout Breach, Azure Span
+Good Work! Nothing to do here!
