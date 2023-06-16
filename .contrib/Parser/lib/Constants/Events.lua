@@ -48,7 +48,8 @@ EVENTS = {
 	-- Add PVP Brawls?
 	-- TODO: Not wasting my time pasting this right now!
 
-	-- Timewalking, needs to be sorted.
+	-- Timewalking
+	TIMEWALKING = 1271,	-- Generic, "any" timewalking event
 	TIMEWALKING_OUTLAND_DUNGEON_EVENT = 559,
 	TIMEWALKING_NORTHREND_DUNGEON_EVENT = 562,
 	TIMEWALKING_CATACLYSM_DUNGEON_EVENT = 587,
@@ -57,6 +58,5 @@ EVENTS = {
 	TIMEWALKING_LEGION_DUNGEON_EVENT = 1263,	-- Alternative, possibly being 1271
 
 	-- These aren't eventIDs, they're groups of eventIDs...
-	TIMEWALKING = 1271,
 	WOW_ANNIVERSARY = 590,
 };

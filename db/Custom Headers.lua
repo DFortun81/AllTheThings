@@ -63,7 +63,7 @@ _.HeaderConstants = {
 	PILGRIMS_BOUNTY_HEADER = -1000260,
 	FEAST_OF_WINTER_VEIL_HEADER = -1000261,
 	DARKMOON_FAIRE_HEADER = -1000262,
-	TRIAL_OF_STYLE_HEADER = -1000265,
+	TRIAL_OF_STYLE_HEADER = -1000266,
 };
 
 local a = L.HEADER_EVENTS;
@@ -99,7 +99,8 @@ for key,value in pairs({
 	[-1000262] = 479,
 	[-1000263] = 424,
 	[-1000264] = 301,
-	[-1000265] = 691,
+	[-1000265] = 1271,
+	[-1000266] = 691,
 }) do a[key] = value; end
 
 local a = L.HEADER_ICONS;
@@ -357,7 +358,8 @@ for key,value in pairs({
 	[-1000262] = _.asset("Event_dmf"),
 	[-1000263] = "Interface/Icons/inv_fishingpole_03",
 	[-1000264] = "Interface/Icons/inv_misc_fish_06",
-	[-1000265] = _.asset("Holiday_Trialofstyle"),
+	[-1000265] = _.asset("Difficulty_Timewalking"),
+	[-1000266] = _.asset("Holiday_Trialofstyle"),
 }) do a[key] = value; end
 
 local a = L.HEADER_NAMES;
@@ -616,7 +618,8 @@ for key,value in pairs({
 	[-1000262] = "Darkmoon Faire",
 	[-1000263] = "Kalu'ak Fishing Derby",
 	[-1000264] = "Stranglethorn Fishing Extravaganza",
-	[-1000265] = "Trial of Style",
+	[-1000265] = GetDifficultyInfo(24),
+	[-1000266] = "Trial of Style",
 }) do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
@@ -664,6 +667,7 @@ for key,value in pairs({
 	[-1000238] = "The following item sets were implemented as boosted character rewards for recipients of the Scroll of Resurrection.\n\nThey were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
 	[-1000239] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
 	[-1000241] = "These were rewarded for logging in at least once per faction while the Warcraft movie was still in theaters.",
+	[-1000265] = "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Account Completionist that had 99% Ulduar completion and now only has 64% because your team duplicated the Source IDs rather than reuse the existing one.",
 }) do a[key] = value; end
 
 local a = L.HEADER_LORE;
@@ -1224,6 +1228,7 @@ for key,value in pairs({
 	[-1000031] = "淘气的秘密…",
 	[-1000038] = "世界任务是有时间限制的任务，可在特定地点进行，奖励不一。\n\n一定要经常查看 ATT 世界任务窗口(/attwq)，看看有什么限时的东西你应该去收藏！",
 	[-1000040] = "这些物品可以从可重复的宝箱、祈愿蟋蟀、世界任务或桌面任务中掉落。",
+	[-1000265] = "时光难度为物品创建新的源 ID，尽管它们的名称、外观和在收藏选项卡中的显示完全相同。\n\n向暴雪开发部提出请求：请清理源码数据库让时光/泰坦造物物品使用相同的源码作为基础，前提是外观和名称完全相同。这不仅会让数据库变得更加干净，而且会让完成者们对更多的时光内容的感到兴奋而不是恐惧。\n\n - Crieve，非常苦逼的战网完成度，本来有99%的奥杜尔完成度，现在只有64%，因为暴雪团队复制了源码，而不是重复使用现有的源码。",
 }) do a[key] = value; end
 end
 
@@ -1254,6 +1259,7 @@ for key,value in pairs({
 	[-1000031] = "Секретики...",
 	[-1000038] = "Локальные задания – это ограниченные по времени задания, доступные в определённых местах с переменными наградами.\n\nЧаще проверяйте окно локальных заданий ATT (/attwq), чтобы увидеть какие ограниченные по времени Штучки можно собрать!",
 	[-1000040] = "Эти предметы можно получить в награду из повторяемых сокровищ, заветных сверчков, локальных заданий или заданий командирского стола.",
+	[-1000265] = "Путешествия во времени без надобности создают новые ID Источников для предметов, несмотря на то, что они имеют те же имена, облики и отображение в Коллекции.\n\nУбедительная просьба разработчикам Blizzard: Пожалуйста, почистите базу данных ID Источников и сделайте варианты предметов из Путешествий во времени/Кованные титанами с тем же ID Источника, что и оригинал, поскольку названия и облики абсолютно идентичны. Не только сделает вашу базу данных чище, но и позволит Собирателям относиться к новым Путешествиям во времени с воодушевлением, нежели с раздражением.\n\n - Crieve, Очень Огорченный Собиратель, у которого теперь всего лишь 64% выполнение Ульдуара, когда было 99%, потому что ваша команда продублировала ID Источников вместо использования уже имеющихся.",
 }) do a[key] = value; end
 end
 

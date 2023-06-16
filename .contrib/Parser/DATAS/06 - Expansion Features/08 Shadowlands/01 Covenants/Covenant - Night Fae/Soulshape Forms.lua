@@ -11,10 +11,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 			q(62422, {	-- Ardenmoth Soul
 				["provider"] = { "i", 182165 },	-- Ardenmoth Soul
 			}),
-			q(65025, {	-- Boar Soul
+			applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, q(65025, {	-- Boar Soul
 				["provider"] = { "i", 187905 },	-- Boar Soul
-				["u"] = TIMEWALKING,
-			}),
+			})),
 			petbattle(q(64984, {	-- Bunny Soul
 				["provider"] = { "i", 187858 },	-- Bunny Soul
 			})),
@@ -38,10 +37,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["icon"] = 645526,
 				["description"] = "Talk to Choofa in the covenant sanctum."
 			}),
-			q(65024, {	-- Cloud Serpent Soul
+			applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, q(65024, {	-- Cloud Serpent Soul
 				["provider"] = { "i", 187904 },	-- Cloud Serpent Soul
-				["u"] = TIMEWALKING,
-			}),
+			})),
 			pvp(q(64651, {	-- Cobra Soul
 				["description"] = "Drops from rated PvP.",
 				["provider"] = { "i", 182167 },	-- Cobra Soul
@@ -90,14 +88,12 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Drops from Mythic Dungeons.",
 				["provider"] = { "i", 182173 },	-- Hyena Soul
 			}),
-			q(65023, {	-- Jormungar Soul
+			applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, q(65023, {	-- Jormungar Soul
 				["provider"] = { "i", 187903 },	-- Jormungar Soul
-				["u"] = TIMEWALKING,
-			}),
-			q(63609, {	-- Kodo Soul
+			})),
+			applyevent(EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT, q(63609, {	-- Kodo Soul
 				["provider"] = { "i", 185053 },	-- Kodo Soul
-				["u"] = TIMEWALKING,
-			}),
+			})),
 			q(62429, {	-- Leonine Soul
 				["provider"] = { "i", 182174 },	-- Leonine Soul
 			}),
@@ -113,10 +109,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 			q(64959, {	-- Otter Soul
 				["provider"] = { "i", 187818 },	-- Otter Soul
 			}),
-			q(65026, {	-- Owl Soul
+			applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, q(65026, {	-- Owl Soul
 				["provider"] = { "i", 187906 },	-- Owl Soul
-				["u"] = TIMEWALKING,
-			}),
+			})),
 			q(62432, {	-- Owlcat Soul
 				["provider"] = { "i", 182177 },	-- Owlcat Soul
 				-- ["crs"] = { 175732 },	-- Sylvanas Windrunner
@@ -171,10 +166,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 			q(63606, {	-- Spider Soul
 				["provider"] = { "i", 185050 },	-- Spider Soul
 			}),
-			q(65022, {	-- Sporebat Soul
+			applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, q(65022, {	-- Sporebat Soul
 				["provider"] = { "i", 187902 },	-- Sporebat Soul
-				["u"] = TIMEWALKING,
-			}),
+			})),
 			q(62435, {	-- Stag Soul
 				["provider"] = { "i", 182180 },	-- Stag Soul
 			}),

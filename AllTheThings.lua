@@ -3665,7 +3665,7 @@ local SubroutineCache = {
 		push(finalized, searchResults, o, "push", "headerID", app.HeaderConstants.COMMON_BOSS_DROPS);	-- Push into 'Common Boss Drops' header
 		finalize(finalized, searchResults);	-- capture current results
 		select(finalized, searchResults, o, "select", "instanceID", instanceID);	-- select this instance
-		where(finalized, searchResults, o, "where", "e", 1271);	-- only the instance which is marked as TIMEWALKING
+		where(finalized, searchResults, o, "where", "e", 1271, 559, 562, 587, 643, 1056, 1263, 1271);	-- only the instance which is marked as TIMEWALKING
 		pop(finalized, searchResults);	-- pop the instance header
 	end,
 	-- Wod Dungeon
@@ -10326,11 +10326,6 @@ local fields = {
 			return 1271;	-- TIMEWALKING event constant
 		end
 	end,
-	["description"] = function(t)
-		if t.difficultyID == 24 or t.difficultyID == 33 then
-			return L["WE_JUST_HATE_TIMEWALKING"];
-		end
-	end,
 };
 app.BaseDifficulty = app.BaseObjectFields(fields, "BaseDifficulty");
 app.CreateDifficulty = function(id, t)
@@ -13287,11 +13282,31 @@ local function GetEventTimeString(d)
 	return "??";
 end
 local UpcomingEventLeeway = 604800;	-- 86400, currently set to a week. 86400 is a day.
-local EventInformation = setmetatable({}, { __index = function(t, id)
+local EventInformation;
+EventInformation = setmetatable({}, { __index = function(t, id)
 	local info = app.GetEventCache()[id];
 	if info and info.times then
 		rawset(t, id, info);
 		return info;
+	elseif id == 1271 then	-- EVENTS.TIMEWALKING
+		local times = {};
+		for i,eventID in ipairs({ 559,562,587,643,1056,1263 }) do
+			local subinfo = EventInformation[eventID];
+			if subinfo and subinfo.times then
+				for j,schedule in ipairs(subinfo.times) do
+					schedule.subEventID = eventID;
+					tinsert(times, schedule);
+				end
+			end
+		end
+		if #times > 0 then
+			table.sort(times, function(a, b)
+				return a.start < b.start;
+			end);
+			info = { name = times[1].name, icon = times[1].icon, times = times };
+			rawset(t, id, info);
+			return info;
+		end
 	end
 	return {};
 end });

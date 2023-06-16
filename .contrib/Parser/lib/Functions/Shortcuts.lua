@@ -782,27 +782,6 @@ inst = function(id, t)									-- Create an INSTANCE Object
 		return struct("instanceID", id, t);
 	end
 end
-inst_tw = function(id, t)								-- Create a TIMEWALKING INSTANCE Object
-	t = inst(id, t);
-	t.u = TIMEWALKING;
-	-- Look for the CreatureID's
-	local groups = t.groups or t.g;
-	if groups then
-		for _,data in ipairs(groups) do
-			if data.encounterID then
-				if data.creatureID and data.creatureID > 0 then
-					table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, data.creatureID);
-				end
-				if data.crs then
-					for _,creatureID in ipairs(data.crs) do
-						table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, creatureID);
-					end
-				end
-			end
-		end
-	end
-	return t;
-end
 map = function(id, t)									-- Create a MAP Object
 	return struct("mapID", id, t);
 end

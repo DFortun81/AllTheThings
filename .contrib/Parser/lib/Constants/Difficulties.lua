@@ -23,6 +23,6 @@ DifficultyDB = {
 	[17] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
 	[18] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },	-- Event unused?
 	[23] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
-	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = TIMEWALKING },
-	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = TIMEWALKING },	-- unused?
+	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
+	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },	-- unused?
 };
