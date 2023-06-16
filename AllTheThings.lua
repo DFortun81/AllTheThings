@@ -4944,7 +4944,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		if group.u and (not group.crs or group.itemID or group.s) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
-			if group.u == 1 and app.RecursiveFirstParentWithField(group, "_missing", true) then
+			if group.u == 1 and app.RecursiveFirstParentWithFieldValue(group, "_missing", true) then
 				tinsert(info, { left = L["UNSORTED_DESC"], wrap = true, color = app.Colors.ChatLinkError });
 			else
 				tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
@@ -4995,7 +4995,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				local tooltipSourceFields = app.TooltipSourceFields;
 				tinsert(info, { left = L["CONTAINS"] });
 				local containCount, item, entry = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
-				local RecursiveParentField, SearchForObject = app.RecursiveFirstParentWithField, app.SearchForObject;
+				local RecursiveParentField, SearchForObject = app.RecursiveFirstParentWithFieldValue, app.SearchForObject;
 				for i=1,containCount do
 					item = entries[i];
 					entry = item.group;
@@ -14914,12 +14914,19 @@ end
 app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
 -- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
 -- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
-local function RecursiveFirstParentWithField(group, field, followSource)
+function app.RecursiveFirstParentWithField(group, field, followSource)
 	if group then
-		return group[field] or RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
+		return (group[field] and group) or app.RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
 	end
 end
-app.RecursiveFirstParentWithField = RecursiveFirstParentWithField;
+-- Returns the first encountered group's value tracing upwards in parent hierarchy which has a value for the provided field.
+-- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
+function app.RecursiveFirstParentWithFieldValue(group, field, followSource)
+	if group then
+		return group[field] or app.RecursiveFirstParentWithFieldValue(followSource and group.sourceParent or group.parent, field);
+	end
+end
+
 -- Returns the first encountered group tracing upwards in direct parent hierarchy which has a value for the provided field
 local function RecursiveFirstDirectParentWithField(group, field)
 	if group then
@@ -14927,6 +14934,7 @@ local function RecursiveFirstDirectParentWithField(group, field)
 	end
 end
 app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
+
 -- Cleans any groups which are nested under any group with any specified fields
 app.CleanInheritingGroups = function(groups, ...)
 	local arrs = select("#", ...);
@@ -15624,7 +15632,7 @@ function app:CreateMiniListForGroup(group)
 	local suffix = BuildSourceTextForChat(group, 1)
 		-- this portion is to ensure that custom slash command popouts have a unique name based on the stand-alone group (no parent)
 		.. " > " .. (group.text or "") .. (group.key or "NO_KEY") .. (group.key and group[group.key] or "NO_KEY_VAL")
-		..(app.RecursiveFirstParentWithField(group, "dynamic") or "");
+		..(app.RecursiveFirstParentWithFieldValue(group, "dynamic") or "");
 	local popout = app.Windows[suffix];
 	local showing = not popout or not popout:IsVisible();
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
