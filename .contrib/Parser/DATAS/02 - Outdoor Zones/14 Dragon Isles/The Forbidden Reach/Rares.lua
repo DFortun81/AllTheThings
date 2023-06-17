@@ -267,7 +267,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 			}),
 			n(200911, {	-- Volcanakk
-				["coord"] = { 53.6, 43.8, THE_FORBIDDEN_REACH },
+				["description"] = "The left coordinates is the entrance point to the cave, the mob is in the middle of the cave.",
+				["coords"] = { 
+					{ 74.51, 54.61, THE_FORBIDDEN_REACH },	-- Entrance
+					{ 78.51, 49.61, THE_FORBIDDEN_REACH },	-- Mob itself
+				},
 				["questID"] = 73225,
 				["g"] = {
 					bo(74351, true),

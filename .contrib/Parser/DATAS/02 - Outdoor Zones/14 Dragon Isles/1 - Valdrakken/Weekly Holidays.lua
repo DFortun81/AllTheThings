@@ -98,6 +98,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				petbattle(pvp(q(72721))),	-- The Very Best
 				q(72728),					-- The World Awaits
 			})),
+			-- Auto-accepted in various situations, so no coords/provider
+			n(QUESTS, sharedData({
+				["isWeekly"] = true,
+				["_drop"] = { "g" },	-- Drop Trash
+			}, {
+				pvp(q(47148, {			-- Something Different
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				})),
+			})),
 		}),
 	}),
 })));
