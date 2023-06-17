@@ -13568,9 +13568,6 @@ local fields = {
 	["collected"] = function(t)
 		return t.lifetimeRank >= (t.pvpRankID + 4);
 	end,
-	["u"] = function(t)
-		return 2;
-	end,
 	["OnTooltip"] = function(t)
 		GameTooltip:AddDoubleLine("Your lifetime highest rank: ", _G["PVP_RANK_" .. (t.lifetimeRank) .. "_" .. (app.FactionID == 2 and 1 or 0)], 1, 1, 1, 1, 1, 1);
 	end
