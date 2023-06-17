@@ -1057,12 +1057,12 @@ createHeader = function(data)
 	elseif not data.readable then
 		print("INVALID HEADER (missing 'readable')", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
 	elseif not (data.text and (type(data.text) == "string" or (type(data.text) == "table" and data.text.en))) then
-		print("INVALID HEADER", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
+		print("INVALID HEADER", data.readable, data.text);
 	else
 		if data.eventSchedule then
 			local schedule = "{";
 			local currentDate = os.date("*t");
-			if data.eventSchedule[1] == 1 then
+			if data.eventSchedule[1] == 1 then	-- Recurring, every year forever on the same dates.
 				local veryfirst = true;
 				for yearOffset = -1,1,1 do
 					if veryfirst then
@@ -1074,41 +1074,43 @@ createHeader = function(data)
 						year=currentDate.year + yearOffset,
 						month=data.eventSchedule[2],
 						monthDay=data.eventSchedule[3],
-						--day=0,		-- not used?
-						--weekday=7,	-- not used?
+						--weekday=7,	-- generated below
 						hour=data.eventSchedule[4],
 						minute=data.eventSchedule[5],
-						--second=0,	-- not used?
 					};
 					local endTime = {
 						year=currentDate.year + yearOffset,
 						month=data.eventSchedule[6],
 						monthDay=data.eventSchedule[7],
-						--day=0,		-- not used?
-						--weekday=7,	-- not used?
+						--weekday=7,	-- generated below
 						hour=data.eventSchedule[8],
 						minute=data.eventSchedule[9],
-						--second=0,	-- not used?
 					};
 					-- Feast of Winter Veil, for example, goes from Dec (Month 12) to Jan (Month 01)
 					if endTime.month < startTime.month then
 						endTime.year = endTime.year + 1;
 					end
 					
-					-- Append start & end as a timestamp
-					schedule = schedule .. "\n{\n\t[\"start\"] = " .. os.time({
+					-- Generate Time Stamps and add the weekday to the objects
+					local startTimeStamp = os.time({
 						year=startTime.year,
 						month=startTime.month,
 						day=startTime.monthDay,
 						hour=startTime.hour,
 						minute=startTime.minute,
-					}) .. ", [\"end\"] = " .. os.time({
+					});
+					local endTimeStamp = os.time({
 						year=endTime.year,
 						month=endTime.month,
 						day=endTime.monthDay,
 						hour=endTime.hour,
 						minute=endTime.minute,
-					}).. ",\n\t[\"startTime\"] = {";
+					});
+					startTime.weekday = os.date("*t", startTimeStamp).wday;
+					endTime.weekday = os.date("*t", endTimeStamp).wday;
+					
+					-- Append start & end as a timestamp
+					schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"end\"] = " .. endTimeStamp.. ",\n\t[\"startTime\"] = {";
 					local first = true;
 					for key,value in pairs(startTime) do
 						if first then
@@ -1132,8 +1134,139 @@ createHeader = function(data)
 					end
 					schedule = schedule .. "}\n}";
 				end
+			elseif data.eventSchedule[1] == 2 then	-- Recurring every month on the first Sunday until the next Sunday.
+				-- START_YEAR, START_MONTH
+				-- Example: 2023, 5
+				local eventIDs = data.eventIDs;
+				if not eventIDs then
+					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, MISSING EVENT IDs!");
+					return;
+				end
+				local totalEventIDs = #eventIDs;
+				if totalEventIDs < 1 then
+					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, EVENT IDs EMPTY!");
+					return;
+				end
+				
+				-- Calculate the difference between the specified month/year and the current month/year
+				local year, month, totalMonthOffset = 2021, 7, 0;--data.eventSchedule[2], data.eventSchedule[3], 0;
+				local currentYear, currentMonth = currentDate.year, currentDate.month;
+				--print(year, month, totalMonthOffset);
+				while year < currentYear do
+					while month <= 12 do
+						month = month + 1;
+						totalMonthOffset = totalMonthOffset + 1;
+					end
+					month = 1;
+					year = year + 1;
+				end
+				while month < currentMonth do
+					month = month + 1;
+					totalMonthOffset = totalMonthOffset + 1;
+				end
+				--print(year, month, totalMonthOffset, eventIDs[(totalMonthOffset % totalEventIDs) + 1]);
+				
+				-- Go back one month, to get last month's data.
+				totalMonthOffset = (totalMonthOffset + totalEventIDs) - 1;	-- Ensure the offset is 0 or more
+				month = month - 1;
+				if month == 0 then month = 12; end
+				
+				local veryfirst = true;
+				for monthOffset = 0,10,1 do
+					if veryfirst then
+						veryfirst = false;
+					else
+						schedule = schedule .. ",";
+					end
+					
+					-- Grab the current eventID
+					local eventID = eventIDs[(totalMonthOffset % totalEventIDs) + 1];
+					
+					-- Determine the first sunday
+					local startTime = {
+						year=year,
+						month=month,
+						monthDay=1,
+						--weekday=7,	-- generated below
+						hour=0,
+						minute=0,
+					};
+					local startTimeStamp = os.time({
+						year=startTime.year,
+						month=startTime.month,
+						day=startTime.monthDay,
+						hour=startTime.hour,
+						minute=startTime.minute,
+					});
+					
+					-- Find the first Sunday of the Month
+					for dayOffset = 1,14,1 do
+						if os.date("*t", startTimeStamp).wday == 1 then
+							break;
+						end
+						startTime.monthDay = startTime.monthDay + 1;
+						startTimeStamp = os.time({
+							year=startTime.year,
+							month=startTime.month,
+							day=startTime.monthDay,
+							hour=startTime.hour,
+							minute=startTime.minute,
+						});
+					end
+					
+					-- Determine the next Sunday
+					local endTime = {
+						year=startTime.year,
+						month=startTime.month,
+						monthDay=startTime.monthDay + 7,
+						--weekday=7,	-- generated below
+						hour=0,
+						minute=0,
+					};
+					local endTimeStamp = os.time({
+						year=endTime.year,
+						month=endTime.month,
+						day=endTime.monthDay,
+						hour=endTime.hour,
+						minute=endTime.minute,
+					});
+					startTime.weekday = os.date("*t", startTimeStamp).wday;
+					endTime.weekday = os.date("*t", endTimeStamp).wday;
+					
+					-- Append start & end as a timestamp
+					schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"remappedID\"] = " .. eventID .. ", [\"end\"] = " .. endTimeStamp .. ",\n\t[\"startTime\"] = {";
+					local first = true;
+					for key,value in pairs(startTime) do
+						if first then
+							first = false;
+						else
+							schedule = schedule .. ",";
+						end
+						schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
+					end
+					
+					-- Append end as a timestamp and endTime as a date object.
+					schedule = schedule .. "},\n\t[\"endTime\"] = {";
+					first = true;
+					for key,value in pairs(endTime) do
+						if first then
+							first = false;
+						else
+							schedule = schedule .. ",";
+						end
+						schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
+					end
+					schedule = schedule .. "}\n}";
+					
+					totalMonthOffset = totalMonthOffset + 1;
+					month = month + 1;
+					if month > 12 then
+						month = 1;
+						year = year + 1;
+					end
+				end
 			else
-				print("INVALID HEADER", data.readable or (type(data.text) == "table" and data.text.en) or data.text, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);
+				print("INVALID HEADER", data.readable, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);
 				return;
 			end
 			data.eventSchedule = schedule .. "}";

@@ -10,10 +10,19 @@ DARKMOON_FAIRE_HEADER = createHeader({
 	eventID = EVENTS.DARKMOON_FAIRE,	-- Darkmoon Island
 	-- #if BEFORE CATA
 	eventIDs = {
+		-- #if AFTER TBC
+		376,	-- Terrokar Forest
+		-- #endif
 		374,	-- Elwynn Forest
 		375,	-- Thunder Bluff
-		376,	-- Terrokar Forest
 	},
+	-- #if BEFORE WRATH
+	-- We have a calendar to pull from in Wrath Classic. :)
+	eventSchedule = {
+		2, -- Active First Sunday of Every Month until following Saturday at Midnight(DMF)
+		2023, 5	-- May 2022 in Terrokar Forest (TBC) / Elwynn Forest (ERA) (active 05/07 at 00:00, end 05/14 at 00:00)
+	},
+	-- #endif
 	-- #endif
 	text = {
 		en = "Darkmoon Faire",
