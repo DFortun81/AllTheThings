@@ -1062,7 +1062,67 @@ createHeader = function(data)
 		if data.eventSchedule then
 			local schedule = "{";
 			local currentDate = os.date("*t");
-			if data.eventSchedule[1] == 1 then	-- Recurring, every year forever on the same dates.
+			if data.eventSchedule[1] == 0 then	-- Set Start and End Date
+				local startTime = {
+					year=data.eventSchedule[2],
+					month=data.eventSchedule[3],
+					monthDay=data.eventSchedule[4],
+					--weekday=7,	-- generated below
+					hour=0,
+					minute=0,
+				};
+				local endTime = {
+					year=data.eventSchedule[5] or (currentDate.year + 1),
+					month=data.eventSchedule[6] or data.eventSchedule[3],
+					monthDay=data.eventSchedule[7] or data.eventSchedule[4],
+					--weekday=7,	-- generated below
+					hour=0,
+					minute=0,
+				};
+				
+				-- Generate Time Stamps and add the weekday to the objects
+				local startTimeStamp = os.time({
+					year=startTime.year,
+					month=startTime.month,
+					day=startTime.monthDay,
+					hour=startTime.hour,
+					minute=startTime.minute,
+				});
+				local endTimeStamp = os.time({
+					year=endTime.year,
+					month=endTime.month,
+					day=endTime.monthDay,
+					hour=endTime.hour,
+					minute=endTime.minute,
+				});
+				startTime.weekday = os.date("*t", startTimeStamp).wday;
+				endTime.weekday = os.date("*t", endTimeStamp).wday;
+				
+				-- Append start & end as a timestamp
+				schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"end\"] = " .. endTimeStamp.. ",\n\t[\"startTime\"] = {";
+				local first = true;
+				for key,value in pairs(startTime) do
+					if first then
+						first = false;
+					else
+						schedule = schedule .. ",";
+					end
+					schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
+				end
+				
+				-- Append end as a timestamp and endTime as a date object.
+				schedule = schedule .. "},\n\t[\"endTime\"] = {";
+				first = true;
+				for key,value in pairs(endTime) do
+					if first then
+						first = false;
+					else
+						schedule = schedule .. ",";
+					end
+					schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
+				end
+				schedule = schedule .. "}\n}";
+			elseif data.eventSchedule[1] == 1 then	-- Recurring, every year forever on the same dates.
 				local veryfirst = true;
 				for yearOffset = -1,1,1 do
 					if veryfirst then
