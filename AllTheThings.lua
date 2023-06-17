@@ -5310,11 +5310,11 @@ local function DetermineCraftedGroups(group, FillData)
 					-- not all Craft Order Recipes can actually be recrafted, so it's missing some possible outputs
 					recraftItems = GetRecraftItems(recipeID);
 					if #recraftItems > 0 then
-						app.PrintDebug(recipeID,"can recraft");
+						-- app.PrintDebug(recipeID,"can recraft");
 						craftableItemIDs[craftedItemID] = true;
 					else
 						skillID = GetRelativeValue(recipe, "skillID");
-						app.PrintDebug(recipeID,"requires",skillID,"and known:",skillID and knownSkills[skillID]);
+						-- app.PrintDebug(recipeID,"requires",skillID,"and known:",skillID and knownSkills[skillID]);
 
 						-- ensure this character can craft the recipe
 						if skillID then
