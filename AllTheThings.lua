@@ -5287,11 +5287,11 @@ local function DetermineCraftedGroups(group, FillData)
 
 	-- check if the item is BoP and needs skill filtering for current character, or debug mode
 	local filterSkill = not app.MODE_DEBUG and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
-
 	local craftableItemIDs = {};
 	-- item is BoP
 	-- if filterSkill then
-	local craftedItemID, searchRecipes, recipe, skillID;
+	local craftedItemID, recipe, skillID, recraftItems;
+	local Search, GetRecraftItems = app.SearchForObject, C_TradeSkillUI.GetRecraftItems;
 	-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
 	-- If the reagent itself is BOP, then only show things you can make.
 	-- find recipe(s) which creates this item
@@ -5303,20 +5303,28 @@ local function DetermineCraftedGroups(group, FillData)
 			-- app.PrintDebug("recipeID",recipeID);
 			-- item is BoP
 			if filterSkill then
-				searchRecipes = app.SearchForField("spellID", recipeID);
-				if searchRecipes and #searchRecipes > 0 then
-					recipe = searchRecipes[1];
-					skillID = GetRelativeValue(recipe, "skillID");
-					-- app.PrintDebug(recipeID,"requires",skillID,"and known:",skillID and knownSkills[skillID]);
+				recipe = Search("spellID",recipeID,"key");
+				if recipe then
+					-- Recipe can be recrafted, i.e. can be used in Crafting Order to another player with the Profession
+					-- TODO: maybe there's another way to check that a Recipe can be used in a crafting order because
+					-- not all Craft Order Recipes can actually be recrafted, so it's missing some possible outputs
+					recraftItems = GetRecraftItems(recipeID);
+					if #recraftItems > 0 then
+						app.PrintDebug(recipeID,"can recraft");
+						craftableItemIDs[craftedItemID] = true;
+					else
+						skillID = GetRelativeValue(recipe, "skillID");
+						app.PrintDebug(recipeID,"requires",skillID,"and known:",skillID and knownSkills[skillID]);
 
-					-- ensure this character can craft the recipe
-					if skillID then
-						if knownSkills and knownSkills[skillID] then
+						-- ensure this character can craft the recipe
+						if skillID then
+							if knownSkills and knownSkills[skillID] then
+								craftableItemIDs[craftedItemID] = true;
+							end
+						else
+						-- recipe without any skill requirement? weird...
 							craftableItemIDs[craftedItemID] = true;
 						end
-					else
-					-- recipe without any skill requirement? weird...
-						craftableItemIDs[craftedItemID] = true;
 					end
 				end
 			-- item is BoE
@@ -5330,7 +5338,7 @@ local function DetermineCraftedGroups(group, FillData)
 	local search;
 	for craftedItemID,_ in pairs(craftableItemIDs) do
 		-- Searches for a filter-matched crafted Item
-		search = app.SearchForObject("itemID",craftedItemID,"field");
+		search = Search("itemID",craftedItemID,"field");
 		if search then
 			search = CreateObject(search);
 		end
