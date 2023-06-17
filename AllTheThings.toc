@@ -5,24 +5,25 @@
 ## Title: AllTheThings
 ## IconTexture: Interface/Addons/AllTheThings/assets/logo_32x32
 ## Name: AllTheThings
-## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsArtifactsItems, AllTheThingsHarvestItems
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsArtifactsItems, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Version: @project-version@
+lib\LibStub\LibStub.lua
+lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
+lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 src\base.lua
+locales\en.lua
+src\Modules\Events.lua
 lib\Callback.lua
 lib\Runner.lua
 lib\Audio.lua
 lib\Refresh.lua
-lib\LibStub\LibStub.lua
-lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
-lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 db\Presets.lua
 db\CategoryDB.lua
 db\ObjectDB.lua
 db\RaceDB.lua
 db\ReagentsDB.lua
-locales\en.lua
 locales\en_auto.lua
 locales\es.lua
 locales\de.lua

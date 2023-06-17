@@ -277,3 +277,10 @@ end
 function app:ShowPopupDialogToReport(reportReason, text)
 	app:ShowPopupDialogWithMultiLineEditBox(text, nil, (reportReason or "Missing Data").."\n"..app.L["PLEASE_REPORT_MESSAGE"]..app.L["REPORT_TIP"]);
 end
+
+
+-- Define Modules
+app.Modules = {};
+
+-- Global Variables
+AllTheThingsSavedVariables = {};

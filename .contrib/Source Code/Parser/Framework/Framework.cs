@@ -4664,6 +4664,7 @@ namespace ATT
                     var keys = new List<long>();
                     var eventIDs = new Dictionary<long, long>();
                     var eventRemaps = new Dictionary<long, long>();
+                    var eventSchedules = new Dictionary<long, string>();
                     var icons = new Dictionary<long, string>();
                     var constants = new Dictionary<long, string>();
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
@@ -4687,6 +4688,10 @@ namespace ATT
                                         {
                                             eventRemaps[Convert.ToInt64(eventIDAsObj)] = eventID;
                                         }
+                                    }
+                                    if (header.TryGetValue("eventSchedule", out value))
+                                    {
+                                        eventSchedules[eventID] = value.ToString();
                                     }
                                 }
                                 if (header.TryGetValue("icon", out value))
@@ -4787,6 +4792,15 @@ namespace ATT
                             ExportObjectKeyValue(builder, pair.Key, pair.Value).AppendLine();
                         }
                         builder.AppendLine("}) do a[key] = value; end").AppendLine();
+                    }
+                    if (eventSchedules.Any())
+                    {
+                        builder.AppendLine("-- Programmatic Event Scheduling");
+                        foreach (var pair in eventSchedules)
+                        {
+                            builder.Append("_.Modules.Events.SetEventInformation(").Append(pair.Key).Append(", ").Append(pair.Value).Append(");").AppendLine();
+                        }
+                        builder.AppendLine();
                     }
 
                     builder.AppendLine("local a = L.HEADER_ICONS;").AppendLine("for key,value in pairs({");

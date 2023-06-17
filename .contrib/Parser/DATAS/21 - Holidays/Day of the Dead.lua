@@ -6,6 +6,13 @@ DAY_OF_THE_DEAD_HEADER = createHeader({
 	constant = "DAY_OF_THE_DEAD_HEADER",
 	icon = [[~_.asset("Holiday_Day_of_the_Dead")]],
 	eventID = EVENTS.DAY_OF_THE_DEAD,
+	-- #if BEFORE WRATH
+	eventSchedule = {
+		1, -- Recurring
+		11, 1, 11, 0,	-- 11/01 at 11 AM
+		11, 3, 11, 0	-- 11/03 at 11 AM
+	},
+	-- #endif
 	text = {
 		en = "Day of the Dead",
 		es = "Festividad de los Muertos",
@@ -26,10 +33,6 @@ local COSTUME_PROVIDERS = {
 	{ "i", 116891 },	-- "Snowy Owl" Contender's Costume
 };
 root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER, {
-	-- #if BEFORE WRATH
-	["description"] = "Start: 11/01 at 11:00 AM\nEnd: 11/03 at 11:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. EVENTS.DAY_OF_THE_DEAD .. [[, 11, 1, 11, 3); end]],
-	-- #endif
 	["timeline"] = { "added 3.2.2.10505" },
 	["groups"] = {
 		-- #if AFTER WRATH

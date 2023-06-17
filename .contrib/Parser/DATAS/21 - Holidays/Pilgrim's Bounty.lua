@@ -32,10 +32,6 @@ local HORDE_PILGRIM_MAPS = {
 };
 local ALL_PILGIM_MAPS = appendGroups(ALLIANCE_PILGRIM_MAPS, appendGroups(HORDE_PILGRIM_MAPS, {}));
 root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER, {
-	-- #if BEFORE WRATH
-	["description"] = "Start: 11/22 at 10:00 AM\nEnd: 11/29 at 9:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. EVENTS.PILGRIMS_BOUNTY .. [[, 11, 22, 11, 29); end]],
-	-- #endif
 	["timeline"] = { "added 3.1.0.9658" },
 	["groups"] = {
 		-- #if AFTER WRATH

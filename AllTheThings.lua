@@ -4942,7 +4942,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
 		end
 		if group.nextEvent then
-			local timeStrings = app.GetEventTimeStrings(group.nextEvent);
+			local timeStrings = app.Modules.Events.GetEventTimeStrings(group.nextEvent);
 			if timeStrings then
 				for i,timeString in ipairs(timeStrings) do
 					tinsert(info, 1, { left = timeString, wrap = true, color = app.Colors.TooltipDescription });
@@ -4968,7 +4968,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		if group.e then
-			local reason = app.GetEventTooltipNoteForGroup(group);
+			local reason = app.Modules.Events.GetEventTooltipNoteForGroup(group);
 			if reason then
 				local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
 				if right then
@@ -13202,329 +13202,12 @@ fields.saved = headerFields.savedAsQuest;
 fields.trackable = headerFields.trackableAsQuest;
 app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
 
--- Event Lib (using Headers!)
-do
-local remappedEventToMapID = {
-	[374] = 1429,	-- Elwynn Forest
-	[375] = 1412,	-- Mulgore
-	[376] = 1952,	-- Terrokar Forest
-};
-app.GetEventCache = function()
-	local now = C_DateAndTime.GetServerTimeLocal();
-	local cache = GetDataMember("EventCache");
-	if cache and (cache.lease or 0) > now then
-		-- If our cache is still leased, then simply return it.
-		return cache;
-	end
-
-	-- Create a new cache with a One Week Lease
-	local anyEvents = false;
-	cache = {};
-	cache.lease = now + 604800;
-
-	-- Go back 6 months and then forward to the next year
-	local date = C_DateAndTime.GetCurrentCalendarTime();
-	C_Calendar.SetAbsMonth(date.month, date.year);
-	C_Calendar.SetMonth(-6);
-
-	for offset=-6,12,1 do
-		local monthInfo = C_Calendar.GetMonthInfo(0);
-		for day=1,monthInfo.numDays,1 do
-			local numEvents = C_Calendar.GetNumDayEvents(0, day);
-			if numEvents > 0 then
-				for index=1,numEvents,1 do
-					local event = C_Calendar.GetDayEvent(0, day, index);
-					if event then -- If this is nil, then attempting to index it on the same line will toss an error.
-						if event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
-							local eventID = event.eventID;
-							local remappedID = L.EVENT_REMAPPING[eventID] or eventID;
-							if remappedID then
-								local t = cache[remappedID];
-								if not t then
-									t = {
-										["name"] = event.title,
-										["icon"] = event.iconTexture,
-										["times"] = {},
-									};
-									cache[remappedID] = t;
-									anyEvents = true;
-								end
-								local schedule = {
-									["start"] = time({
-										year=event.startTime.year,
-										month=event.startTime.month,
-										day=event.startTime.monthDay,
-										hour=event.startTime.hour,
-										minute=event.startTime.minute,
-									}),
-									["end"] = time({
-										year=event.endTime.year,
-										month=event.endTime.month,
-										day=event.endTime.monthDay,
-										hour=event.endTime.hour,
-										minute=event.endTime.minute,
-									}),
-									["startTime"] = event.startTime,
-									["endTime"] = event.endTime,
-								};
-								if remappedID ~= eventID then
-									schedule.remappedID = eventID;
-								end
-								tinsert(t.times, schedule);
-							end
-						end
-					end
-				end
-			end
-		end
-		C_Calendar.SetMonth(1);
-	end
-
-	-- If there were any events, cache it!
-	if anyEvents then SetDataMember("EventCache", cache); end
-	C_Calendar.SetAbsMonth(date.month, date.year);
-	return cache;
-end
-local function GetEventTimeString(d)
-	if d then
-		return format("%s, %s %02d, %d at %02d:%02d",
-			CALENDAR_WEEKDAY_NAMES[d.weekday],
-			CALENDAR_FULLDATE_MONTH_NAMES[d.month],
-			d.monthDay, d.year, d.hour, d.minute );
-	end
-	return "??";
-end
-local UpcomingEventLeeway = 604800;	-- 86400, currently set to a week. 86400 is a day.
-local EventInformation;
-EventInformation = setmetatable({}, { __index = function(t, id)
-	local info = app.GetEventCache()[id];
-	if info and info.times then
-		rawset(t, id, info);
-		return info;
-	elseif id == 1271 then	-- EVENTS.TIMEWALKING
-		local times = {};
-		for i,eventID in ipairs({ 559,562,587,643,1056,1263 }) do
-			local subinfo = EventInformation[eventID];
-			if subinfo and subinfo.times then
-				for j,schedule in ipairs(subinfo.times) do
-					schedule.subEventID = eventID;
-					tinsert(times, schedule);
-				end
-			end
-		end
-		if #times > 0 then
-			table.sort(times, function(a, b)
-				return a.start < b.start;
-			end);
-			info = { name = times[1].name, icon = times[1].icon, times = times };
-			rawset(t, id, info);
-			return info;
-		end
-	end
-	return {};
-end });
-local NextEventSchedule = setmetatable({}, { __index = function(t, id)
-	local info = EventInformation[id];
-	if info then
-		local times = info.times;
-		if times and #times > 0 then
-			local now = C_DateAndTime.GetServerTimeLocal();
-			local lastData;
-			for i,data in ipairs(times) do
-				lastData = data;
-				if now < data["end"] then
-					-- If the event is within the leeway, mark it active
-					if now > (data["start"] - UpcomingEventLeeway) then
-						rawset(app.ActiveEvents, id, true);
-					end
-					break;
-				end
-			end
-			rawset(t, id, lastData);
-			return lastData;
-		elseif id == 424 then -- EVENTS.KALUAK_FISHING_DERBY
-			local startTime = C_DateAndTime.GetCurrentCalendarTime();
-			local weekDay = date("*t").wday;
-			if weekDay < 7 then
-				startTime = C_DateAndTime.AdjustTimeByDays(startTime, 7 - weekDay);
-			end
-			startTime = {
-				year=startTime.year,
-				month=startTime.month,
-				monthDay=startTime.monthDay,
-				day=0,
-				weekday=7,
-				hour=14,
-				minute=0,
-				second=0,
-			};
-			local endTime = {
-				year=startTime.year,
-				month=startTime.month,
-				monthDay=startTime.monthDay,
-				day=0,
-				weekday=7,
-				hour=15,
-				minute=0,
-				second=0,
-			};
-			local lastData = {
-				["startTime"] = startTime,
-				["start"] = time({
-					year=startTime.year,
-					month=startTime.month,
-					day=startTime.monthDay,
-					hour=startTime.hour,
-					minute=startTime.minute,
-				}),
-				["endTime"] = endTime,
-				["end"] = time({
-					year=endTime.year,
-					month=endTime.month,
-					day=endTime.monthDay,
-					hour=endTime.hour,
-					minute=endTime.minute,
-				}),
-			};
-			rawset(t, id, lastData);
-			return lastData;
-		elseif id == 301 then -- EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA
-			local startTime = C_DateAndTime.GetCurrentCalendarTime();
-			local weekDay = date("*t").wday;
-			if weekDay > 1 then
-				startTime = C_DateAndTime.AdjustTimeByDays(startTime, 8 - weekDay);
-			end
-			startTime = {
-				year=startTime.year,
-				month=startTime.month,
-				monthDay=startTime.monthDay,
-				day=0,
-				weekday=1,
-				hour=14,
-				minute=0,
-				second=0,
-			};
-			local endTime = {
-				year=startTime.year,
-				month=startTime.month,
-				monthDay=startTime.monthDay,
-				day=0,
-				weekday=1,
-				hour=16,
-				minute=0,
-				second=0,
-			};
-			local lastData = {
-				["startTime"] = startTime,
-				["start"] = time({
-					year=startTime.year,
-					month=startTime.month,
-					day=startTime.monthDay,
-					hour=startTime.hour,
-					minute=startTime.minute,
-				}),
-				["endTime"] = endTime,
-				["end"] = time({
-					year=endTime.year,
-					month=endTime.month,
-					day=endTime.monthDay,
-					hour=endTime.hour,
-					minute=endTime.minute,
-				}),
-			};
-			rawset(t, id, lastData);
-			return lastData;
-		end
-	end
-end });
-app.ActiveEvents = setmetatable({}, { __index = function(t, id)
-	local nextEvent = NextEventSchedule[id];
-	if nextEvent then
-		-- If the event is within the leeway, mark it active
-		local now = C_DateAndTime.GetServerTimeLocal();
-		if now < nextEvent["end"] and now > (nextEvent["start"] - UpcomingEventLeeway) then
-			rawset(t, id, true);
-			return true;
-		end
-	end
-end });
-app.GetEventName = function(e)
-	local info = app.GetEventInformation(e);
-	if info then
-		local name = info.name;
-		if not name then
-			local headerID;
-			name = "Event #" .. e;
-			for id,eventID in pairs(L.HEADER_EVENTS) do
-				if e == eventID then
-					name = L.HEADER_NAMES[id];
-					break;
-				end
-			end
-			info.name = name;
-		end
-		return name;
-	end
-	return "Event #" .. e;
-end
-app.GetEventTooltipNoteForGroup = function(group)
-	return L["EVENT_TOOLTIPS"][group.e] or ("|CFF00FFDE" .. L["REQUIRES"] .. "|r"
-	.. DESCRIPTION_SEPARATOR .. "|CFF00FFDE" .. app.GetEventName(group.e) .. "|r");
-end
-app.GetEventTimeStrings = function(nextEvent)
-	if nextEvent then
-		local schedule = {};
-		if nextEvent.endTime then
-			tinsert(schedule, "Start:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextEvent.startTime));
-			tinsert(schedule, "End:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextEvent.endTime));
-		else
-			tinsert(schedule, "Active:" .. DESCRIPTION_SEPARATOR .. GetEventTimeString(nextEvent.startTime));
-		end
-		if nextEvent.remappedID then
-			local mapID = remappedEventToMapID[nextEvent.remappedID];
-			local info = C_Map.GetMapInfo(mapID);
-			tinsert(schedule, "Where:" .. DESCRIPTION_SEPARATOR .. (info.name or ("Map ID #" .. mapID)));
-		end
-		return schedule;
-	end
-end
-app.GetEventInformation = function(eventID)
-	return EventInformation[eventID];
-end;
-app.SetUpcomingEventLeeway = function(leeway)
-	UpcomingEventLeeway = leeway;
-	wipe(app.ActiveEvents);
-end;
-
-local texcoordForEvents = { 0.0, 0.7109375, 0.0, 0.7109375 };
+-- Event Lib (using the Events Module!)
 local fields = RawCloneData(headerFields);
-fields.name = function(t)
-	return L["HEADER_NAMES"][t.headerID] or t.eventInfo.name;
-end;
-fields.icon = function(t)
-	return L["HEADER_ICONS"][t.headerID] or t.eventInfo.icon;
-end;
-fields.texcoord = function(t)
-	if t.icon == t.eventInfo.icon then
-		return texcoordForEvents;
-	end
-end;
-fields.eventID = function(t)
-	local eventID = L.HEADER_EVENTS[t.headerID];
-	if eventID then
-		t.eventID = eventID;
-		return eventID;
-	end
-end;
-fields.eventInfo = function(t)
-	return EventInformation[t.eventID];
-end;
-fields.nextEvent = function(t)
-	return NextEventSchedule[t.eventID];
-end;
-app.BaseHeaderWithEvent = app.BaseObjectFields(fields, "BaseHeaderWithEvent");
+for field,method in pairs(app.Modules.Events.Fields) do
+	fields[field] = method;
 end
-
+app.BaseHeaderWithEvent = app.BaseObjectFields(fields, "BaseHeaderWithEvent");
 
 -- Automatic Type Header
 local fields = RawCloneData(headerFields, {
@@ -14514,13 +14197,6 @@ end
 local function FilterItemClass_RequireBinding(item)
 	return not item.itemID or IsBoP(item);
 end
-function app.FilterItemClass_RequireEvent(item)
-	if item.e and not app.ActiveEvents[item.e] then
-		return false;
-	else
-		return true;
-	end
-end
 local function FilterItemClass_PvP(item)
 	if item.pvp then
 		return false;
@@ -14845,7 +14521,7 @@ app.RequireBindingFilter = app.NoFilter;
 app.PvPFilter = app.NoFilter;
 app.PetBattleFilter = app.NoFilter;
 app.UnobtainableFilter = app.NoFilter;
-app.RequireEventFilter = app.FilterItemClass_RequireEvent;
+app.RequireEventFilter = app.Modules.Events.FilterIsEventActive;
 app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
 app.RequiredSkillFilter = app.NoFilter;
@@ -17250,7 +16926,7 @@ RowOnEnter = function (self)
 				GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
 			end
 			if reference.nextEvent then
-				local timeStrings = app.GetEventTimeStrings(reference.nextEvent);
+				local timeStrings = app.Modules.Events.GetEventTimeStrings(reference.nextEvent);
 				if timeStrings then
 					for i,timeString in ipairs(timeStrings) do
 						local left, right = strsplit(DESCRIPTION_SEPARATOR, timeString);
@@ -17282,7 +16958,7 @@ RowOnEnter = function (self)
 			end
 			-- Event Data
 			if reference.e then
-				local reason = app.GetEventTooltipNoteForGroup(reference);
+				local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
 				if reason then
 					local left, right = strsplit(DESCRIPTION_SEPARATOR, reason);
 					if right then
@@ -24348,8 +24024,7 @@ app.Startup = function()
 		"LocalizedCategoryNames",
 		"UserLocale",
 		"Position",
-		"RandomSearchFilter",
-		"EventCache"
+		"RandomSearchFilter"
 	};
 	local removeKeys = {};
 	for key,_ in pairs(AllTheThingsAD) do

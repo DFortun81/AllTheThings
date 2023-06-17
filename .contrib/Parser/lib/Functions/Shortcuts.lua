@@ -1059,6 +1059,86 @@ createHeader = function(data)
 	elseif not (data.text and (type(data.text) == "string" or (type(data.text) == "table" and data.text.en))) then
 		print("INVALID HEADER", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
 	else
+		if data.eventSchedule then
+			local schedule = "{";
+			local currentDate = os.date("*t");
+			if data.eventSchedule[1] == 1 then
+				local veryfirst = true;
+				for yearOffset = -1,1,1 do
+					if veryfirst then
+						veryfirst = false;
+					else
+						schedule = schedule .. ",";
+					end
+					local startTime = {
+						year=currentDate.year + yearOffset,
+						month=data.eventSchedule[2],
+						monthDay=data.eventSchedule[3],
+						--day=0,		-- not used?
+						--weekday=7,	-- not used?
+						hour=data.eventSchedule[4],
+						minute=data.eventSchedule[5],
+						--second=0,	-- not used?
+					};
+					local endTime = {
+						year=currentDate.year + yearOffset,
+						month=data.eventSchedule[6],
+						monthDay=data.eventSchedule[7],
+						--day=0,		-- not used?
+						--weekday=7,	-- not used?
+						hour=data.eventSchedule[8],
+						minute=data.eventSchedule[9],
+						--second=0,	-- not used?
+					};
+					-- Feast of Winter Veil, for example, goes from Dec (Month 12) to Jan (Month 01)
+					if endTime.month < startTime.month then
+						endTime.year = endTime.year + 1;
+					end
+					
+					-- Append start & end as a timestamp
+					schedule = schedule .. "\n{\n\t[\"start\"] = " .. os.time({
+						year=startTime.year,
+						month=startTime.month,
+						day=startTime.monthDay,
+						hour=startTime.hour,
+						minute=startTime.minute,
+					}) .. ", [\"end\"] = " .. os.time({
+						year=endTime.year,
+						month=endTime.month,
+						day=endTime.monthDay,
+						hour=endTime.hour,
+						minute=endTime.minute,
+					}).. ",\n\t[\"startTime\"] = {";
+					local first = true;
+					for key,value in pairs(startTime) do
+						if first then
+							first = false;
+						else
+							schedule = schedule .. ",";
+						end
+						schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
+					end
+					
+					-- Append end as a timestamp and endTime as a date object.
+					schedule = schedule .. "},\n\t[\"endTime\"] = {";
+					first = true;
+					for key,value in pairs(endTime) do
+						if first then
+							first = false;
+						else
+							schedule = schedule .. ",";
+						end
+						schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
+					end
+					schedule = schedule .. "}\n}";
+				end
+			else
+				print("INVALID HEADER", data.readable or (type(data.text) == "table" and data.text.en) or data.text, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);
+				return;
+			end
+			data.eventSchedule = schedule .. "}";
+		end
+		
 		local headerID = nextHeaderID;
 		customHeaders[headerID] = data;
 		nextHeaderID = nextHeaderID - 1;
