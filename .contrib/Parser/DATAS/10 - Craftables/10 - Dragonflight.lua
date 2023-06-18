@@ -161,7 +161,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71299, 370707);	-- Transmute: Awakened Fire
 			FirstCraft(71300, 370708);	-- Transmute: Awakened Frost
 			FirstCraft(71301, 370714);	-- Transmute: Decay to Elements
-			--FirstCraft(x, 405847, ADDED_10_1_0);	-- Transmute: Dracothyst
+			FirstCraft(75220, 405847, ADDED_10_1_0);	-- Transmute: Dracothyst
 			FirstCraft(71302, 370715);	-- Transmute: Order to Elements
 			-- Optional Reagents
 			FirstCraft(71263, 370738);	-- Potion Absorption Inhibitor
@@ -899,7 +899,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(75205, 405076, ADDED_10_1_0);	-- Shadowflame Wreathe
 			FirstCraft(71430, 389550);	-- Sophic Devotion
 			FirstCraft(71429, 389542);	-- Sophic Writ
-			--FirstCraft(x, 404859, ADDED_10_1_0);	-- Spore Tender
+			FirstCraft(75204, 404859, ADDED_10_1_0);	-- Spore Tender
 			FirstCraft(71422, 389558);	-- Wafting Devotion
 			FirstCraft(71421, 389546);	-- Wafting Writ
 			-- Profession Tool Enchantments
@@ -913,7 +913,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71433, 390823);	-- Runed Draconium Rod
 			FirstCraft(71434, 390825);	-- Runed Khaz'gorite
 			FirstCraft(71945, 394189);	-- Runed Serevite Rod
-			--FirstCraft(x, 405803, ADDED_10_1_0);	-- Spore Keeper's Baton
+			FirstCraft(75209, 405803, ADDED_10_1_0);	-- Spore Keeper's Baton
 			FirstCraft(71436, 391179);	-- Torch of Primal Awakening
 			-- Illusory Goods
 			FirstCraft(71875, 391813);	-- Illusion: Primal Air
@@ -926,7 +926,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71432, 390951);	-- Illusory Adornment: Fire
 			FirstCraft(71930, 391809);	-- Illusory Adornment: Frost
 			FirstCraft(71933, 391812);	-- Illusory Adornment: Order
-			--FirstCraft(x, 405650, ADDED_10_1_0);	-- Illusory Adornment: Spores
+			FirstCraft(75201, 405650, ADDED_10_1_0);	-- Illusory Adornment: Spores
 			FirstCraft(71876, 390855);	-- Khadgar's Disenchanting Rod
 			FirstCraft(71431, 391185);	-- Primal Invocation Extract
 			FirstCraft(71886, 391806);	-- Scepter of Spectacle: Air

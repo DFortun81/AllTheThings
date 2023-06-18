@@ -1485,12 +1485,8 @@ root(ROOTS.Unsorted, {
 				q(75022),	-- Vinyeti
 				q(75027),	-- Aerial Domination
 				q(75182),	-- Grand Theft Mammoth
-				q(75201),	--
 				q(75203),	--
-				q(75204),	--
-				q(75209),	--
 				q(75213),	--
-				q(75220),	--
 				q(75225),	--
 				q(75226),	--
 				q(75229),	--
