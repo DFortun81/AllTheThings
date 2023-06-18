@@ -1057,14 +1057,14 @@ local concatKeyPairs = function(t)
 		table.insert(keys, key);
 	end
 	table.sort(keys);
-	local schedule = "";
+	local schedule = "{";
 	for i,key in ipairs(keys) do
 		if i > 1 then
 			schedule = schedule .. ",";
 		end
-		schedule = schedule .. "[\"" .. key .. "\"] = " .. t[key];
+		schedule = schedule .. "[\"" .. key .. "\"]=" .. t[key];
 	end
-	return schedule;
+	return schedule .. "}";
 end
 local getTimestamp = function(t)
 	return os.time({
@@ -1105,13 +1105,11 @@ createHeader = function(data)
 				};
 				
 				-- Generate Time Stamps and add the weekday to the objects
-				local startTimeStamp = getTimestamp(startTime);
-				local endTimeStamp = getTimestamp(endTime);
-				startTime.weekday = os.date("*t", startTimeStamp).wday;
-				endTime.weekday = os.date("*t", endTimeStamp).wday;
+				startTime.weekday = os.date("*t", getTimestamp(startTime)).wday;
+				endTime.weekday = os.date("*t", getTimestamp(endTime)).wday;
 				
 				-- Append the schedule
-				schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"end\"] = " .. endTimeStamp.. ",\n\t[\"startTime\"] = {" .. concatKeyPairs(startTime) .. "},\n\t[\"endTime\"] = {" .. concatKeyPairs(endTime)  .. "}\n}";
+				schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime)  .. ")";
 			elseif data.eventSchedule[1] == 1 then	-- Recurring, every year forever on the same dates.
 				local veryfirst = true;
 				for yearOffset = -1,1,1 do
@@ -1142,13 +1140,11 @@ createHeader = function(data)
 					end
 					
 					-- Generate Time Stamps and add the weekday to the objects
-					local startTimeStamp = getTimestamp(startTime);
-					local endTimeStamp = getTimestamp(endTime);
-					startTime.weekday = os.date("*t", startTimeStamp).wday;
-					endTime.weekday = os.date("*t", endTimeStamp).wday;
+					startTime.weekday = os.date("*t", getTimestamp(startTime)).wday;
+					endTime.weekday = os.date("*t", getTimestamp(endTime)).wday;
 					
-					-- Append start & end as a timestamp
-					schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"end\"] = " .. endTimeStamp.. ",\n\t[\"startTime\"] = {" .. concatKeyPairs(startTime) .. "},\n\t[\"endTime\"] = {" .. concatKeyPairs(endTime) .. "}\n}";
+					-- Append the schedule
+					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ")";
 				end
 			elseif data.eventSchedule[1] == 2 then	-- Recurring every month on the first Sunday until the next Sunday.
 				-- START_YEAR, START_MONTH
@@ -1165,9 +1161,8 @@ createHeader = function(data)
 				end
 				
 				-- Calculate the difference between the specified month/year and the current month/year
-				local year, month, totalMonthOffset = 2021, 7, 0;--data.eventSchedule[2], data.eventSchedule[3], 0;
+				local year, month, totalMonthOffset = data.eventSchedule[2], data.eventSchedule[3], 0;
 				local currentYear, currentMonth = currentDate.year, currentDate.month;
-				--print(year, month, totalMonthOffset);
 				while year < currentYear do
 					while month <= 12 do
 						month = month + 1;
@@ -1180,7 +1175,6 @@ createHeader = function(data)
 					month = month + 1;
 					totalMonthOffset = totalMonthOffset + 1;
 				end
-				--print(year, month, totalMonthOffset, eventIDs[(totalMonthOffset % totalEventIDs) + 1]);
 				
 				-- Go back one month, to get last month's data.
 				totalMonthOffset = (totalMonthOffset + totalEventIDs) - 1;	-- Ensure the offset is 0 or more
@@ -1232,7 +1226,7 @@ createHeader = function(data)
 					endTime.weekday = os.date("*t", endTimeStamp).wday;
 					
 					-- Append the schedule
-					schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"remappedID\"] = " .. eventID .. ", [\"end\"] = " .. endTimeStamp .. ",\n\t[\"startTime\"] = {" .. concatKeyPairs(startTime) .. "},\n\t[\"endTime\"] = {" .. concatKeyPairs(endTime) .. "}\n}";
+					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ",{[\"remappedID\"]=" .. eventID .. "})";
 					
 					totalMonthOffset = totalMonthOffset + 1;
 					month = month + 1;
@@ -1245,7 +1239,7 @@ createHeader = function(data)
 				print("INVALID HEADER", data.readable, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);
 				return;
 			end
-			data.eventSchedule = schedule .. "}";
+			data.eventSchedule = schedule .. "\n}";
 		end
 		
 		local headerID = nextHeaderID;

@@ -16,6 +16,30 @@ local RemappedEventToMapID = {
 -- Event Cache
 -- Determine if the Calendary is implemented or not.
 local isCalendarAvailable = C_Calendar and GetCategoryInfo and GetCategoryInfo(92) ~= "";
+local function CreateTimeStamp(t)
+	return time({
+		year=t.year,
+		month=t.month,
+		day=t.monthDay,
+		hour=t.hour,
+		minute=t.minute,
+	});
+end
+local function CreateSchedule(startTime, endTime, t)
+	if t then
+		t.startTime = startTime;
+		t.endTime = endTime;
+		t.start = CreateTimeStamp(startTime);
+		t["end"] = CreateTimeStamp(endTime);
+		return t;
+	end
+	return {
+		["start"] = CreateTimeStamp(startTime),
+		["end"] = CreateTimeStamp(endTime),
+		["startTime"] = startTime,
+		["endTime"] = endTime,
+	};
+end
 local function GetEventCache()
 	local now = C_DateAndTime.GetServerTimeLocal();
 	local cache = AllTheThingsSavedVariables.EventCache;
@@ -56,24 +80,7 @@ local function GetEventCache()
 										cache[remappedID] = t;
 										anyEvents = true;
 									end
-									local schedule = {
-										["start"] = time({
-											year=event.startTime.year,
-											month=event.startTime.month,
-											day=event.startTime.monthDay,
-											hour=event.startTime.hour,
-											minute=event.startTime.minute,
-										}),
-										["end"] = time({
-											year=event.endTime.year,
-											month=event.endTime.month,
-											day=event.endTime.monthDay,
-											hour=event.endTime.hour,
-											minute=event.endTime.minute,
-										}),
-										["startTime"] = event.startTime,
-										["endTime"] = event.endTime,
-									};
+									local schedule = CreateSchedule(event.startTime, event.endTime);
 									if remappedID ~= eventID then
 										schedule.remappedID = eventID;
 									end
@@ -139,9 +146,9 @@ setmetatable(NextEventSchedule, { __index = function(t, id)
 		local times = info.times;
 		if times and #times > 0 then
 			local now = C_DateAndTime.GetServerTimeLocal();
-			local lastData;
+			local schedule;
 			for i,data in ipairs(times) do
-				lastData = data;
+				schedule = data;
 				if now < data["end"] then
 					-- If the event is within the leeway, mark it active
 					if now > (data["start"] - UpcomingEventLeeway) then
@@ -150,15 +157,15 @@ setmetatable(NextEventSchedule, { __index = function(t, id)
 					break;
 				end
 			end
-			t[id] = lastData;
-			return lastData;
+			t[id] = schedule;
+			return schedule;
 		elseif id == 424 then -- EVENTS.KALUAK_FISHING_DERBY
 			local startTime = C_DateAndTime.GetCurrentCalendarTime();
 			local weekDay = date("*t").wday;
 			if weekDay < 7 then
 				startTime = C_DateAndTime.AdjustTimeByDays(startTime, 7 - weekDay);
 			end
-			startTime = {
+			local schedule = CreateSchedule({
 				year=startTime.year,
 				month=startTime.month,
 				monthDay=startTime.monthDay,
@@ -167,8 +174,8 @@ setmetatable(NextEventSchedule, { __index = function(t, id)
 				hour=14,
 				minute=0,
 				second=0,
-			};
-			local endTime = {
+			},
+			{
 				year=startTime.year,
 				month=startTime.month,
 				monthDay=startTime.monthDay,
@@ -177,34 +184,16 @@ setmetatable(NextEventSchedule, { __index = function(t, id)
 				hour=15,
 				minute=0,
 				second=0,
-			};
-			local lastData = {
-				["startTime"] = startTime,
-				["start"] = time({
-					year=startTime.year,
-					month=startTime.month,
-					day=startTime.monthDay,
-					hour=startTime.hour,
-					minute=startTime.minute,
-				}),
-				["endTime"] = endTime,
-				["end"] = time({
-					year=endTime.year,
-					month=endTime.month,
-					day=endTime.monthDay,
-					hour=endTime.hour,
-					minute=endTime.minute,
-				}),
-			};
-			t[id] = lastData;
-			return lastData;
+			});
+			t[id] = schedule;
+			return schedule;
 		elseif id == 301 then -- EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA
 			local startTime = C_DateAndTime.GetCurrentCalendarTime();
 			local weekDay = date("*t").wday;
 			if weekDay > 1 then
 				startTime = C_DateAndTime.AdjustTimeByDays(startTime, 8 - weekDay);
 			end
-			startTime = {
+			local schedule = CreateSchedule({
 				year=startTime.year,
 				month=startTime.month,
 				monthDay=startTime.monthDay,
@@ -213,8 +202,8 @@ setmetatable(NextEventSchedule, { __index = function(t, id)
 				hour=14,
 				minute=0,
 				second=0,
-			};
-			local endTime = {
+			},
+			{
 				year=startTime.year,
 				month=startTime.month,
 				monthDay=startTime.monthDay,
@@ -223,27 +212,9 @@ setmetatable(NextEventSchedule, { __index = function(t, id)
 				hour=16,
 				minute=0,
 				second=0,
-			};
-			local lastData = {
-				["startTime"] = startTime,
-				["start"] = time({
-					year=startTime.year,
-					month=startTime.month,
-					day=startTime.monthDay,
-					hour=startTime.hour,
-					minute=startTime.minute,
-				}),
-				["endTime"] = endTime,
-				["end"] = time({
-					year=endTime.year,
-					month=endTime.month,
-					day=endTime.monthDay,
-					hour=endTime.hour,
-					minute=endTime.minute,
-				}),
-			};
-			t[id] = lastData;
-			return lastData;
+			});
+			t[id] = schedule;
+			return schedule;
 		end
 	end
 end });
@@ -328,6 +299,7 @@ end
 -- Access via AllTheThings.Modules.Events
 local events = {};
 app.Modules.Events = events;
+events.CreateSchedule = CreateSchedule;
 events.FilterIsEventActive = FilterIsEventActive;
 events.GetEventActive = function(eventID)
 	return ActiveEvents[eventID];
