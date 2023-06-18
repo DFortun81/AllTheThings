@@ -1051,6 +1051,30 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 (function()
 local customHeaders,nextHeaderID = {},-1000000;	-- TODO: Change this to 0.
 CustomHeaders = customHeaders;	-- This is global, so that it can be found by Parser!
+local concatKeyPairs = function(t)
+	local keys = {};
+	for key,value in pairs(t) do
+		table.insert(keys, key);
+	end
+	table.sort(keys);
+	local schedule = "";
+	for i,key in ipairs(keys) do
+		if i > 1 then
+			schedule = schedule .. ",";
+		end
+		schedule = schedule .. "[\"" .. key .. "\"] = " .. t[key];
+	end
+	return schedule;
+end
+local getTimestamp = function(t)
+	return os.time({
+		year=t.year,
+		month=t.month,
+		day=t.monthDay,
+		hour=t.hour,
+		minute=t.minute,
+	});
+end
 createHeader = function(data)
 	if not data then
 		print("INVALID HEADER: You must pass data into the createHeader function.");
@@ -1081,47 +1105,13 @@ createHeader = function(data)
 				};
 				
 				-- Generate Time Stamps and add the weekday to the objects
-				local startTimeStamp = os.time({
-					year=startTime.year,
-					month=startTime.month,
-					day=startTime.monthDay,
-					hour=startTime.hour,
-					minute=startTime.minute,
-				});
-				local endTimeStamp = os.time({
-					year=endTime.year,
-					month=endTime.month,
-					day=endTime.monthDay,
-					hour=endTime.hour,
-					minute=endTime.minute,
-				});
+				local startTimeStamp = getTimestamp(startTime);
+				local endTimeStamp = getTimestamp(endTime);
 				startTime.weekday = os.date("*t", startTimeStamp).wday;
 				endTime.weekday = os.date("*t", endTimeStamp).wday;
 				
-				-- Append start & end as a timestamp
-				schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"end\"] = " .. endTimeStamp.. ",\n\t[\"startTime\"] = {";
-				local first = true;
-				for key,value in pairs(startTime) do
-					if first then
-						first = false;
-					else
-						schedule = schedule .. ",";
-					end
-					schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
-				end
-				
-				-- Append end as a timestamp and endTime as a date object.
-				schedule = schedule .. "},\n\t[\"endTime\"] = {";
-				first = true;
-				for key,value in pairs(endTime) do
-					if first then
-						first = false;
-					else
-						schedule = schedule .. ",";
-					end
-					schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
-				end
-				schedule = schedule .. "}\n}";
+				-- Append the schedule
+				schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"end\"] = " .. endTimeStamp.. ",\n\t[\"startTime\"] = {" .. concatKeyPairs(startTime) .. "},\n\t[\"endTime\"] = {" .. concatKeyPairs(endTime)  .. "}\n}";
 			elseif data.eventSchedule[1] == 1 then	-- Recurring, every year forever on the same dates.
 				local veryfirst = true;
 				for yearOffset = -1,1,1 do
@@ -1152,47 +1142,13 @@ createHeader = function(data)
 					end
 					
 					-- Generate Time Stamps and add the weekday to the objects
-					local startTimeStamp = os.time({
-						year=startTime.year,
-						month=startTime.month,
-						day=startTime.monthDay,
-						hour=startTime.hour,
-						minute=startTime.minute,
-					});
-					local endTimeStamp = os.time({
-						year=endTime.year,
-						month=endTime.month,
-						day=endTime.monthDay,
-						hour=endTime.hour,
-						minute=endTime.minute,
-					});
+					local startTimeStamp = getTimestamp(startTime);
+					local endTimeStamp = getTimestamp(endTime);
 					startTime.weekday = os.date("*t", startTimeStamp).wday;
 					endTime.weekday = os.date("*t", endTimeStamp).wday;
 					
 					-- Append start & end as a timestamp
-					schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"end\"] = " .. endTimeStamp.. ",\n\t[\"startTime\"] = {";
-					local first = true;
-					for key,value in pairs(startTime) do
-						if first then
-							first = false;
-						else
-							schedule = schedule .. ",";
-						end
-						schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
-					end
-					
-					-- Append end as a timestamp and endTime as a date object.
-					schedule = schedule .. "},\n\t[\"endTime\"] = {";
-					first = true;
-					for key,value in pairs(endTime) do
-						if first then
-							first = false;
-						else
-							schedule = schedule .. ",";
-						end
-						schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
-					end
-					schedule = schedule .. "}\n}";
+					schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"end\"] = " .. endTimeStamp.. ",\n\t[\"startTime\"] = {" .. concatKeyPairs(startTime) .. "},\n\t[\"endTime\"] = {" .. concatKeyPairs(endTime) .. "}\n}";
 				end
 			elseif data.eventSchedule[1] == 2 then	-- Recurring every month on the first Sunday until the next Sunday.
 				-- START_YEAR, START_MONTH
@@ -1251,13 +1207,7 @@ createHeader = function(data)
 						hour=0,
 						minute=0,
 					};
-					local startTimeStamp = os.time({
-						year=startTime.year,
-						month=startTime.month,
-						day=startTime.monthDay,
-						hour=startTime.hour,
-						minute=startTime.minute,
-					});
+					local startTimeStamp = getTimestamp(startTime);
 					
 					-- Find the first Sunday of the Month
 					for dayOffset = 1,14,1 do
@@ -1265,13 +1215,7 @@ createHeader = function(data)
 							break;
 						end
 						startTime.monthDay = startTime.monthDay + 1;
-						startTimeStamp = os.time({
-							year=startTime.year,
-							month=startTime.month,
-							day=startTime.monthDay,
-							hour=startTime.hour,
-							minute=startTime.minute,
-						});
+						startTimeStamp = getTimestamp(startTime);
 					end
 					
 					-- Determine the next Sunday
@@ -1283,40 +1227,12 @@ createHeader = function(data)
 						hour=0,
 						minute=0,
 					};
-					local endTimeStamp = os.time({
-						year=endTime.year,
-						month=endTime.month,
-						day=endTime.monthDay,
-						hour=endTime.hour,
-						minute=endTime.minute,
-					});
+					local endTimeStamp = getTimestamp(endTime);
 					startTime.weekday = os.date("*t", startTimeStamp).wday;
 					endTime.weekday = os.date("*t", endTimeStamp).wday;
 					
-					-- Append start & end as a timestamp
-					schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"remappedID\"] = " .. eventID .. ", [\"end\"] = " .. endTimeStamp .. ",\n\t[\"startTime\"] = {";
-					local first = true;
-					for key,value in pairs(startTime) do
-						if first then
-							first = false;
-						else
-							schedule = schedule .. ",";
-						end
-						schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
-					end
-					
-					-- Append end as a timestamp and endTime as a date object.
-					schedule = schedule .. "},\n\t[\"endTime\"] = {";
-					first = true;
-					for key,value in pairs(endTime) do
-						if first then
-							first = false;
-						else
-							schedule = schedule .. ",";
-						end
-						schedule = schedule .. "[\"" .. key .. "\"] = " .. value;
-					end
-					schedule = schedule .. "}\n}";
+					-- Append the schedule
+					schedule = schedule .. "\n{\n\t[\"start\"] = " .. startTimeStamp .. ", [\"remappedID\"] = " .. eventID .. ", [\"end\"] = " .. endTimeStamp .. ",\n\t[\"startTime\"] = {" .. concatKeyPairs(startTime) .. "},\n\t[\"endTime\"] = {" .. concatKeyPairs(endTime) .. "}\n}";
 					
 					totalMonthOffset = totalMonthOffset + 1;
 					month = month + 1;
