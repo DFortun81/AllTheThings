@@ -107,71 +107,71 @@ for key,value in pairs({
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(1262, {
 {
-	["start"] = 1667718000, ["end"] = 1669532400,
+	["start"] = 1667674800, ["end"] = 1669489200,
 	["startTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 6,["weekday"] = 1,["year"] = 2022},
 	["endTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 27,["weekday"] = 1,["year"] = 2022}
 }});
 _.Modules.Events.SetEventInformation(1225, {
 {
-	["start"] = 1636959600, ["end"] = 1638774000,
+	["start"] = 1636916400, ["end"] = 1638730800,
 	["startTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 15,["weekday"] = 2,["year"] = 2021},
 	["endTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 12,["monthDay"] = 6,["weekday"] = 2,["year"] = 2021}
 }});
 _.Modules.Events.SetEventInformation(1181, {
 {
-	["start"] = 1604214000, ["end"] = 1606028400,
+	["start"] = 1604170800, ["end"] = 1605985200,
 	["startTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 1,["weekday"] = 1,["year"] = 2020},
 	["endTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 22,["weekday"] = 1,["year"] = 2020}
 }});
 _.Modules.Events.SetEventInformation(808, {
 {
-	["start"] = 1572937200, ["end"] = 1578380400,
+	["start"] = 1572894000, ["end"] = 1578337200,
 	["startTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 5,["weekday"] = 3,["year"] = 2019},
 	["endTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 1,["monthDay"] = 7,["weekday"] = 3,["year"] = 2020}
 }});
 _.Modules.Events.SetEventInformation(807, {
 {
-	["start"] = 1542351600, ["end"] = 1543561200,
+	["start"] = 1542308400, ["end"] = 1543518000,
 	["startTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 16,["weekday"] = 6,["year"] = 2018},
 	["endTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 30,["weekday"] = 6,["year"] = 2018}
 }});
 _.Modules.Events.SetEventInformation(693, {
 {
-	["start"] = 1510815600, ["end"] = 1512025200,
+	["start"] = 1510772400, ["end"] = 1511982000,
 	["startTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 16,["weekday"] = 5,["year"] = 2017},
 	["endTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 30,["weekday"] = 5,["year"] = 2017}
 }});
 _.Modules.Events.SetEventInformation(589, {
 {
-	["start"] = 1479279600, ["end"] = 1480489200,
+	["start"] = 1479236400, ["end"] = 1480446000,
 	["startTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 16,["weekday"] = 4,["year"] = 2016},
 	["endTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 30,["weekday"] = 4,["year"] = 2016}
 }});
 _.Modules.Events.SetEventInformation(566, {
 {
-	["start"] = 1447657200, ["end"] = 1448866800,
+	["start"] = 1447614000, ["end"] = 1448823600,
 	["startTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 16,["weekday"] = 2,["year"] = 2015},
 	["endTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 30,["weekday"] = 2,["year"] = 2015}
 }});
 _.Modules.Events.SetEventInformation(514, {
 {
-	["start"] = 1416553200, ["end"] = 1420441200,
+	["start"] = 1416510000, ["end"] = 1420398000,
 	["startTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 11,["monthDay"] = 21,["weekday"] = 6,["year"] = 2014},
 	["endTime"] = {["hour"] = 0,["minute"] = 0,["month"] = 1,["monthDay"] = 5,["weekday"] = 2,["year"] = 2015}
 }});
 _.Modules.Events.SetEventInformation(590, {
 {
-	["start"] = 1667754000, ["end"] = 1669827600,
+	["start"] = 1667710800, ["end"] = 1669784400,
 	["startTime"] = {["hour"] = 10,["minute"] = 0,["month"] = 11,["monthDay"] = 6,["weekday"] = 1,["year"] = 2022},
 	["endTime"] = {["hour"] = 10,["minute"] = 0,["month"] = 11,["monthDay"] = 30,["weekday"] = 4,["year"] = 2022}
 },
 {
-	["start"] = 1699290000, ["end"] = 1701363600,
+	["start"] = 1699246800, ["end"] = 1701320400,
 	["startTime"] = {["hour"] = 10,["minute"] = 0,["month"] = 11,["monthDay"] = 6,["weekday"] = 2,["year"] = 2023},
 	["endTime"] = {["hour"] = 10,["minute"] = 0,["month"] = 11,["monthDay"] = 30,["weekday"] = 5,["year"] = 2023}
 },
 {
-	["start"] = 1730912400, ["end"] = 1732986000,
+	["start"] = 1730869200, ["end"] = 1732942800,
 	["startTime"] = {["hour"] = 10,["minute"] = 0,["month"] = 11,["monthDay"] = 6,["weekday"] = 4,["year"] = 2024},
 	["endTime"] = {["hour"] = 10,["minute"] = 0,["month"] = 11,["monthDay"] = 30,["weekday"] = 7,["year"] = 2024}
 }});
