@@ -257,12 +257,11 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["sourceQuest"] = 8301,	-- The Path of the Righteous
 					["coord"] = { 49.5, 36.4, SILITHUS },
+					["maxReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					["cost"] = {{ "i", 20384, 200 }},	-- Silithid Carapace Fragment
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
-						objective(1, {	-- 0/200 Silithid Carapace Fragment
-							["provider"] = { "i", 20384 },	-- Silithid Carapace Fragment
-						}),
 						i(20403),	-- Proxy of Nozdormu
 					},
 				}),
