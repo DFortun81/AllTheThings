@@ -34,7 +34,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			n(FACTIONS, {
 				faction(910, {	-- Brood of Nozdormu
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
-					["maps"] = { CAVERNS_OF_TIME },
+					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
 				}),
 			}),
 			n(QUESTS, {
