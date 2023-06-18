@@ -76,10 +76,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 					r(370528, {	-- Potion of Withering Vitality (RECIPE!)
 						["description"] = "Requires Decayology.",
 					}),
-					r(405832, {	-- Stinky Bright Potion (RECIPE!)
-						["description"] = "Requires Decayology.",
-						["timeline"] = { ADDED_10_1_0 },
-					}),
 				}),
 			},
 		}),
@@ -126,7 +122,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Cauldrons
 			--FirstCraft(x, 405879, ADDED_10_1_0);	-- Cauldron of Extracted Putrescence
 			FirstCraft(71247, 370673);	-- Cauldron of the Pooka
-			--FirstCraft(x, 406106, ADDED_10_1_0);	-- Draconic Phial Cauldron
+			FirstCraft(75243, 406106, ADDED_10_1_0);	-- Draconic Phial Cauldron
 			FirstCraft(71295, 370672);	-- Potion Cauldron of Ultimate Power
 			FirstCraft(71296, 370668);	-- Potion Cauldron of Power
 			-- Frost Potions
