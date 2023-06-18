@@ -28,7 +28,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 910); end]],
 					-- #endif
-					["maps"] = { CAVERNS_OF_TIME },
+					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
 				}),
 			}),
 			n(FACTIONS, {
