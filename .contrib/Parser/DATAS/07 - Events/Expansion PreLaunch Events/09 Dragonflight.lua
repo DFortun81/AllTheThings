@@ -310,11 +310,3 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
-	n(EXPANSION_PRELAUNCH, {
-		q(74363),	-- Cloudburst Regalia transmog set
-		q(74364),	-- Dust Devil Armor transmog set
-		q(74365),	-- Cyclonic Battlegear transmog set
-		q(74366),	-- Firestorm Armor transmog set
-	}),
-})));

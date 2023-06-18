@@ -7436,6 +7436,10 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 10.0.7
 			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 				q(74955, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
+				q(74363),	-- Ensemble: Cloudburst Regalia
+				q(74364),	-- Ensemble: Dust Devil Armor
+				q(74365),	-- Ensemble: Cyclonic Battlegear
+				q(74366),	-- Ensemble: Firestorm Armor
 			})),
 
 			-- 10.1.0

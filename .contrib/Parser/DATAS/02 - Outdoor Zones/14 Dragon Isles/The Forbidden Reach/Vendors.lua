@@ -360,11 +360,3 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-	n(THE_FORBIDDEN_REACH, {
-		q(74363),	-- Ensemble: Cloudburst Regalia
-		q(74364),	-- Ensemble: Dust Devil Armor
-		q(74365),	-- Ensemble: Cyclonic Battlegear
-		q(74366),	-- Ensemble: Firestorm Armor
-	}),
-})));
