@@ -2960,6 +2960,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Embroidered Bags --
 			FirstCraft(71815, 376529);	-- Azureweave Expedition Pack
 			FirstCraft(71847, 376561);	-- Chronocloth Reagent Bag
+			FirstCraft(75236, 405974, ADDED_10_0_7);	-- Paw-Made Winterpelt Reagent Bag
 			FirstCraft(71846, 376560);	-- Simply Stitched Reagent Bag
 			FirstCraft(71814, 376528);	-- Wildercloth Bag
 			-- Assorted Embroidery --
