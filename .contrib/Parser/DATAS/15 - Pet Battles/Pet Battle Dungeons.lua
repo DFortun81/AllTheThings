@@ -78,8 +78,8 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 				["lvl"] = 120,
 				["g"] = {
 					spell(314215),	-- Manapoof Link: Blackrock Depths
-					i(122457),	-- Ultimate Battle-Training Stone
 				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			n(160210, {	-- Tasha Riley
 				["coord"] = { 41.1, 49.1, 1578 },
@@ -127,8 +127,8 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 				["sourceQuest"] = 46263,	-- Deadmines, Part Three?
 				["g"] = {
 					spell(244502),	-- Manapoof Link: Westfall
-					i(122457),	-- Ultimate Battle-Training Stone
 				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			n(119390, {	-- Marcus "Bagman" Brown
 				["coord"] = { 41.6, 71.2, WESTFALL },
@@ -188,8 +188,8 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 				["lvl"] = 120,
 				["g"] = {
 					spell(286079),	-- Manapoof Link: Gnomeregan
-					i(122457),	-- Ultimate Battle-Training Stone
 				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			n(147070, {	-- Micro Zoox
 				["coord"] = { 31.8, 71.6, NEW_TINKERTOWN_LOWER },
@@ -261,8 +261,8 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 				["lvl"] = 120,
 				["g"] = {
 					spell(301941),	-- Manapoof Link: Stratholme
-					i(122457),	-- Ultimate Battle-Training Stone
 				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			q(56914, {	-- Angry Residents
 				["isWeekly"] = true,
@@ -322,8 +322,8 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 				["lvl"] = 110,
 				["g"] = {
 					spell(244506),	-- Manapoof Link: Wailing Caverns
-					i(122457),	-- Ultimate Battle-Training Stone
 				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			i(143753, {	-- Damp Pet Supplies
 				i(143754),	-- Cavern Moccasin (PET!)

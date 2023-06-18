@@ -98,6 +98,7 @@ root(ROOTS.Zones, {
 							q(44967, {	-- Teamwork Lesson: Ursoc
 								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44962,	-- Hunting Lesson: Coralback Fiddler
+								["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 							}),
 							q(44949, {	-- The Smell of Humans
 								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling

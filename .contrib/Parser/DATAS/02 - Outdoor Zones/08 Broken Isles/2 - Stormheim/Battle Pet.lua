@@ -91,6 +91,7 @@ root(ROOTS.Zones, {
 							q(44986, {	-- Teamwork Lesson: Krosus
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44985,	-- Hunting Lesson: Stormstruck Beaver
+								["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 							}),
 							q(44974, {	-- The Smell of Dwarves
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling

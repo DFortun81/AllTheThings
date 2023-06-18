@@ -3153,9 +3153,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				},
 				["isWeekly"] = true,
 				["u"] = REMOVED_FROM_GAME,
-				["g"] = {
-					i(122457),	-- Ultimate Battle-Training Stone
-				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			q(34192, {	-- Things Are Not Goren Our Way
 				["sourceQuests"] = { 36592 },	-- Bigger is Better

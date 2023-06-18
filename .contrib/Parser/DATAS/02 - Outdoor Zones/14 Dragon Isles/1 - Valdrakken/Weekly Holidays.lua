@@ -95,7 +95,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(72725),					-- A Shrouded Path Through Time
 				q(72722),					-- Emissary of War
 				pvp(q(72720)),				-- The Arena Calls
-				petbattle(pvp(q(72721))),	-- The Very Best
+				petbattle(pvp(q(72721, {	-- The Very Best
+					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
+				}))),
 				q(72728),					-- The World Awaits
 			})),
 			-- Auto-accepted in various situations, so no coords/provider

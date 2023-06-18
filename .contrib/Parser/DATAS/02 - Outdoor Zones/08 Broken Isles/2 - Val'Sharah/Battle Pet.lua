@@ -91,6 +91,7 @@ root(ROOTS.Zones, {
 							q(45015, {	-- Teamwork Lesson: Xavius
 								["provider"] = { "n", 115786 },	-- Sharptalon Hatchling
 								["sourceQuest"] = 45013,	-- Hunting Lesson: Vale Flitter
+								["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 							}),
 							q(44992, {	-- The Smell of Night Elves
 								["provider"] = { "n", 115786 },	-- Sharptalon Hatchling

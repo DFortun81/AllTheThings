@@ -111,6 +111,7 @@ root(ROOTS.Zones, {
 							q(45016, {	-- Teamwork Lesson: Skorpyron
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45014,	-- Hunting Lesson: Felspider
+								["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 							}),
 							q(44991, {	-- The Smell of Draenei
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling

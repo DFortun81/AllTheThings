@@ -174,4 +174,68 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			},
 		}),
 	})),
+	n(VENDORS, {
+		n(98725, {	-- Lio the Lioness <Battle Pet Master>
+			["coord"] = { 59.2, 39.6, LEGION_DALARAN },
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				i(86143, {	-- Battle Pet Bandage
+					["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
+					["description"] = "You get 25 Bandages for 5 Charms.",
+				}),
+				i(116429, {	-- Flawless Battle Training Stone
+					["cost"] = { { "i", POLISHED_PET_CHARM, 3 } },
+				}),
+				i(98112, {	-- Lesser Pet Treat
+					["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
+				}),
+				i(89906, {	-- Magical Mini-Treat
+					["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
+				}),
+				i(98715, {	-- Marked Flawless Battle Stone
+					["cost"] = { { "i", POLISHED_PET_CHARM, 15 } },
+				}),
+				i(120321, {	-- Mystery Bag
+					["cost"] = { { "i", POLISHED_PET_CHARM, 2 } },
+				}),
+				i(98114, {	-- Pet Treat
+					["cost"] = { { "i", POLISHED_PET_CHARM, 10 } },
+				}),
+				i(122457, {	-- Ultimate Battle-Training Stone
+					["cost"] = { { "i", POLISHED_PET_CHARM, 35 } },
+				}),
+			},
+		}),
+		n(115287, {	-- Serr'ah <Battle Pet Master>
+			["coord"] = { 58.6, 38.0, LEGION_DALARAN },
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				i(86143, {	-- Battle Pet Bandage
+					["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
+					["description"] = "You get 25 Bandages for 5 Charms.",
+				}),
+				i(116429, {	-- Flawless Battle Training Stone
+					["cost"] = { { "i", POLISHED_PET_CHARM, 3 } },
+				}),
+				i(98112, {	-- Lesser Pet Treat
+					["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
+				}),
+				i(89906, {	-- Magical Mini-Treat
+					["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
+				}),
+				i(98715, {	-- Marked Flawless Battle Stone
+					["cost"] = { { "i", POLISHED_PET_CHARM, 15 } },
+				}),
+				i(120321, {	-- Mystery Bag
+					["cost"] = { { "i", POLISHED_PET_CHARM, 2 } },
+				}),
+				i(98114, {	-- Pet Treat
+					["cost"] = { { "i", POLISHED_PET_CHARM, 10 } },
+				}),
+				i(122457, {	-- Ultimate Battle-Training Stone
+					["cost"] = { { "i", POLISHED_PET_CHARM, 35 } },
+				}),
+			},
+		}),
+	}),
 }));

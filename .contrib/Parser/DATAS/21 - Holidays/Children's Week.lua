@@ -25,6 +25,19 @@ CHILDRENS_WEEK_HEADER = createHeader({
 local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 	["timeline"] = { "added 6.0.1.18566" },
 	["groups"] = {
+	},
+	["sym"] = {{"select","itemID",
+		103786,	-- "Dapper Gentleman" Costume
+		103795,	-- "Dread Pirate" Costume
+		103789,	-- "Little Princess" Costume
+		103797,	-- Big Pink Bow
+		92741,	-- Flawless Battle-Stone
+		98112,	-- Lesser Pet Treat
+		89906,	-- Magical Mini-Treat
+		71153,	-- Magical Pet Biscuit
+		98114,	-- Pet Treat
+	}},
+	--[[
 		i(103786, {	-- "Dapper Gentleman" Costume
 			["timeline"] = { "added 5.4.0.17169" },
 		}),
@@ -51,8 +64,7 @@ local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 		}),
 		i(98114, {	-- Pet Treat
 			["timeline"] = { "added 5.3.0.16758" },
-		}),
-	},
+		}),--]]
 });
 local BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS = {
 	i(32616, {	-- Egbert (PET!)
