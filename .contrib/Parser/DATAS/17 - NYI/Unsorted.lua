@@ -1494,7 +1494,6 @@ root(ROOTS.Unsorted, {
 				q(75264),	--
 				q(75279),	--
 				q(75282),	--
-				q(75287),	--
 				q(75305),	-- Sparks of Life: Zaralek Cavern
 				q(75313),	--
 				q(75314),	-- Hadexia

@@ -910,6 +910,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 			q(66802),	-- Triggered when choosing Wrathion in Allegiance To One (66419) -- triggered for Wrathion only
 			q(67168),	-- Triggered with completion of 67051 'Dragon Eyes' (alternate version???)
 			q(72378),	-- Triggered when refusing to activate the Wrathion and Sabellian skip for alts
+
+			-- Ensembles
 			q(72112),	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
 			q(72115),	-- Ensemble: Sabellian's Battlegear Cloth Armor
 		}),

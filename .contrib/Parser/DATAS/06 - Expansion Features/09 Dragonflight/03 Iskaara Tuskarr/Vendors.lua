@@ -269,7 +269,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "i", MASTODON_TUSK, 2 },
 								{ "i", RESILIENT_LEATHER, 20 },
 							},
-							["questID"] = 70804,
 							["g"] = {
 								i(199868),	-- Tuskarr Trader's Belt
 								i(199869),	-- Tuskarr Trader's Bindings
@@ -887,5 +886,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}},
 			}),
 		}),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	n(ISKAARA_TUSKARR, {
+		-- Ensembles
+		q(70804),	-- Ensemble: Tuskarr Trader's Leather Armor
 	}),
 })));

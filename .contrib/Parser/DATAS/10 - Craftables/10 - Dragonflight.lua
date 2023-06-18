@@ -2560,7 +2560,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71759, 375173);	-- Stonecrust Hide
 			-- Optional Reagents
 			FirstCraft(71758, 375159);	-- Fang Adornments
-			--FirstCraft(x, 406275, ADDED_10_1_0);	-- Shadowflame-Tempered Armor Patch
+			FirstCraft(75287, 406275, ADDED_10_1_0);	-- Shadowflame-Tempered Armor Patch
 			FirstCraft(71757, 375160);	-- Toxified Armor Patch
 			-- Armor Kits
 			FirstCraft(71741, 375162);	-- Fierce Armor Kit
