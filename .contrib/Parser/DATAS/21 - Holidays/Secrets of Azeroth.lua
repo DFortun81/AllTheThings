@@ -10,7 +10,31 @@ SECRETS_OF_AZEROTH_HEADER = createHeader({
 		en = "Secrets of Azeroth",
 	},
 });
---[[
 root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+	n(ACHIEVEMENTS, {
+		ach(18644, {	-- Community Rumor Mill
+			-- pet(),	-- Tobias?
+		}),
+		ach(18643, {	-- Community Rumors
+			i(208150),	-- Blue Tweed Cap
+		}),
+		ach(18642, {	-- The Inquisitive
+			title(512),	-- <Name> The Inquisitve
+		}),
+		ach(18645, {
+			i(208149),	-- Brown Tweed Cap
+			crit(1, {	-- 	Tricked-Out Thinking Cap
+				-- ["provider"] = { "i",  },	-- 	Tricked-Out Thinking Cap
+			}),
+			crit(2, {	-- 	Torch of Pyrreth
+				-- ["provider"] = { "i",  },	-- 	Torch of Pyrreth
+			}),
+			crit(3, {	-- 	Idol of Ohn'ara
+				-- ["provider"] = { "i",  },	-- 	Idol of Ohn'ara
+			}),
+		}),
+		ach(18646, {	-- Whodunnit?
+			-- Pattie
+		}),
+	}),
 }))));
---]]
