@@ -3191,7 +3191,7 @@ local ResolveFunctions = {
 	end,
 	-- Instruction to find all content marked with the specified 'requireSkill'
 	["selectprofession"] = function(finalized, searchResults, o, cmd, requireSkill)
-		local search = app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", requireSkill);
+		local search = app:BuildSearchResponse("requireSkill", requireSkill);
 		ArrayAppend(searchResults, search);
 	end,
 	-- Instruction to fill with identical content Sourced elsewhere for this group (no symlinks)
@@ -15187,25 +15187,31 @@ local function MinimapButtonOnClick(self, button)
 	end
 end
 local function MinimapButtonOnEnter(self)
-	local reference = app:GetDataCache();
 	GameTooltip:SetOwner(self, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
-	GameTooltip:AddDoubleLine(reference.text, GetProgressColorText(reference.progress, reference.total));
-	GameTooltip:AddDoubleLine(reference.mb_title1, reference.mb_title2, 1, 1, 1);
-	GameTooltip:AddLine(L["DESCRIPTION"], 0.4, 0.8, 1, 1);
+	local reference = app:GetDataCache();
+	if reference then
+		local left, right = strsplit(DESCRIPTION_SEPARATOR, reference.title);
+		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
+		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
+		GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
+		GameTooltipIcon:SetSize(72,72);
+		GameTooltipIcon:ClearAllPoints();
+		GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+		GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
+		local texcoord = reference.previewtexcoord or reference.texcoord;
+		if texcoord then
+			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
+		end
+		GameTooltipIcon:Show();
+	else
+		GameTooltip:AddDoubleLine(L["TITLE"], L["MAIN_LIST_REQUIRES_REFRESH"], 1, 1, 1);
+		GameTooltipIcon:Hide();
+	end
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
 	GameTooltip:Show();
-	GameTooltipIcon:SetSize(72,72);
-	GameTooltipIcon:ClearAllPoints();
-	GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-	GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-	local texcoord = reference.previewtexcoord or reference.texcoord;
-	if texcoord then
-		GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-	else
-		GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-	end
-	GameTooltipIcon:Show();
 end
 local function MinimapButtonOnLeave()
 	GameTooltip:Hide();
@@ -16582,7 +16588,7 @@ RowOnEnter = function (self)
 		if title then
 			local left, right = strsplit(DESCRIPTION_SEPARATOR, title);
 			if right then
-				GameTooltip:AddDoubleLine(left, right);
+				GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
 			else
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
@@ -17777,7 +17783,7 @@ local DynamicCategory_Nested = function(self)
 		self.text = Colorize(self.text, app.Colors.SourceIgnored);
 	end
 	-- pull out all Things which should go into this category based on field & value
-	local groups = app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups);
+	local groups = app:BuildSearchResponse(self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups);
 	NestObjects(self, groups);
 	-- reset indents and such
 	BuildGroups(self);
@@ -17880,7 +17886,11 @@ local DynamicCategory_Simple = function(self)
 end
 
 function app:GetDataCache()
-	-- app.PrintDebug("Start app.GetDataCache")
+	if not app.Categories then
+		return nil;
+	end
+	
+	-- app.PrintDebug("Start loading data cache")
 	-- app.PrintMemoryUsage()
 	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
 	local Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
@@ -18090,7 +18100,19 @@ function app:GetDataCache()
 	end
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
-	local allData = setmetatable({}, {
+	local rootData = setmetatable({
+		text = L["TITLE"],
+		icon = app.asset("content"),
+		texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256},
+		previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256},
+		description = L["DESCRIPTION"],
+		font = "GameFontNormalLarge",
+		expanded = true,
+		visible = true,
+		progress = 0,
+		total = 0,
+		g = {},
+	}, {
 		__index = function(t, key)
 			-- app.PrintDebug("Top-Root-Get",key)
 			if key == "title" then
@@ -18098,6 +18120,7 @@ function app:GetDataCache()
 			end
 			if key == "mb_title1" then return app.Settings:GetModeString(); end
 			if key == "mb_title2" then return not t.TLUG and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
+			if key == "progressText" then return GetProgressColorText(t.progress, t.total); end
 			if key == "visible" then return true; end
 		end,
 		__newindex = function(t, key, val)
@@ -18115,16 +18138,7 @@ function app:GetDataCache()
 			rawset(t, key, val);
 		end
 	});
-	allData.icon = app.asset("content");
-	allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
-	allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
-	allData.text = L["TITLE"];
-	allData.description = L["DESCRIPTION"];
-	allData.font = "GameFontNormalLarge";
-	allData.progress = 0;
-	allData.total = 0;
-	local g, db = {};
-	allData.g = g;
+	local g, db = rootData.g;
 
 	-- Dungeons & Raids
 	db = {};
@@ -18457,37 +18471,43 @@ function app:GetDataCache()
 	app.refreshDataForce = true;
 	-- app.PrintMemoryUsage("Prime.Data Ready")
 	local primeWindow = app:GetWindow("Prime");
-	primeWindow:SetData(allData);
+	primeWindow:SetData(rootData);
 	-- app.PrintMemoryUsage("Prime Window Data Set")
 	primeWindow:BuildData();
 	-- app.PrintMemoryUsage()
 	-- app.PrintDebug("Begin Cache Prime")
-	CacheFields(allData);
+	CacheFields(rootData);
 	-- app.PrintDebugPrior("Ended Cache Prime")
 	-- app.PrintMemoryUsage()
 
 	-- Now build the hidden "Unsorted" Window's Data
-	allData = {};
-	allData.icon = app.asset("content");
-	allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
-	allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
-	allData.font = "GameFontNormalLarge";
-	allData.text = L["TITLE"] .. " (Unsorted) " .. app.Version;
-	allData.title = L["UNSORTED_1"];
-	allData.description = L["UNSORTED_DESC"];
-	allData.visible = true;
-	allData.progress = 0;
-	allData.total = 0;
-	local g, db = {};
-	allData.g = g;
-
-	-- Never Implemented Flight Paths (Dynamic)
-	local flightPathsCategory_NYI = {};
-	flightPathsCategory_NYI.g = {};
-	flightPathsCategory_NYI.fps = {};
-	flightPathsCategory_NYI.icon = app.asset("Category_FlightPaths");
-	flightPathsCategory_NYI.text = L["FLIGHT_PATHS"];
-
+	local unsortedData = setmetatable({
+		text = L["TITLE"],
+		title = L["UNSORTED_1"] .. DESCRIPTION_SEPARATOR .. app.Version,
+		icon = app.asset("content"),
+		texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256},
+		previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256},
+		description = L["UNSORTED_DESC"],
+		font = "GameFontNormalLarge",
+		expanded = true,
+		visible = true,
+		progress = 0,
+		total = 0,
+		g = {},
+	}, {
+		__index = function(t, key)
+			if key == "title" then
+				return app.Settings:GetModeString() .. DESCRIPTION_SEPARATOR .. app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
+			elseif key == "progressText" then
+				return GetProgressColorText(t.progress, t.total);
+			else
+				-- Something that isn't dynamic.
+				return table[key];
+			end
+		end
+	});
+	g = unsortedData.g;
+	
 	-- Never Implemented
 	if app.Categories.NeverImplemented then
 		db = {};
@@ -18497,9 +18517,9 @@ function app:GetDataCache()
 		db.description = L["NEVER_IMPLEMENTED_DESC"];
 		db._nyi = true;
 		tinsert(g, db);
-		--tinsert(db.g, 1, flightPathsCategory_NYI);
 		CacheFields(db);
 	end
+	
 	-- Hidden Achievement Triggers
 	if app.Categories.HiddenAchievementTriggers then
 		db = {};
@@ -18509,9 +18529,6 @@ function app:GetDataCache()
 		db.description = "Hidden Achievement Triggers";
 		db._hqt = true;
 		tinsert(g, db);
-		--app.ToggleCacheMaps(true);
-		--CacheFields(db);
-		--app.ToggleCacheMaps();
 	end
 
 	-- Hidden Quest Triggers
@@ -18545,7 +18562,7 @@ function app:GetDataCache()
 	local unsorted = app:GetWindow("Unsorted");
 	-- force the unsorted window to be skipped for Updates unless it is actually visible
 	unsorted.AdHoc = true;
-	unsorted:SetData(allData);
+	unsorted:SetData(unsortedData);
 	unsorted:BuildData();
 
 	--[[
@@ -18779,18 +18796,15 @@ function app:GetDataCache()
 	end
 	achievementsCategory:OnUpdate();
 	]]--
-
-	-- Perform Heirloom caching/upgrade generation
-	app.CacheHeirlooms();
-
+	
 	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
-	-- app.PrintDebug("Finished app.GetDataCache")
+	-- app.PrintDebug("Finished loading data cache")
 	-- app.PrintMemoryUsage()
 	app.GetDataCache = function()
-		-- app.PrintDebug("Cached GetDataCache")
-		return app:GetWindow("Prime").data;
+		-- app.PrintDebug("Cached data cache")
+		return rootData;
 	end
-	return allData;
+	return rootData;
 end
 
 local function RefreshData()
@@ -18799,7 +18813,6 @@ local function RefreshData()
 	-- Send an Update to the Windows to Rebuild their Row Data
 	if app.refreshDataForce then
 		app.refreshDataForce = nil;
-		app:GetDataCache();
 
 		-- Refresh all Quests without callback
 		app.QueryCompletedQuests();
@@ -18958,25 +18971,26 @@ local function BuildSearchResponseViaCacheContainer(cacheContainer, value, clear
 end
 -- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
 -- should additionally clear their contents when being cloned
-function app:BuildSearchResponse(groups, field, value, clear)
+function app:BuildSearchResponse(field, value, clear)
 	MainRoot = app:GetDataCache();
-	UnsortedRoot = app:GetWindow("Unsorted").data;
-	wipe(ClonedHierarchyGroups);
-	wipe(ClonedHierarachyMapping);
-	wipe(SearchGroups);
-	if groups then
+	if MainRoot then
+		UnsortedRoot = app:GetWindow("Unsorted").data;
+		wipe(ClonedHierarchyGroups);
+		wipe(ClonedHierarachyMapping);
+		wipe(SearchGroups);
+		
 		-- app.PrintDebug("BSR:",field,value,clear)
 		SetRescursiveFilters();
 		local cacheContainer = SearchForFieldContainer(field);
 		if cacheContainer then
 			BuildSearchResponseViaCacheContainer(cacheContainer, value, clear);
 		elseif value then
-			-- app.PrintDebug("BSR:FieldValue",groups and #groups,field,value,clear)
-			AddSearchGroupsByFieldValue(groups, field, value);
+			-- app.PrintDebug("BSR:FieldValue",MainRoot and #MainRoot,field,value,clear)
+			AddSearchGroupsByFieldValue(MainRoot, field, value);
 			BuildClonedHierarchy(SearchGroups, clear);
 		else
-			-- app.PrintDebug("BSR:Field",groups and #groups,field,clear)
-			AddSearchGroupsByField(groups, field);
+			-- app.PrintDebug("BSR:Field",MainRoot and #MainRoot,field,clear)
+			AddSearchGroupsByField(MainRoot, field);
 			BuildClonedHierarchy(SearchGroups, clear);
 		end
 		return ClonedHierarchyGroups;
@@ -19901,6 +19915,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 end;
 customWindowUpdates["ItemFilter"] = function(self, force)
 	if self:IsVisible() then
+		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
+			return;
+		end
 		if not self.initialized then
 			self.initialized = true;
 
@@ -19912,7 +19929,7 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 
 			function self:Search(field, value)
 				app.PrintDebug("Search",field,value)
-				local results = app:BuildSearchResponse(app:GetDataCache().g, field, value, true);
+				local results = app:BuildSearchResponse(field, value, true);
 				app.PrintDebug("Results",#results)
 				app.ArrayAppend(self.data.g, results);
 			end
@@ -21225,6 +21242,9 @@ customWindowUpdates["Random"] = function(self)
 end;
 customWindowUpdates["RWP"] = function(self)
 	if self:IsVisible() then
+		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
+			return;
+		end
 		if not self.initialized then
 			self.initialized = true;
 			self:SetData({
@@ -21233,7 +21253,7 @@ customWindowUpdates["RWP"] = function(self)
 				["description"] = L["FUTURE_UNOBTAINABLE_TOOLTIP"],
 				["visible"] = true,
 				["back"] = 1,
-				["g"] = app:BuildSearchResponse(app:GetDataCache().g, "rwp"),
+				["g"] = app:BuildSearchResponse("rwp"),
 			});
 			self:BuildData();
 			self.ExpandInfo = { Expand = true, Manual = true };
@@ -21616,6 +21636,9 @@ customWindowUpdates["list"] = function(self, force, got)
 	end
 end
 customWindowUpdates["Tradeskills"] = function(self, force, got)
+	if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
+		return;
+	end
 	if not self.initialized then
 		-- cache some common functions
 		local C_TradeSkillUI = C_TradeSkillUI;
@@ -21786,7 +21809,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- app.PrintDebug("UpdateData",self.lastTradeSkillID)
 				data = app.CreateProfession(self.lastTradeSkillID);
 				app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
-				NestObjects(data, app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", data.requireSkill));
+				NestObjects(data, app:BuildSearchResponse("requireSkill", data.requireSkill));
 				app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 				data.indent = 0;
 				data.visible = true;
@@ -24082,11 +24105,11 @@ end
 -- Function which is triggered after Startup
 app.InitDataCoroutine = function()
 	-- app.PrintMemoryUsage("InitDataCoroutine")
-	-- First, load the addon data
-	app:GetDataCache();
-
-	-- Then wait for the player to actually be 'in the game' to do further logic
+	-- Wait for the player to actually be 'in the game' to do further logic
 	while not app.InWorld do coroutine.yield(); end
+	
+	-- Wait for the Data Cache to return something.
+	while not app:GetDataCache() do coroutine.yield(); end
 
 	local accountWideData = LocalizeGlobal("ATTAccountWideData");
 	local characterData = LocalizeGlobal("ATTCharacterData");
@@ -24155,6 +24178,9 @@ app.InitDataCoroutine = function()
 
 	-- Assign DGU OnUpdates
 	AssignDirectGroupOnUpdates();
+	
+	-- Perform Heirloom caching/upgrade generation
+	app.CacheHeirlooms();
 
 	-- Mark all previously completed quests.
 	app.QueryCompletedQuests();
