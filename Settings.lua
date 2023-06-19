@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2023 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
-local app = select(2, ...);
+local appName, app = ...;
 local L = app.L;
 
 -- Binding Localizations
@@ -1346,7 +1346,7 @@ f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
 f:SetJustifyH("RIGHT");
 
-local v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
+local v = C_AddOns.GetAddOnMetadata(appName, "Version");
 f:SetText("v" .. v);
 f:Show();
 settings.version = f;
@@ -1447,7 +1447,7 @@ end
 -- Creates a Checkbox to use when a tracking option cannot be un-toggled for Account-Wide Tracking
 child.CreateForcedAccountWideCheckbox = function(frame)
 	local cb = frame:CreateCheckBox("");
-	cb:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+	cb:SetCheckedTexture(app.asset("TrackAccountWide"));
 	return cb;
 end
 
@@ -1474,7 +1474,7 @@ child.CreateAccountWideCheckbox = function(frame, localeKey, thing)
 			settings:UpdateMode(1);
 		end
 	);
-	cb:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+	cb:SetCheckedTexture(app.asset("TrackAccountWide"));
 	cb:SetATTTooltip(tooltip);
 	return cb;
 end

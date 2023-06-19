@@ -2405,7 +2405,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							-- #if AFTER SHADOWLANDS
 							["lockCriteria"] = { 1, "lvl", 31 },
 							-- character above 30 without account-wide achievements shouldn't see forever-incomplete achievement
-							["OnUpdate"] = [[function(t) if AllTheThings.Level > 30 and not AllTheThings.AccountWideAchievements then t.collectible = false; end end]],
+							["OnUpdate"] = [[function(t) if _.Level > 30 and not _.AccountWideAchievements then t.collectible = false; end end]],
 							-- #else
 							["lockCriteria"] = { 1, "lvl", 80 },
 							-- #endif

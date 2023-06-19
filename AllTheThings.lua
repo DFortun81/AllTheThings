@@ -3,8 +3,7 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2023 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
-
-local app = select(2, ...);
+local appName, app = ...;
 local L = app.L;
 
 -- Assign the FactionID.
@@ -155,8 +154,8 @@ end
 app.PrintMemoryUsage = function(...)
 	-- update memory value for ATT
 	UpdateAddOnMemoryUsage();
-	if ... then app.print(..., GetAddOnMemoryUsage("AllTheThings"));
-	else app.print("Memory",GetAddOnMemoryUsage("AllTheThings")); end
+	if ... then app.print(..., GetAddOnMemoryUsage(appName));
+	else app.print("Memory",GetAddOnMemoryUsage(appName)); end
 end
 -- app.PrintMemoryUsage("ATT.lua")
 --]]
@@ -4598,7 +4597,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 
 						if app.IsReady and sourceInfo.categoryID > 0 and sourceGroup.missing then
-							tinsert(info, { left = Colorize("Item Source not found in the AllTheThings " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
+							tinsert(info, { left = Colorize("Item Source not found in the " .. appName .. " " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
 							tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), app.Colors.SourceIgnored) });
 							tinsert(info, { left = Colorize(itemString, app.Colors.SourceIgnored) });
 						end
@@ -19317,7 +19316,7 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 			end
 		end
 		self:SetScript("OnEvent", function(self, e, ...)
-			if select(1, ...) == "AllTheThings" then
+			if select(1, ...) == appName then
 				self:UnregisterEvent("ADDON_LOADED");
 				Callback(RefreshBounties);
 			end
@@ -20994,7 +20993,7 @@ customWindowUpdates["Random"] = function(self)
 						['description'] = L["SEARCH_EVERYTHING_BUTTON_OF_DOOM"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "AllTheThings");
+							app.SetDataMember("RandomSearchFilter", appName);
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -21171,7 +21170,7 @@ customWindowUpdates["Random"] = function(self)
 				-- Call to our method and build a list to draw from
 				local method = app.GetDataMember("RandomSearchFilter", "Instance");
 				if method then
-					rerollOption.text = L["REROLL_2"] .. (method ~= "AllTheThings" and L[method:upper()] or method);
+					rerollOption.text = L["REROLL_2"] .. (method ~= appName and L[method:upper()] or method);
 					method = "Select" .. method;
 					local temp = self[method]() or app.EmptyTable;
 					local totalWeight = 0;
@@ -21213,7 +21212,7 @@ customWindowUpdates["Random"] = function(self)
 				tinsert(self.data.g, o);
 			end
 			local method = app.GetDataMember("RandomSearchFilter", "Instance");
-			rerollOption.text = L["REROLL_2"] .. (method ~= "AllTheThings" and L[method:upper()] or method);
+			rerollOption.text = L["REROLL_2"] .. (method ~= appName and L[method:upper()] or method);
 		end
 
 		-- Update the window and all of its row data
@@ -22707,7 +22706,7 @@ app.LoadDebugger = function()
 					MerchantFrame_SetFilter(MerchantFrame, 1);
 					DelayedCallback(AddMerchant, 1, UnitGUID("npc"));
 				elseif e == "TRADE_SKILL_LIST_UPDATE" then
-					local tradeSkillID = AllTheThings.GetTradeSkillLine();
+					local tradeSkillID = app.GetTradeSkillLine();
 					local currentCategoryGroup, currentCategoryID, categories = {}, -1, {};
 					local categoryList, rawGroups = {}, {};
 					local categoryIDs = { C_TradeSkillUI.GetCategories() };
@@ -23756,7 +23755,7 @@ end
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
 	-- app.PrintMemoryUsage("Startup")
-	local v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
+	local v = C_AddOns.GetAddOnMetadata(appName, "Version");
 	-- if placeholder exists as the Version tag, then assume we are not on the Release version
 	if string.match(v, "version") then
 		app.Version = "[Git]";
@@ -24547,7 +24546,7 @@ app.events.TOOLTIP_DATA_UPDATE = function(...)
 	end
 end
 app.AddonLoadedTriggers = {
-	["AllTheThings"] = function()
+	[appName] = function()
 		app.Startup();
 	end,
 	["Blizzard_AuctionHouseUI"] = function()
