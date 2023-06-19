@@ -55,9 +55,24 @@ namespace ATT
             if (o is Dictionary<string, object> dict) Export(builder, dict);
             else if (o is Dictionary<long, object> longDict) Export(builder, longDict);
             else if (o is List<object> list) Export(builder, list);
-            else if (o is string str) builder.Append("\"").Append(o.ToString().Replace("\"", "\\\"")).Append("\"");
+            else if (o is string str) ExportStringValue(builder, o.ToString());
             else if (o is bool b) builder.Append(b ? 1 : 0);
             else builder.Append(o);
+        }
+
+        static StringBuilder ExportStringValue(StringBuilder builder, string value)
+        {
+            value = value.Replace("\n", "\\n").Replace("\r", "\\r");
+            if (value.StartsWith("~"))
+            {
+                return builder.Append(value.Substring(1));
+            }
+            else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(") || value.StartsWith("C_")
+                || value.StartsWith("_."))
+            {
+                return builder.Append(value);
+            }
+            return builder.Append("\"").Append(value).Append("\"");
         }
 
         static void Export(StringBuilder builder, List<object> list)

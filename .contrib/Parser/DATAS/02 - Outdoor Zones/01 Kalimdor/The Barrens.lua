@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(FACTIONS, {
 				faction(470, {	-- Ratchet
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForRatchet,
 					["maps"] = { TANARIS },
 				}),

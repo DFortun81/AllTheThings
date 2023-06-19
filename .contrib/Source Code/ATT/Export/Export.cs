@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Text;
 
 namespace ATT
@@ -125,25 +126,30 @@ namespace ATT
         /// Export all of the local variable names in the key values list.
         /// </summary>
         /// <param name="builder">The builder.</param>
-        /// <param name="keyValues">The key values.</param>
-        private static void ExportLocalVariablesForLua(StringBuilder builder, IEnumerable<KeyValuePair<string, string>> keyValues)
+        private static void ExportLocalVariablesForLua(StringBuilder builder)
         {
+            var keys = FUNCTION_SHORTCUTS.Keys.ToList();
+            keys.Sort(StringComparer.InvariantCulture);
+
             int count = 0;
             var builder2 = new StringBuilder("local ");
-            foreach (var pair in keyValues)
+            foreach (var key in keys)
             {
                 if (count++ > 0) builder2.Append(',');
-                builder2.Append(pair.Key);
+                builder2.Append(key);
             }
             builder2.Append('=');
             count = 0;
-            foreach (var pair in keyValues)
+            foreach (var key in keys)
             {
                 if (count++ > 0) builder2.Append(',');
-                builder2.Append(pair.Value);
+                builder2.Append(FUNCTION_SHORTCUTS[key]);
             }
             builder2.Append(';').AppendLine();
             builder.Insert(0, builder2);
+
+            // Now that we're finished with these, let's clear it.
+            FUNCTION_SHORTCUTS.Clear();
         }
 
         /// <summary>

@@ -2,7 +2,7 @@ HOLIDAYS = createHeader({
 	readable = "Holiday",
 	constant = "HOLIDAYS",
 	export = true,
-	icon = [[_.asset("Category_Holidays")]],
+	icon = [[~_.asset("Category_Holidays")]],
 	text = {
 		-- #if ANYCLASSIC
 		en = "Holiday",

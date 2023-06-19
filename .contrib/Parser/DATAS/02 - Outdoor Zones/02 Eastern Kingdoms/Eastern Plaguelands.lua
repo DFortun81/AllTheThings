@@ -883,7 +883,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(FACTIONS, {
 				faction(529, {	-- Argent Dawn
-					["icon"] = icon("INV_Misc_Token_ArgentDawn3"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Token_ArgentDawn3",
 					["maps"] = {
 						WESTERN_PLAGUELANDS,
 						SCHOLOMANCE,

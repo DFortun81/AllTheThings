@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
-					["icon"] = icon("INV_Misc_Bandana_03"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",
 					-- #if BEFORE CATA
 					["minReputation"] = { 87, EXALTED - 1 },	-- Bloodsail Buccaneers, must be 20999 into Revered.
 					["OnTooltip"] = OnTooltipForBloodsail,
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				faction(21, {	-- Booty Bay
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForBootyBay,
 					["maps"] = {
 						TANARIS,

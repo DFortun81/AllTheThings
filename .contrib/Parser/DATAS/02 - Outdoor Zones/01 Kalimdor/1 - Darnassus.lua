@@ -91,7 +91,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(FACTIONS, {
 				faction(69, {	-- Darnassus
-					["icon"] = asset("Achievement_Character_Nightelf_Female"),
+					-- #if AFTER WRATH
+					["icon"] = "Interface\\Icons\\Achievement_Character_Nightelf_Female",
+					-- #else
+					["icon"] = [[~_.asset("Achievement_Character_Nightelf_Female")]],
+					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
 					-- #endif

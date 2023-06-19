@@ -175,7 +175,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				}),
 				-- #if BEFORE 4.0.3
 				faction(169, {	-- Steamweedle Cartel
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForSteamweedle,
 					["maps"] = {
 						235,	-- Gordok Commons

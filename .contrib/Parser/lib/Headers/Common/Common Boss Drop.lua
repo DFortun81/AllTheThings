@@ -3,7 +3,7 @@ COMMON_BOSS_DROPS = createHeader({
 	constant = "COMMON_BOSS_DROPS",
 	export = true,
 	-- #if ANYCLASSIC
-	icon = [[_.asset("Achievement_Garrison_Horde_PVE")]],
+	icon = [[~_.asset("Achievement_Garrison_Horde_PVE")]],
 	-- #else
 	icon = "Interface\\Icons\\Achievement_Garrison_Horde_PVE",
 	-- #endif

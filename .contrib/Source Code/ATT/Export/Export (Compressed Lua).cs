@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace ATT
@@ -22,8 +23,8 @@ namespace ATT
         private static void ExportCompressedLua(StringBuilder builder, object data)
         {
             // Firstly, we need to know the type of object we're working with.
-            if (data is bool b) builder.Append(b ? "1" : "false");  // NOTE: 0 in lua is evaluated as true, not false. So we can't shorten it. (rip)
-            else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
+            if (data is bool b) ExportBooleanValue(builder, b);
+            else if (data is string str) ExportStringValue(builder, str);
             else if (data is IDictionary<string, List<object>> listdict) ExportCompressedLua(builder, listdict);
             else if (data is IDictionary<long, long> longLongDict) ExportCompressedLua(builder, longLongDict);
             else if (data is IDictionary<long, object> longdict) ExportCompressedLua(builder, longdict);
@@ -32,7 +33,7 @@ namespace ATT
             else if (data is IList<object> list) ExportCompressedLua(builder, list);
             else
             {
-                // Default: Write it as a String. Best of luck.
+                // Default: Write it raw. Best of luck.
                 builder.Append(ToString(data));
             }
         }
@@ -81,6 +82,50 @@ namespace ATT
             else builder.Append("{}");
         }
 
+
+        /// <summary>
+        /// Export the contents of the dictionary to the builder in a compressed, minified format.
+        /// Only whitelisted fields will be written in order to preserve memory and filesize.
+        /// </summary>
+        /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
+        /// <param name="builder">The builder.</param>
+        /// <param name="data">The data dictionary.</param>
+        private static void ExportCompressedLua<VALUE>(StringBuilder builder, IDictionary<string, VALUE> data)
+        {
+            // If the dictionary doesn't have any content, then return immediately.
+            if (data.Any())
+            {
+                // If there is no most signficant type, then we write it generically.
+                // Open Bracket for beginning of the Dictionary.
+                builder.Append('{');
+
+                // Export Fields
+                int fieldCount = 0;
+                var keys = data.Keys.ToList();
+                keys.Sort(StringComparer.InvariantCulture);
+                foreach (var key in keys)
+                {
+                    // If this is NOT the first field, append a comma.
+                    if (fieldCount++ > 0) builder.Append(',');
+
+                    if (AddTableNewLines)
+                        builder.Append(Environment.NewLine);
+
+                    // Append the Sub-Indent and the Field Name
+                    builder.Append("[");
+                    ExportCompressedLua(builder, key);
+                    builder.Append("]=");
+
+                    // Append the undetermined object's format to the builder.
+                    ExportCompressedLua(builder, data[key]);
+                }
+
+                // Close Bracket for the end of the Dictionary.
+                builder.Append('}');
+            }
+            else builder.Append("{}");
+        }
+
         /// <summary>
         /// Export the contents of the dictionary to the builder in a compressed, minified format.
         /// Only whitelisted fields will be written in order to preserve memory and filesize.
@@ -97,7 +142,7 @@ namespace ATT
             }
             // Cache the fields
             var fields = data.Keys.ToList();
-            fields.Sort();
+            fields.Sort(StringComparer.InvariantCulture);
 
             // If this is a constructed object type, then we need to write a parenthesis afterward.
             var constructed = ExportShortcut(builder, data, fields, out ObjectData objectType);
@@ -347,12 +392,46 @@ namespace ATT
 
             // Simplify the structure of the string and then export to the builder.
             SimplifyStructureForLua(builder);
-            ExportShortcutsForLua(builder);
+            ExportLocalVariablesForLua(builder);
             ExportCategoriesHeaderForLua(builder);
             STRUCTURE_COUNTS.Clear();
             FUNCTION_SHORTCUTS.Clear();
             AddTableNewLines = false;
             return builder;
+        }
+
+        /// <summary>
+        /// Export a boolean value to the builder.
+        /// NOTE: 0 in lua is evaluated as true, not false. So we can't shorten it. (rip)
+        /// </summary>
+        /// <param name="builder">The builder.</param>
+        /// <param name="value">The boolean value.</param>
+        /// <returns>The builder.</returns>
+        public static StringBuilder ExportBooleanValue(StringBuilder builder, bool value)
+        {
+            return builder.Append(value ? "1" : "false");
+        }
+
+        /// <summary>
+        /// Export a string value to the builder.
+        /// Should the string contain native lua directives, it will export it as native lua code.
+        /// </summary>
+        /// <param name="builder">The builder.</param>
+        /// <param name="value">The string value.</param>
+        /// <returns>The builder.</returns>
+        public static StringBuilder ExportStringValue(StringBuilder builder, string value)
+        {
+            value = value.Replace("\n", "\\n").Replace("\r", "\\r");
+            if (value.StartsWith("~"))
+            {
+                return builder.Append(value.Substring(1));
+            }
+            else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(") || value.StartsWith("C_")
+                || value.StartsWith("_."))
+            {
+                return builder.Append(value);
+            }
+            return builder.Append("\"").Append(value.Replace("\"", "\\\"")).Append("\"");
         }
     }
 }

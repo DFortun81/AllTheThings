@@ -2,7 +2,7 @@ VENDORS = createHeader({
 	readable = "Vendors",
 	constant = "VENDORS",
 	export = true,
-	icon = [[_.asset("Interface_Vendor")]],
+	icon = [[~_.asset("Interface_Vendor")]],
 	text = {
 		-- #if ANYCLASSIC
 		en = [[~BATTLE_PET_SOURCE_3]],

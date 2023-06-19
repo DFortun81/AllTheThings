@@ -332,6 +332,14 @@ unpack = function(t, i)
 end
 
 -- Helper Functions
+asset = function(path)
+	print("ASSET: " .. path);
+	error("The asset function has been deprecated");
+end
+icon = function(path)
+	print("ICON: " .. path);
+	error("The icon function has been deprecated");
+end
 applyevent = function(eventID, data)
 	if not eventID then
 		print("INVALID EVENT ID PASSED TO APPLYHOLIDAY");
@@ -340,25 +348,14 @@ applyevent = function(eventID, data)
 	return bubbleDown({ ["e"] = eventID }, data);
 end
 -- #if ANYCLASSIC
--- Classic Only
-asset = function(path)
-	return "Interface\\Addons\\ATT-Classic\\assets\\" .. path;
-end
 applyclassicphase = function(phase, data, force)
 	return (force and bubbleDownAndReplace or bubbleDown)({ ["u"] = phase }, data);
 end
 -- #else
--- Retail Only
-asset = function(path)
-	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
-end
 applyclassicphase = function(phase, data, force)
 	return data;
 end
 -- #endif
-icon = function(path)
-	return "Interface\\Icons\\" .. path;
-end
 
 local squishes = {};
 lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)

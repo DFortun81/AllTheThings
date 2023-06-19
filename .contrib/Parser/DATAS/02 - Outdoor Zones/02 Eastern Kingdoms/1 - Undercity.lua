@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Undead_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Undead_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,

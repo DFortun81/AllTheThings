@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Gnome_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Gnome_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Dwarf_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Dwarf_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,

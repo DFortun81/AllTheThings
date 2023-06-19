@@ -321,7 +321,7 @@ root(ROOTS.Zones, {
 				-- #endif
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(1031, {	-- Sha'tari Skyguard
-						["icon"] = icon("ability_hunter_pet_netherray"),
+						["icon"] = "Interface\\Icons\\ability_hunter_pet_netherray",
 						["OnTooltip"] = OnTooltipForSkyguard,
 					})),
 				}),

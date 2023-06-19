@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Nightelf_Female",
 				-- #else
-				["icon"] = asset("Achievement_Character_Nightelf_Female"),
+				["icon"] = [[~_.asset("Achievement_Character_Nightelf_Female")]],
 				-- #endif
 				["maps"] = { 58 },	-- Shadowthread Cave
 				["groups"] = {

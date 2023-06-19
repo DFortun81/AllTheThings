@@ -322,7 +322,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(FACTIONS, {
 				faction(577, {	-- Everlook
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForEverlook,
 					["maps"] = { TANARIS, THE_BARRENS },
 				}),
@@ -331,7 +331,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { FELWOOD },
 				}),
 				faction(589, {	-- Wintersaber Trainers
-					["icon"] = icon("ability_mount_pinktiger"),
+					["icon"] = "Interface\\Icons\\ability_mount_pinktiger",
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForWintersaberTrainers,
 					-- #endif

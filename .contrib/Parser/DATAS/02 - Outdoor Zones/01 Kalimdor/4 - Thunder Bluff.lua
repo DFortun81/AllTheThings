@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Tauren_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Tauren_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Tauren_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,

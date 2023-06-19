@@ -87,10 +87,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
-					["icon"] = icon("INV_Misc_Bandana_03"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",
 				}),
 				faction(21, {	-- Booty Bay
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 				}),
 			}),
 			n(FLIGHT_PATHS, {

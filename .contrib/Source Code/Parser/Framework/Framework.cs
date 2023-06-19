@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using static ATT.Export;
 
@@ -4053,34 +4054,31 @@ namespace ATT
             return builder.Append("\t[").Append(key).Append("] = ").Append(value).Append(",");
         }
 
-        static StringBuilder ExportStringKeyValue(StringBuilder builder, object key, string value)
+        static StringBuilder ExportStringValue(StringBuilder builder, string value)
         {
-            builder.Append("\t[").Append(key).Append("] = ");
+            value = value.Replace("\n", "\\n").Replace("\r", "\\r");
             if (value.StartsWith("~"))
             {
-                return builder.Append(value.Substring(1).Replace("\n", "\\n").Replace("\r", "\\r")).Append(",");
+                return builder.Append(value.Substring(1));
             }
             else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(") || value.StartsWith("C_")
                 || value.StartsWith("_."))
             {
-                return builder.Append(value.Replace("\n", "\\n").Replace("\r", "\\r")).Append(",");
+                return builder.Append(value);
             }
-            return builder.Append("\"").Append(value.Replace("\n", "\\n").Replace("\r", "\\r")).Append("\",");
+            return builder.Append("\"").Append(value).Append("\"");
+        }
+
+        static StringBuilder ExportStringKeyValue(StringBuilder builder, object key, string value)
+        {
+            builder.Append("\t[").Append(key).Append("] = ");
+            return ExportStringValue(builder, value).Append(",");
         }
 
         static StringBuilder ExportStringKeyFieldValue(StringBuilder builder, object key, string field, string value)
         {
             builder.Append("[").Append(key).Append("]").Append(field).Append(" = ");
-            if (value.StartsWith("~"))
-            {
-                return builder.Append(value.Substring(1).Replace("\n", "\\n").Replace("\r", "\\r"));
-            }
-            else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(") || value.StartsWith("C_")
-                || value.StartsWith("_."))
-            {
-                return builder.Append(value.Replace("\n", "\\n").Replace("\r", "\\r"));
-            }
-            return builder.Append("\"").Append(value.Replace("\n", "\\n").Replace("\r", "\\r")).Append("\"");
+            return ExportStringValue(builder, value);
         }
 
         static StringBuilder ExportReadableConstantComment(StringBuilder builder, string readable, string constant)
@@ -4339,13 +4337,8 @@ namespace ATT
                             foreach (var key in keys)
                             {
                                 var name = CATEGORY_NAMES[key];
-
                                 builder.Append("\t[").Append(key).Append("] = ");
-                                if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
-                                {
-                                    builder.Append("[[").Append(name).Append("]],").AppendLine();
-                                }
-                                else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                                ExportStringValue(builder, name).AppendLine(",");
                             }
                             builder.AppendLine("};");
                             builder.Append("_.CategoryIcons = {").AppendLine();
@@ -4353,7 +4346,8 @@ namespace ATT
                             {
                                 if (CATEGORY_ICONS.TryGetValue(key, out string icon))
                                 {
-                                    builder.Append("\t[").Append(key).Append("] = \"").Append(icon).Append("\",");
+                                    builder.Append("\t[").Append(key).Append("] = ");
+                                    ExportStringValue(builder, icon).AppendLine(",");
                                     if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
                                     builder.AppendLine();
                                 }
@@ -4370,7 +4364,8 @@ namespace ATT
                             {
                                 if (!CATEGORY_NAMES.ContainsKey(key))
                                 {
-                                    builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",").AppendLine();
+                                    builder.Append("\t[").Append(key).Append("] = ");
+                                    ExportStringValue(builder, CATEGORY_ICONS[key]).AppendLine(",");
                                 }
                             }
                             builder.AppendLine("};");
@@ -4548,11 +4543,7 @@ namespace ATT
                             {
                                 var name = OBJECT_NAMES[key];
                                 builder.Append("\t[").Append(key).Append("] = ");
-                                if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
-                                {
-                                    builder.Append("[[").Append(name).Append("]],").AppendLine();
-                                }
-                                else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                                ExportStringValue(builder, name).AppendLine(",");
                             }
                             builder.AppendLine("};");
                             keys = OBJECT_ICONS.Keys.ToList();
@@ -4625,11 +4616,7 @@ namespace ATT
                         {
                             var name = CATEGORY_NAMES[key];
                             builder.Append("\t[").Append(key).Append("] = ");
-                            if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
-                            {
-                                builder.Append(name).Append(",").AppendLine();
-                            }
-                            else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                            ExportStringValue(builder, name).AppendLine(",");
                         }
                     }
                     builder.AppendLine("};");

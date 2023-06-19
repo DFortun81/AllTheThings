@@ -37,7 +37,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_bastion" }, {
 						n(REWARDS, {
 							["description"] = "Every Activity within Anima Conductor Rewards this.",
-							["icon"] = asset("Interface_Rewards"),
 							["g"] = {
 								GRATEFUL,
 							},

@@ -7,7 +7,7 @@ WEEKLY_HOLIDAYS = createHeader({
 	-- #if AFTER 9.0.1
 	icon = 3753381,	-- Item_bastion_paragonchest_03
 	-- #else
-	icon = [[_.asset("Category_Holidays")]],
+	icon = [[~_.asset("Category_Holidays")]],
 	-- #endif
 	text = {
 		en = [[~CALENDAR_FILTER_WEEKLY_HOLIDAYS]],

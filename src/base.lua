@@ -5,11 +5,12 @@
 --------------------------------------------------------------------------------
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local name, app = ...;
+local assetRootPath = "Interface\\Addons\\" .. name .. "\\assets\\";
 -- app.DEBUG_PRINT = true;
 function app:GetName() return name; end
 _G["AllTheThings"] = app;
 app.asset = function(path)
-	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
+	return assetRootPath .. path;
 end
 -- Consolidated debug-only print with preceding precise timestamp
 app.PrintDebug = function(...)

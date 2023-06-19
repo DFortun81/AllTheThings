@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",
 				-- #else
-				["icon"] = asset("Achievement_Character_Undead_Female"),
+				["icon"] = [[~_.asset("Achievement_Character_Undead_Female")]],
 				-- #endif
 				-- #if AFTER CATA
 				["maps"] = { 466 },	-- Night Web's Hollow

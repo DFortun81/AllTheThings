@@ -20,7 +20,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			m(ECHO_ISLES, {
 				["lore"] = "The Echoes Isles are the ancestral home of the Darkspear Trolls. Vol'jin, the leader of the trolls, has relocated here after tensions between Hellscream and the trolls.",
+				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",
+				-- #else
+				["icon"] = [[~_.asset("Achievement_Character_Troll_Male")]],
+				-- #endif
 				["timeline"] = { "added 4.0.3.13277" },
 				["maps"] = { 464 },	-- Spitescale Cavern
 				["groups"] = {
@@ -849,6 +853,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["lore"] = "The Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.",
 				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
+				-- #else
+				["icon"] = [[~_.asset("Achievement_Character_Orc_Male")]],
 				-- #endif
 				["maps"] = { 2 },	-- Burning Blade Coven
 				["groups"] = {
