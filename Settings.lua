@@ -1412,6 +1412,21 @@ scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
 scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
 scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 4);
 
+-- -- Settings frame
+-- local scrollFrame = CreateFrame("ScrollFrame", nil, settings, "ScrollFrameTemplate")
+-- scrollFrame:SetPoint("TOPLEFT", -5, 0)	-- Move it a little bit, so it's equal distance from the top and the left
+-- scrollFrame:SetPoint("BOTTOMRIGHT", -25, 0)	-- Allow space for the scrollbar
+
+-- local child = CreateFrame("Frame")
+-- scrollFrame:SetScrollChild(child)
+-- child:SetWidth(SettingsPanel.Container.SettingsCanvas:GetWidth()-25)	-- The settings panel width minus the space we allowed for the scrollbar
+-- child:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
+
+local subcategory = child
+subcategory.name = "General"
+subcategory.parent = "AllTheThings"
+InterfaceOptions_AddCategory(subcategory)
+
 -- Creates a Checkbox used to designate tracking the specified 'trackingOption', based on tracking of 'parentTrackingOption' if specified
 -- localeKey: The prefix of the locale lookup value (i.e. HEIRLOOMS_UPGRADES)
 -- thing: The settings lookup for this tracking option (i.e. 'HeirloomUpgrades')
