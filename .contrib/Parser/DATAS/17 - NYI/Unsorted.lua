@@ -580,7 +580,6 @@ root(ROOTS.Unsorted, {
 			i(206682),	-- Rusziona
 			i(206683),	-- Wrathion's Tab
 			i(206695),	-- Pale Duskblossom
-			i(206749),	-- Oil Soaked Captains Log
 			i(206758),	-- Belastrasza
 			i(206763),	-- Kabluey
 			i(206771),	-- Pattern: Cursed Cloth
@@ -589,7 +588,6 @@ root(ROOTS.Unsorted, {
 			i(206775),	-- Map to Suramar
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
-			i(206859),	-- Chipped Stone Tablet
 			i(206926),	-- Keeper's Gavel
 			i(206927),	-- Curator's Warhammer
 			i(206928),	-- Attendent's Hammer
@@ -602,7 +600,6 @@ root(ROOTS.Unsorted, {
 			i(206564),	-- Time-Displaced Titanic Disc
 			i(206566),	-- Reins of the Scarlet Pterrordax
 			i(206567),	-- Harbor Gryphon
-			i(206749),	-- Oil-Soaked Captain's Log
 			i(206957),	-- Boffins
 			i(206962),	-- Watcher's Log
 			i(206971),	-- Zhusadormu
@@ -616,7 +613,6 @@ root(ROOTS.Unsorted, {
 			i(206998),	-- Ragged Mantid Sword
 			i(207003),	-- Gilded Vase
 			i(16222),	-- Formula: Enchant Shield - Vitality
-			i(206749),	-- Oil-Soaked Log Book
 			i(206998),	-- Amber Sword
 			i(207008),	-- A Fish
 			i(207011),	-- Warblades of the Hakkari, Reborn

@@ -9,31 +9,41 @@ TIME_RIFTS = createHeader({
 	},
 });
 local DILATED_TIME_CAPSULE = 207030;
+local AZQROTH = 2201;
+local AZEWRATH = 2202;
+local AZMOURNE = 2203;
+local AZMERLOTH = 2204;
+local ULDEROTH = 2205;
+local AZEROTH = 2206;
+local THE_WARLANDS = 2207;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(TIME_RIFTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 			["maps"] = {
 				2199,	-- Tyrhold Reservoir (Scenario Map)
-				2201,	-- Azq'roth
-				2202,	-- Azewrath
-				2203,	-- Azmourne
-				2204,	-- Timeways_Murlocs
+				AZQROTH,
+				AZEWRATH,
+				AZMOURNE,
+				AZMERLOTH,
+				ULDEROTH,
+				AZEROTH,
+				THE_WARLANDS,
 			},
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(18637, {	-- Chronograde Connoisseur
 						-- TODO: Change names
 						crit(1, {	-- Azmerloth
-							["crs"] = { 204808 },	-- Fractured Causality
+							["crs"] = { 204808 },	-- Fractured Causality / Gil'dan
 						}),
 						crit(2, {	-- Ulderoth
-							["crs"] = { 205304 },	-- Fractured Causality
+							["crs"] = { 205304 },	-- Fractured Causality / Freya
 						}),
 						crit(3, {	-- Azmourne
 							["crs"] = { 205305 },	-- Fractured Causality / The Lich King
 						}),
 						crit(4, {	-- Azewrath
-							["crs"] = { 205306 },	-- Fractured Causality
+							["crs"] = { 205306 },	-- Fractured Causality / Illidan
 						}),
 						crit(5, {	-- Azq'roth
 							["crs"] = { 205307 },	-- Fractured Causality / Fury of N'zoth
@@ -42,7 +52,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["crs"] = { 205308 },	-- Fractured Causality / Varian Wrynn
 						}),
 						crit(7, {	-- A.Z.E.R.O.T.H
-							["crs"] = { 205309 },	-- Fractured Causality
+							["crs"] = { 205309 },	-- Fractured Causality / Overload Mechagon
 						}),
 					}),
 					ach(18639),	-- Collapsed Reality
@@ -78,53 +88,51 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["provider"] = { "i", 208013 },	-- Killbot 9000
 						}),
 					}),
-					--[[
 					ach(18554, {	-- Temporal Acquisitions Specialist
 						i(208186),	-- Boffins (TOY!)
-						crit(1, {
-							["sourceQuests"] = {  },	--
+						crit(1, {	-- Titanic Disc
+							-- ["sourceQuests"] = {  },	--
 						}),
-						crit(2, {
-							["sourceQuests"] = {  },	--
+						crit(2, {	-- Antlered Skull
+							-- ["sourceQuests"] = {  },	--
 						}),
-						crit(3, {
-							["sourceQuests"] = {  },	--
+						crit(3, {	-- Azmerlothian Hourglass
+							["sourceQuests"] = { 76379 },	-- A Murloc and a Dragon Walk into a Time Rift...
 						}),
-						crit(4, {
-							["sourceQuests"] = {  },	--
+						crit(4, {	-- Mechanized Cog
+							-- ["sourceQuests"] = {  },	--
 						}),
-						crit(5, {
-							["sourceQuests"] = {  },	--
+						crit(5, {	-- Corrupted Ashbringer
+							-- ["sourceQuests"] = {  },	--
 						}),
-						crit(6, {
-							["sourceQuests"] = {  },	--
+						crit(6, {	-- Oil-Soaked Log Book
+							["sourceQuests"] = { 76449 },	-- The Endless Conflict
 						}),
-						crit(7, {
-							["sourceQuests"] = {  },	--
+						crit(7, {	-- Chipped Stone Tablet
+							["sourceQuests"] = { 76453 },	-- A Stony Reception
 						}),
-						crit(8, {
-							["sourceQuests"] = {  },	--
+						crit(8, {	-- Map to Suramar
+							-- ["sourceQuests"] = {  },	--
 						}),
-						crit(9, {
-							["sourceQuests"] = {  },	--
+						crit(9, {	-- Boffins
+							-- ["sourceQuests"] = {  },	--
 						}),
-						crit(10, {
-							["sourceQuests"] = {  },	--
+						crit(10, {	-- Watcher's Log
+							-- ["sourceQuests"] = {  },	--
 						}),
-						crit(11, {
-							["sourceQuests"] = {  },	--
+						crit(11, {	-- Blood Soaked Book
+							-- ["sourceQuests"] = {  },	--
 						}),
-						crit(12, {
-							["sourceQuests"] = {  },	--
+						crit(12, {	-- Amber Blade
+							-- ["sourceQuests"] = {  },	--
 						}),
-						crit(13, {
-							["sourceQuests"] = {  },	--
+						crit(13, {	-- Gilded Vase
+							-- ["sourceQuests"] = {  },	--
 						}),
-						crit(14, {
-							["sourceQuests"] = {  },	--
+						crit(14, {	-- A Fish
+							-- ["sourceQuests"] = {  },	--
 						}),
 					}),
-					--]]
 					ach(18641),	-- To All The Squirrels I've BEEN Before
 					ach(18635),	-- Verified Rifter
 				}),
@@ -146,7 +154,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(QUESTS, {
 					q(76379, {	-- A Murloc and a Dragon Walk into a Time Rift...
 						["provider"] = { "n", 206822 },	-- Alulgultasza de Urgl-Blalul <Queen of the... Murloc... Dragons>
-						["coord"] = { 49.4, 73.7, 2204 },
+						["coord"] = { 49.4, 73.7, AZMERLOTH },
+					}),
+					q(76453, {	-- A Stony Reception
+						["provider"] = { "i", 206859 },	-- Chipped Stone Tabled
+						["coord"] = { 45.7, 23.9, AZQROTH },
+					}),
+					q(76449, {	-- The Endless Conflict
+						["provider"] = { "i", 206749 },	-- Oil-Soaked Log Book
+						["coord"] = { 12.0, 30.9, THE_WARLANDS },
 					}),
 					q(77236, {	-- When Time Needs Mending
 						["provider"] = { "n", 204450 },	-- Soridormi
@@ -794,6 +810,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							})),
 						},
 					}),
+				}),
+				n(TREAURES, {
+					-- o(xxxx,{	-- Chipped Stone Tabled
+					-- 	["coord"] = { 45.7, 23.9, AZQROTH },
+					-- 	["g"] = {
+							i(206859),	-- Chipped Stone Tabled
+					-- 	},
+					-- }),
+					-- o(xxxx,{	-- Oil Soaked Book
+					-- 	["coord"] = { 12.0, 30.9, THE_WARLANDS },
+					-- 	["g"] = {
+							i(206749),	-- Oil-Soaked Log Book
+					-- 	},
+					-- 	}),
 				}),
 			},
 		})),
