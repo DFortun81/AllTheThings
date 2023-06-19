@@ -6,26 +6,35 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 		["coord"] = { 61.0, 84.3, THALDRASZUS },
 		["maps"] = {
 			2190,	-- Sanctum of Chronology
+			2191,	-- Milleenia's Threshold
+			2192,	-- Locus of Eternity
+			2193,	-- Spoke of Endless Winter
+			2194,	-- Crossroads of Fate
+			2195,	-- Infinite Conflux
+			2196,	-- Twisting Approach
+			2197,	-- Immemorial Battlefield
+			2198,	-- Dawn of the Infinite
 		},
 		["g"] = {
 			------------------------------------------
 			-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
 			----------------LG GOLD ------------------
 			------------------------------------------
+			-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
 			i(208064, {	-- Quantum chestpiece
-			
+
 			}),
 			i(208063, {	-- Quantum gloves
-			
+
 			}),
 			i(208061, {	-- Quantum headpiece
-			
+
 			}),
 			i(208065, {	-- Quantum legs
-			
+
 			}),
 			i(208062, {	-- Quantum shoulders
-			
+
 			}),
 			i(208216, {	-- Reins of the Quantum Courser
 				["sym"] = {{"select","itemID",
@@ -35,58 +44,58 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 			}),
 			n(WEAPONS, {
 				i(208111, {	-- Quantum axe
-			
+
 				}),
 				i(29356, {	-- Quantum blade
-				
+
 				}),
 				i(208117, {	-- Quantum bow
-				
+
 				}),
 				i(208118, {	-- Quantum crossbow
-				
+
 				}),
 				i(208119, {	-- Quantum firearm
-				
+
 				}),
 				i(208125, {	-- Quantum focus
-				
+					i(78433),	-- Ledger of Revolting Rituals (DS Heroic)
 				}),
 				i(208112, {	-- Quantum greatsword
-				
+
 				}),
 				i(208113, {	-- Quantum greataxe
-				
+
 				}),
 				i(208114, {	-- Quantum greathammer
-				
+
 				}),
 				i(208120, {	-- Quantum knife
-				
+
 				}),
 				i(208121, {	-- Quantum knuckles
-				
+
 				}),
 				i(208110, {	-- Quantum mace
-				
+
 				}),
 				i(208116, {	-- Quantum polearm
-				
+
 				}),
 				i(208115, {	-- Quantum staff
-				
+
 				}),
 				i(208109, {	-- Quantum sword
-				
+
 				}),
 				i(208122, {	-- Quantum warglaives
-				
+
 				}),
 				i(208123, {	-- Quantum wand
-				
+
 				}),
 				i(208126, {	-- Quantum shield
-				
+
 				}),
 			}),
 			n(QUESTS, {
@@ -131,42 +140,58 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				}),
 			}),
 			d(MYTHIC_DUNGEON, {
-				--[[
+				n(COMMON_BOSS_DROPS, {
+					currency(PARACAUSAL_FLAKES),
+					currency(SORIDORMIS_RECOGNITION),
+				}),
 				e(2521, {	-- Chronikar
-					--["crs"] = {  },	--
-					--["g"] = {
-					--},
+					["crs"] = { 198995 },	-- Chronikar
+					["g"] = {
+						ach(18589),	-- Crunch Time
+					},
 				}),
 				e(2528, {	-- Manifested Timeways
-					--["crs"] = {  },	--
-					--["g"] = {
-					--},
+					["crs"] = { 298996 },	-- Manifested Timeways
+					["g"] = {
+						ach(18556),	-- Chaotic Time
+					},
 				}),
 				e(2535, {	-- Blight of Galakrond
-					--["crs"] = {  },	--
-					--["g"] = {
-					--},
+					["crs"] = {
+						198997,	-- Blight of Galakrond
+						201792,	-- Ahnzon
+						201788,	-- Dazhak
+						201790,	-- Loszkeleth
+					},
+					["g"] = {
+						ach(18612),	-- A Slime in Need
+					},
 				}),
 				e(2537, {	-- Iridikron the Stonescaled
-					--["crs"] = {  },	--
+					["crs"] = {
+						204459,	-- Iridikron the Stonescaled
+						198933,	-- Iridikron the Stonescaled
+					},
 					--["g"] = {
 					--},
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
-					--["crs"] = {  },	--
-					--["g"] = {
-					--},
+					["crs"] = { 198998 },	-- Tyr, the Infinite Keeper
+					["g"] = {
+						ach(18539),	-- Back En-masse
+					},
 				}),
 				e(2536, {	-- Morchie
-					--["crs"] = {  },	--
+					["crs"] = { 198999 },	-- Morchie
 					--["g"] = {
 					--},
 				}),
 				e(2533, {	-- Time-Lost Battlefield (Alliance)
-					--["crs"] = {  },	--
+					["crs"] = { 203679 },	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
 					--["g"] = {
 					--},
 				}),
+				--[[
 				e(2534, {	-- Time-Lost Battlefield (Horde)
 					--["crs"] = {  },	--
 					--["g"] = {
