@@ -1545,33 +1545,6 @@ app.GetProgressText = GetProgressTextDefault;
 app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
 
--- Source ID Harvesting Lib
-local DressUpModel = CreateFrame('DressUpModel');
-local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
-	["INVTYPE_HEAD"] = {1},
-	["INVTYPE_NECK"] = {2},
-	["INVTYPE_SHOULDER"] = {3},
-	["INVTYPE_BODY"] = {4},
-	["INVTYPE_CHEST"] = {5},
-	["INVTYPE_ROBE"] = {5},
-	["INVTYPE_WAIST"] = {6},
-	["INVTYPE_LEGS"] = {7},
-	["INVTYPE_FEET"] = {8},
-	["INVTYPE_WRIST"] = {9},
-	["INVTYPE_HAND"] = {10},
-	["INVTYPE_RING"] = {11},
-	["INVTYPE_TRINKET"] = {12},
-	["INVTYPE_CLOAK"] = {15},
-	["INVTYPE_WEAPON"] = {16, 17},
-	["INVTYPE_SHIELD"] = {17},
-	["INVTYPE_2HWEAPON"] = {16, 17},
-	["INVTYPE_WEAPONMAINHAND"] = {16},
-	["INVTYPE_RANGED"] = {16},
-	["INVTYPE_RANGEDRIGHT"] = {16},
-	["INVTYPE_WEAPONOFFHAND"] = {17},
-	["INVTYPE_HOLDABLE"] = {17},
-	["INVTYPE_TABARD"] = {19},
-};
 local function BuildGroups(parent, g)
 	g = g or parent.g;
 	if g then
@@ -1952,6 +1925,34 @@ local GetSourceID;
 do
 local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
 local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
+local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
+	["INVTYPE_HEAD"] = {1},
+	["INVTYPE_NECK"] = {2},
+	["INVTYPE_SHOULDER"] = {3},
+	["INVTYPE_BODY"] = {4},
+	["INVTYPE_CHEST"] = {5},
+	["INVTYPE_ROBE"] = {5},
+	["INVTYPE_WAIST"] = {6},
+	["INVTYPE_LEGS"] = {7},
+	["INVTYPE_FEET"] = {8},
+	["INVTYPE_WRIST"] = {9},
+	["INVTYPE_HAND"] = {10},
+	["INVTYPE_RING"] = {11},
+	["INVTYPE_TRINKET"] = {12},
+	["INVTYPE_CLOAK"] = {15},
+	["INVTYPE_WEAPON"] = {16, 17},
+	["INVTYPE_SHIELD"] = {17},
+	["INVTYPE_2HWEAPON"] = {16, 17},
+	["INVTYPE_WEAPONMAINHAND"] = {16},
+	["INVTYPE_RANGED"] = {16},
+	["INVTYPE_RANGEDRIGHT"] = {16},
+	["INVTYPE_WEAPONOFFHAND"] = {17},
+	["INVTYPE_HOLDABLE"] = {17},
+	["INVTYPE_TABARD"] = {19},
+};
+
+-- Source ID Harvesting Lib
+local DressUpModel = CreateFrame('DressUpModel');
 GetSourceID = function(itemLink)
 	if C_Item_IsDressableItemByID(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
