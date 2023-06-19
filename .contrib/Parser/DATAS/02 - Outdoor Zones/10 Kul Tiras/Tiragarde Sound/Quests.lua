@@ -304,6 +304,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 58.5, 61.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131654 },	-- Meredith
+				["_drop"] = { "g" },	-- Drop Polished Pet Charm
 				["sym"] = {{"select","itemID",
 					163036,	-- Polished Pet Charm
 				}},
@@ -962,6 +963,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 77.0, 82.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129098 },	-- Rodrigo <Flight Master>
+				["_drop"] = { "g" },	-- Drop Polished Pet Charm
 				["sym"] = {{"select","itemID",
 					163036,	-- Polished Pet Charm
 				}},

@@ -856,6 +856,7 @@ root(ROOTS.PetBattles, petbattle({
 			["sourceQuests"] = { 70697 },	-- An Expert Opinion
 			["provider"] = { "n", 196069 },	-- Patchu
 			["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
+			["_drop"] = { "g" },	-- Drop Polished Pet Charm
 			["sym"] = {{"select","itemID",
 				92683,	-- Flawless Dragonkin Battle-Stone
 				163036,	-- Polished Pet Charm
@@ -879,6 +880,7 @@ root(ROOTS.PetBattles, petbattle({
 			["sourceQuests"] = { 70849 },	-- This Calls for a Specialist
 			["provider"] = { "n", 196264 },	-- Haniko
 			["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
+			["_drop"] = { "g" },	-- Drop Polished Pet Charm
 			["sym"] = {{"select","itemID",
 				163036,	-- Polished Pet Charm
 			}},
@@ -888,6 +890,7 @@ root(ROOTS.PetBattles, petbattle({
 			["sourceQuests"] = { 70851 },	-- Born to Be Wilder
 			["provider"] = { "n", 196264 },	-- Haniko
 			["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
+			["_drop"] = { "g" },	-- Drop Polished Pet Charm
 			["sym"] = {{"select","itemID",
 				116421,	-- Flying Battle-Training Stone
 				163036,	-- Polished Pet Charm
