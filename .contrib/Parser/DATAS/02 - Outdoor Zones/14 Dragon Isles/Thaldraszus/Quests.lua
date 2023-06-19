@@ -996,16 +996,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(72422, {	-- Stop the Presses
 					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
-					--["provider"] = { "n", 199301 },	-- Investigator Erima
-					--["coord"] = { 46.4, 55.9, THALDRASZUS },
+					["provider"] = { "n", 199391 },	-- Maldra Flametongue
+					["coord"] = { 46.4, 55.9, THALDRASZUS },
 					["g"] = {
 						i(203390),	-- Maldra's Ring of Elemental Binding
 					},
 				}),
 				q(72421, {	-- The Quill to Power
 					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
-					--["provider"] = { "n", 199301 },	-- Investigator Erima
-					--["coord"] = { 46.4, 55.9, THALDRASZUS },
+					["provider"] = { "n", 199391 },	-- Maldra Flametongue
+					["coord"] = { 46.4, 55.9, THALDRASZUS },
 				}),
 				q(72420, {	-- Wreckonciliation
 					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
