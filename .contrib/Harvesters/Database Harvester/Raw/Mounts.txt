@@ -1628,6 +1628,8 @@
 408651@@@Cataloged Shalewing
 10.1.0.49741
 407555@@@Tarecgosa's Visage
+10.1.0.49890
+414986@@@Royal Swarmer
 10.1.5.49516
 413409@@@Highland Drake
 413825@@@Exuberant Scarlet Pterrordax
@@ -1647,7 +1649,6 @@
 414334@@@Scourgebound Vanquisher
 10.1.5.49719
 10.1.5.49908
-414986@@@Royal Swarmer
 417548@@@Renewed Proto-Drake
 417552@@@Windborne Velocidrake
 417554@@@Cliffside Wylderdrake

@@ -16,6 +16,9 @@ i(208057),	-- Smoldering Banner of the Aspects
 i(208058),	-- Minute Glass
 i(208092),	--
 i(208096),	-- Familiar Journal
+10.1.5.50006
+i(206268),	-- Ethereal Transmogrifier
+i(208186),	-- Boffins
 
 
 
@@ -38,3 +41,6 @@ i(208057),	-- Smoldering Banner of the Aspects
 i(208058),	-- Minute Glass
 i(208092),	--
 i(208096),	-- Familiar Journal
+10.1.5.50006
+i(206268),	-- Ethereal Transmogrifier
+i(208186),	-- Boffins

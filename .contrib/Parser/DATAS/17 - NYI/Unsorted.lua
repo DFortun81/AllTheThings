@@ -1223,6 +1223,93 @@ root(ROOTS.Unsorted, {
 			i(208149),	-- Brown Tweed Cap
 			i(208150),	-- Blue Tweed Cap
 			i(208152),	-- Pattie's Cap
+			i(206604),	-- Lamented Crusader's Helmet
+			i(206605),	-- Lamented Crusader's Spaulders
+			i(206606),	-- Lamented Crusader's Chestpiece
+			i(206607),	-- Lamented Crusader's Bracers
+			i(206608),	-- Lamented Crusader's Gauntlets
+			i(206609),	-- Lamented Crusader's Belt
+			i(206610),	-- Lamented Crusader's Leggings
+			i(206611),	-- Lamented Crusader's Boots
+			i(206612),	-- Desecrated Cloth Helmet
+			i(206613),	-- Desecrated Cloth Spaulders
+			i(206614),	-- Desecrated Cloth Chestpiece
+			i(206615),	-- Desecrated Cloth Bracers
+			i(206616),	-- Desecrated Cloth Gauntlets
+			i(206617),	-- Desecrated Cloth Belt
+			i(206618),	-- Desecrated Cloth Leggings
+			i(206619),	-- Desecrated Cloth Boots
+			i(206620),	-- Desecrated Leather Helmet
+			i(206621),	-- Desecrated Leather Spaulders
+			i(206622),	-- Desecrated Leather Chestpiece
+			i(206623),	-- Desecrated Leather Bracers
+			i(206624),	-- Desecrated Leather Gauntlets
+			i(206625),	-- Desecrated Leather Belt
+			i(206626),	-- Desecrated Leather Leggings
+			i(206627),	-- Desecrated Leather Boots
+			i(206628),	-- Desecrated Mail Helmet
+			i(206629),	-- Desecrated Mail Spaulders
+			i(206630),	-- Desecrated Mail Chestpiece
+			i(206631),	-- Desecrated Mail Bracers
+			i(206632),	-- Desecrated Mail Gauntlets
+			i(206633),	-- Desecrated Mail Belt
+			i(206634),	-- Desecrated Mail Leggings
+			i(206635),	-- Desecrated Mail Boots
+			i(206636),	-- Desecrated Plate Helmet
+			i(206637),	-- Desecrated Plate Spaulders
+			i(206639),	-- Desecrated Plate Chestpiece
+			i(206640),	-- Desecrated Plate Bracers
+			i(206641),	-- Desecrated Plate Gauntlets
+			i(206642),	-- Desecrated Plate Belt
+			i(206643),	-- Desecrated Plate Leggings
+			i(206644),	-- Desecrated Plate Boots
+			i(206787),	-- Bucket Kickers
+			i(206805),	-- Ancient Plans: Bucket Kickers
+			i(207002),	-- Encapsulated Destiny
+			i(207817),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Feet
+			i(207819),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Mail Legs
+			i(207820),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Leather Legs
+			i(207824),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Plate Legs
+			i(207828),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Cloth Robes
+			i(207836),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Leather Chest
+			i(207838),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Leather Feet
+			i(207851),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Mail Wrist
+			i(207858),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Plate Waist
+			i(207862),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Cloth Hands
+			i(207867),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Cloth Wrist
+			i(207873),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Leather Shoulder
+			i(207874),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Leather Waist
+			i(207876),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Mail Chest
+			i(207878),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Mail Feet
+			i(207884),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Plate Chest
+			i(207897),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Cloth Shoulder
+			i(207898),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Cloth Waist
+			i(207903),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Leather Hands
+			i(207911),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Mail Hand
+			i(207912),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Mail Head
+			i(207920),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Plate Head
+			i(207921),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Plate Shoulders
+			i(207923),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Plate Wrist
+			i(207927),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Cloth Head
+			i(207928),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Cloth Legs
+			i(207936),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Leather Head
+			i(207939),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Leather Wrist
+			i(207945),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Mail Shoulder
+			i(207946),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Mail Waist
+			i(207950),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Plate Feet
+			i(207951),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Plate Hands
+			i(207994),	-- Quel'Zaram, High Blade of the Lion
+			i(207995),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H AGI
+			i(208010),	-- Jeepers
+			i(208013),	-- Killbot 9000
+			i(208148),	-- Burgundy Cap
+			i(208168),	-- Black Blade of K'tanth
+			i(208170),	-- Runeaxe of the Last Resistance
+			i(208172),	-- Bloodstained Runecrook
+			i(208186),	-- Boffins
+			i(208191),	-- Time-Lost Fragment
+			i(208193),	-- Gorehowl, Might of the Warchief
+			i(208216),	-- Reins of the Quantum Courser
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			filter(RECIPES, {
@@ -1650,6 +1737,28 @@ root(ROOTS.Unsorted, {
 				q(75388),	-- The Azure Vaults
 				q(75391),	--
 			}),
+			i(190077),	-- Scarlet Zealot's Heater Shield
+			i(190169),	-- Quawks
+			i(190427),	-- Scarlet Zealot's Cloak
+			i(190431),	-- Veteran Grunt's Chopper
+			i(190433),	-- Shifty Merchant's Tunic
+			i(190443),	-- Pustulent Demonheart Fetish
+			i(190444),	-- Scarlet Zealot's Cassock
+			i(190447),	-- Soulburner Bardiche
+			i(190690),	-- Flame-Forged Fel Fang
+			i(190796),	-- Ensemble: Slumbering Caldera Regalia
+			i(190817),	-- Sentinel's Tower Shield
+			i(190821),	-- Sunspire Battle Staff
+			i(190869),	-- Emberstone Dress
+			i(201230),	-- Ensemble: Helarjar Berserker Warplate
+			i(202174),	-- Wanderer's Carrot Scarf
+			i(202175),	-- Wanderer's Carrot Cloak
+			i(202176),	-- Vagabond's Carrot Hood
+			i(202177),	-- Vagabond's Carrot Cape
+			i(202178),	-- Ensemble: Vagabond's Carrot Threads
+			i(202179),	-- Ensemble: Wanderer's Carrot Trappings
+			i(204686),	-- Titan's Containment Device
+			i(206976),	-- Royal Swarmer's Reins
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 			n(ARMOR, {

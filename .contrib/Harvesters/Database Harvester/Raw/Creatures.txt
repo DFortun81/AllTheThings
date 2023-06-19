@@ -20012,6 +20012,9 @@
 205311@@@Disruptive Arcana
 10.1.0.49801
 204974@@@Dinn's Drum
+10.1.0.49890
+201902@@@Iron Vrykul
+203049@@@Keeper Tyr
 10.1.5.49516
 200541@@@Iggy
 200810@@@Emerald Whelpling
@@ -20254,8 +20257,6 @@
 208248@@@Time Rift
 208253@@@Time Rift
 10.1.5.49908
-201902@@@Iron Vrykul
-203049@@@Keeper Tyr
 207925@@@Drest'Agath the Corrupted
 208491@@@Prophet Skitra
 208500@@@Imperial Vizier Zor'lok
@@ -20270,3 +20271,12 @@
 208637@@@Obsidian Warwhelp
 208639@@@N'Ruby
 208643@@@Tobias
+10.1.5.50006
+207386@@@Hand of the Lich King
+207601@@@Warlich
+208774@@@Test Nozdormu
+208791@@@Empowered Felhunter
+208818@@@Finduin Wryngrrlgulgll
+208820@@@Finduin Wryngrrlgulgll
+208822@@@Finduin Wryngrrlgulgll
+208882@@@Empowered Pit Lord

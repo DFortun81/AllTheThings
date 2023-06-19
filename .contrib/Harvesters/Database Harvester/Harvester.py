@@ -336,8 +336,6 @@ def post_process(thing: type[Thing]) -> None:
     if thing == Recipes:
         post_process_recipes()
         return
-    raw_path = Path("Raw", f"{thing.__name__}.txt")
-    raw_ids = extract_nth_column(raw_path, 0)
     missing_path = Path(
         DATAS_FOLDER,
         "00 - MissingIDs",
@@ -350,21 +348,19 @@ def post_process(thing: type[Thing]) -> None:
         FlightPaths,
         Mounts,
         Titles,
+        Items,
     ):
-        names: list[str] = extract_nth_column(raw_path, 1)
-        for index, missing_line in enumerate(missing_lines):
-            missing_line = missing_line.strip()
-            missing_line = re.sub("[^\\d^.]", "", missing_line)
-            if missing_line.isdigit():
-                missing_lines[index] = f"{thing.new_prefix()}{missing_line}),\t--"
-            else:
-                missing_lines[index] = missing_lines[index].strip()
-            name_list: list[str] = []
-            for index_raw, id in enumerate(raw_ids):
-                if missing_line == id.strip() and names[index_raw] != "--\n":
-                    name_list.append(names[index_raw].rstrip())
-            name_list.reverse()
-            missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
+        thing_dict: dict[str, list[str]] = create_dict_from_raw(f"{thing.__name__}.txt", 1)
+        for index, id in enumerate(missing_lines):
+            id = re.sub("[^\\d^.]", "", id.strip())
+            if id.isdigit():
+                missing_lines[index] = f"{thing.new_prefix()}{id}),\t--"
+                if id in thing_dict.keys():
+                    name_list = thing_dict[id].copy()
+                    name_list.reverse()
+                    missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
+                else:
+                    missing_lines[index] += "\n"
         with open(missing_path, "w") as missing_file:
             missing_file.writelines(missing_lines)
         return
@@ -405,13 +401,13 @@ def post_process(thing: type[Thing]) -> None:
             missing_file.writelines(missing_lines)
         return
     elif thing == Illusions:
-        spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellItems.txt", 1)
+        spellitem_dict: dict[str, list[str]] = create_dict_from_raw("SpellItems.txt", 1)
         for index, id in enumerate(missing_lines):
             id = re.sub("[^\\d^.]", "", id.strip())
             if id.isdigit():
                 missing_lines[index] = f"{thing.new_prefix()}{id}),\t--"
-                if id in spell_dict.keys():
-                    name_list = spell_dict[id].copy()
+                if id in spellitem_dict.keys():
+                    name_list = spellitem_dict[id].copy()
                     name_list.reverse()
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
@@ -510,9 +506,10 @@ def create_missing_files() -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        print(thing)
-        create_missing_file(thing)
-        post_process(thing)
+        if thing != Items:
+            print(thing)
+            create_missing_file(thing)
+            post_process(thing)
 
 
 def give_name_item() -> None:
@@ -537,7 +534,7 @@ def give_name_item() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("1.14.3.49821", "Classic Era")
+# add_latest_data("10.1.0.50000", "Retail")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()

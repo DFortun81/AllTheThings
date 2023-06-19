@@ -381,11 +381,17 @@ class SkillLines(Thing):
 
 
 class Items(Thing):
-    real_collectible = False
-
     @staticmethod
     def table() -> str:
         return "itemsparse"
+
+    @staticmethod
+    def existing_prefixes() -> tuple[str, ...]:
+        return "i(", "itemID"
+
+    @staticmethod
+    def new_prefix() -> str:
+        return "i("
 
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:

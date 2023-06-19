@@ -1,26 +1,26 @@
-1.14.0.39802 
+1.14.0.39802
 ach(9275),	-- Warlord Zaela kills (Upper Blackrock Spire)
-1.14.1.40666 
+1.14.1.40666
 ach(15329),	-- Has Died
-1.14.1.40688 
+1.14.1.40688
 ach(15330),	-- Survivor of the Firelord (Season of Mastery) \\ Survivor of the Firelord \\ Survivor of the Flames
 ach(15332),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
-1.14.1.40800 
+1.14.1.40800
 ach(15333),	-- Survivor of the Shadow Flame (Season of Mastery) \\ Survivor of the Shadow Flame
 ach(15334),	-- Survivor of the Old God (Season of Mastery) \\ Survivor of the Old God
 ach(15335),	-- Survivor of the Damned (Season of Mastery) \\ Survivor of the Damned
-1.14.2.42597 
+1.14.2.42597
 ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
-1.14.3.42770 
+1.14.3.42770
 ach(15637),	-- The Immortal (Season of Mastery) \\ The Immortal
-2.5.1.39399 
+2.5.1.39399
 ach(15018),	-- Infernal Gladiator
 ach(15019),	-- Gladiator: Season 1
 ach(15020),	-- Duelist: Season 1
 ach(15021),	-- Rival: Season 1
 ach(15022),	-- Challenger: Season 1
 ach(15198),	-- [DNT] BCC Arena Tournament - Vanquisher Title
-2.5.2.39570 
+2.5.2.39570
 ach(15199),	-- Gladiator: Season 2
 ach(15200),	-- Gladiator: Season 4
 ach(15201),	-- Duelist: Season 4
@@ -33,14 +33,14 @@ ach(15207),	-- Challenger: Season 3
 ach(15208),	-- Duelist: Season 2
 ach(15209),	-- Rival: Season 2
 ach(15210),	-- Challenger: Season 2
-2.5.4.44833 
+2.5.4.44833
 ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
-3.1.0.9767 
+3.1.0.9767
 ach(1657),	-- Hallowed Be Thy Name
 ach(1684),	-- Brewmaster
 ach(1692),	-- Merrymaker
 ach(1707),	-- Fool For Love
-3.4.0.46158 
+3.4.0.46158
 ach(16313),	-- Rival: Season 5
 ach(16314),	-- Gladiator: Season 5
 ach(16315),	-- Duelist: Season 5
@@ -49,7 +49,7 @@ ach(16332),	-- The Perfect Pebble
 ach(16397),	-- [DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)
 ach(16433),	-- Soul of Iron (Season of Mastery)
 ach(16437),	-- [DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
-3.4.1.47966 
+3.4.1.47966
 ach(17213),	-- Defense Protocol Alpha: Utgarde Keep
 ach(17283),	-- Defense Protocol Alpha: The Nexus
 ach(17285),	-- Defense Protocol Alpha: Azjol-Nerub
@@ -66,18 +66,21 @@ ach(17304),	-- Defense Protocol Alpha: Terminated
 ach(17328),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 ach(17340),	-- Ahead of the Curve: Yogg-Saron
 ach(17341),	-- Cutting Edge: Ulduar
-3.4.2.49311 
+3.4.2.49311
 ach(17415),	-- Rival: Season 6
 ach(17416),	-- Gladiator: Season 6
 ach(17417),	-- Duelist: Season 6
 ach(17418),	-- Challenger: Season 6
 ach(18375),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 ach(18376),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
-4.0.1.12911 
+4.0.1.12911
 ach(5020),	-- Observed - Guild Edition \\ He Feeds On Your Tears - Guild Edition
-10.0.5.48001 
+8.1.0.27985
+ach(13283),	-- Frontline Warrior \\ On The Frontlines
+ach(13284),	-- Frontline Warrior \\ On The Frontlines
+10.0.5.48001
 ach(17495),	-- <Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
-10.0.7.47910 
+10.0.7.47910
 ach(17306),	-- <DNT> Winterpelt Furbolg - 1 - Friendly
 ach(17307),	-- <DNT> Winterpelt Furbolg - 1 - Honored
 ach(17308),	-- <DNT> Winterpelt Furbolg - 1 - Revered
@@ -90,23 +93,23 @@ ach(17409),	-- <Hidden> ACCOUNT: Treasure Room Local Quest Completed
 ach(17422),	-- <DNT> Artisan's Consortium Reputation is Preferred (Rank 1)
 ach(17423),	-- <DNT> Artisan's Consortium Reputation is Respected (Rank 2)
 ach(17424),	-- <DNT> Artisan's Consortium Reputation is Valued (Rank 3)
-10.0.7.47983 
+10.0.7.47983
 ach(17428),	-- <Hidden> Winterpelt Language - Send Mailer from Sonova
 ach(17500),	-- Renowned Tribal Leatherworker
 ach(17501),	-- Renowned Mooncloth Tailor
 ach(17502),	-- Renowned Spellfire Tailor
 ach(17503),	-- Renowned Shadoweave Tailor
-10.0.7.48076 
+10.0.7.48076
 ach(17533),	-- <Hidden> Travel Network - Node Unlock: Forbidden Reach - Morqut Islet
 ach(17535),	-- <DNT> Complete the "Return to the Reach" questline.
-10.0.7.48749 
+10.0.7.48749
 ach(17536),	-- <DNT> Complete the "A Creche Divided" questline.
-10.1.0.48480 
+10.1.0.48480
 ach(17537),	-- Dragon Chase - WS01
 ach(17538),	-- Dragon Chase - WS02
 ach(17725),	-- Vicious Saddle (37)
 ach(17726),	-- Vicious Saddle (37)
-10.1.0.48537 
+10.1.0.48537
 ach(17737),	-- Flame Warden of the Dragon Isles
 ach(17738),	-- Flame Keeper of the Dragon Isles
 ach(17742),	-- <DNT> Loamm Niffen Rank 01 (Account) \\ <DNT> Loamm Niffen Rank 01
@@ -129,14 +132,14 @@ ach(17758),	-- <DNT> Loamm Niffen Rank 17 (Account) \\ <DNT> Loamm Niffen Rank 1
 ach(17759),	-- <DNT> Loamm Niffen Rank 18 (Account) \\ <DNT> Loamm Niffen Rank 18
 ach(17760),	-- <DNT> Loamm Niffen Rank 19 (Account) \\ <DNT> Loamm Niffen Rank 19
 ach(17761),	-- <DNT> Loamm Niffen Rank 20 (Account) \\ <DNT> Loamm Niffen Rank 20
-10.1.0.48661 
+10.1.0.48661
 ach(17788),	-- Current Patch - Login Video [DNT] (DO NOT EDIT) \\ Current Patch - Login Video [DNT] (Updated Every Patch)
 ach(17836),	-- Flightstones earned
 ach(17837),	-- Whelpling's Shadowflame Crest Fragments earned
 ach(17838),	-- Drake's Shadowflame Crest Fragments earned
 ach(17839),	-- Wyrm's Shadowflame Crest Fragments earned
 ach(17840),	-- Aspect's Shadowflame Crest Fragments earned
-10.1.0.48776 
+10.1.0.48776
 ach(18129),	-- <DNT> Loamm Niffen Rank 01 (Character)
 ach(18130),	-- <DNT> Loamm Niffen Rank 02 (Character)
 ach(18131),	-- <DNT> Loamm Niffen Rank 03 (Character)
@@ -157,7 +160,7 @@ ach(18145),	-- <DNT> Loamm Niffen Rank 17 (Character)
 ach(18146),	-- <DNT> Loamm Niffen Rank 18 (Character)
 ach(18147),	-- <DNT> Loamm Niffen Rank 19 (Character)
 ach(18148),	-- <DNT> Loamm Niffen Rank 20 (Character)
-10.1.0.48898 
+10.1.0.48898
 ach(18169),	-- [DNT] Shimmershell Snail
 ach(18180),	-- Kazzara, the Hellforged kills (Raid Finder Aberrus, the Shadowed Crucible)
 ach(18181),	-- The Amalgamation Chamber kills (Raid Finder Aberrus, the Shadowed Crucible)
@@ -213,22 +216,24 @@ ach(18245),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 26 (Cha
 ach(18246),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 27 (Character)
 ach(18247),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 28 (Character)
 ach(18248),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Tutorial Objectives (Character)
-10.1.0.49092 
+10.1.0.49092
 ach(18359),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests
-10.1.0.49426 
+10.1.0.49426
 ach(18394),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests (copy)
-10.1.0.49679 
+10.1.0.49679
 ach(18542),	-- Dragonflight Keystone Master: Season Two
-10.1.5.49516 
-ach(17568),	-- Fel Flyover: Bronze
-ach(17569),	-- Fel Flyover: Silver
-ach(17570),	-- Fel Flyover: Gold
-ach(17571),	-- Fel Flyover Advanced: Bronze
-ach(17572),	-- Fel Flyover Advanced: Silver
-ach(17573),	-- Fel Flyover Advanced: Gold
-ach(17574),	-- Fel Flyover Reverse: Bronze
-ach(17575),	-- Fel Flyover Reverse: Silver
-ach(17576),	-- Fel Flyover Reverse: Gold
+10.1.0.49890
+ach(17542),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 2
+10.1.5.49516
+ach(17568),	-- Felwood Flyover: Bronze \\ Fel Flyover: Bronze
+ach(17569),	-- Felwood Flyover: Silver \\ Fel Flyover: Silver
+ach(17570),	-- Felwood Flyover: Gold \\ Fel Flyover: Gold
+ach(17571),	-- Felwood Flyover Advanced: Bronze \\ Fel Flyover Advanced: Bronze
+ach(17572),	-- Felwood Flyover Advanced: Silver \\ Fel Flyover Advanced: Silver
+ach(17573),	-- Felwood Flyover Advanced: Gold \\ Fel Flyover Advanced: Gold
+ach(17574),	-- Felwood Flyover Reverse: Bronze \\ Fel Flyover Reverse: Bronze
+ach(17575),	-- Felwood Flyover Reverse: Silver \\ Fel Flyover Reverse: Silver
+ach(17576),	-- Felwood Flyover Reverse: Gold \\ Fel Flyover Reverse: Gold
 ach(17577),	-- Winter Wander: Bronze
 ach(17578),	-- Winter Wander: Silver
 ach(17579),	-- Winter Wander: Gold
@@ -492,7 +497,7 @@ ach(18504),	-- Booty Bay Blast Reverse: Bronze
 ach(18505),	-- Booty Bay Blast Reverse: Silver
 ach(18506),	-- Booty Bay Blast Reverse: Gold
 ach(18507),	-- <Hidden> Completed Legion based Tasks \\ <Hidden> Completed 5 Legion based Tasks
-10.1.5.49595 
+10.1.5.49595
 ach(18509),	-- <Hidden> Completed Robot based Tasks
 ach(18510),	-- Fuselight Night Flight: Bronze
 ach(18511),	-- Fuselight Night Flight: Silver
@@ -523,14 +528,14 @@ ach(18535),	-- Redridge Rally Reverse: Silver
 ach(18536),	-- Redridge Rally Reverse: Gold
 ach(18539),	-- Back En-masse
 ach(18543),	-- <Hidden> Completed HvA based Tasks
-10.1.5.49719 
+10.1.5.49719
 ach(18554),	-- Temporal Acquisitions Specialist
 ach(18555),	-- <Hidden> Completed Murloc based Tasks
 ach(18556),	-- Chaotic Time
 ach(18557),	-- Never Bothered, Anyway
 ach(18558),	-- Leaders of Scholomance
 ach(18559),	-- Many Boxes, Many Rockses
-10.1.5.49824 
+10.1.5.49824
 ach(18566),	-- Eastern Kingdoms: Bronze
 ach(18567),	-- Eastern Kingdoms: Silver
 ach(18568),	-- Eastern Kingdoms: Gold
@@ -543,8 +548,7 @@ ach(18574),	-- Eastern Kingdoms Reverse: Gold
 ach(18589),	-- Crunch Time
 ach(18612),	-- A Slime in Need
 ach(18616),	-- Putting Wilhelm Out of Business
-10.1.5.49908 
-ach(17542),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 2
+10.1.5.49908
 ach(18615),	-- Legend of the Multiverse
 ach(18635),	-- Verified Rifter
 ach(18636),	-- Just Following Chronological Orders
@@ -558,3 +562,5 @@ ach(18643),	-- Community Rumors
 ach(18644),	-- Community Rumor Mill
 ach(18645),	-- Tools of the Trade
 ach(18646),	-- Whodunnit?
+10.1.5.50006
+ach(18648),	-- <DNT> Eons Fringe - Multitude of Tasks - Completed Twice (Character)

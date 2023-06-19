@@ -1,4 +1,4 @@
-6.0.1.18179 
+6.0.1.18179
 mount(0),	-- TEST - Grand Wyvern \\ TEST - Running Wild \\ TEST - Traveler's Tundra Mammoth (Alliance)
 mount(3363),	-- Nether Drake
 mount(25675),	-- Reindeer
@@ -80,27 +80,27 @@ mount(148626),	-- Furious Ashhide Mushan
 mount(148970),	-- Felsteed
 mount(148972),	-- Dreadsteed
 mount(150926),	-- Draenor Chimera
-7.3.0.24473 
+7.3.0.24473
 mount(205656),	-- Charger
 mount(221883),	-- Charger
 mount(221885),	-- Great Sunwalker Kodo
 mount(221886),	-- Thalassian Charger
 mount(221887),	-- Great Exarch's Elekk
-7.3.0.24727 
+7.3.0.24727
 mount(254471),	-- Valorous Charger
 mount(254472),	-- Vengeful Charger
 mount(254473),	-- Vigilant Charger
 mount(254474),	-- Golden Charger
-8.0.1.25902 
+8.0.1.25902
 mount(244457),	-- Default AI Mount Record
-8.0.1.26522 
+8.0.1.26522
 mount(276111),	-- Dawnforge Ram
 mount(276112),	-- Darkforge Ram
-9.1.5.40622 
+9.1.5.40622
 mount(363608),	-- Lightforged Ruinstrider
-10.0.0.44649 
+10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
-10.1.5.49516 
+10.1.5.49516
 mount(413409),	-- Highland Drake
 mount(413825),	-- Scarlet Pterrordax \\ Exuberant Scarlet Pterrordax
 mount(413827),	-- Harbor Gryphon \\ Sprightly Proudmoore Gryphon
@@ -112,19 +112,19 @@ mount(414326),	-- Felstorm Dragon
 mount(414327),	-- Sulfur Hound
 mount(414328),	-- Perfected Juggernaut \\ Juggernaut Perfected
 mount(414334),	-- Scourgebound Vanquisher \\ Scourgebound Frostbrood Vanquisher
-10.1.5.49908 
+10.1.5.49908
 mount(417548),	-- Renewed Proto-Drake
 mount(417552),	-- Windborne Velocidrake
 mount(417554),	-- Cliffside Wylderdrake
 mount(417556),	-- Winding Slitherdrake
 mount(418078),	-- Pattie
- 
- 
- 
- 
-Missing in MountDB.lua 
- 
-6.0.1.18179 
+
+
+
+
+Missing in MountDB.lua
+
+6.0.1.18179
 mount(3363),	-- Nether Drake
 mount(6896),	-- Black Ram
 mount(6897),	-- Blue Ram
@@ -205,30 +205,30 @@ mount(148626),	-- Furious Ashhide Mushan
 mount(148970),	-- Felsteed
 mount(148972),	-- Dreadsteed
 mount(150926),	-- Draenor Chimera
-7.3.0.24473 
+7.3.0.24473
 mount(194046),	-- Swift Spectral Rylak
 mount(205656),	-- Charger
 mount(221883),	-- Charger
 mount(221885),	-- Great Sunwalker Kodo
 mount(221886),	-- Thalassian Charger
 mount(221887),	-- Great Exarch's Elekk
-7.3.0.24727 
+7.3.0.24727
 mount(254471),	-- Valorous Charger
 mount(254472),	-- Vengeful Charger
 mount(254473),	-- Vigilant Charger
 mount(254474),	-- Golden Charger
-8.0.1.25902 
+8.0.1.25902
 mount(244457),	-- Default AI Mount Record
-8.0.1.26522 
+8.0.1.26522
 mount(276111),	-- Dawnforge Ram
 mount(276112),	-- Darkforge Ram
-9.1.5.40622 
+9.1.5.40622
 mount(363608),	-- Lightforged Ruinstrider
-9.2.5.43022 
+9.2.5.43022
 mount(370770),	-- Tuskarr Shoreglider
-10.0.0.44649 
+10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
-10.1.5.49516 
+10.1.5.49516
 mount(413409),	-- Highland Drake
 mount(413825),	-- Scarlet Pterrordax \\ Exuberant Scarlet Pterrordax
 mount(413827),	-- Harbor Gryphon \\ Sprightly Proudmoore Gryphon
@@ -240,7 +240,7 @@ mount(414326),	-- Felstorm Dragon
 mount(414327),	-- Sulfur Hound
 mount(414328),	-- Perfected Juggernaut \\ Juggernaut Perfected
 mount(414334),	-- Scourgebound Vanquisher \\ Scourgebound Frostbrood Vanquisher
-10.1.5.49908 
+10.1.5.49908
 mount(417548),	-- Renewed Proto-Drake
 mount(417552),	-- Windborne Velocidrake
 mount(417554),	-- Cliffside Wylderdrake

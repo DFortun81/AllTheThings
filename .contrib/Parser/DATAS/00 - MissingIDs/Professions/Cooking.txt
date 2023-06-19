@@ -320,7 +320,7 @@ r(125121),	-- Wildfowl Ginseng Soup
 r(125122),	-- Rice Pudding
 r(125123),	-- Spicy Vegetable Chips
 r(126654),	-- Four Senses Brew
-r(126655),	-- Banana Infused Rum
+r(126655),	-- Banana-Infused Rum \\ Banana Infused Rum
 6.0.1.18179
 r(89719),	-- Archaeology
 r(145038),	-- Noodle Cart Kit

@@ -912,3 +912,5 @@ r(137879),	-- Crafted Dreadful Gladiator's Mail Gauntlets
 r(137880),	-- Crafted Dreadful Gladiator's Mail Helm
 r(137881),	-- Crafted Dreadful Gladiator's Mail Leggings
 r(137882),	-- Crafted Dreadful Gladiator's Mail Spaulders
+8.0.1.25902
+r(256786),	-- Honorable Combatant's Spellblade \\ REUSE ME \\ Skeletal Composite Bow
