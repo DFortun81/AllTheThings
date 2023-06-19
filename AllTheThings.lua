@@ -23169,21 +23169,6 @@ local function AttachTooltip(self, ttdata)
 			return true;
 		end
 	end
-
-	-- Addons Menu?
-	local numLines = self:NumLines();
-	if numLines == 2 then
-		local tooltipName = self:GetName() or "";
-		local leftSide = _G[tooltipName.."TextLeft1"];
-		if leftSide and leftSide:GetText() == "AllTheThings" then
-			local reference = app:GetDataCache();
-			self:ClearLines();
-			self:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total), 1, 1, 1);
-			self:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
-			self:AddLine(reference.description, 0.4, 0.8, 1, 1);
-			return true;
-		end
-	end
 	-- print("AttachTooltip-Return");
 end
 local function AttachBattlePetTooltip(self, data, quantity, detail)
