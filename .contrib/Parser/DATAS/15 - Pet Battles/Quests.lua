@@ -1317,9 +1317,9 @@ root(ROOTS.PetBattles, petbattle({
 			},
 		}),
 		-- WoD
-		q(37205, {	-- Gargra
-			["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
-			["provider"] = { "n", 87122 },	-- Gargra
+		q(37203, {	-- Ashlei
+			["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
+			["provider"] = { "n", 87124 },	-- Ashlei
 			["g"] = {
 				SHINY_PET_CHARM
 			},
@@ -1331,23 +1331,9 @@ root(ROOTS.PetBattles, petbattle({
 				SHINY_PET_CHARM
 			},
 		}),
-		q(37206, {	-- Tarr the Terrible
-			["provider"] = { "n", 87110 },	-- Tar the Terrible
-			["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
-			["g"] = {
-				SHINY_PET_CHARM
-			},
-		}),
-		q(37203, {	-- Ashlei
-			["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
-			["provider"] = { "n", 87124 },	-- Ashlei
-			["g"] = {
-				SHINY_PET_CHARM
-			},
-		}),
-		q(37207, {	-- Vesharr
-			["provider"] = { "n", 87123 },	-- Vesharr
-			["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
+		q(37205, {	-- Gargra
+			["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
+			["provider"] = { "n", 87122 },	-- Gargra
 			["g"] = {
 				SHINY_PET_CHARM
 			},
@@ -1355,6 +1341,20 @@ root(ROOTS.PetBattles, petbattle({
 		q(37208, {	-- Taralune
 			["coord"] = { 49.0, 80.3, TALADOR },
 			["provider"] = { "n", 87125 },	-- Taralune
+			["g"] = {
+				SHINY_PET_CHARM
+			},
+		}),
+		q(37206, {	-- Tarr the Terrible
+			["provider"] = { "n", 87110 },	-- Tar the Terrible
+			["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
+			["g"] = {
+				SHINY_PET_CHARM
+			},
+		}),
+		q(37207, {	-- Vesharr
+			["provider"] = { "n", 87123 },	-- Vesharr
+			["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
 			["g"] = {
 				SHINY_PET_CHARM
 			},
@@ -1372,9 +1372,7 @@ root(ROOTS.PetBattles, petbattle({
 				{ "i", 122681 },	-- Sternfathom's Pet Journal
 			},
 			["coord"] = { 49.3, 45.4, AZSUNA },
-			["g"] = {
-				SHINY_PET_CHARM
-			},
+			["_drop"] = { "g" },	-- Drop Shiny Pet Charm
 		}),
 		-- PvP Weekly
 		pvp(q(32863, {	-- What We've Been Training For

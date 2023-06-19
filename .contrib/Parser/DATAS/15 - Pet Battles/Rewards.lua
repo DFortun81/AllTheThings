@@ -65,8 +65,5 @@ root(ROOTS.PetBattles, {	-- These can drop very rarely from none trainer pet bat
 				i(89587),	-- Porcupette (PET!)
 			},
 		}),
-		i(116415, {	-- Shiny Pet Charm
-			["timeline"] = { ADDED_6_0_2 },
-		}),
 	}))),
 });

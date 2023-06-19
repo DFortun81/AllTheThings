@@ -17,6 +17,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 85418 },	-- Lio the Lioness
 							["coord"] = { 28.3, 38.8, LUNARFALL },
 							["races"] = ALLIANCE_ONLY,
+							["_drop"] = { "g" },	-- Drop Shiny Pet Charm
 						}),
 						q(40329,  {	-- Battle Pet Tamers: Warlords
 							["isWeekly"] = true,
@@ -132,6 +133,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 79858 },	-- Serr'ah
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
+							["_drop"] = { "g" },	-- Drop Shiny Pet Charm
 						}),
 						q(38241, {	-- Unearthed Magic
 							["sourceQuests"] = { 36615 },	-- My Very Own Castle
