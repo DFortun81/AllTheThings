@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(VENDORS, {
 				n(194832, {	-- Meiz <Quartermaster>
 					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
-					["g"] = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
+					["g"] = bubbleDownRep(FACTION_COBALT_ASSEMBLY, {
 						{		-- Empty --
 							i(197584, {	-- Windborne Velocidrake: Finned Back (DM!)
 								["cost"] = {
@@ -301,7 +301,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						199733,	-- Cobalt Defender's Wingglaive
 						201371,	-- Cobalt Defender's Shredder
 					}},
-					["g"] = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
+					["g"] = bubbleDownRep(FACTION_COBALT_ASSEMBLY, {
 						{		-- Empty --
 						}, {	-- Low --
 						}, {	-- Medium --
