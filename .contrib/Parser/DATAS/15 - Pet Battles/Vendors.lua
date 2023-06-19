@@ -181,7 +181,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["groups"] = {
 				i(86143, {	-- Battle Pet Bandage
 					["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
-					["description"] = "You get 25 Bandages for 5 Charms.",
+					["description"] = "You can also buy 25 Bandages for 5 Polished Pet Charms from most Battle Pet Vendors.",
 				}),
 				i(116429, {	-- Flawless Battle Training Stone
 					["cost"] = { { "i", POLISHED_PET_CHARM, 3 } },
@@ -224,7 +224,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["groups"] = {
 				i(86143, {	-- Battle Pet Bandage
 					["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
-					["description"] = "You get 25 Bandages for 5 Charms.",
+					["description"] = "You can also buy 25 Bandages for 5 Polished Pet Charms from most Battle Pet Vendors.",
 				}),
 				i(116429, {	-- Flawless Battle Training Stone
 					["cost"] = { { "i", POLISHED_PET_CHARM, 3 } },
