@@ -73,3 +73,21 @@ def create_named_file(thing: type[Thing]) -> None:
 #    for thing in Thing.__subclasses__():
 #        with open(Path("Builds", f"{thing.__name__}.txt"), "a") as build_list:
 #            build_list.write(build + "\n")
+
+
+def check_diff():
+    build_dict: dict[type[Thing], list[str]] = {}
+    things: list[type[Thing]] = Thing.__subclasses__()
+    main_list: list[str] = []
+    for thing in things:
+        with open(Path("Builds", f"{thing.__name__}.txt"), "r") as build_list:
+            build_lines: list[str] = build_list.readlines()
+            build_dict[thing] = build_lines
+    with open(Path("Builds", "Achievements.txt"), "r") as main_build:
+        main_build_lines: list[str] = main_build.readlines()
+        for line in main_build_lines:
+            if all(line in values for values in build_dict.values()):
+                print(line)
+                main_list.append(line)
+    with open(Path("Builds", "Retail.txt"), "w") as build_list:
+        build_list.writelines(main_list)
