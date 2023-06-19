@@ -197,6 +197,18 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 				}),
 				i(120321, {	-- Mystery Bag
 					["cost"] = { { "i", POLISHED_PET_CHARM, 2 } },
+					["groups"] = {
+						i(116424),	-- Aquatic Battle Training Stone
+						i(116374),	-- Beast Battle Training Stone
+						i(116418),	-- Critter Battle Training Stone
+						i(116419),	-- Dragonkin Battle Training Stone
+						i(116420),	-- Elemental Battle Training Stone
+						i(116421),	-- Flying Battle Training Stone
+						i(116416),	-- Humanoid Battle Training Stone
+						i(116422),	-- Magic Battle Training Stone
+						i(116417),	-- Mechanical Battle Training Stone
+						i(116423),	-- Undead Battle Training Stone
+					},
 				}),
 				i(98114, {	-- Pet Treat
 					["cost"] = { { "i", POLISHED_PET_CHARM, 10 } },
@@ -228,6 +240,18 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 				}),
 				i(120321, {	-- Mystery Bag
 					["cost"] = { { "i", POLISHED_PET_CHARM, 2 } },
+					["groups"] = {
+						i(116424),	-- Aquatic Battle Training Stone
+						i(116374),	-- Beast Battle Training Stone
+						i(116418),	-- Critter Battle Training Stone
+						i(116419),	-- Dragonkin Battle Training Stone
+						i(116420),	-- Elemental Battle Training Stone
+						i(116421),	-- Flying Battle Training Stone
+						i(116416),	-- Humanoid Battle Training Stone
+						i(116422),	-- Magic Battle Training Stone
+						i(116417),	-- Mechanical Battle Training Stone
+						i(116423),	-- Undead Battle Training Stone
+					},
 				}),
 				i(98114, {	-- Pet Treat
 					["cost"] = { { "i", POLISHED_PET_CHARM, 10 } },
