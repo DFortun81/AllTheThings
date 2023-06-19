@@ -651,8 +651,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						n(137468, {	-- Gorging Raven
 							i(163710),	-- Merchant's Key
 						}),
-						i(163036),	-- Polished Pet Charm
 					},
+					["sym"] = {{"select","itemID",
+						163036,	-- Polished Pet Charm
+					}},
 				}),
 				o(297891, {	-- Runebound Cache
 					["questID"] = 53385,
@@ -686,9 +688,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["coord"] = { 24.3, 48.5, DRUSTVAR },
 					["icon"] = "Interface\\Icons\\garrison_bronzechest",
 					["description"] = "Enter the cave at 24.70, 48.95.",
-					["g"] = {
-						i(163036),	-- Polished Pet Charm
-					},
+					["sym"] = {{"select","itemID",
+						163036,	-- Polished Pet Charm
+					}},
 				}),
 				o(297825, {	-- Web-Covered Chest
 					["questID"] = 53356,

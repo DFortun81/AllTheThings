@@ -5,6 +5,7 @@ root(ROOTS.PetBattles, petbattle({
 	n(WORLD_QUESTS, {
 		i(86143),	-- Battle Pet Bandage
 		i(98715),	-- Marked Flawless Battle Stone
+		i(163036),	-- Polished Pet Charm
 		--
 		i(92679),	-- Flawless Aquatic Battle-Stone
 		i(92675),	-- Flawless Beast Battle-Stone

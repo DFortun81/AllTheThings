@@ -304,9 +304,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 58.5, 61.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131654 },	-- Meredith
-				["g"] = {
-					i(163036),	-- Polished Pet Charm x10
-				},
+				["sym"] = {{"select","itemID",
+					163036,	-- Polished Pet Charm
+				}},
 			}),
 			q(49740, {	-- Cease Fire!
 				["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
@@ -962,9 +962,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 77.0, 82.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129098 },	-- Rodrigo <Flight Master>
-				["g"] = {
-					i(163036),	-- Polished Pet Charm x10
-				},
+				["sym"] = {{"select","itemID",
+					163036,	-- Polished Pet Charm
+				}},
 			}),
 			q(49401, {	-- Rodrigo's Roost
 				["sourceQuests"] = { 49239 },	-- Dress to Impress

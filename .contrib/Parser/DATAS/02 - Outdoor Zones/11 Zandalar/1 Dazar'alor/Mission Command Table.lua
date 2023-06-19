@@ -151,6 +151,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						}),
 					},
 				})),
+				i(163036),	-- Polished Pet Charm
 			},
 		})),
 	}),

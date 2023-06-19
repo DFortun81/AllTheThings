@@ -153,8 +153,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					crit(9, {	-- Beastly Ritual Skull
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
-					i(163036),	-- Polished Pet Charm
 				},
+				["sym"] = {{"select","itemID",
+					163036,	-- Polished Pet Charm
+				}},
 			}),
 			n(134706, {	-- Deathcap
 				["questID"] = 50669,

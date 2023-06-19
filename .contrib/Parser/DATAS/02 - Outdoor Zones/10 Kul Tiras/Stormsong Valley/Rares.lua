@@ -252,11 +252,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["questID"] = 52469,
 				["coord"] = { 34.6, 67.8, STORMSONG_VALLEY },
 				["g"] = {
-					i(163036),	-- Polished Pet Charm
 					crit(13, {	-- Poacher Zane
 						["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 					}),
 				},
+				["sym"] = {{"select","itemID",
+					163036,	-- Polished Pet Charm
+				}},
 			}),
 			n(134884, {	-- Ragna
 				["questID"] = 50725,
