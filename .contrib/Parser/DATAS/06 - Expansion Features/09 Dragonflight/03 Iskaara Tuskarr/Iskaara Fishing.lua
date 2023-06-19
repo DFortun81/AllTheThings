@@ -259,7 +259,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["questID"] = 70799,	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
 							["cost"] = {
 								{ "i", 200081, 6 },	-- 6x Strong Seavine
-								{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
+								{ "i", 200086, 1 },	-- 1x Khaz'gorite-Infused Resin
 							},
 						}),
 						i(199849, {	-- Dense Draconium Net Weight
@@ -325,7 +325,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["questID"] = 70797,	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
 							["cost"] = {
 								{ "i", 200084, 6 },	-- 6x Salinated Serevite
-								{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
+								{ "i", 200086, 1 },	-- 1x Khaz'gorite-Infused Resin
 							},
 						}),
 						i(199697, {	-- Polished Basalt Bracelet
@@ -338,7 +338,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["questID"] = 70795,	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
 							["cost"] = {
 								{ "i", 200083, 6 },	-- 6x Irontree Branch
-								{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
+								{ "i", 200086, 1 },	-- 1x Khaz'gorite-Infused Resin
 							},
 						}),
 						i(199846, {	-- Seavine Harpoon Rope
@@ -361,7 +361,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["cost"] = { { "i", 194701, 5 } },	-- 5x Ominous Conch
 				["isDaily"] = true,
 				["g"] = {
-					i(200086),	-- Khaz'gorite Infused Resin
+					i(200086),	-- Khaz'gorite-Infused Resin
 				},
 			},{
 				n(197411, {	-- Astray Splasher <Lunker>
@@ -391,7 +391,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 33.8, 64.4, THE_WAKING_SHORES },
 					["questID"] = 74078,
 					["g"] = {
-						i(200086),	-- Khaz'gorite Infused Resin
+						i(200086),	-- Khaz'gorite-Infused Resin
 						i(200218),	-- Charred Fishing Pole
 					},
 				}),
@@ -433,7 +433,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ "n", 197596 },	-- Deep Ice Fishing Hole
 					},
 				}),
-				i(200086, {	-- Khaz'gorite Infused Resin
+				i(200086, {	-- Khaz'gorite-Infused Resin
 					["description"] = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
 					["providers"] = {
 						{ "n", 193706 },	-- Snufflegust

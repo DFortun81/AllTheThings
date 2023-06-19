@@ -21,7 +21,7 @@ WOW_ANNIVERSARY_ROOT = createHeader({
 WOW_ANNIVERSARY_FOUR = createHeader({
 	readable = "WoW's 4th Anniversary",
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
-	--eventID = ,	-- 
+	--eventID = ,	--
 	text = {
 		en = [[~select(2,GetAchievementInfo(2398))]],
 	},
@@ -29,7 +29,7 @@ WOW_ANNIVERSARY_FOUR = createHeader({
 WOW_ANNIVERSARY_FIVE = createHeader({
 	readable = "WoW's 5th Anniversary",
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
-	--eventID = ,	-- 
+	--eventID = ,	--
 	text = {
 		en = [[~select(2,GetAchievementInfo(4400))]],
 	},
@@ -37,7 +37,7 @@ WOW_ANNIVERSARY_FIVE = createHeader({
 WOW_ANNIVERSARY_SIX = createHeader({
 	readable = "WoW's 6th Anniversary",
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
-	--eventID = ,	-- 
+	--eventID = ,	--
 	text = {
 		en = [[~select(2,GetAchievementInfo(5512))]],
 	},
@@ -45,7 +45,7 @@ WOW_ANNIVERSARY_SIX = createHeader({
 WOW_ANNIVERSARY_SEVEN = createHeader({
 	readable = "WoW's 7th Anniversary",
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
-	--eventID = ,	-- 
+	--eventID = ,	--
 	text = {
 		en = [[~select(2,GetAchievementInfo(5863))]],
 	},
@@ -53,7 +53,7 @@ WOW_ANNIVERSARY_SEVEN = createHeader({
 WOW_ANNIVERSARY_EIGHT = createHeader({
 	readable = "WoW's 8th Anniversary",
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
-	--eventID = ,	-- 
+	--eventID = ,	--
 	text = {
 		en = [[~select(2,GetAchievementInfo(6131))]],
 	},
@@ -61,7 +61,7 @@ WOW_ANNIVERSARY_EIGHT = createHeader({
 WOW_ANNIVERSARY_NINE = createHeader({
 	readable = "WoW's 9th Anniversary",
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
-	--eventID = ,	-- 
+	--eventID = ,	--
 	text = {
 		en = [[~select(2,GetAchievementInfo(7853))]],
 	},
@@ -917,7 +917,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	
+
 	-- Stuff that's still in the game
 	n(WOW_ANNIVERSARY_TWELVE, bubbleDownSelf({ ["timeline"] = { "added 7.0.3.21414" } },{
 		n(QUESTS, {
@@ -1051,7 +1051,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(150386),	-- Blacklight Bracer
 					i(150382),	-- Doomhide Gauntlets
 					i(150381),	-- Flayed Doomguard Belt
-					i(150385),	-- Fel Infused Leggings
+					i(150385),	-- Fel-Infused Leggings
 					i(150384),	-- Ring of Entropy
 				},
 			}),
@@ -1986,7 +1986,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		}),
 	})),
 	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDownSelf({ ["timeline"] = { "added 9.2.0.42423" } },{
-		
+
 	})),
 })));
 --[[

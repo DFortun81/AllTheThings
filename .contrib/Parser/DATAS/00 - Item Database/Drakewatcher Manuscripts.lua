@@ -363,4 +363,9 @@ i(205865, 75941);	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator
 ------------------
 -- PATCH 10.1.5 --
 ------------------
+i(208102, 77258);	-- Cliffside Wylderdrake: Infinite Scales
+i(208103, 77257);	-- Highland Drake: Infinite Scales
+i(208104, 77255);	-- Renewed Proto-Drake: Infinite Scales
+i(208105, 77256);	-- Windborne Velocidrake: Infinite Scales
 i(197615, 69819);	-- Windborne Velocidrake: Teal Scales
+i(208106, 77259);	-- Winding Slitherdrake: Infinite Scales

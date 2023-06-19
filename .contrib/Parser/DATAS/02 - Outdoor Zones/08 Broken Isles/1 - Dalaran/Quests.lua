@@ -675,6 +675,7 @@ root(ROOTS.Zones, {
 						{ 40.4, 77.8, STORMWIND_CITY },
 					},
 					["g"] = {
+						i(140192),	-- Dalaran Heartstone (TOY!)
 						i(143785),	-- Tome of the Tranquil Mind
 					},
 				}),

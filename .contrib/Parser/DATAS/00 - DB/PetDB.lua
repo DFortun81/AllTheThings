@@ -2969,7 +2969,15 @@ i(205232, 0);		-- [DNT] REUSE
 -- PATCH 10.1.5 --
 ------------------
 i(205165, 3555);	-- Axel
+i(208012, 4255);	-- Briarhorn Hatchling
+i(208008, 4259);	-- Doomrubble
+i(208009, 4257);	-- Gill'dan
+i(208010, 4258);	-- Jeepers
+i(208013, 4260);	-- Killbot 9000
 i(205162, 3553);	-- Nelthara
+i(208011, 4261);	-- Obsidian Warwhelp
+i(208138, 4262);	-- N'Ruby
+i(0, 4263);			-- Tobias [Maybe Get itemID later??]
 
 
 -- #if ANYCLASSIC

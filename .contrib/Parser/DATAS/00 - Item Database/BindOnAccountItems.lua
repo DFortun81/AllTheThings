@@ -248,6 +248,26 @@ i(48691);	-- Tattered Dreadmist Robe
 i(42945);	-- Venerable Dal'Rend's Sacred Charge
 i(48716);	-- Venerable Mass of McGowan
 
+-----------------
+-- PATCH 6.2.2 --
+-----------------
+i(129941);	-- Commendation of the Ebon Blade [BOA]
+
+-----------------
+-- PATCH 7.2.0 --
+-----------------
+i(146950);	-- Legionfall Insignia [BOA]
+
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+i(168497);	-- Rustbolt Resistance Insignia [BOA]
+
+-----------------
+-- PATCH 8.3.0 --
+-----------------
+i(173374);	-- Rajani Insignia [BOA]
+
 ------------------
 -- PATCH 10.0.2 --
 ------------------

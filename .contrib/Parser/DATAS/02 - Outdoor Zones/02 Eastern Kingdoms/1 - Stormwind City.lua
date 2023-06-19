@@ -2516,7 +2516,7 @@ local TIER_ELEVEN_COMMON_GROUPS = {
 	i(57923),	-- Hermit's Lamp
 	i(58122),	-- Hillside Striders
 	i(68812),	-- Hornet-Sting Band
-	i(57921),	-- Incense Infused Cummerbund
+	i(57921),	-- Incense-Infused Cummerbund
 	i(58160),	-- Leggings of Charity
 	i(58140),	-- Leggings of Late Blooms
 	i(58127),	-- Leggings of Soothing Silence

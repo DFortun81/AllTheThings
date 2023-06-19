@@ -1039,8 +1039,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		})),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
+			i(208102),	-- Cliffside Wylderdrake: Infinite Scales (DM!)
+		}),
+		header(HEADERS.Item, 194705, {	-- Highland Drake
+			i(208103),	-- Highland Drake: Infinite Scales (DM!)
+		}),
+		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
+			i(208104),	-- Renewed Proto-Drake: Infinite Scales (DM!)
+		}),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
+			i(208105),	-- Windborne Velocidrake: Infinite Scales (DM!)
 			i(197615),	-- Windborne Velocidrake: Teal Scales (DM!)
+		}),
+		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
+			i(208106),	-- Winding Slitherdrake: Infinite Scales (DM!)
 		}),
 	})),
 })));

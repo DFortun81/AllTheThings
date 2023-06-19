@@ -488,7 +488,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(124332),	-- Demongaze Helm (Death Knight)
 					i(124263),	-- Felblade Hood (Rogue)
 					i(124261),	-- Oathclaw Helm (Druid)
-					i(124377),	-- Rune Infused Spear
+					i(124377),	-- Rune-Infused Spear
 					i(124358),	-- Runeaxe of the Breaker
 					i(124363),	-- Runic Magnaron Tooth
 					i(124341),	-- Fel-Inscribed Shoulderplates
@@ -1020,7 +1020,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(124332),	-- Demongaze Helm (Death Knight)
 					i(124263),	-- Felblade Hood (Rogue)
 					i(124261),	-- Oathclaw Helm (Druid)
-					i(124377),	-- Rune Infused Spear
+					i(124377),	-- Rune-Infused Spear
 					i(124358),	-- Runeaxe of the Breaker
 					i(124363),	-- Runic Magnaron Tooth
 					i(124341),	-- Fel-Inscribed Shoulderplates
@@ -1513,7 +1513,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					i(124332),	-- Demongaze Helm (Death Knight)
 					i(124263),	-- Felblade Hood (Rogue)
 					i(124261),	-- Oathclaw Helm (Druid)
-					i(124377),	-- Rune Infused Spear
+					i(124377),	-- Rune-Infused Spear
 					i(124358),	-- Runeaxe of the Breaker
 					i(124363),	-- Runic Magnaron Tooth
 					i(124341),	-- Fel-Inscribed Shoulderplates

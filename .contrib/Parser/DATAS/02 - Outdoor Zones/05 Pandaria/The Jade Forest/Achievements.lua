@@ -74,7 +74,7 @@ root(ROOTS.Zones, {
 						["questID"] = 31307,
 						["coord"] = { 39.26, 46.65, THE_JADE_FOREST },
 						["g"] = {
-							i(86199),	-- Jade Infused Blade
+							i(86199),	-- Jade-Infused Blade
 						},
 					}),
 					o(213363, {	-- Wodin's Mantid Shanker

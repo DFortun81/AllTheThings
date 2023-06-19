@@ -556,11 +556,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205213),	-- Suspicious Mold
 					},
 				})),
-				o(380590, {	-- Well Insulated Mug
+				o(380590, {	-- Well-Insulated Mug
 					["coord"] = { 25.1, 73.3, THE_WAKING_SHORES },
 					["questID"] = 70289,
 					["g"] = {
-						i(198685),	-- Well Insulated Mug
+						i(198685),	-- Well-Insulated Mug
 					},
 				}),
 			}),

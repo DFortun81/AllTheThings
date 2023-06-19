@@ -153,7 +153,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 					i(16918),	-- Netherwind Bindings
 					i(16904),	-- Stormrage Bracers
 					i(19369),	-- Gloves of Rapid Evolution
-					i(19336),	-- Arcane Infused Gem
+					i(19336),	-- Arcane-Infused Gem
 					i(19337),	-- The Black Book
 				},
 			}),

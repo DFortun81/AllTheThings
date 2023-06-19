@@ -729,7 +729,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11936,	-- Hatching a Plan
 						["groups"] = {
 							i(37382),	-- Charred Drakehide Belt
-							i(37435),	-- Flame Infused Bindings
+							i(37435),	-- Flame-Infused Bindings
 							i(37513),	-- Helm of the Crimson Drakonid
 							i(37226),	-- Sweltering Robes
 						},

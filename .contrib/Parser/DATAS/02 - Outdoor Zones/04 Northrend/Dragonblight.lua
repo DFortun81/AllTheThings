@@ -1720,7 +1720,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(38151),	-- Daschal's Discarded Shiv
 							i(38152),	-- Mace of the Violet Guardian
-							i(38153),	-- Mana Infused Claw
+							i(38153),	-- Mana-Infused Claw
 							i(38129),	-- Staff of the Ley Mender
 							i(38217),	-- Tome of the Violet Tower
 						},
@@ -1733,7 +1733,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(38151),	-- Daschal's Discarded Shiv
 							i(38152),	-- Mace of the Violet Guardian
-							i(38153),	-- Mana Infused Claw
+							i(38153),	-- Mana-Infused Claw
 							i(38129),	-- Staff of the Ley Mender
 							i(38217),	-- Tome of the Violet Tower
 						},

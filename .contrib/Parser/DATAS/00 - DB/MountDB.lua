@@ -1627,6 +1627,18 @@ i(206027, 411565);	-- Felcrystal Scorpion
 i(205206, 408648);	-- Shalewing, Fire [PH]
 i(205208, 408654);	-- Shalewing, Stone [PH]
 
+------------------
+-- PATCH 10.1.5 --
+------------------
+i(206676, 414326);	-- Felstorm Dragon
+i(206675, 414324);	-- Gold-Toed Albatross
+i(208152, 418078);	-- Pattie
+i(206679, 414328);	-- Perfected Juggernaut
+i(206674, 414323);	-- Ravenous Black Gryphon
+i(206680, 414334);	-- Scourgebound Vanquisher
+i(206678, 414327);	-- Sulfur Hound
+i(206673, 414316);	-- White War Wolf
+
 -- #if ANYCLASSIC
 -----------------
 -- CLASSIC WOW --

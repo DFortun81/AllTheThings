@@ -5,7 +5,7 @@ local EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS = {
 	emot(1, i(44711, {	-- Argent Crusade Commendation Badge
 		["timeline"] = { "deleted 6.0.2" },
 	})),
-	emot(1, i(44713, {	-- Ebon Blade Commendation Badge
+	emot(1, i(44713, {	-- Ebon Blade Commendation Badge [BOP]
 		["timeline"] = { "deleted 6.0.2" },
 	})),
 	emot(1, i(43950, {	-- Kirin Tor Commendation Badge
@@ -5219,7 +5219,7 @@ root(ROOTS.Zones, {
 							i(44711, {	-- Argent Crusade Commendation Badge
 								["timeline"] = { "deleted 6.0.2" },
 							}),
-							i(44713, {	-- Ebon Blade Commendation Badge
+							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
 								["timeline"] = { "deleted 6.0.2" },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
@@ -5248,7 +5248,7 @@ root(ROOTS.Zones, {
 							i(44711, {	-- Argent Crusade Commendation Badge
 								["timeline"] = { "deleted 6.0.2" },
 							}),
-							i(44713, {	-- Ebon Blade Commendation Badge
+							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
 								["timeline"] = { "deleted 6.0.2" },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
@@ -5277,7 +5277,7 @@ root(ROOTS.Zones, {
 							i(44711, {	-- Argent Crusade Commendation Badge
 								["timeline"] = { "deleted 6.0.2" },
 							}),
-							i(44713, {	-- Ebon Blade Commendation Badge
+							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
 								["timeline"] = { "deleted 6.0.2" },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
@@ -5306,7 +5306,7 @@ root(ROOTS.Zones, {
 							i(44711, {	-- Argent Crusade Commendation Badge
 								["timeline"] = { "deleted 6.0.2" },
 							}),
-							i(44713, {	-- Ebon Blade Commendation Badge
+							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
 								["timeline"] = { "deleted 6.0.2" },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge

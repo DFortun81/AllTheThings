@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["g"] = {
 							i(200887),	-- Charred Porter
 							i(200888),	-- Coal-Fired Rib Rack
-							i(200889),	-- Highly-Spiced Haunch
+							i(200889),	-- Highly Spiced Haunch
 						},
 					}),
 					------ Day 3 ------
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 187025 },	-- Warden Captain Sinjoirmi
 						["coord"] = { 60.2, 82.2, THALDRASZUS },
 						["g"] = {
-							i(200893),	-- Azsunian-Poached Lobster
+							i(200893),	-- Azsunian Poached Lobster
 							i(200894),	-- Rare Vintage Arcwine
 							i(200895),	-- Fine Taladorian Cheese Platter
 						},

@@ -257,7 +257,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27452),	-- Light Scribe Bands
 							i(27459),	-- Vambraces of Daring
 							i(27457),	-- Life Bearer's Gauntlets
-							i(32077),	-- Wrath Infused Gauntlets
+							i(32077),	-- Wrath-Infused Gauntlets
 							i(29238),	-- Lion's Heart Girdle
 							-- #endif
 							i(24063),	-- Shifting Sash of Midnight
@@ -408,7 +408,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								i(27452),	-- Light Scribe Bands
 								i(27459),	-- Vambraces of Daring
 								i(27457),	-- Life Bearer's Gauntlets
-								i(32077),	-- Wrath Infused Gauntlets
+								i(32077),	-- Wrath-Infused Gauntlets
 								i(29238),	-- Lion's Heart Girdle
 								-- #if AFTER 7.3.5
 								i(24063),	-- Shifting Sash of Midnight

@@ -99,8 +99,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Brain of the Black Stalker
 							["provider"] = { "i", 24248 },	-- Brain of the Black Stalker
 						}),
-						i(28109),	-- Essence Infused Mushroom
-						i(28108),	-- Power Infused Mushroom
+						i(28109),	-- Essence-Infused Mushroom
+						i(28108),	-- Power-Infused Mushroom
 					},
 				}),
 				q(9719, {	-- Stalk the Stalker
@@ -112,8 +112,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Brain of the Black Stalker
 							["provider"] = { "i", 24248 },	-- Brain of the Black Stalker
 						}),
-						i(28109),	-- Essence Infused Mushroom
-						i(28108),	-- Power Infused Mushroom
+						i(28109),	-- Essence-Infused Mushroom
+						i(28108),	-- Power-Infused Mushroom
 					},
 				}),
 			}),

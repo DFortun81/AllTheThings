@@ -1046,7 +1046,7 @@ i(187958);	-- Shrouded Banner of the Opportune
 ------------------
 -- PATCH 10.0.0 --
 ------------------
-i(200148);	-- A Collection Of Me
+i(200148);	-- A Collection of Me
 i(202042);	-- Aquatic Shades
 i(200707);	-- Armoire of Endless Cloaks
 i(197719);	-- Artisan's Sign
@@ -1191,6 +1191,16 @@ i(206038);	-- Flamin' Ring of Flashiness [Midsummer]
 -- NYI --
 i(205034);	-- Enormous Ball of Yarn
 i(205027);	-- Explorer's Banner
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+i(208186);	-- Boffins
+i(140192);	-- Dalaran Hearthstone
+i(110560);	-- Garrison Hearthstone
+i(208058);	-- Minute Glass
+i(208057);	-- Smoldering Banner of the Aspects
+i(207099);	-- Tiny Box of Tiny Rocks
 
 
 -- #if ANYCLASSIC

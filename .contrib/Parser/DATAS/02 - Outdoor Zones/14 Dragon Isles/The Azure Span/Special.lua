@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["questID"] = 74446,
 				["isDaily"] = true,
 				["g"] = {
-					i(200086), -- Khaz'gorite-infused Resin (IF!)
+					i(200086), -- Khaz'gorite-Infused Resin (IF!)
 				},
 			}),
 			n(196768, {	-- Primal Bear Cub

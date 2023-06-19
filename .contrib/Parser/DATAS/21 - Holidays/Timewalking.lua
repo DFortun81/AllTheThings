@@ -21,7 +21,7 @@ TIMEWALKING_HEADER = createHeader({
 local TIMEWALKING_DUNGEON_CREATURE_IDS = {};
 function inst_tw(id, t)
 	t = inst(id, t);
-	
+
 	-- Look for the CreatureID's
 	local groups = t.groups or t.g;
 	if groups then
@@ -926,7 +926,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 					i(188368),	-- Incanter's Robe
 					i(188389),	-- Jagged Bark Pendant
 					i(188397),	-- Netherfury Cape
-					i(188388),	-- Warp Infused Drape
+					i(188388),	-- Warp-Infused Drape
 					i(188390),	-- Warp Splinter's Thorn
 					i(188387),	-- Warpstaff of Arcanum
 				},
@@ -1120,12 +1120,12 @@ AddInstancesToRotation(TBC_TIER, {
 	-- #if AFTER 7.2.5.23910
 	751,	-- Black Temple, not originally included with the rotation
 	-- #endif
-	
+
 	-- Dungeons
 	249,	-- Magisters' Terrace
 	250,	-- Mana Tombs
 	259,	-- The Shattered Halls
-	
+
 	-- #if AFTER 9.1.5
 	256,	-- The Blood Furnace
 	257,	-- The Botanica
@@ -1262,7 +1262,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					i(129942, {	-- Commendation of the Argent Crusade
 						["cost"] = { { "c", 1166, 50 }, },	-- 50x Timewarped Badge
 					}),
-					i(129941, {	-- Commendation of the Ebon Blade
+					i(129941, {	-- Commendation of the Ebon Blade [BOA]
 						["cost"] = { { "c", 1166, 50 }, },	-- 50x Timewarped Badge
 					}),
 					i(129954, {	-- Commendation of the Horde Expedition
@@ -2218,12 +2218,12 @@ AddInstancesToRotation(WOTLK_TIER, {
 	-- #if AFTER 7.2.5.23910
 	759,	-- Ulduar, not originally included with the rotation
 	-- #endif
-	
+
 	-- Dungeons
 	274,	-- Gundrak
 	275,	-- Halls of Lightning
 	281,	-- The Nexus
-	
+
 	-- #if AFTER 9.1.5
 	272,	-- Azjol-Nerub
 	280,	-- The Forge of Souls
@@ -3027,14 +3027,14 @@ AddInstancesToRotation(CATA_TIER, {
 	-- #if AFTER 8.2.5.31958
 	78,	-- Firelands not originally included with the rotation
 	-- #endif
-	
+
 	-- Dungeons
 	184,	-- End Time
 	 69,	-- Lost City of the Tol'vir
 	 67,	-- The Stonecore
 	 68,	-- The Vortex Pinnacle
 	 65,	-- Throne of the Tides
-	
+
 	-- #if AFTER 9.1.5
 	 66,	-- Blackrock Caverns
 	-- #else
@@ -3481,14 +3481,14 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 AddInstancesToRotation(MOP_TIER, {
 	-- Raid not originally included with the rotation
 	-- It is expected that the raid will be Throne of Thunder.
-	
+
 	-- Dungeons
 	303,	-- Gate of the Setting Sun
 	321,	-- Mogu'shan Palace
 	312,	-- Shado-Pan Monastery
 	302,	-- Stormstout Brewery
 	313,	-- Temple of the Jade Serpent
-	
+
 	-- #if AFTER 9.1.5
 	246,	-- Scholomance
 	-- #else
@@ -4340,14 +4340,14 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 AddInstancesToRotation(WOD_TIER, {
 	-- Raid not originally included with the rotation
 	-- It is expected that the raid will be Blackrock Foundry.
-	
+
 	-- Dungeons
 	547,	-- Auchindoun
 	385,	-- Bloodmaul Slag Mines
 	537,	-- Shadowmoon Burial Grounds
 	476,	-- Skyreach
 	556,	-- The Everbloom
-	
+
 	-- #if AFTER 9.1.5
 	536,	-- Grimrail Depot
 	-- #else
@@ -4501,7 +4501,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					i(146946, {	-- Nightfallen Insignia
 						["cost"] = { { "c", 1166, 50 }, },		-- 50x Timewarped Badge
 					}),
-					i(146950, {	-- Legionfall Insignia
+					i(146950, {	-- Legionfall Insignia [BOA]
 						["cost"] = { { "c", 1166, 50 }, },		-- 50x Timewarped Badge
 					}),
 					i(152960, {	-- Argussian Reach Insignia
@@ -4922,7 +4922,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 AddInstancesToRotation(LEGION_TIER, {
 	-- Raid not originally included with the rotation
 	-- It is expected that the raid will be Nighthold.
-	
+
 	-- Dungeons
 	740,	-- Black Rook Hold
 	800,	-- Court of Stars

@@ -191,7 +191,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					--["g"] = {
 					--},
 				}),
-				--[[
 				e(2534, {	-- Time-Lost Battlefield (Horde)
 					--["crs"] = {  },	--
 					--["g"] = {
@@ -199,10 +198,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				}),
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
 					--["crs"] = {  },	--
-					--["g"] = {
-					--},
+					["g"] = {
+						i(208102),	-- Cliffside Wylderdrake: Infinite Scales (DM!)
+						i(208103),	-- Highland Drake: Infinite Scales (DM!)
+						i(208104),	-- Renewed Proto-Drake: Infinite Scales (DM!)
+						i(208105),	-- Windborne Velocidrake: Infinite Scales (DM!)
+						i(208106),	-- Winding Slitherdrake: Infinite Scales (DM!)
+					},
 				}),
-				--]]
 			}),
 		},
 	}),

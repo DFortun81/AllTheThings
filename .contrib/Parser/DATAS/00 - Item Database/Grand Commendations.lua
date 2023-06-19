@@ -21,7 +21,6 @@ i(19858, 270);	-- Zandalar Honor Token [Zandalar Tribe]
 -- Wrath of the Lich King
 -- Timear Foresees & Emblems of Triumph
 i(44711, 1106);	-- Argent Crusade Commendation Badge
-i(44713, 1098);	-- Ebon Blade Commendation Badge
 i(43950, 1090);	-- Kirin Tor Commendation Badge
 i(49702, 1119);	-- Sons of Hodir Commendation Badge
 i(44710, 1091);	-- Wyrmrest Commendation Badge
@@ -93,7 +92,6 @@ i(129947, 947);		-- Commendation of Thrallmar
 -- Timewalking: Wrath of the Lich King
 i(129955, 1037);	-- Commendation of the Alliance Vanguard
 i(129942, 1106);	-- Commendation of the Argent Crusade
-i(129941, 1098);	-- Commendation of the Ebon Blade
 i(129954, 1052);	-- Commendation of the Horde Expedition
 i(129940, 1090);	-- Commendation of the Kirin Tor
 i(129943, 1119);	-- Commendation of the Sons of Hodir
@@ -194,8 +192,6 @@ i(141341, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
 i(139024, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
 i(146944, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
 i(146938, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
-i(146949, 2045);	-- Legionfall Insignia [Armies of Legionfall]
-i(146950, 2045);	-- Legionfall Insignia [Armies of Legionfall]
 i(141343, 1859);	-- Nightfallen Insignia [The Nightfallen]
 i(139026, 1859);	-- Nightfallen Insignia [The Nightfallen]
 i(146940, 1859);	-- Nightfallen Insignia [The Nightfallen]
@@ -218,8 +214,7 @@ i(146939, 1894);	-- Wardens Insignia [The Wardens]
 		i(168822, 2395);	-- Thin Jelly (+20)
 
 	-- Rajani
-		i(173375, 2415);	-- Rajani Insignia (+250, BoP)
-		i(173374, 2415);	-- Rajani Insignia (+250, BoA)
+
 
 	-- Rustbolt Resistance
 		i(173736, 2391);	-- Layered Information Kernel of E-steam (+250, Rustbolt Resistance)
@@ -299,54 +294,86 @@ i(146939, 1894);	-- Wardens Insignia [The Wardens]
 -- NEUTRAL
 -- 1598, 2163	-- Tortollan Seekers Commendation
 
+-----------------
+-- PATCH 3.0.2 --
+-----------------
+i(44713, FACTION_EBON_BLADE);				-- Ebon Blade Commendation Badge
 
+-----------------
+-- PATCH 6.2.2 --
+-----------------
+i(129941, FACTION_EBON_BLADE);				-- Commendation of the Ebon Blade [BOA]
+
+-----------------
+-- PATCH 7.2.0 --
+-----------------
+i(146950, FACTION_ARMIES_OF_LEGIONFALL);	-- Legionfall Insignia [BOA]
+i(146949, FACTION_ARMIES_OF_LEGIONFALL);	-- Legionfall Insignia [BOP]
 
 -----------------
 -- PATCH 7.3.0 --
 -----------------
-i(152959, FACTION_ARGUSSIAN_REACH);		-- Argussian Reach Insignia
-i(152960, FACTION_ARGUSSIAN_REACH);		-- Argussian Reach Insignia
-i(152957, FACTION_ARMY_OF_THE_LIGHT);	-- Army of the Light Insignia
-i(152958, FACTION_ARMY_OF_THE_LIGHT);	-- Army of the Light Insignia
-i(152954, FACTION_ARGUSSIAN_REACH);		-- Greater Argussian Reach Insignia
-i(152961, FACTION_ARGUSSIAN_REACH);		-- Greater Argussian Reach Insignia
-i(152955, FACTION_ARMY_OF_THE_LIGHT);	-- Greater Army of the Light Insignia
-i(152956, FACTION_ARMY_OF_THE_LIGHT);	-- Greater Army of the Light Insignia
+i(152959, FACTION_ARGUSSIAN_REACH);			-- Argussian Reach Insignia
+i(152960, FACTION_ARGUSSIAN_REACH);			-- Argussian Reach Insignia
+i(152957, FACTION_ARMY_OF_THE_LIGHT);		-- Army of the Light Insignia
+i(152958, FACTION_ARMY_OF_THE_LIGHT);		-- Army of the Light Insignia
+i(152954, FACTION_ARGUSSIAN_REACH);			-- Greater Argussian Reach Insignia
+i(152961, FACTION_ARGUSSIAN_REACH);			-- Greater Argussian Reach Insignia
+i(152955, FACTION_ARMY_OF_THE_LIGHT);		-- Greater Army of the Light Insignia
+i(152956, FACTION_ARMY_OF_THE_LIGHT);		-- Greater Army of the Light Insignia
+
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+i(168497, FACTION_RUSTBOLT_RESISTANCE);		-- Rustbolt Resistance Insignia [BOA]
+
+-----------------
+-- PATCH 8.3.0 --
+-----------------
+i(173374, FACTION_RAJANI);					-- Rajani Insignia [BOA]
+i(173375, FACTION_RAJANI);					-- Rajani Insignia [BOP]
 
 -----------------
 -- PATCH 9.0.2 --
 -----------------
-i(178591, 2413);	-- Ancient Venthyr Relic (Court of Harvesters)
-i(178593, FACTION_THE_WILD_HUNT);		-- Intricate Fae Groveweave
-i(178590, FACTION_THE_UNDYING_ARMY);	-- Storied Maldraxxian Boneblade
-i(178592, FACTION_THE_ASCENDED);		-- Venerable Kyrian Defender
+i(178591, FACTION_COURT_OF_HARVESTERS);		-- Ancient Venthyr Relic
+i(178593, FACTION_THE_WILD_HUNT);			-- Intricate Fae Groveweave
+i(178590, FACTION_THE_UNDYING_ARMY);		-- Storied Maldraxxian Boneblade
+i(178592, FACTION_THE_ASCENDED);			-- Venerable Kyrian Defender
 
 -----------------
 -- PATCH 9.1.0 --
 -----------------
-i(187425, FACTION_THE_UNDYING_ARMY);	-- Ancient Maldraxxi Armament
-i(187427, FACTION_THE_ASCENDED);		-- Lost Meditation Bell
-i(187429, FACTION_THE_WILD_HUNT);		-- Petrified Sylvan Antlers
+i(187425, FACTION_THE_UNDYING_ARMY);		-- Ancient Maldraxxi Armament
+i(187427, FACTION_THE_ASCENDED);			-- Lost Meditation Bell
+i(187429, FACTION_THE_WILD_HUNT);			-- Petrified Sylvan Antlers
 
 ------------------
 -- PATCH 10.0.2 --
 ------------------
-i(200287, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Uncommon]
-i(200453, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Rare]
-i(201922, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Epic]
-i(202092, FACTION_ISKAARA_TUSKARR);		-- Iskaara Tuskarr Insignia [Epic 2.5k]
-i(200288, FACTION_MARUUK_CENTAUR);		-- Maruuk Centaur Insignia [Uncommon]
-i(200454, FACTION_MARUUK_CENTAUR);		-- Maruuk Centaur Insignia [Rare]
-i(201923, FACTION_MARUUK_CENTAUR);		-- Maruuk Centaur Insignia [Epic]
-i(202094, FACTION_MARUUK_CENTAUR);		-- Maruuk Centaur Insignia [Epic 2.5k]
-i(200289, FACTION_VALDRAKKEN_ACCORD);	-- Valdrakken Accord Insignia [Uncommon]
-i(200455, FACTION_VALDRAKKEN_ACCORD);	-- Valdrakken Accord Insignia [Rare]
-i(201924, FACTION_VALDRAKKEN_ACCORD);	-- Valdrakken Accord Insignia [Epic]
-i(202093, FACTION_VALDRAKKEN_ACCORD);	-- Valdrakken Accord Insignia [Epic 2.5k]
+i(200287, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Uncommon]
+i(200453, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Rare]
+i(201922, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Epic]
+i(202092, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Epic 2.5k]
+i(200288, FACTION_MARUUK_CENTAUR);			-- Maruuk Centaur Insignia [Uncommon]
+i(200454, FACTION_MARUUK_CENTAUR);			-- Maruuk Centaur Insignia [Rare]
+i(201923, FACTION_MARUUK_CENTAUR);			-- Maruuk Centaur Insignia [Epic]
+i(202094, FACTION_MARUUK_CENTAUR);			-- Maruuk Centaur Insignia [Epic 2.5k]
+i(200289, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Uncommon]
+i(200455, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Rare]
+i(201924, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Epic]
+i(202093, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Epic 2.5k]
 
 ------------------
 -- PATCH 10.1.0 --
 ------------------
-i(205365, FACTION_LOAMM_NIFFEN);		-- Loamm Niffen Insignia [Uncommon]
-i(205342, FACTION_LOAMM_NIFFEN);		-- Loamm Niffen Insignia [Rare]
-i(205985, FACTION_LOAMM_NIFFEN);		-- Loamm Niffen Insignia [Epic]
+i(205365, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Uncommon]
+i(205342, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Rare]
+i(205985, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Epic]
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+i(208133, FACTION_ORGRIMMAR);				-- Orgrimmar Insignia [BOP]
+i(208134, FACTION_RUSTBOLT_RESISTANCE);		-- Rustbolt Resistance Insignia [BOP]
+i(208132, FACTION_STORMWIND);				-- Stormwind Insignia [BOP]

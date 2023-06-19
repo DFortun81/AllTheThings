@@ -38,7 +38,7 @@ root(ROOTS.Zones, {
 							["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
 							["coord"] = { 54.0, 88.0, KRASARANG_WILDS },
 							["g"] = {
-								i(87266),	-- Recipe: Banana Infused Rum
+								i(87266),	-- Recipe: Banana-Infused Rum
 							},
 						}),
 						o(213651, {	-- Equipment Locker

@@ -267,7 +267,7 @@ root(ROOTS.Zones, {
 						crit(26, {	-- Drivnul slain
 							["achievementID"] = 10070,	-- Jungle Stalker
 						}),
-						i(127298),	-- Blood Infused Leggings
+						i(127298),	-- Blood-Infused Leggings
 					},
 				}),
 				n(91727, {	-- Executor Riloth

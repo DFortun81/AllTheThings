@@ -120,7 +120,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						objective(1, {	-- 0/1 Volkhan Defeated
 							["provider"] = { "n", 28587 },	-- Volkhan
 						}),
-						i(43193),	-- Lightning Infused Mantle
+						i(43193),	-- Lightning-Infused Mantle
 						i(43194),	-- Charred Leather Shoulderguards
 						i(43195),	-- Stormforged Shoulders
 						i(43197),	-- Pauldrons of Extinguished Hatred
@@ -135,7 +135,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						objective(1, {	-- 0/1 Volkhan Defeated
 							["provider"] = { "n", 28587 },	-- Volkhan
 						}),
-						i(43193),	-- Lightning Infused Mantle
+						i(43193),	-- Lightning-Infused Mantle
 						i(43194),	-- Charred Leather Shoulderguards
 						i(43195),	-- Stormforged Shoulders
 						i(43197),	-- Pauldrons of Extinguished Hatred

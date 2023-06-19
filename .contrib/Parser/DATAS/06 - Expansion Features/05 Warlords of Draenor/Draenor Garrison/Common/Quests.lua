@@ -2575,12 +2575,18 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["provider"] = { "n", 79243 },	-- Baros Alexston
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 34585 },	-- Quakefist
+				["g"] = {
+					i(110560),	-- Garrison Hearthstone (TOY!)
+				},
 			}),
 			q(34378, {	-- Establish Your Garrison
 				["coord"] = { 51.2, 39.6, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 78466 },	-- Gazlowe
 				["sourceQuests"] = { 34765 },	-- The Den of Skog
+				["g"] = {
+					i(110560),	-- Garrison Hearthstone (TOY!)
+				},
 			}),
 			q(34583, {	-- For the Alliance
 				["sourceQuests"] = { 34582 },	-- Finding a Foothold

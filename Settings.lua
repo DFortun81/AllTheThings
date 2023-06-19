@@ -440,10 +440,10 @@ settings.CheckSeasonalDate = function(self, eventID, startMonth, startDay, endMo
 		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
 		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
 	end
-	
+
 	local active = (now >= start and now <= ends);
 	app.ActiveEvents[eventID] = active;
-	
+
 	-- TODO: If AllTheThings is ever going to support OG Classic in this addon, this statement is untrue currently.
 	app.PrintDebug("CheckSeasonalDate: This should no longer be called")
 end
@@ -1226,13 +1226,13 @@ settings.UpdateMode = function(self, doRefresh)
 			settings:SetThingTracking();
 			app.MODE_ACCOUNT = nil;
 		end
-		
+
 		if self:Get("Show:OnlyActiveEvents") then
 			app.RequireEventFilter = app.Modules.Events.FilterIsEventActive;
 		else
 			app.RequireEventFilter = app.NoFilter;
 		end
-		
+
 		app.MODE_DEBUG = nil;
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;

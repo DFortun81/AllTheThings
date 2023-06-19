@@ -464,7 +464,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10174,	-- Curse of the Violet Tower
 						["groups"] = {
 							i(30401),	-- Farahlite Studded Boots
-							i(29955),	-- Mana Infused Wristguards
+							i(29955),	-- Mana-Infused Wristguards
 							i(29954),	-- Spiritbinder's Mantle
 							i(29959),	-- Spiritualist's Gauntlets
 						},

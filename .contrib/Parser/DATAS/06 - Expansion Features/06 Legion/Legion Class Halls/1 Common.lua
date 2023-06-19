@@ -519,7 +519,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				i(150929),	-- Greater Wardens Insignia
 				i(141341),	-- Highmountain Tribe Insignia
 				i(146944),	-- Highmountain Tribe Insignia
-				i(146950),	-- Legionfall Insignia
+				i(146950),	-- Legionfall Insignia [BOA]
+				i(146949),	-- Legionfall Insignia [BOP]
 				i(141343),	-- Nightfallen Insignia
 				i(146946),	-- Nightfallen Insignia
 				i(141338),	-- Valarjar Insignia

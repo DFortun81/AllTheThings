@@ -1076,7 +1076,7 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		["description"] = "The following items can be gathered by skinning creatures out in the world.",
 		["groups"] = {
 			i(29539),	-- Cobra Scales
-			i(25699),	-- Crystal Infused Leather
+			i(25699),	-- Crystal-Infused Leather
 			i(25707),	-- Fel Hide
 			i(25700),	-- Fel Scales
 			i(21887),	-- Knothide Leather

@@ -156,7 +156,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(19135),	-- Blacklight Bracer
 					i(18544),	-- Doomhide Gauntlets
 					i(19134),	-- Flayed Doomguard Belt
-					i(19133),	-- Fel Infused Leggings
+					i(19133),	-- Fel-Infused Leggings
 					i(18543),	-- Ring of Entropy
 				},
 			}))),

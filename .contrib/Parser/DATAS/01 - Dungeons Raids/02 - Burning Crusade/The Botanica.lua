@@ -166,7 +166,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(28349),	-- Tidefury Helm (7.3.5 - Moved to Laj)
 						i(28350),	-- Warhelm of the Bold (7.3.5 - Moved to Commander Sarannis)
 						-- #endif
-						i(28342),	-- Warp Infused Drape
+						i(28342),	-- Warp-Infused Drape
 						i(28345),	-- Warp Splinter's Thorn
 						-- #if BEFORE 7.3.5
 						i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
@@ -293,7 +293,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28349),	-- Tidefury Helm (7.3.5 - Moved to Laj)
 							i(28350),	-- Warhelm of the Bold (7.3.5 - Moved to Commander Sarannis)
 							-- #endif
-							i(28342),	-- Warp Infused Drape
+							i(28342),	-- Warp-Infused Drape
 							i(28345),	-- Warp Splinter's Thorn
 							-- #if BEFORE 7.3.5
 							i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)

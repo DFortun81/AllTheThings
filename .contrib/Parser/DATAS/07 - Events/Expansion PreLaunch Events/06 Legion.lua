@@ -221,6 +221,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 					["DisablePartySync"] = false,	-- false = "hasn't been verified yet"
 					-- #endif
 					["groups"] = {
+						i(140192),	-- Dalaran Heartstone (TOY!)
 						i(143780),	-- Tome of the Tranquil Mind
 					},
 				}),

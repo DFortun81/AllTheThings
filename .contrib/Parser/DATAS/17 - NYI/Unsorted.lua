@@ -240,25 +240,9 @@ root(ROOTS.Unsorted, {
 			i(12840),	-- Inert Minion's Scourgestone
 			i(12841),	-- Inert Invader's Scourgestone
 			i(12843),	-- Inert Corruptor's Scourgestone
-			i(19133),	-- Fel-Infused Leggings
-			i(19336),	-- Arcane-Infused Gem
-			i(25699),	-- Crystal-Infused Leather
-			i(28108),	-- Power-Infused Mushroom
-			i(28109),	-- Essence-Infused Mushroom
-			i(28342),	-- Warp-Infused Drape
-			i(29955),	-- Mana-Infused Wristguards
-			i(32077),	-- Wrath-Infused Gauntlets
-			i(37435),	-- Flame-Infused Bindings
-			i(38153),	-- Mana-Infused Claw
-			i(43193),	-- Lightning-Infused Mantle
 			i(52032),	-- Rockin'-Powder-Infused Rocket Boots
-			i(57921),	-- Incense-Infused Cummerbund
-			i(86199),	-- Jade-Infused Blade
 			i(86432),	-- Banana-Infused Rum
-			i(87266),	-- Recipe: Banana-Infused Rum
 			i(112180),	-- Patch of Crystal-Infused Leather
-			i(124377),	-- Rune-Infused Spear
-			i(127298),	-- Blood-Infused Leggings
 			i(129018),	-- Grimoire of the Fel Imp
 			i(137731),	-- Technique: Grimoire of the Fel Imp
 			i(139310),	-- Grimoire of the Shivarra
@@ -267,7 +251,6 @@ root(ROOTS.Unsorted, {
 			i(139313),	-- Grimoire of the Terrorguard
 			i(139314),	-- Grimoire of the Abyssal
 			i(139315),	-- Grimoire of the Wrathguard
-			i(140607),	-- Elementally Infused Boots
 			i(141061),	-- Technique: Grimoire of the Abyssal
 			i(141063),	-- Technique: Grimoire of the Observer
 			i(141064),	-- Technique: Grimoire of the Shivarra
@@ -278,20 +261,20 @@ root(ROOTS.Unsorted, {
 			i(144241),	-- Fel-Infused Remains
 			i(147119),	-- Grimoire of the Shadow Succubus
 			i(147120),	-- Technique: Grimoire of the Shadow Succubus
-			i(150385),	-- Fel-Infused Leggings
+
 			i(158733),	-- Azerite-Infused Rock
 			i(175972),	-- Anima-Infused Venom
 			i(181516),	-- Stone-Laced Infused Ruby
 			i(183041),	-- Anima-Infused Silk
-			i(188388),	-- Warp-Infused Drape
+
 			i(193412),	-- Primal-Infused Dragon Egg
-			i(198685),	-- Well-Insulated Mug
-			i(200086),	-- Khaz'gorite-Infused Resin
-			i(200148),	-- A Collection of Me
-			i(200257),	-- Decay-Infused Branch
+
+
+
+
 			i(200836),	-- Arcane-Infused Crystals
-			i(200889),	-- Highly Spiced Haunch
-			i(200893),	-- Azsunian Poached Lobster
+
+
 			i(202247),	-- Curious Curio Goggles
 			i(202250),	-- Sweet Snapflower Bulb
 			i(202265),	-- Wheel of Whelpwhisper Brie
@@ -530,7 +513,6 @@ root(ROOTS.Unsorted, {
 			i(206472),	-- Faerlina's Sewing Kit
 			i(206473),	-- Makeshift Grappling Hook
 			i(206474),	-- Smelly Cheese
-			i(206475),	-- Paracausal Fragment of Seschenal
 			i(206481),	-- Shifting Sliver
 			i(206482),	-- Helm of Lingering Power
 			i(206483),	-- Skyfury Headdress
@@ -595,172 +577,19 @@ root(ROOTS.Unsorted, {
 			i(206645),	-- Cursed Cloth
 			i(206646),	-- Languished Leather
 			i(206647),	-- Scourged Scales
-			i(206673),	-- Horn of the White War Wolf
-			i(206674),	-- Reins of the Ravenous Black Gryphon
-			i(206675),	-- Gold-Toed Albatross
-			i(206676),	-- Felstorm Dragon
-			i(206678),	-- Sulfur Hound Chain
-			i(206679),	-- Juggernaut Perfected
-			i(206680),	-- Reins of the Scourgebound Frostbrood Vanquisher
 			i(206682),	-- Rusziona
 			i(206683),	-- Wrathion's Tab
 			i(206695),	-- Pale Duskblossom
 			i(206749),	-- Oil Soaked Captains Log
 			i(206758),	-- Belastrasza
 			i(206763),	-- Kabluey
-			i(206764),	-- Fel-Infused Polearm
-			i(206765),	-- Its Focused Gaze
-			i(206766),	-- Jagged Treason
-			i(206767),	-- Valhalla Peicekeeper
-			i(206768),	-- Serrated Parasite
-			i(206769),	-- Unknown Horror's Arm
-			i(206770),	-- Consuming Claws
 			i(206771),	-- Pattern: Cursed Cloth
 			i(206772),	-- Pattern: Languished Leather
 			i(206773),	-- Pattern: Scourged Scales
 			i(206775),	-- Map to Suramar
-			i(206776),	-- Heretical Gavel
-			i(206777),	-- Energy Projection Regulator
-			i(206778),	-- Northern Ballista
-			i(206779),	-- Steel-Lined Locking System
-			i(206780),	-- Overclocked Hand Cannon
-			i(206781),	-- Demonic Bone-Crusher
-			i(206782),	-- Titanic Hourglass
-			i(206783),	-- Bonegale Greataxe
-			i(206784),	-- Blighted Greatbow
-			i(206785),	-- Defect Retirement Tool
-			i(206786),	-- Victorious Scourge Tabard
-			i(206788),	-- Utopian Tabard
-			i(206789),	-- Heart-Slicer
-			i(206790),	-- Fel-Ridden Divider
-			i(206791),	-- Branded Greatmaul
-			i(206792),	-- Subjugator's Shield
-			i(206793),	-- Upraised Headstone
-			i(206794),	-- Hand of Order
-			i(206795),	-- Titan Watcher's Shortblade
-			i(206796),	-- Energetic Power Knife
-			i(206797),	-- Frostspire
-			i(206798),	-- Valhalla Heartstriker
 			i(206800),	-- Arcane Detection Rod
-			i(206801),	-- Inferna Rod
-			i(206802),	-- Plague-Touched Stave
-			i(206803),	-- Cursed Blade of the Scourge
-			i(206804),	-- Clockwork Mallet
 			i(206806),	-- Part Dislocator
-			i(206807),	-- Order Powered Mechblade
-			i(206808),	-- Warmonger's Robe
-			i(206809),	-- Warmonger's Wristwraps
-			i(206810),	-- Warmonger's Cord
-			i(206812),	-- Warmonger's Epaulettes
-			i(206814),	-- Warmonger's Leggings
-			i(206816),	-- Warmonger's Skullcap
-			i(206817),	-- Warmonger's Mitts
-			i(206818),	-- Warmonger's Treads
-			i(206819),	-- Warmonger's Shroud
-			i(206821),	-- Jingoistic's Robe
-			i(206822),	-- Jingoistic's Wristwraps
-			i(206823),	-- Jingoistic's Cord
-			i(206824),	-- Jingoistic's Epaulettes
-			i(206825),	-- Jingoistic's Leggings
-			i(206826),	-- Jingoistic's Hood
-			i(206827),	-- Jingoistic's Mitts
-			i(206828),	-- Jingoistic's Treads
-			i(206829),	-- Jingoistic's Shroud
-			i(206831),	-- Jingoistic's Cloak
-			i(206832),	-- Jingoistic's Boots
-			i(206833),	-- Jingoistic's Gloves
-			i(206834),	-- Jingoistic's Headcover
-			i(206835),	-- Jingoistic's Pantaloon
-			i(206836),	-- Jingoistic's Spaulders
-			i(206837),	-- Jingoistic's Belt
-			i(206838),	-- Jingoistic's Bracers
-			i(206839),	-- Jingoistic's Cuirass
-			i(206840),	-- Warmonger's Cuirass
-			i(206841),	-- Warmonger's Bracers
-			i(206842),	-- Warmonger's Belt
-			i(206843),	-- Warmonger's Spaulders
-			i(206844),	-- Warmonger's Vestment
-			i(206845),	-- Warmonger's Pantaloon
-			i(206846),	-- Warmonger's Headcover
-			i(206847),	-- Warmonger's Gloves
-			i(206848),	-- Warmonger's Boots
-			i(206849),	-- Warmonger's Cloak
-			i(206850),	-- Warmonger's Drape
-			i(206851),	-- Warmonger's Footpads
-			i(206852),	-- Warmonger's Grips
-			i(206853),	-- Warmonger's Casque
-			i(206854),	-- Warmonger's Legguards
-			i(206855),	-- Warmonger's Mantle
-			i(206856),	-- Warmonger's Clasp
-			i(206857),	-- Warmonger's Bonds
-			i(206858),	-- Warmonger's Chainmail
 			i(206859),	-- Chipped Stone Tablet
-			i(206860),	-- Jingoistic's Chainmail
-			i(206861),	-- Jingoistic's Bonds
-			i(206862),	-- Jingoistic's Clasp
-			i(206863),	-- Jingoistic's Mantle
-			i(206864),	-- Jingoistic's Legguards
-			i(206865),	-- Jingoistic's Casque
-			i(206866),	-- Jingoistic's Grips
-			i(206867),	-- Jingoistic's Footpads
-			i(206868),	-- Jingoistic's Drape
-			i(206869),	-- Jingoistic's Vestment
-			i(206870),	-- Jingoistic's Cape
-			i(206871),	-- Jingoistic's Warboots
-			i(206872),	-- Jingoistic's Gauntlets
-			i(206873),	-- Jingoistic's Greathelm
-			i(206874),	-- Jingoistic's Legplates
-			i(206875),	-- Jingoistic's Pauldrons
-			i(206876),	-- Jingoistic's Girdle
-			i(206877),	-- Jingoistic's Vambraces
-			i(206878),	-- Jingoistic's Breastplate
-			i(206879),	-- Warmonger's Breastplate
-			i(206880),	-- Warmonger's Vambraces
-			i(206881),	-- Warmonger's Girdle
-			i(206882),	-- Warmonger's Pauldrons
-			i(206883),	-- Warmonger's Legplates
-			i(206884),	-- Warmonger's Greathelm
-			i(206885),	-- Warmonger's Gauntlets
-			i(206886),	-- Warmonger's Warboots
-			i(206887),	-- Warmonger's Cape
-			i(206888),	-- Decorous Shawl
-			i(206889),	-- Decorous Slippers
-			i(206890),	-- Decorous Handwraps
-			i(206891),	-- Decorous Guise
-			i(206892),	-- Decorous Trousers
-			i(206893),	-- Decorous Mantle
-			i(206894),	-- Decorous Sash
-			i(206895),	-- Decorous Wraps
-			i(206896),	-- Decorous Robe
-			i(206897),	-- Life Giver's Drape
-			i(206898),	-- Life Giver's Sollerets
-			i(206899),	-- Life Giver's Grips
-			i(206900),	-- Life Giver's Vision
-			i(206901),	-- Life Giver's Legwraps
-			i(206902),	-- Life Giver's Robe
-			i(206903),	-- Life Giver's Spaulders
-			i(206904),	-- Life Giver's Girdle
-			i(206905),	-- Life Giver's Bindings
-			i(206906),	-- Life Giver's Jerkin
-			i(206907),	-- Cloak of Discipline
-			i(206908),	-- Robe of Discipline
-			i(206909),	-- Stompers of Discipline
-			i(206910),	-- Gloves of Discipline
-			i(206911),	-- Horns of Discipline
-			i(206912),	-- Shausses of Discipline
-			i(206913),	-- Shoulderguards of Discipline
-			i(206914),	-- Cinch of Discipline
-			i(206915),	-- Cuffs of Discipline
-			i(206916),	-- Chain Vest of Discipline
-			i(206917),	-- Valhalla's Cape
-			i(206918),	-- Valhalla's Sabatons
-			i(206919),	-- Valhalla's Handguards
-			i(206920),	-- Valhalla's Helm
-			i(206921),	-- Valhalla's Greaves
-			i(206922),	-- Valhalla's Pauldrons
-			i(206923),	-- Valhalla's Waistguard
-			i(206924),	-- Valhalla's Bracelets
-			i(206925),	-- Valhalla's Chestguard
 			i(206926),	-- Keeper's Gavel
 			i(206927),	-- Curator's Warhammer
 			i(206928),	-- Attendent's Hammer
@@ -770,85 +599,17 @@ root(ROOTS.Unsorted, {
 			i(206164),	-- Weak Resonating Vestigial
 			i(206165),	-- Major Resonating Vestigial
 			i(206166),	-- Strong Resonating Vestigial
-			i(206475),	-- Anomalous Fragment of Seschenal
 			i(206564),	-- Time-Displaced Titanic Disc
 			i(206566),	-- Reins of the Scarlet Pterrordax
 			i(206567),	-- Harbor Gryphon
-			i(206678),	-- Sulfur Hound's Leash
-			i(206679),	-- Perfected Juggernaut
-			i(206680),	-- Reins of the Scourgebound Vanquisher
 			i(206749),	-- Oil-Soaked Captain's Log
-			i(206767),	-- Valhalas Peacekeeper
-			i(206798),	-- Valhalas Heartstriker
-			i(206821),	-- Jingoist's Robe
-			i(206822),	-- Jingoist's Wristwraps
-			i(206823),	-- Jingoist's Cord
-			i(206824),	-- Jingoist's Epaulettes
-			i(206825),	-- Jingoist's Leggings
-			i(206826),	-- Jingoist's Hood
-			i(206827),	-- Jingoist's Mitts
-			i(206828),	-- Jingoist's Treads
-			i(206829),	-- Jingoist's Shroud
-			i(206831),	-- Jingoist's Cloak
-			i(206832),	-- Jingoist's Boots
-			i(206833),	-- Jingoist's Gloves
-			i(206834),	-- Jingoist's Headcover
-			i(206835),	-- Jingoist's Pantaloon
-			i(206836),	-- Jingoist's Spaulders
-			i(206837),	-- Jingoist's Belt
-			i(206838),	-- Jingoist's Bracers
-			i(206839),	-- Jingoist's Cuirass
-			i(206860),	-- Jingoist's Chainmail
-			i(206861),	-- Jingoist's Bonds
-			i(206862),	-- Jingoist's Clasp
-			i(206863),	-- Jingoist's Mantle
-			i(206864),	-- Jingoist's Legguards
-			i(206865),	-- Jingoist's Casque
-			i(206866),	-- Jingoist's Grips
-			i(206867),	-- Jingoist's Footpads
-			i(206868),	-- Jingoist's Drape
-			i(206869),	-- Jingoist's Vestment
-			i(206870),	-- Jingoist's Cape
-			i(206871),	-- Jingoist's Warboots
-			i(206872),	-- Jingoist's Gauntlets
-			i(206873),	-- Jingoist's Greathelm
-			i(206874),	-- Jingoist's Legplates
-			i(206875),	-- Jingoist's Pauldrons
-			i(206876),	-- Jingoist's Girdle
-			i(206877),	-- Jingoist's Vambraces
-			i(206878),	-- Jingoist's Breastplate
-			i(206897),	-- Lifegiver's Drape
-			i(206898),	-- Lifegiver's Sollerets
-			i(206899),	-- Lifegiver's Grips
-			i(206900),	-- Lifegiver's Vision
-			i(206901),	-- Lifegiver's Legwraps
-			i(206902),	-- Lifegiver's Robe
-			i(206903),	-- Lifegiver's Spaulders
-			i(206904),	-- Lifegiver's Girdle
-			i(206905),	-- Lifegiver's Bindings
-			i(206906),	-- Lifegiver's Jerkin
-			i(206912),	-- Chausses of Discipline
-			i(206917),	-- Valhalas Cape
-			i(206918),	-- Valhalas Sabatons
-			i(206919),	-- Valhalas Handguards
-			i(206920),	-- Valhalas Helm
-			i(206921),	-- Valhalas Greaves
-			i(206922),	-- Valhalas Pauldrons
-			i(206923),	-- Valhalas Waistguard
-			i(206924),	-- Valhalas Bracelets
-			i(206925),	-- Valhalas Chestguard
-			i(206956),	-- Paracausal Fragment of Sulfuras
 			i(206957),	-- Boffins
-			i(206958),	-- Paracausal Fragment of Val'Anyr
 			i(206962),	-- Watcher's Log
-			i(206964),	-- Paracausal Fragment of Doomhammer
 			i(206971),	-- Zhusadormu
-			i(206972),	-- Paracausal Fragment of Azzinoth
 			i(206973),	-- Pallibrius
 			i(206974),	-- Zalethgos
 			i(206978),	-- Somnius
 			i(206979),	-- Posidriss
-			i(206983),	-- Paracausal Fragment of Frostmourn
 			i(206984),	-- Blood-Soaked Book
 			i(206993),	-- Investi-gator's Pocketwatch
 			i(206997),	-- Gilded Sunglasses
@@ -856,23 +617,15 @@ root(ROOTS.Unsorted, {
 			i(207003),	-- Gilded Vase
 			i(16222),	-- Formula: Enchant Shield - Vitality
 			i(206749),	-- Oil-Soaked Log Book
-			i(206958),	-- Paracausal Fragment of Val'anyr
-			i(206983),	-- Paracausal Fragment of Frostmourne
 			i(206998),	-- Amber Sword
-			i(207005),	-- Paracausal Fragment of Thunderfin, Humid Blade of the Tideseeker
 			i(207008),	-- A Fish
 			i(207011),	-- Warblades of the Hakkari, Reborn
-			i(207014),	-- Jingoist's Slicer
-			i(207015),	-- Warmonger's Ripper
 			i(207016),	-- Time Mender's Tabard
 			i(207017),	-- Time Mender's Cape
 			i(207018),	-- Time Mender's Spaulders
 			i(207019),	-- Princess Vorquistrasza
 			i(207020),	-- Ensemble: Time Mender's Vestments
-			i(207024),	-- Paracausal Fragment of Shalamayne
-			i(207027),	-- Greater Encapsulated Destiny
 			i(207029),	-- Scarlet Zealot's Heater Shield
-			i(207030),	-- Dilated Time Capsule
 			i(207031),	-- Bomb Lobber
 			i(207032),	-- Shrapnel Spreader
 			i(207033),	-- Flamethrower
@@ -883,45 +636,14 @@ root(ROOTS.Unsorted, {
 			i(207038),	-- Empty Gun Rack
 			i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
 			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
-			i(207046),	-- Ensemble: Valhalas Ceremonial Armor
-			i(207047),	-- Ensemble: Hauberk of Discipline
-			i(207048),	-- Ensemble: Overgrown Garms
-			i(207049),	-- Ensemble: Decorous Garments
-			i(207050),	-- Warmonger's Plate Gear Bag
-			i(207051),	-- Warmonger's Plate Equipment Bag
-			i(207052),	-- Jingoist's Plate Equipment Bag
-			i(207053),	-- Jingoist's Plate Gear Bag
 			i(207057),	-- Gift of the White War Wolf
 			i(207058),	-- Fractured Shin
 			i(207059),	-- Skeletal Knight's Blade
 			i(207060),	-- Skeletal Knight's Buckler
-			i(207063),	-- Jingoist's Mail Equipment Bag
-			i(207064),	-- Jingoist's Mail Gear Bag
-			i(207065),	-- Warmonger's Mail Gear Bag
-			i(207066),	-- Warmonger's Mail Equipment Bag
-			i(207067),	-- Jingoist's Leather Gear Bag
-			i(207068),	-- Jingoist's Leather Equipment Bag
-			i(207069),	-- Warmonger's Leather Equipment Bag
-			i(207070),	-- Warmonger's Leather Gear Bag
-			i(207071),	-- Jingoist's Cloth Gear Bag
-			i(207072),	-- Jingoist's Cloth Equipment Bag
-			i(207073),	-- Warmonger's Cloth Equipment Bag
-			i(207074),	-- Warmonger's Cloth Gear Bag
-			i(207075),	-- Jingoist's Plate Armor Bag
-			i(207076),	-- Warmonger's Plate Armor Bag
-			i(207077),	-- Warmonger's Mail Armor Bag
-			i(207078),	-- Jingoist's Mail Armor Bag
-			i(207079),	-- Warmonger's Leather Armor Bag
-			i(207080),	-- Jingoist's Leather Armor Bag
-			i(207081),	-- Warmonger's Cloth Armor Bag
-			i(207082),	-- Jingoist's Cloth Armor Bag
 			i(207083),	-- Gift of the Ravenous Black Gryphon
 			i(207088),	-- Glyph of the Shath'Yar
 			i(207091),	-- Technique: Glyph of the Shath'Yar
-			i(207093),	-- Jingoist's Mail Suit Bag
-			i(207094),	-- Warmonger's Leather Suit Bag
 			i(207096),	-- Paracausal Chest
-			i(207099),	-- Tiny Box of Tiny Rocks
 			i(207101),	-- Glyph of Banehollow's Soulstone
 			i(207102),	-- TESTING ITEM DELETE ME
 			i(207111),	-- Grimoire of the Hellfire Fel Imp
@@ -961,48 +683,11 @@ root(ROOTS.Unsorted, {
 			i(206638),	-- Azmourne's Corrupted Ashbringer
 			i(206926),	-- Keeper's Mallet
 			i(206928),	-- Attendant's Hammer
-			i(207048),	-- Ensemble: Lifegiver's Garms
 			i(207581),	-- Mirror of Fractured Tomorrows
 			i(207582),	-- Box of Tampered Reality
 			i(207583),	-- Box of Collapsed Reality
 			i(207584),	-- Box of Volatile Reality
 			i(207594),	-- Looter's Purse
-			i(207595),	-- Anachronistic Robes
-			i(207596),	-- Anachronistic Slippers
-			i(207597),	-- Anachronistic Mitts
-			i(207598),	-- Anachronistic Hood
-			i(207599),	-- Anachronistic Breeches
-			i(207600),	-- Anachronistic Mantle
-			i(207601),	-- Anachronistic Sash
-			i(207602),	-- Anachronistic Bindings
-			i(207603),	-- Raiment of Discontinuity
-			i(207604),	-- Treads of Discontinuity
-			i(207605),	-- Gloves of Discontinuity
-			i(207606),	-- Mask of Discontinuity
-			i(207607),	-- Leggings of Discontinuity
-			i(207608),	-- Epaulets of Discontinuity
-			i(207609),	-- Cincture of Discontinuity
-			i(207610),	-- Wristbands of Discontinuity
-			i(207611),	-- Paradoxical Chainmail
-			i(207612),	-- Paradoxical Striders
-			i(207613),	-- Paradoxical Gauntlets
-			i(207614),	-- Paradoxical Cowl
-			i(207615),	-- Paradoxical Tassets
-			i(207616),	-- Paradoxical Spaulders
-			i(207617),	-- Paradoxical Cinch
-			i(207618),	-- Paradoxical Bracers
-			i(207619),	-- Anomalous Chestplate
-			i(207620),	-- Anomalous Stompers
-			i(207621),	-- Anomalous Crushers
-			i(207622),	-- Anomalous Greathelm
-			i(207623),	-- Anomalous Greaves
-			i(207624),	-- Anomalous Pauldrons
-			i(207625),	-- Anomalous Girdle
-			i(207626),	-- Anomalous Vambraces
-			i(207627),	-- Anachronistic Wrap
-			i(207628),	-- Anomalous Cape
-			i(207629),	-- Paradoxical Drape
-			i(207630),	-- Cloak of Discontinuity
 			i(207702),	-- Wartorn Scrap
 			i(207817),	-- Mega Dungeon Bronze Cloth Slippers
 			i(207818),	-- Mega Dungeon Bronze Plate Greaves
@@ -1085,29 +770,19 @@ root(ROOTS.Unsorted, {
 			i(207969),	-- 10.1.5 Time Rifts - Mail Infinite Sets - Capture Media
 			i(207970),	-- 10.1.5 Time Rifts - Leather Infinite Sets - Capture Media
 			i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
-			i(207976),	-- Wand of Concurrence
-			i(207977),	-- Rift Render
 			i(207978),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Shield
-			i(207979),	-- Timespan Scepter
-			i(207980),	-- Inevitable Claymore
-			i(207981),	-- Time Spliter
-			i(207982),	-- Timeless Bulwark
 			i(207983),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Offhand
 			i(207984),	-- Suffused Wand
-			i(207985),	-- Rifle In Time
 			i(207986),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Gun
 			i(207987),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Polearm - 2H AGI
-			i(207988),	-- Time Keeper's Polearm
 			i(207989),	-- Chronospire
 			i(207990),	-- Temporal Battle Staff
 			i(207991),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Warglaive
 			i(207992),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Axe - 1H AGI
-			i(207993),	-- Spacetime Cleaver
 			i(207994),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Sword - 1H AGI
 			i(207995),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H STR
 			i(207996),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Dagger - 1H AGI
 			i(207997),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Dagger - 1H INT
-			i(207998),	-- Concussive Antecedent
 			i(207999),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Mace - 1H INT
 			i(208000),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Mace - 1H AGI
 			i(208001),	-- Suffused Cudgel
@@ -1124,78 +799,36 @@ root(ROOTS.Unsorted, {
 			i(208029),	-- Scareloc Parts
 			i(208030),	-- Advanced Titan Gizmo
 			i(208031),	-- Convenient Crate
-			i(208042),	-- Cuts In Time
-			i(208043),	-- Precedented Mallet
-			i(190077),	-- Scarlet Zealot's Heater Shield
-			i(190169),	-- Quawks
-			i(190427),	-- Scarlet Zealot's Cloak
-			i(190431),	-- Veteran Grunt's Chopper
-			i(190433),	-- Shifty Merchant's Tunic
-			i(190443),	-- Pustulent Demonheart Fetish
-			i(190444),	-- Scarlet Zealot's Cassock
-			i(190447),	-- Soulburner Bardiche
-			i(190690),	-- Flame-Forged Fel Fang
-			i(190796),	-- Ensemble: Slumbering Caldera Regalia
-			i(190817),	-- Sentinel's Tower Shield
-			i(190821),	-- Sunspire Battle Staff
-			i(190869),	-- Emberstone Dress
-			i(201230),	-- Ensemble: Helarjar Berserker Warplate
-			i(202174),	-- Wanderer's Carrot Scarf
-			i(202175),	-- Wanderer's Carrot Cloak
-			i(202176),	-- Vagabond's Carrot Hood
-			i(202177),	-- Vagabond's Carrot Cape
-			i(202178),	-- Ensemble: Vagabond's Carrot Threads
-			i(202179),	-- Ensemble: Wanderer's Carrot Trappings
-			i(204686),	-- Titan's Containment Device
 			i(206161),	-- Time-Displaced Toy
 			i(206926),	-- Off-Sync Off-Hammer
 			i(206927),	-- Depleted Chronoforged Mallet
 			i(206928),	-- Echoing Temporadic Gavel
-			i(206976),	-- Royal Swarmer's Reins
 			i(207016),	-- Rift-Mender's Tabard
 			i(207017),	-- Rift-Mender's Cape
 			i(207018),	-- Rift-Mender's Spaulders
 			i(207020),	-- Ensemble: Rift-Mender's Vestments
 			i(207558),	-- Smoked Fireshooter
 			i(207570),	-- Ancient Formula: Smoked Fireshooter
-			i(207976),	-- Chroniton Wand
-			i(207981),	-- Time Splitter
 			i(207984),	-- Chroniton Wand
-			i(207985),	-- Ever-Repeating Rifle
 			i(207996),	-- Nick of Time
-			i(207998),	-- Hoursteel Mace
 			i(208001),	-- Timewalker's Cudgel
-			i(208008),	-- Doomrubble
-			i(208009),	-- Gill'dan
-			i(208011),	-- Obsidian Warwhelp
-			i(208012),	-- Briarhorn Hatchling
-			i(208042),	-- Edge of Tomorrow
-			i(208043),	-- Bronzegift Mallet
 			i(208048),	-- Ritual of the Voidmaw Felhunter
 			i(208050),	-- Grimoire of the Xorothian Felhunter
 			i(208051),	-- Grimoire of the Antoran Felhunter
 			i(208052),	-- Grimoire of the Voracious Felmaw
 			i(208053),	-- Time Inert Souvenir
-			i(208057),	-- Smoldering Banner of the Aspects
-			i(208058),	-- Minute Glass
 			i(208061),	-- Quantum Headpiece
 			i(208062),	-- Quantum Shoulders
 			i(208063),	-- Quantum Gloves
 			i(208064),	-- Quantum Chestpiece
 			i(208065),	-- Quantum Legs
 			i(208068),	-- Rotten Delicious
-			i(208090),	-- Contained Paracausality
 			i(208091),	-- Cache of Timewarped Treasures
 			i(208094),	-- Cache of Timewarped Treasures
 			i(208095),	-- Cache of Timewarped Treasures
 			i(208096),	-- Familiar Journal
 			i(208097),	-- Flamethrower
 			i(208100),	-- Seashellamayne the Shattered
-			i(208102),	-- Cliffside Wylderdrake: Infinite Scales
-			i(208103),	-- Highland Drake: Infinite Scales
-			i(208104),	-- Renewed Proto-Drake: Infinite Scales
-			i(208105),	-- Windborne Velocidrake: Infinite Scales
-			i(208106),	-- Winding Slitherdrake: Infinite Scales
 			i(208108),	-- Madam Shadow's Old Grimoire
 			i(208109),	-- Quantum Sword
 			i(208110),	-- Quantum Mace
@@ -1214,15 +847,8 @@ root(ROOTS.Unsorted, {
 			i(208123),	-- Quantum Wand
 			i(208125),	-- Quantum Focus
 			i(208126),	-- Quantum Shield
-			i(208132),	-- Stormwind Insignia
-			i(208133),	-- Orgrimmar Insignia
-			i(208134),	-- Rustbolt Resistance Insignia
-			i(208138),	-- N'Ruby
 			i(208147),	-- Yellow Tweed Cap
 			i(208148),	-- Burgandy Cap
-			i(208149),	-- Brown Tweed Cap
-			i(208150),	-- Blue Tweed Cap
-			i(208152),	-- Pattie's Cap
 			i(206604),	-- Lamented Crusader's Helmet
 			i(206605),	-- Lamented Crusader's Spaulders
 			i(206606),	-- Lamented Crusader's Chestpiece
@@ -1265,7 +891,6 @@ root(ROOTS.Unsorted, {
 			i(206644),	-- Desecrated Plate Boots
 			i(206787),	-- Bucket Kickers
 			i(206805),	-- Ancient Plans: Bucket Kickers
-			i(207002),	-- Encapsulated Destiny
 			i(207817),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Feet
 			i(207819),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Mail Legs
 			i(207820),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Leather Legs
@@ -1300,13 +925,10 @@ root(ROOTS.Unsorted, {
 			i(207951),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Plate Hands
 			i(207994),	-- Quel'Zaram, High Blade of the Lion
 			i(207995),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H AGI
-			i(208010),	-- Jeepers
-			i(208013),	-- Killbot 9000
 			i(208148),	-- Burgundy Cap
 			i(208168),	-- Black Blade of K'tanth
 			i(208170),	-- Runeaxe of the Last Resistance
 			i(208172),	-- Bloodstained Runecrook
-			i(208186),	-- Boffins
 			i(208191),	-- Time-Lost Fragment
 			i(208193),	-- Gorehowl, Might of the Warchief
 			i(208216),	-- Reins of the Quantum Courser
@@ -1737,28 +1359,6 @@ root(ROOTS.Unsorted, {
 				q(75388),	-- The Azure Vaults
 				q(75391),	--
 			}),
-			i(190077),	-- Scarlet Zealot's Heater Shield
-			i(190169),	-- Quawks
-			i(190427),	-- Scarlet Zealot's Cloak
-			i(190431),	-- Veteran Grunt's Chopper
-			i(190433),	-- Shifty Merchant's Tunic
-			i(190443),	-- Pustulent Demonheart Fetish
-			i(190444),	-- Scarlet Zealot's Cassock
-			i(190447),	-- Soulburner Bardiche
-			i(190690),	-- Flame-Forged Fel Fang
-			i(190796),	-- Ensemble: Slumbering Caldera Regalia
-			i(190817),	-- Sentinel's Tower Shield
-			i(190821),	-- Sunspire Battle Staff
-			i(190869),	-- Emberstone Dress
-			i(201230),	-- Ensemble: Helarjar Berserker Warplate
-			i(202174),	-- Wanderer's Carrot Scarf
-			i(202175),	-- Wanderer's Carrot Cloak
-			i(202176),	-- Vagabond's Carrot Hood
-			i(202177),	-- Vagabond's Carrot Cape
-			i(202178),	-- Ensemble: Vagabond's Carrot Threads
-			i(202179),	-- Ensemble: Wanderer's Carrot Trappings
-			i(204686),	-- Titan's Containment Device
-			i(206976),	-- Royal Swarmer's Reins
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 			n(ARMOR, {

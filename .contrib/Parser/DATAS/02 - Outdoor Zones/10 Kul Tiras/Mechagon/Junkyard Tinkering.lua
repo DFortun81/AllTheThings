@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					i(168047),	-- Rustbolt Kegerator
 					i(169869),	-- Rustbolt Pocket Turret
 					i(168057),	-- Rustbolt Requisitions
-					i(168497),	-- Rustbolt Resistance Insignia
+					i(168497),	-- Rustbolt Resistance Insignia [BOA]
 					i(169610),	-- S.P.A.R.E. Crate
 					i(169882),	-- Sapphronetta Flivvers Action Figure
 					i(168052),	-- Scrap Grenade
