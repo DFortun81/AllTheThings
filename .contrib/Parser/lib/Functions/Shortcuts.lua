@@ -465,6 +465,12 @@ moh = function(cost, item)								-- Assign a Mark of Honor cost to an item with
 	-- #endif
 	return item;
 end
+siderealessence = function(cost, item)					-- Assign a Sidereal Essence (Defense Protocol Beta - Wrath Classic) cost to an item with proper timeline requirements.
+	-- #if ANYCLASSIC
+	applycost(item, { "c", SIDEREAL_ESSENCE, cost });
+	-- #endif
+	return item;
+end
 vicioussaddle = function(item)							-- Assign a Vicious Saddle cost to an item with proper timeline requirements.
 	-- #if AFTER 5.4.0.17153
 	applycost(item, { "i", 103533, 1 });	-- Vicious Saddle

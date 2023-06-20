@@ -89,7 +89,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60590, { -- The Prophet Tharon'ja
 						["_encounter"] = { 591, HEROIC_DUNGEON },
 						["groups"] = {
-							currency(2589),	-- Sidereal Essence
+							currency(SIDEREAL_ESSENCE),
 						},
 					}),
 				})),

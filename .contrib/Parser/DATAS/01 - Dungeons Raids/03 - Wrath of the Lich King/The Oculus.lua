@@ -99,7 +99,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60607, { -- Ley-Guardian Eregos
 						["_encounter"] = { 625, HEROIC_DUNGEON },
 						["groups"] = {
-							currency(2589),	-- Sidereal Essence
+							currency(SIDEREAL_ESSENCE),
 						},
 					}),
 				})),

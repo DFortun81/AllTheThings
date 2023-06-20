@@ -88,7 +88,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60573, { -- Ingvar the Plunderer
 						["_encounter"] = { 640, HEROIC_DUNGEON },
 						["groups"] = {
-							currency(2589),	-- Sidereal Essence
+							currency(SIDEREAL_ESSENCE),
 						},
 					}),
 				})),

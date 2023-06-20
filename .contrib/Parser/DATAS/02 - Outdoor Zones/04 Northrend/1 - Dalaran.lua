@@ -5511,6 +5511,77 @@ root(ROOTS.Zones, {
 							i(44693),	-- Wound Dressing
 						},
 					}),
+					-- #if ANYCLASSIC
+					applyclassicphase(WRATH_PHASE_THREE, n(207128, {	-- Animated Constellation <Sidereal Essence Exchange>
+						["coords"] = {
+							{ 38.0, 56.6, NORTHREND_DALARAN },
+							{ 66.4, 24.6, NORTHREND_DALARAN },
+						},
+						["groups"] = {
+							siderealessence(3, i(47556)),	-- Crusader Orb
+							siderealessence(38, i(45868)),	-- Aesir's Edge
+							siderealessence(38, i(46035)),	-- Aesuga, Hand of the Ardent Champion
+							siderealessence(19, i(46068)),	-- Amice of Inconceivable Horror
+							siderealessence(19, i(46048)),	-- Band of Lights
+							siderealessence(19, i(45455)),	-- Belt of the Crystal Tree
+							siderealessence(15, i(45888)),	-- Bitter Cold Armguards
+							siderealessence(25, i(45867)),	-- Breastplate of the Stoneshaper
+							siderealessence(32, i(46039)),	-- Breastplate of the Timeless
+							siderealessence(25, i(46097)),	-- Caress of Insanity
+							siderealessence(25, i(45930)),	-- Combatant's Bootblade
+							siderealessence(24, i(46038)),	-- Dark Matter
+							siderealessence(15, i(46032)),	-- Drape of the Faceless General
+							siderealessence(19, i(46042)),	-- Drape of the Messenger
+							siderealessence(15, i(45946)),	-- Fire Orchid Signet
+							siderealessence(15, i(45869)),	-- Fluxing Energy Coils
+							siderealessence(25, i(45982)),	-- Fused Alloy Legplates
+							siderealessence(38, i(45990)),	-- Fusion Blade
+							siderealessence(19, i(45928)),	-- Gauntlets of the Thunder God
+							siderealessence(25, i(45295)),	-- Gilded Steel Legplates
+							siderealessence(24, i(46043)),	-- Gloves of the Endless Dark
+							siderealessence(19, i(45943)),	-- Gloves of Whispering Winds
+							siderealessence(19, i(45988)),	-- Greaves of the Iron Army
+							siderealessence(38, i(46067)),	-- Hammer of Crushing Whispers
+							siderealessence(19, i(45293)),	-- Handguards of Potent Cures
+							siderealessence(25, i(45887)),	-- Ice Layered Barrier
+							siderealessence(38, i(45886)),	-- Icecore Staff
+							siderealessence(25, i(46034)),	-- Leggings of Profound Darkness
+							siderealessence(15, i(45456)),	-- Loop of the Agile
+							siderealessence(38, i(45870)),	-- Magnetized Projectile Emitter
+							siderealessence(19, i(45300)),	-- Mantle of Fiery Vengeance
+							siderealessence(24, i(46051)),	-- Meteorite Crystal
+							siderealessence(25, i(45993)),	-- Mimiron's Flight Goggles
+							siderealessence(19, i(45931)),	-- Mjolnir Runestone
+							siderealessence(19, i(46046)),	-- Nebula Band
+							siderealessence(24, i(46044)),	-- Observer's Mantle
+							siderealessence(15, i(45933)),	-- Pendant of the Shallow Grave
+							siderealessence(19, i(46047)),	-- Pendant of the Somber Witness
+							siderealessence(25, i(45448)),	-- Perilous Bite
+							siderealessence(15, i(45294)),	-- Petrified Ivy Sprig
+							siderealessence(24, i(46045)),	-- Pulsar Gloves
+							siderealessence(15, i(45871)),	-- Seal of Ulduar
+							siderealessence(15, i(45945)),	-- Seed of Budding Carnage
+							siderealessence(25, i(45947)),	-- Serilas, Blood Blade of Invar One-Arm
+							siderealessence(15, i(45297)),	-- Shimmering Seal
+							siderealessence(25, i(45876)),	-- Shiver
+							siderealessence(24, i(46037)),	-- Shoulderplates of the Celestial Watch
+							siderealessence(19, i(45929)),	-- Sif's Remembrance
+							siderealessence(15, i(46096)),	-- Signet of Soft Lament
+							siderealessence(19, i(46095)),	-- Soul-Devouring Cinch
+							siderealessence(24, i(46041)),	-- Starfall Girdle
+							siderealessence(24, i(46050)),	-- Starlight Treads
+							siderealessence(19, i(46040)),	-- Strength of the Heavens
+							siderealessence(19, i(45989)),	-- Tempered Mercury Greaves
+							siderealessence(25, i(45877)),	-- The Boreal Guard
+							siderealessence(25, i(45449)),	-- The Masticator
+							siderealessence(38, i(46033)),	-- Tortured Earth
+							siderealessence(15, i(45296)),	-- Twirling Blades
+							siderealessence(25, i(46036)),	-- Void Sabre
+							siderealessence(15, i(45447)),	-- Watchful Eye of Fate
+							siderealessence(32, i(46049)),	-- Zodiac Leggings
+						},
+					})),
+					-- #endif
 					n(28990, {	-- Anthony Durain <Shield Merchant>
 						["coord"] = { 46.8, 27.6, NORTHREND_DALARAN },
 						["groups"] = {

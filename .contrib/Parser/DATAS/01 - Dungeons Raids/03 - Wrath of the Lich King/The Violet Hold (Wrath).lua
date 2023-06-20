@@ -413,7 +413,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(40621),	-- Leggings of the Lost Vanquisher
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, ach(18595, {	-- Defense Protocol Beta: The Violet Hold
-								currency(2589),	-- Sidereal Essence
+								currency(SIDEREAL_ESSENCE),
 							})),
 							-- #endif
 							ach(494),	-- Heroic: The Violet Hold
