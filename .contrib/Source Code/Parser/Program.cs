@@ -92,7 +92,7 @@ namespace ATT
                     Console.ReadLine();
                     return;
                 }
-                luaFiles.Sort();
+                luaFiles.Sort(StringComparer.InvariantCulture);
                 NLua.Lua lua = new NLua.Lua();
                 lua.State.Encoding = Encoding.UTF8;
                 // link the Lua 'print' function to instead perform a Trace print
@@ -436,7 +436,9 @@ namespace ATT
             if (Directory.Exists(filename))
             {
                 int fileCount = 0;
-                foreach (var file in Directory.GetFiles(filename, "*.lua", SearchOption.AllDirectories))
+                var files = Directory.GetFiles(filename, "*.lua", SearchOption.AllDirectories).ToList();
+                files.Sort(StringComparer.InvariantCulture);
+                foreach (var file in files)
                 {
                     if (fileCount > 0) builder.AppendLine();
                     builder.Append("-- ").Append(shortname).Append(file.Replace(filename, "")).AppendLine();
