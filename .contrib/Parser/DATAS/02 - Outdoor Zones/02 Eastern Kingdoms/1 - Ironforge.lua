@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER 5.0.1.15544
 			petbattle(filter(BATTLE_PETS, {
-				pet(404, {	-- Long-tailed Mole
+				pet(404, {	-- Long-tailed Mole (PET!)
 					["timeline"] = { "added 5.0.1.15544" },
 				}),
 			})),

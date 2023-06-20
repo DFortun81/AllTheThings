@@ -2627,9 +2627,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						12387,	-- Large Vile Slime
 						1806,	-- Vile Slime
 					},
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling (PET!)
-					},
+					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				i(13357, {	-- Osseous Agitator
 					["description"] = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",

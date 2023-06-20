@@ -277,13 +277,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
+					441,	-- Alpine Hare (PET!)
 					633,	-- Mountain Skunk (PET!)
 					472,	-- Rabid Nut Varmint 5000 (PET!)
 					471,	-- Robo-Chick (PET!)
 				}},
 				["groups"] = {
 					pet(487),	-- Alpine Chipmunk (PET!)
-					pet(441),	-- Alpine Hare (PET!)
 					pet(1163, {	-- Anodized Robo Cub (PET!)
 						["description"] = "Found in Everlook.",
 						["timeline"] = { ADDED_5_1_0 },

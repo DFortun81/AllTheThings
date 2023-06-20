@@ -1200,6 +1200,7 @@ root(ROOTS.Zones, {
 							{ 75.2, 38.6, ZULDRAK },
 						},
 						["cr"] = 29334,	-- Gundrak Raptor
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(41120, {	-- Plans: Reinforced Cobalt Legplates (RECIPE!)
 						["coords"] = {

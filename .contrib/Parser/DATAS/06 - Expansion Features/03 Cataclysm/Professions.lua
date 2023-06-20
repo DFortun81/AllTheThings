@@ -165,9 +165,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			currency(384, {	-- Dwarf
 				-- Solves
 				i(64373),	-- Chalice of the Mountain Kings (TOY!)
-				i(64372, {	-- Clockwork Gnome (PET!)
-					["timeline"] = { "added 4.0.3.13287" },
-				}),
+				i(64372),	-- Clockwork Gnome (PET!)
 				i(64489),	-- Staff of Sorcerer-Thane Thaurissan
 				i(64488),	-- The Innkeeper's Daughter (TOY!)
 				i(63113),	-- Belt Buckle with Anvilmar Crest
@@ -202,9 +200,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				-- Solves
 				i(69776),	-- Ancient Amber (TOY!)
 				i(69764),	-- Extinct Turtle Shell
-				i(60955, {	-- Fossilized Hatchling (PET!)
-					["timeline"] = { "added 4.0.3.13287" },
-				}),
+				i(60955),	-- Fossilized Hatchling (PET!)
 				i(60954),	-- Fossilized Raptor (MOUNT!)
 				i(69821, {	-- Pterrordax Hatchling (PET!)
 					["timeline"] = { "added 4.1.0.13793" },
@@ -280,9 +276,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				i(64657, bubbleDownSelf({["requireSkill"] = ALCHEMY},{	-- Canopic Jar
 					i(67538),	-- Recipe: Vial of the Sands
 				})),
-				i(60847, {	-- Crawling Claw (PET!)
-					["timeline"] = { "added 4.0.3.13287" },
-				}),
+				i(60847),	-- Crawling Claw (PET!)
 				i(64881),	-- Pendant of the Scarab Storm (TOY!)
 				i(64904),	-- Ring of the Boy Emperor
 				i(64885),	-- Scimitar of the Sirocco

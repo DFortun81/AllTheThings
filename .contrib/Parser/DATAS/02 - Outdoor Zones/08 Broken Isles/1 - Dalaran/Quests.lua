@@ -1179,12 +1179,6 @@ root(ROOTS.Zones, {
 					["coord"] = { 28.4, 48.3, LEGION_DALARAN },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				}),
-				q(39861, {	-- Tying Up Loose Ends
-					["sourceQuests"] = { 39731 },	-- The Tranquil Forest
-					["coord"] = { 70.1, 43.7, LEGION_DALARAN },
-					["provider"] = { "n", 91172 },	-- Archmage Khadgar
-					["isBreadcrumb"] = true,
-				}),
 				q(47057, {	-- Unholy: The Folly of Levia Laurence
 					["sourceQuests"] = {
 						44821,	-- In Dire Need

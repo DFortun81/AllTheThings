@@ -20,7 +20,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					},
 				}),
 				petbattle(filter(BATTLE_PETS, {
-					p(479),	-- Elfin Rabbit
+					["sym"] = {{"select","speciesID",
+						479,	-- Elfin Rabbit (PET!)
+					}},
 				})),
 				n(FLIGHT_PATHS, {
 					fp(1815, {	-- The Dreamgrove, Val'sharah

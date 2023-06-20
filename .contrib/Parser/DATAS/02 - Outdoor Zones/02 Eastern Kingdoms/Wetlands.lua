@@ -1586,7 +1586,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { "added 3.3.0.10958" },
 					["groups"] = {
-						i(48124, {	-- Razormaw Hatchling Pet
+						i(48124, {	-- Razormaw Hatchling (PET!)
 							["timeline"] = { "added 3.2.0.10072" },
 						}),
 					},

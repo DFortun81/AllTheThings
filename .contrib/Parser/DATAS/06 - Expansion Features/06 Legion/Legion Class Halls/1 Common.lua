@@ -359,10 +359,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					un(REMOVED_FROM_GAME, q(44263, {	-- The Arcway: Into the Arcway (Mythic)
 						un(REMOVED_FROM_GAME, i(141182)),	-- Unmarked Suramar Vault Crate (Mythic)
 					})),
-					q(39731, {	-- The Tranquil Forest
-						["lvl"] = 98,
-						["isBreadcrumb"] = true,
-					}),
 					un(REMOVED_FROM_GAME, q(43556, {	-- Vault of the Wardens: Into the Vault of the Wardens (Normal)
 						un(REMOVED_FROM_GAME, i(141163)),	-- Bag of Confiscated Materials (Normal)
 					})),

@@ -1745,8 +1745,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(29960, {	-- Firefly (PET!)
-						["cr"] = 20197,	-- Bogflare Needler
-						["description"] = "This pet is an extremely rare drop."
+						["description"] = "This pet is an extremely rare drop.",
+						["crs"] = { 20197 },	-- Bogflare Needler
+						["timeline"] = { ADDED_2_1_0 },
 					}),
 					i(24449, {	-- Fertile Spore
 						["crs"] = {

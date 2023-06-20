@@ -1847,9 +1847,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6559,	-- Glutinous Ooze
 						6557,	-- Primal Ooze
 					},
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling (PET!)
-					},
+					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				-- #if BEFORE 4.0.3
 				i(15772, {	-- Pattern: Devilsaur Leggings

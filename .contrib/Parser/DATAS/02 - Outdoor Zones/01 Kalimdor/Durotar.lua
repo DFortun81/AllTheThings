@@ -1570,13 +1570,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				pet(635),	-- Adder
-				pet(468),	-- Creepy Crawly
-				pet(467),	-- Dung Beetle
-				pet(448),	-- Hare
-				pet(466),	-- Spiny Lizard
-				pet(420),	-- Toad
-				pet(418),	-- Water Snake
+				pet(635),	-- Adder (PET!)
+				pet(468),	-- Creepy Crawly (PET!)
+				pet(467),	-- Dung Beetle (PET!)
+				pet(448),	-- Hare (PET!)
+				pet(466),	-- Spiny Lizard (PET!)
+				pet(420),	-- Toad (PET!)
+				pet(418),	-- Water Snake (PET!)
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

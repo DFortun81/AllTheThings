@@ -186,7 +186,7 @@ WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 
 root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, {
 	-- Stuff that's completely gone.
-	n(WOW_ANNIVERSARY_FOUR, bubbleDownSelf({ ["timeline"] = { "added 3.0.2", "removed 3.1.0" } }, {
+	n(WOW_ANNIVERSARY_FOUR, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, "removed 3.1.0" } }, {
 		classicAch(2398),	-- 4th Anniversary
 		i(44819),	-- Baby Blizzard Bear (PET!)
 	})),

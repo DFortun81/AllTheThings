@@ -186,15 +186,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					393,	-- Cockroach (PET!)
+					647,	-- Grizzly Squirrel (PET!)
 					648,	-- Huge Toad (PET!)
 					414,	-- Scorpid (PET!)
 					388,	-- Shore Crab (PET!)
 					418,	-- Water Snake (PET!)
 				}},
 				["groups"] = {
-					p(647, {	-- Grizzly Squirrel
-						["crs"] = { 62818 },
-					}),
 					pet(550),	-- Highlands Mouse (PET!)
 					pet(823),	-- Highlands Skunk (PET!)
 					pet(645, {	-- Highlands Turkey (PET!)

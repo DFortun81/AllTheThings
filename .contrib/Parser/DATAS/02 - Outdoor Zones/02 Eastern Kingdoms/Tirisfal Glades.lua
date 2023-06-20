@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					-- #if AFTER MOP
 					petbattle(filter(BATTLE_PETS, {
-						pet(417, {	-- Rat
+						pet(417, {	-- Rat (PET!)
 							["description"] = "Found in MANY zones on Azeroth and Draenor, this place just seems to have the highest concentration of them."
 						}),
 						pet(458, {	-- Lost of Lordaeron (PET!)

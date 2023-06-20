@@ -153,22 +153,22 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				p(75, {	-- Black Kingsnake (PET!)
+				pet(75, {	-- Black Kingsnake (PET!)
 					["races"] = { ORC, TROLL },
 				}),
-				p(70, {	-- Brown Praire Dog (PET!)
+				pet(70, {	-- Brown Praire Dog (PET!)
 					["races"] = { TAUREN },
 				}),
-				p(142, {	-- Golden Dragonhawk Hatchling (PET!)
+				pet(142, {	-- Golden Dragonhawk Hatchling (PET!)
 					["races"] = { BLOODELF },
 				}),
-				p(792, {	-- Jade Crane Chick (PET!)
+				pet(792, {	-- Jade Crane Chick (PET!)
 					["races"] = { PANDAREN_HORDE },
 				}),
 				pet(629, {	-- Shore Crawler (PET!)
 					["races"] = { GOBLIN },
 				}),
-				p(55, {	-- Undercity Cockroach (PET!)
+				pet(55, {	-- Undercity Cockroach (PET!)
 					["races"] = { UNDEAD },
 				}),
 			},

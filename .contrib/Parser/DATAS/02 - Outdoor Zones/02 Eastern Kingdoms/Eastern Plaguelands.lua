@@ -695,9 +695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								8606,	-- Living Decay
 								8607,	-- Rotting Sludge
 							},
-							["groups"] = {
-								i(20769),	-- Disgusting Oozeling (PET!)
-							},
+							["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 						}),
 						-- #endif
 						i(39202, { -- Rusted Pitchfork

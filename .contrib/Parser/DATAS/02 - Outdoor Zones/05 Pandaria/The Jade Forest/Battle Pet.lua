@@ -9,7 +9,6 @@ root(ROOTS.Zones, {
 				["sym"] = {{"select","speciesID",
 					711,	-- Sifang Otter (PET!)
 					712,	-- Sifang Otter Pup (PET!)
-					568,	-- Silkbead Snail (PET!)
 					723,	-- Spiny Terrapin (PET!)
 				}},
 				["groups"] = {
@@ -27,6 +26,7 @@ root(ROOTS.Zones, {
 					pet(566),	-- Mirror Strider (PET!)
 					pet(573),	-- Sandy Petrel (PET!)
 					pet(754),	-- Shrine Fly (PET!)
+					pet(568),	-- Silkbead Snail (PET!)
 					pet(572, {	-- Spirebound Crab (PET!)
 						["coord"] = { 69.2, 30.0, THE_JADE_FOREST },
 					}),

@@ -26,12 +26,13 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",
-						378,	-- Rabbit
-						379,	-- Squirrel
-						1238,	-- Unborn Val'kyr
+						385,	-- Mouse (PET!)
+						378,	-- Rabbit (PET!)
+						379,	-- Squirrel (PET!)
+						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["groups"] = {
-						pet(385),	-- Mouse
+
 					},
 				})),
 				-- #endif

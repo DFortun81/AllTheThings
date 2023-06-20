@@ -1486,7 +1486,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(REWARDS, {
-					i(35348, {	-- Bag of Fishing Treasures
+					i(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "This bag is exclusive to the Crocolisk in the City Daily Quest.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -1501,8 +1501,8 @@ root(ROOTS.Zones, {
 							i(33820),	-- Weather-Beaten Fishing Hat
 							i(34109),	-- Weather-Beaten Journal
 						},
-					}),
-					i(34863, {	-- Bag of Fishing Treasures
+					})),
+					i(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "Shared reward bag for all the non-Croc dailies.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -1515,7 +1515,7 @@ root(ROOTS.Zones, {
 							i(33820),	-- Weather-Beaten Fishing Hat
 							i(34109),	-- Weather-Beaten Journal
 						},
-					}),
+					})),
 				}),
 				n(VENDORS, {
 					n(18962, {	-- Bar Talet
@@ -1533,7 +1533,9 @@ root(ROOTS.Zones, {
 							i(32771),	-- Airman's Ribbon Gallantry
 							i(32319),	-- Blue Riding Nether Ray (MOUNT!)
 							i(32314),	-- Green Riding Nether Ray (MOUNT!)
-							i(38628),	-- Nether Ray Fry (PET!)
+							i(38628, {	-- Nether Ray Fry (PET!)
+								["timeline"] = { ADDED_2_4_2 },
+							}),
 							i(32316),	-- Purple Riding Nether Ray (MOUNT!)
 							i(32317),	-- Red Riding Nether Ray (MOUNT!)
 							i(32318),	-- Silver Riding Nether Ray (MOUNT!)

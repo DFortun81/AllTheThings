@@ -2853,11 +2853,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					484,	-- Desert Spider (PET!)
-					430,	-- Gold Beetle (PET!)
 					431,	-- Rattlesnake (PET!)
 					511,	-- Sidewinder (PET!)
 				}},
 				["groups"] = {
+					pet(430),	-- Gold Beetle (PET!)
 					pet(491, {	-- Sand Kitten (PET!)
 						["description"] = "This pet has very few spawn points and may be easier to find as a second pet, but is sometimes around Gadgetzan. 'Rare' kittens are not easy to come across.",
 					}),

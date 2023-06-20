@@ -24,7 +24,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 		}),
 		ach(556, {	-- Epic
-			["timeline"] = { ADDED_3_0_1, REMOVED_4_0_3_LAUNCH },
+			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
 		}),
 		------ Surperior ------
 		ach(14796, {	-- Superior [Shadowlands]
@@ -46,7 +46,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 		}),
 		ach(557, {	-- Superior
-			["timeline"] = { ADDED_3_0_1, REMOVED_4_0_3_LAUNCH },
+			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
 		}),
 
 

@@ -901,7 +901,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.2, 58.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(10394),	-- Prairie Dog Whistle (PET!)
+						i(10394),	-- Brown Prairie Dog (PET!)
 					},
 				}),
 				n(8358, {	-- Hewa <Cloth Armor Merchant>

@@ -208,19 +208,23 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					pet(641),	-- Arctic Hare (PET!)
-					pet(639),	-- Borean Marmot (PET!)
-					pet(1165, {	-- Nexus Whelpling (PET!)
-						["timeline"] = { ADDED_5_1_0 },
-					}),
-					pet(530, {	-- Oily Slimeling (PET!)
-						["description"] = "Found in the oil pools from Fizzcrank Airstrip to the Geyser Fields.",
-					}),
-					pet(388),	-- Shore Crab (PET!)
-					pet(536),	-- Tundra Penguin (PET!)
-					pet(1238, {	-- Unborn Val'kyr (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
-					}),
+					["sym"] = {{"select","speciesID",
+						388,	-- Shore Crab (PET!)
+					}},
+					["g"] = {
+						pet(641),	-- Arctic Hare (PET!)
+						pet(639),	-- Borean Marmot (PET!)
+						pet(1165, {	-- Nexus Whelpling (PET!)
+							["timeline"] = { ADDED_5_1_0 },
+						}),
+						pet(530, {	-- Oily Slimeling (PET!)
+							["description"] = "Found in the oil pools from Fizzcrank Airstrip to the Geyser Fields.",
+						}),
+						pet(536),	-- Tundra Penguin (PET!)
+						pet(1238, {	-- Unborn Val'kyr (PET!)
+							["timeline"] = { "added 5.3.0.16758" },
+						}),
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC

@@ -2775,9 +2775,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14345,	-- The Ongar
 						7093,	-- Vile Ooze
 					},
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling (PET!)
-					},
+					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				i(15752, {	-- Pattern: Living Leggings
 					["timeline"] = { "removed 4.0.3" },

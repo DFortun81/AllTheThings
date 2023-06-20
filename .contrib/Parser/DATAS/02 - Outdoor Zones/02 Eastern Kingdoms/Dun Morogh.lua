@@ -1144,7 +1144,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					378,	-- Rabbit
 				}},
 				["groups"] = {
-					p(441, {	-- Alpine Hare
+					pet(441, {	-- Alpine Hare (PET!)
 						["crs"] = { 61690 },	-- Alpine Hare
 						-- #if AFTER CATA
 						["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },

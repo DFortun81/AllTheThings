@@ -9,14 +9,15 @@ root(ROOTS.Zones, {
 				["sym"] = {{"select","speciesID",
 					449,	-- Brown Marmot (PET!)
 					393,	-- Cockroach (PET!)
+					430,	-- Gold Beetle (PET!)
 					702,	-- Leopard Tree Frog (PET!)
+					568,	-- Silkbead Snail (PET!)
 					1464,	-- Twilight Wasp (PET!)
 					410,	-- Wharf Rat (PET!)
 				}},
 				["groups"] = {
 					pet(1465),	-- Amberbarb Wasp (PET!)
 					pet(1470),	-- Axebeak Hatchling (PET!)
-					pet(430),	-- Gold Beetle (PET!)
 					pet(1469),	-- Junglebeak (PET!)
 					pet(1594, {	-- Mudback Calf (PET!)
 						["description"] = "Best general locations to find these are around the coords. Killing other nearby critters helps spawn them.",
@@ -28,7 +29,6 @@ root(ROOTS.Zones, {
 					pet(1615, {	-- Parched Lizard (PET!)
 						["description"] = "Found mostly in and around Gronn Canyon.",
 					}),
-					pet(568),	-- Silkbead Snail (PET!)
 					pet(1463, {	-- Wood Wasp (PET!)
 						["description"] = "Found in a small area around this coord.",
 						["coord"] = { 50.8, 80.2, GORGROND },

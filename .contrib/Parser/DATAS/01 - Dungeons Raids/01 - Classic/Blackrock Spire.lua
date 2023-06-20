@@ -502,7 +502,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["cost"] = { { "i", 12262, 1 } },	-- Empty Worg Pup Cage
 						["cr"] = 10221,	-- Bloodaxe Worg Pup
 					}),
-					i(12264),	-- Worg Carrier (PET!)
+					i(12264),	-- Worg Pup (PET!)
 				},
 			}),
 			q(5067, {	-- Leggings of Arcana
@@ -1491,7 +1491,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					applyclassicphase(TBC_PHASE_ONE, i(21955)),	-- Design: Black Diamond Crab
 					i(12835),	-- Plans: Annihilator (RECIPE!)
 					-- #if AFTER 4.0.3
-					i(12264),	-- Worg Carrier (PET!)
+					i(12264),	-- Worg Pup (PET!)
 					-- #endif
 					i(13253),	-- Hands of Power
 					i(13252),	-- Cloudrunner Girdle
