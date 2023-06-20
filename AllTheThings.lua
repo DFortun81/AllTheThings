@@ -6103,40 +6103,43 @@ app.CreateDataCache = function(name)
 	end
 	cache.name = name;
 	-- These are the fields we store.
-	cache["achievementID"] = {};
-	cache["achievementCategoryID"] = {};
-	cache["artifactID"] = {};
-	cache["azeriteEssenceID"] = {};
-	cache["creatureID"] = {};
-	cache["currencyID"] = {};
-	cache["currencyIDAsCost"] = {};
-	cache["encounterID"] = {};
-	cache["factionID"] = {};
-	cache["flightPathID"] = {};
-	cache["followerID"] = {};
-	cache["headerID"] = {};
-	cache["illusionID"] = {};
-	cache["instanceID"] = {};
-	cache["itemID"] = {};
-	cache["itemIDAsCost"] = {};
-	cache["mapID"] = {};
-	cache["mountID"] = {};
-	cache["nextQuests"] = {};
+	for w,f in ipairs({
+		"achievementID",
+		"artifactID",
+		"azeriteEssenceID",
+		"creatureID",
+		"currencyID",
+		"currencyIDAsCost",
+		"encounterID",
+		"factionID",
+		"flightPathID",
+		"followerID",
+		"headerID",
+		"illusionID",
+		"instanceID",
+		"itemID",
+		"itemIDAsCost",
+		"mapID",
+		"mountID",
+		"nextQuests",
+		"objectID",
+		"professionID",
+		"questID",
+		"runeforgePowerID",
+		"rwp",
+		"s",
+		"speciesID",
+		"spellID",
+		"tierID",
+		"titleID",
+		"toyID"
+	}) do
+		cache[f] = {};
+	end
 	-- identical cache as creatureID (probably deprecate creatureID use eventually)
 	cache["npcID"] = cache.creatureID;
-	cache["objectID"] = {};
-	cache["professionID"] = {};
 	-- identical cache as professionID
 	cache["requireSkill"] = cache.professionID;
-	cache["questID"] = {};
-	cache["runeforgePowerID"] = {};
-	cache["rwp"] = {};
-	cache["s"] = {};
-	cache["speciesID"] = {};
-	cache["spellID"] = {};
-	cache["tierID"] = {};
-	cache["titleID"] = {};
-	cache["toyID"] = {};
 
 	tinsert(DataCaches, cache);
 	return cache;
@@ -6244,9 +6247,6 @@ end
 fieldConverters = {
 	-- Simple Converters
 	["achievementID"] = cacheAchievementID,
-	["achievementCategoryID"] = function(group, value)
-		CacheField(group, "achievementCategoryID", value);
-	end,
 	["achID"] = cacheAchievementID,
 	["altAchID"] = cacheAchievementID,
 	["artifactID"] = function(group, value)
