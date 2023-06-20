@@ -4407,6 +4407,17 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(QUESTS, {
+					applyclassicphase(WRATH_PHASE_THREE, q(14409, {	-- A Cautious Return
+						["providers"] = {
+							{ "n", 36506 },	-- Daros Moonlance <The Highborne>
+							{ "i", 49335 },	-- Daros' Journal
+						},
+						["coord"] = { 36.4, 61.0, NORTHREND_DALARAN },
+						["timeline"] = { "added 3.3.0.10772", "removed 4.0.1" },	-- This was a pre-introduction quest for Night Elf Mages in Cataclysm.
+						["maps"] = { DARNASSUS },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 71,
+					})),
 					q(29608, {	-- Allies in Dalaran
 						["qgs"] = {
 							23736,	-- Pricilla Winterwind
@@ -4420,7 +4431,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
 					}),
-					q(13986, {	-- An Injured Colleague
+					applyclassicphase(WRATH_PHASE_THREE, q(13986, {	-- An Injured Colleague
 						["providers"] = {
 							{ "n", 35471 },	-- Sorn Proudmane
 							{ "i", 46775 },	-- Battered Tribal Shield
@@ -4430,7 +4441,7 @@ root(ROOTS.Zones, {
 						["maps"] = { THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 71,
-					}),
+					})),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24580, {	-- Anub'Rekhan Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
