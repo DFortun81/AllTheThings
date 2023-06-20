@@ -24388,6 +24388,12 @@ SlashCmdList["AllTheThingsWQ"] = function(cmd)
 	app:GetWindow("WorldQuests"):Toggle();
 end
 
+SLASH_ATTCUYELL1 = "/attyell";
+SLASH_ATTCUYELL2 = "/attrohduh";
+SlashCmdList["ATTCUYELL"] = function(cmd)
+	C_ChatInfo.SendAddonMessage("ATT", "?", "YELL");
+end
+
 -- Clickable ATT Chat Link Handling
 (function()
 	hooksecurefunc("SetItemRef", function(link, text)
