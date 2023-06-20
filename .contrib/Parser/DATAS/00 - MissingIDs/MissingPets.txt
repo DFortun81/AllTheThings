@@ -1,40 +1,3 @@
-5.0.3.15882
-pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	--
-pet(73),	--
-pet(154),	-- Lucky
-pet(230),	-- Macabre Marionette
-pet(257),	-- Murkimus the Gladiator
-pet(344),	-- Green Balloon
-pet(345),	-- Yellow Balloon
-pet(354),	-- PattyMack - WildBattlePet Test
-pet(375),	-- The Gurkster
-pet(384),	-- Otter Pup
-pet(390),	-- Deer
-pet(394),	-- Sheep
-pet(434),	-- Ram
-pet(444),	-- PattyMack 2.0 - WildBattlePet Test
-pet(462),	-- Jacob the Test Seagull
-pet(476),	-- Gazelle
-pet(486),	-- Mule Deer
-pet(510),	-- Rabbot
-pet(705),	-- Amorous Rooster
-pet(715),	-- Wild Silkworm
-pet(800),	-- Muffin
-pet(820),	-- Singing Cricket
-pet(824),	-- Ms. Croaker
-pet(825),	-- Mr. Growls
-pet(826),	-- Mrs. Skitters
-pet(827),	-- Lady Burninator
-pet(828),	-- Lord Landslide
-pet(829),	-- Madam Flapsalot
-pet(830),	-- Sir Buckethead
-pet(831),	-- Miss Mystical
-pet(832),	-- Boomy Jr.
-pet(833),	-- Dr. Stinky
-5.0.3.15890
-pet(863),	-- Widow Spiderling
-pet(864),	-- Spider
 10.1.5.49516
 pet(3587),	-- Lifelike Mechanical Duckling
 pet(3588),	-- Iggy
@@ -68,46 +31,6 @@ pet(4263),	-- Tobias
 
 Missing in PetDB.lua
 
-5.0.3.15882
-pet(2),	-- Dumptruck \\ Xelnath
-pet(71),	--
-pet(73),	--
-pet(154),	-- Lucky
-pet(230),	-- Macabre Marionette
-pet(257),	-- Murkimus the Gladiator
-pet(344),	-- Green Balloon
-pet(345),	-- Yellow Balloon
-pet(354),	-- PattyMack - WildBattlePet Test
-pet(375),	-- The Gurkster
-pet(384),	-- Otter Pup
-pet(390),	-- Deer
-pet(394),	-- Sheep
-pet(431),	-- Rattlesnake
-pet(434),	-- Ram
-pet(444),	-- PattyMack 2.0 - WildBattlePet Test
-pet(462),	-- Jacob the Test Seagull
-pet(465),	-- Ravager Hatchling
-pet(476),	-- Gazelle
-pet(486),	-- Mule Deer
-pet(502),	-- Spotted Bell Frog
-pet(510),	-- Rabbot
-pet(705),	-- Amorous Rooster
-pet(715),	-- Wild Silkworm
-pet(800),	-- Muffin
-pet(820),	-- Singing Cricket
-pet(824),	-- Ms. Croaker
-pet(825),	-- Mr. Growls
-pet(826),	-- Mrs. Skitters
-pet(827),	-- Lady Burninator
-pet(828),	-- Lord Landslide
-pet(829),	-- Madam Flapsalot
-pet(830),	-- Sir Buckethead
-pet(831),	-- Miss Mystical
-pet(832),	-- Boomy Jr.
-pet(833),	-- Dr. Stinky
-5.0.3.15890
-pet(863),	-- Widow Spiderling
-pet(864),	-- Spider
 10.1.5.49516
 pet(3587),	-- Lifelike Mechanical Duckling
 pet(3588),	-- Iggy

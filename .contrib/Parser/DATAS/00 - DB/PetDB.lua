@@ -83,6 +83,11 @@ i(21305, 120);		-- Winter's Little Helper
 i(11027, 64);		-- Wood Frog
 i(12264, 89);		-- Worg Pup
 i(13582, 94);		-- Zergling
+-- NYI --
+i(11903, 0);		-- Cat Carrier (Corrupted Kitten)
+i(18964, 0);		-- Loggerhead Snapjaw / Turtle Egg (Loggerhead)
+i(13342, 0);		-- Pet Fish
+i(13343, 0);		-- Pet Stone
 
 -----------------
 -- PATCH 2.0.1 --
@@ -121,13 +126,19 @@ i(32622, 159);		-- Peanut
 i(32617, 157);		-- Willy
 
 -----------------
+-- PATCH 2.1.1 --
+-----------------
+-- NYI --
+i(31665, 0);		-- Toy RC Mortar Tank
+
+-----------------
 -- PATCH 2.2.2 --
 -----------------
 -- ITEM --
 i(29960, 146);		-- Firefly
 i(32498, 155);		-- Lucky
 -- NYI --
-i(32465, 0);		-- Lucky
+i(32465, 154);		-- Lucky
 
 -----------------
 -- PATCH 2.2.2 --
@@ -161,7 +172,7 @@ i(35349, 173);		-- Snarly
 i(33816, 163);		-- Toothy
 -- NYI --
 -- #if BEFORE 7.0.3
-i(23712, 0);		-- White Tiger Cub
+i(23712, 0);		-- White Tiger Cub, Comment: Later reused for Ash'ana.
 -- #endif
 
 -----------------
@@ -185,6 +196,9 @@ i(37297, 179);		-- Spirit of Competition
 -- ITEM ---
 i(40653, 160);		-- Stinker
 i(38658, 187);		-- Vampiric Batling
+-- NYI --
+i(39148, 0);		-- Baby Coralshell Turtle
+i(21168, 0);		-- Baby Shark
 
 -----------------
 -- PATCH 3.0.3 --
@@ -209,6 +223,8 @@ i(44822, 74);		-- Albino Snake
 i(44841, 203);		-- Little Fawn
 i(44794, 200);		-- Spring Rabbit
 i(44983, 211);		-- Strand Crawler
+-- NYI --
+i(45942, 0);		-- XS-001 Constructor Bot
 
 -----------------
 -- PATCH 3.1.2 --
@@ -261,6 +277,8 @@ i(49665, 248);		-- Pandaren Monk
 i(49343, 242);		-- Spectral Tiger Cub
 i(44810, 201);		-- Plump Turkey
 i(49287, 241);		-- Tuskarr Kite
+-- NYI --
+i(0, 230);			-- Macabre Marionette
 
 -----------------
 -- PATCH 3.3.0 --
@@ -298,6 +316,9 @@ i(56806, 258);		-- Mini Thor
 -- ITEM --
 i(67418, 294);		-- Deathy
 i(62540, 268);		-- Lil' Deathwing
+-- NYI --
+i(67417, 0);		-- [DND] Lil' Deathwing Placeholder
+i(44972, 0);		-- Alarming Clockbot (NOT IN USE)
 
 -----------------
 -- PATCH 4.0.3 --
@@ -336,6 +357,11 @@ i(66080, 287);		-- Tiny Flamefly
 i(64494, 279);		-- Tiny Shale Spider
 i(46325, 220);		-- Withers
 i(49664, 247);		-- Zipao Tiger
+-- NYI --
+i(66075, 0);		-- Bubbles
+i(62769, 0);		-- Hardboiled Egg
+i(67600, 0);		-- Lil' Alexstrasza
+i(66070, 0);		-- Lizzy
 
 -----------------
 -- PATCH 4.0.6 --
@@ -376,6 +402,8 @@ i(71033, 320);		-- Lil' Tarecgosa
 i(71726, 329);		-- Murkablo
 i(46892, 217);		-- Murkimus the Gladiator [Murkimus' Tiny Spear]
 i(71140, 323);		-- Nuts
+-- NYI --
+i(0, 257);			-- Murkimus the Gladiator
 
 -----------------
 -- PATCH 4.3.0 --
@@ -396,6 +424,9 @@ i(71624, 328);		-- Purple Puffer
 i(72153, 665);		-- Sand Scarab
 i(73953, 340);		-- Sea Pony
 i(78916, 347);		-- Soul of the Aspects
+-- NYI --
+i(0, 344);			-- Green Balloon
+i(0, 345);			-- Yellow Balloon
 
 -----------------
 -- PATCH 4.3.2 --
@@ -423,6 +454,7 @@ i(87526, 844);		-- Mechanical Pandaren Dragonling
 i(89587, 381);		-- Porcupette
 i(85222, 1042);		-- Red Cricket
 i(82775, 846);		-- Sapphire Cub
+i(88147, 820);		-- Singing Cricket
 i(90953, 1127);		-- Spectral Cub
 i(85220, 650);		-- Terrible Turnip
 i(85513, 802);		-- Thundering Serpent Hatchling
@@ -582,6 +614,8 @@ n(62120, 472);		-- Rabid Nut Varmint 5000
 n(64352, 743);		-- Rapana Whelk
 n(61366, 417);		-- Rat
 n(61258, 399);		-- Rat Snake
+n(61439, 431);		-- Rattlesnake
+n(62051, 465);		-- Ravager Hatchling
 n(61757, 452);		-- Red-Tailed Chipmunk
 n(61168, 392);		-- Redridge Rat
 n(64238, 744);		-- Resilient Roach
@@ -628,6 +662,7 @@ n(63293, 723);		-- Spiny Terrapin
 n(63005, 572);		-- Spirebound Crab
 n(62034, 463);		-- Spirit Crab
 n(62564, 515);		-- Sporeling Sprout
+n(62370, 502);		-- Spotted Bell Frog
 n(61081, 379);		-- Squirrel
 n(62256, 492);		-- Stinkbug
 n(62187, 485);		-- Stone Armadillo
@@ -812,7 +847,37 @@ n(0, 926);			-- Willow
 n(0, 998);			-- Woodcarver
 n(0, 886);			-- Young Beaky
 -- NYI --
+i(0, 705);			-- Amorous Rooster
+i(0, 832);			-- Boomy Jr.
+i(0, 390);			-- Deer
+i(0, 833);			-- Dr. Stinky
+i(0, 2);			-- Dumptruck
+i(0, 476);			-- Gazelle
+i(0, 462);			-- Jacob the Test Seagull
+i(0, 827);			-- Lady Burninator
+i(0, 828);			-- Lord Landslide
+i(0, 829);			-- Madam Flapsalot
+i(0, 831);			-- Miss Mystical
+i(0, 825);			-- Mr. Growls
+i(0, 826);			-- Mrs. Skitters
+i(0, 824);			-- Ms. Croaker
+i(0, 800);			-- Muffin
+i(0, 486);			-- Mule Deer
+i(0, 384);			-- Otter Pup
+i(0, 354);			-- PattyMack - WildBattlePet Test
+i(0, 444);			-- PattyMack 2.0 - WildBattlePet Test
+i(0, 510);			-- Rabbot
+i(0, 434);			-- Ram
+i(0, 394);			-- Sheep
+i(0, 830);			-- Sir Buckethead
+i(0, 864);			-- Spider
+i(0, 375);			-- The Gurkster
+i(0, 863);			-- Widow Spiderling
+i(0, 715);			-- Wild Silkworm
+i(0, 71);			-- Unknown
+i(0, 73);			-- Unknown
 i(88148, 0);		-- Jade Crane Chick
+i(82800, 0);		-- Pet Cage
 
 -----------------
 -- PATCH 5.1.0 --
