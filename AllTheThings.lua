@@ -1545,15 +1545,14 @@ app.GetProgressText = GetProgressTextDefault;
 app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
 
-local function BuildGroups(parent, g)
-	g = g or parent.g;
-	if g then
+local function BuildGroups(parent)
+	if parent.g then
 		-- Iterate through the groups
-		for _,group in ipairs(g) do
+		local g = parent.g;
+		for i=1,#g,1 do
 			-- Set the group's parent
+			local group = g[i];
 			group.parent = parent;
-			group.indent = nil;
-			group.back = nil;
 			BuildGroups(group);
 		end
 	end
@@ -7719,7 +7718,7 @@ local function CheckCollectible(ref)
 				-- fill the copied Item's symlink if any
 				FillSymLinks(expItem);
 				-- Build the Item's groups if any
-				BuildGroups(expItem, expItem.g);
+				BuildGroups(expItem);
 				-- Update the group
 				app.TopLevelUpdateGroup(expItem);
 				-- save it in the Item cache in case something else is able to purchase this reference
@@ -12115,7 +12114,7 @@ app.CacheHeirlooms = function()
 				for _,heirloom in ipairs(item.g) do
 					NestObject(token, heirloom, true);
 				end
-				BuildGroups(token, token.g);
+				BuildGroups(token);
 			end
 		end
 	end
@@ -12129,7 +12128,7 @@ app.CacheHeirlooms = function()
 				for _,heirloom in ipairs(item.g) do
 					NestObject(token, heirloom, true);
 				end
-				BuildGroups(token, token.g);
+				BuildGroups(token);
 			end
 		end
 	end
@@ -19271,7 +19270,7 @@ customWindowUpdates["AuctionData"] = function(self)
 	self.data.total = 0;
 	self.data.indent = 0;
 	self.data.back = 1;
-	BuildGroups(self.data, self.data.g);
+	BuildGroups(self.data);
 	app.TopLevelUpdateGroup(self.data);
 	self.data.visible = true;
 	self:BaseUpdate(true);
@@ -19322,7 +19321,7 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 				}),
 			},
 		});
-		BuildGroups(self.data, self.data.g);
+		BuildGroups(self.data);
 		self.rawData = {};
 		local function RefreshBounties()
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
@@ -19420,7 +19419,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 					end
 				end
 				NestObjects(self.data, allmapchains);
-				BuildGroups(self.data, self.data.g);
+				BuildGroups(self.data);
 				self:Update(true);
 			end
 		end
@@ -21220,7 +21219,7 @@ customWindowUpdates["Random"] = function(self)
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
 				end
-				BuildGroups(self.data, self.data.g);
+				BuildGroups(self.data);
 				if not no then self:Update(); end
 			end
 			self.Reroll = function(self)
@@ -21237,7 +21236,7 @@ customWindowUpdates["Random"] = function(self)
 		self.data.progress = 0;
 		self.data.total = 0;
 		self.data.indent = 0;
-		BuildGroups(self.data, self.data.g);
+		BuildGroups(self.data);
 		self:BaseUpdate(true);
 	end
 end;
@@ -21457,7 +21456,7 @@ customWindowUpdates["Sync"] = function(self)
 									["OnUpdate"] = app.AlwaysShowUpdate,
 								});
 							end
-							BuildGroups(data, data.g);
+							BuildGroups(data);
 							return true;
 						end,
 					},
@@ -21814,7 +21813,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 				data.indent = 0;
 				data.visible = true;
-				BuildGroups(data, data.g);
+				BuildGroups(data);
 				updates["Data"] = data;
 				-- only expand the list if this is the first time it is being generated
 				self.ExpandInfo = { Expand = true };
@@ -22543,7 +22542,7 @@ app.LoadDebugger = function()
 					for i=#self.data.options,1,-1 do
 						tinsert(self.data.g, 1, self.data.options[i]);
 					end
-					BuildGroups(self.data, self.data.g);
+					BuildGroups(self.data);
 					AfterCombatCallback(self.Update, self, true);
 				end
 			end
@@ -22604,7 +22603,7 @@ app.LoadDebugger = function()
 									for i,info in ipairs(row.ref.data) do
 										NestObject(self.data, CreateObject(info));
 									end
-									BuildGroups(self.data, self.data.g);
+									BuildGroups(self.data);
 									AfterCombatCallback(self.Update, self, true);
 									return true;
 								end,
@@ -22614,7 +22613,7 @@ app.LoadDebugger = function()
 							for i=#self.data.options,1,-1 do
 								tinsert(self.data.g, 1, self.data.options[i]);
 							end
-							BuildGroups(self.data, self.data.g);
+							BuildGroups(self.data);
 							AfterCombatCallback(self.Update, self, true);
 							return true;
 						end,
@@ -22808,7 +22807,7 @@ app.LoadDebugger = function()
 						["g"] = rawGroups
 					};
 					NestObject(self.data, CreateObject(info));
-					BuildGroups(self.data, self.data.g);
+					BuildGroups(self.data);
 					AfterCombatCallback(self.Update, self, true);
 					-- trigger the delayed backup
 					DelayedCallback(self.BackupData, 15, self);
@@ -22921,7 +22920,7 @@ app.LoadDebugger = function()
 			InitDebuggerData();
 			-- Ensure the current Zone is added when the Window is initialized
 			AddObject();
-			BuildGroups(self.data, self.data.g);
+			BuildGroups(self.data);
 		end
 
 		-- Update the window and all of its row data
