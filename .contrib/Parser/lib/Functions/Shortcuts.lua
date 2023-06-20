@@ -979,6 +979,15 @@ dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragon
 	return t;
 end
 
+-- Outdoor Zones Headers with Filters
+battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.
+	if not t then
+		t = timeline;
+		timeline = { "added 5.0.1" };
+	end
+	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = timeline }, t)));
+end
+
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
 a = function(t)	-- Flag as Alliance Only
 	if t.races then
