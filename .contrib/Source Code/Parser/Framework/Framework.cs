@@ -4653,7 +4653,7 @@ namespace ATT
                     var eventRemaps = new Dictionary<long, long>();
                     var eventSchedules = new Dictionary<long, string>();
                     var icons = new Dictionary<long, string>();
-                    var constants = new Dictionary<long, string>();
+                    var constants = new Dictionary<string, long>();
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
                     var localizationForLore = new Dictionary<string, Dictionary<long, string>>();
                     var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
@@ -4687,7 +4687,7 @@ namespace ATT
                                 }
                                 if (header.TryGetValue("constant", out value))
                                 {
-                                    constants[key] = value.ToString();
+                                    constants[value.ToString()] = key;
                                 }
                                 if (header.TryGetValue("text", out value))
                                 {
@@ -4749,12 +4749,11 @@ namespace ATT
                     keys.Sort(new Comparison<long>((i1, i2) => i2.CompareTo(i1)));
 
                     builder.AppendLine("_.HeaderConstants = {");
-                    foreach (var key in keys)
+                    var headerKeys = constants.Keys.ToList();
+                    headerKeys.Sort(StringComparer.InvariantCulture);
+                    foreach (var key in headerKeys)
                     {
-                        if (constants.TryGetValue(key, out string constant))
-                        {
-                            builder.Append("\t").Append(constant).Append(" = ").Append(key).AppendLine(",");
-                        }
+                        builder.Append("\t").Append(key).Append(" = ").Append(constants[key]).AppendLine(",");
                     }
                     builder.AppendLine("};").AppendLine();
 
