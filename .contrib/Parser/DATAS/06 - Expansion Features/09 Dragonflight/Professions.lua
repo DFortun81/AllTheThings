@@ -2900,6 +2900,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(76128),	-- After turn in 'Relic Rustler' (questID 75865)
 		q(76129),	-- After turn in 'Incandescence' (questID 75150)
 		q(76131),	-- After turn in 'Titan Trash or Titan Treasure?' (questID 75608)
+		q(76132),	-- After turn in 'Proclamation Reclamation' (questID 75573)
 		q(76133),	-- After turn in 'Obsidian Essays' (questID 75149)
 		q(76134),	-- After turn in 'Cephalo-Crystalization' (questID 75362)
 		q(76135),	-- After turn in 'Chips off the Old Crystal Block' (questID 75602)
@@ -2911,7 +2912,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		-- Weekly quests
 		--q(75148), -- Ancient Techniques
 		--q(75575), -- Ballistae Bits
-		--q(75573), -- Proclamation Reclamation
 		--q(75354), -- Mycelium Mastery
 		--q(75600), -- Silk's Silk
 
@@ -2919,7 +2919,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(76123),	--
 		--q(76127),	--
 		--q(76130),	--
-		--q(76132),	--
 		--q(76136),	--
 		--q(76139),	--
 	}),
