@@ -10,29 +10,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, {
 				ach(478, {	-- The Nexus
 					crit(5381, { -- Grand Magus Telestra
-						["_encounter"] = { 618, 1 },
+						["_encounter"] = { 618, NORMAL_DUNGEON },
 					}),
 					crit(5382, { -- Anomalus
-						["_encounter"] = { 619, 1 },
+						["_encounter"] = { 619, NORMAL_DUNGEON },
 					}),
 					crit(5383, { -- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, 1 },
+						["_encounter"] = { 620, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5622, { -- Keristrasza
-						["_encounter"] = { 621, 1 },
+						["_encounter"] = { 621, NORMAL_DUNGEON },
 					}),
 					-- #else
 					crit(5384, { -- Keristrasza
-						["_encounter"] = { 621, 1 },
+						["_encounter"] = { 621, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17283, {	-- Defense Protocol Alpha: The Nexus
 					crit(57690, { -- Grand Magus Telestra
-						["_encounter"] = { 618, 2 },
+						["_encounter"] = { 618, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39393),	-- Claymore of Ancient Power
 							i(39388),	-- Spirit-World Glass
@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57688, { -- Anomalus
-						["_encounter"] = { 619, 2 },
+						["_encounter"] = { 619, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39407),	-- Circle of Life
 							i(39396),	-- Gown of Blaumeux
@@ -48,7 +48,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57687, { -- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, 2 },
+						["_encounter"] = { 620, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39389),	-- Signet of the Malevolent
 							i(39395),	-- Thane's Tainted Greathelm
@@ -56,7 +56,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57689, { -- Keristrasza
-						["_encounter"] = { 621, 2 },
+						["_encounter"] = { 621, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39306),	-- Plated Gloves of Relief
 							i(39422),	-- Staff of the Plaguehound
@@ -73,19 +73,45 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_THREE, ach(18591, {	-- Defense Protocol Beta: The Nexus
+					crit(60578, { -- Grand Magus Telestra
+						["_encounter"] = { 618, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60576, { -- Anomalus
+						["_encounter"] = { 619, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60575, { -- Ormorok the Tree-Shaper
+						["_encounter"] = { 620, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60577, { -- Keristrasza
+						["_encounter"] = { 621, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(490,  {	-- Heroic: The Nexus
 					crit(5245, { -- Grand Magus Telestra
-						["_encounter"] = { 618, 2 },
+						["_encounter"] = { 618, HEROIC_DUNGEON },
 					}),
 					crit(5246, { -- Anomalus
-						["_encounter"] = { 619, 2 },
+						["_encounter"] = { 619, HEROIC_DUNGEON },
 					}),
 					crit(5247, { -- Ormorok the Tree-Shaper
-						["_encounter"] = { 620, 2 },
+						["_encounter"] = { 620, HEROIC_DUNGEON },
 					}),
 					crit(5609, { -- Keristrasza
-						["_encounter"] = { 621, 2 },
+						["_encounter"] = { 621, HEROIC_DUNGEON },
 					}),
 				}),
 			}),

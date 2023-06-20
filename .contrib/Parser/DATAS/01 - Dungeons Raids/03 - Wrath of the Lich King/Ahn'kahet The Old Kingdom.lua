@@ -10,29 +10,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, {
 				ach(481, {	-- Ahn'kahet: The Old Kingdom
 					crit(5439, { -- Prince Taldaram
-						["_encounter"] = { 581, 1 },
+						["_encounter"] = { 581, NORMAL_DUNGEON },
 					}),
 					crit(5440, { -- Elder Nadox
-						["_encounter"] = { 580, 1 },
+						["_encounter"] = { 580, NORMAL_DUNGEON },
 					}),
 					crit(5441, { -- Jedoga Shadowseeker
-						["_encounter"] = { 582, 1 },
+						["_encounter"] = { 582, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5624, { -- Herald Volazj
-						["_encounter"] = { 584, 1 },
+						["_encounter"] = { 584, NORMAL_DUNGEON },
 					}),
 					-- #else
 					crit(5442, { -- Herald Volazj
-						["_encounter"] = { 584, 1 },
+						["_encounter"] = { 584, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17291, {	-- Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
 					crit(57731, { -- Elder Nadox
-						["_encounter"] = { 580, 2 },
+						["_encounter"] = { 580, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39249),	-- Shoulderplates of Bloodshed
 							i(39255),	-- Staff of the Plague Beast
@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57733, { -- Prince Taldaram
-						["_encounter"] = { 581, 2 },
+						["_encounter"] = { 581, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39260),	-- Helm of the Corrupted Mind
 							i(39247),	-- Cuffs of Dark Shadows
@@ -48,7 +48,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57734, { -- Amanitar
-						["_encounter"] = { 583, 2 },
+						["_encounter"] = { 583, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39247),	-- Cuffs of Dark Shadows
 							i(39260),	-- Helm of the Corrupted Mind
@@ -56,7 +56,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57732, { -- Jedoga Shadowseeker
-						["_encounter"] = { 582, 2 },
+						["_encounter"] = { 582, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39246),	-- Amulet of Autopsy
 							i(39250),	-- Ring of Holy Cleansing
@@ -64,7 +64,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57730, { -- Herald Volazj
-						["_encounter"] = { 584, 2 },
+						["_encounter"] = { 584, HEROIC_DUNGEON },
 						["groups"] = {
 							i(43998),	-- Chestguard of Flagrant Prowess
 							i(39417),	-- Death's Bite
@@ -81,22 +81,54 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_TWO, ach(18593, {	-- Defense Protocol Beta: Ahn'kahet: The Old Kingdom
+					crit(60583, { -- Elder Nadox
+						["_encounter"] = { 580, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60586, { -- Prince Taldaram
+						["_encounter"] = { 581, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60585, { -- Amanitar
+						["_encounter"] = { 583, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60584, { -- Jedoga Shadowseeker
+						["_encounter"] = { 582, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60582, { -- Herald Volazj
+						["_encounter"] = { 584, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(492, {	-- Heroic: Ahn'kahet: The Old Kingdom
 					crit(6851, { -- Prince Taldaram
-						["_encounter"] = { 581, 2 },
+						["_encounter"] = { 581, HEROIC_DUNGEON },
 					}),
 					crit(6852, { -- Elder Nadox
-						["_encounter"] = { 580, 2 },
+						["_encounter"] = { 580, HEROIC_DUNGEON },
 					}),
 					crit(6853, { -- Jedoga Shadowseeker
-						["_encounter"] = { 582, 2 },
+						["_encounter"] = { 582, HEROIC_DUNGEON },
 					}),
 					crit(5611, { -- Herald Volazj
-						["_encounter"] = { 584, 2 },
+						["_encounter"] = { 584, HEROIC_DUNGEON },
 					}),
 					crit(5054, { -- Amanitar
-						["_encounter"] = { 583, 2 },
+						["_encounter"] = { 583, HEROIC_DUNGEON },
 					}),
 				}),
 			}),

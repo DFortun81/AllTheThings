@@ -11,22 +11,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, {
 				ach(482, {	-- Drak'Tharon Keep
 					crit(5443, { -- Trollgore
-						["_encounter"] = { 588, 1 },
+						["_encounter"] = { 588, NORMAL_DUNGEON },
 					}),
 					crit(5444, { -- Novos the Summoner
-						["_encounter"] = { 589, 1 },
+						["_encounter"] = { 589, NORMAL_DUNGEON },
 					}),
 					crit(5445, { -- King Dred
-						["_encounter"] = { 590, 1 },
+						["_encounter"] = { 590, NORMAL_DUNGEON },
 					}),
 					crit(9098, { -- The Prophet Tharon'ja
-						["_encounter"] = { 591, 1 },
+						["_encounter"] = { 591, NORMAL_DUNGEON },
 					}),
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17292, {	-- Defense Protocol Alpha: Drak'Tharon Keep
 					crit(57735, { -- Trollgore
-						["_encounter"] = { 588, 2 },
+						["_encounter"] = { 588, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39241),	-- Dark Shroud of the Scourge
 							i(39245),	-- Demise
@@ -34,7 +34,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57736, { -- Novos the Summoner
-						["_encounter"] = { 589, 2 },
+						["_encounter"] = { 589, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39244),	-- Ring of the Fated
 							i(39236),	-- Trespasser's Boots
@@ -42,7 +42,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57737, { -- King Dred
-						["_encounter"] = { 590, 2 },
+						["_encounter"] = { 590, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39239),	-- Chestplate of the Risen Soldier
 							i(39240),	-- Noth's Curse
@@ -50,7 +50,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57738, { -- The Prophet Tharon'ja
-						["_encounter"] = { 591, 2 },
+						["_encounter"] = { 591, HEROIC_DUNGEON },
 						["groups"] = {
 							i(43995),	-- Enamored Cowl
 							i(39416),	-- Kel'Thuzad's Reach
@@ -67,19 +67,45 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_THREE, ach(18594, {	-- Defense Protocol Beta: Drak'Tharon Keep
+					crit(60587, { -- Trollgore
+						["_encounter"] = { 588, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60588, { -- Novos the Summoner
+						["_encounter"] = { 589, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60589, { -- King Dred
+						["_encounter"] = { 590, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60590, { -- The Prophet Tharon'ja
+						["_encounter"] = { 591, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(493,  {	-- Heroic: Drak'Tharon Keep
 					crit(6813, { -- Trollgore
-						["_encounter"] = { 588, 2 },
+						["_encounter"] = { 588, HEROIC_DUNGEON },
 					}),
 					crit(6814, { -- Novos the Summoner
-						["_encounter"] = { 589, 2 },
+						["_encounter"] = { 589, HEROIC_DUNGEON },
 					}),
 					crit(6815, { -- King Dred
-						["_encounter"] = { 590, 2 },
+						["_encounter"] = { 590, HEROIC_DUNGEON },
 					}),
 					crit(9261, { -- The Prophet Tharon'ja
-						["_encounter"] = { 591, 2 },
+						["_encounter"] = { 591, HEROIC_DUNGEON },
 					}),
 				}),
 			}),

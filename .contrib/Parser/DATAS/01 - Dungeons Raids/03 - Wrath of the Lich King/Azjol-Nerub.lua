@@ -11,26 +11,26 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, {
 				ach(480, { -- Azjol-Nerub
 					crit(5436, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, 1 },
+						["_encounter"] = { 585, NORMAL_DUNGEON },
 					}),
 					crit(5437, {	-- Hadronox
-						["_encounter"] = { 586, 1 },
+						["_encounter"] = { 586, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5623, { -- Anub'arak
-						["_encounter"] = { 587, 1 },
+						["_encounter"] = { 587, NORMAL_DUNGEON },
 					}),
 					-- #else
 					crit(5438, { -- Anub'arak
-						["_encounter"] = { 587, 1 },
+						["_encounter"] = { 587, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17285, {	-- Defense Protocol Alpha: Azjol-Nerub
 					crit(57699, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, 2 },
+						["_encounter"] = { 585, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39257),	-- Loatheb's Shadow
 							i(39267),	-- Abomination Shoulderblades
@@ -38,7 +38,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57697, {	-- Hadronox
-						["_encounter"] = { 586, 2 },
+						["_encounter"] = { 586, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39256),	-- Sulfur Stave
 							i(39252),	-- Preceptor's Bindings
@@ -46,7 +46,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57698, {	-- Anub'arak
-						["_encounter"] = { 587, 2 },
+						["_encounter"] = { 587, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39419),	-- Nerubian Conquerer
 							i(43994),	-- Belabored Legplates
@@ -63,16 +63,36 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_THREE, ach(18592, {	-- Defense Protocol Beta: Azjol-Nerub
+					crit(60581, {	-- Krik'thir the Gatewatcher
+						["_encounter"] = { 585, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60579, {	-- Hadronox
+						["_encounter"] = { 586, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60580, {	-- Anub'arak
+						["_encounter"] = { 587, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(491, { -- Heroic: Azjol-Nerub
 					crit(6848, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, 2 },
+						["_encounter"] = { 585, HEROIC_DUNGEON },
 					}),
 					crit(6849, {	-- Hadronox
-						["_encounter"] = { 586, 2 },
+						["_encounter"] = { 586, HEROIC_DUNGEON },
 					}),
 					crit(5610, {	-- Anub'arak
-						["_encounter"] = { 587, 2 },
+						["_encounter"] = { 587, HEROIC_DUNGEON },
 					}),
 				}),
 			}),

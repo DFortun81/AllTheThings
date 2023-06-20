@@ -10,22 +10,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, {
 				ach(1865, {	-- Lockdown!
 					crit(7137, { -- Xevozz
-						["_encounter"] = { 629, 2 },
+						["_encounter"] = { 629, HEROIC_DUNGEON },
 					}),
 					crit(7138, { -- Levanthor
-						["_encounter"] = { 630, 2 },
+						["_encounter"] = { 630, HEROIC_DUNGEON },
 					}),
 					crit(7139, { -- Ichoron
-						["_encounter"] = { 628, 2 },
+						["_encounter"] = { 628, HEROIC_DUNGEON },
 					}),
 					crit(7140, { -- Zuramat the Obliterator
-						["_encounter"] = { 631, 2 },
+						["_encounter"] = { 631, HEROIC_DUNGEON },
 					}),
 					crit(7141, { -- Erekem
-						["_encounter"] = { 626, 2 },
+						["_encounter"] = { 626, HEROIC_DUNGEON },
 					}),
 					crit(7142, { -- Moragg
-						["_encounter"] = { 627, 2 },
+						["_encounter"] = { 627, HEROIC_DUNGEON },
 					}),
 				}),
 			}),
@@ -411,6 +411,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(40619),	-- Leggings of the Lost Conqueror
 								i(40620),	-- Leggings of the Lost Protector
 								i(40621),	-- Leggings of the Lost Vanquisher
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, ach(18595, {	-- Defense Protocol Beta: The Violet Hold
+								
 							})),
 							-- #endif
 							ach(494),	-- Heroic: The Violet Hold
