@@ -110,7 +110,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60596, { -- Gal'darah
 						["_encounter"] = { 596, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							currency(2589),	-- Sidereal Essence
 						},
 					}),
 				})),

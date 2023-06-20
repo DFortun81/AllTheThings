@@ -48,8 +48,6 @@ namespace ATT
             ObjectData.Create<NPCData>("npcID",     "n",            "_.CreateNPC", "f", "creatureID");
             ObjectData.Create("objectID",           "o",            "_.CreateObject", "f");
             ObjectData.Create("petAbilityID",       "pa",           "_.CreatePetAbility", "f");
-            ObjectData.Create("petTypeID",          "pt",           "_.CreatePetType", "f");
-            ObjectData.Create("pvpRankID",          "pvprank",      "_.CreatePVPRank", "f");
             ObjectData.Create("followerID",         "follower",     "_.CreateFollower", "f");
             ObjectData.Create("missionID",          "gm",           "_.CreateGarrisonMission", "f");
             ObjectData.Create("talentID",           "gt",           "_.CreateGarrisonTalent", "f");
@@ -72,6 +70,8 @@ namespace ATT
             ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell");
             ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
             ObjectData.Create("tierID",             "t",            "_.CreateTier", "f");
+            ObjectData.Create("petTypeID",          "pt",           "_.CreatePetType", "f");
+            ObjectData.Create("pvpRankID",          "pvprank",      "_.CreatePVPRank", "f");
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID");
             ObjectData.Create("f",                  "flt",          "_.CreateFilter");
         }

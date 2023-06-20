@@ -167,7 +167,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					crit(60621, { -- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							currency(2589),	-- Sidereal Essence
 						},
 					}),
 				}))),
@@ -217,7 +217,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					crit(60621, { -- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							currency(2589),	-- Sidereal Essence
 						},
 					}),
 				}))),

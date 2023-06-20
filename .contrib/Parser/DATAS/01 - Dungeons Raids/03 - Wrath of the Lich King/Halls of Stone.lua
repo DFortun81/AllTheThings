@@ -95,7 +95,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60597, { -- Sjonnir the Ironshaper
 						["_encounter"] = { 607, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							currency(2589),	-- Sidereal Essence
 						},
 					}),
 				})),

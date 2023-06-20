@@ -109,7 +109,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60582, { -- Herald Volazj
 						["_encounter"] = { 584, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							currency(2589),	-- Sidereal Essence
 						},
 					}),
 				})),

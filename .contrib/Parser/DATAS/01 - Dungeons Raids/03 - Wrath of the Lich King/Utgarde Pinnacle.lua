@@ -96,7 +96,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60609, { -- King Ymiron
 						["_encounter"] = { 644, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							currency(2589),	-- Sidereal Essence
 						},
 					}),
 				})),
