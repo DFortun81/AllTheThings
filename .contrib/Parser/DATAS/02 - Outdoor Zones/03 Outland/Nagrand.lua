@@ -313,8 +313,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						635,	-- Adder (PET!)
 						386,	-- Prarie Dog (PET!)
@@ -325,8 +324,7 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						pet(518),	-- Clefthoof Runt (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3610, "256:334:660:334"),	-- Burning Blade Ruins

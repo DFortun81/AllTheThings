@@ -26,16 +26,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				["maps"] = { 58 },	-- Shadowthread Cave
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
+					battlepets({
 						["sym"] = {{"select","speciesID",
 							447,	-- Fawn (PET!)
 						}},
 						["groups"] = {
 							pet(507),	-- Crested Owl (PET!)
 						},
-					})),
-					-- #endif
+					}),
 					n(QUESTS, {
 						q(28734, {	-- A Favor for Melithar
 							["qg"] = 2079,	-- Ilthalaine
@@ -513,8 +511,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					507,	-- Crested Owl (PET!)
 					479,	-- Elfin Rabbit (PET!)
@@ -523,8 +520,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					452,	-- Red-Tailed Chipmunk (PET!)
 					419,	-- Small Frog (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["128:100:494:548"] = 702,	-- Rut'theran Village

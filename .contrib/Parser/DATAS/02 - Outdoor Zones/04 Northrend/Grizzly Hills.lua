@@ -160,8 +160,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
@@ -170,8 +169,7 @@ root(ROOTS.Zones, {
 						pet(534),	-- Imperial Eagle Chick (PET!)
 						pet(633),	-- Mountain Skunk (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4204),	-- Amberpine Lodge

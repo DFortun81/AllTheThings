@@ -74,8 +74,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					838,	-- Amethyst Shale Hatchling (PET!)
 					479,	-- Elfin Rabbit (PET!)
@@ -94,8 +93,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					pet(480),	-- Topaz Shale Hatchling (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["100:100:241:6"] = 2406,	-- Ranazjar Isle

@@ -206,8 +206,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						388,	-- Shore Crab (PET!)
 					}},
@@ -225,8 +224,7 @@ root(ROOTS.Zones, {
 							["timeline"] = { "added 5.3.0.16758" },
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4023),	-- Amber Ledge

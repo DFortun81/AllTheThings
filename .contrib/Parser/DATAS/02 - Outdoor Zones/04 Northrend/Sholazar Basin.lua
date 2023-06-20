@@ -231,8 +231,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						387,	-- Snake (PET!)
 						379,	-- Squirrel (PET!)
@@ -246,8 +245,7 @@ root(ROOTS.Zones, {
 						}),
 						pet(532),	-- Stunted Shardhorn (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4369),	-- Dorian's Outpost

@@ -262,8 +262,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						419,	-- Small Frog (PET!)
 						387,	-- Snake (PET!)
@@ -274,8 +273,7 @@ root(ROOTS.Zones, {
 							["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with the Sporeggar faction.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3650, "256:256:88:50"),		-- Ango'rosh Grounds

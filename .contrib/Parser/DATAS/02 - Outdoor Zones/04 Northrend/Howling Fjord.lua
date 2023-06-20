@@ -197,8 +197,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						646,	-- Chicken (PET!)
 						647,	-- Grizzly Squirrel (PET!)
@@ -226,8 +225,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4062),	-- Apothecary Camp

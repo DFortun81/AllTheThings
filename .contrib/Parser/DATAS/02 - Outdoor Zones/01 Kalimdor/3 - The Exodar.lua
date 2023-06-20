@@ -37,14 +37,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		-- #endif
 		["isRaid"] = true,
 		["groups"] = {
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					464,	-- Grey Moth (PET!)
 					385,	-- Mouse (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(930, {	-- Exodar
 					-- #if BEFORE CATA

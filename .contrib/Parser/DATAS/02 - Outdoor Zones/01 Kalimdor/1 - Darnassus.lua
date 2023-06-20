@@ -79,16 +79,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					479,	-- Elfin Rabbit (PET!)
 					478,	-- Forest Moth (PET!)
 					452,	-- Red-Tailed Chipmunk (PET!)
 					419,	-- Small Frog (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(69, {	-- Darnassus
 					-- #if AFTER WRATH

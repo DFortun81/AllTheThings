@@ -63,8 +63,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			})),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
 					421,	-- Crimson Moth (PET!)
@@ -83,8 +82,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["description"] = "Can be found relaibly as secondary pets alongside Baby Apes, but also found in Booty Bay.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
 					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",

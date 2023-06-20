@@ -54,8 +54,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					424,	-- Roach (PET!)
@@ -70,8 +69,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["190:190:31:155"] = 482,	-- Highperch

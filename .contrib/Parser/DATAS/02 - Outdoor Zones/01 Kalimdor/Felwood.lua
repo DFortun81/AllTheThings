@@ -76,8 +76,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
 					420,	-- Toad (PET!)
@@ -90,8 +89,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(498),	-- Tainted Moth (PET!)
 					pet(499),	-- Tainted Rat (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["145:159:496:509"] = 2478,	-- Morlos'Aran

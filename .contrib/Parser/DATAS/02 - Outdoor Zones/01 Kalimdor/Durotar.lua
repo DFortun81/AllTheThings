@@ -1568,8 +1568,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				pet(635),	-- Adder (PET!)
 				pet(468),	-- Creepy Crawly (PET!)
 				pet(467),	-- Dung Beetle (PET!)
@@ -1577,8 +1576,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				pet(466),	-- Spiny Lizard (PET!)
 				pet(420),	-- Toad (PET!)
 				pet(418),	-- Water Snake (PET!)
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["128:110:464:33"] = 817,	-- Skull Rock

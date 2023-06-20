@@ -97,8 +97,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					635,	-- Adder (PET!)
 					474,	-- Cheetah Cub (PET!)
@@ -111,8 +110,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found with groups of roaming Dusthoof Giraffe.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(359),	-- Bael Modan

@@ -96,8 +96,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					387,	-- Snake (PET!)
@@ -110,8 +109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found in the area around Onyxia's Lair in Dustwallow Marsh.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(2079, "200:195:660:21"),	-- Alcaz Island

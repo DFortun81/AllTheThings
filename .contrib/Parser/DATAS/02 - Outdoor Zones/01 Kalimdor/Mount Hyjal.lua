@@ -109,8 +109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					487,	-- Alpine Chipmunk (PET!)
 					632,	-- Ash Lizard (PET!)
@@ -143,8 +142,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			prof(FISHING, {
 				o(202776, {	-- Mountain Trout School
 					i(22739, {	-- Tome of Polymorph: Turtle

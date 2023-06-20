@@ -5,7 +5,7 @@
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(KUN_LAI_SUMMIT, {
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					747,	-- Effervescent Glowfly (PET!)
 				}},
@@ -26,7 +26,7 @@ root(ROOTS.Zones, {
 					pet(730),	-- Tolai Hare Pup (PET!)
 					pet(731),	-- Zooey Snake (PET)
 				},
-			})),
+			}),
 		}),
 	}),
 });

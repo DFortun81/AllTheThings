@@ -5,7 +5,7 @@
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(THE_JADE_FOREST, {
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					711,	-- Sifang Otter (PET!)
 					712,	-- Sifang Otter Pup (PET!)
@@ -41,7 +41,7 @@ root(ROOTS.Zones, {
 						["description"] = "Requires Exalted with Order of the Cloud Serpent. Found around The Arboretum.",
 					}),
 				},
-			})),
+			}),
 		}),
 	}),
 });

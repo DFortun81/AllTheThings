@@ -803,8 +803,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { WESTERN_PLAGUELANDS },
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 				}},
@@ -814,8 +813,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(628),	-- Infected Fawn (PET!)
 					pet(627),	-- Infected Squirrel (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				-- #if AFTER WRATH

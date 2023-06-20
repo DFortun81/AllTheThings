@@ -20,15 +20,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["icon"] = [[~_.asset("Achievement_Character_Tauren_Male")]],
 				-- #endif
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
+					battlepets({
 						["sym"] = {{"select","speciesID",
 							385,	-- Mouse (PET!)
 							386,	-- Prairie Dog (PET!)
 							378,	-- Rabbit (PET!)
 						}},
-					})),
-					-- #endif
+					}),
 					n(QUESTS, {
 						q(752, {	-- A Humble Task (1/2)
 							["qg"] = 2981,	-- Chief Hawkwind
@@ -561,8 +559,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					385,	-- Mouse (PET!)
 					386,	-- Prarie Dog (PET!)
@@ -571,8 +568,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					pet(477),	-- Gazelle Fawn (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["128:120:473:260"] = 224,	-- Ravaged Caravan

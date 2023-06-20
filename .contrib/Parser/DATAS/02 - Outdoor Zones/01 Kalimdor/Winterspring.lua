@@ -274,8 +274,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					441,	-- Alpine Hare (PET!)
 					633,	-- Mountain Skunk (PET!)
@@ -295,8 +294,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Starts spawning December 21st. Stops spawning March 20th",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["125:165:611:242"] = 2247,	-- Ice Thistle Hills

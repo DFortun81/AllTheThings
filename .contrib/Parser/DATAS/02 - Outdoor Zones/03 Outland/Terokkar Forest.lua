@@ -271,8 +271,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						417,	-- Rat (PET!)
 						397,	-- Skunk (PET!)
@@ -286,8 +285,7 @@ root(ROOTS.Zones, {
 						}),
 						pet(517),	-- Warpstalker Hatchling (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3684, "256:256:480:277"),	-- Allerian Stronghold

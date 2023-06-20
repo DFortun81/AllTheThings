@@ -2849,8 +2849,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER CATA
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					484,	-- Desert Spider (PET!)
 					431,	-- Rattlesnake (PET!)
@@ -2870,8 +2869,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(492),	-- Stinkbug (PET!)
 					pet(432),	-- Stripe-Tailed Scorpid (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["110:140:611:147"] = 986,	-- Zalashji's Den

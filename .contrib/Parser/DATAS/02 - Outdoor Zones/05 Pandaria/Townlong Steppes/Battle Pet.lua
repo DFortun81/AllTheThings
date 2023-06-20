@@ -5,7 +5,7 @@
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(TOWNLONG_STEPPES, {
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					724,	-- Alpine Foxling (PET!)
 					725,	-- Alpine Foxling Kit (PET!)
@@ -28,7 +28,7 @@ root(ROOTS.Zones, {
 					pet(739),	-- Mongoose Pup (PET!)
 					pet(740),	-- Yakrat (PET!)
 				},
-			})),
+			}),
 		}),
 	}),
 });

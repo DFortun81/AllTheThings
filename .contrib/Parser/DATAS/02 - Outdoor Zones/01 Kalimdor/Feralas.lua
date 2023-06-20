@@ -57,8 +57,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit (PET!)
 					379,	-- Squirrel (PET!)
@@ -73,8 +72,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["timeline"] = { ADDED_5_1_0 },
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["110:110:493:70"] = 1113,	-- Oneiros

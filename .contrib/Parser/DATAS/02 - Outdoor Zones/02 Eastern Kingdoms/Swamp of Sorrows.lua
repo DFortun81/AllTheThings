@@ -45,8 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					403,	-- Parrot (PET!)
 					401,	-- Strand Crab (PET!)
@@ -58,8 +57,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(422),	-- Moccasin (PET!)
 					pet(402),	-- Swamp Moth (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["215:365:724:120"] = 1778,	-- Sorrowmurk

@@ -93,8 +93,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					417,	-- Rat (PET!)
 					424,	-- Roach (PET!)
@@ -109,8 +108,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found on the Blackfathom Deeps beach in Ashenvale.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["128:195:131:137"] = 441,	-- Lake Falathim

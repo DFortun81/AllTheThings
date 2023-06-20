@@ -111,8 +111,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						641,	-- Arctic Hare (PET!)
 						387,	-- Snake (PET!)
@@ -125,8 +124,7 @@ root(ROOTS.Zones, {
 							["description"] = "Spawns in the farms south of The Argent Stand.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4322),	-- Altar of Har'koa

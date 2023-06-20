@@ -1401,8 +1401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					646,	-- Chicken (PET!)
 				}},
@@ -1417,8 +1416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(379),	-- Squirrel (PET!)
 					pet(675),	-- Stormwind Rat (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["225:220:422:332"] = 18,	-- Crystal Lake

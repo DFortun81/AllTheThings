@@ -181,8 +181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					393,	-- Cockroach (PET!)
@@ -223,8 +222,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					pet(549),	-- Yellow-Bellied Marmot (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			n(FLIGHT_PATHS, {
 				fp(659, {	-- Bloodgulch, Twilight Highlands
 					["cr"] = 47156,	-- Bramok Gorewing <Wind Rider Master>

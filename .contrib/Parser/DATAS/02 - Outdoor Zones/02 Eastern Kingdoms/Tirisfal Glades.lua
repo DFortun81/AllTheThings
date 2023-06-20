@@ -28,16 +28,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["maps"] = { 466 },	-- Night Web's Hollow
 				-- #endif
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
+					battlepets({
 						pet(417, {	-- Rat (PET!)
 							["description"] = "Found in MANY zones on Azeroth and Draenor, this place just seems to have the highest concentration of them."
 						}),
 						pet(458, {	-- Lost of Lordaeron (PET!)
 							["description"] = "Found mostly around the Ruins of Lordaeron.",
 						}),
-					})),
-					-- #endif
+					}),
 					n(QUESTS, {
 						q(8, {	-- A Rogue's Deal (1/2)
 							["providers"] = {
@@ -677,16 +675,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					417,	-- Bat (PET!)
 					646,	-- Chicken (PET!)
 					417,	-- Rat (PET!)
 					458,	-- Lost of Lordaeron (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(157, "256:210:335:139"),	-- Agamand Mills

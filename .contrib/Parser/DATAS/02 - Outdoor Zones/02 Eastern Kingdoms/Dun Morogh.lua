@@ -710,8 +710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				["maps"] = { NEW_TINKERTOWN_LOWER },
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
+					battlepets({
 						pet(1162, {	-- Fluxfire Feline (PET!)
 							["description"] = "Found all around the Toxic Airfield and Lower Gnomeregan.",
 							["timeline"] = { ADDED_5_1_0 },
@@ -720,8 +719,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["description"] = "Found only in the Toxic Airfield near Gnomeregan.",
 							["coord"] = { 43, 59, NEW_TINKERTOWN },
 						}),
-					})),
-					-- #endif
+					}),
 					n(QUESTS, {
 						q(26205, {	-- A Job for the Multi-Bot
 							["qg"] = 42553,	-- Engineer Grindspark
@@ -1138,8 +1136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit
 				}},
@@ -1160,8 +1157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["115:115:252:249"] = 137,	-- Brewnall Village
