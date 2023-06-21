@@ -110,8 +110,6 @@ ach(17538),	-- Dragon Chase - WS02
 ach(17725),	-- Vicious Saddle (37)
 ach(17726),	-- Vicious Saddle (37)
 10.1.0.48537
-ach(17737),	-- Flame Warden of the Dragon Isles
-ach(17738),	-- Flame Keeper of the Dragon Isles
 ach(17742),	-- <DNT> Loamm Niffen Rank 01 (Account) \\ <DNT> Loamm Niffen Rank 01
 ach(17743),	-- <DNT> Loamm Niffen Rank 02 (Account) \\ <DNT> Loamm Niffen Rank 02
 ach(17744),	-- <DNT> Loamm Niffen Rank 03 (Account) \\ <DNT> Loamm Niffen Rank 03

@@ -1058,9 +1058,6 @@ root(ROOTS.Unsorted, {
 				i(204063),	-- Windsor's Journal
 				i(205410),	-- Pungent Morsel
 			}),
-			filter(TOYS, {
-				i(206038),	-- Flamin' Ring of Flashiness (TOY!) [Midsummer?]
-			}),
 			n(WEAPONS, {
 				i(204638),	-- Sunder Wing
 			}),
@@ -1165,7 +1162,6 @@ root(ROOTS.Unsorted, {
 				q(75372),	-- Drive Them Before Us
 				q(75376),	-- Suffuse, Reuse, Recycle
 				q(75389),	--
-				q(75398),	-- Honor the Flame
 				q(75408),	-- Calling All Dracthyr!
 				q(75418),	--
 				q(75429),	--
@@ -1216,14 +1212,9 @@ root(ROOTS.Unsorted, {
 				q(75614),	--
 				q(75615),	--
 				q(75616),	--
-				q(75617),	-- Honor the Flame
 				q(75618),	--
 				-- 10.1.0.48537
 				q(75631),	--
-				q(75640),	-- Honor the Flame
-				q(75645),	-- Honor the Flame
-				q(75647),	-- Honor the Flame
-				q(75650),	-- Honor the Flame
 				-- 10.1.0.48661
 				q(75719),	-- [DNT] Test Quest
 				q(75726),	-- Sweaty Armor
