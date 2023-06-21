@@ -34,6 +34,81 @@ VERSION_THING_DICT: dict[str, list[type[Thing]]] = {
     "Classic Era": [Achievements, Factions, FlightPaths, Quests, Recipes, Transmog, SpellItems, SkillLines, Items, SpellNames, Creatures],
     "Retail": Thing.__subclasses__(),
 }
+"""Helper Functions"""
+
+
+def create_dict_from_raw(file_name: str, n: int) -> dict[str, list[str]]:
+    """This function creates a dict of raw files"""
+    raw_path = Path("Raw", file_name)
+    item_dict: dict[str, list[str]] = {}
+    with open(raw_path, "r+") as raw_file:
+        lines = raw_file.readlines()
+        for line in lines:
+            try:
+                key = line.split(DELIMITER)[0].strip()
+                value = line.split(DELIMITER)[n].strip()
+            except IndexError:
+                continue
+            if key in item_dict.keys():
+                name_list: list[str] = item_dict[key]
+                name_list.append(value)
+                item_dict[key] = name_list
+            else:
+                item_dict[key] = [f"{value}"]
+    return item_dict
+
+
+def extract_nth_column(csv_path: Path, n: int) -> list[str]:
+    """Extract nth column from CSV file."""
+    csv_list: list[str] = []
+    with open(csv_path) as csv_file:
+        for line in csv_file:
+            try:
+                element: str = line.split(DELIMITER)[n].strip() + "\n"
+                csv_list.append(element)
+            except IndexError:
+                empty_line: str = ""
+                csv_list.append(empty_line)
+    return csv_list
+
+
+def remove_empty_builds(lines: list[str]) -> list[str]:
+    """Remove builds that don't have any IDs."""
+    clean_lines = [lines[0]]
+    for line in lines[1:]:
+        if not line.rstrip().isnumeric() and not clean_lines[-1].rstrip().isnumeric():
+            clean_lines.pop()
+        clean_lines.append(line)
+    if not clean_lines[-1].rstrip().isnumeric():
+        clean_lines.pop()
+    return clean_lines
+
+
+def get_other_skilllines() -> list[str]:
+    """Get other interesting skilllines ."""
+    other_skilllines = list[str]()
+    with open(Path("Exclusion", "SkillLineOther.txt")) as skilllineother_file:
+        for line in skilllineother_file:
+            skillline_id = remove_non_digits(line.split(DELIMITER)[0])
+            other_skilllines.append(skillline_id)
+    return other_skilllines
+
+
+def build_profession_dict() -> dict[str, list[str]]:
+    profession_dict: dict[str, list[str]] = {}
+    raw_profession_dict: dict[str, list[str]] = create_dict_from_raw("SkillLines.txt", 1)
+    exclusion_list = extract_nth_column(Path("Exclusion", "SkillLines.txt"), 0)
+    for exclusion in exclusion_list:
+        raw_profession_dict.pop(exclusion.strip(), "")
+    for key, value in raw_profession_dict.items():
+        profession_dict[value[0]] = [key]
+    profession_dict["Other"] = get_other_skilllines()
+    profession_dict["Runeforging"] = ["776", "960"]
+    profession_dict["Lockpicking"] = ["181", "242", "633"]
+    return profession_dict
+
+
+"""Programme"""
 
 
 def get_thing_table(thing: type[Thing], build: str) -> list[str]:
@@ -97,126 +172,28 @@ def get_existing_ids(thing: type[Thing]) -> list[str]:
     return existing_ids
 
 
-def build_profession_dict() -> dict[str, int]:
-    """Returns dict[profession: str, skillLineID: int]."""
-    profession_dict = dict[str, int]()
-    exclusion_list = extract_nth_column(Path("Exclusion", "SkillLines.txt"), 0)
-    with (
-        open(Path("Raw", "SkillLines.txt")) as skillline_file,
-        open(Path("Builds", "SkillLines.txt")) as builds_file,
-    ):
-        builds = builds_file.readlines()
-        for skillline_line in skillline_file:
-            if skillline_line not in builds:
-                skillline_id, profession = skillline_line.split(DELIMITER)
-                skillline_id = remove_non_digits(skillline_id)
-                if skillline_id + "\n" not in exclusion_list:
-                    profession_dict[profession.strip()] = int(skillline_id)
-    return profession_dict
-
-
-def get_other_skilllines() -> list[int]:
-    """Get other interesting skilllines ."""
-    other_skilllines = list[int]()
-    with open(Path("Exclusion", "SkillLineOther.txt")) as skilllineother_file:
-        for line in skilllineother_file:
-            skillline_id = remove_non_digits(line.split(DELIMITER)[0])
-            other_skilllines.append(int(skillline_id))
-    return other_skilllines
-
-
 def sort_raw_file_recipes() -> None:
     """Sort raw files for recipes."""
-    profession_dict = build_profession_dict()
-    profession_dict["Other"] = 0
+    profession_dict: dict[str, list[str]] = build_profession_dict()
     raw_path_dict: dict[str, Path] = {
         profession: Path("Raw", "Professions", f"{profession}.txt")
         for profession in profession_dict
     }
-    other_skilllines = get_other_skilllines()
-    raw_path_dict["Other"] = Path("Raw", "Professions", "Other.txt")
-    print(profession_dict)
-    with (
-        open(Path("Raw", "Recipes.txt")) as raw_file,
-        open(Path("Builds", "Recipes.txt")) as builds_file,
-    ):
-        builds = builds_file.readlines()
+    with open(Path("Raw", "Recipes.txt")) as raw_file:
         raw_lines = raw_file.readlines()
-        for profession in profession_dict.keys() | {"Other"}:
+        for profession in profession_dict:
             print(profession)
             recipe_list = list[str]()
             with open(raw_path_dict[profession], "r+") as sorted_file:
                 for line in raw_lines:
-                    if line in builds:
+                    if DELIMITER not in line:
                         recipe_list.append(line)
-                    else:
-                        spell, skill_line = line.split(DELIMITER)
-                        skill_line_id = int(skill_line.strip())
-                        if (
-                            profession == "Other"
-                            and skill_line_id in other_skilllines
-                            or skill_line_id == profession_dict[profession]
-                        ):
-                            recipe_list.append(spell + "\n")
+                        continue
+                    spell, skill_line = line.split(DELIMITER)
+                    if skill_line.strip() in profession_dict[profession]:
+                        recipe_list.append(spell + "\n")
                 recipe_list = remove_empty_builds(recipe_list)
                 sorted_file.writelines(recipe_list)
-
-
-def extract_nth_column(csv_path: Path, n: int) -> list[str]:
-    """Extract nth column from CSV file."""
-    csv_list: list[str] = []
-    with open(csv_path) as csv_file:
-        for line in csv_file:
-            try:
-                element: str = line.split(DELIMITER)[n].strip() + "\n"
-                csv_list.append(element)
-            except IndexError:
-                empty_line: str = ""
-                csv_list.append(empty_line)
-    return csv_list
-
-
-def remove_empty_builds(lines: list[str]) -> list[str]:
-    """Remove builds that don't have any IDs."""
-    clean_lines = [lines[0]]
-    for line in lines[1:]:
-        if not line.rstrip().isnumeric() and not clean_lines[-1].rstrip().isnumeric():
-            clean_lines.pop()
-        clean_lines.append(line)
-    if not clean_lines[-1].rstrip().isnumeric():
-        clean_lines.pop()
-    return clean_lines
-
-
-def create_missing_recipes() -> None:
-    """Create a missing file for Recipes using difference between Categories.lua, raw file and exclusions."""
-    profession_dict = build_profession_dict()
-    for profession in profession_dict.keys() | {"Other"}:
-        raw_path = Path("Raw", "Professions", f"{profession}.txt")
-        missing_path = Path(
-            DATAS_FOLDER,
-            "00 - MissingIDs",
-            "Professions",
-            f"{profession}.txt",
-        )
-        with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
-            raw_lines = raw_file.readlines()
-            excluded_recipes = extract_nth_column(
-                Path("Exclusion", "Professions", f"{profession}.txt"), 0
-            )
-            difference = sorted(
-                set(raw_lines) - set(get_existing_ids(Recipes)) - set(excluded_recipes),
-                key=raw_lines.index,
-            )
-            if (difference := remove_empty_builds(difference)):
-                missing_file.writelines(difference)
-            else:
-                missing_file.write("Good Work! Nothing to do here!")
-            if not (difference := get_itemdb_difference(profession, raw_lines, excluded_recipes)):
-                missing_file.write(f"\n\nNothing is Missing in {profession}ItemDB.lua! Good Work!")
-                continue
-            missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
-            missing_file.writelines(difference)
 
 
 def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipes: list[str]) -> list[str]:
@@ -244,13 +221,52 @@ def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipe
         return []
 
 
+def create_missing_recipes() -> None:
+    """Create a missing file for Recipes using difference between Categories.lua, raw file and exclusions."""
+    profession_dict: dict[str, list[str]] = build_profession_dict()
+    raw_path_dict: dict[str, Path] = {
+        profession: Path("Raw", "Professions", f"{profession}.txt")
+        for profession in profession_dict
+    }
+    exclusion_path_dict: dict[str, Path] = {
+        profession: Path("Exclusion", "Professions", f"{profession}.txt")
+        for profession in profession_dict
+    }
+    missing_path_dict: dict[str, Path] = {
+        profession: Path(
+            DATAS_FOLDER,
+            "00 - MissingIDs",
+            "Professions",
+            f"{profession}.txt",
+        )
+        for profession in profession_dict
+    }
+    for profession in profession_dict:
+        with open(missing_path_dict[profession], "w") as missing_file:
+            raw_ids = extract_nth_column(raw_path_dict[profession], 0)
+            excluded_ids = extract_nth_column(exclusion_path_dict[profession], 0)
+            difference = sorted(
+                set(raw_ids) - set(get_existing_ids(Recipes)) - set(excluded_ids),
+                key=raw_ids.index,
+            )
+            if (difference := remove_empty_builds(difference)):
+                missing_file.writelines(difference)
+            else:
+                missing_file.write("Good Work! Nothing to do here!")
+            if not (difference := get_itemdb_difference(profession, raw_ids, excluded_ids)):
+                missing_file.write(f"\n\nNothing is Missing in {profession}ItemDB.lua! Good Work!")
+                continue
+            missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
+            missing_file.writelines(difference)
+    return
+
+
 def create_missing_file(thing: type[Thing]) -> None:
     """Create a missing file for a thing using difference between Categories.lua, raw file and exclusions."""
     if not thing.real_collectible:
         raise NotImplementedError("This is not a real collectible.")
     if thing == Recipes:
         create_missing_recipes()
-        return
     missing_path = Path(
         DATAS_FOLDER,
         "00 - MissingIDs",
@@ -284,52 +300,34 @@ def create_missing_file(thing: type[Thing]) -> None:
                 missing_file.writelines(difference)
 
 
-def create_dict_from_raw(file_name: str, n: int) -> dict[str, list[str]]:
-    """This function creates a dict of raw files"""
-    raw_path = Path("Raw", file_name)
-    item_dict: dict[str, list[str]] = {}
-    with open(raw_path, "r+") as raw_file:
-        lines = raw_file.readlines()
-        for line in lines:
-            try:
-                key = line.split(DELIMITER)[0].strip()
-                value = line.split(DELIMITER)[n].strip()
-            except IndexError:
-                continue
-            if key in item_dict.keys():
-                name_list: list[str] = item_dict[key]
-                name_list.append(value)
-                item_dict[key] = name_list
-            else:
-                item_dict[key] = [f"{value}"]
-    return item_dict
-
-
 def post_process_recipes() -> None:
-    profession_dict: dict[str, int] = build_profession_dict()
+    profession_dict: dict[str, list[str]] = build_profession_dict()
     spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellNames.txt", 1)
-    for profession in profession_dict.keys() | {"Other"}:
-        print(f"{profession}")
-        missing_path = Path(
+    missing_path_dict: dict[str, Path] = {
+        profession: Path(
             DATAS_FOLDER,
             "00 - MissingIDs",
             "Professions",
             f"{profession}.txt",
         )
-        missing_lines = extract_nth_column(missing_path, 0)
-        with open(missing_path) as missing_file:
-            for index, id in enumerate(missing_lines):
-                id = re.sub("[^\\d^.]", "", id.strip())
-                if id.isdigit():
-                    missing_lines[index] = f"r({id}),\t--"
-                    if id in spell_dict.keys():
-                        name_list: list[str] = spell_dict[id].copy()
-                        name_list.reverse()
-                        missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
-                    else:
-                        missing_lines[index] += "\n"
-        with open(missing_path, "w") as missing_file:
+        for profession in profession_dict
+    }
+    for profession in profession_dict:
+        print(f"{profession}")
+        missing_lines = extract_nth_column(missing_path_dict[profession], 0)
+        for index, id in enumerate(missing_lines):
+            id = re.sub("[^\\d^.]", "", id.strip())
+            if id.isdigit():
+                missing_lines[index] = f"r({id}),\t--"
+                if id in spell_dict.keys():
+                    name_list: list[str] = spell_dict[id].copy()
+                    name_list.reverse()
+                    missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
+                else:
+                    missing_lines[index] += "\n"
+        with open(missing_path_dict[profession], "w") as missing_file:
             missing_file.writelines(missing_lines)
+    return
 
 
 def post_process(thing: type[Thing]) -> None:
@@ -338,7 +336,6 @@ def post_process(thing: type[Thing]) -> None:
         raise NotImplementedError("This is not a real collectible.")
     if thing == Recipes:
         post_process_recipes()
-        return
     missing_path = Path(
         DATAS_FOLDER,
         "00 - MissingIDs",

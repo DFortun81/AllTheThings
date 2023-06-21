@@ -76,8 +76,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
 					420,	-- Toad (PET!)
@@ -90,8 +89,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(498),	-- Tainted Moth (PET!)
 					pet(499),	-- Tainted Rat (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["145:159:496:509"] = 2478,	-- Morlos'Aran
@@ -2775,9 +2773,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14345,	-- The Ongar
 						7093,	-- Vile Ooze
 					},
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling (PET!)
-					},
+					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				i(15752, {	-- Pattern: Living Leggings
 					["timeline"] = { "removed 4.0.3" },

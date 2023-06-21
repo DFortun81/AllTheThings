@@ -38,8 +38,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					415,	-- Fire Beetle (PET!)
 				}},
@@ -48,8 +47,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(423),	-- Lava Crab (PET!)
 					pet(428),	-- Molten Hatchling (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["275:235:77:366"] = 1957,	-- Blackchar Cave

@@ -9,14 +9,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
 		-- #endif
 		["groups"] = {
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({ ADDED_5_1_0 }, {
 				pet(1161, {	-- Infinite Whelpling (PET!)
 					["description"] = "This pet can be found around the Caverns of Time entrance and the pathway leading to the main chamber.",
-					["timeline"] = { ADDED_5_1_0 },
 				}),
-			})),
-			-- #endif
+			}),
 			-- #if AFTER TBC
 			n(FACTIONS, {
 				applyclassicphase(TBC_PHASE_ONE, faction(989, {	-- Keepers of Time

@@ -71,8 +71,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					648,	-- Huge Toad (PET!)
@@ -85,8 +84,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 45.4, 70.0, WESTERN_PLAGUELANDS },
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["160:125:300:311"] = 199,	-- Felstone Field
@@ -2627,9 +2625,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						12387,	-- Large Vile Slime
 						1806,	-- Vile Slime
 					},
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling (PET!)
-					},
+					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				i(13357, {	-- Osseous Agitator
 					["description"] = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",

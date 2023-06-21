@@ -243,16 +243,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		petbattle(ach(7500, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {		-- Going to Need More Leashes(250)
 			i(85578),		-- Feral Vermling (PET!)
 		}))),
-		petbattle(ach(5875, bubbleDownSelf({ ["timeline"] = { "added 4.1.0" } }, {		-- Littlest Pet Shop (150)
+		petbattle(ach(5875, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Littlest Pet Shop (150)
 			i(54810),		-- Celestial Dragon (PET!)
 		}))),
-		petbattle(ach(5877, bubbleDownSelf({ ["timeline"] = { "added 4.1.0" } }, {		-- Menagerie (125)
+		petbattle(ach(5877, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Menagerie (125)
 			i(71387),		-- Brilliant Kaliri (PET!)
 		}))),
-		petbattle(ach(5876, bubbleDownSelf({ ["timeline"] = { "added 4.1.0" } }, {		-- Petting Zoo (100)
+		petbattle(ach(5876, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Petting Zoo (100)
 			i(71140),		-- Nuts (PET!)
 		}))),
-		petbattle(ach(2516, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {		-- Lil' Game Hunter (75)
+		petbattle(ach(2516, bubbleDownSelf({ ["timeline"] = { ADDED_3_1_0 } }, {		-- Lil' Game Hunter (75)
 			i(44841),		-- Little Fawn (PET!)
 		}))),
 		petbattle(ach(1250, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {		-- Shop Smart, Shop Pet...Smart (50)

@@ -41,8 +41,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["description"] = "This is an outdoor zone, a non-instanced version of Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
 				["icon"] = "Interface\\Icons\\achievement_zone_silithus_01",
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
+					battlepets({
 						["sym"] = {{"select","speciesID",
 							513,	-- Qiraji Guardling (PET!)
 							511,	-- Sidewinder (PET!)
@@ -52,8 +51,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["description"] = "Can be found near the gates of Ahn'Qiraj, or in the un-instanced zone south of Silithus.",
 							}),
 						},
-					})),
-					-- #endif
+					}),
 					n(RARES, {
 						n(50747, {	-- Tix
 							["coord"] = { 60.8, 6.6, AHNQIRAJ_THE_FALLEN_KINGDOM },
@@ -90,8 +88,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
 					484,	-- Desert Spider (PET!)
@@ -106,8 +103,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					pet(433),	-- Spiky Lizard (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(3427, {	-- Bronzebeard Encampment
@@ -2439,7 +2435,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18677, {	-- Zephyr Cloak
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(21548, {	-- Pattern: Stormshroud Gloves
+						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals

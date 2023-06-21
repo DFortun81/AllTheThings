@@ -29,13 +29,9 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 			}),
 		},
 	}),
-	i(32465, {	-- Lucky (PET!)
-		["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
-		["timeline"] = { "added 2.4.2.8278" },
-	}),
 	i(32498, {	-- Lucky (PET!)
 		["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
-		["timeline"] = { "added 2.4.2.8278" },
+		["timeline"] = { ADDED_2_1_0 },
 	}),
 	i(103632, {	-- Lucky Box of Greatness
 		["description"] = "Reward from the Azeroth Academy Mentor Recruitment Promotion (China Only)",
@@ -47,23 +43,27 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		},
 	}),
 	ach(3618, {	-- Murkimus the Gladiator
-		["timeline"] = { "added 3.1.2" },
+		["timeline"] = { ADDED_3_1_2 },
 	}),
-	i(45180, {	-- Murkimus the Gladiator (PET!)
+	i(45180, {	-- Murkimus the Gladiator [Murkimus' Little Spear] (PET!)
 		["description"] = "This was obtained by participating in at least 200 arena matches in the 2009 Arena Tournament, or at least 50 matches on the same team in the years after that.",
-		["timeline"] = { "added 3.1.2" },
+		["timeline"] = { ADDED_3_1_2 },
 	}),
-	i(46892, {	-- Murkimus the Gladiator (PET!)
-		["description"] = "This was obtained by participating in at least 200 arena matches in the 2009 Arena Tournament, or at least 50 matches on the same team in the years after that.",
-		["timeline"] = { "added 3.1.2" },
+	i(46892, {	-- Murkimus the Gladiator [Murkimus' Tiny Spear] (PET!)
+		["description"] = "This was a reward for the 2011 arena tournament, requirements were to participate in 50 games in your current 3v3 team when the tournament closed",
+		["timeline"] = { ADDED_4_2_0 },
 	}),
-	i(20651, {	-- Orange Murloc Egg (Murki)
+	i(100870, {	-- Murkimus the Gladiator [Murkimus' Tyrannical Spear] (PET!)
+		["description"] = "This was a reward for the 2013 arena tournament, requirements were to participate in 50 games in your current 3v3 team when the tournament closed",
+		["timeline"] = { ADDED_5_2_0 },
+	}),
+	i(20651, {	-- Murki (PET!)
 		["description"] = "Reward from a Korean Promotional Event (Korea Only)",
 		["timeline"] = { "added 2.1.0.6678" },
 	}),
 	i(22114, {	-- Gurky (PET!)
 		["description"] = "Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",
-		["timeline"] = { "added 2.1.0.6678" },
+		["timeline"] = { ADDED_2_0_3 },
 	}),
 	i(90953, {	-- Spectral Cub (PET!)
 		["description"] = "Reward from the Battle.net World Championship in Shanghai 2012 (China Only)",
@@ -82,7 +82,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	i(41133, {	-- Mr. Chilly (PET!)
 		["description"] = "This was awarded to players when they linked their original WoW account to a Battle.Net Tag. No longer available as all accounts now require Battle.Net Tag initially, unless you have access to an unattached account.",
-		["timeline"] = { "added 3.0.1" },
+		["timeline"] = { ADDED_3_2_2 },
 	}),
 	ach(9496, {	-- Warlord's Deathwheel
 		["timeline"] = { "added 6.0.2.18888" },

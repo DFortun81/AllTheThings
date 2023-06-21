@@ -5,7 +5,7 @@
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					564,	-- Emerald Turtle (PET!)
 				}},
@@ -19,7 +19,7 @@ root(ROOTS.Zones, {
 					pet(711),	-- Sifang Otter (PET!)
 					pet(713),	-- Softshell Snapling (PET!)
 				},
-			})),
+			}),
 		}),
 	}),
 });

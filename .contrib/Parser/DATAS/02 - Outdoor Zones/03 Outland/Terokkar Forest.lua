@@ -271,8 +271,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						417,	-- Rat (PET!)
 						397,	-- Skunk (PET!)
@@ -286,8 +285,7 @@ root(ROOTS.Zones, {
 						}),
 						pet(517),	-- Warpstalker Hatchling (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3684, "256:256:480:277"),	-- Allerian Stronghold
@@ -321,7 +319,7 @@ root(ROOTS.Zones, {
 				-- #endif
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(1031, {	-- Sha'tari Skyguard
-						["icon"] = icon("ability_hunter_pet_netherray"),
+						["icon"] = "Interface\\Icons\\ability_hunter_pet_netherray",
 						["OnTooltip"] = OnTooltipForSkyguard,
 					})),
 				}),
@@ -1486,7 +1484,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(REWARDS, {
-					i(35348, {	-- Bag of Fishing Treasures
+					i(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "This bag is exclusive to the Crocolisk in the City Daily Quest.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -1501,8 +1499,8 @@ root(ROOTS.Zones, {
 							i(33820),	-- Weather-Beaten Fishing Hat
 							i(34109),	-- Weather-Beaten Journal
 						},
-					}),
-					i(34863, {	-- Bag of Fishing Treasures
+					})),
+					i(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "Shared reward bag for all the non-Croc dailies.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -1515,7 +1513,7 @@ root(ROOTS.Zones, {
 							i(33820),	-- Weather-Beaten Fishing Hat
 							i(34109),	-- Weather-Beaten Journal
 						},
-					}),
+					})),
 				}),
 				n(VENDORS, {
 					n(18962, {	-- Bar Talet
@@ -1533,7 +1531,9 @@ root(ROOTS.Zones, {
 							i(32771),	-- Airman's Ribbon Gallantry
 							i(32319),	-- Blue Riding Nether Ray (MOUNT!)
 							i(32314),	-- Green Riding Nether Ray (MOUNT!)
-							i(38628),	-- Nether Ray Fry (PET!)
+							i(38628, {	-- Nether Ray Fry (PET!)
+								["timeline"] = { ADDED_2_4_2 },
+							}),
 							i(32316),	-- Purple Riding Nether Ray (MOUNT!)
 							i(32317),	-- Red Riding Nether Ray (MOUNT!)
 							i(32318),	-- Silver Riding Nether Ray (MOUNT!)

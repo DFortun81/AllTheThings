@@ -92,7 +92,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["timeline"] = { "added 6.0.1.18566" },
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
-	i(44794, {	-- Spring Rabbit's Foot (PET!)
+	i(44794, {	-- Spring Rabbit (PET!)
 		["timeline"] = { "added 3.1.0.9733" },
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
@@ -145,7 +145,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				["timeline"] = { "added 3.1.0.9733" },
 				["f"] = -1,	-- Remove the filterID from being attached to this Item
 			}),
-			i(44794, {	-- Spring Rabbit's Foot
+			i(44794, {	-- Spring Rabbit (PET!)
 				["timeline"] = { "added 3.1.0.9733" },
 			}),
 			i(44800, {	-- Spring Robes

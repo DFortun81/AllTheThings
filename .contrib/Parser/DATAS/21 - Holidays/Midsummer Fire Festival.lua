@@ -154,7 +154,7 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
-	
+
 	i(116439, {	-- Blazing Cindercrawler (PET!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { "added 6.0.1.18594" },
@@ -205,7 +205,7 @@ local MERCHANT_GROUPS = {
 	}),
 	-- #if AFTER 2.4.0.7994
 	-- This item was originally exclusively available as a quest reward.
-	i(23083, {	-- Captured Flame (Pet)
+	i(23083, {	-- Captured Flame (PET!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 	}),
 	-- #endif
@@ -289,7 +289,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					i(117373, {	-- Frostscythe of Lord Ahune
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
-					i(53641, {	-- Frigid Frostling (Pet)
+					i(53641, {	-- Frigid Frostling (PET!)
 						["timeline"] = { "added 3.3.3.11723" },
 					}),
 				},
@@ -306,7 +306,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					i(54806, {	-- Frostscythe of Lord Ahune [Level 80]
 						["timeline"] = { "added 3.3.3.11723", "removed 4.0.1" },
 					}),
-					i(53641, {	-- Frigid Frostling (Pet)
+					i(53641, {	-- Frigid Frostling (PET!)
 						["timeline"] = { "added 3.3.3.11723" },
 					}),
 				},

@@ -64,8 +64,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					484,	-- Desert Spider (PET!)
 					467,	-- Dung Beetle (PET!)
@@ -80,8 +79,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(511),	-- Sidewinder (PET!)
 					pet(546),	-- Tol'vir Scarab (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			n(FLIGHT_PATHS, {
 				fp(653, {	-- Oasis of Vir'sar
 					["coord"] = { 26.6, 8.2, ULDUM },

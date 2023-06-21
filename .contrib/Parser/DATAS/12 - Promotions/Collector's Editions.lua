@@ -371,7 +371,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 	}),
 	tier(MOP_TIER, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
-		["timeline"] = { "added 5.0.1" },
+		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
 			ach(6849),	-- Collector's Edition: Imperial Quilen
 			ach(6848),	-- Collector's Edition: Lucky Quilen Cub
@@ -522,14 +522,14 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 		["timeline"] = { "added 5.0.4.15913" },
 		["groups"] = {
 			ach(7842),	-- Collector's Edition: Baneling
-			i(90177),	-- Baneling
+			i(90177),	-- Baneling (PET!)
 		},
 	})),
 	n(STARCRAFT_II_LEGACY_OF_THE_VOID, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["timeline"] = { "added 6.2.2.20395" },
 		["groups"] = {
 			ach(10309),	-- Collector's Edition: Zeradar
-			i(128423),	-- Zeradar
+			i(128423),	-- Zeradar (PET!)
 		},
 	})),
 	n(WARCRAFT_III_REFORGED_SPOILS_OF_WAR, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {

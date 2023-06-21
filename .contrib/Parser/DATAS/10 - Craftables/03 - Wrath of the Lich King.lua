@@ -370,8 +370,21 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(41508),	-- Mechano-Hog (MOUNT!)
 			i(44413),	-- Mekgineer's Chopper (MOUNT!)
 		}),
+		-- #if NOT ANYCLASSIC
+		filter(MISC, {
+			applyclassicphase(WRATH_PHASE_THREE, i(49040, {	-- Jeeves  (TOY!) [Why isn't this a toy?!]
+				["description"] = "This still isn't a toy... BLIZZARD.",
+			})),
+		}),
+		-- #endif
 		filter(TOYS, {
 			i(40895),	-- Gnomish X-Ray Specs (TOY!)
+			-- #if ANYCLASSIC
+			applyclassicphase(WRATH_PHASE_THREE, i(49040, {	-- Jeeves  (TOY!) [Why isn't this a toy?!]
+				["type"] = "toyID",
+				["f"] = TOYS,
+			})),
+			-- #endif
 			i(40768),	-- MOLL-E (TOY!)
 			-- #if BEFORE 4.0.1
 			i(40727, {	-- Personal Ejector Seat / Gnomish Gravity Well (TOY!)

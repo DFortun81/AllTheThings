@@ -21,19 +21,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 			----------------LG GOLD ------------------
 			------------------------------------------
 			-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
-			i(208064, {	-- Quantum chestpiece
+			i(208064, {	-- Quantum Chestpiece
 
 			}),
-			i(208063, {	-- Quantum gloves
+			i(208063, {	-- Quantum Gloves
 
 			}),
-			i(208061, {	-- Quantum headpiece
+			i(208061, {	-- Quantum Headpiece
 
 			}),
-			i(208065, {	-- Quantum legs
+			i(208065, {	-- Quantum Legs
 
 			}),
-			i(208062, {	-- Quantum shoulders
+			i(208062, {	-- Quantum Shoulders
 
 			}),
 			i(208216, {	-- Reins of the Quantum Courser
@@ -43,58 +43,58 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				}},
 			}),
 			n(WEAPONS, {
-				i(208111, {	-- Quantum axe
+				i(208111, {	-- Quantum Axe
 
 				}),
-				i(29356, {	-- Quantum blade
+				i(29356, {	-- Quantum Blade
 
 				}),
-				i(208117, {	-- Quantum bow
+				i(208117, {	-- Quantum Bow
 
 				}),
-				i(208118, {	-- Quantum crossbow
+				i(208118, {	-- Quantum Crossbow
 
 				}),
-				i(208119, {	-- Quantum firearm
+				i(208119, {	-- Quantum Firearm
 
 				}),
-				i(208125, {	-- Quantum focus
+				i(208125, {	-- Quantum Focus
 					i(78433),	-- Ledger of Revolting Rituals (DS Heroic)
 				}),
-				i(208112, {	-- Quantum greatsword
+				i(208112, {	-- Quantum Greatsword
 
 				}),
-				i(208113, {	-- Quantum greataxe
+				i(208113, {	-- Quantum Greataxe
 
 				}),
-				i(208114, {	-- Quantum greathammer
+				i(208114, {	-- Quantum Greathammer
 
 				}),
-				i(208120, {	-- Quantum knife
+				i(208120, {	-- Quantum Knife
 
 				}),
-				i(208121, {	-- Quantum knuckles
+				i(208121, {	-- Quantum Knuckles
 
 				}),
-				i(208110, {	-- Quantum mace
+				i(208110, {	-- Quantum Mace
 
 				}),
-				i(208116, {	-- Quantum polearm
+				i(208116, {	-- Quantum Polearm
 
 				}),
-				i(208115, {	-- Quantum staff
+				i(208115, {	-- Quantum Staff
 
 				}),
-				i(208109, {	-- Quantum sword
+				i(208109, {	-- Quantum Sword
 
 				}),
-				i(208122, {	-- Quantum warglaives
+				i(208122, {	-- Quantum Warglaives
 
 				}),
-				i(208123, {	-- Quantum wand
+				i(208123, {	-- Quantum Wand
 
 				}),
-				i(208126, {	-- Quantum shield
+				i(208126, {	-- Quantum Shield
 
 				}),
 			}),

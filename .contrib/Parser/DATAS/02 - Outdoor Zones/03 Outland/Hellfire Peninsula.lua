@@ -294,16 +294,14 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						635,	-- Adder (PET!)
 					}},
 					["groups"] = {
 						pet(414),	-- Scorpid (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3556, "256:256:182:412"),	-- Den of Haal'esh

@@ -41,8 +41,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					635,	-- Adder (PET!)
 					415,	-- Fire Beetle (PET!)
@@ -54,8 +53,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 59.6, 60.8, BLASTED_LANDS },
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(1441, "185:155:310:133"),	-- Altar of Storms

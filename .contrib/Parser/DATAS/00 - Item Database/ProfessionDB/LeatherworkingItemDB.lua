@@ -183,6 +183,29 @@ i(0, 28219);	-- Polar Tunic
 ------------------
 -- PATCH 2.0.1 --
 ------------------
+-- TRAINER --
+i(0, 32462);	-- Felscale Gloves
+i(0, 32463);	-- Felscale Boots
+i(0, 32464);	-- Felscale Pants
+i(0, 32465);	-- Felscale Breastplate
+i(0, 32455);	-- Heavy Knothide Leather
+i(0, 32456);	-- Knothide Armor Kit
+i(0, 32454);	-- Knothide Leather
+i(0, 32466);	-- Scaled Draenic Pants
+i(0, 32467);	-- Scaled Draenic Gloves
+i(0, 32468);	-- Scaled Draenic Vest
+i(0, 32469);	-- Scaled Draenic Boots
+i(0, 32470);	-- Thick Draenic Gloves
+i(0, 32471);	-- Thick Draenic Pants
+i(0, 32472);	-- Thick Draenic Boots
+i(0, 32473);	-- Thick Draenic Vest
+i(0, 32478);	-- Wild Draenish Boots
+i(0, 32479);	-- Wild Draenish Gloves
+i(0, 32480);	-- Wild Draenish Leggings
+i(0, 32481);	-- Wild Draenish Vest
+-- ITEM --
+
+
 
 ------------------
 -- PATCH 2.1.0 --

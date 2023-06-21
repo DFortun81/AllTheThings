@@ -63,8 +63,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			})),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
 					421,	-- Crimson Moth (PET!)
@@ -83,14 +82,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["description"] = "Can be found relaibly as secondary pets alongside Baby Apes, but also found in Booty Bay.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
-					["icon"] = icon("INV_Misc_Bandana_03"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",
 				}),
 				faction(21, {	-- Booty Bay
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -2091,14 +2089,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["coord"] = { 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
-					["groups"] = {
-						i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(18239, {	-- Pattern: Shadowskin Gloves (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
+					["sym"] = {{"select", "itemID",
+						14635,	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
+						18239,	-- Pattern: Shadowskin Gloves (RECIPE!)
+					}},
 				}),
 				n(151042, {	-- Skin-Me-Own-Coat Dibblefur <T-Shirt Scalper>
 					["coord"] = { 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },

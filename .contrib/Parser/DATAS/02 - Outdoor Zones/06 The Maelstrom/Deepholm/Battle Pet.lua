@@ -5,7 +5,7 @@
 root(ROOTS.Zones, {
 	m(948, {	-- The Maelstrom
 		m(DEEPHOLM, {
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					480,	-- Topaz Shale Hatchling (PET!)
 					469,	-- Twilight Beetle (PET!)
@@ -21,7 +21,7 @@ root(ROOTS.Zones, {
 				pet(756),	-- Fungal Moth (PET!)
 				pet(553),	-- Stowaway Rat (PET!)
 				},
-			})),
+			}),
 		}),
 	}),
 });

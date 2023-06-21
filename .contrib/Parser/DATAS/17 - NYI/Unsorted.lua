@@ -237,6 +237,16 @@ root(ROOTS.Unsorted, {
 				i(206341),	-- Ensemble: Wanderer's Lively Trappings
 				i(206342),	-- Ensemble: Wanderer's Sepia Trappings
 			}),
+			filter(TOYS, {
+				i(206268),	-- Ethereal Transmogrifier (TOY!)
+				i(208096),	-- Familiar Journal (TOY!)
+				i(206993),	-- Investi-gator's Pocketwatch (TOY!)
+				i(206195),	-- Path of the Naaru (TOY!)
+				i(206565),	-- Plagued Grain (TOY!)
+			}),
+			filter(MOUNTS, {
+				i(206585),	-- Valiance (MOUNT!)
+			}),
 			i(12840),	-- Inert Minion's Scourgestone
 			i(12841),	-- Inert Invader's Scourgestone
 			i(12843),	-- Inert Corruptor's Scourgestone
@@ -261,20 +271,12 @@ root(ROOTS.Unsorted, {
 			i(144241),	-- Fel-Infused Remains
 			i(147119),	-- Grimoire of the Shadow Succubus
 			i(147120),	-- Technique: Grimoire of the Shadow Succubus
-
 			i(158733),	-- Azerite-Infused Rock
 			i(175972),	-- Anima-Infused Venom
 			i(181516),	-- Stone-Laced Infused Ruby
 			i(183041),	-- Anima-Infused Silk
-
 			i(193412),	-- Primal-Infused Dragon Egg
-
-
-
-
 			i(200836),	-- Arcane-Infused Crystals
-
-
 			i(202247),	-- Curious Curio Goggles
 			i(202250),	-- Sweet Snapflower Bulb
 			i(202265),	-- Wheel of Whelpwhisper Brie
@@ -283,7 +285,6 @@ root(ROOTS.Unsorted, {
 			i(202286),	-- Warmed Coal
 			i(202288),	-- Obsidian Gemstone
 			i(202292),	-- Crystalline Shell
-			i(202293),	-- Rusziona's Whistle
 			i(202312),	-- Juicy Mammoth Steak
 			i(202313),	-- Echolocator
 			i(202330),	-- Fine-Pointed Quill
@@ -325,11 +326,7 @@ root(ROOTS.Unsorted, {
 			i(204895),	-- Storm-touched Missive Stone [DNT]
 			i(204983),	-- Primalist Dropbox Key [DNT]
 			i(204989),	-- Eric's Camera
-			i(205005),	-- Spore-Infused Combat Bandage
-			i(205006),	-- Spore-Infused Combat Bandage
-			i(205007),	-- Spore-Infused Combat Bandage
 			i(205146),	-- Weyrnstone
-			i(205232),	-- Iggy
 			i(205419),	-- Dinn's Drum
 			i(205819),	-- Ashen Predator's Poleyns
 			i(205978),	-- Glob of Azmerloth Slime
@@ -342,8 +339,6 @@ root(ROOTS.Unsorted, {
 			i(206190),	-- Venrik's Goat Milk
 			i(206191),	-- Roquefort-Stuffed Peppers
 			i(206192),	-- Picante Pomfruit Cake
-			i(206195),	-- Path of the Naaru
-			i(206268),	-- Ethereal Transmogrifier
 			i(206269),	-- Time-Lost Essence
 			i(206346),	-- Eva's Journal
 			i(206351),	-- Plans: Truesilver Champion
@@ -379,41 +374,23 @@ root(ROOTS.Unsorted, {
 			i(206400),	-- Pattern: Glacial Tether
 			i(206401),	-- Pattern: Glacial Leggings
 			i(206402),	-- Pattern: Glacial Footwear
-			i(206403),	-- Pattern: Polar Helm
-			i(206404),	-- Pattern: Polar Spaulders
-			i(206405),	-- Pattern: Polar Tunic
-			i(206406),	-- Pattern: Polar Bracers
-			i(206407),	-- Pattern: Polar Gloves
-			i(206408),	-- Pattern: Polar Belt
-			i(206409),	-- Pattern: Polar Leggings
-			i(206410),	-- Pattern: Polar Footwarmers
-			i(206411),	-- Pattern: Icy Scale Crown
-			i(206412),	-- Pattern: Icy Scale Shoulderpads
-			i(206413),	-- Pattern: Icy Scale Breastplate
-			i(206414),	-- Pattern: Icy Scale Bracers
-			i(206415),	-- Pattern: Icy Scale Gauntlets
-			i(206416),	-- Pattern: Icy Scale Waistwrap
-			i(206417),	-- Pattern: Icy Scale Leggings
-			i(206418),	-- Pattern: Icy Scale Stompers
-			i(206421),	-- Plans: Icebane Breastplate
-			i(206422),	-- Plans: Icebane Bracers
-			i(206423),	-- Plans: Icebane Gauntlets
 			i(206427),	-- Glacial Leggings
 			i(206428),	-- Glacial Epaulets
 			i(206429),	-- Glacial Chapeau
 			i(206430),	-- Glacial Tether
 			i(206431),	-- Glacial Footwear
-			i(206432),	-- Polar Leggings
-			i(206433),	-- Polar Spaulders
-			i(206434),	-- Polar Helm
-			i(206435),	-- Polar Belt
-			i(206436),	-- Polar Footwarmers
-			i(206437),	-- Icy Scale Leggings
-			i(206438),	-- Icy Scale Shoulderpads
-			i(206439),	-- Icy Scale Crown
-			i(206440),	-- Icy Scale Waistwrap
-			i(206441),	-- Icy Scale Stompers
 			n(PROFESSIONS, {
+				-- These are not Hooked up in ProfessionDB
+				-- I wonder if we will get new recipeIDs or have to hook them up the old ones. / Braghe
+				i(206405),	-- Pattern: Polar Tunic
+				i(206406),	-- Pattern: Polar Bracers
+				i(206407),	-- Pattern: Polar Gloves
+				i(206413),	-- Pattern: Icy Scale Breastplate
+				i(206414),	-- Pattern: Icy Scale Bracers
+				i(206415),	-- Pattern: Icy Scale Gauntlets
+				i(206421),	-- Plans: Icebane Breastplate
+				i(206422),	-- Plans: Icebane Bracers
+				i(206423),	-- Plans: Icebane Gauntlets
 				prof(BLACKSMITHING, {
 					-- Recipes --
 					i(206540),	-- Ancient Plans: Axe of Sundered Bone (RECIPE!)
@@ -488,6 +465,46 @@ root(ROOTS.Unsorted, {
 					i(206487),	-- Weaver's Fang
 					i(206488),	-- Widow's Weep
 				}),
+				prof(LEATHERWORKING, {
+					-- RECIPE
+					i(206556),	-- Ancient Pattern: Displacement Boots (RECIPE!)
+					i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
+					i(206411),	-- Pattern: Icy Scale Crown (RECIPE!)
+					i(206417),	-- Pattern: Icy Scale Leggings (RECIPE!)
+					i(206412),	-- Pattern: Icy Scale Shoulderpads (RECIPE!)
+					i(206418),	-- Pattern: Icy Scale Stompers (RECIPE!)
+					i(206416),	-- Pattern: Icy Scale Waistwrap (RECIPE!)
+					i(206772),	-- Pattern: Languished Leather (RECIPE!)
+					i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
+					i(206538),	-- Ancient Pattern: Nerubian Persuader (RECIPE!)
+					i(206408),	-- Pattern: Polar Belt (RECIPE!)
+					i(206410),	-- Pattern: Polar Footwarmers (RECIPE!)
+					i(206403),	-- Pattern: Polar Helm (RECIPE!)
+					i(206409),	-- Pattern: Polar Leggings (RECIPE!)
+					i(206404),	-- Pattern: Polar Spaulders (RECIPE!)
+					i(207577),	-- Ancient Pattern: Sanctified Leather Hat (RECIPE!)
+					i(206773),	-- Pattern: Scourged Scales (RECIPE!)
+					i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
+					-- Crafted
+					i(206509),	-- Displacement Boots
+					i(206482),	-- Helm of Lingering Power
+					i(206439),	-- Icy Scale Crown
+					i(206437),	-- Icy Scale Leggings
+					i(206438),	-- Icy Scale Shoulderpads
+					i(206441),	-- Icy Scale Stompers
+					i(206440),	-- Icy Scale Waistwrap
+					i(206646),	-- Languished Leather
+					i(206514),	-- Lucien's Lost Soles
+					i(206491),	-- Nerubian Persuader
+					i(206435),	-- Polar Belt
+					i(206436),	-- Polar Footwarmers
+					i(206434),	-- Polar Helm
+					i(206432),	-- Polar Leggings
+					i(206433),	-- Polar Spaulders
+					i(207565),	-- Sanctified Leather Hat
+					i(206647),	-- Scourged Scales
+					i(206483),	-- Skyfury Headdress
+				}),
 			}),
 
 			i(206447),	-- Task List for Adventurers
@@ -514,39 +531,26 @@ root(ROOTS.Unsorted, {
 			i(206473),	-- Makeshift Grappling Hook
 			i(206474),	-- Smelly Cheese
 			i(206481),	-- Shifting Sliver
-			i(206482),	-- Helm of Lingering Power
-			i(206483),	-- Skyfury Headdress
 			i(206485),	-- Soulscryer
-			i(206491),	-- Nerubian Persuader
 			i(206496),	-- Gem of the Nerubians
 			i(206500),	-- Bindings of the Harvested Soul
 			i(206501),	-- Encased Frigid Heart
 			i(206504),	-- Frostwyrm's Icy Gaze
 			i(206505),	-- Frostwyrm's Frigid Stare
 			i(206507),	-- Necrotic Gown
-			i(206509),	-- Displacement Boots
 			i(206512),	-- Replaced Servo Arm
-			i(206514),	-- Lucien's Lost Soles
 			i(206528),	-- Ancient Technique: Shifting Sliver
-			i(206529),	-- Ancient Pattern: Helm of Lingering Power
-			i(206530),	-- Ancient Pattern: Skyfury Headdress
 			i(206532),	-- Ancient Technique: Soulscryer
-			i(206538),	-- Ancient Pattern: Nerubian Persuader
 			i(206543),	-- Ancient Design: Gem of the Nerubians
 			i(206547),	-- Ancient Pattern: Bindings of the Harvested Soul
 			i(206548),	-- Ancient Technique: Encased Frigid Heart
 			i(206551),	-- Ancient Design: Frostwyrm's Icy Gaze
 			i(206552),	-- Ancient Design: Frostwyrm's Frigid Stare
 			i(206554),	-- Ancient Pattern: Necrotic Gown
-			i(206556),	-- Ancient Pattern: Displacement Boots
 			i(206559),	-- Ancient Schematic: Replaced Servo Arm
-			i(206561),	-- Ancient Pattern: Lucien's Lost Soles
 			i(206562),	-- Shroud of Forbidden Magic
 			i(206563),	-- Ancient Pattern: Shroud of Forbidden Magic
 			i(206564),	-- Time Displaced Titanic Disc
-			i(206565),	-- Plagued Grain
-			i(206566),	-- Reins of the Exuberant Scarlet Pterrordax
-			i(206567),	-- Reins of the Sprightly Proudmoore Gryphon
 			i(206568),	-- Dented Raider's Helmet
 			i(206569),	-- Dented Raider's Spaulders
 			i(206570),	-- Dented Raider's Chestpiece
@@ -562,29 +566,14 @@ root(ROOTS.Unsorted, {
 			i(206582),	-- Peculiar Glacial Mantle
 			i(206583),	-- Ancient Pattern: Peculiar Glacial Mantle
 			i(206584),	-- Archived Crafting Techniques
-			i(206585),	-- Reins of Valiance
-			i(206586),	-- Epoch Extractor
-			i(206588),	-- Drake Racer's Helmet
-			i(206589),	-- Drake Racer's Shoulderpads
-			i(206590),	-- Drake Racer's Jersey
-			i(206591),	-- Drake Racer's Handwraps
-			i(206592),	-- Drake Racer's Belt
-			i(206593),	-- Drake Racer's Leggings
-			i(206594),	-- Drake Racer's Boots
 			i(206599),	-- Azmerlothian Hourglass
 			i(206602),	-- Mechanized Cog
 			i(206638),	-- Corrupted Ashbringer
 			i(206645),	-- Cursed Cloth
-			i(206646),	-- Languished Leather
-			i(206647),	-- Scourged Scales
-			i(206682),	-- Rusziona
 			i(206683),	-- Wrathion's Tab
 			i(206695),	-- Pale Duskblossom
-			i(206758),	-- Belastrasza
 			i(206763),	-- Kabluey
 			i(206771),	-- Pattern: Cursed Cloth
-			i(206772),	-- Pattern: Languished Leather
-			i(206773),	-- Pattern: Scourged Scales
 			i(206775),	-- Map to Suramar
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
@@ -598,17 +587,9 @@ root(ROOTS.Unsorted, {
 			i(206165),	-- Major Resonating Vestigial
 			i(206166),	-- Strong Resonating Vestigial
 			i(206564),	-- Time-Displaced Titanic Disc
-			i(206566),	-- Reins of the Scarlet Pterrordax
-			i(206567),	-- Harbor Gryphon
 			i(206957),	-- Boffins
 			i(206962),	-- Watcher's Log
-			i(206971),	-- Zhusadormu
-			i(206973),	-- Pallibrius
-			i(206974),	-- Zalethgos
-			i(206978),	-- Somnius
-			i(206979),	-- Posidriss
 			i(206984),	-- Blood-Soaked Book
-			i(206993),	-- Investi-gator's Pocketwatch
 			i(206997),	-- Gilded Sunglasses
 			i(206998),	-- Ragged Mantid Sword
 			i(207003),	-- Gilded Vase
@@ -619,7 +600,6 @@ root(ROOTS.Unsorted, {
 			i(207016),	-- Time Mender's Tabard
 			i(207017),	-- Time Mender's Cape
 			i(207018),	-- Time Mender's Spaulders
-			i(207019),	-- Princess Vorquistrasza
 			i(207020),	-- Ensemble: Time Mender's Vestments
 			i(207029),	-- Scarlet Zealot's Heater Shield
 			i(207031),	-- Bomb Lobber
@@ -659,7 +639,6 @@ root(ROOTS.Unsorted, {
 			i(207562),	-- Skullstone Bludgeon
 			i(207563),	-- Wanderer's Guide
 			i(207564),	-- Refurbished Purifier
-			i(207565),	-- Sanctified Leather Hat
 			i(207566),	-- Accelerating Sandglass
 			i(207569),	-- Ancient Formula: Magebane Nexus
 			i(207570),	-- Ancient Formula: Smokesworth's Fireshooter
@@ -667,7 +646,6 @@ root(ROOTS.Unsorted, {
 			i(207574),	-- Ancient Schematic: Skullstone Bludgeon
 			i(207575),	-- Ancient Technique: Wanderer's Guide
 			i(207576),	-- Ancient Schematic: Refurbished Purifier
-			i(207577),	-- Ancient Pattern: Sanctified Leather Hat
 			i(207579),	-- Time-Thief's Gambit
 			i(207581),	-- Deios's Infinite Mirror
 			i(139312),	-- Charred Glyph
@@ -822,27 +800,9 @@ root(ROOTS.Unsorted, {
 			i(208091),	-- Cache of Timewarped Treasures
 			i(208094),	-- Cache of Timewarped Treasures
 			i(208095),	-- Cache of Timewarped Treasures
-			i(208096),	-- Familiar Journal
 			i(208097),	-- Flamethrower
 			i(208100),	-- Seashellamayne the Shattered
 			i(208108),	-- Madam Shadow's Old Grimoire
-			i(208109),	-- Quantum Sword
-			i(208110),	-- Quantum Mace
-			i(208111),	-- Quantum Axe
-			i(208112),	-- Quantum Greatsword
-			i(208113),	-- Quantum Greataxe
-			i(208114),	-- Quantum Greathammer
-			i(208115),	-- Quantum Staff
-			i(208116),	-- Quantum Polearm
-			i(208117),	-- Quantum Bow
-			i(208118),	-- Quantum Crossbow
-			i(208119),	-- Quantum Firearm
-			i(208120),	-- Quantum Knife
-			i(208121),	-- Quantum Knuckles
-			i(208122),	-- Quantum Warglaives
-			i(208123),	-- Quantum Wand
-			i(208125),	-- Quantum Focus
-			i(208126),	-- Quantum Shield
 			i(208147),	-- Yellow Tweed Cap
 			i(208148),	-- Burgandy Cap
 			i(206604),	-- Lamented Crusader's Helmet
@@ -927,7 +887,6 @@ root(ROOTS.Unsorted, {
 			i(208172),	-- Bloodstained Runecrook
 			i(208191),	-- Time-Lost Fragment
 			i(208193),	-- Gorehowl, Might of the Warchief
-			i(208216),	-- Reins of the Quantum Courser
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			filter(RECIPES, {
@@ -1191,13 +1150,10 @@ root(ROOTS.Unsorted, {
 				q(75027),	-- Aerial Domination
 				q(75182),	-- Grand Theft Mammoth
 				q(75203),	--
-				q(75213),	--
 				q(75225),	--
 				q(75226),	--
 				q(75229),	--
 				q(75242),	--
-				q(75264),	--
-				q(75279),	--
 				q(75282),	--
 				q(75305),	-- Sparks of Life: Zaralek Cavern
 				q(75313),	--
@@ -1211,8 +1167,6 @@ root(ROOTS.Unsorted, {
 				q(75389),	--
 				q(75398),	-- Honor the Flame
 				q(75408),	-- Calling All Dracthyr!
-				q(75415),	--
-				q(75416),	--
 				q(75418),	--
 				q(75429),	--
 				q(75434),	--
@@ -1225,7 +1179,6 @@ root(ROOTS.Unsorted, {
 				q(75453),	--
 				q(75458),	--
 				q(75477),	--
-				q(75524),	--
 				q(75545),	--
 				q(75546),	--
 				q(75547),	--
@@ -1253,23 +1206,11 @@ root(ROOTS.Unsorted, {
 				q(75572),	--
 				q(75574),	--
 				q(75576),	-- Grim Guzzler Invasion!
-				q(75580),	--
-				q(75582),	--
-				q(75583),	--
-				q(75585),	--
-				q(75586),	--
-				q(75587),	--
 				q(75588),	--
-				q(75589),	--
 				q(75591),	--
 				q(75592),	--
 				q(75593),	--
 				q(75594),	--
-				q(75596),	--
-				q(75597),	--
-				q(75599),	--
-				q(75606),	--
-				q(75607),	--
 				q(75609),	--
 				q(75613),	--
 				q(75614),	--
@@ -1290,7 +1231,6 @@ root(ROOTS.Unsorted, {
 				q(75774),	--
 				q(75775),	--
 				q(75818),	--
-				q(75819),	--
 				q(75831),	-- Barter Up
 				q(75866),	--
 				-- 10.1.0.48776
@@ -1335,7 +1275,6 @@ root(ROOTS.Unsorted, {
 				q(76123),	--
 				q(76127),	--
 				q(76130),	--
-				q(76132),	--
 				q(76136),	--
 				q(76139),	--
 				-- 10.1.0.49092

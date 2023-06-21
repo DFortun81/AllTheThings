@@ -10,29 +10,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, {
 				ach(485, {	-- Halls of Stone
 					crit(5452, { -- Maiden of Grief
-						["_encounter"] = { 605, 1 },
+						["_encounter"] = { 605, NORMAL_DUNGEON },
 					}),
 					crit(6935, { -- Tribunal of Ages
-						["_encounter"] = { 606, 1 },
+						["_encounter"] = { 606, NORMAL_DUNGEON },
 					}),
 					crit(5453, { -- Krystallus
-						["_encounter"] = { 604, 1 },
+						["_encounter"] = { 604, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5628, { -- Sjonnir the Ironshaper
-						["_encounter"] = { 607, 1 },
+						["_encounter"] = { 607, NORMAL_DUNGEON },
 					}),
 					-- #else
 					crit(5454, { -- Sjonnir the Ironshaper
-						["_encounter"] = { 607, 1 },
+						["_encounter"] = { 607, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17297, {	-- Defense Protocol Alpha: Halls of Stone
 					crit(57752, { -- Maiden of Grief
-						["_encounter"] = { 605, 2 },
+						["_encounter"] = { 605, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39215),	-- Boots of the Follower
 							i(39216),	-- Sash of Mortal Desire
@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57749, { -- Krystallus
-						["_encounter"] = { 604, 2 },
+						["_encounter"] = { 604, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39195),	-- Bracers of Lost Sentiments
 							i(39199),	-- Watchful Eye
@@ -48,7 +48,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57751, { -- Tribunal of Ages
-						["_encounter"] = { 606, 2 },
+						["_encounter"] = { 606, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39197),	-- Gauntlets of the Master
 							i(39200),	-- Grieving Spellblade
@@ -56,7 +56,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57748, { -- Sjonnir the Ironshaper
-						["_encounter"] = { 607, 2 },
+						["_encounter"] = { 607, HEROIC_DUNGEON },
 						["groups"] = {
 							i(43993),	-- Greatring of Collision
 							i(40489),	-- Greatstaff of the Nexus
@@ -70,6 +70,32 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(40619),	-- Leggings of the Lost Conqueror
 							i(40620),	-- Leggings of the Lost Protector
 							i(40621),	-- Leggings of the Lost Vanquisher
+						},
+					}),
+				})),
+				applyclassicphase(WRATH_PHASE_THREE, ach(18597, {	-- Defense Protocol Beta: Halls of Stone
+					crit(60600, { -- Maiden of Grief
+						["_encounter"] = { 605, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60598, { -- Krystallus
+						["_encounter"] = { 604, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60599, { -- Tribunal of Ages
+						["_encounter"] = { 606, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60597, { -- Sjonnir the Ironshaper
+						["_encounter"] = { 607, HEROIC_DUNGEON },
+						["groups"] = {
+							currency(SIDEREAL_ESSENCE),
 						},
 					}),
 				})),

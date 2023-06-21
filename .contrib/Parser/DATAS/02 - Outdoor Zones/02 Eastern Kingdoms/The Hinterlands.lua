@@ -75,13 +75,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
-						393,	-- Cockroach (PET!)
-						448,	-- Hare (PET!)
-						450,	-- Maggot (PET!)
-						417,	-- Rat (PET!)
+					393,	-- Cockroach (PET!)
+					448,	-- Hare (PET!)
+					450,	-- Maggot (PET!)
+					417,	-- Rat (PET!)
 				}},
 				["groups"] = {
 					pet(449),	-- Brown Marmot (PET!)
@@ -89,8 +88,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 58.8, 43.0, THE_HINTERLANDS },
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["145:220:158:149"] = 1882,	-- Plaguemist Ravine

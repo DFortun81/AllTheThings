@@ -332,6 +332,14 @@ unpack = function(t, i)
 end
 
 -- Helper Functions
+asset = function(path)
+	print("ASSET: " .. path);
+	error("The asset function has been deprecated");
+end
+icon = function(path)
+	print("ICON: " .. path);
+	error("The icon function has been deprecated");
+end
 applyevent = function(eventID, data)
 	if not eventID then
 		print("INVALID EVENT ID PASSED TO APPLYHOLIDAY");
@@ -340,25 +348,14 @@ applyevent = function(eventID, data)
 	return bubbleDown({ ["e"] = eventID }, data);
 end
 -- #if ANYCLASSIC
--- Classic Only
-asset = function(path)
-	return "Interface\\Addons\\ATT-Classic\\assets\\" .. path;
-end
 applyclassicphase = function(phase, data, force)
 	return (force and bubbleDownAndReplace or bubbleDown)({ ["u"] = phase }, data);
 end
 -- #else
--- Retail Only
-asset = function(path)
-	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
-end
 applyclassicphase = function(phase, data, force)
 	return data;
 end
 -- #endif
-icon = function(path)
-	return "Interface\\Icons\\" .. path;
-end
 
 local squishes = {};
 lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
@@ -465,6 +462,12 @@ end
 moh = function(cost, item)								-- Assign a Mark of Honor cost to an item with proper timeline requirements.
 	-- #if AFTER 7.0.3.22248
 	applycost(item, { "i", 137642, cost });	-- Mark of Honor
+	-- #endif
+	return item;
+end
+siderealessence = function(cost, item)					-- Assign a Sidereal Essence (Defense Protocol Beta - Wrath Classic) cost to an item with proper timeline requirements.
+	-- #if ANYCLASSIC
+	applycost(item, { "c", SIDEREAL_ESSENCE, cost });
 	-- #endif
 	return item;
 end
@@ -982,6 +985,15 @@ dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragon
 	return t;
 end
 
+-- Outdoor Zones Headers with Filters
+battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.
+	if not t then
+		t = timeline;
+		timeline = { ADDED_5_0_4 };
+	end
+	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = timeline }, t)));
+end
+
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
 a = function(t)	-- Flag as Alliance Only
 	if t.races then
@@ -1103,11 +1115,11 @@ createHeader = function(data)
 					hour=0,
 					minute=0,
 				};
-				
+
 				-- Generate Time Stamps and add the weekday to the objects
 				startTime.weekday = os.date("*t", getTimestamp(startTime)).wday;
 				endTime.weekday = os.date("*t", getTimestamp(endTime)).wday;
-				
+
 				-- Append the schedule
 				schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime)  .. ")";
 			elseif data.eventSchedule[1] == 1 then	-- Recurring, every year forever on the same dates.
@@ -1138,11 +1150,11 @@ createHeader = function(data)
 					if endTime.month < startTime.month then
 						endTime.year = endTime.year + 1;
 					end
-					
+
 					-- Generate Time Stamps and add the weekday to the objects
 					startTime.weekday = os.date("*t", getTimestamp(startTime)).wday;
 					endTime.weekday = os.date("*t", getTimestamp(endTime)).wday;
-					
+
 					-- Append the schedule
 					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ")";
 				end
@@ -1159,7 +1171,7 @@ createHeader = function(data)
 					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, EVENT IDs EMPTY!");
 					return;
 				end
-				
+
 				-- Calculate the difference between the specified month/year and the current month/year
 				local year, month, totalMonthOffset = data.eventSchedule[2], data.eventSchedule[3], 0;
 				local currentYear, currentMonth = currentDate.year, currentDate.month;
@@ -1175,12 +1187,12 @@ createHeader = function(data)
 					month = month + 1;
 					totalMonthOffset = totalMonthOffset + 1;
 				end
-				
+
 				-- Go back one month, to get last month's data.
 				totalMonthOffset = (totalMonthOffset + totalEventIDs) - 1;	-- Ensure the offset is 0 or more
 				month = month - 1;
 				if month == 0 then month = 12; end
-				
+
 				local veryfirst = true;
 				for monthOffset = 0,10,1 do
 					if veryfirst then
@@ -1188,10 +1200,10 @@ createHeader = function(data)
 					else
 						schedule = schedule .. ",";
 					end
-					
+
 					-- Grab the current eventID
 					local eventID = eventIDs[(totalMonthOffset % totalEventIDs) + 1];
-					
+
 					-- Determine the first sunday
 					local startTime = {
 						year=year,
@@ -1202,7 +1214,7 @@ createHeader = function(data)
 						minute=0,
 					};
 					local startTimeStamp = getTimestamp(startTime);
-					
+
 					-- Find the first Sunday of the Month
 					for dayOffset = 1,14,1 do
 						if os.date("*t", startTimeStamp).wday == 1 then
@@ -1211,7 +1223,7 @@ createHeader = function(data)
 						startTime.monthDay = startTime.monthDay + 1;
 						startTimeStamp = getTimestamp(startTime);
 					end
-					
+
 					-- Determine the next Sunday
 					local endTime = {
 						year=startTime.year,
@@ -1224,10 +1236,10 @@ createHeader = function(data)
 					local endTimeStamp = getTimestamp(endTime);
 					startTime.weekday = os.date("*t", startTimeStamp).wday;
 					endTime.weekday = os.date("*t", endTimeStamp).wday;
-					
+
 					-- Append the schedule
 					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ",{[\"remappedID\"]=" .. eventID .. "})";
-					
+
 					totalMonthOffset = totalMonthOffset + 1;
 					month = month + 1;
 					if month > 12 then
@@ -1241,7 +1253,7 @@ createHeader = function(data)
 			end
 			data.eventSchedule = schedule .. "\n}";
 		end
-		
+
 		local headerID = nextHeaderID;
 		customHeaders[headerID] = data;
 		nextHeaderID = nextHeaderID - 1;

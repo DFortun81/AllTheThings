@@ -262,8 +262,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						419,	-- Small Frog (PET!)
 						387,	-- Snake (PET!)
@@ -274,8 +273,7 @@ root(ROOTS.Zones, {
 							["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with the Sporeggar faction.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3650, "256:256:88:50"),		-- Ango'rosh Grounds
@@ -1745,8 +1743,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(29960, {	-- Firefly (PET!)
-						["cr"] = 20197,	-- Bogflare Needler
-						["description"] = "This pet is an extremely rare drop."
+						["description"] = "This pet is an extremely rare drop.",
+						["crs"] = { 20197 },	-- Bogflare Needler
+						["timeline"] = { ADDED_2_1_0 },
 					}),
 					i(24449, {	-- Fertile Spore
 						["crs"] = {

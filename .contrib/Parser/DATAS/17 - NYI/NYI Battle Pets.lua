@@ -1,38 +1,373 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
-
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	filter(BATTLE_PETS, {
-		-- TODO:
-		i(21168),	-- Baby Shark
-		i(39148),	-- Baby Coralshell Turtle
-		i(66070),	-- Lizzy
-		i(66075),	-- Bubbles
-		i(11903),	-- Cat Carrier (Corrupted Kitten)
-		i(67417),	-- DND lil dw placeholder
-		i(88148),	-- Jade Crane Chick (PET!)
-		model(38311, n(51634)),	-- Bubbles
-		model(36583, n(51636)),	-- Lizzy
-		model(14657, n(14629)),	-- Loggerhead Snapjaw
-		model(36129, n(48376)),	-- Rumbling Rockling
-		model(36130, n(48377)),	-- Swirling Stormling
-		model(36131, n(48378)),	-- Whirling Waveling
-		model(29060, n(34031)),	-- XS-001 Constructor Bot
-		i(44972),	-- Alarming Clockbot (NOT IN USE)
-		i(31665),	-- Toy RC Mortar Tank
-		i(13342),	-- Pet Fish
-		i(13343),	-- Pet Stone
-		i(82800),	-- "Pet Cage"
-		i(62769),	-- Hardboiled Egg
-		i(67600),	-- Lil' Alexstrasza (Never added in Game)
-		-- #if BEFORE 7.0.3
-		i(23712),	-- White Tiger Cub -- later reused for Ash'ana.
-		-- #endif
+		tier(CLASSIC_TIER, {
+			-- Without SpeciesID Attached
+			i(11903, {	-- Cat Carrier (Corrupted Kitten) (PET!)
+				["modelID"] = 9209,
+			}),
+			i(18964, {	-- Loggerhead Snapjaw / Turtle Egg (Loggerhead) (PET!)
+				["modelID"] = 14657,
+			}),
+			i(13342, {	-- Pet Fish (PET!)
+				-- ["modelID"] = ,
+			}),
+			i(13343, {	-- Pet Stone (PET!)
+				-- ["modelID"] = ,
+			}),
+		}),
+		tier(TBC_TIER, {
+			-- 2.1.1
+			tier(TBC_TIER, 1.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_1 } }, {
+				-- Without SpeciesID Attached
+				i(31665, {	-- Toy RC Mortar Tank (PET!)
+					["modelID"] = 15382,
+				}),
+			})),
+
+			-- 2.2.2
+			tier(TBC_TIER, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_2_2_2 } }, {
+				-- With SpeciesID Attached
+				i(32465, {	-- Lucky (PET!)
+					["modelID"] = 21328
+				}),
+			})),
+
+			-- 2.4.0
+			tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
+				-- With SpeciesID Attached
+				-- #if BEFORE 7.0.3
+				i(23712, {	-- White Tiger Cub (PET!),  Comment: Later reused for Ash'ana.
+					["modelID"] = 16942,
+				}),
+				-- #endif
+			})),
+		}),
+		tier(WOTLK_TIER, {
+			-- 3.0.2
+			tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+				-- Without SpeciesID Attached
+				i(39148, {	-- Baby Coralshell Turtle (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(21168, {	-- Baby Shark (PET!)
+					["modelID"] = 21168,
+				}),
+			})),
+
+			-- 3.1.0
+			tier(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
+				-- Without SpeciesID Attached
+				i(45942, {	-- XS-001 Constructor Bot (PET!)
+					["modelID"] = 29060,
+				}),
+			})),
+
+			-- 3.2.2
+			tier(WOTLK_TIER, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_2_2 } }, {
+				-- Only SpeciesID
+				pet(230, {	-- Macabre Marionette (PET!)
+					["modelID"] = 29404,
+				}),
+			})),
+		}),
+		tier(CATA_TIER, {
+			-- 4.0.1
+			tier(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+				-- Without SpeciesID Attached
+				i(67417, {	-- [DND] Lil' Deathwing Placeholder (PET!)
+					["modelID"] = 28456,
+				}),
+				i(44972, {	-- Alarming Clockbot (NOT IN USE) (PET!)
+					["modelID"] = 14473,
+				}),
+				-- Special: Only SpellIDs (Not in PetDB!)
+				spell(89929, {	-- Rumbling Rockling (PET!)
+					["modelID"] = 36129,
+					["crs"] = { 48376 },	-- Rumbling Rockling
+				}),
+				spell(89930, {	-- Swirling Stormling (PET!)
+					["modelID"] = 36130,
+					["crs"] = { 48377 },	-- Swirling Stormling
+				}),
+				spell(89931, {	-- Whirling Waveling (PET!)
+					["modelID"] = 36131,
+					["crs"] = { 48378 },	-- Whirling Waveling
+				}),
+			})),
+
+			-- 4.0.3
+			tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+				-- Without SpeciesID Attached
+				i(66075, {	-- Bubbles (PET!)
+					["modelID"] = 38311
+				}),
+				i(62769, {	-- Hardboiled Egg (PET!)
+					["modelID"] = 15393
+				}),
+				i(67600, {	-- Lil' Alexstrasza (PET!)
+					["modelID"] = 6290
+				}),
+				i(66070, {	-- Lizzy (PET!)
+					["modelID"] = 36583
+				}),
+			})),
+
+			-- 4.2.0
+			tier(CATA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_2_0 } }, {
+				-- Only SpeciesID
+				pet(257, {	-- Murkimus the Gladiator (PET!)
+					["modelID"] = 28734,
+				}),
+			})),
+
+			-- 4.3.0
+			tier(CATA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
+				-- Only SpeciesID
+				pet(344, {	-- Green Balloon (PET!)
+					["modelID"] = 38340,
+				}),
+				pet(345, {	-- Yellow Balloon (PET!)
+					["modelID"] = 38341,
+				}),
+			})),
+		}),
 		tier(MOP_TIER, {
 			-- 5.0.4
 			tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+				-- Trainer Pets --
+				pet(897),	-- Acidous (PET!)
+				pet(901),	-- Ambershell (PET!)
+				pet(987),	-- Amythel (PET!)
+				pet(941),	-- Anklor (PET!)
+				pet(964),	-- Arcanus (PET!)
+				pet(981),	-- Ashtail (PET!)
+				pet(925),	-- Beacon (PET!)
+				pet(978),	-- Beakmaster X-225 (PET!)
+				pet(922),	-- Beamer (PET!)
+				pet(948),	-- Bishibosh (PET!)
+				pet(881),	-- Blackfang (PET!)
+				pet(913),	-- Blaze (PET!)
+				pet(935),	-- Bleakspinner (PET!)
+				pet(1001),	-- Bleat (PET!)
+				pet(974),	-- Blight (PET!)
+				pet(927),	-- Blizzy (PET!)
+				pet(977),	-- Bloom (PET!)
+				pet(902),	-- Bounder (PET!)
+				pet(995),	-- Brood of Mothallus (PET!)
+				pet(888),	-- Burgle (PET!)
+				pet(976),	-- Cadavus (PET!)
+				pet(936),	-- Carrion (PET!)
+				pet(1012),	-- Chirrup (PET!)
+				pet(915),	-- Cho'guana (PET!)
+				pet(961),	-- Chomps (PET!)
+				pet(989),	-- Clatter (PET!)
+				pet(908),	-- Cluckatron (PET!)
+				pet(875),	-- Clucks (PET!)
+				pet(946),	-- Comet (PET!)
+				pet(899),	-- Constrictor (PET!)
+				pet(932),	-- Corpsefeeder (PET!)
+				pet(959),	-- Cragmaw (PET!)
+				pet(942),	-- Croaker (PET!)
+				pet(1009),	-- Crusher (PET!)
+				pet(984),	-- Crystallus (PET!)
+				pet(943),	-- Dampwing (PET!)
+				pet(880),	-- Darkwidow (PET!)
+				pet(1006),	-- Diamond (PET!)
+				pet(967),	-- Dinner (PET!)
+				pet(878),	-- Dipsy (PET!)
+				pet(992),	-- Dor the Wall (PET!)
+				pet(957),	-- Dramaticus (PET!)
+				pet(973),	-- Drogar (PET!)
+				pet(952),	-- ED-005 (PET!)
+				pet(883),	-- Emeralda (PET!)
+				pet(887),	-- Eyegouger (PET!)
+				pet(993),	-- Fangor (PET!)
+				pet(873),	-- Fangs (PET!)
+				pet(911),	-- Firetooth (PET!)
+				pet(912),	-- Flameclaw (PET!)
+				pet(975),	-- Fleshrender (PET!)
+				pet(877),	-- Flipsy (PET!)
+				pet(879),	-- Flufftail (PET!)
+				pet(894),	-- Flutterby (PET!)
+				pet(876),	-- Foe Reaper 800 (PET!)
+				pet(983),	-- Fracture (PET!)
+				pet(928),	-- Frostmaw (PET!)
+				pet(953),	-- Fungor (PET!)
+				pet(939),	-- Garnestrasz (PET!)
+				pet(909),	-- Gizmo (PET!)
+				pet(906),	-- Glimmer (PET!)
+				pet(955),	-- Glitterfly (PET!)
+				pet(960),	-- Gnasher (PET!)
+				pet(966),	-- Gobbles (PET!)
+				pet(951),	-- Goliath (PET!)
+				pet(979),	-- Grizzle (PET!)
+				pet(923),	-- Hatewalker (PET!)
+				pet(986),	-- Helios (PET!)
+				pet(945),	-- Ignious (PET!)
+				pet(980),	-- Incinderous (PET!)
+				pet(917),	-- Indigon (PET!)
+				pet(949),	-- Jack (PET!)
+				pet(963),	-- Jadefire (PET!)
+				pet(982),	-- Kali (PET!)
+				pet(924),	-- Lacewing (PET!)
+				pet(1002),	-- Lapin (PET!)
+				pet(1000),	-- Lightstalker (PET!)
+				pet(893),	-- Longneck (PET!)
+				pet(896),	-- Mister Pinch (PET!)
+				pet(1005),	-- Mollus (PET!)
+				pet(944),	-- Moltar (PET!)
+				pet(884),	-- Moonstalker (PET!)
+				pet(968),	-- Mort (PET!)
+				pet(889),	-- Mumtar (PET!)
+				pet(1007),	-- Mutilator (PET!)
+				pet(885),	-- Nanners (PET!)
+				pet(999),	-- Needleback (PET!)
+				pet(962),	-- Netherbite (PET!)
+				pet(947),	-- Nightstalker (PET!)
+				pet(937),	-- Obsidion (PET!)
+				pet(898),	-- Odoron (PET!)
+				pet(895),	-- Oozer (PET!)
+				pet(1003),	-- Piqua (PET!)
+				pet(916),	-- Plague (PET!)
+				pet(934),	-- Plaguebringer (PET!)
+				pet(931),	-- Plop (PET!)
+				pet(1008),	-- Pounder (PET!)
+				pet(904),	-- Prancer (PET!)
+				pet(958),	-- Prince Wart (PET!)
+				pet(991),	-- Pyth (PET!)
+				pet(905),	-- Rasp (PET!)
+				pet(891),	-- Ripper (PET!)
+				pet(900),	-- Rockhide (PET!)
+				pet(971),	-- Rot (PET!)
+				pet(985),	-- Ruby (PET!)
+				pet(997),	-- Siren (PET!)
+				pet(1004),	-- Skimmer (PET!)
+				pet(994),	-- Skyshaper (PET!)
+				pet(972),	-- Sleet (PET!)
+				pet(872),	-- Slither (PET!)
+				pet(890),	-- Spike (PET!)
+				pet(950),	-- Sploder (PET!)
+				pet(892),	-- Springtail (PET!)
+				pet(970),	-- Spooky Strangler (PET!)
+				pet(990),	-- Spring (PET!)
+				pet(969),	-- Stitch (PET!)
+				pet(956),	-- Stompy (PET!)
+				pet(1011),	-- Stormlash (PET!)
+				pet(933),	-- Subject 142 (PET!)
+				pet(874),	-- Teensy (PET!)
+				pet(929),	-- Tinygos (PET!)
+				pet(996),	-- Toothbreaker (PET!)
+				pet(954),	-- Tripod (PET!)
+				pet(988),	-- Twilight (PET!)
+				pet(921),	-- Ultramus (PET!)
+				pet(938),	-- Veridia (PET!)
+				pet(965),	-- Warble (PET!)
+				pet(882),	-- Webwinder (PET!)
+				pet(907),	-- Whirls (PET!)
+				pet(1010),	-- Whiskers (PET!)
+				pet(926),	-- Willow (PET!)
+				pet(998),	-- Woodcarver (PET!)
+				pet(886),	-- Young Beaky (PET!)
+				-- Only SpeciesID
+				pet(705, {	-- Amorous Rooster (PET!)
+					["modelID"] = 304,
+				}),
+				pet(832, {	-- Boomy Jr. (PET!)
+					["modelID"] = 8909,
+				}),
+				pet(1354, {	-- C92 Annihilator (PET!)
+					["modelID"] = 51661,
+				}),
+				pet(1257, {	-- Crafty (PET!)
+					["modelID"] = 49086,
+				}),
+				pet(390, {	-- Deer (PET!)
+					["modelID"] = 347,
+				}),
+				pet(833, {	-- Dr. Stinky (PET!)
+					["modelID"] = 31275,
+				}),
+				pet(2, {	-- Dumptruck (PET!)
+					["modelID"] = 42299,
+				}),
+				pet(476, {	-- Gazelle (PET!)
+					["modelID"] = 1547,
+				}),
+				pet(462, {	-- Jacob the Test Seagull (PET!)
+					["modelID"] = 36499,
+				}),
+				pet(827, {	-- Lady Burninator (PET!)
+					["modelID"] = 42745,
+				}),
+				pet(828, {	-- Lord Landslide (PET!)
+					["modelID"] = 35015,
+				}),
+				pet(829, {	-- Madam Flapsalot (PET!)
+					["modelID"] = 16731,
+				}),
+				pet(831, {	-- Miss Mystical (PET!)
+					["modelID"] = 65833,
+				}),
+				pet(825, {	-- Mr. Growls (PET!)
+					["modelID"] = 36549,
+				}),
+				pet(826, {	-- Mrs. Skitters (PET!)
+					["modelID"] = 43199,
+				}),
+				pet(824, {	-- Ms. Croaker (PET!)
+					["modelID"] = 6297,
+				}),
+				pet(800, {	-- Muffin (PET!)
+					["modelID"] = 44604,
+				}),
+				pet(486, {	-- Mule Deer (PET!)
+					["modelID"] = 45890,
+				}),
+				pet(384, {	-- Otter Pup (PET!)
+					["modelID"] = 42983,
+				}),
+				pet(354, {	-- PattyMack - WildBattlePet Test (PET!)
+					["modelID"] = 10090,
+				}),
+				pet(444, {	-- PattyMack 2.0 - WildBattlePet Test (PET!)
+					["modelID"] = 10090,
+				}),
+				pet(510, {	-- Rabbot (PET!)
+					["modelID"] = 33559,
+				}),
+				pet(434, {	-- Ram (PET!)
+					["modelID"] = 10000,
+				}),
+				pet(394, {	-- Sheep (PET!)
+					["modelID"] = 856,
+				}),
+				pet(830, {	-- Sir Buckethead (PET!)
+					["modelID"] = 28734,
+				}),
+				pet(864, {	-- Spider (PET!)
+					["modelID"] = 44816,
+				}),
+				pet(375, {	-- The Gurkster (PET!)
+					["modelID"] = 32313,
+				}),
+				pet(863, {	-- Widow Spiderling (PET!)
+					["modelID"] = 35424,
+				}),
+				pet(715, {	-- Wild Silkworm (PET!)
+					["modelID"] = 40630,
+				}),
+				pet(71, {	-- Unknown (PET!)
+					-- ["modelID"] = ,
+				}),
+				pet(73, {	-- Unknown (PET!)
+					-- ["modelID"] = ,
+				}),
+				-- Without SpeciesID Attached
+				i(88148),	-- Jade Crane Chick (PET!) [Jade Crane Chick, item was never used]
+				i(82800),	-- Pet Cage (PET!)
 			})),
 
 			-- 5.1.0
@@ -115,7 +450,10 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				pet(1319),	-- Zao, Calfling of Niuzao (PET!)
 				-- Only SpeciesID
 				pet(1258, {	-- Angara (PET!)
-					-- ["modelID"] = ,
+					["modelID"] = 42229,
+				}),
+				pet(1354, {	-- C92 Annihilator (PET!)
+					["modelID"] = 51661,
 				}),
 				pet(1257, {	-- Crafty (PET!)
 					["modelID"] = 49086,
@@ -198,6 +536,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				pet(1404, {	-- Mechanical Scorpid (PET!)
 					["modelID"] = 5905,
+				}),
+				pet(1410, {	-- Mechanical Training Dummy (PET!)
+					["modelID"] = 33559,
 				}),
 				pet(1610, {	-- Unborn Val'kyr (PET!)
 					["modelID"] = 48650,
@@ -1019,9 +1360,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				pet(3567),	-- Talons (PET!)
 				pet(3569),	-- Tempe (PET!)
 				-- With SpeciesID Attached
-				i(205009, {	-- Annuna (PET!)
-					["modelID"] = 112146,
-				}),
 				i(205004, {	-- Azure Swoglet (PET!)
 					["modelID"] = 112144,
 				}),
@@ -1104,4 +1442,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

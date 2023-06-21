@@ -39,22 +39,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
-					385,	-- Mouse
-					386,	-- Prarie Dog
-					387,	-- Snake
-					419,	-- Small Frog
-					379,	-- Squirrel
+					385,	-- Mouse (PET!)
+					386,	-- Prarie Dog (PET!)
+					387,	-- Snake (PET!)
+					419,	-- Small Frog (PET!)
+					379,	-- Squirrel (PET!)
 				}},
 				["groups"] = {
-					pet(646), 	-- Chicken
-					pet(388), 	-- Shore Crab
-					pet(389),	-- Tiny Harvester
+					pet(646), 	-- Chicken (PET!)
+					pet(388), 	-- Shore Crab (PET!)
+					pet(389),	-- Tiny Harvester (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["305:210:204:260"] = 219,	-- Alexston Farmstead

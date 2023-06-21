@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 CHILDRENS_WEEK_HEADER = createHeader({
-	readable = "Children's Week",
+	readable = "Cgi.Children's Week",	-- Prefix with "Cgi." to prevent sorting issues.
 	constant = "CHILDRENS_WEEK_HEADER",
 	icon = [[~_.asset("Holiday_Children")]],
 	eventID = EVENTS.CHILDRENS_WEEK,

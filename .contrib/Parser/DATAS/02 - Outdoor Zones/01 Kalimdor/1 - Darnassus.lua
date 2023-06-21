@@ -79,19 +79,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					479,	-- Elfin Rabbit (PET!)
 					478,	-- Forest Moth (PET!)
 					452,	-- Red-Tailed Chipmunk (PET!)
 					419,	-- Small Frog (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(69, {	-- Darnassus
-					["icon"] = asset("Achievement_Character_Nightelf_Female"),
+					-- #if AFTER WRATH
+					["icon"] = "Interface\\Icons\\Achievement_Character_Nightelf_Female",
+					-- #else
+					["icon"] = [[~_.asset("Achievement_Character_Nightelf_Female")]],
+					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
 					-- #endif
@@ -446,7 +448,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 8,
 					["groups"] = {
-						i(6710),	-- Pattern: Moonglow Vest
+						i(6710),	-- Pattern: Moonglow Vest (RECIPE!)
 					},
 				}),
 				q(3781, {	-- Morrowgrain Research (1/2)

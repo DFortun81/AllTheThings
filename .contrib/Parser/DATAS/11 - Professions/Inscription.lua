@@ -1563,6 +1563,12 @@ GLYPH_OF_OBLITERATE_AND_ENDURING_INFECTION = r(57220, {	-- Glyph of Obliterate /
 	-- #endif
 	["timeline"] = { "added 3.0.2", "deleted 7.0.3" },
 });
+-- #if ANYCLASSIC
+GLYPH_OF_OMEN_OF_CLARITY = applyclassicphase(WRATH_PHASE_THREE, r(413897, {	-- Glyph of Omen of Clarity
+	["name"] = "Glyph of Omen of Clarity",
+	["timeline"] = { "added 3.0.2" },
+}));
+-- #endif
 GLYPH_OF_OVERPOWER_AND_DIE_BY_THE_SWORD = r(57161, {	-- Glyph of Overpower / Glyph of Die by the Sword [5.2.0+]
 	-- #if AFTER 5.2.0
 	["name"] = "Glyph of Die by the Sword",
@@ -1718,10 +1724,10 @@ GLYPH_OF_REBIRTH = r(56953, {	-- Glyph of Rebirth
 	["timeline"] = { "added 3.0.2", "deleted 6.0.2" },
 });
 -- #if ANYCLASSIC
-GLYPH_OF_RECKONING = r(405005, {	-- Glyph of Reckoning
+GLYPH_OF_RECKONING = applyclassicphase(WRATH_PHASE_TWO, r(405005, {	-- Glyph of Reckoning
 	["name"] = "Glyph of Reckoning",
-	["timeline"] = { "added 3.0.2", "deleted 4.0.1" },
-});
+	["timeline"] = { "added 3.0.2" },
+}));
 -- #endif
 GLYPH_OF_REGROWTH = r(56954, {	-- Glyph of Regrowth
 	["name"] = "Glyph of Regrowth",
@@ -2043,6 +2049,12 @@ GLYPH_OF_SHADOWY_FRIENDS = r(126800, {	-- Glyph of Shadowy Friends
 	["name"] = "Glyph of Shadowy Friends",
 	["timeline"] = { "added 4.0.3" },
 });
+-- #if ANYCLASSIC
+GLYPH_OF_SHATTERING_THROW = applyclassicphase(WRATH_PHASE_THREE, r(414814, {	-- Glyph of Shattering Throw
+	["name"] = "Glyph of Shattering Throw",
+	["timeline"] = { "added 3.0.2" },
+}));
+-- #endif
 GLYPH_OF_SHIELD_OF_RIGHTEOUSNESS_AND_ALABASTER_SHIELD = r(64308, {	-- Glyph of Shield of Righteousness / Glyph of Shield of the Righteous [CATA+] / Glyph of the Alabaster Shield [5.0.4+]
 	-- #if AFTER 5.0.4
 	["name"] = "Glyph of the Alabaster Shield",
@@ -2857,6 +2869,9 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_MONSOON_AND_CYCLONE,
 		GLYPH_OF_MOONFIRE_AND_SAVAGERY,
 		GLYPH_OF_NOURISH_AND_STARSURGE_AND_MIGHT_OF_URSOC,
+		-- #if ANYCLASSIC
+		GLYPH_OF_OMEN_OF_CLARITY,
+		-- #endif
 		GLYPH_OF_RAKE_AND_POUNCE_AND_RAKE,
 		GLYPH_OF_RAPID_REJUVENATION,
 		GLYPH_OF_REBIRTH,
@@ -3254,6 +3269,9 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_RENDING_AND_SLAM_AND_HAMSTRING,
 		GLYPH_OF_RESONATING_POWER,
 		GLYPH_OF_REVENGE_AND_HOLD_THE_LINE,
+		-- #if ANYCLASSIC
+		GLYPH_OF_SHATTERING_THROW,
+		-- #endif
 		GLYPH_OF_SHIELD_WALL,
 		GLYPH_OF_SHOCKWAVE_AND_DEATH_FROM_ABOVE,
 		GLYPH_OF_SPELL_REFLECTION,

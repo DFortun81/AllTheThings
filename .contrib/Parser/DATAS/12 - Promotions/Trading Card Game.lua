@@ -62,13 +62,13 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 5.2.0.16408" },
 			}),
 			i(23713, {	-- Hippogryph Hatchling (PET!)
-				["timeline"] = { "added 2.0.0.5462" },
+				["timeline"] = { ADDED_2_0_1 },
 			}),
 			i(68840, {	-- Landro's Lichling (PET!)
 				["timeline"] = { "added 4.1.0.13682" },
 			}),
 			i(67128, {	-- Landro's Lil' XT (PET!)
-				["timeline"] = { "added 4.0.1.12984" },
+				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(68841, {	-- Nightsaber Cub (PET!)
 				["timeline"] = { "added 4.1.0.13682" },

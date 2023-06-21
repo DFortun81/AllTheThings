@@ -3,8 +3,7 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2023 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
-
-local app = select(2, ...);
+local appName, app = ...;
 local L = app.L;
 
 -- Assign the FactionID.
@@ -155,8 +154,8 @@ end
 app.PrintMemoryUsage = function(...)
 	-- update memory value for ATT
 	UpdateAddOnMemoryUsage();
-	if ... then app.print(..., GetAddOnMemoryUsage("AllTheThings"));
-	else app.print("Memory",GetAddOnMemoryUsage("AllTheThings")); end
+	if ... then app.print(..., GetAddOnMemoryUsage(appName));
+	else app.print("Memory",GetAddOnMemoryUsage(appName)); end
 end
 -- app.PrintMemoryUsage("ATT.lua")
 --]]
@@ -1546,42 +1545,14 @@ app.GetProgressText = GetProgressTextDefault;
 app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
 
--- Source ID Harvesting Lib
-local DressUpModel = CreateFrame('DressUpModel');
-local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
-	["INVTYPE_HEAD"] = {1},
-	["INVTYPE_NECK"] = {2},
-	["INVTYPE_SHOULDER"] = {3},
-	["INVTYPE_BODY"] = {4},
-	["INVTYPE_CHEST"] = {5},
-	["INVTYPE_ROBE"] = {5},
-	["INVTYPE_WAIST"] = {6},
-	["INVTYPE_LEGS"] = {7},
-	["INVTYPE_FEET"] = {8},
-	["INVTYPE_WRIST"] = {9},
-	["INVTYPE_HAND"] = {10},
-	["INVTYPE_RING"] = {11},
-	["INVTYPE_TRINKET"] = {12},
-	["INVTYPE_CLOAK"] = {15},
-	["INVTYPE_WEAPON"] = {16, 17},
-	["INVTYPE_SHIELD"] = {17},
-	["INVTYPE_2HWEAPON"] = {16, 17},
-	["INVTYPE_WEAPONMAINHAND"] = {16},
-	["INVTYPE_RANGED"] = {16},
-	["INVTYPE_RANGEDRIGHT"] = {16},
-	["INVTYPE_WEAPONOFFHAND"] = {17},
-	["INVTYPE_HOLDABLE"] = {17},
-	["INVTYPE_TABARD"] = {19},
-};
-local function BuildGroups(parent, g)
-	g = g or parent.g;
-	if g then
+local function BuildGroups(parent)
+	if parent.g then
 		-- Iterate through the groups
-		for _,group in ipairs(g) do
+		local g = parent.g;
+		for i=1,#g,1 do
 			-- Set the group's parent
+			local group = g[i];
 			group.parent = parent;
-			group.indent = nil;
-			group.back = nil;
 			BuildGroups(group);
 		end
 	end
@@ -1953,6 +1924,34 @@ local GetSourceID;
 do
 local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
 local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
+local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
+	["INVTYPE_HEAD"] = {1},
+	["INVTYPE_NECK"] = {2},
+	["INVTYPE_SHOULDER"] = {3},
+	["INVTYPE_BODY"] = {4},
+	["INVTYPE_CHEST"] = {5},
+	["INVTYPE_ROBE"] = {5},
+	["INVTYPE_WAIST"] = {6},
+	["INVTYPE_LEGS"] = {7},
+	["INVTYPE_FEET"] = {8},
+	["INVTYPE_WRIST"] = {9},
+	["INVTYPE_HAND"] = {10},
+	["INVTYPE_RING"] = {11},
+	["INVTYPE_TRINKET"] = {12},
+	["INVTYPE_CLOAK"] = {15},
+	["INVTYPE_WEAPON"] = {16, 17},
+	["INVTYPE_SHIELD"] = {17},
+	["INVTYPE_2HWEAPON"] = {16, 17},
+	["INVTYPE_WEAPONMAINHAND"] = {16},
+	["INVTYPE_RANGED"] = {16},
+	["INVTYPE_RANGEDRIGHT"] = {16},
+	["INVTYPE_WEAPONOFFHAND"] = {17},
+	["INVTYPE_HOLDABLE"] = {17},
+	["INVTYPE_TABARD"] = {19},
+};
+
+-- Source ID Harvesting Lib
+local DressUpModel = CreateFrame('DressUpModel');
 GetSourceID = function(itemLink)
 	if C_Item_IsDressableItemByID(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
@@ -3192,7 +3191,7 @@ local ResolveFunctions = {
 	end,
 	-- Instruction to find all content marked with the specified 'requireSkill'
 	["selectprofession"] = function(finalized, searchResults, o, cmd, requireSkill)
-		local search = app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", requireSkill);
+		local search = app:BuildSearchResponse("requireSkill", requireSkill);
 		ArrayAppend(searchResults, search);
 	end,
 	-- Instruction to fill with identical content Sourced elsewhere for this group (no symlinks)
@@ -4598,7 +4597,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 
 						if app.IsReady and sourceInfo.categoryID > 0 and sourceGroup.missing then
-							tinsert(info, { left = Colorize("Item Source not found in the AllTheThings " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
+							tinsert(info, { left = Colorize("Item Source not found in the " .. appName .. " " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
 							tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), app.Colors.SourceIgnored) });
 							tinsert(info, { left = Colorize(itemString, app.Colors.SourceIgnored) });
 						end
@@ -6103,40 +6102,43 @@ app.CreateDataCache = function(name)
 	end
 	cache.name = name;
 	-- These are the fields we store.
-	cache["achievementID"] = {};
-	cache["achievementCategoryID"] = {};
-	cache["artifactID"] = {};
-	cache["azeriteEssenceID"] = {};
-	cache["creatureID"] = {};
-	cache["currencyID"] = {};
-	cache["currencyIDAsCost"] = {};
-	cache["encounterID"] = {};
-	cache["factionID"] = {};
-	cache["flightPathID"] = {};
-	cache["followerID"] = {};
-	cache["headerID"] = {};
-	cache["illusionID"] = {};
-	cache["instanceID"] = {};
-	cache["itemID"] = {};
-	cache["itemIDAsCost"] = {};
-	cache["mapID"] = {};
-	cache["mountID"] = {};
-	cache["nextQuests"] = {};
+	for w,f in ipairs({
+		"achievementID",
+		"artifactID",
+		"azeriteEssenceID",
+		"creatureID",
+		"currencyID",
+		"currencyIDAsCost",
+		"encounterID",
+		"factionID",
+		"flightPathID",
+		"followerID",
+		"headerID",
+		"illusionID",
+		"instanceID",
+		"itemID",
+		"itemIDAsCost",
+		"mapID",
+		"mountID",
+		"nextQuests",
+		"objectID",
+		"professionID",
+		"questID",
+		"runeforgePowerID",
+		"rwp",
+		"s",
+		"speciesID",
+		"spellID",
+		"tierID",
+		"titleID",
+		"toyID"
+	}) do
+		cache[f] = {};
+	end
 	-- identical cache as creatureID (probably deprecate creatureID use eventually)
 	cache["npcID"] = cache.creatureID;
-	cache["objectID"] = {};
-	cache["professionID"] = {};
 	-- identical cache as professionID
 	cache["requireSkill"] = cache.professionID;
-	cache["questID"] = {};
-	cache["runeforgePowerID"] = {};
-	cache["rwp"] = {};
-	cache["s"] = {};
-	cache["speciesID"] = {};
-	cache["spellID"] = {};
-	cache["tierID"] = {};
-	cache["titleID"] = {};
-	cache["toyID"] = {};
 
 	tinsert(DataCaches, cache);
 	return cache;
@@ -6244,9 +6246,6 @@ end
 fieldConverters = {
 	-- Simple Converters
 	["achievementID"] = cacheAchievementID,
-	["achievementCategoryID"] = function(group, value)
-		CacheField(group, "achievementCategoryID", value);
-	end,
 	["achID"] = cacheAchievementID,
 	["altAchID"] = cacheAchievementID,
 	["artifactID"] = function(group, value)
@@ -7719,7 +7718,7 @@ local function CheckCollectible(ref)
 				-- fill the copied Item's symlink if any
 				FillSymLinks(expItem);
 				-- Build the Item's groups if any
-				BuildGroups(expItem, expItem.g);
+				BuildGroups(expItem);
 				-- Update the group
 				app.TopLevelUpdateGroup(expItem);
 				-- save it in the Item cache in case something else is able to purchase this reference
@@ -12115,7 +12114,7 @@ app.CacheHeirlooms = function()
 				for _,heirloom in ipairs(item.g) do
 					NestObject(token, heirloom, true);
 				end
-				BuildGroups(token, token.g);
+				BuildGroups(token);
 			end
 		end
 	end
@@ -12129,7 +12128,7 @@ app.CacheHeirlooms = function()
 				for _,heirloom in ipairs(item.g) do
 					NestObject(token, heirloom, true);
 				end
-				BuildGroups(token, token.g);
+				BuildGroups(token);
 			end
 		end
 	end
@@ -15188,25 +15187,31 @@ local function MinimapButtonOnClick(self, button)
 	end
 end
 local function MinimapButtonOnEnter(self)
-	local reference = app:GetDataCache();
 	GameTooltip:SetOwner(self, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
-	GameTooltip:AddDoubleLine(reference.text, GetProgressColorText(reference.progress, reference.total));
-	GameTooltip:AddDoubleLine(reference.mb_title1, reference.mb_title2, 1, 1, 1);
-	GameTooltip:AddLine(L["DESCRIPTION"], 0.4, 0.8, 1, 1);
+	local reference = app:GetDataCache();
+	if reference then
+		local left, right = strsplit(DESCRIPTION_SEPARATOR, reference.title);
+		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
+		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
+		GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
+		GameTooltipIcon:SetSize(72,72);
+		GameTooltipIcon:ClearAllPoints();
+		GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+		GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
+		local texcoord = reference.previewtexcoord or reference.texcoord;
+		if texcoord then
+			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
+		end
+		GameTooltipIcon:Show();
+	else
+		GameTooltip:AddDoubleLine(L["TITLE"], L["MAIN_LIST_REQUIRES_REFRESH"], 1, 1, 1);
+		GameTooltipIcon:Hide();
+	end
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
 	GameTooltip:Show();
-	GameTooltipIcon:SetSize(72,72);
-	GameTooltipIcon:ClearAllPoints();
-	GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-	GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-	local texcoord = reference.previewtexcoord or reference.texcoord;
-	if texcoord then
-		GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-	else
-		GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-	end
-	GameTooltipIcon:Show();
 end
 local function MinimapButtonOnLeave()
 	GameTooltip:Hide();
@@ -16583,7 +16588,7 @@ RowOnEnter = function (self)
 		if title then
 			local left, right = strsplit(DESCRIPTION_SEPARATOR, title);
 			if right then
-				GameTooltip:AddDoubleLine(left, right);
+				GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
 			else
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
@@ -17778,7 +17783,7 @@ local DynamicCategory_Nested = function(self)
 		self.text = Colorize(self.text, app.Colors.SourceIgnored);
 	end
 	-- pull out all Things which should go into this category based on field & value
-	local groups = app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups);
+	local groups = app:BuildSearchResponse(self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups);
 	NestObjects(self, groups);
 	-- reset indents and such
 	BuildGroups(self);
@@ -17881,7 +17886,11 @@ local DynamicCategory_Simple = function(self)
 end
 
 function app:GetDataCache()
-	-- app.PrintDebug("Start app.GetDataCache")
+	if not app.Categories then
+		return nil;
+	end
+	
+	-- app.PrintDebug("Start loading data cache")
 	-- app.PrintMemoryUsage()
 	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
 	local Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
@@ -18091,7 +18100,19 @@ function app:GetDataCache()
 	end
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
-	local allData = setmetatable({}, {
+	local rootData = setmetatable({
+		text = L["TITLE"],
+		icon = app.asset("content"),
+		texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256},
+		previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256},
+		description = L["DESCRIPTION"],
+		font = "GameFontNormalLarge",
+		expanded = true,
+		visible = true,
+		progress = 0,
+		total = 0,
+		g = {},
+	}, {
 		__index = function(t, key)
 			-- app.PrintDebug("Top-Root-Get",key)
 			if key == "title" then
@@ -18099,6 +18120,7 @@ function app:GetDataCache()
 			end
 			if key == "mb_title1" then return app.Settings:GetModeString(); end
 			if key == "mb_title2" then return not t.TLUG and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
+			if key == "progressText" then return GetProgressColorText(t.progress, t.total); end
 			if key == "visible" then return true; end
 		end,
 		__newindex = function(t, key, val)
@@ -18116,16 +18138,7 @@ function app:GetDataCache()
 			rawset(t, key, val);
 		end
 	});
-	allData.icon = app.asset("content");
-	allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
-	allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
-	allData.text = L["TITLE"];
-	allData.description = L["DESCRIPTION"];
-	allData.font = "GameFontNormalLarge";
-	allData.progress = 0;
-	allData.total = 0;
-	local g, db = {};
-	allData.g = g;
+	local g, db = rootData.g;
 
 	-- Dungeons & Raids
 	db = {};
@@ -18458,37 +18471,43 @@ function app:GetDataCache()
 	app.refreshDataForce = true;
 	-- app.PrintMemoryUsage("Prime.Data Ready")
 	local primeWindow = app:GetWindow("Prime");
-	primeWindow:SetData(allData);
+	primeWindow:SetData(rootData);
 	-- app.PrintMemoryUsage("Prime Window Data Set")
 	primeWindow:BuildData();
 	-- app.PrintMemoryUsage()
 	-- app.PrintDebug("Begin Cache Prime")
-	CacheFields(allData);
+	CacheFields(rootData);
 	-- app.PrintDebugPrior("Ended Cache Prime")
 	-- app.PrintMemoryUsage()
 
 	-- Now build the hidden "Unsorted" Window's Data
-	allData = {};
-	allData.icon = app.asset("content");
-	allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
-	allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
-	allData.font = "GameFontNormalLarge";
-	allData.text = L["TITLE"] .. " (Unsorted) " .. app.Version;
-	allData.title = L["UNSORTED_1"];
-	allData.description = L["UNSORTED_DESC"];
-	allData.visible = true;
-	allData.progress = 0;
-	allData.total = 0;
-	local g, db = {};
-	allData.g = g;
-
-	-- Never Implemented Flight Paths (Dynamic)
-	local flightPathsCategory_NYI = {};
-	flightPathsCategory_NYI.g = {};
-	flightPathsCategory_NYI.fps = {};
-	flightPathsCategory_NYI.icon = app.asset("Category_FlightPaths");
-	flightPathsCategory_NYI.text = L["FLIGHT_PATHS"];
-
+	local unsortedData = setmetatable({
+		text = L["TITLE"],
+		title = L["UNSORTED_1"] .. DESCRIPTION_SEPARATOR .. app.Version,
+		icon = app.asset("content"),
+		texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256},
+		previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256},
+		description = L["UNSORTED_DESC"],
+		font = "GameFontNormalLarge",
+		expanded = true,
+		visible = true,
+		progress = 0,
+		total = 0,
+		g = {},
+	}, {
+		__index = function(t, key)
+			if key == "title" then
+				return app.Settings:GetModeString() .. DESCRIPTION_SEPARATOR .. app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
+			elseif key == "progressText" then
+				return GetProgressColorText(t.progress, t.total);
+			else
+				-- Something that isn't dynamic.
+				return table[key];
+			end
+		end
+	});
+	g = unsortedData.g;
+	
 	-- Never Implemented
 	if app.Categories.NeverImplemented then
 		db = {};
@@ -18498,9 +18517,9 @@ function app:GetDataCache()
 		db.description = L["NEVER_IMPLEMENTED_DESC"];
 		db._nyi = true;
 		tinsert(g, db);
-		--tinsert(db.g, 1, flightPathsCategory_NYI);
 		CacheFields(db);
 	end
+	
 	-- Hidden Achievement Triggers
 	if app.Categories.HiddenAchievementTriggers then
 		db = {};
@@ -18510,9 +18529,6 @@ function app:GetDataCache()
 		db.description = "Hidden Achievement Triggers";
 		db._hqt = true;
 		tinsert(g, db);
-		--app.ToggleCacheMaps(true);
-		--CacheFields(db);
-		--app.ToggleCacheMaps();
 	end
 
 	-- Hidden Quest Triggers
@@ -18546,7 +18562,7 @@ function app:GetDataCache()
 	local unsorted = app:GetWindow("Unsorted");
 	-- force the unsorted window to be skipped for Updates unless it is actually visible
 	unsorted.AdHoc = true;
-	unsorted:SetData(allData);
+	unsorted:SetData(unsortedData);
 	unsorted:BuildData();
 
 	--[[
@@ -18780,18 +18796,15 @@ function app:GetDataCache()
 	end
 	achievementsCategory:OnUpdate();
 	]]--
-
-	-- Perform Heirloom caching/upgrade generation
-	app.CacheHeirlooms();
-
+	
 	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
-	-- app.PrintDebug("Finished app.GetDataCache")
+	-- app.PrintDebug("Finished loading data cache")
 	-- app.PrintMemoryUsage()
 	app.GetDataCache = function()
-		-- app.PrintDebug("Cached GetDataCache")
-		return app:GetWindow("Prime").data;
+		-- app.PrintDebug("Cached data cache")
+		return rootData;
 	end
-	return allData;
+	return rootData;
 end
 
 local function RefreshData()
@@ -18800,7 +18813,6 @@ local function RefreshData()
 	-- Send an Update to the Windows to Rebuild their Row Data
 	if app.refreshDataForce then
 		app.refreshDataForce = nil;
-		app:GetDataCache();
 
 		-- Refresh all Quests without callback
 		app.QueryCompletedQuests();
@@ -18959,25 +18971,26 @@ local function BuildSearchResponseViaCacheContainer(cacheContainer, value, clear
 end
 -- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
 -- should additionally clear their contents when being cloned
-function app:BuildSearchResponse(groups, field, value, clear)
+function app:BuildSearchResponse(field, value, clear)
 	MainRoot = app:GetDataCache();
-	UnsortedRoot = app:GetWindow("Unsorted").data;
-	wipe(ClonedHierarchyGroups);
-	wipe(ClonedHierarachyMapping);
-	wipe(SearchGroups);
-	if groups then
+	if MainRoot then
+		UnsortedRoot = app:GetWindow("Unsorted").data;
+		wipe(ClonedHierarchyGroups);
+		wipe(ClonedHierarachyMapping);
+		wipe(SearchGroups);
+		
 		-- app.PrintDebug("BSR:",field,value,clear)
 		SetRescursiveFilters();
 		local cacheContainer = SearchForFieldContainer(field);
 		if cacheContainer then
 			BuildSearchResponseViaCacheContainer(cacheContainer, value, clear);
 		elseif value then
-			-- app.PrintDebug("BSR:FieldValue",groups and #groups,field,value,clear)
-			AddSearchGroupsByFieldValue(groups, field, value);
+			-- app.PrintDebug("BSR:FieldValue",MainRoot and #MainRoot,field,value,clear)
+			AddSearchGroupsByFieldValue(MainRoot, field, value);
 			BuildClonedHierarchy(SearchGroups, clear);
 		else
-			-- app.PrintDebug("BSR:Field",groups and #groups,field,clear)
-			AddSearchGroupsByField(groups, field);
+			-- app.PrintDebug("BSR:Field",MainRoot and #MainRoot,field,clear)
+			AddSearchGroupsByField(MainRoot, field);
 			BuildClonedHierarchy(SearchGroups, clear);
 		end
 		return ClonedHierarchyGroups;
@@ -19257,7 +19270,7 @@ customWindowUpdates["AuctionData"] = function(self)
 	self.data.total = 0;
 	self.data.indent = 0;
 	self.data.back = 1;
-	BuildGroups(self.data, self.data.g);
+	BuildGroups(self.data);
 	app.TopLevelUpdateGroup(self.data);
 	self.data.visible = true;
 	self:BaseUpdate(true);
@@ -19308,7 +19321,7 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 				}),
 			},
 		});
-		BuildGroups(self.data, self.data.g);
+		BuildGroups(self.data);
 		self.rawData = {};
 		local function RefreshBounties()
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
@@ -19317,7 +19330,7 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 			end
 		end
 		self:SetScript("OnEvent", function(self, e, ...)
-			if select(1, ...) == "AllTheThings" then
+			if select(1, ...) == appName then
 				self:UnregisterEvent("ADDON_LOADED");
 				Callback(RefreshBounties);
 			end
@@ -19406,7 +19419,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 					end
 				end
 				NestObjects(self.data, allmapchains);
-				BuildGroups(self.data, self.data.g);
+				BuildGroups(self.data);
 				self:Update(true);
 			end
 		end
@@ -19902,6 +19915,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 end;
 customWindowUpdates["ItemFilter"] = function(self, force)
 	if self:IsVisible() then
+		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
+			return;
+		end
 		if not self.initialized then
 			self.initialized = true;
 
@@ -19913,7 +19929,7 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 
 			function self:Search(field, value)
 				app.PrintDebug("Search",field,value)
-				local results = app:BuildSearchResponse(app:GetDataCache().g, field, value, true);
+				local results = app:BuildSearchResponse(field, value, true);
 				app.PrintDebug("Results",#results)
 				app.ArrayAppend(self.data.g, results);
 			end
@@ -20994,7 +21010,7 @@ customWindowUpdates["Random"] = function(self)
 						['description'] = L["SEARCH_EVERYTHING_BUTTON_OF_DOOM"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "AllTheThings");
+							app.SetDataMember("RandomSearchFilter", appName);
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -21171,7 +21187,7 @@ customWindowUpdates["Random"] = function(self)
 				-- Call to our method and build a list to draw from
 				local method = app.GetDataMember("RandomSearchFilter", "Instance");
 				if method then
-					rerollOption.text = L["REROLL_2"] .. (method ~= "AllTheThings" and L[method:upper()] or method);
+					rerollOption.text = L["REROLL_2"] .. (method ~= appName and L[method:upper()] or method);
 					method = "Select" .. method;
 					local temp = self[method]() or app.EmptyTable;
 					local totalWeight = 0;
@@ -21203,7 +21219,7 @@ customWindowUpdates["Random"] = function(self)
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
 				end
-				BuildGroups(self.data, self.data.g);
+				BuildGroups(self.data);
 				if not no then self:Update(); end
 			end
 			self.Reroll = function(self)
@@ -21213,19 +21229,22 @@ customWindowUpdates["Random"] = function(self)
 				tinsert(self.data.g, o);
 			end
 			local method = app.GetDataMember("RandomSearchFilter", "Instance");
-			rerollOption.text = L["REROLL_2"] .. (method ~= "AllTheThings" and L[method:upper()] or method);
+			rerollOption.text = L["REROLL_2"] .. (method ~= appName and L[method:upper()] or method);
 		end
 
 		-- Update the window and all of its row data
 		self.data.progress = 0;
 		self.data.total = 0;
 		self.data.indent = 0;
-		BuildGroups(self.data, self.data.g);
+		BuildGroups(self.data);
 		self:BaseUpdate(true);
 	end
 end;
 customWindowUpdates["RWP"] = function(self)
 	if self:IsVisible() then
+		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
+			return;
+		end
 		if not self.initialized then
 			self.initialized = true;
 			self:SetData({
@@ -21234,7 +21253,7 @@ customWindowUpdates["RWP"] = function(self)
 				["description"] = L["FUTURE_UNOBTAINABLE_TOOLTIP"],
 				["visible"] = true,
 				["back"] = 1,
-				["g"] = app:BuildSearchResponse(app:GetDataCache().g, "rwp"),
+				["g"] = app:BuildSearchResponse("rwp"),
 			});
 			self:BuildData();
 			self.ExpandInfo = { Expand = true, Manual = true };
@@ -21437,7 +21456,7 @@ customWindowUpdates["Sync"] = function(self)
 									["OnUpdate"] = app.AlwaysShowUpdate,
 								});
 							end
-							BuildGroups(data, data.g);
+							BuildGroups(data);
 							return true;
 						end,
 					},
@@ -21617,6 +21636,9 @@ customWindowUpdates["list"] = function(self, force, got)
 	end
 end
 customWindowUpdates["Tradeskills"] = function(self, force, got)
+	if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
+		return;
+	end
 	if not self.initialized then
 		-- cache some common functions
 		local C_TradeSkillUI = C_TradeSkillUI;
@@ -21787,11 +21809,11 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- app.PrintDebug("UpdateData",self.lastTradeSkillID)
 				data = app.CreateProfession(self.lastTradeSkillID);
 				app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
-				NestObjects(data, app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", data.requireSkill));
+				NestObjects(data, app:BuildSearchResponse("requireSkill", data.requireSkill));
 				app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 				data.indent = 0;
 				data.visible = true;
-				BuildGroups(data, data.g);
+				BuildGroups(data);
 				updates["Data"] = data;
 				-- only expand the list if this is the first time it is being generated
 				self.ExpandInfo = { Expand = true };
@@ -22520,7 +22542,7 @@ app.LoadDebugger = function()
 					for i=#self.data.options,1,-1 do
 						tinsert(self.data.g, 1, self.data.options[i]);
 					end
-					BuildGroups(self.data, self.data.g);
+					BuildGroups(self.data);
 					AfterCombatCallback(self.Update, self, true);
 				end
 			end
@@ -22581,7 +22603,7 @@ app.LoadDebugger = function()
 									for i,info in ipairs(row.ref.data) do
 										NestObject(self.data, CreateObject(info));
 									end
-									BuildGroups(self.data, self.data.g);
+									BuildGroups(self.data);
 									AfterCombatCallback(self.Update, self, true);
 									return true;
 								end,
@@ -22591,7 +22613,7 @@ app.LoadDebugger = function()
 							for i=#self.data.options,1,-1 do
 								tinsert(self.data.g, 1, self.data.options[i]);
 							end
-							BuildGroups(self.data, self.data.g);
+							BuildGroups(self.data);
 							AfterCombatCallback(self.Update, self, true);
 							return true;
 						end,
@@ -22707,7 +22729,7 @@ app.LoadDebugger = function()
 					MerchantFrame_SetFilter(MerchantFrame, 1);
 					DelayedCallback(AddMerchant, 1, UnitGUID("npc"));
 				elseif e == "TRADE_SKILL_LIST_UPDATE" then
-					local tradeSkillID = AllTheThings.GetTradeSkillLine();
+					local tradeSkillID = app.GetTradeSkillLine();
 					local currentCategoryGroup, currentCategoryID, categories = {}, -1, {};
 					local categoryList, rawGroups = {}, {};
 					local categoryIDs = { C_TradeSkillUI.GetCategories() };
@@ -22785,7 +22807,7 @@ app.LoadDebugger = function()
 						["g"] = rawGroups
 					};
 					NestObject(self.data, CreateObject(info));
-					BuildGroups(self.data, self.data.g);
+					BuildGroups(self.data);
 					AfterCombatCallback(self.Update, self, true);
 					-- trigger the delayed backup
 					DelayedCallback(self.BackupData, 15, self);
@@ -22898,7 +22920,7 @@ app.LoadDebugger = function()
 			InitDebuggerData();
 			-- Ensure the current Zone is added when the Window is initialized
 			AddObject();
-			BuildGroups(self.data, self.data.g);
+			BuildGroups(self.data);
 		end
 
 		-- Update the window and all of its row data
@@ -23167,21 +23189,6 @@ local function AttachTooltip(self, ttdata)
 		if knownSearchField and ttId then
 			-- app.PrintDebug("TT Search",knownSearchField,id)
 			AttachTooltipSearchResults(self, 1, knownSearchField..":"..ttId, SearchForField, knownSearchField, tonumber(ttId));
-			return true;
-		end
-	end
-
-	-- Addons Menu?
-	local numLines = self:NumLines();
-	if numLines == 2 then
-		local tooltipName = self:GetName() or "";
-		local leftSide = _G[tooltipName.."TextLeft1"];
-		if leftSide and leftSide:GetText() == "AllTheThings" then
-			local reference = app:GetDataCache();
-			self:ClearLines();
-			self:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total), 1, 1, 1);
-			self:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
-			self:AddLine(reference.description, 0.4, 0.8, 1, 1);
 			return true;
 		end
 	end
@@ -23756,7 +23763,7 @@ end
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
 	-- app.PrintMemoryUsage("Startup")
-	local v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
+	local v = C_AddOns.GetAddOnMetadata(appName, "Version");
 	-- if placeholder exists as the Version tag, then assume we are not on the Release version
 	if string.match(v, "version") then
 		app.Version = "[Git]";
@@ -24098,11 +24105,11 @@ end
 -- Function which is triggered after Startup
 app.InitDataCoroutine = function()
 	-- app.PrintMemoryUsage("InitDataCoroutine")
-	-- First, load the addon data
-	app:GetDataCache();
-
-	-- Then wait for the player to actually be 'in the game' to do further logic
+	-- Wait for the player to actually be 'in the game' to do further logic
 	while not app.InWorld do coroutine.yield(); end
+	
+	-- Wait for the Data Cache to return something.
+	while not app:GetDataCache() do coroutine.yield(); end
 
 	local accountWideData = LocalizeGlobal("ATTAccountWideData");
 	local characterData = LocalizeGlobal("ATTCharacterData");
@@ -24171,6 +24178,9 @@ app.InitDataCoroutine = function()
 
 	-- Assign DGU OnUpdates
 	AssignDirectGroupOnUpdates();
+	
+	-- Perform Heirloom caching/upgrade generation
+	app.CacheHeirlooms();
 
 	-- Mark all previously completed quests.
 	app.QueryCompletedQuests();
@@ -24378,6 +24388,12 @@ SlashCmdList["AllTheThingsWQ"] = function(cmd)
 	app:GetWindow("WorldQuests"):Toggle();
 end
 
+SLASH_ATTCUYELL1 = "/attyell";
+SLASH_ATTCUYELL2 = "/attrohduh";
+SlashCmdList["ATTCUYELL"] = function(cmd)
+	C_ChatInfo.SendAddonMessage("ATT", "?", "YELL");
+end
+
 -- Clickable ATT Chat Link Handling
 (function()
 	hooksecurefunc("SetItemRef", function(link, text)
@@ -24547,7 +24563,7 @@ app.events.TOOLTIP_DATA_UPDATE = function(...)
 	end
 end
 app.AddonLoadedTriggers = {
-	["AllTheThings"] = function()
+	[appName] = function()
 		app.Startup();
 	end,
 	["Blizzard_AuctionHouseUI"] = function()

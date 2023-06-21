@@ -84,8 +84,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					635,	-- Adder (PET!)
 					631,	-- Emerald Boa (PET!)
@@ -101,8 +100,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					pet(386),	-- Prairie Dog (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(381),	-- Boulder Lode Mine
@@ -123,7 +121,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(FACTIONS, {
 				faction(470, {	-- Ratchet
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForRatchet,
 					["maps"] = { TANARIS },
 				}),

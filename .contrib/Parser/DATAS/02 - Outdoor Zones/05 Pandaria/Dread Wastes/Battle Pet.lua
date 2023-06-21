@@ -5,7 +5,7 @@
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(DREAD_WASTES, {
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					732,	-- Amber Moth (PET!)
 				}},
@@ -19,7 +19,7 @@ root(ROOTS.Zones, {
 					pet(744),	-- Resilient Roach (PET!)
 					pet(741),	-- Silent Hedgehog (PET!)
 				},
-			})),
+			}),
 		}),
 	}),
 });

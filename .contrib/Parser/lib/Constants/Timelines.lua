@@ -1,9 +1,76 @@
+-------------------------
+-- THE BURNING CRUSADE --
+-------------------------
+CREATED_2_0_1 = "created 2.0.1.6180";					-- The Burning Crusade 2.0.1/Pre-Patch Launch on December 5th, 2006
+ADDED_2_0_1 = "added 2.0.1.6180";						-- The Burning Crusade 2.0.1/Pre-Patch Launch on December 5th, 2006
+REMOVED_2_0_1 = "removed 2.0.1.6180";					-- The Burning Crusade 2.0.1/Pre-Patch Launch on December 5th, 2006
+CREATED_2_0_3 = "created 2.0.3.6299";					-- The Burning Crusade 2.0.3/Pre-Patch Launch on January 9th, 2007
+ADDED_2_0_3 = "added 2.0.3.6299";						-- The Burning Crusade 2.0.3/Pre-Patch Launch on January 9th, 2007
+REMOVED_2_0_3 = "removed 2.0.3.6299";					-- The Burning Crusade 2.0.3/Pre-Patch Launch on January 9th, 2007
+CREATED_2_0_5 = "created 2.0.5.6320";					-- The Burning Crusade 2.0.5/Pre-Patch Launch on January 14th, 2007 and Launch January 16th, 2007
+ADDED_2_0_5 = "added 2.0.5.6320";						-- The Burning Crusade 2.0.5/Pre-Patch Launch on January 14th, 2007 and Launch January 16th, 2007
+REMOVED_2_0_5 = "removed 2.0.5.6320";					-- The Burning Crusade 2.0.5/Pre-Patch Launch on January 14th, 2007 and Launch January 16th, 2007
+CREATED_2_0_6 = "created 2.0.6.6337";					-- The Burning Crusade 2.0.6 Launch on January 23rd, 2007
+ADDED_2_0_6 = "added 2.0.6.6337";						-- The Burning Crusade 2.0.6 Launch on January 23rd, 2007
+REMOVED_2_0_6 = "removed 2.0.6.6337";					-- The Burning Crusade 2.0.6 Launch on January 23rd, 2007
+CREATED_2_0_7 = "created 2.0.7.6383";					-- The Burning Crusade 2.0.7 Launch on February 13th, 2007
+ADDED_2_0_7 = "added 2.0.7.6383";						-- The Burning Crusade 2.0.7 Launch on February 13th, 2007
+REMOVED_2_0_7 = "removed 2.0.7.6383";					-- The Burning Crusade 2.0.7 Launch on February 13th, 2007
+CREATED_2_0_8 = "created 2.0.8.6403";					-- The Burning Crusade 2.0.8 Launch on February 15th, 2007
+ADDED_2_0_8 = "added 2.0.8.6403";						-- The Burning Crusade 2.0.8 Launch on February 15th, 2007
+REMOVED_2_0_8 = "removed 2.0.8.6403";					-- The Burning Crusade 2.0.8 Launch on February 15th, 2007
+CREATED_2_0_10 = "created 2.0.10.6448";					-- The Burning Crusade 2.0.10 Launch on March 6th, 2007
+ADDED_2_0_10 = "added 2.0.10.6448";						-- The Burning Crusade 2.0.10 Launch on March 6th, 2007
+REMOVED_2_0_10 = "removed 2.0.10.6448";					-- The Burning Crusade 2.0.10 Launch on March 6th, 2007
+CREATED_2_0_12 = "created 2.0.12.6546";					-- The Burning Crusade 2.0.12 Launch on April 3rd, 2007
+ADDED_2_0_12 = "added 2.0.12.6546";						-- The Burning Crusade 2.0.12 Launch on April 3rd, 2007
+REMOVED_2_0_12 = "removed 2.0.12.6546";					-- The Burning Crusade 2.0.12 Launch on April 3rd, 2007
+CREATED_2_1_0 = "created 2.1.0.6692";					-- The Burning Crusade 2.1.0 Launch on May 22nd, 2007
+ADDED_2_1_0 = "added 2.1.0.6692";						-- The Burning Crusade 2.1.0 Launch on May 22nd, 2007
+REMOVED_2_1_0 = "removed 2.1.0.6692";					-- The Burning Crusade 2.1.0 Launch on May 22nd, 2007
+CREATED_2_1_1 = "created 2.1.1.6739";					-- The Burning Crusade 2.1.1 Launch on June 5th, 2007
+ADDED_2_1_1 = "added 2.1.1.6739";						-- The Burning Crusade 2.1.1 Launch on June 5th, 2007
+REMOVED_2_1_1 = "removed 2.1.1.6739";					-- The Burning Crusade 2.1.1 Launch on June 5th, 2007
+CREATED_2_1_2 = "created 2.1.2.6803";					-- The Burning Crusade 2.1.2 Launch on June 19th, 2007
+ADDED_2_1_2 = "added 2.1.2.6803";						-- The Burning Crusade 2.1.2 Launch on June 19th, 2007
+REMOVED_2_1_2 = "removed 2.1.2.6803";					-- The Burning Crusade 2.1.2 Launch on June 19th, 2007
+CREATED_2_1_3 = "created 2.1.3.6898";					-- The Burning Crusade 2.1.3 Launch on July 10th, 2007
+ADDED_2_1_3 = "added 2.1.3.6898";						-- The Burning Crusade 2.1.3 Launch on July 10th, 2007
+REMOVED_2_1_3 = "removed 2.1.3.6898";					-- The Burning Crusade 2.1.3 Launch on July 10th, 2007
+CREATED_2_2_0 = "created 2.2.0.7272";					-- The Burning Crusade 2.2.0 Launch on September 25th, 2007
+ADDED_2_2_0 = "added 2.2.0.7272";						-- The Burning Crusade 2.2.0 Launch on September 25th, 2007
+REMOVED_2_2_0 = "removed 2.2.0.7272";					-- The Burning Crusade 2.2.0 Launch on September 25th, 2007
+CREATED_2_2_2 = "created 2.2.2.7318";					-- The Burning Crusade 2.2.2 Launch on October 2nd, 2007
+ADDED_2_2_2 = "added 2.2.2.7318";						-- The Burning Crusade 2.2.2 Launch on October 2nd, 2007
+REMOVED_2_2_2 = "removed 2.2.2.7318";					-- The Burning Crusade 2.2.2 Launch on October 2nd, 2007
+CREATED_2_2_3 = "created 2.2.3.7359";					-- The Burning Crusade 2.2.3 Launch on October 9th, 2007
+ADDED_2_2_3 = "added 2.2.3.7359";						-- The Burning Crusade 2.2.3 Launch on October 9th, 2007
+REMOVED_2_2_3 = "removed 2.2.3.7359";					-- The Burning Crusade 2.2.3 Launch on October 9th, 2007
+CREATED_2_3_0 = "created 2.3.0.7561";					-- The Burning Crusade 2.3.0 Launch on November 13th, 2007
+ADDED_2_3_0 = "added 2.3.0.7561";						-- The Burning Crusade 2.3.0 Launch on November 13th, 2007
+REMOVED_2_3_0 = "removed 2.3.0.7561";					-- The Burning Crusade 2.3.0 Launch on November 13th, 2007
+CREATED_2_3_2 = "created 2.3.2.7741";					-- The Burning Crusade 2.3.2 Launch on January 8th, 2008
+ADDED_2_3_2 = "added 2.3.2.7741";						-- The Burning Crusade 2.3.2 Launch on January 8th, 2008
+REMOVED_2_3_2 = "removed 2.3.2.7741";					-- The Burning Crusade 2.3.2 Launch on January 8th, 2008
+CREATED_2_3_3 = "created 2.3.3.7799";					-- The Burning Crusade 2.3.3 Launch on January 22nd, 2008
+ADDED_2_3_3 = "added 2.3.3.7799";						-- The Burning Crusade 2.3.3 Launch on January 22nd, 2008
+REMOVED_2_3_3 = "removed 2.3.3.7799";					-- The Burning Crusade 2.3.3 Launch on January 22nd, 2008
+CREATED_2_4_0 = "created 2.4.0.8089";					-- The Burning Crusade 2.4.0 Launch on March 25th, 2008
+ADDED_2_4_0 = "added 2.4.0.8089";						-- The Burning Crusade 2.4.0 Launch on March 25th, 2008
+REMOVED_2_4_0 = "removed 2.4.0.8089";					-- The Burning Crusade 2.4.0 Launch on March 25th, 2008
+CREATED_2_4_1 = "created 2.4.1.8125";					-- The Burning Crusade 2.4.1 Launch on April 1st, 2008
+ADDED_2_4_1 = "added 2.4.1.8125";						-- The Burning Crusade 2.4.1 Launch on April 1st, 2008
+REMOVED_2_4_1 = "removed 2.4.1.8125";					-- The Burning Crusade 2.4.1 Launch on April 1st, 2008
+CREATED_2_4_2 = "created 2.4.2.8209";					-- The Burning Crusade 2.4.2 Launch on May 13th, 2008
+ADDED_2_4_2 = "added 2.4.2.8209";						-- The Burning Crusade 2.4.2 Launch on May 13th, 2008
+REMOVED_2_4_2 = "removed 2.4.2.8209";					-- The Burning Crusade 2.4.2 Launch on May 13th, 2008
+CREATED_2_4_3 = "created 2.4.3.8606";					-- The Burning Crusade 2.4.3 Launch on July 15th, 2008
+ADDED_2_4_3 = "added 2.4.3.8606";						-- The Burning Crusade 2.4.3 Launch on July 15th, 2008
+REMOVED_2_4_3 = "removed 2.4.3.8606";					-- The Burning Crusade 2.4.3 Launch on July 15th, 2008
+
 ----------------------------
 -- WRATH OF THE LICH KING --
 ----------------------------
-CREATED_3_0_1 = "created 3.0.1.8634";					-- Wrath of the Lich King 3.0.2/Alpha Launch on ?, 2008
-ADDED_3_0_1 = "added 3.0.1.8634";						-- Wrath of the Lich King 3.0.2/Alpha Launch on ?, 2008
-REMOVED_3_0_1 = "removed 3.0.1.8634";					-- Wrath of the Lich King 3.0.2/Alpha Launch on ?, 2008
 CREATED_3_0_2 = "created 3.0.2.9056";					-- Wrath of the Lich King 3.0.2/Pre-Patch Launch on October 14th, 2008
 ADDED_3_0_2 = "added 3.0.2.9056";						-- Wrath of the Lich King 3.0.2/Pre-Patch Launch on October 14th, 2008
 REMOVED_3_0_2 = "removed 3.0.2.9056";					-- Wrath of the Lich King 3.0.2/Pre-Patch Launch on October 14th, 2008
@@ -78,9 +145,6 @@ REMOVED_4_3_2 = "removed 4.3.2.15211";					-- Cataclysm 4.3.2 Launch on January 
 -----------------------
 -- MISTS OF PANDARIA --
 -----------------------
-CREATED_5_0_3 = "created 5.0.3.15882";					-- Mists of Pandaria 5.0.3/Beta Launch on July 13th, 2012
-ADDED_5_0_3 = "added 5.0.3.15882";						-- Mists of Pandaria 5.0.3/Beta Launch on July 13th, 2012
-REMOVED_5_0_3 = "removed 5.0.3.15882";					-- Mists of Pandaria 5.0.3/Beta Launch on July 13th, 2012
 CREATED_5_0_4 = "created 5.0.4.16016";					-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
 ADDED_5_0_4 = "added 5.0.4.16016";						-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
 REMOVED_5_0_4 = "removed 5.0.4.16016";					-- Mists of Pandaria 5.0.4/Pre-Patch Launch on August 28th, 2012 and Launch September 25th, 2012
@@ -103,9 +167,6 @@ REMOVED_5_4_7 = "removed 5.4.7.17898";					-- Mists of Pandaria 5.4.7 Launch on 
 -------------------------
 -- WARLORDS OF DRAENOR --
 -------------------------
-CREATED_6_0_1 = "created 6.0.1.18179";					-- Warlords of Draenor 6.0.2/Alpha Launch on April 24, 2014
-ADDED_6_0_1 = "added 6.0.1.18179";						-- Warlords of Draenor 6.0.2/Alpha Launch on April 24, 2014
-REMOVED_6_0_1 = "removed 6.0.1.18179";					-- Warlords of Draenor 6.0.2/Alpha Launch on April 24, 2014
 CREATED_6_0_2 = "created 6.0.2.19027";					-- Warlords of Draenor 6.0.2/Pre-Patch Launch on October 14th, 2014
 ADDED_6_0_2 = "added 6.0.2.19027";						-- Warlords of Draenor 6.0.2/Pre-Patch Launch on October 14th, 2014
 REMOVED_6_0_2 = "removed 6.0.2.19027";					-- Warlords of Draenor 6.0.2/Pre-Patch Launch on October 14th, 2014
@@ -137,9 +198,6 @@ REMOVED_6_2_4 = "removed 6.2.4.21345";					-- Warlords of Draenor 6.2.4 Launch o
 ------------
 -- LEGION --
 ------------
-CREATED_7_0_1 = "created 7.0.1.20740";					-- Legion 7.0.1/Alpha Launch on November 18, 2015
-ADDED_7_0_1 = "added 7.0.1.20740";						-- Legion 7.0.1/Alpha Launch on November 18, 2015
-REMOVED_7_0_1 = "removed 7.0.1.20740";					-- Legion 7.0.1/Alpha Launch on November 18, 2015
 CREATED_7_0_3 = "created 7.0.3.22248";					-- Legion 7.0.3/Pre-Patch Launch on July 19th, 2016
 ADDED_7_0_3 = "added 7.0.3.22248";						-- Legion 7.0.3/Pre-Patch Launch on July 19th, 2016
 REMOVED_7_0_3 = "removed 7.0.3.22248";					-- Legion 7.0.3/Pre-Patch Launch on July 19th, 2016

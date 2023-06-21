@@ -44,39 +44,5 @@ namespace ATT
             }
             return false;
         }
-
-        /// <summary>
-        /// Export the shortcuts that were used in the last export session.
-        /// </summary>
-        /// <param name="builder">The builder.</param>
-        /// <param name="action">The action</param>
-        private static void ExportShortcuts(StringBuilder builder, Action<StringBuilder, IEnumerable<KeyValuePair<string, string>>> action)
-        {
-            var constructors = FUNCTION_SHORTCUTS.ToList();
-            FUNCTION_SHORTCUTS.Clear();
-            constructors.Sort(delegate (KeyValuePair<string, string> a, KeyValuePair<string, string> b)
-            {
-                return a.Key.CompareTo(b.Key);
-            });
-            action(builder, constructors);
-        }
-
-        /// <summary>
-        /// Export the shortcuts that were used in the last export session.
-        /// </summary>
-        /// <param name="builder">The builder.</param>
-        private static void ExportShortcutsForJSON(StringBuilder builder)
-        {
-            ExportShortcuts(builder, ExportLocalVariablesForJSON);
-        }
-
-        /// <summary>
-        /// Export the shortcuts that were used in the last export session.
-        /// </summary>
-        /// <param name="builder">The builder.</param>
-        private static void ExportShortcutsForLua(StringBuilder builder)
-        {
-            ExportShortcuts(builder, ExportLocalVariablesForLua);
-        }
     }
 }

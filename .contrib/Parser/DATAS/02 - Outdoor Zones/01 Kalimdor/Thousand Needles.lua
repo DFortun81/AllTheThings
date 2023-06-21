@@ -54,8 +54,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					424,	-- Roach (PET!)
@@ -70,8 +69,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["190:190:31:155"] = 482,	-- Highperch
@@ -2479,7 +2477,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 2.0.1", "removed 4.1.0" },	-- Moved to Trainer
 							["isLimited"] = true,
 						}),
-						i(5973, {	-- Pattern: Barbaric Leggings
+						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

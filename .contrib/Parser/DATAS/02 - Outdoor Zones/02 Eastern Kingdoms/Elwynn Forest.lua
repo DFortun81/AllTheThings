@@ -17,10 +17,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			m(NORTHSHIRE_VALLEY, {
 				["lore"] = "Northshire was the pride of Stormwind's vineyards until recently when Defias bandits drove off the farmers and occupied the farm and fields. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",
-				-- #if ANYCLASSIC
-				["icon"] = asset("Achievement_Character_Human_Female"),
-				-- #else
+				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
+				-- #else
+				["icon"] = [[~_.asset("Achievement_Character_Human_Female")]],
 				-- #endif
 				["groups"] = {
 					n(QUESTS, {
@@ -1401,8 +1401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					646,	-- Chicken (PET!)
 				}},
@@ -1417,8 +1416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(379),	-- Squirrel (PET!)
 					pet(675),	-- Stormwind Rat (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["225:220:422:332"] = 18,	-- Crystal Lake

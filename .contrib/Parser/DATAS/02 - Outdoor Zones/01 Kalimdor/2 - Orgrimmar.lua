@@ -2650,8 +2650,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				})),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					467,	-- Dung Beetle (PET!)
 					471,	-- Robo-Chick (PET!)
@@ -2659,25 +2658,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					420,	-- Toad (PET!)
 					418,	-- Water Snake (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(530, {	-- Darkspear Trolls
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Troll_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Troll_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
-				faction(76, {	-- Orgrimmar
+				faction(FACTION_ORGRIMMAR, {
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Orc_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Orc_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,

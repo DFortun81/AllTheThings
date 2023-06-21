@@ -138,8 +138,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						449,	-- Brown Marmot (PET!)
 						378,	-- Rabbit (PET!)
@@ -160,8 +159,7 @@ root(ROOTS.Zones, {
 							["description"] = "Found only in the two caves that connect Blade's Edge to Zangarmarsh.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3864, "256:256:422:0"),			-- Bash'ir Landing

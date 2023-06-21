@@ -250,7 +250,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 4.0.3.13286" },
 		}),
 		i(85871, {	-- Lucky Quilen Cub (PET!)
-			["timeline"] = { "added 5.0.1.15662" },
+			["timeline"] = { ADDED_5_0_4 },
 		}),
 		i(141893, {	-- Mischief (PET!)
 			["timeline"] = { "added 7.1.0.22996" },
@@ -258,11 +258,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(68384, {	-- Moonkin Egg (You had to open the Egg on both faction sides before 6.0.1 to receive your Moonkin Pet). You get both now automaticly
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 		}),
-		i(68618, {	-- Moonkin Hatchling (A)
+		i(68618, {	-- Moonkin Hatchling [A] (PET!)
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 			["races"] = ALLIANCE_ONLY,
 		}),
-		i(68619, {	-- Moonkin Hatchling (H)
+		i(68619, {	-- Moonkin Hatchling [H] (PET!)
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 			["races"] = HORDE_ONLY,
 		}),

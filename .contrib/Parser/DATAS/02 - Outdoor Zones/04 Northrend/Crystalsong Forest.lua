@@ -23,18 +23,14 @@ root(ROOTS.Zones, {
 					-- #endif
 					explorationAch(1457),	-- Explore Crystalsong Forest
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
-						378,	-- Rabbit
-						379,	-- Squirrel
-						1238,	-- Unborn Val'kyr
+						385,	-- Mouse (PET!)
+						378,	-- Rabbit (PET!)
+						379,	-- Squirrel (PET!)
+						1238,	-- Unborn Val'kyr (PET!)
 					}},
-					["groups"] = {
-						pet(385),	-- Mouse
-					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4553),	-- Forlorn Woods

@@ -44,8 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					393,	-- Cockroach (PET!)
 					415,	-- Fire Beetle (PET!)
@@ -56,8 +55,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(425),	-- Ash Viper (PET!)
 					pet(429),	-- Lava Beetle (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(255, "225:220:36:109"),		-- Altar of Storms

@@ -15,16 +15,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					478,	-- Forest Moth (PET!)
 					378,	-- Rabbit (PET!)
 					503,	-- Silky Moth (PET!)
 					379,	-- Squirrel (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["555:510:244:89"] = 656,	-- Lake Elune'ara

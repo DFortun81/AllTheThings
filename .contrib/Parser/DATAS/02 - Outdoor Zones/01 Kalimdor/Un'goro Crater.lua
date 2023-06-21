@@ -35,8 +35,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
 					393,	-- Cockroach (PET!)
@@ -56,8 +55,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Only found around water in Un'goro.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["285:285:582:67"] = 1943,	-- Ironstone Plateau
@@ -1847,9 +1845,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6559,	-- Glutinous Ooze
 						6557,	-- Primal Ooze
 					},
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling (PET!)
-					},
+					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				-- #if BEFORE 4.0.3
 				i(15772, {	-- Pattern: Devilsaur Leggings

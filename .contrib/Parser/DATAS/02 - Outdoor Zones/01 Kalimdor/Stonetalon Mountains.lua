@@ -60,8 +60,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					487,	-- Alpine Chipmunk (PET!)
 					633,	-- Mountain Skunk (PET!)
@@ -79,8 +78,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["125:125:475:433"] = 2541,	-- Sishir Canyon

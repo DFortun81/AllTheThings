@@ -79,22 +79,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					477,	-- Gazelle Fawn (PET!)
 					385,	-- Mouse  (PET!)
 					386,	-- Prarie Dog (PET!)
 					378,	-- Rabbit (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(81, {	-- Thunder Bluff
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Tauren_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Tauren_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Tauren_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
@@ -901,7 +899,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.2, 58.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(10394),	-- Prairie Dog Whistle (PET!)
+						i(10394),	-- Brown Prairie Dog (PET!)
 					},
 				}),
 				n(8358, {	-- Hewa <Cloth Armor Merchant>

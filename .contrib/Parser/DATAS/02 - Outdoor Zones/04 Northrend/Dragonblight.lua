@@ -211,8 +211,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						641,	-- Arctic Hare (PET!)
 						536,	-- Tundra Penguin (PET!)
@@ -221,8 +220,7 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						pet(537),-- Dragonbone Hatchling (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4253),	-- 7th Legion Front

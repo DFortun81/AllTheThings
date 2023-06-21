@@ -126,7 +126,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 					i(48120, {	-- Obsidian Hatchling (PET!)
 						["timeline"] = { "added 3.2.0.10026" },
 					}),
-					i(29902),	-- Red Moth Egg
+					i(29902),	-- Red Moth (PET!)
 					i(136905, {	-- Ridgeback Piglet (PET!)
 						["timeline"] = { "added 7.0.3.22248" },
 					}),

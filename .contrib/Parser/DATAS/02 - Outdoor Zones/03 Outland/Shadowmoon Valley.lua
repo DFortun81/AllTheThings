@@ -139,8 +139,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						425,	-- Ash Viper (PET!)
 						414,	-- Scorpid (PET!)
@@ -151,8 +150,7 @@ root(ROOTS.Zones, {
 							["description"] = "Found around the Hand of Gul'dan in old Shadowmoon Valley and fel areas in Tanaan.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3754, "256:256:520:93"),	-- Altar of Sha'tar

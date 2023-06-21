@@ -90,14 +90,12 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					pet(521, {	-- Fledgling Nether Ray (PET!)
 						["description"] = "Found only around Manaforges.",
 					}),
 					pet(638),	-- Nether Roach (PET!)
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3723, "256:256:328:397"),		-- Arklon Ruins

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Text;
 
 namespace ATT
@@ -47,8 +48,6 @@ namespace ATT
             ObjectData.Create<NPCData>("npcID",     "n",            "_.CreateNPC", "f", "creatureID");
             ObjectData.Create("objectID",           "o",            "_.CreateObject", "f");
             ObjectData.Create("petAbilityID",       "pa",           "_.CreatePetAbility", "f");
-            ObjectData.Create("petTypeID",          "pt",           "_.CreatePetType", "f");
-            ObjectData.Create("pvpRankID",          "pvprank",      "_.CreatePVPRank", "f");
             ObjectData.Create("followerID",         "follower",     "_.CreateFollower", "f");
             ObjectData.Create("missionID",          "gm",           "_.CreateGarrisonMission", "f");
             ObjectData.Create("talentID",           "gt",           "_.CreateGarrisonTalent", "f");
@@ -71,6 +70,8 @@ namespace ATT
             ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell");
             ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
             ObjectData.Create("tierID",             "t",            "_.CreateTier", "f");
+            ObjectData.Create("petTypeID",          "pt",           "_.CreatePetType", "f");
+            ObjectData.Create("pvpRankID",          "pvprank",      "_.CreatePVPRank", "f");
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID");
             ObjectData.Create("f",                  "flt",          "_.CreateFilter");
         }
@@ -125,25 +126,30 @@ namespace ATT
         /// Export all of the local variable names in the key values list.
         /// </summary>
         /// <param name="builder">The builder.</param>
-        /// <param name="keyValues">The key values.</param>
-        private static void ExportLocalVariablesForLua(StringBuilder builder, IEnumerable<KeyValuePair<string, string>> keyValues)
+        private static void ExportLocalVariablesForLua(StringBuilder builder)
         {
+            var keys = FUNCTION_SHORTCUTS.Keys.ToList();
+            keys.Sort(StringComparer.InvariantCulture);
+
             int count = 0;
             var builder2 = new StringBuilder("local ");
-            foreach (var pair in keyValues)
+            foreach (var key in keys)
             {
                 if (count++ > 0) builder2.Append(',');
-                builder2.Append(pair.Key);
+                builder2.Append(key);
             }
             builder2.Append('=');
             count = 0;
-            foreach (var pair in keyValues)
+            foreach (var key in keys)
             {
                 if (count++ > 0) builder2.Append(',');
-                builder2.Append(pair.Value);
+                builder2.Append(FUNCTION_SHORTCUTS[key]);
             }
             builder2.Append(';').AppendLine();
             builder.Insert(0, builder2);
+
+            // Now that we're finished with these, let's clear it.
+            FUNCTION_SHORTCUTS.Clear();
         }
 
         /// <summary>

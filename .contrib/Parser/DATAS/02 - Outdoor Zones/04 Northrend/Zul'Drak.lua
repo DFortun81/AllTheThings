@@ -111,8 +111,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						641,	-- Arctic Hare (PET!)
 						387,	-- Snake (PET!)
@@ -125,8 +124,7 @@ root(ROOTS.Zones, {
 							["description"] = "Spawns in the farms south of The Argent Stand.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4322),	-- Altar of Har'koa
@@ -1200,6 +1198,7 @@ root(ROOTS.Zones, {
 							{ 75.2, 38.6, ZULDRAK },
 						},
 						["cr"] = 29334,	-- Gundrak Raptor
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(41120, {	-- Plans: Reinforced Cobalt Legplates (RECIPE!)
 						["coords"] = {

@@ -1,5 +1,0 @@
-3.0.1.8622
-r(53428),	-- Runeforging
-
-
-Nothing is Missing in Runeforging1ItemDB.lua! Good Work!

@@ -979,6 +979,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
 				["races"] = HORDE_ONLY,
 			}),
+
+			q(75874, {	-- Time to Fly
+				["description"] = "Reaching Level 30 will make this quest pop up.",
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(206566),	-- Scarlet Pterrordax (MOUNT!)
+				},
+			}),
 		}),
 	}),
 })));

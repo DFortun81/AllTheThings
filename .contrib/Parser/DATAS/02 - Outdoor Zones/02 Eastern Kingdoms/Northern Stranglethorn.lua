@@ -59,8 +59,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					407,	-- Forest Spiderling (PET!)
 					404,	-- Long-tailed Mole (PET!)
@@ -76,8 +75,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(409),	-- Polly (PET!)
 					pet(405),	-- Tree Python (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			n(FLIGHT_PATHS, {
 				fp(593, {	-- Bambala, Stranglethorn
 					["cr"] = 43052,	-- Raskha <Flight Master>

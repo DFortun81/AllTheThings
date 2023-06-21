@@ -225,7 +225,9 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				})),
 			}),
 			petbattle(filter(BATTLE_PETS, {
-				p(410),	-- Wharf Rat
+				["sym"] = {{"select","speciesID",
+					410, -- Wharf Rat (PET!)
+				}},
 			})),
 			n(FACTIONS, {
 				faction(1177, {	-- Baradin's Wardens

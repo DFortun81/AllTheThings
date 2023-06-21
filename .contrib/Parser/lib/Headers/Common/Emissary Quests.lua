@@ -4,7 +4,7 @@ EMISSARY_QUESTS = createHeader({
 	-- #if NOT ANYCLASSIC
 	export = true,	-- This is referenced in topHeaders
 	-- #endif
-	icon = [[_.asset("Interface_Emissary_Callings")]],
+	icon = [[~_.asset("Interface_Emissary_Callings")]],
 	text = {
 		en = [[~BOUNTY_BOARD_LOCKED_TITLE]],
 	},

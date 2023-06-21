@@ -294,8 +294,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 		tier(MOP_TIER, {
-			-- 5.0.3
-			tier(MOP_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_3 } }, {
+			-- 5.0.4
+			tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 				fp(888, {["description"] = "Quest Path 2837: Quest - Jade Forest: (DLA) - Dawnblossom to Jade Mines"}),
 				fp(918, {["description"] = "Quest Path 2954: Quest - Valley of the Four Winds (Flyback: Chen A) PRK"}),
 				fp(919, {["description"] = "Quest Path 2955: Quest - Valley of the Four Winds (Flyback: Chen B) PRK"}),
@@ -344,8 +344,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 		tier(WOD_TIER, {
-			-- 6.0.1
-			tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_1 } }, {
+			-- 6.0.2
+			tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 				fp(1350, {["description"] = "Shadowmoon Valley 6.0 - Observatory (JP3)"}),
 				fp(1351, {["description"] = "Shadowmoon Valley 6.0 - Ironhorde POI (JP3)"}),
 				fp(1385, {["description"] = "Arkaat Outpost, Shadowmoon Valley"}),
@@ -411,8 +411,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 		tier(LEGION_TIER, {
-			-- 7.0.1
-			tier(LEGION_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_1 } }, {
+			-- 7.0.3
+			tier(LEGION_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 				fp(1634, {["description"] = "Quest Path 5017: 7.0 Azsuna - Rift 01 - East Chasm -> West Chasm"}),
 				fp(1635, {["description"] = "Quest Path 5018: 7.0 Azsuna - Rift 01 - West Chasm -> East Chasm"}),
 				fp(1636, {["description"] = "Quest Path 5019: 7.0 Azsuna - Rift 02 - Tower -> Rock (ZTO)"}),

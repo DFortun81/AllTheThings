@@ -3504,7 +3504,7 @@ root(ROOTS.Zones, {
 					i(85497, {	-- Chirping Package
 						["description"] = "Once you hit Exalted with Sho you receive this in the mail.",
 						["g"] = {
-							i(85222),	-- Red Cricket
+							i(85222),	-- Red Cricket (PET!)
 						},
 					}),
 				}),

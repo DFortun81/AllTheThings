@@ -74,8 +74,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					838,	-- Amethyst Shale Hatchling (PET!)
 					479,	-- Elfin Rabbit (PET!)
@@ -94,8 +93,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					pet(480),	-- Topaz Shale Hatchling (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["100:100:241:6"] = 2406,	-- Ranazjar Isle
@@ -2375,16 +2373,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12245, {	-- Vendor-Tron 1000
 					["coord"] = { 60.2, 38.0, DESOLACE },
 					["timeline"] = { "removed 5.0.4" },
+					["sym"] = {{"select", "itemID",
+						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
+						14635,	-- Pattern: Gem-studded Leather Belt (RECIPE!)
+						7613,	-- Pattern: Green Leather Armor (RECIPE!)
+					}},
 					["groups"] = {
-						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(14635, {	-- Pattern: Gem-studded Leather Belt (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(7613, {	-- Pattern: Green Leather Armor (RECIPE!)
-							["isLimited"] = true,
-						}),
 						i(12232, {	-- Recipe: Carrion Surprise
 							["isLimited"] = true,
 						}),

@@ -52,8 +52,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit (PET!)
 					417,	-- Rat (PET!)
@@ -67,8 +66,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can commonly be found on the beaches of Old Darkshore.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["150:215:318:162"] = 442,	-- Auberdine

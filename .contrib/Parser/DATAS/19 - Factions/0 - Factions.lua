@@ -8,8 +8,6 @@ root(ROOTS.Factions, {
 	faction(1168),	-- Guild
 	n(FACTION_HEADER_ALLIANCE, {
 		n(-6014, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- Cities
-			faction(69),	-- Darnassus
-			faction(930),	-- Exodar
 			faction(1134),	-- Gilneas
 			faction(54),	-- Gnomeregan
 			faction(47),	-- Ironforge
@@ -61,9 +59,7 @@ root(ROOTS.Factions, {
 			faction(1133),	-- Bilgewater Cartel
 			faction(530),	-- Darkspear Trolls
 			faction(1352),	-- Huojin Pandaren
-			faction(76),	-- Orgrimmar
 			faction(911),	-- Silvermoon City
-			faction(81),	-- Thunder Bluff
 			faction(68),	-- Undercity
 		})),
 		n(BATTLEGROUNDS, sharedData({["races"] = HORDE_ONLY,}, {
@@ -186,7 +182,6 @@ root(ROOTS.Factions, {
 	tier(LEGION_TIER, {
 		faction(2045),	-- Armies of Legionfall
 		faction(1900),	-- Court of Farondis
-		faction(1883),	-- Dreamweavers
 		faction(1828),	-- Highmountain Tribe
 		faction(2018),	-- Talon's Vengeance
 		faction(1859),	-- The Nightfallen

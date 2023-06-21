@@ -69,8 +69,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					646,	-- Chicken (PET!)
 					648,	-- Huge Toad (PET!)
@@ -94,8 +93,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["description"] = "Found around the Ruins of Alterac.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["125:100:109:482"] = 896,	-- Purgation Isle
@@ -2942,7 +2940,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4355, {	-- Pattern: Icy Cloak
 							["isLimited"] = true,
 						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor
+						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(21219),	-- Recipe: Sagefish Deligh

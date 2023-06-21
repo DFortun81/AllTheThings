@@ -17,9 +17,9 @@ THE_SCOURGE_INVASION = createHeader({
 local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
 local MAJOR_MANA_POTION = i(13444);	-- Major Mana Potion
 local REMOVED_WITH_NAXX_RELEASE = "removed 2.0.1";
-local ADDED_WITH_WRATH_PREPATCH = "added 3.0.1";
+local ADDED_WITH_WRATH_PREPATCH = ADDED_3_0_2;
 -- #if ANYCLASSIC
-local REMOVED_AFTER_WRATH_PREPATCH = "removed 4.0.1";
+local REMOVED_AFTER_WRATH_PREPATCH = REMOVED_3_0_3;
 local BUBBLE_DOWN_FILTER = function(t)
 	-- Do not apply the bubble down data to things removed with the first invasion.
 	if t.timeline and t.timeline[#t.timeline] == REMOVED_WITH_NAXX_RELEASE then

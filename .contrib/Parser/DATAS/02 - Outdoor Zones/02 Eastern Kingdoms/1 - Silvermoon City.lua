@@ -38,15 +38,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		-- #endif
 		["isRaid"] = true,
 		["groups"] = {
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					459,	-- Cat (PET!)
 					385,	-- Mouse (PET!)
 					378,	-- Rabbit (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(911, {	-- Silvermoon City
 					-- #if BEFORE CATA
@@ -805,7 +803,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sym"] = { { "sub", "common_recipes_vendor", 3366 } }, -- Tamar <Leatherworking Supplies>
 					-- #endif
 					["groups"] = {
-						i(25726, {	-- Pattern: Comfortable Insoles
+						i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
 							["f"] = RECIPES,

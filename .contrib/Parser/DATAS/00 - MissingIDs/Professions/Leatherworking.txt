@@ -321,28 +321,9 @@ r(20853),	-- Corehound Boots
 r(20854),	-- Molten Helm
 r(20855),	-- Black Dragonscale Boots
 2.0.0.6080
-r(32454),	-- Knothide Leather
-r(32455),	-- Heavy Knothide Leather
-r(32456),	-- Knothide Armor Kit
 r(32457),	-- Vindicator's Armor Kit
 r(32458),	-- Magister's Armor Kit
 r(32461),	-- Riding Crop
-r(32462),	-- Felscale Gloves
-r(32463),	-- Felscale Boots
-r(32464),	-- Felscale Pants
-r(32465),	-- Felscale Breastplate
-r(32466),	-- Scaled Draenic Pants
-r(32467),	-- Scaled Draenic Gloves
-r(32468),	-- Scaled Draenic Vest
-r(32469),	-- Scaled Draenic Boots
-r(32470),	-- Thick Draenic Gloves
-r(32471),	-- Thick Draenic Pants
-r(32472),	-- Thick Draenic Boots
-r(32473),	-- Thick Draenic Vest
-r(32478),	-- Wild Draenish Boots
-r(32479),	-- Wild Draenish Gloves
-r(32480),	-- Wild Draenish Leggings
-r(32481),	-- Wild Draenish Vest
 r(32482),	-- Comfortable Insoles
 r(32485),	-- Stylin' Purple Hat
 r(32487),	-- Stylin' Adventure Hat

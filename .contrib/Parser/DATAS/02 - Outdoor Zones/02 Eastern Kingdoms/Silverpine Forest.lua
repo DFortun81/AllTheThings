@@ -39,8 +39,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					628,	-- Infected Fawn (PET!)
 					627,	-- Infected Squirrel (PET!)
@@ -53,8 +52,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					pet(455),	-- Blighted Squirrel (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["140:125:391:446"] = 204,	-- Pyrewood Village

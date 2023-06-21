@@ -34,8 +34,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					646,	-- Chicken (PET!)
 					378,	-- Rabbit (PET!)
@@ -46,8 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(392),	-- Redridge Rat (PET!)
 					pet(424),	-- Roach (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["235:270:399:129"] = 97,	-- Alther's Mill

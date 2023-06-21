@@ -3325,12 +3325,7 @@ _.ObjectIcons = {
 	[61936] = "Interface/Icons/inv_misc_gear_01",	-- Fuel Control Valve
 	[62483] = "Interface/Icons/INV_WorseRobot",
 	[112948] = "Interface/Icons/battleground_strongbox_skirmish_horde",	-- Intrepid's Locked Strongbox
-	[113768] =
-		-- #if AFTER WRATH
-		"Interface/Icons/inv_egg_06",	-- Brightly Colored Egg
-		-- #else
-		[[_.asset("Holiday_noblegarden")]],	-- Brightly Colored Egg
-		-- #endif
+	[113768] = [[~_.asset("Holiday_noblegarden")]],	-- Brightly Colored Egg
 	[113791] = "Interface/Icons/spell_fire_fire",	-- Brazier of Everfount
 	[126049] = "Interface/Icons/inv_mushroom_09",	-- Magenta Cap Clusters
 	[126158] = "Interface/Icons/inv_misc_shadowegg",	-- Tallonkai's Dresser
@@ -3388,7 +3383,11 @@ _.ObjectIcons = {
 	[164661] = "Interface/Icons/inv_misc_gem_topaz_02",	-- Yellow Power Crystal
 	[164778] = "Interface/Icons/inv_misc_gem_sapphire_03",	-- Blue Power Crystal
 	[164780] = "Interface/Icons/inv_misc_gem_ruby_03",	-- Red Power Crystal
+	-- #if AFTER WRATH
 	[164820] = "Interface/Icons/Achievement_Character_Dwarf_Male",	-- Dark Keeper Nameplate
+	-- #else
+	[164820] = [[~_.asset("Achievement_Character_Dwarf_Male")]],	-- Dark Keeper Nameplate
+	-- #endif
 	[164867] = "Interface/Icons/inv_scroll_03",	-- WANTED
 	[164868] = "Interface/Icons/inv_scroll_03",	-- KILL ON SIGHT
 	[164869] = "Interface/Icons/INV_Misc_Bowl_01",	-- The Spectral Chalice

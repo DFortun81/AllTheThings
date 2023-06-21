@@ -97,19 +97,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 			}),
-			-- #if AFTER 5.0.1.15544
-			petbattle(filter(BATTLE_PETS, {
-				pet(404, {	-- Long-tailed Mole
-					["timeline"] = { "added 5.0.1.15544" },
-				}),
-			})),
-			-- #endif
+			battlepets({
+				pet(404),	-- Long-tailed Mole (PET!)
+			}),
 			n(FACTIONS, {
 				faction(54, {	-- Gnomeregan Exiles
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Gnome_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Gnome_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
@@ -120,7 +116,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Dwarf_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Dwarf_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,

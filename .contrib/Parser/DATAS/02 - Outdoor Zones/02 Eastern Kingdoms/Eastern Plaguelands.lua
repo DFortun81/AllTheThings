@@ -695,9 +695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								8606,	-- Living Decay
 								8607,	-- Rotting Sludge
 							},
-							["groups"] = {
-								i(20769),	-- Disgusting Oozeling (PET!)
-							},
+							["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 						}),
 						-- #endif
 						i(39202, { -- Rusted Pitchfork
@@ -805,8 +803,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { WESTERN_PLAGUELANDS },
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 				}},
@@ -816,8 +813,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(628),	-- Infected Fawn (PET!)
 					pet(627),	-- Infected Squirrel (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				-- #if AFTER WRATH
@@ -883,7 +879,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(FACTIONS, {
 				faction(529, {	-- Argent Dawn
-					["icon"] = icon("INV_Misc_Token_ArgentDawn3"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Token_ArgentDawn3",
 					["maps"] = {
 						WESTERN_PLAGUELANDS,
 						SCHOLOMANCE,

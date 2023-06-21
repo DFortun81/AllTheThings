@@ -15,29 +15,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, {
 				ach(486, {	-- Halls of Lightning
 					crit(5455, { -- General Bjarngrim
-						["_encounter"] = { 597, 1 },
+						["_encounter"] = { 597, NORMAL_DUNGEON },
 					}),
 					crit(5456, { -- Ionar
-						["_encounter"] = { 599, 1 },
+						["_encounter"] = { 599, NORMAL_DUNGEON },
 					}),
 					crit(5457, { -- Volkhan
-						["_encounter"] = { 598, 1 },
+						["_encounter"] = { 598, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5629, { -- Loken
-						["_encounter"] = { 600, 1 },
+						["_encounter"] = { 600, NORMAL_DUNGEON },
 					}),
 					-- #else
 					crit(5458, { -- Loken
-						["_encounter"] = { 600, 1 },
+						["_encounter"] = { 600, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17299, {	-- Defense Protocol Alpha: Halls of Lightning
 					crit(57761, { -- General Bjarngrim
-						["_encounter"] = { 597, 2 },
+						["_encounter"] = { 597, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39189),	-- Boots of Persistence
 							i(39192),	-- Gloves of Dark Gestures
@@ -45,7 +45,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57759, { -- Volkhan
-						["_encounter"] = { 598, 2 },
+						["_encounter"] = { 598, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39188),	-- Chivalric Chestguard
 							i(39140),	-- Knife of Incision
@@ -53,7 +53,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57760, { -- Ionar
-						["_encounter"] = { 599, 2 },
+						["_encounter"] = { 599, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39139),	-- Ravaging Sabatons
 							i(39190),	-- Agonal Sash
@@ -61,7 +61,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57756, { -- Loken
-						["_encounter"] = { 600, 2 },
+						["_encounter"] = { 600, HEROIC_DUNGEON },
 						["groups"] = {
 							i(40526),	-- Gown of the Spell-Weaver
 							i(40426),	-- Signet of the Accord
@@ -75,6 +75,32 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(40619),	-- Leggings of the Lost Conqueror
 							i(40620),	-- Leggings of the Lost Protector
 							i(40621),	-- Leggings of the Lost Vanquisher
+						},
+					}),
+				})),
+				applyclassicphase(WRATH_PHASE_THREE, ach(18598, {	-- Defense Protocol Beta: Halls of Lightning
+					crit(60604, { -- General Bjarngrim
+						["_encounter"] = { 597, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60602, { -- Volkhan
+						["_encounter"] = { 598, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60603, { -- Ionar
+						["_encounter"] = { 599, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60601, { -- Loken
+						["_encounter"] = { 600, HEROIC_DUNGEON },
+						["groups"] = {
+							currency(SIDEREAL_ESSENCE),
 						},
 					}),
 				})),

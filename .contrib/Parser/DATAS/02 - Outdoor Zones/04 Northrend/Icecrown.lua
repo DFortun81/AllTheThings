@@ -121,8 +121,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						635,	-- Adder (PET!)
 						641,	-- Arctic Hare (PET!)
@@ -133,8 +132,7 @@ root(ROOTS.Zones, {
 						pet(393),	-- Cockroach (PET!)
 						pet(538),	-- Scourged Whelpling (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4510),	-- Aldur'thar: The Desolation Gate

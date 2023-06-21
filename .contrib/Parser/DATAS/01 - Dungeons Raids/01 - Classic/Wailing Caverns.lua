@@ -67,7 +67,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							objective(4, {	-- 0/7 Deviate Dreadfang slain
 								["provider"] = { "n", 5056 },	-- Deviate Dreadfang
 							}),
-							i(6476, {	-- Pattern: Deviate Scale Belt
+							i(6476, {	-- Pattern: Deviate Scale Belt (RECIPE!)
 								["timeline"] = { "removed 4.0.3.13277" },
 							}),
 							i(8071, {	-- Sizzle Stick
@@ -244,10 +244,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["coord"] = { 45.9, 35.7, THE_BARRENS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(6474, {	-- Pattern: Deviate Scale Cloak
+						i(6474, {	-- Pattern: Deviate Scale Cloak (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(6475, {	-- Pattern: Deviate Scale Gloves
+						i(6475, {	-- Pattern: Deviate Scale Gloves (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -270,9 +270,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
 					i(208015, bubbleDown({ ["timeline"] = { "added 10.1.5.49824" } }, {	-- Stuffed Deviate Scale Pouch
-						i(6476),	-- Pattern: Deviate Scale Belt
-						i(6474),	-- Pattern: Deviate Scale Cloak
-						i(6475),	-- Pattern: Deviate Scale Gloves
+						i(6476),	-- Pattern: Deviate Scale Belt (RECIPE!)
+						i(6474),	-- Pattern: Deviate Scale Cloak (RECIPE!)
+						i(6475),	-- Pattern: Deviate Scale Gloves (RECIPE!)
 					})),
 				}),
 			}),

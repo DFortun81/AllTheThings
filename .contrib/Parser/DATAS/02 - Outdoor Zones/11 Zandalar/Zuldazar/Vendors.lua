@@ -8,11 +8,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			n(140137, {	-- Bugcatacher Cal'yoon
 				["coord"] = { 77.0, 15.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{"select", "itemID",
+						10393,	-- Undercity Cockroach (PET!)
+					},
+				},
 				["g"] = {
-					i(29901),	-- Blue Moth Egg
-					i(29902),	-- Red Moth Egg
-					i(10393),	-- Undercity Cockroach
-					i(29903),	-- Yellow Moth Egg
+					i(29901),	-- Blue Moth (PET!)
+					i(29902),	-- Red Moth (PET!)
+					i(29903),	-- Yellow Moth (PET!)
 				},
 			}),
 			n(134345, {	-- Collector Kojo <Tortollan Seekers Emissary>

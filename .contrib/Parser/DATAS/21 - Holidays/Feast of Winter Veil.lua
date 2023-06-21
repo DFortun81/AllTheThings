@@ -2055,7 +2055,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				["timeline"] = { "added 6.0.1.18711" },
 			}),
 			-- #endif
-			i(17722),	-- Pattern: Gloves of the Greatfather
+			i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
 			i(17724),	-- Pattern: Green Holiday Shirt
 			i(17706),	-- Plans: Edge of Winter (RECIPE!)
 			i(17709),	-- Recipe: Elixir of Frost Power

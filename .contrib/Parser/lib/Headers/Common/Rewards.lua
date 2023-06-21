@@ -1,7 +1,7 @@
 REWARDS = createHeader({
 	readable = "Rewards",
 	constant = "REWARDS",
-	icon = [[_.asset("Interface_Rewards")]],
+	icon = [[~_.asset("Interface_Rewards")]],
 	text = {
 		en = [[~QUEST_REWARDS]],
 	},

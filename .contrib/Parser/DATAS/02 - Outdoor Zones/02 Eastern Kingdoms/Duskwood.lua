@@ -45,8 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					646,	-- Chicken (PET!)
 					385,	-- Mouse (PET!)
@@ -65,8 +64,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(397),	-- Skunk (PET!)
 					pet(400),	-- Widow Spiderling (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["275:250:55:342"] = 536,	-- Addle's Stead

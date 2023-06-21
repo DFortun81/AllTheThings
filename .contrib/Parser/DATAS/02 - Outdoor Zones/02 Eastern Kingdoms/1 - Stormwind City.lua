@@ -2638,21 +2638,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit (PET!)
 					379,	-- Squirrel (PET!)
 					675,	-- Stormwind Rat (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(72, {	-- Stormwind
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
 					-- #else
-					["icon"] = asset("Achievement_Character_Human_Female"),
+					["icon"] = [[~_.asset("Achievement_Character_Human_Female")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,

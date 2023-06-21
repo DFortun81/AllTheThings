@@ -847,6 +847,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 67.8, 26.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 			}),
+
+			-- Not sorted
+			q(75877, {	-- Time to Fly
+				["description"] = "Reaching Level 30 will make this quest pop up.",
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(206567),	-- Harbor Gryphon (MOUNT!)
+				},
+			}),
 		}),
 	}),
 })));

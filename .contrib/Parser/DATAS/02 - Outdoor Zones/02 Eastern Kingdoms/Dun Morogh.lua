@@ -14,7 +14,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			m(COLDRIDGE_VALLEY, {
 				["lore"] = "Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",
+				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
+				-- #else
+				["icon"] = [[~_.asset("Achievement_Character_Dwarf_Male")]],
+				-- #endif
 				["maps"] = {
 					28,		-- Coldridge Pass
 					31,		-- Coldridge Valley
@@ -699,11 +703,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 4.0.3
 			m(NEW_TINKERTOWN, {
 				["lore"] = "New Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.",
+				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
+				-- #else
+				["icon"] = [[~_.asset("Achievement_Character_Gnome_Female")]],
+				-- #endif
 				["maps"] = { NEW_TINKERTOWN_LOWER },
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
+					battlepets({
 						pet(1162, {	-- Fluxfire Feline (PET!)
 							["description"] = "Found all around the Toxic Airfield and Lower Gnomeregan.",
 							["timeline"] = { ADDED_5_1_0 },
@@ -712,8 +719,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["description"] = "Found only in the Toxic Airfield near Gnomeregan.",
 							["coord"] = { 43, 59, NEW_TINKERTOWN },
 						}),
-					})),
-					-- #endif
+					}),
 					n(QUESTS, {
 						q(26205, {	-- A Job for the Multi-Bot
 							["qg"] = 42553,	-- Engineer Grindspark
@@ -1130,13 +1136,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit
 				}},
 				["groups"] = {
-					p(441, {	-- Alpine Hare
+					pet(441, {	-- Alpine Hare (PET!)
 						["crs"] = { 61690 },	-- Alpine Hare
 						-- #if AFTER CATA
 						["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
@@ -1152,8 +1157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["115:115:252:249"] = 137,	-- Brewnall Village

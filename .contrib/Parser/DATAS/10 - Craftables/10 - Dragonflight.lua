@@ -118,7 +118,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71293, 370561);	-- Potion of Shocking Disclosure
 			FirstCraft(71291, 370556);	-- Potion of the Hushed Zephyr
 			FirstCraft(71283, 370533);	-- Residual Neural Channeling Agent
-			--FirstCraft(x, 405832, ADDED_10_1_0);	-- Stinky Bright Potion
+			FirstCraft(75213, 405832, ADDED_10_1_0);	-- Stinky Bright Potion
 			-- Cauldrons
 			--FirstCraft(x, 405879, ADDED_10_1_0);	-- Cauldron of Extracted Putrescence
 			FirstCraft(71247, 370673);	-- Cauldron of the Pooka
@@ -424,7 +424,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71355, 367714);	-- Infurious Alloy
 			FirstCraft(71354, 367713);	-- Obsidian Seared Alloy
 			FirstCraft(71352, 365735);	-- Primal Molten Alloy
-			--FirstCraft(x, 408282, ADDED_10_1_0);	-- Shadowed Alloy
+			FirstCraft(75587, 408282, ADDED_10_1_0);	-- Shadowed Alloy
 			-- Optional Reagent
 			FirstCraft(71358, 371349);	-- Armor Spikes
 			-- Armor
@@ -522,7 +522,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71338, 371682);	-- Primal Razorstone
 			FirstCraft(71340, 371674);	-- Primal Weightstone
 			FirstCraft(71341, 371650);	-- Primal Whetstone
-			--FirstCraft(x, 408288, ADDED_10_1_0);	-- Shadowed Belt Clasp
+			FirstCraft(75599, 408288, ADDED_10_1_0);	-- Shadowed Belt Clasp
 			-- Pets
 			FirstCraft(71351, 371403);	-- Alvin The Anvil
 			-- Dragon Riding
@@ -1139,7 +1139,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71506, 382344);	-- Tinker: Grounded Circuitry
 			FirstCraft(71503, 382401);	-- Tinker: Plane Displacer
 			FirstCraft(71505, 386667);	-- Tinker: Polarity Amplifier
-			--FirstCraft(x, 408052, ADDED_10_1_0);	-- Tinker: Shadowflame Rockets
+			FirstCraft(75524, 408052, ADDED_10_1_0);	-- Tinker: Shadowflame Rockets
 			FirstCraft(71504, 382359);	-- Tinker: Supercollide-O-Tron
 			-- Googles
 			FirstCraft(71444, 382391);	-- Battle-Ready Binoculars
@@ -1185,12 +1185,12 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71466, 382355);	-- EZ-Thro Creature Combustion Canister
 			FirstCraft(71465, 382356);	-- EZ-Thro Gravitational Displacer
 			FirstCraft(71459, 386670);	-- EZ-Thro Grease Grenade
-			--FirstCraft(x, 407006, ADDED_10_1_0);	-- EZ-Thro Polarity Bomb
+			FirstCraft(75416, 407006, ADDED_10_1_0);	-- EZ-Thro Polarity Bomb
 			FirstCraft(71467, 382357);	-- EZ-Thro Primal Deconstruction Charge
 			FirstCraft(71460, 382343);	-- Gravitational Displacer
 			FirstCraft(71461, 382323);	-- Grease Grenade
 			FirstCraft(71437, 382353);	-- I.W.I.N Button Mk10
-			--FirstCraft(x, 407005, ADDED_10_1_0);	-- Polarity Bomb
+			FirstCraft(75415, 407005, ADDED_10_1_0);	-- Polarity Bomb
 			FirstCraft(71463, 382322);	-- Primal Deconstruction Charge
 			FirstCraft(71464, 382333);	-- Sticky Warp Grenade
 			FirstCraft(71453, 382358);	-- Suspiciously Silent Crate
@@ -1202,7 +1202,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71865, 382369);	-- Environmental Emulator
 			FirstCraft(71887, 382370);	-- Giggle Goggles
 			FirstCraft(71499, 382336);	-- H.E.L.P
-			--FirstCraft(x, 408230, ADDED_10_1_0);	-- Mallard Mortar
+			FirstCraft(75596, 408230, ADDED_10_1_0);	-- Mallard Mortar
 			FirstCraft(71891, 382407);	-- Neural Silencer Mk3
 			FirstCraft(71889, 382338);	-- Portable Alchemist's Lab Bench
 			FirstCraft(71890, 382337);	-- Portable Tinker's Workbench
@@ -1606,7 +1606,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71555, 383527);	-- Buzzing Rune
 			FirstCraft(71556, 383525);	-- Chirping Rune
 			FirstCraft(71561, 383535);	-- Emberscale Sigil
-			--FirstCraft(x, 408271, ADDED_10_1_0);	-- Howling Rune
+			FirstCraft(75585, 408271, ADDED_10_1_0);	-- Hissing Rune
 			FirstCraft(71557, 383529);	-- Howling Rune
 			FirstCraft(71562, 383538);	-- Jetscale Sigil+
 			FirstCraft(71563, 383534);	-- Sagescale Sigil
@@ -1657,7 +1657,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71579, 383592);	-- Contract: Artisan's Consortium
 			FirstCraft(71580, 383593);	-- Contract: Dragonscale Expedition
 			FirstCraft(71581, 383588);	-- Contract: Iskaara Tuskarr
-			--FirstCraft(x, 408278, ADDED_10_1_0);	-- Contract: Loamm Niffen
+			FirstCraft(75586, 408278, ADDED_10_1_0);	-- Contract: Loamm Niffen
 			FirstCraft(71578, 383591);	-- Contract: Maruuk Centaur
 			FirstCraft(71582, 383590);	-- Contract: Valdrakken Accord
 			-- Profession Specialization
@@ -1700,13 +1700,13 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(75577, 408218, ADDED_10_1_0);	-- Winding Slitherdrake: Blue and Silver Armor
 			FirstCraft(75579, 408222, ADDED_10_1_0);	-- Winding Slitherdrake: Curved Chin Horn
 			FirstCraft(75581, 408223, ADDED_10_1_0);	-- Winding Slitherdrake: Small Finned Throat
-			--FirstCraft(x, 408221, ADDED_10_1_0);	-- Winding Slitherdrake: White Hair
+			FirstCraft(75580, 408221, ADDED_10_1_0);	-- Winding Slitherdrake: White Hair
 			FirstCraft(75578, 408220, ADDED_10_1_0);	-- Winding Slitherdrake: Yellow and Silver Armor
 			-- Artisan Curios
 			FirstCraft(74481, 400811, ADDED_10_0_7);	-- Arcane Dispelling Rune
 			-- Glyphs
-			--FirstCraft(x, 408277, ADDED_10_1_0);	-- Glyph of the Chosen Glaive
-			--FirstCraft(x, 408273, ADDED_10_1_0);	-- Glyph of the Heaved Armament
+			FirstCraft(75582, 408277, ADDED_10_1_0);	-- Glyph of the Chosen Glaive
+			FirstCraft(75583, 408273, ADDED_10_1_0);	-- Glyph of the Heaved Armament
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
@@ -2141,12 +2141,12 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71602, 374494);	-- Pendant of Impending Perils
 			-- Statues & Carvings
 			FirstCraft(71614, 374509);	-- Djaradin's "Pinata"
-			--FirstCraft(x, 408398, ADDED_10_1_0);	-- Figurine of the Gathering Storm
+			FirstCraft(75607, 408398, ADDED_10_1_0);	-- Figurine of the Gathering Storm
 			FirstCraft(71611, 377804);	-- Kalu'ak Figurine
 			FirstCraft(71613, 374502);	-- Narcissist's Sculpture
 			FirstCraft(71612, 374506);	-- Revitalizing Red Carving
 			FirstCraft(71610, 374508);	-- Statue of Tyr's Herald
-			--FirstCraft(x, 408397, ADDED_10_1_0);	-- Statuette of Foreseen Power
+			FirstCraft(75606, 408397, ADDED_10_1_0);	-- Statuette of Foreseen Power
 			-- Battle Pets
 			FirstCraft(71667, 374516);	-- Jeweled Amber Whelpling
 			FirstCraft(71668, 374511);	-- Jeweled Emerald Whelpling
@@ -2155,7 +2155,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71671, 374512);	-- Jeweled Sapphire Whelpling
 			-- Novelties
 			FirstCraft(71615, 375063);	-- "Rhinestone" Sunglasses
-			--FirstCraft(x, 408231, ADDED_10_1_0);	-- B.B.F. Fist
+			FirstCraft(75597, 408231, ADDED_10_1_0);	-- B.B.F. Fist
 			FirstCraft(71678, 374525);	-- Convergent Prism
 			FirstCraft(71677, 374522);	-- Jeweled Offering
 			FirstCraft(71650, 374518);	-- Projection Prism
@@ -2457,7 +2457,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72496, 395865);	-- Pioneer's Practiced Gloves
 			FirstCraft(72497, 395867);	-- Pioneer's Practiced Leggings
 			FirstCraft(72498, 395868);	-- Pioneer's Practiced Shoulderpads
-			--FirstCraft(x, 406266, ADDED_10_1_0);	-- Spore Colony Shoulderguards
+			FirstCraft(75279, 406266, ADDED_10_1_0);	-- Spore Colony Shoulderguards
 			-- Mail Armor
 			--FirstCraft(x, 406267, ADDED_10_1_0);	-- Adaptive Dracothyst Armguards
 			FirstCraft(71738, 375123);	-- Flame-Touched Chain
@@ -2565,7 +2565,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Armor Kits
 			FirstCraft(71741, 375162);	-- Fierce Armor Kit
 			FirstCraft(71742, 375161);	-- Frosted Armor Kit
-			--FirstCraft(x, 406214, ADDED_10_1_0);	-- Lambent Armor Kit
+			FirstCraft(75264, 406214, ADDED_10_1_0);	-- Lambent Armor Kit
 			FirstCraft(71743, 375164);	-- Reinforced Armor Kit
 			-- Drums
 			FirstCraft(71746, 375168);	-- Feral Hide Drums
@@ -2876,8 +2876,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Optional Reagents --
 			FirstCraft(71827, 376541);	-- Blue Silken Lining
 			FirstCraft(71828, 376542);	-- Bronzed Grip Wrappings
-			--FirstCraft(x, 409839, ADDED_10_1_0);	-- Medical Wrap Kit
-			--FirstCraft(x, 376542, ADDED_10_1_0);	-- Reserve Parachute
+			FirstCraft(75819, 409839, ADDED_10_1_0);	-- Medical Wrap Kit
+			FirstCraft(75589, 376542, ADDED_10_1_0);	-- Reserve Parachute
 			-- Finishing Reagents --
 			FirstCraft(71819, 376533);	-- Abrasive Polishing Cloth
 			FirstCraft(71820, 376534);	-- Vibrant Polishing Cloth

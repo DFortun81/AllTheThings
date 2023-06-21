@@ -274,16 +274,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
+					441,	-- Alpine Hare (PET!)
 					633,	-- Mountain Skunk (PET!)
 					472,	-- Rabid Nut Varmint 5000 (PET!)
 					471,	-- Robo-Chick (PET!)
 				}},
 				["groups"] = {
 					pet(487),	-- Alpine Chipmunk (PET!)
-					pet(441),	-- Alpine Hare (PET!)
 					pet(1163, {	-- Anodized Robo Cub (PET!)
 						["description"] = "Found in Everlook.",
 						["timeline"] = { ADDED_5_1_0 },
@@ -295,8 +294,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Starts spawning December 21st. Stops spawning March 20th",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["125:165:611:242"] = 2247,	-- Ice Thistle Hills
@@ -322,7 +320,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(FACTIONS, {
 				faction(577, {	-- Everlook
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForEverlook,
 					["maps"] = { TANARIS, THE_BARRENS },
 				}),
@@ -331,7 +329,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { FELWOOD },
 				}),
 				faction(589, {	-- Wintersaber Trainers
-					["icon"] = icon("ability_mount_pinktiger"),
+					["icon"] = "Interface\\Icons\\ability_mount_pinktiger",
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForWintersaberTrainers,
 					-- #endif
@@ -2164,7 +2162,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.6, 42.6, WINTERSPRING },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(21548, {	-- Pattern: Stormshroud Gloves
+						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						-- #if BEFORE 4.0.3

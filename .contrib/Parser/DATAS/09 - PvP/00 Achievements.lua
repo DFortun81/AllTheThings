@@ -183,9 +183,9 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			-- #if ANYCLASSIC
-			title(210),		-- Battlemaster
+			title(210),		-- Battlemaster <Name>
 			-- #else
-			title(41),		-- Battlemaster
+			title(41),		-- Battlemaster <Name>
 			-- #endif
 		},
 	})),
@@ -208,9 +208,9 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = HORDE_ONLY,
 		["groups"] = {
 			-- #if ANYCLASSIC
-			title(210),		-- Battlemaster
+			title(210),		-- Battlemaster <Name>
 			-- #else
-			title(41),		-- Battlemaster
+			title(41),		-- Battlemaster <Name>
 			-- #endif
 		},
 	})),
