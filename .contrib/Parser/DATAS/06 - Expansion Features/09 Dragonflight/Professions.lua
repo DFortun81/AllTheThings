@@ -2897,29 +2897,18 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(76124),	-- After turn in 'Deepflayer Dust' (questID 75363)
 		q(76125),	-- After turn in 'Fascinating Fungi' (questID 75371)
 		q(76126),	-- After turn in 'Blacksmith, Black Dragon' (questID 75569)
+		q(76127),	-- After turn in 'Ancient Techniques' (questID 75148)
 		q(76128),	-- After turn in 'Relic Rustler' (questID 75865)
 		q(76129),	-- After turn in 'Incandescence' (questID 75150)
+		q(76130),	-- After turn in 'Ballistae Bits' (questID 75575)
 		q(76131),	-- After turn in 'Titan Trash or Titan Treasure?' (questID 75608)
 		q(76132),	-- After turn in 'Proclamation Reclamation' (questID 75573)
 		q(76133),	-- After turn in 'Obsidian Essays' (questID 75149)
 		q(76134),	-- After turn in 'Cephalo-Crystalization' (questID 75362)
 		q(76135),	-- After turn in 'Chips off the Old Crystal Block' (questID 75602)
+		q(76136),	-- After turn in 'Mycelium Mastery' (quest ID 75354)
 		q(76137),	-- After turn in 'Stones and Scales' (questID 75368)
 		q(76138),	-- After turn in 'Silk Scavenging' (questID 75407)
-
-		-- TODO:
-
-		-- Weekly quests
-		--q(75148), -- Ancient Techniques
-		--q(75575), -- Ballistae Bits
-		--q(75354), -- Mycelium Mastery
-		--q(75600), -- Silk's Silk
-
-		-- HQTs to choose from most likely (remove from unsorted when done)
-		--q(76123),	--
-		--q(76127),	--
-		--q(76130),	--
-		--q(76136),	--
-		--q(76139),	--
+		q(76139),	-- After turn in 'Silk's Silk' (questID 75600)
 	}),
 }));
