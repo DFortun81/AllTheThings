@@ -920,7 +920,9 @@ namespace ATT
                 {2830, 165},    // Dragon Isles Leatherworking [10.0.0]
 
                 // Lockpicking Skills
-                {633, 633 },
+                {633, 633},     // Lockpicking
+                {181, 633},     // Lockpicking
+                {242, 633},     // Lockpicking
 
                 // Mining Skills
                 {186, 186},     // Mining [7.3.5]
@@ -937,6 +939,7 @@ namespace ATT
 
                 // Runeforging [Deathknight only]
                 {960, 960},     // Runeforging
+                {776, 960},     // Runeforging
 
                 // Skinning Skills
                 {393, 393},     // Skinning [7.3.5]
@@ -967,8 +970,29 @@ namespace ATT
                 {2759, 197},    // Shadowlands Tailoring [9.0.1]
                 {2831, 197},    // Dragon Isles Tailoring [10.0.0]
 
-                // Tinkering [Mechagon]
-                {2720, 2720},   // Tinkering [8.2]
+                // Junkyard Tinkering [8.2.0]
+                {2720, 2720},   // Junkyard Tinkering
+
+                // Abominable Stitching [SL]
+                {2787, 2787},   // Abominable Stitching
+
+                // Ascension Crafting [SL]
+                {2791, 2791},   // Ascension Crafting
+
+                // Soul Cyphering [SL]
+                {2777, 2777},   // Soul Cyphering
+
+                // Stygia Crafting [9.0.5]
+                {2811, 2811},   // Stygia Crafting
+
+                // Protoform Synthesis [9.2.0]
+                {2819, 2819},   // Protoform Synthesis
+
+                // Tuskarr Fishing Gear [DF]
+                {2847, 2847},   // Tuskarr Fishing Gear
+
+                // Arcana Manipulation [DF]
+                {2821, 2821},   // Arcana Manipulation
             };
 
             /// <summary>
@@ -976,8 +1000,11 @@ namespace ATT
             /// </summary>
             public static Dictionary<long, string> SKILLID_CONSTANTS = new Dictionary<long, string>()
             {
+                {2787, "ABOMINABLE_STITCHING"},
                 {171, "ALCHEMY"},
+                {2821, "ARCANA_MANIPULATION"},
                 {794, "ARCHAEOLOGY"},
+                {2791, "ASCENSION_CRAFTING"},
                 {164, "BLACKSMITHING"},
                 {185, "COOKING"},
                 {333, "ENCHANTING"},
@@ -991,9 +1018,15 @@ namespace ATT
                 {755, "JEWELCRAFTING"},
                 {2720, "JUNKYARD_TINKERING"},
                 {165, "LEATHERWORKING"},
+                {633, "LOCKPICKING"},
                 {186, "MINING"},
+                {2819, "PROTOFORM SYNTHESIS"},
+                {960, "RUNEFORGING"},
                 {393, "SKINNING"},
+                {2777, "SOUL_CYPHERING"},
+                {2811, "STYGIA_CRAFTING"},
                 {197, "TAILORING"},
+                {2847, "TUSKARR_FISHING_GEAR"},
             };
 
             /// <summary>
