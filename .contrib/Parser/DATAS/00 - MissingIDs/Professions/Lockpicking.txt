@@ -3,4 +3,4 @@ r(6461),	-- Pick Lock
 r(6463),	-- Pick Lock
 
 
-Nothing is Missing in Lockpicking2ItemDB.lua! Good Work!
+Nothing is Missing in LockpickingItemDB.lua! Good Work!

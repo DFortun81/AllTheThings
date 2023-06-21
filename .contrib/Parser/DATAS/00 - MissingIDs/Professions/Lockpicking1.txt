@@ -1,6 +1,0 @@
-0.5.3.3368
-r(6461),	-- Pick Lock
-r(6463),	-- Pick Lock
-
-
-Nothing is Missing in Lockpicking1ItemDB.lua! Good Work!

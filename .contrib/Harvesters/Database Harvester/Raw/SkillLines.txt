@@ -59,7 +59,7 @@
 172@@@Two-Handed Axes
 173@@@Daggers
 176@@@Thrown
-181@@@Lockpicking1
+181@@@Lockpicking
 182@@@Herbalism
 183@@@GENERIC (DND)
 184@@@Holy Strikes
@@ -102,7 +102,7 @@
 238@@@Pick Pockets
 239@@@Stealth
 241@@@Disarm Traps
-242@@@Lockpicking2
+242@@@Lockpicking
 243@@@Stances
 244@@@Shouts
 245@@@Advanced Combat
@@ -193,7 +193,7 @@
 218@@@Pet - Tallstrider
 236@@@Pet - Scorpid
 613@@@Discipline
-633@@@Lockpicking3
+633@@@Lockpicking
 653@@@Pet - Bat
 654@@@Pet - Hyena
 655@@@Pet - Owl
@@ -248,7 +248,7 @@
 212@@@Pet - Crocolisk
 655@@@Pet - Bird of Prey
 775@@@Pet - Moth
-776@@@Runeforging1
+776@@@Runeforging
 777@@@Companions
 3.0.1.8874
 777@@@Mounts
