@@ -983,7 +983,11 @@ local function CreateCheckBox(self, text, OnRefresh, OnClick)
 	self.ATT.CB_Count = count;
 	return box;
 end
-local function AddScrollbar(scrollFrame)
+local function AddScrollableFrame()
+	local scrollFrame = CreateFrame("Frame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings);
+	scrollFrame:SetClipsChildren(true);
+	scrollFrame:EnableMouseWheel(true);
+	
 	local scrollbar = CreateFrame("Slider", settings:GetName().."SB"..settings.UniqueCounter.AddScrollbar, scrollFrame, "UIPanelScrollBarTemplate");
 	scrollbar:SetPoint("TOPRIGHT", scrollFrame, 0, -scrollWidth);
 	scrollbar:SetPoint("BOTTOMRIGHT", scrollFrame, 0, scrollWidth);
@@ -996,19 +1000,12 @@ local function AddScrollbar(scrollFrame)
 	scrollbar.CurrentValue = 0;
 	scrollbar:SetWidth(scrollWidth);
 	if settings.MostRecentTab then table.insert(settings.MostRecentTab.objects, scrollbar); end
-	return scrollbar;
-end
-local function AddScrollframe()
-	local scrollFrame = CreateFrame("Frame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings);
-	scrollFrame:SetClipsChildren(true);
-	scrollFrame:EnableMouseWheel(true);
-	scrollFrame.ScrollBar = AddScrollbar(scrollFrame);
+	
+	scrollFrame.ScrollBar = scrollbar;
 	scrollFrame:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
 	if settings.MostRecentTab then table.insert(settings.MostRecentTab.objects, scrollFrame); end
-	return scrollFrame;
-end
-local function AddScrollableFrame()
-	local child = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe, AddScrollframe());
+
+	local child = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe, scrollFrame);
 	child:SetPoint("TOP");
 	child:SetPoint("RIGHT", -scrollWidth, 0);
 	child:SetPoint("LEFT");
