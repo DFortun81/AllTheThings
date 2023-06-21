@@ -964,15 +964,6 @@ end
 -- Small library for building a scrolling frame with minimal setup
 (function()
 local scrollWidth = 16;
-local function OnScrollBarMouseWheel(self, delta)
-	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - (delta * 40)); -- Last number here controls scroll speed.
-end
-local function OnScrollBarValueChanged(self, value)
-	local un = math.floor(value);
-	local up = un + 1;
-	self.CurrentValue = (up - value) > (-(un - value)) and un or up;
-	self.child:SetPoint("TOP", 0, self.CurrentValue * 2);
-end
 local function CreateCheckBox(self, text, OnRefresh, OnClick)
 	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
 	box:SetParent(self);
@@ -983,50 +974,81 @@ local function CreateCheckBox(self, text, OnRefresh, OnClick)
 	self.ATT.CB_Count = count;
 	return box;
 end
-local function AddScrollableFrame()
+-- Returns the frame which will be offset by the associated scrollbar
+-- .ScrollContainer - the frame which acts as the scrollable area within which the scrollframe will be visible
+-- :SetMaxScroll(max) - change how much the scrollbar is able to scroll the scrollframe
+-- :CreateCheckBox(text, OnRefresh, OnClick) - create a checkbox attached to the scrollable area
+settings.CreateScrollFrame = function(self)
 	local scrollFrame = CreateFrame("Frame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings);
 	scrollFrame:SetClipsChildren(true);
 	scrollFrame:EnableMouseWheel(true);
-	
-	local scrollbar = CreateFrame("Slider", settings:GetName().."SB"..settings.UniqueCounter.AddScrollbar, scrollFrame, "UIPanelScrollBarTemplate");
-	scrollbar:SetPoint("TOPRIGHT", scrollFrame, 0, -scrollWidth);
-	scrollbar:SetPoint("BOTTOMRIGHT", scrollFrame, 0, scrollWidth);
-	scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
-	scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
-	scrollbar.back:SetColorTexture(0.1,0.1,0.1,1);
-	scrollbar.back:SetAllPoints(scrollbar);
-	scrollbar:SetMinMaxValues(0, 10); -- Adding more max value to the scrollbar is what controls the vertical size.
-	scrollbar:SetValueStep(1);
-	scrollbar.CurrentValue = 0;
-	scrollbar:SetWidth(scrollWidth);
-	if settings.MostRecentTab then table.insert(settings.MostRecentTab.objects, scrollbar); end
-	
-	scrollFrame.ScrollBar = scrollbar;
-	scrollFrame:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
-	if settings.MostRecentTab then table.insert(settings.MostRecentTab.objects, scrollFrame); end
 
 	local child = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe, scrollFrame);
 	child:SetPoint("TOP");
 	child:SetPoint("RIGHT", -scrollWidth, 0);
 	child:SetPoint("LEFT");
-	if settings.MostRecentTab then table.insert(settings.MostRecentTab.objects, child); end
+	child.CreateCheckBox = CreateCheckBox;
+	child.ScrollContainer = scrollFrame;
+	
+	local scrollbar;
+	if SCROLL_FRAME_SCROLL_BAR_TEMPLATE then
+		scrollbar = CreateFrame("EventFrame", settings:GetName().."SB"..settings.UniqueCounter.AddScrollbar, scrollFrame, SCROLL_FRAME_SCROLL_BAR_TEMPLATE);
+		scrollbar:SetPoint("TOPRIGHT", scrollFrame, -8, 0);
+		scrollbar:SetPoint("BOTTOMRIGHT", scrollFrame, -8, 0);
+		scrollbar:SetHideIfUnscrollable(false);
+		scrollbar:SetHideTrackIfThumbExceedsTrack(false);
+		
+		local CurrentValue, MaxValue = 0, 100;
+		scrollbar:SetPanExtentPercentage(0.25);
+		scrollbar:SetScrollPercentage(0);
+		scrollbar:RegisterCallback(BaseScrollBoxEvents.OnScroll, function(o, scrollPercentage)
+			CurrentValue = scrollPercentage * MaxValue;
+			child:SetPoint("TOP", 0, CurrentValue);
+		end, scrollFrame);
+		scrollFrame:SetScript("OnMouseWheel", function(self, delta)
+			scrollbar:ScrollStepInDirection(-delta);
+		end);
+		
+		child.SetMaxScroll = function(frame, maxValue)
+			MaxValue = maxValue;
+			scrollbar:SetVisibleExtentPercentage(100 / maxValue);
+			scrollbar:ScrollStepInDirection(-0.01);
+			scrollbar:ScrollStepInDirection(0.01);
+		end;
+	else
+		local CurrentValue = 0;
+		scrollbar = CreateFrame("Slider", settings:GetName().."SB"..settings.UniqueCounter.AddScrollbar, scrollFrame, "UIPanelScrollBarTemplate");
+		scrollbar:SetPoint("TOPRIGHT", scrollFrame, 0, -scrollWidth);
+		scrollbar:SetPoint("BOTTOMRIGHT", scrollFrame, 0, scrollWidth);
+		scrollbar:SetScript("OnValueChanged", function(self, delta)
+			local un = math.floor(delta);
+			local up = un + 1;
+			CurrentValue = (up - delta) > (-(un - delta)) and un or up;
+			child:SetPoint("TOP", 0, CurrentValue);
+		end);
+		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
+		scrollbar.back:SetColorTexture(0.1,0.1,0.1,1);
+		scrollbar.back:SetAllPoints(scrollbar);
+		scrollbar:SetMinMaxValues(0, 100);
+		scrollbar:SetValueStep(10);
+		scrollbar.CurrentValue = 0;
+		scrollbar:SetWidth(scrollWidth);
+		scrollFrame:SetScript("OnMouseWheel", function(self, delta)
+			scrollbar:SetValue(CurrentValue - (delta * 40)); -- Last number here controls scroll speed.
+		end);
+		child.SetMaxScroll = function(frame, maxValue)
+			scrollbar:SetMinMaxValues(0, maxValue);
+			scrollbar:SetValue(25);
+			scrollbar:SetValue(0);
+		end;
+	end
+	
+	if settings.MostRecentTab then 
+		table.insert(settings.MostRecentTab.objects, scrollbar);
+		table.insert(settings.MostRecentTab.objects, scrollFrame);
+		table.insert(settings.MostRecentTab.objects, child);
+	end
 	return child;
-end
--- Returns the frame which will be offset by the associated scrollbar
--- .ScrollContainer - the frame which acts as the scrollable area within which the scrollframe will be visible
--- .ScrollBar - the scrollbar which moves the scrollframe
--- :SetMaxScroll(max) - change how much the scrollbar is able to scroll the scrollframe
--- :CreateCheckBox(text, OnRefresh, OnClick) - create a checkbox attached to the scrollable area
-settings.CreateScrollFrame = function()
-	local scrollframe = AddScrollableFrame();
-	scrollframe.ScrollContainer = scrollframe:GetParent();
-	scrollframe.ScrollBar = scrollframe.ScrollContainer.ScrollBar;
-	scrollframe.ScrollBar.child = scrollframe;
-	scrollframe.SetMaxScroll = function(frame, max)
-		frame.ScrollBar:SetMinMaxValues(0, max);
-	end;
-	scrollframe.CreateCheckBox = CreateCheckBox;
-	return scrollframe;
 end
 end)();
 settings.ShowCopyPasteDialog = function(self)
@@ -1403,11 +1425,11 @@ line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
 
 local child = settings:CreateScrollFrame();
-child:SetMaxScroll(60); -- Adding more max value to the scrollbar is what controls the vertical size.
 local scrollFrame = child.ScrollContainer;
 scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
 scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
 scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 4);
+child:SetMaxScroll(160);	-- Adding more max value to the scrollbar is what controls the vertical size.
 
 -- Creates a Checkbox used to designate tracking the specified 'trackingOption', based on tracking of 'parentTrackingOption' if specified
 -- localeKey: The prefix of the locale lookup value (i.e. HEIRLOOMS_UPGRADES)
@@ -2177,11 +2199,11 @@ tab.OnRefresh = function(self)
 end;
 
 local child = settings:CreateScrollFrame();
-child:SetMaxScroll(194); -- Adding more max value to the scrollbar is what controls the vertical size.
 local scrollFrame = child.ScrollContainer;
 scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
 scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
 scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 4);
+child:SetMaxScroll(280);	-- Adding more max value to the scrollbar is what controls the vertical size.
 
 local ItemFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ItemFiltersLabel:SetJustifyH("LEFT");
@@ -4117,7 +4139,7 @@ refreshProfiles = function()
 		end
 	end
 
-	ProfileSelector:SetMaxScroll(profileCount * 6);
+	ProfileSelector:SetMaxScroll(100 + ((profileCount - 17) * 20));
 	-- make sure to switch back to the previous tab once done
 	settings.MostRecentTab = mostRecentTab;
 end
