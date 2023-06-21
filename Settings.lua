@@ -1050,6 +1050,26 @@ settings.CreateScrollFrame = function(self)
 	end
 	return child;
 end
+
+settings.CreateOptionsScrollFrame = function(self)
+	-- Create the ScrollFrame
+	local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
+	local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
+	scrollFrame:SetScrollChild(scrollChild)
+	scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+	scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+
+	-- Move the scrollbar to its proper position
+	scrollFrame.ScrollBar:ClearPoint("RIGHT")
+	scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+
+	-- Reference stuff
+	scrollChild.CreateCheckBox = CreateCheckBox
+
+	-- Return the scrollFrame
+	return scrollFrame, scrollChild
+end
+
 end)();
 settings.ShowCopyPasteDialog = function(self)
 	app:ShowPopupDialogWithEditBox(nil, self:GetText(), nil, 10);
@@ -1426,39 +1446,8 @@ line:SetPoint("TOP", tab, "BOTTOM", 0, 0);
 line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
 
--- local child = settings:CreateScrollFrame();
--- local scrollFrame = child.ScrollContainer;
--- scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
--- scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
--- scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 4);
--- child:SetMaxScroll(160);	-- Adding more max value to the scrollbar is what controls the vertical size.
-
--- CreateCheckBox function we apparently need
-local function CreateCheckBox(self, text, OnRefresh, OnClick)
-	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
-	box:SetParent(self);
-	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
-	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
-	local count = self.ATT.CB_Count + 1;
-	self.ATT.CB[count] = box;
-	self.ATT.CB_Count = count;
-	return box;
-end
-
--- Create the ScrollFrame
-local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
-local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
-scrollFrame:SetScrollChild(scrollChild)
-scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-
--- Move the scrollbar to its proper position
-scrollFrame.ScrollBar:ClearPoint("RIGHT")
-scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
-
--- Reference stuff
-scrollChild.CreateCheckBox = CreateCheckBox
-local child = scrollChild
+-- Create the scrollFrame
+local scrollFrame, child = settings:CreateOptionsScrollFrame()
 
 -- Create the nested subcategory
 local subcategory = scrollFrame
@@ -2237,39 +2226,8 @@ end)();
 -- 	end
 -- end;
 
--- local child = settings:CreateScrollFrame();
--- local scrollFrame = child.ScrollContainer;
--- scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
--- scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
--- scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 4);
--- child:SetMaxScroll(280);	-- Adding more max value to the scrollbar is what controls the vertical size.
-
--- CreateCheckBox function we apparently need
-local function CreateCheckBox(self, text, OnRefresh, OnClick)
-	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
-	box:SetParent(self);
-	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
-	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
-	local count = self.ATT.CB_Count + 1;
-	self.ATT.CB[count] = box;
-	self.ATT.CB_Count = count;
-	return box;
-end
-
--- Create the ScrollFrame
-local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
-local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
-scrollFrame:SetScrollChild(scrollChild)
-scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-
--- Move the scrollbar to its proper position
-scrollFrame.ScrollBar:ClearPoint("RIGHT")
-scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
-
--- Reference stuff
-scrollChild.CreateCheckBox = CreateCheckBox
-local child = scrollChild
+-- Create the scrollFrame
+local scrollFrame, child = settings:CreateOptionsScrollFrame()
 
 -- Create the nested subcategory
 local subcategory = scrollFrame
@@ -2811,32 +2769,8 @@ end)();
 (function()
 --local tab = settings:CreateTab(L["INTERFACE_TAB"]);
 
--- CreateCheckBox function we apparently need
-local function CreateCheckBox(self, text, OnRefresh, OnClick)
-	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
-	box:SetParent(self);
-	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
-	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
-	local count = self.ATT.CB_Count + 1;
-	self.ATT.CB[count] = box;
-	self.ATT.CB_Count = count;
-	return box;
-end
-
--- Create the ScrollFrame
-local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
-local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
-scrollFrame:SetScrollChild(scrollChild)
-scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-
--- Move the scrollbar to its proper position
-scrollFrame.ScrollBar:ClearPoint("RIGHT")
-scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
-
--- Reference stuff
-scrollChild.CreateCheckBox = CreateCheckBox
-local child = scrollChild
+-- Create the scrollFrame
+local scrollFrame, child = settings:CreateOptionsScrollFrame()
 
 -- Create the nested subcategory
 local subcategory = scrollFrame
@@ -3622,32 +3556,8 @@ end)();
 (function()
 -- local tab = settings:CreateTab(L["FEATURES_TAB"]);
 
--- CreateCheckBox function we apparently need
-local function CreateCheckBox(self, text, OnRefresh, OnClick)
-	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
-	box:SetParent(self);
-	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
-	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
-	local count = self.ATT.CB_Count + 1;
-	self.ATT.CB[count] = box;
-	self.ATT.CB_Count = count;
-	return box;
-end
-
--- Create the ScrollFrame
-local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
-local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
-scrollFrame:SetScrollChild(scrollChild)
-scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-
--- Move the scrollbar to its proper position
-scrollFrame.ScrollBar:ClearPoint("RIGHT")
-scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
-
--- Reference stuff
-scrollChild.CreateCheckBox = CreateCheckBox
-local child = scrollChild
+-- Create the scrollFrame
+local scrollFrame, child = settings:CreateOptionsScrollFrame()
 
 -- Create the nested subcategory
 local subcategory = scrollFrame
@@ -3992,32 +3902,8 @@ end)();
 (function()
 local tab = settings:CreateTab(L["PROFILES_TAB"]);
 
--- CreateCheckBox function we apparently need
-local function CreateCheckBox(self, text, OnRefresh, OnClick)
-	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
-	box:SetParent(self);
-	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
-	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
-	local count = self.ATT.CB_Count + 1;
-	self.ATT.CB[count] = box;
-	self.ATT.CB_Count = count;
-	return box;
-end
-
--- Create the ScrollFrame
-local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
-local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
-scrollFrame:SetScrollChild(scrollChild)
-scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-
--- Move the scrollbar to its proper position
-scrollFrame.ScrollBar:ClearPoint("RIGHT")
-scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
-
--- Reference stuff
-scrollChild.CreateCheckBox = CreateCheckBox
-local child = scrollChild
+-- Create the scrollFrame
+local scrollFrame, child = settings:CreateOptionsScrollFrame()
 
 -- Create the nested subcategory
 local subcategory = scrollFrame
@@ -4342,32 +4228,8 @@ end)();
 (function()
 local tab = settings:CreateTab(L["SYNC"]);
 
--- CreateCheckBox function we apparently need
-local function CreateCheckBox(self, text, OnRefresh, OnClick)
-	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
-	box:SetParent(self);
-	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
-	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
-	local count = self.ATT.CB_Count + 1;
-	self.ATT.CB[count] = box;
-	self.ATT.CB_Count = count;
-	return box;
-end
-
--- Create the ScrollFrame
-local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
-local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
-scrollFrame:SetScrollChild(scrollChild)
-scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-
--- Move the scrollbar to its proper position
-scrollFrame.ScrollBar:ClearPoint("RIGHT")
-scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
-
--- Reference stuff
-scrollChild.CreateCheckBox = CreateCheckBox
-local child = scrollChild
+-- Create the scrollFrame
+local scrollFrame, child = settings:CreateOptionsScrollFrame()
 
 -- Create the nested subcategory
 local subcategory = scrollFrame
@@ -4437,32 +4299,8 @@ end)();
 (function()
 local tab = settings:CreateTab(L["ABOUT"]);
 
--- CreateCheckBox function we apparently need
-local function CreateCheckBox(self, text, OnRefresh, OnClick)
-	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
-	box:SetParent(self);
-	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
-	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
-	local count = self.ATT.CB_Count + 1;
-	self.ATT.CB[count] = box;
-	self.ATT.CB_Count = count;
-	return box;
-end
-
--- Create the ScrollFrame
-local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
-local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
-scrollFrame:SetScrollChild(scrollChild)
-scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
-
--- Move the scrollbar to its proper position
-scrollFrame.ScrollBar:ClearPoint("RIGHT")
-scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
-
--- Reference stuff
-scrollChild.CreateCheckBox = CreateCheckBox
-local child = scrollChild
+-- Create the scrollFrame
+local scrollFrame, child = settings:CreateOptionsScrollFrame()
 
 -- Create the nested subcategory
 local subcategory = scrollFrame
