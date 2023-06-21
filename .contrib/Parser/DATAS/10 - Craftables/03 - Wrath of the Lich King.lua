@@ -381,6 +381,7 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(40895),	-- Gnomish X-Ray Specs (TOY!)
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_THREE, i(49040, {	-- Jeeves  (TOY!) [Why isn't this a toy?!]
+				["type"] = "toyID",
 				["f"] = TOYS,
 			})),
 			-- #endif
