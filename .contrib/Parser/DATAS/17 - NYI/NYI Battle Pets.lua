@@ -1360,9 +1360,6 @@ root(ROOTS.NeverImplemented, {
 				pet(3567),	-- Talons (PET!)
 				pet(3569),	-- Tempe (PET!)
 				-- With SpeciesID Attached
-				i(205009, {	-- Annuna (PET!)
-					["modelID"] = 112146,
-				}),
 				i(205004, {	-- Azure Swoglet (PET!)
 					["modelID"] = 112144,
 				}),

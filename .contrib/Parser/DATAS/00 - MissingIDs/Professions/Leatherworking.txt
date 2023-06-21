@@ -321,17 +321,17 @@ r(20853),	-- Corehound Boots
 r(20854),	-- Molten Helm
 r(20855),	-- Black Dragonscale Boots
 2.0.0.6080
-r(25721, 32457),	-- Vindicator's Armor Kit
-r(25722, 32458),	-- Magister's Armor Kit
-r(25725, 32461),	-- Riding Crop
-r(25726, 32482),	-- Comfortable Insoles
-r(25728, 32485),	-- Stylin' Purple Hat
-r(25729, 32487),	-- Stylin' Adventure Hat
-r(25731, 32488),	-- Stylin' Crimson Hat
-r(25730, 32489),	-- Stylin' Jungle Hat
-r(25732, 32490),	-- Fel Leather Gloves
-r(25733, 32493),	-- Fel Leather Boots
-r(25734, 32494),	-- Fel Leather Leggings
+r(32457),	-- Vindicator's Armor Kit
+r(32458),	-- Magister's Armor Kit
+r(32461),	-- Riding Crop
+r(32482),	-- Comfortable Insoles
+r(32485),	-- Stylin' Purple Hat
+r(32487),	-- Stylin' Adventure Hat
+r(32488),	-- Stylin' Crimson Hat
+r(32489),	-- Stylin' Jungle Hat
+r(32490),	-- Fel Leather Gloves
+r(32493),	-- Fel Leather Boots
+r(32494),	-- Fel Leather Leggings
 r(32495),	-- Heavy Clefthoof Vest
 r(32496),	-- Heavy Clefthoof Leggings
 r(32497),	-- Heavy Clefthoof Boots

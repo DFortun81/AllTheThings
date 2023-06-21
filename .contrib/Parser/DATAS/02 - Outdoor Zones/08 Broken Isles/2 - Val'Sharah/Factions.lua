@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.Zones, {
-	m(BROKEN_ISLES, {
-		m(VALSHARAH, {
+root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	m(VALSHARAH, {
+		faction(FACTION_DREAMWEAVER, {
 			n(EMISSARY_QUESTS, {
 				q(42170, {	-- The Dreamweavers
 					["isWorldQuest"] = true,
@@ -64,4 +63,4 @@ root(ROOTS.Zones, {
 			}),
 		}),
 	}),
-});
+})));

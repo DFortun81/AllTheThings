@@ -2979,7 +2979,6 @@ n(203313, 3485);	-- Hollow Moth
 n(203358, 3486);	-- Lithengale
 n(203287, 3477);	-- Puddlehopper
 n(203288, 3478);	-- Rock Martin
-n(198612, 3589);	-- Rusziona
 n(203364, 3487);	-- Scarlapod
 n(203312, 3484);	-- Slabwing
 n(203308, 3481);	-- Stonewhisker
@@ -2999,7 +2998,6 @@ i(0, 3573);			-- Swole
 i(0, 3567);			-- Talons
 i(0, 3569);			-- Tempe
 -- NYI --
-i(205009, 3515);	-- Annuna
 i(205004, 3513);	-- Azure Swoglet
 i(205054, 3532);	-- Amador
 i(206018, 3580);	-- Baa'lial
@@ -3041,7 +3039,19 @@ i(205162, 3553);	-- Nelthara
 i(208011, 4261);	-- Obsidian Warwhelp
 i(208138, 4262);	-- N'Ruby
 i(0, 4263);			-- Tobias [Maybe Get itemID later??]
-
+-- TRAINER --
+i(0, 3587);			-- Lifelike Mechanical Duckling
+-- Whelptender?
+i(206682, 3589);	-- Rusziona
+i(205232, 3588);	-- Iggy
+i(207019, 3597);	-- Princess Vorquistrasza
+i(206758, 3590);	-- Belastrasza
+i(205009, 3515);	-- Annuna
+i(206971, 3598);	-- Zhusadormu
+i(206973, 3600);	-- Pallibrius
+i(206974, 3599);	-- Zalethgos
+i(206978, 3602);	-- Somnius
+i(206979, 3601);	-- Posidriss
 
 -- #if ANYCLASSIC
 -----------------

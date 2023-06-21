@@ -182,7 +182,6 @@ root(ROOTS.Factions, {
 	tier(LEGION_TIER, {
 		faction(2045),	-- Armies of Legionfall
 		faction(1900),	-- Court of Farondis
-		faction(1883),	-- Dreamweavers
 		faction(1828),	-- Highmountain Tribe
 		faction(2018),	-- Talon's Vengeance
 		faction(1859),	-- The Nightfallen

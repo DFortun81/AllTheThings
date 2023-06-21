@@ -350,7 +350,6 @@ q(14200),	-- Kickoff Mail Marker
 q(14349),	-- The Call to Command	 WOTLK:The Call to Command
 q(14350),	-- The Crimson Courier	 WOTLK:The Crimson Courier
 q(14351),	-- [DEPRECATED] Battle of Hillsbrad	 WOTLK:Battle of Hillsbrad
-q(14409),	-- A Cautious Return	 WOTLK:A Cautious Return
 q(14418),	-- The Deathstalkers	 WOTLK:The Deathstalkers
 q(14419),	-- The Deathstalkers	 WOTLK:The Deathstalkers
 q(14420),	-- The Deathstalkers	 WOTLK:The Deathstalkers

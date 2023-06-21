@@ -32,17 +32,7 @@ pet(4263),	-- Tobias
 Missing in PetDB.lua
 
 10.1.5.49516
-pet(3587),	-- Lifelike Mechanical Duckling
-pet(3588),	-- Iggy
-pet(3590),	-- Belastrasza
 pet(3596),	-- Kabluey
-10.1.5.49595
-pet(3597),	-- Princess Vorquistrasza \\ Princess Vorquinstrasza
-pet(3598),	-- Zhusadormu
-pet(3599),	-- Zalethgos
-pet(3600),	-- Pallibrius
-pet(3601),	-- Posidriss
-pet(3602),	-- Somnius
 10.1.5.49719
 pet(3608),	-- Lifelike Mechanical Turtle
 pet(3609),	-- Sporeflower

@@ -1632,12 +1632,22 @@ i(205208, 408654);	-- Shalewing, Stone [PH]
 ------------------
 i(206676, 414326);	-- Felstorm Dragon
 i(206675, 414324);	-- Gold-Toed Albatross
+i(206567, 413827);	-- Harbor Gryphon
 i(208152, 418078);	-- Pattie
 i(206679, 414328);	-- Perfected Juggernaut
 i(206674, 414323);	-- Ravenous Black Gryphon
+i(206566, 413825);	-- Scarlet Pterrordax
 i(206680, 414334);	-- Scourgebound Vanquisher
 i(206678, 414327);	-- Sulfur Hound
 i(206673, 414316);	-- White War Wolf
+-- Probably to borrow for Races in Kalimdor
+i(0, 417554);		-- Cliffside Wylderdrake
+i(0, 413409);		-- Highland Drake
+i(0, 417548);		-- Renewed Proto-Drake
+i(0, 417552);		-- Windborne Velocidrake
+i(0, 417556);		-- Winding Slitherdrake
+-- Unsorted
+i(206585, 413922);	-- Valiance
 
 -- #if ANYCLASSIC
 -----------------
