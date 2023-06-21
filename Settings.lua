@@ -1410,10 +1410,12 @@ f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "designbyh
 f:SetATTTooltip(L["MERCH_BUTTON_TOOLTIP"]);
 settings.merch = f;
 
-------------------------------------------
--- The "General" Tab.					--
-------------------------------------------
+-----------------------
+-- "General" options --
+-----------------------
+
 local line;
+-- SETUP
 (function()
 local tab = settings:CreateTab(L["GENERAL_LABEL"]);
 tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", -36, 0);
@@ -1424,25 +1426,43 @@ line:SetPoint("TOP", tab, "BOTTOM", 0, 0);
 line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
 
-local child = settings:CreateScrollFrame();
-local scrollFrame = child.ScrollContainer;
-scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
-scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
-scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 4);
-child:SetMaxScroll(160);	-- Adding more max value to the scrollbar is what controls the vertical size.
+-- local child = settings:CreateScrollFrame();
+-- local scrollFrame = child.ScrollContainer;
+-- scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
+-- scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
+-- scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 4);
+-- child:SetMaxScroll(160);	-- Adding more max value to the scrollbar is what controls the vertical size.
 
--- -- Settings frame
--- local scrollFrame = CreateFrame("ScrollFrame", nil, settings, "ScrollFrameTemplate")
--- scrollFrame:SetPoint("TOPLEFT", -5, 0)	-- Move it a little bit, so it's equal distance from the top and the left
--- scrollFrame:SetPoint("BOTTOMRIGHT", -25, 0)	-- Allow space for the scrollbar
+-- CreateCheckBox function we apparently need
+local function CreateCheckBox(self, text, OnRefresh, OnClick)
+	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
+	box:SetParent(self);
+	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
+	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
+	local count = self.ATT.CB_Count + 1;
+	self.ATT.CB[count] = box;
+	self.ATT.CB_Count = count;
+	return box;
+end
 
--- local child = CreateFrame("Frame")
--- scrollFrame:SetScrollChild(child)
--- child:SetWidth(SettingsPanel.Container.SettingsCanvas:GetWidth()-25)	-- The settings panel width minus the space we allowed for the scrollbar
--- child:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
+-- Create the ScrollFrame
+local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
+local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
+scrollFrame:SetScrollChild(scrollChild)
+scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
 
-local subcategory = child
-subcategory.name = "General"
+-- Move the scrollbar to its proper position
+scrollFrame.ScrollBar:ClearPoint("RIGHT")
+scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+
+-- Reference stuff
+scrollChild.CreateCheckBox = CreateCheckBox
+local child = scrollChild
+
+-- Create the nested subcategory
+local subcategory = scrollFrame
+subcategory.name = L["GENERAL_LABEL"]
 subcategory.parent = "AllTheThings"
 InterfaceOptions_AddCategory(subcategory)
 
@@ -1512,6 +1532,8 @@ child.CreateAccountWideCheckbox = function(frame, localeKey, thing)
 	cb:SetATTTooltip(tooltip);
 	return cb;
 end
+
+-- CONTENT
 
 local ModeLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ModeLabel:SetPoint("TOPLEFT", child, "TOPLEFT", 10, -8);
@@ -2200,32 +2222,69 @@ DynamicCategoryNestedCheckbox:AlignAfter(DynamicCategorySimpleCheckbox);
 DynamicCategoryNestedCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
 end)();
 
-------------------------------------------
--- The "Tracking" Tab.	--
-------------------------------------------
-(function()
-local tab = settings:CreateTab(L["FILTERS_TAB"]);
-tab.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
-		PanelTemplates_DisableTab(settings, self:GetID());
-	else
-		PanelTemplates_EnableTab(settings, self:GetID());
-	end
-end;
+------------------------
+-- "Tracking" options --
+------------------------
 
-local child = settings:CreateScrollFrame();
-local scrollFrame = child.ScrollContainer;
-scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
-scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
-scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 4);
-child:SetMaxScroll(280);	-- Adding more max value to the scrollbar is what controls the vertical size.
+-- SETUP
+(function()
+-- local tab = settings:CreateTab(L["FILTERS_TAB"]);
+-- tab.OnRefresh = function(self)
+-- 	if settings:Get("DebugMode") then
+-- 		PanelTemplates_DisableTab(settings, self:GetID());
+-- 	else
+-- 		PanelTemplates_EnableTab(settings, self:GetID());
+-- 	end
+-- end;
+
+-- local child = settings:CreateScrollFrame();
+-- local scrollFrame = child.ScrollContainer;
+-- scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
+-- scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
+-- scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 4);
+-- child:SetMaxScroll(280);	-- Adding more max value to the scrollbar is what controls the vertical size.
+
+-- CreateCheckBox function we apparently need
+local function CreateCheckBox(self, text, OnRefresh, OnClick)
+	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
+	box:SetParent(self);
+	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
+	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
+	local count = self.ATT.CB_Count + 1;
+	self.ATT.CB[count] = box;
+	self.ATT.CB_Count = count;
+	return box;
+end
+
+-- Create the ScrollFrame
+local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
+local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
+scrollFrame:SetScrollChild(scrollChild)
+scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+
+-- Move the scrollbar to its proper position
+scrollFrame.ScrollBar:ClearPoint("RIGHT")
+scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+
+-- Reference stuff
+scrollChild.CreateCheckBox = CreateCheckBox
+local child = scrollChild
+
+-- Create the nested subcategory
+local subcategory = scrollFrame
+subcategory.name = L["FILTERS_TAB"]
+subcategory.parent = "AllTheThings"
+InterfaceOptions_AddCategory(subcategory)
+
+-- CONTENT
 
 local ItemFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ItemFiltersLabel:SetJustifyH("LEFT");
 ItemFiltersLabel:SetText(L["ITEM_FILTER_LABEL"]);
 ItemFiltersLabel:Show();
 table.insert(settings.MostRecentTab.objects, ItemFiltersLabel);
-ItemFiltersLabel:SetPoint("TOPLEFT", child, "TOPLEFT", 10, -8);
+ItemFiltersLabel:SetPoint("TOPLEFT", child, 0, 0)
 ItemFiltersLabel.OnRefresh = function(self)
 	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:SetAlpha(0.2);
@@ -2396,8 +2455,8 @@ end;
 table.insert(settings.MostRecentTab.objects, f);
 
 local GeneralFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-GeneralFiltersLabel:SetPoint("TOP", ItemFiltersLabel, "TOP", 0, 0);
-GeneralFiltersLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
+GeneralFiltersLabel:SetPoint("TOP", ItemFiltersLabel, 0, 0)
+GeneralFiltersLabel:SetPoint("LEFT", ItemFiltersLabel, 350, 0)
 GeneralFiltersLabel:SetJustifyH("LEFT");
 GeneralFiltersLabel:SetText(L["GENERAL_LABEL"]);
 GeneralFiltersLabel:Show();
@@ -2498,6 +2557,7 @@ CustomCollectFilterExplainLabel:SetPoint("TOPLEFT", CustomCollectFilterLabel, "B
 CustomCollectFilterExplainLabel:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
 CustomCollectFilterExplainLabel:SetJustifyH("LEFT");
 CustomCollectFilterExplainLabel:SetText(L["CUSTOM_FILTERS_EXPLAIN_LABEL"]);
+CustomCollectFilterExplainLabel:SetWidth(250)
 CustomCollectFilterExplainLabel:Show();
 table.insert(settings.MostRecentTab.objects, CustomCollectFilterExplainLabel);
 CustomCollectFilterExplainLabel.OnRefresh = function(self)
@@ -2743,19 +2803,57 @@ end
 
 end)();
 
-------------------------------------------
--- The "Interface" Tab.					--
-------------------------------------------
+-------------------------
+-- "Interface" options --
+-------------------------
+
+-- SETUP
 (function()
-local tab = settings:CreateTab(L["INTERFACE_TAB"]);
-local TooltipLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-TooltipLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
-TooltipLabel:SetJustifyH("LEFT");
-TooltipLabel:SetText(L["TOOLTIP_LABEL"]);
+--local tab = settings:CreateTab(L["INTERFACE_TAB"]);
+
+-- CreateCheckBox function we apparently need
+local function CreateCheckBox(self, text, OnRefresh, OnClick)
+	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
+	box:SetParent(self);
+	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
+	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
+	local count = self.ATT.CB_Count + 1;
+	self.ATT.CB[count] = box;
+	self.ATT.CB_Count = count;
+	return box;
+end
+
+-- Create the ScrollFrame
+local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
+local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
+scrollFrame:SetScrollChild(scrollChild)
+scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+
+-- Move the scrollbar to its proper position
+scrollFrame.ScrollBar:ClearPoint("RIGHT")
+scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+
+-- Reference stuff
+scrollChild.CreateCheckBox = CreateCheckBox
+local child = scrollChild
+
+-- Create the nested subcategory
+local subcategory = scrollFrame
+subcategory.name = L["INTERFACE_TAB"]
+subcategory.parent = "AllTheThings"
+InterfaceOptions_AddCategory(subcategory)
+
+-- CONTENT
+
+local TooltipLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+TooltipLabel:SetPoint("TOPLEFT", child, 0, 0)
+TooltipLabel:SetJustifyH("LEFT")
+TooltipLabel:SetText(L["TOOLTIP_LABEL"])
 TooltipLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipLabel);
 
-local ShowTooltipHelpCheckBox = settings:CreateCheckBox(L["TOOLTIP_HELP_CHECKBOX"],
+local ShowTooltipHelpCheckBox = child:CreateCheckBox(L["TOOLTIP_HELP_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Show:TooltipHelp"));
 end,
@@ -2766,7 +2864,7 @@ end);
 ShowTooltipHelpCheckBox:SetATTTooltip(L["TOOLTIP_HELP_CHECKBOX_TOOLTIP"]);
 ShowTooltipHelpCheckBox:SetPoint("TOPLEFT", TooltipLabel, "BOTTOMLEFT", -2, 0);
 
-local EnableTooltipInformationCheckBox = settings:CreateCheckBox(L["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"],
+local EnableTooltipInformationCheckBox = child:CreateCheckBox(L["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled"));
 end,
@@ -2776,7 +2874,7 @@ end);
 EnableTooltipInformationCheckBox:SetATTTooltip(L["ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP"]);
 EnableTooltipInformationCheckBox:AlignBelow(ShowTooltipHelpCheckBox);
 
-local TooltipModifierLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+local TooltipModifierLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 TooltipModifierLabel:SetJustifyH("LEFT");
 TooltipModifierLabel:SetText(L["TOOLTIP_MOD_LABEL"]);
 TooltipModifierLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox.Text, "TOPRIGHT", 10, 0);
@@ -2791,7 +2889,7 @@ TooltipModifierLabel.OnRefresh = function(self)
 	end
 end;
 
-local TooltipModifierNoneCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_NONE"],
+local TooltipModifierNoneCheckBox = child:CreateCheckBox(L["TOOLTIP_MOD_NONE"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "None");
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2814,7 +2912,7 @@ function(self)
 end);
 TooltipModifierNoneCheckBox:AlignBelow(EnableTooltipInformationCheckBox, 1);
 
-local TooltipModifierShiftCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_SHIFT"],
+local TooltipModifierShiftCheckBox = child:CreateCheckBox(L["TOOLTIP_MOD_SHIFT"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Shift");
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2837,7 +2935,7 @@ function(self)
 end);
 TooltipModifierShiftCheckBox:AlignAfter(TooltipModifierNoneCheckBox);
 
-local TooltipModifierCtrlCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_CTRL"],
+local TooltipModifierCtrlCheckBox = child:CreateCheckBox(L["TOOLTIP_MOD_CTRL"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Ctrl");
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2860,7 +2958,7 @@ function(self)
 end);
 TooltipModifierCtrlCheckBox:AlignAfter(TooltipModifierShiftCheckBox);
 
-local TooltipModifierAltCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_ALT"],
+local TooltipModifierAltCheckBox = child:CreateCheckBox(L["TOOLTIP_MOD_ALT"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Alt");
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2884,7 +2982,7 @@ end);
 TooltipModifierAltCheckBox:AlignAfter(TooltipModifierCtrlCheckBox);
 
 if IsMacClient() then
-	local TooltipModifierMetaCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_CMD"],
+	local TooltipModifierMetaCheckBox = child:CreateCheckBox(L["TOOLTIP_MOD_CMD"],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Cmd");
 		if not settings:GetTooltipSetting("Enabled") then
@@ -2908,7 +3006,7 @@ if IsMacClient() then
 	TooltipModifierMetaCheckBox:AlignAfter(TooltipModifierAltCheckBox);
 end
 
-local DisplayInCombatCheckBox = settings:CreateCheckBox(L["DISPLAY_IN_COMBAT_CHECKBOX"],
+local DisplayInCombatCheckBox = child:CreateCheckBox(L["DISPLAY_IN_COMBAT_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("DisplayInCombat"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2925,7 +3023,7 @@ end);
 DisplayInCombatCheckBox:SetATTTooltip(L["DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP"]);
 DisplayInCombatCheckBox:AlignBelow(TooltipModifierNoneCheckBox, -1);
 
-local SummarizeThingsCheckBox = settings:CreateCheckBox(L["SUMMARIZE_CHECKBOX"],
+local SummarizeThingsCheckBox = child:CreateCheckBox(L["SUMMARIZE_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SummarizeThings"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2942,7 +3040,7 @@ end);
 SummarizeThingsCheckBox:SetATTTooltip(L["SUMMARIZE_CHECKBOX_TOOLTIP"]);
 SummarizeThingsCheckBox:AlignBelow(DisplayInCombatCheckBox);
 
-local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", settings, "OptionsSliderTemplate");
+local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", child, "OptionsSliderTemplate");
 ContainsSlider:SetPoint("TOP", SummarizeThingsCheckBox.Text, "BOTTOM", 0, -4);
 ContainsSlider:SetPoint("LEFT", SummarizeThingsCheckBox, "LEFT", 10, 0);
 table.insert(settings.MostRecentTab.objects, ContainsSlider);
@@ -2977,7 +3075,7 @@ ContainsSlider.OnRefresh = function(self)
 	end
 end;
 
-local TooltipShowLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+local TooltipShowLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 TooltipShowLabel:SetJustifyH("LEFT");
 TooltipShowLabel:SetText(L["TOOLTIP_SHOW_LABEL"]);
 TooltipShowLabel:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, -14);
@@ -2992,7 +3090,7 @@ TooltipShowLabel.OnRefresh = function(self)
 	end
 end;
 
-local ShowCollectionProgressCheckBox = settings:CreateCheckBox(L["SHOW_COLLECTION_PROGRESS_CHECKBOX"],
+local ShowCollectionProgressCheckBox = child:CreateCheckBox(L["SHOW_COLLECTION_PROGRESS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Progress"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3010,7 +3108,7 @@ ShowCollectionProgressCheckBox:SetATTTooltip(L["SHOW_COLLECTION_PROGRESS_CHECKBO
 ShowCollectionProgressCheckBox:SetPoint("LEFT", SummarizeThingsCheckBox, "LEFT", 0, 0);
 ShowCollectionProgressCheckBox:SetPoint("TOP", TooltipShowLabel, "BOTTOM", 0, -2);
 
-local ShortenProgressCheckBox = settings:CreateCheckBox(L["ICON_ONLY_CHECKBOX"],
+local ShortenProgressCheckBox = child:CreateCheckBox(L["ICON_ONLY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ShowIconOnly"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("Progress") then
@@ -3027,7 +3125,7 @@ end);
 ShortenProgressCheckBox:SetATTTooltip(L["ICON_ONLY_CHECKBOX_TOOLTIP"]);
 ShortenProgressCheckBox:AlignBelow(ShowCollectionProgressCheckBox, 1);
 
-local ShowKnownByCheckBox = settings:CreateCheckBox(L["KNOWN_BY_CHECKBOX"],
+local ShowKnownByCheckBox = child:CreateCheckBox(L["KNOWN_BY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3044,7 +3142,7 @@ end);
 ShowKnownByCheckBox:SetATTTooltip(L["KNOWN_BY_CHECKBOX_TOOLTIP"]);
 ShowKnownByCheckBox:AlignBelow(ShortenProgressCheckBox, -1);
 
-local ShowProfessionRequirementsCheckBox = settings:CreateCheckBox(L["PROFESSION_CHECKBOX"],
+local ShowProfessionRequirementsCheckBox = child:CreateCheckBox(L["PROFESSION_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ProfessionRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3061,7 +3159,7 @@ end);
 ShowProfessionRequirementsCheckBox:SetATTTooltip(L["PROFESSION_CHECKBOX_TOOLTIP"]);
 ShowProfessionRequirementsCheckBox:AlignBelow(ShowKnownByCheckBox);
 
-local ShowLevelRequirementsCheckBox = settings:CreateCheckBox(L["LEVELREQ_CHECKBOX"],
+local ShowLevelRequirementsCheckBox = child:CreateCheckBox(L["LEVELREQ_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("LevelRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3078,7 +3176,7 @@ end);
 ShowLevelRequirementsCheckBox:SetATTTooltip(L["LEVELREQ_CHECKBOX_TOOLTIP"]);
 ShowLevelRequirementsCheckBox:AlignBelow(ShowProfessionRequirementsCheckBox);
 
-local ShowClassRequirementsCheckBox = settings:CreateCheckBox(L["CLASSES_CHECKBOX"],
+local ShowClassRequirementsCheckBox = child:CreateCheckBox(L["CLASSES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3095,7 +3193,7 @@ end);
 ShowClassRequirementsCheckBox:SetATTTooltip(L["CLASSES_CHECKBOX_TOOLTIP"]);
 ShowClassRequirementsCheckBox:AlignBelow(ShowLevelRequirementsCheckBox);
 
-local ShowRaceRequirementsCheckBox = settings:CreateCheckBox(L["RACES_CHECKBOX"],
+local ShowRaceRequirementsCheckBox = child:CreateCheckBox(L["RACES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("RaceRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3112,7 +3210,7 @@ end);
 ShowRaceRequirementsCheckBox:SetATTTooltip(L["RACES_CHECKBOX_TOOLTIP"]);
 ShowRaceRequirementsCheckBox:AlignBelow(ShowClassRequirementsCheckBox);
 
-local ShowSpecializationRequirementsCheckBox = settings:CreateCheckBox(L["SPEC_CHECKBOX"],
+local ShowSpecializationRequirementsCheckBox = child:CreateCheckBox(L["SPEC_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3129,7 +3227,7 @@ end);
 ShowSpecializationRequirementsCheckBox:SetATTTooltip(L["SPEC_CHECKBOX_TOOLTIP"]);
 ShowSpecializationRequirementsCheckBox:AlignBelow(ShowRaceRequirementsCheckBox);
 
-local ShowDropChancesCheckbox = settings:CreateCheckBox(L["DROP_CHANCES_CHECKBOX"],
+local ShowDropChancesCheckbox = child:CreateCheckBox(L["DROP_CHANCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("DropChances"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3146,7 +3244,7 @@ end);
 ShowDropChancesCheckbox:SetATTTooltip(L["DROP_CHANCES_CHECKBOX_TOOLTIP"]);
 ShowDropChancesCheckbox:AlignBelow(ShowSpecializationRequirementsCheckBox);
 
-local ShowCoordinatesCheckBox = settings:CreateCheckBox(L["COORDINATES_CHECKBOX"],
+local ShowCoordinatesCheckBox = child:CreateCheckBox(L["COORDINATES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Coordinates"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3163,7 +3261,7 @@ end);
 ShowCoordinatesCheckBox:SetATTTooltip(L["COORDINATES_CHECKBOX_TOOLTIP"]);
 ShowCoordinatesCheckBox:AlignBelow(ShowDropChancesCheckbox);
 
-local ShowDescriptionsCheckBox = settings:CreateCheckBox(L["DESCRIPTIONS_CHECKBOX"],
+local ShowDescriptionsCheckBox = child:CreateCheckBox(L["DESCRIPTIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Descriptions"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3180,7 +3278,7 @@ end);
 ShowDescriptionsCheckBox:SetATTTooltip(L["DESCRIPTIONS_CHECKBOX_TOOLTIP"]);
 ShowDescriptionsCheckBox:AlignBelow(ShowCoordinatesCheckBox);
 
-local ShowLoreCheckBox = settings:CreateCheckBox(L["LORE_CHECKBOX"],
+local ShowLoreCheckBox = child:CreateCheckBox(L["LORE_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Lore"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3197,7 +3295,7 @@ end);
 ShowLoreCheckBox:SetATTTooltip(L["LORE_CHECKBOX_TOOLTIP"]);
 ShowLoreCheckBox:AlignBelow(ShowDescriptionsCheckBox);
 
-local ShowModelsCheckBox = settings:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
+local ShowModelsCheckBox = child:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Models"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3214,7 +3312,7 @@ end);
 ShowModelsCheckBox:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"]);
 ShowModelsCheckBox:AlignBelow(ShowLoreCheckBox);
 
-local ShowCurrencyCalculationsCheckBox = settings:CreateCheckBox(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"],
+local ShowCurrencyCalculationsCheckBox = child:CreateCheckBox(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Currencies"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3231,7 +3329,7 @@ end);
 ShowCurrencyCalculationsCheckBox:SetATTTooltip(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP"]);
 ShowCurrencyCalculationsCheckBox:AlignBelow(ShowModelsCheckBox);
 
-local ShowSharedAppearancesCheckBox = settings:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
+local ShowSharedAppearancesCheckBox = child:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3248,7 +3346,7 @@ end);
 ShowSharedAppearancesCheckBox:SetATTTooltip(L["SHARED_APPEARANCES_CHECKBOX_TOOLTIP"]);
 ShowSharedAppearancesCheckBox:AlignAfter(ShowCollectionProgressCheckBox);
 
-local IncludeOriginalSourceCheckBox = settings:CreateCheckBox(L["INCLUDE_ORIGINAL_CHECKBOX"],
+local IncludeOriginalSourceCheckBox = child:CreateCheckBox(L["INCLUDE_ORIGINAL_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("IncludeOriginalSource"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
@@ -3265,7 +3363,7 @@ end);
 IncludeOriginalSourceCheckBox:SetATTTooltip(L["INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP"]);
 IncludeOriginalSourceCheckBox:AlignBelow(ShowSharedAppearancesCheckBox, 1);
 
-local OnlyShowRelevantSharedAppearancesCheckBox = settings:CreateCheckBox(L["ONLY_RELEVANT_CHECKBOX"],
+local OnlyShowRelevantSharedAppearancesCheckBox = child:CreateCheckBox(L["ONLY_RELEVANT_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
@@ -3282,7 +3380,7 @@ end);
 OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip(L["ONLY_RELEVANT_CHECKBOX_TOOLTIP"]);
 OnlyShowRelevantSharedAppearancesCheckBox:AlignBelow(IncludeOriginalSourceCheckBox);
 
-local ShowCompletedByCheckBox = settings:CreateCheckBox(L["COMPLETED_BY_CHECKBOX"],
+local ShowCompletedByCheckBox = child:CreateCheckBox(L["COMPLETED_BY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("CompletedBy"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3299,7 +3397,7 @@ end);
 ShowCompletedByCheckBox:SetATTTooltip(L["COMPLETED_BY_CHECKBOX_TOOLTIP"]);
 ShowCompletedByCheckBox:AlignBelow(OnlyShowRelevantSharedAppearancesCheckBox, -1);
 
-local ShowSourceLocationsCheckBox = settings:CreateCheckBox(L["SOURCE_LOCATIONS_CHECKBOX"],
+local ShowSourceLocationsCheckBox = child:CreateCheckBox(L["SOURCE_LOCATIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3316,7 +3414,7 @@ end);
 ShowSourceLocationsCheckBox:SetATTTooltip(L["SOURCE_LOCATIONS_CHECKBOX_TOOLTIP"]);
 ShowSourceLocationsCheckBox:AlignBelow(ShowCompletedByCheckBox);
 
-local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
+local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", child, "OptionsSliderTemplate");
 LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox.Text, "BOTTOM", 0, -4);
 LocationsSlider:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 10, 0);
 table.insert(settings.MostRecentTab.objects, LocationsSlider);
@@ -3351,7 +3449,7 @@ LocationsSlider.OnRefresh = function(self)
 	end
 end;
 
-local ShowCompletedSourceLocationsForCheckBox = settings:CreateCheckBox(L["COMPLETED_SOURCES_CHECKBOX"],
+local ShowCompletedSourceLocationsForCheckBox = child:CreateCheckBox(L["COMPLETED_SOURCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Completed"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -3369,7 +3467,7 @@ ShowCompletedSourceLocationsForCheckBox:SetATTTooltip(L["COMPLETED_SOURCES_CHECK
 ShowCompletedSourceLocationsForCheckBox:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, -8);
 ShowCompletedSourceLocationsForCheckBox:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 8, 4);
 
-local ShowSourceLocationsForCreaturesCheckBox = settings:CreateCheckBox(L["FOR_CREATURES_CHECKBOX"],
+local ShowSourceLocationsForCreaturesCheckBox = child:CreateCheckBox(L["FOR_CREATURES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Creatures"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -3386,7 +3484,7 @@ end);
 ShowSourceLocationsForCreaturesCheckBox:SetATTTooltip(L["FOR_CREATURES_CHECKBOX_TOOLTIP"]);
 ShowSourceLocationsForCreaturesCheckBox:AlignBelow(ShowCompletedSourceLocationsForCheckBox);
 
-local ShowSourceLocationsForThingsCheckBox = settings:CreateCheckBox(L["FOR_THINGS_CHECKBOX"],
+local ShowSourceLocationsForThingsCheckBox = child:CreateCheckBox(L["FOR_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Things"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -3403,7 +3501,7 @@ end);
 ShowSourceLocationsForThingsCheckBox:SetATTTooltip(L["FOR_THINGS_CHECKBOX_TOOLTIP"]);
 ShowSourceLocationsForThingsCheckBox:AlignBelow(ShowSourceLocationsForCreaturesCheckBox);
 
-local ShowSourceLocationsForUnsortedCheckBox = settings:CreateCheckBox(L["FOR_UNSORTED_CHECKBOX"],
+local ShowSourceLocationsForUnsortedCheckBox = child:CreateCheckBox(L["FOR_UNSORTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Unsorted"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -3420,7 +3518,7 @@ end);
 ShowSourceLocationsForUnsortedCheckBox:SetATTTooltip(L["FOR_UNSORTED_CHECKBOX_TOOLTIP"]);
 ShowSourceLocationsForUnsortedCheckBox:AlignBelow(ShowSourceLocationsForThingsCheckBox);
 
-local ShowSourceLocationsWithWrappingCheckBox = settings:CreateCheckBox(L["WITH_WRAPPING_CHECKBOX"],
+local ShowSourceLocationsWithWrappingCheckBox = child:CreateCheckBox(L["WITH_WRAPPING_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Wrapping"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -3437,9 +3535,9 @@ end);
 ShowSourceLocationsWithWrappingCheckBox:SetATTTooltip(L["WITH_WRAPPING_CHECKBOX_TOOLTIP"]);
 ShowSourceLocationsWithWrappingCheckBox:AlignBelow(ShowSourceLocationsForUnsortedCheckBox);
 
-local AdditionalLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-AdditionalLabel:SetPoint("TOP", TooltipLabel, "TOP", 0, 0);
-AdditionalLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
+local AdditionalLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+AdditionalLabel:SetPoint("TOP", TooltipLabel, 0, 0);
+AdditionalLabel:SetPoint("LEFT", TooltipLabel, 250, 0);
 AdditionalLabel:SetJustifyH("LEFT");
 AdditionalLabel:SetText(L["ADDITIONAL_LABEL"]);
 AdditionalLabel:Show();
@@ -3481,7 +3579,7 @@ local ids = {
 };
 local last = nil;
 for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","headerID"}) do
-	local filter = settings:CreateCheckBox(ids[id],
+	local filter = child:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
 	end,
@@ -3498,7 +3596,7 @@ for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azerite
 end
 last = nil;
 for _,id in pairs({"iconPath","illusionID","instanceID","itemID","itemString","mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
-	local filter = settings:CreateCheckBox(ids[id],
+	local filter = child:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
 	end,
@@ -3516,20 +3614,57 @@ end
 
 end)();
 
-------------------------------------------
--- The "Features" Tab.					--
-------------------------------------------
-(function()
-local tab = settings:CreateTab(L["FEATURES_TAB"]);
+------------------------
+-- "Features" options --
+------------------------
 
-local MinimapLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-MinimapLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+-- SETUP
+(function()
+-- local tab = settings:CreateTab(L["FEATURES_TAB"]);
+
+-- CreateCheckBox function we apparently need
+local function CreateCheckBox(self, text, OnRefresh, OnClick)
+	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
+	box:SetParent(self);
+	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
+	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
+	local count = self.ATT.CB_Count + 1;
+	self.ATT.CB[count] = box;
+	self.ATT.CB_Count = count;
+	return box;
+end
+
+-- Create the ScrollFrame
+local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
+local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
+scrollFrame:SetScrollChild(scrollChild)
+scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+
+-- Move the scrollbar to its proper position
+scrollFrame.ScrollBar:ClearPoint("RIGHT")
+scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+
+-- Reference stuff
+scrollChild.CreateCheckBox = CreateCheckBox
+local child = scrollChild
+
+-- Create the nested subcategory
+local subcategory = scrollFrame
+subcategory.name = L["FEATURES_TAB"]
+subcategory.parent = "AllTheThings"
+InterfaceOptions_AddCategory(subcategory)
+
+-- CONTENT
+
+local MinimapLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+MinimapLabel:SetPoint("TOPLEFT", child, 0, 0)
 MinimapLabel:SetJustifyH("LEFT");
 MinimapLabel:SetText(L["MINIMAP_LABEL"]);
 MinimapLabel:Show();
 table.insert(settings.MostRecentTab.objects, MinimapLabel);
 
-local ShowMinimapButtonCheckBox = settings:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
+local ShowMinimapButtonCheckBox = child:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("MinimapButton"));
 end,
@@ -3545,7 +3680,7 @@ end);
 ShowMinimapButtonCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"]);
 ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", MinimapLabel, "BOTTOMLEFT", -2, 0);
 
-local MinimapButtonStyleCheckBox = settings:CreateCheckBox(L["MINIMAP_BUTTON_STYLE_CHECKBOX"],
+local MinimapButtonStyleCheckBox = child:CreateCheckBox(L["MINIMAP_BUTTON_STYLE_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("MinimapStyle"));
 	if not settings:GetTooltipSetting("MinimapButton") then
@@ -3563,7 +3698,7 @@ end);
 MinimapButtonStyleCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_STYLE_CHECKBOX_TOOLTIP"]);
 MinimapButtonStyleCheckBox:AlignBelow(ShowMinimapButtonCheckBox, 1);
 
-local MinimapButtonSizeSliderLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+local MinimapButtonSizeSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 MinimapButtonSizeSliderLabel:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", 4, 0);
 MinimapButtonSizeSliderLabel:SetJustifyH("LEFT");
 MinimapButtonSizeSliderLabel:SetText(L["MINIMAP_SLIDER"]);
@@ -3580,7 +3715,7 @@ MinimapButtonSizeSliderLabel.OnRefresh = function(self)
 	end
 end;
 
-local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", settings, "OptionsSliderTemplate");
+local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", child, "OptionsSliderTemplate");
 MinimapButtonSizeSlider:SetPoint("TOPLEFT", MinimapButtonSizeSliderLabel, "BOTTOMLEFT", -1, -2);
 table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSlider);
 settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
@@ -3615,7 +3750,7 @@ MinimapButtonSizeSlider.OnRefresh = function(self)
 	end
 end;
 
-local ModulesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+local ModulesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ModulesLabel:SetPoint("TOP", MinimapButtonSizeSlider, "BOTTOM", 0, -16);
 ModulesLabel:SetPoint("LEFT", MinimapLabel, "LEFT", 0, 0);
 ModulesLabel:SetJustifyH("LEFT");
@@ -3632,7 +3767,7 @@ local ChangeSkipCutsceneState = function(self, checked)
 		self:UnregisterEvent("CINEMATIC_START");
 	end
 end
-local AutomaticallySkipCutscenesCheckBox = settings:CreateCheckBox(L["SKIP_CUTSCENES_CHECKBOX"],
+local AutomaticallySkipCutscenesCheckBox = child:CreateCheckBox(L["SKIP_CUTSCENES_CHECKBOX"],
 function(self)
 	local checked = settings:GetTooltipSetting("Skip:Cutscenes");
 	self:SetChecked(checked);
@@ -3649,7 +3784,7 @@ end);
 AutomaticallySkipCutscenesCheckBox:SetATTTooltip(L["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"]);
 AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", -2, 0);
 
-local OpenMainListAutomatically = settings:CreateCheckBox(L["AUTO_MAIN_LIST_CHECKBOX"],
+local OpenMainListAutomatically = child:CreateCheckBox(L["AUTO_MAIN_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:MainList"));
 end,
@@ -3659,7 +3794,7 @@ end);
 OpenMainListAutomatically:SetATTTooltip(L["AUTO_MAIN_LIST_CHECKBOX_TOOLTIP"]);
 OpenMainListAutomatically:AlignBelow(AutomaticallySkipCutscenesCheckBox);
 
-local OpenMiniListAutomatically = settings:CreateCheckBox(L["AUTO_MINI_LIST_CHECKBOX"],
+local OpenMiniListAutomatically = child:CreateCheckBox(L["AUTO_MINI_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:MiniList"));
 end,
@@ -3669,7 +3804,7 @@ end);
 OpenMiniListAutomatically:SetATTTooltip(L["AUTO_MINI_LIST_CHECKBOX_TOOLTIP"]);
 OpenMiniListAutomatically:AlignBelow(OpenMainListAutomatically);
 
-local OpenBountyListAutomatically = settings:CreateCheckBox(L["AUTO_BOUNTY_CHECKBOX"],
+local OpenBountyListAutomatically = child:CreateCheckBox(L["AUTO_BOUNTY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"));
 end,
@@ -3679,7 +3814,7 @@ end);
 OpenBountyListAutomatically:SetATTTooltip(L["AUTO_BOUNTY_CHECKBOX_TOOLTIP"]);
 OpenBountyListAutomatically:AlignBelow(OpenMiniListAutomatically);
 
-local OpenProfessionListAutomatically = settings:CreateCheckBox(L["AUTO_PROF_LIST_CHECKBOX"],
+local OpenProfessionListAutomatically = child:CreateCheckBox(L["AUTO_PROF_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:ProfessionList"));
 end,
@@ -3689,7 +3824,7 @@ end);
 OpenProfessionListAutomatically:SetATTTooltip(L["AUTO_PROF_LIST_CHECKBOX_TOOLTIP"]);
 OpenProfessionListAutomatically:AlignBelow(OpenBountyListAutomatically);
 
-local OpenRaidAssistantAutomatically = settings:CreateCheckBox(L["AUTO_RAID_ASSISTANT_CHECKBOX"],
+local OpenRaidAssistantAutomatically = child:CreateCheckBox(L["AUTO_RAID_ASSISTANT_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:RaidAssistant"));
 end,
@@ -3699,7 +3834,7 @@ end);
 OpenRaidAssistantAutomatically:SetATTTooltip(L["AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP"]);
 OpenRaidAssistantAutomatically:AlignBelow(OpenProfessionListAutomatically);
 
-local OpenWorldQuestsListAutomatically = settings:CreateCheckBox(L["AUTO_WQ_LIST_CHECKBOX"],
+local OpenWorldQuestsListAutomatically = child:CreateCheckBox(L["AUTO_WQ_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"));
 end,
@@ -3710,7 +3845,7 @@ OpenWorldQuestsListAutomatically:SetATTTooltip(L["AUTO_WQ_LIST_CHECKBOX_TOOLTIP"
 OpenWorldQuestsListAutomatically:AlignBelow(OpenRaidAssistantAutomatically);
 
 -- TODO: eventually AH module gets fixed...
-local ShowAuctionHouseModuleTab = settings:CreateCheckBox(L["AUCTION_TAB_CHECKBOX"],
+local ShowAuctionHouseModuleTab = child:CreateCheckBox(L["AUCTION_TAB_CHECKBOX"],
 function(self)
 	self:SetChecked(false);
 	self:Disable();
@@ -3735,7 +3870,7 @@ end);
 ShowAuctionHouseModuleTab:SetATTTooltip(L["AUCTION_TAB_CHECKBOX_TOOLTIP"]);
 ShowAuctionHouseModuleTab:AlignBelow(OpenWorldQuestsListAutomatically);
 
-local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+local CelebrationsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CelebrationsLabel:SetPoint("TOP", ShowAuctionHouseModuleTab, "BOTTOM", 0, -4);
 CelebrationsLabel:SetPoint("LEFT", ModulesLabel, "LEFT", 0, 0);
 CelebrationsLabel:SetJustifyH("LEFT");
@@ -3743,7 +3878,7 @@ CelebrationsLabel:SetText(L["CELEBRATIONS_LABEL"]);
 CelebrationsLabel:Show();
 table.insert(settings.MostRecentTab.objects, CelebrationsLabel);
 
-local UseMasterAudioChannel = settings:CreateCheckBox(L["MASTER_AUDIO_CHECKBOX"],
+local UseMasterAudioChannel = child:CreateCheckBox(L["MASTER_AUDIO_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Channel") == "master");
 end,
@@ -3756,7 +3891,7 @@ end);
 UseMasterAudioChannel:SetATTTooltip(L["MASTER_AUDIO_CHECKBOX_TOOLTIP"]);
 UseMasterAudioChannel:SetPoint("TOPLEFT", CelebrationsLabel, "BOTTOMLEFT", -2, 0);
 
-local CelebrateCollectedThingsCheckBox = settings:CreateCheckBox(L["CELEBRATE_COLLECTED_CHECKBOX"],
+local CelebrateCollectedThingsCheckBox = child:CreateCheckBox(L["CELEBRATE_COLLECTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Celebrate"));
 end,
@@ -3766,7 +3901,7 @@ end);
 CelebrateCollectedThingsCheckBox:SetATTTooltip(L["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"]);
 CelebrateCollectedThingsCheckBox:AlignBelow(UseMasterAudioChannel);
 
-local WarnRemovedThingsCheckBox = settings:CreateCheckBox(L["WARN_REMOVED_CHECKBOX"],
+local WarnRemovedThingsCheckBox = child:CreateCheckBox(L["WARN_REMOVED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Warn:Removed"));
 end,
@@ -3776,7 +3911,7 @@ end);
 WarnRemovedThingsCheckBox:SetATTTooltip(L["WARN_REMOVED_CHECKBOX_TOOLTIP"]);
 WarnRemovedThingsCheckBox:AlignBelow(CelebrateCollectedThingsCheckBox);
 
-local ScreenshotCollectedThingsCheckBox = settings:CreateCheckBox(L["SCREENSHOT_COLLECTED_CHECKBOX"],
+local ScreenshotCollectedThingsCheckBox = child:CreateCheckBox(L["SCREENSHOT_COLLECTED_CHECKBOX"],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("Screenshot"));
 	end,
@@ -3786,15 +3921,15 @@ local ScreenshotCollectedThingsCheckBox = settings:CreateCheckBox(L["SCREENSHOT_
 ScreenshotCollectedThingsCheckBox:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"]);
 ScreenshotCollectedThingsCheckBox:AlignBelow(WarnRemovedThingsCheckBox);
 
-local ReportingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+local ReportingLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ReportingLabel:SetPoint("TOP", MinimapLabel, "TOP", 0, 0);
-ReportingLabel:SetPoint("LEFT", settings, "RIGHT", -300, 0);
+ReportingLabel:SetPoint("LEFT", MinimapLabel, 300, 0);
 ReportingLabel:SetJustifyH("LEFT");
 ReportingLabel:SetText(L["REPORTING_LABEL"]);
 ReportingLabel:Show();
 table.insert(settings.MostRecentTab.objects, ReportingLabel);
 
-local ReportCollectedThingsCheckBox = settings:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],
+local ReportCollectedThingsCheckBox = child:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:Collected"));
 end,
@@ -3804,7 +3939,7 @@ end);
 ReportCollectedThingsCheckBox:SetATTTooltip(L["REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
 ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", ReportingLabel, "BOTTOMLEFT", -2, 0);
 
-local ReportCompletedQuestsCheckBox = settings:CreateCheckBox(L["REPORT_COMPLETED_QUESTS_CHECKBOX"],
+local ReportCompletedQuestsCheckBox = child:CreateCheckBox(L["REPORT_COMPLETED_QUESTS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:CompletedQuests"));
 end,
@@ -3814,7 +3949,7 @@ end);
 ReportCompletedQuestsCheckBox:SetATTTooltip(L["REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP"]);
 ReportCompletedQuestsCheckBox:AlignBelow(ReportCollectedThingsCheckBox);
 
-local ReportUnsortedCompletedQuestsCheckBox = settings:CreateCheckBox(L["REPORT_UNSORTED_CHECKBOX"],
+local ReportUnsortedCompletedQuestsCheckBox = child:CreateCheckBox(L["REPORT_UNSORTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:UnsortedQuests"));
 	if not settings:GetTooltipSetting("Report:CompletedQuests") then
@@ -3831,7 +3966,7 @@ end);
 ReportUnsortedCompletedQuestsCheckBox:SetATTTooltip(L["REPORT_UNSORTED_CHECKBOX_TOOLTIP"]);
 ReportUnsortedCompletedQuestsCheckBox:AlignBelow(ReportCompletedQuestsCheckBox, 1);
 
-local ChatCommandsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+local ChatCommandsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ChatCommandsLabel:SetPoint("TOP", ReportUnsortedCompletedQuestsCheckBox, "BOTTOM", 0, -4);
 ChatCommandsLabel:SetPoint("LEFT", ReportingLabel, "LEFT", 0, 0);
 ChatCommandsLabel:SetJustifyH("LEFT");
@@ -3839,7 +3974,7 @@ ChatCommandsLabel:SetText(L["CHAT_COMMANDS_LABEL"]);
 ChatCommandsLabel:Show();
 table.insert(settings.MostRecentTab.objects, ChatCommandsLabel);
 
-local ChatCommandsText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+local ChatCommandsText = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 ChatCommandsText:SetPoint("TOPLEFT", ChatCommandsLabel, "BOTTOMLEFT", 0, -4);
 ChatCommandsText:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
 ChatCommandsText:SetJustifyH("LEFT");
@@ -3849,11 +3984,48 @@ table.insert(settings.MostRecentTab.objects, ChatCommandsText);
 
 end)();
 
-------------------------------------------
--- The "Profiles" Tab.					--
-------------------------------------------
+------------------------
+-- "Profiles" options --
+------------------------
+
+-- SETUP
 (function()
 local tab = settings:CreateTab(L["PROFILES_TAB"]);
+
+-- CreateCheckBox function we apparently need
+local function CreateCheckBox(self, text, OnRefresh, OnClick)
+	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
+	box:SetParent(self);
+	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
+	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
+	local count = self.ATT.CB_Count + 1;
+	self.ATT.CB[count] = box;
+	self.ATT.CB_Count = count;
+	return box;
+end
+
+-- Create the ScrollFrame
+local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
+local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
+scrollFrame:SetScrollChild(scrollChild)
+scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+
+-- Move the scrollbar to its proper position
+scrollFrame.ScrollBar:ClearPoint("RIGHT")
+scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+
+-- Reference stuff
+scrollChild.CreateCheckBox = CreateCheckBox
+local child = scrollChild
+
+-- Create the nested subcategory
+local subcategory = scrollFrame
+subcategory.name = L["PROFILES_TAB"]
+subcategory.parent = "AllTheThings"
+InterfaceOptions_AddCategory(subcategory)
+
+-- CONTENT
 
 local ProfilesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ProfilesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
@@ -4158,15 +4330,53 @@ refreshProfiles = function()
 	-- make sure to switch back to the previous tab once done
 	settings.MostRecentTab = mostRecentTab;
 end
-tab.OnRefresh = refreshProfiles;
+-- tab.OnRefresh = refreshProfiles;
 
 end)();
 
-------------------------------------------
--- The "Sync" Tab.					--
-------------------------------------------
+--------------------
+-- "Sync" options --
+--------------------
+
+-- SETUP
 (function()
 local tab = settings:CreateTab(L["SYNC"]);
+
+-- CreateCheckBox function we apparently need
+local function CreateCheckBox(self, text, OnRefresh, OnClick)
+	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
+	box:SetParent(self);
+	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
+	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
+	local count = self.ATT.CB_Count + 1;
+	self.ATT.CB[count] = box;
+	self.ATT.CB_Count = count;
+	return box;
+end
+
+-- Create the ScrollFrame
+local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
+local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
+scrollFrame:SetScrollChild(scrollChild)
+scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+
+-- Move the scrollbar to its proper position
+scrollFrame.ScrollBar:ClearPoint("RIGHT")
+scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+
+-- Reference stuff
+scrollChild.CreateCheckBox = CreateCheckBox
+local child = scrollChild
+
+-- Create the nested subcategory
+local subcategory = scrollFrame
+subcategory.name = L["SYNC"]
+subcategory.parent = "AllTheThings"
+InterfaceOptions_AddCategory(subcategory)
+
+-- CONTENT
+
 local SyncLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 SyncLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 SyncLabel:SetJustifyH("LEFT");
@@ -4219,11 +4429,49 @@ end
 end)();
 
 
-------------------------------------------
--- The "About" Tab.				--
-------------------------------------------
+---------------------
+-- "About" options --
+---------------------
+
+-- SETUP
 (function()
 local tab = settings:CreateTab(L["ABOUT"]);
+
+-- CreateCheckBox function we apparently need
+local function CreateCheckBox(self, text, OnRefresh, OnClick)
+	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
+	box:SetParent(self);
+	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
+	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
+	local count = self.ATT.CB_Count + 1;
+	self.ATT.CB[count] = box;
+	self.ATT.CB_Count = count;
+	return box;
+end
+
+-- Create the ScrollFrame
+local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate");
+local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
+scrollFrame:SetScrollChild(scrollChild)
+scrollChild:SetWidth(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+scrollChild:SetHeight(1)	-- The size for the nested subcategories is always set, so this element only needs to exist
+
+-- Move the scrollbar to its proper position
+scrollFrame.ScrollBar:ClearPoint("RIGHT")
+scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+
+-- Reference stuff
+scrollChild.CreateCheckBox = CreateCheckBox
+local child = scrollChild
+
+-- Create the nested subcategory
+local subcategory = scrollFrame
+subcategory.name = L["ABOUT"]
+subcategory.parent = "AllTheThings"
+InterfaceOptions_AddCategory(subcategory)
+
+-- CONTENT
+
 local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);
