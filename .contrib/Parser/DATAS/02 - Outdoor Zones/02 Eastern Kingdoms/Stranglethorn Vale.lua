@@ -2454,14 +2454,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 28.2, 77.5, STRANGLETHORN_VALE },
 					-- #endif
-					["groups"] = {
-						i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
+					["sym"] = {{"select", "itemID",
+						2846,	-- Pattern: Thick Murloc Armor (RECIPE!)
+						5788,	-- Pattern: Murloc Scale Bracers (RECIPE!)
+					}},
 				}),
 				n(734, {	-- Corporal Bluth <Camp Trader>
 					-- #if AFTER CATA

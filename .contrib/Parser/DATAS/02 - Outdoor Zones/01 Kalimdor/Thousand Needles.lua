@@ -2477,7 +2477,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 2.0.1", "removed 4.1.0" },	-- Moved to Trainer
 							["isLimited"] = true,
 						}),
-						i(5973, {	-- Pattern: Barbaric Leggings
+						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

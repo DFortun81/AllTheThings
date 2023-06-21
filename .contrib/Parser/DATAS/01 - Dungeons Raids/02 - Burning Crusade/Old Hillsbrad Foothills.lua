@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local THOMAS_YANCE_GROUPS = {
-	i(25725),	-- Pattern: Riding Crop
+	i(25725),	-- Pattern: Riding Crop (RECIPE!)
 	i(23321),	-- Recruit's Robe
 };
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {

@@ -2162,7 +2162,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.6, 42.6, WINTERSPRING },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(21548, {	-- Pattern: Stormshroud Gloves
+						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						-- #if BEFORE 4.0.3

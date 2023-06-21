@@ -2435,7 +2435,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18677, {	-- Zephyr Cloak
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(21548, {	-- Pattern: Stormshroud Gloves
+						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals

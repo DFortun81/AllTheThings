@@ -2239,10 +2239,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(17025, {	-- Pattern: Black Dragonscale Boots
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					}),
-					applyclassicphase(PHASE_THREE, i(19331, {	-- Pattern: Chromatic Gauntlets
+					applyclassicphase(PHASE_THREE, i(19331, {	-- Pattern: Chromatic Gauntlets (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
-					applyclassicphase(PHASE_THREE, i(19332, {	-- Pattern: Corehound Belt
+					applyclassicphase(PHASE_THREE, i(19332, {	-- Pattern: Corehound Belt (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
 					i(17022, {	-- Pattern: Corehound Boots

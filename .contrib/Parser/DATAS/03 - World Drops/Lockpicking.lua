@@ -76,7 +76,7 @@ root(ROOTS.WorldDrops, {
 				i(11969),	-- Jacinth Circle
 				i(6454),	-- Manual: Strong Anti-Venom
 				i(12006),	-- Meadow Ring
-				i(7360),	-- Pattern: Dark Leather Gloves
+				i(7360),	-- Pattern: Dark Leather Gloves (RECIPE!)
 				i(5972),	-- Pattern: Fine Leatheere Pants
 				i(2601),	-- Pattern: Gray Woolen Robe
 				i(7092),	-- Pattern: Hands of Darkness
@@ -161,7 +161,7 @@ root(ROOTS.WorldDrops, {
 				i(7449),	-- Pattern: Dusky Leather Leggings
 				i(5774),	-- Pattern: Green Silk Pack
 				i(7450),	-- Pattern: Green Whelp Armor
-				i(4299),	-- Pattern: Guardian Armor
+				i(4299),	-- Pattern: Guardian Armor (RECIPE!)
 				i(3867),	-- Plans: Golden Iron Destroyer (RECIPE!)
 				i(3872),	-- Plans: Golden Scale Leggings (RECIPE!)
 				i(3611),	-- Plans: Green Iron Boots (RECIPE!)

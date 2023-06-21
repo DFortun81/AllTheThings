@@ -2610,7 +2610,7 @@ root(ROOTS.Zones, {
 							i(29689),	-- Pattern: Flamescale Leggings
 							i(24295),	-- Pattern: Golden Spellthread
 							i(24293),	-- Pattern: Silver Spellthread
-							i(25721),	-- Pattern: Vindicator's Armor Kit
+							i(25721),	-- Pattern: Vindicator's Armor Kit (RECIPE!)
 							i(23601),	-- Plans: Flamebane Bracers (RECIPE!)
 							i(23604),	-- Plans: Flamebane Breastplate (RECIPE!)
 							i(23603),	-- Plans: Flamebane Gloves (RECIPE!)
@@ -2645,7 +2645,7 @@ root(ROOTS.Zones, {
 							i(29684),	-- Pattern: Enchanted Felscale Boots
 							i(29682),	-- Pattern: Enchanted Felscale Gloves
 							i(29677),	-- Pattern: Enchanted Felscale Leggings
-							i(25722),	-- Pattern: Magister's Armor Kit
+							i(25722),	-- Pattern: Magister's Armor Kit (RECIPE!)
 							i(24292),	-- Pattern: Mystic Spellthread
 							i(24294),	-- Pattern: Runic Spellthread
 							i(23597),	-- Plans: Enchanted Adamantite Belt (RECIPE!)

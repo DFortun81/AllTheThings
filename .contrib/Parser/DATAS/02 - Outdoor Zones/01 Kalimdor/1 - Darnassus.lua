@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 8,
 					["groups"] = {
-						i(6710),	-- Pattern: Moonglow Vest
+						i(6710),	-- Pattern: Moonglow Vest (RECIPE!)
 					},
 				}),
 				q(3781, {	-- Morrowgrain Research (1/2)

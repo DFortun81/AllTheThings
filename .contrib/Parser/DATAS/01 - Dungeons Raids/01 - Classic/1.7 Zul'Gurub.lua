@@ -939,14 +939,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					["groups"] = {
 						applyclassicphase(PHASE_FIVE, i(20757)),	-- Formula: Brilliant Mana Oil (RECIPE!)
 						applyclassicphase(PHASE_FIVE, i(20756)),	-- Formula: Brilliant Wizard Oil (RECIPE!)
-						i(19772),	-- Pattern: Blood Tiger Breastplate
-						i(19773),	-- Pattern: Blood Tiger Shoulders
+						i(19772),	-- Pattern: Blood Tiger Breastplate (RECIPE!)
+						i(19773),	-- Pattern: Blood Tiger Shoulders (RECIPE!)
 						i(19766),	-- Pattern: Bloodvine Boots
 						i(19765),	-- Pattern: Bloodvine Leggings
 						i(19764),	-- Pattern: Bloodvine Vest
-						i(19771),	-- Pattern: Primal Batskin Bracers
-						i(19770),	-- Pattern: Primal Batskin Gloves
-						i(19769),	-- Pattern: Primal Batskin Jerkin
+						i(19771),	-- Pattern: Primal Batskin Bracers (RECIPE!)
+						i(19770),	-- Pattern: Primal Batskin Gloves (RECIPE!)
+						i(19769),	-- Pattern: Primal Batskin Jerkin (RECIPE!)
 						i(19776),	-- Plans: Bloodsoul Breastplate (RECIPE!)
 						i(19778),	-- Plans: Bloodsoul Gauntlets (RECIPE!)
 						i(19777),	-- Plans: Bloodsoul Shoulders (RECIPE!)

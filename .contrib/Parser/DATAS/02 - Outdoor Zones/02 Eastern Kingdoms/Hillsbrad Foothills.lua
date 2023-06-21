@@ -2940,7 +2940,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4355, {	-- Pattern: Icy Cloak
 							["isLimited"] = true,
 						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor
+						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(21219),	-- Recipe: Sagefish Deligh

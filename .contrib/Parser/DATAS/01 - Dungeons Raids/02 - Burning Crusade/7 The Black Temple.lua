@@ -125,7 +125,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32430, {	-- Pattern: Bracers of Shackled Souls
+					i(32430, {	-- Pattern: Bracers of Shackled Souls (RECIPE!)
 						-- #if AFTER CATA
 						["spellID"] = 52733,	-- Bracers of Shackled Souls
 						-- #else
