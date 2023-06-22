@@ -1098,8 +1098,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["races"] = ALLIANCE_ONLY,
 				-- #if BEFORE 3.0.0
 				["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
-				-- #endif
 				["repeatable"] = true,
+				-- #endif
 			}),
 			q(12306, {	-- Brew of the Month Club (H)
 				-- #if AFTER 3.0.0
@@ -1123,8 +1123,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["races"] = HORDE_ONLY,
 				-- #if BEFORE 3.0.0
 				["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
-				-- #endif
 				["repeatable"] = true,
+				-- #endif
 			}),
 			q(11117, {	-- Catch the Wild Wolpertinger! (A) [Non-EU Only!]
 				["qg"] = 23486,	-- Goldark Snipehunter
