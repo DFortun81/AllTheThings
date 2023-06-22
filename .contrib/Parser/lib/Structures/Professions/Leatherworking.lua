@@ -1,3 +1,121 @@
+--------------------
+-- LEATHERWORKING --
+--------------------
+--Leaving section as a comment as it may be totally wrong - NamexFace
+--[[
+	APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
+	r(2108,	{	-- Leatherworking (Apprentice)
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 1,
+	}),
+	r(3104,	{	-- Leatherworking (Journeyman)
+		["timeline"]={ "removed 8.0.1"},
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 2,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"]={"added 8.0.1"}})),	-- Leatherworking
+	n(ARMOR, {
+		r(3766),	-- Dark Leather Belt
+		r(2167),	-- Dark Leather Boots
+		r(2168),	-- Dark Leather Cloak
+		r(7135),	-- Dark Leather Pants
+		r(2161),	-- Embossed Leather Boots
+		r(2162),	-- Embossed Leather Cloak
+		r(3756),	-- Embossed Leather Gloves
+		r(3759),	-- Embossed Leather Pants
+		r(2160),	-- Embossed Leather Vest
+		r(3763),	-- Fine Leather Belt
+		r(2159),	-- Fine Leather Cloak
+		r(3761),	-- Fine Leather Tunic
+		r(9145),	-- Fletcher's Gloves
+		r(3753),	-- Handstitched Leather Belt
+		r(2149),	-- Handstitched Leather Boots
+		r(9059),	-- Handstitched Leather Bracers
+		r(9058),	-- Handstitched Leather Cloak
+		r(2153),	-- Handstitched Leather Pants
+		r(7126),	-- Handstitched Leather Vest
+		r(3764),	-- Hillman's Leather Gloves
+		r(3768),	-- Hillman's Shoulders
+		r(9065),	-- Light Leather Bracers
+		r(9068),	-- Light Leather Pants
+		r(9074),	-- Nimble Leather Gloves
+		r(2166),	-- Toughened Leather Armor
+		r(3770),	-- Toughened Leather Gloves
+	}),
+	n(MISC, {
+		r(3816),	-- Cured Light Hide
+		r(3817),	-- Cured Medium Hide
+		r(2152),	-- Light Armor Kit
+		r(2881),	-- Light Leather
+		r(2165),	-- Medium Armor Kit
+		r(20648),	-- Medium Leather
+	}),
+};
+EXPERT_ARTISAN_LEATHERWORKING = {
+	r(3811,	{	-- Leatherworking (Expert)
+		["timeline"]={ "removed 8.0.1"},
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 3,
+	}),
+	r(10662,	{	-- Leatherworking (Artisan)
+		["timeline"]={ "removed 8.0.1"},
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 4,
+	}),
+	n(ARMOR, {
+		r(6661),	-- Barbaric Harness
+		r(7151),	-- Barbaric Shoulders
+		r(24654),	-- Blue Dragonscale Leggings
+		r(10650),	-- Dragonscale Breastplate
+		r(10619),	-- Dragonscale Gauntlets
+		r(10656, {["timeline"]={ "removed 4.0.3"}}),	-- Dragonscale Leatherworking
+		r(9206),	-- Dusky Belt
+		r(9201),	-- Dusky Bracers
+		r(9196),	-- Dusky Leather Armor
+		r(10658, {["timeline"]={ "removed 4.0.3"}}),	-- Elemental Leatherworking
+		r(10647),	-- Feathered Breastplate
+		r(9198),	-- Frost Leather Cloak
+		r(10630),	-- Gauntlets of the Sea
+		r(24655),	-- Green Dragonscale Gauntlets
+		r(3774),	-- Green Leather Belt
+		r(3776),	-- Green Leather Bracers
+		r(7156),	-- Guardian Gloves
+		r(7147),	-- Guardian Pants
+		r(10632),	-- Helm of Fire
+		r(3760),	-- Hillman's Cloak
+		r(10558),	-- Nightscape Boots
+		r(10507),	-- Nightscape Headband
+		r(10548),	-- Nightscape Pants
+		r(10499),	-- Nightscape Tunic
+		r(19065),	-- Runic Leather Bracers
+		r(10660, {["timeline"]={ "removed 4.0.3"}}),	-- Tribal Leatherworking
+		r(10518),	-- Turtle Scale Bracers
+		r(10511),	-- Turtle Scale Breastplate
+		r(10552),	-- Turtle Scale Helm
+		r(10556),	-- Turtle Scale Leggings
+		r(10621),	-- Wolfshead Helm
+	}),
+	n(MISC,	{
+		r(3818),	-- Cured Heavy Hide
+		r(19047),	-- Cured Rugged Hide
+		r(10482),	-- Cured Thick Hide
+		r(3780),	-- Heavy Armor Kit
+		r(20649),	-- Heavy Leather
+		r(19058),	-- Rugged Armor Kit
+		r(22331),	-- Rugged Leather
+		r(10487),	-- Thick Armor Kit
+		r(20650),	-- Thick Leather
+	}),
+};
+]]--
 COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
 	i(67095, {	-- Pattern: Assassin's Chestplate
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
@@ -274,3 +392,47 @@ COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
 		["timeline"] = { "added 4.0.3.13287" },
 	}),
 };
+DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+	r(366239),	-- Dragon Isles Leatherworking
+	n(ARMOR, {
+		r(375103);	-- Pioneer's Leather Boots
+		r(375104);	-- Pioneer's Leather Wristguards
+		r(375105);	-- Pioneer's Leather Tunic
+		r(395863);	-- Pioneer's Practiced Belt
+		r(395864);	-- Pioneer's Practiced Cowl
+		r(395865);	-- Pioneer's Practiced Gloves
+		r(395867);	-- Pioneer's Practiced Leggings
+		r(395868);	-- Pioneer's Practiced Shoulderpads
+		r(375106);	-- Trailblazer's Scale Boots
+		r(375107);	-- Trailblazer's Scale Bracers
+		r(375108);	-- Trailblazer's Scale Vest
+		r(395839);	-- Trailblazer's Toughened Coif
+		r(395844);	-- Trailblazer's Toughened Chainbelt
+		r(395845);	-- Trailblazer's Toughened Grips
+		r(395847);	-- Trailblazer's Toughened Legguards
+		r(395851);	-- Trailblazer's Toughened Spikes
+	}),
+	filter(PROF_EQUIP, {
+		r(375188);	-- Alchemist's Hat
+		r(375182);	-- Durable Pack
+		r(375181);	-- Floral Basket
+		r(375184);	-- Jeweler's Cover
+		r(375185);	-- Protective Gloves
+		r(375186);	-- Resilient Smock
+		r(375183);	-- Skinner's Cap
+		r(375187);	-- Smithing Apron
+	}),
+	n(MISC, {
+		r(375178);	-- Earthshine Scales
+		r(375168);	-- Feral Hide Drums
+		r(375179);	-- Frostbite Scales
+		r(375174);	-- Mireslush Hide
+		r(389195);	-- Recraft Equipment
+		r(375164);	-- Reinforced Armor Kit
+		r(375173);	-- Stonecrust Hide
+		r(375159);	-- Fang Adornments
+	}),
+	n(WEAPONS, {
+		r(375102),	-- Bonewrought Crossbow
+	}),
+}));

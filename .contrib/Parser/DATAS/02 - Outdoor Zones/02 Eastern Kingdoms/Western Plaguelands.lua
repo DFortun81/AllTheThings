@@ -2505,10 +2505,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.0, 84.3, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(15741, {	-- Pattern: Stormshroud Pants
+						i(15741, {	-- Pattern: Stormshroud Pants (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15725, {	-- Pattern: Wicked Leather Gauntlets
+						i(15725, {	-- Pattern: Wicked Leather Gauntlets (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2633,7 +2633,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 				}),
 				-- #endif
-				i(15771, {	-- Pattern: Living Breastplate
+				i(15771, {	-- Pattern: Living Breastplate (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1813,	-- Decaying Horror
 				}),

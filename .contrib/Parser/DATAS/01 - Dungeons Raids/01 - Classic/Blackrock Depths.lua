@@ -2236,7 +2236,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					applyclassicphase(PHASE_THREE, i(19444, {	-- Formula: Enchant Weapon - Strength (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					})),
-					i(17025, {	-- Pattern: Black Dragonscale Boots
+					i(17025, {	-- Pattern: Black Dragonscale Boots (RECIPE!)
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					}),
 					applyclassicphase(PHASE_THREE, i(19331, {	-- Pattern: Chromatic Gauntlets (RECIPE!)
@@ -2245,7 +2245,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					applyclassicphase(PHASE_THREE, i(19332, {	-- Pattern: Corehound Belt (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
-					i(17022, {	-- Pattern: Corehound Boots
+					i(17022, {	-- Pattern: Corehound Boots (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					}),
 					i(17018, {	-- Pattern: Flarecore Gloves
@@ -2266,7 +2266,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					applyclassicphase(PHASE_THREE, i(19333, {	-- Pattern: Molten Belt (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
-					i(17023, {	-- Pattern: Molten Helm
+					i(17023, {	-- Pattern: Molten Helm (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					}),
 					applyclassicphase(PHASE_THREE, i(19208, {	-- Plans: Black Amnesty (RECIPE!)
@@ -2316,7 +2316,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					})),
 				}),
 				n(9499, {	-- Plugger Spazzring
-					i(15759),	-- Pattern:	Black Dragonscale Breastplate
+					i(15759),	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
 					i(13483),	-- Recipe: Transmute Fire to Earth
 					i(11325),	-- Dark Iron Ale Mug
 				}),
@@ -2340,10 +2340,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						8907,	-- Wrath Hammer Construct
 					},
 				}),
-				i(15781, {	-- Pattern: Black Dragonscale Leggings
+				i(15781, {	-- Pattern: Black Dragonscale Leggings (RECIPE!)
 					["cr"] = 8903,	-- Anvilrage Captain
 				}),
-				i(15770, {	-- Pattern: Black Dragonscale Shoulders
+				i(15770, {	-- Pattern: Black Dragonscale Shoulders (RECIPE!)
 					["cr"] = 8898,	-- Anvilrage Marshal
 				}),
 				i(11614, {	-- Plans: Dark Iron Mail (RECIPE!)

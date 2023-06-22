@@ -3414,7 +3414,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(21954, {	-- Design: Ring of Bitter Shadows
 							["isLimited"] = true,
 						}),
-						i(15756, {	-- Pattern: Runic Leather Headband
+						i(15756, {	-- Pattern: Runic Leather Headband (RECIPE!)
 							["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
 							["isLimited"] = true,
 						}),

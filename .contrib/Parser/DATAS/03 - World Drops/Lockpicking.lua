@@ -120,9 +120,9 @@ root(ROOTS.WorldDrops, {
 				i(16215),	-- Formula: Enchant Boots Greater Stamina (RECIPE!)
 				i(16218),	-- Formula: Enchant Bracer Superior Versatility / CLASSIC: Formula: Enchant Bracer - Superior Spirit (RECIPE!)
 				i(14494),	-- Pattern: Brightcloth Pants
-				i(15746),	-- Pattern: Chimeric Leggings
-				i(15755),	-- Pattern: Chimeric Vest
-				i(15743),	-- Pattern: Heavy Scorpid Belt
+				i(15746),	-- Pattern: Chimeric Leggings (RECIPE!)
+				i(15755),	-- Pattern: Chimeric Vest (RECIPE!)
+				i(15743),	-- Pattern: Heavy Scorpid Belt (RECIPE!)
 				i(14499),	-- Pattern: Mooncloth Bag
 				i(12689),	-- Plans: Radiant Breastplate (RECIPE!)
 				i(12695),	-- Plans: Radiant Gloves (RECIPE!)

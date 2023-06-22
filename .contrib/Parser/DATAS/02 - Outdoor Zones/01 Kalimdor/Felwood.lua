@@ -2775,7 +2775,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
-				i(15752, {	-- Pattern: Living Leggings
+				i(15752, {	-- Pattern: Living Leggings (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7158,	-- Deadwood Shaman
 				}),
@@ -2783,14 +2783,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 					["cr"] = 7112,	-- Jaedenar Cultist
 				}),
-				i(15754, {	-- Pattern: Warbear Woolies
+				i(15754, {	-- Pattern: Warbear Woolies (RECIPE!)
 					["timeline"] = { "removed 1.11.1.5462" },
 					["crs"] = {
 						7158,	-- Deadwood Shaman
 						7156,	-- Deadwood Den Watcher
 					},
 				}),
-				i(15744, {	-- Pattern: Wicked Leather Headband
+				i(15744, {	-- Pattern: Wicked Leather Headband (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 					["cr"] = 7107,	-- Jadefire Trickster
 				}),

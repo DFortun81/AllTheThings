@@ -1789,7 +1789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 7037,	-- Thaurissan Firewalker
 				}),
 				-- #if AFTER 10.0.5
-				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets
+				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets (RECIPE!)
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
 						 { 34.8, 36.3, BURNING_STEPPES },
@@ -1802,7 +1802,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7029,	-- Blackrock Battlemaster
 					},
 				}),
-				i(15748, {	-- Pattern: Heavy Scorpid Leggings
+				i(15748, {	-- Pattern: Heavy Scorpid Leggings (RECIPE!)
 					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
@@ -1815,7 +1815,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7029,	-- Blackrock Battlemaster
 					},
 				}),
-				i(15774, {	-- Pattern: Heavy Scorpid Shoulders
+				i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
 					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_10_0_5 },
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
@@ -1829,16 +1829,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #else
-				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets
+				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets (RECIPE!)
 					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 					["cr"] = 7025,	-- Blackrock Soldier
 				}),
-				i(15748, {	-- Pattern: Heavy Scorpid Leggings
+				i(15748, {	-- Pattern: Heavy Scorpid Leggings (RECIPE!)
 					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),
 				-- #if BEFORE 5.0.4
-				i(15774, {	-- Pattern: Heavy Scorpid Shoulders
+				i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
 					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_10_0_5 },
 					-- #if BEFORE 4.0.3
 					["coord"] = { 41.8, 37.0, BURNING_STEPPES },
@@ -1847,7 +1847,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #endif
-				i(15727, {	-- Pattern: Heavy Scorpid Vest
+				i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
 					["timeline"] = { ADDED_10_0_5 },
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
@@ -1860,7 +1860,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7029,	-- Blackrock Battlemaster
 					},
 				}),
-				i(15732, {	-- Pattern: Volcanic Leggings
+				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7035,	-- Firegut Brute
 				}),

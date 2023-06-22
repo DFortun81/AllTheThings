@@ -2294,7 +2294,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16221, {	-- Formula: Enchant Chest - Major Health (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15740, {	-- Pattern: Frostsaber Boots
+						i(15740, {	-- Pattern: Frostsaber Boots (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(14526),	-- Pattern: Mooncloth
@@ -2474,15 +2474,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10664,	-- Scryer
 					},
 				}),
-				i(15761, {	-- Pattern: Frostsaber Gloves
+				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
 					["timeline"] = { "removed 7.3.5" },
 					["cr"] = 7441,	-- Winterfall Totemic
 				}),
-				i(15747, {	-- Pattern: Frostsaber Leggings
+				i(15747, {	-- Pattern: Frostsaber Leggings (RECIPE!)
 					["timeline"] = { "removed 7.3.5" },
 					["cr"] = 7440,	-- Winterfall Den Watcher
 				}),
-				i(15779, {	-- Pattern: Frostsaber Tunic
+				i(15779, {	-- Pattern: Frostsaber Tunic (RECIPE!)
 					["timeline"] = { "removed 7.3.5" },
 					["cr"] = 7438,	-- Winterfall Ursa
 				}),

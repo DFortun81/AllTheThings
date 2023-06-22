@@ -3607,9 +3607,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(8387),	-- Pattern: Big Voodoo Mask (RECIPE!)
 			i(8389),	-- Pattern: Big Voodoo Pants (RECIPE!)
 			i(8386),	-- Pattern: Big Voodoo Robe (RECIPE!)
-			i(15737),	-- Pattern: Chimeric Boots
-			i(15746),	-- Pattern: Chimeric Leggings
-			i(15755),	-- Pattern: Chimeric Vest
+			i(15737),	-- Pattern: Chimeric Boots (RECIPE!)
+			i(15746),	-- Pattern: Chimeric Leggings (RECIPE!)
+			i(15755),	-- Pattern: Chimeric Vest (RECIPE!)
 			i(8384),	-- Pattern: Comfortable Leather Hat (RECIPE!)
 			i(7360),	-- Pattern: Dark Leather Gloves (RECIPE!)
 			i(4296),	-- Pattern: Dark Leather Shoulders (RECIPE!)
@@ -3625,25 +3625,25 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(5974),	-- Pattern: Guardian Cloak (RECIPE!)
 			i(4300),	-- Pattern: Guardian Leather Bracers (RECIPE!)
 			i(7364),	-- Pattern: Heavy Earthen Gloves
-			i(15743),	-- Pattern: Heavy Scorpid Belt
+			i(15743),	-- Pattern: Heavy Scorpid Belt (RECIPE!)
 			i(4294),	-- Pattern: Hillman's Belt (RECIPE!)
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
 			i(7363),	-- Pattern: Pilferer's Gloves
 			i(7288),	-- Pattern: Rugged Leather Pants (RECIPE!)
-			i(15745, {	-- Pattern: Runic Leather Belt
+			i(15745, {	-- Pattern: Runic Leather Belt (RECIPE!)
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
 			}),
-			i(15731, {	-- Pattern: Runic Leather Gauntlets
+			i(15731, {	-- Pattern: Runic Leather Gauntlets (RECIPE!)
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
 			}),
-			i(15765, {	-- Pattern: Runic Leather Pants
+			i(15765, {	-- Pattern: Runic Leather Pants (RECIPE!)
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
 			}),
 			i(7453),	-- Pattern: Swift Boots (RECIPE!)
 			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
-			i(15742),	-- Pattern: Warbear Harness
+			i(15742),	-- Pattern: Warbear Harness (RECIPE!)
 			i(2407),	-- Pattern: White Leather Jerkin (RECIPE!)
-			i(15757, {	-- Pattern: Wicked Leather Pants
+			i(15757, {	-- Pattern: Wicked Leather Pants (RECIPE!)
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
 			}),
 		}),

@@ -192,6 +192,75 @@ i(0, 10660);-- Tribal Leatherworking (4.0.3)
 i(8388, 10550);	-- Nightscape Cloak
 
 ------------------
+-- PATCH 1.1.2 --
+------------------
+-- TRAINER --
+i(0, 19047);	-- Cured Rugged Hide
+i(0, 20649);	-- Heavy Leather
+i(0, 20648);	-- Medium Leather
+i(0, 19058);	-- Rugged Armor Kit
+i(0, 19065);	-- Runic Leather Bracers
+i(0, 20650);	-- Thick Leather
+-- ITEM --
+i(17025, 20855);	-- Black Dragonscale Boots
+i(15759, 19085);	-- Black Dragonscale Breastplate
+i(15781, 19107);	-- Black Dragonscale Leggings
+i(15770, 19094);	-- Black Dragonscale Shoulders
+i(15737, 19063);	-- Chimeric Boots
+i(15746, 19073);	-- Chimeric Leggings
+i(15755, 19081);	-- Chimeric Vest
+i(17022, 20853);	-- Corehound Boots
+i(15758, 19084);	-- Devilsaur Gauntlets
+i(15772, 19097);	-- Devilsaur Leggings
+i(15740, 19066);	-- Frostsaber Boots
+i(15743, 19070);	-- Heavy Scorpid Belt
+i(15724, 19048);	-- Heavy Scorpid Bracers
+i(15738, 19064);	-- Heavy Scorpid Gauntlets
+i(15762, 19088);	-- Heavy Scorpid Helm
+i(15748, 19075);	-- Heavy Scorpid Leggings
+i(15735, 19062);	-- Ironfeather Shoulders
+i(15734, 19061);	-- Living Shoulders
+i(17023, 20854);	-- Molten Helm
+i(15741, 19067);	-- Stormshroud Pants
+i(15749, 19076);	-- Volcanic Breastplate
+i(15775, 19101);	-- Volcanic Shoulders
+i(15742, 19068);	-- Warbear Harness
+i(15725, 19049);	-- Wicked Leather Gauntlets
+-- REMOVED --
+i(15751, 19077);	-- Blue Dragonscale Breastplate (4.0.3)
+i(15763, 19089);	-- Blue Dragonscale Shoulders (4.0.3)
+i(15729, 19053);	-- Chimeric Gloves (4.0.3)
+i(15761, 19087);	-- Frostsaber Gloves (7.3.5)
+i(15747, 19074);	-- Frostsaber Leggings (7.3.5)
+i(15779, 19104);	-- Frostsaber Tunic (7.3.5)
+i(15726, 19050);	-- Green Dragonscale Breastplate (4.0.3)
+i(15733, 19060);	-- Green Dragonscale Leggings (4.0.3)
+i(15774, 19100);	-- Heavy Scorpid Shoulders (6.0.2)
+i(15727, 19051);	-- Heavy Scorpid Vest (4.0.3)
+i(15760, 19086);	-- Ironfeather Breastplate (4.0.3)
+i(15771, 19095);	-- Living Breastplate (4.0.3)
+i(15752, 19078);	-- Living Leggings (4.0.3)
+i(15730, 19054);	-- Red Dragonscale Breastplate (6.0.2)
+i(15776, 19102);	-- Runic Leather Armor (4.0.3)
+i(15745, 19072);	-- Runic Leather Belt (5.0.4)
+i(15731, 19055);	-- Runic Leather Gauntlets (5.0.4)
+i(15756, 19082);	-- Runic Leather Headband (2.3.0)
+i(15765, 19091);	-- Runic Leather Pants (5.0.4)
+i(15777, 19103);	-- Runic Leather Shoulders (4.0.3)
+i(15732, 19059);	-- Volcanic Leggings (4.0.3)
+i(15754, 19080);	-- Warbear Woolies (1.11.1)
+i(15773, 19098);	-- Wicked Leather Armor (4.0.3)
+i(15768, 19092);	-- Wicked Leather Belt (2.0.1)
+i(15728, 19052);	-- Wicked Leather Bracers (4.0.3)
+i(15744, 19071);	-- Wicked Leather Headband (4.0.3)
+i(15757, 19083);	-- Wicked Leather Pants (5.0.4)
+-- UNSURE --
+i(0, 19106);	-- Onyxia Scale Breastplate (Old) (4.0.3?)	-- (Reported as never implemented in LW.lua professions, exists on Classic-WotLK Wowhead. - NamexFace)
+i(15769, 19093);	-- Onyxia Scale Cloak	-- Removed with "rerelease", noted by players to still be obtainable via quest? -NamexFace
+i(15753, 19079);	-- Stormshroud Armor	-- Removed and added with TW
+i(15764, 19090);	-- Stormshroud Shoulders	-- Removed and added with TW
+
+------------------
 -- PATCH 1.11.1 --
 ------------------
 -- ITEM --
@@ -249,6 +318,25 @@ i(0, 28223);	-- Icy Scale Gauntlets
 i(0, 28221);	-- Polar Bracers
 i(0, 28220);	-- Polar Gloves
 i(0, 28219);	-- Polar Tunic
+
+------------------
+-- PATCH 2.0.0 --
+------------------
+--ITEM --
+i(29213, 32498);	-- Felstalker Belt [A]
+i(25738, 32498);	-- Felstalker Belt [H]
+i(29214, 32499);	-- Felstalker Bracers [A]
+i(25739, 32499);	-- Felstalker Bracers [H]
+i(29215, 32500);	-- Felstalker Breastplate [A]
+i(25740, 32500);	-- Felstalker Breastplate [H]
+i(29217, 32501);	-- Netherfury Belt [A]
+i(25741, 32501);	-- Netherfury Belt [H]
+i(29218, 32503);	-- Netherfury Boots [A]
+i(25743, 32503);	-- Netherfury Boots [H]
+i(29219, 32502);	-- Netherfury Leggings [A]
+i(25742, 32502);	-- Netherfury Leggings [H]
+-- REMOVED --
+i(0, 32549);	-- Leatherworking (Master) (8.0.1)
 
 ------------------
 -- PATCH 2.0.1 --
@@ -1251,7 +1339,7 @@ i(187749, 359669);	-- Crafter's Mark of the First Ones
 i(187785, 359702);	-- Vestige of the Eternal
 
 ------------------
--- PATCH 10.0.0 --
+-- PATCH 10.0.2 --
 ------------------
 -- TRAINER --
 i(0, 366249);	-- Dragon Isles Leatherworking

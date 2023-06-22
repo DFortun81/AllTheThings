@@ -2807,7 +2807,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(7451, {	-- Pattern: Green Whelp Bracers
 							["isLimited"] = true,
 						}),
-						i(15734, {	-- Pattern: Living Shoulders
+						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(8409, {	-- Pattern: Nightscape Shoulders (RECIPE!)
@@ -2851,7 +2851,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(7451, {	-- Pattern: Green Whelp Bracers
 							["isLimited"] = true,
 						}),
-						i(15734, {	-- Pattern: Living Shoulders
+						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(8385, {	-- Pattern: Turtle Scale Gloves (RECIPE!)
@@ -2867,7 +2867,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(7451, {	-- Pattern: Green Whelp Bracers
 							["isLimited"] = true,
 						}),
-						i(15734, {	-- Pattern: Living Shoulders
+						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(8385, {	-- Pattern: Turtle Scale Gloves (RECIPE!)

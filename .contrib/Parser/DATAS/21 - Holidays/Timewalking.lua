@@ -2381,7 +2381,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),
-					i(15764, {	-- Pattern: Stormshroud Shoulders
+					i(15764, {	-- Pattern: Stormshroud Shoulders (RECIPE!)
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),
@@ -2389,7 +2389,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),
-					i(15753, {	-- Pattern: Stormshroud Armor
+					i(15753, {	-- Pattern: Stormshroud Armor (RECIPE!)
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),

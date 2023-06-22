@@ -1788,11 +1788,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.2, 7.8, UNGORO_CRATER },
 					-- #endif
 					["groups"] = {
-						i(15758, {	-- Pattern: Devilsaur Gauntlets
+						i(15758, {	-- Pattern: Devilsaur Gauntlets (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #if AFTER CATA
-						i(15772, {	-- Pattern: Devilsaur Leggings
+						i(15772, {	-- Pattern: Devilsaur Leggings (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #endif
@@ -1848,7 +1848,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				-- #if BEFORE 4.0.3
-				i(15772, {	-- Pattern: Devilsaur Leggings
+				i(15772, {	-- Pattern: Devilsaur Leggings (RECIPE!)
 					["crs"] = {
 						9477,	-- Cloned Ooze
 						6559,	-- Glutinous Ooze

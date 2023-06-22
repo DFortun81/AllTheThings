@@ -629,7 +629,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainer
 							["cr"] = 10384,  -- Spectral Citizen
 						}),
-						i(15777, {	-- Pattern: Runic Leather Shoulders
+						i(15777, {	-- Pattern: Runic Leather Shoulders (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainer
 							["cr"] = 10425,	-- Crimson Battle Mage
 						}),
@@ -926,7 +926,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
 							["cr"] = 10398,	-- Thuzadin Shadowcaster
 						}),
-						i(15768, {	-- Pattern: Wicked Leather Belt
+						i(15768, {	-- Pattern: Wicked Leather Belt (RECIPE!)
 							["timeline"] = { "removed 2.0.1" },	-- Added to Leatherworking Trainers
 							["cr"] = 10406,	-- Ghoul Ravener
 						}),

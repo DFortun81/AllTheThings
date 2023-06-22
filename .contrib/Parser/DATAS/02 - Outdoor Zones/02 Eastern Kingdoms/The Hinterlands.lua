@@ -1858,7 +1858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(12958, {	-- Gigget Zipcoil <Trade Supplies>
 					["coord"] = { 34.4, 38.6, THE_HINTERLANDS },
 					["groups"] = {
-						i(15735, {	-- Pattern: Ironfeather Shoulders
+						i(15735, {	-- Pattern: Ironfeather Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1943,7 +1943,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8704, {	-- OOX-09/HL Distress Beacon
 					["description"] = "Can drop off of any mob in the zone. Much higher chance to drop from the elites.",
 				}),
-				i(15760, {	-- Pattern: Ironfeather Breastplate
+				i(15760, {	-- Pattern: Ironfeather Breastplate (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2644,	-- Vilebranch Hideskinner
 				}),
