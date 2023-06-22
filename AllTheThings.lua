@@ -13211,10 +13211,7 @@ fields.trackable = headerFields.trackableAsQuest;
 app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
 
 -- Event Lib (using the Events Module!)
-local fields = RawCloneData(headerFields);
-for field,method in pairs(app.Modules.Events.Fields) do
-	fields[field] = method;
-end
+local fields = RawCloneData(headerFields, app.Modules.Events.Fields);
 app.BaseHeaderWithEvent = app.BaseObjectFields(fields, "BaseHeaderWithEvent");
 
 -- Automatic Type Header
