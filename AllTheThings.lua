@@ -5123,12 +5123,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if costCollectibles and #costCollectibles > 0 then
 						local costAmounts = app.BuildCostTable(costCollectibles, paramB);
 						local currencyCount, CheckCollectible = 0, app.CheckCollectible;
-						local entryGroup, collectible, collected;
+						local entryGroup, collectible;
 						for _,costEntry in ipairs(entries) do
 							entryGroup = costEntry.group;
-							collectible, collected = CheckCollectible(entryGroup);
+							collectible = CheckCollectible(entryGroup);
 							-- anything shown in the tooltip which is not collected according to the user's settings should be considered for the cost
-							if collectible and not collected then
+							if collectible then
 								-- app.PrintDebug("Purchasable",entryGroup.hash,collectible,collected,entryGroup.total - entryGroup.progress,"x",costAmounts[entryGroup.hash])
 								currencyCount = currencyCount + (costAmounts[entryGroup.hash] or 0);
 							end
@@ -7461,6 +7461,8 @@ end -- Refresh Functions
 local ObjectDefaults = {
 	["progress"] = 0,
 	["total"] = 0,
+	["costProgress"] = 0,
+	["costTotal"] = 0,
 };
 local getmetatable =
 	  getmetatable;
@@ -7480,14 +7482,6 @@ local ObjectFunctions = {
 	-- default 'text' should be a valid link or the colorized 'name'
 	["text"] = function(t)
 		return t.link or app.TryColorizeName(t, t.name);
-	end,
-	-- the total cost of a Thing is based on it being collectible as a cost or not
-	["costTotal"] = function(t)
-		return t.collectibleAsCost and 1 or 0;
-	end,
-	-- the cost progress is currently always 0 since it is not considered a cost once it's no longer needed
-	["costProgress"] = function(t)
-		return 0;
 	end,
 	-- whether something is marked as repeatable in some way
 	["repeatable"] = function(t)
@@ -7599,6 +7593,17 @@ end
 app.WrapObject = function(t, base)
 	return setmetatable({ __base=t}, base);
 end
+-- Clones an Object, fills any symlinks, builds groups, and does an Update pass before returning the Object
+app.RecreateObject = function(t)
+	local obj = CreateObject(t);
+	-- fill the copied Item's symlink if any
+	FillSymLinks(obj);
+	-- Build the Item's groups if any
+	BuildGroups(obj);
+	-- Update the group
+	app.TopLevelUpdateGroup(obj);
+	return obj;
+end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField)
 	local cache, _t, v = {};
@@ -7652,145 +7657,6 @@ app.CreateCache = function(idField)
 		end
 	end;
 	return cache;
-end
--- Function which returns both collectible/collected based on a given 'ref' Thing, which has been previously determined as a
--- possible collectible without regard to filtering
-local function CheckCollectible(ref)
-	-- don't include groups which do not meet the current character requirements
-	if app.RecursiveGroupRequirementsFilter(ref) then
-		local settingsChange = ref._SettingsRefresh;
-		-- previously checked without Settings changed
-		if settingsChange then
-			if app._SettingsRefresh == settingsChange then
-				-- app.PrintDebug("CC:Cached",ref.hash,ref._CheckCollectible)
-				return ref._CheckCollectible;
-			end
-		end
-		-- app.PrintDebug("CC:Check",ref.hash)
-		ref._SettingsRefresh = app._SettingsRefresh;
-		ref._CheckCollectible = nil;
-		-- app.PrintDebug("CheckCollectible",ref.hash)
-		-- Used as a cost for something which is collectible itself and not collected
-		if ref.collectible and not ref.collected then
-			-- app.PrintDebug("Cost via Collectible",ref.hash)
-			ref._CheckCollectible = true;
-			return true;
-		end
-		-- Used as a cost for something which is collectible as a cost itself
-		if ref.collectibleAsCost then
-			-- app.PrintDebug("Cost via collectibleAsCost",ref.hash)
-			ref._CheckCollectible = true;
-			return true;
-		end
-		-- If this group has sub-groups
-		if ref.g then
-			-- Update the group
-			app.TopLevelUpdateGroup(ref);
-			-- Check the total
-			if ref.progress < ref.total then
-				-- app.PrintDebug("Cost via .g progress",ref.hash)
-				ref._CheckCollectible = true;
-				return true;
-			end
-		end
-		-- If this group has a symlink, generate the symlink into a cached version of the ref and see if it has collectibles
-		if ref.sym then
-			-- app.PrintDebug("Checking symlink...",ref.hash)
-			local refCache = ref._cache;
-			if refCache then
-				-- Already have a cached version of this reference with populated content
-				local expItem = refCache.GetCachedField(ref, "_populated");
-				if expItem then
-					-- Update the group
-					app.TopLevelUpdateGroup(expItem);
-					-- Check the total
-					if expItem.progress < expItem.total then
-						-- app.PrintDebug("Cost via cached sym progress",ref.hash)
-						ref._CheckCollectible = true;
-						return true;
-					end
-					-- Nothing missing currently
-					return;
-				end
-				-- app.PrintDebug("Filling symlink...",ref.hash)
-				-- app.PrintTable(ref)
-				-- create a cached copy of this ref if it is an Item
-				expItem = CreateObject(ref);
-				-- fill the copied Item's symlink if any
-				FillSymLinks(expItem);
-				-- Build the Item's groups if any
-				BuildGroups(expItem);
-				-- Update the group
-				app.TopLevelUpdateGroup(expItem);
-				-- save it in the Item cache in case something else is able to purchase this reference
-				refCache.SetCachedField(ref, "_populated", expItem);
-				-- app.PrintDebug("Fresh symlink",expItem.hash,expItem.progress,expItem.total)
-				-- Check the total
-				if expItem.progress < expItem.total then
-					-- app.PrintDebug("Cost via fresh sym progress",ref.hash)
-					ref._CheckCollectible = true;
-					return true;
-				end
-			end
-			-- print("cannot determine collectibility")
-			-- print("cost",t.key,t.key and t[t.key])
-			-- app.PrintTable(ref)
-			-- print(ref.__type, ref._cache)
-			-- return false,false;
-		end
-	end
-end
-app.CheckCollectible = CheckCollectible;
--- Returns whether 't' should be considered collectible based on the set of costCollectibles already assigned to this 't'
-app.CollectibleAsCost = function(t)
-	local collectibles = t.costCollectibles;
-	-- literally nothing to collect with 't' as a cost, so don't process the logic anymore
-	if not collectibles or #collectibles == 0 then
-		t.collectibleAsCost = false;
-		return;
-	end
-	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
-	if not app.MODE_DEBUG_OR_ACCOUNT then
-		local parent = rawget(t, "parent");
-		if parent and parent.questID and parent.saved then
-			-- app.PrintDebug("CollectibleAsCost:t.parent.saved",t.hash)
-			return;
-		end
-	end
-	local settingsChange = t._SettingsRefresh;
-	-- previously checked without Settings changed
-	if settingsChange then
-		if app._SettingsRefresh == settingsChange then
-			-- app.PrintDebug("CAC:Cached",t.hash,t._CheckCollectible)
-			return t._CheckCollectible;
-		end
-	end
-	-- app.PrintDebug("CAC:Check",t.hash)
-	t._SettingsRefresh = app._SettingsRefresh;
-	t._CheckCollectible = nil;
-	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
-	t.collectibleAsCost = false;
-	-- check the collectibles if any are considered collectible currently
-	local costNeeded;
-	for _,ref in ipairs(collectibles) do
-		-- Use the common collectibility check logic
-		costNeeded = CheckCollectible(ref);
-		if costNeeded then
-			t._CheckCollectible = true;
-			t.collectibleAsCost = nil;
-			-- app.PrintDebug("CollectibleAsCost:true",t.hash,"from",ref.hash)
-			-- Found something collectible for t, make sure t is actually obtainable as well
-			-- Make sure this thing can actually be collectible via hierarchy
-			-- if GetRelativeValue(t, "altcollected") then
-			--	-- literally have not seen this message in months, maybe is pointless...
-			-- 	app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
-			-- 	return;
-			-- end
-			return true;
-		end
-	end
-	-- app.PrintDebug("CollectibleAsCost:nil",t.hash)
-	t.collectibleAsCost = nil;
 end
 end)();
 
@@ -18806,6 +18672,7 @@ function app:GetDataCache()
 	return rootData;
 end
 
+local LastSettingsChangeUpdate;
 local function RefreshData()
 	-- app.PrintDebug("RefreshData",app.refreshDataForce and "FORCE" or "LAZY", app.refreshDataGot and "COLLECTED" or "PASSIVE")
 
@@ -18818,6 +18685,13 @@ local function RefreshData()
 
 		-- Reapply custom collects
 		app.RefreshCustomCollectibility();
+
+		if LastSettingsChangeUpdate ~= app._SettingsRefresh then
+			LastSettingsChangeUpdate = app._SettingsRefresh;
+
+			-- Trigger Cost Update Runner
+			app.UpdateCosts();
+		end
 
 		-- Forcibly update the windows.
 		app:UpdateWindows(true, app.refreshDataGot);

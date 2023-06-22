@@ -284,6 +284,7 @@ settings.Initialize = function(self)
 		app:Synchronize(true);
 	end
 
+	app._SettingsRefresh = GetTimePreciseSec();
 	settings._Initialize = true;
 end
 local function rawcopy(source, copy)
@@ -989,7 +990,7 @@ settings.CreateScrollFrame = function(self)
 	child:SetPoint("LEFT");
 	child.CreateCheckBox = CreateCheckBox;
 	child.ScrollContainer = scrollFrame;
-	
+
 	local scrollbar;
 	if SCROLL_FRAME_SCROLL_BAR_TEMPLATE then
 		scrollbar = CreateFrame("EventFrame", settings:GetName().."SB"..settings.UniqueCounter.AddScrollbar, scrollFrame, SCROLL_FRAME_SCROLL_BAR_TEMPLATE);
@@ -997,7 +998,7 @@ settings.CreateScrollFrame = function(self)
 		scrollbar:SetPoint("BOTTOMRIGHT", scrollFrame, -8, 0);
 		scrollbar:SetHideIfUnscrollable(false);
 		scrollbar:SetHideTrackIfThumbExceedsTrack(false);
-		
+
 		local CurrentValue, MaxValue = 0, 100;
 		scrollbar:SetPanExtentPercentage(0.25);
 		scrollbar:SetScrollPercentage(0);
@@ -1008,7 +1009,7 @@ settings.CreateScrollFrame = function(self)
 		scrollFrame:SetScript("OnMouseWheel", function(self, delta)
 			scrollbar:ScrollStepInDirection(-delta);
 		end);
-		
+
 		child.SetMaxScroll = function(frame, maxValue)
 			MaxValue = maxValue;
 			scrollbar:SetVisibleExtentPercentage(100 / maxValue);
@@ -1042,8 +1043,8 @@ settings.CreateScrollFrame = function(self)
 			scrollbar:SetValue(0);
 		end;
 	end
-	
-	if settings.MostRecentTab then 
+
+	if settings.MostRecentTab then
 		table.insert(settings.MostRecentTab.objects, scrollbar);
 		table.insert(settings.MostRecentTab.objects, scrollFrame);
 		table.insert(settings.MostRecentTab.objects, child);
@@ -1328,8 +1329,8 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		-- lazy refresh instead if ATT is ready
 		if app.IsReady then
-		app:RefreshData(true,nil,true);
-	end
+			app:RefreshData(true,nil,true);
+		end
 	end
 
 	-- ensure the settings pane itself is refreshed
