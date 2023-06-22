@@ -1618,13 +1618,13 @@ app.MergeSkipFields = {
 	["visible"] = true,
 	["modItemID"] = true,
 	["rawlink"] = true,
+	["sourceIgnored"] = true,
 	-- 1 -> only when cloning
 	["e"] = 1,
 	["u"] = 1,
 	["pvp"] = 1,
 	["pb"] = 1,
 	["requireSkill"] = 1,
-	["sourceIgnored"] = 1,
 };
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
 app.SourceSpecificFields = {
