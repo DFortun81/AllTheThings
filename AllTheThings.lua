@@ -18858,12 +18858,12 @@ function app:BuildSearchResponse(field, value, clear)
 		if cacheContainer then
 			BuildSearchResponseViaCacheContainer(cacheContainer, value, clear);
 		elseif value then
-			-- app.PrintDebug("BSR:FieldValue",MainRoot and #MainRoot,field,value,clear)
-			AddSearchGroupsByFieldValue(MainRoot, field, value);
+			-- app.PrintDebug("BSR:FieldValue",MainRoot.g and #MainRoot.g,field,value,clear)
+			AddSearchGroupsByFieldValue(MainRoot.g, field, value);
 			BuildClonedHierarchy(SearchGroups, clear);
 		else
-			-- app.PrintDebug("BSR:Field",MainRoot and #MainRoot,field,clear)
-			AddSearchGroupsByField(MainRoot, field);
+			-- app.PrintDebug("BSR:Field",MainRoot.g and #MainRoot.g,field,clear)
+			AddSearchGroupsByField(MainRoot.g, field);
 			BuildClonedHierarchy(SearchGroups, clear);
 		end
 		return ClonedHierarchyGroups;
