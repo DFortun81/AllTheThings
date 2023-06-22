@@ -36,6 +36,7 @@ settings.name = app:GetName();
 settings.MostRecentTab = nil;
 settings.Tabs = {};
 settings.TabsByName = {};
+settings.Objects = {}
 settings.Callback = app.CallbackHandlers.Callback;
 settings:SetBackdrop({
 	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
@@ -203,30 +204,30 @@ local TooltipSettingsBase = {
 	},
 };
 
-local OnClickForTab = function(self, button, id)
-	local id = id or self:GetID();
-	local parent = self and self:GetParent() or settings;
-	PanelTemplates_SetTab(parent, id);
-	-- print("CLICKED TAB", id, self and self:GetText());
-	for i,tab in ipairs(parent.Tabs) do
-		if i == id then
-			for j,o in ipairs(tab.objects) do
-				-- print(":Show()",o.text or (o.GetText and o:GetText() or (o.Text and o.Text.GetText and o.Text:GetText())))
-				o:Show();
-			end
-			if tab.OnRefresh then tab:OnRefresh(); end
-		else
-			for j,o in ipairs(tab.objects) do
-				o:Hide();
-			end
-		end
-	end
-end;
+-- local OnClickForTab = function(self, button, id)
+-- 	local id = id or self:GetID();
+-- 	local parent = self and self:GetParent() or settings;
+-- 	PanelTemplates_SetTab(parent, id);
+-- 	-- print("CLICKED TAB", id, self and self:GetText());
+-- 	for i,tab in ipairs(parent.Tabs) do
+-- 		if i == id then
+-- 			for j,o in ipairs(tab.objects) do
+-- 				-- print(":Show()",o.text or (o.GetText and o:GetText() or (o.Text and o.Text.GetText and o.Text:GetText())))
+-- 				o:Show();
+-- 			end
+-- 			if tab.OnRefresh then tab:OnRefresh(); end
+-- 		else
+-- 			for j,o in ipairs(tab.objects) do
+-- 				o:Hide();
+-- 			end
+-- 		end
+-- 	end
+-- end;
 
 local RawSettings;
 settings.Initialize = function(self)
-	PanelTemplates_SetNumTabs(self, self.numTabs);
-	OnClickForTab(nil, "AUTO", 1);
+	--PanelTemplates_SetNumTabs(self, self.numTabs);
+	--OnClickForTab(nil, "AUTO", 1);
 
 	-- Assign the default settings
 	if not settings:ApplyProfile() then
@@ -673,11 +674,8 @@ do
 local function Refresh(self)
 	-- app.PrintDebug("Settings.Refresh")
 	settings.SkipAutoRefreshCheckbox:OnRefresh();
-	for i,tab in ipairs(self.Tabs) do
-		if tab.OnRefresh then tab:OnRefresh(); end
-		for j,o in ipairs(tab.objects) do
-			if o.OnRefresh then o:OnRefresh(); end
-		end
+	for i,object in ipairs(self.Objects) do
+		if object.OnRefresh then object:OnRefresh(); end
 	end
 	self.__Refreshing = nil;
 end
@@ -738,7 +736,7 @@ settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 		text = "INVALID CHECKBOX";
 	end
 	local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "InterfaceOptionsCheckButtonTemplate");
-	if self.MostRecentTab then table.insert(self.MostRecentTab.objects, cb); end
+	table.insert(self.Objects, cb)
 	if OnClick then cb:SetScript("OnClick", OnClick); end
 	cb.OnRefresh = OnRefresh or OnRefreshCheckedDisabled;
 	cb.Text:SetText(text);
@@ -863,7 +861,7 @@ settings.CreateDropdown = function(self, opts, OnRefresh)
 	-- 	dropdown_name);
 	-- UIDROPDOWNMENU_OPEN_MENU = nil;
 
-	table.insert(self.MostRecentTab.objects, dropdown);
+	table.insert(self.Objects, dropdown);
 	dropdown.OnRefresh = OnRefresh;
 
 	-- UIDropDownMenu_SetText(dropdown, default_val);
@@ -902,7 +900,7 @@ settings.CreateTextbox = function(self, opts, functions)
 	end
 	-- print("created custom EditBox using",template)
 
-	table.insert(self.MostRecentTab.objects, editbox);
+	table.insert(settings.Objects, editbox);
 
 	return editbox;
 	--[[ https://www.townlong-yak.com/framexml/live/go/BoxTemplate
@@ -960,7 +958,7 @@ settings.CreateButton = function(self, opts, functions)
 		f:SetATTTooltip(tooltip);
 	end
 
-	if self.MostRecentTab then table.insert(self.MostRecentTab.objects, f); end
+	table.insert(settings.Objects, f)
 	return f;
 end
 
@@ -1046,15 +1044,16 @@ settings.CreateScrollFrame = function(self)
 		end;
 	end
 	
-	if settings.MostRecentTab then 
-		table.insert(settings.MostRecentTab.objects, scrollbar);
-		table.insert(settings.MostRecentTab.objects, scrollFrame);
-		table.insert(settings.MostRecentTab.objects, child);
-	end
+	-- if settings.MostRecentTab then 
+	-- 	table.insert(settings.MostRecentTab.objects, scrollbar);
+	-- 	table.insert(settings.MostRecentTab.objects, scrollFrame);
+	-- 	table.insert(settings.MostRecentTab.objects, child);
+	-- end
 	return child;
 end
 
-settings.CreateOptionsScrollFrame = function(self)
+-- Create a scrollframe and nested subcategory
+settings.CreateOptionsPage = function(self, name)
 	-- Create the ScrollFrame
 	local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate")
 	local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
@@ -1072,10 +1071,21 @@ settings.CreateOptionsScrollFrame = function(self)
 
 	-- Reference stuff
 	scrollChild.CreateCheckBox = CreateCheckBox
+	scrollChild.CreateTextbox = settings.CreateTextbox
+	scrollChild.CreateScrollFrame = settings.CreateScrollFrame
+	scrollChild.CreateButton = settings.CreateButton
 
-	-- Return the scrollFrame
-	return scrollFrame, scrollChild
+	-- Create the nested subcategory
+	local subcategory = scrollFrame
+	subcategory.name = L[name]
+	subcategory.parent = "AllTheThings"
+	InterfaceOptions_AddCategory(subcategory)
+
+	-- Return the scrollable child
+	return scrollChild
 end
+
+
 
 end)();
 settings.ShowCopyPasteDialog = function(self)
@@ -1461,14 +1471,8 @@ end)();
 
 -- SETUP
 (function()
--- Create the scrollFrame
-local scrollFrame, child = settings:CreateOptionsScrollFrame()
-
--- Create the nested subcategory
-local subcategory = scrollFrame
-subcategory.name = L["FILTERS_TAB"]
-subcategory.parent = "AllTheThings"
-InterfaceOptions_AddCategory(subcategory)
+-- Create the page
+local child = settings:CreateOptionsPage("FILTERS_TAB")
 
 -- Creates a Checkbox used to designate tracking the specified 'trackingOption', based on tracking of 'parentTrackingOption' if specified
 -- localeKey: The prefix of the locale lookup value (i.e. HEIRLOOMS_UPGRADES)
@@ -1543,7 +1547,7 @@ end
 local ModeLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 ModeLabel:SetPoint("TOPLEFT", child, 0, 0)
 ModeLabel:Show()
-table.insert(settings.MostRecentTab.objects, ModeLabel)
+table.insert(settings.Objects, ModeLabel)	-- This label is the only one that needs refreshing
 ModeLabel.OnRefresh = function(self)
 	self:SetText(settings:GetModeString())
 end
@@ -1552,7 +1556,6 @@ local ModeExplainLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal"
 ModeExplainLabel:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -4)
 ModeExplainLabel:SetText(L["MODE_EXPLAIN_LABEL"])
 ModeExplainLabel:Show()
-table.insert(settings.MostRecentTab.objects, ModeExplainLabel)
 
 local AccountModeCheckBox = child:CreateCheckBox(L["ACCOUNT_MODE"],
 function(self)
@@ -1602,7 +1605,6 @@ AccountThingsLabel:SetPoint("LEFT", ModeLabel, 0, 0)
 AccountThingsLabel:SetPoint("TOP", AccountModeCheckBox, "BOTTOM", 0, -10)
 AccountThingsLabel:SetText(L["ACCOUNT_THINGS_LABEL"])
 AccountThingsLabel:Show()
-table.insert(settings.MostRecentTab.objects, AccountThingsLabel)
 AccountThingsLabel.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
 		self:SetAlpha(0.2)
@@ -1710,7 +1712,6 @@ GeneralThingsLabel:SetPoint("LEFT", ModeLabel, 0, 0)
 GeneralThingsLabel:SetPoint("TOP", ToysAccountWideCheckBox, "BOTTOM", 0, -10)
 GeneralThingsLabel:SetText(L["GENERAL_THINGS_LABEL"])
 GeneralThingsLabel:Show()
-table.insert(settings.MostRecentTab.objects, GeneralThingsLabel)
 GeneralThingsLabel.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
 		self:SetAlpha(0.2)
@@ -1769,7 +1770,6 @@ ExpansionThingsLabel:SetPoint("LEFT", ModeLabel, 0, 0)
 ExpansionThingsLabel:SetPoint("TOP", TitlesCheckBox, "BOTTOM", 0, -10)
 ExpansionThingsLabel:SetText(L["EXPANSION_THINGS_LABEL"])
 ExpansionThingsLabel:Show()
-table.insert(settings.MostRecentTab.objects, ExpansionThingsLabel)
 ExpansionThingsLabel.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
 		self:SetAlpha(0.2)
@@ -1813,7 +1813,6 @@ ExtraThingsLabel:SetPoint("LEFT", ModeLabel, 0, 0)
 ExtraThingsLabel:SetPoint("TOP", DrakewatcherManuscriptsCheckBox, "BOTTOM", 0, -10)
 ExtraThingsLabel:SetText(L["EXTRA_THINGS_LABEL"])
 ExtraThingsLabel:Show()
-table.insert(settings.MostRecentTab.objects, ExtraThingsLabel)
 -- Halloween Easter Egg
 ExtraThingsLabel.OnRefresh = function(self)
     C_Calendar.OpenCalendar()
@@ -1930,7 +1929,6 @@ GeneralFiltersLabel:SetPoint("TOPLEFT", AccountThingsLabel, 320, 0)
 -- GeneralFiltersLabel:SetText(L["GENERAL_LABEL"])
 GeneralFiltersLabel:SetText("Content")
 GeneralFiltersLabel:Show()
-table.insert(settings.MostRecentTab.objects, GeneralFiltersLabel)
 
 local HideBoEItemsCheckBox = child:CreateCheckBox(L["SHOW_BOE_CHECKBOX"],
 function(self)
@@ -2046,7 +2044,6 @@ CustomCollectFilterLabel:SetPoint("LEFT", GeneralFiltersLabel, "LEFT", 0, 0)
 -- CustomCollectFilterLabel:SetText(L["CUSTOM_FILTERS_LABEL"])
 CustomCollectFilterLabel:SetText("Automated Content")
 CustomCollectFilterLabel:Show()
-table.insert(settings.MostRecentTab.objects, CustomCollectFilterLabel)
 
 local CustomCollectFilterExplainLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal")
 CustomCollectFilterExplainLabel:SetPoint("TOPLEFT", CustomCollectFilterLabel, "BOTTOMLEFT", 0, -4)
@@ -2055,7 +2052,6 @@ CustomCollectFilterExplainLabel:SetWidth(320)
 CustomCollectFilterExplainLabel:SetJustifyH("LEFT")
 CustomCollectFilterExplainLabel:SetText(L["CUSTOM_FILTERS_EXPLAIN_LABEL"])
 CustomCollectFilterExplainLabel:Show()
-table.insert(settings.MostRecentTab.objects, CustomCollectFilterExplainLabel)
 
 -- Custom Collect Toggles
 local insane_color = "|cffADD8E6"
@@ -2280,7 +2276,6 @@ ItemFiltersLabel:SetPoint("LEFT", ModeLabel, 0, 0)
 ItemFiltersLabel:SetPoint("TOP", ShowCollectedThingsCheckBox, "BOTTOM", 0, -10)
 ItemFiltersLabel:SetText(L["ITEM_FILTER_LABEL"])
 ItemFiltersLabel:Show()
-table.insert(settings.MostRecentTab.objects, ItemFiltersLabel)
 
 local ItemFiltersExplainLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal")
 ItemFiltersExplainLabel:SetPoint("TOPLEFT", ItemFiltersLabel, "BOTTOMLEFT", 0, -4)
@@ -2288,7 +2283,6 @@ ItemFiltersExplainLabel:SetWidth(640)
 ItemFiltersExplainLabel:SetJustifyH("LEFT")
 ItemFiltersExplainLabel:SetText(L["ITEM_EXPLAIN_LABEL"])
 ItemFiltersExplainLabel:Show()
-table.insert(settings.MostRecentTab.objects, ItemFiltersExplainLabel)
 
 -- Stuff to automatically generate the armor & weapon checkboxes
 local last, xoffset, yoffset = ItemFiltersLabel, 0, -4
@@ -2406,7 +2400,6 @@ f.OnRefresh = function(self)
 		self:Enable()
 	end
 end
-table.insert(settings.MostRecentTab.objects, f)
 settings.equipfilterdefault = f
 
 f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
@@ -2429,7 +2422,6 @@ f.OnRefresh = function(self)
 		self:Enable()
 	end
 end
-table.insert(settings.MostRecentTab.objects, f)
 settings.equipfilterall = f
 
 f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
@@ -2452,7 +2444,6 @@ f.OnRefresh = function(self)
 		self:Enable()
 	end
 end
-table.insert(settings.MostRecentTab.objects, f)
 
 end)();
 
@@ -2462,16 +2453,8 @@ end)();
 
 -- SETUP
 (function()
---local tab = settings:CreateTab(L["INTERFACE_TAB"]);
-
--- Create the scrollFrame
-local scrollFrame, child = settings:CreateOptionsScrollFrame()
-
--- Create the nested subcategory
-local subcategory = scrollFrame
-subcategory.name = L["INTERFACE_TAB"]
-subcategory.parent = "AllTheThings"
-InterfaceOptions_AddCategory(subcategory)
+-- Create the page
+local child = settings:CreateOptionsPage("INTERFACE_TAB")
 
 -- CONTENT
 
@@ -2480,7 +2463,6 @@ TooltipLabel:SetPoint("TOPLEFT", child, 0, 0)
 TooltipLabel:SetJustifyH("LEFT")
 TooltipLabel:SetText(L["TOOLTIP_LABEL"])
 TooltipLabel:Show();
-table.insert(settings.MostRecentTab.objects, TooltipLabel);
 
 local ShowTooltipHelpCheckBox = child:CreateCheckBox(L["TOOLTIP_HELP_CHECKBOX"],
 function(self)
@@ -2509,7 +2491,6 @@ TooltipModifierLabel:SetText(L["TOOLTIP_MOD_LABEL"]);
 TooltipModifierLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox.Text, "TOPRIGHT", 10, 0);
 TooltipModifierLabel:SetTextColor(1, 1, 1, 1);
 TooltipModifierLabel:Show();
-table.insert(settings.MostRecentTab.objects, TooltipModifierLabel);
 TooltipModifierLabel.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") then
 		self:SetAlpha(0.2);
@@ -2672,7 +2653,7 @@ SummarizeThingsCheckBox:AlignBelow(DisplayInCombatCheckBox);
 local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", child, "OptionsSliderTemplate");
 ContainsSlider:SetPoint("TOP", SummarizeThingsCheckBox.Text, "BOTTOM", 0, -4);
 ContainsSlider:SetPoint("LEFT", SummarizeThingsCheckBox, "LEFT", 10, 0);
-table.insert(settings.MostRecentTab.objects, ContainsSlider);
+table.insert(settings.Objects, ContainsSlider);
 settings.ContainsSlider = ContainsSlider;
 ContainsSlider.tooltipText = L["CONTAINS_SLIDER_TOOLTIP"];
 ContainsSlider:SetOrientation('HORIZONTAL');
@@ -2710,7 +2691,7 @@ TooltipShowLabel:SetText(L["TOOLTIP_SHOW_LABEL"]);
 TooltipShowLabel:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, -14);
 TooltipShowLabel:SetPoint("LEFT", SummarizeThingsCheckBox, "LEFT", 0, 0);
 TooltipShowLabel:Show();
-table.insert(settings.MostRecentTab.objects, TooltipShowLabel);
+table.insert(settings.Objects, TooltipShowLabel);
 TooltipShowLabel.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") then
 		self:SetAlpha(0.2);
@@ -3046,7 +3027,7 @@ ShowSourceLocationsCheckBox:AlignBelow(ShowCompletedByCheckBox);
 local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", child, "OptionsSliderTemplate");
 LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox.Text, "BOTTOM", 0, -4);
 LocationsSlider:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 10, 0);
-table.insert(settings.MostRecentTab.objects, LocationsSlider);
+table.insert(settings.Objects, LocationsSlider);
 settings.LocationsSlider = LocationsSlider;
 LocationsSlider.tooltipText = L["LOCATIONS_SLIDER_TOOLTIP"];
 LocationsSlider:SetOrientation('HORIZONTAL');
@@ -3170,7 +3151,6 @@ AdditionalLabel:SetPoint("LEFT", TooltipLabel, 250, 0);
 AdditionalLabel:SetJustifyH("LEFT");
 AdditionalLabel:SetText(L["ADDITIONAL_LABEL"]);
 AdditionalLabel:Show();
-table.insert(settings.MostRecentTab.objects, AdditionalLabel);
 
 local ids = {
 	["achievementID"] = "Achievement ID",
@@ -3249,16 +3229,8 @@ end)();
 
 -- SETUP
 (function()
--- local tab = settings:CreateTab(L["FEATURES_TAB"]);
-
--- Create the scrollFrame
-local scrollFrame, child = settings:CreateOptionsScrollFrame()
-
--- Create the nested subcategory
-local subcategory = scrollFrame
-subcategory.name = L["FEATURES_TAB"]
-subcategory.parent = "AllTheThings"
-InterfaceOptions_AddCategory(subcategory)
+-- Create the page
+local child = settings:CreateOptionsPage("FEATURES_TAB")
 
 -- CONTENT
 
@@ -3267,7 +3239,6 @@ MinimapLabel:SetPoint("TOPLEFT", child, 0, 0)
 MinimapLabel:SetJustifyH("LEFT");
 MinimapLabel:SetText(L["MINIMAP_LABEL"]);
 MinimapLabel:Show();
-table.insert(settings.MostRecentTab.objects, MinimapLabel);
 
 local ShowMinimapButtonCheckBox = child:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
 function(self)
@@ -3309,7 +3280,6 @@ MinimapButtonSizeSliderLabel:SetJustifyH("LEFT");
 MinimapButtonSizeSliderLabel:SetText(L["MINIMAP_SLIDER"]);
 MinimapButtonSizeSliderLabel:SetTextColor(1, 1, 1, 1);
 MinimapButtonSizeSliderLabel:Show();
-table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSliderLabel);
 MinimapButtonSizeSliderLabel.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("MinimapButton") or settings:GetTooltipSetting("MinimapStyle") then
 		--self:Disable();
@@ -3322,7 +3292,7 @@ end;
 
 local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", child, "OptionsSliderTemplate");
 MinimapButtonSizeSlider:SetPoint("TOPLEFT", MinimapButtonSizeSliderLabel, "BOTTOMLEFT", -1, -2);
-table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSlider);
+table.insert(settings.Objects, MinimapButtonSizeSlider);
 settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
 MinimapButtonSizeSlider.tooltipText = L["MINIMAP_SLIDER_TOOLTIP"];
 MinimapButtonSizeSlider:SetOrientation('HORIZONTAL');
@@ -3361,7 +3331,6 @@ ModulesLabel:SetPoint("LEFT", MinimapLabel, "LEFT", 0, 0);
 ModulesLabel:SetJustifyH("LEFT");
 ModulesLabel:SetText(L["MODULES_LABEL"]);
 ModulesLabel:Show();
-table.insert(settings.MostRecentTab.objects, ModulesLabel);
 
 local ChangeSkipCutsceneState = function(self, checked)
 	if checked then
@@ -3481,7 +3450,6 @@ CelebrationsLabel:SetPoint("LEFT", ModulesLabel, "LEFT", 0, 0);
 CelebrationsLabel:SetJustifyH("LEFT");
 CelebrationsLabel:SetText(L["CELEBRATIONS_LABEL"]);
 CelebrationsLabel:Show();
-table.insert(settings.MostRecentTab.objects, CelebrationsLabel);
 
 local UseMasterAudioChannel = child:CreateCheckBox(L["MASTER_AUDIO_CHECKBOX"],
 function(self)
@@ -3532,7 +3500,6 @@ ReportingLabel:SetPoint("LEFT", MinimapLabel, 300, 0);
 ReportingLabel:SetJustifyH("LEFT");
 ReportingLabel:SetText(L["REPORTING_LABEL"]);
 ReportingLabel:Show();
-table.insert(settings.MostRecentTab.objects, ReportingLabel);
 
 local ReportCollectedThingsCheckBox = child:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],
 function(self)
@@ -3577,7 +3544,6 @@ ChatCommandsLabel:SetPoint("LEFT", ReportingLabel, "LEFT", 0, 0);
 ChatCommandsLabel:SetJustifyH("LEFT");
 ChatCommandsLabel:SetText(L["CHAT_COMMANDS_LABEL"]);
 ChatCommandsLabel:Show();
-table.insert(settings.MostRecentTab.objects, ChatCommandsLabel);
 
 local ChatCommandsText = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 ChatCommandsText:SetPoint("TOPLEFT", ChatCommandsLabel, "BOTTOMLEFT", 0, -4);
@@ -3585,7 +3551,6 @@ ChatCommandsText:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
 ChatCommandsText:SetJustifyH("LEFT");
 ChatCommandsText:SetText(L["CHAT_COMMANDS_TEXT"]);
 ChatCommandsText:Show();
-table.insert(settings.MostRecentTab.objects, ChatCommandsText);
 
 end)();
 
@@ -3595,42 +3560,36 @@ end)();
 
 -- SETUP
 (function()
-local tab = settings:CreateTab(L["PROFILES_TAB"]);
+--local tab = settings:CreateTab(L["PROFILES_TAB"]);
 
--- Create the scrollFrame
-local scrollFrame, child = settings:CreateOptionsScrollFrame()
-
--- Create the nested subcategory
-local subcategory = scrollFrame
-subcategory.name = L["PROFILES_TAB"]
-subcategory.parent = "AllTheThings"
-InterfaceOptions_AddCategory(subcategory)
+-- Create the page
+local child = settings:CreateOptionsPage("PROFILES_TAB")
 
 -- CONTENT
 
-local ProfilesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ProfilesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+local ProfilesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+ProfilesLabel:SetPoint("TOPLEFT", child, 0, 0);
 ProfilesLabel:SetJustifyH("LEFT");
 ProfilesLabel:SetText(L["PROFILES_TAB"]);
 ProfilesLabel:Show();
-table.insert(settings.MostRecentTab.objects, ProfilesLabel);
+table.insert(settings.Objects, ProfilesLabel);
 
-local CurrentProfileLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+local CurrentProfileLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 CurrentProfileLabel:SetPoint("TOPLEFT", ProfilesLabel, "BOTTOMLEFT", 0, -4);
 CurrentProfileLabel:SetJustifyH("LEFT");
 CurrentProfileLabel:SetText(REFORGE_CURRENT..":");
 CurrentProfileLabel:Show();
-table.insert(settings.MostRecentTab.objects, CurrentProfileLabel);
+table.insert(settings.Objects, CurrentProfileLabel);
 
-local CurrentProfileNameLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+local CurrentProfileNameLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 CurrentProfileNameLabel:SetPoint("TOPLEFT", CurrentProfileLabel, "TOPRIGHT", 5, 0);
 CurrentProfileNameLabel:SetJustifyH("LEFT");
 CurrentProfileNameLabel:SetTextColor(1, 1, 1, 1);
 CurrentProfileNameLabel:Show();
-table.insert(settings.MostRecentTab.objects, CurrentProfileNameLabel);
+table.insert(settings.Objects, CurrentProfileNameLabel);
 
 -- New Profile Textbox + Label
-local NewProfileTextBox = settings:CreateTextbox(
+local NewProfileTextBox = child:CreateTextbox(
 -- textbox settings
 {
 	title = NEW_COMPACT_UNIT_FRAME_PROFILE,
@@ -3647,11 +3606,11 @@ NewProfileTextBox:SetATTTooltip(L["PROFILE_NEW_TOOLTIP"]);
 NewProfileTextBox:Show();
 
 -- Profiles selector scrollbox
-local ProfileSelector = settings:CreateScrollFrame();
+local ProfileSelector = child:CreateScrollFrame();
 local ProfileScroller = ProfileSelector.ScrollContainer;
 ProfileScroller:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -10);
 ProfileScroller:SetPoint("RIGHT", NewProfileTextBox, "RIGHT", 25, 0);
-ProfileScroller:SetPoint("BOTTOM", settings, "BOTTOM", 0, 40);
+ProfileScroller:SetPoint("BOTTOM", child, "TOP", 0, -582);
 settings.ApplyBackdropColor(ProfileScroller, 20, 20, 20, 1);
 ProfileSelector:SetHeight(100);
 
@@ -3659,7 +3618,7 @@ ProfileSelector:SetHeight(100);
 local function InitProfilesButton_Disable(self)
 	self:Disable();
 end
-local InitializeProfilesButton = settings:CreateButton(
+local InitializeProfilesButton = child:CreateButton(
 -- button settings
 {
 	text = L["PROFILE_INITIALIZE"],
@@ -3689,7 +3648,7 @@ end
 local refreshProfiles;
 
 -- Create Button
-local CreateProfileButton = settings:CreateButton(
+local CreateProfileButton = child:CreateButton(
 -- button settings
 {
 	text = CREATE_COMPACT_UNIT_FRAME_PROFILE,
@@ -3716,7 +3675,7 @@ CreateProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "TOPRIGHT", 5, 4);
 CreateProfileButton:Show();
 
 -- Delete Button
-local DeleteProfileButton = settings:CreateButton(
+local DeleteProfileButton = child:CreateButton(
 -- button settings
 {
 	text = DELETE,
@@ -3741,7 +3700,7 @@ DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, -1
 DeleteProfileButton:Show();
 
 -- Switch Button
-local SwitchProfileButton = settings:CreateButton(
+local SwitchProfileButton = child:CreateButton(
 -- button settings
 {
 	text = SWITCH,
@@ -3763,7 +3722,7 @@ SwitchProfileButton:SetPoint("TOP", ProfileScroller, "TOP", 0, 2);
 SwitchProfileButton:Show();
 
 -- Copy Button
-local CopyProfileButton = settings:CreateButton(
+local CopyProfileButton = child:CreateButton(
 -- button settings
 {
 	text = CALENDAR_COPY_EVENT,
@@ -3786,7 +3745,7 @@ CopyProfileButton:SetPoint("TOPLEFT", SwitchProfileButton, "BOTTOMLEFT", 0, -4);
 CopyProfileButton:Show();
 
 -- Checkbox to show profile loaded message
-local ShowProfileLoadedCheckBox = settings:CreateCheckBox(L["SHOW_PROFILE_LOADED"],
+local ShowProfileLoadedCheckBox = child:CreateCheckBox(L["SHOW_PROFILE_LOADED"],
 function(self)
 	self:SetChecked(settings:Get("Profile:ShowProfileLoadedMessage"));
 end,
@@ -3800,9 +3759,9 @@ local function ProfileCheckbox_Disable(self)
 	self:Disable();
 end
 refreshProfiles = function()
-	local mostRecentTab = settings.MostRecentTab;
+	--local mostRecentTab = settings.MostRecentTab;
 	-- make sure to use the correct tab when adding the UI elements
-	settings.MostRecentTab = tab;
+	--settings.MostRecentTab = tab;
 	-- print("SelectedProfile",tab.SelectedProfile)
 
 	-- update the current profile label
@@ -3909,7 +3868,7 @@ refreshProfiles = function()
 
 	ProfileSelector:SetMaxScroll(100 + ((profileCount - 17) * 20));
 	-- make sure to switch back to the previous tab once done
-	settings.MostRecentTab = mostRecentTab;
+	--settings.MostRecentTab = mostRecentTab;
 end
 -- tab.OnRefresh = refreshProfiles;
 
@@ -3923,25 +3882,18 @@ end)();
 (function()
 local tab = settings:CreateTab(L["SYNC"]);
 
--- Create the scrollFrame
-local scrollFrame, child = settings:CreateOptionsScrollFrame()
-
--- Create the nested subcategory
-local subcategory = scrollFrame
-subcategory.name = L["SYNC"]
-subcategory.parent = "AllTheThings"
-InterfaceOptions_AddCategory(subcategory)
+-- Create the page
+local child = settings:CreateOptionsPage("SYNC")
 
 -- CONTENT
 
-local SyncLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-SyncLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+local SyncLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+SyncLabel:SetPoint("TOPLEFT", child, 0, 0);
 SyncLabel:SetJustifyH("LEFT");
 SyncLabel:SetText(L["ACCOUNT_SYNCHRONIZATION"]);
 SyncLabel:Show();
-table.insert(settings.MostRecentTab.objects, SyncLabel);
 
-local AutomaticallySyncAccountDataCheckBox = settings:CreateCheckBox(L["AUTO_SYNC_ACC_DATA_CHECKBOX"],
+local AutomaticallySyncAccountDataCheckBox = child:CreateCheckBox(L["AUTO_SYNC_ACC_DATA_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:Sync"));
 end,
@@ -3970,7 +3922,7 @@ function tab:InitializeSyncWindow()
 		self:SetPoint("LEFT", SyncLabel, "LEFT", 0, 0);
 		self:SetPoint("RIGHT", SyncLabel, "LEFT", 300, 0);
 		self:SetPoint("TOP", AutomaticallySyncAccountDataCheckBox, "BOTTOM", 0, 4);
-		self:SetPoint("BOTTOM", settings, "BOTTOM", 0, 4);
+		self:SetPoint("BOTTOM", child, 0, -592);
 		syncWindow_Refresh(self);
 	end
 	syncWindow.CloseButton:Disable();
@@ -3980,11 +3932,11 @@ function tab:InitializeSyncWindow()
 	syncWindow:SetToplevel(false);
 	syncWindow:SetMovable(false);
 	syncWindow:SetResizable(false);
-	syncWindow:SetParent(settings);
-	table.insert(tab.objects, syncWindow);
+	syncWindow:SetParent(child);
+	syncWindow:Show()
+	table.insert(settings.Objects, syncWindow);
 end
 end)();
-
 
 ---------------------
 -- "About" options --
@@ -3992,49 +3944,31 @@ end)();
 
 -- SETUP
 (function()
-local tab = settings:CreateTab(L["ABOUT"]);
-
--- Create the scrollFrame
-local scrollFrame, child = settings:CreateOptionsScrollFrame()
-
--- Create the nested subcategory
-local subcategory = scrollFrame
-subcategory.name = L["ABOUT"]
-subcategory.parent = "AllTheThings"
-InterfaceOptions_AddCategory(subcategory)
+-- Create the page
+local child = settings:CreateOptionsPage("ABOUT")
 
 -- CONTENT
 
-local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
-AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);
+local AboutText = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+AboutText:SetPoint("TOPLEFT", child, 0, 0);
 AboutText:SetJustifyH("LEFT");
 AboutText:SetText(L["TITLE"] .. L["ABOUT_1"]);
 AboutText:Show();
-table.insert(settings.MostRecentTab.objects, AboutText);
 
-local ShoutoutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-ShoutoutText:SetPoint("LEFT", AboutText, "LEFT", 0, 0);
+local ShoutoutText = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+ShoutoutText:SetPoint("TOPLEFT", AboutText, 0, -500);
 ShoutoutText:SetPoint("RIGHT", AboutText, "RIGHT", 0, 0);
-ShoutoutText:SetPoint("BOTTOM", settings, "BOTTOM", 0, 8);
 ShoutoutText:SetJustifyH("LEFT");
 ShoutoutText:SetText(L["ABOUT_2"] .. L["COLLECTED_ICON"] .. " " .. L["COLLECTED_APPEARANCE_ICON"] .. " " ..L["NOT_COLLECTED_ICON"] .. L["ABOUT_3"]);
 ShoutoutText:Show();
-table.insert(settings.MostRecentTab.objects, ShoutoutText);
 end)();
 
 -- TEMP!!!!!
 
 -- SETUP
 (function()
--- Create the scrollFrame
-local scrollFrame, child = settings:CreateOptionsScrollFrame()
-
--- Create the nested subcategory
-local subcategory = scrollFrame
-subcategory.name = "Temp"
-subcategory.parent = "AllTheThings"
-InterfaceOptions_AddCategory(subcategory)
+-- Create the page
+local child = settings:CreateOptionsPage("Temp")
 
 -- CONTENT
 
@@ -4042,7 +3976,6 @@ local BehaviorLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarg
 BehaviorLabel:SetJustifyH("LEFT");
 BehaviorLabel:SetText(L["BEHAVIOR_LABEL"]);
 BehaviorLabel:Show();
-table.insert(settings.MostRecentTab.objects, BehaviorLabel);
 BehaviorLabel:SetPoint("TOPLEFT", child, 0, 0);
 
 local MainListScaleSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
@@ -4051,11 +3984,10 @@ MainListScaleSliderLabel:SetJustifyH("LEFT");
 MainListScaleSliderLabel:SetText(L["MAIN_LIST_SLIDER_LABEL"]);
 MainListScaleSliderLabel:SetTextColor(1, 1, 1, 1);
 MainListScaleSliderLabel:Show();
-table.insert(settings.MostRecentTab.objects, MainListScaleSliderLabel);
 
 local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", child, "OptionsSliderTemplate");
 MainListScaleSlider:SetPoint("TOPLEFT", MainListScaleSliderLabel, "BOTTOMLEFT", -1, -2);
-table.insert(settings.MostRecentTab.objects, MainListScaleSlider);
+table.insert(settings.Objects, MainListScaleSlider);
 settings.MainListScaleSlider = MainListScaleSlider;
 MainListScaleSlider.tooltipText = L["MAIN_LIST_SCALE_TOOLTIP"];
 MainListScaleSlider:SetOrientation('HORIZONTAL');
@@ -4082,11 +4014,10 @@ MiniListScaleSliderLabel:SetJustifyH("LEFT");
 MiniListScaleSliderLabel:SetText(L["MINI_LIST_SLIDER_LABEL"]);
 MiniListScaleSliderLabel:SetTextColor(1, 1, 1, 1);
 MiniListScaleSliderLabel:Show();
-table.insert(settings.MostRecentTab.objects, MiniListScaleSliderLabel);
 
 local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", child, "OptionsSliderTemplate");
 MiniListScaleSlider:SetPoint("TOPLEFT", MiniListScaleSliderLabel, "BOTTOMLEFT", -1, -2);
-table.insert(settings.MostRecentTab.objects, MiniListScaleSlider);
+table.insert(settings.Objects, MiniListScaleSlider);
 settings.MiniListScaleSlider = MiniListScaleSlider;
 MiniListScaleSlider.tooltipText = L["MINI_LIST_SCALE_TOOLTIP"];
 MiniListScaleSlider:SetOrientation('HORIZONTAL');
@@ -4120,7 +4051,6 @@ function(self)
 end);
 DoAdHocUpdatesCheckbox:SetATTTooltip(L["ADHOC_UPDATES_CHECKBOX_TOOLTIP"]);
 DoAdHocUpdatesCheckbox:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -8);
-DoAdHocUpdatesCheckbox:SetPoint("LEFT", DebugModeCheckBox, "LEFT", 0, 0);
 
 local ExpandDifficultyCheckBox = child:CreateCheckBox(L["EXPAND_DIFFICULTY_CHECKBOX"],
 function(self)
@@ -4207,7 +4137,6 @@ PrecisionSliderLabel:SetJustifyH("LEFT");
 PrecisionSliderLabel:SetText(L["PRECISION_SLIDER"]);
 PrecisionSliderLabel:SetTextColor(1, 1, 1, 1);
 PrecisionSliderLabel:Show();
-table.insert(settings.MostRecentTab.objects, PrecisionSliderLabel);
 PrecisionSliderLabel.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Show:Percentage") then
 		self:SetAlpha(0.2);
@@ -4219,7 +4148,7 @@ end;
 local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");
 PrecisionSlider:SetPoint("TOPLEFT", PrecisionSliderLabel, "BOTTOMLEFT", -1, -2);
 PrecisionSlider:SetPoint("RIGHT", MainListScaleSlider, "RIGHT", 0, 0);
-table.insert(settings.MostRecentTab.objects, PrecisionSlider);
+table.insert(settings.Objects, PrecisionSlider);
 settings.PrecisionSlider = PrecisionSlider;
 PrecisionSlider.tooltipText = L["PRECISION_SLIDER_TOOLTIP"];
 PrecisionSlider:SetOrientation('HORIZONTAL');
@@ -4257,7 +4186,6 @@ local DynamicCategoryLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNor
 DynamicCategoryLabel:SetJustifyH("LEFT");
 DynamicCategoryLabel:SetText(L["DYNAMIC_CATEGORY_LABEL"]);
 DynamicCategoryLabel:Show();
-table.insert(settings.MostRecentTab.objects, DynamicCategoryLabel);
 DynamicCategoryLabel:SetPoint("LEFT", ShowPercentagesCheckBox, "LEFT", 0, 0);
 DynamicCategoryLabel:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -8);
 
