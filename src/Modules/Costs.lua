@@ -12,7 +12,7 @@ local rawget, ipairs, pairs
 -- App locals
 
 -- Module locals
-local RecursiveGroupRequirementsFilter, SearchForField;
+local RecursiveGroupRequirementsFilter, SearchForField, GroupFilter;
 
 -- revamped cost sequence
 -- Settings Update
@@ -55,7 +55,7 @@ local function SubCheckCollectible(ref)
 		local o;
 		for i=1,#g do
 			o = g[i];
-			if SubCheckCollectible(o) then
+			if GroupFilter(o) and SubCheckCollectible(o) then
 				-- app.PrintDebug("Cost via sub-group collectible",ref.hash)
 				return true;
 			end
@@ -127,6 +127,7 @@ app.CollectibleAsCost = function(t)
 	t.collectibleAsCost = false;
 	-- check the collectibles if any are considered collectible currently
 	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
+	GroupFilter = app.GroupFilter;
 	local costNeeded;
 	for _,ref in ipairs(collectibles) do
 		-- Use the common collectibility check logic
@@ -153,6 +154,7 @@ app.UpdateCosts = function()
 	-- app.PrintDebug("UpdateCosts",app._SettingsRefresh)
 	-- Cache repeat-used functions/values
 	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
+	GroupFilter = app.GroupFilter;
 	SearchForField = app.SearchForField;
 	local refresh = app._SettingsRefresh;
 
