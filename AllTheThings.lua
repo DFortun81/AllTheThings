@@ -2651,7 +2651,7 @@ local IsQuestFlaggedCompletedForObject = function(t, questIDKey)
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
 	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
 	-- If the quest has an altQuest which was completed on this character and this character is not in Party Sync nor tracking Locked Quests, return shared completed
-	if not app.MODE_DEBUG_OR_ACCOUNT and t.altcollected and not app.IsInPartySync and not app.CollectibleQuestsLocked then
+	if not app.MODE_DEBUG_OR_ACCOUNT and not app.IsInPartySync and not app.CollectibleQuestsLocked and t.altcollected then
 		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
@@ -7862,6 +7862,7 @@ local QuestNameFromServer = setmetatable({}, { __index = function(t, id)
 
 		app.RequestLoadQuestByID(id);
 	end
+	return RETRIEVING_DATA;
 end});
 local QuestNameDefault = setmetatable({}, { __index = function(t, id)
 	if id then
