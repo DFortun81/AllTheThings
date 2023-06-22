@@ -7392,7 +7392,7 @@ local function RefreshSavesCallback()
 	end
 
 	-- Mark that we're done now.
-	app:UpdateWindows();
+	app:RefreshWindows();
 end
 local function RefreshSaves()
 	AfterCombatCallback(RefreshSavesCallback);
@@ -24217,17 +24217,8 @@ app.InitDataCoroutine = function()
 	-- print("Yield prior to Refresh")
 	coroutine.yield();
 
-	-- NOTE: The auto refresh only happens once per version
-	-- if not accountWideData.LastAutoRefresh or (accountWideData.LastAutoRefresh ~= app.Version) then
-	-- 	accountWideData.LastAutoRefresh = app.Version;
-		-- print("Force Refresh")
-		-- collection refresh includes data refresh
 	app.__FirstRefresh = true;
 		app.RefreshCollections();
-	-- else
-	-- 	-- print("Refresh")
-	-- 	app:RefreshData(false);
-	-- end
 
 	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
 	if not AllTheThingsProfiles then DelayedCallback(app.SetupProfiles, 5); end
@@ -24248,7 +24239,7 @@ app.InitDataCoroutine = function()
 	-- finally can say the app is ready
 	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 	app.IsReady = true;
-	-- print("ATT is Ready!");
+	-- app.PrintDebug("ATT is Ready!");
 
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end
@@ -24863,7 +24854,7 @@ app.events.PLAYER_REGEN_ENABLED = function()
 	-- print("PLAYER_REGEN_ENABLED:End")
 end
 app.events.QUEST_SESSION_JOINED = function()
-	-- print("QUEST_SESSION_JOINED")
+	-- app.PrintDebug("QUEST_SESSION_JOINED")
 	app:UnregisterEvent("QUEST_SESSION_JOINED");
 	app:RegisterEvent("QUEST_SESSION_LEFT");
 	app:RegisterEvent("QUEST_SESSION_DESTROYED");
@@ -24879,6 +24870,7 @@ app.events.QUEST_SESSION_DESTROYED = function()
 	app.LeavePartySync();
 end
 app.LeavePartySync = function()
+	-- app.PrintDebug("LeavePartySync")
 	app:UnregisterEvent("QUEST_SESSION_LEFT");
 	app:UnregisterEvent("QUEST_SESSION_DESTROYED");
 	app:RegisterEvent("QUEST_SESSION_JOINED");

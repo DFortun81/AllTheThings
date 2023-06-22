@@ -1326,8 +1326,10 @@ settings.UpdateMode = function(self, doRefresh)
 		app:RefreshData(nil,nil,true);
 		app._SettingsRefresh = GetTimePreciseSec();
 	else
-		-- lazy refresh instead
+		-- lazy refresh instead if ATT is ready
+		if app.IsReady then
 		app:RefreshData(true,nil,true);
+	end
 	end
 
 	-- ensure the settings pane itself is refreshed
