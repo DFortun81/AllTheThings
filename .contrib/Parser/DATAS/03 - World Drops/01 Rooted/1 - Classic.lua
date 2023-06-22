@@ -3603,19 +3603,19 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		prof(LEATHERWORKING, {
 			i(4301),	-- Pattern: Barbaric Belt (RECIPE!)
 			i(4297),	-- Pattern: Barbaric Gloves (RECIPE!)
-			i(8390),	-- Pattern: Big Voodoo Cloak
-			i(8387),	-- Pattern: Big Voodoo Mask
-			i(8389),	-- Pattern: Big Voodoo Pants
-			i(8386),	-- Pattern: Big Voodoo Robe
+			i(8390),	-- Pattern: Big Voodoo Cloak (RECIPE!)
+			i(8387),	-- Pattern: Big Voodoo Mask (RECIPE!)
+			i(8389),	-- Pattern: Big Voodoo Pants (RECIPE!)
+			i(8386),	-- Pattern: Big Voodoo Robe (RECIPE!)
 			i(15737),	-- Pattern: Chimeric Boots
 			i(15746),	-- Pattern: Chimeric Leggings
 			i(15755),	-- Pattern: Chimeric Vest
-			i(8384),	-- Pattern: Comfortable Leather Hat
+			i(8384),	-- Pattern: Comfortable Leather Hat (RECIPE!)
 			i(7360),	-- Pattern: Dark Leather Gloves (RECIPE!)
 			i(4296),	-- Pattern: Dark Leather Shoulders (RECIPE!)
 			i(2409),	-- Pattern: Dark Leather Tunic (RECIPE!)
 			i(7452),	-- Pattern: Dusky Boots
-			i(7449),	-- Pattern: Dusky Leather Leggings
+			i(7449),	-- Pattern: Dusky Leather Leggings (RECIPE!)
 			i(2406),	-- Pattern: Fine Leather Boots (RECIPE!)
 			i(2408),	-- Pattern: Fine Leather Gloves (RECIPE!)
 			i(5972),	-- Pattern: Fine Leather Pants (RECIPE!)
@@ -3629,7 +3629,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(4294),	-- Pattern: Hillman's Belt (RECIPE!)
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
 			i(7363),	-- Pattern: Pilferer's Gloves
-			i(7288),	-- Pattern: Rugged Leather Pants
+			i(7288),	-- Pattern: Rugged Leather Pants (RECIPE!)
 			i(15745, {	-- Pattern: Runic Leather Belt
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
 			}),
@@ -3639,8 +3639,8 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(15765, {	-- Pattern: Runic Leather Pants
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
 			}),
-			i(7453),	-- Pattern: Swift Boots
-			i(8385),	-- Pattern: Turtle Scale Gloves
+			i(7453),	-- Pattern: Swift Boots (RECIPE!)
+			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 			i(15742),	-- Pattern: Warbear Harness
 			i(2407),	-- Pattern: White Leather Jerkin (RECIPE!)
 			i(15757, {	-- Pattern: Wicked Leather Pants

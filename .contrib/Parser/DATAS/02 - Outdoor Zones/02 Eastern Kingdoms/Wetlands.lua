@@ -1796,7 +1796,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(7613, {	-- Pattern: Green Leather Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(7290, {	-- Pattern: Red Whelp Gloves
+						i(7290, {	-- Pattern: Red Whelp Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(4835, {	-- Elite Shoulders

@@ -2324,7 +2324,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8405, {	-- Pattern: Wild Leather Helmet
+						i(8405, {	-- Pattern: Wild Leather Helmet (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -2373,7 +2373,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8403, {	-- Pattern: Wild Leather Shoulders
+						i(8403, {	-- Pattern: Wild Leather Shoulders (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -2398,7 +2398,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8404, {	-- Pattern: Wild Leather Vest
+						i(8404, {	-- Pattern: Wild Leather Vest (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -2810,10 +2810,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(15734, {	-- Pattern: Living Shoulders
 							["isLimited"] = true,
 						}),
-						i(8409, {	-- Pattern: Nightscape Shoulders
+						i(8409, {	-- Pattern: Nightscape Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(8385, {	-- Pattern: Turtle Scale Gloves
+						i(8385, {	-- Pattern: Turtle Scale Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2854,7 +2854,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(15734, {	-- Pattern: Living Shoulders
 							["isLimited"] = true,
 						}),
-						i(8385, {	-- Pattern: Turtle Scale Gloves
+						i(8385, {	-- Pattern: Turtle Scale Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2870,7 +2870,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(15734, {	-- Pattern: Living Shoulders
 							["isLimited"] = true,
 						}),
-						i(8385, {	-- Pattern: Turtle Scale Gloves
+						i(8385, {	-- Pattern: Turtle Scale Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

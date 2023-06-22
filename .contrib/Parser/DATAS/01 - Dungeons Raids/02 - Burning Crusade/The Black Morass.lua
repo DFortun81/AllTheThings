@@ -76,7 +76,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						17839,	-- Rift Lord
 					},
 				}),
-				i(25730, {	-- Pattern: Stylin' Jungle Hat
+				i(25730, {	-- Pattern: Stylin' Jungle Hat (RECIPE!)
 					["crs"] = {
 						21104,	-- Rift Keeper
 						17839,	-- Rift Lord

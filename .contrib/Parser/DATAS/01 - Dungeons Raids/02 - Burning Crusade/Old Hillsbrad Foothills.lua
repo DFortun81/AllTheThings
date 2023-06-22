@@ -116,7 +116,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(25729, {	-- Pattern: Stylin' Adventure Hat
+				i(25729, {	-- Pattern: Stylin' Adventure Hat (RECIPE!)
 					["crs"] = {
 						28132,	-- Don Carlos
 						17820,	-- Durnholde Rifleman

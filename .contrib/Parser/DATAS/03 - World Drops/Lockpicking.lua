@@ -158,7 +158,7 @@ root(ROOTS.WorldDrops, {
 			i(4634,	 {	-- Iron Lockbox
 				i(13063),	-- Starfaller
 				i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer (RECIPE!)
-				i(7449),	-- Pattern: Dusky Leather Leggings
+				i(7449),	-- Pattern: Dusky Leather Leggings (RECIPE!)
 				i(5774),	-- Pattern: Green Silk Pack
 				i(7450),	-- Pattern: Green Whelp Armor
 				i(4299),	-- Pattern: Guardian Armor (RECIPE!)
@@ -244,9 +244,9 @@ root(ROOTS.WorldDrops, {
 				i(11225),	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 				i(16218),	-- Formula: Enchant Bracer - Superior Versatility / CLASSIC: Formula: Enchant Bracer - Superior Spirit (RECIPE!)
 				i(11208),	-- Formula: Enchant Weapon - Demonslaying (RECIPE!)
-				i(8390),	-- Pattern: Big Voodoo Cloak
-				i(8387),	-- Pattern: Big Voodoo Mask
-				i(8389),	-- Pattern: Big Voodoo Pants
+				i(8390),	-- Pattern: Big Voodoo Cloak (RECIPE!)
+				i(8387),	-- Pattern: Big Voodoo Mask (RECIPE!)
+				i(8389),	-- Pattern: Big Voodoo Pants (RECIPE!)
 				i(14467),	-- Pattern: Frostweave Robe
 				i(10320),	-- Pattern: Red Mageweave Headband
 				i(10302),	-- Pattern: Red Mageweave Pants
@@ -274,11 +274,11 @@ root(ROOTS.WorldDrops, {
 			i(4637,  {	-- Steel Lockbox
 				i(11204),	-- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
 				i(11202),	-- Formula: Enchant Shield - Stamina (RECIPE!)
-				i(8387),	-- Pattern: Big Voodoo Mask
-				i(8386),	-- Pattern: Big Voodoo Robe
+				i(8387),	-- Pattern: Big Voodoo Mask (RECIPE!)
+				i(8386),	-- Pattern: Big Voodoo Robe (RECIPE!)
 				i(10312),	-- Pattern: Red Mageweave Gloves
 				i(10300),	-- Pattern: Red Mageweave Vest
-				i(8385),	-- Pattern: Turtle Scale Gloves
+				i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 				i(10301),	-- Pattern: White Bandit Mask
 				i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
 				i(7975),	-- Plans: Heavy Mithril Pants (RECIPE!)
@@ -298,7 +298,7 @@ root(ROOTS.WorldDrops, {
 				i(4300),	-- Pattern: Guardian Leather Bracers (RECIPE!)
 				i(10300),	-- Pattern: Red Mageweave Vest
 				i(4353),	-- Pattern: Spider Belt
-				i(8385),	-- Pattern: Turtle Scale Gloves
+				i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 				i(10301),	-- Pattern: White Bandit Mask
 				i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
 				i(3869),	-- Plans: Shadow Crescent Axe (RECIPE!)
@@ -353,11 +353,11 @@ root(ROOTS.WorldDrops, {
 				i(12042),	-- Marsh Chain
 				i(12012),	-- Marsh Ring
 				i(12001),	-- Onyx Ring
-				i(8387),	-- Pattern: Big Voodoo Mask
-				i(8389),	-- Pattern: Big Voodoo Pants
-				i(8386),	-- Pattern: Big Voodoo Robe
+				i(8387),	-- Pattern: Big Voodoo Mask (RECIPE!)
+				i(8389),	-- Pattern: Big Voodoo Pants (RECIPE!)
+				i(8386),	-- Pattern: Big Voodoo Robe (RECIPE!)
 				i(10320),	-- Pattern: Red Mageweave Headband
-				i(8385),	-- Pattern: Turtle Scale Gloves
+				i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 				i(10301),	-- Pattern: White Bandit Mask
 				i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
 				i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)

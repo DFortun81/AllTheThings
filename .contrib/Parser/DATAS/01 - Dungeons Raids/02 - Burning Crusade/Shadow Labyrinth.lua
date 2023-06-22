@@ -210,7 +210,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27892),	-- Cloak of the Inciter
 						i(27893),	-- Ornate Leggings of the Venerated
 						i(27891),	-- Adamantine Figurine
-						i(25728),	-- Pattern: Stylin' Purple Hat
+						i(25728),	-- Pattern: Stylin' Purple Hat (RECIPE!)
 						i(30808),	-- Book of Fel Names
 					},
 				}),
@@ -310,7 +310,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27892),	-- Cloak of the Inciter
 							i(27893),	-- Ornate Leggings of the Venerated
 							i(27891),	-- Adamantine Figurine
-							i(25728),	-- Pattern: Stylin' Purple Hat
+							i(25728),	-- Pattern: Stylin' Purple Hat (RECIPE!)
 							i(30808),	-- Book of Fel Names
 						},
 					}),

@@ -1519,9 +1519,9 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35336)),	-- Mooncloth Shoulderpads
 							applyclassicphase(TBC_PHASE_TWO, i(35367)),	-- Opportunist's Leather Helm
 							i(29720),	-- Pattern: Clefthide Leg Armor
-							i(25737),	-- Pattern: Heavy Clefthoof Boots
-							i(25736),	-- Pattern: Heavy Clefthoof Leggings
-							i(25735),	-- Pattern: Heavy Clefthoof Vest
+							i(25737),	-- Pattern: Heavy Clefthoof Boots (RECIPE!)
+							i(25736),	-- Pattern: Heavy Clefthoof Leggings (RECIPE!)
+							i(25735),	-- Pattern: Heavy Clefthoof Vest (RECIPE!)
 							i(29721),	-- Pattern: Nethercleft Leg Armor
 							i(23618),	-- Plans: Adamantite Sharpening Stone (RECIPE!)
 							i(28632),	-- Plans: Adamantite Weightstone (RECIPE!)

@@ -1880,7 +1880,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 13.3, 43.4, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(8409, {	-- Pattern: Nightscape Shoulders
+						i(8409, {	-- Pattern: Nightscape Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

@@ -118,8 +118,78 @@ i(6710, 8322);	-- Moonglow Vest
 -- PATCH 0.6.0 --
 ------------------
 -- TRAINER --
+i(0, 9206);	-- Dusky Belt
+i(0, 9201);	-- Dusky Bracers
+i(0, 9196);	-- Dusky Leather Armor
+i(0, 9145);	-- Fletcher's Gloves
+i(0, 9198);	-- Frost Leather Cloak
 i(0, 9059);	-- Handstitched Leather Bracers
 i(0, 9058);	-- Handstitched Leather Cloak
+i(0, 9065);	-- Light Leather Bracers
+i(0, 9068);	-- Light Leather Pants
+i(0, 9074);	-- Nimble Leather Gloves
+-- ITEM --
+i(7289, 9070);	-- Black Whelp Cloak
+i(7452, 9207);	-- Dusky Boots
+i(7449, 9195);	-- Dusky Leather Leggings
+i(7362, 9147);	-- Earthen Leather Shoulders
+i(7450, 9197);	-- Green Whelp Armor
+i(7451, 9202);	-- Green Whelp Bracers
+i(7364, 9149);	-- Heavy Earthen Gloves
+i(7361, 9146);	-- Herbalist's Gloves
+i(7363, 9148);	-- Pilferer's Gloves
+i(7290, 9072);	-- Red Whelp Gloves
+i(7288, 9064);	-- Rugged Leather Pants
+i(7453, 9208);	-- Swift Boots
+
+------------------
+-- PATCH 0.7.0 --
+------------------
+-- TRAINER --
+i(0, 10482);	-- Cured Thick Hide
+i(0, 10650);	-- Dragonscale Breastplate
+i(0, 10619);	-- Dragonscale Gauntlets
+i(0, 10647);	-- Feathered Breastplate
+i(0, 10630);	-- Gauntlets of the Sea
+i(0, 10632);	-- Helm of Fire
+i(0, 10558);	-- Nightscape Boots
+i(0, 10507);	-- Nightscape Headband
+i(0, 10548);	-- Nightscape Pants
+i(0, 10499);	-- Nightscape Tunic
+i(0, 10487);	-- Thick Armor Kit
+i(0, 10518);	-- Turtle Scale Bracers
+i(0, 10511);	-- Turtle Scale Breastplate
+i(0, 10552);	-- Turtle Scale Helm
+i(0, 10556);	-- Turtle Scale Leggings
+i(0, 10621);	-- Wolfshead Helm
+-- ITEM --
+i(8390, 10562);	-- Big Voodoo Cloak
+i(8387, 10531);	-- Big Voodoo Mask
+i(8389, 10560);	-- Big Voodoo Pants
+i(8386, 10520);	-- Big Voodoo Robe
+i(8384, 10490);	-- Comfortable Leather Hat
+i(8409, 10516);	-- Nightscape Shoulders
+i(8385, 10509);	-- Turtle Scale Gloves
+i(8406, 10566);	-- Wild Leather Boots
+i(8408, 10574);	-- Wild Leather Cloak
+i(8405, 10546);	-- Wild Leather Helmet
+i(8407, 10572);	-- Wild Leather Leggings
+i(8403, 10529);	-- Wild Leather Shoulders
+i(8404, 10544);	-- Wild Leather Vest
+-- REMOVED --
+i(0, 10656);-- Dragonscale Leatherworking (4.0.3)
+i(0, 10658);-- Elemental Leatherworking (4.0.3)
+i(0, 10662);-- Leatherworking (Artisan) (8.0.1)
+i(8399, 10554);-- Tough Scorpid Boots (4.0.3)
+i(8397, 10533);-- Tough Scorpid Bracers (4.0.3)
+i(8395, 10525);-- Tough Scorpid Breastplate (4.0.3)
+i(8398, 10542);-- Tough Scorpid Gloves (4.0.3)
+i(8402, 10570);-- Tough Scorpid Helm (4.0.3)
+i(8401, 10568);-- Tough Scorpid Leggings (4.0.3)
+i(8400, 10564);-- Tough Scorpid Shoulders (4.0.3)
+i(0, 10660);-- Tribal Leatherworking (4.0.3)
+-- NYI --
+i(8388, 10550);	-- Nightscape Cloak
 
 ------------------
 -- PATCH 1.11.1 --
@@ -204,8 +274,20 @@ i(0, 32479);	-- Wild Draenish Gloves
 i(0, 32480);	-- Wild Draenish Leggings
 i(0, 32481);	-- Wild Draenish Vest
 -- ITEM --
-
-
+i(25726, 32482);	-- Comfortable Insoles
+i(25733, 32493);	-- Fel Leather Boots
+i(25732, 32490);	-- Fel Leather Gloves
+i(25734, 32494);	-- Fel Leather Leggings
+i(25737, 32497);	-- Heavy Clefthoof Boots
+i(25736, 32496);	-- Heavy Clefthoof Leggings
+i(25735, 32495);	-- Heavy Clefthoof Vest
+i(25722, 32458);	-- Magister's Armor Kit
+i(25725, 32461);	-- Riding Crop
+i(25729, 32487);	-- Stylin' Adventure Hat
+i(25731, 32488);	-- Stylin' Crimson Hat
+i(25730, 32489);	-- Stylin' Jungle Hat
+i(25728, 32485);	-- Stylin' Purple Hat
+i(25721, 32457);	-- Vindicator's Armor Kit
 
 ------------------
 -- PATCH 2.1.0 --

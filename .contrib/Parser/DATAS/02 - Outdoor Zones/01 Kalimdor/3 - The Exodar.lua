@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sym"] = { { "sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
 					-- #endif
 					["groups"] = {
-						i(25726, {	-- Pattern: Comfortable Insoles
+						i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
 							["f"] = RECIPES,
