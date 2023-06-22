@@ -215,7 +215,7 @@ root(ROOTS.Zones, {
 					["sym"] = {{"select","speciesID",
 						641,	-- Arctic Hare (PET!)
 						536,	-- Tundra Penguin (PET!)
-						1236,	-- Unborn Val'kyr (PET!)
+						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["groups"] = {
 						pet(537),-- Dragonbone Hatchling (PET!)

@@ -70,9 +70,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75361,	-- Old QuestID: 75567
 				["g"] = {
 					bo(75364, true),
+					i(203363),	-- Winding Slitherdrake: Large Finned Throat (DM!)
 					i(205293),	-- Emberdusk's Embrace
 					i(205201),	-- Smoldering Howler Horn
 					i(205335),	-- Talisman of the Dusk
+					i(205196),	-- Zaqali Hand Cauldron
 				},
 			}),
 			n(203660, {	-- Flowfy
