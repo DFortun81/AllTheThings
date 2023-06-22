@@ -10081,7 +10081,7 @@ local unitFields = {
 					t.raceID = character.raceID;
 					t.race = C_CreatureInfo.GetRaceInfo(character.raceID).raceName;
 				end
-				t.name = app.TryColorizeName(t, character.name).."-"..(character.realm or UNKNOWN);
+				t.name = app.TryColorizeName(t, character.name or UNKNOWN).."-"..(character.realm or UNKNOWN);
 				t.level = character.lvl;
 				break;
 			end
