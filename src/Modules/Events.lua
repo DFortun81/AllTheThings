@@ -48,12 +48,12 @@ local function CreateSchedule(startTime, endTime, t)
 end
 local SessionEventCache;
 local function GetEventCache()
-	app.PrintDebug("GetEventCache")
+	-- app.PrintDebug("GetEventCache")
 	local now = C_DateAndTime_GetServerTimeLocal();
 	local cache = AllTheThingsSavedVariables.EventCache;
 	if cache and (cache.lease or 0) > now then
 		-- If our cache is still leased, then simply return it.
-		app.PrintDebug("GetEventCache.lease")
+		-- app.PrintDebug("GetEventCache.lease")
 		SessionEventCache = cache;
 		return cache;
 	end
@@ -118,7 +118,7 @@ local function GetEventCache()
 	end
 
 	-- Save the cache to SavedVariables.
-	app.PrintDebug("GetEventCache.cached")
+	-- app.PrintDebug("GetEventCache.cached")
 	AllTheThingsSavedVariables.EventCache = cache;
 	SessionEventCache = cache;
 	return cache;
@@ -126,7 +126,7 @@ end
 
 -- Event Helpers
 setmetatable(EventInformation, { __index = function(t, id)
-	app.PrintDebug("EventInformation.__index",id)
+	-- app.PrintDebug("EventInformation.__index",id)
 	local info = (SessionEventCache or GetEventCache())[id];
 	if info and info.times then
 		t[id] = info;
@@ -154,7 +154,7 @@ setmetatable(EventInformation, { __index = function(t, id)
 	return app.EmptyTable;
 end });
 setmetatable(NextEventSchedule, { __index = function(t, id)
-	app.PrintDebug("NextEventSchedule.__index",id)
+	-- app.PrintDebug("NextEventSchedule.__index",id)
 	local info = EventInformation[id];
 	if info then
 		local times = info.times;
@@ -234,7 +234,7 @@ setmetatable(NextEventSchedule, { __index = function(t, id)
 	t[id] = false;
 end });
 setmetatable(ActiveEvents, { __index = function(t, id)
-	app.PrintDebug("ActiveEvents.__index",id)
+	-- app.PrintDebug("ActiveEvents.__index",id)
 	local nextEvent = NextEventSchedule[id];
 	if nextEvent then
 		local eventStart, eventEnd = nextEvent["start"], nextEvent["end"];
@@ -242,7 +242,7 @@ setmetatable(ActiveEvents, { __index = function(t, id)
 			-- If the event is within the leeway, mark it active
 			local now = C_DateAndTime_GetServerTimeLocal();
 			if now < eventEnd and now > (eventStart - UpcomingEventLeeway) then
-				app.PrintDebug("ActiveEvents.__index",id,true)
+				-- app.PrintDebug("ActiveEvents.__index",id,true)
 				t[id] = true;
 				return true;
 			end
