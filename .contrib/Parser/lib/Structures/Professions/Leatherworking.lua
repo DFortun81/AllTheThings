@@ -392,45 +392,149 @@ COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
 		["timeline"] = { "added 4.0.3.13287" },
 	}),
 };
+SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	r(309038),	-- Shadowlands Leatherworking
+	n(ARMOR, {
+		r(309213, {	-- Boneshatter Armguards [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309208, {	-- Boneshatter Gauntlets [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309210, {	-- Boneshatter Greaves [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309209, {	-- Boneshatter Helm [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309213, {	-- Boneshatter Pauldrons [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309206, {	-- Boneshatter Treads [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309207, {	-- Boneshatter Vest [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309212, {	-- Boneshatter Waistguard [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309181),	-- Desolate Leather Armguards
+		r(309176),	-- Desolate Leather Gauntlets
+		r(309186),	-- Desolate Scale Greaves
+		r(309177),	-- Desolate Leather Helm
+		r(309178),	-- Desolate Leather Leggings
+		r(309179),	-- Desolate Leather Pauldrons
+		r(309174),	-- Desolate Leather Treads
+		r(309175),	-- Desolate Leather Vest
+		r(309180),	-- Desolate Leather Waistguard
+		r(309189),	-- Desolate Scale Armguards
+		r(309184),	-- Desolate Scale Gauntlets
+		r(309185),	-- Desolate Scale Helm
+		r(309187),	-- Desolate Scale Pauldrons
+		r(309182),	-- Desolate Scale Treads
+		r(309183),	-- Desolate Scale Vest
+		r(309188),	-- Desolate Scale Waistguard
+		r(309237),	-- Shadebound Armguards
+		r(309232),	-- Shadebound Gauntlets
+		r(309233),	-- Shadebound Helm
+		r(309234),	-- Shadebound Leggings
+		r(309235),	-- Shadebound Pauldrons
+		r(309230),	-- Shadebound Treads
+		r(309231),	-- Shadebound Vest
+		r(309236),	-- Shadebound Waistguard
+		r(309245),	-- Shadowscale Armguards
+		r(309240),	-- Shadowscale Gauntlets
+		r(309241),	-- Shadowscale Helm
+		r(309242),	-- Shadowscale Leggings
+		r(309243),	-- Shadowscale Pauldrons
+		r(309238),	-- Shadowscale Treads
+		r(309239),	-- Shadowscale Vest
+		r(309244),	-- Shadowscale Waistguard
+		r(309205, {	-- Umbrahide Armguards [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309200, {	-- Umbrahide Gauntlets [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309201, {	-- Umbrahide Helm [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309202, {	-- Umbrahide Leggings [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309203, {	-- Umbrahide Pauldrons [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309198, {	-- Umbrahide Treads [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309199, {	-- Umbrahide Vest [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+		r(309204, {	-- Umbrahide Waistguard [Rank 1]
+			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
+		}),
+	}),
+	filter(MISC, {
+		r(343195),	-- Crafter's Mark I
+		r(308896),	-- Callous Hide
+		r(324087),	-- Desolate Armor Kit
+		r(308895),	-- Desolate Leather
+		r(309173),	-- Drums of Deathly Ferocity
+		r(308897),	-- Heavy Callous Hide
+		r(308899),	-- Heavy Desolate Leather
+		r(343660),	-- Novice Crafter's Mark
+	}),
+	filter(MOUNT_EQUIPMENT, {
+		r(324735),	-- Comfortable Rider's Barding
+	}),
+	n(WEAPONS, {
+		r(309190),	-- Bone Bound Knuckles
+		r(309192),	-- Composite Bow
+		r(309193),	-- Composite Crossbow
+		r(309191),	-- Desolate Leather Cestus
+	}),
+}));
 DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	r(366239),	-- Dragon Isles Leatherworking
 	n(ARMOR, {
-		r(375103);	-- Pioneer's Leather Boots
-		r(375104);	-- Pioneer's Leather Wristguards
-		r(375105);	-- Pioneer's Leather Tunic
-		r(395863);	-- Pioneer's Practiced Belt
-		r(395864);	-- Pioneer's Practiced Cowl
-		r(395865);	-- Pioneer's Practiced Gloves
-		r(395867);	-- Pioneer's Practiced Leggings
-		r(395868);	-- Pioneer's Practiced Shoulderpads
-		r(375106);	-- Trailblazer's Scale Boots
-		r(375107);	-- Trailblazer's Scale Bracers
-		r(375108);	-- Trailblazer's Scale Vest
-		r(395839);	-- Trailblazer's Toughened Coif
-		r(395844);	-- Trailblazer's Toughened Chainbelt
-		r(395845);	-- Trailblazer's Toughened Grips
-		r(395847);	-- Trailblazer's Toughened Legguards
-		r(395851);	-- Trailblazer's Toughened Spikes
+		r(375103),	-- Pioneer's Leather Boots
+		r(375104),	-- Pioneer's Leather Wristguards
+		r(375105),	-- Pioneer's Leather Tunic
+		r(395863),	-- Pioneer's Practiced Belt
+		r(395864),	-- Pioneer's Practiced Cowl
+		r(395865),	-- Pioneer's Practiced Gloves
+		r(395867),	-- Pioneer's Practiced Leggings
+		r(395868),	-- Pioneer's Practiced Shoulderpads
+		r(375106),	-- Trailblazer's Scale Boots
+		r(375107),	-- Trailblazer's Scale Bracers
+		r(375108),	-- Trailblazer's Scale Vest
+		r(395839),	-- Trailblazer's Toughened Coif
+		r(395844),	-- Trailblazer's Toughened Chainbelt
+		r(395845),	-- Trailblazer's Toughened Grips
+		r(395847),	-- Trailblazer's Toughened Legguards
+		r(395851),	-- Trailblazer's Toughened Spikes
 	}),
 	filter(PROF_EQUIP, {
-		r(375188);	-- Alchemist's Hat
-		r(375182);	-- Durable Pack
-		r(375181);	-- Floral Basket
-		r(375184);	-- Jeweler's Cover
-		r(375185);	-- Protective Gloves
-		r(375186);	-- Resilient Smock
-		r(375183);	-- Skinner's Cap
-		r(375187);	-- Smithing Apron
+		r(375188),	-- Alchemist's Hat
+		r(375182),	-- Durable Pack
+		r(375181),	-- Floral Basket
+		r(375184),	-- Jeweler's Cover
+		r(375185),	-- Protective Gloves
+		r(375186),	-- Resilient Smock
+		r(375183),	-- Skinner's Cap
+		r(375187),	-- Smithing Apron
 	}),
 	n(MISC, {
-		r(375178);	-- Earthshine Scales
-		r(375168);	-- Feral Hide Drums
-		r(375179);	-- Frostbite Scales
-		r(375174);	-- Mireslush Hide
-		r(389195);	-- Recraft Equipment
-		r(375164);	-- Reinforced Armor Kit
-		r(375173);	-- Stonecrust Hide
-		r(375159);	-- Fang Adornments
+		r(375178),	-- Earthshine Scales
+		r(375168),	-- Feral Hide Drums
+		r(375179),	-- Frostbite Scales
+		r(375174),	-- Mireslush Hide
+		r(389195),	-- Recraft Equipment
+		r(375164),	-- Reinforced Armor Kit
+		r(375173),	-- Stonecrust Hide
+		r(375159),	-- Fang Adornments
 	}),
 	n(WEAPONS, {
 		r(375102),	-- Bonewrought Crossbow
