@@ -2365,7 +2365,7 @@ local allEquipmentFilters = {	-- Filter IDs
 	32,	-- Bows
 	31,	-- Guns
 	50,	-- Miscellaneous
-	57,	-- Fishing Poles
+	57,	-- Profession equipment
 	34,	-- Fist Weapons
 	35,	-- Warglaives
 	27,	-- Wands
