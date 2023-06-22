@@ -1428,17 +1428,17 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["groups"] = {
 							i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
 							i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
-							-- #if BEFORE 4.0.3
+							-- #if BEFORE 4.0.3	-- These were added during 8.1.5 to the Time-Lost Trader (BFA Tailor Questline)
 							i(18418),	-- Pattern: Cloak of Warding (RECIPE!)
 							i(18415),	-- Pattern: Felcloth Gloves (RECIPE!)
 							-- #endif
 							i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
 							i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
-							-- #if BEFORE 4.0.3
+							-- #if BEFORE 4.0.3 -- This was added during 8.1.5 to the Time-Lost Trader (BFA Tailor Questline)
 							i(18416),	-- Pattern: Inferno Gloves (RECIPE!)
 							-- #endif
 							i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
-							-- #if BEFORE 4.0.3
+							-- #if BEFORE 4.0.3	-- This was added during 8.1.5 to the Time-Lost Trader (BFA Tailor Questline)
 							i(18417),	-- Pattern: Mooncloth Gloves (RECIPE!)
 							-- #endif
 							i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
