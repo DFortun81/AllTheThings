@@ -38,16 +38,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 72461 },	-- Anatidaephobia
 					}),
 					crit(2, {	-- Belastrasza
-						-- ["sourceQuests"] = {  },
+						-- ["sourceQuests"] = { 72995 },
 					}),
 					crit(3, {	-- Zhusadormu
-						-- ["sourceQuests"] = {  },
+						-- ["sourceQuests"] = { 73002 },
 					}),
 					crit(4, {	-- Zalethgos
-						-- ["sourceQuests"] = {  },
+						-- ["sourceQuests"] = { 73009 },
 					}),
 					crit(5, {	-- Posidriss
-						-- ["sourceQuests"] = {  },
+						-- ["sourceQuests"] = { 73016 },
 					}),
 				}),
 				ach(18384, {	-- Whelp, There It Is
@@ -59,10 +59,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						-- ["sourceQuests"] = {  },
 					}),
 					crit(3, {	-- Hoard Behavior
-						-- ["sourceQuests"] = {  },
+						-- ["sourceQuests"] = { 73124 },
 					}),
 					crit(4, {	-- Arts and Crafts and Baths
-						-- ["sourceQuests"] = {  },
+						-- ["sourceQuests"] = { 73126 },
 					}),
 					crit(5, {	-- Off the Page
 						["sourceQuests"] = { 73128 },	-- Off the Page
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						-- ["sourceQuests"] = {  },
 					}),
 					crit(8, {	-- Scanning the Stacks
-						-- ["sourceQuests"] = {  },
+						-- ["sourceQuests"] = { 73132 },
 					}),
 					crit(9, {	-- Cozy Camouflage
 						-- ["sourceQuests"] = {  },
@@ -89,7 +89,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						-- ["sourceQuests"] = {  },
 					}),
 					crit(13, {	-- Zhoomsa
-						-- ["sourceQuests"] = {  },
+						-- ["sourceQuests"] = { 74489 },
 					}),
 					crit(14, {	-- Zaleth on the Go
 						-- ["sourceQuests"] = {  },
@@ -103,15 +103,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 			}),
 			n(QUESTS, {
-				-- Pets from Quests
-				i(207019),	-- Princess Vorquistrasza (PET!) [Not sure if you actually get item]
-				i(206758),	-- Belastrasza (PET!)
-				i(205009),	-- Annuna (PET!) [Not sure if you actually get item]
-				i(206971),	-- Zhusadormu (PET!)
-				i(206973),	-- Pallibrius (PET!) [Not sure if you actually get item]
-				i(206974),	-- Zalethgos (PET!)
-				i(206978),	-- Somnius (PET!) [Not sure if you actually get item]
-				i(206979),	-- Posidriss (PET!)
 				------ Introduction ------
 				q(72664, {	-- Eggs in Abundance
 					["provider"] = { "n", 197478 },	-- Herald Flaps
@@ -226,6 +217,81 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 				}),
 				------ Day 2 ------
+				q(72991),
+				q(72992),
+				------ Day 3 ------
+				q(72993),
+				------ Day 4 ------
+				q(72994, {
+					["g"] = {
+						i(207019),	-- Princess Vorquistrasza (PET!) [Not sure if you actually get item]
+					},
+				}),
+				q(72995, {
+					["g"] = {
+						i(206758),	-- Belastrasza (PET!)
+					},
+				}),
+				------ Bronze Whelp ------
+				------ Day 1 ------
+				q(72996),
+				q(72997),
+				------ Day 2 ------
+				q(72998),
+				q(72999),
+				------ Day 3 ------
+				q(73000),	-- Sneezing Through Time
+				------ Day 4 ------
+				q(73001, {
+					["g"] = {
+						i(205009),	-- Annuna (PET!) [Not sure if you actually get item]
+					},
+				}),
+				q(73002, {
+					["g"] = {
+						i(206971),	-- Zhusadormu (PET!)
+					},
+				}),
+				------ Azure Whelp ------
+				------ Day 1 ------
+				q(73003),
+				q(73004),
+				------ Day 2 ------
+				q(73005),
+				q(73006),
+				------ Day 3 ------
+				q(73007),
+				------ Day 4 ------
+				q(73008, {
+					["g"] = {
+						i(206973),	-- Pallibrius (PET!) [Not sure if you actually get item]
+					},
+				}),
+				q(73009, {
+					["g"] = {
+						i(206974),	-- Zalethgos (PET!)
+					},
+				}),
+				------ Emerald Whelp ------
+				------ Day 1 ------
+				q(73010),
+				q(73011),
+				------ Day 2 ------
+				q(73012),
+				q(73013),
+				------ Day 3 ------
+				q(73014),
+				------ Day 4 ------
+				q(73015, {
+					["g"] = {
+						i(206978),	-- Somnius (PET!) [Not sure if you actually get item]
+					},
+				}),
+				q(73016, {
+					["g"] = {
+						i(206979),	-- Posidriss (PET!)
+					},
+				}),
 			}),
 			n(QUESTS, sharedData({ ["isDaily"] = true }, {
 				q(73135, {	-- Obsidian Obfuscation
@@ -249,6 +315,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(77173),	-- I think this is for activating Whelp Care? Or Daily?
-		q(76252),	-- Whats the Duck? Completed
+		q(76252),	-- Obsidian Whelp dailies unlock
+		q(76253),	-- Ruby Whelping dailies unlock
+		q(76254),	-- Bronze Whelp dailies unlock
+		q(76255),	-- Azure Whelp dailies unlock
+		q(76256),	-- Emerald Whelp dailies unlock
 	}),
 }));
