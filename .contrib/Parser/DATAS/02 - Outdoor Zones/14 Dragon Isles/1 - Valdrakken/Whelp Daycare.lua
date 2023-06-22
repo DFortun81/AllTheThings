@@ -1,6 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+WHELP_DAYCARE = createHeader({
+	readable = "Little Scales Daycare",
+	constant = "WHELP_DAYCARE",
+	export = true,
+	icon = "Interface\\Icons\\inv_dragonwhelpoutland2_cutepink",
+	text = {
+		en = "Little Scales Daycare",
+	},
+});
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(WHELP_DAYCARE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
@@ -121,6 +131,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72666 },	-- Daycare Director Agapanthus
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["g"] = {
+						i(203451),	-- Decorative Shrubbery
+						i(203446),	-- Soothing Incense
+						i(203445),	-- Stuffed Doll
+					},
 				}),
 				q(72668, {	-- A Nuturing Enviroment
 					["sourceQuests"] = { 72666 },	-- Daycare Director Agapanthus
@@ -131,6 +146,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72666 },	-- Daycare Director Agapanthus
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["g"] = {
+						i(203432),	-- Bag of Spicy Pet Snacks
+						i(203443),	-- Box of Leapmaize Crackers
+						i(203433),	-- Wheel of Whelpwhisper Brie
+					},
 				}),
 				------ Obsidian Whelp ------
 				------ Day 1 ------

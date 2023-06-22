@@ -306,12 +306,6 @@ root(ROOTS.Unsorted, {
 			i(202696),	-- Comforting Ducky
 			i(202697),	-- Crimson Cushion
 			i(203386),	-- Box of Leapmaize Crackers
-			i(203432),	-- Bag of Spicy Pet Snacks
-			i(203433),	-- Wheel of Whelpwhisper Brie
-			i(203443),	-- Box of Leapmaize Crackers
-			i(203445),	-- Stuffed Doll
-			i(203446),	-- Soothing Incense
-			i(203451),	-- Decorative Shrubbery
 			i(203621),	-- Posidriss's Whistle
 			i(203624),	-- Zhusadormu's Whistle
 			i(203625),	-- Belastrasza's Whistle
@@ -1102,22 +1096,10 @@ root(ROOTS.Unsorted, {
 				-- 10.1.0.48480
 				q(71053),	-- Hermit Kill Quest
 				q(72027),	-- [DNT] Training Kill Quest JKP
-				q(72454),	-- [PH] Moved to 10.1.5
-				q(72455),	--
-				q(72457),	--
-				q(72458),	--
-				q(72459),	--
-				q(72460),	-- [PH] Moved to 10.1.5
-				q(72461),	-- [PH] Moved to 10.1.5
 				q(72480),	-- [DNT] Training Collect Quest
 				q(72513),	-- Our Destiny
 				q(72514),	-- The High Creche
 				q(72515),	-- The Contingency
-				q(72664),	--
-				q(72665),	-- [PH] Moved to 10.1.5
-				q(72666),	-- [PH] Moved to 10.1.5
-				q(72667),	-- [PH] Moved to 10.1.5
-				q(72668),	-- [PH] Moved to 10.1.5
 				q(72885),	-- Loamm Placeholder Quest
 				q(72887),	--
 				q(72932),	-- Our Father's Legacy - DEPRECATED
