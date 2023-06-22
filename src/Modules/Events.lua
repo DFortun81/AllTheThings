@@ -4,6 +4,12 @@ do
 local app = select(2, ...);
 local L = app.L;
 
+-- Global API cache
+local C_DateAndTime_GetServerTimeLocal
+	= C_DateAndTime.GetServerTimeLocal;
+local ipairs, tinsert, pairs
+	= ipairs, tinsert, pairs;
+
 -- Event Variables
 local ActiveEvents, EventInformation, NextEventSchedule = {}, {}, {};
 local UpcomingEventLeeway = 604800;	-- 604800 is a week. 86400 is a day.
@@ -14,7 +20,7 @@ local RemappedEventToMapID = {
 };
 
 -- Event Cache
--- Determine if the Calendary is implemented or not.
+-- Determine if the Calendar is implemented or not.
 local isCalendarAvailable = C_Calendar and GetCategoryInfo and GetCategoryInfo(92) ~= "";
 local function CreateTimeStamp(t)
 	return time({
@@ -40,14 +46,18 @@ local function CreateSchedule(startTime, endTime, t)
 		["endTime"] = endTime,
 	};
 end
+local SessionEventCache;
 local function GetEventCache()
-	local now = C_DateAndTime.GetServerTimeLocal();
+	-- app.PrintDebug("GetEventCache")
+	local now = C_DateAndTime_GetServerTimeLocal();
 	local cache = AllTheThingsSavedVariables.EventCache;
 	if cache and (cache.lease or 0) > now then
 		-- If our cache is still leased, then simply return it.
+		-- app.PrintDebug("GetEventCache.lease")
+		SessionEventCache = cache;
 		return cache;
 	end
-	
+
 	-- Create a new cache with a week long lease.
 	cache = {};
 	cache.lease = now + 604800;
@@ -56,7 +66,7 @@ local function GetEventCache()
 		local date = C_DateAndTime.GetCurrentCalendarTime();
 		C_Calendar.SetAbsMonth(date.month, date.year);
 		C_Calendar.SetMonth(-6);
-		
+
 		local anyEvents = false;
 		for offset=-6,12,1 do
 			local monthInfo = C_Calendar.GetMonthInfo(0);
@@ -93,11 +103,11 @@ local function GetEventCache()
 			end
 			C_Calendar.SetMonth(1);
 		end
-		
+
 		-- Reset Calendar back to last date.
 		C_Calendar.SetAbsMonth(date.month, date.year);
-		
-		-- If there wereany events, let's wipe the active cache tables.
+
+		-- If there were any events, let's wipe the active cache tables.
 		if anyEvents then
 			wipe(NextEventSchedule);
 			wipe(ActiveEvents);
@@ -106,15 +116,18 @@ local function GetEventCache()
 			cache.lease = now + 5;	-- Wait 5 seconds
 		end
 	end
-	
+
 	-- Save the cache to SavedVariables.
+	-- app.PrintDebug("GetEventCache.cached")
 	AllTheThingsSavedVariables.EventCache = cache;
+	SessionEventCache = cache;
 	return cache;
 end
 
 -- Event Helpers
 setmetatable(EventInformation, { __index = function(t, id)
-	local info = GetEventCache()[id];
+	-- app.PrintDebug("EventInformation.__index",id)
+	local info = (SessionEventCache or GetEventCache())[id];
 	if info and info.times then
 		t[id] = info;
 		return info;
@@ -138,14 +151,15 @@ setmetatable(EventInformation, { __index = function(t, id)
 			return info;
 		end
 	end
-	return {};
+	return app.EmptyTable;
 end });
 setmetatable(NextEventSchedule, { __index = function(t, id)
+	-- app.PrintDebug("NextEventSchedule.__index",id)
 	local info = EventInformation[id];
 	if info then
 		local times = info.times;
 		if times and #times > 0 then
-			local now = C_DateAndTime.GetServerTimeLocal();
+			local now = C_DateAndTime_GetServerTimeLocal();
 			local schedule;
 			for i,data in ipairs(times) do
 				schedule = data;
@@ -217,15 +231,21 @@ setmetatable(NextEventSchedule, { __index = function(t, id)
 			return schedule;
 		end
 	end
+	t[id] = false;
 end });
 setmetatable(ActiveEvents, { __index = function(t, id)
+	-- app.PrintDebug("ActiveEvents.__index",id)
 	local nextEvent = NextEventSchedule[id];
-	if nextEvent and nextEvent.start then
-		-- If the event is within the leeway, mark it active
-		local now = C_DateAndTime.GetServerTimeLocal();
-		if now < nextEvent["end"] and now > (nextEvent["start"] - UpcomingEventLeeway) then
-			t[id] = true;
-			return true;
+	if nextEvent then
+		local eventStart, eventEnd = nextEvent["start"], nextEvent["end"];
+		if eventStart and eventEnd then
+			-- If the event is within the leeway, mark it active
+			local now = C_DateAndTime_GetServerTimeLocal();
+			if now < eventEnd and now > (eventStart - UpcomingEventLeeway) then
+				-- app.PrintDebug("ActiveEvents.__index",id,true)
+				t[id] = true;
+				return true;
+			end
 		end
 	end
 	t[id] = false;
@@ -234,7 +254,8 @@ end });
 
 -- Event Functions & Filters
 local function FilterIsEventActive(group)
-	if group.e and not ActiveEvents[group.e] then
+	local e = group.e;
+	if e and not ActiveEvents[e] then
 		return false;
 	else
 		return true;
@@ -245,7 +266,6 @@ local function GetEventName(e)
 	if info then
 		local name = info.name;
 		if not name then
-			local headerID;
 			name = "Event #" .. e;
 			for id,eventID in pairs(L.HEADER_EVENTS) do
 				if e == eventID then
@@ -265,7 +285,7 @@ end
 local function GetEventTimeString(d)
 	if d then
 		if d.weekday then
-			return format("%s, %s %02d, %d at %02d:%02d", 
+			return format("%s, %s %02d, %d at %02d:%02d",
 				CALENDAR_WEEKDAY_NAMES[d.weekday],
 				CALENDAR_FULLDATE_MONTH_NAMES[d.month],
 				d.monthDay, d.year, d.hour, d.minute );
@@ -312,13 +332,13 @@ events.GetEventInformation = function(eventID)
 	return EventInformation[eventID];
 end;
 events.SetEventInformation = function(eventID, info)
-	rawset(EventInformation, eventID, info.times and info or { times = info });
+	EventInformation[eventID] = info.times and info or { times = info };
 end;
 events.GetEventNextSchedule = function(eventID)
 	return NextEventSchedule[eventID];
 end;
 events.SetEventNextSchedule = function(eventID, nextEvent)
-	rawset(NextEventSchedule, eventID, nextEvent);
+	NextEventSchedule[eventID] = nextEvent;
 end;
 events.GetUpcomingEventLeeway = function()
 	return UpcomingEventLeeway;
