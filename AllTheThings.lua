@@ -1546,12 +1546,13 @@ app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
 
 local function BuildGroups(parent)
-	if parent.g then
-		-- Iterate through the groups
 		local g = parent.g;
+	if g then
+		-- Iterate through the groups
+		local group;
 		for i=1,#g,1 do
 			-- Set the group's parent
-			local group = g[i];
+			group = g[i];
 			group.parent = parent;
 			BuildGroups(group);
 		end
