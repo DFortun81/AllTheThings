@@ -95,6 +95,15 @@ local function CheckCollectible(ref)
 		return SubCheckCollectible(ref);
 	end
 end
+local function NonAccountCostAllowed(t)
+	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
+	local parent = rawget(t, "parent");
+	if parent and parent.questID and parent.saved then
+		-- app.PrintDebug("CAC:t.parent.saved",t.hash)
+		return;
+	end
+	return true;
+end
 app.CheckCollectible = CheckCollectible;
 -- Returns whether 't' should be considered collectible based on the set of costCollectibles already assigned to this 't'
 app.CollectibleAsCost = function(t)
@@ -105,12 +114,9 @@ app.CollectibleAsCost = function(t)
 		return;
 	end
 	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
-	if not app.MODE_DEBUG_OR_ACCOUNT then
-		local parent = rawget(t, "parent");
-		if parent and parent.questID and parent.saved then
-			-- app.PrintDebug("CAC:t.parent.saved",t.hash)
-			return;
-		end
+	if not app.MODE_DEBUG_OR_ACCOUNT and NonAccountCostAllowed(t) then
+		-- app.PrintDebug("CAC:t.parent.saved",t.hash)
+		return;
 	end
 	local settingsChange = t._SettingsRefresh;
 	-- previously checked without Settings changed
@@ -175,12 +181,27 @@ app.UpdateCosts = function()
 			end
 			isCost = costTotal and true or nil;
 			-- Iterate on the search result of the entry key
-			for _,c in ipairs(costs) do
-				-- Mark the group with a costTotal of 1
-				-- app.PrintDebug("Force Cost Item",itemID,costTotal)
-				c.costTotal = costTotal;
-				c._CheckCollectible = isCost;
-				c._SettingsRefresh = refresh;
+			if app.MODE_DEBUG_OR_ACCOUNT then
+				for _,c in ipairs(costs) do
+					-- Mark the group with a costTotal of 1
+					-- app.PrintDebug("Force Cost",c.hash,costTotal)
+					c.costTotal = costTotal;
+					c._CheckCollectible = isCost;
+					c._SettingsRefresh = refresh;
+				end
+			else
+				for _,c in ipairs(costs) do
+					-- Mark the group based on results
+					if NonAccountCostAllowed(c) then
+						-- app.PrintDebug("Force Cost",c.hash,costTotal)
+						c.costTotal = costTotal;
+						c._CheckCollectible = isCost;
+					else
+						c.costTotal = nil;
+						c._CheckCollectible = nil;
+					end
+					c._SettingsRefresh = refresh;
+				end
 			end
 		-- else app.PrintDebug("ItemID as Cost is not Sourced!",itemID)
 		end
@@ -203,12 +224,27 @@ app.UpdateCosts = function()
 			end
 			isCost = costTotal and true or nil;
 			-- Iterate on the search result of the entry key
-			for _,c in ipairs(costs) do
-				-- Mark the group with a costTotal of 1
-				-- app.PrintDebug("Force Cost Curr",currencyID,costTotal)
-				c.costTotal = costTotal;
-				c._CheckCollectible = isCost;
-				c._SettingsRefresh = refresh;
+			if app.MODE_DEBUG_OR_ACCOUNT then
+				for _,c in ipairs(costs) do
+					-- Mark the group with a costTotal of 1
+					-- app.PrintDebug("Force Cost",c.hash,costTotal)
+					c.costTotal = costTotal;
+					c._CheckCollectible = isCost;
+					c._SettingsRefresh = refresh;
+				end
+			else
+				for _,c in ipairs(costs) do
+					-- Mark the group based on results
+					if NonAccountCostAllowed(c) then
+						-- app.PrintDebug("Force Cost",c.hash,costTotal)
+						c.costTotal = costTotal;
+						c._CheckCollectible = isCost;
+					else
+						c.costTotal = nil;
+						c._CheckCollectible = nil;
+					end
+					c._SettingsRefresh = refresh;
+				end
 			end
 		-- else app.PrintDebug("CurrencyID as Cost is not Sourced!",currencyID)
 		end
