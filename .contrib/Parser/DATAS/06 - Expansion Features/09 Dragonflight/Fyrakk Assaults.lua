@@ -25,8 +25,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205002),	-- Blaise (PET!)
 					}),
 					n(DRAKEWATCHER_MANUSCRIPTS, {
-						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
-						i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
+						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!) [Discord]
+						-- i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!) [any confirmation ???]
 					}),
 					i(203710),	-- Everburning Key
 					i(206043),	-- Fyrakk's Frenzy (TOY!)
@@ -226,11 +226,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(205003),	-- Ambre (PET!)
 							i(205002),	-- Blaise (PET!)
 						}),
-						i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
-						i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
-						i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
-						i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
-						i(203299),	-- Winding Slitherdrake: Green and Bronze Armor (DM!)
+						i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!) [Wowhead]
+						i(197156),	-- Highland Drake: Bronze and Green Armor (DM!) [Wowhead]
+						i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!) [Wowhead]
+						i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!) [Wowhead]
+						i(203299),	-- Winding Slitherdrake: Green and Bronze Armor (DM!) [Wowhead]
 						-- Objects
 						o(398815, {	-- Secured Shipment
 							["coord"] = { 73.8, 72.5, OHNAHRAN_PLAINS },
