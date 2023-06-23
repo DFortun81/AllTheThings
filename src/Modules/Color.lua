@@ -32,31 +32,9 @@ local function HexToRGB(hex)
 	return tonumber("0x"..hex:sub(1,2)) / 255, tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255;
 end
 -- Color AARRGGBB values used throughout ATT
-local colors = {
-	Raid = "ffff8000",
-	SourceIgnored = "ffd15517",
-	Locked = "ff7f40bf",
-	LockedWarning = "ffd15517",
-	Horde = "ffcc6666",
-	Alliance = "ff407fbf",
-	Completed = "ff15abff",
-	ChatLinkError = "ffff5c6c",
-	ChatLinkHQT = "ff7aff92",
-	ChatLink = "ff149bfd",
-	TooltipDescription = "ff66ccff",
-	TooltipLore = "ff42a7eb",
-	DefaultDifficulty = "ff1eff00",
-	RemovedWithPatch = "ffffaaaa",
-	AddedWithPatch = "ffaaffaa",
-	Renown = "ff00bff3",
-	Unavailable = "ff808080",
-	TimeUnder30Min = "ffff0000",
-	TimeUnder2Hr = "ffffff00",
-	Time = "ff008000",
-};
-app.Colors = colors;
+local colors = app.Colors;
 local Colorize = function(str, color)
-	return "|c" .. color .. str .. "|r";
+	return "|c"..color..str.."|r";
 end
 local RGBToHex = function(r, g, b)
 	return sformat("ff%02x%02x%02x",
@@ -172,3 +150,6 @@ end
 api.Colorize = Colorize;
 api.RGBToHex = RGBToHex;
 api.HexToARGB = HexToARGB;
+api.ColorizeRGB = function(str, r, g, b)
+	return "|c"..RGBToHex(r, g, b)..str.."|r";
+end

@@ -16,12 +16,12 @@ DRAKE_MANUSCRIPTS = "Drakewatcher Manuscripts";
 TRACK_ACC_WIDE = "|cff00AB00Track "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";
 ACC_WIDE_DEFAULT = "Tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." by Default.";
 
-local name, app = ...;
+local appName, app = ...;
 app.L = {
 	["TAB_SPACING"] = -10;	-- This is to control spacing between tab names in Settings
 	-- General Text
-	["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
-	["AUCTION_TAB"] = "|cffb4b4ffATT|r";
+	["TITLE"] = "|c"..app.Colors.ATT.."ALL THE THINGS|r";
+	["AUCTION_TAB"] = "|c"..app.Colors.ATT.."ATT|r";
 	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
@@ -945,7 +945,7 @@ app.L = {
 		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
 		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",			-- Event Item
 	};
-	
+
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
@@ -1407,10 +1407,10 @@ app.L = {
 	["HEADER_DESCRIPTIONS"] = {};
 	["HEADER_EVENTS"] = {};
 	["HEADER_LORE"] = {};
-	
+
 	["EVENT_REMAPPING"] = {};
 	["EVENT_TOOLTIPS"] = {};
-	
+
 	-- Module Localizations
 	["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 
