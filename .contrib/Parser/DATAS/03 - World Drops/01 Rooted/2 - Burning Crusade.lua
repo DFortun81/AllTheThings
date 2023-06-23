@@ -1036,6 +1036,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(29425),	-- Mark of Kil'jaeden [The Aldor]
 		i(30809),	-- Mark of Sargeras [The Aldor]
 		i(30810),	-- Sunfury Signet [The Scryers]
+		-- #IF AFTER 4.0.1
+		i(22146),	-- Book: Gift of the Wild
+		i(22153),	-- Tome of Arcane Brilliance
+		i(31501),	-- Tome of Conjure Food
+		i(29550),	-- Tome of Conjure Water
+		i(29549),	-- Codex: Prayer of Fortitude
+		i(31837),	-- Codex: Prayer of Shadow Protection
+		-- #ENDIF
 	}),
 	applyclassicphase(TBC_PHASE_THREE, category(106, {	-- Tarrot Cards
 		-- Blessings Deck
