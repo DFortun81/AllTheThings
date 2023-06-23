@@ -1,6 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
+
 root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	inst(1188, {	-- De Other Side
 		["coord"] = { 68.6, 66.5, ARDENWEALD },
@@ -11,18 +14,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 			1679,	-- Zul'Gurub
 		},
 		["g"] = {
-			n(QUESTS, {
-				q(62458, {	-- De Other Side
-					["provider"] = { "n", 174341 },	-- Mask of Bwonsamdi
-					["coord"] = { 64.8, 19.7, ARDENWEALD },
-					["isBreadcrumb"] = true,
-				}),
-				q(62456,{	-- De Other Side: Dealin' Wit' Da Boss
-					["sourceQuests"] = { 62458 },	-- De Other Side
-					["provider"] = { "n", 174327 },	-- Mask of Bwonsamdi
-					["_drop"] = { "g" },	-- Anima Trash
-				}),
-			}),
 			n(CONDUITS, {
 				e(2408, {	-- Hakkar the Soulflayer
 					["crs"] = { 164558 },	-- Hakkar the Soulflayer
@@ -92,7 +83,19 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			n(QUESTS, {
+				q(62458, {	-- De Other Side
+					["provider"] = { "n", 174341 },	-- Mask of Bwonsamdi
+					["coord"] = { 64.8, 19.7, ARDENWEALD },
+					["isBreadcrumb"] = true,
+				}),
+				q(62456,{	-- De Other Side: Dealin' Wit' Da Boss
+					["sourceQuests"] = { 62458 },	-- De Other Side
+					["provider"] = { "n", 174327 },	-- Mask of Bwonsamdi
+					["_drop"] = { "g" },	-- Anima Trash
+				}),
+			}),
+			d(NormalPlus, {
 				e(2408, {	-- Hakkar the Soulflayer
 					["crs"] = { 164558 },	-- Hakkar the Soulflayer
 					["g"] = {
@@ -147,77 +150,17 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
-				e(2408, {	-- Hakkar the Soulflayer
-					["crs"] = { 164558 },	-- Hakkar the Soulflayer
-					["g"] = {
-						i(179330),	-- Zin'khas, Blade of the Fallen God
-						i(179328),	-- Bloodspiller
-						i(179325),	-- Hakkari Revenant's Grips
-						i(179326),	-- Girdle of the Soulflayer
-						i(179324),	-- Soulfeather Breeches
-						i(179322),	-- Windscale Moccasins
-						i(179331),	-- Blood-Spattered Scale
-					},
-				}),
-				e(2409, {	-- The Manastorms
-					["crs"] = {
-						164556,	-- Millhouse Manastorm
-						164555,	-- Millificent Manastorm
-					},
-					["g"] = {
-						i(179339),	-- Whizblast Walking Stick
-						i(179340),	-- Supercollider
-						i(179335),	-- Manastorm's Magnificent Threads
-						i(179336),	-- Rocket Chicken Handlers
-						i(179337),	-- Techno-Coil Legguards
-						i(179338),	-- Dynamo Doomstompers
-						i(179342),	-- Overwhelming Power Crystal
-					},
-				}),
-				e(2398, {	-- Dealer Xy'exa
-					["crs"] = { 164450 },	-- Millificent Manastorm
-					["g"] = {
-						i(179347),	-- Collector's Pulse Staff
-						i(179348),	-- Xy Cartel Crossbow
-						i(179344),	-- Far Traveler's Shoulderpads
-						i(179349),	-- Dealer Xy'exa's Cape
-						i(179346),	-- Breastplate of Fatal Contrivances
-						i(179343),	-- Sash of Exquisite Acquisitions
-						i(179345),	-- Spatial Rift Striders
-						i(179350),	-- Inscrutable Quantum Device
-					},
-				}),
+			d(HeroicPlus, {
 				e(2410, {	-- Mueh'zala
 					["crs"] = { 166608 },	--	Mueh'zala
 					["g"] = {
 						ach(14408),	-- Heroic: De Other Side
-						i(182178),	-- Raptor Soul (SS!)
-						i(186998),	-- Pattern: Pallid Oracle Bones
-						i(179353),	-- Harness of Twisted Whims
-						i(179354),	-- Reality-Shatter Vambraces
-						i(179351),	-- Mueh'zala's Hexthread Sarong
-						i(179352),	-- Primeval Soul's Ankleguards
-						i(179355),	-- Death God's Signet
-						i(179356),	-- Shadowgrasp Totem
 					},
 				}),
 			}),
 			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(14354),	-- Highly Communicable
-				}),
-				e(2408, {	-- Hakkar the Soulflayer
-					["crs"] = { 164558 },	-- Hakkar the Soulflayer
-					["g"] = {
-						i(179330),	-- Zin'khas, Blade of the Fallen God
-						i(179328),	-- Bloodspiller
-						i(179325),	-- Hakkari Revenant's Grips
-						i(179326),	-- Girdle of the Soulflayer
-						i(179324),	-- Soulfeather Breeches
-						i(179322),	-- Windscale Moccasins
-						i(179331),	-- Blood-Spattered Scale
-					},
 				}),
 				e(2409, {	-- The Manastorms
 					["crs"] = {
@@ -226,27 +169,12 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					},
 					["g"] = {
 						ach(14374),	-- Couple's Therapy
-						i(179339),	-- Whizblast Walking Stick
-						i(179340),	-- Supercollider
-						i(179335),	-- Manastorm's Magnificent Threads
-						i(179336),	-- Rocket Chicken Handlers
-						i(179337),	-- Techno-Coil Legguards
-						i(179338),	-- Dynamo Doomstompers
-						i(179342),	-- Overwhelming Power Crystal
 					},
 				}),
 				e(2398, {	-- Dealer Xy'exa
 					["crs"] = { 164450 },	-- Millificent Manastorm
 					["g"] = {
 						ach(14606),	-- Thinking with...
-						i(179347),	-- Collector's Pulse Staff
-						i(179348),	-- Xy Cartel Crossbow
-						i(179344),	-- Far Traveler's Shoulderpads
-						i(179349),	-- Dealer Xy'exa's Cape
-						i(179346),	-- Breastplate of Fatal Contrivances
-						i(179343),	-- Sash of Exquisite Acquisitions
-						i(179345),	-- Spatial Rift Striders
-						i(179350),	-- Inscrutable Quantum Device
 					},
 				}),
 				e(2410, {	-- Mueh'zala
@@ -254,14 +182,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					["g"] = {
 						ach(14409),	-- Mythic: De Other Side
 						ach(14379),	-- Mythic: De Other Side Guild Run
-						i(182178),	-- Raptor Soul (SS!)
-						i(186998),	-- Pattern: Pallid Oracle Bones
-						i(179353),	-- Harness of Twisted Whims
-						i(179354),	-- Reality-Shatter Vambraces
-						i(179351),	-- Mueh'zala's Hexthread Sarong
-						i(179352),	-- Primeval Soul's Ankleguards
-						i(179355),	-- Death God's Signet
-						i(179356),	-- Shadowgrasp Totem
 					},
 				}),
 			}),
