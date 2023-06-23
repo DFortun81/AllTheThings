@@ -118,8 +118,147 @@ i(6710, 8322);	-- Moonglow Vest
 -- PATCH 0.6.0 --
 ------------------
 -- TRAINER --
+i(0, 9206);	-- Dusky Belt
+i(0, 9201);	-- Dusky Bracers
+i(0, 9196);	-- Dusky Leather Armor
+i(0, 9145);	-- Fletcher's Gloves
+i(0, 9198);	-- Frost Leather Cloak
 i(0, 9059);	-- Handstitched Leather Bracers
 i(0, 9058);	-- Handstitched Leather Cloak
+i(0, 9065);	-- Light Leather Bracers
+i(0, 9068);	-- Light Leather Pants
+i(0, 9074);	-- Nimble Leather Gloves
+-- ITEM --
+i(7289, 9070);	-- Black Whelp Cloak
+i(7452, 9207);	-- Dusky Boots
+i(7449, 9195);	-- Dusky Leather Leggings
+i(7362, 9147);	-- Earthen Leather Shoulders
+i(7450, 9197);	-- Green Whelp Armor
+i(7451, 9202);	-- Green Whelp Bracers
+i(7364, 9149);	-- Heavy Earthen Gloves
+i(7361, 9146);	-- Herbalist's Gloves
+i(7363, 9148);	-- Pilferer's Gloves
+i(7290, 9072);	-- Red Whelp Gloves
+i(7288, 9064);	-- Rugged Leather Pants
+i(7453, 9208);	-- Swift Boots
+
+------------------
+-- PATCH 0.7.0 --
+------------------
+-- TRAINER --
+i(0, 10482);	-- Cured Thick Hide
+i(0, 10650);	-- Dragonscale Breastplate
+i(0, 10619);	-- Dragonscale Gauntlets
+i(0, 10647);	-- Feathered Breastplate
+i(0, 10630);	-- Gauntlets of the Sea
+i(0, 10632);	-- Helm of Fire
+i(0, 10558);	-- Nightscape Boots
+i(0, 10507);	-- Nightscape Headband
+i(0, 10548);	-- Nightscape Pants
+i(0, 10499);	-- Nightscape Tunic
+i(0, 10487);	-- Thick Armor Kit
+i(0, 10518);	-- Turtle Scale Bracers
+i(0, 10511);	-- Turtle Scale Breastplate
+i(0, 10552);	-- Turtle Scale Helm
+i(0, 10556);	-- Turtle Scale Leggings
+i(0, 10621);	-- Wolfshead Helm
+-- ITEM --
+i(8390, 10562);	-- Big Voodoo Cloak
+i(8387, 10531);	-- Big Voodoo Mask
+i(8389, 10560);	-- Big Voodoo Pants
+i(8386, 10520);	-- Big Voodoo Robe
+i(8384, 10490);	-- Comfortable Leather Hat
+i(8409, 10516);	-- Nightscape Shoulders
+i(8385, 10509);	-- Turtle Scale Gloves
+i(8406, 10566);	-- Wild Leather Boots
+i(8408, 10574);	-- Wild Leather Cloak
+i(8405, 10546);	-- Wild Leather Helmet
+i(8407, 10572);	-- Wild Leather Leggings
+i(8403, 10529);	-- Wild Leather Shoulders
+i(8404, 10544);	-- Wild Leather Vest
+-- REMOVED --
+i(0, 10656);-- Dragonscale Leatherworking (4.0.3)
+i(0, 10658);-- Elemental Leatherworking (4.0.3)
+i(0, 10662);-- Leatherworking (Artisan) (8.0.1)
+i(8399, 10554);-- Tough Scorpid Boots (4.0.3)
+i(8397, 10533);-- Tough Scorpid Bracers (4.0.3)
+i(8395, 10525);-- Tough Scorpid Breastplate (4.0.3)
+i(8398, 10542);-- Tough Scorpid Gloves (4.0.3)
+i(8402, 10570);-- Tough Scorpid Helm (4.0.3)
+i(8401, 10568);-- Tough Scorpid Leggings (4.0.3)
+i(8400, 10564);-- Tough Scorpid Shoulders (4.0.3)
+i(0, 10660);-- Tribal Leatherworking (4.0.3)
+-- NYI --
+i(8388, 10550);	-- Nightscape Cloak
+
+------------------
+-- PATCH 1.1.2 --
+------------------
+-- TRAINER --
+i(0, 19047);	-- Cured Rugged Hide
+i(0, 20649);	-- Heavy Leather
+i(0, 20648);	-- Medium Leather
+i(0, 19058);	-- Rugged Armor Kit
+i(0, 19065);	-- Runic Leather Bracers
+i(0, 20650);	-- Thick Leather
+-- ITEM --
+i(17025, 20855);	-- Black Dragonscale Boots
+i(15759, 19085);	-- Black Dragonscale Breastplate
+i(15781, 19107);	-- Black Dragonscale Leggings
+i(15770, 19094);	-- Black Dragonscale Shoulders
+i(15737, 19063);	-- Chimeric Boots
+i(15746, 19073);	-- Chimeric Leggings
+i(15755, 19081);	-- Chimeric Vest
+i(17022, 20853);	-- Corehound Boots
+i(15758, 19084);	-- Devilsaur Gauntlets
+i(15772, 19097);	-- Devilsaur Leggings
+i(15740, 19066);	-- Frostsaber Boots
+i(15743, 19070);	-- Heavy Scorpid Belt
+i(15724, 19048);	-- Heavy Scorpid Bracers
+i(15738, 19064);	-- Heavy Scorpid Gauntlets
+i(15762, 19088);	-- Heavy Scorpid Helm
+i(15748, 19075);	-- Heavy Scorpid Leggings
+i(15735, 19062);	-- Ironfeather Shoulders
+i(15734, 19061);	-- Living Shoulders
+i(17023, 20854);	-- Molten Helm
+i(15741, 19067);	-- Stormshroud Pants
+i(15749, 19076);	-- Volcanic Breastplate
+i(15775, 19101);	-- Volcanic Shoulders
+i(15742, 19068);	-- Warbear Harness
+i(15725, 19049);	-- Wicked Leather Gauntlets
+-- REMOVED --
+i(15751, 19077);	-- Blue Dragonscale Breastplate (4.0.3)
+i(15763, 19089);	-- Blue Dragonscale Shoulders (4.0.3)
+i(15729, 19053);	-- Chimeric Gloves (4.0.3)
+i(15761, 19087);	-- Frostsaber Gloves (7.3.5)
+i(15747, 19074);	-- Frostsaber Leggings (7.3.5)
+i(15779, 19104);	-- Frostsaber Tunic (7.3.5)
+i(15726, 19050);	-- Green Dragonscale Breastplate (4.0.3)
+i(15733, 19060);	-- Green Dragonscale Leggings (4.0.3)
+i(15774, 19100);	-- Heavy Scorpid Shoulders (6.0.2)
+i(15727, 19051);	-- Heavy Scorpid Vest (4.0.3)
+i(15760, 19086);	-- Ironfeather Breastplate (4.0.3)
+i(15771, 19095);	-- Living Breastplate (4.0.3)
+i(15752, 19078);	-- Living Leggings (4.0.3)
+i(15730, 19054);	-- Red Dragonscale Breastplate (6.0.2)
+i(15776, 19102);	-- Runic Leather Armor (4.0.3)
+i(15745, 19072);	-- Runic Leather Belt (5.0.4)
+i(15731, 19055);	-- Runic Leather Gauntlets (5.0.4)
+i(15756, 19082);	-- Runic Leather Headband (2.3.0)
+i(15765, 19091);	-- Runic Leather Pants (5.0.4)
+i(15777, 19103);	-- Runic Leather Shoulders (4.0.3)
+i(15732, 19059);	-- Volcanic Leggings (4.0.3)
+i(15754, 19080);	-- Warbear Woolies (1.11.1)
+i(15773, 19098);	-- Wicked Leather Armor (4.0.3)
+i(15768, 19092);	-- Wicked Leather Belt (2.0.1)
+i(15728, 19052);	-- Wicked Leather Bracers (4.0.3)
+i(15744, 19071);	-- Wicked Leather Headband (4.0.3)
+i(15757, 19083);	-- Wicked Leather Pants (5.0.4)
+-- UNSURE --
+i(0, 19106);	-- Onyxia Scale Breastplate (Old) (4.0.3?)	-- (Reported as never implemented in LW.lua professions, exists on Classic-WotLK Wowhead. - NamexFace)
+i(15769, 19093);	-- Onyxia Scale Cloak	-- Removed with "rerelease", noted by players to still be obtainable via quest? -NamexFace
+i(15753, 19079);	-- Stormshroud Armor	-- Removed and added with TW
+i(15764, 19090);	-- Stormshroud Shoulders	-- Removed and added with TW
 
 ------------------
 -- PATCH 1.11.1 --
@@ -181,6 +320,25 @@ i(0, 28220);	-- Polar Gloves
 i(0, 28219);	-- Polar Tunic
 
 ------------------
+-- PATCH 2.0.0 --
+------------------
+--ITEM --
+i(29213, 32498);	-- Felstalker Belt [A]
+i(25738, 32498);	-- Felstalker Belt [H]
+i(29214, 32499);	-- Felstalker Bracers [A]
+i(25739, 32499);	-- Felstalker Bracers [H]
+i(29215, 32500);	-- Felstalker Breastplate [A]
+i(25740, 32500);	-- Felstalker Breastplate [H]
+i(29217, 32501);	-- Netherfury Belt [A]
+i(25741, 32501);	-- Netherfury Belt [H]
+i(29218, 32503);	-- Netherfury Boots [A]
+i(25743, 32503);	-- Netherfury Boots [H]
+i(29219, 32502);	-- Netherfury Leggings [A]
+i(25742, 32502);	-- Netherfury Leggings [H]
+-- REMOVED --
+i(0, 32549);	-- Leatherworking (Master) (8.0.1)
+
+------------------
 -- PATCH 2.0.1 --
 ------------------
 -- TRAINER --
@@ -204,8 +362,20 @@ i(0, 32479);	-- Wild Draenish Gloves
 i(0, 32480);	-- Wild Draenish Leggings
 i(0, 32481);	-- Wild Draenish Vest
 -- ITEM --
-
-
+i(25726, 32482);	-- Comfortable Insoles
+i(25733, 32493);	-- Fel Leather Boots
+i(25732, 32490);	-- Fel Leather Gloves
+i(25734, 32494);	-- Fel Leather Leggings
+i(25737, 32497);	-- Heavy Clefthoof Boots
+i(25736, 32496);	-- Heavy Clefthoof Leggings
+i(25735, 32495);	-- Heavy Clefthoof Vest
+i(25722, 32458);	-- Magister's Armor Kit
+i(25725, 32461);	-- Riding Crop
+i(25729, 32487);	-- Stylin' Adventure Hat
+i(25731, 32488);	-- Stylin' Crimson Hat
+i(25730, 32489);	-- Stylin' Jungle Hat
+i(25728, 32485);	-- Stylin' Purple Hat
+i(25721, 32457);	-- Vindicator's Armor Kit
 
 ------------------
 -- PATCH 2.1.0 --
@@ -1169,7 +1339,7 @@ i(187749, 359669);	-- Crafter's Mark of the First Ones
 i(187785, 359702);	-- Vestige of the Eternal
 
 ------------------
--- PATCH 10.0.0 --
+-- PATCH 10.0.2 --
 ------------------
 -- TRAINER --
 i(0, 366249);	-- Dragon Isles Leatherworking

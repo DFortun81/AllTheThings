@@ -1,6 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
+
 root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	inst(1186, {	-- Spires of Ascension
 		["coord"] = { 58.5, 28.5, BASTION },
@@ -117,7 +120,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(NormalPlus, {
 				e(2399, {	-- Kin-Tara
 					["crs"] = {
 						163077,	-- Azules
@@ -170,56 +173,11 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
-				e(2399, {	-- Kin-Tara
-					["crs"] = {
-						163077,	-- Azules
-						162059,	-- Kin-Tara
-					},
-					["g"] = {
-						i(180097),	-- Quarterstaff of Discordant Ethic
-						i(180115),	-- Azure-Venom Choker
-						i(180100),	-- Forsworn Stalker's Hauberk
-						i(180103),	-- Winged Hunters' Gloves
-						i(180109),	-- Kin-Tara's Baleful Cord
-						i(180101),	-- Warboots of Ruthless Conviction
-					},
-				}),
-				e(2416, {	-- Ventunax
-					["crs"] = { 162058 },	-- Ventunax
-					["g"] = {
-						i(180095),	-- Penitent Edge
-						i(180104),	-- Distorted Construct's Gauntlets
-						i(180110),	-- Dark Praetorian's Clasp
-						i(180111),	-- Shadowhirl Waistwrap
-						i(180102),	-- Dark Stride Footwraps
-						i(180116),	-- Overcharged Anima Battery
-					},
-				}),
-				e(2414, {	-- Oryphrion
-					["crs"] = { 162060 },	-- Oryphrion
-					["g"] = {
-						i(180112),	-- The Philosopher
-						i(180106),	-- Vicious Surge Faceguard
-						i(180113),	-- Thunderous Echo Vambraces
-						i(180105),	-- Absonant Construct's Handguards
-						i(180107),	-- Purge Protocol Legwraps
-						i(180118),	-- Anima Field Emitter
-						i(180117),	-- Empyreal Ordnance
-					},
-				}),
+			d(HeroicPlus, {
 				e(2412, {	-- Devos, Paragon of Doubt
 					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
 					["g"] = {
 						ach(14324),	-- Heroic: Spires of Ascension
-						i(180096),	-- Devos' Cacophonous Poleaxe
-						i(180123),	-- Drape of Twisted Loyalties
-						i(180099),	-- Breastplate of Brutal Dissonance
-						i(180098),	-- Sinister Requiem Vestments
-						i(180114),	-- Fallen Paragon's Armguards
-						i(180108),	-- Abyssal Disharmony Breeches
-						i(180119),	-- Boon of the Archon
-						i(183054),	-- Mysterious Soul Mirror
 					},
 				}),
 			}),
@@ -227,42 +185,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				n(ACHIEVEMENTS, {
 					ach(14327),	-- I Can See My House From Here
 				}),
-				e(2399, {	-- Kin-Tara
-					["crs"] = {
-						163077,	-- Azules
-						162059,	-- Kin-Tara
-					},
-					["g"] = {
-						i(180097),	-- Quarterstaff of Discordant Ethic
-						i(180115),	-- Azure-Venom Choker
-						i(180100),	-- Forsworn Stalker's Hauberk
-						i(180103),	-- Winged Hunters' Gloves
-						i(180109),	-- Kin-Tara's Baleful Cord
-						i(180101),	-- Warboots of Ruthless Conviction
-					},
-				}),
-				e(2416, {	-- Ventunax
-					["crs"] = { 162058 },	-- Ventunax
-					["g"] = {
-						i(180095),	-- Penitent Edge
-						i(180104),	-- Distorted Construct's Gauntlets
-						i(180110),	-- Dark Praetorian's Clasp
-						i(180111),	-- Shadowhirl Waistwrap
-						i(180102),	-- Dark Stride Footwraps
-						i(180116),	-- Overcharged Anima Battery
-					},
-				}),
 				e(2414, {	-- Oryphrion
 					["crs"] = { 162060 },	-- Oryphrion
 					["g"] = {
 						ach(14331),	-- Goliath Offline
-						i(180112),	-- The Philosopher
-						i(180106),	-- Vicious Surge Faceguard
-						i(180113),	-- Thunderous Echo Vambraces
-						i(180105),	-- Absonant Construct's Handguards
-						i(180107),	-- Purge Protocol Legwraps
-						i(180118),	-- Anima Field Emitter
-						i(180117),	-- Empyreal Ordnance
 					},
 				}),
 				e(2412, {	-- Devos, Paragon of Doubt
@@ -271,14 +197,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 						ach(14325),	-- Mythic: Spires of Ascension
 						ach(14384),	-- Mythic: Spires of Ascension Guild Run
 						ach(14323),	-- ExSPEARiential
-						i(180096),	-- Devos' Cacophonous Poleaxe
-						i(180123),	-- Drape of Twisted Loyalties
-						i(180099),	-- Breastplate of Brutal Dissonance
-						i(180098),	-- Sinister Requiem Vestments
-						i(180114),	-- Fallen Paragon's Armguards
-						i(180108),	-- Abyssal Disharmony Breeches
-						i(180119),	-- Boon of the Archon
-						i(183054),	-- Mysterious Soul Mirror
 					},
 				}),
 			}),

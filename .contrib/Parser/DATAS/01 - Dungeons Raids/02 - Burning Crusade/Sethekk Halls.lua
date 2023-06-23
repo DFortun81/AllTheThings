@@ -172,7 +172,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(29669, {	-- Pattern: Shadow Armor Kit
 					["cr"] = 18320,	-- Time-Lost Shadowmage
 				}),
-				i(25731, {	-- Pattern: Stylin' Crimson Hat
+				i(25731, {	-- Pattern: Stylin' Crimson Hat (RECIPE!)
 					["cr"] = 18322,	-- Sethekk Ravenguard
 				}),
 			}),

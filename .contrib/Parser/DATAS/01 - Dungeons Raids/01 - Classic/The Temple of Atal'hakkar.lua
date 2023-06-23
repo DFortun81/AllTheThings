@@ -582,7 +582,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version)
 					["timeline"] = { "added 4.3.0" },
 				}),
-				i(15733, {	-- Pattern: Green Dragonscale Leggings (Old Version)
+				i(15733, {	-- Pattern: Green Dragonscale Leggings (Old Version) (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 				}),
 				i(78345, {	-- Pattern: Green Dragonscale Leggings (New Version)

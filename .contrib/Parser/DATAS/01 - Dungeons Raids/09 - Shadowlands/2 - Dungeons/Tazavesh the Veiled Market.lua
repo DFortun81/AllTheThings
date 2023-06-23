@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
+
 root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
 		["coord"] = { 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
@@ -171,7 +173,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 					}),
 				},
 			}),
-			d(HEROIC_DUNGEON, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
+			-- #if AFTER 9.2.0
+			d(HeroicPlus, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
 					["g"] = {
@@ -249,7 +252,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(185804),	-- Harmonious Spaulders
 						i(185806),	-- Improvisational Cinch
 						i(185789),	-- Sabatons of Measured Time
-						ig(187256, {	-- Hips' Spare Fedora
+						i(187256, {	-- Hips' Spare Fedora
 							["customCollect"] = "SL_COV_VEN",
 						}),
 					},
@@ -342,6 +345,65 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 								{ "i", 187173, 1 },	-- Wriggling Tentacle
 							},
 						}),
+					},
+				}),
+				e(2436, {	-- Mailroom Mayhem
+					["crs"] = { 175646 },	-- P.O.S.T Master
+					["g"] = {
+						ach(15106),	-- Quality Control
+						i(185844, {	-- Ticking Sack of Terror
+							["timeline"] = { ADDED_9_1_0 , REMOVED_9_2_0 },
+						}),
+						i(190652, {	-- Ticking Sack of Terror
+							["timeline"] = { ADDED_9_2_0 },
+						}),
+					},
+				}),
+				-- #if AFTER 9.2.5
+				e(2451, {	-- So'azmi
+					["crs"] = { 175806 },	-- So'azmi
+					["g"] = {
+						ach(15650, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: Streets of Wonder
+					},
+				}),
+				-- #endif
+				e(2448, {	-- Hylbrande
+					["crs"] = { 175663 },	-- Hylbrande
+					["g"] = {
+						ach(15179),	-- This is Fine
+					},
+				}),
+				e(2455, {	-- So'leah
+					["crs"] = { 177269 },	-- So'leah
+					["g"] = {
+						ach(15178, {	-- Fake It 'Til You Make It
+							i(186637),	-- Tazavesh Gearglider (MOUNT!)
+						}),
+						ach(15177),	-- Tazavesh, the Veiled Market
+						ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
+						ach(15652, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: So'leah's Gambit
+						i(185818, {	-- So'leah's Secret Technique
+							["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
+						}),
+						i(185047, {	-- Yak Soul
+							["description"] = "Drops on Hard Mode or M+.",
+						}),
+					},
+				}),
+			}),
+			-- #else
+			d(MYTHIC_DUNGEON, {
+				e(2437, {	-- Zo'phex the Sentinel
+					["crs"] = { 175616 },	-- Zo'phex
+					["g"] = {
+						ach(15109, {	-- Will it Blend?
+							["cost"] = {
+								{ "i", 187179, 1 },	-- Glow Sticks
+								{ "i", 187171, 1 },	-- Organic Melon
+								{ "i", 187178, 1 },	-- Sc'ootie's Favorite Plushie
+								{ "i", 187173, 1 },	-- Wriggling Tentacle
+							},
+						}),
 						i(183468),	-- Born Anew
 						i(183498),	-- Cloaked in Shadows
 						i(182110),	-- Crippling Hex
@@ -400,7 +462,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(185846),	-- Miniscule Mailemental in an Envelope
 						i(185844, {	-- Ticking Sack of Terror
 							["timeline"] = { ADDED_9_1_0 , REMOVED_9_2_0 },
-							}),
+						}),
 						i(190652, {	-- Ticking Sack of Terror
 							["timeline"] = { ADDED_9_2_0 },
 						}),
@@ -422,7 +484,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(185804),	-- Harmonious Spaulders
 						i(185806),	-- Improvisational Cinch
 						i(185789),	-- Sabatons of Measured Time
-						ig(187256, {	-- Hips' Spare Fedora
+						i(187256, {	-- Hips' Spare Fedora
 							["customCollect"] = "SL_COV_VEN",
 						}),
 					},
@@ -519,6 +581,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 					},
 				}),
 			}),
+			-- #endif
 		},
 	}),
 })));

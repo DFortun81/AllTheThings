@@ -621,11 +621,17 @@ currency = function(id, t)								-- Create a CURRENCY Object
 	return struct("currencyID", id, t);
 end
 d = function(id, t)										-- Create a DIFFICULTY Object
-	t = struct("difficultyID", id, t);
-	-- #if AFTER MOP
-	local db = DifficultyDB[id];
-	if db then t.modID = db.modID; end
-	-- #endif
+	-- Multiple Difficulties
+	if type(id) == "table" then
+		t = struct("difficultyID", MultiDifficultyID(id), t);
+		t.difficulties = id;
+	else
+		t = struct("difficultyID", id, t);
+		-- #if AFTER MOP
+		local db = DifficultyDB[id];
+		if db then t.modID = db.modID; end
+		-- #endif
+	end
 	return t;
 end
 -- #if AFTER WRATH

@@ -1932,7 +1932,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(10593, {	-- Imperfect Draenethyst Fragment (drops from pretty much the whole zone)
 					["description"] = "A rare zone drop from any mob in the zone.",
 				}),
-				i(15727, {	-- Pattern: Heavy Scorpid Vest
+				i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					-- #if AFTER TBC
 					["crs"] = {

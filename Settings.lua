@@ -285,6 +285,7 @@ settings.Initialize = function(self)
 		app:Synchronize(true)
 	end
 
+	app._SettingsRefresh = GetTimePreciseSec()
 	settings._Initialize = true
 end
 local function rawcopy(source, copy)
@@ -997,7 +998,7 @@ settings.CreateScrollFrame = function(self)
 			child:SetPoint("TOP", 0, CurrentValue)
 		end, scrollFrame)
 		scrollFrame:SetScript("OnMouseWheel", function(self, delta)
-			scrollbar:ScrollStepInDirection(-delta)
+  	scrollbar:ScrollStepInDirection(-delta)
 		end)
 		
 		child.SetMaxScroll = function(frame, maxValue)
@@ -1033,7 +1034,7 @@ settings.CreateScrollFrame = function(self)
 			scrollbar:SetValue(0)
 		end
 	end
-	
+
 	-- if settings.MostRecentTab then 
 	-- 	table.insert(settings.MostRecentTab.objects, scrollbar)
 	-- 	table.insert(settings.MostRecentTab.objects, scrollFrame)
@@ -1393,8 +1394,10 @@ settings.UpdateMode = function(self, doRefresh)
 		app:RefreshData(nil,nil,true)
 		app._SettingsRefresh = GetTimePreciseSec()
 	else
-		-- lazy refresh instead
-		app:RefreshData(true,nil,true)
+		-- lazy refresh instead if ATT is ready
+		if app.IsReady then
+			app:RefreshData(true,nil,true)
+		end
 	end
 
 	-- ensure the settings pane itself is refreshed

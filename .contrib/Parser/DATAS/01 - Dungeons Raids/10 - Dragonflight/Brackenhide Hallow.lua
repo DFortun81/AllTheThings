@@ -1,6 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
+
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1196, {	-- Brackenhide Hollow
 		["coord"] = { 11.6, 48.8, THE_AZURE_SPAN },
@@ -26,7 +29,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(NormalPlus, {
 				e(2471, {	-- Hackclaw's War-Band
 					["crs"] = {
 						186124,	-- Gashtooth
@@ -78,55 +81,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
-				e(2471, {	-- Hackclaw's War-Band
-					["crs"] = {
-						186124,	-- Gashtooth
-						186122,	-- Rira Hackclaw
-						186125,	-- Tricktotem
-					},
-					["g"] = {
-						i(193674),	-- Ancestral Stone Shaper
-						i(193671),	-- Bloodied Wedding Ring
-						i(193672),	-- Frenzying Signoll Flare
-						i(193675),	-- Poached Kalu'ak Spear
-						i(193673),	-- Ravenous Pursuer's Footwraps
-					},
-				}),
-				e(2473, {	-- Treemouth
-					["crs"] = { 186120 },	-- Treemouth
-					["g"] = {
-						i(193654),	-- Ancient Rot Walkers
-						i(193657),	-- Binders of the Moldering
-						i(193658),	-- Crushing Bough of Deterioration
-						i(193653),	-- Mask of Imperishable Leaves
-						i(193655),	-- Rooted Shoulders of Putrefaction
-						i(193656),	-- Swollen Bark Clasp
-						i(193652),	-- Treemouth's Festering Splinter
-					},
-				}),
-				e(2472, {	-- Gutshot
-					["crs"] = { 186116 },	-- Gutshot
-					["g"] = {
-						i(193667),	-- Boastful Stalker's Epaulets
-						i(193793),	-- Ferocious Hyena Hidebinders
-						i(193670),	-- Gutshot's Trophy Hunter
-						i(193669),	-- Trapmaster's Utility Belt
-						i(193666),	-- Tuskarr Bone Necklace
-					},
-				}),
+			d(HeroicPlus, {
 				e(2474, {	-- Decatriarch Wratheye
 					["crs"] = { 186121 },	-- Decatriarch Wratheye
 					["g"] = {
 						ach(16256),	-- Heroic: Brackenhide Hollow
-						i(193661),	-- Blight Weaver's Clutches
-						i(193665),	-- Decatriarch's Bone Pestle
-						i(193663),	-- Decay Mother's Wrathful Gaze
-						i(193662),	-- Densified Ooze Tassets
-						i(193660),	-- Idol of Pure Decay
-						i(193664),	-- Rot-Carved Totemic Shank
-						i(197396),	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
-						i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 					},
 				}),
 			}),
@@ -142,34 +101,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					},
 					["g"] = {
 						ach(16296),	-- Growlbossify
-						i(193674),	-- Ancestral Stone Shaper
-						i(193671),	-- Bloodied Wedding Ring
-						i(193672),	-- Frenzying Signoll Flare
-						i(193675),	-- Poached Kalu'ak Spear
-						i(193673),	-- Ravenous Pursuer's Footwraps
 					},
 				}),
 				e(2473, {	-- Treemouth
 					["crs"] = { 186120 },	-- Treemouth
 					["g"] = {
 						ach(16430),	-- All Bark, All Bite
-						i(193654),	-- Ancient Rot Walkers
-						i(193657),	-- Binders of the Moldering
-						i(193658),	-- Crushing Bough of Deterioration
-						i(193653),	-- Mask of Imperishable Leaves
-						i(193655),	-- Rooted Shoulders of Putrefaction
-						i(193656),	-- Swollen Bark Clasp
-						i(193652),	-- Treemouth's Festering Splinter
-					},
-				}),
-				e(2472, {	-- Gutshot
-					["crs"] = { 186116 },	-- Gutshot
-					["g"] = {
-						i(193667),	-- Boastful Stalker's Epaulets
-						i(193793),	-- Ferocious Hyena Hidebinders
-						i(193670),	-- Gutshot's Trophy Hunter
-						i(193669),	-- Trapmaster's Utility Belt
-						i(193666),	-- Tuskarr Bone Necklace
 					},
 				}),
 				e(2474, {	-- Decatriarch Wratheye
@@ -178,14 +115,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						ach(16257),	-- Mythic: Brackenhide Hollow
 						ach(17097),	-- Mythic: Brackenhide Hollow Guild Run
 						ach(16404),	-- So You Can Kill This in a Way That Matters...
-						i(193661),	-- Blight Weaver's Clutches
-						i(193665),	-- Decatriarch's Bone Pestle
-						i(193663),	-- Decay Mother's Wrathful Gaze
-						i(193662),	-- Densified Ooze Tassets
-						i(193660),	-- Idol of Pure Decay
-						i(193664),	-- Rot-Carved Totemic Shank
-						i(197396),	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
-						i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 					},
 				}),
 			}),

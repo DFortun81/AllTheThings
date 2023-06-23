@@ -2392,7 +2392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 67312},	-- Formula: Magic Lamp (RECIPE!)
 						{"exclude","itemID",
 							6343,	-- Formula: Enchant Chest - Lesser Mana
-						    67308,	-- Formula: Enchanted Lantern
+						    67308,	-- Formula: Enchanted Lantern (RECIPE!)
 						},
 					},
 				}),

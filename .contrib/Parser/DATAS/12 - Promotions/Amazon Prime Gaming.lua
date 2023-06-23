@@ -25,8 +25,12 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_10_0_7, "removed 10.1.0.49741" },
 			}),
 			i(45037, {	-- Epic Purple Shirt
-				["description"] = "Amazon Prime Gaming reward from May 25th 2023 till June 22nd 2023.",
+				["description"] = "Amazon Prime Gaming reward from May 25th 2023 till June 29th 2023.",
 				["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.99999" },
+			}),
+			i(71718, {	-- Swift Shorestrider
+				["description"] = "Amazon Prime Gaming reward from June 29th 2023 till July 27th 2023.",
+				["timeline"] = { "added 10.1.0.50000", "removed 10.1.0.99999" },
 			}),
 		},
 	}),

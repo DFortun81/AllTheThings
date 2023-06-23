@@ -1,6 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
+local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
+
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1198, {	-- The Nokhud Offensive
 		["coord"] = { 60.9, 39.1, OHNAHRAN_PLAINS },
@@ -28,11 +31,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					["crs"] = { 199616 },	-- Washengtu
 				}),
 			}),
-			n(MYTHIC_PLUS, bubbleDownSelf({
-				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
-			},{
-				i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
-			})),
 			n(QUESTS, {
 				q(66690, {	-- The Final Ancestor
 					["sourceQuests"] = {
@@ -67,7 +65,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(NormalPlus, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
@@ -120,56 +118,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					},
 				}),
 			}),
-			d(HEROIC_DUNGEON, {
-				e(2498, {	-- Granyth
-					["crs"] = { 186616 },	-- Granyth
-					["g"] = {
-						i(193690),	-- Drake Hunter Shoulderpads
-						i(193694),	-- Drake Slayer's Greaves
-						i(193689),	-- Granyth's Enduring Scale
-						i(193695),	-- Quarry Slayer Glaive
-						i(193693),	-- Shikaar Ranger Bracers
-						i(193692),	-- Stoneroot Headdress
-					},
-				}),
-				e(2497, {	-- The Raging Tempest
-					["crs"] = { 186615 },	-- The Raging Tempest
-					["g"] = {
-						i(193697),	-- Bottle of Spiraling Winds
-						i(193699),	-- Staff of Violent Storms
-						i(193700),	-- Strike Twice
-						i(193698),	-- Thrashing Wind Vambraces
-						i(193696),	-- Thunderous Downburst Ring
-					},
-				}),
-				e(2478, {	-- Teera and Maruuk
-					["crs"] = {
-						186338,	-- Maruuk
-						186339,	-- Teera
-					},
-					["g"] = {
-						i(193681),	-- Bow of the First Khanam
-						i(193677),	-- Furious Ragefeather
-						i(193679),	-- Idol of Trampling Hooves
-						i(193678),	-- Miniature Singing Stone
-						i(193680),	-- Tunic of the Eternal Hunt
-						i(193676),	-- Ukhel Ancestry Beads
-					},
-				}),
+			d(HeroicPlus, {
 				e(2477, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {
 						ach(16276),	-- Heroic: The Nokhud Offensive
-						i(193683),	-- Blessed Ohn'ir Robes
-						i(193687),	-- Koroleth's Crackling Dagger
-						i(193684),	-- Legguards of Adamant Rule
-						i(193685),	-- Lightning-Charged Striders
-						i(193686),	-- Nokhud Traditionalist's Pauldrons
-						i(193688),	-- Stormslash
-						i(201929),	-- Stolen Breath of Ohn'ahra
-						i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
-						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
-						i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
 					},
 				}),
 			}),
@@ -177,26 +130,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				n(ACHIEVEMENTS, {
 					ach(16620),	-- Ohuna Incubation
 				}),
-				e(2498, {	-- Granyth
-					["crs"] = { 186616 },	-- Granyth
-					["g"] = {
-						i(193690),	-- Drake Hunter Shoulderpads
-						i(193694),	-- Drake Slayer's Greaves
-						i(193689),	-- Granyth's Enduring Scale
-						i(193695),	-- Quarry Slayer Glaive
-						i(193693),	-- Shikaar Ranger Bracers
-						i(193692),	-- Stoneroot Headdress
-					},
-				}),
 				e(2497, {	-- The Raging Tempest
 					["crs"] = { 186615 },	-- The Raging Tempest
 					["g"] = {
 						ach(16447),	-- What Are The Chances...
-						i(193697),	-- Bottle of Spiraling Winds
-						i(193699),	-- Staff of Violent Storms
-						i(193700),	-- Strike Twice
-						i(193698),	-- Thrashing Wind Vambraces
-						i(193696),	-- Thunderous Downburst Ring
 					},
 				}),
 				e(2478, {	-- Teera and Maruuk
@@ -206,12 +143,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					},
 					["g"] = {
 						ach(16456),	-- Weapons of the Maruukai
-						i(193681),	-- Bow of the First Khanam
-						i(193677),	-- Furious Ragefeather
-						i(193679),	-- Idol of Trampling Hooves
-						i(193678),	-- Miniature Singing Stone
-						i(193680),	-- Tunic of the Eternal Hunt
-						i(193676),	-- Ukhel Ancestry Beads
 					},
 				}),
 				e(2477, {	-- Balakar Khan
@@ -220,19 +151,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						ach(16277),	-- Mythic: The Nokhud Offensive
 						ach(17102),	-- Mythic: The Nokhud Offensive Guild Run
 						ach(16602),	-- Nokhud Deed Goes Unnoticed
-						i(193683),	-- Blessed Ohn'ir Robes
-						i(193687),	-- Koroleth's Crackling Dagger
-						i(193684),	-- Legguards of Adamant Rule
-						i(193685),	-- Lightning-Charged Striders
-						i(193686),	-- Nokhud Traditionalist's Pauldrons
-						i(193688),	-- Stormslash
-						i(201929),	-- Stolen Breath of Ohn'ahra
-						i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
-						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
-						i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
 					},
 				}),
 			}),
+			n(MYTHIC_PLUS, bubbleDownSelf({
+				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
+			},{
+				i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
+			})),
 		},
 	})
 })));

@@ -2798,10 +2798,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 81.8, 17.8, SILITHUS },
 					-- #endif
 					["groups"] = {
-						i(15724, {	-- Pattern: Heavy Scorpid Bracers
+						i(15724, {	-- Pattern: Heavy Scorpid Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15762, {	-- Pattern: Heavy Scorpid Helm
+						i(15762, {	-- Pattern: Heavy Scorpid Helm (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

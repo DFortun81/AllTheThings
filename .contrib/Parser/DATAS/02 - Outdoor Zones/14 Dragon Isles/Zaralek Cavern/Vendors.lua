@@ -16,6 +16,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				i(205794),	-- Beetle Juice
 				i(205793),	-- Skitter Souf-fly
 			}),
+			n(202758, {
+				["coord"] = { 56.6, 55.1, ZARALEK_CAVERN },
+				["g"] = {
+					i(203446, {	-- Soothing Incense
+						["timeline"] = { ADDED_10_1_5 },
+					}),
+				},
+			}),
 			n(201004, {	-- Explorer Bezzert <Intrepid Pet Trainer>
 				["coord"] = { 52.4, 66.0, ZARALEK_CAVERN },
 				["g"] = {

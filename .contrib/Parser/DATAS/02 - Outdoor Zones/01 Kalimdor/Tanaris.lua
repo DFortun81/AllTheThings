@@ -5348,7 +5348,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(72028, {	-- Pattern: Tough Scorpid Boots
 					["timeline"] = { "added 4.0.3" },
 				}),
-				i(8399, {	-- Pattern: Tough Scorpid Boots
+				i(8399, {	-- Pattern: Tough Scorpid Boots (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5615,	-- Wastewander Rogue
@@ -5357,7 +5357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(72026, {	-- Pattern: Tough Scorpid Bracers
 					["timeline"] = { "added 4.0.3" },
 				}),
-				i(8397, {	-- Pattern: Tough Scorpid Bracers
+				i(8397, {	-- Pattern: Tough Scorpid Bracers (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5617,	-- Wastewander Shadow Mage
@@ -5366,7 +5366,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(72029, {	-- Pattern: Tough Scorpid Breastplate
 					["timeline"] = { "added 4.0.3" },
 				}),
-				i(8395, {	-- Pattern: Tough Scorpid Breastplate
+				i(8395, {	-- Pattern: Tough Scorpid Breastplate (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5618,	-- Wastewander Bandit
@@ -5375,7 +5375,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(72025, {	-- Pattern: Tough Scorpid Gloves
 					["timeline"] = { "added 4.0.3" },
 				}),
-				i(8398, {	-- Pattern: Tough Scorpid Gloves
+				i(8398, {	-- Pattern: Tough Scorpid Gloves (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5616,	-- Wastewander Thief
@@ -5384,7 +5384,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(72033, {	-- Pattern: Tough Scorpid Helm
 					["timeline"] = { "added 4.0.3" },
 				}),
-				i(8402, {	-- Pattern: Tough Scorpid Helm
+				i(8402, {	-- Pattern: Tough Scorpid Helm (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
@@ -5397,7 +5397,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(72030, {	-- Pattern: Tough Scorpid Leggings
 					["timeline"] = { "added 4.0.3" },
 				}),
-				i(8401, {	-- Pattern: Tough Scorpid Leggings
+				i(8401, {	-- Pattern: Tough Scorpid Leggings (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5615,	-- Wastewander Rogue
@@ -5406,7 +5406,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(72027, {	-- Pattern: Tough Scorpid Shoulders
 					["timeline"] = { "added 4.0.3" },
 				}),
-				i(8400, {	-- Pattern: Tough Scorpid Shoulders
+				i(8400, {	-- Pattern: Tough Scorpid Shoulders (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
 					["crs"] = {

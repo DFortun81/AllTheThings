@@ -2147,10 +2147,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.2, 90.8, AZSHARA },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(15751, {	-- Pattern: Blue Dragonscale Breastplate
+						i(15751, {	-- Pattern: Blue Dragonscale Breastplate (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(15729, {	-- Pattern: Chimeric Gloves
+						i(15729, {	-- Pattern: Chimeric Gloves (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -2249,7 +2249,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 6375,	-- Thunderhead Hippogryph
 				}),
 				-- #endif
-				i(15763, {	-- Pattern: Blue Dragonscale Shoulders
+				i(15763, {	-- Pattern: Blue Dragonscale Shoulders (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 6146,	-- Cliff Breaker
 				}),
@@ -2261,15 +2261,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
 					["cr"] = 7864,	-- Lingering Highborne
 				}),
-				i(15753, {	-- Pattern: Stormshroud Armor
+				i(15753, {	-- Pattern: Stormshroud Armor (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 6138,	-- Arkkoran Oracle
 				}),
-				i(15764, {	-- Pattern: Stormshroud Shoulders
+				i(15764, {	-- Pattern: Stormshroud Shoulders (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 6144,	-- Son of Arkkoroc
 				}),
-				i(15728, {	-- Pattern: Wicked Leather Bracers
+				i(15728, {	-- Pattern: Wicked Leather Bracers (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
 					["cr"] = 6201,	-- Legashi Rogue
 				}),

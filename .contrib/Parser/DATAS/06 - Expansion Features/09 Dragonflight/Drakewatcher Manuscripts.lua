@@ -989,6 +989,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203326),	-- Winding Slitherdrake: Helm (DM!)
 			i(203339),	-- Winding Slitherdrake: Impaler Horns (DM!)
 			i(203316),	-- Winding Slitherdrake: Large Finned Crest (DM!)
+			i(203363),	-- Winding Slitherdrake: Large Finned Throat (DM!)
 			i(203347),	-- Winding Slitherdrake: Large Spiked Nose (DM!)
 			i(203309),	-- Winding Slitherdrake: Long Chin Horn (DM!)
 			i(203341),	-- Winding Slitherdrake: Long Jaw Horns (DM!)
@@ -1022,7 +1023,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203329),	-- Winding Slitherdrake: Heavy Horns
 			i(203306),	-- Winding Slitherdrake: Horned Brow
 			i(203360),	-- Winding Slitherdrake: Large Finned Tail
-			i(203363),	-- Winding Slitherdrake: Large Finned Throat
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor
 			i(203336),	-- Winding Slitherdrake: Paired Horns
 			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor

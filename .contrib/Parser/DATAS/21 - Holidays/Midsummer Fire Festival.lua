@@ -171,9 +171,9 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { "added 6.0.1.18594" },
 	}),
-	i(116435, {	-- Flamin' Ring of Flashiness (TOY!)
+	i(206038, {	-- Flamin' Ring of Flashiness (TOY!)
 		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
-		["timeline"] = { "added 10.1.0.00000" },
+		["timeline"] = { "added 10.1.0.50000" },
 	}),
 	i(166746, {	-- Fire Eater's Hearthstone (TOY!)
 		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
@@ -521,6 +521,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { "added 7.2.0.23478" },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
+			ach(17737, {	-- Flame Keeper of the Dragon Isles (A)
+				["timeline"] = { "added 10.1.0.50000" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 		})),
 		n(FACTION_HEADER_HORDE, bubbleDown({ ["races"] = HORDE_ONLY }, {
 			ach(1039, {	-- The Flame Keeper (Horde)
@@ -609,6 +613,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			}),
 			ach(11282, {	-- Flame Keeper of the Broken Isles (H)
 				["timeline"] = { "added 7.2.0.23478" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
+			ach(17738, {	-- Flame Keeper of the Dragon Isles (H)
+				["timeline"] = { "added 10.1.0.50000" },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13340, {	-- Flame Keeper of Zandalar (H)
@@ -1597,10 +1605,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
 				["timeline"] = { "added 4.0.1" },
 			}),
+			q(75617, {	-- Honor the Flame — Ohn'ahran Plains
+				["qg"] = 204413,	-- Ohn'ahran Plains Flame Guardian
+				["coord"] = { 63.9, 35.0, OHNAHRAN_PLAINS },
+				["timeline"] = { "added 10.1.0.50000" },
+			}),
+			q(75640, {	-- Honor the Flame — The Azure Span
+				["qg"] = 204414,	-- Azure Span Flame Guardian
+				["coord"] = { 12.2, 47.6, THE_AZURE_SPAN },
+				["timeline"] = { "added 10.1.0.50000" },
+			}),
+			q(75647, {	-- Honor the Flame — The Forbidden Reach
+				["qg"] = 204416,	-- Forbidden Reach Flame Guardian
+				["coord"] = { 35.0, 60.9, THE_FORBIDDEN_REACH },
+				["timeline"] = { "added 10.1.0.50000" },
+			}),
+			q(75398, {	-- Honor the Flame — The Waking Shores
+				["qg"] = 203749,	-- Waking Shores Flame Guardian
+				["coord"] = { 46.0, 82.9, THE_WAKING_SHORES },
+				["timeline"] = { "added 10.1.0.50000" },
+			}),
+			q(75645, {	-- Honor the Flame — Valdrakken
+				["qg"] = 204415,	-- Thaldraszus Flame Guardian
+				["coord"] = { 53.4, 62.3, VALDRAKKEN },
+				["timeline"] = { "added 10.1.0.50000" },
+			}),
 			q(29031, {	-- Honor the Flame — Vashj'ir
 				["qg"] = 51697,	-- Vashj'ir Flame Guardian
 				["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
 				["timeline"] = { "added 4.0.1" },
+			}),
+			q(75650, {	-- Honor the Flame — Zaralek Cavern
+				["qg"] = 204417,	-- Zaralek Cavern Flame Guardian
+				["coord"] = { 55.2, 55.4, ZARALEK_CAVERN },
+				["timeline"] = { "added 10.1.0.50000" },
 			}),
 		})),
 		n(FACTION_HEADER_ALLIANCE, {

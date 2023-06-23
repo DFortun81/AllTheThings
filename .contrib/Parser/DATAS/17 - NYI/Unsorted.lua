@@ -282,9 +282,6 @@ root(ROOTS.Unsorted, {
 			i(202265),	-- Wheel of Whelpwhisper Brie
 			i(202266),	-- Bag of Spicy Pet Snacks
 			i(202270),	-- [DNT] Twice-Woven Rope
-			i(202286),	-- Warmed Coal
-			i(202288),	-- Obsidian Gemstone
-			i(202292),	-- Crystalline Shell
 			i(202312),	-- Juicy Mammoth Steak
 			i(202313),	-- Echolocator
 			i(202330),	-- Fine-Pointed Quill
@@ -306,12 +303,6 @@ root(ROOTS.Unsorted, {
 			i(202696),	-- Comforting Ducky
 			i(202697),	-- Crimson Cushion
 			i(203386),	-- Box of Leapmaize Crackers
-			i(203432),	-- Bag of Spicy Pet Snacks
-			i(203433),	-- Wheel of Whelpwhisper Brie
-			i(203443),	-- Box of Leapmaize Crackers
-			i(203445),	-- Stuffed Doll
-			i(203446),	-- Soothing Incense
-			i(203451),	-- Decorative Shrubbery
 			i(203621),	-- Posidriss's Whistle
 			i(203624),	-- Zhusadormu's Whistle
 			i(203625),	-- Belastrasza's Whistle
@@ -1058,9 +1049,6 @@ root(ROOTS.Unsorted, {
 				i(204063),	-- Windsor's Journal
 				i(205410),	-- Pungent Morsel
 			}),
-			filter(TOYS, {
-				i(206038),	-- Flamin' Ring of Flashiness (TOY!) [Midsummer?]
-			}),
 			n(WEAPONS, {
 				i(204638),	-- Sunder Wing
 			}),
@@ -1105,22 +1093,10 @@ root(ROOTS.Unsorted, {
 				-- 10.1.0.48480
 				q(71053),	-- Hermit Kill Quest
 				q(72027),	-- [DNT] Training Kill Quest JKP
-				q(72454),	-- [PH] Moved to 10.1.5
-				q(72455),	--
-				q(72457),	--
-				q(72458),	--
-				q(72459),	--
-				q(72460),	-- [PH] Moved to 10.1.5
-				q(72461),	-- [PH] Moved to 10.1.5
 				q(72480),	-- [DNT] Training Collect Quest
 				q(72513),	-- Our Destiny
 				q(72514),	-- The High Creche
 				q(72515),	-- The Contingency
-				q(72664),	--
-				q(72665),	-- [PH] Moved to 10.1.5
-				q(72666),	-- [PH] Moved to 10.1.5
-				q(72667),	-- [PH] Moved to 10.1.5
-				q(72668),	-- [PH] Moved to 10.1.5
 				q(72885),	-- Loamm Placeholder Quest
 				q(72887),	--
 				q(72932),	-- Our Father's Legacy - DEPRECATED
@@ -1165,7 +1141,6 @@ root(ROOTS.Unsorted, {
 				q(75372),	-- Drive Them Before Us
 				q(75376),	-- Suffuse, Reuse, Recycle
 				q(75389),	--
-				q(75398),	-- Honor the Flame
 				q(75408),	-- Calling All Dracthyr!
 				q(75418),	--
 				q(75429),	--
@@ -1216,14 +1191,9 @@ root(ROOTS.Unsorted, {
 				q(75614),	--
 				q(75615),	--
 				q(75616),	--
-				q(75617),	-- Honor the Flame
 				q(75618),	--
 				-- 10.1.0.48537
 				q(75631),	--
-				q(75640),	-- Honor the Flame
-				q(75645),	-- Honor the Flame
-				q(75647),	-- Honor the Flame
-				q(75650),	-- Honor the Flame
 				-- 10.1.0.48661
 				q(75719),	-- [DNT] Test Quest
 				q(75726),	-- Sweaty Armor
@@ -1273,10 +1243,6 @@ root(ROOTS.Unsorted, {
 				q(76113),	--
 				q(76114),	--
 				q(76123),	--
-				q(76127),	--
-				q(76130),	--
-				q(76136),	--
-				q(76139),	--
 				-- 10.1.0.49092
 				q(76172),	--
 				q(76173),	--

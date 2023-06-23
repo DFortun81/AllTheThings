@@ -40,50 +40,10 @@ local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
 local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, sformat, strsplit, GetTimePreciseSec
 	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, string.format, strsplit, GetTimePreciseSec;
-local ATTAccountWideData, IsRetrieving;
--- Retrieving Data Locals
-do
-local RETRIEVING_DATA, RETRIEVING_ITEM_INFO = RETRIEVING_DATA, RETRIEVING_ITEM_INFO;
-local RETRIEVING = strsplit(" ", RETRIEVING_DATA);
--- Returns whether the provided string matches a string which indicates the data is not yet loaded in the Client
-IsRetrieving = function(s)
-	return not s
-		or s == RETRIEVING_DATA
-		or s == RETRIEVING_ITEM_INFO
-		or s:find(RETRIEVING)
-		or s:find("^%[%]");
-end
-end	-- Retrieving Data Locals
-local ALLIANCE_ONLY = {
-	1,	-- Human
-	3,	-- Dwarf
-	4,	-- Night Elf
-	7,	-- Gnome
-	11,	-- Draenei
-	22,	-- Worgen
-	25,	-- Pandaren (A)
-	29,	-- Void Elf
-	30,	-- Lightforged Draenei
-	32,	-- Kul Tiran
-	34,	-- Dark Iron Dwarf
-	37,	-- Mechagnome
-	52,	-- Dracthyr (A)
-};
-local HORDE_ONLY = {
-	2,	-- Orc
-	5,	-- Undead
-	6,	-- Tauren
-	8,	-- Troll
-	9,	-- Goblin
-	10,	-- Blood Elf
-	26,	-- Pandaren (H)
-	27,	-- Nightborne
-	28,	-- Highmountain Tauren
-	31,	-- Zandalari Troll
-	35,	-- Vulpera
-	36,	-- Mag'har Orc
-	70,	-- Dracthyr (H)
-};
+local ATTAccountWideData;
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+local ALLIANCE_ONLY = app.Modules.FactionData.FACTION_RACES[1];
+local HORDE_ONLY = app.Modules.FactionData.FACTION_RACES[2];
 
 -- Print/Debug/Testing Functions
 app.print = function(...)
@@ -163,6 +123,11 @@ end
 -- Coroutine Helper Functions
 app.EmptyTable = {};
 app.EmptyFunction = function() end;
+app.ReturnTrue = function() return true; end
+app.ReturnFalse = function() return false; end
+app.ReturnNil = function() return; end
+app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
+app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 local Push = app.Push;
 local StartCoroutine = app.StartCoroutine;
 local Callback = app.CallbackHandlers.Callback;
@@ -194,371 +159,10 @@ local constructor = function(id, t, typeID)
 		return {[typeID] = id};
 	end
 end
-local contains = function(arr, value)
-	for _,value2 in ipairs(arr) do
-		if value2 == value then return true; end
-	end
-end
-local containsAny = function(arr, arr2)
-	for _,v in ipairs(arr) do
-		for _,w in ipairs(arr2) do
-			if v == w then return true; end
-		end
-	end
-end
-local containsValue = function(dict, value)
-	for _,value2 in pairs(dict) do
-		if value2 == value then return true; end
-	end
-end
-local indexOf = function(arr, value)
-	for i,value2 in ipairs(arr) do
-		if value2 == value then return i; end
-	end
-end
-
-
--- Sorting Logic
-do
-local defaultComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	-- If comparing non-tables
-	if type(a) ~= "table" or type(b) ~= "table" then
-		return a < b;
-	end
-	local acomp, bcomp;
-	-- Maps
-	acomp = a.mapID;
-	bcomp = b.mapID;
-	if acomp then
-		if not bcomp then return true; end
-	elseif bcomp then
-		return false;
-	end
-	-- Raids/Encounter
-	acomp = a.isRaid;
-	bcomp = b.isRaid;
-	if acomp then
-		if not bcomp then return true; end
-	elseif bcomp then
-		return false;
-	end
-	-- Headers
-	acomp = a.headerID;
-	bcomp = b.headerID;
-	if acomp then
-		if not bcomp then return true; end
-	elseif bcomp then
-		return false;
-	end
-	-- Quests
-	acomp = a.questID;
-	bcomp = b.questID;
-	if acomp then
-		if not bcomp then return true; end
-	elseif bcomp then
-		return false;
-	end
-	-- Items
-	acomp = a.itemID;
-	bcomp = b.itemID;
-	if acomp then
-		if not bcomp then return true; end
-	elseif bcomp then
-		return false;
-	end
-	-- Any two similar-type groups via name
-	acomp = string_lower(tostring(a.name));
-	bcomp = string_lower(tostring(b.name));
-	return acomp < bcomp;
-end
-local defaultTextComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	-- Any two similar-type groups with text
-	a = string_lower(tostring(a));
-	b = string_lower(tostring(b));
-	return a < b;
-end
-local defaultNameComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	-- Any two similar-type groups with text
-	a = string_lower(tostring(a.name));
-	b = string_lower(tostring(b.name));
-	return a < b;
-end
-local defaultValueComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	return a < b;
-end
-local defaultHierarchyComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	local acomp, bcomp;
-	acomp = a.g and #a.g or 0;
-	bcomp = b.g and #b.g or 0;
-	return acomp < bcomp;
-end
-local defaultTotalComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	local acomp, bcomp;
-	acomp = a.total or 0;
-	bcomp = b.total or 0;
-	return acomp < bcomp;
-end
-local defaultEventStartComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	local acomp, bcomp;
-	acomp = a.nextEvent;
-	acomp = acomp and acomp.start or 0;
-	bcomp = b.nextEvent;
-	bcomp = bcomp and bcomp.start or 0;
-	return acomp < bcomp;
-end
-app.SortDefaults = {
-	["Global"] = defaultComparison,
-	["Text"] = defaultTextComparison,
-	["Name"] = defaultNameComparison,
-	["Value"] = defaultValueComparison,
-	-- Sorts objects first by whether they do not have sub-groups [.g] defined
-	["Hierarchy"] = defaultHierarchyComparison,
-	-- Sorts objects first by how many total collectibles they contain
-	["Total"] = defaultTotalComparison,
-	-- Sorts objects first by their nextEvent.Start
-	["EventStart"] = defaultEventStartComparison,
-};
-local function Sort(t, compare, nested)
-	if t then
-		if not compare then compare = defaultComparison; end
-		table.sort(t, compare);
-		if nested then
-			for i=#t,1,-1 do
-				Sort(t[i].g, compare, nested);
-			end
-		end
-	end
-end
--- Safely-sorts a table using a provided comparison function and whether to propogate to nested groups
--- Wrapping in a pcall since sometimes the sorted values are able to change while being within the sort method. This causes the 'invalid sort order function' error
-app.Sort = function(t, compare, nested)
-	pcall(Sort, t, compare, nested);
-end
-local sortByNameSafely = function(a, b)
-	if a and a.name then
-		if b and b.name then
-			return a.name <= b.name;
-		end
-		return true;
-	end
-	return false;
-end
-local function GetGroupSortValue(group)
-	-- sub-groups on top
-	-- >= 1
-	if group.g then
-		local total = group.total;
-		if total then
-			local progress = group.progress;
-			-- completed groups at the very top, ordered by their own total
-			if total == progress then
-				-- 3 <= p
-				return 2 + total;
-			-- partially completed next
-			elseif progress and progress > 0 then
-				-- 1 < p <= 2
-				return 1 + (progress / total);
-			-- no completion, ordered by their own total in reverse
-			-- 0 < p <= 1
-			else
-				return (1 / total);
-			end
-		end
-	-- collectibles next
-	-- >= 0
-	elseif group.collectible then
-		-- = 0.5
-		if group.collected then
-			return 0.5;
-		else
-			-- 0 <= p < 0.5
-			return (group.sortProgress or 0) / 2;
-		end
-	-- trackables next
-	-- -1 <= p <= -0.5
-	elseif group.trackable then
-		if group.saved then
-			return -0.5;
-		else
-			return -1;
-		end
-	-- remaining last
-	-- = -2
-	else
-		return -2;
-	end
-end
--- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
-local function SortGroup(group, sortType, row, recur, conditionField)
-	if group.g then
-		-- either sort visible groups or by conditional
-        if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
-			-- app.PrintDebug("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
-			if sortType == "name" then
-				app.Sort(group.g);
-			elseif sortType == "progress" then
-				local progA, progB;
-				app.Sort(group.g, function(a, b)
-					progA = GetGroupSortValue(a);
-					progB = GetGroupSortValue(b);
-					return progA > progB;
-				end);
-			else
-				local sortA, sortB;
-				local sortFunc = app.SortDefaults[sortType] or
-					(sortType and function(a, b)
-						sortA = a and tostring(a[sortType]);
-						sortB = b and tostring(b[sortType]);
-						return sortA < sortB;
-					end) or nil;
-				app.Sort(group.g, sortFunc);
-			end
-			-- since this group was sorted, clear any SortInfo which may have caused it
-			group.SortInfo = nil;
-		end
-		-- TODO: Add more sort types?
-		if recur then
-			for _,o in ipairs(group.g) do
-				SortGroup(o, sortType, nil, recur, conditionField);
-			end
-		end
-	end
-	if row then
-		row:GetParent():GetParent():Update();
-		app.print("Finished Sorting.");
-	end
-end
-app.SortGroup = SortGroup;
--- Allows defining SortGroup data which is only executed when the group is actually expanded
-app.SortGroupDelayed = function(group, sortType, row, recur, conditionField)
-	-- app.PrintDebug("Delayed Sort defined for",group.text)
-	group.SortInfo = { sortType, row, recur, conditionField };
-end
-end	-- Sorting Logic
-
--- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
--- with a default fallback value if the field does not exist on the table entry
-app.TableConcat = function(tbl, field, def, sep, i, j)
-	if tbl then
-		if field then
-			local tblvals, tinsert = {}, tinsert;
-			for _,val in ipairs(tbl) do
-				tinsert(tblvals, val[field] or def);
-			end
-			return table.concat(tblvals, sep, i, j);
-		else
-			return table.concat(tbl, sep, i, j);
-		end
-	end
-	return "";
-end
--- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
-app.ArrayAppend = function(a1, ...)
-	local arrs = select("#", ...);
-	if arrs > 0 then
-		a1 = a1 or {};
-		local i, select, a = #a1 + 1, select;
-		for n=1,arrs do
-			a = select(n, ...);
-			if a then
-				for ai=1,#a do
-					a1[i] = a[ai];
-					i = i + 1;
-				end
-			end
-		end
-	end
-	return a1;
-end
--- Allows for returning a reversed array. Will do nothing for un-ordered tables or tables with a single entry
-app.ReverseOrder = function(a)
-	if a[1] and a[2] then
-		local b, n, j = {}, #a, 1;
-		for i=n,1,-1 do
-			b[j] = a[i];
-			j = j + 1;
-		end
-		return b;
-	end
-	return a;
-end
+local contains = app.contains;
+local containsAny = app.containsAny;
+local containsValue = app.containsValue;
+local indexOf = app.indexOf;
 
 -- Data Lib
 local attData;
@@ -567,6 +171,7 @@ local AllTheThingsAD = {};			-- For account-wide data.
 local function SetDataMember(member, data)
 	AllTheThingsAD[member] = data;
 end
+app.SetDataMember = SetDataMember;
 local function GetDataMember(member, default)
 	attData = AllTheThingsAD[member];
 	if attData == nil then
@@ -576,6 +181,7 @@ local function GetDataMember(member, default)
 		return attData;
 	end
 end
+app.GetDataMember = GetDataMember;
 local function SetTempDataMember(member, data)
 	AllTheThingsTempData[member] = data;
 end
@@ -643,11 +249,6 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 	local dlo = setmetatable({__dlo=true}, loader);
 	return dlo;
 end
-app.SetDataMember = SetDataMember;
-app.GetDataMember = GetDataMember;
-app.ReturnTrue = function() return true; end
-app.ReturnFalse = function() return false; end
-app.ReturnNil = function() return; end
 
 local function RoundNumber(number, decimalPlaces)
 	local ret;
@@ -1209,9 +810,6 @@ GameTooltipModel.TrySetModel = function(self, reference)
 end
 GameTooltipModel:Hide();
 
-app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
-app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
-
 -- Screenshot
 function app:TakeScreenShot(type)
 	if app.Settings:GetTooltipSetting("Screenshot") and (not type or app.Settings:Get("Thing:"..type)) then
@@ -1220,148 +818,10 @@ function app:TakeScreenShot(type)
 end
 
 -- Color Lib
-local GetProgressColor, Colorize, RGBToHex;
-local function HexToARGB(hex)
-	return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6)), tonumber("0x"..hex:sub(7,8));
-end
-local function HexToRGB(hex)
-	return tonumber("0x"..hex:sub(1,2)) / 255, tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255;
-end
-(function()
-local RAID_CLASS_COLORS = RAID_CLASS_COLORS;
-local Alliance, Horde = Enum.FlightPathFaction.Alliance, Enum.FlightPathFaction.Horde;
--- Color AARRGGBB values used throughout ATT
-app.Colors = {
-	["Raid"] = "ffff8000",
-	["SourceIgnored"] = "ffd15517",
-	["Locked"] = "ff7f40bf",
-	["LockedWarning"] = "ffd15517",
-	["Horde"] = "ffcc6666",
-	["Alliance"] = "ff407fbf",
-	["Completed"] = "ff15abff",
-	["ChatLinkError"] = "ffff5c6c",
-	["ChatLinkHQT"] = "ff7aff92",
-	["ChatLink"] = "ff149bfd",
-	["TooltipDescription"] = "ff66ccff",
-	["TooltipLore"] = "ff42a7eb",
-	["DefaultDifficulty"] = "ff1eff00",
-	["RemovedWithPatch"] = "ffffaaaa",
-	["AddedWithPatch"] = "ffaaffaa",
-	["Renown"] = "ff00bff3",
-};
-Colorize = function(str, color)
-	return "|c" .. color .. str .. "|r";
-end
-RGBToHex = function(r, g, b)
-	return sformat("ff%02x%02x%02x",
-		r <= 255 and r >= 0 and r or 0,
-		g <= 255 and g >= 0 and g or 0,
-		b <= 255 and b >= 0 and b or 0);
-end
--- Attempts to determine the colorized text for a given Group
-app.TryColorizeName = function(group, name)
-	if IsRetrieving(name) then return name; end
-	-- raid headers
-	if group.isRaid then
-		return Colorize(name, app.Colors.Raid);
-	-- groups which are ignored for progress
-	elseif group.sourceIgnored then
-		return Colorize(name, app.Colors.SourceIgnored);
-	-- faction rep status
-	elseif group.factionID and group.standing then
-		return app.GetCurrentFactionStandingText(group.factionID, group.standing, name);
-	-- locked/breadcrumb things
-	elseif group.locked or group.isBreadcrumb then
-		return Colorize(name, app.Colors.Locked);
-		-- if people REALLY only want to see colors in account/debug then we can comment this in
-	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_ACCOUNT or app.MODE_DEBUG)
-	then
-		-- class color
-		if group.classID then
-			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.classID))].colorStr);
-		elseif group.c and #group.c == 1 then
-			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.c[1]))].colorStr);
-		-- faction colors
-		elseif group.r then
-			-- red for Horde
-			if group.r == Horde then
-				return Colorize(name, app.Colors.Horde);
-			-- blue for Alliance
-			elseif group.r == Alliance then
-				return Colorize(name, app.Colors.Alliance);
-			end
-		-- specific races
-		elseif group.races then
-			local hrace = containsAny(group.races, HORDE_ONLY);
-			local arace = containsAny(group.races, ALLIANCE_ONLY);
-			if hrace and not arace then
-				-- this group requires a horde-only race, and not any alliance race
-				return Colorize(name, app.Colors.Horde);
-			elseif arace and not hrace then
-				-- this group requires a alliance-only race, and not any horde race
-				return Colorize(name, app.Colors.Alliance);
-			end
-		-- un-acquirable color
-		-- grey color for things which are otherwise not available to the current character (would only show in account mode due to filtering)
-		elseif not app.CurrentCharacterFilters(group) then
-			return Colorize(name, "ff808080");
-		end
-	end
-	return name;
-end
--- Returns 'Time Left: %s'
-app.GetColoredTimeRemaining = function(time)
-	if time and time > 0 then
-		local timeLeft = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(time * 60));
-		if time < 30 then
-			return Colorize(timeLeft, "FFFF0000");
-		elseif time < 120 then
-			return Colorize(timeLeft, "FFFFFF00");
-		else
-			return Colorize(timeLeft, "FF008000");
-		end
-	end
-end
-local CS = CreateFrame("ColorSelect", nil, app._);
-CS:Hide();
-local function ConvertColorRgbToHsv(r, g, b)
-  CS:SetColorRGB(r, g, b);
-  local h,s,v = CS:GetColorHSV()
-  return {h=h,s=s,v=v}
-end
-local red, green = ConvertColorRgbToHsv(1,0,0), ConvertColorRgbToHsv(0,1,0);
-local abs, floor = abs, floor;
-local progress_colors = setmetatable({[1] = app.Colors.Completed}, {
-	__index = function(t, p)
-		local h;
-		p = tonumber(p);
-		-- anything over 100% will just be 100% color
-		if p > 1 then return t[1]; end
-		-- anything somehow under 0 will just be 0
-		if p < 0 then return t[0]; end
-		if abs(red.h - green.h) > 180 then
-			local angle = (360 - abs(red.h - green.h)) * p;
-			if red.h < green.h then
-				h = floor(red.h - angle);
-				if h < 0 then h = 360 + h end
-			else
-				h = floor(red.h + angle);
-				if h > 360 then h = h - 360 end
-			end
-		else
-			h = floor(red.h-(red.h-green.h)*p)
-		end
-		CS:SetColorHSV(h, red.s-(red.s-green.s)*p, red.v-(red.v-green.v)*p);
-		local r,g,b = CS:GetColorRGB();
-		local color = RGBToHex(r * 255, g * 255, b * 255);
-		t[p] = color;
-		return color;
-	end
-});
-GetProgressColor = function(p)
-	return progress_colors[p];
-end
-end)();
+local GetProgressColor = app.Modules.Color.GetProgressColor;
+local Colorize = app.Modules.Color.Colorize;
+local RGBToHex = app.Modules.Color.RGBToHex;
+local HexToARGB = app.Modules.Color.HexToARGB;
 
 local function GetNumberWithZeros(number, desiredLength)
 	if desiredLength > 0 then
@@ -1546,12 +1006,13 @@ app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
 
 local function BuildGroups(parent)
-	if parent.g then
-		-- Iterate through the groups
 		local g = parent.g;
+	if g then
+		-- Iterate through the groups
+		local group;
 		for i=1,#g,1 do
 			-- Set the group's parent
-			local group = g[i];
+			group = g[i];
 			group.parent = parent;
 			BuildGroups(group);
 		end
@@ -1618,13 +1079,13 @@ app.MergeSkipFields = {
 	["visible"] = true,
 	["modItemID"] = true,
 	["rawlink"] = true,
+	["sourceIgnored"] = true,
 	-- 1 -> only when cloning
 	["e"] = 1,
 	["u"] = 1,
 	["pvp"] = 1,
 	["pb"] = 1,
 	["requireSkill"] = 1,
-	["sourceIgnored"] = 1,
 };
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
 app.SourceSpecificFields = {
@@ -2651,7 +2112,7 @@ local IsQuestFlaggedCompletedForObject = function(t, questIDKey)
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
 	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
 	-- If the quest has an altQuest which was completed on this character and this character is not in Party Sync nor tracking Locked Quests, return shared completed
-	if not app.MODE_DEBUG_OR_ACCOUNT and t.altcollected and not app.IsInPartySync and not app.CollectibleQuestsLocked then
+	if not app.MODE_DEBUG_OR_ACCOUNT and not app.IsInPartySync and not app.CollectibleQuestsLocked and t.altcollected then
 		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
@@ -5122,12 +4583,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if costCollectibles and #costCollectibles > 0 then
 						local costAmounts = app.BuildCostTable(costCollectibles, paramB);
 						local currencyCount, CheckCollectible = 0, app.CheckCollectible;
-						local entryGroup, collectible, collected;
+						local entryGroup, collectible;
 						for _,costEntry in ipairs(entries) do
 							entryGroup = costEntry.group;
-							collectible, collected = CheckCollectible(entryGroup);
+							collectible = CheckCollectible(entryGroup);
 							-- anything shown in the tooltip which is not collected according to the user's settings should be considered for the cost
-							if collectible and not collected then
+							if collectible then
 								-- app.PrintDebug("Purchasable",entryGroup.hash,collectible,collected,entryGroup.total - entryGroup.progress,"x",costAmounts[entryGroup.hash])
 								currencyCount = currencyCount + (costAmounts[entryGroup.hash] or 0);
 							end
@@ -7391,7 +6852,7 @@ local function RefreshSavesCallback()
 	end
 
 	-- Mark that we're done now.
-	app:UpdateWindows();
+	app:RefreshWindows();
 end
 local function RefreshSaves()
 	AfterCombatCallback(RefreshSavesCallback);
@@ -7460,6 +6921,8 @@ end -- Refresh Functions
 local ObjectDefaults = {
 	["progress"] = 0,
 	["total"] = 0,
+	["costProgress"] = 0,
+	["costTotal"] = 0,
 };
 local getmetatable =
 	  getmetatable;
@@ -7479,14 +6942,6 @@ local ObjectFunctions = {
 	-- default 'text' should be a valid link or the colorized 'name'
 	["text"] = function(t)
 		return t.link or app.TryColorizeName(t, t.name);
-	end,
-	-- the total cost of a Thing is based on it being collectible as a cost or not
-	["costTotal"] = function(t)
-		return t.collectibleAsCost and 1 or 0;
-	end,
-	-- the cost progress is currently always 0 since it is not considered a cost once it's no longer needed
-	["costProgress"] = function(t)
-		return 0;
 	end,
 	-- whether something is marked as repeatable in some way
 	["repeatable"] = function(t)
@@ -7598,6 +7053,17 @@ end
 app.WrapObject = function(t, base)
 	return setmetatable({ __base=t}, base);
 end
+-- Clones an Object, fills any symlinks, builds groups, and does an Update pass before returning the Object
+app.RecreateObject = function(t)
+	local obj = CreateObject(t);
+	-- fill the copied Item's symlink if any
+	FillSymLinks(obj);
+	-- Build the Item's groups if any
+	BuildGroups(obj);
+	-- Update the group
+	app.TopLevelUpdateGroup(obj);
+	return obj;
+end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField)
 	local cache, _t, v = {};
@@ -7651,145 +7117,6 @@ app.CreateCache = function(idField)
 		end
 	end;
 	return cache;
-end
--- Function which returns both collectible/collected based on a given 'ref' Thing, which has been previously determined as a
--- possible collectible without regard to filtering
-local function CheckCollectible(ref)
-	-- don't include groups which do not meet the current character requirements
-	if app.RecursiveGroupRequirementsFilter(ref) then
-		local settingsChange = ref._SettingsRefresh;
-		-- previously checked without Settings changed
-		if settingsChange then
-			if app._SettingsRefresh == settingsChange then
-				-- app.PrintDebug("CC:Cached",ref.hash,ref._CheckCollectible)
-				return ref._CheckCollectible;
-			end
-		end
-		-- app.PrintDebug("CC:Check",ref.hash)
-		ref._SettingsRefresh = app._SettingsRefresh;
-		ref._CheckCollectible = nil;
-		-- app.PrintDebug("CheckCollectible",ref.hash)
-		-- Used as a cost for something which is collectible itself and not collected
-		if ref.collectible and not ref.collected then
-			-- app.PrintDebug("Cost via Collectible",ref.hash)
-			ref._CheckCollectible = true;
-			return true;
-		end
-		-- Used as a cost for something which is collectible as a cost itself
-		if ref.collectibleAsCost then
-			-- app.PrintDebug("Cost via collectibleAsCost",ref.hash)
-			ref._CheckCollectible = true;
-			return true;
-		end
-		-- If this group has sub-groups
-		if ref.g then
-			-- Update the group
-			app.TopLevelUpdateGroup(ref);
-			-- Check the total
-			if ref.progress < ref.total then
-				-- app.PrintDebug("Cost via .g progress",ref.hash)
-				ref._CheckCollectible = true;
-				return true;
-			end
-		end
-		-- If this group has a symlink, generate the symlink into a cached version of the ref and see if it has collectibles
-		if ref.sym then
-			-- app.PrintDebug("Checking symlink...",ref.hash)
-			local refCache = ref._cache;
-			if refCache then
-				-- Already have a cached version of this reference with populated content
-				local expItem = refCache.GetCachedField(ref, "_populated");
-				if expItem then
-					-- Update the group
-					app.TopLevelUpdateGroup(expItem);
-					-- Check the total
-					if expItem.progress < expItem.total then
-						-- app.PrintDebug("Cost via cached sym progress",ref.hash)
-						ref._CheckCollectible = true;
-						return true;
-					end
-					-- Nothing missing currently
-					return;
-				end
-				-- app.PrintDebug("Filling symlink...",ref.hash)
-				-- app.PrintTable(ref)
-				-- create a cached copy of this ref if it is an Item
-				expItem = CreateObject(ref);
-				-- fill the copied Item's symlink if any
-				FillSymLinks(expItem);
-				-- Build the Item's groups if any
-				BuildGroups(expItem);
-				-- Update the group
-				app.TopLevelUpdateGroup(expItem);
-				-- save it in the Item cache in case something else is able to purchase this reference
-				refCache.SetCachedField(ref, "_populated", expItem);
-				-- app.PrintDebug("Fresh symlink",expItem.hash,expItem.progress,expItem.total)
-				-- Check the total
-				if expItem.progress < expItem.total then
-					-- app.PrintDebug("Cost via fresh sym progress",ref.hash)
-					ref._CheckCollectible = true;
-					return true;
-				end
-			end
-			-- print("cannot determine collectibility")
-			-- print("cost",t.key,t.key and t[t.key])
-			-- app.PrintTable(ref)
-			-- print(ref.__type, ref._cache)
-			-- return false,false;
-		end
-	end
-end
-app.CheckCollectible = CheckCollectible;
--- Returns whether 't' should be considered collectible based on the set of costCollectibles already assigned to this 't'
-app.CollectibleAsCost = function(t)
-	local collectibles = t.costCollectibles;
-	-- literally nothing to collect with 't' as a cost, so don't process the logic anymore
-	if not collectibles or #collectibles == 0 then
-		t.collectibleAsCost = false;
-		return;
-	end
-	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
-	if not app.MODE_DEBUG_OR_ACCOUNT then
-		local parent = rawget(t, "parent");
-		if parent and parent.questID and parent.saved then
-			-- app.PrintDebug("CollectibleAsCost:t.parent.saved",t.hash)
-			return;
-		end
-	end
-	local settingsChange = t._SettingsRefresh;
-	-- previously checked without Settings changed
-	if settingsChange then
-		if app._SettingsRefresh == settingsChange then
-			-- app.PrintDebug("CAC:Cached",t.hash,t._CheckCollectible)
-			return t._CheckCollectible;
-		end
-	end
-	-- app.PrintDebug("CAC:Check",t.hash)
-	t._SettingsRefresh = app._SettingsRefresh;
-	t._CheckCollectible = nil;
-	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
-	t.collectibleAsCost = false;
-	-- check the collectibles if any are considered collectible currently
-	local costNeeded;
-	for _,ref in ipairs(collectibles) do
-		-- Use the common collectibility check logic
-		costNeeded = CheckCollectible(ref);
-		if costNeeded then
-			t._CheckCollectible = true;
-			t.collectibleAsCost = nil;
-			-- app.PrintDebug("CollectibleAsCost:true",t.hash,"from",ref.hash)
-			-- Found something collectible for t, make sure t is actually obtainable as well
-			-- Make sure this thing can actually be collectible via hierarchy
-			-- if GetRelativeValue(t, "altcollected") then
-			--	-- literally have not seen this message in months, maybe is pointless...
-			-- 	app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
-			-- 	return;
-			-- end
-			return true;
-		end
-	end
-	-- app.PrintDebug("CollectibleAsCost:nil",t.hash)
-	t.collectibleAsCost = nil;
 end
 end)();
 
@@ -7862,6 +7189,7 @@ local QuestNameFromServer = setmetatable({}, { __index = function(t, id)
 
 		app.RequestLoadQuestByID(id);
 	end
+	return RETRIEVING_DATA;
 end});
 local QuestNameDefault = setmetatable({}, { __index = function(t, id)
 	if id then
@@ -10081,7 +9409,7 @@ local unitFields = {
 					t.raceID = character.raceID;
 					t.race = C_CreatureInfo.GetRaceInfo(character.raceID).raceName;
 				end
-				t.name = app.TryColorizeName(t, character.name).."-"..(character.realm or UNKNOWN);
+				t.name = app.TryColorizeName(t, character.name or UNKNOWN).."-"..(character.realm or UNKNOWN);
 				t.level = character.lvl;
 				break;
 			end
@@ -10255,6 +9583,7 @@ end)();
 
 -- Difficulty Lib
 (function()
+local cache = app.CreateCache("difficultyID");
 app.DifficultyColors = {
 	[2] = "ff0070dd",
 	[5] = "ff0070dd",
@@ -10291,6 +9620,27 @@ app.DifficultyIcons = {
 	[24] = app.asset("Difficulty_Timewalking"),
 	[33] = app.asset("Difficulty_Timewalking"),
 };
+local function GetDifficultyName(difficultyID)
+	return L["CUSTOM_DIFFICULTIES"][difficultyID] or GetDifficultyInfo(difficultyID);
+end
+local function default_name(t)
+	local difficultyID = t.difficultyID;
+	local name = GetDifficultyName(difficultyID);
+	if not name then
+		local difficulties = t.difficulties;
+		if not difficulties then
+			name = UNKNOWN;
+		else
+			name = GetDifficultyName(difficulties[1])
+			for i=2,#difficulties do
+				name = name.." / "..(GetDifficultyName(difficulties[i]) or UNKNOWN);
+			end
+		end
+	end
+	local _t = cache.GetCached(t);
+	_t.name = name;
+	return name;
+end
 local fields = {
 	["key"] = function(t)
 		return "difficultyID";
@@ -10312,11 +9662,10 @@ local fields = {
 		end
 	end,
 	["name"] = function(t)
-		local difficultyID = t.difficultyID;
-		return L["CUSTOM_DIFFICULTIES"][difficultyID] or GetDifficultyInfo(difficultyID) or "Unknown Difficulty";
+		return cache.GetCachedField(t, "name", default_name);
 	end,
 	["icon"] = function(t)
-		return app.DifficultyIcons[t.difficultyID];
+		return app.DifficultyIcons[t.difficultyID] or app.asset("Category_D&R");
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
@@ -10329,6 +9678,18 @@ local fields = {
 				t.locks = locks.shared;
 				return locks.shared;
 			else
+				local difficulties = t.difficulties;
+				if difficulties then
+					local diffLocks = {};
+					-- Look for matching difficulty lockouts.
+					for difficultyKey, lock in pairs(locks) do
+						if contains(difficulties, difficultyKey) then
+							diffLocks[difficultyKey] = lock;
+						end
+					end
+					t.locks = diffLocks;
+					return diffLocks;
+				end
 				-- Look for this difficulty's lockout.
 				for difficultyKey, lock in pairs(locks) do
 					if difficultyKey == "shared" then
@@ -10497,38 +9858,6 @@ app.FactionIDByName = setmetatable({}, { __index = function(t, name)
 		end
 	end
 end });
-app.FACTION_RACES = {
-	[1] = {
-		1,	-- Human
-		3,	-- Dwarf
-		4,	-- Night Elf
-		7,	-- Gnome
-		11,	-- Draenei
-		22,	-- Worgen
-		25,	-- Pandaren [Alliance]
-		29,	-- Void Elf
-		30,	-- Lightforged
-		32,	-- Kul Tiran
-		34,	-- Dark Iron
-		37,	-- Mechagnome
-		52, -- Dracthyr [Alliance]
-	},
-	[2] = {
-		2,	-- Orc
-		5,	-- Undead
-		6,	-- Tauren
-		8,	-- Troll
-		9,	-- Goblin
-		10,	-- Blood Elf
-		26,	-- Pandaren [Horde]
-		27,	-- Nightborne
-		28,	-- Highmountain
-		31,	-- Zandalari
-		35,	-- Vulpera
-		36,	-- Mag'har
-		70, -- Dracthyr [Horde]
-	}
-};
 app.GetFactionIDByName = function(name)
 	name = strtrim(name);
 	return app.FactionIDByName[name] or name;
@@ -12324,9 +11653,9 @@ itemTooltipHarvesterFields.text = function(t)
 								if not c then
 									faction = strtrim(faction);
 									if faction == "Alliance" then
-										t.info.races = app.FACTION_RACES[1];
+										t.info.races = app.Modules.FactionData.FACTION_RACES[1];
 									elseif faction == "Horde" then
-										t.info.races = app.FACTION_RACES[2];
+										t.info.races = app.Modules.FactionData.FACTION_RACES[2];
 									else
 										print("Unknown Faction",t.info.itemID,faction);
 									end
@@ -13210,10 +12539,7 @@ fields.trackable = headerFields.trackableAsQuest;
 app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
 
 -- Event Lib (using the Events Module!)
-local fields = RawCloneData(headerFields);
-for field,method in pairs(app.Modules.Events.Fields) do
-	fields[field] = method;
-end
+local fields = RawCloneData(headerFields, app.Modules.Events.Fields);
 app.BaseHeaderWithEvent = app.BaseObjectFields(fields, "BaseHeaderWithEvent");
 
 -- Automatic Type Header
@@ -14270,6 +13596,7 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 		if item then
 			local knownItem, knownSource, valid;
 			local acctSources = ATTAccountWideData.Sources;
+			local factionRaces = app.Modules.FactionData.FACTION_RACES;
 			for _,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				-- only compare against other Sources of the VisualID which the Account knows
 				if sourceID ~= sourceInfo.sourceID and acctSources[sourceID] == 1 then
@@ -14302,7 +13629,7 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 							if valid and knownItem.r then
 								if item.r then
 									-- the known source has a faction restriction that is not shared by the source or source races in question
-									if knownItem.r ~= item.r or (item.races and not containsAny(app.FACTION_RACES[knownItem.r], item.races)) then valid = nil; end
+									if knownItem.r ~= item.r or (item.races and not containsAny(factionRaces[knownItem.r], item.races)) then valid = nil; end
 								else
 									valid = nil;
 								end
@@ -14392,6 +13719,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 			end
 		end
 		if not canMog then return; end
+		local factionRaces = app.Modules.FactionData.FACTION_RACES;
 		for _,sourceID in ipairs(visualIDs) do
 			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)] end
 			-- If it is not currently marked collected on the account
@@ -14433,7 +13761,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 							if valid and knownFaction then
 								if checkItem.r then
 									-- the known source has a faction restriction that is not shared by the source or source races in question
-									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(app.FACTION_RACES[knownFaction], checkItem.races)) then valid = nil; end
+									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(factionRaces[knownFaction], checkItem.races)) then valid = nil; end
 								else
 									valid = nil;
 								end
@@ -18807,6 +18135,7 @@ function app:GetDataCache()
 	return rootData;
 end
 
+local LastSettingsChangeUpdate;
 local function RefreshData()
 	-- app.PrintDebug("RefreshData",app.refreshDataForce and "FORCE" or "LAZY", app.refreshDataGot and "COLLECTED" or "PASSIVE")
 
@@ -18819,6 +18148,13 @@ local function RefreshData()
 
 		-- Reapply custom collects
 		app.RefreshCustomCollectibility();
+
+		if LastSettingsChangeUpdate ~= app._SettingsRefresh then
+			LastSettingsChangeUpdate = app._SettingsRefresh;
+
+			-- Trigger Cost Update Runner
+			app.UpdateCosts();
+		end
 
 		-- Forcibly update the windows.
 		app:UpdateWindows(true, app.refreshDataGot);
@@ -18854,6 +18190,8 @@ local function SetRescursiveFilters()
 	IgnoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
 	CloneGroup = app.CreateWrapFilterHeader;
 end
+-- If/when this section becomes a module, set Module.SearchResponse.SearchNil instead
+app.SearchNil = "zsxdcfawoidsajd"
 local MainRoot, UnsortedRoot;
 local ClonedHierarchyGroups = {};
 local ClonedHierarachyMapping = {};
@@ -18874,7 +18212,7 @@ local function MatchOrCloneParentInHierarchy(group)
 
 		-- check the parent to see if this parent chain will be excluded
 		local parent = group.parent;
-		if parent == UnsortedRoot then
+		if not parent or parent == UnsortedRoot then
 			-- app.PrintDebug("Don't capture Unsorted",group.text)
 			return;
 		end
@@ -18945,7 +18283,7 @@ local function AddSearchGroupsByFieldValue(groups, field, value)
 		for _,group in ipairs(groups) do
 			if not group.sourceIgnored then
 				v = group[field];
-				if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+				if v == value or (field == "requireSkill" and v and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value) then
 					tinsert(SearchGroups, group);
 				else
 					AddSearchGroupsByFieldValue(group.g, field, value);
@@ -18984,13 +18322,17 @@ function app:BuildSearchResponse(field, value, clear)
 		local cacheContainer = SearchForFieldContainer(field);
 		if cacheContainer then
 			BuildSearchResponseViaCacheContainer(cacheContainer, value, clear);
-		elseif value then
-			-- app.PrintDebug("BSR:FieldValue",MainRoot and #MainRoot,field,value,clear)
-			AddSearchGroupsByFieldValue(MainRoot, field, value);
+		elseif value ~= nil then
+			-- allow searching specifically for a nil field
+			if value == app.SearchNil then
+				value = nil;
+			end
+			-- app.PrintDebug("BSR:FieldValue",MainRoot.g and #MainRoot.g,field,value,clear)
+			AddSearchGroupsByFieldValue(MainRoot.g, field, value);
 			BuildClonedHierarchy(SearchGroups, clear);
 		else
-			-- app.PrintDebug("BSR:Field",MainRoot and #MainRoot,field,clear)
-			AddSearchGroupsByField(MainRoot, field);
+			-- app.PrintDebug("BSR:Field",MainRoot.g and #MainRoot.g,field,clear)
+			AddSearchGroupsByField(MainRoot.g, field);
 			BuildClonedHierarchy(SearchGroups, clear);
 		end
 		return ClonedHierarchyGroups;
@@ -19971,6 +19313,15 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 									local field, value = strsplit("=",input);
 									value = tonumber(value) or value;
 									if value and value ~= "" then
+										-- allows performing a value search when looking for 'nil'
+										if value == "nil" then
+											value = app.SearchNil;
+										-- use proper bool values if specified
+										elseif value == "true" then
+											value = true;
+										elseif value == "false" then
+											value = false;
+										end
 										self:Search(field, value);
 									else
 										self:Search(field);
@@ -24218,17 +23569,8 @@ app.InitDataCoroutine = function()
 	-- print("Yield prior to Refresh")
 	coroutine.yield();
 
-	-- NOTE: The auto refresh only happens once per version
-	-- if not accountWideData.LastAutoRefresh or (accountWideData.LastAutoRefresh ~= app.Version) then
-	-- 	accountWideData.LastAutoRefresh = app.Version;
-		-- print("Force Refresh")
-		-- collection refresh includes data refresh
 	app.__FirstRefresh = true;
 		app.RefreshCollections();
-	-- else
-	-- 	-- print("Refresh")
-	-- 	app:RefreshData(false);
-	-- end
 
 	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
 	if not AllTheThingsProfiles then DelayedCallback(app.SetupProfiles, 5); end
@@ -24249,7 +23591,7 @@ app.InitDataCoroutine = function()
 	-- finally can say the app is ready
 	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 	app.IsReady = true;
-	-- print("ATT is Ready!");
+	-- app.PrintDebug("ATT is Ready!");
 
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end
@@ -24864,7 +24206,7 @@ app.events.PLAYER_REGEN_ENABLED = function()
 	-- print("PLAYER_REGEN_ENABLED:End")
 end
 app.events.QUEST_SESSION_JOINED = function()
-	-- print("QUEST_SESSION_JOINED")
+	-- app.PrintDebug("QUEST_SESSION_JOINED")
 	app:UnregisterEvent("QUEST_SESSION_JOINED");
 	app:RegisterEvent("QUEST_SESSION_LEFT");
 	app:RegisterEvent("QUEST_SESSION_DESTROYED");
@@ -24880,6 +24222,7 @@ app.events.QUEST_SESSION_DESTROYED = function()
 	app.LeavePartySync();
 end
 app.LeavePartySync = function()
+	-- app.PrintDebug("LeavePartySync")
 	app:UnregisterEvent("QUEST_SESSION_LEFT");
 	app:UnregisterEvent("QUEST_SESSION_DESTROYED");
 	app:RegisterEvent("QUEST_SESSION_JOINED");

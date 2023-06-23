@@ -176,6 +176,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					203305,	-- Winding Slitherdrake: Armor (DM!)
 					-- #endif
 				}},
+				["g"] = {
+					i(203432, {	-- Bag of Spicy Pet Snacks
+						["timeline"] = { ADDED_10_1_5 },
+					}),
+				},
 			}),
 			n(193659, {	-- Provisioner Thom
 				["coord"] = { 36.5, 50.6, VALDRAKKEN },

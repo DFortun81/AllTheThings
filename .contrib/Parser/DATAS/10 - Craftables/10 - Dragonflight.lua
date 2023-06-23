@@ -604,23 +604,23 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(205046, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Razing Annihilator
 			i(192081),	-- Shield of the Hearth
 			-- Tools
-			i(191228),	-- Black Dragon Touched Hammer
-			i(191237),	-- Draconium Blacksmith's Hammer
-			i(191235),	-- Draconium Blacksmith's Toolbox
-			i(191238),	-- Draconium Leatherworker's Knife
-			i(191236),	-- Draconium Leatherworker's Toolset
-			i(191239),	-- Draconium Needle Set
-			i(191242),	-- Draconium Pickaxe
-			i(191241),	-- Draconium Sickle
-			i(191240),	-- Draconium Skinning Knife
-			i(191888),	-- Khaz'gorite Blacksmith's Hammer
-			i(191230),	-- Khaz'gorite Blacksmith's Toolbox
-			i(191227),	-- Khaz'gorite Leatherworker's Knife
-			i(191229),	-- Khaz'gorite Leatherworker's Toolset
-			i(191226),	-- Khaz'gorite Needle Set
-			i(191223),	-- Khaz'gorite Pickaxe
-			i(191224),	-- Khaz'gorite Sickle
-			i(191225),	-- Khaz'gorite Skinning Knife
+			i(191228, {["requireSkill"]=BLACKSMITHING}),	-- Black Dragon Touched Hammer
+			i(191237, {["requireSkill"]=BLACKSMITHING}),	-- Draconium Blacksmith's Hammer
+			i(191235, {["requireSkill"]=BLACKSMITHING}),	-- Draconium Blacksmith's Toolbox
+			i(191238, {["requireSkill"]=LEATHERWORKING}),	-- Draconium Leatherworker's Knife
+			i(191236, {["requireSkill"]=LEATHERWORKING}),	-- Draconium Leatherworker's Toolset
+			i(191239, {["requireSkill"]=TAILORING}),	-- Draconium Needle Set
+			i(191242, {["requireSkill"]=MINING}),	-- Draconium Pickaxe
+			i(191241, {["requireSkill"]=HERBALISM}),	-- Draconium Sickle
+			i(191240, {["requireSkill"]=SKINNING}),	-- Draconium Skinning Knife
+			i(191888, {["requireSkill"]=BLACKSMITHING}),	-- Khaz'gorite Blacksmith's Hammer
+			i(191230, {["requireSkill"]=BLACKSMITHING}),	-- Khaz'gorite Blacksmith's Toolbox
+			i(191227, {["requireSkill"]=LEATHERWORKING}),	-- Khaz'gorite Leatherworker's Knife
+			i(191229, {["requireSkill"]=LEATHERWORKING}),	-- Khaz'gorite Leatherworker's Toolset
+			i(191226, {["requireSkill"]=TAILORING}),	-- Khaz'gorite Needle Set
+			i(191223, {["requireSkill"]=MINING}),	-- Khaz'gorite Pickaxe
+			i(191224, {["requireSkill"]=HERBALISM}),	-- Khaz'gorite Sickle
+			i(191225, {["requireSkill"]=SKINNING}),	-- Khaz'gorite Skinning Knife
 		}),
 	}),
 	prof(COOKING, {
@@ -1008,9 +1008,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(204401, {["timeline"] = {ADDED_10_1_0}}),	-- Spore Keeper's Baton
 			i(200642),	-- Torch of Primal Awakening
 			-- Tools
-			i(198715),	-- Runed Draconium Rod
-			i(198716),	-- Runed Khaz'gorite Rod
-			i(201601),	-- Runed Serevite Rod
+			i(198715, {["requireSkill"]=ENCHANTING}),	-- Runed Draconium Rod
+			i(198716, {["requireSkill"]=ENCHANTING}),	-- Runed Khaz'gorite Rod
+			i(201601, {["requireSkill"]=ENCHANTING}),	-- Runed Serevite Rod
 		}),
 	}),
 	prof(ENGINEERING, {
@@ -1071,18 +1071,18 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(198328),	-- Quality-Assured Optics
 			i(198331),	-- Sentry's Stabilized Specs
 			-- Tools
-			i(198204),	-- Draconium Brainwave Amplifier
-			i(198243),	-- Draconium Delver's Helmet
-			i(198245),	-- Draconium Encased Samophlange
-			i(198225),	-- Draconium Fisherfriend
-			i(198205),	-- Khaz'gorite Brainwave Amplifier
-			i(198244),	-- Khaz'gorite Delver's Helmet
-			i(198226),	-- Khaz'gorite Fisherfriend
-			i(198246),	-- Khaz'gorite Encased Samophlange
-			i(198234),	-- Lapidary's Draconium Clamps
-			i(198235),	-- Lapidary's Khaz'gorite Clamps
-			i(194125),	-- Spring-Loaded Draconium Fabric Cutters
-			i(194126),	-- Spring-Loaded Khaz'gorite Fabric Cutters
+			i(198204, {["requireSkill"]=ENGINEERING}),	-- Draconium Brainwave Amplifier
+			i(198243, {["requireSkill"]=MINING}),	-- Draconium Delver's Helmet
+			i(198245, {["requireSkill"]=ENGINEERING}),	-- Draconium Encased Samophlange
+			i(198225, {["requireSkill"]=FISHING}),	-- Draconium Fisherfriend
+			i(198205, {["requireSkill"]=ENGINEERING}),	-- Khaz'gorite Brainwave Amplifier
+			i(198244, {["requireSkill"]=MINING}),	-- Khaz'gorite Delver's Helmet
+			i(198226, {["requireSkill"]=FISHING}),	-- Khaz'gorite Fisherfriend
+			i(198246, {["requireSkill"]=ENGINEERING}),	-- Khaz'gorite Encased Samophlange
+			i(198234, {["requireSkill"]=JEWELCRAFTING}),	-- Lapidary's Draconium Clamps
+			i(198235, {["requireSkill"]=JEWELCRAFTING}),	-- Lapidary's Khaz'gorite Clamps
+			i(194125, {["requireSkill"]=TAILORING}),	-- Spring-Loaded Draconium Fabric Cutters
+			i(194126, {["requireSkill"]=TAILORING}),	-- Spring-Loaded Khaz'gorite Fabric Cutters
 			-- Tinker
 			i(198289),	-- Tinker: Alarm-O-Turret+
 			i(198290),	-- Tinker: Alarm-O-Turret++
@@ -1965,12 +1965,12 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(194892),	-- Pioneer's Writhebark Stave
 			i(194894),	-- Weathered Explorer's Stave
 			-- Tools
-			i(191234),	-- Alchemist's Sturdy Mixing Rod
-			i(191231),	-- Alchemist's Brilliant Mixing Rod
-			i(191232),	-- Chef's Splendid Rolling Pin
-			i(191233),	-- Chef's Smooth Rolling Pin
-			i(194874),	-- Scribe's Fastened Quill
-			i(194875),	-- Scribe's Resplendent Quill
+			i(191234, {["requireSkill"]=ALCHEMY}),	-- Alchemist's Sturdy Mixing Rod
+			i(191231, {["requireSkill"]=ALCHEMY}),	-- Alchemist's Brilliant Mixing Rod
+			i(191232, {["requireSkill"]=COOKING}),	-- Chef's Splendid Rolling Pin
+			i(191233, {["requireSkill"]=COOKING}),	-- Chef's Smooth Rolling Pin
+			i(194874, {["requireSkill"]=INSCRIPTION}),	-- Scribe's Fastened Quill
+			i(194875, {["requireSkill"]=INSCRIPTION}),	-- Scribe's Resplendent Quill
 		}),
 	}),
 	prof(JEWELCRAFTING, {
@@ -2033,17 +2033,18 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		i(202058),	-- Timewatcher's Patience
 		i(200938),	-- Empty Soul Cage
 		n(ARMOR, {
-			i(193041),	-- Alexstraszite Loupes
-			i(193035),	-- Bold-Print Bifocals
-			i(193038),	-- Chromatic Focus
-			i(193039),	-- Fine-Print Trifocals
-			i(193036),	-- Left-Handed Magnifying Glass
-			i(193040),	-- Magnificent Margin Magnifier
-			i(193042),	-- Resonant Focus
-			i(194748),	-- Split-Lens Specs
-			i(193037),	-- Sundered Onyx Loupe
+			-- Tools
+			i(193041, {["requireSkill"]=JEWELCRAFTING}),	-- Alexstraszite Loupes
+			i(193035, {["requireSkill"]=INSCRIPTION}),	-- Bold-Print Bifocals
+			i(193038, {["requireSkill"]=ENCHANTING}),	-- Chromatic Focus
+			i(193039, {["requireSkill"]=INSCRIPTION}),	-- Fine-Print Trifocals
+			i(193036, {["requireSkill"]=INSCRIPTION}),	-- Left-Handed Magnifying Glass
+			i(193040, {["requireSkill"]=INSCRIPTION}),	-- Magnificent Margin Magnifier
+			i(193042, {["requireSkill"]=ENCHANTING}),	-- Resonant Focus
+			i(193037, {["requireSkill"]=JEWELCRAFTING}),	-- Sundered Onyx Loupe
 			filter(COSMETIC, {
 				i(193371),	-- "Rhinestone" Sunglasses
+				i(194748),	-- Split-Lens Specs
 			}),
 			filter(NECK_F, {
 				i(192998),	-- Crimson Combatant's Jeweled Amulet
@@ -2420,22 +2421,22 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193460),	-- Venom-Steeped Stompers
 			i(193463),	-- Wind Spirit's Lasso
 			-- Tools
-			i(193487),	-- Alchemist's Hat
-			i(193493),	-- Expert Alchemist's Hat
-			i(193490),	-- Expert Skinner's Cap
-			i(193480),	-- Durable Pack
-			i(193613),	-- Flameproof Apron
-			i(193479),	-- Floral Basket
-			i(193615),	-- Jeweler's Cover
-			i(193488),	-- Lavish Floral Pack
-			i(193492),	-- Masterwork Smock
-			i(193485),	-- Protective Gloves
-			i(193489),	-- Reinforced Pack
-			i(193616),	-- Resplendent Cover
-			i(193486),	-- Resilient Smock
-			i(193491),	-- Shockproof Gloves
-			i(193482),	-- Skinner's Cap
-			i(193612),	-- Smithing Apron
+			i(193487, {["requireSkill"]=ALCHEMY}),	-- Alchemist's Hat
+			i(193493, {["requireSkill"]=ALCHEMY}),	-- Expert Alchemist's Hat
+			i(193490, {["requireSkill"]=SKINNING}),	-- Expert Skinner's Cap
+			i(193480, {["requireSkill"]=SKINNING}),	-- Durable Pack
+			i(193613, {["requireSkill"]=BLACKSMITHING}),	-- Flameproof Apron
+			i(193479, {["requireSkill"]=HERBALISM}),	-- Floral Basket
+			i(193615, {["requireSkill"]=JEWELCRAFTING}),	-- Jeweler's Cover
+			i(193488, {["requireSkill"]=HERBALISM}),	-- Lavish Floral Pack
+			i(193492, {["requireSkill"]=LEATHERWORKING}),	-- Masterwork Smock
+			i(193485, {["requireSkill"]=ENGINEERING}),	-- Protective Gloves
+			i(193489, {["requireSkill"]=SKINNING}),	-- Reinforced Pack
+			i(193616, {["requireSkill"]=JEWELCRAFTING}),	-- Resplendent Cover
+			i(193486, {["requireSkill"]=LEATHERWORKING}),	-- Resilient Smock
+			i(193491, {["requireSkill"]=ENGINEERING}),	-- Shockproof Gloves
+			i(193482, {["requireSkill"]=SKINNING}),	-- Skinner's Cap
+			i(193612, {["requireSkill"]=BLACKSMITHING}),	-- Smithing Apron
 		}),
 		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = LEATHERWORKING,
@@ -2766,18 +2767,18 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193509),	-- Vibrant Wildercloth Vestments
 			i(193510),	-- Vibrant Wildercloth Wristwraps
 			-- Profession Accessory
-			i(193540),	-- Dragoncloth Tailoring Vestments
-			i(193544),	-- Master's Wildercloth Alchemist's Robe
-			i(193545),	-- Master's Wildercloth Chef's Hat
-			i(193533),	-- Master's Wildercloth Enchanter's Hat
+			i(193540, {["requireSkill"]=TAILORING}),	-- Dragoncloth Tailoring Vestments
+			i(193544, {["requireSkill"]=ALCHEMY}),	-- Master's Wildercloth Alchemist's Robe
+			i(193545, {["requireSkill"]=COOKING}),	-- Master's Wildercloth Chef's Hat
+			i(193533, {["requireSkill"]=ENCHANTING}),	-- Master's Wildercloth Enchanter's Hat
 			i(193543),	-- Master's Wildercloth Fishing Cap
-			i(193542),	-- Master's Wildercloth Gardening Hat
-			i(193528),	-- Wildercloth Alchemist's Robe
-			i(193534),	-- Wildercloth Chef's Hat
-			i(193539),	-- Wildercloth Enchanter's Hat
+			i(193542, {["requireSkill"]=HERBALISM}),	-- Master's Wildercloth Gardening Hat
+			i(193528, {["requireSkill"]=ALCHEMY}),	-- Wildercloth Alchemist's Robe
+			i(193534, {["requireSkill"]=COOKING}),	-- Wildercloth Chef's Hat
+			i(193539, {["requireSkill"]=ENCHANTING}),	-- Wildercloth Enchanter's Hat
 			i(193529),	-- Wildercloth Fishing Cap
-			i(193538),	-- Wildercloth Gardening Hat
-			i(193541),	-- Wildercloth Tailor's Coat
+			i(193538, {["requireSkill"]=HERBALISM}),	-- Wildercloth Gardening Hat
+			i(193541, {["requireSkill"]=TAILORING}),	-- Wildercloth Tailor's Coat
 		}),
 		filter(MISC, {
 			i(193950),	-- Abrasive Polishing Cloth+

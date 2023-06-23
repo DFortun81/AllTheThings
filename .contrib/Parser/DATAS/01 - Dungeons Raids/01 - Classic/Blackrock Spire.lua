@@ -1187,10 +1187,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				i(14513, {	-- Pattern: Robe of the Archmage
 					["cr"] = 9264,	-- Firebrand Pyromancer
 				}),
-				i(15749, {	-- Pattern: Volcanic Breastplate
+				i(15749, {	-- Pattern: Volcanic Breastplate (RECIPE!)
 					["cr"] = 9259,	-- Firebrand Grunt
 				}),
-				i(15775, {	-- Pattern: Volcanic Shoulders
+				i(15775, {	-- Pattern: Volcanic Shoulders (RECIPE!)
 					["cr"] = 9260,	-- Firebrand Legionnaire
 				}),
 				i(13494, {	-- Recipe: Greater Fire Protection Potion
@@ -1625,7 +1625,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 					})),
 					-- #if AFTER 5.0.4
-					i(15774, {	-- Pattern: Heavy Scorpid Shoulders
+					i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
 						["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2" },
 						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
 					}),
@@ -1961,7 +1961,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(16663, {	-- Blood of the Black Dragon Champion
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(15730, {	-- Pattern: Red Dragonscale Breastplate
+						i(15730, {	-- Pattern: Red Dragonscale Breastplate (RECIPE!)
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						i(13519, {	-- Recipe: Flask of the Titans

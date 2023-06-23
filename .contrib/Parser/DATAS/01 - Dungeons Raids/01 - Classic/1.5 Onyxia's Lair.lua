@@ -282,7 +282,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						recipe(19093, {	-- Onyxia Scale Cloak
 							["timeline"] = ADDED_WITH_RERELEASE,
 						}),
-						i(15769, {	-- Pattern: Onyxia Scale Cloak
+						i(15769, {	-- Pattern: Onyxia Scale Cloak (RECIPE!)
 							["timeline"] = REMOVED_WITH_RERELEASE,
 						}),
 					},
@@ -303,7 +303,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						recipe(19093, {	-- Onyxia Scale Cloak
 							["timeline"] = ADDED_WITH_RERELEASE,
 						}),
-						i(15769, {	-- Pattern: Onyxia Scale Cloak
+						i(15769, {	-- Pattern: Onyxia Scale Cloak (RECIPE!)
 							["timeline"] = REMOVED_WITH_RERELEASE,
 						}),
 					},

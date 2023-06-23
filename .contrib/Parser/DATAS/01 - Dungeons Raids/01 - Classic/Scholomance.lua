@@ -669,14 +669,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = { "removed 5.0.3" },
 						["cr"] = 10499,	-- Spectral Researcher
 					}),
-					i(15776, {	-- Pattern: Runic Leather Armor
+					i(15776, {	-- Pattern: Runic Leather Armor (RECIPE!)
 						-- #if AFTER 4.0.3
 						["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
 						-- #endif
 						["timeline"] = { "removed 4.0.3" },
 						["cr"] = 11582,	-- Scholomance Dark Summoner
 					}),
-					i(15773, {	-- Pattern: Wicked Leather Armor
+					i(15773, {	-- Pattern: Wicked Leather Armor (RECIPE!)
 						-- #if AFTER 4.0.3
 						["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
 						-- #endif

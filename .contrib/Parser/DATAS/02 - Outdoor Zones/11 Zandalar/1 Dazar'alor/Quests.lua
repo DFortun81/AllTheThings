@@ -983,6 +983,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			q(75874, {	-- Time to Fly
 				["description"] = "Reaching Level 30 will make this quest pop up.",
 				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_10_1_5 },
 				["g"] = {
 					i(206566),	-- Scarlet Pterrordax (MOUNT!)
 				},

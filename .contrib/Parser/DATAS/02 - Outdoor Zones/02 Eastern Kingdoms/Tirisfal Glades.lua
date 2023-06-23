@@ -2163,10 +2163,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(15741, {	-- Pattern: Stormshroud Pants
+						i(15741, {	-- Pattern: Stormshroud Pants (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15725, {	-- Pattern: Wicked Leather Gauntlets
+						i(15725, {	-- Pattern: Wicked Leather Gauntlets (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

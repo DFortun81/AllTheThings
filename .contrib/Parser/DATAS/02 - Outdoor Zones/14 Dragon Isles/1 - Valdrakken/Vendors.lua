@@ -94,6 +94,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201045),	-- Icecrown Bleu
 					i(201398),	-- Mogu Mozzarella
 					i(201820),	-- Silithus Swiss
+					i(203433, {	-- Wheel of Whelpwhisper Brie
+						["timeline"] = { ADDED_10_1_5 },
+					}),
+				},
+			}),
+			n(193029, {	-- Lysindra
+				["coord"] = { 48.2, 82.7, VALDRAKKEN },
+				["g"] = {
+					i(203445, {	-- Stuffed Doll
+						["timeline"] = { ADDED_10_1_5 },
+					}),
 				},
 			}),
 			n(187783, {	-- Pakak
@@ -105,6 +116,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ "i", 197792, 3 },	-- 3xFated Fortune Cookie
 							{ "i", 197789, 1 },	-- 1xRiverside Picnic
 						},
+					}),
+				},
+			}),
+			n(106448, {	-- Tithris
+				["coord"] = { 47.3, 46.7, VALDRAKKEN },
+				["g"] = {
+					i(203443, {	-- Box of Leapmaize Crackers
+						["timeline"] = { ADDED_10_1_5 },
 					}),
 				},
 			}),
