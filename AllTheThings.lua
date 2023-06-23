@@ -18727,6 +18727,8 @@ local function SetRescursiveFilters()
 	IgnoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
 	CloneGroup = app.CreateWrapFilterHeader;
 end
+-- If/when this section becomes a module, set Module.SearchResponse.SearchNil instead
+app.SearchNil = "zsxdcfawoidsajd"
 local MainRoot, UnsortedRoot;
 local ClonedHierarchyGroups = {};
 local ClonedHierarachyMapping = {};
@@ -18747,7 +18749,7 @@ local function MatchOrCloneParentInHierarchy(group)
 
 		-- check the parent to see if this parent chain will be excluded
 		local parent = group.parent;
-		if parent == UnsortedRoot then
+		if not parent or parent == UnsortedRoot then
 			-- app.PrintDebug("Don't capture Unsorted",group.text)
 			return;
 		end
@@ -18818,7 +18820,7 @@ local function AddSearchGroupsByFieldValue(groups, field, value)
 		for _,group in ipairs(groups) do
 			if not group.sourceIgnored then
 				v = group[field];
-				if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+				if v == value or (field == "requireSkill" and v and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value) then
 					tinsert(SearchGroups, group);
 				else
 					AddSearchGroupsByFieldValue(group.g, field, value);
@@ -18857,7 +18859,11 @@ function app:BuildSearchResponse(field, value, clear)
 		local cacheContainer = SearchForFieldContainer(field);
 		if cacheContainer then
 			BuildSearchResponseViaCacheContainer(cacheContainer, value, clear);
-		elseif value then
+		elseif value ~= nil then
+			-- allow searching specifically for a nil field
+			if value == app.SearchNil then
+				value = nil;
+			end
 			-- app.PrintDebug("BSR:FieldValue",MainRoot.g and #MainRoot.g,field,value,clear)
 			AddSearchGroupsByFieldValue(MainRoot.g, field, value);
 			BuildClonedHierarchy(SearchGroups, clear);
@@ -19844,6 +19850,15 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 									local field, value = strsplit("=",input);
 									value = tonumber(value) or value;
 									if value and value ~= "" then
+										-- allows performing a value search when looking for 'nil'
+										if value == "nil" then
+											value = app.SearchNil;
+										-- use proper bool values if specified
+										elseif value == "true" then
+											value = true;
+										elseif value == "false" then
+											value = false;
+										end
 										self:Search(field, value);
 									else
 										self:Search(field);
