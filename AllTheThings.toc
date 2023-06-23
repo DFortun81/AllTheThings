@@ -17,7 +17,11 @@ lib\Callback.lua
 lib\Runner.lua
 lib\Audio.lua
 lib\Refresh.lua
+lib\Table.lua
 locales\en.lua
+src\Modules\RetrievingData.lua
+src\Modules\FactionData.lua
+src\Modules\Color.lua
 src\Modules\Costs.lua
 src\Modules\Events.lua
 db\Presets.lua

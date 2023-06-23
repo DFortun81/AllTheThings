@@ -40,50 +40,10 @@ local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
 local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, sformat, strsplit, GetTimePreciseSec
 	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, string.format, strsplit, GetTimePreciseSec;
-local ATTAccountWideData, IsRetrieving;
--- Retrieving Data Locals
-do
-local RETRIEVING_DATA, RETRIEVING_ITEM_INFO = RETRIEVING_DATA, RETRIEVING_ITEM_INFO;
-local RETRIEVING = strsplit(" ", RETRIEVING_DATA);
--- Returns whether the provided string matches a string which indicates the data is not yet loaded in the Client
-IsRetrieving = function(s)
-	return not s
-		or s == RETRIEVING_DATA
-		or s == RETRIEVING_ITEM_INFO
-		or s:find(RETRIEVING)
-		or s:find("^%[%]");
-end
-end	-- Retrieving Data Locals
-local ALLIANCE_ONLY = {
-	1,	-- Human
-	3,	-- Dwarf
-	4,	-- Night Elf
-	7,	-- Gnome
-	11,	-- Draenei
-	22,	-- Worgen
-	25,	-- Pandaren (A)
-	29,	-- Void Elf
-	30,	-- Lightforged Draenei
-	32,	-- Kul Tiran
-	34,	-- Dark Iron Dwarf
-	37,	-- Mechagnome
-	52,	-- Dracthyr (A)
-};
-local HORDE_ONLY = {
-	2,	-- Orc
-	5,	-- Undead
-	6,	-- Tauren
-	8,	-- Troll
-	9,	-- Goblin
-	10,	-- Blood Elf
-	26,	-- Pandaren (H)
-	27,	-- Nightborne
-	28,	-- Highmountain Tauren
-	31,	-- Zandalari Troll
-	35,	-- Vulpera
-	36,	-- Mag'har Orc
-	70,	-- Dracthyr (H)
-};
+local ATTAccountWideData;
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+local ALLIANCE_ONLY = app.Modules.FactionData.FACTION_RACES[1];
+local HORDE_ONLY = app.Modules.FactionData.FACTION_RACES[2];
 
 -- Print/Debug/Testing Functions
 app.print = function(...)
@@ -194,29 +154,10 @@ local constructor = function(id, t, typeID)
 		return {[typeID] = id};
 	end
 end
-local contains = function(arr, value)
-	for _,value2 in ipairs(arr) do
-		if value2 == value then return true; end
-	end
-end
-local containsAny = function(arr, arr2)
-	for _,v in ipairs(arr) do
-		for _,w in ipairs(arr2) do
-			if v == w then return true; end
-		end
-	end
-end
-local containsValue = function(dict, value)
-	for _,value2 in pairs(dict) do
-		if value2 == value then return true; end
-	end
-end
-local indexOf = function(arr, value)
-	for i,value2 in ipairs(arr) do
-		if value2 == value then return i; end
-	end
-end
-
+local contains = app.contains;
+local containsAny = app.containsAny;
+local containsValue = app.containsValue;
+local indexOf = app.indexOf;
 
 -- Sorting Logic
 do
@@ -1220,148 +1161,10 @@ function app:TakeScreenShot(type)
 end
 
 -- Color Lib
-local GetProgressColor, Colorize, RGBToHex;
-local function HexToARGB(hex)
-	return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6)), tonumber("0x"..hex:sub(7,8));
-end
-local function HexToRGB(hex)
-	return tonumber("0x"..hex:sub(1,2)) / 255, tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255;
-end
-(function()
-local RAID_CLASS_COLORS = RAID_CLASS_COLORS;
-local Alliance, Horde = Enum.FlightPathFaction.Alliance, Enum.FlightPathFaction.Horde;
--- Color AARRGGBB values used throughout ATT
-app.Colors = {
-	["Raid"] = "ffff8000",
-	["SourceIgnored"] = "ffd15517",
-	["Locked"] = "ff7f40bf",
-	["LockedWarning"] = "ffd15517",
-	["Horde"] = "ffcc6666",
-	["Alliance"] = "ff407fbf",
-	["Completed"] = "ff15abff",
-	["ChatLinkError"] = "ffff5c6c",
-	["ChatLinkHQT"] = "ff7aff92",
-	["ChatLink"] = "ff149bfd",
-	["TooltipDescription"] = "ff66ccff",
-	["TooltipLore"] = "ff42a7eb",
-	["DefaultDifficulty"] = "ff1eff00",
-	["RemovedWithPatch"] = "ffffaaaa",
-	["AddedWithPatch"] = "ffaaffaa",
-	["Renown"] = "ff00bff3",
-};
-Colorize = function(str, color)
-	return "|c" .. color .. str .. "|r";
-end
-RGBToHex = function(r, g, b)
-	return sformat("ff%02x%02x%02x",
-		r <= 255 and r >= 0 and r or 0,
-		g <= 255 and g >= 0 and g or 0,
-		b <= 255 and b >= 0 and b or 0);
-end
--- Attempts to determine the colorized text for a given Group
-app.TryColorizeName = function(group, name)
-	if IsRetrieving(name) then return name; end
-	-- raid headers
-	if group.isRaid then
-		return Colorize(name, app.Colors.Raid);
-	-- groups which are ignored for progress
-	elseif group.sourceIgnored then
-		return Colorize(name, app.Colors.SourceIgnored);
-	-- faction rep status
-	elseif group.factionID and group.standing then
-		return app.GetCurrentFactionStandingText(group.factionID, group.standing, name);
-	-- locked/breadcrumb things
-	elseif group.locked or group.isBreadcrumb then
-		return Colorize(name, app.Colors.Locked);
-		-- if people REALLY only want to see colors in account/debug then we can comment this in
-	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_ACCOUNT or app.MODE_DEBUG)
-	then
-		-- class color
-		if group.classID then
-			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.classID))].colorStr);
-		elseif group.c and #group.c == 1 then
-			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.c[1]))].colorStr);
-		-- faction colors
-		elseif group.r then
-			-- red for Horde
-			if group.r == Horde then
-				return Colorize(name, app.Colors.Horde);
-			-- blue for Alliance
-			elseif group.r == Alliance then
-				return Colorize(name, app.Colors.Alliance);
-			end
-		-- specific races
-		elseif group.races then
-			local hrace = containsAny(group.races, HORDE_ONLY);
-			local arace = containsAny(group.races, ALLIANCE_ONLY);
-			if hrace and not arace then
-				-- this group requires a horde-only race, and not any alliance race
-				return Colorize(name, app.Colors.Horde);
-			elseif arace and not hrace then
-				-- this group requires a alliance-only race, and not any horde race
-				return Colorize(name, app.Colors.Alliance);
-			end
-		-- un-acquirable color
-		-- grey color for things which are otherwise not available to the current character (would only show in account mode due to filtering)
-		elseif not app.CurrentCharacterFilters(group) then
-			return Colorize(name, "ff808080");
-		end
-	end
-	return name;
-end
--- Returns 'Time Left: %s'
-app.GetColoredTimeRemaining = function(time)
-	if time and time > 0 then
-		local timeLeft = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(time * 60));
-		if time < 30 then
-			return Colorize(timeLeft, "FFFF0000");
-		elseif time < 120 then
-			return Colorize(timeLeft, "FFFFFF00");
-		else
-			return Colorize(timeLeft, "FF008000");
-		end
-	end
-end
-local CS = CreateFrame("ColorSelect", nil, app._);
-CS:Hide();
-local function ConvertColorRgbToHsv(r, g, b)
-  CS:SetColorRGB(r, g, b);
-  local h,s,v = CS:GetColorHSV()
-  return {h=h,s=s,v=v}
-end
-local red, green = ConvertColorRgbToHsv(1,0,0), ConvertColorRgbToHsv(0,1,0);
-local abs, floor = abs, floor;
-local progress_colors = setmetatable({[1] = app.Colors.Completed}, {
-	__index = function(t, p)
-		local h;
-		p = tonumber(p);
-		-- anything over 100% will just be 100% color
-		if p > 1 then return t[1]; end
-		-- anything somehow under 0 will just be 0
-		if p < 0 then return t[0]; end
-		if abs(red.h - green.h) > 180 then
-			local angle = (360 - abs(red.h - green.h)) * p;
-			if red.h < green.h then
-				h = floor(red.h - angle);
-				if h < 0 then h = 360 + h end
-			else
-				h = floor(red.h + angle);
-				if h > 360 then h = h - 360 end
-			end
-		else
-			h = floor(red.h-(red.h-green.h)*p)
-		end
-		CS:SetColorHSV(h, red.s-(red.s-green.s)*p, red.v-(red.v-green.v)*p);
-		local r,g,b = CS:GetColorRGB();
-		local color = RGBToHex(r * 255, g * 255, b * 255);
-		t[p] = color;
-		return color;
-	end
-});
-GetProgressColor = function(p)
-	return progress_colors[p];
-end
-end)();
+local GetProgressColor = app.Modules.Color.GetProgressColor;
+local Colorize = app.Modules.Color.Colorize;
+local RGBToHex = app.Modules.Color.RGBToHex;
+local HexToARGB = app.Modules.Color.HexToARGB;
 
 local function GetNumberWithZeros(number, desiredLength)
 	if desiredLength > 0 then
@@ -10398,38 +10201,6 @@ app.FactionIDByName = setmetatable({}, { __index = function(t, name)
 		end
 	end
 end });
-app.FACTION_RACES = {
-	[1] = {
-		1,	-- Human
-		3,	-- Dwarf
-		4,	-- Night Elf
-		7,	-- Gnome
-		11,	-- Draenei
-		22,	-- Worgen
-		25,	-- Pandaren [Alliance]
-		29,	-- Void Elf
-		30,	-- Lightforged
-		32,	-- Kul Tiran
-		34,	-- Dark Iron
-		37,	-- Mechagnome
-		52, -- Dracthyr [Alliance]
-	},
-	[2] = {
-		2,	-- Orc
-		5,	-- Undead
-		6,	-- Tauren
-		8,	-- Troll
-		9,	-- Goblin
-		10,	-- Blood Elf
-		26,	-- Pandaren [Horde]
-		27,	-- Nightborne
-		28,	-- Highmountain
-		31,	-- Zandalari
-		35,	-- Vulpera
-		36,	-- Mag'har
-		70, -- Dracthyr [Horde]
-	}
-};
 app.GetFactionIDByName = function(name)
 	name = strtrim(name);
 	return app.FactionIDByName[name] or name;
@@ -12225,9 +11996,9 @@ itemTooltipHarvesterFields.text = function(t)
 								if not c then
 									faction = strtrim(faction);
 									if faction == "Alliance" then
-										t.info.races = app.FACTION_RACES[1];
+										t.info.races = app.Modules.FactionData.FACTION_RACES[1];
 									elseif faction == "Horde" then
-										t.info.races = app.FACTION_RACES[2];
+										t.info.races = app.Modules.FactionData.FACTION_RACES[2];
 									else
 										print("Unknown Faction",t.info.itemID,faction);
 									end
@@ -14168,6 +13939,7 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 		if item then
 			local knownItem, knownSource, valid;
 			local acctSources = ATTAccountWideData.Sources;
+			local factionRaces = app.Modules.FactionData.FACTION_RACES;
 			for _,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				-- only compare against other Sources of the VisualID which the Account knows
 				if sourceID ~= sourceInfo.sourceID and acctSources[sourceID] == 1 then
@@ -14200,7 +13972,7 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 							if valid and knownItem.r then
 								if item.r then
 									-- the known source has a faction restriction that is not shared by the source or source races in question
-									if knownItem.r ~= item.r or (item.races and not containsAny(app.FACTION_RACES[knownItem.r], item.races)) then valid = nil; end
+									if knownItem.r ~= item.r or (item.races and not containsAny(factionRaces[knownItem.r], item.races)) then valid = nil; end
 								else
 									valid = nil;
 								end
@@ -14290,6 +14062,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 			end
 		end
 		if not canMog then return; end
+		local factionRaces = app.Modules.FactionData.FACTION_RACES;
 		for _,sourceID in ipairs(visualIDs) do
 			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)] end
 			-- If it is not currently marked collected on the account
@@ -14331,7 +14104,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 							if valid and knownFaction then
 								if checkItem.r then
 									-- the known source has a faction restriction that is not shared by the source or source races in question
-									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(app.FACTION_RACES[knownFaction], checkItem.races)) then valid = nil; end
+									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(factionRaces[knownFaction], checkItem.races)) then valid = nil; end
 								else
 									valid = nil;
 								end
