@@ -17,6 +17,7 @@ lib\Callback.lua
 lib\Runner.lua
 lib\Audio.lua
 lib\Refresh.lua
+lib\Sort.lua
 lib\Table.lua
 locales\en.lua
 src\Modules\RetrievingData.lua
