@@ -282,9 +282,6 @@ root(ROOTS.Unsorted, {
 			i(202265),	-- Wheel of Whelpwhisper Brie
 			i(202266),	-- Bag of Spicy Pet Snacks
 			i(202270),	-- [DNT] Twice-Woven Rope
-			i(202286),	-- Warmed Coal
-			i(202288),	-- Obsidian Gemstone
-			i(202292),	-- Crystalline Shell
 			i(202312),	-- Juicy Mammoth Steak
 			i(202313),	-- Echolocator
 			i(202330),	-- Fine-Pointed Quill
