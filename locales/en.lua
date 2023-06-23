@@ -487,7 +487,7 @@ app.L = {
 	-- Filters tab
 	["TRACKING_PAGE"] = TRACKING;
 	["ITEM_FILTER_LABEL"] = AUCTION_CATEGORY_WEAPONS.." & "..ARMOR;
-	["ITEM_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF.|r";
+	["ITEM_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if you are in "..color.Account.."Account Mode|cffFFFFFF.|r";
 	["CLASS_DEFAULTS_BUTTON"] = "Class Defaults";
 	["CLASS_DEFAULTS_BUTTON_TOOLTIP"] = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
 	["ALL_BUTTON"] = ALL;
@@ -495,7 +495,7 @@ app.L = {
 	["UNCHECK_ALL_BUTTON"] = NONE;
 	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all options at once.";
 	["CUSTOM_FILTERS_LABEL"] = "Automated Content";
-	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF.|r";
+	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..color.Account.."Account Mode|cffFFFFFF.|r";
 	["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"] = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab

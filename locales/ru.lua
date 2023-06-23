@@ -321,7 +321,6 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..color.Account.."Весь 
 		L.REPUTATIONS_CHECKBOX_TOOLTIP = "Включите для отслеживания репутаций.\n\nПосле достижения Превознесения или статуса Лучший друг, будет отмечено как Собрано.\n\nМожет потребоваться ручное обновление коллекции, чтобы засчитать их корректно.";
 		L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t "..color.Insane.."Легендарки ТЗ";
 		L.RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Включите для отслеживания Легендарных предметов Тёмных Земель.";
-		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t |cffADD8E6"..DRAKE_MANUSCRIPTS;
 		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Включите для отслеживания Манускриптов наблюдений за драконами "..EXPANSION_NAME9;
 		L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Включите для отслеживания Проводников Медиумов.";
 		L.TITLES_CHECKBOX_TOOLTIP = "Включите для отслеживания званий.\n\nОни выделяют Вашего персонажа и показывают, как давно Вы играете. Обычно только у новых игроков нет выбранного звания.";
@@ -385,13 +384,13 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..color.Account.."Весь 
 		L.ACCOUNT_WIDE_TITLES_TOOLTIP = TRACK_ACC_WIDE.."\n\nБольшинство званий отслеживается на всю учётную запись, но некоторые престижные звания в WoW закреплены за персонажем, получившим их.\n\nПереключите эту опцию, если они Вам не важны, и Вы хотите видеть эти звания Собранными на Ваших альтах.";
 
 	-- Filters tab
-		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFFЭти предметы всегда видимы в |Cff00AB00Режиме Аккаунта|cffFFFFFF.|r";
+		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFFЭти предметы всегда видимы в "..color.Account.."Режиме Аккаунта|cffFFFFFF.|r";
 		L.CLASS_DEFAULTS_BUTTON = "Классовые";
 		L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы сбросить все фильтры к стандартным для Вашего класса.\n\nПримечание: Только фильтры, которые могут быть собраны Вашим классом, будут включены.";
 		L.ALL_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы включить все фильтры сразу.";
 		L.UNCHECK_ALL_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы отключить все фильтры.";
 		--TODO: L.CUSTOM_FILTERS_LABEL = "Automated Content";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в |Cff00AB00Режиме Аккаунта|cffFFFFFF.|r";
+		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в "..color.Account.."Режиме Аккаунта|cffFFFFFF.|r";
 		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Включите данную настройку, чтобы всегда показывать %s, даже если это недоступно на данном персонаже.";
 
 	-- Unobtainables tab
