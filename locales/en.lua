@@ -32,8 +32,8 @@ ACC_WIDE_DEFAULT = "Tracked ".. color.Account .. ITEM_UPGRADE_DISCOUNT_TOOLTIP_A
 
 app.L = {
 	-- General Text
-	["TITLE"] = color.ATT .. "ALL THE THINGS|r";
-	["AUCTION_TAB"] = color.ATT .. "ATT|r";
+	["TITLE"] = "|c"..app.Colors.ATT.."ALL THE THINGS|r";
+	["AUCTION_TAB"] = "|c"..app.Colors.ATT.."ATT|r";
 	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
@@ -957,7 +957,7 @@ app.L = {
 		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
 		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",			-- Event Item
 	};
-	
+
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
@@ -1419,10 +1419,10 @@ app.L = {
 	["HEADER_DESCRIPTIONS"] = {};
 	["HEADER_EVENTS"] = {};
 	["HEADER_LORE"] = {};
-	
+
 	["EVENT_REMAPPING"] = {};
 	["EVENT_TOOLTIPS"] = {};
-	
+
 	-- Module Localizations
 	["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 
