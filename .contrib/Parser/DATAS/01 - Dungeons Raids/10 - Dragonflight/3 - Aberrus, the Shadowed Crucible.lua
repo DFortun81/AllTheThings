@@ -1127,7 +1127,20 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						},
 					}),
 				}),
-				n(ZONE_DROPS, {
+				n(ZONE_DROPS, {	-- Regular Zone Drops
+					i(204410),	-- Bands of Purified Purpose
+					i(204411),	-- Crucible Curator's Wingspan
+					i(204429),	-- Devoted Warden's Gaze
+					i(204423),	-- Faulds of Failed Experiments
+					i(204414),	-- Laboratory Assistant's Abductors
+					i(204415),	-- Mantle of Sunless Kindling
+					i(204430),	-- Sanctum Guard's Forgewalkers
+					i(204422),	-- Sundered Edgelord's Breastplate
+					i(204078),	-- Aspect's Shadowflame Crest Fragment
+				}),
+				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
+					["timeline"] = { ADDED_10_1_0, "removed 10.1.0.50000" },
+				},{
 					i(204413),	-- Bands of Purified Purpose
 					i(204412),	-- Crucible Curator's Wingspan
 					i(204427),	-- Devoted Warden's Gaze
@@ -1136,8 +1149,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(204417),	-- Mantle of Sunless Kindling
 					i(204428),	-- Sanctum Guard's Forgewalkers
 					i(204420),	-- Sundered Edgelord's Breastplate
-					i(204078),	-- Aspect's Shadowflame Crest Fragment
-				}),
+				})),
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
 					["g"] = {
