@@ -13,6 +13,8 @@ local rawget, ipairs, pairs
 
 -- Module locals
 local RecursiveGroupRequirementsFilter, SearchForField, GroupFilter;
+-- Ideally never used, but weird situations are possible to cause logic to execute prior to ATT even loading
+local function EmptyFunction() end
 
 -- Function which returns if a Thing has a cost based on a given 'ref' Thing, which has been previously determined as a
 -- possible collectible without regard to filtering
@@ -34,7 +36,7 @@ local function SubCheckCollectible(ref)
 		local o;
 		for i=1,#g do
 			o = g[i];
-			if GroupFilter(o) and SubCheckCollectible(o) then
+			if (GroupFilter or EmptyFunction)(o) and SubCheckCollectible(o) then
 				-- app.PrintDebug("Cost via sub-group collectible",ref.hash)
 				return true;
 			end
@@ -63,7 +65,7 @@ end
 
 local function CheckCollectible(ref)
 	-- don't include groups which don't meet the current filters
-	if RecursiveGroupRequirementsFilter(ref) then
+	if (RecursiveGroupRequirementsFilter or EmptyFunction)(ref) then
 		return SubCheckCollectible(ref);
 	end
 end
@@ -104,8 +106,6 @@ app.CollectibleAsCost = function(t)
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
 	t.collectibleAsCost = false;
 	-- check the collectibles if any are considered collectible currently
-	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
-	GroupFilter = app.GroupFilter;
 	local costNeeded;
 	for _,ref in ipairs(collectibles) do
 		-- Use the common collectibility check logic
