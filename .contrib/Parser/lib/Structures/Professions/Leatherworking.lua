@@ -392,6 +392,134 @@ COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
 		["timeline"] = { "added 4.0.3.13287" },
 	}),
 };
+BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { "added 8.0.1" } }, {
+	r(264592),	-- Kul Tiran Leatherworking
+	r(330216, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
+	r(330218, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
+	r(330219, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Battle for Azeroth]
+	r(330220, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Battle for Azeroth]
+	r(330221, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Battle for Azeroth]
+	n(ARMOR, {
+		r(256756),	-- Coarse Leather Armguards
+		r(256750),	-- Coarse Leather Gauntlets
+		r(256751),	-- Coarse Leather Helm
+		r(256752),	-- Coarse Leather Leggings
+		r(256754),	-- Coarse Leather Pauldrons
+		r(256748),	-- Coarse Leather Treads
+		r(256749),	-- Coarse Leather Vest
+		r(256755),	-- Coarse Leather Waistguard
+		r(285079, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Mistscale Boots
+		r(285080, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Mistscale Greaves
+		r(285083, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Tempest Boots
+		r(285084, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Tempest Leggings
+		r(256765),	-- Hardened Tempest Boots
+		r(272278),	-- Hardened Tempest Hide
+		r(256768),	-- Hardened Tempest Leggings
+		r(269528),	-- Honorable Combatant's Leather Armguards [Rank 1]
+		r(269519),	-- Honorable Combatant's Leather Gauntlets [Rank 1]
+		r(269522),	-- Honorable Combatant's Leather Leggings [Rank 1]
+		r(269516),	-- Honorable Combatant's Leather Treads [Rank 1]
+		r(269525),	-- Honorable Combatant's Leather Waistguard [Rank 1]
+		r(269543),	-- Honorable Combatant's Mail Armguards [Rank 1]
+		r(269534),	-- Honorable Combatant's Mail Gauntlets [Rank 1]
+		r(269537),	-- Honorable Combatant's Mail Leggings [Rank 1]
+		r(269531),	-- Honorable Combatant's Mail Treads [Rank 1]
+		r(269540),	-- Honorable Combatant's Mail Waistguard [Rank 1]
+		r(256771),	-- Mistscale Boots
+		r(256774),	-- Mistscale Leggings
+		r(256757),	-- Shimmerscale Armguards
+		r(256762),	-- Shimmerscale Gauntlets
+		r(256761),	-- Shimmerscale Helm
+		r(256760),	-- Shimmerscale Leggings
+		r(256759),	-- Shimmerscale Pauldrons
+		r(256764),	-- Shimmerscale Treads
+		r(256763),	-- Shimmerscale Vest
+		r(256758),	-- Shimmerscale Waistguard
+		r(282312, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Armguards [Rank 1]
+		r(282324, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Gauntlets [Rank 1]
+		r(282321, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Leggings [Rank 1]
+		r(282327, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Treads [Rank 1]
+		r(282318, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Waistguard [Rank 1]
+		r(282287, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Armguards [Rank 1]
+		r(282306, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Gauntlets [Rank 1]
+		r(282302, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Leggings [Rank 1]
+		r(282309, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Treads [Rank 1]
+		r(282290, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Waistguard [Rank 1]
+		r(304424, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Leather Armguards [Rank 1]
+		r(304415, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Leather Gauntlets [Rank 1]
+		r(304418, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Leather Leggings [Rank 1]
+		r(304412, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Leather Treads [Rank 1]
+		r(304421, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Leather Waistguard [Rank 1]
+		r(304439, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Mail Armguards [Rank 1]
+		r(304430, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Mail Gauntlets [Rank 1]
+		r(304433, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Mail Leggings [Rank 1]
+		r(304427, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Mail Treads [Rank 1]
+		r(304436, {["timeline"] = (ADDED_8_3_0)}),	-- Uncanny Combatant's Mail Waistguard [Rank 1]
+	}),
+	filter(MISC, {
+		r(287273, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Reskinning
+		r(278423),	-- Amber Rallying Horn
+		r(256791),	-- Drums of the Maelstrom
+		r(269552),	-- Honorable Combatant's Bow [Rank 1]
+		r(286652, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Reskinning
+		r(285895, {["timeline"] = {ADDED_8_1_0}}),	-- Scarlet Herring Lure
+		r(256793),	-- Shimmerscale Diving Helmet
+		r(256792),	-- Shimmerscale Diving Suit
+		r(276256),	-- Tempest Hide Pouch
+	}),
+	filter(MOUNT_EQUIPMENT, {
+		r(256790),	-- Coarse Leather Barding [Rank 1]
+		r(286019, {["timeline"] = {ADDED_8_1_0}}),	-- Coarse Leather Barding [Rank 2]
+	}),
+	n(WEAPONS, {
+		r(256778),	-- Coarse Leather Cestus
+		r(256782),	-- Hardened Tempest Knuckles [Rank 1]
+		r(256783),	-- Hardened Tempest Knuckles [Rank 2]
+		r(269552),	-- Honorable Combatant's Bow [Rank 1]
+		r(256779),	-- Mistscale Knuckles [Rank 1]
+		r(256780),	-- Mistscale Knuckles [Rank 2]
+		r(256787),	-- Recurve Bow of the Strands [Rank 1]
+		r(256788),	-- Recurve Bow of the Strands [Rank 2]
+		r(256777),	-- Shimmerscale Striker
+		r(282277, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Bow [Rank 1]
+		r(304442, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Bow [Rank 1]
+	}),
+}));
+NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline"] = { "added 8.2.0" } }, {
+	n(ARMOR, {
+		r(299027),	-- Banded Cragscale Boots
+		r(299030),	-- Banded Cragscale Greaves
+		r(299021),	-- Banded Dredged Boots
+		r(299024),	-- Banded Dredged Leggings
+		r(299025),	-- Cragscale Boots
+		r(299028),	-- Cragscale Greaves
+		r(299019),	-- Dredged Leather Boots
+		r(299022),	-- Dredged Leather Leggings
+		r(294808),	-- Notorious Combatant's Leather Armguards [Rank 1]
+		r(294799),	-- Notorious Combatant's Leather Gauntlets [Rank 1]
+		r(294802),	-- Notorious Combatant's Leather Leggings [Rank 1]
+		r(294796),	-- Notorious Combatant's Leather Treads [Rank 1]
+		r(294805),	-- Notorious Combatant's Leather Waistguard [Rank 1]
+		r(294823),	-- Notorious Combatant's Mail Armguards [Rank 1]
+		r(294814),	-- Notorious Combatant's Mail Gauntlets [Rank 1]
+		r(294817),	-- Notorious Combatant's Mail Leggings [Rank 1]
+		r(294811),	-- Notorious Combatant's Mail Treads [Rank 1]
+		r(294820),	-- Notorious Combatant's Mail Waistguard [Rank 1]
+		r(299026),	-- Reinforced Cragscale Boots
+		r(299029),	-- Reinforced Cragscale Greaves
+		r(299020),	-- Reinforced Dredged Boots
+		r(299023),	-- Reinforced Dredged Leggings
+	}),
+	filter(MISC, {
+		r(301405),	-- Dredged Leather Bladder
+	}),
+	filter(MOUNT_EQUIPMENT, {
+		r(301411),	-- Comfortable Rider's Barding
+	}),
+	n(WEAPONS, {
+		r(294826),	-- Notorious Combatant's Bow [Rank 1]
+	}),
+}));
 SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309038),	-- Shadowlands Leatherworking
 	n(ARMOR, {
