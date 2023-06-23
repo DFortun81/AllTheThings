@@ -14,39 +14,18 @@ local rawget, ipairs, pairs
 -- Module locals
 local RecursiveGroupRequirementsFilter, SearchForField, GroupFilter;
 
--- revamped cost sequence
--- Settings Update
--- costTotal removed from UpdateGroup logic by no longer checking collectibleAsCost
--- Re-evaluate Cost -> iterate costAs(X), 10/F ?
--- Cost groups which are marked as needed will DGR themselves
-
 -- Function which returns if a Thing has a cost based on a given 'ref' Thing, which has been previously determined as a
 -- possible collectible without regard to filtering
 local function SubCheckCollectible(ref)
-	-- don't include groups which don't meet the current filters
-	-- app.PrintDebug("CheckCollectible",ref.hash)
-	-- local settingsChange = ref._SettingsRefresh;
-	-- -- previously checked without Settings changed
-	-- if settingsChange then
-	-- 	if app._SettingsRefresh == settingsChange then
-	-- 		-- app.PrintDebug("CC:Cached",ref.hash,ref._CheckCollectible)
-	-- 		return ref._CheckCollectible;
-	-- 	end
-	-- end
-	-- -- app.PrintDebug("CC:Check",ref.hash)
-	-- ref._SettingsRefresh = app._SettingsRefresh;
-	-- ref._CheckCollectible = nil;
 	-- app.PrintDebug("CheckCollectible",ref.hash)
 	-- Used as a cost for something which is collectible itself and not collected
 	if ref.collectible and not ref.collected then
 		-- app.PrintDebug("Cost via Collectible",ref.hash)
-		-- ref._CheckCollectible = true;
 		return true;
 	end
 	-- Used as a cost for something which is collectible as a cost itself
 	if ref.collectibleAsCost then
 		-- app.PrintDebug("Cost via collectibleAsCost",ref.hash)
-		-- ref._CheckCollectible = true;
 		return true;
 	end
 	-- If this group has sub-groups, are any of them collectible?
@@ -72,8 +51,6 @@ local function SubCheckCollectible(ref)
 				-- app.PrintDebug("Cost via symlink-fresh",ref.hash)
 				return SubCheckCollectible(expItem);
 			end
-			-- app.PrintDebug("Filling symlink...",ref.hash)
-			-- app.PrintTable(ref)
 			-- create a cached copy of this ref if it is an Item
 			expItem = app.RecreateObject(ref);
 			-- save it in the Item cache in case something else is able to purchase this reference
@@ -81,11 +58,6 @@ local function SubCheckCollectible(ref)
 				-- app.PrintDebug("Cost via symlink-cache",ref.hash)
 			return SubCheckCollectible(expItem);
 		end
-		-- print("cannot determine collectibility")
-		-- print("cost",t.key,t.key and t[t.key])
-		-- app.PrintTable(ref)
-		-- print(ref.__type, ref._cache)
-		-- return false,false;
 	end
 end
 
@@ -142,13 +114,6 @@ app.CollectibleAsCost = function(t)
 			t._CheckCollectible = true;
 			t.collectibleAsCost = nil;
 			-- app.PrintDebug("CAC:Set",t.hash,"from",ref.hash,"@",t._SettingsRefresh)
-			-- Found something collectible for t, make sure t is actually obtainable as well
-			-- Make sure this thing can actually be collectible via hierarchy
-			-- if GetRelativeValue(t, "altcollected") then
-			--	-- literally have not seen this message in months, maybe is pointless...
-			-- 	app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
-			-- 	return;
-			-- end
 			return true;
 		end
 	end
