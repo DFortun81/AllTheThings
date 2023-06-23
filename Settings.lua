@@ -740,16 +740,6 @@ settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 	if OnClick then cb:SetScript("OnClick", OnClick); end
 	cb.OnRefresh = OnRefresh or OnRefreshCheckedDisabled;
 	cb.Text:SetText(text);
-	local textWidth = math.ceil(cb.Text:GetUnboundedStringWidth());
-	-- print(cb.Text,
-	-- 	cb.Text and cb.Text.GetText and cb.Text:GetText(),
-	-- 	cb.GetText and cb:GetText(),
-	-- 	cb.GetTextWidth and cb:GetTextWidth(),
-	-- 	cb.Text and cb.Text.GetWidth and cb.Text:GetWidth(),
-	-- 	cb.Text and cb.Text.GetUnboundedStringWidth and cb.Text:GetUnboundedStringWidth()
-	-- )
-	cb.Text:SetWidth(textWidth);
-	cb:SetHitRectInsets(0,0 - cb.Text:GetWidth(),0,0);
 	cb.Text:SetFont("Fonts\\FRIZQT__.TTF", 11, "")
 	cb.Text:SetWordWrap(false)
 	cb.Text:SetWidth(cb.Text:GetUnboundedStringWidth())
@@ -1052,6 +1042,39 @@ settings.CreateScrollFrame = function(self)
 	return child;
 end
 
+-- Create a header label
+settings.CreateHeaderLabel = function(self, text)
+	-- Create the header label
+	local headerLabel = self:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
+	headerLabel:SetJustifyH("LEFT")
+	headerLabel:SetText(text)
+	headerLabel:SetWordWrap(false)
+	headerLabel:SetWidth(headerLabel:GetUnboundedStringWidth())
+	headerLabel:Show()
+
+	-- Add the header label to list of refreshable objects
+	table.insert(settings.Objects, headerLabel)
+
+	-- Return the header label
+	return headerLabel
+end
+
+-- Create a text label, which defaults to the entire width of the options frame
+settings.CreateTextLabel = function(self, text)
+	-- Create the text label
+	local textLabel = self:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+	textLabel:SetJustifyH("LEFT")
+	textLabel:SetText(text)
+	textLabel:SetWidth(640)	-- This can be manually adjusted afterwards to 320 for half-columns
+	textLabel:Show()
+
+	-- Add the text label to list of refreshable objects
+	table.insert(settings.Objects, textLabel)
+
+	-- Return the text label
+	return textLabel
+end
+
 -- Create a scrollframe and nested subcategory
 settings.CreateOptionsPage = function(self, name)
 	-- Create the ScrollFrame
@@ -1061,7 +1084,7 @@ settings.CreateOptionsPage = function(self, name)
 	scrollChild:SetWidth(1)	-- This is automatically defined, so long as the attribute exists at all
 	scrollChild:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
 
-	-- Set the scrollFrame to its proper size (only needed for top-level category)
+	-- -- Set the scrollFrame to its proper size (only needed for top-level category)
 	-- scrollFrame:SetPoint("TOPLEFT", 0, 0)
 	-- scrollFrame:SetPoint("BOTTOMRIGHT", -25, 0)	-- Allow space for the scrollbar
 
@@ -1074,10 +1097,12 @@ settings.CreateOptionsPage = function(self, name)
 	scrollChild.CreateTextbox = settings.CreateTextbox
 	scrollChild.CreateScrollFrame = settings.CreateScrollFrame
 	scrollChild.CreateButton = settings.CreateButton
+	scrollChild.CreateTextLabel = settings.CreateTextLabel
+	scrollChild.CreateHeaderLabel = settings.CreateHeaderLabel
 
 	-- Create the nested subcategory
 	local subcategory = scrollFrame
-	subcategory.name = L[name]
+	subcategory.name = name
 	subcategory.parent = "AllTheThings"
 	InterfaceOptions_AddCategory(subcategory)
 
@@ -1085,9 +1110,8 @@ settings.CreateOptionsPage = function(self, name)
 	return scrollChild
 end
 
-
-
 end)();
+
 settings.ShowCopyPasteDialog = function(self)
 	app:ShowPopupDialogWithEditBox(nil, self:GetText(), nil, 10);
 end
@@ -1447,12 +1471,8 @@ f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "designbyh
 f:SetATTTooltip(L["MERCH_BUTTON_TOOLTIP"]);
 settings.merch = f;
 
------------------------
--- "General" options --
------------------------
-
+----------------------- i'd like to remove this, please
 local line;
--- SETUP
 (function()
 local tab = settings:CreateTab(L["GENERAL_LABEL"]);
 tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", -36, 0);
@@ -1465,6 +1485,307 @@ line:SetHeight(2);
 
 end)();
 
+-----------------------
+-- "General" options --
+-----------------------
+
+-- SETUP
+(function()
+	-- Create the page
+	local child = settings:CreateOptionsPage("General")
+	
+	-- CONTENT
+	
+	local BehaviorLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+	BehaviorLabel:SetJustifyH("LEFT");
+	BehaviorLabel:SetText(L["BEHAVIOR_LABEL"]);
+	BehaviorLabel:Show();
+	BehaviorLabel:SetPoint("TOPLEFT", child, 0, 0);
+	
+	local MainListScaleSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+	MainListScaleSliderLabel:SetPoint("TOPLEFT", BehaviorLabel, "BOTTOMLEFT", 1, -5);
+	MainListScaleSliderLabel:SetJustifyH("LEFT");
+	MainListScaleSliderLabel:SetText(L["MAIN_LIST_SLIDER_LABEL"]);
+	MainListScaleSliderLabel:SetTextColor(1, 1, 1, 1);
+	MainListScaleSliderLabel:Show();
+	
+	local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", child, "OptionsSliderTemplate");
+	MainListScaleSlider:SetPoint("TOPLEFT", MainListScaleSliderLabel, "BOTTOMLEFT", -1, -2);
+	table.insert(settings.Objects, MainListScaleSlider);
+	settings.MainListScaleSlider = MainListScaleSlider;
+	MainListScaleSlider.tooltipText = L["MAIN_LIST_SCALE_TOOLTIP"];
+	MainListScaleSlider:SetOrientation('HORIZONTAL');
+	MainListScaleSlider:SetWidth(200);
+	MainListScaleSlider:SetHeight(20);
+	MainListScaleSlider:SetValueStep(0.1);
+	MainListScaleSlider:SetMinMaxValues(0.1, 4);
+	MainListScaleSlider:SetObeyStepOnDrag(true);
+	_G[MainListScaleSlider:GetName() .. 'Low']:SetText('0.1')
+	_G[MainListScaleSlider:GetName() .. 'High']:SetText('4')
+	--_G[MainListScaleSlider:GetName() .. 'Text']:SetText(L["MAIN_LIST_SLIDER_LABEL"])
+	MainListScaleSlider.Label = MainListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+	MainListScaleSlider.Label:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, 0);
+	MainListScaleSlider.Label:SetText(tonumber(string.format("%." .. (2) .. "f", MainListScaleSlider:GetValue())));
+	MainListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
+		self.Label:SetText(tonumber(string.format("%." .. (2) .. "f", newValue)));
+		settings:SetTooltipSetting("MainListScale", newValue)
+		app:GetWindow("Prime"):SetScale(newValue);
+	end);
+	
+	local MiniListScaleSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+	MiniListScaleSliderLabel:SetPoint("TOPLEFT", MainListScaleSlider, "BOTTOMLEFT", 0, -14);
+	MiniListScaleSliderLabel:SetJustifyH("LEFT");
+	MiniListScaleSliderLabel:SetText(L["MINI_LIST_SLIDER_LABEL"]);
+	MiniListScaleSliderLabel:SetTextColor(1, 1, 1, 1);
+	MiniListScaleSliderLabel:Show();
+	
+	local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", child, "OptionsSliderTemplate");
+	MiniListScaleSlider:SetPoint("TOPLEFT", MiniListScaleSliderLabel, "BOTTOMLEFT", -1, -2);
+	table.insert(settings.Objects, MiniListScaleSlider);
+	settings.MiniListScaleSlider = MiniListScaleSlider;
+	MiniListScaleSlider.tooltipText = L["MINI_LIST_SCALE_TOOLTIP"];
+	MiniListScaleSlider:SetOrientation('HORIZONTAL');
+	MiniListScaleSlider:SetWidth(200);
+	MiniListScaleSlider:SetHeight(20);
+	MiniListScaleSlider:SetValueStep(0.1);
+	MiniListScaleSlider:SetMinMaxValues(0.1, 4);
+	MiniListScaleSlider:SetObeyStepOnDrag(true);
+	_G[MiniListScaleSlider:GetName() .. 'Low']:SetText('0.1')
+	_G[MiniListScaleSlider:GetName() .. 'High']:SetText('4')
+	--_G[MiniListScaleSlider:GetName() .. 'Text']:SetText(L["MINI_LIST_SLIDER_LABEL"])
+	MiniListScaleSlider.Label = MiniListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+	MiniListScaleSlider.Label:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, 0);
+	MiniListScaleSlider.Label:SetText(tonumber(string.format("%." .. (2) .. "f", MiniListScaleSlider:GetValue())));
+	MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
+		self.Label:SetText(tonumber(string.format("%." .. (2) .. "f", newValue)));
+		settings:SetTooltipSetting("MiniListScale", newValue)
+		for key,window in pairs(app.Windows) do
+			if key ~= "Prime" then
+				window:SetScale(newValue);
+			end
+		end
+	end);
+	
+	local DoAdHocUpdatesCheckbox = child:CreateCheckBox(L["ADHOC_UPDATES_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Updates:AdHoc"));
+	end,
+	function(self)
+		settings:SetTooltipSetting("Updates:AdHoc", self:GetChecked());
+	end);
+	DoAdHocUpdatesCheckbox:SetATTTooltip(L["ADHOC_UPDATES_CHECKBOX_TOOLTIP"]);
+	DoAdHocUpdatesCheckbox:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -8);
+	
+	local ExpandDifficultyCheckBox = child:CreateCheckBox(L["EXPAND_DIFFICULTY_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Expand:Difficulty"));
+	end,
+	function(self)
+		settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked());
+	end);
+	ExpandDifficultyCheckBox:SetATTTooltip(L["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"]);
+	ExpandDifficultyCheckBox:AlignBelow(DoAdHocUpdatesCheckbox);
+	
+	local WarnDifficultyCheckBox = child:CreateCheckBox(L["WARN_DIFFICULTY_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Warn:Difficulty"));
+	end,
+	function(self)
+		settings:SetTooltipSetting("Warn:Difficulty", self:GetChecked());
+	end);
+	WarnDifficultyCheckBox:SetATTTooltip(L["WARN_DIFFICULTY_CHECKBOX_TOOLTIP"]);
+	WarnDifficultyCheckBox:AlignBelow(ExpandDifficultyCheckBox);
+	
+	local UseMoreColorsCheckBox = child:CreateCheckBox(L["MORE_COLORS_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("UseMoreColors"));
+	end,
+	function(self)
+		settings:SetTooltipSetting("UseMoreColors", self:GetChecked());
+		app:UpdateWindows();
+	end);
+	UseMoreColorsCheckBox:SetATTTooltip(L["MORE_COLORS_CHECKBOX_TOOLTIP"]);
+	UseMoreColorsCheckBox:AlignBelow(WarnDifficultyCheckBox);
+	
+	local QuestChainRequirementsNested = child:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"));
+	end,
+	function(self)
+		settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked());
+	end);
+	QuestChainRequirementsNested:SetATTTooltip(L["QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP"]);
+	QuestChainRequirementsNested:AlignBelow(UseMoreColorsCheckBox);
+	
+	local SortByCompletionInstead = child:CreateCheckBox(L["SORT_BY_PROGRESS_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Sort:Progress"));
+	end,
+	function(self)
+		settings:SetTooltipSetting("Sort:Progress", self:GetChecked());
+	end);
+	SortByCompletionInstead:SetATTTooltip(L["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"]);
+	SortByCompletionInstead:AlignBelow(QuestChainRequirementsNested);
+	
+	local ShowRemainingCheckBox = child:CreateCheckBox(L["SHOW_REMAINING_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
+		if self:GetChecked() then
+			app.GetProgressText = app.GetProgressTextRemaining;
+		else
+			app.GetProgressText = app.GetProgressTextDefault;
+		end
+	end,
+	function(self)
+		settings:SetTooltipSetting("Show:Remaining", self:GetChecked());
+		app:UpdateWindows();
+	end);
+	ShowRemainingCheckBox:SetATTTooltip(L["SHOW_REMAINING_CHECKBOX_TOOLTIP"]);
+	ShowRemainingCheckBox:AlignBelow(SortByCompletionInstead);
+	
+	local ShowPercentagesCheckBox = child:CreateCheckBox(L["PERCENTAGES_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Show:Percentage"));
+	end,
+	function(self)
+		settings:SetTooltipSetting("Show:Percentage", self:GetChecked());
+		app:UpdateWindows();
+	end);
+	ShowPercentagesCheckBox:SetATTTooltip(L["PERCENTAGES_CHECKBOX_TOOLTIP"]);
+	ShowPercentagesCheckBox:AlignBelow(ShowRemainingCheckBox);
+	
+	local PrecisionSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+	PrecisionSliderLabel:SetPoint("LEFT", ShowPercentagesCheckBox, "LEFT", 10, 0);
+	PrecisionSliderLabel:SetPoint("TOP", ShowPercentagesCheckBox, "BOTTOM", 0, 0);
+	PrecisionSliderLabel:SetJustifyH("LEFT");
+	PrecisionSliderLabel:SetText(L["PRECISION_SLIDER"]);
+	PrecisionSliderLabel:SetTextColor(1, 1, 1, 1);
+	PrecisionSliderLabel:Show();
+	PrecisionSliderLabel.OnRefresh = function(self)
+		if not settings:GetTooltipSetting("Show:Percentage") then
+			self:SetAlpha(0.2);
+		else
+			self:SetAlpha(1);
+		end
+	end;
+	
+	local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");
+	PrecisionSlider:SetPoint("TOPLEFT", PrecisionSliderLabel, "BOTTOMLEFT", -1, -2);
+	PrecisionSlider:SetPoint("RIGHT", MainListScaleSlider, "RIGHT", 0, 0);
+	table.insert(settings.Objects, PrecisionSlider);
+	settings.PrecisionSlider = PrecisionSlider;
+	PrecisionSlider.tooltipText = L["PRECISION_SLIDER_TOOLTIP"];
+	PrecisionSlider:SetOrientation('HORIZONTAL');
+	--PrecisionSlider:SetWidth(200);
+	PrecisionSlider:SetHeight(20);
+	PrecisionSlider:SetValueStep(1);
+	PrecisionSlider:SetMinMaxValues(0, 8);
+	PrecisionSlider:SetObeyStepOnDrag(true);
+	_G[PrecisionSlider:GetName() .. 'Low']:SetText('0')
+	_G[PrecisionSlider:GetName() .. 'High']:SetText('8')
+	--_G[PrecisionSlider:GetName() .. 'Text']:SetText(L["PRECISION_SLIDER"])
+	PrecisionSlider.Label = PrecisionSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+	PrecisionSlider.Label:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, 2);
+	PrecisionSlider.Label:SetText(PrecisionSlider:GetValue());
+	PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
+		self.Label:SetText(newValue);
+		if newValue == settings:GetTooltipSetting("Precision") then
+			return 1;
+		end
+		settings:SetTooltipSetting("Precision", newValue)
+		app:UpdateWindows();
+	end);
+	PrecisionSlider.OnRefresh = function(self)
+		if not settings:GetTooltipSetting("Show:Percentage") then
+			self:Disable();
+			self:SetAlpha(0.2);
+		else
+			self:Enable();
+			self:SetAlpha(1);
+		end
+	end;
+	
+	-- Dynamic Category Toggles
+	local DynamicCategoryLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+	DynamicCategoryLabel:SetJustifyH("LEFT");
+	DynamicCategoryLabel:SetText(L["DYNAMIC_CATEGORY_LABEL"]);
+	DynamicCategoryLabel:Show();
+	DynamicCategoryLabel:SetPoint("LEFT", ShowPercentagesCheckBox, "LEFT", 0, 0);
+	DynamicCategoryLabel:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -8);
+	
+	local settingName = "Dynamic:Style";
+	-- Create Unique Disable methods for callbacks
+	local function Off_Disable(self)
+		self:Disable();
+	end
+	local function Simple_Disable(self)
+		self:Disable();
+	end
+	local function Nested_Disable(self)
+		self:Disable();
+	end
+	local DynamicCategoryOffCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_OFF"],
+	function(self)
+		-- act like a radio button
+		self:SetAlpha(1);
+		if settings:Get(settingName) == 0 then
+			self:SetChecked(true);
+			settings.Callback(Off_Disable, self);
+		else
+			self:SetChecked(false);
+			self:Enable();
+		end
+	end,
+	function(self)
+		if self:GetChecked() then
+			settings:Set(settingName, 0);
+		end
+	end);
+	DynamicCategoryOffCheckbox:SetPoint("TOP", DynamicCategoryLabel, "BOTTOM", 0, 0);
+	DynamicCategoryOffCheckbox:SetPoint("LEFT", DynamicCategoryLabel, "LEFT", 0, 0);
+	DynamicCategoryOffCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_OFF_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
+	
+	local DynamicCategorySimpleCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_SIMPLE"],
+	function(self)
+		-- act like a radio button
+		self:SetAlpha(1);
+		if settings:Get(settingName) == 1 then
+			self:SetChecked(true);
+			settings.Callback(Simple_Disable, self);
+		else
+			self:SetChecked(false);
+			self:Enable();
+		end
+	end,
+	function(self)
+		if self:GetChecked() then
+			settings:Set(settingName, 1);
+		end
+	end);
+	DynamicCategorySimpleCheckbox:AlignAfter(DynamicCategoryOffCheckbox);
+	DynamicCategorySimpleCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
+	
+	local DynamicCategoryNestedCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_NESTED"],
+	function(self)
+		-- act like a radio button
+		self:SetAlpha(1);
+		if settings:Get(settingName) == 2 then
+			self:SetChecked(true);
+			settings.Callback(Nested_Disable, self);
+		else
+			self:SetChecked(false);
+			self:Enable();
+		end
+	end,
+	function(self)
+		if self:GetChecked() then
+			settings:Set(settingName, 2);
+		end
+	end);
+	DynamicCategoryNestedCheckbox:AlignAfter(DynamicCategorySimpleCheckbox);
+	DynamicCategoryNestedCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
+	end)();
+
 ------------------------
 -- "Tracking" options --
 ------------------------
@@ -1472,7 +1793,7 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage("FILTERS_TAB")
+local child = settings:CreateOptionsPage(L["FILTERS_TAB"])
 
 -- Creates a Checkbox used to designate tracking the specified 'trackingOption', based on tracking of 'parentTrackingOption' if specified
 -- localeKey: The prefix of the locale lookup value (i.e. HEIRLOOMS_UPGRADES)
@@ -1813,18 +2134,6 @@ ExtraThingsLabel:SetPoint("LEFT", ModeLabel, 0, 0)
 ExtraThingsLabel:SetPoint("TOP", DrakewatcherManuscriptsCheckBox, "BOTTOM", 0, -10)
 ExtraThingsLabel:SetText(L["EXTRA_THINGS_LABEL"])
 ExtraThingsLabel:Show()
--- Halloween Easter Egg
-ExtraThingsLabel.OnRefresh = function(self)
-    C_Calendar.OpenCalendar()
-    local date = C_DateAndTime.GetCurrentCalendarTime()
-    local numEvents = C_Calendar.GetNumDayEvents(0, date.monthDay)
-    for i=1, numEvents do
-        local event = C_Calendar.GetHolidayInfo(0, date.monthDay, i)
-        if event and (event.texture == 235461 or event.texture == 235462) then	-- Non-localised way to detect specific holiday, I hope?
-            self:SetText(L["STRANGER_THINGS_LABEL"])
-        end
-    end
-end
 
 local DebugModeCheckBox = child:CreateCheckBox(L["DEBUG_MODE"],
 function(self)
@@ -1926,8 +2235,7 @@ ShowCollectedThingsCheckBox:AlignBelow(ShowCompletedGroupsCheckBox)
 -- Column 2
 local GeneralFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 GeneralFiltersLabel:SetPoint("TOPLEFT", AccountThingsLabel, 320, 0)
--- GeneralFiltersLabel:SetText(L["GENERAL_LABEL"])
-GeneralFiltersLabel:SetText("Content")
+GeneralFiltersLabel:SetText(L["GENERAL_LABEL"])
 GeneralFiltersLabel:Show()
 
 local HideBoEItemsCheckBox = child:CreateCheckBox(L["SHOW_BOE_CHECKBOX"],
@@ -1983,7 +2291,7 @@ end)
 FilterThingsByLevelCheckBox:SetATTTooltip(L["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"])
 FilterThingsByLevelCheckBox:AlignBelow(IgnoreFiltersForBoEsCheckBox, -1)
 
-local SeasonalAllCheckBox = child:CreateCheckBox("|cffADD8E6All Seasonal Events",
+local SeasonalAllCheckBox = child:CreateCheckBox(L["SHOW_ALL_SEASONAL"],
 	function(self)
 		self:SetChecked(not settings:Get("Show:OnlyActiveEvents"))	-- Inversed, so enabled = show
 		if settings:Get("DebugMode") then
@@ -1999,7 +2307,7 @@ local SeasonalAllCheckBox = child:CreateCheckBox("|cffADD8E6All Seasonal Events"
 		settings:UpdateMode(1)
 	end
 );
-SeasonalAllCheckBox:SetPoint("TOPLEFT", SeasonalFiltersLabel, "BOTTOMLEFT", -2, 0)
+SeasonalAllCheckBox:SetATTTooltip(L["SHOW_ALL_SEASONAL_TOOLTIP"])
 SeasonalAllCheckBox:AlignBelow(FilterThingsByLevelCheckBox)
 
 local HidePetBattlesCheckBox = child:CreateCheckBox(L["SHOW_PET_BATTLES_CHECKBOX"],
@@ -2041,8 +2349,7 @@ HidePvPItemsCheckBox:AlignBelow(HidePetBattlesCheckBox)
 local CustomCollectFilterLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 CustomCollectFilterLabel:SetPoint("TOP", HidePvPItemsCheckBox, "BOTTOM", 0, -10)
 CustomCollectFilterLabel:SetPoint("LEFT", GeneralFiltersLabel, "LEFT", 0, 0)
--- CustomCollectFilterLabel:SetText(L["CUSTOM_FILTERS_LABEL"])
-CustomCollectFilterLabel:SetText("Automated Content")
+CustomCollectFilterLabel:SetText(L["CUSTOM_FILTERS_LABEL"])
 CustomCollectFilterLabel:Show()
 
 local CustomCollectFilterExplainLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal")
@@ -2137,9 +2444,8 @@ for i,cc in ipairs({"NPE","SL_SKIP"}) do
 end
 
 local UnobtainableFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
--- UnobtainableFiltersLabel:SetText(L["UNOBTAINABLE_LABEL"])
-UnobtainableFiltersLabel:SetText("Unobtainable Content")
-UnobtainableFiltersLabel:SetPoint("TOPLEFT", GeneralFiltersLabel, 0, -350)
+UnobtainableFiltersLabel:SetText(L["UNOBTAINABLE_LABEL"])
+UnobtainableFiltersLabel:SetPoint("TOPLEFT", ccCheckbox, "BOTTOMLEFT", 0, -10)
 
 local unobtainables = L["UNOBTAINABLE_ITEM_REASONS"]
 
@@ -2269,11 +2575,9 @@ for k,v in pairs(unobtainables) do
 end
 
 -- Bottom
-
-
 local ItemFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 ItemFiltersLabel:SetPoint("LEFT", ModeLabel, 0, 0)
-ItemFiltersLabel:SetPoint("TOP", ShowCollectedThingsCheckBox, "BOTTOM", 0, -10)
+ItemFiltersLabel:SetPoint("TOP", last, "BOTTOM", 0, -10)
 ItemFiltersLabel:SetText(L["ITEM_FILTER_LABEL"])
 ItemFiltersLabel:Show()
 
@@ -2454,7 +2758,7 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage("INTERFACE_TAB")
+local child = settings:CreateOptionsPage(L["INTERFACE_TAB"])
 
 -- CONTENT
 
@@ -3230,7 +3534,7 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage("FEATURES_TAB")
+local child = settings:CreateOptionsPage(L["FEATURES_TAB"])
 
 -- CONTENT
 
@@ -3554,42 +3858,28 @@ ChatCommandsText:Show();
 
 end)();
 
-------------------------
--- "Profiles" options --
-------------------------
-
+---------------------
+-- "Profiles" page --
+---------------------
+-- @SettingsV3: This whole page needs reviewing, as the profile box is MIA likely due to its involvement with the TAB functions
 -- SETUP
 (function()
---local tab = settings:CreateTab(L["PROFILES_TAB"]);
-
 -- Create the page
-local child = settings:CreateOptionsPage("PROFILES_TAB")
+local child = settings:CreateOptionsPage(L["PROFILES_TAB"])
 
 -- CONTENT
+local headerProfiles = child:CreateHeaderLabel(L["PROFILES_TAB"])
+headerProfiles:SetPoint("TOPLEFT", child, 0, 0)
 
-local ProfilesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ProfilesLabel:SetPoint("TOPLEFT", child, 0, 0);
-ProfilesLabel:SetJustifyH("LEFT");
-ProfilesLabel:SetText(L["PROFILES_TAB"]);
-ProfilesLabel:Show();
-table.insert(settings.Objects, ProfilesLabel);
+local textCurrentProfile = child:CreateTextLabel(REFORGE_CURRENT..":")
+textCurrentProfile:SetPoint("TOPLEFT", headerProfiles, "BOTTOMLEFT", 0, -4)
 
-local CurrentProfileLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-CurrentProfileLabel:SetPoint("TOPLEFT", ProfilesLabel, "BOTTOMLEFT", 0, -4);
-CurrentProfileLabel:SetJustifyH("LEFT");
-CurrentProfileLabel:SetText(REFORGE_CURRENT..":");
-CurrentProfileLabel:Show();
-table.insert(settings.Objects, CurrentProfileLabel);
-
-local CurrentProfileNameLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-CurrentProfileNameLabel:SetPoint("TOPLEFT", CurrentProfileLabel, "TOPRIGHT", 5, 0);
-CurrentProfileNameLabel:SetJustifyH("LEFT");
-CurrentProfileNameLabel:SetTextColor(1, 1, 1, 1);
-CurrentProfileNameLabel:Show();
-table.insert(settings.Objects, CurrentProfileNameLabel);
+local textCurrentProfileName = child:CreateTextLabel(" ")
+textCurrentProfileName:SetPoint("TOPLEFT", textCurrentProfile, "TOPRIGHT", 5, 0)
+textCurrentProfileName:SetTextColor(1, 1, 1, 1)
 
 -- New Profile Textbox + Label
-local NewProfileTextBox = child:CreateTextbox(
+local textboxNewProfile = child:CreateTextbox(
 -- textbox settings
 {
 	title = NEW_COMPACT_UNIT_FRAME_PROFILE,
@@ -3598,27 +3888,27 @@ local NewProfileTextBox = child:CreateTextbox(
 -- function hooks for the textbox
 {
 	["OnRefresh"] = function(self)
-		self:SetText("");
+		self:SetText("")
 	end,
-});
-NewProfileTextBox:SetPoint("TOPLEFT", CurrentProfileLabel, "BOTTOMLEFT", 5, -20);
-NewProfileTextBox:SetATTTooltip(L["PROFILE_NEW_TOOLTIP"]);
-NewProfileTextBox:Show();
+})
+textboxNewProfile:SetPoint("TOPLEFT", textCurrentProfile, "BOTTOMLEFT", 5, -20)
+textboxNewProfile:SetATTTooltip(L["PROFILE_NEW_TOOLTIP"])
+textboxNewProfile:Show()
 
 -- Profiles selector scrollbox
-local ProfileSelector = child:CreateScrollFrame();
-local ProfileScroller = ProfileSelector.ScrollContainer;
-ProfileScroller:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -10);
-ProfileScroller:SetPoint("RIGHT", NewProfileTextBox, "RIGHT", 25, 0);
-ProfileScroller:SetPoint("BOTTOM", child, "TOP", 0, -582);
-settings.ApplyBackdropColor(ProfileScroller, 20, 20, 20, 1);
-ProfileSelector:SetHeight(100);
+local profileSelector = child:CreateScrollFrame()
+local profileScroller = profileSelector.ScrollContainer
+profileScroller:SetPoint("TOPLEFT", textboxNewProfile, "BOTTOMLEFT", 0, -10)
+profileScroller:SetPoint("RIGHT", textboxNewProfile, "RIGHT", 25, 0)
+profileScroller:SetPoint("BOTTOM", child, "TOP", 0, -582)
+settings.ApplyBackdropColor(profileScroller, 20, 20, 20, 1)
+profileSelector:SetHeight(100)
 
 -- Initialize Profiles Button
 local function InitProfilesButton_Disable(self)
-	self:Disable();
+	self:Disable()
 end
-local InitializeProfilesButton = child:CreateButton(
+local buttonInitializeProfiles = child:CreateButton(
 -- button settings
 {
 	text = L["PROFILE_INITIALIZE"],
@@ -3629,26 +3919,26 @@ local InitializeProfilesButton = child:CreateButton(
 	["OnClick"] = function(self)
 		app:ShowPopupDialog(L["PROFILE_INITIALIZE_CONFIRM"],
 		function()
-			app.SetupProfiles();
-			OnClickForTab(tab);
-			settings.Callback(InitProfilesButton_Disable, self);
-		end);
+			app.SetupProfiles()
+			OnClickForTab(tab)	-- @SettingsV3: Tab reference
+			settings.Callback(InitProfilesButton_Disable, self)
+		end)
 	end,
-});
-InitializeProfilesButton:SetPoint("TOPLEFT", ProfilesLabel, "TOPRIGHT", 10, 5);
-InitializeProfilesButton:Show();
+})
+buttonInitializeProfiles:SetPoint("TOPLEFT", headerProfiles, "TOPRIGHT", 10, 5)
+buttonInitializeProfiles:Show()
 
 -- common function for setting the current profile
 local UseProfile = function(profile)
-	tab.SelectedProfile = nil;
-	settings:SetProfile(profile);
-	settings:ApplyProfile();
-	settings:UpdateMode(1);
+	tab.SelectedProfile = nil	-- @SettingsV3: Tab reference
+	settings:SetProfile(profile)
+	settings:ApplyProfile()
+	settings:UpdateMode(1)
 end
-local refreshProfiles;
+local refreshProfiles
 
 -- Create Button
-local CreateProfileButton = child:CreateButton(
+local buttonCreateProfile = child:CreateButton(
 -- button settings
 {
 	text = CREATE_COMPACT_UNIT_FRAME_PROFILE,
@@ -3658,24 +3948,24 @@ local CreateProfileButton = child:CreateButton(
 {
 	["OnClick"] = function(self)
 		-- if self.ATTActionObject and self.ATTActionObject.GetText then
-			local newProfile = NewProfileTextBox:GetText();
+			local newProfile = textboxNewProfile:GetText()
 			if newProfile and newProfile ~= "" then
 				if settings:NewProfile(newProfile) then
-					UseProfile(newProfile);
-					refreshProfiles();
-					return true;
+					UseProfile(newProfile)
+					refreshProfiles()
+					return true
 				end
 				-- TODO dialog about existing profile
-				-- app:ShowPopupDialog("Profile already exists!", function() end);
+				-- app:ShowPopupDialog("Profile already exists!", function() end)
 			end
 		-- end
 	end,
-});
-CreateProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "TOPRIGHT", 5, 4);
-CreateProfileButton:Show();
+})
+buttonCreateProfile:SetPoint("TOPLEFT", textboxNewProfile, "TOPRIGHT", 5, 4)
+buttonCreateProfile:Show()
 
 -- Delete Button
-local DeleteProfileButton = child:CreateButton(
+local buttonDeleteProfile = child:CreateButton(
 -- button settings
 {
 	text = DELETE,
@@ -3684,23 +3974,23 @@ local DeleteProfileButton = child:CreateButton(
 -- function hooks for the button
 {
 	["OnClick"] = function(self)
-		local profile = tab.SelectedProfile;
+		local profile = tab.SelectedProfile	-- @SettingsV3: Tab reference
 		if profile then
 			if settings:DeleteProfile(profile) then
-				settings:UpdateMode(1);
-				refreshProfiles();
-				return true;
+				settings:UpdateMode(1)
+				refreshProfiles()
+				return true
 			end
 			-- TODO dialog about not deleting a profile
-			-- app:ShowPopupDialog("Profile cannot be deleted!", function() end);
+			-- app:ShowPopupDialog("Profile cannot be deleted!", function() end)
 		end
 	end
-});
-DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, -1);
-DeleteProfileButton:Show();
+})
+buttonDeleteProfile:SetPoint("BOTTOMLEFT", profileScroller, "BOTTOMRIGHT", 5, -1)
+buttonDeleteProfile:Show()
 
 -- Switch Button
-local SwitchProfileButton = child:CreateButton(
+local buttonSwitchProfile = child:CreateButton(
 -- button settings
 {
 	text = SWITCH,
@@ -3709,20 +3999,20 @@ local SwitchProfileButton = child:CreateButton(
 -- function hooks for the button
 {
 	["OnClick"] = function(self)
-		local profile = tab.SelectedProfile;
+		local profile = tab.SelectedProfile	-- @SettingsV3: Tab reference
 		if profile then
-			UseProfile(profile);
-			refreshProfiles();
-			return true;
+			UseProfile(profile)
+			refreshProfiles()
+			return true
 		end
 	end
-});
-SwitchProfileButton:SetPoint("LEFT", DeleteProfileButton, "LEFT", 0, 0);
-SwitchProfileButton:SetPoint("TOP", ProfileScroller, "TOP", 0, 2);
-SwitchProfileButton:Show();
+})
+buttonSwitchProfile:SetPoint("LEFT", buttonDeleteProfile, "LEFT", 0, 0)
+buttonSwitchProfile:SetPoint("TOP", profileScroller, "TOP", 0, 2)
+buttonSwitchProfile:Show()
 
 -- Copy Button
-local CopyProfileButton = child:CreateButton(
+local buttonCopyProfile = child:CreateButton(
 -- button settings
 {
 	text = CALENDAR_COPY_EVENT,
@@ -3731,533 +4021,223 @@ local CopyProfileButton = child:CreateButton(
 -- function hooks for the button
 {
 	["OnClick"] = function(self)
-		local profile = tab.SelectedProfile;
+		local profile = tab.SelectedProfile	-- @SettingsV3: Tab reference
 		if profile then
-			settings:CopyProfile(nil, profile);
-			settings:ApplyProfile();
-			settings:UpdateMode(1);
-			refreshProfiles();
-			return true;
+			settings:CopyProfile(nil, profile)
+			settings:ApplyProfile()
+			settings:UpdateMode(1)
+			refreshProfiles()
+			return true
 		end
 	end
-});
-CopyProfileButton:SetPoint("TOPLEFT", SwitchProfileButton, "BOTTOMLEFT", 0, -4);
-CopyProfileButton:Show();
+})
+buttonCopyProfile:SetPoint("TOPLEFT", buttonSwitchProfile, "BOTTOMLEFT", 0, -4)
+buttonCopyProfile:Show()
 
 -- Checkbox to show profile loaded message
-local ShowProfileLoadedCheckBox = child:CreateCheckBox(L["SHOW_PROFILE_LOADED"],
+local checkboxShowProfileLoaded = child:CreateCheckBox(L["SHOW_PROFILE_LOADED"],
 function(self)
-	self:SetChecked(settings:Get("Profile:ShowProfileLoadedMessage"));
+	self:SetChecked(settings:Get("Profile:ShowProfileLoadedMessage"))
 end,
 function(self)
-	settings:Set("Profile:ShowProfileLoadedMessage", not settings:Get("Profile:ShowProfileLoadedMessage"));
-	self:SetChecked(settings:Get("Profile:ShowProfileLoadedMessage"));
-end);
-ShowProfileLoadedCheckBox:SetPoint("TOPLEFT", ProfileScroller, "BOTTOMLEFT", 0, -4);
+	settings:Set("Profile:ShowProfileLoadedMessage", not settings:Get("Profile:ShowProfileLoadedMessage"))
+	self:SetChecked(settings:Get("Profile:ShowProfileLoadedMessage"))
+end)
+checkboxShowProfileLoaded:SetPoint("TOPLEFT", profileScroller, "BOTTOMLEFT", 0, -4)
 
 local function ProfileCheckbox_Disable(self)
-	self:Disable();
+	self:Disable()
 end
 refreshProfiles = function()
-	--local mostRecentTab = settings.MostRecentTab;
+	--local mostRecentTab = settings.MostRecentTab
 	-- make sure to use the correct tab when adding the UI elements
-	--settings.MostRecentTab = tab;
+	--settings.MostRecentTab = tab
 	-- print("SelectedProfile",tab.SelectedProfile)
 
 	-- update the current profile label
-	local currentProfile = settings:GetProfile(true);
-	CurrentProfileNameLabel:SetText(currentProfile or NOT_APPLICABLE);
+	local currentProfile = settings:GetProfile(true)
+	textCurrentProfileName:SetText(currentProfile or NOT_APPLICABLE)
 
 	-- print("refresh profiles scrollbox")
-	local settingProfileItems = {};
+	local settingProfileItems = {}
 	if AllTheThingsProfiles then
 		-- buttons have no OnRefresh script, so have to hide it externally
-		InitializeProfilesButton:Hide();
+		buttonInitializeProfiles:Hide()
 
 		for k,v in pairs(AllTheThingsProfiles.Profiles) do
 			-- print("added",k)
-			tinsert(settingProfileItems, k == "Default" and DEFAULT or k);
+			tinsert(settingProfileItems, k == "Default" and DEFAULT or k)
 		end
 	end
 	-- sort the profiles
-	app.Sort(settingProfileItems, app.SortDefaults.Text);
+	app.Sort(settingProfileItems, app.SortDefaults.Text)
 
-	local profileCount, existingBoxes, lastProfileSelect = 0, ProfileSelector.ATT and ProfileSelector.ATT.CB_Count or 0;
-	local maxProfileNameWidth = ProfileSelector:GetWidth() - 50;
+	local profileCount, existingBoxes, lastProfileSelect = 0, profileSelector.ATT and profileSelector.ATT.CB_Count or 0
+	local maxProfileNameWidth = profileSelector:GetWidth() - 50
 
 	-- create checkboxes for the profiles in the scrollframe
 	for _,profile in ipairs(settingProfileItems) do
-		local profileBox;
-		profileCount = profileCount + 1;
+		local profileBox
+		profileCount = profileCount + 1
 		if existingBoxes >= profileCount then
 			-- print("replace-profileCB",profileCount,profile)
-			profileBox = ProfileSelector.ATT.CB[profileCount];
-			profileBox.Text:SetText(profile);
+			profileBox = profileSelector.ATT.CB[profileCount]
+			profileBox.Text:SetText(profile)
 		else
 			-- print("new-profileCB",profileCount,profile)
-			profileBox = ProfileSelector:CreateCheckBox(profile,
+			profileBox = profileSelector:CreateCheckBox(profile,
 				function(self)
 					-- print("CB.OnRefresh",self.Text:GetText())
-					local myProfile = self.Text:GetText();
-					local activeProfile = settings:GetProfile(true);
+					local myProfile = self.Text:GetText()
+					local activeProfile = settings:GetProfile(true)
 					if activeProfile == myProfile then
-						self:SetAlpha(0.5);
-						self:SetChecked(true);
-						settings.Callback(ProfileCheckbox_Disable, self);
-					elseif tab.SelectedProfile == myProfile then
-						self:SetAlpha(1);
-						self:Enable();
-						self:SetChecked(true);
+						self:SetAlpha(0.5)
+						self:SetChecked(true)
+						settings.Callback(ProfileCheckbox_Disable, self)
+					elseif tab.SelectedProfile == myProfile then	-- @SettingsV3: Tab reference
+						self:SetAlpha(1)
+						self:Enable()
+						self:SetChecked(true)
 					else
-						self:SetAlpha(1);
-						self:Enable();
-						self:SetChecked(false);
+						self:SetAlpha(1)
+						self:Enable()
+						self:SetChecked(false)
 					end
 				end,
 				function(self)
 					-- logic when the respective profile checkbox is selected
 					-- holding shift will switch profiles instead of selecting one
-					local myProfile = self.Text:GetText();
-					local activeProfile = settings:GetProfile(true);
+					local myProfile = self.Text:GetText()
+					local activeProfile = settings:GetProfile(true)
 					-- print("clicked",profile)
-					if tab.SelectedProfile == myProfile then
-						tab.SelectedProfile = nil;
+					if tab.SelectedProfile == myProfile then	-- @SettingsV3: Tab reference
+						tab.SelectedProfile = nil
 					elseif myProfile ~= activeProfile then
-						tab.SelectedProfile = myProfile;
+						tab.SelectedProfile = myProfile
 					end
 					if IsShiftKeyDown() then
 						if myProfile ~= activeProfile then
-							UseProfile(myProfile);
+							UseProfile(myProfile)
 						end
 					end
-					refreshProfiles();
-					return true;
-				end);
+					refreshProfiles()
+					return true
+				end)
 			if lastProfileSelect then
-				profileBox:AlignBelow(lastProfileSelect);
+				profileBox:AlignBelow(lastProfileSelect)
 			else
-				profileBox:SetPoint("TOPLEFT", ProfileSelector, "TOPLEFT", 5, -5);
+				profileBox:SetPoint("TOPLEFT", profileSelector, "TOPLEFT", 5, -5)
 			end
 		end
-		profileBox.Text:SetWidth(math.min(maxProfileNameWidth, math.ceil(profileBox.Text:GetUnboundedStringWidth())));
-		profileBox:SetHitRectInsets(0,0 - profileBox.Text:GetWidth(),0,0);
-		profileBox:SetATTTooltip(profile);
-		profileBox:OnRefresh();
-		profileBox:Show();
-		lastProfileSelect = profileBox;
+		profileBox.Text:SetWidth(math.min(maxProfileNameWidth, math.ceil(profileBox.Text:GetUnboundedStringWidth())))
+		profileBox:SetHitRectInsets(0,0 - profileBox.Text:GetWidth(),0,0)
+		profileBox:SetATTTooltip(profile)
+		profileBox:OnRefresh()
+		profileBox:Show()
+		lastProfileSelect = profileBox
 	end
 
 	-- enable/disable buttons if profile is 'selected'
-	if tab.SelectedProfile then
-		SwitchProfileButton:Enable();
-		CopyProfileButton:Enable();
-		DeleteProfileButton:Enable();
+	if tab.SelectedProfile then	-- @SettingsV3: Tab reference
+		buttonSwitchProfile:Enable()
+		buttonCopyProfile:Enable()
+		buttonDeleteProfile:Enable()
 	else
-		SwitchProfileButton:Disable();
-		CopyProfileButton:Disable();
-		DeleteProfileButton:Disable();
+		buttonSwitchProfile:Disable()
+		buttonCopyProfile:Disable()
+		buttonDeleteProfile:Disable()
 	end
 
 	-- hide extra checkboxes if they've been deleted during this game session
 	if existingBoxes > profileCount then
 		-- print("removing extra checkboxes",profileCount,existingBoxes)
 		for i=profileCount + 1,existingBoxes do
-			ProfileSelector.ATT.CB[i]:Hide();
+			profileSelector.ATT.CB[i]:Hide()
 		end
 	end
 
-	ProfileSelector:SetMaxScroll(100 + ((profileCount - 17) * 20));
+	profileSelector:SetMaxScroll(100 + ((profileCount - 17) * 20))
 	-- make sure to switch back to the previous tab once done
-	--settings.MostRecentTab = mostRecentTab;
+	--settings.MostRecentTab = mostRecentTab
 end
--- tab.OnRefresh = refreshProfiles;
+-- tab.OnRefresh = refreshProfiles
 
 end)();
 
---------------------
--- "Sync" options --
---------------------
+-----------------
+-- "Sync" page --
+-----------------
 
 -- SETUP
 (function()
-local tab = settings:CreateTab(L["SYNC"]);
+local tab = settings:CreateTab(L["SYNC"])	-- @SettingsV3: If I remove this it breaks. :(
 
 -- Create the page
-local child = settings:CreateOptionsPage("SYNC")
+local child = settings:CreateOptionsPage(L["SYNC"])
 
 -- CONTENT
+local headerSync = child:CreateHeaderLabel(L["ACCOUNT_SYNCHRONIZATION"])
+headerSync:SetPoint("TOPLEFT", child, 0, 0)
 
-local SyncLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-SyncLabel:SetPoint("TOPLEFT", child, 0, 0);
-SyncLabel:SetJustifyH("LEFT");
-SyncLabel:SetText(L["ACCOUNT_SYNCHRONIZATION"]);
-SyncLabel:Show();
-
-local AutomaticallySyncAccountDataCheckBox = child:CreateCheckBox(L["AUTO_SYNC_ACC_DATA_CHECKBOX"],
+local checkboxAutoSync = child:CreateCheckBox(L["AUTO_SYNC_ACC_DATA_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:Sync"));
+	self:SetChecked(settings:GetTooltipSetting("Auto:Sync"))
 end,
 function(self)
-	local checked = self:GetChecked();
-	settings:SetTooltipSetting("Auto:Sync", checked);
-	if checked then app:Synchronize(true); end
-end);
-AutomaticallySyncAccountDataCheckBox:SetATTTooltip(L["AUTO_SYNC_ACC_DATA_TOOLTIP"]);
-AutomaticallySyncAccountDataCheckBox:SetPoint("TOPLEFT", SyncLabel, "BOTTOMLEFT", 4, 0);
+	local checked = self:GetChecked()
+	settings:SetTooltipSetting("Auto:Sync", checked)
+	if checked then app:Synchronize(true) end
+end)
+checkboxAutoSync:SetATTTooltip(L["AUTO_SYNC_ACC_DATA_TOOLTIP"])
+checkboxAutoSync:SetPoint("TOPLEFT", headerSync, "BOTTOMLEFT", 4, 0)
 
-function tab:InitializeSyncWindow()
-	local syncWindow = app:GetWindow("Sync");
-	local syncWindow_Show,syncWindow_Refresh,naughty = syncWindow.Show, syncWindow.Refresh;
-	syncWindow.OnRefresh = syncWindow.Update;
+-- @SettingsV3: The Sync frame needs a scroll before it loads in properly
+function tab:InitializeSyncWindow()	-- @SettingsV3: If I let this run on another frame instead of 'tab' it breaks. :(
+	local syncWindow = app:GetWindow("Sync")
+	local syncWindow_Show,syncWindow_Refresh,naughty = syncWindow.Show, syncWindow.Refresh
+	syncWindow.OnRefresh = syncWindow.Update
 	syncWindow.Show = function(self)
 		if not naughty then
-			naughty = true;
-			syncWindow_Show(self);
-			self:Update();
+			naughty = true
+			syncWindow_Show(self)
+			self:Update()
 		end
-		naughty = nil;
+		naughty = nil
 	end
 	syncWindow.Refresh = function(self)
-		self:ClearAllPoints();
-		self:SetPoint("LEFT", SyncLabel, "LEFT", 0, 0);
-		self:SetPoint("RIGHT", SyncLabel, "LEFT", 300, 0);
-		self:SetPoint("TOP", AutomaticallySyncAccountDataCheckBox, "BOTTOM", 0, 4);
-		self:SetPoint("BOTTOM", child, 0, -592);
-		syncWindow_Refresh(self);
+		self:ClearAllPoints()
+		self:SetPoint("LEFT", headerSync, 0, 0)
+		self:SetPoint("RIGHT", headerSync, "LEFT", 300, 0)
+		self:SetPoint("TOP", checkboxAutoSync, "BOTTOM", 0, 4)
+		self:SetPoint("BOTTOM", child, 0, -592)
+		syncWindow_Refresh(self)
 	end
-	syncWindow.CloseButton:Disable();
-	syncWindow:SetClampedToScreen(false);
-	pcall(syncWindow.SetUserPlaced, syncWindow, false);
-	-- syncWindow:SetUserPlaced(false);
-	syncWindow:SetToplevel(false);
-	syncWindow:SetMovable(false);
-	syncWindow:SetResizable(false);
-	syncWindow:SetParent(child);
+	syncWindow.CloseButton:Disable()
+	syncWindow:SetClampedToScreen(false)
+	pcall(syncWindow.SetUserPlaced, syncWindow, false)
+	-- syncWindow:SetUserPlaced(false)
+	syncWindow:SetToplevel(false)
+	syncWindow:SetMovable(false)
+	syncWindow:SetResizable(false)
+	syncWindow:SetParent(child)
 	syncWindow:Show()
-	table.insert(settings.Objects, syncWindow);
+	table.insert(settings.Objects, syncWindow)
 end
 end)();
 
----------------------
--- "About" options --
----------------------
+------------------
+-- "About" page --
+------------------
 
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage("ABOUT")
+local child = settings:CreateOptionsPage(L["ABOUT"])
 
 -- CONTENT
+local textAbout = child:CreateTextLabel(L["TITLE"] .. L["ABOUT_1"])
+textAbout:SetPoint("TOPLEFT", child, 0, 0)
 
-local AboutText = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-AboutText:SetPoint("TOPLEFT", child, 0, 0);
-AboutText:SetJustifyH("LEFT");
-AboutText:SetText(L["TITLE"] .. L["ABOUT_1"]);
-AboutText:Show();
-
-local ShoutoutText = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-ShoutoutText:SetPoint("TOPLEFT", AboutText, 0, -500);
-ShoutoutText:SetPoint("RIGHT", AboutText, "RIGHT", 0, 0);
-ShoutoutText:SetJustifyH("LEFT");
-ShoutoutText:SetText(L["ABOUT_2"] .. L["COLLECTED_ICON"] .. " " .. L["COLLECTED_APPEARANCE_ICON"] .. " " ..L["NOT_COLLECTED_ICON"] .. L["ABOUT_3"]);
-ShoutoutText:Show();
-end)();
-
--- TEMP!!!!!
-
--- SETUP
-(function()
--- Create the page
-local child = settings:CreateOptionsPage("Temp")
-
--- CONTENT
-
-local BehaviorLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-BehaviorLabel:SetJustifyH("LEFT");
-BehaviorLabel:SetText(L["BEHAVIOR_LABEL"]);
-BehaviorLabel:Show();
-BehaviorLabel:SetPoint("TOPLEFT", child, 0, 0);
-
-local MainListScaleSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-MainListScaleSliderLabel:SetPoint("TOPLEFT", BehaviorLabel, "BOTTOMLEFT", 1, -5);
-MainListScaleSliderLabel:SetJustifyH("LEFT");
-MainListScaleSliderLabel:SetText(L["MAIN_LIST_SLIDER_LABEL"]);
-MainListScaleSliderLabel:SetTextColor(1, 1, 1, 1);
-MainListScaleSliderLabel:Show();
-
-local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", child, "OptionsSliderTemplate");
-MainListScaleSlider:SetPoint("TOPLEFT", MainListScaleSliderLabel, "BOTTOMLEFT", -1, -2);
-table.insert(settings.Objects, MainListScaleSlider);
-settings.MainListScaleSlider = MainListScaleSlider;
-MainListScaleSlider.tooltipText = L["MAIN_LIST_SCALE_TOOLTIP"];
-MainListScaleSlider:SetOrientation('HORIZONTAL');
-MainListScaleSlider:SetWidth(200);
-MainListScaleSlider:SetHeight(20);
-MainListScaleSlider:SetValueStep(0.1);
-MainListScaleSlider:SetMinMaxValues(0.1, 4);
-MainListScaleSlider:SetObeyStepOnDrag(true);
-_G[MainListScaleSlider:GetName() .. 'Low']:SetText('0.1')
-_G[MainListScaleSlider:GetName() .. 'High']:SetText('4')
---_G[MainListScaleSlider:GetName() .. 'Text']:SetText(L["MAIN_LIST_SLIDER_LABEL"])
-MainListScaleSlider.Label = MainListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-MainListScaleSlider.Label:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, 0);
-MainListScaleSlider.Label:SetText(tonumber(string.format("%." .. (2) .. "f", MainListScaleSlider:GetValue())));
-MainListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(tonumber(string.format("%." .. (2) .. "f", newValue)));
-	settings:SetTooltipSetting("MainListScale", newValue)
-	app:GetWindow("Prime"):SetScale(newValue);
-end);
-
-local MiniListScaleSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-MiniListScaleSliderLabel:SetPoint("TOPLEFT", MainListScaleSlider, "BOTTOMLEFT", 0, -14);
-MiniListScaleSliderLabel:SetJustifyH("LEFT");
-MiniListScaleSliderLabel:SetText(L["MINI_LIST_SLIDER_LABEL"]);
-MiniListScaleSliderLabel:SetTextColor(1, 1, 1, 1);
-MiniListScaleSliderLabel:Show();
-
-local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", child, "OptionsSliderTemplate");
-MiniListScaleSlider:SetPoint("TOPLEFT", MiniListScaleSliderLabel, "BOTTOMLEFT", -1, -2);
-table.insert(settings.Objects, MiniListScaleSlider);
-settings.MiniListScaleSlider = MiniListScaleSlider;
-MiniListScaleSlider.tooltipText = L["MINI_LIST_SCALE_TOOLTIP"];
-MiniListScaleSlider:SetOrientation('HORIZONTAL');
-MiniListScaleSlider:SetWidth(200);
-MiniListScaleSlider:SetHeight(20);
-MiniListScaleSlider:SetValueStep(0.1);
-MiniListScaleSlider:SetMinMaxValues(0.1, 4);
-MiniListScaleSlider:SetObeyStepOnDrag(true);
-_G[MiniListScaleSlider:GetName() .. 'Low']:SetText('0.1')
-_G[MiniListScaleSlider:GetName() .. 'High']:SetText('4')
---_G[MiniListScaleSlider:GetName() .. 'Text']:SetText(L["MINI_LIST_SLIDER_LABEL"])
-MiniListScaleSlider.Label = MiniListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-MiniListScaleSlider.Label:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, 0);
-MiniListScaleSlider.Label:SetText(tonumber(string.format("%." .. (2) .. "f", MiniListScaleSlider:GetValue())));
-MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(tonumber(string.format("%." .. (2) .. "f", newValue)));
-	settings:SetTooltipSetting("MiniListScale", newValue)
-	for key,window in pairs(app.Windows) do
-		if key ~= "Prime" then
-			window:SetScale(newValue);
-		end
-	end
-end);
-
-local DoAdHocUpdatesCheckbox = child:CreateCheckBox(L["ADHOC_UPDATES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Updates:AdHoc"));
-end,
-function(self)
-	settings:SetTooltipSetting("Updates:AdHoc", self:GetChecked());
-end);
-DoAdHocUpdatesCheckbox:SetATTTooltip(L["ADHOC_UPDATES_CHECKBOX_TOOLTIP"]);
-DoAdHocUpdatesCheckbox:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -8);
-
-local ExpandDifficultyCheckBox = child:CreateCheckBox(L["EXPAND_DIFFICULTY_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Expand:Difficulty"));
-end,
-function(self)
-	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked());
-end);
-ExpandDifficultyCheckBox:SetATTTooltip(L["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"]);
-ExpandDifficultyCheckBox:AlignBelow(DoAdHocUpdatesCheckbox);
-
-local WarnDifficultyCheckBox = child:CreateCheckBox(L["WARN_DIFFICULTY_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Warn:Difficulty"));
-end,
-function(self)
-	settings:SetTooltipSetting("Warn:Difficulty", self:GetChecked());
-end);
-WarnDifficultyCheckBox:SetATTTooltip(L["WARN_DIFFICULTY_CHECKBOX_TOOLTIP"]);
-WarnDifficultyCheckBox:AlignBelow(ExpandDifficultyCheckBox);
-
-local UseMoreColorsCheckBox = child:CreateCheckBox(L["MORE_COLORS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("UseMoreColors"));
-end,
-function(self)
-	settings:SetTooltipSetting("UseMoreColors", self:GetChecked());
-	app:UpdateWindows();
-end);
-UseMoreColorsCheckBox:SetATTTooltip(L["MORE_COLORS_CHECKBOX_TOOLTIP"]);
-UseMoreColorsCheckBox:AlignBelow(WarnDifficultyCheckBox);
-
-local QuestChainRequirementsNested = child:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"));
-end,
-function(self)
-	settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked());
-end);
-QuestChainRequirementsNested:SetATTTooltip(L["QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP"]);
-QuestChainRequirementsNested:AlignBelow(UseMoreColorsCheckBox);
-
-local SortByCompletionInstead = child:CreateCheckBox(L["SORT_BY_PROGRESS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Sort:Progress"));
-end,
-function(self)
-	settings:SetTooltipSetting("Sort:Progress", self:GetChecked());
-end);
-SortByCompletionInstead:SetATTTooltip(L["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"]);
-SortByCompletionInstead:AlignBelow(QuestChainRequirementsNested);
-
-local ShowRemainingCheckBox = child:CreateCheckBox(L["SHOW_REMAINING_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
-	if self:GetChecked() then
-		app.GetProgressText = app.GetProgressTextRemaining;
-	else
-		app.GetProgressText = app.GetProgressTextDefault;
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Show:Remaining", self:GetChecked());
-	app:UpdateWindows();
-end);
-ShowRemainingCheckBox:SetATTTooltip(L["SHOW_REMAINING_CHECKBOX_TOOLTIP"]);
-ShowRemainingCheckBox:AlignBelow(SortByCompletionInstead);
-
-local ShowPercentagesCheckBox = child:CreateCheckBox(L["PERCENTAGES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Show:Percentage"));
-end,
-function(self)
-	settings:SetTooltipSetting("Show:Percentage", self:GetChecked());
-	app:UpdateWindows();
-end);
-ShowPercentagesCheckBox:SetATTTooltip(L["PERCENTAGES_CHECKBOX_TOOLTIP"]);
-ShowPercentagesCheckBox:AlignBelow(ShowRemainingCheckBox);
-
-local PrecisionSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-PrecisionSliderLabel:SetPoint("LEFT", ShowPercentagesCheckBox, "LEFT", 10, 0);
-PrecisionSliderLabel:SetPoint("TOP", ShowPercentagesCheckBox, "BOTTOM", 0, 0);
-PrecisionSliderLabel:SetJustifyH("LEFT");
-PrecisionSliderLabel:SetText(L["PRECISION_SLIDER"]);
-PrecisionSliderLabel:SetTextColor(1, 1, 1, 1);
-PrecisionSliderLabel:Show();
-PrecisionSliderLabel.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("Show:Percentage") then
-		self:SetAlpha(0.2);
-	else
-		self:SetAlpha(1);
-	end
-end;
-
-local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");
-PrecisionSlider:SetPoint("TOPLEFT", PrecisionSliderLabel, "BOTTOMLEFT", -1, -2);
-PrecisionSlider:SetPoint("RIGHT", MainListScaleSlider, "RIGHT", 0, 0);
-table.insert(settings.Objects, PrecisionSlider);
-settings.PrecisionSlider = PrecisionSlider;
-PrecisionSlider.tooltipText = L["PRECISION_SLIDER_TOOLTIP"];
-PrecisionSlider:SetOrientation('HORIZONTAL');
---PrecisionSlider:SetWidth(200);
-PrecisionSlider:SetHeight(20);
-PrecisionSlider:SetValueStep(1);
-PrecisionSlider:SetMinMaxValues(0, 8);
-PrecisionSlider:SetObeyStepOnDrag(true);
-_G[PrecisionSlider:GetName() .. 'Low']:SetText('0')
-_G[PrecisionSlider:GetName() .. 'High']:SetText('8')
---_G[PrecisionSlider:GetName() .. 'Text']:SetText(L["PRECISION_SLIDER"])
-PrecisionSlider.Label = PrecisionSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-PrecisionSlider.Label:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, 2);
-PrecisionSlider.Label:SetText(PrecisionSlider:GetValue());
-PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("Precision") then
-		return 1;
-	end
-	settings:SetTooltipSetting("Precision", newValue)
-	app:UpdateWindows();
-end);
-PrecisionSlider.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("Show:Percentage") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end;
-
--- Dynamic Category Toggles
-local DynamicCategoryLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-DynamicCategoryLabel:SetJustifyH("LEFT");
-DynamicCategoryLabel:SetText(L["DYNAMIC_CATEGORY_LABEL"]);
-DynamicCategoryLabel:Show();
-DynamicCategoryLabel:SetPoint("LEFT", ShowPercentagesCheckBox, "LEFT", 0, 0);
-DynamicCategoryLabel:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -8);
-
-local settingName = "Dynamic:Style";
--- Create Unique Disable methods for callbacks
-local function Off_Disable(self)
-	self:Disable();
-end
-local function Simple_Disable(self)
-	self:Disable();
-end
-local function Nested_Disable(self)
-	self:Disable();
-end
-local DynamicCategoryOffCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_OFF"],
-function(self)
-	-- act like a radio button
-	self:SetAlpha(1);
-	if settings:Get(settingName) == 0 then
-		self:SetChecked(true);
-		settings.Callback(Off_Disable, self);
-	else
-		self:SetChecked(false);
-		self:Enable();
-	end
-end,
-function(self)
-	if self:GetChecked() then
-		settings:Set(settingName, 0);
-	end
-end);
-DynamicCategoryOffCheckbox:SetPoint("TOP", DynamicCategoryLabel, "BOTTOM", 0, 0);
-DynamicCategoryOffCheckbox:SetPoint("LEFT", DynamicCategoryLabel, "LEFT", 0, 0);
-DynamicCategoryOffCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_OFF_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
-
-local DynamicCategorySimpleCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_SIMPLE"],
-function(self)
-	-- act like a radio button
-	self:SetAlpha(1);
-	if settings:Get(settingName) == 1 then
-		self:SetChecked(true);
-		settings.Callback(Simple_Disable, self);
-	else
-		self:SetChecked(false);
-		self:Enable();
-	end
-end,
-function(self)
-	if self:GetChecked() then
-		settings:Set(settingName, 1);
-	end
-end);
-DynamicCategorySimpleCheckbox:AlignAfter(DynamicCategoryOffCheckbox);
-DynamicCategorySimpleCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
-
-local DynamicCategoryNestedCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_NESTED"],
-function(self)
-	-- act like a radio button
-	self:SetAlpha(1);
-	if settings:Get(settingName) == 2 then
-		self:SetChecked(true);
-		settings.Callback(Nested_Disable, self);
-	else
-		self:SetChecked(false);
-		self:Enable();
-	end
-end,
-function(self)
-	if self:GetChecked() then
-		settings:Set(settingName, 2);
-	end
-end);
-DynamicCategoryNestedCheckbox:AlignAfter(DynamicCategorySimpleCheckbox);
-DynamicCategoryNestedCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
+local textShoutout = child:CreateTextLabel(L["ABOUT_2"] .. L["COLLECTED_ICON"] .. " " .. L["COLLECTED_APPEARANCE_ICON"] .. " " ..L["NOT_COLLECTED_ICON"] .. L["ABOUT_3"])
+textShoutout:SetPoint("BOTTOMLEFT", child:GetParent(), 0, 10)
 end)();
