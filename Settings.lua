@@ -280,7 +280,7 @@ settings.Initialize = function(self)
 	end
 
 	-- Account Synchronization
-	self.TabsByName[L["SYNC"]]:InitializeSyncWindow()
+	self.TabsByName[L["SYNC_PAGE"]]:InitializeSyncWindow()
 	if self:GetTooltipSetting("Auto:Sync") then
 		app:Synchronize(true)
 	end
@@ -1777,7 +1777,7 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage(L["FILTERS_TAB"], true)
+local child = settings:CreateOptionsPage(L["TRACKING_PAGE"], true)
 
 -- Creates a Checkbox used to designate tracking the specified 'trackingOption', based on tracking of 'parentTrackingOption' if specified
 -- localeKey: The prefix of the locale lookup value (i.e. HEIRLOOMS_UPGRADES)
@@ -2156,7 +2156,7 @@ checkboxCollectRepeatableQuestsFirstTimeOnly:SetATTTooltip(L["FIRST_TIME_CHECKBO
 checkboxCollectRepeatableQuestsFirstTimeOnly:AlignBelow(checkboxCollectRepeatableQuests, 1)
 
 -- Column 2
-local headerGeneralContent = child:CreateHeaderLabel(L["GENERAL_LABEL"])
+local headerGeneralContent = child:CreateHeaderLabel(L["GENERAL_CONTENT"])
 headerGeneralContent:SetPoint("TOPLEFT", headerAccountThings, 320, 0)
 
 local checkboxShowUnboundItems = child:CreateCheckBox(L["SHOW_BOE_CHECKBOX"],
@@ -2671,7 +2671,7 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage(L["INTERFACE_TAB"], true)
+local child = settings:CreateOptionsPage(L["INTERFACE_PAGE"], true)
 
 -- CONTENT
 
@@ -3653,12 +3653,12 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage(L["FEATURES_TAB"], true)
+local child = settings:CreateOptionsPage(L["ADVANCED_PAGE"], true)
 
 -- CONTENT
 
 -- Column 1
-local headerAdvanced = child:CreateHeaderLabel(L["FEATURES_TAB"])
+local headerAdvanced = child:CreateHeaderLabel(L["ADVANCED_PAGE"])
 headerAdvanced:SetPoint("TOPLEFT", child, 0, 0)
 
 local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
@@ -3771,10 +3771,10 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage(L["PROFILES_TAB"], true)
+local child = settings:CreateOptionsPage(L["PROFILES_PAGE"], true)
 
 -- CONTENT
-local headerProfiles = child:CreateHeaderLabel(L["PROFILES_TAB"])
+local headerProfiles = child:CreateHeaderLabel(L["PROFILES_PAGE"])
 headerProfiles:SetPoint("TOPLEFT", child, 0, 0)
 
 local textCurrentProfile = child:CreateTextLabel(REFORGE_CURRENT..":")
@@ -4076,10 +4076,10 @@ end)();
 
 -- SETUP
 (function()
-local tab = settings:CreateTab(L["SYNC"])	-- @SettingsV3: If I remove this it breaks. :(
+local tab = settings:CreateTab(L["SYNC_PAGE"])	-- @SettingsV3: If I remove this it breaks. :(
 
 -- Create the page
-local child = settings:CreateOptionsPage(L["SYNC"], true)
+local child = settings:CreateOptionsPage(L["SYNC_PAGE"], true)
 
 -- CONTENT
 local headerSync = child:CreateHeaderLabel(L["ACCOUNT_SYNCHRONIZATION"])
@@ -4139,7 +4139,7 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage(L["ABOUT"], true)
+local child = settings:CreateOptionsPage(L["ABOUT_PAGE"], true)
 
 -- CONTENT
 local textAbout = child:CreateTextLabel(L["TITLE"] .. L["ABOUT_1"])

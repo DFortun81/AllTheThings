@@ -10,18 +10,30 @@
 --				This script is called directly after the Core.lua file. 	  --
 --------------------------------------------------------------------------------
 
+local name, app = ...;
+
+-- Colors
+app.color = {}
+app.color.Default = "|cffEDBD21"
+app.color.ATT = "|cffB4B4FF"
+app.color.Account = "|cff00AB00"
+app.color.Insane = "|cffADD8E6"
+app.color.Alliance = "|cff407FBF"
+app.color.Horde = "|cffCC6666"
+
+local color = app.color;
+
+-- Globals
 CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "Class Trial";
 CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "Character Boost";
 DRAKE_MANUSCRIPTS = "Drakewatcher Manuscripts";
-TRACK_ACC_WIDE = "|cff00AB00Track "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";
-ACC_WIDE_DEFAULT = "Tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." by Default.";
+TRACK_ACC_WIDE = color.Account .. "Track "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";
+ACC_WIDE_DEFAULT = "Tracked ".. color.Account .. ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R by default.";
 
-local name, app = ...;
 app.L = {
-	["TAB_SPACING"] = -10;	-- This is to control spacing between tab names in Settings
 	-- General Text
-	["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
-	["AUCTION_TAB"] = "|cffb4b4ffATT|r";
+	["TITLE"] = color.ATT .. "ALL THE THINGS|r";
+	["AUCTION_TAB"] = color.ATT .. "ATT|r";
 	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
 	["THING_UNTIL"] = " THING UNTIL ";
@@ -329,20 +341,20 @@ app.L = {
 				["TITLE_COMPLETIONIST"] = "Completionist ";
 				["TITLE_UNIQUE_APPEARANCE"] = "Unique ";
 				["TITLE_DEBUG"] = "Debug ";
-				["TITLE_ACCOUNT"] = "|cff00AB00Account|R ";
-				["TITLE_ALLIANCE"] = "|cff407FBF" .. FACTION_ALLIANCE .. "|R";
-				["TITLE_HORDE"] = "|cffCC6666" .. FACTION_HORDE .. "|R";
+				["TITLE_ACCOUNT"] = color.Account .. "Account|R ";
+				["TITLE_ALLIANCE"] = color.Alliance .. FACTION_ALLIANCE .. "|R";
+				["TITLE_HORDE"] = color.Horde .. FACTION_HORDE .. "|R";
 				["TITLE_NEUTRAL"] = FACTION_NEUTRAL;
 				["TITLE_MAIN_ONLY"] = " (Main Only)";
 				["TITLE_NONE_THINGS"] = "None of the Things ";
 				["TITLE_ONLY"] = " Only ";
-				["TITLE_INSANE"] = "|cffADD8E6Insane|R ";
+				["TITLE_INSANE"] = color.Insane .. "Insane|R ";
 				["TITLE_SOME_THINGS"] = "Some of the Things ";
 				["TITLE_LEVEL"] = "Level ";
 				["TITLE_SOLO"] = "Solo ";
 				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
-	["GENERAL_LABEL"] = "General";
+	["GENERAL_CONTENT"] = "General Content";
 	["TWITCH_BUTTON_LABEL"] = "Twitch";
 	["DISCORD_BUTTON_LABEL"] = "Discord";
 	["PATREON_BUTTON_LABEL"] = "Patreon";
@@ -351,14 +363,14 @@ app.L = {
 	["DISCORD_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
 	["PATREON_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
 	["MERCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
-	["MODE_EXPLAIN_LABEL"] = "|cffFFFFFFWhat you collect is summarized here. Enable all |cffADD8E6colored options|cffFFFFFF to unlock |cffADD8E6Insane Mode|cffFFFFFF.";
+	["MODE_EXPLAIN_LABEL"] = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. color.Insane .. "colored options|cffFFFFFF to unlock ".. color.Insane .. "Insane Mode|cffFFFFFF.";
 	["DEBUG_MODE"] = "|Cffff0000Debug Mode|r (Show Everything)";
 	["DEBUG_MODE_TOOLTIP"] = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
 	["COMPLETIONIST_MODE"] = "+Sources";
 	["COMPLETIONIST_MODE_TOOLTIP"] = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "Main Only";
 	["MAIN_ONLY_MODE_TOOLTIP"] = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
-	["ACCOUNT_MODE"] = "|Cff00AB00Account Mode";
+	["ACCOUNT_MODE"] = color.Account.."Account Mode";
 	["ACCOUNT_MODE_TOOLTIP"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.";
 	["FACTION_MODE"] = "Faction Only";
 	["FACTION_MODE_TOOLTIP"] = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
@@ -371,45 +383,45 @@ app.L = {
 	["EXPANSION_THINGS_LABEL"] = "Expansion Things";
 	["EXTRA_THINGS_LABEL"] = "Additional Things";
 	["STRANGER_THINGS_LABEL"] = "Stranger Things";
-	["ACHIEVEMENTS_CHECKBOX"] = "|cffADD8E6"..ACHIEVEMENTS;
+	["ACHIEVEMENTS_CHECKBOX"] = color.Insane .. ACHIEVEMENTS;
 	["ACHIEVEMENTS_CHECKBOX_TOOLTIP"] = "Enable this option to track achievements.";
-	["TMOG_CHECKBOX"] = "|cffADD8E6"..WARDROBE;
+	["TMOG_CHECKBOX"] = color.Insane .. WARDROBE;
 	["TMOG_CHECKBOX_TOOLTIP"] = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.\n\n"..ACC_WIDE_DEFAULT;
-	["AZERITE_ESSENCES_CHECKBOX"] = "|T"..app.asset("Expansion_BFA")..":0|t |cffADD8E6"..SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE;
+	["AZERITE_ESSENCES_CHECKBOX"] = "|T"..app.asset("Expansion_BFA")..":0|t " .. color.Insane .. SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE;
 	["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"] = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
-	["BATTLE_PETS_CHECKBOX"] = "|cffADD8E6"..PETS;
+	["BATTLE_PETS_CHECKBOX"] = color.Insane .. PETS;
 	["BATTLE_PETS_CHECKBOX_TOOLTIP"] = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\n"..ACC_WIDE_DEFAULT;
-	["FLIGHT_PATHS_CHECKBOX"] = "|cffADD8E6Flight Paths / Ferry Stations";
+	["FLIGHT_PATHS_CHECKBOX"] = color.Insane .. "Flight Paths & Ferry Stations";
 	["FLIGHT_PATHS_CHECKBOX_TOOLTIP"] = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
-	["FOLLOWERS_CHECKBOX"] = "|cffADD8E6"..GARRISON_FOLLOWERS.." / "..COVENANT_MISSIONS_FOLLOWERS;
+	["FOLLOWERS_CHECKBOX"] = color.Insane .. GARRISON_FOLLOWERS.." & "..COVENANT_MISSIONS_FOLLOWERS;
 	["FOLLOWERS_CHECKBOX_TOOLTIP"] = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
-	["HEIRLOOMS_CHECKBOX"] = "|cffADD8E6"..HEIRLOOMS;
-	["HEIRLOOMS_CHECKBOX_TOOLTIP"] = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.";
-	["HEIRLOOMS_UPGRADES_CHECKBOX"] = "|cffADD8E6+Upgrades";
+	["HEIRLOOMS_CHECKBOX"] = color.Insane .. HEIRLOOMS;
+	["HEIRLOOMS_CHECKBOX_TOOLTIP"] = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.\n\n"..ACC_WIDE_DEFAULT;
+	["HEIRLOOMS_UPGRADES_CHECKBOX"] = color.Insane .. "+Upgrades";
 	["HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP"] = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.";
-	["ILLUSIONS_CHECKBOX"] = "|cffADD8E6Illusions";
+	["ILLUSIONS_CHECKBOX"] = color.Insane .. "Illusions";
 	["ILLUSIONS_CHECKBOX_TOOLTIP"] = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.\n\n"..ACC_WIDE_DEFAULT;
-	["MOUNTS_CHECKBOX"] = "|cffADD8E6"..MOUNTS;
+	["MOUNTS_CHECKBOX"] = color.Insane .. MOUNTS;
 	["MOUNTS_CHECKBOX_TOOLTIP"] = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!\n\n"..ACC_WIDE_DEFAULT;
-	["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX"] = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6Music Rolls / Selfie Filters";
+	["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX"] = "|T"..app.asset("Expansion_WOD")..":0|t " .. color.Insane .. "Music Rolls & Selfie Filters";
 	["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP"] = "Enable this option to track music rolls and selfie filters.\n\nYou can use your Jukebox Toy to play in-game music and your Selfie Camera toy to collect filters for your selfies from certain locations.";
-	["QUESTS_CHECKBOX"] = "|cffADD8E6"..QUESTS_LABEL;
+	["QUESTS_CHECKBOX"] = color.Insane .. QUESTS_LABEL;
 	["QUESTS_CHECKBOX_TOOLTIP"] = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.";
-	["QUESTS_LOCKED_CHECKBOX"] = "|cffADD8E6Locked Quests";
+	["QUESTS_LOCKED_CHECKBOX"] = color.Insane .. "+Locked";
 	["QUESTS_LOCKED_CHECKBOX_TOOLTIP"] = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." Quests to incorporate progress from other characters.";
-	["RECIPES_CHECKBOX"] = "|cffADD8E6"..AUCTION_CATEGORY_RECIPES;
+	["RECIPES_CHECKBOX"] = color.Insane .. AUCTION_CATEGORY_RECIPES;
 	["RECIPES_CHECKBOX_TOOLTIP"] = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
-	["REPUTATIONS_CHECKBOX"] = "|cffADD8E6Reputations";
+	["REPUTATIONS_CHECKBOX"] = color.Insane .. "Reputations";
 	["REPUTATIONS_CHECKBOX_TOOLTIP"] = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
-	["RUNEFORGELEGENDARIES_CHECKBOX"] = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6Runecarving Powers";
+	["RUNEFORGELEGENDARIES_CHECKBOX"] = "|T"..app.asset("Expansion_SL")..":0|t " .. color.Insane .. "Runecarving Powers";
 	["RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP"] = "Enable this option to track Shadowlands Runecarving Powers.";
-	["DRAKEWATCHERMANUSCRIPTS_CHECKBOX"] = "|T"..app.asset("Expansion_DF")..":0|t |cffADD8E6"..DRAKE_MANUSCRIPTS;
+	["DRAKEWATCHERMANUSCRIPTS_CHECKBOX"] = "|T"..app.asset("Expansion_DF")..":0|t " .. color.Insane .. DRAKE_MANUSCRIPTS;
 	["DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP"] = "Enable this option to track "..EXPANSION_NAME9.." "..DRAKE_MANUSCRIPTS;
-	["SOULBINDCONDUITS_CHECKBOX"] = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6"..GetSpellInfo(348869);
+	["SOULBINDCONDUITS_CHECKBOX"] = "|T"..app.asset("Expansion_SL")..":0|t " .. color.Insane .. GetSpellInfo(348869);
 	["SOULBINDCONDUITS_CHECKBOX_TOOLTIP"] = "Enable this option to track Shadowlands Soulbind Conduits.";
-	["TITLES_CHECKBOX"] = "|cffADD8E6"..PAPERDOLL_SIDEBAR_TITLES;
+	["TITLES_CHECKBOX"] = color.Insane .. PAPERDOLL_SIDEBAR_TITLES;
 	["TITLES_CHECKBOX_TOOLTIP"] = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
-	["TOYS_CHECKBOX"] = "|cffADD8E6"..TOY_BOX;
+	["TOYS_CHECKBOX"] = color.Insane .. TOY_BOX;
 	["TOYS_CHECKBOX_TOOLTIP"] = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!\n\n"..ACC_WIDE_DEFAULT;
 	["MINIMAP_BUTTON_CHECKBOX"] = "Show the Minimap Button";
 	["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
@@ -425,13 +437,15 @@ app.L = {
 	["SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to treat repeatable daily, weekly, and yearly quests as collectible. They will appear in the list like a regular collectible quest.\n\nNOTE: This is NOT intended to be used all the time, but if you're doing a set of dailies in a zone you've otherwise completed and need to be reminded of what is there, you can use this to see them.";
 	["FIRST_TIME_CHECKBOX"] = "First Time Only";
 	["FIRST_TIME_CHECKBOX_TOOLTIP"] = "Enable this option if you want to treat repeatable daily, weekly, yearly and world quests as collected if completed at least once, ignoring quest previously completed that has been reset.\n\nNOTE: Previously completed repeatable quest are only stored if you completed the quest with the addon active and that data will be lost if removed the addon data from WTF folder.";
-	["FILTER_THINGS_BY_LEVEL_CHECKBOX"] = "|cffADD8E6No Level Restrictions";
+	["FILTER_THINGS_BY_LEVEL_CHECKBOX"] = color.Insane .. "No Level Restrictions";
 	["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to see content available regardless of player level.\n\nNOTE: Disabling this is especially useful on Starter Accounts.";
-	["SHOW_BOE_CHECKBOX"] = "|cffADD8E6BoE/BoA Items";
+	["SHOW_BOE_CHECKBOX"] = color.Insane .. "BoE/BoA Items";
 	["SHOW_BOE_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to show Bind-on-Equip/Account items.\n\nDisabling this setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
-	["SHOW_PVP_CHECKBOX"] = "|T"..app.asset("Category_PvP")..":0|t |cffADD8E6"..PVP_OPTIONS;
+	["SHOW_PVP_CHECKBOX"] = "|T"..app.asset("Category_PvP")..":0|t " .. color.Insane .. PVP_OPTIONS;
 	["SHOW_PVP_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.";
-	["SHOW_PET_BATTLES_CHECKBOX"] = "|T"..app.asset("Category_PetBattles")..":0|t |cffADD8E6"..SHOW_PET_BATTLES_ON_MAP_TEXT;
+	["SHOW_ALL_SEASONAL"] = color.Insane .. "All Seasonal Events";
+	["SHOW_ALL_SEASONAL_TOOLTIP"] = "Enable this setting to show all seasonal events, instead of only currently active seasonal events.";
+	["SHOW_PET_BATTLES_CHECKBOX"] = "|T"..app.asset("Category_PetBattles")..":0|t " .. color.Insane .. SHOW_PET_BATTLES_ON_MAP_TEXT;
 	["SHOW_PET_BATTLES_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to show content which requires Pet Battles within the game.";
 	["IGNORE_FILTERS_FOR_BOES_CHECKBOX"] = "Ignore BoE/BoA Item Filters";
 	["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE/BoA items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.";
@@ -471,7 +485,7 @@ app.L = {
 	["ACCOUNT_WIDE_TITLES_TOOLTIP"] = TRACK_ACC_WIDE.."\n\nMost titles are tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
 	-- Filters tab
-	["FILTERS_TAB"] = TRACKING;
+	["TRACKING_PAGE"] = TRACKING;
 	["ITEM_FILTER_LABEL"] = AUCTION_CATEGORY_WEAPONS.." & "..ARMOR;
 	["ITEM_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF.|r";
 	["CLASS_DEFAULTS_BUTTON"] = "Class Defaults";
@@ -480,21 +494,19 @@ app.L = {
 	["ALL_BUTTON_TOOLTIP"] = "Click this button to enable all options at once.";
 	["UNCHECK_ALL_BUTTON"] = NONE;
 	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all options at once.";
-	["CUSTOM_FILTERS_LABEL"] = "Automated";
+	["CUSTOM_FILTERS_LABEL"] = "Automated Content";
 	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF.|r";
 	["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"] = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
 	["UNOBTAINABLES_TAB"] = "Unobtainables";
-	["SEASONAL_LABEL"] = "Seasonal";
-	["SEASONAL_ALL"] = "|cffECBC21Show All Seasonal";
-	["UNOBTAINABLE_LABEL"] = "Unobtainable";
+	["UNOBTAINABLE_LABEL"] = "Unobtainable Content";
 	["UNOBTAINABLE_ALL"] = "|cffECBC21Show All Unobtainable";
 	["NO_CHANCE_ALL"] = "|cffECBC21Show All \"No Chance\"";
 	["HIGH_CHANCE_ALL"] = "|cffECBC21Show All \"High Chance\"";
 
 	-- Interface tab
-	["INTERFACE_TAB"] = UIOPTIONS_MENU;
+	["INTERFACE_PAGE"] = UIOPTIONS_MENU;
 	["TOOLTIP_LABEL"] = "Tooltips";
 	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"] = "Tooltip Integrations";
 	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
@@ -574,7 +586,7 @@ app.L = {
 	["ADDITIONAL_LABEL"] = "Additional Information";
 
 	-- Features tab
-	["FEATURES_TAB"] = FEATURES_LABEL;
+	["ADVANCED_PAGE"] = "Advanced";
 	["MINIMAP_LABEL"] = "Minimap Button";
 	["MODULES_LABEL"] = "Modules & Mini Lists";
 	["REPORTING_LABEL"] = "Reporting";
@@ -615,7 +627,7 @@ app.L = {
 	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
 	-- Profiles tab
-	["PROFILES_TAB"] = "Profiles";
+	["PROFILES_PAGE"] = "Profiles";
 	["PROFILE"] = "Profile";
 	["PROFILE_INITIALIZE"] = "Initialize Profiles";
 	["PROFILE_INITIALIZE_TOOLTIP"] = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
@@ -627,7 +639,7 @@ app.L = {
 	["SHOW_PROFILE_LOADED"] = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
-	["SYNC"] = "Sync";
+	["SYNC_PAGE"] = "Sync";
 	["ACCOUNT_SYNCHRONIZATION"] = "Account Synchronization";
 	["AUTO_SYNC_ACC_DATA_CHECKBOX"] = "Automatically Sync Account Data";
 	["AUTO_SYNC_ACC_DATA_TOOLTIP"] = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
@@ -649,7 +661,7 @@ app.L = {
 	["CONFIRM_DELETE"] = "\n \nAre you sure you want to delete this?";
 
 	-- About tab
-	["ABOUT"] = "About";
+	["ABOUT_PAGE"] = "About";
 	["ABOUT_1"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
 	["ABOUT_2"] = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
 	["ABOUT_3"] = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
