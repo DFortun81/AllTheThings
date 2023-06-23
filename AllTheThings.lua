@@ -10123,6 +10123,7 @@ end)();
 
 -- Difficulty Lib
 (function()
+local cache = app.CreateCache("difficultyID");
 app.DifficultyColors = {
 	[2] = "ff0070dd",
 	[5] = "ff0070dd",
@@ -10159,6 +10160,27 @@ app.DifficultyIcons = {
 	[24] = app.asset("Difficulty_Timewalking"),
 	[33] = app.asset("Difficulty_Timewalking"),
 };
+local function GetDifficultyName(difficultyID)
+	return L["CUSTOM_DIFFICULTIES"][difficultyID] or GetDifficultyInfo(difficultyID);
+end
+local function default_name(t)
+	local difficultyID = t.difficultyID;
+	local name = GetDifficultyName(difficultyID);
+	if not name then
+		local difficulties = t.difficulties;
+		if not difficulties then
+			name = UNKNOWN;
+		else
+			name = GetDifficultyName(difficulties[1])
+			for i=2,#difficulties do
+				name = name.." / "..(GetDifficultyName(difficulties[i]) or UNKNOWN);
+			end
+		end
+	end
+	local _t = cache.GetCached(t);
+	_t.name = name;
+	return name;
+end
 local fields = {
 	["key"] = function(t)
 		return "difficultyID";
@@ -10180,11 +10202,10 @@ local fields = {
 		end
 	end,
 	["name"] = function(t)
-		local difficultyID = t.difficultyID;
-		return L["CUSTOM_DIFFICULTIES"][difficultyID] or GetDifficultyInfo(difficultyID) or "Unknown Difficulty";
+		return cache.GetCachedField(t, "name", default_name);
 	end,
 	["icon"] = function(t)
-		return app.DifficultyIcons[t.difficultyID];
+		return app.DifficultyIcons[t.difficultyID] or app.asset("Category_D&R");
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
@@ -10197,6 +10218,18 @@ local fields = {
 				t.locks = locks.shared;
 				return locks.shared;
 			else
+				local difficulties = t.difficulties;
+				if difficulties then
+					local diffLocks = {};
+					-- Look for matching difficulty lockouts.
+					for difficultyKey, lock in pairs(locks) do
+						if contains(difficulties, difficultyKey) then
+							diffLocks[difficultyKey] = lock;
+						end
+					end
+					t.locks = diffLocks;
+					return diffLocks;
+				end
 				-- Look for this difficulty's lockout.
 				for difficultyKey, lock in pairs(locks) do
 					if difficultyKey == "shared" then
