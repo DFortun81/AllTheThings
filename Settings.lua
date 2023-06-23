@@ -33,18 +33,18 @@ BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"]
 local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", InterfaceOptionsFramePanelContainer or UIParent, BackdropTemplateMixin and "BackdropTemplate")
 app.Settings = settings
 settings.name = app:GetName()
-settings.MostRecentTab = nil
-settings.Tabs = {}
-settings.TabsByName = {}
+settings.MostRecentTab = nil	-- @SettingsV3: Needs to be removed, when we can without breaking everything
+settings.Tabs = {}	-- @SettingsV3: Needs to be removed, when we can without breaking everything
+settings.TabsByName = {}	-- @SettingsV3: Needs to be removed, when we can without breaking everything
 settings.Objects = {}
 settings.Callback = app.CallbackHandlers.Callback
-settings:SetBackdrop({
-	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-	tile = false, edgeSize = 16,
-	insets = { left = 4, right = 4, top = 4, bottom = 4 }
-})
-settings:SetBackdropColor(0, 0, 0, 1)
+-- settings:SetBackdrop({
+-- 	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
+-- 	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+-- 	tile = false, edgeSize = 16,
+-- 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
+-- })
+-- settings:SetBackdropColor(0, 0, 0, 1)
 do	-- Add the ATT Settings frame into the WoW Settings options
 	local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
 	category.ID = settings.name
@@ -256,7 +256,7 @@ settings.Initialize = function(self)
 	end
 
 	self.sliderSummarizeThings:SetValue(self:GetTooltipSetting("ContainsCount") or 25)
-	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations") or 5)
+	self.sliderSourceLocations:SetValue(self:GetTooltipSetting("Locations") or 5)
 	self.sliderMainListScale:SetValue(self:GetTooltipSetting("MainListScale"))
 	self.sliderMiniListScale:SetValue(self:GetTooltipSetting("MiniListScale"))
 	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
@@ -673,7 +673,7 @@ end
 do
 local function Refresh(self)
 	-- app.PrintDebug("Settings.Refresh")
-	settings.SkipAutoRefreshCheckbox:OnRefresh()
+	settings.checkboxSkipAutoRefresh:OnRefresh()
 	for i,object in ipairs(self.Objects) do
 		if object.OnRefresh then object:OnRefresh() end
 	end
@@ -1076,7 +1076,7 @@ settings.CreateTextLabel = function(self, text)
 end
 
 -- Create a scrollframe and nested subcategory
-settings.CreateOptionsPage = function(self, name)
+settings.CreateOptionsPage = function(self, name, nested)
 	-- Create the ScrollFrame
 	local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate")
 	local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
@@ -1084,13 +1084,17 @@ settings.CreateOptionsPage = function(self, name)
 	scrollChild:SetWidth(1)	-- This is automatically defined, so long as the attribute exists at all
 	scrollChild:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
 
-	-- -- Set the scrollFrame to its proper size (only needed for top-level category)
-	-- scrollFrame:SetPoint("TOPLEFT", 0, 0)
-	-- scrollFrame:SetPoint("BOTTOMRIGHT", -25, 0)	-- Allow space for the scrollbar
+	if nested == false then
+		-- Set the scrollFrame to its proper size (only needed for top-level category)
+		scrollFrame:SetPoint("TOPLEFT", 0, 0)
+		scrollFrame:SetPoint("BOTTOMRIGHT", -25, 0)	-- Allow space for the scrollbar
+	end
 
-	-- Move the scrollbar to its proper position (only needed for subcategories)
-	scrollFrame.ScrollBar:ClearPoint("RIGHT")
-	scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+	if nested == true then
+		-- Move the scrollbar to its proper position (only needed for subcategories)
+		scrollFrame.ScrollBar:ClearPoint("RIGHT")
+		scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+	end
 
 	-- Reference stuff
 	scrollChild.CreateCheckBox = CreateCheckBox
@@ -1100,11 +1104,13 @@ settings.CreateOptionsPage = function(self, name)
 	scrollChild.CreateTextLabel = settings.CreateTextLabel
 	scrollChild.CreateHeaderLabel = settings.CreateHeaderLabel
 
-	-- Create the nested subcategory
-	local subcategory = scrollFrame
-	subcategory.name = name
-	subcategory.parent = "AllTheThings"
-	InterfaceOptions_AddCategory(subcategory)
+	if nested == true then
+		-- Create the nested subcategory
+		local subcategory = scrollFrame
+		subcategory.name = name
+		subcategory.parent = "AllTheThings"
+		InterfaceOptions_AddCategory(subcategory)
+	end
 
 	-- Return the scrollable child
 	return scrollChild
@@ -1395,113 +1401,46 @@ settings.UpdateMode = function(self, doRefresh)
 	self:Refresh()
 end
 
--- The ALL THE THINGS Epic Logo!
-local f = settings:CreateTexture(nil, "ARTWORK")
-f:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256)
-f:SetPoint("TOPLEFT", settings, "TOPLEFT", 8, -8)
-f:SetSize(36, 36)
-f:Show()
-settings.logo = f
+--------------------
+-- "General" page --
+--------------------
 
-f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-f:SetPoint("TOPLEFT", settings.logo, "TOPRIGHT", 4, -4)
-f:SetJustifyH("LEFT")
-f:SetText(L["TITLE"])
-f:SetScale(1.5)
-f:Show()
-settings.title = f
+-- SETUP
+(function()
+-- Create the page
+local child = settings:CreateOptionsPage("General", false)
 
-f = settings:CreateCheckBox(L["SKIP_AUTO_REFRESH"],
+-- CONTENT
+
+-- Top
+local logo = child:CreateTexture(nil, "ARTWORK")
+logo:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256)
+logo:SetPoint("TOPLEFT", child, 0, 0)
+logo:SetSize(36, 36)
+logo:Show()
+
+local headerTitle = child:CreateHeaderLabel(L["TITLE"])
+headerTitle:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4)
+headerTitle:SetScale(1.5)
+
+local checkboxSkipAutoRefresh = child:CreateCheckBox(L["SKIP_AUTO_REFRESH"],
 function(self)
 	self:SetChecked(settings:Get("Skip:AutoRefresh"))
 end,
 function(self)
 	settings:Set("Skip:AutoRefresh", self:GetChecked())
 end)
-f:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"])
-f:SetPoint("TOPLEFT", settings.title, "TOPRIGHT", 4, -2)
-settings.SkipAutoRefreshCheckbox = f
+checkboxSkipAutoRefresh:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"])
+checkboxSkipAutoRefresh:SetPoint("TOPLEFT", headerTitle, "TOPRIGHT", 4, 0)
+settings.checkboxSkipAutoRefresh = checkboxSkipAutoRefresh	-- So the Refresh function can find it
 
-f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8)
-f:SetJustifyH("RIGHT")
-
-local v = C_AddOns.GetAddOnMetadata(appName, "Version")
-f:SetText("v" .. v)
-f:Show()
-settings.version = f
-
-f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings, "BOTTOMLEFT", 0, -6)
-f:SetText(L["DISCORD_BUTTON_LABEL"])
-f:SetWidth(100)
-f:SetHeight(26)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "discord.gg/allthethings", nil, 10) end)
-f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"])
-settings.community = f
-
-f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings.community, "TOPRIGHT", 4, 0)
-f:SetText(L["TWITCH_BUTTON_LABEL"])
-f:SetWidth(100)
-f:SetHeight(26)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "twitch.tv/crieve", nil, 10) end)
-f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"])
-settings.twitch = f
-
-f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings.twitch, "TOPRIGHT", 4, 0)
-f:SetText(L["PATREON_BUTTON_LABEL"])
-f:SetWidth(100)
-f:SetHeight(26)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "patreon.com/allthethings", nil, 10) end)
-f:SetATTTooltip(L["PATREON_BUTTON_TOOLTIP"])
-settings.patreon = f
-
-f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings.patreon, "TOPRIGHT", 4, 0)
-f:SetText(L["MERCH_BUTTON_LABEL"])
-f:SetWidth(100)
-f:SetHeight(26)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "designbyhumans.com/shop/allthethings", nil, 10) end)
-f:SetATTTooltip(L["MERCH_BUTTON_TOOLTIP"])
-settings.merch = f
-
------------------------ i'd like to remove this, please
-local line
-(function()
-local tab = settings:CreateTab(L["GENERAL_LABEL"])
-tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", -36, 0)
-line = settings:CreateTexture(nil, "ARTWORK")
-line:SetPoint("LEFT", settings, "LEFT", 4, 0)
-line:SetPoint("RIGHT", settings, "RIGHT", -4, 0)
-line:SetPoint("TOP", tab, "BOTTOM", 0, 0)
-line:SetColorTexture(1, 1, 1, 0.4)
-line:SetHeight(2)
-
-end)();
-
------------------------
--- "General" options --
------------------------
-
--- SETUP
-(function()
--- Create the page
-local child = settings:CreateOptionsPage("General")
-
--- CONTENT
-
--- Top
--- ATT logo, and stuff
+local headerVersion = child:CreateHeaderLabel("v"..C_AddOns.GetAddOnMetadata(appName, "Version"))	-- @SettingsV3: Now returns @project-versio@ instead of [Git], not sure why
+headerVersion:SetPoint("TOPRIGHT", child, "TOPLEFT", 640, 0)
+headerVersion:SetJustifyH("RIGHT")
 
 -- Column 1
 local headerMinimapButton = child:CreateHeaderLabel(L["MINIMAP_LABEL"])
-headerMinimapButton:SetPoint("TOPLEFT", child, 0, 0)
+headerMinimapButton:SetPoint("TOPLEFT", logo, "BOTTOMLEFT", 0, -10)
 
 local checkboxShowMinimapButton = child:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
 function(self)
@@ -1736,9 +1675,99 @@ local checkboxScreenshotCollectedThings = child:CreateCheckBox(L["SCREENSHOT_COL
 checkboxScreenshotCollectedThings:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"])
 checkboxScreenshotCollectedThings:AlignBelow(checkboxWarnRemovedThings)
 
+local headerReporting = child:CreateHeaderLabel(L["REPORTING_LABEL"])
+headerReporting:SetPoint("LEFT", headerMinimapButton, 0, 0)
+headerReporting:SetPoint("TOP", checkboxScreenshotCollectedThings, "BOTTOM", 0, -10)
 
+local checkboxReportCollectedThings = child:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:Collected"))
+end,
+function(self)
+	settings:SetTooltipSetting("Report:Collected", self:GetChecked())
+end)
+checkboxReportCollectedThings:SetATTTooltip(L["REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP"])
+checkboxReportCollectedThings:SetPoint("TOPLEFT", headerReporting, "BOTTOMLEFT", -2, 0)
 
+local checkboxReportQuests = child:CreateCheckBox(L["REPORT_COMPLETED_QUESTS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:CompletedQuests"))
+end,
+function(self)
+	settings:SetTooltipSetting("Report:CompletedQuests", self:GetChecked())
+end)
+checkboxReportQuests:SetATTTooltip(L["REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP"])
+checkboxReportQuests:AlignBelow(checkboxReportCollectedThings)
 
+local checkboxReportUnsourced = child:CreateCheckBox(L["REPORT_UNSORTED_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:UnsortedQuests"))
+	if not settings:GetTooltipSetting("Report:CompletedQuests") then
+		self:Disable()
+		self:SetAlpha(0.2)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Report:UnsortedQuests", self:GetChecked())
+end)
+checkboxReportUnsourced:SetATTTooltip(L["REPORT_UNSORTED_CHECKBOX_TOOLTIP"])
+checkboxReportUnsourced:AlignBelow(checkboxReportQuests, 1)
+
+-- Column 2
+local headerChatCommands = child:CreateHeaderLabel(L["CHAT_COMMANDS_LABEL"])
+headerChatCommands:SetPoint("TOPLEFT", headerMinimapButton, 320, 0)
+
+local textChatCommands = child:CreateTextLabel(L["CHAT_COMMANDS_TEXT"])
+textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -10)
+textChatCommands:SetWidth(320)
+
+-- Bottom
+-- Discord button
+f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
+f:SetPoint("TOPLEFT", settings, "BOTTOMLEFT", 0, -6)
+f:SetText(L["DISCORD_BUTTON_LABEL"])
+f:SetWidth(100)
+f:SetHeight(26)
+f:RegisterForClicks("AnyUp")
+f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "discord.gg/allthethings", nil, 10) end)
+f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"])
+settings.community = f
+
+-- Twitch button
+f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
+f:SetPoint("TOPLEFT", settings.community, "TOPRIGHT", 4, 0)
+f:SetText(L["TWITCH_BUTTON_LABEL"])
+f:SetWidth(100)
+f:SetHeight(26)
+f:RegisterForClicks("AnyUp")
+f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "twitch.tv/crieve", nil, 10) end)
+f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"])
+settings.twitch = f
+
+-- Patreon button
+f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
+f:SetPoint("TOPLEFT", settings.twitch, "TOPRIGHT", 4, 0)
+f:SetText(L["PATREON_BUTTON_LABEL"])
+f:SetWidth(100)
+f:SetHeight(26)
+f:RegisterForClicks("AnyUp")
+f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "patreon.com/allthethings", nil, 10) end)
+f:SetATTTooltip(L["PATREON_BUTTON_TOOLTIP"])
+settings.patreon = f
+
+-- Merch button
+f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
+f:SetPoint("TOPLEFT", settings.patreon, "TOPRIGHT", 4, 0)
+f:SetText(L["MERCH_BUTTON_LABEL"])
+f:SetWidth(100)
+f:SetHeight(26)
+f:RegisterForClicks("AnyUp")
+f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "designbyhumans.com/shop/allthethings", nil, 10) end)
+f:SetATTTooltip(L["MERCH_BUTTON_TOOLTIP"])
+settings.merch = f
 end)();
 
 ---------------------
@@ -1748,7 +1777,7 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage(L["FILTERS_TAB"])
+local child = settings:CreateOptionsPage(L["FILTERS_TAB"], true)
 
 -- Creates a Checkbox used to designate tracking the specified 'trackingOption', based on tracking of 'parentTrackingOption' if specified
 -- localeKey: The prefix of the locale lookup value (i.e. HEIRLOOMS_UPGRADES)
@@ -2635,14 +2664,14 @@ end
 
 end)();
 
--------------------------
--- "Interface" options --
--------------------------
+----------------------
+-- "Interface" page --
+----------------------
 
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage(L["INTERFACE_TAB"])
+local child = settings:CreateOptionsPage(L["INTERFACE_TAB"], true)
 
 -- CONTENT
 
@@ -2870,7 +2899,6 @@ end
 local textTooltipShownInfo = child:CreateTextLabel("|cffFFFFFF"..L["TOOLTIP_SHOW_LABEL"])
 textTooltipShownInfo:SetPoint("TOP", sliderSummarizeThings, "BOTTOM", 0, -15)
 textTooltipShownInfo:SetPoint("LEFT", headerTooltips, "LEFT", 0, 0)
-table.insert(settings.Objects, textTooltipShownInfo)
 textTooltipShownInfo.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") then
 		self:SetAlpha(0.2)
@@ -2879,7 +2907,7 @@ textTooltipShownInfo.OnRefresh = function(self)
 	end
 end
 
-local ShowCollectionProgressCheckBox = child:CreateCheckBox(L["SHOW_COLLECTION_PROGRESS_CHECKBOX"],
+local checkboxCollectionProgress = child:CreateCheckBox(L["SHOW_COLLECTION_PROGRESS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Progress"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2893,11 +2921,11 @@ end,
 function(self)
 	settings:SetTooltipSetting("Progress", self:GetChecked())
 end)
-ShowCollectionProgressCheckBox:SetATTTooltip(L["SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP"])
-ShowCollectionProgressCheckBox:SetPoint("LEFT", checkboxSummarizeThings, "LEFT", 0, 0)
-ShowCollectionProgressCheckBox:SetPoint("TOP", textTooltipShownInfo, "BOTTOM", 0, -2)
+checkboxCollectionProgress:SetATTTooltip(L["SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP"])
+checkboxCollectionProgress:SetPoint("LEFT", checkboxSummarizeThings, "LEFT", 0, 0)
+checkboxCollectionProgress:SetPoint("TOP", textTooltipShownInfo, "BOTTOM", 0, -2)
 
-local ShortenProgressCheckBox = child:CreateCheckBox(L["ICON_ONLY_CHECKBOX"],
+local checkboxProgressIconOnly = child:CreateCheckBox(L["ICON_ONLY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ShowIconOnly"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("Progress") then
@@ -2911,10 +2939,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("ShowIconOnly", self:GetChecked())
 end)
-ShortenProgressCheckBox:SetATTTooltip(L["ICON_ONLY_CHECKBOX_TOOLTIP"])
-ShortenProgressCheckBox:AlignBelow(ShowCollectionProgressCheckBox, 1)
+checkboxProgressIconOnly:SetATTTooltip(L["ICON_ONLY_CHECKBOX_TOOLTIP"])
+checkboxProgressIconOnly:AlignBelow(checkboxCollectionProgress, 1)
 
-local ShowKnownByCheckBox = child:CreateCheckBox(L["KNOWN_BY_CHECKBOX"],
+local checkboxKnownBy = child:CreateCheckBox(L["KNOWN_BY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2928,10 +2956,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked())
 end)
-ShowKnownByCheckBox:SetATTTooltip(L["KNOWN_BY_CHECKBOX_TOOLTIP"])
-ShowKnownByCheckBox:AlignBelow(ShortenProgressCheckBox, -1)
+checkboxKnownBy:SetATTTooltip(L["KNOWN_BY_CHECKBOX_TOOLTIP"])
+checkboxKnownBy:AlignBelow(checkboxProgressIconOnly, -1)
 
-local ShowProfessionRequirementsCheckBox = child:CreateCheckBox(L["PROFESSION_CHECKBOX"],
+local checkboxProfessions = child:CreateCheckBox(L["PROFESSION_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ProfessionRequirements"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2945,10 +2973,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("ProfessionRequirements", self:GetChecked())
 end)
-ShowProfessionRequirementsCheckBox:SetATTTooltip(L["PROFESSION_CHECKBOX_TOOLTIP"])
-ShowProfessionRequirementsCheckBox:AlignBelow(ShowKnownByCheckBox)
+checkboxProfessions:SetATTTooltip(L["PROFESSION_CHECKBOX_TOOLTIP"])
+checkboxProfessions:AlignBelow(checkboxKnownBy)
 
-local ShowLevelRequirementsCheckBox = child:CreateCheckBox(L["LEVELREQ_CHECKBOX"],
+local checkboxLevels = child:CreateCheckBox(L["LEVELREQ_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("LevelRequirements"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2962,10 +2990,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("LevelRequirements", self:GetChecked())
 end)
-ShowLevelRequirementsCheckBox:SetATTTooltip(L["LEVELREQ_CHECKBOX_TOOLTIP"])
-ShowLevelRequirementsCheckBox:AlignBelow(ShowProfessionRequirementsCheckBox)
+checkboxLevels:SetATTTooltip(L["LEVELREQ_CHECKBOX_TOOLTIP"])
+checkboxLevels:AlignBelow(checkboxProfessions)
 
-local ShowClassRequirementsCheckBox = child:CreateCheckBox(L["CLASSES_CHECKBOX"],
+local checkboxClasses = child:CreateCheckBox(L["CLASSES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2979,10 +3007,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("ClassRequirements", self:GetChecked())
 end)
-ShowClassRequirementsCheckBox:SetATTTooltip(L["CLASSES_CHECKBOX_TOOLTIP"])
-ShowClassRequirementsCheckBox:AlignBelow(ShowLevelRequirementsCheckBox)
+checkboxClasses:SetATTTooltip(L["CLASSES_CHECKBOX_TOOLTIP"])
+checkboxClasses:AlignBelow(checkboxLevels)
 
-local ShowRaceRequirementsCheckBox = child:CreateCheckBox(L["RACES_CHECKBOX"],
+local checkboxRaces = child:CreateCheckBox(L["RACES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("RaceRequirements"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2996,10 +3024,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("RaceRequirements", self:GetChecked())
 end)
-ShowRaceRequirementsCheckBox:SetATTTooltip(L["RACES_CHECKBOX_TOOLTIP"])
-ShowRaceRequirementsCheckBox:AlignBelow(ShowClassRequirementsCheckBox)
+checkboxRaces:SetATTTooltip(L["RACES_CHECKBOX_TOOLTIP"])
+checkboxRaces:AlignBelow(checkboxClasses)
 
-local ShowSpecializationRequirementsCheckBox = child:CreateCheckBox(L["SPEC_CHECKBOX"],
+local checkboxSpecializations = child:CreateCheckBox(L["SPEC_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3013,10 +3041,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked())
 end)
-ShowSpecializationRequirementsCheckBox:SetATTTooltip(L["SPEC_CHECKBOX_TOOLTIP"])
-ShowSpecializationRequirementsCheckBox:AlignBelow(ShowRaceRequirementsCheckBox)
+checkboxSpecializations:SetATTTooltip(L["SPEC_CHECKBOX_TOOLTIP"])
+checkboxSpecializations:AlignBelow(checkboxRaces)
 
-local ShowDropChancesCheckbox = child:CreateCheckBox(L["DROP_CHANCES_CHECKBOX"],
+local checkboxDropChances = child:CreateCheckBox(L["DROP_CHANCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("DropChances"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3030,10 +3058,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("DropChances", self:GetChecked())
 end)
-ShowDropChancesCheckbox:SetATTTooltip(L["DROP_CHANCES_CHECKBOX_TOOLTIP"])
-ShowDropChancesCheckbox:AlignBelow(ShowSpecializationRequirementsCheckBox)
+checkboxDropChances:SetATTTooltip(L["DROP_CHANCES_CHECKBOX_TOOLTIP"])
+checkboxDropChances:AlignBelow(checkboxSpecializations)
 
-local ShowCoordinatesCheckBox = child:CreateCheckBox(L["COORDINATES_CHECKBOX"],
+local checkboxCoordinates = child:CreateCheckBox(L["COORDINATES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Coordinates"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3047,10 +3075,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("Coordinates", self:GetChecked())
 end)
-ShowCoordinatesCheckBox:SetATTTooltip(L["COORDINATES_CHECKBOX_TOOLTIP"])
-ShowCoordinatesCheckBox:AlignBelow(ShowDropChancesCheckbox)
+checkboxCoordinates:SetATTTooltip(L["COORDINATES_CHECKBOX_TOOLTIP"])
+checkboxCoordinates:AlignBelow(checkboxDropChances)
 
-local ShowDescriptionsCheckBox = child:CreateCheckBox(L["DESCRIPTIONS_CHECKBOX"],
+local checkboxDescriptions = child:CreateCheckBox(L["DESCRIPTIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Descriptions"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3064,10 +3092,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("Descriptions", self:GetChecked())
 end)
-ShowDescriptionsCheckBox:SetATTTooltip(L["DESCRIPTIONS_CHECKBOX_TOOLTIP"])
-ShowDescriptionsCheckBox:AlignBelow(ShowCoordinatesCheckBox)
+checkboxDescriptions:SetATTTooltip(L["DESCRIPTIONS_CHECKBOX_TOOLTIP"])
+checkboxDescriptions:AlignBelow(checkboxCoordinates)
 
-local ShowLoreCheckBox = child:CreateCheckBox(L["LORE_CHECKBOX"],
+local checkboxLore = child:CreateCheckBox(L["LORE_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Lore"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3081,10 +3109,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("Lore", self:GetChecked())
 end)
-ShowLoreCheckBox:SetATTTooltip(L["LORE_CHECKBOX_TOOLTIP"])
-ShowLoreCheckBox:AlignBelow(ShowDescriptionsCheckBox)
+checkboxLore:SetATTTooltip(L["LORE_CHECKBOX_TOOLTIP"])
+checkboxLore:AlignBelow(checkboxDescriptions)
 
-local ShowModelsCheckBox = child:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
+local checkboxModelPreview = child:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Models"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3098,10 +3126,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("Models", self:GetChecked())
 end)
-ShowModelsCheckBox:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"])
-ShowModelsCheckBox:AlignBelow(ShowLoreCheckBox)
+checkboxModelPreview:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"])
+checkboxModelPreview:AlignBelow(checkboxLore)
 
-local ShowCurrencyCalculationsCheckBox = child:CreateCheckBox(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"],
+local checkboxCurrencyCalculation = child:CreateCheckBox(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Currencies"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3115,10 +3143,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("Currencies", self:GetChecked())
 end)
-ShowCurrencyCalculationsCheckBox:SetATTTooltip(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP"])
-ShowCurrencyCalculationsCheckBox:AlignBelow(ShowModelsCheckBox)
+checkboxCurrencyCalculation:SetATTTooltip(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP"])
+checkboxCurrencyCalculation:AlignBelow(checkboxModelPreview)
 
-local ShowSharedAppearancesCheckBox = child:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
+local checkboxSharedAppearances = child:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3132,10 +3160,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("SharedAppearances", self:GetChecked())
 end)
-ShowSharedAppearancesCheckBox:SetATTTooltip(L["SHARED_APPEARANCES_CHECKBOX_TOOLTIP"])
-ShowSharedAppearancesCheckBox:AlignAfter(ShowCollectionProgressCheckBox)
+checkboxSharedAppearances:SetATTTooltip(L["SHARED_APPEARANCES_CHECKBOX_TOOLTIP"])
+checkboxSharedAppearances:AlignAfter(checkboxCollectionProgress)
 
-local IncludeOriginalSourceCheckBox = child:CreateCheckBox(L["INCLUDE_ORIGINAL_CHECKBOX"],
+local checkboxOriginalSource = child:CreateCheckBox(L["INCLUDE_ORIGINAL_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("IncludeOriginalSource"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
@@ -3149,10 +3177,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("IncludeOriginalSource", self:GetChecked())
 end)
-IncludeOriginalSourceCheckBox:SetATTTooltip(L["INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP"])
-IncludeOriginalSourceCheckBox:AlignBelow(ShowSharedAppearancesCheckBox, 1)
+checkboxOriginalSource:SetATTTooltip(L["INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP"])
+checkboxOriginalSource:AlignBelow(checkboxSharedAppearances, 1)
 
-local OnlyShowRelevantSharedAppearancesCheckBox = child:CreateCheckBox(L["ONLY_RELEVANT_CHECKBOX"],
+local checkboxOnlyRelevant = child:CreateCheckBox(L["ONLY_RELEVANT_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
@@ -3166,10 +3194,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("OnlyShowRelevantSharedAppearances", self:GetChecked())
 end)
-OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip(L["ONLY_RELEVANT_CHECKBOX_TOOLTIP"])
-OnlyShowRelevantSharedAppearancesCheckBox:AlignBelow(IncludeOriginalSourceCheckBox)
+checkboxOnlyRelevant:SetATTTooltip(L["ONLY_RELEVANT_CHECKBOX_TOOLTIP"])
+checkboxOnlyRelevant:AlignBelow(checkboxOriginalSource)
 
-local ShowCompletedByCheckBox = child:CreateCheckBox(L["COMPLETED_BY_CHECKBOX"],
+local checkboxCompletedBy = child:CreateCheckBox(L["COMPLETED_BY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("CompletedBy"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3183,10 +3211,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("CompletedBy", self:GetChecked())
 end)
-ShowCompletedByCheckBox:SetATTTooltip(L["COMPLETED_BY_CHECKBOX_TOOLTIP"])
-ShowCompletedByCheckBox:AlignBelow(OnlyShowRelevantSharedAppearancesCheckBox, -1)
+checkboxCompletedBy:SetATTTooltip(L["COMPLETED_BY_CHECKBOX_TOOLTIP"])
+checkboxCompletedBy:AlignBelow(checkboxOnlyRelevant, -1)
 
-local ShowSourceLocationsCheckBox = child:CreateCheckBox(L["SOURCE_LOCATIONS_CHECKBOX"],
+local checkboxSourceLocations = child:CreateCheckBox(L["SOURCE_LOCATIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -3200,27 +3228,27 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations", self:GetChecked())
 end)
-ShowSourceLocationsCheckBox:SetATTTooltip(L["SOURCE_LOCATIONS_CHECKBOX_TOOLTIP"])
-ShowSourceLocationsCheckBox:AlignBelow(ShowCompletedByCheckBox)
+checkboxSourceLocations:SetATTTooltip(L["SOURCE_LOCATIONS_CHECKBOX_TOOLTIP"])
+checkboxSourceLocations:AlignBelow(checkboxCompletedBy)
 
-local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", child, "OptionsSliderTemplate")
-LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox.Text, "BOTTOM", 0, -4)
-LocationsSlider:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 10, 0)
-table.insert(settings.Objects, LocationsSlider)
-settings.LocationsSlider = LocationsSlider
-LocationsSlider.tooltipText = L["LOCATIONS_SLIDER_TOOLTIP"]
-LocationsSlider:SetOrientation('HORIZONTAL')
-LocationsSlider:SetWidth(140)
-LocationsSlider:SetHeight(20)
-LocationsSlider:SetValueStep(1)
-LocationsSlider:SetMinMaxValues(1, 40)
-LocationsSlider:SetObeyStepOnDrag(true)
-_G[LocationsSlider:GetName() .. 'Low']:SetText('1')
-_G[LocationsSlider:GetName() .. 'High']:SetText('40')
-LocationsSlider.Label = LocationsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-LocationsSlider.Label:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, 2)
-LocationsSlider.Label:SetText(LocationsSlider:GetValue())
-LocationsSlider:SetScript("OnValueChanged", function(self, newValue)
+local sliderSourceLocations = CreateFrame("Slider", "ATTsliderSourceLocations", child, "OptionsSliderTemplate")
+sliderSourceLocations:SetPoint("TOP", checkboxSourceLocations.Text, "BOTTOM", 0, -4)
+sliderSourceLocations:SetPoint("LEFT", checkboxSourceLocations, "LEFT", 10, 0)
+table.insert(settings.Objects, sliderSourceLocations)
+settings.sliderSourceLocations = sliderSourceLocations
+sliderSourceLocations.tooltipText = L["LOCATIONS_SLIDER_TOOLTIP"]
+sliderSourceLocations:SetOrientation('HORIZONTAL')
+sliderSourceLocations:SetWidth(140)
+sliderSourceLocations:SetHeight(20)
+sliderSourceLocations:SetValueStep(1)
+sliderSourceLocations:SetMinMaxValues(1, 40)
+sliderSourceLocations:SetObeyStepOnDrag(true)
+_G[sliderSourceLocations:GetName() .. 'Low']:SetText('1')
+_G[sliderSourceLocations:GetName() .. 'High']:SetText('40')
+sliderSourceLocations.Label = sliderSourceLocations:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+sliderSourceLocations.Label:SetPoint("TOP", sliderSourceLocations, "BOTTOM", 0, 2)
+sliderSourceLocations.Label:SetText(sliderSourceLocations:GetValue())
+sliderSourceLocations:SetScript("OnValueChanged", function(self, newValue)
 	self.Label:SetText(newValue)
 	if newValue == settings:GetTooltipSetting("Locations") then
 		return 1
@@ -3228,7 +3256,7 @@ LocationsSlider:SetScript("OnValueChanged", function(self, newValue)
 	settings:SetTooltipSetting("Locations", newValue)
 	app:UpdateWindows()
 end)
-LocationsSlider.OnRefresh = function(self)
+sliderSourceLocations.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
 		self:Disable()
 		self:SetAlpha(0.2)
@@ -3238,7 +3266,7 @@ LocationsSlider.OnRefresh = function(self)
 	end
 end
 
-local ShowCompletedSourceLocationsForCheckBox = child:CreateCheckBox(L["COMPLETED_SOURCES_CHECKBOX"],
+local checkboxCompleted = child:CreateCheckBox(L["COMPLETED_SOURCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Completed"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -3252,11 +3280,11 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations:Completed", self:GetChecked())
 end)
-ShowCompletedSourceLocationsForCheckBox:SetATTTooltip(L["COMPLETED_SOURCES_CHECKBOX_TOOLTIP"])
-ShowCompletedSourceLocationsForCheckBox:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, -8)
-ShowCompletedSourceLocationsForCheckBox:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 8, 4)
+checkboxCompleted:SetATTTooltip(L["COMPLETED_SOURCES_CHECKBOX_TOOLTIP"])
+checkboxCompleted:SetPoint("TOP", sliderSourceLocations, "BOTTOM", 0, -8)
+checkboxCompleted:SetPoint("LEFT", checkboxSourceLocations, "LEFT", 8, 4)
 
-local ShowSourceLocationsForCreaturesCheckBox = child:CreateCheckBox(L["FOR_CREATURES_CHECKBOX"],
+local checkboxCreatures = child:CreateCheckBox(L["FOR_CREATURES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Creatures"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -3270,10 +3298,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations:Creatures", self:GetChecked())
 end)
-ShowSourceLocationsForCreaturesCheckBox:SetATTTooltip(L["FOR_CREATURES_CHECKBOX_TOOLTIP"])
-ShowSourceLocationsForCreaturesCheckBox:AlignBelow(ShowCompletedSourceLocationsForCheckBox)
+checkboxCreatures:SetATTTooltip(L["FOR_CREATURES_CHECKBOX_TOOLTIP"])
+checkboxCreatures:AlignBelow(checkboxCompleted)
 
-local ShowSourceLocationsForThingsCheckBox = child:CreateCheckBox(L["FOR_THINGS_CHECKBOX"],
+local checkboxThings = child:CreateCheckBox(L["FOR_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Things"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -3287,10 +3315,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations:Things", self:GetChecked())
 end)
-ShowSourceLocationsForThingsCheckBox:SetATTTooltip(L["FOR_THINGS_CHECKBOX_TOOLTIP"])
-ShowSourceLocationsForThingsCheckBox:AlignBelow(ShowSourceLocationsForCreaturesCheckBox)
+checkboxThings:SetATTTooltip(L["FOR_THINGS_CHECKBOX_TOOLTIP"])
+checkboxThings:AlignBelow(checkboxCreatures)
 
-local ShowSourceLocationsForUnsortedCheckBox = child:CreateCheckBox(L["FOR_UNSORTED_CHECKBOX"],
+local checkboxUnsorted = child:CreateCheckBox(L["FOR_UNSORTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Unsorted"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -3304,10 +3332,10 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations:Unsorted", self:GetChecked())
 end)
-ShowSourceLocationsForUnsortedCheckBox:SetATTTooltip(L["FOR_UNSORTED_CHECKBOX_TOOLTIP"])
-ShowSourceLocationsForUnsortedCheckBox:AlignBelow(ShowSourceLocationsForThingsCheckBox)
+checkboxUnsorted:SetATTTooltip(L["FOR_UNSORTED_CHECKBOX_TOOLTIP"])
+checkboxUnsorted:AlignBelow(checkboxThings)
 
-local ShowSourceLocationsWithWrappingCheckBox = child:CreateCheckBox(L["WITH_WRAPPING_CHECKBOX"],
+local checkboxAllowWrapping = child:CreateCheckBox(L["WITH_WRAPPING_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Wrapping"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -3321,8 +3349,8 @@ end,
 function(self)
 	settings:SetTooltipSetting("SourceLocations:Wrapping", self:GetChecked())
 end)
-ShowSourceLocationsWithWrappingCheckBox:SetATTTooltip(L["WITH_WRAPPING_CHECKBOX_TOOLTIP"])
-ShowSourceLocationsWithWrappingCheckBox:AlignBelow(ShowSourceLocationsForUnsortedCheckBox)
+checkboxAllowWrapping:SetATTTooltip(L["WITH_WRAPPING_CHECKBOX_TOOLTIP"])
+checkboxAllowWrapping:AlignBelow(checkboxUnsorted)
 
 -- Column 2
 local headerListBehavior = child:CreateHeaderLabel(L["BEHAVIOR_LABEL"])
@@ -3411,6 +3439,39 @@ end)
 checkboxWarnDifficulty:SetATTTooltip(L["WARN_DIFFICULTY_CHECKBOX_TOOLTIP"])
 checkboxWarnDifficulty:AlignBelow(checkboxExpandDifficulty)
 
+local checkboxShowCollectibleCostGroups = child:CreateCheckBox(L["CURRENCIES_IN_WQ_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"))
+end,
+function(self)
+	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked())
+end)
+checkboxShowCollectibleCostGroups:SetATTTooltip(L["CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP"])
+checkboxShowCollectibleCostGroups:AlignBelow(checkboxWarnDifficulty)
+
+local checkboxShowCompletedGroups = child:CreateCheckBox(L["SHOW_COMPLETED_GROUPS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Show:CompletedGroups"))
+end,
+function(self)
+	settings:SetCompletedGroups(self:GetChecked())
+	settings:Set("Cache:CompletedGroups", self:GetChecked())
+	settings:UpdateMode(1)
+end)
+checkboxShowCompletedGroups:SetATTTooltip(L["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"])
+checkboxShowCompletedGroups:AlignBelow(checkboxShowCollectibleCostGroups)
+
+local checkboxShowCollectedThings = child:CreateCheckBox(L["SHOW_COLLECTED_THINGS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Show:CollectedThings"))
+end,
+function(self)
+	settings:SetCollectedThings(self:GetChecked())
+	settings:Set("Cache:CollectedThings", self:GetChecked())
+end)
+checkboxShowCollectedThings:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"])
+checkboxShowCollectedThings:AlignBelow(checkboxShowCompletedGroups)
+
 local checkboxUseMoreColors = child:CreateCheckBox(L["MORE_COLORS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("UseMoreColors"))
@@ -3420,7 +3481,7 @@ function(self)
 	app:UpdateWindows()
 end)
 checkboxUseMoreColors:SetATTTooltip(L["MORE_COLORS_CHECKBOX_TOOLTIP"])
-checkboxUseMoreColors:AlignBelow(checkboxWarnDifficulty)
+checkboxUseMoreColors:AlignBelow(checkboxShowCollectedThings)
 
 local checkboxNestedQuestChains = child:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
 function(self)
@@ -3583,21 +3644,22 @@ end)
 DynamicCategoryNestedCheckbox:AlignAfter(DynamicCategorySimpleCheckbox)
 DynamicCategoryNestedCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
 
+end)();
 
-local headerAdditionalThings = child:CreateHeaderLabel(L["EXTRA_THINGS_LABEL"])
-headerAdditionalThings:SetPoint("TOP", DynamicCategoryNestedCheckbox, "BOTTOM", 0, -10)
--- Halloween Easter Egg
-headerAdditionalThings.OnRefresh = function(self)
-    C_Calendar.OpenCalendar()
-    local date = C_DateAndTime.GetCurrentCalendarTime()
-    local numEvents = C_Calendar.GetNumDayEvents(0, date.monthDay)
-    for i=1, numEvents do
-        local event = C_Calendar.GetHolidayInfo(0, date.monthDay, i)
-        if event and (event.texture == 235461 or event.texture == 235462) then -- Non-localised way to detect specific holiday
-            self:SetText(L["STRANGER_THINGS_LABEL"])
-        end
-    end
-end
+---------------------
+-- "Advanced" page --
+---------------------
+
+-- SETUP
+(function()
+-- Create the page
+local child = settings:CreateOptionsPage(L["FEATURES_TAB"], true)
+
+-- CONTENT
+
+-- Column 1
+local headerAdvanced = child:CreateHeaderLabel(L["FEATURES_TAB"])
+headerAdvanced:SetPoint("TOPLEFT", child, 0, 0)
 
 local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
 function(self)
@@ -3607,7 +3669,7 @@ function(self)
 	settings:SetDebugMode(self:GetChecked())
 end)
 checkboxDebugMode:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"])
-checkboxDebugMode:SetPoint("TOPLEFT", headerAdditionalThings, "BOTTOMLEFT", -2, 0)
+checkboxDebugMode:SetPoint("TOPLEFT", headerAdvanced, "BOTTOMLEFT", -2, 0)
 
 local checkboxShowAllTrackableThings = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
 function(self)
@@ -3627,94 +3689,9 @@ end)
 checkboxShowAllTrackableThings:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"])
 checkboxShowAllTrackableThings:AlignBelow(checkboxDebugMode)
 
-local checkboxCollectRepeatableQuests = child:CreateCheckBox(L["SHOW_REPEATABLE_THINGS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Repeatable"))
-	if not settings:Get("Thing:Quests") then
-		self:Disable()
-		self:SetAlpha(0.2)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Repeatable", self:GetChecked())
-	settings:UpdateMode(1)
-end)
-checkboxCollectRepeatableQuests:SetATTTooltip(L["SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP"])
-checkboxCollectRepeatableQuests:AlignBelow(checkboxShowAllTrackableThings)
-
-local checkboxCollectRepeatableQuestsFirstTimeOnly = child:CreateCheckBox(L["FIRST_TIME_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("RepeatableFirstTime"))
-	if not settings:Get("Thing:Quests") or not settings:GetTooltipSetting("Repeatable") then
-		self:Disable()
-		self:SetAlpha(0.2)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("RepeatableFirstTime", self:GetChecked())
-	settings:UpdateMode(1)
-end)
-checkboxCollectRepeatableQuestsFirstTimeOnly:SetATTTooltip(L["FIRST_TIME_CHECKBOX_TOOLTIP"])
-checkboxCollectRepeatableQuestsFirstTimeOnly:AlignBelow(checkboxCollectRepeatableQuests, 1)
-
-local checkboxShowCollectibleCostGroups = child:CreateCheckBox(L["CURRENCIES_IN_WQ_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"))
-end,
-function(self)
-	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked())
-end)
-checkboxShowCollectibleCostGroups:SetATTTooltip(L["CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP"])
-checkboxShowCollectibleCostGroups:AlignBelow(checkboxCollectRepeatableQuestsFirstTimeOnly, -1)
-
-local checkboxShowCompletedGroups = child:CreateCheckBox(L["SHOW_COMPLETED_GROUPS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Show:CompletedGroups"))
-end,
-function(self)
-	settings:SetCompletedGroups(self:GetChecked())
-	settings:Set("Cache:CompletedGroups", self:GetChecked())
-	settings:UpdateMode(1)
-end)
-checkboxShowCompletedGroups:SetATTTooltip(L["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"])
-checkboxShowCompletedGroups:AlignBelow(checkboxShowCollectibleCostGroups)
-
-local checkboxShowCollectedThings = child:CreateCheckBox(L["SHOW_COLLECTED_THINGS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Show:CollectedThings"))
-end,
-function(self)
-	settings:SetCollectedThings(self:GetChecked())
-	settings:Set("Cache:CollectedThings", self:GetChecked())
-end)
-checkboxShowCollectedThings:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"])
-checkboxShowCollectedThings:AlignBelow(checkboxShowCompletedGroups)
-
-end)();
-
----------------------
--- "Advanced" page --
----------------------
-
--- SETUP
-(function()
--- Create the page
-local child = settings:CreateOptionsPage("Advanced") -- Instead of Features
-
--- CONTENT
-
-local AdditionalLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-AdditionalLabel:SetPoint("TOP", headerTooltips, 0, 0)
-AdditionalLabel:SetPoint("LEFT", headerTooltips, 250, 0)
-AdditionalLabel:SetJustifyH("LEFT")
-AdditionalLabel:SetText(L["ADDITIONAL_LABEL"])
-AdditionalLabel:Show()
+-- Column 2
+local headerAdditionalInformation = child:CreateHeaderLabel(L["ADDITIONAL_LABEL"])
+headerAdditionalInformation:SetPoint("TOPLEFT", headerAdvanced, 320, 0)
 
 local ids = {
 	["achievementID"] = "Achievement ID",
@@ -3761,7 +3738,7 @@ for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azerite
 		settings:Refresh()
 	end)
 	if not last then
-		filter:SetPoint("TOPLEFT", AdditionalLabel, "BOTTOMLEFT", -2, 0)
+		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
 	else
 		filter:AlignBelow(last)
 	end
@@ -3778,67 +3755,12 @@ for _,id in pairs({"iconPath","illusionID","instanceID","itemID","itemString","m
 		settings:Refresh()
 	end)
 	if not last then
-		filter:SetPoint("TOPLEFT", AdditionalLabel, "BOTTOMLEFT", 164, 0)
+		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 164, 0)
 	else
 		filter:AlignBelow(last)
 	end
 	last = filter
 end
-
-local headerReporting = child:CreateHeaderLabel(L["REPORTING_LABEL"])
-headerReporting:SetPoint("TOP", headerMinimapButton, "TOP", 0, 0)
-headerReporting:SetPoint("LEFT", headerMinimapButton, 300, 0)
-
-local ReportCollectedThingsCheckBox = child:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Report:Collected"))
-end,
-function(self)
-	settings:SetTooltipSetting("Report:Collected", self:GetChecked())
-end)
-ReportCollectedThingsCheckBox:SetATTTooltip(L["REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP"])
-ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", headerReporting, "BOTTOMLEFT", -2, 0)
-
-local ReportCompletedvheckboxQuests = child:CreateCheckBox(L["REPORT_COMPLETED_QUESTS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Report:CompletedQuests"))
-end,
-function(self)
-	settings:SetTooltipSetting("Report:CompletedQuests", self:GetChecked())
-end)
-ReportCompletedvheckboxQuests:SetATTTooltip(L["REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP"])
-ReportCompletedvheckboxQuests:AlignBelow(ReportCollectedThingsCheckBox)
-
-local ReportUnsortedCompletedvheckboxQuests = child:CreateCheckBox(L["REPORT_UNSORTED_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Report:UnsortedQuests"))
-	if not settings:GetTooltipSetting("Report:CompletedQuests") then
-		self:Disable()
-		self:SetAlpha(0.2)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Report:UnsortedQuests", self:GetChecked())
-end)
-ReportUnsortedCompletedvheckboxQuests:SetATTTooltip(L["REPORT_UNSORTED_CHECKBOX_TOOLTIP"])
-ReportUnsortedCompletedvheckboxQuests:AlignBelow(ReportCompletedvheckboxQuests, 1)
-
-local ChatCommandsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-ChatCommandsLabel:SetPoint("TOP", ReportUnsortedCompletedvheckboxQuests, "BOTTOM", 0, -4)
-ChatCommandsLabel:SetPoint("LEFT", headerReporting, "LEFT", 0, 0)
-ChatCommandsLabel:SetJustifyH("LEFT")
-ChatCommandsLabel:SetText(L["CHAT_COMMANDS_LABEL"])
-ChatCommandsLabel:Show()
-
-local ChatCommandsText = child:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-ChatCommandsText:SetPoint("TOPLEFT", ChatCommandsLabel, "BOTTOMLEFT", 0, -4)
-ChatCommandsText:SetPoint("RIGHT", settings, "RIGHT", -20, 0)
-ChatCommandsText:SetJustifyH("LEFT")
-ChatCommandsText:SetText(L["CHAT_COMMANDS_TEXT"])
-ChatCommandsText:Show()
 
 end)();
 
@@ -3849,7 +3771,7 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage(L["PROFILES_TAB"])
+local child = settings:CreateOptionsPage(L["PROFILES_TAB"], true)
 
 -- CONTENT
 local headerProfiles = child:CreateHeaderLabel(L["PROFILES_TAB"])
@@ -4157,7 +4079,7 @@ end)();
 local tab = settings:CreateTab(L["SYNC"])	-- @SettingsV3: If I remove this it breaks. :(
 
 -- Create the page
-local child = settings:CreateOptionsPage(L["SYNC"])
+local child = settings:CreateOptionsPage(L["SYNC"], true)
 
 -- CONTENT
 local headerSync = child:CreateHeaderLabel(L["ACCOUNT_SYNCHRONIZATION"])
@@ -4207,6 +4129,7 @@ function tab:InitializeSyncWindow()	-- @SettingsV3: If I let this run on another
 	syncWindow:Show()
 	table.insert(settings.Objects, syncWindow)
 end
+
 end)();
 
 ------------------
@@ -4216,7 +4139,7 @@ end)();
 -- SETUP
 (function()
 -- Create the page
-local child = settings:CreateOptionsPage(L["ABOUT"])
+local child = settings:CreateOptionsPage(L["ABOUT"], true)
 
 -- CONTENT
 local textAbout = child:CreateTextLabel(L["TITLE"] .. L["ABOUT_1"])
@@ -4224,4 +4147,5 @@ textAbout:SetPoint("TOPLEFT", child, 0, 0)
 
 local textShoutout = child:CreateTextLabel(L["ABOUT_2"] .. L["COLLECTED_ICON"] .. " " .. L["COLLECTED_APPEARANCE_ICON"] .. " " ..L["NOT_COLLECTED_ICON"] .. L["ABOUT_3"])
 textShoutout:SetPoint("BOTTOMLEFT", child:GetParent(), 0, 10)
+
 end)();
