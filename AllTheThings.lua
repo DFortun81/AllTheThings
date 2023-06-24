@@ -5687,7 +5687,7 @@ app.CheckReferenceCounters = function()
 			tinsert(CUSTOM_HEADERS, { id, 0, " and only exists as an icon..." });
 		end
 	end
-	table.sort(CUSTOM_HEADERS, function(a, b)
+	app.Sort(CUSTOM_HEADERS, function(a, b)
 		return (a[1] or 0) < (b[1] or 0);
 	end);
 	for _,data in ipairs(CUSTOM_HEADERS) do

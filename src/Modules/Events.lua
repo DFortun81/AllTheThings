@@ -143,7 +143,7 @@ setmetatable(EventInformation, { __index = function(t, id)
 			end
 		end
 		if #times > 0 then
-			table.sort(times, function(a, b)
+			app.Sort(times, function(a, b)
 				return a.start < b.start;
 			end);
 			info = { name = times[1].name, icon = times[1].icon, times = times };
