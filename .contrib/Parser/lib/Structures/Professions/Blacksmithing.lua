@@ -228,47 +228,47 @@ TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(34983, {["timeline"]={ADDED_2_0_5,REMOVED_5_0_4}}),	-- Felsteel Whisper Knives
 	}),
 }));
-TBC_ARMORSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
-	r(34533, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Breastplate of Kings
-	r(34534, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Bulwark of Kings
-	r(36257, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Bulwark of the Ancient Kings
-	r(36122, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Earthforged Leggings
-	r(36256, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Embrace of the Twisting Nether
-	r(36129, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Heavy Earthforged Breastplate
-	r(34529, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Nether Chain Shirt
-	r(36130, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Stormforged Hauberk
-	r(34530, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Twisting Nether Chain Shirt
-	r(36124, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Windforged Leggings
+TBC_ARMORSMITHING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3_LAUNCH } }, {
+	r(34533),	-- Breastplate of Kings
+	r(34534),	-- Bulwark of Kings
+	r(36257),	-- Bulwark of the Ancient Kings
+	r(36122),	-- Earthforged Leggings
+	r(36256),	-- Embrace of the Twisting Nether
+	r(36129),	-- Heavy Earthforged Breastplate
+	r(34529),	-- Nether Chain Shirt
+	r(36130),	-- Stormforged Hauberk
+	r(34530),	-- Twisting Nether Chain Shirt
+	r(36124),	-- Windforged Leggings
 }));
-TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
-	r(34542, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Black Planar Edge
-	r(36258, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Blazefury
-	r(34537, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Blazeguard
-	r(36261, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Bloodmoon
-	r(34548, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Deep Thunder
-	r(34546, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Dragonmaw
-	r(36262, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Dragonstrike
-	r(34545, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Drakefist Hammer
-	r(34535, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Fireguard
-	r(36128, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Light Emberforged Hammer
-	r(36126, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Light Skyforged Axe
-	r(34538, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Lionheart Blade
-	r(34540, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Lionheart Champion
-	r(36259, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Lionheart Executioner
-	r(34543, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Lunar Crescent
-	r(34544, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Mooncleaver
-	r(36263, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Stormherald
-	r(34541, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- The Planar Edge
-	r(34547, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Thunder
-	r(36260, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Wicked Edge of the Planes
+TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3_LAUNCH } }, {
+	r(34542),	-- Black Planar Edge
+	r(36258),	-- Blazefury
+	r(34537),	-- Blazeguard
+	r(36261),	-- Bloodmoon
+	r(34548),	-- Deep Thunder
+	r(34546),	-- Dragonmaw
+	r(36262),	-- Dragonstrike
+	r(34545),	-- Drakefist Hammer
+	r(34535),	-- Fireguard
+	r(36128),	-- Light Emberforged Hammer
+	r(36126),	-- Light Skyforged Axe
+	r(34538),	-- Lionheart Blade
+	r(34540),	-- Lionheart Champion
+	r(36259),	-- Lionheart Executioner
+	r(34543),	-- Lunar Crescent
+	r(34544),	-- Mooncleaver
+	r(36263),	-- Stormherald
+	r(34541),	-- The Planar Edge
+	r(34547),	-- Thunder
+	r(36260),	-- Wicked Edge of the Planes
 	-- #if BEFORE 7.1.5
-	r(36137, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Great Earthforged Hammer
-	r(36136, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Lavaforged Warhammer
-	r(36125, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Light Earthforged Blade
-	r(36135, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Skyforged Great Axe
-	r(36133, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Stoneforged Claymore
-	r(36134, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Stormforged Axe
-	r(36131, {["timeline"]={ADDED_2_0_5,REMOVED_4_0_3_LAUNCH}}),	-- Windforged Rapier
+	r(36137),	-- Great Earthforged Hammer
+	r(36136),	-- Lavaforged Warhammer
+	r(36125),	-- Light Earthforged Blade
+	r(36135),	-- Skyforged Great Axe
+	r(36133),	-- Stoneforged Claymore
+	r(36134),	-- Stormforged Axe
+	r(36131),	-- Windforged Rapier
 	-- #endif
 }));
 WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
@@ -390,13 +390,13 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		-- #endif
 	}),
 }));
-WRATH_ARMORSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
-	r(55186, {["timeline"]={ADDED_3_0_3,REMOVED_4_0_3_LAUNCH}}),	-- Chestplate of Conquest
-	r(55187, {["timeline"]={ADDED_3_0_3,REMOVED_4_0_3_LAUNCH}}),	-- Legplates of Conquest
+WRATH_ARMORSMITHING = applyclassicphase(WRATH_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3_LAUNCH } }, {
+	r(55186),	-- Chestplate of Conquest
+	r(55187),	-- Legplates of Conquest
 }));
-WRATH_WEAPONSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
-	r(55183, {["timeline"]={ADDED_3_0_3,REMOVED_4_0_3_LAUNCH}}),	-- Corroded Saronite Edge
-	r(55184, {["timeline"]={ADDED_3_0_3,REMOVED_4_0_3_LAUNCH}}),	-- Corroded Saronite Woundbringer
+WRATH_WEAPONSMITHING = applyclassicphase(WRATH_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3_LAUNCH } }, {
+	r(55183),	-- Corroded Saronite Edge
+	r(55184),	-- Corroded Saronite Woundbringer
 	-- #if BEFORE CATA
 	r(55185),	-- Saronite Mindcrusher
 	-- #endif
@@ -592,29 +592,34 @@ MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] =
 	filter(MISC, {
 		r(126869),	-- Folded Ghost Iron
 		r(122633),	-- Ghostly Skeleton Key
-		r(139753, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Decorative Spoons
-		r(139756, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Barrel
-		r(139763, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Bells
-		r(139762, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Bowls
-		r(139764, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Crate
-		r(139761, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Cups
-		r(140166, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Frames
-		r(139750, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Hook
-		r(139748, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Ladle
-		r(139755, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Needles
-		r(140167, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Pans
-		r(140165, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Picks
-		r(139745, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Pins
-		r(139749, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Poker
-		r(139760, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Pot
-		r(139757, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Saw
-		r(139754, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Spade
-		r(139751, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Spatulas
-		r(140168, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Statue
-		r(139759, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Wire
-		r(139747, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Ghost Iron Wok
-		r(139746, {["timeline"]={ADDED_5_2_0,REMOVED_6_0_3_LAUNCH},["u"]=TRAINING}),	-- Training Project: Simple Eating Utensils
 	}),
+	filter(MISC, sharedData({
+		["timeline"]={ ADDED_5_2_0, REMOVED_6_0_3_LAUNCH },
+		["u"]=TRAINING
+	}, {
+		r(139753),	-- Training Project: Decorative Spoons
+		r(139756),	-- Training Project: Ghost Iron Barrel
+		r(139763),	-- Training Project: Ghost Iron Bells
+		r(139762),	-- Training Project: Ghost Iron Bowls
+		r(139764),	-- Training Project: Ghost Iron Crate
+		r(139761),	-- Training Project: Ghost Iron Cups
+		r(140166),	-- Training Project: Ghost Iron Frames
+		r(139750),	-- Training Project: Ghost Iron Hook
+		r(139748),	-- Training Project: Ghost Iron Ladle
+		r(139755),	-- Training Project: Ghost Iron Needles
+		r(140167),	-- Training Project: Ghost Iron Pans
+		r(140165),	-- Training Project: Ghost Iron Picks
+		r(139745),	-- Training Project: Ghost Iron Pins
+		r(139749),	-- Training Project: Ghost Iron Poker
+		r(139760),	-- Training Project: Ghost Iron Pot
+		r(139757),	-- Training Project: Ghost Iron Saw
+		r(139754),	-- Training Project: Ghost Iron Spade
+		r(139751),	-- Training Project: Ghost Iron Spatulas
+		r(140168),	-- Training Project: Ghost Iron Statue
+		r(139759),	-- Training Project: Ghost Iron Wire
+		r(139747),	-- Training Project: Ghost Iron Wok
+		r(139746),	-- Training Project: Simple Eating Utensils
+	})),
 	n(WEAPONS, {
 		r(122637),	-- Forgewire Axe
 		r(122641),	-- Ghost Shard
@@ -952,7 +957,7 @@ DF_BLACKSMITHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(371395),	-- Serevite Repair Hammer
 		r(371394),	-- Serevite Skeleton Key
 	}),
-	filter(PROF_EQUIP, {
+	filter(PROFESSION_EQUIPMENT, {
 		r(371344),	-- Draconium Blacksmith's Hammer
 		r(371364),	-- Draconium Blacksmith's Toolbox
 		r(371302),	-- Draconium Needle Set
