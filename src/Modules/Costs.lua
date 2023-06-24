@@ -12,7 +12,7 @@ local rawget, ipairs, pairs
 -- App locals
 
 -- Module locals
-local RecursiveGroupRequirementsFilter, SearchForField, GroupFilter;
+local RecursiveGroupRequirementsFilter, SearchForField, GroupFilter, AcctOrDebug;
 -- Ideally never used, but weird situations are possible to cause logic to execute prior to ATT even loading
 local function EmptyFunction() end
 
@@ -69,6 +69,7 @@ local function CheckCollectible(ref)
 		return SubCheckCollectible(ref);
 	end
 end
+app.CheckCollectible = CheckCollectible;
 local function NonAccountCostAllowed(t)
 	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
 	local parent = rawget(t, "parent");
@@ -78,7 +79,146 @@ local function NonAccountCostAllowed(t)
 	end
 	return true;
 end
-app.CheckCollectible = CheckCollectible;
+local function CacheFilters()
+	-- Cache repeat-used functions/values
+	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
+	GroupFilter = app.GroupFilter;
+	SearchForField = app.SearchForField;
+	AcctOrDebug = app.MODE_DEBUG_OR_ACCOUNT;
+end
+local function UpdateCostsByItemID(itemID, refresh, refs)
+	local costs = SearchForField("itemID", itemID);
+	if costs then
+		local costTotal, ref;
+		refs = refs or SearchForField("itemIDAsCost", itemID);
+		for i=1,#refs do
+			ref = refs[i];
+			if CheckCollectible(ref) then
+				costTotal = 1;
+				break;
+			end
+		end
+		local isCost = costTotal and true or nil;
+		-- Iterate on the search result of the entry key
+		if AcctOrDebug then
+			for _,c in ipairs(costs) do
+				-- Mark the group with a costTotal of 1
+				-- app.PrintDebug("Force Cost",c.hash,costTotal)
+				c.costTotal = costTotal;
+				c._CheckCollectible = isCost;
+				c._SettingsRefresh = refresh;
+			end
+		else
+			for _,c in ipairs(costs) do
+				-- Mark the group based on results
+				if NonAccountCostAllowed(c) then
+					-- app.PrintDebug("Force Cost",c.hash,costTotal)
+					c.costTotal = costTotal;
+					c._CheckCollectible = isCost;
+				else
+					-- app.PrintDebug("Drop Cost",c.hash,costTotal)
+					c.costTotal = nil;
+					c._CheckCollectible = nil;
+				end
+				c._SettingsRefresh = refresh;
+			end
+		end
+	-- else app.PrintDebug("ItemID as Cost is not Sourced!",itemID)
+		return costs;
+	end
+end
+local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
+	local costs = SearchForField("currencyID", currencyID);
+	if costs then
+		local costTotal, ref;
+		refs = refs or SearchForField("currencyIDAsCost", currencyID);
+		for i=1,#refs do
+			ref = refs[i];
+			if CheckCollectible(ref) then
+				costTotal = 1;
+				break;
+			end
+		end
+		local isCost = costTotal and true or nil;
+		-- Iterate on the search result of the entry key
+		if AcctOrDebug then
+			for _,c in ipairs(costs) do
+				-- Mark the group with a costTotal of 1
+				-- app.PrintDebug("Force Cost",c.hash,costTotal)
+				c.costTotal = costTotal;
+				c._CheckCollectible = isCost;
+				c._SettingsRefresh = refresh;
+			end
+		else
+			for _,c in ipairs(costs) do
+				-- Mark the group based on results
+				if NonAccountCostAllowed(c) then
+					-- app.PrintDebug("Force Cost",c.hash,costTotal)
+					c.costTotal = costTotal;
+					c._CheckCollectible = isCost;
+				else
+					-- app.PrintDebug("Drop Cost",c.hash,costTotal)
+					c.costTotal = nil;
+					c._CheckCollectible = nil;
+				end
+				c._SettingsRefresh = refresh;
+			end
+		end
+	-- else app.PrintDebug("ItemID as Cost is not Sourced!",itemID)
+		return costs;
+	end
+end
+
+app.UpdateCosts = function()
+	CacheFilters();
+	-- app.PrintDebug("UpdateCosts",app._SettingsRefresh)
+	local refresh = app._SettingsRefresh;
+
+	-- Get all itemIDAsCost entries
+	for itemID,refs in pairs(app.SearchForFieldContainer("itemIDAsCost")) do
+		-- app.PrintDebug("Check Cost Item",itemID)
+		UpdateCostsByItemID(itemID, refresh, refs);
+	end
+	-- app.PrintDebug("UpdateCosts:Items")
+
+	-- Get all currencyIDAsCost entries
+	for currencyID,refs in pairs(app.SearchForFieldContainer("currencyIDAsCost")) do
+		-- app.PrintDebug("Check Cost Curr",currencyID)
+		UpdateCostsByItemID(currencyID, refresh, refs);
+	end
+	-- app.PrintDebug("UpdateCosts:Done",app._SettingsRefresh)
+end
+
+app.UpdateCostGroup = function(c)
+	CacheFilters();
+	-- app.PrintDebug("UpdateCostGroup",c.hash,app._SettingsRefresh)
+	local refresh = app._SettingsRefresh;
+	local costs = c.cost;
+	if costs then
+		-- app.PrintDebug("UpdateCostGroup:cost",#costs)
+		local cost, type, id, groups;
+		local DGU = app.DirectGroupUpdate;
+		local UpdateRunner = app.UpdateRunner;
+		for i=1,#costs do
+			cost = costs[i];
+			type, id = cost[1], cost[2];
+			-- app.PrintDebug("UpdateCostGroup:",type,id)
+			if type == "i" then
+				groups = UpdateCostsByItemID(id, refresh);
+			elseif type == "c" then
+				groups = UpdateCostsByCurrencyID(id, refresh);
+			end
+		end
+		if groups then
+			-- app.PrintDebug("UpdateCostGroup:groups",#groups)
+			for i=1,#groups do
+				UpdateRunner.Run(DGU, groups[i]);
+			end
+		end
+	end
+	-- app.PrintDebug("UpdateCostGroup:Done",c.hash,app._SettingsRefresh)
+end
+
 -- Returns whether 't' should be considered collectible based on the set of costCollectibles already assigned to this 't'
 app.CollectibleAsCost = function(t)
 	local collectibles = t.costCollectibles;
@@ -119,101 +259,4 @@ app.CollectibleAsCost = function(t)
 	end
 	-- app.PrintDebug("CollectibleAsCost:nil",t.hash)
 	t.collectibleAsCost = nil;
-end
-
-app.UpdateCosts = function()
-	-- app.PrintDebug("UpdateCosts",app._SettingsRefresh)
-	-- Cache repeat-used functions/values
-	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
-	GroupFilter = app.GroupFilter;
-	SearchForField = app.SearchForField;
-	local refresh = app._SettingsRefresh;
-
-	-- Get all itemIDAsCost entries
-	-- Foreach entry, if any reference meets CheckCollectible
-	local ref, costs, costTotal, isCost;
-	for itemID,refs in pairs(app.SearchForFieldContainer("itemIDAsCost")) do
-		-- app.PrintDebug("Check Cost Item",itemID)
-		costs = SearchForField("itemID", itemID);
-		if costs then
-			costTotal = nil;
-			for i=1,#refs do
-				ref = refs[i];
-				if CheckCollectible(ref) then
-					costTotal = 1;
-					break;
-				end
-			end
-			isCost = costTotal and true or nil;
-			-- Iterate on the search result of the entry key
-			if app.MODE_DEBUG_OR_ACCOUNT then
-				for _,c in ipairs(costs) do
-					-- Mark the group with a costTotal of 1
-					-- app.PrintDebug("Force Cost",c.hash,costTotal)
-					c.costTotal = costTotal;
-					c._CheckCollectible = isCost;
-					c._SettingsRefresh = refresh;
-				end
-			else
-				for _,c in ipairs(costs) do
-					-- Mark the group based on results
-					if NonAccountCostAllowed(c) then
-						-- app.PrintDebug("Force Cost",c.hash,costTotal)
-						c.costTotal = costTotal;
-						c._CheckCollectible = isCost;
-					else
-						c.costTotal = nil;
-						c._CheckCollectible = nil;
-					end
-					c._SettingsRefresh = refresh;
-				end
-			end
-		-- else app.PrintDebug("ItemID as Cost is not Sourced!",itemID)
-		end
-	end
-	-- app.PrintDebug("UpdateCosts:Items")
-
-	-- Get all currencyIDAsCost entries
-	for currencyID,refs in pairs(app.SearchForFieldContainer("currencyIDAsCost")) do
-		-- app.PrintDebug("Check Cost Curr",currencyID)
-		costs = SearchForField("currencyID", currencyID);
-		if costs then
-			costTotal = nil;
-			for i=1,#refs do
-				ref = refs[i];
-				-- Foreach entry, if any reference meets CheckCollectible
-				if CheckCollectible(ref) then
-					costTotal = 1;
-					break;
-				end
-			end
-			isCost = costTotal and true or nil;
-			-- Iterate on the search result of the entry key
-			if app.MODE_DEBUG_OR_ACCOUNT then
-				for _,c in ipairs(costs) do
-					-- Mark the group with a costTotal of 1
-					-- app.PrintDebug("Force Cost",c.hash,costTotal)
-					c.costTotal = costTotal;
-					c._CheckCollectible = isCost;
-					c._SettingsRefresh = refresh;
-				end
-			else
-				for _,c in ipairs(costs) do
-					-- Mark the group based on results
-					if NonAccountCostAllowed(c) then
-						-- app.PrintDebug("Force Cost",c.hash,costTotal)
-						c.costTotal = costTotal;
-						c._CheckCollectible = isCost;
-					else
-						c.costTotal = nil;
-						c._CheckCollectible = nil;
-					end
-					c._SettingsRefresh = refresh;
-				end
-			end
-		-- else app.PrintDebug("CurrencyID as Cost is not Sourced!",currencyID)
-		end
-	end
-
-	-- app.PrintDebug("UpdateCosts:Done",app._SettingsRefresh)
 end

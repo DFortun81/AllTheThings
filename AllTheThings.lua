@@ -4786,6 +4786,7 @@ local function DeterminePurchaseGroups(group, FillData)
 		if #groups > 0 then
 			group.collectibleAsCost = false;
 			group.filledCost = true;
+			group.costTotal = nil;
 		end
 		return groups;
 	end
@@ -6183,10 +6184,13 @@ local function UpdateSearchResults(searchResults)
 		-- Update all the results within visible windows
 		local hashes = {};
 		local found = {};
+		local Update, UpdateCost = app.DirectGroupUpdate, app.UpdateCostGroup;
 		-- Directly update the Source groups of the search results, and collect their hashes for updates in other windows
 		for _,result in ipairs(searchResults) do
 			hashes[result.hash] = true;
 			tinsert(found, result);
+			-- Make sure any cost data is updated for this specific group since it was updated
+			UpdateCost(result);
 		end
 
 		-- loop through visible ATT windows and collect matching groups
@@ -6202,7 +6206,6 @@ local function UpdateSearchResults(searchResults)
 		end
 
 		-- apply direct updates to all found groups
-		local Update = app.DirectGroupUpdate;
 		-- app.PrintDebug("Updating",#found,"groups")
 		for _,o in ipairs(found) do
 			Update(o, true);
@@ -14209,7 +14212,7 @@ local function UpdateGroup(parent, group)
 		end
 
 		-- Increment the parent group's totals if the group is not ignored for sources
-		if not group.sourceIgnored then
+		if parent and not group.sourceIgnored then
 			parent.total = (parent.total or 0) + group.total;
 			parent.progress = (parent.progress or 0) + group.progress;
 		-- else
@@ -14264,22 +14267,8 @@ local function TopLevelUpdateGroup(group)
 	group.progress = 0;
 	CacheFilterFunctions();
 	-- app.PrintDebug("TLUG",group.hash)
-	local ItemBindFilter = app.ItemBindFilter;
-	if ItemBindFilter ~= app.NoFilter and ItemBindFilter(group) then
-		app.ItemBindFilter = app.NoFilter;
-		UpdateGroups(group, group.g);
-		-- reapply the previous BoE filter
-		app.ItemBindFilter = ItemBindFilter;
-	else
-		UpdateGroups(group, group.g);
-	end
-	if group.collectible then
-		group.total = group.total + 1;
-		if group.collected then
-			group.progress = group.progress + 1;
-		end
-	end
 	if group.OnUpdate then group.OnUpdate(group); end
+	UpdateGroup(nil, group);
 	-- app.PrintDebugPrior("TLUG",group.hash)
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup;
