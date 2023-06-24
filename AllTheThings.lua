@@ -2076,7 +2076,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 		-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check, or character in party sync
 		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed or app.IsInPartySync) and true;
 		-- not missing pre-requisites
-		local metPrereq = not questRef.missingPrequisites;
+		local metPrereq = not questRef.missingReqs;
 		if not (
 			filter
 			and inGame
@@ -2243,7 +2243,7 @@ app.SourceQuestString = function(quest)
 		end
 	end
 	if quest then
-		if quest.missingPrequisites or quest.prereqs then
+		if quest.missingReqs or quest.prereqs then
 			local info = {};
 			for sq,c in pairs(quest.prereqs) do
 				tinsert(info, sq);
@@ -7842,7 +7842,7 @@ local questFields = {
 			end
 		end
 	end,
-	["missingPrequisites"] = function(t)
+	["missingReqs"] = function(t)
 		local sourceQuests = t.sourceQuests;
 		if sourceQuests and #sourceQuests > 0 then
 			local sq, filter, onQuest;
