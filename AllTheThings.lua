@@ -18128,7 +18128,7 @@ function app:GetDataCache()
 		elseif b.achievementCategoryID then
 			return false;
 		end
-		return sortByNameSafely(a, b);
+		return app.SortDefaults.Name(a, b);
 	end;
 	achievementsCategory.OnUpdate = function(self)
 		local categories = {};
