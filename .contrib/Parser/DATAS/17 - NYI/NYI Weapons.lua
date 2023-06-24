@@ -43,7 +43,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			}),
 		}),
-		filter(PROF_EQUIP, {	-- Fishing Poles
+		filter(PROFESSION_EQUIPMENT, {
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(199898),	-- Iskaara Fishing Pole

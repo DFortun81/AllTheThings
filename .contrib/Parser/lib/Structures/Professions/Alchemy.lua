@@ -1,7 +1,7 @@
 -------------
 -- ALCHEMY --
 -------------
-SL_ALCHEMY = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_ALCHEMY = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309822),	-- Shadowlands Alchemy
 	cat(1303, {	-- Anti-Venoms
 		r(307100),	-- Spiritual Anti-Venom
@@ -55,4 +55,19 @@ SL_ALCHEMY = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] 
 		r(344316),	-- Potion of the Psychopomp's Speed
 		r(342887),	-- Potion of Unhindered Passing
 	}),
+}));
+DF_ALCHEMY = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	r(366261),	-- Dragon Isles Alchemy
+	r(370547),	-- Aerated Mana Potion
+	r(370746),	-- Basic Phial Experimentation
+	r(370743),	-- Basic Potion Experimentation
+	r(370551),	-- Elemental Potion of Power
+	r(370722),	-- Omnium Draconis
+	r(370465),	-- Phial of Tepid Versatility
+	r(370717),	-- Primal Convergent
+	r(370748),	-- Reclaim Concoctions
+	r(389190),	-- Recraft Equipment
+	r(370539),	-- Refreshing Healing Potion
+	r(370711),	-- Transmute: Awakened Air
+	r(370731),	-- Writhefire Oil
 }));
