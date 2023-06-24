@@ -2018,6 +2018,17 @@ headerGeneralThings.OnRefresh = function(self)
 	else
 		self:SetAlpha(1)
 	end
+
+	-- Halloween Easter Egg
+	C_Calendar.OpenCalendar()
+    local date = C_DateAndTime.GetCurrentCalendarTime()
+    local numEvents = C_Calendar.GetNumDayEvents(0, date.monthDay)
+    for i=1, numEvents do
+        local event = C_Calendar.GetHolidayInfo(0, date.monthDay, i)
+        if event and (event.texture == 235461 or event.texture == 235462) then -- Non-localised way to detect specific holiday
+            self:SetText(L["STRANGER_THINGS_LABEL"])
+        end
+    end
 end
 
 local accwideCheckboxAchievements = child:CreateAccountWideCheckbox("ACHIEVEMENTS", "Achievements")
@@ -2106,21 +2117,9 @@ accwideCheckboxDrakewatcherManuscripts:AlignBelow(accwideCheckboxRunecarvingPowe
 local checkboxDrakewatcherManuscripts = child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
 checkboxDrakewatcherManuscripts:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
 
-local headerAdditionalThings = child:CreateHeaderLabel(L["EXTRA_THINGS_LABEL"])
-headerAdditionalThings:SetPoint("LEFT", headerMode, 0, 0)
-headerAdditionalThings:SetPoint("TOP", checkboxDrakewatcherManuscripts, "BOTTOM", 0, -10)
--- Halloween Easter Egg
-headerAdditionalThings.OnRefresh = function(self)
-    C_Calendar.OpenCalendar()
-    local date = C_DateAndTime.GetCurrentCalendarTime()
-    local numEvents = C_Calendar.GetNumDayEvents(0, date.monthDay)
-    for i=1, numEvents do
-        local event = C_Calendar.GetHolidayInfo(0, date.monthDay, i)
-        if event and (event.texture == 235461 or event.texture == 235462) then -- Non-localised way to detect specific holiday
-            self:SetText(L["STRANGER_THINGS_LABEL"])
-        end
-    end
-end
+local headerAdditionalResources = child:CreateHeaderLabel(L["EXTRA_THINGS_LABEL"])
+headerAdditionalResources:SetPoint("LEFT", headerMode, 0, 0)
+headerAdditionalResources:SetPoint("TOP", checkboxDrakewatcherManuscripts, "BOTTOM", 0, -10)
 
 local checkboxCollectRepeatableQuests = child:CreateCheckBox(L["SHOW_REPEATABLE_THINGS_CHECKBOX"],
 function(self)
@@ -2138,7 +2137,7 @@ function(self)
 	settings:UpdateMode(1)
 end)
 checkboxCollectRepeatableQuests:SetATTTooltip(L["SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP"])
-checkboxCollectRepeatableQuests:SetPoint("TOPLEFT", headerAdditionalThings, "BOTTOMLEFT", -2, 0)
+checkboxCollectRepeatableQuests:SetPoint("TOPLEFT", headerAdditionalResources, "BOTTOMLEFT", -2, 0)
 
 local checkboxCollectRepeatableQuestsFirstTimeOnly = child:CreateCheckBox(L["FIRST_TIME_CHECKBOX"],
 function(self)
