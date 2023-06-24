@@ -329,7 +329,7 @@ app.L = {
 				["MODE"] = "Mode";
 				["TITLE_COMPLETIONIST"] = "Completionist ";
 				["TITLE_UNIQUE_APPEARANCE"] = "Unique ";
-				["TITLE_DEBUG"] = "Debug ";
+				["TITLE_DEBUG"] = app.ccColors.Warning .. "Debug|R ";
 				["TITLE_ACCOUNT"] = app.ccColors.Account .. "Account|R ";
 				["TITLE_ALLIANCE"] = app.ccColors.Alliance .. FACTION_ALLIANCE .. "|R";
 				["TITLE_HORDE"] = app.ccColors.Horde .. FACTION_HORDE .. "|R";
@@ -353,7 +353,7 @@ app.L = {
 	["PATREON_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
 	["MERCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
 	["MODE_EXPLAIN_LABEL"] = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-	["DEBUG_MODE"] = "|Cffff0000Debug Mode|r (Show Everything)";
+	["DEBUG_MODE"] = app.ccColors.Warning.."Debug Mode|r (Show Everything)";
 	["DEBUG_MODE_TOOLTIP"] = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
 	["COMPLETIONIST_MODE"] = "+Sources";
 	["COMPLETIONIST_MODE_TOOLTIP"] = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
@@ -575,7 +575,6 @@ app.L = {
 	["ADDITIONAL_LABEL"] = "Additional Information";
 
 	-- Features tab
-	["ADVANCED_PAGE"] = "Advanced";
 	["MINIMAP_LABEL"] = "Minimap Button";
 	["MODULES_LABEL"] = "Modules & Mini Lists";
 	["REPORTING_LABEL"] = "Reporting";

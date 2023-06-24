@@ -260,7 +260,7 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 			L.MODE = "Режим";
 			L.TITLE_COMPLETIONIST = "Коллекционер ";
 			L.TITLE_UNIQUE_APPEARANCE = "Уникальный ";
-			L.TITLE_DEBUG = "Отладка ";
+			L.TITLE_DEBUG = app.ccColors.Warning .. "Отладка|R ";
 			L.TITLE_ACCOUNT = app.ccColors.Account.."Учётная Запись|R ";
 			L.TITLE_MAIN_ONLY = " (Основной Персонаж)";
 			L.TITLE_NONE_THINGS = "Без Штучек ";
@@ -278,7 +278,7 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.PATREON_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать ссылку на Patreon All The Things.\n\nТам вы можете поддержать аддон финансово!";
 		L.MERCH_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать ссылку на магазин мерчендайза All The Things.\n\nТам вы можете поддержать аддон финансово и получить за это крутой мерч!";
 		L.MODE_EXPLAIN_LABEL = "|cffFFFFFFЗдесь кратко изложено то, что Вы собираете. Включите все "..app.ccColors.Insane.."цветные параметры|cffFFFFFF, чтобы разблокировать "..app.ccColors.Insane.."Безумный Режим|cffFFFFFF.";	-- "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		L.DEBUG_MODE = "|Cffff0000Режим Отладки|r (Показать Всё)";
+		L.DEBUG_MODE = app.ccColors.Warning.."Режим Отладки|r (Показать Всё)";
 		L.DEBUG_MODE_TOOLTIP = "Буквально... ВСЕ ШТУКИ В ИГРЕ. ОКОНЧАТЕЛЬНО. ТОЧКА. АГА, ВСЕ ОНИ. Даже Несобираемые штуки, как сумки, расходуемые, реагенты и прочие, появятся в списках. (Даже Вы сами! Нет, серьёзно. Смотрите.)\n\nДанный режим только для отладки. Не предназначен для отслеживания выполнения.\n\nЭтот режим игнорирует все фильтры, включая Несобираемые.";
 		L.COMPLETIONIST_MODE = "+Источники";
 		L.COMPLETIONIST_MODE_TOOLTIP = "Включите данный режим, чтобы считать все Предметы Собранными только тогда, когда определённый Предмет был открыт для данного Облика.\n\nЭто означает, что Вы должны получить каждый общий Облик для Предмета.\n\nПримечание: По умолчанию, игра перестаёт сообщать Вам о Предметах, которые Вы собрали после получения общего Источника, поэтому данный режим позволит отслеживать несобранные Предметы.";
@@ -474,7 +474,6 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.ADDITIONAL_LABEL = "Дополнительная Информация";
 
 	-- Features tab
-		--TODO: L.ADVANCED_PAGE = "Advanced";
 		L.MINIMAP_LABEL = "Кнопка у Миникарты";
 		L.MODULES_LABEL = "Модули и Мини Списки";
 		L.REPORTING_LABEL = "Сообщения";

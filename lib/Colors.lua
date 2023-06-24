@@ -17,6 +17,7 @@ app.Colors = {
 	ChatLinkError = "ffff5c6c",
 	ChatLinkHQT = "ff7aff92",
 	ChatLink = "ff149bfd",
+	Default = "ffEDBD21",	-- The "default" yellow colour of text labels, in some rare cases this needs to be referenced
 	TooltipDescription = "ff66ccff",
 	TooltipLore = "ff42a7eb",
 	DefaultDifficulty = "ff1eff00",
@@ -28,9 +29,9 @@ app.Colors = {
 	TimeUnder2Hr = "ffffff00",
 	Time = "ff008000",
 	-- Settings
-	Insane = "ffCC79A7",
 	Account = "ff00CCFF",
-	Default = "ffEDBD21",	-- The "default" yellow colour of text labels, in some rare cases this needs to be referenced
+	Insane = "ffCC79A7",
+	Warning = "ffFF0000",
 };
 
 app.ccColors = {};
@@ -67,17 +68,4 @@ end;
 
 -- Title				#B4B4FF
 -- Header				#FFD100
--- Text					#FFFFFF
--- Warning				#FF0000
-
 -- Raid					#FF8000		Chat raid color:	#FF7D01
--- Source ignored		#D15517
--- Locked warning		#D15517
--- Locked quest			#7F40BF
--- Completed			#15ABFF
--- Chat link error		#FF5C6C
--- Chat link HQT		#7AFF92
--- Chat link			#149BFD
--- Tooltip description	#66CCFF
--- Default difficulty	#1EFF00
--- Removed with patch	#FFAAAA

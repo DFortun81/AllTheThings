@@ -259,7 +259,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 			L.MODE = "模式";
 			L.TITLE_COMPLETIONIST = "完美主义 ";
 			L.TITLE_UNIQUE_APPEARANCE = "独特外观 ";
-			L.TITLE_DEBUG = "调试 ";
+			L.TITLE_DEBUG = app.ccColors.Warning .. "调试|R ";
 			L.TITLE_ACCOUNT = app.ccColors.Account.."帐号|R ";
 			L.TITLE_MAIN_ONLY = " （仅主要）";
 			L.TITLE_NONE_THINGS = "一无所有 ";
@@ -277,7 +277,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.PATREON_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things Patreon 页面。\n\n在这里您可以看到如何在经济上支持插件！";
 		L.MERCH_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things 商店。\n\n在这里您可以在经济上支持插件并获得一些很酷的商品作为回报！ ";
 		L.MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的内容汇总在这里。启用所有 "..app.ccColors.Insane.."彩色选项|cffFFFFFF 解锁 "..app.ccColors.Insane.."疯狂模式|cffFFFFFF。";	-- "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		L.DEBUG_MODE = "|Cffff0000调试模式|r（显示所有）";
+		L.DEBUG_MODE = app.ccColors.Warning.."调试模式|r（显示所有）";
 		L.DEBUG_MODE_TOOLTIP = "就字面意思…游戏中的所有事情。时间。点滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、试剂等也会出现在列表中。（甚至你自己！不，是真的。看。）\n\n这仅用于调试目的。不用于完成追踪。\n\n此模式绕过所有过滤，包括不可获得的。";
 		L.COMPLETIONIST_MODE = "+来源";
 		L.COMPLETIONIST_MODE_TOOLTIP = "启用该模式，只有当特定物品已被解锁为给定外观时才将物品视为已收藏。\n\n这意味着你需要收藏物品的每一个共享外观。\n\n注意：默认情况下一旦你收藏了共享来源，游戏就会停止告诉你未收藏的物品，这将确保未收藏的物品会被追踪。";
@@ -471,7 +471,6 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.ADDITIONAL_LABEL = "附加信息";
 
 	-- Features tab
-		--TODO: L.ADVANCED_PAGE = "Advanced";
 		L.MINIMAP_LABEL = "小地图按钮";
 		L.MODULES_LABEL = "模块和小列表";
 		L.REPORTING_LABEL = "报告";

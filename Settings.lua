@@ -707,7 +707,7 @@ end
 local OnRefreshCheckedDisabled = function(self)
 	self:SetChecked(true)
 	self:Disable()
-	self:SetAlpha(0.2)
+	self:SetAlpha(0.4)
 end
 -- Performs SetPoint anchoring against the 'other' frame to align this Checkbox below it. Allows an 'indent' which defines how many steps of indentation to
 -- apply either positive (right) or negative (left), or specifying another frame against which to LEFT-align
@@ -1455,7 +1455,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("MinimapStyle"))
 	if not settings:GetTooltipSetting("MinimapButton") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -1497,7 +1497,7 @@ end)
 sliderMinimapButtonSize.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("MinimapButton") or settings:GetTooltipSetting("MinimapStyle") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -1599,7 +1599,7 @@ local checkboxShowAHModule = child:CreateCheckBox(L["AUCTION_TAB_CHECKBOX"],
 function(self)
 	self:SetChecked(false)
 	self:Disable()
-	self:SetAlpha(0.2)
+	self:SetAlpha(0.4)
 	-- self:SetChecked(settings:GetTooltipSetting("Auto:AH"))
 end,
 function(self)
@@ -1696,7 +1696,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:UnsortedQuests"))
 	if not settings:GetTooltipSetting("Report:CompletedQuests") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -1788,7 +1788,7 @@ child.CreateTrackingCheckbox = function(frame, localeKey, thing, parentThing)
 			self:SetChecked(settings:Get(trackingOption))
 			if settings:Get("DebugMode") or (parentTrackingOption and not settings:Get(parentTrackingOption)) then
 				self:Disable()
-				self:SetAlpha(0.2)
+				self:SetAlpha(0.4)
 			else
 				self:Enable()
 				self:SetAlpha(1)
@@ -1822,7 +1822,7 @@ child.CreateAccountWideCheckbox = function(frame, localeKey, thing)
 			self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get(accountWideOption))
 			if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get(trackingOption) then
 				self:Disable()
-				self:SetAlpha(0.2)
+				self:SetAlpha(0.4)
 			else
 				self:Enable()
 				self:SetAlpha(1)
@@ -1855,7 +1855,7 @@ function(self)
 	self:SetChecked(settings:Get("AccountMode"))
 	if settings:Get("DebugMode") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -1880,7 +1880,7 @@ function(self)
 	self:SetChecked(settings:Get("FactionMode"))
 	if settings:Get("DebugMode") or not settings:Get("AccountMode") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -1909,7 +1909,7 @@ headerAccountThings:SetPoint("LEFT", headerMode, 0, 0)
 headerAccountThings:SetPoint("TOP", checkboxAccountMode, "BOTTOM", 0, -10)
 headerAccountThings.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
 	end
@@ -1923,7 +1923,7 @@ function(self)
 	self:SetChecked(settings:Get("Thing:Transmog"))
 	if settings:Get("DebugMode") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -1944,7 +1944,7 @@ function(self)
 	self:SetChecked(settings:Get("Completionist"))
 	if not settings:Get("Thing:Transmog") and not settings:Get("DebugMode") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -1964,7 +1964,7 @@ function(self)
 	self:SetChecked(settings:Get("MainOnly"))
 	if settings:Get("Completionist") or settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2014,7 +2014,7 @@ headerGeneralThings:SetPoint("LEFT", headerMode, 0, 0)
 headerGeneralThings:SetPoint("TOP", accwideCheckboxToys, "BOTTOM", 0, -10)
 headerGeneralThings.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
 	end
@@ -2070,7 +2070,7 @@ headerExpansionThings:SetPoint("LEFT", headerMode, 0, 0)
 headerExpansionThings:SetPoint("TOP", checkboxTitles, "BOTTOM", 0, -10)
 headerExpansionThings.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
 	end
@@ -2127,7 +2127,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Repeatable"))
 	if not settings:Get("Thing:Quests") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2145,7 +2145,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("RepeatableFirstTime"))
 	if not settings:Get("Thing:Quests") or not settings:GetTooltipSetting("Repeatable") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2158,6 +2158,35 @@ end)
 checkboxCollectRepeatableQuestsFirstTimeOnly:SetATTTooltip(L["FIRST_TIME_CHECKBOX_TOOLTIP"])
 checkboxCollectRepeatableQuestsFirstTimeOnly:AlignBelow(checkboxCollectRepeatableQuests, 1)
 
+local checkboxShowAllTrackableThings = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Show:TrackableThings"))
+	if settings:Get("DebugMode") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:Set("Show:TrackableThings", self:GetChecked())
+	settings:UpdateMode(1)
+end)
+checkboxShowAllTrackableThings:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"])
+checkboxShowAllTrackableThings:AlignBelow(checkboxCollectRepeatableQuestsFirstTimeOnly, -1)
+
+
+local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
+function(self)
+	self:SetChecked(settings:Get("DebugMode"))
+end,
+function(self)
+	settings:SetDebugMode(self:GetChecked())
+end)
+checkboxDebugMode:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"])
+checkboxDebugMode:AlignBelow(checkboxShowAllTrackableThings)
+
 -- Column 2
 local headerGeneralContent = child:CreateHeaderLabel(L["GENERAL_CONTENT"])
 headerGeneralContent:SetPoint("TOPLEFT", headerAccountThings, 320, 0)
@@ -2167,7 +2196,7 @@ function(self)
 	self:SetChecked(not settings:Get("Hide:BoEs"))	-- Inversed, so enabled = show
 	if settings:Get("DebugMode") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2184,7 +2213,7 @@ function(self)
 	self:SetChecked(settings:Get("Filter:BoEs"))
 	if settings:Get("Hide:BoEs") or settings:Get("DebugMode") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2202,7 +2231,7 @@ function(self)
 	self:SetChecked(not settings:Get("Filter:ByLevel"))	-- Inversed, so enabled = show
 	if settings:Get("DebugMode") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2220,7 +2249,7 @@ local checkboxNoSeasonalFilter = child:CreateCheckBox(L["SHOW_ALL_SEASONAL"],
 		self:SetChecked(not settings:Get("Show:OnlyActiveEvents"))	-- Inversed, so enabled = show
 		if settings:Get("DebugMode") then
 			self:Disable()
-			self:SetAlpha(0.2)
+			self:SetAlpha(0.4)
 		else
 			self:Enable()
 			self:SetAlpha(1)
@@ -2239,7 +2268,7 @@ function(self)
 	self:SetChecked(settings:Get("Show:PetBattles"))
 	if settings:Get("DebugMode") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2257,7 +2286,7 @@ function(self)
 	self:SetChecked(not settings:Get("Hide:PvP"))	-- Inversed, so enabled = show
 	if settings:Get("DebugMode") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2333,7 +2362,7 @@ textAutomatedContentExplain:SetWidth(320)
 				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]))
 			self:SetChecked(automatic or settings:Get(filterID))
 			if automatic then
-				self:SetAlpha(0.2)
+				self:SetAlpha(0.4)
 			else
 				self:Enable()
 				self:SetAlpha(1)
@@ -2508,7 +2537,7 @@ end
 local ItemFilterOnRefresh = function(self)
 	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:SetChecked(settings:GetFilter(self.filterID))
 		self:Enable()
@@ -2707,7 +2736,7 @@ local textTooltipModifier = child:CreateTextLabel("|cffFFFFFF"..L["TOOLTIP_MOD_L
 textTooltipModifier:SetPoint("TOPLEFT", checkboxEnableTooltipIntegrations.Text, "TOPRIGHT", 15, 0)
 textTooltipModifier.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") then
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
 	end
@@ -2718,7 +2747,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "None")
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2741,7 +2770,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Shift")
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2764,7 +2793,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Ctrl")
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2787,7 +2816,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Alt")
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2811,7 +2840,7 @@ checkboxTooltipModifierAlt:AlignAfter(checkboxTooltipModifierCtrl)
 			self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Cmd")
 			if not settings:GetTooltipSetting("Enabled") then
 				self:Disable()
-				self:SetAlpha(0.2)
+				self:SetAlpha(0.4)
 			else
 				self:Enable()
 				self:SetAlpha(1)
@@ -2835,7 +2864,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("DisplayInCombat"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2852,7 +2881,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("SummarizeThings"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2892,7 +2921,7 @@ end)
 sliderSummarizeThings.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2904,7 +2933,7 @@ textTooltipShownInfo:SetPoint("TOP", sliderSummarizeThings, "BOTTOM", 0, -15)
 textTooltipShownInfo:SetPoint("LEFT", headerTooltips, "LEFT", 0, 0)
 textTooltipShownInfo.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") then
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
 	end
@@ -2915,7 +2944,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Progress"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2933,7 +2962,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("ShowIconOnly"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("Progress") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2950,7 +2979,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2967,7 +2996,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("ProfessionRequirements"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -2984,7 +3013,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("LevelRequirements"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3001,7 +3030,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3018,7 +3047,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("RaceRequirements"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3035,7 +3064,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3052,7 +3081,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("DropChances"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3069,7 +3098,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Coordinates"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3086,7 +3115,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Descriptions"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3103,7 +3132,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Lore"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3120,7 +3149,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Models"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3137,7 +3166,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Currencies"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3154,7 +3183,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3171,7 +3200,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("IncludeOriginalSource"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3188,7 +3217,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3205,7 +3234,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("CompletedBy"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3222,7 +3251,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations"))
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3262,7 +3291,7 @@ end)
 sliderSourceLocations.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3274,7 +3303,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Completed"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3292,7 +3321,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Creatures"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3309,7 +3338,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Things"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3326,7 +3355,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Unsorted"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3343,7 +3372,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Wrapping"))
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3354,6 +3383,68 @@ function(self)
 end)
 checkboxAllowWrapping:SetATTTooltip(L["WITH_WRAPPING_CHECKBOX_TOOLTIP"])
 checkboxAllowWrapping:AlignBelow(checkboxUnsorted)
+
+local headerAdditionalInformation = child:CreateHeaderLabel(L["ADDITIONAL_LABEL"])
+headerAdditionalInformation:SetPoint("LEFT", headerTooltips, 0, 0)
+headerAdditionalInformation:SetPoint("TOP", checkboxCurrencyCalculation, "BOTTOM", 0, -10)
+
+local ids = {
+	["achievementID"] = "Achievement ID",
+	["achievementCategoryID"] = "Achievement Category ID",
+	["artifactID"] = "Artifact ID",
+	["azeriteEssenceID"] = "Azerite Essence ID",
+	["bonusID"] = "Bonus ID",
+	["creatureID"] = "Creature ID",
+	["creatures"] = "Creatures List",
+	["currencyID"] = "Currency ID",
+	["difficultyID"] = "Difficulty ID",
+	["displayID"] = "Display ID",
+	["encounterID"] = "Encounter ID",
+	["factionID"] = "Faction ID",
+	["filterID"] = "Filter ID",
+	["flightPathID"] = "Flight Path ID",
+	["followerID"] = "Follower ID",
+	["headerID"] = "Header ID",
+	["iconPath"] = "Icon Path",
+	["illusionID"] = "Illusion ID",
+	["instanceID"] = "Instance ID",
+	["itemID"] = "Item ID",
+	["itemString"] = "Item String",
+	["mapID"] = "Map ID",
+	["modID"] = "Mod ID",
+	["objectID"] = "Object ID",
+	["questID"] = "Quest ID",
+	["QuestGivers"] = "Quest Givers",
+	["sourceID"] = "Source ID",
+	["speciesID"] = "Species ID",
+	["spellID"] = "Spell ID",
+	["tierID"] = "Tier ID",
+	["titleID"] = "Title ID",
+	["visualID"] = "Visual ID",
+}
+local last = nil
+local idNo = 1
+for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID", "difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","headerID","iconPath","illusionID","instanceID","itemID","itemString","mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
+	local filter = child:CreateCheckBox(ids[id],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting(id))
+	end,
+	function(self)
+		settings:SetTooltipSetting(id, self:GetChecked())
+		settings:Refresh()
+	end)
+	if idNo == 1 then
+		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
+	elseif idNo == 12 then
+		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
+	elseif idNo == 23 then
+		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
+	else
+		filter:AlignBelow(last)
+	end
+	idNo = idNo + 1
+	last = filter
+end
 
 -- Column 2
 local headerListBehavior = child:CreateHeaderLabel(L["BEHAVIOR_LABEL"])
@@ -3563,7 +3654,7 @@ end)
 sliderPercentagePrecision.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Show:Percentage") then
 		self:Disable()
-		self:SetAlpha(0.2)
+		self:SetAlpha(0.4)
 	else
 		self:Enable()
 		self:SetAlpha(1)
@@ -3646,124 +3737,6 @@ function(self)
 end)
 DynamicCategoryNestedCheckbox:AlignAfter(DynamicCategorySimpleCheckbox)
 DynamicCategoryNestedCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
-
-end)();
-
----------------------
--- "Advanced" page --
----------------------
-
--- SETUP
-(function()
--- Create the page
-local child = settings:CreateOptionsPage(L["ADVANCED_PAGE"], true)
-
--- CONTENT
-
--- Column 1
-local headerAdvanced = child:CreateHeaderLabel(L["ADVANCED_PAGE"])
-headerAdvanced:SetPoint("TOPLEFT", child, 0, 0)
-
-local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
-function(self)
-	self:SetChecked(settings:Get("DebugMode"))
-end,
-function(self)
-	settings:SetDebugMode(self:GetChecked())
-end)
-checkboxDebugMode:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"])
-checkboxDebugMode:SetPoint("TOPLEFT", headerAdvanced, "BOTTOMLEFT", -2, 0)
-
-local checkboxShowAllTrackableThings = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Show:TrackableThings"))
-	if settings:Get("DebugMode") then
-		self:Disable()
-		self:SetAlpha(0.2)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:Set("Show:TrackableThings", self:GetChecked())
-	settings:UpdateMode(1)
-end)
-checkboxShowAllTrackableThings:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"])
-checkboxShowAllTrackableThings:AlignBelow(checkboxDebugMode)
-
--- Column 2
-local headerAdditionalInformation = child:CreateHeaderLabel(L["ADDITIONAL_LABEL"])
-headerAdditionalInformation:SetPoint("TOPLEFT", headerAdvanced, 320, 0)
-
-local ids = {
-	["achievementID"] = "Achievement ID",
-	["achievementCategoryID"] = "Achievement Category ID",
-	["artifactID"] = "Artifact ID",
-	["azeriteEssenceID"] = "Azerite Essence ID",
-	["bonusID"] = "Bonus ID",
-	["creatureID"] = "Creature ID",
-	["creatures"] = "Creatures List",
-	["currencyID"] = "Currency ID",
-	["difficultyID"] = "Difficulty ID",
-	["displayID"] = "Display ID",
-	["encounterID"] = "Encounter ID",
-	["factionID"] = "Faction ID",
-	["filterID"] = "Filter ID",
-	["flightPathID"] = "Flight Path ID",
-	["followerID"] = "Follower ID",
-	["headerID"] = "Header ID",
-	["iconPath"] = "Icon Path",
-	["illusionID"] = "Illusion ID",
-	["instanceID"] = "Instance ID",
-	["itemID"] = "Item ID",
-	["itemString"] = "Item String",
-	["mapID"] = "Map ID",
-	["modID"] = "Mod ID",
-	["objectID"] = "Object ID",
-	["questID"] = "Quest ID",
-	["QuestGivers"] = "Quest Givers",
-	["sourceID"] = "Source ID",
-	["speciesID"] = "Species ID",
-	["spellID"] = "Spell ID",
-	["tierID"] = "Tier ID",
-	["titleID"] = "Title ID",
-	["visualID"] = "Visual ID",
-}
-local last = nil
-for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","headerID"}) do
-	local filter = child:CreateCheckBox(ids[id],
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting(id))
-	end,
-	function(self)
-		settings:SetTooltipSetting(id, self:GetChecked())
-		settings:Refresh()
-	end)
-	if not last then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
-	else
-		filter:AlignBelow(last)
-	end
-	last = filter
-end
-last = nil
-for _,id in pairs({"iconPath","illusionID","instanceID","itemID","itemString","mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
-	local filter = child:CreateCheckBox(ids[id],
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting(id))
-	end,
-	function(self)
-		settings:SetTooltipSetting(id, self:GetChecked())
-		settings:Refresh()
-	end)
-	if not last then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 164, 0)
-	else
-		filter:AlignBelow(last)
-	end
-	last = filter
-end
 
 end)();
 

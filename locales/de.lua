@@ -259,7 +259,7 @@ ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TO
 			L.MODE = "Modus";
 			L.TITLE_COMPLETIONIST = "Vervollständiger ";
 			L.TITLE_UNIQUE_APPEARANCE = "Einzigartig ";
-			L.TITLE_DEBUG = "Debug ";
+			L.TITLE_DEBUG = app.ccColors.Warning .. "Debug|R ";
 			L.TITLE_ACCOUNT = app.ccColors.Account.."Account|R ";
 			L.TITLE_MAIN_ONLY = " (Nur Hauptcharakter)";
 			L.TITLE_NONE_THINGS = "Keins der Dinge ";
@@ -277,7 +277,7 @@ ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TO
 		L.PATREON_BUTTON_TOOLTIP = "Klicke auf diese Schaltfläche, um den Link für das ATT Patreon zu kopieren.\n\nHier könnt Ihr sehen, wie Ihr das Addon Finanziell unterstützen könnt!";
 		--TODO: L.MERCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
 		--TODO: L.MODE_EXPLAIN_LABEL = 	"|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		L.DEBUG_MODE = "|Cffff0000Debug Mode|r (Zeig alles)";
+		L.DEBUG_MODE = app.ccColors.Warning.."Debug Modus|r (Zeig alles)";
 		--TODO: L.DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
 		L.COMPLETIONIST_MODE = "+Quellen";
 		--TODO: L.COMPLETIONIST_MODE_TOOLTIP = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
@@ -472,7 +472,6 @@ ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TO
 		L.ADDITIONAL_LABEL = "Zusätzliche Information";
 
 	-- Features tab
-		--TODO: L.ADVANCED_PAGE = "Advanced";
 		L.MINIMAP_LABEL = "Minimap Knopf";
 		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
 		--TODO: L.REPORTING_LABEL = "Reporting";
