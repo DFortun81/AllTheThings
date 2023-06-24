@@ -3682,24 +3682,36 @@ app.FillSymlinkAsync = function(o)
 end
 end	-- Symlink Lib
 
+-- Search Results Lib
+local GetCachedSearchResults;
+do
+local ContainsLimit, ContainsExceeded;
 local function BuildContainsInfo(item, entries, indent, layer)
-	if item and item.g then
-		for i,group in ipairs(item.g) do
+	local g = item and item.g;
+	if g then
+		local Indicator, sub = app.GetIndicatorIcon, string.sub;
+		for _,group in ipairs(g) do
 			-- If there's progress to display, then let's summarize a bit better.
 			if group.visible then
+				-- Count it, but don't actually add it to entries if it meets the limit
+				if #entries >= ContainsLimit then
+					ContainsExceeded = ContainsExceeded + 1;
+				else
 				-- Insert into the display.
 				-- app.PrintDebug("INCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
 				local o = { group = group, right = GetProgressTextForRow(group) };
-				local indicator = app.GetIndicatorIcon(group);
-				o.prefix = indicator and (string.sub(indent, 4) .. "|T" .. indicator .. ":0|t ") or indent;
+				local indicator = Indicator(group);
+				o.prefix = indicator and (sub(indent, 4) .. "|T" .. indicator .. ":0|t ") or indent;
 				tinsert(entries, o);
+				end
 
 				-- Only go down one more level.
 				if layer < 4
 					-- if there are sub groups
 					and group.g and #group.g > 0
 					-- not for things with a parent unless the parent has no difficultyID
-					and (not group.parent or not group.parent.difficultyID)
+					-- and (not group.parent or not group.parent.difficultyID)
+					-- not sure what situation this logic was expecting to prevent... bosses within difficulties it seems, which isn't wanted...
 					then
 					BuildContainsInfo(group, entries, indent .. "  ", layer + 1);
 				end
@@ -3710,7 +3722,7 @@ local function BuildContainsInfo(item, entries, indent, layer)
 	end
 end
 -- Fields on groups which can be utilized in tooltips to show additional Source location info for that group (by order of priority)
-app.TooltipSourceFields = {
+local TooltipSourceFields = {
 	"professionID",
 	"mapID",
 	"maps",
@@ -3718,7 +3730,7 @@ app.TooltipSourceFields = {
 	"npcID",
 	"questID"
 };
-local function GetCachedSearchResults(search, method, paramA, paramB, ...)
+GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 	-- app.PrintDebug("GetCachedSearchResults",search,method,paramA,paramB,...)
 	if IsRetrieving(search) then return; end
 	local cache = searchCache[search];
@@ -3751,13 +3763,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if paramA == "creatureID" or paramA == "encounterID" then
 		if group and #group > 0 then
 			local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (paramA == "encounterID" and EJ_GetDifficulty()) or 0;
-			-- print("difficultyID",difficultyID,"params",paramA,paramB)
+			-- app.PrintDebug("difficultyID",difficultyID,"params",paramA,paramB)
 			if difficultyID > 0 then
 				local subgroup = {};
 				for _,j in ipairs(group) do
-					-- print("Check",j.hash,GetRelativeValue(j, "difficultyID"))
+					-- app.PrintDebug("Check",j.hash,GetRelativeValue(j, "difficultyID"))
 					if GetRelativeDifficulty(j, difficultyID) then
-						-- print("Match Difficulty")
+						-- app.PrintDebug("Match Difficulty",j.hash)
 						tinsert(subgroup, j);
 					end
 				end
@@ -4379,6 +4391,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Replace as the group
 		group = root;
+		-- Ensure some specific relative values are captured in the base group
+		-- can make this a loop if there ends up being more needed...
+		group.difficultyID = GetRelativeValue(group, "difficultyID");
 		-- Ensure no weird parent references attached to the base search result if there were multiple search results
 		group.parent = nil;
 		if clearSourceParent then
@@ -4493,16 +4508,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
 			local entries = {};
 			-- app.DEBUG_PRINT = "CONTAINS-"..group.hash;
+			ContainsLimit = app.Settings:GetTooltipSetting("ContainsCount") or 25;
+			ContainsExceeded = 0;
 			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
 			-- app.DEBUG_PRINT = nil;
 			-- app.PrintDebug(entries and #entries,"contains entries")
 			if #entries > 0 then
 				local left, right;
-				local tooltipSourceFields = app.TooltipSourceFields;
 				tinsert(info, { left = L["CONTAINS"] });
-				local containCount, item, entry = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
+				local item, entry;
 				local RecursiveParentField, SearchForObject = app.RecursiveFirstParentWithFieldValue, app.SearchForObject;
-				for i=1,containCount do
+				for i=1,#entries do
 					item = entries[i];
 					entry = item.group;
 					left = entry.text or RETRIEVING_DATA;
@@ -4538,7 +4554,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if entry.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
 						-- Add the Zone name
 						local field, id;
-						for _,v in ipairs(tooltipSourceFields) do
+						for _,v in ipairs(TooltipSourceFields) do
 							id = RecursiveParentField(entry, v, true);
 							-- print("check",v,id)
 							if id then
@@ -4605,8 +4621,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					tinsert(info, { left = item.prefix .. left, right = right });
 				end
 
-				if #entries - containCount > 0 then
-					tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
+				if ContainsExceeded > 0 then
+					tinsert(info, { left = L["AND_"]..ContainsExceeded..L["_MORE"].."..." });
 				end
 
 				if app.Settings:GetTooltipSetting("Currencies") then
@@ -4702,6 +4718,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	return group;
 end
+end	-- Search results Lib
+
 -- Builds a hash table of hashes of collectibles which use the specified costID (without regard to being an item or currency) and storing the quantity in the hash table
 app.BuildCostTable = function(collectibles, costID)
 	local costAmounts, cost = {};
@@ -4865,7 +4883,7 @@ local function DetermineNPCDrops(group)
 	-- TODO: account for multi-NPC encounters
 	local npcID = group.npcID or group.creatureID;
 	if npcID then
-		-- app.PrintDebug("NPC Group",group.hash)
+		-- app.PrintDebug("NPC Group",group.hash,npcID)
 		-- search for groups of this NPC
 		local npcGroups = app.SearchForField("npcID", npcID);
 		if npcGroups then
@@ -5017,7 +5035,7 @@ app.FillGroups = function(group)
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
 
-	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
+	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",groupWindow)
 
 	-- Fill the group with all nestable content
 	if groupWindow then
