@@ -4882,7 +4882,7 @@ local NPCExpandHeaders = {
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group)
 	-- assuming for any 'crs' references on a single group that all crs are linked to the same resulting content
-	local npcID = group.npcID or group.creatureID or (group.crs and group.crs[1]);
+	local npcID = group.npcID or group.creatureID;-- or (group.crs and group.crs[1]);
 	if npcID then
 		-- app.PrintDebug("NPC Group",group.hash,npcID)
 		-- search for groups of this NPC
