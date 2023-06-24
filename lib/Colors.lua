@@ -28,8 +28,8 @@ app.Colors = {
 	TimeUnder2Hr = "ffffff00",
 	Time = "ff008000",
 	-- Settings
-	Insane = "ffADD8E6",
-	Account = "ff00AB00",
+	Insane = "ffCC79A7",
+	Account = "ff00CCFF",
 	Default = "ffEDBD21",	-- The "default" yellow colour of text labels, in some rare cases this needs to be referenced
 };
 
