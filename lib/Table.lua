@@ -21,11 +21,11 @@ app.contains = function(arr, value)
 	end
 end
 app.containsAny = function(arr, arr2)
-	local count, otherCount = #arr, #otherArr;
+	local count, otherCount = #arr, #arr2;
 	for i=1,count,1 do
 		local a = arr[i];
 		for j=1,otherCount,1 do
-			if a == otherArr[j] then return true; end
+			if a == arr2[j] then return true; end
 		end
 	end
 end
