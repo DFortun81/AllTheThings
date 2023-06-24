@@ -1859,7 +1859,7 @@ end");
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -1874,7 +1874,7 @@ end");
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -1887,7 +1887,7 @@ end");
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -1900,7 +1900,7 @@ end");
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -1913,7 +1913,7 @@ end");
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -1977,15 +1977,11 @@ end");
                             var newListOfLists = value as List<object>;
                             if (newListOfLists == null)
                             {
-                                Console.WriteLine("Ignoring 'sym' with improper format.");
-                                Console.WriteLine(ToJSON(value));
-                                Console.ReadLine();
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                                 foreach (var sublist in newListOfLists)
                                 {
                                     if (sublist is List<object>) continue;
-                                    Console.WriteLine("Ignoring 'sym' with improper format.");
-                                    Console.WriteLine(ToJSON(value));
-                                    Console.ReadLine();
+                                    LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                                 }
                             }
                             item[field] = newListOfLists;
@@ -2000,9 +1996,7 @@ end");
                         {
                             if (!(value is List<object> newList))
                             {
-                                Console.WriteLine($"Ignoring '{field}' with improper format.");
-                                Console.WriteLine(ToJSON(value));
-                                Console.ReadLine();
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                                 return;
                             }
                             var newRep = new List<object>();
@@ -2028,9 +2022,7 @@ end");
                             // Convert the data to a list of generic objects.
                             if (!(value is List<object> newList))
                             {
-                                Console.WriteLine("Ignoring 'coord' with improper format.");
-                                Console.WriteLine(ToJSON(value));
-                                Console.ReadLine();
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                                 return;
                             }
 
@@ -2052,9 +2044,7 @@ end");
                             }
                             catch
                             {
-                                Console.WriteLine("Ignoring 'coord' with improper format.");
-                                Console.WriteLine(ToJSON(value));
-                                Console.ReadLine();
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                                 return;
                             }
 
@@ -2105,7 +2095,7 @@ end");
                             }
                             else
                             {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -2142,7 +2132,7 @@ end");
                             }
                             else
                             {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -2174,7 +2164,7 @@ end");
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
-                            Log($"WARN: Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
+                            Log($"WARN: Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}", item);
                             break;
                         }
                 }
