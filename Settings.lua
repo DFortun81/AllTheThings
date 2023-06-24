@@ -1426,17 +1426,6 @@ local headerTitle = child:CreateHeaderLabel(L["TITLE"])
 headerTitle:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4)
 headerTitle:SetScale(1.5)
 
-local checkboxSkipAutoRefresh = child:CreateCheckBox(L["SKIP_AUTO_REFRESH"],
-function(self)
-	self:SetChecked(settings:Get("Skip:AutoRefresh"))
-end,
-function(self)
-	settings:Set("Skip:AutoRefresh", self:GetChecked())
-end)
-checkboxSkipAutoRefresh:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"])
-checkboxSkipAutoRefresh:SetPoint("TOPLEFT", headerTitle, "TOPRIGHT", 4, 0)
-settings.checkboxSkipAutoRefresh = checkboxSkipAutoRefresh	-- So the Refresh function can find it
-
 local headerVersion = child:CreateHeaderLabel("v"..C_AddOns.GetAddOnMetadata(appName, "Version"))	-- @SettingsV3: Now returns @project-versio@ instead of [Git], not sure why
 headerVersion:SetPoint("TOPRIGHT", child, "TOPLEFT", 640, 0)
 headerVersion:SetJustifyH("RIGHT")
@@ -1902,6 +1891,17 @@ function(self)
 end)
 checkboxFactionMode:SetATTTooltip(L["FACTION_MODE_TOOLTIP"])
 checkboxFactionMode:AlignAfter(checkboxAccountMode)
+
+local checkboxSkipAutoRefresh = child:CreateCheckBox(L["SKIP_AUTO_REFRESH"],
+function(self)
+	self:SetChecked(settings:Get("Skip:AutoRefresh"))
+end,
+function(self)
+	settings:Set("Skip:AutoRefresh", self:GetChecked())
+end)
+checkboxSkipAutoRefresh:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"])
+checkboxSkipAutoRefresh:SetPoint("TOPLEFT", checkboxAccountMode, 320, 0)
+settings.checkboxSkipAutoRefresh = checkboxSkipAutoRefresh	-- So the Refresh function can find it
 
 -- Column 1
 local headerAccountThings = child:CreateHeaderLabel(L["ACCOUNT_THINGS_LABEL"])
