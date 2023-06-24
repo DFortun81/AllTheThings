@@ -14263,12 +14263,26 @@ end
 -- For directly applying the full Update operation for the top-level data group within a window
 local function TopLevelUpdateGroup(group)
 	group.TLUG = GetTimePreciseSec();
-	group.total = 0;
-	group.progress = 0;
+	group.total = nil;
+	group.progress = nil;
 	CacheFilterFunctions();
 	-- app.PrintDebug("TLUG",group.hash)
-	if group.OnUpdate then group.OnUpdate(group); end
+	-- Root data in Windows should ALWAYS be visible
+	if group.window then
+		-- app.PrintDebug("Root Group",group.text)
+		group.forceShow = true;
+	end
+	if group.OnUpdate then
+		if not group:OnUpdate() then
 	UpdateGroup(nil, group);
+		elseif group.visible then
+			group.total = nil;
+			group.progress = nil;
+			UpdateGroups(group, group.g);
+		end
+	else
+		UpdateGroup(nil, group);
+	end
 	-- app.PrintDebugPrior("TLUG",group.hash)
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup;
@@ -21449,7 +21463,6 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 	local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
 	local C_AreaPoiInfo_GetAreaPOISecondsLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft;
 	local C_QuestLog_GetBountiesForMapID = C_QuestLog.GetBountiesForMapID;
-	local SecondsToTime = SecondsToTime;
 	local GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo =
 		  GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo;
 
@@ -21458,23 +21471,22 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 			self.initialized = true;
 			force = true;
 			local data = {
-				['text'] = L["WORLD_QUESTS"],
-				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp",
+				["text"] = L["WORLD_QUESTS"],
+				["icon"] = "Interface\\Icons\\INV_Misc_Map08.blp",
 				["description"] = L["WORLD_QUESTS_DESC"],
-				['visible'] = true,
 				["indent"] = 0,
-				['back'] = 1,
-				['g'] = {
+				["back"] = 1,
+				["g"] = {
 					{
-						['text'] = L["UPDATE_WORLD_QUESTS"],
-						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = L["UPDATE_WORLD_QUESTS_DESC"],
-						['hash'] = "funUpdateWorldQuests",
-						['OnClick'] = function(data, button)
+						["text"] = L["UPDATE_WORLD_QUESTS"],
+						["icon"] = "Interface\\Icons\\INV_Misc_Map_01",
+						["description"] = L["UPDATE_WORLD_QUESTS_DESC"],
+						["hash"] = "funUpdateWorldQuests",
+						["OnClick"] = function(data, button)
 							Push(self, "WorldQuests-Rebuild", self.Rebuild);
 							return true;
 						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
+						["OnUpdate"] = app.AlwaysShowUpdate,
 					},
 				},
 			};
