@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 			}),
 			prof(BLACKSMITHING, {
 				n(156666, {	-- Smith Au'berk <Blacksmithing Trainer>
-					["coord"] = { 48.2, 29.0, ORIBOS },
+					["coord"] = { 40.5, 31.4, ORIBOS },
 					["g"] = SL_BLACKSMITHING,
 				}),
 			}),
