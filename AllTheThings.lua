@@ -1039,7 +1039,7 @@ app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
 
 local function BuildGroups(parent)
-		local g = parent.g;
+	local g = parent.g;
 	if g then
 		-- Iterate through the groups
 		local group;
@@ -3697,12 +3697,12 @@ local function BuildContainsInfo(item, entries, indent, layer)
 				if #entries >= ContainsLimit then
 					ContainsExceeded = ContainsExceeded + 1;
 				else
-				-- Insert into the display.
-				-- app.PrintDebug("INCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
-				local o = { group = group, right = GetProgressTextForRow(group) };
-				local indicator = Indicator(group);
-				o.prefix = indicator and (sub(indent, 4) .. "|T" .. indicator .. ":0|t ") or indent;
-				tinsert(entries, o);
+					-- Insert into the display.
+					-- app.PrintDebug("INCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
+					local o = { group = group, right = GetProgressTextForRow(group) };
+					local indicator = Indicator(group);
+					o.prefix = indicator and (sub(indent, 4) .. "|T" .. indicator .. ":0|t ") or indent;
+					tinsert(entries, o);
 				end
 
 				-- Only go down one more level.
@@ -3715,8 +3715,8 @@ local function BuildContainsInfo(item, entries, indent, layer)
 					then
 					BuildContainsInfo(group, entries, indent .. "  ", layer + 1);
 				end
-			-- else
-			-- 	if app.DEBUG_PRINT then print("EXCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key]) end
+				-- else
+				-- 	if app.DEBUG_PRINT then print("EXCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key]) end
 			end
 		end
 	end
@@ -14274,7 +14274,7 @@ local function TopLevelUpdateGroup(group)
 	end
 	if group.OnUpdate then
 		if not group:OnUpdate() then
-	UpdateGroup(nil, group);
+			UpdateGroup(nil, group);
 		elseif group.visible then
 			group.total = nil;
 			group.progress = nil;
@@ -17277,7 +17277,7 @@ function app:GetDataCache()
 	if not app.Categories then
 		return nil;
 	end
-	
+
 	-- app.PrintDebug("Start loading data cache")
 	-- app.PrintMemoryUsage()
 	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
@@ -17895,7 +17895,7 @@ function app:GetDataCache()
 		end
 	});
 	g = unsortedData.g;
-	
+
 	-- Never Implemented
 	if app.Categories.NeverImplemented then
 		db = {};
@@ -17907,7 +17907,7 @@ function app:GetDataCache()
 		tinsert(g, db);
 		CacheFields(db);
 	end
-	
+
 	-- Hidden Achievement Triggers
 	if app.Categories.HiddenAchievementTriggers then
 		db = {};
@@ -18184,7 +18184,7 @@ function app:GetDataCache()
 	end
 	achievementsCategory:OnUpdate();
 	]]--
-	
+
 	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
 	-- app.PrintDebug("Finished loading data cache")
 	-- app.PrintMemoryUsage()
@@ -18376,7 +18376,7 @@ function app:BuildSearchResponse(field, value, clear)
 		wipe(ClonedHierarchyGroups);
 		wipe(ClonedHierarachyMapping);
 		wipe(SearchGroups);
-		
+
 		-- app.PrintDebug("BSR:",field,value,clear)
 		SetRescursiveFilters();
 		local cacheContainer = SearchForFieldContainer(field);
@@ -23592,7 +23592,7 @@ app.InitDataCoroutine = function()
 
 	-- Assign DGU OnUpdates
 	AssignDirectGroupOnUpdates();
-	
+
 	-- Perform Heirloom caching/upgrade generation
 	app.CacheHeirlooms();
 
@@ -23633,7 +23633,7 @@ app.InitDataCoroutine = function()
 	coroutine.yield();
 
 	app.__FirstRefresh = true;
-		app.RefreshCollections();
+	app.RefreshCollections();
 
 	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
 	if not AllTheThingsProfiles then DelayedCallback(app.SetupProfiles, 5); end
