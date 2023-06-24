@@ -40,6 +40,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						["_quests"] = { 70793 },	-- Iskaaran Fishing Net
 					}),
 				}),
+				ach(16550),	-- Giving Back to Nature
+				ach(16552),	-- Giving Even More Back to Nature
+				ach(16551),	-- Giving More Back to Nature
 				ach(16548),	-- It Takes a Tuskarr Buddy
 				ach(16564),	-- It Takes a Tuskarr Family
 				ach(16565),	-- It Takes a Tuskarr Village
@@ -205,11 +208,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					{ 74.2, 41.4, THE_FORBIDDEN_REACH },
 				},
 				["isRepeatable"] = true,
-				["g"] = {
-					ach(16550),	-- Giving Back to Nature
-					ach(16552),	-- Giving Even More Back to Nature
-					ach(16551),	-- Giving More Back to Nature
-				},
+				["sym"] = {{"select","achievementID",
+					16550,	-- Giving Back to Nature
+					16552,	-- Giving Even More Back to Nature
+					16551,	-- Giving More Back to Nature
+				}},
 			}, {
 				q(70201),	-- Catch and Release: Aileron Seamoth
 				q(70202),	-- Catch and Release: Cerulean Spinefish
