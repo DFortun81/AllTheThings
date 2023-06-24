@@ -11,7 +11,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
 		["isRaid"] = true,
 		["coord"] = { 48.6, 10.2, ZARALEK_CAVERN },
-		["order"] = "02",
 		["maps"] = {
 			2166,	-- Molten Crucible
 			2167,	-- Onyx Laboratory

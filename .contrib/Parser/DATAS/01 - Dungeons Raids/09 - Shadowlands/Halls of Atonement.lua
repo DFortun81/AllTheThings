@@ -3,8 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
 local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1185, {	-- Halls of Atonement
 		["coord"] = { 78.4, 48.9, REVENDRETH },
 		["maps"] = {

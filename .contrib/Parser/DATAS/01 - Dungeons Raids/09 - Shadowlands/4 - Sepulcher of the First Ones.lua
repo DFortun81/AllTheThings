@@ -5,7 +5,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 	inst(1195, {	-- Sepulcher of the First Ones
 		["isRaid"] = true,
 		["coord"] = { 80.9, 53.4, ZERETH_MORTIS },
-		["order"] = "03",
 		["maps"] = {
 			2047,	-- Immortal Hearth
 			2048,	-- Genesis Cradle
@@ -585,12 +584,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 				}),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
-				["crs"] = {
-					205959,	-- Ta'elfar <Trader of Histories>
-				},
-				["coords"] = {
-					{ 41.3, 71.0, ORIBOS },	-- Ta'elfar <Trader of Histories>
-				},
+				["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
+				["coords"] = { 41.3, 71.0, ORIBOS },	-- Ta'elfar <Trader of Histories>
 			}),
 			d(LFR_RAID, bubbleDown({ ["timeline"] = { REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				n(ZONE_DROPS, {

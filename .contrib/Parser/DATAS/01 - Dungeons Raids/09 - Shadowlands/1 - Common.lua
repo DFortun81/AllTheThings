@@ -1,9 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-root(ROOTS.Instances, tier(SL_TIER, {
-	n(COMMON_BOSS_DROPS, bubbleDown({["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },},{
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
+	n(COMMON_BOSS_DROPS, {
 		d(HEROIC_RAID, {
 			i(191910, {	-- Confounding Antique Cypher
 				["description"] = "Drops from Fated Heroic Shadowlands Raid bosses.",
@@ -20,8 +19,8 @@ root(ROOTS.Instances, tier(SL_TIER, {
 				["cost"] = { { "i", 191926, 20 } },	-- 20x Confounding Ancient Cypher
 			}),
 		}),
-	})),
-	n(QUESTS, bubbleDown({["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },},{
+	}),
+	n(QUESTS, {
 		q(66648, {	-- Crossing Fate
 			["description"] = "Auto-accepted by entering any 'Fated' Shadowlands Raid.",
 			["maps"] = {
@@ -154,5 +153,5 @@ root(ROOTS.Instances, tier(SL_TIER, {
 				2061,	-- Ephemeral Plains
 			},
 		}),
-	})),
-}));
+	}),
+})));

@@ -3,8 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
 local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1184, {	-- Mists of Tirna Scithe
 		["coord"] = { 35.6, 54.2, ARDENWEALD },
 		["maps"] = { 1669 },	-- Mists of Tirna Scithe

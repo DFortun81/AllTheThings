@@ -2,7 +2,6 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
 root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
 		["coord"] = { 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },

@@ -3,8 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
 local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1188, {	-- De Other Side
 		["coord"] = { 68.6, 66.5, ARDENWEALD },
 		["maps"] = {

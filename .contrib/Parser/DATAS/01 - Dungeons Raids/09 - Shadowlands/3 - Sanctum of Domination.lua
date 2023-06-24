@@ -5,7 +5,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 	inst(1193, {	-- Sanctum of Domination
 		["isRaid"] = true,
 		["coord"] = { 69.8, 31.8, THE_MAW },
-		["order"] = "02",
 		["maps"] = {
 			1998,	-- Tower of the Damned
 			1999,	-- Shadowsteel Foundry
@@ -464,12 +463,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				}),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
-				["crs"] = {
-					205959,	-- Ta'elfar <Trader of Histories>
-				},
-				["coords"] = {
-					{ 41.3, 71.0, ORIBOS },	-- Ta'elfar <Trader of Histories>
-				},
+				["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
+				["coords"] = { 41.3, 71.0, ORIBOS },	-- Ta'elfar <Trader of Histories>
 			}),
 			d(LFR_RAID, bubbleDown({ ["timeline"] = { REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				n(ZONE_DROPS, {

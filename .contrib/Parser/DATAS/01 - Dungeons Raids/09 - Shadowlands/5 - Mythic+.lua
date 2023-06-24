@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(SL_TIER, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(MYTHIC_PLUS, {
 		n(ACHIEVEMENTS, {
 			header(HEADERS.Achievement, SEASON_PROUD, bubbleDownSelf({
@@ -101,8 +101,13 @@ root(ROOTS.Instances, tier(SL_TIER, {
 				}),
 			})),
 		}),
-		n(SOULSHAPES, {
-			i(182173, {["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2_LAUNCH }}),	-- Hyena Soul
-		}),
+		n(SOULSHAPES, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2_LAUNCH } }, {
+			i(182173),	-- Hyena Soul
+		})),
 	}),
-}));
+	d(MYTHIC_DUNGEON, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(SOULSHAPES, {
+			i(182173),	-- Hyena Soul
+		}),
+	})),
+})));

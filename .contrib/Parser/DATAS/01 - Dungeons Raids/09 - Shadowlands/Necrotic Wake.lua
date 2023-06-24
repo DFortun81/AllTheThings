@@ -3,8 +3,7 @@
 -----------------------------------------------------
 local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
 local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
-
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1182, {	-- Necrotic Wake
 		["coord"] = { 40.0, 55.3, BASTION },
 		["maps"] = {
@@ -58,7 +57,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 						i(178734),	-- Fused Bone Greatbelt
 						i(178736),	-- Stitchflesh's Misplaced Signet
 						i(178731),	-- Viscera-Stitched Footpads
-						
+
 					},
 				}),
 				e(2391, {	-- Amarth, The Harvester

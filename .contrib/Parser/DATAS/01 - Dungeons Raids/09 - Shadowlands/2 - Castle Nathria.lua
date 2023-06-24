@@ -13,7 +13,7 @@ local function FatedItem(modItemID, modID)
 	item.timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH };
 	return item;
 end
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1190, {	-- Castle Nathria
 		["isRaid"] = true,
 		["coord"] = { 46.1, 41.5, REVENDRETH },
@@ -26,7 +26,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 			1748,	-- The Observatorium
 			1750,	-- Feast of Arrogance
 		},
-		["lvl"] = { 60 },
 		["g"] = {
 			n(ACHIEVEMENTS,  {
 				ach(14715, {	-- Castle Nathria
@@ -629,12 +628,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				i(180453),	-- She Had a Stone Heart
 			}),
 			d(LFR_RAID, {	-- Queue NPC
-				["crs"] = {
-					205959,	-- Ta'elfar <Trader of Histories>
-				},
-				["coords"] = {
-					{ 41.3, 71.0, ORIBOS },	-- Ta'elfar <Trader of Histories>
-				},
+				["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
+				["coords"] = { 41.3, 71.0, ORIBOS },	-- Ta'elfar <Trader of Histories>
 			}),
 			d(LFR_RAID, bubbleDown({ ["timeline"] = { REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				n(ZONE_DROPS, {
