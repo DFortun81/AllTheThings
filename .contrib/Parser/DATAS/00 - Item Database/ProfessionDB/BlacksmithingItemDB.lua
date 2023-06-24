@@ -1,7 +1,7 @@
 local Items = root(ROOTS.ItemDBConditional);
 local Recipes = root(ROOTS.RecipeDB);
 local ProfessionID = BLACKSMITHING;
-local ARMORSMITIH = 9788;
+local ARMORSMITH = 9788;
 local WEAPONSMITH = 9787;
 local MASTER_AXESMITH = 17041;
 local MASTER_HAMMERSMITH = 17040;
@@ -241,29 +241,29 @@ i(8029, 9997);		-- Wicked Mithril Blade
 --- ARMORSMITH ---
 i(0, 9788);			-- Armorsmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
-i(0, 9974, nil, ARMORSMITIH);	-- Truesilver Breastplate
-i(0, 9954, nil, ARMORSMITIH);	-- Truesilver Gauntlets
-i(20040, 24399, nil, ARMORSMITIH);	-- Dark Iron Boots
-i(17051, 20874, nil, ARMORSMITIH);	-- Dark Iron Bracers
-i(19207, 23637, nil, ARMORSMITIH);	-- Dark Iron Gauntlets
-i(19206, 23636, nil, ARMORSMITIH);	-- Dark Iron Helm
-i(17052, 20876, nil, ARMORSMITIH);	-- Dark Iron Leggings
-i(11612, 15296, nil, ARMORSMITIH);	-- Dark Iron Plate
-i(12696, 16667, nil, ARMORSMITIH);	-- Demon Forged Breastplate [REMOVED: 4.0.3]
-i(12727, 16745, nil, ARMORSMITIH);	-- Enchanted Thorium Breastplate [REMOVED: 4.0.3]
-i(12725, 16742, nil, ARMORSMITIH);	-- Enchanted Thorium Helm [REMOVED: 4.0.3]
-i(12726, 16744, nil, ARMORSMITIH);	-- Enchanted Thorium Leggings [REMOVED: 4.0.3]
-i(12699, 16655, nil, ARMORSMITIH);	-- Fiery Plate Gauntlets [REMOVED: 4.0.3]
-i(17049, 20872, nil, ARMORSMITIH);	-- Fiery Chain Girdle
-i(17053, 20873, nil, ARMORSMITIH);	-- Fiery Chain Shoulders
-i(12716, 16728, nil, ARMORSMITIH);	-- Helm of the Great Chief
-i(12728, 16746, nil, ARMORSMITIH);	-- Invulnerable Mail
-i(12717, 16729, nil, ARMORSMITIH);	-- Lionheart Helm
-i(12703, 16661, nil, ARMORSMITIH);	-- Storm Gauntlets
-i(12720, 16741, nil, ARMORSMITIH);	-- Stronghold Gauntlets
-i(22388, 27829, nil, ARMORSMITIH);	-- Titanic Leggings
-i(12711, 16724, nil, ARMORSMITIH);	-- Whitesoul Helm
-i(12691, 16650, nil, ARMORSMITIH);	-- Wildthorn Mail
+i(0, 9974, nil, ARMORSMITH);	-- Truesilver Breastplate
+i(0, 9954, nil, ARMORSMITH);	-- Truesilver Gauntlets
+i(20040, 24399, nil, ARMORSMITH);	-- Dark Iron Boots
+i(17051, 20874, nil, ARMORSMITH);	-- Dark Iron Bracers
+i(19207, 23637, nil, ARMORSMITH);	-- Dark Iron Gauntlets
+i(19206, 23636, nil, ARMORSMITH);	-- Dark Iron Helm
+i(17052, 20876, nil, ARMORSMITH);	-- Dark Iron Leggings
+i(11612, 15296, nil, ARMORSMITH);	-- Dark Iron Plate
+i(12696, 16667, nil, ARMORSMITH);	-- Demon Forged Breastplate [REMOVED: 4.0.3]
+i(12727, 16745, nil, ARMORSMITH);	-- Enchanted Thorium Breastplate [REMOVED: 4.0.3]
+i(12725, 16742, nil, ARMORSMITH);	-- Enchanted Thorium Helm [REMOVED: 4.0.3]
+i(12726, 16744, nil, ARMORSMITH);	-- Enchanted Thorium Leggings [REMOVED: 4.0.3]
+i(12699, 16655, nil, ARMORSMITH);	-- Fiery Plate Gauntlets [REMOVED: 4.0.3]
+i(17049, 20872, nil, ARMORSMITH);	-- Fiery Chain Girdle
+i(17053, 20873, nil, ARMORSMITH);	-- Fiery Chain Shoulders
+i(12716, 16728, nil, ARMORSMITH);	-- Helm of the Great Chief
+i(12728, 16746, nil, ARMORSMITH);	-- Invulnerable Mail
+i(12717, 16729, nil, ARMORSMITH);	-- Lionheart Helm
+i(12703, 16661, nil, ARMORSMITH);	-- Storm Gauntlets
+i(12720, 16741, nil, ARMORSMITH);	-- Stronghold Gauntlets
+i(22388, 27829, nil, ARMORSMITH);	-- Titanic Leggings
+i(12711, 16724, nil, ARMORSMITH);	-- Whitesoul Helm
+i(12691, 16650, nil, ARMORSMITH);	-- Wildthorn Mail
 -- #else
 i(0, 9974);			-- Truesilver Breastplate [REMOVED: 4.0.3]
 i(0, 9954);			-- Truesilver Gauntlets [REMOVED: 4.0.3]
@@ -472,16 +472,16 @@ i(31392, 38476);	-- Wildguard Helm
 i(31391, 38475);	-- Wildguard Leggings
 --- ARMORSMITH ---
 -- #if BEFORE CATA
-i(0, 34533, nil, ARMORSMITIH);	-- Breastplate of Kings [REMOVED: 4.0.3]
-i(0, 34534, nil, ARMORSMITIH);	-- Bulwark of Kings [REMOVED: 4.0.3]
-i(0, 36257, nil, ARMORSMITIH);	-- Bulwark of the Ancient Kings [REMOVED: 4.0.3]
-i(0, 36122, nil, ARMORSMITIH);	-- Earthforged Leggings [REMOVED: 4.0.3]
-i(0, 36256, nil, ARMORSMITIH);	-- Embrace of the Twisting Nether [REMOVED: 4.0.3]
-i(0, 36129, nil, ARMORSMITIH);	-- Heavy Earthforged Breastplate [REMOVED: 4.0.3]
-i(0, 34529, nil, ARMORSMITIH);	-- Nether Chain Shirt [REMOVED: 4.0.3]
-i(0, 36130, nil, ARMORSMITIH);	-- Stormforged Hauberk [REMOVED: 4.0.3]
-i(0, 34530, nil, ARMORSMITIH);	-- Twisting Nether Chain Shirt [REMOVED: 4.0.3]
-i(0, 36124, nil, ARMORSMITIH);	-- Windforged Leggings [REMOVED: 4.0.3]
+i(0, 34533, nil, ARMORSMITH);	-- Breastplate of Kings [REMOVED: 4.0.3]
+i(0, 34534, nil, ARMORSMITH);	-- Bulwark of Kings [REMOVED: 4.0.3]
+i(0, 36257, nil, ARMORSMITH);	-- Bulwark of the Ancient Kings [REMOVED: 4.0.3]
+i(0, 36122, nil, ARMORSMITH);	-- Earthforged Leggings [REMOVED: 4.0.3]
+i(0, 36256, nil, ARMORSMITH);	-- Embrace of the Twisting Nether [REMOVED: 4.0.3]
+i(0, 36129, nil, ARMORSMITH);	-- Heavy Earthforged Breastplate [REMOVED: 4.0.3]
+i(0, 34529, nil, ARMORSMITH);	-- Nether Chain Shirt [REMOVED: 4.0.3]
+i(0, 36130, nil, ARMORSMITH);	-- Stormforged Hauberk [REMOVED: 4.0.3]
+i(0, 34530, nil, ARMORSMITH);	-- Twisting Nether Chain Shirt [REMOVED: 4.0.3]
+i(0, 36124, nil, ARMORSMITH);	-- Windforged Leggings [REMOVED: 4.0.3]
 -- #else
 i(0, 34533);		-- Breastplate of Kings [REMOVED: 4.0.3]
 i(0, 34534);		-- Bulwark of Kings [REMOVED: 4.0.3]
@@ -619,7 +619,15 @@ i(35556, 0);		-- Sunblessed Gauntlets
 -----------------
 -- PATCH 3.0.2 --
 -----------------
+--- NYI ---
+i(0, 55730);		-- Cobalt Rod
+i(0, 50465);		-- Socket One-Handed Weapon
+
+-----------------
+-- PATCH 3.0.3 --
+-----------------
 --- TRAINER ---
+i(0, 51300);		-- Blacksmithing (Grand Master) [REMOVED: 8.0.1]
 i(0, 59436);		-- Brilliant Saronite Belt
 i(0, 55057);		-- Brilliant Saronite Boots
 i(0, 59438);		-- Brilliant Saronite Bracers
@@ -644,6 +652,7 @@ i(0, 54550);		-- Cobalt Triangle Shield
 i(0, 56280);		-- Cudgel of Saronite Justice
 i(0, 55301);		-- Daunting Handguards
 i(0, 55303);		-- Daunting Legplates
+i(0, 55206);		-- Deadly Saronite Dirk [REMOVED: 5.0.4]
 i(0, 55656);		-- Eternal Belt Buckle
 i(0, 55203);		-- Forged Cobalt Claymore
 i(0, 55182);		-- Furious Saronite Beatstick
@@ -689,7 +698,10 @@ i(0, 54947);		-- Spiked Cobalt Legplates
 i(0, 54941);		-- Spiked Cobalt Shoulders
 i(0, 55372);		-- Spiked Titansteel Helm
 i(0, 55375);		-- Spiked Titansteel Treads
+i(0, 55628);		-- Socket Bracer [REMOVED: 6.0.2]
+i(0, 55641);		-- Socket Gloves [REMOVED: 6.0.2]
 i(0, 55200);		-- Sturdy Cobalt Quickblade
+i(0, 55202);		-- Sure-fire Shuriken [REMOVED: 5.0.4]
 i(0, 54551);		-- Tempered Saronite Belt
 i(0, 54552);		-- Tempered Saronite Boots
 i(0, 55017);		-- Tempered Saronite Bracers
@@ -700,6 +712,7 @@ i(0, 54554);		-- Tempered Saronite Legplates
 i(0, 54556);		-- Tempered Saronite Shoulders
 i(0, 55373);		-- Tempered Titansteel Helm
 i(0, 55376);		-- Tempered Titansteel Treads
+i(0, 55732);		-- Titanium Rod [REMOVED: 5.0.4]
 i(0, 56357);		-- Titanium Shield Spike
 i(0, 59406);		-- Titanium Skeleton Key
 i(0, 55839);		-- Titanium Weapon Chain
@@ -714,31 +727,24 @@ i(41122, 54981);	-- Reinforced Cobalt Chestpiece
 i(41123, 54979);	-- Reinforced Cobalt Helm
 i(41120, 54980);	-- Reinforced Cobalt Legplates
 i(41124, 54978);	-- Reinforced Cobalt Shoulders
+--- ARMORSMITH --
 -- #if BEFORE CATA
-i(0, 55186, nil, ARMORSMITIH);	-- Chestplate of Conquest
-i(0, 55187, nil, ARMORSMITIH);	-- Legplates of Conquest
+i(0, 55186, nil, ARMORSMITH);	-- Chestplate of Conquest
+i(0, 55187, nil, ARMORSMITH);	-- Legplates of Conquest
+-- #else
+i(0, 55186);		-- Chestplate of Conquest
+i(0, 55187);		-- Legplates of Conquest
+-- #endif
+--- WEAPONSMITH --
+-- #if BEFORE CATA
 i(0, 55183, nil, WEAPONSMITH);	-- Corroded Saronite Edge
 i(0, 55184, nil, WEAPONSMITH);	-- Corroded Saronite Woundbringer
 i(0, 55185, nil, WEAPONSMITH);	-- Saronite Mindcrusher
 -- #else
--- Armorsmithing
-i(0, 55186);		-- Chestplate of Conquest
-i(0, 55187);		-- Legplates of Conquest
--- Weaponsmithing
 i(0, 55183);		-- Corroded Saronite Edge
 i(0, 55184);		-- Corroded Saronite Woundbringer
 i(0, 55185);		-- Saronite Mindcrusher
 -- #endif
--- REMOVED --
-i(0, 51300);		-- Blacksmithing (Grand Master) (8.0.1)
-i(0, 55206);		-- Deadly Saronite Dirk (5.0.4)
-i(0, 55628);		-- Socket Bracer (6.0.2)
-i(0, 55641);		-- Socket Gloves (6.0.2)
-i(0, 55202);		-- Sure-fire Shuriken (5.0.4)
-i(0, 55732);		-- Titanium Rod (5.0.4)
---- NYI ---
-i(0, 55730);		-- Cobalt Rod
-i(0, 50465);		-- Socket One-Handed Weapon
 
 -----------------
 -- PATCH 3.0.8 --
