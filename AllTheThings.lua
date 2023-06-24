@@ -9630,6 +9630,10 @@ app.BaseDeathClass = app.BaseObjectFields(fields, "BaseDeathClass");
 app.CreateDeathClass = function()
 	return setmetatable({}, app.BaseDeathClass);
 end
+app:RegisterEvent("PLAYER_DEAD");
+app.events.PLAYER_DEAD = function()
+	app:PlayDeathSound();
+end
 end)();
 
 -- Difficulty Lib

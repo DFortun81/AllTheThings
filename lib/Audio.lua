@@ -8,6 +8,9 @@ local Sounds = {
 	COMPLETE = {
 		app.asset("complete1.ogg"),
 	};
+	DEATH = {
+		app.asset("death.ogg"),
+	};
 	FANFARE = {
 		app.asset("fanfare1.ogg"),
 		app.asset("fanfare2.ogg"),
@@ -43,6 +46,9 @@ end
 function app:PlayCompleteSound()
 	PlayAudio(Sounds.COMPLETE, "Complete", "Celebrate");
 end
+function app:PlayDeathSound()
+	PlayAudio(Sounds.DEATH, "Death", "PlayDeathSound");
+end
 function app:PlayFanfare()
 	PlayAudio(Sounds.FANFARE, "Celebrate", "Celebrate");
 end
@@ -58,10 +64,10 @@ function app:PlayReportSound()
 	end
 end
 -- Accepts various 'type' values to insert a Sound into the respective table
-function app.AddSound(table, sound)
-	local targetAudio = Sounds[string.upper(table or "")];
+function app.AddSound(tableName, sound)
+	local targetAudio = Sounds[string.upper(tableName or "")];
 	if not targetAudio then
-		error("Sound table '"..(table or "").."' is not valid");
+		error("Sound table '"..(tableName or "").."' is not valid");
 	end
 	local soundType = type(sound);
 	if soundType ~= "string" and soundType ~= "number" then
@@ -70,10 +76,10 @@ function app.AddSound(table, sound)
 	tinsert(targetAudio, sound);
 end
 -- Allows clearing the Sounds for a given 'type' of Sound
-function app.ClearSounds(type)
-	local targetAudio = Sounds[string.upper(type or "")];
+function app.ClearSounds(tableName)
+	local targetAudio = Sounds[string.upper(tableName or "")];
 	if not targetAudio then
-		error("Sound table '"..(type or "").."' is not valid");
+		error("Sound table '"..(tableName or "").."' is not valid");
 	end
 	wipe(targetAudio);
 end
