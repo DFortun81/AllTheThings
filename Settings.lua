@@ -1882,11 +1882,11 @@ local checkboxFactionMode = child:CreateCheckBox(L["FACTION_MODE"],
 function(self)
 	local englishFaction = UnitFactionGroup("player")
 	if englishFaction == "Alliance" then
-		self.Text:SetText(app.color.Alliance..self.Text:GetText())
+		self.Text:SetText(app.ccColors.Alliance..self.Text:GetText())
 	elseif englishFaction == "Horde" then
-		self.Text:SetText(app.color.Horde..self.Text:GetText())
+		self.Text:SetText(app.ccColors.Horde..self.Text:GetText())
 	else
-		self.Text:SetText(app.color.Default..self.Text:GetText())
+		self.Text:SetText(app.ccColors.Default..self.Text:GetText())
 	end
 	self:SetChecked(settings:Get("FactionMode"))
 	if settings:Get("DebugMode") or not settings:Get("AccountMode") then
@@ -2279,7 +2279,7 @@ textAutomatedContentExplain:SetPoint("TOPLEFT", headerAutomatedContent, "BOTTOML
 textAutomatedContentExplain:SetWidth(320)
 
 	-- Automated Content toggles
-	local insane_color = app.color.Insane
+	local insane_color = app.ccColors.Insane
 	local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"]
 	local previousCheckbox = textAutomatedContentExplain
 	local xInitalOffset, yInitialOffset, inital = -2, -2, true

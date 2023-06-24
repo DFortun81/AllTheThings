@@ -1,4 +1,3 @@
-
 -- Colors Lib
 local _, app = ...;
 
@@ -28,4 +27,13 @@ app.Colors = {
 	TimeUnder30Min = "ffff0000",
 	TimeUnder2Hr = "ffffff00",
 	Time = "ff008000",
+	-- Settings
+	Insane = "ffADD8E6",
+	Account = "ff00AB00",
+	Default = "ffEDBD21",	-- The "default" yellow colour of text labels, in some rare cases this needs to be referenced
 };
+
+app.ccColors = {};
+for k,v in pairs (app.Colors) do
+	app.ccColors[k] = "|c"..v;
+end;
