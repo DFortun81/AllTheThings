@@ -14,16 +14,18 @@ local ipairs, pairs, tinsert, select, table_concat
 -- App locals
 
 -- Module locals
-
 app.contains = function(arr, value)
-	for _,value2 in ipairs(arr) do
-		if value2 == value then return true; end
+	local count = #arr;
+	for i=1,count,1 do
+		if arr[i] == value then return true; end
 	end
 end
 app.containsAny = function(arr, arr2)
-	for _,v in ipairs(arr) do
-		for _,w in ipairs(arr2) do
-			if v == w then return true; end
+	local count, otherCount = #arr, #otherArr;
+	for i=1,count,1 do
+		local a = arr[i];
+		for j=1,otherCount,1 do
+			if a == otherArr[j] then return true; end
 		end
 	end
 end
@@ -33,8 +35,9 @@ app.containsValue = function(dict, value)
 	end
 end
 app.indexOf = function(arr, value)
-	for i,value2 in ipairs(arr) do
-		if value2 == value then return i; end
+	local count = #arr;
+	for i=1,count,1 do
+		if arr[i] == value then return i; end
 	end
 end
 -- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
