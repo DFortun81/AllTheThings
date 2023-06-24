@@ -30,84 +30,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					}),
 				}),
 			}),
-			n(CONDUITS, {
-				e(2399, {	-- Kin-Tara
-					["crs"] = {
-						163077,	-- Azules
-						162059,	-- Kin-Tara
-					},
-					["g"] = {
-						i(183483),	-- Carnivorous Instinct
-						i(182610),	-- Ferocious Appetite
-						i(182468),	-- Mortal Combo
-						i(182144),	-- Nature's Reach
-						i(183513),	-- Stiletto Staccato
-					},
-				}),
-				e(2416, {	-- Ventunax
-					["crs"] = { 162058 },	-- Ventunax
-					["g"] = {
-						i(183508),	-- Ambidexterity
-						i(181435),	-- Calculated Strikes
-						i(182478),	-- Corrupting Leer
-						i(182462),	-- Expurgation
-						i(181389),	-- Shivering Core
-					},
-				}),
-				e(2414, {	-- Oryphrion
-					["crs"] = { 162060 },	-- Oryphrion
-					["g"] = {
-						i(182187),	-- Meat Shield
-						i(180944),	-- Merciless Bonegrinder
-						i(182753),	-- Royal Decree
-						i(182471),	-- Soul Furnace
-					},
-				}),
-				e(2412, {	-- Devos, Paragon of Doubt
-					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
-					["g"] = {
-						i(182649),	-- Brutal Projectiles
-						i(182667),	-- Focused Light
-						i(182135),	-- Focused Lightning
-						i(182141),	-- Holy Oration
-						i(183488),	-- Unstoppable Growth
-						i(181465),	-- Xuen's Bond
-					},
-				}),
-			}),
-			n(LEGENDARIES, {
-				e(2399, {	-- Kin-Tara
-					["crs"] = {
-						163077,	-- Azules
-						162059,	-- Kin-Tara
-					},
-					["g"] = {
-						i(183231),	-- Memory of a Cat-eye Curio
-					},
-				}),
-				e(2416, {	-- Ventunax
-					["crs"] = { 162058 },	-- Ventunax
-					["g"] = {
-						i(183338),	-- Memory of Celerity
-						i(183365),	-- Memory of the Consuming Wrath
-					},
-				}),
-				e(2414, {	-- Oryphrion
-					["crs"] = { 162060 },	-- Oryphrion
-					["g"] = {
-						i(183313),	-- Memory of the Lightbringer's Tempest
-						i(183392),	-- Memory of the Thunderlord
-					},
-				}),
-				e(2412, {	-- Devos, Paragon of Doubt
-					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
-					["g"] = {
-						i(183354),	-- Memory of the Doom Winds
-						i(183257),	-- Memory of the Rylakstalker's Fangs
-						i(183290),	-- Memory of Ancient Teachings
-					},
-				}),
-			}),
 			n(ZONE_DROPS, {
 				i(174021, {	-- Age-Worn Shortblade
 					["crs"] = {
@@ -127,49 +49,89 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 						162059,	-- Kin-Tara
 					},
 					["g"] = {
-						i(180097),	-- Quarterstaff of Discordant Ethic
+						-- Legendaries
+						i(183231),	-- Memory of a Cat-eye Curio
+						-- Conduits
+						i(183483),	-- Carnivorous Instinct
+						i(182610),	-- Ferocious Appetite
+						i(182468),	-- Mortal Combo
+						i(182144),	-- Nature's Reach
+						i(183513),	-- Stiletto Staccato
+						-- Items
 						i(180115),	-- Azure-Venom Choker
 						i(180100),	-- Forsworn Stalker's Hauberk
-						i(180103),	-- Winged Hunters' Gloves
 						i(180109),	-- Kin-Tara's Baleful Cord
+						i(180097),	-- Quarterstaff of Discordant Ethic
 						i(180101),	-- Warboots of Ruthless Conviction
+						i(180103),	-- Winged Hunters' Gloves
 					},
 				}),
 				e(2416, {	-- Ventunax
 					["crs"] = { 162058 },	-- Ventunax
 					["g"] = {
-						i(180095),	-- Penitent Edge
-						i(180104),	-- Distorted Construct's Gauntlets
-						i(180110),	-- Dark Praetorian's Clasp
-						i(180111),	-- Shadowhirl Waistwrap
+						-- Legendaries
+						i(183338),	-- Memory of Celerity
+						i(183365),	-- Memory of the Consuming Wrath
+						-- Conduits
+						i(183508),	-- Ambidexterity
+						i(181435),	-- Calculated Strikes
+						i(182478),	-- Corrupting Leer
+						i(182462),	-- Expurgation
+						i(181389),	-- Shivering Core
+						-- Items
 						i(180102),	-- Dark Stride Footwraps
+						i(180110),	-- Dark Praetorian's Clasp
+						i(180104),	-- Distorted Construct's Gauntlets
 						i(180116),	-- Overcharged Anima Battery
+						i(180095),	-- Penitent Edge
+						i(180111),	-- Shadowhirl Waistwrap
 					},
 				}),
 				e(2414, {	-- Oryphrion
 					["crs"] = { 162060 },	-- Oryphrion
 					["g"] = {
-						i(180112),	-- The Philosopher
-						i(180106),	-- Vicious Surge Faceguard
-						i(180113),	-- Thunderous Echo Vambraces
+						-- Legendaries
+						i(183313),	-- Memory of the Lightbringer's Tempest
+						i(183392),	-- Memory of the Thunderlord
+						-- Conduits
+						i(182187),	-- Meat Shield
+						i(180944),	-- Merciless Bonegrinder
+						i(182753),	-- Royal Decree
+						i(182471),	-- Soul Furnace
+						-- Items
 						i(180105),	-- Absonant Construct's Handguards
-						i(180107),	-- Purge Protocol Legwraps
 						i(180118),	-- Anima Field Emitter
 						i(180117),	-- Empyreal Ordnance
+						i(180107),	-- Purge Protocol Legwraps
+						i(180112),	-- The Philosopher
+						i(180113),	-- Thunderous Echo Vambraces
+						i(180106),	-- Vicious Surge Faceguard
 					},
 				}),
 				e(2412, {	-- Devos, Paragon of Doubt
 					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
 					["g"] = {
 						ach(14326),	-- Spires of Ascension
-						i(180096),	-- Devos' Cacophonous Poleaxe
-						i(180123),	-- Drape of Twisted Loyalties
-						i(180099),	-- Breastplate of Brutal Dissonance
-						i(180098),	-- Sinister Requiem Vestments
-						i(180114),	-- Fallen Paragon's Armguards
+						-- Legendaries
+						i(183354),	-- Memory of the Doom Winds
+						i(183257),	-- Memory of the Rylakstalker's Fangs
+						i(183290),	-- Memory of Ancient Teachings
+						-- Conduits
+						i(182649),	-- Brutal Projectiles
+						i(182667),	-- Focused Light
+						i(182135),	-- Focused Lightning
+						i(182141),	-- Holy Oration
+						i(183488),	-- Unstoppable Growth
+						i(181465),	-- Xuen's Bond
+						-- Items
 						i(180108),	-- Abyssal Disharmony Breeches
 						i(180119),	-- Boon of the Archon
+						i(180099),	-- Breastplate of Brutal Dissonance
+						i(180096),	-- Devos' Cacophonous Poleaxe
+						i(180123),	-- Drape of Twisted Loyalties
+						i(180114),	-- Fallen Paragon's Armguards
 						i(183054),	-- Mysterious Soul Mirror
+						i(180098),	-- Sinister Requiem Vestments
 					},
 				}),
 			}),

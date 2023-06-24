@@ -26,74 +26,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					}),
 				}),
 			}),
-			n(CONDUITS, {
-				e(2395, {	-- Blightbone
-					["crs"] = { 162691 },	-- Blightbone
-					["g"] = {
-						i(183505),	-- Maim, Mangle
-						i(181641),	-- Rising Sun Revival
-						i(183482),	-- Sudden Ambush
-						i(181709),	-- Unnerving Focus
-					},
-				}),
-				e(2391, {	-- Amarth, The Harvester
-					["crs"] = { 163157 },	-- Amarth, The Harvester
-					["g"] = {
-						i(183402),	-- Bloodletting
-						i(181712),	-- Depths of Insanity
-						i(181982),	-- Everfrost
-						i(183481),	-- Incessant Hunter
-						i(182772),	-- Infernal Brand
-					},
-				}),
-				e(2392, {	-- Surgeon Stitchflesh
-					["crs"] = {
-						162689,	-- Surgeon Stitchflesh
-						164578,	-- Stitchflesh's Creation
-					},
-					["g"] = {
-						i(181738),	-- Artifice of the Archmage
-						i(182750),	-- Carnivorous Stalkers
-						i(182385),	-- Growing Inferno
-						i(183512),	-- Planned Execution
-						i(181700),	-- Scalding Brew
-					},
-				}),
-				e(2396, {	-- Nalthor the Rimebinder
-					["crs"] = { 162693 },	-- Nalthor the Rimebinder
-					["g"] = {
-						i(182136),	-- Chilled to the Core
-						i(182622),	-- Resplendent Light
-						i(181843),	-- Shining Radiance
-						i(182201),	-- Unleashed Frenzy
-						i(181383),	-- Unrelenting Cold
-					},
-				}),
-			}),
-			n(LEGENDARIES, {
-				e(2391, {	-- Amarth, The Harvester
-					["crs"] = { 163157 },	-- Amarth, The Harvester
-					["g"] = {
-						i(183387),	-- Memory of the Deathmaker
-					},
-				}),
-				e(2392, {	-- Surgeon Stitchflesh
-					["crs"] = {
-						162689,	-- Surgeon Stitchflesh
-						164578,	-- Stitchflesh's Creation
-					},
-					["g"] = {
-						i(183373),	-- Memory of an Implosive Potential
-					},
-				}),
-				e(2396, {	-- Nalthor the Rimebinder
-					["crs"] = { 162693 },	-- Nalthor the Rimebinder
-					["g"] = {
-						i(182633),	-- Memory of the Biting Cold
-						i(183278),	-- Memory of the Cold Front
-					},
-				}),
-			}),
 			n(QUESTS, {
 				q(60057, {	-- Necrotic Wake: A Paragon's Plight
 					["sourceQuests"] = { 60055 },	-- A Time For Courage
@@ -111,26 +43,42 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				e(2395, {	-- Blightbone
 					["crs"] = { 162691 },	-- Blightbone
 					["g"] = {
-						i(178730),	-- Engorged Worm Smasher
-						i(178735),	-- Blight Belcher
+						-- Conduits
+						i(183505),	-- Maim, Mangle
+						i(181641),	-- Rising Sun Revival
+						i(183482),	-- Sudden Ambush
+						i(181709),	-- Unnerving Focus
+						-- Items
 						i(178732, {	-- Abominable Visage
 							["filterID"] = CLOTH,
 						}),
+						i(178735),	-- Blight Belcher
 						i(178733),	-- Blightbone Spaulders
+						i(178730),	-- Engorged Worm Smasher
 						i(178734),	-- Fused Bone Greatbelt
-						i(178731),	-- Viscera-Stitched Footpads
 						i(178736),	-- Stitchflesh's Misplaced Signet
+						i(178731),	-- Viscera-Stitched Footpads
+						
 					},
 				}),
 				e(2391, {	-- Amarth, The Harvester
 					["crs"] = { 163157 },	-- Amarth, The Harvester
 					["g"] = {
+						-- Legendaries
+						i(183387),	-- Memory of the Deathmaker
+						-- Conduits
+						i(183402),	-- Bloodletting
+						i(181712),	-- Depths of Insanity
+						i(181982),	-- Everfrost
+						i(183481),	-- Incessant Hunter
+						i(182772),	-- Infernal Brand
+						-- Items
 						i(178737),	-- Amarth's Spellblade
+						i(178742),	-- Bottled Chimera Toxin
+						i(178739),	-- Legplates of Unholy Frenzy
 						i(178738),	-- Rattling Deadeye Hood
 						i(178740),	-- Reanimator's Mantle
 						i(178741),	-- Risen Monstrosity Cuffs
-						i(178739),	-- Legplates of Unholy Frenzy
-						i(178742),	-- Bottled Chimera Toxin
 					},
 				}),
 				e(2392, {	-- Surgeon Stitchflesh
@@ -139,27 +87,46 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 						164578,	-- Stitchflesh's Creation
 					},
 					["g"] = {
-						i(178743),	-- Stitchflesh's Scalpel
+						-- Legendaries
+						i(183373),	-- Memory of an Implosive Potential
+						-- Conduits
+						i(181738),	-- Artifice of the Archmage
+						i(182750),	-- Carnivorous Stalkers
+						i(182385),	-- Growing Inferno
+						i(183512),	-- Planned Execution
+						i(181700),	-- Scalding Brew
+						-- Items
 						i(178750),	-- Encrusted Canopic Lid
-						i(178749),	-- Vile Butcher's Pauldrons
 						i(178744),	-- Freshly Embalmed Jerkin
 						i(178748),	-- Gory Surgeon's Gloves
-						i(178745),	-- Striders of Restless Malice
 						i(178772),	-- Satchel of Misbegotten Minions
 						i(178751),	-- Spare Meat Hook
+						i(178743),	-- Stitchflesh's Scalpel
+						i(178745),	-- Striders of Restless Malice
+						i(178749),	-- Vile Butcher's Pauldrons
 					},
 				}),
 				e(2396, {	-- Nalthor the Rimebinder
 					["crs"] = { 162693 },	-- Nalthor the Rimebinder
 					["g"] = {
 						ach(14366),	-- The Necrotic Wake
-						i(178780),	-- Rimebinder's Runeblade
+						-- Legendaries
+						i(182633),	-- Memory of the Biting Cold
+						i(183278),	-- Memory of the Cold Front
+						-- Conduits
+						i(182136),	-- Chilled to the Core
+						i(182622),	-- Resplendent Light
+						i(181843),	-- Shining Radiance
+						i(182201),	-- Unleashed Frenzy
+						i(181383),	-- Unrelenting Cold
+						-- Items
 						i(178777),	-- Dark Frost Helmet
-						i(178779),	-- Undying Chill Shoulderpads
-						i(178782),	-- Necropolis Lord's Shackles
 						i(178778),	-- Lichbone Legguards
+						i(178782),	-- Necropolis Lord's Shackles
+						i(178780),	-- Rimebinder's Runeblade
 						i(178781),	-- Ritual Commander's Ring
 						i(178783),	-- Siphoning Phylactery Shard
+						i(178779),	-- Undying Chill Shoulderpads
 					},
 				}),
 			}),
