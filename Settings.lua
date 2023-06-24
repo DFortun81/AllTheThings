@@ -1624,18 +1624,99 @@ local headerCelebrations = child:CreateHeaderLabel(L["CELEBRATIONS_LABEL"])
 headerCelebrations:SetPoint("TOP", checkboxShowAHModule, "BOTTOM", 0, -10)
 headerCelebrations:SetPoint("LEFT", headerModules, "LEFT", 0, 0)
 
-local checkboxUseMasterAudio = child:CreateCheckBox(L["MASTER_AUDIO_CHECKBOX"],
+local textSoundChannel = child:CreateTextLabel("|cffFFFFFF"..L["AUDIO_CHANNEL"])
+textSoundChannel:SetPoint("TOPLEFT", headerCelebrations, "BOTTOMLEFT", 0, -8)
+textSoundChannel:SetWidth(textSoundChannel:GetUnboundedStringWidth())
+
+local checkboxMasterChannel = child:CreateCheckBox(L["CHANNEL_MASTER"],
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("Channel") == "master")
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:GetTooltipSetting("Channel") == "Master")
 end,
 function(self)
-	local state = self:GetChecked() and "master" or "sound"
-	if settings:GetTooltipSetting("Channel") ~= state then
-		settings:SetTooltipSetting("Channel", state)
+	-- Don't uncheck self if checked again
+	if settings:GetTooltipSetting("Channel") == "Master" then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Channel", "Master")
 	end
 end)
-checkboxUseMasterAudio:SetATTTooltip(L["MASTER_AUDIO_CHECKBOX_TOOLTIP"])
-checkboxUseMasterAudio:SetPoint("TOPLEFT", headerCelebrations, "BOTTOMLEFT", -2, 0)
+checkboxMasterChannel:SetPoint("BOTTOMLEFT", textSoundChannel, "BOTTOMRIGHT", 2, -8)
+
+local checkboxMusicChannel = child:CreateCheckBox(L["CHANNEL_MUSIC"],
+function(self)
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:GetTooltipSetting("Channel") == "Music")
+end,
+function(self)
+	-- Don't uncheck self if checked again
+	if settings:GetTooltipSetting("Channel") == "Music" then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Channel", "Music")
+	end
+end)
+checkboxMusicChannel:AlignAfter(checkboxMasterChannel)
+
+local checkboxEffectsChannel = child:CreateCheckBox(L["CHANNEL_SFX"],
+function(self)
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:GetTooltipSetting("Channel") == "SFX")
+end,
+function(self)
+	-- Don't uncheck self if checked again
+	if settings:GetTooltipSetting("Channel") == "SFX" then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Channel", "SFX")
+	end
+end)
+checkboxEffectsChannel:SetPoint("TOPLEFT", textSoundChannel, "BOTTOMLEFT", 6, -3)
+
+local checkboxAmbienceChannel = child:CreateCheckBox(L["CHANNEL_AMBIENCE"],
+function(self)
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:GetTooltipSetting("Channel") == "Ambience")
+end,
+function(self)
+	-- Don't uncheck self if checked again
+	if settings:GetTooltipSetting("Channel") == "Ambience" then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Channel", "Ambience")
+	end
+end)
+checkboxAmbienceChannel:AlignAfter(checkboxEffectsChannel)
+
+local checkboxDialogChannel = child:CreateCheckBox(L["CHANNEL_DIALOG"],
+function(self)
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:GetTooltipSetting("Channel") == "Dialog")
+end,
+function(self)
+	-- Don't uncheck self if checked again
+	if settings:GetTooltipSetting("Channel") == "Dialog" then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Channel", "Dialog")
+	end
+end)
+checkboxDialogChannel:AlignAfter(checkboxAmbienceChannel)
 
 local checkboxCelebrateCollectedThings = child:CreateCheckBox(L["CELEBRATE_COLLECTED_CHECKBOX"],
 function(self)
@@ -1645,7 +1726,7 @@ function(self)
 	settings:SetTooltipSetting("Celebrate", self:GetChecked())
 end)
 checkboxCelebrateCollectedThings:SetATTTooltip(L["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"])
-checkboxCelebrateCollectedThings:AlignBelow(checkboxUseMasterAudio)
+checkboxCelebrateCollectedThings:AlignBelow(checkboxEffectsChannel, -1)
 
 local checkboxWarnRemovedThings = child:CreateCheckBox(L["WARN_REMOVED_CHECKBOX"],
 function(self)
