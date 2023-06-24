@@ -139,6 +139,30 @@ app.DynamicRunner = app.CreateRunner("dynamic");
 app.UpdateRunner = app.CreateRunner("update");
 app.FillRunner = app.CreateRunner("fill");
 app.WaypointRunner = app.CreateRunner("waypoint");
+-- Whether ATT should ignore saving data experienced during the play session
+app.IgnoreDataCaching = function()
+	-- This function currently returns false on Tournament realms. Very good. >_<
+	if IsOnTournamentRealm() then
+		app.print("Data will not be saved for this Realm");
+		app.IgnoreDataCaching = app.ReturnTrue;
+		return true;
+	end
+	local realmName = GetRealmName();
+	if  realmName:find("Mythic Dungeons") or
+		realmName:find("Arena Champions") or
+		realmName:find("US") or
+		realmName:find("AU") or
+		realmName:find("EU")
+		-- confirm realm tournament names elsewhere
+		-- or realmName:find("CN")
+		-- or realmName:find("TW")
+	then
+		app.print("Data will not be saved for this Realm");
+		app.IgnoreDataCaching = app.ReturnTrue;
+		return true;
+	end
+end
+-- Returns the Global reference by name, setting it to the 'init' value if not already existing
 local function LocalizeGlobal(globalName, init)
 	local val = _G[globalName];
 	if init and not val then
@@ -146,6 +170,15 @@ local function LocalizeGlobal(globalName, init)
 		_G[globalName] = val;
 	end
 	return val;
+end
+-- Returns the Global reference by name, setting it to the 'init' value if not already existing
+-- ONLY if no value returned from app.IgnoreDataCaching(). Otherwise the captured Global reference will be
+-- forced to an alternate value to prevent being captured into the Saved Variables when unloading
+local function LocalizeGlobalIfAllowed(globalName, init)
+	if app.IgnoreDataCaching() then
+		globalName = globalName.."__NOSTORE";
+	end
+	return LocalizeGlobal(globalName, init);
 end
 local constructor = function(id, t, typeID)
 	if t then
@@ -23126,7 +23159,7 @@ app.Startup = function()
 		app.Version = "v" .. v;
 	end
 
-	AllTheThingsAD = LocalizeGlobal("AllTheThingsAD", true);	-- For account-wide data.
+	AllTheThingsAD = LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
 	-- Cache the Localized Category Data
 	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
 	-- Add User Locale data as a fallback for Global Locale data
@@ -23170,7 +23203,7 @@ app.Startup = function()
 	});
 
 	-- Character Data Storage
-	local characterData = LocalizeGlobal("ATTCharacterData", true);
+	local characterData = LocalizeGlobalIfAllowed("ATTCharacterData", true);
 	local currentCharacter = characterData[app.GUID];
 	if not currentCharacter then
 		currentCharacter = {};
@@ -23308,7 +23341,7 @@ app.Startup = function()
 	end
 
 	-- Account Wide Data Storage
-	ATTAccountWideData = LocalizeGlobal("ATTAccountWideData", true);
+	ATTAccountWideData = LocalizeGlobalIfAllowed("ATTAccountWideData", true);
 	local accountWideData = ATTAccountWideData;
 	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
 	if not accountWideData.Artifacts then accountWideData.Artifacts = {}; end
@@ -23462,8 +23495,8 @@ app.InitDataCoroutine = function()
 	-- Wait for the Data Cache to return something.
 	while not app:GetDataCache() do coroutine.yield(); end
 
-	local accountWideData = LocalizeGlobal("ATTAccountWideData");
-	local characterData = LocalizeGlobal("ATTCharacterData");
+	local accountWideData = LocalizeGlobalIfAllowed("ATTAccountWideData");
+	local characterData = LocalizeGlobalIfAllowed("ATTCharacterData");
 	local currentCharacter = characterData[app.GUID];
 
 	-- Clean up other matching Characters with identical Name-Realm but differing GUID
