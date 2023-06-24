@@ -1,6 +1,5 @@
 10.1.5.49516
 pet(3587),	-- Lifelike Mechanical Duckling
-pet(3588),	-- Iggy
 pet(3589),	-- Rusziona
 pet(3590),	-- Belastrasza
 pet(3596),	-- Kabluey

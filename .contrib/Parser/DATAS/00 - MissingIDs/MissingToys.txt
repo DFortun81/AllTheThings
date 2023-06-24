@@ -1,6 +1,8 @@
 10.1.0.48661
 i(205463),	-- Skornak's Lava Ball \\ Skornace's Lava Ball \\ Skornace's Molten Pocket
 10.1.5.49516
+i(110560),	-- Garrison Hearthstone \\ ison Hearthstone
+i(140192),	-- Dalaran Hearthstone \\ ran Hearthstone
 i(206195),	-- Path of the Naaru
 i(206565),	-- Plagued Grain
 10.1.5.49595

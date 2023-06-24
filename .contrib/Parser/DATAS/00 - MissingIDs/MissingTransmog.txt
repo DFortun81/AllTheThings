@@ -63202,6 +63202,8 @@ s(115337)/i(178432),	-- zzzRated - Mail Leggings \\ Rated - Mail Leggings
 s(115338)/i(178437),	-- zzzRated - Mail Monnion \\ Rated - Mail Monnion
 s(115339)/i(178440),	-- zzzRated - Mail Belt \\ Rated - Mail Belt
 s(115340)/i(178445),	-- zzzRated - Mail Wristwraps \\ Rated - Mail Wristwraps
+9.0.2.35938
+s(115492)/i(180071),	-- Shrieking Sinseeker \\ Ardenweald Raid Bow \\ Ardenweald Covenant Bow
 9.0.2.35978
 s(115629)/i(184319),	--
 s(115650)/i(182067),	-- Antique Duelist's Rapier
@@ -63900,6 +63902,7 @@ s(166029)/i(188830),	--
 s(166030)/i(188831),	--
 s(166031)/i(188832),	--
 s(166032)/i(188833),	--
+s(166307)/i(188912),	-- Cuirass of the Grand Upwelling \\ 9.2 Raid - Class Sets - Monk - Armor - Leather Chest
 s(167073)/i(188953),	--
 s(167074)/i(188958),	--
 s(167232)/i(189142),	--
@@ -64072,6 +64075,7 @@ s(168497)/i(188079),	-- Anthemic Clasp \\ [PH] Copy Razorwing Scale Chain
 s(168498)/i(188080),	-- Anthemic Wristlinks \\ [PH] Copy Razorwing Scale Wristguards
 s(168503)/i(190393),	--
 9.2.0.41827
+s(168568)/i(188907),	-- Soulblade Grasps \\ 9.2 Raid - Class Sets - Rogue - Armor - Leather Hands
 s(168854)/i(190614),	-- Antros' Entrusted Bascinet \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Head
 s(168855)/i(190614),	-- Antros' Entrusted Bascinet \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Head
 s(168856)/i(190614),	-- Antros' Entrusted Bascinet \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Head
@@ -65136,22 +65140,18 @@ s(186295)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Drago
 s(186296)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
 s(186297)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
 10.1.0.48661
-s(186476)/i(204410),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - WRIST 3
 s(186478)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
 s(186480)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
-s(186494)/i(204411),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - SHOULDER 3
 s(186496)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
 s(186498)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
 s(186505)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186506)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186507)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
-s(186515)/i(204422),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Mail - CHEST 2
 s(186517)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
 s(186519)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
 s(186532)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186533)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186534)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
-s(186542)/i(204423),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Mail - WAIST 3
 s(186544)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
 s(186546)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
 s(186550)/i(202659),	-- Shackles of the Shadowed Bastille \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
@@ -65160,16 +65160,12 @@ s(186552)/i(202659),	-- Shackles of the Shadowed Bastille \\ 10.1 Raid - Black D
 s(186617)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(186618)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(186619)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
-s(186630)/i(204414),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Leather - HAND 2
 s(186632)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
 s(186634)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
-s(186645)/i(204415),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Leather - SHOULDER 2
 s(186647)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
 s(186649)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
-s(186660)/i(204430),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - FEET 2
 s(186662)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
 s(186664)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
-s(186693)/i(204429),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - HEAD 2
 s(186695)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186697)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186700)/i(204465),	-- Voice of the Silent Star

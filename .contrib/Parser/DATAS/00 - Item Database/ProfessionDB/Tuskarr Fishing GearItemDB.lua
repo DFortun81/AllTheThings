@@ -1,4 +1,3 @@
---[[
 local Items = root(ROOTS.ItemDBConditional);
 local Recipes = root(ROOTS.RecipeDB);
 local ProfessionID = TUSKARR_FISHING_GEAR;
@@ -54,4 +53,3 @@ i(0, 387833);	-- Polished Basalt Bracelet
 i(0, 387594);	-- Reinforced Irontree Harpoon Handle
 i(0, 388250);	-- Seavine Harpoon Rope
 i(0, 387375);	-- Serevite Harpoon Head
---]]

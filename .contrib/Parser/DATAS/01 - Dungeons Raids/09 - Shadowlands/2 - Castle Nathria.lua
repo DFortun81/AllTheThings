@@ -629,7 +629,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
-				["coords"] = { 41.3, 71.0, ORIBOS },	-- Ta'elfar <Trader of Histories>
+				["coord"] = { 41.3, 71.0, ORIBOS },
 			}),
 			d(LFR_RAID, bubbleDown({ ["timeline"] = { REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				n(ZONE_DROPS, {

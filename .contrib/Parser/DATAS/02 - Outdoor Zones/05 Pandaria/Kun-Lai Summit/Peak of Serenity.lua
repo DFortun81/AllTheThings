@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 					}),
 					q(31856, {	-- The Peak of Serenity - Begin Your Training
 						["isBreadcrumb"] = true,
-					}),	
+					}),
 					q(31855, {	-- The Peak of Serenity - Continue Your Training /lvl 10
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 31834,	-- Begin Your Training: Master Cheng
@@ -137,11 +137,13 @@ root(ROOTS.Zones, m(PANDARIA, {
 					}),
 					q(31857, {	-- The Peak of Serenity - Continue Your Training /lvl 10
 						["isBreadcrumb"] = true,
+						["sourceQuests"] = {
 						-- #if BEFORE 8.0.1
-						["sourceQuest"] = 31833,	-- Continue Your Training: Master Woo
+							31833,	-- Continue Your Training: Master Woo
 						-- #else
-						["sourceQuest"] = 31834,	-- Begin Your Training: Master Cheng
+							31834,	-- Begin Your Training: Master Cheng
 						-- #endif
+						},
 						["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
 					}),
 					q(31858, {	-- The Peak of Serenity - Continue Your Training /lvl 15
