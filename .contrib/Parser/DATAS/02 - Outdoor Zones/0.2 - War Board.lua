@@ -124,7 +124,16 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 			}),
 			q(49545, {	-- Warchief's Command: Frostfire Ridge!
+				-- Share Quest = 'You have completed that quest'
+				-- Party Sync + Share Quest = 'You have completed that quest'
+				-- Party Sync + WoD Chromie Time + Share Quest = 'You have completed that quest'
+				-- If anyone actually has a verifed way of obtaining this quest on a character which has already established their Garrison, please update this
+				["description"] = "Currently no verified way to actually obtain this quest on a character which has established their Garrison.\n\nOther characters will be able to obtain this Quest from the Warboard after completion of 'The Home of the Frostwolves' (33868) if completing the Tanaan intro quests, or possibly from the Warboard during WoD Chromie Time.",
+				-- It's reported you can somehow find this quest on the Warboard simply by being in WoD Chromie Time, but this was not the case for a new lvl 10
+				-- Taking the initial quest to the Dark Portal, then returning to Orgrimmar to access the Warboard also did not help
+				-- Additionally, it can be shared to a character who has not established their Garrison without any known pre-requisites being completed
 				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(39206, {	-- Warchief's Command: Grizzly Hills!
 				["isBreadcrumb"] = true,
