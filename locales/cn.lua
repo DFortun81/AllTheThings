@@ -1116,6 +1116,7 @@ for key, value in pairs({
 	[175761] = "瘟疫之地的内战",	-- Civil War in the Plaguelands
 	[175762] = "巫妖王的胜利",	-- The Lich King Triumphant
 	[175763] = "古老的仇恨 - 卡利姆多的开拓",	-- Old Hatreds - The Colonization of Kalimdor
+	[175802] = "小箱子",	-- Small Lockbox	--TODO: This was taken from wotlk Wowhead
 	[175854] = "两个帝国",	-- The Twin Empires
 	[175855] = "帝国的陷落",	-- Empires' Fall
 	[175856] = "夺灵者的愤怒",	-- Wrath of Soulflayer
@@ -1172,6 +1173,7 @@ for key, value in pairs({
 	[178144] = "巨魔的箱子",	-- Troll Chest
 	[178195] = "战歌之油",	-- Warsong Oil
 	[178204] = "一箱战歌之斧",	-- Warsong Axe Shipment
+	--TODO: [178224] = "Dire Pool",	-- Dire Pool
 	[178227] = "穆戈特的图腾篮",	-- Murgut's Totem Basket
 	[178553] = "亚什虫茧",	-- Hive'Ashi Pod
 	[178609] = "节日大雪",	-- Holiday Snow

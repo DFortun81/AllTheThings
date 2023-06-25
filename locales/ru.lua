@@ -1094,6 +1094,7 @@ for key,value in pairs({
 	[175761] = "Гражданская война в Чумных землях",	-- Civil War in the Plaguelands
 	[175762] = "Триумф Короля-лича",	-- The Lich King Triumphant
 	[175763] = "Древняя ненависть – Колонизация Калимдора",	-- Old Hatreds - The Colonization of Kalimdor
+	[175802] = "Маленький сейф",	-- Small Lockbox
 	[175854] = "Империи-близнецы",	-- The Twin Empires
 	[175855] = "Падение Империи",	-- Empires' Fall
 	[175856] = "Гнев Свежевателя Душ",	-- Wrath of Soulflayer
@@ -1150,6 +1151,7 @@ for key,value in pairs({
 	[178144] = "Тролльский сундук",	-- Troll Chest
 	[178195] = "Масло Песни Войны",	-- Warsong Oil
 	[178204] = "Партия топоров Песни Войны",	-- Warsong Axe Shipment
+	--TODO: [178224] = "Dire Pool",	-- Dire Pool
 	[178227] = "Корзина тотема Мургута",	-- Murgut's Totem Basket
 	[178553] = "Кокон Улья Аши",	-- Hive'Ashi Pod
 	[178609] = "Праздничный снег",	-- Holiday Snow

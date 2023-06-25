@@ -1031,6 +1031,7 @@ for key,value in pairs({
 	[175761] = "역병지대의 내란",	-- Civil War in the Plaguelands
 	[175762] = "리치 왕의 승리",	-- The Lich King Triumphant
 	[175763] = "오랜 증오 - 칼림도어에서의 식민지 건설",	-- Old Hatreds - The Colonization of Kalimdor
+	[175802] = "작은 금고",	-- Small Lockbox	--TODO: This was taken from wotlk Wowhead
 	[175854] = "쌍둥이 제국",	-- The Twin Empires
 	[175855] = "제국의 몰락",	-- Empires' Fall
 	[175856] = "영혼약탈자의 격노",	-- Wrath of Soulflayer
@@ -1087,6 +1088,7 @@ for key,value in pairs({
 	[178144] = "트롤 궤짝",	-- Troll Chest
 	[178195] = "전쟁노래 기름",	-- Warsong Oil
 	[178204] = "전쟁노래 도끼 상자",	-- Warsong Axe Shipment
+	--TODO: [178224] = "Dire Pool",	-- Dire Pool
 	[178227] = "머구트의 토템 광주리",	-- Murgut's Totem Basket
 	[178553] = "하이브아쉬 고치",	-- Hive'Ashi Pod
 	[178609] = "눈더미",	-- Holiday Snow
