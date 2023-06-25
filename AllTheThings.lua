@@ -5169,6 +5169,7 @@ app.BuildSourceParent = function(group)
 	if things then
 		local groupHash = group.hash;
 		local isAchievement = groupKey == "achievementID";
+		local SearchForObject = app.SearchForObject;
 		-- app.PrintDebug("Found Source things",#things,groupHash)
 		local parents, parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
@@ -5199,7 +5200,7 @@ app.BuildSourceParent = function(group)
 				end
 				-- Things tagged with an npcID should show that NPC as a Source
 				if thing.key ~= "npcID" and (thing.npcID or thing.creatureID) then
-					local parentNPC = app.SearchForObject("creatureID", thing.npcID or thing.creatureID, "field") or {["npcID"] = thing.npcID or thing.creatureID};
+					local parentNPC = SearchForObject("creatureID", thing.npcID or thing.creatureID, "field") or {["npcID"] = thing.npcID or thing.creatureID};
 					if parents then tinsert(parents, parentNPC);
 					else parents = { parentNPC }; end
 				end
@@ -5209,7 +5210,7 @@ app.BuildSourceParent = function(group)
 					if not parents then parents = {}; end
 					local parentNPC;
 					for _,npcID in ipairs(thing.crs) do
-						parentNPC = app.SearchForObject("creatureID", npcID, "field") or {["npcID"] = npcID};
+						parentNPC = SearchForObject("creatureID", npcID, "field") or {["npcID"] = npcID};
 						tinsert(parents, parentNPC);
 					end
 				end
@@ -5219,9 +5220,9 @@ app.BuildSourceParent = function(group)
 					for _,p in ipairs(thing.providers) do
 						type, id = p[1], p[2];
 						-- app.PrintDebug("Root Provider",type,id);
-						local pRef = (type == "i" and app.SearchForObject("itemID", id, "field"))
-								or   (type == "o" and app.SearchForObject("objectID", id, "field"))
-								or   (type == "n" and app.SearchForObject("npcID", id, "field"));
+						local pRef = (type == "i" and SearchForObject("itemID", id, "field"))
+								or   (type == "o" and SearchForObject("objectID", id, "field"))
+								or   (type == "n" and SearchForObject("npcID", id, "field"));
 						if pRef then
 							pRef = CreateObject(pRef);
 							if parents then tinsert(parents, pRef);
@@ -5230,6 +5231,22 @@ app.BuildSourceParent = function(group)
 							pRef = (type == "i" and app.CreateItem(id))
 								or   (type == "o" and app.CreateObject(id))
 								or   (type == "n" and app.CreateNPC(id));
+							if parents then tinsert(parents, pRef);
+							else parents = { pRef }; end
+						end
+					end
+				end
+				-- Things tagged with qgs should show the quest givers as a Source
+				if thing.qgs then
+					for _,id in ipairs(thing.qgs) do
+						-- app.PrintDebug("Root Provider",type,id);
+						local pRef = SearchForObject("npcID", id, "field");
+						if pRef then
+							pRef = CreateObject(pRef);
+							if parents then tinsert(parents, pRef);
+							else parents = { pRef }; end
+						else
+							pRef = app.CreateNPC(id);
 							if parents then tinsert(parents, pRef);
 							else parents = { pRef }; end
 						end
