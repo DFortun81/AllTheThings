@@ -1081,6 +1081,7 @@ for key,value in pairs({
 	[175761] = "Guerre civile dans les Maleterres",	-- Civil War in the Plaguelands
 	[175762] = "Le triomphe du roi-liche",	-- The Lich King Triumphant
 	[175763] = "Anciennes haines - La colonisation de Kalimdor",	-- Old Hatreds - The Colonization of Kalimdor
+	[175802] = "Petit coffret",	-- Small Lockbox
 	[175854] = "Les empires jumeaux",	-- The Twin Empires
 	[175855] = "La chute de l'empire",	-- Empires' Fall
 	[175856] = "La colère du fléau des âmes",	-- Wrath of Soulflayer
@@ -1137,6 +1138,7 @@ for key,value in pairs({
 	[178144] = "Coffre de Troll",	-- Troll Chest
 	[178195] = "Huile chanteguerre",	-- Warsong Oil
 	[178204] = "Cargaison de haches chanteguerres",	-- Warsong Axe Shipment
+	--TODO: [178224] = "Dire Pool",	-- Dire Pool
 	[178227] = "Panier à Totems de Murgut",	-- Murgut's Totem Basket
 	[178553] = "Alvéole de la Ruche'Ashi",	-- Hive'Ashi Pod
 	[178609] = "Neige d'hiver",	-- Holiday Snow
