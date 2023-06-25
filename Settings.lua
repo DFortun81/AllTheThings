@@ -33,9 +33,6 @@ BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"]
 local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", InterfaceOptionsFramePanelContainer or UIParent, BackdropTemplateMixin and "BackdropTemplate")
 app.Settings = settings
 settings.name = app:GetName()
-settings.MostRecentTab = nil	-- @SettingsV3: Needs to be removed, when we can without breaking everything
-settings.Tabs = {}	-- @SettingsV3: Needs to be removed, when we can without breaking everything
-settings.TabsByName = {}	-- @SettingsV3: Needs to be removed, when we can without breaking everything
 settings.Objects = {}
 settings.Callback = app.CallbackHandlers.Callback
 do	-- Add the ATT Settings frame into the WoW Settings options
@@ -204,26 +201,6 @@ local TooltipSettingsBase = {
 		["Currencies"] = true,
 	},
 }
-
--- local OnClickForTab = function(self, button, id)
--- 	local id = id or self:GetID()
--- 	local parent = self and self:GetParent() or settings
--- 	PanelTemplates_SetTab(parent, id)
--- 	-- print("CLICKED TAB", id, self and self:GetText())
--- 	for i,tab in ipairs(parent.Tabs) do
--- 		if i == id then
--- 			for j,o in ipairs(tab.objects) do
--- 				-- print(":Show()",o.text or (o.GetText and o:GetText() or (o.Text and o.Text.GetText and o.Text:GetText())))
--- 				o:Show()
--- 			end
--- 			if tab.OnRefresh then tab:OnRefresh() end
--- 		else
--- 			for j,o in ipairs(tab.objects) do
--- 				o:Hide()
--- 			end
--- 		end
--- 	end
--- end
 
 local RawSettings
 settings.Initialize = function(self)
@@ -1099,11 +1076,6 @@ ATTSettingsPanelMixin = {
 		-- 	end
 		-- end
 
-		-- if settings.MostRecentTab then
-		-- 	table.insert(settings.MostRecentTab.objects, scrollbar)
-		-- 	table.insert(settings.MostRecentTab.objects, scrollFrame)
-		-- 	table.insert(settings.MostRecentTab.objects, child)
-		-- end
 		return child
 	end,
 	CreateCheckBoxWithCount = function(self, text, OnRefresh, OnClick)
@@ -1467,9 +1439,12 @@ local headerTitle = child:CreateHeaderLabel(L["TITLE"])
 headerTitle:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4)
 headerTitle:SetScale(1.5)
 
-local headerVersion = child:CreateHeaderLabel("v"..C_AddOns.GetAddOnMetadata(appName, "Version"))	-- @SettingsV3: Now returns @project-versio@ instead of [Git], not sure why
+local headerVersion = child:CreateHeaderLabel(" ")
 headerVersion:SetPoint("TOPRIGHT", child, "TOPLEFT", 640, 0)
 headerVersion:SetJustifyH("RIGHT")
+headerVersion.OnRefresh = function(self)
+	self:SetText(app.Version)
+end
 
 -- Column 1
 local headerMinimapButton = child:CreateHeaderLabel(L["MINIMAP_LABEL"])
@@ -2713,7 +2688,7 @@ local allEquipmentFilters = {	-- Filter IDs
 }
 
 -- The 3 buttons
-f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
+local f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
 f:SetPoint("LEFT", headerMode, 0, 0)
 f:SetPoint("TOP", last, "BOTTOM", 0, -10)
 f:SetText(L["CLASS_DEFAULTS_BUTTON"])
