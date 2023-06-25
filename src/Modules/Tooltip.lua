@@ -44,11 +44,12 @@ local HookableTooltips = {
 	["GarrisonShipyardMapMissionTooltipTooltip"]=1,	-- tooltips of Navel missions from WoD Garrison
 	-- other addons which create user-visible tooltips that ATT should attach into
 	["SilverDragonLootTooltip"]=1,
-	-- Townlong Yak addons seem to use alternate tooltips now
+	-- Townlong Yak addons seem to use alternate, automatically appended tooltips now...
 	["NotGameTooltip"]=1,
 	["NotGameTooltip0"]=1,
-	["NotGameTooltip1"]=1,
-	["NotGameTooltip2"]=1,
+	["NotGameTooltip01"]=1,
+	["NotGameTooltip012"]=1,
+	["NotGameTooltip0123"]=1,
 };
 
 local function ClearTooltip(self)
