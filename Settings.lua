@@ -80,15 +80,7 @@ local Things = {
 }
 local GeneralSettingsBase = {
 	__index = {
-		["rBackground"] = "0",
-		["gBackground"] = "0",
-		["bBackground"] = "0",
-		["aBackground"] = "1",
-		["rBorder"] = "1",
-		["gBorder"] = "1",
-		["bBorder"] = "1",
-		["aBorder"] = "1",
-		["AccountMode"] = false,
+				["AccountMode"] = false,
 		["Completionist"] = true,
 		["MainOnly"] = false,
 		["DebugMode"] = false,
@@ -145,6 +137,8 @@ local GeneralSettingsBase = {
 		["CC:SL_COV_NFA"] = true,
 		["CC:SL_COV_NEC"] = true,
 		["Profile:ShowProfileLoadedMessage"] = true,
+		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1},
+		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1},
 	},
 }
 local FilterSettingsBase = {}
@@ -408,15 +402,14 @@ settings.SetWindowFromProfile = function(suffix)
 			end
 		end
 		-- Apply the user-set colours
-		-- TODO: turn this into 1 Hex color for Window:Background & Window:Border
-		local rBg = tonumber(settings:Get("rBackground")) or 0
-		local gBg = tonumber(settings:Get("gBackground")) or 0
-		local bBg = tonumber(settings:Get("bBackground")) or 0
-		local aBg = tonumber(settings:Get("aBackground")) or 0
-		local rBd = tonumber(settings:Get("rBorder")) or 0
-		local gBd = tonumber(settings:Get("gBorder")) or 0
-		local bBd = tonumber(settings:Get("bBorder")) or 0
-		local aBd = tonumber(settings:Get("aBorder")) or 0
+		local rBg = tonumber(settings:Get("Window:BackgroundColor").r) or 0
+		local gBg = tonumber(settings:Get("Window:BackgroundColor").g) or 0
+		local bBg = tonumber(settings:Get("Window:BackgroundColor").b) or 0
+		local aBg = tonumber(settings:Get("Window:BackgroundColor").a) or 0
+		local rBd = tonumber(settings:Get("Window:BorderColor").r) or 0
+		local gBd = tonumber(settings:Get("Window:BorderColor").g) or 0
+		local bBd = tonumber(settings:Get("Window:BorderColor").b) or 0
+		local aBd = tonumber(settings:Get("Window:BorderColor").a) or 0
 
 		for suffix, window in pairs(AllTheThings.Windows) do
 			window:SetBackdropColor(rBg, gBg, bBg, aBg)
@@ -3851,10 +3844,7 @@ local function changeBackgroundColor(restore)
 
 	-- Update our internal storage
  	r, g, b, a = newR, newG, newB, newA
-	settings:Set("rBackground", r)
-	settings:Set("gBackground", g)
-	settings:Set("bBackground", b)
-	settings:Set("aBackground", a)
+	settings:Set("Window:BackgroundColor", {r = newR, g = newG, b = newB, a = newA})
 
  	-- And update the actual windows
 	for suffix, window in pairs(AllTheThings.Windows) do
@@ -3874,10 +3864,7 @@ local function changeBorderColor(restore)
 
 	-- Update our internal storage
  	r, g, b, a = newR, newG, newB, newA
-	settings:Set("rBorder", r)
-	settings:Set("gBorder", g)
-	settings:Set("bBorder", b)
-	settings:Set("aBorder", a)
+	settings:Set("Window:BorderColor", {r = newR, g = newG, b = newB, a = newA})
 
  	-- And update the actual windows
 	for suffix, window in pairs(AllTheThings.Windows) do
@@ -3902,10 +3889,10 @@ buttonBackgroundColor:SetWidth(buttonBackgroundColor.Text:GetUnboundedStringWidt
 buttonBackgroundColor:SetHeight(22)
 buttonBackgroundColor:RegisterForClicks("AnyUp")
 buttonBackgroundColor:SetScript("OnClick", function()
-	local r = settings:Get("rBackground")
-	local g = settings:Get("gBackground")
-	local b = settings:Get("bBackground")
-	local a = settings:Get("aBackground")
+	local r = tonumber(settings:Get("Window:BackgroundColor").r) or 0
+	local g = tonumber(settings:Get("Window:BackgroundColor").g) or 0
+	local b = tonumber(settings:Get("Window:BackgroundColor").b) or 0
+	local a = tonumber(settings:Get("Window:BackgroundColor").a) or 0
 	ShowColorPicker(r, g, b, a, changeBackgroundColor)
 end)
 
@@ -3916,10 +3903,10 @@ buttonBorderColor:SetWidth(buttonBorderColor.Text:GetUnboundedStringWidth()+25)
 buttonBorderColor:SetHeight(22)
 buttonBorderColor:RegisterForClicks("AnyUp")
 buttonBorderColor:SetScript("OnClick", function()
-	local r = settings:Get("rBorder")
-	local g = settings:Get("gBorder")
-	local b = settings:Get("bBorder")
-	local a = settings:Get("aBorder")
+	local r = tonumber(settings:Get("Window:BorderColor").r) or 0
+	local g = tonumber(settings:Get("Window:BorderColor").g) or 0
+	local b = tonumber(settings:Get("Window:BorderColor").b) or 0
+	local a = tonumber(settings:Get("Window:BorderColor").a) or 0
 	ShowColorPicker(r, g, b, a, changeBorderColor)
 end)
 
@@ -3930,14 +3917,8 @@ buttonResetColor:SetWidth(buttonResetColor.Text:GetUnboundedStringWidth()+20)
 buttonResetColor:SetHeight(22)
 buttonResetColor:RegisterForClicks("AnyUp")
 buttonResetColor:SetScript("OnClick", function()
-	settings:Set("rBackground", 0)
-	settings:Set("gBackground", 0)
-	settings:Set("bBackground", 0)
-	settings:Set("aBackground", 1)
-	settings:Set("rBorder", 1)
-	settings:Set("gBorder", 1)
-	settings:Set("bBorder", 1)
-	settings:Set("aBorder", 1)
+	settings:Set("Window:BackgroundColor", {r = 0, g = 0, b = 0, a = 1})
+	settings:Set("Window:BorderColor", {r = 1, g = 1, b = 1, a = 1})
 
 	for suffix, window in pairs(AllTheThings.Windows) do
 		window:SetBackdropColor(0, 0, 0, 1)
@@ -4270,8 +4251,6 @@ local function InitializeATTSyncWindow()
 	local syncWindow = app:GetWindow("Sync")
 	child:RegisterObject(syncWindow)
 	syncWindow.OnRefresh = function()
-		-- TODO: need a event when ATT is 'ready' that this window becomes updated
-		-- when this is initially hit when building settings, ATT skips the update because app.IsReady is not yet set
 		syncWindow:SetVisible(true, true)
 	end
 	syncWindow.CloseButton:Disable()
