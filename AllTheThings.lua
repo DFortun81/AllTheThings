@@ -17217,7 +17217,7 @@ function app:GetDataCache()
 	if not app.Categories then
 		return nil;
 	end
-	
+
 	-- app.PrintDebug("Start loading data cache")
 	-- app.PrintMemoryUsage()
 	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
@@ -17835,7 +17835,7 @@ function app:GetDataCache()
 		end
 	});
 	g = unsortedData.g;
-	
+
 	-- Never Implemented
 	if app.Categories.NeverImplemented then
 		db = {};
@@ -17847,7 +17847,7 @@ function app:GetDataCache()
 		tinsert(g, db);
 		CacheFields(db);
 	end
-	
+
 	-- Hidden Achievement Triggers
 	if app.Categories.HiddenAchievementTriggers then
 		db = {};
@@ -18124,7 +18124,7 @@ function app:GetDataCache()
 	end
 	achievementsCategory:OnUpdate();
 	]]--
-	
+
 	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
 	-- app.PrintDebug("Finished loading data cache")
 	-- app.PrintMemoryUsage()
@@ -18316,7 +18316,7 @@ function app:BuildSearchResponse(field, value, clear)
 		wipe(ClonedHierarchyGroups);
 		wipe(ClonedHierarachyMapping);
 		wipe(SearchGroups);
-		
+
 		-- app.PrintDebug("BSR:",field,value,clear)
 		SetRescursiveFilters();
 		local cacheContainer = SearchForFieldContainer(field);
@@ -21811,7 +21811,6 @@ app:GetWindow("Prime"):SetSize(425, 305);
 app:GetWindow("Bounty");
 app:GetWindow("CurrentInstance");
 app:GetWindow("RaidAssistant");
-app:GetWindow("Sync");
 app:GetWindow("Tradeskills");
 app:GetWindow("WorldQuests");
 end)();
@@ -23458,7 +23457,7 @@ app.InitDataCoroutine = function()
 	-- app.PrintMemoryUsage("InitDataCoroutine")
 	-- Wait for the player to actually be 'in the game' to do further logic
 	while not app.InWorld do coroutine.yield(); end
-	
+
 	-- Wait for the Data Cache to return something.
 	while not app:GetDataCache() do coroutine.yield(); end
 
@@ -23529,7 +23528,7 @@ app.InitDataCoroutine = function()
 
 	-- Assign DGU OnUpdates
 	AssignDirectGroupOnUpdates();
-	
+
 	-- Perform Heirloom caching/upgrade generation
 	app.CacheHeirlooms();
 

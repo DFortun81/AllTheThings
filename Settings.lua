@@ -282,7 +282,6 @@ settings.Initialize = function(self)
 	end
 
 	-- Account Synchronization
-	self.TabsByName[L["SYNC_PAGE"]]:InitializeSyncWindow()	-- @SettingsV3 FIX THIS
 	if self:GetTooltipSetting("Auto:Sync") then
 		app:Synchronize(true)
 	end
@@ -1125,18 +1124,6 @@ Mixin(ATTSettingsPanelMixin, ATTSettingsObjectMixin);
 end
 
 Mixin(settings, ATTSettingsPanelMixin);
-
-settings.CreateTab = function(self, text)
-	local id = (self.numTabs or 0) + 1
-	self.numTabs = id
-	local tab = CreateFrame("Button", self:GetName() .. "-Tab" .. id, self, "PanelTopTabButtonTemplate")
-	Mixin(tab, ATTSettingsPanelMixin);
-	self:RegisterObject(tab);
-	tab:SetID(id)
-	tab:SetText(text)
-	self.TabsByName[text] = tab
-	return tab
-end
 
 -- Create a scrollframe and nested subcategory
 settings.CreateOptionsPage = function(self, name, nested)
@@ -4284,9 +4271,7 @@ end)();
 -----------------
 
 -- SETUP
-(function()
-local tab = settings:CreateTab(L["SYNC_PAGE"])	-- @SettingsV3: If I remove this it breaks. :(
-
+do
 -- Create the page
 local child = settings:CreateOptionsPage(L["SYNC_PAGE"], true)
 
@@ -4306,40 +4291,36 @@ end)
 checkboxAutoSync:SetATTTooltip(L["AUTO_SYNC_ACC_DATA_TOOLTIP"])
 checkboxAutoSync:SetPoint("TOPLEFT", headerSync, "BOTTOMLEFT", 4, 0)
 
--- @SettingsV3: The Sync frame needs a scroll before it loads in properly
-function tab:InitializeSyncWindow()	-- @SettingsV3: If I let this run on another frame instead of 'tab' it breaks. :(
+local function InitializeATTSyncWindow()
 	local syncWindow = app:GetWindow("Sync")
-	local syncWindow_Show,syncWindow_Refresh,naughty = syncWindow.Show, syncWindow.Refresh
-	syncWindow.OnRefresh = syncWindow.Update
-	syncWindow.Show = function(self)
-		if not naughty then
-			naughty = true
-			syncWindow_Show(self)
-			self:Update()
-		end
-		naughty = nil
-	end
-	syncWindow.Refresh = function(self)
-		self:ClearAllPoints()
-		self:SetPoint("LEFT", headerSync, 0, 0)
-		self:SetPoint("RIGHT", headerSync, "LEFT", 300, 0)
-		self:SetPoint("TOP", checkboxAutoSync, "BOTTOM", 0, 4)
-		self:SetPoint("BOTTOM", child, 0, -592)
-		syncWindow_Refresh(self)
+	child:RegisterObject(syncWindow)
+	syncWindow.OnRefresh = function()
+		-- TODO: need a event when ATT is 'ready' that this window becomes updated
+		-- when this is initially hit when building settings, ATT skips the update because app.IsReady is not yet set
+		syncWindow:SetVisible(true, true)
 	end
 	syncWindow.CloseButton:Disable()
+	syncWindow:ClearAllPoints()
+	syncWindow:SetPoint("LEFT", headerSync, 0, 0)
+	syncWindow:SetPoint("RIGHT", headerSync, "LEFT", 300, 0)
+	syncWindow:SetPoint("TOP", checkboxAutoSync, "BOTTOM", 0, 4)
+	syncWindow:SetPoint("BOTTOM", child, 0, -592)
 	syncWindow:SetClampedToScreen(false)
 	pcall(syncWindow.SetUserPlaced, syncWindow, false)
-	-- syncWindow:SetUserPlaced(false)
 	syncWindow:SetToplevel(false)
 	syncWindow:SetMovable(false)
 	syncWindow:SetResizable(false)
 	syncWindow:SetParent(child)
-	syncWindow:Show()
-	table.insert(settings.Objects, syncWindow)
 end
 
-end)();
+function child:OnRefresh()
+	if not self.InitializeATTSyncWindow then
+		InitializeATTSyncWindow();
+		self.InitializeATTSyncWindow = true;
+	end
+end
+
+end	-- "Sync" page --
 
 ------------------
 -- "About" page --
