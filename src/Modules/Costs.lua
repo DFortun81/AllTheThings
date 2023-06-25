@@ -12,7 +12,7 @@ local rawget, ipairs, pairs
 -- App locals
 
 -- Module locals
-local RecursiveGroupRequirementsFilter, SearchForField, GroupFilter, AcctOrDebug;
+local RecursiveGroupRequirementsFilter, SearchForField, GroupFilter, AcctOrDebug, SearchForFieldContainer, DGU, UpdateRunner;
 -- Ideally never used, but weird situations are possible to cause logic to execute prior to ATT even loading
 local function EmptyFunction() end
 
@@ -83,7 +83,6 @@ local function CacheFilters()
 	-- Cache repeat-used functions/values
 	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
 	GroupFilter = app.GroupFilter;
-	SearchForField = app.SearchForField;
 	AcctOrDebug = app.MODE_DEBUG_OR_ACCOUNT;
 end
 local function UpdateCostsByItemID(itemID, refresh, refs)
@@ -175,14 +174,14 @@ app.UpdateCosts = function()
 	local refresh = app._SettingsRefresh;
 
 	-- Get all itemIDAsCost entries
-	for itemID,refs in pairs(app.SearchForFieldContainer("itemIDAsCost")) do
+	for itemID,refs in pairs(SearchForFieldContainer("itemIDAsCost")) do
 		-- app.PrintDebug("Check Cost Item",itemID)
 		UpdateCostsByItemID(itemID, refresh, refs);
 	end
 	-- app.PrintDebug("UpdateCosts:Items")
 
 	-- Get all currencyIDAsCost entries
-	for currencyID,refs in pairs(app.SearchForFieldContainer("currencyIDAsCost")) do
+	for currencyID,refs in pairs(SearchForFieldContainer("currencyIDAsCost")) do
 		-- app.PrintDebug("Check Cost Curr",currencyID)
 		UpdateCostsByItemID(currencyID, refresh, refs);
 	end
@@ -197,8 +196,6 @@ app.UpdateCostGroup = function(c)
 	if costs then
 		-- app.PrintDebug("UpdateCostGroup:cost",#costs)
 		local cost, type, id, groups;
-		local DGU = app.DirectGroupUpdate;
-		local UpdateRunner = app.UpdateRunner;
 		for i=1,#costs do
 			cost = costs[i];
 			type, id = cost[1], cost[2];
@@ -246,6 +243,7 @@ app.CollectibleAsCost = function(t)
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
 	t.collectibleAsCost = false;
 	-- check the collectibles if any are considered collectible currently
+	CacheFilters();
 	local costNeeded;
 	for _,ref in ipairs(collectibles) do
 		-- Use the common collectibility check logic
@@ -259,4 +257,15 @@ app.CollectibleAsCost = function(t)
 	end
 	-- app.PrintDebug("CollectibleAsCost:nil",t.hash)
 	t.collectibleAsCost = nil;
+end
+
+-- Costs API Implementation
+-- Access via AllTheThings.Modules.Costs
+local api = {};
+app.Modules.Costs = api;
+api.OnReady = function()
+	SearchForField = app.SearchForField;
+	SearchForFieldContainer = app.SearchForFieldContainer;
+	DGU = app.DirectGroupUpdate;
+	UpdateRunner = app.UpdateRunner;
 end
