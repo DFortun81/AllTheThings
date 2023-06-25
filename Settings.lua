@@ -4286,6 +4286,13 @@ local function InitializeATTSyncWindow()
 	syncWindow:SetMovable(false)
 	syncWindow:SetResizable(false)
 	syncWindow:SetParent(child)
+
+	child:SetScript("OnShow", function()
+		local function refresh()
+			syncWindow:Refresh()
+		end
+		RunNextFrame(refresh)
+	end)
 end
 
 function child:OnRefresh()
