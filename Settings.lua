@@ -227,8 +227,7 @@ local TooltipSettingsBase = {
 
 local RawSettings
 settings.Initialize = function(self)
-	--PanelTemplates_SetNumTabs(self, self.numTabs)
-	--OnClickForTab(nil, "AUTO", 1)
+	-- app.PrintDebug("settings.Initialize")
 
 	-- Assign the default settings
 	if not settings:ApplyProfile() then
@@ -283,13 +282,14 @@ settings.Initialize = function(self)
 	end
 
 	-- Account Synchronization
-	self.TabsByName[L["SYNC_PAGE"]]:InitializeSyncWindow()
+	self.TabsByName[L["SYNC_PAGE"]]:InitializeSyncWindow()	-- @SettingsV3 FIX THIS
 	if self:GetTooltipSetting("Auto:Sync") then
 		app:Synchronize(true)
 	end
 
 	app._SettingsRefresh = GetTimePreciseSec()
 	settings._Initialize = true
+	-- app.PrintDebug("settings.Initialize:Done")
 end
 local function rawcopy(source, copy)
 	if source and copy then
@@ -432,14 +432,15 @@ settings.SetWindowFromProfile = function(suffix)
 			end
 		end
 		-- Apply the user-set colours
-		local rBg = settings:Get("rBackground")
-		local gBg = settings:Get("gBackground")
-		local bBg = settings:Get("bBackground")
-		local aBg = settings:Get("aBackground")
-		local rBd = settings:Get("rBorder")
-		local gBd = settings:Get("gBorder")
-		local bBd = settings:Get("bBorder")
-		local aBd = settings:Get("aBorder")
+		-- TODO: turn this into 1 Hex color for Window:Background & Window:Border
+		local rBg = tonumber(settings:Get("rBackground")) or 0
+		local gBg = tonumber(settings:Get("gBackground")) or 0
+		local bBg = tonumber(settings:Get("bBackground")) or 0
+		local aBg = tonumber(settings:Get("aBackground")) or 0
+		local rBd = tonumber(settings:Get("rBorder")) or 0
+		local gBd = tonumber(settings:Get("gBorder")) or 0
+		local bBd = tonumber(settings:Get("bBorder")) or 0
+		local aBd = tonumber(settings:Get("aBorder")) or 0
 
 		for suffix, window in pairs(AllTheThings.Windows) do
 			window:SetBackdropColor(rBg, gBg, bBg, aBg)
@@ -688,13 +689,18 @@ settings.SetPersonal = function(self, setting, value)
 	AllTheThingsSettingsPerCharacter[setting] = value
 	self:Refresh()
 end
+
 do
 local function Refresh(self)
-	-- app.PrintDebug("Settings.Refresh")
-	settings.checkboxSkipAutoRefresh:OnRefresh()
-	for i,object in ipairs(self.Objects) do
-		if object.OnRefresh then object:OnRefresh() end
+	local objects = self.Objects
+	-- app.PrintDebug("Settings.Refresh",objects and #objects)
+	if objects then
+		for _,object in ipairs(objects) do
+			if object.OnRefresh then object:OnRefresh() end
+			if object.RefreshChildren then object:RefreshChildren() end
+		end
 	end
+	-- app.PrintDebug("Settings.Refresh:Done")
 	self.__Refreshing = nil
 end
 settings.Refresh = function(self)
@@ -704,6 +710,7 @@ settings.Refresh = function(self)
 	settings.Callback(Refresh, self)
 end
 end
+
 -- Applies a basic backdrop color to a given frame
 -- r/g/b expected in 1-255 range
 settings.ApplyBackdropColor = function(frame, r, g, b, a)
@@ -711,384 +718,433 @@ settings.ApplyBackdropColor = function(frame, r, g, b, a)
 	frame.back:SetColorTexture(r/255,g/255,b/255,a)
 	frame.back:SetAllPoints(frame)
 end
--- Creates a font string attached to the top of the provided frame with the given text
-local function AddLabel(frame, text)
-	local label = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
-	label:SetPoint("BOTTOMLEFT", frame, "TOPLEFT", 0, -2)
-	label:SetJustifyH("LEFT")
-	label:SetHeight(18)
-	label:SetText(text)
-	return label
-end
--- Disables, checks, fades the checkbox
-local OnRefreshCheckedDisabled = function(self)
-	self:SetChecked(true)
-	self:Disable()
-	self:SetAlpha(0.4)
-end
--- Performs SetPoint anchoring against the 'other' frame to align this Checkbox below it. Allows an 'indent' which defines how many steps of indentation to
--- apply either positive (right) or negative (left), or specifying another frame against which to LEFT-align
-local AlignBelow = function(self, other, indent)
-	if type(indent) == "number" then
-		self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", indent * 8, 4)
-	elseif type(indent) == "table" then
-		self:SetPoint("TOP", other, "BOTTOM", 0, 4)
-		self:SetPoint("LEFT", indent, "LEFT")
-	else
-		self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", 0, 4)
+local function Mixin(o, mixin)
+	for k,v in pairs(mixin) do
+		o[k] = v;
 	end
+	return o;
 end
--- Performs SetPoint anchoring against the 'other' frame to align this Checkbox after it (right)
-local AlignAfter = function(self, other)
-	local text = other.Text
-	if text and text:GetText() then
-		self:SetPoint("TOP", other, "TOP")
-		self:SetPoint("LEFT", other.Text, "RIGHT", 4, 0)
-	else
-		self:SetPoint("LEFT", other, "RIGHT", -4, 0)
+local ATTSettingsObjectMixin, ATTSettingsPanelMixin;
+-- Mixins
+do
+ATTSettingsObjectMixin = {
+	-- Performs SetPoint anchoring against the 'other' frame to align this Checkbox below it. Allows an 'indent' which defines how many steps of indentation to
+	-- apply either positive (right) or negative (left), or specifying another frame against which to LEFT-align
+	AlignBelow = function(self, other, indent)
+		if type(indent) == "number" then
+			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", indent * 8, 4)
+		elseif type(indent) == "table" then
+			self:SetPoint("TOP", other, "BOTTOM", 0, 4)
+			self:SetPoint("LEFT", indent, "LEFT")
+		else
+			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", 0, 4)
+		end
+	end,
+	-- Performs SetPoint anchoring against the 'other' frame to align this Checkbox after it (right)
+	AlignAfter = function(self, other, add)
+		local text = other.Text
+		add = add or 0;
+		if text and text:GetText() then
+			self:SetPoint("TOP", other, "TOP")
+			self:SetPoint("LEFT", other.Text, "RIGHT", 4 + add, 0)
+		else
+			self:SetPoint("LEFT", other, "RIGHT", -4 + add, 0)
+		end
+	end,
+	-- Disables, checks, fades the checkbox
+	OnRefreshCheckedDisabled = function(self)
+		if self.SetChecked then
+			self:SetChecked(true)
+		end
+		if self.Disable then
+			self:Disable()
+		end
+		if self.SetAlpha then
+			self:SetAlpha(0.4)
+		end
+	end,
+	-- Creates a font string attached to the top of the provided frame with the given text
+	AddLabel = function(self, text)
+		local label = self:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+		Mixin(label, ATTSettingsObjectMixin);
+		self:RegisterObject(label);
+		label:SetPoint("BOTTOMLEFT", self, "TOPLEFT", 0, -2)
+		label:SetJustifyH("LEFT")
+		label:SetHeight(18)
+		label:SetText(text)
+		return label
+	end,
+	-- Registers an Object within itself
+	RegisterObject = function(self, o)
+		if not self.Objects then self.Objects = {} end
+		tinsert(self.Objects, o);
+	end,
+	-- Allows an Object to Refresh all Objects
+	RefreshChildren = function(self)
+		local objects = self.Objects
+		if objects then
+			for _,object in ipairs(objects) do
+				if object.OnRefresh then object:OnRefresh() end
+				if object.RefreshChildren then object:RefreshChildren() end
+			end
+		end
 	end
+};
+ATTSettingsPanelMixin = {
+	-- Create a header label
+	CreateHeaderLabel = function(self, text)
+		-- Create the header label
+		local headerLabel = self:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
+		Mixin(headerLabel, ATTSettingsObjectMixin);
+		self:RegisterObject(headerLabel);
+		headerLabel:SetJustifyH("LEFT")
+		headerLabel:SetText(text)
+		headerLabel:SetWordWrap(false)
+		headerLabel:Show()
+
+		-- Return the header label
+		return headerLabel
+	end,
+	-- Create a text label, which defaults to the entire width of the options frame
+	CreateTextLabel = function(self, text)
+		-- Create the text label
+		local textLabel = self:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+		Mixin(textLabel, ATTSettingsObjectMixin);
+		self:RegisterObject(textLabel);
+		textLabel:SetJustifyH("LEFT")
+		textLabel:SetText(text)
+		textLabel:SetWidth(640)	-- This can be manually adjusted afterwards to 320 for half-columns
+		textLabel:Show()
+
+		-- Return the text label
+		return textLabel
+	end,
+	CreateCheckBox = function(self, text, OnRefresh, OnClick)
+		if not text then
+			print("Invalid Checkbox Info")
+			text = "INVALID CHECKBOX"
+		end
+		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "InterfaceOptionsCheckButtonTemplate")
+		Mixin(cb, ATTSettingsObjectMixin);
+		self:RegisterObject(cb);
+		if OnClick then cb:SetScript("OnClick", OnClick) end
+		cb.OnRefresh = OnRefresh or cb.OnRefreshCheckedDisabled
+		cb.Text:SetText(text)
+		cb.Text:SetFont("Fonts\\FRIZQT__.TTF", 11, "")
+		cb.Text:SetWordWrap(false)
+		return cb
+	end,
+	--- Opts:
+	---     name (string): Name of the dropdown (lowercase)
+	---     items (Table): String table of the dropdown options.
+	---     defaultVal (String): String value for the dropdown to default to (empty otherwise).
+	---     changeFunc (Function): A custom function to be called, after selecting a dropdown option.
+	-- Reference: https://medium.com/@JordanBenge/creating-a-wow-dropdown-menu-in-pure-lua-db7b2f9c0364
+	CreateDropdown = function(self, opts, OnRefresh)
+		error("DO NOT USE THIS METHOD")
+		local dropdown_name = self:GetName().."DD"..(opts.name or settings.UniqueCounter.CreateDropdown)
+		local menu_items = opts.items or {}
+		local title_text = opts.title or ""
+		local width = opts.width or 0
+		local default_val = opts.defaultVal or ""
+		local change_func = opts.changeFunc or function() end
+		local template = opts.template or "UIDropDownMenuTemplate"
+
+		local dropdown = CreateFrame("Frame", dropdown_name, self, template)
+		Mixin(dropdown, ATTSettingsObjectMixin);
+		self:RegisterObject(dropdown);
+		dropdown:SetHeight(19)
+		local dd_title = dropdown:AddLabel(title_text)
+
+		-- Sets the dropdown width to the largest item string width.
+		if width == 0 then
+			for _,item in ipairs(menu_items) do
+				dd_title:SetText(item)
+				local text_width = dd_title:GetStringWidth() + 5
+				if text_width > width then
+					width = text_width
+				end
+			end
+		end
+		dd_title:SetText(title_text)
+
+		--[[
+		function UIDropDownMenu_Initialize(frame, initFunction, displayMode, level, menuList)
+			frame.menuList = menuList
+			securecall("UIDropDownMenu_InitializeHelper", frame) -- <-- this function is cancer
+			-- Set the initialize function and call it.  The initFunction populates the dropdown list.
+			if ( initFunction ) then
+				UIDropDownMenu_SetInitializeFunction(frame, initFunction)
+				initFunction(frame, level, frame.menuList)
+			end
+			--master frame
+			if(level == nil) then
+				level = 1
+			end
+			local dropDownList = _G["DropDownList"..level]
+			dropDownList.dropdown = frame
+			dropDownList.shouldRefresh = true
+			UIDropDownMenu_SetDisplayMode(frame, displayMode)
+		end
+		]]
+		-- UIDROPDOWNMENU_OPEN_MENU = dropdown
+		UIDropDownMenu_SetInitializeFunction(dropdown,
+			function(self)
+				local info
+				for key, val in pairs(menu_items) do
+					info = {}
+					info.text = val
+					info.checked = false
+					-- info.menuList = key
+					info.hasArrow = false
+					info.owner = dropdown
+					info.func = function(b, arg1, arg2, checked)
+						-- print("Dropdown option clicked",b.value,arg1,arg2,checked)
+						UIDropDownMenu_SetSelectedName(dropdown, b.value)
+						b.checked = true
+						change_func(dropdown, b.value)
+					end
+					UIDropDownMenu_AddButton(info)
+				end
+			end)
+		-- call the initialize function now that it's been set
+		dropdown:initialize()
+		UIDropDownMenu_SetDisplayMode(dropdown, "MENU")
+		UIDropDownMenu_SetWidth(dropdown, width, 5)
+		UIDropDownMenu_SetSelectedName(dropdown, default_val)
+		-- UIDropDownMenu_Initialize(dropdown,
+		-- 	,
+		-- 	"MENU",
+		-- 	dropdown_name)
+		-- UIDROPDOWNMENU_OPEN_MENU = nil
+
+		dropdown.OnRefresh = OnRefresh
+
+		-- UIDropDownMenu_SetText(dropdown, default_val)
+		dropdown:SetHitRectInsets(0,0,0,0)
+
+		return dropdown
+	end,
+	CreateTextbox = function(self, opts, functions)
+
+		local name = self:GetName().."TB"..(opts.name or settings.UniqueCounter.CreateTextbox)
+		local title = opts.title
+		local text = opts.text
+		local width = opts.width or 150
+		local template = opts.template or "InputBoxTemplate"
+
+		local editbox = CreateFrame("EditBox", name, self, template)
+		Mixin(editbox, ATTSettingsObjectMixin);
+		self:RegisterObject(editbox);
+		editbox:SetAutoFocus(false)
+		editbox:SetTextInsets(0, 0, 3, 3)
+		editbox:SetMaxLetters(256)
+		editbox:SetHeight(19)
+		editbox:SetWidth(width)
+
+		if text then
+			editbox:SetText(text)
+		end
+
+		if title then
+			editbox:AddLabel(title)
+		end
+
+		-- setup textbox functions
+		if functions then
+			for k,f in pairs(functions) do
+				editbox[k] = f
+			end
+		end
+		-- print("created custom EditBox using",template)
+
+		return editbox
+		--[[ https://www.townlong-yak.com/framexml/live/go/BoxTemplate
+		Virtual EditBox AuctionHouseLevelRangeEditBoxTemplate
+		Virtual EditBox AuctionHouseQuantityInputEditBoxTemplate
+		Virtual EditBox AuctionHouseSearchBoxTemplate
+		Virtual EditBox AuthChallengeEditBoxTemplate
+		Virtual EditBox AutoCompleteEditBoxTemplate
+		Virtual EditBox BagSearchBoxTemplate
+		Virtual EditBox ChatFrameEditBoxTemplate
+		Virtual EditBox CommunitiesChatEditBoxTemplate
+		Virtual EditBox CreateChannelPopupEditBoxTemplate
+		Virtual EditBox InputBoxTemplate
+		Virtual EditBox LargeInputBoxTemplate
+		Virtual EditBox LargeMoneyInputBoxTemplate
+		Virtual EditBox LFGListEditBoxTemplate
+		Virtual EditBox NameChangeEditBoxTemplate
+		Virtual EditBox SearchBoxTemplate
+		Virtual EditBox SharedEditBoxTemplate
+		Virtual EditBox StoreEditBoxTemplate
+		]]
+	end,
+	CreateButton = function(self, opts, functions)
+
+		local name = self:GetName().."B"..(opts.name or settings.UniqueCounter.CreateButton)
+		local text = opts.text
+		local width = opts.width
+		local tooltip = opts.tooltip
+		local refs = opts.refs
+		local template = opts.template or "UIPanelButtonTemplate"
+
+		local f = CreateFrame("Button", name, self, template)
+		Mixin(f, ATTSettingsObjectMixin)
+		self:RegisterObject(f)
+		f:SetText(text)
+		if width then
+			f:SetWidth(width)
+		else
+			f:SetWidth(f:GetFontString():GetUnboundedStringWidth() + 20)
+		end
+		f:SetHeight(26)
+		f:RegisterForClicks("AnyUp")
+
+		if functions then
+			for k,func in pairs(functions) do
+				f:SetScript(k, func)
+			end
+		end
+
+		if refs then
+			for k,ref in pairs(refs) do
+				f[k] = ref
+			end
+		end
+
+		if tooltip then
+			f:SetATTTooltip(tooltip)
+		end
+
+		return f
+	end,
+	-- Returns the frame which will be offset by the associated scrollbar
+	-- .ScrollContainer - the frame which acts as the scrollable area within which the scrollframe will be visible
+	-- :SetMaxScroll(max) - change how much the scrollbar is able to scroll the scrollframe
+	-- :CreateCheckBox(text, OnRefresh, OnClick) - create a checkbox attached to the scrollable area
+	CreateScrollFrame = function(self)
+		-- Create the ScrollFrame
+		local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, self, "ScrollFrameTemplate")
+		local child = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
+		Mixin(child, ATTSettingsPanelMixin);
+		self:RegisterObject(child);
+		scrollFrame:SetScrollChild(child)
+		child:SetWidth(1)	-- This is automatically defined, so long as the attribute exists at all
+		child:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
+		child.ScrollContainer = scrollFrame
+		-- Move the Scrollbar inside of the frame which it scrolls
+		scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+		scrollFrame.ScrollBar:SetPoint("TOP", 0, 5)
+
+		-- local scrollFrame = CreateFrame("Frame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, self, "ScrollFrameTemplate")
+		-- scrollFrame:SetClipsChildren(true)
+		-- scrollFrame:EnableMouseWheel(true)
+
+		-- local child = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe, scrollFrame)
+		-- Mixin(child, ATTSettingsPanelMixin)
+		-- self:RegisterObject(child)
+		-- child:SetPoint("TOP")
+		-- child:SetPoint("RIGHT", -scrollWidth, 0)
+		-- child:SetPoint("LEFT")
+
+		-- local scrollbar
+		-- if SCROLL_FRAME_SCROLL_BAR_TEMPLATE then
+		-- 	scrollbar = CreateFrame("EventFrame", settings:GetName().."SB"..settings.UniqueCounter.AddScrollbar, scrollFrame, SCROLL_FRAME_SCROLL_BAR_TEMPLATE)
+		-- 	scrollbar:SetPoint("TOPRIGHT", scrollFrame, -8, 0)
+		-- 	scrollbar:SetPoint("BOTTOMRIGHT", scrollFrame, -8, 0)
+		-- 	scrollbar:SetHideIfUnscrollable(false)
+		-- 	scrollbar:SetHideTrackIfThumbExceedsTrack(false)
+
+		-- 	local CurrentValue, MaxValue = 0, 100
+		-- 	scrollbar:SetPanExtentPercentage(0.25)
+		-- 	scrollbar:SetScrollPercentage(0)
+		-- 	scrollbar:RegisterCallback(BaseScrollBoxEvents.OnScroll, function(o, scrollPercentage)
+		-- 		CurrentValue = scrollPercentage * MaxValue
+		-- 		child:SetPoint("TOP", 0, CurrentValue)
+		-- 	end, scrollFrame)
+		-- 	scrollFrame:SetScript("OnMouseWheel", function(self, delta)
+		-- 	scrollbar:ScrollStepInDirection(-delta)
+		-- 	end)
+
+		-- 	child.SetMaxScroll = function(frame, maxValue)
+		-- 		MaxValue = maxValue
+		-- 		scrollbar:SetVisibleExtentPercentage(100 / maxValue)
+		-- 		scrollbar:ScrollStepInDirection(-0.01)
+		-- 		scrollbar:ScrollStepInDirection(0.01)
+		-- 	end
+		-- else
+		-- 	local CurrentValue = 0
+		-- 	scrollbar = CreateFrame("Slider", settings:GetName().."SB"..settings.UniqueCounter.AddScrollbar, scrollFrame, "UIPanelScrollBarTemplate")
+		-- 	scrollbar:SetPoint("TOPRIGHT", scrollFrame, 0, -scrollWidth)
+		-- 	scrollbar:SetPoint("BOTTOMRIGHT", scrollFrame, 0, scrollWidth)
+		-- 	scrollbar:SetScript("OnValueChanged", function(self, delta)
+		-- 		local un = math.floor(delta)
+		-- 		local up = un + 1
+		-- 		CurrentValue = (up - delta) > (-(un - delta)) and un or up
+		-- 		child:SetPoint("TOP", 0, CurrentValue)
+		-- 	end)
+		-- 	scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND")
+		-- 	scrollbar.back:SetColorTexture(0.1,0.1,0.1,1)
+		-- 	scrollbar.back:SetAllPoints(scrollbar)
+		-- 	scrollbar:SetMinMaxValues(0, 100)
+		-- 	scrollbar:SetValueStep(10)
+		-- 	scrollbar.CurrentValue = 0
+		-- 	scrollbar:SetWidth(scrollWidth)
+		-- 	scrollFrame:SetScript("OnMouseWheel", function(self, delta)
+		-- 		scrollbar:SetValue(CurrentValue - (delta * 40)) -- Last number here controls scroll speed.
+		-- 	end)
+		-- 	child.SetMaxScroll = function(frame, maxValue)
+		-- 		scrollbar:SetMinMaxValues(0, maxValue)
+		-- 		scrollbar:SetValue(25)
+		-- 		scrollbar:SetValue(0)
+		-- 	end
+		-- end
+
+		-- if settings.MostRecentTab then
+		-- 	table.insert(settings.MostRecentTab.objects, scrollbar)
+		-- 	table.insert(settings.MostRecentTab.objects, scrollFrame)
+		-- 	table.insert(settings.MostRecentTab.objects, child)
+		-- end
+		return child
+	end,
+	CreateCheckBoxWithCount = function(self, text, OnRefresh, OnClick)
+		local box = self:CreateCheckBox(text, OnRefresh, OnClick)
+		Mixin(box, ATTSettingsObjectMixin)
+		box:SetParent(self)
+		self:RegisterObject(box)
+		if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 } end
+		if not self.ATT.CB then self.ATT.CB = {} self.ATT.CB_Count = 0 end
+		local count = self.ATT.CB_Count + 1
+		self.ATT.CB[count] = box
+		self.ATT.CB_Count = count
+		return box
+	end,
+};
+-- All Object mixins apply to the Panels as well
+Mixin(ATTSettingsPanelMixin, ATTSettingsObjectMixin);
 end
-settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
-	if not text then
-		print("Invalid Checkbox Info")
-		text = "INVALID CHECKBOX"
-	end
-	local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "InterfaceOptionsCheckButtonTemplate")
-	table.insert(self.Objects, cb)
-	if OnClick then cb:SetScript("OnClick", OnClick) end
-	cb.OnRefresh = OnRefresh or OnRefreshCheckedDisabled
-	cb.Text:SetText(text)
-	cb.Text:SetFont("Fonts\\FRIZQT__.TTF", 11, "")
-	cb.Text:SetWordWrap(false)
-	--cb.Text:SetWidth(cb.Text:GetUnboundedStringWidth())	-- Seems unneeded with above line
-	cb.AlignBelow = AlignBelow
-	cb.AlignAfter = AlignAfter
-	return cb
-end
+
+Mixin(settings, ATTSettingsPanelMixin);
+
 settings.CreateTab = function(self, text)
 	local id = (self.numTabs or 0) + 1
 	self.numTabs = id
 	local tab = CreateFrame("Button", self:GetName() .. "-Tab" .. id, self, "PanelTopTabButtonTemplate")
-	-- using the PanelTopTabButtonTemplate seems to auto-insert the button into the .Tabs element of the parent now
-	self.MostRecentTab = tab
-	tab.objects = {}
+	Mixin(tab, ATTSettingsPanelMixin);
+	self:RegisterObject(tab);
 	tab:SetID(id)
 	tab:SetText(text)
 	self.TabsByName[text] = tab
-	tab:SetScript("OnClick", OnClickForTab)
 	return tab
-end
---- Opts:
----     name (string): Name of the dropdown (lowercase)
----     items (Table): String table of the dropdown options.
----     defaultVal (String): String value for the dropdown to default to (empty otherwise).
----     changeFunc (Function): A custom function to be called, after selecting a dropdown option.
--- Reference: https://medium.com/@JordanBenge/creating-a-wow-dropdown-menu-in-pure-lua-db7b2f9c0364
-settings.CreateDropdown = function(self, opts, OnRefresh)
-	error("DO NOT USE THIS METHOD")
-	local dropdown_name = self:GetName().."DD"..(opts.name or settings.UniqueCounter.CreateDropdown)
-    local menu_items = opts.items or {}
-    local title_text = opts.title or ""
-    local width = opts.width or 0
-    local default_val = opts.defaultVal or ""
-    local change_func = opts.changeFunc or function() end
-	local template = opts.template or "UIDropDownMenuTemplate"
-
-    local dropdown = CreateFrame("Frame", dropdown_name, self, template)
-	dropdown:SetHeight(19)
-    local dd_title = AddLabel(dropdown, title_text)
-
-	-- Sets the dropdown width to the largest item string width.
-	 if width == 0 then
-		for _,item in ipairs(menu_items) do
-			dd_title:SetText(item)
-			local text_width = dd_title:GetStringWidth() + 5
-			if text_width > width then
-				width = text_width
-			end
-		end
-	end
-    dd_title:SetText(title_text)
-
-	--[[
-	function UIDropDownMenu_Initialize(frame, initFunction, displayMode, level, menuList)
-		frame.menuList = menuList
-		securecall("UIDropDownMenu_InitializeHelper", frame) -- <-- this function is cancer
-		-- Set the initialize function and call it.  The initFunction populates the dropdown list.
-		if ( initFunction ) then
-			UIDropDownMenu_SetInitializeFunction(frame, initFunction)
-			initFunction(frame, level, frame.menuList)
-		end
-		--master frame
-		if(level == nil) then
-			level = 1
-		end
-		local dropDownList = _G["DropDownList"..level]
-		dropDownList.dropdown = frame
-		dropDownList.shouldRefresh = true
-		UIDropDownMenu_SetDisplayMode(frame, displayMode)
-	end
-	]]
-	-- UIDROPDOWNMENU_OPEN_MENU = dropdown
-	UIDropDownMenu_SetInitializeFunction(dropdown,
-		function(self)
-			local info
-			for key, val in pairs(menu_items) do
-				info = {}
-				info.text = val
-				info.checked = false
-				-- info.menuList = key
-				info.hasArrow = false
-				info.owner = dropdown
-				info.func = function(b, arg1, arg2, checked)
-					-- print("Dropdown option clicked",b.value,arg1,arg2,checked)
-					UIDropDownMenu_SetSelectedName(dropdown, b.value)
-					b.checked = true
-					change_func(dropdown, b.value)
-				end
-				UIDropDownMenu_AddButton(info)
-			end
-		end)
-	-- call the initialize function now that it's been set
-	dropdown:initialize()
-	UIDropDownMenu_SetDisplayMode(dropdown, "MENU")
-    UIDropDownMenu_SetWidth(dropdown, width, 5)
-	UIDropDownMenu_SetSelectedName(dropdown, default_val)
-	-- UIDropDownMenu_Initialize(dropdown,
-	-- 	,
-	-- 	"MENU",
-	-- 	dropdown_name)
-	-- UIDROPDOWNMENU_OPEN_MENU = nil
-
-	table.insert(self.Objects, dropdown)
-	dropdown.OnRefresh = OnRefresh
-
-	-- UIDropDownMenu_SetText(dropdown, default_val)
-	dropdown:SetHitRectInsets(0,0,0,0)
-
-    return dropdown
-end
-settings.CreateTextbox = function(self, opts, functions)
-
-	local name = self:GetName().."TB"..(opts.name or settings.UniqueCounter.CreateTextbox)
-	local title = opts.title
-	local text = opts.text
-	local width = opts.width or 150
-	local template = opts.template or "InputBoxTemplate"
-
-	local editbox = CreateFrame("EditBox", name, self, template)
-	editbox:SetAutoFocus(false)
-	editbox:SetTextInsets(0, 0, 3, 3)
-	editbox:SetMaxLetters(256)
-	editbox:SetHeight(19)
-	editbox:SetWidth(width)
-
-	if text then
-		editbox:SetText(text)
-	end
-
-	if title then
-		AddLabel(editbox, title)
-	end
-
-	-- setup textbox functions
-	if functions then
-		for k,f in pairs(functions) do
-			editbox[k] = f
-		end
-	end
-	-- print("created custom EditBox using",template)
-
-	table.insert(settings.Objects, editbox)
-
-	return editbox
-	--[[ https://www.townlong-yak.com/framexml/live/go/BoxTemplate
-Virtual EditBox AuctionHouseLevelRangeEditBoxTemplate
-Virtual EditBox AuctionHouseQuantityInputEditBoxTemplate
-Virtual EditBox AuctionHouseSearchBoxTemplate
-Virtual EditBox AuthChallengeEditBoxTemplate
-Virtual EditBox AutoCompleteEditBoxTemplate
-Virtual EditBox BagSearchBoxTemplate
-Virtual EditBox ChatFrameEditBoxTemplate
-Virtual EditBox CommunitiesChatEditBoxTemplate
-Virtual EditBox CreateChannelPopupEditBoxTemplate
-Virtual EditBox InputBoxTemplate
-Virtual EditBox LargeInputBoxTemplate
-Virtual EditBox LargeMoneyInputBoxTemplate
-Virtual EditBox LFGListEditBoxTemplate
-Virtual EditBox NameChangeEditBoxTemplate
-Virtual EditBox SearchBoxTemplate
-Virtual EditBox SharedEditBoxTemplate
-Virtual EditBox StoreEditBoxTemplate
-	]]
-end
-settings.CreateButton = function(self, opts, functions)
-
-	local name = self:GetName().."B"..(opts.name or settings.UniqueCounter.CreateButton)
-	local text = opts.text
-	local width = opts.width
-	local tooltip = opts.tooltip
-	local refs = opts.refs
-	local template = opts.template or "UIPanelButtonTemplate"
-
-	local f = CreateFrame("Button", name, self, template)
-	f:SetText(text)
-	if width then
-		f:SetWidth(width)
-	else
-		f:SetWidth(f:GetFontString():GetUnboundedStringWidth() + 20)
-	end
-	f:SetHeight(26)
-	f:RegisterForClicks("AnyUp")
-
-	if functions then
-		for k,func in pairs(functions) do
-			f:SetScript(k, func)
-		end
-	end
-
-	if refs then
-		for k,ref in pairs(refs) do
-			f[k] = ref
-		end
-	end
-
-	if tooltip then
-		f:SetATTTooltip(tooltip)
-	end
-
-	table.insert(settings.Objects, f)
-	return f
-end
-
--- Small library for building a scrolling frame with minimal setup
-(function()
-local scrollWidth = 16
-local function CreateCheckBox(self, text, OnRefresh, OnClick)
-	local box = settings:CreateCheckBox(text, OnRefresh, OnClick)
-	box:SetParent(self)
-	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 } end
-	if not self.ATT.CB then self.ATT.CB = {} self.ATT.CB_Count = 0 end
-	local count = self.ATT.CB_Count + 1
-	self.ATT.CB[count] = box
-	self.ATT.CB_Count = count
-	return box
-end
--- Returns the frame which will be offset by the associated scrollbar
--- .ScrollContainer - the frame which acts as the scrollable area within which the scrollframe will be visible
--- :SetMaxScroll(max) - change how much the scrollbar is able to scroll the scrollframe
--- :CreateCheckBox(text, OnRefresh, OnClick) - create a checkbox attached to the scrollable area
-settings.CreateScrollFrame = function(self)
-	local scrollFrame = CreateFrame("Frame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings)
-	scrollFrame:SetClipsChildren(true)
-	scrollFrame:EnableMouseWheel(true)
-
-	local child = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe, scrollFrame)
-	child:SetPoint("TOP")
-	child:SetPoint("RIGHT", -scrollWidth, 0)
-	child:SetPoint("LEFT")
-	child.CreateCheckBox = CreateCheckBox
-	child.ScrollContainer = scrollFrame
-	
-	local scrollbar
-	if SCROLL_FRAME_SCROLL_BAR_TEMPLATE then
-		scrollbar = CreateFrame("EventFrame", settings:GetName().."SB"..settings.UniqueCounter.AddScrollbar, scrollFrame, SCROLL_FRAME_SCROLL_BAR_TEMPLATE)
-		scrollbar:SetPoint("TOPRIGHT", scrollFrame, -8, 0)
-		scrollbar:SetPoint("BOTTOMRIGHT", scrollFrame, -8, 0)
-		scrollbar:SetHideIfUnscrollable(false)
-		scrollbar:SetHideTrackIfThumbExceedsTrack(false)
-		
-		local CurrentValue, MaxValue = 0, 100
-		scrollbar:SetPanExtentPercentage(0.25)
-		scrollbar:SetScrollPercentage(0)
-		scrollbar:RegisterCallback(BaseScrollBoxEvents.OnScroll, function(o, scrollPercentage)
-			CurrentValue = scrollPercentage * MaxValue
-			child:SetPoint("TOP", 0, CurrentValue)
-		end, scrollFrame)
-		scrollFrame:SetScript("OnMouseWheel", function(self, delta)
-  	scrollbar:ScrollStepInDirection(-delta)
-		end)
-		
-		child.SetMaxScroll = function(frame, maxValue)
-			MaxValue = maxValue
-			scrollbar:SetVisibleExtentPercentage(100 / maxValue)
-			scrollbar:ScrollStepInDirection(-0.01)
-			scrollbar:ScrollStepInDirection(0.01)
-		end
-	else
-		local CurrentValue = 0
-		scrollbar = CreateFrame("Slider", settings:GetName().."SB"..settings.UniqueCounter.AddScrollbar, scrollFrame, "UIPanelScrollBarTemplate")
-		scrollbar:SetPoint("TOPRIGHT", scrollFrame, 0, -scrollWidth)
-		scrollbar:SetPoint("BOTTOMRIGHT", scrollFrame, 0, scrollWidth)
-		scrollbar:SetScript("OnValueChanged", function(self, delta)
-			local un = math.floor(delta)
-			local up = un + 1
-			CurrentValue = (up - delta) > (-(un - delta)) and un or up
-			child:SetPoint("TOP", 0, CurrentValue)
-		end)
-		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND")
-		scrollbar.back:SetColorTexture(0.1,0.1,0.1,1)
-		scrollbar.back:SetAllPoints(scrollbar)
-		scrollbar:SetMinMaxValues(0, 100)
-		scrollbar:SetValueStep(10)
-		scrollbar.CurrentValue = 0
-		scrollbar:SetWidth(scrollWidth)
-		scrollFrame:SetScript("OnMouseWheel", function(self, delta)
-			scrollbar:SetValue(CurrentValue - (delta * 40)) -- Last number here controls scroll speed.
-		end)
-		child.SetMaxScroll = function(frame, maxValue)
-			scrollbar:SetMinMaxValues(0, maxValue)
-			scrollbar:SetValue(25)
-			scrollbar:SetValue(0)
-		end
-	end
-
-	-- if settings.MostRecentTab then 
-	-- 	table.insert(settings.MostRecentTab.objects, scrollbar)
-	-- 	table.insert(settings.MostRecentTab.objects, scrollFrame)
-	-- 	table.insert(settings.MostRecentTab.objects, child)
-	-- end
-	return child
-end
-
--- Create a header label
-settings.CreateHeaderLabel = function(self, text)
-	-- Create the header label
-	local headerLabel = self:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-	headerLabel:SetJustifyH("LEFT")
-	headerLabel:SetText(text)
-	headerLabel:SetWordWrap(false)
-	headerLabel:SetWidth(headerLabel:GetUnboundedStringWidth())
-	headerLabel:Show()
-
-	-- Add the header label to list of refreshable objects
-	table.insert(settings.Objects, headerLabel)
-
-	-- Return the header label
-	return headerLabel
-end
-
--- Create a text label, which defaults to the entire width of the options frame
-settings.CreateTextLabel = function(self, text)
-	-- Create the text label
-	local textLabel = self:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-	textLabel:SetJustifyH("LEFT")
-	textLabel:SetText(text)
-	textLabel:SetWidth(640)	-- This can be manually adjusted afterwards to 320 for half-columns
-	textLabel:Show()
-
-	-- Add the text label to list of refreshable objects
-	table.insert(settings.Objects, textLabel)
-
-	-- Return the text label
-	return textLabel
 end
 
 -- Create a scrollframe and nested subcategory
 settings.CreateOptionsPage = function(self, name, nested)
 	-- Create the ScrollFrame
-	local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, settings, "ScrollFrameTemplate")
+	local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, self, "ScrollFrameTemplate")
 	local scrollChild = CreateFrame("Frame", settings:GetName().."SCF"..settings.UniqueCounter.AddScrollableframe)
+	Mixin(scrollChild, ATTSettingsPanelMixin);
+	self:RegisterObject(scrollChild);
 	scrollFrame:SetScrollChild(scrollChild)
 	scrollChild:SetWidth(1)	-- This is automatically defined, so long as the attribute exists at all
 	scrollChild:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
@@ -1105,14 +1161,6 @@ settings.CreateOptionsPage = function(self, name, nested)
 		scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
 	end
 
-	-- Reference stuff
-	scrollChild.CreateCheckBox = CreateCheckBox
-	scrollChild.CreateTextbox = settings.CreateTextbox
-	scrollChild.CreateScrollFrame = settings.CreateScrollFrame
-	scrollChild.CreateButton = settings.CreateButton
-	scrollChild.CreateTextLabel = settings.CreateTextLabel
-	scrollChild.CreateHeaderLabel = settings.CreateHeaderLabel
-
 	if nested == true then
 		-- Create the nested subcategory
 		local subcategory = scrollFrame
@@ -1124,8 +1172,6 @@ settings.CreateOptionsPage = function(self, name, nested)
 	-- Return the scrollable child
 	return scrollChild
 end
-
-end)();
 
 settings.ShowCopyPasteDialog = function(self)
 	app:ShowPopupDialogWithEditBox(nil, self:GetText(), nil, 10)
@@ -2392,7 +2438,7 @@ headerAutomatedContent:SetPoint("TOP", checkboxShowPvP, "BOTTOM", 0, -10)
 headerAutomatedContent:SetPoint("LEFT", headerGeneralContent, 0, 0)
 
 local textAutomatedContentExplain = child:CreateTextLabel(L["CUSTOM_FILTERS_EXPLAIN_LABEL"])
-textAutomatedContentExplain:SetPoint("TOPLEFT", headerAutomatedContent, "BOTTOMLEFT", 0, -4)	
+textAutomatedContentExplain:SetPoint("TOPLEFT", headerAutomatedContent, "BOTTOMLEFT", 0, -4)
 textAutomatedContentExplain:SetWidth(320)
 
 	-- Automated Content toggles
@@ -3880,7 +3926,7 @@ end
 function ShowColorPicker(r, g, b, a, changedCallback)
 	ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = (a ~= nil), a
 	ColorPickerFrame.previousValues = {r,g,b,a}
-	ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc = 
+	ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc =
 		changedCallback, changedCallback, changedCallback
 	ColorPickerFrame:SetColorRGB(r,g,b)
 	ColorPickerFrame:Hide()	-- Need to run the OnShow handler
@@ -3942,7 +3988,6 @@ end)();
 ---------------------
 -- "Profiles" page --
 ---------------------
--- @SettingsV3: This whole page needs reviewing, as the profile box is MIA likely due to its involvement with the Tab functions
 -- SETUP
 (function()
 -- Create the page
@@ -3952,11 +3997,11 @@ local child = settings:CreateOptionsPage(L["PROFILES_PAGE"], true)
 local headerProfiles = child:CreateHeaderLabel(L["PROFILES_PAGE"])
 headerProfiles:SetPoint("TOPLEFT", child, 0, 0)
 
-local textCurrentProfile = child:CreateTextLabel(REFORGE_CURRENT..":")
-textCurrentProfile:SetPoint("TOPLEFT", headerProfiles, "BOTTOMLEFT", 0, -4)
+local textCurrentProfile = child:CreateHeaderLabel(REFORGE_CURRENT..":")
+textCurrentProfile:SetPoint("TOPLEFT", headerProfiles, "BOTTOMLEFT", 0, -10)
 
-local textCurrentProfileName = child:CreateTextLabel(" ")
-textCurrentProfileName:SetPoint("TOPLEFT", textCurrentProfile, "TOPRIGHT", 5, 0)
+local textCurrentProfileName = child:CreateHeaderLabel(" ")
+textCurrentProfileName:AlignAfter(textCurrentProfile, 10);
 textCurrentProfileName:SetTextColor(1, 1, 1, 1)
 
 -- New Profile Textbox + Label
@@ -3968,7 +4013,7 @@ local textboxNewProfile = child:CreateTextbox(
 },
 -- function hooks for the textbox
 {
-	["OnRefresh"] = function(self)
+	OnRefresh = function(self)
 		self:SetText("")
 	end,
 })
@@ -3981,11 +4026,11 @@ local profileSelector = child:CreateScrollFrame()
 local profileScroller = profileSelector.ScrollContainer
 profileScroller:SetPoint("TOPLEFT", textboxNewProfile, "BOTTOMLEFT", 0, -10)
 profileScroller:SetPoint("RIGHT", textboxNewProfile, "RIGHT", 25, 0)
-profileScroller:SetPoint("BOTTOM", child, "TOP", 0, -582)
+profileScroller:SetHeight(475)
 settings.ApplyBackdropColor(profileScroller, 20, 20, 20, 1)
-profileSelector:SetHeight(100)
 
 -- Initialize Profiles Button
+local SelectedProfile;
 local function InitProfilesButton_Disable(self)
 	self:Disable()
 end
@@ -3997,11 +4042,10 @@ local buttonInitializeProfiles = child:CreateButton(
 },
 -- function hooks for the button
 {
-	["OnClick"] = function(self)
+	OnClick = function(self)
 		app:ShowPopupDialog(L["PROFILE_INITIALIZE_CONFIRM"],
 		function()
 			app.SetupProfiles()
-			OnClickForTab(tab)	-- @SettingsV3: Tab reference
 			settings.Callback(InitProfilesButton_Disable, self)
 		end)
 	end,
@@ -4011,12 +4055,11 @@ buttonInitializeProfiles:Show()
 
 -- common function for setting the current profile
 local UseProfile = function(profile)
-	tab.SelectedProfile = nil	-- @SettingsV3: Tab reference
+	SelectedProfile = nil
 	settings:SetProfile(profile)
 	settings:ApplyProfile()
 	settings:UpdateMode(1)
 end
-local refreshProfiles
 
 -- Create Button
 local buttonCreateProfile = child:CreateButton(
@@ -4027,13 +4070,13 @@ local buttonCreateProfile = child:CreateButton(
 },
 -- function hooks for the button
 {
-	["OnClick"] = function(self)
+	OnClick = function(self)
 		-- if self.ATTActionObject and self.ATTActionObject.GetText then
 			local newProfile = textboxNewProfile:GetText()
 			if newProfile and newProfile ~= "" then
 				if settings:NewProfile(newProfile) then
 					UseProfile(newProfile)
-					refreshProfiles()
+					profileSelector:OnRefresh()
 					return true
 				end
 				-- TODO dialog about existing profile
@@ -4054,12 +4097,12 @@ local buttonDeleteProfile = child:CreateButton(
 },
 -- function hooks for the button
 {
-	["OnClick"] = function(self)
-		local profile = tab.SelectedProfile	-- @SettingsV3: Tab reference
+	OnClick = function(self)
+		local profile = SelectedProfile
 		if profile then
 			if settings:DeleteProfile(profile) then
 				settings:UpdateMode(1)
-				refreshProfiles()
+				profileSelector:OnRefresh()
 				return true
 			end
 			-- TODO dialog about not deleting a profile
@@ -4079,11 +4122,11 @@ local buttonSwitchProfile = child:CreateButton(
 },
 -- function hooks for the button
 {
-	["OnClick"] = function(self)
-		local profile = tab.SelectedProfile	-- @SettingsV3: Tab reference
+	OnClick = function(self)
+		local profile = SelectedProfile
 		if profile then
 			UseProfile(profile)
-			refreshProfiles()
+			profileSelector:OnRefresh()
 			return true
 		end
 	end
@@ -4101,13 +4144,13 @@ local buttonCopyProfile = child:CreateButton(
 },
 -- function hooks for the button
 {
-	["OnClick"] = function(self)
-		local profile = tab.SelectedProfile	-- @SettingsV3: Tab reference
+	OnClick = function(self)
+		local profile = SelectedProfile
 		if profile then
 			settings:CopyProfile(nil, profile)
 			settings:ApplyProfile()
 			settings:UpdateMode(1)
-			refreshProfiles()
+			profileSelector:OnRefresh()
 			return true
 		end
 	end
@@ -4129,24 +4172,21 @@ checkboxShowProfileLoaded:SetPoint("TOPLEFT", profileScroller, "BOTTOMLEFT", 0, 
 local function ProfileCheckbox_Disable(self)
 	self:Disable()
 end
-refreshProfiles = function()
-	--local mostRecentTab = settings.MostRecentTab
-	-- make sure to use the correct tab when adding the UI elements
-	--settings.MostRecentTab = tab
-	-- print("SelectedProfile",tab.SelectedProfile)
+profileSelector.OnRefresh = function()
+	-- app.PrintDebug("SelectedProfile",SelectedProfile)
 
 	-- update the current profile label
 	local currentProfile = settings:GetProfile(true)
 	textCurrentProfileName:SetText(currentProfile or NOT_APPLICABLE)
 
-	-- print("refresh profiles scrollbox")
+	-- app.PrintDebug("refresh profiles scrollbox")
 	local settingProfileItems = {}
 	if AllTheThingsProfiles then
 		-- buttons have no OnRefresh script, so have to hide it externally
 		buttonInitializeProfiles:Hide()
 
 		for k,v in pairs(AllTheThingsProfiles.Profiles) do
-			-- print("added",k)
+			-- app.PrintDebug("added",k)
 			tinsert(settingProfileItems, k == "Default" and DEFAULT or k)
 		end
 	end
@@ -4154,28 +4194,27 @@ refreshProfiles = function()
 	app.Sort(settingProfileItems, app.SortDefaults.Text)
 
 	local profileCount, existingBoxes, lastProfileSelect = 0, profileSelector.ATT and profileSelector.ATT.CB_Count or 0
-	local maxProfileNameWidth = profileSelector:GetWidth() - 50
 
 	-- create checkboxes for the profiles in the scrollframe
 	for _,profile in ipairs(settingProfileItems) do
 		local profileBox
 		profileCount = profileCount + 1
 		if existingBoxes >= profileCount then
-			-- print("replace-profileCB",profileCount,profile)
+			-- app.PrintDebug("replace-profileCB",profileCount,profile)
 			profileBox = profileSelector.ATT.CB[profileCount]
 			profileBox.Text:SetText(profile)
 		else
-			-- print("new-profileCB",profileCount,profile)
-			profileBox = profileSelector:CreateCheckBox(profile,
+			-- app.PrintDebug("new-profileCB",profileCount,profile)
+			profileBox = profileSelector:CreateCheckBoxWithCount(profile,
 				function(self)
-					-- print("CB.OnRefresh",self.Text:GetText())
+					-- app.PrintDebug("CB.OnRefresh",self.Text:GetText())
 					local myProfile = self.Text:GetText()
 					local activeProfile = settings:GetProfile(true)
 					if activeProfile == myProfile then
 						self:SetAlpha(0.5)
 						self:SetChecked(true)
 						settings.Callback(ProfileCheckbox_Disable, self)
-					elseif tab.SelectedProfile == myProfile then	-- @SettingsV3: Tab reference
+					elseif SelectedProfile == myProfile then
 						self:SetAlpha(1)
 						self:Enable()
 						self:SetChecked(true)
@@ -4190,18 +4229,18 @@ refreshProfiles = function()
 					-- holding shift will switch profiles instead of selecting one
 					local myProfile = self.Text:GetText()
 					local activeProfile = settings:GetProfile(true)
-					-- print("clicked",profile)
-					if tab.SelectedProfile == myProfile then	-- @SettingsV3: Tab reference
-						tab.SelectedProfile = nil
+					-- app.PrintDebug("clicked",profile)
+					if SelectedProfile == myProfile then
+						SelectedProfile = nil
 					elseif myProfile ~= activeProfile then
-						tab.SelectedProfile = myProfile
+						SelectedProfile = myProfile
 					end
 					if IsShiftKeyDown() then
 						if myProfile ~= activeProfile then
 							UseProfile(myProfile)
 						end
 					end
-					refreshProfiles()
+					profileSelector:OnRefresh()
 					return true
 				end)
 			if lastProfileSelect then
@@ -4210,7 +4249,7 @@ refreshProfiles = function()
 				profileBox:SetPoint("TOPLEFT", profileSelector, "TOPLEFT", 5, -5)
 			end
 		end
-		profileBox.Text:SetWidth(math.min(maxProfileNameWidth, math.ceil(profileBox.Text:GetUnboundedStringWidth())))
+		profileBox.Text:SetWordWrap(false)
 		profileBox:SetHitRectInsets(0,0 - profileBox.Text:GetWidth(),0,0)
 		profileBox:SetATTTooltip(profile)
 		profileBox:OnRefresh()
@@ -4219,7 +4258,7 @@ refreshProfiles = function()
 	end
 
 	-- enable/disable buttons if profile is 'selected'
-	if tab.SelectedProfile then	-- @SettingsV3: Tab reference
+	if SelectedProfile then
 		buttonSwitchProfile:Enable()
 		buttonCopyProfile:Enable()
 		buttonDeleteProfile:Enable()
@@ -4231,17 +4270,12 @@ refreshProfiles = function()
 
 	-- hide extra checkboxes if they've been deleted during this game session
 	if existingBoxes > profileCount then
-		-- print("removing extra checkboxes",profileCount,existingBoxes)
+		-- app.PrintDebug("removing extra checkboxes",profileCount,existingBoxes)
 		for i=profileCount + 1,existingBoxes do
 			profileSelector.ATT.CB[i]:Hide()
 		end
 	end
-
-	profileSelector:SetMaxScroll(100 + ((profileCount - 17) * 20))
-	-- make sure to switch back to the previous tab once done
-	--settings.MostRecentTab = mostRecentTab
 end
--- tab.OnRefresh = refreshProfiles
 
 end)();
 
