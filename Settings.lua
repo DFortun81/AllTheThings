@@ -806,7 +806,7 @@ ATTSettingsPanelMixin = {
 		if OnClick then cb:SetScript("OnClick", OnClick) end
 		cb.OnRefresh = OnRefresh or cb.OnRefreshCheckedDisabled
 		cb.Text:SetText(text)
-		cb.Text:SetFont("Fonts\\FRIZQT__.TTF", 11, "")
+		cb.Text:SetScale(1.1)
 		cb.Text:SetWordWrap(false)
 		return cb
 	end,
