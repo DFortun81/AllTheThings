@@ -339,7 +339,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					e(2522, {	-- Kazzara, the Hellforged
 						["crs"] = { 201261 },	-- Kazzara, the Hellforged
 						["g"] = {
-							i(202594),	-- Bloodstench Skinguards
+							i(202594, bubbleDown({ ["modID"] = 3 }, {
+								i(202594),	-- Bloodstench Skinguards
+							})),
 							i(202576),	-- Dreadrift Stompers
 							i(202616),	-- Enduring Dreadplate
 							i(202573),	-- Etchings of the Captive Revenant
