@@ -26,6 +26,7 @@ src\Modules\FactionData.lua
 src\Modules\Color.lua
 src\Modules\Costs.lua
 src\Modules\Events.lua
+src\Modules\Tooltip.lua
 db\Presets.lua
 db\CategoryDB.lua
 db\ObjectDB.lua
