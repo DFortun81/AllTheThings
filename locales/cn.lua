@@ -470,6 +470,9 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自定义所有小和小列表的缩放。\n\n默认：1';
 		L.ADDITIONAL_LABEL = "附加信息";
 		--TODO: L.WINDOW_COLORS = "Window Colors";
+		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color and opacity of all ATT windows.";
+		--TODO: L.BORDER_TOOLTIP = "Set the border color and opacity of all ATT windows.";
+		--TODO: L.RESET_TOOLTIP = "Reset the background and border of all ATT windows.";
 
 	-- Features tab
 		L.MINIMAP_LABEL = "小地图按钮";

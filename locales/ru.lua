@@ -473,6 +473,9 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.MINI_LIST_SCALE_TOOLTIP = 'Используйте для изменения масштаба Мини и Других Списков.\n\nПо умолчанию: 1';
 		L.ADDITIONAL_LABEL = "Дополнительная Информация";
 		--TODO: L.WINDOW_COLORS = "Window Colors";
+		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color and opacity of all ATT windows.";
+		--TODO: L.BORDER_TOOLTIP = "Set the border color and opacity of all ATT windows.";
+		--TODO: L.RESET_TOOLTIP = "Reset the background and border of all ATT windows.";
 
 	-- Features tab
 		L.MINIMAP_LABEL = "Кнопка у Миникарты";

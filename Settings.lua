@@ -80,7 +80,7 @@ local Things = {
 }
 local GeneralSettingsBase = {
 	__index = {
-				["AccountMode"] = false,
+		["AccountMode"] = false,
 		["Completionist"] = true,
 		["MainOnly"] = false,
 		["DebugMode"] = false,
@@ -118,7 +118,7 @@ local GeneralSettingsBase = {
 		["Thing:Mounts"] = true,
 		["Thing:MusicRollsAndSelfieFilters"] = true,
 		["Thing:Quests"] = true,
-		["Thing:QuestsLocked"] = false,
+		["Thing:QuestsLocked"] = true,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:RuneforgeLegendaries"] = true,
@@ -127,7 +127,7 @@ local GeneralSettingsBase = {
 		["Thing:Transmog"] = true,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
-		["Show:OnlyActiveEvents"] = true,
+		["Show:OnlyActiveEvents"] = false,
 		["Skip:AutoRefresh"] = false,
 		["Show:PetBattles"] = true,
 		["Hide:PvP"] = false,
@@ -163,7 +163,7 @@ local TooltipSettingsBase = {
 		["LootSpecializations"] = true,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
-		["MinimapStyle"] = true,
+		["MinimapStyle"] = false,
 		["Models"] = true,
 		["KnownBy"] = true,
 		["LiveScan"] = false,
@@ -176,6 +176,8 @@ local TooltipSettingsBase = {
 		["QuestGivers"] = true,
 		["RaceRequirements"] = true,
 		["Report:Collected"] = true,
+		["Report:CompletedQuests"] = true,
+		["Report:UnsortedQuests"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
 		["Show:Remaining"] = false,
@@ -193,6 +195,11 @@ local TooltipSettingsBase = {
 		["Warn:Difficulty"] = true,
 		["Warn:Removed"] = true,
 		["Currencies"] = true,
+		["QuestChain:Nested"] = true,
+		["WorldQuestsList:Currencies"] = true,
+		["ProfessionRequirements"] = true,
+		["LevelRequirements"] = true,
+		["CompletedBy"] = true,
 	},
 }
 
@@ -966,7 +973,7 @@ ATTSettingsPanelMixin = {
 		else
 			f:SetWidth(f:GetFontString():GetUnboundedStringWidth() + 20)
 		end
-		f:SetHeight(26)
+		f:SetHeight(22)
 		f:RegisterForClicks("AnyUp")
 
 		if functions then
@@ -984,6 +991,9 @@ ATTSettingsPanelMixin = {
 		if tooltip then
 			f:SetATTTooltip(tooltip)
 		end
+
+		table.insert(settings.Objects, f)
+		f:Show()
 
 		return f
 	end,
@@ -1003,7 +1013,6 @@ ATTSettingsPanelMixin = {
 		child.ScrollContainer = scrollFrame
 		-- Move the Scrollbar inside of the frame which it scrolls
 		scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
-		scrollFrame.ScrollBar:SetPoint("TOP", 0, 5)
 
 		-- local scrollFrame = CreateFrame("Frame", settings:GetName().."SF"..settings.UniqueCounter.AddScrollframe, self, "ScrollFrameTemplate")
 		-- scrollFrame:SetClipsChildren(true)
@@ -1111,9 +1120,7 @@ settings.CreateOptionsPage = function(self, name, nested)
 		-- Move the scrollbar to its proper position (only needed for subcategories)
 		scrollFrame.ScrollBar:ClearPoint("RIGHT")
 		scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
-	end
 
-	if nested == true then
 		-- Create the nested subcategory
 		local subcategory = scrollFrame
 		subcategory.name = name
@@ -1429,11 +1436,69 @@ logo:SetSize(36, 36)
 logo:Show()
 
 local headerTitle = child:CreateHeaderLabel(L["TITLE"])
-headerTitle:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4)
+headerTitle:SetPoint("CENTER", logo, 0, 0)
+headerTitle:SetPoint("LEFT", logo, "RIGHT", 0, 0)
 headerTitle:SetScale(1.5)
 
+local buttonDiscord = child:CreateButton(
+-- button settings
+{
+	text = L["DISCORD_BUTTON_LABEL"],
+	tooltip = L["DISCORD_BUTTON_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	OnClick = function(self)
+		app:ShowPopupDialogWithEditBox(nil, "discord.gg/allthethings", nil, 10)
+	end,
+})
+buttonDiscord:SetPoint("CENTER", headerTitle, 0, 0)
+buttonDiscord:SetPoint("LEFT", headerTitle, "RIGHT", 10, 0)
+
+local buttonTwitch = child:CreateButton(
+-- button settings
+{
+	text = L["TWITCH_BUTTON_LABEL"],
+	tooltip = L["TWITCH_BUTTON_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	OnClick = function(self)
+		app:ShowPopupDialogWithEditBox(nil, "twitch.tv/crieve", nil, 10)
+	end,
+})
+buttonTwitch:SetPoint("TOPLEFT", buttonDiscord, "TOPRIGHT", 4, 0)
+
+local buttonPatreon = child:CreateButton(
+-- button settings
+{
+	text = L["PATREON_BUTTON_LABEL"],
+	tooltip = L["PATREON_BUTTON_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	OnClick = function(self)
+		app:ShowPopupDialogWithEditBox(nil, "patreon.com/allthethings", nil, 10)
+	end,
+})
+buttonPatreon:SetPoint("TOPLEFT", buttonTwitch, "TOPRIGHT", 4, 0)
+
+local buttonMerch = child:CreateButton(
+-- button settings
+{
+	text = L["MERCH_BUTTON_LABEL"],
+	tooltip = L["MERCH_BUTTON_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	OnClick = function(self)
+		app:ShowPopupDialogWithEditBox(nil, "designbyhumans.com/shop/allthethings", nil, 10)
+	end,
+})
+buttonMerch:SetPoint("TOPLEFT", buttonPatreon, "TOPRIGHT", 4, 0)
+
 local headerVersion = child:CreateHeaderLabel(" ")
-headerVersion:SetPoint("TOPRIGHT", child, "TOPLEFT", 640, 0)
+headerVersion:SetPoint("TOPRIGHT", child, "TOPLEFT", 638, 0)
 headerVersion:SetJustifyH("RIGHT")
 headerVersion.OnRefresh = function(self)
 	self:SetText(app.Version)
@@ -1806,50 +1871,6 @@ local textChatCommands = child:CreateTextLabel(L["CHAT_COMMANDS_TEXT"])
 textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -10)
 textChatCommands:SetWidth(320)
 
--- Bottom
--- Discord button
-f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings, "BOTTOMLEFT", 0, -6)
-f:SetText(L["DISCORD_BUTTON_LABEL"])
-f:SetWidth(100)
-f:SetHeight(26)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "discord.gg/allthethings", nil, 10) end)
-f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"])
-settings.community = f
-
--- Twitch button
-f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings.community, "TOPRIGHT", 4, 0)
-f:SetText(L["TWITCH_BUTTON_LABEL"])
-f:SetWidth(100)
-f:SetHeight(26)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "twitch.tv/crieve", nil, 10) end)
-f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"])
-settings.twitch = f
-
--- Patreon button
-f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings.twitch, "TOPRIGHT", 4, 0)
-f:SetText(L["PATREON_BUTTON_LABEL"])
-f:SetWidth(100)
-f:SetHeight(26)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "patreon.com/allthethings", nil, 10) end)
-f:SetATTTooltip(L["PATREON_BUTTON_TOOLTIP"])
-settings.patreon = f
-
--- Merch button
-f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings.patreon, "TOPRIGHT", 4, 0)
-f:SetText(L["MERCH_BUTTON_LABEL"])
-f:SetWidth(100)
-f:SetHeight(26)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "designbyhumans.com/shop/allthethings", nil, 10) end)
-f:SetATTTooltip(L["MERCH_BUTTON_TOOLTIP"])
-settings.merch = f
 end)();
 
 ---------------------
@@ -2681,74 +2702,78 @@ local allEquipmentFilters = {	-- Filter IDs
 }
 
 -- The 3 buttons
-local f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
-f:SetPoint("LEFT", headerMode, 0, 0)
-f:SetPoint("TOP", last, "BOTTOM", 0, -10)
-f:SetText(L["CLASS_DEFAULTS_BUTTON"])
-f:SetWidth(f.Text:GetUnboundedStringWidth()+25)
-f:SetHeight(22)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function(self)
-	for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
-		AllTheThingsSettingsPerCharacter.Filters[key] = nil
-	end
-	settings:UpdateMode(1)
-end)
-f:SetATTTooltip(L["CLASS_DEFAULTS_BUTTON_TOOLTIP"])
-f.OnRefresh = function(self)
+local buttonClassDefaults = child:CreateButton(
+-- button settings
+{
+	text = L["CLASS_DEFAULTS_BUTTON"],
+	tooltip = L["CLASS_DEFAULTS_BUTTON_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	OnClick = function(self)
+		for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
+			AllTheThingsSettingsPerCharacter.Filters[key] = nil
+		end
+		settings:UpdateMode(1)
+	end,
+})
+buttonClassDefaults:SetPoint("LEFT", headerMode, 0, 0)
+buttonClassDefaults:SetPoint("TOP", last, "BOTTOM", 0, -10)
+buttonClassDefaults.OnRefresh = function(self)
 	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:Disable()
 	else
 		self:Enable()
 	end
 end
-settings.equipfilterdefault = f
-table.insert(settings.Objects, f)
 
-f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings.equipfilterdefault, "TOPRIGHT", 5, 0)
-f:SetText(L["ALL_BUTTON"])
-f:SetWidth(f.Text:GetUnboundedStringWidth()+25)
-f:SetHeight(22)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function(self)
-	for k,v in pairs(allEquipmentFilters) do
-		AllTheThingsSettingsPerCharacter.Filters[v] = true
-	end
-	settings:UpdateMode(1)
-end)
-f:SetATTTooltip(L["ALL_BUTTON_TOOLTIP"])
-f.OnRefresh = function(self)
+local buttonAll = child:CreateButton(
+-- button settings
+{
+	text = L["ALL_BUTTON"],
+	tooltip = L["ALL_BUTTON_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	OnClick = function(self)
+		for k,v in pairs(allEquipmentFilters) do
+			AllTheThingsSettingsPerCharacter.Filters[v] = true
+		end
+		settings:UpdateMode(1)
+	end,
+})
+buttonAll:SetPoint("TOPLEFT", buttonClassDefaults, "TOPRIGHT", 5, 0)
+buttonAll.OnRefresh = function(self)
 	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:Disable()
 	else
 		self:Enable()
 	end
 end
-settings.equipfilterall = f
-table.insert(settings.Objects, f)
 
-f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings.equipfilterall, "TOPRIGHT", 5, 0)
-f:SetText(L["UNCHECK_ALL_BUTTON"])
-f:SetWidth(f.Text:GetUnboundedStringWidth()+25)
-f:SetHeight(22)
-f:RegisterForClicks("AnyUp")
-f:SetScript("OnClick", function(self)
-	for k,v in pairs(allEquipmentFilters) do
-		AllTheThingsSettingsPerCharacter.Filters[v] = false
-	end
-	settings:UpdateMode(1)
-end)
-f:SetATTTooltip(L["UNCHECK_ALL_BUTTON_TOOLTIP"])
-f.OnRefresh = function(self)
+local buttonNone = child:CreateButton(
+-- button settings
+{
+	text = L["UNCHECK_ALL_BUTTON"],
+	tooltip = L["UNCHECK_ALL_BUTTON_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	OnClick = function(self)
+		for k,v in pairs(allEquipmentFilters) do
+			AllTheThingsSettingsPerCharacter.Filters[v] = false
+		end
+		settings:UpdateMode(1)
+	end,
+})
+buttonNone:SetPoint("TOPLEFT", buttonAll, "TOPRIGHT", 5, 0)
+buttonNone.OnRefresh = function(self)
 	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:Disable()
 	else
 		self:Enable()
 	end
 end
-table.insert(settings.Objects, f)
 
 -- Bows, Crossbows, Guns, Staves, Wands, Shields, Off-hands
 local awColumn2 = { 32, 33, 31, 28, 27, 8, 1 }
@@ -3882,49 +3907,61 @@ function ShowColorPicker(r, g, b, a, changedCallback)
 	ColorPickerFrame:Show()
 end
 
-local buttonBackgroundColor = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
+local buttonBackgroundColor = child:CreateButton(
+-- button settings
+{
+	text = L["BACKGROUND"],
+	tooltip = L["BACKGROUND_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	OnClick = function(self)
+		local r = tonumber(settings:Get("Window:BackgroundColor").r) or 0
+		local g = tonumber(settings:Get("Window:BackgroundColor").g) or 0
+		local b = tonumber(settings:Get("Window:BackgroundColor").b) or 0
+		local a = tonumber(settings:Get("Window:BackgroundColor").a) or 0
+		ShowColorPicker(r, g, b, a, changeBackgroundColor)
+	end,
+})
 buttonBackgroundColor:SetPoint("TOPLEFT", headerWindowColors, "BOTTOMLEFT", 0, -5)
-buttonBackgroundColor:SetText(L["BACKGROUND"])
-buttonBackgroundColor:SetWidth(buttonBackgroundColor.Text:GetUnboundedStringWidth()+25)
-buttonBackgroundColor:SetHeight(22)
-buttonBackgroundColor:RegisterForClicks("AnyUp")
-buttonBackgroundColor:SetScript("OnClick", function()
-	local r = tonumber(settings:Get("Window:BackgroundColor").r) or 0
-	local g = tonumber(settings:Get("Window:BackgroundColor").g) or 0
-	local b = tonumber(settings:Get("Window:BackgroundColor").b) or 0
-	local a = tonumber(settings:Get("Window:BackgroundColor").a) or 0
-	ShowColorPicker(r, g, b, a, changeBackgroundColor)
-end)
 
-local buttonBorderColor = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
+local buttonBorderColor = child:CreateButton(
+-- button settings
+{
+	text = L["BORDER"],
+	tooltip = L["BORDER_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	OnClick = function(self)
+		local r = tonumber(settings:Get("Window:BorderColor").r) or 0
+		local g = tonumber(settings:Get("Window:BorderColor").g) or 0
+		local b = tonumber(settings:Get("Window:BorderColor").b) or 0
+		local a = tonumber(settings:Get("Window:BorderColor").a) or 0
+		ShowColorPicker(r, g, b, a, changeBorderColor)
+	end,
+})
 buttonBorderColor:SetPoint("BOTTOMLEFT", buttonBackgroundColor, "BOTTOMRIGHT", 5, 0)
-buttonBorderColor:SetText(L["BORDER"])
-buttonBorderColor:SetWidth(buttonBorderColor.Text:GetUnboundedStringWidth()+25)
-buttonBorderColor:SetHeight(22)
-buttonBorderColor:RegisterForClicks("AnyUp")
-buttonBorderColor:SetScript("OnClick", function()
-	local r = tonumber(settings:Get("Window:BorderColor").r) or 0
-	local g = tonumber(settings:Get("Window:BorderColor").g) or 0
-	local b = tonumber(settings:Get("Window:BorderColor").b) or 0
-	local a = tonumber(settings:Get("Window:BorderColor").a) or 0
-	ShowColorPicker(r, g, b, a, changeBorderColor)
-end)
 
-local buttonResetColor = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
+local buttonResetColor = child:CreateButton(
+-- button settings
+{
+	text = L["RESET"],
+	tooltip = L["RESET_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	OnClick = function(self)
+		settings:Set("Window:BackgroundColor", {r = 0, g = 0, b = 0, a = 1})
+		settings:Set("Window:BorderColor", {r = 1, g = 1, b = 1, a = 1})
+
+		for suffix, window in pairs(AllTheThings.Windows) do
+			window:SetBackdropColor(0, 0, 0, 1)
+			window:SetBackdropBorderColor(1, 1, 1, 1)
+		end
+	end,
+})
 buttonResetColor:SetPoint("BOTTOMLEFT", buttonBorderColor, "BOTTOMRIGHT", 5, 0)
-buttonResetColor:SetText(L["RESET"])
-buttonResetColor:SetWidth(buttonResetColor.Text:GetUnboundedStringWidth()+20)
-buttonResetColor:SetHeight(22)
-buttonResetColor:RegisterForClicks("AnyUp")
-buttonResetColor:SetScript("OnClick", function()
-	settings:Set("Window:BackgroundColor", {r = 0, g = 0, b = 0, a = 1})
-	settings:Set("Window:BorderColor", {r = 1, g = 1, b = 1, a = 1})
-
-	for suffix, window in pairs(AllTheThings.Windows) do
-		window:SetBackdropColor(0, 0, 0, 1)
-		window:SetBackdropBorderColor(1, 1, 1, 1)
-	end
-end)
 
 end)();
 
@@ -4028,8 +4065,7 @@ local buttonCreateProfile = child:CreateButton(
 		-- end
 	end,
 })
-buttonCreateProfile:SetPoint("TOPLEFT", textboxNewProfile, "TOPRIGHT", 5, 4)
-buttonCreateProfile:Show()
+buttonCreateProfile:SetPoint("TOPLEFT", textboxNewProfile, "TOPRIGHT", 5, 2)
 
 -- Delete Button
 local buttonDeleteProfile = child:CreateButton(
@@ -4054,7 +4090,6 @@ local buttonDeleteProfile = child:CreateButton(
 	end
 })
 buttonDeleteProfile:SetPoint("BOTTOMLEFT", profileScroller, "BOTTOMRIGHT", 5, -1)
-buttonDeleteProfile:Show()
 
 -- Switch Button
 local buttonSwitchProfile = child:CreateButton(
@@ -4076,7 +4111,6 @@ local buttonSwitchProfile = child:CreateButton(
 })
 buttonSwitchProfile:SetPoint("LEFT", buttonDeleteProfile, "LEFT", 0, 0)
 buttonSwitchProfile:SetPoint("TOP", profileScroller, "TOP", 0, 2)
-buttonSwitchProfile:Show()
 
 -- Copy Button
 local buttonCopyProfile = child:CreateButton(
@@ -4099,7 +4133,6 @@ local buttonCopyProfile = child:CreateButton(
 	end
 })
 buttonCopyProfile:SetPoint("TOPLEFT", buttonSwitchProfile, "BOTTOMLEFT", 0, -4)
-buttonCopyProfile:Show()
 
 -- Checkbox to show profile loaded message
 local checkboxShowProfileLoaded = child:CreateCheckBox(L["SHOW_PROFILE_LOADED"],

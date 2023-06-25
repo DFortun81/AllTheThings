@@ -575,8 +575,11 @@ app.L = {
 	["ADDITIONAL_LABEL"] = "Additional Information";
 	["WINDOW_COLORS"] = "Window Colors";
 	["BACKGROUND"] = EMBLEM_BACKGROUND;
+	["BACKGROUND_TOOLTIP"] = "Set the background color and opacity of all ATT windows.";
 	["BORDER"] = EMBLEM_BORDER;
+	["BORDER_TOOLTIP"] = "Set the border color and opacity of all ATT windows.";
 	["RESET"] = RESET;
+	["RESET_TOOLTIP"] = "Reset the background and border of all ATT windows.";
 
 	-- Features tab
 	["MINIMAP_LABEL"] = "Minimap Button";
