@@ -118,7 +118,7 @@ local GeneralSettingsBase = {
 		["Thing:Mounts"] = true,
 		["Thing:MusicRollsAndSelfieFilters"] = true,
 		["Thing:Quests"] = true,
-		["Thing:QuestsLocked"] = true,
+		["Thing:QuestsLocked"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:RuneforgeLegendaries"] = true,
@@ -137,8 +137,8 @@ local GeneralSettingsBase = {
 		["CC:SL_COV_NFA"] = true,
 		["CC:SL_COV_NEC"] = true,
 		["Profile:ShowProfileLoadedMessage"] = true,
-		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1},
-		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1},
+		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1 },
+		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1 },
 	},
 }
 local FilterSettingsBase = {}
@@ -200,6 +200,7 @@ local TooltipSettingsBase = {
 		["ProfessionRequirements"] = true,
 		["LevelRequirements"] = true,
 		["CompletedBy"] = true,
+		["Updates:AdHoc"] = true,
 	},
 }
 
@@ -214,10 +215,8 @@ settings.Initialize = function(self)
 		if not RawSettings.General then RawSettings.General = {} end
 		if not RawSettings.Tooltips then RawSettings.Tooltips = {} end
 		if not RawSettings.Unobtainable then RawSettings.Unobtainable = {} end
-		--if not RawSettings.WindowColors then RawSettings.WindowColors = {} end
 		setmetatable(RawSettings.General, GeneralSettingsBase)
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase)
-		--setmetatable(RawSettings.WindowColors, WindowColors)
 	end
 
 	-- Assign the preset filters for your character class as the default states
