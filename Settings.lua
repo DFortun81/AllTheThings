@@ -38,13 +38,6 @@ settings.Tabs = {}	-- @SettingsV3: Needs to be removed, when we can without brea
 settings.TabsByName = {}	-- @SettingsV3: Needs to be removed, when we can without breaking everything
 settings.Objects = {}
 settings.Callback = app.CallbackHandlers.Callback
--- settings:SetBackdrop({
--- 	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
--- 	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
--- 	tile = false, edgeSize = 16,
--- 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
--- })
--- settings:SetBackdropColor(0, 0, 0, 1)
 do	-- Add the ATT Settings frame into the WoW Settings options
 	local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
 	category.ID = settings.name
@@ -90,6 +83,14 @@ local Things = {
 }
 local GeneralSettingsBase = {
 	__index = {
+		["rBackground"] = "0",
+		["gBackground"] = "0",
+		["bBackground"] = "0",
+		["aBackground"] = "1",
+		["rBorder"] = "1",
+		["gBorder"] = "1",
+		["bBorder"] = "1",
+		["aBorder"] = "1",
 		["AccountMode"] = false,
 		["Completionist"] = true,
 		["MainOnly"] = false,
@@ -160,7 +161,7 @@ local TooltipSettingsBase = {
 		["Celebrate"] = true,
 		["Coordinates"] = true,
 		["Screenshot"] = false,
-		["Channel"] = "master",
+		["Channel"] = "Master",
 		["ClassRequirements"] = true,
 		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
@@ -236,8 +237,10 @@ settings.Initialize = function(self)
 		if not RawSettings.General then RawSettings.General = {} end
 		if not RawSettings.Tooltips then RawSettings.Tooltips = {} end
 		if not RawSettings.Unobtainable then RawSettings.Unobtainable = {} end
+		--if not RawSettings.WindowColors then RawSettings.WindowColors = {} end
 		setmetatable(RawSettings.General, GeneralSettingsBase)
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase)
+		--setmetatable(RawSettings.WindowColors, WindowColors)
 	end
 
 	-- Assign the preset filters for your character class as the default states
@@ -743,7 +746,7 @@ settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 	cb.Text:SetText(text)
 	cb.Text:SetFont("Fonts\\FRIZQT__.TTF", 11, "")
 	cb.Text:SetWordWrap(false)
-	cb.Text:SetWidth(cb.Text:GetUnboundedStringWidth())
+	--cb.Text:SetWidth(cb.Text:GetUnboundedStringWidth())	-- Seems unneeded with above line
 	cb.AlignBelow = AlignBelow
 	cb.AlignAfter = AlignAfter
 	return cb
@@ -779,15 +782,6 @@ settings.CreateDropdown = function(self, opts, OnRefresh)
 
     local dropdown = CreateFrame("Frame", dropdown_name, self, template)
 	dropdown:SetHeight(19)
-	-- dropdown:SetBackdrop({
-	-- 	bgFile = "Interface\\COMMON\\Common-Input-Border",
-	--	-- edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border.PNG",
-	--	-- tile = true,
-	--	-- tileEdge = true,
-	--	-- tileSize = 8,
-	--	-- edgeSize = 3,
-	-- 	insets = { left = 1, right = 1, top = 1, bottom = 1 },
-	-- })
     local dd_title = AddLabel(dropdown, title_text)
 
 	-- Sets the dropdown width to the largest item string width.
@@ -2676,7 +2670,7 @@ f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
 f:SetPoint("LEFT", headerMode, 0, 0)
 f:SetPoint("TOP", last, "BOTTOM", 0, -10)
 f:SetText(L["CLASS_DEFAULTS_BUTTON"])
-f:SetWidth(120)
+f:SetWidth(f.Text:GetUnboundedStringWidth()+25)
 f:SetHeight(22)
 f:RegisterForClicks("AnyUp")
 f:SetScript("OnClick", function(self)
@@ -2697,9 +2691,9 @@ settings.equipfilterdefault = f
 table.insert(settings.Objects, f)
 
 f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings.equipfilterdefault, "TOPRIGHT", 4, 0)
+f:SetPoint("TOPLEFT", settings.equipfilterdefault, "TOPRIGHT", 5, 0)
 f:SetText(L["ALL_BUTTON"])
-f:SetWidth(70)
+f:SetWidth(f.Text:GetUnboundedStringWidth()+25)
 f:SetHeight(22)
 f:RegisterForClicks("AnyUp")
 f:SetScript("OnClick", function(self)
@@ -2720,9 +2714,9 @@ settings.equipfilterall = f
 table.insert(settings.Objects, f)
 
 f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
-f:SetPoint("TOPLEFT", settings.equipfilterall, "TOPRIGHT", 4, 0)
+f:SetPoint("TOPLEFT", settings.equipfilterall, "TOPRIGHT", 5, 0)
 f:SetText(L["UNCHECK_ALL_BUTTON"])
-f:SetWidth(70)
+f:SetWidth(f.Text:GetUnboundedStringWidth()+25)
 f:SetHeight(22)
 f:RegisterForClicks("AnyUp")
 f:SetScript("OnClick", function(self)
@@ -3817,6 +3811,117 @@ function(self)
 end)
 DynamicCategoryNestedCheckbox:AlignAfter(DynamicCategorySimpleCheckbox)
 DynamicCategoryNestedCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
+
+local headerWindowColors = child:CreateHeaderLabel("Window Colors")	-- LOCALISE
+headerWindowColors:SetPoint("LEFT", headerListBehavior, 0, 0)
+headerWindowColors:SetPoint("TOP", DynamicCategoryNestedCheckbox, "BOTTOM", 0, -10)
+
+-- Color Picker
+local function changeBackgroundColor(restore)
+	local newR, newG, newB, newA
+	if restore then
+		-- The user bailed, we extract the old color from the table created by ShowColorPicker
+		newR, newG, newB, newA = unpack(restore)
+	else
+		-- Something changed
+		newA, newR, newG, newB = OpacitySliderFrame:GetValue(), ColorPickerFrame:GetColorRGB()
+	end
+
+	-- Update our internal storage
+ 	r, g, b, a = newR, newG, newB, newA
+	settings:Set("rBackground", r)
+	settings:Set("gBackground", g)
+	settings:Set("bBackground", b)
+	settings:Set("aBackground", a)
+
+ 	-- And update the actual windows
+	for suffix, window in pairs(AllTheThings.Windows) do
+		window:SetBackdropColor(r, g, b, a)
+	end
+end
+
+local function changeBorderColor(restore)
+	local newR, newG, newB, newA
+	if restore then
+		-- The user bailed, we extract the old color from the table created by ShowColorPicker
+		newR, newG, newB, newA = unpack(restore)
+	else
+		-- Something changed
+		newA, newR, newG, newB = OpacitySliderFrame:GetValue(), ColorPickerFrame:GetColorRGB()
+	end
+
+	-- Update our internal storage
+ 	r, g, b, a = newR, newG, newB, newA
+	settings:Set("rBorder", r)
+	settings:Set("gBorder", g)
+	settings:Set("bBorder", b)
+	settings:Set("aBorder", a)
+
+ 	-- And update the actual windows
+	for suffix, window in pairs(AllTheThings.Windows) do
+		window:SetBackdropBorderColor(r, g, b, a)
+	end
+end
+
+function ShowColorPicker(r, g, b, a, changedCallback)
+	ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = (a ~= nil), a
+	ColorPickerFrame.previousValues = {r,g,b,a}
+	ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc = 
+		changedCallback, changedCallback, changedCallback
+	ColorPickerFrame:SetColorRGB(r,g,b)
+	ColorPickerFrame:Hide()	-- Need to run the OnShow handler
+	ColorPickerFrame:Show()
+end
+
+local buttonBackgroundColor = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
+buttonBackgroundColor:SetPoint("TOPLEFT", headerWindowColors, "BOTTOMLEFT", 0, -5)
+buttonBackgroundColor:SetText("Background")	-- LOCALISE
+buttonBackgroundColor:SetWidth(buttonBackgroundColor.Text:GetUnboundedStringWidth()+25)
+buttonBackgroundColor:SetHeight(22)
+buttonBackgroundColor:RegisterForClicks("AnyUp")
+buttonBackgroundColor:SetScript("OnClick", function()
+	local r = settings:Get("rBackground")
+	local g = settings:Get("gBackground")
+	local b = settings:Get("bBackground")
+	local a = settings:Get("aBackground")
+	ShowColorPicker(r, g, b, a, changeBackgroundColor)
+end)
+
+local buttonBorderColor = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
+buttonBorderColor:SetPoint("BOTTOMLEFT", buttonBackgroundColor, "BOTTOMRIGHT", 5, 0)
+buttonBorderColor:SetText("Border")	-- LOCALISE
+buttonBorderColor:SetWidth(buttonBorderColor.Text:GetUnboundedStringWidth()+25)
+buttonBorderColor:SetHeight(22)
+buttonBorderColor:RegisterForClicks("AnyUp")
+buttonBorderColor:SetScript("OnClick", function()
+	local r = settings:Get("rBorder")
+	local g = settings:Get("gBorder")
+	local b = settings:Get("bBorder")
+	local a = settings:Get("aBorder")
+	ShowColorPicker(r, g, b, a, changeBorderColor)
+end)
+
+local buttonResetColor = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
+buttonResetColor:SetPoint("BOTTOMLEFT", buttonBorderColor, "BOTTOMRIGHT", 5, 0)
+buttonResetColor:SetText("Reset")	-- LOCALISE
+buttonResetColor:SetWidth(buttonResetColor.Text:GetUnboundedStringWidth()+20)
+buttonResetColor:SetHeight(22)
+buttonResetColor:RegisterForClicks("AnyUp")
+buttonResetColor:SetScript("OnClick", function()
+	settings:Set("rBackground", 0)
+	settings:Set("gBackground", 0)
+	settings:Set("bBackground", 0)
+	settings:Set("aBackground", 1)
+	settings:Set("rBorder", 1)
+	settings:Set("gBorder", 1)
+	settings:Set("bBorder", 1)
+	settings:Set("aBorder", 1)
+
+	for suffix, window in pairs(AllTheThings.Windows) do
+		window:SetBackdropColor(0, 0, 0, 1)
+		window:SetBackdropBorderColor(1, 1, 1, 1)
+	end
+end)
 
 end)();
 
