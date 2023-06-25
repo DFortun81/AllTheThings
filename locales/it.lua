@@ -469,6 +469,7 @@ ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TO
 		--TODO: L.MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
 		--TODO: L.MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 		--TODO: L.ADDITIONAL_LABEL = "Additional Information";
+		--TODO: L.WINDOW_COLORS = "Window Colors";
 
 	-- Features tab
 		--TODO: L.MINIMAP_LABEL = "Minimap Button";

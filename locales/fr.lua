@@ -468,6 +468,7 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		L.MINI_LIST_SLIDER_LABEL = "Échelle de la mini-liste";
 		L.MINI_LIST_SCALE_TOOLTIP = "Utilisez cette option pour personnaliser l’échelle des mini-listes.\n\nDéfaut : 1";
 		L.ADDITIONAL_LABEL = "Informations complémentaires";
+		--TODO: L.WINDOW_COLORS = "Window Colors";
 
 	-- Features tab
 		L.MINIMAP_LABEL = "Bouton de la mini-carte.";

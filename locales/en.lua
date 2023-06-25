@@ -573,6 +573,10 @@ app.L = {
 	["MINI_LIST_SLIDER_LABEL"] = "Mini Lists Scale";
 	["MINI_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 	["ADDITIONAL_LABEL"] = "Additional Information";
+	["WINDOW_COLORS"] = "Window Colors";
+	["BACKGROUND"] = EMBLEM_BACKGROUND;
+	["BORDER"] = EMBLEM_BORDER;
+	["RESET"] = RESET;
 
 	-- Features tab
 	["MINIMAP_LABEL"] = "Minimap Button";

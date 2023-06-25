@@ -472,6 +472,7 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.MINI_LIST_SLIDER_LABEL = "Масштаб Мини Списков";
 		L.MINI_LIST_SCALE_TOOLTIP = 'Используйте для изменения масштаба Мини и Других Списков.\n\nПо умолчанию: 1';
 		L.ADDITIONAL_LABEL = "Дополнительная Информация";
+		--TODO: L.WINDOW_COLORS = "Window Colors";
 
 	-- Features tab
 		L.MINIMAP_LABEL = "Кнопка у Миникарты";

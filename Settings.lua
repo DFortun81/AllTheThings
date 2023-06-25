@@ -431,6 +431,20 @@ settings.SetWindowFromProfile = function(suffix)
 				RawSettings.Windows[suffix] = nil
 			end
 		end
+		-- Apply the user-set colours
+		local rBg = settings:Get("rBackground")
+		local gBg = settings:Get("gBackground")
+		local bBg = settings:Get("bBackground")
+		local aBg = settings:Get("aBackground")
+		local rBd = settings:Get("rBorder")
+		local gBd = settings:Get("gBorder")
+		local bBd = settings:Get("bBorder")
+		local aBd = settings:Get("aBorder")
+
+		for suffix, window in pairs(AllTheThings.Windows) do
+			window:SetBackdropColor(rBg, gBg, bBg, aBg)
+			window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
+		end
 	end
 end
 settings.CheckSeasonalDate = function(self, eventID, startMonth, startDay, endMonth, endDay)
@@ -3812,7 +3826,7 @@ end)
 DynamicCategoryNestedCheckbox:AlignAfter(DynamicCategorySimpleCheckbox)
 DynamicCategoryNestedCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
 
-local headerWindowColors = child:CreateHeaderLabel("Window Colors")	-- LOCALISE
+local headerWindowColors = child:CreateHeaderLabel(L["WINDOW_COLORS"])
 headerWindowColors:SetPoint("LEFT", headerListBehavior, 0, 0)
 headerWindowColors:SetPoint("TOP", DynamicCategoryNestedCheckbox, "BOTTOM", 0, -10)
 
@@ -3875,7 +3889,7 @@ end
 
 local buttonBackgroundColor = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
 buttonBackgroundColor:SetPoint("TOPLEFT", headerWindowColors, "BOTTOMLEFT", 0, -5)
-buttonBackgroundColor:SetText("Background")	-- LOCALISE
+buttonBackgroundColor:SetText(L["BACKGROUND"])
 buttonBackgroundColor:SetWidth(buttonBackgroundColor.Text:GetUnboundedStringWidth()+25)
 buttonBackgroundColor:SetHeight(22)
 buttonBackgroundColor:RegisterForClicks("AnyUp")
@@ -3889,7 +3903,7 @@ end)
 
 local buttonBorderColor = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
 buttonBorderColor:SetPoint("BOTTOMLEFT", buttonBackgroundColor, "BOTTOMRIGHT", 5, 0)
-buttonBorderColor:SetText("Border")	-- LOCALISE
+buttonBorderColor:SetText(L["BORDER"])
 buttonBorderColor:SetWidth(buttonBorderColor.Text:GetUnboundedStringWidth()+25)
 buttonBorderColor:SetHeight(22)
 buttonBorderColor:RegisterForClicks("AnyUp")
@@ -3903,7 +3917,7 @@ end)
 
 local buttonResetColor = CreateFrame("Button", nil, child, "UIPanelButtonTemplate")
 buttonResetColor:SetPoint("BOTTOMLEFT", buttonBorderColor, "BOTTOMRIGHT", 5, 0)
-buttonResetColor:SetText("Reset")	-- LOCALISE
+buttonResetColor:SetText(L["RESET"])
 buttonResetColor:SetWidth(buttonResetColor.Text:GetUnboundedStringWidth()+20)
 buttonResetColor:SetHeight(22)
 buttonResetColor:RegisterForClicks("AnyUp")

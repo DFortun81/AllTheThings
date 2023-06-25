@@ -469,6 +469,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.MINI_LIST_SLIDER_LABEL = "小列表缩放";
 		L.MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自定义所有小和小列表的缩放。\n\n默认：1';
 		L.ADDITIONAL_LABEL = "附加信息";
+		--TODO: L.WINDOW_COLORS = "Window Colors";
 
 	-- Features tab
 		L.MINIMAP_LABEL = "小地图按钮";
