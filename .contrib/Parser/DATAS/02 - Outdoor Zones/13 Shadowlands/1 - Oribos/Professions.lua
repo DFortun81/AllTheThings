@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 			}),
 			prof(BLACKSMITHING, {
 				n(156666, {	-- Smith Au'berk <Blacksmithing Trainer>
-					["coord"] = { 48.2, 29.0, ORIBOS },
+					["coord"] = { 40.5, 31.4, ORIBOS },
 					["g"] = SL_BLACKSMITHING,
 				}),
 			}),
@@ -26,6 +26,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 				n(156685, {	-- Scribe Au'tehshi <Inscription Trainer>
 					["coord"] = { 36.8, 36.4, ORIBOS },
 					["g"] = SL_INSCRIPTION,
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(156669, {	-- Tanner Au'qil <Leatherworking Trainer>
+					["coord"] = { 42.6, 26.8, ORIBOS },
+					["g"] = SL_LEATHERWORKING,
 				}),
 			}),
 		}),

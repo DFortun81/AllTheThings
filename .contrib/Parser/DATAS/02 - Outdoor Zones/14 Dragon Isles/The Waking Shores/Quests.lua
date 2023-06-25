@@ -670,6 +670,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						66114,	-- For the Benefit of the Queen
 						70125,	-- Where is Wrathion? (A)
 						69910,	-- Where is Wrathion? (H)
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 191025 },	-- Lifecaller Tzadrak
@@ -819,6 +820,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						66079,	-- Wrathion Awaits
 						70125,	-- Where is Wrathion? (A)
 						69910,	-- Where is Wrathion? (H)
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 185627 },	-- Ingot
@@ -834,6 +836,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						66079,	-- Wrathion Awaits
 						70125,	-- Where is Wrathion? (A)
 						69910,	-- Where is Wrathion? (H)
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 185627 },	-- Ingot

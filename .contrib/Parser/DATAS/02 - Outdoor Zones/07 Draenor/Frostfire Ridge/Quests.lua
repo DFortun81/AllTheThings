@@ -41,6 +41,7 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						49545,	-- Warchief's Command: Frostfire Ridge!
+						33868,	-- The Home of the Frostwolves
 					},
 				}),
 				q(34280, {	-- All is Revealed
@@ -780,6 +781,10 @@ root(ROOTS.Zones, {
 				q(33868, {	-- The Home of the Frostwolves
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34446,	-- The Home Stretch
+					["sourceQuestNumRequired"] = 0,	-- Want to show the typical sequence of when one would obtain this quest, but it can be shared with out pre-reqs
+					-- Maybe not actually a breadcrumb... but you can abandon it and skip it
+					-- Unsure if a character which does this can go find it again somehow
+					["isBreadcrumb"] = true,
 				}),
 				q(33010, {	-- The Iron Wolf
 					["coord"] = { 50.1, 37.9, FROSTWALL },

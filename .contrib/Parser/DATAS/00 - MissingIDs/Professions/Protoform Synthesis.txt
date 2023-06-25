@@ -1,3 +1,61 @@
 Good Work! Nothing to do here!
 
-Nothing is Missing in Protoform SynthesisItemDB.lua! Good Work!
+
+
+Missing in Protoform SynthesisItemDB.lua
+
+9.2.0.41089
+r(363894),	-- Archetype of Discovery
+r(364527),	-- Ambystan Darter
+r(364549),	-- Archetype of Metamorphosis
+r(364551),	-- Archetype of Survival
+r(364568),	-- Archetype of Motion
+r(364570),	-- Archetype of Satisfaction
+r(364571),	-- Archetype of Animation
+r(364572),	-- Archetype of Focus
+r(364573),	-- Archetype of Renewal
+r(364576),	-- Archetype of Multiplicity
+r(364578),	-- Archetype of Vigilance
+r(364580),	-- Archetype of Cunning
+r(364581),	-- Archetype of Predation
+r(364584),	-- Archetype of Serenity
+r(364585),	-- Archetype of Malice
+r(364665),	-- Fierce Scarabid \\ Stabilized Scarabid
+r(364679),	-- Multichicken
+r(364687),	-- Violent Poultrid
+r(364688),	-- Stabilized Geomental
+r(364689),	-- Omnipotential Core
+r(364690),	-- Resonant Echo
+r(364691),	-- Prototickles
+r(364695),	-- Terror Jelly
+r(364697),	-- Microlicid \\ Gastropodling
+r(364698),	-- Shelly
+r(364699),	-- Viperid Menace
+r(364700),	-- Tunneling Vombata
+r(364703),	-- Leaping Leporid
+r(365040),	-- Pale Regal Cervid
+r(365042),	-- Sundered Zerethsteed
+r(365045),	-- Deathrunner
+r(365046),	-- Vespoid Flutterer
+r(365047),	-- Bronzewing Vespoid
+r(365048),	-- Buzz
+r(365049),	-- Forged Spiteflyer
+r(365050),	-- Desertwing Hunter
+r(365051),	-- Mawdapted Raptora
+r(365052),	-- Raptora Swooper
+r(365055),	-- Genesis Crawler
+r(365056),	-- Tarachnid Creeper
+r(365057),	-- Ineffable Skitterer
+r(365058),	-- Goldplate Bufonid
+r(365061),	-- Patient Bufonid
+r(365062),	-- Prototype Leaper
+r(365063),	-- Russet Bufonid
+r(365064),	-- Curious Crystalsniffer
+r(365065),	-- Darkened Vombata
+r(365068),	-- Adorned Vombata
+r(365072),	-- Serenade
+r(365073),	-- Bronze Helicid \\ Bronze Gastropod
+r(365074),	-- Unsuccessful Prototype Fleetpod
+r(365076),	-- Scarlet Helicid \\ Stabilized Gastropod
+9.2.0.41827
+r(367704),	-- Heartbond Lupine

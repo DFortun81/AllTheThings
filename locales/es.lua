@@ -1041,6 +1041,7 @@ for key,value in pairs({
 	[175761] = "Guerra civil en las Tierras de la Peste",	-- Civil War in the Plaguelands
 	[175762] = "El triunfante Rey Exánime",	-- The Lich King Triumphant
 	[175763] = "Antiguas rencillas: la colonización de Kalimdor",	-- Old Hatreds - The Colonization of Kalimdor
+	[175802] = "Arcón pequeño",	-- Small Lockbox
 	[175854] = "Los Imperios Gemelos",	-- The Twin Empires
 	[175855] = "La caída de los imperios",	-- Empires' Fall
 	[175856] = "La cólera del Cazador de Almas",	-- Wrath of Soulflayer
@@ -1097,6 +1098,7 @@ for key,value in pairs({
 	[178144] = "Cofre trol",	-- Troll Chest
 	[178195] = "Aceite Grito de Guerra",	-- Warsong Oil
 	[178204] = "Envío de hachas de los Grito de Guerra",	-- Warsong Axe Shipment
+	--TODO: [178224] = "Dire Pool",	-- Dire Pool
 	[178227] = "Cesta de tótems de Murgut",	-- Murgut's Totem Basket
 	[178553] = "Vaina de Colmen'Ashi",	-- Hive'Ashi Pod
 	[178609] = "Nieve de Vacaciones",	-- Holiday Snow

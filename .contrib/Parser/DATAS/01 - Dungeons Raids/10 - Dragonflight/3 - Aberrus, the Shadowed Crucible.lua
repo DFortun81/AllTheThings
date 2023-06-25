@@ -11,7 +11,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
 		["isRaid"] = true,
 		["coord"] = { 48.6, 10.2, ZARALEK_CAVERN },
-		["order"] = "02",
 		["maps"] = {
 			2166,	-- Molten Crucible
 			2167,	-- Onyx Laboratory
@@ -466,7 +465,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							i(202655),	-- Elder's Volcanic Binding
 							i(202614),	-- Rashok's Molten Heart
 							i(202603),	-- Sandals of Ancient Fury
-							i(202659),	-- Shackles of the Shadowed Bastille
+							-- TODO: hopefully blizzard fixes this without the bonusID. test with /att i:202659.04
+							i(202659, {["bonusID"]=451}),	-- Shackles of the Shadowed Bastille
 							i(204466),	-- Tormentor's Siphoning Signet
 							i(202592),	-- Unyielding Goliath's Burgonet
 						},
@@ -1131,7 +1131,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						i(202655),	-- Elder's Volcanic Binding
 						i(202614),	-- Rashok's Molten Heart
 						i(202603),	-- Sandals of Ancient Fury
-						i(202659),	-- Shackles of the Shadowed Bastille
+						-- TODO: hopefully blizzard fixes this without the bonusID. test with /att i:202659.05
+						i(202659, {["bonusID"]=1}),	-- Shackles of the Shadowed Bastille
 						i(204466),	-- Tormentor's Siphoning Signet
 						i(202592),	-- Unyielding Goliath's Burgonet
 					},
@@ -1424,7 +1425,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						i(202655),	-- Elder's Volcanic Binding
 						i(202614),	-- Rashok's Molten Heart
 						i(202603),	-- Sandals of Ancient Fury
-						i(202659),	-- Shackles of the Shadowed Bastille
+						-- TODO: hopefully blizzard fixes this without the bonusID. test with /att i:202659.06
+						i(202659, {["bonusID"]=450}),	-- Shackles of the Shadowed Bastille
 						i(204466),	-- Tormentor's Siphoning Signet
 						i(202592),	-- Unyielding Goliath's Burgonet
 					},

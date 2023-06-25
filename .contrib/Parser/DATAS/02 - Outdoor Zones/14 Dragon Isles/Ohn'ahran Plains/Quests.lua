@@ -12,7 +12,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 61.6, 68.6, THE_WAKING_SHORES },
 				}),
 				q(65779, {	-- Into the Plains
-					["sourceQuests"] = { 65795 },	-- Next Steppes
+					["sourceQuests"] = {
+						65795,	-- Next Steppes
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 185878 },	-- Ambassador Taurasza
 					["coord"] = { 48.3, 88.7, THE_WAKING_SHORES },
 					["g"] = {

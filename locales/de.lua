@@ -1062,6 +1062,7 @@ for key,value in pairs({
 	[175761] = "Bürgerkrieg in den Pestländern",	-- Civil War in the Plaguelands
 	[175762] = "Der Triumph des Lichkönigs",	-- The Lich King Triumphant
 	[175763] = "Alter Hass - Die Kolonialisierung von Kalimdor",	-- Old Hatreds - The Colonization of Kalimdor
+	[175802] = "Kleine Schließkassette",	-- Small Lockbox
 	[175854] = "Die Zwillingsimperien",	-- The Twin Empires
 	[175855] = "Der Fall des Imperiums",	-- Empires' Fall
 	[175856] = "Der Zorn des Seelenschinders",	-- Wrath of Soulflayer
@@ -1118,6 +1119,7 @@ for key,value in pairs({
 	[178144] = "Trolltruhe",	-- Troll Chest
 	[178195] = "Öl des Kriegshymnenklans",	-- Warsong Oil
 	[178204] = "Axtlieferung des Kriegshymnenklans",	-- Warsong Axe Shipment
+	--TODO: [178224] = "Dire Pool",	-- Dire Pool
 	[178227] = "Murguts Totemkorb",	-- Murgut's Totem Basket
 	[178553] = "Kapsel des Ashischwarms",	-- Hive'Ashi Pod
 	[178609] = "Feiertagsschnee",	-- Holiday Snow

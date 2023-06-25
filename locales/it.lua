@@ -1037,6 +1037,7 @@ for key,value in pairs({
 	[175761] = "La Guerra Civile nelle Terre Infette",	-- Civil War in the Plaguelands
 	[175762] = "Il Trionfo del Re dei Lich",	-- The Lich King Triumphant
 	[175763] = "Vecchi Rancori - La Colonizzazione di Kalimdor",	-- Old Hatreds - The Colonization of Kalimdor
+	[175802] = "Small Lockbox",	-- Small Lockbox	--TODO: This was taken from wotlk Wowhead
 	[175854] = "Gli Imperi Gemelli",	-- The Twin Empires
 	[175855] = "La Caduta degli Imperi",	-- Empires' Fall
 	[175856] = "La Furia dello Scortica Anime",	-- Wrath of Soulflayer
@@ -1093,6 +1094,7 @@ for key,value in pairs({
 	[178144] = "Cassa dei Troll",	-- Troll Chest
 	[178195] = "Olio dei Cantaguerra",	-- Warsong Oil
 	[178204] = "Spedizione d'Asce dei Cantaguerra",	-- Warsong Axe Shipment
+	--TODO: [178224] = "Dire Pool",	-- Dire Pool
 	[178227] = "Cesto del Totem di Murgut",	-- Murgut's Totem Basket
 	[178553] = "Baccello dell'Alveare Ashi",	-- Hive'Ashi Pod
 	[178609] = "Neve Festiva",	-- Holiday Snow

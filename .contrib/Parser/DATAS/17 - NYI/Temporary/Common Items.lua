@@ -147,7 +147,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				filter(TWO_HANDED_AXES, {
 					i(21034),	-- 3300 Test 2h Axe 60 white
-					i(30502),	-- Monster - Draenei_D01_Red	
+					i(30502),	-- Monster - Draenei_D01_Red
 				}),
 				filter(BOWS, {
 					i(21036),	-- 2800 test bow
@@ -692,7 +692,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(168119),	-- Parrying Dagger
 					i(168118),	-- Swift Dagger
 				}),
-				filter(PROF_EQUIP, {
+				filter(PROFESSION_EQUIPMENT, {
 					i(177030),	-- Aquatic Extractor
 				}),
 				filter(GUNS, {

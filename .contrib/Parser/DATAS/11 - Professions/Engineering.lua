@@ -335,6 +335,11 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Blue Firework",
 					["recipeID"] = 23067,
+					-- #if BEFORE 4.0.3
+					-- #if AFTER TBC
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
+					-- #endif
 				},
 				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Blue Rocket Cluster",
@@ -383,6 +388,11 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Red Firework",
 					["recipeID"] = 23066,
+					-- #if BEFORE 4.0.3
+					-- #if AFTER TBC
+					["races"] = HORDE_ONLY,
+					-- #endif
+					-- #endif
 				},
 				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Red Rocket Cluster",

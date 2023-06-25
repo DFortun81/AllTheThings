@@ -172,6 +172,7 @@ local TooltipSettingsBase = {
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
 		["Precision"] = 2,
+		["PlayDeathSound"] = false,
 		["Progress"] = true,
 		["QuestGivers"] = true,
 		["RaceRequirements"] = true,

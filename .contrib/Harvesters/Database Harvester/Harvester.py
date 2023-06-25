@@ -242,6 +242,7 @@ def create_missing_recipes() -> None:
         for profession in profession_dict
     }
     for profession in profession_dict:
+        print(profession)
         with open(missing_path_dict[profession], "w") as missing_file:
             raw_ids = extract_nth_column(raw_path_dict[profession], 0)
             excluded_ids = extract_nth_column(exclusion_path_dict[profession], 0)
@@ -253,11 +254,13 @@ def create_missing_recipes() -> None:
                 missing_file.writelines(difference)
             else:
                 missing_file.write("Good Work! Nothing to do here!")
-            if not (difference := get_itemdb_difference(profession, raw_ids, excluded_ids)):
+            if (difference_db := get_itemdb_difference(profession, raw_ids, excluded_ids)):
+                missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
+                missing_file.writelines(difference_db)
+            else:
                 missing_file.write(f"\n\nNothing is Missing in {profession}ItemDB.lua! Good Work!")
-                continue
-            missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
-            missing_file.writelines(difference)
+        if not difference and not difference_db and missing_path_dict[profession].exists():
+            missing_path_dict[profession].unlink()
     return
 
 
@@ -267,6 +270,7 @@ def create_missing_file(thing: type[Thing]) -> None:
         raise NotImplementedError("This is not a real collectible.")
     if thing == Recipes:
         create_missing_recipes()
+        return
     missing_path = Path(
         DATAS_FOLDER,
         "00 - MissingIDs",
@@ -275,6 +279,7 @@ def create_missing_file(thing: type[Thing]) -> None:
     with open(missing_path, "w") as missing_file:
         raw_ids = extract_nth_column(Path("Raw", f"{thing.__name__}.txt"), 0)
         excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.__name__}.txt"), 0)
+        difference_db = None
         difference = sorted(
             set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
             key=raw_ids.index,
@@ -289,15 +294,17 @@ def create_missing_file(thing: type[Thing]) -> None:
                 for line in db_file:
                     if info := thing.extract_existing_info(line):
                         existing_things.append(info + "\n")
-                difference = sorted(
+                difference_db = sorted(
                     set(raw_ids) - set(existing_things) - set(excluded_ids),
                     key=raw_ids.index,
                 )
-                if not (difference := remove_empty_builds(difference)):
+                if (difference_db := remove_empty_builds(difference_db)):
+                    missing_file.write(f"\n\n\n\nMissing in {thing.db_path.name}\n\n")
+                    missing_file.writelines(difference_db)
+                else:
                     missing_file.write(f"\n\nNothing is Missing in {thing.db_path.name}! Good Work!")
-                    return
-                missing_file.write(f"\n\n\n\nMissing in {thing.db_path.name}\n\n")
-                missing_file.writelines(difference)
+    if not difference and not difference_db and missing_path.exists():
+        missing_path.unlink()
 
 
 def post_process_recipes() -> None:
@@ -313,7 +320,9 @@ def post_process_recipes() -> None:
         for profession in profession_dict
     }
     for profession in profession_dict:
-        print(f"{profession}")
+        print(profession)
+        if not missing_path_dict[profession].exists():
+            return
         missing_lines = extract_nth_column(missing_path_dict[profession], 0)
         for index, id in enumerate(missing_lines):
             id = re.sub("[^\\d^.]", "", id.strip())
@@ -336,11 +345,14 @@ def post_process(thing: type[Thing]) -> None:
         raise NotImplementedError("This is not a real collectible.")
     if thing == Recipes:
         post_process_recipes()
+        return
     missing_path = Path(
         DATAS_FOLDER,
         "00 - MissingIDs",
         f"Missing{thing.__name__}.txt",
     )
+    if not missing_path.exists():
+        return
     missing_lines = extract_nth_column(missing_path, 0)
     if thing in (
         Achievements,
@@ -548,4 +560,4 @@ def give_name_item() -> None:
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
 """Step 5: Run create_missing_files() and (you have to uncomment it)"""
-# create_missing_files()
+create_missing_files()

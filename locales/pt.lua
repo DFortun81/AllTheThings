@@ -1037,6 +1037,7 @@ for key,value in pairs({
 	[175761] = "Guerra Civil nas Terras Pestilentas",	-- Civil War in the Plaguelands
 	[175762] = "O Triunfo do Lich Rei",	-- The Lich King Triumphant
 	[175763] = "Velhos Ódios: a Colonização de Kalimdor",	-- Old Hatreds - The Colonization of Kalimdor
+	[175802] = "Cofre Pequeno",	-- Small Lockbox	--TODO: This was taken from wotlk Wowhead
 	[175854] = "Os Impérios Gêmeos",	-- The Twin Empires
 	[175855] = "A Queda do Império",	-- Empires' Fall
 	[175856] = "A Ira do Esfolador de Almas",	-- Wrath of Soulflayer
@@ -1093,6 +1094,7 @@ for key,value in pairs({
 	[178144] = "Baú dos Trolls",	-- Troll Chest
 	[178195] = "Óleo dos Brado Guerreiro",	-- Warsong Oil
 	[178204] = "Carregamento de Machados dos Brado Guerreiro",	-- Warsong Axe Shipment
+	--TODO: [178224] = "Dire Pool",	-- Dire Pool
 	[178227] = "Cesto do Totem de Murgut",	-- Murgut's Totem Basket
 	[178553] = "Receptáculo Colme'Ashi",	-- Hive'Ashi Pod
 	[178609] = "Neve de Feriado",	-- Holiday Snow

@@ -4,26 +4,12 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(PROFESSIONS, {
-			prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY }, {
+			prof(ALCHEMY, {
 				n(185545, {	-- Conflago <Alchemy Trainer>
 					["coord"] = { 36.6, 72.6, VALDRAKKEN },
-					["g"] = {
-						r(366261),	-- Dragon Isles Alchemy
-						r(370547),	-- Aerated Mana Potion
-						r(370746),	-- Basic Phial Experimentation
-						r(370743),	-- Basic Potion Experimentation
-						r(370551),	-- Elemental Potion of Power
-						r(370722),	-- Omnium Draconis
-						r(370465),	-- Phial of Tepid Versatility
-						r(370717),	-- Primal Convergent
-						r(370748),	-- Reclaim Concoctions
-						r(389190),	-- Recraft Equipment
-						r(370539),	-- Refreshing Healing Potion
-						r(370711),	-- Transmute: Awakened Air
-						r(370731),	-- Writhefire Oil
-					},
+					["g"] = DF_ALCHEMY,
 				}),
-			})),
+			}),
 			prof(BLACKSMITHING, {
 				n(185546, {	-- Metalshaper Kuroko <Blacksmithing Trainer>
 					["coord"] = { 37.2, 47.8, VALDRAKKEN },
@@ -125,85 +111,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 			})),
-			prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
+			prof(LEATHERWORKING, {
 				n(185551, {	-- Hideshaper Koruz <Leatherworking Trainer>
 					["coord"] = { 28.8, 61.6, VALDRAKKEN },
-					["g"] = {
-						r(366249),	-- Dragon Isles Leatherworking
-						r(375188),	-- Alchemist's Hat
-						r(375102),	-- Bonewrought Crossbow
-						r(375182),	-- Durable Pack
-						r(375178),	-- Earthshine Scales
-						r(375168),	-- Feral Hide Drums
-						r(375181),	-- Floral Basket
-						r(375179),	-- Frostbite Scales
-						r(409557, {["timeline"]={ADDED_10_1_0}}),	-- Hide-Bound Drums
-						r(375184),	-- Jeweler's Cover
-						r(375174),	-- Mireslush Hide
-						r(409555, {["timeline"]={ADDED_10_1_0}}),	-- Lustrous Scaled Drums
-						r(375103),	-- Pioneer's Leather Boots
-						r(375104),	-- Pioneer's Leather Wristguards
-						r(375105),	-- Pioneer's Leather Tunic
-						r(395863),	-- Pioneer's Practiced Belt
-						r(395864),	-- Pioneer's Practiced Cowl
-						r(395865),	-- Pioneer's Practiced Gloves
-						r(395867),	-- Pioneer's Practiced Leggings
-						r(395868),	-- Pioneer's Practiced Shoulderpads
-						r(375185),	-- Protective Gloves
-						r(389195),	-- Recraft Equipment
-						r(375164),	-- Reinforced Armor Kit
-						r(375186),	-- Resilient Smock
-						r(375183),	-- Skinner's Cap
-						r(375187),	-- Smithing Apron
-						r(375173),	-- Stonecrust Hide
-						r(375106),	-- Trailblazer's Scale Boots
-						r(375107),	-- Trailblazer's Scale Bracers
-						r(375108),	-- Trailblazer's Scale Vest
-						r(395839),	-- Trailblazer's Toughened Coif
-						r(395844),	-- Trailblazer's Toughened Chainbelt
-						r(395845),	-- Trailblazer's Toughened Grips
-						r(395847),	-- Trailblazer's Toughened Legguards
-						r(395851),	-- Trailblazer's Toughened Spikes
-					},
+					["g"] = DF_LEATHERWORKING,
 				}),
-			})),
-			prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
+			}),
+			prof(INSCRIPTION, {
 				n(185540, {	-- Talendara <Inscription Trainer>
 					["coord"] = { 38.8, 72.4, VALDRAKKEN },
-					["g"] = {
-						r(366251),	-- Dragon Isles Inscription
-						r(382981),	-- Dragon Isles Milling
-						r(383549),	-- Alchemist's Sturdy Mixing Rod
-						r(383563),	-- Blazing Fortune
-						r(383786),	-- Blazing Ink
-						r(383791),	-- Burnished Ink
-						r(383527),	-- Buzzing Rune
-						r(383551),	-- Chef's Smooth Rolling Pin
-						r(383531),	-- Chilled Rune
-						r(383525),	-- Chirping Rune
-						r(383539),	-- Core Explorer's Compendium
-						r(383790),	-- Cosmic Ink
-						r(383554),	-- Draconic Missive of the Aurora
-						r(383555),	-- Draconic Missive of the Feverflare
-						r(383556),	-- Draconic Missive of the Fireflash
-						r(383560),	-- Draconic Missive of the Harmonious
-						r(383561),	-- Draconic Missive of the Peerless
-						r(383562),	-- Draconic Missive of the Quickblade
-						r(384948),	-- Flourishing Fortune
-						r(383787),	-- Flourishing Ink
-						r(383529),	-- Howling Rune
-						r(383572),	-- Illusion Parchment: Spell Shield
-						r(383543),	-- Overseer's Writhebark Stave
-						r(383544),	-- Pioneer's Writhebark Stave
-						r(389193),	-- Recraft Equipment
-						r(383530),	-- Runed Writhebark
-						r(383547),	-- Scribe's Fastened Quill
-						r(384949),	-- Serene Fortune
-						r(383788),	-- Serene Ink
-						r(383546),	-- Vantus Rune: Vault of the Incarnates
-					},
+					["g"] = DF_INSCRIPTION,
 				}),
-			})),
+			}),
 			prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = JEWELCRAFTING }, {
 				n(190094, {	-- Tuluradormi <Jewelcrafting Trainer>
 					["coord"] = { 40.6, 61.2, VALDRAKKEN },

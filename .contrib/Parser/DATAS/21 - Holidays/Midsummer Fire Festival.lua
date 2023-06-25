@@ -882,7 +882,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		}),
 		q(32499, {	-- Honor the Flame — Krasarang Wilds
 			["qg"] = 69533,	-- Krasarang Wilds Flame Guardian
-			["coord"] = { 77.8, 3.60, KRASARANG_WILDS },
+			["coord"] = { 73.9, 9.4, KRASARANG_WILDS },
 			["timeline"] = { "added 5.0.1" },
 			["isYearly"] = true,
 		}),
