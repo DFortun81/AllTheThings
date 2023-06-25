@@ -476,6 +476,8 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color and opacity of all ATT windows.";
 		--TODO: L.BORDER_TOOLTIP = "Set the border color and opacity of all ATT windows.";
 		--TODO: L.RESET_TOOLTIP = "Reset the background and border of all ATT windows.";
+		--TODO: L.CLASS_BORDER = "Use Class Color For Border";
+		--TODO: L.CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 
 	-- Features tab
 		L.MINIMAP_LABEL = "Кнопка у Миникарты";

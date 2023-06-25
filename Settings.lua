@@ -139,6 +139,7 @@ local GeneralSettingsBase = {
 		["Profile:ShowProfileLoadedMessage"] = true,
 		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1 },
 		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1 },
+		["Window:UseClassForBorder"] = false,
 	},
 }
 local FilterSettingsBase = {}
@@ -409,14 +410,27 @@ settings.SetWindowFromProfile = function(suffix)
 			end
 		end
 		-- Apply the user-set colours
-		local rBg = tonumber(settings:Get("Window:BackgroundColor").r) or 0
-		local gBg = tonumber(settings:Get("Window:BackgroundColor").g) or 0
-		local bBg = tonumber(settings:Get("Window:BackgroundColor").b) or 0
-		local aBg = tonumber(settings:Get("Window:BackgroundColor").a) or 0
-		local rBd = tonumber(settings:Get("Window:BorderColor").r) or 0
-		local gBd = tonumber(settings:Get("Window:BorderColor").g) or 0
-		local bBd = tonumber(settings:Get("Window:BorderColor").b) or 0
-		local aBd = tonumber(settings:Get("Window:BorderColor").a) or 0
+		local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd
+
+		-- User-saved colors
+		rBg = tonumber(settings:Get("Window:BackgroundColor").r) or 0
+		gBg = tonumber(settings:Get("Window:BackgroundColor").g) or 0
+		bBg = tonumber(settings:Get("Window:BackgroundColor").b) or 0
+		aBg = tonumber(settings:Get("Window:BackgroundColor").a) or 0
+
+		-- Border colors
+		if settings:GetTooltipSetting("Window:UseClassForBorder") then
+			-- Set all the borders to the current class color
+			local _, class = UnitClass("player")
+			rBd, gBd, bBd = GetClassColor(class)
+			aBd = 1
+		else
+			-- User-saved colors
+			rBd = tonumber(settings:Get("Window:BorderColor").r) or 0
+			gBd = tonumber(settings:Get("Window:BorderColor").g) or 0
+			bBd = tonumber(settings:Get("Window:BorderColor").b) or 0
+			aBd = tonumber(settings:Get("Window:BorderColor").a) or 0
+		end
 
 		for suffix, window in pairs(AllTheThings.Windows) do
 			window:SetBackdropColor(rBg, gBg, bBg, aBg)
@@ -3498,68 +3512,6 @@ end)
 checkboxAllowWrapping:SetATTTooltip(L["WITH_WRAPPING_CHECKBOX_TOOLTIP"])
 checkboxAllowWrapping:AlignBelow(checkboxUnsorted)
 
-local headerAdditionalInformation = child:CreateHeaderLabel(L["ADDITIONAL_LABEL"])
-headerAdditionalInformation:SetPoint("LEFT", headerTooltips, 0, 0)
-headerAdditionalInformation:SetPoint("TOP", checkboxCurrencyCalculation, "BOTTOM", 0, -10)
-
-local ids = {
-	["achievementID"] = "Achievement ID",
-	["achievementCategoryID"] = "Achievement Category ID",
-	["artifactID"] = "Artifact ID",
-	["azeriteEssenceID"] = "Azerite Essence ID",
-	["bonusID"] = "Bonus ID",
-	["creatureID"] = "Creature ID",
-	["creatures"] = "Creatures List",
-	["currencyID"] = "Currency ID",
-	["difficultyID"] = "Difficulty ID",
-	["displayID"] = "Display ID",
-	["encounterID"] = "Encounter ID",
-	["factionID"] = "Faction ID",
-	["filterID"] = "Filter ID",
-	["flightPathID"] = "Flight Path ID",
-	["followerID"] = "Follower ID",
-	["headerID"] = "Header ID",
-	["iconPath"] = "Icon Path",
-	["illusionID"] = "Illusion ID",
-	["instanceID"] = "Instance ID",
-	["itemID"] = "Item ID",
-	["itemString"] = "Item String",
-	["mapID"] = "Map ID",
-	["modID"] = "Mod ID",
-	["objectID"] = "Object ID",
-	["questID"] = "Quest ID",
-	["QuestGivers"] = "Quest Givers",
-	["sourceID"] = "Source ID",
-	["speciesID"] = "Species ID",
-	["spellID"] = "Spell ID",
-	["tierID"] = "Tier ID",
-	["titleID"] = "Title ID",
-	["visualID"] = "Visual ID",
-}
-local last = nil
-local idNo = 1
-for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID", "difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","headerID","iconPath","illusionID","instanceID","itemID","itemString","mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
-	local filter = child:CreateCheckBox(ids[id],
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting(id))
-	end,
-	function(self)
-		settings:SetTooltipSetting(id, self:GetChecked())
-		settings:Refresh()
-	end)
-	if idNo == 1 then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
-	elseif idNo == 12 then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
-	elseif idNo == 23 then
-		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
-	else
-		filter:AlignBelow(last)
-	end
-	idNo = idNo + 1
-	last = filter
-end
-
 -- Column 2
 local headerListBehavior = child:CreateHeaderLabel(L["BEHAVIOR_LABEL"])
 headerListBehavior:SetPoint("TOPLEFT", headerTooltips, 320, 0)
@@ -3942,6 +3894,13 @@ local buttonBorderColor = child:CreateButton(
 	end,
 })
 buttonBorderColor:SetPoint("BOTTOMLEFT", buttonBackgroundColor, "BOTTOMRIGHT", 5, 0)
+buttonBorderColor.OnRefresh = function(self)
+	if settings:GetTooltipSetting("Window:UseClassForBorder") then
+		self:Disable()
+	else
+		self:Enable()
+	end
+end
 
 local buttonResetColor = child:CreateButton(
 -- button settings
@@ -3962,6 +3921,80 @@ local buttonResetColor = child:CreateButton(
 	end,
 })
 buttonResetColor:SetPoint("BOTTOMLEFT", buttonBorderColor, "BOTTOMRIGHT", 5, 0)
+
+local checkboxUseClassColorForBorder = child:CreateCheckBox(L["CLASS_BORDER"],	-- LOCALISE
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Window:UseClassForBorder"))
+end,
+function(self)
+	settings:SetTooltipSetting("Window:UseClassForBorder", self:GetChecked())
+	app:UpdateWindows()
+end)
+checkboxUseClassColorForBorder:SetATTTooltip(L["CLASS_BORDER_TOOLTIP"])
+checkboxUseClassColorForBorder:SetPoint("TOPLEFT", buttonBackgroundColor, "BOTTOMLEFT", -2, 0)
+
+--Bottom
+local headerAdditionalInformation = child:CreateHeaderLabel(L["ADDITIONAL_LABEL"])
+headerAdditionalInformation:SetPoint("LEFT", headerTooltips, 0, 0)
+headerAdditionalInformation:SetPoint("TOP", checkboxUseClassColorForBorder, "BOTTOM", 0, -10)
+
+local ids = {
+	["achievementID"] = "Achievement ID",
+	["achievementCategoryID"] = "Achievement Category ID",
+	["artifactID"] = "Artifact ID",
+	["azeriteEssenceID"] = "Azerite Essence ID",
+	["bonusID"] = "Bonus ID",
+	["creatureID"] = "Creature ID",
+	["creatures"] = "Creatures List",
+	["currencyID"] = "Currency ID",
+	["difficultyID"] = "Difficulty ID",
+	["displayID"] = "Display ID",
+	["encounterID"] = "Encounter ID",
+	["factionID"] = "Faction ID",
+	["filterID"] = "Filter ID",
+	["flightPathID"] = "Flight Path ID",
+	["followerID"] = "Follower ID",
+	["headerID"] = "Header ID",
+	["iconPath"] = "Icon Path",
+	["illusionID"] = "Illusion ID",
+	["instanceID"] = "Instance ID",
+	["itemID"] = "Item ID",
+	["itemString"] = "Item String",
+	["mapID"] = "Map ID",
+	["modID"] = "Mod ID",
+	["objectID"] = "Object ID",
+	["questID"] = "Quest ID",
+	["QuestGivers"] = "Quest Givers",
+	["sourceID"] = "Source ID",
+	["speciesID"] = "Species ID",
+	["spellID"] = "Spell ID",
+	["tierID"] = "Tier ID",
+	["titleID"] = "Title ID",
+	["visualID"] = "Visual ID",
+}
+local last = nil
+local idNo = 1
+for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID", "difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","headerID","iconPath","illusionID","instanceID","itemID","itemString","mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
+	local filter = child:CreateCheckBox(ids[id],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting(id))
+	end,
+	function(self)
+		settings:SetTooltipSetting(id, self:GetChecked())
+		settings:Refresh()
+	end)
+	if idNo == 1 then
+		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
+	elseif idNo == 12 then
+		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
+	elseif idNo == 23 then
+		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
+	else
+		filter:AlignBelow(last)
+	end
+	idNo = idNo + 1
+	last = filter
+end
 
 end)();
 
