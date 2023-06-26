@@ -4,12 +4,12 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(ZONE_DROPS, {
-			currency(1819, {	-- Medallion of Service
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian
+			currency(MEDALLION_OF_SERVICE, {
+				["customCollect"] = "SL_COV_KYR",
 				["description"] = "One of the best spots to farm those is in the northwest of Bastion around the World Boss. In the area there are 4 repeatable treasure chests, all of which contain 1 Medallion & can be looted without any daily CD. \n\nCan also drop from any Forsworn enemy.",
 			}),
 			i(184397, {	-- Lost Featherling (PET!)
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian
+				["customCollect"] = "SL_COV_KYR",
 				["crs"] = {
 					156559,	-- Ardent Warrior
 					157212,	-- Assuming Scholar

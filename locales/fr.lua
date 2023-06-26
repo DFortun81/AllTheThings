@@ -704,7 +704,6 @@ for key,value in pairs({
 		[-851] = "Cache de l’Empire noir",							-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Négociant Ve'ken & Négociant Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
-		[-921] = "Améliorations du sanctum",						-- Sanctum Upgrades
 		[-924] = "Réseau de transport",								-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "Loyauté",										-- Loyalty

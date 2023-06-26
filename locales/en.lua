@@ -1096,16 +1096,13 @@ app.L = {
 	-- Chests
 		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- SL Headers
-		[-900] = 3675495,																	-- Covenant Sanctums
 		[-901] = 3726261,																	-- Covenant Callings
 		[-902] = 3726261,																	-- Renown
 		[-905] = "Interface\\Icons\\Sanctum_features_missiontable",							-- Command Table
-		--[-915] = Uses Different Icons														-- Anima Conductor
 		--[-916] = Uses Different Icons														-- Tier 1
 		--[-917] = Uses Different Icons														-- Tier 2
 		--[-918] = Uses Different Icons														-- Tier 3
 		[-920] = "Interface\\Icons\\ui_sigil_necrolord",									-- Covenant: Necrolord
-		--[-921] = Uses Different Icons														-- Sanctum Upgrades
 		[-923] = "Interface\\Icons\\sanctum_features_buildabom",							-- Abomination Factory (Necrolord)
 		--[-924] = Uses Different Icons														-- Transport Network
 		--[-925] = Uses Different Icons														-- Tier 4
@@ -1319,11 +1316,9 @@ app.L = {
 	-- Chests
 		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Shadowlands Header
-		[-900] = select(1,GetCategoryInfo(15441)),								-- Covenant Sanctums
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
 		[-905] = GetSpellInfo(280630),											-- Command Table
-		[-915] = ANIMA_DIVERSION_ORIGIN_TOOLTIP,								-- Anima Conductor
 		[-916] = string.format(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
 		[-917] = string.format(COVENANT_SANCTUM_TIER, 2),						-- Tier 2
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3),						-- Tier 3
@@ -1331,7 +1326,6 @@ app.L = {
 		[-981] = GetSpellInfo(348869),											-- Conduits
 		-- SL Maldraxxus/Necrolord
 		[-920] = GetSpellInfo(321078),											-- Necrolord
-		[-921] = "Sanctum Upgrades",											-- Sanctum Upgrades
 		[-923] = COVENANT_SANCTUM_FEATURE_NECROLORDS,							-- Abomination Factory
 		[-924] = "Transport Network",											-- Transport Network
 		[-925] = string.format(COVENANT_SANCTUM_TIER, 4),						-- Tier 4

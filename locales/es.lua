@@ -684,7 +684,6 @@ for key,value in pairs({
 		[-851] = "Alijo del Imperio Negro",							-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Especulador Ve'ken & Especulador Ve'nott",		-- Broker Ve'ken & Broker Ve'nott
-		[-921] = "Mejoras del sagrario",							-- Sanctum Upgrades
 		[-924] = "Red de transporte",								-- Transport Network
 		[-967] = "Restauración del espejo",							-- Mirror Restoration
 	-- Dragonflight

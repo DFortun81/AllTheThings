@@ -732,7 +732,6 @@ for key,value in pairs({
 		[-851] = "黑暗帝国宝箱",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Shadowlands Header
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
-		[-921] = "圣所升级",											-- Sanctum Upgrades
 		[-924] = "传送网络",											-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "忠诚",											-- Loyalty

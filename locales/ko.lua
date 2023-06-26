@@ -680,7 +680,6 @@ for key,value in pairs({
 		[-851] = "검은 제국 보관함",										-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
-		[-921] = "성소 강화",											-- Sanctum Upgrades
 		[-924] = "이동 연결망",											-- Transport Network
 		[-967] = "거울 복구 작업",										-- Mirror Restoration
 	-- Dragonflight

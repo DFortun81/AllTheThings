@@ -26,8 +26,7 @@ local ORSTUS_AND_SOTIROS = n(156340, { -- Larionrider Orstus
 		AEGIS_OF_SALVATION,
 	},
 });
-
-root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_bastion01",

@@ -680,7 +680,6 @@ for key,value in pairs({
 		[-851] = "Depósito do Império Negro",						-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Corretor Ve'ken & Corretor Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
-		[-921] = "Aprimoramentos de Santuário",						-- Sanctum Upgrades
 		[-924] = "Rede de Transporte",								-- Transport Network
 		[-967] = "Restauração de espelho",							-- Mirror Restoration
 	-- Dragonflight

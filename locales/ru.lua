@@ -713,7 +713,6 @@ for key,value in pairs({
 		[-851] = "Тайник Темной Империи",							-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
-		[-921] = "Улучшения для Обители",							-- Sanctum Upgrades
 		[-924] = "Транспортная Сеть",								-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "Верность",									-- Loyalty
