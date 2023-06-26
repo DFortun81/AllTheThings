@@ -90,13 +90,16 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60611, { -- Skadi the Ruthless
 						["_encounter"] = { 643, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45864),	-- Cover of the Keepers
+							i(45712),	-- Chestplate of Titanic Fury
 						},
 					}),
 					crit(60609, { -- King Ymiron
 						["_encounter"] = { 644, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(45711),	-- Ironaya's Discarded Mantle
+							i(45866),	-- Elemental Focus Stone
 						},
 					}),
 				})),

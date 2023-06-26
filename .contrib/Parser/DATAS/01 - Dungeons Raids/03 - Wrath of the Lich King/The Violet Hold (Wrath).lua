@@ -263,6 +263,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39293),	-- Blackened Legplates of Feugen
 								i(39281),	-- Infection Repulser
 							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45289),	-- Lifespark Visage
+								i(45935),	-- Ironbark Faceguard
+							})),
 							-- #endif
 						},
 					}),
@@ -286,6 +290,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39292),	-- Repelling Charge
 								i(39280),	-- Leggings of Innumerable Barbs
 								i(39274),	-- Retcher's Shoulderpads
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45935),	-- Ironbark Faceguard
 							})),
 							-- #endif
 						},
@@ -311,6 +318,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39273),	-- Sullen Cloth Boots
 								i(39279),	-- Blistered Belt of Decay
 								i(39291),	-- Torment of the Banished
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45941),	-- Chestguard of the Lasher
 							})),
 							-- #endif
 						},
@@ -339,6 +349,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39285),	-- Handgrips of Turmoil
 								i(39272),	-- Drape of Surgery
 							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45285),	-- Might of the Leviathan
+							})),
 							-- #endif
 						},
 					}),
@@ -366,6 +379,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39271),	-- Blade of Dormant Memories
 								i(39307),	-- Iron Rings of Endurance
 							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45284),	-- Kinetic Ripper
+								i(45935),	-- Ironbark Faceguard
+							})),
 							-- #endif
 						},
 					}),
@@ -390,6 +407,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39270),	-- Hatestrike
 								i(39276),	-- The Skull of Ruin
 								i(39282),	-- Bone-Linked Amulet
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45289),	-- Lifespark Visage
+								i(45936),	-- Legplates of Fluorishing Resolve
+								i(45934),	-- Unraveling Reach
 							})),
 							-- #endif
 						},
