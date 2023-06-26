@@ -220,31 +220,55 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72989 },	-- The Ruby Hatchling
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["g"] = {
+						i(204869),	-- Bolt of Ruby Cloth
+						i(202697),	-- Crimson Cushion
+						i(204870),	-- Lasztak's Thread Order
+						i(203712),	-- Soft Peafowl Down (3)
+					},
 				}),
 				------ Day 2 ------
 				q(72991, {	-- Warm Dragonfruit Pie
-					-- TODO
+					["sourceQuests"] = {
+						72989,	-- The Ruby Hatchling
+						72990,	-- Crimson Comfort
+					},
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["g"] = {
+						i(202693),	-- Dragonfruit Pie
+						i(204868),	-- Pre-Made Pie Crust
+						i(193826),	-- Trusty Dragonkin Rake
+					}
 				}),
 				q(72992, {	-- You're Playing Wrong!
-					-- TODO
+					["sourceQuests"] = { 72991 },	-- Warm Dragonfruit Pie
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 				}),
 				------ Day 3 ------
 				q(72993, {	-- I'm the Boss!
-					-- TODO
+					["sourceQuests"] = { 72992 },	-- You're Playing Wrong!
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["g"] = {
+						i(203625),	-- Belastrasza's Whistle
+						i(202250),	-- Sweet Snapflower Bulb
+					},
 				}),
 				------ Day 4 ------
 				q(72994, {	-- A Cavalier Pet
 					["sourceQuests"] = { 72459 },	-- I'm the Boss!
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(207019),	-- Princess Vorquistrasza (PET!) [Not sure if you actually get item]
 					},
 				}),
 				q(72995, {	-- Patience, Please
 					["sourceQuests"] = { 72994 },	-- A Cavalier Pet
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(206758),	-- Belastrasza (PET!)
 					},
@@ -252,35 +276,59 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				------ Bronze Whelp ------
 				------ Day 1 ------
 				q(72996, {	-- The Bronze Hatchling
-					-- TODO
+					["sourceQuests"] = { 72995 },	-- Patience, Please
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 				}),
 				q(72997, {	-- Nothing Like a Sandy Nap
-
+					["sourceQuests"] = { 72996 },	-- The Bronze Hatchling
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["g"] = {
+						i(202643),	-- Soft Sand
+						i(202645),	-- Unused Bowl
+						i(202644),	-- Whelp's First Hourglass
+					},
 				}),
 				------ Day 2 ------
 				q(72998, {	-- Artisanal Aging
-					-- TODO
+					["sourceQuests"] = {
+						72996,	-- The Bronze Hatchling
+						72997,	-- Nothing Like a Sandy Nap
+					},
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["g"] = {
+						i(201415),	-- Temporal Parmesan
+					},
 				}),
 				q(72999, {	-- Here? There? Everywhere!
-
+					["sourceQuests"] = { 72998 },	-- Artisanal Aging
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 				}),
 				------ Day 3 ------
 				q(73000, {	-- Sneezing Through Time
-					-- TODO
+					["sourceQuests"] = { 72999 },	-- Here? There? Everywhere!
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["g"] = {
+						i(203624),	-- Zhusadormu's Whistle
+					}
 				}),
 				------ Day 4 ------
 				q(73001, {	-- A Scaly Pet
 					["sourceQuests"] = { 73000 },	-- Sneezing Through Time
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(205009),	-- Annuna (PET!) [Not sure if you actually get item]
 					},
 				}),
 				q(73002, {	-- Temporal Immunity
 					["sourceQuests"] = { 73001 },	-- A Scaly Pet
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(206971),	-- Zhusadormu (PET!)
 					},
@@ -288,35 +336,59 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				------ Azure Whelp ------
 				------ Day 1 ------
 				q(73003, {	-- The Azure Hatchling
-					-- TODO
+					["sourceQuests"] = { 73002 },	-- Temporal Immunity
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 				}),
 				q(73004, {	-- A Scholar's Delight
-					-- TODO
+					["sourceQuests"] = { 73003 },	-- The Azure Hatchling
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["g"] = {
+						i(190329),	-- Awakened Frost
+						i(202332),	-- Blue Dragon Bedtime Story
+						i(202330),	-- Fine-Pointed Quill
+					},
 				}),
 				------ Day 2 ------
 				q(73005, {	-- Crystal Nutrition
-					-- TODO
+					["sourceQuests"] = {
+						73003,	-- The Azure Hatchling
+						73004,	-- A Scholar's Delight
+					},
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["g"] = {
+						i(202404),	-- Bite-Sized Ley Crystal
+					},
 				}),
 				q(73006, {	-- Well, Actually...
-					-- TODO
+					["sourceQuests"] = { 73005 },	-- Crystal Nutrition
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 				}),
 				------ Day 3 ------
 				q(73007, {	-- New Lenses
-					-- TODO
+					["sourceQuests"] = { 73006 },	-- Well, Actually...
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["g"] = {
+						i(202409),	-- Zalethgos's Whistle
+					},
 				}),
 				------ Day 4 ------
 				q(73008, {	-- A Scholar's Pet
 					["sourceQuests"] = { 73007 },	-- New Lenses
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(206973),	-- Pallibrius (PET!) [Not sure if you actually get item]
 					},
 				}),
 				q(73009, {	-- Sight Isn't Everything
 					["sourceQuests"] = { 73008 },	-- A Scholar's Pet
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(206974),	-- Zalethgos (PET!)
 					},
@@ -324,35 +396,59 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				------ Emerald Whelp ------
 				------ Day 1 ------
 				q(73010, {	-- The Emerald Hatchling
-					-- TODO
+					["sourceQuests"] = { 73009 },	-- Sight Isn't Everything
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 				}),
 				q(73011, {	--  Home Sweet Dirt
-					-- TODO
+					["sourceQuests"] = { 73010 },	--  The Emerald Hatchling
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["g"] = {
+						i(202695),	-- Ancient Water
+						i(202696), -- Comforting Ducky
+						i(202694),	-- Loamy Soil
+					},
 				}),
 				------ Day 2 ------
 				q(73012, {	-- Hochenblume Harvest
-					-- TODO
+					["sourceQuests"] = {
+						73010,	-- The Emerald Hatchling
+						73011,	--  Home Sweet Dirt
+					},
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["g"] = {
+						i(191461),	-- Hochenblume
+					},
 				}),
 				q(73013, {	-- So... Tired....
-					-- TODO
+					["sourceQuests"] = { 73012 },	-- Hochenblume Harvest
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 				}),
 				------ Day 3 ------
 				q(73014, {	-- A Green Who Can't Sleep?
-					-- TODO
+					["sourceQuests"] = { 73013 },	-- So... Tired....
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["g"] = {
+						i(203621),	-- Posidriss's Whistle
+					},
 				}),
 				------ Day 4 ------
 				q(73015, {	-- A Sleepy Pet
 					["sourceQuests"] = { 73014 },	-- A Green Who Can't Sleep?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(206978),	-- Somnius (PET!) [Not sure if you actually get item]
 					},
 				}),
 				q(73016, {	-- Hibernation
 					["sourceQuests"] = { 73015 },	-- A Sleepy Pet
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(206979),	-- Posidriss (PET!)
 					},
@@ -376,8 +472,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(74492, {	-- Blistering Belastrasza
 					["sourceQuests"] = { 72993 },	-- I'm the Boss!
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
 				}),
 				q(73133, {	--  Cozy Camouflage
 					["sourceQuests"] = { 73014 },	-- A Green Who Can't Sleep?
@@ -416,13 +515,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(74491, {	-- Pole Position Posidriss
 					["sourceQuests"] = { 73014 },	-- A Green Who Can't Sleep?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
 				}),
 				q(74488, {	-- Runaway Rusziona
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
 				}),
 				q(73132, {	-- Scanning the Stacks
 					["sourceQuests"] = { 73007 },	-- New Lenses
@@ -431,18 +536,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(74490, {	-- Zaleth on the Go
 					["sourceQuests"] = { 73007 },	-- New Lenses
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
 				}),
 				q(74489, {	-- Zhoomsa
 					["sourceQuests"] = { 73000 },	-- Sneezing Through Time
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
 				}),
 			})),
-			n(REWARDS, {
-				i(POLISHED_PET_CHARM),
-			}),
 		})),
 	}),
 })));

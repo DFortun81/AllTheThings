@@ -278,40 +278,23 @@ root(ROOTS.Unsorted, {
 			i(193412),	-- Primal-Infused Dragon Egg
 			i(200836),	-- Arcane-Infused Crystals
 			i(202247),	-- Curious Curio Goggles
-			i(202250),	-- Sweet Snapflower Bulb
 			i(202265),	-- Wheel of Whelpwhisper Brie
 			i(202266),	-- Bag of Spicy Pet Snacks
 			i(202270),	-- [DNT] Twice-Woven Rope
 			i(202312),	-- Juicy Mammoth Steak
 			i(202313),	-- Echolocator
-			i(202330),	-- Fine-Pointed Quill
-			i(202332),	-- Blue Dragon Bedtime Story
 			i(202340),	-- Laydia's Flower Petals
 			i(202342),	-- Luggage Key
 			i(202363),	-- Survey Arc Device
 			i(202399),	-- Stuffed Doll
 			i(202400),	-- Soothing Incense
-			i(202404),	-- Bite-Sized Ley Crystal
-			i(202409),	-- Zalethgos's Whistle
-			i(202643),	-- Soft Sand
-			i(202644),	-- Whelp's First Hourglass
-			i(202645),	-- Unused Bowl
 			i(202690),	-- Decorative Shrubbery
-			i(202693),	-- Dragonfruit Pie
-			i(202694),	-- Loamy Soil
-			i(202695),	-- Ancient Water
-			i(202696),	-- Comforting Ducky
 			i(202697),	-- Crimson Cushion
 			i(203386),	-- Box of Leapmaize Crackers
-			i(203621),	-- Posidriss's Whistle
-			i(203624),	-- Zhusadormu's Whistle
-			i(203625),	-- Belastrasza's Whistle
-			i(203684),	-- Silver Timepiece
 			i(203712),	-- Soft Peafowl Down
 			i(204000),	-- Storm-Infused Stone
 			i(204263),	-- Time Grime
 			i(204275),	-- Slimey Key
-			i(204868),	-- Pre-Made Pie Crust
 			i(204869),	-- Bolt of Ruby Cloth
 			i(204870),	-- Lasztak's Thread Order
 			i(204895),	-- Storm-touched Missive Stone [DNT]
