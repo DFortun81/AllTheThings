@@ -878,6 +878,64 @@ root(ROOTS.Unsorted, {
 			i(208172),	-- Bloodstained Runecrook
 			i(208191),	-- Time-Lost Fragment
 			i(208193),	-- Gorehowl, Might of the Warchief
+			--
+			i(189719),	-- Tattered Collar of the Incubus
+			i(189720),	-- Tattered Collar of the Succubus
+			i(201166),	-- Gilded Hilt
+			i(205292),	-- Karokta's Mane
+			i(206160),	-- Madam Shadow's Grimoire
+			i(206394),	-- Red Dragon Egg
+			i(206520),	-- Beverage for Pedgi
+			i(206521),	-- Single Black Coffee
+			i(206523),	-- Five-Eon Energy
+			i(206524),	-- Eonized Latte
+			i(206653),	-- Fel Pinecone
+			i(206681),	-- Letter from Oman
+			i(206799),	-- Pauldrons of the Fire Lord
+			i(207817),	-- Imbued Frostweave Slippers
+			i(207819),	-- Timeways Intruder's Greaves
+			i(207828),	-- Bronze Defender's Vesture
+			i(207836),	-- Ahnzon's Corroded Carapace
+			i(207838),	-- Vigorous Sand-Stompers
+			i(207867),	-- Arathi Field Bandages
+			i(207878),	-- Grunt's Eternal Treads
+			i(207884),	-- Unceasing Footman's Breastplate
+			i(207898),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Waist
+			i(207912),	-- Loszkeleth's Blighted Skullhelm
+			i(207921),	-- Dazhak's Dessicated Wingbones
+			i(207923),	-- Zealous Commander's Cuffs
+			i(207936),	-- Hood of Perpetual Conflict
+			i(207983),	-- Progenitor's Necromantic Focus
+			i(207986),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Gun
+			i(207991),	-- Double Time
+			i(207992),	-- Fallen Drake's Bonesplitter
+			i(207995),	-- Chronikar's Ceremonial Saber
+			i(208000),	-- Cudgel of Bygone Victories
+			i(208053),	-- Irons's Artifacts
+			i(208226),	-- Mysterious Letter
+			i(208227),	-- Mysterious Letter
+			i(208235),	-- Pedgi's Spare Sunglasses
+			i(208236),	-- Melly's Metronographer
+			i(208321),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - INT Staff
+			i(208390),	-- Bronze Archive Stone
+			i(208391),	-- The Infinite Hand
+			i(208400),	-- Silks of the Unnamed Cult
+			i(208401),	-- Melly's Metronographer++
+			i(208415),	-- Stasis Sand
+			i(208417),	-- Chromie's Certificate of Temporal Tidiness
+			i(208448),	-- Infinitea
+			i(208449),	-- Melly's Metronographer+++
+			i(208460),	-- The Coffee Stained Skull of Dul'gan
+			i(208461),	-- Some Book of Medivh
+			i(208462),	-- Vial of the Funswell
+			i(208463),	-- Helm of Somnation
+			i(208464),	-- The Firestone Containment Jar
+			i(208465),	-- The Cheers of Elune
+			i(208466),	-- Celestial Carrot
+			i(208467),	-- Larval Quintessence
+			i(208468),	-- L4WG1V3R Mechakey
+			i(208469),	-- At-a-Stall Crystal
+			i(208482),	-- The Heart of the Timeforge
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			filter(RECIPES, {

@@ -118,6 +118,8 @@ mount(417552),	-- Windborne Velocidrake
 mount(417554),	-- Cliffside Wylderdrake
 mount(417556),	-- Winding Slitherdrake
 mount(418078),	-- Pattie
+10.1.5.50130
+mount(419002),	-- Temp
 
 
 
@@ -228,3 +230,5 @@ mount(363608),	-- Lightforged Ruinstrider
 mount(370770),	-- Tuskarr Shoreglider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
+10.1.5.50130
+mount(419002),	-- Temp

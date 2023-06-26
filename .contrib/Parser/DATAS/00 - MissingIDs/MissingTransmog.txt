@@ -55777,7 +55777,6 @@ s(84271)/i(143774),	--
 s(84272)/i(143774),	--
 s(84273)/i(143781),	--
 s(84282)/i(143916),	--
-s(84485)/i(144217),	-- Inelava, Spirit of Inebriation \\ ava, Spirit of Inebriation
 s(84492)/i(144237),	--
 s(84497)/i(144249),	-- Archimonde's Hatred Reborn \\ imonde's Hatred Reborn
 s(84498)/i(144257),	--
@@ -63202,8 +63201,6 @@ s(115337)/i(178432),	-- zzzRated - Mail Leggings \\ Rated - Mail Leggings
 s(115338)/i(178437),	-- zzzRated - Mail Monnion \\ Rated - Mail Monnion
 s(115339)/i(178440),	-- zzzRated - Mail Belt \\ Rated - Mail Belt
 s(115340)/i(178445),	-- zzzRated - Mail Wristwraps \\ Rated - Mail Wristwraps
-9.0.2.35938
-s(115492)/i(180071),	-- Shrieking Sinseeker \\ Ardenweald Raid Bow \\ Ardenweald Covenant Bow
 9.0.2.35978
 s(115629)/i(184319),	--
 s(115650)/i(182067),	-- Antique Duelist's Rapier
@@ -63902,7 +63899,6 @@ s(166029)/i(188830),	--
 s(166030)/i(188831),	--
 s(166031)/i(188832),	--
 s(166032)/i(188833),	--
-s(166307)/i(188912),	-- Cuirass of the Grand Upwelling \\ 9.2 Raid - Class Sets - Monk - Armor - Leather Chest
 s(167073)/i(188953),	--
 s(167074)/i(188958),	--
 s(167232)/i(189142),	--
@@ -64075,7 +64071,6 @@ s(168497)/i(188079),	-- Anthemic Clasp \\ [PH] Copy Razorwing Scale Chain
 s(168498)/i(188080),	-- Anthemic Wristlinks \\ [PH] Copy Razorwing Scale Wristguards
 s(168503)/i(190393),	--
 9.2.0.41827
-s(168568)/i(188907),	-- Soulblade Grasps \\ 9.2 Raid - Class Sets - Rogue - Armor - Leather Hands
 s(168854)/i(190614),	-- Antros' Entrusted Bascinet \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Head
 s(168855)/i(190614),	-- Antros' Entrusted Bascinet \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Head
 s(168856)/i(190614),	-- Antros' Entrusted Bascinet \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Head
@@ -65072,6 +65067,8 @@ s(184408)/i(202433),	--
 s(184409)/i(202434),	--
 s(184410)/i(202435),	--
 s(184411)/i(202436),	--
+s(185509)/i(204279),	-- Wallclimber's Incursion Hatchet \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Weapon - 1H Axe AGI
+s(185514)/i(202607),	-- Brutal Dragonslayer's Trophy \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Weapon - Bow
 s(185531)/i(202608),	-- Power-Draining Spire
 s(185532)/i(202608),	-- Power-Draining Spire
 s(185533)/i(202608),	-- Power-Draining Spire
@@ -65142,30 +65139,35 @@ s(186297)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Drago
 10.1.0.48661
 s(186478)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
 s(186480)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
+s(186492)/i(202580),	-- Mystic's Scalding Frame \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - SHOULDER 1
 s(186496)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
 s(186498)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
+s(186501)/i(202578),	-- Phoenix-Plume Gloves \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - HAND 1
 s(186505)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186506)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186507)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186517)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
 s(186519)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
+s(186531)/i(202591),	-- Gatecrasher Giant's Coif \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
 s(186532)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186533)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186534)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186544)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
 s(186546)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
-s(186550)/i(202659),	-- Shackles of the Shadowed Bastille \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
-s(186551)/i(202659),	-- Shackles of the Shadowed Bastille \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
-s(186552)/i(202659),	-- Shackles of the Shadowed Bastille \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
+s(186549)/i(202604),	-- Boulder-Tossing Bands \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - WRIST 1
+s(186607)/i(202574),	-- Flamebound Huntsman's Footpads \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - FEET 1
 s(186617)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(186618)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(186619)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(186632)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
 s(186634)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
+s(186640)/i(202586),	-- Warlord's Volcanic Vest \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - CHEST 1
 s(186647)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
 s(186649)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
 s(186662)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
 s(186664)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
+s(186673)/i(202577),	-- Seal of the Defiant Hordes \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - WAIST 1
+s(186682)/i(202597),	-- Obsidian Guard's Chausses \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - LEGS 1
 s(186695)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186697)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186700)/i(204465),	-- Voice of the Silent Star
@@ -66012,7 +66014,7 @@ s(188512)/i(206795),	-- Titan Watcher's Shortblade
 s(188513)/i(206796),	-- Energetic Power Knife
 s(188514)/i(206797),	-- Frostspire
 s(188515)/i(206798),	-- Valhalas Heartstriker \\ Valhalla Heartstriker
-s(188516)/i(206799),	--
+s(188516)/i(206799),	-- Pauldrons of the Fire Lord
 s(188517)/i(206800),	-- Arcane Detection Rod
 s(188518)/i(206801),	-- Inferna Rod
 s(188519)/i(206802),	-- Plague-Touched Stave
@@ -66205,19 +66207,19 @@ s(188877)/i(207627),	-- Anachronistic Wrap
 s(188878)/i(207628),	-- Anomalous Cape
 s(188879)/i(207629),	-- Paradoxical Drape
 s(188880)/i(207630),	-- Cloak of Discontinuity
-s(188904)/i(207817),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Feet \\ Mega Dungeon Bronze Cloth Slippers
+s(188904)/i(207817),	-- Imbued Frostweave Slippers \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Feet \\ Mega Dungeon Bronze Cloth Slippers
 s(188905)/i(207818),	-- Mega Dungeon Bronze Plate Greaves
-s(188906)/i(207819),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Mail Legs \\ Mega Dungeon Bronze Mail Tassets
+s(188906)/i(207819),	-- Timeways Intruder's Greaves \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Mail Legs \\ Mega Dungeon Bronze Mail Tassets
 s(188907)/i(207820),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Leather Legs \\ Mega Dungeon Bronze Leather Tassets
 s(188910)/i(207824),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Plate Legs \\ Mega Dungeon Infinite Plate Greaves
 s(188911)/i(207825),	-- Mega Dungeon Infinite Cloth Slippers
-s(188912)/i(207828),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Cloth Robes \\ Mega Dungeon Bronze Cloth Robes
+s(188912)/i(207828),	-- Bronze Defender's Vesture \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Cloth Robes \\ Mega Dungeon Bronze Cloth Robes
 s(188913)/i(207829),	-- Mega Dungeon Bronze Cloth Wrap
 s(188915)/i(207831),	-- Mega Dungeon Bronze Cloth Hood
 s(188916)/i(207832),	-- Mega Dungeon Bronze Cloth Breeches
-s(188920)/i(207836),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Leather Chest \\ Mega Dungeon Bronze Mail Chainmail
+s(188920)/i(207836),	-- Ahnzon's Corroded Carapace \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Leather Chest \\ Mega Dungeon Bronze Mail Chainmail
 s(188921)/i(207837),	-- Mega Dungeon Bronze Leather Drape
-s(188922)/i(207838),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Leather Feet \\ Mega Dungeon Bronze Leather Striders
+s(188922)/i(207838),	-- Vigorous Sand-Stompers \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Leather Feet \\ Mega Dungeon Bronze Leather Striders
 s(188924)/i(207840),	-- Mega Dungeon Bronze Leather Cowl
 s(188926)/i(207842),	-- Mega Dungeon Bronze Leather Cinch
 s(188927)/i(207843),	-- Mega Dungeon Bronze Leather Bracers
@@ -66231,39 +66233,39 @@ s(188942)/i(207858),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02
 s(188944)/i(207860),	-- Mega Dungeon Infinite Cloth Robes
 s(188945)/i(207861),	-- Mega Dungeon Infinite Cloth Wrap
 s(188946)/i(207862),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Cloth Hands \\ Mega Dungeon Infinite Cloth Mitts
-s(188951)/i(207867),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Cloth Wrist \\ Mega Dungeon Infinite Cloth Bindings
+s(188951)/i(207867),	-- Arathi Field Bandages \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Cloth Wrist \\ Mega Dungeon Infinite Cloth Bindings
 s(188952)/i(207868),	-- Mega Dungeon Infinite Leather Raiment
 s(188953)/i(207869),	-- Mega Dungeon Infinite Leather Cloak
 s(188954)/i(207870),	-- Mega Dungeon Infinite Leather Treads
 s(188957)/i(207873),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Leather Shoulder \\ Mega Dungeon Infinite Leather Epaulets
 s(188958)/i(207874),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Leather Waist \\ Mega Dungeon Infinite Leather Cincture
 s(188960)/i(207876),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Mail Chest \\ Mega Dungeon Infinite Mail Chainmail
-s(188962)/i(207878),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Mail Feet \\ Mega Dungeon Infinite Mail Striders
+s(188962)/i(207878),	-- Grunt's Eternal Treads \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Mail Feet \\ Mega Dungeon Infinite Mail Striders
 s(188963)/i(207879),	-- Mega Dungeon Infinite Mail Gauntlets
 s(188964)/i(207880),	-- Mega Dungeon Infinite Mail Cowl
-s(188968)/i(207884),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Plate Chest \\ Mega Dungeon Infinite Plate Chestplate
+s(188968)/i(207884),	-- Unceasing Footman's Breastplate \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Plate Chest \\ Mega Dungeon Infinite Plate Chestplate
 s(188975)/i(207891),	-- Mega Dungeon Infinite Plate Vambraces
 s(188978)/i(207894),	-- Mega Dungeon Bronze Cloth Mitts
 s(188981)/i(207897),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Cloth Shoulder \\ Mega Dungeon Bronze Cloth Mantle
-s(188982)/i(207898),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Cloth Waist \\ Mega Dungeon Bronze Cloth Sash
+s(188982)/i(207898),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Waist \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Cloth Waist \\ Mega Dungeon Bronze Cloth Sash
 s(188983)/i(207899),	-- Mega Dungeon Bronze Cloth Bindings
 s(188987)/i(207903),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Leather Hands \\ Mega Dungeon Bronze Leather Gauntlets
 s(188989)/i(207905),	-- Mega Dungeon Bronze Leather Spaulders
 s(188995)/i(207911),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Mail Hand \\ Mega Dungeon Bronze Mail Gauntlets
-s(188996)/i(207912),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Mail Head \\ Mega Dungeon Bronze Mail Cowl
+s(188996)/i(207912),	-- Loszkeleth's Blighted Skullhelm \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Mail Head \\ Mega Dungeon Bronze Mail Cowl
 s(188997)/i(207913),	-- Mega Dungeon Bronze Mail Spaulders
 s(188998)/i(207914),	-- Mega Dungeon Bronze Mail Cinch
 s(189000)/i(207916),	-- Mega Dungeon Bronze Plate Chestplate
 s(189001)/i(207917),	-- Mega Dungeon Bronze Plate Cape
 s(189004)/i(207920),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Plate Head \\ Mega Dungeon Bronze Plate Greathelm
-s(189005)/i(207921),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Plate Shoulders \\ Mega Dungeon Bronze Plate Pauldrons
-s(189007)/i(207923),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Plate Wrist \\ Mega Dungeon Bronze Plate Vambraces
+s(189005)/i(207921),	-- Dazhak's Dessicated Wingbones \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Plate Shoulders \\ Mega Dungeon Bronze Plate Pauldrons
+s(189007)/i(207923),	-- Zealous Commander's Cuffs \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Plate Wrist \\ Mega Dungeon Bronze Plate Vambraces
 s(189011)/i(207927),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Cloth Head \\ Mega Dungeon Infinite Cloth Hood
 s(189012)/i(207928),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Cloth Legs \\ Mega Dungeon Infinite Cloth Breeches
 s(189013)/i(207929),	-- Mega Dungeon Infinite Cloth Mantle
 s(189014)/i(207930),	-- Mega Dungeon Infinite Cloth Sash
 s(189019)/i(207935),	-- Mega Dungeon Infinite Leather Gloves
-s(189020)/i(207936),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Leather Head \\ Mega Dungeon Infinite Leather Mask
+s(189020)/i(207936),	-- Hood of Perpetual Conflict \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Leather Head \\ Mega Dungeon Infinite Leather Mask
 s(189023)/i(207939),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Leather Wrist \\ Mega Dungeon Infinite Leather Wristbands
 s(189025)/i(207941),	-- Mega Dungeon Infinite Mail Drape
 s(189029)/i(207945),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Mail Shoulder \\ Mega Dungeon Infinite Mail Spaulders
@@ -66284,24 +66286,24 @@ s(189047)/i(207979),	-- Timespan Scepter
 s(189048)/i(207980),	-- Inevitable Claymore
 s(189049)/i(207981),	-- Time Splitter \\ Time Spliter
 s(189050)/i(207982),	-- Timeless Bulwark
-s(189051)/i(207983),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Offhand
+s(189051)/i(207983),	-- Progenitor's Necromantic Focus \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Offhand
 s(189052)/i(207984),	-- Chroniton Wand \\ Suffused Wand
 s(189053)/i(207985),	-- Ever-Repeating Rifle \\ Rifle In Time
-s(189054)/i(207986),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Gun
+s(189054)/i(207986),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Gun \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Gun
 s(189055)/i(207987),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Polearm - 2H AGI
 s(189056)/i(207988),	-- Time Keeper's Polearm
 s(189057)/i(207989),	-- Chronospire
 s(189058)/i(207990),	-- Temporal Battle Staff
-s(189059)/i(207991),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Warglaive
-s(189060)/i(207992),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Axe - 1H AGI
+s(189059)/i(207991),	-- Double Time \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Warglaive
+s(189060)/i(207992),	-- Fallen Drake's Bonesplitter \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Axe - 1H AGI
 s(189061)/i(207993),	-- Spacetime Cleaver
 s(189062)/i(207994),	-- Quel'Zaram, High Blade of the Lion \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Sword - 1H AGI
-s(189063)/i(207995),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H AGI \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H STR
+s(189063)/i(207995),	-- Chronikar's Ceremonial Saber \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H AGI \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H STR
 s(189064)/i(207996),	-- Nick of Time \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Dagger - 1H AGI
 s(189065)/i(207997),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Dagger - 1H INT
 s(189066)/i(207998),	-- Hoursteel Mace \\ Concussive Antecedent
 s(189067)/i(207999),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Mace - 1H INT
-s(189068)/i(208000),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Mace - 1H AGI
+s(189068)/i(208000),	-- Cudgel of Bygone Victories \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Mace - 1H AGI
 s(189069)/i(208001),	-- Timewalker's Cudgel \\ Suffused Cudgel
 s(189070)/i(208018),	-- Fangblade
 s(189071)/i(208019),	-- Quagmire Trudgers
@@ -66322,3 +66324,7 @@ s(189606)/i(208193),	-- Gorehowl, Might of the Warchief
 s(189614)/i(208172),	-- Bloodstained Runecrook
 s(189615)/i(208170),	-- Runeaxe of the Last Resistance
 s(189616)/i(208168),	-- Black Blade of K'tanth
+10.1.5.50130
+s(189654)/i(208321),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - INT Staff
+s(189716)/i(208391),	-- The Infinite Hand
+s(189751)/i(208444),	--

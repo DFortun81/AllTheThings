@@ -562,3 +562,8 @@ ach(18645),	-- Tools of the Trade
 ach(18646),	-- Whodunnit?
 10.1.5.50006
 ach(18648),	-- <DNT> Eons Fringe - Multitude of Tasks - Completed Twice (Character)
+10.1.5.50130
+ach(18703),	-- Dawn of the Infinite: Galakrond's Fall
+ach(18704),	-- Dawn of the Infinite: Murozond's Rise
+ach(18705),	-- Defender of the Timeways
+ach(18706),	-- Put That Thing Back Where It Came From
