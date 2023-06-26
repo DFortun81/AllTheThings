@@ -775,3 +775,10 @@ i(205461);	-- Vicious Stoneclaw
 -- Common Trash --
 i(204342);	-- Questionable Jerky
 i(206033);	-- Untranslated Obsidian Tome
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+-- Quest Items --
+i(208030);	-- Advanced Titan Gizmo
+i(205978);	-- Glob of Azmerloth Slime

@@ -303,7 +303,6 @@ root(ROOTS.Unsorted, {
 			i(205146),	-- Weyrnstone
 			i(205419),	-- Dinn's Drum
 			i(205819),	-- Ashen Predator's Poleyns
-			i(205978),	-- Glob of Azmerloth Slime
 			i(206022),	-- Anduin's Lucky Hearthstone Card
 			i(206161),	-- Cat Toy
 			i(206171),	-- Vol'jin's Mojo
@@ -313,7 +312,6 @@ root(ROOTS.Unsorted, {
 			i(206190),	-- Venrik's Goat Milk
 			i(206191),	-- Roquefort-Stuffed Peppers
 			i(206192),	-- Picante Pomfruit Cake
-			i(206269),	-- Time-Lost Essence
 			i(206346),	-- Eva's Journal
 			i(206351),	-- Plans: Truesilver Champion
 			i(206352),	-- Plans: The Shatterer
@@ -535,12 +533,10 @@ root(ROOTS.Unsorted, {
 			i(206575),	-- Dented Raider's Boots
 			i(206576),	-- Death's Bargaining Chip
 			i(206577),	-- Slime-Covered Scroll
-			i(206578),	-- An Antlered Skull
 			i(206579),	-- Phylacterweave
 			i(206582),	-- Peculiar Glacial Mantle
 			i(206583),	-- Ancient Pattern: Peculiar Glacial Mantle
 			i(206584),	-- Archived Crafting Techniques
-			i(206599),	-- Azmerlothian Hourglass
 			i(206602),	-- Mechanized Cog
 			i(206638),	-- Corrupted Ashbringer
 			i(206645),	-- Cursed Cloth
@@ -566,7 +562,6 @@ root(ROOTS.Unsorted, {
 			i(206984),	-- Blood-Soaked Book
 			i(206997),	-- Gilded Sunglasses
 			i(206998),	-- Ragged Mantid Sword
-			i(207003),	-- Gilded Vase
 			i(16222),	-- Formula: Enchant Shield - Vitality
 			i(206998),	-- Amber Sword
 			i(207008),	-- A Fish
@@ -745,7 +740,6 @@ root(ROOTS.Unsorted, {
 			i(208021),	-- Sizzling Stick
 			i(208028),	-- Knot Thimblejack's Cache
 			i(208029),	-- Scareloc Parts
-			i(208030),	-- Advanced Titan Gizmo
 			i(208031),	-- Convenient Crate
 			i(206161),	-- Time-Displaced Toy
 			i(206926),	-- Off-Sync Off-Hammer
