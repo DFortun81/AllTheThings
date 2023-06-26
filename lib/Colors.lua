@@ -30,7 +30,7 @@ app.Colors = {
 	Time = "ff008000",
 	-- Settings
 	Account = "ff00CCFF",
-	Insane = "ffCC79A7",
+	Insane = "ffDC267F",
 	Warning = "ffFF0000",
 };
 
