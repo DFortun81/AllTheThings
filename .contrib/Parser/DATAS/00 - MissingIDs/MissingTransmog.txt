@@ -27444,12 +27444,12 @@ s(171361)/i(37292),	-- Guardian's Legguards \\ Ley-Guardian's Legguards
 s(171362)/i(37293),	-- of the Watcher \\ Mask of the Watcher
 s(171363)/i(37294),	-- n of Unbridled Magic \\ Crown of Unbridled Magic
 s(171364)/i(37295),	-- Cloth Spell Head4 \\ HF28 Cloth Spell Head4
-s(171365)/i(37296),	-- BT59 Cloth Spell Gloves4
+s(171365)/i(37296),	-- BT59 Cloth Spell Gloves4 \\ BT59 Cloth Spell Gloves4
 s(171366)/i(37308),	-- Monster - Sword2H, Northrend D03
 s(171367)/i(37309),	-- Monster - Special Arrow (Thori'dal)
 s(171368)/i(37310),	-- Monster - Mace, Stormhammer (Vengeful)
 s(171369)/i(37315),	-- BT59 Leather Physical Boots4
-s(171370)/i(37316),	-- Leather Physical Legs4 \\ HF28 Leather Physical Legs4
+s(171370)/i(37316),	-- Leather Physical Legs4 \\ HF28 Leather Physical Legs4 \\ HF28 Leather Physical Legs4
 s(171371)/i(37317),	-- BT56 Leather Healer Boots2
 s(171372)/i(37318),	-- BT55 Leather Physical Gloves4
 s(171373)/i(37319),	-- s of the Windswept Plains \\ Grips of the Windswept Plains
@@ -27540,8 +27540,8 @@ s(171457)/i(37443),	-- ed Magmoth Helm \\ Spiked Magmoth Helm
 s(171458)/i(37444),	-- keeper's Helm \\ Wavekeeper's Helm
 s(171459)/i(37446),	-- Commander's Treads \\ Tank Commander's Treads
 s(171460)/i(37447),	-- forced Mendicant's Cowl \\ Reinforced Mendicant's Cowl
-s(171461)/i(37448),	-- BT47 Mail Physical Legs3
-s(171462)/i(37450),	-- BT48 Mail Healer Chest3
+s(171461)/i(37448),	-- BT47 Mail Physical Legs3 \\ BT47 Mail Physical Legs3
+s(171462)/i(37450),	-- BT48 Mail Healer Chest3 \\ BT48 Mail Healer Chest3
 s(171463)/i(37451),	-- BT49 Mail Physical Belt3
 s(171464)/i(37453),	-- BT59 Mail Physical Belt4
 s(171465)/i(37454),	-- Mail Physical Chest4 \\ HF28 Mail Physical Chest4
@@ -27591,7 +27591,7 @@ s(171508)/i(37519),	-- rplate Headguard \\ Amberplate Headguard
 s(171509)/i(37520),	-- nkeeper Blockade \\ Plainkeeper Blockade
 s(171510)/i(37521),	-- hill Buckler \\ Icechill Buckler
 s(171511)/i(37522),	-- hborn Greaves \\ Earthborn Greaves
-s(171512)/i(37534),	-- BT56 Thrown2
+s(171512)/i(37534),	-- BT56 Thrown2 \\ BT56 Thrown2
 s(171513)/i(37535),	-- e of the Windborn \\ Stave of the Windborn
 s(171514)/i(37536),	-- BT57 Fast Mace2
 s(171515)/i(37537),	-- e of the Spiritcaller \\ Stave of the Spiritcaller
@@ -27838,9 +27838,9 @@ s(171755)/i(37968),	-- of Calcified Tears \\ Robe of Calcified Tears
 s(171756)/i(37969),	-- s Mender Cloak \\ Chaos Mender Cloak
 s(171757)/i(37970),	-- hers of the Dragon Wastes \\ Feathers of the Dragon Wastes
 s(171758)/i(37971),	-- of the Nibbling Plague \\ Sash of the Nibbling Plague
-s(171759)/i(37972),	-- DB49 Cloth Healer Feet2
+s(171759)/i(37972),	-- DB49 Cloth Healer Feet2 \\ DB49 Cloth Healer Feet2
 s(171760)/i(37973),	-- DB51 Cloth Spell Legs3
-s(171761)/i(37974),	-- DB52 Spell Cloak2
+s(171761)/i(37974),	-- DB52 Spell Cloak2 \\ DB52 Spell Cloak2
 s(171762)/i(37975),	-- DB53 Cloth Spell Shoulder3
 s(171763)/i(37977),	-- DB56 Cloth Healer Shoulder2
 s(171764)/i(37978),	-- DB57 Cloth Spell Chest3
@@ -27914,7 +27914,7 @@ s(171831)/i(38054),	-- giver Wristguards \\ Paingiver Wristguards
 s(171832)/i(38055),	-- ehunter Gauntlets \\ Ridgehunter Gauntlets
 s(171833)/i(38056),	-- ehunter Chestguard \\ Ridgehunter Chestguard
 s(171834)/i(38057),	-- nt-Proof Headguard \\ Rodent-Proof Headguard
-s(171835)/i(38058),	-- DB49 Mail Healer Legs2
+s(171835)/i(38058),	-- DB49 Mail Healer Legs2 \\ DB49 Mail Healer Legs2
 s(171836)/i(38060),	-- DB51 Mail Physical Legs3
 s(171837)/i(38061),	-- DB53 Mail Physical Waist3
 s(171838)/i(38062),	-- DB54 Mail Physical Feet3
@@ -27947,7 +27947,7 @@ s(171864)/i(38109),	-- thshimmer Legplates \\ Wraithshimmer Legplates
 s(171865)/i(38110),	-- lates of the Agmar Preserver \\ Legplates of the Agmar Preserver
 s(171866)/i(38111),	-- bane Wristguards \\ Wyrmbane Wristguards
 s(171867)/i(38112),	-- Covered Pauldrons \\ Bark Covered Pauldrons
-s(171868)/i(38113),	-- DB42 Plate Healer Glove2
+s(171868)/i(38113),	-- DB42 Plate Healer Glove2 \\ DB42 Plate Healer Glove2
 s(171869)/i(38114),	-- tplate of the Ruby Champion \\ Chestplate of the Ruby Champion
 s(171870)/i(38115),	-- tons of the Enforcer \\ Sabatons of the Enforcer
 s(171871)/i(38116),	-- ed Magnataur Leggings \\ Plated Magnataur Leggings
@@ -27970,7 +27970,7 @@ s(171887)/i(38132),	-- rest Garden Stave \\ Moonrest Garden Stave
 s(171888)/i(38133),	-- shattered Spire \\ Timeshattered Spire
 s(171889)/i(38134),	-- dtinged Spellblade \\ Bloodtinged Spellblade
 s(171890)/i(38135),	-- of the Fallen Raven Priest \\ Mace of the Fallen Raven Priest
-s(171891)/i(38136),	-- DB40 Spell Staff3
+s(171891)/i(38136),	-- DB40 Spell Staff3 \\ DB40 Spell Staff3
 s(171892)/i(38137),	-- rance of the Spell Warder \\ Endurance of the Spell Warder
 s(171893)/i(38138),	-- Keldonus' Missing Spellshard \\ onus' Missing Spellshard \\ Keldonus's Missing Spellshard
 s(171894)/i(38139),	-- DB50 Healer Mace3
@@ -27989,9 +27989,9 @@ s(171906)/i(38155),	-- tblade of the Ruby Ally \\ Shortblade of the Ruby Ally
 s(171907)/i(38156),	-- ered Magnataur Dualblade \\ Battered Magnataur Dualblade
 s(171908)/i(38157),	-- bow of the Ruby Rider \\ Longbow of the Ruby Rider
 s(171909)/i(38158),	-- DB20 Fast Sword
-s(171910)/i(38159),	-- DB20 Slow Right Fist
+s(171910)/i(38159),	-- DB20 Slow Right Fist \\ DB20 Slow Right Fist
 s(171911)/i(38166),	-- DB20 Gun
-s(171912)/i(38167),	-- DB21 Thrown
+s(171912)/i(38167),	-- DB21 Thrown \\ DB21 Thrown
 s(171913)/i(38168),	-- DB22 Hunter Bow2
 s(171914)/i(38169),	-- Woodland Shank \\ Keen Woodland Shank
 s(171915)/i(38170),	-- ed Coldwind Club \\ Spiked Coldwind Club
@@ -28008,7 +28008,7 @@ s(171925)/i(38181),	-- lade of the Forgotten Footman \\ Warblade of the Forgotte
 s(171926)/i(38182),	-- DB38 2H Sword2
 s(171927)/i(38183),	-- DB40 Fast Sword2
 s(171928)/i(38184),	-- DB40 Fast Dagger3
-s(171929)/i(38185),	-- DB40 Bow3
+s(171929)/i(38185),	-- DB40 Bow3 \\ DB40 Bow3
 s(171930)/i(38187),	-- tive Waraxe \\ Reactive Waraxe
 s(171931)/i(38188),	-- of the Undead Ravager \\ Claw of the Undead Ravager
 s(171932)/i(38189),	-- twister \\ Backtwister
@@ -28021,7 +28021,7 @@ s(171938)/i(38195),	-- ster's Bane \\ Magister's Bane
 s(171939)/i(38196),	-- dsmeared Brutalizer \\ Bloodsmeared Brutalizer
 s(171940)/i(38197),	-- ted Boneshredder \\ Mounted Boneshredder
 s(171941)/i(38198),	-- t-Severing Quickblade \\ Joint-Severing Quickblade
-s(171942)/i(38199),	-- DB50 Slow Sword3
+s(171942)/i(38199),	-- DB50 Slow Sword3 \\ DB50 Slow Sword3
 s(171943)/i(38200),	-- DB50 Crossbow3
 s(171944)/i(38201),	-- DB14 Spell Wand
 s(171945)/i(38202),	-- of Happy Reminders \\ Twig of Happy Reminders
@@ -28074,7 +28074,7 @@ s(171991)/i(38318),	-- moon Robe \\ Darkmoon Robe
 s(171992)/i(38322),	-- Iron-Bound Tome \\ -Bound Tome \\ Iron-bound Tome
 s(171993)/i(38353),	-- ure Bay Buccaneer's Cape \\ Venture Bay Buccaneer's Cape
 s(171994)/i(38354),	-- Stained Tarp \\ Oil-Stained Tarp
-s(171995)/i(38355),	-- k Goblin Back Protector \\ Thick Goblin Back Protector
+s(171995)/i(38355),	-- k Goblin Back Protector \\ Thick Goblin Back Protector \\ Thick Goblin Back Protector
 s(171996)/i(38356),	-- ure Battle Wand \\ Venture Battle Wand
 s(171997)/i(38357),	-- pened Throwing Gizmo \\ Sharpened Throwing Gizmo
 s(171998)/i(38387),	-- zled Hat \\ Grizzled Hat
@@ -28134,8 +28134,8 @@ s(172051)/i(38458),	-- spear Orb \\ Darkspear Orb
 s(172052)/i(38459),	-- of the Eastern Kingdoms \\ Orb of the Eastern Kingdoms
 s(172053)/i(38460),	-- ged Wand of the Cleft \\ Charged Wand of the Cleft
 s(172054)/i(38461),	-- ong Shanker \\ Warsong Shanker
-s(172055)/i(38462),	-- ong Stormshield \\ Warsong Stormshield
-s(172056)/i(38463),	-- aeron's Resolve \\ Lordaeron's Resolve
+s(172055)/i(38462),	-- ong Stormshield \\ Warsong Stormshield \\ Warsong Stormshield
+s(172056)/i(38463),	-- aeron's Resolve \\ Lordaeron's Resolve \\ Lordaeron's Resolve
 s(172057)/i(38464),	-- ish Magician's Quill \\ Gnomish Magician's Quill
 s(172058)/i(38465),	-- uard Soldier's Dagger \\ Vanguard Soldier's Dagger
 s(172059)/i(38468),	-- 'ak Peacebringer \\ Kalu'ak Peacebringer
@@ -28318,7 +28318,7 @@ s(172235)/i(39073),	-- of the Everlasting \\ Root of the Everlasting
 s(172236)/i(39074),	-- e of Distilled Hatred \\ Drape of Distilled Hatred
 s(172237)/i(39075),	-- alker's Girdle \\ Waywalker's Girdle
 s(172238)/i(39076),	-- m-Rider's Greaves \\ Golem-Rider's Greaves
-s(172239)/i(39077),	-- l-Reshaper's Helm \\ Skull-Reshaper's Helm
+s(172239)/i(39077),	-- l-Reshaper's Helm \\ Skull-Reshaper's Helm \\ Skull-Reshaper's Helm
 s(172240)/i(39078),	-- pering Stompers \\ Whispering Stompers
 s(172241)/i(39079),	-- ers of the Chaperon \\ Bracers of the Chaperon
 s(172242)/i(39080),	-- s of Flawed Temper \\ Grips of Flawed Temper
@@ -28830,7 +28830,7 @@ s(172747)/i(39808),	-- f of Diligence \\ Staff of Diligence
 s(172748)/i(39809),	-- als of Spying \\ Sandals of Spying
 s(172749)/i(39810),	-- s of Duplicity \\ Cords of Duplicity
 s(172750)/i(39812),	-- ed Trousers \\ Soiled Trousers
-s(172751)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH
+s(172751)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH \\ QR ZD25 Cloth Spell Glove2 - PH
 s(172752)/i(39814),	-- pers of the Broken Front \\ Slippers of the Broken Front
 s(172753)/i(39815),	-- dbinder's Links \\ Bloodbinder's Links
 s(172754)/i(39816),	-- c's Hood \\ Medic's Hood
@@ -28846,7 +28846,7 @@ s(172763)/i(39827),	-- Tome of Tenets \\ Vile Tome of Tenets
 s(172764)/i(39828),	-- sher's Cloak \\ Punisher's Cloak
 s(172765)/i(39829),	-- -Strung Bow \\ High-Strung Bow
 s(172766)/i(39830),	-- of Subtlety \\ Fist of Subtlety
-s(172767)/i(39832),	-- QR ZD26 Spell Offhand - PH
+s(172767)/i(39832),	-- QR ZD26 Spell Offhand - PH \\ QR ZD26 Spell Offhand - PH
 s(172768)/i(39833),	-- le Bloodbinder's Boots \\ Supple Bloodbinder's Boots
 s(172769)/i(39834),	-- ttled Jerkin \\ Embattled Jerkin
 s(172770)/i(39835),	-- le Bloodbinder's Helm \\ Supple Bloodbinder's Helm
@@ -28890,7 +28890,7 @@ s(172807)/i(39874),	-- ltrator's Shield \\ Infiltrator's Shield
 s(172808)/i(39875),	-- lderguards of Subterfuge \\ Shoulderguards of Subterfuge
 s(172809)/i(39876),	-- Abomination Tripe \\ Aged Abomination Tripe
 s(172810)/i(39877),	-- of the Betrayer \\ Belt of the Betrayer
-s(172811)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH
+s(172811)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH \\ QR ZD25 Leather Physical Shoulder2 - PH
 s(172812)/i(39880),	-- gested Mail Scraps \\ Redigested Mail Scraps
 s(172813)/i(39881),	-- le of Reanimation \\ Mantle of Reanimation
 s(172814)/i(39882),	-- ed Bone Helm \\ Carved Bone Helm
@@ -30900,7 +30900,7 @@ s(174817)/i(43460),	-- tmaim Girdle \\ Giantmaim Girdle
 s(174818)/i(43461),	-- nant's Breastplate \\ Revenant's Breastplate
 s(174819)/i(43469),	-- nant's Treads \\ Revenant's Treads
 s(174820)/i(43474),	-- Monster - Staff, Nexus D01
-s(174821)/i(43475),	-- s of the Chilling Revenant \\ Grips of the Chilling Revenant
+s(174821)/i(43475),	-- s of the Chilling Revenant \\ Grips of the Chilling Revenant \\ Grips of the Chilling Revenant
 s(174822)/i(43476),	-- lwoven Breastplate \\ Trollwoven Breastplate
 s(174823)/i(43477),	-- Monster - Polearm, Nexus D01
 s(174824)/i(43479),	-- Monster - Dagger, Nexus D03
@@ -31221,7 +31221,7 @@ s(175138)/i(44052),	-- mic Purification Rod \\ Totemic Purification Rod
 s(175139)/i(44053),	-- e-Stick Harpoon \\ Whale-Stick Harpoon
 s(175140)/i(44054),	-- e-Skin Breastplate \\ Whale-Skin Breastplate
 s(175141)/i(44055),	-- e-Skin Vest \\ Whale-Skin Vest
-s(175142)/i(44056),	-- Monster - Axe, 1H Nexus D01
+s(175142)/i(44056),	-- Monster - Axe, 1H Nexus D01 \\ Monster - Axe, 1H Nexus D01
 s(175143)/i(44057),	-- y-Reinforced Chestguard \\ Ivory-Reinforced Chestguard
 s(175144)/i(44058),	-- ebone Carapace \\ Whalebone Carapace
 s(175145)/i(44059),	-- lefish Scale Breastplate \\ Cuttlefish Scale Breastplate
@@ -33802,196 +33802,196 @@ s(177719)/i(48713),	-- ar's Edge \\ Lothar's Edge
 s(177720)/i(48714),	-- r of the Fallen \\ Honor of the Fallen
 s(177721)/i(48716),	-- rable Mass of McGowan \\ Venerable Mass of McGowan
 s(177722)/i(48718),	-- rposed Lava Dredger \\ Repurposed Lava Dredger
-s(177723)/i(48725),	-- gar's Gauntlets \\ Khadgar's Gauntlets
-s(177724)/i(48726),	-- gar's Hood \\ Khadgar's Hood
-s(177725)/i(48727),	-- gar's Leggings \\ Khadgar's Leggings
-s(177726)/i(48728),	-- gar's Robe \\ Khadgar's Robe
-s(177727)/i(48729),	-- gar's Shoulderpads \\ Khadgar's Shoulderpads
-s(177728)/i(48730),	-- trider's Gauntlets \\ Sunstrider's Gauntlets
-s(177729)/i(48731),	-- trider's Hood \\ Sunstrider's Hood
-s(177730)/i(48732),	-- trider's Leggings \\ Sunstrider's Leggings
-s(177731)/i(48733),	-- trider's Robe \\ Sunstrider's Robe
-s(177732)/i(48734),	-- trider's Shoulderpads \\ Sunstrider's Shoulderpads
-s(177733)/i(48735),	-- dan's Gloves \\ Gul'dan's Gloves
-s(177734)/i(48736),	-- dan's Hood \\ Gul'dan's Hood
-s(177735)/i(48737),	-- dan's Leggings \\ Gul'dan's Leggings
-s(177736)/i(48738),	-- dan's Robe \\ Gul'dan's Robe
-s(177737)/i(48739),	-- dan's Shoulderpads \\ Gul'dan's Shoulderpads
-s(177738)/i(48740),	-- Thuzad's Gloves \\ Kel'Thuzad's Gloves
-s(177739)/i(48741),	-- Thuzad's Hood \\ Kel'Thuzad's Hood
-s(177740)/i(48742),	-- Thuzad's Leggings \\ Kel'Thuzad's Leggings
-s(177741)/i(48743),	-- Thuzad's Robe \\ Kel'Thuzad's Robe
-s(177742)/i(48744),	-- Thuzad's Shoulderpads \\ Kel'Thuzad's Shoulderpads
-s(177743)/i(48745),	-- n's Cowl \\ Velen's Cowl
-s(177744)/i(48746),	-- n's Gloves \\ Velen's Gloves
-s(177745)/i(48747),	-- n's Leggings \\ Velen's Leggings
-s(177746)/i(48748),	-- n's Robe \\ Velen's Robe
-s(177747)/i(48749),	-- n's Shoulderpads \\ Velen's Shoulderpads
-s(177748)/i(48750),	-- a's Cowl \\ Zabra's Cowl
-s(177749)/i(48751),	-- a's Gloves \\ Zabra's Gloves
-s(177750)/i(48752),	-- a's Leggings \\ Zabra's Leggings
-s(177751)/i(48753),	-- a's Robe \\ Zabra's Robe
-s(177752)/i(48754),	-- a's Shoulderpads \\ Zabra's Shoulderpads
-s(177753)/i(48755),	-- n's Circlet \\ Velen's Circlet
-s(177754)/i(48756),	-- n's Handwraps \\ Velen's Handwraps
-s(177755)/i(48757),	-- n's Mantle \\ Velen's Mantle
-s(177756)/i(48758),	-- n's Pants \\ Velen's Pants
-s(177757)/i(48759),	-- n's Raiments \\ Velen's Raiments
-s(177758)/i(48760),	-- a's Circlet \\ Zabra's Circlet
-s(177759)/i(48761),	-- a's Handwraps \\ Zabra's Handwraps
-s(177760)/i(48762),	-- a's Mantle \\ Zabra's Mantle
-s(177761)/i(48763),	-- a's Pants \\ Zabra's Pants
-s(177762)/i(48764),	-- a's Raiments \\ Zabra's Raiments
-s(177763)/i(48769),	-- totem's Handguards \\ Runetotem's Handguards
-s(177764)/i(48770),	-- totem's Headpiece \\ Runetotem's Headpiece
-s(177765)/i(48771),	-- totem's Leggings \\ Runetotem's Leggings
-s(177766)/i(48772),	-- totem's Robe \\ Runetotem's Robe
-s(177767)/i(48773),	-- totem's Spaulders \\ Runetotem's Spaulders
-s(177768)/i(48774),	-- urion's Handguards \\ Malfurion's Handguards
-s(177769)/i(48775),	-- urion's Headpiece \\ Malfurion's Headpiece
-s(177770)/i(48776),	-- urion's Leggings \\ Malfurion's Leggings
-s(177771)/i(48777),	-- urion's Robe \\ Malfurion's Robe
-s(177772)/i(48778),	-- urion's Spaulders \\ Malfurion's Spaulders
-s(177773)/i(48781),	-- totem's Cover \\ Runetotem's Cover
-s(177774)/i(48782),	-- totem's Gloves \\ Runetotem's Gloves
-s(177775)/i(48783),	-- totem's Mantle \\ Runetotem's Mantle
-s(177776)/i(48784),	-- totem's Trousers \\ Runetotem's Trousers
-s(177777)/i(48785),	-- totem's Vestments \\ Runetotem's Vestments
-s(177778)/i(48786),	-- urion's Cover \\ Malfurion's Cover
-s(177779)/i(48787),	-- urion's Gloves \\ Malfurion's Gloves
-s(177780)/i(48788),	-- urion's Mantle \\ Malfurion's Mantle
-s(177781)/i(48789),	-- urion's Trousers \\ Malfurion's Trousers
-s(177782)/i(48790),	-- urion's Vestments \\ Malfurion's Vestments
-s(177783)/i(48794),	-- totem's Handgrips \\ Runetotem's Handgrips
-s(177784)/i(48795),	-- totem's Headguard \\ Runetotem's Headguard
-s(177785)/i(48796),	-- totem's Legguards \\ Runetotem's Legguards
-s(177786)/i(48797),	-- totem's Raiments \\ Runetotem's Raiments
-s(177787)/i(48798),	-- totem's Shoulderpads \\ Runetotem's Shoulderpads
-s(177788)/i(48799),	-- urion's Handgrips \\ Malfurion's Handgrips
-s(177789)/i(48800),	-- urion's Headguard \\ Malfurion's Headguard
-s(177790)/i(48801),	-- urion's Legguards \\ Malfurion's Legguards
-s(177791)/i(48802),	-- urion's Raiments \\ Malfurion's Raiments
-s(177792)/i(48803),	-- urion's Shoulderpads \\ Malfurion's Shoulderpads
-s(177793)/i(48804),	-- na's Breastplate \\ Garona's Breastplate
-s(177794)/i(48805),	-- na's Gauntlets \\ Garona's Gauntlets
-s(177795)/i(48806),	-- na's Helmet \\ Garona's Helmet
-s(177796)/i(48807),	-- na's Legplates \\ Garona's Legplates
-s(177797)/i(48808),	-- na's Pauldrons \\ Garona's Pauldrons
-s(177798)/i(48809),	-- leef's Breastplate \\ VanCleef's Breastplate
-s(177799)/i(48810),	-- leef's Gauntlets \\ VanCleef's Gauntlets
-s(177800)/i(48811),	-- leef's Helmet \\ VanCleef's Helmet
-s(177801)/i(48812),	-- leef's Legplates \\ VanCleef's Legplates
-s(177802)/i(48813),	-- leef's Pauldrons \\ VanCleef's Pauldrons
-s(177803)/i(48814),	-- runner's Handguards \\ Windrunner's Handguards
-s(177804)/i(48815),	-- runner's Headpiece \\ Windrunner's Headpiece
-s(177805)/i(48816),	-- runner's Legguards \\ Windrunner's Legguards
-s(177806)/i(48817),	-- runner's Spaulders \\ Windrunner's Spaulders
-s(177807)/i(48818),	-- runner's Tunic \\ Windrunner's Tunic
-s(177808)/i(48819),	-- runner's Handguards \\ Windrunner's Handguards
-s(177809)/i(48820),	-- runner's Headpiece \\ Windrunner's Headpiece
-s(177810)/i(48821),	-- runner's Legguards \\ Windrunner's Legguards
-s(177811)/i(48822),	-- runner's Spaulders \\ Windrunner's Spaulders
-s(177812)/i(48823),	-- runner's Tunic \\ Windrunner's Tunic
-s(177813)/i(48824),	-- ndo's Handguards \\ Nobundo's Handguards
-s(177814)/i(48825),	-- ndo's Headpiece \\ Nobundo's Headpiece
-s(177815)/i(48826),	-- ndo's Legguards \\ Nobundo's Legguards
-s(177816)/i(48827),	-- ndo's Spaulders \\ Nobundo's Spaulders
-s(177817)/i(48828),	-- ndo's Tunic \\ Nobundo's Tunic
-s(177818)/i(48829),	-- ll's Handguards \\ Thrall's Handguards
-s(177819)/i(48830),	-- ll's Headpiece \\ Thrall's Headpiece
-s(177820)/i(48831),	-- ll's Legguards \\ Thrall's Legguards
-s(177821)/i(48832),	-- ll's Spaulders \\ Thrall's Spaulders
-s(177822)/i(48833),	-- ll's Tunic \\ Thrall's Tunic
-s(177823)/i(48836),	-- ndo's Gloves \\ Nobundo's Gloves
-s(177824)/i(48837),	-- ndo's Hauberk \\ Nobundo's Hauberk
-s(177825)/i(48838),	-- ndo's Helm \\ Nobundo's Helm
-s(177826)/i(48839),	-- ndo's Kilt \\ Nobundo's Kilt
-s(177827)/i(48840),	-- ndo's Shoulderpads \\ Nobundo's Shoulderpads
-s(177828)/i(48841),	-- ll's Gloves \\ Thrall's Gloves
-s(177829)/i(48842),	-- ll's Hauberk \\ Thrall's Hauberk
-s(177830)/i(48843),	-- ll's Helm \\ Thrall's Helm
-s(177831)/i(48844),	-- ll's Kilt \\ Thrall's Kilt
-s(177832)/i(48845),	-- ll's Shoulderpads \\ Thrall's Shoulderpads
-s(177833)/i(48846),	-- ndo's Chestguard \\ Nobundo's Chestguard
-s(177834)/i(48847),	-- ndo's Faceguard \\ Nobundo's Faceguard
-s(177835)/i(48848),	-- ndo's Grips \\ Nobundo's Grips
-s(177836)/i(48849),	-- ndo's Shoulderguards \\ Nobundo's Shoulderguards
-s(177837)/i(48850),	-- ndo's War-Kilt \\ Nobundo's War-Kilt
-s(177838)/i(48851),	-- ll's Chestguard \\ Thrall's Chestguard
-s(177839)/i(48852),	-- ll's Faceguard \\ Thrall's Faceguard
-s(177840)/i(48853),	-- ll's Grips \\ Thrall's Grips
-s(177841)/i(48854),	-- ll's Shoulderguards \\ Thrall's Shoulderguards
-s(177842)/i(48855),	-- ll's War-Kilt \\ Thrall's War-Kilt
-s(177843)/i(48860),	-- scream's Battleplate \\ Hellscream's Battleplate
-s(177844)/i(48861),	-- scream's Gauntlets \\ Hellscream's Gauntlets
-s(177845)/i(48862),	-- scream's Helmet \\ Hellscream's Helmet
-s(177846)/i(48863),	-- scream's Legplates \\ Hellscream's Legplates
-s(177847)/i(48864),	-- scream's Shoulderplates \\ Hellscream's Shoulderplates
-s(177848)/i(48865),	-- n's Battleplate \\ Wrynn's Battleplate
-s(177849)/i(48866),	-- n's Gauntlets \\ Wrynn's Gauntlets
-s(177850)/i(48867),	-- n's Helmet \\ Wrynn's Helmet
-s(177851)/i(48868),	-- n's Legplates \\ Wrynn's Legplates
-s(177852)/i(48869),	-- n's Shoulderplates \\ Wrynn's Shoulderplates
-s(177853)/i(48870),	-- scream's Breastplate \\ Hellscream's Breastplate
-s(177854)/i(48871),	-- scream's Greathelm \\ Hellscream's Greathelm
-s(177855)/i(48872),	-- scream's Handguards \\ Hellscream's Handguards
-s(177856)/i(48873),	-- scream's Legguards \\ Hellscream's Legguards
-s(177857)/i(48874),	-- scream's Pauldrons \\ Hellscream's Pauldrons
-s(177858)/i(48875),	-- n's Breastplate \\ Wrynn's Breastplate
-s(177859)/i(48876),	-- n's Greathelm \\ Wrynn's Greathelm
-s(177860)/i(48877),	-- n's Handguards \\ Wrynn's Handguards
-s(177861)/i(48878),	-- n's Legguards \\ Wrynn's Legguards
-s(177862)/i(48879),	-- n's Pauldrons \\ Wrynn's Pauldrons
-s(177863)/i(48880),	-- ira's Battleplate \\ Koltira's Battleplate
-s(177864)/i(48881),	-- ira's Gauntlets \\ Koltira's Gauntlets
-s(177865)/i(48882),	-- ira's Helmet \\ Koltira's Helmet
-s(177866)/i(48883),	-- ira's Legplates \\ Koltira's Legplates
-s(177867)/i(48884),	-- ira's Shoulderplates \\ Koltira's Shoulderplates
-s(177868)/i(48885),	-- sarian's Battleplate \\ Thassarian's Battleplate
-s(177869)/i(48886),	-- sarian's Gauntlets \\ Thassarian's Gauntlets
-s(177870)/i(48887),	-- sarian's Helmet \\ Thassarian's Helmet
-s(177871)/i(48888),	-- sarian's Legplates \\ Thassarian's Legplates
-s(177872)/i(48889),	-- sarian's Shoulderplates \\ Thassarian's Shoulderplates
-s(177873)/i(48890),	-- ira's Chestguard \\ Koltira's Chestguard
-s(177874)/i(48891),	-- ira's Faceguard \\ Koltira's Faceguard
-s(177875)/i(48892),	-- ira's Handguards \\ Koltira's Handguards
-s(177876)/i(48893),	-- ira's Legguards \\ Koltira's Legguards
-s(177877)/i(48894),	-- ira's Pauldrons \\ Koltira's Pauldrons
-s(177878)/i(48895),	-- sarian's Chestguard \\ Thassarian's Chestguard
-s(177879)/i(48896),	-- sarian's Faceguard \\ Thassarian's Faceguard
-s(177880)/i(48897),	-- sarian's Handguards \\ Thassarian's Handguards
-s(177881)/i(48898),	-- sarian's Legguards \\ Thassarian's Legguards
-s(177882)/i(48899),	-- sarian's Pauldrons \\ Thassarian's Pauldrons
-s(177883)/i(48900),	-- lyon's Tunic \\ Turalyon's Tunic
-s(177884)/i(48901),	-- lyon's Spaulders \\ Turalyon's Spaulders
-s(177885)/i(48902),	-- lyon's Headpiece \\ Turalyon's Headpiece
-s(177886)/i(48903),	-- lyon's Greaves \\ Turalyon's Greaves
-s(177887)/i(48904),	-- lyon's Gloves \\ Turalyon's Gloves
-s(177888)/i(48905),	-- rin's Tunic \\ Liadrin's Tunic
-s(177889)/i(48906),	-- rin's Spaulders \\ Liadrin's Spaulders
-s(177890)/i(48907),	-- rin's Headpiece \\ Liadrin's Headpiece
-s(177891)/i(48908),	-- rin's Greaves \\ Liadrin's Greaves
-s(177892)/i(48909),	-- rin's Gloves \\ Liadrin's Gloves
-s(177893)/i(48910),	-- rin's Battleplate \\ Liadrin's Battleplate
-s(177894)/i(48911),	-- rin's Gauntlets \\ Liadrin's Gauntlets
-s(177895)/i(48912),	-- rin's Helm \\ Liadrin's Helm
-s(177896)/i(48913),	-- rin's Legplates \\ Liadrin's Legplates
-s(177897)/i(48914),	-- rin's Shoulderplates \\ Liadrin's Shoulderplates
-s(177898)/i(48915),	-- lyon's Battleplate \\ Turalyon's Battleplate
-s(177899)/i(48916),	-- lyon's Gauntlets \\ Turalyon's Gauntlets
-s(177900)/i(48917),	-- lyon's Helm \\ Turalyon's Helm
-s(177901)/i(48918),	-- lyon's Legplates \\ Turalyon's Legplates
-s(177902)/i(48919),	-- lyon's Shoulderplates \\ Turalyon's Shoulderplates
-s(177903)/i(48922),	-- rin's Breastplate \\ Liadrin's Breastplate
-s(177904)/i(48923),	-- rin's Faceguard \\ Liadrin's Faceguard
-s(177905)/i(48924),	-- rin's Handguards \\ Liadrin's Handguards
-s(177906)/i(48925),	-- rin's Legguards \\ Liadrin's Legguards
-s(177907)/i(48926),	-- rin's Shoulderguards \\ Liadrin's Shoulderguards
-s(177908)/i(48927),	-- lyon's Breastplate \\ Turalyon's Breastplate
-s(177909)/i(48928),	-- lyon's Faceguard \\ Turalyon's Faceguard
-s(177910)/i(48929),	-- lyon's Handguards \\ Turalyon's Handguards
-s(177911)/i(48930),	-- lyon's Legguards \\ Turalyon's Legguards
-s(177912)/i(48931),	-- lyon's Shoulderguards \\ Turalyon's Shoulderguards
+s(177723)/i(48725),	-- gar's Gauntlets \\ Khadgar's Gauntlets \\ Khadgar's Gauntlets
+s(177724)/i(48726),	-- gar's Hood \\ Khadgar's Hood \\ Khadgar's Hood
+s(177725)/i(48727),	-- gar's Leggings \\ Khadgar's Leggings \\ Khadgar's Leggings
+s(177726)/i(48728),	-- gar's Robe \\ Khadgar's Robe \\ Khadgar's Robe
+s(177727)/i(48729),	-- gar's Shoulderpads \\ Khadgar's Shoulderpads \\ Khadgar's Shoulderpads
+s(177728)/i(48730),	-- trider's Gauntlets \\ Sunstrider's Gauntlets \\ Sunstrider's Gauntlets
+s(177729)/i(48731),	-- trider's Hood \\ Sunstrider's Hood \\ Sunstrider's Hood
+s(177730)/i(48732),	-- trider's Leggings \\ Sunstrider's Leggings \\ Sunstrider's Leggings
+s(177731)/i(48733),	-- trider's Robe \\ Sunstrider's Robe \\ Sunstrider's Robe
+s(177732)/i(48734),	-- trider's Shoulderpads \\ Sunstrider's Shoulderpads \\ Sunstrider's Shoulderpads
+s(177733)/i(48735),	-- dan's Gloves \\ Gul'dan's Gloves \\ Gul'dan's Gloves
+s(177734)/i(48736),	-- dan's Hood \\ Gul'dan's Hood \\ Gul'dan's Hood
+s(177735)/i(48737),	-- dan's Leggings \\ Gul'dan's Leggings \\ Gul'dan's Leggings
+s(177736)/i(48738),	-- dan's Robe \\ Gul'dan's Robe \\ Gul'dan's Robe
+s(177737)/i(48739),	-- dan's Shoulderpads \\ Gul'dan's Shoulderpads \\ Gul'dan's Shoulderpads
+s(177738)/i(48740),	-- Thuzad's Gloves \\ Kel'Thuzad's Gloves \\ Kel'Thuzad's Gloves
+s(177739)/i(48741),	-- Thuzad's Hood \\ Kel'Thuzad's Hood \\ Kel'Thuzad's Hood
+s(177740)/i(48742),	-- Thuzad's Leggings \\ Kel'Thuzad's Leggings \\ Kel'Thuzad's Leggings
+s(177741)/i(48743),	-- Thuzad's Robe \\ Kel'Thuzad's Robe \\ Kel'Thuzad's Robe
+s(177742)/i(48744),	-- Thuzad's Shoulderpads \\ Kel'Thuzad's Shoulderpads \\ Kel'Thuzad's Shoulderpads
+s(177743)/i(48745),	-- n's Cowl \\ Velen's Cowl \\ Velen's Cowl
+s(177744)/i(48746),	-- n's Gloves \\ Velen's Gloves \\ Velen's Gloves
+s(177745)/i(48747),	-- n's Leggings \\ Velen's Leggings \\ Velen's Leggings
+s(177746)/i(48748),	-- n's Robe \\ Velen's Robe \\ Velen's Robe
+s(177747)/i(48749),	-- n's Shoulderpads \\ Velen's Shoulderpads \\ Velen's Shoulderpads
+s(177748)/i(48750),	-- a's Cowl \\ Zabra's Cowl \\ Zabra's Cowl
+s(177749)/i(48751),	-- a's Gloves \\ Zabra's Gloves \\ Zabra's Gloves
+s(177750)/i(48752),	-- a's Leggings \\ Zabra's Leggings \\ Zabra's Leggings
+s(177751)/i(48753),	-- a's Robe \\ Zabra's Robe \\ Zabra's Robe
+s(177752)/i(48754),	-- a's Shoulderpads \\ Zabra's Shoulderpads \\ Zabra's Shoulderpads
+s(177753)/i(48755),	-- n's Circlet \\ Velen's Circlet \\ Velen's Circlet
+s(177754)/i(48756),	-- n's Handwraps \\ Velen's Handwraps \\ Velen's Handwraps
+s(177755)/i(48757),	-- n's Mantle \\ Velen's Mantle \\ Velen's Mantle
+s(177756)/i(48758),	-- n's Pants \\ Velen's Pants \\ Velen's Pants
+s(177757)/i(48759),	-- n's Raiments \\ Velen's Raiments \\ Velen's Raiments
+s(177758)/i(48760),	-- a's Circlet \\ Zabra's Circlet \\ Zabra's Circlet
+s(177759)/i(48761),	-- a's Handwraps \\ Zabra's Handwraps \\ Zabra's Handwraps
+s(177760)/i(48762),	-- a's Mantle \\ Zabra's Mantle \\ Zabra's Mantle
+s(177761)/i(48763),	-- a's Pants \\ Zabra's Pants \\ Zabra's Pants
+s(177762)/i(48764),	-- a's Raiments \\ Zabra's Raiments \\ Zabra's Raiments
+s(177763)/i(48769),	-- totem's Handguards \\ Runetotem's Handguards \\ Runetotem's Handguards
+s(177764)/i(48770),	-- totem's Headpiece \\ Runetotem's Headpiece \\ Runetotem's Headpiece
+s(177765)/i(48771),	-- totem's Leggings \\ Runetotem's Leggings \\ Runetotem's Leggings
+s(177766)/i(48772),	-- totem's Robe \\ Runetotem's Robe \\ Runetotem's Robe
+s(177767)/i(48773),	-- totem's Spaulders \\ Runetotem's Spaulders \\ Runetotem's Spaulders
+s(177768)/i(48774),	-- urion's Handguards \\ Malfurion's Handguards \\ Malfurion's Handguards
+s(177769)/i(48775),	-- urion's Headpiece \\ Malfurion's Headpiece \\ Malfurion's Headpiece
+s(177770)/i(48776),	-- urion's Leggings \\ Malfurion's Leggings \\ Malfurion's Leggings
+s(177771)/i(48777),	-- urion's Robe \\ Malfurion's Robe \\ Malfurion's Robe
+s(177772)/i(48778),	-- urion's Spaulders \\ Malfurion's Spaulders \\ Malfurion's Spaulders
+s(177773)/i(48781),	-- totem's Cover \\ Runetotem's Cover \\ Runetotem's Cover
+s(177774)/i(48782),	-- totem's Gloves \\ Runetotem's Gloves \\ Runetotem's Gloves
+s(177775)/i(48783),	-- totem's Mantle \\ Runetotem's Mantle \\ Runetotem's Mantle
+s(177776)/i(48784),	-- totem's Trousers \\ Runetotem's Trousers \\ Runetotem's Trousers
+s(177777)/i(48785),	-- totem's Vestments \\ Runetotem's Vestments \\ Runetotem's Vestments
+s(177778)/i(48786),	-- urion's Cover \\ Malfurion's Cover \\ Malfurion's Cover
+s(177779)/i(48787),	-- urion's Gloves \\ Malfurion's Gloves \\ Malfurion's Gloves
+s(177780)/i(48788),	-- urion's Mantle \\ Malfurion's Mantle \\ Malfurion's Mantle
+s(177781)/i(48789),	-- urion's Trousers \\ Malfurion's Trousers \\ Malfurion's Trousers
+s(177782)/i(48790),	-- urion's Vestments \\ Malfurion's Vestments \\ Malfurion's Vestments
+s(177783)/i(48794),	-- totem's Handgrips \\ Runetotem's Handgrips \\ Runetotem's Handgrips
+s(177784)/i(48795),	-- totem's Headguard \\ Runetotem's Headguard \\ Runetotem's Headguard
+s(177785)/i(48796),	-- totem's Legguards \\ Runetotem's Legguards \\ Runetotem's Legguards
+s(177786)/i(48797),	-- totem's Raiments \\ Runetotem's Raiments \\ Runetotem's Raiments
+s(177787)/i(48798),	-- totem's Shoulderpads \\ Runetotem's Shoulderpads \\ Runetotem's Shoulderpads
+s(177788)/i(48799),	-- urion's Handgrips \\ Malfurion's Handgrips \\ Malfurion's Handgrips
+s(177789)/i(48800),	-- urion's Headguard \\ Malfurion's Headguard \\ Malfurion's Headguard
+s(177790)/i(48801),	-- urion's Legguards \\ Malfurion's Legguards \\ Malfurion's Legguards
+s(177791)/i(48802),	-- urion's Raiments \\ Malfurion's Raiments \\ Malfurion's Raiments
+s(177792)/i(48803),	-- urion's Shoulderpads \\ Malfurion's Shoulderpads \\ Malfurion's Shoulderpads
+s(177793)/i(48804),	-- na's Breastplate \\ Garona's Breastplate \\ Garona's Breastplate
+s(177794)/i(48805),	-- na's Gauntlets \\ Garona's Gauntlets \\ Garona's Gauntlets
+s(177795)/i(48806),	-- na's Helmet \\ Garona's Helmet \\ Garona's Helmet
+s(177796)/i(48807),	-- na's Legplates \\ Garona's Legplates \\ Garona's Legplates
+s(177797)/i(48808),	-- na's Pauldrons \\ Garona's Pauldrons \\ Garona's Pauldrons
+s(177798)/i(48809),	-- leef's Breastplate \\ VanCleef's Breastplate \\ VanCleef's Breastplate
+s(177799)/i(48810),	-- leef's Gauntlets \\ VanCleef's Gauntlets \\ VanCleef's Gauntlets
+s(177800)/i(48811),	-- leef's Helmet \\ VanCleef's Helmet \\ VanCleef's Helmet
+s(177801)/i(48812),	-- leef's Legplates \\ VanCleef's Legplates \\ VanCleef's Legplates
+s(177802)/i(48813),	-- leef's Pauldrons \\ VanCleef's Pauldrons \\ VanCleef's Pauldrons
+s(177803)/i(48814),	-- runner's Handguards \\ Windrunner's Handguards \\ Windrunner's Handguards
+s(177804)/i(48815),	-- runner's Headpiece \\ Windrunner's Headpiece \\ Windrunner's Headpiece
+s(177805)/i(48816),	-- runner's Legguards \\ Windrunner's Legguards \\ Windrunner's Legguards
+s(177806)/i(48817),	-- runner's Spaulders \\ Windrunner's Spaulders \\ Windrunner's Spaulders
+s(177807)/i(48818),	-- runner's Tunic \\ Windrunner's Tunic \\ Windrunner's Tunic
+s(177808)/i(48819),	-- runner's Handguards \\ Windrunner's Handguards \\ Windrunner's Handguards
+s(177809)/i(48820),	-- runner's Headpiece \\ Windrunner's Headpiece \\ Windrunner's Headpiece
+s(177810)/i(48821),	-- runner's Legguards \\ Windrunner's Legguards \\ Windrunner's Legguards
+s(177811)/i(48822),	-- runner's Spaulders \\ Windrunner's Spaulders \\ Windrunner's Spaulders
+s(177812)/i(48823),	-- runner's Tunic \\ Windrunner's Tunic \\ Windrunner's Tunic
+s(177813)/i(48824),	-- ndo's Handguards \\ Nobundo's Handguards \\ Nobundo's Handguards
+s(177814)/i(48825),	-- ndo's Headpiece \\ Nobundo's Headpiece \\ Nobundo's Headpiece
+s(177815)/i(48826),	-- ndo's Legguards \\ Nobundo's Legguards \\ Nobundo's Legguards
+s(177816)/i(48827),	-- ndo's Spaulders \\ Nobundo's Spaulders \\ Nobundo's Spaulders
+s(177817)/i(48828),	-- ndo's Tunic \\ Nobundo's Tunic \\ Nobundo's Tunic
+s(177818)/i(48829),	-- ll's Handguards \\ Thrall's Handguards \\ Thrall's Handguards
+s(177819)/i(48830),	-- ll's Headpiece \\ Thrall's Headpiece \\ Thrall's Headpiece
+s(177820)/i(48831),	-- ll's Legguards \\ Thrall's Legguards \\ Thrall's Legguards
+s(177821)/i(48832),	-- ll's Spaulders \\ Thrall's Spaulders \\ Thrall's Spaulders
+s(177822)/i(48833),	-- ll's Tunic \\ Thrall's Tunic \\ Thrall's Tunic
+s(177823)/i(48836),	-- ndo's Gloves \\ Nobundo's Gloves \\ Nobundo's Gloves
+s(177824)/i(48837),	-- ndo's Hauberk \\ Nobundo's Hauberk \\ Nobundo's Hauberk
+s(177825)/i(48838),	-- ndo's Helm \\ Nobundo's Helm \\ Nobundo's Helm
+s(177826)/i(48839),	-- ndo's Kilt \\ Nobundo's Kilt \\ Nobundo's Kilt
+s(177827)/i(48840),	-- ndo's Shoulderpads \\ Nobundo's Shoulderpads \\ Nobundo's Shoulderpads
+s(177828)/i(48841),	-- ll's Gloves \\ Thrall's Gloves \\ Thrall's Gloves
+s(177829)/i(48842),	-- ll's Hauberk \\ Thrall's Hauberk \\ Thrall's Hauberk
+s(177830)/i(48843),	-- ll's Helm \\ Thrall's Helm \\ Thrall's Helm
+s(177831)/i(48844),	-- ll's Kilt \\ Thrall's Kilt \\ Thrall's Kilt
+s(177832)/i(48845),	-- ll's Shoulderpads \\ Thrall's Shoulderpads \\ Thrall's Shoulderpads
+s(177833)/i(48846),	-- ndo's Chestguard \\ Nobundo's Chestguard \\ Nobundo's Chestguard
+s(177834)/i(48847),	-- ndo's Faceguard \\ Nobundo's Faceguard \\ Nobundo's Faceguard
+s(177835)/i(48848),	-- ndo's Grips \\ Nobundo's Grips \\ Nobundo's Grips
+s(177836)/i(48849),	-- ndo's Shoulderguards \\ Nobundo's Shoulderguards \\ Nobundo's Shoulderguards
+s(177837)/i(48850),	-- ndo's War-Kilt \\ Nobundo's War-Kilt \\ Nobundo's War-Kilt
+s(177838)/i(48851),	-- ll's Chestguard \\ Thrall's Chestguard \\ Thrall's Chestguard
+s(177839)/i(48852),	-- ll's Faceguard \\ Thrall's Faceguard \\ Thrall's Faceguard
+s(177840)/i(48853),	-- ll's Grips \\ Thrall's Grips \\ Thrall's Grips
+s(177841)/i(48854),	-- ll's Shoulderguards \\ Thrall's Shoulderguards \\ Thrall's Shoulderguards
+s(177842)/i(48855),	-- ll's War-Kilt \\ Thrall's War-Kilt \\ Thrall's War-Kilt
+s(177843)/i(48860),	-- scream's Battleplate \\ Hellscream's Battleplate \\ Hellscream's Battleplate
+s(177844)/i(48861),	-- scream's Gauntlets \\ Hellscream's Gauntlets \\ Hellscream's Gauntlets
+s(177845)/i(48862),	-- scream's Helmet \\ Hellscream's Helmet \\ Hellscream's Helmet
+s(177846)/i(48863),	-- scream's Legplates \\ Hellscream's Legplates \\ Hellscream's Legplates
+s(177847)/i(48864),	-- scream's Shoulderplates \\ Hellscream's Shoulderplates \\ Hellscream's Shoulderplates
+s(177848)/i(48865),	-- n's Battleplate \\ Wrynn's Battleplate \\ Wrynn's Battleplate
+s(177849)/i(48866),	-- n's Gauntlets \\ Wrynn's Gauntlets \\ Wrynn's Gauntlets
+s(177850)/i(48867),	-- n's Helmet \\ Wrynn's Helmet \\ Wrynn's Helmet
+s(177851)/i(48868),	-- n's Legplates \\ Wrynn's Legplates \\ Wrynn's Legplates
+s(177852)/i(48869),	-- n's Shoulderplates \\ Wrynn's Shoulderplates \\ Wrynn's Shoulderplates
+s(177853)/i(48870),	-- scream's Breastplate \\ Hellscream's Breastplate \\ Hellscream's Breastplate
+s(177854)/i(48871),	-- scream's Greathelm \\ Hellscream's Greathelm \\ Hellscream's Greathelm
+s(177855)/i(48872),	-- scream's Handguards \\ Hellscream's Handguards \\ Hellscream's Handguards
+s(177856)/i(48873),	-- scream's Legguards \\ Hellscream's Legguards \\ Hellscream's Legguards
+s(177857)/i(48874),	-- scream's Pauldrons \\ Hellscream's Pauldrons \\ Hellscream's Pauldrons
+s(177858)/i(48875),	-- n's Breastplate \\ Wrynn's Breastplate \\ Wrynn's Breastplate
+s(177859)/i(48876),	-- n's Greathelm \\ Wrynn's Greathelm \\ Wrynn's Greathelm
+s(177860)/i(48877),	-- n's Handguards \\ Wrynn's Handguards \\ Wrynn's Handguards
+s(177861)/i(48878),	-- n's Legguards \\ Wrynn's Legguards \\ Wrynn's Legguards
+s(177862)/i(48879),	-- n's Pauldrons \\ Wrynn's Pauldrons \\ Wrynn's Pauldrons
+s(177863)/i(48880),	-- ira's Battleplate \\ Koltira's Battleplate \\ Koltira's Battleplate
+s(177864)/i(48881),	-- ira's Gauntlets \\ Koltira's Gauntlets \\ Koltira's Gauntlets
+s(177865)/i(48882),	-- ira's Helmet \\ Koltira's Helmet \\ Koltira's Helmet
+s(177866)/i(48883),	-- ira's Legplates \\ Koltira's Legplates \\ Koltira's Legplates
+s(177867)/i(48884),	-- ira's Shoulderplates \\ Koltira's Shoulderplates \\ Koltira's Shoulderplates
+s(177868)/i(48885),	-- sarian's Battleplate \\ Thassarian's Battleplate \\ Thassarian's Battleplate
+s(177869)/i(48886),	-- sarian's Gauntlets \\ Thassarian's Gauntlets \\ Thassarian's Gauntlets
+s(177870)/i(48887),	-- sarian's Helmet \\ Thassarian's Helmet \\ Thassarian's Helmet
+s(177871)/i(48888),	-- sarian's Legplates \\ Thassarian's Legplates \\ Thassarian's Legplates
+s(177872)/i(48889),	-- sarian's Shoulderplates \\ Thassarian's Shoulderplates \\ Thassarian's Shoulderplates
+s(177873)/i(48890),	-- ira's Chestguard \\ Koltira's Chestguard \\ Koltira's Chestguard
+s(177874)/i(48891),	-- ira's Faceguard \\ Koltira's Faceguard \\ Koltira's Faceguard
+s(177875)/i(48892),	-- ira's Handguards \\ Koltira's Handguards \\ Koltira's Handguards
+s(177876)/i(48893),	-- ira's Legguards \\ Koltira's Legguards \\ Koltira's Legguards
+s(177877)/i(48894),	-- ira's Pauldrons \\ Koltira's Pauldrons \\ Koltira's Pauldrons
+s(177878)/i(48895),	-- sarian's Chestguard \\ Thassarian's Chestguard \\ Thassarian's Chestguard
+s(177879)/i(48896),	-- sarian's Faceguard \\ Thassarian's Faceguard \\ Thassarian's Faceguard
+s(177880)/i(48897),	-- sarian's Handguards \\ Thassarian's Handguards \\ Thassarian's Handguards
+s(177881)/i(48898),	-- sarian's Legguards \\ Thassarian's Legguards \\ Thassarian's Legguards
+s(177882)/i(48899),	-- sarian's Pauldrons \\ Thassarian's Pauldrons \\ Thassarian's Pauldrons
+s(177883)/i(48900),	-- lyon's Tunic \\ Turalyon's Tunic \\ Turalyon's Tunic
+s(177884)/i(48901),	-- lyon's Spaulders \\ Turalyon's Spaulders \\ Turalyon's Spaulders
+s(177885)/i(48902),	-- lyon's Headpiece \\ Turalyon's Headpiece \\ Turalyon's Headpiece
+s(177886)/i(48903),	-- lyon's Greaves \\ Turalyon's Greaves \\ Turalyon's Greaves
+s(177887)/i(48904),	-- lyon's Gloves \\ Turalyon's Gloves \\ Turalyon's Gloves
+s(177888)/i(48905),	-- rin's Tunic \\ Liadrin's Tunic \\ Liadrin's Tunic
+s(177889)/i(48906),	-- rin's Spaulders \\ Liadrin's Spaulders \\ Liadrin's Spaulders
+s(177890)/i(48907),	-- rin's Headpiece \\ Liadrin's Headpiece \\ Liadrin's Headpiece
+s(177891)/i(48908),	-- rin's Greaves \\ Liadrin's Greaves \\ Liadrin's Greaves
+s(177892)/i(48909),	-- rin's Gloves \\ Liadrin's Gloves \\ Liadrin's Gloves
+s(177893)/i(48910),	-- rin's Battleplate \\ Liadrin's Battleplate \\ Liadrin's Battleplate
+s(177894)/i(48911),	-- rin's Gauntlets \\ Liadrin's Gauntlets \\ Liadrin's Gauntlets
+s(177895)/i(48912),	-- rin's Helm \\ Liadrin's Helm \\ Liadrin's Helm
+s(177896)/i(48913),	-- rin's Legplates \\ Liadrin's Legplates \\ Liadrin's Legplates
+s(177897)/i(48914),	-- rin's Shoulderplates \\ Liadrin's Shoulderplates \\ Liadrin's Shoulderplates
+s(177898)/i(48915),	-- lyon's Battleplate \\ Turalyon's Battleplate \\ Turalyon's Battleplate
+s(177899)/i(48916),	-- lyon's Gauntlets \\ Turalyon's Gauntlets \\ Turalyon's Gauntlets
+s(177900)/i(48917),	-- lyon's Helm \\ Turalyon's Helm \\ Turalyon's Helm
+s(177901)/i(48918),	-- lyon's Legplates \\ Turalyon's Legplates \\ Turalyon's Legplates
+s(177902)/i(48919),	-- lyon's Shoulderplates \\ Turalyon's Shoulderplates \\ Turalyon's Shoulderplates
+s(177903)/i(48922),	-- rin's Breastplate \\ Liadrin's Breastplate \\ Liadrin's Breastplate
+s(177904)/i(48923),	-- rin's Faceguard \\ Liadrin's Faceguard \\ Liadrin's Faceguard
+s(177905)/i(48924),	-- rin's Handguards \\ Liadrin's Handguards \\ Liadrin's Handguards
+s(177906)/i(48925),	-- rin's Legguards \\ Liadrin's Legguards \\ Liadrin's Legguards
+s(177907)/i(48926),	-- rin's Shoulderguards \\ Liadrin's Shoulderguards \\ Liadrin's Shoulderguards
+s(177908)/i(48927),	-- lyon's Breastplate \\ Turalyon's Breastplate \\ Turalyon's Breastplate
+s(177909)/i(48928),	-- lyon's Faceguard \\ Turalyon's Faceguard \\ Turalyon's Faceguard
+s(177910)/i(48929),	-- lyon's Handguards \\ Turalyon's Handguards \\ Turalyon's Handguards
+s(177911)/i(48930),	-- lyon's Legguards \\ Turalyon's Legguards \\ Turalyon's Legguards
+s(177912)/i(48931),	-- lyon's Shoulderguards \\ Turalyon's Shoulderguards \\ Turalyon's Shoulderguards
 s(177913)/i(48945),	-- ish Thinking Cap \\ Gnomish Thinking Cap
 s(177914)/i(48947),	-- Monster - Axe, 1H Northrend D01
 s(177915)/i(48949),	-- Monster - Axe, 2H Northrend D01 Purple
@@ -34061,7 +34061,7 @@ s(177978)/i(49237),	-- tons of Tortured Space \\ Sabatons of Tortured Space
 s(177979)/i(49238),	-- s of Tortured Space \\ Boots of Tortured Space
 s(177980)/i(49278),	-- in Rocket Pack \\ Goblin Rocket Pack
 s(177981)/i(49291),	-- Monster - Polearm, Icecrown Raid (Vengeance Enchant)
-s(177982)/i(49292),	-- Monster - Sword - Forgemaster 2h
+s(177982)/i(49292),	-- Monster - Sword - Forgemaster 2h \\ Monster - Sword - Forgemaster 2h
 s(177983)/i(49293),	-- Monster - Demise w/ Frost Enchant
 s(177984)/i(49296),	-- ed Vis'kag the Bloodletter \\ Singed Vis'kag the Bloodletter
 s(177985)/i(49297),	-- wered Deathbringer \\ Empowered Deathbringer
@@ -38530,7 +38530,7 @@ s(17717)/i(37284),	-- BT55 Cloth Spell Boots4
 s(17718)/i(37285),	-- BT56 Cloth Spell Legs4
 s(17719)/i(37286),	-- BT57 Cloth Healer Glove2
 s(17726)/i(37295),	-- Cloth Spell Head4 \\ HF28 Cloth Spell Head4
-s(17727)/i(37296),	-- BT59 Cloth Spell Gloves4
+s(17727)/i(37296),	-- BT59 Cloth Spell Gloves4 \\ BT59 Cloth Spell Gloves4
 s(17728)/i(37308),	-- Monster - Sword2H, Northrend D03
 s(17729)/i(37309),	-- Monster - Special Arrow (Thori'dal)
 s(17730)/i(37310),	-- Monster - Mace, Stormhammer (Vengeful)
@@ -38547,8 +38547,8 @@ s(17794)/i(37410),	-- ker's Balanced Knives \\ Tracker's Balanced Knives
 s(17800)/i(37420),	-- kproof Boots \\ Sharkproof Boots
 s(17810)/i(37433),	-- red Scale Boots \\ Layered Scale Boots
 s(17820)/i(37444),	-- keeper's Helm \\ Wavekeeper's Helm
-s(17823)/i(37448),	-- BT47 Mail Physical Legs3
-s(17824)/i(37450),	-- BT48 Mail Healer Chest3
+s(17823)/i(37448),	-- BT47 Mail Physical Legs3 \\ BT47 Mail Physical Legs3
+s(17824)/i(37450),	-- BT48 Mail Healer Chest3 \\ BT48 Mail Healer Chest3
 s(17825)/i(37451),	-- BT49 Mail Physical Belt3
 s(17826)/i(37453),	-- BT59 Mail Physical Belt4
 s(17828)/i(37455),	-- BT56 Mail Healer Gloves2
@@ -38563,7 +38563,7 @@ s(17845)/i(37477),	-- Crusader Chestplate \\ Lost Crusader Chestplate
 s(17853)/i(37485),	-- Collector Gauntlets \\ Clam Collector Gauntlets
 s(17861)/i(37510),	-- tguards of Edification \\ Wristguards of Edification
 s(17862)/i(37511),	-- ible Waistguard \\ Crucible Waistguard
-s(17874)/i(37534),	-- BT56 Thrown2
+s(17874)/i(37534),	-- BT56 Thrown2 \\ BT56 Thrown2
 s(17876)/i(37536),	-- BT57 Fast Mace2
 s(17889)/i(37608),	-- Monster - Vrykul - Axe, 1H - Black Glow
 s(17890)/i(37609),	-- Monster - Sword2H, Claymore Silver (Black Glow)
@@ -38576,9 +38576,9 @@ s(18093)/i(37919),	-- Test Scott K Bow
 s(18104)/i(37946),	-- DB14 Cloth Healer Feet
 s(18109)/i(37951),	-- DB21 Cloth Healer Legs
 s(18112)/i(37955),	-- DB26 Healer Cloak
-s(18127)/i(37972),	-- DB49 Cloth Healer Feet2
+s(18127)/i(37972),	-- DB49 Cloth Healer Feet2 \\ DB49 Cloth Healer Feet2
 s(18128)/i(37973),	-- DB51 Cloth Spell Legs3
-s(18129)/i(37974),	-- DB52 Spell Cloak2
+s(18129)/i(37974),	-- DB52 Spell Cloak2 \\ DB52 Spell Cloak2
 s(18130)/i(37975),	-- DB53 Cloth Spell Shoulder3
 s(18131)/i(37977),	-- DB56 Cloth Healer Shoulder2
 s(18132)/i(37978),	-- DB57 Cloth Spell Chest3
@@ -38594,7 +38594,7 @@ s(18171)/i(38021),	-- DB57 Leather Healer Head2
 s(18172)/i(38022),	-- DB58 Leather Physical Shoulder4
 s(18185)/i(38038),	-- DB21 Mail Healer Head
 s(18197)/i(38052),	-- DB42 Leather Healer Shoulder
-s(18203)/i(38058),	-- DB49 Mail Healer Legs2
+s(18203)/i(38058),	-- DB49 Mail Healer Legs2 \\ DB49 Mail Healer Legs2
 s(18204)/i(38060),	-- DB51 Mail Physical Legs3
 s(18205)/i(38061),	-- DB53 Mail Physical Waist3
 s(18206)/i(38062),	-- DB54 Mail Physical Feet3
@@ -38603,7 +38603,7 @@ s(18208)/i(38064),	-- DB56 Mail Healer Bracer2
 s(18209)/i(38065),	-- DB57 Mail Healer Head2
 s(18210)/i(38066),	-- DB58 Mail Healer Feet2
 s(18223)/i(38099),	-- Monster - Axe 2H (EPL Deathknight Trainer)
-s(18237)/i(38113),	-- DB42 Plate Healer Glove2
+s(18237)/i(38113),	-- DB42 Plate Healer Glove2 \\ DB42 Plate Healer Glove2
 s(18243)/i(38119),	-- DB49 Plate Physical Head3
 s(18244)/i(38120),	-- DB51 Plate Physical Bracer3
 s(18245)/i(38121),	-- DB53 Plate Healer Shoulder
@@ -38611,11 +38611,11 @@ s(18246)/i(38122),	-- DB54 Plate Physical Bracer4
 s(18247)/i(38123),	-- DB56 Plate Healer Head2
 s(18248)/i(38124),	-- DB57 Plate Healer Chest2
 s(18249)/i(38125),	-- DB58 Plate Physical Waist4
-s(18260)/i(38136),	-- DB40 Spell Staff3
+s(18260)/i(38136),	-- DB40 Spell Staff3 \\ DB40 Spell Staff3
 s(18263)/i(38139),	-- DB50 Healer Mace3
 s(18264)/i(38140),	-- DB50 Spell Staff4
 s(18278)/i(38158),	-- DB20 Fast Sword
-s(18279)/i(38159),	-- DB20 Slow Right Fist
+s(18279)/i(38159),	-- DB20 Slow Right Fist \\ DB20 Slow Right Fist
 s(18284)/i(38166),	-- DB20 Gun
 s(18286)/i(38168),	-- DB22 Hunter Bow2
 s(18297)/i(38179),	-- DB38 Slow Right Fist2
@@ -38623,9 +38623,9 @@ s(18298)/i(38180),	-- DB40 Slow Left Fist2
 s(18300)/i(38182),	-- DB38 2H Sword2
 s(18301)/i(38183),	-- DB40 Fast Sword2
 s(18302)/i(38184),	-- DB40 Fast Dagger3
-s(18303)/i(38185),	-- DB40 Bow3
+s(18303)/i(38185),	-- DB40 Bow3 \\ DB40 Bow3
 s(18310)/i(38193),	-- DB50 2H Mace3
-s(18316)/i(38199),	-- DB50 Slow Sword3
+s(18316)/i(38199),	-- DB50 Slow Sword3 \\ DB50 Slow Sword3
 s(18317)/i(38200),	-- DB50 Crossbow3
 s(18318)/i(38201),	-- DB14 Spell Wand
 s(18320)/i(38203),	-- DB38 Healer Wand2
@@ -38767,10 +38767,10 @@ s(19076)/i(39751),	-- Monster - Mace, Northrend C01
 s(19077)/i(39752),	-- Monster - Mace, Thaurissan Hammer (Lightning)
 s(19078)/i(39753),	-- Monster - Mace, Nexus (Ice)(2H)
 s(19079)/i(39754),	-- Monster - Sword, Northrend Iron Dwarf
-s(19129)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH
+s(19129)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH \\ QR ZD25 Cloth Spell Glove2 - PH
 s(19142)/i(39828),	-- sher's Cloak \\ Punisher's Cloak
-s(19145)/i(39832),	-- QR ZD26 Spell Offhand - PH
-s(19189)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH
+s(19145)/i(39832),	-- QR ZD26 Spell Offhand - PH \\ QR ZD26 Spell Offhand - PH
+s(19189)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH \\ QR ZD25 Leather Physical Shoulder2 - PH
 s(19193)/i(39884),	-- QR ZD25 Mail Physical Feet2 - PH
 s(19194)/i(39885),	-- QR ZD25 Plate Physical Chest2 - PH
 s(19200)/i(39892),	-- Monster - Staff, Northrend B03 Gold (Fiery)
@@ -39011,7 +39011,7 @@ s(21246)/i(43936),	-- lesurgeon's Gauntlets \\ Battlesurgeon's Gauntlets
 s(21248)/i(43938),	-- of Rising Hope \\ Belt of Rising Hope
 s(21259)/i(43967),	-- Monster - Sword, 1H Northrend C01
 s(21274)/i(43985),	-- [UNUSED]Goblin Jumping Boots
-s(21324)/i(44056),	-- Monster - Axe, 1H Nexus D01
+s(21324)/i(44056),	-- Monster - Axe, 1H Nexus D01 \\ Monster - Axe, 1H Nexus D01
 s(21331)/i(44090),	-- Test Mail Shoulder 2
 s(21332)/i(44091),	-- pened Scarlet Kris \\ Sharpened Scarlet Kris
 s(21333)/i(44092),	-- rged Truesilver Champion \\ Reforged Truesilver Champion
@@ -39134,7 +39134,7 @@ s(24011)/i(49206),	-- Monster - Mace1H, Warhammer Ebony - White Flame
 s(24035)/i(49257),	-- Seashell Throwing Axe \\ hell Throwing Axe
 s(24036)/i(49258),	-- Light Throwing Tusk \\ t Throwing Tusk
 s(24056)/i(49291),	-- Monster - Polearm, Icecrown Raid (Vengeance Enchant)
-s(24057)/i(49292),	-- Monster - Sword - Forgemaster 2h
+s(24057)/i(49292),	-- Monster - Sword - Forgemaster 2h \\ Monster - Sword - Forgemaster 2h
 s(24058)/i(49293),	-- Monster - Demise w/ Frost Enchant
 s(24070)/i(49311),	-- Monster - Staff, Jeweled D01 Blue (Med Blue Glow)
 s(24090)/i(49340),	-- Monster - Icecrown - 1H Sword - D03 - Blue
@@ -65123,6 +65123,7 @@ s(185700)/i(204639),	--
 s(185701)/i(204640),	--
 s(185702)/i(204641),	--
 s(185789)/i(204387),	-- Buzzing Orb Core
+s(186051)/i(202471),	-- Knuckles of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Hand
 s(186234)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
 s(186235)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
 s(186236)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
@@ -65136,6 +65137,7 @@ s(186294)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Drago
 s(186295)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
 s(186296)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
 s(186297)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
+s(186389)/i(202488),	-- Crown of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Head
 10.1.0.48661
 s(186478)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
 s(186480)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
@@ -65148,6 +65150,8 @@ s(186506)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - 
 s(186507)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186517)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
 s(186519)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
+s(186521)/i(202584),	-- Scalecommander's Ebon Schynbalds \\ 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Mail - LEGS 1
+s(186523)/i(202583),	-- Grasps of Welded Anguish \\ 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Mail - HAND 1
 s(186531)/i(202591),	-- Gatecrasher Giant's Coif \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
 s(186532)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186533)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2

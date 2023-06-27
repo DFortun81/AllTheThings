@@ -73,6 +73,35 @@ ach(17417),	-- Duelist: Season 6
 ach(17418),	-- Challenger: Season 6
 ach(18375),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 ach(18376),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
+3.4.2.49658
+ach(18544),	-- Rival: Season 7
+ach(18545),	-- Gladiator: Season 7
+ach(18546),	-- Duelist: Season 7
+ach(18547),	-- Challenger: Season 7
+ach(18548),	-- Rival: Season 8
+ach(18549),	-- Duelist: Season 8
+ach(18550),	-- Challenger: Season 8
+ach(18551),	-- Gladiator: Season 8
+3.4.2.49794
+ach(18590),	-- Defense Protocol Beta: Utgarde Keep
+ach(18591),	-- Defense Protocol Beta: The Nexus
+ach(18592),	-- Defense Protocol Beta: Azjol-Nerub
+ach(18593),	-- Defense Protocol Beta: Ahn'kahet: The Old Kingdom
+ach(18594),	-- Defense Protocol Beta: Drak'Tharon Keep
+ach(18595),	-- Defense Protocol Beta: The Violet Hold
+ach(18596),	-- Defense Protocol Beta: Gundrak
+ach(18597),	-- Defense Protocol Beta: Halls of Stone
+ach(18598),	-- Defense Protocol Beta: Halls of Lightning
+ach(18599),	-- Defense Protocol Beta: The Oculus
+ach(18600),	-- Defense Protocol Beta: Utgarde Pinnacle
+ach(18601),	-- Defense Protocol Beta: The Culling of Stratholme
+ach(18602),	-- Defense Protocol Beta: Trial of The Champion
+3.4.2.49871
+ach(18614),	-- Defense Protocol Beta: Terminated
+3.4.2.49979
+ach(18677),	-- Defense Protocol Beta: Trial of the Champion
+ach(18678),	-- Defense Protocol Beta: Trial of the Champion
+ach(18688),	-- Defense Protocol Beta: Terminated
 4.0.1.12911
 ach(5020),	-- Observed - Guild Edition \\ He Feeds On Your Tears - Guild Edition
 8.1.0.27985
