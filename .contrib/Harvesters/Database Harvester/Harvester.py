@@ -22,19 +22,29 @@ from ThingTypes import (
     Titles,
     Toys,
     Transmog,
-    SpellItems,
+    # SpellItems,
     SpellNames,
-    SkillLines,
+    # SkillLines,
     Items,
-    Creatures,
+    # Creatures,
     remove_non_digits,
 )
-VERSION_THING_DICT: dict[str, list[type[Thing]]] = {
-    "Classic": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items, SpellNames],
-    "Classic Era": [Achievements, Factions, FlightPaths, Quests, Recipes, Transmog, SpellItems, SkillLines, Items, SpellNames, Creatures],
-    "Retail": Thing.__subclasses__(),
-}
 """Helper Functions"""
+
+
+def things_version(build: str) -> list[type[Thing]]:
+    thing_list: list[type[Thing]] = Thing.__subclasses__()
+    if version.parse(build) < version.parse("1.14.0.39802"):
+        thing_list.remove(Achievements)
+    if version.parse(build) < version.parse("6.0.1.18179"):
+        thing_list.remove(Followers)
+    if version.parse(build) < version.parse("9.0.1.34365"):
+        thing_list.remove(Illusions)
+    if version.parse(build) < version.parse("5.0.3.15882"):
+        thing_list.remove(Pets)
+    if version.parse("4.0.0.0") < version.parse(build) < version.parse("8.0.1.26367"):
+        thing_list.remove(SpellNames)
+    return thing_list
 
 
 def create_dict_from_raw(file_name: str, n: int) -> dict[str, list[str]]:
@@ -120,13 +130,10 @@ def get_thing_table(thing: type[Thing], build: str) -> list[str]:
     return requests.get(url, headers=headers).content.decode("utf-8").splitlines()
 
 
-def add_latest_build(build: str, thing: type[Thing]) -> list[str]:
+def add_latest_build(build: str) -> list[str]:
     """Append the latest build to all the BuildList files."""
     next_builds: list[str] = []
-    build_path = Path("Builds", "Retail.txt")
-    if version.parse(build) < version.parse("9.0.1.34365"):
-        build_path = Path("Builds", f"{thing.__name__}.txt")
-    with open(build_path, "r") as build_list:
+    with open("Builds.txt", "r") as build_list:
         build_lines: list[str] = build_list.readlines()
         for n, build_line in enumerate(build_lines):
             if version.parse(build) < version.parse(build_line):
@@ -136,7 +143,7 @@ def add_latest_build(build: str, thing: type[Thing]) -> list[str]:
         if version.parse(build) > version.parse(build_lines[-1]):
             build_lines.append(build + "\n")
             next_builds = list(build)
-    with open(build_path, "w") as build_list:
+    with open("Builds.txt", "w") as build_list:
         build_list.writelines(build_lines)
     return next_builds
 
@@ -149,8 +156,12 @@ def get_thing_data(thing: type[Thing], build: str) -> list[str]:
         try:
             thing_list.append(thing.extract_table_info(row, build) + "\n")
         except KeyError as error:
-            print(f"Cursed build: {build}\nKeyError: {error}")
-    print(thing_list[-1])
+            print(f"{build} is CURSED! Check the Table for {thing} with KeyError as {error}\n\n")
+            break
+    try:
+        print(thing_list[-1])
+    except IndexError:
+        print(f"Empty Table {build}, {thing}\n\n")
     return thing_list
 
 
@@ -482,21 +493,12 @@ def post_process(thing: type[Thing]) -> None:
 
 def add_latest_data(build: str) -> None:
     """Adds latest builds to build files and add latests data to raw files"""
-    if version.parse(build) < version.parse("2.0.0.0"):
-        things: list[type[Thing]] = VERSION_THING_DICT["Classic Era"]
-        next_builds: list[str] = []
-    elif version.parse(build) < version.parse("3.0.0.0"):
-        things: list[type[Thing]] = VERSION_THING_DICT["Classic"]
-        next_builds: list[str] = []
-    else:
-        things: list[type[Thing]] = VERSION_THING_DICT["Retail"]
-        next_builds: list[str] = add_latest_build(build, Achievements)
+    things: list[type[Thing]] = things_version(build)
+    next_builds: list[str] = add_latest_build(build)
     for thing in things:
         print(thing)
         before_list: list[str] = []
         after_list: list[str] = []
-        if version.parse(build) < version.parse("9.0.1.34365"):
-            next_builds: list[str] = add_latest_build(build, thing)
         raw_path = Path("Raw", f"{thing.__name__}.txt")
         thing_list = get_thing_data(thing, build.strip())
         with open(raw_path, "r") as raw_file:
@@ -527,7 +529,7 @@ def create_missing_files() -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        if thing != Items and thing == Transmog:
+        if thing != Items:
             print(thing)
             create_missing_file(thing)
             post_process(thing)
@@ -555,7 +557,7 @@ def give_name_item() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.1.5.50130")
+# add_latest_data("3.4.2.50172")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
