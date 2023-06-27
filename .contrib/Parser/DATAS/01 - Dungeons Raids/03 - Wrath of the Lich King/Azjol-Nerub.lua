@@ -74,13 +74,16 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60579, {	-- Hadronox
 						["_encounter"] = { 586, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45316),	-- Armbraces of the Vibrant Flame
+							i(45458),	-- Stormedge
 						},
 					}),
 					crit(60580, {	-- Anub'arak
 						["_encounter"] = { 587, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(45318),	-- Drape of Fuming Anger
+							i(45313),	-- Furnace Stone
 						},
 					}),
 				})),

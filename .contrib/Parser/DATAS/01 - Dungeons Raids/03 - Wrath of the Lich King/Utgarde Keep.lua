@@ -73,13 +73,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60571, { -- Prince Keleseth
 						["_encounter"] = { 638, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45378),	-- Boots of the Petrified Forest
 						},
 					}),
 					crit(60570, { -- Skarvald the Constructor
 						["_encounter"] = { 639, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45322),	-- Cloak of the Iron Council
+							i(45329),	-- Circlet of True Sight
 						},
 					}),
 					crit(60572, { -- Dalronn the Controller
@@ -89,6 +90,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["_encounter"] = { 640, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(45330),	-- Greaves of Iron Intensity
+							i(45418),	-- Lady Maye's Sapphire Ring
+							i(45324),	-- Leggings of Swift Reflexes
 						},
 					}),
 				})),

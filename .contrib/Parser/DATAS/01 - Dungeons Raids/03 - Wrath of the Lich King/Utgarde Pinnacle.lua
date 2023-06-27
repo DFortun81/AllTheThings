@@ -78,13 +78,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60610, { -- Svala Sorrowgrave
 						["_encounter"] = { 641, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45423),	-- Runetouch Wristwraps
 						},
 					}),
 					crit(60612, { -- Gortok Palehoof
 						["_encounter"] = { 642, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45332),	-- Stormtip
 						},
 					}),
 					crit(60611, { -- Skadi the Ruthless

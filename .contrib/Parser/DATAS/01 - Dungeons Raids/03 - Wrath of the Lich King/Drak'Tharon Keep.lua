@@ -71,25 +71,30 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60587, { -- Trollgore
 						["_encounter"] = { 588, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45697),	-- Shoulderguards of the Solemn Watch
+							i(45698),	-- Sabatons of the Iron Watcher
 						},
 					}),
 					crit(60588, { -- Novos the Summoner
 						["_encounter"] = { 589, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45703),	-- Spark of Hope
 						},
 					}),
 					crit(60589, { -- King Dred
 						["_encounter"] = { 590, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45975),	-- Cable of the Metrognome
+							i(45700),	-- Stoneguard
 						},
 					}),
 					crit(60590, { -- The Prophet Tharon'ja
 						["_encounter"] = { 591, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(45303),	-- Band of Draconic Guile
+							i(45972),	-- Pulse Baton
+							i(45974),	-- Shoulderguards of Assimilation
 						},
 					}),
 				})),

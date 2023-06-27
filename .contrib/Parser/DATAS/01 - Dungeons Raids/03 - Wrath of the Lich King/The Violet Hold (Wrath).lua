@@ -436,6 +436,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, ach(18595, {	-- Defense Protocol Beta: The Violet Hold
 								currency(SIDEREAL_ESSENCE),
+								i(46009),	-- Bindings of the Depths
+								i(46010),	-- Darkstone Ring
 							})),
 							-- #endif
 							ach(494),	-- Heroic: The Violet Hold

@@ -125,49 +125,57 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					crit(60760, { -- Mokra the Skullcrusher
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
 						},
 					}),
 					crit(60761, { -- Deathstalker Visceri
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
 						},
 					}),
 					crit(60765, { -- Runok Wildmane
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
 						},
 					}),
 					crit(60766, { -- Eressea Dawnsinger
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
 						},
 					}),
 					crit(60763, { -- Zul'tore
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
 						},
 					}),
 					crit(60764, { -- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45311),	-- Relentless Edge
 						},
 					}),
 					crit(60762, { -- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46022),	-- Pendant of a Thousand Maws
 						},
 					}),
 					crit(60621, { -- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(46021),	-- Royal Seal of King Llane
+							i(46030),	-- Treads of the Dragon Council
+							i(46031),	-- Touch of Madness
 						},
 					}),
 				}))),
@@ -175,49 +183,57 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					crit(60768, { -- Marshal Jacob Alerius
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
 						},
 					}),
 					crit(60771, { -- Lana Stouthammer
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
 						},
 					}),
 					crit(60770, { -- Colosos
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
 						},
 					}),
 					crit(60764, { -- Ambrose Boltspark
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
 						},
 					}),
 					crit(60767, { -- Jaelyne Evensong
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46028),	-- Faceguard of the Eyeless Horror
+							i(46024),	-- Kingsbane
 						},
 					}),
 					crit(60764, { -- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45311),	-- Relentless Edge
 						},
 					}),
 					crit(60762, { -- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46022),	-- Pendant of a Thousand Maws
 						},
 					}),
 					crit(60621, { -- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(46021),	-- Royal Seal of King Llane
+							i(46030),	-- Treads of the Dragon Council
+							i(46031),	-- Touch of Madness
 						},
 					}),
 				}))),

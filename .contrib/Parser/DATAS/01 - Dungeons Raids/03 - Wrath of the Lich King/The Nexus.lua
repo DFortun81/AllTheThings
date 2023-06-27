@@ -92,6 +92,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["_encounter"] = { 620, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45287),	-- Firesoul
+							i(45288),	-- Firestrider Chestguard
 						},
 					}),
 					crit(60577, { -- Keristrasza
