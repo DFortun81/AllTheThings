@@ -81,148 +81,313 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
 						filter(CLOAKS, {
-							i(205791),	-- Obsidian Aspirant's Cape
-							i(205789),	-- Obsidian Aspirant's Cloak
-							i(205790),	-- Obsidian Aspirant's Drape
-							i(205792),	-- Obsidian Aspirant's Greatcloak
+							i(205791, {	-- Obsidian Aspirant's Cape
+								["cost"] = { { "c", HONOR, 525 }, },
+							}),
+							i(205789, {	-- Obsidian Aspirant's Cloak
+								["cost"] = { { "c", HONOR, 525 }, },
+							}),
+							i(205790, {	-- Obsidian Aspirant's Drape
+								["cost"] = { { "c", HONOR, 525 }, },
+							}),
+							i(205792, {	-- Obsidian Aspirant's Greatcloak
+								["cost"] = { { "c", HONOR, 525 }, },
+							}),
 						}),
 						filter(CLOTH, {
-							i(205771),	-- Obsidian Aspirant's Silk Belt
-							i(205774),	-- Obsidian Aspirant's Silk Bindings
-							i(205739),	-- Obsidian Aspirant's Silk Cord
-							i(205759),	-- Obsidian Aspirant's Silk Cover
-							i(205752),	-- Obsidian Aspirant's Silk Footwraps
-							i(205725),	-- Obsidian Aspirant's Silk Gloves
-							i(205757),	-- Obsidian Aspirant's Silk Handwraps
-							i(205727),	-- Obsidian Aspirant's Silk Hood
-							i(205731),	-- Obsidian Aspirant's Silk Leggings
-							i(205763),	-- Obsidian Aspirant's Silk Legwraps
-							i(205736),	-- Obsidian Aspirant's Silk Mantle
-							i(205715),	-- Obsidian Aspirant's Silk Robe
-							i(205768),	-- Obsidian Aspirant's Silk Shawl
-							i(205720),	-- Obsidian Aspirant's Silk Treads
-							i(205747),	-- Obsidian Aspirant's Silk Vestments
-							i(205742),	-- Obsidian Aspirant's Silk Wristwraps
+							i(205771, {	-- Obsidian Aspirant's Silk Belt
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205774, {	-- Obsidian Aspirant's Silk Bindings
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+							i(205739, {	-- Obsidian Aspirant's Silk Cord
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205759, {	-- Obsidian Aspirant's Silk Cover
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205752, {	-- Obsidian Aspirant's Silk Footwraps
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205725, {	-- Obsidian Aspirant's Silk Gloves
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205757, {	-- Obsidian Aspirant's Silk Handwraps
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205727, {	-- Obsidian Aspirant's Silk Hood
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205731, {	-- Obsidian Aspirant's Silk Leggings
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205763, {	-- Obsidian Aspirant's Silk Legwraps
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205736, {	-- Obsidian Aspirant's Silk Mantle
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205715, {	-- Obsidian Aspirant's Silk Robe
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205768, {	-- Obsidian Aspirant's Silk Shawl
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205720, {	-- Obsidian Aspirant's Silk Treads
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205747, {	-- Obsidian Aspirant's Silk Vestments
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205742, {	-- Obsidian Aspirant's Silk Wristwraps
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
 						}),
 						filter(FINGER_F, {
-							i(205784),	-- Obsidian Aspirant's Band
-							i(205783),	-- Obsidian Aspirant's Ring
-							i(205785),	-- Obsidian Aspirant's Signet
+							i(205784, {	-- Obsidian Aspirant's Band
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+							i(205783, {	-- Obsidian Aspirant's Ring
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+							i(205785, {	-- Obsidian Aspirant's Signet
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
 						}),
 						filter(LEATHER, {
-							i(205777),	-- Obsidian Aspirant's Leather Armguards
-							i(205741),	-- Obsidian Aspirant's Leather Belt
-							i(205722),	-- Obsidian Aspirant's Leather Boots
-							i(205733),	-- Obsidian Aspirant's Leather Breeches
-							i(205773),	-- Obsidian Aspirant's Leather Cord
-							i(205754),	-- Obsidian Aspirant's Leather Footpads
-							i(205723),	-- Obsidian Aspirant's Leather Gloves
-							i(205755),	-- Obsidian Aspirant's Leather Grips
-							i(205729),	-- Obsidian Aspirant's Leather Helm
-							i(205765),	-- Obsidian Aspirant's Leather Leggings
-							i(205766),	-- Obsidian Aspirant's Leather Mantle
-							i(205761),	-- Obsidian Aspirant's Leather Mask
-							i(205734),	-- Obsidian Aspirant's Leather Spaulders
-							i(205750),	-- Obsidian Aspirant's Leather Tunic
-							i(205718),	-- Obsidian Aspirant's Leather Vest
-							i(205745),	-- Obsidian Aspirant's Leather Wristwraps
+							i(205777, {	-- Obsidian Aspirant's Leather Armguards
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+							i(205741, {	-- Obsidian Aspirant's Leather Belt
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205722, {	-- Obsidian Aspirant's Leather Boots
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205733, {	-- Obsidian Aspirant's Leather Breeches
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205773, {	-- Obsidian Aspirant's Leather Cord
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205754, {	-- Obsidian Aspirant's Leather Footpads
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205723, {	-- Obsidian Aspirant's Leather Gloves
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205755, {	-- Obsidian Aspirant's Leather Grips
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205729, {	-- Obsidian Aspirant's Leather Helm
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205765, {	-- Obsidian Aspirant's Leather Leggings
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205766, {	-- Obsidian Aspirant's Leather Mantle
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205761, {	-- Obsidian Aspirant's Leather Mask
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205734, {	-- Obsidian Aspirant's Leather Spaulders
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205750, {	-- Obsidian Aspirant's Leather Tunic
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205718, {	-- Obsidian Aspirant's Leather Vest
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205745, {	-- Obsidian Aspirant's Leather Wristwraps
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
 						}),
 						filter(MAIL, {
-							i(205740),	-- Obsidian Aspirant's Chain Belt
-							i(205776),	-- Obsidian Aspirant's Chain Bracer
-							i(205772),	-- Obsidian Aspirant's Chain Clasp
-							i(205726),	-- Obsidian Aspirant's Chain Gauntlets
-							i(205758),	-- Obsidian Aspirant's Chain Handguards
-							i(205760),	-- Obsidian Aspirant's Chain Headguard
-							i(205728),	-- Obsidian Aspirant's Chain Helm
-							i(205732),	-- Obsidian Aspirant's Chain Leggings
-							i(205721),	-- Obsidian Aspirant's Chain Sabatons
-							i(205769),	-- Obsidian Aspirant's Chain Shoulderguards
-							i(205737),	-- Obsidian Aspirant's Chain Spaulders
-							i(205753),	-- Obsidian Aspirant's Chain Stompers
-							i(205749),	-- Obsidian Aspirant's Chain Tunic
-							i(205717),	-- Obsidian Aspirant's Chain Vest
-							i(205764),	-- Obsidian Aspirant's Chain Wargreaves
-							i(205744),	-- Obsidian Aspirant's Chain Wristwraps
+							i(205740, {	-- Obsidian Aspirant's Chain Belt
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205776, {	-- Obsidian Aspirant's Chain Bracer
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+							i(205772, {	-- Obsidian Aspirant's Chain Clasp
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205726, {	-- Obsidian Aspirant's Chain Gauntlets
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205758, {	-- Obsidian Aspirant's Chain Handguards
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205760, {	-- Obsidian Aspirant's Chain Headguard
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205728, {	-- Obsidian Aspirant's Chain Helm
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205732, {	-- Obsidian Aspirant's Chain Leggings
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205721, {	-- Obsidian Aspirant's Chain Sabatons
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205769, {	-- Obsidian Aspirant's Chain Shoulderguards
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205737, {	-- Obsidian Aspirant's Chain Spaulders
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205753, {	-- Obsidian Aspirant's Chain Stompers
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205749, {	-- Obsidian Aspirant's Chain Tunic
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205717, {	-- Obsidian Aspirant's Chain Vest
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205764, {	-- Obsidian Aspirant's Chain Wargreaves
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205744, {	-- Obsidian Aspirant's Chain Wristwraps
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
 						}),
 						filter(NECK_F, {
-							i(205787),	-- Obsidian Aspirant's Choker
-							i(205786),	-- Obsidian Aspirant's Necklace
-							i(205788),	-- Obsidian Aspirant's Pendant
+							i(205787, {	-- Obsidian Aspirant's Choker
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+							i(205786, {	-- Obsidian Aspirant's Necklace
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+							i(205788, {	-- Obsidian Aspirant's Pendant
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
 						}),
 						filter(PLATE, {
-							i(205775),	-- Obsidian Aspirant's Plate Armguards
-							i(205748),	-- Obsidian Aspirant's Plate Armor
-							i(205716),	-- Obsidian Aspirant's Plate Chestplate
-							i(205743),	-- Obsidian Aspirant's Plate Cuffs
-							i(205724),	-- Obsidian Aspirant's Plate Gauntlets
-							i(205738),	-- Obsidian Aspirant's Plate Girdle
-							i(205770),	-- Obsidian Aspirant's Plate Greatbelt
-							i(205756),	-- Obsidian Aspirant's Plate Handguards
-							i(205746),	-- Obsidian Aspirant's Plate Headguard
-							i(205714),	-- Obsidian Aspirant's Plate Helm
-							i(205730),	-- Obsidian Aspirant's Plate Legguards
-							i(205767),	-- Obsidian Aspirant's Plate Pauldrons
-							i(205735),	-- Obsidian Aspirant's Plate Shoulders
-							i(205751),	-- Obsidian Aspirant's Plate Stompers
-							i(205719),	-- Obsidian Aspirant's Plate Warboots
-							i(205762),	-- Obsidian Aspirant's Plate Wargreaves
+							i(205775, {	-- Obsidian Aspirant's Plate Armguards
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+							i(205748, {	-- Obsidian Aspirant's Plate Armor
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205716, {	-- Obsidian Aspirant's Plate Chestplate
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205743, {	-- Obsidian Aspirant's Plate Cuffs
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+							i(205724, {	-- Obsidian Aspirant's Plate Gauntlets
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205738, {	-- Obsidian Aspirant's Plate Girdle
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205770, {	-- Obsidian Aspirant's Plate Greatbelt
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205756, {	-- Obsidian Aspirant's Plate Handguards
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205746, {	-- Obsidian Aspirant's Plate Headguard
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205714, {	-- Obsidian Aspirant's Plate Helm
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205730, {	-- Obsidian Aspirant's Plate Legguards
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205767, {	-- Obsidian Aspirant's Plate Pauldrons
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205735, {	-- Obsidian Aspirant's Plate Shoulders
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205751, {	-- Obsidian Aspirant's Plate Stompers
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205719, {	-- Obsidian Aspirant's Plate Warboots
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205762, {	-- Obsidian Aspirant's Plate Wargreaves
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
 						}),
 						filter(TRINKET_F, {
-							i(205778),	-- Obsidian Aspirant's Badge of Ferocity
-							i(205781),	-- Obsidian Aspirant's Emblem
-							i(205780),	-- Obsidian Aspirant's Insignia of Alacrity
-							i(205779),	-- Obsidian Aspirant's Medallion
-							i(205782),	-- Obsidian Aspirant's Sigil of Adaptation
+							i(205778, {	-- Obsidian Aspirant's Badge of Ferocity
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205781, {	-- Obsidian Aspirant's Emblem
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205780, {	-- Obsidian Aspirant's Insignia of Alacrity
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(205779, {	-- Obsidian Aspirant's Medallion
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+							i(205782, {	-- Obsidian Aspirant's Sigil of Adaptation
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
 						}),
 						n(WEAPONS, {
-							i(205879),	-- Obsidian Aspirant's Battleaxe
-							i(205896),	-- Obsidian Aspirant's Blade
-							i(205880),	-- Obsidian Aspirant's Dagger
-							i(205887),	-- Obsidian Aspirant's Gavel
-							i(205884),	-- Obsidian Aspirant's Greatsword
-							i(205892),	-- Obsidian Aspirant's Hammer
-							i(205893),	-- Obsidian Aspirant's Knife
-							i(205891),	-- Obsidian Aspirant's Longspear
-							i(205881),	-- Obsidian Aspirant's Mace
-							i(205882),	-- Obsidian Aspirant's Polearm
-							i(205895),	-- Obsidian Aspirant's Pulverizer
-							i(205890),	-- Obsidian Aspirant's Recurve
-							i(205889),	-- Obsidian Aspirant's Ripper
-							i(205888),	-- Obsidian Aspirant's Shield
-							i(205883),	-- Obsidian Aspirant's Staff
-							i(205894),	-- Obsidian Aspirant's Sword
-							i(205885),	-- Obsidian Aspirant's Torch
-							i(205886),	-- Obsidian Aspirant's Warglaive
-						}),
-						i(201250, {	-- Victorious Contender's Strongbox
-							["cost"] = { { "c", HONOR, 5000 }, },
-							["sym"] = {
-								{"select", "tierID", DF_TIER},			-- Select Dragonflight
-								{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
-								{"where", "headerID", SEASON_OBSIDIAN},	-- Season 2
-								{"pop"},								-- Discard the Season Header and acquire all of their children.
-								{"where", "filterID", RECIPES },		-- Recipes
-								{"pop"},								-- Discard the Recipes Header and acquire all of their children.
-							},
-							["g"] = {
-								-- i(137642),    -- Mark of Honor		-- The Vendor has a different box for less Costs (2k) with more Marks of Honor (x5). Hidding this on purpose.
-								i(205187, {	-- Artisan's Consortium Flier
-									["timeline"] = { ADDED_10_1_0 },
-								}),
-								i(201254, {	-- Cracked Medal of Honor [A]
-									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 }
-								}),
-								i(201255, {	-- Cracked Medal of Honor [H]
-									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 }
-								}),
-								i(204179, {	-- Medal of Honor [A]
-									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
-								}),
-								i(204180, {	-- Medal of Honor [H]
-									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
-								}),
-							},
+							i(205879, {	-- Obsidian Aspirant's Battleaxe
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205896, {	-- Obsidian Aspirant's Blade
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205880, {	-- Obsidian Aspirant's Dagger
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205887, {	-- Obsidian Aspirant's Gavel
+								["cost"] = { { "c", HONOR, 1325 } },
+							}),
+							i(205884, {	-- Obsidian Aspirant's Greatsword
+								["cost"] = { { "c", HONOR, 1750 } },
+							}),
+							i(205892, {	-- Obsidian Aspirant's Hammer
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205893, {	-- Obsidian Aspirant's Knife
+								["cost"] = { { "c", HONOR, 1325 } },
+							}),
+							i(205891, {	-- Obsidian Aspirant's Longspear
+								["cost"] = { { "c", HONOR, 1750 } },
+							}),
+							i(205881, {	-- Obsidian Aspirant's Mace
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205882, {	-- Obsidian Aspirant's Polearm
+								["cost"] = { { "c", HONOR, 1750 } },
+							}),
+							i(205895, {	-- Obsidian Aspirant's Pulverizer
+								["cost"] = { { "c", HONOR, 1750 } },
+							}),
+							i(205890, {	-- Obsidian Aspirant's Recurve
+								["cost"] = { { "c", HONOR, 1750 } },
+							}),
+							i(205889, {	-- Obsidian Aspirant's Ripper
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205888, {	-- Obsidian Aspirant's Shield
+								["cost"] = { { "c", HONOR, 425 } },
+							}),
+							i(205883, {	-- Obsidian Aspirant's Staff
+								["cost"] = { { "c", HONOR, 1750 } },
+							}),
+							i(205894, {	-- Obsidian Aspirant's Sword
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(205885, {	-- Obsidian Aspirant's Torch
+								["cost"] = { { "c", HONOR, 425 } },
+							}),
+							i(205886, {	-- Obsidian Aspirant's Warglaive
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
 						}),
 					},
 				}),
@@ -1054,23 +1219,18 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205924, {	-- Obsidian Gladiator's Axe
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
+							i(205929, {	-- Obsidian Gladiator's Bow
+								["cost"] = { { "c", CONQUEST, 1800 } },
+							}),
+							i(205928, {	-- Obsidian Gladiator's Claws
+								["cost"] = { { "c", CONQUEST, 900 } },
+							}),
 							i(205915, {	-- Obsidian Gladiator's Dagger
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							--[[
-							i(201979, {	-- Obsidian Gladiator's Gavel
-								["cost"] = { { "c", CONQUEST, 1350 } },
-							}),
-							i(201978, {	-- Obsidian Gladiator's Greatsword
+							i(206671, {	-- Obsidian Gladiator's Halberd
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(201977, {	-- Obsidian Gladiator's Hand Cannon
-								["cost"] = { { "c", CONQUEST, 1800 } },
-							}),
-							i(201980, {	-- Obsidian Gladiator's Horn
-								["cost"] = { { "c", CONQUEST, 450 } },
-							}),
-							--]]
 							i(205925, {	-- Obsidian Gladiator's Knife
 								["cost"] = { { "c", CONQUEST, 1350 } },
 							}),
@@ -1079,6 +1239,15 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							}),
 							i(205927, {	-- Obsidian Gladiator's Polearm
 								["cost"] = { { "c", CONQUEST, 1800 } },
+							}),
+							i(205919, {	-- Obsidian Gladiator's Rifle
+								["cost"] = { { "c", CONQUEST, 1800 } },
+							}),
+							i(205922, {	-- Obsidian Gladiator's Rod
+								["cost"] = { { "c", CONQUEST, 450 } },
+							}),
+							i(205921, {	-- Obsidian Gladiator's Scepter
+								["cost"] = { { "c", CONQUEST, 1350 } },
 							}),
 							i(205923, {	-- Obsidian Gladiator's Shield
 								["cost"] = { { "c", CONQUEST, 450 } },
@@ -1092,15 +1261,12 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205918, {	-- Obsidian Gladiator's Staff
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
+							i(205930, {	-- Obsidian Gladiator's Talons
+								["cost"] = { { "c", CONQUEST, 1350 } },
+							}),
 							i(205916, {	-- Obsidian Gladiator's Warglaive
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							i(205919),	-- Obsidian Gladiator's Rifle
-							i(205921),	-- Obsidian Gladiator's Scepter
-							i(205922),	-- Obsidian Gladiator's Rod
-							i(205928),	-- Obsidian Gladiator's Claws
-							i(205929),	-- Obsidian Gladiator's Bow
-							i(205930),	-- Obsidian Gladiator's Talons
 						}),
 					},
 				}),

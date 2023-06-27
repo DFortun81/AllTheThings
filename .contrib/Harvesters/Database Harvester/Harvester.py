@@ -527,7 +527,7 @@ def create_missing_files() -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        if thing != Items:
+        if thing != Items and thing == Transmog:
             print(thing)
             create_missing_file(thing)
             post_process(thing)
@@ -560,4 +560,4 @@ def give_name_item() -> None:
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
 """Step 5: Run create_missing_files() and (you have to uncomment it)"""
-# create_missing_files()
+create_missing_files()

@@ -170,6 +170,6 @@ i(204137, 403150);	-- Obsidian Combatant's Wildercloth Tunic
 i(205139, 408304);	-- Reserve Parachute
 i(205140, 408318);	-- Undulating Sporecloak
 -- NYI --
-i(0, 408316);	-- Spore-Infused Combat Bandage
+i(0, 408316);		-- Spore-Infused Combat Bandage
 i(205141, 408319);	-- Explorer's Banner
 i(205142, 408305);	-- Enormous Ball of Yarn
