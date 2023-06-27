@@ -43,7 +43,11 @@ local HookableTooltips = {
 	["EncounterJournalTooltipItem1Tooltip"]=1,	-- various tooltips in Adventure Guide, some are actually useful to attach ATT data
 	["GarrisonShipyardMapMissionTooltipTooltip"]=1,	-- tooltips of Navel missions from WoD Garrison
 	-- other addons which create user-visible tooltips that ATT should attach into
+	-- SilverDragon
 	["SilverDragonLootTooltip"]=1,
+	-- RareScanner
+	["LootBarToolTip"]=1,
+	["RSMapItemToolTip"]=1,
 	-- Townlong Yak addons seem to use alternate, automatically appended tooltips now...
 	["NotGameTooltip"]=1,
 	["NotGameTooltip0"]=1,
