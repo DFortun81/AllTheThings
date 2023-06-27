@@ -175,15 +175,20 @@ app.UpdateCosts = function()
 
 	-- Get all itemIDAsCost entries
 	for itemID,refs in pairs(SearchForFieldContainer("itemIDAsCost")) do
+		-- app.DEBUG_PRINT = nil
+		-- if itemID == 2029 then app.DEBUG_PRINT = true end
 		-- app.PrintDebug("Check Cost Item",itemID)
 		UpdateCostsByItemID(itemID, refresh, refs);
 	end
 	-- app.PrintDebug("UpdateCosts:Items")
 
+
 	-- Get all currencyIDAsCost entries
 	for currencyID,refs in pairs(SearchForFieldContainer("currencyIDAsCost")) do
+		-- app.DEBUG_PRINT = nil
+		-- if currencyID == 2029 then app.DEBUG_PRINT = true end
 		-- app.PrintDebug("Check Cost Curr",currencyID)
-		UpdateCostsByItemID(currencyID, refresh, refs);
+		UpdateCostsByCurrencyID(currencyID, refresh, refs);
 	end
 	-- app.PrintDebug("UpdateCosts:Done",app._SettingsRefresh)
 end
