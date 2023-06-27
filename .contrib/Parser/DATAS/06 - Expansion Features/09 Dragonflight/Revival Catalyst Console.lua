@@ -1000,6 +1000,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72360, {	-- Reviving the Machine
 					["provider"] = { "n", 191369 },	-- Watcher Koranos
 					["coord"] = { 54.6, 41.3, VALDRAKKEN },
+					["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
 				}),
 				q(72528, {	-- Revival Catalyst
 					["sourceQuests"] = { 72360 },	-- Reviving the Machine
@@ -1012,6 +1013,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ 58.5, 57.6, VALDRAKKEN },
 					},
 					["isWeekly"] = true,
+					["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
 					["g"] = {
 						currency(2166),	-- Revival Catalyst Account-Wide Currency
 					},

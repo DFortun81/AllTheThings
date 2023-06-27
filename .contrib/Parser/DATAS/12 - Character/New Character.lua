@@ -1412,11 +1412,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	}),
 }));
 
-root(ROOTS.Character, n(NEW_CHARACTER, {
+root(ROOTS.Character, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 	cl(EVOKER, {
-		q(74891),	-- triggered when using 'Soar' (in Iskaara)
+		q(74891),	-- Triggeres on the first use of 'Soar' spell after 10.0.7 to get the 'Aerial Halt' spell (spellID 403092)
 	}),
-}));
+})));
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
