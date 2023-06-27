@@ -142,7 +142,27 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190557, {	-- Sinister Fel Staff
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
 				}),
-				
+				--[[ August 2023
+					mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+						["timeline"] = {
+								"added 8.2.5.31958",
+							-- "removed 10.0.7.48999,"
+						},
+						["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
+						["races"] = ALLIANCE_ONLY,
+					}),
+					mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+						["timeline"] = {
+								"added 8.2.5.31958",
+							-- "removed 10.0.7.48999,"
+						},
+						["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
+						["races"] = HORDE_ONLY,
+					}),
+					i(37297),	-- Spirit of Competition
+					disco toy??
+					-- bones of the bloodhunter ensemble
+				--]]
 			}),
 		}),
 		n(UNAVAILABLE, {
