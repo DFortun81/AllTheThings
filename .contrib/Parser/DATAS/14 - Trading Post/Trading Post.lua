@@ -1065,4 +1065,81 @@ i(202174),	-- Wanderer's Carrot Scarf
 filter(MOUNTS, {
 	i(190169),	-- Quawks (MOUNT!)
 }),
+--------------------
+-- JULY 2023 --
+--------------------
+filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
+				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+					["timeline"] = { "added 10.1.0" },
+				}),
+				i(76755, {	-- Tyrael's Charger (MOUNT!)
+					["timeline"] = { "added 10.1.5" },
+				}),
+			})),
+			filter(BATTLE_PETS, {
+				i(49343, {	-- Spectral Tiger Cub (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+			}),
+			filter(COSMETIC, {
+				i(190562, {	-- Aldori War Mace
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(190146, {	-- Antoran Felspire
+					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				}),
+				i(190560, {	-- Conquest
+					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				}),
+				-- i(, {	-- Ensemble: Sylvan Stalker’s Leathers	-- spellID 367583
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				-- 	["g"] = {
+				-- Item Type: Head, Shoulder, Chest, Waist, Legs, Feet, Wrist, Hand
+				-- 	},
+				-- }),
+				-- i(, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				-- 	["g"] = {
+						i(190424),	-- Vagabond's Violet Cape
+						i(190425),	-- Vagabond's Violet Hood
+				-- 	},
+				-- }),
+				-- i(, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				-- 	["g"] = {
+						i(190423),	-- Wanderer's Violet Cloak
+						i(190426),	-- Wanderer's Violet Scarf
+				-- 	},
+				i(190097, {	-- Fabulously Flashy Finery
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190876, {	-- Filigreed Lion's Maw
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(190842, {	-- Fists of Polar Fury
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(190558, {	-- Helm of the Fierce
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190814, {	-- Mephistroth's Razor
+					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+				}),
+				i(190546, {	-- Polished Shortsword
+					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				}),
+				i(190545, {	-- Primeval Basher
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190543, {	-- Silvered Warcloak
+					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				}),
+				i(190557, {	-- Sinister Fel Staff
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				filter(MOUNTS, {
+				i(206156, {	-- Grotto Netherwing Drake (MOUNT!)
+					["timeline"] = { "added 10.1.0" },
+				}),
 --]]
