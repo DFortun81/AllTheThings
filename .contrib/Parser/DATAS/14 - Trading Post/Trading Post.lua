@@ -40,7 +40,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Travel Points in the month." }, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
-				i(190169),	-- Quawks (MOUNT!)
+				i(206156, {	-- Grotto Netherwing Drake (MOUNT!)
+					["timeline"] = { "added 10.1.0" },
+				}),
 			}),
 			filter(COSMETIC, {
 			}),
@@ -48,6 +50,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		n(UNAVAILABLE, {
 			filter(MOUNTS, {
 				i(190231),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
+				i(190169),	-- Quawks (MOUNT!)
 				i(190613),	-- Savage Green Battle Turtle (MOUNT!)
 			}),
 			filter(COSMETIC, {
@@ -70,74 +73,76 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(VENDORS, {
 		n(AVAILABLE, {
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
-				i(118515),	-- Cindermane Charger (MOUNT!)
-				i(206976, {	-- Royal Swarmer (MOUNT!)
-					["cost"] = { { "c", TRADERS_TENDER, 800 }, },
+				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+					["timeline"] = { "added 10.1.0" },
+				}),
+				i(76755, {	-- Tyrael's Charger (MOUNT!)
+					["timeline"] = { "added 10.1.5" },
 				}),
 			})),
 			filter(BATTLE_PETS, {
-				i(190604, {	-- Buzzworth (PET!)
-					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				i(49343, {	-- Spectral Tiger Cub (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
 			}),
 			filter(COSMETIC, {
-				i(190869, {	-- Emberstone Dress
-					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
-				}),
-				i(201230, {	-- Ensemble: Helarjar Berserker Warplate
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-					["g"] = {
-						i(190134),	-- Helarjar Berserker Warboots
-						i(190135),	-- Helarjar Berserker Gauntlets
-						i(190138),	-- Helarjar Berserker Horns
-						i(190139),	-- Helarjar Berserker Greaves
-						i(190550),	-- Helarjar Berserker Girdle
-						i(190551),	-- Helarjar Berserker Bracers
-						i(190553),	-- Helarjar Berserker Cuirass
-						i(190554),	-- Helarjar Berserker Pauldrons
-					},
-				}),
-				i(202178, {	-- Ensemble: Vagabond's Carrot Threads
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(202177),	-- Vagabond's Carrot Cape
-						i(202176),	-- Vagabond's Carrot Hood
-					},
-				}),
-				i(202179, {	-- Ensemble: Wanderer's Carrot Trappings
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(202175),	-- Wanderer's Carrot Cloak
-						i(202174),	-- Wanderer's Carrot Scarf
-					},
-				}),
-				i(190690, {	-- Flame-Forged Fel Fang
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-				}),
-				i(95474, {	-- Jewel of the Firelord
-					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(190696, {	-- Magister's Jeweled Drape
-					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
-				i(190443, {	-- Pustulent Demonheart Fetish
-					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
-				}),
-				i(190817, {	-- Sentinel's Tower Shield
-					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
-				}),
-				i(190433, {	-- Shifty Merchant's Tunic
-					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
-				i(190447, {	-- Soulburner Bardiche
-					["cost"] = { { "c", TRADERS_TENDER, 550 }, },
-				}),
-				i(190821, {	-- Sunspire Battle Staff
+				i(190562, {	-- Aldori War Mace
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
-				i(190431, {	-- Veteran Grunt's Chopper
+				i(190146, {	-- Antoran Felspire
+					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				}),
+				i(190560, {	-- Conquest
+					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				}),
+				-- i(, {	-- Ensemble: Sylvan Stalker’s Leathers	-- spellID 367583
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				-- 	["g"] = {
+				-- Item Type: Head, Shoulder, Chest, Waist, Legs, Feet, Wrist, Hand
+				-- 	},
+				-- }),
+				-- i(, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				-- 	["g"] = {
+						i(190424),	-- Vagabond's Violet Cape
+						i(190425),	-- Vagabond's Violet Hood
+				-- 	},
+				-- }),
+				-- i(, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				-- 	["g"] = {
+						i(190423),	-- Wanderer's Violet Cloak
+						i(190426),	-- Wanderer's Violet Scarf
+				-- 	},
+				i(190097, {	-- Fabulously Flashy Finery
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
+				i(190876, {	-- Filigreed Lion's Maw
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(190842, {	-- Fists of Polar Fury
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(190558, {	-- Helm of the Fierce
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190814, {	-- Mephistroth's Razor
+					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+				}),
+				i(190546, {	-- Polished Shortsword
+					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				}),
+				i(190545, {	-- Primeval Basher
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190543, {	-- Silvered Warcloak
+					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				}),
+				i(190557, {	-- Sinister Fel Staff
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				
 			}),
 		}),
 		n(UNAVAILABLE, {
@@ -149,8 +154,15 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(54811),	-- Celestial Steed (MOUNT!)
 				i(189978),	-- Magenta Cloud Serpent (MOUNT!)
+				i(118515),	-- Cindermane Charger (MOUNT!)
+				i(206976, {	-- Royal Swarmer (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 800 }, },
+				}),
 			})),
 			filter(BATTLE_PETS, {
+				i(190604, {	-- Buzzworth (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				}),
 				i(190603, {	-- Egbob (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
 				}),
@@ -182,6 +194,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(189882, {	-- Dread Admiral's Bicorne
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(190869, {	-- Emberstone Dress
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
 				}),
 				i(200909, {	-- Ensemble: Corrupted Runelord's Regalia
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
@@ -222,6 +237,19 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(189874),	-- Glorious Dragonrider's Wristguards
 					},
 				}),
+				i(201230, {	-- Ensemble: Helarjar Berserker Warplate
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+					["g"] = {
+						i(190134),	-- Helarjar Berserker Warboots
+						i(190135),	-- Helarjar Berserker Gauntlets
+						i(190138),	-- Helarjar Berserker Horns
+						i(190139),	-- Helarjar Berserker Greaves
+						i(190550),	-- Helarjar Berserker Girdle
+						i(190551),	-- Helarjar Berserker Bracers
+						i(190553),	-- Helarjar Berserker Cuirass
+						i(190554),	-- Helarjar Berserker Pauldrons
+					},
+				}),
 				i(201229, {	-- Ensemble: Kvaldir Scout Leathers
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 					["g"] = {
@@ -257,6 +285,13 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190827),	-- Vagabond's Crimson Cape
 						i(190828),	-- Vagabond's Crimson Hood
 				-- 	},
+				i(202178, {	-- Ensemble: Vagabond's Carrot Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(202177),	-- Vagabond's Carrot Cape
+						i(202176),	-- Vagabond's Carrot Hood
+					},
+				}),
 				i(190166, {	-- Ensemble: Vagabond's Midnight Threads
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
@@ -292,6 +327,13 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190089),	-- Gloves of the Honored Valarjar
 					},
 				}),
+				i(202179, {	-- Ensemble: Wanderer's Carrot Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(202175),	-- Wanderer's Carrot Cloak
+						i(202174),	-- Wanderer's Carrot Scarf
+					},
+				}),
 				i(190377, {	-- Ensemble: Wanderer's Midnight Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
@@ -313,23 +355,17 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190885),	-- Wanderer's Snowy Scarf
 					},
 				}),
-				i(190097, {	-- Fabulously Flashy Finery
-					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
 				i(190217, {	-- Fang of the Mountain
 					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
 				}),
 				i(190856, {	-- Fetid Bouquet
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
-				i(190876, {	-- Filigreed Lion's Maw
-					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
-				}),
 				i(190886, {	-- Fine White Evening Gloves
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
-				i(190842, {	-- Fists of Polar Fury
-					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				i(190690, {	-- Flame-Forged Fel Fang
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
 				}),
 				i(189896, {	-- Forsaken Cresset
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
@@ -364,11 +400,17 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190434, {	-- Iridescent Warcloak
 					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
 				}),
+				i(95474, {	-- Jewel of the Firelord
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
 				i(190153, {	-- Libram of Righteous Light
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
 				i(190215, {	-- Lost Crown of the Arcane
 					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+				}),
+				i(190696, {	-- Magister's Jeweled Drape
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
 				i(190439, {	-- Merciless Trapper's Staff
 					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
@@ -376,11 +418,26 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190599, {	-- Operative's Bandolier
 					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
 				}),
+				i(190443, {	-- Pustulent Demonheart Fetish
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				}),
 				i(190898, {	-- Red Pith Helmet
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
 				}),
 				i(190855, {	-- Rosy Corsage
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(190817, {	-- Sentinel's Tower Shield
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				}),
+				i(190433, {	-- Shifty Merchant's Tunic
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190447, {	-- Soulburner Bardiche
+					["cost"] = { { "c", TRADERS_TENDER, 550 }, },
+				}),
+				i(190821, {	-- Sunspire Battle Staff
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
 				i(190600, {	-- Shadowy Blademaster's Greatsword
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
@@ -411,6 +468,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190155, {	-- Trusty Treasure Trove
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(190431, {	-- Veteran Grunt's Chopper
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
 				i(189895, {	-- Watchman's Flare
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
@@ -453,12 +513,6 @@ root(ROOTS.NeverImplemented, {
 	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_10_0_5 }, }, {
 		n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
 			-- i(XXXXXX),	-- The Battlespoon (2H Staff)
-			i(206156, {	-- Grotto Netherwing Drake (MOUNT!)
-				["timeline"] = { "added 10.1.0" },
-			}),
-			i(76755, {	-- Tyrael's Charger (MOUNT!)
-				["timeline"] = { "added 10.1.5" },
-			}),
 		})),
 		n(VENDORS, {
 			filter(BATTLE_PETS, {
@@ -534,14 +588,6 @@ root(ROOTS.NeverImplemented, {
 						i(190572),	-- Vagabond's Azure Hood
 					},
 				}),
-				-- }),
-				-- i(, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
-				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				-- 	["g"] = {
-						i(190424),	-- Vagabond's Violet Cape
-						i(190425),	-- Vagabond's Violet Hood
-				-- 	},
-				-- }),
 				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
@@ -556,12 +602,6 @@ root(ROOTS.NeverImplemented, {
 						i(190826),	-- Wanderer's Crimson Scarf
 				-- 	},
 				-- }),
-				-- i(, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
-				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				-- 	["g"] = {
-						i(190423),	-- Wanderer's Violet Cloak
-						i(190426),	-- Wanderer's Violet Scarf
-				-- 	},
 				-- }),
 
 				-- Belt
@@ -578,17 +618,11 @@ root(ROOTS.NeverImplemented, {
 				i(190427, {	-- Scarlet Zealot's Cloak
 					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
 				}),
-				i(190543, {	-- Silvered Warcloak
-					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
-				}),
 
 
 				-- Gloves
 				-- Head
 				i(190216, {	-- Feathered Cowl of the Guardian
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
-				i(190558, {	-- Helm of the Fierce
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
 				i(190559, {	-- Helm of the Swift
@@ -600,25 +634,13 @@ root(ROOTS.NeverImplemented, {
 				i(190561, {	-- Crystalblade of Shifting Magic
 					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
 				}),
-				i(190546, {	-- Polished Shortsword
-					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
-				}),
-				i(190545, {	-- Primeval Basher
-					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
 
 				-- 2H Weapon
-				i(190562, {	-- Aldori War Mace
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-				}),
 				i(190560, {	-- Apocalypse
 					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
 				}),
 				i(190578, {	-- Headmaster's Command
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
-				}),
-				i(190557, {	-- Sinister Fel Staff
-					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
 				}),
 				i(190220, {	-- Standard of the Guardian
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },

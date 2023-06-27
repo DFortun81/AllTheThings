@@ -67,7 +67,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60581, {	-- Krik'thir the Gatewatcher
 						["_encounter"] = { 585, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45464),	-- Cowl of Icy Breaths
+							i(45874),	-- Signet of Winter
 						},
 					}),
 					crit(60579, {	-- Hadronox
