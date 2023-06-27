@@ -1412,6 +1412,12 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	}),
 }));
 
+root(ROOTS.Character, n(NEW_CHARACTER, {
+	cl(EVOKER, {
+		q(74891),	-- triggered when using 'Soar' (in Iskaara)
+	}),
+}));
+
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(NEW_CHARACTER, {

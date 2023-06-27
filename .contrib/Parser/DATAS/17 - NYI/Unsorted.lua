@@ -1397,7 +1397,6 @@ root(ROOTS.Unsorted, {
 				q(74763),	--
 				q(74774),	-- More Keys
 				q(74890),	--
-				q(74891),	--
 				-- 10.0.7.47983
 				q(75034),	--
 				q(75065),	-- Campaign Testing - Dummy Quest
