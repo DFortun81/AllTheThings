@@ -278,8 +278,6 @@ root(ROOTS.Unsorted, {
 			i(193412),	-- Primal-Infused Dragon Egg
 			i(200836),	-- Arcane-Infused Crystals
 			i(202247),	-- Curious Curio Goggles
-			i(202265),	-- Wheel of Whelpwhisper Brie
-			i(202266),	-- Bag of Spicy Pet Snacks
 			i(202270),	-- [DNT] Twice-Woven Rope
 			i(202312),	-- Juicy Mammoth Steak
 			i(202313),	-- Echolocator
@@ -290,7 +288,6 @@ root(ROOTS.Unsorted, {
 			i(202400),	-- Soothing Incense
 			i(202690),	-- Decorative Shrubbery
 			i(202697),	-- Crimson Cushion
-			i(203386),	-- Box of Leapmaize Crackers
 			i(203712),	-- Soft Peafowl Down
 			i(204000),	-- Storm-Infused Stone
 			i(204263),	-- Time Grime
