@@ -2459,6 +2459,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5788,	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					}},
 				}),
+				n(2836, {	-- Brikk Keencraft <Master Blacksmith>
+					["coord"] = { 29.0, 75.4, STRANGLETHORN_VALE },
+					-- #if BEFORE 2.1.0
+					["requireSkill"] = BLACKSMITHING,
+					["g"] = ARTISAN_BLACKSMITHING,
+					-- #endif
+				}),
 				n(734, {	-- Corporal Bluth <Camp Trader>
 					-- #if AFTER CATA
 					["coord"] = { 47.2, 10.2, NORTHERN_STRANGLETHORN },

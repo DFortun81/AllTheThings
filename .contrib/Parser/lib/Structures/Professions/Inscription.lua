@@ -245,3 +245,35 @@ SL_INSCRIPTION = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timelin
 		r(311689),	-- Soul Keeper's Spire
 	}),
 }));
+DF_INSCRIPTION = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	r(366251),	-- Dragon Isles Inscription
+	r(382981),	-- Dragon Isles Milling
+	r(383549),	-- Alchemist's Sturdy Mixing Rod
+	r(383563),	-- Blazing Fortune
+	r(383786),	-- Blazing Ink
+	r(383791),	-- Burnished Ink
+	r(383527),	-- Buzzing Rune
+	r(383551),	-- Chef's Smooth Rolling Pin
+	r(383531),	-- Chilled Rune
+	r(383525),	-- Chirping Rune
+	r(383539),	-- Core Explorer's Compendium
+	r(383790),	-- Cosmic Ink
+	r(383554),	-- Draconic Missive of the Aurora
+	r(383555),	-- Draconic Missive of the Feverflare
+	r(383556),	-- Draconic Missive of the Fireflash
+	r(383560),	-- Draconic Missive of the Harmonious
+	r(383561),	-- Draconic Missive of the Peerless
+	r(383562),	-- Draconic Missive of the Quickblade
+	r(384948),	-- Flourishing Fortune
+	r(383787),	-- Flourishing Ink
+	r(383529),	-- Howling Rune
+	r(383572),	-- Illusion Parchment: Spell Shield
+	r(383543),	-- Overseer's Writhebark Stave
+	r(383544),	-- Pioneer's Writhebark Stave
+	r(389193),	-- Recraft Equipment
+	r(383530),	-- Runed Writhebark
+	r(383547),	-- Scribe's Fastened Quill
+	r(384949),	-- Serene Fortune
+	r(383788),	-- Serene Ink
+	r(383546),	-- Vantus Rune: Vault of the Incarnates
+}));

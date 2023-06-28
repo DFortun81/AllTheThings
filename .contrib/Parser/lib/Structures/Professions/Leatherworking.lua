@@ -624,8 +624,8 @@ SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["time
 		r(309191),	-- Desolate Leather Cestus
 	}),
 }));
-DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
-	r(366239),	-- Dragon Isles Leatherworking
+DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	r(366249),	-- Dragon Isles Leatherworking
 	n(ARMOR, {
 		r(375103),	-- Pioneer's Leather Boots
 		r(375104),	-- Pioneer's Leather Wristguards
@@ -644,7 +644,7 @@ DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = 
 		r(395847),	-- Trailblazer's Toughened Legguards
 		r(395851),	-- Trailblazer's Toughened Spikes
 	}),
-	filter(PROF_EQUIP, {
+	filter(PROFESSION_EQUIPMENT, {
 		r(375188),	-- Alchemist's Hat
 		r(375182),	-- Durable Pack
 		r(375181),	-- Floral Basket
@@ -658,6 +658,8 @@ DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = 
 		r(375178),	-- Earthshine Scales
 		r(375168),	-- Feral Hide Drums
 		r(375179),	-- Frostbite Scales
+		r(409557, {["timeline"]={ADDED_10_1_0}}),	-- Hide-Bound Drums
+		r(409555, {["timeline"]={ADDED_10_1_0}}),	-- Lustrous Scaled Drums
 		r(375174),	-- Mireslush Hide
 		r(389195),	-- Recraft Equipment
 		r(375164),	-- Reinforced Armor Kit

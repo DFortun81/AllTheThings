@@ -28,6 +28,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 					["g"] = SL_INSCRIPTION,
 				}),
 			}),
+			prof(LEATHERWORKING, {
+				n(156669, {	-- Tanner Au'qil <Leatherworking Trainer>
+					["coord"] = { 42.6, 26.8, ORIBOS },
+					["g"] = SL_LEATHERWORKING,
+				}),
+			}),
 		}),
 	}),
 })));

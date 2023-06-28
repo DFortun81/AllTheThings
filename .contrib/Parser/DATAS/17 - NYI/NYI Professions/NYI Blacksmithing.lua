@@ -21,13 +21,13 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(WOTLK_TIER, {
 					-- 3.0.2
-					tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 3.0.2" } }, {
+					tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 						i(41741),	-- Cobalt Rod
 					})),
 				}),
 				tier(MOP_TIER, {
 					-- 5.0.4
-					tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { "created 5.0.4" } }, {
+					tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 						i(82918),	-- Lightsteel Belt
 						i(82917),	-- Lightsteel Boots
 						i(82913),	-- Lightsteel Breastplate
@@ -53,7 +53,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					})),
 
 					-- 5.2.0
-					tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { "created 5.2.0" } }, {
+					tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
 						i(93441),	-- Crafted Dreadful Gladiator's Barrier - UNUSED
 						i(93483),	-- Crafted Dreadful Gladiator's Redoubt
 						i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
@@ -61,7 +61,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(WOD_TIER, {
 					-- 6.0.2
-					tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 6.0.2" } }, {
+					tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 						i(108422),	-- Blackrock Crucible
 						i(108062),	-- Draenic Steel Bulwark
 						i(107968),	-- Draenic Steel Chestplate
@@ -175,7 +175,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(LEGION_TIER, {
 					-- 7.0.3
-					tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
+					tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 						i(124434),	-- Handmade Leystone Helm
 						i(124432),	-- Leystone Dome
 						i(124431),	-- Leystone Faceguard
@@ -185,7 +185,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(BFA_TIER, {
 					-- 8.0.1
-					tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+					tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 						i(159854),	-- Honorable Combatant's Battleaxe
 						i(159852),	-- Honorable Combatant's Hatchet
 						i(159856),	-- Honorable Combatant's Claymore
@@ -195,7 +195,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(SL_TIER, {
 					-- 9.0.1
-					tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
+					tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 						i(176925),	-- Bonegrafted Aegis
 						i(176906),	-- Bonegrafted Axe
 						i(171457),	-- Bonegrafted Armguards
@@ -314,8 +314,17 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(7987),	-- Plans: Ornate Mithril Helm
 				}),
 				tier(TBC_TIER, {
-					-- 2.4.3
-					tier(TBC_TIER, 4.3, bubbleDownSelf({ ["timeline"] = { "created 2.4.3" } }, {
+					-- 2.1.0
+					tier(TBC_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_0 } }, {
+						-- Without SpellID attached
+						i(35529),	-- Plans: Dawnsteel Bracers
+						i(35530),	-- Plans: Dawnsteel Shoulders
+						i(35531),	-- Plans: Swiftsteel Bracers
+						i(35532),	-- Plans: Swiftsteel Shoulders
+					})),
+
+					-- 2.4.0
+					tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
 						-- Without SpellID attached
 						i(35529),	-- Plans: Dawnsteel Bracers
 						i(35530),	-- Plans: Dawnsteel Shoulders
@@ -329,14 +338,14 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(WOTLK_TIER, {
 					-- 3.0.2
-					tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 3.0.2" } }, {
+					tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 						r(55730),	-- Cobalt Rod
 						r(50465),	-- Socket One-Handed Weapon
 					})),
 				}),
 				tier(CATA_TIER, {
 					-- 4.0.3
-					tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 4.0.3" } }, {
+					tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
 						r(85531),	-- Unknown
 						-- Without SpellID attached
 						i(66095),	-- Plans: Cold-Forged Shank
@@ -376,7 +385,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(MOP_TIER, {
 					-- 5.0.4
-					tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { "created 5.0.4" } }, {
+					tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 						r(126867),	-- Unknown
 						r(113263),	-- Unknown
 						r(126864),	-- Unknown
@@ -435,7 +444,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					})),
 					tier(WOD_TIER, {
 						-- 6.0.2
-						tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 6.0.2" } }, {
+						tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 							r(153631),	-- Draenic Steel Bulwark
 							r(153605),	-- Draenic Steel Chestplate
 							r(153629),	-- Draenic Steel Dagger
@@ -490,7 +499,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(LEGION_TIER, {
 					-- 7.0.3
-					tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
+					tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 						r(184345),	-- Handmade Leystone Helm
 						r(184342),	-- Leystone Dome
 						r(184341),	-- Leystone Faceguard
@@ -512,7 +521,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					})),
 
 					-- 7.3.0
-					tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
+					tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
 						-- Without SpellID attached
 						i(151711),	-- Plans: Empyrial Breastplate [Rank 1]
 						i(151709),	-- Plans: Felslate Anchor
@@ -520,7 +529,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(BFA_TIER, {
 					-- 8.0.1
-					tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+					tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 						r(253129),	-- 9.0 Blacksmithing - Modified Crafting Reagent 02
 						r(265939),	-- 9.0 Blacksmithing - Crafted Reagent 06
 						r(265938),	-- 9.0 Blacksmithing - Crafted Reagent 05
@@ -542,7 +551,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(SL_TIER, {
 					-- 9.0.1
-					tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
+					tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 						r(307649),	-- 9.0 Blacksmithing - Crafted Reagent 03
 						r(307650),	-- 9.0 Blacksmithing - Crafted Reagent 04
 						r(280659),	-- 9.0 Blacksmithing - Crafted Reagent 07

@@ -4,12 +4,10 @@ local app = select(2, ...);
 local L = app.L;
 
 DRAKE_MANUSCRIPTS = "观龙者手稿";
-TRACK_ACC_WIDE = "|cff00AB00追踪帐号通用|R";
-ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
+TRACK_ACC_WIDE = app.ccColors.Account.."追踪帐号通用|R";
+ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|R。";
 
 -- General Text
-	L.TITLE = "|cffb4b4ffALL THE THINGS|r";
-	L.AUCTION_TAB = "|cffb4b4ffATT|r";
 	L.DESCRIPTION = "“你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收藏者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。”";
 	L.THINGS_UNTIL = " 事物到 ";
 	L.THING_UNTIL = " 事物到 ";
@@ -261,31 +259,31 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 			L.MODE = "模式";
 			L.TITLE_COMPLETIONIST = "完美主义 ";
 			L.TITLE_UNIQUE_APPEARANCE = "独特外观 ";
-			L.TITLE_DEBUG = "调试 ";
-			L.TITLE_ACCOUNT = "|cff00AB00帐号|R ";
+			L.TITLE_DEBUG = app.ccColors.Warning .. "调试|R ";
+			L.TITLE_ACCOUNT = app.ccColors.Account.."帐号|R ";
 			L.TITLE_MAIN_ONLY = " （仅主要）";
 			L.TITLE_NONE_THINGS = "一无所有 ";
 			L.TITLE_ONLY = " 仅 ";
-			L.TITLE_INSANE = "|cffADD8E6疯狂|R ";
+			L.TITLE_INSANE = app.ccColors.Insane.."疯狂|R ";
 			L.TITLE_SOME_THINGS = "随随便便 ";
 			L.TITLE_LEVEL = "等级 ";
 			L.TITLE_SOLO = "个人 ";
 			L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 
-		L.GENERAL_LABEL = "通用";
+		--TODO: L.GENERAL_CONTENT = "General Content";
 		L.MERCH_BUTTON_LABEL = "商店";
 		L.TWITCH_BUTTON_TOOLTIP = "点击按钮复制 URL 到我的 Twitch 频道。\n\n可以在我直播的时候问问题，我会尽力回答！";
 		L.DISCORD_BUTTON_TOOLTIP = "点击按钮复制 URL 到All The Things Discord 服务器。\n\n可以与其他收藏家分享进步/挫折！";
 		L.PATREON_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things Patreon 页面。\n\n在这里您可以看到如何在经济上支持插件！";
 		L.MERCH_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things 商店。\n\n在这里您可以在经济上支持插件并获得一些很酷的商品作为回报！ ";
-		L.MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的内容汇总在这里。启用所有 |cffADD8E6彩色选项|cffFFFFFF 解锁 |cffADD8E6疯狂模式|cffFFFFFF。";
-		L.DEBUG_MODE = "|Cffff0000调试模式|r（显示所有）";
+		L.MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的内容汇总在这里。启用所有 "..app.ccColors.Insane.."彩色选项|cffFFFFFF 解锁 "..app.ccColors.Insane.."疯狂模式|cffFFFFFF。";	-- "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
+		L.DEBUG_MODE = app.ccColors.Warning.."调试模式|r（显示所有）";
 		L.DEBUG_MODE_TOOLTIP = "就字面意思…游戏中的所有事情。时间。点滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、试剂等也会出现在列表中。（甚至你自己！不，是真的。看。）\n\n这仅用于调试目的。不用于完成追踪。\n\n此模式绕过所有过滤，包括不可获得的。";
 		L.COMPLETIONIST_MODE = "+来源";
 		L.COMPLETIONIST_MODE_TOOLTIP = "启用该模式，只有当特定物品已被解锁为给定外观时才将物品视为已收藏。\n\n这意味着你需要收藏物品的每一个共享外观。\n\n注意：默认情况下一旦你收藏了共享来源，游戏就会停止告诉你未收藏的物品，这将确保未收藏的物品会被追踪。";
 		L.I_ONLY_CARE_ABOUT_MY_MAIN = "仅主要";
 		L.MAIN_ONLY_MODE_TOOLTIP = "如果你还想让 ATT *假装*你赢得了所有未被其他种族或职业锁定的共享外观，请启用此设置。\n\n例如，如果你从冰冠堡垒收藏了一个仅限猎人使用的物品，并且在没有职业/种族限制的情况下，有一个来自副本的共享外观，那么 ATT 将*假装*你也获得了该外观来源。\n\n注意：以这种方式解锁时，切换到其他种族/职业将错误地报告你已经获得了尚未为新角色收藏的外观来源。";
-		L.ACCOUNT_MODE = "|Cff00AB00帐号模式";
+		L.ACCOUNT_MODE = app.ccColors.Account.."帐号模式";
 		L.ACCOUNT_MODE_TOOLTIP = "如果要追踪所有角色的所有内容，而不考虑职业和种族筛选，请启用此设置。\n\n不可获得过滤仍然适用。";
 		L.FACTION_MODE = "仅当前阵营";
 		L.FACTION_MODE_TOOLTIP = "如果你想只看到你当前阵营的种族和职业的战网模式数据，请开启此设置。";
@@ -296,32 +294,31 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 		L.ACCOUNT_THINGS_LABEL = "帐号通用事物";
 		L.GENERAL_THINGS_LABEL = "通用事物";
 		L.EXPANSION_THINGS_LABEL = "资料片事物";
-		L.EXTRA_THINGS_LABEL = "额外事物";
+		--TODO: L.EXTRA_THINGS_LABEL = "Additional Resources";
 		L.STRANGER_THINGS_LABEL = "陌生事物";
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就。";
 		L.TMOG_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取。\n\n注意: 禁用此选项也会禁用所有采集逻辑，你可以使用此切换来防止在执行重要组内容时出现延迟，请牢记，重新启用后将需要进行计算。\n\n"..ACC_WIDE_DEFAULT;
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "启用此选项以追踪艾泽里特精华。\n\n默认情况下每个角色都会被追踪。";
 		L.BATTLE_PETS_CHECKBOX_TOOLTIP = "启用此选项可追踪战斗宠物和同伴。这些可以在开放的世界中找到，也可以通过各种地下城和团队中的boss掉落，以及从供应商和声望获取。\n\nACC_WIDE_DEFAULT";
-		L.FLIGHT_PATHS_CHECKBOX = "|cffADD8E6飞行路径 / 飞艇";
+		L.FLIGHT_PATHS_CHECKBOX = app.ccColors.Insane .. "飞行路径 & 飞艇";
 		L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "启用此选项以追踪飞行路径和飞艇。\n\n要收藏这些信息，请与每个大陆的飞行点/飞艇船长对话。\n\n注意：由于分阶段技术，你可能必须分阶段到区域的其他敌方，以获得这些兴趣点的开启。";
 		L.FOLLOWERS_CHECKBOX_TOOLTIP = "启用此选项可追踪随从。\n\n即：要塞随从，军团职业大厅随从，争霸艾泽拉斯随从，暗影国度随从。";
-		L.HEIRLOOMS_CHECKBOX_TOOLTIP = "启用此选项可追踪你是否已解锁传家宝及其各自的升级级别。\n\n具有相关外观的传家宝将通过外观过滤进行过滤。（关闭外观仍将显示传家宝本身）\n\n一些出现史诗品质的商品也有助于提升声望，可以通过声望过滤进行过滤。";
-		L.HEIRLOOMS_UPGRADES_CHECKBOX = "|cffADD8E6+升级";
+		L.HEIRLOOMS_CHECKBOX_TOOLTIP = "启用此选项可追踪你是否已解锁传家宝及其各自的升级级别。\n\n具有相关外观的传家宝将通过外观过滤进行过滤。（关闭外观仍将显示传家宝本身）\n\n一些出现史诗品质的商品也有助于提升声望，可以通过声望过滤进行过滤。\n\n"..ACC_WIDE_DEFAULT;
+		L.HEIRLOOMS_UPGRADES_CHECKBOX = app.ccColors.Insane .. "+升级";
 		L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "启用此选项可专门追踪单个传家宝升级的收藏情况。\n\n我们都知道暴雪就是喜欢消耗你的金币和灵魂，所以用这个切换来追踪你的金币。";
-		L.ILLUSIONS_CHECKBOX = "|cffADD8E6幻化";
+		L.ILLUSIONS_CHECKBOX = app.ccColors.Insane.."幻化";
 		L.ILLUSIONS_CHECKBOX_TOOLTIP = "启用此选项以追踪幻化。\n\n这些看起来很酷的幻化效果，你可以应用到你的武器上！\n\n注意：你不是一个幻象，尽管所有的夜之子都这么认为。\n\n"..ACC_WIDE_DEFAULT;
 		L.MOUNTS_CHECKBOX_TOOLTIP = "启用此选项以追踪坐骑。\n\n你可以骑着它们去比跑步更快的地方。谁知道！\n\n"..ACC_WIDE_DEFAULT;
-		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6乐谱/自拍滤镜";
+		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t " .. app.ccColors.Insane .. "乐谱&自拍滤镜";
 		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "启用此选项以追踪乐谱和自拍滤镜。\n\n你可以用你的点唱机播放游戏中的音乐并且你的自拍相机玩具为你的自拍收藏特定地点的滤镜。";
 		L.QUESTS_CHECKBOX_TOOLTIP = "启用此选项以追踪任务。\n\n你可以右键单击列表中的任何任务，弹出它们的完整任务链，以显示你的进度和任何先决条件或后续任务。\n\n注意：由于暴雪数据库中每日、每周、每年和世界任务的追踪方式的性质，任务不会被永久追踪。";
-		L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6已锁定任务";
+		L.QUESTS_LOCKED_CHECKBOX = app.ccColors.Insane .. "+已锁定";
 		L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "启用此选项可专门包括跟踪锁定任务的完成情况。\n\n锁定任务是指玩家无法再通过正常游戏完成的任务（根据已知的 ATT 数据）。\n\n获得这些任务非常依赖于小队同步功能或使用帐号通用内的任务来整合其他角色的进度。";
 		L.RECIPES_CHECKBOX_TOOLTIP = "启用此选项可追踪你的专业图纸。\n\n注意：你必须打开专业列表才能缓存这些。";
-		L.REPUTATIONS_CHECKBOX = "|cffADD8E6声望";
+		L.REPUTATIONS_CHECKBOX = app.ccColors.Insane .. "声望";
 		L.REPUTATIONS_CHECKBOX_TOOLTIP = "启用此选项可追踪声望。\n\n一旦你达到了有声望的尊敬或最好的朋友，它将被标记为收藏。\n\n你可能需要手动刷新才能正确更新。";
-		L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6符文铭刻之力";
+		L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t "..app.ccColors.Insane.."符文铭刻之力";
 		L.RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "启用此选项以追踪暗影国度的符文铭刻之力。";
-		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t |cffADD8E6"..DRAKE_MANUSCRIPTS;
 		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Enable this option to track "..EXPANSION_NAME9.." "..DRAKE_MANUSCRIPTS;	--TODO
 		L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "启用此选项来追踪暗影国度灵魂羁绊的导灵器。";
 		L.TITLES_CHECKBOX_TOOLTIP = "启用此选项可追踪头衔。\n\n这些可以让你的角色脱颖而出，看起来你已经玩了一段时间。通常只有新玩家没有称号。";
@@ -340,11 +337,13 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 		L.SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP = "如果要将可重复的每日，每周和每年任务视为可收藏，请启用此选项。它们将像常规的收藏任务一样出现在列表中。\n\n注意：这不是用来一直使用的，但如果你在一个你已经完成的区域内做了一组日常且需要提醒你那里有什么，你可以用这个来查看它们。";
 		L.FIRST_TIME_CHECKBOX = "仅第一次";
 		L.FIRST_TIME_CHECKBOX_TOOLTIP = "如果你希望将每天，每周，每年和世界范围内重复执行的任务视为已完成（至少完成一次），而忽略先前已重置的任务，则启用此选项。\n\n注意：先前完成的可重复任务仅在你通过插件激活完成任务的情况下存储，并且如果从 WTF 文件夹中删除了插件数据，则数据将丢失。";
-		L.FILTER_THINGS_BY_LEVEL_CHECKBOX = "|cffADD8E6无等级限制";
+		L.FILTER_THINGS_BY_LEVEL_CHECKBOX = app.ccColors.Insane.."无等级限制";
 		L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "如果只想查看当前级别角色可用的事物，请启用此设置。\n\n注意：这对新战网特别有用。";
-		L.SHOW_BOE_CHECKBOX = "|cffADD8E6装备绑定/拾取绑定物品";
+		L.SHOW_BOE_CHECKBOX = app.ccColors.Insane.."装备绑定/拾取绑定物品";
 		L.SHOW_BOE_CHECKBOX_TOOLTIP = "如果要隐藏装备绑定/拾取绑定物品，请启用此设置。\n\n当你尝试为角色完成经典旧世并且不想专门用于可以在小号或拍卖行上放置的物品时，此设置非常有用。\n\n即：不要因为毁灭之锤而扰乱你的思绪。";
 		L.SHOW_PVP_CHECKBOX_TOOLTIP = "如果你想隐藏任何'可能'需要在游戏中进行 PvP 互动的内容，请启用此设置。";
+		--TODO: L.SHOW_ALL_SEASONAL = app.ccColors.Insane .. "All Seasonal Events";
+		--TODO: L.SHOW_ALL_SEASONAL_TOOLTIP = "Enable this setting to show all seasonal events, instead of only currently active seasonal events.";
 		L.SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "如果您想在游戏中显示需要宠物对战的内容，请启用此设置。";
 		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略装备绑定/拾取绑定的筛选";
 		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略装备绑定/拾取绑定物品的装备、武器、种族、等级或职业要求，请启用此设置。\n\n如果你正试图通过拍卖行扫描收藏你的物品，此模式可能对你有用。";
@@ -381,20 +380,20 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 		L.ACCOUNT_WIDE_TITLES_TOOLTIP = TRACK_ACC_WIDE.."\n\n大多数头衔都是在账号通用内进行追踪，但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上。\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号，请切换此选项。";
 
 	-- Filters tab
-		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 |Cff00AB00帐号模式|cffFFFFFF。|r";
+		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 "..app.ccColors.Account.."帐号模式|cffFFFFFF。|r";
 		L.CLASS_DEFAULTS_BUTTON = "职业默认";
 		L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "点击此按钮可将所有过滤重置为职业默认。\n\n注意：只能打开可为职业收藏的过滤。";
 		L.ALL_BUTTON_TOOLTIP = "点击此按钮一次启用所有设备过滤。";
 		L.UNCHECK_ALL_BUTTON_TOOLTIP = "点击此按钮一次禁用所有设备过滤。";
-		L.CUSTOM_FILTERS_LABEL = "自动过滤";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 |Cff00AB00账号模式|cffFFFFFF。|r";
+		--TODO: L.CUSTOM_FILTERS_LABEL = "Automated Content";
+		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 "..app.ccColors.Account.."账号模式|cffFFFFFF。|r";
 		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 
 	-- Unobtainables tab
 		L.UNOBTAINABLES_TAB = "不可获得";
 		L.SEASONAL_LABEL = "节日";
 		L.SEASONAL_ALL = "|cffECBC21切换所有节日";
-		L.UNOBTAINABLE_LABEL = "无法获得";
+		--TODO: L.UNOBTAINABLE_LABEL = "Unobtainable Content";
 		L.UNOBTAINABLE_ALL = "|cffECBC21切换所有不可获得";
 		L.NO_CHANCE_ALL = "|cffECBC21切换所有 \"没有机会\"";
 		L.HIGH_CHANCE_ALL = "|cffECBC21切换所有 \"很大机会\"";
@@ -470,6 +469,12 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 		L.MINI_LIST_SLIDER_LABEL = "小列表缩放";
 		L.MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自定义所有小和小列表的缩放。\n\n默认：1';
 		L.ADDITIONAL_LABEL = "附加信息";
+		--TODO: L.WINDOW_COLORS = "Window Colors";
+		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color and opacity of all ATT windows.";
+		--TODO: L.BORDER_TOOLTIP = "Set the border color and opacity of all ATT windows.";
+		--TODO: L.RESET_TOOLTIP = "Reset the background and border of all ATT windows.";
+		--TODO: L.CLASS_BORDER = "Use Class Color For Border";
+		--TODO: L.CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 
 	-- Features tab
 		L.MINIMAP_LABEL = "小地图按钮";
@@ -500,8 +505,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 		L.QUEST_CHAIN_NESTED_CHECKBOX = "显示嵌套任务链";
 		L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP = "如果你想让任务链要求（右键单击任务）窗口将所需任务显示为其后续任务的子组，即它们必须从内到外完成，请启用此选项。\n\n这一点很有用，不会错过个别任务，应该主要用于完成任务的考虑。\n\n否则任务链要求将以自上而下的方式显示，最早的任务在最上面。";
 		L.CELEBRATIONS_LABEL = "庆祝和音效";
-		L.MASTER_AUDIO_CHECKBOX = "使用主音频通道";
-		L.MASTER_AUDIO_CHECKBOX_TOOLTIP = "如果你希望在主音频通道上播放庆祝和其他 ATT 音效请启用此选项。\n\n默认：是\n\n很多人在玩的时候都会关闭声音效果，所以这个选项可以让 ATT 的声音绕过它，如果需要的话。";
+		--TODO: L.AUDIO_CHANNEL = "Audio Channel";
 		L.CELEBRATE_COLLECTED_CHECKBOX = "收藏事物触发庆祝音效";
 		L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在获得新的事物时听到庆祝'fanfare'效果请启用这个选项。\n\n这个功能可以极大地帮助你保持动力。";
 		L.WARN_REMOVED_CHECKBOX = "移除事物触发警告";
@@ -512,7 +516,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFF或|R /things |cffFFFFFF或|R /allthethings\n|cffFFFFFF打开主列表。\n\n|R/att mini |cffFFFFFF或|R /attmini\n|cffFFFFFF打开小列表。\n\n|R/att bounty\n|cffFFFFFF打开被出错或未确认的物品列表。\n\n|R/att ra |cffFFFFFF或|R /attra\n|cffFFFFFF打开团队助手。\n\n|R/att wq |cffFFFFFF或|R /attwq\n|cffFFFFFF打开世界任务列表。\n\n|R/att item:1234 |cffFFFFFF或|R /att [物品链接]\n|cffFFFFFF打开一个共享外观的窗口。也适用于其他事物，例如|R quest:1234|cffFFFFFF，|Rnpcid:1234|cffFFFFFF，|Rmapid:1234|cffFFFFFF 或 |Rrecipeid:1234|cffFFFFFF。\n\n|R/att rwp\n|cffFFFFFF显示所有未来用补丁删除的东西。\n\n|R/att random |cffFFFFFF或|R /attrandom |cffFFFFFF或|R /attran\n|cffFFFFFF打开随机列表。\n\n|R/att unsorted\n|cffFFFFFF打开未知源物品列表。最好在调试模式下打开。\n\n|R/rl\n|cffFFFFFF重载魔兽界面。|R";
 
 	-- Profiles tab
-		L.PROFILES_TAB = "配置文件";
+		L.PROFILES_PAGE = "配置文件";
 		L.PROFILE = "配置文件";
 		L.PROFILE_INITIALIZE = "初始化配置文件";
 		L.PROFILE_INITIALIZE_TOOLTIP = "这将使您的 ATT 保存变量能够支持和包含配置文件数据。您当前的设置和窗口信息将被复制到 '"..DEFAULT.."' 配置文件中，该配置文件无法删除，但可以修改并使用作为所有角色的初始配置文件。\n\n请务必将配置文件的任何异常行为或错误报告给 ATT Discord！";
@@ -524,7 +528,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 		L.SHOW_PROFILE_LOADED = "显示在登录期间或在配置文件之间切换时加载的配置文件";
 
 	-- Sync tab
-		L.SYNC = "同步";
+		L.SYNC_PAGE = "同步";
 		L.ACCOUNT_SYNCHRONIZATION = "帐号同步";
 		L.AUTO_SYNC_ACC_DATA_CHECKBOX = "自动同步帐号数据";
 		L.AUTO_SYNC_ACC_DATA_TOOLTIP = "如果您希望 ATT 在登录或重新加载用户界面时尝试在帐号之间自动同步帐号数据，请启用此选项。";
@@ -545,7 +549,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪账号通用。";
 		L.CONFIRM_DELETE = "\n \n确定删除此项？";
 
 	-- About tab
-		L.ABOUT = "关于";
+		L.ABOUT_PAGE = "关于";
 		L.ABOUT_1 = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\n另外：查看 All The Things 经典旧世和燃烧的远征经典旧世！\n\n是的，我打算玩经典旧世魔兽哦，但是在全职工作和开发插件的两个版本之间，不会有很多时间用于团队。\n\n不，ATT 不是将图标放在包图标上的插件。那是 CanIMogIt 和 Caerdon Wardrobe！\n\n对于在线收藏比较，请查看 shoogen 的 DataForAzeroth.com！|r";
 		L.ABOUT_2 = "其他贡献者：|CFFFFFFFF（加入团队顺序）\nDaktar，Lucetia，Slumber，Gold，Avella，Aiue，Dead Serious，Oiche，Oxlotus，Eiltherune，Blueyleader，Iyanden，Pr3vention，BigBlaris，Talonzor，Mogwai，Heallie，Eckhardt，Boohyaka，Sadidorf，Sanctuari，Molkree，Runawaynow，Braghe，Myrhial，Darkal，Tag 和其他 ATT Discord 的人们！\n\n特别鸣谢 AmiYuy（CanIMogIt）和Caerdon（Caerdon Wardrobe）。|r  ";
 		L.ABOUT_3 = "\n|CFFFFFFFF你绝对应该下载他们的插件，以便在你的背包里的物品上获得收藏图标！|r";
@@ -728,7 +732,6 @@ for key,value in pairs({
 		[-851] = "黑暗帝国宝箱",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Shadowlands Header
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
-		[-921] = "圣所升级",											-- Sanctum Upgrades
 		[-924] = "传送网络",											-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "忠诚",											-- Loyalty
@@ -1116,6 +1119,7 @@ for key, value in pairs({
 	[175761] = "瘟疫之地的内战",	-- Civil War in the Plaguelands
 	[175762] = "巫妖王的胜利",	-- The Lich King Triumphant
 	[175763] = "古老的仇恨 - 卡利姆多的开拓",	-- Old Hatreds - The Colonization of Kalimdor
+	[175802] = "小箱子",	-- Small Lockbox	--TODO: This was taken from wotlk Wowhead
 	[175854] = "两个帝国",	-- The Twin Empires
 	[175855] = "帝国的陷落",	-- Empires' Fall
 	[175856] = "夺灵者的愤怒",	-- Wrath of Soulflayer
@@ -1172,6 +1176,7 @@ for key, value in pairs({
 	[178144] = "巨魔的箱子",	-- Troll Chest
 	[178195] = "战歌之油",	-- Warsong Oil
 	[178204] = "一箱战歌之斧",	-- Warsong Axe Shipment
+	--TODO: [178224] = "Dire Pool",	-- Dire Pool
 	[178227] = "穆戈特的图腾篮",	-- Murgut's Totem Basket
 	[178553] = "亚什虫茧",	-- Hive'Ashi Pod
 	[178609] = "节日大雪",	-- Holiday Snow

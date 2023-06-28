@@ -1243,7 +1243,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6357),	-- Sealed Crate
 			i(6352),	-- Waterlogged Crate
 		}),
-		filter(PROF_EQUIP, {	-- Fishing Poles
+		filter(PROFESSION_EQUIPMENT, {
 			i(6366, {	-- Darkwood Fishing Pole
 				["description"] = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",
 				["maps"] = {

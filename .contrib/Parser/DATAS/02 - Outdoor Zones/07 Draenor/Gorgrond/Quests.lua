@@ -1515,12 +1515,14 @@ root(ROOTS.Zones, {
 					["coord"] = { 52.8, 59.7, GORGROND },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(36494, {	-- News from Talador (H)
 					["provider"] = { "n", 74594 },	-- Durotan
 					["lvl"] = 94,
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["coords"] = {
 						{ 37.2, 77.0, GORGROND },
 						{ 41.4, 74.0, GORGROND },

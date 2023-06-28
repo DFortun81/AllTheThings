@@ -16,88 +16,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 			2198,	-- Dawn of the Infinite
 		},
 		["g"] = {
-			------------------------------------------
-			-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
-			----------------LG GOLD ------------------
-			------------------------------------------
-			-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
-			i(208064, {	-- Quantum Chestpiece
-
-			}),
-			i(208063, {	-- Quantum Gloves
-
-			}),
-			i(208061, {	-- Quantum Headpiece
-
-			}),
-			i(208065, {	-- Quantum Legs
-
-			}),
-			i(208062, {	-- Quantum Shoulders
-
-			}),
-			i(208216, {	-- Reins of the Quantum Courser
-				["sym"] = {{"select","itemID",
-					142236,	-- Midnight's Eternal Reins
-					45693,	-- Mimiron's Head
-				}},
-			}),
-			n(WEAPONS, {
-				i(208111, {	-- Quantum Axe
-
-				}),
-				i(29356, {	-- Quantum Blade
-
-				}),
-				i(208117, {	-- Quantum Bow
-
-				}),
-				i(208118, {	-- Quantum Crossbow
-
-				}),
-				i(208119, {	-- Quantum Firearm
-
-				}),
-				i(208125, {	-- Quantum Focus
-					i(78433),	-- Ledger of Revolting Rituals (DS Heroic)
-				}),
-				i(208112, {	-- Quantum Greatsword
-
-				}),
-				i(208113, {	-- Quantum Greataxe
-
-				}),
-				i(208114, {	-- Quantum Greathammer
-
-				}),
-				i(208120, {	-- Quantum Knife
-
-				}),
-				i(208121, {	-- Quantum Knuckles
-
-				}),
-				i(208110, {	-- Quantum Mace
-
-				}),
-				i(208116, {	-- Quantum Polearm
-
-				}),
-				i(208115, {	-- Quantum Staff
-
-				}),
-				i(208109, {	-- Quantum Sword
-
-				}),
-				i(208122, {	-- Quantum Warglaives
-
-				}),
-				i(208123, {	-- Quantum Wand
-
-				}),
-				i(208126, {	-- Quantum Shield
-
-				}),
-			}),
 			n(QUESTS, {
 				q(76140, {	-- Dawn of the Infinite
 					["provider"] = { "n", 187669 },	-- Nozdormu
@@ -114,6 +32,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["coord"] = { 52.3, 39.5, THALDRASZUS },
 					["g"] = {
 						i(206586),	-- Epoch Extractor
+						i(206269),	-- Time-Lost Essence
 					},
 				}),
 				q(76431),	-- Popped when Future Chromie and Chromie met
@@ -205,6 +124,49 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				-- 		i(208104),	-- Renewed Proto-Drake: Infinite Scales (DM!)
 				-- 		i(208105),	-- Windborne Velocidrake: Infinite Scales (DM!)
 				-- 		i(208106),	-- Winding Slitherdrake: Infinite Scales (DM!)
+				--[[	------------------------------------------
+						-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
+						----------------LG GOLD ------------------
+						------------------------------------------
+						-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
+						
+						-- Following items are possible:
+						-- World Drop Items with any quality till SL (You can get SL stuff)
+						-- Dungeon Items from Classic till BFA (so far confirmed)
+						-- Raid Items from Classic till BFA (so far confirmed)
+						i(208064),	-- Quantum Chestpiece
+						i(208063),	-- Quantum Gloves
+						i(208061),	-- Quantum Headpiece
+						i(208065),	-- Quantum Legs
+						i(208062),	-- Quantum Shoulders
+						i(208216, {	-- Reins of the Quantum Courser
+							["sym"] = {{"select","itemID",
+								142236,	-- Midnight's Eternal Reins
+								45693,	-- Mimiron's Head
+							}},
+						}),
+						n(WEAPONS, {
+							i(208111),-- Quantum Axe
+							i(29356),	-- Quantum Blade
+							i(208117),	-- Quantum Bow
+							i(208118),	-- Quantum Crossbow
+							i(208119),	-- Quantum Firearm
+							i(208125, {	-- Quantum Focus
+							--	i(78433),	-- Ledger of Revolting Rituals (DS Heroic)
+							}),
+							i(208112),	-- Quantum Greatsword
+							i(208113),	-- Quantum Greataxe
+							i(208114),	-- Quantum Greathammer
+							i(208120),	-- Quantum Knife
+							i(208121),	-- Quantum Knuckles
+							i(208110),	-- Quantum Mace
+							i(208116),	-- Quantum Polearm
+							i(208115),	-- Quantum Staff
+							i(208109),	-- Quantum Sword
+							i(208122),	-- Quantum Warglaives
+							i(208123),	-- Quantum Wand
+							i(208126),	-- Quantum Shield
+						}),--]]
 				-- 	},
 				-- }),
 			}),

@@ -676,7 +676,7 @@ SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline
 		r(309623),	-- Sinful Revelation
 	}),
 }));
-DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(366255),	-- Dragon Isles Enchanting
 	r(392888, {["collectible"] = false}),	-- Disenchant
 	cat(ARMOR_ENCHANTMENTS, {

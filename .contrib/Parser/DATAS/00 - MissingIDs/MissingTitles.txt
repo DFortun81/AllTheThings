@@ -7,3 +7,5 @@ title(510),	-- Whelptender %s
 title(513),	-- %s Unparalleled
 10.1.5.49908
 title(512),	-- %s The Inquisitve
+10.1.5.50130
+title(514),	-- %s of the Infinite

@@ -82,25 +82,30 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60604, { -- General Bjarngrim
 						["_encounter"] = { 597, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46347),	-- Cloak of the Dormant Blaze
+							i(46341),	-- Drape of the Spellweaver
 						},
 					}),
 					crit(60602, { -- Volkhan
 						["_encounter"] = { 598, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46342),	-- Golemheart Longbow
+							i(46343),	-- Fervor of the Protectorate
 						},
 					}),
 					crit(60603, { -- Ionar
 						["_encounter"] = { 599, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46344),	-- Iceshear Mantle
+							i(45677),	-- Treacherous Shoulderpads
 						},
 					}),
 					crit(60601, { -- Loken
 						["_encounter"] = { 600, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(45676),	-- Chestplate of Vicious Potency
+							i(46350),	-- Pillar of Fortitude
 						},
 					}),
 				})),

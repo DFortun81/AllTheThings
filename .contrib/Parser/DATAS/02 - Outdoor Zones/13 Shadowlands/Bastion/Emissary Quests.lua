@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(184399),	-- Larion Cub (PET!)
 						i(184396),	-- Malfunctioning Goliath Gauntlet (TOY!)
 						i(184435),	-- Mark of Purity (TOY!)
-						currency(1819, {	-- Medallion of Service
+						currency(MEDALLION_OF_SERVICE, {
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 						}),
 					}),

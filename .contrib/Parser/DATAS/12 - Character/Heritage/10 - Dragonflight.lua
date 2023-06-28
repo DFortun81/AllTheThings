@@ -52,6 +52,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72409 },	-- Rotten Old Memories
 					["provider"] = { "n", 9563 },	-- Ragged John
 					["coord"] = { 72.8, 64.8, BURNING_STEPPES },
+					["g"] = {
+						i(204063),	-- Windsor's Journal
+					},
 				}),
 				q(72426, {	-- The New Clessington Estate
 					["sourceQuests"] = { 72424 },	-- Looking for Something Specific

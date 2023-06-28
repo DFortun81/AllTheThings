@@ -378,7 +378,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 						cl(MAGE, {
 							i(202549),	-- Underlight Conjurer's Aurora
-							i(202548),	-- Underlight Conjurer's Charmbelt
 						}),
 						cl(MONK, {
 							i(202506),	-- Cover of the Vermillion Forge
@@ -389,14 +388,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202450),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph
 							i(202542),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
 							i(202495),	-- Lurking Specter's Shoulderblades
 						}),
 						cl(SHAMAN, {
-							i(202467),	-- Faulds of the Cinderwolf
 							i(202470),	-- Spangenhelm of the Cinderwolf
 							i(202468),	-- Thunderpads of the Cinderwolf
 						}),
@@ -405,7 +402,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202533),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible
 							i(202441),	-- Pauldrons of the Onyx Crucible
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
@@ -435,7 +431,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 						cl(MAGE, {
 							i(202549),	-- Underlight Conjurer's Aurora
-							i(202548),	-- Underlight Conjurer's Charmbelt
 						}),
 						cl(MONK, {
 							i(202506),	-- Cover of the Vermillion Forge
@@ -446,14 +441,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202450),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph
 							i(202542),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
 							i(202495),	-- Lurking Specter's Shoulderblades
 						}),
 						cl(SHAMAN, {
-							i(202467),	-- Faulds of the Cinderwolf
 							i(202470),	-- Spangenhelm of the Cinderwolf
 							i(202468),	-- Thunderpads of the Cinderwolf
 						}),
@@ -462,7 +455,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202533),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible
 							i(202441),	-- Pauldrons of the Onyx Crucible
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
@@ -492,7 +484,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 						cl(MAGE, {
 							i(202549),	-- Underlight Conjurer's Aurora
-							i(202548),	-- Underlight Conjurer's Charmbelt
 						}),
 						cl(MONK, {
 							i(202506),	-- Cover of the Vermillion Forge
@@ -503,14 +494,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202450),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph
 							i(202542),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
 							i(202495),	-- Lurking Specter's Shoulderblades
 						}),
 						cl(SHAMAN, {
-							i(202467),	-- Faulds of the Cinderwolf
 							i(202470),	-- Spangenhelm of the Cinderwolf
 							i(202468),	-- Thunderpads of the Cinderwolf
 						}),
@@ -519,7 +508,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202533),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible
 							i(202441),	-- Pauldrons of the Onyx Crucible
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
@@ -549,7 +537,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 						cl(MAGE, {
 							i(202549),	-- Underlight Conjurer's Aurora
-							i(202548),	-- Underlight Conjurer's Charmbelt
 						}),
 						cl(MONK, {
 							i(202506),	-- Cover of the Vermillion Forge
@@ -560,14 +547,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202450),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph
 							i(202542),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
 							i(202495),	-- Lurking Specter's Shoulderblades
 						}),
 						cl(SHAMAN, {
-							i(202467),	-- Faulds of the Cinderwolf
 							i(202470),	-- Spangenhelm of the Cinderwolf
 							i(202468),	-- Thunderpads of the Cinderwolf
 						}),
@@ -576,7 +561,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202533),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible
 							i(202441),	-- Pauldrons of the Onyx Crucible
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
@@ -606,7 +590,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 						cl(MAGE, {
 							i(202549),	-- Underlight Conjurer's Aurora
-							i(202548),	-- Underlight Conjurer's Charmbelt
 						}),
 						cl(MONK, {
 							i(202506),	-- Cover of the Vermillion Forge
@@ -617,14 +600,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202450),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph
 							i(202542),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
 							i(202495),	-- Lurking Specter's Shoulderblades
 						}),
 						cl(SHAMAN, {
-							i(202467),	-- Faulds of the Cinderwolf
 							i(202470),	-- Spangenhelm of the Cinderwolf
 							i(202468),	-- Thunderpads of the Cinderwolf
 						}),
@@ -633,7 +614,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202533),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible
 							i(202441),	-- Pauldrons of the Onyx Crucible
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
@@ -663,7 +643,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 						cl(MAGE, {
 							i(202549),	-- Underlight Conjurer's Aurora
-							i(202548),	-- Underlight Conjurer's Charmbelt
 						}),
 						cl(MONK, {
 							i(202506),	-- Cover of the Vermillion Forge
@@ -674,14 +653,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202450),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph
 							i(202542),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
 							i(202495),	-- Lurking Specter's Shoulderblades
 						}),
 						cl(SHAMAN, {
-							i(202467),	-- Faulds of the Cinderwolf
 							i(202470),	-- Spangenhelm of the Cinderwolf
 							i(202468),	-- Thunderpads of the Cinderwolf
 						}),
@@ -690,7 +667,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202533),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible
 							i(202441),	-- Pauldrons of the Onyx Crucible
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),

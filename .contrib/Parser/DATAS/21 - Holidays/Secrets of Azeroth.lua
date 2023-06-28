@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+--[[
 SECRETS_OF_AZEROTH_HEADER = createHeader({
 	readable = "Secrets of Azeroth",
 	constant = "SECRETS_OF_AZEROTH_HEADER",
@@ -38,3 +39,4 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 	}),
 }))));
+--]]

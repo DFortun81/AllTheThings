@@ -27444,12 +27444,12 @@ s(171361)/i(37292),	-- Guardian's Legguards \\ Ley-Guardian's Legguards
 s(171362)/i(37293),	-- of the Watcher \\ Mask of the Watcher
 s(171363)/i(37294),	-- n of Unbridled Magic \\ Crown of Unbridled Magic
 s(171364)/i(37295),	-- Cloth Spell Head4 \\ HF28 Cloth Spell Head4
-s(171365)/i(37296),	-- BT59 Cloth Spell Gloves4
+s(171365)/i(37296),	-- BT59 Cloth Spell Gloves4 \\ BT59 Cloth Spell Gloves4
 s(171366)/i(37308),	-- Monster - Sword2H, Northrend D03
 s(171367)/i(37309),	-- Monster - Special Arrow (Thori'dal)
 s(171368)/i(37310),	-- Monster - Mace, Stormhammer (Vengeful)
 s(171369)/i(37315),	-- BT59 Leather Physical Boots4
-s(171370)/i(37316),	-- Leather Physical Legs4 \\ HF28 Leather Physical Legs4
+s(171370)/i(37316),	-- Leather Physical Legs4 \\ HF28 Leather Physical Legs4 \\ HF28 Leather Physical Legs4
 s(171371)/i(37317),	-- BT56 Leather Healer Boots2
 s(171372)/i(37318),	-- BT55 Leather Physical Gloves4
 s(171373)/i(37319),	-- s of the Windswept Plains \\ Grips of the Windswept Plains
@@ -27540,8 +27540,8 @@ s(171457)/i(37443),	-- ed Magmoth Helm \\ Spiked Magmoth Helm
 s(171458)/i(37444),	-- keeper's Helm \\ Wavekeeper's Helm
 s(171459)/i(37446),	-- Commander's Treads \\ Tank Commander's Treads
 s(171460)/i(37447),	-- forced Mendicant's Cowl \\ Reinforced Mendicant's Cowl
-s(171461)/i(37448),	-- BT47 Mail Physical Legs3
-s(171462)/i(37450),	-- BT48 Mail Healer Chest3
+s(171461)/i(37448),	-- BT47 Mail Physical Legs3 \\ BT47 Mail Physical Legs3
+s(171462)/i(37450),	-- BT48 Mail Healer Chest3 \\ BT48 Mail Healer Chest3
 s(171463)/i(37451),	-- BT49 Mail Physical Belt3
 s(171464)/i(37453),	-- BT59 Mail Physical Belt4
 s(171465)/i(37454),	-- Mail Physical Chest4 \\ HF28 Mail Physical Chest4
@@ -27591,7 +27591,7 @@ s(171508)/i(37519),	-- rplate Headguard \\ Amberplate Headguard
 s(171509)/i(37520),	-- nkeeper Blockade \\ Plainkeeper Blockade
 s(171510)/i(37521),	-- hill Buckler \\ Icechill Buckler
 s(171511)/i(37522),	-- hborn Greaves \\ Earthborn Greaves
-s(171512)/i(37534),	-- BT56 Thrown2
+s(171512)/i(37534),	-- BT56 Thrown2 \\ BT56 Thrown2
 s(171513)/i(37535),	-- e of the Windborn \\ Stave of the Windborn
 s(171514)/i(37536),	-- BT57 Fast Mace2
 s(171515)/i(37537),	-- e of the Spiritcaller \\ Stave of the Spiritcaller
@@ -27838,9 +27838,9 @@ s(171755)/i(37968),	-- of Calcified Tears \\ Robe of Calcified Tears
 s(171756)/i(37969),	-- s Mender Cloak \\ Chaos Mender Cloak
 s(171757)/i(37970),	-- hers of the Dragon Wastes \\ Feathers of the Dragon Wastes
 s(171758)/i(37971),	-- of the Nibbling Plague \\ Sash of the Nibbling Plague
-s(171759)/i(37972),	-- DB49 Cloth Healer Feet2
+s(171759)/i(37972),	-- DB49 Cloth Healer Feet2 \\ DB49 Cloth Healer Feet2
 s(171760)/i(37973),	-- DB51 Cloth Spell Legs3
-s(171761)/i(37974),	-- DB52 Spell Cloak2
+s(171761)/i(37974),	-- DB52 Spell Cloak2 \\ DB52 Spell Cloak2
 s(171762)/i(37975),	-- DB53 Cloth Spell Shoulder3
 s(171763)/i(37977),	-- DB56 Cloth Healer Shoulder2
 s(171764)/i(37978),	-- DB57 Cloth Spell Chest3
@@ -27914,7 +27914,7 @@ s(171831)/i(38054),	-- giver Wristguards \\ Paingiver Wristguards
 s(171832)/i(38055),	-- ehunter Gauntlets \\ Ridgehunter Gauntlets
 s(171833)/i(38056),	-- ehunter Chestguard \\ Ridgehunter Chestguard
 s(171834)/i(38057),	-- nt-Proof Headguard \\ Rodent-Proof Headguard
-s(171835)/i(38058),	-- DB49 Mail Healer Legs2
+s(171835)/i(38058),	-- DB49 Mail Healer Legs2 \\ DB49 Mail Healer Legs2
 s(171836)/i(38060),	-- DB51 Mail Physical Legs3
 s(171837)/i(38061),	-- DB53 Mail Physical Waist3
 s(171838)/i(38062),	-- DB54 Mail Physical Feet3
@@ -27947,7 +27947,7 @@ s(171864)/i(38109),	-- thshimmer Legplates \\ Wraithshimmer Legplates
 s(171865)/i(38110),	-- lates of the Agmar Preserver \\ Legplates of the Agmar Preserver
 s(171866)/i(38111),	-- bane Wristguards \\ Wyrmbane Wristguards
 s(171867)/i(38112),	-- Covered Pauldrons \\ Bark Covered Pauldrons
-s(171868)/i(38113),	-- DB42 Plate Healer Glove2
+s(171868)/i(38113),	-- DB42 Plate Healer Glove2 \\ DB42 Plate Healer Glove2
 s(171869)/i(38114),	-- tplate of the Ruby Champion \\ Chestplate of the Ruby Champion
 s(171870)/i(38115),	-- tons of the Enforcer \\ Sabatons of the Enforcer
 s(171871)/i(38116),	-- ed Magnataur Leggings \\ Plated Magnataur Leggings
@@ -27970,7 +27970,7 @@ s(171887)/i(38132),	-- rest Garden Stave \\ Moonrest Garden Stave
 s(171888)/i(38133),	-- shattered Spire \\ Timeshattered Spire
 s(171889)/i(38134),	-- dtinged Spellblade \\ Bloodtinged Spellblade
 s(171890)/i(38135),	-- of the Fallen Raven Priest \\ Mace of the Fallen Raven Priest
-s(171891)/i(38136),	-- DB40 Spell Staff3
+s(171891)/i(38136),	-- DB40 Spell Staff3 \\ DB40 Spell Staff3
 s(171892)/i(38137),	-- rance of the Spell Warder \\ Endurance of the Spell Warder
 s(171893)/i(38138),	-- Keldonus' Missing Spellshard \\ onus' Missing Spellshard \\ Keldonus's Missing Spellshard
 s(171894)/i(38139),	-- DB50 Healer Mace3
@@ -27989,9 +27989,9 @@ s(171906)/i(38155),	-- tblade of the Ruby Ally \\ Shortblade of the Ruby Ally
 s(171907)/i(38156),	-- ered Magnataur Dualblade \\ Battered Magnataur Dualblade
 s(171908)/i(38157),	-- bow of the Ruby Rider \\ Longbow of the Ruby Rider
 s(171909)/i(38158),	-- DB20 Fast Sword
-s(171910)/i(38159),	-- DB20 Slow Right Fist
+s(171910)/i(38159),	-- DB20 Slow Right Fist \\ DB20 Slow Right Fist
 s(171911)/i(38166),	-- DB20 Gun
-s(171912)/i(38167),	-- DB21 Thrown
+s(171912)/i(38167),	-- DB21 Thrown \\ DB21 Thrown
 s(171913)/i(38168),	-- DB22 Hunter Bow2
 s(171914)/i(38169),	-- Woodland Shank \\ Keen Woodland Shank
 s(171915)/i(38170),	-- ed Coldwind Club \\ Spiked Coldwind Club
@@ -28008,7 +28008,7 @@ s(171925)/i(38181),	-- lade of the Forgotten Footman \\ Warblade of the Forgotte
 s(171926)/i(38182),	-- DB38 2H Sword2
 s(171927)/i(38183),	-- DB40 Fast Sword2
 s(171928)/i(38184),	-- DB40 Fast Dagger3
-s(171929)/i(38185),	-- DB40 Bow3
+s(171929)/i(38185),	-- DB40 Bow3 \\ DB40 Bow3
 s(171930)/i(38187),	-- tive Waraxe \\ Reactive Waraxe
 s(171931)/i(38188),	-- of the Undead Ravager \\ Claw of the Undead Ravager
 s(171932)/i(38189),	-- twister \\ Backtwister
@@ -28021,7 +28021,7 @@ s(171938)/i(38195),	-- ster's Bane \\ Magister's Bane
 s(171939)/i(38196),	-- dsmeared Brutalizer \\ Bloodsmeared Brutalizer
 s(171940)/i(38197),	-- ted Boneshredder \\ Mounted Boneshredder
 s(171941)/i(38198),	-- t-Severing Quickblade \\ Joint-Severing Quickblade
-s(171942)/i(38199),	-- DB50 Slow Sword3
+s(171942)/i(38199),	-- DB50 Slow Sword3 \\ DB50 Slow Sword3
 s(171943)/i(38200),	-- DB50 Crossbow3
 s(171944)/i(38201),	-- DB14 Spell Wand
 s(171945)/i(38202),	-- of Happy Reminders \\ Twig of Happy Reminders
@@ -28074,7 +28074,7 @@ s(171991)/i(38318),	-- moon Robe \\ Darkmoon Robe
 s(171992)/i(38322),	-- Iron-Bound Tome \\ -Bound Tome \\ Iron-bound Tome
 s(171993)/i(38353),	-- ure Bay Buccaneer's Cape \\ Venture Bay Buccaneer's Cape
 s(171994)/i(38354),	-- Stained Tarp \\ Oil-Stained Tarp
-s(171995)/i(38355),	-- k Goblin Back Protector \\ Thick Goblin Back Protector
+s(171995)/i(38355),	-- k Goblin Back Protector \\ Thick Goblin Back Protector \\ Thick Goblin Back Protector
 s(171996)/i(38356),	-- ure Battle Wand \\ Venture Battle Wand
 s(171997)/i(38357),	-- pened Throwing Gizmo \\ Sharpened Throwing Gizmo
 s(171998)/i(38387),	-- zled Hat \\ Grizzled Hat
@@ -28134,8 +28134,8 @@ s(172051)/i(38458),	-- spear Orb \\ Darkspear Orb
 s(172052)/i(38459),	-- of the Eastern Kingdoms \\ Orb of the Eastern Kingdoms
 s(172053)/i(38460),	-- ged Wand of the Cleft \\ Charged Wand of the Cleft
 s(172054)/i(38461),	-- ong Shanker \\ Warsong Shanker
-s(172055)/i(38462),	-- ong Stormshield \\ Warsong Stormshield
-s(172056)/i(38463),	-- aeron's Resolve \\ Lordaeron's Resolve
+s(172055)/i(38462),	-- ong Stormshield \\ Warsong Stormshield \\ Warsong Stormshield
+s(172056)/i(38463),	-- aeron's Resolve \\ Lordaeron's Resolve \\ Lordaeron's Resolve
 s(172057)/i(38464),	-- ish Magician's Quill \\ Gnomish Magician's Quill
 s(172058)/i(38465),	-- uard Soldier's Dagger \\ Vanguard Soldier's Dagger
 s(172059)/i(38468),	-- 'ak Peacebringer \\ Kalu'ak Peacebringer
@@ -28318,7 +28318,7 @@ s(172235)/i(39073),	-- of the Everlasting \\ Root of the Everlasting
 s(172236)/i(39074),	-- e of Distilled Hatred \\ Drape of Distilled Hatred
 s(172237)/i(39075),	-- alker's Girdle \\ Waywalker's Girdle
 s(172238)/i(39076),	-- m-Rider's Greaves \\ Golem-Rider's Greaves
-s(172239)/i(39077),	-- l-Reshaper's Helm \\ Skull-Reshaper's Helm
+s(172239)/i(39077),	-- l-Reshaper's Helm \\ Skull-Reshaper's Helm \\ Skull-Reshaper's Helm
 s(172240)/i(39078),	-- pering Stompers \\ Whispering Stompers
 s(172241)/i(39079),	-- ers of the Chaperon \\ Bracers of the Chaperon
 s(172242)/i(39080),	-- s of Flawed Temper \\ Grips of Flawed Temper
@@ -28830,7 +28830,7 @@ s(172747)/i(39808),	-- f of Diligence \\ Staff of Diligence
 s(172748)/i(39809),	-- als of Spying \\ Sandals of Spying
 s(172749)/i(39810),	-- s of Duplicity \\ Cords of Duplicity
 s(172750)/i(39812),	-- ed Trousers \\ Soiled Trousers
-s(172751)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH
+s(172751)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH \\ QR ZD25 Cloth Spell Glove2 - PH
 s(172752)/i(39814),	-- pers of the Broken Front \\ Slippers of the Broken Front
 s(172753)/i(39815),	-- dbinder's Links \\ Bloodbinder's Links
 s(172754)/i(39816),	-- c's Hood \\ Medic's Hood
@@ -28846,7 +28846,7 @@ s(172763)/i(39827),	-- Tome of Tenets \\ Vile Tome of Tenets
 s(172764)/i(39828),	-- sher's Cloak \\ Punisher's Cloak
 s(172765)/i(39829),	-- -Strung Bow \\ High-Strung Bow
 s(172766)/i(39830),	-- of Subtlety \\ Fist of Subtlety
-s(172767)/i(39832),	-- QR ZD26 Spell Offhand - PH
+s(172767)/i(39832),	-- QR ZD26 Spell Offhand - PH \\ QR ZD26 Spell Offhand - PH
 s(172768)/i(39833),	-- le Bloodbinder's Boots \\ Supple Bloodbinder's Boots
 s(172769)/i(39834),	-- ttled Jerkin \\ Embattled Jerkin
 s(172770)/i(39835),	-- le Bloodbinder's Helm \\ Supple Bloodbinder's Helm
@@ -28890,7 +28890,7 @@ s(172807)/i(39874),	-- ltrator's Shield \\ Infiltrator's Shield
 s(172808)/i(39875),	-- lderguards of Subterfuge \\ Shoulderguards of Subterfuge
 s(172809)/i(39876),	-- Abomination Tripe \\ Aged Abomination Tripe
 s(172810)/i(39877),	-- of the Betrayer \\ Belt of the Betrayer
-s(172811)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH
+s(172811)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH \\ QR ZD25 Leather Physical Shoulder2 - PH
 s(172812)/i(39880),	-- gested Mail Scraps \\ Redigested Mail Scraps
 s(172813)/i(39881),	-- le of Reanimation \\ Mantle of Reanimation
 s(172814)/i(39882),	-- ed Bone Helm \\ Carved Bone Helm
@@ -30900,7 +30900,7 @@ s(174817)/i(43460),	-- tmaim Girdle \\ Giantmaim Girdle
 s(174818)/i(43461),	-- nant's Breastplate \\ Revenant's Breastplate
 s(174819)/i(43469),	-- nant's Treads \\ Revenant's Treads
 s(174820)/i(43474),	-- Monster - Staff, Nexus D01
-s(174821)/i(43475),	-- s of the Chilling Revenant \\ Grips of the Chilling Revenant
+s(174821)/i(43475),	-- s of the Chilling Revenant \\ Grips of the Chilling Revenant \\ Grips of the Chilling Revenant
 s(174822)/i(43476),	-- lwoven Breastplate \\ Trollwoven Breastplate
 s(174823)/i(43477),	-- Monster - Polearm, Nexus D01
 s(174824)/i(43479),	-- Monster - Dagger, Nexus D03
@@ -31221,7 +31221,7 @@ s(175138)/i(44052),	-- mic Purification Rod \\ Totemic Purification Rod
 s(175139)/i(44053),	-- e-Stick Harpoon \\ Whale-Stick Harpoon
 s(175140)/i(44054),	-- e-Skin Breastplate \\ Whale-Skin Breastplate
 s(175141)/i(44055),	-- e-Skin Vest \\ Whale-Skin Vest
-s(175142)/i(44056),	-- Monster - Axe, 1H Nexus D01
+s(175142)/i(44056),	-- Monster - Axe, 1H Nexus D01 \\ Monster - Axe, 1H Nexus D01
 s(175143)/i(44057),	-- y-Reinforced Chestguard \\ Ivory-Reinforced Chestguard
 s(175144)/i(44058),	-- ebone Carapace \\ Whalebone Carapace
 s(175145)/i(44059),	-- lefish Scale Breastplate \\ Cuttlefish Scale Breastplate
@@ -33802,196 +33802,196 @@ s(177719)/i(48713),	-- ar's Edge \\ Lothar's Edge
 s(177720)/i(48714),	-- r of the Fallen \\ Honor of the Fallen
 s(177721)/i(48716),	-- rable Mass of McGowan \\ Venerable Mass of McGowan
 s(177722)/i(48718),	-- rposed Lava Dredger \\ Repurposed Lava Dredger
-s(177723)/i(48725),	-- gar's Gauntlets \\ Khadgar's Gauntlets
-s(177724)/i(48726),	-- gar's Hood \\ Khadgar's Hood
-s(177725)/i(48727),	-- gar's Leggings \\ Khadgar's Leggings
-s(177726)/i(48728),	-- gar's Robe \\ Khadgar's Robe
-s(177727)/i(48729),	-- gar's Shoulderpads \\ Khadgar's Shoulderpads
-s(177728)/i(48730),	-- trider's Gauntlets \\ Sunstrider's Gauntlets
-s(177729)/i(48731),	-- trider's Hood \\ Sunstrider's Hood
-s(177730)/i(48732),	-- trider's Leggings \\ Sunstrider's Leggings
-s(177731)/i(48733),	-- trider's Robe \\ Sunstrider's Robe
-s(177732)/i(48734),	-- trider's Shoulderpads \\ Sunstrider's Shoulderpads
-s(177733)/i(48735),	-- dan's Gloves \\ Gul'dan's Gloves
-s(177734)/i(48736),	-- dan's Hood \\ Gul'dan's Hood
-s(177735)/i(48737),	-- dan's Leggings \\ Gul'dan's Leggings
-s(177736)/i(48738),	-- dan's Robe \\ Gul'dan's Robe
-s(177737)/i(48739),	-- dan's Shoulderpads \\ Gul'dan's Shoulderpads
-s(177738)/i(48740),	-- Thuzad's Gloves \\ Kel'Thuzad's Gloves
-s(177739)/i(48741),	-- Thuzad's Hood \\ Kel'Thuzad's Hood
-s(177740)/i(48742),	-- Thuzad's Leggings \\ Kel'Thuzad's Leggings
-s(177741)/i(48743),	-- Thuzad's Robe \\ Kel'Thuzad's Robe
-s(177742)/i(48744),	-- Thuzad's Shoulderpads \\ Kel'Thuzad's Shoulderpads
-s(177743)/i(48745),	-- n's Cowl \\ Velen's Cowl
-s(177744)/i(48746),	-- n's Gloves \\ Velen's Gloves
-s(177745)/i(48747),	-- n's Leggings \\ Velen's Leggings
-s(177746)/i(48748),	-- n's Robe \\ Velen's Robe
-s(177747)/i(48749),	-- n's Shoulderpads \\ Velen's Shoulderpads
-s(177748)/i(48750),	-- a's Cowl \\ Zabra's Cowl
-s(177749)/i(48751),	-- a's Gloves \\ Zabra's Gloves
-s(177750)/i(48752),	-- a's Leggings \\ Zabra's Leggings
-s(177751)/i(48753),	-- a's Robe \\ Zabra's Robe
-s(177752)/i(48754),	-- a's Shoulderpads \\ Zabra's Shoulderpads
-s(177753)/i(48755),	-- n's Circlet \\ Velen's Circlet
-s(177754)/i(48756),	-- n's Handwraps \\ Velen's Handwraps
-s(177755)/i(48757),	-- n's Mantle \\ Velen's Mantle
-s(177756)/i(48758),	-- n's Pants \\ Velen's Pants
-s(177757)/i(48759),	-- n's Raiments \\ Velen's Raiments
-s(177758)/i(48760),	-- a's Circlet \\ Zabra's Circlet
-s(177759)/i(48761),	-- a's Handwraps \\ Zabra's Handwraps
-s(177760)/i(48762),	-- a's Mantle \\ Zabra's Mantle
-s(177761)/i(48763),	-- a's Pants \\ Zabra's Pants
-s(177762)/i(48764),	-- a's Raiments \\ Zabra's Raiments
-s(177763)/i(48769),	-- totem's Handguards \\ Runetotem's Handguards
-s(177764)/i(48770),	-- totem's Headpiece \\ Runetotem's Headpiece
-s(177765)/i(48771),	-- totem's Leggings \\ Runetotem's Leggings
-s(177766)/i(48772),	-- totem's Robe \\ Runetotem's Robe
-s(177767)/i(48773),	-- totem's Spaulders \\ Runetotem's Spaulders
-s(177768)/i(48774),	-- urion's Handguards \\ Malfurion's Handguards
-s(177769)/i(48775),	-- urion's Headpiece \\ Malfurion's Headpiece
-s(177770)/i(48776),	-- urion's Leggings \\ Malfurion's Leggings
-s(177771)/i(48777),	-- urion's Robe \\ Malfurion's Robe
-s(177772)/i(48778),	-- urion's Spaulders \\ Malfurion's Spaulders
-s(177773)/i(48781),	-- totem's Cover \\ Runetotem's Cover
-s(177774)/i(48782),	-- totem's Gloves \\ Runetotem's Gloves
-s(177775)/i(48783),	-- totem's Mantle \\ Runetotem's Mantle
-s(177776)/i(48784),	-- totem's Trousers \\ Runetotem's Trousers
-s(177777)/i(48785),	-- totem's Vestments \\ Runetotem's Vestments
-s(177778)/i(48786),	-- urion's Cover \\ Malfurion's Cover
-s(177779)/i(48787),	-- urion's Gloves \\ Malfurion's Gloves
-s(177780)/i(48788),	-- urion's Mantle \\ Malfurion's Mantle
-s(177781)/i(48789),	-- urion's Trousers \\ Malfurion's Trousers
-s(177782)/i(48790),	-- urion's Vestments \\ Malfurion's Vestments
-s(177783)/i(48794),	-- totem's Handgrips \\ Runetotem's Handgrips
-s(177784)/i(48795),	-- totem's Headguard \\ Runetotem's Headguard
-s(177785)/i(48796),	-- totem's Legguards \\ Runetotem's Legguards
-s(177786)/i(48797),	-- totem's Raiments \\ Runetotem's Raiments
-s(177787)/i(48798),	-- totem's Shoulderpads \\ Runetotem's Shoulderpads
-s(177788)/i(48799),	-- urion's Handgrips \\ Malfurion's Handgrips
-s(177789)/i(48800),	-- urion's Headguard \\ Malfurion's Headguard
-s(177790)/i(48801),	-- urion's Legguards \\ Malfurion's Legguards
-s(177791)/i(48802),	-- urion's Raiments \\ Malfurion's Raiments
-s(177792)/i(48803),	-- urion's Shoulderpads \\ Malfurion's Shoulderpads
-s(177793)/i(48804),	-- na's Breastplate \\ Garona's Breastplate
-s(177794)/i(48805),	-- na's Gauntlets \\ Garona's Gauntlets
-s(177795)/i(48806),	-- na's Helmet \\ Garona's Helmet
-s(177796)/i(48807),	-- na's Legplates \\ Garona's Legplates
-s(177797)/i(48808),	-- na's Pauldrons \\ Garona's Pauldrons
-s(177798)/i(48809),	-- leef's Breastplate \\ VanCleef's Breastplate
-s(177799)/i(48810),	-- leef's Gauntlets \\ VanCleef's Gauntlets
-s(177800)/i(48811),	-- leef's Helmet \\ VanCleef's Helmet
-s(177801)/i(48812),	-- leef's Legplates \\ VanCleef's Legplates
-s(177802)/i(48813),	-- leef's Pauldrons \\ VanCleef's Pauldrons
-s(177803)/i(48814),	-- runner's Handguards \\ Windrunner's Handguards
-s(177804)/i(48815),	-- runner's Headpiece \\ Windrunner's Headpiece
-s(177805)/i(48816),	-- runner's Legguards \\ Windrunner's Legguards
-s(177806)/i(48817),	-- runner's Spaulders \\ Windrunner's Spaulders
-s(177807)/i(48818),	-- runner's Tunic \\ Windrunner's Tunic
-s(177808)/i(48819),	-- runner's Handguards \\ Windrunner's Handguards
-s(177809)/i(48820),	-- runner's Headpiece \\ Windrunner's Headpiece
-s(177810)/i(48821),	-- runner's Legguards \\ Windrunner's Legguards
-s(177811)/i(48822),	-- runner's Spaulders \\ Windrunner's Spaulders
-s(177812)/i(48823),	-- runner's Tunic \\ Windrunner's Tunic
-s(177813)/i(48824),	-- ndo's Handguards \\ Nobundo's Handguards
-s(177814)/i(48825),	-- ndo's Headpiece \\ Nobundo's Headpiece
-s(177815)/i(48826),	-- ndo's Legguards \\ Nobundo's Legguards
-s(177816)/i(48827),	-- ndo's Spaulders \\ Nobundo's Spaulders
-s(177817)/i(48828),	-- ndo's Tunic \\ Nobundo's Tunic
-s(177818)/i(48829),	-- ll's Handguards \\ Thrall's Handguards
-s(177819)/i(48830),	-- ll's Headpiece \\ Thrall's Headpiece
-s(177820)/i(48831),	-- ll's Legguards \\ Thrall's Legguards
-s(177821)/i(48832),	-- ll's Spaulders \\ Thrall's Spaulders
-s(177822)/i(48833),	-- ll's Tunic \\ Thrall's Tunic
-s(177823)/i(48836),	-- ndo's Gloves \\ Nobundo's Gloves
-s(177824)/i(48837),	-- ndo's Hauberk \\ Nobundo's Hauberk
-s(177825)/i(48838),	-- ndo's Helm \\ Nobundo's Helm
-s(177826)/i(48839),	-- ndo's Kilt \\ Nobundo's Kilt
-s(177827)/i(48840),	-- ndo's Shoulderpads \\ Nobundo's Shoulderpads
-s(177828)/i(48841),	-- ll's Gloves \\ Thrall's Gloves
-s(177829)/i(48842),	-- ll's Hauberk \\ Thrall's Hauberk
-s(177830)/i(48843),	-- ll's Helm \\ Thrall's Helm
-s(177831)/i(48844),	-- ll's Kilt \\ Thrall's Kilt
-s(177832)/i(48845),	-- ll's Shoulderpads \\ Thrall's Shoulderpads
-s(177833)/i(48846),	-- ndo's Chestguard \\ Nobundo's Chestguard
-s(177834)/i(48847),	-- ndo's Faceguard \\ Nobundo's Faceguard
-s(177835)/i(48848),	-- ndo's Grips \\ Nobundo's Grips
-s(177836)/i(48849),	-- ndo's Shoulderguards \\ Nobundo's Shoulderguards
-s(177837)/i(48850),	-- ndo's War-Kilt \\ Nobundo's War-Kilt
-s(177838)/i(48851),	-- ll's Chestguard \\ Thrall's Chestguard
-s(177839)/i(48852),	-- ll's Faceguard \\ Thrall's Faceguard
-s(177840)/i(48853),	-- ll's Grips \\ Thrall's Grips
-s(177841)/i(48854),	-- ll's Shoulderguards \\ Thrall's Shoulderguards
-s(177842)/i(48855),	-- ll's War-Kilt \\ Thrall's War-Kilt
-s(177843)/i(48860),	-- scream's Battleplate \\ Hellscream's Battleplate
-s(177844)/i(48861),	-- scream's Gauntlets \\ Hellscream's Gauntlets
-s(177845)/i(48862),	-- scream's Helmet \\ Hellscream's Helmet
-s(177846)/i(48863),	-- scream's Legplates \\ Hellscream's Legplates
-s(177847)/i(48864),	-- scream's Shoulderplates \\ Hellscream's Shoulderplates
-s(177848)/i(48865),	-- n's Battleplate \\ Wrynn's Battleplate
-s(177849)/i(48866),	-- n's Gauntlets \\ Wrynn's Gauntlets
-s(177850)/i(48867),	-- n's Helmet \\ Wrynn's Helmet
-s(177851)/i(48868),	-- n's Legplates \\ Wrynn's Legplates
-s(177852)/i(48869),	-- n's Shoulderplates \\ Wrynn's Shoulderplates
-s(177853)/i(48870),	-- scream's Breastplate \\ Hellscream's Breastplate
-s(177854)/i(48871),	-- scream's Greathelm \\ Hellscream's Greathelm
-s(177855)/i(48872),	-- scream's Handguards \\ Hellscream's Handguards
-s(177856)/i(48873),	-- scream's Legguards \\ Hellscream's Legguards
-s(177857)/i(48874),	-- scream's Pauldrons \\ Hellscream's Pauldrons
-s(177858)/i(48875),	-- n's Breastplate \\ Wrynn's Breastplate
-s(177859)/i(48876),	-- n's Greathelm \\ Wrynn's Greathelm
-s(177860)/i(48877),	-- n's Handguards \\ Wrynn's Handguards
-s(177861)/i(48878),	-- n's Legguards \\ Wrynn's Legguards
-s(177862)/i(48879),	-- n's Pauldrons \\ Wrynn's Pauldrons
-s(177863)/i(48880),	-- ira's Battleplate \\ Koltira's Battleplate
-s(177864)/i(48881),	-- ira's Gauntlets \\ Koltira's Gauntlets
-s(177865)/i(48882),	-- ira's Helmet \\ Koltira's Helmet
-s(177866)/i(48883),	-- ira's Legplates \\ Koltira's Legplates
-s(177867)/i(48884),	-- ira's Shoulderplates \\ Koltira's Shoulderplates
-s(177868)/i(48885),	-- sarian's Battleplate \\ Thassarian's Battleplate
-s(177869)/i(48886),	-- sarian's Gauntlets \\ Thassarian's Gauntlets
-s(177870)/i(48887),	-- sarian's Helmet \\ Thassarian's Helmet
-s(177871)/i(48888),	-- sarian's Legplates \\ Thassarian's Legplates
-s(177872)/i(48889),	-- sarian's Shoulderplates \\ Thassarian's Shoulderplates
-s(177873)/i(48890),	-- ira's Chestguard \\ Koltira's Chestguard
-s(177874)/i(48891),	-- ira's Faceguard \\ Koltira's Faceguard
-s(177875)/i(48892),	-- ira's Handguards \\ Koltira's Handguards
-s(177876)/i(48893),	-- ira's Legguards \\ Koltira's Legguards
-s(177877)/i(48894),	-- ira's Pauldrons \\ Koltira's Pauldrons
-s(177878)/i(48895),	-- sarian's Chestguard \\ Thassarian's Chestguard
-s(177879)/i(48896),	-- sarian's Faceguard \\ Thassarian's Faceguard
-s(177880)/i(48897),	-- sarian's Handguards \\ Thassarian's Handguards
-s(177881)/i(48898),	-- sarian's Legguards \\ Thassarian's Legguards
-s(177882)/i(48899),	-- sarian's Pauldrons \\ Thassarian's Pauldrons
-s(177883)/i(48900),	-- lyon's Tunic \\ Turalyon's Tunic
-s(177884)/i(48901),	-- lyon's Spaulders \\ Turalyon's Spaulders
-s(177885)/i(48902),	-- lyon's Headpiece \\ Turalyon's Headpiece
-s(177886)/i(48903),	-- lyon's Greaves \\ Turalyon's Greaves
-s(177887)/i(48904),	-- lyon's Gloves \\ Turalyon's Gloves
-s(177888)/i(48905),	-- rin's Tunic \\ Liadrin's Tunic
-s(177889)/i(48906),	-- rin's Spaulders \\ Liadrin's Spaulders
-s(177890)/i(48907),	-- rin's Headpiece \\ Liadrin's Headpiece
-s(177891)/i(48908),	-- rin's Greaves \\ Liadrin's Greaves
-s(177892)/i(48909),	-- rin's Gloves \\ Liadrin's Gloves
-s(177893)/i(48910),	-- rin's Battleplate \\ Liadrin's Battleplate
-s(177894)/i(48911),	-- rin's Gauntlets \\ Liadrin's Gauntlets
-s(177895)/i(48912),	-- rin's Helm \\ Liadrin's Helm
-s(177896)/i(48913),	-- rin's Legplates \\ Liadrin's Legplates
-s(177897)/i(48914),	-- rin's Shoulderplates \\ Liadrin's Shoulderplates
-s(177898)/i(48915),	-- lyon's Battleplate \\ Turalyon's Battleplate
-s(177899)/i(48916),	-- lyon's Gauntlets \\ Turalyon's Gauntlets
-s(177900)/i(48917),	-- lyon's Helm \\ Turalyon's Helm
-s(177901)/i(48918),	-- lyon's Legplates \\ Turalyon's Legplates
-s(177902)/i(48919),	-- lyon's Shoulderplates \\ Turalyon's Shoulderplates
-s(177903)/i(48922),	-- rin's Breastplate \\ Liadrin's Breastplate
-s(177904)/i(48923),	-- rin's Faceguard \\ Liadrin's Faceguard
-s(177905)/i(48924),	-- rin's Handguards \\ Liadrin's Handguards
-s(177906)/i(48925),	-- rin's Legguards \\ Liadrin's Legguards
-s(177907)/i(48926),	-- rin's Shoulderguards \\ Liadrin's Shoulderguards
-s(177908)/i(48927),	-- lyon's Breastplate \\ Turalyon's Breastplate
-s(177909)/i(48928),	-- lyon's Faceguard \\ Turalyon's Faceguard
-s(177910)/i(48929),	-- lyon's Handguards \\ Turalyon's Handguards
-s(177911)/i(48930),	-- lyon's Legguards \\ Turalyon's Legguards
-s(177912)/i(48931),	-- lyon's Shoulderguards \\ Turalyon's Shoulderguards
+s(177723)/i(48725),	-- gar's Gauntlets \\ Khadgar's Gauntlets \\ Khadgar's Gauntlets
+s(177724)/i(48726),	-- gar's Hood \\ Khadgar's Hood \\ Khadgar's Hood
+s(177725)/i(48727),	-- gar's Leggings \\ Khadgar's Leggings \\ Khadgar's Leggings
+s(177726)/i(48728),	-- gar's Robe \\ Khadgar's Robe \\ Khadgar's Robe
+s(177727)/i(48729),	-- gar's Shoulderpads \\ Khadgar's Shoulderpads \\ Khadgar's Shoulderpads
+s(177728)/i(48730),	-- trider's Gauntlets \\ Sunstrider's Gauntlets \\ Sunstrider's Gauntlets
+s(177729)/i(48731),	-- trider's Hood \\ Sunstrider's Hood \\ Sunstrider's Hood
+s(177730)/i(48732),	-- trider's Leggings \\ Sunstrider's Leggings \\ Sunstrider's Leggings
+s(177731)/i(48733),	-- trider's Robe \\ Sunstrider's Robe \\ Sunstrider's Robe
+s(177732)/i(48734),	-- trider's Shoulderpads \\ Sunstrider's Shoulderpads \\ Sunstrider's Shoulderpads
+s(177733)/i(48735),	-- dan's Gloves \\ Gul'dan's Gloves \\ Gul'dan's Gloves
+s(177734)/i(48736),	-- dan's Hood \\ Gul'dan's Hood \\ Gul'dan's Hood
+s(177735)/i(48737),	-- dan's Leggings \\ Gul'dan's Leggings \\ Gul'dan's Leggings
+s(177736)/i(48738),	-- dan's Robe \\ Gul'dan's Robe \\ Gul'dan's Robe
+s(177737)/i(48739),	-- dan's Shoulderpads \\ Gul'dan's Shoulderpads \\ Gul'dan's Shoulderpads
+s(177738)/i(48740),	-- Thuzad's Gloves \\ Kel'Thuzad's Gloves \\ Kel'Thuzad's Gloves
+s(177739)/i(48741),	-- Thuzad's Hood \\ Kel'Thuzad's Hood \\ Kel'Thuzad's Hood
+s(177740)/i(48742),	-- Thuzad's Leggings \\ Kel'Thuzad's Leggings \\ Kel'Thuzad's Leggings
+s(177741)/i(48743),	-- Thuzad's Robe \\ Kel'Thuzad's Robe \\ Kel'Thuzad's Robe
+s(177742)/i(48744),	-- Thuzad's Shoulderpads \\ Kel'Thuzad's Shoulderpads \\ Kel'Thuzad's Shoulderpads
+s(177743)/i(48745),	-- n's Cowl \\ Velen's Cowl \\ Velen's Cowl
+s(177744)/i(48746),	-- n's Gloves \\ Velen's Gloves \\ Velen's Gloves
+s(177745)/i(48747),	-- n's Leggings \\ Velen's Leggings \\ Velen's Leggings
+s(177746)/i(48748),	-- n's Robe \\ Velen's Robe \\ Velen's Robe
+s(177747)/i(48749),	-- n's Shoulderpads \\ Velen's Shoulderpads \\ Velen's Shoulderpads
+s(177748)/i(48750),	-- a's Cowl \\ Zabra's Cowl \\ Zabra's Cowl
+s(177749)/i(48751),	-- a's Gloves \\ Zabra's Gloves \\ Zabra's Gloves
+s(177750)/i(48752),	-- a's Leggings \\ Zabra's Leggings \\ Zabra's Leggings
+s(177751)/i(48753),	-- a's Robe \\ Zabra's Robe \\ Zabra's Robe
+s(177752)/i(48754),	-- a's Shoulderpads \\ Zabra's Shoulderpads \\ Zabra's Shoulderpads
+s(177753)/i(48755),	-- n's Circlet \\ Velen's Circlet \\ Velen's Circlet
+s(177754)/i(48756),	-- n's Handwraps \\ Velen's Handwraps \\ Velen's Handwraps
+s(177755)/i(48757),	-- n's Mantle \\ Velen's Mantle \\ Velen's Mantle
+s(177756)/i(48758),	-- n's Pants \\ Velen's Pants \\ Velen's Pants
+s(177757)/i(48759),	-- n's Raiments \\ Velen's Raiments \\ Velen's Raiments
+s(177758)/i(48760),	-- a's Circlet \\ Zabra's Circlet \\ Zabra's Circlet
+s(177759)/i(48761),	-- a's Handwraps \\ Zabra's Handwraps \\ Zabra's Handwraps
+s(177760)/i(48762),	-- a's Mantle \\ Zabra's Mantle \\ Zabra's Mantle
+s(177761)/i(48763),	-- a's Pants \\ Zabra's Pants \\ Zabra's Pants
+s(177762)/i(48764),	-- a's Raiments \\ Zabra's Raiments \\ Zabra's Raiments
+s(177763)/i(48769),	-- totem's Handguards \\ Runetotem's Handguards \\ Runetotem's Handguards
+s(177764)/i(48770),	-- totem's Headpiece \\ Runetotem's Headpiece \\ Runetotem's Headpiece
+s(177765)/i(48771),	-- totem's Leggings \\ Runetotem's Leggings \\ Runetotem's Leggings
+s(177766)/i(48772),	-- totem's Robe \\ Runetotem's Robe \\ Runetotem's Robe
+s(177767)/i(48773),	-- totem's Spaulders \\ Runetotem's Spaulders \\ Runetotem's Spaulders
+s(177768)/i(48774),	-- urion's Handguards \\ Malfurion's Handguards \\ Malfurion's Handguards
+s(177769)/i(48775),	-- urion's Headpiece \\ Malfurion's Headpiece \\ Malfurion's Headpiece
+s(177770)/i(48776),	-- urion's Leggings \\ Malfurion's Leggings \\ Malfurion's Leggings
+s(177771)/i(48777),	-- urion's Robe \\ Malfurion's Robe \\ Malfurion's Robe
+s(177772)/i(48778),	-- urion's Spaulders \\ Malfurion's Spaulders \\ Malfurion's Spaulders
+s(177773)/i(48781),	-- totem's Cover \\ Runetotem's Cover \\ Runetotem's Cover
+s(177774)/i(48782),	-- totem's Gloves \\ Runetotem's Gloves \\ Runetotem's Gloves
+s(177775)/i(48783),	-- totem's Mantle \\ Runetotem's Mantle \\ Runetotem's Mantle
+s(177776)/i(48784),	-- totem's Trousers \\ Runetotem's Trousers \\ Runetotem's Trousers
+s(177777)/i(48785),	-- totem's Vestments \\ Runetotem's Vestments \\ Runetotem's Vestments
+s(177778)/i(48786),	-- urion's Cover \\ Malfurion's Cover \\ Malfurion's Cover
+s(177779)/i(48787),	-- urion's Gloves \\ Malfurion's Gloves \\ Malfurion's Gloves
+s(177780)/i(48788),	-- urion's Mantle \\ Malfurion's Mantle \\ Malfurion's Mantle
+s(177781)/i(48789),	-- urion's Trousers \\ Malfurion's Trousers \\ Malfurion's Trousers
+s(177782)/i(48790),	-- urion's Vestments \\ Malfurion's Vestments \\ Malfurion's Vestments
+s(177783)/i(48794),	-- totem's Handgrips \\ Runetotem's Handgrips \\ Runetotem's Handgrips
+s(177784)/i(48795),	-- totem's Headguard \\ Runetotem's Headguard \\ Runetotem's Headguard
+s(177785)/i(48796),	-- totem's Legguards \\ Runetotem's Legguards \\ Runetotem's Legguards
+s(177786)/i(48797),	-- totem's Raiments \\ Runetotem's Raiments \\ Runetotem's Raiments
+s(177787)/i(48798),	-- totem's Shoulderpads \\ Runetotem's Shoulderpads \\ Runetotem's Shoulderpads
+s(177788)/i(48799),	-- urion's Handgrips \\ Malfurion's Handgrips \\ Malfurion's Handgrips
+s(177789)/i(48800),	-- urion's Headguard \\ Malfurion's Headguard \\ Malfurion's Headguard
+s(177790)/i(48801),	-- urion's Legguards \\ Malfurion's Legguards \\ Malfurion's Legguards
+s(177791)/i(48802),	-- urion's Raiments \\ Malfurion's Raiments \\ Malfurion's Raiments
+s(177792)/i(48803),	-- urion's Shoulderpads \\ Malfurion's Shoulderpads \\ Malfurion's Shoulderpads
+s(177793)/i(48804),	-- na's Breastplate \\ Garona's Breastplate \\ Garona's Breastplate
+s(177794)/i(48805),	-- na's Gauntlets \\ Garona's Gauntlets \\ Garona's Gauntlets
+s(177795)/i(48806),	-- na's Helmet \\ Garona's Helmet \\ Garona's Helmet
+s(177796)/i(48807),	-- na's Legplates \\ Garona's Legplates \\ Garona's Legplates
+s(177797)/i(48808),	-- na's Pauldrons \\ Garona's Pauldrons \\ Garona's Pauldrons
+s(177798)/i(48809),	-- leef's Breastplate \\ VanCleef's Breastplate \\ VanCleef's Breastplate
+s(177799)/i(48810),	-- leef's Gauntlets \\ VanCleef's Gauntlets \\ VanCleef's Gauntlets
+s(177800)/i(48811),	-- leef's Helmet \\ VanCleef's Helmet \\ VanCleef's Helmet
+s(177801)/i(48812),	-- leef's Legplates \\ VanCleef's Legplates \\ VanCleef's Legplates
+s(177802)/i(48813),	-- leef's Pauldrons \\ VanCleef's Pauldrons \\ VanCleef's Pauldrons
+s(177803)/i(48814),	-- runner's Handguards \\ Windrunner's Handguards \\ Windrunner's Handguards
+s(177804)/i(48815),	-- runner's Headpiece \\ Windrunner's Headpiece \\ Windrunner's Headpiece
+s(177805)/i(48816),	-- runner's Legguards \\ Windrunner's Legguards \\ Windrunner's Legguards
+s(177806)/i(48817),	-- runner's Spaulders \\ Windrunner's Spaulders \\ Windrunner's Spaulders
+s(177807)/i(48818),	-- runner's Tunic \\ Windrunner's Tunic \\ Windrunner's Tunic
+s(177808)/i(48819),	-- runner's Handguards \\ Windrunner's Handguards \\ Windrunner's Handguards
+s(177809)/i(48820),	-- runner's Headpiece \\ Windrunner's Headpiece \\ Windrunner's Headpiece
+s(177810)/i(48821),	-- runner's Legguards \\ Windrunner's Legguards \\ Windrunner's Legguards
+s(177811)/i(48822),	-- runner's Spaulders \\ Windrunner's Spaulders \\ Windrunner's Spaulders
+s(177812)/i(48823),	-- runner's Tunic \\ Windrunner's Tunic \\ Windrunner's Tunic
+s(177813)/i(48824),	-- ndo's Handguards \\ Nobundo's Handguards \\ Nobundo's Handguards
+s(177814)/i(48825),	-- ndo's Headpiece \\ Nobundo's Headpiece \\ Nobundo's Headpiece
+s(177815)/i(48826),	-- ndo's Legguards \\ Nobundo's Legguards \\ Nobundo's Legguards
+s(177816)/i(48827),	-- ndo's Spaulders \\ Nobundo's Spaulders \\ Nobundo's Spaulders
+s(177817)/i(48828),	-- ndo's Tunic \\ Nobundo's Tunic \\ Nobundo's Tunic
+s(177818)/i(48829),	-- ll's Handguards \\ Thrall's Handguards \\ Thrall's Handguards
+s(177819)/i(48830),	-- ll's Headpiece \\ Thrall's Headpiece \\ Thrall's Headpiece
+s(177820)/i(48831),	-- ll's Legguards \\ Thrall's Legguards \\ Thrall's Legguards
+s(177821)/i(48832),	-- ll's Spaulders \\ Thrall's Spaulders \\ Thrall's Spaulders
+s(177822)/i(48833),	-- ll's Tunic \\ Thrall's Tunic \\ Thrall's Tunic
+s(177823)/i(48836),	-- ndo's Gloves \\ Nobundo's Gloves \\ Nobundo's Gloves
+s(177824)/i(48837),	-- ndo's Hauberk \\ Nobundo's Hauberk \\ Nobundo's Hauberk
+s(177825)/i(48838),	-- ndo's Helm \\ Nobundo's Helm \\ Nobundo's Helm
+s(177826)/i(48839),	-- ndo's Kilt \\ Nobundo's Kilt \\ Nobundo's Kilt
+s(177827)/i(48840),	-- ndo's Shoulderpads \\ Nobundo's Shoulderpads \\ Nobundo's Shoulderpads
+s(177828)/i(48841),	-- ll's Gloves \\ Thrall's Gloves \\ Thrall's Gloves
+s(177829)/i(48842),	-- ll's Hauberk \\ Thrall's Hauberk \\ Thrall's Hauberk
+s(177830)/i(48843),	-- ll's Helm \\ Thrall's Helm \\ Thrall's Helm
+s(177831)/i(48844),	-- ll's Kilt \\ Thrall's Kilt \\ Thrall's Kilt
+s(177832)/i(48845),	-- ll's Shoulderpads \\ Thrall's Shoulderpads \\ Thrall's Shoulderpads
+s(177833)/i(48846),	-- ndo's Chestguard \\ Nobundo's Chestguard \\ Nobundo's Chestguard
+s(177834)/i(48847),	-- ndo's Faceguard \\ Nobundo's Faceguard \\ Nobundo's Faceguard
+s(177835)/i(48848),	-- ndo's Grips \\ Nobundo's Grips \\ Nobundo's Grips
+s(177836)/i(48849),	-- ndo's Shoulderguards \\ Nobundo's Shoulderguards \\ Nobundo's Shoulderguards
+s(177837)/i(48850),	-- ndo's War-Kilt \\ Nobundo's War-Kilt \\ Nobundo's War-Kilt
+s(177838)/i(48851),	-- ll's Chestguard \\ Thrall's Chestguard \\ Thrall's Chestguard
+s(177839)/i(48852),	-- ll's Faceguard \\ Thrall's Faceguard \\ Thrall's Faceguard
+s(177840)/i(48853),	-- ll's Grips \\ Thrall's Grips \\ Thrall's Grips
+s(177841)/i(48854),	-- ll's Shoulderguards \\ Thrall's Shoulderguards \\ Thrall's Shoulderguards
+s(177842)/i(48855),	-- ll's War-Kilt \\ Thrall's War-Kilt \\ Thrall's War-Kilt
+s(177843)/i(48860),	-- scream's Battleplate \\ Hellscream's Battleplate \\ Hellscream's Battleplate
+s(177844)/i(48861),	-- scream's Gauntlets \\ Hellscream's Gauntlets \\ Hellscream's Gauntlets
+s(177845)/i(48862),	-- scream's Helmet \\ Hellscream's Helmet \\ Hellscream's Helmet
+s(177846)/i(48863),	-- scream's Legplates \\ Hellscream's Legplates \\ Hellscream's Legplates
+s(177847)/i(48864),	-- scream's Shoulderplates \\ Hellscream's Shoulderplates \\ Hellscream's Shoulderplates
+s(177848)/i(48865),	-- n's Battleplate \\ Wrynn's Battleplate \\ Wrynn's Battleplate
+s(177849)/i(48866),	-- n's Gauntlets \\ Wrynn's Gauntlets \\ Wrynn's Gauntlets
+s(177850)/i(48867),	-- n's Helmet \\ Wrynn's Helmet \\ Wrynn's Helmet
+s(177851)/i(48868),	-- n's Legplates \\ Wrynn's Legplates \\ Wrynn's Legplates
+s(177852)/i(48869),	-- n's Shoulderplates \\ Wrynn's Shoulderplates \\ Wrynn's Shoulderplates
+s(177853)/i(48870),	-- scream's Breastplate \\ Hellscream's Breastplate \\ Hellscream's Breastplate
+s(177854)/i(48871),	-- scream's Greathelm \\ Hellscream's Greathelm \\ Hellscream's Greathelm
+s(177855)/i(48872),	-- scream's Handguards \\ Hellscream's Handguards \\ Hellscream's Handguards
+s(177856)/i(48873),	-- scream's Legguards \\ Hellscream's Legguards \\ Hellscream's Legguards
+s(177857)/i(48874),	-- scream's Pauldrons \\ Hellscream's Pauldrons \\ Hellscream's Pauldrons
+s(177858)/i(48875),	-- n's Breastplate \\ Wrynn's Breastplate \\ Wrynn's Breastplate
+s(177859)/i(48876),	-- n's Greathelm \\ Wrynn's Greathelm \\ Wrynn's Greathelm
+s(177860)/i(48877),	-- n's Handguards \\ Wrynn's Handguards \\ Wrynn's Handguards
+s(177861)/i(48878),	-- n's Legguards \\ Wrynn's Legguards \\ Wrynn's Legguards
+s(177862)/i(48879),	-- n's Pauldrons \\ Wrynn's Pauldrons \\ Wrynn's Pauldrons
+s(177863)/i(48880),	-- ira's Battleplate \\ Koltira's Battleplate \\ Koltira's Battleplate
+s(177864)/i(48881),	-- ira's Gauntlets \\ Koltira's Gauntlets \\ Koltira's Gauntlets
+s(177865)/i(48882),	-- ira's Helmet \\ Koltira's Helmet \\ Koltira's Helmet
+s(177866)/i(48883),	-- ira's Legplates \\ Koltira's Legplates \\ Koltira's Legplates
+s(177867)/i(48884),	-- ira's Shoulderplates \\ Koltira's Shoulderplates \\ Koltira's Shoulderplates
+s(177868)/i(48885),	-- sarian's Battleplate \\ Thassarian's Battleplate \\ Thassarian's Battleplate
+s(177869)/i(48886),	-- sarian's Gauntlets \\ Thassarian's Gauntlets \\ Thassarian's Gauntlets
+s(177870)/i(48887),	-- sarian's Helmet \\ Thassarian's Helmet \\ Thassarian's Helmet
+s(177871)/i(48888),	-- sarian's Legplates \\ Thassarian's Legplates \\ Thassarian's Legplates
+s(177872)/i(48889),	-- sarian's Shoulderplates \\ Thassarian's Shoulderplates \\ Thassarian's Shoulderplates
+s(177873)/i(48890),	-- ira's Chestguard \\ Koltira's Chestguard \\ Koltira's Chestguard
+s(177874)/i(48891),	-- ira's Faceguard \\ Koltira's Faceguard \\ Koltira's Faceguard
+s(177875)/i(48892),	-- ira's Handguards \\ Koltira's Handguards \\ Koltira's Handguards
+s(177876)/i(48893),	-- ira's Legguards \\ Koltira's Legguards \\ Koltira's Legguards
+s(177877)/i(48894),	-- ira's Pauldrons \\ Koltira's Pauldrons \\ Koltira's Pauldrons
+s(177878)/i(48895),	-- sarian's Chestguard \\ Thassarian's Chestguard \\ Thassarian's Chestguard
+s(177879)/i(48896),	-- sarian's Faceguard \\ Thassarian's Faceguard \\ Thassarian's Faceguard
+s(177880)/i(48897),	-- sarian's Handguards \\ Thassarian's Handguards \\ Thassarian's Handguards
+s(177881)/i(48898),	-- sarian's Legguards \\ Thassarian's Legguards \\ Thassarian's Legguards
+s(177882)/i(48899),	-- sarian's Pauldrons \\ Thassarian's Pauldrons \\ Thassarian's Pauldrons
+s(177883)/i(48900),	-- lyon's Tunic \\ Turalyon's Tunic \\ Turalyon's Tunic
+s(177884)/i(48901),	-- lyon's Spaulders \\ Turalyon's Spaulders \\ Turalyon's Spaulders
+s(177885)/i(48902),	-- lyon's Headpiece \\ Turalyon's Headpiece \\ Turalyon's Headpiece
+s(177886)/i(48903),	-- lyon's Greaves \\ Turalyon's Greaves \\ Turalyon's Greaves
+s(177887)/i(48904),	-- lyon's Gloves \\ Turalyon's Gloves \\ Turalyon's Gloves
+s(177888)/i(48905),	-- rin's Tunic \\ Liadrin's Tunic \\ Liadrin's Tunic
+s(177889)/i(48906),	-- rin's Spaulders \\ Liadrin's Spaulders \\ Liadrin's Spaulders
+s(177890)/i(48907),	-- rin's Headpiece \\ Liadrin's Headpiece \\ Liadrin's Headpiece
+s(177891)/i(48908),	-- rin's Greaves \\ Liadrin's Greaves \\ Liadrin's Greaves
+s(177892)/i(48909),	-- rin's Gloves \\ Liadrin's Gloves \\ Liadrin's Gloves
+s(177893)/i(48910),	-- rin's Battleplate \\ Liadrin's Battleplate \\ Liadrin's Battleplate
+s(177894)/i(48911),	-- rin's Gauntlets \\ Liadrin's Gauntlets \\ Liadrin's Gauntlets
+s(177895)/i(48912),	-- rin's Helm \\ Liadrin's Helm \\ Liadrin's Helm
+s(177896)/i(48913),	-- rin's Legplates \\ Liadrin's Legplates \\ Liadrin's Legplates
+s(177897)/i(48914),	-- rin's Shoulderplates \\ Liadrin's Shoulderplates \\ Liadrin's Shoulderplates
+s(177898)/i(48915),	-- lyon's Battleplate \\ Turalyon's Battleplate \\ Turalyon's Battleplate
+s(177899)/i(48916),	-- lyon's Gauntlets \\ Turalyon's Gauntlets \\ Turalyon's Gauntlets
+s(177900)/i(48917),	-- lyon's Helm \\ Turalyon's Helm \\ Turalyon's Helm
+s(177901)/i(48918),	-- lyon's Legplates \\ Turalyon's Legplates \\ Turalyon's Legplates
+s(177902)/i(48919),	-- lyon's Shoulderplates \\ Turalyon's Shoulderplates \\ Turalyon's Shoulderplates
+s(177903)/i(48922),	-- rin's Breastplate \\ Liadrin's Breastplate \\ Liadrin's Breastplate
+s(177904)/i(48923),	-- rin's Faceguard \\ Liadrin's Faceguard \\ Liadrin's Faceguard
+s(177905)/i(48924),	-- rin's Handguards \\ Liadrin's Handguards \\ Liadrin's Handguards
+s(177906)/i(48925),	-- rin's Legguards \\ Liadrin's Legguards \\ Liadrin's Legguards
+s(177907)/i(48926),	-- rin's Shoulderguards \\ Liadrin's Shoulderguards \\ Liadrin's Shoulderguards
+s(177908)/i(48927),	-- lyon's Breastplate \\ Turalyon's Breastplate \\ Turalyon's Breastplate
+s(177909)/i(48928),	-- lyon's Faceguard \\ Turalyon's Faceguard \\ Turalyon's Faceguard
+s(177910)/i(48929),	-- lyon's Handguards \\ Turalyon's Handguards \\ Turalyon's Handguards
+s(177911)/i(48930),	-- lyon's Legguards \\ Turalyon's Legguards \\ Turalyon's Legguards
+s(177912)/i(48931),	-- lyon's Shoulderguards \\ Turalyon's Shoulderguards \\ Turalyon's Shoulderguards
 s(177913)/i(48945),	-- ish Thinking Cap \\ Gnomish Thinking Cap
 s(177914)/i(48947),	-- Monster - Axe, 1H Northrend D01
 s(177915)/i(48949),	-- Monster - Axe, 2H Northrend D01 Purple
@@ -34061,7 +34061,7 @@ s(177978)/i(49237),	-- tons of Tortured Space \\ Sabatons of Tortured Space
 s(177979)/i(49238),	-- s of Tortured Space \\ Boots of Tortured Space
 s(177980)/i(49278),	-- in Rocket Pack \\ Goblin Rocket Pack
 s(177981)/i(49291),	-- Monster - Polearm, Icecrown Raid (Vengeance Enchant)
-s(177982)/i(49292),	-- Monster - Sword - Forgemaster 2h
+s(177982)/i(49292),	-- Monster - Sword - Forgemaster 2h \\ Monster - Sword - Forgemaster 2h
 s(177983)/i(49293),	-- Monster - Demise w/ Frost Enchant
 s(177984)/i(49296),	-- ed Vis'kag the Bloodletter \\ Singed Vis'kag the Bloodletter
 s(177985)/i(49297),	-- wered Deathbringer \\ Empowered Deathbringer
@@ -38530,7 +38530,7 @@ s(17717)/i(37284),	-- BT55 Cloth Spell Boots4
 s(17718)/i(37285),	-- BT56 Cloth Spell Legs4
 s(17719)/i(37286),	-- BT57 Cloth Healer Glove2
 s(17726)/i(37295),	-- Cloth Spell Head4 \\ HF28 Cloth Spell Head4
-s(17727)/i(37296),	-- BT59 Cloth Spell Gloves4
+s(17727)/i(37296),	-- BT59 Cloth Spell Gloves4 \\ BT59 Cloth Spell Gloves4
 s(17728)/i(37308),	-- Monster - Sword2H, Northrend D03
 s(17729)/i(37309),	-- Monster - Special Arrow (Thori'dal)
 s(17730)/i(37310),	-- Monster - Mace, Stormhammer (Vengeful)
@@ -38547,8 +38547,8 @@ s(17794)/i(37410),	-- ker's Balanced Knives \\ Tracker's Balanced Knives
 s(17800)/i(37420),	-- kproof Boots \\ Sharkproof Boots
 s(17810)/i(37433),	-- red Scale Boots \\ Layered Scale Boots
 s(17820)/i(37444),	-- keeper's Helm \\ Wavekeeper's Helm
-s(17823)/i(37448),	-- BT47 Mail Physical Legs3
-s(17824)/i(37450),	-- BT48 Mail Healer Chest3
+s(17823)/i(37448),	-- BT47 Mail Physical Legs3 \\ BT47 Mail Physical Legs3
+s(17824)/i(37450),	-- BT48 Mail Healer Chest3 \\ BT48 Mail Healer Chest3
 s(17825)/i(37451),	-- BT49 Mail Physical Belt3
 s(17826)/i(37453),	-- BT59 Mail Physical Belt4
 s(17828)/i(37455),	-- BT56 Mail Healer Gloves2
@@ -38563,7 +38563,7 @@ s(17845)/i(37477),	-- Crusader Chestplate \\ Lost Crusader Chestplate
 s(17853)/i(37485),	-- Collector Gauntlets \\ Clam Collector Gauntlets
 s(17861)/i(37510),	-- tguards of Edification \\ Wristguards of Edification
 s(17862)/i(37511),	-- ible Waistguard \\ Crucible Waistguard
-s(17874)/i(37534),	-- BT56 Thrown2
+s(17874)/i(37534),	-- BT56 Thrown2 \\ BT56 Thrown2
 s(17876)/i(37536),	-- BT57 Fast Mace2
 s(17889)/i(37608),	-- Monster - Vrykul - Axe, 1H - Black Glow
 s(17890)/i(37609),	-- Monster - Sword2H, Claymore Silver (Black Glow)
@@ -38576,9 +38576,9 @@ s(18093)/i(37919),	-- Test Scott K Bow
 s(18104)/i(37946),	-- DB14 Cloth Healer Feet
 s(18109)/i(37951),	-- DB21 Cloth Healer Legs
 s(18112)/i(37955),	-- DB26 Healer Cloak
-s(18127)/i(37972),	-- DB49 Cloth Healer Feet2
+s(18127)/i(37972),	-- DB49 Cloth Healer Feet2 \\ DB49 Cloth Healer Feet2
 s(18128)/i(37973),	-- DB51 Cloth Spell Legs3
-s(18129)/i(37974),	-- DB52 Spell Cloak2
+s(18129)/i(37974),	-- DB52 Spell Cloak2 \\ DB52 Spell Cloak2
 s(18130)/i(37975),	-- DB53 Cloth Spell Shoulder3
 s(18131)/i(37977),	-- DB56 Cloth Healer Shoulder2
 s(18132)/i(37978),	-- DB57 Cloth Spell Chest3
@@ -38594,7 +38594,7 @@ s(18171)/i(38021),	-- DB57 Leather Healer Head2
 s(18172)/i(38022),	-- DB58 Leather Physical Shoulder4
 s(18185)/i(38038),	-- DB21 Mail Healer Head
 s(18197)/i(38052),	-- DB42 Leather Healer Shoulder
-s(18203)/i(38058),	-- DB49 Mail Healer Legs2
+s(18203)/i(38058),	-- DB49 Mail Healer Legs2 \\ DB49 Mail Healer Legs2
 s(18204)/i(38060),	-- DB51 Mail Physical Legs3
 s(18205)/i(38061),	-- DB53 Mail Physical Waist3
 s(18206)/i(38062),	-- DB54 Mail Physical Feet3
@@ -38603,7 +38603,7 @@ s(18208)/i(38064),	-- DB56 Mail Healer Bracer2
 s(18209)/i(38065),	-- DB57 Mail Healer Head2
 s(18210)/i(38066),	-- DB58 Mail Healer Feet2
 s(18223)/i(38099),	-- Monster - Axe 2H (EPL Deathknight Trainer)
-s(18237)/i(38113),	-- DB42 Plate Healer Glove2
+s(18237)/i(38113),	-- DB42 Plate Healer Glove2 \\ DB42 Plate Healer Glove2
 s(18243)/i(38119),	-- DB49 Plate Physical Head3
 s(18244)/i(38120),	-- DB51 Plate Physical Bracer3
 s(18245)/i(38121),	-- DB53 Plate Healer Shoulder
@@ -38611,11 +38611,11 @@ s(18246)/i(38122),	-- DB54 Plate Physical Bracer4
 s(18247)/i(38123),	-- DB56 Plate Healer Head2
 s(18248)/i(38124),	-- DB57 Plate Healer Chest2
 s(18249)/i(38125),	-- DB58 Plate Physical Waist4
-s(18260)/i(38136),	-- DB40 Spell Staff3
+s(18260)/i(38136),	-- DB40 Spell Staff3 \\ DB40 Spell Staff3
 s(18263)/i(38139),	-- DB50 Healer Mace3
 s(18264)/i(38140),	-- DB50 Spell Staff4
 s(18278)/i(38158),	-- DB20 Fast Sword
-s(18279)/i(38159),	-- DB20 Slow Right Fist
+s(18279)/i(38159),	-- DB20 Slow Right Fist \\ DB20 Slow Right Fist
 s(18284)/i(38166),	-- DB20 Gun
 s(18286)/i(38168),	-- DB22 Hunter Bow2
 s(18297)/i(38179),	-- DB38 Slow Right Fist2
@@ -38623,9 +38623,9 @@ s(18298)/i(38180),	-- DB40 Slow Left Fist2
 s(18300)/i(38182),	-- DB38 2H Sword2
 s(18301)/i(38183),	-- DB40 Fast Sword2
 s(18302)/i(38184),	-- DB40 Fast Dagger3
-s(18303)/i(38185),	-- DB40 Bow3
+s(18303)/i(38185),	-- DB40 Bow3 \\ DB40 Bow3
 s(18310)/i(38193),	-- DB50 2H Mace3
-s(18316)/i(38199),	-- DB50 Slow Sword3
+s(18316)/i(38199),	-- DB50 Slow Sword3 \\ DB50 Slow Sword3
 s(18317)/i(38200),	-- DB50 Crossbow3
 s(18318)/i(38201),	-- DB14 Spell Wand
 s(18320)/i(38203),	-- DB38 Healer Wand2
@@ -38767,10 +38767,10 @@ s(19076)/i(39751),	-- Monster - Mace, Northrend C01
 s(19077)/i(39752),	-- Monster - Mace, Thaurissan Hammer (Lightning)
 s(19078)/i(39753),	-- Monster - Mace, Nexus (Ice)(2H)
 s(19079)/i(39754),	-- Monster - Sword, Northrend Iron Dwarf
-s(19129)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH
+s(19129)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH \\ QR ZD25 Cloth Spell Glove2 - PH
 s(19142)/i(39828),	-- sher's Cloak \\ Punisher's Cloak
-s(19145)/i(39832),	-- QR ZD26 Spell Offhand - PH
-s(19189)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH
+s(19145)/i(39832),	-- QR ZD26 Spell Offhand - PH \\ QR ZD26 Spell Offhand - PH
+s(19189)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH \\ QR ZD25 Leather Physical Shoulder2 - PH
 s(19193)/i(39884),	-- QR ZD25 Mail Physical Feet2 - PH
 s(19194)/i(39885),	-- QR ZD25 Plate Physical Chest2 - PH
 s(19200)/i(39892),	-- Monster - Staff, Northrend B03 Gold (Fiery)
@@ -39011,7 +39011,7 @@ s(21246)/i(43936),	-- lesurgeon's Gauntlets \\ Battlesurgeon's Gauntlets
 s(21248)/i(43938),	-- of Rising Hope \\ Belt of Rising Hope
 s(21259)/i(43967),	-- Monster - Sword, 1H Northrend C01
 s(21274)/i(43985),	-- [UNUSED]Goblin Jumping Boots
-s(21324)/i(44056),	-- Monster - Axe, 1H Nexus D01
+s(21324)/i(44056),	-- Monster - Axe, 1H Nexus D01 \\ Monster - Axe, 1H Nexus D01
 s(21331)/i(44090),	-- Test Mail Shoulder 2
 s(21332)/i(44091),	-- pened Scarlet Kris \\ Sharpened Scarlet Kris
 s(21333)/i(44092),	-- rged Truesilver Champion \\ Reforged Truesilver Champion
@@ -39134,7 +39134,7 @@ s(24011)/i(49206),	-- Monster - Mace1H, Warhammer Ebony - White Flame
 s(24035)/i(49257),	-- Seashell Throwing Axe \\ hell Throwing Axe
 s(24036)/i(49258),	-- Light Throwing Tusk \\ t Throwing Tusk
 s(24056)/i(49291),	-- Monster - Polearm, Icecrown Raid (Vengeance Enchant)
-s(24057)/i(49292),	-- Monster - Sword - Forgemaster 2h
+s(24057)/i(49292),	-- Monster - Sword - Forgemaster 2h \\ Monster - Sword - Forgemaster 2h
 s(24058)/i(49293),	-- Monster - Demise w/ Frost Enchant
 s(24070)/i(49311),	-- Monster - Staff, Jeweled D01 Blue (Med Blue Glow)
 s(24090)/i(49340),	-- Monster - Icecrown - 1H Sword - D03 - Blue
@@ -55777,7 +55777,6 @@ s(84271)/i(143774),	--
 s(84272)/i(143774),	--
 s(84273)/i(143781),	--
 s(84282)/i(143916),	--
-s(84485)/i(144217),	-- Inelava, Spirit of Inebriation \\ ava, Spirit of Inebriation
 s(84492)/i(144237),	--
 s(84497)/i(144249),	-- Archimonde's Hatred Reborn \\ imonde's Hatred Reborn
 s(84498)/i(144257),	--
@@ -65068,6 +65067,8 @@ s(184408)/i(202433),	--
 s(184409)/i(202434),	--
 s(184410)/i(202435),	--
 s(184411)/i(202436),	--
+s(185509)/i(204279),	-- Wallclimber's Incursion Hatchet \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Weapon - 1H Axe AGI
+s(185514)/i(202607),	-- Brutal Dragonslayer's Trophy \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Weapon - Bow
 s(185531)/i(202608),	-- Power-Draining Spire
 s(185532)/i(202608),	-- Power-Draining Spire
 s(185533)/i(202608),	-- Power-Draining Spire
@@ -65122,6 +65123,7 @@ s(185700)/i(204639),	--
 s(185701)/i(204640),	--
 s(185702)/i(204641),	--
 s(185789)/i(204387),	-- Buzzing Orb Core
+s(186051)/i(202471),	-- Knuckles of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Hand
 s(186234)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
 s(186235)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
 s(186236)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
@@ -65135,41 +65137,41 @@ s(186294)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Drago
 s(186295)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
 s(186296)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
 s(186297)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
+s(186389)/i(202488),	-- Crown of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Head
 10.1.0.48661
-s(186476)/i(204410),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - WRIST 3
 s(186478)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
 s(186480)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
-s(186494)/i(204411),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - SHOULDER 3
+s(186492)/i(202580),	-- Mystic's Scalding Frame \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - SHOULDER 1
 s(186496)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
 s(186498)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
+s(186501)/i(202578),	-- Phoenix-Plume Gloves \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - HAND 1
 s(186505)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186506)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186507)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
-s(186515)/i(204422),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Mail - CHEST 2
 s(186517)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
 s(186519)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
+s(186521)/i(202584),	-- Scalecommander's Ebon Schynbalds \\ 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Mail - LEGS 1
+s(186523)/i(202583),	-- Grasps of Welded Anguish \\ 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Mail - HAND 1
+s(186531)/i(202591),	-- Gatecrasher Giant's Coif \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
 s(186532)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186533)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186534)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
-s(186542)/i(204423),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Mail - WAIST 3
 s(186544)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
 s(186546)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
-s(186550)/i(202659),	-- Shackles of the Shadowed Bastille \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
-s(186551)/i(202659),	-- Shackles of the Shadowed Bastille \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
-s(186552)/i(202659),	-- Shackles of the Shadowed Bastille \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
+s(186549)/i(202604),	-- Boulder-Tossing Bands \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - WRIST 1
+s(186607)/i(202574),	-- Flamebound Huntsman's Footpads \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - FEET 1
 s(186617)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(186618)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(186619)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
-s(186630)/i(204414),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Leather - HAND 2
 s(186632)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
 s(186634)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
-s(186645)/i(204415),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Leather - SHOULDER 2
+s(186640)/i(202586),	-- Warlord's Volcanic Vest \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - CHEST 1
 s(186647)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
 s(186649)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
-s(186660)/i(204430),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - FEET 2
 s(186662)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
 s(186664)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
-s(186693)/i(204429),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - HEAD 2
+s(186673)/i(202577),	-- Seal of the Defiant Hordes \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - WAIST 1
+s(186682)/i(202597),	-- Obsidian Guard's Chausses \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - LEGS 1
 s(186695)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186697)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186700)/i(204465),	-- Voice of the Silent Star
@@ -65177,315 +65179,9 @@ s(186715)/i(205381),	-- Obsidian Gladiator's Silk Hood
 s(186716)/i(205381),	-- Obsidian Gladiator's Silk Hood
 10.1.0.48776
 s(187207)/i(205687),	--
-s(187277)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(187278)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(187279)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(187280)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(187281)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(187282)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(187283)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(187284)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(187285)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(187287)/i(205799),	-- Legplates of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Legs
-s(187288)/i(205799),	-- Legplates of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Legs
-s(187289)/i(205799),	-- Legplates of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Legs
-s(187291)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(187292)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(187293)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(187294)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(187295)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(187296)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(187297)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(187298)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(187299)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(187301)/i(205801),	-- Handguards  of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Hand
-s(187302)/i(205801),	-- Handguards  of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Hand
-s(187303)/i(205801),	-- Handguards  of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Hand
-s(187305)/i(205802),	-- Battlechest of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Chest
-s(187306)/i(205802),	-- Battlechest of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Chest
-s(187307)/i(205802),	-- Battlechest of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Chest
-s(187309)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(187310)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(187311)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(187312)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(187313)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(187314)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(187315)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(187316)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(187317)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(187319)/i(205804),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
-s(187320)/i(205804),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
-s(187321)/i(205804),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
-s(187323)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(187324)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(187325)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(187326)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(187327)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(187328)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(187329)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(187330)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(187331)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(187333)/i(205806),	-- Heartfire Sentinel's Protectors \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Hand
-s(187334)/i(205806),	-- Heartfire Sentinel's Protectors \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Hand
-s(187335)/i(205806),	-- Heartfire Sentinel's Protectors \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Hand
-s(187337)/i(205807),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
-s(187338)/i(205807),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
-s(187339)/i(205807),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
-s(187341)/i(205808),	-- Lingering Phantom's Shoulderplates \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Shoulder
-s(187342)/i(205808),	-- Lingering Phantom's Shoulderplates \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Shoulder
-s(187343)/i(205808),	-- Lingering Phantom's Shoulderplates \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Shoulder
-s(187345)/i(205809),	-- Lingering Phantom's Schynbalds \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Legs
-s(187346)/i(205809),	-- Lingering Phantom's Schynbalds \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Legs
-s(187347)/i(205809),	-- Lingering Phantom's Schynbalds \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Legs
-s(187349)/i(205810),	-- Lingering Phantom's Dreadhorns \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Head
-s(187350)/i(205810),	-- Lingering Phantom's Dreadhorns \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Head
-s(187351)/i(205810),	-- Lingering Phantom's Dreadhorns \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Head
-s(187353)/i(205811),	-- Lingering Phantom's Gauntlets \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Hand
-s(187354)/i(205811),	-- Lingering Phantom's Gauntlets \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Hand
-s(187355)/i(205811),	-- Lingering Phantom's Gauntlets \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Hand
-s(187357)/i(205812),	-- Lingering Phantom's Plackart \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Chest
-s(187358)/i(205812),	-- Lingering Phantom's Plackart \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Chest
-s(187359)/i(205812),	-- Lingering Phantom's Plackart \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Chest
-s(187361)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(187362)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(187363)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(187364)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(187365)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(187366)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(187367)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(187368)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(187369)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(187371)/i(205814),	-- Braies of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Legs
-s(187372)/i(205814),	-- Braies of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Legs
-s(187373)/i(205814),	-- Braies of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Legs
-s(187375)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(187376)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(187377)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(187378)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(187379)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(187380)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(187381)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(187382)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(187383)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(187385)/i(205816),	-- Knuckles of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Hand
-s(187386)/i(205816),	-- Knuckles of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Hand
-s(187387)/i(205816),	-- Knuckles of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Hand
-s(187389)/i(205817),	-- Adornments of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Chest
-s(187390)/i(205817),	-- Adornments of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Chest
-s(187391)/i(205817),	-- Adornments of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Chest
-s(187393)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(187394)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(187395)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(187396)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(187397)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(187398)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(187399)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(187400)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(187401)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(187403)/i(205819),	-- Ashen Predator's Poleyns \\ Ashen Predator's Poleyn \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Legs
-s(187404)/i(205819),	-- Ashen Predator's Poleyns \\ Ashen Predator's Poleyn \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Legs
-s(187405)/i(205819),	-- Ashen Predator's Poleyns \\ Ashen Predator's Poleyn \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Legs
-s(187407)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(187408)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(187409)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(187410)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(187411)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(187412)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(187413)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(187414)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(187415)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(187417)/i(205821),	-- Ashen Predator's Skinners \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Hand
-s(187418)/i(205821),	-- Ashen Predator's Skinners \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Hand
-s(187419)/i(205821),	-- Ashen Predator's Skinners \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Hand
-s(187421)/i(205822),	-- Ashen Predator's Sling Vest \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Chest
-s(187422)/i(205822),	-- Ashen Predator's Sling Vest \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Chest
-s(187423)/i(205822),	-- Ashen Predator's Sling Vest \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Chest
-s(187425)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(187426)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(187427)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(187428)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(187429)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(187430)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(187431)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(187432)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(187433)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(187435)/i(205824),	-- Chausses of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Legs
-s(187436)/i(205824),	-- Chausses of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Legs
-s(187437)/i(205824),	-- Chausses of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Legs
-s(187439)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(187440)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(187441)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(187442)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(187443)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(187444)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(187445)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(187446)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(187447)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(187449)/i(205826),	-- Claws of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Hand
-s(187450)/i(205826),	-- Claws of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Hand
-s(187451)/i(205826),	-- Claws of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Hand
-s(187453)/i(205827),	-- Hauberk of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Chest
-s(187454)/i(205827),	-- Hauberk of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Chest
-s(187455)/i(205827),	-- Hauberk of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Chest
-s(187457)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(187458)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(187459)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(187460)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(187461)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(187462)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(187463)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(187464)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(187465)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(187467)/i(205829),	-- Lurking Specter's Tights \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Legs
-s(187468)/i(205829),	-- Lurking Specter's Tights \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Legs
-s(187469)/i(205829),	-- Lurking Specter's Tights \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Legs
-s(187471)/i(205830),	-- Lurking Specter's Visage \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Head
-s(187472)/i(205830),	-- Lurking Specter's Visage \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Head
-s(187473)/i(205830),	-- Lurking Specter's Visage \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Head
-s(187475)/i(205831),	-- Lurking Specter's Handgrips \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Hand
-s(187476)/i(205831),	-- Lurking Specter's Handgrips \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Hand
-s(187477)/i(205831),	-- Lurking Specter's Handgrips \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Hand
-s(187479)/i(205832),	-- Lurking Specter's Brigandine \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Chest
-s(187480)/i(205832),	-- Lurking Specter's Brigandine \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Chest
-s(187481)/i(205832),	-- Lurking Specter's Brigandine \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Chest
-s(187483)/i(205833),	-- Spines of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Shoulder
-s(187484)/i(205833),	-- Spines of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Shoulder
-s(187485)/i(205833),	-- Spines of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Shoulder
-s(187487)/i(205834),	-- Pantaloons of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Legs
-s(187488)/i(205834),	-- Pantaloons of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Legs
-s(187489)/i(205834),	-- Pantaloons of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Legs
-s(187491)/i(205835),	-- Cover of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Head
-s(187492)/i(205835),	-- Cover of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Head
-s(187493)/i(205835),	-- Cover of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Head
-s(187495)/i(205836),	-- Fists of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Hand
-s(187496)/i(205836),	-- Fists of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Hand
-s(187497)/i(205836),	-- Fists of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Hand
-s(187499)/i(205837),	-- Cuirass of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Chest
-s(187500)/i(205837),	-- Cuirass of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Chest
-s(187501)/i(205837),	-- Cuirass of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Chest
-s(187503)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(187504)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(187505)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(187506)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(187507)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(187508)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(187509)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(187510)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(187511)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(187513)/i(205839),	-- Pants of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Legs
-s(187514)/i(205839),	-- Pants of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Legs
-s(187515)/i(205839),	-- Pants of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Legs
-s(187517)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(187518)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(187519)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(187520)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(187521)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(187522)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(187523)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(187524)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(187525)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(187527)/i(205841),	-- Handguards of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Hand
-s(187528)/i(205841),	-- Handguards of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Hand
-s(187529)/i(205841),	-- Handguards of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Hand
-s(187531)/i(205842),	-- Chestroots of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Chest
-s(187532)/i(205842),	-- Chestroots of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Chest
-s(187533)/i(205842),	-- Chestroots of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Chest
-s(187535)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(187536)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(187537)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(187538)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(187539)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(187540)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(187541)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(187542)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(187543)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(187545)/i(205844),	-- Kinslayer's Legguards \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(187546)/i(205844),	-- Kinslayer's Legguards \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(187547)/i(205844),	-- Kinslayer's Legguards \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(187549)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(187550)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(187551)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(187552)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(187553)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(187554)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(187555)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(187556)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(187557)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(187559)/i(205846),	-- Kinslayer's Bloodstained Grips \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Hand
-s(187560)/i(205846),	-- Kinslayer's Bloodstained Grips \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Hand
-s(187561)/i(205846),	-- Kinslayer's Bloodstained Grips \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Hand
 s(187563)/i(205847),	-- Kinslayer's Vest \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Chest
 s(187564)/i(205847),	-- Kinslayer's Vest \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Chest
 s(187565)/i(205847),	-- Kinslayer's Vest \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Chest
-s(187567)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(187568)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(187569)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(187570)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(187571)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(187572)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(187573)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(187574)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(187575)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(187577)/i(205849),	-- Leggings of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Legs
-s(187578)/i(205849),	-- Leggings of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Legs
-s(187579)/i(205849),	-- Leggings of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Legs
-s(187581)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(187582)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(187583)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(187584)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(187585)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(187586)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(187587)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(187588)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(187589)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(187591)/i(205851),	-- Grips of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Hand
-s(187592)/i(205851),	-- Grips of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Hand
-s(187593)/i(205851),	-- Grips of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Hand
-s(187595)/i(205852),	-- Cursed Robes of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth - Robe
-s(187596)/i(205852),	-- Cursed Robes of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth - Robe
-s(187597)/i(205852),	-- Cursed Robes of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth - Robe
-s(187599)/i(205853),	-- Devotion of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Shoulder
-s(187600)/i(205853),	-- Devotion of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Shoulder
-s(187601)/i(205853),	-- Devotion of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Shoulder
-s(187603)/i(205854),	-- Breeches of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Legs
-s(187604)/i(205854),	-- Breeches of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Legs
-s(187605)/i(205854),	-- Breeches of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Legs
-s(187607)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(187608)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(187609)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(187610)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(187611)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(187612)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(187613)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(187614)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(187615)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(187617)/i(205856),	-- Grasp of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Hand
-s(187618)/i(205856),	-- Grasp of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Hand
-s(187619)/i(205856),	-- Grasp of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Hand
-s(187621)/i(205857),	-- Command of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth - Robe
-s(187622)/i(205857),	-- Command of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth - Robe
-s(187623)/i(205857),	-- Command of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth - Robe
-s(187625)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(187626)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(187627)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(187628)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(187629)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(187630)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(187631)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(187632)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(187633)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(187635)/i(205859),	-- Underlight Conjurer's Trousers \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Legs
-s(187636)/i(205859),	-- Underlight Conjurer's Trousers \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Legs
-s(187637)/i(205859),	-- Underlight Conjurer's Trousers \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Legs
-s(187639)/i(205860),	-- Underlight Conjurer's Arcanocowl \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Head
-s(187640)/i(205860),	-- Underlight Conjurer's Arcanocowl \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Head
-s(187641)/i(205860),	-- Underlight Conjurer's Arcanocowl \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Head
-s(187643)/i(205861),	-- Underlight Conjurer's Gloves \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Hand
-s(187644)/i(205861),	-- Underlight Conjurer's Gloves \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Hand
-s(187645)/i(205861),	-- Underlight Conjurer's Gloves \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Hand
-s(187647)/i(205862),	-- Underlight Conjurer's Vestment \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth - Chest
-s(187648)/i(205862),	-- Underlight Conjurer's Vestment \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth - Chest
-s(187649)/i(205862),	-- Underlight Conjurer's Vestment \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth - Chest
 s(187719)/i(205924),	-- Obsidian Gladiator's Axe
 s(187720)/i(205915),	-- Obsidian Gladiator's Dagger
 s(187721)/i(205925),	-- Obsidian Gladiator's Knife
@@ -65505,370 +65201,8 @@ s(187739)/i(205922),	-- Obsidian Gladiator's Rod
 10.1.0.48898
 s(187762)/i(206044),	-- Obsidian Gladiator's Axe
 10.1.0.49570
-s(188122)/i(202438),	-- Manteau of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Generic - Cloak
-s(188123)/i(202438),	-- Manteau of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Generic - Cloak
-s(188124)/i(202439),	-- Warbands of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Wrist
-s(188125)/i(202439),	-- Warbands of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Wrist
-s(188126)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
-s(188127)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
-s(188128)/i(202441),	-- Pauldrons of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Shoulder
-s(188129)/i(202441),	-- Pauldrons of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Shoulder
-s(188130)/i(202442),	-- Legplates of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Legs
-s(188131)/i(202442),	-- Legplates of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Legs
-s(188132)/i(202443),	-- Thraexhelm of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Head
-s(188133)/i(202443),	-- Thraexhelm of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Head
-s(188134)/i(202444),	-- Handguards of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Hand
-s(188135)/i(202444),	-- Handguards of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Hand
-s(188136)/i(202445),	-- Ironstriders of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Feet
-s(188137)/i(202445),	-- Ironstriders of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Feet
-s(188138)/i(202446),	-- Battlechest of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Chest
-s(188139)/i(202446),	-- Battlechest of the Onyx Crucible \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Chest
-s(188140)/i(202447),	-- Heartfire Sentinel's Pelerine \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Generic - Cloak
-s(188141)/i(202447),	-- Heartfire Sentinel's Pelerine \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Generic - Cloak
-s(188142)/i(202448),	-- Heartfire Sentinel's Blessed Bindings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Wrist
-s(188143)/i(202448),	-- Heartfire Sentinel's Blessed Bindings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Wrist
-s(188144)/i(202449),	-- Heartfire Sentinel's Waistguard \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Waist
-s(188145)/i(202449),	-- Heartfire Sentinel's Waistguard \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Waist
-s(188146)/i(202450),	-- Heartfire Sentinel's Steelwings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Shoulder
-s(188147)/i(202450),	-- Heartfire Sentinel's Steelwings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Shoulder
-s(188148)/i(202451),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
-s(188149)/i(202451),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
-s(188150)/i(202452),	-- Heartfire Sentinel's Forgehelm \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Head
-s(188151)/i(202452),	-- Heartfire Sentinel's Forgehelm \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Head
-s(188152)/i(202453),	-- Heartfire Sentinel's Protectors \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Hand
-s(188153)/i(202453),	-- Heartfire Sentinel's Protectors \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Hand
-s(188154)/i(202454),	-- Heartfire Sentinel's Greatboots \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Feet
-s(188155)/i(202454),	-- Heartfire Sentinel's Greatboots \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Feet
-s(188156)/i(202455),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
-s(188157)/i(202455),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
-s(188158)/i(202456),	-- Lingering Phantom's Drape \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Generic - Cloak
-s(188159)/i(202456),	-- Lingering Phantom's Drape \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Generic - Cloak
-s(188160)/i(202457),	-- Lingering Phantom's Vambraces \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Wrist
-s(188161)/i(202457),	-- Lingering Phantom's Vambraces \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Wrist
-s(188162)/i(202458),	-- Lingering Phantom's Deathlink \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Waist
-s(188163)/i(202458),	-- Lingering Phantom's Deathlink \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Waist
-s(188164)/i(202459),	-- Lingering Phantom's Shoulderplates \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Shoulder
-s(188165)/i(202459),	-- Lingering Phantom's Shoulderplates \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Shoulder
-s(188166)/i(202460),	-- Lingering Phantom's Schynbalds \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Legs
-s(188167)/i(202460),	-- Lingering Phantom's Schynbalds \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Legs
-s(188168)/i(202461),	-- Lingering Phantom's Dreadhorns \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Head
-s(188169)/i(202461),	-- Lingering Phantom's Dreadhorns \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Head
-s(188170)/i(202462),	-- Lingering Phantom's Gauntlets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Hand
-s(188171)/i(202462),	-- Lingering Phantom's Gauntlets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Hand
-s(188172)/i(202463),	-- Lingering Phantom's Stompers \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Feet
-s(188173)/i(202463),	-- Lingering Phantom's Stompers \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Feet
-s(188174)/i(202464),	-- Lingering Phantom's Plackart \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Chest
-s(188175)/i(202464),	-- Lingering Phantom's Plackart \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Chest
-s(188176)/i(202483),	-- Crest of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Generic - Cloak
-s(188177)/i(202483),	-- Crest of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Generic - Cloak
-s(188178)/i(202484),	-- Scalebands of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Wrist
-s(188179)/i(202484),	-- Scalebands of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Wrist
-s(188180)/i(202485),	-- Lasso of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Waist
-s(188181)/i(202485),	-- Lasso of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Waist
-s(188182)/i(202486),	-- Wingspan of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Shoulder
-s(188183)/i(202486),	-- Wingspan of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Shoulder
-s(188184)/i(202487),	-- Chausses of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Legs
-s(188185)/i(202487),	-- Chausses of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Legs
-s(188186)/i(202488),	-- Crown of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Head
-s(188187)/i(202488),	-- Crown of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Head
-s(188188)/i(202489),	-- Claws of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Hand
-s(188189)/i(202489),	-- Claws of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Hand
-s(188190)/i(202490),	-- Greatboots of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Feet
-s(188191)/i(202490),	-- Greatboots of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Feet
-s(188192)/i(202491),	-- Hauberk of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Chest
-s(188193)/i(202491),	-- Hauberk of Obsidian Secrets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Chest
-s(188194)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(188195)/i(205823),	-- Wingspan of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
-s(188196)/i(205824),	-- Chausses of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Legs
-s(188197)/i(205824),	-- Chausses of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Legs
-s(188198)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(188199)/i(205825),	-- Crown of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
-s(188200)/i(205826),	-- Claws of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Hand
-s(188201)/i(205826),	-- Claws of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Hand
-s(188202)/i(205827),	-- Hauberk of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Chest
-s(188203)/i(205827),	-- Hauberk of Obsidian Secrets \\ PVP Upgrade - Class Sets - Evoker - Armor - Mail - Chest
-s(188204)/i(202474),	-- Ashen Predator's Cloak \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Generic - Cloak
-s(188205)/i(202474),	-- Ashen Predator's Cloak \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Generic - Cloak
-s(188206)/i(202475),	-- Ashen Predator's Skinwraps \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Wrist
-s(188207)/i(202475),	-- Ashen Predator's Skinwraps \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Wrist
-s(188208)/i(202476),	-- Ashen Predator's Strap \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Waist
-s(188209)/i(202476),	-- Ashen Predator's Strap \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Waist
-s(188210)/i(202477),	-- Ashen Predator's Trophy \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Shoulder
-s(188211)/i(202477),	-- Ashen Predator's Trophy \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Shoulder
-s(188212)/i(202478),	-- Ashen Predator's Poleyns \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Legs
-s(188213)/i(202478),	-- Ashen Predator's Poleyns \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Legs
-s(188214)/i(202479),	-- Ashen Predator's Faceguard \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Head
-s(188215)/i(202479),	-- Ashen Predator's Faceguard \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Head
-s(188216)/i(202480),	-- Ashen Predator's Skinners \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Hand
-s(188217)/i(202480),	-- Ashen Predator's Skinners \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Hand
-s(188218)/i(202481),	-- Ashen Predator's Chasers \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Feet
-s(188219)/i(202481),	-- Ashen Predator's Chasers \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Feet
-s(188220)/i(202482),	-- Ashen Predator's Sling Vest \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Chest
-s(188221)/i(202482),	-- Ashen Predator's Sling Vest \\ 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Chest
-s(188222)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(188223)/i(205818),	-- Ashen Predator's Trophy \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
-s(188224)/i(205819),	-- Ashen Predator's Poleyns \\ Ashen Predator's Poleyn \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Legs
-s(188225)/i(205819),	-- Ashen Predator's Poleyns \\ Ashen Predator's Poleyn \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Legs
-s(188226)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(188227)/i(205820),	-- Ashen Predator's Faceguard \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
-s(188228)/i(205821),	-- Ashen Predator's Skinners \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Hand
-s(188229)/i(205821),	-- Ashen Predator's Skinners \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Hand
-s(188230)/i(205822),	-- Ashen Predator's Sling Vest \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Chest
-s(188231)/i(205822),	-- Ashen Predator's Sling Vest \\ PVP Upgrade - Class Sets - Hunter - Armor - Mail - Chest
-s(188232)/i(202465),	-- Pelisse of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Generic - Cloak
-s(188233)/i(202465),	-- Pelisse of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Generic - Cloak
-s(188234)/i(202466),	-- Runebraces of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Wrist
-s(188235)/i(202466),	-- Runebraces of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Wrist
-s(188236)/i(202467),	-- Faulds of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Waist
-s(188237)/i(202467),	-- Faulds of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Waist
-s(188238)/i(202468),	-- Thunderpads of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Shoulder
-s(188239)/i(202468),	-- Thunderpads of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Shoulder
-s(188240)/i(202469),	-- Braies of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Legs
-s(188241)/i(202469),	-- Braies of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Legs
-s(188242)/i(202470),	-- Spangenhelm of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Head
-s(188243)/i(202470),	-- Spangenhelm of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Head
-s(188244)/i(202471),	-- Knuckles of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Hand
-s(188245)/i(202471),	-- Knuckles of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Hand
-s(188246)/i(202472),	-- Sollerets of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Feet
-s(188247)/i(202472),	-- Sollerets of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Feet
-s(188248)/i(202473),	-- Adornments of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Chest
-s(188249)/i(202473),	-- Adornments of the Cinderwolf \\ 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Chest
-s(188250)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(188251)/i(205813),	-- Thunderpads of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
-s(188252)/i(205814),	-- Braies of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Legs
-s(188253)/i(205814),	-- Braies of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Legs
-s(188254)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(188255)/i(205815),	-- Spangenhelm of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
-s(188256)/i(205816),	-- Knuckles of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Hand
-s(188257)/i(205816),	-- Knuckles of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Hand
-s(188258)/i(205817),	-- Adornments of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Chest
-s(188259)/i(205817),	-- Adornments of the Cinderwolf \\ PVP Upgrade - Class Sets - Shaman - Armor - Mail - Chest
-s(188260)/i(202519),	-- Kinslayer's Shawl \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Generic - Cloak
-s(188261)/i(202519),	-- Kinslayer's Shawl \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Generic - Cloak
-s(188262)/i(202520),	-- Kinslayer's Bindings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Wrist
-s(188263)/i(202520),	-- Kinslayer's Bindings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Wrist
-s(188264)/i(202521),	-- Kinslayer's Sash \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Waist
-s(188265)/i(202521),	-- Kinslayer's Sash \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Waist
-s(188266)/i(202522),	-- Kinslayer's Tainted Spaulders \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(188267)/i(202522),	-- Kinslayer's Tainted Spaulders \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(188268)/i(202523),	-- Kinslayer's Legguards \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(188269)/i(202523),	-- Kinslayer's Legguards \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(188270)/i(202524),	-- Kinslayer's Hood \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Head
-s(188271)/i(202524),	-- Kinslayer's Hood \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Head
-s(188272)/i(202525),	-- Kinslayer's Bloodstained Grips \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Hand
-s(188273)/i(202525),	-- Kinslayer's Bloodstained Grips \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Hand
-s(188274)/i(202526),	-- Kinslayer's Gaiters \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Feet
-s(188275)/i(202526),	-- Kinslayer's Gaiters \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Feet
-s(188276)/i(202527),	-- Kinslayer's Vest \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Chest
-s(188277)/i(202527),	-- Kinslayer's Vest \\ 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Chest
-s(188278)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(188279)/i(205843),	-- Kinslayer's Tainted Spaulders \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(188280)/i(205844),	-- Kinslayer's Legguards \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(188281)/i(205844),	-- Kinslayer's Legguards \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(188282)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(188283)/i(205845),	-- Kinslayer's Hood \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
-s(188284)/i(205846),	-- Kinslayer's Bloodstained Grips \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Hand
-s(188285)/i(205846),	-- Kinslayer's Bloodstained Grips \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Hand
 s(188286)/i(205847),	-- Kinslayer's Vest \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Chest
 s(188287)/i(205847),	-- Kinslayer's Vest \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Chest
-s(188288)/i(202510),	-- Foliage of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Generic - Cloak
-s(188289)/i(202510),	-- Foliage of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Generic - Cloak
-s(188290)/i(202511),	-- Bands of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Wrist
-s(188291)/i(202511),	-- Bands of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Wrist
-s(188292)/i(202512),	-- Garland of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Waist
-s(188293)/i(202512),	-- Garland of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Waist
-s(188294)/i(202513),	-- Mantle of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Shoulder
-s(188295)/i(202513),	-- Mantle of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Shoulder
-s(188296)/i(202514),	-- Pants of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Legs
-s(188297)/i(202514),	-- Pants of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Legs
-s(188298)/i(202515),	-- Bough of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Head
-s(188299)/i(202515),	-- Bough of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Head
-s(188300)/i(202516),	-- Handguards of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Hand
-s(188301)/i(202516),	-- Handguards of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Hand
-s(188302)/i(202517),	-- Hooves of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Feet
-s(188303)/i(202517),	-- Hooves of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Feet
-s(188304)/i(202518),	-- Chestroots of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Chest
-s(188305)/i(202518),	-- Chestroots of the Autumn Blaze \\ 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Chest
-s(188306)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(188307)/i(205838),	-- Mantle of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
-s(188308)/i(205839),	-- Pants of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Legs
-s(188309)/i(205839),	-- Pants of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Legs
-s(188310)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(188311)/i(205840),	-- Bough of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
-s(188312)/i(205841),	-- Handguards of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Hand
-s(188313)/i(205841),	-- Handguards of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Hand
-s(188314)/i(205842),	-- Chestroots of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Chest
-s(188315)/i(205842),	-- Chestroots of the Autumn Blaze \\ PVP Upgrade - Class Sets - Druid - Armor - Leather - Chest
-s(188316)/i(202501),	-- Drape of the Vermillion Forge \\ Drape of Forged Vermillion \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Generic - Cloak
-s(188317)/i(202501),	-- Drape of the Vermillion Forge \\ Drape of Forged Vermillion \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Generic - Cloak
-s(188318)/i(202502),	-- Coils of the Vermillion Forge \\ Forged Vermillion Coils \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Wrist
-s(188319)/i(202502),	-- Coils of the Vermillion Forge \\ Forged Vermillion Coils \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Wrist
-s(188320)/i(202503),	-- Blackbelt of the Vermillion Forge \\ Forged Vermillion Blackbelt \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Waist
-s(188321)/i(202503),	-- Blackbelt of the Vermillion Forge \\ Forged Vermillion Blackbelt \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Waist
-s(188322)/i(202504),	-- Spines of the Vermillion Forge \\ Forged Vermillion Spines \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Shoulder
-s(188323)/i(202504),	-- Spines of the Vermillion Forge \\ Forged Vermillion Spines \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Shoulder
-s(188324)/i(202505),	-- Pantaloons of the Vermillion Forge \\ Forged Vermillion Pantaloons \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Legs
-s(188325)/i(202505),	-- Pantaloons of the Vermillion Forge \\ Forged Vermillion Pantaloons \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Legs
-s(188326)/i(202506),	-- Cover of the Vermillion Forge \\ Forged Vermillion Cover \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Head
-s(188327)/i(202506),	-- Cover of the Vermillion Forge \\ Forged Vermillion Cover \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Head
-s(188328)/i(202507),	-- Fists of the Vermillion Forge \\ Forged Vermillion Fists \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Hand
-s(188329)/i(202507),	-- Fists of the Vermillion Forge \\ Forged Vermillion Fists \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Hand
-s(188330)/i(202508),	-- Footpads of the Vermillion Forge \\ Forged Vermillion Footpads \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Feet
-s(188331)/i(202508),	-- Footpads of the Vermillion Forge \\ Forged Vermillion Footpads \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Feet
-s(188332)/i(202509),	-- Cuirass of the Vermillion Forge \\ Forged Vermillion Cuirass \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Chest
-s(188333)/i(202509),	-- Cuirass of the Vermillion Forge \\ Forged Vermillion Cuirass \\ 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Chest
-s(188334)/i(205833),	-- Spines of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Shoulder
-s(188335)/i(205833),	-- Spines of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Shoulder
-s(188336)/i(205834),	-- Pantaloons of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Legs
-s(188337)/i(205834),	-- Pantaloons of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Legs
-s(188338)/i(205835),	-- Cover of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Head
-s(188339)/i(205835),	-- Cover of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Head
-s(188340)/i(205836),	-- Fists of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Hand
-s(188341)/i(205836),	-- Fists of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Hand
-s(188342)/i(205837),	-- Cuirass of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Chest
-s(188343)/i(205837),	-- Cuirass of the Vermillion Forge \\ PVP Upgrade - Class Sets - Monk - Armor - Leather - Chest
-s(188344)/i(202492),	-- Lurking Specter's Capelet \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Generic - Cloak
-s(188345)/i(202492),	-- Lurking Specter's Capelet \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Generic - Cloak
-s(188346)/i(202493),	-- Lurking Specter's Armwraps \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Wrist
-s(188347)/i(202493),	-- Lurking Specter's Armwraps \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Wrist
-s(188348)/i(202494),	-- Lurking Specter's Edgeband \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Waist
-s(188349)/i(202494),	-- Lurking Specter's Edgeband \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Waist
-s(188350)/i(202495),	-- Lurking Specter's Shoulderblades \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Shoulder
-s(188351)/i(202495),	-- Lurking Specter's Shoulderblades \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Shoulder
-s(188352)/i(202496),	-- Lurking Specter's Tights \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Legs
-s(188353)/i(202496),	-- Lurking Specter's Tights \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Legs
-s(188354)/i(202497),	-- Lurking Specter's Visage \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Head
-s(188355)/i(202497),	-- Lurking Specter's Visage \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Head
-s(188356)/i(202498),	-- Lurking Specter's Handgrips \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Hand
-s(188357)/i(202498),	-- Lurking Specter's Handgrips \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Hand
-s(188358)/i(202499),	-- Lurking Specter's Tabi \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Feet
-s(188359)/i(202499),	-- Lurking Specter's Tabi \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Feet
-s(188360)/i(202500),	-- Lurking Specter's Brigandine \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Chest
-s(188361)/i(202500),	-- Lurking Specter's Brigandine \\ 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Chest
-s(188362)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(188363)/i(205828),	-- Lurking Specter's Shoulderblades \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
-s(188364)/i(205829),	-- Lurking Specter's Tights \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Legs
-s(188365)/i(205829),	-- Lurking Specter's Tights \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Legs
-s(188366)/i(205830),	-- Lurking Specter's Visage \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Head
-s(188367)/i(205830),	-- Lurking Specter's Visage \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Head
-s(188368)/i(205831),	-- Lurking Specter's Handgrips \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Hand
-s(188369)/i(205831),	-- Lurking Specter's Handgrips \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Hand
-s(188370)/i(205832),	-- Lurking Specter's Brigandine \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Chest
-s(188371)/i(205832),	-- Lurking Specter's Brigandine \\ PVP Upgrade - Class Sets - Rogue - Armor - Leather - Chest
-s(188372)/i(202537),	-- Shroud of the Furnace Seraph \\ Shroud of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Generic - Cloak
-s(188373)/i(202537),	-- Shroud of the Furnace Seraph \\ Shroud of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Generic - Cloak
-s(188374)/i(202538),	-- Cuffs of the Furnace Seraph \\ Cuffs of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Wrist
-s(188375)/i(202538),	-- Cuffs of the Furnace Seraph \\ Cuffs of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Wrist
-s(188376)/i(202539),	-- Sash of the Furnace Seraph \\ Sash of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Waist
-s(188377)/i(202539),	-- Sash of the Furnace Seraph \\ Sash of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Waist
-s(188378)/i(202540),	-- Devotion of the Furnace Seraph \\ Devotion of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Shoulder
-s(188379)/i(202540),	-- Devotion of the Furnace Seraph \\ Devotion of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Shoulder
-s(188380)/i(202541),	-- Breeches of the Furnace Seraph \\ Breeches of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Legs
-s(188381)/i(202541),	-- Breeches of the Furnace Seraph \\ Breeches of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Legs
-s(188382)/i(202542),	-- Mask of the Furnace Seraph \\ Mask of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Head
-s(188383)/i(202542),	-- Mask of the Furnace Seraph \\ Mask of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Head
-s(188384)/i(202543),	-- Grasp of the Furnace Seraph \\ Grasp of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Hand
-s(188385)/i(202543),	-- Grasp of the Furnace Seraph \\ Grasp of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Hand
-s(188386)/i(202544),	-- Sabatons of the Furnace Seraph \\ Sabatons of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Feet
-s(188387)/i(202544),	-- Sabatons of the Furnace Seraph \\ Sabatons of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Feet
-s(188388)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
-s(188389)/i(202545),	-- Command of the Furnace Seraph \\ Command of The Furnace Seraph \\ 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
-s(188390)/i(205853),	-- Devotion of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Shoulder
-s(188391)/i(205853),	-- Devotion of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Shoulder
-s(188392)/i(205854),	-- Breeches of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Legs
-s(188393)/i(205854),	-- Breeches of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Legs
-s(188394)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(188395)/i(205855),	-- Mask of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
-s(188396)/i(205856),	-- Grasp of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Hand
-s(188397)/i(205856),	-- Grasp of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Hand
-s(188398)/i(205857),	-- Command of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth - Robe
-s(188399)/i(205857),	-- Command of the Furnace Seraph \\ PVP Upgrade - Class Sets - Priest - Armor - Cloth - Robe
-s(188400)/i(202528),	-- Shawl of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Generic - Cloak
-s(188401)/i(202528),	-- Shawl of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Generic - Cloak
-s(188402)/i(202529),	-- Wristwraps of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Wrist
-s(188403)/i(202529),	-- Wristwraps of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Wrist
-s(188404)/i(202530),	-- Skullstrap of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Waist
-s(188405)/i(202530),	-- Skullstrap of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Waist
-s(188406)/i(202531),	-- Amice of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(188407)/i(202531),	-- Amice of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(188408)/i(202532),	-- Leggings of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Legs
-s(188409)/i(202532),	-- Leggings of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Legs
-s(188410)/i(202533),	-- Grimhorns of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Head
-s(188411)/i(202533),	-- Grimhorns of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Head
-s(188412)/i(202534),	-- Grips of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Hand
-s(188413)/i(202534),	-- Grips of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Hand
-s(188414)/i(202535),	-- Sandals of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth - Feet
-s(188415)/i(202535),	-- Sandals of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth - Feet
-s(188416)/i(202536),	-- Cursed Robes of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth - Robe
-s(188417)/i(202536),	-- Cursed Robes of the Sinister Savant \\ 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth - Robe
-s(188418)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(188419)/i(205848),	-- Amice of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
-s(188420)/i(205849),	-- Leggings of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Legs
-s(188421)/i(205849),	-- Leggings of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Legs
-s(188422)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(188423)/i(205850),	-- Grimhorns of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
-s(188424)/i(205851),	-- Grips of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Hand
-s(188425)/i(205851),	-- Grips of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Hand
-s(188426)/i(205852),	-- Cursed Robes of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth - Robe
-s(188427)/i(205852),	-- Cursed Robes of the Sinister Savant \\ PVP Upgrade - Class Sets - Warlock - Armor - Cloth - Robe
-s(188428)/i(202546),	-- Underlight Conjurer's Cape \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Generic - Cloak
-s(188429)/i(202546),	-- Underlight Conjurer's Cape \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Generic - Cloak
-s(188430)/i(202547),	-- Underlight Conjurer's Bracelets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Wrist
-s(188431)/i(202547),	-- Underlight Conjurer's Bracelets \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Wrist
-s(188432)/i(202548),	-- Underlight Conjurer's Charmbelt \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Waist
-s(188433)/i(202548),	-- Underlight Conjurer's Charmbelt \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Waist
-s(188434)/i(202549),	-- Underlight Conjurer's Aurora \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(188435)/i(202549),	-- Underlight Conjurer's Aurora \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(188436)/i(202550),	-- Underlight Conjurer's Trousers \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Legs
-s(188437)/i(202550),	-- Underlight Conjurer's Trousers \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Legs
-s(188438)/i(202551),	-- Underlight Conjurer's Arcanocowl \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Head
-s(188439)/i(202551),	-- Underlight Conjurer's Arcanocowl \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Head
-s(188440)/i(202552),	-- Underlight Conjurer's Gloves \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Hand
-s(188441)/i(202552),	-- Underlight Conjurer's Gloves \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Hand
-s(188442)/i(202553),	-- Underlight Conjurer's Treads \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth - Feet
-s(188443)/i(202553),	-- Underlight Conjurer's Treads \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth - Feet
-s(188444)/i(202554),	-- Underlight Conjurer's Vestment \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth - Chest
-s(188445)/i(202554),	-- Underlight Conjurer's Vestment \\ 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth - Chest
-s(188446)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(188447)/i(205858),	-- Underlight Conjurer's Aurora \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
-s(188448)/i(205859),	-- Underlight Conjurer's Trousers \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Legs
-s(188449)/i(205859),	-- Underlight Conjurer's Trousers \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Legs
-s(188450)/i(205860),	-- Underlight Conjurer's Arcanocowl \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Head
-s(188451)/i(205860),	-- Underlight Conjurer's Arcanocowl \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Head
-s(188452)/i(205861),	-- Underlight Conjurer's Gloves \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Hand
-s(188453)/i(205861),	-- Underlight Conjurer's Gloves \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Hand
-s(188454)/i(205862),	-- Underlight Conjurer's Vestment \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth - Chest
-s(188455)/i(205862),	-- Underlight Conjurer's Vestment \\ PVP Upgrade - Class Sets - Mage - Armor - Cloth - Chest
-s(188456)/i(205808),	-- Lingering Phantom's Shoulderplates \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Shoulder
-s(188457)/i(205808),	-- Lingering Phantom's Shoulderplates \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Shoulder
-s(188458)/i(205809),	-- Lingering Phantom's Schynbalds \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Legs
-s(188459)/i(205809),	-- Lingering Phantom's Schynbalds \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Legs
-s(188460)/i(205810),	-- Lingering Phantom's Dreadhorns \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Head
-s(188461)/i(205810),	-- Lingering Phantom's Dreadhorns \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Head
-s(188462)/i(205811),	-- Lingering Phantom's Gauntlets \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Hand
-s(188463)/i(205811),	-- Lingering Phantom's Gauntlets \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Hand
-s(188464)/i(205812),	-- Lingering Phantom's Plackart \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Chest
-s(188465)/i(205812),	-- Lingering Phantom's Plackart \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Chest
-s(188466)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(188467)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(188468)/i(205804),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
-s(188469)/i(205804),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
-s(188470)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(188471)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
-s(188472)/i(205806),	-- Heartfire Sentinel's Protectors \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Hand
-s(188473)/i(205806),	-- Heartfire Sentinel's Protectors \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Hand
-s(188474)/i(205807),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
-s(188475)/i(205807),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
-s(188476)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(188477)/i(205798),	-- Pauldrons of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
-s(188478)/i(205799),	-- Legplates of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Legs
-s(188479)/i(205799),	-- Legplates of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Legs
-s(188480)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(188481)/i(205800),	-- Thraexhelm of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
-s(188482)/i(205801),	-- Handguards  of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Hand
-s(188483)/i(205801),	-- Handguards  of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Hand
-s(188484)/i(205802),	-- Battlechest of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Chest
-s(188485)/i(205802),	-- Battlechest of the Onyx Crucible \\ PVP Upgrade - Class Sets - Warrior - Armor - Plate - Chest
 10.1.5.49516
 s(187671)/i(205899),	--
 s(187927)/i(206266),	--
@@ -66016,7 +65350,7 @@ s(188512)/i(206795),	-- Titan Watcher's Shortblade
 s(188513)/i(206796),	-- Energetic Power Knife
 s(188514)/i(206797),	-- Frostspire
 s(188515)/i(206798),	-- Valhalas Heartstriker \\ Valhalla Heartstriker
-s(188516)/i(206799),	--
+s(188516)/i(206799),	-- Pauldrons of the Fire Lord
 s(188517)/i(206800),	-- Arcane Detection Rod
 s(188518)/i(206801),	-- Inferna Rod
 s(188519)/i(206802),	-- Plague-Touched Stave
@@ -66209,19 +65543,19 @@ s(188877)/i(207627),	-- Anachronistic Wrap
 s(188878)/i(207628),	-- Anomalous Cape
 s(188879)/i(207629),	-- Paradoxical Drape
 s(188880)/i(207630),	-- Cloak of Discontinuity
-s(188904)/i(207817),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Feet \\ Mega Dungeon Bronze Cloth Slippers
+s(188904)/i(207817),	-- Imbued Frostweave Slippers \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Feet \\ Mega Dungeon Bronze Cloth Slippers
 s(188905)/i(207818),	-- Mega Dungeon Bronze Plate Greaves
-s(188906)/i(207819),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Mail Legs \\ Mega Dungeon Bronze Mail Tassets
+s(188906)/i(207819),	-- Timeways Intruder's Greaves \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Mail Legs \\ Mega Dungeon Bronze Mail Tassets
 s(188907)/i(207820),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Leather Legs \\ Mega Dungeon Bronze Leather Tassets
 s(188910)/i(207824),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Plate Legs \\ Mega Dungeon Infinite Plate Greaves
 s(188911)/i(207825),	-- Mega Dungeon Infinite Cloth Slippers
-s(188912)/i(207828),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Cloth Robes \\ Mega Dungeon Bronze Cloth Robes
+s(188912)/i(207828),	-- Bronze Defender's Vesture \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Cloth Robes \\ Mega Dungeon Bronze Cloth Robes
 s(188913)/i(207829),	-- Mega Dungeon Bronze Cloth Wrap
 s(188915)/i(207831),	-- Mega Dungeon Bronze Cloth Hood
 s(188916)/i(207832),	-- Mega Dungeon Bronze Cloth Breeches
-s(188920)/i(207836),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Leather Chest \\ Mega Dungeon Bronze Mail Chainmail
+s(188920)/i(207836),	-- Ahnzon's Corroded Carapace \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Leather Chest \\ Mega Dungeon Bronze Mail Chainmail
 s(188921)/i(207837),	-- Mega Dungeon Bronze Leather Drape
-s(188922)/i(207838),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Leather Feet \\ Mega Dungeon Bronze Leather Striders
+s(188922)/i(207838),	-- Vigorous Sand-Stompers \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Leather Feet \\ Mega Dungeon Bronze Leather Striders
 s(188924)/i(207840),	-- Mega Dungeon Bronze Leather Cowl
 s(188926)/i(207842),	-- Mega Dungeon Bronze Leather Cinch
 s(188927)/i(207843),	-- Mega Dungeon Bronze Leather Bracers
@@ -66235,39 +65569,39 @@ s(188942)/i(207858),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02
 s(188944)/i(207860),	-- Mega Dungeon Infinite Cloth Robes
 s(188945)/i(207861),	-- Mega Dungeon Infinite Cloth Wrap
 s(188946)/i(207862),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Cloth Hands \\ Mega Dungeon Infinite Cloth Mitts
-s(188951)/i(207867),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Cloth Wrist \\ Mega Dungeon Infinite Cloth Bindings
+s(188951)/i(207867),	-- Arathi Field Bandages \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Cloth Wrist \\ Mega Dungeon Infinite Cloth Bindings
 s(188952)/i(207868),	-- Mega Dungeon Infinite Leather Raiment
 s(188953)/i(207869),	-- Mega Dungeon Infinite Leather Cloak
 s(188954)/i(207870),	-- Mega Dungeon Infinite Leather Treads
 s(188957)/i(207873),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Leather Shoulder \\ Mega Dungeon Infinite Leather Epaulets
 s(188958)/i(207874),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Leather Waist \\ Mega Dungeon Infinite Leather Cincture
 s(188960)/i(207876),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Mail Chest \\ Mega Dungeon Infinite Mail Chainmail
-s(188962)/i(207878),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Mail Feet \\ Mega Dungeon Infinite Mail Striders
+s(188962)/i(207878),	-- Grunt's Eternal Treads \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Mail Feet \\ Mega Dungeon Infinite Mail Striders
 s(188963)/i(207879),	-- Mega Dungeon Infinite Mail Gauntlets
 s(188964)/i(207880),	-- Mega Dungeon Infinite Mail Cowl
-s(188968)/i(207884),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Plate Chest \\ Mega Dungeon Infinite Plate Chestplate
+s(188968)/i(207884),	-- Unceasing Footman's Breastplate \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Plate Chest \\ Mega Dungeon Infinite Plate Chestplate
 s(188975)/i(207891),	-- Mega Dungeon Infinite Plate Vambraces
 s(188978)/i(207894),	-- Mega Dungeon Bronze Cloth Mitts
 s(188981)/i(207897),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Cloth Shoulder \\ Mega Dungeon Bronze Cloth Mantle
-s(188982)/i(207898),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Cloth Waist \\ Mega Dungeon Bronze Cloth Sash
+s(188982)/i(207898),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Waist \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Cloth Waist \\ Mega Dungeon Bronze Cloth Sash
 s(188983)/i(207899),	-- Mega Dungeon Bronze Cloth Bindings
 s(188987)/i(207903),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Leather Hands \\ Mega Dungeon Bronze Leather Gauntlets
 s(188989)/i(207905),	-- Mega Dungeon Bronze Leather Spaulders
 s(188995)/i(207911),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Mail Hand \\ Mega Dungeon Bronze Mail Gauntlets
-s(188996)/i(207912),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Mail Head \\ Mega Dungeon Bronze Mail Cowl
+s(188996)/i(207912),	-- Loszkeleth's Blighted Skullhelm \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Mail Head \\ Mega Dungeon Bronze Mail Cowl
 s(188997)/i(207913),	-- Mega Dungeon Bronze Mail Spaulders
 s(188998)/i(207914),	-- Mega Dungeon Bronze Mail Cinch
 s(189000)/i(207916),	-- Mega Dungeon Bronze Plate Chestplate
 s(189001)/i(207917),	-- Mega Dungeon Bronze Plate Cape
 s(189004)/i(207920),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Plate Head \\ Mega Dungeon Bronze Plate Greathelm
-s(189005)/i(207921),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Plate Shoulders \\ Mega Dungeon Bronze Plate Pauldrons
-s(189007)/i(207923),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Plate Wrist \\ Mega Dungeon Bronze Plate Vambraces
+s(189005)/i(207921),	-- Dazhak's Dessicated Wingbones \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Plate Shoulders \\ Mega Dungeon Bronze Plate Pauldrons
+s(189007)/i(207923),	-- Zealous Commander's Cuffs \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Plate Wrist \\ Mega Dungeon Bronze Plate Vambraces
 s(189011)/i(207927),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Cloth Head \\ Mega Dungeon Infinite Cloth Hood
 s(189012)/i(207928),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Cloth Legs \\ Mega Dungeon Infinite Cloth Breeches
 s(189013)/i(207929),	-- Mega Dungeon Infinite Cloth Mantle
 s(189014)/i(207930),	-- Mega Dungeon Infinite Cloth Sash
 s(189019)/i(207935),	-- Mega Dungeon Infinite Leather Gloves
-s(189020)/i(207936),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Leather Head \\ Mega Dungeon Infinite Leather Mask
+s(189020)/i(207936),	-- Hood of Perpetual Conflict \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Leather Head \\ Mega Dungeon Infinite Leather Mask
 s(189023)/i(207939),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Leather Wrist \\ Mega Dungeon Infinite Leather Wristbands
 s(189025)/i(207941),	-- Mega Dungeon Infinite Mail Drape
 s(189029)/i(207945),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Mail Shoulder \\ Mega Dungeon Infinite Mail Spaulders
@@ -66288,24 +65622,24 @@ s(189047)/i(207979),	-- Timespan Scepter
 s(189048)/i(207980),	-- Inevitable Claymore
 s(189049)/i(207981),	-- Time Splitter \\ Time Spliter
 s(189050)/i(207982),	-- Timeless Bulwark
-s(189051)/i(207983),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Offhand
+s(189051)/i(207983),	-- Progenitor's Necromantic Focus \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Offhand
 s(189052)/i(207984),	-- Chroniton Wand \\ Suffused Wand
 s(189053)/i(207985),	-- Ever-Repeating Rifle \\ Rifle In Time
-s(189054)/i(207986),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Gun
+s(189054)/i(207986),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Gun \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Gun
 s(189055)/i(207987),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Polearm - 2H AGI
 s(189056)/i(207988),	-- Time Keeper's Polearm
 s(189057)/i(207989),	-- Chronospire
 s(189058)/i(207990),	-- Temporal Battle Staff
-s(189059)/i(207991),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Warglaive
-s(189060)/i(207992),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Axe - 1H AGI
+s(189059)/i(207991),	-- Double Time \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Warglaive
+s(189060)/i(207992),	-- Fallen Drake's Bonesplitter \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Axe - 1H AGI
 s(189061)/i(207993),	-- Spacetime Cleaver
 s(189062)/i(207994),	-- Quel'Zaram, High Blade of the Lion \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Sword - 1H AGI
-s(189063)/i(207995),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H AGI \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H STR
+s(189063)/i(207995),	-- Chronikar's Ceremonial Saber \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H AGI \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H STR
 s(189064)/i(207996),	-- Nick of Time \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Dagger - 1H AGI
 s(189065)/i(207997),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Dagger - 1H INT
 s(189066)/i(207998),	-- Hoursteel Mace \\ Concussive Antecedent
 s(189067)/i(207999),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Mace - 1H INT
-s(189068)/i(208000),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Mace - 1H AGI
+s(189068)/i(208000),	-- Cudgel of Bygone Victories \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Mace - 1H AGI
 s(189069)/i(208001),	-- Timewalker's Cudgel \\ Suffused Cudgel
 s(189070)/i(208018),	-- Fangblade
 s(189071)/i(208019),	-- Quagmire Trudgers
@@ -66326,3 +65660,7 @@ s(189606)/i(208193),	-- Gorehowl, Might of the Warchief
 s(189614)/i(208172),	-- Bloodstained Runecrook
 s(189615)/i(208170),	-- Runeaxe of the Last Resistance
 s(189616)/i(208168),	-- Black Blade of K'tanth
+10.1.5.50130
+s(189654)/i(208321),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - INT Staff
+s(189716)/i(208391),	-- The Infinite Hand
+s(189751)/i(208444),	--

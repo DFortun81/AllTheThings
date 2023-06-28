@@ -34,7 +34,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 	inst(1200, {	-- Vault of the Incarnates
 		["isRaid"] = true,
 		["coord"] = { 73.0, 55.7, THALDRASZUS },
-		["order"] = "01",
 		["maps"] = {
 			2119,	-- The Primal Bulwark
 			2120,	-- The Elemental Conclave

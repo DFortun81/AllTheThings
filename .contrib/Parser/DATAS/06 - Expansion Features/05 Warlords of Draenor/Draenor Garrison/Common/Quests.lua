@@ -2980,6 +2980,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["coord"] = { 29.5, 16.4, LUNARFALL },	-- level 2 garrison
 				["provider"] = { "n", 88223 },	-- Sergeant Crowler
 				["races"] = ALLIANCE_ONLY,
+				["DisablePartySync"] = true,
 			}),
 			o(233263,{	-- Shamanstone: Blessing of the Wolf
 				["questID"] = 33977,	-- Blessing of the Wolf
