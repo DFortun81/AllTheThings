@@ -1455,6 +1455,13 @@ headerTitle:SetPoint("CENTER", logo, 0, 0)
 headerTitle:SetPoint("LEFT", logo, "RIGHT", 0, 0)
 headerTitle:SetScale(1.5)
 
+local headerSubtitle = child:CreateHeaderLabel("")
+headerSubtitle:SetPoint("TOPLEFT", headerTitle, "BOTTOMLEFT", 0, 0)
+headerSubtitle:SetScale(0.9)
+headerSubtitle.OnRefresh = function(self)
+	self:SetText(app.ccColors.ATT.."Mode: "..settings:GetShortModeString())
+end
+
 local buttonDiscord = child:CreateButton(
 -- button settings
 {
@@ -1521,7 +1528,8 @@ end
 
 -- Column 1
 local headerMinimapButton = child:CreateHeaderLabel(L["MINIMAP_LABEL"])
-headerMinimapButton:SetPoint("TOPLEFT", logo, "BOTTOMLEFT", 0, -10)
+headerMinimapButton:SetPoint("TOP", headerSubtitle, "BOTTOM", 0, -10)
+headerMinimapButton:SetPoint("LEFT", child, 0, 0)
 
 local checkboxShowMinimapButton = child:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
 function(self)
