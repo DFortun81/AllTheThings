@@ -413,14 +413,94 @@ i(0, 53687);	-- Verdant Tundra Cap
 i(0, 53690);	-- Verdant Tundra Shoulderpads
 
 ------------------
+-- PATCH 5.0.4 --
+------------------
+
+------------------
 -- PATCH 5.2.0 --
 ------------------
+-- TRAINER --
+i(0, 131865);	-- Magnificent Hide
 -- ITEM --
 i(95467, 140040);	-- Magnificence of Leather
 i(95468, 140041);	-- Magnificence of Scales
 -- DISCOVERY --
 i(0, 138596);	-- Cloud Serpent Helm
 i(0, 138595);	-- Cloud Serpent Sabatons
+i(0, 137866);	-- Crafted Dreadful Gladiator's Armbands of Meditation
+i(0, 137865);	-- Crafted Dreadful Gladiator's Armbands of Prowess
+i(0, 137832);	-- Crafted Dreadful Gladiator's Armwraps of Accuracy
+i(0, 137845);	-- Crafted Dreadful Gladiator's Armwraps of Alacrity
+i(0, 137822);	-- Crafted Dreadful Gladiator's Belt of Cruelty
+i(0, 137814);	-- Crafted Dreadful Gladiator's Belt of Meditation
+i(0, 137816);	-- Crafted Dreadful Gladiator's Bindings of Meditation
+i(0, 137824);	-- Crafted Dreadful Gladiator's Bindings of Prowess
+i(0, 137831);	-- Crafted Dreadful Gladiator's Boots of Alacrity
+i(0, 137844);	-- Crafted Dreadful Gladiator's Boots of Cruelty
+i(0, 137857);	-- Crafted Dreadful Gladiator's Chain Armor
+i(0, 137858);	-- Crafted Dreadful Gladiator's Chain Gauntlets
+i(0, 137859);	-- Crafted Dreadful Gladiator's Chain Helm
+i(0, 137860);	-- Crafted Dreadful Gladiator's Chain Leggings
+i(0, 137861);	-- Crafted Dreadful Gladiator's Chain Spaulders
+i(0, 137838);	-- Crafted Dreadful Gladiator's Copperskin Gloves
+i(0, 137839);	-- Crafted Dreadful Gladiator's Copperskin Helm
+i(0, 137840);	-- Crafted Dreadful Gladiator's Copperskin Legguards
+i(0, 137841);	-- Crafted Dreadful Gladiator's Copperskin Spaulders
+i(0, 137842);	-- Crafted Dreadful Gladiator's Copperskin Tunic
+i(0, 137809);	-- Crafted Dreadful Gladiator's Dragonhide Gloves
+i(0, 137810);	-- Crafted Dreadful Gladiator's Dragonhide Helm
+i(0, 137811);	-- Crafted Dreadful Gladiator's Dragonhide Legguards
+i(0, 137812);	-- Crafted Dreadful Gladiator's Dragonhide Robes
+i(0, 137813);	-- Crafted Dreadful Gladiator's Dragonhide Spaulders
+i(0, 137833);	-- Crafted Dreadful Gladiator's Ironskin Gloves
+i(0, 137834);	-- Crafted Dreadful Gladiator's Ironskin Helm
+i(0, 137835);	-- Crafted Dreadful Gladiator's Ironskin Legguards
+i(0, 137836);	-- Crafted Dreadful Gladiator's Ironskin Spaulders
+i(0, 137837);	-- Crafted Dreadful Gladiator's Ironskin Tunic
+i(0, 137817);	-- Crafted Dreadful Gladiator's Kodohide Gloves
+i(0, 137818);	-- Crafted Dreadful Gladiator's Kodohide Helm
+i(0, 137819);	-- Crafted Dreadful Gladiator's Kodohide Legguards
+i(0, 137820);	-- Crafted Dreadful Gladiator's Kodohide Robes
+i(0, 137821);	-- Crafted Dreadful Gladiator's Kodohide Spaulders
+i(0, 137823);	-- Crafted Dreadful Gladiator's Leather Footguards of Alacrity
+i(0, 137815);	-- Crafted Dreadful Gladiator's Leather Footguards of Meditation
+i(0, 137847);	-- Crafted Dreadful Gladiator's Leather Gloves
+i(0, 137848);	-- Crafted Dreadful Gladiator's Leather Helm
+i(0, 137849);	-- Crafted Dreadful Gladiator's Leather Legguards
+i(0, 137850);	-- Crafted Dreadful Gladiator's Leather Spaulders
+i(0, 137846);	-- Crafted Dreadful Gladiator's Leather Tunic
+i(0, 137872);	-- Crafted Dreadful Gladiator's Linked Armor
+i(0, 137873);	-- Crafted Dreadful Gladiator's Linked Gauntlets
+i(0, 137874);	-- Crafted Dreadful Gladiator's Linked Helm
+i(0, 137875);	-- Crafted Dreadful Gladiator's Linked Leggings
+i(0, 137876);	-- Crafted Dreadful Gladiator's Linked Spaulders
+i(0, 137852);	-- Crafted Dreadful Gladiator's Links of Accuracy
+i(0, 137851);	-- Crafted Dreadful Gladiator's Links of Cruelty
+i(0, 137878);	-- Crafted Dreadful Gladiator's Mail Armor
+i(0, 137863);	-- Crafted Dreadful Gladiator's Mail Footguards of Alacrity
+i(0, 137864);	-- Crafted Dreadful Gladiator's Mail Footguards of Meditation
+i(0, 137879);	-- Crafted Dreadful Gladiator's Mail Gauntlets
+i(0, 137880);	-- Crafted Dreadful Gladiator's Mail Helm
+i(0, 137881);	-- Crafted Dreadful Gladiator's Mail Leggings
+i(0, 137882);	-- Crafted Dreadful Gladiator's Mail Spaulders
+i(0, 137867);	-- Crafted Dreadful Gladiator's Ringmail Armor
+i(0, 137868);	-- Crafted Dreadful Gladiator's Ringmail Gauntlets
+i(0, 137869);	-- Crafted Dreadful Gladiator's Ringmail Helm
+i(0, 137870);	-- Crafted Dreadful Gladiator's Ringmail Leggings
+i(0, 137871);	-- Crafted Dreadful Gladiator's Ringmail Spaulders
+i(0, 137854);	-- Crafted Dreadful Gladiator's Sabatons of Alacrity
+i(0, 137853);	-- Crafted Dreadful Gladiator's Sabatons of Cruelty
+i(0, 137843);	-- Crafted Dreadful Gladiator's Waistband of Accuracy
+i(0, 137830);	-- Crafted Dreadful Gladiator's Waistband of Cruelty
+i(0, 137877);	-- Crafted Dreadful Gladiator's Waistguard of Cruelty
+i(0, 137862);	-- Crafted Dreadful Gladiator's Waistguard of Meditation
+i(0, 137856);	-- Crafted Dreadful Gladiator's Wristguards of Accuracy
+i(0, 137855);	-- Crafted Dreadful Gladiator's Wristguards of Alacrity
+i(0, 137825);	-- Crafted Dreadful Gladiator's Wyrmhide Gloves
+i(0, 137826);	-- Crafted Dreadful Gladiator's Wyrmhide Helm
+i(0, 137827);	-- Crafted Dreadful Gladiator's Wyrmhide Legguards
+i(0, 137828);	-- Crafted Dreadful Gladiator's Wyrmhide Robes
+i(0, 137829);	-- Crafted Dreadful Gladiator's Wyrmhide Spaulders
 i(0, 138592);	-- Dreadrunner Helm
 i(0, 138591);	-- Dreadrunner Sabatons
 i(0, 140185);	-- Magnificent Hide Pack

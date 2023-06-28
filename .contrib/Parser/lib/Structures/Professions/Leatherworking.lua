@@ -606,11 +606,9 @@ SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["time
 	}),
 	filter(MISC, {
 		r(343195),	-- Crafter's Mark I
-		r(308896),	-- Callous Hide
 		r(324087),	-- Desolate Armor Kit
 		r(308895),	-- Desolate Leather
 		r(309173),	-- Drums of Deathly Ferocity
-		r(308897),	-- Heavy Callous Hide
 		r(308899),	-- Heavy Desolate Leather
 		r(343660),	-- Novice Crafter's Mark
 	}),
