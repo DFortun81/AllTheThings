@@ -180,6 +180,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["groups"] = {
 							i(77947),	-- The Sleeper
 							i(77948),	-- The Dreamer
+							ach(6181),	-- Fangs of the Father
 						},
 					}),
 				}),

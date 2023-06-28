@@ -3,7 +3,7 @@
 -------------------------------------------
 root(ROOTS.Character, n(NEW_CHARACTER, {
 	n(ACHIEVEMENTS, {
-		ach(5180),	-- Breaking The Sound Barrier
+		------ Epic ------
 		ach(18366, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Epic
 			crit(1),	-- Head
 			crit(2),	-- Neck
@@ -21,6 +21,28 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			crit(14),	-- Cloak
 			crit(15),	-- Weapon
 		})),
+		ach(14797, {	-- Epic [Shadowlands]
+			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
+		}),
+		ach(12547, {	-- Epic [Battle For Azeorth]
+			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_2_LAUNCH },
+		}),
+		ach(10765, {	-- Brokenly Epic [Legion]
+			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		}),
+		ach(9708, {	-- Savagely Epic [Warlords Of Draenor]
+			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
+		}),
+		ach(6349, {	-- Mystically Epic [Mists of Pandaria]
+			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_3_LAUNCH },
+		}),
+		ach(5372, {	-- Cataclysmically Epic [Cataclysm]
+			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
+		}),
+		ach(556, {	-- Epic
+			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
+		}),
+		------ Superior ------
 		ach(18365, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Superior
 			crit(1),	-- Head
 			crit(2),	-- Neck
@@ -38,6 +60,28 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			crit(14),	-- Cloak
 			crit(15),	-- Weapon
 		})),
+		ach(14796, {	-- Superior [Shadowlands]
+			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
+		}),
+		ach(12546, {	-- Superior [Battle For Azeorth]
+			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_2_LAUNCH },
+		}),
+		ach(10764, {	-- Brokenly Superior [Legion]
+			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		}),
+		ach(9707, {	-- Savagely Superior [Warlords Of Draenor]
+			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
+		}),
+		ach(6348, {	-- Mystically Superior [Mists of Pandaria]
+			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_3_LAUNCH },
+		}),
+		ach(5373, {	-- Cataclysmically Superior [Cataclysm]
+			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
+		}),
+		ach(557, {	-- Superior
+			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
+		}),
+		ach(5180),	-- Breaking The Sound Barrier
 		ach(7380),	-- Double Agent
 		ach(7382),	-- Dynamic Duo
 		ach(889),	-- Fast and Furious
@@ -65,10 +109,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		ach(545),	-- Shave and a Haircut
 		ach(1020),	-- Ten Tabards
 		ach(7383),	-- Terrific Trio
-		ach(5755, {	-- Thirty Tabards
+		ach(5755),	-- Thirty Tabards
 		ach(1021, {	-- Twenty-Five Tabards
 			i(40643),	-- Tabard of the Achiever
-		}),
 		}),
 	}),
 	cl(DEATHKNIGHT, {

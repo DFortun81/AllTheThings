@@ -204,7 +204,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24548,	-- The Splintered Throne
 						["groups"] = {
-							i(49623)	-- Shadowmourne
+							i(49623),	-- Shadowmourne
+							ach(4623),	-- Shadowmourne
 						},
 					}),
 					q(24748, {	-- The Lich King's Last Stand

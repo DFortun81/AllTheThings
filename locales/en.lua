@@ -1166,7 +1166,6 @@ app.L = {
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
 		[-10058] = app.asset("Category_Zones"),										-- World
-		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
 	-- 8.3
 		[-10071] = "Interface\\Icons\\Paladin_Protection",							-- Vision of N'zotth
 		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault
@@ -1401,7 +1400,6 @@ app.L = {
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
 		[-10058] = WORLD,														-- World
-		[-10061] = select(2,GetAchievementInfo(7333)),							-- The Four Celestials
 	-- 8.3
 		[-10071] = "Visions of N'Zoth",
 		[-10072] = "N'Zoth Assault",
