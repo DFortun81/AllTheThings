@@ -1459,7 +1459,7 @@ local headerSubtitle = child:CreateHeaderLabel("")
 headerSubtitle:SetPoint("TOPLEFT", headerTitle, "BOTTOMLEFT", 0, 0)
 headerSubtitle:SetScale(0.9)
 headerSubtitle.OnRefresh = function(self)
-	self:SetText(app.ccColors.ATT.."Mode: "..settings:GetShortModeString())
+	self:SetText(app.ccColors.ATT..L["MODE"]..": "..settings:GetShortModeString())
 end
 
 local buttonDiscord = child:CreateButton(
