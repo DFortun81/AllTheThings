@@ -1087,7 +1087,6 @@ root(ROOTS.Unsorted, {
 				q(75338),	-- Lavermix
 				q(75341),	--
 				q(75342),	-- Kronkapace
-				q(75372),	-- Drive Them Before Us
 				q(75376),	-- Suffuse, Reuse, Recycle
 				q(75389),	--
 				q(75408),	-- Calling All Dracthyr!

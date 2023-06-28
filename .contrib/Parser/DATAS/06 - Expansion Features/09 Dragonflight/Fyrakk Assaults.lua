@@ -98,6 +98,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
 				}),
+				q(75372, {	-- Drive Them Before Us
+					["provider"] = { "n", 203601 },	-- Blubberwall
+					["coord"] = { 57.7, 34.4, THE_AZURE_SPAN },
+				}),
 				q(75383, {	-- Hideaway No More
 					["provider"] = { "n", 203604 },	-- Old Grimtusk
 					["coord"] = { 58.4, 33.4, THE_AZURE_SPAN },
