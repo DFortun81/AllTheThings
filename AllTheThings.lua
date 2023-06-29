@@ -6100,6 +6100,9 @@ app.SearchForObject = function(field, id, require)
 		end
 		local fcacheObj;
 		require = (require == "key" and 2) or (require == "field" and 1) or 0;
+		-- Items are cached by base ItemID and ModItemID, so when searching by ItemID, use ModItemID for
+		-- match requirement accuracy
+		field = field == "itemID" and "modItemID" or field;
 		-- quick escape for single cache results! hooray!
 		if count == 1 then
 			fcacheObj = fcache[1];
