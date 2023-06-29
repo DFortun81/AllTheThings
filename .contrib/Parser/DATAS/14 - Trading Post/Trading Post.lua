@@ -691,9 +691,6 @@ root(ROOTS.NeverImplemented, {
 				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
 				i(190539),	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
 				i(190168),	-- Crusty Crawler (MOUNT!) (Unknown 2023)
-				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
-					["timeline"] = { "added 10.1.0" },
-				}),
 				i(69846),	-- Winged Guardian (MOUNT!) Blizz promised this when removing from store in Jan 2023
 			})),
 		})
