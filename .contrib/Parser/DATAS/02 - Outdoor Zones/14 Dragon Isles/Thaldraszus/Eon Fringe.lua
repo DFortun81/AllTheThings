@@ -146,6 +146,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 				}),
+				q(75990, {	-- Star-Crossed Lovers
+					["provider"] = { "n", 205424 },	-- Chromie
+					["coord"] = { 52.1, 81.6, THALDRASZUS },
+					["g"] = {
+						i(206695),	-- Pale Duskblossom
+					}
+				}),
 				q(75987, {	-- Woolomancer
 					["provider"] = { "n", 205769 },	-- Soridormi
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
@@ -199,7 +206,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 })));
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	q(76350),	-- after turn in The Chronosmith (questID ?)
+	q(76350),	-- after turn in The Chronosmith (questID 76350)
 
-	q(77172),	-- after turn in Woolomancer (questID 75987)
+	q(77172),	-- Encapsulated Destiny was in reward (once per week?)
 }));
