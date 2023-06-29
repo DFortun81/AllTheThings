@@ -10,7 +10,7 @@ DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
 		cn = "巨龙时代季节性促销",
 	},
 	description = {
-		en = "These promotions happened during the time Dragonflight was the most recent content between 25th October 2022 & 12nd November 2024.\n\nThey are listed in the order of their first appearance.",
+		en = "These promotions happened during the time Dragonflight was the most recent content between 25th October 2022 & 12th November 2024.\n\nThey are listed in the order of their first appearance.",
 	},
 });
 root(ROOTS.Promotions, {
