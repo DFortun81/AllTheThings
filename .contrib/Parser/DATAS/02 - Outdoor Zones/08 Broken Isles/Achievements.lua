@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				11545,	-- Legionfall Commander
 			}},
 		}),
-		petbattle(ach(9696, {		-- Family Familiar
+		petbattle(ach(9696, {	-- Family Familiar
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
 				9686,	-- Aquatic Acquiescence
@@ -521,6 +521,16 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				a(i(129280)),	-- Prestigious War Steed (MOUNT!)
 				h(i(143864)),	-- Prestigious War Wolf (MOUNT!)
 			},
+		}),
+		ach(11157, {	-- Loremaster of Legion
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				10763,	-- Azsuna Matata
+				10698,	-- That's Val'sharah Folks!
+				10790,	-- Vrykul Story, Bro
+				10059,	-- Ain't No Mountain High Enough
+				11124,	-- Good Suramaritan
+			}},
 		}),
 		ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 			crit(1, {	-- Felspider
