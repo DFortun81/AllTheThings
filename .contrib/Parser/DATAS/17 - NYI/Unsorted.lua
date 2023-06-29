@@ -290,7 +290,6 @@ root(ROOTS.Unsorted, {
 			i(202697),	-- Crimson Cushion
 			i(203712),	-- Soft Peafowl Down
 			i(204000),	-- Storm-Infused Stone
-			i(204263),	-- Time Grime
 			i(204275),	-- Slimey Key
 			i(204869),	-- Bolt of Ruby Cloth
 			i(204870),	-- Lasztak's Thread Order
@@ -310,8 +309,6 @@ root(ROOTS.Unsorted, {
 			i(206191),	-- Roquefort-Stuffed Peppers
 			i(206192),	-- Picante Pomfruit Cake
 			i(206346),	-- Eva's Journal
-			i(206351),	-- Plans: Truesilver Champion
-			i(206352),	-- Plans: The Shatterer
 			i(206354),	-- Stinky Candle
 			i(206355),	-- Tobacco-Filled Candle
 			i(206356),	-- Ghost-Warding Candle
@@ -324,7 +321,6 @@ root(ROOTS.Unsorted, {
 			i(206363),	-- The Road Ahead
 			i(206364),	-- Eva's Femur
 			i(206365),	-- Inert Spectral Essence
-			i(206368),	-- Wand of Mass Polymorph
 			i(206369),	-- Time Trap
 			i(206370),	-- Blood of Innocents
 			i(206371),	-- Viewing Room Key
@@ -539,14 +535,10 @@ root(ROOTS.Unsorted, {
 			i(206645),	-- Cursed Cloth
 			i(206683),	-- Wrathion's Tab
 			i(206695),	-- Pale Duskblossom
-			i(206763),	-- Kabluey
 			i(206771),	-- Pattern: Cursed Cloth
 			i(206775),	-- Map to Suramar
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
-			i(206926),	-- Keeper's Gavel
-			i(206927),	-- Curator's Warhammer
-			i(206928),	-- Attendent's Hammer
 			i(206931),	-- Truesilver Champion
 			i(205259),	-- Order Soul
 			i(206163),	-- Temporal Gossamer
@@ -557,7 +549,6 @@ root(ROOTS.Unsorted, {
 			i(206957),	-- Boffins
 			i(206962),	-- Watcher's Log
 			i(206984),	-- Blood-Soaked Book
-			i(206997),	-- Gilded Sunglasses
 			i(206998),	-- Ragged Mantid Sword
 			i(16222),	-- Formula: Enchant Shield - Vitality
 			i(206998),	-- Amber Sword
@@ -755,7 +746,6 @@ root(ROOTS.Unsorted, {
 			i(208050),	-- Grimoire of the Xorothian Felhunter
 			i(208051),	-- Grimoire of the Antoran Felhunter
 			i(208052),	-- Grimoire of the Voracious Felmaw
-			i(208053),	-- Time Inert Souvenir
 			i(208061),	-- Quantum Headpiece
 			i(208062),	-- Quantum Shoulders
 			i(208063),	-- Quantum Gloves
@@ -766,7 +756,6 @@ root(ROOTS.Unsorted, {
 			i(208094),	-- Cache of Timewarped Treasures
 			i(208095),	-- Cache of Timewarped Treasures
 			i(208097),	-- Flamethrower
-			i(208100),	-- Seashellamayne the Shattered
 			i(208108),	-- Madam Shadow's Old Grimoire
 			i(208147),	-- Yellow Tweed Cap
 			i(208148),	-- Burgandy Cap
@@ -860,9 +849,6 @@ root(ROOTS.Unsorted, {
 			i(206160),	-- Madam Shadow's Grimoire
 			i(206394),	-- Red Dragon Egg
 			i(206520),	-- Beverage for Pedgi
-			i(206521),	-- Single Black Coffee
-			i(206523),	-- Five-Eon Energy
-			i(206524),	-- Eonized Latte
 			i(206653),	-- Fel Pinecone
 			i(206681),	-- Letter from Oman
 			i(206799),	-- Pauldrons of the Fire Lord
@@ -888,8 +874,6 @@ root(ROOTS.Unsorted, {
 			i(208053),	-- Irons's Artifacts
 			i(208226),	-- Mysterious Letter
 			i(208227),	-- Mysterious Letter
-			i(208235),	-- Pedgi's Spare Sunglasses
-			i(208236),	-- Melly's Metronographer
 			i(208321),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - INT Staff
 			i(208390),	-- Bronze Archive Stone
 			i(208391),	-- The Infinite Hand
@@ -899,17 +883,6 @@ root(ROOTS.Unsorted, {
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
 			i(208448),	-- Infinitea
 			i(208449),	-- Melly's Metronographer+++
-			i(208460),	-- The Coffee Stained Skull of Dul'gan
-			i(208461),	-- Some Book of Medivh
-			i(208462),	-- Vial of the Funswell
-			i(208463),	-- Helm of Somnation
-			i(208464),	-- The Firestone Containment Jar
-			i(208465),	-- The Cheers of Elune
-			i(208466),	-- Celestial Carrot
-			i(208467),	-- Larval Quintessence
-			i(208468),	-- L4WG1V3R Mechakey
-			i(208469),	-- At-a-Stall Crystal
-			i(208482),	-- The Heart of the Timeforge
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			filter(RECIPES, {
