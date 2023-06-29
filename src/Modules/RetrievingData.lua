@@ -23,9 +23,12 @@ local api = {};
 app.Modules.RetrievingData = api;
 -- Returns whether the provided string matches a string which indicates the data is not yet loaded in the Client
 api.IsRetrieving = function(s)
-	return not s
+	return (not s
+		or s == ""
 		or s == RETRIEVING_DATA
 		or s == RETRIEVING_ITEM_INFO
 		or s:find(RETRIEVING)
-		or s:find("^%[%]");
+		or s:find("^%[%]"))
+		-- make sure regardless of conditional return we return a true here for consistency
+		and true;
 end
