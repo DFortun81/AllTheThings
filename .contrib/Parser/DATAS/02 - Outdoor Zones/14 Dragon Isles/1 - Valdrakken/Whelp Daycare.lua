@@ -246,8 +246,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(72992, {	-- You're Playing Wrong!
 					["sourceQuests"] = { 72991 },	-- Warm Dragonfruit Pie
-					["provider"] = { "n", 182082 },	-- Agapanthus
-					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 				}),
 				------ Day 3 ------
 				q(72993, {	-- I'm the Boss!
@@ -475,8 +475,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73120, {	-- Appetizing Aftermath
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 				}),
 				q(74492, {	-- Blistering Belastrasza
 					["sourceQuests"] = { 72993 },	-- I'm the Boss!
