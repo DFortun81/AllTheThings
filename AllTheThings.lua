@@ -1450,9 +1450,10 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 -- Source ID Harvesting Lib
 local DressUpModel = CreateFrame('DressUpModel');
 GetSourceID = function(itemLink)
-	if C_Item_IsDressableItemByID(itemLink) then
+	if itemLink and C_Item_IsDressableItemByID(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
 		local sourceID = select(2, C_TransmogCollection_GetItemInfo(itemLink));
+		-- app.PrintDebug("TMOGSourceID",sourceID,itemLink)
 		if sourceID then return sourceID, true; end
 
 		-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
@@ -1473,8 +1474,8 @@ GetSourceID = function(itemLink)
 						-- Adjusted to account for non-transmoggable SourceIDs which are collectible
 						local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 						if sourceInfo then
-							-- app.PrintDebug("SourceID from DressUpModel",sourceID,sourceInfo.itemID,sourceInfo.name)
 							if sourceInfo.itemID == itemID then
+								-- app.PrintDebug("DressUpModelSourceID",itemLink,sourceID,sourceInfo.itemID,sourceInfo.name)
 								return sourceID, true;
 							end
 						end
@@ -1487,43 +1488,6 @@ GetSourceID = function(itemLink)
 	return nil, false;
 end
 end
--- verifies that an item group either has no sourceID or that its sourceID matches what the in-game API returns
--- based on the itemID and modID of the item
--- local function VerifySourceID(item)
--- 	-- ignore things which arent items
--- 	if not item.itemID then return true; end
--- 	-- no source at all, try to get it
--- 	if not item.s or item.s == 0 then return; end
--- 	-- unobtainable item, don't change the sourceID
--- 	if item.u then return true; end
--- 	-- seasonal item, don't change the sourceID
--- 	if item.e then return true; end
--- 	local sourceInfo = C_TransmogCollection_GetSourceInfo(item.s);
--- 	-- no source info or no item for the source
--- 	-- ignore this, maybe blizz removed a sourceID that we tracked in the past...?
--- 	if not sourceInfo or not sourceInfo.itemID then
--- 		print("Invalid SourceID",item.itemID,item.modID,item.s);
--- 		return;
--- 	end
--- 	-- item for the source is different than the current item
--- 	if sourceInfo.itemID and sourceInfo.itemID ~= item.itemID then
--- 		print("Inaccurate SourceID",item.itemID,item.modID,item.s,"=>",sourceInfo.itemID,sourceInfo.itemModID);
--- 		return;
--- 	end
--- 	-- check that the group's itemlink still returns the same sourceID as saved in the group
--- 	if item.link and not item.retries then
--- 		local linkInfoSourceID = GetSourceID(item.link);
--- 		if linkInfoSourceID and linkInfoSourceID ~= item.s then
--- 			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
--- 			return;
--- 		end
--- 	-- item has not pulled its link yet, so include it for re-sourcing anyway
--- 	elseif item.retries then
--- 		return;
--- 	end
--- 	-- at this point the game source information matches the information for this item group
--- 	return true;
--- end
 -- Attempts to determine an ItemLink which will return the provided SourceID
 app.DetermineItemLink = function(sourceID)
 	local link;
@@ -1531,14 +1495,15 @@ app.DetermineItemLink = function(sourceID)
 	local itemID = sourceInfo and sourceInfo.itemID;
 	-- No ItemID don't try to generate the link
 	if not itemID then
-		-- app.PrintDebug("Could not generate Item Link for",sourceID,"(No Source Info from Blizzard)");
+		-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No Source Info from Blizzard)");
 		return;
 	end
 	local itemFormat = "item:"..itemID;
 	-- Check Raw Item
 	link = itemFormat;
-	-- if quality is Artifact / Unmodified Item / Category 'Paired'  just return the basic Item string
+	-- if quality is Artifact / Unmodified Item / Category 'Paired' just return the basic Item string
 	if sourceInfo.quality == 6 or sourceInfo.itemModID == 0 or sourceInfo.categoryID == 29 then
+		-- app.PrintDebug("DetermineItemLink:Good",sourceID,"(Basic Item Data)");
 		return link;
 	end
 	local checkID, found = GetSourceID(link);
@@ -1563,7 +1528,7 @@ app.DetermineItemLink = function(sourceID)
 		-- app.PrintDebug(link,checkID,found)
 		if found and checkID == sourceID then return link; end
 	end
-	-- app.PrintDebug("Could not generate Item Link for",sourceID,"(No ModID or BonusID match)");
+	-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No ModID or BonusID match)");
 end
 app.IsComplete = function(o)
 	if o.total and o.total > 0 then return o.total == o.progress; end
@@ -10804,6 +10769,7 @@ local function RawSetItemInfoFromLink(t, link)
 		local _t, id = cache.GetCached(t);
 		print("rawset item info",id,link,name,quality,b)
 		--]]
+		-- app.PrintDebug("RawSetLink",link)
 		t = cache.GetCached(t);
 		t.retries = nil;
 		t.name = name;
@@ -10947,8 +10913,10 @@ local itemFields = {
 		end
 	end,
 	["modItemID"] = function(t)
-		t.modItemID = GetGroupItemIDWithModID(t) or t.itemID;
-		return t.modItemID;
+		local modItemID = GetGroupItemIDWithModID(t) or t.itemID;
+		-- app.PrintDebug("item.modItemID",modItemID,t.key,t[t.key])
+		t.modItemID = modItemID;
+		return modItemID;
 	end,
 	["indicatorIcon"] = app.GetQuestIndicator,
 	["trackableAsQuest"] = function(t)
@@ -11104,7 +11072,8 @@ local fields = RawCloneData(itemFields, {
 		-- async generation of the proper Item Link
 		-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
 		t.__autolink = true;
-		app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
+		-- app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
+		app.GenerateGroupLinkUsingSourceID(t);
 	end,
 });
 app.BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
@@ -11852,7 +11821,7 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 			if not ignoreSource then
 				-- does this link also have a sourceID?
 				local s = GetSourceID(rawlink);
-				-- print("s",s)
+				-- app.PrintDebug("IRL:GS",rawlink,s)
 				if s then group.s = s; end
 				-- if app.DEBUG_PRINT then app.PrintTable(group) end
 			end
@@ -11868,6 +11837,7 @@ app.GenerateGroupLinkUsingSourceID = function(group)
 	if not link then return; end
 
 	app.ImportRawLink(group, link, true);
+	-- app.PrintDebug("GGLUS",link,s)
 
 	local sourceGroup = app.SearchForObject("s", s, "key");
 	if not sourceGroup then
@@ -11881,7 +11851,7 @@ app.SaveHarvestSource = function(data)
 		local item = AllTheThingsHarvestItems[itemID];
 		if not item then
 			item = {};
-			-- app.PrintDebug("NEW SOURCE ID!",data.text,data.modItemID or itemID,"=>",s);
+			-- app.PrintDebug("SAVED SOURCE ID!",data.text,data.modItemID or itemID,"=>",s);
 			AllTheThingsHarvestItems[itemID] = item;
 		end
 		local bonusID = data.bonusID;
@@ -20868,55 +20838,57 @@ customWindowUpdates["Sync"] = function(self)
 	end
 end;
 customWindowUpdates["list"] = function(self, force, got)
-	local function VerifyGroupSourceID(data)
-		if data._VerifyGroupSourceID then return; end
-		local link, source = data.link, data.s;
-		if not link then return; end
-		-- If it doesn't, the source ID will need to be harvested.
-		local s, success = GetSourceID(link) or (data.artifactID and data.s);
-		-- app.PrintDebug("SourceIDs",data.modItemID,source,s,success)
-		data._VerifyGroupSourceID = true;
-		if s and s > 0 then
-			-- only save the source if it is different than what we already have, or being forced
-			if not source or source < 1 or source ~= s or data.artifactID then
-				app.print("SourceID Update",link,data.modItemID,source,"=>",s);
-				-- print(GetItemInfo(text))
-				data.s = s;
-				if data.artifactID then
-					local artifact = AllTheThingsArtifactsItems[data.artifactID];
-					if not artifact then
-						artifact = {};
-					end
-					artifact[data.isOffHand and 1 or 2] = s;
-					AllTheThingsArtifactsItems[data.artifactID] = artifact;
-				else
-					app.SaveHarvestSource(data);
-				end
-			end
-		elseif success then
-			print("Success without a SourceID", link);
-		end
-	end
-	local function RemoveSelf(o)
-		local parent = rawget(o, "parent");
-		if not parent then
-			app.PrintDebug("no parent?",o.text)
-			return;
-		end
-		local og = parent.g;
-		if not og then
-			app.PrintDebug("no g?",parent.text)
-			return;
-		end
-		local i = indexOf(og, o) or (o.__dlo and indexOf(og, o.__dlo));
-		if i and i > 0 then
-			-- app.PrintDebug("RemoveSelf",#og,i,o.text)
-			tremove(og, i);
-			-- app.PrintDebug("RemoveSelf",#og)
-		end
-		return og;
-	end
 	if not self.initialized then
+		self.VerifyGroupSourceID = function(data)
+			if data._VerifyGroupSourceID then return; end
+			local link, source = data.link, data.s;
+			if not link then return; end
+			-- If it doesn't, the source ID will need to be harvested.
+			local s, success = GetSourceID(link) or (data.artifactID and data.s);
+			-- app.PrintDebug("SourceIDs",data.modItemID,source,s,success)
+			data._VerifyGroupSourceID = true;
+			if s and s > 0 then
+				-- only save the source if it is different than what we already have, or being forced
+				if not source or source < 1 or source ~= s or data.artifactID then
+					app.print("SourceID Update",link,data.modItemID,source,"=>",s,data.artifactID);
+					app.DEBUG_PRINT = nil
+					-- print(GetItemInfo(text))
+					data.s = s;
+					if data.artifactID then
+						local artifact = AllTheThingsArtifactsItems[data.artifactID];
+						if not artifact then
+							artifact = {};
+						end
+						artifact[data.isOffHand and 1 or 2] = s;
+						AllTheThingsArtifactsItems[data.artifactID] = artifact;
+					else
+						app.SaveHarvestSource(data);
+					end
+				end
+			elseif success then
+				print("Success without a SourceID", link);
+			end
+		end
+		self.RemoveSelf = function(o)
+			local parent = rawget(o, "parent");
+			if not parent then
+				app.PrintDebug("no parent?",o.text)
+				return;
+			end
+			local og = parent.g;
+			if not og then
+				app.PrintDebug("no g?",parent.text)
+				return;
+			end
+			local i = indexOf(og, o) or (o.__dlo and indexOf(og, o.__dlo));
+			if i and i > 0 then
+				-- app.PrintDebug("RemoveSelf",#og,i,o.text)
+				tremove(og, i);
+				-- app.PrintDebug("RemoveSelf",#og)
+			end
+			return og;
+		end
+
 		-- temporarily prevent a force refresh from exploding the game if this window is open
 		self.doesOwnUpdate = true;
 		self.initialized = true;
@@ -21051,11 +21023,11 @@ customWindowUpdates["list"] = function(self, force, got)
 			text = harvesting and function(o, key)
 				local text = o.text;
 				if not IsRetrieving(text) then
-					VerifyGroupSourceID(o);
-					local og = RemoveSelf(o);
+					self.VerifyGroupSourceID(o);
+					local og = self.RemoveSelf(o);
 					-- app.PrintDebug(#og,"-",text)
 					if #og <= 0 then
-						RemoveSelf(o.parent);
+						self.RemoveSelf(o.parent);
 					else
 						o.visible = true;
 					end
@@ -21066,7 +21038,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			or function(o, key)
 				local text, key = o.text, o.key;
 				if not IsRetrieving(text) then
-					VerifyGroupSourceID(o);
+					self.VerifyGroupSourceID(o);
 					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
 				end
 			end,
