@@ -12084,6 +12084,17 @@ local function CacheInfo(t, field)
 	else
 		_t.link = GetSpellLink(id);
 	end
+	-- track retries on cacheing mount info... some mounts just never return info
+	local retries = _t.retries or 0;
+	retries = retries + 1;
+	if retries > 20 then
+		local name = (itemID and sformat("Item #%d",itemID)) or
+					(id and sformat("Spell #%d",id));
+		_t.text = name;
+		_t.name = name;
+		_t.icon = 134400;	-- question mark
+	end
+	_t.retries = retries;
 	if field then return _t[field]; end
 end
 local function default_costCollectibles(t)
@@ -12162,7 +12173,7 @@ local RefreshMounts = function(newMountID)
 	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
 	-- plus it's not laggy now to do that so it should be fine
 
-	for _,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+	for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
 		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 		if spellID and isCollected then
 			if not collectedSpells[spellID] then
@@ -16685,14 +16696,16 @@ RowOnEnter = function (self)
 			"name",
 			"link",
 			"sourceParent",
-			"sourceIgnored",
-			"collectible",
-			"collected",
-			"trackable",
-			"saved",
-			"collectibleAsCost",
-			"costTotal",
-			"costProgress"
+			-- "sourceIgnored",
+			-- "collectible",
+			-- "collected",
+			-- "trackable",
+			-- "saved",
+			-- "collectibleAsCost",
+			-- "costTotal",
+			-- "costProgress",
+			"itemID",
+			"modItemID"
 		};
 		GameTooltip:AddLine("-- Extra Fields:");
 		for _,key in ipairs(fields) do
@@ -20851,7 +20864,6 @@ customWindowUpdates["list"] = function(self, force, got)
 				-- only save the source if it is different than what we already have, or being forced
 				if not source or source < 1 or source ~= s or data.artifactID then
 					app.print("SourceID Update",link,data.modItemID,source,"=>",s,data.artifactID);
-					app.DEBUG_PRINT = nil
 					-- print(GetItemInfo(text))
 					data.s = s;
 					if data.artifactID then
@@ -20887,6 +20899,32 @@ customWindowUpdates["list"] = function(self, force, got)
 				-- app.PrintDebug("RemoveSelf",#og)
 			end
 			return og;
+		end
+		self.AutoHarvestFirstPartitionCoroutine = function()
+			-- app.PrintDebug("AutoExpandingPartitions")
+			local i = 10;
+			-- yield a few frames to allow the list to fully generate
+			while i > 0 do
+				coroutine.yield();
+				i = i - 1;
+			end
+
+			local partitions = self.data.g;
+			if not partitions then return; end
+
+			local part;
+			-- app.PrintDebug("AutoExpandingPartitions",#partitions)
+			while #partitions > 0 do
+				part = partitions[1];
+				if not part.expanded then
+					part.expanded = true;
+					-- app.PrintDebug("AutoExpand",part.text)
+					app.DirectGroupRefresh(part);
+				end
+				coroutine.yield();
+				-- Make sure the coroutine stops running if we close the list window
+				if not self:IsVisible() then return; end
+			end
 		end
 
 		-- temporarily prevent a force refresh from exploding the game if this window is open
@@ -21066,6 +21104,7 @@ customWindowUpdates["list"] = function(self, force, got)
 		end
 		if harvesting then
 			app.SetDGUDelay(0);
+			StartCoroutine("AutoHarvestFirstPartitionCoroutine", self.AutoHarvestFirstPartitionCoroutine);
 		end
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
