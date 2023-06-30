@@ -11504,6 +11504,7 @@ itemHarvesterFields.text = function(t)
 	end
 	local link = t.link;
 	if link then
+		app.ImportRawLink(t, link);
 		local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
 		itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
 			= GetItemInfo(link);
@@ -19324,283 +19325,6 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 		self:BaseUpdate(force);
 	end
 end;
-customWindowUpdates["ItemFinder"] = function(self, ...)
-	if self:IsVisible() then
-		if not self.initialized then
-			local partition = app.GetCustomWindowParam("finder", "partition");
-			local limit = app.GetCustomWindowParam("finder", "limit");
-
-			app.MaximumItemInfoRetries = 10;
-			self.doesOwnUpdate = true;
-			self.initialized = true;
-			self.Limit = tonumber(limit) or 200000;
-			self.PartitionSize = tonumber(partition) or 1000;
-			self.ScrollCount = 2;
-			local db = {};
-			local CleanUpHarvests = function()
-				local scrollCount = self.ScrollCount;
-				local windowRows = self.rowData;
-				local completed = true;
-				local currentRow;
-				local text;
-				-- check each row in order to see if it is completed
-				while completed do
-					currentRow = windowRows[scrollCount];
-					-- i don't know why calling the .text field on the row an extra time is necessary. but otherwise this logic doesn't work.
-					text = currentRow and currentRow.text;
-					completed = currentRow and currentRow.collected;
-					if completed then
-						scrollCount = scrollCount + 1;
-					end
-				end
-				-- set the scroll position of the window based on how many completed rows have been encountered
-				-- every row has been completed
-				if scrollCount >= #windowRows then
-					self.ScrollCount = 2;
-					self.ScrollBar:SetValue(1);
-					self.UpdateDone = nil;
-					-- update the window since we've cleared everything available
-					-- app.PrintDebug("UpdateWindow - done processing")
-					-- self:Update();
-				else
-					self.ScrollCount = scrollCount;
-					self.ScrollBar:SetValue(scrollCount);
-				end
-				self:Refresh();
-			end
-			-- processes the content of the partition and makes the partition hidden if everything within is completed
-			-- local RemoveHarvests = function(self)
-			-- 	app.PrintDebug("OnUpdate",self.text)
-			-- 	if self.visible and self.g then
-			-- 		local completed, i, g = true, 1, self.g;
-			-- 		local o;
-			-- 		-- check each item in order to see if it is completed
-			-- 		while completed and i < #g do
-			-- 			o = g[i];
-			-- 			completed = o and o.collected;
-			-- 			if completed then
-			-- 				i = i + 1;
-			-- 			end
-			-- 		end
-			-- 		if completed then
-			-- 			app.PrintDebug("Hide Partition",self.text)
-			-- 			self.visible = false;
-			-- 			self.OnUpdate = nil;
-			-- 		end
-			-- 	end
-			-- 	return true;
-			-- end
-			-- add a bunch of raw, delay-loaded items in order into the window
-			local groupCount, id = math.floor(self.Limit / self.PartitionSize);
-			local g, overrides = {}, {visible=true};
-			local partition, partitionStart, partitionGroups;
-			local dlo, obj = app.DelayLoadedObject, app.CreateItemHarvester;
-			for j=0,groupCount,1 do
-				partitionStart = j * self.PartitionSize;
-				partitionGroups = {};
-				-- define a sub-group for a range of quests
-				partition = {
-					["text"] = tostring(partitionStart + 1).."+",
-					["icon"] = app.asset("Interface_Quest_header"),
-					["visible"] = true,
-					["collected"] = true,
-					["OnClick"] = function(row, button)
-						-- assign the clean up method now that the group was clicked
-						self.UpdateDone = CleanUpHarvests;
-						-- no return so that it acts like a normal row
-					end,
-					-- ["OnUpdate"] = RemoveHarvests,
-					["g"] = partitionGroups,
-				};
-				if partitionStart + 1 < self.Limit then
-					for i=1,self.PartitionSize,1 do
-						id = partitionStart + i;
-						if id <= self.Limit then
-							tinsert(partitionGroups, dlo(obj, "text", overrides, id));
-						end
-					end
-				end
-				tinsert(g, partition);
-			end
-			db.g = g;
-			db.text = "Item Harvester";
-			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider";
-			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nExpand a group to harvest the 1,000 Items within that range.";
-			db.visible = true;
-			db.back = 1;
-			self:SetData(db);
-		end
-		self:BaseUpdate(true);
-	end
-end;
--- customWindowUpdates["Harvester"] = function(self, force)
--- 	if self:IsVisible() then
--- 		if not self.initialized then
--- 			self.initialized = true;
--- 			self.doesOwnUpdate = true;
--- 			force = true;
--- 			-- ensure Debug is enabled to fully capture all information
--- 			if not app.MODE_DEBUG then
--- 				app.print("Enabled Debug Mode");
--- 				self.forcedDebug = true;
--- 				app.Settings:ToggleDebugMode();
--- 			end
-
--- 			local db = {};
--- 			db.g = {};
--- 			db.text = "Harvesting All Item SourceIDs";
--- 			db.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
--- 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW a lot!";
--- 			db.visible = true;
--- 			db.progress = 0;
--- 			db.total = 0;
--- 			db.back = 1;
-
--- 			local harvested = {};
--- 			local oldRetries = app.MaximumItemInfoRetries;
--- 			app.PrintDebug(self.Suffix, app.GetCustomWindowParam(self.Suffix, "min"))
--- 			local min = app.GetCustomWindowParam(self.Suffix, "min") or 0;
--- 			local max = app.GetCustomWindowParam(self.Suffix, "max") or 999999;
--- 			local force = app.GetCustomWindowParam(self.Suffix, "force");
--- 			app.print("Set Harvest ItemID Bounds:",min,max);
--- 			app.MaximumItemInfoRetries = 10;
--- 			local g = {};
--- 			local i,m,b;
--- 			local modItemID;
--- 			local CreateItem = app.CreateItem;
-
--- 			-- capture all modItemID to harvest from cache into array
--- 			local HarvestItems = {};
--- 			for itemID,groups in pairs(app.SearchForFieldContainer("itemID")) do
--- 				-- ignore items that dont meet the customHarvest range if specified
--- 				if min <= itemID and itemID <= max then
--- 					-- clean any cached modID from the itemID
--- 					-- app.PrintDebug("Check",itemID)
--- 					-- clone the Item for this item cache
--- 					for _,item in ipairs(groups) do
--- 						-- only use the matching cached Item
--- 						modItemID = item.modItemID or item.itemID;
--- 						if not harvested[modItemID] then
--- 							harvested[modItemID] = true;
--- 							tinsert(HarvestItems, modItemID);
--- 						end
--- 					end
--- 				end
--- 			end
--- 			-- coroutine:
--- 			-- each frame try adding up to 100 items into harvest window from HarvestItems; using harvest wrapper from /att list?
--- 			local FillWindowCoroutine = function()
--- 				local x = 1;
--- 				local diff;
--- 				while x < #HarvestItems do
--- 					diff = 100 - #g;
--- 					if diff > 0 then
--- 						for i=x,x+diff do
--- 							tinsert(g, CreateItem(tonumber(i), {visible = true, reSource = true, forceSource = force, modID = m, bonusID = b}));
--- 						end
--- 					end
--- 				end
--- 			end
-
--- 			StartCoroutine(FillWindowCoroutine);
-
-
-
-
--- 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
--- 			-- for itemID,groups in pairs(fieldCache["itemID"]) do
--- 			-- 	-- ignore items that dont meet the customHarvest range if specified
--- 			-- 	if min <= itemID and itemID <= max then
--- 			-- 		-- clean any cached modID from the itemID
--- 			-- 		-- app.PrintDebug("Check",itemID)
--- 			-- 		-- clone the Item for this item cache
--- 			-- 		for _,item in ipairs(groups) do
--- 			-- 			-- only use the matching cached Item
--- 			-- 			modItemID = item.modItemID or item.itemID;
--- 			-- 			if not harvested[modItemID] then
--- 			-- 				harvested[modItemID] = true;
--- 			-- 				i,m,b = GetItemIDAndModID(modItemID);
--- 			-- 				-- app.PrintDebug("Harvest",modItemID,i,m,b)
--- 			-- 				tinsert(g, app.CreateItem(tonumber(i), {visible = true, reSource = true, forceSource = force, s = item.s, modID = m, bonusID = b}));
--- 			-- 			end
--- 			-- 		end
--- 			-- 	end
--- 			-- end
--- 			wipe(harvested);
--- 			-- add artifacts
--- 			-- artifacts have been fine for quite a while. can leave this here in case later they ever break
--- 			-- for artifactID,groups in pairs(fieldCache["artifactID"]) do
--- 			-- 	for _,group in pairs(groups) do
--- 			-- 		if not group.s then
--- 			-- 			tinsert(g, setmetatable({
--- 			-- 				visible = true,
--- 			-- 				artifactID = tonumber(artifactID),
--- 			-- 				silentItemID = group.silentItemID,
--- 			-- 				isOffHand = group.isOffHand,
--- 			-- 				reSource = true,
--- 			-- 			}, app.BaseArtifact));
--- 			-- 		end
--- 			-- 	end
--- 			-- end
--- 			-- total doesnt change
--- 			local total = #g;
--- 			db.total = total;
--- 			db.progress = 0;
--- 			db.g = g;
--- 			self:SetData(db);
--- 			self:BuildData();
--- 			self.ScrollBar:SetValue(1);
--- 			self.UpdateDone = function(self)
--- 				-- rowdata = set of visible groups which can show in the window
--- 				local rowData = self.rowData;
--- 				-- Remove up to 100 completed rows each frame (no need to process through thousands of rows when only a few update each frame)
--- 				local progress = rowData[1].progress;
--- 				-- Adjust progress of first chunk of completed harvests
--- 				local group, rowSourced;
--- 				for i=2,100 do
--- 					group = rowData[i];
--- 					-- count how many visible & processed groups we find to increment the progress
--- 					if group and group.visible and not group.reSource then
--- 						group.visible = nil;
--- 						progress = progress + 1;
--- 						rowSourced = true;
--- 					end
--- 				end
--- 				-- for some reason the total changes outside of this function... so make sure it stays constant
--- 				rowData[1].total = total;
--- 				rowData[1].progress = progress;
--- 				if progress >= total then
--- 					app.Sort(AllTheThingsHarvestItems);
--- 					app.Sort(AllTheThingsArtifactsItems);
--- 					-- revert Debug if it was enabled by the harvester
--- 					if self.forcedDebug then
--- 						app.print("Reverted Debug Mode");
--- 						app.Settings:ToggleDebugMode();
--- 						self.forcedDebug = nil;
--- 					end
--- 					app.print("Source Harvest Complete! ItemIDs:",min,"->",max);
--- 					-- revert the number of retries to retrieve item information
--- 					app.MaximumItemInfoRetries = oldRetries or 40;
--- 					-- reset the window so it can be used to harvest again without reloading, only via the command, not another update
--- 					self.UpdateDone = nil;
--- 					self:SetData(nil);
--- 					self:BaseUpdate();
--- 					self.initialized = nil;
--- 					self:Toggle();
--- 					return;
--- 				end
--- 				if not rowSourced then
--- 					-- Soft-Update if needed to remove processed items
--- 					self:BaseUpdate();
--- 				else
--- 					-- Otherwise refresh the Harvester Window to harvest current row data for next refresh
--- 					self:Refresh();
--- 				end
--- 			end
--- 		end
--- 		self:BaseUpdate(force);
--- 	end
--- end;
 customWindowUpdates["SourceFinder"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
@@ -20942,7 +20666,7 @@ customWindowUpdates["list"] = function(self, force, got)
 		self.PartitionSize = app.GetCustomWindowParam("list", "part") or 1000;
 		self.Limit = app.GetCustomWindowParam("list", "limit") or 1000;
 		-- print("Quests - onlyMissing",onlyMissing)
-		local CacheFields;
+		local CacheFields, ItemHarvester;
 
 		-- manual type adjustments to match internal use (due to lowercase keys with non-lowercase cache keys >_<)
 		if dataType == "source" then
@@ -20955,6 +20679,8 @@ customWindowUpdates["list"] = function(self, force, got)
 			dataType = "flightPath";
 		elseif dataType == "runeforgepower" then
 			dataType = "runeforgePower";
+		elseif dataType == "itemharvester" then
+			ItemHarvester = app.CreateItemHarvester;
 		elseif dataType:find("cache") then
 			-- special data type to utilize an ATT cache instead of generating raw groups
 			-- "cache:item"
@@ -21027,6 +20753,9 @@ customWindowUpdates["list"] = function(self, force, got)
 			end
 			-- app.PrintDebug("SetLimit",#CacheFields)
 			self.Limit = #CacheFields;
+		end
+		if ItemHarvester then
+			ObjectTypeFuncs[dataType] = ItemHarvester;
 		end
 		local function CreateTypeObject(type, id)
 			-- app.PrintDebug("DLO-Obj:",type,id)
@@ -23321,7 +23050,10 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			app:GetWindow("ItemFilter"):Toggle();
 			return true;
 		elseif cmd == "finder" then
-			app:GetWindow("ItemFinder"):Toggle();
+			app.SetCustomWindowParam("list", "type", "itemharvester");
+			app.SetCustomWindowParam("list", "harvesting", true);
+			app.SetCustomWindowParam("list", "limit", 207000);
+			app:GetWindow("list"):Toggle();
 			return true;
 		elseif cmd == "ra" then
 			app:GetWindow("RaidAssistant"):Toggle();
@@ -23375,18 +23107,9 @@ end
 SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
-	-- if cmd then
-	-- 	local min,max,reset,force = strsplit(",",cmd);
-	-- 	app.SetCustomWindowParam("Harvester", "min", tonumber(min));
-	-- 	app.SetCustomWindowParam("Harvester", "max", tonumber(max));
-	-- 	app.SetCustomWindowParam("Harvester", "force", force and true);
-	-- 	AllTheThingsHarvestItems = reset and {} or AllTheThingsHarvestItems or {};
-	-- 	AllTheThingsArtifactsItems = reset and {} or AllTheThingsArtifactsItems or {};
-	-- 	if reset then app.print("Harvest Data Reset!"); end
-	-- end
-	-- app:GetWindow("Harvester"):Toggle();
-	app.print("/attharvest(er) is being deprecated. Utilize the following command for harvesting Sources:");
-	app.print("/att list type=cache:item harvesting");
+	app.SetCustomWindowParam("list", "type", "cache:item");
+	app.SetCustomWindowParam("list", "harvesting", true);
+	app:GetWindow("list"):Toggle();
 end
 
 SLASH_AllTheThingsMAPS1 = "/attmaps";
