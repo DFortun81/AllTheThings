@@ -153,6 +153,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(206695),	-- Pale Duskblossom
 					}
 				}),
+				q(75991, {	-- What Could Have Been
+					["provider"] = { "n", 203769 },	-- Bartender Bob
+					["coord"] = { 52.1, 81.5, THALDRASZUS },
+				}),				
 				q(75987, {	-- Woolomancer
 					["provider"] = { "n", 205769 },	-- Soridormi
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
