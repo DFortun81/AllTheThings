@@ -267,24 +267,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "o", 398674 },	-- Vibrant Flyer
 				["coord"] = { 55.1, 40.0, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
 			}),
 			q(73092, {	-- Something Like Family
 				["sourceQuests"] = { 75408 },	-- Calling All Dracthyr!
 				["provider"] = { "n", 201764 },	-- Talon Scaralesh
 				["coord"] = { 23.1, 32.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
 			}),
 			q(73086, {	-- Healthy Competition
 				["sourceQuests"] = { 73092 },	-- Something Like Family
 				["provider"] = { "n", 203325 },	-- Amythora
 				["coord"] = { 26.3, 35.9, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
 			}),
 			q(73093, {	-- Empty Chairs
 				["sourceQuests"] = { 73086 },	-- Healthy Competition
 				["provider"] = { "n", 203629 },	-- Marithos
 				["coord"] = { 24.0, 35.8, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
 				["g"] = {
 					i(205252),	-- Momento of Rekindled Bonds
 				},
