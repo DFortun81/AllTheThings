@@ -990,7 +990,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(REWARDS, {
 				-- Loamm Niffen
-				i(205968),	-- Overflowing Loammian Supply Pack
 				-- Large Rep
 				i(205252),	-- Momento of Rekindled Bonds
 				-- Research
@@ -1146,8 +1145,6 @@ root(ROOTS.Unsorted, {
 				q(76010),	--
 				q(76012),	--
 				-- 10.1.0.48898
-				q(76029),	-- Dragon Isles Supplies
-				q(76031),	-- Dragon Isles Supplies
 				q(76082),	--
 				q(76105),	--
 				q(76106),	--
