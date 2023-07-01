@@ -989,9 +989,6 @@ root(ROOTS.Unsorted, {
 				i(204638),	-- Sunder Wing
 			}),
 			n(REWARDS, {
-				-- Loamm Niffen
-				-- Large Rep
-				i(205252),	-- Momento of Rekindled Bonds
 				-- Research
 				i(205454),	-- Researchers Wheel Barrow
 				-- Special
@@ -1020,9 +1017,6 @@ root(ROOTS.Unsorted, {
 				q(72932),	-- Our Father's Legacy - DEPRECATED
 				q(72957),	-- A Sundered Road [DNT]
 				q(72960),	-- [NYI] Refti Cleaning
-				q(73086),	-- Healthy Competition
-				q(73092),	-- Something Like Family
-				q(73093),	-- Empty Chairs
 				q(73099),	--
 				q(73151),	-- Hats Off
 				q(73195),	--
@@ -1057,7 +1051,6 @@ root(ROOTS.Unsorted, {
 				q(75342),	-- Kronkapace
 				q(75376),	-- Suffuse, Reuse, Recycle
 				q(75389),	--
-				q(75408),	-- Calling All Dracthyr!
 				q(75418),	--
 				q(75429),	--
 				q(75434),	--

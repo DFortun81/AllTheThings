@@ -3084,6 +3084,7 @@ _.ObjectNames = {
 	[398135] = "Discarded Dracothyst Drill",
 	[398138] = "Molten Scoutbot",
 	[398200] = "Forgotten Lockbox",
+	[398786] = "Vibrant Flyer",
 	[398698] = "Squeaking Swiss",
 	[398770] = "Box of Rocks",
 	[398778] = "Disgusting Vat",
