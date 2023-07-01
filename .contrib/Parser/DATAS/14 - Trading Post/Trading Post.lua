@@ -34,6 +34,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		}),
 		q(76103, {	-- Report to the Trading Post -- June 2023
 			["timeline"] = { ADDED_10_1_0 },
+			["u"] = REMOVED_FROM_GAME,
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+		}),
+		q(76104, {	-- Report to the Trading Post -- July 2023
+			["timeline"] = { ADDED_10_1_0 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 	}),
