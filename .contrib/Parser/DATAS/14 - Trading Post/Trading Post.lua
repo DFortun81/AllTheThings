@@ -102,7 +102,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				-- Item Type: Head, Shoulder, Chest, Waist, Legs, Feet, Wrist, Hand
 				-- 	},
 				}),
-				i(190529, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
+				i(190528, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
 						i(190424),	-- Vagabond's Violet Cape
