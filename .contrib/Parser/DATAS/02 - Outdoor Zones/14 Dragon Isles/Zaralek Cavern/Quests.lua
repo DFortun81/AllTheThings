@@ -497,7 +497,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 				}),
 				q(74521, {	-- A Flame, Extinguished
-					-- Requires kill of Sarkareth (questID 75694 is not required in order to start this)
+					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
+					-- also Requires kill of Sarkareth
 					["provider"] = { "n", 201727 },	-- Ebyssian
 					["coord"] = { 48.0, 11.8, ZARALEK_CAVERN },
 				}),
