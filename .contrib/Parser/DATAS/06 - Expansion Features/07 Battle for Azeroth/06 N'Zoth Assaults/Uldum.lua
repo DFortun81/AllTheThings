@@ -1499,11 +1499,15 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 								recipe(307221),	-- Void Focus [Blacksmithing]
 							}),
 							i(174491, {	-- Tome of Unspeakable Delicacies
-								r(314959),	-- Baked Voidfin
-								r(314961),	-- Dubious Delight
-								r(314962),	-- Ghastly Goulash
-								r(314963),	-- Grilled Gnasher
-								r(314960),	-- K'Bab
+								["description"] = "This item will not drop until you finish the intro quests up to 'Descending Into Madness'.",
+								["f"] = MISC,
+								["groups"] = {
+									r(314959),	-- Baked Voidfin
+									r(314961),	-- Dubious Delight
+									r(314962),	-- Ghastly Goulash
+									r(314963),	-- Grilled Gnasher
+									r(314960),	-- K'Bab
+								},
 							}),
 							i(174462),	-- Void-Scarred Beetle (PET!)
 						}),
