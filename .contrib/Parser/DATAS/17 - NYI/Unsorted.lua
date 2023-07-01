@@ -1422,7 +1422,6 @@ root(ROOTS.Unsorted, {
 					i(190203),	-- Woodsman's Timber Mallet
 
 					-- Two-Hand Wep
-					i(190146),	-- Antoran Felspire
 					i(190131),	-- Brick-on-a-Stick
 					i(190080),	-- Catastrophe's Edge
 					i(190714),	-- Gorian Pulverizer

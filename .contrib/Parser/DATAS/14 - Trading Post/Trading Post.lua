@@ -80,10 +80,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
-					["timeline"] = { "added 10.1.0" },
+					["timeline"] = { ADDED_10_1_0 },
 				}),
 				i(76755, {	-- Tyrael's Charger (MOUNT!)
-					["timeline"] = { "added 10.1.5" },
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+					["timeline"] = { ADDED_10_1_0 },
 				}),
 			})),
 			filter(BATTLE_PETS, {
@@ -662,9 +663,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 2H Weapon
-				i(190560, {	-- Apocalypse
-					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
-				}),
 				i(190578, {	-- Headmaster's Command
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
