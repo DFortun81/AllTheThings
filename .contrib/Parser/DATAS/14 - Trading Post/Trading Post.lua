@@ -96,25 +96,26 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190560, {	-- Conquest
 					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
 				}),
-				-- i(, {	-- Ensemble: Sylvan Stalker’s Leathers	-- spellID 367583
-				-- 	["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				i(200915, {	-- Ensemble: Sylvan Stalker’s Leathers	-- spellID 367583
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				-- 	["g"] = {
 				-- Item Type: Head, Shoulder, Chest, Waist, Legs, Feet, Wrist, Hand
 				-- 	},
-				-- }),
-				-- i(, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
-				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				-- 	["g"] = {
+				}),
+				i(190529, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
 						i(190424),	-- Vagabond's Violet Cape
 						i(190425),	-- Vagabond's Violet Hood
-				-- 	},
-				-- }),
-				-- i(, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
-				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				-- 	["g"] = {
+					},
+				}),
+				i(190529, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
 						i(190423),	-- Wanderer's Violet Cloak
 						i(190426),	-- Wanderer's Violet Scarf
-				-- 	},
+					},
+				}),
 				i(190097, {	-- Fabulously Flashy Finery
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
@@ -125,6 +126,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
 				}),
 				i(190558, {	-- Helm of the Fierce
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190559, {	-- Helm of the Swift
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
 				i(190814, {	-- Mephistroth's Razor
@@ -643,9 +647,6 @@ root(ROOTS.NeverImplemented, {
 				-- Gloves
 				-- Head
 				i(190216, {	-- Feathered Cowl of the Guardian
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
-				i(190559, {	-- Helm of the Swift
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
 
