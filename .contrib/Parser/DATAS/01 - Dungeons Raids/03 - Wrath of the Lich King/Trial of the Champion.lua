@@ -414,7 +414,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 						i(47222),	-- Uruka's Band of Zeal
 						i(47215),	-- Tears of the Vanquished
 						i(47216),	-- The Black Heart
+						-- #if AFTER 8.0
 						currency(241),	-- Champion's Seal
+						-- #endif
 					},
 				}),
 			}),
