@@ -1001,8 +1001,6 @@ root(ROOTS.Unsorted, {
 				i(206270),	-- Volcanic Equipment Chest
 				-- New
 				i(189885),	-- The Battlespoon
-				-- new new
-				i(206955),	-- Highland Drake: Embodiment of the Hellforged
 			}),
 			n(QUESTS, {
 				-- 10.1.0.48480

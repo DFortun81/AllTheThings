@@ -318,8 +318,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					["g"] = {
 						i(204255, {	-- Cracked Titan Gem
 						}),
-						i(205876, {	-- Highland Drake: Embodiment of the Hellforged (DM!)
-						}),
 					},
 				}),
 			}),
@@ -598,6 +596,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							i(204424, bubbleDown({ ["modID"] = 3 }, { i(204424)})),	-- Crechebound Soldier's Boots
 							i(202565, bubbleDown({ ["modID"] = 3 }, { i(202565)})),	-- Erethos, the Empty Promise
 							i(202564, bubbleDown({ ["modID"] = 3 }, { i(202564)})),	-- Fang of the Sundered Flame
+							i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!) [LFR, Normal, Heroic]
 							i(202587, bubbleDown({ ["modID"] = 3 }, { i(202587)})),	-- Oathbreaker's Obsessive Gauntlets
 							i(204399, bubbleDown({ ["modID"] = 3 }, { i(204399)})),	-- Oblivion's Immortal Coil
 							i(202599, bubbleDown({ ["modID"] = 3 }, { i(202599)})),	-- Sarkareth's Abyssal Embrace
@@ -941,6 +940,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						i(204424),	-- Crechebound Soldier's Boots
 						i(202565),	-- Erethos, the Empty Promise
 						i(202564),	-- Fang of the Sundered Flame
+						i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!) [LFR, Normal, Heroic]
 						i(202587),	-- Oathbreaker's Obsessive Gauntlets
 						i(204399),	-- Oblivion's Immortal Coil
 						i(202599),	-- Sarkareth's Abyssal Embrace
@@ -1258,6 +1258,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						i(204424),	-- Crechebound Soldier's Boots
 						i(202565),	-- Erethos, the Empty Promise
 						i(202564),	-- Fang of the Sundered Flame
+						i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!) [LFR, Normal, Heroic]
 						i(202587),	-- Oathbreaker's Obsessive Gauntlets
 						i(204399),	-- Oblivion's Immortal Coil
 						i(202599),	-- Sarkareth's Abyssal Embrace
@@ -1561,6 +1562,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						i(204424),	-- Crechebound Soldier's Boots
 						i(202565),	-- Erethos, the Empty Promise
 						i(202564),	-- Fang of the Sundered Flame
+						i(205876),	-- Highland Drake: Embodiment of the Hellforged (DM!) [Mythic]
 						i(202587),	-- Oathbreaker's Obsessive Gauntlets
 						i(204399),	-- Oblivion's Immortal Coil
 						i(202599),	-- Sarkareth's Abyssal Embrace
