@@ -42,6 +42,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(95968),	-- Vaultwalker Sabatons
 						i(94295),	-- Primal Egg
 					}),
+					--[[
 					i(95602, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Stormtouched Cache Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
 						i(54436),	-- Blue Clockwork Rocket Bot
@@ -75,6 +76,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(48124),	-- Razormaw Hatchling
 						i(48126),	-- Razzashi Hatchling
 					})),
+					--]]
 					-- Necks
 					i(91414),	-- Tyrannical Gladiator's Choker of Accuracy
 					i(94354),	-- Tyrannical Gladiator's Choker of Accuracy
@@ -536,7 +538,7 @@ _.Instances = { tier(MOP_TIER, {
 					ach(6517),	-- Extinction Event
 					ach(6708),	-- Salyis's Warband Guild Run
 					i(89783),	-- Son of Galleon (MOUNT!)
-					i(90840, {	-- Marauder's Gleaming Sack of Gold	-- TODO: should be symlink for duplicate rewards
+					i(90840, {	-- Marauder's Gleaming Sack of Gold
 						-- Belts
 						i(86884),	-- Belt of Embodied Terror
 						i(86900),	-- Binder's Chain of Unending Summer
@@ -569,6 +571,7 @@ _.Instances = { tier(MOP_TIER, {
 						-- Pets
 						i(94295),	-- Primal Egg
 					}),
+					--[[
 					i(90840, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Marauder's Gleaming Sack of Gold Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
 						i(10360),	-- Black Kingsnake
@@ -602,6 +605,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(69991),	-- Tiny Sporebat
 						i(44971),	-- Tirisfal Batling
 					})),
+					--]]
 					i(90410),	-- Cap of Wandering Pride
 					i(90413),	-- Crest of the Grand Warband
 					i(90416),	-- Crown of Ranging Invasion
@@ -677,7 +681,7 @@ _.Instances = { tier(MOP_TIER, {
 					-- Mounts, Caches, and Quest Items!
 					i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
 					i(89317),	-- Claw of Anger
-					i(90839, {	-- Cache of Sha-Touched Gold	-- TODO: should be symlink for duplicate rewards
+					i(90839, {	-- Cache of Sha-Touched Gold
 						i(86884),	-- Belt of Embodied Terror
 						i(86900),	-- Binder's Chain of Unending Summer
 						i(86850),	-- Darting Damselfly Cuffs
@@ -706,6 +710,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(86898),	-- Weaver's Cord of Eternal Autumn
 						i(94295),	-- Primal Egg
 					}),
+					--[[
 					i(90839, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Cache of Sha-Touched Gold Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
 						i(10360),	-- Black Kingsnake
@@ -739,7 +744,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(69991),	-- Tiny Sporebat
 						i(44971),	-- Tirisfal Batling
 					})),
-
+					--]]
 					-- Necks
 					i(84892),	-- Malevolent Gladiator's Choker of Accuracy
 					i(84891),	-- Malevolent Gladiator's Choker of Proficiency
@@ -923,7 +928,7 @@ _.Instances = { tier(MOP_TIER, {
 						["isRaid"] = true,
 					})),
 					-- Caches / Boxes
-					i(104272, {	-- Celestial Treasure Box	-- TODO: should be symlink for duplicate rewards
+					i(104272, {	-- Celestial Treasure Box
 						i(105824),	-- Aeth's Swiftcinder Cloak
 						i(105816),	-- Brave Niunai's Cloak
 						i(105812),	-- Cape of the Alpha
@@ -939,6 +944,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(105825),	-- Turtleshell Greatcloak
 						i(105822),	-- Zoid's Molten Gauntlets
 					}),
+					--[[
 					i(104272, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Celestial Treasure Box Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
 						i(10360),	-- Black Kingsnake
@@ -972,6 +978,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(69991),	-- Tiny Sporebat
 						i(44971),	-- Tirisfal Batling
 					})),
+					--]]
 					-- Neck
 					i(103515),	-- Prideful Gladiator's Choker of Accuracy
 					i(102641),	-- Prideful Gladiator's Choker of Accuracy
