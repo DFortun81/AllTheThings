@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(MOP_TIER, {
+root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 80,
@@ -25,7 +24,7 @@ _.Instances = { tier(MOP_TIER, {
 					ach(8028),	-- Praise the Sun!
 					-- Mounts, Caches, and Quest Items!
 					i(95057),	-- Thundering Cobalt Cloud Serpent (MOUNT!)
-					i(95602, {	-- Stormtouched Cache
+					i(95602, {	-- Stormtouched Cache	-- TODO: should be symlink for duplicate rewards
 						i(95972),	-- Abandoned Zandalari Arrowlinks
 						i(95976),	-- Abandoned Zandalari Bucklebreaker
 						i(95961),	-- Abandoned Zandalari Firecord
@@ -885,7 +884,7 @@ _.Instances = { tier(MOP_TIER, {
 					i(84828),	-- Malevolent Gladiator's Signet of Cruelty
 				},
 			}),
-			n(-10061, {	-- The Four Celestials
+			header(HEADERS.Achievement, 8535, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Celestial Challenge
 				["isWeekly"] = true,
 				["questID"] = 33117,
 				["maps"] = {	-- all Timeless Isle maps
@@ -1238,10 +1237,10 @@ _.Instances = { tier(MOP_TIER, {
 					i(102701),	-- Prideful Gladiator's Signet of Cruelty
 					i(103517),	-- Prideful Gladiator's Signet of Cruelty
 				},
-			}),
+			})),
 		},
 	}),
-})};
+})));
 root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(33226),	-- Short-Supply Reward - Celestials bonus roll
