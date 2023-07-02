@@ -156,8 +156,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(192557, {	-- Quackers the Terrible
+				-- #if BEFORE 10.0.5
 				["description"] = "Requires Duck Trap Kit, purchased from a nearby camp (northern waypoint).\n\nYou'll need a rank 1 of these reagents:\n\n1 x Primal Molten Alloy\n\n3 x Resilient Leather\n\n4 x Spool of Wilderthread\n\nUse the item to trap a duck and then go to southern waypoint & put the trapped duck into the nest.",
-				["coords"] = {
+				-- #else
+				["description"] = "Requires Duck Trap Kit, purchased from a nearby camp (northern waypoint).\n\nYou'll need a rank 1 of these reagents:\n\n1 x Large Sturdy Femur\n\n3 x Contoured Fowlfeather\n\n2 x Tallstrider Sinew\n\nUse the item to trap a duck and then go to southern waypoint & put the trapped duck into the nest.",
+				-- #endif
+					["coords"] = {
 					{ 68.2, 79.2, OHNAHRAN_PLAINS },
 					{ 70.43, 63.49, OHNAHRAN_PLAINS },
 				},
