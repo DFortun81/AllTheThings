@@ -5,6 +5,7 @@
 --------------------------------------------------------------------------------
 local appName, app = ...
 local L = app.L
+local Colorize = app.Modules.Color.Colorize
 
 -- Binding Localizations
 BINDING_HEADER_ALLTHETHINGS = L["TITLE"]
@@ -1891,8 +1892,16 @@ local headerChatCommands = child:CreateHeaderLabel(L["CHAT_COMMANDS_LABEL"])
 headerChatCommands:SetPoint("TOPLEFT", headerCelebrations, 320, 0)
 
 local textChatCommands = child:CreateTextLabel(L["CHAT_COMMANDS_TEXT"])
-textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -10)
+textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -4)
 textChatCommands:SetWidth(320)
+
+local headerKeybindings = child:CreateHeaderLabel(L["KEYBINDINGS"])
+headerKeybindings:SetPoint("LEFT", headerChatCommands, 0, 0)
+headerKeybindings:SetPoint("TOP", textChatCommands, "BOTTOM", 0, -15)
+
+local textKeybindings = child:CreateTextLabel(Colorize(L["KEYBINDINGS_TEXT"], app.Colors.White))
+textKeybindings:SetPoint("TOPLEFT", headerKeybindings, "BOTTOMLEFT", 0, -4)
+textKeybindings:SetWidth(320)
 
 end)();
 

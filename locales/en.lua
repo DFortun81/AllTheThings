@@ -329,7 +329,7 @@ app.L = {
 				["MODE"] = "Mode";
 				["TITLE_COMPLETIONIST"] = "Completionist ";
 				["TITLE_UNIQUE_APPEARANCE"] = "Unique ";
-				["TITLE_DEBUG"] = app.ccColors.Warning .. "Debug|R ";
+				["TITLE_DEBUG"] = app.ccColors.Red .. "Debug|R ";
 				["TITLE_ACCOUNT"] = app.ccColors.Account .. "Account|R ";
 				["TITLE_ALLIANCE"] = app.ccColors.Alliance .. FACTION_ALLIANCE .. "|R";
 				["TITLE_HORDE"] = app.ccColors.Horde .. FACTION_HORDE .. "|R";
@@ -353,7 +353,7 @@ app.L = {
 	["PATREON_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
 	["MERCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
 	["MODE_EXPLAIN_LABEL"] = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-	["DEBUG_MODE"] = app.ccColors.Warning.."Debug Mode|r (Show Everything)";
+	["DEBUG_MODE"] = app.ccColors.Red.."Debug Mode|r (Show Everything)";
 	["DEBUG_MODE_TOOLTIP"] = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
 	["COMPLETIONIST_MODE"] = "+Sources";
 	["COMPLETIONIST_MODE_TOOLTIP"] = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
@@ -460,6 +460,8 @@ app.L = {
 	["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
 	["LOADING_FORMAT"] = "%s "..LFG_LIST_LOADING;	-- %s Loading...
 	["READY_FORMAT"] = "%s "..READY;	-- %s Ready
+	["KEYBINDINGS"] = SETTINGS_KEYBINDINGS_LABEL;
+	["KEYBINDINGS_TEXT"] = "You can set keybindings for ATT in the game's options.";
 
 	-- Account-Wide Checkboxes
 	["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"] = TRACK_ACC_WIDE.."\n\nAchievement tracking is usually "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
