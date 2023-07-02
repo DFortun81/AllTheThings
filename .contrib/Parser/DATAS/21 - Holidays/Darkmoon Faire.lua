@@ -502,7 +502,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
 				["g"] = {
-					currency(515),	-- DMF Prize Ticket
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(29447, {	-- A Curious Crystal
@@ -514,7 +514,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
 				["g"] = {
-					currency(515),	-- DMF Prize Ticket
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(29506, {	-- A Fizzy Fusion
@@ -537,7 +537,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.1, 82.0, 407 },
 				["lvl"] = 10,
 				["g"] = {
-					currency(515),	-- DMF Prize Ticket
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(29449, {	-- An Intriguing Grimoire
@@ -549,7 +549,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 53.2, 75.8, 407 },
 				["lvl"] = 10,
 				["g"] = {
-					currency(515),	-- DMF Prize Ticket
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(29450, {	-- A Wondrous Weapon
@@ -561,7 +561,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
 				["g"] = {
-					currency(515),	-- DMF Prize Ticket
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7885, {	-- Armor Kits
@@ -920,7 +920,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["provider"] = { "i", 105891 },	-- Moonfang's Pelt
 				["coord"] = { 39.3, 43.6, 407 },
 				["g"] = {
-					currency(515),	-- 10x DMF Prize Ticket
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7903, {	-- Evil Bat Eyes
@@ -1273,7 +1273,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["provider"] = { "n", 14832 },	-- Kerri Hicks
 				["coord"] = { 47.9, 67.1, 407 },
 				["g"] = {
-					currency(515),	-- DMF Prize Ticket
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(29458, {	-- The Captured Journal
@@ -1282,7 +1282,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
 				["g"] = {
-					currency(515),	-- DMF Prize Ticket
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7905, {	-- The Darkmoon Faire
@@ -1306,6 +1306,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["provider"] = { "i", 71952 },	-- Captured Insignia
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
+				["g"] = {
+					currency(515),	-- Darkmoon Prize Ticket
+				},
 			}),
 			q(29436, {	-- The Humanoid Cannonball
 				["provider"] = { "n", 15303 },	-- Maxima Blastenheimer
@@ -1327,7 +1330,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
 				["g"] = {
-					currency(515),	-- DMF Prize Ticket
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(37911, {	-- The Real Big Race
@@ -1460,7 +1463,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 60,
 				["g"] = {
-					currency(515),	-- DMF Prize Ticket
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(29465, {	-- Tools of Divination
