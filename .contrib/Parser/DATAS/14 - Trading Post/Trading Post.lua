@@ -104,9 +104,16 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(200915, {	-- Ensemble: Sylvan Stalker’s Leathers	-- spellID 367583
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-				-- 	["g"] = {
-				-- Item Type: Head, Shoulder, Chest, Waist, Legs, Feet, Wrist, Hand
-				-- 	},
+				 	["g"] = {
+						i(190436),	-- Sylvan Stalker's Baldric
+						i(189873),	-- Sylvan Stalker's Boots
+						i(190810),	-- Sylvan Stalker's Handguards
+						i(190073),	-- Sylvan Stalker's Hood
+						i(190142),	-- Sylvan Stalker's Legguards
+						i(190894),	-- Sylvan Stalker's Mantle
+						i(190811),	-- Sylvan Stalker's Vest
+						i(190788),	-- Sylvan Stalker's Wristguards
+					},
 				}),
 				i(190528, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
