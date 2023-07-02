@@ -3796,6 +3796,7 @@ for key, value in pairs({
 	[398135] = "被抛弃的龙晶电钻",	-- Discarded Dracothyst Drill
 	[398138] = "熔火斥候机器人",	-- Molten Scoutbot
 	--TODO: [398200] = "Forgotten Lockbox",	-- Forgotten Lockbox
+	--TODO: [398674] = "Vibrant Flyer",	-- Vibrant Flyer
 	--TODO: [398698] = "Squeaking Swiss",	-- Squeaking Swiss
 	[398770] = "一箱岩石",	-- Box of Rocks
 	[398778] = "恶心的大缸",	-- Disgusting Vat

@@ -3713,6 +3713,7 @@ for key,value in pairs({
 	--TODO: [398135] = "Discarded Dracothyst Drill",	-- Discarded Dracothyst Drill
 	[398138] = "용암 정찰 로봇",	-- Molten Scoutbot
 	[398200] = "잊혀진 금고",	-- Forgotten Lockbox
+	--TODO: [398674] = "Vibrant Flyer",	-- Vibrant Flyer
 	[398698] = "끽끽거리는 스위스 치즈",	-- Squeaking Swiss
 	[398770] = "돌멩이 상자",	-- Box of Rocks
 	[398778] = "역겨운 보관통",	-- Disgusting Vat
