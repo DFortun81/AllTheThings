@@ -472,9 +472,9 @@ ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TO
 		--TODO: L.MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 		L.ADDITIONAL_LABEL = "Zusätzliche Information";
 		--TODO: L.WINDOW_COLORS = "Window Colors";
-		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color and opacity of all ATT windows.";
-		--TODO: L.BORDER_TOOLTIP = "Set the border color and opacity of all ATT windows.";
-		--TODO: L.RESET_TOOLTIP = "Reset the background and border of all ATT windows.";
+		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color of all ATT windows.";
+		--TODO: L.BORDER_TOOLTIP = "Set the border color of all ATT windows.";
+		--TODO: L.RESET_TOOLTIP = "Reset the background and border color of all ATT windows.";
 		--TODO: L.CLASS_BORDER = "Use Class Color For Border";
 		--TODO: L.CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 

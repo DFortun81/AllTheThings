@@ -577,11 +577,11 @@ app.L = {
 	["ADDITIONAL_LABEL"] = "Additional Information";
 	["WINDOW_COLORS"] = "Window Colors";
 	["BACKGROUND"] = EMBLEM_BACKGROUND;
-	["BACKGROUND_TOOLTIP"] = "Set the background color and opacity of all ATT windows.";
+	["BACKGROUND_TOOLTIP"] = "Set the background color of all ATT windows.";
 	["BORDER"] = EMBLEM_BORDER;
-	["BORDER_TOOLTIP"] = "Set the border color and opacity of all ATT windows.";
+	["BORDER_TOOLTIP"] = "Set the border color of all ATT windows.";
 	["RESET"] = RESET;
-	["RESET_TOOLTIP"] = "Reset the background and border of all ATT windows.";
+	["RESET_TOOLTIP"] = "Reset the background and border color of all ATT windows.";
 	["CLASS_BORDER"] = "Use Class Color For Border";
 	["CLASS_BORDER_TOOLTIP"] = "Use your class color for the borders. This updates when you log onto another class.";
 
