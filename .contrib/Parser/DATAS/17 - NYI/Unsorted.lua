@@ -1384,10 +1384,10 @@ root(ROOTS.Unsorted, {
 					i(190867),	-- Void-Bound Pauldrons
 
 					-- Void-Bound Set -- I dont know which cloak belongs to which set. // Braghe
-					i(200920),	-- Void-Bound Cloak
-					i(200921),	-- Void-Bound Greatcloak
-					i(200922),	-- Void-Bound Shroud
-					i(200923),	-- Void-Bound Drape
+					i(200920),	-- Void-Bound Cloak (probably leather)
+					i(200921),	-- Void-Bound Greatcloak (probably plate)
+					i(200922),	-- Void-Bound Shroud (probably mail)
+					i(200923),	-- Void-Bound Drape (probably cloth)
 
 					i(190772),	-- Ensemble: Vestments of the Nightmare Forest
 					i(190165),	-- Ensemble: Twisted Arcanum Regalia
@@ -1469,7 +1469,6 @@ root(ROOTS.Unsorted, {
 				q(72384),	-- Valdrakken Tour
 				q(72829),	--
 				q(72830),	--
-				q(74441),	-- Eaglemaster Niraak
 				-- 10.0.5.47871
 				q(74897),	--
 				q(74898),	--

@@ -45,6 +45,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Chance to spawn after killing any nearby Nokhud Mobs. Yells 'Filth! I will end you for your actions!' upon spawning.",
 				["questID"] = 74063,
 				["g"] = {
+					-- #if AFTER 10.0.5
+					bo(74441, true),	-- Bonus Objective was added in 10.0.5
+					-- #endif
 					i(200536),	-- Tamed Eagle
 				},
 			}),
