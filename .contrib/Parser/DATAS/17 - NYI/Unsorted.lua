@@ -1323,16 +1323,6 @@ root(ROOTS.Unsorted, {
 					i(190868),	-- Highborne Scholar's Scrollmantle
 					i(190070),	-- Highborne Scholar's Gloves
 
-					-- Sylvan Stalker Set
-					i(189873),	-- Sylvan Stalker's Boots
-					i(190073),	-- Sylvan Stalker's Hood
-					i(190142),	-- Sylvan Stalker's Legguards
-					i(190436),	-- Sylvan Stalker's Baldric
-					i(190788),	-- Sylvan Stalker's Wristguards
-					i(190810),	-- Sylvan Stalker's Handguards
-					i(190811),	-- Sylvan Stalker's Vest
-					i(190894),	-- Sylvan Stalker's Mantle
-
 					-- Val'Sharah Protector Set
 					i(190547),	-- Val'Sharah Protector's Bracers
 					i(190676),	-- Val'Sharah Protector's Gauntlets
