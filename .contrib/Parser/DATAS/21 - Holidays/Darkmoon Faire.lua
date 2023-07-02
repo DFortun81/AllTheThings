@@ -2804,7 +2804,7 @@ root(ROOTS.HiddenQuestTriggers,{
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
-		m(407, {	-- Darkmoon Island
+		n(DARKMOON_FAIRE_HEADER, {	-- Darkmoon Faire
 			-- Unused T0 Replica
 			cl(DRUID, {
 				i(78068),	-- Replica Wildheart Belt
