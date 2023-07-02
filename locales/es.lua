@@ -3719,6 +3719,7 @@ for key,value in pairs({
 	[398135] = "Taladro de dracotista descartado",	-- Discarded Dracothyst Drill
 	[398138] = "Explorabot de magma",	-- Molten Scoutbot
 	[398200] = "Arcón olvidado",	-- Forgotten Lockbox
+	--TODO: [398674] = "Vibrant Flyer",	-- Vibrant Flyer
 	[398698] = "Queso curado chillón",	-- Squeaking Swiss
 	[398770] = "Caja de piedras",	-- Box of Rocks
 	[398778] = "Cuba asquerosa",	-- Disgusting Vat

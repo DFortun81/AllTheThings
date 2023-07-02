@@ -3775,6 +3775,7 @@ for key,value in pairs({
 	[398135] = "Использованный дракотистовый бур",	-- Discarded Dracothyst Drill
 	[398138] = "Огненный разведобот",	-- Molten Scoutbot
 	[398200] = "Позабытый ларец",	-- Forgotten Lockbox
+	[398674] = "Яркий буклет",	-- Vibrant Flyer
 	[398698] = "Скрипящий сыр",	-- Squeaking Swiss
 	[398770] = "Ящик с камнями",	-- Box of Rocks
 	[398778] = "Мерзкий чан",	-- Disgusting Vat
