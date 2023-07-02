@@ -574,7 +574,7 @@ settings.GetShortModeString = function(self)
 				solo = nil
 			end
 		end
-		local style
+		local style = ""
 		if thingCount == 0 then
 			style = "N"
 		elseif thingCount == totalThingCount then
