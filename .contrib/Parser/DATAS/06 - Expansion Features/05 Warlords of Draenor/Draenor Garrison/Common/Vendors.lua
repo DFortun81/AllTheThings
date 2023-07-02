@@ -469,7 +469,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(122605, {	-- Tome of the Stones
-							["spellID"] = 0,
+							["f"] = MISC,
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 							["g"] = {
 								recipe(181650),	-- Stone of Fire
@@ -771,7 +771,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(122605, {	-- Tome of the Stones
-							["spellID"] = 0,
+							["f"] = MISC,
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 							["g"] = {
 								recipe(181650),	-- Stone of Fire
