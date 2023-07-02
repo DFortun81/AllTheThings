@@ -2106,9 +2106,11 @@ function(self)
 	self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
 	self:SetChecked(settings:Get("MainOnly"))
 	if settings:Get("Completionist") or settings:Get("AccountMode") or settings:Get("DebugMode") then
+		self:SetChecked(false)
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
+		self:SetChecked(settings:Get("MainOnly"))
 		self:Enable()
 		self:SetAlpha(1)
 	end
