@@ -1276,13 +1276,13 @@ local function CreateObject(t, rootOnly)
 		s.g = t.g;
 		t = s;
 		-- app.PrintDebug("Merge done",s.key,s[s.key], t, s);
-	-- is it an array of raw datas which needs to be turned into ana rray of usable objects
+	-- is it an array of raw datas which needs to be turned into an array of usable objects
 	elseif t[1] then
 		local s = {};
 		-- array
 		-- if app.DEBUG_PRINT then print("CreateObject on array",#t); end
-		for _,o in ipairs(t) do
-			tinsert(s, CreateObject(o, rootOnly));
+		for i,o in ipairs(t) do
+			s[i] = CreateObject(o, rootOnly);
 		end
 		return s;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
@@ -1374,19 +1374,17 @@ local function CreateObject(t, rootOnly)
 	-- allows for copying an object without all of the sub-groups
 	if rootOnly then
 		t.g = nil;
-	end
-
-	-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
-	-- if g, then replace each object in all sub groups with an object version of the table
-	local g = t.g;
-	if g then
-		local sourceg = g;
-		g = {};
-		-- if app.DEBUG_PRINT then print("CreateObject for sub-groups of",t.key,t[t.key]); end
-		for i,o in pairs(sourceg) do
-			g[i] = CreateObject(o);
+	else
+		-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
+		-- if g, then replace each object in all sub groups with an object version of the table
+		local g = t.g;
+		if g then
+			local gNew = {};
+			for i,o in ipairs(g) do
+				gNew[i] = CreateObject(o, rootOnly);
+			end
+			t.g = gNew;
 		end
-		t.g = g;
 	end
 
 	return t;
