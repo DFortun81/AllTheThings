@@ -301,7 +301,6 @@ root(ROOTS.Unsorted, {
 			i(205819),	-- Ashen Predator's Poleyns
 			i(206022),	-- Anduin's Lucky Hearthstone Card
 			i(206161),	-- Cat Toy
-			i(206171),	-- Vol'jin's Mojo
 			i(206187),	-- Highly Spiced Haunch
 			i(206188),	-- Druidic Dreamsalad
 			i(206189),	-- Fine Taladorian Cheese Platter

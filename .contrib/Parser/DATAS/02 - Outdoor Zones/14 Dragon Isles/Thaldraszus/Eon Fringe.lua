@@ -146,12 +146,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 				}),
+				q(76162, {	-- Missing Mojo
+					["provider"] = { "n", 205793 },	-- Vol'jin
+					["coord"] = { 52.3, 81.6, THALDRASZUS },
+					["g"] = {
+						i(206171),	-- Vol'jin's Mojo
+					},
+				}),
 				q(75990, {	-- Star-Crossed Lovers
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 					["g"] = {
 						i(206695),	-- Pale Duskblossom
-					}
+					},
 				}),
 				q(75991, {	-- What Could Have Been
 					["provider"] = { "n", 203769 },	-- Bartender Bob
@@ -162,7 +169,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 					["g"] = {
 						i(206368),	-- Wand of Mass Polymorph
-					}
+					},
 				}),
 
 			})),
