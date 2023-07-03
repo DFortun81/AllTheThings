@@ -302,8 +302,8 @@ i(11611, 15294, nil, WEAPONSMITH);	-- Dark Iron Sunderer
 i(12839, 16995, nil, WEAPONSMITH);	-- Heartseeker
 i(74274, 10007, nil, WEAPONSMITH);	-- Phantom Blade
 -- #else
-i(0, 10003);		-- The Shatterer [REMOVED: 4.0.3]
-i(0, 10015);		-- Truesilver Champion [REMOVED: 4.0.3]
+i(0, 10003);		-- The Shatterer [REMOVED: 4.0.3, ADDED_10_1_5]
+i(0, 10015);		-- Truesilver Champion [REMOVED: 4.0.3, ADDED_10_1_5]
 i(19208, 23638);	-- Black Amnesty
 i(19209, 23639);	-- Blackfury
 i(142337, 10011);	-- Blight
@@ -340,7 +340,7 @@ i(12827, 16983, nil, MASTER_HAMMERSMITH);	-- Serenity
 i(19210, 23650);	-- Ebon Hand
 i(12824, 16973);	-- Enchanted Battlehammer [REMOVED: 4.0.3]
 i(12833, 16988);	-- Hammer of the Titans
-i(12837, 16993);	-- Masterwork Stormhammer [REMOVED: 6.0.2]
+i(12837, 16993);	-- Masterwork Stormhammer [REMOVED: 6.0.2, ADDED:10.1.5]
 i(22390, 27830);	-- Persuader
 i(12827, 16983);	-- Serenity
 -- #endif
@@ -2162,6 +2162,8 @@ i(206560, 413760);	-- Stygian Shield
 i(206541, 413741);	-- The Plague Belcher
 i(206544, 413744);	-- The Final Dream
 i(206549, 413749);	-- The Face of Doom
+i(206352, 10003);	-- The Shatterer
+i(206351, 10015);	-- Truesilver Champion
 i(206774, 414567);	-- Undeath Metal
 i(207568, 416683);	-- Valiant Shortblade
 i(206522, 413511);	-- Warsword of Caer Darrow

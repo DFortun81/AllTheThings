@@ -493,14 +493,14 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(12797),	-- Frostguard
 			i(12796),	-- Hammer of the Titans
 			i(12783),	-- Heartseeker
-			i(12794, {["timeline"]={"removed 6.0.2"}}),	-- Masterwork Stormhammer
+			i(12794, {["timeline"]={"removed 6.0.2",ADDED_10_1_5}}),	-- Masterwork Stormhammer
 			applyclassicphase(PHASE_THREE, i(19169)),	-- Nightfall
 			applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader
 			i(7961, {["timeline"]={"removed 4.0.3","added 4.3.0"}}),	-- Phantom Blade
 			applyclassicphase(PHASE_FIVE, i(22383)),	-- Sageblade
 			i(12781),	-- Serenity
-			i(7954, {["timeline"]={"removed 4.0.3"}}),	-- The Shatterer
-			i(7960, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Champion
+			i(7954, {["timeline"]={"removed 4.0.3",ADDED_10_1_5}}),	-- The Shatterer
+			i(7960, {["timeline"]={"removed 4.0.3",ADDED_10_1_5}}),	-- Truesilver Champion
 			-- #endif
 			-- #if AFTER CATA
 			i(30071, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Light Earthforged Blade
