@@ -3887,6 +3887,7 @@ do a[key] = value; end
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
 	["Огненные Недра"] = "Огненные недра";	-- Molten Core
+	["Крепость Бурь"] = "Око";	-- Tempest Keep
 })
 do a[key] = value; end
 
