@@ -132,6 +132,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 				}),
 			}, {	-- RENOWN 15 --
+				q(76029, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 205127 },	-- Newsy
+					["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
+					["g"] = {
+						i(205968),	-- Overflowing Loammian Supply Pack
+					},
+				}),
 			}, {	-- RENOWN 16 --
 				q(76030, {	-- Airborne Winding
 					["provider"] = { "n", 205127 },	-- Newsy
@@ -146,6 +153,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}
 				}),
 			}, {	-- RENOWN 18 --
+				q(76031, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 205127 },	-- Newsy
+					["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
+					["g"] = {
+						i(205968),	-- Overflowing Loammian Supply Pack
+					},
+				}),
 			}, {	-- RENOWN 19 --
 				q(75742, {    -- Drake Helms
 					["provider"] = { "n", 205127 },    -- Newsy

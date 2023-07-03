@@ -30,6 +30,22 @@ local function SubCheckCollectible(ref)
 		-- app.PrintDebug("Cost via collectibleAsCost",ref.hash)
 		return true;
 	end
+	-- If this group has a symlink, generate the symlink into a cached version of the ref for the following sub-group check
+	if ref.sym then
+		-- app.PrintDebug("Checking symlink...",ref.hash)
+		local refCache = ref._cache;
+		if refCache then
+			-- Already have a cached version of this reference with populated content
+			local cached = refCache.GetCachedField(ref, "_populated");
+			if not cached then
+				-- create a cached copy of this ref if it is an Item
+				cached = app.RecreateObject(ref);
+				-- save it in the Item cache in case something else is able to purchase this reference
+				refCache.SetCachedField(ref, "_populated", cached);
+			end
+			ref = cached;
+		end
+	end
 	-- If this group has sub-groups, are any of them collectible?
 	local g = ref.g;
 	if g then
@@ -40,25 +56,6 @@ local function SubCheckCollectible(ref)
 				-- app.PrintDebug("Cost via sub-group collectible",ref.hash)
 				return true;
 			end
-		end
-	end
-	-- If this group has a symlink, generate the symlink into a cached version of the ref and see if it has collectibles
-	if ref.sym then
-		-- app.PrintDebug("Checking symlink...",ref.hash)
-		local refCache = ref._cache;
-		if refCache then
-			-- Already have a cached version of this reference with populated content
-			local expItem = refCache.GetCachedField(ref, "_populated");
-			if expItem then
-				-- app.PrintDebug("Cost via symlink-fresh",ref.hash)
-				return SubCheckCollectible(expItem);
-			end
-			-- create a cached copy of this ref if it is an Item
-			expItem = app.RecreateObject(ref);
-			-- save it in the Item cache in case something else is able to purchase this reference
-			refCache.SetCachedField(ref, "_populated", expItem);
-				-- app.PrintDebug("Cost via symlink-cache",ref.hash)
-			return SubCheckCollectible(expItem);
 		end
 	end
 end

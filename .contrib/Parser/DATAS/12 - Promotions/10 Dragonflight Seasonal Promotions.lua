@@ -10,7 +10,7 @@ DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
 		cn = "巨龙时代季节性促销",
 	},
 	description = {
-		en = "These promotions happened during the time Dragonflight was the most recent content between 25th October 2022 & 12nd November 2024.\n\nThey are listed in the order of their first appearance.",
+		en = "These promotions happened during the time Dragonflight was the most recent content between 25th October 2022 & 12th November 2024.\n\nThey are listed in the order of their first appearance.",
 	},
 });
 root(ROOTS.Promotions, {
@@ -94,6 +94,7 @@ root(ROOTS.Promotions, {
 					"removed 10.1.0",	-- Removed again on May 2nd 2023
 				},
 			}),
+			-- Season 2
 			i(54452, {	-- Ethereal Portal (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between May 2nd, 10:00 a.m. & May 9th, 9:59 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_10_1_0, "removed 10.1.0.49474" },
@@ -102,8 +103,8 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between May 9th, 10:00 a.m. & May 17th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { "added 10.1.0.49474", "removed 10.1.0.49570" },
 			}),
-			i(208057, {	-- Smoldering Banner of the Aspectss (TOY!)
-				["description"] = "Participants in The Great Push 2023 whom complete the Proving Grounds will be eligible for the new Smoldering Banner of the Aspects.",
+			i(208057, {	-- Smoldering Banner of the Aspects (TOY!)
+				["description"] = "The Great Push returns in Dragonflight Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 30 Jun 2023 and The Proving Grounds are on 5-10 July (US).",
 				-- ["timeline"] = { "added 10.1.5.XXXXX", "removed 10.1.5.99999" },
 			}),
 		},

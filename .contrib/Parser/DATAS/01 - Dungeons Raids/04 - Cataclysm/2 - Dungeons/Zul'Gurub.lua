@@ -40,6 +40,7 @@ local ZANDALAR_BARGAINING_TOKEN = 203914;
 root("Instances", tier(CATA_TIER, {
 	inst(76, {	-- Zul'Gurub
 		["mapID"] = ZULGURUB,
+		["isRaid"] = false,	-- prevent merging isRaid from Classic version
 		["coord"] = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
 		["groups"] = {
 			d(HEROIC_DUNGEON, {

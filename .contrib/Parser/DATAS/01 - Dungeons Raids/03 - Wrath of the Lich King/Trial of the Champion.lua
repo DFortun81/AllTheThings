@@ -121,7 +121,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					}),
 				})),
 				-- #if ANYCLASSIC
-				a(applyclassicphase(WRATH_PHASE_THREE, ach(18677, {	-- Defense Protocol Beta: Trial of the Champion (A)
+				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY }, 	-- Defense Protocol Beta: Trial of the Champion (A)
+					(function(t) return t.criteriaID or t.achID; end), ach(18677, {
 					crit(60760, { -- Mokra the Skullcrusher
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
@@ -179,7 +180,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 						},
 					}),
 				}))),
-				h(applyclassicphase(WRATH_PHASE_THREE, ach(18678, {	-- Defense Protocol Beta: Trial of the Champion (H)
+				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = HORDE_ONLY }, 	-- Defense Protocol Beta: Trial of the Champion (H)
+					(function(t) return t.criteriaID or t.achID; end), ach(18678, {
 					crit(60768, { -- Marshal Jacob Alerius
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
@@ -414,7 +416,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 						i(47222),	-- Uruka's Band of Zeal
 						i(47215),	-- Tears of the Vanquished
 						i(47216),	-- The Black Heart
+						-- #if AFTER 8.0
 						currency(241),	-- Champion's Seal
+						-- #endif
 					},
 				}),
 			}),

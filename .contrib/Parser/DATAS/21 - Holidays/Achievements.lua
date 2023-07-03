@@ -4,23 +4,49 @@
 -- #if AFTER WRATH
 root(ROOTS.Holidays, {	-- General Holiday Content
 	n(ACHIEVEMENTS, {
-		ach(2144, {	-- What a Long, Strange Trip It's Been
-			-- Meta Achievement should symlink the contained Achievements from Source
+		applyclassicphase(WRATH_PHASE_ONE, ach(2144, {	-- What a Long, Strange Trip It's Been (A)
+			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				913,	-- To Honor One's Elders
 				1693,	-- Fool For Love
 				2798,	-- Noble Gardener
 				1793,	-- For the Children
-				1039,	-- Flame Keeper
-				1038,	-- Flame Warden
+				-- #if AFTER 4.0.3
+				1039,	-- The Flame Keeper (H)
+				-- #endif
+				1038,	-- The Flame Warden (A)
 				1683,	-- Brewmaster
 				1656,	-- Hallowed Be Thy Name
 				1691,	-- Merrymaker
 			}},
+			-- #if BEFORE 4.0.3
+			["races"] = ALLIANCE_ONLY,
+			-- #endif
 			["groups"] = {
 				i(44177),	-- Violet Proto-Drake (MOUNT!)
 			},
-		}),
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(2145, {	-- What a Long, Strange Trip It's Been (H)
+			-- TODO: During Cataclysm Classic, check to see if this is still in the game.
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				913,	-- To Honor One's Elders
+				1693,	-- Fool For Love
+				2798,	-- Noble Gardener
+				1793,	-- For the Children
+				1039,	-- The Flame Keeper (H)
+				1683,	-- Brewmaster
+				1656,	-- Hallowed Be Thy Name
+				1691,	-- Merrymaker
+			}},
+			["timeline"] = { "removed 4.0.3" },
+			["races"] = HORDE_ONLY,
+			-- #if BEFORE 4.0.3
+			["groups"] = {
+				i(44177),	-- Violet Proto-Drake (MOUNT!)
+			},
+			-- #endif
+		})),
 	}),
 });
 -- #endif

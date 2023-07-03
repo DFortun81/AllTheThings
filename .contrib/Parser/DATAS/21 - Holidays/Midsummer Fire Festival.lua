@@ -2226,7 +2226,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				q(11834, {	-- Honor the Flame — Winterspring
 					["qg"] = 25917,	-- Winterspring Flame Warden
 					-- #if AFTER CATA
-					["coord"] = { 62.0, 35.0, WINTERSPRING },
+					["coord"] = { 61.2, 47.2, WINTERSPRING },
 					-- #else
 					["coord"] = { 62.6, 35.4, WINTERSPRING },
 					-- #endif

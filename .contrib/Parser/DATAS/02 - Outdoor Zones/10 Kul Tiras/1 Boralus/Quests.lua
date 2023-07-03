@@ -805,8 +805,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56031, {	-- The Wolf's Offensive
-				-- TODO: Marking this as removed in an attempt to information gather. Currently we have no knowledge of how to pop this or the Horde equivalent- if we receive error reports, ASK FOR MORE INFORMATION!
-				["u"] = REMOVED_FROM_GAME,
+				["description"] = "If not encountered the regular way, this can be obtained via party sync. You need to sync with a character which has just started BFA and gotten the portals unlocked in Boralus, but hasn't proceeded further. You then need to pick up the quest A Dying World and run it again. Continue up to and finish the quest Infusing the Heart. Then this quest should pop up for you.",
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),

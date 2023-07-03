@@ -278,8 +278,6 @@ root(ROOTS.Unsorted, {
 			i(193412),	-- Primal-Infused Dragon Egg
 			i(200836),	-- Arcane-Infused Crystals
 			i(202247),	-- Curious Curio Goggles
-			i(202265),	-- Wheel of Whelpwhisper Brie
-			i(202266),	-- Bag of Spicy Pet Snacks
 			i(202270),	-- [DNT] Twice-Woven Rope
 			i(202312),	-- Juicy Mammoth Steak
 			i(202313),	-- Echolocator
@@ -290,10 +288,8 @@ root(ROOTS.Unsorted, {
 			i(202400),	-- Soothing Incense
 			i(202690),	-- Decorative Shrubbery
 			i(202697),	-- Crimson Cushion
-			i(203386),	-- Box of Leapmaize Crackers
 			i(203712),	-- Soft Peafowl Down
 			i(204000),	-- Storm-Infused Stone
-			i(204263),	-- Time Grime
 			i(204275),	-- Slimey Key
 			i(204869),	-- Bolt of Ruby Cloth
 			i(204870),	-- Lasztak's Thread Order
@@ -305,7 +301,6 @@ root(ROOTS.Unsorted, {
 			i(205819),	-- Ashen Predator's Poleyns
 			i(206022),	-- Anduin's Lucky Hearthstone Card
 			i(206161),	-- Cat Toy
-			i(206171),	-- Vol'jin's Mojo
 			i(206187),	-- Highly Spiced Haunch
 			i(206188),	-- Druidic Dreamsalad
 			i(206189),	-- Fine Taladorian Cheese Platter
@@ -313,8 +308,6 @@ root(ROOTS.Unsorted, {
 			i(206191),	-- Roquefort-Stuffed Peppers
 			i(206192),	-- Picante Pomfruit Cake
 			i(206346),	-- Eva's Journal
-			i(206351),	-- Plans: Truesilver Champion
-			i(206352),	-- Plans: The Shatterer
 			i(206354),	-- Stinky Candle
 			i(206355),	-- Tobacco-Filled Candle
 			i(206356),	-- Ghost-Warding Candle
@@ -327,7 +320,6 @@ root(ROOTS.Unsorted, {
 			i(206363),	-- The Road Ahead
 			i(206364),	-- Eva's Femur
 			i(206365),	-- Inert Spectral Essence
-			i(206368),	-- Wand of Mass Polymorph
 			i(206369),	-- Time Trap
 			i(206370),	-- Blood of Innocents
 			i(206371),	-- Viewing Room Key
@@ -541,15 +533,10 @@ root(ROOTS.Unsorted, {
 			i(206638),	-- Corrupted Ashbringer
 			i(206645),	-- Cursed Cloth
 			i(206683),	-- Wrathion's Tab
-			i(206695),	-- Pale Duskblossom
-			i(206763),	-- Kabluey
 			i(206771),	-- Pattern: Cursed Cloth
 			i(206775),	-- Map to Suramar
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
-			i(206926),	-- Keeper's Gavel
-			i(206927),	-- Curator's Warhammer
-			i(206928),	-- Attendent's Hammer
 			i(206931),	-- Truesilver Champion
 			i(205259),	-- Order Soul
 			i(206163),	-- Temporal Gossamer
@@ -560,7 +547,6 @@ root(ROOTS.Unsorted, {
 			i(206957),	-- Boffins
 			i(206962),	-- Watcher's Log
 			i(206984),	-- Blood-Soaked Book
-			i(206997),	-- Gilded Sunglasses
 			i(206998),	-- Ragged Mantid Sword
 			i(16222),	-- Formula: Enchant Shield - Vitality
 			i(206998),	-- Amber Sword
@@ -758,7 +744,6 @@ root(ROOTS.Unsorted, {
 			i(208050),	-- Grimoire of the Xorothian Felhunter
 			i(208051),	-- Grimoire of the Antoran Felhunter
 			i(208052),	-- Grimoire of the Voracious Felmaw
-			i(208053),	-- Time Inert Souvenir
 			i(208061),	-- Quantum Headpiece
 			i(208062),	-- Quantum Shoulders
 			i(208063),	-- Quantum Gloves
@@ -769,7 +754,6 @@ root(ROOTS.Unsorted, {
 			i(208094),	-- Cache of Timewarped Treasures
 			i(208095),	-- Cache of Timewarped Treasures
 			i(208097),	-- Flamethrower
-			i(208100),	-- Seashellamayne the Shattered
 			i(208108),	-- Madam Shadow's Old Grimoire
 			i(208147),	-- Yellow Tweed Cap
 			i(208148),	-- Burgandy Cap
@@ -863,9 +847,6 @@ root(ROOTS.Unsorted, {
 			i(206160),	-- Madam Shadow's Grimoire
 			i(206394),	-- Red Dragon Egg
 			i(206520),	-- Beverage for Pedgi
-			i(206521),	-- Single Black Coffee
-			i(206523),	-- Five-Eon Energy
-			i(206524),	-- Eonized Latte
 			i(206653),	-- Fel Pinecone
 			i(206681),	-- Letter from Oman
 			i(206799),	-- Pauldrons of the Fire Lord
@@ -891,8 +872,6 @@ root(ROOTS.Unsorted, {
 			i(208053),	-- Irons's Artifacts
 			i(208226),	-- Mysterious Letter
 			i(208227),	-- Mysterious Letter
-			i(208235),	-- Pedgi's Spare Sunglasses
-			i(208236),	-- Melly's Metronographer
 			i(208321),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - INT Staff
 			i(208390),	-- Bronze Archive Stone
 			i(208391),	-- The Infinite Hand
@@ -902,17 +881,6 @@ root(ROOTS.Unsorted, {
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
 			i(208448),	-- Infinitea
 			i(208449),	-- Melly's Metronographer+++
-			i(208460),	-- The Coffee Stained Skull of Dul'gan
-			i(208461),	-- Some Book of Medivh
-			i(208462),	-- Vial of the Funswell
-			i(208463),	-- Helm of Somnation
-			i(208464),	-- The Firestone Containment Jar
-			i(208465),	-- The Cheers of Elune
-			i(208466),	-- Celestial Carrot
-			i(208467),	-- Larval Quintessence
-			i(208468),	-- L4WG1V3R Mechakey
-			i(208469),	-- At-a-Stall Crystal
-			i(208482),	-- The Heart of the Timeforge
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			filter(RECIPES, {
@@ -1020,10 +988,6 @@ root(ROOTS.Unsorted, {
 				i(204638),	-- Sunder Wing
 			}),
 			n(REWARDS, {
-				-- Loamm Niffen
-				i(205968),	-- Overflowing Loammian Supply Pack
-				-- Large Rep
-				i(205252),	-- Momento of Rekindled Bonds
 				-- Research
 				i(205454),	-- Researchers Wheel Barrow
 				-- Special
@@ -1036,8 +1000,6 @@ root(ROOTS.Unsorted, {
 				i(206270),	-- Volcanic Equipment Chest
 				-- New
 				i(189885),	-- The Battlespoon
-				-- new new
-				i(206955),	-- Highland Drake: Embodiment of the Hellforged
 			}),
 			n(QUESTS, {
 				-- 10.1.0.48480
@@ -1052,9 +1014,6 @@ root(ROOTS.Unsorted, {
 				q(72932),	-- Our Father's Legacy - DEPRECATED
 				q(72957),	-- A Sundered Road [DNT]
 				q(72960),	-- [NYI] Refti Cleaning
-				q(73086),	-- Healthy Competition
-				q(73092),	-- Something Like Family
-				q(73093),	-- Empty Chairs
 				q(73099),	--
 				q(73151),	-- Hats Off
 				q(73195),	--
@@ -1087,10 +1046,8 @@ root(ROOTS.Unsorted, {
 				q(75338),	-- Lavermix
 				q(75341),	--
 				q(75342),	-- Kronkapace
-				q(75372),	-- Drive Them Before Us
 				q(75376),	-- Suffuse, Reuse, Recycle
 				q(75389),	--
-				q(75408),	-- Calling All Dracthyr!
 				q(75418),	--
 				q(75429),	--
 				q(75434),	--
@@ -1178,10 +1135,7 @@ root(ROOTS.Unsorted, {
 				q(76010),	--
 				q(76012),	--
 				-- 10.1.0.48898
-				q(76029),	-- Dragon Isles Supplies
-				q(76031),	-- Dragon Isles Supplies
 				q(76082),	--
-				q(76104),	--
 				q(76105),	--
 				q(76106),	--
 				q(76107),	--
@@ -1317,14 +1271,6 @@ root(ROOTS.Unsorted, {
 				-- 10.0.7.48076
 				q(75202),	--
 				q(75224),	--
-				q(75246),	--
-				q(75247),	--
-				q(75248),	--
-				q(75249),	--
-				q(75250),	--
-				q(75251),	--
-				q(75252),	--
-				q(75253),	--
 				-- 10.0.7.48295
 				q(75426),	--
 				q(75427),	--
@@ -1375,16 +1321,6 @@ root(ROOTS.Unsorted, {
 					i(190815),	-- Highborne Scholar's Leggings
 					i(190868),	-- Highborne Scholar's Scrollmantle
 					i(190070),	-- Highborne Scholar's Gloves
-
-					-- Sylvan Stalker Set
-					i(189873),	-- Sylvan Stalker's Boots
-					i(190073),	-- Sylvan Stalker's Hood
-					i(190142),	-- Sylvan Stalker's Legguards
-					i(190436),	-- Sylvan Stalker's Baldric
-					i(190788),	-- Sylvan Stalker's Wristguards
-					i(190810),	-- Sylvan Stalker's Handguards
-					i(190811),	-- Sylvan Stalker's Vest
-					i(190894),	-- Sylvan Stalker's Mantle
 
 					-- Val'Sharah Protector Set
 					i(190547),	-- Val'Sharah Protector's Bracers
@@ -1437,10 +1373,10 @@ root(ROOTS.Unsorted, {
 					i(190867),	-- Void-Bound Pauldrons
 
 					-- Void-Bound Set -- I dont know which cloak belongs to which set. // Braghe
-					i(200920),	-- Void-Bound Cloak
-					i(200921),	-- Void-Bound Greatcloak
-					i(200922),	-- Void-Bound Shroud
-					i(200923),	-- Void-Bound Drape
+					i(200920),	-- Void-Bound Cloak (probably leather)
+					i(200921),	-- Void-Bound Greatcloak (probably plate)
+					i(200922),	-- Void-Bound Shroud (probably mail)
+					i(200923),	-- Void-Bound Drape (probably cloth)
 
 					i(190772),	-- Ensemble: Vestments of the Nightmare Forest
 					i(190165),	-- Ensemble: Twisted Arcanum Regalia
@@ -1467,7 +1403,6 @@ root(ROOTS.Unsorted, {
 					i(190203),	-- Woodsman's Timber Mallet
 
 					-- Two-Hand Wep
-					i(190146),	-- Antoran Felspire
 					i(190131),	-- Brick-on-a-Stick
 					i(190080),	-- Catastrophe's Edge
 					i(190714),	-- Gorian Pulverizer
@@ -1523,7 +1458,6 @@ root(ROOTS.Unsorted, {
 				q(72384),	-- Valdrakken Tour
 				q(72829),	--
 				q(72830),	--
-				q(74441),	-- Eaglemaster Niraak
 				-- 10.0.5.47871
 				q(74897),	--
 				q(74898),	--

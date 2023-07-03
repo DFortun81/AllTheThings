@@ -3,6 +3,7 @@
 -----------------------------------------------------
 local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
 local AnyDifficultyID = MultiDifficultyID(AllDifficulties);
+local LNHDifficulty = {LFR_RAID,NORMAL_RAID,HEROIC_RAID};
 local NormalPlus = {NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
 local HeroicPlus = {HEROIC_RAID,MYTHIC_RAID};
 local HeroicPlusID = MultiDifficultyID(HeroicPlus);
@@ -248,8 +249,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
 					["g"] = {
-						i(205145, {	-- Plans: Shadowed Impact Buckler (RECIPE!)
-						}),
+						i(205145),	-- Plans: Shadowed Impact Buckler (RECIPE!)
 					},
 				}),
 				e(2529, {	-- The Amalgamation Chamber
@@ -259,8 +259,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						201934,	-- Shadowflame Amalgamation
 					},
 					["g"] = {
-						i(204696, {	-- Recipe: Draconic Phial Cauldron (RECIPE!)
-						}),
+						i(204696),	-- Recipe: Draconic Phial Cauldron (RECIPE!)
 					},
 				}),
 				e(2530, {	-- The Forgotten Experiments
@@ -270,56 +269,105 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						200913,	-- Thadrion <Experiment 147>
 					},
 					["g"] = {
-						i(205140, {	-- Pattern: Undulating Sporecloak (RECIPE!)
-						}),
+						i(205140),	-- Pattern: Undulating Sporecloak (RECIPE!)
 					},
 				}),
-				e(2524, {	-- Assault of the Zaqali
-					["crs"] = {
-						202791,	-- Ignara
-						199659,	-- Warlord Kagni
-					},
-					["g"] = {
-					},
-				}),
+				-- e(2524, {	-- Assault of the Zaqali
+				-- 	["crs"] = {
+				-- 		202791,	-- Ignara
+				-- 		199659,	-- Warlord Kagni
+				-- 	},
+				-- 	["g"] = {
+				-- 	},
+				-- }),
 				e(2525, {	-- Rashok, the Elder
 					["crs"] = { 201320 },	-- Rashok, the Elder
 					["g"] = {
-						i(205144, {	-- Plans: Shadowed Razing Annihilator (RECIPE!)
-							["crs"] = { 201320 },	-- Rashok, the Elder
-						}),
+						i(205144),	-- Plans: Shadowed Razing Annihilator (RECIPE!)
 					},
 				}),
 				e(2532, {	-- The Vigilant Steward, Zskarn
 					["crs"] = { 202637 },	-- Zskarn <the Vigilant Steward>
 					["g"] = {
-						i(205036, {	-- Schematic: Tinker: Shadowflame Rockets (RECIPE!)
-						}),
+						i(205036),	-- Schematic: Tinker: Shadowflame Rockets (RECIPE!)
 					},
 				}),
 				e(2527, {	-- Magmorax
 					["crs"] = { 201579 },	-- Magmorax
 					["g"] = {
-						i(205684, {	-- Forbidden Flounder
-						}),
-						i(204975, {	-- Formula: Enchant Weapon - Shadowflame Wreathe (RECIPE!)
-						}),
+						i(205684),	-- Forbidden Flounder
+						i(204975),	-- Formula: Enchant Weapon - Shadowflame Wreathe (RECIPE!)
 					},
 				}),
 				e(2523, {	-- Echo of Neltharion
 					["crs"] = { 203133 },	-- Echo of Neltharion
 					["g"] = {
-						i(204968, {	-- Pattern: Shadowflame-Tempered Armor Patch (RECIPE!)
-						}),
+						i(204968),	-- Pattern: Shadowflame-Tempered Armor Patch (RECIPE!)
 					},
 				}),
 				e(2520, {	-- Scalecommander Sarkareth
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 					["g"] = {
-						i(204255, {	-- Cracked Titan Gem
-						}),
-						i(205876, {	-- Highland Drake: Embodiment of the Hellforged (DM!)
-						}),
+						i(204255),	-- Cracked Titan Gem
+					},
+				}),
+			}),
+			d(LNHDifficulty, {
+				-- e(2522, {	-- Kazzara, the Hellforged
+				-- 	["crs"] = { 201261 },	-- Kazzara, the Hellforged
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				-- e(2529, {	-- The Amalgamation Chamber
+				-- 	["crs"] = {
+				-- 		201774,	-- Essence of Shadow
+				-- 		201773,	-- Eternal Blaze
+				-- 		201934,	-- Shadowflame Amalgamation
+				-- 	},
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				-- e(2530, {	-- The Forgotten Experiments
+				-- 	["crs"] = {
+				-- 		200912,	-- Neldris <Experiment 4>
+				-- 		200918,	-- Rionthus <Experiment 328>
+				-- 		200913,	-- Thadrion <Experiment 147>
+				-- 	},
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				-- e(2524, {	-- Assault of the Zaqali
+				-- 	["crs"] = {
+				-- 		202791,	-- Ignara
+				-- 		199659,	-- Warlord Kagni
+				-- 	},
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				-- e(2525, {	-- Rashok, the Elder
+				-- 	["crs"] = { 201320 },	-- Rashok, the Elder
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				-- e(2532, {	-- The Vigilant Steward, Zskarn
+				-- 	["crs"] = { 202637 },	-- Zskarn <the Vigilant Steward>
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				-- e(2527, {	-- Magmorax
+				-- 	["crs"] = { 201579 },	-- Magmorax
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				-- e(2523, {	-- Echo of Neltharion
+				-- 	["crs"] = { 203133 },	-- Echo of Neltharion
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				e(2520, {	-- Scalecommander Sarkareth
+					["crs"] = { 203284 },	-- Scalecommander Sarkareth
+					["g"] = {
+						i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!)
 					},
 				}),
 			}),
@@ -1561,6 +1609,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						i(204424),	-- Crechebound Soldier's Boots
 						i(202565),	-- Erethos, the Empty Promise
 						i(202564),	-- Fang of the Sundered Flame
+						i(205876),	-- Highland Drake: Embodiment of the Hellforged (DM!) [Mythic]
 						i(202587),	-- Oathbreaker's Obsessive Gauntlets
 						i(204399),	-- Oblivion's Immortal Coil
 						i(202599),	-- Sarkareth's Abyssal Embrace

@@ -440,13 +440,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
-							["timeline"] = { ADDED_10_0_7 },
+						i(197020, {	-- Cliffside Wylderdrake: Spear Tail (DM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(197020, {	-- Cliffside Wylderdrake: Spear Tail (DM!)
+						i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
+							["timeline"] = { ADDED_10_0_7 },
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
@@ -767,13 +767,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "i", DRACONIUM_ORE, 20 },
 								{ "i", TALLSTRIDER_SINEW, 10 },
 							},
-						}),
-						i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
-						i(197099),	-- Highland Drake: Armor (DM!)
-						i(197357),	-- Renewed Proto-Drake: Armor (DM!)
-						i(197588),	-- Windborne Velocidrake: Armor (DM!)
-						i(203305, {	-- Winding Slitherdrake: Armor (DM!)
-							["timeline"] = { ADDED_10_1_0 },
 						}),
 					}, {	-- RENOWN 27 --
 						i(199768, {	-- Black Dragon Banner (TOY!)

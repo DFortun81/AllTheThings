@@ -180,6 +180,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["groups"] = {
 							i(77947),	-- The Sleeper
 							i(77948),	-- The Dreamer
+							ach(6181),	-- Fangs of the Father
 						},
 					}),
 				}),
@@ -399,17 +400,17 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(78884),	-- Girdle of Fungal Dreams
 							i(78887),	-- Girdle of Soulful Mending
 							i(78882),	-- Nightblind Cinch
-							i(72006),	-- Pattern: Bladeshadow Leggings
-							i(72010),	-- Pattern: Bladeshadow Wristguards
-							i(72008),	-- Pattern: Bracers of Flowing Serenity
-							i(72011),	-- Pattern: Bracers of the Hunter-Killer
+							i(72006),	-- Pattern: Bladeshadow Leggings (RECIPE!)
+							i(72010),	-- Pattern: Bladeshadow Wristguards (RECIPE!)
+							i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
+							i(72011),	-- Pattern: Bracers of the Hunter-Killer (RECIPE!)
 							i(72004),	-- Pattern: Bracers of Unconquered Power
-							i(72005),	-- Pattern: Deathscale Leggings
+							i(72005),	-- Pattern: Deathscale Leggings (RECIPE!)
 							i(72003),	-- Pattern: Dreamwraps of the Light
 							i(72002),	-- Pattern: Lavaquake Legwraps
-							i(71999),	-- Pattern: Leggings of Nature's Champion
-							i(72007),	-- Pattern: Rended Earth Leggings
-							i(72009),	-- Pattern: Thundering Deathscale Wristguards
+							i(71999),	-- Pattern: Leggings of Nature's Champion (RECIPE!)
+							i(72007),	-- Pattern: Rended Earth Leggings (RECIPE!)
+							i(72009),	-- Pattern: Thundering Deathscale Wristguards (RECIPE!)
 							i(72000),	-- Pattern: World Mender's Pants
 							i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
 							i(72013),	-- Plans: Foundations of Courage (RECIPE!)
@@ -621,18 +622,18 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(78884),	-- Girdle of Fungal Dreams
 							i(78887),	-- Girdle of Soulful Mending
 							i(78882),	-- Nightblind Cinch
-							i(72006),	-- Pattern: Bladeshadow Leggings
-							i(72010),	-- Pattern: Bladeshadow Wristguards
-							i(72008),	-- Pattern: Bracers of Flowing Serenity
-							i(72008),	-- Pattern: Bracers of Flowing Serenity
-							i(72011),	-- Pattern: Bracers of the Hunter-Killer
+							i(72006),	-- Pattern: Bladeshadow Leggings (RECIPE!)
+							i(72010),	-- Pattern: Bladeshadow Wristguards (RECIPE!)
+							i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
+							i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
+							i(72011),	-- Pattern: Bracers of the Hunter-Killer (RECIPE!)
 							i(72004),	-- Pattern: Bracers of Unconquered Power
-							i(72005),	-- Pattern: Deathscale Leggings
+							i(72005),	-- Pattern: Deathscale Leggings (RECIPE!)
 							i(72003),	-- Pattern: Dreamwraps of the Light
 							i(72002),	-- Pattern: Lavaquake Legwraps
-							i(71999),	-- Pattern: Leggings of Nature's Champion
-							i(72007),	-- Pattern: Rended Earth Leggings
-							i(72009),	-- Pattern: Thundering Deathscale Wristguards
+							i(71999),	-- Pattern: Leggings of Nature's Champion (RECIPE!)
+							i(72007),	-- Pattern: Rended Earth Leggings (RECIPE!)
+							i(72009),	-- Pattern: Thundering Deathscale Wristguards (RECIPE!)
 							i(72000),	-- Pattern: World Mender's Pants
 							i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
 							i(72013),	-- Plans: Foundations of Courage (RECIPE!)

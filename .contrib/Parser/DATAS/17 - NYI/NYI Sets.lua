@@ -708,6 +708,99 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		tier(MOP_TIER, {
 			-- 5.0.1
 			tier(MOP_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
+				n(DARKMOON_FAIRE_HEADER, {	-- Darkmoon Faire
+					-- Unused T0 Replica
+					cl(DRUID, {
+						i(78068),	-- Replica Wildheart Belt
+						i(78067),	-- Replica Wildheart Boots
+						i(78062),	-- Replica Wildheart Bracers
+						i(78063),	-- Replica Wildheart Cowl
+						i(78064),	-- Replica Wildheart Gloves
+						i(78069),	-- Replica Wildheart Kilt
+						i(78066),	-- Replica Wildheart Spaulders
+						i(78065),	-- Replica Wildheart Vest
+					}),
+					cl(HUNTER, {
+						i(78100),	-- Replica Beaststalker's Belt
+						i(78101),	-- Replica Beaststalker's Bindings
+						i(78094),	-- Replica Beaststalker's Boots
+						i(78097),	-- Replica Beaststalker's Cap
+						i(78095),	-- Replica Beaststalker's Gloves
+						i(78099),	-- Replica Beaststalker's Mantle
+						i(78098),	-- Replica Beaststalker's Pants
+						i(78096),	-- Replica Beaststalker's Tunic
+					}),
+					cl(MAGE, {
+						i(78020),	-- Replica Magister's Belt
+						i(78021),	-- Replica Magister's Bindings
+						i(78014),	-- Replica Magister's Boots
+						i(78016),	-- Replica Magister's Crown
+						i(78015),	-- Replica Magister's Gloves
+						i(78017),	-- Replica Magister's Leggings
+						i(78019),	-- Replica Magister's Mantle
+						i(78018),	-- Replica Magister's Robes
+					}),
+					cl(PALADIN, {
+						i(78135),	-- Replica Lightforge Belt
+						i(78142),	-- Replica Lightforge Boots
+						i(78137),	-- Replica Lightforge Bracers
+						i(78139),	-- Replica Lightforge Breastplate
+						i(78136),	-- Replica Lightforge Gauntlets
+						i(78140),	-- Replica Lightforge Helm
+						i(78138),	-- Replica Lightforge Legplates
+						i(78141),	-- Replica Lightforge Spaulders
+					}),
+					cl(PRIEST, {
+						i(78033),	-- Replica Devout Belt
+						i(78037),	-- Replica Devout Bracers
+						i(78031),	-- Replica Devout Crown
+						i(78034),	-- Replica Devout Gloves
+						i(78030),	-- Replica Devout Mantle
+						i(78036),	-- Replica Devout Robe
+						i(78035),	-- Replica Devout Sandals
+						i(78032),	-- Replica Devout Skirt
+					}),
+					cl(ROGUE, {
+						i(78083),	-- Replica Shadowcraft Belt
+						i(78080),	-- Replica Shadowcraft Boots
+						i(78078),	-- Replica Shadowcraft Bracers
+						i(78084),	-- Replica Shadowcraft Cap
+						i(78081),	-- Replica Shadowcraft Gloves
+						i(78082),	-- Replica Shadowcraft Pants
+						i(78085),	-- Replica Shadowcraft Spaulders
+						i(78079),	-- Replica Shadowcraft Tunic
+					}),
+					cl(SHAMAN, {
+						i(78122),	-- Replica Bindings of Elements
+						i(78125),	-- Replica Boots of Elements
+						i(78119),	-- Replica Coif of Elements
+						i(78126),	-- Replica Cord of Elements
+						i(78123),	-- Replica Gauntlets of Elements
+						i(78120),	-- Replica Kilt of Elements
+						i(78121),	-- Replica Pauldrons of Elements
+						i(78124),	-- Replica Vest of Elements
+					}),
+					cl(WARLOCK, {
+						i(78047),	-- Replica Dreadmist Belt
+						i(78053),	-- Replica Dreadmist Bracers
+						i(78052),	-- Replica Dreadmist Leggings
+						i(78050),	-- Replica Dreadmist Mantle
+						i(78051),	-- Replica Dreadmist Mask
+						i(78049),	-- Replica Dreadmist Robe
+						i(78048),	-- Replica Dreadmist Sandals
+						i(78046),	-- Replica Dreadmist Wraps
+					}),
+					cl(WARRIOR, {
+						i(78154),	-- Replica Belt of Valor
+						i(78153),	-- Replica Boots of Valor
+						i(78152),	-- Replica Bracers of Valor
+						i(78155),	-- Replica Breastplate of Valor
+						i(78151),	-- Replica Gauntlets of Valor
+						i(78156),	-- Replica Helm of Valor
+						i(78158),	-- Replica Legplates of Valor
+						i(78157),	-- Replica Spaulders of Valor
+					}),
+				}),
 				n(SEASON_MALEVOLENT, {
 					cl(DEATHKNIGHT, {
 						i(88191),	-- Gladiator's Dreadplate Chestpiece

@@ -34,10 +34,15 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		}),
 		q(76103, {	-- Report to the Trading Post -- June 2023
 			["timeline"] = { ADDED_10_1_0 },
+			["u"] = REMOVED_FROM_GAME,
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+		}),
+		q(76104, {	-- Report to the Trading Post -- July 2023
+			["timeline"] = { ADDED_10_1_0 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 	}),
-	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Travel Points in the month." }, {
+	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for filling the Travel Points Progress Bar in the month." }, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
 				i(206156, {	-- Grotto Netherwing Drake (MOUNT!)
@@ -75,10 +80,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
-					["timeline"] = { "added 10.1.0" },
+					["timeline"] = { ADDED_10_1_0 },
 				}),
 				i(76755, {	-- Tyrael's Charger (MOUNT!)
-					["timeline"] = { "added 10.1.5" },
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+					["timeline"] = { ADDED_10_1_0 },
 				}),
 			})),
 			filter(BATTLE_PETS, {
@@ -96,25 +102,33 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190560, {	-- Conquest
 					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
 				}),
-				-- i(, {	-- Ensemble: Sylvan Stalker’s Leathers	-- spellID 367583
-				-- 	["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-				-- 	["g"] = {
-				-- Item Type: Head, Shoulder, Chest, Waist, Legs, Feet, Wrist, Hand
-				-- 	},
-				-- }),
-				-- i(, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
-				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				-- 	["g"] = {
+				i(200915, {	-- Ensemble: Sylvan Stalker’s Leathers	-- spellID 367583
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				 	["g"] = {
+						i(190436),	-- Sylvan Stalker's Baldric
+						i(189873),	-- Sylvan Stalker's Boots
+						i(190810),	-- Sylvan Stalker's Handguards
+						i(190073),	-- Sylvan Stalker's Hood
+						i(190142),	-- Sylvan Stalker's Legguards
+						i(190894),	-- Sylvan Stalker's Mantle
+						i(190811),	-- Sylvan Stalker's Vest
+						i(190788),	-- Sylvan Stalker's Wristguards
+					},
+				}),
+				i(190528, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
 						i(190424),	-- Vagabond's Violet Cape
 						i(190425),	-- Vagabond's Violet Hood
-				-- 	},
-				-- }),
-				-- i(, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
-				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				-- 	["g"] = {
+					},
+				}),
+				i(190529, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
 						i(190423),	-- Wanderer's Violet Cloak
 						i(190426),	-- Wanderer's Violet Scarf
-				-- 	},
+					},
+				}),
 				i(190097, {	-- Fabulously Flashy Finery
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
@@ -125,6 +139,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
 				}),
 				i(190558, {	-- Helm of the Fierce
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190559, {	-- Helm of the Swift
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
 				i(190814, {	-- Mephistroth's Razor
@@ -645,9 +662,6 @@ root(ROOTS.NeverImplemented, {
 				i(190216, {	-- Feathered Cowl of the Guardian
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
-				i(190559, {	-- Helm of the Swift
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
 
 				-- Weapons
 				-- 1H Weapon
@@ -656,9 +670,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 2H Weapon
-				i(190560, {	-- Apocalypse
-					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
-				}),
 				i(190578, {	-- Headmaster's Command
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
@@ -691,9 +702,6 @@ root(ROOTS.NeverImplemented, {
 				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
 				i(190539),	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
 				i(190168),	-- Crusty Crawler (MOUNT!) (Unknown 2023)
-				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
-					["timeline"] = { "added 10.1.0" },
-				}),
 				i(69846),	-- Winged Guardian (MOUNT!) Blizz promised this when removing from store in Jan 2023
 			})),
 		})

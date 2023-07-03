@@ -258,7 +258,7 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 			L.MODE = "Mode";
 			L.TITLE_COMPLETIONIST = "Complétionniste ";
 			L.TITLE_UNIQUE_APPEARANCE = "Unique ";
-			L.TITLE_DEBUG = app.ccColors.Warning .. "Debug|R ";
+			L.TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
 			L.TITLE_ACCOUNT = app.ccColors.Account.."Compte|R ";
 			L.TITLE_MAIN_ONLY = " (Joueur principal seulement)";
 			--TODO: L.TITLE_NONE_THINGS = "None of the Things ";
@@ -276,7 +276,7 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		--TODO: L.PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
 		--TODO: L.MERCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
 		--TODO: L.MODE_EXPLAIN_LABEL = 	"|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		--TODO: L.DEBUG_MODE = app.ccColors.Warning.."Debug Mode|r (Show Everything)";
+		--TODO: L.DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
 		--TODO: L.DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
 		--TODO: L.COMPLETIONIST_MODE = "+Sources";
 		--TODO: L.COMPLETIONIST_MODE_TOOLTIP = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
@@ -365,6 +365,7 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		--TODO: L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Requiert un rechargement|r";
 		L.CLICK_TO_CREATE_FORMAT = "Cliquez pour créer %s";
+		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
 
 	-- Account-Wide Checkboxes
 		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = TRACK_ACC_WIDE.."\n\nAchievement tracking is usually "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";	--TODO
@@ -469,9 +470,9 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		L.MINI_LIST_SCALE_TOOLTIP = "Utilisez cette option pour personnaliser l’échelle des mini-listes.\n\nDéfaut : 1";
 		L.ADDITIONAL_LABEL = "Informations complémentaires";
 		--TODO: L.WINDOW_COLORS = "Window Colors";
-		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color and opacity of all ATT windows.";
-		--TODO: L.BORDER_TOOLTIP = "Set the border color and opacity of all ATT windows.";
-		--TODO: L.RESET_TOOLTIP = "Reset the background and border of all ATT windows.";
+		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color of all ATT windows.";
+		--TODO: L.BORDER_TOOLTIP = "Set the border color of all ATT windows.";
+		--TODO: L.RESET_TOOLTIP = "Reset the background and border color of all ATT windows.";
 		--TODO: L.CLASS_BORDER = "Use Class Color For Border";
 		--TODO: L.CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 
@@ -3762,6 +3763,7 @@ for key,value in pairs({
 	[398135] = "Perceuse en dracothyste abandonnée",	-- Discarded Dracothyst Drill
 	[398138] = "Explorobot fondu",	-- Molten Scoutbot
 	[398200] = "Coffret oublié",	-- Forgotten Lockbox
+	[398674] = "Prospectus coloré",	-- Vibrant Flyer
 	[398698] = "Gruyère grinçant",	-- Squeaking Swiss
 	[398770] = "Boîte de pierres",	-- Box of Rocks
 	[398778] = "Cuve répugnante",	-- Disgusting Vat

@@ -272,7 +272,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				ach(1830),	-- 500 Emblems of Valor
 				ach(1831),	-- 1000 Emblems of Valor
 				ach(1861),	-- The Party's Over
-				ach(2145),	-- What A Long, Strange Trip It's Been
 				ach(2216),	-- Most deadly Lich King dungeon boss
 				ach(2217),	-- Most deadly Lich King 10-player raid boss
 				ach(2218),	-- Most deadly Lich King 25-player raid boss

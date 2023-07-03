@@ -597,8 +597,8 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 						i(70142),	-- Moonwell Chalice
 						i(70143),	-- Moonwell Phial
 						i(70176),	-- Pattern: Luxurious Silk Gem Bag
-						i(70174),	-- Pattern: Royal Scribe's Satchel
-						i(70175),	-- Pattern: Triple-Reinforced Mining Bag
+						i(70174),	-- Pattern: Royal Scribe's Satchel (RECIPE!)
+						i(70175),	-- Pattern: Triple-Reinforced Mining Bag (RECIPE!)
 					},
 				}),
 				n(53214, {	-- Damek Bloombeard <Exceptional Equipment>

@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(204869),	-- Bolt of Ruby Cloth
 						i(202697),	-- Crimson Cushion
 						i(204870),	-- Lasztak's Thread Order
-						i(203712),	-- Soft Peafowl Down (3)
+						i(203712),	-- Soft Peafowl Down
 					},
 				}),
 				------ Day 2 ------
@@ -246,8 +246,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(72992, {	-- You're Playing Wrong!
 					["sourceQuests"] = { 72991 },	-- Warm Dragonfruit Pie
-					["provider"] = { "n", 182082 },	-- Agapanthus
-					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 				}),
 				------ Day 3 ------
 				q(72993, {	-- I'm the Boss!
@@ -460,8 +460,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(QUESTS, sharedData({ ["isDaily"] = true }, {
 				q(73119, {	-- A Wealth of Whelp Snacks
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["g"] = {
+						i(202266),	-- Bag of Spicy Pet Snacks
+						i(203386),	-- Box of Leapmaize Crackers
+						i(202265),	-- Wheel of Whelpwhisper Brie
+					},
 				}),
 				q(73126, {	-- Arts and Crafts and Baths
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
@@ -470,8 +475,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73120, {	-- Appetizing Aftermath
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 				}),
 				q(74492, {	-- Blistering Belastrasza
 					["sourceQuests"] = { 72993 },	-- I'm the Boss!

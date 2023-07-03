@@ -21,6 +21,7 @@ root(ROOTS.Promotions, {
 			mount(348162, {	-- Wandering Ancient (MOUNT!)
 				["description"] = "Granted to players by logging in on character of at least level 20.",
 				["timeline"] = { ADDED_9_0_5 },
+				["u"] = REMOVED_FROM_GAME,	-- Not sure when it got removed. Maybe DF Prepatch?
 			}),
 			-- SEASON 2
 			i(187834, {		-- Tormented Banner of the Opportune (TOY!)

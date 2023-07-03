@@ -606,50 +606,15 @@ root(ROOTS.GroupFinder, {
 		}),
 		i(69903, {	-- Satchel of Exotic Mysteries
 			["u"] = REMOVED_FROM_GAME,
-			["sym"] = {
-				{"select", "itemID",
-					13335,	-- Deathcharger's Reins
-					43953,	-- Reins of the Blue Drake
-					44151,	-- Reins of the Blue Proto-Drake
-					44707,	-- Reins of the Green Proto-Drake
-					32768,	-- Reins of the Raven Lord
-					43962,	-- Reins of the White Polar Bear
-					35513,	-- Swift White Hawkstrider
-					44984,	-- Ammen Vale Lashling
-					34535,	-- Azure Whelpling
-					54436,	-- Blue Clockwork Rocket Bot
-					29901,	-- Blue Moth Egg
-					29960,	-- Captured Firefly
-					8485,	-- Cat Carrier (Bombay)
-					46398,	-- Cat Carrier (Calico Cat)
-					8486,	-- Cat Carrier (Cornish Rex)
-					8490,	-- Cat Carrier (Siamese)
-					8488,	-- Cat Carrier (Silver Tabby)
-					8489,	-- Cat Carrier (White Kitten)
-					10392,	-- Crimson Snake
-					48114,	-- Deviate Hatchling
-					44970,	-- Dun Morogh Cub
-					44973,	-- Durotaur Scoprion
-					44974,	-- Elwynn Lamb
-					44982,	-- Enchanted Broom
-					43698,	-- Giant Sewer Rat
-					45002,	-- Mechanopeep
-					44980,	-- Mulgore Hatchling
-					48120,	-- Obsidian Hatchling
-					8496,	-- Parrot Cage (Cockatiel)
-					8495,	-- Parrot Cage (Senegal)
-					35504,	-- Phoenix Hatchling
-					10394,	-- Prairie Dog Whistle
-					44721,	-- Proto-Drake Whelp
-					48126,	-- Razzashi Hatchling
-					45606,	-- Sen'jin Fetish
-					69992,	-- Shimmering Wyrmling
-					44965,	-- Teldrassil Sproutling
-					8499,	-- Tiny Crimson Whelpling
-					44971,	-- Tirisfal Batling
-					29903,	-- Yellow Moth Egg
-				},
-			},
+			["sym"] = {MOP_SYM_PETS, {"select", "itemID",
+				13335,	-- Deathcharger's Reins
+				43953,	-- Reins of the Blue Drake
+				44151,	-- Reins of the Blue Proto-Drake
+				44707,	-- Reins of the Green Proto-Drake
+				32768,	-- Reins of the Raven Lord
+				43962,	-- Reins of the White Polar Bear
+				35513,	-- Swift White Hawkstrider
+			}},
 		}),
 		i(90818, {	-- Misty Satchel of Exotic Mysteries
 			["u"] = REMOVED_FROM_GAME,

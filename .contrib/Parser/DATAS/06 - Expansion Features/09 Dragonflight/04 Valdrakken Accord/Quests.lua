@@ -292,9 +292,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 195768 },	-- Sorotis
 					["coord"] = { 26.1, 40.0, VALDRAKKEN },
 					["g"] = {
+						i(199774),	-- Ancient Titan Blunderbus
 						i(199772),	-- Titan Gatekeeper's Shield
+						i(199776),	-- Titan Watcher's Broadsword
+						i(199775),	-- Titan Watcher's Gladius
 						i(199773),	-- Titan Watcher's Scepter
-						i(199774),	-- Ancient Titan Blunderbuss
 					},
 				}),
 				q(72694, {	-- Renown Supplies
@@ -374,6 +376,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
 							["timeline"] = { ADDED_10_0_7 },
 						}),
+						i(196989),	-- Cliffside Wylderdrake: White Hair (DM!)
 					},
 				}),
 				q(72283, {	-- Renown Supplies
@@ -716,6 +719,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(199742),	-- A Mender's Mentality
 						i(199744),	-- Academy Student's Journal
 						i(199741),	-- Compendium of Advanced Spells
+						i(199745),	-- Everflame Night Touch
+						i(194320),	-- Reinforced Lavender Bottle
 						i(199743),	-- Runic Symbols and their Meaning
 						i(198388),	-- Swirling Draconian Concoction
 						i(198389),	-- Weighted Potion Cylinder
@@ -798,15 +803,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 195769 },	-- Weaponsmith Koref
 					["coord"] = { 36.4, 51.7, VALDRAKKEN },
 					["g"] = {
+						i(200456),	-- Valdrakken Armor Opener
 						i(199825),	-- Valdrakken Belt Knife
+						i(199700),	-- Valdrakken Bladewing Decapitator
 						i(199730),	-- Valdrakken Bladewing Staff
+						i(199806),	-- Valdrakken Drakeclaw Barrier
 						i(201796),	-- Valdrakken Drakonid's Claw
+						i(199823),	-- Valdrakken Gatekeeper's Polearm
 						i(199702),	-- Valdrakken Guard's Barrier
+						i(201795),	-- Valdrakken Guard's Claw
+						i(199734),	-- Valdrakken Guard's Cutlass
 						i(199820),	-- Valdrakken Guard's Skullsplitter
 						i(199705),	-- Valdrakken Guard's Spear
 						i(199821),	-- Valdrakken Serrated Shortsword
 						i(199726),	-- Valdrakken Spellweaver's Scepter
+						i(199728),	-- Valdrakken Spellweaver's Stave
 						i(199732),	-- Valdrakken Wing Glaive
+						i(199707),	-- Valdrakken Wingguard Polearm
 					},
 				}),
 				q(72703, {	-- Renown Supplies

@@ -631,9 +631,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 10.1.0
 			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
-					["modelID"] = 112606,
-				}),
 				i(205206, {	-- Shalewing, Fire (MOUNT!)
 					-- ["modelID"] =
 				}),

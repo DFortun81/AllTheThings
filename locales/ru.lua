@@ -260,7 +260,7 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 			L.MODE = "Режим";
 			L.TITLE_COMPLETIONIST = "Коллекционер ";
 			L.TITLE_UNIQUE_APPEARANCE = "Уникальный ";
-			L.TITLE_DEBUG = app.ccColors.Warning .. "Отладка|R ";
+			L.TITLE_DEBUG = app.ccColors.Red .. "Отладка|R ";
 			L.TITLE_ACCOUNT = app.ccColors.Account.."Учётная Запись|R ";
 			L.TITLE_MAIN_ONLY = " (Основной Персонаж)";
 			L.TITLE_NONE_THINGS = "Без Штучек ";
@@ -278,7 +278,7 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.PATREON_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать ссылку на Patreon All The Things.\n\nТам вы можете поддержать аддон финансово!";
 		L.MERCH_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать ссылку на магазин мерчендайза All The Things.\n\nТам вы можете поддержать аддон финансово и получить за это крутой мерч!";
 		L.MODE_EXPLAIN_LABEL = "|cffFFFFFFЗдесь кратко изложено то, что Вы собираете. Включите все "..app.ccColors.Insane.."цветные параметры|cffFFFFFF, чтобы разблокировать "..app.ccColors.Insane.."Безумный Режим|cffFFFFFF.";	-- "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		L.DEBUG_MODE = app.ccColors.Warning.."Режим Отладки|r (Показать Всё)";
+		L.DEBUG_MODE = app.ccColors.Red.."Режим Отладки|r (Показать Всё)";
 		L.DEBUG_MODE_TOOLTIP = "Буквально... ВСЕ ШТУКИ В ИГРЕ. ОКОНЧАТЕЛЬНО. ТОЧКА. АГА, ВСЕ ОНИ. Даже Несобираемые штуки, как сумки, расходуемые, реагенты и прочие, появятся в списках. (Даже Вы сами! Нет, серьёзно. Смотрите.)\n\nДанный режим только для отладки. Не предназначен для отслеживания выполнения.\n\nЭтот режим игнорирует все фильтры, включая Несобираемые.";
 		L.COMPLETIONIST_MODE = "+Источники";
 		L.COMPLETIONIST_MODE_TOOLTIP = "Включите данный режим, чтобы считать все Предметы Собранными только тогда, когда определённый Предмет был открыт для данного Облика.\n\nЭто означает, что Вы должны получить каждый общий Облик для Предмета.\n\nПримечание: По умолчанию, игра перестаёт сообщать Вам о Предметах, которые Вы собрали после получения общего Источника, поэтому данный режим позволит отслеживать несобранные Предметы.";
@@ -369,6 +369,7 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.CLICK_TO_CREATE_FORMAT = "Нажмите, чтобы создать %s";
 		L.LOADING_FORMAT = "%s загружаются...";
 		L.READY_FORMAT = "%s загрузились";
+		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
 
 	-- Account-Wide Checkboxes
 		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = TRACK_ACC_WIDE.."\n\nДостижения обычно отслеживаются на всю учётную запись, но есть некоторые эксклюзивные для определённых классов или рас достижения, которые Вы не сможете получить на основном персонаже.";
@@ -473,9 +474,9 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.MINI_LIST_SCALE_TOOLTIP = 'Используйте для изменения масштаба Мини и Других Списков.\n\nПо умолчанию: 1';
 		L.ADDITIONAL_LABEL = "Дополнительная Информация";
 		--TODO: L.WINDOW_COLORS = "Window Colors";
-		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color and opacity of all ATT windows.";
-		--TODO: L.BORDER_TOOLTIP = "Set the border color and opacity of all ATT windows.";
-		--TODO: L.RESET_TOOLTIP = "Reset the background and border of all ATT windows.";
+		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color of all ATT windows.";
+		--TODO: L.BORDER_TOOLTIP = "Set the border color of all ATT windows.";
+		--TODO: L.RESET_TOOLTIP = "Reset the background and border color of all ATT windows.";
 		--TODO: L.CLASS_BORDER = "Use Class Color For Border";
 		--TODO: L.CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 
@@ -3774,6 +3775,7 @@ for key,value in pairs({
 	[398135] = "Использованный дракотистовый бур",	-- Discarded Dracothyst Drill
 	[398138] = "Огненный разведобот",	-- Molten Scoutbot
 	[398200] = "Позабытый ларец",	-- Forgotten Lockbox
+	[398674] = "Яркий буклет",	-- Vibrant Flyer
 	[398698] = "Скрипящий сыр",	-- Squeaking Swiss
 	[398770] = "Ящик с камнями",	-- Box of Rocks
 	[398778] = "Мерзкий чан",	-- Disgusting Vat

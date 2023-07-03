@@ -57,29 +57,115 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				ach(13078, {	-- Realm First! Battle for Azeroth Keystone Master
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				ach(13079),	-- Battle for Azeroth Keystone Conqueror: Season One
-				ach(13080),	-- Battle for Azeroth Keystone Master: Season One
+				ach(13079, {	-- Battle for Azeroth Keystone Conqueror: Season One
+					crit(1),	-- Atal'Dazar
+					crit(2),	-- Freehold
+					crit(3),	-- Kings' Rest
+					crit(4),	-- Shrine of the Storm
+					crit(5),	-- Siege of Boralus
+					crit(6),	-- Temple of Sethraliss
+					crit(7),	-- The MOTHERLODE!!
+					crit(8),	-- The Underrot
+					crit(9),	-- Tol Dagor
+					crit(10),	-- Waycrest Manor
+				}),
+				ach(13080, {	-- Battle for Azeroth Keystone Master: Season One
+					crit(1),	-- Atal'Dazar
+					crit(2),	-- Freehold
+					crit(3),	-- Kings' Rest
+					crit(4),	-- Shrine of the Storm
+					crit(5),	-- Siege of Boralus
+					crit(6),	-- Temple of Sethraliss
+					crit(7),	-- The MOTHERLODE!!
+					crit(8),	-- The Underrot
+					crit(9),	-- Tol Dagor
+					crit(10),	-- Waycrest Manor
+				}),
 			})),
 			header(HEADERS.Achievement, SEASON_REAPING, bubbleDownSelf({
 				["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 },
 			},{
-				ach(13448),	-- Battle for Azeroth Keystone Conqueror: Season Two
-				ach(13449),	-- Battle for Azeroth Keystone Master: Season Two
+				ach(13448, {	-- Battle for Azeroth Keystone Conqueror: Season Two
+					crit(1),	-- Atal'Dazar
+					crit(2),	-- Freehold
+					crit(3),	-- Kings' Rest
+					crit(4),	-- Shrine of the Storm
+					crit(5),	-- Siege of Boralus
+					crit(6),	-- Temple of Sethraliss
+					crit(7),	-- The MOTHERLODE!!
+					crit(8),	-- The Underrot
+					crit(9),	-- Tol Dagor
+					crit(10),	-- Waycrest Manor
+				}),
+				ach(13449, {	-- Battle for Azeroth Keystone Master: Season Two
+					crit(1),	-- Atal'Dazar
+					crit(2),	-- Freehold
+					crit(3),	-- Kings' Rest
+					crit(4),	-- Shrine of the Storm
+					crit(5),	-- Siege of Boralus
+					crit(6),	-- Temple of Sethraliss
+					crit(7),	-- The MOTHERLODE!!
+					crit(8),	-- The Underrot
+					crit(9),	-- Tol Dagor
+					crit(10),	-- Waycrest Manor
+				}),
 			})),
 			header(HEADERS.Achievement, SEASON_BEGUILING, bubbleDownSelf({
 				["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
 			},{
-				ach(13780),	-- Battle for Azeroth Keystone Conqueror: Season Three
-				ach(13781),	-- Battle for Azeroth Keystone Master: Season Three
+				ach(13780, {	-- Battle for Azeroth Keystone Conqueror: Season Three
+					crit(1),	-- Atal'Dazar
+					crit(2),	-- Freehold
+					crit(3),	-- Kings' Rest
+					crit(4),	-- Shrine of the Storm
+					crit(5),	-- Siege of Boralus
+					crit(6),	-- Temple of Sethraliss
+					crit(7),	-- The MOTHERLODE!!
+					crit(8),	-- The Underrot
+					crit(9),	-- Tol Dagor
+					crit(10),	-- Waycrest Manor
+				}),
+				ach(13781, {	-- Battle for Azeroth Keystone Master: Season Three
+					crit(1),	-- Atal'Dazar
+					crit(2),	-- Freehold
+					crit(3),	-- Kings' Rest
+					crit(4),	-- Shrine of the Storm
+					crit(5),	-- Siege of Boralus
+					crit(6),	-- Temple of Sethraliss
+					crit(7),	-- The MOTHERLODE!!
+					crit(8),	-- The Underrot
+					crit(9),	-- Tol Dagor
+					crit(10),	-- Waycrest Manor
+				}),
 			})),
 			header(HEADERS.Achievement, SEASON_AWAKENED, bubbleDownSelf({
 				["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 			},{
 				ach(14144, {	-- Battle for Azeroth Keystone Conqueror: Season Four
 					title(418),	-- <Name> the Awakened (TITLE!)
+					crit(1),	-- Atal'Dazar
+					crit(2),	-- Freehold
+					crit(3),	-- Kings' Rest
+					crit(4),	-- Shrine of the Storm
+					crit(5),	-- Siege of Boralus
+					crit(6),	-- Temple of Sethraliss
+					crit(7),	-- The MOTHERLODE!!
+					crit(8),	-- The Underrot
+					crit(9),	-- Tol Dagor
+					crit(10),	-- Waycrest Manor
 				}),
 				ach(14145, {	-- Battle for Azeroth Keystone Master: Season Four
-					i(174836)	-- Awakened Mindborer (MOUNT!)
+					i(174836),	-- Awakened Mindborer (MOUNT!)
+					crit(1),	-- Atal'Dazar
+					crit(2),	-- Freehold
+					crit(3),	-- Kings' Rest
+					crit(4),	-- Shrine of the Storm
+					crit(5),	-- Siege of Boralus
+					crit(6),	-- Temple of Sethraliss
+					crit(7),	-- The MOTHERLODE!!
+					crit(8),	-- The Underrot
+					crit(9),	-- Tol Dagor
+					crit(10),	-- Waycrest Manor
 				}),
 			})),
 		}),

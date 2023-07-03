@@ -49,14 +49,30 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			ach(16429, {	-- Thundering Hero: Dragonflight Season 1
 				title(470),	-- <Name> the Thundering Hero
 			}),
-			ach(16643),		-- Keystone Hero: Algeth'ar Academy
-			ach(16658),		-- Keystone Hero: Court of Stars
-			ach(16659),		-- Keystone Hero: Halls of Valor
-			ach(16640),		-- Keystone Hero: Ruby Life Pools
-			ach(16660),		-- Keystone Hero: Shadowmoon Burial Grounds
-			ach(16661),		-- Keystone Hero: Temple of the Jade Serpent
-			ach(16645),		-- Keystone Hero: The Azure Vault
-			ach(16641),		-- Keystone Hero: The Nokhud Offensive
+			ach(16643, {	-- Keystone Hero: Algeth'ar Academy
+				spell(393273),	-- Path of the Draconic Diploma
+			}),
+			ach(16658, {	-- Keystone Hero: Court of Stars
+				spell(393766),	-- Path of the Grand Magistrix
+			}),
+			ach(16659, {	-- Keystone Hero: Halls of Valor
+				spell(393764),	-- Path of Proven Worth
+			}),
+			ach(16640, {	-- Keystone Hero: Ruby Life Pools
+				spell(393256),	-- Path of the Clutch Defender
+			}),
+			ach(16660, {	-- Keystone Hero: Shadowmoon Burial Grounds
+				spell(159899),	-- Path of the Crescent Moon
+			}),
+			ach(16661, {	-- Keystone Hero: Temple of the Jade Serpent
+				spell(131204),	-- Path of the Jade Serpent
+			}),
+			ach(16645, {	-- Keystone Hero: The Azure Vault
+				spell(393279),	-- Path of Arcane Secrets
+			}),
+			ach(16641, {	-- Keystone Hero: The Nokhud Offensive
+				spell(393262),	-- Path of the Windswept Plains
+			}),
 		})),
 		header(HEADERS.Achievement, SEASON_SMOLDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
@@ -69,17 +85,33 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				i(204798),	-- Inferno Armoredon (MOUNT!)
 			}),
 			ach(17845),		-- Dragonflight Keystone Hero: Season 2
-			ach(17846, {	-- Thundering Hero: Dragonflight Season 2
+			ach(17846, {	-- Smoldering Hero: Dragonflight Season 2
 				title(504),	-- <Name> the Smoldering Hero
 			}),
-			ach(16642),		-- Keystone Hero: Brackenhide Hollow
-			ach(17848),		-- Keystone Hero: Freehold
-			ach(16646),		-- Keystone Hero: Halls of Infusion
-			ach(17850),		-- Keystone Hero: Neltharion's Lair
-			ach(16644),		-- Keystone Hero: Neltharus
-			ach(16639),		-- Keystone Hero: Uldaman: Legacy of Tyr
-			ach(17849),		-- Keystone Hero: The Underrot
-			ach(17847),		-- Keystone Hero: The Vortex Pinnacle
+			ach(16642, {	-- Keystone Hero: Brackenhide Hollow
+				spell(393267),	-- Path of the Rotting Woods
+			}),
+			ach(17848, {	-- Keystone Hero: Freehold
+				spell(410071),	-- Path of the Freebooter
+			}),
+			ach(16646, {	-- Keystone Hero: Halls of Infusion
+				spell(393283),	-- Path of the Titanic Reservoir
+			}),
+			ach(17850, {	-- Keystone Hero: Neltharion's Lair
+				spell(410078),	-- Path of the Earth-Warder
+			}),
+			ach(16644, {	-- Keystone Hero: Neltharus
+				spell(393276),	-- Path of the Obsidian Hoard
+			}),
+			ach(16639, {	-- Keystone Hero: Uldaman: Legacy of Tyr
+				spell(393222),	-- Path of the Watcher's Legacy
+			}),
+			ach(17849, {	-- Keystone Hero: The Underrot
+				spell(410074),	-- Path of Festering Rot
+			}),
+			ach(17847, {	-- Keystone Hero: The Vortex Pinnacle
+				spell(410080),	-- Path of Wind's Domain
+			}),
 		})),
 	}),
 })));
