@@ -3608,10 +3608,13 @@ for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azerite
 		settings:SetTooltipSetting(id, self:GetChecked())
 		settings:Refresh()
 	end)
+	-- Column 1
 	if idNo == 1 then
 		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
+	-- Column 2
 	elseif idNo == 12 then
 		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
+	-- Column 3
 	elseif idNo == 23 then
 		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
 	else
