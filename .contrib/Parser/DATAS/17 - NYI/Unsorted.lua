@@ -41,8 +41,6 @@ root(ROOTS.Unsorted, {
 			n(QUESTS, {	-- These are/were completable
 				-- Classic
 				q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
-				-- TBC
-				q(10841),	-- BETA The Vengeful Harbringer
 				-- 4.0.3
 				-- 5.0.1
 				q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER

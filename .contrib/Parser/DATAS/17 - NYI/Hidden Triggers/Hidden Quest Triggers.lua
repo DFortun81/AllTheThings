@@ -1724,6 +1724,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(10387),	-- The Fel Reaver Slayer - completed with quest 10382
 		q(10401),	-- Mission: End All, Be All - completed with quest 10136 & 10400
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
+		q(10841),	-- The Vengeful Harbringer - completed with quest 10720
 		q(11790),	-- Cultists Among Us - completed with quest 11920
 		q(13053),	-- Looking for Survivors - completed with quest 12671
 		q(13052),	-- Aerial Surveillance - completed with quest 12696
