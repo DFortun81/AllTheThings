@@ -1246,8 +1246,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(13951, {	-- Vigorsteel Vambraces
 							["timeline"] = { "removed 5.0.4" },
 						}),
-						i(13950, {	-- Detention Strap
-							["timeline"] = { "removed 5.0.4" },
+						i(13950, {	-- Detention Strap [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
+							-- #if ANYCLASSIC
+							["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
+							-- #endif
+							["timeline"] = { "removed 2.0.1" },
 						}),
 						i(13398, {	-- Boots of the Shrieker
 							["timeline"] = { "removed 5.0.4" },
