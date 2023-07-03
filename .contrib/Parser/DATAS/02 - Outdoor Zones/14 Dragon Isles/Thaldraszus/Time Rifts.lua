@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- ["sourceQuests"] = {  },	--
 						}),
 						crit(2, {	-- Antlered Skull
-							-- ["sourceQuests"] = {  },	--
+							["sourceQuests"] = { 76362 },	-- An Antlered Skull
 						}),
 						crit(3, {	-- Azmerlothian Hourglass
 							["sourceQuests"] = { 76379 },	-- A Murloc and a Dragon Walk into a Time Rift...
@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- ["sourceQuests"] = {  },	--
 						}),
 						crit(13, {	-- Gilded Vase
-							-- ["sourceQuests"] = {  },	--
+							["sourceQuests"] = { 76547 },	-- All That Glitters..
 						}),
 						crit(14, {	-- A Fish
 							-- ["sourceQuests"] = {  },	--
@@ -155,15 +155,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76379, {	-- A Murloc and a Dragon Walk into a Time Rift...
 						["provider"] = { "n", 206822 },	-- Alulgultasza de Urgl-Blalul <Queen of the... Murloc... Dragons>
 						["coord"] = { 49.4, 73.7, AZMERLOTH },
+						["g"] = {
+							i(206599),	-- Azmerlothian Hourglass
+						}
 					}),
 					q(76453, {	-- A Stony Reception
 						["provider"] = { "i", 206859 },	-- Chipped Stone Tabled
 						["coord"] = { 45.7, 23.9, AZQROTH },
 					}),
+					q(76547, {	-- All That Glitters..
+						["provider"] = { "i", 207003 },	-- Gilded Vase
+						["coord"] = { 40.1, 39.7, AZMOURNE },
+					}),
+					q(76362, {	-- An Antlered Skull
+						["provider"] = { "i", 206578 },	-- An Antlered Skull
+						["coord"] = { 75.1, 41.9, AZEWRATH },
+					}),
 					q(76449, {	-- The Endless Conflict
 						["provider"] = { "i", 206749 },	-- Oil-Soaked Log Book
 						["coord"] = { 12.0, 30.9, THE_WARLANDS },
 					}),
+
 					q(77236, {	-- When Time Needs Mending
 						["provider"] = { "n", 204450 },	-- Soridormi
 						["coord"] = { 51.1, 57.1, THALDRASZUS },
@@ -812,18 +824,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 				n(TREAURES, {
-					-- o(xxxx,{	-- Chipped Stone Tabled
-					-- 	["coord"] = { 45.7, 23.9, AZQROTH },
-					-- 	["g"] = {
+					o(403786,{	-- Antlered Skull
+					 	["coord"] = { 75.1, 41.9, AZEWRATH },
+					 	["g"] = {
+							i(206578),	-- An Antlered Skull
+					 	},
+					}),
+					o(404314,{	-- Chipped Stone Tabled
+					 	["coord"] = { 45.7, 23.9, AZQROTH },
+					 	["g"] = {
 							i(206859),	-- Chipped Stone Tabled
-					-- 	},
-					-- }),
-					-- o(xxxx,{	-- Oil Soaked Book
-					-- 	["coord"] = { 12.0, 30.9, THE_WARLANDS },
-					-- 	["g"] = {
+					 	},
+					}),
+					--o(xx,{	-- xx
+					--	["coord"] = { 40.1, 39.7, AZMOURNE },
+					--	["g"] = {
+						i(207003),	-- Gilded Vase
+					--	},
+					--}),
+					o(404242,{	-- Oil Soaked Book
+						["coord"] = { 12.0, 30.9, THE_WARLANDS },
+						["g"] = {
 							i(206749),	-- Oil-Soaked Log Book
-					-- 	},
-					-- 	}),
+						},
+					}),
 				}),
 			},
 		})),
@@ -834,4 +858,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	-- Alternates between these two questIDs when completing tasks
 	q(76984),
 	q(76985),
+
+	q(76618),	-- after Azewrath finished
+	q(76607),	-- after Azmourne finished
+	q(76614),	-- after Ulderoth finished
+	q(76699),	-- after A.Z.E.R.O.T.H finished / first time finished rift / Box of Tampered Reality (green bag)?
 }));

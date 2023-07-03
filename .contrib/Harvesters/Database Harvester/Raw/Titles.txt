@@ -652,3 +652,5 @@
 513@@@%s Unparalleled
 10.1.5.49908
 512@@@%s The Inquisitve
+10.1.5.50130
+514@@@%s of the Infinite

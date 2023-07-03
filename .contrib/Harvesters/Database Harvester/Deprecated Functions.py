@@ -91,3 +91,32 @@ def check_diff():
                 main_list.append(line)
     with open(Path("Builds", "Retail.txt"), "w") as build_list:
         build_list.writelines(main_list)
+
+def check_diff():
+    build_dict: dict[type[Thing], list[str]] = {}
+    things: list[type[Thing]] = Thing.__subclasses__()
+    things.remove(Illusions)
+    things.remove(SpellNames)
+    main_list: list[str] = []
+    for thing in things:
+        with open(Path("Builds", f"{thing.__name__}.txt"), "r") as build_list:
+            build_lines: list[str] = build_list.readlines()
+            build_dict[thing] = build_lines
+    with open(Path("Builds", "Achievements.txt"), "r") as main_build:
+        main_build_lines: list[str] = main_build.readlines()
+        for line in main_build_lines:
+            if all(line in values for values in build_dict.values()):
+                main_list.append(line)
+            else:
+                for k, v in build_dict.items():
+                    if line not in v:
+                        print(line, k)
+    for thing in things:
+        if thing == Factions:
+            for line in main_list:
+                if line in build_dict[thing]:
+                    build_dict[thing].remove(line)
+            #with open(Path("Builds", f"{thing.__name__}2.txt"), "w") as build_list:
+                #build_list.writelines(build_dict[thing])
+    with open(Path("Builds", "Retail2.txt"), "w") as build_list:
+        build_list.writelines(main_list)

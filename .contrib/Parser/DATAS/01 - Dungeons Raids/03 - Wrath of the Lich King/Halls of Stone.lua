@@ -77,25 +77,30 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60600, { -- Maiden of Grief
 						["_encounter"] = { 605, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45895),	-- Belt of the Blood Pit
 						},
 					}),
 					crit(60598, { -- Krystallus
 						["_encounter"] = { 604, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45927),	-- Handwraps of Resonance
+							i(45892),	-- Legacy of Thunder
 						},
 					}),
 					crit(60599, { -- Tribunal of Ages
 						["_encounter"] = { 606, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46340),	-- Adamant Handguards
+							i(45894),	-- Leggings of Unstable Discharge
 						},
 					}),
 					crit(60597, { -- Sjonnir the Ironshaper
 						["_encounter"] = { 607, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(46345),	-- Bracers of Righteous Reformation
+							i(46351),	-- Bloodcrush Cudgel
+							i(46346),	-- Boots of Unsettled Prey
 						},
 					}),
 				})),

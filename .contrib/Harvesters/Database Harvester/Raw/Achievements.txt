@@ -2747,6 +2747,35 @@
 17418@@@Challenger: Season 6
 18375@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 18376@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
+3.4.2.49658
+18544@@@Rival: Season 7
+18545@@@Gladiator: Season 7
+18546@@@Duelist: Season 7
+18547@@@Challenger: Season 7
+18548@@@Rival: Season 8
+18549@@@Duelist: Season 8
+18550@@@Challenger: Season 8
+18551@@@Gladiator: Season 8
+3.4.2.49794
+18590@@@Defense Protocol Beta: Utgarde Keep
+18591@@@Defense Protocol Beta: The Nexus
+18592@@@Defense Protocol Beta: Azjol-Nerub
+18593@@@Defense Protocol Beta: Ahn'kahet: The Old Kingdom
+18594@@@Defense Protocol Beta: Drak'Tharon Keep
+18595@@@Defense Protocol Beta: The Violet Hold
+18596@@@Defense Protocol Beta: Gundrak
+18597@@@Defense Protocol Beta: Halls of Stone
+18598@@@Defense Protocol Beta: Halls of Lightning
+18599@@@Defense Protocol Beta: The Oculus
+18600@@@Defense Protocol Beta: Utgarde Pinnacle
+18601@@@Defense Protocol Beta: The Culling of Stratholme
+18602@@@Defense Protocol Beta: Trial of The Champion
+3.4.2.49871
+18614@@@Defense Protocol Beta: Terminated
+3.4.2.49979
+18677@@@Defense Protocol Beta: Trial of the Champion
+18678@@@Defense Protocol Beta: Trial of the Champion
+18688@@@Defense Protocol Beta: Terminated
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens
@@ -12284,3 +12313,8 @@
 17575@@@Felwood Flyover Reverse: Silver
 17576@@@Felwood Flyover Reverse: Gold
 18648@@@<DNT> Eons Fringe - Multitude of Tasks - Completed Twice (Character)
+10.1.5.50130
+18703@@@Dawn of the Infinite: Galakrond's Fall
+18704@@@Dawn of the Infinite: Murozond's Rise
+18705@@@Defender of the Timeways
+18706@@@Put That Thing Back Where It Came From

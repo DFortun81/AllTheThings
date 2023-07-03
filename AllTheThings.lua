@@ -243,6 +243,8 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				local dloParent = rawget(t, "parent");
 				rawset(o, "parent", dloParent);
 				rawset(t, "__o", o);
+				-- allow the object to reference the DLO if needed
+				o.__dlo = t;
 				-- app.PrintDebug("DLO:Loaded",o.hash,"parent:",dloParent,dloParent and dloParent.hash)
 				-- DLOs can now have an OnLoad function which runs here when loaded for the first time
 				if overrides.OnLoad then overrides.OnLoad(o); end
@@ -1448,9 +1450,10 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 -- Source ID Harvesting Lib
 local DressUpModel = CreateFrame('DressUpModel');
 GetSourceID = function(itemLink)
-	if C_Item_IsDressableItemByID(itemLink) then
+	if itemLink and C_Item_IsDressableItemByID(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
 		local sourceID = select(2, C_TransmogCollection_GetItemInfo(itemLink));
+		-- app.PrintDebug("TMOGSourceID",sourceID,itemLink)
 		if sourceID then return sourceID, true; end
 
 		-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
@@ -1471,8 +1474,8 @@ GetSourceID = function(itemLink)
 						-- Adjusted to account for non-transmoggable SourceIDs which are collectible
 						local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 						if sourceInfo then
-							-- app.PrintDebug("SourceID from DressUpModel",sourceID,sourceInfo.itemID,sourceInfo.name)
 							if sourceInfo.itemID == itemID then
+								-- app.PrintDebug("DressUpModelSourceID",itemLink,sourceID,sourceInfo.itemID,sourceInfo.name)
 								return sourceID, true;
 							end
 						end
@@ -1485,43 +1488,6 @@ GetSourceID = function(itemLink)
 	return nil, false;
 end
 end
--- verifies that an item group either has no sourceID or that its sourceID matches what the in-game API returns
--- based on the itemID and modID of the item
-local function VerifySourceID(item)
-	-- ignore things which arent items
-	if not item.itemID then return true; end
-	-- no source at all, try to get it
-	if not item.s or item.s == 0 then return; end
-	-- unobtainable item, don't change the sourceID
-	if item.u then return true; end
-	-- seasonal item, don't change the sourceID
-	if item.e then return true; end
-	local sourceInfo = C_TransmogCollection_GetSourceInfo(item.s);
-	-- no source info or no item for the source
-	-- ignore this, maybe blizz removed a sourceID that we tracked in the past...?
-	if not sourceInfo or not sourceInfo.itemID then
-		print("Invalid SourceID",item.itemID,item.modID,item.s);
-		return;
-	end
-	-- item for the source is different than the current item
-	if sourceInfo.itemID and sourceInfo.itemID ~= item.itemID then
-		print("Inaccurate SourceID",item.itemID,item.modID,item.s,"=>",sourceInfo.itemID,sourceInfo.itemModID);
-		return;
-	end
-	-- check that the group's itemlink still returns the same sourceID as saved in the group
-	if item.link and not item.retries then
-		local linkInfoSourceID = GetSourceID(item.link);
-		if linkInfoSourceID and linkInfoSourceID ~= item.s then
-			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
-			return;
-		end
-	-- item has not pulled its link yet, so include it for re-sourcing anyway
-	elseif item.retries then
-		return;
-	end
-	-- at this point the game source information matches the information for this item group
-	return true;
-end
 -- Attempts to determine an ItemLink which will return the provided SourceID
 app.DetermineItemLink = function(sourceID)
 	local link;
@@ -1529,14 +1495,15 @@ app.DetermineItemLink = function(sourceID)
 	local itemID = sourceInfo and sourceInfo.itemID;
 	-- No ItemID don't try to generate the link
 	if not itemID then
-		-- app.PrintDebug("Could not generate Item Link for",sourceID,"(No Source Info from Blizzard)");
+		-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No Source Info from Blizzard)");
 		return;
 	end
 	local itemFormat = "item:"..itemID;
 	-- Check Raw Item
 	link = itemFormat;
-	-- if quality is Artifact / Unmodified Item / Category 'Paired'  just return the basic Item string
+	-- if quality is Artifact / Unmodified Item / Category 'Paired' just return the basic Item string
 	if sourceInfo.quality == 6 or sourceInfo.itemModID == 0 or sourceInfo.categoryID == 29 then
+		-- app.PrintDebug("DetermineItemLink:Good",sourceID,"(Basic Item Data)");
 		return link;
 	end
 	local checkID, found = GetSourceID(link);
@@ -1561,7 +1528,7 @@ app.DetermineItemLink = function(sourceID)
 		-- app.PrintDebug(link,checkID,found)
 		if found and checkID == sourceID then return link; end
 	end
-	-- app.PrintDebug("Could not generate Item Link for",sourceID,"(No ModID or BonusID match)");
+	-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No ModID or BonusID match)");
 end
 app.IsComplete = function(o)
 	if o.total and o.total > 0 then return o.total == o.progress; end
@@ -6100,6 +6067,9 @@ app.SearchForObject = function(field, id, require)
 		end
 		local fcacheObj;
 		require = (require == "key" and 2) or (require == "field" and 1) or 0;
+		-- Items are cached by base ItemID and ModItemID, so when searching by ItemID, use ModItemID for
+		-- match requirement accuracy
+		field = field == "itemID" and "modItemID" or field;
 		-- quick escape for single cache results! hooray!
 		if count == 1 then
 			fcacheObj = fcache[1];
@@ -7062,6 +7032,7 @@ app.SetBaseObject = function(t, base)
 		-- app.PrintDebug("NewBase",base.hash)
 		setmetatable(t, { __index = base } );
 	end
+	return t;
 end
 -- Allows wrapping a Type Object with another Base Type. This allows for multiple inheritance of
 -- Objects without requiring a full definition of altered field functions
@@ -7137,7 +7108,7 @@ end)();
 
 -- Common Wrapper Types
 do
-
+local Wrap, SetBase = app.WrapObject, app.SetBaseObject;
 local HeaderCloneFields = {
 	-- Fields in the wrapped object which should not persist when represented as a Header
 	["collectible"] = app.ReturnNil,
@@ -7163,7 +7134,7 @@ local HeaderCloneFields = {
 local BaseHeaderClone = app.BaseObjectFields(HeaderCloneFields, "HeaderClone");
 -- Wraps a given object such that it can act as a non-filtered Header of the object
 app.CreateWrapHeader = function(t)
-	return app.WrapObject(t, BaseHeaderClone);
+	return Wrap(t, BaseHeaderClone);
 end
 
 local FilterHeaderCloneFields = {
@@ -7180,8 +7151,13 @@ local FilterHeaderCloneFields = {
 local BaseFilterHeaderClone = app.BaseObjectFields(FilterHeaderCloneFields, "FilterHeaderClone");
 -- Wraps a given object such that it can act as a filtered Header of the object
 app.CreateWrapFilterHeader = function(t)
-	return app.WrapObject(t, BaseFilterHeaderClone);
+	return Wrap(t, BaseFilterHeaderClone);
 end
+-- Returns a 'read-only' wrap of the given object such that it is represented as itself via field access of the raw object if nil, but any table assignment
+-- affects only the raw object and not the read-only object
+-- app.CreateReadOnlyObject = function(t)
+-- 	return SetBase({}, t);
+-- end
 end	-- Common Wrapper Types
 
 -- Quest Lib
@@ -10793,6 +10769,7 @@ local function RawSetItemInfoFromLink(t, link)
 		local _t, id = cache.GetCached(t);
 		print("rawset item info",id,link,name,quality,b)
 		--]]
+		-- app.PrintDebug("RawSetLink",link)
 		t = cache.GetCached(t);
 		t.retries = nil;
 		t.name = name;
@@ -10936,8 +10913,10 @@ local itemFields = {
 		end
 	end,
 	["modItemID"] = function(t)
-		t.modItemID = GetGroupItemIDWithModID(t) or t.itemID;
-		return t.modItemID;
+		local modItemID = GetGroupItemIDWithModID(t) or t.itemID;
+		-- app.PrintDebug("item.modItemID",modItemID,t.key,t[t.key])
+		t.modItemID = modItemID;
+		return modItemID;
 	end,
 	["indicatorIcon"] = app.GetQuestIndicator,
 	["trackableAsQuest"] = function(t)
@@ -11093,7 +11072,8 @@ local fields = RawCloneData(itemFields, {
 		-- async generation of the proper Item Link
 		-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
 		t.__autolink = true;
-		app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
+		-- app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
+		app.GenerateGroupLinkUsingSourceID(t);
 	end,
 });
 app.BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
@@ -11524,6 +11504,7 @@ itemHarvesterFields.text = function(t)
 	end
 	local link = t.link;
 	if link then
+		app.ImportRawLink(t, link);
 		local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
 		itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
 			= GetItemInfo(link);
@@ -11841,7 +11822,7 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 			if not ignoreSource then
 				-- does this link also have a sourceID?
 				local s = GetSourceID(rawlink);
-				-- print("s",s)
+				-- app.PrintDebug("IRL:GS",rawlink,s)
 				if s then group.s = s; end
 				-- if app.DEBUG_PRINT then app.PrintTable(group) end
 			end
@@ -11857,6 +11838,7 @@ app.GenerateGroupLinkUsingSourceID = function(group)
 	if not link then return; end
 
 	app.ImportRawLink(group, link, true);
+	-- app.PrintDebug("GGLUS",link,s)
 
 	local sourceGroup = app.SearchForObject("s", s, "key");
 	if not sourceGroup then
@@ -11870,7 +11852,7 @@ app.SaveHarvestSource = function(data)
 		local item = AllTheThingsHarvestItems[itemID];
 		if not item then
 			item = {};
-			-- app.PrintDebug("NEW SOURCE ID!",data.text,s,itemID);
+			-- app.PrintDebug("SAVED SOURCE ID!",data.text,data.modItemID or itemID,"=>",s);
 			AllTheThingsHarvestItems[itemID] = item;
 		end
 		local bonusID = data.bonusID;
@@ -12103,6 +12085,17 @@ local function CacheInfo(t, field)
 	else
 		_t.link = GetSpellLink(id);
 	end
+	-- track retries on cacheing mount info... some mounts just never return info
+	local retries = _t.retries or 0;
+	retries = retries + 1;
+	if retries > 20 then
+		local name = (itemID and sformat("Item #%d",itemID)) or
+					(id and sformat("Spell #%d",id));
+		_t.text = name;
+		_t.name = name;
+		_t.icon = 134400;	-- question mark
+	end
+	_t.retries = retries;
 	if field then return _t[field]; end
 end
 local function default_costCollectibles(t)
@@ -12181,7 +12174,7 @@ local RefreshMounts = function(newMountID)
 	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
 	-- plus it's not laggy now to do that so it should be fine
 
-	for _,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+	for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
 		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 		if spellID and isCollected then
 			if not collectedSpells[spellID] then
@@ -15291,43 +15284,7 @@ local function SetRowData(self, row, data)
 		if IsRetrieving(text) then
 			text = RETRIEVING_DATA;
 			self.processingLinks = true;
-		-- WARNING: DEV ONLY START
-		-- no or bad sourceID or requested to reSource
-		elseif data.reSource then
-			-- If it doesn't, the source ID will need to be harvested.
-			local s, success = GetSourceID(text) or (data.artifactID and data.s);
-			if s and s > 0 then
-				-- only save the source if it is different than what we already have, or being forced
-				if not data.s or data.s < 1 or data.s ~= s or data.artifactID then
-					print("SourceID Update",text,data.modItemID,data.s,"=>",s);
-					-- print(GetItemInfo(text))
-					data.s = s;
-					if data.collected then
-						data.parent.progress = data.parent.progress + 1;
-					end
-					if data.artifactID then
-						local artifact = AllTheThingsArtifactsItems[data.artifactID];
-						if not artifact then
-							artifact = {};
-						end
-						artifact[data.isOffHand and 1 or 2] = s;
-						AllTheThingsArtifactsItems[data.artifactID] = artifact;
-					else
-						app.SaveHarvestSource(data);
-					end
-				elseif data.forceSource then
-					app.SaveHarvestSource(data);
-				end
-			elseif success then
-				print("Success without a SourceID", text);
-			else
-				-- print("NARP", text);
-				data.s = nil;
-				data.parent.total = data.parent.total - 1;
-			end
-			data.reSource = nil;
 		end
-		-- WARNING: DEV ONLY END
 		local leftmost, relative, iconSize, rowPad = row, "LEFT", 16, 8;
 		local x = CalculateRowIndent(data) * rowPad + rowPad;
 		row.indent = x;
@@ -16740,14 +16697,16 @@ RowOnEnter = function (self)
 			"name",
 			"link",
 			"sourceParent",
-			"sourceIgnored",
-			"collectible",
-			"collected",
-			"trackable",
-			"saved",
-			"collectibleAsCost",
-			"costTotal",
-			"costProgress"
+			-- "sourceIgnored",
+			-- "collectible",
+			-- "collected",
+			-- "trackable",
+			-- "saved",
+			-- "collectibleAsCost",
+			-- "costTotal",
+			-- "costProgress",
+			"itemID",
+			"modItemID"
 		};
 		GameTooltip:AddLine("-- Extra Fields:");
 		for _,key in ipairs(fields) do
@@ -19366,242 +19325,6 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 		self:BaseUpdate(force);
 	end
 end;
-customWindowUpdates["ItemFinder"] = function(self, ...)
-	if self:IsVisible() then
-		if not self.initialized then
-			local partition = app.GetCustomWindowParam("finder", "partition");
-			local limit = app.GetCustomWindowParam("finder", "limit");
-
-			app.MaximumItemInfoRetries = 10;
-			self.doesOwnUpdate = true;
-			self.initialized = true;
-			self.Limit = tonumber(limit) or 200000;
-			self.PartitionSize = tonumber(partition) or 1000;
-			self.ScrollCount = 2;
-			local db = {};
-			local CleanUpHarvests = function()
-				local scrollCount = self.ScrollCount;
-				local windowRows = self.rowData;
-				local completed = true;
-				local currentRow;
-				local text;
-				-- check each row in order to see if it is completed
-				while completed do
-					currentRow = windowRows[scrollCount];
-					-- i don't know why calling the .text field on the row an extra time is necessary. but otherwise this logic doesn't work.
-					text = currentRow and currentRow.text;
-					completed = currentRow and currentRow.collected;
-					if completed then
-						scrollCount = scrollCount + 1;
-					end
-				end
-				-- set the scroll position of the window based on how many completed rows have been encountered
-				-- every row has been completed
-				if scrollCount >= #windowRows then
-					self.ScrollCount = 2;
-					self.ScrollBar:SetValue(1);
-					self.UpdateDone = nil;
-					-- update the window since we've cleared everything available
-					-- app.PrintDebug("UpdateWindow - done processing")
-					-- self:Update();
-				else
-					self.ScrollCount = scrollCount;
-					self.ScrollBar:SetValue(scrollCount);
-				end
-				self:Refresh();
-			end
-			-- processes the content of the partition and makes the partition hidden if everything within is completed
-			-- local RemoveHarvests = function(self)
-			-- 	app.PrintDebug("OnUpdate",self.text)
-			-- 	if self.visible and self.g then
-			-- 		local completed, i, g = true, 1, self.g;
-			-- 		local o;
-			-- 		-- check each item in order to see if it is completed
-			-- 		while completed and i < #g do
-			-- 			o = g[i];
-			-- 			completed = o and o.collected;
-			-- 			if completed then
-			-- 				i = i + 1;
-			-- 			end
-			-- 		end
-			-- 		if completed then
-			-- 			app.PrintDebug("Hide Partition",self.text)
-			-- 			self.visible = false;
-			-- 			self.OnUpdate = nil;
-			-- 		end
-			-- 	end
-			-- 	return true;
-			-- end
-			-- add a bunch of raw, delay-loaded items in order into the window
-			local groupCount, id = math.floor(self.Limit / self.PartitionSize);
-			local g, overrides = {}, {visible=true};
-			local partition, partitionStart, partitionGroups;
-			local dlo, obj = app.DelayLoadedObject, app.CreateItemHarvester;
-			for j=0,groupCount,1 do
-				partitionStart = j * self.PartitionSize;
-				partitionGroups = {};
-				-- define a sub-group for a range of quests
-				partition = {
-					["text"] = tostring(partitionStart + 1).."+",
-					["icon"] = app.asset("Interface_Quest_header"),
-					["visible"] = true,
-					["collected"] = true,
-					["OnClick"] = function(row, button)
-						-- assign the clean up method now that the group was clicked
-						self.UpdateDone = CleanUpHarvests;
-						-- no return so that it acts like a normal row
-					end,
-					-- ["OnUpdate"] = RemoveHarvests,
-					["g"] = partitionGroups,
-				};
-				if partitionStart + 1 < self.Limit then
-					for i=1,self.PartitionSize,1 do
-						id = partitionStart + i;
-						if id <= self.Limit then
-							tinsert(partitionGroups, dlo(obj, "text", overrides, id));
-						end
-					end
-				end
-				tinsert(g, partition);
-			end
-			db.g = g;
-			db.text = "Item Harvester";
-			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider";
-			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nExpand a group to harvest the 1,000 Items within that range.";
-			db.visible = true;
-			db.back = 1;
-			self:SetData(db);
-		end
-		self:BaseUpdate(true);
-	end
-end;
-customWindowUpdates["Harvester"] = function(self, force)
-	if self:IsVisible() then
-		if not self.initialized then
-			self.initialized = true;
-			self.doesOwnUpdate = true;
-			force = true;
-			-- ensure Debug is enabled to fully capture all information
-			if not app.MODE_DEBUG then
-				app.print("Enabled Debug Mode");
-				self.forcedDebug = true;
-				app.Settings:ToggleDebugMode();
-			end
-
-			local db = {};
-			db.g = {};
-			db.text = "Harvesting All Item SourceIDs";
-			db.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
-			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW a lot!";
-			db.visible = true;
-			db.progress = 0;
-			db.total = 0;
-			db.back = 1;
-
-			local harvested = {};
-			local oldRetries = app.MaximumItemInfoRetries;
-			app.PrintDebug(self.Suffix, app.GetCustomWindowParam(self.Suffix, "min"))
-			local min = app.GetCustomWindowParam(self.Suffix, "min") or 0;
-			local max = app.GetCustomWindowParam(self.Suffix, "max") or 999999;
-			local force = app.GetCustomWindowParam(self.Suffix, "force");
-			app.print("Set Harvest ItemID Bounds:",min,max);
-			app.MaximumItemInfoRetries = 10;
-			local g = {};
-			local i,m,b;
-			local modItemID;
-			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
-			for itemID,groups in pairs(fieldCache["itemID"]) do
-				-- ignore items that dont meet the customHarvest range if specified
-				if min <= itemID and itemID <= max then
-					-- clean any cached modID from the itemID
-					-- app.PrintDebug("Check",itemID)
-					-- clone the Item for this item cache
-					for _,item in ipairs(groups) do
-						-- only use the matching cached Item
-						modItemID = item.modItemID or item.itemID;
-						if not harvested[modItemID] then
-							harvested[modItemID] = true;
-							i,m,b = GetItemIDAndModID(modItemID);
-							-- app.PrintDebug("Harvest",modItemID,i,m,b)
-							tinsert(g, app.CreateItem(tonumber(i), {visible = true, reSource = true, forceSource = force, s = item.s, modID = m, bonusID = b}));
-						end
-					end
-				end
-			end
-			wipe(harvested);
-			-- add artifacts
-			for artifactID,groups in pairs(fieldCache["artifactID"]) do
-				for _,group in pairs(groups) do
-					if not group.s then
-						tinsert(g, setmetatable({
-							visible = true,
-							artifactID = tonumber(artifactID),
-							silentItemID = group.silentItemID,
-							isOffHand = group.isOffHand,
-							reSource = true,
-						}, app.BaseArtifact));
-					end
-				end
-			end
-			-- total doesnt change
-			local total = #g;
-			db.total = total;
-			db.progress = 0;
-			db.g = g;
-			self:SetData(db);
-			self:BuildData();
-			self.ScrollBar:SetValue(1);
-			self.UpdateDone = function(self)
-				-- rowdata = set of visible groups which can show in the window
-				local rowData = self.rowData;
-				-- Remove up to 100 completed rows each frame (no need to process through thousands of rows when only a few update each frame)
-				local progress = rowData[1].progress;
-				-- Adjust progress of first chunk of completed harvests
-				local group, rowSourced;
-				for i=2,100 do
-					group = rowData[i];
-					-- count how many visible & processed groups we find to increment the progress
-					if group and group.visible and not group.reSource then
-						group.visible = nil;
-						progress = progress + 1;
-						rowSourced = true;
-					end
-				end
-				-- for some reason the total changes outside of this function... so make sure it stays constant
-				rowData[1].total = total;
-				rowData[1].progress = progress;
-				if progress >= total then
-					app.Sort(AllTheThingsHarvestItems);
-					app.Sort(AllTheThingsArtifactsItems);
-					-- revert Debug if it was enabled by the harvester
-					if self.forcedDebug then
-						app.print("Reverted Debug Mode");
-						app.Settings:ToggleDebugMode();
-						self.forcedDebug = nil;
-					end
-					app.print("Source Harvest Complete! ItemIDs:",min,"->",max);
-					-- revert the number of retries to retrieve item information
-					app.MaximumItemInfoRetries = oldRetries or 40;
-					-- reset the window so it can be used to harvest again without reloading, only via the command, not another update
-					self.UpdateDone = nil;
-					self:SetData(nil);
-					self:BaseUpdate();
-					self.initialized = nil;
-					self:Toggle();
-					return;
-				end
-				if not rowSourced then
-					-- Soft-Update if needed to remove processed items
-					self:BaseUpdate();
-				else
-					-- Otherwise refresh the Harvester Window to harvest current row data for next refresh
-					self:Refresh();
-				end
-			end
-		end
-		self:BaseUpdate(force);
-	end
-end;
 customWindowUpdates["SourceFinder"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
@@ -20853,6 +20576,81 @@ customWindowUpdates["Sync"] = function(self)
 end;
 customWindowUpdates["list"] = function(self, force, got)
 	if not self.initialized then
+		self.VerifyGroupSourceID = function(data)
+			if data._VerifyGroupSourceID then return; end
+			local link, source = data.link, data.s;
+			if not link then return; end
+			-- If it doesn't, the source ID will need to be harvested.
+			local s, success = GetSourceID(link) or (data.artifactID and data.s);
+			-- app.PrintDebug("SourceIDs",data.modItemID,source,s,success)
+			data._VerifyGroupSourceID = true;
+			if s and s > 0 then
+				-- only save the source if it is different than what we already have, or being forced
+				if not source or source < 1 or source ~= s or data.artifactID then
+					app.print("SourceID Update",link,data.modItemID,source,"=>",s,data.artifactID);
+					-- print(GetItemInfo(text))
+					data.s = s;
+					if data.artifactID then
+						local artifact = AllTheThingsArtifactsItems[data.artifactID];
+						if not artifact then
+							artifact = {};
+						end
+						artifact[data.isOffHand and 1 or 2] = s;
+						AllTheThingsArtifactsItems[data.artifactID] = artifact;
+					else
+						app.SaveHarvestSource(data);
+					end
+				end
+			elseif success then
+				print("Success without a SourceID", link);
+			end
+		end
+		self.RemoveSelf = function(o)
+			local parent = rawget(o, "parent");
+			if not parent then
+				app.PrintDebug("no parent?",o.text)
+				return;
+			end
+			local og = parent.g;
+			if not og then
+				app.PrintDebug("no g?",parent.text)
+				return;
+			end
+			local i = indexOf(og, o) or (o.__dlo and indexOf(og, o.__dlo));
+			if i and i > 0 then
+				-- app.PrintDebug("RemoveSelf",#og,i,o.text)
+				tremove(og, i);
+				-- app.PrintDebug("RemoveSelf",#og)
+			end
+			return og;
+		end
+		self.AutoHarvestFirstPartitionCoroutine = function()
+			-- app.PrintDebug("AutoExpandingPartitions")
+			local i = 10;
+			-- yield a few frames to allow the list to fully generate
+			while i > 0 do
+				coroutine.yield();
+				i = i - 1;
+			end
+
+			local partitions = self.data.g;
+			if not partitions then return; end
+
+			local part;
+			-- app.PrintDebug("AutoExpandingPartitions",#partitions)
+			while #partitions > 0 do
+				part = partitions[1];
+				if not part.expanded then
+					part.expanded = true;
+					-- app.PrintDebug("AutoExpand",part.text)
+					app.DirectGroupRefresh(part);
+				end
+				coroutine.yield();
+				-- Make sure the coroutine stops running if we close the list window
+				if not self:IsVisible() then return; end
+			end
+		end
+
 		-- temporarily prevent a force refresh from exploding the game if this window is open
 		self.doesOwnUpdate = true;
 		self.initialized = true;
@@ -20868,6 +20666,7 @@ customWindowUpdates["list"] = function(self, force, got)
 		self.PartitionSize = app.GetCustomWindowParam("list", "part") or 1000;
 		self.Limit = app.GetCustomWindowParam("list", "limit") or 1000;
 		-- print("Quests - onlyMissing",onlyMissing)
+		local CacheFields, ItemHarvester;
 
 		-- manual type adjustments to match internal use (due to lowercase keys with non-lowercase cache keys >_<)
 		if dataType == "source" then
@@ -20880,6 +20679,32 @@ customWindowUpdates["list"] = function(self, force, got)
 			dataType = "flightPath";
 		elseif dataType == "runeforgepower" then
 			dataType = "runeforgePower";
+		elseif dataType == "itemharvester" then
+			ItemHarvester = app.CreateItemHarvester;
+		elseif dataType:find("cache") then
+			-- special data type to utilize an ATT cache instead of generating raw groups
+			-- "cache:item"
+			-- => itemID
+			-- fill all items from itemID cache into list, sorted by itemID
+			local added = {};
+			CacheFields = {};
+			local cacheID;
+			local _, cacheKey = strsplit(":", dataType);
+			local cacheKeyID = cacheKey.."ID";
+			dataType = cacheKey;
+			for itemID,groups in pairs(app.SearchForFieldContainer(dataType) or app.SearchForFieldContainer(cacheKeyID)) do
+				for _,o in ipairs(groups) do
+					cacheID = o.modItemID or o[dataType] or o[cacheKeyID];
+					if not added[cacheID] then
+						added[cacheID] = true;
+						-- app.PrintDebug("cachelist:",dataType,cacheID)
+						tinsert(CacheFields, cacheID);
+					end
+				end
+			end
+			-- app.PrintDebug("CacheFields",#CacheFields)
+			app.Sort(CacheFields, app.SortDefaults.Value);
+			-- app.PrintDebug("CacheFields:Sorted")
 		end
 
 		-- add the ID
@@ -20889,6 +20714,8 @@ customWindowUpdates["list"] = function(self, force, got)
 
 		local ForceVisibleFields = {
 			visible = true,
+			total = 0,
+			progress = 0,
 		};
 		local PartitionUpdateFields = {
 			total = true,
@@ -20910,7 +20737,26 @@ customWindowUpdates["list"] = function(self, force, got)
 
 		local ObjectTypeFuncs = {
 			questID = GetPopulatedQuestObject,
+			-- new function to build from cache table
 		};
+		if CacheFields then
+			-- app.PrintDebug("OTF:Define",dataType)
+			ObjectTypeFuncs[dataType] = function(id)
+				-- use the cached id in the slot of the requested id instead
+				-- app.PrintDebug("OTF",id)
+				id = CacheFields[id];
+				-- app.PrintDebug("OTF:CacheID",dataType,id)
+				return SetBase({visible = true},
+					SearchObject(dataType, id, "key") or
+					SearchObject(dataType, id, "field") or
+					CreateObject({[dataType]=id}));
+			end
+			-- app.PrintDebug("SetLimit",#CacheFields)
+			self.Limit = #CacheFields;
+		end
+		if ItemHarvester then
+			ObjectTypeFuncs[dataType] = ItemHarvester;
+		end
 		local function CreateTypeObject(type, id)
 			-- app.PrintDebug("DLO-Obj:",type,id)
 			local func = ObjectTypeFuncs[type];
@@ -20918,11 +20764,7 @@ customWindowUpdates["list"] = function(self, force, got)
 				return func(id);
 			end
 			-- Simply a visible table whose Base will be the actual referenced object
-			local o = {
-				visible = true
-			};
-			SetBase(o, SearchObject(type, id, "field") or CreateObject({[type]=id}));
-			return o;
+			return SetBase({visible = true}, SearchObject(type, id, "field") or CreateObject({[type]=id}));
 		end
 
 		-- info about the Window
@@ -20948,15 +20790,22 @@ customWindowUpdates["list"] = function(self, force, got)
 			text = harvesting and function(o, key)
 				local text = o.text;
 				if not IsRetrieving(text) then
-					-- app.PrintDebug("hide",o.hash)
-					o.visible = false;
+					self.VerifyGroupSourceID(o);
+					local og = self.RemoveSelf(o);
+					-- app.PrintDebug(#og,"-",text)
+					if #og <= 0 then
+						self.RemoveSelf(o.parent);
+					else
+						o.visible = true;
+					end
 					DGR(o);
-					return "HARVESTED";
+					return text;
 				end
 			end
 			or function(o, key)
 				local text, key = o.text, o.key;
 				if not IsRetrieving(text) then
+					self.VerifyGroupSourceID(o);
 					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
 				end
 			end,
@@ -20984,6 +20833,7 @@ customWindowUpdates["list"] = function(self, force, got)
 		end
 		if harvesting then
 			app.SetDGUDelay(0);
+			StartCoroutine("AutoHarvestFirstPartitionCoroutine", self.AutoHarvestFirstPartitionCoroutine);
 		end
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
@@ -23200,7 +23050,10 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			app:GetWindow("ItemFilter"):Toggle();
 			return true;
 		elseif cmd == "finder" then
-			app:GetWindow("ItemFinder"):Toggle();
+			app.SetCustomWindowParam("list", "type", "itemharvester");
+			app.SetCustomWindowParam("list", "harvesting", true);
+			app.SetCustomWindowParam("list", "limit", 207000);
+			app:GetWindow("list"):Toggle();
 			return true;
 		elseif cmd == "ra" then
 			app:GetWindow("RaidAssistant"):Toggle();
@@ -23254,16 +23107,9 @@ end
 SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
-	if cmd then
-		local min,max,reset,force = strsplit(",",cmd);
-		app.SetCustomWindowParam("Harvester", "min", tonumber(min));
-		app.SetCustomWindowParam("Harvester", "max", tonumber(max));
-		app.SetCustomWindowParam("Harvester", "force", force and true);
-		AllTheThingsHarvestItems = reset and {} or AllTheThingsHarvestItems or {};
-		AllTheThingsArtifactsItems = reset and {} or AllTheThingsArtifactsItems or {};
-		if reset then app.print("Harvest Data Reset!"); end
-	end
-	app:GetWindow("Harvester"):Toggle();
+	app.SetCustomWindowParam("list", "type", "cache:item");
+	app.SetCustomWindowParam("list", "harvesting", true);
+	app:GetWindow("list"):Toggle();
 end
 
 SLASH_AllTheThingsMAPS1 = "/attmaps";

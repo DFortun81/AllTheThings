@@ -2060,111 +2060,147 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								["g"] = {
 									i(181055, {	-- Court Death Shroud Belt
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181056, {	-- Court Death Shroud Bindings
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181050, {	-- Court Death Shroud Boots
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181053, {	-- Court Death Shroud Breeches
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181057, {	-- Court Death Shroud Cloak
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181051, {	-- Court Death Shroud Gloves
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181052, {	-- Court Death Shroud Hood
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181054, {	-- Court Death Shroud Spaulders
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181049, {	-- Court Death Shroud Vest
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181014, {	-- Dread Sentinel's Court Chestplate
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181021, {	-- Dread Sentinel's Court Cloak
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181019, {	-- Dread Sentinel's Court Girdle
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181015, {	-- Dread Sentinel's Court Greatboots
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181016, {	-- Dread Sentinel's Court Grips
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181013, {	-- Dread Sentinel's Court Headgear
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181017, {	-- Dread Sentinel's Court Legguards
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181018, {	-- Dread Sentinel's Court Spaulders
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181020, {	-- Dread Sentinel's Court Vambraces
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181082, {	-- Fearstalker's Court Belt
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181083, {	-- Fearstalker's Court Bracers
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181084, {	-- Fearstalker's Court Cloak
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181078, {	-- Fearstalker's Court Gauntlets
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181076, {	-- Fearstalker's Court Hauberk
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181079, {	-- Fearstalker's Court Helm
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181080, {	-- Fearstalker's Court Leggings
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181081, {	-- Fearstalker's Court Monnion
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181077, {	-- Fearstalker's Court Sabatons
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181120, {	-- Soulbreaker's Court Drape
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181114, {	-- Soulbreaker's Court Handwraps
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181115, {	-- Soulbreaker's Court Hood
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181116, {	-- Soulbreaker's Court Leggings
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181117, {	-- Soulbreaker's Court Mantle
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181118, {	-- Soulbreaker's Court Sash
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181113, {	-- Soulbreaker's Court Slippers
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181112, {	-- Soulbreaker's Court Vestments
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181119, {	-- Soulbreaker's Court Wraps
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 								},
 							}),
@@ -2206,14 +2242,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									i(182296, {	-- Letter of Note, Premier Party Planner
 										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
 										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
-										["g"] = {
-											q(61493, {	-- Dredger Pool Unlocked on Character
-												["name"] = "Dredger Pool Unlocked",
-											}),
-											q(61494, {	-- Guardhouse Unlocked on Character
-												["name"] = "Guardhouse Unlocked",
-											}),
-										},
+										["sym"] = {{"select","questID",
+											61493,	-- Dredger Pool Unlocked on Character
+											61494,	-- Guardhouse Unlocked on Character
+										}},
 									}),
 									i(182973, {	-- Leather Dredger Coif
 										["cost"] = { { "c", 1820, 10 } },	-- 10 Infused Ruby

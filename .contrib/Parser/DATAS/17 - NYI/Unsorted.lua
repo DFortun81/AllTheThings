@@ -278,40 +278,19 @@ root(ROOTS.Unsorted, {
 			i(193412),	-- Primal-Infused Dragon Egg
 			i(200836),	-- Arcane-Infused Crystals
 			i(202247),	-- Curious Curio Goggles
-			i(202250),	-- Sweet Snapflower Bulb
-			i(202265),	-- Wheel of Whelpwhisper Brie
-			i(202266),	-- Bag of Spicy Pet Snacks
 			i(202270),	-- [DNT] Twice-Woven Rope
 			i(202312),	-- Juicy Mammoth Steak
 			i(202313),	-- Echolocator
-			i(202330),	-- Fine-Pointed Quill
-			i(202332),	-- Blue Dragon Bedtime Story
 			i(202340),	-- Laydia's Flower Petals
 			i(202342),	-- Luggage Key
 			i(202363),	-- Survey Arc Device
 			i(202399),	-- Stuffed Doll
 			i(202400),	-- Soothing Incense
-			i(202404),	-- Bite-Sized Ley Crystal
-			i(202409),	-- Zalethgos's Whistle
-			i(202643),	-- Soft Sand
-			i(202644),	-- Whelp's First Hourglass
-			i(202645),	-- Unused Bowl
 			i(202690),	-- Decorative Shrubbery
-			i(202693),	-- Dragonfruit Pie
-			i(202694),	-- Loamy Soil
-			i(202695),	-- Ancient Water
-			i(202696),	-- Comforting Ducky
 			i(202697),	-- Crimson Cushion
-			i(203386),	-- Box of Leapmaize Crackers
-			i(203621),	-- Posidriss's Whistle
-			i(203624),	-- Zhusadormu's Whistle
-			i(203625),	-- Belastrasza's Whistle
-			i(203684),	-- Silver Timepiece
 			i(203712),	-- Soft Peafowl Down
 			i(204000),	-- Storm-Infused Stone
-			i(204263),	-- Time Grime
 			i(204275),	-- Slimey Key
-			i(204868),	-- Pre-Made Pie Crust
 			i(204869),	-- Bolt of Ruby Cloth
 			i(204870),	-- Lasztak's Thread Order
 			i(204895),	-- Storm-touched Missive Stone [DNT]
@@ -320,20 +299,15 @@ root(ROOTS.Unsorted, {
 			i(205146),	-- Weyrnstone
 			i(205419),	-- Dinn's Drum
 			i(205819),	-- Ashen Predator's Poleyns
-			i(205978),	-- Glob of Azmerloth Slime
 			i(206022),	-- Anduin's Lucky Hearthstone Card
 			i(206161),	-- Cat Toy
-			i(206171),	-- Vol'jin's Mojo
 			i(206187),	-- Highly Spiced Haunch
 			i(206188),	-- Druidic Dreamsalad
 			i(206189),	-- Fine Taladorian Cheese Platter
 			i(206190),	-- Venrik's Goat Milk
 			i(206191),	-- Roquefort-Stuffed Peppers
 			i(206192),	-- Picante Pomfruit Cake
-			i(206269),	-- Time-Lost Essence
 			i(206346),	-- Eva's Journal
-			i(206351),	-- Plans: Truesilver Champion
-			i(206352),	-- Plans: The Shatterer
 			i(206354),	-- Stinky Candle
 			i(206355),	-- Tobacco-Filled Candle
 			i(206356),	-- Ghost-Warding Candle
@@ -346,7 +320,6 @@ root(ROOTS.Unsorted, {
 			i(206363),	-- The Road Ahead
 			i(206364),	-- Eva's Femur
 			i(206365),	-- Inert Spectral Essence
-			i(206368),	-- Wand of Mass Polymorph
 			i(206369),	-- Time Trap
 			i(206370),	-- Blood of Innocents
 			i(206371),	-- Viewing Room Key
@@ -552,25 +525,18 @@ root(ROOTS.Unsorted, {
 			i(206575),	-- Dented Raider's Boots
 			i(206576),	-- Death's Bargaining Chip
 			i(206577),	-- Slime-Covered Scroll
-			i(206578),	-- An Antlered Skull
 			i(206579),	-- Phylacterweave
 			i(206582),	-- Peculiar Glacial Mantle
 			i(206583),	-- Ancient Pattern: Peculiar Glacial Mantle
 			i(206584),	-- Archived Crafting Techniques
-			i(206599),	-- Azmerlothian Hourglass
 			i(206602),	-- Mechanized Cog
 			i(206638),	-- Corrupted Ashbringer
 			i(206645),	-- Cursed Cloth
 			i(206683),	-- Wrathion's Tab
-			i(206695),	-- Pale Duskblossom
-			i(206763),	-- Kabluey
 			i(206771),	-- Pattern: Cursed Cloth
 			i(206775),	-- Map to Suramar
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
-			i(206926),	-- Keeper's Gavel
-			i(206927),	-- Curator's Warhammer
-			i(206928),	-- Attendent's Hammer
 			i(206931),	-- Truesilver Champion
 			i(205259),	-- Order Soul
 			i(206163),	-- Temporal Gossamer
@@ -581,9 +547,7 @@ root(ROOTS.Unsorted, {
 			i(206957),	-- Boffins
 			i(206962),	-- Watcher's Log
 			i(206984),	-- Blood-Soaked Book
-			i(206997),	-- Gilded Sunglasses
 			i(206998),	-- Ragged Mantid Sword
-			i(207003),	-- Gilded Vase
 			i(16222),	-- Formula: Enchant Shield - Vitality
 			i(206998),	-- Amber Sword
 			i(207008),	-- A Fish
@@ -762,7 +726,6 @@ root(ROOTS.Unsorted, {
 			i(208021),	-- Sizzling Stick
 			i(208028),	-- Knot Thimblejack's Cache
 			i(208029),	-- Scareloc Parts
-			i(208030),	-- Advanced Titan Gizmo
 			i(208031),	-- Convenient Crate
 			i(206161),	-- Time-Displaced Toy
 			i(206926),	-- Off-Sync Off-Hammer
@@ -781,7 +744,6 @@ root(ROOTS.Unsorted, {
 			i(208050),	-- Grimoire of the Xorothian Felhunter
 			i(208051),	-- Grimoire of the Antoran Felhunter
 			i(208052),	-- Grimoire of the Voracious Felmaw
-			i(208053),	-- Time Inert Souvenir
 			i(208061),	-- Quantum Headpiece
 			i(208062),	-- Quantum Shoulders
 			i(208063),	-- Quantum Gloves
@@ -792,7 +754,6 @@ root(ROOTS.Unsorted, {
 			i(208094),	-- Cache of Timewarped Treasures
 			i(208095),	-- Cache of Timewarped Treasures
 			i(208097),	-- Flamethrower
-			i(208100),	-- Seashellamayne the Shattered
 			i(208108),	-- Madam Shadow's Old Grimoire
 			i(208147),	-- Yellow Tweed Cap
 			i(208148),	-- Burgandy Cap
@@ -878,6 +839,48 @@ root(ROOTS.Unsorted, {
 			i(208172),	-- Bloodstained Runecrook
 			i(208191),	-- Time-Lost Fragment
 			i(208193),	-- Gorehowl, Might of the Warchief
+			--
+			i(189719),	-- Tattered Collar of the Incubus
+			i(189720),	-- Tattered Collar of the Succubus
+			i(201166),	-- Gilded Hilt
+			i(205292),	-- Karokta's Mane
+			i(206160),	-- Madam Shadow's Grimoire
+			i(206394),	-- Red Dragon Egg
+			i(206520),	-- Beverage for Pedgi
+			i(206653),	-- Fel Pinecone
+			i(206681),	-- Letter from Oman
+			i(206799),	-- Pauldrons of the Fire Lord
+			i(207817),	-- Imbued Frostweave Slippers
+			i(207819),	-- Timeways Intruder's Greaves
+			i(207828),	-- Bronze Defender's Vesture
+			i(207836),	-- Ahnzon's Corroded Carapace
+			i(207838),	-- Vigorous Sand-Stompers
+			i(207867),	-- Arathi Field Bandages
+			i(207878),	-- Grunt's Eternal Treads
+			i(207884),	-- Unceasing Footman's Breastplate
+			i(207898),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Waist
+			i(207912),	-- Loszkeleth's Blighted Skullhelm
+			i(207921),	-- Dazhak's Dessicated Wingbones
+			i(207923),	-- Zealous Commander's Cuffs
+			i(207936),	-- Hood of Perpetual Conflict
+			i(207983),	-- Progenitor's Necromantic Focus
+			i(207986),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Gun
+			i(207991),	-- Double Time
+			i(207992),	-- Fallen Drake's Bonesplitter
+			i(207995),	-- Chronikar's Ceremonial Saber
+			i(208000),	-- Cudgel of Bygone Victories
+			i(208053),	-- Irons's Artifacts
+			i(208226),	-- Mysterious Letter
+			i(208227),	-- Mysterious Letter
+			i(208321),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - INT Staff
+			i(208390),	-- Bronze Archive Stone
+			i(208391),	-- The Infinite Hand
+			i(208400),	-- Silks of the Unnamed Cult
+			i(208401),	-- Melly's Metronographer++
+			i(208415),	-- Stasis Sand
+			i(208417),	-- Chromie's Certificate of Temporal Tidiness
+			i(208448),	-- Infinitea
+			i(208449),	-- Melly's Metronographer+++
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			filter(RECIPES, {
@@ -953,73 +956,6 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				i(205451),	-- Flawless Crystal Scale
 			}),
-			n(PVP, {
-				i(205798),	-- Pauldrons of the Onyx Crucible
-				i(205799),	-- Legplates of the Onyx Crucible
-				i(205800),	-- Thraexhelm of the Onyx Crucible
-				i(205801),	-- Handguards  of the Onyx Crucible
-				i(205802),	-- Battlechest of the Onyx Crucible
-				i(205803),	-- Heartfire Sentinel's Steelwings
-				i(205804),	-- Heartfire Sentinel's Faulds
-				i(205805),	-- Heartfire Sentinel's Forgehelm
-				i(205806),	-- Heartfire Sentinel's Protectors
-				i(205807),	-- Heartfire Sentinel's Brigandine
-				i(205808),	-- Lingering Phantom's Shoulderplates
-				i(205809),	-- Lingering Phantom's Schynbalds
-				i(205810),	-- Lingering Phantom's Dreadhorns
-				i(205811),	-- Lingering Phantom's Gauntlets
-				i(205812),	-- Lingering Phantom's Plackart
-				i(205813),	-- Thunderpads of the Cinderwolf
-				i(205814),	-- Braies of the Cinderwolf
-				i(205815),	-- Spangenhelm of the Cinderwolf
-				i(205816),	-- Knuckles of the Cinderwolf
-				i(205817),	-- Adornments of the Cinderwolf
-				i(205818),	-- Ashen Predator's Trophy
-				i(205819),	-- Ashen Predator's Poleyn
-				i(205820),	-- Ashen Predator's Faceguard
-				i(205821),	-- Ashen Predator's Skinners
-				i(205822),	-- Ashen Predator's Sling Vest
-				i(205823),	-- Wingspan of Obsidian Secrets
-				i(205824),	-- Chausses of Obsidian Secrets
-				i(205825),	-- Crown of Obsidian Secrets
-				i(205826),	-- Claws of Obsidian Secrets
-				i(205827),	-- Hauberk of Obsidian Secrets
-				i(205828),	-- Lurking Specter's Shoulderblades
-				i(205829),	-- Lurking Specter's Tights
-				i(205830),	-- Lurking Specter's Visage
-				i(205831),	-- Lurking Specter's Handgrips
-				i(205832),	-- Lurking Specter's Brigandine
-				i(205833),	-- Spines of the Vermillion Forge
-				i(205834),	-- Pantaloons of the Vermillion Forge
-				i(205835),	-- Cover of the Vermillion Forge
-				i(205836),	-- Fists of the Vermillion Forge
-				i(205837),	-- Cuirass of the Vermillion Forge
-				i(205838),	-- Mantle of the Autumn Blaze
-				i(205839),	-- Pants of the Autumn Blaze
-				i(205840),	-- Bough of the Autumn Blaze
-				i(205841),	-- Handguards of the Autumn Blaze
-				i(205842),	-- Chestroots of the Autumn Blaze
-				i(205843),	-- Kinslayer's Tainted Spaulders
-				i(205844),	-- Kinslayer's Legguards
-				i(205845),	-- Kinslayer's Hood
-				i(205846),	-- Kinslayer's Bloodstained Grips
-				i(205847),	-- Kinslayer's Vest
-				i(205848),	-- Amice of the Sinister Savant
-				i(205849),	-- Leggings of the Sinister Savant
-				i(205850),	-- Grimhorns of the Sinister Savant
-				i(205851),	-- Grips of the Sinister Savant
-				i(205852),	-- Cursed Robes of the Sinister Savant
-				i(205853),	-- Devotion of the Furnace Seraph
-				i(205854),	-- Breeches of the Furnace Seraph
-				i(205855),	-- Mask of the Furnace Seraph
-				i(205856),	-- Grasp of the Furnace Seraph
-				i(205857),	-- Command of the Furnace Seraph
-				i(205858),	-- Underlight Conjurer's Aurora
-				i(205859),	-- Underlight Conjurer's Trousers
-				i(205860),	-- Underlight Conjurer's Arcanocowl
-				i(205861),	-- Underlight Conjurer's Gloves
-				i(205862),	-- Underlight Conjurer's Vestment
-			}),
 			filter(QUEST_ITEMS, {
 				i(202705),	-- Snail Slime
 				i(202875),	-- Snail Lasso
@@ -1046,48 +982,24 @@ root(ROOTS.Unsorted, {
 				i(204824),	-- Torn Journal Entry
 				i(204830),	-- Shattered Horn Signet
 				i(202106),	-- Chewed Piece of Journal
-				i(204063),	-- Windsor's Journal
 				i(205410),	-- Pungent Morsel
 			}),
 			n(WEAPONS, {
 				i(204638),	-- Sunder Wing
 			}),
 			n(REWARDS, {
-				-- Loamm Niffen
-				i(205968),	-- Overflowing Loammian Supply Pack
-				-- Large Rep
-				i(205252),	-- Momento of Rekindled Bonds
 				-- Research
 				i(205454),	-- Researchers Wheel Barrow
 				-- Special
 				i(205877),	-- Adventurer's Footlocker
-				i(205999),	-- Volcanic Sculptor
-				i(205289),	-- Crimson Equipment Chest
 				-- Diablo
 				i(206026),	-- Ensemble: Enmity Hood and Cloak
-				i(206028),	-- Chest of Gold
 				-- New Stuff
-				i(206044),	-- Obsidian Gladiator's Axe
-				i(206137),	-- Obsidian Gladiator's Dagger
 				i(206138),	-- Scalewarden's Pennant
-				i(206146),	-- Obsidian Gladiator's Warglaive
-				i(206147),	-- Obsidian Gladiator's Polearm
-				i(206148),	-- Obsidian Gladiator's Staff
-				i(206149),	-- Obsidian Gladiator's Rifle
-				i(206150),	-- Obsidian Gladiator's Mace
-				i(206151),	-- Obsidian Gladiator's Rod
-				i(206152),	-- Obsidian Gladiator's Shield
-				i(206153),	-- Obsidian Gladiator's Claws
-				i(206154),	-- Obsidian Gladiator's Bow
 				i(206200),	-- Obsidian Equipment Chest
 				i(206270),	-- Volcanic Equipment Chest
 				-- New
 				i(189885),	-- The Battlespoon
-				-- new new
-				i(206671),	-- Obsidian Gladiator's Halberd
-				i(206820),	-- Scalewarden's Dagger
-				i(206830),	-- Scalewarden's Dirk
-				i(206955),	-- Highland Drake: Embodiment of the Hellforged
 			}),
 			n(QUESTS, {
 				-- 10.1.0.48480
@@ -1102,9 +1014,6 @@ root(ROOTS.Unsorted, {
 				q(72932),	-- Our Father's Legacy - DEPRECATED
 				q(72957),	-- A Sundered Road [DNT]
 				q(72960),	-- [NYI] Refti Cleaning
-				q(73086),	-- Healthy Competition
-				q(73092),	-- Something Like Family
-				q(73093),	-- Empty Chairs
 				q(73099),	--
 				q(73151),	-- Hats Off
 				q(73195),	--
@@ -1131,17 +1040,14 @@ root(ROOTS.Unsorted, {
 				q(75229),	--
 				q(75242),	--
 				q(75282),	--
-				q(75305),	-- Sparks of Life: Zaralek Cavern
 				q(75313),	--
 				q(75314),	-- Hadexia
 				q(75337),	--
 				q(75338),	-- Lavermix
 				q(75341),	--
 				q(75342),	-- Kronkapace
-				q(75372),	-- Drive Them Before Us
 				q(75376),	-- Suffuse, Reuse, Recycle
 				q(75389),	--
-				q(75408),	-- Calling All Dracthyr!
 				q(75418),	--
 				q(75429),	--
 				q(75434),	--
@@ -1229,10 +1135,7 @@ root(ROOTS.Unsorted, {
 				q(76010),	--
 				q(76012),	--
 				-- 10.1.0.48898
-				q(76029),	-- Dragon Isles Supplies
-				q(76031),	-- Dragon Isles Supplies
 				q(76082),	--
-				q(76104),	--
 				q(76105),	--
 				q(76106),	--
 				q(76107),	--
@@ -1362,21 +1265,12 @@ root(ROOTS.Unsorted, {
 				q(74763),	--
 				q(74774),	-- More Keys
 				q(74890),	--
-				q(74891),	--
 				-- 10.0.7.47983
 				q(75034),	--
 				q(75065),	-- Campaign Testing - Dummy Quest
 				-- 10.0.7.48076
 				q(75202),	--
 				q(75224),	--
-				q(75246),	--
-				q(75247),	--
-				q(75248),	--
-				q(75249),	--
-				q(75250),	--
-				q(75251),	--
-				q(75252),	--
-				q(75253),	--
 				-- 10.0.7.48295
 				q(75426),	--
 				q(75427),	--
@@ -1427,16 +1321,6 @@ root(ROOTS.Unsorted, {
 					i(190815),	-- Highborne Scholar's Leggings
 					i(190868),	-- Highborne Scholar's Scrollmantle
 					i(190070),	-- Highborne Scholar's Gloves
-
-					-- Sylvan Stalker Set
-					i(189873),	-- Sylvan Stalker's Boots
-					i(190073),	-- Sylvan Stalker's Hood
-					i(190142),	-- Sylvan Stalker's Legguards
-					i(190436),	-- Sylvan Stalker's Baldric
-					i(190788),	-- Sylvan Stalker's Wristguards
-					i(190810),	-- Sylvan Stalker's Handguards
-					i(190811),	-- Sylvan Stalker's Vest
-					i(190894),	-- Sylvan Stalker's Mantle
 
 					-- Val'Sharah Protector Set
 					i(190547),	-- Val'Sharah Protector's Bracers
@@ -1489,10 +1373,10 @@ root(ROOTS.Unsorted, {
 					i(190867),	-- Void-Bound Pauldrons
 
 					-- Void-Bound Set -- I dont know which cloak belongs to which set. // Braghe
-					i(200920),	-- Void-Bound Cloak
-					i(200921),	-- Void-Bound Greatcloak
-					i(200922),	-- Void-Bound Shroud
-					i(200923),	-- Void-Bound Drape
+					i(200920),	-- Void-Bound Cloak (probably leather)
+					i(200921),	-- Void-Bound Greatcloak (probably plate)
+					i(200922),	-- Void-Bound Shroud (probably mail)
+					i(200923),	-- Void-Bound Drape (probably cloth)
 
 					i(190772),	-- Ensemble: Vestments of the Nightmare Forest
 					i(190165),	-- Ensemble: Twisted Arcanum Regalia
@@ -1519,7 +1403,6 @@ root(ROOTS.Unsorted, {
 					i(190203),	-- Woodsman's Timber Mallet
 
 					-- Two-Hand Wep
-					i(190146),	-- Antoran Felspire
 					i(190131),	-- Brick-on-a-Stick
 					i(190080),	-- Catastrophe's Edge
 					i(190714),	-- Gorian Pulverizer
@@ -1575,7 +1458,6 @@ root(ROOTS.Unsorted, {
 				q(72384),	-- Valdrakken Tour
 				q(72829),	--
 				q(72830),	--
-				q(74441),	-- Eaglemaster Niraak
 				-- 10.0.5.47871
 				q(74897),	--
 				q(74898),	--
@@ -2682,7 +2564,6 @@ root(ROOTS.Unsorted, {
 				q(72257),	--
 				q(72307),	-- Thieving Gnolls
 			}),
-			--]]
 		})),
 	}),
 });

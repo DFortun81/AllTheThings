@@ -9,6 +9,9 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 					["requireSkill"] = FISHING,
 					["g"] = {
+						i(117397, {	-- Nat's Lucky Coin
+							["description"] = "Received from turning in Lunkers at Nat Paggle in your Garrison.\nLunkers can be fished anywhere in WoD, except in your Garrison, if your Fishing Shack is at Rank3.\n\nFishing in pools is more efficient than fishing in open water.",
+						}),
 						n(ACHIEVEMENTS, {
 							ach(7274, {  -- Learning From The Best
 								i(86596),	-- Nat's Fishing Chair (TOY!)
@@ -51,6 +54,7 @@ root(ROOTS.ExpansionFeatures,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116818, 1 }, },	-- Abyssal Gulper Lunker
+								["_drop"] = { "g" },	-- Drop Nat's Lucky Coin
 							}),
 							q(36616, {	-- An Angler on Our Team
 								["sourceQuests"] = { 36611 },	-- A True Draenor Angler
@@ -87,12 +91,14 @@ root(ROOTS.ExpansionFeatures,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116817, 1 }, },	-- Blackwater Whiptail Lunker
+								["_drop"] = { "g" },	-- Drop Nat's Lucky Coin
 							}),
 							q(36804, {	-- Blind Lake Lunker
 								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116820, 1 }, },	-- Blind Lake Lunker
+								["_drop"] = { "g" },	-- Drop Nat's Lucky Coin
 							}),
 							q(36514, {	-- Blind Lake Sturgeon
 								["requireSkill"] = FISHING,
@@ -143,12 +149,14 @@ root(ROOTS.ExpansionFeatures,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116821, 1 }, },	-- Fat Sleeper Lunker
+								["_drop"] = { "g" },	-- Drop Nat's Lucky Coin
 							}),
 							q(39283, {	-- Felmouth Frenzy Lunker
 								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 127994, 1 }, },	-- Felmouth Frenzy Lunker
+								["_drop"] = { "g" },	-- Drop Nat's Lucky Coin
 							}),
 							q(36608, {	-- Finding Nat Pagle
 								["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
@@ -184,6 +192,7 @@ root(ROOTS.ExpansionFeatures,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116819, 1 }, },	-- Fire Ammonite Lunker
+								["_drop"] = { "g" },	-- Drop Nat's Lucky Coin
 							}),
 							q(36511, {	-- Jawless Skulker
 								["requireSkill"] = FISHING,
@@ -212,6 +221,7 @@ root(ROOTS.ExpansionFeatures,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116822, 1 }, },	-- Jawless Skulker Lunker
+								["_drop"] = { "g" },	-- Drop Nat's Lucky Coin
 							}),
 							q(34194, {	-- Looking For Help
 								["requireSkill"] = FISHING,
@@ -241,6 +251,7 @@ root(ROOTS.ExpansionFeatures,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 122696, 1 }, },	-- Sea Scorpion Lunker
+								["_drop"] = { "g" },	-- Drop Nat's Lucky Coin
 							}),
 						}),
 						n(RARES, {

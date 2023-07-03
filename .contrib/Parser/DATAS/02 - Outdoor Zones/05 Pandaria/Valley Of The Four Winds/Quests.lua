@@ -57,7 +57,7 @@ root(ROOTS.Zones, {
 							},
 							["coords"] = {
 								{ 48.1, 34.5, THE_JADE_FOREST },	-- Graceful Swan
-								{ 63.6, 20.2, VALLEY_OF_THE_FOUR_WINDS },	-- Nan Thunderfoot
+								{ 83.6, 20.2, VALLEY_OF_THE_FOUR_WINDS },	-- Nan Thunderfoot
 								{ 64.2, 61.3, KUN_LAI_SUMMIT },	-- Li Goldendraft
 							},
 						}),

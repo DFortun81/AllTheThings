@@ -5,6 +5,7 @@
 --------------------------------------------------------------------------------
 local appName, app = ...
 local L = app.L
+local Colorize = app.Modules.Color.Colorize
 
 -- Binding Localizations
 BINDING_HEADER_ALLTHETHINGS = L["TITLE"]
@@ -127,15 +128,15 @@ local GeneralSettingsBase = {
 		["Thing:Transmog"] = true,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
-		["Show:OnlyActiveEvents"] = false,
+		["Show:OnlyActiveEvents"] = true,
 		["Skip:AutoRefresh"] = false,
 		["Show:PetBattles"] = true,
 		["Hide:PvP"] = false,
 		["Dynamic:Style"] = 1,
-		["CC:SL_COV_KYR"] = true,
-		["CC:SL_COV_VEN"] = true,
-		["CC:SL_COV_NFA"] = true,
-		["CC:SL_COV_NEC"] = true,
+		["CC:SL_COV_KYR"] = false,
+		["CC:SL_COV_VEN"] = false,
+		["CC:SL_COV_NFA"] = false,
+		["CC:SL_COV_NEC"] = false,
 		["Profile:ShowProfileLoadedMessage"] = true,
 		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1 },
 		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1 },
@@ -574,7 +575,7 @@ settings.GetShortModeString = function(self)
 				solo = nil
 			end
 		end
-		local style
+		local style = ""
 		if thingCount == 0 then
 			style = "N"
 		elseif thingCount == totalThingCount then
@@ -822,6 +823,7 @@ ATTSettingsPanelMixin = {
 		cb.Text:SetText(text)
 		cb.Text:SetScale(1.1)
 		cb.Text:SetWordWrap(false)
+		cb:SetHitRectInsets(0,0 - cb.Text:GetUnboundedStringWidth(),0,0);
 		return cb
 	end,
 	--- Opts:
@@ -1454,6 +1456,13 @@ headerTitle:SetPoint("CENTER", logo, 0, 0)
 headerTitle:SetPoint("LEFT", logo, "RIGHT", 0, 0)
 headerTitle:SetScale(1.5)
 
+local headerSubtitle = child:CreateHeaderLabel("")
+headerSubtitle:SetPoint("TOPLEFT", headerTitle, "BOTTOMLEFT", 0, 0)
+headerSubtitle:SetScale(0.9)
+headerSubtitle.OnRefresh = function(self)
+	self:SetText(app.ccColors.ATT..L["MODE"]..": "..settings:GetShortModeString())
+end
+
 local buttonDiscord = child:CreateButton(
 -- button settings
 {
@@ -1519,8 +1528,137 @@ headerVersion.OnRefresh = function(self)
 end
 
 -- Column 1
+local headerCelebrations = child:CreateHeaderLabel(L["CELEBRATIONS_LABEL"])
+headerCelebrations:SetPoint("TOP", headerSubtitle, "BOTTOM", 0, -10)
+headerCelebrations:SetPoint("LEFT", child, 0, 0)
+
+local textSoundChannel = child:CreateTextLabel("|cffFFFFFF"..L["AUDIO_CHANNEL"])
+textSoundChannel:SetPoint("TOPLEFT", headerCelebrations, "BOTTOMLEFT", 0, -8)
+textSoundChannel:SetWidth(textSoundChannel:GetUnboundedStringWidth())
+
+local checkboxMasterChannel = child:CreateCheckBox(L["CHANNEL_MASTER"],
+function(self)
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:GetTooltipSetting("Channel") == "Master")
+end,
+function(self)
+	-- Don't uncheck self if checked again
+	if settings:GetTooltipSetting("Channel") == "Master" then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Channel", "Master")
+	end
+end)
+checkboxMasterChannel:SetPoint("BOTTOMLEFT", textSoundChannel, "BOTTOMRIGHT", 2, -8)
+
+local checkboxMusicChannel = child:CreateCheckBox(L["CHANNEL_MUSIC"],
+function(self)
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:GetTooltipSetting("Channel") == "Music")
+end,
+function(self)
+	-- Don't uncheck self if checked again
+	if settings:GetTooltipSetting("Channel") == "Music" then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Channel", "Music")
+	end
+end)
+checkboxMusicChannel:AlignAfter(checkboxMasterChannel)
+
+local checkboxEffectsChannel = child:CreateCheckBox(L["CHANNEL_SFX"],
+function(self)
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:GetTooltipSetting("Channel") == "SFX")
+end,
+function(self)
+	-- Don't uncheck self if checked again
+	if settings:GetTooltipSetting("Channel") == "SFX" then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Channel", "SFX")
+	end
+end)
+checkboxEffectsChannel:SetPoint("TOPLEFT", textSoundChannel, "BOTTOMLEFT", 6, -3)
+
+local checkboxAmbienceChannel = child:CreateCheckBox(L["CHANNEL_AMBIENCE"],
+function(self)
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:GetTooltipSetting("Channel") == "Ambience")
+end,
+function(self)
+	-- Don't uncheck self if checked again
+	if settings:GetTooltipSetting("Channel") == "Ambience" then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Channel", "Ambience")
+	end
+end)
+checkboxAmbienceChannel:AlignAfter(checkboxEffectsChannel)
+
+local checkboxDialogChannel = child:CreateCheckBox(L["CHANNEL_DIALOG"],
+function(self)
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:GetTooltipSetting("Channel") == "Dialog")
+end,
+function(self)
+	-- Don't uncheck self if checked again
+	if settings:GetTooltipSetting("Channel") == "Dialog" then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
+	if self:GetChecked() then
+		settings:SetTooltipSetting("Channel", "Dialog")
+	end
+end)
+checkboxDialogChannel:AlignAfter(checkboxAmbienceChannel)
+
+local checkboxCelebrateCollectedThings = child:CreateCheckBox(L["CELEBRATE_COLLECTED_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Celebrate"))
+end,
+function(self)
+	settings:SetTooltipSetting("Celebrate", self:GetChecked())
+end)
+checkboxCelebrateCollectedThings:SetATTTooltip(L["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"])
+checkboxCelebrateCollectedThings:AlignBelow(checkboxEffectsChannel, -1)
+
+local checkboxWarnRemovedThings = child:CreateCheckBox(L["WARN_REMOVED_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Warn:Removed"))
+end,
+function(self)
+	settings:SetTooltipSetting("Warn:Removed", self:GetChecked())
+end)
+checkboxWarnRemovedThings:SetATTTooltip(L["WARN_REMOVED_CHECKBOX_TOOLTIP"])
+checkboxWarnRemovedThings:AlignBelow(checkboxCelebrateCollectedThings)
+
+local checkboxScreenshotCollectedThings = child:CreateCheckBox(L["SCREENSHOT_COLLECTED_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Screenshot"))
+	end,
+	function(self)
+		settings:SetTooltipSetting("Screenshot", self:GetChecked())
+	end)
+checkboxScreenshotCollectedThings:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"])
+checkboxScreenshotCollectedThings:AlignBelow(checkboxWarnRemovedThings)
+
 local headerMinimapButton = child:CreateHeaderLabel(L["MINIMAP_LABEL"])
-headerMinimapButton:SetPoint("TOPLEFT", logo, "BOTTOMLEFT", 0, -10)
+headerMinimapButton:SetPoint("LEFT", headerCelebrations, 0, 0)
+headerMinimapButton:SetPoint("TOP", checkboxScreenshotCollectedThings, "BOTTOM", 0, -10)
 
 local checkboxShowMinimapButton = child:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
 function(self)
@@ -1708,137 +1846,9 @@ end)
 checkboxShowAHModule:SetATTTooltip(L["AUCTION_TAB_CHECKBOX_TOOLTIP"])
 checkboxShowAHModule:AlignBelow(checkboxAutomaticallyOpenWorldQuestList)
 
-local headerCelebrations = child:CreateHeaderLabel(L["CELEBRATIONS_LABEL"])
-headerCelebrations:SetPoint("TOP", checkboxShowAHModule, "BOTTOM", 0, -10)
-headerCelebrations:SetPoint("LEFT", headerModules, "LEFT", 0, 0)
-
-local textSoundChannel = child:CreateTextLabel("|cffFFFFFF"..L["AUDIO_CHANNEL"])
-textSoundChannel:SetPoint("TOPLEFT", headerCelebrations, "BOTTOMLEFT", 0, -8)
-textSoundChannel:SetWidth(textSoundChannel:GetUnboundedStringWidth())
-
-local checkboxMasterChannel = child:CreateCheckBox(L["CHANNEL_MASTER"],
-function(self)
-	-- Only check self if the setting is set to this option
-	self:SetChecked(settings:GetTooltipSetting("Channel") == "Master")
-end,
-function(self)
-	-- Don't uncheck self if checked again
-	if settings:GetTooltipSetting("Channel") == "Master" then
-		self:SetChecked(true)
-		return
-	end
-	-- Set the setting to this option if checked
-	if self:GetChecked() then
-		settings:SetTooltipSetting("Channel", "Master")
-	end
-end)
-checkboxMasterChannel:SetPoint("BOTTOMLEFT", textSoundChannel, "BOTTOMRIGHT", 2, -8)
-
-local checkboxMusicChannel = child:CreateCheckBox(L["CHANNEL_MUSIC"],
-function(self)
-	-- Only check self if the setting is set to this option
-	self:SetChecked(settings:GetTooltipSetting("Channel") == "Music")
-end,
-function(self)
-	-- Don't uncheck self if checked again
-	if settings:GetTooltipSetting("Channel") == "Music" then
-		self:SetChecked(true)
-		return
-	end
-	-- Set the setting to this option if checked
-	if self:GetChecked() then
-		settings:SetTooltipSetting("Channel", "Music")
-	end
-end)
-checkboxMusicChannel:AlignAfter(checkboxMasterChannel)
-
-local checkboxEffectsChannel = child:CreateCheckBox(L["CHANNEL_SFX"],
-function(self)
-	-- Only check self if the setting is set to this option
-	self:SetChecked(settings:GetTooltipSetting("Channel") == "SFX")
-end,
-function(self)
-	-- Don't uncheck self if checked again
-	if settings:GetTooltipSetting("Channel") == "SFX" then
-		self:SetChecked(true)
-		return
-	end
-	-- Set the setting to this option if checked
-	if self:GetChecked() then
-		settings:SetTooltipSetting("Channel", "SFX")
-	end
-end)
-checkboxEffectsChannel:SetPoint("TOPLEFT", textSoundChannel, "BOTTOMLEFT", 6, -3)
-
-local checkboxAmbienceChannel = child:CreateCheckBox(L["CHANNEL_AMBIENCE"],
-function(self)
-	-- Only check self if the setting is set to this option
-	self:SetChecked(settings:GetTooltipSetting("Channel") == "Ambience")
-end,
-function(self)
-	-- Don't uncheck self if checked again
-	if settings:GetTooltipSetting("Channel") == "Ambience" then
-		self:SetChecked(true)
-		return
-	end
-	-- Set the setting to this option if checked
-	if self:GetChecked() then
-		settings:SetTooltipSetting("Channel", "Ambience")
-	end
-end)
-checkboxAmbienceChannel:AlignAfter(checkboxEffectsChannel)
-
-local checkboxDialogChannel = child:CreateCheckBox(L["CHANNEL_DIALOG"],
-function(self)
-	-- Only check self if the setting is set to this option
-	self:SetChecked(settings:GetTooltipSetting("Channel") == "Dialog")
-end,
-function(self)
-	-- Don't uncheck self if checked again
-	if settings:GetTooltipSetting("Channel") == "Dialog" then
-		self:SetChecked(true)
-		return
-	end
-	-- Set the setting to this option if checked
-	if self:GetChecked() then
-		settings:SetTooltipSetting("Channel", "Dialog")
-	end
-end)
-checkboxDialogChannel:AlignAfter(checkboxAmbienceChannel)
-
-local checkboxCelebrateCollectedThings = child:CreateCheckBox(L["CELEBRATE_COLLECTED_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Celebrate"))
-end,
-function(self)
-	settings:SetTooltipSetting("Celebrate", self:GetChecked())
-end)
-checkboxCelebrateCollectedThings:SetATTTooltip(L["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"])
-checkboxCelebrateCollectedThings:AlignBelow(checkboxEffectsChannel, -1)
-
-local checkboxWarnRemovedThings = child:CreateCheckBox(L["WARN_REMOVED_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Warn:Removed"))
-end,
-function(self)
-	settings:SetTooltipSetting("Warn:Removed", self:GetChecked())
-end)
-checkboxWarnRemovedThings:SetATTTooltip(L["WARN_REMOVED_CHECKBOX_TOOLTIP"])
-checkboxWarnRemovedThings:AlignBelow(checkboxCelebrateCollectedThings)
-
-local checkboxScreenshotCollectedThings = child:CreateCheckBox(L["SCREENSHOT_COLLECTED_CHECKBOX"],
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Screenshot"))
-	end,
-	function(self)
-		settings:SetTooltipSetting("Screenshot", self:GetChecked())
-	end)
-checkboxScreenshotCollectedThings:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"])
-checkboxScreenshotCollectedThings:AlignBelow(checkboxWarnRemovedThings)
-
 local headerReporting = child:CreateHeaderLabel(L["REPORTING_LABEL"])
-headerReporting:SetPoint("LEFT", headerMinimapButton, 0, 0)
-headerReporting:SetPoint("TOP", checkboxScreenshotCollectedThings, "BOTTOM", 0, -10)
+headerReporting:SetPoint("TOP", checkboxShowAHModule, "BOTTOM", 0, -10)
+headerReporting:SetPoint("LEFT", headerModules, "LEFT", 0, 0)
 
 local checkboxReportCollectedThings = child:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],
 function(self)
@@ -1879,11 +1889,19 @@ checkboxReportUnsourced:AlignBelow(checkboxReportQuests, 1)
 
 -- Column 2
 local headerChatCommands = child:CreateHeaderLabel(L["CHAT_COMMANDS_LABEL"])
-headerChatCommands:SetPoint("TOPLEFT", headerMinimapButton, 320, 0)
+headerChatCommands:SetPoint("TOPLEFT", headerCelebrations, 320, 0)
 
 local textChatCommands = child:CreateTextLabel(L["CHAT_COMMANDS_TEXT"])
-textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -10)
+textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -4)
 textChatCommands:SetWidth(320)
+
+local headerKeybindings = child:CreateHeaderLabel(L["KEYBINDINGS"])
+headerKeybindings:SetPoint("LEFT", headerChatCommands, 0, 0)
+headerKeybindings:SetPoint("TOP", textChatCommands, "BOTTOM", 0, -15)
+
+local textKeybindings = child:CreateTextLabel(Colorize(L["KEYBINDINGS_TEXT"], app.Colors.White))
+textKeybindings:SetPoint("TOPLEFT", headerKeybindings, "BOTTOMLEFT", 0, -4)
+textKeybindings:SetWidth(320)
 
 end)();
 
@@ -2088,9 +2106,11 @@ function(self)
 	self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
 	self:SetChecked(settings:Get("MainOnly"))
 	if settings:Get("Completionist") or settings:Get("AccountMode") or settings:Get("DebugMode") then
+		self:SetChecked(false)
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
+		self:SetChecked(settings:Get("MainOnly"))
 		self:Enable()
 		self:SetAlpha(1)
 	end

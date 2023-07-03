@@ -1,3 +1,15 @@
+3.4.2.49311
+mount(61442),	-- Swift Mooncloth Carpet
+mount(348459),	-- Reawakened Phase-Hunter
+mount(372677),	-- Kalu'ak Whalebone Glider
+mount(387308),	-- Magic Rooster
+mount(387311),	-- X-51 Nether-Rocket X-TREME
+mount(387319),	-- Big Battle Bear
+mount(387320),	-- Blazing Hippogryph
+mount(387321),	-- Wooly White Rhino
+mount(387323),	-- X-51 Nether-Rocket
+mount(388516),	-- Hao-Yue, River Foreseer
+mount(394209),	-- Festering Emerald Drake
 6.0.1.18179
 mount(0),	-- TEST - Grand Wyvern \\ TEST - Running Wild \\ TEST - Traveler's Tundra Mammoth (Alliance)
 mount(3363),	-- Nether Drake
@@ -35,7 +47,6 @@ mount(58997),	-- Big Blizzard Bear
 mount(58999),	-- Big Blizzard Bear
 mount(59802),	-- Grand Ice Mammoth
 mount(59804),	-- Grand Ice Mammoth
-mount(61442),	-- Swift Mooncloth Carpet
 mount(61983),	-- Dan's Test Mount
 mount(64992),	-- Big Blizzard Bear [PH]
 mount(64993),	-- Big Blizzard Bear [PH]
@@ -118,15 +129,26 @@ mount(417552),	-- Windborne Velocidrake
 mount(417554),	-- Cliffside Wylderdrake
 mount(417556),	-- Winding Slitherdrake
 mount(418078),	-- Pattie
+10.1.5.50130
+mount(419002),	-- Temp
 
 
 
 
 Missing in MountDB.lua
 
+3.4.2.49311
+mount(6896),	-- Black Ram
+mount(61442),	-- Swift Mooncloth Carpet
+mount(387308),	-- Magic Rooster
+mount(387311),	-- X-51 Nether-Rocket X-TREME
+mount(387319),	-- Big Battle Bear
+mount(387320),	-- Blazing Hippogryph
+mount(387321),	-- Wooly White Rhino
+mount(387323),	-- X-51 Nether-Rocket
+mount(388516),	-- Hao-Yue, River Foreseer
 6.0.1.18179
 mount(3363),	-- Nether Drake
-mount(6896),	-- Black Ram
 mount(6897),	-- Blue Ram
 mount(10787),	-- Black Nightsaber
 mount(25675),	-- Reindeer
@@ -160,7 +182,6 @@ mount(58997),	-- Big Blizzard Bear
 mount(58999),	-- Big Blizzard Bear
 mount(59802),	-- Grand Ice Mammoth
 mount(59804),	-- Grand Ice Mammoth
-mount(61442),	-- Swift Mooncloth Carpet
 mount(61983),	-- Dan's Test Mount
 mount(64992),	-- Big Blizzard Bear [PH]
 mount(64993),	-- Big Blizzard Bear [PH]
@@ -228,3 +249,5 @@ mount(363608),	-- Lightforged Ruinstrider
 mount(370770),	-- Tuskarr Shoreglider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
+10.1.5.50130
+mount(419002),	-- Temp

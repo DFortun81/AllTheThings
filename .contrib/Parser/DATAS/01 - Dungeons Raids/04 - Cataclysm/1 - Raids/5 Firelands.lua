@@ -374,14 +374,14 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					i(69966),	-- Pattern: Don Tayo's Inferno Mittens
 					i(69975),	-- Pattern: Endless Dream  Walkers
 					i(69965),	-- Pattern: Grips of Altered Reality
-					i(69962),	-- Pattern: Clutches of Evil
-					i(69960),	-- Pattern: Dragonfire Gloves
-					i(69971),	-- Pattern: Earthen Scale Sabatons
-					i(69974),	-- Pattern: Ethereal Footfalls
-					i(69972),	-- Pattern: Footwraps of Quenched Fire
-					i(69961),	-- Pattern: Gloves of Unforgiving Flame
-					i(69963),	-- Pattern: Heavenly Gloves of the Moon
-					i(69973),	-- Pattern: Treads of the Craft
+					i(69962),	-- Pattern: Clutches of Evil (RECIPE!)
+					i(69960),	-- Pattern: Dragonfire Gloves (RECIPE!)
+					i(69971),	-- Pattern: Earthen Scale Sabatons (RECIPE!)
+					i(69974),	-- Pattern: Ethereal Footfalls (RECIPE!)
+					i(69972),	-- Pattern: Footwraps of Quenched Fire (RECIPE!)
+					i(69961),	-- Pattern: Gloves of Unforgiving Flame (RECIPE!)
+					i(69963),	-- Pattern: Heavenly Gloves of the Moon (RECIPE!)
+					i(69973),	-- Pattern: Treads of the Craft (RECIPE!)
 					i(69970),	-- Plans: Emberforged Elementium Boots (RECIPE!)
 					i(69969),	-- Plans: Mirrored Boots (RECIPE!)
 					i(69968),	-- Plans: Warboots of Mighty Lords (RECIPE!)

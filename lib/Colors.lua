@@ -17,7 +17,6 @@ app.Colors = {
 	ChatLinkError = "ffff5c6c",
 	ChatLinkHQT = "ff7aff92",
 	ChatLink = "ff149bfd",
-	Default = "ffEDBD21",	-- The "default" yellow colour of text labels, in some rare cases this needs to be referenced
 	TooltipDescription = "ff66ccff",
 	TooltipLore = "ff42a7eb",
 	DefaultDifficulty = "ff1eff00",
@@ -30,8 +29,11 @@ app.Colors = {
 	Time = "ff008000",
 	-- Settings
 	Account = "ff00CCFF",
-	Insane = "ffCC79A7",
-	Warning = "ffFF0000",
+	Insane = "ffDC267F",
+	-- Flat colors
+	Default = "ffEDBD21",	-- The "default" yellow colour of text labels, in some rare cases this needs to be referenced
+	Red = "ffFF0000",
+	White = "ffFFFFFF",
 };
 
 app.ccColors = {};

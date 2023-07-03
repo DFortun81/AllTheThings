@@ -237,6 +237,11 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 		n(93787, {	-- Scouting Map
 			["crs"] = CLASS_HALL_MISSION_TABLES,
 			["g"] = {
+				n(ACHIEVEMENTS, {
+					ach(11218, {	-- There's a Boss In There
+						["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_3_5 },
+					}),
+				}),
 				n(QUESTS, {
 					q(44057, {	-- A "Noble" Event
 						["provider"] = { "i", 140495 },	-- Torn Invitation

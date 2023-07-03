@@ -32,6 +32,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["coord"] = { 52.3, 39.5, THALDRASZUS },
 					["g"] = {
 						i(206586),	-- Epoch Extractor
+						i(206269),	-- Time-Lost Essence
 					},
 				}),
 				q(76431),	-- Popped when Future Chromie and Chromie met

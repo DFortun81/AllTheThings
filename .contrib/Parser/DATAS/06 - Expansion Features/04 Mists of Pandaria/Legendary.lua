@@ -514,6 +514,7 @@ root(ROOTS.ExpansionFeatures,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(8325)),	-- Chapter V: Judgment of the Black Prince
+						un(REMOVED_FROM_GAME, title(306)),	-- <Name>, Legend of Pandaria
 					},
 				}),
 			},

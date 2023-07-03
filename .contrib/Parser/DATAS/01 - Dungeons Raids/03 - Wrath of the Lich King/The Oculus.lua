@@ -81,25 +81,31 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60606, { -- Drakos the Interrogator
 						["_encounter"] = { 622, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45997),	-- Gauntlets of the Wretched
+							i(45996),	-- Hoperender
 						},
 					}),
 					crit(60608, { -- Varos Cloudstrider
 						["_encounter"] = { 623, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46015),	-- Pendant of Endless Despair
+							i(46014),	-- Saronite Animus Cloak
 						},
 					}),
 					crit(60605, { -- Mage-Lord Urom
 						["_encounter"] = { 624, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(46013),	-- Underworld Mantle
+							i(46011),	-- Shadowbite
 						},
 					}),
 					crit(60607, { -- Ley-Guardian Eregos
 						["_encounter"] = { 625, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(45872),	-- Avalanche
+							i(46009),	-- Bindings of the Depths
+							i(46010),	-- Darkstone Ring
 						},
 					}),
 				})),

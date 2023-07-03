@@ -21,6 +21,7 @@ TIMEWALKING_HEADER = createHeader({
 local TIMEWALKING_DUNGEON_CREATURE_IDS = {};
 function inst_tw(id, t)
 	t = inst(id, t);
+	t.difficultyID = TIMEWALKING_DUNGEON;
 
 	-- Look for the CreatureID's
 	local groups = t.groups or t.g;
@@ -54,6 +55,7 @@ end
 
 root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 	["modID"] = 22,	-- Timewalking
+	["difficultyID"] = TIMEWALKING_DUNGEON;
 	["groups"] = {
 		n(COMMON_BOSS_DROPS, {
 			i(133543, {	-- Infinite Timereaver (MOUNT!)

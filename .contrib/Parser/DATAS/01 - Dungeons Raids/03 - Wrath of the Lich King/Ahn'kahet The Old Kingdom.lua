@@ -85,13 +85,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60583, { -- Elder Nadox
 						["_encounter"] = { 580, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45314),	-- Igniter Rod
 						},
 					}),
 					crit(60586, { -- Prince Taldaram
 						["_encounter"] = { 581, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45321),	-- Pauldrons of Tempered Will
+							i(46019),	-- Leggings of the Insatiable
 						},
 					}),
 					crit(60585, { -- Amanitar
@@ -103,13 +104,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60584, { -- Jedoga Shadowseeker
 						["_encounter"] = { 582, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45702),	-- Emerald Signet Ring
 						},
 					}),
 					crit(60582, { -- Herald Volazj
 						["_encounter"] = { 584, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(45699),	-- Pendant of the Piercing Glare
+							i(45704),	-- Shawl of the Shattered Giant
 						},
 					}),
 				})),

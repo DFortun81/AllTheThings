@@ -334,4 +334,4 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 	q(74765),	-- Third Envoy
 	q(74764),	-- Fourth Envoy
 	q(75240),	-- Unlocking Researcher Imareth as a vendor
-})))
+})));

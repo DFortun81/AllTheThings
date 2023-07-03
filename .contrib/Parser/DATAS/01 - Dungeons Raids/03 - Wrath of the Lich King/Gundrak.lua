@@ -86,31 +86,38 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60592, { -- Slad'ran
 						["_encounter"] = { 592, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45687),	-- Helm of Veiled Energies
+							i(45976),	-- Static Charge Handwraps
 						},
 					}),
 					crit(60595, { -- Drakkari Colossus
 						["_encounter"] = { 593, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45301),	-- Bracers of the Smothering Inferno
 						},
 					}),
 					crit(60593, { -- Moorabi
 						["_encounter"] = { 594, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45305),	-- Breastplate of the Afterlife
+							i(45306),	-- Binding of the Dragon Matriarch
+							i(45299),	-- Dragonsteel Faceplate
 						},
 					}),
 					crit(60594, { -- Eck the Ferocious
 						["_encounter"] = { 595, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45308),	-- Eye of the Broodmother
+							i(45307),	-- Ironscale Leggings
 						},
 					}),
 					crit(60596, { -- Gal'darah
 						["_encounter"] = { 596, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(45298),	-- Razorscale Talon
+							i(45893),	-- Guise of the Midgard Serpent
+							i(45973),	-- Stylish Power Cape
 						},
 					}),
 				})),

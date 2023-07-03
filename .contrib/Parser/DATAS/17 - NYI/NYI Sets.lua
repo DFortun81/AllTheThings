@@ -708,6 +708,99 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		tier(MOP_TIER, {
 			-- 5.0.1
 			tier(MOP_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
+				n(DARKMOON_FAIRE_HEADER, {	-- Darkmoon Faire
+					-- Unused T0 Replica
+					cl(DRUID, {
+						i(78068),	-- Replica Wildheart Belt
+						i(78067),	-- Replica Wildheart Boots
+						i(78062),	-- Replica Wildheart Bracers
+						i(78063),	-- Replica Wildheart Cowl
+						i(78064),	-- Replica Wildheart Gloves
+						i(78069),	-- Replica Wildheart Kilt
+						i(78066),	-- Replica Wildheart Spaulders
+						i(78065),	-- Replica Wildheart Vest
+					}),
+					cl(HUNTER, {
+						i(78100),	-- Replica Beaststalker's Belt
+						i(78101),	-- Replica Beaststalker's Bindings
+						i(78094),	-- Replica Beaststalker's Boots
+						i(78097),	-- Replica Beaststalker's Cap
+						i(78095),	-- Replica Beaststalker's Gloves
+						i(78099),	-- Replica Beaststalker's Mantle
+						i(78098),	-- Replica Beaststalker's Pants
+						i(78096),	-- Replica Beaststalker's Tunic
+					}),
+					cl(MAGE, {
+						i(78020),	-- Replica Magister's Belt
+						i(78021),	-- Replica Magister's Bindings
+						i(78014),	-- Replica Magister's Boots
+						i(78016),	-- Replica Magister's Crown
+						i(78015),	-- Replica Magister's Gloves
+						i(78017),	-- Replica Magister's Leggings
+						i(78019),	-- Replica Magister's Mantle
+						i(78018),	-- Replica Magister's Robes
+					}),
+					cl(PALADIN, {
+						i(78135),	-- Replica Lightforge Belt
+						i(78142),	-- Replica Lightforge Boots
+						i(78137),	-- Replica Lightforge Bracers
+						i(78139),	-- Replica Lightforge Breastplate
+						i(78136),	-- Replica Lightforge Gauntlets
+						i(78140),	-- Replica Lightforge Helm
+						i(78138),	-- Replica Lightforge Legplates
+						i(78141),	-- Replica Lightforge Spaulders
+					}),
+					cl(PRIEST, {
+						i(78033),	-- Replica Devout Belt
+						i(78037),	-- Replica Devout Bracers
+						i(78031),	-- Replica Devout Crown
+						i(78034),	-- Replica Devout Gloves
+						i(78030),	-- Replica Devout Mantle
+						i(78036),	-- Replica Devout Robe
+						i(78035),	-- Replica Devout Sandals
+						i(78032),	-- Replica Devout Skirt
+					}),
+					cl(ROGUE, {
+						i(78083),	-- Replica Shadowcraft Belt
+						i(78080),	-- Replica Shadowcraft Boots
+						i(78078),	-- Replica Shadowcraft Bracers
+						i(78084),	-- Replica Shadowcraft Cap
+						i(78081),	-- Replica Shadowcraft Gloves
+						i(78082),	-- Replica Shadowcraft Pants
+						i(78085),	-- Replica Shadowcraft Spaulders
+						i(78079),	-- Replica Shadowcraft Tunic
+					}),
+					cl(SHAMAN, {
+						i(78122),	-- Replica Bindings of Elements
+						i(78125),	-- Replica Boots of Elements
+						i(78119),	-- Replica Coif of Elements
+						i(78126),	-- Replica Cord of Elements
+						i(78123),	-- Replica Gauntlets of Elements
+						i(78120),	-- Replica Kilt of Elements
+						i(78121),	-- Replica Pauldrons of Elements
+						i(78124),	-- Replica Vest of Elements
+					}),
+					cl(WARLOCK, {
+						i(78047),	-- Replica Dreadmist Belt
+						i(78053),	-- Replica Dreadmist Bracers
+						i(78052),	-- Replica Dreadmist Leggings
+						i(78050),	-- Replica Dreadmist Mantle
+						i(78051),	-- Replica Dreadmist Mask
+						i(78049),	-- Replica Dreadmist Robe
+						i(78048),	-- Replica Dreadmist Sandals
+						i(78046),	-- Replica Dreadmist Wraps
+					}),
+					cl(WARRIOR, {
+						i(78154),	-- Replica Belt of Valor
+						i(78153),	-- Replica Boots of Valor
+						i(78152),	-- Replica Bracers of Valor
+						i(78155),	-- Replica Breastplate of Valor
+						i(78151),	-- Replica Gauntlets of Valor
+						i(78156),	-- Replica Helm of Valor
+						i(78158),	-- Replica Legplates of Valor
+						i(78157),	-- Replica Spaulders of Valor
+					}),
+				}),
 				n(SEASON_MALEVOLENT, {
 					cl(DEATHKNIGHT, {
 						i(88191),	-- Gladiator's Dreadplate Chestpiece
@@ -1906,6 +1999,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(201057),	-- Dreamfire Sabatons
 				i(201082),	-- Dreamfire Wristguards
 			})),
+
 			-- 10.0.2
 			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
 				header(HEADERS.LFGDungeon, 2390, {	-- Vault of the Incarnates
@@ -2973,6 +3067,1238 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(201478, {	-- Crimson Gladiator's Silk Hood
 						["bonusID"] = 6895,
 					}),
+				}),
+			})),
+
+			-- 10.1.0
+			tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+				header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
+					d(LFR_RAID, bubbleDown({ ["bonusID"] = 451 }, {
+						cl(DEATHKNIGHT, {
+							i(205810),	-- Lingering Phantom's Dreadhorns
+							i(205811),	-- Lingering Phantom's Gauntlets
+							i(205812),	-- Lingering Phantom's Plackart
+							i(205809),	-- Lingering Phantom's Schynbalds
+							i(205808),	-- Lingering Phantom's Shoulderplates
+						}),
+						cl(DEMONHUNTER, {
+							i(205846),	-- Kinslayer's Bloodstained Grips
+							i(205845),	-- Kinslayer's Hood
+							i(205844),	-- Kinslayer's Legguards
+							i(205843),	-- Kinslayer's Tainted Spaulders
+							i(205687),	-- Kinslayer's Vest
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205842),	-- Chestroots of the Autumn Blaze
+							i(205841),	-- Handguards of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+							i(205839),	-- Pants of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205824),	-- Chausses of Obsidian Secrets
+							i(205826),	-- Claws of Obsidian Secrets
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205827),	-- Hauberk of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205819),	-- Ashen Predator's Poleyn
+							i(205821),	-- Ashen Predator's Skinners
+							i(205822),	-- Ashen Predator's Sling Vest
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205860),	-- Underlight Conjurer's Arcanocowl
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(205861),	-- Underlight Conjurer's Gloves
+							i(205859),	-- Underlight Conjurer's Trousers
+							i(205862),	-- Underlight Conjurer's Vestment
+						}),
+						cl(MONK, {
+							i(205835),	-- Cover of the Vermillion Forge
+							i(205837),	-- Cuirass of the Vermillion Forge
+							i(205836),	-- Fists of the Vermillion Forge
+							i(205834),	-- Pantaloons of the Vermillion Forge
+							i(205833),	-- Spines of the Vermillion Forge
+						}),
+						cl(PALADIN, {
+							i(205807),	-- Heartfire Sentinel's Brigandine
+							i(205804),	-- Heartfire Sentinel's Faulds
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205806),	-- Heartfire Sentinel's Protectors
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(205854),	-- Breeches of the Furnace Seraph
+							i(205857),	-- Command of the Furnace Seraph
+							i(205853),	-- Devotion of the Furnace Seraph
+							i(205856),	-- Grasp of the Furnace Seraph
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205832),	-- Lurking Specter's Brigandine
+							i(205831),	-- Lurking Specter's Handgrips
+							i(205828),	-- Lurking Specter's Shoulderblades
+							i(205829),	-- Lurking Specter's Tights
+							i(205830),	-- Lurking Specter's Visage
+						}),
+						cl(SHAMAN, {
+							i(205817),	-- Adornments of the Cinderwolf
+							i(205814),	-- Braies of the Cinderwolf
+							i(205816),	-- Knuckles of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205852),	-- Cursed Robes of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+							i(205851),	-- Grips of the Sinister Savant
+							i(205849),	-- Leggings of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(205802),	-- Battlechest of the Onyx Crucible
+							i(205801),	-- Handguards  of the Onyx Crucible
+							i(205799),	-- Legplates of the Onyx Crucible
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+						-- [BoP]
+						i(204413),	-- Bands of Purified Purpose
+						i(204412),	-- Crucible Curator's Wingspan
+						i(204427),	-- Devoted Warden's Gaze
+						i(204421),	-- Faulds of Failed Experiments
+						i(204416),	-- Laboratory Assistant's Abductors
+						i(204417),	-- Mantle of Sunless Kindling
+						i(204428),	-- Sanctum Guard's Forgewalkers
+						i(204420),	-- Sundered Edgelord's Breastplate
+					})),
+					d(NORMAL_RAID, {
+						cl(DEATHKNIGHT, {
+							i(205810),	-- Lingering Phantom's Dreadhorns
+							i(205811),	-- Lingering Phantom's Gauntlets
+							i(205812),	-- Lingering Phantom's Plackart
+							i(205809),	-- Lingering Phantom's Schynbalds
+							i(205808),	-- Lingering Phantom's Shoulderplates
+						}),
+						cl(DEMONHUNTER, {
+							i(205846),	-- Kinslayer's Bloodstained Grips
+							i(205845),	-- Kinslayer's Hood
+							i(205844),	-- Kinslayer's Legguards
+							i(205843),	-- Kinslayer's Tainted Spaulders
+							i(205687),	-- Kinslayer's Vest
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205842),	-- Chestroots of the Autumn Blaze
+							i(205841),	-- Handguards of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+							i(205839),	-- Pants of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205824),	-- Chausses of Obsidian Secrets
+							i(205826),	-- Claws of Obsidian Secrets
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205827),	-- Hauberk of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205819),	-- Ashen Predator's Poleyn
+							i(205821),	-- Ashen Predator's Skinners
+							i(205822),	-- Ashen Predator's Sling Vest
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205860),	-- Underlight Conjurer's Arcanocowl
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(205861),	-- Underlight Conjurer's Gloves
+							i(205859),	-- Underlight Conjurer's Trousers
+							i(205862),	-- Underlight Conjurer's Vestment
+						}),
+						cl(MONK, {
+							i(205835),	-- Cover of the Vermillion Forge
+							i(205837),	-- Cuirass of the Vermillion Forge
+							i(205836),	-- Fists of the Vermillion Forge
+							i(205834),	-- Pantaloons of the Vermillion Forge
+							i(205833),	-- Spines of the Vermillion Forge
+						}),
+						cl(PALADIN, {
+							i(205807),	-- Heartfire Sentinel's Brigandine
+							i(205804),	-- Heartfire Sentinel's Faulds
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205806),	-- Heartfire Sentinel's Protectors
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(205854),	-- Breeches of the Furnace Seraph
+							i(205857),	-- Command of the Furnace Seraph
+							i(205853),	-- Devotion of the Furnace Seraph
+							i(205856),	-- Grasp of the Furnace Seraph
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205832),	-- Lurking Specter's Brigandine
+							i(205831),	-- Lurking Specter's Handgrips
+							i(205828),	-- Lurking Specter's Shoulderblades
+							i(205829),	-- Lurking Specter's Tights
+							i(205830),	-- Lurking Specter's Visage
+						}),
+						cl(SHAMAN, {
+							i(205817),	-- Adornments of the Cinderwolf
+							i(205814),	-- Braies of the Cinderwolf
+							i(205816),	-- Knuckles of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205852),	-- Cursed Robes of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+							i(205851),	-- Grips of the Sinister Savant
+							i(205849),	-- Leggings of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(205802),	-- Battlechest of the Onyx Crucible
+							i(205801),	-- Handguards  of the Onyx Crucible
+							i(205799),	-- Legplates of the Onyx Crucible
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+						-- BoP
+						i(204413),	-- Bands of Purified Purpose
+						i(204412),	-- Crucible Curator's Wingspan
+						i(204427),	-- Devoted Warden's Gaze
+						i(204421),	-- Faulds of Failed Experiments
+						i(204416),	-- Laboratory Assistant's Abductors
+						i(204417),	-- Mantle of Sunless Kindling
+						i(204428),	-- Sanctum Guard's Forgewalkers
+						i(204420),	-- Sundered Edgelord's Breastplate
+					}),
+					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 1 }, {
+						cl(DEATHKNIGHT, {
+							i(205810),	-- Lingering Phantom's Dreadhorns
+							i(205811),	-- Lingering Phantom's Gauntlets
+							i(205812),	-- Lingering Phantom's Plackart
+							i(205809),	-- Lingering Phantom's Schynbalds
+							i(205808),	-- Lingering Phantom's Shoulderplates
+						}),
+						cl(DEMONHUNTER, {
+							i(205846),	-- Kinslayer's Bloodstained Grips
+							i(205845),	-- Kinslayer's Hood
+							i(205844),	-- Kinslayer's Legguards
+							i(205843),	-- Kinslayer's Tainted Spaulders
+							i(205687),	-- Kinslayer's Vest
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205842),	-- Chestroots of the Autumn Blaze
+							i(205841),	-- Handguards of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+							i(205839),	-- Pants of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205824),	-- Chausses of Obsidian Secrets
+							i(205826),	-- Claws of Obsidian Secrets
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205827),	-- Hauberk of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205819),	-- Ashen Predator's Poleyn
+							i(205821),	-- Ashen Predator's Skinners
+							i(205822),	-- Ashen Predator's Sling Vest
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205860),	-- Underlight Conjurer's Arcanocowl
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(205861),	-- Underlight Conjurer's Gloves
+							i(205859),	-- Underlight Conjurer's Trousers
+							i(205862),	-- Underlight Conjurer's Vestment
+						}),
+						cl(MONK, {
+							i(205835),	-- Cover of the Vermillion Forge
+							i(205837),	-- Cuirass of the Vermillion Forge
+							i(205836),	-- Fists of the Vermillion Forge
+							i(205834),	-- Pantaloons of the Vermillion Forge
+							i(205833),	-- Spines of the Vermillion Forge
+						}),
+						cl(PALADIN, {
+							i(205807),	-- Heartfire Sentinel's Brigandine
+							i(205804),	-- Heartfire Sentinel's Faulds
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205806),	-- Heartfire Sentinel's Protectors
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(205854),	-- Breeches of the Furnace Seraph
+							i(205857),	-- Command of the Furnace Seraph
+							i(205853),	-- Devotion of the Furnace Seraph
+							i(205856),	-- Grasp of the Furnace Seraph
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205832),	-- Lurking Specter's Brigandine
+							i(205831),	-- Lurking Specter's Handgrips
+							i(205828),	-- Lurking Specter's Shoulderblades
+							i(205829),	-- Lurking Specter's Tights
+							i(205830),	-- Lurking Specter's Visage
+						}),
+						cl(SHAMAN, {
+							i(205817),	-- Adornments of the Cinderwolf
+							i(205814),	-- Braies of the Cinderwolf
+							i(205816),	-- Knuckles of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205852),	-- Cursed Robes of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+							i(205851),	-- Grips of the Sinister Savant
+							i(205849),	-- Leggings of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(205802),	-- Battlechest of the Onyx Crucible
+							i(205801),	-- Handguards  of the Onyx Crucible
+							i(205799),	-- Legplates of the Onyx Crucible
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+						-- BoP
+						i(204413),	-- Bands of Purified Purpose
+						i(204412),	-- Crucible Curator's Wingspan
+						i(204427),	-- Devoted Warden's Gaze
+						i(204421),	-- Faulds of Failed Experiments
+						i(204416),	-- Laboratory Assistant's Abductors
+						i(204417),	-- Mantle of Sunless Kindling
+						i(204428),	-- Sanctum Guard's Forgewalkers
+						i(204420),	-- Sundered Edgelord's Breastplate
+					})),
+					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 450 }, {
+						cl(DEATHKNIGHT, {
+							i(205810),	-- Lingering Phantom's Dreadhorns
+							i(205811),	-- Lingering Phantom's Gauntlets
+							i(205812),	-- Lingering Phantom's Plackart
+							i(205809),	-- Lingering Phantom's Schynbalds
+							i(205808),	-- Lingering Phantom's Shoulderplates
+						}),
+						cl(DEMONHUNTER, {
+							i(205846),	-- Kinslayer's Bloodstained Grips
+							i(205845),	-- Kinslayer's Hood
+							i(205844),	-- Kinslayer's Legguards
+							i(205843),	-- Kinslayer's Tainted Spaulders
+							i(205687),	-- Kinslayer's Vest
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205842),	-- Chestroots of the Autumn Blaze
+							i(205841),	-- Handguards of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+							i(205839),	-- Pants of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205824),	-- Chausses of Obsidian Secrets
+							i(205826),	-- Claws of Obsidian Secrets
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205827),	-- Hauberk of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205819),	-- Ashen Predator's Poleyn
+							i(205821),	-- Ashen Predator's Skinners
+							i(205822),	-- Ashen Predator's Sling Vest
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205860),	-- Underlight Conjurer's Arcanocowl
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(205861),	-- Underlight Conjurer's Gloves
+							i(205859),	-- Underlight Conjurer's Trousers
+							i(205862),	-- Underlight Conjurer's Vestment
+						}),
+						cl(MONK, {
+							i(205835),	-- Cover of the Vermillion Forge
+							i(205837),	-- Cuirass of the Vermillion Forge
+							i(205836),	-- Fists of the Vermillion Forge
+							i(205834),	-- Pantaloons of the Vermillion Forge
+							i(205833),	-- Spines of the Vermillion Forge
+						}),
+						cl(PALADIN, {
+							i(205807),	-- Heartfire Sentinel's Brigandine
+							i(205804),	-- Heartfire Sentinel's Faulds
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205806),	-- Heartfire Sentinel's Protectors
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(205854),	-- Breeches of the Furnace Seraph
+							i(205857),	-- Command of the Furnace Seraph
+							i(205853),	-- Devotion of the Furnace Seraph
+							i(205856),	-- Grasp of the Furnace Seraph
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205832),	-- Lurking Specter's Brigandine
+							i(205831),	-- Lurking Specter's Handgrips
+							i(205828),	-- Lurking Specter's Shoulderblades
+							i(205829),	-- Lurking Specter's Tights
+							i(205830),	-- Lurking Specter's Visage
+						}),
+						cl(SHAMAN, {
+							i(205817),	-- Adornments of the Cinderwolf
+							i(205814),	-- Braies of the Cinderwolf
+							i(205816),	-- Knuckles of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205852),	-- Cursed Robes of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+							i(205851),	-- Grips of the Sinister Savant
+							i(205849),	-- Leggings of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(205802),	-- Battlechest of the Onyx Crucible
+							i(205801),	-- Handguards  of the Onyx Crucible
+							i(205799),	-- Legplates of the Onyx Crucible
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
+				}),
+				n(PVP, {
+					-- [High Item]
+					n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {
+						cl(DEATHKNIGHT, {
+							i(205810),	-- Lingering Phantom's Dreadhorns
+							i(205811),	-- Lingering Phantom's Gauntlets
+							i(205812),	-- Lingering Phantom's Plackart
+							i(205809),	-- Lingering Phantom's Schynbalds
+							i(205808),	-- Lingering Phantom's Shoulderplates
+						}),
+						cl(DEMONHUNTER, {
+							i(205846),	-- Kinslayer's Bloodstained Grips
+							i(205845),	-- Kinslayer's Hood
+							i(205844),	-- Kinslayer's Legguards
+							i(205843),	-- Kinslayer's Tainted Spaulders
+							i(205687),	-- Kinslayer's Vest
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205842),	-- Chestroots of the Autumn Blaze
+							i(205841),	-- Handguards of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+							i(205839),	-- Pants of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205824),	-- Chausses of Obsidian Secrets
+							i(205826),	-- Claws of Obsidian Secrets
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205827),	-- Hauberk of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205819),	-- Ashen Predator's Poleyn
+							i(205821),	-- Ashen Predator's Skinners
+							i(205822),	-- Ashen Predator's Sling Vest
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205860),	-- Underlight Conjurer's Arcanocowl
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(205861),	-- Underlight Conjurer's Gloves
+							i(205859),	-- Underlight Conjurer's Trousers
+							i(205862),	-- Underlight Conjurer's Vestment
+						}),
+						cl(MONK, {
+							i(205835),	-- Cover of the Vermillion Forge
+							i(205837),	-- Cuirass of the Vermillion Forge
+							i(205836),	-- Fists of the Vermillion Forge
+							i(205834),	-- Pantaloons of the Vermillion Forge
+							i(205833),	-- Spines of the Vermillion Forge
+						}),
+						cl(PALADIN, {
+							i(205807),	-- Heartfire Sentinel's Brigandine
+							i(205804),	-- Heartfire Sentinel's Faulds
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205806),	-- Heartfire Sentinel's Protectors
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(205854),	-- Breeches of the Furnace Seraph
+							i(205857),	-- Command of the Furnace Seraph
+							i(205853),	-- Devotion of the Furnace Seraph
+							i(205856),	-- Grasp of the Furnace Seraph
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205832),	-- Lurking Specter's Brigandine
+							i(205831),	-- Lurking Specter's Handgrips
+							i(205828),	-- Lurking Specter's Shoulderblades
+							i(205829),	-- Lurking Specter's Tights
+							i(205830),	-- Lurking Specter's Visage
+						}),
+						cl(SHAMAN, {
+							i(205817),	-- Adornments of the Cinderwolf
+							i(205814),	-- Braies of the Cinderwolf
+							i(205816),	-- Knuckles of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205852),	-- Cursed Robes of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+							i(205851),	-- Grips of the Sinister Savant
+							i(205849),	-- Leggings of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(205802),	-- Battlechest of the Onyx Crucible
+							i(205801),	-- Handguards  of the Onyx Crucible
+							i(205799),	-- Legplates of the Onyx Crucible
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
+					-- [Low Item]
+					n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {
+						cl(DEATHKNIGHT, {
+							i(202461),	-- Lingering Phantom's Dreadhorns
+							i(202462),	-- Lingering Phantom's Gauntlets
+							i(202464),	-- Lingering Phantom's Plackart
+							i(202460),	-- Lingering Phantom's Schynbalds
+							i(202459),	-- Lingering Phantom's Shoulderplates
+						}),
+						cl(DEMONHUNTER, {
+							i(202525),	-- Kinslayer's Bloodstained Grips
+							i(202524),	-- Kinslayer's Hood
+							i(202523),	-- Kinslayer's Legguards
+							i(202522),	-- Kinslayer's Tainted Spaulders
+							i(202527),	-- Kinslayer's Vest
+						}),
+						cl(DRUID, {
+							i(202515),	-- Bough of the Autumn Blaze
+							i(202518),	-- Chestroots of the Autumn Blaze
+							i(202516),	-- Handguards of the Autumn Blaze
+							i(202513),	-- Mantle of the Autumn Blaze
+							i(202514),	-- Pants of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(202487),	-- Chausses of Obsidian Secrets
+							i(202489),	-- Claws of Obsidian Secrets
+							i(202488),	-- Crown of Obsidian Secrets
+							i(202491),	-- Hauberk of Obsidian Secrets
+							i(202486),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(202479),	-- Ashen Predator's Faceguard
+							i(202478),	-- Ashen Predator's Poleyns
+							i(202480),	-- Ashen Predator's Skinners
+							i(202482),	-- Ashen Predator's Sling Vest
+							i(202477),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(202551),	-- Underlight Conjurer's Arcanocowl
+							i(202549),	-- Underlight Conjurer's Aurora
+							i(202552),	-- Underlight Conjurer's Gloves
+							i(202550),	-- Underlight Conjurer's Trousers
+							i(202554),	-- Underlight Conjurer's Vestment
+						}),
+						cl(MONK, {
+							i(202506),	-- Cover of the Vermillion Forge
+							i(202509),	-- Cuirass of the Vermillion Forge
+							i(202507),	-- Fists of the Vermillion Forge
+							i(202505),	-- Pantaloons of the Vermillion Forge
+							i(202504),	-- Spines of the Vermillion Forge
+						}),
+						cl(PALADIN, {
+							i(202455),	-- Heartfire Sentinel's Brigandine
+							i(202451),	-- Heartfire Sentinel's Faulds
+							i(202452),	-- Heartfire Sentinel's Forgehelm
+							i(202453),	-- Heartfire Sentinel's Protectors
+							i(202450),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(202541),	-- Breeches of the Furnace Seraph
+							i(202545),	-- Command of the Furnace Seraph
+							i(202540),	-- Devotion of the Furnace Seraph
+							i(202543),	-- Grasp of the Furnace Seraph
+							i(202542),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(202500),	-- Lurking Specter's Brigandine
+							i(202498),	-- Lurking Specter's Handgrips
+							i(202495),	-- Lurking Specter's Shoulderblades
+							i(202496),	-- Lurking Specter's Tights
+							i(202497),	-- Lurking Specter's Visage
+						}),
+						cl(SHAMAN, {
+							i(202473),	-- Adornments of the Cinderwolf
+							i(202469),	-- Braies of the Cinderwolf
+							i(202471),	-- Knuckles of the Cinderwolf
+							i(202470),	-- Spangenhelm of the Cinderwolf
+							i(202468),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(202531),	-- Amice of the Sinister Savant
+							i(202536),	-- Cursed Robes of the Sinister Savant
+							i(202533),	-- Grimhorns of the Sinister Savant
+							i(202534),	-- Grips of the Sinister Savant
+							i(202532),	-- Leggings of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202446),	-- Battlechest of the Onyx Crucible
+							i(202444),	-- Handguards of the Onyx Crucible
+							i(202442),	-- Legplates of the Onyx Crucible
+							i(202441),	-- Pauldrons of the Onyx Crucible
+							i(202443),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
+					-- [Low Item]
+					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
+						cl(DEATHKNIGHT, {
+							i(202461),	-- Lingering Phantom's Dreadhorns
+							i(202462),	-- Lingering Phantom's Gauntlets
+							i(202464),	-- Lingering Phantom's Plackart
+							i(202460),	-- Lingering Phantom's Schynbalds
+							i(202459),	-- Lingering Phantom's Shoulderplates
+						}),
+						cl(DEMONHUNTER, {
+							i(202525),	-- Kinslayer's Bloodstained Grips
+							i(202524),	-- Kinslayer's Hood
+							i(202523),	-- Kinslayer's Legguards
+							i(202522),	-- Kinslayer's Tainted Spaulders
+							i(202527),	-- Kinslayer's Vest
+						}),
+						cl(DRUID, {
+							i(202515),	-- Bough of the Autumn Blaze
+							i(202518),	-- Chestroots of the Autumn Blaze
+							i(202516),	-- Handguards of the Autumn Blaze
+							i(202513),	-- Mantle of the Autumn Blaze
+							i(202514),	-- Pants of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(202487),	-- Chausses of Obsidian Secrets
+							i(202489),	-- Claws of Obsidian Secrets
+							i(202488),	-- Crown of Obsidian Secrets
+							i(202491),	-- Hauberk of Obsidian Secrets
+							i(202486),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(202479),	-- Ashen Predator's Faceguard
+							i(202478),	-- Ashen Predator's Poleyns
+							i(202480),	-- Ashen Predator's Skinners
+							i(202482),	-- Ashen Predator's Sling Vest
+							i(202477),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(202551),	-- Underlight Conjurer's Arcanocowl
+							i(202549),	-- Underlight Conjurer's Aurora
+							i(202552),	-- Underlight Conjurer's Gloves
+							i(202550),	-- Underlight Conjurer's Trousers
+							i(202554),	-- Underlight Conjurer's Vestment
+						}),
+						cl(MONK, {
+							i(202506),	-- Cover of the Vermillion Forge
+							i(202509),	-- Cuirass of the Vermillion Forge
+							i(202507),	-- Fists of the Vermillion Forge
+							i(202505),	-- Pantaloons of the Vermillion Forge
+							i(202504),	-- Spines of the Vermillion Forge
+						}),
+						cl(PALADIN, {
+							i(202455),	-- Heartfire Sentinel's Brigandine
+							i(202451),	-- Heartfire Sentinel's Faulds
+							i(202452),	-- Heartfire Sentinel's Forgehelm
+							i(202453),	-- Heartfire Sentinel's Protectors
+							i(202450),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(202541),	-- Breeches of the Furnace Seraph
+							i(202545),	-- Command of the Furnace Seraph
+							i(202540),	-- Devotion of the Furnace Seraph
+							i(202543),	-- Grasp of the Furnace Seraph
+							i(202542),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(202500),	-- Lurking Specter's Brigandine
+							i(202498),	-- Lurking Specter's Handgrips
+							i(202495),	-- Lurking Specter's Shoulderblades
+							i(202496),	-- Lurking Specter's Tights
+							i(202497),	-- Lurking Specter's Visage
+						}),
+						cl(SHAMAN, {
+							i(202473),	-- Adornments of the Cinderwolf
+							i(202469),	-- Braies of the Cinderwolf
+							i(202471),	-- Knuckles of the Cinderwolf
+							i(202470),	-- Spangenhelm of the Cinderwolf
+							i(202468),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(202531),	-- Amice of the Sinister Savant
+							i(202536),	-- Cursed Robes of the Sinister Savant
+							i(202533),	-- Grimhorns of the Sinister Savant
+							i(202534),	-- Grips of the Sinister Savant
+							i(202532),	-- Leggings of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202446),	-- Battlechest of the Onyx Crucible
+							i(202444),	-- Handguards of the Onyx Crucible
+							i(202442),	-- Legplates of the Onyx Crucible
+							i(202441),	-- Pauldrons of the Onyx Crucible
+							i(202443),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
+				}),
+				--[[
+				d(LFR_RAID, bubbleDown({ ["bonusID"] = 451 }, {
+					cl(DEATHKNIGHT, {
+						i(202461),	-- Lingering Phantom's Dreadhorns
+						i(202462),	-- Lingering Phantom's Gauntlets
+						i(202464),	-- Lingering Phantom's Plackart
+						i(202460),	-- Lingering Phantom's Schynbalds
+						i(202459),	-- Lingering Phantom's Shoulderplates
+					}),
+					cl(DEMONHUNTER, {
+						i(202525),	-- Kinslayer's Bloodstained Grips
+						i(202524),	-- Kinslayer's Hood
+						i(202523),	-- Kinslayer's Legguards
+						i(202522),	-- Kinslayer's Tainted Spaulders
+						i(202527),	-- Kinslayer's Vest
+					}),
+					cl(DRUID, {
+						i(202515),	-- Bough of the Autumn Blaze
+						i(202518),	-- Chestroots of the Autumn Blaze
+						i(202516),	-- Handguards of the Autumn Blaze
+						i(202513),	-- Mantle of the Autumn Blaze
+						i(202514),	-- Pants of the Autumn Blaze
+					}),
+					cl(EVOKER, {
+						i(202487),	-- Chausses of Obsidian Secrets
+						i(202489),	-- Claws of Obsidian Secrets
+						i(202488),	-- Crown of Obsidian Secrets
+						i(202491),	-- Hauberk of Obsidian Secrets
+						i(202486),	-- Wingspan of Obsidian Secrets
+					}),
+					cl(HUNTER, {
+						i(202479),	-- Ashen Predator's Faceguard
+						i(202478),	-- Ashen Predator's Poleyns
+						i(202480),	-- Ashen Predator's Skinners
+						i(202482),	-- Ashen Predator's Sling Vest
+						i(202477),	-- Ashen Predator's Trophy
+					}),
+					cl(MAGE, {
+						i(202551),	-- Underlight Conjurer's Arcanocowl
+						i(202549),	-- Underlight Conjurer's Aurora
+						i(202552),	-- Underlight Conjurer's Gloves
+						i(202550),	-- Underlight Conjurer's Trousers
+						i(202554),	-- Underlight Conjurer's Vestment
+					}),
+					cl(MONK, {
+						i(202506),	-- Cover of the Vermillion Forge
+						i(202509),	-- Cuirass of the Vermillion Forge
+						i(202507),	-- Fists of the Vermillion Forge
+						i(202505),	-- Pantaloons of the Vermillion Forge
+						i(202504),	-- Spines of the Vermillion Forge
+					}),
+					cl(PALADIN, {
+						i(202455),	-- Heartfire Sentinel's Brigandine
+						i(202451),	-- Heartfire Sentinel's Faulds
+						i(202452),	-- Heartfire Sentinel's Forgehelm
+						i(202453),	-- Heartfire Sentinel's Protectors
+						i(202450),	-- Heartfire Sentinel's Steelwings
+					}),
+					cl(PRIEST, {
+						i(202541),	-- Breeches of the Furnace Seraph
+						i(202545),	-- Command of the Furnace Seraph
+						i(202540),	-- Devotion of the Furnace Seraph
+						i(202543),	-- Grasp of the Furnace Seraph
+						i(202542),	-- Mask of the Furnace Seraph
+					}),
+					cl(ROGUE, {
+						i(202500),	-- Lurking Specter's Brigandine
+						i(202498),	-- Lurking Specter's Handgrips
+						i(202495),	-- Lurking Specter's Shoulderblades
+						i(202496),	-- Lurking Specter's Tights
+						i(202497),	-- Lurking Specter's Visage
+					}),
+					cl(SHAMAN, {
+						i(202473),	-- Adornments of the Cinderwolf
+						i(202469),	-- Braies of the Cinderwolf
+						i(202471),	-- Knuckles of the Cinderwolf
+						i(202470),	-- Spangenhelm of the Cinderwolf
+						i(202468),	-- Thunderpads of the Cinderwolf
+					}),
+					cl(WARLOCK, {
+						i(202531),	-- Amice of the Sinister Savant
+						i(202536),	-- Cursed Robes of the Sinister Savant
+						i(202533),	-- Grimhorns of the Sinister Savant
+						i(202534),	-- Grips of the Sinister Savant
+						i(202532),	-- Leggings of the Sinister Savant
+					}),
+					cl(WARRIOR, {
+						i(202446),	-- Battlechest of the Onyx Crucible
+						i(202444),	-- Handguards of the Onyx Crucible
+						i(202442),	-- Legplates of the Onyx Crucible
+						i(202441),	-- Pauldrons of the Onyx Crucible
+						i(202443),	-- Thraexhelm of the Onyx Crucible
+					}),
+				})),
+				--]]
+				o(382621, {	-- Revival Catalyst Console
+					-- [Low Item]
+					n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 7479 }, {
+						cl(DEATHKNIGHT, {
+							i(202458),	-- Lingering Phantom's Deathlink
+							i(202456),	-- Lingering Phantom's Drape
+							i(202463),	-- Lingering Phantom's Stompers
+							i(202457),	-- Lingering Phantom's Vambraces
+						}),
+						cl(DEMONHUNTER, {
+							i(202520),	-- Kinslayer's Bindings
+							i(202526),	-- Kinslayer's Gaiters
+							i(202521),	-- Kinslayer's Sash
+							i(202519),	-- Kinslayer's Shawl
+						}),
+						cl(DRUID, {
+							i(202511),	-- Bands of the Autumn Blaze
+							i(202510),	-- Foliage of the Autumn Blaze
+							i(202512),	-- Garland of the Autumn Blaze
+							i(202517),	-- Hooves of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(202483),	-- Crest of Obsidian Secrets
+							i(202490),	-- Greatboots of Obsidian Secrets
+							i(202485),	-- Lasso of Obsidian Secrets
+							i(202484),	-- Scalebands of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(202481),	-- Ashen Predator's Chasers
+							i(202474),	-- Ashen Predator's Cloak
+							i(202475),	-- Ashen Predator's Skinwraps
+							i(202476),	-- Ashen Predator's Strap
+						}),
+						cl(MAGE, {
+							i(202547),	-- Underlight Conjurer's Bracelets
+							i(202546),	-- Underlight Conjurer's Cape
+							i(202548),	-- Underlight Conjurer's Charmbelt
+							i(202553),	-- Underlight Conjurer's Treads
+						}),
+						cl(MONK, {
+							i(202501),	-- Drape of the Vermillion Forge
+							i(202503),	-- Blackbelt of the Vermillion Forge
+							i(202502),	-- Coils of the Vermillion Forge
+							i(202508),	-- Footpads of the Vermillion Forge
+						}),
+						cl(PALADIN, {
+							i(202448),	-- Heartfire Sentinel's Blessed Bindings
+							i(202454),	-- Heartfire Sentinel's Greatboots
+							i(202447),	-- Heartfire Sentinel's Pelerine
+							i(202449),	-- Heartfire Sentinel's Waistguard
+						}),
+						cl(PRIEST, {
+							i(202538),	-- Cuffs of the Furnace Seraph
+							i(202544),	-- Sabatons of the Furnace Seraph
+							i(202539),	-- Sash of the Furnace Seraph
+							i(202537),	-- Shroud of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(202493),	-- Lurking Specter's Armwraps
+							i(202492),	-- Lurking Specter's Capelet
+							i(202494),	-- Lurking Specter's Edgeband
+							i(202499),	-- Lurking Specter's Tabi
+						}),
+						cl(SHAMAN, {
+							i(202467),	-- Faulds of the Cinderwolf
+							i(202465),	-- Pelisse of the Cinderwolf
+							i(202466),	-- Runebraces of the Cinderwolf
+							i(202472),	-- Sollerets of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(202535),	-- Sandals of the Sinister Savant
+							i(202528),	-- Shawl of the Sinister Savant
+							i(202530),	-- Skullstrap of the Sinister Savant
+							i(202529),	-- Wristwraps of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202440),	-- Insignia of the Onyx Crucible
+							i(202445),	-- Ironstriders of the Onyx Crucible
+							i(202438),	-- Manteau of the Onyx Crucible
+							i(202439),	-- Warbands of the Onyx Crucible
+						}),
+					})),
+					-- [Low Item]
+					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
+						cl(DEATHKNIGHT, {
+							i(202458),	-- Lingering Phantom's Deathlink
+							i(202456),	-- Lingering Phantom's Drape
+							i(202463),	-- Lingering Phantom's Stompers
+							i(202457),	-- Lingering Phantom's Vambraces
+						}),
+						cl(DEMONHUNTER, {
+							i(202520),	-- Kinslayer's Bindings
+							i(202526),	-- Kinslayer's Gaiters
+							i(202521),	-- Kinslayer's Sash
+							i(202519),	-- Kinslayer's Shawl
+						}),
+						cl(DRUID, {
+							i(202511),	-- Bands of the Autumn Blaze
+							i(202510),	-- Foliage of the Autumn Blaze
+							i(202512),	-- Garland of the Autumn Blaze
+							i(202517),	-- Hooves of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(202483),	-- Crest of Obsidian Secrets
+							i(202490),	-- Greatboots of Obsidian Secrets
+							i(202485),	-- Lasso of Obsidian Secrets
+							i(202484),	-- Scalebands of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(202481),	-- Ashen Predator's Chasers
+							i(202474),	-- Ashen Predator's Cloak
+							i(202475),	-- Ashen Predator's Skinwraps
+							i(202476),	-- Ashen Predator's Strap
+						}),
+						cl(MAGE, {
+							i(202547),	-- Underlight Conjurer's Bracelets
+							i(202546),	-- Underlight Conjurer's Cape
+							i(202548),	-- Underlight Conjurer's Charmbelt
+							i(202553),	-- Underlight Conjurer's Treads
+						}),
+						cl(MONK, {
+							i(202501),	-- Drape of the Vermillion Forge
+							i(202503),	-- Blackbelt of the Vermillion Forge
+							i(202502),	-- Coils of the Vermillion Forge
+							i(202508),	-- Footpads of the Vermillion Forge
+						}),
+						cl(PALADIN, {
+							i(202448),	-- Heartfire Sentinel's Blessed Bindings
+							i(202454),	-- Heartfire Sentinel's Greatboots
+							i(202447),	-- Heartfire Sentinel's Pelerine
+							i(202449),	-- Heartfire Sentinel's Waistguard
+						}),
+						cl(PRIEST, {
+							i(202538),	-- Cuffs of the Furnace Seraph
+							i(202544),	-- Sabatons of the Furnace Seraph
+							i(202539),	-- Sash of the Furnace Seraph
+							i(202537),	-- Shroud of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(202493),	-- Lurking Specter's Armwraps
+							i(202492),	-- Lurking Specter's Capelet
+							i(202494),	-- Lurking Specter's Edgeband
+							i(202499),	-- Lurking Specter's Tabi
+						}),
+						cl(SHAMAN, {
+							i(202467),	-- Faulds of the Cinderwolf
+							i(202465),	-- Pelisse of the Cinderwolf
+							i(202466),	-- Runebraces of the Cinderwolf
+							i(202472),	-- Sollerets of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(202535),	-- Sandals of the Sinister Savant
+							i(202528),	-- Shawl of the Sinister Savant
+							i(202530),	-- Skullstrap of the Sinister Savant
+							i(202529),	-- Wristwraps of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202440),	-- Insignia of the Onyx Crucible
+							i(202445),	-- Ironstriders of the Onyx Crucible
+							i(202438),	-- Manteau of the Onyx Crucible
+							i(202439),	-- Warbands of the Onyx Crucible
+						}),
+					})),
+				}),
+				header(HEADERS.Item, 205878, {	-- Obsidian Aspectral Earthstone
+					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6896 }, {
+						cl(DEMONHUNTER, {
+							i(205845),	-- Kinslayer's Hood
+							i(205843),	-- Kinslayer's Tainted Spaulders
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(202548),	-- Underlight Conjurer's Charmbelt
+						}),
+						cl(PALADIN, {
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205828),	-- Lurking Specter's Shoulderblades
+						}),
+						cl(SHAMAN, {
+							i(202467),	-- Faulds of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
+					d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6894 }, {
+						cl(DEMONHUNTER, {
+							i(205845),	-- Kinslayer's Hood
+							i(205843),	-- Kinslayer's Tainted Spaulders
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(202548),	-- Underlight Conjurer's Charmbelt
+						}),
+						cl(PALADIN, {
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205828),	-- Lurking Specter's Shoulderblades
+						}),
+						cl(SHAMAN, {
+							i(202467),	-- Faulds of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
+					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6897 }, {
+						cl(DEMONHUNTER, {
+							i(205845),	-- Kinslayer's Hood
+							i(205843),	-- Kinslayer's Tainted Spaulders
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(202548),	-- Underlight Conjurer's Charmbelt
+						}),
+						cl(PALADIN, {
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205828),	-- Lurking Specter's Shoulderblades
+						}),
+						cl(SHAMAN, {
+							i(202467),	-- Faulds of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
+					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6895 }, {
+						cl(DEMONHUNTER, {
+							i(205845),	-- Kinslayer's Hood
+							i(205843),	-- Kinslayer's Tainted Spaulders
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(202548),	-- Underlight Conjurer's Charmbelt
+						}),
+						cl(PALADIN, {
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205828),	-- Lurking Specter's Shoulderblades
+						}),
+						cl(SHAMAN, {
+							i(202467),	-- Faulds of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
+					n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+						cl(DEMONHUNTER, {
+							i(205845),	-- Kinslayer's Hood
+							i(205843),	-- Kinslayer's Tainted Spaulders
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(202548),	-- Underlight Conjurer's Charmbelt
+						}),
+						cl(PALADIN, {
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205828),	-- Lurking Specter's Shoulderblades
+						}),
+						cl(SHAMAN, {
+							i(202467),	-- Faulds of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
+					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+						cl(DEMONHUNTER, {
+							i(205845),	-- Kinslayer's Hood
+							i(205843),	-- Kinslayer's Tainted Spaulders
+						}),
+						cl(DRUID, {
+							i(205840),	-- Bough of the Autumn Blaze
+							i(205838),	-- Mantle of the Autumn Blaze
+						}),
+						cl(EVOKER, {
+							i(205825),	-- Crown of Obsidian Secrets
+							i(205823),	-- Wingspan of Obsidian Secrets
+						}),
+						cl(HUNTER, {
+							i(205820),	-- Ashen Predator's Faceguard
+							i(205818),	-- Ashen Predator's Trophy
+						}),
+						cl(MAGE, {
+							i(205858),	-- Underlight Conjurer's Aurora
+							i(202548),	-- Underlight Conjurer's Charmbelt
+						}),
+						cl(PALADIN, {
+							i(205805),	-- Heartfire Sentinel's Forgehelm
+							i(205803),	-- Heartfire Sentinel's Steelwings
+						}),
+						cl(PRIEST, {
+							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
+							i(205855),	-- Mask of the Furnace Seraph
+						}),
+						cl(ROGUE, {
+							i(205828),	-- Lurking Specter's Shoulderblades
+						}),
+						cl(SHAMAN, {
+							i(202467),	-- Faulds of the Cinderwolf
+							i(205815),	-- Spangenhelm of the Cinderwolf
+							i(205813),	-- Thunderpads of the Cinderwolf
+						}),
+						cl(WARLOCK, {
+							i(205848),	-- Amice of the Sinister Savant
+							i(205850),	-- Grimhorns of the Sinister Savant
+						}),
+						cl(WARRIOR, {
+							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
+							i(205798),	-- Pauldrons of the Onyx Crucible
+							i(205800),	-- Thraexhelm of the Onyx Crucible
+						}),
+					})),
 				}),
 			})),
 		}),

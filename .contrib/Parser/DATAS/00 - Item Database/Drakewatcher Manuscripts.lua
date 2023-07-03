@@ -357,7 +357,8 @@ i(203354, 73845);	-- Winding Slitherdrake: White Scales
 i(203304, 73792);	-- Winding Slitherdrake: Yellow and Silver Armor
 i(203355, 73846);	-- Winding Slitherdrake: Yellow Scales
 -- Special --
-i(205876, 75967);	-- Highland Drake: Embodiment of the Hellforged
+i(205876, 75967);	-- Highland Drake: Embodiment of the Hellforged [Mythic]
+i(206955, 75967);	-- Highland Drake: Embodiment of the Hellforged [LFR, Normal, Heroic]
 i(205865, 75941);	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator
 
 ------------------

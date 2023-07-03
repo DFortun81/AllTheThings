@@ -117,271 +117,271 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 };
 ]]--
 COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
-	i(67095, {	-- Pattern: Assassin's Chestplate
+	i(67095, {	-- Pattern: Assassin's Chestplate (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67070, {	-- Pattern: Belt of Nefarious Whispers
+	i(67070, {	-- Pattern: Belt of Nefarious Whispers (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67084, {	-- Pattern: Charscale Leg Armor
+	i(67084, {	-- Pattern: Charscale Leg Armor (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67094, {	-- Pattern: Chestguard of Nature's Fury
+	i(67094, {	-- Pattern: Chestguard of Nature's Fury (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67073, {	-- Pattern: Corded Viper Belt
+	i(67073, {	-- Pattern: Corded Viper Belt (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67100, {	-- Pattern: Dragonkiller Tunic
+	i(67100, {	-- Pattern: Dragonkiller Tunic (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(68193, {	-- Pattern: Dragonscale Leg Armor
+	i(68193, {	-- Pattern: Dragonscale Leg Armor (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(71721, {	-- Pattern: Drakehide Leg Armor
+	i(71721, {	-- Pattern: Drakehide Leg Armor (RECIPE!)
+		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
+		["timeline"] = { "added 4.0.3.13287" },	-- This may be 4.2.0.14333 per wowhead, not sure how to confirm. -NamexFace
+		["requireSkill"] = LEATHERWORKING,
+		["f"] = RECIPES,
+	}),
+	i(67068, {	-- Pattern: Lightning Lash (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67068, {	-- Pattern: Lightning Lash
+	i(67082, {	-- Pattern: Razor-Edged Cloak (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67082, {	-- Pattern: Razor-Edged Cloak
+	i(67072, {	-- Pattern: Stormleather Sash (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67072, {	-- Pattern: Stormleather Sash
+	i(67083, {	-- Pattern: Twilight Dragonscale Cloak (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67083, {	-- Pattern: Twilight Dragonscale Cloak
+	i(67096, {	-- Pattern: Twilight Scale Chestguard (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67096, {	-- Pattern: Twilight Scale Chestguard
+	i(67064, {	-- Pattern: Vicious Charscale Belt (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67064, {	-- Pattern: Vicious Charscale Belt
+	i(67063, {	-- Pattern: Vicious Charscale Boots (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67063, {	-- Pattern: Vicious Charscale Boots
+	i(67049, {	-- Pattern: Vicious Charscale Bracers (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67049, {	-- Pattern: Vicious Charscale Bracers
+	i(67090, {	-- Pattern: Vicious Charscale Chest (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67090, {	-- Pattern: Vicious Charscale Chest
+	i(67053, {	-- Pattern: Vicious Charscale Gloves (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67053, {	-- Pattern: Vicious Charscale Gloves
+	i(67091, {	-- Pattern: Vicious Charscale Helm (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67091, {	-- Pattern: Vicious Charscale Helm
+	i(67079, {	-- Pattern: Vicious Charscale Legs (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67079, {	-- Pattern: Vicious Charscale Legs
+	i(67078, {	-- Pattern: Vicious Charscale Shoulders (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67078, {	-- Pattern: Vicious Charscale Shoulders
+	i(67080, {	-- Pattern: Vicious Dragonscale Belt (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67080, {	-- Pattern: Vicious Dragonscale Belt
+	i(67065, {	-- Pattern: Vicious Dragonscale Boots (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67065, {	-- Pattern: Vicious Dragonscale Boots
+	i(67054, {	-- Pattern: Vicious Dragonscale Bracers (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67054, {	-- Pattern: Vicious Dragonscale Bracers
+	i(67093, {	-- Pattern: Vicious Dragonscale Chest (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67093, {	-- Pattern: Vicious Dragonscale Chest
+	i(67066, {	-- Pattern: Vicious Dragonscale Gloves (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67066, {	-- Pattern: Vicious Dragonscale Gloves
+	i(67081, {	-- Pattern: Vicious Dragonscale Helm (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67081, {	-- Pattern: Vicious Dragonscale Helm
+	i(67092, {	-- Pattern: Vicious Dragonscale Legs (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67092, {	-- Pattern: Vicious Dragonscale Legs
+	i(67055, {	-- Pattern: Vicious Dragonscale Shoulders (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67055, {	-- Pattern: Vicious Dragonscale Shoulders
+	i(67076, {	-- Pattern: Vicious Leather Belt (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67076, {	-- Pattern: Vicious Leather Belt
+	i(67060, {	-- Pattern: Vicious Leather Boots (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67060, {	-- Pattern: Vicious Leather Boots
+	i(67046, {	-- Pattern: Vicious Leather Bracers (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67046, {	-- Pattern: Vicious Leather Bracers
+	i(67087, {	-- Pattern: Vicious Leather Chest (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67087, {	-- Pattern: Vicious Leather Chest
+	i(67048, {	-- Pattern: Vicious Leather Gloves (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67048, {	-- Pattern: Vicious Leather Gloves
+	i(67077, {	-- Pattern: Vicious Leather Helm (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67077, {	-- Pattern: Vicious Leather Helm
+	i(67089, {	-- Pattern: Vicious Leather Legs (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67089, {	-- Pattern: Vicious Leather Legs
+	i(67062, {	-- Pattern: Vicious Leather Shoulders (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67062, {	-- Pattern: Vicious Leather Shoulders
+	i(67044, {	-- Pattern: Vicious Wyrmhide Belt (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67044, {	-- Pattern: Vicious Wyrmhide Belt
+	i(67058, {	-- Pattern: Vicious Wyrmhide Boots (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67058, {	-- Pattern: Vicious Wyrmhide Boots
+	i(67042, {	-- Pattern: Vicious Wyrmhide Bracers (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
+	i(67075, {	-- Pattern: Vicious Wyrmhide Chest (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67075, {	-- Pattern: Vicious Wyrmhide Chest
+	i(67056, {	-- Pattern: Vicious Wyrmhide Gloves (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
+	i(67086, {	-- Pattern: Vicious Wyrmhide Helm (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67086, {	-- Pattern: Vicious Wyrmhide Helm
+	i(67085, {	-- Pattern: Vicious Wyrmhide Legs (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
-	i(67085, {	-- Pattern: Vicious Wyrmhide Legs
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
-	}),
-	i(67074, {	-- Pattern: Vicious Wyrmhide Shoulders
+	i(67074, {	-- Pattern: Vicious Wyrmhide Shoulders (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
@@ -521,7 +521,6 @@ NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["time
 	}),
 }));
 SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	r(309038),	-- Shadowlands Leatherworking
 	n(ARMOR, {
 		r(309213, {	-- Boneshatter Armguards [Rank 1]
 			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
@@ -606,9 +605,7 @@ SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["time
 	}),
 	filter(MISC, {
 		r(343195),	-- Crafter's Mark I
-		r(308896),	-- Callous Hide
 		r(324087),	-- Desolate Armor Kit
-		r(308895),	-- Desolate Leather
 		r(309173),	-- Drums of Deathly Ferocity
 		r(308897),	-- Heavy Callous Hide
 		r(308899),	-- Heavy Desolate Leather

@@ -77,25 +77,31 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60578, { -- Grand Magus Telestra
 						["_encounter"] = { 618, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45865),	-- Raiments of the Corrupted
+							i(45707),	-- Shieldwall of the Breaker
 						},
 					}),
 					crit(60576, { -- Anomalus
 						["_encounter"] = { 619, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45291),	-- Combustion Bracers
+							i(45292),	-- Energy Siphon
 						},
 					}),
 					crit(60575, { -- Ormorok the Tree-Shaper
 						["_encounter"] = { 620, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45287),	-- Firesoul
+							i(45288),	-- Firestrider Chestguard
 						},
 					}),
 					crit(60577, { -- Keristrasza
 						["_encounter"] = { 621, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(45283),	-- Flamewatch Armguards
+							i(45282),	-- Ironsoul
+							i(45286),	-- Pyrite Infuser
 						},
 					}),
 				})),
@@ -336,6 +342,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39394),	-- Charmed Cierge
 								i(39398),	-- Massive Skeletal Ribcage
 								i(39390),	-- Resurgent Phantom Bindings
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45832),	-- Mantle of the Preserver
+								i(45713),	-- Nurturing Touch
 							})),
 							-- #endif
 						},

@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(COVENANT_SANCTUMS, {
 		["description"] = "These rewards are shared across Covenants.",
 		["g"] = {
@@ -203,7 +202,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 						["description"] = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
 					}),
 					i(190178, {	-- Pouch of Protogenic Provisions
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 				},
 			}),
@@ -257,7 +256,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
-							["timeline"] = { "added 9.2.0" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 					},
 				}),
@@ -302,7 +301,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
-							["timeline"] = { "added 9.2.0" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 					},
 				}),
@@ -341,7 +340,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 			})),
 		},
 	}),
-}));
+})));
 
 root(ROOTS.HiddenQuestTriggers, {
 	-- Misson Table

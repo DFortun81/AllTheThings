@@ -413,14 +413,304 @@ i(0, 53687);	-- Verdant Tundra Cap
 i(0, 53690);	-- Verdant Tundra Shoulderpads
 
 ------------------
+-- PATCH 3.4.0 --
+------------------
+
+------------------
+-- PATCH 4.0.3 --
+------------------
+-- TRAINER --
+i(0, 78438);	-- Cloak of Beasts
+i(0, 78439);	-- Cloak of War
+i(0, 78428);	-- Darkbrand Chestguard
+i(0, 78416);	-- Darkbrand Belt
+i(0, 78407);	-- Darkbrand Boots
+i(0, 78424);	-- Darkbrand Helm
+i(0, 78433);	-- Darkbrand Leggings
+i(0, 78411);	-- Darkbrand Shoulders
+i(0, 78405);	-- Hardened Scale Cloak
+i(0, 78437);	-- Heavy Savage Armor Kit
+i(0, 78436);	-- Heavy Savage Leather
+i(0, 81199);	-- Leatherworking (Illustrious) [REMOVED: 8.0.1]
+i(0, 78379);	-- Savage Armor Kit
+i(0, 78380);	-- Savage Cloak
+i(0, 84950);	-- Savage Leather
+i(0, 78419);	-- Scorched Leg Armor
+i(0, 78423);	-- Tsunami Chestguard
+i(0, 78388);	-- Tsunami Bracers
+i(0, 78396);	-- Tsunami Belt
+i(0, 78410);	-- Tsunami Boots
+i(0, 78406);	-- Tsunami Gloves
+i(0, 78432);	-- Tsunami Helm
+i(0, 78427);	-- Tsunami Leggings
+i(0, 78415);	-- Tsunami Shoulders
+i(0, 78420);	-- Twilight Leg Armor
+-- ITEM --
+i(67095, 78488);	-- Assassin's Chestplate
+i(67070, 78461);	-- Belt of Nefarious Whispers
+i(67084, 78478);	-- Charscale Leg Armor
+i(67094, 78487);	-- Chestguard of Nature's Fury
+i(67073, 78463);	-- Corded Viper Belt
+i(67100, 78490);	-- Dragonkiller Tunic
+i(68193, 78477);	-- Dragonscale Leg Armor
+i(67068, 78460);	-- Lightning Lash
+i(67082, 78475);	-- Razor-Edged Cloak
+i(67072, 78462);	-- Stormleather Sash
+i(67083, 78476);	-- Twilight Dragonscale Cloak
+i(67096, 78489);	-- Twilight Scale Chestguard
+i(67064, 78457);	-- Vicious Charscale Belt
+i(67063, 78456);	-- Vicious Charscale Boots
+i(67049, 78448);	-- Vicious Charscale Bracers
+i(67090, 78483);	-- Vicious Charscale Chest
+i(67053, 78449);	-- Vicious Charscale Gloves
+i(67091, 78484);	-- Vicious Charscale Helm
+i(67079, 78471);	-- Vicious Charscale Legs
+i(67078, 78470);	-- Vicious Charscale Shoulders
+i(67080, 78473);	-- Vicious Dragonscale Belt
+i(67065, 78458);	-- Vicious Dragonscale Boots
+i(67054, 78450);	-- Vicious Dragonscale Bracers
+i(67093, 78486);	-- Vicious Dragonscale Chest
+i(67066, 78459);	-- Vicious Dragonscale Gloves
+i(67081, 78474);	-- Vicious Dragonscale Helm
+i(67092, 78485);	-- Vicious Dragonscale Legs
+i(67055, 78451);	-- Vicious Dragonscale Shoulders
+i(67076, 78468);	-- Vicious Leather Belt
+i(67060, 78454);	-- Vicious Leather Boots
+i(67046, 78446);	-- Vicious Leather Bracers
+i(67087, 78481);	-- Vicious Leather Chest
+i(67048, 78447);	-- Vicious Leather Gloves
+i(67077, 78469);	-- Vicious Leather Helm
+i(67089, 78482);	-- Vicious Leather Legs
+i(67062, 78455);	-- Vicious Leather Shoulders
+i(67044, 78445);	-- Vicious Wyrmhide Belt
+i(67058, 78453);	-- Vicious Wyrmhide Boots
+i(67042, 78444);	-- Vicious Wyrmhide Bracers
+i(67075, 78467);	-- Vicious Wyrmhide Chest
+i(67056, 78452);	-- Vicious Wyrmhide Gloves
+i(67086, 78480);	-- Vicious Wyrmhide Helm
+i(67085, 78479);	-- Vicious Wyrmhide Legs
+i(67074, 78464);	-- Vicious Wyrmhide Shoulders
+-- REMOVED --
+i(66999, 78398);	-- Darkbrand Bracers
+i(67000, 78399);	-- Darkbrand Gloves
+i(67017, 78418);	-- Razorshell Belt
+i(67009, 78409);	-- Razorshell Boots
+i(67003, 78402);	-- Razorshell Bracers
+i(67035, 78435);	-- Razorshell Chest
+i(67013, 78414);	-- Razorshell Gloves
+i(67023, 78426);	-- Razorshell Helm
+i(67030, 78430);	-- Razorshell Leggings
+i(67004, 78404);	-- Razorshell Shoulders
+i(0, 74493);	-- Savage Leather
+i(67012, 78413);	-- Windbound Belt
+i(67008, 78408);	-- Windbound Boots
+i(67001, 78400);	-- Windbound Bracers
+i(67028, 78429);	-- Windbound Chest
+i(67002, 78401);	-- Windbound Gloves
+i(67034, 78434);	-- Windbound Helm
+i(67022, 78425);	-- Windbound Leggings
+i(67016, 78417);	-- Windbound Shoulders
+
+------------------
+-- PATCH 4.2.0 --
+------------------
+-- TRAINER --
+i(0, 99536);	-- Vicious Fur Cloak
+i(0, 99535);	-- Vicious Hide Cloak
+-- ITEM --
+i(69962, 99446);	-- Clutches of Evil
+i(69960, 99443);	-- Dragonfire Gloves
+i(71721, 101599);	-- Drakehide Leg Armor
+i(69971, 99455);	-- Earthen Scale Sabatons
+i(69974, 99458);	-- Ethereal Footfalls
+i(69972, 99456);	-- Footwraps of Quenched Fire
+i(69961, 99445);	-- Gloves of Unforgiving Flame
+i(69963, 99447);	-- Heavenly Gloves of the Moon
+i(70174, 100583);	-- Royal Scribe's Satchel
+i(69973, 99457);	-- Treads of the Craft
+i(70175, 100586);	-- Triple-Reinforced Mining Bag
+
+------------------
+-- PATCH 4.3.0 --
+------------------
+-- ITEM --
+i(72006, 101935);	-- Bladeshadow Leggings
+i(72010, 101940);	-- Bladeshadow Wristguards
+i(72008, 101937);	-- Bracers of Flowing Serenity
+i(72011, 101941);	-- Bracers of the Hunter-Killer
+i(72005, 101934);	-- Deathscale Leggings
+i(71999, 101933);	-- Leggings of Nature's Champion
+i(72007, 101936);	-- Rended Earth Leggings
+i(72009, 101939);	-- Thundering Deathscale Wristguards
+
+------------------
+-- PATCH 5.0.4 --
+------------------
+-- TRAINER --
+i(0, 124126);	-- Brutal Leg Armor
+i(0, 124627);	-- Exotic Leather
+i(0, 124578);	-- Misthide Belt
+i(0, 124577);	-- Misthide Boots
+i(0, 124576);	-- Misthide Bracers
+i(0, 124573);	-- Misthide Chestguard
+i(0, 124635);	-- Misthide Drape
+i(0, 124574);	-- Misthide Gloves
+i(0, 124571);	-- Misthide Helm
+i(0, 124575);	-- Misthide Leggings
+i(0, 124572);	-- Misthide Shoulders
+i(0, 124637);	-- Quick Strike Cloak
+i(0, 124628);	-- Sha Armor Kit
+i(0, 124124);	-- Sha-Touched Leg Armor
+i(0, 124586);	-- Stormscale Belt
+i(0, 124585);	-- Stormscale Boots
+i(0, 124584);	-- Stormscale Bracers
+i(0, 124581);	-- Stormscale Chestguard
+i(0, 124636);	-- Stormscale Drape
+i(0, 124582);	-- Stormscale Gloves
+i(0, 124579);	-- Stormscale Helm
+i(0, 124583);	-- Stormscale Leggings
+i(0, 124580);	-- Stormscale Shoulders
+i(0, 124125);	-- Toughened Leg Armor
+-- ITEM --
+i(86235, 124127);	-- Angerhide Leg Armor
+i(86237, 124625);	-- Chestguard of Earthen Harmony
+i(86238, 124638);	-- Chestguard of Nemeses
+i(86240, 124618);	-- Contender's Dragonscale Belt
+i(86241, 124617);	-- Contender's Dragonscale Boots
+i(86242, 124616);	-- Contender's Dragonscale Bracers
+i(86243, 124613);	-- Contender's Dragonscale Chestguard
+i(86244, 124614);	-- Contender's Dragonscale Gloves
+i(86245, 124611);	-- Contender's Dragonscale Helm
+i(86246, 124615);	-- Contender's Dragonscale Leggings
+i(86247, 124612);	-- Contender's Dragonscale Shoulders
+i(86248, 124610);	-- Contender's Leather Belt
+i(86249, 124609);	-- Contender's Leather Boots
+i(86250, 124608);	-- Contender's Leather Bracers
+i(86251, 124605);	-- Contender's Leather Chestguard
+i(86252, 124606);	-- Contender's Leather Gloves
+i(86253, 124603);	-- Contender's Leather Helm
+i(86254, 124607);	-- Contender's Leather Leggings
+i(86255, 124604);	-- Contender's Leather Shoulders
+i(86256, 124602);	-- Contender's Scale Belt
+i(86257, 124601);	-- Contender's Scale Boots
+i(86258, 124600);	-- Contender's Scale Bracers
+i(86259, 124597);	-- Contender's Scale Chestguard
+i(86260, 124598);	-- Contender's Scale Gloves
+i(86261, 124595);	-- Contender's Scale Helm
+i(86262, 124599);	-- Contender's Scale Leggings
+i(86263, 124596);	-- Contender's Scale Shoulders
+i(86264, 124594);	-- Contender's Wyrmhide Belt
+i(86265, 124593);	-- Contender's Wyrmhide Boots
+i(86266, 124592);	-- Contender's Wyrmhide Bracers
+i(86267, 124589);	-- Contender's Wyrmhide Chestguard
+i(86268, 124590);	-- Contender's Wyrmhide Gloves
+i(86269, 124587);	-- Contender's Wyrmhide Helm
+i(86271, 124588);	-- Contender's Wyrmhide Shoulders
+i(86270, 124591);	-- Contender's Wyrmhide Leggings
+i(86272, 124643);	-- Fists of Lightning
+i(86273, 124626);	-- Gloves of Earthen Harmony
+i(86274, 124619);	-- Greyshadow Chestguard
+i(86275, 124620);	-- Greyshadow Gloves
+i(86276, 124128);	-- Ironscale Leg Armor
+i(86277, 124624);	-- Lifekeeper's Gloves
+i(86278, 124623);	-- Lifekeeper's Robe
+i(86279, 124641);	-- Liferuned Leather Gloves
+i(86280, 124639);	-- Murderer's Gloves
+i(86281, 124640);	-- Nightfire Robe
+i(86283, 124644);	-- Raiment of Blood and Bone
+i(86284, 124645);	-- Raven Lord's Gloves
+i(86295, 124129);	-- Shadowleather Leg Armor
+i(86297, 124642);	-- Stormbreaker Chestguard
+i(86308, 124622);	-- Wildblood Gloves
+i(86309, 124621);	-- Wildblood Vest
+-- REMOVED --
+i(0, 102366);	-- Exotic Leather
+i(0, 110423);	-- Leatherworking (Zen Master) (8.0.1)
+------------------
 -- PATCH 5.2.0 --
 ------------------
+-- TRAINER --
+i(0, 131865);	-- Magnificent Hide
 -- ITEM --
 i(95467, 140040);	-- Magnificence of Leather
 i(95468, 140041);	-- Magnificence of Scales
 -- DISCOVERY --
 i(0, 138596);	-- Cloud Serpent Helm
 i(0, 138595);	-- Cloud Serpent Sabatons
+i(0, 137866);	-- Crafted Dreadful Gladiator's Armbands of Meditation
+i(0, 137865);	-- Crafted Dreadful Gladiator's Armbands of Prowess
+i(0, 137832);	-- Crafted Dreadful Gladiator's Armwraps of Accuracy
+i(0, 137845);	-- Crafted Dreadful Gladiator's Armwraps of Alacrity
+i(0, 137822);	-- Crafted Dreadful Gladiator's Belt of Cruelty
+i(0, 137814);	-- Crafted Dreadful Gladiator's Belt of Meditation
+i(0, 137816);	-- Crafted Dreadful Gladiator's Bindings of Meditation
+i(0, 137824);	-- Crafted Dreadful Gladiator's Bindings of Prowess
+i(0, 137831);	-- Crafted Dreadful Gladiator's Boots of Alacrity
+i(0, 137844);	-- Crafted Dreadful Gladiator's Boots of Cruelty
+i(0, 137857);	-- Crafted Dreadful Gladiator's Chain Armor
+i(0, 137858);	-- Crafted Dreadful Gladiator's Chain Gauntlets
+i(0, 137859);	-- Crafted Dreadful Gladiator's Chain Helm
+i(0, 137860);	-- Crafted Dreadful Gladiator's Chain Leggings
+i(0, 137861);	-- Crafted Dreadful Gladiator's Chain Spaulders
+i(0, 137838);	-- Crafted Dreadful Gladiator's Copperskin Gloves
+i(0, 137839);	-- Crafted Dreadful Gladiator's Copperskin Helm
+i(0, 137840);	-- Crafted Dreadful Gladiator's Copperskin Legguards
+i(0, 137841);	-- Crafted Dreadful Gladiator's Copperskin Spaulders
+i(0, 137842);	-- Crafted Dreadful Gladiator's Copperskin Tunic
+i(0, 137809);	-- Crafted Dreadful Gladiator's Dragonhide Gloves
+i(0, 137810);	-- Crafted Dreadful Gladiator's Dragonhide Helm
+i(0, 137811);	-- Crafted Dreadful Gladiator's Dragonhide Legguards
+i(0, 137812);	-- Crafted Dreadful Gladiator's Dragonhide Robes
+i(0, 137813);	-- Crafted Dreadful Gladiator's Dragonhide Spaulders
+i(0, 137833);	-- Crafted Dreadful Gladiator's Ironskin Gloves
+i(0, 137834);	-- Crafted Dreadful Gladiator's Ironskin Helm
+i(0, 137835);	-- Crafted Dreadful Gladiator's Ironskin Legguards
+i(0, 137836);	-- Crafted Dreadful Gladiator's Ironskin Spaulders
+i(0, 137837);	-- Crafted Dreadful Gladiator's Ironskin Tunic
+i(0, 137817);	-- Crafted Dreadful Gladiator's Kodohide Gloves
+i(0, 137818);	-- Crafted Dreadful Gladiator's Kodohide Helm
+i(0, 137819);	-- Crafted Dreadful Gladiator's Kodohide Legguards
+i(0, 137820);	-- Crafted Dreadful Gladiator's Kodohide Robes
+i(0, 137821);	-- Crafted Dreadful Gladiator's Kodohide Spaulders
+i(0, 137823);	-- Crafted Dreadful Gladiator's Leather Footguards of Alacrity
+i(0, 137815);	-- Crafted Dreadful Gladiator's Leather Footguards of Meditation
+i(0, 137847);	-- Crafted Dreadful Gladiator's Leather Gloves
+i(0, 137848);	-- Crafted Dreadful Gladiator's Leather Helm
+i(0, 137849);	-- Crafted Dreadful Gladiator's Leather Legguards
+i(0, 137850);	-- Crafted Dreadful Gladiator's Leather Spaulders
+i(0, 137846);	-- Crafted Dreadful Gladiator's Leather Tunic
+i(0, 137872);	-- Crafted Dreadful Gladiator's Linked Armor
+i(0, 137873);	-- Crafted Dreadful Gladiator's Linked Gauntlets
+i(0, 137874);	-- Crafted Dreadful Gladiator's Linked Helm
+i(0, 137875);	-- Crafted Dreadful Gladiator's Linked Leggings
+i(0, 137876);	-- Crafted Dreadful Gladiator's Linked Spaulders
+i(0, 137852);	-- Crafted Dreadful Gladiator's Links of Accuracy
+i(0, 137851);	-- Crafted Dreadful Gladiator's Links of Cruelty
+i(0, 137878);	-- Crafted Dreadful Gladiator's Mail Armor
+i(0, 137863);	-- Crafted Dreadful Gladiator's Mail Footguards of Alacrity
+i(0, 137864);	-- Crafted Dreadful Gladiator's Mail Footguards of Meditation
+i(0, 137879);	-- Crafted Dreadful Gladiator's Mail Gauntlets
+i(0, 137880);	-- Crafted Dreadful Gladiator's Mail Helm
+i(0, 137881);	-- Crafted Dreadful Gladiator's Mail Leggings
+i(0, 137882);	-- Crafted Dreadful Gladiator's Mail Spaulders
+i(0, 137867);	-- Crafted Dreadful Gladiator's Ringmail Armor
+i(0, 137868);	-- Crafted Dreadful Gladiator's Ringmail Gauntlets
+i(0, 137869);	-- Crafted Dreadful Gladiator's Ringmail Helm
+i(0, 137870);	-- Crafted Dreadful Gladiator's Ringmail Leggings
+i(0, 137871);	-- Crafted Dreadful Gladiator's Ringmail Spaulders
+i(0, 137854);	-- Crafted Dreadful Gladiator's Sabatons of Alacrity
+i(0, 137853);	-- Crafted Dreadful Gladiator's Sabatons of Cruelty
+i(0, 137843);	-- Crafted Dreadful Gladiator's Waistband of Accuracy
+i(0, 137830);	-- Crafted Dreadful Gladiator's Waistband of Cruelty
+i(0, 137877);	-- Crafted Dreadful Gladiator's Waistguard of Cruelty
+i(0, 137862);	-- Crafted Dreadful Gladiator's Waistguard of Meditation
+i(0, 137856);	-- Crafted Dreadful Gladiator's Wristguards of Accuracy
+i(0, 137855);	-- Crafted Dreadful Gladiator's Wristguards of Alacrity
+i(0, 137825);	-- Crafted Dreadful Gladiator's Wyrmhide Gloves
+i(0, 137826);	-- Crafted Dreadful Gladiator's Wyrmhide Helm
+i(0, 137827);	-- Crafted Dreadful Gladiator's Wyrmhide Legguards
+i(0, 137828);	-- Crafted Dreadful Gladiator's Wyrmhide Robes
+i(0, 137829);	-- Crafted Dreadful Gladiator's Wyrmhide Spaulders
 i(0, 138592);	-- Dreadrunner Helm
 i(0, 138591);	-- Dreadrunner Sabatons
 i(0, 140185);	-- Magnificent Hide Pack

@@ -18,6 +18,8 @@ i(208096),	-- Familiar Journal
 10.1.5.50006
 i(206268),	-- Ethereal Transmogrifier
 i(208186),	-- Boffins
+10.1.5.50130
+i(208415),	-- Stasis Sand
 
 
 
@@ -28,3 +30,5 @@ Missing in ToyDB.lua
 i(206696),	--
 i(207730),	--
 i(208092),	--
+10.1.5.50130
+i(208415),	-- Stasis Sand

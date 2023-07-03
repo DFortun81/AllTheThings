@@ -55,22 +55,6 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		ach(9217, {	-- Operation Counterattack (H)
 			["races"] = HORDE_ONLY,
 		}),
-		ach(9256, {	-- Rescue Operation (A)
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				crit(1),	-- Kommandant Jobby Kurzsicht
-				crit(2),	-- Marschall Andrea DeSousa
-				crit(3),	-- Feldmarschall Kerwin
-			},
-		}),
-		ach(9257, {	-- Rescue Operation (H)
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				crit(1),	-- Warlord Jugan
-				crit(2),	-- General Lizzie Heartbane
-				crit(3),	-- Marshal Lyrdrea Daybreaker
-			},
-		}),
 		ach(9225, {	-- Take Them Out (A)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {

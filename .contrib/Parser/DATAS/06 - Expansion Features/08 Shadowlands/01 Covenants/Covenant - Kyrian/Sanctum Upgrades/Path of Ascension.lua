@@ -149,8 +149,7 @@ local CHAMPIONS_PELT = 180478;
 local ELYSIAN_FEATHERS = 180477;
 local NIGHTFORGED_STEEL = 180595;
 local SOUL_MIRROR = 179378;
-
-root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_bastion01",
@@ -158,7 +157,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				n(PATH_OF_ASCENSION, {
 					["maps"] = { 1711 },	-- Path of Ascension Coliseum
 					["g"] = {
-						currency(1819, {	-- Medallion of Service
+						currency(MEDALLION_OF_SERVICE, {
 							["description"] = "This is granted from all types of activities in the Shadowlands.",
 						}),
 						n(ACHIEVEMENTS, {
@@ -414,7 +413,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 											{ "i", NIGHTFORGED_STEEL, 16 },
 										},
 									}),
-									currency(1819),	-- Medallion of Service (No Cost since it will just go around in circle(see vendor))
+									currency(MEDALLION_OF_SERVICE),
 									i(181166, {	-- Sigil of Haunting Memories
 										["cost"] = {
 											{ "i", CALLOUSED_BONE, 8 },

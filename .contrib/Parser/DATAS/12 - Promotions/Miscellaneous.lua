@@ -70,7 +70,9 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		["timeline"] = { "added 5.0.4.16004" },
 	}),
 	i(76755, {	-- Tyrael's Charger (MOUNT!)
+		-- #if BEFORE DF
 		["description"] = "Reward from the Diablo III Annual Pass promotion. Additionally, it was available on the Taiwan store.",
+		-- #endif
 		["timeline"] = { "added 4.3.0.15005", "removed 4.3.4.15595" },
 	}),
 	ach(414, {	-- Tyrael's Hilt

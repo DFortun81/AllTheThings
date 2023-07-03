@@ -1817,7 +1817,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(8320, {	-- Twilight Geolords
 					["qg"] = 15270,	-- Huum Wildmane
+					-- #if AFTER CATA
+					["coord"] = { 53.2, 35.0, SILITHUS },
+					-- #else
 					["coord"] = { 48.7, 37.9, SILITHUS },
+					-- #endif
 					["lvl"] = lvlsquish(60, 60, 15),
 					["groups"] = {
 						objective(1, {	-- 0/10 Twilight Geolord slain

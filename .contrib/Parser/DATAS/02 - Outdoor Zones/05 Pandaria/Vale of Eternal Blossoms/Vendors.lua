@@ -283,13 +283,14 @@ root(ROOTS.Zones, {
 				}),
 				n(66973, {	-- Kai Featherfall <Phoenix Egg Trader>
 					["coord"] = { 82.2, 34.0, VALE_OF_ETERNAL_BLOSSOMS },
-					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME},{
-						i(90045, {	-- Ancestral Phoenix Egg
-							i(89154),	-- Crimson Pandaren Phoenix (MOUNT!)
-							i(90710),	-- Ashen Pandaren Phoenix (MOUNT!)
-							i(90711),	-- Emerald Pandaren Phoenix (MOUNT!)
-							i(90712),	-- Violet Pandaren Phoenix (MOUNT!)
-						}),
+					["g"] = sharedData({
+						["cost"] = {{"i", 90045, 1 }},	-- 1x Ancestral Phoenix Egg
+						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+					}, {
+						i(89154),	-- Crimson Pandaren Phoenix (MOUNT!)
+						i(90710),	-- Ashen Pandaren Phoenix (MOUNT!)
+						i(90711),	-- Emerald Pandaren Phoenix (MOUNT!)
+						i(90712),	-- Violet Pandaren Phoenix (MOUNT!)
 					}),
 				}),
 				n(65172, {	-- Len at Arms <Adventuring Supplies>

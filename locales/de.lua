@@ -259,7 +259,7 @@ ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TO
 			L.MODE = "Modus";
 			L.TITLE_COMPLETIONIST = "Vervollständiger ";
 			L.TITLE_UNIQUE_APPEARANCE = "Einzigartig ";
-			L.TITLE_DEBUG = app.ccColors.Warning .. "Debug|R ";
+			L.TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
 			L.TITLE_ACCOUNT = app.ccColors.Account.."Account|R ";
 			L.TITLE_MAIN_ONLY = " (Nur Hauptcharakter)";
 			L.TITLE_NONE_THINGS = "Keins der Dinge ";
@@ -277,7 +277,7 @@ ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TO
 		L.PATREON_BUTTON_TOOLTIP = "Klicke auf diese Schaltfläche, um den Link für das ATT Patreon zu kopieren.\n\nHier könnt Ihr sehen, wie Ihr das Addon Finanziell unterstützen könnt!";
 		--TODO: L.MERCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
 		--TODO: L.MODE_EXPLAIN_LABEL = 	"|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		L.DEBUG_MODE = app.ccColors.Warning.."Debug Modus|r (Zeig alles)";
+		L.DEBUG_MODE = app.ccColors.Red.."Debug Modus|r (Zeig alles)";
 		--TODO: L.DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
 		L.COMPLETIONIST_MODE = "+Quellen";
 		--TODO: L.COMPLETIONIST_MODE_TOOLTIP = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
@@ -366,6 +366,7 @@ ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TO
 		--TODO: L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 		--TODO: L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Requires Reload|r";
 		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
+		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
 
 	-- Account-Wide Checkboxes
 		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = TRACK_ACC_WIDE.."\n\nAchievement tracking is usually "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";	--TODO
@@ -471,9 +472,9 @@ ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TO
 		--TODO: L.MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 		L.ADDITIONAL_LABEL = "Zusätzliche Information";
 		--TODO: L.WINDOW_COLORS = "Window Colors";
-		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color and opacity of all ATT windows.";
-		--TODO: L.BORDER_TOOLTIP = "Set the border color and opacity of all ATT windows.";
-		--TODO: L.RESET_TOOLTIP = "Reset the background and border of all ATT windows.";
+		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color of all ATT windows.";
+		--TODO: L.BORDER_TOOLTIP = "Set the border color of all ATT windows.";
+		--TODO: L.RESET_TOOLTIP = "Reset the background and border color of all ATT windows.";
 		--TODO: L.CLASS_BORDER = "Use Class Color For Border";
 		--TODO: L.CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 
@@ -694,7 +695,6 @@ for key,value in pairs({
 		[-851] = "Truhe des Schwarzen Imperiums",					-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
-		[-921] = "Sanktumaufwertungen",								-- Sanctum Upgrades
 		[-924] = "Reisenetzwerk",									-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "Loyalität",									-- Loyalty
@@ -3740,6 +3740,7 @@ for key,value in pairs({
 	[398135] = "Weggeworfener Drakothystbohrer",	-- Discarded Dracothyst Drill
 	[398138] = "Geschmolzener Späherbot",	-- Molten Scoutbot
 	[398200] = "Vergessene Schließkassette",	-- Forgotten Lockbox
+	--TODO: [398674] = "Vibrant Flyer",	-- Vibrant Flyer
 	[398698] = "Quietschender Lochkäse",	-- Squeaking Swiss
 	[398770] = "Kasten mit Steinen",	-- Box of Rocks
 	[398778] = "Widerwärtiger Bottich",	-- Disgusting Vat

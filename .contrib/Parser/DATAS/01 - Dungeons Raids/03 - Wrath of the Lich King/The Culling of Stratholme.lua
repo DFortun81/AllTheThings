@@ -78,25 +78,30 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60614, { -- Meathook
 						["_encounter"] = { 611, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45694),	-- Conductive Cord
+							i(46339),	-- Mimiron's Repeater
 						},
 					}),
 					crit(60616, { -- Salramm the Fleshcrafter
 						["_encounter"] = { 612, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45695),	-- Spire of Withering Dreams
 						},
 					}),
 					crit(60615, { -- Chrono-Lord Epoch
 						["_encounter"] = { 613, HEROIC_DUNGEON },
 						["groups"] = {
-							
+							i(45685),	-- Plasma Foil
+							i(45675),	-- Power Enhancing Loop
 						},
 					}),
 					crit(60613, { -- Mal'Ganis
 						["_encounter"] = { 614, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
+							i(46016),	-- Abaddon
+							i(46025),	-- Devotion
+							i(46018),	-- Deliverance
 						},
 					}),
 				})),
@@ -335,6 +340,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39473),	-- Contortion
 							i(39470),	-- Medallion of the Disgraced
 							i(39467),	-- Minion Bracers
+						})),
+						applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+							i(45682),	-- Pulsing Spellshield
+							i(45686),	-- Vest of the Glowing Crescent
 						})),
 						-- #endif
 					}),
