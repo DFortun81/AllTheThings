@@ -1389,10 +1389,6 @@ local function CreateObject(t, rootOnly)
 
 	return t;
 end
--- Clones the data and attempts to create all sub-groups into cloned objects as well
-local function CloneData(data)
-	return CreateObject(data);
-end
 local function RawCloneData(data, clone)
 	clone = clone or {};
 	for key,value in pairs(data) do
@@ -14721,7 +14717,7 @@ function app:CreateMiniListForGroup(group)
 		-- 		local cmd = group.key .. ":" .. group[group.key];
 		-- 		group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 		-- 	else
-		-- 		group = CloneData(group);
+		-- 		group = CreateObject(group);
 		-- 	end
 		-- end
 		-- if popping out a thing with a sourced parent, generate a Source group to allow referencing the Source of the thing directly
@@ -14914,7 +14910,7 @@ function app:CreateMiniListForGroup(group)
 						i = i - 1;
 					end
 					if sq then
-						root = CloneData(sq);
+						root = CreateObject(sq);
 						root.g = g;
 						g = { root };
 					end
@@ -14959,7 +14955,7 @@ function app:CreateMiniListForGroup(group)
 										and app.CheckCustomCollects(found)
 										-- ensure the current settings do not filter the quest
 										and app.RecursiveGroupRequirementsFilter(found) then
-										sourceQuest = CloneData(found);
+										sourceQuest = CreateObject(found);
 										sourceQuest.visible = true;
 										sourceQuest.hideText = true;
 										if found.sourceQuests and #found.sourceQuests > 0 and
@@ -22278,7 +22274,7 @@ app.ProcessAuctionData = function()
 				for itemID2,count in pairs(reagentCache[itemID][2]) do
 					local searchResults = app.SearchForField("itemID", itemID2);
 					if searchResults and #searchResults > 0 then
-						tinsert(entry.g, CloneData(searchResults[1]));
+						tinsert(entry.g, CreateObject(searchResults[1]));
 					end
 				end
 			else
