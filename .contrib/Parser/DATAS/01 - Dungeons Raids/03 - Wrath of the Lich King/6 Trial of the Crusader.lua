@@ -1194,24 +1194,56 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 				["groups"] = {
 					a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers [Alliance]
 					h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers [Horde]
-					a(i(47629)),	-- Pattern: Black Chitin Bracers [Alliance]
-					h(i(47646)),	-- Pattern: Black Chitin Bracers [Horde]
-					a(i(47635)),	-- Pattern: Bracers of Swift Death [Alliance]
-					h(i(47647)),	-- Pattern: Bracers of Swift Death [Horde]
-					a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers [Alliance]
-					h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers [Horde]
-					a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate [Alliance]
-					h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate [Horde]
-					a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate [Alliance]
-					h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate [Horde]
-					a(i(47634)),	-- Pattern: Knightbane Carapace [Alliance]
-					h(i(47651)),	-- Pattern: Knightbane Carapace [Horde]
-					a(i(47632)),	-- Pattern: Lunar Eclipse Robes [Alliance]
-					h(i(47652)),	-- Pattern: Lunar Eclipse Robes [Horde]
+					i(47629, {	-- Pattern: Black Chitin Bracers [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47646, {	-- Pattern: Black Chitin Bracers [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47635, {	-- Pattern: Bracers of Swift Death [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47647, {	-- Pattern: Bracers of Swift Death [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47631, {	-- Pattern: Crusader's Dragonscale Bracers [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47648, {	-- Pattern: Crusader's Dragonscale Bracers [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47630, {	-- Pattern: Crusader's Dragonscale Breastplate [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47649, {	-- Pattern: Crusader's Dragonscale Breastplate [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47628, {	-- Pattern: Ensorcelled Nerubian Breastplate [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47650, {	-- Pattern: Ensorcelled Nerubian Breastplate [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47634, {	-- Pattern: Knightbane Carapace [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47651, {	-- Pattern: Knightbane Carapace [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47632, {	-- Pattern: Lunar Eclipse Robes [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47652, {	-- Pattern: Lunar Eclipse Robes [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
 					a(i(47655)),	-- Pattern: Merlin's Robe [Alliance]
 					h(i(47638)),	-- Pattern: Merlin's Robe [Horde]
-					a(i(47633)),	-- Pattern: Moonshadow Armguards [Alliance]
-					h(i(47653)),	-- Pattern: Moonshadow Armguards [Horde]
+					i(47633, {	-- Pattern: Moonshadow Armguards [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47653, {	-- Pattern: Moonshadow Armguards [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
 					a(i(47656)),	-- Pattern: Royal Moonshroud Bracers [Alliance]
 					h(i(47637)),	-- Pattern: Royal Moonshroud Bracers [Horde]
 					a(i(47657)),	-- Pattern: Royal Moonshroud Robe [Alliance]

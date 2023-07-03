@@ -5670,49 +5670,49 @@ root(ROOTS.Zones, {
 							i(44128, {	-- Arctic Fur
 								["cost"] = { { "i", 38425, 10 }, },	-- 10x Heavy Borean Leather
 							}),
-							i(44553, {	-- Pattern: Earthgiving Boots
+							i(44553, {	-- Pattern: Earthgiving Boots (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44552, {	-- Pattern: Earthgiving Legguards
+							i(44552, {	-- Pattern: Earthgiving Legguards (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44516, {	-- Pattern: Eviscerator's Bindings
+							i(44516, {	-- Pattern: Eviscerator's Bindings (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44515, {	-- Pattern: Eviscerator's Chestguard
+							i(44515, {	-- Pattern: Eviscerator's Chestguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44513, {	-- Pattern: Eviscerator's Facemask
+							i(44513, {	-- Pattern: Eviscerator's Facemask (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44517, {	-- Pattern: Eviscerator's Gauntlets
+							i(44517, {	-- Pattern: Eviscerator's Gauntlets (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44519, {	-- Pattern: Eviscerator's Legguards
+							i(44519, {	-- Pattern: Eviscerator's Legguards (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44514, {	-- Pattern: Eviscerator's Shoulderpads
+							i(44514, {	-- Pattern: Eviscerator's Shoulderpads (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44520, {	-- Pattern: Eviscerator's Treads
+							i(44520, {	-- Pattern: Eviscerator's Treads (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44518, {	-- Pattern: Eviscerator's Waistguard
+							i(44518, {	-- Pattern: Eviscerator's Waistguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44547, {	-- Pattern: Giantmaim Bracers
+							i(44547, {	-- Pattern: Giantmaim Bracers (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44546, {	-- Pattern: Giantmaim Legguards
+							i(44546, {	-- Pattern: Giantmaim Legguards (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44588, {	-- Pattern: Icy Scale Belt
+							i(44588, {	-- Pattern: Icy Scale Belt (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44589, {	-- Pattern: Icy Scale Boots
+							i(44589, {	-- Pattern: Icy Scale Boots (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44587, {	-- Pattern: Icy Scale Chestguard
+							i(44587, {	-- Pattern: Icy Scale Chestguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
 							i(44526, {	-- Pattern: Overcast Belt
@@ -5739,79 +5739,79 @@ root(ROOTS.Zones, {
 							i(44522, {	-- Pattern: Overcast Spaulders
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44586, {	-- Pattern: Polar Boots
+							i(44586, {	-- Pattern: Polar Boots (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44585, {	-- Pattern: Polar Cord
+							i(44585, {	-- Pattern: Polar Cord (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44584, {	-- Pattern: Polar Vest
+							i(44584, {	-- Pattern: Polar Vest (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44548, {	-- Pattern: Revenant's Breastplate
+							i(44548, {	-- Pattern: Revenant's Breastplate (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44549, {	-- Pattern: Revenant's Treads
+							i(44549, {	-- Pattern: Revenant's Treads (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44543, {	-- Pattern: Stormhide Belt
+							i(44543, {	-- Pattern: Stormhide Belt (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44538, {	-- Pattern: Stormhide Crown
+							i(44538, {	-- Pattern: Stormhide Crown (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44542, {	-- Pattern: Stormhide Grips
+							i(44542, {	-- Pattern: Stormhide Grips (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44540, {	-- Pattern: Stormhide Hauberk
+							i(44540, {	-- Pattern: Stormhide Hauberk (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44544, {	-- Pattern: Stormhide Legguards
+							i(44544, {	-- Pattern: Stormhide Legguards (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44539, {	-- Pattern: Stormhide Shoulders
+							i(44539, {	-- Pattern: Stormhide Shoulders (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44545, {	-- Pattern: Stormhide Stompers
+							i(44545, {	-- Pattern: Stormhide Stompers (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44541, {	-- Pattern: Stormhide Wristguards
+							i(44541, {	-- Pattern: Stormhide Wristguards (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44535, {	-- Pattern: Swiftarrow Belt
+							i(44535, {	-- Pattern: Swiftarrow Belt (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44537, {	-- Pattern: Swiftarrow Boots
+							i(44537, {	-- Pattern: Swiftarrow Boots (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44533, {	-- Pattern: Swiftarrow Bracers
+							i(44533, {	-- Pattern: Swiftarrow Bracers (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44534, {	-- Pattern: Swiftarrow Gauntlets
+							i(44534, {	-- Pattern: Swiftarrow Gauntlets (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44532, {	-- Pattern: Swiftarrow Hauberk
+							i(44532, {	-- Pattern: Swiftarrow Hauberk (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44530, {	-- Pattern: Swiftarrow Helm
+							i(44530, {	-- Pattern: Swiftarrow Helm (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44536, {	-- Pattern: Swiftarrow Leggings
+							i(44536, {	-- Pattern: Swiftarrow Leggings (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44531, {	-- Pattern: Swiftarrow Shoulderguards
+							i(44531, {	-- Pattern: Swiftarrow Shoulderguards (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44551, {	-- Pattern: Trollwoven Girdle
+							i(44551, {	-- Pattern: Trollwoven Girdle (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44550, {	-- Pattern: Trollwoven Spaulders
+							i(44550, {	-- Pattern: Trollwoven Spaulders (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44932, {	-- Pattern: Windripper Boots
+							i(44932, {	-- Pattern: Windripper Boots (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44933, {	-- Pattern: Windripper Leggings
+							i(44933, {	-- Pattern: Windripper Leggings (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
 						},

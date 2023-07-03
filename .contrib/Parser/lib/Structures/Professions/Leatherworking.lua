@@ -161,7 +161,7 @@ COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
 	}),
 	i(71721, {	-- Pattern: Drakehide Leg Armor (RECIPE!)
 		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },	-- This may be 4.2.0.14333 per wowhead, not sure how to confirm. -NamexFace
+		["timeline"] = { "added 4.0.3.13287" },
 		["requireSkill"] = LEATHERWORKING,
 		["f"] = RECIPES,
 	}),
@@ -661,7 +661,6 @@ DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = 
 		r(389195),	-- Recraft Equipment
 		r(375164),	-- Reinforced Armor Kit
 		r(375173),	-- Stonecrust Hide
-		r(375159),	-- Fang Adornments
 	}),
 	n(WEAPONS, {
 		r(375102),	-- Bonewrought Crossbow

@@ -81,9 +81,6 @@ r(269549),	-- Honorable Combatant's Cestus
 r(269550),	-- Honorable Combatant's Cestus
 r(269551),	-- Honorable Combatant's Cestus
 9.0.1.33978
-r(308895),	-- Desolate Leather
-r(308896),	-- Callous Hide \\ Desolate Hide \\ Desolate Leather Hide
-r(309038),	-- Shadowlands Leatherworking
 r(309194),	-- Macabre Striker \\ Reinforced Sorrowscale Striker
 r(309195),	-- Reinforced Desolate Leather Cestus
 r(309196),	-- Heavy Composite Bow
@@ -357,14 +354,6 @@ r(60665),	-- Seafoam Gauntlets
 r(60666),	-- Jormscale Footpads
 r(60669),	-- Wildscale Breastplate
 r(60671),	-- Purehorn Spaulders
-r(60697),	-- Eviscerator's Facemask
-r(60702),	-- Eviscerator's Shoulderpads
-r(60703),	-- Eviscerator's Chestguard
-r(60704),	-- Eviscerator's Bindings
-r(60705),	-- Eviscerator's Gauntlets
-r(60706),	-- Eviscerator's Waistguard
-r(60711),	-- Eviscerator's Legguards
-r(60712),	-- Eviscerator's Treads
 r(60715),	-- Overcast Headguard
 r(60716),	-- Overcast Spaulders
 r(60718),	-- Overcast Chestguard
@@ -373,75 +362,6 @@ r(60721),	-- Overcast Handwraps
 r(60723),	-- Overcast Belt
 r(60725),	-- Overcast Leggings
 r(60727),	-- Overcast Boots
-r(60728),	-- Swiftarrow Helm
-r(60729),	-- Swiftarrow Shoulderguards
-r(60730),	-- Swiftarrow Hauberk
-r(60731),	-- Swiftarrow Bracers
-r(60732),	-- Swiftarrow Gauntlets
-r(60734),	-- Swiftarrow Belt
-r(60735),	-- Swiftarrow Leggings
-r(60737),	-- Swiftarrow Boots
-r(60743),	-- Stormhide Crown
-r(60746),	-- Stormhide Shoulders
-r(60747),	-- Stormhide Hauberk
-r(60748),	-- Stormhide Wristguards
-r(60749),	-- Stormhide Grips
-r(60750),	-- Stormhide Belt
-r(60751),	-- Stormhide Legguards
-r(60752),	-- Stormhide Stompers
-r(60754),	-- Giantmaim Legguards
-r(60755),	-- Giantmaim Bracers
-r(60756),	-- Revenant's Breastplate
-r(60757),	-- Revenant's Treads
-r(60758),	-- Trollwoven Spaulders
-r(60759),	-- Trollwoven Girdle
-r(60760),	-- Earthgiving Legguards
-r(60761),	-- Earthgiving Boots
-r(60996),	-- Polar Vest
-r(60997),	-- Polar Cord
-r(60998),	-- Polar Boots
-r(60999),	-- Icy Scale Chestguard
-r(61000),	-- Icy Scale Belt
-r(61002),	-- Icy Scale Boots
-r(62176),	-- Windripper Boots
-r(62177),	-- Windripper Leggings
-r(62448),	-- Earthen Leg Armor
-r(63194),	-- Belt of Dragons
-r(63195),	-- Boots of Living Scale
-r(63196),	-- Blue Belt of Chaos
-r(63197),	-- Lightning Grounded Boots
-r(63198),	-- Death-warmed Belt
-r(63199),	-- Footpads of Silence
-r(63200),	-- Belt of Arctic Life
-r(63201),	-- Boots of Wintry Endurance
-r(64661),	-- Borean Leather
-3.3.5.12340
-r(67080),	-- Ensorcelled Nerubian Breastplate
-r(67081),	-- Black Chitin Bracers
-r(67082),	-- Crusader's Dragonscale Breastplate
-r(67083),	-- Crusader's Dragonscale Bracers
-r(67084),	-- Lunar Eclipse Robes
-r(67085),	-- Moonshadow Armguards
-r(67086),	-- Knightbane Carapace
-r(67087),	-- Bracers of Swift Death
-r(67136),	-- Ensorcelled Nerubian Breastplate
-r(67137),	-- Black Chitin Bracers
-r(67138),	-- Crusader's Dragonscale Breastplate
-r(67139),	-- Bracers of Swift Death
-r(67140),	-- Lunar Eclipse Robes
-r(67141),	-- Moonshadow Armguards
-r(67142),	-- Knightbane Carapace
-r(67143),	-- Crusader's Dragonscale Bracers
-r(69386),	-- Drums of Forgotten Kings
-r(69388),	-- Drums of the Wild
-r(70554),	-- Legwraps of Unleashed Nature
-r(70555),	-- Blessed Cenarion Boots
-r(70556),	-- Bladeborn Leggings
-r(70557),	-- Footpads of Impending Death
-r(70558),	-- Lightning-Infused Leggings
-r(70559),	-- Earthsoul Boots
-r(70560),	-- Draconic Bonesplinter Legguards
-r(70561),	-- Rock-Steady Treads
 4.0.1.12911
 r(78421),	--
 r(78422),	--
