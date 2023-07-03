@@ -33,24 +33,8 @@ r(53690),	-- Verdant Tundra Shoulderpads
 r(55243),	-- Bracers of Deflection
 4.0.1.12911
 r(74493),	-- Savage Leather
-r(78400),	-- Windbound Bracers
-r(78401),	-- Windbound Gloves
-r(78402),	-- Razorshell Bracers
-r(78404),	-- Razorshell Shoulders
-r(78408),	-- Windbound Boots
-r(78409),	-- Razorshell Boots
-r(78413),	-- Windbound Belt
-r(78414),	-- Razorshell Gloves
-r(78417),	-- Windbound Shoulders
-r(78418),	-- Razorshell Belt
 r(78421),	--
 r(78422),	--
-r(78425),	-- Windbound Leggings
-r(78426),	-- Razorshell Helm
-r(78429),	-- Windbound Chest
-r(78430),	-- Razorshell Leggings
-r(78434),	-- Windbound Helm
-r(78435),	-- Razorshell Chest
 r(81199),	-- Leatherworking
 r(85007),	--
 r(85008),	--
@@ -97,6 +81,9 @@ r(269549),	-- Honorable Combatant's Cestus
 r(269550),	-- Honorable Combatant's Cestus
 r(269551),	-- Honorable Combatant's Cestus
 9.0.1.33978
+r(308895),	-- Desolate Leather
+r(308896),	-- Callous Hide \\ Desolate Hide \\ Desolate Leather Hide
+r(309038),	-- Shadowlands Leatherworking
 r(309194),	-- Macabre Striker \\ Reinforced Sorrowscale Striker
 r(309195),	-- Reinforced Desolate Leather Cestus
 r(309196),	-- Heavy Composite Bow
@@ -454,7 +441,7 @@ r(70557),	-- Footpads of Impending Death
 r(70558),	-- Lightning-Infused Leggings
 r(70559),	-- Earthsoul Boots
 r(70560),	-- Draconic Bonesplinter Legguards
-r(49966, 70561),	-- Rock-Steady Treads
+r(70561),	-- Rock-Steady Treads
 4.0.1.12911
 r(78421),	--
 r(78422),	--
@@ -464,6 +451,7 @@ r(85009),	--
 r(85010),	--
 r(85067),	--
 r(85068),	--
+4.3.4.15595
 r(101600),	--
 5.0.3.15890
 r(110955),	--

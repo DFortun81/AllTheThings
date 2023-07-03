@@ -104,6 +104,8 @@ ach(18678),	-- Defense Protocol Beta: Trial of the Champion
 ach(18688),	-- Defense Protocol Beta: Terminated
 4.0.1.12911
 ach(5020),	-- Observed - Guild Edition \\ He Feeds On Your Tears - Guild Edition
+7.3.0.24473
+ach(11065),	-- It All Makes Sense Now
 8.1.0.27985
 ach(13283),	-- Frontline Warrior \\ On The Frontlines
 ach(13284),	-- Frontline Warrior \\ On The Frontlines

@@ -6,7 +6,7 @@
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(PROFESSIONS, {
 		prof(MINING, {
-			filter(PROFESSION_EQUIPMENTS, {
+			filter(PROFESSION_EQUIPMENT, {
 				-- 10.0.7
 				tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 					i(204677),	-- Ogre Mining Pick
