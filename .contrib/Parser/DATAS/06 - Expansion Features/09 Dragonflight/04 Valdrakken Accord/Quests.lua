@@ -191,11 +191,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 68794 },	-- Ally of Dragons
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 58.5, 35.7, VALDRAKKEN },
+					["g"] = {
+						i(197845),	-- Silver Scale (QI!)
+					},
 				}),
 				q(70703, {	-- The Legacy of Tyrhold
 					["sourceQuests"] = { 67074 },	-- The Gift of Silver
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 58.5, 35.7, VALDRAKKEN },
+					["g"] = {
+						i(197845),	-- Silver Scale (QI!)
+					},
 				}),
 				q(67075, {	-- The Magic Within
 					["sourceQuests"] = { 70703 },	-- The Legacy of Tyrhold

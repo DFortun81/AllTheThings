@@ -661,6 +661,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66652 },	-- Return to Mender
 					["provider"] = { "n", 188225 },	-- Initiate Zorig
 					["coord"] = { 39.1, 66.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(193257),	-- Clump of Sacred Soil (QI!)
+					},
 				}),
 				q(69936, {	-- Zambul, Head Vandal
 					["sourceQuests"] = {
@@ -701,6 +704,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
 					["provider"] = { "n", 186650 },	-- Farrier Roscha
 					["coord"] = { 84.4, 25.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191541),	-- Shikaar Supplies (QI!)
+					},
 				}),
 				q(65955, {	-- A Centaur's Best Friend
 					["sourceQuests"] = {
@@ -719,6 +725,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197960),	-- Bag of Biscuits
+						i(191540),	-- Batu's Collar (QI!)
+						i(191539),	-- Sarnai's Collar (QI!)
 					},
 				}),
 				q(65953, {	-- The Ora-cull
@@ -728,6 +736,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 186649 },	-- Khasar
 					["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191143),	-- Mudfin Totem (QI!)
+					},
 				}),
 				q(65952, {	-- A Chief of Legends
 					["sourceQuests"] = {

@@ -278,6 +278,12 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(190521),	-- zzOldTraitorous Primal Gauntlets of the Dragon
 					})),
 
+					-- 10.0.2
+					tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+						i(191882),	-- Serevite Repair Hammer
+						i(191883),	-- Serevite Repair Hammer
+					})),
+
 					-- 10.1.0
 					tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 						i(205040),	-- Shadowed Belt Buckle

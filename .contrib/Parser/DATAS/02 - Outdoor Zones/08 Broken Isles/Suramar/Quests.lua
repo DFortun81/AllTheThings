@@ -1206,6 +1206,9 @@ root(ROOTS.Zones, {
 					["coord"] = { 51.1, 76.1, SURAMAR },
 					["provider"] = { "n", 107225 },	-- Deline
 					["sourceQuest"] = 41878,	-- The Gondolier
+					["g"] = {
+						i(137295),	-- Bottle of Arcwine (QI!)
+					},
 				}),
 				q(38694, {	-- Regroup
 					["coord"] = { 49.6, 85.3, SURAMAR },

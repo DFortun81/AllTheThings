@@ -2677,6 +2677,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193213),	-- Adamant Scales+
 			i(193214),	-- Adamant Scales++
 			i(193215),	-- Adamant Scales+++
+			i(204092, {["timeline"]={ADDED_10_0_7}}),	-- Auric Fleece
 			i(193261),	-- Bite-Sized Morsel
 			i(193253),	-- Cacophonous Thunderscale
 			i(193251),	-- Crystalspine Fur

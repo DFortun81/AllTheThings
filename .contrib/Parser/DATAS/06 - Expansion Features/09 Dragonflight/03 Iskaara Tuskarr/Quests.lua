@@ -219,6 +219,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(201786),	-- Recipe: Salt-Baked Fishcake (RECIPE!)
 						i(201785),	-- Recipe: Seamoth Surprise (RECIPE!)
 						i(201784),	-- Recipe: Timely Demise (RECIPE!)
+						i(191859),	-- Half-Boiled Fish (QI!)
 					},
 				}),
 				q(66418, {	-- Testing the Tuskaprsenal

@@ -883,9 +883,6 @@ root(ROOTS.Unsorted, {
 			i(208449),	-- Melly's Metronographer+++
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
-			filter(RECIPES, {
-				i(122549),	-- Pattern: Powerful Hexweave Essence (doesn't seem to exist anywhere?)
-			}),
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
 				i(202581),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 1
 				i(202608),	-- Power-Draining Spire
@@ -1174,58 +1171,6 @@ root(ROOTS.Unsorted, {
 				i(204267),	-- Gilnean Trainee's Leggings
 				i(204268),	-- Gilnean Trainee's Cord
 				i(204269),	-- Gilnean Trainee's Wristwraps
-				--
-				i(204192),	-- Ascendancy
-				i(203680),	-- Totem Toss
-			}),
-			filter(MISC, {
-				i(198138),	-- Lightning-Infused Rock
-				i(202075),	-- Temp Currency
-				i(202202),	-- Revealing Mask
-				i(202396),	-- Plains Timber
-				i(202642),	-- Proto-Killing Spear
-				i(203210),	-- Dragonscale Supply Box
-				i(203218),	-- Iskaara Supply Pouch
-				i(203221),	-- Maruuk Supply Sack
-				i(203223),	-- Valdrakken Supply Coffer
-			}),
-			filter(MISC, {
-				i(204008),	-- Prodigious Sand Stone
-				i(203464),	-- Sealed Spellsworn Scroll
-				i(203465),	-- Draconic Artifact
-				i(203466),	-- Dragonscale Surplus Crate
-				i(203657),	-- Toxin Antidote
-				i(203724),	-- Field Medic's Hazard Payout
-				i(203730),	-- Rustic Winterpelt Supplies
-				i(203997),	-- Raw Argali Flank
-				i(203998),	-- Beetle Juice
-				i(204089),	-- Atrenosh's Spellsworn Sigil
-				i(204092),	-- Auric Fleece
-				i(204213),	-- Short-Range Teleport
-				i(204216),	-- Primordial Pulverizing
-				i(204239),	-- Shadowy Mojo Crystal
-				i(204244),	-- Breathing Mojo Crystal
-				i(204245),	-- Hateful Mojo Crystal
-				--
-				i(204307),	-- Ornate Bronze Lockbox
-				i(204310),	-- Mycelial Threads
-				i(204311),	-- Fluorescent Veil
-				i(204312),	-- Ettin Skin
-				i(204313),	-- Handful of Scales
-				i(204330),	-- Inert Primordial Fragments
-				i(114942),	-- Cracked Draenic Mortar
-				i(204632),	-- Tectonic Rock Fragment
-				i(202204),	-- Receiving Stone: Final Warning
-				i(202205),	-- Translated Journal of Adamanthia
-				i(204249),	-- Translated Correspondence of Black Dragons
-			}),
-			n(PROFESSIONS, {
-				-- JC
-				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
-			}),
-			n(WEAPONS, {
-				i(204674),	-- Cursed Demonbone Longbow
-				i(204677),	-- Ogre Mining Pick
 			}),
 			n(QUESTS, {
 				-- 10.0.7.47910
@@ -1423,28 +1368,6 @@ root(ROOTS.Unsorted, {
 					i(190147),	-- Longbow of the Twisted Grove
 				}),
 			}),
-			filter(MISC, {
-				i(201990),	-- Primal Mote
-				i(202035),	-- Self-Heating Rations
-				i(202112),	-- Crystal Shattering Armaments
-				i(202310),	-- Defective Doomsday Device
-				i(202691),	-- Henry's Handbag
-				i(203461),	-- Chronologically Reallocated Rations
-				i(204236),	-- Sack of Stolen Dragon Glyphs
-				i(204277),	-- Ruby Whelp Treat
-			}),
-			n(PROFESSIONS, {
-				i(203382),	-- Peripheral Vision Projectors
-			}),
-			filter(QUEST_ITEMS, {
-				i(137295),	-- Bottle of Arcwine
-				i(191143),	-- Mudfin Totem
-				i(191539),	-- Sarnai's Collar
-				i(191540),	-- Batu's Collar
-				i(191541),	-- Shikaar Supplies
-				i(193257),	-- Clump of Sacred Soil
-				i(203598),	-- Makko's Journal Cover
-			}),
 			n(QUESTS, {
 				-- 10.0.5.47799
 				q(66925),	-- [DNT] Boar-B-Q
@@ -1474,24 +1397,6 @@ root(ROOTS.Unsorted, {
 				i(203372),	-- Blue Winglord's Coif
 				i(203373),	-- Blue Winglord's Greaves
 				i(203374),	-- Blue Winglord's Shoulders
-			}),
-			filter(MISC, {
-				i(202062),	-- Ash Feather [Probably a Secret /Braghe]
-				i(201033),	-- Magical Salt Crystal [Used for Rare]
-			}),
-			filter(QUEST_ITEMS, {
-				i(123869),	-- Relic of Elune
-				i(191859),	-- Half-Boiled Fish
-				--
-				i(197845),	-- Silver Scale
-				--
-				i(123868),	-- Relic of Shakama
-				i(192744),	-- Rymek's Gift
-				--
-				i(199798),	-- Makko's Journal - Page Seven
-			}),
-			n(PROFESSIONS, {
-				i(168522),	-- Ub3r Module: Ub3r-Coil
 			}),
 			n(QUESTS, {
 				-- 10.0.2.45779
@@ -1781,28 +1686,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MISC, {
 				i(200638),	-- Bubblefilled Flounder [Speculated to be used in a Secret /Braghe]
-			}),
-			n(PROFESSIONS, {
-				-- Knowledge Points
-				i(194041),	-- Driftbloom Sprout
-				i(194054),	-- Dredged Seedling
-				i(194076),	-- Exotic Resilient Leather
-				i(194067),	-- Festering Carcass
-				i(194066),	-- Frigid Frostfur Pelt
-				i(194063),	-- Glowing Fragment
-				i(194064),	-- Intricate Geode
-				i(194081),	-- Mutated Root
-				i(194080),	-- Peculiar Bud
-				i(194078),	-- Perfect Draconium Scale
-				i(194055),	-- Primordial Soil
-				i(194077),	-- Pristine Adamant Scales
-				i(194068),	-- Progenitor Scales
-				i(194079),	-- Pure Serevite Nugget
-				i(194040),	-- Slateskin Hide
-				i(194061),	-- Suffocating Spores
-				--
-				i(191882),	-- Serevite Repair Hammer
-				i(191883),	-- Serevite Repair Hammer
 			}),
 			n(QUESTS, {
 				-- 10.0.0.44649

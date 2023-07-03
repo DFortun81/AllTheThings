@@ -34,6 +34,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(198287),	-- Tinker Removal Kit++
 						i(198288),	-- Tinker Removal Kit+++
 					})),
+
+					-- 10.0.5
+					tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+						i(203382),	-- Peripheral Vision Projectors
+					})),
 				}),
 			}),
 			filter(RECIPES, {

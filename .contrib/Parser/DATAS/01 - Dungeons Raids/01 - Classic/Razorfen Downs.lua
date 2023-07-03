@@ -288,15 +288,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(10777),	-- Arachnid Gloves
 				},
 			}),
-			-- o(XXXXXX, {	-- Henry's Handbag
-			--	--["timeline"] = { ADDED_10_0_5 },
-			--	--["groups"] = {
-					i(202249, {	-- Recipe: Goldthorn Tea
-						["timeline"] = { ADDED_10_0_5 },
-						["description"] = "Head to the Murder Pens area and look for hanging bag, recipe is inside."	-- TODO: Move this description to the object
-					}),
-			--	--},
-			-- }),
+			o(385581, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
+				["description"] = "Head to the Murder Pens area and look for hanging bag, recipe is inside.",
+				["groups"] = {
+					i(202691),	-- Henry's Handbag
+					i(202249),	-- Recipe: Goldthorn Tea (RECIPE!)
+				},
+			})),
 			n(8696, {	-- Henry Stern
 				["description"] = "The only source of acquiring Goldthorn Tea.",
 				["timeline"] = { "removed 6.0.2" },

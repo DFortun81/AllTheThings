@@ -46,7 +46,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
 				i(206156, {	-- Grotto Netherwing Drake (MOUNT!)
-					["timeline"] = { "added 10.1.0" },
+					["timeline"] = { ADDED_10_1_0 },
 				}),
 			}),
 			filter(COSMETIC, {
@@ -183,11 +183,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		}),
 		n(UNAVAILABLE, {
-			n(ACHIEVEMENTS, {	--[[
-				ach(9925, {	-- Friends In Places Yet Even Higher Than That
-					["provider"] = { "i", 118515 },	-- Cindermane Charger (MOUNT!)
-				}),	--]]
-			}),
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(54811),	-- Celestial Steed (MOUNT!)
 				i(189978),	-- Magenta Cloud Serpent (MOUNT!)

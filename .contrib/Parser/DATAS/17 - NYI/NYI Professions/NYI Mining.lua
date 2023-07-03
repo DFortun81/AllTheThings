@@ -6,6 +6,26 @@
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(PROFESSIONS, {
 		prof(MINING, {
+			filter(PROFESSION_EQUIPMENTS, {
+				-- 10.0.7
+				tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+					i(204677),	-- Ogre Mining Pick
+				})),
+			}),
+			filter(MISC, {
+				-- 10.0.2
+				tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+					i(194063),	-- Glowing Fragment
+					i(194064),	-- Intricate Geode
+					i(194078),	-- Perfect Draconium Scale
+					i(194079),	-- Pure Serevite Nugget
+				})),
+
+				-- 10.0.7
+				tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+					i(204632),	-- Tectonic Rock Fragment
+				})),
+			}),
 			n(CRAFTABLES, {
 			}),
 			filter(RECIPES, {

@@ -319,6 +319,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73194, {	-- Up Close and Personal
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202642),	-- Proto-Killing Spear
+				},
 			}),
 			q(75026, {	-- Up to the Highest Height!
 				["provider"] = { "n", 200558 },	-- Tukkaraq

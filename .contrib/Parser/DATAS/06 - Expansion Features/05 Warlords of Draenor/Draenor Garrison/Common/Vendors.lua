@@ -123,6 +123,9 @@ root(ROOTS.ExpansionFeatures,
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
+						i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
+							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
+						}),
 						i(127742, {	-- Pattern: Savage Hexweave Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
@@ -226,6 +229,9 @@ root(ROOTS.ExpansionFeatures,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 							["timeline"] = { REMOVED_10_0_5 },
+						}),
+						i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
+							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 						}),
 						i(127742, {	-- Pattern: Savage Hexweave Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,

@@ -556,6 +556,9 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 				}),
 			}),
 		}),
+		filter(MISC, {
+			i(168522),	-- Ub3r Module: Ub3r-Coil
+		}),
 	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {

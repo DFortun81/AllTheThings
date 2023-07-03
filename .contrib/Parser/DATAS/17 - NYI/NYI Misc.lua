@@ -733,6 +733,17 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(201251),	-- Pillaged Contender's Strongbox
 			})),
 
+			-- 10.0.5
+			tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+				i(203461),	-- Chronologically Reallocated Rations
+				i(202112),	-- Crystal Shattering Armaments
+				i(202310),	-- Defective Doomsday Device
+				i(201990),	-- Primal Mote
+				i(204277),	-- Ruby Whelp Treat
+				i(204236),	-- Sack of Stolen Dragon Glyphs
+				i(202035),	-- Self-Heating Rations
+			})),
+
 			-- 10.0.7
 			tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 				i(202663),	-- [DNT] Dragonscale Expedition Item 01
@@ -755,13 +766,30 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(202687),	-- [DNT] Valdrakken Accord Item 03
 				i(202688),	-- [DNT] Valdrakken Accord Item 04
 				i(202689),	-- [DNT] Valdrakken Accord Item 05
-				i(203798),	-- Copy Jin'do's Bag of Whammies
 				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
 				i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
 				i(203213),	-- Ensemble: Lion's Heritage White Armor Set
 				i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
 				i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
 				i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
+				i(204312),	-- Ettin Skin
+				i(203465),	-- Draconic Artifact
+				i(203210),	-- Dragonscale Supply Box
+				i(203466),	-- Dragonscale Surplus Crate
+				i(204313),	-- Handful of Scales
+				i(204330),	-- Inert Primordial Fragments
+				i(203218),	-- Iskaara Supply Pouch
+				i(203221),	-- Maruuk Supply Sack
+				i(204310),	-- Mycelial Threads
+				i(204307),	-- Ornate Bronze Lockbox
+				i(204216),	-- Primordial Pulverizing
+				i(204008),	-- Prodigious Sand Stone
+				i(202202),	-- Revealing Mask
+				i(203730),	-- Rustic Winterpelt Supplies
+				i(204213),	-- Short-Range Teleport
+				i(202075),	-- Temp Currency
+				i(203657),	-- Toxin Antidote
+				i(203223),	-- Valdrakken Supply Coffe
 				i(203854),	-- Warblades of the Hakkari, Reborn
 			})),
 

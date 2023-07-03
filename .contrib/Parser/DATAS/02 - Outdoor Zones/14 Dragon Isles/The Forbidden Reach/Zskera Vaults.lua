@@ -422,9 +422,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386462, {	-- Primordial Blood Cache
 							["questID"] = 74428,
-							["g"] = {
-								i(204027),	-- Desirous Blood Stone
-							},
 						}),
 						o(386426, {	-- Primordial Earth Cache
 							["coord"] = { 26.4, 53.9, THE_FORBIDDEN_REACH },
@@ -432,9 +429,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(385396, {	-- Primordial Fire Cache
 							["questID"] = 72888,
-							["g"] = {
-								i(204003),	-- Raging Magma Stone
-							},
 						}),
 						o(386532, {	-- Primordial Gold Cache
 							["coord"] = { 25.3, 53.7, THE_FORBIDDEN_REACH },
@@ -662,9 +656,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(393218, {	-- Primordial Arcane Cache
 							["questID"] = 75212,
-							["g"] = {
-								i(204018),	-- Humming Arcane Stone
-							},
 						}),
 						o(386762, {	-- Primordial Armor Cache
 							["coord"] = { 30.5, 55.0, THE_FORBIDDEN_REACH },
@@ -934,9 +925,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386442, {	-- Primordial Void Cache
 							["questID"] = 74409,
-							["g"] = {
-								i(204015),	-- Swirling Mojo Stone
-							},
 						}),
 						o(386447, {	-- Primordial Water Cache
 							["coord"] = { 26.3, 53.9, THE_FORBIDDEN_REACH },
@@ -1168,7 +1156,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204007),	-- Shining Obsidian Stone
 				i(204014),	-- Sparkling Mana Stone
 				i(204000),	-- Storm Infused Stone
-				i(204015),	-- Swirling Mojo Stone
+				i(204015, {	-- Swirling Mojo Stone
+					i(204244),	-- Breathing Mojo Crystal
+					i(204245),	-- Hateful Mojo Crystal
+					i(204239),	-- Shadowy Mojo Crystal
+				}),
 				i(204020),	-- Wild Spirit Stone
 				i(204030),	-- Wind Sculpted Stone
 				-- Drops from any chest
