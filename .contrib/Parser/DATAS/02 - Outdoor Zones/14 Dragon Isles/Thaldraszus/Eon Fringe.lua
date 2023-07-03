@@ -145,6 +145,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 				}),
+				q(75466, {	-- Lost Time-Lost Vikings
+					["provider"] = { "n", 203769 },	-- Bartender Bob
+					["coord"] = { 52.1, 81.5, THALDRASZUS },
+					["g"] = {
+						i(204989),	-- Eric's Camera
+					},
+				}),
 				q(76162, {	-- Missing Mojo
 					["provider"] = { "n", 205793 },	-- Vol'jin
 					["coord"] = { 52.3, 81.6, THALDRASZUS },

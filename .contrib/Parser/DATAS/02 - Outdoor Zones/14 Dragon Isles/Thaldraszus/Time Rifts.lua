@@ -863,4 +863,5 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(76607),	-- after Azmourne finished
 	q(76614),	-- after Ulderoth finished
 	q(76699),	-- after A.Z.E.R.O.T.H finished / first time finished rift / Box of Tampered Reality (green bag)?
+	q(77680),	-- picked up 'When Time Needs Mending' (questID 77236); after questID 77679?
 }));

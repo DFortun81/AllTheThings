@@ -293,7 +293,6 @@ root(ROOTS.Unsorted, {
 			i(204870),	-- Lasztak's Thread Order
 			i(204895),	-- Storm-touched Missive Stone [DNT]
 			i(204983),	-- Primalist Dropbox Key [DNT]
-			i(204989),	-- Eric's Camera
 			i(205146),	-- Weyrnstone
 			i(205419),	-- Dinn's Drum
 			i(205819),	-- Ashen Predator's Poleyns
