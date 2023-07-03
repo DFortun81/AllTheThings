@@ -1634,6 +1634,7 @@ local function GetRelativeValue(group, field)
 		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
 	end
 end
+app.GetRelativeValue = GetRelativeValue;
 local function GetDeepestRelativeValue(group, field)
 	if group then
 		return GetDeepestRelativeValue(group.sourceParent or group.parent, field) or group[field];
@@ -6242,6 +6243,7 @@ local function SearchForSourceIDQuickly(sourceID)
 		return cache and cache[1];
 	end
 end
+app.SearchForSourceIDQuickly = SearchForSourceIDQuickly;
 local function SearchForLink(link)
 	if string.match(link, "item") then
 		-- Parse the link and get the itemID and bonus ids.
@@ -13705,7 +13707,7 @@ local function FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	end
 end
 -- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
-local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
+app.MarkUniqueCollectedSourcesBySource = function(knownSourceID, currentCharacterOnly)
 	-- Find this source in ATT
 	local knownItem = SearchForSourceIDQuickly(knownSourceID);
 	if knownItem then
@@ -13822,56 +13824,55 @@ end
 local function ObjectVisibilityFilter(group)
 	return group.visible;
 end
-app.CurrentCharacterFilters = CurrentCharacterFilters;
-app.FilterItemSourceUnique = FilterItemSourceUnique;
-app.FilterItemSourceUniqueOnlyMain = FilterItemSourceUniqueOnlyMain;
-app.MarkUniqueCollectedSourcesBySource = MarkUniqueCollectedSourcesBySource;
-app.FilterItemTrackable = FilterItemTrackable;
-app.ObjectVisibilityFilter = ObjectVisibilityFilter;
-app.FilterItemSource = FilterItemSource;
-app.FilterItemClass_CustomCollect = FilterItemClass_CustomCollect;
-app.FilterItemClass_RequireFaction = FilterItemClass_RequireFaction;
-app.FilterItemClass_RequiredSkill = FilterItemClass_RequiredSkill;
-app.FilterItemClass_PetBattles = FilterItemClass_PetBattles;
-app.FilterItemClass_PvP = FilterItemClass_PvP;
-app.FilterItemClass_RequireBinding = FilterItemClass_RequireBinding;
-app.ItemIsInGame = ItemIsInGame;
-app.FilterItemClass_UnobtainableItem = FilterItemClass_UnobtainableItem;
-app.FilterItemClass_RequireRacesCurrentFaction = FilterItemClass_RequireRacesCurrentFaction;
-app.FilterItemClass_RequireRaces = FilterItemClass_RequireRaces;
-app.FilterItemClass_RequireItemFilter = FilterItemClass_RequireItemFilter;
-app.FilterItemClass_RequireClasses = FilterItemClass_RequireClasses;
-app.FilterItemClass_IgnoreBoEFilter = FilterItemClass_IgnoreBoEFilter;
-app.FilterItemClass = FilterItemClass;
-app.FilterItemBind = FilterItemBind;
-app.FilterGroupsByCompletion = FilterGroupsByCompletion;
-app.FilterGroupsByLevel = FilterGroupsByLevel;
-app.IsBoP = IsBoP;
-app.NoFilter = NoFilter;
-app.Filter = Filter;
+-- app.CurrentCharacterFilters = CurrentCharacterFilters;
+-- app.FilterItemSourceUnique = FilterItemSourceUnique;
+-- app.FilterItemSourceUniqueOnlyMain = FilterItemSourceUniqueOnlyMain;
+-- app.FilterItemTrackable = FilterItemTrackable;
+-- app.ObjectVisibilityFilter = ObjectVisibilityFilter;
+-- app.FilterItemSource = FilterItemSource;
+-- app.FilterItemClass_CustomCollect = FilterItemClass_CustomCollect;
+-- app.FilterItemClass_RequireFaction = FilterItemClass_RequireFaction;
+-- app.FilterItemClass_RequiredSkill = FilterItemClass_RequiredSkill;
+-- app.FilterItemClass_PetBattles = FilterItemClass_PetBattles;
+-- app.FilterItemClass_PvP = FilterItemClass_PvP;
+-- app.FilterItemClass_RequireBinding = FilterItemClass_RequireBinding;
+-- app.ItemIsInGame = ItemIsInGame;
+-- app.FilterItemClass_UnobtainableItem = FilterItemClass_UnobtainableItem;
+-- app.FilterItemClass_RequireRacesCurrentFaction = FilterItemClass_RequireRacesCurrentFaction;
+-- app.FilterItemClass_RequireRaces = FilterItemClass_RequireRaces;
+-- app.FilterItemClass_RequireItemFilter = FilterItemClass_RequireItemFilter;
+-- app.FilterItemClass_RequireClasses = FilterItemClass_RequireClasses;
+-- app.FilterItemClass_IgnoreBoEFilter = FilterItemClass_IgnoreBoEFilter;
+-- app.FilterItemClass = FilterItemClass;
+-- app.FilterItemBind = FilterItemBind;
+-- app.FilterGroupsByCompletion = FilterGroupsByCompletion;
+-- app.FilterGroupsByLevel = FilterGroupsByLevel;
+-- app.IsBoP = IsBoP;
+-- app.NoFilter = NoFilter;
+-- app.Filter = Filter;
 
 -- Default Filter Settings (changed in app.Startup and in the Options Menu)
-app.VisibilityFilter = app.ObjectVisibilityFilter;
-app.GroupFilter = app.FilterItemClass;
-app.GroupRequirementsFilter = app.NoFilter;
-app.GroupVisibilityFilter = app.NoFilter;
-app.ItemBindFilter = app.FilterItemBind;
-app.ItemSourceFilter = app.FilterItemSource;
-app.ItemTypeFilter = app.NoFilter;
-app.CollectedItemVisibilityFilter = app.NoFilter;
-app.ClassRequirementFilter = app.NoFilter;
-app.RaceRequirementFilter = app.NoFilter;
-app.RequireBindingFilter = app.NoFilter;
-app.PvPFilter = app.NoFilter;
-app.PetBattleFilter = app.NoFilter;
-app.UnobtainableFilter = app.NoFilter;
-app.RequireEventFilter = app.Modules.Events.FilterIsEventActive;
-app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
-app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
-app.RequiredSkillFilter = app.NoFilter;
-app.ShowTrackableThings = app.Filter;
-app.DefaultGroupFilter = app.Filter;
-app.DefaultThingFilter = app.Filter;
+-- app.VisibilityFilter = app.ObjectVisibilityFilter;
+-- app.GroupFilter = app.FilterItemClass;
+-- app.GroupRequirementsFilter = app.NoFilter;
+-- app.GroupVisibilityFilter = app.NoFilter;
+-- app.ItemBindFilter = app.FilterItemBind;
+-- app.ItemSourceFilter = app.FilterItemSource;
+-- app.ItemTypeFilter = app.NoFilter;
+-- app.CollectedItemVisibilityFilter = app.NoFilter;
+-- app.ClassRequirementFilter = app.NoFilter;
+-- app.RaceRequirementFilter = app.NoFilter;
+-- app.RequireBindingFilter = app.NoFilter;
+-- app.PvPFilter = app.NoFilter;
+-- app.PetBattleFilter = app.NoFilter;
+-- app.UnobtainableFilter = app.NoFilter;
+-- app.RequireEventFilter = app.Modules.Events.FilterIsEventActive;
+-- app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
+-- app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
+-- app.RequiredSkillFilter = app.NoFilter;
+-- app.ShowTrackableThings = app.Filter;
+-- app.DefaultGroupFilter = app.Filter;
+-- app.DefaultThingFilter = app.Filter;
 
 -- Recursive Checks
 app.VerifyCache = function()
@@ -13930,7 +13931,7 @@ end
 app.RecursiveCharacterRequirementsFilter = RecursiveCharacterRequirementsFilter;
 -- Recursively check outwards to find if any parent group restricts the filter for the current settings
 local function RecursiveGroupRequirementsFilter(group)
-	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
+	if app.GroupFilter(group) then
 		local filterParent = group.sourceParent or group.parent;
 		if filterParent then
 			return RecursiveGroupRequirementsFilter(filterParent)
@@ -13942,7 +13943,7 @@ end
 app.RecursiveGroupRequirementsFilter = RecursiveGroupRequirementsFilter;
 -- Recursively check outwards within the direct parent chain only to find if any parent group restricts the filter for this character
 local function RecursiveDirectGroupRequirementsFilter(group)
-	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
+	if app.GroupFilter(group) then
 		local filterParent = group.parent;
 		if filterParent then
 			return RecursiveDirectGroupRequirementsFilter(filterParent)
@@ -13952,14 +13953,14 @@ local function RecursiveDirectGroupRequirementsFilter(group)
 	return false;
 end
 app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter;
-local function RecursiveUnobtainableFilter(group)
-	if app.UnobtainableFilter(group) and app.RequireEventFilter(group) then
-		if group.parent then return RecursiveUnobtainableFilter(group.parent); end
-		return true;
-	end
-	return false;
-end
-app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
+-- local function RecursiveUnobtainableFilter(group)
+-- 	if app.UnobtainableFilter(group) and app.RequireEventFilter(group) then
+-- 		if group.parent then return RecursiveUnobtainableFilter(group.parent); end
+-- 		return true;
+-- 	end
+-- 	return false;
+-- end
+-- app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
 -- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
 -- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
 local function RecursiveFirstParentWithField(group, field, followSource)
@@ -14078,12 +14079,17 @@ local function SetThingVisibility(parent, group)
 	group.visible = visible;
 end
 local UpdateGroups;
-local RecursiveGroupRequirementsFilter, GroupRequirementsFilter, GroupFilter;
+local RecursiveGroupRequirementsFilter, GroupFilter, Filters_ItemUnbound, ItemUnboundSetting, FilterSet, FilterGet
 -- Local caches for some heavily used functions within updates
 local function CacheFilterFunctions()
-	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
-	GroupRequirementsFilter = app.GroupRequirementsFilter;
-	GroupFilter = app.GroupFilter;
+	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter
+	GroupFilter = app.GroupFilter
+	FilterSet = app.Modules.Filter.Set
+	FilterGet = app.Modules.Filter.Get
+	Filters_ItemUnbound = app.Modules.Filter.Filters.ItemUnbound
+	ItemUnboundSetting = FilterGet.ItemUnbound()
+	app.PrintDebug("CacheFilterFunctions")
+	app.PrintDebug("ItemUnboundSetting",ItemUnboundSetting)
 end
 local function UpdateGroup(parent, group)
 	-- local debug = group.criteriaID == 2204;
@@ -14115,7 +14121,7 @@ local function UpdateGroup(parent, group)
 		valid = RecursiveGroupRequirementsFilter(group);
 		-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
 	else
-		valid = GroupRequirementsFilter(group) and GroupFilter(group);
+		valid = GroupFilter(group);
 		-- if debug then print("UG.GRF/GF",valid) end
 	end
 
@@ -14148,13 +14154,15 @@ local function UpdateGroup(parent, group)
 			-- if app.DEBUG_PRINT then print("UpdateGroup.g",group.progress,group.total,group.__type) end
 
 			-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
-			local ItemBindFilter, NoFilter = app.ItemBindFilter, app.NoFilter;
-			if ItemBindFilter ~= NoFilter and ItemBindFilter(group) then
-				app.ItemBindFilter = NoFilter;
+			-- local ItemBindFilter, NoFilter = app.ItemBindFilter, app.NoFilter;
+			if ItemUnboundSetting and Filters_ItemUnbound(group) then
+				-- app.ItemBindFilter = NoFilter;
+				FilterSet.ItemUnbound()
 				-- Update the subgroups recursively...
 				UpdateGroups(group, g);
 				-- reapply the previous BoE filter
-				app.ItemBindFilter = ItemBindFilter;
+				FilterSet.ItemUnbound(true)
+				-- app.ItemBindFilter = ItemBindFilter;
 			else
 				UpdateGroups(group, g);
 			end
@@ -18167,7 +18175,7 @@ local IncludeUnavailableRecipes, IgnoreBoEFilter, CloneGroup;
 -- Set some logic which is used during recursion without needing to set it on every recurse
 local function SetRescursiveFilters()
 	IncludeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
-	IgnoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
+	IgnoreBoEFilter = app.Modules.Filter.SettingsFilters.IgnoreBoEFilter;
 	CloneGroup = app.CreateWrapFilterHeader;
 end
 -- If/when this section becomes a module, set Module.SearchResponse.SearchNil instead
@@ -19856,11 +19864,14 @@ customWindowUpdates["RaidAssistant"] = function(self)
 		end
 
 		-- Update the groups without forcing Debug Mode.
-		local visibilityFilter = app.VisibilityFilter;
-		app.VisibilityFilter = app.ObjectVisibilityFilter;
+		-- local visibilityFilter = app.VisibilityFilter;
+		-- app.VisibilityFilter = app.ObjectVisibilityFilter;
+		-- TODO: maybe make an alternate way for windows to Update while ignoring filters...
+		app.Modules.Filter.Set.Visible()
 		self:BuildData();
 		self:BaseUpdate(true);
-		app.VisibilityFilter = visibilityFilter;
+		app.Modules.Filter.Set.Visible(true)
+		-- app.VisibilityFilter = visibilityFilter;
 	end
 end;
 customWindowUpdates["Random"] = function(self)
@@ -23011,7 +23022,7 @@ app.InitDataCoroutine = function()
 	-- See if any Modules have 'OnReady' functions defined, and call them now
 	for _,module in pairs(app.Modules) do
 		if module.OnReady then
-			app.FunctionRunner.Run(module.OnReady);
+			app.FunctionRunner.Run(module.OnReady, ATTAccountWideData);
 		end
 	end
 
