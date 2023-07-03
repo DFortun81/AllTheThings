@@ -25,8 +25,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205002),	-- Blaise (PET!)
 					}),
 					n(DRAKEWATCHER_MANUSCRIPTS, {
-						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!) [Discord]	
-						i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!) [Mount Discord]
+						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!) [Discord]
+						i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!) [Mount Discord/Runaway]
 					}),
 					i(203710),	-- Everburning Key
 					i(206043),	-- Fyrakk's Frenzy (TOY!)

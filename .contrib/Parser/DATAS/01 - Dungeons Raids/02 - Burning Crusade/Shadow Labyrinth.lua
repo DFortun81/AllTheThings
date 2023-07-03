@@ -158,7 +158,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
 					["timeline"] = { "added 4.3.0.14732" },
-					["isBreadcrumb"] = true,
+					-- This was available to a character with 29643 already completed, the follow up of this 'breadcrumb'...
+					-- ["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(68, 68, 20),
 					["altQuests"] = {
 						10094,	-- The Codex of Blood (pre 4.0.3)
