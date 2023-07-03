@@ -586,6 +586,7 @@ app.L = {
 	["CLASS_BORDER_TOOLTIP"] = "Use your class color for the borders. This updates when you log onto another class.";
 
 	-- Features tab
+	["FEATURES_PAGE"] = FEATURES_LABEL;
 	["MINIMAP_LABEL"] = "Minimap Button";
 	["MODULES_LABEL"] = "Modules & Mini Lists";
 	["REPORTING_LABEL"] = "Reporting";
