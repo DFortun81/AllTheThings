@@ -899,7 +899,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			header(HEADERS.Item, 200597, {	-- Lover's Bouquet
 				q(70739, {	-- Bloodlines, Sweets, and Teraai
-					["sourceQuests"] = { 65806 },	-- Maruukai
+					["sourceQuests"] = {
+						65806,	-- Maruukai
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 191924 },	-- Hunter Narman
 					["coord"] = { 63.6, 40.5, OHNAHRAN_PLAINS },
 					["cost"] = { { "i", 199918, 1 }, },	-- 1x Honey Plum Tart
