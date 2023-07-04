@@ -89,17 +89,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 						["_encounter"] = { 1621, 4 },
 					}),
 					-- #if ANYCLASSIC
-					crit(12242, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, 4 },
-					}),
-					crit(12246, {	-- Anub'arak
-						["_encounter"] = { 1623, 4 },
-					}),
-					-- #else
 					crit(13349, {	-- Twin Val'kyr
 						["_encounter"] = { 1622, 4 },
 					}),
 					crit(13346, {	-- Anub'arak
+						["_encounter"] = { 1623, 4 },
+					}),
+					-- #else
+					crit(12242, {	-- Twin Val'kyr
+						["_encounter"] = { 1622, 4 },
+					}),
+					crit(12246, {	-- Anub'arak
 						["_encounter"] = { 1623, 4 },
 					}),
 					-- #endif
