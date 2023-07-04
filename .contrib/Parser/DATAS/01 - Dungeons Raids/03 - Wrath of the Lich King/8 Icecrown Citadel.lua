@@ -2650,16 +2650,16 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 			d(3, {	-- 10-Player (Normal)
 				n(STORMING_THE_CITADEL, {
 					ach(4531, {	-- Storming the Citadel (10 player)
-						crit(1, {	-- Lord Marrowgar
+						crit(12770, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 3 },
 						}),
-						crit(2, {	-- Lady Deathwhisper
+						crit(12773, {	-- Lady Deathwhisper
 							["_encounter"] = { 1625, 3 },
 						}),
-						crit(3, {	-- Icecrown Gunship Battle
+						crit(12771, {	-- Icecrown Gunship Battle
 							["_encounter"] = { 1626, 3 },
 						}),
-						crit(4, {	-- Deathbringer Saurfang
+						crit(12772, {	-- Deathbringer Saurfang
 							["_encounter"] = { 1628, 3 },
 						}),
 					}),
@@ -2758,13 +2758,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_PLAGUEWORKS, {
 					ach(4528, {	-- The Plagueworks (10 player)
-						crit(1, {	-- Festergut
+						crit(12759, {	-- Festergut
 							["_encounter"] = { 1629, 3 },
 						}),
-						crit(2, {	-- Rotface
+						crit(12760, {	-- Rotface
 							["_encounter"] = { 1630, 3 },
 						}),
-						crit(3, {	-- Professor Putricide
+						crit(12761, {	-- Professor Putricide
 							["_encounter"] = { 1631, 3 },
 						}),
 					}),
@@ -2833,10 +2833,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_CRIMSON_HALLS, {
 					ach(4529, {	-- The Crimson Hall (10 player)
-						crit(1, {	-- Blood Prince Council
+						crit(12762, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 3 },
 						}),
-						crit(2, {	-- Blood-Queen Lana'thel
+						crit(12763, {	-- Blood-Queen Lana'thel
 							["_encounter"] = { 1633, 3 },
 						}),
 					}),
@@ -2886,10 +2886,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_FROSTWING_HALLS, {
 					ach(4527, {	-- The Frostwing Halls (10 player)
-						crit(1, {	-- Valithria Dreamwalker
+						crit(12757, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 3 },
 						}),
-						crit(2, {	-- Sindragosa
+						crit(12758, {	-- Sindragosa
 							["_encounter"] = { 1635, 3 },
 						}),
 					}),
@@ -2989,16 +2989,16 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(STORMING_THE_CITADEL, {
 					ach(4628, {	-- Heroic: Storming the Citadel (10 player)
-						crit(1, {	-- Lord Marrowgar
+						crit(13090, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 5 },
 						}),
-						crit(2, {	-- Lady Deathwhisper
+						crit(13104, {	-- Lady Deathwhisper
 							["_encounter"] = { 1625, 5 },
 						}),
-						crit(3, {	-- Icecrown Gunship Battle
+						crit(13110, {	-- Icecrown Gunship Battle
 							["_encounter"] = { 1626, 5 },
 						}),
-						crit(4, {	-- Deathbringer Saurfang
+						crit(13113, {	-- Deathbringer Saurfang
 							["_encounter"] = { 1628, 5 },
 						}),
 					}),
@@ -3100,13 +3100,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_PLAGUEWORKS, {
 					ach(4629, {	-- Heroic: The Plagueworks (10 player)
-						crit(1, {	-- Festergut
+						crit(13116, {	-- Festergut
 							["_encounter"] = { 1629, 5 },
 						}),
-						crit(2, {	-- Rotface
+						crit(13119, {	-- Rotface
 							["_encounter"] = { 1630, 5 },
 						}),
-						crit(3, {	-- Professor Putricide
+						crit(13128, {	-- Professor Putricide
 							["_encounter"] = { 1631, 5 },
 						}),
 					}),
@@ -3178,10 +3178,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_CRIMSON_HALLS, {
 					ach(4630, {	-- Heroic: The Crimson Hall (10 player)
-						crit(1, {	-- Blood Prince Council
+						crit(13122, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 5 },
 						}),
-						crit(2, {	-- Blood-Queen Lana'thel
+						crit(13131, {	-- Blood-Queen Lana'thel
 							["_encounter"] = { 1633, 5 },
 						}),
 					}),
@@ -3234,10 +3234,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_FROSTWING_HALLS, {
 					ach(4631, {	-- Heroic: The Frostwing Halls (10 player)
-						crit(1, {	-- Valithria Dreamwalker
+						crit(13125, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 5 },
 						}),
-						crit(2, {	-- Sindragosa
+						crit(13134, {	-- Sindragosa
 							["_encounter"] = { 1635, 5 },
 						}),
 					}),
@@ -3346,16 +3346,16 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(STORMING_THE_CITADEL, {
 					ach(4604, {	-- Storming the Citadel (25 player)
-						crit(1, {	-- Lord Marrowgar
+						crit(12945, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 4 },
 						}),
-						crit(2, {	-- Lady Deathwhisper
+						crit(12948, {	-- Lady Deathwhisper
 							["_encounter"] = { 1625, 4 },
 						}),
-						crit(3, {	-- Icecrown Gunship Battle
+						crit(12947, {	-- Icecrown Gunship Battle
 							["_encounter"] = { 1626, 4 },
 						}),
-						crit(4, {	-- Deathbringer Saurfang
+						crit(12946, {	-- Deathbringer Saurfang
 							["_encounter"] = { 1628, 4 },
 						}),
 					}),
@@ -3459,13 +3459,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_PLAGUEWORKS, {
 					ach(4605, {	-- The Plagueworks (25 player)
-						crit(1, {	-- Festergut
+						crit(12949, {	-- Festergut
 							["_encounter"] = { 1629, 4 },
 						}),
-						crit(2, {	-- Rotface
+						crit(12950, {	-- Rotface
 							["_encounter"] = { 1630, 4 },
 						}),
-						crit(3, {	-- Professor Putricide
+						crit(12951, {	-- Professor Putricide
 							["_encounter"] = { 1631, 4 },
 						}),
 					}),
@@ -3543,10 +3543,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_CRIMSON_HALLS, {
 					ach(4606, {	-- The Crimson Hall (25 player)
-						crit(1, {	-- Blood Prince Council
+						crit(12952, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 4 },
 						}),
-						crit(2, {	-- Blood-Queen Lana'thel
+						crit(12953, {	-- Blood-Queen Lana'thel
 							["_encounter"] = { 1633, 4 },
 						}),
 					}),
@@ -3596,10 +3596,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_FROSTWING_HALLS, {
 					ach(4607, {	-- The Frostwing Halls (25 player)
-						crit(1, {	-- Valithria Dreamwalker
+						crit(12954, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 4 },
 						}),
-						crit(2, {	-- Sindragosa
+						crit(12955, {	-- Sindragosa
 							["_encounter"] = { 1635, 4 },
 						}),
 					}),
@@ -3705,16 +3705,16 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(STORMING_THE_CITADEL, {
 					ach(4632, {	-- Heroic: Storming the Citadel (25 player)
-						crit(1, {	-- Lord Marrowgar
+						crit(13091, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 6 },
 						}),
-						crit(2, {	-- Lady Deathwhisper
+						crit(13106, {	-- Lady Deathwhisper
 							["_encounter"] = { 1625, 6 },
 						}),
-						crit(3, {	-- Icecrown Gunship Battle
+						crit(13111, {	-- Icecrown Gunship Battle
 							["_encounter"] = { 1626, 6 },
 						}),
-						crit(4, {	-- Deathbringer Saurfang
+						crit(13114, {	-- Deathbringer Saurfang
 							["_encounter"] = { 1628, 6 },
 						}),
 					}),
@@ -3821,13 +3821,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_PLAGUEWORKS, {
 					ach(4633, {	-- Heroic: The Plagueworks (25 player)
-						crit(1, {	-- Festergut
+						crit(13117, {	-- Festergut
 							["_encounter"] = { 1629, 6 },
 						}),
-						crit(2, {	-- Rotface
+						crit(13120, {	-- Rotface
 							["_encounter"] = { 1630, 6 },
 						}),
-						crit(3, {	-- Professor Putricide
+						crit(13129, {	-- Professor Putricide
 							["_encounter"] = { 1631, 6 },
 						}),
 					}),
@@ -3908,10 +3908,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_CRIMSON_HALLS, {
 					ach(4634, {	-- Heroic: The Crimson Hall (25 player)
-						crit(1, {	-- Blood Prince Council
+						crit(13123, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 6 },
 						}),
-						crit(2, {	-- Blood-Queen Lana'thel
+						crit(13132, {	-- Blood-Queen Lana'thel
 							["_encounter"] = { 1633, 6 },
 						}),
 					}),
@@ -3964,10 +3964,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(THE_FROSTWING_HALLS, {
 					ach(4635, {	-- Heroic: The Frostwing Halls (25 player)
-						crit(1, {	-- Valithria Dreamwalker
+						crit(13126, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 6 },
 						}),
-						crit(2, {	-- Sindragosa
+						crit(13135, {	-- Sindragosa
 							["_encounter"] = { 1635, 6 },
 						}),
 					}),
