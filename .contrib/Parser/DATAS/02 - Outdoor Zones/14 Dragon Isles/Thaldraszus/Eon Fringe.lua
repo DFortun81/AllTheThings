@@ -166,6 +166,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(206695),	-- Pale Duskblossom
 					},
 				}),
+				q(75989, {	-- The Black Prince Parade
+					["provider"] = { "n", 203769 },	-- Bartender Bob
+					["coord"] = { 52.1, 81.5, THALDRASZUS },
+					["g"] = {
+						i(206683),	-- Wrathion's Tab
+					},
+				}),				
 				q(75991, {	-- What Could Have Been
 					["provider"] = { "n", 203769 },	-- Bartender Bob
 					["coord"] = { 52.1, 81.5, THALDRASZUS },
@@ -224,5 +231,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(76350),	-- after turn in The Chronosmith (questID 76350)
 
-	q(77172),	-- Encapsulated Destiny was in reward (once per week?)
+	q(77172),	-- weekly lockout for Encapsulated Destiny (itemID 207002) as reward from daily quest
 }));

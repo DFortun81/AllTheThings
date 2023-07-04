@@ -529,7 +529,6 @@ root(ROOTS.Unsorted, {
 			i(206602),	-- Mechanized Cog
 			i(206638),	-- Corrupted Ashbringer
 			i(206645),	-- Cursed Cloth
-			i(206683),	-- Wrathion's Tab
 			i(206771),	-- Pattern: Cursed Cloth
 			i(206775),	-- Map to Suramar
 			i(206800),	-- Arcane Detection Rod
