@@ -1525,7 +1525,8 @@ app.DetermineItemLink = function(sourceID)
 	-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No ModID or BonusID match)");
 end
 app.IsComplete = function(o)
-	if o.total and o.total > 0 then return o.total == o.progress; end
+	local total = o.total
+	if total and total > 0 then return total == o.progress; end
 	if o.collectible then return o.collected; end
 	if o.trackable then return o.saved; end
 	return true;
@@ -4588,25 +4589,9 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				end
 
 				if app.Settings:GetTooltipSetting("Currencies") then
-					-- app.PrintDebug("Currencies",group.hash,#entries)
-					local costCollectibles = group.costCollectibles;
-					-- app.PrintDebug("costCollectibles",group.hash,costCollectibles and #costCollectibles)
-					if costCollectibles and #costCollectibles > 0 then
-						local costAmounts = app.BuildCostTable(costCollectibles, paramB);
-						local currencyCount, CheckCollectible = 0, app.CheckCollectible;
-						local entryGroup, collectible;
-						for _,costEntry in ipairs(entries) do
-							entryGroup = costEntry.group;
-							collectible = CheckCollectible(entryGroup);
-							-- anything shown in the tooltip which is not collected according to the user's settings should be considered for the cost
-							if collectible then
-								-- app.PrintDebug("Purchasable",entryGroup.hash,collectible,collected,entryGroup.total - entryGroup.progress,"x",costAmounts[entryGroup.hash])
-								currencyCount = currencyCount + (costAmounts[entryGroup.hash] or 0);
-							end
-						end
-						if currencyCount > 0 then
-							tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"], right = formatNumericWithCommas(currencyCount) });
-						end
+					local currencyCount = app.CalculateTotalCosts(group, paramB)
+					if currencyCount > 0 then
+						tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"], right = formatNumericWithCommas(currencyCount) });
 					end
 				end
 			end
@@ -4681,25 +4666,39 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 	return group;
 end
 app.GetCachedSearchResults = GetCachedSearchResults;
-end	-- Search results Lib
 
--- Builds a hash table of hashes of collectibles which use the specified costID (without regard to being an item or currency) and storing the quantity in the hash table
-app.BuildCostTable = function(collectibles, costID)
-	local costAmounts, cost = {};
-	for _,collectible in ipairs(collectibles) do
-		cost = collectible.cost;
-		if cost then
-			for _,eachCost in ipairs(cost) do
-				if eachCost[2] == costID then
-					costAmounts[collectible.hash] = eachCost[3];
+local IsComplete = app.IsComplete
+local function CalculateGroupsCostAmount(g, costID)
+	local o, subg, subcost, c
+	local cost = 0
+	for i=1,#g do
+		o = g[i]
+		subcost = o.visible and not IsComplete(o) and o.cost or nil
+		if subcost then
+			for i=1,#subcost do
+				c = subcost[i]
+				if c[2] == costID then
+					cost = cost + c[3];
+					break
 				end
 			end
 		end
+		subg = o.g
+		if subg then
+			cost = cost + CalculateGroupsCostAmount(subg, costID)
+		end
 	end
-	-- app.PrintDebug("Total Costs for",costID)
-	-- if app.DEBUG_PRINT then app.PrintTable(costAmounts) end
-	return costAmounts;
+	return cost
 end
+-- Returns the total amount of 'costID' for all non-collected Things within the group (not including the group itself)
+app.CalculateTotalCosts = function(group, costID)
+	-- app.PrintDebug("CalculateTotalCosts",group.hash,costID)
+	local g = group and group.g
+	local cost = g and CalculateGroupsCostAmount(g, costID) or 0
+	-- app.PrintDebug("CalculateTotalCosts",group.hash,costID,"=>",cost)
+	return cost
+end
+end	-- Search results Lib
 
 -- Auto-Expansion logic
 do
