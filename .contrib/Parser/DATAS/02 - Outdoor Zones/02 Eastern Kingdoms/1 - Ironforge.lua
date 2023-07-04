@@ -2029,7 +2029,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8117, {	-- Wizbang Booms
 					["coord"] = { 31.8, 63.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					-- #if BEFORE 10.1
 					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					-- #else
+					["description"] = "This NPC is only available on July 4th.",
+					-- #endif
 					["sym"] = {{"select","itemID",
 						8626,    -- Blue Sparkler
 						8625,    -- White Sparkler

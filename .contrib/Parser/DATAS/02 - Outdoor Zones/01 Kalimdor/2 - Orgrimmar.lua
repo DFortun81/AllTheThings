@@ -5371,7 +5371,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8122, {	-- Kizzak Sparks
 					["coord"] = { 57.8, 56.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					-- #if BEFORE 10.1
 					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					-- #else
+					["description"] = "This NPC is only available on July 4th.",
+					-- #endif
 					["groups"] = {
 						i(8626),	-- Blue Sparkler
 						i(8625),	-- White Sparkler

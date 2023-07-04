@@ -2185,7 +2185,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8116, {	-- Ziggle Sparks
 					["coord"] = { 41.6, 74.4, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
+					-- #if BEFORE 10.1
 					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					-- #else
+					["description"] = "This NPC is only available on July 4th.",
+					-- #endif
 					["sym"] = {{"select", "itemID",
 						8626,	-- Blue Sparkler
 						8625,	-- White Sparkler
