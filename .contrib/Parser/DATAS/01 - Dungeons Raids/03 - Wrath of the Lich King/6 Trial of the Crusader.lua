@@ -14,82 +14,113 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(3917, {	-- Call of the Crusade (10 player)
-					crit(1, {	-- Northrend Beasts
+					crit(13326, {	-- Northrend Beasts
 						["_encounter"] = { 1618, 3 },
 					}),
-					crit(2, {	-- Lord Jaraxxus
+					crit(13327, {	-- Lord Jaraxxus
 						["_encounter"] = { 1619, 3 },
 					}),
-					crit(3, {	-- Champions of the Alliance
+					-- #if ANYCLASSIC
+					-- Blizzaaaaard why do you waste my time like this?
+					crit(13328, {	-- Champions of the Alliance
 						["_encounter"] = { 1620, 3 },
 					}),
-					crit(3, {	-- Champions of the Horde
+					crit(13328, {	-- Champions of the Horde
 						["_encounter"] = { 1621, 3 },
 					}),
-					crit(4, {	-- Twin Val'kyr
+					crit(13329, {	-- Twin Val'kyr
 						["_encounter"] = { 1622, 3 },
 					}),
-					crit(5, {	-- Anub'arak
+					crit(13308, {	-- Anub'arak
 						["_encounter"] = { 1623, 3 },
 					}),
+					-- #else
+					crit(12236, {	-- Champions of the Alliance
+						["_encounter"] = { 1620, 3 },
+					}),
+					crit(12236, {	-- Champions of the Horde
+						["_encounter"] = { 1621, 3 },
+					}),
+					crit(12240, {	-- Twin Val'kyr
+						["_encounter"] = { 1622, 3 },
+					}),
+					crit(12244, {	-- Anub'arak
+						["_encounter"] = { 1623, 3 },
+					}),
+					-- #endif
 				}),
 				ach(3918, {	-- Call of the Grand Crusade (10 player)
-					crit(1, {	-- Northrend Beasts
+					crit(12229, {	-- Northrend Beasts
 						["_encounter"] = { 1618, 5 },
 					}),
-					crit(2, {	-- Lord Jaraxxus
+					crit(12233, {	-- Lord Jaraxxus
 						["_encounter"] = { 1619, 5 },
 					}),
-					crit(3, {	-- Champions of the Alliance
+					crit(12237, {	-- Champions of the Alliance
 						["_encounter"] = { 1620, 5 },
 					}),
-					crit(3, {	-- Champions of the Horde
+					crit(12237, {	-- Champions of the Horde
 						["_encounter"] = { 1621, 5 },
 					}),
-					crit(4, {	-- Twin Val'kyr
+					crit(12241, {	-- Twin Val'kyr
 						["_encounter"] = { 1622, 5 },
 					}),
-					crit(5, {	-- Anub'arak
+					crit(12245, {	-- Anub'arak
 						["_encounter"] = { 1623, 5 },
 					}),
 				}),
 				ach(3916, {	-- Call of the Crusade (25 player)
-					crit(1, {	-- Northrend Beasts
+					-- #if ANYCLASSIC
+					crit(13346, {	-- Northrend Beasts
 						["_encounter"] = { 1618, 4 },
 					}),
-					crit(2, {	-- Lord Jaraxxus
+					-- #else
+					crit(12230, {	-- Northrend Beasts
+						["_encounter"] = { 1618, 4 },
+					}),
+					-- #endif
+					crit(13347, {	-- Lord Jaraxxus
 						["_encounter"] = { 1619, 4 },
 					}),
-					crit(3, {	-- Champions of the Alliance
+					crit(13348, {	-- Champions of the Alliance
 						["_encounter"] = { 1620, 4 },
 					}),
-					crit(3, {	-- Champions of the Horde
+					crit(13348, {	-- Champions of the Horde
 						["_encounter"] = { 1621, 4 },
 					}),
-					crit(4, {	-- Twin Val'kyr
+					-- #if ANYCLASSIC
+					crit(12242, {	-- Twin Val'kyr
 						["_encounter"] = { 1622, 4 },
 					}),
-					crit(5, {	-- Anub'arak
+					crit(12246, {	-- Anub'arak
 						["_encounter"] = { 1623, 4 },
 					}),
+					-- #else
+					crit(13349, {	-- Twin Val'kyr
+						["_encounter"] = { 1622, 4 },
+					}),
+					crit(13346, {	-- Anub'arak
+						["_encounter"] = { 1623, 4 },
+					}),
+					-- #endif
 				}),
 				ach(3812, {	-- Call of the Grand Crusade (25 player)
-					crit(1, {	-- Northrend Beasts
+					crit(12231, {	-- Northrend Beasts
 						["_encounter"] = { 1618, 6 },
 					}),
-					crit(2, {	-- Lord Jaraxxus
+					crit(12235, {	-- Lord Jaraxxus
 						["_encounter"] = { 1619, 6 },
 					}),
-					crit(3, {	-- Champions of the Alliance
+					crit(12239, {	-- Champions of the Alliance
 						["_encounter"] = { 1620, 6 },
 					}),
-					crit(3, {	-- Champions of the Horde
+					crit(12239, {	-- Champions of the Horde
 						["_encounter"] = { 1621, 6 },
 					}),
-					crit(4, {	-- Twin Val'kyr
+					crit(12243, {	-- Twin Val'kyr
 						["_encounter"] = { 1622, 6 },
 					}),
-					crit(5, {	-- Anub'arak
+					crit(12247, {	-- Anub'arak
 						["_encounter"] = { 1623, 6 },
 					}),
 				}),
