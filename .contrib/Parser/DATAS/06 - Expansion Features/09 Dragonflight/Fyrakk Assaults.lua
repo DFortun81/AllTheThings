@@ -62,7 +62,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 75.1, 69.6, OHNAHRAN_PLAINS },
 				}),
 				q(74569, {	-- Deny Them Resources
-					["provider"] = { "n", 201860 },	-- Tigari Khan
+					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
 					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
 				}),
 				q(74775, {	-- Disciple of Fyrakk: Kretchenwrath
@@ -70,6 +70,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					-- ["maps"] = { OHNAHRAN_PLAINS },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
+				}),
+				q(75182, {	-- Grand Theft Mammoth
+					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
+					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
 				}),
 				q(75888, {	-- Suffusion Camp
 					["provider"] = { "n", 201648 },	-- Somnikus
