@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},{"prune"}},	-- prune the sub-groups of these Quests
 					}),
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, bubbleDown({ ["repeatable"] = true }, {
 					q(76015, {	-- Heart of Iron
 						["g"] = {
 							i(205939),	-- Iron Titan Key
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205941),  -- Spit-covered Key
 						},
 					}),
-				}),
+				})),
 				-- Quest Starting Items... apparently random on any digs
 				n(DROPS, sharedData({
 					["description"] = "Randomly available to pick up during a Dig.",
