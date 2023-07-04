@@ -4675,8 +4675,8 @@ local function CalculateGroupsCostAmount(g, costID)
 		o = g[i]
 		subcost = o.visible and not IsComplete(o) and o.cost or nil
 		if subcost then
-			for i=1,#subcost do
-				c = subcost[i]
+			for j=1,#subcost do
+				c = subcost[j]
 				if c[2] == costID then
 					cost = cost + c[3];
 					break
@@ -22897,7 +22897,7 @@ app.InitDataCoroutine = function()
 			end
 		end
 		if toClean then
-			local copyTables = { "Buildings","Factions","FlightPaths","Quests" };
+			local copyTables = { "Buildings","Factions","FlightPaths" };
 			local cleanCharacterFunc = function(guid)
 				-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
 				local character = characterData[guid];
