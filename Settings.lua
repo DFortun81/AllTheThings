@@ -2194,8 +2194,8 @@ function(self)
 end)
 checkboxShowAllNoChance:AlignBelow(checkboxShowAllUnobtainable, 1)
 
-last = checkboxShowAllNoChance
-count = 0
+local last = checkboxShowAllNoChance
+local count = 0
 for k,v in pairs(unobtainables) do
 	if v[1] == 1 then
 		local filter = child:CreateCheckBox(v[3],
@@ -3445,7 +3445,7 @@ local function changeBackgroundColor(restore)
 	end
 
 	-- Update our internal storage
- 	r, g, b, a = newR, newG, newB, newA
+ 	local r, g, b, a = newR, newG, newB, newA
 	settings:Set("Window:BackgroundColor", {r = newR, g = newG, b = newB, a = newA})
 
  	-- And update the actual windows
@@ -3465,7 +3465,7 @@ local function changeBorderColor(restore)
 	end
 
 	-- Update our internal storage
- 	r, g, b, a = newR, newG, newB, newA
+ 	local r, g, b, a = newR, newG, newB, newA
 	settings:Set("Window:BorderColor", {r = newR, g = newG, b = newB, a = newA})
 
  	-- And update the actual windows
@@ -3634,7 +3634,7 @@ end)();
 (function()
 -- Create the page
 local child = settings:CreateOptionsPage(L["FEATURES_PAGE"], true)
-	
+
 -- CONTENT
 
 -- Column 1
