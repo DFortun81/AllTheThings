@@ -19,7 +19,7 @@ local function EmptyFunction() end
 -- Function which returns if a Thing has a cost based on a given 'ref' Thing, which has been previously determined as a
 -- possible collectible without regard to filtering
 local function SubCheckCollectible(ref)
-	-- app.PrintDebug("CheckCollectible",ref.hash)
+	-- app.PrintDebug("SubCheckCollectible",ref.hash)
 	-- Used as a cost for something which is collectible itself and not collected
 	if ref.collectible and not ref.collected then
 		-- app.PrintDebug("Cost via Collectible",ref.hash)
@@ -61,6 +61,7 @@ local function SubCheckCollectible(ref)
 end
 
 local function CheckCollectible(ref)
+	-- app.PrintDebug("CheckCollectible",ref.hash,ref.__sourcePath)
 	-- don't include groups which don't meet the current filters
 	if (RecursiveGroupRequirementsFilter or EmptyFunction)(ref) then
 		return SubCheckCollectible(ref);
@@ -71,7 +72,6 @@ local function NonAccountCostAllowed(t)
 	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
 	local parent = rawget(t, "parent");
 	if parent and parent.questID and parent.saved then
-		-- app.PrintDebug("CAC:t.parent.saved",t.hash)
 		return;
 	end
 	return true;
@@ -173,7 +173,8 @@ app.UpdateCosts = function()
 	-- Get all itemIDAsCost entries
 	for itemID,refs in pairs(SearchForFieldContainer("itemIDAsCost")) do
 		-- app.DEBUG_PRINT = nil
-		-- if itemID == 2029 then app.DEBUG_PRINT = true end
+		-- if itemID == 105867.06 then app.DEBUG_PRINT = true end
+		-- if itemID == 105867 then app.DEBUG_PRINT = true end
 		-- app.PrintDebug("Check Cost Item",itemID)
 		UpdateCostsByItemID(itemID, refresh, refs);
 	end
@@ -227,7 +228,7 @@ app.CollectibleAsCost = function(t)
 		return;
 	end
 	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
-	if not app.MODE_DEBUG_OR_ACCOUNT and NonAccountCostAllowed(t) then
+	if not app.MODE_DEBUG_OR_ACCOUNT and not NonAccountCostAllowed(t) then
 		-- app.PrintDebug("CAC:t.parent.saved",t.hash)
 		return;
 	end
