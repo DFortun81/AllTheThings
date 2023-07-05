@@ -17,7 +17,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(OPERATION_GNOMEREGA
 		["races"] = ALLIANCE_ONLY,
 		-- #if ANYCLASSIC
 		["OnUpdate"] = [[function(t)
-			if ATTClassicSettings.Unobtainables[]] .. CATA_PHASE_ONE .. [[] then
+			if _.Settings.GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
 				t.u = ]] .. REMOVED_FROM_GAME .. [[;
 				t.rwp = nil;
 			else

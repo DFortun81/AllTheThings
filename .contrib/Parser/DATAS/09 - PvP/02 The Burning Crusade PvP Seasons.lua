@@ -22,7 +22,7 @@ local function MarkOfWHOOOWHATNow(t)
 end
 -- #if BEFORE 4.0.1
 local SEASONONE_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_TWO .. [[] then
+	if _.Settings.GetUnobtainableFilter(]] .. TBC_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. TBC_PHASE_ONE .. [[;
@@ -30,7 +30,7 @@ local SEASONONE_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 20102; end
 end]];
 local MERCILESS_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+	if _.Settings.GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. TBC_PHASE_TWO .. [[;
@@ -38,7 +38,7 @@ local MERCILESS_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 20300; end
 end]];
 local VENGEFUL_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE .. [[] then
+	if _.Settings.GetUnobtainableFilter(]] .. TBC_PHASE_FIVE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. TBC_PHASE_THREE .. [[;
@@ -46,7 +46,7 @@ local VENGEFUL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 20403; end
 end]];
 local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_ONE .. [[] then
+	if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_ONE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. TBC_PHASE_FIVE .. [[;

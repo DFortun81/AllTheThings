@@ -642,7 +642,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							-- #if ANYCLASSIC
 							ach(17341, {	-- Cutting Edge: Ulduar
 								["OnUpdate"] = [[function(t)
-									if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+									if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
 									else
@@ -943,7 +943,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							-- #if ANYCLASSIC
 							ach(17340, {	-- Ahead of the Curve: Yogg-Saron
 								["OnUpdate"] = [[function(t)
-									if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+									if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
 									else
@@ -1557,7 +1557,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							-- #if ANYCLASSIC
 							ach(17341, {	-- Cutting Edge: Ulduar
 								["OnUpdate"] = [[function(t)
-									if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+									if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
 									else
@@ -1880,7 +1880,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							-- #if ANYCLASSIC
 							ach(17340, {	-- Ahead of the Curve: Yogg-Saron
 								["OnUpdate"] = [[function(t)
-									if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+									if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
 									else
@@ -2382,7 +2382,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						-- #if ANYCLASSIC
 						ach(17341, {	-- Cutting Edge: Ulduar
 							["OnUpdate"] = [[function(t)
-								if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+								if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 									t.u = ]] .. REMOVED_FROM_GAME .. [[;
 									t.rwp = nil;
 								else
@@ -2832,7 +2832,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						-- #if ANYCLASSIC
 						ach(17340, {	-- Ahead of the Curve: Yogg-Saron
 							["OnUpdate"] = [[function(t)
-								if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+								if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 									t.u = ]] .. REMOVED_FROM_GAME .. [[;
 									t.rwp = nil;
 								else

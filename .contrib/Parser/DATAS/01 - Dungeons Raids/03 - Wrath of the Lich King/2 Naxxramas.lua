@@ -5,7 +5,7 @@
 -- They were instead moved to Heroic+ dungeon bosses.
 -- #if ANYCLASSIC
 local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then
+	if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
@@ -375,7 +375,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39261),	-- Tainted Girdle of Mending
 								i(39263, {	-- Dissevered Leggings
 									-- #if ANYCLASSIC
-									["OnUpdate"] = [[function(t) if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
+									["OnUpdate"] = [[function(t) if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
 									-- #if BEFORE 8.0.1
 									["description"] = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.",
 									-- #endif
@@ -551,7 +551,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39293),	-- Blackened Legplates of Feugen
 								i(39263, {	-- Dissevered Leggings
 									-- #if ANYCLASSIC
-									["OnUpdate"] = [[function(t) if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
+									["OnUpdate"] = [[function(t) if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
 									-- #if BEFORE 8.0.1
 									["description"] = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.",
 									-- #endif
