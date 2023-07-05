@@ -21,15 +21,7 @@ root(ROOTS.Zones, {
 					}},
 				})),
 				classicAch(1676, {	-- Loremaster of Eastern Kingdoms
-					-- #if BEFORE WRATH
-					["description"] = "Complete 700 quests in Eastern Kingdoms.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_EASTERNKINGDOMS_OnUpdate]],
-					["rank"] = 700,
-					-- #else
+					-- #if AFTER CATA
 					["sym"] = {{"meta_achievement",
 						4896,	-- Arathi Highlands Quests
 						4900,	-- Badlands Quests
@@ -51,22 +43,28 @@ root(ROOTS.Zones, {
 						12456,	-- Loch Modan & Wetlands Quests
 						-- #ENDIF
 					}},
+					-- #else
+					-- #if BEFORE WRATH
+					["description"] = "Complete 700 quests in Eastern Kingdoms.",
+					["rank"] = 700,
 					-- #endif
-					-- #if BEFORE 4.0.3
+					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. EASTERN_KINGDOMS .. [[); end]],
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
 				classicAch(1677, {	-- Loremaster of Eastern Kingdoms
+					-- #if BEFORE CATA
 					-- #if BEFORE WRATH
 					["description"] = "Complete 550 quests in Eastern Kingdoms.",
-					-- #endif
-					["timeline"] = { "deleted 4.0.3" },
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_EASTERNKINGDOMS_OnUpdate]],
 					["rank"] = 550,
 					-- #endif
+					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. EASTERN_KINGDOMS .. [[); end]],
+					-- #endif
+					["timeline"] = { "deleted 4.0.3" },
 					["races"] = HORDE_ONLY,
 				}),
 				a(ach(12455, {	-- Westfall & Duskwood Quests
