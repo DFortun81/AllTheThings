@@ -37,7 +37,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(11),		-- The Purge of Dalaran
 			crit(12),		-- Breath of Darkest Shadow
 		})),
-		ach(7285),		-- Every Day I'm Pand-a-ren
 		ach(7286, {		-- Finish Them! (Temple of the White Tiger)
 			crit(1),		-- Brewmaster Chani
 			crit(2),		-- Lun-Chi
