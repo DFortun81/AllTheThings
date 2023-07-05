@@ -535,6 +535,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				},
 			}),
 			crit(3774, {	-- Kil'jaeden and the Shadow Pact
+				-- #if AFTER CATA
+				["description"] = "Stratholme: Found in the room with Commander Malor.",
+				-- #endif
 				["provider"] = { "o", 175741 },
 				["coords"] = {
 					-- #if AFTER LEGION
@@ -757,6 +760,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["maps"] = { KARAZHAN },
 			}),
 			crit(3789, {	-- The Invasion of Draenor
+				-- #if AFTER CATA
+				["description"] = "Scholomance: West side wall, near north-west corner of Lilian Voss encounter room.",
+				-- #endif
 				["provider"] = { "o", 175747 },
 				["maps"] = { SCHOLOMANCE },
 			}),
@@ -866,6 +872,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				},
 			}),
 			crit(3797, {	-- The Seven Kingdoms
+				-- #if AFTER CATA
+				["description"] = "Stratholme: Found in the room with Commander Malor.",
+				-- #endif
 				["provider"] = { "o", 175737 },
 				["maps"] = {
 					-- #if BEFORE MOP
