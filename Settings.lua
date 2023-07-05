@@ -3334,81 +3334,67 @@ local textDynamicCategories = child:CreateTextLabel("|cffFFFFFF"..L["DYNAMIC_CAT
 textDynamicCategories:SetPoint("LEFT", checkboxShowPercentageCount, "LEFT", 4, 0)
 textDynamicCategories:SetPoint("TOP", sliderPercentagePrecision, "BOTTOM", 0, -15)
 
-local settingName = "Dynamic:Style"
--- Create Unique Disable methods for callbacks
-local function Off_Disable(self)
-	self:Disable()
-end
-local function Simple_Disable(self)
-	self:Disable()
-end
-local function Nested_Disable(self)
-	self:Disable()
-end
-local DynamicCategoryOffCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_OFF"],
+local checkboxDynamicOff = child:CreateCheckBox(L["DYNAMIC_CATEGORY_OFF"],
 function(self)
-	-- act like a radio button
-	self:SetAlpha(1)
-	if settings:Get(settingName) == 0 then
-		self:SetChecked(true)
-		settings.Callback(Off_Disable, self)
-	else
-		self:SetChecked(false)
-		self:Enable()
-	end
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:Get("Dynamic:Style") == 0)
 end,
 function(self)
+	-- Don't uncheck self if checked again
+	if settings:Get("Dynamic:Style") == 0 then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
 	if self:GetChecked() then
-		settings:Set(settingName, 0)
+		settings:Set("Dynamic:Style", 0)
 	end
 end)
-DynamicCategoryOffCheckbox:SetPoint("TOP", textDynamicCategories, "BOTTOM", 0, 0)
-DynamicCategoryOffCheckbox:SetPoint("LEFT", textDynamicCategories, "LEFT", 0, 0)
-DynamicCategoryOffCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_OFF_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
+checkboxDynamicOff:SetPoint("TOP", textDynamicCategories, "BOTTOM", 0, 0)
+checkboxDynamicOff:SetPoint("LEFT", textDynamicCategories, "LEFT", 0, 0)
+checkboxDynamicOff:SetATTTooltip(L["DYNAMIC_CATEGORY_OFF_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
 
-local DynamicCategorySimpleCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_SIMPLE"],
+local checkboxDynamicSimple = child:CreateCheckBox(L["DYNAMIC_CATEGORY_SIMPLE"],
 function(self)
-	-- act like a radio button
-	self:SetAlpha(1)
-	if settings:Get(settingName) == 1 then
-		self:SetChecked(true)
-		settings.Callback(Simple_Disable, self)
-	else
-		self:SetChecked(false)
-		self:Enable()
-	end
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:Get("Dynamic:Style") == 1)
 end,
 function(self)
+	-- Don't uncheck self if checked again
+	if settings:Get("Dynamic:Style") == 1 then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
 	if self:GetChecked() then
-		settings:Set(settingName, 1)
+		settings:Set("Dynamic:Style", 1)
 	end
 end)
-DynamicCategorySimpleCheckbox:AlignAfter(DynamicCategoryOffCheckbox)
-DynamicCategorySimpleCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
+checkboxDynamicSimple:AlignAfter(checkboxDynamicOff)
+checkboxDynamicSimple:SetATTTooltip(L["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
 
-local DynamicCategoryNestedCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_NESTED"],
+local checkboxDynamicNested = child:CreateCheckBox(L["DYNAMIC_CATEGORY_NESTED"],
 function(self)
-	-- act like a radio button
-	self:SetAlpha(1)
-	if settings:Get(settingName) == 2 then
-		self:SetChecked(true)
-		settings.Callback(Nested_Disable, self)
-	else
-		self:SetChecked(false)
-		self:Enable()
-	end
+	-- Only check self if the setting is set to this option
+	self:SetChecked(settings:Get("Dynamic:Style") == 2)
 end,
 function(self)
+	-- Don't uncheck self if checked again
+	if settings:Get("Dynamic:Style") == 2 then
+		self:SetChecked(true)
+		return
+	end
+	-- Set the setting to this option if checked
 	if self:GetChecked() then
-		settings:Set(settingName, 2)
+		settings:Set("Dynamic:Style", 2)
 	end
 end)
-DynamicCategoryNestedCheckbox:AlignAfter(DynamicCategorySimpleCheckbox)
-DynamicCategoryNestedCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
+checkboxDynamicNested:AlignAfter(checkboxDynamicSimple)
+checkboxDynamicNested:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"])
 
 local headerWindowColors = child:CreateHeaderLabel(L["WINDOW_COLORS"])
 headerWindowColors:SetPoint("LEFT", headerListBehavior, 0, 0)
-headerWindowColors:SetPoint("TOP", DynamicCategoryNestedCheckbox, "BOTTOM", 0, -10)
+headerWindowColors:SetPoint("TOP", checkboxDynamicOff, "BOTTOM", 0, -10)
 
 -- Color Picker
 local function changeBackgroundColor(restore)
