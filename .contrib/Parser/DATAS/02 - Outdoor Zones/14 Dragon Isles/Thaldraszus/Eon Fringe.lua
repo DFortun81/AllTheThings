@@ -139,7 +139,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 			}),
 
-				--- Daily Stuff? ---
 			n(QUESTS, sharedData({ ["isDaily"] = true }, {
 				q(76266, {	-- A Multitude of Tasks
 					["provider"] = { "n", 205424 },	-- Chromie
@@ -172,6 +171,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = {
 						i(206683),	-- Wrathion's Tab
 					},
+				}),
+				q(75970, {	-- Tracked Through Time
+					["provider"] = { "n", 205424 },	-- Chromie
+					["coord"] = { 52.1, 81.6, THALDRASZUS },
 				}),				
 				q(75991, {	-- What Could Have Been
 					["provider"] = { "n", 203769 },	-- Bartender Bob
