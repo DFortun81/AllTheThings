@@ -19610,19 +19610,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						end,
 					}),
 					{
-						['text'] = L["TELEPORT_TO_FROM_DUNGEON"],
-						['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
-						['description'] = L["TELEPORT_TO_FROM_DUNGEON_DESC"],
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							LFGTeleport(IsInLFGDungeon());
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							data.visible = IsAllowedToUserTeleport();
-						end,
-					},
-					{
 						['text'] = L["RESET_INSTANCES"],
 						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
 						['description'] = L["RESET_INSTANCES_DESC"],
@@ -19648,6 +19635,19 @@ customWindowUpdates["RaidAssistant"] = function(self)
 									C_Timer.After(0.5, AttemptResetInstances);
 								end
 							end
+						end,
+					},
+					{
+						['text'] = L["TELEPORT_TO_FROM_DUNGEON"],
+						['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
+						['description'] = L["TELEPORT_TO_FROM_DUNGEON_DESC"],
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							LFGTeleport(IsInLFGDungeon());
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							data.visible = IsAllowedToUserTeleport();
 						end,
 					},
 					{
