@@ -496,7 +496,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				i(44175, {	-- Plagued Proto-Drake (MOUNT!)
 					-- #if ANYCLASSIC
 					["OnUpdate"] = [[function(t)
-						if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
+						if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
 							t.u = ]] .. REMOVED_FROM_GAME .. [[;
 							t.rwp = nil;
 						else
@@ -538,7 +538,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				i(44164, {	-- Black Proto-Drake (MOUNT!)
 					-- #if ANYCLASSIC
 					["OnUpdate"] = [[function(t)
-						if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
+						if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
 							t.u = ]] .. REMOVED_FROM_GAME .. [[;
 							t.rwp = nil;
 						else

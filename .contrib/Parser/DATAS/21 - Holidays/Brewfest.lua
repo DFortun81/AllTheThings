@@ -532,7 +532,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						end
 					end
 					local u, r = ]] .. WRATH_PHASE_ONE .. [[, ]] .. REMOVED_FROM_GAME .. [[;
-					if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_ONE .. [[) then
+					if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_ONE .. [[) then
 						if t.kodo.parent ~= t then
 							table.remove(t.kodo.parent.g, 3);
 							table.remove(t.kodo.parent.g, 3);

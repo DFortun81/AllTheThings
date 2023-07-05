@@ -1014,7 +1014,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["timeline"] = { "added 3.1.0.9767", "removed 4.0.1" },
 					["maps"] = { THE_STORM_PEAKS },
 					-- #if BEFORE CATA
-					["OnUpdate"] = [[function(t) t.u = _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif
 					["isDaily"] = true,
 					["groups"] = {
@@ -2154,7 +2154,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["timeline"] = { "added 3.1.0.9767", "removed 4.0.1" },
 					["maps"] = { CRYSTALSONG_FOREST },
 					-- #if BEFORE CATA
-					["OnUpdate"] = [[function(t) t.u = _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif
 					["isDaily"] = true,
 					["groups"] = {
@@ -2619,7 +2619,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 69.6, 22.8, ICECROWN },
 					["timeline"] = { "added 3.1.0.9767", "removed 4.0.1" },
 					-- #if BEFORE CATA
-					["OnUpdate"] = [[function(t) t.u = _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif
 					["isBreadcrumb"] = true,
 				}),

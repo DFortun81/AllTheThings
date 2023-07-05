@@ -18,7 +18,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(ELEMENTAL_UNREST,
 		["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 		-- #if ANYCLASSIC
 		["OnUpdate"] = [[function(t)
-			if _.Settings.GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
+			if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
 				t.u = ]] .. REMOVED_FROM_GAME .. [[;
 				t.rwp = nil;
 			else

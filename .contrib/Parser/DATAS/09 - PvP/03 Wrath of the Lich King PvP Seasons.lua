@@ -22,7 +22,7 @@ local function MarkOfWHOOOWHATNow(t)
 end
 -- #if BEFORE 5.0.1
 local HATEFUL_GLADIATOR_ONUPDATE = [[function(t)
-	if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. WRATH_PHASE_ONE .. [[;
@@ -30,7 +30,7 @@ local HATEFUL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30100; end
 end]];
 local DEADLY_GLADIATOR_ONUPDATE = [[function(t)
-	if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. WRATH_PHASE_ONE .. [[;
@@ -38,7 +38,7 @@ local DEADLY_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30100; end
 end]];
 local FURIOUS_GLADIATOR_ONUPDATE = [[function(t)
-	if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. WRATH_PHASE_TWO .. [[;
@@ -46,7 +46,7 @@ local FURIOUS_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30200; end
 end]];
 local RELENTLESS_GLADIATOR_ONUPDATE = [[function(t)
-	if _.Settings.GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. WRATH_PHASE_THREE .. [[;
@@ -54,7 +54,7 @@ local RELENTLESS_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30302; end
 end]];
 local WRATHFUL_GLADIATOR_ONUPDATE = [[function(t)
-	if _.Settings.GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
+	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. WRATH_PHASE_FOUR .. [[;
