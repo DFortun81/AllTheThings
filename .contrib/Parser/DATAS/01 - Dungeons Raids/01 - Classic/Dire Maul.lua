@@ -798,7 +798,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				}),
 				q(5518, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["maps"] = { 235 },	-- Gordok Commons
 					["cost"] = {
 						{ "i", 14048, 4 },	-- Bolt of Runecloth
