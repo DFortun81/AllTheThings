@@ -659,7 +659,7 @@ root(ROOTS.ExpansionFeatures,
 		}),
 	})
 );
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(MOP_TIER, {
 		n(SCENARIOS, {
 			n(ARMOR, {
@@ -745,4 +745,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

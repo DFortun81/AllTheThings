@@ -304,7 +304,7 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		n(HEIRLOOMS, {
 			tier(CATA_TIER, 0.3, {
@@ -333,4 +333,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

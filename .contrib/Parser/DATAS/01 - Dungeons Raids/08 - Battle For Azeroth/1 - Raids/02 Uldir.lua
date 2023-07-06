@@ -872,7 +872,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 		},
 	}),
 })));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {
 		inst(1031, {	-- Uldir
 			i(166406),	-- Flaskzertauren's Cloth Robes
@@ -889,4 +889,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(166412),	-- Flaskzertauren's Plate Pauldrons
 		}),
 	}),
-}));
+});

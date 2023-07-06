@@ -267,7 +267,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(35443),	-- Zul'Aman Reward Quest - Heroic completion
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		inst(77, {	-- Zul'Aman
 			filter(MAIL, {
@@ -275,4 +275,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

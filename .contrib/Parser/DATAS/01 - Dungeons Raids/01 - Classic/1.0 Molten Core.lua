@@ -568,11 +568,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(19144),	-- Sabatons of the Flamewalker
 					i(18821),	-- Quick Strike Ring
 					i(18820),	-- Talisman of Ephemeral Power
-					-- #if ANYCLASSIC
-					un(NEVER_IMPLEMENTED, i(17782)),	-- Talisman of Binding Shard
-					-- #else
-					un(REMOVED_FROM_GAME, i(17782)),	-- Talisman of Binding Shard
-					-- #endif
 				},
 			}),
 			e(1523, {	-- Shazzrah
@@ -620,6 +615,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(18821),	-- Quick Strike Ring
 					i(17110),	-- Seal of the Archmagus
 					i(18820),	-- Talisman of Ephemeral Power
+					i(17782, {	-- Talisman of Binding Shard
+						["lore"] = "According to Travis Day, this item was used by Blizzard in a test version of the Thunderfury quest line. The quest was removed and was not publicly released, but Blizzard initially forgot to remove the item from the loot table. It was only ever looted by Noktyn-Archimonde US of the guild Nurfed on March 23, 2005",
+						["timeline"] = { "added 1.11.1.5462", "removed 1.11.2" },
+					}),
 				},
 			}),
 			e(1525, {	-- Sulfuron Harbinger
@@ -769,11 +768,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(19138),	-- Band of Sulfuras
 					i(18815),	-- Essence of the Pure Flame
 					i(17082),	-- Shard of the Flame
-					-- #if ANYCLASSIC
-					un(NEVER_IMPLEMENTED, i(17982)),	-- Ragnaros Core
-					-- #else
-					un(REMOVED_FROM_GAME, i(17982)),	-- Ragnaros Core
-					-- #endif
+					i(17982, {	-- Ragnaros Core
+						["timeline"] = { "added 1.1.0", "removed 1.4.0" },
+					}),
 				},
 			}),
 		},

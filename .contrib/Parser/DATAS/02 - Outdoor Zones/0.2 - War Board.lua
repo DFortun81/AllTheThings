@@ -661,7 +661,7 @@ root(ROOTS.Zones, {
 		},
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 	}),
-}));
+});

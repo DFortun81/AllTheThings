@@ -1542,7 +1542,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46328),	-- Triggers when the port to Elisande is activated
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		inst(786, {	-- The Nighthold
 			i(157764),	-- Claw of the Crystalline Scorpid
@@ -1585,4 +1585,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(180620),	-- High Shadow Councilor's Wrap
 		}),
 	}),
-}));
+});

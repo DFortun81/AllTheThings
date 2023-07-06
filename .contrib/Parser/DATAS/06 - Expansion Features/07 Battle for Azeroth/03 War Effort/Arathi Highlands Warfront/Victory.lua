@@ -134,7 +134,7 @@ root(ROOTS.ExpansionFeatures,
 		}),
 	})
 );
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {
 		n(WARFRONT, {
 			n(ARMOR, {
@@ -333,4 +333,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

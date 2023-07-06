@@ -1126,11 +1126,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 }));
 
 -- #if AFTER CATA
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		n(WEAPONS, {
 			i(65878),	-- Charbelching Wand
 		}),
 	}),
-}));
+});
 -- #endif

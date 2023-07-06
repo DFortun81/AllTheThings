@@ -770,7 +770,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		}),
 	}),
 }));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {
 		n(ISLAND_EXPEDITIONS, {
 			filter(TOYS, {
@@ -786,4 +786,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(164525),	-- Rattling Bone Greatbelt
 		}),
 	}),
-}));
+});

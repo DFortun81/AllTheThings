@@ -2021,7 +2021,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(MOP_TIER, {
 		inst(362, {
 			filter(CONSUMABLES, {
@@ -2094,4 +2094,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(96723),	-- Columnbreaker Stompers
 		}),
 	}),
-}));
+});

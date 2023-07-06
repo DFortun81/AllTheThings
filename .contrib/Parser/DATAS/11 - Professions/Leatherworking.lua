@@ -8232,7 +8232,7 @@ itemrecipe("Pattern: Windripper Leggings", 44933, 62177, WRATH_PHASE_ONE);
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
 		itemrecipe("Deprecated Pattern: Light Winter Cloak", 2404),
 		itemrecipe("Deprecated Pattern: Light Winter Boots", 2405),
@@ -8262,4 +8262,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Pattern: Sun-Drenched Scale Gloves", 35550),
 		-- #endif
 	}),
-}));
+});

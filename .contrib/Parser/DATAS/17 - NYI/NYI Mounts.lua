@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	filter(MOUNTS, {
 		tier(CLASSIC_TIER, {
 			i(16344, {		-- Arctic Wolf / zzUNUSEDLieutenant General's Mount (MOUNT!)
@@ -640,4 +640,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

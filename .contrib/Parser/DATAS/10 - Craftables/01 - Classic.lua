@@ -2771,7 +2771,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}),
 	}),
 }));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(BLACKSMITHING, {
 			tier(CLASSIC_TIER, {
@@ -2797,4 +2797,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

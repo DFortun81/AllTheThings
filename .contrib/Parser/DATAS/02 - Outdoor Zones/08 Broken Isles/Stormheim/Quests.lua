@@ -1080,7 +1080,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(42580),	-- Shaman Shrine - Stormheim Wind 01
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -1101,4 +1101,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

@@ -7411,7 +7411,7 @@ root(ROOTS.HiddenQuestTriggers, {
 -- #endif
 
 -- #if AFTER 3.3.3.11723
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOTLK_TIER, {
 		n(ARMOR, {
 			filter(NECK_F, {
@@ -7424,5 +7424,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});
 -- #endif

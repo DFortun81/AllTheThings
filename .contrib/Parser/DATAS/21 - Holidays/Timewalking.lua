@@ -2482,25 +2482,25 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					["creatureID"] = 52530,
 					["g"] = {
 						i(71665),	-- Flametalon of Alysrazor (MOUNT!)
-						un(NEVER_IMPLEMENTED, i(171796)),	-- Robes oF the Cleansing Flame
-						un(NEVER_IMPLEMENTED, i(171801)),	-- Vestment oF the Cleansing Flame
-						un(NEVER_IMPLEMENTED, i(171777)),	-- Flamewakers Tunic
-						un(NEVER_IMPLEMENTED, i(171813)),	-- Erupting Volcanic Hauberk
-						un(NEVER_IMPLEMENTED, i(171806)),	-- Balespider's Robes
-						un(NEVER_IMPLEMENTED, i(171811)),	-- Firehawk Robes
-						un(NEVER_IMPLEMENTED, i(171818)),	-- Erupting Volcanic Tunic
-						un(NEVER_IMPLEMENTED, i(171823)),	-- Erupting Volcanic Cuirass
-						un(NEVER_IMPLEMENTED, i(171746)),	-- Obsidian Arborweave Rainment
-						un(NEVER_IMPLEMENTED, i(171751)),	-- Obsidian Arborweave Tunic
-						un(NEVER_IMPLEMENTED, i(171756)),	-- Obsidian Arborweave vestment
-						un(NEVER_IMPLEMENTED, i(171768)),	-- Dark Phoenix Tunic
-						un(NEVER_IMPLEMENTED, i(171737)),	-- Elementium Deathplate Chestguard
-						un(NEVER_IMPLEMENTED, i(171738)),	-- Elementium Deathplate Breastplate
-						un(NEVER_IMPLEMENTED, i(171788)),	-- Immolation Breastplate
-						un(NEVER_IMPLEMENTED, i(171783)),	-- Battleplate of the Molten Giant
-						un(NEVER_IMPLEMENTED, i(171778)),	-- Immolation Battleplate
-						un(NEVER_IMPLEMENTED, i(171767)),	-- Immolation Chestguard
-						un(NEVER_IMPLEMENTED, i(171762)),	-- Chestguard of the Molten Giant
+						i(171796, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Robes of the Cleansing Flame
+						i(171801, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Vestment of the Cleansing Flame
+						i(171777, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Flamewakers Tunic
+						i(171813, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Erupting Volcanic Hauberk
+						i(171806, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Balespider's Robes
+						i(171811, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Firehawk Robes
+						i(171818, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Erupting Volcanic Tunic
+						i(171823, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Erupting Volcanic Cuirass
+						i(171746, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Obsidian Arborweave Rainment
+						i(171751, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Obsidian Arborweave Tunic
+						i(171756, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Obsidian Arborweave vestment
+						i(171768, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Dark Phoenix Tunic
+						i(171737, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Elementium Deathplate Chestguard
+						i(171738, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Elementium Deathplate Breastplate
+						i(171788, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Immolation Breastplate
+						i(171783, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Battleplate of the Molten Giant
+						i(171778, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Immolation Battleplate
+						i(171767, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Immolation Chestguard
+						i(171762, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Chestguard of the Molten Giant
 						i(171649),	-- Alysra's Razor
 						i(171650),	-- Greathelm of the Voracious Maw
 						i(171665),	-- Craterflame Spaulders
@@ -2527,25 +2527,25 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(152975, { -- Blazehound (PET!)
 							["timeline"] = { ADDED_7_3_0 },
 						}),
-						un(NEVER_IMPLEMENTED, i(171734)),	-- Elementium Deathplate Legguards
-						un(NEVER_IMPLEMENTED, i(171741)),	-- Elementium Deathplate Greaves
-						un(NEVER_IMPLEMENTED, i(171759)),	-- Legguards of the Molten Giant
-						un(NEVER_IMPLEMENTED, i(171810)),	-- FireHawk Leggings
-						un(NEVER_IMPLEMENTED, i(171805)),	-- Balespiders Leggings
-						un(NEVER_IMPLEMENTED, i(171800)),	-- Leggings of the Cleansing Flame
-						un(NEVER_IMPLEMENTED, i(171795)),	-- Legwraps of the Cleansing Flame
-						un(NEVER_IMPLEMENTED, i(171781)),	-- Immolation Legplates
-						un(NEVER_IMPLEMENTED, i(171826)),	-- Erupting Volcanic Legguards
-						un(NEVER_IMPLEMENTED, i(171821)),	-- Erupting Volcanic Legwraps
-						un(NEVER_IMPLEMENTED, i(171816)),	-- Erupting Volcanic Kilt
-						un(NEVER_IMPLEMENTED, i(171775)),	-- Flamewakers Legguards
-						un(NEVER_IMPLEMENTED, i(171745)),	-- Obsidian Arborweave Legguards
-						un(NEVER_IMPLEMENTED, i(171750)),	-- Obsidian Arborweave legwraps
-						un(NEVER_IMPLEMENTED, i(171755)),	-- Obsidian Arborweave Leggings
-						un(NEVER_IMPLEMENTED, i(171771)),	-- Dark Phoenix Legguards
-						un(NEVER_IMPLEMENTED, i(171764)),	-- Immolation Legguards
-						un(NEVER_IMPLEMENTED, i(171786)),	-- Legplates of the Molten Giant
-						un(NEVER_IMPLEMENTED, i(171791)),	-- Immolation Greaves
+						i(171734, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Elementium Deathplate Legguards
+						i(171741, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Elementium Deathplate Greaves
+						i(171759, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Legguards of the Molten Giant
+						i(171810, { ["timeline"] = { "created 8.2.5.31958" }}),	-- FireHawk Leggings
+						i(171805, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Balespiders Leggings
+						i(171800, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Leggings of the Cleansing Flame
+						i(171795, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Legwraps of the Cleansing Flame
+						i(171781, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Immolation Legplates
+						i(171826, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Erupting Volcanic Legguards
+						i(171821, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Erupting Volcanic Legwraps
+						i(171816, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Erupting Volcanic Kilt
+						i(171775, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Flamewakers Legguards
+						i(171745, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Obsidian Arborweave Legguards
+						i(171750, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Obsidian Arborweave legwraps
+						i(171755, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Obsidian Arborweave Leggings
+						i(171771, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Dark Phoenix Legguards
+						i(171764, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Immolation Legguards
+						i(171786, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Legplates of the Molten Giant
+						i(171791, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Immolation Greaves
 						i(171684),	-- Skullstealer Greataxe
 						i(171683),	-- Feeding Frenzy
 						i(171689),	-- Goblet of Anger
@@ -2568,25 +2568,25 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(152977, {	-- Surger (PET!)
 							["timeline"] = { ADDED_7_3_0 },
 						}),
-						un(NEVER_IMPLEMENTED, i(171793)),	-- Handwraps of the Cleansing Flame
-						un(NEVER_IMPLEMENTED, i(171798)),	-- Gloves of the Cleansing Flame
-						un(NEVER_IMPLEMENTED, i(171803)),	-- Balespiders Handwraps
-						un(NEVER_IMPLEMENTED, i(171808)),	-- Firehawk Gloves
-						un(NEVER_IMPLEMENTED, i(171735)),	-- Elementium Deathplate Handguards
-						un(NEVER_IMPLEMENTED, i(171739)),	-- Elementium Deathplate Gauntlets
-						un(NEVER_IMPLEMENTED, i(171766)),	-- Immolation Handguards
-						un(NEVER_IMPLEMENTED, i(171779)),	-- Immolation Gauntlets
-						un(NEVER_IMPLEMENTED, i(171784)),	-- Gauntlets of the Molten Giant
-						un(NEVER_IMPLEMENTED, i(171760)),	-- Handguards of the Molten Giant
-						un(NEVER_IMPLEMENTED, i(171789)),	-- Immolation Gloves
-						un(NEVER_IMPLEMENTED, i(171773)),	-- Flamewakers Gloves
-						un(NEVER_IMPLEMENTED, i(171814)),	-- Erupting Volcanic Gloves
-						un(NEVER_IMPLEMENTED, i(171819)),	-- Erupting Volcanic Handwraps
-						un(NEVER_IMPLEMENTED, i(171824)),	-- Erupting Volcanic Grips
-						un(NEVER_IMPLEMENTED, i(171743)),	-- Obsidian Arborweave Grips
-						un(NEVER_IMPLEMENTED, i(171748)),	-- Obsidian Arborweave Handwraps
-						un(NEVER_IMPLEMENTED, i(171753)),	-- Obsidian Arborweave Gloves
-						un(NEVER_IMPLEMENTED, i(171769)),	-- Dark Phoenix Gloves
+						i(171793, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Handwraps of the Cleansing Flame
+						i(171798, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Gloves of the Cleansing Flame
+						i(171803, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Balespiders Handwraps
+						i(171808, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Firehawk Gloves
+						i(171735, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Elementium Deathplate Handguards
+						i(171739, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Elementium Deathplate Gauntlets
+						i(171766, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Immolation Handguards
+						i(171779, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Immolation Gauntlets
+						i(171784, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Gauntlets of the Molten Giant
+						i(171760, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Handguards of the Molten Giant
+						i(171789, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Immolation Gloves
+						i(171773, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Flamewakers Gloves
+						i(171814, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Erupting Volcanic Gloves
+						i(171819, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Erupting Volcanic Handwraps
+						i(171824, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Erupting Volcanic Grips
+						i(171743, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Obsidian Arborweave Grips
+						i(171748, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Obsidian Arborweave Handwraps
+						i(171753, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Obsidian Arborweave Gloves
+						i(171769, { ["timeline"] = { "created 8.2.5.31958" }}),	-- Dark Phoenix Gloves
 						i(171707),	-- Gatecrasher
 						i(171659),	-- Shard of Torment
 						i(171711),	-- Molten Scream

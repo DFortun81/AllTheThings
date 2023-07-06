@@ -1648,7 +1648,7 @@ root(ROOTS.HiddenQuestTriggers, m(KUL_TIRAS, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -1669,4 +1669,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

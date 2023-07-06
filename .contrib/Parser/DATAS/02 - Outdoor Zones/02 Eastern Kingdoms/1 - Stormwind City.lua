@@ -8215,10 +8215,10 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	-- #if BEFORE WRATH
+-- #if BEFORE WRATH
+root(ROOTS.NeverImplemented, {
 	i(38579, {	-- Venomous Tome
 		["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
 	}),
-	-- #endif
-}));
+});
+-- #endif

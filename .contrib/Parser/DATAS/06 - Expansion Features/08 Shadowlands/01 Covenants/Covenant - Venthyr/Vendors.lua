@@ -1464,7 +1464,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(62016),	-- unlocking Dread Sentinel's Ebony Battleplate set (TransmogSetID 2075, Dread Sentinel's Ebony items)
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		n(VENTHYR, {
 			n(ARMOR, {
@@ -1520,4 +1520,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

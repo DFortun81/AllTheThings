@@ -716,7 +716,7 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOD_TIER, {
 		n(-299, {	-- Missions
 			n(ARMOR, {
@@ -751,4 +751,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

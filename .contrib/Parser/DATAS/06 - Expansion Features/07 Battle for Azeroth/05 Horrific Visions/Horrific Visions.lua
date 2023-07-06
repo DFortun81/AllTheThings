@@ -327,7 +327,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {
 		n(-10080, {	-- Horrific Visions
 			ach(14116),	-- All Bridges Burned
@@ -349,4 +349,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			ach(13995),	-- Twilight over the White City
 		}),
 	}),
-}));
+});

@@ -197,7 +197,7 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { "added 8.2.5
 	},
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(PARTY_SYNC, {
 		["timeline"] = { "added 8.2.5" },
 		["groups"] = {
@@ -746,4 +746,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		},
 	}),
-}));
+});

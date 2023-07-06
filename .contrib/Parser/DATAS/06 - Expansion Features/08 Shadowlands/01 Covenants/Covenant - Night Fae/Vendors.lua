@@ -1409,7 +1409,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(62412),	-- unlocking Night Courtier's Pack
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		n(NIGHT_FAE, {
 			n(ARMOR, {
@@ -1480,4 +1480,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

@@ -934,7 +934,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		prof(PROTOFORM_SYNTHESIS, {
 			q(65392, {	-- Schematic Reassimilation: Patient Bufonid (Mount moved to Quest)
@@ -950,4 +950,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(189455),	-- Schematic: Pale Regal Cervid
 		}),
 	}),
-}));
+});

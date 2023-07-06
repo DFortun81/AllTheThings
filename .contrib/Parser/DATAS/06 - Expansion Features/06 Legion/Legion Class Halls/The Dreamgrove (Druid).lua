@@ -990,12 +990,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 		})),
 	}),
 })));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		-- While it can show as collected for some players, you never received an item. It does not count for any mount achievements.
 		i(143638),	-- Archdruid's Lunarwing Form (MOUNT!)
 	}),
-}));
+});
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {

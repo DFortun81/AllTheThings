@@ -1461,7 +1461,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_1
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		n(NEW_CHARACTER, {
 			cl(DRUID, {
@@ -1506,4 +1506,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

@@ -3,9 +3,9 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(MAPS, {
 		m(843),		-- Shado-Pan Showdown
 		m(1335),	-- Cooking: Impossible
 	}),
-}));
+});

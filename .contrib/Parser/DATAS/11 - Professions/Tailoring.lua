@@ -6021,6 +6021,3 @@ neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
 -- #if AFTER SHADOWLANDS
 
 -- #endif
-
--- Apply the Never Implemented flag to the Never Implemented things.
-bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, nyi_);

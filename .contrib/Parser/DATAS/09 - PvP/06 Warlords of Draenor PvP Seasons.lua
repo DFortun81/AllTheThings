@@ -9931,7 +9931,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- The items never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOD_TIER, {
 		n(SEASON_PRIMAL, {
 			n(WEAPONS, {
@@ -9968,4 +9968,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

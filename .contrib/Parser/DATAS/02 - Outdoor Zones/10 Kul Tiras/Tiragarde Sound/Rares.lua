@@ -337,9 +337,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			n(132052, {	-- Vol'Jim
 				["description"] = "It looks like this NPC didn't make it to live from beta.",
-				["u"] = NEVER_IMPLEMENTED,
+				["timeline"] = { "created 8.0.1.26131" },
 				["g"] = {
-					un(NEVER_IMPLEMENTED, i(155074)),	-- Toll Enforcer
+					i(155074, {	-- Toll Enforcer
+						["timeline"] = { "created 8.0.1.26131" },
+					}),
 				},
 			}),
 			n(137176, {	-- Walter Ferrell

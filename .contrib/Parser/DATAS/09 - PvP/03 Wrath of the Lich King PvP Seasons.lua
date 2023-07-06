@@ -4149,7 +4149,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOTLK_TIER, {
 		n(SEASON_DEADLY, {
 			n(WEAPONS, {
@@ -4174,4 +4174,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

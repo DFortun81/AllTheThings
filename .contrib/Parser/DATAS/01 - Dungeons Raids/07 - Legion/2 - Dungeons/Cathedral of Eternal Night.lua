@@ -175,7 +175,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		inst(900, {	-- Cathedral of Eternal Night
 			d(HEROIC_DUNGEON, {
@@ -186,4 +186,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

@@ -580,7 +580,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(45396),	-- Mana Devourer Kill
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -588,4 +588,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

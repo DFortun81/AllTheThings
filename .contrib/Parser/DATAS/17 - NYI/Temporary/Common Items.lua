@@ -4,7 +4,7 @@
 
 -- Never Implemented Common Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(QUALITY_COMMON, {
 		tier(CLASSIC_TIER, {
 			-- NYI Classic Common Items
@@ -746,4 +746,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 	}),
-}));
+});

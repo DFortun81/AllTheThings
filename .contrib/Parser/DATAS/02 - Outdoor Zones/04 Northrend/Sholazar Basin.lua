@@ -1322,7 +1322,7 @@ root(ROOTS.Zones, {
 	})),
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOTLK_TIER, {
 		n(ARMOR, {
 			filter(TRINKET_F, {
@@ -1331,4 +1331,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

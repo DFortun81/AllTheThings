@@ -6115,8 +6115,6 @@ local neverimplemented = function(thing)
 end
 recipeCache = nil;	-- Disable the cache validation.
 
-bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, nyi_);
-
 -- #if AFTER BFA
 root(ROOTS.HiddenQuestTriggers, {
 	q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location

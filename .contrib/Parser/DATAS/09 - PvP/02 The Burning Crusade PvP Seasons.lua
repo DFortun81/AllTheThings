@@ -3649,7 +3649,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- #if AFTER TBC
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(TBC_TIER, {
 		-- #if BEFORE 4.0.1.12941
 		i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
@@ -3658,5 +3658,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 		-- #endif
 	}),
-}));
+});
 -- #endif

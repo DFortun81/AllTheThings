@@ -898,10 +898,6 @@ end
 r = recipe;												-- Create a RECIPE Object (alternative shortcut)
 root = function(category, g)							-- Create a ROOT CATEGORY Object
 	if not g then g = g or {}; end
-	-- Automatically apply data to specific categories
-	if category == ROOTS.NeverImplemented then
-		g = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, g);
-	end
 	local o = _[category];
 	if not o then
 		if isarray(g) then

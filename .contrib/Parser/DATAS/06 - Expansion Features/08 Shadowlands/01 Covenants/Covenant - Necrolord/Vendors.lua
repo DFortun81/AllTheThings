@@ -1399,7 +1399,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(62901),	-- learning Arsenal: Stitchmasters' Weapons
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		n(NECROLORD, {
 			n(ARMOR, {
@@ -1452,4 +1452,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

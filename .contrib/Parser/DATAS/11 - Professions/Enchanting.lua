@@ -1350,7 +1350,7 @@ itemrecipe("Formula: Smoking Heart of the Mountain", 45050, 15596);
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
 		itemrecipe("Formula: Imbue Chest - Minor Spirit", 6222);
 		itemrecipe("Formula: Imbue Chest - Spirit", 6343);
@@ -1362,5 +1362,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		recipe(28021),	-- Arcane Dust
 		-- #endif
 	}),
-}));
+});
 -- #endif

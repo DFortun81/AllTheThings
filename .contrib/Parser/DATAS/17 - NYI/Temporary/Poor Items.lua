@@ -4,7 +4,7 @@
 
 -- Never Implemented Poor Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(QUALITY_POOR, {
 		tier(CLASSIC_TIER, {
 			-- NYI Classic Poor Items
@@ -4073,4 +4073,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})
 		}),
 	}),
-}));
+});

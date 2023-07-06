@@ -812,13 +812,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		n(RELICS, {
 			i(133018),	-- Azsuna Package 3 - Holy 1 - Unused
 		}),
 	}),
-}));
+});
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {

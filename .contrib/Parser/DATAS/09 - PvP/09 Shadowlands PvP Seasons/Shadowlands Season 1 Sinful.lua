@@ -487,7 +487,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 	})),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		header(HEADERS.Achievement, SEASON_SINFUL, {
 			["icon"] = "Interface\\Icons\\inv_shadebeastmount",
@@ -616,7 +616,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			},
 		}),
 	}),
-}));
+});
 root(ROOTS.HiddenQuestTriggers, {
 	tier(SL_TIER, {
 		-- PvP Ensembles

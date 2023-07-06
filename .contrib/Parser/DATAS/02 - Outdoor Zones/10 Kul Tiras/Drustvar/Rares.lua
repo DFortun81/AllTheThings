@@ -289,9 +289,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(159518),	-- Long Fang
-					un(NEVER_IMPLEMENTED, i(160468, {	-- Longfang Paws
+					i(160468, {	-- Longfang Paws
+						["timeline"] = { "created 8.0.1.26287" },
 						["crs"] = { 127901 },	-- Henry Breakwater
-					})),
+					}),
 				},
 			}),
 			n(130138, {	-- Nevermore

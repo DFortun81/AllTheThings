@@ -888,7 +888,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		inst(78, {	-- Firelands
 			i(71570),	-- Bracers of Forked Lightning
@@ -914,4 +914,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

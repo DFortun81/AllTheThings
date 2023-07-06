@@ -1743,7 +1743,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(48570),	-- Tracking Quest - triggers when the door opens to Kin'garoth
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		inst(946, {	-- Antorus, the Burning Throne
 			-- Added in 9.1 Why? Noone knows
@@ -1752,4 +1752,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(180539),	-- Vambraces of Life's Assurance
 		}),
 	}),
-}));
+});

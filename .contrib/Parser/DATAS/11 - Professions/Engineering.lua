@@ -3629,7 +3629,7 @@ itemrecipe("Schematic: Flintlocke's Woodchucker", 70177, 100587, CATA_PHASE_TWO)
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
 		-- #if CLASSIC
 		i(22729),	-- Schematic: Steam Tonk Controller [This doesn't get added until TBC]
@@ -3644,4 +3644,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Schematic: Remote Mail Terminal", 23885, 30555);
 		-- #endif
 	}),
-}));
+});

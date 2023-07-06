@@ -2301,7 +2301,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- The items never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {
 		n(SEASON_DREAD, {
 			n(ARMOR, {
@@ -2492,4 +2492,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

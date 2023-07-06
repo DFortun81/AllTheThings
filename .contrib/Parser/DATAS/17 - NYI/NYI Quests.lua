@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 		tier(CLASSIC_TIER, {
 			-- 1.x.x
@@ -4893,28 +4893,24 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56129),	-- Heroic: Battle for Stromgarde
 				q(56206),	-- Heroic: Battle for Stromgarde
 				q(56164, {	-- Desperate Need (A)
-					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 151763 },	-- Isla
 					["coord"] = { 37.7, 55.3, NAZJATAR },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 56156,	-- A Tempered Blade
 				}),
 				q(56176, {	-- Desperate Need (H)
-					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 154208 },	-- Jonah Lowtide
 					["coord"] = { 50.5, 66.2, NAZJATAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55500,	-- Save a Friend
 				}),
 				q(56166, {	-- The Needs of the People
-					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 151763 },	-- Isla
 					["coord"] = { 37.7, 55.3, NAZJATAR },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 56164,	-- Desperate Need
 				}),
 				q(56179, {	-- The Needs of the People
-					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 154208 },	-- Jonah Lowtide
 					["coord"] = { 50.5, 66.2, NAZJATAR },
 					["races"] = HORDE_ONLY,
@@ -7431,4 +7427,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

@@ -38,8 +38,8 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, tier(MOP_TIER, {
+root(ROOTS.NeverImplemented, tier(MOP_TIER, {
 	n(-43, {	-- Proving Grounds
 		ach(8812),	-- You're Really Doing It Wrong (Level 90)
 	}),
-})));
+}));

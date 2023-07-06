@@ -6609,7 +6609,7 @@ itemrecipe("Plans: Treads of Destiny", 45091, 63190, WRATH_PHASE_TWO);
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
 		itemrecipe("Plans: Bleakwood Hew", 12817, 16965);
 		itemrecipe("Plans: Blood Talon", 12831, 16986);
@@ -6644,5 +6644,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Plans: Swiftsteel Shoulders", 35532, 41133);
 		-- #endif
 	}),
-}));
+});
 -- #endif

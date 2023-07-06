@@ -556,7 +556,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							table.insert(t.parent.g, 3, t.ram);
 							table.insert(t.parent.g, 3, t.kodo);
 						end
-						u = ]] .. NEVER_IMPLEMENTED .. [[;
+						u = 1;
 						r = nil;
 					end
 					for i,o in ipairs(t.g) do o.u = u; end

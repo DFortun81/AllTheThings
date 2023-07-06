@@ -515,7 +515,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {	-- Is this tagged with NEVER_IMPLEMENTED incorrectly?
 		-- These don't trigger when using ensembles, but they are listed on Wowhead
 		q(65502),	-- Ensemble: Fel-Automaton Exoplate
 		q(65533),	-- Ensemble: Vestment of the Honored Valarjar
@@ -542,7 +542,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	})),
 });
 root(ROOTS.NeverImplemented, {
-	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_10_0_5 }, }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { CREATED_10_0_5 }, }, {
 		n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
 			-- i(XXXXXX),	-- The Battlespoon (2H Staff)
 		})),

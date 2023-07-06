@@ -2148,11 +2148,11 @@ appendGroups(COMMON_ENCHANTING_RECIPES, ASARNAN_MALIJ_GROUPS);
 
 -- #if AFTER TBC
 -- These quests never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(ARMOR, {
 		i(134012, {	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
 			["timeline"] = { "removed 7.0.3.22248" },
 		}),
 	}),
-}));
+});
 -- #endif
