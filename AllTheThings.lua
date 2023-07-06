@@ -1424,6 +1424,16 @@ local function RawCloneData(data, clone)
 	clone.__index = nil;
 	return clone;
 end
+local function AssignFieldValue(group, field, value)
+	if group then
+		group[field] = value;
+		if group.g then
+			for i,o in ipairs(group.g) do
+				AssignFieldValue(o, field, value)
+			end
+		end
+	end
+end
 (function()
 local GetSlotForInventoryType = C_Transmog.GetSlotForInventoryType;
 app.SlotByInventoryType = setmetatable({}, {
@@ -17842,6 +17852,7 @@ function app:GetDataCache()
 		db._nyi = true;
 		tinsert(g, db);
 		CacheFields(db);
+		AssignFieldValue(db, "u", 1);
 	end
 
 	-- Hidden Achievement Triggers
