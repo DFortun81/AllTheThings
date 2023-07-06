@@ -10,7 +10,7 @@ root(ROOTS.Zones, {
 					["description"] = "/kiss her during the Where There is a Whip... WQ.",
 					["coord"] = { 49.0, 55.8, BROKEN_SHORE },
 					["g"] = {
-						i(147120, {	-- Technique: Glyph of the Shadow Succubus
+						i(147120, {	-- Technique: Grimoire of the Shadow Succubus
 							["timeline"] = { "added 7.2.0" },
 						}),
 					},
@@ -302,7 +302,7 @@ root(ROOTS.Zones, {
 						["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
 						["timeline"] = { "added 7.2.5" },
 					}),
-					i(141067, {	-- Technique: Glyph of Wrathguard
+					i(141067, {	-- Technique: Grimoire of the Wrathguard
 						["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
 						["timeline"] = { "added 7.2.0" },
 					}),

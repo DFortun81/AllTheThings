@@ -601,9 +601,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { DEATHKNIGHT },
 							["groups"] = {
 								i(40775),	-- Winged Steed of the Ebon Blade (MOUNT!)
-								i(136796, {	-- Necrophile Tome: Corpse Exploder
-									["spellID"] = 127344,	-- Corpse Exploder
-									["timeline"] = { "added 7.0.3.22248" },
+								i(136796, {	-- Necrophile Tome: Corpse Exploder (CI!)
+									["timeline"] = { ADDED_7_0_3_LAUNCH },
 								}),
 							},
 						}),

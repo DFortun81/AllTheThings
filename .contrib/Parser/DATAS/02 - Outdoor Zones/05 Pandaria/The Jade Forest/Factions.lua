@@ -460,11 +460,8 @@ root(ROOTS.Zones, {
 									i(79802, {	-- Jade Cloud Serpent (MOUNT!)
 										["cost"] = 30000000,	-- 3,000g
 									}),
-									i(183123, {	-- How to School Your Serpent
-										--["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
-										["questID"] = 62254,
+									i(183123, {	-- How to School Your Serpent (CI!)
 										["description"] = "Purchasable/learnable by any character exalted with Order of the Cloud Serpent.",
-										--["classes"] = { HUNTER },
 									}),
 								},
 							}),

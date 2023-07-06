@@ -861,21 +861,11 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(139724, {	-- Sandals of the Dreamgrove
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(136795, {	-- Tome of the Wilds: Charm Woodland Creature
-								["spellID"] = 127757,	-- Charm Woodland Creature
-							}),
-							i(136794, {	-- Tome of the Wilds: Flap
-								["spellID"] = 164862,	-- Flap
-							}),
-							i(136789, {	-- Tome of the Wilds: Stag Form
-								["spellID"] = 210053,	-- Stag Form
-							}),
-							i(136790, {	-- Tome of the Wilds: Track Beasts
-								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
-							}),
-							i(136787, {	-- Tome of the Wilds: Treant Form
-								["spellID"] = 114282,	-- Treant Form
-							}),
+							i(136795),	-- Tome of the Wilds: Charm Woodland Creature (CI!)
+							i(136794),	-- Tome of the Wilds: Flap (CI!)
+							i(136789),	-- Tome of the Wilds: Mount Form (CI!)
+							i(136790),	-- Tome of the Wilds: Track Beasts (CI!)
+							i(136787),	-- Tome of the Wilds: Treant Form (CI!)
 						},
 					}),
 				}),

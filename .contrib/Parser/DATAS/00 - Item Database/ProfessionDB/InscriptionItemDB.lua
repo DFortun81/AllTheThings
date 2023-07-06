@@ -875,7 +875,7 @@ i(141030, 225522);	-- Glyph of Cracked Ice
 i(137735, 192843);	-- Glyph of Crackling Crane Lightning
 i(141058, 225550);	-- Glyph of Critterhex
 i(141900, 228381);	-- Glyph of Falling Thunder
-i(137731, 192839);	-- Glyph of Fel Imp
+i(137731, 192839);	-- Grimoire of Fel Imp
 i(141035, 225527);	-- Glyph of Fel Wings
 i(141036, 225528);	-- Glyph of Fel-Enemies
 i(141057, 225549);	-- Glyph of Flash Bang
@@ -899,13 +899,13 @@ i(141041, 225533);	-- Glyph of the Forest Path
 i(141047, 225539);	-- Glyph of the Goblin Anti-Grav Flare
 i(141049, 225541);	-- Glyph of the Hook
 i(141062, 225554);	-- Glyph of the Inquisitor's Eye
-i(141063, 225555);	-- Glyph of the Observer
+i(141063, 225555);	-- Grimoire of the Observer
 i(137738, 192846);	-- Glyph of the Queen
 i(137734, 192842);	-- Glyph of the Sentinel
-i(141064, 225556);	-- Glyph of the Shivarra
+i(141064, 225556);	-- Grimoire of the Shivarra
 i(137736, 192844);	-- Glyph of the Spectral Raptor
 i(141051, 225543);	-- Glyph of the Trident
-i(141066, 225558);	-- Glyph of the Voidlord
+i(141066, 225558);	-- Grimoire of the Voidlord
 i(141055, 225547);	-- Glyph of Yu'lon's Grace
 i(137745, 192855);	-- Prophecy Tarot [Rank 2]
 i(137746, 192856);	-- Prophecy Tarot [Rank 3]
@@ -948,8 +948,8 @@ i(141050, 225542);	-- Glyph of the Skullseye (8.0.1)
 i(141034, 225526);	-- Glyph of the Unholy Wraith (8.0.1)
 i(137740, 192848);	-- Glyph of the Wraith Walker (8.0.1)
 -- NYI --
-i(141061, 225553);	-- Glyph of the Abyssal
-i(141065, 225557);	-- Glyph of the Terrorguard
+i(141061, 225553);	-- Grimoire of the Abyssal
+i(141065, 225557);	-- Grimoire of the Terrorguard
 
 i(137742, 0);	-- Glyph of Crackling Flames
 i(137743, 0);	-- Glyph of Fallow Wings
@@ -1047,8 +1047,8 @@ i(137776, 192900);	-- Vantus Rune: Trilliax [Rank 3]
 -----------------
 -- PATCH 7.2.0 --
 -----------------
-i(147120, 240272);	-- Glyph of the Shadow Succubus
-i(141067, 225559);	-- Glyph of Wrathguard
+i(147120, 240272);	-- Grimoire of the Shadow Succubus
+i(141067, 225559);	-- Grimoire of Wrathguard
 -- NYI --
 i(147118, 240269);	-- Glyph of the Fel Succubus
 
@@ -1136,9 +1136,9 @@ i(162370, 256293);	-- Contract: Voldunai [Rank 3]
 i(162753, 256285);	-- Contract: Zandalari Empire [Rank 2]
 i(162366, 256286);	-- Contract: Zandalari Empire [Rank 3]
 i(162377, 256246);	-- Darkmoon Card of War [Rank 3]
-i(162023, 276059);	-- Glyph of the Dolphin
-i(162030, 276121);	-- Glyph of the Humble Flyer
-i(162028, 276088);	-- Glyph of the Tideskipper
+i(162023, 276059);	-- Mark of the Dolphin
+i(162030, 276121);	-- Mark of the Humble Flyer
+i(162028, 276088);	-- Mark of the Tideskipper
 i(162353, 269741);	-- Honorable Combatant's Etched Vessel [Rank 2]
 i(162354, 269742);	-- Honorable Combatant's Etched Vessel [Rank 3]
 i(162352, 256249);	-- Inscribed Vessel of Mysticism [Rank 3]

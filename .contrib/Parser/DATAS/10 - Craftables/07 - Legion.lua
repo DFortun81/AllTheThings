@@ -277,11 +277,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(136688),	-- Shockinator*
 		}),
 		cat(472, {	-- Devices
-			i(134125, {	-- Mecha-Bond Imprint Matrix
-				["classes"] = { HUNTER },
-				["spellID"] = 205154,	-- Mecha-Bond Imprint Matrix
-				["f"] = RECIPES,
-			}),
+			i(134125),	-- Mecha-Bond Imprint Matrix (CI!)
 		}),
 		{
 			["name"] = "Robotics",
@@ -322,17 +318,19 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
-			i(140630, {	-- Glyph of the Doe
-				["questID"] = 62678,
-				["classes"] = { DRUID },
+			i(140630),	-- Mark of the Doe (CI!)
+			i(129021),	-- Mark of the Sentinel (CI!)
+			i(187933, {	-- Mark of the Duskwing Raven (CI!)
+				["timeline"] = { ADDED_9_1_5 },
 			}),
-			i(129021, {	-- Glyph of the Sentinel
-				["questID"] = 62675,
-				["classes"] = { DRUID },
+			i(129018),	-- Grimoire of the Fel Imp (CI!)
+			i(139312, {	-- Grimoire of the Observer (CI!)
+				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
 			}),
-			i(187933, {	-- Mark of the Duskwing Raven
-				["questID"] = 65058,
-				["classes"] = { DRUID },
+			i(139310),	-- Grimoire of the Shivarra (CI!)
+			i(139311),	-- Grimoire of the Voidlord (CI!)
+			i(139315, {	-- Grimoire of the Wrathguard (CI!)
+				["timeline"] = { ADDED_7_2_0 },
 			}),
 		}),
 		category(106, {	-- Tarot Cards

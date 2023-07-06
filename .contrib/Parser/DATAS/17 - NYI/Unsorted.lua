@@ -251,24 +251,23 @@ root(ROOTS.Unsorted, {
 			i(52032),	-- Rockin'-Powder-Infused Rocket Boots
 			i(86432),	-- Banana-Infused Rum
 			i(112180),	-- Patch of Crystal-Infused Leather
-			i(129018),	-- Grimoire of the Fel Imp
-			i(137731),	-- Technique: Grimoire of the Fel Imp
-			i(139310),	-- Grimoire of the Shivarra
-			i(139311),	-- Grimoire of the Voidlord
-			i(139312),	-- Grimoire of the Observer
-			i(139313),	-- Grimoire of the Terrorguard
-			i(139314),	-- Grimoire of the Abyssal
-			i(139315),	-- Grimoire of the Wrathguard
-			i(141061),	-- Technique: Grimoire of the Abyssal
-			i(141063),	-- Technique: Grimoire of the Observer
-			i(141064),	-- Technique: Grimoire of the Shivarra
-			i(141065),	-- Technique: Grimoire of the Terrorguard
-			i(141066),	-- Technique: Grimoire of the Voidlord
-			i(141067),	-- Technique: Grimoire of the Wrathguard
+
+
+
+
+
+
+
+
+
+
+
+
+
 			i(142395),	-- Fel-Infused Totem Fragment
 			i(144241),	-- Fel-Infused Remains
-			i(147119),	-- Grimoire of the Shadow Succubus
-			i(147120),	-- Technique: Grimoire of the Shadow Succubus
+
+
 			i(158733),	-- Azerite-Infused Rock
 			i(175972),	-- Anima-Infused Venom
 			i(181516),	-- Stone-Laced Infused Ruby
@@ -573,15 +572,7 @@ root(ROOTS.Unsorted, {
 			i(207096),	-- Paracausal Chest
 			i(207101),	-- Glyph of Banehollow's Soulstone
 			i(207102),	-- TESTING ITEM DELETE ME
-			i(207111),	-- Grimoire of the Hellfire Fel Imp
-			i(207112),	-- Grimoire of the Void-Touched Fel Imp
-			i(207113),	-- Grimoire of the Trickster Fel Imp
-			i(207114),	-- Grimoire of the Fiendish Imp
-			i(207178),	-- Grimoire of the Darkfire Imp
-			i(207294),	-- Grimoire of the Felfrost Imp
-			i(207295),	-- Grimoire of the Dreadfire Imp
-			i(207296),	-- Grimoire of the Netherbound Imp
-			i(207297),	-- Grimoire of the Felblaze Imp
+
 			i(207557),	-- Magebane Nexus
 			i(207558),	-- Smokesworth's Fireshooter
 			i(207559),	-- Stormwatcher
@@ -681,9 +672,7 @@ root(ROOTS.Unsorted, {
 			i(207984),	-- Chroniton Wand
 			i(208001),	-- Timewalker's Cudgel
 			i(208048),	-- Ritual of the Voidmaw Felhunter
-			i(208050),	-- Grimoire of the Xorothian Felhunter
-			i(208051),	-- Grimoire of the Antoran Felhunter
-			i(208052),	-- Grimoire of the Voracious Felmaw
+
 			i(208061),	-- Quantum Headpiece
 			i(208062),	-- Quantum Shoulders
 			i(208063),	-- Quantum Gloves

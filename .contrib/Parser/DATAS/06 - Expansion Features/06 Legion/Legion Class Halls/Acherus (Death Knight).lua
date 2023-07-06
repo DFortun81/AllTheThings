@@ -745,9 +745,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(38670),	-- Greaves of the Slaughter
 							i(38672),	-- Keleseth's Signet Ring
 							i(34661),	-- Massacre Sword
-							i(136796, {	-- Necrophile Tome: Corpse Exploder
-								["spellID"] = 127344,	-- Corpse Exploder
-							}),
+							i(136796),	-- Necrophile Tome: Corpse Exploder (CI!)
 							i(34658),	-- Plague Band
 							i(38666),	-- Plated Saronite Bracers
 							i(38707),	-- Runed Spellblade

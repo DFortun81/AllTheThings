@@ -471,11 +471,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 						i(160720),	-- Armbands of Sacrosanct Acts
 						i(160723),	-- Imperious Vambraces
 						i(160724),	-- Cincture of Profane Deeds
-						i(166502, {	-- Blood-Soaked Tome of Dark Whispers
-							["classes"] = { HUNTER },
-							["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
-							["questID"] = 54753,
-						}),
+						i(166502),	-- Blood-Soaked Tome of Dark Whispers (CI!)
 					},
 				}),
 				e(2194, {	-- Mythrax the Unraveler
@@ -625,7 +621,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 				}),
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
-					["sym"] = {{"select","itemID",166502}},	-- Blood-Soaked Tome of Dark Whispers
+					["sym"] = {{"select","itemID",166502}},	-- Blood-Soaked Tome of Dark Whispers (CI!)
 					["g"] = {
 						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
 						i(160684),	-- Pursax, the Backborer
@@ -797,7 +793,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 				}),
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
-					["sym"] = {{"select","itemID",166502}},	-- Blood-Soaked Tome of Dark Whispers
+					["sym"] = {{"select","itemID",166502}},	-- Blood-Soaked Tome of Dark Whispers (CI!)
 					["g"] = {
 						ach(12531),	-- Mythic: Zul, Reborn
 						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)

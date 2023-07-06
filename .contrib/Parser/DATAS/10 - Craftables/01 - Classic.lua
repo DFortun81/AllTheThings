@@ -1469,10 +1469,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(43416, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Execution
 			i(43541, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Death Grip
 
-			i(89868, {	-- Glyph of the Cheetah
-				["questID"] = 62677,
-				["timeline"] = { "added 5.0.3.15882" },
-				["classes"] = { DRUID },
+			i(89868, {	-- Mark of the Cheetah // Glyph of the Cheetah (CI!)
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 
 
@@ -1493,11 +1491,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(42743, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
 			i(42461, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
 			i(42908, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
-			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+]
-				-- #if AFTER SHADOWLANDS
-				["questID"] = 62673,
-				["classes"] = { DRUID },
-				-- #endif
+			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
 				["timeline"]={ "added 3.0.2" },
 			}),
 			i(43334, {["timeline"]={"added 3.0.2"}}),		-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon[MOP+]

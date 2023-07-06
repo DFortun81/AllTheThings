@@ -5961,9 +5961,8 @@ root(ROOTS.Zones, {
 					n(28722, {	-- Bryan Landers <Engineering Supplies>
 						["coord"] = { 39.0, 26.0, NORTHREND_DALARAN },
 						["groups"] = {
-							i(136782, {	-- Fireworks Instruction Manual
-								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 127933,	-- Fireworks
+							i(136782, {	-- Fireworks Instruction Manual (CI!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
 							i(23817, {	-- Schematic: Titanium Toolbox
 								["isLimited"] = true,

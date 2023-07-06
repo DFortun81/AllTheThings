@@ -650,9 +650,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 46.8, 78.8, VALDRAKKEN },
 					["classes"] = { HUNTER },
 					["g"] = {
-						i(201791, {	-- How to Train a Dragonkin
-							["questID"] = 72094,
-						}),
+						i(201791),	-- How to Train a Dragonkin (CI!)
 					},
 				}),
 				q(72696, {	-- Renown Supplies

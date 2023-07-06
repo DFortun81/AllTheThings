@@ -20,7 +20,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			cl(HUNTER, {
 				tier(LEGION_TIER, 2.0, {
-					i(147770),	-- Tome of the PTR Beast
+					i(147770),	-- Tome of the PTR Beast (CI!)
 				}),
 			}),
 			cl(SHAMAN, {
@@ -290,8 +290,10 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(LEGION_TIER, {
 				-- 7.0.3
 				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
-					i(141061),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
-					i(141065),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
+					i(141061),	-- Technique: Grimoire of the Abyssal (Item never made it into the game)
+					i(139314),	-- Grimoire of the Abyssal
+					i(141065),	-- Technique: Grimoire of the Terrorguard (Item never made it into the game)
+					i(141065),	-- Technique: Grimoire of the Terrorguard
 				})),
 
 				-- 7.2.0

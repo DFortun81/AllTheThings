@@ -152,7 +152,7 @@ root(ROOTS.Zones, {
 							i(139896, {	-- Skinning Technique: Legion Gutting
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(141066, {	-- Technique: Glyph of the Voidlord (RECIPE!)
+							i(141066, {	-- Technique: Grimoire of the Voidlord (RECIPE!)
 								["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
 							}),
 						},

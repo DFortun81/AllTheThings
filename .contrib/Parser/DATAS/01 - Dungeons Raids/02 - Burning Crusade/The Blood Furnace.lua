@@ -190,8 +190,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(556, {	-- Broggok
 					["creatureID"] = 17380,
 					["groups"] = {
-						i(141063,{	-- Technique: Glyph of the Observer (RECIPE!)
-							["timeline"] = { "added 7.0.3.22248" },
+						i(141063,{	-- Technique: Grimoire of the Observer (RECIPE!)
+							["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(27490),	-- Firebrand Battleaxe
@@ -301,8 +301,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(556, {	-- Broggok
 						["creatureID"] = 17380,
 						["groups"] = {
-							i(141063,{	-- Technique: Glyph of the Observer (RECIPE!)
-								["timeline"] = { "added 7.0.3.22248" },
+							i(141063,{	-- Technique: Grimoire of the Observer (RECIPE!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
 							}),
 							i(27490),	-- Firebrand Battleaxe
 							-- #if AFTER 7.3.5
