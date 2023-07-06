@@ -1551,7 +1551,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(60, {	-- Kobold Candles
 					["qg"] = 253,	-- William Pestle
-					["sourceQuest"] = 54,	-- Report to Goldshire
+					["sourceQuest"] = 26390,	-- Ending the Invasion
 					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(3, 3, 1),

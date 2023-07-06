@@ -511,6 +511,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 			}),
 			q(49768, {	-- Nesingwary's Trek
+				["sourceQuestNumRequired"] = 1,
 				["sourceQuests"] = {
 					47439,	-- Gonk, Lord of the Pack
 					47440,	-- Pa'ku, Master of Winds

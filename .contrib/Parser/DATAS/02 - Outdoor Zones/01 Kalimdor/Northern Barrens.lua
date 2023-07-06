@@ -1570,7 +1570,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(903, {	-- Hunting the Huntress [CATA+] / Prowlers of the Barrens
 					["qg"] = 3338,	-- Sergra Darkthorn
-					["sourceQuest"] = 845,	-- The Zhevra
+					["sourceQuest"] = 13995,	-- King of Centaur Mountain
 					-- #if AFTER CATA
 					["coord"] = { 50.0, 59.7, NORTHERN_BARRENS },
 					-- #else

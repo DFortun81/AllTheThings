@@ -685,6 +685,7 @@ root(ROOTS.Zones, {
 				q(33917, {	-- Disrupting the Flow
 					["provider"] = { "n", 78482 },	-- Vindicator Nobundo
 					["coord"] = { 56.7, 65.8, TALADOR },
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34711,	-- Due Cause to Celebrate (alliance, arcane sanctum)
 						34712,	-- Due Cause to Celebrate (horde, arcane sanctum)
@@ -805,6 +806,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 75119 },	-- Exarch Maladaar
 					["coord"] = { 55.6, 67.7, TALADOR },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34711,	-- Due Cause to Celebrate (alliance, arcane sanctum)
 						34981,	-- The Only Way to Travel (alliance, artillery tower)
@@ -1099,6 +1101,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 81789 },	-- Vindicator Kaluud
 					["coord"] = { 55.6, 67.7, TALADOR },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34711,	-- Due Cause to Celebrate (alliance, arcane sanctum)
 						34981,	-- The Only Way to Travel (alliance, artillery tower)
@@ -1495,6 +1498,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 80833 },	-- Beastmaster Tagh
 					["coord"] = { 70.8, 29.6, TALADOR },
 					["races"] = HORDE_ONLY,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34579,	-- Gas Guzzlers (artillery tower)
 						34576,	-- Iridium Recovery (artillery tower)

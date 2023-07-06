@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25038, {	-- Gordo's Task
 					["qg"] = 10666,	-- Gordo
-					["sourceQuest"] = 24980,	-- The Scarlet Palisade
+					["sourceQuest"] = 24977,	-- Johaan's Experiment
 					["coord"] = { 44.2, 53.7, TIRISFAL_GLADES },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,

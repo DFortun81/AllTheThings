@@ -962,7 +962,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13875, {	-- Gurtar's Request
 					["qg"] = 34242,	-- Guardian Gurtar
-					["sourceQuest"] = 13871,	-- Security!
+					["sourceQuest"] = 13873,	-- Sheelah's Last Wish
 					["coord"] = { 89.5, 48.6, ASHENVALE },
 					["timeline"] = { "added 4.0.3.13287" },
 					["races"] = HORDE_ONLY,

@@ -1229,7 +1229,7 @@ root(ROOTS.Zones, {
 				q(45062, {	-- Resisting Arrest
 					["coord"] = { 36.4, 45.8, SURAMAR },
 					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
-					["sourceQuest"] = 45066,	-- Experimental Instability
+					["sourceQuest"] = 45063,	-- The Felsoul Experiments
 				}),
 				q(41469, {	-- Return to Irongrove Retreat
 					["coord"] = { 30.3, 30.8, SURAMAR },
