@@ -193,7 +193,13 @@ root(ROOTS.Zones, {
 						}),
 						-- #endif
 					}),
-					ach(952),	-- Mercenary of Sholazar
+					ach(952, {	-- Mercenary of Sholazar
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							950,	-- Frenzyheart Tribe
+							951,	-- The Oracles
+						}},
+					}),
 					ach(962, {	-- Savior of the Oracles
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["groups"] = {
