@@ -875,7 +875,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				ach(17736, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- The Gift of Cheese
 					["cost"] = { { "i", 204848, 50 } },	-- 50x Charitable Cheddar
 					["g"] = {
-						i(204894),	-- Roland (PET!)
+						i(204894, {	-- Roland (PET!)
+							["description"] = "Roland will also teach your alts the recipes for Deviously Deviled Eggs and Charitable Cheddar, if you learned the recipes via the original source.",
+							["groups"] = {
+								r(407100),	-- Charitable Cheddar
+								r(403018),	-- Deviously Deviled Eggs
+							},
+						}),
 					},
 				})),
 			}),
