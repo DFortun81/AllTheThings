@@ -810,12 +810,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["groups"] = {
 						{
 							["recipeID"] = 22813,	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 							["requireSkill"] = TAILORING,
 						},
 						{
 							["recipeID"] = 22815,	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 							["requireSkill"] = LEATHERWORKING,
 						},
 						{
