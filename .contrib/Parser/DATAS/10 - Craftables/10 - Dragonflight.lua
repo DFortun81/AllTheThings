@@ -2879,7 +2879,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71827, 376541);	-- Blue Silken Lining
 			FirstCraft(71828, 376542);	-- Bronzed Grip Wrappings
 			FirstCraft(75819, 409839, ADDED_10_1_0);	-- Medical Wrap Kit
-			FirstCraft(75589, 376542, ADDED_10_1_0);	-- Reserve Parachute
+			FirstCraft(75589, 408304, ADDED_10_1_0);	-- Reserve Parachute
 			-- Finishing Reagents --
 			FirstCraft(71819, 376533);	-- Abrasive Polishing Cloth
 			FirstCraft(71820, 376534);	-- Vibrant Polishing Cloth
