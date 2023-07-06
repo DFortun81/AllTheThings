@@ -450,7 +450,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodsoul Shoulders",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24137,
 				}),
 				{
@@ -459,7 +459,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Darksoul Shoulders",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24141,
 				}),
 				-- #if AFTER TBC
@@ -579,7 +579,7 @@ profession(BLACKSMITHING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodsoul Gauntlets",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24138,
 				}),
 				-- #if AFTER TBC
@@ -688,7 +688,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodsoul Breastplate",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24136,
 				}),
 				{
@@ -711,7 +711,7 @@ profession(BLACKSMITHING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Darksoul Breastplate",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24139,
 				}),
 				-- #if AFTER TBC
@@ -897,7 +897,7 @@ profession(BLACKSMITHING, {
 				-- #endif
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Darksoul Leggings",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24140,
 				}),
 				-- #if AFTER TBC
@@ -1317,7 +1317,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Masterwork Stormhammer",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { "removed 6.0.2", "added 10.1.5" },
 					["recipeID"] = 16993,
 				},
 				-- #endif
@@ -1394,7 +1394,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "The Shatterer",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 10003,
 				},
 				-- #endif
@@ -1417,7 +1417,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Truesilver Champion",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 10015,
 				},
 				-- #endif

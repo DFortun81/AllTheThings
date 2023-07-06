@@ -347,7 +347,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Vest",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24091,
 				}),
 				{
@@ -743,7 +743,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Leggings",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24092,
 				}),
 				{
@@ -851,7 +851,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Boots",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24093,
 				}),
 				{
