@@ -427,6 +427,10 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(23775),	-- Titanium Toolbox*
 		}),
 	}),
+	prof(FIRST_AID, {
+		i(34721),	-- Frostweave Bandage
+		i(34722),	-- Heavy Frostweave Bandage
+	}),
 	prof(FISHING, {
 		i(44505, {	-- Dustbringer
 			["description"] = "Can be caught in schools or open water in Northrend.",
