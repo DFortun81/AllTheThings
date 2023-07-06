@@ -1172,6 +1172,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200878),	-- Wheeled Floaty Boaty Controller (TOY!)
 				},
 			}),
+			q(70368, {	-- Occupation Examination
+				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
+				["provider"] = { "n", 192498 },	-- Hephaesta
+				["coord"] = { 71.8, 78.7, OHNAHRAN_PLAINS },
+			}),
 			q(70370, {	-- Occupation Examination
 				["description"] = "This quest requires that you have at least one open primary profession slot. Both versions complete at the same time.",
 				["provider"] = { "n", 192498 },	-- Hephaesta

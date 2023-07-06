@@ -1167,13 +1167,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
-			q(70368, {	-- Occupation Examination
-				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
-				["provider"] = { "n", 192498 },	-- Hephaesta
-				["coord"] = { 57.8, 68.2, THE_WAKING_SHORES },
-				["classes"] = { EVOKER },
-				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
-			}),
 			q(70742, {	-- Runs in the Family
 				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
 				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
