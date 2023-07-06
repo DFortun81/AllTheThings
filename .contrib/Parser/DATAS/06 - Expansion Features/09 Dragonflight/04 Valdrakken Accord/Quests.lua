@@ -177,6 +177,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72687, {	-- Renown Supplies
 					["provider"] = { "n", 193015 },	-- Unatos
 					["coord"] = { 58.1, 35.2, VALDRAKKEN },
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(198868),	-- Small Valdrakken Accord Supply Pack
 					},
@@ -713,6 +714,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72697, {	-- Renown Supplies
 					["provider"] = { "n", 193015 },	-- Unatos
 					["coord"] = { 58.1, 35.2, VALDRAKKEN },
+					["DisablePartySync"] = true,
 					["g"] = {
 						i(198869),	-- Large Valdrakken Accord Supply Pack
 					},
