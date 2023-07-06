@@ -13,11 +13,11 @@ EVENTS = {
 	NOBLEGARDEN = 181,
 	PILGRIMS_BOUNTY = 404,
 	PIRATES_DAY = 398,
-	
+
 	-- Weekly Events
 	KALUAK_FISHING_DERBY = 424,	-- Obtained from Wrath Classic
 	STRANGLETHORN_FISHING_EXTRAVAGANZA = 301,	-- Obtained from Wrath Classic
-	
+
 	-- Micro-Holidays
 	CALL_OF_THE_SCARAB = 638,
 	FREE_T_SHIRT_DAY = 1053,
