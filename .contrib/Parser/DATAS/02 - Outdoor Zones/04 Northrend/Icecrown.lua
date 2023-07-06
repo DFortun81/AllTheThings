@@ -96,12 +96,15 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					ach(945, {	-- The Argent Champion
-						["maps"] = { WESTERN_PLAGUELANDS, EASTERN_PLAGUELANDS },
+						-- #if BEFORE WRATH
+						["description"] = "Earn exalted status with the Argent Dawn and the Argent Crusade.",
+						-- #endif
 						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 529, 1106); end]],
 						-- #endif
+						["maps"] = { WESTERN_PLAGUELANDS, EASTERN_PLAGUELANDS },
 						["groups"] = {
 							title(99),	-- %s the Argent Champion
 						},
