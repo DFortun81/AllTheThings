@@ -36,7 +36,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, {
 				["requireSkill"] = TAILORING,
 			}),
 			ach(141, {	-- Ultimate Triage
-				["cost"] = {
+				["providers"] = {
 					{ "i", 34722 },	-- Heavy Frostweave Bandage
 					-- #if AFTER CATA
 					{ "i", 53049 },	-- Embersilk Bandage
