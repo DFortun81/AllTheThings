@@ -508,8 +508,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73124, {	-- Hoard Behavior
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 				}),
 				q(73135, {	-- Obsidian Obfuscation
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
