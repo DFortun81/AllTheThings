@@ -13,19 +13,19 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = 11000000,	-- 1,100g
 					}),
 					i(161531, {	-- Akunda's Grounding Boots
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(165245, {	-- Akunda's Grounding Girdle
 						["cost"] = 19000000,	-- 1,900g
 					}),
 					i(161489, {	-- Alpaca Wool Gloves
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(165236, {	-- Alpaca Wool Leggings
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(161527, {	-- Bracers of Zem'lan
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(159753, {	-- Desert Flute (TOY!)
 						["cost"] = 11000000,	-- 1,100g
@@ -49,13 +49,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(161542, {	-- Gauntlets of the Scorched Sands
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(163213, {	-- Ghostly Explorer's Skull
 						["filterID"] = CONSUMABLES,	-- They may change it to a toy?
 					}),
 					i(161545, {	-- Girdle of Scavenged Plates
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(165235, {	-- Gloves of the Scaled Devoted
 						["cost"] = 19000000,	-- 1,900g
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(161511, {	-- Kimbul's Cuffs of Redemption
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(165241, {	-- Kimbul's Leggings of Redemption
 						["cost"] = 19000000,	-- 1,900g
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = 900000000,	-- 90,000g
 					}),
 					i(161502, {	-- Sash of the Scaled Devoted
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(162734, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2] (RECIPE!)
 						["cost"] = 11000000,	-- 1,100g
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(161507, {	-- Silent Scavenger Leggings
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(160548, {	-- Tabard of the Voldunai
 						["cost"] = 6250000,	-- 625g

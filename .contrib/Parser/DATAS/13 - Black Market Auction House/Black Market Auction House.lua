@@ -395,7 +395,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(38578),	-- The Flag of Ownership (TOY!)
 	}),
 	n(WEAPONS, {
-		un(NEVER_IMPLEMENTED, i(110591)),	-- Flintlocke's Blasthammer
+		i(110591, { ["timeline"] = { "created 6.0.1.18125" }}),	-- Flintlocke's Blasthammer
 		i(39769),	-- Arcanite Ripper
 		i(90176),	-- Flintlocke's Blasthammer
 		i(44924),	-- Sun-Lute of the Phoenix King

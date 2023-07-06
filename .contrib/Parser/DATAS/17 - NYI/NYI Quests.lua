@@ -3232,87 +3232,35 @@ root(ROOTS.NeverImplemented, {
 					["sourceQuests"] = { 54106 },	-- Tracking Tipoff
 					["races"] = HORDE_ONLY,
 					["maps"] = { REDRIDGE_MOUNTAINS },
-					["u"] = NEVER_IMPLEMENTED,
 				}),
-				q(49769, {	-- Wreckage of the Cataclysm
-					["u"] = NEVER_IMPLEMENTED,	-- this doesn't appear to have ever made it live
-				}),
-				q(56110, {	-- A Defender Emerges
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(56112, {	-- A Royal Awakening
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50132, {	-- A Sticky Proposition
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51110, {	-- Clearing the Skies
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(56109, {	-- Defender of the Hive
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51066, {	-- Destroy Mine Carts
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50285, {	-- Don't Be Crabby
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51756, {	-- Economic Downturn
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(49732, {	-- Evacuate!
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51750, {	-- Field Promotions
-					["u"] = NEVER_IMPLEMENTED,
-				}),
+				q(49769),	-- Wreckage of the Cataclysm
+				q(56110),	-- A Defender Emerges
+				q(56112),	-- A Royal Awakening
+				q(50132),	-- A Sticky Proposition
+				q(51110),	-- Clearing the Skies
+				q(56109),	-- Defender of the Hive
+				q(51066),	-- Destroy Mine Carts
+				q(50285),	-- Don't Be Crabby
+				q(51756),	-- Economic Downturn
+				q(49732),	-- Evacuate!
+				q(51750),	-- Field Promotions
 				q(51883, {	-- Grizz's Lunch
 					["provider"] = { "i", 160897 },	-- Grizz's Lunchbox
-					["u"] = NEVER_IMPLEMENTED,
 				}),
-				q(50060, {	-- Honey, Slimes!
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51557, {	-- Irontide Warning
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50383, {	-- Mankrik's Wrath
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51202, {	-- Millstone Hamlet Quest Template
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50815, {	-- Orcs Versus Humans
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50907, {	-- Poor Souls
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51724, {	-- Powered Up
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(49742, {	-- Respect Your Elders
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50816, {	-- Roarke's Missing
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51334, {	-- Securing The Square
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(49743, {	-- Shoot First, Questions Later
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50743, {	-- The Immediate Problem
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(56111, {	-- The Usurper
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51708, {	-- Warfang Hold Quest Template
-					["u"] = NEVER_IMPLEMENTED,
-				}),
+				q(50060),	-- Honey, Slimes!
+				q(51557),	-- Irontide Warning
+				q(50383),	-- Mankrik's Wrath
+				q(51202),	-- Millstone Hamlet Quest Template
+				q(50815),	-- Orcs Versus Humans
+				q(50907),	-- Poor Souls
+				q(51724),	-- Powered Up
+				q(49742),	-- Respect Your Elders
+				q(50816),	-- Roarke's Missing
+				q(51334),	-- Securing The Square
+				q(49743),	-- Shoot First, Questions Later
+				q(50743),	-- The Immediate Problem
+				q(56111),	-- The Usurper
+				q(51708),	-- Warfang Hold Quest Template
 				-- Unsorted
 				q(47246, {
 					["description"] = "Area: |cFFf09f26Nazmir|r",

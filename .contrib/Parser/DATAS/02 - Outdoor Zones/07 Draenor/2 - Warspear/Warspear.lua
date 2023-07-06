@@ -2908,12 +2908,12 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(112042),	-- Recipe: Draenic Channeled Mana Potion
-								un(NEVER_IMPLEMENTED, i(112043)),	-- Recipe: Draenic Mana Potion
+								i(112043, { ["timeline"] = { "created 6.0.1.18297" }}),	-- Recipe: Draenic Mana Potion
 								i(112041),	-- Recipe: Draenic Armor Potion
 								i(112038),	-- Recipe: Draenic Agility Potion
 								i(112039),	-- Recipe: Draenic Intellect Potion
 								i(112040),	-- Recipe: Draenic Strength Potion
-								un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
+								i(120132, { ["timeline"] = { "created 6.0.2.18816" }}),	-- Recipe: Secrets of Draenor Alchemy
 								i(118700, {	-- Secret of Draenor Alchemy
 									["filterID"] = MISC,
 									["g"] = {
@@ -3754,12 +3754,12 @@ root(ROOTS.Zones, {
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
-									["timeline"] = { REMOVED_10_0_5 },
+									["timeline"] = { "added 6.0.1.18738", REMOVED_10_0_5 },
 								}),
-								un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal
-								un(NEVER_IMPLEMENTED, i(120266)),	-- Technique: Greater Ensorcelled Tarot
-								un(NEVER_IMPLEMENTED, i(122548)),	-- Technique: Powerful Ensorcelled Tarot
-								un(NEVER_IMPLEMENTED, i(122553)),	-- Technique: Powerful Weapon Crystal
+								i(118608, { ["timeline"] = { "created 6.0.1.18738" }}),	-- Technique: Greater Weapon Crystal
+								i(120266, { ["timeline"] = { "created 6.0.2.18850" }}),	-- Technique: Greater Ensorcelled Tarot
+								i(122548, { ["timeline"] = { "created 6.1.0.19480" }}),	-- Technique: Powerful Ensorcelled Tarot
+								i(122553, { ["timeline"] = { "created 6.1.0.19480" }}),	-- Technique: Powerful Weapon Crystal
 							},
 						}),
 						n(88493, {	-- Mimi Wizzlebub <Steamwheedle Quartermaster>

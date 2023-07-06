@@ -57,19 +57,19 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(161538, {	-- Gloomplate Gauntlets
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 8/12/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 8/12/18)
 					}),
 					i(165248, {	-- Gloomplate Girdle
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(161528, {	-- Grips of the Swamp Hunter
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(165240, {	-- Hir'eek Hide Cuffs
 						["cost"] = 19000000,	-- 1,900g
 					}),
 					i(161520, {	-- Hir'eek Hide Leggings
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(163315, {	-- Recipe: Battle Potion of Intellect [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
@@ -108,10 +108,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(161493, {	-- Swamp Medic's Leggings
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(161506, {	-- Swampstalker Footpads [Was in beta, not there on 9/16/18]
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(165239, {	-- Swampstalker Leggings
 						["cost"] = 14000000,	-- 1,400g
@@ -123,13 +123,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = 19000000,	-- 1,900g
 					}),
 					i(161536, {	-- Torga Scale Girdle
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(163501, {	-- Tragg the Curious (PET!)
 						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 					}),
 					i(161492, {	-- Zo'bal Spirit Gloves
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(165237, {	-- Zo'bal Spirit Sash
 						["cost"] = 19000000,	-- 1,900g
@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = 19000000,	-- 1,900g
 					}),
 					i(161551, {	-- Zul'jan Camp Stalkers
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
+						["timeline"] = { "created 8.0.1.26522" }, -- (Was in beta, not there on 9/16/18)
 					}),
 				},
 			}),

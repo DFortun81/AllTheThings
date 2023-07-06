@@ -848,9 +848,9 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122420, {	-- Scouting Missive: Gorian Proving Grounds
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["timeline"] = { "created 6.1.0.19445" },
 							["questID"] = 38194,
 							["repeatable"] = true,
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						i(122406, {	-- Scouting Missive: Iron Siegeworks
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
@@ -972,9 +972,9 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122419, {	-- Scouting Missive: Gorian Proving Grounds
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["timeline"] = { "created 6.1.0.19445" },
 							["questID"] = 38202,
 							["repeatable"] = true,
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						i(122402, {	-- Scouting Missive: Iron Siegeworks
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources

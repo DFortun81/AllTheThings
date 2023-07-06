@@ -710,7 +710,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194521, sharedData({	-- Cliffside Wylderdrake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["u"] = NEVER_IMPLEMENTED,
+			["timeline"] = { "created 10.0.0.46247" },
 		}, {
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
@@ -775,7 +775,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194705, sharedData({	-- Highland Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["u"] = NEVER_IMPLEMENTED,
+			["timeline"] = { "created 10.0.0.46247" },
 		}, {
 			i(197095),	-- Highland Drake: Gold and White Armor
 			i(197119),	-- Highland Drake: Helm
@@ -836,7 +836,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["u"] = NEVER_IMPLEMENTED,
+			["timeline"] = { "created 10.0.0.46247" },
 		}, {
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197371),	-- Renewed Proto-Drake: Green Hair
@@ -887,7 +887,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194549, sharedData({	-- Windborne Velocidrake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["u"] = NEVER_IMPLEMENTED,
+			["timeline"] = { "created 10.0.0.46247" },
 		}, {
 			i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
 			i(197616),	-- Windborne Velocidrake: White Scales
@@ -1013,7 +1013,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 204361, sharedData({	-- Winding Slitherdrake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["u"] = NEVER_IMPLEMENTED,
+			["timeline"] = { "created 10.1.0.49407" },
 		}, {
 			i(203322),	-- Winding Slitherdrake: Blonde Hair
 			i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns
