@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(208138, {	-- N'Ruby (PET!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 6000 }},
 							}),
-							i(206786, {	-- Victorious Scourge Tabard
+							i(206786, {	-- Scourge Victorious Tabard
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 500 }},
 							}),
 							i(206784, {	-- Blighted Greatbow
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(206983, {	-- Paracausal Fragment of Frostmourne
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
 							}),
-							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
+							i(208617, {	-- Ebon Blade Commendation Badge [BOP]
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 4000 }},
 							}),
 						},
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(206777, {	-- Energy Projection Regulator
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
 							}),
-							i(206807, {	-- Order Powered Mechablade
+							i(206807, {	-- Order-Powered Mechblade
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
 							}),
 							i(206780, {	-- Overclocked Hand Cannon
@@ -326,6 +326,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(206765, {	-- Its Focused Gaze
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
 							}),
+							i(206799, {	-- Pauldrons of the Fire Lord
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1100 }},
+							}),
 							i(206768, {	-- Serrated Parasite
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
 							}),
@@ -356,7 +359,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208548, {	-- Shi Everbreeze
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
-						["g"] = {
+						["g"] = bubbleDownFiltered({
+							["cost"] = {{ "i", DILATED_TIME_CAPSULE, 1 }},
+						},
+						-- only apply the bubbleDown to Items
+						function(t) return t.itemID; end,
+						{
 							filter(CLOTH, {
 								i(207602),	-- Anachronistic Bindings
 								i(207599),	-- Anachronistic Breeches
@@ -387,7 +395,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(207629),	-- Paradoxical Drape
 								i(207613),	-- Paradoxical Gauntlets
 								i(207616),	-- Paradoxical Spaulders
-								i(207612),	-- Paradoxical Striders
+								i(208518),	-- Paradoxical Striders
 								i(207615),	-- Paradoxical Tassets
 							}),
 							filter(PLATE, {
@@ -401,26 +409,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(207620),	-- Anomalous Stompers
 								i(207626),	-- Anomalous Vambraces
 							}),
-							n(WEAPONS, sharedData({
-								["cost"] = {
-									{ "c", PARACAUSAL_FLAKES, 10 },
-									{ "i", DILATED_TIME_CAPSULE, 1 },
-								},
-							}, {
+							n(WEAPONS, {
 								i(208043),	-- Bronzegift Mallet
 								i(207976),	-- Chroniton Wand
+								i(207989),	-- Chronospire
 								i(208042),	-- Edge of Tomorrow
 								i(207985),	-- Ever-Repeating Rifle
 								i(207998),	-- Hoursteel Mace
 								i(207980),	-- Inevitable Claymore
 								i(207977),	-- Rift Render
 								i(207993),	-- Spacetime Cleaver
+								i(207990),	-- Temporal Battle Staff
 								i(207988),	-- Time Keeper's Polearm
 								i(207981),	-- Time Splitter
 								i(207982),	-- Timeless Bulwark
 								i(207979),	-- Timespan Scepter
-							})),
-						},
+							}),
+						}),
 					}),
 					n(208343, {	-- Sorotis <Ulderoth Vendor>
 						["coord"] = { 51.1, 56.7, THALDRASZUS },
@@ -564,7 +569,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(206825, {	-- Jingoist's Leggings
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
 								}),
-								i(206835, {	-- Jingoist's Pantaloon
+								i(206835, {	-- Jingoist's Pantaloons
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
 								}),
 								i(206864, {	-- Jingoist's Legguards
@@ -711,7 +716,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(206814, {	-- Warmonger's Leggings
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
 								}),
-								i(206845, {	-- Warmonger's Pantaloon
+								i(206845, {	-- Warmonger's Pantaloons
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
 								}),
 								i(206854, {	-- Warmonger's Legguards

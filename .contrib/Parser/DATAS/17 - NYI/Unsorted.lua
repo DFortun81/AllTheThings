@@ -582,105 +582,64 @@ root(ROOTS.Unsorted, {
 			i(207295),	-- Grimoire of the Dreadfire Imp
 			i(207296),	-- Grimoire of the Netherbound Imp
 			i(207297),	-- Grimoire of the Felblaze Imp
-			i(207528),	-- Prophetic Stonescales
-			i(207552),	-- Echoing Tyrstone
 			i(207557),	-- Magebane Nexus
 			i(207558),	-- Smokesworth's Fireshooter
 			i(207559),	-- Stormwatcher
 			i(207562),	-- Skullstone Bludgeon
 			i(207563),	-- Wanderer's Guide
 			i(207564),	-- Refurbished Purifier
-			i(207566),	-- Accelerating Sandglass
 			i(207569),	-- Ancient Formula: Magebane Nexus
 			i(207570),	-- Ancient Formula: Smokesworth's Fireshooter
 			i(207571),	-- Ancient Formula: Stormwatcher
 			i(207574),	-- Ancient Schematic: Skullstone Bludgeon
 			i(207575),	-- Ancient Technique: Wanderer's Guide
 			i(207576),	-- Ancient Schematic: Refurbished Purifier
-			i(207579),	-- Time-Thief's Gambit
-			i(207581),	-- Deios's Infinite Mirror
 			i(139312),	-- Charred Glyph
 			i(141063),	-- Charred Recipe
 			i(205199),	-- Slime Sheathed Shell
-			i(206005),	-- Wirt's Fightin' Leg
-			i(206275),	-- Wirt's Haunted Leg
-			i(206276),	-- Wirt's Last Leg
 			i(206638),	-- Azmourne's Corrupted Ashbringer
 			i(206926),	-- Keeper's Mallet
 			i(206928),	-- Attendant's Hammer
-			i(207581),	-- Mirror of Fractured Tomorrows
 			i(207582),	-- Box of Tampered Reality
 			i(207583),	-- Box of Collapsed Reality
 			i(207584),	-- Box of Volatile Reality
 			i(207594),	-- Looter's Purse
 			i(207702),	-- Wartorn Scrap
-			i(207817),	-- Mega Dungeon Bronze Cloth Slippers
 			i(207818),	-- Mega Dungeon Bronze Plate Greaves
-			i(207819),	-- Mega Dungeon Bronze Mail Tassets
-			i(207820),	-- Mega Dungeon Bronze Leather Tassets
-			i(207824),	-- Mega Dungeon Infinite Plate Greaves
 			i(207825),	-- Mega Dungeon Infinite Cloth Slippers
-			i(207828),	-- Mega Dungeon Bronze Cloth Robes
 			i(207829),	-- Mega Dungeon Bronze Cloth Wrap
 			i(207831),	-- Mega Dungeon Bronze Cloth Hood
 			i(207832),	-- Mega Dungeon Bronze Cloth Breeches
-			i(207836),	-- Mega Dungeon Bronze Mail Chainmail
 			i(207837),	-- Mega Dungeon Bronze Leather Drape
-			i(207838),	-- Mega Dungeon Bronze Leather Striders
 			i(207840),	-- Mega Dungeon Bronze Leather Cowl
 			i(207842),	-- Mega Dungeon Bronze Leather Cinch
 			i(207843),	-- Mega Dungeon Bronze Leather Bracers
 			i(207844),	-- Mega Dungeon Bronze Mail Chainmail
 			i(207845),	-- Mega Dungeon Bronze Mail Drape
 			i(207846),	-- Mega Dungeon Bronze Mail Striders
-			i(207851),	-- Mega Dungeon Bronze Mail Bracers
 			i(207854),	-- Mega Dungeon Bronze Plate Stompers
 			i(207855),	-- Mega Dungeon Bronze Plate Crushers
-			i(207858),	-- Mega Dungeon Bronze Plate Girdle
 			i(207860),	-- Mega Dungeon Infinite Cloth Robes
 			i(207861),	-- Mega Dungeon Infinite Cloth Wrap
-			i(207862),	-- Mega Dungeon Infinite Cloth Mitts
-			i(207867),	-- Mega Dungeon Infinite Cloth Bindings
 			i(207868),	-- Mega Dungeon Infinite Leather Raiment
 			i(207869),	-- Mega Dungeon Infinite Leather Cloak
 			i(207870),	-- Mega Dungeon Infinite Leather Treads
-			i(207873),	-- Mega Dungeon Infinite Leather Epaulets
-			i(207874),	-- Mega Dungeon Infinite Leather Cincture
-			i(207876),	-- Mega Dungeon Infinite Mail Chainmail
-			i(207878),	-- Mega Dungeon Infinite Mail Striders
 			i(207879),	-- Mega Dungeon Infinite Mail Gauntlets
 			i(207880),	-- Mega Dungeon Infinite Mail Cowl
-			i(207884),	-- Mega Dungeon Infinite Plate Chestplate
 			i(207891),	-- Mega Dungeon Infinite Plate Vambraces
 			i(207894),	-- Mega Dungeon Bronze Cloth Mitts
-			i(207897),	-- Mega Dungeon Bronze Cloth Mantle
-			i(207898),	-- Mega Dungeon Bronze Cloth Sash
 			i(207899),	-- Mega Dungeon Bronze Cloth Bindings
-			i(207903),	-- Mega Dungeon Bronze Leather Gauntlets
 			i(207905),	-- Mega Dungeon Bronze Leather Spaulders
-			i(207911),	-- Mega Dungeon Bronze Mail Gauntlets
-			i(207912),	-- Mega Dungeon Bronze Mail Cowl
 			i(207913),	-- Mega Dungeon Bronze Mail Spaulders
 			i(207914),	-- Mega Dungeon Bronze Mail Cinch
 			i(207916),	-- Mega Dungeon Bronze Plate Chestplate
 			i(207917),	-- Mega Dungeon Bronze Plate Cape
-			i(207920),	-- Mega Dungeon Bronze Plate Greathelm
-			i(207921),	-- Mega Dungeon Bronze Plate Pauldrons
-			i(207923),	-- Mega Dungeon Bronze Plate Vambraces
-			i(207927),	-- Mega Dungeon Infinite Cloth Hood
-			i(207928),	-- Mega Dungeon Infinite Cloth Breeches
 			i(207929),	-- Mega Dungeon Infinite Cloth Mantle
 			i(207930),	-- Mega Dungeon Infinite Cloth Sash
 			i(207935),	-- Mega Dungeon Infinite Leather Gloves
-			i(207936),	-- Mega Dungeon Infinite Leather Mask
-			i(207939),	-- Mega Dungeon Infinite Leather Wristbands
 			i(207941),	-- Mega Dungeon Infinite Mail Drape
-			i(207945),	-- Mega Dungeon Infinite Mail Spaulders
-			i(207946),	-- Mega Dungeon Infinite Mail Cinch
 			i(207947),	-- Mega Dungeon Infinite Mail Bracers
 			i(207949),	-- Mega Dungeon Infinite Plate Cape
-			i(207950),	-- Mega Dungeon Infinite Plate Stompers
-			i(207951),	-- Mega Dungeon Infinite Plate Crushers
 			i(207952),	-- Mega Dungeon Infinite Plate Greathelm
 			i(207953),	-- Mega Dungeon Infinite Plate Pauldrons
 			i(207954),	-- Mega Dungeon Infinite Plate Girdle
@@ -695,21 +654,7 @@ root(ROOTS.Unsorted, {
 			i(207969),	-- 10.1.5 Time Rifts - Mail Infinite Sets - Capture Media
 			i(207970),	-- 10.1.5 Time Rifts - Leather Infinite Sets - Capture Media
 			i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
-			i(207978),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Shield
-			i(207983),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Offhand
 			i(207984),	-- Suffused Wand
-			i(207986),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Gun
-			i(207987),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Polearm - 2H AGI
-			i(207989),	-- Chronospire
-			i(207990),	-- Temporal Battle Staff
-			i(207991),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Warglaive
-			i(207992),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Axe - 1H AGI
-			i(207994),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Sword - 1H AGI
-			i(207995),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H STR
-			i(207996),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Dagger - 1H AGI
-			i(207997),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Dagger - 1H INT
-			i(207999),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Mace - 1H INT
-			i(208000),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Mace - 1H AGI
 			i(208001),	-- Suffused Cudgel
 			i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
 			i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
@@ -734,7 +679,6 @@ root(ROOTS.Unsorted, {
 			i(207558),	-- Smoked Fireshooter
 			i(207570),	-- Ancient Formula: Smoked Fireshooter
 			i(207984),	-- Chroniton Wand
-			i(207996),	-- Nick of Time
 			i(208001),	-- Timewalker's Cudgel
 			i(208048),	-- Ritual of the Voidmaw Felhunter
 			i(208050),	-- Grimoire of the Xorothian Felhunter
@@ -795,88 +739,32 @@ root(ROOTS.Unsorted, {
 			i(206644),	-- Desecrated Plate Boots
 			i(206787),	-- Bucket Kickers
 			i(206805),	-- Ancient Plans: Bucket Kickers
-			i(207817),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Feet
-			i(207819),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Mail Legs
-			i(207820),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Leather Legs
-			i(207824),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Plate Legs
-			i(207828),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Cloth Robes
-			i(207836),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Leather Chest
-			i(207838),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Leather Feet
-			i(207851),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Mail Wrist
-			i(207858),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Plate Waist
-			i(207862),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Cloth Hands
-			i(207867),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Cloth Wrist
-			i(207873),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Leather Shoulder
-			i(207874),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Leather Waist
-			i(207876),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Mail Chest
-			i(207878),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Mail Feet
-			i(207884),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Plate Chest
-			i(207897),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Cloth Shoulder
-			i(207898),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Cloth Waist
-			i(207903),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Leather Hands
-			i(207911),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Mail Hand
-			i(207912),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Mail Head
-			i(207920),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - Plate Head
-			i(207921),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 03 - Blight of Galakrond - Plate Shoulders
-			i(207923),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Plate Wrist
-			i(207927),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Cloth Head
-			i(207928),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Cloth Legs
-			i(207936),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Leather Head
-			i(207939),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Leather Wrist
-			i(207945),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Mail Shoulder
-			i(207946),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Mail Waist
-			i(207950),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Plate Feet
-			i(207951),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Plate Hands
-			i(207994),	-- Quel'Zaram, High Blade of the Lion
-			i(207995),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 01 - Chronikar - Sword - 1H AGI
 			i(208148),	-- Burgundy Cap
 			i(208168),	-- Black Blade of K'tanth
 			i(208170),	-- Runeaxe of the Last Resistance
 			i(208172),	-- Bloodstained Runecrook
 			i(208191),	-- Time-Lost Fragment
-			i(208193),	-- Gorehowl, Might of the Warchief
 			--
 			i(189719),	-- Tattered Collar of the Incubus
 			i(189720),	-- Tattered Collar of the Succubus
 			i(201166),	-- Gilded Hilt
-			i(205292),	-- Karokta's Mane
 			i(206160),	-- Madam Shadow's Grimoire
 			i(206394),	-- Red Dragon Egg
 			i(206520),	-- Beverage for Pedgi
 			i(206653),	-- Fel Pinecone
 			i(206681),	-- Letter from Oman
-			i(206799),	-- Pauldrons of the Fire Lord
-			i(207817),	-- Imbued Frostweave Slippers
-			i(207819),	-- Timeways Intruder's Greaves
-			i(207828),	-- Bronze Defender's Vesture
-			i(207836),	-- Ahnzon's Corroded Carapace
-			i(207838),	-- Vigorous Sand-Stompers
-			i(207867),	-- Arathi Field Bandages
-			i(207878),	-- Grunt's Eternal Treads
-			i(207884),	-- Unceasing Footman's Breastplate
-			i(207898),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 02 - Sand Elemental - Cloth Waist
-			i(207912),	-- Loszkeleth's Blighted Skullhelm
-			i(207921),	-- Dazhak's Dessicated Wingbones
-			i(207923),	-- Zealous Commander's Cuffs
-			i(207936),	-- Hood of Perpetual Conflict
-			i(207983),	-- Progenitor's Necromantic Focus
-			i(207986),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 06 - Morchie - Gun
-			i(207991),	-- Double Time
-			i(207992),	-- Fallen Drake's Bonesplitter
-			i(207995),	-- Chronikar's Ceremonial Saber
-			i(208000),	-- Cudgel of Bygone Victories
-			i(208053),	-- Irons's Artifacts
+
 			i(208226),	-- Mysterious Letter
 			i(208227),	-- Mysterious Letter
-			i(208321),	-- [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 04 - Iridikron - INT Staff
 			i(208390),	-- Bronze Archive Stone
-			i(208391),	-- The Infinite Hand
 			i(208400),	-- Silks of the Unnamed Cult
-			i(208401),	-- Melly's Metronographer++
 			i(208415),	-- Stasis Sand
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
 			i(208448),	-- Infinitea
 			i(208449),	-- Melly's Metronographer+++
+			--
+			i(133589),	-- Dalape�o Pepper
+			i(208567),	-- Medal of Conquest
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible

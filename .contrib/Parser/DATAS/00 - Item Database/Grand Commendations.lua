@@ -374,6 +374,7 @@ i(205985, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Epic]
 ------------------
 -- PATCH 10.1.5 --
 ------------------
+i(208617, FACTION_EBON_BLADE);				-- Ebon Blade Commendation Badge [BOP]
 i(208133, FACTION_ORGRIMMAR);				-- Orgrimmar Insignia [BOP]
 i(208134, FACTION_RUSTBOLT_RESISTANCE);		-- Rustbolt Resistance Insignia [BOP]
 i(208132, FACTION_STORMWIND);				-- Stormwind Insignia [BOP]
