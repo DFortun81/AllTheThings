@@ -52,7 +52,7 @@ namespace ATT
 
         static void Export(StringBuilder builder, object o)
         {
-            if (o is Dictionary<string, object> dict) Export(builder, dict);
+            if (o is IDictionary<string, object> dict) Export(builder, dict);
             else if (o is Dictionary<long, object> longDict) Export(builder, longDict);
             else if (o is List<object> list) Export(builder, list);
             else if (o is string str) ExportStringValue(builder, o.ToString());
@@ -87,7 +87,7 @@ namespace ATT
             builder.Append("}");
         }
 
-        static void Export<T>(StringBuilder builder, Dictionary<T, object> dict)
+        static void Export<T>(StringBuilder builder, IDictionary<T, object> dict)
         {
             builder.Append("{");
             var i = 0;

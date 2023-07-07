@@ -240,7 +240,6 @@ root(ROOTS.NeverImplemented, {
 				ach(1290),	-- Who Sharted?
 				ach(1316),	-- $gOmar:Omara;'s Test Localization Achievement <PH><NYI>
 				ach(1338),	-- Total killing blows
-				ach(1360),	-- Loremaster of Northrend \\ Champion of Northrend
 				ach(1458),	-- Continent with the most Honorable Kills
 				ach(1466),	-- Most Alliance factions at Exalted
 				ach(1485),	-- Lich King 5-player different bosses defeated \\ Lich King 5-player different bosses killed

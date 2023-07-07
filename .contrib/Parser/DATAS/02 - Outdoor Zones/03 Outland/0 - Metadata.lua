@@ -29,7 +29,7 @@ root(ROOTS.Zones, {
 						1195,	-- Shadow of the Betrayer
 					}},
 					-- #else
-					["sym"] = { {"select","achievementID", 1194, 1190, 1192, 1193, 1195, 1191, 1189 } },
+					["sym"] = { {"meta_achievement", 1194, 1190, 1192, 1193, 1195, 1191, 1189 } },
 					-- #endif
 					-- #if BEFORE 4.0.3
 					["races"] = ALLIANCE_ONLY,
@@ -42,7 +42,7 @@ root(ROOTS.Zones, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1194, 1190, 1273, 1193, 1195, 1272, 1271); end]],
 					-- #else
-					["sym"] = { {"select","achievementID", 1194, 1190, 1273, 1193, 1195, 1272, 1271 } },
+					["sym"] = { {"meta_achievement", 1194, 1190, 1273, 1193, 1195, 1272, 1271 } },
 					-- #endif
 					["timeline"] = { "deleted 4.0.3" },
 					["races"] = HORDE_ONLY,
