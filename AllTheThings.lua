@@ -935,10 +935,13 @@ end
 local function GetCompletionText(state)
 	return L[(state == 2 and "COMPLETE_OTHER") or (state and "COMPLETE") or "INCOMPLETE"];
 end
-local function GetStateIcon(data, iconOnly)
+local function GetCollectibleIcon(data, iconOnly)
 	if data.collectible then
 		return iconOnly and GetCollectionIcon(data.collected) or GetCollectionText(data.collected);
-	elseif data.trackable then
+	end
+end
+local function GetTrackableIcon(data, iconOnly)
+	if data.trackable then
 		local saved = data.saved;
 		-- only show if the data is saved, or is not repeatable
 		if saved or not rawget(data, "repeatable") then
@@ -946,107 +949,108 @@ local function GetStateIcon(data, iconOnly)
 		end
 	end
 end
-local function GetProgressTextForRow(data)
-	local total = data.total;
-	local isCollectible = data.collectible;
-	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
-	local stateIcon = GetStateIcon(data, true);
-
-	if isContainer then
-
-		-- Uncollected Collectible (show uncollected icon & container info)
-		if isCollectible and not data.collected then
-			return GetCollectionIcon().." "..GetProgressColorText(data.progress or 0, total);
-		end
-
-		-- Cost & Progress (show cost icon & container info)
-		if data.filledCost then
-			return L["COST_ICON"].." "..GetProgressColorText(data.progress or 0, total);
-		end
-
-		-- Reagent & Progress (show reagent icon & container info)
-		if data.filledReagent then
-			return L["REAGENT_ICON"].." "..GetProgressColorText(data.progress or 0, total);
-		end
-
-		local costTotal = data.costTotal;
-		local isCost = costTotal and costTotal > 0;
-		-- Cost (show cost icon)
-		if isCost then
-			return L["COST_ICON"];
-		end
-
-		-- Progress Only
-		return GetProgressColorText(data.progress or 0, total);
-	elseif stateIcon then
-		return stateIcon;
-	elseif data.visible then
-		if data.count then
-			return (data.count .. "x");
-		end
-		if data.g and not data.expanded and #data.g > 0 then
-			return "+++";
-		end
-		return "---";
+local function GetCostIconForRow(data, iconOnly)
+	-- cost only in nested groups, or if itself is a cost
+	if (not data.window and (data.filledCost or data.costNested)) or (data.costTotal or 0) > 0 then
+		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
 	end
 end
-local function GetProgressTextForTooltip(data, iconOnly)
+local function GetCostIconForTooltip(data, iconOnly)
+	-- cost only if itself is a cost
+	if (data.costTotal or 0) > 0 then
+		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
+	end
+end
+local function GetReagentIcon(data, iconOnly)
+	if data.filledReagent then
+		return iconOnly and L["REAGENT_ICON"] or L["REAGENT_TEXT"];
+	end
+end
+local function GetStateIcon(data, iconOnly)
+	return GetCollectibleIcon(data, iconOnly) or GetTrackableIcon(data, iconOnly);
+end
+local function GetProgressTextForRow(data)
+	-- build the row text from left to right with possible info
+	local text = {}
+	-- Reagent (show reagent icon)
+	local reagentIcon = GetReagentIcon(data, true);
+	if reagentIcon then
+		tinsert(text, reagentIcon)
+	end
+	-- Cost (show cost icon)
+	local costIcon = GetCostIconForRow(data, true);
+	if costIcon then
+		tinsert(text, costIcon)
+	end
+	-- Collectible
+	local stateIcon = GetCollectibleIcon(data, true)
+	if stateIcon then
+		tinsert(text, stateIcon)
+	end
+	-- Container
 	local total = data.total;
-	local isCollectible = data.collectible;
-	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
-	local stateText = GetStateIcon(data, iconOnly);
-
+	local isContainer = total and (total > 1 or (total > 0 and not data.collectible));
 	if isContainer then
-		-- Uncollected Collectible (show uncollected state & container info)
-		if isCollectible and not data.collected then
-			if stateText then
-				-- this should be the case 100% of the time, unless a Type defines 'collectible' without 'collected'
-				return stateText.." "..GetProgressColorText(data.progress or 0, total);
+		local progress = data.progress;
+		local textContainer = GetProgressColorText(progress or 0, total)
+		if not textContainer then
+			if data.g and not data.expanded and #data.g > 0 then
+				textContainer = "+++";
 			else
-				return GetProgressColorText(data.progress or 0, total);
+				textContainer = "---";
 			end
 		end
+		tinsert(text, textContainer)
+	end
 
-		-- Cost & Progress (show cost icon & container info)
-		if data.filledCost then
-			local text = iconOnly and L["COST_ICON"] or L["COST_TEXT"];
-			if stateText then
-				return stateText.." "..text.." "..GetProgressColorText(data.progress or 0, total)
-			else
-				return text.." "..GetProgressColorText(data.progress or 0, total);
-			end
-		end
-
-		-- Reagent & Progress (show reagent icon & container info)
-		if data.filledReagent then
-			local text = iconOnly and L["REAGENT_ICON"] or L["REAGENT_TEXT"];
-			if stateText then
-				return stateText.." "..text.." "..GetProgressColorText(data.progress or 0, total)
-			else
-				return text.." "..GetProgressColorText(data.progress or 0, total);
-			end
-		end
-
-		local costTotal = data.costTotal;
-		local isCost = costTotal and costTotal > 0;
-		-- Cost (show cost icon)
-		if isCost then
-			local text = iconOnly and L["COST_ICON"] or L["COST_TEXT"];
-			if stateText then
-				return stateText.." "..text;
-			else
-				return text;
-			end
-		end
-
-		-- Progress Only
-		if stateText then
-			return stateText.." "..GetProgressColorText(data.progress or 0, total);
-		else
-			return GetProgressColorText(data.progress or 0, total);
+	-- Trackable (Only if no other text available)
+	if #text == 0 then
+		stateIcon = GetTrackableIcon(data, true)
+		if stateIcon then
+			tinsert(text, stateIcon)
 		end
 	end
-	return stateText;
+
+	return app.TableConcat(text, nil, "", " ");
+end
+local function GetProgressTextForTooltip(data, iconOnly)
+	-- build the row text from left to right with possible info
+	local text = {}
+	-- Reagent (show reagent icon)
+	local reagentIcon = GetReagentIcon(data, iconOnly);
+	if reagentIcon then
+		tinsert(text, reagentIcon)
+	end
+	-- Cost (show cost icon)
+	local costIcon = GetCostIconForTooltip(data, iconOnly);
+	if costIcon then
+		tinsert(text, costIcon)
+	end
+	-- Collectible
+	local stateIcon = GetCollectibleIcon(data, iconOnly)
+	if stateIcon then
+		tinsert(text, stateIcon)
+	end
+	-- Container
+	local total = data.total;
+	local isContainer = total and (total > 1 or (total > 0 and not data.collectible));
+	if isContainer then
+		local progress = data.progress;
+		local textContainer = GetProgressColorText(progress or 0, total)
+		if textContainer then
+			tinsert(text, textContainer)
+		end
+	end
+
+	-- Trackable (Only if no other text available)
+	if #text == 0 then
+		stateIcon = GetTrackableIcon(data, iconOnly)
+		if stateIcon then
+			tinsert(text, stateIcon)
+		end
+	end
+
+	return app.TableConcat(text, nil, "", " ");
 end
 local function GetAddedWithPatchString(awp)
 	if awp then
