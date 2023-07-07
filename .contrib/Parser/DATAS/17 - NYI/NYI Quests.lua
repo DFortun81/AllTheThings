@@ -568,7 +568,6 @@ root(ROOTS.NeverImplemented, {
 			q(27634),	-- The God Hakkar
 			q(27018),	-- The Herald <NYI>
 			q(28606),	-- The Keys to the Hot Rod
-			q(27150),	-- The Menders' Stead [H]
 			q(29672),	-- The Opening of the Dark Portal
 			q(29683),	-- The Scryer's Scryer
 			q(26243),	-- The World Pillar
@@ -3233,7 +3232,6 @@ root(ROOTS.NeverImplemented, {
 					["races"] = HORDE_ONLY,
 					["maps"] = { REDRIDGE_MOUNTAINS },
 				}),
-				q(49769),	-- Wreckage of the Cataclysm
 				q(56110),	-- A Defender Emerges
 				q(56112),	-- A Royal Awakening
 				q(50132),	-- A Sticky Proposition

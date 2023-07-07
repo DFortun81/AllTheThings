@@ -1678,6 +1678,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(26759),	-- Return to Nessa - completed with 6343
 		q(26879),	-- Disciples of Naralex - completed with 26878
 		q(26893),	-- Blackfathom Deeps - completed with quest 26894
+		q(27150),	-- The Menders' Stead - completed with quest 26952
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
 		q(27419),	-- Army of the Black Dragon - completed with quest 1168
 		q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
@@ -1796,6 +1797,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46176),	-- The Archmage Accosted - completed with quest 44924
 		q(49059),	-- The Bones of Xibala - completed with quest 47257
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
+		q(49769),	-- Wreckage of the Cataclysm - completed with quest 50331
 	}),
 
 	-------------------
