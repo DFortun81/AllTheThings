@@ -1229,30 +1229,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
-		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
+		q(73701),	-- triggered during 'Unwelcome Outsider' (questID 66021) (spellID 399693)
 		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
 		q(70724),	-- triggered during 'The Calm Before the Storm'
-		q(70749),	-- triggered when looting the talisman off windsage garuman
-		q(70505),	-- triggered when talking to Tigari Khan after looting the talisman off windsage garuman
+		q(70749),	-- triggered when looting the talisman off windsage garuman (spellID 387958)
+		q(70505),	-- triggered when talking to Tigari Khan after looting the talisman off windsage garuman (spellID 386172)
 		q(72064),	-- triggered when receiving toy from Yennu
 		q(66887),	-- Choose Trophy from First Hunt (Renewal of Vows 66783)
 		q(66888),	-- Choose Blood (Renewal of Vows 66783)
 		q(66889),	-- Choose Eagle Feather (Renewal of Vows 66783)
 		q(69867),	-- Stay and Listen Merithra 18.7,51.6 (LQ 70928)
-		q(66505),	-- triggered when talking to Ranger Bolor and giving them Batu's Collar
-		q(66512),	-- triggered when talking to Hunter Zaya and giving her Sarnai's Collar
+		q(66505),	-- triggered when talking to Ranger Bolor and giving them Batu's Collar (spellID 372100)
+		q(66512),	-- triggered when talking to Hunter Zaya and giving her Sarnai's Collar (spellID 372102)
 		q(74168),	-- After killing Skaara (during leveling)
 		-- Achievement Honor Our Ancestors
-		q(71167),	-- Maruukai Ancestor
-		q(71168),	-- Timberstep Outpost Ancestor
-		q(71169),	-- Horn of Drusahl Ancestor
-		q(71170),	-- Toghusuq Village Ancestor
-		q(71171),	-- Shikaar Highlands Ancestor
-		q(71172),	-- The Carving Winds Ancestor
-		q(71173),	-- Sylvan Glade Ancestor
-		q(71174),	-- Ohn'iri Springs Ancestor
-		q(71175),	-- Teerakai Ancestor
-		q(71176),	-- The Eternal Kurgans Ancestor
+		q(71167),	-- Maruukai Ancestor (spellID 390535)
+		q(71168),	-- Timberstep Outpost Ancestor (spellID 390536)
+		q(71169),	-- Horn of Drusahl Ancestor (spellID 390538)
+		q(71170),	-- Toghusuq Village Ancestor (spellID 390539)
+		q(71171),	-- Shikaar Highlands Ancestor (spellID 390544)
+		q(71172),	-- The Carving Winds Ancestor (spellID 390545)
+		q(71173),	-- Sylvan Glade Ancestor (spellID 390547)
+		q(71174),	-- Ohn'iri Springs Ancestor (spellID 390549)
+		q(71175),	-- Teerakai Ancestor (spellID 390551)
+		q(71176),	-- The Eternal Kurgans Ancestor (spellID 390553)
 		-- q(70141),	-- Triggered when killed Skaara
 
 		q(72610, {["timeline"] = {ADDED_10_0_7}}),	-- After getting the achievement "A New Beginning"

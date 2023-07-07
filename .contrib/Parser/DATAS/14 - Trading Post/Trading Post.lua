@@ -517,6 +517,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {	-- Is this tagged with NEVER_IMPLEMENTED incorrectly?
 		-- These don't trigger when using ensembles, but they are listed on Wowhead
+		q(65568),	-- Arsenal: Blades of Elune
 		q(65502),	-- Ensemble: Fel-Automaton Exoplate
 		q(65533),	-- Ensemble: Vestment of the Honored Valarjar
 		q(65570),	-- Ensemble: Vagabond's Midnight Threads

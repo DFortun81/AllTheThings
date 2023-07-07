@@ -2988,7 +2988,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71948),	-- Maxxed Out Transmutation
 		}),
 		prof(BLACKSMITHING, {
-			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom
+			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom (spellID 384716)
 		}),
 		prof(ENCHANTING, {
 			q(71939),	-- Glimmer of Air Drop
@@ -3030,7 +3030,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72344),	-- First Overload Titan-Touched Herb
 			q(72345),	-- First Overload Decayed Herb
 			q(72348),	-- First Overload Infurious Herb
-
 			q(75142, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Bubble Poppy
 			q(75141, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambant Hochenblume
 			q(75143, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Saxifrage

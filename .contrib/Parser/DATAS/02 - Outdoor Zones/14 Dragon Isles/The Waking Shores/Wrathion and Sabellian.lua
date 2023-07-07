@@ -908,7 +908,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 			q(64277),	-- Triggered when choosing anyone in Allegiance To One (66419) -- triggered for both in 2 weeks
 			q(66808),	-- Triggered when choosing Seballian in Allegiance To One (66419) -- triggered for Seballian only
 			q(66802),	-- Triggered when choosing Wrathion in Allegiance To One (66419) -- triggered for Wrathion only
-			q(67168),	-- Triggered with completion of 67051 'Dragon Eyes' (alternate version???)
+			q(67168),	-- Triggered with completion of 'Dragon Eyes' (questID67051) (spellID 377997)
 			q(72378),	-- Triggered when refusing to activate the Wrathion and Sabellian skip for alts
 
 			-- Ensembles

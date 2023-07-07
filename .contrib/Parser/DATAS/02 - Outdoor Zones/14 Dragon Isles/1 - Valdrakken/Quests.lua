@@ -446,20 +446,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
-		q(72596),	-- After Open Orientation
-		q(69935),	-- triggered with 'A Dryadic Remedy' (questID 67606 & 69937)
-		q(72011),	-- triggeres when accepting 'The Ruby Feast!' (71238)
-		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
-		q(72258, {["name"] = "Ruby Feast Daily Lockout",["isDaily"] = true}),	-- daily lockout of Ruby Feast quest progression
-		q(67055),	-- triggered with 'Warm Away These Shivers' (67047)
-		q(67056),	-- triggered after '10,000 Years of Roasting' (67063)
-		q(67057),	-- triggered after 'Rambling Delight' (67064)
-		q(67058),	-- triggered after 'Future-Fresh Fungi' (67065)
-		q(67059),	-- triggered after 'Delights to Delve For' (67066)
-		q(67060),	-- triggered after 'Navigating the Leapmaize' (67067)
-		q(67061),	-- triggered after 'Anything But a Breeze' (67068)
-		q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (67071)
-		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
+		q(72596),	-- After Open Orientation (spellID 396185)
+		q(69935),	-- triggered with 'A Dryadic Remedy' (questID 67606 & 69937) (spellID 381859)
+		q(72011),	-- triggeres when accepting 'The Ruby Feast!' (questID 71238) (spellID 391778 & 377492)
+		q(72009),	-- triggered with 'Warm Away These Shivers' (questID 67047) (spellID 377492 & 377494 & 377495 & 377496 & 377497 & 377498 & 377499 & 391779)
+		q(72258, {["name"] = "Ruby Feast Daily Lockout",["isDaily"] = true}),	-- daily lockout of Ruby Feast quest progression (spellID 393805)
+		q(67055),	-- triggered with 'Warm Away These Shivers' (questID 67047) (spellID 377492)
+		q(67056),	-- triggered after '10,000 Years of Roasting' (questID 67063) (spellID 377494)
+		q(67057),	-- triggered after 'Rambling Delight' (questID 67064) (spellID 377495)
+		q(67058),	-- triggered after 'Future-Fresh Fungi' (questID 67065) (spellID 377496)
+		q(67059),	-- triggered after 'Delights to Delve For' (questID 67066) (spellID 377497)
+		q(67060),	-- triggered after 'Navigating the Leapmaize' (questID 67067) (spellID 377498)
+		q(67061),	-- triggered after 'Anything But a Breeze' (questID 67068) (spellID 377499)
+		q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (questID 67071) (spellID 391779)
+		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel (spellID 388943)
 	}),
 }));
 

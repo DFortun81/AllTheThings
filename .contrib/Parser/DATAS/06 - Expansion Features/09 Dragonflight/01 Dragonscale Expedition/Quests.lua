@@ -802,10 +802,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(72401),	-- Triggered immediately after reaching renown 13
-		q(72756),	-- Triggered with 'Next Steps' (66128)
+		q(72756),	-- Triggered with 'Next Steps' (questID 66128) (spellID 397083)
 		q(72402),	-- Triggered on reaching Renown 24 before accepting any quests
-		q(72752),	-- Triggered on completion of 'It Belongs in a Museum... Eventually' (also at the same time as Friend of the Dragon Isles popping, unsure which is the trigger)
-		q(72822),	-- Triggered on completion of 'It Belongs in a Museum... Eventually' (also at the same time as Friend of the Dragon Isles popping, unsure which is the trigger)
+		q(72752),	-- Triggered with 'It Belongs in a Museum... Eventually' (questID 66547) (spellID 397084 & 397397)
+		q(72822),	-- Triggered with 'It Belongs in a Museum... Eventually' (questID 66547) (spellID 397397)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor

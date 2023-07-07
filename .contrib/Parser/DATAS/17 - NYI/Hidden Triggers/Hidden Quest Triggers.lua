@@ -135,7 +135,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(27224),	-- Andorhal Phase Flag — Western Plaguelands — triggers during "The Depravity of the Forsaken"
 		q(25040),	-- FLAG - Worgen Attacked — Tirisfal Glades — attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
 		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
-		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success"
+		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success" (spellID 388051)
 		q(26136),	-- FLAG - Rigor Mortis Removed. Triggered on a fresh lvl 1 warlock undead on login
 		q(24644),	-- Troll Introduction Complete
 		q(26741),	-- REUSE - Northern Stranglethorn - triggered after completing "The Hunt" (questID 26340)
@@ -236,7 +236,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47332),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49766),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
-		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
+		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time (spellID 395734)
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
 		-- 58013 triggered randomly during a Black Empire assault in uldum
 		-- also triggered when looting the "Grimoire of the Other Side" as horde during "Spirits' belongings"

@@ -1248,7 +1248,7 @@ root(ROOTS.Unsorted, {
 			n(QUESTS, {
 				-- 10.0.2.45779
 				q(72350),	--
-				q(72357),	--
+				q(72357),	-- Review Box Used [DNT] (spellID 374484)
 				q(72359),	--
 				q(72361),	--
 				q(72365),	-- [test] Learn to spend talent points
@@ -1287,7 +1287,7 @@ root(ROOTS.Unsorted, {
 				q(72774),	--
 				q(72775),	--
 				q(72780),	--
-				q(72804),	--
+				q(72804),	-- Flag Weekly Tracking Quest [DNT] (spellID 397184)
 				-- 10.0.2.46420
 				q(72817),	-- Dragonflight (70) E
 				q(72819),	-- Shadowlands (60) E
@@ -1541,17 +1541,17 @@ root(ROOTS.Unsorted, {
 				q(64162),	-- Ritual Rival
 				q(64163),	-- Revenge Against Renegades
 				q(64259),	--
-				q(64523),	--
-				q(64524),	--
-				q(64525),	--
-				q(64537),	--
-				q(64538),	--
-				q(64539),	--
-				q(64540),	--
+				q(64523),	-- Speed Talent 1 Quest Flag (spellID 357790)
+				q(64524),	-- Speed Talent 2 Quest Flag (spellID 357791)
+				q(64525),	-- Speed Talent 3 Quest Flag (spellID 357792)
+				q(64537),	-- Duration Talent Quest 1 Flag (spellID 357793)
+				q(64538),	-- Duration Talent Quest 2 Flag (spellID 357794)
+				q(64539),	-- Duration Talent Quest 3 Flag (spellID 357795)
+				q(64540),	-- Duration Talent Quest Unlimited Flag (spellID 357796)
 				q(64558),	--
 				q(64559),	--
 				q(64580),	--
-				q(64764),	--
+				q(64764),	-- Flag Quest [DNT] (spellID 396726)
 				q(64855),	--
 				q(64856),	-- [DNT] A Little Pruning
 				q(64981),	--
@@ -1576,25 +1576,24 @@ root(ROOTS.Unsorted, {
 				q(65454),	--
 				q(65458),	--
 				q(65459),	--
-				q(65568),	--
-				q(65569),	--
+				q(65569),	-- Ensemble: Twisted Arcanum Regalia
 				q(65596),	--
 				q(65599),	--
 				q(65608),	--
 				q(65639),	-- Tarasek
 				q(65642),	--
 				q(65654),	--
-				q(65671),	--
-				q(65675),	--
-				q(65676),	--
+				q(65671),	-- Ensemble: Darkmoon Harlequin's Bells
+				q(65675),	-- Ensemble: Trapper's Munitions
+				q(65676),	-- Ensemble: Chains of the Honored Valarjar
 				q(65692),	--
 				q(65710),	--
 				q(65712),	--
 				q(65714),	--
-				q(65716),	--
+				q(65716),	-- Ensemble: Vestments of the Nightmare Forest
 				q(65719),	--
 				q(65722),	--
-				q(65734),	--
+				q(65734),	-- Ensemble: Battleplate of the Honored Valarjar
 				q(65738),	-- Ensemble: Dashing Buccaneer's Slops
 				q(65740),	--
 				q(65759),	--
@@ -1602,8 +1601,8 @@ root(ROOTS.Unsorted, {
 				q(65766),	--
 				q(65777),	-- Mudcaked Necklace
 				q(65781),	--
-				q(65786),	--
-				q(65787),	--
+				q(65786),	-- Spirit Journey (spellID 368793)
+				q(65787),	-- Spirit Journey (spellID 368812)
 				q(65790),	--
 				q(65797),	--
 				q(65799),	--
@@ -1631,7 +1630,7 @@ root(ROOTS.Unsorted, {
 				q(65889),	--
 				q(65894),	-- [DNT] - Removed - Eggs Benediction
 				q(65897),	-- [DNT] - Removed - Focus Locus
-				q(65912),	--
+				q(65912),	-- Treasure Map: Ohn'ahran Plains (spellID 369403)
 				q(65915),	--
 				q(65917),	--
 				q(65919),	--
@@ -1653,7 +1652,7 @@ root(ROOTS.Unsorted, {
 				q(66002),	--
 				q(66004),	-- Galgresh
 				q(66008),	--
-				q(66034),	--
+				q(66034),	-- On Fail, Reset Player [DNT] (spellID 374750)
 				q(66043),	--
 				q(66045),	--
 				q(66051),	--
@@ -1675,7 +1674,7 @@ root(ROOTS.Unsorted, {
 				q(66120),	--
 				q(66125),	--
 				q(66127),	--
-				q(66132),	--
+				q(66132),	-- Ancient Stone (spellID 370152)
 				q(66142),	--
 				q(66143),	--
 				q(66144),	--
@@ -1747,14 +1746,14 @@ root(ROOTS.Unsorted, {
 				q(66348),	--
 				q(66349),	-- Training Rock
 				q(66350),	--
-				q(66355),	--
+				q(66355),	-- Flag Tracking Quest (spellID 371096)
 				q(66357),	--
 				q(66358),	--
 				q(66365),	--
 				q(66366),	-- Overly Loud Pocketwatch
 				q(66367),	-- Elaborate Lace Cuff
 				q(66370),	--
-				q(66371),	--
+				q(66371),	-- Test Set - Dracthyr Quest B (spellID 371196)
 				q(66372),	--
 				q(66403),	--
 				q(66404),	--
@@ -1790,8 +1789,8 @@ root(ROOTS.Unsorted, {
 				q(66492),	--
 				q(66494),	--
 				q(66495),	--
-				q(66496),	--
-				q(66497),	--
+				q(66496),	-- Expedition Task Accepted (spellID 372078)
+				q(66497),	-- Expedition Task Accepted (spellID 372095)
 				q(66498),	--
 				q(66499),	--
 				q(66502),	--
@@ -1979,9 +1978,9 @@ root(ROOTS.Unsorted, {
 				q(66853),	--
 				q(66857),	--
 				q(66859),	--
-				q(66926),	--
-				q(66927),	--
-				q(66928),	--
+				q(66926),	-- Treasure Map: The Waking Shores (spellID 375918)
+				q(66927),	-- Treasure Map: The Azure Span (spellID 375926)
+				q(66928),	-- Treasure Map: Thaldraszus (spellID 375920)
 				q(66930),	--
 				q(66954),	--
 				q(66955),	--
@@ -2004,7 +2003,7 @@ root(ROOTS.Unsorted, {
 				q(67020),	--
 				q(67022),	--
 				q(67023),	--
-				q(67025),	--
+				q(67025),	-- Activate Map: Apex Canopy (spellID 376949)
 				q(67028),	--
 				q(67029),	--
 				q(67037),	--
@@ -2014,7 +2013,7 @@ root(ROOTS.Unsorted, {
 				q(67045),	--
 				q(67052),	--
 				q(67054),	-- Our Present, Our History
-				q(67069),	--
+				q(67069),	-- Reset Hunting Party 001 Tracking Quest (spellID 377517)
 				q(67070),	-- [DNT] My First Quest
 				q(67085),	--
 				q(67086),	--
@@ -2082,7 +2081,6 @@ root(ROOTS.Unsorted, {
 				q(69982),	--
 				q(69985),	--
 				q(69989),	--
-				q(69996),	--
 				q(69997),	--
 				q(70008),	--
 				q(70010),	-- New Moves
@@ -2147,7 +2145,7 @@ root(ROOTS.Unsorted, {
 				q(70406),	--
 				-- 10.0.0.44895
 				q(70245),	-- Studies of Wild Magic
-				q(70443),	--
+				q(70443),	-- [DNT] Stay Awhile RP (spellID 385931)
 				q(70447),	--
 				q(70508),	-- Fueling the Engine: Second Spark
 				q(70526),	-- Ohn'ahran Plains Rally
@@ -2261,10 +2259,10 @@ root(ROOTS.Unsorted, {
 				q(71785),	--
 				q(71856),	--
 				q(71867),	--
-				q(71926),	--
-				q(71927),	--
-				q(71928),	--
-				q(71929),	--
+				q(71926),	-- DNT - Knowledge Purchase - Valdrakken Accord (spellID 393200)
+				q(71927),	-- DNT - Knowledge Purchase - Dragonscale Expedition (spellID 393201)
+				q(71928),	-- DNT - Knowledge Purchase - Iskaara Tuskarr (spellID 393202)
+				q(71929),	-- DNT - Knowledge Purchase - Maruuk Centaur (spellID 393203)
 				q(71949),	--
 				q(71968),	--
 				-- 10.0.0.45454
@@ -2280,7 +2278,7 @@ root(ROOTS.Unsorted, {
 				q(72077),	--
 				q(72078),	--
 				-- 10.0.0.45570
-				q(72093),	--
+				q(72093),	-- Greeter Flowers Off [DNT] (spellID 392630)
 				q(72106),	--
 				q(72107),	--
 				q(72108),	--

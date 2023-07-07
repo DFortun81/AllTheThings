@@ -875,12 +875,12 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 	n(VALDRAKKEN_ACCORD, {
 		q(72403),	-- triggered when reaching renown 12 with Valdrakken Accord
 		q(72404),	-- triggered when reaching renown 19 with Valdrakken Accord
-		q(72776),	-- triggered with 'Ally of Dragons' (68794)
-		q(70974),	-- triggers right after 'Hard Lock Life' (67079)
-		q(72757),	-- triggered with 'The Silver Purpose' (67084)
-		q(72777),	-- triggered with 'Emerald Summons' (66620)
-		q(72759),	-- triggered with 'And Yet So Far' (66191)
-		q(72758),	-- triggered with 'Like Mother, Like Daughter' (66402)
+		q(72776),	-- triggered with 'Ally of Dragons' (questID 68794) (spellID 396628)
+		q(70974),	-- triggers right after 'Hard Lock Life' (questID 67079)
+		q(72757),	-- triggered with 'The Silver Purpose' (questID 67084) (spellID 397082)
+		q(72777),	-- triggered with 'Emerald Summons' (questID 66620) (spellID 396638)
+		q(72759),	-- triggered with 'And Yet So Far' (questID 66191) (spellID 397080)
+		q(72758),	-- triggered with 'Like Mother, Like Daughter' (questID 66402) (spellID 397081)
 		q(72439, {	-- triggered when you accept 'Silver Mettle' (questID 72440) (spellID 412509)
 			["timeline"] = { ADDED_10_1_0 },
 		}),

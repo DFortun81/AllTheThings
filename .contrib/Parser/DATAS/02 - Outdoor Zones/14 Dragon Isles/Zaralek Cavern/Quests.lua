@@ -878,7 +878,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		-- Various
 		q(76118),	-- Accept Untranslated Obsidian Tome from Wrathion (spellID 411772)
 		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during 'It Was Not Enough' (questID 72873) (spellID 411853)
-		q(75642),	-- Unknown Account-Wide trigger when zoning into Dragon Isles for first time on an alt
+		q(75642),	-- Allows you to sense rare fish in high-altitude lakes (spellID 387827)
 		q(75658),	-- Zaralek Cavern World Quests (spellID 408876)
 		q(75511),	-- Tracking Quest (that's the name)
 		q(75764),	-- Current Patch - Login Video - Watched (spellID 409608)
