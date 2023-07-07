@@ -1558,3 +1558,13 @@ i(205129, 408222);	-- Winding Slitherdrake: Curved Chin Horn
 i(205131, 408223);	-- Winding Slitherdrake: Small Finned Throat
 i(205130, 408221);	-- Winding Slitherdrake: White Hair
 i(205128, 408220);	-- Winding Slitherdrake: Yellow and Silver Armor
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+--- ITEM ---
+i(206548, 413748);	-- Encased Frigid Heart
+i(207088, 416137);	-- Glyph of the Shath'Yar
+i(206528, 413515);	-- Shifting Sliver
+i(206532, 413519);	-- Soulscryer
+i(207575, 416690);	-- Wanderer's Guide

@@ -101,12 +101,12 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 				e(2375, {	-- N'Zoth, the Corruptor
 					["crs"] = { 158041 },
 					["g"] = {
-						i(207091, {	-- Technique: Glyph of the Shath'Yar
-							["timeline"] = { "added 10.1.5" }
+						i(207091, {	-- Technique: Glyph of the Shath'Yar (RECIPE!)
+							["timeline"] = { ADDED_10_1_5 },
 						}),
 					},
 				}),
-			}),					
+			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku

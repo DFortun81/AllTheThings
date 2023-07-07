@@ -1888,9 +1888,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			})),
 			-- #endif
 			i(2316),	-- Dark Leather Cloak
-			i(6466, {	-- Deviate Scale Cloak
-				["timeline"] = { "removed 4.0.3" },
-			}),
+			i(6466, {["timeline"] = {REMOVED_4_0_3,ADDED_10_1_5}}),	-- Deviate Scale Cloak
 			i(2310),	-- Embossed Leather Cloak
 			i(2308),	-- Fine Leather Cloak
 			i(7377),	-- Frost Leather Cloak
@@ -2040,9 +2038,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				i(4248),	-- Dark Leather Gloves
-				i(6467, {	-- Deviate Scale Gloves
-					["timeline"] = { "removed 4.0.3" },
-				}),
+				i(6467, {["timeline"] = {REMOVED_4_0_3,ADDED_10_1_5}}),	-- Deviate Scale Gloves
 				-- #if AFTER TBC
 				i(15063),	-- Devilsaur Gauntlets
 				-- #endif
@@ -2082,9 +2078,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				applyclassicphase(PHASE_THREE, i(19162)),	-- Corehound Belt
 				-- #endif
 				i(4249),	-- Dark Leather Belt
-				i(6468, {	-- Deviate Scale Belt
-					["timeline"] = { "removed 4.0.3" },
-				}),
+				i(6468, {["timeline"] = {REMOVED_4_0_3,ADDED_10_1_5}}),	-- Deviate Scale Belt
 				i(7387),	-- Dusky Belt
 				i(4246),	-- Fine Leather Belt
 				i(4262),	-- Gem-Studded Leather Belt

@@ -1260,3 +1260,11 @@ i(204975, 405076);	-- Shadowflame Wreathe
 i(204976, 405803);	-- Spore Keeper's Baton
 i(204978, 404859);	-- Spore Tender
 i(205337, 405937);	-- Titan Training Matrix V
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+--- ITEM ---
+i(207569, 416684);	-- Magebane Nexus
+i(207570, 416685);	-- Smoked Fireshooter
+i(207571, 416686);	-- Stormwatcher

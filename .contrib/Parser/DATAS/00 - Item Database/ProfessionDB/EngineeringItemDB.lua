@@ -245,6 +245,14 @@ i(205178, 408230);	-- Mallard Mortar
 i(204844, 407005);	-- Polarity Bomb
 i(205036, 408052);	-- Tinker: Shadowflame Rockets
 -- DISCOVERY --
-i(0, 407006);	-- EZ-Thro Polarity Bomb
+i(0, 407006);		-- EZ-Thro Polarity Bomb
 -- SPECIAL --
 i(0, 407170);		-- Inspired Order Recalibrator
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+--- ITEM ---
+i(207576, 416691);	-- Refurbished Purifier
+i(206559, 413759);	-- Replaced Servo Arm
+i(207574, 416689);	-- Skullstone Bludgeon

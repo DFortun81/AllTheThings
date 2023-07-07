@@ -2137,12 +2137,12 @@ i(206558, 413758);	-- Belt of the Mentor
 i(206539, 413739);	-- Blade of Unholy Might
 i(206546, 413746);	-- Blade of the Fallen Seraph
 i(206542, 413742);	-- Bracers of Vengeance
+i(206805, 414590);	-- Bucket Kickers
 i(206525, 413512);	-- Darrowdirk
 i(206526, 413513);	-- Darrowshire Protector
 i(206553, 413753);	-- Dawn of Demise
 i(206557, 413757);	-- Death's Gamble
 i(206537, 413524);	-- Edict of the Redeemed Crusader
-i(206805, 414590);	-- Feet Picklers
 i(206555, 413755);	-- Gauntlets of the Unrelenting
 i(206550, 413750);	-- Harbinger of Death
 i(206419, 413506);	-- Icebane Coif

@@ -3648,7 +3648,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
 					["cr"] = 9452,	-- Scarlet Enchanter
 				}),
-				i(16222, {	-- Formula: Enchant Shield - Superior Versatility / CLASSIC: Formula: Enchant Shield - Superior Spirit (RECIPE!)
+				i(16222, {	-- Formula: Enchant Shield - Vitality / TBC-10.1.5:Formula: Enchant Shield - Superior Versatility / CLASSIC: Formula: Enchant Shield - Superior Spirit (RECIPE!)
 					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
 					["cr"] = 9447,	-- Scarlet Warder
 				}),

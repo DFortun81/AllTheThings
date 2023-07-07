@@ -1768,6 +1768,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		filter(GLYPHS, {
 			i(203762, {["timeline"] = {ADDED_10_1_0}}),	-- Glyph of the Chosen Glaive
 			i(203763, {["timeline"] = {ADDED_10_1_0}}),	-- Glyph of the Heaved Armament
+			i(207088, {["timeline"] = {ADDED_10_1_5}}),	-- Glyph of the Shath'Yar
 		}),
 		filter(MISC, {
 			i(203412, {["timeline"] = {ADDED_10_0_7}}),	-- Arcane Dispelling Rune
