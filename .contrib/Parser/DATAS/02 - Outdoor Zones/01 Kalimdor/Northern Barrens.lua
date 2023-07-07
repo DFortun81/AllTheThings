@@ -4330,12 +4330,4 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
-root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, {
-	m(NORTHERN_BARRENS, {
-		q(26879, {	-- Disciples of Naralex (completed with 26878)
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
-	}),
-}));
 -- #endif

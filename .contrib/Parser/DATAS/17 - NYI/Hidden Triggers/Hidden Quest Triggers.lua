@@ -1676,6 +1676,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(26757),	-- The Bounty of Teldrassil - completed with 6341
 		q(26758),	-- Flight to Auberdine - completed with 6342
 		q(26759),	-- Return to Nessa - completed with 6343
+		q(26879),	-- Disciples of Naralex - completed with 26878
 		q(26893),	-- Blackfathom Deeps - completed with quest 26894
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
 		q(27419),	-- Army of the Black Dragon - completed with quest 1168
