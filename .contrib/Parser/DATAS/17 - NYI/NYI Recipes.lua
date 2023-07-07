@@ -291,7 +291,6 @@ root(ROOTS.NeverImplemented, {
 				-- 7.0.3
 				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 					i(141061),	-- Technique: Grimoire of the Abyssal (Item never made it into the game)
-					i(139314),	-- Grimoire of the Abyssal
 					i(141065),	-- Technique: Grimoire of the Terrorguard (Item never made it into the game)
 					i(141065),	-- Technique: Grimoire of the Terrorguard
 				})),

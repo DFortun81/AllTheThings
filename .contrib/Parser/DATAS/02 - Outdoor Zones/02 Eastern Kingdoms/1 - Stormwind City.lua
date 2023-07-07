@@ -6654,11 +6654,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.4, 69.8, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["groups"] = {
-						i(189719, {	-- Barbed Collar of the Incubus
-							["timeline"] = { ADDED_9_2_0 },
+						i(189719, {	-- Tattered Collar of the Incubus
+							["timeline"] = { ADDED_9_2_0, REMOVED_10_0_5 },
 						}),
-						i(189720, {	-- Barbed Collar of the Succubus
-							["timeline"] = { ADDED_9_2_0 },
+						i(189720, {	-- Tattered Collar of the Succubus
+							["timeline"] = { ADDED_9_2_0, REMOVED_10_0_5 },
 						}),
 					},
 				}),

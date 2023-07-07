@@ -3104,7 +3104,7 @@ root(ROOTS.NeverImplemented, {
 						}),
 						cl(HUNTER, {
 							i(205820),	-- Ashen Predator's Faceguard
-							i(205819),	-- Ashen Predator's Poleyn
+							i(205819),	-- Ashen Predator's Poleyns
 							i(205821),	-- Ashen Predator's Skinners
 							i(205822),	-- Ashen Predator's Sling Vest
 							i(205818),	-- Ashen Predator's Trophy
@@ -3206,7 +3206,7 @@ root(ROOTS.NeverImplemented, {
 						}),
 						cl(HUNTER, {
 							i(205820),	-- Ashen Predator's Faceguard
-							i(205819),	-- Ashen Predator's Poleyn
+							i(205819),	-- Ashen Predator's Poleyns
 							i(205821),	-- Ashen Predator's Skinners
 							i(205822),	-- Ashen Predator's Sling Vest
 							i(205818),	-- Ashen Predator's Trophy
@@ -3308,7 +3308,7 @@ root(ROOTS.NeverImplemented, {
 						}),
 						cl(HUNTER, {
 							i(205820),	-- Ashen Predator's Faceguard
-							i(205819),	-- Ashen Predator's Poleyn
+							i(205819),	-- Ashen Predator's Poleyns
 							i(205821),	-- Ashen Predator's Skinners
 							i(205822),	-- Ashen Predator's Sling Vest
 							i(205818),	-- Ashen Predator's Trophy
@@ -3410,7 +3410,7 @@ root(ROOTS.NeverImplemented, {
 						}),
 						cl(HUNTER, {
 							i(205820),	-- Ashen Predator's Faceguard
-							i(205819),	-- Ashen Predator's Poleyn
+							i(205819),	-- Ashen Predator's Poleyns
 							i(205821),	-- Ashen Predator's Skinners
 							i(205822),	-- Ashen Predator's Sling Vest
 							i(205818),	-- Ashen Predator's Trophy
@@ -3506,7 +3506,7 @@ root(ROOTS.NeverImplemented, {
 						}),
 						cl(HUNTER, {
 							i(205820),	-- Ashen Predator's Faceguard
-							i(205819),	-- Ashen Predator's Poleyn
+							i(205819),	-- Ashen Predator's Poleyns
 							i(205821),	-- Ashen Predator's Skinners
 							i(205822),	-- Ashen Predator's Sling Vest
 							i(205818),	-- Ashen Predator's Trophy

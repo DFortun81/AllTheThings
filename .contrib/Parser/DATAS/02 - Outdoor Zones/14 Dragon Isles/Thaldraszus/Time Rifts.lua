@@ -32,7 +32,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(18637, {	-- Chronograde Connoisseur
-						-- TODO: Change names
 						crit(1, {	-- Azmerloth
 							["crs"] = { 204808 },	-- Fractured Causality / Gil'dan
 						}),
@@ -135,6 +134,81 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					ach(18641),	-- To All The Squirrels I've BEEN Before
 					ach(18635),	-- Verified Rifter
+				}),
+				n(BOSSES, {
+					header(HEADERS.AchCriteria, 18637.01, {	-- Azmerloth
+						["crs"] = { 204808 },	-- Fractured Causality / Gil'dan
+						["sym"] = {{"select", "itemID",
+						}},
+					}),
+					header(HEADERS.AchCriteria, 18637.02, {	-- Ulderoth
+						["crs"] = { 205304 },	-- Fractured Causality / Freya
+						["sym"] = {{"select", "itemID",
+							206794,	-- Hand of Order
+							206795,	-- Titan Watcher's Shortblade
+							206782,	-- Titanic Hourglass
+							206788,	-- Utopian Tabard
+							206798,	-- Valhalas Heartstriker
+							206767,	-- Valhalas Peacekeeper
+						}},
+					}),
+					header(HEADERS.AchCriteria, 18637.03, {	-- Azmourne
+						["crs"] = { 205305 },	-- Fractured Causality / The Lich King
+						["sym"] = {{"select", "itemID",
+							206784,	-- Blighted Greatbow
+							206783,	-- Bonegale Greataxe
+							206803,	-- Cursed Blade of the Scourge
+							206797,	-- Frostspire
+							206778,	-- Northern Ballista
+							206802,	-- Plague-Touched Stave
+							206793,	-- Upraised Headstone
+						}}
+					}),
+					header(HEADERS.AchCriteria, 18637.04, {	-- Azewrath
+						["crs"] = { 205306 },	-- Fractured Causality / Illidan
+						["sym"] = {{"select", "itemID",
+							206766,	-- Jagged Treason
+							206790,	-- Fel-Ridden Divider
+							206781,	-- Demonic Bone-Crusher
+							206791,	-- Branded Greatmaul
+							206764,	-- Fel-Infused Polearm
+							206801,	-- Inferna Rod
+							206789,	-- Heart-Slicer
+						}},
+						["g"] = {
+							i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
+							i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
+						},
+					}),
+					header(HEADERS.AchCriteria, 18637.05, {	-- Azq'roth
+						["crs"] = { 205307 },	-- Fractured Causality / Fury of N'zoth
+						["sym"] = {{"select", "itemID",
+							206770,	-- Consuming Claws
+							206776,	-- Heretical Gavel
+							206765,	-- Its Focused Gaze
+							206799,	-- Pauldrons of the Fire Lord
+							206768,	-- Serrated Parasite
+							206792,	-- Subjugator's Shield
+							206769,	-- Unknown Horror's Arm
+						}},
+					}),
+					header(HEADERS.AchCriteria, 18637.06, {	-- The Warlands
+						["crs"] = { 205308 },	-- Fractured Causality / Varian Wrynn
+						["sym"] = {{"select", "itemID",
+						}},
+					}),
+					header(HEADERS.AchCriteria, 18637.07, {	-- A.Z.E.R.O.T.H
+						["crs"] = { 205309 },	-- Fractured Causality / Overload Mechagon
+						["sym"] = {{"select", "itemID",
+							206804,	-- Clockwork Mallet
+							206785,	-- Defect Retirement Tool
+							206796,	-- Energetic Power Knife
+							206777,	-- Energy Projection Regulator
+							206807,	-- Order-Powered Mechblade
+							206780,	-- Overclocked Hand Cannon
+							206779,	-- Steel-Lined Locking System
+						}},
+					}),
 				}),
 				n(FACTIONS, {
 					faction(FACTION_SORIDORMI, {

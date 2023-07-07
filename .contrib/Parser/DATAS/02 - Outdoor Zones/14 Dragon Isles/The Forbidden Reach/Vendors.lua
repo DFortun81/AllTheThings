@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						},
 						["g"] = {
 							i(204001),	-- Echoing Thunder Stone
-							i(204000),	-- Storm Infused Stone
+							i(204000),	-- Storm-Infused Stone
 							i(204020),	-- Wild Spirit Stone
 						},
 					}),

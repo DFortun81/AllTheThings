@@ -2342,6 +2342,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(21939, {	-- Fel Elemental Rod
 							["cost"] = 400000,	-- 40g
 						}),
+						i(207295, {	-- Grimoire of the Dreadfire Imp (CI!)
+							["timeline"] = { ADDED_10_1_5 },
+						}),
 					},
 				}),
 				n(11184, {	-- Wixxrak <Weaponsmith & Gunsmith>

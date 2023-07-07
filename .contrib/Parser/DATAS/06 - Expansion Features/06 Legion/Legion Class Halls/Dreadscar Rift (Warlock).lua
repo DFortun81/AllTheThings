@@ -803,6 +803,14 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["coord"] = { 57.6, 52.6, DREADSCAR_RIFT },
 						}),
 					}),
+					n(106216, {	-- Imp Mother Dyala <Recruiter>
+						["coord"] = { 65.0, 33.0, DREADSCAR_RIFT },
+						["g"] = {
+							i(207178, {	-- Grimoire of the Darkfire Imp (CI!)
+								["timeline"] = { ADDED_10_1_5 },
+							}),
+						},
+					}),
 				}),
 				n(VENDORS, {
 					n(101097, {	-- Calydus

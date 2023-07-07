@@ -1166,6 +1166,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["groups"] = {
 							i(18249),	-- Crescent Key
 							i(18261),	-- Book of Incantations
+							i(207297, {	-- Grimoire of the Felblaze Imp (CI!)
+								["timeline"] = { ADDED_10_1_5 },
+							}),
 							i(18267),	-- Recipe: Runn Tum Tuber Surprise
 						},
 					}),

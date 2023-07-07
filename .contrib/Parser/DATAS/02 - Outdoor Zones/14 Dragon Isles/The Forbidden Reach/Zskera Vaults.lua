@@ -1155,7 +1155,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204004),	-- Searing Smokey Stone
 				i(204007),	-- Shining Obsidian Stone
 				i(204014),	-- Sparkling Mana Stone
-				i(204000),	-- Storm Infused Stone
+				i(204000),	-- Storm-Infused Stone
 				i(204015, {	-- Swirling Mojo Stone
 					i(204244),	-- Breathing Mojo Crystal
 					i(204245),	-- Hateful Mojo Crystal

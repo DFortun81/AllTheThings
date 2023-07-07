@@ -118,6 +118,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					crit(3, {	-- Matron Folnuna
 						["achievementID"] = 12026,	-- Invasion Obliteration
 					}),
+					i(207296, {	-- Grimoire of the Netherbound Imp (CI!)
+						["timeline"] = { ADDED_10_1_5 },
+					}),
 					i(152376),	-- Crown of Burning Resolve
 					i(152369),	-- Helm of the Vigilant Eye
 					i(152354),	-- Accursed Defiler's Mantle

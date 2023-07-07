@@ -34,7 +34,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		407,	-- Darkmoon Island
 		408,	-- Cauldron of Rock
 	-- #else
-		
+
 	-- #endif
 	},
 	["groups"] = {
@@ -1583,6 +1583,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(101675),	-- Shimmering Moonstone
 				},
 			}),
+			n(204964, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Twinkle <Madam Shadow's Minion>
+				["description"] = "Question Madam Shadow until you get punished",
+				["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
+				["questID"] = 77158,
+				["g"] = {
+					i(207294),	-- Grimoire of the Felfrost Imp (CI!)
+				},
+			})),
 		}),
 		n(VENDORS, {
 			n(55072,  {	-- Barum

@@ -1,6 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-----------------------------------------------------
+local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
+
 root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(786, {	-- The Nighthold
 		["isRaid"] = true,
@@ -11,6 +14,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 		["lvl"] = 110,
 		["g"] = {
+			iq(139314, 76370, WARLOCK);			-- Grimoire of the Abyssal
 			n(ACHIEVEMENTS, {
 				ach(10829, {    -- Arcing Aqueducts
                     crit(1, {    -- Skorpyron
@@ -98,6 +102,17 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["provider"] = { "n", 106522 },	-- Archmage Khadgar
 					["g"] = {
 						sp(233377),	-- Gaze of Aman'Thul
+					},
+				}),
+			}),
+			d(AllDifficulties, {
+				e(1737, {	-- Gul'dan
+					["crs"] = {
+						104154,	-- Gul'dan
+						111022,	-- The Demon Within
+					},
+					["g"] = {
+						i(139314),	-- Grimoire of the Abyssal (CI!)
 					},
 				}),
 			}),

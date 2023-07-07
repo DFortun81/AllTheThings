@@ -355,6 +355,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				},
 			}),
 		}),
+		i(207112, {	-- Grimoire of the Void-Touched Fel Imp (CI!)
+			["timeline"] = { ADDED_10_1_5 },
+		}),
 		i(187902, {	-- Sporebat Soul
 			["timeline"] = { ADDED_9_1_5 },
 		}),
@@ -4514,6 +4517,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					}),
 				},
 			}),
+		}),
+		i(207114, {	-- Grimoire of the Fiendish Imp (CI!)
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(187906, {	-- Owl Serpent Soul
 			["timeline"] = { ADDED_9_1_5 },
