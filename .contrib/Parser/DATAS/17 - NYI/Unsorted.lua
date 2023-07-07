@@ -973,7 +973,6 @@ root(ROOTS.Unsorted, {
 				q(75911),	--
 				q(75912),	--
 				q(75937),	-- No Time Like The Present
-				q(75968),	--
 				q(75995),	--
 				q(75999),	--
 				q(76001),	--
@@ -991,8 +990,8 @@ root(ROOTS.Unsorted, {
 				q(76106),	--
 				q(76107),	--
 				q(76108),	--
-				q(76109),	--
-				q(76111),	--
+				q(76109),	-- Salverun (spellID 411721)
+				q(76111),	-- Ensemble: Enmity Hood and Cloak
 				q(76112),	--
 				q(76113),	--
 				q(76114),	--
@@ -1005,14 +1004,14 @@ root(ROOTS.Unsorted, {
 				q(76202),	--
 				-- 10.1.0.49679
 				q(74924),	-- Nasz'uro, the Unbound Legacy
-				q(75623),	--
+				q(75623),	-- Take Item (DNT) (spellID 408549)
 				q(75659),	--
 				q(76087),	--
 				-- 10.1.0.49741
 				q(72943),	--
 				q(75054),	--
 				q(75388),	-- The Azure Vaults
-				q(75391),	--
+				q(75391),	-- Epilogue Scene (DNT) (spellID 406790)
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {

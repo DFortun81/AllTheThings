@@ -1185,6 +1185,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75192),    -- Solicited Opinions question 1 answer 2
 		q(75191),    -- Solicited Opinions question 1 answer 1
 		-- Stay awhile Listening
-		q(73960),	--
+		q(73960),	-- (spellID 406027)
 	}),
 }));

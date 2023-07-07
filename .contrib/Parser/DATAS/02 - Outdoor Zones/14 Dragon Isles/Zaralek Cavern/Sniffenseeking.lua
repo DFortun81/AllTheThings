@@ -320,7 +320,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(SNIFFENSEEKING, {
-		q(75241),	-- Sniffenseeking unlocked?
+		q(75241),	-- Flag Niffen Cave Account Tracking (spellID 407744)
 		q(75747),	-- Completing a Sniffenseeking quest
 		q(75748),	-- Completing a Sniffenseeking quest
 		q(75749),	-- Completing a Sniffenseeking quest

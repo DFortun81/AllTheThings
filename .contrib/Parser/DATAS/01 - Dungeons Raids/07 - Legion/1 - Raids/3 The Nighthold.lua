@@ -14,7 +14,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 		["lvl"] = 110,
 		["g"] = {
-			iq(139314, 76370, WARLOCK);			-- Grimoire of the Abyssal
+			i(139314),	-- Grimoire of the Abyssal (CI!)
 			n(ACHIEVEMENTS, {
 				ach(10829, {    -- Arcing Aqueducts
                     crit(1, {    -- Skorpyron

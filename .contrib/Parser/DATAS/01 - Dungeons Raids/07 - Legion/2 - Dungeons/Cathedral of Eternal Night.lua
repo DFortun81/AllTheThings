@@ -46,12 +46,13 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(147515),	-- Hellblaze Invader's Greaves
 					i(147517),	-- Inquisitor's Battle Cowl
 					i(147516),	-- Legion Stalker's Hood
-				}),
-				i(147117, {	-- Orb of the Fel Temptress (CI!)
-					["crs"] = {
-						120366,	-- Hellblaze Temptress
-						118714,	-- Hellblaze Temptress
-					},
+					i(147117, {	-- Orb of the Fel Temptress (CI!)
+						["crs"] = {
+							120366,	-- Hellblaze Temptress
+							118714,	-- Hellblaze Temptress
+						},
+						["ignoreBonus"] = true,
+					}),
 				}),
 			}),
 			d(HEROIC_DUNGEON, {

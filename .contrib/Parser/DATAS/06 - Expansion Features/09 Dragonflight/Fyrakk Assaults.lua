@@ -290,6 +290,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(FYRAKK_ASSAULTS, {
 		q(75448),	-- Ward of Ingira Elite
 		q(75447),	-- Ward of Fyrakk Elite / Forgemaster 1st kill
-		q(75157),	-- Completes alongside 75888
+		q(75157),	-- Completes with 'Suffusion Camp' (questID 75888) (spellID 411135)
 	}),
 }));

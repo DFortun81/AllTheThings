@@ -875,27 +875,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
-		q(76118),	-- Accept Untranslated Obsidian Tome from Wrathion
-		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
+		-- Various
+		q(76118),	-- Accept Untranslated Obsidian Tome from Wrathion (spellID 411772)
+		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during 'It Was Not Enough' (questID 72873) (spellID 411853)
 		q(75642),	-- Unknown Account-Wide trigger when zoning into Dragon Isles for first time on an alt
-
-		q(75658),	-- WQ Unlock?
-		--
+		q(75658),	-- Zaralek Cavern World Quests (spellID 408876)
 		q(75511),	-- Tracking Quest (that's the name)
-		q(75764),	-- Login
-
-		q(76013),	-- After killing Dreadful Defender / cinematic during 'Stopping Sakareth' (questID 72930)
+		q(75764),	-- Current Patch - Login Video - Watched (spellID 409608)
+		q(76013),	-- Complete Ch 5 and Delay for Ch 6 after 'Stopping Sakareth' (questID 72930) (spellID 411104)
 
 		-- Talk to npc during Respite (73041)
-		q(75425),	-- Tellywin Sharpfizzle
-		q(75424),	-- Chef Butterfingers
-		q(75423),	-- Earthmender Narvra
-		q(75422),	-- Rupert
-		q(75421),	-- Veritistrasz
-		q(75420),	-- Voraxian
+		q(75425),	-- Tellywin Sharpfizzle (spellID 407079)
+		q(75424),	-- Chef Butterfingers (spellID 407078)
+		q(75423),	-- Earthmender Narvra (spellID 407083)
+		q(75422),	-- Rupert (spellID 407084)
+		q(75421),	-- Veritistrasz (spellID 407076)
+		q(75420),	-- Voraxian (spellID 407075)
 
 		-- RP after Stain Removal (73045)
-		q(75219),	-- Voraxian
+		q(75219),	-- Voraxian (spellID 413020)
 
 		-- Talk with Veritistrasz during (74495)
 		q(74773),	-- 1 (optional) dialog

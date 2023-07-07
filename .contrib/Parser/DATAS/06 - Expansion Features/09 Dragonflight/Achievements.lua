@@ -710,6 +710,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(72248),	-- Triggered when using Gleaming Incarnate Thunderstone 202047
-	q(75968),	-- Triggered when using Obsidian Aspectral Earthstone 205878
+	q(72248),	-- Triggered when using 'Gleaming Incarnate Thunderstone' (itemID 202047)
+	q(75968),	-- Triggered when using 'Obsidian Aspectral Earthstone' (itemID 205878)
 });
