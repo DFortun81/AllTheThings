@@ -332,9 +332,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 })));
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-	q(74767),	-- First Envoy
-	q(74766),	-- Second Envoy
-	q(74765),	-- Third Envoy
-	q(74764),	-- Fourth Envoy
-	q(75240),	-- Unlocking Researcher Imareth as a vendor
+	q(74767),	-- Valdrakken Accord Envoy Tasks Unlock
+	q(74766),	-- Maruuk Centaur Envoy Tasks Unlock
+	q(74765),	-- Iskaara Tuskarr Envoy Tasks Unlock
+	q(74764),	-- Dragonscale Expedition Envoy Tasks Unlock
+	q(75240),	-- Unlocking Researcher Imareth as a vendor (spellID 406060)
 })));

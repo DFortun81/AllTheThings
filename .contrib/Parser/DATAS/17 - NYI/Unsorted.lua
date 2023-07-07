@@ -1059,7 +1059,7 @@ root(ROOTS.Unsorted, {
 				q(74360),	-- Signed, Sealed, Delivered
 				q(74361),	-- Deprecated Quest
 				q(74362),	-- Deprecated Quest
-				q(74384),	--
+				q(74384),	-- [DNT] Placeholder Broadcast: Finale (spellID 398724)
 				q(74392),	-- Reach South
 				q(74418),	--
 				q(74427),	--
@@ -1102,9 +1102,8 @@ root(ROOTS.Unsorted, {
 				q(75532),	--
 				q(75533),	--
 				-- 10.0.7.48749
-				q(73177),	--
-				q(73394),	--
-				q(73549),	--
+				q(73177),	-- [DNT] Injured Youth Kill Credit (spellID 398844)
+				q(73549),	-- [DNT] Complete Clan Tracking Quest (spellID 399498)
 				q(74672),	--
 				q(74677),	--
 				-- 10.0.7.48966
@@ -1240,13 +1239,8 @@ root(ROOTS.Unsorted, {
 			n(QUESTS, {
 				-- 10.0.5.47799
 				q(66925),	-- [DNT] Boar-B-Q
-				q(72081),	--
 				q(72085),	--
-				q(72087),	--
-				q(72088),	--
 				q(72092),	--
-				q(72123),	--
-				q(72124),	--
 				q(72384),	-- Valdrakken Tour
 				q(72829),	--
 				q(72830),	--
@@ -1617,7 +1611,7 @@ root(ROOTS.Unsorted, {
 				q(65719),	--
 				q(65722),	--
 				q(65734),	--
-				q(65738),	--
+				q(65738),	-- Ensemble: Dashing Buccaneer's Slops
 				q(65740),	--
 				q(65759),	--
 				q(65765),	--

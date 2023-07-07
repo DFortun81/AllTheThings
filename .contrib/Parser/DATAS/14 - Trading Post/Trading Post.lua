@@ -534,7 +534,13 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(65736),	-- Ensemble: Wanderer's Snowy Trappings
 		q(72070),	-- Ensemble: Glorious Dragonrider's Mail
 		q(72080),	-- Ensemble: Corrupted Runelord's Regalia
+		q(72081),	-- Ensemble: Val'sharah Protector's Battleplate
+		q(72082),	-- Ensemble: Sylvan Stalker's Leathers (same questID as Ensemble: Waveborne Diplomat's Regalia), good job Blizzard.
 		q(72086),	-- Ensemble: Tidecaller's Chainmail
+		q(72087),	-- Ensemble: Void-Bound Raiment
+		q(72088),	-- Ensemble: Void-Bound Battlegear
+		q(72123),	-- Ensemble: Void-Bound Chains
+		q(72124),	-- Ensemble: Void-Bound Warplate
 		q(72132),	-- Ensemble: Kvaldir Scout Leathers
 		q(72133),	-- Ensemble: Helarjar Berserker Warplate
 		q(72811),	-- Ensemble: Wanderer's Rosy Trappings
