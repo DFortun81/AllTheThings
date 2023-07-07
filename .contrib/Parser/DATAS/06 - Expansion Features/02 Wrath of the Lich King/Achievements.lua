@@ -459,7 +459,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["provider"] = { "o", 175855 },
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 41.1, 73.7, THE_CAPE_OF_STRANGLETHORN },
+					{ 42.0, 73.7, THE_CAPE_OF_STRANGLETHORN },
 					{ 52.5, 26.9, TANARIS },
 					-- #else
 					{ 27.8, 77.3, STRANGLETHORN_VALE },
@@ -641,7 +641,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["provider"] = { "o", 175757 },
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 41.1, 74.5, THE_CAPE_OF_STRANGLETHORN },
+					{ 41.0, 74.4, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.1, 77.7, STRANGLETHORN_VALE },
 					-- #endif
@@ -846,7 +846,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["coords"] = {
 					{ 34.8, 49.8, ASHENVALE },
 					-- #if AFTER CATA
-					{ 41.9, 73.4, THE_CAPE_OF_STRANGLETHORN },
+					{ 41.8, 73.4, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.6, 77.1, STRANGLETHORN_VALE },
 					-- #endif
@@ -888,7 +888,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 52.5, 26.9, TANARIS },
-					{ 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },
+					{ 42.0, 73.7, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.8, 77.3, STRANGLETHORN_VALE },
 					{ 52.6, 27.8, TANARIS },
@@ -982,7 +982,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 52.5, 26.9, TANARIS },
-					{ 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },
+					{ 42.0, 73.7, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.8, 77.3, STRANGLETHORN_VALE },
 					{ 52.6, 27.8, TANARIS },
