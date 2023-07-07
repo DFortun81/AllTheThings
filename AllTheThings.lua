@@ -7182,7 +7182,9 @@ end
 -- Returns a 'read-only' wrap of the given object such that it is represented as itself via field access of the raw object if nil, but any table assignment
 -- affects only the raw object and not the read-only object
 -- app.CreateReadOnlyObject = function(t)
--- 	return SetBase({}, t);
+-- 	t = SetBase({}, t);
+-- 	t.__readonly = true;
+-- 	return t;
 -- end
 end	-- Common Wrapper Types
 
@@ -16516,6 +16518,16 @@ RowOnEnter = function (self)
 				end
 			end
 		end
+
+		-- Show if Quest is available
+		-- local questAvailable = refQuestID
+		-- 	and not reference.saved
+		-- 	and not C_QuestLog.IsOnQuest(refQuestID)
+		-- 	and not reference.locked
+		-- 	and not reference.missingReqs;
+		-- if questAvailable then
+		-- 	GameTooltip:AddLine(Colorize("Quest available to pick up", app.Colors.ChatLinkHQT));
+		-- end
 
 		-- Show Quest Prereqs
 		local isDebugMode, sqs, bestMatch = app.MODE_DEBUG;
