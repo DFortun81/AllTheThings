@@ -151,6 +151,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(204989),	-- Eric's Camera
 					},
 				}),
+				q(76246, {	-- Manastorm Mystique
+					["provider"] = { "n", 205769 },	-- Soridormi
+					["coord"] = { 52.1, 81.6, THALDRASZUS },
+				}),
 				q(76162, {	-- Missing Mojo
 					["provider"] = { "n", 205793 },	-- Vol'jin
 					["coord"] = { 52.3, 81.6, THALDRASZUS },
