@@ -2,7 +2,14 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local ADDED_WITH_RERELEASE = { "added 3.2.2" };
-local REMOVED_WITH_RERELEASE = { "added 1.0.1", "removed 3.2.2" };
+local REMOVED_WITH_RERELEASE = {
+	"added 1.0.1",
+	-- #if ANYCLASSIC
+	"removed 10.0.1"	-- Blizzard added it back to Classic Wrath!
+	-- #else
+	"removed 3.2.2"
+	-- #endif
+};
 local REMOVED_WITH_CATA = { "added 1.0.1", "removed 4.0.3" };
 
 -- Helms were moved to Nefarian with 3.2.2
@@ -18,21 +25,25 @@ local STORMRAGE_COVER = i(16900);	-- Stormrage Cover
 
 -- #if WRATH
 local ONYXIAS_LAIR_FORTYMAN_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
+	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
 		t.u = nil;
+		-- #if ANYCLASSIC
+		t.description = "Blizzard decided not to remove this yet, but we'll see if it lasts!";
+		t.rwp = 100001;
+		-- #else
 		t.rwp = 30202;
+		-- #endif
 	end
 end]];
 -- #endif
 local ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS = {
 	-- #if WRATH
 	["OnUpdate"] = ONYXIAS_LAIR_FORTYMAN_ONUPDATE,
-	-- #else
-	["timeline"] = REMOVED_WITH_RERELEASE,
 	-- #endif
+	["timeline"] = REMOVED_WITH_RERELEASE,
 };
 local ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER = function(t)
 	 return not t.objectiveID;
