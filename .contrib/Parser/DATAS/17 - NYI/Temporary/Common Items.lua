@@ -513,9 +513,6 @@ root(ROOTS.NeverImplemented, {
 						i(131626),	-- Shrouded Gauntlets
 						i(131925),	-- Wanderer's Grips
 					}),
-					n(LEGS, {
-						i(131213),	-- Chain Kodo-Rider's Pants
-					}),
 					n(FEET, {
 						i(131873),	-- Chaser's Boots
 						i(131391),	-- Frost-Encrusted Chain Boots

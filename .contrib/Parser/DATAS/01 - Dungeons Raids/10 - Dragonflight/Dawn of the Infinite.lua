@@ -287,11 +287,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						-- World Drop Items with any quality till SL (You can get SL stuff)
 						-- Dungeon Items from Classic till BFA (so far confirmed)
 						-- Raid Items from Classic till BFA (so far confirmed)
-						i(208064),	-- Quantum Chestpiece
-						i(208063),	-- Quantum Gloves
-						i(208061),	-- Quantum Headpiece
-						i(208065),	-- Quantum Legs
-						i(208062),	-- Quantum Shoulders
 						i(208216, {	-- Reins of the Quantum Courser
 							["sym"] = {{"select","itemID",
 								-- Dungeon
@@ -321,7 +316,22 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							--	77067, -- Reins of the Blazing Drake								
 							}},
 						}),
-						n(WEAPONS, {
+						i(208064, {	-- Quantum Chestpiece
+							["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+						}),
+						i(208063, {	-- Quantum Gloves
+							["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+						}),
+						i(208061, {	-- Quantum Headpiece
+							["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+						}),
+						i(208065, {	-- Quantum Legs
+							["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+						}),
+						i(208062, {	-- Quantum Shoulders
+							["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+						}),
+						n(WEAPONS, bubbleDown({ ["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)" }, {
 							i(208111),	-- Quantum Axe
 							i(208117),	-- Quantum Bow
 							i(208118),	-- Quantum Crossbow
@@ -341,7 +351,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(208109),	-- Quantum Sword
 							i(208122),	-- Quantum Warglaives
 							i(208123),	-- Quantum Wand
-						}),
+						})),
 					},
 				}),
 			}),
