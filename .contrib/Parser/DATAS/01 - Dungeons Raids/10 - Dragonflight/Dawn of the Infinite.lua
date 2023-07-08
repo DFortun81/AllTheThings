@@ -293,10 +293,33 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(208065),	-- Quantum Legs
 						i(208062),	-- Quantum Shoulders
 						i(208216, {	-- Reins of the Quantum Courser
-							--["sym"] = {{"select","itemID",
-							--	142236,	-- Midnight's Eternal Reins
-							--	45693,	-- Mimiron's Head
-							--}},
+							["sym"] = {{"select","itemID",
+								-- Dungeon
+								68823,	-- Armored Razzashi Raptor
+								186638,	-- Cartel Master's Gearglider
+								13335,	-- Deathcharger's Reins
+								181819,	-- Marrowfang's Reins
+								168826,	-- Mechagon Peacekeeper
+								142236,	-- Midnight's Eternal Reins
+								159921,	-- Mummified Raptor Skull
+								44151,	-- Reins of the Blue Proto-Drake
+								63040,	-- Reins of the Drake of the North Wind
+								133543,	-- Reins of the Infinite Timereaver
+								208216,	-- Reins of the Quantum Courser
+								32768,	-- Reins of the Raven Lord
+								63043,	-- Reins of the Vitreous Stone Drake
+								159842,	-- Sharkbait's Favorite Crackers
+								35513,	-- Swift White Hawkstrider
+								68824,	-- Swift Zulian Panther
+								-- Open World Unconfirmed
+							-- green dragon from oracles egg in sholazar in wotlk
+								-- Raid Unconfirmed
+							--	78919, -- Experiment 12-B	
+							--	71665, -- Flametalon of Alysrazor
+							--	77069, -- Life-Binder's Handmaiden
+							--	45693, -- Mimiron's Head
+							--	77067, -- Reins of the Blazing Drake								
+							}},
 						}),
 						n(WEAPONS, {
 							i(208111),	-- Quantum Axe
