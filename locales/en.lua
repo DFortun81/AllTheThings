@@ -709,7 +709,7 @@ app.L = {
 	["SECRETS_HEADER"] = "Secrets";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
-	["ADDED_WITH_PATCH_FORMAT"] = "This gets added in patch %s";
+	["ADDED_WITH_PATCH_FORMAT"] = "This gets added or expanded with new source(s) in patch %s";
 	["REMOVED_WITH_PATCH_FORMAT"] = "This gets removed in patch %s";
 
 	-- Filter Text
