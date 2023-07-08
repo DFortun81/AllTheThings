@@ -263,6 +263,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						spell(390631, {	-- Ottuk Taming
 							["collectible"] = true,
 							["classes"] = { HUNTER },
+							["filterID"] = RECIPES,
 						}),
 						i(201783),	-- Tutaqan's Commendation
 					},

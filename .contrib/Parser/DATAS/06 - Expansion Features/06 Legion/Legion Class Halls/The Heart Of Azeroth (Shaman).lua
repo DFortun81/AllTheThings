@@ -819,9 +819,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							}),
 							i(136934),	-- Raging Elemental Stone (TOY!)
 							i(136935),	-- Tadpole Cloudseeder (TOY!)
-							i(136938, {	-- Tome of Hex: Compy
-								["f"] = RECIPES,
-							}),
+							i(136938),	-- Tome of Hex: Compy (CI!)
 							i(136937),	-- Vol'jin's Serpent Totem (TOY!)
 							i(138490),	-- Waterspeaker's Totem (TOY!)
 						},

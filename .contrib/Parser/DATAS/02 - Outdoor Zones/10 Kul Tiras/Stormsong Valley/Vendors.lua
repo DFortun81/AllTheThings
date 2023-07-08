@@ -275,11 +275,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(161581, {	-- Tidecrest Gauntlets
 						["cost"] = 19000000,	-- 1,900g
 					}),
-					i(162626, {	-- Tome of Polymorph: Bumblebee
-						["recipeID"] = 277792,	-- Polymorph(Bumblebee)
-						["classes"] = { MAGE },
+					i(162626, {	-- Tome of Polymorph: Bumblebee (CI!)
 						["cost"] = 18000000,	-- 1,800g
-						["f"] = RECIPES,
 					}),
 				},
 			}),

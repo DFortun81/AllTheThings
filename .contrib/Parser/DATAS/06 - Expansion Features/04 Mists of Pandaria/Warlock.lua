@@ -95,7 +95,10 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 						497,	-- The Black Temple (Temple Summit)
 					},
 					["groups"] = {
-						sp(101508), -- The Codex of Xerrath
+						spell(101508, {	-- The Codex of Xerrath (CI!)
+							["filterID"] = RECIPES,
+							["collectible"] = true,
+						}),
 					},
 				}),
 				q(32340, {	-- Plunder the Black Temple

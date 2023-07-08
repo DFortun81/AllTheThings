@@ -3844,8 +3844,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
 							["timeline"] = { "added 7.0.3.22290" },
 							["groups"] = {
-								i(136803, {	-- Dirty Tricks, Vol 1: Detection
-									--["spellID"] = 210108,	-- Detection
+								i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(136927, {	-- Scarlet Confessional Book (TOY!)
@@ -3854,9 +3853,8 @@ root(ROOTS.Zones, {
 								i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
-								i(136972, {	-- Tome of Hex: Cockroach
+								i(136972, {	-- Tome of Hex: Cockroach (CI!)
 									["timeline"] = { "added 7.0.3.22248" },
-									["f"] = RECIPES,
 								}),
 							},
 						}),
@@ -6138,54 +6136,39 @@ root(ROOTS.Zones, {
 					n(28715, {	-- Endora Moorehead
 						["coord"] = { 38.62, 55.57, NORTHREND_DALARAN },
 						["groups"] = {
-							i(82470, {	-- Ancient Tome of Portal: Dalaran
-								["timeline"] = { "added 5.0.1.15464" },
-								["spellID"] = 120146,	-- Ancient Portal: Dalaran
-								["classes"] = { MAGE },
+							i(82470, {	-- Ancient Tome of Portal: Dalaran (CI!)
+								["timeline"] = { ADDED_5_0_4 },
 								["isLimited"] = true,
 							}),
 							i(137294, {	-- Dalaran Initiates' Pin (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 								["classes"] = { MAGE },
 								["isLimited"] = true,
 							}),
 							i(136846, {	-- Familiar Stone (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 								["classes"] = { MAGE },
 							}),
-							i(136797, {	-- Mystical Tome: Arcane Linguist
-								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 210086,	-- Arcane Linguist
-								["classes"] = { MAGE },
+							i(136797, {	-- Mystical Tome: Arcane Linguist (CI!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
-							i(136799, {	-- Mystical Tome: Illusion
-								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 131784,	-- Illusion
-								["classes"] = { MAGE },
+							i(136799, {	-- Mystical Tome: Illusion (CI!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
 							i(167733, {	-- Technique: Glyph of Dalaran Brilliance (RECIPE!)
 								["timeline"] = { "added 8.1.5.29701" },
 								["isLimited"] = true,
 							}),
-							i(44714, {	-- Tome of Dalaran Brilliance
-								["timeline"] = { "removed 7.0.3" },
-								["spellID"] = 61316,	-- Dalaran Brilliance
-								["classes"] = { MAGE },
+							i(44714, {	-- Tome of Dalaran Brilliance (CI!)
+								["timeline"] = { REMOVED_7_0_3 },
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(44602, {	-- Tome of Dalaran Intellect
-								["timeline"] = { "removed 7.0.3" },
-								["spellID"] = 61024,	-- Dalaran Intellect
-								["classes"] = { MAGE },
+							i(44602, {	-- Tome of Dalaran Intellect (CI!)
+								["timeline"] = { REMOVED_7_0_3 },
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(44709, {	-- Tome of Polymorph: Black Cat
-								["spellID"] = 61305,	-- Polymorph
-								["classes"] = { MAGE },
+							i(44709, {	-- Tome of Polymorph: Black Cat (CI!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
 						},
 					}),

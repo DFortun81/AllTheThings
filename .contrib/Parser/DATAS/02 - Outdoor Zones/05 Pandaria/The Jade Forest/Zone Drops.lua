@@ -122,9 +122,7 @@ root(ROOTS.Zones, {
 						66273,	-- Twinspire Demolitionist
 					},
 				}),
-				i(120138, {	-- Tome of Polymorph: Monkey
-					["classes"] = { MAGE },
-					["f"] = RECIPES,
+				i(120138, {	-- Tome of Polymorph: Monkey (CI!)
 					["crs"] = {
 						55470,	-- Hozen Groundpounder
 						57119,	-- Hozen Ravager
@@ -137,13 +135,12 @@ root(ROOTS.Zones, {
 						61562,	-- Slingtail Treeleaper
 					},
 				}),
-				i(120140, {	-- Tome of Polymorph: Porcupine
-					["classes"] = { MAGE },
-					["f"] = RECIPES,
+				i(120140, {	-- Tome of Polymorph: Porcupine (CI!)
 					["crs"] = {
 						54896,	-- Glade Porcupine
 						59772,	-- Smoky Porcupine
 					},
+					["timeline"] = { ADDED_6_0_2 },
 				}),
 				i(87521, {	-- Zoid's Scorched Bracers
 					["crs"] = {

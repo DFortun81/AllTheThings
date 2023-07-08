@@ -797,9 +797,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(139737, {	-- Grandmaster's Waistband
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(136800, {	-- Meditation Manual: Zen Flight
-								["f"] = RECIPES,
-							}),
+							i(136800),	-- Meditation Manual: Zen Flight (CI!)
 							i(140564),	-- Rod of the Broken Temple
 							i(140551),	-- Staff of the Broken Temple
 						},

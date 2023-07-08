@@ -2185,11 +2185,8 @@ root(ROOTS.Zones, {
 							{ 33.2, 80.2, HOWLING_FJORD },
 						},
 						["groups"] = {
-							i(120139, {	-- Tome of Polymorph: Penguin
-								["spellID"] = 161355,	-- Polymorph(Penguin)
-								["timeline"] = { "added 6.0.2.18816", "removed 7.0.1" },
-								["classes"] = { MAGE },
-								["f"] = RECIPES,
+							i(120139, {	-- Tome of Polymorph: Penguin (CI!)
+								["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 							}),
 							i(44668),	-- Egg-Warming Blanket
 						},

@@ -202,7 +202,7 @@ root("Instances", tier(CATA_TIER, {
 							19947,	-- Nat Pagle's Broken Reel
 							19944,	-- Nat Pagle's Fish Terminator
 							19946,	-- Tigule's Harpoon
-							22739,	-- Tome of Polymorph Turtle
+							22739,	-- Tome of Polymorph Turtle (CI!)
 						}},
 					}),
 					i(HAKKARI_COIN),
@@ -213,7 +213,7 @@ root("Instances", tier(CATA_TIER, {
 							19947,	-- Nat Pagle's Broken Reel
 							19944,	-- Nat Pagle's Fish Terminator
 							19946,	-- Tigule's Harpoon
-							22739,	-- Tome of Polymorph Turtle
+							22739,	-- Tome of Polymorph Turtle (CI!)
 						}},
 					}),
 					i(RAZZASHI_COIN),
@@ -227,7 +227,7 @@ root("Instances", tier(CATA_TIER, {
 							i(19947),	-- Nat Pagle's Broken Reel
 							i(19944),	-- Nat Pagle's Fish Terminator
 							i(19946),	-- Tigule's Harpoon
-							i(22739),	-- Tome of Polymorph Turtle
+							i(22739),	-- Tome of Polymorph Turtle (CI!)
 						},
 					}),
 					i(WITHERBARK_COIN),
@@ -748,7 +748,7 @@ root("Instances", tier(CATA_TIER, {
 							19947,	-- Nat Pagle's Broken Reel
 							19944,	-- Nat Pagle's Fish Terminator
 							19946,	-- Tigule's Harpoon
-							22739,	-- Tome of Polymorph Turtle
+							22739,	-- Tome of Polymorph Turtle (CI!)
 						}},
 					}),
 					i(19943),	-- Massive Mojo

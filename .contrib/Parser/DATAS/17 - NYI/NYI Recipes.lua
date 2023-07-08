@@ -5,30 +5,6 @@
 
 root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
-		n(CLASSES, {
-			cl(MAGE, {
-				tier(WOTLK_TIER, 0.3, {
-					i(44600, {	-- Tome of Polymorph: Serpent (Never made it out of beta)
-						["f"] = RECIPES,
-					}),
-				}),
-				tier(WOTLK_TIER, 3.5, {
-					i(44811, {	-- Tome of Polymorph: Turkey
-						["f"] = RECIPES,
-					}),
-				}),
-			}),
-			cl(HUNTER, {
-				tier(LEGION_TIER, 2.0, {
-					i(147770),	-- Tome of the PTR Beast (CI!)
-				}),
-			}),
-			cl(SHAMAN, {
-				tier(LEGION_TIER, 0.3, {
-					i(136971),	-- Tome of Hex: Snake
-				}),
-			}),
-		}),
 		prof(ALCHEMY, {
 			tier(CLASSIC_TIER, {
 				i(5641),	-- Recipe: Cowardly Flight Potion

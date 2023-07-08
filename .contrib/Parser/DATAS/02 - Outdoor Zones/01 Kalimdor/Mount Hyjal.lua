@@ -145,10 +145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			prof(FISHING, {
 				o(202776, {	-- Mountain Trout School
-					i(22739, {	-- Tome of Polymorph: Turtle
-						["classes"] = { MAGE },
-						["f"] = RECIPES,
-					}),
+					i(22739),	-- Tome of Polymorph: Turtle (CI!)
 				}),
 			}),
 			n(FLIGHT_PATHS, {

@@ -40,8 +40,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.6, 40.6, LEGION_THE_UNDERBELLY },
 						["timeline"] = { "added 7.0.3.22248" },
 						["g"] = {
-							i(136803, {	-- Dirty Tricks, Vol 1: Detection
-								--["spellID"] = 210108,	-- Detection
+							i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(136927, {	-- Scarlet Confessional Book (TOY!)
@@ -50,9 +49,8 @@ root(ROOTS.Zones, {
 							i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(136972, {	-- Tome of Hex: Cockroach
+							i(136972, {	-- Tome of Hex: Cockroach (CI!)
 								["timeline"] = { "added 7.0.3.22248" },
-								["f"] = RECIPES,
 							}),
 						},
 					}),

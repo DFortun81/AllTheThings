@@ -12,9 +12,49 @@ local is = function(itemID, spellID, classID)
 end
 
 -----------------
+-- PATCH 1.7.0 --
+-----------------
+is(22739, 28271, MAGE);				-- Tome of Polymorph: Turtle
+
+-----------------
+-- PATCH 3.0.3 --
+-----------------
+is(44714, 61316, MAGE);				-- Tome of Dalaran Brilliance
+is(44602, 61024, MAGE);				-- Tome of Dalaran Intellect
+is(44709, 61305, MAGE);				-- Tome of Polymorph: Black Cat
+-- NYI --
+is(44600, 61025, MAGE);				-- Tome of Polymorph: Serpent
+
+-----------------
+-- PATCH 3.1.0 --
+-----------------
+is(44793, 61721, MAGE);				-- Tome of Polymorph: Rabbit
+
+-----------------
+-- PATCH 3.3.5 --
+-----------------
+-- NYI --
+is(44811, 61780, MAGE);				-- Tome of Polymorph: Turkey
+
+-----------------
+-- PATCH 5.0.4 --
+-----------------
+is(82470, 120146, MAGE);			-- Ancient Tome of Portal: Dalaran
+is(82469, 120145, MAGE);			-- Ancient Tome of Teleport: Dalaran
+
+-----------------
 -- PATCH 5.2.0 --
 -----------------
 is(94232, 138430, HUNTER);			-- Ancient Tome of Dinomancy
+is(0, 101508, WARLOCK);				-- The Codex of Xerrath
+
+-----------------
+-- PATCH 6.0.2 --
+-----------------
+is(120138, 161354, MAGE);			-- Tome of Polymorph: Monkey
+is(120139, 161355, MAGE);			-- Tome of Polymorph: Penguin
+is(120137, 161353, MAGE);			-- Tome of Polymorph: Polar Bear Cub
+is(120140, 126819, MAGE);			-- Tome of Polymorph: Porcupine
 
 -----------------
 -- PATCH 7.0.3 --
@@ -30,6 +70,16 @@ is(134125, 205154, HUNTER);			-- Mecha-Bond Imprint Matrix
 is(136781, 125050, HUNTER);			-- Pet Training Manual: Fetch
 is(136780, 209997, HUNTER);			-- Pet Training Manual: Play Dead
 is(136783, 61648, HUNTER);			-- The Art of Concealment
+is(136797, 210086, MAGE);			-- Mystical Tome: Arcane Linguist
+is(136799, 131784, MAGE);			-- Mystical Tome: Illusion
+is(136800, 125883, MONK);			-- Meditation Manual: Zen Flight
+is(136801, 121183, PALADIN);		-- Divine Tome: Contemplation
+is(136803, 210108, ROUGE);			-- Dirty Tricks, Vol 1: Detection
+is(136972, 211015, SHAMAN);			-- Tome of Hex: Cockroach
+is(136938, 210873, SHAMAN);			-- Tome of Hex: Compy
+is(136969, 211004, SHAMAN);			-- Tome of Hex: Spider
+-- NYI
+is(136971, 211010, SHAMAN);			-- Tome of Hex: Snake
 
 -----------------
 -- PATCH 7.2.0 --
@@ -39,9 +89,23 @@ is(147580, 242155, HUNTER);			-- Tome of the Hybrid Beast
 is(147770, 0, HUNTER);				-- Tome of the PTR Beast
 
 -----------------
+-- PATCH 8.0.1 --
+-----------------
+is(162626, 277792, MAGE);			-- Tome of Polymorph: Bumblebee
+is(162625, 277787, MAGE);			-- Tome of Polymorph: Direhorn
+is(159841, 269352, SHAMAN);			-- Tome of Hex: Skeletal Hatchling
+is(162624, 277784, SHAMAN);			-- Tome of Hex: Wicker Mongrel
+is(162623, 277778, SHAMAN);			-- Tome of Hex: Zandalari Tendonripper
+
+-----------------
 -- PATCH 8.1.0 --
 -----------------
 iq(166502, 54753, HUNTER);			-- Blood-Soaked Tome of Dark Whispers
+
+-----------------
+-- PATCH 8.2.5 --
+-----------------
+is(172405, 309328, SHAMAN);			-- Tome of Hex: Living Honey
 
 -----------------
 -- PATCH 9.0.1 --
@@ -61,12 +125,6 @@ iq(183123, 62254, HUNTER);			-- How to School Your Serpent
 iq(183124, 62255, HUNTER);			-- Simple Tome of Bone-Binding
 iq(180705, 61160, HUNTER);			-- Gargon Training Manual
 
-------------------
--- PATCH 10.0.2 --
-------------------
-iq(201791, 72094, HUNTER);			-- How to Train a Dragonkin
-is(0, 390631, HUNTER);				-- Ottuk Taming
-
 -----------------
 -- PATCH 9.1.5 --
 -----------------
@@ -79,6 +137,13 @@ iq(187888, 64987, DRUID);			-- Mark of the Shimmering Ardenmoth
 iq(187884, 64986, DRUID);			-- Mark of the Twilight Runestag
 
 ------------------
+-- PATCH 10.0.2 --
+------------------
+iq(201791, 72094, HUNTER);			-- How to Train a Dragonkin
+is(0, 390631, HUNTER);				-- Ottuk Taming
+is(200205 ,391622, MAGE);			-- Tome of Polymorph: Duck
+
+------------------
 -- PATCH 10.1.5 --
 ------------------
 --- Imp ---
@@ -86,7 +151,7 @@ iq(207178, 76743, WARLOCK);			-- Grimoire of the Darkfire Imp
 iq(207295, 76744, WARLOCK);			-- Grimoire of the Dreadfire Imp
 iq(129018, 76369, WARLOCK);			-- Grimoire of the Fel Imp
 iq(207297, 76746, WARLOCK);			-- Grimoire of the Felblaze Imp
-iq(207294, 76747, WARLOCK);			-- Grimoire of the Felfrost Imp [Twinkle, Alt 77158] [Found at Faire]
+iq(207294, 76747, WARLOCK);			-- Grimoire of the Felfrost Imp
 iq(207114, 76742, WARLOCK);			-- Grimoire of the Fiendish Imp
 iq(207111, 76737, WARLOCK);			-- Grimoire of the Hellfire Fel Imp
 iq(207296, 76745, WARLOCK);			-- Grimoire of the Netherbound Imp

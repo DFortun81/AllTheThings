@@ -1747,10 +1747,8 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 7.0.3.22248" },
 								["classes"] = { SHAMAN },
 							}),
-							i(136938, {	-- Tome of Hex: Compy
+							i(136938, {	-- Tome of Hex: Compy (CI!)
 								["timeline"] = { "added 7.0.3.22248" },
-								["classes"] = { SHAMAN },
-								["f"] = RECIPES,
 							}),
 							i(136937, {	-- Vol'jin's Serpent Totem (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },

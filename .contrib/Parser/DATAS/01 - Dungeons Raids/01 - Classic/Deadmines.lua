@@ -475,10 +475,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["cr"] = 636,	-- Defias Blackguard
 				}),
 				-- #endif
-				i(120138, {	-- Tome of Polymorph: Monkey
-					["timeline"] = { "added 6.0.2.18816" },
-					["classes"] = { MAGE },
-					["f"] = RECIPES,
+				i(120138, {	-- Tome of Polymorph: Monkey (CI!)
+					["timeline"] = { ADDED_6_0_2 },
 					["crs"] = {
 						48278,	-- Mining Monkey
 						48440,	-- Mining Monkey

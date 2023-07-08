@@ -102,16 +102,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				prof(FISHING, {
 					o(202779, {	-- Blackbelly Mudfish School
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["classes"] = { MAGE },
-							["f"] = RECIPES,
-						}),
+						i(22739),	-- Tome of Polymorph: Turtle (CI!)
 					}),
 					o(202780, {	-- Fathom Eel Swarm
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["classes"] = { MAGE },
-							["f"] = RECIPES,
-						}),
+						i(22739),	-- Tome of Polymorph: Turtle (CI!)
 					}),
 				}),
 				prof(MINING, {

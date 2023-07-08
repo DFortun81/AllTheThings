@@ -3483,10 +3483,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								5513,	-- Mantles of the Dawn
 							},
 						}),
-						i(136801, {	-- Divine Tome: Contemplation (Paladin)
-							["timeline"] = { "added 7.0.3.22248" },
-							["classes"] = { PALADIN },
-							["f"] = RECIPES,
+						i(136801, {	-- Divine Tome: Contemplation (CI!)
+							["timeline"] = { ADDED_7_0_3_LAUNCH },
 						}),
 						applyclassicphase(PHASE_THREE, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19446)),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
