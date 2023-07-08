@@ -50,7 +50,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #endif
 		["coord"] = { 52.3, 76.2, DUSTWALLOW_MARSH },
 		["mapID"] = ONYXIAS_LAIR,
+		-- #if NOT ANYCLASSIC
+		-- TODO: Double check this in Retail.
+		-- You can get into all three difficulties in Wrath Classic.
 		["sharedLockout"] = 1,
+		-- #endif
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(60, 60, 30),
 		["groups"] = {
@@ -323,66 +327,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(15410),	-- Scale of Onyxia
 			}),
 			-- #if AFTER WRATH
-			d(9, {	-- 40 Player
-				["sourceQuests"] = {
-					6502,	-- Alliance Attunement Quest
-					6602,	-- Horde Attunement Quest
-				},
-				["ignoreBonus"] = true,
-				-- #if AFTER CATA
-				["timeline"] = REMOVED_WITH_RERELEASE,
-				-- #else
-				["OnUpdate"] = ONYXIAS_LAIR_FORTYMAN_ONUPDATE,
-				-- #endif
-				["groups"] = {
-			-- #endif
-					n(10184, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Onyxia
-						classicAch(684, {	-- Onyxia's Lair (Level 60)
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								7635,	-- A Proper String
-								7509,	-- The Forging of Quel'Serrar
-								8620,	-- The Only Prescription
-								7495,	-- Victory for the Alliance
-								7490,	-- Victory for the Horde
-							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
-							-- #endif
-						}),
-						i(18423, {	-- Head of Onyxia (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(18422, {	-- Head of Onyxia (H)
-							["races"] = HORDE_ONLY,
-						}),
-						-- #if BEFORE WRATH
-						i(18705, {	-- Mature Black Dragon Sinew
-							["timeline"] = { "removed 4.0.3" },
-							["classes"] = { HUNTER },
-							["lvl"] = 60,
-						}),
-						-- #endif
-						i(17966),	-- Onyxia Hide Backpack (Bag)
-						i(17068),	-- Deathbringer
-						i(17075),	-- Vis'kag the Bloodletter
-						i(17067),	-- Ancient Cornerstone Grimoire
-						BLOODFANG_HOOD,
-						DRAGONSTALKERS_HELM,
-						HALO_OF_TRANSCENDENCE,
-						HELM_OF_WRATH,
-						HELMET_OF_TEN_STORMS,
-						JUDGMENT_CROWN,
-						NEMESIS_SKULLCAP,
-						NETHERWIND_CROWN,
-						STORMRAGE_COVER,
-						i(18205),	-- Eskhandar's Collar
-						i(17078),	-- Sapphiron Drape
-						i(18813),	-- Ring of Binding
-						i(17064),	-- Shard of the Scale
-					})),
-			-- #if AFTER WRATH
-				},
-			}),
 			applyclassicphase(WRATH_PHASE_THREE, d(3, {	-- 10 Player
 				["lvl"] = 80,
 				["groups"] = {
@@ -499,6 +443,66 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					})
 				},
 			})),
+			d(9, {	-- 40 Player
+				["sourceQuests"] = {
+					6502,	-- Alliance Attunement Quest
+					6602,	-- Horde Attunement Quest
+				},
+				["ignoreBonus"] = true,
+				-- #if AFTER CATA
+				["timeline"] = REMOVED_WITH_RERELEASE,
+				-- #else
+				["OnUpdate"] = ONYXIAS_LAIR_FORTYMAN_ONUPDATE,
+				-- #endif
+				["groups"] = {
+			-- #endif
+					n(10184, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Onyxia
+						classicAch(684, {	-- Onyxia's Lair (Level 60)
+							-- #if BEFORE WRATH
+							["sourceQuests"] = {
+								7635,	-- A Proper String
+								7509,	-- The Forging of Quel'Serrar
+								8620,	-- The Only Prescription
+								7495,	-- Victory for the Alliance
+								7490,	-- Victory for the Horde
+							},
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
+							-- #endif
+						}),
+						i(18423, {	-- Head of Onyxia (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(18422, {	-- Head of Onyxia (H)
+							["races"] = HORDE_ONLY,
+						}),
+						-- #if BEFORE WRATH
+						i(18705, {	-- Mature Black Dragon Sinew
+							["timeline"] = { "removed 4.0.3" },
+							["classes"] = { HUNTER },
+							["lvl"] = 60,
+						}),
+						-- #endif
+						i(17966),	-- Onyxia Hide Backpack (Bag)
+						i(17068),	-- Deathbringer
+						i(17075),	-- Vis'kag the Bloodletter
+						i(17067),	-- Ancient Cornerstone Grimoire
+						BLOODFANG_HOOD,
+						DRAGONSTALKERS_HELM,
+						HALO_OF_TRANSCENDENCE,
+						HELM_OF_WRATH,
+						HELMET_OF_TEN_STORMS,
+						JUDGMENT_CROWN,
+						NEMESIS_SKULLCAP,
+						NETHERWIND_CROWN,
+						STORMRAGE_COVER,
+						i(18205),	-- Eskhandar's Collar
+						i(17078),	-- Sapphiron Drape
+						i(18813),	-- Ring of Binding
+						i(17064),	-- Shard of the Scale
+					})),
+			-- #if AFTER WRATH
+				},
+			}),
 			-- #endif
 		},
 	}),
