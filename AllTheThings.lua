@@ -12571,7 +12571,6 @@ local headerFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
 	end,
-	["trackableAsQuest"] = app.ReturnTrue,
 };
 app.BaseHeader = app.BaseObjectFields(headerFields, "BaseHeader");
 local fields = RawCloneData(headerFields);
@@ -12581,14 +12580,14 @@ fields.icon = headerFields.iconAsAchievement;
 app.BaseHeaderWithAchievement = app.BaseObjectFields(fields, "BaseHeaderWithAchievement");
 local fields = RawCloneData(headerFields);
 fields.saved = headerFields.savedAsQuest;
-fields.trackable = headerFields.trackableAsQuest;
+fields.trackable = app.ReturnTrue;
 app.BaseHeaderWithQuest = app.BaseObjectFields(fields, "BaseHeaderWithQuest");
 local fields = RawCloneData(headerFields);
 fields.name = headerFields.nameAsAchievement;
 fields.icon = headerFields.iconAsAchievement;
 --fields.link = headerFields.linkAsAchievement;
 fields.saved = headerFields.savedAsQuest;
-fields.trackable = headerFields.trackableAsQuest;
+fields.trackable = app.ReturnTrue;
 app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
 
 -- Event Lib (using the Events Module!)
@@ -12613,7 +12612,16 @@ local fields = RawCloneData(headerFields, {
 });
 fields.description = nil;
 app.BaseAutomaticHeader = app.BaseObjectFields(fields, "BaseAutomaticHeader");
+local fields = RawCloneData(fields);
+fields.saved = function(t)
+	return IsQuestFlaggedCompleted(t.questID);
+end;
+fields.trackable = app.ReturnTrue;
+app.BaseAutomaticHeaderWithQuest = app.BaseObjectFields(fields, "BaseAutomaticHeaderWithQuest");
 app.CreateHeader = function(id, t)
+	if t and t.questID then
+		return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeaderWithQuest);
+	end
 	return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeader);
 end
 app.CreateNPC = function(id, t)
