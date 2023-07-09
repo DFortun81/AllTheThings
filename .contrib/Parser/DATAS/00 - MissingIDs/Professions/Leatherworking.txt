@@ -81,6 +81,9 @@ r(269549),	-- Honorable Combatant's Cestus
 r(269550),	-- Honorable Combatant's Cestus
 r(269551),	-- Honorable Combatant's Cestus
 9.0.1.33978
+r(308895),	-- Desolate Leather
+r(308896),	-- Callous Hide \\ Desolate Hide \\ Desolate Leather Hide
+r(309038),	-- Shadowlands Leatherworking
 r(309194),	-- Macabre Striker \\ Reinforced Sorrowscale Striker
 r(309195),	-- Reinforced Desolate Leather Cestus
 r(309196),	-- Heavy Composite Bow

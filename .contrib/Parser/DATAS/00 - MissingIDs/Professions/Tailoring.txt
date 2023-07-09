@@ -1262,15 +1262,3 @@ r(355183),	-- Shrouded Hand Towel
 r(359661),	-- Crafter's Mark IV
 r(359670),	-- Crafter's Mark of the First Ones
 r(359703),	-- Vestige of the Eternal
-10.1.5.49516
-r(413490),	-- Glacial Chapeau
-r(413491),	-- Glacial Epaulets
-r(413492),	-- Glacial Tether
-r(413494),	-- Glacial Leggings
-r(413495),	-- Glacial Footwear
-r(413747),	-- Bindings of the Harvested Soul
-r(413754),	-- Necrotic Gown
-r(413788),	-- Shroud of Forbidden Magic
-r(413903),	-- Peculiar Glacial Mantle
-10.1.5.49824
-r(414564),	-- Cursed Cloth
