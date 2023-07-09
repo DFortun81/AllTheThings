@@ -991,16 +991,19 @@ local function GetProgressTextForRow(data)
 	local total = data.total;
 	local isContainer = total and (total > 1 or (total > 0 and not data.collectible));
 	if isContainer then
-		local progress = data.progress;
-		local textContainer = GetProgressColorText(progress or 0, total)
-		if not textContainer then
-			if data.g and not data.expanded and #data.g > 0 then
-				textContainer = "+++";
-			else
-				textContainer = "---";
-			end
-		end
+		local textContainer = GetProgressColorText(data.progress or 0, total)
 		tinsert(text, textContainer)
+	end
+	-- Non-collectible/total Container (only contains visible, non-collectibles...)
+	local g = data.g;
+	if not stateIcon and not isContainer and g and #g > 0 then
+		local headerText;
+		if data.expanded then
+			headerText = "---";
+		else
+			headerText = "+++";
+		end
+		tinsert(text, headerText)
 	end
 
 	-- Trackable (Only if no other text available)
@@ -1035,8 +1038,7 @@ local function GetProgressTextForTooltip(data, iconOnly)
 	local total = data.total;
 	local isContainer = total and (total > 1 or (total > 0 and not data.collectible));
 	if isContainer then
-		local progress = data.progress;
-		local textContainer = GetProgressColorText(progress or 0, total)
+		local textContainer = GetProgressColorText(data.progress or 0, total)
 		if textContainer then
 			tinsert(text, textContainer)
 		end
