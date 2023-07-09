@@ -233,16 +233,12 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						NORTHREND_DALARAN,
 						ISLE_OF_QUELDANAS,
 					},
-					["cost"] = {
-						{ "i", 50379, 1 },	-- Battered Hilt (A)
-						{ "i", 50380, 1 },	-- Battered Hilt (H)
-					},
 					["groups"] = {
 						a(q(14443, {	-- The Battered Hilt (A)
-							["provider"] = { "i", 50379 },	-- Battered Hilt
+							["provider"] = { "i", 50379 },	-- Battered Hilt (A)
 						})),
 						h(q(24554, {	-- The Battered Hilt (H)
-							["provider"] = { "i", 50380 },	-- Battered Hilt
+							["provider"] = { "i", 50380 },	-- Battered Hilt (H)
 						})),
 						q(14444, {	-- What The Dragons Know (A)
 							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
@@ -2851,8 +2847,8 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 							["providers"] = {
 								{ "n", 32149 },	-- Fallen Hero's Spirit
 								{ "i", 47033 },	-- Light-Blessed Relic
+								{ "i", 47035 },	-- Discarded Soul Crystal
 							},
-							["cost"] = {{ "i", 47035, 1 }},	-- Discarded Soul Crystal
 						}),
 					},
 				})),
@@ -3505,9 +3501,11 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["maps"] = { CRYSTALSONG_FOREST },
 					["groups"] = {
 						objective(1, {	-- 0/1 Murderer's Toolkit
-							["provider"] = { "i", 45082 },	-- Murderer's Toolkit
+							["providers"] = {
+								{ "i", 45082 },	-- Murderer's Toolkit
+								{ "i", 45080 },	-- Large Femur
+							},
 							["coord"] = { 38.6, 59.6, CRYSTALSONG_FOREST },
-							["cost"] = {{ "i", 45080, 1 }},	-- Large Femur
 							["cr"] = 33498,	-- Maloric <The Black Knight's Squire>
 						}),
 					},
