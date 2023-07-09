@@ -1389,6 +1389,9 @@ end");
                         case "coords":
                         case "sym":
                         case "f":
+#if ANYCLASSIC
+                        case "filterForRWP":
+#endif
                             itemData[pair.Key] = pair.Value;
                             break;
 
@@ -1521,6 +1524,7 @@ end");
                         case "b":
                         case "q":
                         case "f":
+                        case "filterForRWP":
                         case "s":
                         case "g":
                         case "collectible":
@@ -1838,6 +1842,9 @@ end");
                     case "raceID":
                     case "conduitID":
                     case "f":
+#if ANYCLASSIC
+                    case "filterForRWP":
+#endif
                     case "u":
                     case "b":
                     case "rank":

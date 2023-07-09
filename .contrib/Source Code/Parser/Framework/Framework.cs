@@ -3107,6 +3107,12 @@ namespace ATT
                     {
                         return "f";
                     }
+                case "fForRWP":
+                case "filterForRWP":
+                case "filterIDForRWP":
+                    {
+                        return "filterForRWP";
+                    }
 
                 case "ilvl":
                 case "iLvl":

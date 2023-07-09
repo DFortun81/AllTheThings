@@ -264,6 +264,7 @@ namespace ATT
                 Objects.Filters filter = Objects.Filters.Invalid;
                 var filterGroups = new Dictionary<Objects.Filters, List<IDictionary<string, object>>>();
                 var builder2 = new StringBuilder();
+                var filterBuilder = new StringBuilder("ITEM_FILTERS = {");
                 foreach (var itemID in allItemIDs)
                 {
                     // Get the item.
@@ -272,7 +273,11 @@ namespace ATT
                     allItems.Add(item);
 
                     // If an item already has a filter ID assigned and the ID is valid, ignore it.
-                    if (item.TryGetValue("f", out long rawObjectData)) filter = (Objects.Filters)rawObjectData;
+                    if (item.TryGetValue("f", out long rawObjectData))
+                    {
+                        filter = (Objects.Filters)rawObjectData;
+                        filterBuilder.AppendLine().Append('[').Append(itemID).Append("] = ").Append(rawObjectData).Append(',');
+                    }
                     else filter = Objects.Filters.Invalid;
 
                     // Add the item to the filter group
@@ -294,6 +299,7 @@ namespace ATT
                 }
 
                 // Export all of the Items to the Item DB folder.
+                File.WriteAllText(Path.Combine(directory, "AllItemFiltersByID.lua"), filterBuilder.AppendLine().Append("};").ToString(), Encoding.UTF8);
                 File.WriteAllText(Path.Combine(directory, "AllItemsByID.lua"), builder2.ToString(), Encoding.UTF8);
                 File.WriteAllText(Path.Combine(directory, "AllItems.lua"), ATT.Export.ExportRawLua(allItems).ToString(), Encoding.UTF8);
                 File.WriteAllText(Path.Combine(directory, "ItemsMissingData.lua"), ATT.Export.ExportRawLua(itemsMissingData).ToString(), Encoding.UTF8);
@@ -505,6 +511,7 @@ namespace ATT
                     case "raceID":
                     case "conduitID":
                     case "f":
+                    case "filterForRWP":
                     case "r":
                     case "ilvl":
                         var longval = Convert.ToInt64(value);
@@ -781,6 +788,9 @@ namespace ATT
                     case "requireSkill":
                     case "objectiveID":
                     case "f":
+#if ANYCLASSIC
+                    case "filterForRWP":
+#endif
                     case "b":
                     case "rank":
                     case "ilvl":

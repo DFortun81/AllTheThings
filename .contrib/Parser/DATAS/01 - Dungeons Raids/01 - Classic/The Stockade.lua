@@ -200,15 +200,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 					i(3228, {	-- Jimmied Handcuffs
 						["timeline"] = { "removed 4.0.1.12984" },
-						-- #if ANYCLASSIC
-						["OnUpdate"] = [[function(t)
-							if _.Level >= 40 and _.ClassIndex ~= ]] .. HUNTER .. [[ and _.ClassIndex ~= ]] .. SHAMAN .. [[ then
-								t.f = ]] .. PLATE .. [[;
-							else
-								t.f = ]] .. MAIL .. [[;
-							end
-						end]],
-						-- #endif
 					}),
 					i(2941, {	-- Prison Shank
 						["timeline"] = { "removed 4.0.1.12984" },
