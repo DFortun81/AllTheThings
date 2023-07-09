@@ -788,42 +788,55 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 			}),
 			n(175418, {	-- Mar'lan <Night Fae Armor Trader>
 				["coord"] = { 45.9, 56.4, THE_TRUNK },
+				["sym"] = { { "select", "itemID",
+					-- These items are only purchasable after you complete the covenant campaign.
+					-- Doing the Campaign also rewards all those items, so no need to list 2 sources per item.
+					175597,	-- Faewoven Amice
+					175588,	-- Faewoven Cowl
+					175603,	-- Faewoven Cuffs
+					179623,	-- Faewoven Drape
+					175586,	-- Faewoven Handwraps
+					175592,	-- Faewoven Leggings
+					175576,	-- Faewoven Raiment
+					175581,	-- Faewoven Sandals
+					175600,	-- Faewoven Sash
+					179657,	-- Faewoven Tunic
+					179766,	-- Oakheart Anklewraps
+					179767,	-- Oakheart Armguards
+					179771,	-- Oakheart Belt
+					179772,	-- Oakheart Bracers
+					179769,	-- Oakheart Britches
+					179773,	-- Oakheart Cape
+					179768,	-- Oakheart Crest
+					179770,	-- Oakheart Mantle
+					179765,	-- Oakheart Tunic
+					179774,	-- Oakheart Vestment
+					179888,	-- Queensguard Chestplate
+					179620,	-- Queensguard Cloak
+					179890,	-- Queensguard Gauntlets
+					179893,	-- Queensguard Girdle
+					179887,	-- Queensguard Greathelm
+					179891,	-- Queensguard Greaves
+					179892,	-- Queensguard Pauldrons
+					179889,	-- Queensguard Sabatons
+					179894,	-- Queensguard Vambraces
+					181916,	-- Runewarden's Armguards
+					181910,	-- Runewarden's Boots
+					181915,	-- Runewarden's Buckle
+					181911,	-- Runewarden's Gloves
+					181877,	-- Runewarden's Greatcloak
+					181912,	-- Runewarden's Guise
+					181909,	-- Runewarden's Hauberk
+					181913,	-- Runewarden's Legguards
+					181914,	-- Runewarden's Spaulders
+					181979,	-- Runewarden's Vestment
+				}},
 				["g"] = {
 					i(179602, {	-- Bulwark of the Wild Hunt
 						["cost"] = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
-					}),
-					i(175597, {	-- Faewoven Amice
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(175588, {	-- Faewoven Cowl
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(175603, {	-- Faewoven Cuffs
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179623, {	-- Faewoven Drape
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(175586, {	-- Faewoven Handwraps
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(175592, {	-- Faewoven Leggings
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(175576, {	-- Faewoven Raiment
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(175581, {	-- Faewoven Sandals
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(175600, {	-- Faewoven Sash
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179657, {	-- Faewoven Tunic
-						["cost"] = { { "c", ANIMA, 250 } },
 					}),
 					i(179493, {	-- Fang of the Wild Hunt
 						["cost"] = {
@@ -848,93 +861,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
-					}),
-					i(179766, {	-- Oakheart Anklewraps
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179767, {	-- Oakheart Armguards
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179771, {	-- Oakheart Belt
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179772, {	-- Oakheart Bracers
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179769, {	-- Oakheart Britches
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179773, {	-- Oakheart Cape
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179768, {	-- Oakheart Crest
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179770, {	-- Oakheart Mantle
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179765, {	-- Oakheart Tunic
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179774, {	-- Oakheart Vestment
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179888, {	-- Queensguard Chestplate
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179620, {	-- Queensguard Cloak
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179890, {	-- Queensguard Gauntlets
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179893, {	-- Queensguard Girdle
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179887, {	-- Queensguard Greathelm
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179891, {	-- Queensguard Greaves
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179892, {	-- Queensguard Pauldrons
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179889, {	-- Queensguard Sabatons
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179894, {	-- Queensguard Vambraces
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(181916, {	-- Runewarden's Armguards
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(181910, {	-- Runewarden's Boots
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(181915, {	-- Runewarden's Buckle
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(181911, {	-- Runewarden's Gloves
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(181877, {	-- Runewarden's Greatcloak
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(181912, {	-- Runewarden's Guise
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(181909, {	-- Runewarden's Hauberk
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(181913, {	-- Runewarden's Legguards
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(181914, {	-- Runewarden's Spaulders
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(181979, {	-- Runewarden's Vestment
-						["cost"] = { { "c", ANIMA, 250 } },
 					}),
 					i(179560, {	-- Scepter of the Wild Hunt
 						["cost"] = {

@@ -646,115 +646,47 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 			}),
 			n(175311, {	-- Slayer Araya <Covenant Armor>
 				["coord"] = { 57.1, 48.3, SEAT_OF_THE_PRIMUS },
+				["sym"] = { { "select", "itemID",
+					-- These items are only purchasable after you complete the covenant campaign.
+					-- Doing the Campaign also rewards all those items, so no need to list 2 sources per item.
+					182276,	-- Bladesworn Conjurer's Cape
+					182268,	-- Bladesworn Conjurer's Cowl
+					182274,	-- Bladesworn Conjurer's Cinch
+					182271,	-- Bladesworn Conjurer's Gloves
+					182272,	-- Bladesworn Conjurer's Leggings
+					182273,	-- Bladesworn Conjurer's Mantle
+					182270,	-- Bladesworn Conjurer's Slippers
+					182269,	-- Bladesworn Conjurer's Tunic
+					182275,	-- Bladesworn Conjurer's Wristwraps
+					182251,	-- Bladesworn Harbinger's Chestguard
+					182253,	-- Bladesworn Harbinger's Crushers
+					182258,	-- Bladesworn Harbinger's Greatcloak
+					182250,	-- Bladesworn Harbinger's Greathelm
+					182254,	-- Bladesworn Harbinger's Greaves
+					182255,	-- Bladesworn Harbinger's Pauldrons
+					182252,	-- Bladesworn Harbinger's Stompers
+					182257,	-- Bladesworn Harbinger's Vambraces
+					182256,	-- Bladesworn Harbinger's Warbelt
+					182284,	-- Bladesworn Tactician's Bracers
+					182281,	-- Bladesworn Tactician's Chausses
+					182285,	-- Bladesworn Tactician's Drape
+					182277,	-- Bladesworn Tactician's Faceguard
+					182280,	-- Bladesworn Tactician's Gauntlets
+					182283,	-- Bladesworn Tactician's Girdle
+					182278,	-- Bladesworn Tactician's Hauberk
+					182279,	-- Bladesworn Tactician's Sabatons
+					182282,	-- Bladesworn Tactician's Spaulders
+					182266,	-- Bladesworn Wraith's Armguards
+					182265,	-- Bladesworn Wraith's Belt
+					182261,	-- Bladesworn Wraith's Boots
+					182263,	-- Bladesworn Wraith's Breeches
+					182267,	-- Bladesworn Wraith's Cloak
+					182260,	-- Bladesworn Wraith's Jerkin
+					182264,	-- Bladesworn Wraith's Shoulders
+					182262,	-- Bladesworn Wraith's Stranglers
+					182259,	-- Bladesworn Wraith's Visage
+				}},
 				["g"] = {
-					i(182276, {	-- Bladesworn Conjurer's Cape
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182268, {	-- Bladesworn Conjurer's Cowl
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182274, {	-- Bladesworn Conjurer's Cinch
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182271, {	-- Bladesworn Conjurer's Gloves
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182272, {	-- Bladesworn Conjurer's Leggings
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182273, {	-- Bladesworn Conjurer's Mantle
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182270, {	-- Bladesworn Conjurer's Slippers
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182269, {	-- Bladesworn Conjurer's Tunic
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182275, {	-- Bladesworn Conjurer's Wristwraps
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182251, {	-- Bladesworn Harbinger's Chestguard
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182253, {	-- Bladesworn Harbinger's Crushers
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182258, {	-- Bladesworn Harbinger's Greatcloak
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182250, {	-- Bladesworn Harbinger's Greathelm
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182254, {	-- Bladesworn Harbinger's Greaves
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182255, {	-- Bladesworn Harbinger's Pauldrons
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182252, {	-- Bladesworn Harbinger's Stompers
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182257, {	-- Bladesworn Harbinger's Vambraces
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182256, {	-- Bladesworn Harbinger's Warbelt
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182284, {	-- Bladesworn Tactician's Bracers
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182281, {	-- Bladesworn Tactician's Chausses
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182285, {	-- Bladesworn Tactician's Drape
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182277, {	-- Bladesworn Tactician's Faceguard
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182280, {	-- Bladesworn Tactician's Gauntlets
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182283, {	-- Bladesworn Tactician's Girdle
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182278, {	-- Bladesworn Tactician's Hauberk
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182279, {	-- Bladesworn Tactician's Sabatons
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182282, {	-- Bladesworn Tactician's Spaulders
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182266, {	-- Bladesworn Wraith's Armguards
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182265, {	-- Bladesworn Wraith's Belt
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182261, {	-- Bladesworn Wraith's Boots
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182263, {	-- Bladesworn Wraith's Breeches
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182267, {	-- Bladesworn Wraith's Cloak
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182260, {	-- Bladesworn Wraith's Jerkin
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182264, {	-- Bladesworn Wraith's Shoulders
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182262, {	-- Bladesworn Wraith's Stranglers
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(182259, {	-- Bladesworn Wraith's Visage
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
 					CHRONICLE_OF_LOST_MEMORIES,
 					i(183451, {	-- Goreforged Barrier
 						["cost"] = {

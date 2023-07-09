@@ -429,6 +429,46 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 			}),
 			n(175406, {	-- Gregor the Pallidblade <Sinfall Quartermaster>
 				["coord"] = { 70.6, 27.3, SINFALL_DEPTHS },
+				["sym"] = { { "select", "itemID",
+					-- These items are only purchasable after you complete the covenant campaign.
+					-- Doing the Campaign also rewards all those items, so no need to list 2 sources per item.
+					180902, -- Dread Sentinel's Ebony Chestplate
+					180921, -- Dread Sentinel's Ebony Spaulders
+					180938,	-- Dread Sentinel's Ebony Cloak
+					180924,	-- Dread Sentinel's Ebony Girdle
+					180905,	-- Dread Sentinel's Ebony Greatboots
+					180910,	-- Dread Sentinel's Ebony Grips
+					180900,	-- Dread Sentinel's Ebony Headgear
+					180916,	-- Dread Sentinel's Ebony Legguards
+					180929,	-- Dread Sentinel's Ebony Vambraces
+					180920,	-- Ebony Death Shroud Spaulders
+					180904,	-- Ebony Death Shroud Vest
+					180927,	-- Ebony Death Shroud Belt
+					180931,	-- Ebony Death Shroud Bindings
+					180908,	-- Ebony Death Shroud Boots
+					180919,	-- Ebony Death Shroud Breeches
+					180936,	-- Ebony Death Shroud Cloak
+					180909,	-- Ebony Death Shroud Gloves
+					180915,	-- Ebony Death Shroud Hood
+					180903,	-- Fearstalker's Ebony Hauberk
+					180923,	-- Fearstalker's Ebony Monnion
+					180926,	-- Fearstalker's Ebony Belt
+					180930,	-- Fearstalker's Ebony Bracers
+					180937,	-- Fearstalker's Ebony Cloak
+					180912,	-- Fearstalker's Ebony Gauntlets
+					180914,	-- Fearstalker's Ebony Helm
+					180918,	-- Fearstalker's Ebony Leggings
+					180907,	-- Fearstalker's Ebony Sabatons
+					180922,	-- Soulbreaker's Ebony Mantle
+					180901,	-- Soulbreaker's Ebony Vestments
+					180934,	-- Soulbreaker's Ebony Drape
+					180911,	-- Soulbreaker's Ebony Handwraps
+					180913,	-- Soulbreaker's Ebony Hood
+					180917,	-- Soulbreaker's Ebony Leggings
+					180925,	-- Soulbreaker's Ebony Sash
+					180906,	-- Soulbreaker's Ebony Slippers
+					180928,	-- Soulbreaker's Ebony Wraps
+				}},
 				["g"] = {
 					i(181143, {	-- Claw of the Stoneborn Executioner
 						["cost"] = {
@@ -448,12 +488,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
-					i(180902, {	-- Dread Sentinel's Ebony Chestplate
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180921, {	-- Dread Sentinel's Ebony Spaulders
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
 					i(181149, {	-- Dredbat's Dark Guile
 						["cost"] = {
 							{ "c", ANIMA, 3500 },
@@ -466,12 +500,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
-					i(180920, {	-- Ebony Death Shroud Spaulders
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180904, {	-- Ebony Death Shroud Vest
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
 					i(181153, {	-- Ebony Dredspine Repeater
 						["cost"] = {
 							{ "c", ANIMA, 3500 },
@@ -483,12 +511,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
-					}),
-					i(180903, {	-- Fearstalker's Ebony Hauberk
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180923, {	-- Fearstalker's Ebony Monnion
-						["cost"] = { { "c", ANIMA, 250 } },
 					}),
 					i(181144, {	-- Gavel of Dark Diviniaton
 						["cost"] = {
@@ -514,12 +536,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
-					i(180922, {	-- Soulbreaker's Ebony Mantle
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180901, {	-- Soulbreaker's Ebony Vestments
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
 					i(181151, {	-- Souleater's Ebony Barb
 						["cost"] = {
 							{ "c", ANIMA, 3500 },
@@ -531,91 +547,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
-					}),
-					i(180938, {	-- Dread Sentinel's Ebony Cloak
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180924, {	-- Dread Sentinel's Ebony Girdle
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180905, {	-- Dread Sentinel's Ebony Greatboots
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180910, {	-- Dread Sentinel's Ebony Grips
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180900, {	-- Dread Sentinel's Ebony Headgear
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180916, {	-- Dread Sentinel's Ebony Legguards
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180929, {	-- Dread Sentinel's Ebony Vambraces
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180927, {	-- Ebony Death Shroud Belt
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180931, {	-- Ebony Death Shroud Bindings
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180908, {	-- Ebony Death Shroud Boots
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180919, {	-- Ebony Death Shroud Breeches
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180936, {	-- Ebony Death Shroud Cloak
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180909, {	-- Ebony Death Shroud Gloves
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180915, {	-- Ebony Death Shroud Hood
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180926, {	-- Fearstalker's Ebony Belt
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180930, {	-- Fearstalker's Ebony Bracers
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180937, {	-- Fearstalker's Ebony Cloak
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180912, {	-- Fearstalker's Ebony Gauntlets
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180914, {	-- Fearstalker's Ebony Helm
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180918, {	-- Fearstalker's Ebony Leggings
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180907, {	-- Fearstalker's Ebony Sabatons
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180934, {	-- Soulbreaker's Ebony Drape
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180911, {	-- Soulbreaker's Ebony Handwraps
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180913, {	-- Soulbreaker's Ebony Hood
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180917, {	-- Soulbreaker's Ebony Leggings
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180925, {	-- Soulbreaker's Ebony Sash
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(180906, {	-- Soulbreaker's Ebony Slippers
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-
-					i(180928, {	-- Soulbreaker's Ebony Wraps
-						["cost"] = { { "c", ANIMA, 250 } },
 					}),
 				},
 			}),
