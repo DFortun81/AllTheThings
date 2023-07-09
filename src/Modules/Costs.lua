@@ -196,7 +196,7 @@ app.UpdateCostGroup = function(c)
 	-- app.PrintDebug("UpdateCostGroup",c.hash,app._SettingsRefresh)
 	local refresh = app._SettingsRefresh;
 	local costs = c.cost;
-	if costs then
+	if costs and type(costs) == "table" then
 		-- app.PrintDebug("UpdateCostGroup:cost",#costs)
 		local cost, type, id, groups;
 		for i=1,#costs do

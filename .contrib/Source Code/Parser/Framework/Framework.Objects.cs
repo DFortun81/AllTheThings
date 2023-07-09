@@ -1626,8 +1626,8 @@ end");
                     }
                 }
 
-                // Sort the old list to ensure that the order is consistent, but not for titleIDs
-                if (field != "titleIDs")
+                // Sort the old list to ensure that the order is consistent, but not for titleIDs/difficulties
+                if (field != "titleIDs" && field != "difficulties")
                     oldList.Sort();
 
                 if (oldList.Count == 0)

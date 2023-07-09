@@ -30,8 +30,8 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, {
 			-- 10.1.5
 			tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
-				iq(208050),	-- Grimoire of the Xorothian Felhunter (CI!)
-				iq(208048),	-- Ritual of the Voidmaw Felhunter (CI!)
+				i(208050),	-- Grimoire of the Xorothian Felhunter (CI!)
+				i(208048),	-- Ritual of the Voidmaw Felhunter (CI!)
 			})),
 		}),
 	}),

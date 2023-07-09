@@ -74,7 +74,7 @@ is(136797, 210086, MAGE);			-- Mystical Tome: Arcane Linguist
 is(136799, 131784, MAGE);			-- Mystical Tome: Illusion
 is(136800, 125883, MONK);			-- Meditation Manual: Zen Flight
 is(136801, 121183, PALADIN);		-- Divine Tome: Contemplation
-is(136803, 210108, ROUGE);			-- Dirty Tricks, Vol 1: Detection
+is(136803, 210108, ROGUE);			-- Dirty Tricks, Vol 1: Detection
 is(136972, 211015, SHAMAN);			-- Tome of Hex: Cockroach
 is(136938, 210873, SHAMAN);			-- Tome of Hex: Compy
 is(136969, 211004, SHAMAN);			-- Tome of Hex: Spider
