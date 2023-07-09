@@ -493,8 +493,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73131, {	--  Dignified Disguises
 					["sourceQuests"] = { 72993 },	-- I'm the Boss!
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199990 },	--Belastrasza
+					["coord"] = { 10.7, 59.0, VALDRAKKEN },
 				}),
 				q(73134, {	--  Eternal Escapades
 					["sourceQuests"] = { 73000 },	-- Sneezing Through Time
