@@ -162,6 +162,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(206171),	-- Vol'jin's Mojo
 					},
 				}),
+				q(76076, {	-- Small Things
+					["provider"] = { "n", 205424 },	-- Chromie
+					["coord"] = { 52.1, 81.6, THALDRASZUS },
+				}),
 				q(75990, {	-- Star-Crossed Lovers
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
@@ -175,6 +179,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = {
 						i(206683),	-- Wrathion's Tab
 					},
+				}),
+				q(75657, {	-- Time-Lost Trio
+					["provider"] = { "n", 205424 },	-- Chromie
+					["coord"] = { 52.1, 81.6, THALDRASZUS },
 				}),
 				q(75970, {	-- Tracked Through Time
 					["provider"] = { "n", 205424 },	-- Chromie
