@@ -1,7 +1,7 @@
 ﻿-------------------------------------------------------
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -------------------------------------------------------
-local _ = select(2, ...);
+local appName, _ = ...;
 _.ObjectNames = {
 	[31] = "Old Lion Statue",
 	[34] = "Old Jug",

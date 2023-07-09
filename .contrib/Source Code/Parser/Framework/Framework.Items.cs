@@ -672,6 +672,7 @@ namespace ATT
                         break;
 
                     // Functions
+                    case "OnInit":
                     case "OnClick":
                     case "OnUpdate":
                     case "OnTooltip":
@@ -826,6 +827,7 @@ namespace ATT
                         }
 
                     // Functions
+                    case "OnInit":
                     case "OnClick":
                     case "OnUpdate":
                     case "OnTooltip":

@@ -1260,7 +1260,7 @@ namespace ATT
                 var filename = Path.Combine(directory, "../locales", "en_auto.lua");
                 StringBuilder locale = new StringBuilder(10000);
                 locale.AppendLine("--   WARNING: This file is dynamically generated   --");
-                locale.AppendLine("local _, app = ...;");
+                locale.AppendLine("local appName, app = ...;");
                 locale.Append("local keys = ");
                 ATT.Export.AddTableNewLines = true;
                 locale.AppendLine(ATT.Export.ExportCompressedLua(AllLocaleTypes).ToString());
@@ -2102,6 +2102,7 @@ end");
                         }
 
                     // Functions
+                    case "OnInit":
                     case "OnClick":
                     case "OnUpdate":
                     case "OnTooltip":

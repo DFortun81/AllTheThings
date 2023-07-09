@@ -3589,12 +3589,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6972, {	-- Fire Hardened Hauberk
 							["timeline"] = { "removed 4.0.3" },
 							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
+							["OnInit"] = [[function(t)
 								if _.Level >= 40 then
 									t.f = ]] .. PLATE .. [[;
 								else
 									t.f = ]] .. MAIL .. [[;
 								end
+								return t;
 							end]],
 							-- #endif
 						}),

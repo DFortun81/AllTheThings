@@ -1,5 +1,5 @@
 ﻿--   WARNING: This file is dynamically generated   --
-local _, app = ...;
+local appName, app = ...;
 local keys = {
 ["ITEM_NAMES"]={
 [2404]="Deprecated Pattern: Light Winter Cloak",

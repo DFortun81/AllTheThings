@@ -4651,7 +4651,7 @@ namespace ATT
 
                     // Now export it based on what we know.
                     var builder = new StringBuilder("-------------------------------------------------------\n--   C U S T O M   H E A D E R S   M O D U L E   --\n-------------------------------------------------------\n")
-                        .AppendLine("local _ = select(2, ...);")
+                        .AppendLine("local appName, _ = ...;")
                         .AppendLine("local L = _.L;")
                         .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
                     var keys = new List<long>();
@@ -4937,7 +4937,7 @@ namespace ATT
                     var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n");
                     var keys = OBJECT_NAMES.Keys.ToList();
                     keys.Sort();
-                    builder.AppendLine("local _ = select(2, ...);").Append("_.ObjectNames = {").AppendLine();
+                    builder.AppendLine("local appName, _ = ...;").Append("_.ObjectNames = {").AppendLine();
                     foreach (var key in keys)
                     {
                         if (OBJECTS_WITH_REFERENCES.ContainsKey(key))

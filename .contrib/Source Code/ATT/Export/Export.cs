@@ -93,13 +93,11 @@ namespace ATT
             var utcNow = DateTime.UtcNow;
             builder.Insert(0, new StringBuilder()
                 .AppendLine("-----------------------------------------------------")
-                .AppendLine("--   S O U R C E   D A T A B A S E   M O D U L E   --")
+                .AppendLine("--   R O O T   C A T E G O R I E S   M O D U L E   --")
                 .AppendLine("-----------------------------------------------------")
                 .AppendLine("--   WARNING: This file is dynamically generated   --")
-                //.Append("--   UPDATED: ").Append($"{utcNow.ToLongDateString()} @ {utcNow.ToShortTimeString()}".PadRight(36, ' ')).AppendLine(" --")
                 .AppendLine("-----------------------------------------------------")
-                .AppendLine("local _ = select(2, ...);")
-                .AppendLine("local function g(t,g) t.g = g; return t; end"));
+                .AppendLine("local appName, _ = ...;"));
         }
 
         /// <summary>

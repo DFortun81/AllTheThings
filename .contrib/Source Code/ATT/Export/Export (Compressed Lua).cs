@@ -144,6 +144,21 @@ namespace ATT
             var fields = data.Keys.ToList();
             fields.Sort(StringComparer.InvariantCulture);
 
+            // Check if the body has OnInit, if so, rip it out and append it before the constructor
+            var hasOnInit = data.TryGetValue("OnInit", out object OnInitRef);
+            if (hasOnInit)
+            {
+                fields.Remove("OnInit");
+                var onInitBody = SimplifyFunctionBody(OnInitRef);
+                if (!onInitBody.Contains("return"))
+                {
+                    Console.WriteLine("Missing a return within an OnInit function body.");
+                    Console.WriteLine(OnInitRef.ToString());
+                    onInitBody = $"function(t2) ({onInitBody})(t2); return t2; end";
+                }
+                builder.Append('(').Append(onInitBody).Append(")(");
+            }
+
             // If this is a constructed object type, then we need to write a parenthesis afterward.
             var constructed = ExportShortcut(builder, data, fields, out ObjectData objectType);
 
@@ -159,11 +174,11 @@ namespace ATT
                     // Only "g" is left, let's push it up a level and remove the field.
                     ExportCompressedLua(builder, data["g"]);
                 }
-                else if (data.TryGetValue("g", out object groupsRef))
+                else
                 {
-                    // Append the groups field.
-                    builder.Append("g(");
-                    fields.Remove("g");
+                    // Check if the body has groups, if so, rip it out and append it last.
+                    var hasGroups = data.TryGetValue("g", out object groupsRef);
+                    if (hasGroups) fields.Remove("g");
 
                     // Open Bracket for beginning of the Dictionary.
                     builder.Append('{');
@@ -183,60 +198,18 @@ namespace ATT
                             //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
                             ExportRawLua(builder, data[field]);
                         }
-                        else if (field == "OnUpdate" || field == "OnTooltip" || field == "OnClick")
+                        else if (field == "OnClick" || field == "OnUpdate" || field == "OnTooltip")
                         {
-                            var functionBody = Convert.ToString(data[field]).Replace("\n", "\t").Replace("\r", "\t").Replace("\t\t", "\t").Replace("\t\t", "\t");
-                            if ((functionBody.StartsWith("\"") && functionBody.EndsWith("\""))
-                                || (functionBody.StartsWith("'") && functionBody.EndsWith("'")))
-                            {
-                                // Remove any sort of silly string escape used to encapsulate the function body.
-                                functionBody = functionBody.Substring(1, functionBody.Length - 2);
-                            }
-                            builder.Append(functionBody);
+                            builder.Append(SimplifyFunctionBody(data[field]));
                         }
                         else ExportCompressedLua(builder, data[field]);
                     }
 
-                    // Close Bracket for the end of the Dictionary.
-                    builder.Append('}');
-
-                    // Append the groups.
-                    builder.Append(',');
-                    ExportCompressedLua(builder, groupsRef);
-                    builder.Append(')');
-                }
-                else
-                {
-                    // Open Bracket for beginning of the Dictionary.
-                    builder.Append('{');
-
-                    // Export Fields
-                    int fieldCount = 0;
-                    foreach (var field in fields)
+                    // Append the groups at the very end.
+                    if (hasGroups)
                     {
-                        // If this is NOT the first field, append a comma.
-                        if (fieldCount++ > 0) builder.Append(',');
-                        builder.Append(field).Append('=');
-
-                        // Append the undetermined object's format to the builder.
-                        if (field == "sym" || field == "cost")
-                        {
-                            // Write the symbolic link without changing anything.
-                            //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
-                            ExportRawLua(builder, data[field]);
-                        }
-                        else if (field == "OnUpdate" || field == "OnTooltip" || field == "OnClick")
-                        {
-                            var functionBody = Convert.ToString(data[field]).Replace("\n", "\t").Replace("\r", "\t").Replace("\t\t", "\t").Replace("\t\t", "\t");
-                            if ((functionBody.StartsWith("\"") && functionBody.EndsWith("\""))
-                                || (functionBody.StartsWith("'") && functionBody.EndsWith("'")))
-                            {
-                                // Remove any sort of silly string escape used to encapsulate the function body.
-                                functionBody = functionBody.Substring(1, functionBody.Length - 2);
-                            }
-                            builder.Append(functionBody);
-                        }
-                        else ExportCompressedLua(builder, data[field]);
+                        builder.Append(",g=");
+                        ExportCompressedLua(builder, groupsRef);
                     }
 
                     // Close Bracket for the end of the Dictionary.
@@ -246,6 +219,9 @@ namespace ATT
 
             // Close the Parenthesis for the end of the constructor.
             if (constructed) builder.Append(')');
+
+            // If we had an OnInit, append the finishing parenthesis.
+            if (hasOnInit) builder.Append(')');
         }
 
         /// <summary>
@@ -432,6 +408,35 @@ namespace ATT
                 return builder.Append(value);
             }
             return builder.Append("\"").Append(value.Replace("\"", "\\\"")).Append("\"");
+        }
+
+        /// <summary>
+        /// Simplify a function body by removing escape and extra tabs.
+        /// </summary>
+        /// <param name="value">The body of the function.</param>
+        /// <returns>The simplified body of the function.</returns>
+        public static string SimplifyFunctionBody(object value)
+        {
+            string functionBody = Convert.ToString(value).Replace("\n", "\t").Replace("\r", "\t");
+            int functionBodyLength = functionBody.Length;
+            while (true)
+            {
+                string shortenedFunctionBody = functionBody.Replace("\t\t", "\t");
+                int shortLength = shortenedFunctionBody.Length;
+                if (shortLength < functionBodyLength)
+                {
+                    functionBody = shortenedFunctionBody;
+                    functionBodyLength = shortLength;
+                }
+                else break;
+            }
+            if ((functionBody.StartsWith("\"") && functionBody.EndsWith("\""))
+                || (functionBody.StartsWith("'") && functionBody.EndsWith("'")))
+            {
+                // Remove any sort of silly string escape used to encapsulate the function body.
+                functionBody = functionBody.Substring(1, functionBody.Length - 2);
+            }
+            return functionBody;
         }
     }
 }
