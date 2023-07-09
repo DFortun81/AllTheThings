@@ -3846,38 +3846,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- Saved Instance Name => Dungeon Journal Instance Name Converter
--- If your saves aren't lining up, it's probably because Blizzard
--- didn't use the same localization for the instance. Sorry.
-local a = L.SAVED_TO_DJ_INSTANCES;
-for key,value in pairs({
-	["Violette Festung"] = "Die Violette Festung";	-- The Violet Hold
-	["Geschmolzener Kern"] = "Der Geschmolzene Kern";	-- Molten Core
-	["Höllenfeuerzitadelle: Bollwerk"] = "Höllenfeuerbollwerk";	-- Hellfire Ramparts
-	["Höllenfeuerzitadelle: Blutkessel"] = "Der Blutkessel";	-- The Blood Furnace
-	["Echsenkessel: Sklavenunterkünfte"] = "Die Sklavenunterkünfte";	-- The Slave Pens
-	["Echsenkessel: Tiefensumpf"] = "Der Tiefensumpf";	-- The Underbog
-	["Auchindoun: Auchenaikrypta"] = "Auchenaikrypta";	-- Auchenai Crypts
-	["Auchindoun: Managruft"] = "Managruft";	-- Mana-Tombs
-	["Flucht aus Durnholde"] = "Vorgebirge des Alten Hügellands";	-- Old Hillsbrad Foothills
-	["Auchindoun: Sethekkhallen"] = "Sethekkhallen";	-- Sethekk Halls
-	["Auchindoun: Schattenlabyrinth"] = "Schattenlabyrinth";	-- Shadow Labyrinth
-	["Festung der Stürme: Die Botanika"] = "Die Botanika";	-- The Botanica
-	["Festung der Stürme: Die Mechanar"] = "Die Mechanar";	-- The Mechanar
-	["Höllenfeuerzitadelle: Die Zerschmetterten Hallen"] = "Die Zerschmetterten Hallen";	-- The Shattered Halls
-	["Echsenkessel: Dampfkammer"] = "Die Dampfkammer";	-- The Steamvault
-	["Festung der Stürme: Die Arkatraz"] = "Die Arkatraz";	-- The Arcatraz
-	["Öffnung des Dunklen Portals"] = "Der Schwarze Morast";	-- The Black Morass
-	["Echsenkessel: Höhle des Schlangenschreins"] = "Höhle des Schlangenschreins";	-- Serpentshrine Cavern
-	["Festung der Stürme"] = "Das Auge";	-- The Eye
-	["Der Sonnenbrunnen"] = "Sonnenbrunnenplateau";	-- Sunwell Plateau
-	["Eiskronenzitadelle"] = "Die Eiskronenzitadelle";	-- Icecrown Citadel
-	["Rubinsanktum"] = "Das Rubinsanktum";	-- The Ruby Sanctum
-	["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlosen Frühlings";	-- Terrace of Endless Spring
-	["Herz der Angst"] = "Das Herz der Angst";	-- Heart of Fear
-})
-do a[key] = value; end
-
 --TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({

@@ -3869,18 +3869,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- Saved Instance Name => Dungeon Journal Instance Name Converter
--- If your saves aren't lining up, it's probably because Blizzard
--- didn't use the same localization for the instance. Sorry.
-local a = L.SAVED_TO_DJ_INSTANCES;
-for key,value in pairs({
-	["Temple noir"] = "Le Temple noir";	-- Black Temple
-	["Le Puits de soleil"] = "Plateau du Puits de soleil";	-- Sunwell Plateau
-	["Donjon de la Tempête"] = "L’Œil";	-- The Eye
-	["Glissecroc : caverne du sanctuaire du Serpent"] = "Caverne du sanctuaire du Serpent";	-- Serpentshrine Cavern
-})
-do a[key] = value; end
-
 --TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({

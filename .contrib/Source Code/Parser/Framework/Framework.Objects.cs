@@ -1964,6 +1964,7 @@ end");
 
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
                     case "customCollect":
+                    case "sins":
                     case "timeline":
                         {
                             MergeStringArrayData(item, field, value);

@@ -3881,16 +3881,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- Saved Instance Name => Dungeon Journal Instance Name Converter
--- If your saves aren't lining up, it's probably because Blizzard
--- didn't use the same localization for the instance. Sorry.
-local a = L.SAVED_TO_DJ_INSTANCES;
-for key,value in pairs({
-	["Огненные Недра"] = "Огненные недра";	-- Molten Core
-	["Крепость Бурь"] = "Око";	-- Tempest Keep
-})
-do a[key] = value; end
-
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
 	[1] = {1, "|CFFFF0000Никогда не был доступен игрокам.|r", "Никогда Не Доступны"}, -- No Hope

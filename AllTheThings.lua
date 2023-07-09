@@ -6785,13 +6785,11 @@ local function RefreshSavesCallback()
 	end
 
 	-- Update Saved Instances
-	local converter = L["SAVED_TO_DJ_INSTANCES"];
 	local myLockouts = app.CurrentCharacter.Lockouts;
 	for instanceIter=1,saves do
 		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters = GetSavedInstanceInfo(instanceIter);
 		if locked then
-			-- Update the name of the instance and cache the locks for this instance
-			name = converter[name] or name;
+			-- Cache the locks for this instance
 			reset = serverTime + reset;
 			local locks = myLockouts[name];
 			if not locks then
@@ -10752,10 +10750,21 @@ local fields = {
 		return t.locks;
 	end,
 	["locks"] = function(t)
-		local locks = app.CurrentCharacter.Lockouts[t.name];
+		local lockouts = app.CurrentCharacter.Lockouts;
+		local locks = lockouts[t.name];
 		if locks then
 			t.locks = locks;
 			return locks;
+		end
+		local sins = t.sins;
+		if sins then
+			for i=1,#sins,1 do
+				lock = lockouts[sins[i]];
+				if locks then
+					t.locks = locks;
+					return locks;
+				end
+			end
 		end
 	end,
 	["isLockoutShared"] = app.ReturnFalse,

@@ -1422,36 +1422,6 @@ app.L = {
 	-- Module Localizations
 	["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 
-	-- Saved Instance Name => Dungeon Journal Instance Name Converter
-	-- If your saves aren't lining up, it's probably because Blizzard
-	-- didn't use the same localization for the instance. Sorry.
-	["SAVED_TO_DJ_INSTANCES"] = {
-		["The Escape from Durnholde"] = "Old Hillsbrad Foothills";
-		["Opening of the Dark Portal"] = "The Black Morass";
-		["Auchindoun: Auchenai Crypts"] = "Auchenai Crypts";
-		["Auchindoun: Mana-Tombs"] = "Mana-Tombs";
-		["Auchindoun: Sethekk Halls"] = "Sethekk Halls";
-		["Auchindoun: Shadow Labyrinth"] = "Shadow Labyrinth";
-		["Coilfang: Serpentshrine Cavern"] = "Serpentshrine Cavern";
-		["Coilfang: The Slave Pens"] = "The Slave Pens";
-		["Coilfang: The Steamvault"] = "The Steamvault";
-		["Coilfang: The Underbog"] = "The Underbog";
-		["Hellfire Citadel: Ramparts"] = "Hellfire Ramparts";
-		["Hellfire Citadel: The Blood Furnace"] = "The Blood Furnace";
-		["Hellfire Citadel: The Shattered Halls"] = "The Shattered Halls";
-		["Tempest Keep: The Arcatraz"] = "The Arcatraz";
-		["Tempest Keep: The Botanica"] = "The Botanica";
-		["Tempest Keep: The Mechanar"] = "The Mechanar";
-		["Stormwind Stockade"] = "The Stockade";
-		["Ahn'Qiraj Temple"] = "Temple of Ahn'Qiraj";
-		["Sunken Temple"] = "The Temple of Atal'hakkar";
-		["The Sunwell"] = "Sunwell Plateau";
-		["Tempest Keep"] = "The Eye";
-		["The Violet Hold"] = "Violet Hold";
-		["Magister's Terrace"] = "Magisters' Terrace";
-		["Violet Hold"] = "The Violet Hold";
-	};
-
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
 	["ZONE_TEXT_TO_MAP_ID"] = {
 		["Onyxia's Lair"] = 248,

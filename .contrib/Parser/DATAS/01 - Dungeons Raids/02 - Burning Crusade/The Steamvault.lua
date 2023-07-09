@@ -4,6 +4,10 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(261, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Steamvault
 		["lore"] = "The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",
+		["sins"] = {
+			"Coilfang: The Steamvault",
+			"Echsenkessel: Dampfkammer",
+		},
 		["coord"] = { 50.35, 33.39, ZANGARMARSH },	-- The Steamvault, Zangarmarsh
 		["maps"] = {
 			COILFANG_RESERVOIR_STEAMVAULT,
