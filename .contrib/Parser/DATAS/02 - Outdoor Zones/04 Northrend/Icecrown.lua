@@ -2275,9 +2275,6 @@ root(ROOTS.Zones, {
 					i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
 					i(50380),	-- Battered Hilt (Horde)
 					-- #endif
-					applyclassicphase(WRATH_PHASE_TWO, i(47035, {	-- Discarded Soul Crystal
-						["provider"] = { "o", 195344 },	-- Discarded Soul Crystal
-					})),
 					i(37330, {	-- Formula: Enchant Cloak - Superior Arcane Resistance (RECIPE!)
 						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 						["crs"] = {

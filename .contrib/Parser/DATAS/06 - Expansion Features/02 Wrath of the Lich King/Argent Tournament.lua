@@ -2847,6 +2847,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 							["providers"] = {
 								{ "n", 32149 },	-- Fallen Hero's Spirit
 								{ "i", 47033 },	-- Light-Blessed Relic
+								{ "o", 195344 },-- Discarded Soul Crystal
 								{ "i", 47035 },	-- Discarded Soul Crystal
 							},
 						}),
