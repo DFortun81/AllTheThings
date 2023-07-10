@@ -1837,6 +1837,22 @@ app.IsNPCQuestGiver = function(self, npcID)
 		return false;
 	end
 end
+local IgnoredQuests = setmetatable({}, {
+	__index = function(t, key)
+		-- app.PrintDebug("IgnoredQuests.__index",t,key)
+		local rawIgnores = ATTAccountWideData.IGNORE_QUEST_PRINT
+		if rawIgnores then
+			for i=1,#rawIgnores do
+				-- app.PrintDebug("IgnoreQuestPrint:",rawIgnores[i])
+				t[rawIgnores[i]] = true
+			end
+		end
+		-- app.PrintDebug("remove metatable",t)
+		setmetatable(t, nil)
+		-- app.PrintDebug("return",t[key])
+		return t[key]
+	end
+})
 PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local questRef = app.SearchForObject("questID", questID, "field");
@@ -1853,6 +1869,8 @@ PrintQuestInfo = function(questID, new, info)
 		if questChange == "accepted" then
 			app.FunctionRunner.Run(app.CheckInaccurateQuestInfo, questRef, questChange);
 		end
+		-- Users can manually set certain QuestIDs to be ignored because Blizzard decides to toggle them on and off constantly forever
+		if IgnoredQuests[questID] then return; end
 		local chatMsg;
 		if not questRef or GetRelativeValue(questRef, "_missing") then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
