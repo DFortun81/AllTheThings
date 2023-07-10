@@ -1377,9 +1377,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "i", 22057, 1 },	-- Brazier of Invocation
 				},
 				-- #if AFTER 4.0.3
-				-- This Update function unmarks the removed from game flag for folks with the brazier.
-				["OnUpdate"] = [[function(t)
-					t.OnUpdate = nil;
+				-- This init function unmarks the removed from game flag for folks with the brazier.
+				["OnInit"] = [[function(t)
 					if GetItemCount(22057, true) > 0 then
 						t.u = nil;
 						for i,o in ipairs(t.g) do
@@ -1395,6 +1394,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							end
 						end
 					end
+					return t;
 				end]],
 				-- #endif
 				["groups"] = {

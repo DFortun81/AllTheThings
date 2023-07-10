@@ -1232,9 +1232,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
 						-- #if AFTER 4.0.3
-						-- This Update function unmarks the removed from game flag for folks with the brazier.
-						["OnUpdate"] = [[function(t)
-							t.OnUpdate = nil;
+						-- This init function unmarks the removed from game flag for folks with the brazier.
+						["OnInit"] = [[function(t)
 							if GetItemCount(22057, true) > 0 then
 								t.u = nil;
 								for i,o in ipairs(t.g) do
@@ -1250,6 +1249,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 									end
 								end
 							end
+							return t;
 						end]],
 						-- #endif
 						["groups"] = {

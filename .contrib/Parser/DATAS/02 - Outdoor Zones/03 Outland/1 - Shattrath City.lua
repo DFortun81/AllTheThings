@@ -1767,13 +1767,10 @@ root(ROOTS.Zones, {
 									end
 									tooltip:Show();
 								end]],
-								["OnUpdate"] = [[function(t)
-									if not t.otherItemID then
-										t.otherItemID = 185692;
-										_.CacheField(t, "itemID", t.otherItemID);
-										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
-										t.OnUpdate = nil;
-									end
+								["OnInit"] = [[function(t)
+									t.otherItemID = 185692;
+									t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+									return t;
 								end]],
 								-- #endif
 								-- #endif
@@ -2377,13 +2374,10 @@ root(ROOTS.Zones, {
 									end
 									tooltip:Show();
 								end]],
-								["OnUpdate"] = [[function(t)
-									if not t.otherItemID then
-										t.otherItemID = 185691;
-										_.CacheField(t, "itemID", t.otherItemID);
-										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
-										t.OnUpdate = nil;
-									end
+								["OnInit"] = [[function(t)
+									t.otherItemID = 185691;
+									t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+									return t;
 								end]],
 								-- #endif
 								-- #endif

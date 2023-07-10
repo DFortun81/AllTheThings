@@ -727,7 +727,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	}),
 	n(QUESTS, {
 		-- #if NOT ANYCLASSIC
-		["OnUpdate"] = [[function(t)
+		["OnInit"] = [[function(t)
 			if GetCVar("portal") == "EU" then
 				local quests = {[11117]=1,[11431]=1,[11118]=1,[11120]=1};
 				for i,quest in ipairs(t.g) do
@@ -736,7 +736,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					end
 				end
 			end
-			t.OnUpdate = nil;
+			return t;
 		end]],
 		-- #endif
 		["groups"] = {

@@ -310,27 +310,18 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 					}),
 					-- #endif
-					header(HEADERS.Achievement, 435, {	-- Commander
+					e(617, {	-- Commander [Commander Kolurg (A) / Commander Stoutbeard (H)]
 						-- This is a smart header that will change itself to the faction specific version on initial load.
-						["crs"] = {
-							26798,	-- Commander Stoutbeard
-							26796,	-- Commander Kolurg
-						},
-						["OnUpdate"] = [[function(t)
-							t.crs = nil;
-							t.OnUpdate = nil;
+						["crs"] = { 26796 },	-- Commander Kolurg (A)
+						["OnInit"] = [[function(t)
 							if _.FactionID == Enum.FlightPathFaction.Horde then
-								t.npcID = 26796;
-								t.encounterID = 617;
+								t.crs = { 26798 };
 							else
-								t.npcID = 26798;
 								t.encounterID = 833;
+								t.npcID = 26798;
+								t.crs = { 26796 };
 							end
-							if EJ_GetEncounterInfo then
-								setmetatable(t, _.BaseEncounter);
-							else
-								setmetatable(t, _.BaseNPC);
-							end
+							return t;
 						end]],
 						["groups"] = {
 							i(37728),	-- Cloak of the Enemy

@@ -135,13 +135,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								end
 								tooltip:Show();
 							end]],
-							["OnUpdate"] = [[function(t)
-								if not t.otherItemID then
-									t.otherItemID = 185693;
-									_.CacheField(t, "itemID", t.otherItemID);
-									t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
-									t.OnUpdate = nil;
-								end
+							["OnInit"] = [[function(t)
+								t.otherItemID = 185693;
+								t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+								return t;
 							end]],
 							-- #endif
 							-- #endif

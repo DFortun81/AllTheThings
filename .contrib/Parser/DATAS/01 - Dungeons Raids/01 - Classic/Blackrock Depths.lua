@@ -2445,9 +2445,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				applyclassicphase(PHASE_FIVE, n(16059,	-- Theldren
 				-- #if AFTER 4.0.3
 				{
-				-- This Update function unmarks the removed from game flag for folks with the banner.
-				["OnUpdate"] = [[function(t)
-					t.OnUpdate = nil;
+				-- This init function unmarks the removed from game flag for folks with the banner.
+				["OnInit"] = [[function(t)
 					if GetItemCount(21986, true) > 0 then
 						t.u = nil;
 						for i,o in ipairs(t.g) do
@@ -2463,6 +2462,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							end
 						end
 					end
+					return t;
 				end]],
 				-- #else
 				bubbleDown({
