@@ -93,7 +93,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(70501, {	-- License to Hunt
-					["sourceQuests"] = { 71231 },	-- Call of the Hunt
+					["sourceQuests"] = {
+						71231,	-- Call of the Hunt
+						DF_ACCOUNT_CAMPAIGN_QUEST,	-- or HQT 72778
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 					["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				}),

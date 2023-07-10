@@ -1654,6 +1654,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		-- q(),	-- Echo of Neltharion
 		-- q(),	-- Scalecommander Sarkareth
 
+		q(76087),	-- Sarkareth HC kill on Evoker; Legendary 'higher chance' lockout?
 		q(76088),	-- Normal Sarkareth Kill?
 		q(76089),	-- Normal Sarkareth Kill?
 	}),
