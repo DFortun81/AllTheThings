@@ -284,7 +284,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					-- #if BEFORE 10.0.7
 					["sourceQuest"] = 71146,	-- Continued Waygate Exploration
 					-- else
-					["sourceQuest"] = 75444,	-- Continued Waygate Exploration
+					["sourceQuest"] = 75444,	-- Waygate Exploration: The Forbidden Reach
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
