@@ -569,11 +569,13 @@ app.RefreshTradeSkillCache = function()
 	cache[2791] = 1;	-- Ascension Crafting
 	cache[2819] = 1;	-- Protoform Synthesis
 	cache[2847] = 1;	-- Tuskarr Fishing Gear
+	-- app.PrintDebug("RefreshTradeSkillCache");
 	local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 	for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
 		if j ~= 0 then
 			local prof = select(7, GetProfessionInfo(j));
 			cache[GetBaseTradeSkillID(prof)] = true;
+			-- app.PrintDebug("KnownProfession",j,GetProfessionInfo(j));
 			local specializations = GetTradeSkillSpecialization(prof);
 			if specializations ~= nil then
 				for _,s in pairs(specializations) do
@@ -23031,7 +23033,7 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("TOYS_UPDATED");
 	app:RegisterEvent("LOOT_OPENED");
 	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
-	app:RegisterEvent("LEARNED_SPELL_IN_TAB");
+	app:RegisterEvent("SKILL_LINES_CHANGED");
 	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
 	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED");
 	app:RegisterEvent("VIGNETTES_UPDATED");
@@ -23562,11 +23564,10 @@ app.events.BOSS_KILL = function(id, name, ...)
 	app:UnregisterEvent("LOOT_CLOSED");
 	app:RegisterEvent("LOOT_CLOSED");
 end
-app.events.LEARNED_SPELL_IN_TAB = function(spellID, skillInfoIndex, isGuildPerkSpell)
+app.events.SKILL_LINES_CHANGED = function()
+	-- app.PrintDebug("SKILL_LINES_CHANGED")
 	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
-	if skillInfoIndex == 7 then
-		DelayedCallback(app.RefreshTradeSkillCache, 2);
-	end
+	DelayedCallback(app.RefreshTradeSkillCache, 2);
 end
 app.events.LOOT_CLOSED = function()
 	-- Once the loot window closes after killing a boss, THEN trigger the update.
