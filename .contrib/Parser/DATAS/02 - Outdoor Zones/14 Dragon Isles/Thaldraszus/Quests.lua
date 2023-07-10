@@ -1157,7 +1157,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THALDRASZUS, {
 		q(67030),	-- Unlocks access to Adventure Mode within the Dragon Isles (spellID 393788 & 377069)
-		q(72366, {["name"] = "Account Dragonflight Campaign Completed"}),	-- triggered after completing 'Moving On' (questID 66221)
+		q(72366, {["name"] = "Dragonflight Campaign Completed [Account]"}),	-- triggered after completing 'Moving On' (questID 66221)
 		q(72369, {["repeatable"] = true}),	-- flags complete while 'Aiding the Accord' is active/completed
 		q(72084),	-- Triggers during 'The Fog of Battle' (questID 66246) (spellID 392476)
 		q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan' (spellID 392694)
