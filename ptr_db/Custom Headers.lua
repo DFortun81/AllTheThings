@@ -1,7 +1,7 @@
 ﻿-------------------------------------------------------
 --   C U S T O M   H E A D E R S   M O D U L E   --
 -------------------------------------------------------
-local _ = select(2, ...);
+local appName, _ = ...;
 local L = _.L;
 local simplifiedLocale = string.sub(GetLocale(),1,2);
 

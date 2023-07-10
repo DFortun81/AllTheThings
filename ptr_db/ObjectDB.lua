@@ -1,7 +1,7 @@
 ﻿-------------------------------------------------------
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -------------------------------------------------------
-local _ = select(2, ...);
+local appName, _ = ...;
 _.ObjectNames = {
 	[31] = "Old Lion Statue",
 	[34] = "Old Jug",
@@ -3039,6 +3039,7 @@ _.ObjectNames = {
 	[401828] = "Nal ks'kol Reliquary",
 	[401839] = "Dreamer's Bounty",
 	[401844] = "Smelly Trash Pile",
+	[402609] = "Demonic Gateway",
 	[402627] = "Well-Worn Kiln",
 	[402632] = "Brimstone Rescue Ring",
 	[402634] = "Zaqali Elder Spear",

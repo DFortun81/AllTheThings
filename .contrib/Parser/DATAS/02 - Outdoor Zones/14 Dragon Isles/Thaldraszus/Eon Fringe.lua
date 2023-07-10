@@ -162,6 +162,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(206171),	-- Vol'jin's Mojo
 					},
 				}),
+				q(76244, {	-- Prince in Peril
+					["provider"] = { "n", 206018 },	-- Stormwind Guard
+					["coord"] = { 52.2, 81.5, THALDRASZUS },
+				}),
 				q(76076, {	-- Small Things
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
