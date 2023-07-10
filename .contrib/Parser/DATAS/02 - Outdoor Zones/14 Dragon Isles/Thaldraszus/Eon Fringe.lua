@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(77437, {	-- Eon's Fringe
 					["provider"] = { "n", 209020 },	-- Slaszerathel
 					["coord"] = { 79, 44.5, VALDRAKKEN },
-					["isBreadcrumb"] = true
+					["isBreadcrumb"] = true,
 				}),
 
 				q(76350, {	-- The Chronosmith

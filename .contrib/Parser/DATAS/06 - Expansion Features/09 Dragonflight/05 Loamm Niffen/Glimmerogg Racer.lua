@@ -80,7 +80,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 			})),
 			n(QUESTS, sharedData({
-				["sourceQuests"] = { 73711 },	-- Marked Champion
+				["sourceQuests"] = {
+					73711,	-- Marked Champion
+					DF_ACCOUNT_ZC_UNLOCK_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 201099 },	-- Gorgul
 				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
 				["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },

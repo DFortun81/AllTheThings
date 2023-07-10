@@ -1176,7 +1176,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			q(70148, {	-- Without Purpose
 				["provider"] = { "n", 192438 },	-- Hephaesta
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
-				["sourceQuests"] = 70124,	-- Practice Materials
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),

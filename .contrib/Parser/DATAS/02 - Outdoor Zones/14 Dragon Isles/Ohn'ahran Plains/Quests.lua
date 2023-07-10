@@ -449,7 +449,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16405.02, {	-- Initiate's Day Out
 				q(65906, {	-- A Disgruntled Initiate
-					["sourceQuests"] = { 65779 },	-- Into the Plains
+					["sourceQuests"] = { 
+						65779,	-- Into the Plains
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 195302 },	-- Windsage Ordven
 					["coord"] = { 63.1, 34.1, OHNAHRAN_PLAINS },
 					["isBreadcrumb"] = true,

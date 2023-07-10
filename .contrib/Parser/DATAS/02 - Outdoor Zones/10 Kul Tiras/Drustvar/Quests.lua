@@ -1028,7 +1028,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = {
 					50585,	-- Hexecutioner
 					50584,	-- Ruinous Rituals
-					50586,	-- The Fall of Corlain
 					50583,	-- To the Other Side
 					-- Definitely requires Hexecutioner; may not require others.  Needs confirmation.
 					-- Awarded "Storming the Manor" criteria.
