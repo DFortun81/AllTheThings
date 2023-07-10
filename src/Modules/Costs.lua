@@ -12,7 +12,7 @@ local rawget, ipairs, pairs
 -- App locals
 
 -- Module locals
-local RecursiveGroupRequirementsFilter, SearchForField, GroupFilter, AcctOrDebug, SearchForFieldContainer, DGU, UpdateRunner;
+local RecursiveGroupRequirementsFilter, SearchForField, GroupFilter, SearchForFieldContainer, DGU, UpdateRunner;
 -- Ideally never used, but weird situations are possible to cause logic to execute prior to ATT even loading
 local function EmptyFunction() end
 
@@ -68,19 +68,10 @@ local function CheckCollectible(ref)
 	end
 end
 app.CheckCollectible = CheckCollectible;
-local function NonAccountCostAllowed(t)
-	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
-	local parent = rawget(t, "parent");
-	if parent and parent.questID and parent.saved then
-		return;
-	end
-	return true;
-end
 local function CacheFilters()
 	-- Cache repeat-used functions/values
 	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
 	GroupFilter = app.GroupFilter;
-	AcctOrDebug = app.MODE_DEBUG_OR_ACCOUNT;
 end
 local function UpdateCostsByItemID(itemID, refresh, refs)
 	local costs = SearchForField("itemID", itemID);
@@ -96,28 +87,12 @@ local function UpdateCostsByItemID(itemID, refresh, refs)
 		end
 		local isCost = costTotal and true or nil;
 		-- Iterate on the search result of the entry key
-		if AcctOrDebug then
-			for _,c in ipairs(costs) do
-				-- Mark the group with a costTotal of 1
-				-- app.PrintDebug("Force Cost",c.hash,costTotal)
-				c.costTotal = costTotal;
-				c._CheckCollectible = isCost;
-				c._SettingsRefresh = refresh;
-			end
-		else
-			for _,c in ipairs(costs) do
-				-- Mark the group based on results
-				if NonAccountCostAllowed(c) then
-					-- app.PrintDebug("Force Cost",c.hash,costTotal)
-					c.costTotal = costTotal;
-					c._CheckCollectible = isCost;
-				else
-					-- app.PrintDebug("Drop Cost",c.hash,costTotal)
-					c.costTotal = nil;
-					c._CheckCollectible = nil;
-				end
-				c._SettingsRefresh = refresh;
-			end
+		for _,c in ipairs(costs) do
+			-- Mark the group with a costTotal of 1
+			-- app.PrintDebug("Force Cost",c.hash,costTotal)
+			c.costTotal = costTotal;
+			c._CheckCollectible = isCost;
+			c._SettingsRefresh = refresh;
 		end
 	-- else app.PrintDebug("ItemID as Cost is not Sourced!",itemID)
 		return costs;
@@ -137,28 +112,12 @@ local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
 		end
 		local isCost = costTotal and true or nil;
 		-- Iterate on the search result of the entry key
-		if AcctOrDebug then
-			for _,c in ipairs(costs) do
-				-- Mark the group with a costTotal of 1
-				-- app.PrintDebug("Force Cost",c.hash,costTotal)
-				c.costTotal = costTotal;
-				c._CheckCollectible = isCost;
-				c._SettingsRefresh = refresh;
-			end
-		else
-			for _,c in ipairs(costs) do
-				-- Mark the group based on results
-				if NonAccountCostAllowed(c) then
-					-- app.PrintDebug("Force Cost",c.hash,costTotal)
-					c.costTotal = costTotal;
-					c._CheckCollectible = isCost;
-				else
-					-- app.PrintDebug("Drop Cost",c.hash,costTotal)
-					c.costTotal = nil;
-					c._CheckCollectible = nil;
-				end
-				c._SettingsRefresh = refresh;
-			end
+		for _,c in ipairs(costs) do
+			-- Mark the group with a costTotal of 1
+			-- app.PrintDebug("Force Cost",c.hash,costTotal)
+			c.costTotal = costTotal;
+			c._CheckCollectible = isCost;
+			c._SettingsRefresh = refresh;
 		end
 	-- else app.PrintDebug("ItemID as Cost is not Sourced!",itemID)
 		return costs;
@@ -175,11 +134,11 @@ app.UpdateCosts = function()
 		-- app.DEBUG_PRINT = nil
 		-- if itemID == 105867.06 then app.DEBUG_PRINT = true end
 		-- if itemID == 105867 then app.DEBUG_PRINT = true end
+		-- if itemID == 163036 then app.DEBUG_PRINT = true end	-- Polished Pet Charms
 		-- app.PrintDebug("Check Cost Item",itemID)
 		UpdateCostsByItemID(itemID, refresh, refs);
 	end
 	-- app.PrintDebug("UpdateCosts:Items")
-
 
 	-- Get all currencyIDAsCost entries
 	for currencyID,refs in pairs(SearchForFieldContainer("currencyIDAsCost")) do
@@ -188,7 +147,8 @@ app.UpdateCosts = function()
 		-- app.PrintDebug("Check Cost Curr",currencyID)
 		UpdateCostsByCurrencyID(currencyID, refresh, refs);
 	end
-	-- app.PrintDebug("UpdateCosts:Done",app._SettingsRefresh)
+	-- app.DEBUG_PRINT = true
+	-- app.PrintDebugPrior("UpdateCosts:Done",app._SettingsRefresh)
 end
 
 app.UpdateCostGroup = function(c)
@@ -225,11 +185,6 @@ app.CollectibleAsCost = function(t)
 	-- literally nothing to collect with 't' as a cost, so don't process the logic anymore
 	if not collectibles or #collectibles == 0 then
 		t.collectibleAsCost = false;
-		return;
-	end
-	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
-	if not app.MODE_DEBUG_OR_ACCOUNT and not NonAccountCostAllowed(t) then
-		-- app.PrintDebug("CAC:t.parent.saved",t.hash)
 		return;
 	end
 	local settingsChange = t._SettingsRefresh;

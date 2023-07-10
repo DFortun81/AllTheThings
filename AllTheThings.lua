@@ -14063,34 +14063,50 @@ end	-- Filtering
 
 -- Processing Functions
 do
+local DefaultGroupVisibility, DefaultThingVisibility;
+local UpdateGroups;
+local RecursiveGroupRequirementsFilter, GroupRequirementsFilter, GroupFilter, GroupVisibilityFilter, ThingVisibilityFilter, TrackableFilter
+-- Local caches for some heavily used functions within updates
+local function CacheFilterFunctions()
+	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
+	GroupRequirementsFilter = app.GroupRequirementsFilter;
+	GroupFilter = app.GroupFilter;
+	GroupVisibilityFilter, ThingVisibilityFilter = app.GroupVisibilityFilter, app.CollectedItemVisibilityFilter;
+	TrackableFilter = app.ShowTrackableThings;
+	DefaultGroupVisibility, DefaultThingVisibility = app.DefaultGroupFilter(), app.DefaultThingFilter();
+end
 local function SetGroupVisibility(parent, group)
-	-- if app.DEBUG_PRINT then print("SetGroupVisibility",group.key,group[group.key]) end
-	local forceShowParent, visible;
-	-- If this group is forced to be shown due to contained groups being shown
-	if group.forceShow then
+	local forceShowParent;
+	-- Set visible initially based on the global 'default' visibility, or whether the group should inherently be shown
+	local visible = DefaultGroupVisibility or GroupVisibilityFilter(group);
+	-- Need to check all possible reasons a group could be visible, from simplest to more complex
+	-- Force show
+	if not visible and group.forceShow then
 		visible = true;
 		group.forceShow = nil;
 		-- Continue the forceShow visibility outward
 		forceShowParent = true;
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.forceShow",group.progress,group.total,visible) end
-	-- If this group contains Things, show based on visibility filter
-	elseif group.total > 0 then
-		visible = group.progress < group.total or app.GroupVisibilityFilter(group);
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.total",group.progress,group.total,visible) end
-		-- The group can still be trackable even if it isn't visible due to the total
-		if not visible and app.ShowTrackableThings(group) then
-			visible = not group.saved or app.GroupVisibilityFilter(group);
-			forceShowParent = visible;
-		end
-	-- If this group is trackable, then we should show it.
-	elseif app.ShowTrackableThings(group) then
-		visible = not group.saved or app.GroupVisibilityFilter(group);
-		forceShowParent = visible;
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.trackable",group.progress,group.total,visible) end
-	else
-		visible = app.DefaultGroupFilter();
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.default",group.progress,group.total,visible) end
 	end
+	-- Total
+	if not visible and group.total > 0 then
+		visible = group.progress < group.total;
+	end
+	-- Cost
+	if not visible and (group.costNested or (group.costTotal or 0) > 0) then
+		visible = not group.saved;
+		-- Only persist nested costs from visible groups
+		if parent and visible then
+			parent.costNested = true;
+		end
+		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costNested)
+	end
+	-- Trackable
+	if not visible and TrackableFilter(group) then
+		visible = not group.saved;
+		forceShowParent = visible;
+	end
+	-- Apply the visibility to the group
+	group.visible = visible;
 	-- source ignored group which is determined to be visible should ensure the parent is also visible
 	if not forceShowParent and visible and group.sourceIgnored then
 		forceShowParent = true;
@@ -14099,65 +14115,50 @@ local function SetGroupVisibility(parent, group)
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
 	end
-	group.visible = visible;
 end
 local function SetThingVisibility(parent, group)
-	-- local debug = group.criteriaID == 2204;
-	-- if debug then print("TV",group.key,group[group.key]) end
-	local forceShowParent, visible;
-	if group.total > 0 then
-		-- If we've collected the item, use the "Show Collected Items" filter.
-		visible = group.progress < group.total or app.CollectedItemVisibilityFilter(group);
-		-- if debug then print("TV.total",group.progress,group.total,visible) end
-	elseif app.ShowTrackableThings(group) then
-		-- If this group is trackable, then we should show it.
-		visible = not group.saved or app.CollectedItemVisibilityFilter(group);
-		forceShowParent = visible;
-		-- if debug then print("TV.trackable",group.progress,group.total,visible) end
-	else
-		visible = app.DefaultThingFilter();
-		-- if debug then print("TV.default",group.progress,group.total,visible) end
+	local forceShowParent;
+	local visible = DefaultThingVisibility or ThingVisibilityFilter(group);
+	-- Need to check all possible reasons a group could be visible, from simplest to more complex
+	-- Force show
+	if not visible and group.forceShow then
+		visible = true;
+		group.forceShow = nil;
+		-- Continue the forceShow visibility outward
+		forceShowParent = true;
 	end
+	-- Total
+	if not visible and group.total > 0 then
+		visible = group.progress < group.total;
+	end
+	-- Cost
+	if not visible and (group.costNested or (group.costTotal or 0) > 0) then
+		visible = not group.saved;
+		-- Only persist nested costs from visible groups
+		if parent and visible then
+			parent.costNested = true;
+		end
+		-- app.PrintDebug("STV.cost",group.hash,visible,group.costNested)
+	end
+	-- Trackable
+	if not visible and TrackableFilter(group) then
+		visible = not group.saved;
+		forceShowParent = visible;
+	end
+	-- Apply the visibility to the group
+	group.visible = visible;
 	-- source ignored group which is determined to be visible should ensure the parent is also visible
 	if not forceShowParent and visible and group.sourceIgnored then
 		forceShowParent = true;
-		-- app.PrintDebug("STV:ForceParent",parent.text,"via Source Ignored",group.text)
+		-- app.PrintDebug("SGV:ForceParent",parent.text,"via Source Ignored",group.text)
 	end
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
 	end
-	group.visible = visible;
-end
-local UpdateGroups;
-local RecursiveGroupRequirementsFilter, GroupRequirementsFilter, GroupFilter;
--- Local caches for some heavily used functions within updates
-local function CacheFilterFunctions()
-	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
-	GroupRequirementsFilter = app.GroupRequirementsFilter;
-	GroupFilter = app.GroupFilter;
 end
 local function UpdateGroup(parent, group)
-	-- local debug = group.criteriaID == 2204;
-	-- if debug then print("UG",group.hash,group.__type) end
-	-- if not app.DEBUG_PRINT and shouldLog then
-	-- 	app.DEBUG_PRINT = shouldLog;
-	-- end
-
-	-- -- Only update a group ONCE per update cycle...
-	-- if not group._Updated or group._Updated ~= app._Updated then
-	-- 	if LOG then print("First Update") end
-	-- 	group._Updated = app._Updated;
-	-- else
-	--	-- group has already updated on this pass
-	-- 	if LOG then print("Skip Update") end
-	--	-- print("Skip Update",app._Updated,group.key,group.key and group[group.key],"t/p/v",group.total,group.progress,group.visible)
-	--	-- Increment the parent group's totals.
-	-- 	parent.total = (parent.total or 0) + (group.total or 0);
-	-- 	parent.progress = (parent.progress or 0) + (group.progress or 0);
-	-- 	return group.visible;
-	-- end
-
 	group.visible = nil;
+	group.costNested = nil;
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
 	local valid;
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
@@ -14172,11 +14173,9 @@ local function UpdateGroup(parent, group)
 
 	if valid then
 		-- Set total/progress for this object using its cost/custom information if any
-		local costTotal = group.costTotal or 0;
-		local costProgress = costTotal > 0 and group.costProgress or 0;
 		local customTotal = group.customTotal or 0;
 		local customProgress = customTotal > 0 and group.customProgress or 0;
-		local total, progress = costTotal + customTotal, costProgress + customProgress;
+		local total, progress = customTotal, customProgress;
 
 		-- if debug then print("UG.Init","cost",costProgress,costTotal,"custom",customProgress,customTotal,"=>",progress,total) end
 
