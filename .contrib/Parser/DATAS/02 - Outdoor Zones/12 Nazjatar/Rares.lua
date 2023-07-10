@@ -309,8 +309,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		n(152567, {	-- Kelpwillow
 			["questID"] = 56287,
 			["coord"] = { 50.2, 69.6, NAZJATAR },
+			["crs"] = {
+				154725,	-- Muck Slug
+			},
 			["isDaily"] = true,
 			["description"] = "Use a |cFFFFD700Prismatic Crystal|r to charm a |cFFFFD700Muck Slug|r and bring it to Kelpwillow to activate him.",
+			["cost"] = {{"i",167893,1}},	-- Prismatic Crystal
 			["sym"] = {{"select","itemID",
 				170184,	-- Ancient Reefwalker Bark
 				170183,	-- Reefwalker Bark
