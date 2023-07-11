@@ -2211,6 +2211,8 @@ for key,value in pairs({
 	[242678] = "Сундук с сокровищами",	-- Treasure Chest
 	[242683] = "Сундук с сокровищами",	-- Treasure Chest
 	[242959] = "Сундук с сокровищами",	-- Treasure Chest
+	[243321] = "Камень силы зверя",	-- Feral Stone
+	[243323] = "Камень баланса",	-- Balance Stone
 	[243334] = "Высохшая трава",	-- Withered Herb
 	[243392] = "Алхимическая книга",	-- Alchemy Book
 	[243688] = "Сундук с сокровищами",	-- Treasure Chest
@@ -3569,6 +3571,7 @@ for key,value in pairs({
 	[382325] = "Друза оникса",	-- Onyx Gem Cluster
 	[382621] = "Консоль катализатора возрождения",	-- Revival Catalyst Console
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
+	[383660] = "Соляной кристалл",	-- Salt Crystal
 	[383732] = "Клыкаррские рыболовные снасти",	-- Tuskarr Tacklebox
 	[383733] = "Потревоженная почва",	-- Disturbed Dirt
 	[383734] = "Потревоженная почва",	-- Disturbed Dirt
@@ -3596,6 +3599,7 @@ for key,value in pairs({
 	[385520] = "Груда костей",	-- Bone Pile
 	[385533] = "Камень начертания: протест",	-- Sending Stone: Protest
 	[385565] = "Сундук пламени Тьмы",	-- Blazing Shadowflame Chest
+	[385581] = "Сумка Генри",	-- Henry's Handbag
 	[385799] = "Укрепленный сундук",	-- Hardened Strongbox
 	[385800] = "Груда золота",	-- Gold Pile
 	[385801] = "Груда золота",	-- Gold Pile
@@ -3802,6 +3806,7 @@ for key,value in pairs({
 	[401828] = "Реликварий Нал-кс'кола",	-- Nal ks'kol Reliquary
 	[401839] = "Дар Дремлющей",	-- Dreamer's Bounty
 	[401844] = "Пахучая куча мусора",	-- Smelly Trash Pile
+	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
 	[402627] = "Старый потертый горн",	-- Well-Worn Kiln
 	[402632] = "Серный спасательный круг",	-- Brimstone Rescue Ring
 	[402634] = "Копье старейшины закали",	-- Zaqali Elder Spear
@@ -3811,6 +3816,9 @@ for key,value in pairs({
 	[402888] = "Витиеватые руны закали",	-- Intricate Zaqali Runes
 	[402890] = "Набросок шипящей руны",	-- Hissing Rune Draft
 	[402892] = "Древние исследования",	-- Ancient Research
+	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
+	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only

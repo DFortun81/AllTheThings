@@ -2151,6 +2151,8 @@ for key,value in pairs({
 	[242678] = "Cassa del Tesoro",	-- Treasure Chest
 	[242683] = "Cassa del Tesoro",	-- Treasure Chest
 	[242959] = "Cassa del Tesoro",	-- Treasure Chest
+	[243321] = "Pietra Ferina",	-- Feral Stone
+	[243323] = "Pietra dell'Equilibrio",	-- Balance Stone
 	[243334] = "Erba Avvizzita",	-- Withered Herb
 	[243392] = "Libro di Alchimia",	-- Alchemy Book
 	[243688] = "Cassa del Tesoro",	-- Treasure Chest
@@ -3509,6 +3511,7 @@ for key,value in pairs({
 	[382325] = "Formazione di Gemme d'Onice",	-- Onyx Gem Cluster
 	[382621] = "Console del Catalizzatore del Ripristino",	-- Revival Catalyst Console
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
+	[383660] = "Cristallo di Sale",	-- Salt Crystal
 	[383732] = "Cassetta da Pescatore dei Tuskarr",	-- Tuskarr Tacklebox
 	[383733] = "Terra Smossa",	-- Disturbed Dirt
 	[383734] = "Terra Smossa",	-- Disturbed Dirt
@@ -3536,6 +3539,7 @@ for key,value in pairs({
 	[385520] = "Cumulo d'Ossa",	-- Bone Pile
 	[385533] = "Pietra dell'Invio: Protesta",	-- Sending Stone: Protest
 	[385565] = "Cassa d'Ombrofuoco Fiammeggiante",	-- Blazing Shadowflame Chest
+	--TODO: [385581] = "Henry's Handbag",	-- Henry's Handbag
 	[385799] = "Forziere Indurito",	-- Hardened Strongbox
 	[385800] = "Mucchio d'Oro",	-- Gold Pile
 	[385801] = "Mucchio d'Oro",	-- Gold Pile
@@ -3742,6 +3746,7 @@ for key,value in pairs({
 	[401828] = "Reliquiario di Nal ks'kol",	-- Nal ks'kol Reliquary
 	[401839] = "Bottino del Sognatore",	-- Dreamer's Bounty
 	[401844] = "Pila di Spazzatura Puzzolente",	-- Smelly Trash Pile
+	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
 	[402627] = "Fornace Molto Consumata",	-- Well-Worn Kiln
 	[402632] = "Anello di Salvataggio di Zolfo",	-- Brimstone Rescue Ring
 	[402634] = "Lancia dell'Anziano Zaqali",	-- Zaqali Elder Spear
@@ -3751,6 +3756,9 @@ for key,value in pairs({
 	[402888] = "Rune Intricate degli Zaqali",	-- Intricate Zaqali Runes
 	[402890] = "Bozza di Runa Sibilante",	-- Hissing Rune Draft
 	[402892] = "Ricerca Antica",	-- Ancient Research
+	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
+	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

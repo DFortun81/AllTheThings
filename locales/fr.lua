@@ -2199,6 +2199,8 @@ for key,value in pairs({
 	[242678] = "Coffre au trésor",	-- Treasure Chest
 	[242683] = "Coffre au trésor",	-- Treasure Chest
 	[242959] = "Coffre au trésor",	-- Treasure Chest
+	[243321] = "Pierre farouche",	-- Feral Stone
+	[243323] = "Pierre de l’équilibre",	-- Balance Stone
 	[243334] = "Herbe flétrie",	-- Withered Herb
 	[243392] = "Livre d’alchimie",	-- Alchemy Book
 	[243688] = "Coffre au trésor",	-- Treasure Chest
@@ -3557,6 +3559,7 @@ for key,value in pairs({
 	[382325] = "Amas de gemmes d’onyx",	-- Onyx Gem Cluster
 	[382621] = "Console de catalyseur de rétablissement",	-- Revival Catalyst Console
 	[383625] = "Caisse de loupiotes fraîches",	-- Case of Fresh Gleamfish
+	[383660] = "Cristal de sel",	-- Salt Crystal
 	[383732] = "Boîte d’appâts de pêche rohart",	-- Tuskarr Tacklebox
 	[383733] = "Terre retournée",	-- Disturbed Dirt
 	[383734] = "Terre retournée",	-- Disturbed Dirt
@@ -3584,6 +3587,7 @@ for key,value in pairs({
 	[385520] = "Tas d’os",	-- Bone Pile
 	[385533] = "Pierre d’envoi : doléance",	-- Sending Stone: Protest
 	[385565] = "Coffre d’ombreflamme flamboyant",	-- Blazing Shadowflame Chest
+	--TODO: [385581] = "Henry's Handbag",	-- Henry's Handbag
 	[385799] = "Coffre-fort durci",	-- Hardened Strongbox
 	[385800] = "Pile d’or",	-- Gold Pile
 	[385801] = "Pile d’or",	-- Gold Pile
@@ -3790,6 +3794,7 @@ for key,value in pairs({
 	[401828] = "Reliquaire de Nal Ks’kol",	-- Nal ks'kol Reliquary
 	[401839] = "Butin de la Rêveuse",	-- Dreamer's Bounty
 	[401844] = "Tas de déchets kifouette",	-- Smelly Trash Pile
+	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
 	[402627] = "Four très usé",	-- Well-Worn Kiln
 	[402632] = "Bouée du soufre",	-- Brimstone Rescue Ring
 	[402634] = "Lance d’ancien zaqali",	-- Zaqali Elder Spear
@@ -3799,6 +3804,9 @@ for key,value in pairs({
 	[402888] = "Runes complexes zaqalis",	-- Intricate Zaqali Runes
 	[402890] = "Émanation de rune sifflante",	-- Hissing Rune Draft
 	[402892] = "Recherches anciennes",	-- Ancient Research
+	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
+	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
 	[9000000] = "Pierre de vent sculptée",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	[9999891] = "Objectic principal uniquement",	-- Main Objective Only

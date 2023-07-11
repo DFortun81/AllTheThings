@@ -2234,6 +2234,8 @@ for key, value in pairs({
 	[242678] = "宝箱",	-- Treasure Chest
 	[242683] = "宝箱",	-- Treasure Chest
 	[242959] = "宝箱",	-- Treasure Chest
+	[243321] = "野性之石",	-- Feral Stone
+	[243323] = "平衡之石",	-- Balance Stone
 	[243334] = "干枯的草药",	-- Withered Herb
 	--TODO: [243392] = "Alchemy Book",	-- Alchemy Book
 	[243688] = "宝箱",	-- Treasure Chest
@@ -3592,6 +3594,7 @@ for key, value in pairs({
 	[382325] = "玛瑙宝石簇",	-- Onyx Gem Cluster
 	--TODO: [382621] = "Revival Catalyst Console",	-- Revival Catalyst Console
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
+	[383660] = "盐晶",	-- Salt Crystal
 	[383732] = "海象人工具盒",	-- Tuskarr Tacklebox
 	[383733] = "翻动过的泥土",	-- Disturbed Dirt
 	[383734] = "翻动过的泥土",	-- Disturbed Dirt
@@ -3619,6 +3622,7 @@ for key, value in pairs({
 	[385520] = "骨堆",	-- Bone Pile
 	[385533] = "发信石：抗议",	-- Sending Stone: Protest
 	[385565] = "炽燃的暗影烈焰宝箱",	-- Blazing Shadowflame Chest
+	--TODO: [385581] = "Henry's Handbag",	-- Henry's Handbag
 	--TODO: [385799] = "Hardened Strongbox",	-- Hardened Strongbox
 	[385800] = "金子堆",	-- Gold Pile
 	[385801] = "金子堆",	-- Gold Pile
@@ -3825,6 +3829,7 @@ for key, value in pairs({
 	[401828] = "纳·克斯寇圣物匣",	-- Nal ks'kol Reliquary
 	[401839] = "沉睡者的奖赏",	-- Dreamer's Bounty
 	[401844] = "臭垃圾堆",	-- Smelly Trash Pile
+	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
 	[402627] = "古旧的窑炉",	-- Well-Worn Kiln
 	[402632] = "硫磺救生环",	-- Brimstone Rescue Ring
 	[402634] = "扎卡利长老之矛",	-- Zaqali Elder Spear
@@ -3834,6 +3839,9 @@ for key, value in pairs({
 	[402888] = "精细的扎卡利符文",	-- Intricate Zaqali Runes
 	[402890] = "嘶鸣符文草稿",	-- Hissing Rune Draft
 	[402892] = "远古研究",	-- Ancient Research
+	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
+	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
 	[9000000] = "微风雕塑之石",	-- Wind Sculpted Stone
 	[9999890] = "已腐化拾取",	-- Corrupted Loot
 	[9999891] = "仅主要目标",	-- Main Objective Only
