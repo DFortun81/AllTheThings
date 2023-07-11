@@ -156,11 +156,8 @@ r(413502),	-- Icy Scale Shoulderpads
 r(413503),	-- Icy Scale Waistwrap
 r(413504),	-- Icy Scale Leggings
 r(413505),	-- Icy Scale Stompers
-r(413516),	-- Helm of Lingering Power
-r(413517),	-- Skyfury Headdress
 r(413738),	-- Nerubian Persuader
 r(413756),	-- Displacement Boots
-r(413761),	-- Lucien's Lost Soles
 10.1.5.49719
 r(416692),	-- Sanctified Leather Hat
 10.1.5.49824

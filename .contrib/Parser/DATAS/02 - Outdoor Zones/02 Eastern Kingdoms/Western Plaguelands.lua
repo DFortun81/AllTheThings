@@ -2483,6 +2483,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire
+						
+						-- 10.1.5 Naxx Items
+						i(206584, {	-- Archived Crafting Techniques
+							["timeline"] = { "added 10.1.5" },
+							--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+							["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
+							["groups"] = {
+								r(413512),	-- Darrowdirk (Bs)
+								r(413513),	-- Darrowshire Protector (Bs)
+								r(413516),	-- Helm of Lingering Power (LW)
+								r(413761),	-- Lucien's Lost Soles (LW)
+								r(413514),	-- Mirah's Lullaby (Bs)
+								r(413515),	-- Shifting Sliver (Ins)
+								r(413517),	-- Skyfury Headdress (LW)
+								r(413511),	-- Warsword of Caer Darrow (Bs)
+							},
+						}),
 					},
 				}),
 				-- #if ANYCLASSIC
