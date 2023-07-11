@@ -34,6 +34,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(75259, {	-- Aiding the Accord: Zskera Vaults
 					["timeline"] = { ADDED_10_0_7 },
 				}),
+				q(77254, {	-- Aiding the Accord: Time Rift
+					["timeline"] = { ADDED_10_1_5 },
+				}),
 			})),
 			n(REWARDS, {
 				i(200073, {	-- Valdrakken Treasures
