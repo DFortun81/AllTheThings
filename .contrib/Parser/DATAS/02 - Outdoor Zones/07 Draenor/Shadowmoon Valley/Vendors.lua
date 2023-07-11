@@ -6,6 +6,7 @@ root(ROOTS.Zones, m(DRAENOR, {
 		n(VENDORS, {
 			n(84074, {	-- Merchant Derrook
 				["coord"] = { 57.4, 30.2, DRAENOR_SHADOWMOON_VALLEY },
+				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(114980, {	-- Farmer's Broom
 						["cost"] = 67,	-- 67c
