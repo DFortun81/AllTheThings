@@ -1622,6 +1622,8 @@ i(206162, 407555);	-- Tarecgosa's Visage
 i(205246, 409034);	-- Vicious War Snail [A]
 i(205245, 409032);	-- Vicious War Snail [H]
 i(204361, 368893);	-- Winding Slitherdrake
+i(0, 397406);		-- Wondrous Wavewhisker
+
 -- NYI
 i(206027, 411565);	-- Felcrystal Scorpion
 i(205206, 408648);	-- Shalewing, Fire [PH]

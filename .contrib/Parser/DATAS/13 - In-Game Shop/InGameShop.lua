@@ -188,6 +188,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		mount(359317, {	-- Wen Lo, the River's Edge (MOUNT!)
 			["timeline"] = { "added 9.1.5.42010" },
 		}),
+		mount(397406, {	-- Wondrous Wavewhisker
+			["timeline"] = { "added 10.1.0.50000" },
+		}),
 	}),
 	filter(BATTLE_PETS, {
 		i(106240, {	-- Alterac Brew-Pup (PET!)
