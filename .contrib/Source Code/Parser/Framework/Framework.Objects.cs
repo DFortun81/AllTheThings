@@ -529,7 +529,7 @@ namespace ATT
                     typeObjects[keyValue] = mergeObjects = new List<IDictionary<string, object>>();
 
                 //LogDebug($"Post Process Merge Added: {key}:{keyValue}", data);
-                // Processing on group shappens IN REVERSE so if we are adding content to be post-merged during that pass
+                // Processing on groups happens IN REVERSE so if we are adding content to be post-merged during that pass
                 // we will order them backwards as well so that when they are merged into the respective groups they are ordered as originally Sourced
                 mergeObjects.Insert(0, data);
             }
@@ -608,7 +608,7 @@ namespace ATT
                 {
                     foreach (var keyValueMergeSet in keyGroup.Value)
                     {
-                        LogDebug($"WARN: Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]");
+                        Log($"WARN: Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]", keyValueMergeSet.Value);
                     }
                 }
             }
