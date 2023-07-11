@@ -2176,6 +2176,8 @@ for key,value in pairs({
 	[242678] = "Schatztruhe",	-- Treasure Chest
 	[242683] = "Schatztruhe",	-- Treasure Chest
 	[242959] = "Schatztruhe",	-- Treasure Chest
+	[243321] = "Stein der Wildheit",	-- Feral Stone
+	[243323] = "Stein des Gleichgewichts",	-- Balance Stone
 	[243334] = "Verwelktes Kraut",	-- Withered Herb
 	[243392] = "Alchemiebuch",	-- Alchemy Book
 	[243688] = "Schatztruhe",	-- Treasure Chest
@@ -3534,6 +3536,7 @@ for key,value in pairs({
 	[382325] = "Onyxedelsteinklumpen",	-- Onyx Gem Cluster
 	[382621] = "Belebungskatalysatorkonsole",	-- Revival Catalyst Console
 	[383625] = "Kiste mit frischem Leuchtfisch",	-- Case of Fresh Gleamfish
+	[383660] = "Salzkristall",	-- Salt Crystal
 	[383732] = "Angelzubehör der Tuskarr",	-- Tuskarr Tacklebox
 	[383733] = "Bewegte Erde",	-- Disturbed Dirt
 	[383734] = "Bewegte Erde",	-- Disturbed Dirt
@@ -3561,6 +3564,7 @@ for key,value in pairs({
 	[385520] = "Knochenhaufen",	-- Bone Pile
 	[385533] = "Sendestein: Protest",	-- Sending Stone: Protest
 	[385565] = "Lodernde Schattenflammentruhe",	-- Blazing Shadowflame Chest
+	--TODO: [385581] = "Henry's Handbag",	-- Henry's Handbag
 	[385799] = "Gehärtete Schließkassette",	-- Hardened Strongbox
 	[385800] = "Goldhaufen",	-- Gold Pile
 	[385801] = "Goldhaufen",	-- Gold Pile
@@ -3767,6 +3771,7 @@ for key,value in pairs({
 	[401828] = "Reliquiar von Nal ks'kol",	-- Nal ks'kol Reliquary
 	[401839] = "Belohnung des Träumers",	-- Dreamer's Bounty
 	[401844] = "Stinkender Müllhaufen",	-- Smelly Trash Pile
+	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
 	[402627] = "Abgenutzter Brennofen",	-- Well-Worn Kiln
 	[402632] = "Schwefel-Rettungsring",	-- Brimstone Rescue Ring
 	[402634] = "Ältestenspeer der Zaqali",	-- Zaqali Elder Spear
@@ -3776,6 +3781,9 @@ for key,value in pairs({
 	[402888] = "Aufwendige Zaqali-Runen",	-- Intricate Zaqali Runes
 	[402890] = "Zischender Runenentwurf",	-- Hissing Rune Draft
 	[402892] = "Uralte Forschung",	-- Ancient Research
+	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
+	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
