@@ -65066,8 +65066,6 @@ s(184408)/i(202433),	--
 s(184409)/i(202434),	--
 s(184410)/i(202435),	--
 s(184411)/i(202436),	--
-s(185509)/i(204279),	-- Wallclimber's Incursion Hatchet \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Weapon - 1H Axe AGI
-s(185514)/i(202607),	-- Brutal Dragonslayer's Trophy \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Weapon - Bow
 s(185531)/i(202608),	-- Power-Draining Spire
 s(185532)/i(202608),	-- Power-Draining Spire
 s(185533)/i(202608),	-- Power-Draining Spire
@@ -65138,35 +65136,27 @@ s(186297)/i(202440),	-- Insignia of the Onyx Crucible \\ 10.1 Raid - Black Drago
 10.1.0.48661
 s(186478)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
 s(186480)/i(204413),	-- Bands of Purified Purpose \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
-s(186492)/i(202580),	-- Mystic's Scalding Frame \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - SHOULDER 1
 s(186496)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
 s(186498)/i(204412),	-- Crucible Curator's Wingspan \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
-s(186501)/i(202578),	-- Phoenix-Plume Gloves \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - HAND 1
 s(186505)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186506)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186507)/i(204408),	-- Gholna's Lavaborne Legwraps \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 s(186517)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
 s(186519)/i(204420),	-- Sundered Edgelord's Breastplate \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
-s(186531)/i(202591),	-- Gatecrasher Giant's Coif \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
 s(186532)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186533)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186534)/i(204425),	-- Crown of the Twin Elders \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
 s(186544)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
 s(186546)/i(204421),	-- Faulds of Failed Experiments \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
-s(186549)/i(202604),	-- Boulder-Tossing Bands \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - WRIST 1
-s(186607)/i(202574),	-- Flamebound Huntsman's Footpads \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - FEET 1
 s(186617)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(186618)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(186619)/i(204419),	-- Cavernous Foliage Wristbands \\ 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
 s(186632)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
 s(186634)/i(204416),	-- Laboratory Assistant's Abductors \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
-s(186640)/i(202586),	-- Warlord's Volcanic Vest \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - CHEST 1
 s(186647)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
 s(186649)/i(204417),	-- Mantle of Sunless Kindling \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
 s(186662)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
 s(186664)/i(204428),	-- Sanctum Guard's Forgewalkers \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
-s(186673)/i(202577),	-- Seal of the Defiant Hordes \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - WAIST 1
-s(186682)/i(202597),	-- Obsidian Guard's Chausses \\ 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - LEGS 1
 s(186695)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186697)/i(204427),	-- Devoted Warden's Gaze \\ 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
 s(186700)/i(204465),	-- Voice of the Silent Star

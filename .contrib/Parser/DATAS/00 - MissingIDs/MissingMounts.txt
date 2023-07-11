@@ -251,5 +251,3 @@ mount(370770),	-- Tuskarr Shoreglider
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
 10.1.5.50130
 mount(419002),	-- Temp
-10.1.5.50355
-mount(412088),	-- Grotto Netherwing Drake

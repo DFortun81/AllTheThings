@@ -588,6 +588,23 @@ faction(2441),	-- The Ascended (Paragon)
 faction(2442),	-- Court of Harvesters (Paragon)
 faction(2443),	-- The Wild Hunt
 faction(2444),	-- The Wild Hunt (Paragon)
+9.0.1.34972
+faction(2446),	-- Baroness Vashj
+faction(2447),	-- Lady Moonberry
+faction(2448),	-- Mikanikos
+faction(2449),	-- The Countess
+faction(2450),	-- Alexandros Mograine
+faction(2451),	-- Hunt-Captain Korayn
+faction(2452),	-- Polemarch Adrestes
+faction(2453),	-- Rendle and Cudgelface
+faction(2454),	-- Choofa
+faction(2455),	-- Cryptkeeper Kassir
+faction(2456),	-- Droman Aliothe
+faction(2457),	-- Grandmaster Vole
+faction(2458),	-- Kleia and Pelagos
+faction(2459),	-- Sika
+faction(2460),	-- Stonehead
+faction(2461),	-- Plague Deviser Marileth
 9.1.0.38312
 faction(2468),	-- Korthia
 faction(2471),	-- Death's Advance (Paragon)

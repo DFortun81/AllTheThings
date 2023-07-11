@@ -728,6 +728,9 @@ root(ROOTS.Unsorted, {
 			--
 			i(133589),	-- Dalape�o Pepper
 			i(208567),	-- Medal of Conquest
+			--
+			i(206167),	-- Way of the Wonderous Wavewhisker
+			i(206174),	-- Blub
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible

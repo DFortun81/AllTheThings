@@ -188,7 +188,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		mount(359317, {	-- Wen Lo, the River's Edge (MOUNT!)
 			["timeline"] = { "added 9.1.5.42010" },
 		}),
-		mount(397406, {	-- Wondrous Wavewhisker
+		mount(397406, {	-- Wonderous Wavewhisker
 			["timeline"] = { "added 10.1.0.50000" },
 		}),
 	}),
