@@ -124,7 +124,7 @@ local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
 	end
 end
 
-app.UpdateCosts = function()
+local function UpdateCosts()
 	CacheFilters();
 	-- app.PrintDebug("UpdateCosts",app._SettingsRefresh)
 	local refresh = app._SettingsRefresh;
@@ -227,3 +227,4 @@ api.OnReady = function()
 	DGU = app.DirectGroupUpdate;
 	UpdateRunner = app.UpdateRunner;
 end
+api.OnRefreshData_NewSettings = UpdateCosts;

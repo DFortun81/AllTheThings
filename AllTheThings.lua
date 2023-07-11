@@ -186,6 +186,14 @@ app.IgnoreDataCaching = function()
 		return true;
 	end
 end
+app.DoModuleEvent = function(eventName)
+	-- See if any Modules have the event function defined, and call them now
+	for _,module in pairs(app.Modules) do
+		if module[eventName] then
+			app.FunctionRunner.Run(module[eventName]);
+		end
+	end
+end
 -- Returns the Global reference by name, setting it to the 'init' value if not already existing
 local function LocalizeGlobal(globalName, init)
 	local val = _G[globalName];
@@ -18214,8 +18222,10 @@ local function RefreshData()
 		if LastSettingsChangeUpdate ~= app._SettingsRefresh then
 			LastSettingsChangeUpdate = app._SettingsRefresh;
 
-			-- Trigger Cost Update Runner
-			app.UpdateCosts();
+			app.DoModuleEvent("OnRefreshData_NewSettings")
+		-- else
+			-- comment this in when needed (i.e. custom collect module/quest module/etc. for above methods)
+		-- 	app.DoModuleEvent("OnRefreshData")
 		end
 
 		-- Forcibly update the windows.
@@ -23091,11 +23101,7 @@ app.InitDataCoroutine = function()
 	-- app.PrintDebug("ATT is Ready!");
 
 	-- See if any Modules have 'OnReady' functions defined, and call them now
-	for _,module in pairs(app.Modules) do
-		if module.OnReady then
-			app.FunctionRunner.Run(module.OnReady);
-		end
-	end
+	app.DoModuleEvent("OnReady")
 
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end
