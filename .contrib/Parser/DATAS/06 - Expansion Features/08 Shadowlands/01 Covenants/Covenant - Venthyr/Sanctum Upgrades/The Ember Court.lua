@@ -516,22 +516,58 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								["crs"] = { 165399 },	-- Lord Garridan
 								["maps"] = { REVENDRETH },
 								["g"] = {
-									faction(2450),	-- Alexandros Mograine
-									faction(2446),	-- Baroness Vashj
-									faction(2454),	-- Choofa
-									faction(2455),	-- Cryptkeeper Kassir
-									faction(2456),	-- Droman Aliothe
-									faction(2457),	-- Grandmaster Vole
-									faction(2451),	-- Hunt-Captain Korayn
-									faction(2458),	-- Kleia and Pelagos
-									faction(2447),	-- Lady Moonberry
-									faction(2448),	-- Mikanikos
-									faction(2461),	-- Plague Deviser Marileth
-									faction(2452),	-- Polemarch Adrestes
-									faction(2453),	-- Rendle and Cudgelface
-									faction(2459),	-- Sika
-									faction(2460),	-- Stonehead
-									faction(2449),	-- The Countess
+									-- Tier 1
+									faction(2454, {	-- Choofa
+										["npcID"] = 168449,
+									}),
+									faction(2455, {	-- Cryptkeeper Kassir
+										["npcID"] = 168450,
+									}),
+									faction(2461, {	-- Plague Deviser Marileth
+										["npcID"] = 171852,
+									}),
+									faction(2459, {	-- Sika
+										["npcID"] = 171854,
+									}),
+									-- Tier 2
+									faction(2456, {	-- Droman Aliothe
+										["npcID"] = 171847,
+									}),
+									faction(2457, {	-- Grandmaster Vole
+										["npcID"] = 171848,
+									}),
+									faction(2458, {	-- Kleia and Pelagos
+										["npcID"] = 171850,
+									}),
+									faction(2460, {	-- Stonehead
+										["npcID"] = 171856,
+									}),
+									-- Tier 3
+									faction(2450, {	-- Alexandros Mograine
+										["npcID"] = 171833,
+									}),
+									faction(2451, {	-- Hunt-Captain Korayn
+										["npcID"] = 171836,
+									}),
+									faction(2452, {	-- Polemarch Adrestes
+										["npcID"] = 168447,
+									}),
+									faction(2453, {	-- Rendle and Cudgelface
+										["npcID"] = 171839,
+									}),
+									-- Tier 4
+									faction(2446, {	-- Baroness Vashj
+										["npcID"] = 168444,
+									}),
+									faction(2447, {	-- Lady Moonberry
+										["npcID"] = 171830,
+									}),
+									faction(2448, {	-- Mikanikos
+										["npcID"] = 171831,
+									}),
+									faction(2449, {	-- The Countess
+										["npcID"] = 165269,
+									}),
 								},
 							}),
 						}),

@@ -280,14 +280,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						i(205140),	-- Pattern: Undulating Sporecloak (RECIPE!)
 					},
 				}),
-				-- e(2524, {	-- Assault of the Zaqali
-				-- 	["crs"] = {
-				-- 		202791,	-- Ignara
-				-- 		199659,	-- Warlord Kagni
-				-- 	},
-				-- 	["g"] = {
-				-- 	},
-				-- }),
+				e(2524, {	-- Assault of the Zaqali
+					["crs"] = {
+						202791,	-- Ignara
+						199659,	-- Warlord Kagni
+					},
+					["g"] = {
+					},
+				}),
 				e(2525, {	-- Rashok, the Elder
 					["crs"] = { 201320 },	-- Rashok, the Elder
 					["g"] = {
