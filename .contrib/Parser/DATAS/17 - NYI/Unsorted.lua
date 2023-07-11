@@ -417,8 +417,6 @@ root(ROOTS.Unsorted, {
 					i(206546),	-- Ancient Plans: Blade of the Fallen Seraph (RECIPE!)
 					i(206542),	-- Ancient Plans: Bracers of Vengeance (RECIPE!)
 					i(206805),	-- Ancient Plans: Bucket Kickers (RECIPE!)
-					i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
-					i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
 					i(206553),	-- Ancient Plans: Dawn of Demise (RECIPE!)
 					i(206557),	-- Ancient Plans: Death's Gamble (RECIPE!)
 					i(206537),	-- Ancient Plans: Edict of the Redeemed Crusader (RECIPE!)
@@ -427,7 +425,6 @@ root(ROOTS.Unsorted, {
 					i(207573),	-- Ancient Plans: Ichor Slicer (RECIPE!)
 					i(207567),	-- Ancient Plans: Intrepid Shortblade (RECIPE!)
 					i(206533),	-- Ancient Plans: Midnight's Graze (RECIPE!)
-					i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
 					i(206545),	-- Ancient Plans: Plated Construct's Ribcage (RECIPE!)
 					i(207572),	-- Ancient Plans: Sacred Guardian (RECIPE!)
 					i(206536),	-- Ancient Plans: Shade's Blade (RECIPE!)
@@ -437,7 +434,6 @@ root(ROOTS.Unsorted, {
 					i(206544),	-- Ancient Plans: The Final Dream (RECIPE!)
 					i(206549),	-- Ancient Plans: The Face of Doom (RECIPE!)
 					i(207568),	-- Ancient Plans: Valiant Shortblade (RECIPE!)
-					i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
 					i(206534),	-- Ancient Plans: Weaver's Fang (RECIPE!)
 					i(206535),	-- Ancient Plans: Widow's Weep (RECIPE!)
 					i(206419),	-- Plans: Icebane Coif (RECIPE!)
@@ -525,7 +521,6 @@ root(ROOTS.Unsorted, {
 				prof(INSCRIPTION, {
 					-- RECIPES --
 					i(206548),	-- Ancient Technique: Encased Frigid Heart (RECIPE!)
-					i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
 					i(206532),	-- Ancient Technique: Soulscryer (RECIPE!)
 					i(207575),	-- Ancient Technique: Wanderer's Guide (RECIPE!)
 					-- CRAFTED --
@@ -549,14 +544,12 @@ root(ROOTS.Unsorted, {
 				prof(LEATHERWORKING, {
 					-- RECIPES --
 					i(206556),	-- Ancient Pattern: Displacement Boots (RECIPE!)
-					i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
 					i(206411),	-- Pattern: Icy Scale Crown (RECIPE!)
 					i(206417),	-- Pattern: Icy Scale Leggings (RECIPE!)
 					i(206412),	-- Pattern: Icy Scale Shoulderpads (RECIPE!)
 					i(206418),	-- Pattern: Icy Scale Stompers (RECIPE!)
 					i(206416),	-- Pattern: Icy Scale Waistwrap (RECIPE!)
 					i(206772),	-- Pattern: Languished Leather (RECIPE!)
-					i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
 					i(206538),	-- Ancient Pattern: Nerubian Persuader (RECIPE!)
 					i(206408),	-- Pattern: Polar Belt (RECIPE!)
 					i(206410),	-- Pattern: Polar Footwarmers (RECIPE!)
@@ -565,7 +558,6 @@ root(ROOTS.Unsorted, {
 					i(206404),	-- Pattern: Polar Spaulders (RECIPE!)
 					i(207577),	-- Ancient Pattern: Sanctified Leather Hat (RECIPE!)
 					i(206773),	-- Pattern: Scourged Scales (RECIPE!)
-					i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
 					-- CRAFTED --
 					i(206509),	-- Displacement Boots
 					i(206482),	-- Helm of Lingering Power
