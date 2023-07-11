@@ -264,18 +264,17 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(6443, {	-- Deviate Hide
 					["description"] = "Drops from Deviate creatures in the Wailing Caverns.",
 				}),
-				i(10413, {	-- Gloves of the Fang
-					["crs"] = { 3840 },	-- Druid of the Fang
+				n(3840, {	-- Druid of the Fang
+					i(10413),	-- Gloves of the Fang
+					i(132743, {	-- Slither-Scale Gauntlets
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(208015, bubbleDown({ ["timeline"] = { "added 10.1.5.49824" } }, {	-- Stuffed Deviate Scale Pouch
+						i(6476),	-- Pattern: Deviate Scale Belt (RECIPE!)
+						i(6474),	-- Pattern: Deviate Scale Cloak (RECIPE!)
+						i(6475),	-- Pattern: Deviate Scale Gloves (RECIPE!)
+					})),
 				}),
-				i(132743, {	-- Slither-Scale Gauntlets
-					["crs"] = { 3840 },	-- Druid of the Fang
-					["timeline"] = { ADDED_7_0_3_LAUNCH },
-				}),
-				i(208015, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Stuffed Deviate Scale Pouch
-					i(6476),	-- Pattern: Deviate Scale Belt (RECIPE!)
-					i(6474),	-- Pattern: Deviate Scale Cloak (RECIPE!)
-					i(6475),	-- Pattern: Deviate Scale Gloves (RECIPE!)
-				})),
 			}),
 			prof(SKINNING, {
 				i(6470),	-- Deviate Scale
