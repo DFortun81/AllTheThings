@@ -466,7 +466,6 @@ faction(1920),	-- Moon Guard
 faction(1947),	-- Illidari
 faction(1953),	-- Nightmare
 faction(1962),	-- Nightborne Civilian
-faction(1975),	-- Conjurer Margoss
 faction(1984),	-- The First Responders
 faction(1989),	-- Moon Guard
 faction(2010),	-- Brawl'gar Arena (Season 3) \\ Brawl'gar Arena
@@ -481,12 +480,6 @@ faction(2088),	-- Dreamweavers (Paragon)
 faction(2089),	-- The Nightfallen (Paragon)
 faction(2090),	-- The Wardens (Paragon)
 faction(2091),	-- Armies of Legionfall (Paragon)
-faction(2097),	-- Ilyssia of the Waters
-faction(2098),	-- Keeper Raynae
-faction(2099),	-- Akule Riverhorn
-faction(2100),	-- Corbyn
-faction(2101),	-- Sha'leth
-faction(2102),	-- Impus
 faction(2135),	-- Chromie
 7.3.0.24608
 faction(2166),	-- Army of the Light (Paragon)
@@ -588,23 +581,6 @@ faction(2441),	-- The Ascended (Paragon)
 faction(2442),	-- Court of Harvesters (Paragon)
 faction(2443),	-- The Wild Hunt
 faction(2444),	-- The Wild Hunt (Paragon)
-9.0.1.34972
-faction(2446),	-- Baroness Vashj
-faction(2447),	-- Lady Moonberry
-faction(2448),	-- Mikanikos
-faction(2449),	-- The Countess
-faction(2450),	-- Alexandros Mograine
-faction(2451),	-- Hunt-Captain Korayn
-faction(2452),	-- Polemarch Adrestes
-faction(2453),	-- Rendle and Cudgelface
-faction(2454),	-- Choofa
-faction(2455),	-- Cryptkeeper Kassir
-faction(2456),	-- Droman Aliothe
-faction(2457),	-- Grandmaster Vole
-faction(2458),	-- Kleia and Pelagos
-faction(2459),	-- Sika
-faction(2460),	-- Stonehead
-faction(2461),	-- Plague Deviser Marileth
 9.1.0.38312
 faction(2468),	-- Korthia
 faction(2471),	-- Death's Advance (Paragon)
@@ -640,8 +616,6 @@ faction(2548),	-- Valdrakken Accord (Renown)
 10.0.0.44795
 faction(2551),	-- Iskaara Tuskarr (Paragon)
 faction(2552),	-- Valdrakken Accord (Paragon)
-10.0.0.44999
-faction(2553),	-- Soridormi \\ Timewalkers
 10.0.0.45141
 faction(2554),	-- Clan Toghus
 faction(2555),	-- Clan Kaighan

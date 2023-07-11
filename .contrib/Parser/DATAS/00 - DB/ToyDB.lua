@@ -1195,10 +1195,8 @@ i(205027);	-- Explorer's Banner
 -- PATCH 10.1.5 --
 ------------------
 i(208186);	-- Boffins
--- #if AFTER 10.1.5
 i(140192);	-- Dalaran Hearthstone
 i(110560);	-- Garrison Hearthstone
--- #endif
 i(208058);	-- Minute Glass
 i(208057);	-- Smoldering Banner of the Aspects
 i(207099);	-- Tiny Box of Tiny Rocks

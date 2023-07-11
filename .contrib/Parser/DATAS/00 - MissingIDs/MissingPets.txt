@@ -1,29 +1,10 @@
 10.1.5.49516
 pet(3587),	-- Lifelike Mechanical Duckling
-pet(3589),	-- Rusziona
-pet(3590),	-- Belastrasza
-pet(3596),	-- Kabluey
-10.1.5.49595
-pet(3597),	-- Princess Vorquistrasza \\ Princess Vorquinstrasza
-pet(3598),	-- Zhusadormu
-pet(3599),	-- Zalethgos
-pet(3600),	-- Pallibrius
-pet(3601),	-- Posidriss
-pet(3602),	-- Somnius
 10.1.5.49719
 pet(3608),	-- Lifelike Mechanical Turtle
 pet(3609),	-- Sporeflower
 pet(3975),	-- Midnight Terrorwing
 pet(4237),	-- Treanthony
-10.1.5.49908
-pet(4255),	-- Briarhorn Hatchling
-pet(4257),	-- Gill'dan
-pet(4258),	-- Jeepers
-pet(4259),	-- Doomrubble
-pet(4260),	-- Killbot 9000
-pet(4261),	-- Obsidian Warwhelp
-pet(4262),	-- N'Ruby
-pet(4263),	-- Tobias
 10.1.5.50379
 pet(3582),	-- Blub
 
