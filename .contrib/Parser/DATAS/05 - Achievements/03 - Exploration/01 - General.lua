@@ -180,6 +180,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_KALIMDOR_EXP .. [[); end]],
 			-- #endif
 		}),
+		ach(18368, {	-- Memory of Scholomance
+			["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME, WESTERN_PLAGUELANDS },
+			
+		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(45, {	-- Northrend Explorer [7.0.3] / Explore Northrend
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
