@@ -1382,10 +1382,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 				}),
 				q(48093, {	-- Nagating the Threat
-					["sourceQuests"] = {
-						48090,	-- Krag'wa's Chosen
-						48092,	-- Vengeance of the Frogs
-					},
+					["description"] = "This Bonus Objective pops up after accepting |cffffff00A Krag'wa's Chosen|r.",
 				}),
 				q(48588, {	-- Purge the Infection
 					["sourceQuests"] = {

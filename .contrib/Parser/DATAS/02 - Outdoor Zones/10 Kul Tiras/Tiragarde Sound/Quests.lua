@@ -1484,7 +1484,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					49450,	-- Incident Reports
 					49454,	-- Pest Prevention
 					49468,	-- Required Webinar
-					50058,	-- The Witch's Pet
 				},
 				["coord"] = { 70.0, 18.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
