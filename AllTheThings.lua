@@ -14513,9 +14513,9 @@ local CCFuncs = {
 		-- check if quest #51211 is completed. Rewards the HoA to the player and permanently switches all possible Azerite rewards
 		local hoa = IsQuestFlaggedCompleted(51211) or false;
 		-- also store the opposite of HOA for easy checks on Azewrong gear
-		app.CurrentCharacter.CustomCollects["~HOA"] = not hoa;
+		app.CurrentCharacter.CustomCollects["!HOA"] = not hoa;
 		-- for now, always assume both HoA qualifications are true so they do not filter
-		app.ActiveCustomCollects["~HOA"] = true; -- not hoa;
+		app.ActiveCustomCollects["!HOA"] = true; -- not hoa;
 		return true; -- hoa;
 	end,
 	["SL_COV_KYR"] = function()

@@ -533,7 +533,7 @@ azeriteItem = function(id, t)							-- Create an Item which is marked as having 
 end
 azewrongItem = function(id, t)							-- Create an Item which is marked as having not obtained the Heart of Azeroth
 	t = i(id, t);
-	t.customCollect = { "~HOA" };
+	t.customCollect = { "!HOA" };
 	return t;
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
