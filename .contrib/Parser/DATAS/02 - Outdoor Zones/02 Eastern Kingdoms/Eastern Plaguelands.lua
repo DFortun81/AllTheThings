@@ -3507,14 +3507,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 							["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
 							["groups"] = {
-								r(413512),	-- Darrowdirk (Bs)
-								r(413513),	-- Darrowshire Protector (Bs)
-								r(413516),	-- Helm of Lingering Power (LW)
-								r(413761),	-- Lucien's Lost Soles (LW)
-								r(413514),	-- Mirah's Lullaby (Bs)
-								r(413515),	-- Shifting Sliver (Ins)
-								r(413517),	-- Skyfury Headdress (LW)
-								r(413511),	-- Warsword of Caer Darrow (Bs)
+								i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
+								i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
+								i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
+								i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
+								i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
+								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
+								i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
+								i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
 							},
 						}),
 					},

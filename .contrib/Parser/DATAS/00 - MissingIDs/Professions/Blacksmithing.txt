@@ -4,6 +4,10 @@ r(413507),	-- Icebane Mantle
 r(413508),	-- Icebane Waistguard
 r(413509),	-- Icebane Leggings
 r(413510),	-- Icebane Trudgers
+r(413511),	-- Warsword of Caer Darrow
+r(413512),	-- Darrowdirk
+r(413513),	-- Darrowshire Protector
+r(413514),	-- Mirah's Lullaby
 r(413518),	-- Strength of Menethil
 r(413520),	-- Midnight's Graze
 r(413521),	-- Weaver's Fang

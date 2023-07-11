@@ -173,6 +173,7 @@ r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
 10.1.5.49516
+r(413515),	-- Shifting Sliver
 r(413519),	-- Soulscryer
 r(413748),	-- Encased Frigid Heart
 10.1.5.49719
