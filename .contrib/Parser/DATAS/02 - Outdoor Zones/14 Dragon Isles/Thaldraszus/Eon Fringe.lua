@@ -28,6 +28,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 204990 },	-- Melly Teletone
 					["coord"] = { 54.9, 81.6, THALDRASZUS },
 				}),
+				q(76598, {	-- Rough Edges
+					["sourceQuests"] = { 77437 },	-- Eon's Fringe
+					["provider"] = { "n", 208052 },	-- Nozdormu
+					["coord"] = { 54.7, 81.4, THALDRASZUS },
+				}),
 
 				--- `The Chronosmith` quest chain ---
 				q(76352, {	-- Chronohammer Time!
