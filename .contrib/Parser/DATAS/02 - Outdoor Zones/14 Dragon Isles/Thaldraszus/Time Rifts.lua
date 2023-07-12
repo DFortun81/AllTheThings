@@ -21,37 +21,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(TIME_RIFTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 			["maps"] = {
 				2199,	-- Tyrhold Reservoir (Scenario Map)
-				AZQROTH,
-				AZEWRATH,
-				AZMOURNE,
-				AZMERLOTH,
-				ULDEROTH,
-				AZEROTH,
-				THE_WARLANDS,
 			},
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(18637, {	-- Chronograde Connoisseur
 						crit(1, {	-- Azmerloth
-							["crs"] = { 204808 },	-- Fractured Causality / Gil'dan
+							["_npcs"] = { 204808 },	-- Fractured Causality / Gil'dan
 						}),
 						crit(2, {	-- Ulderoth
-							["crs"] = { 205304 },	-- Fractured Causality / Freya
+							["_npcs"] = { 205304 },	-- Fractured Causality / Freya
 						}),
 						crit(3, {	-- Azmourne
-							["crs"] = { 205305 },	-- Fractured Causality / The Lich King
+							["_npcs"] = { 205305 },	-- Fractured Causality / The Lich King
 						}),
 						crit(4, {	-- Azewrath
-							["crs"] = { 205306 },	-- Fractured Causality / Illidan
+							["_npcs"] = { 205306 },	-- Fractured Causality / Illidan
 						}),
 						crit(5, {	-- Azq'roth
-							["crs"] = { 205307 },	-- Fractured Causality / Fury of N'zoth
+							["_npcs"] = { 205307 },	-- Fractured Causality / Fury of N'zoth
 						}),
 						crit(6, {	-- The Warlands
-							["crs"] = { 205308 },	-- Fractured Causality / Varian Wrynn
+							["_npcs"] = { 205308 },	-- Fractured Causality / Varian Wrynn
 						}),
 						crit(7, {	-- A.Z.E.R.O.T.H
-							["crs"] = { 205309 },	-- Fractured Causality / Overload Mechagon
+							["_npcs"] = { 205309 },	-- Fractured Causality / Overload Mechagon
 						}),
 					}),
 					ach(18639),	-- Collapsed Reality
@@ -90,124 +83,164 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					ach(18554, {	-- Temporal Acquisitions Specialist
 						i(208186),	-- Boffins (TOY!)
 						crit(1, {	-- Titanic Disc
-							-- ["sourceQuests"] = {  },	--
+							-- ["_quests"] = {  },	--
 						}),
 						crit(2, {	-- Antlered Skull
-							["sourceQuests"] = { 76362 },	-- An Antlered Skull
+							["_quests"] = { 76362 },	-- An Antlered Skull
 						}),
 						crit(3, {	-- Azmerlothian Hourglass
-							["sourceQuests"] = { 76379 },	-- A Murloc and a Dragon Walk into a Time Rift...
+							["_quests"] = { 76379 },	-- A Murloc and a Dragon Walk into a Time Rift...
 						}),
 						crit(4, {	-- Mechanized Cog
-							-- ["sourceQuests"] = {  },	--
+							-- ["_quests"] = {  },	--
 						}),
 						crit(5, {	-- Corrupted Ashbringer
-							-- ["sourceQuests"] = {  },	--
+							-- ["_quests"] = {  },	--
 						}),
 						crit(6, {	-- Oil-Soaked Log Book
-							["sourceQuests"] = { 76449 },	-- The Endless Conflict
+							["_quests"] = { 76449 },	-- The Endless Conflict
 						}),
 						crit(7, {	-- Chipped Stone Tablet
-							["sourceQuests"] = { 76453 },	-- A Stony Reception
+							["_quests"] = { 76453 },	-- A Stony Reception
 						}),
 						crit(8, {	-- Map to Suramar
-							-- ["sourceQuests"] = {  },	--
+							-- ["_quests"] = {  },	--
 						}),
 						crit(9, {	-- Boffins
-							-- ["sourceQuests"] = {  },	--
+							-- ["_quests"] = {  },	--
 						}),
 						crit(10, {	-- Watcher's Log
-							-- ["sourceQuests"] = {  },	--
+							-- ["_quests"] = {  },	--
 						}),
 						crit(11, {	-- Blood Soaked Book
-							-- ["sourceQuests"] = {  },	--
+							-- ["_quests"] = {  },	--
 						}),
 						crit(12, {	-- Amber Blade
-							-- ["sourceQuests"] = {  },	--
+							-- ["_quests"] = {  },	--
 						}),
 						crit(13, {	-- Gilded Vase
-							["sourceQuests"] = { 76547 },	-- All That Glitters..
+							["_quests"] = { 76547 },	-- All That Glitters..
 						}),
 						crit(14, {	-- A Fish
-							-- ["sourceQuests"] = {  },	--
+							-- ["_quests"] = {  },	--
 						}),
 					}),
 					ach(18641),	-- To All The Squirrels I've BEEN Before
 					ach(18635),	-- Verified Rifter
 				}),
 				n(BOSSES, {
-					header(HEADERS.AchCriteria, 18637.01, {	-- Azmerloth
-						["crs"] = { 204808 },	-- Fractured Causality / Gil'dan
-						["sym"] = {{"select", "itemID",
-						}},
+					-- testing out organizing with raw NPCs for bosses and nesting under the respective maps where they spawn
+					-- this will allow the achievement criteria to move under the proper bosses instead of being listed separately in lists
+					-- there's 7 boss zones and 14 
+					m(AZQROTH, {
+						n(205307, {	-- Fractured Causality / Fury of N'zoth
+							["sym"] = {{"select", "itemID",
+								206770,	-- Consuming Claws
+								206776,	-- Heretical Gavel
+								206765,	-- Its Focused Gaze
+								206799,	-- Pauldrons of the Fire Lord
+								206768,	-- Serrated Parasite
+								206792,	-- Subjugator's Shield
+								206769,	-- Unknown Horror's Arm
+							}},
+						}),
+						o(404314,{	-- Chipped Stone Tablet
+							["coord"] = { 45.7, 23.9, AZQROTH },
+							["g"] = {
+								i(206859),	-- Chipped Stone Tablet
+							},
+						}),
 					}),
-					header(HEADERS.AchCriteria, 18637.02, {	-- Ulderoth
-						["crs"] = { 205304 },	-- Fractured Causality / Freya
-						["sym"] = {{"select", "itemID",
-							206794,	-- Hand of Order
-							206795,	-- Titan Watcher's Shortblade
-							206782,	-- Titanic Hourglass
-							206788,	-- Utopian Tabard
-							206798,	-- Valhalas Heartstriker
-							206767,	-- Valhalas Peacekeeper
-						}},
+					m(AZEWRATH, {
+						n(205306, {	-- Fractured Causality / Illidan
+							["sym"] = {{"select", "itemID",
+								206766,	-- Jagged Treason
+								206790,	-- Fel-Ridden Divider
+								206781,	-- Demonic Bone-Crusher
+								206791,	-- Branded Greatmaul
+								206764,	-- Fel-Infused Polearm
+								206801,	-- Inferna Rod
+								206789,	-- Heart-Slicer
+							}},
+							["g"] = {
+								i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
+								i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
+							},
+						}),
+						o(403786,{	-- Antlered Skull
+							["coord"] = { 75.1, 41.9, AZEWRATH },
+							["g"] = {
+								i(206578),	-- An Antlered Skull
+							},
+						}),
 					}),
-					header(HEADERS.AchCriteria, 18637.03, {	-- Azmourne
-						["crs"] = { 205305 },	-- Fractured Causality / The Lich King
-						["sym"] = {{"select", "itemID",
-							206784,	-- Blighted Greatbow
-							206783,	-- Bonegale Greataxe
-							206803,	-- Cursed Blade of the Scourge
-							206797,	-- Frostspire
-							206778,	-- Northern Ballista
-							206802,	-- Plague-Touched Stave
-							206793,	-- Upraised Headstone
-						}}
+					m(AZMOURNE, {
+						n(205305, {	-- Fractured Causality / The Lich King
+							["sym"] = {{"select", "itemID",
+								206784,	-- Blighted Greatbow
+								206783,	-- Bonegale Greataxe
+								206803,	-- Cursed Blade of the Scourge
+								206797,	-- Frostspire
+								206778,	-- Northern Ballista
+								206802,	-- Plague-Touched Stave
+								206793,	-- Upraised Headstone
+							}}
+						}),
+						--o(xx,{	-- xx
+						--	["coord"] = { 40.1, 39.7, AZMOURNE },
+						--	["g"] = {
+								i(207003),	-- Gilded Vase
+						--	},
+						--}),
 					}),
-					header(HEADERS.AchCriteria, 18637.04, {	-- Azewrath
-						["crs"] = { 205306 },	-- Fractured Causality / Illidan
-						["sym"] = {{"select", "itemID",
-							206766,	-- Jagged Treason
-							206790,	-- Fel-Ridden Divider
-							206781,	-- Demonic Bone-Crusher
-							206791,	-- Branded Greatmaul
-							206764,	-- Fel-Infused Polearm
-							206801,	-- Inferna Rod
-							206789,	-- Heart-Slicer
-						}},
-						["g"] = {
-							i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
-							i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
-						},
+					m(AZMERLOTH, {
+						n(204808, {	-- Fractured Causality / Gil'dan
+							-- ["sym"] = {{"select", "itemID",
+							-- }},
+						}),
+						-- o(OBJECT, {
+						-- }),
 					}),
-					header(HEADERS.AchCriteria, 18637.05, {	-- Azq'roth
-						["crs"] = { 205307 },	-- Fractured Causality / Fury of N'zoth
-						["sym"] = {{"select", "itemID",
-							206770,	-- Consuming Claws
-							206776,	-- Heretical Gavel
-							206765,	-- Its Focused Gaze
-							206799,	-- Pauldrons of the Fire Lord
-							206768,	-- Serrated Parasite
-							206792,	-- Subjugator's Shield
-							206769,	-- Unknown Horror's Arm
-						}},
+					m(ULDEROTH, {
+						n(205304, {	-- Fractured Causality / Freya
+							["sym"] = {{"select", "itemID",
+								206794,	-- Hand of Order
+								206795,	-- Titan Watcher's Shortblade
+								206782,	-- Titanic Hourglass
+								206788,	-- Utopian Tabard
+								206798,	-- Valhalas Heartstriker
+								206767,	-- Valhalas Peacekeeper
+							}},
+						}),
+						-- o(OBJECT, {
+						-- }),
 					}),
-					header(HEADERS.AchCriteria, 18637.06, {	-- The Warlands
-						["crs"] = { 205308 },	-- Fractured Causality / Varian Wrynn
-						["sym"] = {{"select", "itemID",
-						}},
+					m(AZEROTH, {
+						n(205309, {	-- Fractured Causality / Overload Mechagon
+							["sym"] = {{"select", "itemID",
+								206804,	-- Clockwork Mallet
+								206785,	-- Defect Retirement Tool
+								206796,	-- Energetic Power Knife
+								206777,	-- Energy Projection Regulator
+								206807,	-- Order-Powered Mechblade
+								206780,	-- Overclocked Hand Cannon
+								206779,	-- Steel-Lined Locking System
+							}},
+						}),
+						-- o(OBJECT, {
+						-- }),
 					}),
-					header(HEADERS.AchCriteria, 18637.07, {	-- A.Z.E.R.O.T.H
-						["crs"] = { 205309 },	-- Fractured Causality / Overload Mechagon
-						["sym"] = {{"select", "itemID",
-							206804,	-- Clockwork Mallet
-							206785,	-- Defect Retirement Tool
-							206796,	-- Energetic Power Knife
-							206777,	-- Energy Projection Regulator
-							206807,	-- Order-Powered Mechblade
-							206780,	-- Overclocked Hand Cannon
-							206779,	-- Steel-Lined Locking System
-						}},
+					m(THE_WARLANDS, {
+						n(205308, {	-- Fractured Causality / Varian Wrynn
+							-- ["sym"] = {{"select", "itemID",
+							-- }},
+						}),
+						o(404242,{	-- Oil Soaked Book
+							["coord"] = { 12.0, 30.9, THE_WARLANDS },
+							["g"] = {
+								i(206749),	-- Oil-Soaked Log Book
+							},
+						}),
 					}),
 				}),
 				n(FACTIONS, {
@@ -250,7 +283,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "i", 206749 },	-- Oil-Soaked Log Book
 						["coord"] = { 12.0, 30.9, THE_WARLANDS },
 					}),
-
 					q(77236, {	-- When Time Needs Mending
 						["provider"] = { "n", 204450 },	-- Soridormi
 						["coord"] = { 51.1, 57.1, THALDRASZUS },
@@ -293,6 +325,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 				}),
+				-- n(TREASURES, {
+				-- }),
 				n(VENDORS, {
 					n(208338, {	-- Baron Silver <Azmourne Vendor>
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
@@ -928,32 +962,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 50 }},
 								}),
 							})),
-						},
-					}),
-				}),
-				n(TREASURES, {
-					o(403786,{	-- Antlered Skull
-					 	["coord"] = { 75.1, 41.9, AZEWRATH },
-					 	["g"] = {
-							i(206578),	-- An Antlered Skull
-					 	},
-					}),
-					o(404314,{	-- Chipped Stone Tabled
-					 	["coord"] = { 45.7, 23.9, AZQROTH },
-					 	["g"] = {
-							i(206859),	-- Chipped Stone Tabled
-					 	},
-					}),
-					--o(xx,{	-- xx
-					--	["coord"] = { 40.1, 39.7, AZMOURNE },
-					--	["g"] = {
-						i(207003),	-- Gilded Vase
-					--	},
-					--}),
-					o(404242,{	-- Oil Soaked Book
-						["coord"] = { 12.0, 30.9, THE_WARLANDS },
-						["g"] = {
-							i(206749),	-- Oil-Soaked Log Book
 						},
 					}),
 				}),
