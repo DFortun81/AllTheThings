@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- ["_quests"] = {  },	--
 						}),
 						crit(5, {	-- Corrupted Ashbringer
-							-- ["_quests"] = {  },	--
+							["_quests"] = { 76406 },	-- The Sins of the Ashbringer
 						}),
 						crit(6, {	-- Oil-Soaked Log Book
 							["_quests"] = { 76449 },	-- The Endless Conflict
@@ -282,6 +282,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76449, {	-- The Endless Conflict
 						["provider"] = { "i", 206749 },	-- Oil-Soaked Log Book
 						["coord"] = { 12.0, 30.9, THE_WARLANDS },
+					}),
+					q(76406, {	-- The Sins of the Ashbringer
+						["provider"] = { "i", 206638 },	-- Azmourne's Corrupted Ashbringer
+						["coord"] = { 39.4, 58.4, AZMOURNE },
 					}),
 					q(76351, {	-- Titanic Beasts
 						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc
