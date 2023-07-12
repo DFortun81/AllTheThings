@@ -285,7 +285,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					q(76351, {	-- Titanic Beasts
 						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc
-						--TODO: ["coord"] = { ???, ???, ??? },
+						["coord"] = { 55, 57.5, 2199 },
 					}),
 					q(77236, {	-- When Time Needs Mending
 						["provider"] = { "n", 204450 },	-- Soridormi
@@ -980,15 +980,15 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(76983),
 	q(76984),
 	q(76985),
-	q(76986),
+	q(76986),	-- epic bag stage / reported in during this stage
 
 	q(76618),	-- after Azewrath finished
 	q(76607),	-- after Azmourne finished
 	q(76614),	-- after Ulderoth finished
-	q(76699),	-- after A.Z.E.R.O.T.H finished / first time finished rift / Box of Tampered Reality (green bag)?
+	q(76699),	-- after A.Z.E.R.O.T.H finished / Box of Tampered Reality (green bag)?
 	q(77680),	-- picked up 'When Time Needs Mending' (questID 77236); after questID 77679?
 
-	q(77836),	-- killing Illidan (205306) in 'Azewrath'
+	q(77836),	-- 1st weekly rift (some bonus roll?) / killing Illidan (205306) in 'Azewrath' / killed Fury of N'zoth in Azq'roth
 
 	q(76702),	-- After buying 'Titanic Hourglass'
 }));

@@ -632,7 +632,6 @@ root(ROOTS.Unsorted, {
 			i(206370),	-- Blood of Innocents
 			i(206371),	-- Viewing Room Key
 			i(206474),	-- Smelly Cheese
-			i(206564),	-- Time Displaced Titanic Disc
 			i(206568),	-- Dented Raider's Helmet
 			i(206569),	-- Dented Raider's Spaulders
 			i(206570),	-- Dented Raider's Chestpiece
@@ -652,7 +651,6 @@ root(ROOTS.Unsorted, {
 			i(206164),	-- Weak Resonating Vestigial
 			i(206165),	-- Major Resonating Vestigial
 			i(206166),	-- Strong Resonating Vestigial
-			i(206564),	-- Time-Displaced Titanic Disc
 			i(206957),	-- Boffins
 			i(206962),	-- Watcher's Log
 			i(206984),	-- Blood-Soaked Book
@@ -681,9 +679,6 @@ root(ROOTS.Unsorted, {
 			i(207102),	-- TESTING ITEM DELETE ME
 			i(205199),	-- Slime Sheathed Shell
 			i(206638),	-- Azmourne's Corrupted Ashbringer
-			i(207582),	-- Box of Tampered Reality
-			i(207583),	-- Box of Collapsed Reality
-			i(207584),	-- Box of Volatile Reality
 			i(207594),	-- Looter's Purse
 			i(207956),	-- Thunderspine Nest
 			i(208006),	-- Greater Paracausal Chest
