@@ -716,7 +716,6 @@ root(ROOTS.Unsorted, {
 			i(208227),	-- Mysterious Letter
 			i(208390),	-- Bronze Archive Stone
 			i(208400),	-- Silks of the Unnamed Cult
-			i(208415),	-- Stasis Sand
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
 			i(208448),	-- Infinitea
 			i(208449),	-- Melly's Metronographer+++

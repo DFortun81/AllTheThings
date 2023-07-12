@@ -61,6 +61,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["sourceQuests"] = { 76145 },	-- Who's That Chromie?
 					["provider"] = { "n", 205710 },	-- Chromie
 					["coord"] = { 62.2, 83.2, THALDRASZUS },
+					["g"] = {
+						i(208415),	-- Stasis Sand (TOY!)
+					},
 				}),
 			}),
 			d(MYTHIC_DUNGEON, {

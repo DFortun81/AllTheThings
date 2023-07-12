@@ -984,7 +984,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(76983),
 	q(76984),
 	q(76985),
-	q(76986),	-- epic bag stage / reported in during this stage
+	q(76986),	-- reported in during epic bag stage for 1st rift (didn't pop 2nd time)
 
 	q(76618),	-- after Azewrath finished
 	q(76607),	-- after Azmourne finished
