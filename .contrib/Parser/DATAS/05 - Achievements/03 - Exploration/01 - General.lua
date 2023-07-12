@@ -182,6 +182,58 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(18368, {	-- Memory of Scholomance
 			["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME, WESTERN_PLAGUELANDS },
+			["timeline"] = { "added 10.1.5." },
+			["description"] = "Its recommened to activate the Debug-Mode for the Allthethings to properly see every step & description.\n\nTo start unlocking old Scholomance, you must first do a heroic run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.\n\nAt this point, you must use the Krastinov's Bag of Horrors toy on top of the location where you looted Eva's Femur. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
+			["groups"] = {
+				q(76249, {	--	Memory of Scholomance
+					["cost"] = { { "i", 206346, 1 } },	-- Eva's Journal
+				}),
+				i(206346, {	-- Eva's Journal
+					["description"] = "Eva's Journal: Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeable brighter than other books in the shelf.",
+					["groups"] = {
+						i(206358, {	-- Imported Candle -- Candle #1
+							["description"] = "The Road Ahead: Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor. Trade it with Artist Renfray on a house on the outer portion of Caer Darrow (not the Blacksmith) for Imported Candle.\n\nThe Eastern Plaguelands coordinates are for 'The Road Ahead' item & the Western Plaguelands coordinates are for Vendor to trade.",
+							["cost"] = { { "i", 206363, 1 } },	-- The Road Ahead
+							["coords"] = { 
+								{ 55.0, 64.1, EASTERN_PLAGUELANDS },	-- The Road Ahead
+								{ 65.6, 75.4, WESTERN_PLAGUELANDS },	-- Artist Renfray
+							},
+						}),
+						i(206355, {	-- Tobacco-Filled Candle -- Candle #2
+							["description"] = "Undelivered Shipment of Smokes: Located in live Stratholme, near Ezra Grimm's tobacco place (enter the instance, take a left and another left). By a cart next to where Ezra Grimm spawns. Trade it with Rory by the docks outside Caer Darrow for Tobacco-Filled Candle.\n\nThe Western Plaguelands coordinates are for Vendor to trade.",
+							["cost"] = { { "i", 206360, 1 } },	-- Undelivered Shipment of Smokes
+							["coords"] = { 
+								{ 63.4, 75.8, WESTERN_PLAGUELANDS },	-- Rory
+							},
+						}),
+						i(206357, {	-- Authentic Andorhal Candle -- Candle #3
+							["description"] = "The Deed to Andorhal: Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns. Trade it with Magistrate Marduke at the top portion of Andorhal, near the entrance to Scholomance, for Authentic Andorhal Candle.\n\nThe far left Western Plaguelands coordinates are for 'The Deed to Andorhal' item & the far right Western Plaguelands coordinates are for Vendor to trade.",
+							["cost"] = { { "i", 206362, 1 } },	-- The Deed to Andorhal
+							["coords"] = { 
+								{ 44.0, 69.2, WESTERN_PLAGUELANDS },	-- The Deed to Andorhal
+								{ 70.4, 74.0, WESTERN_PLAGUELANDS },	-- Authentic Andorhal Candle
+							},
+						}),
+						i(206354, {	-- Stinky Candle -- Candle #4
+							["description"] = "Caer Darrow Fountain Water: Located by the water fountain in Caer Darrow. Trade it with Joseph Dirte on the second level of Caer Darrow, to the left near a wall, for Stinky Candle.\n\nThe northern Western Plaguelands coordinates are for 'Caer Darrow Fountain Water' item & the southern Western Plaguelands coordinates are for Vendor to trade.",
+							["cost"] = { { "i", 206359, 1 } },	-- Caer Darrow Fountain Water
+							["coords"] = { 
+								{ 68.8, 78.9, WESTERN_PLAGUELANDS },	-- Caer Darrow Fountain
+								{ 68.0, 74.8, WESTERN_PLAGUELANDS },	-- Joseph
+							},
+						}),
+						i(206356, {	-- Ghost-Warding Candle -- Candle #5
+							["description"] = "Trampled Doll: Located by a meat wagon in Darrowshire. Trade it with Sammy by the water fountain in Caer Darrow for Ghost-Warding Candle.\n\nThe Eastern Plaguelands coordinates are for 'Trampled Doll' item & the Western Plaguelands coordinates are for Vendor to trade.",
+							["cost"] = { { "i", 206361, 1 } },	-- Trampled Doll
+							["coords"] = { 
+								{ 36.3, 84.8, EASTERN_PLAGUELANDS },	-- Trampled Doll
+								{ 69.2, 78.6, WESTERN_PLAGUELANDS },	-- Sammy
+							},
+						}),
+					},
+				}),
+							
+			},
 			
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(45, {	-- Northrend Explorer [7.0.3] / Explore Northrend
