@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					ach(18554, {	-- Temporal Acquisitions Specialist
 						i(208186),	-- Boffins (TOY!)
 						crit(1, {	-- Titanic Disc
-							-- ["_quests"] = {  },	--
+							["_quests"] = { 76351 },	-- Titanic Beasts
 						}),
 						crit(2, {	-- Antlered Skull
 							["_quests"] = { 76362 },	-- An Antlered Skull
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(BOSSES, {
 					-- testing out organizing with raw NPCs for bosses and nesting under the respective maps where they spawn
 					-- this will allow the achievement criteria to move under the proper bosses instead of being listed separately in lists
-					-- there's 7 boss zones and 14 
+					-- there's 7 boss zones and 14
 					m(AZQROTH, {
 						n(205307, {	-- Fractured Causality / Fury of N'zoth
 							["sym"] = {{"select", "itemID",
@@ -282,6 +282,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76449, {	-- The Endless Conflict
 						["provider"] = { "i", 206749 },	-- Oil-Soaked Log Book
 						["coord"] = { 12.0, 30.9, THE_WARLANDS },
+					}),
+					q(76351, {	-- Titanic Beasts
+						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc
+						--TODO: ["coord"] = { ???, ???, ??? },
 					}),
 					q(77236, {	-- When Time Needs Mending
 						["provider"] = { "n", 204450 },	-- Soridormi
@@ -985,4 +989,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(77680),	-- picked up 'When Time Needs Mending' (questID 77236); after questID 77679?
 
 	q(77836),	-- killing Illidan (205306) in 'Azewrath'
+
+	q(76702),	-- After buying 'Titanic Hourglass'
 }));
