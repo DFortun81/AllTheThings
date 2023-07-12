@@ -3061,5 +3061,6 @@ i(206979, 3601);	-- Posidriss
 -- #if AFTER WRATH
 i(198665, 384796);	-- Pebble's Pebble
 i(200060, 388541);	-- Hoplet
+i(204982, 407786);	-- Glub
 -- #endif
 -- #endif
