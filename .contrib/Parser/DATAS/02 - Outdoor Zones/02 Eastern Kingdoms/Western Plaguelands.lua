@@ -2540,6 +2540,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(11936, {	-- Artist Renfray
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 65.6, 75.4, WESTERN_PLAGUELANDS },
+					["groups"] = {
+						i(206358, {	-- Imported Candle
+							["cost"] = { { "i", 206363, 1 } },	-- The Road Ahead
+						}),
+					},
+				}),
+				n(11316, {	-- Joseph
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 68.0, 74.8, WESTERN_PLAGUELANDS },	-- Joseph
+					["groups"] = {
+						i(206354, {	-- Stinky Candle -- Candle #4
+							["cost"] = { { "i", 206359, 1 } },	-- Caer Darrow Fountain Water
+						}),
+					},
+				}),
 				n(12942, {	-- Leonard Porter <Leatherworking Supplies>
 					["coord"] = { 43.0, 84.3, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -2549,6 +2567,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(15725, {	-- Pattern: Wicked Leather Gauntlets (RECIPE!)
 							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(11286, {	-- Magistrate Marduke
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 70.4, 74.0, WESTERN_PLAGUELANDS },	-- Magis
+					["groups"] = {
+						i(206357, {	-- Authentic Andorhal Candle -- Candle #3
+							["cost"] = { { "i", 206362, 1 } },	-- The Deed to Andorhal
 						}),
 					},
 				}),
@@ -2564,6 +2591,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
 						i(13501),	-- Recipe: Major Mana Potion
 						i(13485),	-- Recipe: Transmute Water to Air
+					},
+				}),
+				n(11285, {	-- Rory
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 63.4, 75.8, WESTERN_PLAGUELANDS },	-- Rory
+					["groups"] = {
+						i(206355, {	-- Tobacco-Filled Candle -- Candle #2
+							["cost"] = { { "i", 206360, 1 } },	-- Undelivered Shipment of Smokes
+						}),
+					},
+				}),
+				n(11283, {	-- Sammy
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 69.2, 78.6, WESTERN_PLAGUELANDS },	-- Sammy
+					["groups"] = {
+						i(206356, {	-- Ghost-Warding Candle -- Candle #5
+							["cost"] = { { "i", 206361, 1 } },	-- Trampled Doll
+						}),
 					},
 				}),
 			}),

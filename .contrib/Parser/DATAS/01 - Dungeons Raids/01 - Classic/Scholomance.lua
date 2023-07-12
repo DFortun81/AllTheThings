@@ -630,6 +630,12 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 	}),
 	-- #if AFTER 10.1.5
 	n(TREASURES, {
+	--	o( , {	-- Eva's Femur 
+			["description"] = "To start unlocking old Scholomance, you must first do a normal run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.",		
+			["groups"] = {
+				i(206364),	-- Eva's Femur 
+			},
+	-- }),
 	--	o( , {	-- Eva's Journal
 			["description"] = "Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeable brighter than other books in the shelf.",		
 			["groups"] = {
@@ -973,6 +979,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			["timeline"] = { "removed 4.0.3" },
 		}),
 		i(14617),	-- Sawbones Shirt
+	}),
+	n(206014, {	-- Eva Sarkhoff
+		["timeline"] = { "added 10.1.5" },
+		["description"] = "Go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room. Use the Krastinov's Bag of Horrors toy to spawn Eva's & then click off the buff so you can talk with Eva. She will give you the Spectral Essence Trinket.",
+		["groups"] = {
+			i(13544),	-- Spectral Essence
+		},
 	}),
 	n(10901, {	-- Lorekeeper Polkelt
 		i(16705, {	-- Dreadmist Wraps

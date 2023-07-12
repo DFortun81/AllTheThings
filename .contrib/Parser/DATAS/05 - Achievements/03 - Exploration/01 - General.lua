@@ -211,7 +211,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 							["cost"] = { { "i", 206362, 1 } },	-- The Deed to Andorhal
 							["coords"] = { 
 								{ 44.0, 69.2, WESTERN_PLAGUELANDS },	-- The Deed to Andorhal
-								{ 70.4, 74.0, WESTERN_PLAGUELANDS },	-- Authentic Andorhal Candle
+								{ 70.4, 74.0, WESTERN_PLAGUELANDS },	-- Magis
 							},
 						}),
 						i(206354, {	-- Stinky Candle -- Candle #4
