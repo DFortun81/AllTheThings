@@ -628,6 +628,16 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			},
 		}),
 	}),
+	-- #if AFTER 10.1.5
+	n(TREASURES, {
+	--	o( , {	-- Eva's Journal
+			["description"] = "Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeable brighter than other books in the shelf.",		
+			["groups"] = {
+				i(206346),	-- Eva's Journal
+			},
+	-- }),
+	}),
+	-- #endif
 	n(ZONE_DROPS, {
 		i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / CLASSIC: Formula: Enchant 2H Weapon - Major Versatility (RECIPE!)
 			-- #if BEFORE 5.0.4

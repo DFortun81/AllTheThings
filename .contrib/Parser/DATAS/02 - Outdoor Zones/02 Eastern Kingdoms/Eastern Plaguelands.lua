@@ -3389,6 +3389,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 				},
 			}),
+			-- #if AFTER 10.1.5
+			n(TREASURES, {
+			--	o( , {	-- The Road Ahead
+					["description"] = "Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor.",
+					["coords"] = { 
+						{ 55.0, 64.1, EASTERN_PLAGUELANDS },	-- The Road Ahead
+					},
+					["groups"] = {
+						i(206363),	-- The Road Ahead
+					},
+			-- }),
+			--	o( , {	-- 
+					["description"] = "Located by a meat wagon in Darrowshire.",
+					["coords"] = { 
+						{ 36.3, 84.8, EASTERN_PLAGUELANDS },	-- Trampled Doll
+					},
+					["groups"] = {
+						i(206361),	-- Trampled Doll
+					},
+			-- }),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(12384, {	-- Agustus the Touched
 					["description"] = "Vendor will not sell to you until you complete his quest.",

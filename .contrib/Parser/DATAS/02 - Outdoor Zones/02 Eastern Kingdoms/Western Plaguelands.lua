@@ -2406,6 +2406,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 			}),
+			-- #if AFTER 10.1.5
+			n(TREASURES, {
+			--	o( , {	-- The Deed to Andorhal
+					["description"] = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
+					["coords"] = { 
+						{ 44.0, 69.2, WESTERN_PLAGUELANDS },	-- The Deed to Andorhal
+					},
+					["groups"] = {
+						i(206362),	-- The Deed to Andorhal
+					},
+			-- }),
+			--	o( , {	-- 
+					["description"] = "Located by the water fountain in Caer Darrow.",
+					["coords"] = { 
+						{ 68.8, 78.9, WESTERN_PLAGUELANDS },	-- Caer Darrow Fountain
+					},
+					["groups"] = {
+						i(206359),	-- Caer Darrow Fountain Water
+					},
+			-- }),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(11056, {	-- Alchemist Arbington
 					["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
