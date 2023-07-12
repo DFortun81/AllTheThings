@@ -57,6 +57,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["provider"] = { "n", 206149 },	-- Chromie
 					["coord"] = { 62.1, 81.5, THALDRASZUS },
 				}),
+				q(76146, {	-- Dawn of the Infinite: Chrono-Lord Deios
+					["sourceQuests"] = { 76145 },	-- Who's That Chromie?
+					["provider"] = { "n", 205710 },	-- Chromie
+					["coord"] = { 62.2, 83.2, THALDRASZUS },
+				}),
 			}),
 			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
@@ -309,11 +314,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- Open World Unconfirmed
 							-- green dragon from oracles egg in sholazar in wotlk
 								-- Raid Unconfirmed
-							--	78919, -- Experiment 12-B	
+							--	78919, -- Experiment 12-B
 							--	71665, -- Flametalon of Alysrazor
 							--	77069, -- Life-Binder's Handmaiden
 							--	45693, -- Mimiron's Head
-							--	77067, -- Reins of the Blazing Drake								
+							--	77067, -- Reins of the Blazing Drake
 							}},
 						}),
 						i(208064, {	-- Quantum Chestpiece
