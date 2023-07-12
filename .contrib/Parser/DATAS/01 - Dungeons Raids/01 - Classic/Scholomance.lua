@@ -781,11 +781,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 		i(13725),	-- Krastinov's Bag of Horrors
 		o(180794, {	-- Journal of Jandice Barov
 			["description"] = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
-			["timeline"] = { "removed 5.0.4" },
 			["groups"] = {
 				{
 					["recipeID"] = 26086,	-- Felcloth Bag
-					["timeline"] = { "removed 5.0.4" },
 					["requireSkill"] = TAILORING,
 				},
 			},

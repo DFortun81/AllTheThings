@@ -136,7 +136,7 @@ profession(TAILORING, {
 				}),
 				{
 					["name"] = "Felcloth Bag",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.1", "added 10.1.5" },
 					["recipeID"] = 26086,
 				},
 				{
