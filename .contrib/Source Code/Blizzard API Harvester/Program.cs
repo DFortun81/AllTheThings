@@ -302,7 +302,7 @@ namespace ATT
                         else if ((int)response.StatusCode == 404)
                         {
                             Console.WriteLine("[" + responseData.Item1.ToString() + "]: NO EXISTS!");
-                            DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, "{\"id\":" + responseData.Item1.ToString() + "}"));
+                            //DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, "{\"id\":" + responseData.Item1.ToString() + "}"));
                         }
                         // forbidden??
                         else if (response.StatusCode == HttpStatusCode.Forbidden)
