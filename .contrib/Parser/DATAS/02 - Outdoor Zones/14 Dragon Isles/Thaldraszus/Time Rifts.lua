@@ -214,7 +214,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					faction(FACTION_SORIDORMI, {
 						["cost"] = {{ "c", SORIDORMIS_RECOGNITION, 42000 }},
 						["g"] = {
-							ach(18615, bubbleDownSelf({ ["minReputation"] = { FACTION_SORIDORMI, 5 } }, {	-- Legend of the Multiverse
+							ach(18615,	-- Legend of the Multiverse
+							bubbleDownSelf({ ["minReputation"] = { FACTION_SORIDORMI, 5 } }, {
 								title(513),	-- <Name> Unparalleled
 							})),
 							-- q(77179)?? HTQ trigger?
@@ -261,6 +262,34 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(207002),	-- Encapsulated Destiny
 								i(207027),	-- Greater Encapsulated Destiny
 							}),
+						},
+					}),
+				}),
+				n(REWARDS, {
+					i(207582, {	-- Box of Tampered Reality
+						["g"] = {
+							currency(PARACAUSAL_FLAKES),
+						},
+					}),
+					i(207584, {	-- Box of Volatile Reality
+						["g"] = {
+							i(207002),	-- Encapsulated Destiny
+							currency(PARACAUSAL_FLAKES),
+						},
+					}),
+					i(207583, {	-- Box of Collapsed Reality
+						["sym"] = {{"select","itemID",
+							-- Mounts appear to be possible drops [https://www.wowhead.com/item=207583/box-of-collapsed-reality#comments:id=5645322]
+							206680,	-- Scourgebound Vanquisher (MOUNT!)
+							206676,	-- Felstorm Dragon (MOUNT!)
+							206679,	-- Perfected Juggernaut (MOUNT!)
+							206678,	-- Sulfur Hound (MOUNT!)
+							206675,	-- Gold-Toed Albatross (MOUNT!)
+							206674,	-- Ravenous Black Gryphon (MOUNT!)
+							206673,	-- White War Wolf (MOUNT!)
+						}},
+						["g"] = {
+							currency(PARACAUSAL_FLAKES),
 						},
 					}),
 				}),
@@ -902,7 +931,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 				}),
-				n(TREAURES, {
+				n(TREASURES, {
 					o(403786,{	-- Antlered Skull
 					 	["coord"] = { 75.1, 41.9, AZEWRATH },
 					 	["g"] = {
@@ -935,12 +964,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	-- Alternates between these two questIDs when completing tasks
+	-- Sequence experienced on live: 85 > 83 > 84 > 86
+	q(76983),
 	q(76984),
 	q(76985),
+	q(76986),
 
 	q(76618),	-- after Azewrath finished
 	q(76607),	-- after Azmourne finished
 	q(76614),	-- after Ulderoth finished
 	q(76699),	-- after A.Z.E.R.O.T.H finished / first time finished rift / Box of Tampered Reality (green bag)?
 	q(77680),	-- picked up 'When Time Needs Mending' (questID 77236); after questID 77679?
+
+	q(77836),	-- killing Illidan (205306) in 'Azewrath'
 }));
