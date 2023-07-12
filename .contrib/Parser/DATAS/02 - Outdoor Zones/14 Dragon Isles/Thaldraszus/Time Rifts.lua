@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["_quests"] = { 76379 },	-- A Murloc and a Dragon Walk into a Time Rift...
 						}),
 						crit(4, {	-- Mechanized Cog
-							-- ["_quests"] = {  },	--
+							["_quests"] = { 76404 },	-- Cogs in a Machine
 						}),
 						crit(5, {	-- Corrupted Ashbringer
 							["_quests"] = { 76406 },	-- The Sins of the Ashbringer
@@ -279,6 +279,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "i", 206578 },	-- An Antlered Skull
 						["coord"] = { 75.1, 41.9, AZEWRATH },
 					}),
+					q(76404, {	-- Cogs in a Machine
+						["provider"] = { "i", 206602 },	-- Mechanical Cog
+						["coord"] = { 57.7, 64.2, AZEROTH },
+					}),
 					q(76449, {	-- The Endless Conflict
 						["provider"] = { "i", 206749 },	-- Oil-Soaked Log Book
 						["coord"] = { 12.0, 30.9, THE_WARLANDS },
@@ -289,7 +293,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					q(76351, {	-- Titanic Beasts
 						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc
-						["coord"] = { 55, 57.5, 2199 },
+						["coord"] = { 55, 57.5, ULDEROTH },
 					}),
 					q(77236, {	-- When Time Needs Mending
 						["provider"] = { "n", 204450 },	-- Soridormi
