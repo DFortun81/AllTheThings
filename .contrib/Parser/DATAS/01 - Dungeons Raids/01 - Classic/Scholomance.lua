@@ -637,7 +637,6 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			-- #endif
 		}),
 		i(16254, {	-- Formula: Enchant Weapon - Lifestealing (RECIPE!)
-			["timeline"] = { "removed 5.0.3" },
 			["cr"] = 10499,	-- Spectral Researcher
 		}),
 		i(15776, {	-- Pattern: Runic Leather Armor (RECIPE!)

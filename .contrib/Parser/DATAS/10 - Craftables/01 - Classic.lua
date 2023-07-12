@@ -857,7 +857,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(38781),	-- Enchant 2H Weapon - Lesser Intellect
 			i(38794),	-- Enchant Weapon - Lesser Striking
 			i(38788),	-- Enchant 2H Weapon - Lesser Versatility / WRATH: Enchant 2H Weapon - Lesser Spirit
-			i(38871, {["timeline"]={"added 3.0.1","removed 4.0.3"}}),	-- Enchant Weapon - Lifestealing
+			i(38871, {["timeline"]={"added 3.0.1","removed 4.0.3", "added 10.1.5" }}),	-- Enchant Weapon - Lifestealing
 			i(38875),	-- Enchant 2H Weapon - Major Intellect
 			i(38874),	-- Enchant 2H Weapon - Major Versatility / WRATH: Enchant 2H Weapon - Major Spirit
 			i(38884),	-- Enchant Weapon - Mighty Intellect
