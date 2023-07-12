@@ -654,8 +654,6 @@ root(ROOTS.Unsorted, {
 			i(206957),	-- Boffins
 			i(206962),	-- Watcher's Log
 			i(206984),	-- Blood-Soaked Book
-			i(206998),	-- Ragged Mantid Sword
-			i(206998),	-- Amber Sword
 			i(207008),	-- A Fish
 			i(207011),	-- Warblades of the Hakkari, Reborn
 			i(207029),	-- Scarlet Zealot's Heater Shield
