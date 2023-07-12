@@ -991,4 +991,5 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(77836),	-- 1st weekly rift (some bonus roll?) / killing Illidan (205306) in 'Azewrath' / killed Fury of N'zoth in Azq'roth
 
 	q(76702),	-- After buying 'Titanic Hourglass'
+	q(76707),	-- Upon getting either 'Ensemble: Haukbert of Discipline' or 'Dilated Time Capsule'
 }));
