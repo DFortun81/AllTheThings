@@ -1161,7 +1161,7 @@ i(204262);	-- Holoviewer: The Timeless One
 i(204687);	-- Obsidian Battle Horn
 i(202283);	-- Reading Glasses
 i(199900);	-- Secondhand Survey Tools
-i(203734);	-- Snow Blanket
+-- i(203734);	-- Snow Blanket [Not currently a Toy because Blizzard]
 i(203852);	-- Spore-Bound Essence
 
 ------------------
