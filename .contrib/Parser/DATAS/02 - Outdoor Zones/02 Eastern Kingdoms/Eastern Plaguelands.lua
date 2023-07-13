@@ -3122,7 +3122,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				-- #if BEFORE 4.0.3
-				i(12843, {	-- Corruptor's Scourgestone
+				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "deleted 4.0.3" },
 				}),
@@ -3389,28 +3389,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 				},
 			}),
-			-- #if AFTER 10.1.5
-			n(TREASURES, {
-			--	o( , {	-- The Road Ahead
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				o(403536, {	-- The Road Ahead
 					["description"] = "Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor.",
-					["coords"] = { 
-						{ 55.0, 64.1, EASTERN_PLAGUELANDS },	-- The Road Ahead
-					},
+					["sourceQuests"] = { 76250 },	-- Spectral Essence
+					["coord"] = { 55.0, 64.1, EASTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206363),	-- The Road Ahead
 					},
-			-- }),
-			--	o( , {	-- 
+				}),
+				o(403534, {	-- Trampled Doll
 					["description"] = "Located by a meat wagon in Darrowshire.",
-					["coords"] = { 
-						{ 36.3, 84.8, EASTERN_PLAGUELANDS },	-- Trampled Doll
-					},
+					["sourceQuests"] = { 76250 },	-- Spectral Essence
+					["coord"] = { 35.7, 84.7, EASTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206361),	-- Trampled Doll
 					},
-			-- }),
-			}),
-			-- #endif
+				}),
+			})),
 			n(VENDORS, {
 				n(12384, {	-- Agustus the Touched
 					["description"] = "Vendor will not sell to you until you complete his quest.",
@@ -3522,7 +3518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 							["classes"] = { PRIEST },
 						}),
-						
+
 						-- 10.1.5 Naxx Items
 						i(206584, {	-- Archived Crafting Techniques
 							["timeline"] = { "added 10.1.5" },
@@ -3672,11 +3668,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if BEFORE 4.0.3
-				i(12841, {	-- Invader's Scourgestone
+				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "removed 4.0.3" },
 				}),
-				i(12840, {	-- Minion's Scourgestone
+				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "removed 4.0.3" },
 				}),

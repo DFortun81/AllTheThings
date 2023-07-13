@@ -2235,7 +2235,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				-- #if BEFORE 4.0.3
-				i(12843, {	-- Corruptor's Scourgestone
+				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "deleted 4.0.3" },
 				}),
@@ -2406,28 +2406,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 			}),
-			-- #if AFTER 10.1.5
-			n(TREASURES, {
-			--	o( , {	-- The Deed to Andorhal
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				o(403535, {	-- The Deed to Andorhal
 					["description"] = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
-					["coords"] = { 
-						{ 44.0, 69.2, WESTERN_PLAGUELANDS },	-- The Deed to Andorhal
-					},
+					["sourceQuests"] = { 76250 },	-- Spectral Essence
+					["coord"] = { 43.6, 69.3, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206362),	-- The Deed to Andorhal
 					},
-			-- }),
-			--	o( , {	-- 
+				}),
+				o(403532, {	-- Bucket of Fountain Water
 					["description"] = "Located by the water fountain in Caer Darrow.",
-					["coords"] = { 
-						{ 68.8, 78.9, WESTERN_PLAGUELANDS },	-- Caer Darrow Fountain
-					},
+					["sourceQuests"] = { 76250 },	-- Spectral Essence
+					["coord"] = { 68.8, 78.9, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206359),	-- Caer Darrow Fountain Water
 					},
-			-- }),
-			}),
-			-- #endif
+				}),
+			})),
 			n(VENDORS, {
 				n(11056, {	-- Alchemist Arbington
 					["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
@@ -2505,7 +2501,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire
-						
+
 						-- 10.1.5 Naxx Items
 						i(206584, {	-- Archived Crafting Techniques
 							["timeline"] = { "added 10.1.5" },
@@ -2542,19 +2538,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(11936, {	-- Artist Renfray
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
-					["coord"] = { 65.6, 75.4, WESTERN_PLAGUELANDS },
+					["coord"] = { 65.8, 75.4, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206358, {	-- Imported Candle
-							["cost"] = { { "i", 206363, 1 } },	-- The Road Ahead
+							["cost"] = {{ "i", 206363, 1 }},	-- The Road Ahead
 						}),
 					},
 				}),
-				n(11316, {	-- Joseph
+				n(11316, {	-- Joseph Dirte
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
-					["coord"] = { 68.0, 74.8, WESTERN_PLAGUELANDS },	-- Joseph
+					["coord"] = { 68.0, 74.8, WESTERN_PLAGUELANDS },
 					["groups"] = {
-						i(206354, {	-- Stinky Candle -- Candle #4
-							["cost"] = { { "i", 206359, 1 } },	-- Caer Darrow Fountain Water
+						i(206354, {	-- Stinky Candle
+							["cost"] = {{ "i", 206359, 1 }},	-- Caer Darrow Fountain Water
 						}),
 					},
 				}),
@@ -2572,10 +2568,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(11286, {	-- Magistrate Marduke
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
-					["coord"] = { 70.4, 74.0, WESTERN_PLAGUELANDS },	-- Magis
+					["coord"] = { 70.5, 74.0, WESTERN_PLAGUELANDS },
 					["groups"] = {
-						i(206357, {	-- Authentic Andorhal Candle -- Candle #3
-							["cost"] = { { "i", 206362, 1 } },	-- The Deed to Andorhal
+						i(206357, {	-- Authentic Andorhal Candle
+							["cost"] = {{ "i", 206362, 1 }},	-- The Deed to Andorhal
 						}),
 					},
 				}),
@@ -2595,19 +2591,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(11285, {	-- Rory
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
-					["coord"] = { 63.4, 75.8, WESTERN_PLAGUELANDS },	-- Rory
+					["coord"] = { 63.4, 75.6, WESTERN_PLAGUELANDS },
 					["groups"] = {
-						i(206355, {	-- Tobacco-Filled Candle -- Candle #2
-							["cost"] = { { "i", 206360, 1 } },	-- Undelivered Shipment of Smokes
+						i(206355, {	-- Tobacco-Filled Candle
+							["cost"] = {{ "i", 206360, 1 }},	-- Undelivered Shipment of Smokes
 						}),
 					},
 				}),
 				n(11283, {	-- Sammy
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
-					["coord"] = { 69.2, 78.6, WESTERN_PLAGUELANDS },	-- Sammy
+					["coord"] = { 69.1, 78.7, WESTERN_PLAGUELANDS },
 					["groups"] = {
-						i(206356, {	-- Ghost-Warding Candle -- Candle #5
-							["cost"] = { { "i", 206361, 1 } },	-- Trampled Doll
+						i(206356, {	-- Ghost-Warding Candle
+							["cost"] = {{ "i", 206361, 1 }},	-- Trampled Doll
 						}),
 					},
 				}),
@@ -2695,11 +2691,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(16252, {	-- Formula: Enchant Weapon - Crusader
 					["cr"] = 4494,	-- Scarlet Spellbinder
 				}),
-				i(12841, {	-- Invader's Scourgestone
+				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "removed 4.0.3" },
 				}),
-				i(12840, {	-- Minion's Scourgestone
+				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "removed 4.0.3" },
 				}),

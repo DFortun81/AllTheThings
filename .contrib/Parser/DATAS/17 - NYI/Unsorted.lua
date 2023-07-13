@@ -243,9 +243,6 @@ root(ROOTS.Unsorted, {
 				i(206585),	-- Valiance (MOUNT!)
 			}),
 			header(HEADERS.LFGDungeon, 227, {	-- Naxxramas
-				i(12840),	-- Inert Minion's Scourgestone
-				i(12841),	-- Inert Invader's Scourgestone
-				i(12843),	-- Inert Corruptor's Scourgestone
 				i(206372),	-- Cracked Argent Dawn Commission
 				i(206373),	-- Darkmaster's Scourgestone
 				i(206374),	-- Invader's Scourgestone
@@ -315,21 +312,6 @@ root(ROOTS.Unsorted, {
 				i(206642),	-- Desecrated Plate Belt
 				i(206643),	-- Desecrated Plate Leggings
 				i(206644),	-- Desecrated Plate Boots
-			}),
-			header(HEADERS.LFGDungeon, 472, {	-- Scholomance
-				i(206346),	-- Eva's Journal
-				i(206354),	-- Stinky Candle
-				i(206355),	-- Tobacco-Filled Candle
-				i(206356),	-- Ghost-Warding Candle
-				i(206357),	-- Authentic Andorhal Candle
-				i(206358),	-- Imported Candle
-				i(206359),	-- Caer Darrow Fountain Water
-				i(206360),	-- Undelivered Shipment of Smokes
-				i(206361),	-- Trampled Doll
-				i(206362),	-- The Deed to Andorhal
-				i(206363),	-- The Road Ahead
-				i(206364),	-- Eva's Femur
-				i(206365),	-- Inert Spectral Essence
 			}),
 			header(HEADERS.LFGDungeon, 1, {	-- Wailing Caverns
 				i(208016),	-- Deviate Scale Pouch
@@ -629,8 +611,6 @@ root(ROOTS.Unsorted, {
 			i(204983),	-- Primalist Dropbox Key [DNT]
 			i(205146),	-- Weyrnstone
 			i(206022),	-- Anduin's Lucky Hearthstone Card
-			i(206370),	-- Blood of Innocents
-			i(206371),	-- Viewing Room Key
 			i(206474),	-- Smelly Cheese
 			i(206568),	-- Dented Raider's Helmet
 			i(206569),	-- Dented Raider's Spaulders

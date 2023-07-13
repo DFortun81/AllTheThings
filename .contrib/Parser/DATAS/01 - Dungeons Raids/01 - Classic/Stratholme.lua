@@ -480,31 +480,30 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			-- #if AFTER 10.1.5
-			n(TREASURES, {
-			--	o( , {	-- Undelivered Shipment of Smokes
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				o(403533, {	-- Undelivered Shipment of Smokes
 					["description"] = "Located in live Stratholme, near Ezra Grimm's tobacco place (enter the instance, take a left and another left). By a cart next to where Ezra Grimm spawns.",
+					["sourceQuests"] = { 76250 },	-- Spectral Essence
 					["groups"] = {
 						i(206360),	-- Undelivered Shipment of Smokes
 					},
-			-- }),
-			}),
-			-- #endif
+				}),
+			})),
 			n(ZONE_DROPS, {
 				applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
-				i(12843, {	-- Corruptor's Scourgestone
+				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 				}),
-				i(12841, {	-- Invader's Scourgestone
+				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 				}),
-				i(12840, {	-- Minion's Scourgestone
+				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
