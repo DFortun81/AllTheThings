@@ -1027,13 +1027,15 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(76684),	-- after A.Z.E.R.O.T.H finished with 'Encapsulated Destiny' (1st) (loot was itemID 206779 [Steel-Lined Locking System])
 	q(76711),	-- after A.Z.E.R.O.T.H finished with 'Encapsulated Destiny' (2nd) (loot was itemID 208012 [Briarhorn Hatchling])
 	q(76609),	-- after Azmerloth finished with 'Encapsulated Destiny' (3rd) (loot was itemID 206769 [Unknown Horror's Arm])
+	q(76610),	-- after Azmourne finished with 'Encapsulated Destiny' (loot was itemID 206765 [Its Focused Gaze])
 
 	q(77680),	-- picked up 'When Time Needs Mending' (questID 77236); after questID 77679?
 
 	q(77836),	-- 1st weekly rift (some bonus roll?) / killing Illidan (205306) in 'Azewrath' / killed Fury of N'zoth in Azq'roth
 
-	q(76702),	-- After buying 'Titanic Hourglass'
+	q(76702),	-- After buying 'Titanic Hourglass' (itemId 206782)
 	q(76689),	-- after buying 'Upraised Headstone' (itemID 206793)
+	q(76698),	-- After buying 'Valhalas Peacekeeper' (itemId 206767)
 
 	q(76707),	-- Upon getting either 'Ensemble: Haukbert of Discipline' or 'Dilated Time Capsule'
 }));
