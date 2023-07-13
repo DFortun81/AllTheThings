@@ -90,7 +90,7 @@ root(ROOTS.Promotions, {
 			i(203716, {	-- Thundering Banner of the Aspects (TOY!)
 				["description"] = "Break the Meta: DF Season 1\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 1 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2023/signups|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S1, and the Thundering Banner of the Aspects will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on April 18th for US, April 19th for EU & April 20th for KR/TW & lasts for 2 entire resets of your region.",
 				["timeline"] = {
-					ADDED_10_0_7,
+					"added 10.0.7",
 					"removed 10.1.0",	-- Removed again on May 2nd 2023
 				},
 			}),
@@ -106,6 +106,14 @@ root(ROOTS.Promotions, {
 			i(208057, {	-- Smoldering Banner of the Aspects (TOY!)
 				["description"] = "The Great Push returns in Dragonflight Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 30 Jun 2023 and The Proving Grounds are on 5-10 July (US).",
 				-- ["timeline"] = { "added 10.1.5.XXXXX", "removed 10.1.5.99999" },
+			}),
+			mount(397406, {	-- Wonderous Wavewhisker
+				["description"] = "Obtained if you set up a 6-Month WoW Subscription. Promotion valid through January 9, 2024.",
+				["timeline"] = { "added 10.1.0." }, -- "removed 10.2.5.49570" },
+			}),
+			i(32566, {	-- Picnic Basket (TOY!)
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between July 11th, 10:00 a.m. & July 18th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "added 10.1.5." }, -- "removed 10.1.0.49570" },
 			}),
 		},
 	}),

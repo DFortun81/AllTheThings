@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(JEWELCRAFTING, {
 			n(CRAFTABLES, {
@@ -78,8 +78,13 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(194597),	-- Design: Zen Mystic Sapphire (RECIPE!)
 						i(194615),	-- Design: Zen Neltharite (RECIPE!)
 					})),
+
+					-- 10.0.7
+					tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+						i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
+					})),
 				}),
 			}),
 		}),
 	}),
-}));
+});

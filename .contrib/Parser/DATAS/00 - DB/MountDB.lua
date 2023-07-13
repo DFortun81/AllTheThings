@@ -1609,6 +1609,7 @@ i(205155, 408313);	-- Big Slick in the City
 i(205209, 408653);	-- Boulder Hauler
 i(205204, 408651);	-- Cataloged Shalewing
 i(205203, 408647);	-- Cobalt Shalewing
+i(206156, 412088);	-- Grotto Netherwing Drake
 i(205197, 408627);	-- Igneous Shalewing
 i(204798, 406637);	-- Inferno Armoredon
 i(205207, 408655);	-- Morsel Sniffer
@@ -1622,6 +1623,8 @@ i(206162, 407555);	-- Tarecgosa's Visage
 i(205246, 409034);	-- Vicious War Snail [A]
 i(205245, 409032);	-- Vicious War Snail [H]
 i(204361, 368893);	-- Winding Slitherdrake
+i(0, 397406);		-- Wonderous Wavewhisker
+
 -- NYI
 i(206027, 411565);	-- Felcrystal Scorpion
 i(205206, 408648);	-- Shalewing, Fire [PH]

@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(FOLLOWERS, {
 		tier(WOD_TIER, {
 			-- 6.0.1
@@ -163,4 +163,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

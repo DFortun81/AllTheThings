@@ -3844,8 +3844,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
 							["timeline"] = { "added 7.0.3.22290" },
 							["groups"] = {
-								i(136803, {	-- Dirty Tricks, Vol 1: Detection
-									--["spellID"] = 210108,	-- Detection
+								i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(136927, {	-- Scarlet Confessional Book (TOY!)
@@ -3854,9 +3853,8 @@ root(ROOTS.Zones, {
 								i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
-								i(136972, {	-- Tome of Hex: Cockroach
+								i(136972, {	-- Tome of Hex: Cockroach (CI!)
 									["timeline"] = { "added 7.0.3.22248" },
-									["f"] = RECIPES,
 								}),
 							},
 						}),
@@ -5670,49 +5668,49 @@ root(ROOTS.Zones, {
 							i(44128, {	-- Arctic Fur
 								["cost"] = { { "i", 38425, 10 }, },	-- 10x Heavy Borean Leather
 							}),
-							i(44553, {	-- Pattern: Earthgiving Boots
+							i(44553, {	-- Pattern: Earthgiving Boots (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44552, {	-- Pattern: Earthgiving Legguards
+							i(44552, {	-- Pattern: Earthgiving Legguards (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44516, {	-- Pattern: Eviscerator's Bindings
+							i(44516, {	-- Pattern: Eviscerator's Bindings (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44515, {	-- Pattern: Eviscerator's Chestguard
+							i(44515, {	-- Pattern: Eviscerator's Chestguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44513, {	-- Pattern: Eviscerator's Facemask
+							i(44513, {	-- Pattern: Eviscerator's Facemask (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44517, {	-- Pattern: Eviscerator's Gauntlets
+							i(44517, {	-- Pattern: Eviscerator's Gauntlets (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44519, {	-- Pattern: Eviscerator's Legguards
+							i(44519, {	-- Pattern: Eviscerator's Legguards (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44514, {	-- Pattern: Eviscerator's Shoulderpads
+							i(44514, {	-- Pattern: Eviscerator's Shoulderpads (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44520, {	-- Pattern: Eviscerator's Treads
+							i(44520, {	-- Pattern: Eviscerator's Treads (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44518, {	-- Pattern: Eviscerator's Waistguard
+							i(44518, {	-- Pattern: Eviscerator's Waistguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44547, {	-- Pattern: Giantmaim Bracers
+							i(44547, {	-- Pattern: Giantmaim Bracers (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44546, {	-- Pattern: Giantmaim Legguards
+							i(44546, {	-- Pattern: Giantmaim Legguards (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44588, {	-- Pattern: Icy Scale Belt
+							i(44588, {	-- Pattern: Icy Scale Belt (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44589, {	-- Pattern: Icy Scale Boots
+							i(44589, {	-- Pattern: Icy Scale Boots (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44587, {	-- Pattern: Icy Scale Chestguard
+							i(44587, {	-- Pattern: Icy Scale Chestguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
 							i(44526, {	-- Pattern: Overcast Belt
@@ -5739,79 +5737,79 @@ root(ROOTS.Zones, {
 							i(44522, {	-- Pattern: Overcast Spaulders
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44586, {	-- Pattern: Polar Boots
+							i(44586, {	-- Pattern: Polar Boots (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44585, {	-- Pattern: Polar Cord
+							i(44585, {	-- Pattern: Polar Cord (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44584, {	-- Pattern: Polar Vest
+							i(44584, {	-- Pattern: Polar Vest (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44548, {	-- Pattern: Revenant's Breastplate
+							i(44548, {	-- Pattern: Revenant's Breastplate (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44549, {	-- Pattern: Revenant's Treads
+							i(44549, {	-- Pattern: Revenant's Treads (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44543, {	-- Pattern: Stormhide Belt
+							i(44543, {	-- Pattern: Stormhide Belt (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44538, {	-- Pattern: Stormhide Crown
+							i(44538, {	-- Pattern: Stormhide Crown (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44542, {	-- Pattern: Stormhide Grips
+							i(44542, {	-- Pattern: Stormhide Grips (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44540, {	-- Pattern: Stormhide Hauberk
+							i(44540, {	-- Pattern: Stormhide Hauberk (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44544, {	-- Pattern: Stormhide Legguards
+							i(44544, {	-- Pattern: Stormhide Legguards (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44539, {	-- Pattern: Stormhide Shoulders
+							i(44539, {	-- Pattern: Stormhide Shoulders (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44545, {	-- Pattern: Stormhide Stompers
+							i(44545, {	-- Pattern: Stormhide Stompers (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44541, {	-- Pattern: Stormhide Wristguards
+							i(44541, {	-- Pattern: Stormhide Wristguards (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44535, {	-- Pattern: Swiftarrow Belt
+							i(44535, {	-- Pattern: Swiftarrow Belt (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44537, {	-- Pattern: Swiftarrow Boots
+							i(44537, {	-- Pattern: Swiftarrow Boots (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44533, {	-- Pattern: Swiftarrow Bracers
+							i(44533, {	-- Pattern: Swiftarrow Bracers (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44534, {	-- Pattern: Swiftarrow Gauntlets
+							i(44534, {	-- Pattern: Swiftarrow Gauntlets (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44532, {	-- Pattern: Swiftarrow Hauberk
+							i(44532, {	-- Pattern: Swiftarrow Hauberk (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44530, {	-- Pattern: Swiftarrow Helm
+							i(44530, {	-- Pattern: Swiftarrow Helm (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44536, {	-- Pattern: Swiftarrow Leggings
+							i(44536, {	-- Pattern: Swiftarrow Leggings (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44531, {	-- Pattern: Swiftarrow Shoulderguards
+							i(44531, {	-- Pattern: Swiftarrow Shoulderguards (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44551, {	-- Pattern: Trollwoven Girdle
+							i(44551, {	-- Pattern: Trollwoven Girdle (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44550, {	-- Pattern: Trollwoven Spaulders
+							i(44550, {	-- Pattern: Trollwoven Spaulders (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44932, {	-- Pattern: Windripper Boots
+							i(44932, {	-- Pattern: Windripper Boots (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
-							i(44933, {	-- Pattern: Windripper Leggings
+							i(44933, {	-- Pattern: Windripper Leggings (RECIPE!)
 								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
 							}),
 						},
@@ -5961,9 +5959,8 @@ root(ROOTS.Zones, {
 					n(28722, {	-- Bryan Landers <Engineering Supplies>
 						["coord"] = { 39.0, 26.0, NORTHREND_DALARAN },
 						["groups"] = {
-							i(136782, {	-- Fireworks Instruction Manual
-								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 127933,	-- Fireworks
+							i(136782, {	-- Fireworks Instruction Manual (CI!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
 							i(23817, {	-- Schematic: Titanium Toolbox
 								["isLimited"] = true,
@@ -6139,54 +6136,39 @@ root(ROOTS.Zones, {
 					n(28715, {	-- Endora Moorehead
 						["coord"] = { 38.62, 55.57, NORTHREND_DALARAN },
 						["groups"] = {
-							i(82470, {	-- Ancient Tome of Portal: Dalaran
-								["timeline"] = { "added 5.0.1.15464" },
-								["spellID"] = 120146,	-- Ancient Portal: Dalaran
-								["classes"] = { MAGE },
+							i(82470, {	-- Ancient Tome of Portal: Dalaran (CI!)
+								["timeline"] = { ADDED_5_0_4 },
 								["isLimited"] = true,
 							}),
 							i(137294, {	-- Dalaran Initiates' Pin (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 								["classes"] = { MAGE },
 								["isLimited"] = true,
 							}),
 							i(136846, {	-- Familiar Stone (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 								["classes"] = { MAGE },
 							}),
-							i(136797, {	-- Mystical Tome: Arcane Linguist
-								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 210086,	-- Arcane Linguist
-								["classes"] = { MAGE },
+							i(136797, {	-- Mystical Tome: Arcane Linguist (CI!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
-							i(136799, {	-- Mystical Tome: Illusion
-								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 131784,	-- Illusion
-								["classes"] = { MAGE },
+							i(136799, {	-- Mystical Tome: Illusion (CI!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
 							i(167733, {	-- Technique: Glyph of Dalaran Brilliance (RECIPE!)
 								["timeline"] = { "added 8.1.5.29701" },
 								["isLimited"] = true,
 							}),
-							i(44714, {	-- Tome of Dalaran Brilliance
-								["timeline"] = { "removed 7.0.3" },
-								["spellID"] = 61316,	-- Dalaran Brilliance
-								["classes"] = { MAGE },
+							i(44714, {	-- Tome of Dalaran Brilliance (CI!)
+								["timeline"] = { REMOVED_7_0_3 },
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(44602, {	-- Tome of Dalaran Intellect
-								["timeline"] = { "removed 7.0.3" },
-								["spellID"] = 61024,	-- Dalaran Intellect
-								["classes"] = { MAGE },
+							i(44602, {	-- Tome of Dalaran Intellect (CI!)
+								["timeline"] = { REMOVED_7_0_3 },
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(44709, {	-- Tome of Polymorph: Black Cat
-								["spellID"] = 61305,	-- Polymorph
-								["classes"] = { MAGE },
+							i(44709, {	-- Tome of Polymorph: Black Cat (CI!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
 						},
 					}),

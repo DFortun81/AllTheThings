@@ -2299,10 +2299,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 		tier(CATA_TIER, {
 			q(14231),	-- Useless quest record
 		}),
 	}),
-}));
+});

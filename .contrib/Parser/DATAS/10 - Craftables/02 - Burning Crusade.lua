@@ -1244,7 +1244,7 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(JEWELCRAFTING, {
 			tier(TBC_TIER, {
@@ -1264,4 +1264,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

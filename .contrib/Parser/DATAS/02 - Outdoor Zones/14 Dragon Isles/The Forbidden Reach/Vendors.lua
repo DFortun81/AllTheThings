@@ -184,7 +184,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						},
 						["g"] = {
 							i(204029),	-- Prophetic Twilight Stone
-							i(204015),	-- Swirling Mojo Stone
+							i(204015, {	-- Swirling Mojo Stone
+								i(204244),	-- Breathing Mojo Crystal
+								i(204245),	-- Hateful Mojo Crystal
+								i(204239),	-- Shadowy Mojo Crystal
+							}),
 						},
 					}),
 					i(204577, {	-- Condensed Nature Magic
@@ -193,7 +197,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						},
 						["g"] = {
 							i(204001),	-- Echoing Thunder Stone
-							i(204000),	-- Storm Infused Stone
+							i(204000),	-- Storm-Infused Stone
 							i(204020),	-- Wild Spirit Stone
 						},
 					}),

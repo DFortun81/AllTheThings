@@ -120,3 +120,14 @@ i(0, 399038);	-- Spicy Seared Talbuk Steak
 ------------------
 i(204849, 407100);	-- Charitable Cheddar
 i(204847, 407066);	-- Rocks on the Rocks
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+i(0, 412533);	-- Druidic Dreamsalad
+i(0, 412534);	-- Fine Taladorian Cheese Platter
+i(0, 412531);	-- Highly Spiced Haunch
+i(0, 411178);	-- Lemon Silverleaf Tea
+i(0, 412537);	-- Picante Pomfruit Cake
+i(0, 412536);	-- Roquefort-Stuffed Peppers
+i(0, 412535);	-- Venrik's Goat Milk

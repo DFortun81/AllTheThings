@@ -1515,10 +1515,6 @@ root(ROOTS.PVP, {
 						i(84947),	-- Malevolent Gladiator's Waistband of Cruelty
 						i(84959),	-- Malevolent Gladiator's Waistguard of Cruelty
 						i(84946),	-- Malevolent Gladiator's Waistguard of Meditation
-						-- Never
-						un(NEVER_IMPLEMENTED, i(97930)),	-- Malevolent Gladiator's Cord of Accuracy
-						un(NEVER_IMPLEMENTED, i(97840)),	-- Malevolent Gladiator's Cord of Accuracy
-						un(NEVER_IMPLEMENTED, i(97523)),	-- Malevolent Gladiator's Cord of Cruelty
 					}),
 					n(FEET, {
 						-- From Sha of Anger
@@ -1537,10 +1533,6 @@ root(ROOTS.PVP, {
 						i(84816),	-- Malevolent Gladiator's Treads of Meditation
 						i(84822),	-- Malevolent Gladiator's Warboots of Alacrity
 						i(84810),	-- Malevolent Gladiator's Warboots of Cruelty
-						-- Never
-						un(NEVER_IMPLEMENTED, i(97526)),	-- Malevolent Gladiator's Treads of Alacrity
-						un(NEVER_IMPLEMENTED, i(97842)),	-- Malevolent Gladiator's Treads of Cruelty
-						un(NEVER_IMPLEMENTED, i(97932)),	-- Malevolent Gladiator's Treads of Cruelty
 					}),
 					filter(NECK_F, {
 						-- From Sha of Anger
@@ -1551,9 +1543,6 @@ root(ROOTS.PVP, {
 						i(84886),	-- Malevolent Gladiator's Pendant of Alacrity
 						i(84887),	-- Malevolent Gladiator's Pendant of Cruelty
 						i(84888),	-- Malevolent Gladiator's Pendant of Meditation
-						-- Never
-						un(NEVER_IMPLEMENTED, i(97924)),	-- Malevolent Gladiator's Pendant of Cruelty
-						un(NEVER_IMPLEMENTED, i(97834)),	-- Malevolent Gladiator's Pendant of Cruelty
 					}),
 					filter(FINGER_F, {
 						-- From Sha of Anger
@@ -1564,11 +1553,6 @@ root(ROOTS.PVP, {
 						i(84826),	-- Malevolent Gladiator's Ring of Cruelty
 						i(84829),	-- Malevolent Gladiator's Signet of Accuracy
 						i(84828),	-- Malevolent Gladiator's Signet of Cruelty
-						-- Never
-						un(NEVER_IMPLEMENTED, i(97844)),	-- Malevolent Gladiator's Band of Accuracy
-						un(NEVER_IMPLEMENTED, i(97933)),	-- Malevolent Gladiator's Band of Cruelty
-						un(NEVER_IMPLEMENTED, i(97843)),	-- Malevolent Gladiator's Band of Cruelty
-						un(NEVER_IMPLEMENTED, i(97528)),	-- Malevolent Gladiator's Band of Cruelty
 					}),
 					filter(TRINKET_F, {
 						un(REMOVED_FROM_GAME, i(84934)),	-- Malevolent Gladiator's Badge of Conquest
@@ -1586,13 +1570,6 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(84944)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
 						un(REMOVED_FROM_GAME, i(84933)),	-- Malevolent Gladiator's Medallion of Meditation (H)
 						un(REMOVED_FROM_GAME, i(84931)),	-- Malevolent Gladiator's Medallion of Tenacity (H)
-						-- Never
-						un(NEVER_IMPLEMENTED, i(97531)),	-- Malevolent Gladiator's Badge of Dominance
-						un(NEVER_IMPLEMENTED, i(97532)),	-- Malevolent Gladiator's Badge of Dominance
-						un(NEVER_IMPLEMENTED, i(97936)),	-- Malevolent Gladiator's Badge of Dominance
-						un(NEVER_IMPLEMENTED, i(97533)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
-						un(NEVER_IMPLEMENTED, i(97845)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
-						un(NEVER_IMPLEMENTED, i(97935)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
 					}),
 				},
 			}),
@@ -10472,7 +10449,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- The items never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(MOP_TIER, {
 		n(SEASON_MALEVOLENT, {
 			n(WEAPONS, {
@@ -10655,4 +10632,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

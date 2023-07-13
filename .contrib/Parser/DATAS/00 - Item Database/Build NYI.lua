@@ -1,5 +1,5 @@
 -- Build NYI
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	tier(CLASSIC_TIER),
 	tier(TBC_TIER),
 	tier(WOTLK_TIER),
@@ -49,7 +49,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	filter(TITLES),
 	filter(TOYS),			-- completed up to 10.0.7
 	n(WEAPONS),
-}));
+});
 root(ROOTS.HiddenAchievementTriggers, {
 	tier(WOTLK_TIER),
 	tier(CATA_TIER),

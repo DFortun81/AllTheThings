@@ -13,23 +13,7 @@ root(ROOTS.Zones, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				classicAch(1678, {	-- Loremaster of Kalimdor (A)
-					-- #if BEFORE WRATH
-					-- #if AFTER TBC
-					["description"] = "Complete 700 quests in Kalimdor.",
-					-- #else
-					["description"] = "Complete 640 quests in Kalimdor.",
-					-- #endif
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_KALIMDOR_OnUpdate]],
-					-- #if AFTER TBC
-					["rank"] = 700,
-					-- #else
-					["rank"] = 640,
-					-- #endif
-					-- #else
+					-- #if AFTER CATA
 					["sym"] = {{"meta_achievement",
 						4925,	-- Ashenvale Quests (Alliance)
 						4976,	-- Ashenvale Quests (Horde)
@@ -53,30 +37,38 @@ root(ROOTS.Zones, {
 						4939,	-- Un'Goro Crater Quests
 						4940,	-- Winterspring Quests
 					}},
+					-- #else
+					-- #if BEFORE WRATH
+					-- #if AFTER TBC
+					["description"] = "Complete 700 quests in Kalimdor.",
+					["rank"] = 700,
+					-- #else
+					["description"] = "Complete 640 quests in Kalimdor.",
+					["rank"] = 640,
 					-- #endif
-					-- #if BEFORE 4.0.3
+					-- #endif
+					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. KALIMDOR .. [[); end]],
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
 				classicAch(1680, {	-- Loremaster of Kalimdor (H)
+					-- #if BEFORE CATA
 					-- #if BEFORE WRATH
 					-- #if AFTER TBC
 					["description"] = "Complete 685 quests in Kalimdor.",
-					-- #else
-					["description"] = "Complete 625 quests in Kalimdor.",
-					-- #endif
-					-- #endif
-					["timeline"] = { "deleted 4.0.3" },
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_KALIMDOR_OnUpdate]],
-					-- #if AFTER TBC
 					["rank"] = 685,
 					-- #else
+					["description"] = "Complete 625 quests in Kalimdor.",
 					["rank"] = 625,
 					-- #endif
 					-- #endif
+					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. KALIMDOR .. [[); end]],
+					-- #endif
+					["timeline"] = { "deleted 4.0.3" },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

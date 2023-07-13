@@ -52,6 +52,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				72488,	-- The Thaldraszus Advanced Tour
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
+			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 193411 },	-- Celormu
 			["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
 			["timeline"] = { ADDED_10_0_5 },

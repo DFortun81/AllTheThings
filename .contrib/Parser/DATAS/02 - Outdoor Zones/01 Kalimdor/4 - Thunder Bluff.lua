@@ -223,15 +223,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(7130, {	-- Brutal Helm
 							["timeline"] = { "removed 4.0.3" },
-							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
-								if _.Level >= 40 then
-									t.f = ]] .. PLATE .. [[;
-								else
-									t.f = ]] .. MAIL .. [[;
-								end
-							end]],
-							-- #endif
 						}),
 					},
 				}),

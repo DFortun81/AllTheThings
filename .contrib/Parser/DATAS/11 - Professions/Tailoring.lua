@@ -92,7 +92,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Gordok Ogre Suit",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 22813
 				}),
 				{
@@ -136,7 +136,7 @@ profession(TAILORING, {
 				}),
 				{
 					["name"] = "Felcloth Bag",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.1", "added 10.1.5" },
 					["recipeID"] = 26086,
 				},
 				{
@@ -347,7 +347,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Vest",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24091,
 				}),
 				{
@@ -743,7 +743,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Leggings",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24092,
 				}),
 				{
@@ -851,7 +851,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Boots",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24093,
 				}),
 				{
@@ -6021,6 +6021,3 @@ neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
 -- #if AFTER SHADOWLANDS
 
 -- #endif
-
--- Apply the Never Implemented flag to the Never Implemented things.
-bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, nyi_);

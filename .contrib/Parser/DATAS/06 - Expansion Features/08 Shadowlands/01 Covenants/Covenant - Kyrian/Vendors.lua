@@ -869,6 +869,39 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 			}),
 			n(175823, {	-- Forgelite Neptira <Kyrian Armorsmith>
 				["coord"] = { 56.9, 30.9, SANCTUM_OF_BINDING },
+				["sym"] = { { "select", "itemID",
+					-- These items are only purchasable after you complete the covenant campaign.
+					-- Doing the Campaign also rewards all those items, so no need to list 2 sources per item.
+					178155,	-- Selfless Watcher's Warboots
+					177058,	-- Selfless Bearer's Cloak
+					177053,	-- Selfless Bearer's Hands
+					177050,	-- Selfless Bearer's Head
+					177054,	-- Selfless Bearer's Legs
+					177055,	-- Selfless Bearer's Shoulders
+					177056,	-- Selfless Bearer's Waist
+					177057,	-- Selfless Bearer's Wrists
+					174292,	-- Selfless Collector's Gauntlets
+					174295,	-- Selfless Collector's Girdle
+					174297,	-- Selfless Collector's Greatcloak
+					174289,	-- Selfless Collector's GreatHelm
+					174293,	-- Selfless Collector's Legguards
+					174294,	-- Selfless Collector's Spaulders
+					174296,	-- Selfless Collector's Wristguards
+					179946,	-- Selfless Forgelite's Belt
+					179944,	-- Selfless Forgelite's Breeches
+					179948,	-- Selfless Forgelite's Drape
+					179942,	-- Selfless Forgelite's Gloves
+					179943,	-- Selfless Forgelite's Helm
+					179945,	-- Selfless Forgelite's Spaulders
+					179947,	-- Selfless Forgelite's Wristwraps
+					178161,	-- Selfless Watcher's Cloak
+					178156,	-- Selfless Watcher's Gauntlets
+					178159,	-- Selfless Watcher's Girdle
+					178153,	-- Selfless Watcher's Helm
+					178157,	-- Selfless Watcher's Legguards
+					178158,	-- Selfless Watcher's Shoulders
+					178160,	-- Selfless Watcher's Wristwraps
+				}},
 				["g"] = {
 					i(175248, {	-- Selfless Bearer's Blade
 						["cost"] = {
@@ -974,93 +1007,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
-					}),
-					i(178155, {	-- Selfless Watcher's Warboots
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(177058, {	-- Selfless Bearer's Cloak
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(177053, {	-- Selfless Bearer's Hands
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(177050, {	-- Selfless Bearer's Head
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(177054, {	-- Selfless Bearer's Legs
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(177055, {	-- Selfless Bearer's Shoulders
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(177056, {	-- Selfless Bearer's Waist
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(177057, {	-- Selfless Bearer's Wrists
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(174292, {	-- Selfless Collector's Gauntlets
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(174295, {	-- Selfless Collector's Girdle
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(174297, {	-- Selfless Collector's Greatcloak
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(174289, {	-- Selfless Collector's GreatHelm
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(174293, {	-- Selfless Collector's Legguards
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(174294, {	-- Selfless Collector's Spaulders
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(174296, {	-- Selfless Collector's Wristguards
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179946, {	-- Selfless Forgelite's Belt
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179944, {	-- Selfless Forgelite's Breeches
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179948, {	-- Selfless Forgelite's Drape
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179942, {	-- Selfless Forgelite's Gloves
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179943, {	-- Selfless Forgelite's Helm
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179945, {	-- Selfless Forgelite's Spaulders
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(179947, {	-- Selfless Forgelite's Wristwraps
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(178161, {	-- Selfless Watcher's Cloak
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(178156, {	-- Selfless Watcher's Gauntlets
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(178159, {	-- Selfless Watcher's Girdle
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(178153, {	-- Selfless Watcher's Helm
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(178157, {	-- Selfless Watcher's Legguards
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(178158, {	-- Selfless Watcher's Shoulders
-						["cost"] = { { "c", ANIMA, 250 } },
-					}),
-					i(178160, {	-- Selfless Watcher's Wristwraps
-						["cost"] = { { "c", ANIMA, 250 } },
 					}),
 				},
 			}),
@@ -1547,7 +1493,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(60595),	-- unlocking 12 Kyrian sets, no idea why they all have the same TrackingQuestID: https://wow.tools/dbc/?dbc=transmogset&build=9.1.5.40944#page=1&colFilter[3]=60595
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		n(KYRIAN, {
 			n(ARMOR, {
@@ -1578,4 +1524,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

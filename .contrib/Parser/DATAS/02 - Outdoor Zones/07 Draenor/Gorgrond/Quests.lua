@@ -2022,10 +2022,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(35149),	-- Sparring Arena - triggers if you choose to build the Sparring Arena for the first time
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(119408),	-- Foereaver Polearm [This version wasn't added]
 		}),
 	}),
-}));
+});

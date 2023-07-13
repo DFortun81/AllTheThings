@@ -1042,10 +1042,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(139739, {	-- Chestguard of the Uncrowned
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(136803, {	-- Dirty Tricks, Vol 1: Detection
-								-- TODO: get tracking to work for these kinds of items
-								--["spellID"] = 210108,	-- Detection
-							}),
+							i(136803),	-- Dirty Tricks, Vol 1: Detection (CI!)
 							i(139740, {	-- Footpads of the Uncrowned
 								["cost"] = 5000000,	-- 500g
 							}),

@@ -422,9 +422,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386462, {	-- Primordial Blood Cache
 							["questID"] = 74428,
-							["g"] = {
-								i(204027),	-- Desirous Blood Stone
-							},
 						}),
 						o(386426, {	-- Primordial Earth Cache
 							["coord"] = { 26.4, 53.9, THE_FORBIDDEN_REACH },
@@ -432,9 +429,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(385396, {	-- Primordial Fire Cache
 							["questID"] = 72888,
-							["g"] = {
-								i(204003),	-- Raging Magma Stone
-							},
 						}),
 						o(386532, {	-- Primordial Gold Cache
 							["coord"] = { 25.3, 53.7, THE_FORBIDDEN_REACH },
@@ -662,9 +656,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(393218, {	-- Primordial Arcane Cache
 							["questID"] = 75212,
-							["g"] = {
-								i(204018),	-- Humming Arcane Stone
-							},
 						}),
 						o(386762, {	-- Primordial Armor Cache
 							["coord"] = { 30.5, 55.0, THE_FORBIDDEN_REACH },
@@ -934,9 +925,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386442, {	-- Primordial Void Cache
 							["questID"] = 74409,
-							["g"] = {
-								i(204015),	-- Swirling Mojo Stone
-							},
 						}),
 						o(386447, {	-- Primordial Water Cache
 							["coord"] = { 26.3, 53.9, THE_FORBIDDEN_REACH },
@@ -1167,8 +1155,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204004),	-- Searing Smokey Stone
 				i(204007),	-- Shining Obsidian Stone
 				i(204014),	-- Sparkling Mana Stone
-				i(204000),	-- Storm Infused Stone
-				i(204015),	-- Swirling Mojo Stone
+				i(204000),	-- Storm-Infused Stone
+				i(204015, {	-- Swirling Mojo Stone
+					i(204244),	-- Breathing Mojo Crystal
+					i(204245),	-- Hateful Mojo Crystal
+					i(204239),	-- Shadowy Mojo Crystal
+				}),
 				i(204020),	-- Wild Spirit Stone
 				i(204030),	-- Wind Sculpted Stone
 				-- Drops from any chest
@@ -1225,7 +1217,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74496),
 		q(75032),
 		-- Completed
-		q(74432),
+		q(74432),	-- (spellID 400632)
 		q(74472),
 		q(74474),
 		q(74475),
@@ -1238,18 +1230,18 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74499),
 		q(75160),
 
-		q(74513),	-- When using Stone Dissolver to Open Shattered Crystals
-		q(74431),	-- When Completed Quest: 72953 Zskera Vault: Az
+		q(74513),	-- When using Stone Dissolver to Open Shattered Crystals (spellID 401095)
+		q(74431),	-- When Completed Quest: 72953 Zskera Vault: Az (spellID 400630)
 		q(74473),	-- Triggered when accepting 'The Scary Vault of Ur'
 		q(74748),	-- Triggered when looting Recipe Rat along with 74509
-		q(75127),	-- Triggered when earning "Every Door, Everywhere, All At Once"
+		q(75127),	-- Triggered when earning "Every Door, Everywhere, All At Once" (spellID 404923)
 		q(75490),	-- Triggered when fishing up Dormant Primordial Fragment from Disgusting Vat
 		q(75159),	-- Triggered when fishing up Neltharion Gift Token from Disgusting Vat
 		q(75488),	-- Triggered when fishing up Emmah from Disgusting Vat
 		q(75158),	-- Triggered when fishing up Prismatic Fragment from Disgusting Vat
 		q(75489),	-- Triggered when fishing up Dormant Primordial Fragment #2 from Disgusting Vat
-		q(75130),	-- Triggered after firing the Irontide Cannon
-		q(74486),	-- Triggered after clicking the Perfumed Censer
+		q(75130),	-- Triggered after firing the Irontide Cannon (spellID 402977)
+		q(74486),	-- Triggered after clicking the Perfumed Censer (spellID 400835)
 		q(75046),	-- Triggered after looting Dormant Primordial Fragment from Consumed Gem
 
 
@@ -1257,14 +1249,14 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74611),	-- Research Volume Spawn (201953)
 		q(75014),	-- Touch big slime?
 		-- Chains
-		q(75173),	-- Pulled Chain First Floor
-		q(75172),	-- Pulled Chain Second Floor
-		q(75170),	-- Pulled Chain Third Floor
-		q(75171),	-- Pulled Chain Fourth Floor
-		q(75174),	-- Pulled Chain Third Floor
+		q(75173),	-- Pulled Chain First Floor (spellID 405401)
+		q(75172),	-- Pulled Chain Second Floor (spellID 405400)
+		q(75170),	-- Pulled Chain Third Floor (spellID 405379 & 405384)
+		q(75171),	-- Pulled Chain Fourth Floor (spellID 405387)
+		q(75174),	-- Pulled Chain Third Floor (spellID 405403)
 		-- Stone Dissolver
-		q(75069),	-- On Primordial Earth Cache 389789
-		q(75070),	-- On Primordial Earth Cache 389902
+		q(75069),	-- On Primordial Earth Cache 389789 (spellID 404836)
+		q(75070),	-- On Primordial Earth Cache 389902 (spellID 404835)
 
 		q(74970),	-- During 'Verbal Archaeology' (questID 74447)
 		q(74971),	-- During 'Second Time Is The Charm' (questID 74493)

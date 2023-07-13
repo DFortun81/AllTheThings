@@ -30,10 +30,10 @@ root(ROOTS.Zones, {
 		}),
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(MOP_TIER, {
 		n(WEAPONS, {
 			i(84527),	-- Hidden Pass Meditation Staff
 		}),
 	}),
-}));
+});

@@ -4,6 +4,10 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(254, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Arcatraz
 		["lore"] = "The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",
+		["sins"] = {
+			"Tempest Keep: The Arcatraz",
+			"Festung der Stürme: Die Arkatraz",
+		},
 		["coord"] = { 74.42, 57.72, NETHERSTORM },	-- The Arcatraz, Netherstorm
 		["maps"] = {
 			TEMPEST_KEEP_ARCATRAZ,	-- Stasis Block: Trion

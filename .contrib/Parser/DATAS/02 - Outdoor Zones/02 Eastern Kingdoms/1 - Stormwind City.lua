@@ -3588,15 +3588,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(6972, {	-- Fire Hardened Hauberk
 							["timeline"] = { "removed 4.0.3" },
-							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
-								if _.Level >= 40 then
-									t.f = ]] .. PLATE .. [[;
-								else
-									t.f = ]] .. MAIL .. [[;
-								end
-							end]],
-							-- #endif
 						}),
 					},
 				}),
@@ -3753,15 +3744,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(6971, {	-- Fire Hardened Coif
 							["timeline"] = { "removed 4.0.3" },
-							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
-								if _.Level >= 40 then
-									t.f = ]] .. PLATE .. [[;
-								else
-									t.f = ]] .. MAIL .. [[;
-								end
-							end]],
-							-- #endif
 						}),
 					},
 				}),
@@ -6654,11 +6636,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.4, 69.8, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["groups"] = {
-						i(189719, {	-- Barbed Collar of the Incubus
-							["timeline"] = { ADDED_9_2_0 },
+						i(189719, {	-- Tattered Collar of the Incubus
+							["timeline"] = { ADDED_9_2_0, REMOVED_10_0_5 },
 						}),
-						i(189720, {	-- Barbed Collar of the Succubus
-							["timeline"] = { ADDED_9_2_0 },
+						i(189720, {	-- Tattered Collar of the Succubus
+							["timeline"] = { ADDED_9_2_0, REMOVED_10_0_5 },
 						}),
 					},
 				}),
@@ -7416,7 +7398,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8118, {	-- Lillian Singh
 					["coord"] = { 62.6, 70.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					-- #if BEFORE 10.1
 					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					-- #else
+					["description"] = "This NPC is only available on July 4th.",
+					-- #endif
 					["groups"] = {
 						i(8626),	-- Blue Sparkler
 						i(8625),	-- White Sparkler
@@ -8211,10 +8197,10 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	-- #if BEFORE WRATH
+-- #if BEFORE WRATH
+root(ROOTS.NeverImplemented, {
 	i(38579, {	-- Venomous Tome
 		["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
 	}),
-	-- #endif
-}));
+});
+-- #endif

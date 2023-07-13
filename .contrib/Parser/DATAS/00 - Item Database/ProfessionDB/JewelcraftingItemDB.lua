@@ -200,7 +200,7 @@ i(203426, 400812);	-- Crystal Tuning Fork
 i(0, 404740);	-- Cataclysm Crushing
 i(204406, 405205);	-- Square Holders
 i(204219, 403483);	-- Unstable Elementium
--- UNSORTED --
+-- NYI --
 i(204218, 403464);	-- Primordial Pulverizing
 
 ------------------
@@ -213,3 +213,13 @@ i(204147, 403132);	-- Obsidian Combatant's Jeweled Signet
 i(205175, 408397);	-- Statuette of Foreseen Power
 -- SPECIAL --
 i(0, 407161);		-- Immaculate Coalescing Dracothyst
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+--- ITEM ---
+i(206552, 413752);	-- Frostwyrm's Frigid Stare
+i(206551, 413751);	-- Frostwyrm's Icy Gaze
+i(206543, 413743);	-- Gem of the Nerubians
+--- NYI ---
+i(0, 412557);		-- TEST CRUSHING (DNT)

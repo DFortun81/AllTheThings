@@ -3529,7 +3529,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(MOP_TIER, {
 		m(556, {	-- Siege of Orgrimmar
 			i(104986),	-- Unrepentant Heels
@@ -3552,4 +3552,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

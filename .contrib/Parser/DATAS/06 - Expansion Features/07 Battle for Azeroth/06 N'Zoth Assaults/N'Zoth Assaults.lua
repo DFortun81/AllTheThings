@@ -690,8 +690,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	}),
 }))
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(BFA_TIER, {
+root(ROOTS.NeverImplemented, tier(BFA_TIER, {
 	n(-10072, {	-- N'Zoth Assault
 		q(57874),	-- Visions of a Dark Destiny
 	}),
-})));
+}));

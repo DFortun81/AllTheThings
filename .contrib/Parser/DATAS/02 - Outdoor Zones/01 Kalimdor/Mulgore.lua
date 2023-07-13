@@ -703,6 +703,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								2989,	-- Bael'dun Digger
 							},
 						}),
+						i(131213, {	-- Chain Kodo-Rider's Pants
+							["timeline"] = { "added 7.0.3", "removed 7.0.3" },
+						}),
 						i(4969, {	-- Fortified Bindings
 							["timeline"] = { "removed 4.0.3" },
 						}),

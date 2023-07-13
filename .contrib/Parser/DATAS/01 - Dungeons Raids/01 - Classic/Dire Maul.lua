@@ -798,7 +798,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				}),
 				q(5518, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["maps"] = { 235 },	-- Gordok Commons
 					["cost"] = {
 						{ "i", 14048, 4 },	-- Bolt of Runecloth
@@ -810,12 +810,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["groups"] = {
 						{
 							["recipeID"] = 22813,	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 							["requireSkill"] = TAILORING,
 						},
 						{
 							["recipeID"] = 22815,	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 							["requireSkill"] = LEATHERWORKING,
 						},
 						{
@@ -1166,6 +1166,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["groups"] = {
 							i(18249),	-- Crescent Key
 							i(18261),	-- Book of Incantations
+							i(207297, {	-- Grimoire of the Felblaze Imp (CI!)
+								["timeline"] = { ADDED_10_1_5 },
+							}),
 							i(18267),	-- Recipe: Runn Tum Tuber Surprise
 						},
 					}),
@@ -1229,9 +1232,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
 						-- #if AFTER 4.0.3
-						-- This Update function unmarks the removed from game flag for folks with the brazier.
-						["OnUpdate"] = [[function(t)
-							t.OnUpdate = nil;
+						-- This init function unmarks the removed from game flag for folks with the brazier.
+						["OnInit"] = [[function(t)
 							if GetItemCount(22057, true) > 0 then
 								t.u = nil;
 								for i,o in ipairs(t.g) do
@@ -1247,6 +1249,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 									end
 								end
 							end
+							return t;
 						end]],
 						-- #endif
 						["groups"] = {

@@ -38,7 +38,6 @@ root(ROOTS.Zones, {
 						}),
 						q(31486, {	-- Everything I Know About Cooking (A)
 						--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
-							["races"] = ALLIANCE_ONLY,
 							["qgs"] = {
 								56707,	-- Chin
 								62872,	-- Cranfur the Noodler
@@ -49,7 +48,6 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(31279, {	-- Everything I Know About Cooking (H)
-							["races"] = HORDE_ONLY,
 							["qgs"] = {
 								62322,	-- Graceful Swan
 								59405,	-- Li Goldendraft

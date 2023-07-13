@@ -1,114 +1,74 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-local INSANE_IN_THE_MEMBRANE_OnClick = [[function(row, button)
-	if button == "RightButton" then
-		local t = row.ref;
-		local dmf = _.CreateFaction(t.dmf.factionID);
-		dmf.OnTooltip = t.dmf.OnTooltip;
-		local bloodsail = _.CreateFaction(t.bloodsail.factionID);
-		bloodsail.minReputation = { t.bloodsail.factionID, ]] .. HONORED .. [[ };
-		bloodsail.OnTooltip = t.bloodsail.OnTooltip;
-		local template = {
-			bloodsail,
-			t.bb,
-			t.everlook,
-			t.gadgetzan,
-			t.ratchet,
-			dmf,
-			t.ravenholdt,
-			t.shendralar,
-		};
-		local clone = _:CreateMiniListForGroup(_.CreateAchievement(t[t.key], template)).data;
-		clone.description = t.description;
-		return true;
+local INSANE_IN_THE_MEMBRANE_OnInit = [[function(t)
+	t.CacheFactions = function(t)
+		local factions = t.factions;
+		if not factions then
+			factions = {};
+			for i,factionID in ipairs({
+				87,
+				21,
+				577,
+				369,
+				470,
+				909,
+				349,
+				809,
+			}) do
+				local f = _.SearchForField("factionID", factionID);
+				if f and #f > 0 then
+					tinsert(factions, f and f[1] or _.CreateFaction(factionID));
+				else
+					return;
+				end
+			end
+			local bloodsail = _.CreateFaction(87);
+			bloodsail.minReputation = { 87, ]] .. HONORED .. [[ };
+			bloodsail.OnTooltip = factions[1].OnTooltip;
+			factions[1] = bloodsail;
+			t.factions = factions;
+		end
+		return factions;
 	end
+	t.OnPopout = function(t)
+		local clone = _.CloneReference(t);
+		clone.sourceParent = t.parent;
+		local factions = t:CacheFactions();
+		if factions then
+			local g = clone.g;
+			if g then
+				for i,o in ipairs(factions) do
+					tinsert(g, o);
+				end
+			else
+				clone.g = _.CloneArray(factions);
+			end
+		end
+		return clone;
+	end
+	return t;
 end]];
 local INSANE_IN_THE_MEMBRANE_OnUpdate = [[function(t)
 	if t.collectible then
-		if not t.shendralar then
-			local f = _.SearchForField("factionID", 809);
-			if f and #f > 0 then
-				t.shendralar = f[1];
-			else
-				return true;
+		local fs = t:CacheFactions();
+		if not fs then return; end
+		local collected = true;
+		for i,f in ipairs(fs) do
+			if f.saved ~= 1 then
+				collected = false;
+				break;
 			end
 		end
-		if not t.bloodsail then
-			local f = _.SearchForField("factionID", 87);
-			if f and #f > 0 then
-				t.bloodsail = f[1];
-			else
-				return true;
-			end
-		end
-		if not t.ravenholdt then
-			local f = _.SearchForField("factionID", 349);
-			if f and #f > 0 then
-				t.ravenholdt = f[1];
-			else
-				return true;
-			end
-		end
-		if not t.dmf then
-			local f = _.SearchForField("factionID", 909);
-			if f and #f > 0 then
-				t.dmf = f[1];
-			else
-				return true;
-			end
-		end
-		if not t.bb then
-			local f = _.SearchForField("factionID", 21);
-			if f and #f > 0 then
-				t.bb = f[1];
-			else
-				return true;
-			end
-		end
-		if not t.everlook then
-			local f = _.SearchForField("factionID", 577);
-			if f and #f > 0 then
-				t.everlook = f[1];
-			else
-				return true;
-			end
-		end
-		if not t.gadgetzan then
-			local f = _.SearchForField("factionID", 369);
-			if f and #f > 0 then
-				t.gadgetzan = f[1];
-			else
-				return true;
-			end
-		end
-		if not t.ratchet then
-			local f = _.SearchForField("factionID", 470);
-			if f and #f > 0 then
-				t.ratchet = f[1];
-			else
-				return true;
-			end
-		end
-		-- #if BEFORE WRATH
-		t.SetAchievementCollected(t.achievementID, t.ratchet.standing == 8 and t.gadgetzan.standing == 8
-			and t.everlook.standing == 8 and t.bb.standing == 8 and t.dmf.standing == 8
-			and t.ravenholdt.standing == 8 and t.shendralar.standing == 8
-			and t.bloodsail.standing >= 6);
-		-- #endif
+		t.SetAchievementCollected(t.achievementID, collected);
 	end
 end]];
 local INSANE_IN_THE_MEMBRANE_OnTooltip = [[function(t)
-	if t.collectible then
-		GameTooltip:AddLine(" ");
-		GameTooltip:AddDoubleLine(" |T" .. t.bloodsail.icon .. ":0|t " .. t.bloodsail.text, _.L[t.bloodsail.standing >= 6 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.bb.icon .. ":0|t " .. t.bb.text, _.L[t.bb.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.everlook.icon .. ":0|t " .. t.everlook.text, _.L[t.everlook.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.gadgetzan.icon .. ":0|t " .. t.gadgetzan.text, _.L[t.gadgetzan.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.ratchet.icon .. ":0|t " .. t.ratchet.text, _.L[t.ratchet.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.dmf.icon .. ":0|t " .. t.dmf.text, _.L[t.dmf.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.ravenholdt.icon .. ":0|t " .. t.ravenholdt.text, _.L[t.ravenholdt.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-		GameTooltip:AddDoubleLine(" |T" .. t.shendralar.icon .. ":0|t " .. t.shendralar.text, _.L[t.shendralar.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+	local fs = t:CacheFactions();
+	if not fs then return; end
+	GameTooltip:AddLine(" ");
+	for i,f in ipairs(fs) do
+		GameTooltip:AddDoubleLine(" |T" .. f.icon .. ":0|t " .. f.text, _.L[f.saved == 1 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
 	end
 end]];
 root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, {
@@ -190,11 +150,14 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				{ "i", 41508 },	-- Mechano-Hog
 			},
 		}),
+		-- #if NOT ANYCLASSIC
 		applyclassicphase(PHASE_THREE, classicAch(2336, {	-- Insane in the Membrane
 			-- #if ANYCLASSIC
-			["OnClick"] = INSANE_IN_THE_MEMBRANE_OnClick,
+			["OnInit"] = INSANE_IN_THE_MEMBRANE_OnInit,
 			["OnTooltip"] = INSANE_IN_THE_MEMBRANE_OnTooltip,
+			-- #if BEFORE WRATH
 			["OnUpdate"] = INSANE_IN_THE_MEMBRANE_OnUpdate,
+			-- #endif
 			["description"] = "Insane in the Membrane is a Feat of Strength that rewards the title <The Insane>. This feat requires you to become honored with the Bloodsail Buccaneers and exalted with the Steamwheedle Cartel (Booty Bay, Everlook, Gadgetzan, Ratchet), Ravenholdt, Darkmoon Faire, and the Shen'dralar. After Cataclysm it does not require that all of these reputation levels be reached at the same time, however, prior to that you must have them all at the same time. Raising reputation with these factions is typically very difficult, time-consuming, and costly.",
 			-- #endif
 			["groups"] = {
@@ -203,6 +166,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				}),
 			},
 		})),
+		-- #endif
 		ach(4496),	-- It's Over Nine Thousand!
 		ach(2256, {	-- Northern Exposure
 			-- identical criteria as full achievement
@@ -459,7 +423,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["provider"] = { "o", 175855 },
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 41.1, 73.7, THE_CAPE_OF_STRANGLETHORN },
+					{ 42.0, 73.7, THE_CAPE_OF_STRANGLETHORN },
 					{ 52.5, 26.9, TANARIS },
 					-- #else
 					{ 27.8, 77.3, STRANGLETHORN_VALE },
@@ -535,6 +499,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				},
 			}),
 			crit(3774, {	-- Kil'jaeden and the Shadow Pact
+				-- #if AFTER CATA
+				["description"] = "Stratholme: Found in the room with Commander Malor.",
+				-- #endif
 				["provider"] = { "o", 175741 },
 				["coords"] = {
 					-- #if AFTER LEGION
@@ -638,7 +605,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["provider"] = { "o", 175757 },
 				["coords"] = {
 					-- #if AFTER CATA
-					{ 41.1, 74.5, THE_CAPE_OF_STRANGLETHORN },
+					{ 41.0, 74.4, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.1, 77.7, STRANGLETHORN_VALE },
 					-- #endif
@@ -757,6 +724,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["maps"] = { KARAZHAN },
 			}),
 			crit(3789, {	-- The Invasion of Draenor
+				-- #if AFTER CATA
+				["description"] = "Scholomance: West side wall, near north-west corner of Lilian Voss encounter room.",
+				-- #endif
 				["provider"] = { "o", 175747 },
 				["maps"] = { SCHOLOMANCE },
 			}),
@@ -840,7 +810,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["coords"] = {
 					{ 34.8, 49.8, ASHENVALE },
 					-- #if AFTER CATA
-					{ 41.9, 73.4, THE_CAPE_OF_STRANGLETHORN },
+					{ 41.8, 73.4, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.6, 77.1, STRANGLETHORN_VALE },
 					-- #endif
@@ -866,6 +836,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				},
 			}),
 			crit(3797, {	-- The Seven Kingdoms
+				-- #if AFTER CATA
+				["description"] = "Stratholme: Found in the room with Commander Malor.",
+				-- #endif
 				["provider"] = { "o", 175737 },
 				["maps"] = {
 					-- #if BEFORE MOP
@@ -879,7 +852,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 52.5, 26.9, TANARIS },
-					{ 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },
+					{ 42.0, 73.7, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.8, 77.3, STRANGLETHORN_VALE },
 					{ 52.6, 27.8, TANARIS },
@@ -973,7 +946,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 52.5, 26.9, TANARIS },
-					{ 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },
+					{ 42.0, 73.7, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.8, 77.3, STRANGLETHORN_VALE },
 					{ 52.6, 27.8, TANARIS },

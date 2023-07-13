@@ -191,10 +191,3 @@ r(405005),	-- Glyph of Reckoning
 r(413897),	-- Glyph of Omen of Clarity
 3.4.2.49563
 r(414814),	-- Glyph of Shattering Throw
-10.1.5.49516
-r(413515),	-- Shifting Sliver
-r(413519),	-- Soulscryer
-r(413748),	-- Encased Frigid Heart
-10.1.5.49719
-r(416137),	-- Glyph of the Shath'Yar
-r(416690),	-- Wanderer's Guide

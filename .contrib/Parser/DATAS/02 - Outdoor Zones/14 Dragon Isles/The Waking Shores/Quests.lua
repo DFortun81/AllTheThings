@@ -1167,13 +1167,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
-			q(70368, {	-- Occupation Examination
-				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
-				["provider"] = { "n", 192498 },	-- Hephaesta
-				["coord"] = { 57.8, 68.2, THE_WAKING_SHORES },
-				["classes"] = { EVOKER },
-				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
-			}),
 			q(70742, {	-- Runs in the Family
 				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
 				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
@@ -1183,7 +1176,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			q(70148, {	-- Without Purpose
 				["provider"] = { "n", 192438 },	-- Hephaesta
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
-				["sourceQuests"] = 70124,	-- Practice Materials
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
@@ -1412,21 +1404,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		q(66898),	-- triggered during 'The Shadow of His Wings' (65691)
-		q(70872),	-- Quack Weekly Trigger
+		q(70872),	-- Quack Weekly Trigger (spellID 390284)
 		q(70262),	-- triggered with 'Memories Revived' (70268)
-		q(72353),	-- triggeres during 'Adventuring in the Dragon Isles' (72293) when any zone is chosen by player
+		q(72353),	-- triggeres during 'Adventuring in the Dragon Isles' (72293) when any zone is chosen by player (spellID 394163)
 		q(70767),	-- triggers when 'Tale of the Outsider' becomes available for Tarjin the Blind
-		q(70768),	-- triggers when 'Tale of the Outsider' completes
+		q(70768),	-- triggers when 'Tale of the Outsider' completes (spellID 388144)
 		q(70770),	-- triggers when 'Tale of the Elders' becomes available for Tarjin the Blind
-		q(70769),	-- triggers when 'Tale of the Elders' completes
+		q(70769),	-- triggers when 'Tale of the Elders' completes (spellID 388145)
 		q(70772),	-- triggers when 'Tale of the Warlord' becomes available for Tarjin the Blind
-		q(70771),	-- triggers when 'Tale of the Warlord' completes
+		q(70771),	-- triggers when 'Tale of the Warlord' completes (spellID 388146)
 		q(70776),	-- triggers when 'Tale of the Magma Pact' becomes available for Tarjin the Blind
-		q(70775),	-- triggers when 'Tale of the Magma Pact' completes
+		q(70775),	-- triggers when 'Tale of the Magma Pact' completes (spellID 388148)
 		q(70774),	-- triggers when 'Tale of the Slumbering' becomes available for Tarjin the Blind
-		q(70773),	-- triggers when 'Tale of the Slumbering' completes
+		q(70773),	-- triggers when 'Tale of the Slumbering' completes (spellID 388147)
 		q(70778),	-- triggers when 'Tale of the Weakling' becomes available for Tarjin the Blind
-		q(70777),	-- triggers when 'Tale of the Weakling' completes (FINALLY DONE WITH THIS STUPID CHAIN)
+		q(70777),	-- triggers when 'Tale of the Weakling' completes (spellID 388149)
 		q(70218),	-- Dialogue before you can pick up the quest "A Dragon's Day Off"
 
 		-- TODO: how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?

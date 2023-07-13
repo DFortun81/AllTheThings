@@ -420,13 +420,11 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			})),
 			n(PROFESSIONS, {
 				prof(FISHING, {
-					i(22739, {	-- Tome of Polymorph: Turtle
+					i(22739, {	-- Tome of Polymorph: Turtle (CI!)
 						["providers"] = {
 							{ "o", 202780 },	-- Fathom Eel Swarm
 							{ "o", 207724 },	-- Shipwreck Debris
 						},
-						["classes"] = { MAGE },
-						["f"] = RECIPES,
 					}),
 				}),
 				prof(MINING, {

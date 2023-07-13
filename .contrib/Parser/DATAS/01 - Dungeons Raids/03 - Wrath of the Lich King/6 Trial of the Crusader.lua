@@ -14,82 +14,113 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(3917, {	-- Call of the Crusade (10 player)
-					crit(1, {	-- Northrend Beasts
+					crit(13326, {	-- Northrend Beasts
 						["_encounter"] = { 1618, 3 },
 					}),
-					crit(2, {	-- Lord Jaraxxus
+					crit(13327, {	-- Lord Jaraxxus
 						["_encounter"] = { 1619, 3 },
 					}),
-					crit(3, {	-- Champions of the Alliance
+					-- #if ANYCLASSIC
+					-- Blizzaaaaard why do you waste my time like this?
+					crit(13328, {	-- Champions of the Alliance
 						["_encounter"] = { 1620, 3 },
 					}),
-					crit(3, {	-- Champions of the Horde
+					crit(13328, {	-- Champions of the Horde
 						["_encounter"] = { 1621, 3 },
 					}),
-					crit(4, {	-- Twin Val'kyr
+					crit(13329, {	-- Twin Val'kyr
 						["_encounter"] = { 1622, 3 },
 					}),
-					crit(5, {	-- Anub'arak
+					crit(13308, {	-- Anub'arak
 						["_encounter"] = { 1623, 3 },
 					}),
+					-- #else
+					crit(12236, {	-- Champions of the Alliance
+						["_encounter"] = { 1620, 3 },
+					}),
+					crit(12236, {	-- Champions of the Horde
+						["_encounter"] = { 1621, 3 },
+					}),
+					crit(12240, {	-- Twin Val'kyr
+						["_encounter"] = { 1622, 3 },
+					}),
+					crit(12244, {	-- Anub'arak
+						["_encounter"] = { 1623, 3 },
+					}),
+					-- #endif
 				}),
 				ach(3918, {	-- Call of the Grand Crusade (10 player)
-					crit(1, {	-- Northrend Beasts
+					crit(12229, {	-- Northrend Beasts
 						["_encounter"] = { 1618, 5 },
 					}),
-					crit(2, {	-- Lord Jaraxxus
+					crit(12233, {	-- Lord Jaraxxus
 						["_encounter"] = { 1619, 5 },
 					}),
-					crit(3, {	-- Champions of the Alliance
+					crit(12237, {	-- Champions of the Alliance
 						["_encounter"] = { 1620, 5 },
 					}),
-					crit(3, {	-- Champions of the Horde
+					crit(12237, {	-- Champions of the Horde
 						["_encounter"] = { 1621, 5 },
 					}),
-					crit(4, {	-- Twin Val'kyr
+					crit(12241, {	-- Twin Val'kyr
 						["_encounter"] = { 1622, 5 },
 					}),
-					crit(5, {	-- Anub'arak
+					crit(12245, {	-- Anub'arak
 						["_encounter"] = { 1623, 5 },
 					}),
 				}),
 				ach(3916, {	-- Call of the Crusade (25 player)
-					crit(1, {	-- Northrend Beasts
+					-- #if ANYCLASSIC
+					crit(13346, {	-- Northrend Beasts
 						["_encounter"] = { 1618, 4 },
 					}),
-					crit(2, {	-- Lord Jaraxxus
+					-- #else
+					crit(12230, {	-- Northrend Beasts
+						["_encounter"] = { 1618, 4 },
+					}),
+					-- #endif
+					crit(13347, {	-- Lord Jaraxxus
 						["_encounter"] = { 1619, 4 },
 					}),
-					crit(3, {	-- Champions of the Alliance
+					crit(13348, {	-- Champions of the Alliance
 						["_encounter"] = { 1620, 4 },
 					}),
-					crit(3, {	-- Champions of the Horde
+					crit(13348, {	-- Champions of the Horde
 						["_encounter"] = { 1621, 4 },
 					}),
-					crit(4, {	-- Twin Val'kyr
+					-- #if ANYCLASSIC
+					crit(13349, {	-- Twin Val'kyr
 						["_encounter"] = { 1622, 4 },
 					}),
-					crit(5, {	-- Anub'arak
+					crit(13346, {	-- Anub'arak
 						["_encounter"] = { 1623, 4 },
 					}),
+					-- #else
+					crit(12242, {	-- Twin Val'kyr
+						["_encounter"] = { 1622, 4 },
+					}),
+					crit(12246, {	-- Anub'arak
+						["_encounter"] = { 1623, 4 },
+					}),
+					-- #endif
 				}),
 				ach(3812, {	-- Call of the Grand Crusade (25 player)
-					crit(1, {	-- Northrend Beasts
+					crit(12231, {	-- Northrend Beasts
 						["_encounter"] = { 1618, 6 },
 					}),
-					crit(2, {	-- Lord Jaraxxus
+					crit(12235, {	-- Lord Jaraxxus
 						["_encounter"] = { 1619, 6 },
 					}),
-					crit(3, {	-- Champions of the Alliance
+					crit(12239, {	-- Champions of the Alliance
 						["_encounter"] = { 1620, 6 },
 					}),
-					crit(3, {	-- Champions of the Horde
+					crit(12239, {	-- Champions of the Horde
 						["_encounter"] = { 1621, 6 },
 					}),
-					crit(4, {	-- Twin Val'kyr
+					crit(12243, {	-- Twin Val'kyr
 						["_encounter"] = { 1622, 6 },
 					}),
-					crit(5, {	-- Anub'arak
+					crit(12247, {	-- Anub'arak
 						["_encounter"] = { 1623, 6 },
 					}),
 				}),
@@ -1194,24 +1225,56 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 				["groups"] = {
 					a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers [Alliance]
 					h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers [Horde]
-					a(i(47629)),	-- Pattern: Black Chitin Bracers [Alliance]
-					h(i(47646)),	-- Pattern: Black Chitin Bracers [Horde]
-					a(i(47635)),	-- Pattern: Bracers of Swift Death [Alliance]
-					h(i(47647)),	-- Pattern: Bracers of Swift Death [Horde]
-					a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers [Alliance]
-					h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers [Horde]
-					a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate [Alliance]
-					h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate [Horde]
-					a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate [Alliance]
-					h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate [Horde]
-					a(i(47634)),	-- Pattern: Knightbane Carapace [Alliance]
-					h(i(47651)),	-- Pattern: Knightbane Carapace [Horde]
-					a(i(47632)),	-- Pattern: Lunar Eclipse Robes [Alliance]
-					h(i(47652)),	-- Pattern: Lunar Eclipse Robes [Horde]
+					i(47629, {	-- Pattern: Black Chitin Bracers [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47646, {	-- Pattern: Black Chitin Bracers [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47635, {	-- Pattern: Bracers of Swift Death [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47647, {	-- Pattern: Bracers of Swift Death [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47631, {	-- Pattern: Crusader's Dragonscale Bracers [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47648, {	-- Pattern: Crusader's Dragonscale Bracers [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47630, {	-- Pattern: Crusader's Dragonscale Breastplate [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47649, {	-- Pattern: Crusader's Dragonscale Breastplate [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47628, {	-- Pattern: Ensorcelled Nerubian Breastplate [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47650, {	-- Pattern: Ensorcelled Nerubian Breastplate [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47634, {	-- Pattern: Knightbane Carapace [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47651, {	-- Pattern: Knightbane Carapace [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47632, {	-- Pattern: Lunar Eclipse Robes [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47652, {	-- Pattern: Lunar Eclipse Robes [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
 					a(i(47655)),	-- Pattern: Merlin's Robe [Alliance]
 					h(i(47638)),	-- Pattern: Merlin's Robe [Horde]
-					a(i(47633)),	-- Pattern: Moonshadow Armguards [Alliance]
-					h(i(47653)),	-- Pattern: Moonshadow Armguards [Horde]
+					i(47633, {	-- Pattern: Moonshadow Armguards [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47653, {	-- Pattern: Moonshadow Armguards [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
 					a(i(47656)),	-- Pattern: Royal Moonshroud Bracers [Alliance]
 					h(i(47637)),	-- Pattern: Royal Moonshroud Bracers [Horde]
 					a(i(47657)),	-- Pattern: Royal Moonshroud Robe [Alliance]
@@ -1726,10 +1789,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 						Shawl of Fervent Crusader	Back, Caster	Shawl of the Devout Crusader
 					]]--
 					["groups"] = {
-						ach(4080, {	-- A Tribute to Dedicated Insanity
+						classicAch(4080, {	-- A Tribute to Dedicated Insanity
 							title(136),	-- the Argent Defender
 						}),
-						ach(3810, {	-- A Tribute to Insanity (10 Player)
+						classicAch(3810, {	-- A Tribute to Insanity (10 Player)
 							a(i(49044)),		-- Swift Alliance Steed (MOUNT!)
 							h(i(49046)),		-- Swift Horde Wolf (MOUNT!)
 							h(ig(48668)),		-- Cloak of Serrated Blades
@@ -1743,8 +1806,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 							a(ig(48672)),		-- Shawl of Fervent Crusader
 							h(ig(48667)),		-- Shawl of the Devout Crusader
 						}),
-						ach(3809),	-- A Tribute to Mad Skill (10 Player)
-						ach(3808, {	-- A Tribute to Skill (10 Player)
+						classicAch(3809),	-- A Tribute to Mad Skill (10 Player)
+						classicAch(3808, {	-- A Tribute to Skill (10 Player)
 							h(ig(48705)),		-- Attrition
 							h(ig(48699)),		-- Blood and Glory
 							h(ig(48697)),		-- Frenzystrike Longbow
@@ -2290,13 +2353,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 						i(47557),	-- Regalia of the Grand Conqueror
 						i(47558),	-- Regalia of the Grand Protector
 						i(47559),	-- Regalia of the Grand Vanquisher
-						a(ach(4156, {	-- A Tribute to Immortality
+						a(classicAch(4156, {	-- A Tribute to Immortality
 							a(i(49096)),	-- Crusader's White Warhorse (MOUNT!)
 						})),
-						h(ach(4079, {	-- A Tribute to Immortality
+						h(classicAch(4079, {	-- A Tribute to Immortality
 							h(i(49098)),	-- Crusader's Black Warhorse (MOUNT!)
 						})),
-						ach(3819, {	-- A Tribute to Insanity (25 Player)
+						classicAch(3819, {	-- A Tribute to Insanity (25 Player)
 							h(ig(47551)),		-- Aethas' Intensity
 							a(ig(47553)),		-- Bolvar's Devotion
 							h(ig(47550)),		-- Cairne's Endurance
@@ -2308,8 +2371,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 							a(ig(47547)),		-- Varian's Furor
 							a(ig(47545)),		-- Vereesa's Dexterity
 						}),
-						ach(3818),	-- A Tribute to Mad Skill (25 Player)
-						ach(3817, {	-- A Tribute to Skill (25 Player)
+						classicAch(3818),	-- A Tribute to Mad Skill (25 Player)
+						classicAch(3817, {	-- A Tribute to Skill (25 Player)
 							a(ig(47517)),		-- Blade of the Unbroken Covenant
 							a(ig(47521)),		-- BRK-1000
 							a(ig(47519)),		-- Catastrophe

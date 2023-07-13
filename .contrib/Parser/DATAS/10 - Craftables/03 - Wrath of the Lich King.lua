@@ -427,6 +427,10 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(23775),	-- Titanium Toolbox*
 		}),
 	}),
+	prof(FIRST_AID, {
+		i(34721),	-- Frostweave Bandage
+		i(34722),	-- Heavy Frostweave Bandage
+	}),
 	prof(FISHING, {
 		i(44505, {	-- Dustbringer
 			["description"] = "Can be caught in schools or open water in Northrend.",
@@ -463,11 +467,7 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 		filter(GLYPHS, {
 			i(42736, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
 			i(42898, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
-			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+]
-				-- #if AFTER SHADOWLANDS
-				["questID"] = 62673,
-				["classes"] = { DRUID },
-				-- #endif
+			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
 				["timeline"]={ "added 3.0.2" },
 			}),
 		}),
@@ -932,7 +932,7 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ENGINEERING, {
 			tier(WOTLK_TIER, {
@@ -945,4 +945,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

@@ -2921,9 +2921,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(136629),	-- Felgibber Shotgun
-						i(136782, {	-- Fireworks Instruction Manual
-							["spellID"] = 127933,	-- Fireworks
-						}),
+						i(136782),	-- Fireworks Instruction Manual (CI!)
 						i(137709),	-- Schematic: Auto-Hammer [Rank 2] (RECIPE!)
 						i(137705),	-- Schematic: Deployable Bullet Dispenser [Rank 2] (RECIPE!)
 						i(133673),	-- Schematic: Double-Barreled Cranial Cannon [Rank 1] (RECIPE!)
@@ -3033,7 +3031,6 @@ root(ROOTS.Zones, {
 						i(141030),	-- Technique: Glyph of Cracked Ice (RECIPE!)
 						i(137735),	-- Technique: Glyph of Crackling Crane Lightning (RECIPE!)
 						i(141900),	-- Technique: Glyph of Falling Thunder (RECIPE!)
-						i(137731),	-- Technique: Glyph of Fel Imp (RECIPE!)
 						i(141036),	-- Technique: Glyph of Fel-Enemies (RECIPE!)
 						i(137730),	-- Technique: Glyph of Ghostly Fade (RECIPE!)
 						i(141037),	-- Technique: Glyph of Mana Touched Souls (RECIPE!)
@@ -3048,6 +3045,7 @@ root(ROOTS.Zones, {
 						i(137734),	-- Technique: Glyph of the Sentinel (RECIPE!)
 						i(137736),	-- Technique: Glyph of the Spectral Raptor (RECIPE!)
 						i(141055),	-- Technique: Glyph of Yu'lon's Grace (RECIPE!)
+						i(137731),	-- Technique: Grimoire of the Fel Imp (RECIPE!)
 					},
 				}),
 				n(97009, {	-- Jawknee <Axe Merchant>

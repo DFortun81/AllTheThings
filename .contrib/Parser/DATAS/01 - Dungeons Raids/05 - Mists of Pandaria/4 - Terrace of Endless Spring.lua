@@ -6,6 +6,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 		["isRaid"] = true,
 		["coord"] = { 48.4, 61.4, THE_VEILED_STAIR },
 		["maps"] = { 456 },	-- Terrace of Endless Spring
+		["sins"] = { "Terrasse des Endlosen Frühlings" },
 		["sharedLockout"] = 1,
 		["g"] = {
 			n(ACHIEVEMENTS, {

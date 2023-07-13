@@ -5,6 +5,11 @@ local COILFANG_ARMAMENTS = i(24368);	-- Coilfang Armaments
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 	inst(748, {	-- Serpentshrine Cavern
 		["lore"] = "Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",
+		["sins"] = {
+			"Coilfang: Serpentshrine Cavern",
+			"Echsenkessel: Höhle des Schlangenschreins",
+			"Glissecroc : caverne du sanctuaire du Serpent",
+		},
 		["coords"] = {
 			{ 50.2, 41.0, ZANGARMARSH },	-- underwater entrance
 			{ 51.9, 32.9, ZANGARMARSH },	-- pipe entrance

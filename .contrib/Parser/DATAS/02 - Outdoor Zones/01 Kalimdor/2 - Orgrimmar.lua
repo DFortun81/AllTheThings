@@ -5320,11 +5320,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(189719, {	-- Barbed Collar of the Incubus
-							["timeline"] = { ADDED_9_2_0 },
+						i(189719, {	-- Tattered Collar of the Incubus
+							["timeline"] = { ADDED_9_2_0, REMOVED_10_0_5 },
 						}),
-						i(189720, {	-- Barbed Collar of the Succubus
-							["timeline"] = { ADDED_9_2_0 },
+						i(189720, {	-- Tattered Collar of the Succubus
+							["timeline"] = { ADDED_9_2_0, REMOVED_10_0_5 },
 						}),
 					},
 				}),
@@ -5371,7 +5371,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8122, {	-- Kizzak Sparks
 					["coord"] = { 57.8, 56.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					-- #if BEFORE 10.1
 					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					-- #else
+					["description"] = "This NPC is only available on July 4th.",
+					-- #endif
 					["groups"] = {
 						i(8626),	-- Blue Sparkler
 						i(8625),	-- White Sparkler
@@ -7407,7 +7411,7 @@ root(ROOTS.HiddenQuestTriggers, {
 -- #endif
 
 -- #if AFTER 3.3.3.11723
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOTLK_TIER, {
 		n(ARMOR, {
 			filter(NECK_F, {
@@ -7420,5 +7424,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});
 -- #endif

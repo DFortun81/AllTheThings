@@ -11,6 +11,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using static ATT.Export;
+using static ATT.Framework;
 
 namespace ATT
 {
@@ -121,7 +122,7 @@ namespace ATT
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
             { "SHADOWLANDS", new int[] { 9, 2, 7, 45745 } },
-            { "DF", new int[] { 10, 1, 0, 50000 } },
+            { "DF", new int[] { 10, 1, 5, 50401 } },
         };
 
         public static string CURRENT_RELEASE_PHASE_NAME =
@@ -240,12 +241,12 @@ namespace ATT
         /// <summary>
         /// All of the species that have been parsed sorted by Species ID.
         /// </summary>
-        private static IDictionary<long, Dictionary<string, object>> SPECIES = new Dictionary<long, Dictionary<string, object>>();
+        private static IDictionary<long, IDictionary<string, object>> SPECIES = new Dictionary<long, IDictionary<string, object>>();
 
         /// <summary>
         /// All of the quests that have been parsed sorted by Quest ID.
         /// </summary>
-        private static IDictionary<long, Dictionary<string, object>> QUESTS = new Dictionary<long, Dictionary<string, object>>();
+        private static IDictionary<long, IDictionary<string, object>> QUESTS = new Dictionary<long, IDictionary<string, object>>();
 
         /// <summary>
         /// All of the achievements that have been parsed sorted by Achievement ID.
@@ -297,7 +298,7 @@ namespace ATT
             Trace.WriteLine($"Found {headers.Count} Custom Headers...");
             foreach (var pair in headers)
             {
-                if (pair.Value is Dictionary<string, object> header)
+                if (pair.Value is IDictionary<string, object> header)
                 {
                     if (header.TryGetValue("constant", out object value))
                     {
@@ -414,8 +415,8 @@ namespace ATT
         /// A Dictionary of key-ID types and the respective objects which contain the specified key which will be captured and output during Debug runs</para>
         /// NOTE: Each key name/value may contain multiple sets of data due to duplication of individual listings
         /// </summary>
-        public static Dictionary<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> DebugDBs { get; }
-                = new Dictionary<string, SortedDictionary<decimal, List<Dictionary<string, object>>>>();
+        public static Dictionary<string, SortedDictionary<decimal, List<IDictionary<string, object>>>> DebugDBs { get; }
+                = new Dictionary<string, SortedDictionary<decimal, List<IDictionary<string, object>>>>();
 
         /// <summary>
         /// A collection of named format strings for logging messages
@@ -430,7 +431,7 @@ namespace ATT
         /// is useful to be able to define specific relationships on specific Items (Mount/Pet/etc.) and only incorporate the relationship if
         /// the Item is Sourced elsewhere for the specific ATT Build
         /// </summary>
-        internal static List<Dictionary<string, object>> ConditionalItemData { get; } = new List<Dictionary<string, object>>();
+        internal static List<IDictionary<string, object>> ConditionalItemData { get; } = new List<IDictionary<string, object>>();
 
         /// <summary>
         /// The CustomHeaders table from main.lua that is used to generate custom headers.
@@ -517,7 +518,7 @@ namespace ATT
             {
                 foreach (string key in configDebugDBs)
                 {
-                    DebugDBs[key] = new SortedDictionary<decimal, List<Dictionary<string, object>>>();
+                    DebugDBs[key] = new SortedDictionary<decimal, List<IDictionary<string, object>>>();
                 }
             }
             ImportConfiguredObjectTypes(Config["ObjectTypes"]);
@@ -542,7 +543,7 @@ namespace ATT
         {
             foreach (var o in listing)
             {
-                if (o is Dictionary<string, object> entry)
+                if (o is IDictionary<string, object> entry)
                 {
                     Items.Merge(entry);
                 }
@@ -553,7 +554,7 @@ namespace ATT
         /// Merge the data into the database.
         /// </summary>
         /// <param name="data">The data.</param>
-        public static void Merge(Dictionary<string, object> data)
+        public static void Merge(IDictionary<string, object> data)
         {
             // Make use of this data and attempt to load it into the database.
             // First check to see if the JSON data is a container for a specific type of object.
@@ -571,14 +572,14 @@ namespace ATT
             }
 
             // Are we dealing with a Quests Database section?
-            if (data.TryGetValue("questDB", out Dictionary<string, object> questDB))
+            if (data.TryGetValue("questDB", out IDictionary<string, object> questDB))
             {
                 foreach (var pair in questDB)
                 {
-                    if (pair.Value is Dictionary<string, object> dict)
+                    if (pair.Value is IDictionary<string, object> dict)
                     {
                         long questID = Convert.ToInt64(pair.Key);
-                        if (!QUESTS.TryGetValue(questID, out Dictionary<string, object> quest))
+                        if (!QUESTS.TryGetValue(questID, out IDictionary<string, object> quest))
                         {
                             QUESTS[questID] = quest = new Dictionary<string, object>();
                         }
@@ -602,11 +603,11 @@ namespace ATT
             {
                 foreach (var quest in quests)
                 {
-                    if (quest is Dictionary<string, object> dict)
+                    if (quest is IDictionary<string, object> dict)
                     {
                         if (dict.TryGetValue("questID", out long questID))
                         {
-                            if (!QUESTS.TryGetValue(questID, out Dictionary<string, object> cachedQuest))
+                            if (!QUESTS.TryGetValue(questID, out IDictionary<string, object> cachedQuest))
                             {
                                 QUESTS[questID] = cachedQuest = new Dictionary<string, object>();
                             }
@@ -628,7 +629,7 @@ namespace ATT
         /// <param name="modID">The modID.</param>
         /// <param name="minLevel">The minimum required level.</param>
         /// <returns>Whether or not the data is valid.</returns>
-        private static bool Process(Dictionary<string, object> data, long modID, long minLevel)
+        private static bool Process(IDictionary<string, object> data, long modID, long minLevel)
         {
             // Check to make sure the data is valid.
             if (data == null) return false;
@@ -645,7 +646,7 @@ namespace ATT
             }
 
             // If this container has an aqd or hqd, then process those objects as well.
-            if (data.TryGetValue("aqd", out Dictionary<string, object> qd)) Process(qd, modID, minLevel);
+            if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd, modID, minLevel);
             if (data.TryGetValue("hqd", out qd)) Process(qd, modID, minLevel);
 
             // If this container has groups, then process those groups as well.
@@ -673,12 +674,12 @@ namespace ATT
                 if (DebugMode)
                 {
                     // Capture references to specified Debug DB keys for Debug output
-                    foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                    foreach (KeyValuePair<string, SortedDictionary<decimal, List<IDictionary<string, object>>>> dbKeyDatas in DebugDBs)
                     {
                         if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue))
                         {
-                            if (!dbKeyDatas.Value.TryGetValue(keyValue, out List<Dictionary<string, object>> keyValueValues))
-                                dbKeyDatas.Value[keyValue] = keyValueValues = new List<Dictionary<string, object>>();
+                            if (!dbKeyDatas.Value.TryGetValue(keyValue, out List<IDictionary<string, object>> keyValueValues))
+                                dbKeyDatas.Value[keyValue] = keyValueValues = new List<IDictionary<string, object>>();
 
                             keyValueValues.Add(data);
                         }
@@ -695,7 +696,7 @@ namespace ATT
         /// * Validation of raw data<para/>
         /// </summary>
         /// <param name="data"></param>
-        private static bool DataValidation(Dictionary<string, object> data, ref long modID, ref long minLevel)
+        private static bool DataValidation(IDictionary<string, object> data, ref long modID, ref long minLevel)
         {
 #if RETAIL
             // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
@@ -973,7 +974,7 @@ namespace ATT
             return true;
         }
 
-        private static void Validate_cost(Dictionary<string, object> data)
+        private static void Validate_cost(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("cost", out object costRef))
                 return;
@@ -1016,7 +1017,7 @@ namespace ATT
             }
         }
 
-        private static void Consolidate_cost(Dictionary<string, object> data)
+        private static void Consolidate_cost(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("cost", out object costRef))
                 return;
@@ -1071,7 +1072,7 @@ namespace ATT
         /// <summary>
         /// Validates that 'coord(s)' and 'maps' data is valid
         /// </summary>
-        private static void Validate_LocationData(Dictionary<string, object> data)
+        private static void Validate_LocationData(IDictionary<string, object> data)
         {
             // 'coord' is converted to 'coords' already
             if (data.TryGetValue("coords", out List<object> coordsList))
@@ -1128,7 +1129,7 @@ namespace ATT
             }
         }
 
-        private static void Validate_providers(Dictionary<string, object> data)
+        private static void Validate_providers(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("providers", out object providers))
                 return;
@@ -1162,7 +1163,7 @@ namespace ATT
             }
         }
 
-        private static void Consolidate_providers(Dictionary<string, object> data)
+        private static void Consolidate_providers(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("providers", out object providers))
                 return;
@@ -1221,7 +1222,7 @@ namespace ATT
             }
         }
 
-        private static void Validate_sym(Dictionary<string, object> data)
+        private static void Validate_sym(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("sym", out List<object> symObject))
                 return;
@@ -1271,7 +1272,7 @@ namespace ATT
             }
         }
 
-        private static void Consolidate_sourceQuests(Dictionary<string, object> data)
+        private static void Consolidate_sourceQuests(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("sourceQuests", out List<object> sourceQuests))
                 return;
@@ -1284,7 +1285,7 @@ namespace ATT
                     continue;
                 }
 
-                if (!Objects.AllQuests.TryGetValue(sourceQuestID, out Dictionary<string, object> sourceQuest))
+                if (!Objects.AllQuests.TryGetValue(sourceQuestID, out IDictionary<string, object> sourceQuest))
                 {
                     // Source Quest not in database
                     LogError($"Referenced Source Quest {sourceQuestID} has not been Sourced");
@@ -1308,7 +1309,7 @@ namespace ATT
             }
         }
 
-        private static void Consolidate_altQuests(Dictionary<string, object> data)
+        private static void Consolidate_altQuests(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("altQuests", out List<object> altQuests))
                 return;
@@ -1321,7 +1322,7 @@ namespace ATT
                     continue;
                 }
 
-                if (!Objects.AllQuests.TryGetValue(altQuestID, out Dictionary<string, object> altQuest))
+                if (!Objects.AllQuests.TryGetValue(altQuestID, out IDictionary<string, object> altQuest))
                 {
                     // Source Quest not in database
                     LogDebug($"WARN: Referenced Alternate Quest {altQuestID} has not been Sourced");
@@ -1329,7 +1330,7 @@ namespace ATT
             }
         }
 
-        private static void Validate_Encounter(Dictionary<string, object> data)
+        private static void Validate_Encounter(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("encounterID", out long encounterID))
                 return;
@@ -1361,7 +1362,7 @@ namespace ATT
             }
         }
 
-        private static void Validate_Criteria(Dictionary<string, object> data)
+        private static void Validate_Criteria(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("criteriaID", out long criteriaID))
                 return;
@@ -1447,7 +1448,7 @@ namespace ATT
             //}
         }
 
-        private static void Validate_Quest(Dictionary<string, object> data)
+        private static void Validate_Quest(IDictionary<string, object> data)
         {
             // Mark the quest as referenced
             if (!data.TryGetValue("questID", out long questID))
@@ -1457,11 +1458,11 @@ namespace ATT
             Objects.MergeQuestData(data);
 
             // Classic-only AQD/HQD quest datas
-            if (data.TryGetValue("aqd", out Dictionary<string, object> aqd))
+            if (data.TryGetValue("aqd", out IDictionary<string, object> aqd))
             {
                 Objects.MergeQuestData(aqd);
             }
-            if (data.TryGetValue("hqd", out Dictionary<string, object> hqd))
+            if (data.TryGetValue("hqd", out IDictionary<string, object> hqd))
             {
                 Objects.MergeQuestData(hqd);
             }
@@ -1498,7 +1499,7 @@ namespace ATT
             }
         }
 
-        private static bool Validate_DataCloning(Dictionary<string, object> data)
+        private static bool Validate_DataCloning(IDictionary<string, object> data)
         {
             bool cloned = false;
 
@@ -1563,7 +1564,7 @@ namespace ATT
             return cloned;
         }
 
-        private static void Validate_Achievement(Dictionary<string, object> data)
+        private static void Validate_Achievement(IDictionary<string, object> data)
         {
             // Mark the achievement as referenced
             if (!data.TryGetValue("achID", out long achID)) return;
@@ -1612,7 +1613,7 @@ namespace ATT
 
             foreach (var critObj in criterias)
             {
-                if (critObj is Dictionary<string, object> critDict)
+                if (critObj is IDictionary<string, object> critDict)
                 {
                     if (!critDict.TryGetValue("criteriaID", out long critVal))
                         continue;
@@ -1645,7 +1646,7 @@ namespace ATT
         /// * Consolidation of dictionary information into sourced data
         /// </summary>
         /// <param name="data"></param>
-        private static bool DataConsolidation(Dictionary<string, object> data)
+        private static bool DataConsolidation(IDictionary<string, object> data)
         {
             // Merge all relevant dictionary info into the data
             Items.MergeInto(data);
@@ -1756,7 +1757,7 @@ namespace ATT
         /// <summary>
         /// Checks the data for any required data relationships based on existing fields
         /// </summary>
-        private static void CheckRequiredDataRelationships(Dictionary<string, object> data)
+        private static void CheckRequiredDataRelationships(IDictionary<string, object> data)
         {
             // Criteria groups need to know their associated Achievement
             if (data.TryGetValue("criteriaID", out decimal criteriaID))
@@ -1774,7 +1775,7 @@ namespace ATT
             }
         }
 
-        private static void CheckTrackableFields(Dictionary<string, object> data)
+        private static void CheckTrackableFields(IDictionary<string, object> data)
         {
             // This logic is fine, but might be intentional in some cases to have tooltips indicate 'daily' etc.
             // even when the data itself has no way to actually 'track' completion. Maybe add this at some other time
@@ -1797,7 +1798,7 @@ namespace ATT
             //}
         }
 
-        private static void CheckObjectConversion(Dictionary<string, object> data)
+        private static void CheckObjectConversion(IDictionary<string, object> data)
         {
             if (ObjectData.TryFindObjectConversion(data, out ObjectData conversionObject, out object convertValue))
             {
@@ -1812,7 +1813,7 @@ namespace ATT
         /// Checks the data for any list-based content and attempts to order that content in a consistent way so that output remains identical for identical data
         /// </summary>
         /// <param name="data"></param>
-        private static void VerifyListContentOrdering(Dictionary<string, object> data)
+        private static void VerifyListContentOrdering(IDictionary<string, object> data)
         {
             foreach (KeyValuePair<string, object> entry in data)
             {
@@ -1869,7 +1870,7 @@ namespace ATT
         /// <summary>
         /// Returns whether the data meets the current parser 'timeline' expectations
         /// </summary>
-        private static bool CheckTimeline(Dictionary<string, object> data)
+        private static bool CheckTimeline(IDictionary<string, object> data)
         {
             // Check to see what patch this data was made relevant for.
             if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
@@ -2005,7 +2006,7 @@ namespace ATT
             return true;
         }
 
-        private static void ConsolidateHeirarchicalFields(Dictionary<string, object> parentGroup, List<object> groups)
+        private static void ConsolidateHeirarchicalFields(IDictionary<string, object> parentGroup, List<object> groups)
         {
             if ((groups?.Count ?? 0) == 0) return;
 
@@ -2014,7 +2015,7 @@ namespace ATT
             {
                 foreach (object group in groups)
                 {
-                    if (group is Dictionary<string, object> data && data.TryGetValue(field, out object value))
+                    if (group is IDictionary<string, object> data && data.TryGetValue(field, out object value))
                     {
                         fieldValues.Add(value);
                     }
@@ -2032,7 +2033,7 @@ namespace ATT
 
                     foreach (object group in groups)
                     {
-                        if (group is Dictionary<string, object> data)
+                        if (group is IDictionary<string, object> data)
                         {
                             data.Remove(field);
                         }
@@ -2048,7 +2049,7 @@ namespace ATT
         /// </summary>
         /// <param name="data">The Category data.</param>
         /// <param name="categoryID">The Category ID.</param>
-        private static void ProcessCategoryObject(Dictionary<string, object> data, long categoryID)
+        private static void ProcessCategoryObject(IDictionary<string, object> data, long categoryID)
         {
             CATEGORY_WITH_REFERENCES[categoryID] = true;
             if (!CATEGORY_ICONS.ContainsKey(categoryID) && data.TryGetValue("icon", out string icon))
@@ -2092,7 +2093,7 @@ namespace ATT
         /// </summary>
         /// <param name="data">The Object data.</param>
         /// <param name="objectID">The Object ID.</param>
-        private static void ProcessObjectInstance(Dictionary<string, object> data, long objectID)
+        private static void ProcessObjectInstance(IDictionary<string, object> data, long objectID)
         {
             OBJECTS_WITH_REFERENCES[objectID] = true;
             if (!OBJECT_ICONS.ContainsKey(objectID) && data.TryGetValue("icon", out string icon))
@@ -2153,7 +2154,7 @@ namespace ATT
         /// TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua
         /// </summary>
         /// <param name="data"></param>
-        private static void TryFindRecipeID(Dictionary<string, object> data)
+        private static void TryFindRecipeID(IDictionary<string, object> data)
         {
             // don't apply a recipeID to data which is not an item or is a Toy or has a questID (Reaves Modules... argghhh)
             if (!data.ContainsKey("itemID") || data.ContainsKey("questID"))
@@ -2183,7 +2184,7 @@ namespace ATT
         /// Converts the Specific 'requireSkill' field of the data to the General 'requireSkill'
         /// </summary>
         /// <param name="data"></param>
-        private static void CheckRequireSkill(Dictionary<string, object> data)
+        private static void CheckRequireSkill(IDictionary<string, object> data)
         {
             if (data.TryGetValue("requireSkill", out long requiredSkill))
             {
@@ -2217,7 +2218,7 @@ namespace ATT
         /// Checks to assign an heirloomID to the data if it meets the criteria of being an heirloom
         /// </summary>
         /// <param name="data"></param>
-        private static void CheckHeirloom(Dictionary<string, object> data)
+        private static void CheckHeirloom(IDictionary<string, object> data)
         {
             if (data.TryGetValue("q", out long quality))
             {
@@ -2268,7 +2269,7 @@ namespace ATT
         /// <param name="data"></param>
         /// <param name="minLevel"></param>
         /// <returns></returns>
-        private static long LevelConsolidation(Dictionary<string, object> data, long minLevel)
+        private static long LevelConsolidation(IDictionary<string, object> data, long minLevel)
         {
             // If the level of this object is less than the current minimum level, we can safely remove it.
             if (data.TryGetValue("lvl", out object lvlRef))
@@ -2304,7 +2305,7 @@ namespace ATT
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        private static long? GetDataMinLevel(Dictionary<string, object> data)
+        private static long? GetDataMinLevel(IDictionary<string, object> data)
         {
             // If the level of this object is less than the current minimum level, we can safely remove it.
             if (data.TryGetValue("lvl", out object lvlRef))
@@ -2317,7 +2318,7 @@ namespace ATT
             return null;
         }
 
-        private static void DuplicateDataIntoGroups(Dictionary<string, object> data, object groups, string type)
+        private static void DuplicateDataIntoGroups(IDictionary<string, object> data, object groups, string type)
         {
             // only need to setup the merge data on the first pass
             if (!MergeItemData) return;
@@ -2358,7 +2359,7 @@ namespace ATT
                         break;
                     case "achID":
                         // duplicated achievements should be ignored for their progress
-                        Dictionary<string, object> cloned = new Dictionary<string, object>(data)
+                        IDictionary<string, object> cloned = new Dictionary<string, object>(data)
                         {
                             ["sourceIgnored"] = true
                         };
@@ -2370,7 +2371,7 @@ namespace ATT
                         //    foreach (object achGroup in achGroups)
                         //    {
                         //        // something inside the achievement that contains its own things... don't duplicate that
-                        //        if (achGroup is Dictionary<string, object> groupInfo && !groupInfo.ContainsKey("g"))
+                        //        if (achGroup is IDictionary<string, object> groupInfo && !groupInfo.ContainsKey("g"))
                         //            cleanedGroups.Add(achGroup);
                         //    }
                         //    cloned["g"] = cleanedGroups;
@@ -2417,7 +2418,7 @@ namespace ATT
         /// <param name="groupIDs"></param>
         /// <param name="groupList"></param>
         /// <param name="type"></param>
-        private static void DuplicateGroupListIntoObjects(List<object> groupIDs, Dictionary<string, object> data, string type)
+        private static void DuplicateGroupListIntoObjects(List<object> groupIDs, IDictionary<string, object> data, string type)
         {
             // duplicate the data into the sourced data by type
             foreach (object dupeGroupID in groupIDs)
@@ -2447,7 +2448,7 @@ namespace ATT
             // Iterate through the list and process all of the relative data dictionaries.
             for (int i = list.Count - 1; i >= 0; --i)
             {
-                if (!Process(list[i] as Dictionary<string, object>, modID, minLevel)) list.RemoveAt(i);
+                if (!Process(list[i] as IDictionary<string, object>, modID, minLevel)) list.RemoveAt(i);
             }
         }
 
@@ -2665,7 +2666,7 @@ namespace ATT
             //int dataPhase = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME][0];
             for (int i = unsorted.Count - 1; i >= 0; --i)
             {
-                var o = unsorted[i] as Dictionary<string, object>;
+                var o = unsorted[i] as IDictionary<string, object>;
                 if (o == null) continue;
                 if (o.TryGetValue("g", out List<object> list) && list.Count == 0)
                 {
@@ -2679,7 +2680,7 @@ namespace ATT
             }
             if (unsorted.Count == 1)
             {
-                var o = unsorted[0] as Dictionary<string, object>;
+                var o = unsorted[0] as IDictionary<string, object>;
                 if (o != null && o.TryGetValue("g", out List<object> list))
                 {
                     Objects.AllContainers["Unsorted"] = list;
@@ -2711,7 +2712,7 @@ namespace ATT
                 for (int i = 1; i <= maxQuestID; i++)
                 {
                     // add any quest information which is not referenced but includes more than just a questID into the Unsorted category
-                    if (!QUESTS_WITH_REFERENCES.ContainsKey(i) && QUESTS.TryGetValue(i, out Dictionary<string, object> questRef))
+                    if (!QUESTS_WITH_REFERENCES.ContainsKey(i) && QUESTS.TryGetValue(i, out IDictionary<string, object> questRef))
                     {
                         var entry = new Dictionary<string, object>() { { "questID", i } };
 
@@ -2796,7 +2797,7 @@ namespace ATT
             {
                 foreach (object itemObj in objects)
                 {
-                    if (itemObj is Dictionary<string, object> item)
+                    if (itemObj is IDictionary<string, object> item)
                     {
                         decimal itemID = Items.GetSpecificItemID(item);
                         if (Items.IsItemReferenced(itemID))
@@ -2861,7 +2862,7 @@ namespace ATT
             // Check to see if the list of objects has a relative g field.
             foreach (var objRef in list)
             {
-                SortByName(objRef as Dictionary<string, object>);
+                SortByName(objRef as IDictionary<string, object>);
             }
         }
 
@@ -2869,7 +2870,7 @@ namespace ATT
         /// Sort the dictionary by its name field.
         /// </summary>
         /// <param name="a">Object Dictionary A.</param>
-        public static void SortByName(Dictionary<string, object> a)
+        public static void SortByName(IDictionary<string, object> a)
         {
             // If a is null, return immediately.
             if (a == null) return;
@@ -2889,7 +2890,7 @@ namespace ATT
         /// <returns>Whether a is greater than b.</returns>
         public static int SortByName(object a, object b)
         {
-            return SortByName(a as Dictionary<string, object>, b as Dictionary<string, object>);
+            return SortByName(a as IDictionary<string, object>, b as IDictionary<string, object>);
         }
 
         /// <summary>
@@ -2898,7 +2899,7 @@ namespace ATT
         /// <param name="a">Object Dictionary A.</param>
         /// <param name="b">Object Dictionary B.</param>
         /// <returns>Whether a is greater than b.</returns>
-        public static int SortByName(Dictionary<string, object> a, Dictionary<string, object> b)
+        public static int SortByName(IDictionary<string, object> a, IDictionary<string, object> b)
         {
             // If a is null,
             if (a == null)
@@ -3105,6 +3106,12 @@ namespace ATT
                 case "filterID":
                     {
                         return "f";
+                    }
+                case "fForRWP":
+                case "filterForRWP":
+                case "filterIDForRWP":
+                    {
+                        return "filterForRWP";
                     }
 
                 case "ilvl":
@@ -3420,6 +3427,7 @@ namespace ATT
                 case "setHeaderID":
                 case "setSubHeaderID":
                 case "setID":
+                case "sins":
                 case "sort":
                 case "sourceQuest":
                 case "sourceText":
@@ -3462,9 +3470,9 @@ namespace ATT
         /// </summary>
         /// <param name="jsonString">The JSON string.</param>
         /// <returns>The dictionary.</returns>
-        public static Dictionary<string, object> ToDictionary(string jsonString)
+        public static IDictionary<string, object> ToDictionary(string jsonString)
         {
-            return ToObject(jsonString) is Dictionary<string, object> obj ? obj : null;
+            return ToObject(jsonString) is IDictionary<string, object> obj ? obj : null;
         }
 
         /// <summary>
@@ -3523,7 +3531,7 @@ namespace ATT
                             {
                                 foreach (var o in illusionDB)
                                 {
-                                    if (o is Dictionary<string, object> illusion)
+                                    if (o is IDictionary<string, object> illusion)
                                     {
                                         ConditionalItemData.Add(illusion);
                                     }
@@ -3545,7 +3553,7 @@ namespace ATT
                             {
                                 foreach (var itemValuePair in itemDB)
                                 {
-                                    if (itemValuePair.Value is Dictionary<string, object> item)
+                                    if (itemValuePair.Value is IDictionary<string, object> item)
                                     {
                                         item["itemID"] = itemValuePair.Key;
                                         Items.Merge(item);
@@ -3563,7 +3571,7 @@ namespace ATT
                             {
                                 foreach (var o in items)
                                 {
-                                    if (o is Dictionary<string, object> item)
+                                    if (o is IDictionary<string, object> item)
                                     {
                                         Items.Merge(item);
                                     }
@@ -3592,7 +3600,7 @@ namespace ATT
                             {
                                 foreach (var itemValuePair in itemDB)
                                 {
-                                    if (itemValuePair.Value is Dictionary<string, object> item)
+                                    if (itemValuePair.Value is IDictionary<string, object> item)
                                     {
                                         item["itemID"] = itemValuePair.Key;
                                         ConditionalItemData.Add(item);
@@ -3610,7 +3618,7 @@ namespace ATT
                             {
                                 foreach (var o in items)
                                 {
-                                    if (o is Dictionary<string, object> item)
+                                    if (o is IDictionary<string, object> item)
                                     {
                                         ConditionalItemData.Add(item);
                                     }
@@ -3652,7 +3660,7 @@ namespace ATT
                             {
                                 foreach (var recipeValuePair in recipeDB)
                                 {
-                                    if (recipeValuePair.Value is Dictionary<string, object> recipe)
+                                    if (recipeValuePair.Value is IDictionary<string, object> recipe)
                                     {
                                         recipe["recipeID"] = recipeValuePair.Key;
                                         Objects.Merge(recipe);
@@ -3670,7 +3678,7 @@ namespace ATT
                             {
                                 foreach (var o in recipes)
                                 {
-                                    if (o is Dictionary<string, object> recipe)
+                                    if (o is IDictionary<string, object> recipe)
                                     {
                                         Objects.Merge(recipe);
                                     }
@@ -3728,7 +3736,7 @@ namespace ATT
                             {
                                 foreach (var itemValuePair in itemDB)
                                 {
-                                    if (itemValuePair.Value is Dictionary<string, object> item)
+                                    if (itemValuePair.Value is IDictionary<string, object> item)
                                     {
                                         var itemSpecies = Items.GetWithSpecies(itemValuePair.Key);
                                         foreach (var p in item) Items.Merge(itemSpecies, p.Key, p.Value);
@@ -3763,7 +3771,7 @@ namespace ATT
                             {
                                 foreach (var itemValuePair in artifactDB)
                                 {
-                                    if (itemValuePair.Value is Dictionary<string, object> artifact)
+                                    if (itemValuePair.Value is IDictionary<string, object> artifact)
                                     {
                                         long artifactID = itemValuePair.Key;
                                         if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
@@ -3782,7 +3790,7 @@ namespace ATT
                                 foreach (var o in artifacts)
                                 {
                                     ++artifactID;
-                                    if (o is Dictionary<string, object> artifact)
+                                    if (o is IDictionary<string, object> artifact)
                                     {
                                         if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
                                             Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
@@ -3890,7 +3898,11 @@ namespace ATT
                                 // KEY: Achievement ID, VALUE: Dictionary
                                 if (achieveInfo is IDictionary<string, object> info && info.TryGetValue("achID", out long achID))
                                 {
-                                    ACHIEVEMENTS[achID] = info;
+                                    if (ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> existingData))
+                                    {
+                                        foreach (var pair2 in info) Objects.Merge(existingData, pair2.Key, pair2.Value);
+                                    }
+                                    else ACHIEVEMENTS[achID] = info;
                                 }
                             }
                         }
@@ -3903,7 +3915,7 @@ namespace ATT
                             {
                                 list = list2;
                             }
-                            else if (pair.Value is Dictionary<string, object> data)
+                            else if (pair.Value is IDictionary<string, object> data)
                             {
                                 list = data.Values.ToList();
                             }
@@ -4003,7 +4015,7 @@ namespace ATT
             return dict;
         }
 
-        static Dictionary<string, object> ParseAsStringDictionary(LuaTable table)
+        static IDictionary<string, object> ParseAsStringDictionary(LuaTable table)
         {
             var dict = new Dictionary<string, object>();
             foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key]);
@@ -4112,7 +4124,7 @@ namespace ATT
             // Firstly, we need to know the type of object we're working with.
             if (data is bool b) builder.Append(b ? "1" : "false");  // NOTE: 0 in lua is evaluated as true, not false. So we can't shorten it. (rip)
             else if (data is List<object> list) ExportClean(builder, list);
-            else if (data is Dictionary<string, object> dict) ExportClean(builder, dict);
+            else if (data is IDictionary<string, object> dict) ExportClean(builder, dict);
             else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
             else if (data is Dictionary<long, object> longdict) ExportClean(builder, longdict);
             else if (data is Dictionary<long, long> longlongdict) ExportClean(builder, longlongdict);
@@ -4322,7 +4334,7 @@ namespace ATT
                         Objects.ExportDB(debugFolder.FullName);
 
                         // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
-                        foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                        foreach (KeyValuePair<string, SortedDictionary<decimal, List<IDictionary<string, object>>>> dbKeyDatas in DebugDBs)
                         {
                             File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), ToJSON(dbKeyDatas.Value), Encoding.UTF8);
                         }
@@ -4387,7 +4399,7 @@ namespace ATT
                             var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
                             foreach (var key in CustomHeaders.Keys)
                             {
-                                if (CustomHeaders.TryGetValue(key, out object o) && o is Dictionary<string, object> header)
+                                if (CustomHeaders.TryGetValue(key, out object o) && o is IDictionary<string, object> header)
                                 {
                                     keys.Add(key);
                                     subbuilder.Clear();
@@ -4422,7 +4434,7 @@ namespace ATT
                                     }
                                     if (header.TryGetValue("text", out value))
                                     {
-                                        if (!(value is Dictionary<string, object> localeData))
+                                        if (!(value is IDictionary<string, object> localeData))
                                         {
                                             localeData = new Dictionary<string, object>
                                             {
@@ -4454,7 +4466,7 @@ namespace ATT
                                     }
                                     if (header.TryGetValue("description", out value))
                                     {
-                                        if (!(value is Dictionary<string, object> localeData))
+                                        if (!(value is IDictionary<string, object> localeData))
                                         {
                                             localeData = new Dictionary<string, object>
                                             {
@@ -4486,7 +4498,7 @@ namespace ATT
                                     }
                                     if (header.TryGetValue("lore", out value))
                                     {
-                                        if (!(value is Dictionary<string, object> localeData))
+                                        if (!(value is IDictionary<string, object> localeData))
                                         {
                                             localeData = new Dictionary<string, object>
                                             {
@@ -4645,7 +4657,7 @@ namespace ATT
 
                     // Now export it based on what we know.
                     var builder = new StringBuilder("-------------------------------------------------------\n--   C U S T O M   H E A D E R S   M O D U L E   --\n-------------------------------------------------------\n")
-                        .AppendLine("local _ = select(2, ...);")
+                        .AppendLine("local appName, _ = ...;")
                         .AppendLine("local L = _.L;")
                         .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
                     var keys = new List<long>();
@@ -4662,7 +4674,7 @@ namespace ATT
                         // Include Only Referenced Headers!
                         if (CUSTOM_HEADERS_WITH_REFERENCES.ContainsKey(key))
                         {
-                            if (CustomHeaders.TryGetValue(key, out object o) && o is Dictionary<string, object> header)
+                            if (CustomHeaders.TryGetValue(key, out object o) && o is IDictionary<string, object> header)
                             {
                                 keys.Add(key);
                                 if (header.TryGetValue("eventID", out object value))
@@ -4691,7 +4703,7 @@ namespace ATT
                                 }
                                 if (header.TryGetValue("text", out value))
                                 {
-                                    if (!(value is Dictionary<string, object> localeData))
+                                    if (!(value is IDictionary<string, object> localeData))
                                     {
                                         localeData = new Dictionary<string, object>
                                         {
@@ -4709,7 +4721,7 @@ namespace ATT
                                 }
                                 if (header.TryGetValue("description", out value))
                                 {
-                                    if (!(value is Dictionary<string, object> localeData))
+                                    if (!(value is IDictionary<string, object> localeData))
                                     {
                                         localeData = new Dictionary<string, object>
                                         {
@@ -4727,7 +4739,7 @@ namespace ATT
                                 }
                                 if (header.TryGetValue("lore", out value))
                                 {
-                                    if (!(value is Dictionary<string, object> localeData))
+                                    if (!(value is IDictionary<string, object> localeData))
                                     {
                                         localeData = new Dictionary<string, object>
                                         {
@@ -4931,7 +4943,7 @@ namespace ATT
                     var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n");
                     var keys = OBJECT_NAMES.Keys.ToList();
                     keys.Sort();
-                    builder.AppendLine("local _ = select(2, ...);").Append("_.ObjectNames = {").AppendLine();
+                    builder.AppendLine("local appName, _ = ...;").Append("_.ObjectNames = {").AppendLine();
                     foreach (var key in keys)
                     {
                         if (OBJECTS_WITH_REFERENCES.ContainsKey(key))

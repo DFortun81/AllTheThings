@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(SETS, {
 		tier(CLASSIC_TIER, {
 			-- 1.x.x
@@ -3104,7 +3104,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						}),
 						cl(HUNTER, {
 							i(205820),	-- Ashen Predator's Faceguard
-							i(205819),	-- Ashen Predator's Poleyn
+							i(205819),	-- Ashen Predator's Poleyns
 							i(205821),	-- Ashen Predator's Skinners
 							i(205822),	-- Ashen Predator's Sling Vest
 							i(205818),	-- Ashen Predator's Trophy
@@ -3206,7 +3206,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						}),
 						cl(HUNTER, {
 							i(205820),	-- Ashen Predator's Faceguard
-							i(205819),	-- Ashen Predator's Poleyn
+							i(205819),	-- Ashen Predator's Poleyns
 							i(205821),	-- Ashen Predator's Skinners
 							i(205822),	-- Ashen Predator's Sling Vest
 							i(205818),	-- Ashen Predator's Trophy
@@ -3308,7 +3308,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						}),
 						cl(HUNTER, {
 							i(205820),	-- Ashen Predator's Faceguard
-							i(205819),	-- Ashen Predator's Poleyn
+							i(205819),	-- Ashen Predator's Poleyns
 							i(205821),	-- Ashen Predator's Skinners
 							i(205822),	-- Ashen Predator's Sling Vest
 							i(205818),	-- Ashen Predator's Trophy
@@ -3410,7 +3410,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						}),
 						cl(HUNTER, {
 							i(205820),	-- Ashen Predator's Faceguard
-							i(205819),	-- Ashen Predator's Poleyn
+							i(205819),	-- Ashen Predator's Poleyns
 							i(205821),	-- Ashen Predator's Skinners
 							i(205822),	-- Ashen Predator's Sling Vest
 							i(205818),	-- Ashen Predator's Trophy
@@ -3506,7 +3506,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						}),
 						cl(HUNTER, {
 							i(205820),	-- Ashen Predator's Faceguard
-							i(205819),	-- Ashen Predator's Poleyn
+							i(205819),	-- Ashen Predator's Poleyns
 							i(205821),	-- Ashen Predator's Skinners
 							i(205822),	-- Ashen Predator's Sling Vest
 							i(205818),	-- Ashen Predator's Trophy
@@ -4303,4 +4303,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

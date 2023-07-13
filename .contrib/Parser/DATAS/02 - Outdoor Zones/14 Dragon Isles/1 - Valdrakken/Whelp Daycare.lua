@@ -206,8 +206,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(72461, {	-- Anatidaephobia
 					["sourceQuests"] = { 72460 },	-- A Solid Pet
-					["provider"] = { "n", 182082 },	-- Agapanthus
-					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
 						i(206682),	-- Rusziona (PET!)
 					},
@@ -270,8 +270,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(72995, {	-- Patience, Please
 					["sourceQuests"] = { 72994 },	-- A Cavalier Pet
-					["provider"] = { "n", 182082 },	-- Agapanthus
-					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
 						i(206758),	-- Belastrasza (PET!)
 					},
@@ -330,8 +330,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73002, {	-- Temporal Immunity
 					["sourceQuests"] = { 73001 },	-- A Scaly Pet
-					["provider"] = { "n", 182082 },	-- Agapanthus
-					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
 						i(206971),	-- Zhusadormu (PET!)
 					},
@@ -390,8 +390,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73009, {	-- Sight Isn't Everything
 					["sourceQuests"] = { 73008 },	-- A Scholar's Pet
-					["provider"] = { "n", 182082 },	-- Agapanthus
-					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
 						i(206974),	-- Zalethgos (PET!)
 					},
@@ -450,8 +450,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73016, {	-- Hibernation
 					["sourceQuests"] = { 73015 },	-- A Sleepy Pet
-					["provider"] = { "n", 182082 },	-- Agapanthus
-					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199259 },	-- Lasztak
+					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
 						i(206979),	-- Posidriss (PET!)
 					},
@@ -493,8 +493,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73131, {	--  Dignified Disguises
 					["sourceQuests"] = { 72993 },	-- I'm the Boss!
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199990 },	-- Belastrasza
+					["coord"] = { 10.7, 59.0, VALDRAKKEN },
 				}),
 				q(73134, {	--  Eternal Escapades
 					["sourceQuests"] = { 73000 },	-- Sneezing Through Time
@@ -503,13 +503,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73130, {	-- Fowl Runic Scribblings
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 				}),
 				q(73124, {	-- Hoard Behavior
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 				}),
 				q(73135, {	-- Obsidian Obfuscation
 					["sourceQuests"] = { 72459 },	-- What's a Duck?

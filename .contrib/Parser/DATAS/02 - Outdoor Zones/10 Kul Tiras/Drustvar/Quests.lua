@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					azeriteItem(160890),	-- Waycrest Militia Battleplate
 					azeriteItem(160889),	-- Crone-Seeker's Chainmail
 					azeriteItem(155106),	-- Crone-Seeker's Helm
-					un(NEVER_IMPLEMENTED, azeriteItem(160891)), -- Wickerwoven Robe
+					azeriteItem(160891, { ["timeline"] = { "created 8.0.1.26433" }}), -- Wickerwoven Robe
 					azeriteItem(160887),	-- Wickerwoven Vestments
 					azeriteItem(155105),	-- Wickerwoven Crown
 					azewrongItem(175301),	-- Banisher Cowl (no azerite version)
@@ -1028,7 +1028,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = {
 					50585,	-- Hexecutioner
 					50584,	-- Ruinous Rituals
-					50586,	-- The Fall of Corlain
 					50583,	-- To the Other Side
 					-- Definitely requires Hexecutioner; may not require others.  Needs confirmation.
 					-- Awarded "Storming the Manor" criteria.
@@ -1538,7 +1537,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -1566,4 +1565,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(161296),	-- Autumnvale Hunting Rifle
 		}),
 	}),
-}));
+});

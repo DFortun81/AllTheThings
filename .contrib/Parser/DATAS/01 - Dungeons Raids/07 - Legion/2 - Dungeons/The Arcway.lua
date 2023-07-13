@@ -75,11 +75,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(137408),	-- Xakal's Determination
 				})),
 				cr(98207, e(1500, {	-- Nal'tira
-					i(136969, {	-- Tome of Hex: Spider
-						["spellID"] = 211004,	-- Hex(Spider)
-						["classes"] = { SHAMAN },
-						["f"] = RECIPES,
-					}),
+					i(136969),	-- Tome of Hex: Spider (CI!)
 					i(134472),	-- Arcane Exterminator's Shoulderguards
 					i(134410),	-- Cloak of Mana-Spun Silk
 					i(137410),	-- Greathelm of Barbed Chelicerae
@@ -154,11 +150,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(137408),	-- Xakal's Determination
 				})),
 				cr(98207, e(1500, {	-- Nal'tira
-					i(136969, {	-- Tome of Hex: Spider
-						["spellID"] = 211004,	-- Hex(Spider)
-						["classes"] = { SHAMAN },
-						["f"] = RECIPES,
-					}),
+					i(136969),	-- Tome of Hex: Spider (CI)
 					i(134472),	-- Arcane Exterminator's Shoulderguards
 					i(134410),	-- Cloak of Mana-Spun Silk
 					i(137410),	-- Greathelm of Barbed Chelicerae

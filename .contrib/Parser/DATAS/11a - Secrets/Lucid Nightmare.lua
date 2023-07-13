@@ -3,7 +3,6 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, {
-	-- TODO: missing coords... anyone not finished this?
 	header(HEADERS.Spell, 247402, {	-- Lucid Nightmare
 		["description"] = "***Quest tracking enabled is required to see all the steps.***",
 		["modelScale"] = .8,
@@ -32,6 +31,7 @@ root(ROOTS.Secrets, {
 			o(272061, {	-- Step 4: Inconspicuous Note
 				["model"] = 1661948,
 				["questID"] = 47841,
+				["coord"] = { 58.2, 25.5, DEEPHOLM },
 				["sourceQuest"] = 47840,	-- Step 3: Mind Larva
 				["description"] = "|cFFFFFFFFStep 4:|r The next |cFFFFD700Inconspicuous Note|r will spawn on the table.  Click it.  The note reads...\r\r|cFFFFFFFFDeeper than deep.|r\r|cFFFFFFFFAwaits your seat.|r\n",
 			}),
@@ -51,6 +51,7 @@ root(ROOTS.Secrets, {
 			o(272165, {	-- Step 6: Inconspicuous Note
 				["model"] = 1661948,
 				["questID"] = 47850,
+				["coord"] = { 66.5, 36.0, VALSHARAH },
 				["sourceQuest"] = 47849,	-- Step 5: Strange Skull
 				["description"] = "|cFFFFFFFFStep 6:|r The next |cFFFFD700Inconspicuous Note|r spawns in front of the chair.  Click it.  The note reads...\r\r|cFFFFFFFFWhere the shaded delegate may appear.|r\n",
 			}),

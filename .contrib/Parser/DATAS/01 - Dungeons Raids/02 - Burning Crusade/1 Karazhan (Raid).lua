@@ -931,6 +931,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(97551, {	-- Fiendish Imp (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
+					i(207111, {	-- Grimoire of the Hellfire Fel Imp (CI!)
+						["timeline"] = { ADDED_10_1_5 },
+					}),
 					i(28658),	-- Terestian's Stranglestaff
 					i(28657),	-- Fool's Bane
 					i(28660),	-- Gilded Thorium Cloak

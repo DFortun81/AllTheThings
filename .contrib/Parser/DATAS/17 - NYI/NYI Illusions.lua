@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	filter(ILLUSIONS, {
 		tier(BFA_TIER, {
 			-- 8.2.5
@@ -28,4 +28,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

@@ -484,10 +484,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(64983),	-- After completing The Maw intro, upon teleport and loading screen into Oribos (level 48 human rogue)
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		filter(CONSUMABLES, {
 			i(185974),	-- Bahmeht Chain Link (PTR only)
 		}),
 	}),
-}));
+});

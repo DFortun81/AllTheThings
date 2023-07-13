@@ -894,7 +894,7 @@ for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	end
 end
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		n(WEAPONS, {
 			i(176017),	-- Ardenweald Quest 2H Mace
@@ -929,7 +929,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(176036),	-- Ardenweald Quest Sword
 		}),
 	}),
-}));
+});
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(62961),	-- Completed after doing Go Beyond! by Marasmius

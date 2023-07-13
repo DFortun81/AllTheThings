@@ -4077,7 +4077,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		cat(780, {	-- Cards
 			r(111830),	-- Darkmoon Card of Mists
 			r(130407, {	-- Mystery of the Mists
-				["u"] = NEVER_IMPLEMENTED,
+				["timeline"] = { "created 5.0.4.15890" },
 			}),
 		}),
 		cat(781, {	-- Scrolls & Research

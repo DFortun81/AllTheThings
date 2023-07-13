@@ -93,7 +93,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(70501, {	-- License to Hunt
-					["sourceQuests"] = { 71231 },	-- Call of the Hunt
+					["sourceQuests"] = {
+						71231,	-- Call of the Hunt
+						DF_ACCOUNT_CAMPAIGN_QUEST,	-- or HQT 72778
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 					["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				}),
@@ -451,8 +455,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(MARUUK_CENTAUR, {
-		q(72778),	-- triggered with 'Call of the Plains' (71229)
-		q(72737),	-- triggered with 'Call of the Hunt' (71231)
-		q(73919),	-- triggered during 'License to Hunt' (70501)
+		q(72778),	-- triggered with 'Call of the Plains' (questID 71229) (spellID 397059)
+		q(72737),	-- triggered with 'Call of the Hunt' (questID 71231) (spellID 396944)
+		q(73919),	-- triggered during 'License to Hunt' (questID 70501)
 	}),
 })));

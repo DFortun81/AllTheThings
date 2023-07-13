@@ -4,6 +4,12 @@
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
 		n(TREASURES, {
+			o(243323, {	-- Balance Stone
+				i(123869),	-- Relic of Elune
+			}),
+			o(243321, {	-- Feral Stone
+				i(123868),	-- Relic of Shakama
+			}),
 			o(242671, {	-- Glimmering Treasure Chest
 				["questID"] = 39089,
 				["coord"] = { 61.0, 79.2, VALSHARAH },

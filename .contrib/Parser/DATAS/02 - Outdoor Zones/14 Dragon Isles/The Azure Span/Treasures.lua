@@ -94,6 +94,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(202712),	-- Rubber Fish
 				},
 			}),
+			o(383660, {	-- Salt Crystal
+				["coord"] = { 11.0, 41.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(201033),	-- Magical Salt Crystal
+				},
+			}),
 			o(381157, {	-- Sapphire Gem Cluster
 				["coord"] = { 49.0, 25.0, THE_AZURE_SPAN },
 				["questID"] = 70605,

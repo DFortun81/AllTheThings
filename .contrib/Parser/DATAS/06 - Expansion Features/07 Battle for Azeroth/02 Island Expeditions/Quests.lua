@@ -608,8 +608,8 @@ root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
 		q(57106),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Horde
 		q(55686),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Alliance
 		q(57105, {["repeatable"]=true}),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Horde
-		q(55712),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Alliance
-		q(57107),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Horde
+		q(55712, {["repeatable"]=true}),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Alliance
+		q(57107, {["repeatable"]=true}),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Horde
 		q(55619),	-- Upgrade Your Vehicle (Optional), Alliance
 		q(57103, {["repeatable"]=true}),	-- Upgrade Your Vehicle (Optional), Horde
 		q(55617),	-- Expedition Siege Engine — assembling siege engine in Island Expeditions

@@ -25,8 +25,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205002),	-- Blaise (PET!)
 					}),
 					n(DRAKEWATCHER_MANUSCRIPTS, {
-						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!) [Discord]	
-						i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!) [Mount Discord]
+						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!) [Discord]
+						i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!) [Mount Discord/Runaway]
 					}),
 					i(203710),	-- Everburning Key
 					i(206043),	-- Fyrakk's Frenzy (TOY!)
@@ -62,7 +62,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 75.1, 69.6, OHNAHRAN_PLAINS },
 				}),
 				q(74569, {	-- Deny Them Resources
-					["provider"] = { "n", 201860 },	-- Tigari Khan
+					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
 					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
 				}),
 				q(74775, {	-- Disciple of Fyrakk: Kretchenwrath
@@ -70,6 +70,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					-- ["maps"] = { OHNAHRAN_PLAINS },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
+				}),
+				q(75182, {	-- Grand Theft Mammoth
+					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
+					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
 				}),
 				q(75888, {	-- Suffusion Camp
 					["provider"] = { "n", 201648 },	-- Somnikus
@@ -286,6 +290,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(FYRAKK_ASSAULTS, {
 		q(75448),	-- Ward of Ingira Elite
 		q(75447),	-- Ward of Fyrakk Elite / Forgemaster 1st kill
-		q(75157),	-- Completes alongside 75888
+		q(75157),	-- Completes with 'Suffusion Camp' (questID 75888) (spellID 411135)
 	}),
 }));

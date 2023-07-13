@@ -397,7 +397,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { "created 7.2.5" } }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["timeline"] = { "created 7.2.5" } }, {
 	n(TRIAL_OF_STYLE_HEADER, {
 		i(188240),	-- Augur's Walkers
 		i(188246),	-- Bloodbathed Slippers

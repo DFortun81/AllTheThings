@@ -17,7 +17,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(ZALAZANES_FALL,
 		["races"] = HORDE_ONLY,
 		-- #if ANYCLASSIC
 		["OnUpdate"] = [[function(t)
-			if ATTClassicSettings.Unobtainables[]] .. CATA_PHASE_ONE .. [[] then
+			if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
 				t.u = ]] .. REMOVED_FROM_GAME .. [[;
 				t.rwp = nil;
 			else

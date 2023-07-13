@@ -151,7 +151,9 @@ root(ROOTS.Zones, {
 				q(44812),	-- Running on Empty
 				q(44799),	-- Safe Keeping
 				q(42962),	-- Secret Correspondence
-				q(42725),	-- Sharing the Wealth
+				q(42725, {	-- Sharing the Wealth
+					i(137295),	-- Bottle of Arcwine (QI!)
+				}),
 				q(41354, {	-- Shattered Felslate Seams
 					["requireSkill"] = MINING,
 				}),

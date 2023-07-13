@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	tier(CLASSIC_TIER, {
 		n(ARMOR, {
 			n(BACK, {
@@ -2352,6 +2352,12 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(198434),	-- zzOldDarkmoon Deckbox: Refreshing Dance
 					i(198435),	-- zzOldDarkmoon Deckbox: Watcher
 				})),
+
+				-- 10.0.7
+				tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+					i(204192),	-- Ascendancy
+					i(203680),	-- Totem Toss
+				})),
 			}),
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {	-- Unknown
@@ -2359,4 +2365,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

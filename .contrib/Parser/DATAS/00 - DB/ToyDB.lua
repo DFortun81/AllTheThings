@@ -1161,7 +1161,7 @@ i(204262);	-- Holoviewer: The Timeless One
 i(204687);	-- Obsidian Battle Horn
 i(202283);	-- Reading Glasses
 i(199900);	-- Secondhand Survey Tools
-i(203734);	-- Snow Blanket
+-- i(203734);	-- Snow Blanket [Not currently a Toy because Blizzard]
 i(203852);	-- Spore-Bound Essence
 
 ------------------
@@ -1195,10 +1195,8 @@ i(205027);	-- Explorer's Banner
 -- PATCH 10.1.5 --
 ------------------
 i(208186);	-- Boffins
--- #if AFTER 10.1.5
 i(140192);	-- Dalaran Hearthstone
 i(110560);	-- Garrison Hearthstone
--- #endif
 i(208058);	-- Minute Glass
 i(208057);	-- Smoldering Banner of the Aspects
 i(207099);	-- Tiny Box of Tiny Rocks

@@ -253,7 +253,7 @@ root(ROOTS.ExpansionFeatures,
 		})),
 	})
 );
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOD_TIER, {
 		garrisonBuilding(141, {
 			cl(DEATHKNIGHT, {
@@ -509,4 +509,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

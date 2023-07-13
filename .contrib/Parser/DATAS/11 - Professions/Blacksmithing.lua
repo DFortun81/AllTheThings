@@ -450,7 +450,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodsoul Shoulders",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24137,
 				}),
 				{
@@ -459,7 +459,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Darksoul Shoulders",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24141,
 				}),
 				-- #if AFTER TBC
@@ -579,7 +579,7 @@ profession(BLACKSMITHING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodsoul Gauntlets",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24138,
 				}),
 				-- #if AFTER TBC
@@ -688,7 +688,7 @@ profession(BLACKSMITHING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodsoul Breastplate",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24136,
 				}),
 				{
@@ -711,7 +711,7 @@ profession(BLACKSMITHING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Darksoul Breastplate",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24139,
 				}),
 				-- #if AFTER TBC
@@ -897,7 +897,7 @@ profession(BLACKSMITHING, {
 				-- #endif
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Darksoul Leggings",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24140,
 				}),
 				-- #if AFTER TBC
@@ -1317,7 +1317,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Masterwork Stormhammer",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { "removed 6.0.2", "added 10.1.5" },
 					["recipeID"] = 16993,
 				},
 				-- #endif
@@ -1394,7 +1394,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "The Shatterer",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 10003,
 				},
 				-- #endif
@@ -1417,7 +1417,7 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Truesilver Champion",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 10015,
 				},
 				-- #endif
@@ -3223,17 +3223,17 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Lightsteel Helm",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122584,
 				},
 				{
 					["name"] = "Masterwork Ghost-Forged Helm",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122600,
 				},
 				{
 					["name"] = "Masterwork Lightsteel Helm",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122608,
 				},
 				{
@@ -3242,7 +3242,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Spiritguard Helm",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122568,
 				},
 			},
@@ -3297,17 +3297,17 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Lightsteel Shoulders",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122585,
 				},
 				{
 					["name"] = "Masterwork Ghost-Forged Shoulders",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122601,
 				},
 				{
 					["name"] = "Masterwork Lightsteel Shoulders",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122609,
 				},
 				{
@@ -3316,7 +3316,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Spiritguard Shoulders",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122569,
 				},
 			},
@@ -3383,7 +3383,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Lightsteel Breastplate",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122586,
 				},
 				{
@@ -3392,12 +3392,12 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Masterwork Ghost-Forged Breastplate",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122602,
 				},
 				{
 					["name"] = "Masterwork Lightsteel Breastplate",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122610,
 				},
 				{
@@ -3410,7 +3410,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Spiritguard Breastplate",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122570,
 				},
 				{
@@ -3489,7 +3489,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Lightsteel Gauntlets",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122587,
 				},
 				{
@@ -3498,12 +3498,12 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Masterwork Ghost-Forged Gauntlets",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122603,
 				},
 				{
 					["name"] = "Masterwork Lightsteel Gauntlets",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122611,
 				},
 				{
@@ -3512,7 +3512,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Spiritguard Gauntlets",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122571,
 				},
 			},
@@ -3567,17 +3567,17 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Lightsteel Bracers",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122589,
 				},
 				{
 					["name"] = "Masterwork Ghost-Forged Bracers",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122605,
 				},
 				{
 					["name"] = "Masterwork Lightsteel Bracers",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122613,
 				},
 				{
@@ -3648,17 +3648,17 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Lightsteel Belt",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122591,
 				},
 				{
 					["name"] = "Masterwork Ghost-Forged Belt",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122607,
 				},
 				{
 					["name"] = "Masterwork Lightsteel Belt",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122615,
 				},
 				{
@@ -3671,7 +3671,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Spiritguard Belt",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122575,
 				},
 			},
@@ -3734,17 +3734,17 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Lightsteel Legplates",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122588,
 				},
 				{
 					["name"] = "Masterwork Ghost-Forged Legplates",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122604,
 				},
 				{
 					["name"] = "Masterwork Lightsteel Legplates",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122612,
 				},
 				{
@@ -3757,7 +3757,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Spiritguard Legplates",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122572,
 				},
 			},
@@ -3824,17 +3824,17 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Lightsteel Boots",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122590,
 				},
 				{
 					["name"] = "Masterwork Ghost-Forged Boots",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122606,
 				},
 				{
 					["name"] = "Masterwork Lightsteel Boots",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122614,
 				},
 				{
@@ -3843,7 +3843,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Spiritguard Boots",
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 5.0.4.15890" },
 					["recipeID"] = 122574,
 				},
 			},
@@ -4079,7 +4079,7 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Truesteel Ingot",
 					["recipeID"] = 171718,
-					["u"] = NEVER_IMPLEMENTED,
+					["timeline"] = { "created 6.0.1.18125" },
 				},
 			},
 		},
@@ -4133,95 +4133,95 @@ profession(BLACKSMITHING, {
 			["groups"] = {
 				{	-- Draenic Steel Chestplate,
 					["recipeID"] = 153605--[[Draenic Steel Chestplate]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel Gauntlets,
 					["recipeID"] = 153607--[[Draenic Steel Gauntlets]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel Girdle,
 					["recipeID"] = 153611--[[Draenic Steel Girdle]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel Helm,
 					["recipeID"] = 153608--[[Draenic Steel Helm]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel Legguards,
 					["recipeID"] = 153609--[[Draenic Steel Legguards]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel Shoulders,
 					["recipeID"] = 153610--[[Draenic Steel Shoulders]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel Warboots,
 					["recipeID"] = 153606--[[Draenic Steel Warboots]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel Wristwraps,
 					["recipeID"] = 153612--[[Draenic Steel Wristwraps]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Chestplate,
 					["recipeID"] = 153643--[[Hardened Draenic Steel Chestplate]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Gauntlets,
 					["recipeID"] = 153645--[[Hardened Draenic Steel Gauntlets]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Girdle,
 					["recipeID"] = 153649--[[Hardened Draenic Steel Girdle]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Helm,
 					["recipeID"] = 153646--[[Hardened Draenic Steel Helm]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Legguards,
 					["recipeID"] = 153647--[[Hardened Draenic Steel Legguards]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Shoulders,
 					["recipeID"] = 153648--[[Hardened Draenic Steel Shoulders]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Warboots,
 					["recipeID"] = 153644--[[Hardened Draenic Steel Warboots]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Wristwraps,
 					["recipeID"] = 153650--[[Hardened Draenic Steel Wristwraps]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Chestplate,
 					["recipeID"] = 153656--[[Peerless Draenic Steel Chestplate]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Gauntlets,
 					["recipeID"] = 153658--[[Peerless Draenic Steel Gauntlets]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Helm,
 					["recipeID"] = 153659--[[Peerless Draenic Steel Helm]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Legguards,
 					["recipeID"] = 153660--[[Peerless Draenic Steel Legguards]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Shoulders,
 					["recipeID"] = 153661--[[Peerless Draenic Steel Shoulders]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Warboots,
 					["recipeID"] = 153657--[[Peerless Draenic Steel Warboots]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Wristwraps,
 					["recipeID"] = 153663--[[Peerless Draenic Steel Wristwraps]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{
 					["name"] = "Smoldering Breastplate",
@@ -4275,63 +4275,63 @@ profession(BLACKSMITHING, {
 			["groups"] = {
 				{	-- Draenic Steel Bulwark,
 					["recipeID"] = 153631--[[Draenic Steel Bulwark]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel Dagger,
 					["recipeID"] = 153629--[[Draenic Steel Dagger]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel Mace,
 					["recipeID"] = 153630--[[Draenic Steel Mace]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel Sword,
 					["recipeID"] = 153628--[[Draenic Steel Sword]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Draenic Steel War Axe,
 					["recipeID"] = 153627--[[Draenic Steel War Axe]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Bulwark,
 					["recipeID"] = 153655--[[Hardened Draenic Steel Bulwark]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Dagger,
 					["recipeID"] = 153653--[[Hardened Draenic Steel Dagger]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Mace,
 					["recipeID"] = 153654--[[Hardened Draenic Steel Mace]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel Sword,
 					["recipeID"] = 153652--[[Hardened Draenic Steel Sword]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Hardened Draenic Steel War Axe,
 					["recipeID"] = 153651--[[Hardened Draenic Steel War Axe]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Bulwark,
 					["recipeID"] = 153668--[[Peerless Draenic Steel Bulwark]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Dagger,
 					["recipeID"] = 153666--[[Peerless Draenic Steel Dagger]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Mace,
 					["recipeID"] = 153667--[[Peerless Draenic Steel Mace]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel Sword,
 					["recipeID"] = 153665--[[Peerless Draenic Steel Sword]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{	-- Peerless Draenic Steel War Axe,
 					["recipeID"] = 153664--[[Peerless Draenic Steel War Axe]],
-					["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta,
+					["timeline"] = { "created 6.0.1.18125" },	-- Actually WOD recipe and never made it out of Beta,
 				},
 				{
 					["name"] = "Steelforged Aegis",
@@ -6609,7 +6609,7 @@ itemrecipe("Plans: Treads of Destiny", 45091, 63190, WRATH_PHASE_TWO);
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
 		itemrecipe("Plans: Bleakwood Hew", 12817, 16965);
 		itemrecipe("Plans: Blood Talon", 12831, 16986);
@@ -6644,5 +6644,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Plans: Swiftsteel Shoulders", 35532, 41133);
 		-- #endif
 	}),
-}));
+});
 -- #endif

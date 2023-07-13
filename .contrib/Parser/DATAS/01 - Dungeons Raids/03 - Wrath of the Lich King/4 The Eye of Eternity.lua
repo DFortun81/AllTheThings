@@ -3,7 +3,7 @@
 -----------------------------------------------------
 -- #if ANYCLASSIC
 local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else

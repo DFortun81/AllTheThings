@@ -1351,7 +1351,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		inst(1193, {	-- Sanctum of Domination
 			i(181374),	-- Sylvanas Shadowlands Bow
@@ -1366,7 +1366,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});
 
 root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1193, {	-- Sanctum of Domination

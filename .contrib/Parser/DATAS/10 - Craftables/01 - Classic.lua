@@ -493,14 +493,14 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(12797),	-- Frostguard
 			i(12796),	-- Hammer of the Titans
 			i(12783),	-- Heartseeker
-			i(12794, {["timeline"]={"removed 6.0.2"}}),	-- Masterwork Stormhammer
+			i(12794, {["timeline"]={"removed 6.0.2",ADDED_10_1_5}}),	-- Masterwork Stormhammer
 			applyclassicphase(PHASE_THREE, i(19169)),	-- Nightfall
 			applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader
 			i(7961, {["timeline"]={"removed 4.0.3","added 4.3.0"}}),	-- Phantom Blade
 			applyclassicphase(PHASE_FIVE, i(22383)),	-- Sageblade
 			i(12781),	-- Serenity
-			i(7954, {["timeline"]={"removed 4.0.3"}}),	-- The Shatterer
-			i(7960, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Champion
+			i(7954, {["timeline"]={"removed 4.0.3",ADDED_10_1_5}}),	-- The Shatterer
+			i(7960, {["timeline"]={"removed 4.0.3",ADDED_10_1_5}}),	-- Truesilver Champion
 			-- #endif
 			-- #if AFTER CATA
 			i(30071, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Light Earthforged Blade
@@ -857,7 +857,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(38781),	-- Enchant 2H Weapon - Lesser Intellect
 			i(38794),	-- Enchant Weapon - Lesser Striking
 			i(38788),	-- Enchant 2H Weapon - Lesser Versatility / WRATH: Enchant 2H Weapon - Lesser Spirit
-			i(38871, {["timeline"]={"added 3.0.1","removed 4.0.3"}}),	-- Enchant Weapon - Lifestealing
+			i(38871, {["timeline"]={"added 3.0.1","removed 4.0.3", "added 10.1.5" }}),	-- Enchant Weapon - Lifestealing
 			i(38875),	-- Enchant 2H Weapon - Major Intellect
 			i(38874),	-- Enchant 2H Weapon - Major Versatility / WRATH: Enchant 2H Weapon - Major Spirit
 			i(38884),	-- Enchant Weapon - Mighty Intellect
@@ -1469,10 +1469,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(43416, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Execution
 			i(43541, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Death Grip
 
-			i(89868, {	-- Glyph of the Cheetah
-				["questID"] = 62677,
-				["timeline"] = { "added 5.0.3.15882" },
-				["classes"] = { DRUID },
+			i(89868, {	-- Mark of the Cheetah // Glyph of the Cheetah (CI!)
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 
 
@@ -1493,11 +1491,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(42743, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
 			i(42461, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
 			i(42908, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
-			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+]
-				-- #if AFTER SHADOWLANDS
-				["questID"] = 62673,
-				["classes"] = { DRUID },
-				-- #endif
+			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
 				["timeline"]={ "added 3.0.2" },
 			}),
 			i(43334, {["timeline"]={"added 3.0.2"}}),		-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon[MOP+]
@@ -1894,9 +1888,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			})),
 			-- #endif
 			i(2316),	-- Dark Leather Cloak
-			i(6466, {	-- Deviate Scale Cloak
-				["timeline"] = { "removed 4.0.3" },
-			}),
+			i(6466, {["timeline"] = {REMOVED_4_0_3,ADDED_10_1_5}}),	-- Deviate Scale Cloak
 			i(2310),	-- Embossed Leather Cloak
 			i(2308),	-- Fine Leather Cloak
 			i(7377),	-- Frost Leather Cloak
@@ -2046,9 +2038,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				i(4248),	-- Dark Leather Gloves
-				i(6467, {	-- Deviate Scale Gloves
-					["timeline"] = { "removed 4.0.3" },
-				}),
+				i(6467, {["timeline"] = {REMOVED_4_0_3,ADDED_10_1_5}}),	-- Deviate Scale Gloves
 				-- #if AFTER TBC
 				i(15063),	-- Devilsaur Gauntlets
 				-- #endif
@@ -2088,9 +2078,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				applyclassicphase(PHASE_THREE, i(19162)),	-- Corehound Belt
 				-- #endif
 				i(4249),	-- Dark Leather Belt
-				i(6468, {	-- Deviate Scale Belt
-					["timeline"] = { "removed 4.0.3" },
-				}),
+				i(6468, {["timeline"] = {REMOVED_4_0_3,ADDED_10_1_5}}),	-- Deviate Scale Belt
 				i(7387),	-- Dusky Belt
 				i(4246),	-- Fine Leather Belt
 				i(4262),	-- Gem-Studded Leather Belt
@@ -2777,7 +2765,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}),
 	}),
 }));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(BLACKSMITHING, {
 			tier(CLASSIC_TIER, {
@@ -2803,4 +2791,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

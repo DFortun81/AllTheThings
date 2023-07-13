@@ -219,6 +219,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(201786),	-- Recipe: Salt-Baked Fishcake (RECIPE!)
 						i(201785),	-- Recipe: Seamoth Surprise (RECIPE!)
 						i(201784),	-- Recipe: Timely Demise (RECIPE!)
+						i(191859),	-- Half-Boiled Fish (QI!)
 					},
 				}),
 				q(66418, {	-- Testing the Tuskaprsenal
@@ -259,6 +260,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 187323 },	-- Tutaqan
 					["coord"] = { 53.9, 38.1, THE_WAKING_SHORES },
 					["g"] = {
+						spell(390631, {	-- Ottuk Taming
+							["collectible"] = true,
+							["classes"] = { HUNTER },
+							["filterID"] = RECIPES,
+						}),
 						i(201783),	-- Tutaqan's Commendation
 					},
 				}),
@@ -648,10 +654,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
-		q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (71230)
-		q(71184),	-- Triggered with 'While the Iron Is Hot' (66444)
-		q(72753),	-- Triggered with 'While the Iron Is Hot' (66444)
+		q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (questID 71230) (spellID 397063)
+		q(71184),	-- Triggered with 'While the Iron Is Hot' (questID 66444) (spellID 390818)
+		q(72753),	-- Triggered with 'While the Iron Is Hot' (questID 66444) (spellID 397079)
 		q(72400),	-- Triggered when hitting Renown 11
-		q(72782),	-- Triggered with 'A Lost Tribe' (68863)
+		q(72782),	-- Triggered with 'A Lost Tribe' (questID 68863) (spellID 397064)
 	}),
 }));

@@ -3034,6 +3034,7 @@ i(208012, 4255);	-- Briarhorn Hatchling
 i(208008, 4259);	-- Doomrubble
 i(208009, 4257);	-- Gill'dan
 i(208010, 4258);	-- Jeepers
+i(206763, 3596);	-- Kabluey
 i(208013, 4260);	-- Killbot 9000
 i(205162, 3553);	-- Nelthara
 i(208011, 4261);	-- Obsidian Warwhelp
@@ -3060,5 +3061,6 @@ i(206979, 3601);	-- Posidriss
 -- #if AFTER WRATH
 i(198665, 384796);	-- Pebble's Pebble
 i(200060, 388541);	-- Hoplet
+i(204982, 407786);	-- Glub
 -- #endif
 -- #endif

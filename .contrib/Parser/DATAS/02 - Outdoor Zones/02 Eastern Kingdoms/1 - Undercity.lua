@@ -293,15 +293,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(7132, {	-- Brutal Legguards
 							["timeline"] = { "removed 4.0.3" },
-							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
-								if _.Level >= 40 then
-									t.f = ]] .. PLATE .. [[;
-								else
-									t.f = ]] .. MAIL .. [[;
-								end
-							end]],
-							-- #endif
 						}),
 					},
 				}),

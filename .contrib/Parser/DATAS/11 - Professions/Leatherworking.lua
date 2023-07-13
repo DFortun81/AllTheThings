@@ -397,7 +397,7 @@ profession(LEATHERWORKING, {
 				-- #endif
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Blood Tiger Shoulders",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24125,
 				}),
 				-- #if AFTER TBC
@@ -509,7 +509,7 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Blood Tiger Breastplate",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24124,
 				}),
 				-- #if AFTER TBC
@@ -603,7 +603,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scorpid Vest",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.5" },
 					["recipeID"] = 19051,
 				},
 				{
@@ -658,7 +658,7 @@ profession(LEATHERWORKING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Primal Batskin Jerkin",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24121,
 				}),
 				{
@@ -805,7 +805,7 @@ profession(LEATHERWORKING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Primal Batskin Bracers",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24123,
 				}),
 				{
@@ -827,7 +827,7 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Swift Flight Bracers",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 22923,
 				}),
 				{
@@ -874,7 +874,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Deviate Scale Gloves",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 7954,
 				},
 				-- #if AFTER TBC
@@ -977,7 +977,7 @@ profession(LEATHERWORKING, {
 				}),
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Primal Batskin Gloves",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24122,
 				}),
 				{
@@ -1063,7 +1063,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Deviate Scale Belt",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 7955,
 				},
 				{
@@ -1400,7 +1400,7 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Mongoose Boots",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 22922,
 				}),
 				{
@@ -1453,7 +1453,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Chromatic Cloak",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 22926,
 				}),
 				-- #endif
@@ -1463,7 +1463,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Deviate Scale Cloak",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 7953,
 				},
 				{
@@ -1489,7 +1489,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Hide of the Wild",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 22927,
 				}),
 				-- #endif
@@ -1509,7 +1509,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Shifting Cloak",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 22928,
 				}),
 				-- #endif
@@ -1526,7 +1526,7 @@ profession(LEATHERWORKING, {
 			["groups"] = {
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Gordok Ogre Suit",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 22815,
 				}),
 			},
@@ -8232,7 +8232,7 @@ itemrecipe("Pattern: Windripper Leggings", 44933, 62177, WRATH_PHASE_ONE);
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
 		itemrecipe("Deprecated Pattern: Light Winter Cloak", 2404),
 		itemrecipe("Deprecated Pattern: Light Winter Boots", 2405),
@@ -8262,4 +8262,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Pattern: Sun-Drenched Scale Gloves", 35550),
 		-- #endif
 	}),
-}));
+});

@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
+
 
 root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }, {
 	inst(1180, {	-- Ny'alotha
@@ -94,6 +96,16 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 				i(171202),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 1] (RECIPE!)
 				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 2] (RECIPE!)
 				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 3] (RECIPE!)
+			}),
+			d(AllDifficulties, {
+				e(2375, {	-- N'Zoth, the Corruptor
+					["crs"] = { 158041 },
+					["g"] = {
+						i(207091, {	-- Technique: Glyph of the Shath'Yar (RECIPE!)
+							["timeline"] = { ADDED_10_1_5 },
+						}),
+					},
+				}),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
@@ -233,7 +245,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 							i(174137),	-- Chitinspine Gloves
 							i(174171),	-- Dark Crystalline Girdle
 							i(174530),	-- Ring of Collective Consciousness
-							un(NEVER_IMPLEMENTED, i(174053)),	-- Corrupted Ring - Overconfident
+							i(174053, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Overconfident
 						},
 					}),
 					e(2364, {	-- Ra-den the Despoiled
@@ -271,7 +283,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 							i(174162),	-- Ego-Annihilating Grips
 							i(174130),	-- Grips of Occult Reminiscence
 							i(174531),	-- Void-Etched Band
-							un(NEVER_IMPLEMENTED, i(174052)),	-- Corrupted Ring - Masochistic
+							i(174052, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Masochistic
 						},
 					}),
 					e(2373, {	-- Drest'agath
@@ -288,7 +300,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 							i(173946),	-- Writhing Segment of Drest'agath
 							i(174532),	-- Ichorspine Loop
 							i(173946),	-- Writhing Segment of Drest'agath
-							un(NEVER_IMPLEMENTED, i(174054)),	-- Corrupted Ring - Last Grasp
+							i(174054, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Last Grasp
 						},
 					}),
 					e(2374, {	-- Il'gynoth, Corruption Reborn
@@ -349,7 +361,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 							i(174533),	-- Ring of Cosmic Potential
 							i(174277),	-- Lingering Psychic Shell
 							i(174103),	-- Manifesto of Madness
-							un(NEVER_IMPLEMENTED, i(174055)),	-- Corrupted Ring - Thing From Beyond
+							i(174055, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Thing From Beyond
 						},
 					}),
 				}),
@@ -464,7 +476,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(174137),	-- Chitinspine Gloves
 						i(174171),	-- Dark Crystalline Girdle
 						i(174530),	-- Ring of Collective Consciousness
-						un(NEVER_IMPLEMENTED, i(174053)),	-- Corrupted Ring - Overconfident
+						i(174053, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Overconfident
 					},
 				}),
 				e(2367, {	-- Shad'har the Insatiable
@@ -478,7 +490,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(174162),	-- Ego-Annihilating Grips
 						i(174130),	-- Grips of Occult Reminiscence
 						i(174531),	-- Void-Etched Band
-						un(NEVER_IMPLEMENTED, i(174052)),	-- Corrupted Ring - Masochistic
+						i(174052, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Masochistic
 					},
 				}),
 				e(2373, {	-- Drest'agath
@@ -493,7 +505,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
 						i(173946),	-- Writhing Segment of Drest'agath
-						un(NEVER_IMPLEMENTED, i(174054)),	-- Corrupted Ring - Last Grasp
+						i(174054, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Last Grasp
 					},
 				}),
 				e(2370, {	-- Vexiona
@@ -578,7 +590,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(174533),	-- Ring of Cosmic Potential
 						i(174277),	-- Lingering Psychic Shell
 						i(174103),	-- Manifesto of Madness
-						un(NEVER_IMPLEMENTED, i(174055)),	-- Corrupted Ring - Thing From Beyond
+						i(174055, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Thing From Beyond
 					},
 				}),
 			}),
@@ -687,7 +699,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(174137),	-- Chitinspine Gloves
 						i(174171),	-- Dark Crystalline Girdle
 						i(174530),	-- Ring of Collective Consciousness
-						un(NEVER_IMPLEMENTED, i(174053)),	-- Corrupted Ring - Overconfident
+						i(174053, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Overconfident
 					},
 				}),
 				e(2367, {	-- Shad'har the Insatiable
@@ -700,7 +712,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(174162),	-- Ego-Annihilating Grips
 						i(174130),	-- Grips of Occult Reminiscence
 						i(174531),	-- Void-Etched Band
-						un(NEVER_IMPLEMENTED, i(174052)),	-- Corrupted Ring - Masochistic
+						i(174052, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Masochistic
 					},
 				}),
 				e(2373, {	-- Drest'agath
@@ -714,7 +726,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
 						i(173946),	-- Writhing Segment of Drest'agath
-						un(NEVER_IMPLEMENTED, i(174054)),	-- Corrupted Ring - Last Grasp
+						i(174054, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Last Grasp
 					},
 				}),
 				e(2370, {	-- Vexiona
@@ -800,7 +812,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(174533),	-- Ring of Cosmic Potential
 						i(174277),	-- Lingering Psychic Shell
 						i(174103),	-- Manifesto of Madness
-						un(NEVER_IMPLEMENTED, i(174055)),	-- Corrupted Ring - Thing From Beyond
+						i(174055, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Thing From Beyond
 					},
 				}),
 			}),
@@ -914,7 +926,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(174137),	-- Chitinspine Gloves
 						i(174171),	-- Dark Crystalline Girdle
 						i(174530),	-- Ring of Collective Consciousness
-						un(NEVER_IMPLEMENTED, i(174053)),	-- Corrupted Ring - Overconfident
+						i(174053, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Overconfident
 					},
 				}),
 				e(2367, {	-- Shad'har the Insatiable
@@ -928,7 +940,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(174162),	-- Ego-Annihilating Grips
 						i(174130),	-- Grips of Occult Reminiscence
 						i(174531),	-- Void-Etched Band
-						un(NEVER_IMPLEMENTED, i(174052)),	-- Corrupted Ring - Masochistic
+						i(174052, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Masochistic
 					},
 				}),
 				e(2373, {	-- Drest'agath
@@ -943,7 +955,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
 						i(173946),	-- Writhing Segment of Drest'agath
-						un(NEVER_IMPLEMENTED, i(174054)),	-- Corrupted Ring - Last Grasp
+						i(174054, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Last Grasp
 					},
 				}),
 				e(2370, {	-- Vexiona
@@ -1049,7 +1061,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						i(174533),	-- Ring of Cosmic Potential
 						i(174277),	-- Lingering Psychic Shell
 						i(174103),	-- Manifesto of Madness
-						un(NEVER_IMPLEMENTED, i(174055)),	-- Corrupted Ring - Thing From Beyond
+						i(174055, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Thing From Beyond
 					},
 				}),
 			}),

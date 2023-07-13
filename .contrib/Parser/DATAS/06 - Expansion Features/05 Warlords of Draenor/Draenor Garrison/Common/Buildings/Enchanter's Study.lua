@@ -91,7 +91,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 						["races"] = HORDE_ONLY,
 						["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
 					}),
-					un(NEVER_IMPLEMENTED, i(120135)),	-- Recipe: Secrets of Draenor Enchanting
+					i(120135, { ["timeline"] = { "created 6.0.2.18816" }}),	-- Recipe: Secrets of Draenor Enchanting
 				}),
 			}),
 		}),

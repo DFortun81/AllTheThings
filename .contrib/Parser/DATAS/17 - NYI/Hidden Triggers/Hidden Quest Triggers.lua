@@ -135,7 +135,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(27224),	-- Andorhal Phase Flag — Western Plaguelands — triggers during "The Depravity of the Forsaken"
 		q(25040),	-- FLAG - Worgen Attacked — Tirisfal Glades — attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
 		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
-		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success"
+		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success" (spellID 388051)
 		q(26136),	-- FLAG - Rigor Mortis Removed. Triggered on a fresh lvl 1 warlock undead on login
 		q(24644),	-- Troll Introduction Complete
 		q(26741),	-- REUSE - Northern Stranglethorn - triggered after completing "The Hunt" (questID 26340)
@@ -236,7 +236,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47332),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49766),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
-		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
+		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time (spellID 395734)
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
 		-- 58013 triggered randomly during a Black Empire assault in uldum
 		-- also triggered when looting the "Grimoire of the Other Side" as horde during "Spirits' belongings"
@@ -817,81 +817,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(55478),	-- Slimy Cocoon opened (32.9, 39.8)
 		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
 		q(57140),	-- pretty sure this is for looting Ancient Reefwalker Bark
-
-		--	Mechagon
-		q(56329),	-- Triggered when completing 'Do Not Drink'(56328) the first time
-		q(55161),	-- Triggered when completing 'Shop Project'(55608) on Horde-Pally-Engineer
-		q(56089),	-- triggered on first rare kill — possibly blueprint looting?
-		q(56506),	-- triggered on third rare kill — was Mr. Fixthis for me, but someone else had it trigger on Arachnoid Harvester.  looted Performant Refined Logic Board and a Chain Ignitercoil
-		q(55848),	-- Reclamation Rig hardmode — putting here because with both quests attached with altQuests it doesn't roll over like dailies should
-		q(55913),	-- Arachnoid Harvester first kill
-		q(56996),	-- Armored Vaultbot first kill
-		q(56997),	-- Armored Vaultbot first kill in alternate timeline
-		-- Boilburn first kill  -- No first kill id
-		q(55920),	-- Boggac Skullbash first kill
-		q(55919),	-- Bonepicker first kill
-		-- Caustic Mechaslime first kill
-		q(55927),	-- Crazed Trogg first kill
-		q(55917),	-- Deepwater Maw first kill
-		-- q(55544),	-- Doppel Ganger first kill
-		q(55932),	-- Earthbreaker Gulroc first kill
-		q(56994),	-- Enforcer KX-T57 first kill
-		q(55916),	-- Foul Manifestation first kill
-		q(55915),	-- Fungarian Furor first kill
-		q(55934),	-- Gear Checker Cogstar first kill
-		q(55929),	-- Gemicide first kill
-		-- Gorged Gear-Cruncher first kill
-		q(55910),	-- Jawbreaker first kill
-		q(55914),	-- Killsaw first kill
-		q(55926),	-- Malfunctioning Beastbot first kill
-		q(55907),	-- Mechagonian Nullifier first kill
-		q(55909),	-- Mecharantula first kill
-		q(55935),	-- Mr. Fixthis first kill
-		q(55928),	-- Ol' Big Tusk first kill
-		q(55918),	-- OOX-Avenger/MG first kill
-		q(55936),	-- Oxidized Leachbest first kill
-		q(55911),	-- Paol Pondwader first kill
-		q(55912),	-- Rumblerocks first kill
-		q(55924),	-- Rustfeather first kill
-		q(57084),	-- Scrapclaw first kill
-		q(55922),	-- Seaspit first kill
-		q(55923),	-- Sparkqueen P'Emp first kill
-		q(55933),	-- Steel Singer Freza first kill
-		q(55931),	-- The Kleptoboss first kill
-		q(56995),	-- The Rusty Prince first kill
-		q(56713),	-- seems to trigger on every Rusty Prince kill, along with 56182
-		q(55908),	-- The Scrap King first kill
-		q(55921),	-- Uncle T'Rogg first kill
-		q(57081),	-- First Mechanized Chest of the week(Minipack: Mechagon)-- Still need to narrow down exact trigger
-		q(57133),	-- First Mechanized Chest of the week(Minipack: Mechagon)-- Still need to narrow down exact trigger
-		q(56564),	-- First Fight Club Treasure Chest of the day
-		q(56100),	-- First Beastbot kill of the week(Minipack: Bondo's Yard)-- Still need to narrow down exact trigger(First rare kill of the week possibly)
-		q(57135),	-- First Beastbot kill of the week(Minipack: Bondo's Yard)-- Still need to narrow down exact trigger
-		q(57134),	-- First Recycling Requisition of the week (contains Azeroth Mini Pack: Bondo's Yard)
-		q(56004),	-- looting Energy Cell while on the quest "We Can Fix It"
-		q(55495),	-- repelling HK-8 Aerial Oppression Unit during "Send My Father a Message"
-		q(55623),	-- Seems to trigger after completion of the WQ zone daily.  Mechanized chests and Rustbolt Rebellion WQ confirmed triggering this.
-		q(56307),	-- Opened the mechanized supply chest
-		q(55903),	-- Triggered when completing "Armed for Action" achievement. May be related to picking up the weapon (e.g. Bolt Spitter)
-		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
-		q(56660),	-- Triggered on Mechagon randomly
-		q(55260),	-- triggers when making the Volatile Blaster first time on character
-		q(55414),	-- triggers when making the Ricket's Special Delivery first time on character
-		q(56840),	-- Toys of Destruction - made the Volatile Blaster. Maybe triggers for all the toys to indicate the toy extra action button is available?
-		q(56624),	-- collected Izira Gearsworn mini for "Most Minis Wins"
-		q(56625),	-- collected Bondo Grosbloc mini for "Most Minis Wins"
-		q(56626),	-- collected Wrenchbot mini for "Most Minis Wins"
-		q(56627),	-- collected Roadtrogg mini for "Most Minis Wins"
-		q(56628),	-- collected Overspark mini for "Most Minis Wins"
-		q(56629),	-- collected Gazlowe mini for "Most Minis Wins"
-		q(56630),	-- collected HK-8 mini for "Most Minis Wins"
-		q(56631),	-- collected King Mechagon mini for "Most Minis Wins"
-		q(56632),	-- collected Prince Erazmin mini for "Most Minis Wins"
-		q(56633),	-- collected Cork Stuttguard mini for "Most Minis Wins"
-		q(56634),	-- collected Naeno Megacrash mini for "Most Minis Wins"
-		q(56635),	-- collected Cogstar mini for "Most Minis Wins"
-		q(56652),	-- collected Blastatron mini for "Most Minis Wins"
-		q(56729),	-- collected Sapphronetta mini for "Most Minis Wins"
 
 		--	Dungeons
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
@@ -1724,6 +1649,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(10387),	-- The Fel Reaver Slayer - completed with quest 10382
 		q(10401),	-- Mission: End All, Be All - completed with quest 10136 & 10400
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
+		q(10841),	-- The Vengeful Harbringer - completed with quest 10720
 		q(11790),	-- Cultists Among Us - completed with quest 11920
 		q(13053),	-- Looking for Survivors - completed with quest 12671
 		q(13052),	-- Aerial Surveillance - completed with quest 12696
@@ -1750,7 +1676,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(26757),	-- The Bounty of Teldrassil - completed with 6341
 		q(26758),	-- Flight to Auberdine - completed with 6342
 		q(26759),	-- Return to Nessa - completed with 6343
+		q(26879),	-- Disciples of Naralex - completed with 26878
 		q(26893),	-- Blackfathom Deeps - completed with quest 26894
+		q(27150),	-- The Menders' Stead - completed with quest 26952
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
 		q(27419),	-- Army of the Black Dragon - completed with quest 1168
 		q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
@@ -1869,6 +1797,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46176),	-- The Archmage Accosted - completed with quest 44924
 		q(49059),	-- The Bones of Xibala - completed with quest 47257
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
+		q(49769),	-- Wreckage of the Cataclysm - completed with quest 50331
 	}),
 
 	-------------------

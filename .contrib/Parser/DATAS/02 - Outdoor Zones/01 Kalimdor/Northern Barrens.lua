@@ -350,15 +350,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(7133, {	-- Brutal Hauberk
 							["timeline"] = { "removed 4.0.3" },
-							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
-								if _.Level >= 40 then
-									t.f = ]] .. PLATE .. [[;
-								else
-									t.f = ]] .. MAIL .. [[;
-								end
-							end]],
-							-- #endif
 						}),
 					},
 				}),
@@ -1570,7 +1561,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(903, {	-- Hunting the Huntress [CATA+] / Prowlers of the Barrens
 					["qg"] = 3338,	-- Sergra Darkthorn
-					["sourceQuest"] = 845,	-- The Zhevra
+					["sourceQuest"] = 13995,	-- King of Centaur Mountain
 					-- #if AFTER CATA
 					["coord"] = { 50.0, 59.7, NORTHERN_BARRENS },
 					-- #else
@@ -4328,14 +4319,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 		},
-	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, {
-	m(NORTHERN_BARRENS, {
-		q(26879, {	-- Disciples of Naralex (completed with 26878)
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
 	}),
 }));
 -- #endif

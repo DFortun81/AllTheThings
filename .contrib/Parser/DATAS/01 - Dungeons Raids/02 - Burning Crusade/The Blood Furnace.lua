@@ -4,6 +4,11 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(256, {	-- The Blood Furnace
 		["lore"] = "The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",
+		["sins"] = {
+			"Hellfire Citadel: Blood Furnace",
+			"Hellfire Citadel: The Blood Furnace",
+			"Höllenfeuerzitadelle: Blutkessel",
+		},
 		["coord"] = { 46.06, 51.74, HELLFIRE_PENINSULA },	-- The Blood Furnace, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_BLOOD_FURNACE,
 		["lvl"] = lvlsquish(58, 58, 10),
@@ -190,8 +195,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(556, {	-- Broggok
 					["creatureID"] = 17380,
 					["groups"] = {
-						i(141063,{	-- Technique: Glyph of the Observer (RECIPE!)
-							["timeline"] = { "added 7.0.3.22248" },
+						i(141063,{	-- Technique: Grimoire of the Observer (RECIPE!)
+							["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(27490),	-- Firebrand Battleaxe
@@ -301,8 +306,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(556, {	-- Broggok
 						["creatureID"] = 17380,
 						["groups"] = {
-							i(141063,{	-- Technique: Glyph of the Observer (RECIPE!)
-								["timeline"] = { "added 7.0.3.22248" },
+							i(141063,{	-- Technique: Grimoire of the Observer (RECIPE!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
 							}),
 							i(27490),	-- Firebrand Battleaxe
 							-- #if AFTER 7.3.5

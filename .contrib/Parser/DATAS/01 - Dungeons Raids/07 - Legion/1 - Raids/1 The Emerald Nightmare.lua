@@ -977,7 +977,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44148),	-- Xavius
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		inst(768, {	-- The Emerald Nightmare
 			i(138229),	-- Nightmare Boss 3 Relic Storm
@@ -988,4 +988,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(180618),	-- Stained Maggot Squishers
 		}),
 	}),
-}));
+});

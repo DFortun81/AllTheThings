@@ -138,9 +138,9 @@ namespace MiniJSON
                 json = null;
             }
 
-            Dictionary<string, object> ParseObject()
+            IDictionary<string, object> ParseObject()
             {
-                Dictionary<string, object> table = new Dictionary<string, object>();
+                IDictionary<string, object> table = new Dictionary<string, object>();
 
                 // ditch opening brace
                 json.Read();

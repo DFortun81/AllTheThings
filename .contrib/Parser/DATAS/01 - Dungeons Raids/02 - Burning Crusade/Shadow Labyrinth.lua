@@ -4,6 +4,11 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(253, {	-- Shadow Labyrinth
 		["lore"] = "Auchindoun is a former draenei holy site and Horde fortress in the middle of the Bone Wastes in Outland's Terokkar Forest. It was a hallowed ground until the Shadow Council took over, summoned an extremely powerful demon as old as time itself, and destroyed half of Terokkar Forest in the process. Different factions now vie for power in this magical spot: Ethereals suck the arcane energy from the Mana-Tombs, the Burning Legion harvests souls inside the Auchenai Crypts, arakkoa zealots work dark magic in the Sethekk Halls, and the Shadow Council plots its domination of Outland from within the Shadow Labyrinth.",
+		["sins"] = {
+			"Auchindoun: Shadow Labyrinth",
+			"Auchindoun: The Shadow Labyrinth",
+			"Auchindoun: Schattenlabyrinth",
+		},
 		["coord"] = { 39.63, 73.55, TEROKKAR_FOREST },	-- Shadow Labyrinth, Terokkar Forest
 		["mapID"] = AUCHINDOUN_SHADOW_LABYRINTH,
 		-- #if BEFORE CATA
@@ -158,7 +163,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
 					["timeline"] = { "added 4.3.0.14732" },
-					["isBreadcrumb"] = true,
+					-- This was available to a character with 29643 already completed, the follow up of this 'breadcrumb'...
+					-- ["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(68, 68, 20),
 					["altQuests"] = {
 						10094,	-- The Codex of Blood (pre 4.0.3)

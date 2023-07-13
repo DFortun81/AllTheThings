@@ -1564,7 +1564,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["customCollect"] = "
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		n(NECROLORD, {
 			i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
@@ -1581,4 +1581,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

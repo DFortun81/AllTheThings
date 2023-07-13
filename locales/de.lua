@@ -2176,6 +2176,8 @@ for key,value in pairs({
 	[242678] = "Schatztruhe",	-- Treasure Chest
 	[242683] = "Schatztruhe",	-- Treasure Chest
 	[242959] = "Schatztruhe",	-- Treasure Chest
+	[243321] = "Stein der Wildheit",	-- Feral Stone
+	[243323] = "Stein des Gleichgewichts",	-- Balance Stone
 	[243334] = "Verwelktes Kraut",	-- Withered Herb
 	[243392] = "Alchemiebuch",	-- Alchemy Book
 	[243688] = "Schatztruhe",	-- Treasure Chest
@@ -3534,6 +3536,7 @@ for key,value in pairs({
 	[382325] = "Onyxedelsteinklumpen",	-- Onyx Gem Cluster
 	[382621] = "Belebungskatalysatorkonsole",	-- Revival Catalyst Console
 	[383625] = "Kiste mit frischem Leuchtfisch",	-- Case of Fresh Gleamfish
+	[383660] = "Salzkristall",	-- Salt Crystal
 	[383732] = "Angelzubehör der Tuskarr",	-- Tuskarr Tacklebox
 	[383733] = "Bewegte Erde",	-- Disturbed Dirt
 	[383734] = "Bewegte Erde",	-- Disturbed Dirt
@@ -3561,6 +3564,7 @@ for key,value in pairs({
 	[385520] = "Knochenhaufen",	-- Bone Pile
 	[385533] = "Sendestein: Protest",	-- Sending Stone: Protest
 	[385565] = "Lodernde Schattenflammentruhe",	-- Blazing Shadowflame Chest
+	--TODO: [385581] = "Henry's Handbag",	-- Henry's Handbag
 	[385799] = "Gehärtete Schließkassette",	-- Hardened Strongbox
 	[385800] = "Goldhaufen",	-- Gold Pile
 	[385801] = "Goldhaufen",	-- Gold Pile
@@ -3767,6 +3771,7 @@ for key,value in pairs({
 	[401828] = "Reliquiar von Nal ks'kol",	-- Nal ks'kol Reliquary
 	[401839] = "Belohnung des Träumers",	-- Dreamer's Bounty
 	[401844] = "Stinkender Müllhaufen",	-- Smelly Trash Pile
+	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
 	[402627] = "Abgenutzter Brennofen",	-- Well-Worn Kiln
 	[402632] = "Schwefel-Rettungsring",	-- Brimstone Rescue Ring
 	[402634] = "Ältestenspeer der Zaqali",	-- Zaqali Elder Spear
@@ -3776,6 +3781,9 @@ for key,value in pairs({
 	[402888] = "Aufwendige Zaqali-Runen",	-- Intricate Zaqali Runes
 	[402890] = "Zischender Runenentwurf",	-- Hissing Rune Draft
 	[402892] = "Uralte Forschung",	-- Ancient Research
+	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
+	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
@@ -3846,44 +3854,12 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- Saved Instance Name => Dungeon Journal Instance Name Converter
--- If your saves aren't lining up, it's probably because Blizzard
--- didn't use the same localization for the instance. Sorry.
-local a = L.SAVED_TO_DJ_INSTANCES;
-for key,value in pairs({
-	["Violette Festung"] = "Die Violette Festung";	-- The Violet Hold
-	["Geschmolzener Kern"] = "Der Geschmolzene Kern";	-- Molten Core
-	["Höllenfeuerzitadelle: Bollwerk"] = "Höllenfeuerbollwerk";	-- Hellfire Ramparts
-	["Höllenfeuerzitadelle: Blutkessel"] = "Der Blutkessel";	-- The Blood Furnace
-	["Echsenkessel: Sklavenunterkünfte"] = "Die Sklavenunterkünfte";	-- The Slave Pens
-	["Echsenkessel: Tiefensumpf"] = "Der Tiefensumpf";	-- The Underbog
-	["Auchindoun: Auchenaikrypta"] = "Auchenaikrypta";	-- Auchenai Crypts
-	["Auchindoun: Managruft"] = "Managruft";	-- Mana-Tombs
-	["Flucht aus Durnholde"] = "Vorgebirge des Alten Hügellands";	-- Old Hillsbrad Foothills
-	["Auchindoun: Sethekkhallen"] = "Sethekkhallen";	-- Sethekk Halls
-	["Auchindoun: Schattenlabyrinth"] = "Schattenlabyrinth";	-- Shadow Labyrinth
-	["Festung der Stürme: Die Botanika"] = "Die Botanika";	-- The Botanica
-	["Festung der Stürme: Die Mechanar"] = "Die Mechanar";	-- The Mechanar
-	["Höllenfeuerzitadelle: Die Zerschmetterten Hallen"] = "Die Zerschmetterten Hallen";	-- The Shattered Halls
-	["Echsenkessel: Dampfkammer"] = "Die Dampfkammer";	-- The Steamvault
-	["Festung der Stürme: Die Arkatraz"] = "Die Arkatraz";	-- The Arcatraz
-	["Öffnung des Dunklen Portals"] = "Der Schwarze Morast";	-- The Black Morass
-	["Echsenkessel: Höhle des Schlangenschreins"] = "Höhle des Schlangenschreins";	-- Serpentshrine Cavern
-	["Festung der Stürme"] = "Das Auge";	-- The Eye
-	["Der Sonnenbrunnen"] = "Sonnenbrunnenplateau";	-- Sunwell Plateau
-	["Eiskronenzitadelle"] = "Die Eiskronenzitadelle";	-- Icecrown Citadel
-	["Rubinsanktum"] = "Das Rubinsanktum";	-- The Ruby Sanctum
-	["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlosen Frühlings";	-- Terrace of Endless Spring
-	["Herz der Angst"] = "Das Herz der Angst";	-- Heart of Fear
-})
-do a[key] = value; end
-
 --TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
 	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
-	["~HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
+	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
 })
 do a[key] = value; end

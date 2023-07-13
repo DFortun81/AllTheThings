@@ -31,12 +31,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 	-- Crafting
 	i(191529),	-- Illustrious Insight
 	i(191526),	-- Lesser Illustrious Insight
-	-- Unknown
-	i(204463, {	-- Dracothyst
-		["cost"] = { { "i", 204462, 10 } },	-- 10x Dracothyst Shards
-	}),
-	i(204462),	-- Dracothyst Shards
-	i(204464),	-- Shadowflame Essence
+	i(204462, {["timeline"] = {ADDED_10_1_0}}),	-- Dracothyst Shards
+	i(204464, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowflame Essence
 	prof(ALCHEMY, {
 		spell(370747, {	-- Advanced Phial Experimentation
 			["sym"] = {{"select","spellID",370746},{"extract","recipeID"}},	-- Basic Phial Experimentation -> Recipes
@@ -186,6 +182,10 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(191515),	-- Brood Salt++
 			i(191516),	-- Brood Salt+++
 			i(203407, {["timeline"] = {ADDED_10_0_7}}),	-- Draconic Suppression Powder
+			i(204463, {	-- Dracothyst
+				["timeline"] = {ADDED_10_1_0},
+				["cost"] = { { "i", 204462, 10 } },	-- 10x Dracothyst Shards
+			}),
 			i(191505),	-- Exultant Incense+
 			i(191506),	-- Exultant Incense++
 			i(191507),	-- Exultant Incense+++
@@ -1768,6 +1768,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		filter(GLYPHS, {
 			i(203762, {["timeline"] = {ADDED_10_1_0}}),	-- Glyph of the Chosen Glaive
 			i(203763, {["timeline"] = {ADDED_10_1_0}}),	-- Glyph of the Heaved Armament
+			i(207088, {["timeline"] = {ADDED_10_1_5}}),	-- Glyph of the Shath'Yar
 		}),
 		filter(MISC, {
 			i(203412, {["timeline"] = {ADDED_10_0_7}}),	-- Arcane Dispelling Rune
@@ -2677,6 +2678,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193213),	-- Adamant Scales+
 			i(193214),	-- Adamant Scales++
 			i(193215),	-- Adamant Scales+++
+			i(204092, {["timeline"]={ADDED_10_0_7}}),	-- Auric Fleece
 			i(193261),	-- Bite-Sized Morsel
 			i(193253),	-- Cacophonous Thunderscale
 			i(193251),	-- Crystalspine Fur
@@ -2878,7 +2880,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71827, 376541);	-- Blue Silken Lining
 			FirstCraft(71828, 376542);	-- Bronzed Grip Wrappings
 			FirstCraft(75819, 409839, ADDED_10_1_0);	-- Medical Wrap Kit
-			FirstCraft(75589, 376542, ADDED_10_1_0);	-- Reserve Parachute
+			FirstCraft(75589, 408304, ADDED_10_1_0);	-- Reserve Parachute
 			-- Finishing Reagents --
 			FirstCraft(71819, 376533);	-- Abrasive Polishing Cloth
 			FirstCraft(71820, 376534);	-- Vibrant Polishing Cloth
@@ -2986,7 +2988,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71948),	-- Maxxed Out Transmutation
 		}),
 		prof(BLACKSMITHING, {
-			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom
+			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom (spellID 384716)
 		}),
 		prof(ENCHANTING, {
 			q(71939),	-- Glimmer of Air Drop
@@ -3028,7 +3030,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72344),	-- First Overload Titan-Touched Herb
 			q(72345),	-- First Overload Decayed Herb
 			q(72348),	-- First Overload Infurious Herb
-
 			q(75142, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Bubble Poppy
 			q(75141, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambant Hochenblume
 			q(75143, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Saxifrage

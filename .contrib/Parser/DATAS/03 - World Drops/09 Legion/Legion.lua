@@ -180,8 +180,8 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 				["coord"] = { 55.0, 59.9, VALSHARAH },
 			}),
 			i(141049),	-- Technique: Glyph of the Hook (RECIPE!)
-			i(141064),	-- Technique: Glyph of the Shivarra (RECIPE!)
 			i(141051),	-- Technique: Glyph of the Trident (RECIPE!)
+			i(141064),	-- Technique: Grimoire of the Shivarra (RECIPE!)
 		}),
 		prof(TAILORING, {
 			i(142077, {	-- Pattern: Imbued Silkweave Bag [Rank 2] (RECIPE!)

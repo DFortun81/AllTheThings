@@ -1581,7 +1581,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(54525),	-- looting Loose Parts from the bridge elites during the Vol'dun incursion, as Horde (the associated WQ wasn't up, not sure if that makes a difference)
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			filter(LEATHER, {
@@ -1595,4 +1595,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

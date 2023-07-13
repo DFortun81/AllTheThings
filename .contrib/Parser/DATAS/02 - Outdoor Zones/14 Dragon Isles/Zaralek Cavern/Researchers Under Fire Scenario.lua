@@ -157,15 +157,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
 		header(HEADERS.Quest, 74906, {	-- Researchers Under Fire
-			q(75628),	-- Appreciative Researcher's Gift
-			q(75666),	-- Appreciative Researcher's Scrounged Goods
-			q(75630),	-- Indebted Researcher's Gift
-			--q(TODO),	-- Indebted Researcher's Scrounged Goods
-			q(75627),	-- Researcher's Gift
-			--q(TODO),	-- Researcher's Scrounged Goods
-			q(75629),	-- Thankful Researcher's Gift
-			--q(TODO),	-- Thankful Researcher's Scrounged Goods
-
+			q(75627),	-- Researchers Under Fire Tier 1 Weekly Reward Tracker
+			q(75628),	-- Researchers Under Fire Tier 2 Weekly Reward Tracker
+			q(75629),	-- Researchers Under Fire Tier 3 Weekly Reward Tracker
+			q(75630),	-- Researchers Under Fire Tier 4 Weekly Reward Tracker
+			q(75666),	-- Weekly trigger
 			q(74905),	-- At the end of event 'Titan Lockdown', unflagged after bag hqt
 			q(74906),	-- Probably Zaqali Event
 			q(75947),	-- 'Zaqali Ritual Buster' completed (maybe something prior during combat of stages...)

@@ -1333,8 +1333,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(12335),	-- Gemstone of Smolderthorn
 					i(12582),	-- Keris of Zul'Serak
-					i(13175, {	-- Voone's Twitchbow
-						["timeline"] = { "removed 6.0.2" },
+					i(13175, {	-- Voone's Twitchbow [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
+						-- #if ANYCLASSIC
+						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
+						-- #endif
+						["timeline"] = { "removed 2.0.1" },
 					}),
 					i(13177),	-- Talisman of Evasion
 					i(13179),	-- Brazecore Armguards
@@ -1374,9 +1377,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "i", 22057, 1 },	-- Brazier of Invocation
 				},
 				-- #if AFTER 4.0.3
-				-- This Update function unmarks the removed from game flag for folks with the brazier.
-				["OnUpdate"] = [[function(t)
-					t.OnUpdate = nil;
+				-- This init function unmarks the removed from game flag for folks with the brazier.
+				["OnInit"] = [[function(t)
 					if GetItemCount(22057, true) > 0 then
 						t.u = nil;
 						for i,o in ipairs(t.g) do
@@ -1392,6 +1394,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							end
 						end
 					end
+					return t;
 				end]],
 				-- #endif
 				["groups"] = {
@@ -1570,8 +1573,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { "removed 4.0.3" },
 					}),
 					i(12337),	-- Gemstone of Bloodaxe
-					i(13148, {	-- Chillpike
-						["timeline"] = { "removed 4.0.3" },
+					i(13148, {	-- Chillpike [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
+						-- #if ANYCLASSIC
+						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
+						-- #endif
+						["timeline"] = { "removed 2.0.1" },
 					}),
 					i(13163),	-- Relentless Scythe
 					i(13161),	-- Trindlehaven Staff

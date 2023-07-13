@@ -99,7 +99,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(BFA_TIER, {
+root(ROOTS.NeverImplemented, tier(BFA_TIER, {
 	n(WARFRONT, {
 		m(DARKSHORE, {
 			n(QUESTS, {
@@ -107,4 +107,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(BFA_
 			}),
 		}),
 	}),
-})));
+}));

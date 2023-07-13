@@ -414,17 +414,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(160546, {	-- Tabard of the Zandalari Empire
 						["cost"] = 6250000,	-- 625g
 					}),
-					i(162623, {	-- Tome of Hex: Zandalari Tendonripper
-						["spellID"] = 277778,	-- Hex(Zandalari Tendonripper)
-						["classes"] = { SHAMAN },
+					i(162623, {	-- Tome of Hex: Zandalari Tendonripper (CI!)
 						["cost"] = 18000000,	-- 1,800g
-						["f"] = RECIPES,
 					}),
-					i(162625, {	-- Tome of Polymorph: Direhorn
-						["recipeID"] = 277787,	-- Polymorph(Direhorn)
-						["classes"] = { MAGE },
+					i(162625, {	-- Tome of Polymorph: Direhorn (CI!)
 						["cost"] = 18000000,	-- 1,800g
-						["f"] = RECIPES,
 					}),
 					i(161524, {	-- Torcali's Grips of the Bounty
 						["cost"] = 19000000,	-- 1,900g

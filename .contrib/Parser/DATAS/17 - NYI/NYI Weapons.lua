@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(WEAPONS, {
 		filter(BOWS, {
 			tier(DF_TIER, {
@@ -12,6 +12,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189127),	-- 10.0 QRP Template <Descriptor> Longbow
 					i(189346),	-- 10.0 Zone Uncommon Template <Descriptor> Longbow
 				}),
+
+				-- 10.0.7
+				tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+					i(204674),	-- Cursed Demonbone Longbow
+				})),
 			}),
 		}),
 		filter(CROSSBOWS, {
@@ -81,6 +86,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189334),	-- 10.0 Zone Uncommon Template <Descriptor> Offhand
 					i(201249),	-- Dreamfire Imbued Drakehorn
 				}),
+
+				-- 10.0.7
+				tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+					i(203798),	-- Copy Jin'do's Bag of Whammies
+				})),
 			}),
 		}),
 		filter(ONE_HANDED_AXES, {
@@ -682,4 +692,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 	}),
-}));
+});

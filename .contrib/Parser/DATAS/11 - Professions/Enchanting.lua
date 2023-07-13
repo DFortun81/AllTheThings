@@ -199,7 +199,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(7793),	-- Lesser Intellect
 			r(13503),	-- Lesser Striking
 			r(13380),	-- Lesser Versatility / CLASSIC: Lesser Spirit
-			r(20032, {["timeline"]={"removed 4.0.3"}}),	-- Lifestealing
+			r(20032, {["timeline"]={"removed 4.0.3", "added 10.1.5" }}),	-- Lifestealing
 			r(20036),	-- Major Intellect
 			r(20035),	-- Major Versatility / CLASSIC: Major Spirit
 			applyclassicphase(PHASE_THREE, r(23804)),	-- Mighty Intellect
@@ -1350,7 +1350,7 @@ itemrecipe("Formula: Smoking Heart of the Mountain", 45050, 15596);
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
 		itemrecipe("Formula: Imbue Chest - Minor Spirit", 6222);
 		itemrecipe("Formula: Imbue Chest - Spirit", 6343);
@@ -1362,5 +1362,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		recipe(28021),	-- Arcane Dust
 		-- #endif
 	}),
-}));
+});
 -- #endif

@@ -339,6 +339,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 })));
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
-		q(72091),	-- triggers with 'Cobalt Enthusiast' achievement (16569)
+		q(72091),	-- triggers with 'Cobalt Enthusiast' (achievementID 16569) (spellID 392588)
 	}),
 }));

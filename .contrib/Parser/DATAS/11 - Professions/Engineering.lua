@@ -1773,7 +1773,7 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Gearspring Parts",
 					["recipeID"] = 178242,
-					["u"] = NEVER_IMPLEMENTED,	-- NOTE: This version is automatically crafted after reaching maximum Draenor Engineering. (Detection is not working.)
+					["timeline"] = { "created 6.0.2.18850" },	-- NOTE: This version is automatically crafted after reaching maximum Draenor Engineering. (Detection is not working.)
 				},
 				{
 					["name"] = "Impressive Linkgrease Locksprocket",
@@ -1912,7 +1912,7 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Ultimate Gnomish Army Knife",
 					["recipeID"] = 162208,
-					["u"] = NEVER_IMPLEMENTED,	-- NOTE: This version is automatically crafted after creating Gearspring Parts for the first time. (Detection is not working.),
+					["timeline"] = { "created 6.0.1.18297" },	-- NOTE: This version is automatically crafted after creating Gearspring Parts for the first time. (Detection is not working.),
 				},
 				{
 					["name"] = "Ultimate Gnomish Army Knife",
@@ -3629,7 +3629,7 @@ itemrecipe("Schematic: Flintlocke's Woodchucker", 70177, 100587, CATA_PHASE_TWO)
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
 		-- #if CLASSIC
 		i(22729),	-- Schematic: Steam Tonk Controller [This doesn't get added until TBC]
@@ -3644,4 +3644,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Schematic: Remote Mail Terminal", 23885, 30555);
 		-- #endif
 	}),
-}));
+});

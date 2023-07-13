@@ -8,11 +8,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 37.8, 55.7, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				un(NEVER_IMPLEMENTED, i(169589)),	-- Azsharan Pearling Kit
-				un(NEVER_IMPLEMENTED, i(169592)),	-- Azsharan Pearling Enhancement
-				un(NEVER_IMPLEMENTED, i(169787)),	-- Azsharan Azerite Pearling Enhancement
-				un(NEVER_IMPLEMENTED, i(170277)),	-- Greater Pearling Reinforcement
-				un(NEVER_IMPLEMENTED, i(170276)),	-- Greater Azerite Pearling Reinforcement
+				i(169589, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Azsharan Pearling Kit
+				i(169592, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Azsharan Pearling Enhancement
+				i(169787, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Azsharan Azerite Pearling Enhancement
+				i(170277, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Greater Pearling Reinforcement
+				i(170276, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Greater Azerite Pearling Reinforcement
 				i(169478, {	-- Benthic Bracers
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
 					["sym"] = { { "fill" } },	-- simply fill this item
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(169602, {	-- Recipe: Potion of Focused Resolve [Rank 3] (RECIPE!)
 					["cost"] = 14000000,	-- 1,400g
 				}),
-				un(NEVER_IMPLEMENTED, i(170076)),	-- Recipe: Unagi Skewer
+				i(170076, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Recipe: Unagi Skewer
 				i(169274, {	-- Tabard of the Unshackled
 					["cost"] = 6250000,	-- 625g
 				}),
@@ -252,11 +252,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 49.2, 62.0, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				un(NEVER_IMPLEMENTED, i(169589)),	-- Azsharan Pearling Kit
-				un(NEVER_IMPLEMENTED, i(169592)),	-- Azsharan Pearling Enhancement
-				un(NEVER_IMPLEMENTED, i(169787)),	-- Azsharan Azerite Pearling Enhancement
-				un(NEVER_IMPLEMENTED, i(170277)),	-- Greater Pearling Reinforcement
-				un(NEVER_IMPLEMENTED, i(170276)),	-- Greater Azerite Pearling Reinforcement
+				i(169589, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Azsharan Pearling Kit
+				i(169592, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Azsharan Pearling Enhancement
+				i(169787, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Azsharan Azerite Pearling Enhancement
+				i(170277, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Greater Pearling Reinforcement
+				i(170276, { ["timeline"] = { "created 8.2.0.30918" }}),	-- Greater Azerite Pearling Reinforcement
 				i(169478, {	-- Benthic Bracers
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
 					["sym"] = { { "fill" } },	-- simply fill this item

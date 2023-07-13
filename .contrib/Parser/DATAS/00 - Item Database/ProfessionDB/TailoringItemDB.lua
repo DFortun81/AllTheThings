@@ -173,3 +173,17 @@ i(205140, 408318);	-- Undulating Sporecloak
 i(0, 408316);		-- Spore-Infused Combat Bandage
 i(205141, 408319);	-- Explorer's Banner
 i(205142, 408305);	-- Enormous Ball of Yarn
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+i(206547, 413747);	-- Bindings of the Harvested Soul
+i(206771, 414564);	-- Cursed Cloth
+i(206395, 413490);	-- Glacial Chapeau
+i(206396, 413491);	-- Glacial Epaulets
+i(206402, 413495);	-- Glacial Footwear
+i(206401, 413494);	-- Glacial Leggings
+i(206400, 413492);	-- Glacial Tether
+i(206554, 413754);	-- Necrotic Gown
+i(206583, 413903);	-- Peculiar Glacial Mantle
+i(206563, 413788);	-- Shroud of Forbidden Magic

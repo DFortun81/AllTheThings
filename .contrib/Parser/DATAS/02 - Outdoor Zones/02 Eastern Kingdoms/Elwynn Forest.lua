@@ -36,16 +36,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(131899, {	-- Chaser's Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(118532, {	-- Runner's Belt
-									["timeline"] = { "added 6.0.1.18711" },
-								}),
 								i(57255, {	-- Worg Handler's Gloves
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -77,20 +69,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
-								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(118532, {	-- Runner's Belt
-									["timeline"] = { "added 6.0.1.18711" },
-								}),
-								i(57255, {	-- Worg Handler's Gloves
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-
 							},
 						}),
 						q(28766, {	-- Beating Them Back!
@@ -99,16 +82,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(131899, {	-- Chaser's Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(118532, {	-- Runner's Belt
-									["timeline"] = { "added 6.0.1.18711" },
-								}),
 								i(57255, {	-- Worg Handler's Gloves
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -120,20 +95,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(131899, {	-- Chaser's Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 								i(57253, {	-- Northshire Abbot's Cinch
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
-								i(118532, {	-- Runner's Belt
-									["timeline"] = { "added 6.0.1.18711" },
-								}),
-								i(57255, {	-- Worg Handler's Gloves
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-
 							},
 						}),
 						q(28764, {	-- Beating Them Back!
@@ -142,18 +108,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(131899, {	-- Chaser's Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
 								i(118532, {	-- Runner's Belt
 									["timeline"] = { "added 6.0.1.18711" },
-								}),
-								i(57255, {	-- Worg Handler's Gloves
-									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
 						}),
@@ -163,17 +121,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(131899, {	-- Chaser's Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(118532, {	-- Runner's Belt
-									["timeline"] = { "added 6.0.1.18711" },
-								}),
-								i(57255, {	-- Worg Handler's Gloves
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -184,17 +134,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(131899, {	-- Chaser's Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(118532, {	-- Runner's Belt
-									["timeline"] = { "added 6.0.1.18711" },
-								}),
-								i(57255, {	-- Worg Handler's Gloves
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -204,19 +146,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
-							["classes"] = { MONK },	-- May also include DK and Druid
+							["classes"] = { MONK },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(131899, {	-- Chaser's Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
 								i(118532, {	-- Runner's Belt
 									["timeline"] = { "added 6.0.1.18711" },
-								}),
-								i(57255, {	-- Worg Handler's Gloves
-									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
 						}),
@@ -404,17 +338,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
 								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131874, {	-- Light Gleaming Bracers
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57258, {	-- Wolf Hunter's Vest
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -426,17 +352,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131874, {	-- Light Gleaming Bracers
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57258, {	-- Wolf Hunter's Vest
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -448,17 +366,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131874, {	-- Light Gleaming Bracers
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57258, {	-- Wolf Hunter's Vest
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -470,16 +380,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131874, {	-- Light Gleaming Bracers
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
 								i(57258, {	-- Wolf Hunter's Vest
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -492,18 +394,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
 								i(131874, {	-- Light Gleaming Bracers
 									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57258, {	-- Wolf Hunter's Vest
-									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
 						}),
@@ -514,17 +408,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131874, {	-- Light Gleaming Bracers
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57258, {	-- Wolf Hunter's Vest
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -536,16 +422,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131874, {	-- Light Gleaming Bracers
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
 								i(57258, {	-- Wolf Hunter's Vest
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -778,17 +656,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131875, {	-- Spy Dispatchers Greaves
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57388, {	-- Stormwind Infantry Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -800,17 +670,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131875, {	-- Spy Dispatchers Greaves
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57388, {	-- Stormwind Infantry Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -822,17 +684,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131875, {	-- Spy Dispatchers Greaves
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57388, {	-- Stormwind Infantry Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -844,16 +698,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131875, {	-- Spy Dispatchers Greaves
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
 								i(57388, {	-- Stormwind Infantry Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -866,18 +712,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
 								i(131875, {	-- Spy Dispatchers Greaves
 									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57388, {	-- Stormwind Infantry Belt
-									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
 						}),
@@ -909,17 +747,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131875, {	-- Spy Dispatchers Greaves
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57388, {	-- Stormwind Infantry Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -931,17 +761,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
 								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131875, {	-- Spy Dispatchers Greaves
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(57388, {	-- Stormwind Infantry Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
 							},
@@ -953,16 +775,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
-								i(131875, {	-- Spy Dispatchers Greaves
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { "added 4.0.3.13277" },
-								}),
 								i(57388, {	-- Stormwind Infantry Belt
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -1208,13 +1022,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(2186),	-- Outfitter Belt
-								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
-								i(131924, {	-- Outrider Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 							},
 						}),
 						q(31144, {	-- They Sent Assassins
@@ -1224,13 +1034,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(2186),	-- Outfitter Belt
-								i(2691),	-- Outfitter Boots
-								i(11192),	-- Outfitter Gloves
-								i(131924, {	-- Outrider Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
+								i(2186),	-- Outfitter Gloves
 							},
 						}),
 						q(28794, {	-- They Sent Assassins
@@ -1240,13 +1046,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(2186),	-- Outfitter Belt
-								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
-								i(131924, {	-- Outrider Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 							},
 						}),
 						q(28793, {	-- They Sent Assassins
@@ -1256,13 +1058,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
-								i(11192),	-- Outfitter Gloves
-								i(131924, {	-- Outrider Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 							},
 						}),
 						q(28795, {	-- They Sent Assassins
@@ -1272,13 +1070,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(2186),	-- Outfitter Belt
-								i(2691),	-- Outfitter Boots
-								i(11192),	-- Outfitter Gloves
-								i(131924, {	-- Outrider Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
+								i(2186),	-- Outfitter Gloves
 							},
 						}),
 						q(28797, {	-- They Sent Assassins
@@ -1288,13 +1082,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(2186),	-- Outfitter Belt
 								i(2691),	-- Outfitter Boots
-								i(11192),	-- Outfitter Gloves
-								i(131924, {	-- Outrider Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 							},
 						}),
 						q(28791, {	-- They Sent Assassins
@@ -1304,10 +1094,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(2186),	-- Outfitter Belt
-								i(2691),	-- Outfitter Boots
-								i(11192),	-- Outfitter Gloves
 								i(131924, {	-- Outrider Belt
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
@@ -1320,13 +1108,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
+							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
-								i(2186),	-- Outfitter Belt
-								i(2691),	-- Outfitter Boots
 								i(11192),	-- Outfitter Gloves
-								i(131924, {	-- Outrider Belt
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
 							},
 						}),
 						q(29081, {	-- They Sent Assassins
@@ -1767,7 +1551,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(60, {	-- Kobold Candles
 					["qg"] = 253,	-- William Pestle
-					["sourceQuest"] = 54,	-- Report to Goldshire
+					["sourceQuest"] = 26390,	-- Ending the Invasion
 					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(3, 3, 1),

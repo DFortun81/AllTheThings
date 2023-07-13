@@ -46,11 +46,13 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(147515),	-- Hellblaze Invader's Greaves
 					i(147517),	-- Inquisitor's Battle Cowl
 					i(147516),	-- Legion Stalker's Hood
-				}),
-			}),
-			n(118714, {	-- Hellblaze Temptress
-				ig(147117, {	-- Orb of the Fel Temptress
-					["classes"] = { WARLOCK },
+					i(147117, {	-- Orb of the Fel Temptress (CI!)
+						["crs"] = {
+							120366,	-- Hellblaze Temptress
+							118714,	-- Hellblaze Temptress
+						},
+						["ignoreBonus"] = true,
+					}),
 				}),
 			}),
 			d(HEROIC_DUNGEON, {
@@ -175,7 +177,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		inst(900, {	-- Cathedral of Eternal Night
 			d(HEROIC_DUNGEON, {
@@ -186,4 +188,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

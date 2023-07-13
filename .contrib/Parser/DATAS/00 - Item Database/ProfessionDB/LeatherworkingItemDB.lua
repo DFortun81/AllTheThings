@@ -413,8 +413,107 @@ i(0, 53687);	-- Verdant Tundra Cap
 i(0, 53690);	-- Verdant Tundra Shoulderpads
 
 ------------------
--- PATCH 3.4.0 --
+-- PATCH 3.0.2 --
 ------------------
+-- TRAINER --
+i(0, 64661);	-- Borean Leather
+i(0, 62448);	-- Earthen Leg Armor
+-- ITEM --
+i(44553, 60761);	-- Earthgiving Boots
+i(44552, 60760);	-- Earthgiving Legguards
+i(44516, 60704);	-- Eviscerator's Bindings
+i(44515, 60703);	-- Eviscerator's Chestguard
+i(44513, 60697);	-- Eviscerator's Facemask
+i(44517, 60705);	-- Eviscerator's Gauntlets
+i(44519, 60711);	-- Eviscerator's Legguards
+i(44514, 60702);	-- Eviscerator's Shoulderpads
+i(44520, 60712);	-- Eviscerator's Treads
+i(44518, 60706);	-- Eviscerator's Waistguard
+i(44547, 60755);	-- Giantmaim Bracers
+i(44546, 60754);	-- Giantmaim Legguards
+i(44588, 61000);	-- Icy Scale Belt
+i(44589, 61002);	-- Icy Scale Boots
+i(44587, 60999);	-- Icy Scale Chestguard
+i(44586, 60998);	-- Polar Boots
+i(44585, 60997);	-- Polar Cord
+i(44584, 60996);	-- Polar Vest
+i(44548, 60756);	-- Revenant's Breastplate
+i(44549, 60757);	-- Revenant's Treads
+i(44543, 60750);	-- Stormhide Belt
+i(44538, 60743);	-- Stormhide Crown
+i(44542, 60749);	-- Stormhide Grips
+i(44540, 60747);	-- Stormhide Hauberk
+i(44544, 60751);	-- Stormhide Legguards
+i(44539, 60746);	-- Stormhide Shoulders
+i(44545, 60752);	-- Stormhide Stompers
+i(44541, 60748);	-- Stormhide Wristguards
+i(44535, 60734);	-- Swiftarrow Belt
+i(44537, 60737);	-- Swiftarrow Boots
+i(44533, 60731);	-- Swiftarrow Bracers
+i(44534, 60732);	-- Swiftarrow Gauntlets
+i(44532, 60730);	-- Swiftarrow Hauberk
+i(44530, 60728);	-- Swiftarrow Helm
+i(44536, 60735);	-- Swiftarrow Leggings
+i(44531, 60729);	-- Swiftarrow Shoulderguards
+i(44551, 60759);	-- Trollwoven Girdle
+i(44550, 60758);	-- Trollwoven Spaulders
+i(44932, 62176);	-- Windripper Boots
+i(44933, 62177);	-- Windripper Leggings
+
+------------------
+-- PATCH 3.1.0 --
+------------------
+-- ITEM --
+i(45100, 63200);	-- Belt of Arctic Life
+i(45094, 63194);	-- Belt of Dragons
+i(45096, 63196);	-- Blue Belt of Chaos
+i(45095, 63195);	-- Boots of Living Scale
+i(45101, 63201);	-- Boots of Wintry Endurance
+i(45098, 63198);	-- Death-Warmed Belt
+i(45099, 63199);	-- Footpads of Silence
+i(45097, 63197);	-- Lightning Grounded Boots
+
+------------------
+-- PATCH 3.2.0 --
+------------------
+-- ITEM --
+i(47629, 67081);	-- Black Chitin Bracers [A]
+i(47646, 67137);	-- Black Chitin Bracers [H]
+i(47635, 67087);	-- Bracers of Swift Death [A]
+i(47647, 67139);	-- Bracers of Swift Death [H]
+i(47631, 67083);	-- Crusader's Dragonscale Bracers [A]
+i(47648, 67143);	-- Crusader's Dragonscale Bracers [H]
+i(47630, 67082);	-- Crusader's Dragonscale Breastplate [A]
+i(47649, 67138);	-- Crusader's Dragonscale Breastplate [H]
+i(47628, 67080);	-- Ensorcelled Nerubian Breastplate [A]
+i(47650, 67136);	-- Ensorcelled Nerubian Breastplate [H]
+i(47634, 67086);	-- Knightbane Carapace [A]
+i(47651, 67142);	-- Knightbane Carapace [H]
+i(47632, 67084);	-- Lunar Eclipse Robes [A]
+i(47652, 67140);	-- Lunar Eclipse Robes [H]
+i(47633, 67085);	-- Moonshadow Armguards [A]
+i(47653, 67141);	-- Moonshadow Armguards [H]
+
+------------------
+-- PATCH 3.2.2 --
+------------------
+-- TRAINER --
+i(0, 69386);	-- Drums of Forgotten Kings
+i(0, 69388);	-- Drums of the Wild
+
+
+------------------
+-- PATCH 3.3.0 --
+------------------
+-- ITEM --
+i(49959, 70556);	-- Bladeborn Leggings
+i(49958, 70555);	-- Blessed Cenarion Boots
+i(49965, 70560);	-- Draconic Bonesplinter Legguards
+i(49963, 70559);	-- Earthsoul Boots
+i(49961, 70557);	-- Footpads of Impending Death
+i(49957, 70554);	-- Legwraps of Unleashed Nature
+i(49962, 70558);	-- Lightning-Infused Leggings
+i(49966, 70561);	-- Rock-Steady Treads
 
 ------------------
 -- PATCH 4.0.3 --

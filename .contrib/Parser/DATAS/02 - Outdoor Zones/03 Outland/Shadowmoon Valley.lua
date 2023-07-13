@@ -2268,7 +2268,7 @@ root(ROOTS.Zones, {
 
 -- #if AFTER TBC
 -- These quests never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 		-- #if BEFORE WRATH
 		q(10871),	-- BETA Ally of the Netherwing
@@ -2276,5 +2276,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
 		-- #endif
 	}),
-}));
+});
 -- #endif

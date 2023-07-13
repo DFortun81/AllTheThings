@@ -6,9 +6,13 @@ local REMOVED_WITH_WRATH = { "added 1.0.1", "removed 3.0.8" };
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(741, {	-- Molten Core
 		["lore"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
+		["sins"] = {
+			"Geschmolzener Kern",	-- DE
+			"Огненные Недра",		-- RU
+		},
 		["mapID"] = MOLTEN_CORE,
 		["coord"] = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
-		-- #if BEFORE WRATH
+		-- #if BEFORE 5.4.0
 		["sourceQuest"] = 7848,	-- Attunement to the Core
 		-- #endif
 		["sharedLockout"] = 1,
@@ -63,7 +67,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(7848, {	-- Attunement to the Core
 					["qg"] = 14387,	-- Lothos Riftwaker
 					["altQuests"] = { 7487 },	-- Attunement to the Core [Original??]
-					-- #if BEFORE WRATH
+					-- #if BEFORE 5.4.0
 					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 					-- #else
 					["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
@@ -568,11 +572,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(19144),	-- Sabatons of the Flamewalker
 					i(18821),	-- Quick Strike Ring
 					i(18820),	-- Talisman of Ephemeral Power
-					-- #if ANYCLASSIC
-					un(NEVER_IMPLEMENTED, i(17782)),	-- Talisman of Binding Shard
-					-- #else
-					un(REMOVED_FROM_GAME, i(17782)),	-- Talisman of Binding Shard
-					-- #endif
 				},
 			}),
 			e(1523, {	-- Shazzrah
@@ -620,6 +619,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(18821),	-- Quick Strike Ring
 					i(17110),	-- Seal of the Archmagus
 					i(18820),	-- Talisman of Ephemeral Power
+					i(17782, {	-- Talisman of Binding Shard
+						["lore"] = "According to Travis Day, this item was used by Blizzard in a test version of the Thunderfury quest line. The quest was removed and was not publicly released, but Blizzard initially forgot to remove the item from the loot table. It was only ever looted by Noktyn-Archimonde US of the guild Nurfed on March 23, 2005",
+						["timeline"] = { "added 1.11.1.5462", "removed 1.11.2" },
+					}),
 				},
 			}),
 			e(1525, {	-- Sulfuron Harbinger
@@ -769,11 +772,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(19138),	-- Band of Sulfuras
 					i(18815),	-- Essence of the Pure Flame
 					i(17082),	-- Shard of the Flame
-					-- #if ANYCLASSIC
-					un(NEVER_IMPLEMENTED, i(17982)),	-- Ragnaros Core
-					-- #else
-					un(REMOVED_FROM_GAME, i(17982)),	-- Ragnaros Core
-					-- #endif
+					i(17982, {	-- Ragnaros Core
+						["timeline"] = { "added 1.1.0", "removed 1.4.0" },
+					}),
 				},
 			}),
 		},

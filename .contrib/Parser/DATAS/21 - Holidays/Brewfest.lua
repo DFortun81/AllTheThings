@@ -532,7 +532,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						end
 					end
 					local u, r = ]] .. WRATH_PHASE_ONE .. [[, ]] .. REMOVED_FROM_GAME .. [[;
-					if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_ONE .. [[] then
+					if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_ONE .. [[) then
 						if t.kodo.parent ~= t then
 							table.remove(t.kodo.parent.g, 3);
 							table.remove(t.kodo.parent.g, 3);
@@ -556,7 +556,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							table.insert(t.parent.g, 3, t.ram);
 							table.insert(t.parent.g, 3, t.kodo);
 						end
-						u = ]] .. NEVER_IMPLEMENTED .. [[;
+						u = 1;
 						r = nil;
 					end
 					for i,o in ipairs(t.g) do o.u = u; end
@@ -727,7 +727,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	}),
 	n(QUESTS, {
 		-- #if NOT ANYCLASSIC
-		["OnUpdate"] = [[function(t)
+		["OnInit"] = [[function(t)
 			if GetCVar("portal") == "EU" then
 				local quests = {[11117]=1,[11431]=1,[11118]=1,[11120]=1};
 				for i,quest in ipairs(t.g) do
@@ -736,7 +736,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					end
 				end
 			end
-			t.OnUpdate = nil;
+			return t;
 		end]],
 		-- #endif
 		["groups"] = {

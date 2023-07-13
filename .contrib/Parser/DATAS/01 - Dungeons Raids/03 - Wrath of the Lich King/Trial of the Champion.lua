@@ -122,7 +122,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 				})),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY }, 	-- Defense Protocol Beta: Trial of the Champion (A)
-					(function(t) return t.criteriaID or t.achID; end), ach(18677, {
+					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(18677, {
 					crit(60760, { -- Mokra the Skullcrusher
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {
@@ -181,7 +181,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					}),
 				}))),
 				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = HORDE_ONLY }, 	-- Defense Protocol Beta: Trial of the Champion (H)
-					(function(t) return t.criteriaID or t.achID; end), ach(18678, {
+					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(18678, {
 					crit(60768, { -- Marshal Jacob Alerius
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 						["groups"] = {

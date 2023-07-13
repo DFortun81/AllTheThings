@@ -45,7 +45,6 @@ namespace ATT
             ObjectData.Create("encounterID",        "e",            "_.CreateEncounter", "f");
             ObjectData.Create("explorationID",      "exp",          "_.CreateExploration", "f");
             ObjectData.Create("flightPathID",       "fp",           "_.CreateFlightPath", "f");
-            ObjectData.Create<NPCData>("npcID",     "n",            "_.CreateNPC", "f", "creatureID");
             ObjectData.Create("objectID",           "o",            "_.CreateObject", "f");
             ObjectData.Create("petAbilityID",       "pa",           "_.CreatePetAbility", "f");
             ObjectData.Create("followerID",         "follower",     "_.CreateFollower", "f");
@@ -67,12 +66,13 @@ namespace ATT
             ObjectData.Create("factionID",          "faction",      "_.CreateFaction", "f");
             ObjectData.Create("achID",              "ach",          "_.CreateAchievement", "modID");
             ObjectData.Create("achievementCategoryID", "achcat",    "_.CreateAchievementCategory", "f");
-            ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell");
-            ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
             ObjectData.Create("tierID",             "t",            "_.CreateTier", "f");
             ObjectData.Create("petTypeID",          "pt",           "_.CreatePetType", "f");
             ObjectData.Create("pvpRankID",          "pvprank",      "_.CreatePVPRank", "f");
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID");
+            ObjectData.Create<NPCData>("npcID",     "n",            "_.CreateNPC", "f", "creatureID");
+            ObjectData.Create<SpellData>("spellID", "sp", "_.CreateSpell");
+            ObjectData.Create<QuestData>("questID", "q", "_.CreateQuest", "f");
             ObjectData.Create("f",                  "flt",          "_.CreateFilter");
         }
 
@@ -93,13 +93,11 @@ namespace ATT
             var utcNow = DateTime.UtcNow;
             builder.Insert(0, new StringBuilder()
                 .AppendLine("-----------------------------------------------------")
-                .AppendLine("--   S O U R C E   D A T A B A S E   M O D U L E   --")
+                .AppendLine("--   R O O T   C A T E G O R I E S   M O D U L E   --")
                 .AppendLine("-----------------------------------------------------")
                 .AppendLine("--   WARNING: This file is dynamically generated   --")
-                //.Append("--   UPDATED: ").Append($"{utcNow.ToLongDateString()} @ {utcNow.ToShortTimeString()}".PadRight(36, ' ')).AppendLine(" --")
                 .AppendLine("-----------------------------------------------------")
-                .AppendLine("local _ = select(2, ...);")
-                .AppendLine("local function g(t,g) t.g = g; return t; end"));
+                .AppendLine("local appName, _ = ...;"));
         }
 
         /// <summary>

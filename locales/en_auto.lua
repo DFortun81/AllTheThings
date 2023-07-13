@@ -1,5 +1,5 @@
 ﻿--   WARNING: This file is dynamically generated   --
-local _, app = ...;
+local appName, app = ...;
 local keys = {
 ["ITEM_NAMES"]={
 [2404]="Deprecated Pattern: Light Winter Cloak",
@@ -3156,7 +3156,7 @@ local keys = {
 [72351]="Talk to Zeldis again",
 [72352]="Move closer to Sneaky Mud Mask",
 [72362]="Warmode Bounty Looted",
-[72366]="Account Dragonflight Campaign Completed",
+[72366]="Dragonflight Campaign Completed [Account]",
 [72377]="Warmode Crate Looted",
 [72676]="Step 1: Dance, Dance 'Til You're Dead",
 [72738]="Step 7: The Way to an Otto's Heart",
@@ -3178,6 +3178,7 @@ local keys = {
 [75527]="Second Rock Mouse",
 [75534]="Third Rock Mouse",
 [75535]="Fourth Rock Mouse",
+[75658]="Zaralek Cavern Unlocked [Account]",
 [75708]="Weekly: A Race To The Finish"}}
 
 local L = app.L;

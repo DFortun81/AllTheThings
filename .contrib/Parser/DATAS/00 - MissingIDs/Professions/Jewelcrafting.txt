@@ -1508,8 +1508,3 @@ r(359672),	-- Crafter's Mark of the First Ones
 r(359701),	-- Vestige of the Eternal
 r(360016),	-- Aealic Harmonizing Stone \\ Ephemera Harmonizing Stone
 r(360317),	-- Devourer Essence Stone
-10.1.5.49516
-r(412557),	-- TEST CRUSHING (DNT)
-r(413743),	-- Gem of the Nerubians
-r(413751),	-- Frostwyrm's Icy Gaze
-r(413752),	-- Frostwyrm's Frigid Stare

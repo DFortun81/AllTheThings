@@ -69,12 +69,12 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								i(112042),	-- Recipe: Draenic Channeled Mana Potion
-								un(NEVER_IMPLEMENTED, i(112043)),	-- Recipe: Draenic Mana Potion
+								i(112043, { ["timeline"] = { "created 6.0.1.18297" }}),	-- Recipe: Draenic Mana Potion
 								i(112041),	-- Recipe: Draenic Armor Potion
 								i(112038),	-- Recipe: Draenic Agility Potion
 								i(112039),	-- Recipe: Draenic Intellect Potion
 								i(112040),	-- Recipe: Draenic Strength Potion
-								un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
+								i(120132, { ["timeline"] = { "created 6.0.2.18816" }}),	-- Recipe: Secrets of Draenor Alchemy
 								i(118700, {	-- Secret of Draenor Alchemy
 									["filterID"] = MISC,
 									["g"] = {
@@ -119,12 +119,12 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								i(112042),	-- Recipe: Draenic Channeled Mana Potion
-								un(NEVER_IMPLEMENTED, i(112043)),	-- Recipe: Draenic Mana Potion
+								i(112043, { ["timeline"] = { "created 6.0.1.18297" }}),	-- Recipe: Draenic Mana Potion
 								i(112041),	-- Recipe: Draenic Armor Potion
 								i(112038),	-- Recipe: Draenic Agility Potion
 								i(112039),	-- Recipe: Draenic Intellect Potion
 								i(112040),	-- Recipe: Draenic Strength Potion
-								un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
+								i(120132, { ["timeline"] = { "created 6.0.2.18816" }}),	-- Recipe: Secrets of Draenor Alchemy
 								i(118700, {	-- Secret of Draenor Alchemy
 									["filterID"] = MISC,
 									["g"] = {

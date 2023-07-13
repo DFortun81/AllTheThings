@@ -480,6 +480,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
+			-- #if AFTER 10.1.5
+			n(TREASURES, {
+			--	o( , {	-- Undelivered Shipment of Smokes
+					["description"] = "Located in live Stratholme, near Ezra Grimm's tobacco place (enter the instance, take a left and another left). By a cart next to where Ezra Grimm spawns.",
+					["groups"] = {
+						i(206360),	-- Undelivered Shipment of Smokes
+					},
+			-- }),
+			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
 				i(12843, {	-- Corruptor's Scourgestone

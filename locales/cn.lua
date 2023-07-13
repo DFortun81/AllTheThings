@@ -3,9 +3,11 @@ if GetLocale() ~= "zhCN" and GetLocale() ~= "zhTW" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "职业试玩";
+CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "角色直升";
 DRAKE_MANUSCRIPTS = "观龙者手稿";
-TRACK_ACC_WIDE = app.ccColors.Account.."追踪帐号通用|R";
-ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|R。";
+TRACK_ACC_WIDE = app.ccColors.Account .. "追踪 "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R";
+ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.."|R 默认。";
 
 -- General Text
 	L.DESCRIPTION = "“你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收藏者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。”";
@@ -270,7 +272,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 			L.TITLE_SOLO = "个人 ";
 			L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 
-		--TODO: L.GENERAL_CONTENT = "General Content";
+		L.GENERAL_CONTENT = "通用内容";
 		L.MERCH_BUTTON_LABEL = "商店";
 		L.TWITCH_BUTTON_TOOLTIP = "点击按钮复制 URL 到我的 Twitch 频道。\n\n可以在我直播的时候问问题，我会尽力回答！";
 		L.DISCORD_BUTTON_TOOLTIP = "点击按钮复制 URL 到All The Things Discord 服务器。\n\n可以与其他收藏家分享进步/挫折！";
@@ -294,7 +296,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.ACCOUNT_THINGS_LABEL = "帐号通用事物";
 		L.GENERAL_THINGS_LABEL = "通用事物";
 		L.EXPANSION_THINGS_LABEL = "资料片事物";
-		--TODO: L.EXTRA_THINGS_LABEL = "Additional Resources";
+		L.EXTRA_THINGS_LABEL = "其他资源";
 		L.STRANGER_THINGS_LABEL = "陌生事物";
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就。";
 		L.TMOG_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取。\n\n注意: 禁用此选项也会禁用所有采集逻辑，你可以使用此切换来防止在执行重要组内容时出现延迟，请牢记，重新启用后将需要进行计算。\n\n"..ACC_WIDE_DEFAULT;
@@ -319,7 +321,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.REPUTATIONS_CHECKBOX_TOOLTIP = "启用此选项可追踪声望。\n\n一旦你达到了有声望的尊敬或最好的朋友，它将被标记为收藏。\n\n你可能需要手动刷新才能正确更新。";
 		L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t "..app.ccColors.Insane.."符文铭刻之力";
 		L.RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "启用此选项以追踪暗影国度的符文铭刻之力。";
-		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Enable this option to track "..EXPANSION_NAME9.." "..DRAKE_MANUSCRIPTS;	--TODO
+		L.DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "启用此选项跟踪 "..EXPANSION_NAME9.." "..DRAKE_MANUSCRIPTS;
 		L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "启用此选项来追踪暗影国度灵魂羁绊的导灵器。";
 		L.TITLES_CHECKBOX_TOOLTIP = "启用此选项可追踪头衔。\n\n这些可以让你的角色脱颖而出，看起来你已经玩了一段时间。通常只有新玩家没有称号。";
 		L.TOYS_CHECKBOX_TOOLTIP = "启用此选项可追踪玩具。\n\n这些玩具中的大多数玩具都有趣。其他的，如炉石玩具，可以用来代替你的初始炉石，并可以为你节省一个背包！他们也有有趣的效果…很好！\n\n"..ACC_WIDE_DEFAULT;
@@ -342,8 +344,8 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.SHOW_BOE_CHECKBOX = app.ccColors.Insane.."装备绑定/拾取绑定物品";
 		L.SHOW_BOE_CHECKBOX_TOOLTIP = "如果要隐藏装备绑定/拾取绑定物品，请启用此设置。\n\n当你尝试为角色完成经典旧世并且不想专门用于可以在小号或拍卖行上放置的物品时，此设置非常有用。\n\n即：不要因为毁灭之锤而扰乱你的思绪。";
 		L.SHOW_PVP_CHECKBOX_TOOLTIP = "如果你想隐藏任何'可能'需要在游戏中进行 PvP 互动的内容，请启用此设置。";
-		--TODO: L.SHOW_ALL_SEASONAL = app.ccColors.Insane .. "All Seasonal Events";
-		--TODO: L.SHOW_ALL_SEASONAL_TOOLTIP = "Enable this setting to show all seasonal events, instead of only currently active seasonal events.";
+		L.SHOW_ALL_SEASONAL = app.ccColors.Insane .. "所有季节性事件";
+		L.SHOW_ALL_SEASONAL_TOOLTIP = "启用此设置可显示所有季节性事件，而不是仅显示当前活动的季节性事件。";
 		L.SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "如果您想在游戏中显示需要宠物对战的内容，请启用此设置。";
 		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略装备绑定/拾取绑定的筛选";
 		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略装备绑定/拾取绑定物品的装备、武器、种族、等级或职业要求，请启用此设置。\n\n如果你正试图通过拍卖行扫描收藏你的物品，此模式可能对你有用。";
@@ -386,7 +388,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "点击此按钮可将所有过滤重置为职业默认。\n\n注意：只能打开可为职业收藏的过滤。";
 		L.ALL_BUTTON_TOOLTIP = "点击此按钮一次启用所有设备过滤。";
 		L.UNCHECK_ALL_BUTTON_TOOLTIP = "点击此按钮一次禁用所有设备过滤。";
-		--TODO: L.CUSTOM_FILTERS_LABEL = "Automated Content";
+		L.CUSTOM_FILTERS_LABEL = "自动化内容";
 		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 "..app.ccColors.Account.."账号模式|cffFFFFFF。|r";
 		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 
@@ -394,7 +396,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.UNOBTAINABLES_TAB = "不可获得";
 		L.SEASONAL_LABEL = "节日";
 		L.SEASONAL_ALL = "|cffECBC21切换所有节日";
-		--TODO: L.UNOBTAINABLE_LABEL = "Unobtainable Content";
+		L.UNOBTAINABLE_LABEL = "无法获取的内容";
 		L.UNOBTAINABLE_ALL = "|cffECBC21切换所有不可获得";
 		L.NO_CHANCE_ALL = "|cffECBC21切换所有 \"没有机会\"";
 		L.HIGH_CHANCE_ALL = "|cffECBC21切换所有 \"很大机会\"";
@@ -470,12 +472,12 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.MINI_LIST_SLIDER_LABEL = "小列表缩放";
 		L.MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自定义所有小和小列表的缩放。\n\n默认：1';
 		L.ADDITIONAL_LABEL = "附加信息";
-		--TODO: L.WINDOW_COLORS = "Window Colors";
-		--TODO: L.BACKGROUND_TOOLTIP = "Set the background color of all ATT windows.";
-		--TODO: L.BORDER_TOOLTIP = "Set the border color of all ATT windows.";
-		--TODO: L.RESET_TOOLTIP = "Reset the background and border color of all ATT windows.";
-		--TODO: L.CLASS_BORDER = "Use Class Color For Border";
-		--TODO: L.CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
+		L.WINDOW_COLORS = "窗口颜色";
+		L.BACKGROUND_TOOLTIP = "设置所有 ATT 窗口的背景颜色和透明度。";
+		L.BORDER_TOOLTIP = "设置所有 ATT 窗口的边框颜色和透明度。";
+		L.RESET_TOOLTIP = "重置所有 ATT 窗口的背景和边框。";
+		L.CLASS_BORDER = "边框使用职业颜色";
+		L.CLASS_BORDER_TOOLTIP = "使用职业颜色作为边框。当登录到另一个职业时，此信息会更新。";
 
 	-- Features tab
 		L.MINIMAP_LABEL = "小地图按钮";
@@ -506,7 +508,7 @@ ACC_WIDE_DEFAULT = "默认情况下追踪"..app.ccColors.Account.."账号通用|
 		L.QUEST_CHAIN_NESTED_CHECKBOX = "显示嵌套任务链";
 		L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP = "如果你想让任务链要求（右键单击任务）窗口将所需任务显示为其后续任务的子组，即它们必须从内到外完成，请启用此选项。\n\n这一点很有用，不会错过个别任务，应该主要用于完成任务的考虑。\n\n否则任务链要求将以自上而下的方式显示，最早的任务在最上面。";
 		L.CELEBRATIONS_LABEL = "庆祝和音效";
-		--TODO: L.AUDIO_CHANNEL = "Audio Channel";
+		L.AUDIO_CHANNEL = "声音通道";
 		L.CELEBRATE_COLLECTED_CHECKBOX = "收藏事物触发庆祝音效";
 		L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在获得新的事物时听到庆祝'fanfare'效果请启用这个选项。\n\n这个功能可以极大地帮助你保持动力。";
 		L.WARN_REMOVED_CHECKBOX = "移除事物触发警告";
@@ -2232,6 +2234,8 @@ for key, value in pairs({
 	[242678] = "宝箱",	-- Treasure Chest
 	[242683] = "宝箱",	-- Treasure Chest
 	[242959] = "宝箱",	-- Treasure Chest
+	[243321] = "野性之石",	-- Feral Stone
+	[243323] = "平衡之石",	-- Balance Stone
 	[243334] = "干枯的草药",	-- Withered Herb
 	--TODO: [243392] = "Alchemy Book",	-- Alchemy Book
 	[243688] = "宝箱",	-- Treasure Chest
@@ -3590,6 +3594,7 @@ for key, value in pairs({
 	[382325] = "玛瑙宝石簇",	-- Onyx Gem Cluster
 	--TODO: [382621] = "Revival Catalyst Console",	-- Revival Catalyst Console
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
+	[383660] = "盐晶",	-- Salt Crystal
 	[383732] = "海象人工具盒",	-- Tuskarr Tacklebox
 	[383733] = "翻动过的泥土",	-- Disturbed Dirt
 	[383734] = "翻动过的泥土",	-- Disturbed Dirt
@@ -3617,6 +3622,7 @@ for key, value in pairs({
 	[385520] = "骨堆",	-- Bone Pile
 	[385533] = "发信石：抗议",	-- Sending Stone: Protest
 	[385565] = "炽燃的暗影烈焰宝箱",	-- Blazing Shadowflame Chest
+	--TODO: [385581] = "Henry's Handbag",	-- Henry's Handbag
 	--TODO: [385799] = "Hardened Strongbox",	-- Hardened Strongbox
 	[385800] = "金子堆",	-- Gold Pile
 	[385801] = "金子堆",	-- Gold Pile
@@ -3823,6 +3829,7 @@ for key, value in pairs({
 	[401828] = "纳·克斯寇圣物匣",	-- Nal ks'kol Reliquary
 	[401839] = "沉睡者的奖赏",	-- Dreamer's Bounty
 	[401844] = "臭垃圾堆",	-- Smelly Trash Pile
+	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
 	[402627] = "古旧的窑炉",	-- Well-Worn Kiln
 	[402632] = "硫磺救生环",	-- Brimstone Rescue Ring
 	[402634] = "扎卡利长老之矛",	-- Zaqali Elder Spear
@@ -3832,6 +3839,9 @@ for key, value in pairs({
 	[402888] = "精细的扎卡利符文",	-- Intricate Zaqali Runes
 	[402890] = "嘶鸣符文草稿",	-- Hissing Rune Draft
 	[402892] = "远古研究",	-- Ancient Research
+	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
+	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
 	[9000000] = "微风雕塑之石",	-- Wind Sculpted Stone
 	[9999890] = "已腐化拾取",	-- Corrupted Loot
 	[9999891] = "仅主要目标",	-- Main Objective Only
@@ -3902,14 +3912,6 @@ for key, value in pairs({
 })
 do a[key] = value; end
 
--- Saved Instance Name => Dungeon Journal Instance Name Converter
--- If your saves aren't lining up, it's probably because Blizzard
--- didn't use the same localization for the instance. Sorry.
-local a = L.SAVED_TO_DJ_INSTANCES;
-for key,value in pairs({
-})
-do a[key] = value; end
-
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
 	-- Arbitrary Filters
@@ -3931,6 +3933,6 @@ for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收藏这个。" },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "命运丝线", desc = "只有选择跳过暗影国度故事线的角色才能收藏这个。" },
 	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "只有角色获得 |cffe6cc80"..GetSpellInfo(275825).."|r 可以收集。" },
-	["~HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "只有角色 |cffff0000没有|r 获得 |cffe6cc80"..GetSpellInfo(275825).."|r 可以收集。" },
+	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "只有角色 |cffff0000没有|r 获得 |cffe6cc80"..GetSpellInfo(275825).."|r 可以收集。" },
 })
 do a[key] = value; end

@@ -560,10 +560,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(63635),	-- learning Ensemble: Renathal's Field Inquisitor's Vestments
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		filter(MISC, {
 			i(187137),	-- Research Report: Relic Finding Techniques (this effect is now granted from a spell learned from quest 64368)
 		}),
 	}),
-}));
+});

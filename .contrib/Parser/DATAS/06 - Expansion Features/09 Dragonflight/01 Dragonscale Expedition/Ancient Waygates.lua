@@ -264,12 +264,28 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					-- Temporary lockCriteria before Blizzard fix this (71146 got unflag for anyone who did it before 75444 when patch 10.0.7 went live)
+					["lockCriteria"] = { 1, "questID", 75444 },	-- Continued Waygate Exploration
+				}),
+					-- RENOWN 11 --
+				q(75444, {	-- Waygate Exploration: The Forbidden Reach
+					["minReputation"] = { 2507, 11 },	-- Dragonscale Expedition Renown 23
+					["sourceQuest"] = 71146,	-- Continued Waygate Exploration
+					["provider"] = { "n", 196643 },	-- Doc Nanners
+					["DisablePartySync"] = true,
+					["isBreadcrumb"] = true,
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["timeline"] = { ADDED_10_0_7 },
 				}),
 					-- RENOWN 15 --
 				q(71148, {	-- Continued Waygate Exploration
 					["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					-- #if BEFORE 10.0.7
 					["sourceQuest"] = 71146,	-- Continued Waygate Exploration
+					-- #else
+					["sourceQuest"] = 75444,	-- Waygate Exploration: The Forbidden Reach
+					-- #endif
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -305,16 +321,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
-					-- Forbidden Reach --
-				q(75444, {	-- Waygate Exploration: The Forbidden Reach
-					-- TODO: ["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
-					-- TODO: ["sourceQuest"] = 71150,	-- Continued Waygate Exploration
-					["provider"] = { "n", 196643 },	-- Doc Nanners
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
-					["timeline"] = { ADDED_10_0_7 },
-				}),
 				q(75154, {	-- Waygate: Morqut Islet
 					-- TODO: ["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
 					["sourceQuests"] = {
@@ -334,13 +340,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 })));
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		q(71183),	-- triggered together with 'Continued Waygate Exploration' (70702)
-		q(71185),	-- triggered together with 'Continued Waygate Exploration' (71146)
-		q(71187),	-- triggered together with 'Continued Waygate Exploration' (71148)
-		q(71188),	-- triggered together with 'Continued Waygate Exploration' (71149) / Shady Sanctuary ( 71178)?
-		q(71189),	-- triggered together with 'Continued Waygate Exploration' (71150)
-		q(71190),	-- triggered together with 'Continued Waygate Exploration' (71151)
-		q(72744),	-- triggered together with 'Continued Waygate Exploration' (71151)
-		q(73864),	-- triggered when accepting 'Dormant Discovery' (66595)
+		q(71183),	-- triggered together with 'Continued Waygate Exploration' (questID 70702) (spellID 390634)
+		q(71185),	-- triggered together with 'Continued Waygate Exploration' (questID 71146) (spellID 390645)
+		--q(71186),	-- triggered together with 'Continued Waygate Exploration' (questID ?) (spellID 390656)
+		q(71187),	-- triggered together with 'Continued Waygate Exploration' (questID 71148) (spellID 390658)
+		q(71188),	-- triggered together with 'Continued Waygate Exploration' (questID 71149) (spellID 390659)
+		q(71189),	-- triggered together with 'Continued Waygate Exploration' (questID 71150) (spellID 390665)
+		q(71190),	-- triggered together with 'Continued Waygate Exploration' (questID 71151) (spellID 390666)
+		q(72744),	-- triggered together with 'Continued Waygate Exploration' (questID 71151) (spellID 390666)
+		q(73864),	-- triggered when accepting 'Dormant Discovery' (questID 66595)
 	}),
 })));

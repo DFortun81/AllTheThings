@@ -601,9 +601,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { DEATHKNIGHT },
 							["groups"] = {
 								i(40775),	-- Winged Steed of the Ebon Blade (MOUNT!)
-								i(136796, {	-- Necrophile Tome: Corpse Exploder
-									["spellID"] = 127344,	-- Corpse Exploder
-									["timeline"] = { "added 7.0.3.22248" },
+								i(136796, {	-- Necrophile Tome: Corpse Exploder (CI!)
+									["timeline"] = { ADDED_7_0_3_LAUNCH },
 								}),
 							},
 						}),
@@ -3390,6 +3389,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 				},
 			}),
+			-- #if AFTER 10.1.5
+			n(TREASURES, {
+			--	o( , {	-- The Road Ahead
+					["description"] = "Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor.",
+					["coords"] = { 
+						{ 55.0, 64.1, EASTERN_PLAGUELANDS },	-- The Road Ahead
+					},
+					["groups"] = {
+						i(206363),	-- The Road Ahead
+					},
+			-- }),
+			--	o( , {	-- 
+					["description"] = "Located by a meat wagon in Darrowshire.",
+					["coords"] = { 
+						{ 36.3, 84.8, EASTERN_PLAGUELANDS },	-- Trampled Doll
+					},
+					["groups"] = {
+						i(206361),	-- Trampled Doll
+					},
+			-- }),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(12384, {	-- Agustus the Touched
 					["description"] = "Vendor will not sell to you until you complete his quest.",
@@ -3484,10 +3505,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								5513,	-- Mantles of the Dawn
 							},
 						}),
-						i(136801, {	-- Divine Tome: Contemplation (Paladin)
-							["timeline"] = { "added 7.0.3.22248" },
-							["classes"] = { PALADIN },
-							["f"] = RECIPES,
+						i(136801, {	-- Divine Tome: Contemplation (CI!)
+							["timeline"] = { ADDED_7_0_3_LAUNCH },
 						}),
 						applyclassicphase(PHASE_THREE, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19446)),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
@@ -3502,6 +3521,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(136928, {	-- Thaumaturgist's Orb (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },
 							["classes"] = { PRIEST },
+						}),
+						
+						-- 10.1.5 Naxx Items
+						i(206584, {	-- Archived Crafting Techniques
+							["timeline"] = { "added 10.1.5" },
+							--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+							["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
+							["groups"] = {
+								i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
+								i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
+								i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
+								i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
+								i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
+								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
+								i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
+								i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
+							},
 						}),
 					},
 				}),
@@ -3649,7 +3685,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
 					["cr"] = 9452,	-- Scarlet Enchanter
 				}),
-				i(16222, {	-- Formula: Enchant Shield - Superior Versatility / CLASSIC: Formula: Enchant Shield - Superior Spirit (RECIPE!)
+				i(16222, {	-- Formula: Enchant Shield - Vitality / TBC-10.1.5:Formula: Enchant Shield - Superior Versatility / CLASSIC: Formula: Enchant Shield - Superior Spirit (RECIPE!)
 					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
 					["cr"] = 9447,	-- Scarlet Warder
 				}),

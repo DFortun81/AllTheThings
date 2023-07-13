@@ -57,6 +57,9 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 	}),
 	filter(MOUNTS, {
 		i(143643),	-- Abyss Worm (MOUNT!)
+		i(168830, {	-- Aerial Unit R-21/X 
+			["timeline"] = { "added 10.1.5" },
+		}),
 		i(68823),	-- Armored Razzashi Raptor (MOUNT!)
 		i(32458),	-- Ashes of Al'ar (MOUNT!)
 		i(95059),	-- Clutch of Ji-Kun (MOUNT!)
@@ -82,15 +85,33 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(94228),	-- Cobalt Primordial Direhorn (MOUNT!)
 		i(63040),	-- Drake of the North Wind (MOUNT!)
 		i(63041),	-- Drake of the South Wind (MOUNT!)
+		i(166705, {	-- Glacial Tidestorm
+			["timeline"] = { "added 10.1.5" },
+		}),
 		i(43959),	-- Grand Black War Mammoth (A) (MOUNT!)
 		i(44083),	-- Grand Black War Mammoth (H) (MOUNT!)
 		i(44707),	-- Green Proto-Drake (MOUNT!)
+		i(166518, {	-- GMOD
+			["timeline"] = { "added 10.1.5" },
+		}),
 		i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
 		i(94231),	-- Jade Primordial Direhorn (MOUNT!)
+		i(168826, {	-- Mechagon Peacekeeper 
+			["timeline"] = { "added 10.1.5" },
+		}),
 		i(163042),  -- Mighty Caravan Brutosaur (MOUNT!)
+		i(159921, {	-- Mummified Raptor Skull
+			["timeline"] = { "added 10.1.5" },
+		}),
+		i(174872, {	-- Ny'alotha Allseer
+			["timeline"] = { "added 10.1.5" },
+		}),
 		i(49636),	-- Onyxian Drake (MOUNT!)
 		i(44175),	-- Plagued Proto-Drake (MOUNT!)
 		i(94229),	-- Slate Primordial Direhorn (MOUNT!)
+		i(159842, {	-- Sharkbait
+			["timeline"] = { "added 10.1.5" },
+		}),
 		i(32768),	-- Raven Lord (MOUNT!)
 		i(45802),	-- Rusted Proto-Drake (MOUNT!)
 		i(95057),	-- Thundering Cobalt Cloud Serpent (MOUNT!)
@@ -110,6 +131,9 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(35513),	-- Swift White Hawkstrider (MOUNT!)
 		i(19902),	-- Swift Zulian Tiger (MOUNT!)
 		i(54068),	-- Wooly White Rhino (MOUNT!)
+		i(160829, {	-- Underrot Crawg Harness
+			["timeline"] = { "added 10.1.5" },
+		}),
 		i(147805),	-- Valarjar Stormwing (MOUNT!)
 		i(152790),	-- Vile Fiend (MOUNT!)
 		i(49286),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
@@ -371,7 +395,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(38578),	-- The Flag of Ownership (TOY!)
 	}),
 	n(WEAPONS, {
-		un(NEVER_IMPLEMENTED, i(110591)),	-- Flintlocke's Blasthammer
+		i(110591, { ["timeline"] = { "created 6.0.1.18125" }}),	-- Flintlocke's Blasthammer
 		i(39769),	-- Arcanite Ripper
 		i(90176),	-- Flintlocke's Blasthammer
 		i(44924),	-- Sun-Lute of the Phoenix King

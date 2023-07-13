@@ -2406,6 +2406,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 			}),
+			-- #if AFTER 10.1.5
+			n(TREASURES, {
+			--	o( , {	-- The Deed to Andorhal
+					["description"] = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
+					["coords"] = { 
+						{ 44.0, 69.2, WESTERN_PLAGUELANDS },	-- The Deed to Andorhal
+					},
+					["groups"] = {
+						i(206362),	-- The Deed to Andorhal
+					},
+			-- }),
+			--	o( , {	-- 
+					["description"] = "Located by the water fountain in Caer Darrow.",
+					["coords"] = { 
+						{ 68.8, 78.9, WESTERN_PLAGUELANDS },	-- Caer Darrow Fountain
+					},
+					["groups"] = {
+						i(206359),	-- Caer Darrow Fountain Water
+					},
+			-- }),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(11056, {	-- Alchemist Arbington
 					["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
@@ -2483,6 +2505,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire
+						
+						-- 10.1.5 Naxx Items
+						i(206584, {	-- Archived Crafting Techniques
+							["timeline"] = { "added 10.1.5" },
+							--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+							["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
+							["groups"] = {
+								i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
+								i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
+								i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
+								i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
+								i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
+								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
+								i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
+								i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
+							},
+						}),
 					},
 				}),
 				-- #if ANYCLASSIC
@@ -2501,6 +2540,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(11936, {	-- Artist Renfray
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 65.6, 75.4, WESTERN_PLAGUELANDS },
+					["groups"] = {
+						i(206358, {	-- Imported Candle
+							["cost"] = { { "i", 206363, 1 } },	-- The Road Ahead
+						}),
+					},
+				}),
+				n(11316, {	-- Joseph
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 68.0, 74.8, WESTERN_PLAGUELANDS },	-- Joseph
+					["groups"] = {
+						i(206354, {	-- Stinky Candle -- Candle #4
+							["cost"] = { { "i", 206359, 1 } },	-- Caer Darrow Fountain Water
+						}),
+					},
+				}),
 				n(12942, {	-- Leonard Porter <Leatherworking Supplies>
 					["coord"] = { 43.0, 84.3, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -2510,6 +2567,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(15725, {	-- Pattern: Wicked Leather Gauntlets (RECIPE!)
 							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(11286, {	-- Magistrate Marduke
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 70.4, 74.0, WESTERN_PLAGUELANDS },	-- Magis
+					["groups"] = {
+						i(206357, {	-- Authentic Andorhal Candle -- Candle #3
+							["cost"] = { { "i", 206362, 1 } },	-- The Deed to Andorhal
 						}),
 					},
 				}),
@@ -2525,6 +2591,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
 						i(13501),	-- Recipe: Major Mana Potion
 						i(13485),	-- Recipe: Transmute Water to Air
+					},
+				}),
+				n(11285, {	-- Rory
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 63.4, 75.8, WESTERN_PLAGUELANDS },	-- Rory
+					["groups"] = {
+						i(206355, {	-- Tobacco-Filled Candle -- Candle #2
+							["cost"] = { { "i", 206360, 1 } },	-- Undelivered Shipment of Smokes
+						}),
+					},
+				}),
+				n(11283, {	-- Sammy
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 69.2, 78.6, WESTERN_PLAGUELANDS },	-- Sammy
+					["groups"] = {
+						i(206356, {	-- Ghost-Warding Candle -- Candle #5
+							["cost"] = { { "i", 206361, 1 } },	-- Trampled Doll
+						}),
 					},
 				}),
 			}),

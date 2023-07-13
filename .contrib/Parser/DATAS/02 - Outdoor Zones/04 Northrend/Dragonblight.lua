@@ -2430,12 +2430,9 @@ root(ROOTS.Zones, {
 						},
 						["crs"] = { 27333 },	-- Onslaught Mason
 					}),
-					i(120137, {	-- Tome of Polymorph: Polar Bear Cub
-						["spellID"] = 161353,	-- Polymorph(Polar Bear Cub)
-						["timeline"] = { "added 6.0.2.18816" },
-						["classes"] = { MAGE },
+					i(120137, {	-- Tome of Polymorph: Polar Bear Cub (CI!)
+						["timeline"] = { ADDED_6_0_2 },
 						["crs"] = { 26482 },	-- Arctic Grizzly
-						["f"] = RECIPES,
 					}),
 					i(38262, {	-- Well-Worn Bat
 						["coord"] = { 68.2, 74.2, DRAGONBLIGHT },

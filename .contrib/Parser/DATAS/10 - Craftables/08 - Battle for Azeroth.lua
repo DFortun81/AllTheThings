@@ -556,21 +556,15 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 				}),
 			}),
 		}),
+		filter(MISC, {
+			i(168522),	-- Ub3r Module: Ub3r-Coil
+		}),
 	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
-			i(162022, {	-- Glyph of the Dolphin
-				["questID"] = 62674,
-				["classes"] = { DRUID },
-			}),
-			i(162029, {	-- Glyph of the Humble Flyer
-				["questID"] = 62676,
-				["classes"] = { DRUID },
-			}),
-			i(162027, {	-- Glyph of the Tideskipper
-				["questID"] = 62672,
-				["classes"] = { DRUID },
-			}),
+			i(162022),	-- Mark of the Dolphin (CI!)
+			i(162029),	-- Mark of the Humble Flyer (CI!)
+			i(162027),	-- Mark of the Tideskipper (CI!)
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			i(161936),	-- Honorable Combatant's Etched Vessel [Alliance]
@@ -1115,7 +1109,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ENGINEERING, {
 			tier(BFA_TIER, {
@@ -1131,4 +1125,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

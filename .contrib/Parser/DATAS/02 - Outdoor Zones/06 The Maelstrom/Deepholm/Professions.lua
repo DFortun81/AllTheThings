@@ -8,10 +8,7 @@ root(ROOTS.Zones, {
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					o(202778, {	-- Albino Cavefish School
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["classes"] = { MAGE },
-							["f"] = RECIPES,
-						}),
+						i(22739),	-- Tome of Polymorph: Turtle (CI!)
 					}),
 				}),
 				prof(MINING, {

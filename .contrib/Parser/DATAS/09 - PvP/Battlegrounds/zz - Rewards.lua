@@ -337,5 +337,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				{ "pop" },	-- Discard all headers and acquire the children.
 			},
 		}),
+		i(203724, {	-- Field Medic's Hazard Payout
+			["timeline"] = { ADDED_10_0_7 },
+		}),
 	})),
 })));

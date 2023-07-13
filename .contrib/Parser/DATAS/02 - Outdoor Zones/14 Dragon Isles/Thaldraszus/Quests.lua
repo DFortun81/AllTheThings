@@ -1156,12 +1156,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THALDRASZUS, {
-		q(67030),	-- WQ Available?
-		q(72366, {["name"] = "Account Dragonflight Campaign Completed"}),	-- triggered after completing 'Moving On' (66221)
+		q(67030),	-- Unlocks access to Adventure Mode within the Dragon Isles (spellID 393788 & 377069)
+		q(72366, {["name"] = "Dragonflight Campaign Completed [Account]"}),	-- triggered after completing 'Moving On' (questID 66221)
 		q(72369, {["repeatable"] = true}),	-- flags complete while 'Aiding the Accord' is active/completed
-		q(72084),	-- Triggers during 'The Fog of Battle' (66246)
-		q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan'
-		q(72125),	-- Triggers during 'Tying Things Together' (66248)
+		q(72084),	-- Triggers during 'The Fog of Battle' (questID 66246) (spellID 392476)
+		q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan' (spellID 392694)
+		q(72125),	-- Triggers during 'Tying Things Together' (questID 66248) (spellID 392925)
 		-- Achievement Framing a New Perspective
 		q(72142),	-- The Seat of the Aspects
 		q(72143),	-- The Cascades
@@ -1185,6 +1185,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75192),    -- Solicited Opinions question 1 answer 2
 		q(75191),    -- Solicited Opinions question 1 answer 1
 		-- Stay awhile Listening
-		q(73960),	--
+		q(73960),	-- (spellID 406027)
 	}),
 }));

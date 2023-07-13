@@ -193,7 +193,13 @@ root(ROOTS.Zones, {
 						}),
 						-- #endif
 					}),
-					ach(952),	-- Mercenary of Sholazar
+					ach(952, {	-- Mercenary of Sholazar
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							950,	-- Frenzyheart Tribe
+							951,	-- The Oracles
+						}},
+					}),
 					ach(962, {	-- Savior of the Oracles
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["groups"] = {
@@ -1273,25 +1279,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 27.2, 59.6, SHOLAZAR_BASIN },
 						["sym"] = {{"select","itemID",
 							30758,	-- Aldor Guardian Rifle
+							-- #if AFTER LEGION
+							136855,	-- Hunter's Call (TOY!)
+							136781,	-- Pet Training Manual: Fetch (CI!)
+							136780,	-- Pet Training Manual: Play Dead (CI!)
+							136783,	-- The Art of Concealment (CI!)
+							-- #endif
 						}},
-						["groups"] = {
-							i(136855, {	-- Hunter's Call (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
-								["cost"] = 500000,	-- 50g
-							}),
-							i(136781, {	-- Pet Training Manual: Fetch
-								["timeline"] = { "added 7.0.3.22248" },
-								["f"] = RECIPES,
-							}),
-							i(136780, {	-- Pet Training Manual: Play Dead
-								["timeline"] = { "added 7.0.3.22248" },
-								["f"] = RECIPES,
-							}),
-							i(136783, {	-- The Art of Concealment
-								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 61648,	-- Aspect of the Chameleon
-							}),
-						},
 					}),
 					n(31911, {	-- Tanak <Frenzyheart Quartermaster>
 						["coord"] = { 55.1, 69.0, SHOLAZAR_BASIN },
@@ -1328,7 +1322,7 @@ root(ROOTS.Zones, {
 	})),
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOTLK_TIER, {
 		n(ARMOR, {
 			filter(TRINKET_F, {
@@ -1337,4 +1331,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

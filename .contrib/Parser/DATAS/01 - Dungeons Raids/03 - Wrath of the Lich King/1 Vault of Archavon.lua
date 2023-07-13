@@ -32,7 +32,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				},
 			}),
 			d(3, {	-- 10-Player
-				applyclassicphase(WRATH_PHASE_FOUR, ach(4016, {	-- Earth, Wind & Fire (10 player)
+				applyclassicphase(WRATH_PHASE_THREE, ach(4016, {	-- Earth, Wind & Fire (10 player)
 					["crs"] = {
 						35013,	-- Koralon the Flame Watcher
 						33993,	-- Emalon the Storm Watcher
@@ -564,7 +564,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 			}),
 			d(4, {	-- 25-Player
-				applyclassicphase(WRATH_PHASE_FOUR, ach(4017, {	-- Earth, Wind & Fire (25 player)
+				applyclassicphase(WRATH_PHASE_THREE, ach(4017, {	-- Earth, Wind & Fire (25 player)
 					["crs"] = {
 						35013,	-- Koralon the Flame Watcher
 						33993,	-- Emalon the Storm Watcher

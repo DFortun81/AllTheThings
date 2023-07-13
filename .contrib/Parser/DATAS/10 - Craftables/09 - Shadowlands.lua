@@ -237,30 +237,12 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
-			i(187884, {	-- Mark of the Twilight Runestag
-				["questID"] = 64986,
-				["classes"] = { DRUID },
-			}),
-			i(187934, {	-- Mark of the Midnight Runestag
-				["questID"] = 65061,
-				["classes"] = { DRUID },
-			}),
-			i(187887, {	-- Mark of the Gloomstalker Dredbat
-				["questID"] = 65048,
-				["classes"] = { DRUID },
-			}),
-			i(187936, {	-- Mark of the Sable Ardenmoth
-				["questID"] = 65062,
-				["classes"] = { DRUID },
-			}),
-			i(187888, {	-- Mark of the Shimmering Ardenmoth
-				["questID"] = 64987,
-				["classes"] = { DRUID },
-			}),
-			i(187931, {	-- Mark of the Regal Dredbat
-				["questID"] = 65059,
-				["classes"] = { DRUID },
-			}),
+			i(187887, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Gloomstalker Dredbat (CI!)
+			i(187934, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Midnight Runestag (CI!)
+			i(187931, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Regal Dredbat (CI!)
+			i(187936, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Sable Ardenmoth (CI!)
+			i(187888, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Shimmering Ardenmoth (CI!)
+			i(187884, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Twilight Runestag (CI!)
 		}),
 		n(HEAD, {
 			i(180755),	-- Fae Revel Masque
@@ -594,7 +576,7 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
 			tier(SL_TIER, {
@@ -604,4 +586,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 	}),
-}));
+});

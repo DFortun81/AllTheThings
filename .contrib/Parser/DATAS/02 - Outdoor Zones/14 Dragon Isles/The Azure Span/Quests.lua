@@ -714,7 +714,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16428.06, {	-- Creektooth Den
 				q(65279, {	-- By Royal Decree
-					["sourceQuests"] = { 65686 },	-- To the Azure Span
+					["sourceQuests"] = {
+						65686,	-- To the Azure Span
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["providers"] = {
 						{ "n", 183997 },	-- Gnoll Mon-Ark
 						{ "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
@@ -722,7 +726,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 16.2, 20.9, THE_AZURE_SPAN },
 				}),
 				q(65306, {	-- Rot Rancher
-					["sourceQuests"] = { 65686 },	-- To the Azure Span
+					["sourceQuests"] = {
+						65686,	-- To the Azure Span
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["providers"] = {
 						{ "n", 183997 },	-- Gnoll Mon-Ark
 						{ "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
@@ -1283,7 +1291,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 66.4, 33.3, THE_AZURE_SPAN },
 					["classes"] = { MAGE },
 					["g"] = {
-						i(200205),	-- Tome of Polymorph: Duck
+						i(200205),	-- Tome of Polymorph: Duck (CI!)
 					},
 				}),
 			}),

@@ -123,6 +123,9 @@ root(ROOTS.ExpansionFeatures,
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
+						i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
+							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
+						}),
 						i(127742, {	-- Pattern: Savage Hexweave Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
@@ -226,6 +229,9 @@ root(ROOTS.ExpansionFeatures,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 							["timeline"] = { REMOVED_10_0_5 },
+						}),
+						i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
+							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 						}),
 						i(127742, {	-- Pattern: Savage Hexweave Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
@@ -842,9 +848,9 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122420, {	-- Scouting Missive: Gorian Proving Grounds
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["timeline"] = { "created 6.1.0.19445" },
 							["questID"] = 38194,
 							["repeatable"] = true,
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						i(122406, {	-- Scouting Missive: Iron Siegeworks
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
@@ -966,9 +972,9 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122419, {	-- Scouting Missive: Gorian Proving Grounds
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["timeline"] = { "created 6.1.0.19445" },
 							["questID"] = 38202,
 							["repeatable"] = true,
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						i(122402, {	-- Scouting Missive: Iron Siegeworks
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources

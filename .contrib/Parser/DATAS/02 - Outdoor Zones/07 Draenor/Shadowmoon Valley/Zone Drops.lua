@@ -17,7 +17,7 @@ root(ROOTS.Zones, {
 		}),
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOD_TIER, {
 		n(ARMOR, {
 			n(BACK, {
@@ -27,4 +27,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

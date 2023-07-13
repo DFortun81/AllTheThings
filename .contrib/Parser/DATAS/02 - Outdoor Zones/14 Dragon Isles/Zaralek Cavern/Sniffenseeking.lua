@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},{"prune"}},	-- prune the sub-groups of these Quests
 					}),
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({ ["repeatable"] = true }, {
 					q(76015, {	-- Heart of Iron
 						["g"] = {
 							i(205939),	-- Iron Titan Key
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205941),  -- Spit-covered Key
 						},
 					}),
-				}),
+				})),
 				-- Quest Starting Items... apparently random on any digs
 				n(DROPS, sharedData({
 					["description"] = "Randomly available to pick up during a Dig.",
@@ -320,7 +320,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(SNIFFENSEEKING, {
-		q(75241),	-- Sniffenseeking unlocked?
+		q(75241),	-- Flag Niffen Cave Account Tracking (spellID 407744)
 		q(75747),	-- Completing a Sniffenseeking quest
 		q(75748),	-- Completing a Sniffenseeking quest
 		q(75749),	-- Completing a Sniffenseeking quest

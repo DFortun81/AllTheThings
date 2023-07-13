@@ -584,11 +584,3 @@ r(354766),	-- Bonemeal Bread
 r(354768),	-- Porous Rock Candy
 9.2.0.41089
 r(359333),	-- Empty Kettle of Stone Soup
-10.1.5.49516
-r(411178),	-- Lemon Silverleaf Tea
-r(412531),	-- Highly Spiced Haunch
-r(412533),	-- Druidic Dreamsalad
-r(412534),	-- Fine Taladorian Cheese Platter
-r(412535),	-- Venrik's Goat Milk
-r(412536),	-- Roquefort-Stuffed Peppers
-r(412537),	-- Picante Pomfruit Cake

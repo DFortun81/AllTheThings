@@ -92,7 +92,7 @@ root(ROOTS.GroupFinder, {
 		}),
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		n(ARMOR, {
 			filter(MAIL, {
@@ -100,4 +100,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

@@ -550,7 +550,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			------ New System ------
 			q(76101, {	-- Tougher Down Under
-				["sourceQuests"] = { 72973 },	-- Smells Like Loamm
+				["sourceQuests"] = {
+					72973,	-- Smells Like Loamm
+					DF_ACCOUNT_ZC_UNLOCK_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 204522 },	-- Aurantia
 				["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
 			}),
@@ -581,7 +585,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			q(75641, {	-- Power Unified
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["sourceQuests"] = {
+					75644,	-- Six Hundred Feet Under
+					DF_ACCOUNT_ZC_UNLOCK_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
 				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
 				["g"] = {
@@ -647,7 +655,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			------ Mouse Storyline ------
 			q(74857, {	-- Mouse Detective
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["sourceQuests"] = {
+					75644,	-- Six Hundred Feet Under
+					DF_ACCOUNT_ZC_UNLOCK_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 202597 },	-- Yarren
 				["coord"] = { 51.1, 74.1, ZARALEK_CAVERN },
 			}),
@@ -875,28 +887,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
-		q(76118),	-- Accept Untranslated Obsidian Tome from Wrathion
-		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
-		q(75642),	-- Unknown Account-Wide trigger when zoning into Dragon Isles for first time on an alt
-
-		q(75658),	-- WQ Unlock?
-		--
+		-- Various
+		q(76118),	-- Accept Untranslated Obsidian Tome from Wrathion (spellID 411772)
+		q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during 'It Was Not Enough' (questID 72873) (spellID 411853)
+		q(75642),	-- Allows you to sense rare fish in high-altitude lakes (spellID 387827)
+		q(75658, {["name"] = "Zaralek Cavern Unlocked [Account]"}),	-- Zaralek Cavern World Quests (spellID 408876)
 		q(75511),	-- Tracking Quest (that's the name)
-		q(75764),	-- Login
-		--q(73793),	-- Fly Through Azure Exit
-
-		q(76013),	-- After killing Dreadful Defender / cinematic during 'Stopping Sakareth' (questID 72930)
+		q(75764),	-- Current Patch - Login Video - Watched (spellID 409608)
+		q(76013),	-- Complete Ch 5 and Delay for Ch 6 after 'Stopping Sakareth' (questID 72930) (spellID 411104)
 
 		-- Talk to npc during Respite (73041)
-		q(75425),	-- Tellywin Sharpfizzle
-		q(75424),	-- Chef Butterfingers
-		q(75423),	-- Earthmender Narvra
-		q(75422),	-- Rupert
-		q(75421),	-- Veritistrasz
-		q(75420),	-- Voraxian
+		q(75425),	-- Tellywin Sharpfizzle (spellID 407079)
+		q(75424),	-- Chef Butterfingers (spellID 407078)
+		q(75423),	-- Earthmender Narvra (spellID 407083)
+		q(75422),	-- Rupert (spellID 407084)
+		q(75421),	-- Veritistrasz (spellID 407076)
+		q(75420),	-- Voraxian (spellID 407075)
 
 		-- RP after Stain Removal (73045)
-		q(75219),	-- Voraxian
+		q(75219),	-- Voraxian (spellID 413020)
 
 		-- Talk with Veritistrasz during (74495)
 		q(74773),	-- 1 (optional) dialog

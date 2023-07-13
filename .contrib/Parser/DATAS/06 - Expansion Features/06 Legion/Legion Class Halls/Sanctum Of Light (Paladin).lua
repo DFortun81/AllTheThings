@@ -778,9 +778,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(139693, {	-- Crown of the Silver Hand
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(136801, {	-- Divine Tome: Contemplation
-								["f"] = RECIPES,
-							}),
+							i(136801),	-- Divine Tome: Contemplation (CI!)
 							i(139692, {	-- Gauntlets of the Silver Hand
 								["cost"] = 5000000,	-- 500g
 							}),

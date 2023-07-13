@@ -354,7 +354,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		n(WEAPONS, {
 			i(150611),	-- Guardian's Oaken Spear
@@ -362,4 +362,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(150613),	-- Survivalist's Hunting Spear
 		}),
 	}),
-}));
+});

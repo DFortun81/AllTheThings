@@ -896,7 +896,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 	},
 }))));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(CLASSIC_TIER, {
 		n(WEAPONS, {
 			i(77559),	-- Replica Grand Marshal's left Hand Blade
@@ -935,4 +935,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(120273),	-- High Warlord's Razor [This version never implemented]
 		}),
 	}),
-}));
+});

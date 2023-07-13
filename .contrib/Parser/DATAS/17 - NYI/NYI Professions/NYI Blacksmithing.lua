@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(BLACKSMITHING, {
 			n(CRAFTABLES, {
@@ -276,6 +276,12 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(191885),	-- Draconium Repair Hammer
 						i(190520),	-- zzOldPauldrons of the Dragon
 						i(190521),	-- zzOldTraitorous Primal Gauntlets of the Dragon
+					})),
+
+					-- 10.0.2
+					tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+						i(191882),	-- Serevite Repair Hammer
+						i(191883),	-- Serevite Repair Hammer
 					})),
 
 					-- 10.1.0
@@ -672,4 +678,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 	}),
-}));
+});

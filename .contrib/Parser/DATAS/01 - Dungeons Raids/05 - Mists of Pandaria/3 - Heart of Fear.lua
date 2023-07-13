@@ -9,6 +9,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 			474,	-- Oratorium of the Voice
 			475,	-- Heart of Fear
 		},
+		["sins"] = { "Herz der Angst" },
 		["sharedLockout"] = 1,
 		["g"] = {
 			n(ACHIEVEMENTS, {

@@ -2151,6 +2151,8 @@ for key,value in pairs({
 	[242678] = "Baú do Tesouro",	-- Treasure Chest
 	[242683] = "Baú do Tesouro",	-- Treasure Chest
 	[242959] = "Baú do Tesouro",	-- Treasure Chest
+	[243321] = "Pedra Feral",	-- Feral Stone
+	[243323] = "Pedra de Equilíbrio",	-- Balance Stone
 	[243334] = "Planta Murcha",	-- Withered Herb
 	[243392] = "Livro de Alquimia",	-- Alchemy Book
 	[243688] = "Baú do Tesouro",	-- Treasure Chest
@@ -3509,6 +3511,7 @@ for key,value in pairs({
 	[382325] = "Drusa de Gemas de Ônix",	-- Onyx Gem Cluster
 	[382621] = "Console de Catalisador de Revivescência",	-- Revival Catalyst Console
 	[383625] = "Caixa de Peixe-brilho Fresco",	-- Case of Fresh Gleamfish
+	[383660] = "Cristal de Sal",	-- Salt Crystal
 	[383732] = "Caixa de Pesca Morsana",	-- Tuskarr Tacklebox
 	[383733] = "Poeira Revolvida",	-- Disturbed Dirt
 	[383734] = "Poeira Revolvida",	-- Disturbed Dirt
@@ -3536,6 +3539,7 @@ for key,value in pairs({
 	[385520] = "Pilha de Ossos",	-- Bone Pile
 	[385533] = "Pedra de Envio: Protesto",	-- Sending Stone: Protest
 	[385565] = "Baú de Chama Sombria Fulgurante",	-- Blazing Shadowflame Chest
+	[385581] = "Bolsa de Henrique",	-- Henry's Handbag
 	[385799] = "Caixa-forte Endurecida",	-- Hardened Strongbox
 	[385800] = "Pilha de Ouro",	-- Gold Pile
 	[385801] = "Pilha de Ouro",	-- Gold Pile
@@ -3742,6 +3746,7 @@ for key,value in pairs({
 	[401828] = "Relicário de Nal Ks'kol",	-- Nal ks'kol Reliquary
 	[401839] = "Tesouro da Sonhadora",	-- Dreamer's Bounty
 	[401844] = "Lixo Fedorento",	-- Smelly Trash Pile
+	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
 	[402627] = "Fornalha Desgastada",	-- Well-Worn Kiln
 	[402632] = "Anel de Resgate de Enxofre",	-- Brimstone Rescue Ring
 	[402634] = "Lança Zaqali Ancestral",	-- Zaqali Elder Spear
@@ -3751,6 +3756,9 @@ for key,value in pairs({
 	[402888] = "Runas Zaqali Trabalhadas",	-- Intricate Zaqali Runes
 	[402890] = "Esboço de Runa Sibilante",	-- Hissing Rune Draft
 	[402892] = "Pesquisa Ancestral",	-- Ancient Research
+	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
+	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
@@ -3827,6 +3835,6 @@ for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
 	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
-	["~HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
+	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
 })
 do a[key] = value; end

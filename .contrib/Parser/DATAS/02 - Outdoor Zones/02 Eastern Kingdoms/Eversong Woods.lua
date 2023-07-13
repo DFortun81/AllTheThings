@@ -1947,13 +1947,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 })));
 
 -- #if AFTER 4.0.3.13287
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(TBC_TIER, {
 		cl(MAGE, {
 			i(47102),	-- Manaweave Robe Mage Quest reward
 		}),
 	}),
-}));
+});
 -- #endif
 
 -- Remove the phase requirement from Sense Undead.

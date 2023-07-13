@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(ACHIEVEMENTS, {
 		tier(WOTLK_TIER, {
 			-- 3.x.x
@@ -240,7 +240,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				ach(1290),	-- Who Sharted?
 				ach(1316),	-- $gOmar:Omara;'s Test Localization Achievement <PH><NYI>
 				ach(1338),	-- Total killing blows
-				ach(1360),	-- Loremaster of Northrend \\ Champion of Northrend
 				ach(1458),	-- Continent with the most Honorable Kills
 				ach(1466),	-- Most Alliance factions at Exalted
 				ach(1485),	-- Lich King 5-player different bosses defeated \\ Lich King 5-player different bosses killed
@@ -602,4 +601,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

@@ -96,12 +96,15 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					ach(945, {	-- The Argent Champion
-						["maps"] = { WESTERN_PLAGUELANDS, EASTERN_PLAGUELANDS },
+						-- #if BEFORE WRATH
+						["description"] = "Earn exalted status with the Argent Dawn and the Argent Crusade.",
+						-- #endif
 						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 529, 1106); end]],
 						-- #endif
+						["maps"] = { WESTERN_PLAGUELANDS, EASTERN_PLAGUELANDS },
 						["groups"] = {
 							title(99),	-- %s the Argent Champion
 						},
@@ -2272,9 +2275,6 @@ root(ROOTS.Zones, {
 					i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
 					i(50380),	-- Battered Hilt (Horde)
 					-- #endif
-					applyclassicphase(WRATH_PHASE_TWO, i(47035, {	-- Discarded Soul Crystal
-						["provider"] = { "o", 195344 },	-- Discarded Soul Crystal
-					})),
 					i(37330, {	-- Formula: Enchant Cloak - Superior Arcane Resistance (RECIPE!)
 						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 						["crs"] = {

@@ -23,10 +23,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				}),
 			}),
 			n(DROPS, {
-				i(159841, {	-- Tome of Hex: Skeletal Hatchling
-					["spellID"] = 269352,	-- Hex(Skeletal Hatchling)
-					["classes"] = { SHAMAN },
-					["f"] = RECIPES,
+				i(159841, {	-- Tome of Hex: Skeletal Hatchling (CI!)
 					["crs"] = { 122963 },	-- Rezan
 				}),
 			}),

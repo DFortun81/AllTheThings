@@ -1,5 +1,5 @@
 ## Author: Crieve-Sargeras
-## Interface: 100100
+## Interface: 100105
 ## X-Curse-Project-ID: 267285
 ## X-Wago-ID: yQKyY5K7
 ## Title: AllTheThings

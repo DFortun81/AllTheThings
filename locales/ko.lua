@@ -2149,6 +2149,8 @@ for key,value in pairs({
 	[242678] = "보물 상자",	-- Treasure Chest
 	[242683] = "보물 상자",	-- Treasure Chest
 	[242959] = "보물 상자",	-- Treasure Chest
+	[243321] = "야성의 돌",	-- Feral Stone
+	[243323] = "조화의 돌",	-- Balance Stone
 	[243334] = "시든 약초",	-- Withered Herb
 	--TODO: [243392] = "Alchemy Book",	-- Alchemy Book
 	[243688] = "보물 상자",	-- Treasure Chest
@@ -3507,6 +3509,7 @@ for key,value in pairs({
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[382621] = "소생의 촉매 장치",	-- Revival Catalyst Console
 	[383625] = "신선한 미명어 보관함",	-- Case of Fresh Gleamfish
+	[383660] = "소금 수정",	-- Salt Crystal
 	--TODO: [383732] = "Tuskarr Tacklebox",	-- Tuskarr Tacklebox
 	[383733] = "흐트러진 흙",	-- Disturbed Dirt
 	[383734] = "흐트러진 흙",	-- Disturbed Dirt
@@ -3534,6 +3537,7 @@ for key,value in pairs({
 	[385520] = "뼈 무더기",	-- Bone Pile
 	[385533] = "전송석: 항의",	-- Sending Stone: Protest
 	[385565] = "타오르는 암흑불길 보관함",	-- Blazing Shadowflame Chest
+	--TODO: [385581] = "Henry's Handbag",	-- Henry's Handbag
 	[385799] = "단단한 금고",	-- Hardened Strongbox
 	[385800] = "황금 더미",	-- Gold Pile
 	[385801] = "황금 더미",	-- Gold Pile
@@ -3740,6 +3744,7 @@ for key,value in pairs({
 	[401828] = "날 크스콜 성물 보관소",	-- Nal ks'kol Reliquary
 	[401839] = "꿈꾸는 자의 은혜",	-- Dreamer's Bounty
 	[401844] = "냄새나는 쓰레기 더미",	-- Smelly Trash Pile
+	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
 	[402627] = "마모된 가마",	-- Well-Worn Kiln
 	[402632] = "유황석 구명환",	-- Brimstone Rescue Ring
 	[402634] = "자칼리 장로의 창",	-- Zaqali Elder Spear
@@ -3749,6 +3754,9 @@ for key,value in pairs({
 	[402888] = "섬세한 자칼리 룬",	-- Intricate Zaqali Runes
 	--TODO: [402890] = "Hissing Rune Draft",	-- Hissing Rune Draft
 	--TODO: [402892] = "Ancient Research",	-- Ancient Research
+	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
+	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
@@ -3825,6 +3833,6 @@ for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
 	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
-	["~HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
+	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
 })
 do a[key] = value; end

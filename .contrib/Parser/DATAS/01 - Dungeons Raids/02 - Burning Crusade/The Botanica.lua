@@ -4,6 +4,10 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(257, {	-- The Botanica
 		["lore"] = "Since Kael'thas and his blood elves seized Tempest Keep from the naaru they have had quite the time to investigate and find a usage for the technology in it. The Botanica appears to be the satellite chosen especially for this purpose. Here, blood elf scientists carry out experiments on the flora in Outland, how naaru technology can be used to create and manipulate living beings, and how all this can grant the blood elves new powers. It seems, however, that the results were not quite as expected, and thus some of the experiments have gotten out of control...",
+		["sins"] = {
+			"Tempest Keep: The Botanica",
+			"Festung der Stürme: Die Botanika",
+		},
 		["coord"] = { 71.74, 54.95, NETHERSTORM },	-- The Botanica, Netherstorm
 		["mapID"] = TEMPEST_KEEP_BOTANICA,
 		["lvl"] = lvlsquish(65, 65, 20),

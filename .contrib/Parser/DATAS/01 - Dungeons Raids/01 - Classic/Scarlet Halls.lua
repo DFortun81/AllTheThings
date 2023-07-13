@@ -60,10 +60,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						ach(7413),	-- Scarlet Halls
 						ach(7434),	-- Scarlet Halls Guild Run
-						i(82469, {	-- Ancient Tome of Teleport: Dalaran
+						i(82469, {	-- Ancient Tome of Teleport: Dalaran (CI!)
 							["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
-							["classes"] = { MAGE },
-							["f"] = RECIPES,
 						}),
 						i(88278),	-- Mograine's Immaculate Might
 						i(88274),	-- Koegler's Ritual Knife
@@ -186,10 +184,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							ach(7413),	-- Scarlet Halls
 							ach(6760),	-- Heroic: Scarlet Halls
 							ach(6769),	-- Heroic: Scarlet Halls Guild Run
-							i(82469, {	-- Ancient Tome of Teleport: Dalaran
+							i(82469, {	-- Ancient Tome of Teleport: Dalaran (CI!)
 								["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
-								["classes"] = { MAGE },
-								["f"] = RECIPES,
 							}),
 							i(144196, {	-- Mograine's Immaculate Might
 								["timeline"] = { "added 7.1.5.23360" },

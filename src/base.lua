@@ -21,10 +21,11 @@ end
 app.PrintDebugPrior = function(...)
 	if app.DEBUG_PRINT then
 		if app.DEBUG_PRINT_LAST then
-			local frames = math.ceil(1 / (GetTimePreciseSec() - app.DEBUG_PRINT_LAST));
-			print("Stutter @",frames,...)
+			local diff = GetTimePreciseSec() - app.DEBUG_PRINT_LAST
+			local frames = math.ceil(1 / diff);
+			print(GetTimePreciseSec(),"<>",diff,"Stutter @",frames,...)
 		else
-			print(0,...)
+			print(GetTimePreciseSec(),0,...)
 		end
 		app.DEBUG_PRINT_LAST = GetTimePreciseSec();
 	end

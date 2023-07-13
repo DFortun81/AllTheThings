@@ -1529,8 +1529,8 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(SL_TIER, {
+root(ROOTS.NeverImplemented, tier(SL_TIER, {
 	inst(1190, {	-- Castle Nathria
 		i(184873),	-- Soul Igniter (Test)
 	}),
-})));
+}));

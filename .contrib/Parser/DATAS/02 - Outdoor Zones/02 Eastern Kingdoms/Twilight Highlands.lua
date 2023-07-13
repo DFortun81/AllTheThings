@@ -288,16 +288,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				prof(FISHING, {
 					o(208311, {	-- Deepsea Sagefish School
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["classes"] = { MAGE },
-							["f"] = RECIPES,
-						}),
+						i(22739),	-- Tome of Polymorph: Turtle (CI!)
 					}),
 					o(202777, {	-- Highland Guppy School
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["classes"] = { MAGE },
-							["f"] = RECIPES,
-						}),
+						i(22739),	-- Tome of Polymorph: Turtle (CI!)
 					}),
 				}),
 			}),

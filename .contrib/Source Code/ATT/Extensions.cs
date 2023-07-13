@@ -233,9 +233,9 @@ namespace ATT
         /// <param name="dict">The dictionary.</param>
         /// <param name="key">The key.</param>
         /// <returns>The dictionary.</returns>
-        public static Dictionary<string, object> GetDictionary(this IDictionary<string, object> dict, string key)
+        public static IDictionary<string, object> GetDictionary(this IDictionary<string, object> dict, string key)
         {
-            return dict.TryGetValue(key, out object o) ? o as Dictionary<string, object> : null;
+            return dict.TryGetValue(key, out object o) ? o as IDictionary<string, object> : null;
         }
 
         /// <summary>
@@ -301,13 +301,13 @@ namespace ATT
         /// <summary>
         /// Finds an object from a List of object datas which contains the specified key/value pair
         /// </summary>
-        public static Dictionary<string, object> FindObject<T>(this List<object> list, string key, T value)
+        public static IDictionary<string, object> FindObject<T>(this List<object> list, string key, T value)
         {
             if (list == null || list.Count == 0) return null;
 
             foreach (var obj in list)
             {
-                if (obj is Dictionary<string, object> thing &&
+                if (obj is IDictionary<string, object> thing &&
                     thing.TryGetValue(key, out object thingVal) &&
                     thingVal.TryConvert(out T thingKeyVal) &&
                     thingKeyVal.Equals(value))
@@ -322,13 +322,13 @@ namespace ATT
         /// <summary>
         /// Finds an object from a List of object datas which contains both specified key/value pairs
         /// </summary>
-        public static Dictionary<string, object> FindObject<T1, T2>(this List<object> list, string key1, T1 value1, string key2, T2 value2)
+        public static IDictionary<string, object> FindObject<T1, T2>(this List<object> list, string key1, T1 value1, string key2, T2 value2)
         {
             if (list == null || list.Count == 0) return null;
 
             foreach (var obj in list)
             {
-                if (obj is Dictionary<string, object> thing &&
+                if (obj is IDictionary<string, object> thing &&
                     thing.TryGetValue(key1, out object thingVal1) &&
                     thing.TryGetValue(key2, out object thingVal2) &&
                     thingVal1.TryConvert(out T1 thingKeyVal1) &&
@@ -350,9 +350,9 @@ namespace ATT
         /// <param name="key">The key.</param>
         /// <param name="value">The variable to write to.</param>
         /// <returns>Whether or not a value was found for the key.</returns>
-        public static bool TryGetValue(this IDictionary<string, object> dict, string key, out Dictionary<string, object> value)
+        public static bool TryGetValue(this IDictionary<string, object> dict, string key, out IDictionary<string, object> value)
         {
-            if (dict != null && dict.TryGetValue(key, out object o) && o is Dictionary<string, object> value2)
+            if (dict != null && dict.TryGetValue(key, out object o) && o is IDictionary<string, object> value2)
             {
                 value = value2;
                 return true;

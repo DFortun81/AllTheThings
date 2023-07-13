@@ -46,7 +46,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
 				i(206156, {	-- Grotto Netherwing Drake (MOUNT!)
-					["timeline"] = { "added 10.1.0" },
+					["timeline"] = { ADDED_10_1_0 },
 				}),
 			}),
 			filter(COSMETIC, {
@@ -183,11 +183,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		}),
 		n(UNAVAILABLE, {
-			n(ACHIEVEMENTS, {	--[[
-				ach(9925, {	-- Friends In Places Yet Even Higher Than That
-					["provider"] = { "i", 118515 },	-- Cindermane Charger (MOUNT!)
-				}),	--]]
-			}),
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(54811),	-- Celestial Steed (MOUNT!)
 				i(189978),	-- Magenta Cloud Serpent (MOUNT!)
@@ -520,8 +515,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {	-- Is this tagged with NEVER_IMPLEMENTED incorrectly?
 		-- These don't trigger when using ensembles, but they are listed on Wowhead
+		q(65568),	-- Arsenal: Blades of Elune
 		q(65502),	-- Ensemble: Fel-Automaton Exoplate
 		q(65533),	-- Ensemble: Vestment of the Honored Valarjar
 		q(65570),	-- Ensemble: Vagabond's Midnight Threads
@@ -539,7 +535,13 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(65736),	-- Ensemble: Wanderer's Snowy Trappings
 		q(72070),	-- Ensemble: Glorious Dragonrider's Mail
 		q(72080),	-- Ensemble: Corrupted Runelord's Regalia
+		q(72081),	-- Ensemble: Val'sharah Protector's Battleplate
+		q(72082),	-- Ensemble: Sylvan Stalker's Leathers (same questID as Ensemble: Waveborne Diplomat's Regalia), good job Blizzard.
 		q(72086),	-- Ensemble: Tidecaller's Chainmail
+		q(72087),	-- Ensemble: Void-Bound Raiment
+		q(72088),	-- Ensemble: Void-Bound Battlegear
+		q(72123),	-- Ensemble: Void-Bound Chains
+		q(72124),	-- Ensemble: Void-Bound Warplate
 		q(72132),	-- Ensemble: Kvaldir Scout Leathers
 		q(72133),	-- Ensemble: Helarjar Berserker Warplate
 		q(72811),	-- Ensemble: Wanderer's Rosy Trappings
@@ -547,7 +549,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	})),
 });
 root(ROOTS.NeverImplemented, {
-	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_10_0_5 }, }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { CREATED_10_0_5 }, }, {
 		n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
 			-- i(XXXXXX),	-- The Battlespoon (2H Staff)
 		})),

@@ -1004,7 +1004,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -1053,7 +1053,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(179007),	-- 9.0 Monster - Bastion - Weapon - Dark
 		}),
 	}),
-}));
+});
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(60625),	-- Triggerd when looting chest at 41,67

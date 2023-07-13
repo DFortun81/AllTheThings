@@ -18,7 +18,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		n(BARTERING, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 3 } }, {
 			n(ACHIEVEMENTS, {
 				ach(17841, {	-- Pyramid Scheme
-					["provider"] = { "i", 205188 },	-- Barter Boulder
+					["provider"] = { "i", 205421 },	-- Ponzo's Scheming Topper
 					["g"] = {
 						title(502),	-- <Name>, Barter Boss
 					},

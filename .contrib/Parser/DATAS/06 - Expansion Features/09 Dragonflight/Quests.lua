@@ -717,15 +717,15 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 	})),
 	n(QUESTS, bubbleDownSelf({ ["timeline"] = ADDED_10_1_0 }, {
 		q(73096),	-- triggeres when Booty Bay is chosen
-		q(73097),	-- triggeres when Booty Bay is chosen
-		q(73098),	-- triggeres when Crystalsong Forest is chosen
+		q(73097),	-- triggeres when Booty Bay is chosen (spell ID 398606)
+		q(73098),	-- triggeres when Crystalsong Forest is chosen (spellID 398610)
 		q(73400),	-- triggeres when Crystalsong Forest is chosen
-		q(73228),	-- triggeres when The Jade Forst is chosen
+		q(73228),	-- triggeres when The Jade Forst is chosen (spellID 399077)
 		q(73401),	-- triggeres when The Jade Forst is chosen
 		q(73402),	-- triggeres when Theramore is chosen
-		q(74785),	-- triggeres when Theramore is chosen
-		q(73403),	-- triggeres when Theramore is chosen
-		q(74353),	-- triggeres when Theramore is chosen
+		q(74785),	-- triggeres when Theramore is chosen (spellID 403046)
+		q(73403),	-- triggeres when Winterspring is chosen
+		q(74353),	-- triggeres when Winterspring is chosen (spellID 400338)
 		q(76018),	-- Ensemble: Azure Renewal Finery
 	})),
 }));

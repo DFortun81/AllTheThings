@@ -4,6 +4,10 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(248, {	-- Hellfire Ramparts
 		["lore"] = "Hellfire Ramparts make up the first wing of Hellfire Citadel. The citadel itself sits in the center of the zone, in the middle of a broken-up wall that divided the zone before the conflict began. The Ramparts takes place atop this wall along the sides of the citadel.",
+		["sins"] = {
+			"Hellfire Citadel: Ramparts",
+			"Höllenfeuerzitadelle: Bollwerk",
+		},
 		["coord"] = { 47.65, 53.57, HELLFIRE_PENINSULA },	-- Hellfire Ramparts, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_RAMPARTS,
 		["lvl"] = lvlsquish(57, 57, 10),

@@ -80,7 +80,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 			})),
 			n(QUESTS, sharedData({
-				["sourceQuests"] = { 73711 },	-- Marked Champion
+				["sourceQuests"] = {
+					73711,	-- Marked Champion
+					DF_ACCOUNT_ZC_UNLOCK_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 201099 },	-- Gorgul
 				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
 				["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
@@ -103,7 +107,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205121),	-- Tricky (PET!)
 					},
 				}),
-				q(75708, {	-- A Race To The Finish
+				q(75708, {	-- A Race To The Finish (spellID 409235 & 490236)
 					["name"] = "Weekly: A Race To The Finish",
 					["isWeekly"] = true,
 				}),
@@ -114,6 +118,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(LOAMM_NIFFEN, {
-		q(75710),	-- After turn in 75662 (A Race To The Finish) / first race finished
+		q(75710),	-- After turn in 'A Race To The Finish' (questID 75662) (spellID 409255)
 	}),
 }));

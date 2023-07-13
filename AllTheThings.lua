@@ -6,6 +6,29 @@
 local appName, app = ...;
 local L = app.L;
 
+-- Binding Localizations
+BINDING_HEADER_ALLTHETHINGS = L["TITLE"]
+BINDING_NAME_ALLTHETHINGS_TOGGLEACCOUNTMODE = L["TOGGLE_ACCOUNT_MODE"]
+BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETIONISTMODE = L["TOGGLE_COMPLETIONIST_MODE"]
+BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L["TOGGLE_DEBUG_MODE"]
+BINDING_NAME_ALLTHETHINGS_TOGGLEFACTIONMODE = L["TOGGLE_FACTION_MODE"]
+
+BINDING_HEADER_ALLTHETHINGS_PREFERENCES = L["PREFERENCES"]
+BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"]
+BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDGROUPS = L["TOGGLE_COMPLETEDGROUPS"]
+BINDING_NAME_ALLTHETHINGS_TOGGLECOLLECTEDTHINGS = L["TOGGLE_COLLECTEDTHINGS"]
+BINDING_NAME_ALLTHETHINGS_TOGGLEBOEITEMS = L["TOGGLE_BOEITEMS"]
+BINDING_NAME_ALLTHETHINGS_TOGGLESOURCETEXT = L["TOGGLE_SOURCETEXT"]
+
+BINDING_HEADER_ALLTHETHINGS_MODULES = L["MODULES"]
+BINDING_NAME_ALLTHETHINGS_TOGGLEMAINLIST = L["TOGGLE_MAINLIST"]
+BINDING_NAME_ALLTHETHINGS_TOGGLEMINILIST = L["TOGGLE_MINILIST"]
+BINDING_NAME_ALLTHETHINGS_TOGGLE_PROFESSION_LIST = L["TOGGLE_PROFESSION_LIST"]
+BINDING_NAME_ALLTHETHINGS_TOGGLE_RAID_ASSISTANT = L["TOGGLE_RAID_ASSISTANT"]
+BINDING_NAME_ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST = L["TOGGLE_WORLD_QUESTS_LIST"]
+BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L["TOGGLE_RANDOM"]
+BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"]
+
 -- Assign the FactionID.
 app.Faction = UnitFactionGroup("player");
 if app.Faction == "Horde" then
@@ -38,8 +61,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, sformat, strsplit, GetTimePreciseSec
-	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, string.format, strsplit, GetTimePreciseSec;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, sformat, strsplit, GetTimePreciseSec, type
+	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, string.format, strsplit, GetTimePreciseSec, type;
 local ATTAccountWideData;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local ALLIANCE_ONLY = app.Modules.FactionData.FACTION_RACES[1];
@@ -161,6 +184,14 @@ app.IgnoreDataCaching = function()
 		app.print("Data will not be saved for this Realm");
 		app.IgnoreDataCaching = app.ReturnTrue;
 		return true;
+	end
+end
+app.DoModuleEvent = function(eventName)
+	-- See if any Modules have the event function defined, and call them now
+	for _,module in pairs(app.Modules) do
+		if module[eventName] then
+			app.FunctionRunner.Run(module[eventName], ATTAccountWideData);
+		end
 	end
 end
 -- Returns the Global reference by name, setting it to the 'init' value if not already existing
@@ -546,11 +577,13 @@ app.RefreshTradeSkillCache = function()
 	cache[2791] = 1;	-- Ascension Crafting
 	cache[2819] = 1;	-- Protoform Synthesis
 	cache[2847] = 1;	-- Tuskarr Fishing Gear
+	-- app.PrintDebug("RefreshTradeSkillCache");
 	local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 	for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
 		if j ~= 0 then
 			local prof = select(7, GetProfessionInfo(j));
 			cache[GetBaseTradeSkillID(prof)] = true;
+			-- app.PrintDebug("KnownProfession",j,GetProfessionInfo(j));
 			local specializations = GetTradeSkillSpecialization(prof);
 			if specializations ~= nil then
 				for _,s in pairs(specializations) do
@@ -912,10 +945,13 @@ end
 local function GetCompletionText(state)
 	return L[(state == 2 and "COMPLETE_OTHER") or (state and "COMPLETE") or "INCOMPLETE"];
 end
-local function GetStateIcon(data, iconOnly)
+local function GetCollectibleIcon(data, iconOnly)
 	if data.collectible then
 		return iconOnly and GetCollectionIcon(data.collected) or GetCollectionText(data.collected);
-	elseif data.trackable then
+	end
+end
+local function GetTrackableIcon(data, iconOnly)
+	if data.trackable then
 		local saved = data.saved;
 		-- only show if the data is saved, or is not repeatable
 		if saved or not rawget(data, "repeatable") then
@@ -923,107 +959,110 @@ local function GetStateIcon(data, iconOnly)
 		end
 	end
 end
-local function GetProgressTextForRow(data)
-	local total = data.total;
-	local isCollectible = data.collectible;
-	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
-	local stateIcon = GetStateIcon(data, true);
-
-	if isContainer then
-
-		-- Uncollected Collectible (show uncollected icon & container info)
-		if isCollectible and not data.collected then
-			return GetCollectionIcon().." "..GetProgressColorText(data.progress or 0, total);
-		end
-
-		-- Cost & Progress (show cost icon & container info)
-		if data.filledCost then
-			return L["COST_ICON"].." "..GetProgressColorText(data.progress or 0, total);
-		end
-
-		-- Reagent & Progress (show reagent icon & container info)
-		if data.filledReagent then
-			return L["REAGENT_ICON"].." "..GetProgressColorText(data.progress or 0, total);
-		end
-
-		local costTotal = data.costTotal;
-		local isCost = costTotal and costTotal > 0;
-		-- Cost (show cost icon)
-		if isCost then
-			return L["COST_ICON"];
-		end
-
-		-- Progress Only
-		return GetProgressColorText(data.progress or 0, total);
-	elseif stateIcon then
-		return stateIcon;
-	elseif data.visible then
-		if data.count then
-			return (data.count .. "x");
-		end
-		if data.g and not data.expanded and #data.g > 0 then
-			return "+++";
-		end
-		return "---";
+local function GetCostIconForRow(data, iconOnly)
+	-- cost only in nested groups, or if itself is a cost
+	if (not data.window and (data.filledCost or data.costNested)) or (data.costTotal or 0) > 0 then
+		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
 	end
 end
-local function GetProgressTextForTooltip(data, iconOnly)
+local function GetCostIconForTooltip(data, iconOnly)
+	-- cost only if itself is a cost
+	if (data.costTotal or 0) > 0 then
+		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
+	end
+end
+local function GetReagentIcon(data, iconOnly)
+	if data.filledReagent then
+		return iconOnly and L["REAGENT_ICON"] or L["REAGENT_TEXT"];
+	end
+end
+local function GetStateIcon(data, iconOnly)
+	return GetCollectibleIcon(data, iconOnly) or GetTrackableIcon(data, iconOnly);
+end
+local function GetProgressTextForRow(data)
+	-- build the row text from left to right with possible info
+	local text = {}
+	-- Reagent (show reagent icon)
+	local reagentIcon = GetReagentIcon(data, true);
+	if reagentIcon then
+		tinsert(text, reagentIcon)
+	end
+	-- Cost (show cost icon)
+	local costIcon = GetCostIconForRow(data, true);
+	if costIcon then
+		tinsert(text, costIcon)
+	end
+	-- Collectible
+	local stateIcon = GetCollectibleIcon(data, true)
+	if stateIcon then
+		tinsert(text, stateIcon)
+	end
+	-- Container
 	local total = data.total;
-	local isCollectible = data.collectible;
-	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
-	local stateText = GetStateIcon(data, iconOnly);
-
+	local isContainer = total and (total > 1 or (total > 0 and not data.collectible));
 	if isContainer then
-		-- Uncollected Collectible (show uncollected state & container info)
-		if isCollectible and not data.collected then
-			if stateText then
-				-- this should be the case 100% of the time, unless a Type defines 'collectible' without 'collected'
-				return stateText.." "..GetProgressColorText(data.progress or 0, total);
-			else
-				return GetProgressColorText(data.progress or 0, total);
-			end
-		end
-
-		-- Cost & Progress (show cost icon & container info)
-		if data.filledCost then
-			local text = iconOnly and L["COST_ICON"] or L["COST_TEXT"];
-			if stateText then
-				return stateText.." "..text.." "..GetProgressColorText(data.progress or 0, total)
-			else
-				return text.." "..GetProgressColorText(data.progress or 0, total);
-			end
-		end
-
-		-- Reagent & Progress (show reagent icon & container info)
-		if data.filledReagent then
-			local text = iconOnly and L["REAGENT_ICON"] or L["REAGENT_TEXT"];
-			if stateText then
-				return stateText.." "..text.." "..GetProgressColorText(data.progress or 0, total)
-			else
-				return text.." "..GetProgressColorText(data.progress or 0, total);
-			end
-		end
-
-		local costTotal = data.costTotal;
-		local isCost = costTotal and costTotal > 0;
-		-- Cost (show cost icon)
-		if isCost then
-			local text = iconOnly and L["COST_ICON"] or L["COST_TEXT"];
-			if stateText then
-				return stateText.." "..text;
-			else
-				return text;
-			end
-		end
-
-		-- Progress Only
-		if stateText then
-			return stateText.." "..GetProgressColorText(data.progress or 0, total);
+		local textContainer = GetProgressColorText(data.progress or 0, total)
+		tinsert(text, textContainer)
+	end
+	-- Non-collectible/total Container (only contains visible, non-collectibles...)
+	local g = data.g;
+	if not stateIcon and not isContainer and g and #g > 0 then
+		local headerText;
+		if data.expanded then
+			headerText = "---";
 		else
-			return GetProgressColorText(data.progress or 0, total);
+			headerText = "+++";
+		end
+		tinsert(text, headerText)
+	end
+
+	-- Trackable (Only if no other text available)
+	if #text == 0 then
+		stateIcon = GetTrackableIcon(data, true)
+		if stateIcon then
+			tinsert(text, stateIcon)
 		end
 	end
-	return stateText;
+
+	return app.TableConcat(text, nil, "", " ");
+end
+local function GetProgressTextForTooltip(data, iconOnly)
+	-- build the row text from left to right with possible info
+	local text = {}
+	-- Reagent (show reagent icon)
+	local reagentIcon = GetReagentIcon(data, iconOnly);
+	if reagentIcon then
+		tinsert(text, reagentIcon)
+	end
+	-- Cost (show cost icon)
+	local costIcon = GetCostIconForTooltip(data, iconOnly);
+	if costIcon then
+		tinsert(text, costIcon)
+	end
+	-- Collectible
+	local stateIcon = GetCollectibleIcon(data, iconOnly)
+	if stateIcon then
+		tinsert(text, stateIcon)
+	end
+	-- Container
+	local total = data.total;
+	local isContainer = total and (total > 1 or (total > 0 and not data.collectible));
+	if isContainer then
+		local textContainer = GetProgressColorText(data.progress or 0, total)
+		if textContainer then
+			tinsert(text, textContainer)
+		end
+	end
+
+	-- Trackable (Only if no other text available)
+	if #text == 0 then
+		stateIcon = GetTrackableIcon(data, iconOnly)
+		if stateIcon then
+			tinsert(text, stateIcon)
+		end
+	end
+
+	return app.TableConcat(text, nil, "", " ");
 end
 local function GetAddedWithPatchString(awp)
 	if awp then
@@ -1276,13 +1315,13 @@ local function CreateObject(t, rootOnly)
 		s.g = t.g;
 		t = s;
 		-- app.PrintDebug("Merge done",s.key,s[s.key], t, s);
-	-- is it an array of raw datas which needs to be turned into ana rray of usable objects
+	-- is it an array of raw datas which needs to be turned into an array of usable objects
 	elseif t[1] then
 		local s = {};
 		-- array
 		-- if app.DEBUG_PRINT then print("CreateObject on array",#t); end
-		for _,o in ipairs(t) do
-			tinsert(s, CreateObject(o, rootOnly));
+		for i,o in ipairs(t) do
+			s[i] = CreateObject(o, rootOnly);
 		end
 		return s;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
@@ -1374,26 +1413,20 @@ local function CreateObject(t, rootOnly)
 	-- allows for copying an object without all of the sub-groups
 	if rootOnly then
 		t.g = nil;
-	end
-
-	-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
-	-- if g, then replace each object in all sub groups with an object version of the table
-	local g = t.g;
-	if g then
-		local sourceg = g;
-		g = {};
-		-- if app.DEBUG_PRINT then print("CreateObject for sub-groups of",t.key,t[t.key]); end
-		for i,o in pairs(sourceg) do
-			g[i] = CreateObject(o);
+	else
+		-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
+		-- if g, then replace each object in all sub groups with an object version of the table
+		local g = t.g;
+		if g then
+			local gNew = {};
+			for i,o in ipairs(g) do
+				gNew[i] = CreateObject(o, rootOnly);
+			end
+			t.g = gNew;
 		end
-		t.g = g;
 	end
 
 	return t;
-end
--- Clones the data and attempts to create all sub-groups into cloned objects as well
-local function CloneData(data)
-	return CreateObject(data);
 end
 local function RawCloneData(data, clone)
 	clone = clone or {};
@@ -1406,6 +1439,16 @@ local function RawCloneData(data, clone)
 	clone.__type = nil;
 	clone.__index = nil;
 	return clone;
+end
+local function AssignFieldValue(group, field, value)
+	if group then
+		group[field] = value;
+		if group.g then
+			for i,o in ipairs(group.g) do
+				AssignFieldValue(o, field, value)
+			end
+		end
+	end
 end
 (function()
 local GetSlotForInventoryType = C_Transmog.GetSlotForInventoryType;
@@ -1531,7 +1574,8 @@ app.DetermineItemLink = function(sourceID)
 	-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No ModID or BonusID match)");
 end
 app.IsComplete = function(o)
-	if o.total and o.total > 0 then return o.total == o.progress; end
+	local total = o.total
+	if total and total > 0 then return total == o.progress; end
 	if o.collectible then return o.collected; end
 	if o.trackable then return o.saved; end
 	return true;
@@ -1802,6 +1846,22 @@ app.IsNPCQuestGiver = function(self, npcID)
 		return false;
 	end
 end
+local IgnoredQuests = setmetatable({}, {
+	__index = function(t, key)
+		-- app.PrintDebug("IgnoredQuests.__index",t,key)
+		local rawIgnores = ATTAccountWideData.IGNORE_QUEST_PRINT
+		if rawIgnores then
+			for i=1,#rawIgnores do
+				-- app.PrintDebug("IgnoreQuestPrint:",rawIgnores[i])
+				t[rawIgnores[i]] = true
+			end
+		end
+		-- app.PrintDebug("remove metatable",t)
+		setmetatable(t, nil)
+		-- app.PrintDebug("return",t[key])
+		return t[key]
+	end
+})
 PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local questRef = app.SearchForObject("questID", questID, "field");
@@ -1818,6 +1878,8 @@ PrintQuestInfo = function(questID, new, info)
 		if questChange == "accepted" then
 			app.FunctionRunner.Run(app.CheckInaccurateQuestInfo, questRef, questChange);
 		end
+		-- Users can manually set certain QuestIDs to be ignored because Blizzard decides to toggle them on and off constantly forever
+		if IgnoredQuests[questID] then return; end
 		local chatMsg;
 		if not questRef or GetRelativeValue(questRef, "_missing") then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
@@ -4595,25 +4657,9 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				end
 
 				if app.Settings:GetTooltipSetting("Currencies") then
-					-- app.PrintDebug("Currencies",group.hash,#entries)
-					local costCollectibles = group.costCollectibles;
-					-- app.PrintDebug("costCollectibles",group.hash,costCollectibles and #costCollectibles)
-					if costCollectibles and #costCollectibles > 0 then
-						local costAmounts = app.BuildCostTable(costCollectibles, paramB);
-						local currencyCount, CheckCollectible = 0, app.CheckCollectible;
-						local entryGroup, collectible;
-						for _,costEntry in ipairs(entries) do
-							entryGroup = costEntry.group;
-							collectible = CheckCollectible(entryGroup);
-							-- anything shown in the tooltip which is not collected according to the user's settings should be considered for the cost
-							if collectible then
-								-- app.PrintDebug("Purchasable",entryGroup.hash,collectible,collected,entryGroup.total - entryGroup.progress,"x",costAmounts[entryGroup.hash])
-								currencyCount = currencyCount + (costAmounts[entryGroup.hash] or 0);
-							end
-						end
-						if currencyCount > 0 then
-							tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"], right = formatNumericWithCommas(currencyCount) });
-						end
+					local currencyCount = app.CalculateTotalCosts(group, paramB)
+					if currencyCount > 0 then
+						tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"], right = formatNumericWithCommas(currencyCount) });
 					end
 				end
 			end
@@ -4688,25 +4734,39 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 	return group;
 end
 app.GetCachedSearchResults = GetCachedSearchResults;
-end	-- Search results Lib
 
--- Builds a hash table of hashes of collectibles which use the specified costID (without regard to being an item or currency) and storing the quantity in the hash table
-app.BuildCostTable = function(collectibles, costID)
-	local costAmounts, cost = {};
-	for _,collectible in ipairs(collectibles) do
-		cost = collectible.cost;
-		if cost then
-			for _,eachCost in ipairs(cost) do
-				if eachCost[2] == costID then
-					costAmounts[collectible.hash] = eachCost[3];
+local IsComplete = app.IsComplete
+local function CalculateGroupsCostAmount(g, costID)
+	local o, subg, subcost, c
+	local cost = 0
+	for i=1,#g do
+		o = g[i]
+		subcost = o.visible and not IsComplete(o) and o.cost or nil
+		if subcost and type(subcost) == "table" then
+			for j=1,#subcost do
+				c = subcost[j]
+				if c[2] == costID then
+					cost = cost + c[3];
+					break
 				end
 			end
 		end
+		subg = o.g
+		if subg then
+			cost = cost + CalculateGroupsCostAmount(subg, costID)
+		end
 	end
-	-- app.PrintDebug("Total Costs for",costID)
-	-- if app.DEBUG_PRINT then app.PrintTable(costAmounts) end
-	return costAmounts;
+	return cost
 end
+-- Returns the total amount of 'costID' for all non-collected Things within the group (not including the group itself)
+app.CalculateTotalCosts = function(group, costID)
+	-- app.PrintDebug("CalculateTotalCosts",group.hash,costID)
+	local g = group and group.g
+	local cost = g and CalculateGroupsCostAmount(g, costID) or 0
+	-- app.PrintDebug("CalculateTotalCosts",group.hash,costID,"=>",cost)
+	return cost
+end
+end	-- Search results Lib
 
 -- Auto-Expansion logic
 do
@@ -4847,12 +4907,13 @@ local NPCExpandHeaders = {
 	[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
 	[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
 	[app.HeaderConstants.DROPS] = true,
+	[app.HeaderConstants.REWARDS] = true,
 	[app.HeaderConstants.ZONE_DROPS] = true,
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group)
-	-- assuming for any 'crs' references on a single group that all crs are linked to the same resulting content
-	local npcID = group.npcID or group.creatureID;-- or (group.crs and group.crs[1]);
+	-- assuming for any 'crs' references on an encounter group that all crs are linked to the same resulting content
+	local npcID = group.npcID or group.creatureID or (group.encounterID and group.crs and group.crs[1]);
 	if npcID then
 		-- app.PrintDebug("NPC Group",group.hash,npcID)
 		-- search for groups of this NPC
@@ -6757,13 +6818,11 @@ local function RefreshSavesCallback()
 	end
 
 	-- Update Saved Instances
-	local converter = L["SAVED_TO_DJ_INSTANCES"];
 	local myLockouts = app.CurrentCharacter.Lockouts;
 	for instanceIter=1,saves do
 		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters = GetSavedInstanceInfo(instanceIter);
 		if locked then
-			-- Update the name of the instance and cache the locks for this instance
-			name = converter[name] or name;
+			-- Cache the locks for this instance
 			reset = serverTime + reset;
 			local locks = myLockouts[name];
 			if not locks then
@@ -7158,7 +7217,9 @@ end
 -- Returns a 'read-only' wrap of the given object such that it is represented as itself via field access of the raw object if nil, but any table assignment
 -- affects only the raw object and not the read-only object
 -- app.CreateReadOnlyObject = function(t)
--- 	return SetBase({}, t);
+-- 	t = SetBase({}, t);
+-- 	t.__readonly = true;
+-- 	return t;
 -- end
 end	-- Common Wrapper Types
 
@@ -10722,10 +10783,21 @@ local fields = {
 		return t.locks;
 	end,
 	["locks"] = function(t)
-		local locks = app.CurrentCharacter.Lockouts[t.name];
+		local lockouts = app.CurrentCharacter.Lockouts;
+		local locks = lockouts[t.name];
 		if locks then
 			t.locks = locks;
 			return locks;
+		end
+		local sins = t.sins;
+		if sins then
+			for i=1,#sins,1 do
+				lock = lockouts[sins[i]];
+				if locks then
+					t.locks = locks;
+					return locks;
+				end
+			end
 		end
 	end,
 	["isLockoutShared"] = app.ReturnFalse,
@@ -12532,7 +12604,6 @@ local headerFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
 	end,
-	["trackableAsQuest"] = app.ReturnTrue,
 };
 app.BaseHeader = app.BaseObjectFields(headerFields, "BaseHeader");
 local fields = RawCloneData(headerFields);
@@ -12542,14 +12613,14 @@ fields.icon = headerFields.iconAsAchievement;
 app.BaseHeaderWithAchievement = app.BaseObjectFields(fields, "BaseHeaderWithAchievement");
 local fields = RawCloneData(headerFields);
 fields.saved = headerFields.savedAsQuest;
-fields.trackable = headerFields.trackableAsQuest;
+fields.trackable = app.ReturnTrue;
 app.BaseHeaderWithQuest = app.BaseObjectFields(fields, "BaseHeaderWithQuest");
 local fields = RawCloneData(headerFields);
 fields.name = headerFields.nameAsAchievement;
 fields.icon = headerFields.iconAsAchievement;
 --fields.link = headerFields.linkAsAchievement;
 fields.saved = headerFields.savedAsQuest;
-fields.trackable = headerFields.trackableAsQuest;
+fields.trackable = app.ReturnTrue;
 app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
 
 -- Event Lib (using the Events Module!)
@@ -12574,7 +12645,16 @@ local fields = RawCloneData(headerFields, {
 });
 fields.description = nil;
 app.BaseAutomaticHeader = app.BaseObjectFields(fields, "BaseAutomaticHeader");
+local fields = RawCloneData(fields);
+fields.saved = function(t)
+	return IsQuestFlaggedCompleted(t.questID);
+end;
+fields.trackable = app.ReturnTrue;
+app.BaseAutomaticHeaderWithQuest = app.BaseObjectFields(fields, "BaseAutomaticHeaderWithQuest");
 app.CreateHeader = function(id, t)
+	if t and t.questID then
+		return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeaderWithQuest);
+	end
 	return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeader);
 end
 app.CreateNPC = function(id, t)
@@ -14013,34 +14093,57 @@ end	-- Filtering
 
 -- Processing Functions
 do
+local DefaultGroupVisibility, DefaultThingVisibility;
+local UpdateGroups;
+local RecursiveGroupRequirementsFilter, GroupRequirementsFilter, GroupFilter, GroupVisibilityFilter, ThingVisibilityFilter, TrackableFilter
+local FilterSet, FilterGet, Filters_ItemUnbound, ItemUnboundSetting
+-- Local caches for some heavily used functions within updates
+local function CacheFilterFunctions()
+	FilterSet = app.Modules.Filter.Set
+	FilterGet = app.Modules.Filter.Get
+	Filters_ItemUnbound = app.Modules.Filter.Filters.ItemUnbound
+	ItemUnboundSetting = FilterGet.ItemUnbound()
+	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
+	GroupRequirementsFilter = app.GroupRequirementsFilter;
+	GroupFilter = app.GroupFilter;
+	GroupVisibilityFilter, ThingVisibilityFilter = app.GroupVisibilityFilter, app.CollectedItemVisibilityFilter;
+	TrackableFilter = app.ShowTrackableThings;
+	DefaultGroupVisibility, DefaultThingVisibility = app.DefaultGroupFilter(), app.DefaultThingFilter();
+	app.PrintDebug("CacheFilterFunctions")
+	app.PrintDebug("ItemUnboundSetting",ItemUnboundSetting)
+end
 local function SetGroupVisibility(parent, group)
-	-- if app.DEBUG_PRINT then print("SetGroupVisibility",group.key,group[group.key]) end
-	local forceShowParent, visible;
-	-- If this group is forced to be shown due to contained groups being shown
-	if group.forceShow then
+	local forceShowParent;
+	-- Set visible initially based on the global 'default' visibility, or whether the group should inherently be shown
+	local visible = DefaultGroupVisibility or GroupVisibilityFilter(group);
+	-- Need to check all possible reasons a group could be visible, from simplest to more complex
+	-- Force show
+	if not visible and group.forceShow then
 		visible = true;
 		group.forceShow = nil;
 		-- Continue the forceShow visibility outward
 		forceShowParent = true;
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.forceShow",group.progress,group.total,visible) end
-	-- If this group contains Things, show based on visibility filter
-	elseif group.total > 0 then
-		visible = group.progress < group.total or app.GroupVisibilityFilter(group);
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.total",group.progress,group.total,visible) end
-		-- The group can still be trackable even if it isn't visible due to the total
-		if not visible and app.ShowTrackableThings(group) then
-			visible = not group.saved or app.GroupVisibilityFilter(group);
-			forceShowParent = visible;
-		end
-	-- If this group is trackable, then we should show it.
-	elseif app.ShowTrackableThings(group) then
-		visible = not group.saved or app.GroupVisibilityFilter(group);
-		forceShowParent = visible;
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.trackable",group.progress,group.total,visible) end
-	else
-		visible = app.DefaultGroupFilter();
-		-- if app.DEBUG_PRINT then print("SetGroupVisibility.default",group.progress,group.total,visible) end
 	end
+	-- Total
+	if not visible and group.total > 0 then
+		visible = group.progress < group.total;
+	end
+	-- Cost
+	if not visible and (group.costNested or (group.costTotal or 0) > 0) then
+		visible = not group.saved;
+		-- Only persist nested costs from visible groups
+		if parent and visible then
+			parent.costNested = true;
+		end
+		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costNested)
+	end
+	-- Trackable
+	if not visible and TrackableFilter(group) then
+		visible = not group.saved;
+		forceShowParent = visible;
+	end
+	-- Apply the visibility to the group
+	group.visible = visible;
 	-- source ignored group which is determined to be visible should ensure the parent is also visible
 	if not forceShowParent and visible and group.sourceIgnored then
 		forceShowParent = true;
@@ -14049,70 +14152,50 @@ local function SetGroupVisibility(parent, group)
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
 	end
-	group.visible = visible;
 end
 local function SetThingVisibility(parent, group)
-	-- local debug = group.criteriaID == 2204;
-	-- if debug then print("TV",group.key,group[group.key]) end
-	local forceShowParent, visible;
-	if group.total > 0 then
-		-- If we've collected the item, use the "Show Collected Items" filter.
-		visible = group.progress < group.total or app.CollectedItemVisibilityFilter(group);
-		-- if debug then print("TV.total",group.progress,group.total,visible) end
-	elseif app.ShowTrackableThings(group) then
-		-- If this group is trackable, then we should show it.
-		visible = not group.saved or app.CollectedItemVisibilityFilter(group);
-		forceShowParent = visible;
-		-- if debug then print("TV.trackable",group.progress,group.total,visible) end
-	else
-		visible = app.DefaultThingFilter();
-		-- if debug then print("TV.default",group.progress,group.total,visible) end
+	local forceShowParent;
+	local visible = DefaultThingVisibility or ThingVisibilityFilter(group);
+	-- Need to check all possible reasons a group could be visible, from simplest to more complex
+	-- Force show
+	if not visible and group.forceShow then
+		visible = true;
+		group.forceShow = nil;
+		-- Continue the forceShow visibility outward
+		forceShowParent = true;
 	end
+	-- Total
+	if not visible and group.total > 0 then
+		visible = group.progress < group.total;
+	end
+	-- Cost
+	if not visible and (group.costNested or (group.costTotal or 0) > 0) then
+		visible = not group.saved;
+		-- Only persist nested costs from visible groups
+		if parent and visible then
+			parent.costNested = true;
+		end
+		-- app.PrintDebug("STV.cost",group.hash,visible,group.costNested)
+	end
+	-- Trackable
+	if not visible and TrackableFilter(group) then
+		visible = not group.saved;
+		forceShowParent = visible;
+	end
+	-- Apply the visibility to the group
+	group.visible = visible;
 	-- source ignored group which is determined to be visible should ensure the parent is also visible
 	if not forceShowParent and visible and group.sourceIgnored then
 		forceShowParent = true;
-		-- app.PrintDebug("STV:ForceParent",parent.text,"via Source Ignored",group.text)
+		-- app.PrintDebug("SGV:ForceParent",parent.text,"via Source Ignored",group.text)
 	end
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
 	end
-	group.visible = visible;
-end
-local UpdateGroups;
-local RecursiveGroupRequirementsFilter, GroupFilter, Filters_ItemUnbound, ItemUnboundSetting, FilterSet, FilterGet
--- Local caches for some heavily used functions within updates
-local function CacheFilterFunctions()
-	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter
-	GroupFilter = app.GroupFilter
-	FilterSet = app.Modules.Filter.Set
-	FilterGet = app.Modules.Filter.Get
-	Filters_ItemUnbound = app.Modules.Filter.Filters.ItemUnbound
-	ItemUnboundSetting = FilterGet.ItemUnbound()
-	app.PrintDebug("CacheFilterFunctions")
-	app.PrintDebug("ItemUnboundSetting",ItemUnboundSetting)
 end
 local function UpdateGroup(parent, group)
-	-- local debug = group.criteriaID == 2204;
-	-- if debug then print("UG",group.hash,group.__type) end
-	-- if not app.DEBUG_PRINT and shouldLog then
-	-- 	app.DEBUG_PRINT = shouldLog;
-	-- end
-
-	-- -- Only update a group ONCE per update cycle...
-	-- if not group._Updated or group._Updated ~= app._Updated then
-	-- 	if LOG then print("First Update") end
-	-- 	group._Updated = app._Updated;
-	-- else
-	--	-- group has already updated on this pass
-	-- 	if LOG then print("Skip Update") end
-	--	-- print("Skip Update",app._Updated,group.key,group.key and group[group.key],"t/p/v",group.total,group.progress,group.visible)
-	--	-- Increment the parent group's totals.
-	-- 	parent.total = (parent.total or 0) + (group.total or 0);
-	-- 	parent.progress = (parent.progress or 0) + (group.progress or 0);
-	-- 	return group.visible;
-	-- end
-
 	group.visible = nil;
+	group.costNested = nil;
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
 	local valid;
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
@@ -14127,11 +14210,9 @@ local function UpdateGroup(parent, group)
 
 	if valid then
 		-- Set total/progress for this object using its cost/custom information if any
-		local costTotal = group.costTotal or 0;
-		local costProgress = costTotal > 0 and group.costProgress or 0;
 		local customTotal = group.customTotal or 0;
 		local customProgress = customTotal > 0 and group.customProgress or 0;
-		local total, progress = costTotal + customTotal, costProgress + customProgress;
+		local total, progress = customTotal, customProgress;
 
 		-- if debug then print("UG.Init","cost",costProgress,costTotal,"custom",customProgress,customTotal,"=>",progress,total) end
 
@@ -14442,9 +14523,9 @@ local CCFuncs = {
 		-- check if quest #51211 is completed. Rewards the HoA to the player and permanently switches all possible Azerite rewards
 		local hoa = IsQuestFlaggedCompleted(51211) or false;
 		-- also store the opposite of HOA for easy checks on Azewrong gear
-		app.CurrentCharacter.CustomCollects["~HOA"] = not hoa;
+		app.CurrentCharacter.CustomCollects["!HOA"] = not hoa;
 		-- for now, always assume both HoA qualifications are true so they do not filter
-		app.ActiveCustomCollects["~HOA"] = true; -- not hoa;
+		app.ActiveCustomCollects["!HOA"] = true; -- not hoa;
 		return true; -- hoa;
 	end,
 	["SL_COV_KYR"] = function()
@@ -14731,7 +14812,7 @@ function app:CreateMiniListForGroup(group)
 		-- 		local cmd = group.key .. ":" .. group[group.key];
 		-- 		group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 		-- 	else
-		-- 		group = CloneData(group);
+		-- 		group = CreateObject(group);
 		-- 	end
 		-- end
 		-- if popping out a thing with a sourced parent, generate a Source group to allow referencing the Source of the thing directly
@@ -14924,7 +15005,7 @@ function app:CreateMiniListForGroup(group)
 						i = i - 1;
 					end
 					if sq then
-						root = CloneData(sq);
+						root = CreateObject(sq);
 						root.g = g;
 						g = { root };
 					end
@@ -14969,7 +15050,7 @@ function app:CreateMiniListForGroup(group)
 										and app.CheckCustomCollects(found)
 										-- ensure the current settings do not filter the quest
 										and app.RecursiveGroupRequirementsFilter(found) then
-										sourceQuest = CloneData(found);
+										sourceQuest = CreateObject(found);
 										sourceQuest.visible = true;
 										sourceQuest.hideText = true;
 										if found.sourceQuests and #found.sourceQuests > 0 and
@@ -16499,6 +16580,16 @@ RowOnEnter = function (self)
 			end
 		end
 
+		-- Show if Quest is available
+		-- local questAvailable = refQuestID
+		-- 	and not reference.saved
+		-- 	and not C_QuestLog.IsOnQuest(refQuestID)
+		-- 	and not reference.locked
+		-- 	and not reference.missingReqs;
+		-- if questAvailable then
+		-- 	GameTooltip:AddLine(Colorize("Quest available to pick up", app.Colors.ChatLinkHQT));
+		-- end
+
 		-- Show Quest Prereqs
 		local isDebugMode, sqs, bestMatch = app.MODE_DEBUG;
 		if reference.sourceQuests and (not reference.saved or isDebugMode) then
@@ -17834,6 +17925,7 @@ function app:GetDataCache()
 		db._nyi = true;
 		tinsert(g, db);
 		CacheFields(db);
+		AssignFieldValue(db, "u", 1);
 	end
 
 	-- Hidden Achievement Triggers
@@ -18140,8 +18232,10 @@ local function RefreshData()
 		if LastSettingsChangeUpdate ~= app._SettingsRefresh then
 			LastSettingsChangeUpdate = app._SettingsRefresh;
 
-			-- Trigger Cost Update Runner
-			app.UpdateCosts();
+			app.DoModuleEvent("OnRefreshData_NewSettings")
+		-- else
+			-- comment this in when needed (i.e. custom collect module/quest module/etc. for above methods)
+		-- 	app.DoModuleEvent("OnRefreshData")
 		end
 
 		-- Forcibly update the windows.
@@ -19602,19 +19696,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						end,
 					}),
 					{
-						['text'] = L["TELEPORT_TO_FROM_DUNGEON"],
-						['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
-						['description'] = L["TELEPORT_TO_FROM_DUNGEON_DESC"],
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							LFGTeleport(IsInLFGDungeon());
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							data.visible = IsAllowedToUserTeleport();
-						end,
-					},
-					{
 						['text'] = L["RESET_INSTANCES"],
 						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
 						['description'] = L["RESET_INSTANCES_DESC"],
@@ -19640,6 +19721,19 @@ customWindowUpdates["RaidAssistant"] = function(self)
 									C_Timer.After(0.5, AttemptResetInstances);
 								end
 							end
+						end,
+					},
+					{
+						['text'] = L["TELEPORT_TO_FROM_DUNGEON"],
+						['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
+						['description'] = L["TELEPORT_TO_FROM_DUNGEON_DESC"],
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							LFGTeleport(IsInLFGDungeon());
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							data.visible = IsAllowedToUserTeleport();
 						end,
 					},
 					{
@@ -22291,7 +22385,7 @@ app.ProcessAuctionData = function()
 				for itemID2,count in pairs(reagentCache[itemID][2]) do
 					local searchResults = app.SearchForField("itemID", itemID2);
 					if searchResults and #searchResults > 0 then
-						tinsert(entry.g, CloneData(searchResults[1]));
+						tinsert(entry.g, CreateObject(searchResults[1]));
 					end
 				end
 			else
@@ -22915,7 +23009,7 @@ app.InitDataCoroutine = function()
 			end
 		end
 		if toClean then
-			local copyTables = { "Buildings","Factions","FlightPaths","Quests" };
+			local copyTables = { "Buildings","Factions","FlightPaths" };
 			local cleanCharacterFunc = function(guid)
 				-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
 				local character = characterData[guid];
@@ -22981,7 +23075,7 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("TOYS_UPDATED");
 	app:RegisterEvent("LOOT_OPENED");
 	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
-	app:RegisterEvent("LEARNED_SPELL_IN_TAB");
+	app:RegisterEvent("SKILL_LINES_CHANGED");
 	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
 	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED");
 	app:RegisterEvent("VIGNETTES_UPDATED");
@@ -23020,11 +23114,7 @@ app.InitDataCoroutine = function()
 	-- app.PrintDebug("ATT is Ready!");
 
 	-- See if any Modules have 'OnReady' functions defined, and call them now
-	for _,module in pairs(app.Modules) do
-		if module.OnReady then
-			app.FunctionRunner.Run(module.OnReady, ATTAccountWideData);
-		end
-	end
+	app.DoModuleEvent("OnReady")
 
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end
@@ -23151,7 +23241,15 @@ SLASH_AllTheThingsU2 = "/attyou";
 SLASH_AllTheThingsU3 = "/attwho";
 SlashCmdList["AllTheThingsU"] = function(cmd)
 	local name,server = UnitName("target");
-	if name then SendResponseMessage("?", server and (name .. "-" .. server) or name); end
+	if name then
+		if UnitIsPlayer("target") then
+			SendResponseMessage("?", server and (name .. "-" .. server) or name);
+		else
+			local cmd = "creatureid:" .. select(6, strsplit("-", UnitGUID("target")));
+			local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+			if group then app:CreateMiniListForGroup(group); end
+		end
+	end
 end
 
 SLASH_AllTheThingsWQ1 = "/attwq";
@@ -23504,11 +23602,10 @@ app.events.BOSS_KILL = function(id, name, ...)
 	app:UnregisterEvent("LOOT_CLOSED");
 	app:RegisterEvent("LOOT_CLOSED");
 end
-app.events.LEARNED_SPELL_IN_TAB = function(spellID, skillInfoIndex, isGuildPerkSpell)
+app.events.SKILL_LINES_CHANGED = function()
+	-- app.PrintDebug("SKILL_LINES_CHANGED")
 	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
-	if skillInfoIndex == 7 then
-		DelayedCallback(app.RefreshTradeSkillCache, 2);
-	end
+	DelayedCallback(app.RefreshTradeSkillCache, 2);
 end
 app.events.LOOT_CLOSED = function()
 	-- Once the loot window closes after killing a boss, THEN trigger the update.

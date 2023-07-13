@@ -92,14 +92,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(166993, {	-- Huntmaster Petrus
-			["crs"] = { 165891 },	-- Reza
+				["crs"] = { 165891 },	-- Reza
 				["coord"] = { 61.8, 79.2, REVENDRETH },
 				["questID"] = 60022,
 				["g"] = {
-					i(180705, {	-- Gargon Training Manual
-						["questID"] = 61160,
-						["classes"] = { HUNTER },
-					}),
+					i(180705),	-- Gargon Training Manual (CI!)
 				},
 			}),
 			n(160640, {	-- Innervus

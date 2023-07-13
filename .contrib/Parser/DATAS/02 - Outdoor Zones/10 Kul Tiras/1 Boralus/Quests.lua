@@ -750,23 +750,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52449, {	-- The Mysterious Island
-				["sourceQuests"] = {
-					52445,	-- Tol Dagor: The Fourth Key
-				--	also requires entirety of "A Sound Plan"
-					50531,	-- Under Their Noses
-					49404,	-- Fairwind's "Friends"
-					49740,	-- Cease Fire!
-					49736,	-- For Kul Tiras!
-					50972,	-- Proudmoore's Parley
-					49302,	-- The Deadliest Catch
-					48089,	-- Mountain Sounds
-					48088,	-- No Party Like a Trogg Party
-					48421,	-- Blood in the Tides
-					49226,	-- Silencing the Sisters
-				--	49230,	-- Local Flavor (unsure if these 3 are required for "Castaways and Cutouts" criteria
-				--	48505,	-- Lovesick and Lost
-				--	49178,	-- My Favorite Things
-				},
+				["sourceQuests"] = { 52445 },	-- Tol Dagor: The Fourth Key
 				["provider"] = { "n", 140732 },	-- Flynn Fairwind
 				["coord"] = { 68.0, 22.6, BORALUS },
 				["races"] = ALLIANCE_ONLY,

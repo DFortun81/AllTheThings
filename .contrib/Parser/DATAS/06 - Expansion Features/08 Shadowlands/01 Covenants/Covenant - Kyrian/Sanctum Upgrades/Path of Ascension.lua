@@ -1643,7 +1643,7 @@ for _,g in ipairs({ECHTHRA_GROUP,BINKIROS_GROUP,PHIXIN_GROUP,ZELESKOS_GROUP,{BRI
 	end
 end
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	prof(ASCENSION_CRAFTING, {
 		recipe(335849),	-- Charm of Energizing
 		recipe(335596),	-- Charm of Alacrity
@@ -1652,7 +1652,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(181139),	-- Blueprint: Charm of Alacrity
 		}),
 	}),
-}));
+});
 
 root(ROOTS.HiddenQuestTriggers, {
 	-- COURAGE DIFFICULTY KILL

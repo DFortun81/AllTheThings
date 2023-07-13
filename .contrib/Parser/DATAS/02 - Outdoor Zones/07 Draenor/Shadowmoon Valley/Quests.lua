@@ -1032,11 +1032,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(49544),	-- triggers after handing in "Hero's Call: Shadowmoon Valley!" (questID 49562)
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(117994),	-- RENAME Karabor Honor Guard Axe
 			i(117993),	-- RENAME Rangari Boot Knife
 		}),
 	}),
-}));
+});

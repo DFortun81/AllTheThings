@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
+
 root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(946, {	-- Antorus, the Burning Throne
 		["isRaid"] = true,
@@ -110,6 +112,19 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(151655),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 2] (RECIPE!)
 					i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 3] (RECIPE!)
 				},
+			}),
+			d(AllDifficulties, {
+				e(1987, {	-- Felhounds of Sargeras
+					["crs"] = {
+						122477,	-- F'harg
+						122135,	-- Shatug
+					},
+					["g"] = {
+						i(208051, {	-- Grimoire of the Antoran Felhunter (CI!)
+							["timeline"] = { ADDED_10_1_5 },
+						}),
+					},
+				}),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
@@ -1743,7 +1758,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(48570),	-- Tracking Quest - triggers when the door opens to Kin'garoth
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		inst(946, {	-- Antorus, the Burning Throne
 			-- Added in 9.1 Why? Noone knows
@@ -1752,4 +1767,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(180539),	-- Vambraces of Life's Assurance
 		}),
 	}),
-}));
+});

@@ -2003,7 +2003,25 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.HiddenQuestTriggers, {
+	tier(MOP_TIER, {
+		q(32752),	-- Dark Animus Dead - triggers on the first kill of the week
+		q(32750),	-- Durumu Dead - triggers on the first kill of the week
+		q(32755),	-- Empyreal Queens Dead - triggers on the first kill of the week
+		q(32745),	-- Horridon Dead - triggers on the first kill of the week
+		q(32754),	-- Iron Qon Dead - triggers on the first kill of the week
+		q(32749),	-- Ji'kun Dead - triggers on the first kill of the week
+		q(32744),	-- Jin'rokh Dead - triggers on the first kill of the week
+		q(32756),	-- Lei Shen Dead - triggers on the first kill of the week
+		q(32748),	-- Maegaera Dead - triggers on the first kill of the week
+		q(32751),	-- Primordious Dead - triggers on the first kill of the week
+		q(32753),	-- Ra-den Dead - triggers on the first kill of the week
+		q(32747),	-- Tortos Dead - triggers on the first kill of the week
+		q(32746),	-- Zandalari Council Dead - triggers on the first kill of the week
+	}),
+});
+
+root(ROOTS.NeverImplemented, {
 	tier(MOP_TIER, {
 		inst(362, {
 			filter(CONSUMABLES, {
@@ -2075,23 +2093,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(96722),	-- Locksmasher Greaves
 			i(96723),	-- Columnbreaker Stompers
 		}),
-	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, {
-	tier(MOP_TIER, {
-		q(32752),	-- Dark Animus Dead - triggers on the first kill of the week
-		q(32750),	-- Durumu Dead - triggers on the first kill of the week
-		q(32755),	-- Empyreal Queens Dead - triggers on the first kill of the week
-		q(32745),	-- Horridon Dead - triggers on the first kill of the week
-		q(32754),	-- Iron Qon Dead - triggers on the first kill of the week
-		q(32749),	-- Ji'kun Dead - triggers on the first kill of the week
-		q(32744),	-- Jin'rokh Dead - triggers on the first kill of the week
-		q(32756),	-- Lei Shen Dead - triggers on the first kill of the week
-		q(32748),	-- Maegaera Dead - triggers on the first kill of the week
-		q(32751),	-- Primordious Dead - triggers on the first kill of the week
-		q(32753),	-- Ra-den Dead - triggers on the first kill of the week
-		q(32747),	-- Tortos Dead - triggers on the first kill of the week
-		q(32746),	-- Zandalari Council Dead - triggers on the first kill of the week
 	}),
 });
