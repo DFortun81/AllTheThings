@@ -274,7 +274,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					q(76404, {	-- Cogs in a Machine
 						["provider"] = { "i", 206602 },	-- Mechanical Cog
-						["coord"] = { 57.7, 64.2, AZEROTH },
+						["coord"] = { 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(76546, {	-- Mantid Methodology
 						["provider"] = { "i", 206998 },	-- Mechanical Cog
