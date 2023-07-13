@@ -3125,6 +3125,7 @@ _.ObjectNames = {
 	[402888] = "Intricate Zaqali Runes",
 	[402890] = "Hissing Rune Draft",
 	[402892] = "Ancient Research",
+	[403919] = "Mechanized Cog",
 	[403786] = "Antlered Skull",
 	[404314] = "Chipped Stone Tabled",
 	[404242] = "Oil Soaked Book",

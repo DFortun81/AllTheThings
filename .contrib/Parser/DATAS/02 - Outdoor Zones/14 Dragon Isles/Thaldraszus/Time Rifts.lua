@@ -353,12 +353,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(206998),	-- Amber Sword
 						--	},
 						--}),
-						-- o(xx,{	-- xx
-						-- 	["coord"] = { 58.1, 63.9, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						-- 	["g"] = {
+						o(403919,{	-- Mechanized Cog
+						 	["coords"] = {
+								{ 58.1, 63.9, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+								{ 38.1, 52.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+							},
+						 	["g"] = {
 								i(206602),	-- Mechanized Cog
-						--	},
-						--}),
+							},
+						}),
 				}),
 				n(VENDORS, {
 					n(208338, {	-- Baron Silver <Azmourne Vendor>
@@ -1015,6 +1018,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(76607),	-- after Azmourne finished
 	q(76614),	-- after Ulderoth finished
 	q(76699),	-- after A.Z.E.R.O.T.H finished / Box of Tampered Reality (green bag)?
+	q(76684),	-- after A.Z.E.R.O.T.H finished with 'Titanic Hourglass' (or may be it is now just hqt for it)
+	q(76711),	-- after A.Z.E.R.O.T.H finished with 'Titanic Hourglass' (idk what happen D:, may be it is ids/lockout for Hourglass?)
+
 	q(77680),	-- picked up 'When Time Needs Mending' (questID 77236); after questID 77679?
 
 	q(77836),	-- 1st weekly rift (some bonus roll?) / killing Illidan (205306) in 'Azewrath' / killed Fury of N'zoth in Azq'roth
