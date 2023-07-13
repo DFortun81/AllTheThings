@@ -381,6 +381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							["lvl"] = lvlsquish(1, 1, 1),
 						}),
 						q(9392, {	-- Rogue Training
