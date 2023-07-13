@@ -348,7 +348,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
-						i(190329),	-- Awakened Frost
+					-- Removed Frost since it duplicates into 50+ things that require Awakened Frost
+					--	i(190329),	-- Awakened Frost
 						i(202332),	-- Blue Dragon Bedtime Story
 						i(202330),	-- Fine-Pointed Quill
 					},

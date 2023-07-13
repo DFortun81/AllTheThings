@@ -686,7 +686,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 		}),
 		i(13920, {	-- Healthy Dragon Scale
 			["description"] = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
-			["timeline"] = { "deleted 4.0.3" },
+			["timeline"] = { "deleted 4.0.3", "added 10.1.5" },
 			["cr"] = 10678,	-- Plagued Hatchling
 		}),
 		-- #if BEFORE 5.0.4
