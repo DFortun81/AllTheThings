@@ -675,7 +675,6 @@ root(ROOTS.Unsorted, {
 			i(207101),	-- Glyph of Banehollow's Soulstone
 			i(207102),	-- TESTING ITEM DELETE ME
 			i(205199),	-- Slime Sheathed Shell
-			i(206638),	-- Azmourne's Corrupted Ashbringer
 			i(207594),	-- Looter's Purse
 			i(207956),	-- Thunderspine Nest
 			i(208006),	-- Greater Paracausal Chest

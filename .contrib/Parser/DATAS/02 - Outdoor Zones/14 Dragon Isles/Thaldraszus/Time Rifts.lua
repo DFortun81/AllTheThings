@@ -285,8 +285,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 12.0, 30.9, THE_WARLANDS },
 					}),
 					q(76406, {	-- The Sins of the Ashbringer
-						["provider"] = { "i", 206638 },	-- Azmourne's Corrupted Ashbringer
-						["coord"] = { 39.4, 58.4, AZMOURNE },
+						["provider"] = { "n", 208328 },	-- Azmourne's Corrupted Ashbringer
+						["coords"] = {
+							{ 39.4, 58.4, AZMOURNE },
+							{ 39.7, 58.0, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						},
+						["g"] = {
+							i(206638),	-- Azmourne's Corrupted Ashbringer
+						}
 					}),
 					q(76351, {	-- Titanic Beasts
 						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc
@@ -1014,17 +1020,20 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(76985),
 	q(76986),	-- reported in during epic bag stage for 1st rift (didn't pop 2nd time)
 
-	q(76618),	-- after Azewrath finished
-	q(76607),	-- after Azmourne finished
-	q(76614),	-- after Ulderoth finished
-	q(76699),	-- after A.Z.E.R.O.T.H finished / Box of Tampered Reality (green bag)?
-	q(76684),	-- after A.Z.E.R.O.T.H finished with 'Titanic Hourglass' (or may be it is now just hqt for it)
-	q(76711),	-- after A.Z.E.R.O.T.H finished with 'Titanic Hourglass' (idk what happen D:, may be it is ids/lockout for Hourglass?)
+	q(76618),	-- after Azewrath finished -- ptr
+	q(76607),	-- after Azmourne finished -- ptr
+	q(76614),	-- after Ulderoth finished -- ptr
+	q(76699),	-- after A.Z.E.R.O.T.H finished -- ptr
+	q(76684),	-- after A.Z.E.R.O.T.H finished with 'Encapsulated Destiny' (1st) (loot was itemID 206779 [Steel-Lined Locking System])
+	q(76711),	-- after A.Z.E.R.O.T.H finished with 'Encapsulated Destiny' (2nd) (loot was itemID 208012 [Briarhorn Hatchling])
+	q(76609),	-- after Azmerloth finished with 'Encapsulated Destiny' (3rd) (loot was itemID 206769 [Unknown Horror's Arm])
 
 	q(77680),	-- picked up 'When Time Needs Mending' (questID 77236); after questID 77679?
 
 	q(77836),	-- 1st weekly rift (some bonus roll?) / killing Illidan (205306) in 'Azewrath' / killed Fury of N'zoth in Azq'roth
 
 	q(76702),	-- After buying 'Titanic Hourglass'
+	q(76689),	-- after buying 'Upraised Headstone' (itemID 206793)
+
 	q(76707),	-- Upon getting either 'Ensemble: Haukbert of Discipline' or 'Dilated Time Capsule'
 }));
