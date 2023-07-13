@@ -244,9 +244,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								title(513),	-- <Name> Unparalleled
 							})),
 							-- q(77179)?? HTQ trigger?
-							i(208058, {	-- Minute Glass (TOY!)
-								["description"] = "Talk to Soridormi After Reaching Future Friend friendship rank with her.",
+							q(77241, {	--
+								["provider"] = { "n", 204450 },	-- Soridormi
+								["coord"] = { 68.1, 35.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 								["minReputation"] = { FACTION_SORIDORMI, 2 },
+								["g"] = {
+									i(208058),	-- Minute Glass (TOY!)
+								},
 							}),
 						},
 					}),

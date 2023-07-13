@@ -2461,7 +2461,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72498, 395868);	-- Pioneer's Practiced Shoulderpads
 			FirstCraft(75279, 406266, ADDED_10_1_0);	-- Spore Colony Shoulderguards
 			-- Mail Armor
-			--FirstCraft(x, 406267, ADDED_10_1_0);	-- Adaptive Dracothyst Armguards
+			FirstCraft(75282, 406267, ADDED_10_1_0);	-- Adaptive Dracothyst Armguards
 			FirstCraft(71738, 375123);	-- Flame-Touched Chain
 			FirstCraft(71733, 375117);	-- Flame-Touched Chainmail
 			FirstCraft(71739, 375124);	-- Flame-Touched Cuffs
