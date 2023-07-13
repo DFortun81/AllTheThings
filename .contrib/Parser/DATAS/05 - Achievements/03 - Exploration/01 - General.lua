@@ -207,7 +207,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 							},
 						}),
 						i(206357, {	-- Authentic Andorhal Candle -- Candle #3
-							["description"] = "The Deed to Andorhal: Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns. Trade it with Magistrate Marduke at the top portion of Andorhal, near the entrance to Scholomance, for Authentic Andorhal Candle.\n\nThe far left Western Plaguelands coordinates are for 'The Deed to Andorhal' item & the far right Western Plaguelands coordinates are for Vendor to trade.",
+							["description"] = "The Deed to Andorhal: Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns. Trade it with Magistrate Marduke at the top portion of Andorhal, near the entrance to Scholomance, for Authentic Andorhal Candle.\n\nThe left coordinates are for 'The Deed to Andorhal' item & the right coordinates are for Vendor to trade.",
 							["cost"] = { { "i", 206362, 1 } },	-- The Deed to Andorhal
 							["coords"] = { 
 								{ 44.0, 69.2, WESTERN_PLAGUELANDS },	-- The Deed to Andorhal
