@@ -641,7 +641,6 @@ root(ROOTS.Unsorted, {
 			i(206574),	-- Dented Raider's Leggings
 			i(206575),	-- Dented Raider's Boots
 			i(206576),	-- Death's Bargaining Chip
-			i(206602),	-- Mechanized Cog
 			i(206775),	-- Map to Suramar
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
