@@ -308,7 +308,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								44151,	-- Reins of the Blue Proto-Drake
 								63040,	-- Reins of the Drake of the North Wind
 								133543,	-- Reins of the Infinite Timereaver
-								208216,	-- Reins of the Quantum Courser
 								32768,	-- Reins of the Raven Lord
 								63043,	-- Reins of the Vitreous Stone Drake
 								159842,	-- Sharkbait's Favorite Crackers
@@ -325,21 +324,21 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							}},
 						}),
 						i(208064, {	-- Quantum Chestpiece
-							["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
 						}),
 						i(208063, {	-- Quantum Gloves
-							["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
 						}),
 						i(208061, {	-- Quantum Headpiece
-							["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
 						}),
 						i(208065, {	-- Quantum Legs
-							["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
 						}),
 						i(208062, {	-- Quantum Shoulders
-							["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
 						}),
-						n(WEAPONS, bubbleDown({ ["description"] = "This item turns into 1 unlearned appearance from any Dungeon, Raid or World drop before Dragonflight (10.0)" }, {
+						n(WEAPONS, bubbleDown({ ["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)" }, {
 							i(208111),	-- Quantum Axe
 							i(208117),	-- Quantum Bow
 							i(208118),	-- Quantum Crossbow
@@ -349,13 +348,21 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							}),
 							i(208113),	-- Quantum Greataxe
 							i(208114),	-- Quantum Greathammer
-							i(208112),	-- Quantum Greatsword
+							i(208112, {	-- Quantum Greatsword
+								-- CA IS NOT POSSIBLE -- Gold 13.07.2023
+								i(1387),	-- Ghoulfang (Removed)
+								i(16039),	-- Ta'Kierthan Songblade (Removed)
+								i(2754),	-- Tarnished Bastard Sword (Removed)			
+							}),
 							i(208120),	-- Quantum Knife
 							i(208121),	-- Quantum Knuckles
 							i(208110),	-- Quantum Mace
 							i(208116),	-- Quantum Polearm
 							i(208126),	-- Quantum Shield
-							i(208115),	-- Quantum Staff
+							i(208115, {	-- Quantum Staff
+								i(2280),	-- Kam's Walking Stick (Removed)
+								i(115298),	-- Spectral Spire (NY)
+							}),
 							i(208109),	-- Quantum Sword
 							i(208122),	-- Quantum Warglaives
 							i(208123),	-- Quantum Wand
