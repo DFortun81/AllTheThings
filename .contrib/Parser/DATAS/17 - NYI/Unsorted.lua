@@ -641,7 +641,6 @@ root(ROOTS.Unsorted, {
 			i(206574),	-- Dented Raider's Leggings
 			i(206575),	-- Dented Raider's Boots
 			i(206576),	-- Death's Bargaining Chip
-			i(206775),	-- Map to Suramar
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
 			i(206931),	-- Truesilver Champion
@@ -650,7 +649,6 @@ root(ROOTS.Unsorted, {
 			i(206164),	-- Weak Resonating Vestigial
 			i(206165),	-- Major Resonating Vestigial
 			i(206166),	-- Strong Resonating Vestigial
-			i(206957),	-- Boffins
 			i(206962),	-- Watcher's Log
 			i(206984),	-- Blood-Soaked Book
 			i(207008),	-- A Fish
