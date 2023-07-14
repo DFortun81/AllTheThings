@@ -630,7 +630,6 @@ root(ROOTS.Unsorted, {
 			i(206165),	-- Major Resonating Vestigial
 			i(206166),	-- Strong Resonating Vestigial
 			i(206962),	-- Watcher's Log
-			i(206984),	-- Blood-Soaked Book
 			i(207008),	-- A Fish
 			i(207011),	-- Warblades of the Hakkari, Reborn
 			i(207029),	-- Scarlet Zealot's Heater Shield
@@ -648,7 +647,6 @@ root(ROOTS.Unsorted, {
 			i(207058),	-- Fractured Shin
 			i(207059),	-- Skeletal Knight's Blade
 			i(207060),	-- Skeletal Knight's Buckler
-			i(207083),	-- Gift of the Ravenous Black Gryphon
 			i(207096),	-- Paracausal Chest
 			i(207101),	-- Glyph of Banehollow's Soulstone
 			i(207102),	-- TESTING ITEM DELETE ME

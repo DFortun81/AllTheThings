@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["_quests"] = { 76533 },	-- Dangerous Documentation
 						}),
 						crit(11, {	-- Blood Soaked Book
-							-- ["_quests"] = {  },	--
+							["_quests"] = { 76544 },	-- Wasteland Warriors
 						}),
 						crit(12, {	-- Amber Blade
 							["_quests"] = { 76546 },	-- Mantid Methodology
@@ -326,6 +326,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ 45.8, 72.1, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
 					}),
+					q(76544, {	-- Wasteland Warriors
+						["provider"] = { "i", 206984 },	-- Blood-Soaked Book
+						["coords"] = {
+							{ 71, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						},
+					}),
 					q(77236, {	-- When Time Needs Mending
 						["provider"] = { "n", 204450 },	-- Soridormi
 						["coord"] = { 51.1, 57.1, THALDRASZUS },
@@ -375,6 +381,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							205308,	-- Fractured Causality / Varian Wrynn
 						},
 					}),
+					i(207083),	-- Gift of the Ravenous Black Gryphon
 					currency(PARACAUSAL_FLAKES),	-- rewarded from literally everything, don't need to list everywhere
 				}),
 				n(TREASURES, {
