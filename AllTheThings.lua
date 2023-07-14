@@ -2035,8 +2035,8 @@ end -- Quest Completion Lib
 -- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
 app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, checks)
 	local info = {
-		"**"..(infoText or "quest-info")..":"..id.."**",
-		"```",	-- discord fancy box start
+		"### "..(infoText or "quest-info")..":"..id,
+		"```elixir",	-- discord fancy box start
 	};
 	local coord;
 	local mapID = app.GetCurrentMapID();
@@ -2092,8 +2092,12 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, c
 
 	return info;
 end
+app.ShowQuestInfoDialog = function(questID)
+	local q = app.SearchForObject("questID",questID)
+	app.CheckInaccurateQuestInfo(q, "test-show", true)
+end
 -- Checks a given quest reference against the current character info to see if something is inaccurate
-app.CheckInaccurateQuestInfo = function(questRef, questChange)
+app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 	if questRef and questRef.questID then
 		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
@@ -2107,7 +2111,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed or app.IsInPartySync) and true;
 		-- not missing pre-requisites
 		local metPrereq = not questRef.missingReqs;
-		if not (
+		if forceShow or not (
 			filter
 			and inGame
 			and incomplete
