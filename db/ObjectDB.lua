@@ -3051,6 +3051,7 @@ _.ObjectNames = {
 	[402890] = "Hissing Rune Draft",
 	[402892] = "Ancient Research",
 	[403786] = "Antlered Skull",
+	[403919] = "Mechanized Cog",
 	[404242] = "Oil Soaked Book",
 	[404314] = "Chipped Stone Tabled",
 	[9000000] = "Wind Sculpted Stone",

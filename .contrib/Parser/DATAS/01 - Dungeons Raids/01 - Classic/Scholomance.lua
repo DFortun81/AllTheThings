@@ -4,7 +4,7 @@
 local SCHOLOMANCE_GROUPS = {};
 local KORMOK_LEGACY_DESCRIPTION = "This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.";
 local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 } }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_1 } }, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 		ach(18368, {	-- Memory of Scholomance
 			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
 			["questID"] = 76249,	-- Memory of Scholomance
@@ -28,7 +28,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["_npcs"] = { 10506 },
 			}),
 		})),
-		ach(645, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_1, REMOVED_5_0_4 } }, {	-- Scholomance
+		ach(645, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 } }, {	-- Scholomance
 			crit(548, {	-- Ras Frostwhisper
 				["_npcs"] = { 10508 },	-- Ras Frostwhisper
 			}),
@@ -1056,13 +1056,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 
 -- #if BEFORE 5.0.4
 -- Before MOP there was only one difficulty for Scholomance. Merge all the legacy data into the groups directly.
-for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA) do
+for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA.groups) do
 	table.insert(SCHOLOMANCE_GROUPS, o);
 end
 -- #else
 -- After MOP they revamped Scholomance and included a lot of extra stuff. They also created a Heroic Difficulty, so a Normal header is now necessary.
 local LEGACY_DUNGEON_GROUPS = {};
-for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA) do
+for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA.groups) do
 	table.insert(LEGACY_DUNGEON_GROUPS, o);
 end
 -- #if AFTER 10.1.5
@@ -1094,6 +1094,7 @@ table.insert(SCHOLOMANCE_GROUPS, n(createHeader({
 	["groups"] = LEGACY_DUNGEON_GROUPS,
 }));
 -- #endif
+
 table.insert(SCHOLOMANCE_GROUPS, d(NORMAL_DUNGEON, {
 	n(QUESTS, sharedData({["modID"] = 0},{
 		q(28756, {	-- Aberrations of Bone
