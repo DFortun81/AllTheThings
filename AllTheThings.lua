@@ -2084,7 +2084,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, c
 	tinsert(info, "cov:"..(covInfo or "N/A").." renown"..(app.TableConcat(majorFactionInfo)));
 	tinsert(info, "skills"..(app.TableConcat(skills) or ""));
 	tinsert(info, "sq:"..app.SourceQuestString(questRef or id));
-	tinsert(info, "lq:"..(app.LastQuestTurnedIn or ""));
+	tinsert(info, "lq:"..(app.TableConcat(app.LastQuestsTurnedIn, nil, nil, "<") or ""));
 	tinsert(info, mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??");
 	tinsert(info, coord and ("coord:"..coord) or "coord:??");
 	tinsert(info, "ver:"..app.Version);
@@ -7497,6 +7497,7 @@ local function LockedAsQuest(t)
 end
 app.LockedAsQuest = LockedAsQuest;
 
+local _reportedBadQuestSequence;
 local BackTraceChecks = {};
 -- Traces backwards in the sequence for 'questID' via parent relationships within 'parents' to see if 'checkQuestID' is reached and returns true if so
 local function BackTraceForSelf(parents, questID, checkQuestID)
@@ -7537,8 +7538,8 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 		else
 			-- maybe a better fix at some point? still possible to write really strange quest sequences that can trigger this
 			if currentDepth > 1000 then
-				if not app._reportedBadQuestSequence then
-					app._reportedBadQuestSequence = true;
+				if not _reportedBadQuestSequence then
+					_reportedBadQuestSequence = true;
 					app.report("Likely bad Quest chain sequence encountered @ 1000 depth for",questID);
 				end
 				return;
@@ -7647,7 +7648,7 @@ app.NestSourceQuestsV2 = function(questChainRoot, questID)
 	local sqs = questRef.sourceQuests or questChainRoot.sourceQuests;
 	if not sqs then return; end
 
-	app._reportedBadQuestSequence = nil;
+	_reportedBadQuestSequence = nil;
 	for _,sq in ipairs(sqs) do
 		-- Recurse against sourceQuests of sq
 		MapSourceQuestsRecursive(questID, sq, 1, depths, parents, refs, inFilters);
@@ -23643,6 +23644,15 @@ end
 app.events.QUEST_TURNED_IN = function(questID)
 	-- app.PrintDebug("QUEST_TURNED_IN")
 	app.LastQuestTurnedIn = questID;
+	if not app.LastQuestsTurnedIn then
+		app.LastQuestsTurnedIn = {questID}
+	else
+		tinsert(app.LastQuestsTurnedIn, 1, questID)
+		local l = #app.LastQuestsTurnedIn
+		if l > 5 then
+			app.LastQuestsTurnedIn[6] = nil;
+		end
+	end
 	app.RefreshQuestInfo(questID);
 end
 app.events.QUEST_LOG_UPDATE = function()
