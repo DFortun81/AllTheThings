@@ -381,7 +381,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							205308,	-- Fractured Causality / Varian Wrynn
 						},
 					}),
-					i(207083),	-- Gift of the Ravenous Black Gryphon
+					i(207083),	-- Gift of the Ravenous Black Gryphon (MOUNT!)
 					currency(PARACAUSAL_FLAKES),	-- rewarded from literally everything, don't need to list everywhere
 				}),
 				n(TREASURES, {
