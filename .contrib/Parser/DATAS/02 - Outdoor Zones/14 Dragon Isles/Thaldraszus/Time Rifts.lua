@@ -258,18 +258,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(QUESTS, {
 					-- ideally want the Object with coords with provider Item inside...
 					q(76548, {	-- A Fishy Gift
-						--TODO: ["provider"] = { "n",  },	--
-						["coord"] = { 57.1, 63.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						["provider"] = { "n", 207756 },	-- Murloc You
+						["coord"] = { 57.1, 63.2, 2199 },	-- Tyrhold Reservoir (Scenario Map) / follow player
 						["g"] = {
 							i(207008),	-- A Fish
-						}
+						},
 					}),
 					q(76379, {	-- A Murloc and a Dragon Walk into a Time Rift...
 						["provider"] = { "n", 206822 },	-- Alulgultasza de Urgl-Blalul <Queen of the... Murloc... Dragons>
 						["coord"] = { 49.4, 73.7, AZMERLOTH },
 						["g"] = {
 							i(206599),	-- Azmerlothian Hourglass
-						}
+						},
 					}),
 					q(76453, {	-- A Stony Reception
 						["provider"] = { "i", 206859 },	-- Chipped Stone Tabled
@@ -288,7 +288,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 77.5, 64.1, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						["g"] = {
 							i(206957),	-- Boffins
-						}
+						},
 					}),
 					q(76404, {	-- Cogs in a Machine
 						["provider"] = { "o", 403919 },	-- Mechanical Cog
@@ -331,7 +331,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 						["g"] = {
 							i(206638),	-- Azmourne's Corrupted Ashbringer
-						}
+						},
 					}),
 					q(76351, {	-- Titanic Beasts
 						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc
