@@ -95,7 +95,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(383660, {	-- Salt Crystal
-				["coord"] = { 11.0, 41.2, THE_AZURE_SPAN },
+				["description"] = "In a cave.",
+				["coord"] = { 11.6, 41.0, THE_AZURE_SPAN },
 				["g"] = {
 					i(201033),	-- Magical Salt Crystal
 				},

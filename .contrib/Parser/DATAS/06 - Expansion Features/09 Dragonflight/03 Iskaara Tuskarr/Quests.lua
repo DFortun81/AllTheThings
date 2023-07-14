@@ -599,6 +599,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}, {	-- RENOWN 29 --
 				q(70977, {	-- Scaps Packs
 					["provider"] = { "n", 187680 },	-- Scaps
+					["sourceQuests"] = { 66223 },	-- Can We Keep It?
 					["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
 					["g"] = {
 						i(198337),	-- Azure Paw Pack

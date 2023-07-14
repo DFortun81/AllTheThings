@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(193188, {	-- Seeker Teryx
-				["coord"] = { 61.0, 13.6, OHNAHRAN_PLAINS },
+				["coord"] = { 61.9, 13.0, OHNAHRAN_PLAINS },
 				["questID"] = 73894,
 				["g"] = {
 					i(200875),	-- Seeker's Bands
