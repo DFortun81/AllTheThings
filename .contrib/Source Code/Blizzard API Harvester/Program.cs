@@ -345,6 +345,9 @@ namespace ATT
             if (json == null)
                 return;
 
+            // grab the raw type from the internal href link for parsing
+            json["_rawtype"] = CheckRawType(json);
+
             // remove keys which we don't care about in raw data
             CleanJsonData(json);
 
@@ -443,30 +446,6 @@ namespace ATT
             }
         }
 
-        private static int ScanExistingData(int expectedMax)
-        {
-            string rawDataPath = string.Format(RawDirectoryFormat, "DATA");
-            if (!File.Exists(rawDataPath))
-                return expectedMax;
-
-            var contents = File.ReadAllText(string.Format(RawDirectoryFormat, "DATA"));
-            string[] individualDatas = contents.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
-            long minIdFound = expectedMax;
-            foreach (string data in individualDatas)
-            {
-                if (MiniJSON.Json.Deserialize(data) is IDictionary<string, object> json)
-                {
-                    if (json.TryGetValue("id", out object idObj) && idObj is long id)
-                    {
-                        minIdFound = Math.Min(minIdFound, id);
-                    }
-                }
-            }
-
-            Console.WriteLine($"Already captured through: {minIdFound}. Adjusting new start ID");
-            return (int)(minIdFound - 1);
-        }
-
         static void HarvestQuests()
         {
             MaxQuestID = ScanExistingData(MaxQuestID);
@@ -491,7 +470,31 @@ namespace ATT
             }
         }
 
-        static HttpClient InitClient()
+        private static int ScanExistingData(int expectedMax)
+        {
+            string rawDataPath = string.Format(RawDirectoryFormat, "DATA");
+            if (!File.Exists(rawDataPath))
+                return expectedMax;
+
+            var contents = File.ReadAllText(string.Format(RawDirectoryFormat, "DATA"));
+            string[] individualDatas = contents.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            long minIdFound = expectedMax;
+            foreach (string data in individualDatas)
+            {
+                if (MiniJSON.Json.Deserialize(data) is IDictionary<string, object> json)
+                {
+                    if (json.TryGetValue("id", out object idObj) && idObj is long id)
+                    {
+                        minIdFound = Math.Min(minIdFound, id);
+                    }
+                }
+            }
+
+            Console.WriteLine($"Already captured through: {minIdFound}. Adjusting new start ID");
+            return (int)(minIdFound - 1);
+        }
+
+        private static HttpClient InitClient()
         {
             while (!File.Exists("API.key"))
             {
@@ -805,7 +808,10 @@ namespace ATT
         {
             var dict = new Dictionary<string, object>();
             // add the type for this data
-            string objType = CheckRawType(subData);
+            if (!subData.TryGetValue("_rawtype", out string objType))
+            {
+                objType = CheckRawType(subData);
+            }
             if (subData.TryGetValue("name", out object o)) dict["name"] = o;
             if (subData.TryGetValue("id", out o)) dict[objType + "ID"] = o;
 
@@ -1386,9 +1392,9 @@ namespace ATT
         /// </summary>
         /// <param name="subData"></param>
         /// <returns></returns>
-        private static string CheckRawType(Dictionary<string, object> subData)
+        private static string CheckRawType(IDictionary<string, object> subData)
         {
-            if (subData.TryGetValue("_links", out Dictionary<string, object> links))
+            if (subData is Dictionary<string, object> subDataDict && subDataDict.TryGetValue("_links", out Dictionary<string, object> links))
             {
                 if (links.TryGetValue("self", out Dictionary<string, object> self))
                 {
