@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["_quests"] = { 76547 },	-- All That Glitters..
 						}),
 						crit(14, {	-- A Fish
-							-- ["_quests"] = {  },	--
+							["_quests"] = { 76548 },	-- A Fishy Gift
 						}),
 					}),
 					ach(18641),	-- To All The Squirrels I've BEEN Before
@@ -257,6 +257,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(QUESTS, {
 					-- ideally want the Object with coords with provider Item inside...
+					q(76548, {	-- A Fishy Gift
+						--TODO: ["provider"] = { "n",  },	--
+						["coord"] = { 57.1, 63.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						["g"] = {
+							i(207008),	-- A Fish
+						}
+					}),
 					q(76379, {	-- A Murloc and a Dragon Walk into a Time Rift...
 						["provider"] = { "n", 206822 },	-- Alulgultasza de Urgl-Blalul <Queen of the... Murloc... Dragons>
 						["coord"] = { 49.4, 73.7, AZMERLOTH },

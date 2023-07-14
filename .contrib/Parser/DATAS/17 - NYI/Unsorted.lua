@@ -630,7 +630,6 @@ root(ROOTS.Unsorted, {
 			i(206165),	-- Major Resonating Vestigial
 			i(206166),	-- Strong Resonating Vestigial
 			i(206962),	-- Watcher's Log
-			i(207008),	-- A Fish
 			i(207011),	-- Warblades of the Hakkari, Reborn
 			i(207029),	-- Scarlet Zealot's Heater Shield
 			i(207031),	-- Bomb Lobber
