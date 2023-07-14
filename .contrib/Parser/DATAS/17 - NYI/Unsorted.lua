@@ -313,13 +313,6 @@ root(ROOTS.Unsorted, {
 				i(206643),	-- Desecrated Plate Leggings
 				i(206644),	-- Desecrated Plate Boots
 			}),
-			header(HEADERS.LFGDungeon, 1, {	-- Wailing Caverns
-				i(208016),	-- Deviate Scale Pouch
-				i(208018),	-- Fangblade
-				i(208019),	-- Quagmire Trudgers
-				i(208020),	-- Dagmire Gloves
-				i(208021),	-- Sizzling Stick
-			}),
 			header(HEADERS.LFGDungeon, 2430, {	-- Dawn of the Infinite
 				i(207818),	-- Mega Dungeon Bronze Plate Greaves
 				i(207825),	-- Mega Dungeon Infinite Cloth Slippers
