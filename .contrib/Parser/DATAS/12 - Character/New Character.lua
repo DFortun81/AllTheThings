@@ -1525,6 +1525,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_1
 	}),
 })));
 
+root(ROOTS.HiddenQuestTriggers, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+	q(76444),	-- After completion of quest 75544 (When Revenge Burns Green)
+	q(77285),	-- After completion of quest 75544 (When Revenge Burns Green)
+})));
+
 root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		n(NEW_CHARACTER, {
