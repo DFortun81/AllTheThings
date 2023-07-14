@@ -646,7 +646,6 @@ root(ROOTS.Unsorted, {
 			i(207594),	-- Looter's Purse
 			i(207956),	-- Thunderspine Nest
 			i(208006),	-- Greater Paracausal Chest
-			i(208028),	-- Knot Thimblejack's Cache
 			i(208029),	-- Scareloc Parts
 			i(208031),	-- Convenient Crate
 			i(206161),	-- Time-Displaced Toy

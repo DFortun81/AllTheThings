@@ -798,7 +798,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				}),
 				q(5518, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
-					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { 235 },	-- Gordok Commons
 					["cost"] = {
 						{ "i", 14048, 4 },	-- Bolt of Runecloth
@@ -1308,6 +1308,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				-- #endif
 				["groups"] = {
 					-- #if BEFORE 4.0.3
+					-- #if AFTER 10.1.5
 					n(ZONE_DROPS, {
 						i(18250, {	-- Gordok Shackle Key
 							["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
@@ -1326,6 +1327,27 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						}),
 					}),
 					-- #endif
+					-- #endif
+					n(QUESTS, {
+						q(77194, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Free Knot!
+							["qg"] = 14338,	-- Knot Thimblejack
+							["maps"] = { 235 },	-- Gordok Commons
+							["cost"] = {
+								{ "i", 18250, 1 },	-- Gordok Shackle Key
+							},
+							["repeatable"] = true,
+							["groups"] = {
+								i(208028, {	-- Knot Thimblejack's Cache
+									i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
+									i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
+									i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
+									i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
+									i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
+									i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
+								}),
+							},
+						})),
+					}),
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "The following items can drop from any of the guards.",
 						["crs"] = {
@@ -1423,13 +1445,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						-- #endif
 					}),
 					o(179501, -- Knot Thimblejack's Cache
-						bubbleDown({ ["timeline"] = { "removed 4.0.3", "added 10.1.5" } }, {
+						bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 						["sourceQuest"] = 5525,	-- Free Knot!
 						-- #if BEFORE 4.0.3
 						["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 						-- #endif
 						["groups"] = {
-							-- #if BEFORE 4.0.3
 							i(18240),	-- Ogre Tannin
 							i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
 							i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
@@ -1442,15 +1463,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							i(18417),	-- Pattern: Mooncloth Gloves (RECIPE!)
 							i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
 							i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
-							-- #endif
-							i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
-							i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
-							i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
-							i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
-							i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
-							i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
-							i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
 							-- These were added during 8.1.5 to the Time-Lost Trader (BFA Tailor Questline)
+							--i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
 							--i(18418),	-- Pattern: Cloak of Warding (RECIPE!)
 							--i(18415),	-- Pattern: Felcloth Gloves (RECIPE!)
 							--i(18416),	-- Pattern: Inferno Gloves (RECIPE!)

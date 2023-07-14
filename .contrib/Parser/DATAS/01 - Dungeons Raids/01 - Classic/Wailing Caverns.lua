@@ -269,7 +269,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(132743, {	-- Slither-Scale Gauntlets
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(208015, bubbleDown({ ["timeline"] = { "added 10.1.5.50438" } }, {	-- Stuffed Deviate Scale Pouch
+					i(208015, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Stuffed Deviate Scale Pouch
 						i(208016),	-- Deviate Scale Pouch
 						i(208020),	-- Dagmire Gloves
 						i(208018),	-- Fangblade
