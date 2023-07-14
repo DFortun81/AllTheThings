@@ -3129,6 +3129,7 @@ _.ObjectNames = {
 	[403786] = "Antlered Skull",
 	[404314] = "Chipped Stone Tabled",
 	[404242] = "Oil Soaked Book",
+	[404432] = "Bload Soaked Book",
 	[9000000] = "Wind Sculpted Stone",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",

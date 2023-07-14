@@ -284,8 +284,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}
 					}),
 					q(76404, {	-- Cogs in a Machine
-						["provider"] = { "i", 206602 },	-- Mechanical Cog
-						["coord"] = { 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
+						["provider"] = { "o", 403919 },	-- Mechanical Cog
+						["coords"] = {
+							{ 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
+							{ 58.1, 63.9, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+							{ 38.1, 52.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						},
+						["g"] = {
+							i(206602),	-- Mechanized Cog
+						},
 					}),
 					q(76533, {	-- Dangerous Documentation
 						["provider"] = { "n", 207252 },	-- Watcher's Log
@@ -327,9 +334,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					q(76544, {	-- Wasteland Warriors
-						["provider"] = { "i", 206984 },	-- Blood-Soaked Book
-						["coords"] = {
-							{ 71, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						["provider"] = { "o", 404432 },	-- Bload Soaked Book
+						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						["g"] = {
+							i(206984),	-- Blood-Soaked Book
 						},
 					}),
 					q(77236, {	-- When Time Needs Mending
@@ -391,15 +399,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(206998),	-- Amber Sword
 						--	},
 						--}),
-						o(403919,{	-- Mechanized Cog
-						 	["coords"] = {
-								{ 58.1, 63.9, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-								{ 38.1, 52.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-							},
-						 	["g"] = {
-								i(206602),	-- Mechanized Cog
-							},
-						}),
 				}),
 				n(VENDORS, {
 					n(208338, {	-- Baron Silver <Azmourne Vendor>
