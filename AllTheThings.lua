@@ -14112,7 +14112,7 @@ end
 local function SetGroupVisibility(parent, group)
 	local forceShowParent;
 	-- Set visible initially based on the global 'default' visibility, or whether the group should inherently be shown
-	local visible = DefaultGroupVisibility or GroupVisibilityFilter(group);
+	local visible = DefaultGroupVisibility;
 	-- Need to check all possible reasons a group could be visible, from simplest to more complex
 	-- Force show
 	if not visible and group.forceShow then
@@ -14123,7 +14123,7 @@ local function SetGroupVisibility(parent, group)
 	end
 	-- Total
 	if not visible and group.total > 0 then
-		visible = group.progress < group.total;
+		visible = group.progress < group.total or GroupVisibilityFilter(group);
 	end
 	-- Cost
 	if not visible and (group.costNested or (group.costTotal or 0) > 0) then
@@ -14152,7 +14152,7 @@ local function SetGroupVisibility(parent, group)
 end
 local function SetThingVisibility(parent, group)
 	local forceShowParent;
-	local visible = DefaultThingVisibility or ThingVisibilityFilter(group);
+	local visible = DefaultThingVisibility;
 	-- Need to check all possible reasons a group could be visible, from simplest to more complex
 	-- Force show
 	if not visible and group.forceShow then
@@ -14163,7 +14163,7 @@ local function SetThingVisibility(parent, group)
 	end
 	-- Total
 	if not visible and group.total > 0 then
-		visible = group.progress < group.total;
+		visible = group.progress < group.total or ThingVisibilityFilter(group);
 	end
 	-- Cost
 	if not visible and (group.costNested or (group.costTotal or 0) > 0) then
