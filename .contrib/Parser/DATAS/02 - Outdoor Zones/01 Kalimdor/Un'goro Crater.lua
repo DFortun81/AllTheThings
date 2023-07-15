@@ -1830,7 +1830,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(199092, {	-- Inert Phoenix Ash
 					["timeline"] = { ADDED_10_0_7 },
-					["cr"] = 6520,	-- Scorching Elemental
+					["crs"] = {
+						6521,	-- Living Blaze
+						6520,	-- Scorching Elemental
+					},
 					["coords"] = {
 						{ 52.8, 42.4, UNGORO_CRATER },
 						{ 46.0, 46.6, UNGORO_CRATER },

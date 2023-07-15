@@ -445,6 +445,25 @@ root(ROOTS.Zones, {
 						currency(824),	-- Garrison Resources
 					},
 				}),
+				o(380963, {	-- Small Pile of Ash
+					["timeline"] = { ADDED_10_0_7 },
+					["description"] = "Some North locations are phased until completing 'Orders From On High' [34658]",
+					["sourceQuest"] = 34658,	-- Orders From On High
+					["coords"] = {
+						{ 37.9, 17.9, SPIRES_OF_ARAK },
+						{ 42.1, 15.8, SPIRES_OF_ARAK },
+						{ 44.0, 13.7, SPIRES_OF_ARAK },
+						{ 44.5, 23.4, SPIRES_OF_ARAK },
+						{ 45.1, 15.0, SPIRES_OF_ARAK },
+						{ 52.0, 31.3, SPIRES_OF_ARAK },
+						{ 52.2, 49.9, SPIRES_OF_ARAK },
+						{ 61.9, 42.3, SPIRES_OF_ARAK },
+						{ 68.7, 44.6, SPIRES_OF_ARAK },
+					},
+					["g"] = {
+						i(199097),	-- Sacred Phoenix Ash
+					},
+				}),
 				o(235135, {	-- Smuggled Apexis Artifacts
 					["questID"] = 36433,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",

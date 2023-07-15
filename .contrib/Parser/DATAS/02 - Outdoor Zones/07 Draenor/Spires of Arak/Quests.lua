@@ -924,7 +924,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = {
 						35011,	-- The False Talon King
 						35003,	-- Ritual Severance
-						35004,	-- Servants of a Dead God
+						-- 35004,	-- Servants of a Dead God [Not required 2023.07.14]
 					},
 					["coord"] = { 64.1, 37.0, SPIRES_OF_ARAK },
 					["provider"] = { "n", 86355 },	-- Anzu

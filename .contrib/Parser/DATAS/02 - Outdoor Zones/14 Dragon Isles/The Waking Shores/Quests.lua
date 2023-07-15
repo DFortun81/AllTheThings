@@ -1419,6 +1419,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(70773),	-- triggers when 'Tale of the Slumbering' completes (spellID 388147)
 		q(70778),	-- triggers when 'Tale of the Weakling' becomes available for Tarjin the Blind
 		q(70777),	-- triggers when 'Tale of the Weakling' completes (spellID 388149)
+		q(72804),	-- Flag Weekly Tracking Quest [DNT] (spellID 397184) [triggers when 'Tale of the Phoenix' completes]
 		q(70218),	-- Dialogue before you can pick up the quest "A Dragon's Day Off"
 
 		-- TODO: how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?

@@ -1327,7 +1327,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					n(QUESTS, {
 						q(77194, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Free Knot!
 							["qg"] = 14338,	-- Knot Thimblejack
-							["maps"] = { 235 },	-- Gordok Commons
 							["cost"] = {
 								{ "i", 18250, 1 },	-- Gordok Shackle Key
 							},

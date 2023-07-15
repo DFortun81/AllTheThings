@@ -1238,7 +1238,6 @@ root(ROOTS.Unsorted, {
 				q(72774),	--
 				q(72775),	--
 				q(72780),	--
-				q(72804),	-- Flag Weekly Tracking Quest [DNT] (spellID 397184)
 				-- 10.0.2.46420
 				q(72817),	-- Dragonflight (70) E
 				q(72819),	-- Shadowlands (60) E

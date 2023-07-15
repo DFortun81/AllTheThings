@@ -2798,6 +2798,7 @@ _.ObjectNames = {
 	[380867] = "Amber Gem Cluster",
 	[380902] = "Fields of Ferocity",
 	[380918] = "Broken Ornamented Statue",
+	[380963] = "Small Pile of Ash",
 	[380991] = "Dirt Mound",
 	[381035] = "The Great Vault",
 	[381045] = "Golden Dragon Goblet",
