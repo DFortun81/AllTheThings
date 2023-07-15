@@ -182,6 +182,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(206695),	-- Pale Duskblossom
 					},
 				}),
+				q(75971, {	-- Squeaky Toy of Time and Space
+					["provider"] = { "n", 205769 },	-- Soridormi
+					["coord"] = { 52.1, 81.6, THALDRASZUS },
+					["g"] = {
+						i(206161),	-- Time-Displaced Toy
+					},
+				}),
 				q(75989, {	-- The Black Prince Parade
 					["provider"] = { "n", 203769 },	-- Bartender Bob
 					["coord"] = { 52.1, 81.5, THALDRASZUS },
