@@ -72,7 +72,7 @@
 .pkgmeta export-ignore
 .pre-commit-config.yaml export-ignore
 _config.yml export-ignore
-setup.cfg
+setup.cfg export-ignore
 contrib export-ignore
 .contrib export-ignore
-.github
+.github export-ignore
