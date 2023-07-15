@@ -650,10 +650,6 @@ root(ROOTS.Unsorted, {
 			i(207956),	-- Thunderspine Nest
 			i(208006),	-- Greater Paracausal Chest
 			i(208029),	-- Scareloc Parts
-			i(207016),	-- Rift-Mender's Tabard
-			i(207017),	-- Rift-Mender's Cape
-			i(207018),	-- Rift-Mender's Spaulders
-			i(207020),	-- Ensemble: Rift-Mender's Vestments
 			i(207984),	-- Chroniton Wand
 			i(208001),	-- Timewalker's Cudgel
 			i(208068),	-- Rotten Delicious

@@ -244,12 +244,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								title(513),	-- <Name> Unparalleled
 							})),
 							-- q(77179)?? HTQ trigger?
-							q(77241, {	--
+							q(77241, {	-- A Foreseeable Friendship
 								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 68.1, 35.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+								["coord"] = { 51.0, 57.0, THALDRASZUS },
 								["minReputation"] = { FACTION_SORIDORMI, 2 },
 								["g"] = {
 									i(208058),	-- Minute Glass (TOY!)
+								},
+							}),
+							q(77248, {	-- A Recognition of Skill
+								["provider"] = { "n", 204450 },	-- Soridormi
+								["coord"] = { 51.0, 57.0, THALDRASZUS },
+								["minReputation"] = { FACTION_SORIDORMI, 3 },
+								["g"] = {
+									i(207020, {	-- Ensemble: Rift-Mender's Vestments
+										["questID"] = 76581,
+										["g"] = {
+											i(207017),	-- Rift-Mender's Cape
+											i(207018),	-- Rift-Mender's Spaulders
+											i(207016),	-- Rift-Mender's Tabard
+										},
+									}),
 								},
 							}),
 						},
@@ -1170,5 +1185,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(76644),	-- after buying/loot 'Warmonger's Robe' (itemID 206808) (spellID 418849)
 	q(76640),	-- after buying/loot 'Warmonger's Skullcap' (itemID 206816) (spellID 418848)
 
-	q(76707),	-- Upon getting either 'Ensemble: Haukbert of Discipline' or 'Dilated Time Capsule'
+	q(76705),	-- after buying/loot Ensemble: Decorous Garments (itemID 207049) (spellID 418947)
+	q(76707),	-- after buying/loot Ensemble: Haukbert of Discipline (itemID 207047) (spellID 418946)
+	q(76706),	-- after buying/loot Ensemble: Lifegiver's Garms (itemID 207048) (spellID 418945)
+	q(76708),	-- after buying/loot Ensemble: Valhalas Ceremonial Armor (itemID 207046) (spellID 418944)
 }));
