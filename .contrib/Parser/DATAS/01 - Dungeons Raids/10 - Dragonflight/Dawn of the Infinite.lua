@@ -65,7 +65,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(208415),	-- Stasis Sand (TOY!)
 					},
 				}),
-				q(76146, {	-- Rewind and Reconcile
+				q(76147, {	-- Rewind and Reconcile
 					["provider"] = { "i", 206145 },	-- Mysterious Time Relic
 					--["coord"] = { ??, ??, 2194 }, -- No coords since it dungeon
 					["g"] = {
