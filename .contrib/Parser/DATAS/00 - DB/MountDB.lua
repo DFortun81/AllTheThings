@@ -1644,6 +1644,7 @@ i(206680, 414334);	-- Scourgebound Vanquisher
 i(206678, 414327);	-- Sulfur Hound
 i(206673, 414316);	-- White War Wolf
 i(207083, 414323);	-- Ravenous Black Gryphon
+i(0, 302362);		-- Armored Siege Kodo
 -- Probably to borrow for Races in Kalimdor
 i(0, 417554);		-- Cliffside Wylderdrake
 i(0, 413409);		-- Highland Drake

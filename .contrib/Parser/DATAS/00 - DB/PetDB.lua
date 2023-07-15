@@ -3040,6 +3040,7 @@ i(205162, 3553);	-- Nelthara
 i(208011, 4261);	-- Obsidian Warwhelp
 i(208138, 4262);	-- N'Ruby
 i(0, 4263);			-- Tobias [Maybe Get itemID later??]
+i(0, 3253);			-- Crushhoof
 -- TRAINER --
 i(0, 3587);			-- Lifelike Mechanical Duckling
 -- Whelptender?
