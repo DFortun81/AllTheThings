@@ -1584,8 +1584,8 @@ namespace ATT
                 data["collectible"] = false;
             }
 
-            // If not processing the Main Achievement Category, then any encountered Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
-            if (!ProcessingAchievementCategory && !data.ContainsKey("criteriaID"))
+            // If not processing the Main Achievement Category, then any encountered non-guild Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
+            if (!ProcessingAchievementCategory && !isGuild && !data.ContainsKey("criteriaID"))
             {
                 if (achInfo.TryGetValue("parentCategoryID", out long achCatID))
                 {
