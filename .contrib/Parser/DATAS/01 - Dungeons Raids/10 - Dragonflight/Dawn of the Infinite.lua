@@ -65,6 +65,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(208415),	-- Stasis Sand (TOY!)
 					},
 				}),
+				q(76146, {	-- Rewind and Reconcile
+					["provider"] = { "i", 206145 },	-- Mysterious Time Relic
+					--["coord"] = { ??, ??, 2194 }, -- No coords since it dungeon
+					["g"] = {
+						i(208390),	-- Bronze Archive Stone
+					},
+				}),
 			}),
 			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
@@ -271,7 +278,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				 	["crs"] = { 199000 },	--
 				 	["g"] = {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
-				 		i(208102),	-- Cliffside Wylderdrake: Infinite Scales (DM!)
+						i(206145),	-- Mysterious Time Relic (QI!)
+						i(208102),	-- Cliffside Wylderdrake: Infinite Scales (DM!)
 				 		i(208103),	-- Highland Drake: Infinite Scales (DM!)
 				 		i(208104),	-- Renewed Proto-Drake: Infinite Scales (DM!)
 				 		i(208105),	-- Windborne Velocidrake: Infinite Scales (DM!)

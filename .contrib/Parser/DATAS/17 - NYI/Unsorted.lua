@@ -678,7 +678,6 @@ root(ROOTS.Unsorted, {
 			i(206681),	-- Letter from Oman
 			i(208226),	-- Mysterious Letter
 			i(208227),	-- Mysterious Letter
-			i(208390),	-- Bronze Archive Stone
 			i(208400),	-- Silks of the Unnamed Cult
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
 			i(208448),	-- Infinitea
@@ -690,7 +689,6 @@ root(ROOTS.Unsorted, {
 			i(206167),	-- Way of the Wonderous Wavewhisker
 			i(206174),	-- Blub
 			--
-			i(206145),	-- Mysterious Time Relic
 			i(190636),	-- Armored Siege Kodo
 			i(190608),	-- Crushhoof
 		})),
