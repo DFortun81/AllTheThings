@@ -462,9 +462,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				},
 			}),
 			i(7946),	-- Runed Mithril Hammer
+			i(207560, {["timeline"] = {ADDED_10_1_5 }}),	-- Sacred Guardian
 			i(12260),	-- Searing Golden Blade
 			i(203804, {["timeline"] = {ADDED_10_0_7 }}),	-- Sceptre of Hexing
-			i(207560, {["timeline"] = {ADDED_10_1_5 }}),	-- Sacred Guardian
 			i(3856),	-- Shadow Crescent Axe
 			i(3851),	-- Solid Iron Maul
 			i(17193),	-- Sulfuron Hammer
@@ -796,6 +796,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(38885),	-- Enchant Gloves - Threat
 			-- #endif
 		}))),
+		-- #if AFTER 10.1.5
+		filter(HELD_IN_OFF_HAND, {
+			i(207557, {["timeline"] = {ADDED_10_1_5 }}),	-- Magebane Nexus
+		}),
+		-- #endif
 		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
 			i(138787, {	-- Tome of Illusions: Azeroth
 				ill(803),	-- Fiery Weapon
@@ -803,9 +808,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				ill(5863),	-- Coldlight
 			}),
 		}))),
-		filter(HELD_IN_OFF_HAND, 
-			i(207557, {["timeline"] = {ADDED_10_1_5 }}),	-- Magebane Nexus
-		}),
 		applyclassicphase(PHASE_FIVE, cat(699, {	-- Oils
 			i(20748, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil / 10.0.7: Expired Mana Oil
 			i(20749, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
@@ -1116,6 +1118,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(4379),	-- Silver-Plated Shotgun
 			i(15995),	-- Thorium Rifle
 		}),
+		-- #if AFTER 10.1.5
+		n(ONE_HANDED_MACES, {
+			i(207562, {["timeline"] = {ADDED_10_1_5 }}),	-- Skullstone Bludgeon
+		}),
+		-- #endif
 		category(183, {	-- Parts
 			i(4382),	-- Bronze Framework
 			i(4371),	-- Bronze Tube
@@ -1154,9 +1161,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		category(191, {	-- Tools
 			i(6219),	-- Arclight Spanner
 			i(10498),	-- Gyromatic Micro-Adjustor
-		}),
-		n(WEAPONS, {
-			i(207562, {["timeline"] = {ADDED_10_1_5 }}),	-- Skullstone Bludgeon
 		}),
 	}),
 	prof(FIRST_AID, {
@@ -1594,12 +1598,14 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(43656),	-- Tome of Kings
 			i(43654),	-- Tome of the Dawn
 		}),
+		-- #if AFTER 10.0.7
 		filter(STAVES, {
 			i(203815, {["timeline"]={ADDED_10_0_7}}),	-- Gurubashi Ceremonial Staff
 			i(203795, {["timeline"]={ADDED_10_0_7}}),	-- Judgment of the Gurubashi
 			i(206481, {["timeline"] = {ADDED_10_1_5 }}),	-- Shifting Sliver
 			i(207563, {["timeline"] = {ADDED_10_1_5 }}),	-- Wanderer's Guide
 		}),
+		-- #endif
 	}),
 	-- #endif
 	-- #if AFTER TBC
@@ -2186,10 +2192,10 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15071),	-- Frostsaber Boots
 				-- #endif
 				i(2302),	-- Handstitched Leather Boots
+				i(206514, {["timeline"] = {ADDED_10_1_5 }}),	-- Lucien's Lost Soles
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18506, {	-- Mongoose Boots
 					["timeline"] = { "removed 4.0.3" },
 				})),
-				i(206514, {["timeline"] = {ADDED_10_1_5 }}),	-- Lucien's Lost Soles
 				i(8197),	-- Nightscape Boots
 				i(7391),	-- Swift Boots
 				i(8213, {	-- Wild Leather Boots

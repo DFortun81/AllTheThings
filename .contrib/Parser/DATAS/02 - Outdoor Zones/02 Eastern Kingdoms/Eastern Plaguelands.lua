@@ -3519,22 +3519,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 						}),
 
-						-- 10.1.5 Naxx Items
-						i(206584, {	-- Archived Crafting Techniques
-							["timeline"] = { "added 10.1.5" },
+						-- 10.1.5 Scholomance Items
+						i(206584, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Archived Crafting Techniques
 							--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 							["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
 							["groups"] = {
-								i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
-								i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
+								i(207569),	-- Ancient Formula: Magebane Nexus (RECIPE!)
+								i(207570),	-- Ancient Formula: Smoked Fireshooter (RECIPE!)
+								i(207571),	-- Ancient Formula: Stormwatcher (RECIPE!)
 								i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
 								i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
-								i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
-								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
+								i(207577),	-- Ancient Pattern: Sanctified Leather Hat (RECIPE!)
 								i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
+								i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
+								i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
+								i(207573),	-- Ancient Plans: Ichor Slicer (RECIPE!)
+								i(207567),	-- Ancient Plans: Intrepid Shortblade (RECIPE!)
+								i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
+								i(207572),	-- Ancient Plans: Sacred Guardian (RECIPE!)
+								i(207568),	-- Ancient Plans: Valiant Shortblade (RECIPE!)
 								i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
+								i(207576),	-- Ancient Schematic: Refurbished Purifier (RECIPE!)
+								i(207574),	-- Ancient Schematic: Skullstone Bludgeon (RECIPE!)
+								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
+								i(207575),	-- Ancient Technique: Wanderer's Guide (RECIPE!)
 							},
-						}),
+						})),
 					},
 				}),
 			}),

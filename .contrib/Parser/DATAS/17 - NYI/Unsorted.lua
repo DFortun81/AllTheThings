@@ -500,18 +500,14 @@ root(ROOTS.Unsorted, {
 					i(206537),	-- Ancient Plans: Edict of the Redeemed Crusader (RECIPE!)
 					i(206555),	-- Ancient Plans: Gauntlets of the Unrelenting (RECIPE!)
 					i(206550),	-- Ancient Plans: Harbinger of Death (RECIPE!)
-					i(207573),	-- Ancient Plans: Ichor Slicer (RECIPE!)
-					i(207567),	-- Ancient Plans: Intrepid Shortblade (RECIPE!)
 					i(206533),	-- Ancient Plans: Midnight's Graze (RECIPE!)
 					i(206545),	-- Ancient Plans: Plated Construct's Ribcage (RECIPE!)
-					i(207572),	-- Ancient Plans: Sacred Guardian (RECIPE!)
 					i(206536),	-- Ancient Plans: Shade's Blade (RECIPE!)
 					i(206531),	-- Ancient Plans: Strength of Menethil (RECIPE!)
 					i(206560),	-- Ancient Plans: Stygian Shield (RECIPE!)
 					i(206541),	-- Ancient Plans: The Plague Belcher (RECIPE!)
 					i(206544),	-- Ancient Plans: The Final Dream (RECIPE!)
 					i(206549),	-- Ancient Plans: The Face of Doom (RECIPE!)
-					i(207568),	-- Ancient Plans: Valiant Shortblade (RECIPE!)
 					i(206534),	-- Ancient Plans: Weaver's Fang (RECIPE!)
 					i(206535),	-- Ancient Plans: Widow's Weep (RECIPE!)
 					i(206419),	-- Plans: Icebane Coif (RECIPE!)
@@ -526,8 +522,6 @@ root(ROOTS.Unsorted, {
 					i(206492),	-- Blade of Unholy Might
 					i(206499),	-- Blade of the Fallen Seraph
 					i(206495),	-- Bracers of Vengeance
-					i(206478),	-- Darrowdirk
-					i(206479),	-- Darrowshire Protector
 					i(206506),	-- Dawn of Demise
 					i(206510),	-- Death's Gamble
 					i(206490),	-- Edict of the Redeemed Crusader
@@ -539,12 +533,8 @@ root(ROOTS.Unsorted, {
 					i(206444),	-- Icebane Coif
 					i(206445),	-- Icebane Waistguard
 					i(206446),	-- Icebane Trudgers
-					i(207561),	-- Ichor Slicer
-					i(207555),	-- Intrepid Shortblade
 					i(206486),	-- Midnight's Graze
-					i(206480),	-- Mirah's Lullaby
 					i(206498),	-- Plated Construct's Ribcage
-					i(207560),	-- Sacred Guardian
 					i(206489),	-- Shade's Blade
 					i(206484),	-- Strength of Menethil
 					i(206513),	-- Stygian Shield
@@ -552,8 +542,6 @@ root(ROOTS.Unsorted, {
 					i(206497),	-- The Final Dream
 					i(206502),	-- The Face of Doom
 					i(206648),	-- Undeath Metal
-					i(207556),	-- Valiant Shortblade
-					i(206477),	-- Warsword of Caer Darrow
 					i(206487),	-- Weaver's Fang
 					i(206488),	-- Widow's Weep
 				}),
@@ -576,36 +564,19 @@ root(ROOTS.Unsorted, {
 					i(206191),	-- Roquefort-Stuffed Peppers
 					i(206190),	-- Venrik's Goat Milk
 				}),
-				prof(ENCHANTING, {
-					-- RECIPES --
-					i(207569),	-- Ancient Formula: Magebane Nexus (RECIPE!)
-					i(207570),	-- Ancient Formula: Smoked Fireshooter (RECIPE!)
-					i(207571),	-- Ancient Formula: Stormwatcher (RECIPE!)
-					-- CRAFTED --
-					i(207557),	-- Magebane Nexus
-					i(207558),	-- Smoked Fireshooter
-					i(207559),	-- Stormwatcher
-				}),
 				prof(ENGINEERING, {
 					-- RECIPES --
-					i(207576),	-- Ancient Schematic: Refurbished Purifier (RECIPE!)
 					i(206559),	-- Ancient Schematic: Replaced Servo Arm (RECIPE!)
-					i(207574),	-- Ancient Schematic: Skullstone Bludgeon (RECIPE!)
 					-- CRAFTED --
-					i(207564),	-- Refurbished Purifier
 					i(206512),	-- Replaced Servo Arm
-					i(207562),	-- Skullstone Bludgeon
 				}),
 				prof(INSCRIPTION, {
 					-- RECIPES --
 					i(206548),	-- Ancient Technique: Encased Frigid Heart (RECIPE!)
 					i(206532),	-- Ancient Technique: Soulscryer (RECIPE!)
-					i(207575),	-- Ancient Technique: Wanderer's Guide (RECIPE!)
 					-- CRAFTED --
 					i(206501),	-- Encased Frigid Heart
-					i(206481),	-- Shifting Sliver
 					i(206485),	-- Soulscryer
-					i(207563),	-- Wanderer's Guide
 				}),
 				prof(JEWELCRAFTING, {
 					-- RECIPES --
@@ -634,27 +605,22 @@ root(ROOTS.Unsorted, {
 					i(206403),	-- Pattern: Polar Helm (RECIPE!)
 					i(206409),	-- Pattern: Polar Leggings (RECIPE!)
 					i(206404),	-- Pattern: Polar Spaulders (RECIPE!)
-					i(207577),	-- Ancient Pattern: Sanctified Leather Hat (RECIPE!)
 					i(206773),	-- Pattern: Scourged Scales (RECIPE!)
 					-- CRAFTED --
 					i(206509),	-- Displacement Boots
-					i(206482),	-- Helm of Lingering Power
 					i(206439),	-- Icy Scale Crown
 					i(206437),	-- Icy Scale Leggings
 					i(206438),	-- Icy Scale Shoulderpads
 					i(206441),	-- Icy Scale Stompers
 					i(206440),	-- Icy Scale Waistwrap
 					i(206646),	-- Languished Leather
-					i(206514),	-- Lucien's Lost Soles
 					i(206491),	-- Nerubian Persuader
 					i(206435),	-- Polar Belt
 					i(206436),	-- Polar Footwarmers
 					i(206434),	-- Polar Helm
 					i(206432),	-- Polar Leggings
 					i(206433),	-- Polar Spaulders
-					i(207565),	-- Sanctified Leather Hat
 					i(206647),	-- Scourged Scales
-					i(206483),	-- Skyfury Headdress
 				}),
 				prof(TAILORING, {
 					-- RECIPES --
