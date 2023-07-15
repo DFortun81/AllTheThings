@@ -1334,6 +1334,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							["repeatable"] = true,
 							["groups"] = {
 								i(208028, {	-- Knot Thimblejack's Cache
+									i(208031),	-- Convenient Crate
 									i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
 									i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
 									i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
