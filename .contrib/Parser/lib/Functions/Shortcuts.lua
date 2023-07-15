@@ -197,15 +197,23 @@ bubbleDownSelf = function(data, t)
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
 end
+-- Returns a copy of the 't' (expected 'groups' content) ensuring that contained content is in the expected formats
 bubbleUp = function(t)
 	if t then
+		local tinsert = table.insert;
 		local t2 = {};
 		for i, group in pairs(t) do
-			table.insert(t2, group);
+			tinsert(t2, group);
 		end
-		for i=#t,1,-1 do
-			table.remove(t, i);
-		end
+		-- @Crieve: No clue why was breaking in Naxx, but bubbleUp is never used on a persisted table, so there's no reason to remove and
+		-- re-add to the same table when we return and replace the table anyway. Everything appears to work fine just doing this.
+		-- And parser is like 50% faster doing contrib data merge...
+		-- for i=#t,1,-1 do
+		-- 	print("bubbleUp.remove",i)
+		-- 	table.remove(t, i);	-- breaks in wotlk naxx file on index 7...
+		-- 	print("bubbleUp.removed",i)
+		-- end
+		t = {};
 		for i, group in pairs(t2) do
 			if type(i) ~= "number" then
 				print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
@@ -221,12 +229,12 @@ bubbleUp = function(t)
 							elseif type(subgroup) ~= "table" then
 								print("You're trying to use '" .. subgroup .. "' in a 'groups' field. (can't do that!)");
 							else
-								table.insert(t, subgroup);
+								tinsert(t, subgroup);
 							end
 						end
 					end
 				else
-					table.insert(t, group);
+					tinsert(t, group);
 				end
 			end
 		end
