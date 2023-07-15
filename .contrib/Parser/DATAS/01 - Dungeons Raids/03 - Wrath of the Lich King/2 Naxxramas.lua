@@ -103,6 +103,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 			})),
+			n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				i(206375, {	-- Corruptor's Scourgestone
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+			})),
 			prof(FISHING, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				i(206471, {	-- Abomination's Chain
 					["description"] = "Chance to be fished from any slime in Naxxramas.",
@@ -235,9 +240,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 			})),
 			n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-				i(206375, {	-- Corruptor's Scourgestone
-					["timeline"] = { ADDED_10_1_5 },
-				}),
 				i(207702, {	-- Wartorn Scrap
 					["timeline"] = { ADDED_10_1_5 },
 				}),
