@@ -1012,3 +1012,5 @@
 2568@@@Glimmerogg Racer
 10.1.5.49824
 2553@@@Soridormi
+10.1.7.50442
+2576@@@Druids of the Flame
