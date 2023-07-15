@@ -136,7 +136,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						{ "i", 206473, 1 },		-- 1x Makeshift Grappling Hook
 					},
 					["g"] = {
-
+						i(206615),	-- Desecrated Cloth Bracers
+						i(206623),	-- Desecrated Leather Bracers
+						i(206631),	-- Desecrated Mail Bracers
+						i(206640),	-- Desecrated Plate Bracers
 					},
 				}),
 				q(76396, {	-- Invader's Scourgestones
@@ -174,6 +177,733 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 			})),
+			n(TIER_THREE_SETS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				ach(11744),	-- Drop Dead, Gorgeous
+				n(CRAFTABLES, {
+					filter(CLOTH, {
+						i(206617, {	-- Desecrated Cloth Belt
+							["cost"] = {
+								{ "i", 206609, 1 },	-- 1x Lamented Crusader's Belt
+								{ "i", 206645, 1 },	-- 1x Cursed Cloth
+							},
+						}),
+						i(206619, {	-- Desecrated Cloth Boots
+							["cost"] = {
+								{ "i", 206611, 1 },	-- 1x Lamented Crusader's Boots
+								{ "i", 206645, 1 },	-- 1x Cursed Cloth
+							},
+						}),
+						i(206615, {	-- Desecrated Cloth Bracers
+							["cost"] = {
+								{ "i", 206607, 1 },	-- 1x Lamented Crusader's Bracers
+								{ "i", 206645, 1 },	-- 1x Cursed Cloth
+							},
+						}),
+						i(206614, {	-- Desecrated Cloth Chestpiece
+							["cost"] = {
+								{ "i", 206606, 1 },	-- 1x Lamented Crusader's Chestpiece
+								{ "i", 206645, 1 },	-- 1x Cursed Cloth
+							},
+						}),
+						i(206616, {	-- Desecrated Cloth Gauntlets
+							["cost"] = {
+								{ "i", 206608, 1 },	-- 1x Lamented Crusader's Gauntlets
+								{ "i", 206645, 1 },	-- 1x Cursed Cloth
+							},
+						}),
+						i(206612, {	-- Desecrated Cloth Helmet
+							["cost"] = {
+								{ "i", 206604, 1 },	-- 1x Lamented Crusader's Helmet
+								{ "i", 206645, 1 },	-- 1x Cursed Cloth
+							},
+						}),
+						i(206618, {	-- Desecrated Cloth Leggings
+							["cost"] = {
+								{ "i", 206610, 1 },	-- 1x Lamented Crusader's Leggings
+								{ "i", 206645, 1 },	-- 1x Cursed Cloth
+							},
+						}),
+						i(206613, {	-- Desecrated Cloth Spaulders
+							["cost"] = {
+								{ "i", 206605, 1 },	-- 1x Lamented Crusader's Spaulders
+								{ "i", 206645, 1 },	-- 1x Cursed Cloth
+							},
+						}),
+					}),
+					filter(LEATHER, {
+						i(206625, {	-- Desecrated Leather Belt
+							["cost"] = {
+								{ "i", 206609, 1 },	-- 1x Lamented Crusader's Belt
+								{ "i", 206646, 1 },	-- 1x Languished Leather
+							},
+						}),
+						i(206627, {	-- Desecrated Leather Boots
+							["cost"] = {
+								{ "i", 206611, 1 },	-- 1x Lamented Crusader's Boots
+								{ "i", 206646, 1 },	-- 1x Languished Leather
+							},
+						}),
+						i(206623, {	-- Desecrated Leather Bracers
+							["cost"] = {
+								{ "i", 206607, 1 },	-- 1x Lamented Crusader's Bracers
+								{ "i", 206646, 1 },	-- 1x Languished Leather
+							},
+						}),
+						i(206622, {	-- Desecrated Leather Chestpiece
+							["cost"] = {
+								{ "i", 206606, 1 },	-- 1x Lamented Crusader's Chestpiece
+								{ "i", 206646, 1 },	-- 1x Languished Leather
+							},
+						}),
+						i(206624, {	-- Desecrated Leather Gauntlets
+							["cost"] = {
+								{ "i", 206608, 1 },	-- 1x Lamented Crusader's Gauntlets
+								{ "i", 206646, 1 },	-- 1x Languished Leather
+							},
+						}),
+						i(206620, {	-- Desecrated Leather Helmet
+							["cost"] = {
+								{ "i", 206604, 1 },	-- 1x Lamented Crusader's Helmet
+								{ "i", 206646, 1 },	-- 1x Languished Leather
+							},
+						}),
+						i(206626, {	-- Desecrated Leather Leggings
+							["cost"] = {
+								{ "i", 206610, 1 },	-- 1x Lamented Crusader's Leggings
+								{ "i", 206646, 1 },	-- 1x Languished Leather
+							},
+						}),
+						i(206621, {	-- Desecrated Leather Spaulders
+							["cost"] = {
+								{ "i", 206605, 1 },	-- 1x Lamented Crusader's Spaulders
+								{ "i", 206646, 1 },	-- 1x Languished Leather
+							},
+						}),
+					}),
+					filter(MAIL, {
+						i(206633, {	-- Desecrated Mail Belt
+							["cost"] = {
+								{ "i", 206609, 1 },	-- 1x Lamented Crusader's Belt
+								{ "i", 206647, 1 },	-- 1x Scourged Scales
+							},
+						}),
+						i(206635, {	-- Desecrated Mail Boots
+							["cost"] = {
+								{ "i", 206611, 1 },	-- 1x Lamented Crusader's Boots
+								{ "i", 206647, 1 },	-- 1x Scourged Scales
+							},
+						}),
+						i(206631, {	-- Desecrated Mail Bracers
+							["cost"] = {
+								{ "i", 206607, 1 },	-- 1x Lamented Crusader's Bracers
+								{ "i", 206647, 1 },	-- 1x Scourged Scales
+							},
+						}),
+						i(206630, {	-- Desecrated Mail Chestpiece
+							["cost"] = {
+								{ "i", 206606, 1 },	-- 1x Lamented Crusader's Chestpiece
+								{ "i", 206647, 1 },	-- 1x Scourged Scales
+							},
+						}),
+						i(206632, {	-- Desecrated Mail Gauntlets
+							["cost"] = {
+								{ "i", 206608, 1 },	-- 1x Lamented Crusader's Gauntlets
+								{ "i", 206647, 1 },	-- 1x Scourged Scales
+							},
+						}),
+						i(206628, {	-- Desecrated Mail Helmet
+							["cost"] = {
+								{ "i", 206604, 1 },	-- 1x Lamented Crusader's Helmet
+								{ "i", 206647, 1 },	-- 1x Scourged Scales
+							},
+						}),
+						i(206634, {	-- Desecrated Mail Leggings
+							["cost"] = {
+								{ "i", 206610, 1 },	-- 1x Lamented Crusader's Leggings
+								{ "i", 206647, 1 },	-- 1x Scourged Scales
+							},
+						}),
+						i(206629, {	-- Desecrated Mail Spaulders
+							["cost"] = {
+								{ "i", 206605, 1 },	-- 1x Lamented Crusader's Spaulders
+								{ "i", 206647, 1 },	-- 1x Scourged Scales
+							},
+						}),
+					}),
+					filter(PLATE, {
+						i(206642, {	-- Desecrated Plate Belt
+							["cost"] = {
+								{ "i", 206609, 1 },	-- 1x Lamented Crusader's Belt
+								{ "i", 206648, 1 },	-- 1x Undeath Metal
+							},
+						}),
+						i(206644, {	-- Desecrated Plate Boots
+							["cost"] = {
+								{ "i", 206611, 1 },	-- 1x Lamented Crusader's Boots
+								{ "i", 206648, 1 },	-- 1x Undeath Metal
+							},
+						}),
+						i(206640, {	-- Desecrated Plate Bracers
+							["cost"] = {
+								{ "i", 206607, 1 },	-- 1x Lamented Crusader's Bracers
+								{ "i", 206648, 1 },	-- 1x Undeath Metal
+							},
+						}),
+						i(206639, {	-- Desecrated Plate Chestpiece
+							["cost"] = {
+								{ "i", 206606, 1 },	-- 1x Lamented Crusader's Chestpiece
+								{ "i", 206648, 1 },	-- 1x Undeath Metal
+							},
+						}),
+						i(206641, {	-- Desecrated Plate Gauntlets
+							["cost"] = {
+								{ "i", 206608, 1 },	-- 1x Lamented Crusader's Gauntlets
+								{ "i", 206648, 1 },	-- 1x Undeath Metal
+							},
+						}),
+						i(206636, {	-- Desecrated Plate Helmet
+							["cost"] = {
+								{ "i", 206604, 1 },	-- 1x Lamented Crusader's Helmet
+								{ "i", 206648, 1 },	-- 1x Undeath Metal
+							},
+						}),
+						i(206643, {	-- Desecrated Plate Leggings
+							["cost"] = {
+								{ "i", 206610, 1 },	-- 1x Lamented Crusader's Leggings
+								{ "i", 206648, 1 },	-- 1x Undeath Metal
+							},
+						}),
+						i(206637, {	-- Desecrated Plate Spaulders
+							["cost"] = {
+								{ "i", 206605, 1 },	-- 1x Lamented Crusader's Spaulders
+								{ "i", 206648, 1 },	-- 1x Undeath Metal
+							},
+						}),
+					}),
+				}),
+				cl(DRUID, {
+					i(22490, {	-- Dreamwalker Headpiece
+						["cost"] = {
+							{ "i", 206620, 1 },		-- 1x Desecrated Leather Helmet
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22491, {	-- Dreamwalker Spaulders
+						["cost"] = {
+							{ "i", 206621, 1 },		-- 1x Desecrated Leather Spaulders
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22488, {	-- Dreamwalker Tunic
+						["cost"] = {
+							{ "i", 206622, 1 },		-- 1x Desecrated Leather Chestpiece
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22495, {	-- Dreamwalker Wristguards
+						["cost"] = {
+							{ "i", 206623, 1 },		-- 1x Desecrated Leather Bracers
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22493, {	-- Dreamwalker Handguards
+						["cost"] = {
+							{ "i", 206624, 1 },		-- 1x Desecrated Leather Gauntlets
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+					i(22494, {	-- Dreamwalker Girdle
+						["cost"] = {
+							{ "i", 206625, 1 },		-- 1x Desecrated Leather Belt
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22489, {	-- Dreamwalker Legguards
+						["cost"] = {
+							{ "i", 206626, 1 },		-- 1x Desecrated Leather Leggings
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22492, {	-- Dreamwalker Boots
+						["cost"] = {
+							{ "i", 206627, 1 },		-- 1x Desecrated Leather Boots
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+				}),
+				cl(MAGE, {
+					i(22498, {	-- Frostfire Circlet
+						["cost"] = {
+							{ "i", 206612, 1 },		-- 1x Desecrated Cloth Helmet
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22499, {	-- Frostfire Shoulderpads
+						["cost"] = {
+							{ "i", 206613, 1 },		-- 1x Desecrated Cloth Spaulders
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22496, {	-- Frostfire Robe
+						["cost"] = {
+							{ "i", 206614, 1 },		-- 1x Desecrated Cloth Chestpiece
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22503, {	-- Frostfire Bindings
+						["cost"] = {
+							{ "i", 206615, 1 },		-- 1x Desecrated Cloth Bracers
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22501, {	-- Frostfire Gloves
+						["cost"] = {
+							{ "i", 206616, 1 },		-- 1x Desecrated Cloth Gauntlets
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+					i(22502, {	-- Frostfire Belt
+						["cost"] = {
+							{ "i", 206617, 1 },		-- 1x Desecrated Cloth Belt
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22497, {	-- Frostfire Leggings
+						["cost"] = {
+							{ "i", 206618, 1 },		-- 1x Desecrated Cloth Leggings
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22500, {	-- Frostfire Sandals
+						["cost"] = {
+							{ "i", 206619, 1 },		-- 1x Desecrated Cloth Boots
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+				}),
+				cl(HUNTER, {
+					i(22438, {	-- Cryptstalker Headpiece
+						["cost"] = {
+							{ "i", 206628, 1 },		-- 1x Desecrated Mail Helmet
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22439, {	-- Cryptstalker Spaulders
+						["cost"] = {
+							{ "i", 206629, 1 },		-- 1x Desecrated Mail Spaulders
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22436, {	-- Cryptstalker Tunic
+						["cost"] = {
+							{ "i", 206630, 1 },		-- 1x Desecrated Mail Chestpiece
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22443, {	-- Cryptstalker Wristguards
+						["cost"] = {
+							{ "i", 206631, 1 },		-- 1x Desecrated Mail Bracers
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22441, {	-- Cryptstalker Handguards
+						["cost"] = {
+							{ "i", 206632, 1 },		-- 1x Desecrated Mail Gauntlets
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+					i(22442, {	-- Cryptstalker Girdle
+						["cost"] = {
+							{ "i", 206633, 1 },		-- 1x Desecrated Mail Belt
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22437, {	-- Cryptstalker Legguards
+						["cost"] = {
+							{ "i", 206634, 1 },		-- 1x Desecrated Mail Leggings
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22440, {	-- Cryptstalker Boots
+						["cost"] = {
+							{ "i", 206635, 1 },		-- 1x Desecrated Mail Boots
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+				}),
+				cl(PALADIN, {
+					i(22428, {	-- Redemption Headpiece
+						["cost"] = {
+							{ "i", 206636, 1 },		-- 1x Desecrated Plate Helmet
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22429, {	-- Redemption Spaulders
+						["cost"] = {
+							{ "i", 206637, 1 },		-- 1x Desecrated Plate Spaulders
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22425, {	-- Redemption Tunic
+						["cost"] = {
+							{ "i", 206639, 1 },		-- 1x Desecrated Plate Chestpiece
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22424, {	-- Redemption Wristguards
+						["cost"] = {
+							{ "i", 206640, 1 },		-- 1x Desecrated Plate Bracers
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22426, {	-- Redemption Handguards
+						["cost"] = {
+							{ "i", 206641, 1 },		-- 1x Desecrated Plate Gauntlets
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+					i(22431, {	-- Redemption Girdle
+						["cost"] = {
+							{ "i", 206642, 1 },		-- 1x Desecrated Plate Belt
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22427, {	-- Redemption Legguards
+						["cost"] = {
+							{ "i", 206643, 1 },		-- 1x Desecrated Plate Leggings
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22430, {	-- Redemption Boots
+						["cost"] = {
+							{ "i", 206644, 1 },		-- 1x Desecrated Plate Boots
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+				}),
+				cl(PRIEST, {
+					i(22514, {	-- Circlet of Faith
+						["cost"] = {
+							{ "i", 206612, 1 },		-- 1x Desecrated Cloth Helmet
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22515, {	-- Shoulderpads of Faith
+						["cost"] = {
+							{ "i", 206613, 1 },		-- 1x Desecrated Cloth Spaulders
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22512, {	-- Robe of Faith
+						["cost"] = {
+							{ "i", 206614, 1 },		-- 1x Desecrated Cloth Chestpiece
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22519, {	-- Bindings of Faith
+						["cost"] = {
+							{ "i", 206615, 1 },		-- 1x Desecrated Cloth Bracers
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22517, {	-- Gloves of Faith
+						["cost"] = {
+							{ "i", 206616, 1 },		-- 1x Desecrated Cloth Gauntlets
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+					i(22518, {	-- Belt of Faith
+						["cost"] = {
+							{ "i", 206617, 1 },		-- 1x Desecrated Cloth Belt
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22513, {	-- Leggings of Faith
+						["cost"] = {
+							{ "i", 206618, 1 },		-- 1x Desecrated Cloth Leggings
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22516, {	-- Sandals of Faith
+						["cost"] = {
+							{ "i", 206619, 1 },		-- 1x Desecrated Cloth Boots
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+				}),
+				cl(ROGUE, {
+					i(22478, {	-- Bonescythe Helmet
+						["cost"] = {
+							{ "i", 206620, 1 },		-- 1x Desecrated Leather Helmet
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22479, {	-- Bonescythe Pauldrons
+						["cost"] = {
+							{ "i", 206621, 1 },		-- 1x Desecrated Leather Spaulders
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22476, {	-- Bonescythe Breastplate
+						["cost"] = {
+							{ "i", 206622, 1 },		-- 1x Desecrated Leather Chestpiece
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22483, {	-- Bonescythe Bracers
+						["cost"] = {
+							{ "i", 206623, 1 },		-- 1x Desecrated Leather Bracers
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22481, {	-- Bonescythe Gauntlets
+						["cost"] = {
+							{ "i", 206624, 1 },		-- 1x Desecrated Leather Gauntlets
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+					i(22482, {	-- Bonescythe Waistguard
+						["cost"] = {
+							{ "i", 206625, 1 },		-- 1x Desecrated Leather Belt
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22477, {	-- Bonescythe Legplates
+						["cost"] = {
+							{ "i", 206626, 1 },		-- 1x Desecrated Leather Leggings
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22480, {	-- Bonescythe Sabatons
+						["cost"] = {
+							{ "i", 206627, 1 },		-- 1x Desecrated Leather Boots
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+				}),
+				cl(SHAMAN, {
+					i(22466, {	-- Earthshatter Headpiece
+						["cost"] = {
+							{ "i", 206628, 1 },		-- 1x Desecrated Mail Helmet
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22467, {	-- Earthshatter Spaulders
+						["cost"] = {
+							{ "i", 206629, 1 },		-- 1x Desecrated Mail Spaulders
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22464, {	-- Earthshatter Tunic
+						["cost"] = {
+							{ "i", 206630, 1 },		-- 1x Desecrated Mail Chestpiece
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22471, {	-- Earthshatter Wristguards
+						["cost"] = {
+							{ "i", 206631, 1 },		-- 1x Desecrated Mail Bracers
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22469, {	-- Earthshatter Handguards
+						["cost"] = {
+							{ "i", 206632, 1 },		-- 1x Desecrated Mail Gauntlets
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+					i(22470, {	-- Earthshatter Girdle
+						["cost"] = {
+							{ "i", 206633, 1 },		-- 1x Desecrated Mail Belt
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22465, {	-- Earthshatter Legguards
+						["cost"] = {
+							{ "i", 206634, 1 },		-- 1x Desecrated Mail Leggings
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22468, {	-- Earthshatter Boots
+						["cost"] = {
+							{ "i", 206635, 1 },		-- 1x Desecrated Mail Boots
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+				}),
+				cl(WARLOCK, {
+					i(22506, {	-- Plagueheart Circlet
+						["cost"] = {
+							{ "i", 206612, 1 },		-- 1x Desecrated Cloth Helmet
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22507, {	-- Plagueheart Shoulderpads
+						["cost"] = {
+							{ "i", 206613, 1 },		-- 1x Desecrated Cloth Spaulders
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22504, {	-- Plagueheart Robe
+						["cost"] = {
+							{ "i", 206614, 1 },		-- 1x Desecrated Cloth Chestpiece
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22511, {	-- Plagueheart Bindings
+						["cost"] = {
+							{ "i", 206615, 1 },		-- 1x Desecrated Cloth Bracers
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22509, {	-- Plagueheart Gloves
+						["cost"] = {
+							{ "i", 206616, 1 },		-- 1x Desecrated Cloth Gauntlets
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+					i(22510, {	-- Plagueheart Belt
+						["cost"] = {
+							{ "i", 206617, 1 },		-- 1x Desecrated Cloth Belt
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22505, {	-- Plagueheart Leggings
+						["cost"] = {
+							{ "i", 206618, 1 },		-- 1x Desecrated Cloth Leggings
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22508, {	-- Plagueheart Sandals
+						["cost"] = {
+							{ "i", 206619, 1 },		-- 1x Desecrated Cloth Boots
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+				}),
+				cl(WARRIOR, {
+					i(22418, {	-- Dreadnaught Helmet
+						["cost"] = {
+							{ "i", 206636, 1 },		-- 1x Desecrated Plate Helmet
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22419, {	-- Dreadnaught Pauldrons
+						["cost"] = {
+							{ "i", 206637, 1 },		-- 1x Desecrated Plate Spaulders
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 280 },	-- 280x Phylacterweave
+						},
+					}),
+					i(22416, {	-- Dreadnaught Breastplate
+						["cost"] = {
+							{ "i", 206639, 1 },		-- 1x Desecrated Plate Chestpiece
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22423, {	-- Dreadnaught Bracers
+						["cost"] = {
+							{ "i", 206640, 1 },		-- 1x Desecrated Plate Bracers
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22421, {	-- Dreadnaught Gauntlets
+						["cost"] = {
+							{ "i", 206641, 1 },		-- 1x Desecrated Plate Gauntlets
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+					i(22422, {	-- Dreadnaught Waistguard
+						["cost"] = {
+							{ "i", 206642, 1 },		-- 1x Desecrated Plate Belt
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 70 },	-- 70x Phylacterweave
+						},
+					}),
+					i(22417, {	-- Dreadnaught Legplates
+						["cost"] = {
+							{ "i", 206643, 1 },		-- 1x Desecrated Plate Leggings
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 210 },	-- 210x Phylacterweave
+						},
+					}),
+					i(22420, {	-- Dreadnaught Sabatons
+						["cost"] = {
+							{ "i", 206644, 1 },		-- 1x Desecrated Plate Boots
+							{ "i", 12811, 10 },		-- 10x Righteous Orb
+							{ "i", 206579, 140 },	-- 140x Phylacterweave
+						},
+					}),
+				}),
+			})),
 			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				o(403722, {	-- Conveniently Misplaced Hook
 					["description"] = "Located in the second room of the Construct Quarter, by a vat of slime to the right.",
@@ -188,27 +918,51 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					["g"] = {
 						i(206573, {	-- Dented Raider's Belt
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["g"] = {
+								i(206609),	-- Lamented Crusader's Belt
+							},
 						}),
 						i(206575, {	-- Dented Raider's Boots
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["g"] = {
+								i(206611),	-- Lamented Crusader's Boots
+							},
 						}),
 						i(206571, {	-- Dented Raider's Bracers
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["g"] = {
+								i(206607),	-- Lamented Crusader's Bracers
+							},
 						}),
 						i(206570, {	-- Dented Raider's Chestpiece
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["g"] = {
+								i(206606),	-- Lamented Crusader's Chestpiece
+							},
 						}),
 						i(206572, {	-- Dented Raider's Gauntlets
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["g"] = {
+								i(206608),	-- Lamented Crusader's Gauntlets
+							},
 						}),
 						i(206568, {	-- Dented Raider's Helmet
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["g"] = {
+								i(206604),	-- Lamented Crusader's Helmet
+							},
 						}),
 						i(206574, {	-- Dented Raider's Leggings
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["g"] = {
+								i(206610),	-- Lamented Crusader's Leggings
+							},
 						}),
 						i(206569, {	-- Dented Raider's Spaulders
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["g"] = {
+								i(206605),	-- Lamented Crusader's Spaulders
+							},
 						}),
 						i(206771, {	-- Pattern: Cursed Cloth (RECIPE!)
 							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",

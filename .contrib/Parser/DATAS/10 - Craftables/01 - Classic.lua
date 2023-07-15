@@ -397,6 +397,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(12645),	-- Thorium Shield Spike
 			i(11144, {["timeline"]={"removed 5.0.4"}}),	-- Truesilver Rod
 			i(15871),	-- Truesilver Skeleton Key
+			i(206648, {["timeline"] = {ADDED_10_1_5}}),	-- Undeath Metal
 		}),
 		n(WEAPONS, {
 			i(7945),	-- Big Black Mace
@@ -2321,6 +2322,10 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		n(WEAPONS, {
 			i(203805, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi's Grasp
 		}),
+		filter(MISC, {
+			i(206646, {["timeline"] = {ADDED_10_1_5}}),	-- Languished Leather
+			i(206647, {["timeline"] = {ADDED_10_1_5}}),	-- Scourged Scales
+		}),
 	}),
 	prof(MINING, {
 		["description"] = "The following items can be gathered by Miners out in the world.",
@@ -2791,6 +2796,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10034),	-- Tuxedo Shirt
 			i(2576),	-- White Linen Shirt
 			i(6795),	-- White Swashbuckler's Shirt
+		}),
+		filter(MISC, {
+			i(206645, {["timeline"] = {ADDED_10_1_5}}),	-- Cursed Cloth
 		}),
 	}),
 }));

@@ -346,8 +346,6 @@ root(ROOTS.Unsorted, {
 				i(206585),	-- Valiance (MOUNT!)
 			}),
 			header(HEADERS.LFGDungeon, 227, {	-- Naxxramas
-
-
 				i(206447),	-- Task List for Adventurers
 				i(206449),	-- Omarion's Second Handbook
 				i(206450),	-- Omarion's Notes - Pages 1 & 2
@@ -366,47 +364,6 @@ root(ROOTS.Unsorted, {
 				i(206463),	-- Omarion's Notes - Pages 27 & 28
 				i(206464),	-- Omarion's Notes - Pages 29 & 30
 				i(206465),	-- Omarion's Notes - Pages 31 & 32
-				i(206579),	-- Phylacterweave
-				i(206604),	-- Lamented Crusader's Helmet
-				i(206605),	-- Lamented Crusader's Spaulders
-				i(206606),	-- Lamented Crusader's Chestpiece
-				i(206607),	-- Lamented Crusader's Bracers
-				i(206608),	-- Lamented Crusader's Gauntlets
-				i(206609),	-- Lamented Crusader's Belt
-				i(206610),	-- Lamented Crusader's Leggings
-				i(206611),	-- Lamented Crusader's Boots
-				i(206612),	-- Desecrated Cloth Helmet
-				i(206613),	-- Desecrated Cloth Spaulders
-				i(206614),	-- Desecrated Cloth Chestpiece
-				i(206615),	-- Desecrated Cloth Bracers
-				i(206616),	-- Desecrated Cloth Gauntlets
-				i(206617),	-- Desecrated Cloth Belt
-				i(206618),	-- Desecrated Cloth Leggings
-				i(206619),	-- Desecrated Cloth Boots
-				i(206620),	-- Desecrated Leather Helmet
-				i(206621),	-- Desecrated Leather Spaulders
-				i(206622),	-- Desecrated Leather Chestpiece
-				i(206623),	-- Desecrated Leather Bracers
-				i(206624),	-- Desecrated Leather Gauntlets
-				i(206625),	-- Desecrated Leather Belt
-				i(206626),	-- Desecrated Leather Leggings
-				i(206627),	-- Desecrated Leather Boots
-				i(206628),	-- Desecrated Mail Helmet
-				i(206629),	-- Desecrated Mail Spaulders
-				i(206630),	-- Desecrated Mail Chestpiece
-				i(206631),	-- Desecrated Mail Bracers
-				i(206632),	-- Desecrated Mail Gauntlets
-				i(206633),	-- Desecrated Mail Belt
-				i(206634),	-- Desecrated Mail Leggings
-				i(206635),	-- Desecrated Mail Boots
-				i(206636),	-- Desecrated Plate Helmet
-				i(206637),	-- Desecrated Plate Spaulders
-				i(206639),	-- Desecrated Plate Chestpiece
-				i(206640),	-- Desecrated Plate Bracers
-				i(206641),	-- Desecrated Plate Gauntlets
-				i(206642),	-- Desecrated Plate Belt
-				i(206643),	-- Desecrated Plate Leggings
-				i(206644),	-- Desecrated Plate Boots
 			}),
 			header(HEADERS.LFGDungeon, 2430, {	-- Dawn of the Infinite
 				i(207818),	-- Mega Dungeon Bronze Plate Greaves
@@ -476,8 +433,6 @@ root(ROOTS.Unsorted, {
 				i(206398),	-- Pattern: Glacial Wrists
 				i(206399),	-- Pattern: Glacial Gloves
 				i(206393),	-- Pattern: Glacial Cloak
-				--
-				i(206577),	-- Slime-Covered Scroll
 				prof(BLACKSMITHING, {
 					-- RECIPES --
 					i(206540),	-- Ancient Plans: Axe of Sundered Bone (RECIPE!)
