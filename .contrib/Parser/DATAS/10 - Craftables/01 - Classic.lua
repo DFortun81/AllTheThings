@@ -415,6 +415,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7955),	-- Copper Claymore
 			i(2844),	-- Copper Mace
 			i(2847),	-- Copper Shortsword
+			i(206478, {["timeline"] = {ADDED_10_1_5 }}),	-- Darrowdirk
+			i(206479, {["timeline"] = {ADDED_10_1_5 }}),	-- Darrowshire Protector
 			i(7944),	-- Dazzling Mithril Rapier
 			i(3490),	-- Deadly Bronze Poniard
 			i(7947),	-- Ebon Shiv
@@ -437,12 +439,15 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6214),	-- Heavy Copper Maul
 			i(7941),	-- Heavy Mithril Axe
 			i(12775),	-- Huge Thorium Battleaxe
+			i(207561, {["timeline"] = {ADDED_10_1_5 }}),	-- Ichor Slicer
+			i(207555, {["timeline"] = {ADDED_10_1_5 }}),	-- Intrepid Shortblade
 			i(5541),	-- Iridescent Hammer
 			i(6731),	-- Ironforge Breastplate
 			i(3850),	-- Jade Serpentblade
 			applyclassicphase(PHASE_FIVE, i(22198)),	-- Jagged Obsidian Shield
 			i(3855),	-- Massive Iron Axe
 			i(3492),	-- Mighty Iron Hammer
+			i(206480, {["timeline"] = {ADDED_10_1_5 }}),	-- Mirah's Lullaby
 			i(3853),	-- Moonsteel Broadsword
 			i(12773),	-- Ornate Thorium Handaxe
 			i(203811, {["timeline"] = {ADDED_10_0_7 }}),	-- Pitchfork of Madness
@@ -459,11 +464,13 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7946),	-- Runed Mithril Hammer
 			i(12260),	-- Searing Golden Blade
 			i(203804, {["timeline"] = {ADDED_10_0_7 }}),	-- Sceptre of Hexing
+			i(207560, {["timeline"] = {ADDED_10_1_5 }}),	-- Sacred Guardian
 			i(3856),	-- Shadow Crescent Axe
 			i(3851),	-- Solid Iron Maul
 			i(17193),	-- Sulfuron Hammer
 			applyclassicphase(TBC_PHASE_ONE, i(29201, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Thick Bronze Darts
 			i(3489),	-- Thick War Axe
+			i(207556, {["timeline"] = {ADDED_10_1_5 }}),	-- Valiant Shortblade
 			i(203802, {["timeline"] = {ADDED_10_0_7 }}),	-- Venomfang
 			i(203860, {["timeline"] = {ADDED_10_0_7 }}),	-- Venomreaver
 			i(12792, {	-- Volcanic Hammer
@@ -471,6 +478,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			}),
 			i(203791, {["timeline"] = {ADDED_10_0_7 }}),	-- Warblades of the Hakkari, Reborn (MH)
 			i(203792, {["timeline"] = {ADDED_10_0_7 }}),	-- Warblades of the Hakkari, Reborn (OH)
+			i(206477, {["timeline"] = {ADDED_10_1_5 }}),	-- Warsword of Caer Darrow
 			i(7943),	-- Wicked Mithril Blade
 			applyclassicphase(TBC_PHASE_ONE, i(29202, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Whirling Steel Axes
 			-- #if AFTER TBC
@@ -795,6 +803,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				ill(5863),	-- Coldlight
 			}),
 		}))),
+		filter(HELD_IN_OFF_HAND, 
+			i(207557, {["timeline"] = {ADDED_10_1_5 }}),	-- Magebane Nexus
+		}),
 		applyclassicphase(PHASE_FIVE, cat(699, {	-- Oils
 			i(20748, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil / 10.0.7: Expired Mana Oil
 			i(20749, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
@@ -839,6 +850,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(11287),	-- Lesser Magic Wand
 			i(11289),	-- Lesser Mystic Wand
 			i(203808, {["timeline"]={ADDED_10_0_7}}),	-- Mindslave's Reach
+			i(207558, {["timeline"] = {ADDED_10_1_5 }}),	-- Smoked Fireshooter
+			i(207559, {["timeline"] = {ADDED_10_1_5 }}),	-- Stormwatcher
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, cat(695, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Weapon Enchantments
 			i(38880),	-- Enchant Weapon - Agility
@@ -1098,6 +1111,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10508),	-- Mithril Blunderbuss
 			i(10510),	-- Mithril Heavy-Bore Rifle
 			i(4383),	-- Moonsight Rifle
+			i(207564, {["timeline"] = {ADDED_10_1_5 }}),	-- Refurbished Purifier
 			i(4362),	-- Rough Boomstick
 			i(4379),	-- Silver-Plated Shotgun
 			i(15995),	-- Thorium Rifle
@@ -1140,6 +1154,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		category(191, {	-- Tools
 			i(6219),	-- Arclight Spanner
 			i(10498),	-- Gyromatic Micro-Adjustor
+		}),
+		n(WEAPONS, {
+			i(207562, {["timeline"] = {ADDED_10_1_5 }}),	-- Skullstone Bludgeon
 		}),
 	}),
 	prof(FIRST_AID, {
@@ -1580,6 +1597,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		filter(STAVES, {
 			i(203815, {["timeline"]={ADDED_10_0_7}}),	-- Gurubashi Ceremonial Staff
 			i(203795, {["timeline"]={ADDED_10_0_7}}),	-- Judgment of the Gurubashi
+			i(206481, {["timeline"] = {ADDED_10_1_5 }}),	-- Shifting Sliver
+			i(207563, {["timeline"] = {ADDED_10_1_5 }}),	-- Wanderer's Guide
 		}),
 	}),
 	-- #endif
@@ -1921,6 +1940,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- #endif
 				i(8176),	-- Nightscape Headband
 				i(15094),	-- Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
+				i(207565, {["timeline"] = {ADDED_10_1_5 }}),	-- Sanctified Leather Hat
 				i(15086),	-- Wicked Leather Headband (Trainable now, old Pattern id 15744 used to teach this.)
 				i(8214, {	-- Wild Leather Helmet
 					["timeline"] = { "removed 4.0.3" },
@@ -2169,6 +2189,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18506, {	-- Mongoose Boots
 					["timeline"] = { "removed 4.0.3" },
 				})),
+				i(206514, {["timeline"] = {ADDED_10_1_5 }}),	-- Lucien's Lost Soles
 				i(8197),	-- Nightscape Boots
 				i(7391),	-- Swift Boots
 				i(8213, {	-- Wild Leather Boots
@@ -2179,6 +2200,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		filter(MAIL, {
 			category(251, {	-- Helms
 				i(15080),	-- Heavy Scorpid Helm
+				i(206482, {["timeline"] = {ADDED_10_1_5 }}),	-- Helm of Lingering Power
+				i(206483, {["timeline"] = {ADDED_10_1_5 }}),	-- Skyfury Headdress
 				i(8208),	-- Tough Scorpid Helm
 				i(8191),	-- Turtle Scale Helm
 			}),
