@@ -168,6 +168,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		q(76257, {	-- Darkmaster's Scourgestone
 			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone
 			["timeline"] = { ADDED_10_1_5 },
+			["g"] = {
+				i(12844),	-- Argent Dawn Valor Token
+			},
 		}),
 		q(4771, {	-- Dawn's Gambit
 			["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
@@ -713,6 +716,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 			["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 			["timeline"] = { REMOVED_4_0_3 },
+		}),
+		i(206374, {	-- Invader's Scourgestone
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 			["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",

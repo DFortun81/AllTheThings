@@ -503,6 +503,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 				}),
+				i(206374, {	-- Invader's Scourgestone
+					["timeline"] = { ADDED_10_1_5 },
+				}),
 				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
@@ -525,6 +528,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				i(142337, {	-- Plans: Blight (RECIPE!)
 					["timeline"] = { "added 7.1.5.23360" },
+				}),
+				i(206377, {	-- Ward of Naxxramas
+					["crs"] = { 10411 },	-- Eye of Naxxramas
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				i(18743),	-- Gracious Cape
 				i(17061),	-- Juno's Shadow

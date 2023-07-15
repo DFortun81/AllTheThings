@@ -346,11 +346,8 @@ root(ROOTS.Unsorted, {
 				i(206585),	-- Valiance (MOUNT!)
 			}),
 			header(HEADERS.LFGDungeon, 227, {	-- Naxxramas
-				i(206372),	-- Cracked Argent Dawn Commission
-				i(206373),	-- Darkmaster's Scourgestone
-				i(206374),	-- Invader's Scourgestone
-				i(206375),	-- Corruptor's Scourgestone
-				i(206377),	-- Ward of Naxxramas
+
+
 				i(206447),	-- Task List for Adventurers
 				i(206449),	-- Omarion's Second Handbook
 				i(206450),	-- Omarion's Notes - Pages 1 & 2
@@ -369,12 +366,7 @@ root(ROOTS.Unsorted, {
 				i(206463),	-- Omarion's Notes - Pages 27 & 28
 				i(206464),	-- Omarion's Notes - Pages 29 & 30
 				i(206465),	-- Omarion's Notes - Pages 31 & 32
-				i(206470),	-- Construct's Hook
-				i(206471),	-- Abomination's Chain
-				i(206472),	-- Faerlina's Sewing Kit
-				i(206473),	-- Makeshift Grappling Hook
 				i(206579),	-- Phylacterweave
-				i(207702),	-- Wartorn Scrap
 				i(206604),	-- Lamented Crusader's Helmet
 				i(206605),	-- Lamented Crusader's Spaulders
 				i(206606),	-- Lamented Crusader's Chestpiece
@@ -486,7 +478,6 @@ root(ROOTS.Unsorted, {
 				i(206393),	-- Pattern: Glacial Cloak
 				--
 				i(206577),	-- Slime-Covered Scroll
-				i(206584),	-- Archived Crafting Techniques
 				prof(BLACKSMITHING, {
 					-- RECIPES --
 					i(206540),	-- Ancient Plans: Axe of Sundered Bone (RECIPE!)
@@ -514,7 +505,6 @@ root(ROOTS.Unsorted, {
 					i(206425),	-- Plans: Icebane Leggings (RECIPE!)
 					i(206420),	-- Plans: Icebane Mantle (RECIPE!)
 					i(206426),	-- Plans: Icebane Trudgers (RECIPE!)
-					i(206774),	-- Plans: Undeath Metal (RECIPE!)
 					i(206424),	-- Plans: Icebane Waistguard (RECIPE!)
 					-- CRAFTED --
 					i(206493),	-- Axe of Sundered Bone
@@ -598,14 +588,13 @@ root(ROOTS.Unsorted, {
 					i(206412),	-- Pattern: Icy Scale Shoulderpads (RECIPE!)
 					i(206418),	-- Pattern: Icy Scale Stompers (RECIPE!)
 					i(206416),	-- Pattern: Icy Scale Waistwrap (RECIPE!)
-					i(206772),	-- Pattern: Languished Leather (RECIPE!)
+
 					i(206538),	-- Ancient Pattern: Nerubian Persuader (RECIPE!)
 					i(206408),	-- Pattern: Polar Belt (RECIPE!)
 					i(206410),	-- Pattern: Polar Footwarmers (RECIPE!)
 					i(206403),	-- Pattern: Polar Helm (RECIPE!)
 					i(206409),	-- Pattern: Polar Leggings (RECIPE!)
 					i(206404),	-- Pattern: Polar Spaulders (RECIPE!)
-					i(206773),	-- Pattern: Scourged Scales (RECIPE!)
 					-- CRAFTED --
 					i(206509),	-- Displacement Boots
 					i(206439),	-- Icy Scale Crown
@@ -625,7 +614,6 @@ root(ROOTS.Unsorted, {
 				prof(TAILORING, {
 					-- RECIPES --
 					i(206547),	-- Ancient Pattern: Bindings of the Harvested Soul (RECIPE!)
-					i(206771),	-- Pattern: Cursed Cloth (RECIPE!)
 					i(206395),	-- Pattern: Glacial Chapeau (RECIPE!)
 					i(206396),	-- Pattern: Glacial Epaulets (RECIPE!)
 					i(206402),	-- Pattern: Glacial Footwear (RECIPE!)
@@ -674,15 +662,6 @@ root(ROOTS.Unsorted, {
 			i(205146),	-- Weyrnstone
 			i(206022),	-- Anduin's Lucky Hearthstone Card
 			i(206474),	-- Smelly Cheese
-			i(206568),	-- Dented Raider's Helmet
-			i(206569),	-- Dented Raider's Spaulders
-			i(206570),	-- Dented Raider's Chestpiece
-			i(206571),	-- Dented Raider's Bracers
-			i(206572),	-- Dented Raider's Gauntlets
-			i(206573),	-- Dented Raider's Belt
-			i(206574),	-- Dented Raider's Leggings
-			i(206575),	-- Dented Raider's Boots
-			i(206576),	-- Death's Bargaining Chip
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
 			i(206931),	-- Truesilver Champion

@@ -2246,6 +2246,12 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = TIER_FIVE_GROUPS,
 					}),
+					n(23699, bubbleDownSelf({ ["timeline"] = { ADDED_2_2_0 } }, {	-- Kevin Browning <Coffee Aficionado>
+						["coord"] = { 70.6, 51.8, SHATTRATH_CITY },
+						["groups"] = {
+							i(33042),	-- Black Coffee
+						},
+					})),
 					-- #if AFTER WRATH
 					n(33637, {	-- Kirembri Silvermane <Jewelcrafting Trainer>
 						["coord"] = { 58.6, 75.2, SHATTRATH_CITY },

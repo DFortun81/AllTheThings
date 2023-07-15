@@ -14,16 +14,234 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
+local DEATHS_BARGAINING_CHIP = 206576;
 root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(754, {	-- Naxxramas
 		["mapID"] = NAXXRAMAS,
 		["maps"] = { 163, 164, 165, 166, 167 },
-		["coord"] = { 87.4, 51.1, DRAGONBLIGHT },
+		["coords"] = {
+			{ 87.4, 51.1, DRAGONBLIGHT },
+			-- #if AFTER 10.1.5
+			{ 35.7, 22.9, EASTERN_PLAGUELANDS },
+			-- #endif
+		},
 		-- #if AFTER CATA
 		["sharedLockout"] = 1,
 		-- #endif
 		["isRaid"] = true,
 		["groups"] = {
+			header(HEADERS.Achievement, 18372, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				i(12846, {	-- Argent Dawn Commission
+					["cost"] = {
+						{ "i", 206372, 1 },	-- 1x Cracked Argent Dawn Commission
+						{ "i", 12811, 1 },	-- 1x Righteous Orb
+						{ "i", 6037, 4 },	-- 4x Truesilver Bar
+					},
+				}),
+				n(206148, {	-- Hand of Naxxramas
+					["description"] = "When you have both the ward and holy water, head to the entrance of the Crusader's Cathedral, but don't enter there - Instead, use your Ward of Naxxramas and turn to the left. If done correctly, you will see a Dread Ward of Naxxramas right next to the gates there, Once you find the Dread Ward, toss your  Stratholme Holy Water in it.\n\nIf done correctly, you will receive a zone-wide yell, and a debuff called  Sleight of Hand. Once you get this debuff, you have 5 minutes to run all the way to the Undead side of Stratholme, to the gate to the left of the Necropolis where Lord Aurius Rivendare is located. You MUST kill Lord Aurius Rivendare to open the gate. If you arrive in time, a Hand of Naxxramas NPC will be there, and you will be able to use your Argent Dawn Commission to burn it to a crisp.",
+					["sourceQuests"] = { 76257 },	-- Darkmaster's Scourgestone
+					["questID"] = 76261,
+					["cost"] = {
+						{ "i", 12846, 1 },	-- 1x Argent Dawn Commission
+						{ "i", 13180, 1 },	-- 1x Stratholme Holy Water
+						{ "i", 206377, 1 },	-- 1x Ward of Naxxramas
+					}
+				}),
+				n(16116, {	-- Archmage Angela Dosantos
+					["description"] = "Talk to Archmage after defeating Hand of Naxxramas",
+					["sourceQuests"] = { 76261 },	-- Hand of Naxxramas
+					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
+					["questID"] = 76262,
+				}),
+				q(76263, {	-- The Dread Citadel - Naxxramas [Honored]
+					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
+					["altQuests"] = {
+						76264,	-- The Dread Citadel - Naxxramas [Revered]
+						76265,	-- The Dread Citadel - Naxxramas [Exalted]
+					},
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
+					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
+					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },
+					["cost"] = {
+						{ "i", 12363, 5 },	-- 5x Arcane Crystal
+						{ "i", 14344, 6 },	-- 6x Large Brilliant Shard
+						{ "i", 12811, 1 },	-- 1x Righteous Orb
+					},
+					["g"] = {
+						ach(18372),	-- Wards of the Dread Citadel
+					},
+				}),
+				q(76264, {	-- The Dread Citadel - Naxxramas [Revered]
+					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
+					["altQuests"] = {
+						76263,	-- The Dread Citadel - Naxxramas [Honored]
+						76265,	-- The Dread Citadel - Naxxramas [Exalted]
+					},
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
+					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
+					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },
+					["cost"] = {
+						{ "i", 12363, 2 },	-- 2x Arcane Crystal
+						{ "i", 14344, 3 },	-- 3x Large Brilliant Shard
+					},
+					["g"] = {
+						ach(18372),	-- Wards of the Dread Citadel
+					},
+				}),
+				q(76265, {	-- The Dread Citadel - Naxxramas [Exalted]
+					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
+					["altQuests"] = {
+						76263,	-- The Dread Citadel - Naxxramas [Honored]
+						76264,	-- The Dread Citadel - Naxxramas [Revered]
+					},
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
+					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
+					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },
+					["g"] = {
+						ach(18372),	-- Wards of the Dread Citadel
+					},
+				}),
+			})),
+			prof(FISHING, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				i(206471, {	-- Abomination's Chain
+					["description"] = "Chance to be fished from any slime in Naxxramas.",
+					["requireSkill"] = FISHING,
+				}),
+			})),
+			n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				q(76395, {	-- Corruptor's Scourgestones
+					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
+					["repeatable"] = true,
+					["cost"] = {{ "i", 206375, 1 }},	-- 1x Corruptor's Scourgestone
+					["g"] = {
+						i(DEATHS_BARGAINING_CHIP),
+					},
+				}),
+				q(76390, {	-- Inconvenience Fee
+					["sourceQuests"] = { 76307 },	-- Makeshift Grappling Hook
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
+					["cost"] = {
+						{ "i", 206374, 20 },	-- 20x Invader's Scourgestone
+						{ "i", 206375, 5 },		-- 5x Corruptor's Scourgestone
+						{ "i", 20520, 3 },		-- 3x Dark Rune
+						{ "i", 33042, 1 },		-- 1x Black Coffee
+						{ "i", 13180, 2 },		-- 2x Stratholme Holy Water
+						{ "i", 206473, 1 },		-- 1x Makeshift Grappling Hook
+					},
+					["g"] = {
+
+					},
+				}),
+				q(76396, {	-- Invader's Scourgestones
+					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
+					["repeatable"] = true,
+					["cost"] = {{ "i", 206374, 10 }},	-- 10x Invader's Scourgestone
+					["g"] = {
+						i(DEATHS_BARGAINING_CHIP),
+					},
+				}),
+				q(77244, {	-- Many Corruptor's Scourgestones
+					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
+					["repeatable"] = true,
+					["cost"] = {{ "i", 206375, 5 }},	-- 5x Corruptor's Scourgestone
+					["g"] = {
+						i(DEATHS_BARGAINING_CHIP),
+					},
+				}),
+			})),
+			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				i(206473, {	-- Makeshift Grappling Hook
+					["sourceQuests"] = {
+						76263,	-- The Dread Citadel - Naxxramas [Honored]
+						76264,	-- The Dread Citadel - Naxxramas [Revered]
+						76265,	-- The Dread Citadel - Naxxramas [Exalted]
+					},
+					["sourceQuestNumRequired"] = 1,
+					["questID"] = 76307,
+					["cost"] = {
+						{ "i", 206471, 1 },	-- 1x Abomination's Chain
+						{ "i", 206470, 1 },	-- 1x Construct's Hook
+						{ "i", 206472, 1 },	-- 1x Faerlina's Sewing Kit
+					},
+				}),
+			})),
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				o(403722, {	-- Conveniently Misplaced Hook
+					["description"] = "Located in the second room of the Construct Quarter, by a vat of slime to the right.",
+					["g"] = {
+						i(206470),	-- Construct's Hook
+					},
+				}),
+			})),
+			n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				n(206572, {	-- Zackett Skullsmash
+					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
+					["g"] = {
+						i(206573, {	-- Dented Raider's Belt
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+						}),
+						i(206575, {	-- Dented Raider's Boots
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+						}),
+						i(206571, {	-- Dented Raider's Bracers
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+						}),
+						i(206570, {	-- Dented Raider's Chestpiece
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+						}),
+						i(206572, {	-- Dented Raider's Gauntlets
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+						}),
+						i(206568, {	-- Dented Raider's Helmet
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+						}),
+						i(206574, {	-- Dented Raider's Leggings
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+						}),
+						i(206569, {	-- Dented Raider's Spaulders
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+						}),
+						i(206771, {	-- Pattern: Cursed Cloth (RECIPE!)
+							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+						}),
+						i(206772, {	-- Pattern: Languished Leather (RECIPE!)
+							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+						}),
+						i(206773, {	-- Pattern: Scourged Scales (RECIPE!)
+							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+						}),
+						i(206774, {	-- Plans: Undeath Metal (RECIPE!)
+							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
+						}),
+						i(206579),	-- Phylacterweave
+						i(206565, {	-- Plagued Grain (TOY!)
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 15 }},
+						}),
+						i(208068, {	-- Rotten Delicious
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 30 }},
+						}),
+						i(206577, {	-- Slime-Covered Scroll
+							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 12 }},
+						}),
+					},
+				}),
+			})),
+			n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				i(206375, {	-- Corruptor's Scourgestone
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				i(207702, {	-- Wartorn Scrap
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+			})),
 			d(3, {	-- 10-Man
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
@@ -124,6 +342,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									-- #if ANYCLASSIC
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
 									-- #endif
+								}),
+								i(206472, {	-- Faerlina's Sewing Kit
+									["timeline"] = { ADDED_10_1_5 },
 								}),
 								i(39200),	-- Grieving Spellblade
 								i(39199),	-- Watchful Eye
@@ -789,6 +1010,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									-- #if ANYCLASSIC
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
 									-- #endif
+								}),
+								i(206472, {	-- Faerlina's Sewing Kit
+									["timeline"] = { ADDED_10_1_5 },
 								}),
 								i(39730),	-- Widow's Fury
 								i(39732),	-- Faerlina's Madness

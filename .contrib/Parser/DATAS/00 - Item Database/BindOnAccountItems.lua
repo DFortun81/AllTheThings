@@ -249,6 +249,11 @@ i(42945);	-- Venerable Dal'Rend's Sacred Charge
 i(48716);	-- Venerable Mass of McGowan
 
 -----------------
+--   CLASSIC   --
+-----------------
+i(12844);	-- Argent Dawn Valor Token
+
+-----------------
 -- PATCH 6.2.2 --
 -----------------
 i(129941);	-- Commendation of the Ebon Blade [BOA]
@@ -330,3 +335,10 @@ i(203650);	-- Primalist Weapon
 i(205365);	-- Loamm Niffen Insignia [Uncommon]
 i(205342);	-- Loamm Niffen Insignia [Rare]
 i(205985);	-- Loamm Niffen Insignia [Epic]
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+i(206375);	-- Corruptor's Scourgestone
+i(206576);	-- Death's Bargaining Chip
+i(206374);	-- Invader's Scourgestone

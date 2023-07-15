@@ -2437,6 +2437,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
 					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
+					["sym"] = {{ "select", "itemID", 206584 }},	-- Archived Crafting Techniques
 					["groups"] = {
 						i(22014, {	-- Hallowed Brazier
 							["timeline"] = { "removed 4.0.3" },
@@ -2501,23 +2502,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire
-
-						-- 10.1.5 Naxx Items
-						i(206584, {	-- Archived Crafting Techniques
-							["timeline"] = { "added 10.1.5" },
-							--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
-							["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
-							["groups"] = {
-								i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
-								i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
-								i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
-								i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
-								i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
-								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
-								i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
-								i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
-							},
-						}),
 					},
 				}),
 				-- #if ANYCLASSIC

@@ -15,7 +15,6 @@ local i = function(itemID, factionID, unlock)
 end
 
 -- Classic
-i(12844, 529);		-- Argent Dawn Valor Token [Argent Dawn]
 i(19858, 270);	-- Zandalar Honor Token [Zandalar Tribe]
 
 -- Wrath of the Lich King
@@ -293,6 +292,11 @@ i(146939, 1894);	-- Wardens Insignia [The Wardens]
 
 -- NEUTRAL
 -- 1598, 2163	-- Tortollan Seekers Commendation
+
+-----------------
+--   CLASSIC   --
+-----------------
+i(12844, FACTION_ARGENT_DAWN);				-- Argent Dawn Valor Token
 
 -----------------
 -- PATCH 3.0.2 --

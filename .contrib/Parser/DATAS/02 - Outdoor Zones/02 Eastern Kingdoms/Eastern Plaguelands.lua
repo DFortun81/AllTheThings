@@ -1380,6 +1380,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(76268, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Corruptor's Scourgestones
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
+					["cost"] = {{ "i", 206375, 1 }},	-- 1x Corruptor's Scourgestone
+					["repeatable"] = true,
+					["groups"] = {
+						i(12844),	-- Argent Dawn Valor Token
+					},
+				})),
 				q(27531, {	-- Counter-Plague Research
 					["qg"] = 45828,	-- Argent Apotehcary Judkins
 					["sourceQuest"] = 27532,	-- The Plaguewood Tower
@@ -2016,6 +2025,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(76270, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Invader's Scourgestones
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
+					["cost"] = {{ "i", 206374, 10 }},	-- 10x Corruptor's Scourgestone
+					["repeatable"] = true,
+					["groups"] = {
+						i(12844),	-- Argent Dawn Valor Token
+					},
+				})),
 				q(27487, {	-- Ix'lar the Underlord
 					["qg"] = 45729,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27466,	-- Argent Call: Northdale
@@ -2127,6 +2145,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 55,
 				}),
+				q(77243, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Corruptor's Scourgestones
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
+					["cost"] = {{ "i", 206375, 5 }},	-- 5x Corruptor's Scourgestone
+					["repeatable"] = true,
+					["groups"] = {
+						i(12844),	-- Argent Dawn Valor Token
+					},
+				})),
 				q(5206, {	-- Marauders of Darrowshire
 					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuests"] = {
