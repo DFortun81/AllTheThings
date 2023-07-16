@@ -669,7 +669,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 6000 }},
 							}),
 							i(207049, {	-- Ensemble: Decorous Garments
-								["questID"] = 76583,
+							--	["questID"] = 76583,
 								["classes"] = CLOTH_CLASSES,
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 								["g"] = {
@@ -685,7 +685,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(207048, {	-- Ensemble: Lifegiver's Garms
-								["questID"] = 76584,
+							--	["questID"] = 76584,
 								["classes"] = LEATHER_CLASSES,
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 								["g"] = {
@@ -702,7 +702,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(207047, {	-- Ensemble: Hauberk of Discipline
-								["questID"] = 76585,
+							--	["questID"] = 76585,
 								["classes"] = MAIL_CLASSES,
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 								["g"] = {
@@ -719,7 +719,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(207046, {	-- Ensemble: Valhalas Ceremonial Armor
-								["questID"] = 76582,
+							--	["questID"] = 76582,
 								["classes"] = PLATE_CLASSES,
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 								["g"] = {
