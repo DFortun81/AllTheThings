@@ -1,12 +1,12 @@
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
 local Items = root(ROOTS.ItemDBConditional);
 local iq = function(itemID, questID, classID)
-	if not itemID == 0 then
+	if itemID ~= 0 then
 		Items[itemID] = { ["questID"] = questID, ["classes"] = { classID }, ["_drop"] = { "spellID" } };
 	end
 end
 local is = function(itemID, spellID, classID)
-	if not itemID == 0 then
+	if itemID ~= 0 then
 		Items[itemID] = { ["spellID"] = spellID, ["classes"] = { classID }, ["filterID"] = RECIPES, ["collectible"] = true };
 	end
 end
