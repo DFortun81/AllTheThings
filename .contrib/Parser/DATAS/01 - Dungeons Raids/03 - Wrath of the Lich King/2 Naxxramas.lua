@@ -103,7 +103,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 			})),
-			n(ACHIEVEMENTS, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				ach(18557),	-- Never Bothered, Anyway
 				ach(18616, {	-- Putting Wilhelm Out of Business
 					crit(1, {	-- Omarion's Notes - Pages 1 & 2
@@ -155,7 +155,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["_quests"] = { 76306 },
 					}),
 				}),
-			}),
+			})),
 			n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				i(206375, {	-- Corruptor's Scourgestone
 					["timeline"] = { ADDED_10_1_5 },
