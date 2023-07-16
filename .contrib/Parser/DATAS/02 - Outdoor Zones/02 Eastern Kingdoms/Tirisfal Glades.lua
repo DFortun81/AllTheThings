@@ -2044,6 +2044,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4773, {	-- Velma Warnam <Undead Horse Riding Instructor>
+					["coord"] = { 60.0, 52.6, TIRISFAL_GLADES },
+					["races"] = { ORC, TROLL, UNDEAD },
+					
+					-- Available to Undead without faction requirements.
+					["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. UNDEAD .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(10906, {	-- Undead Horsemanship
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(2118, {	-- Abigail Shiel <Trade Supplies>
 					-- #if AFTER CATA

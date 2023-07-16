@@ -2150,6 +2150,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4732, {	-- Randal Hunter <Horse Riding Instructor>
+					["coord"] = { 84.2, 65.0, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					
+					-- Available to Humans without faction requirements.
+					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. HUMAN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(824, {	-- Horse Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			-- #if AFTER 8.1.0.28724
 			n(TREASURES, {
 				o(310709, {	-- Waterlogged Chest

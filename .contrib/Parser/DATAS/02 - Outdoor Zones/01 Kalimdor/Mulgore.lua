@@ -1634,6 +1634,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(3690, {	-- Kar Stormsinger <Kodo Riding Instructor>
+					["coord"] = { 47.6, 58.4, MULGORE },
+					["races"] = HORDE_ONLY,
+					
+					-- Available to Tauren without faction requirements.
+					["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. TAUREN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(18995, {	-- Kodo Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(3685, {	-- Harb Clawhoof <Kodo Mounts>
 					-- #if AFTER CATA

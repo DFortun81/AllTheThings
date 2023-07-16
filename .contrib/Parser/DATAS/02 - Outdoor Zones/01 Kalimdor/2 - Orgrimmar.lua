@@ -4310,6 +4310,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4752, {	-- Kildar <Wolf Riding Instructor>
+					["coord"] = { 69.2, 13.0, ORGRIMMAR },
+					["races"] = { ORC, TROLL, UNDEAD },
+					
+					-- Available to Orcs without faction requirements.
+					["minReputation"] = { 76, EXALTED },	-- Orgrimmar, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. ORC .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(825, {	-- Wolf Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(149806, {	-- A. Shady
 					["coord"] = { 76.7, 35.6, ORGRIMMAR },

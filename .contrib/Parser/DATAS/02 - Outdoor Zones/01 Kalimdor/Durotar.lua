@@ -3262,6 +3262,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(7953, {	-- Xar'Ti <Raptor Riding Trainer>
+					["coord"] = { 55.3, 75.5, DUROTAR },
+					["races"] = { ORC, TROLL, UNDEAD },
+					
+					-- Available to Trolls without faction requirements.
+					["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. TROLL .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(10861, {	-- Raptor Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(3881, {	-- Grimtak
 					-- #if AFTER CATA

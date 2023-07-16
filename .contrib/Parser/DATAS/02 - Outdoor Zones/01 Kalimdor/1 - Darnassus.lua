@@ -861,6 +861,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4753, {	-- Jartsam <Nightsaber Riding Instructor>
+					["coord"] = { 38.6, 16.0, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					
+					-- Available to Night Elves without faction requirements.
+					["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. NIGHTELF .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(828, {	-- Tiger Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			-- #if AFTER 6.1.0.19508
 			n(TREASURES, {
 				o(240625, {	-- High Priestess' Reliquary
