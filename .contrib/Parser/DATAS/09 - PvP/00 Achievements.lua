@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-local HK_OnUpdate = [[function(t) t.SetAchievementCollected(t.achievementID, GetPVPLifetimeStats() >= t.rank); end]];
+local HK_OnUpdate = [[function(t) t:SetAchievementCollected(t.achievementID, GetPVPLifetimeStats() >= t.rank); end]];
 local HK_OnTooltip = [[function(t)
 	local s = "Get " .. t.rank .. " honorable kill" .. (t.rank == 1 and "" or "s") .. ".";
 	if not t.collected then
@@ -36,7 +36,7 @@ local THE_CONQUEROR_OnUpdate = [[function(t)
 				return true;
 			end
 		end
-		t.SetAchievementCollected(t.achievementID, t.wsg.standing == 8 and t.ab.standing == 8 and t.av.standing == 8);
+		t:SetAchievementCollected(t.achievementID, t.wsg.standing == 8 and t.ab.standing == 8 and t.av.standing == 8);
 	end
 end]];
 local THE_JUSTICAR_OnUpdate = [[function(t)
@@ -65,7 +65,7 @@ local THE_JUSTICAR_OnUpdate = [[function(t)
 				return true;
 			end
 		end
-		t.SetAchievementCollected(t.achievementID, t.wsg.standing == 8 and t.ab.standing == 8 and t.av.standing == 8);
+		t:SetAchievementCollected(t.achievementID, t.wsg.standing == 8 and t.ab.standing == 8 and t.av.standing == 8);
 	end
 end]];
 local THE_JUSTICAR_AND_THE_CONQUEROR_OnClick = [[function(row, button)

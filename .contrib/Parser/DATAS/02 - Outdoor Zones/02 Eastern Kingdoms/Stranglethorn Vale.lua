@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["provider"] = { "i", 18706 },	-- Arena Master
 						-- #if BEFORE WRATH
 						["description"] = "Loot the Arena Master trinket from the Gurubashi Arena. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, GetItemCount(18706, true) > 0 or GetItemCount(19024, true) > 0); end]],
+						["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetItemCount(18706, true) > 0 or GetItemCount(19024, true) > 0); end]],
 						-- #endif
 					}),
 					i(18706),	-- Arena Master

@@ -470,7 +470,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 											break;
 										end
 									end
-									t.SetAchievementCollected(t.achievementID, collected);
+									t:SetAchievementCollected(t.achievementID, collected);
 								end]],
 								-- #else
 								["description"] = "Once you have both, simply equip them for this achievement.",

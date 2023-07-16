@@ -60,7 +60,7 @@ local INSANE_IN_THE_MEMBRANE_OnUpdate = [[function(t)
 				break;
 			end
 		end
-		t.SetAchievementCollected(t.achievementID, collected);
+		t:SetAchievementCollected(t.achievementID, collected);
 	end
 end]];
 local INSANE_IN_THE_MEMBRANE_OnTooltip = [[function(t)
