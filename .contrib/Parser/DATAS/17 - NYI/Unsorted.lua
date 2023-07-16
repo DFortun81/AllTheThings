@@ -586,8 +586,6 @@ root(ROOTS.Unsorted, {
 			n(REWARDS, {
 				-- Research
 				i(205454),	-- Researchers Wheel Barrow
-				-- Special
-				i(205877),	-- Adventurer's Footlocker
 				-- Diablo
 				i(206026),	-- Ensemble: Enmity Hood and Cloak
 				-- New Stuff
