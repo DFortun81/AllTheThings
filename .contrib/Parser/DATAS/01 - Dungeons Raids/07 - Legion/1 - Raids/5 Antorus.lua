@@ -1762,6 +1762,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(49718),	-- Argus - first kill - received "Khaz'goroth's Courage" (itemID 154176 / "Aggramar's Conviction" (itemID 154173)
 		q(49362),	-- full raid cleared
 		q(48570),	-- Tracking Quest - triggers when the door opens to Kin'garoth
+		q(77246, {["timeline"]={ADDED_10_1_5}}),	-- after <Channel the power of your weapon into the gateway.> for Grimoire of the Xorothian Felhunter (itemID 208050)
 	}),
 });
 root(ROOTS.NeverImplemented, {
