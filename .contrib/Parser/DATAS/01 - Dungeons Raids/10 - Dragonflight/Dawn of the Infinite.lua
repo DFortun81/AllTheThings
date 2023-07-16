@@ -346,7 +346,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(208062, {	-- Quantum Shoulders
 							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
 						}),
-						n(WEAPONS, bubbleDown({ ["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)" }, {
+						n(WEAPONS, sharedData({ ["description"] = "This item turns into 1 unlearned Item from any Dungeon, Raid or World drop before Dragonflight (10.0)" }, {
 							i(208111),	-- Quantum Axe
 							i(208117),	-- Quantum Bow
 							i(208118),	-- Quantum Crossbow
@@ -360,7 +360,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- CA IS NOT POSSIBLE -- Gold 13.07.2023
 								i(1387),	-- Ghoulfang (Removed)
 								i(16039),	-- Ta'Kierthan Songblade (Removed)
-								i(2754),	-- Tarnished Bastard Sword (Removed)			
+								i(2754),	-- Tarnished Bastard Sword (Removed)
 							}),
 							i(208120),	-- Quantum Knife
 							i(208121),	-- Quantum Knuckles
