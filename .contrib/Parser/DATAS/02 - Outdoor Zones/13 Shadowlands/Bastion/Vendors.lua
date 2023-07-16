@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}, {	-- Friendly
 						i(183098),	-- Technique: Codex of the Still Mind (RECIPE!)
 					}, {	-- Honored
-						i(183094),	-- Plans: Shadowsteel Helm
+						i(183094),	-- Plans: Shadowsteel Helm (RECIPE!)
 						i(184756),	-- Smoothed Loop of Contemplation
 					}, {	-- Revered
 						i(184410),	-- Aspirant's Stretcher (TOY!)

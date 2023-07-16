@@ -1875,8 +1875,6 @@ i(0, 322595);		-- Shadowsteel Armguards
 i(0, 322587);		-- Shadowsteel Breastplate
 i(0, 322589);		-- Shadowsteel Gauntlets
 i(0, 322591);		-- Shadowsteel Greaves
-i(0, 322590);		-- Shadowsteel Helm
-i(0, 322593);		-- Shadowsteel Pauldrons
 i(0, 322588);		-- Shadowsteel Sabatons
 i(0, 322594);		-- Shadowsteel Waistguard
 i(0, 307717);		-- Porous Sharpening Stone
@@ -1884,6 +1882,8 @@ i(0, 307719);		-- Porous Weightstone
 --- ITEM ---
 i(0, 343185);		-- Crafter's Mark II
 i(0, 343186);		-- Crafter's Mark III
+i(183094, 322590);	-- Shadowsteel Helm
+i(183095, 322593);	-- Shadowsteel Pauldrons
 --- LEGENDARY ---
 i(0, 307705);		-- Shadowghast Armguards [Rank 1]
 i(0, 332006);		-- Shadowghast Armguards [Rank 2]

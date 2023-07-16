@@ -907,8 +907,6 @@ SL_BLACKSMITHING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timel
 		r(322587),	-- Shadowsteel Breastplate
 		r(322589),	-- Shadowsteel Gauntlets
 		r(322591),	-- Shadowsteel Greaves
-		r(322590),	-- Shadowsteel Helm
-		r(322593),	-- Shadowsteel Pauldrons
 		r(322588),	-- Shadowsteel Sabatons
 		r(322594),	-- Shadowsteel Waistguard
 	}),
