@@ -1588,7 +1588,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
 				["questID"] = 77158,
 				["g"] = {
-					i(207294),	-- Grimoire of the Felfrost Imp (CI!)
+					i(207294, {	-- Grimoire of the Felfrost Imp (CI!)
+						["questID"] = 76747,
+					}),
 				},
 			})),
 		}),

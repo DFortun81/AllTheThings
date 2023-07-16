@@ -672,8 +672,6 @@ root(ROOTS.Unsorted, {
 			i(206520),	-- Beverage for Pedgi
 			i(206653),	-- Fel Pinecone
 			i(206681),	-- Letter from Oman
-			i(208226),	-- Mysterious Letter
-			i(208227),	-- Mysterious Letter
 			i(208400),	-- Silks of the Unnamed Cult
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
 			i(208448),	-- Infinitea

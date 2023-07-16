@@ -149,6 +149,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 				}),
+				q(76251, {	-- Fowl Beasts
+					["provider"] = { "n", 206072 },	-- Nathanox Matris
+					["coord"] = { 52.2, 81.7, THALDRASZUS },
+				}),
 				q(75466, {	-- Lost Time-Lost Vikings
 					["provider"] = { "n", 203769 },	-- Bartender Bob
 					["coord"] = { 52.1, 81.5, THALDRASZUS },
@@ -215,7 +219,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(206368),	-- Wand of Mass Polymorph
 					},
 				}),
-
 			})),
 			n(VENDORS, {
 				n(209220, {	-- Ironus Coldsteel <Chronosmith>
