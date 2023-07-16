@@ -8,7 +8,7 @@ local iq = function(itemID, questID, classID)
 end
 local is = function(itemID, spellID, classID)
 	if itemID ~= 0 then
-		Recipes[spellID] = { ["itemID"] = itemID, ["classes"] = { classID }, ["filterID"] = RECIPES, ["collectible"] = true };
+		Items[itemID] = { ["recipeID"] = spellID, ["classes"] = { classID }, ["filterID"] = RECIPES, ["collectible"] = true };
 	else
 		Recipes[spellID] = { ["classes"] = { classID }, ["filterID"] = RECIPES, ["collectible"] = true };
 	end
@@ -94,7 +94,7 @@ is(147770, 0, HUNTER);				-- Tome of the PTR Beast
 -----------------
 -- PATCH 8.0.1 --
 -----------------
---is(162626, 277792, MAGE);			-- Tome of Polymorph: Bumblebee
+is(162626, 277792, MAGE);			-- Tome of Polymorph: Bumblebee
 is(162625, 277787, MAGE);			-- Tome of Polymorph: Direhorn
 is(159841, 269352, SHAMAN);			-- Tome of Hex: Skeletal Hatchling
 is(162624, 277784, SHAMAN);			-- Tome of Hex: Wicker Mongrel
@@ -169,13 +169,12 @@ iq(139310, 76373, WARLOCK);			-- Grimoire of the Shivarra
 --- Felhunter ---
 iq(208051, 77180, WARLOCK);			-- Grimoire of the Antoran Felhunter
 iq(208052, 77181, WARLOCK);			-- Grimoire of the Voracious Felmaw
+iq(208050, 77183, WARLOCK);			-- Grimoire of the Xorothian Felhunter
+iq(208048, 77182, WARLOCK);			-- Ritual of the Voidmaw Felhunter
 --- Felguard ---
 iq(139315, 76376, WARLOCK);			-- Grimoire of the Wrathguard
 --- Infernal ---
 iq(139314, 76370, WARLOCK);			-- Grimoire of the Abyssal
---- Unknown ---
-iq(208050, 77183, WARLOCK);			-- Grimoire of the Xorothian Felhunter [???]
-iq(208048, 77182, WARLOCK);			-- Ritual of the Voidmaw Felhunter [???]
 -- 77184 Probably Normal Felhunter
 --- NYI ---
 iq(139313, nil, WARLOCK);			-- Grimoire of the Terrorguard

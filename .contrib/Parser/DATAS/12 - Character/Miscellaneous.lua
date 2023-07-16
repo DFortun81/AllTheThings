@@ -124,15 +124,13 @@ root(ROOTS.Character, filter(MISC, {
 			["timeline"] = { ADDED_3_0_3 },
 		}),
 		i(44602, {	-- Tome of Dalaran Intellect (CI!)
-			["timeline"] = { ADDED_3_0_3 },
+			["timeline"] = { ADDED_3_0_3, REMOVED_7_0_3_LAUNCH },
 		}),
 		i(44709, {	-- Tome of Polymorph: Black Cat (CI!)
 			["timeline"] = { ADDED_3_0_3 },
 		}),
 		i(162626, {	-- Tome of Polymorph: Bumblebee (CI!)
 			["timeline"] = { ADDED_8_0_1_LAUNCH },
-			["filterID"] = RECIPES,
-			["spellID"] = 277792,
 		}),
 		i(162625, {	-- Tome of Polymorph: Direhorn (CI!)
 			["timeline"] = { ADDED_8_0_1_LAUNCH },
@@ -195,58 +193,64 @@ root(ROOTS.Character, filter(MISC, {
 		}),
 	}),
 	cl(WARLOCK, {
-		i(139314, {	-- Grimoire of the Abyssal
+		i(139314, {	-- Grimoire of the Abyssal (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(208051, {	-- Grimoire of the Antoran Felhunter
+		i(208051, {	-- Grimoire of the Antoran Felhunter (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(207178, {	-- Grimoire of the Darkfire Imp
+		i(207178, {	-- Grimoire of the Darkfire Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(207295, {	-- Grimoire of the Dreadfire Imp
+		i(207295, {	-- Grimoire of the Dreadfire Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(129018, {	-- Grimoire of the Fel Imp
+		i(129018, {	-- Grimoire of the Fel Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(207297, {	-- Grimoire of the Felblaze Imp
+		i(207297, {	-- Grimoire of the Felblaze Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(207294, {	-- Grimoire of the Felfrost Imp
+		i(207294, {	-- Grimoire of the Felfrost Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(207114, {	-- Grimoire of the Fiendish Imp
+		i(207114, {	-- Grimoire of the Fiendish Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(207111, {	-- Grimoire of the Hellfire Fel Imp
+		i(207111, {	-- Grimoire of the Hellfire Fel Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(207296, {	-- Grimoire of the Netherbound Imp
+		i(207296, {	-- Grimoire of the Netherbound Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(147119, {	-- Grimoire of the Shadow Succubus
+		i(147119, {	-- Grimoire of the Shadow Succubus (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(139310, {	-- Grimoire of the Shivarra
+		i(139310, {	-- Grimoire of the Shivarra (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(207113, {	-- Grimoire of the Trickster Fel Imp
+		i(207113, {	-- Grimoire of the Trickster Fel Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(207112, {	-- Grimoire of the Void-Touched Fel Imp
+		i(207112, {	-- Grimoire of the Void-Touched Fel Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(139311, {	-- Grimoire of the Voidlord
+		i(139311, {	-- Grimoire of the Voidlord (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(208052, {	-- Grimoire of the Voracious Felmaw
+		i(208052, {	-- Grimoire of the Voracious Felmaw (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(139315, {	-- Grimoire of the Wrathguard
+		i(139315, {	-- Grimoire of the Wrathguard (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(147117, {	-- Orb of the Fel Temptress
+		i(208050, {	-- Grimoire of the Xorothian Felhunter (CI!)
+			["timeline"] = { ADDED_10_1_5 },
+		}),
+		i(147117, {	-- Orb of the Fel Temptress (CI!)
+			["timeline"] = { ADDED_10_1_5 },
+		}),
+		i(208048, {	-- Ritual of the Voidmaw Felhunter (CI!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		r(101508, {	-- The Codex of Xerrath (CI!)
