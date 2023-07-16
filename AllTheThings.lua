@@ -5379,7 +5379,8 @@ end
 -- Synchronization Functions
 (function()
 local outgoing,incoming,queue,active = {},{},{};
-local whiteListedFields = { --[["Achievements",]] "Buildings", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "Spells", "Titles", "Quests" };
+local whiteListedFields = { --[["Achievements",]] "AzeriteEssenceRanks", "Buildings", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "Quests", "Spells", "Titles" };
+app.CharacterSyncTables = whiteListedFields;
 local function splittoarray(sep, inputstr)
 	local t = {};
 	for str in string.gmatch(inputstr, "([^" .. (sep or "%s") .. "]+)") do
@@ -20490,7 +20491,7 @@ customWindowUpdates["Sync"] = function(self)
 						GameTooltip:AddDoubleLine(PLAYED, NEVER, 0.8, 0.8, 0.8);
 					end
 					local total = 0;
-					for i,field in ipairs({ "Achievements", "Buildings", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "Spells", "Titles", "Quests" }) do
+					for i,field in ipairs(app.CharacterSyncTables) do
 						local values = character[field];
 						if values then
 							local subtotal = 0;
