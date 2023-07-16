@@ -12662,11 +12662,6 @@ app.CreateHeader = function(id, t)
 end
 app.CreateNPC = function(id, t)
 	if t then
-		-- TEMP: clean MoH tagging from random Vendors
-		if t.itemID == 137642 then
-			t.itemID = nil;
-			-- print("ItemID",t.itemID,"used on NPC/Header group... Don't do that!",id);
-		end
 		if id < 1 then
 			if t.achID then
 				t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;

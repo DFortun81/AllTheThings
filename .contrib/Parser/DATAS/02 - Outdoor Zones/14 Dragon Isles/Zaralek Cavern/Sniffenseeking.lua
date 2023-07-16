@@ -198,9 +198,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				n(QUESTS, sharedData({
 					["minReputation"] = { FACTION_LOAMM_NIFFEN, 9 },
-					["g"] = {
-						i(204985),  -- 2x Barter Brick
-					},
 				}, {
 					-- Sniffen Sage --
 					q(75772, {	-- Flask Manage

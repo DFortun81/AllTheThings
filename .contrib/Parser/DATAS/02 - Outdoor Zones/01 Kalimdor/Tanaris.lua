@@ -5148,7 +5148,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
 				}),
 				n(40216, {	-- Blazzek the Biter <Vicious Gladiator>
-					["itemID"] = 137642,	-- Mark of Honor
+
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["description"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
 					["groups"] = VICIOUS_GROUPS,

@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
@@ -49,7 +48,6 @@ root(ROOTS.Zones, {
 				}),
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["races"] = HORDE_ONLY,
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 56.5, 28.1, LEGION_DALARAN },
 					["g"] = {
 						n(PVP_COMBATANT, {	-- Season1+Season2
@@ -2025,7 +2023,6 @@ root(ROOTS.Zones, {
 						un(ELITE_PVP_REQUIREMENT, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
 						un(ELITE_PVP_REQUIREMENT, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
 						un(ELITE_PVP_REQUIREMENT, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
-
 						n(PVP_ELITE, {	-- Season1+Season2
 							cl(DEATHKNIGHT, {
 								un(ELITE_PVP_REQUIREMENT, i(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (A)
@@ -3092,7 +3089,6 @@ root(ROOTS.Zones, {
 				}),
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["races"] = ALLIANCE_ONLY,
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 29.4, 75.6, LEGION_DALARAN },
 					["g"] = {
 						n(PVP_COMBATANT, {	-- Season1+Season2

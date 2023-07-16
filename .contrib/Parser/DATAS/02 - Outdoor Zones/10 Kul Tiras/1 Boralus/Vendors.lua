@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			n(143560, {	-- Marshal Gabriel
 				["coord"] = { 56.2, 25.7, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["itemID"] = 137642,	-- Mark of Honor
+
 				["g"] = {
 				--	Arsenals
 				--	Dread Aspirant, Battle for Azeroth Season 1

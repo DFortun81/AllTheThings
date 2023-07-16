@@ -11,7 +11,6 @@ root(ROOTS.Zones, m(PANDARIA, {
 			n(75695, {	-- Acon Deathwielder
 				["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 				["races"] = HORDE_ONLY,
-				["itemID"] = 137642,	-- Mark of Honor
 				["g"] = {
 					n(WEAPONS, {
 						i(144251, {	-- Arsenal: Grievous Gladiator's Weapons (A)
@@ -862,7 +861,6 @@ root(ROOTS.Zones, m(PANDARIA, {
 			n(75693, {	-- Doris Chiltonius Season 12: Malevolent Gladiator Vendor. Items are tagged as S13
 				["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 				["races"] = HORDE_ONLY,
-				["itemID"] = 137642,	-- Mark of Honor
 				["g"] = {
 					n(WEAPONS, {
 						i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
@@ -1882,7 +1880,6 @@ root(ROOTS.Zones, m(PANDARIA, {
 			n(75690, {	-- Lok'nor Bloodfist <Dreadful Gladiator>
 				["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 				["races"] = HORDE_ONLY,
-				["itemID"] = 137642,	-- Mark of Honor
 				["g"] = {
 					cl(DEATHKNIGHT, {
 						i(138715, {	-- Ensemble: Dreadful Gladiator's Dreadplate Armor
@@ -2484,7 +2481,6 @@ root(ROOTS.Zones, m(PANDARIA, {
 			n(75688, {	-- Roo Desvin S13 Tyrannical Vendor
 				["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 				["races"] = HORDE_ONLY,
-				["itemID"] = 137642,	-- Mark of Honor
 				["g"] = {
 					n(WEAPONS, {
 						i(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons
@@ -3317,7 +3313,6 @@ root(ROOTS.Zones, m(PANDARIA, {
 			n(78461, {	-- Shonn Su (Prideful Gladiator Vendor)
 				["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 				["races"] = HORDE_ONLY,
-				["itemID"] = 137642,	-- Mark of Honor
 				["g"] = {
 					un(ELITE_PVP_REQUIREMENT, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 					n(WEAPONS, {
