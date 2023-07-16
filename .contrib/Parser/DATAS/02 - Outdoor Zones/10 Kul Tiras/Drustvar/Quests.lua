@@ -20,11 +20,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 129642 },	-- Lucille Waycrest
 			}),
 			q(50327, {	-- A Little 'Pick Me Up'
-				["sourceQuests"] = { 50306 },	-- Odds and Ends
+				["sourceQuests"] = {
+					50306,	-- Odds and Ends
+					50265,	-- Saving Master Ashton
+				},
 				["coord"] = { 20.6, 57.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 133126 },	-- Marten Webb
-				-- May have additional requirements; needs confirmation.
 			}),
 			q(50174, {	-- All Wrapped Up
 				["provider"] = { "n", 132374 },	-- Elsie Wright

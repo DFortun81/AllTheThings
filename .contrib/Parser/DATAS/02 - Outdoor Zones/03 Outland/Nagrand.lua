@@ -1136,7 +1136,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9878, {	-- Solving the Problem
 						["qg"] = 18224,	-- Poli'lukluk the Wiser
-						["sourceQuest"] = 9918,	-- Not On My Watch!
+						-- ["sourceQuest"] = 9918,	-- Not On My Watch! [2023.07.13 Discord]
 						["coord"] = { 54.4, 72.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1779,7 +1779,7 @@ root(ROOTS.Zones, {
 					}),
 					n(19021, {	-- Nancila
 						["coord"] = { 55.2, 70.6, NAGRAND },
-						["races"] = HORDE_ONLY,
+						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{"select","itemID",
 							30758,	-- Aldor Guardian Rifle
 							30757,	-- Draenic Light Crossbow
