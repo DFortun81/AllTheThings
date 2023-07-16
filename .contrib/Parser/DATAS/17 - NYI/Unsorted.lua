@@ -408,35 +408,6 @@ root(ROOTS.Unsorted, {
 				i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
 			}),
 			n(PROFESSIONS, {
-				-- These are not Hooked up in ProfessionDB
-				-- I wonder if we will get new recipeIDs or have to hook them up the old ones. / Braghe
-				i(206405),	-- Pattern: Polar Tunic
-				i(206406),	-- Pattern: Polar Bracers
-				i(206407),	-- Pattern: Polar Gloves
-				i(206413),	-- Pattern: Icy Scale Breastplate
-				i(206414),	-- Pattern: Icy Scale Bracers
-				i(206415),	-- Pattern: Icy Scale Gauntlets
-				i(206421),	-- Plans: Icebane Breastplate
-				i(206422),	-- Plans: Icebane Bracers
-				i(206423),	-- Plans: Icebane Gauntlets
-				i(206397),	-- Pattern: Glacial Vest
-				i(206398),	-- Pattern: Glacial Wrists
-				i(206399),	-- Pattern: Glacial Gloves
-				i(206393),	-- Pattern: Glacial Cloak
-				prof(BLACKSMITHING, {
-					-- RECIPES --
-					i(206419),	-- Plans: Icebane Coif (RECIPE!)
-					i(206425),	-- Plans: Icebane Leggings (RECIPE!)
-					i(206420),	-- Plans: Icebane Mantle (RECIPE!)
-					i(206426),	-- Plans: Icebane Trudgers (RECIPE!)
-					i(206424),	-- Plans: Icebane Waistguard (RECIPE!)
-					-- CRAFTED --
-					i(206442),	-- Icebane Leggings
-					i(206443),	-- Icebane Mantle
-					i(206444),	-- Icebane Coif
-					i(206445),	-- Icebane Waistguard
-					i(206446),	-- Icebane Trudgers
-				}),
 				prof(COOKING, {
 					-- NYI --??
 					-- RECIPES --
@@ -456,18 +427,6 @@ root(ROOTS.Unsorted, {
 					i(206191),	-- Roquefort-Stuffed Peppers
 					i(206190),	-- Venrik's Goat Milk
 				}),
-				prof(ENGINEERING, {
-					-- RECIPES --
-
-					-- CRAFTED --
-
-				}),
-				prof(INSCRIPTION, {
-					-- RECIPES --
-
-					-- CRAFTED --
-
-				}),
 				prof(JEWELCRAFTING, {
 					-- RECIPES --
 
@@ -475,51 +434,6 @@ root(ROOTS.Unsorted, {
 
 					-- NYI --??
 					r(412557),	-- TEST CRUSHING (DNT)
-				}),
-				prof(LEATHERWORKING, {
-					-- RECIPES --
-
-					i(206411),	-- Pattern: Icy Scale Crown (RECIPE!)
-					i(206417),	-- Pattern: Icy Scale Leggings (RECIPE!)
-					i(206412),	-- Pattern: Icy Scale Shoulderpads (RECIPE!)
-					i(206418),	-- Pattern: Icy Scale Stompers (RECIPE!)
-					i(206416),	-- Pattern: Icy Scale Waistwrap (RECIPE!)
-
-
-					i(206408),	-- Pattern: Polar Belt (RECIPE!)
-					i(206410),	-- Pattern: Polar Footwarmers (RECIPE!)
-					i(206403),	-- Pattern: Polar Helm (RECIPE!)
-					i(206409),	-- Pattern: Polar Leggings (RECIPE!)
-					i(206404),	-- Pattern: Polar Spaulders (RECIPE!)
-					-- CRAFTED --
-
-					i(206439),	-- Icy Scale Crown
-					i(206437),	-- Icy Scale Leggings
-					i(206438),	-- Icy Scale Shoulderpads
-					i(206441),	-- Icy Scale Stompers
-					i(206440),	-- Icy Scale Waistwrap
-					i(206435),	-- Polar Belt
-					i(206436),	-- Polar Footwarmers
-					i(206434),	-- Polar Helm
-					i(206432),	-- Polar Leggings
-					i(206433),	-- Polar Spaulders
-				}),
-				prof(TAILORING, {
-					-- RECIPES --
-					i(206395),	-- Pattern: Glacial Chapeau (RECIPE!)
-					i(206396),	-- Pattern: Glacial Epaulets (RECIPE!)
-					i(206402),	-- Pattern: Glacial Footwear (RECIPE!)
-					i(206401),	-- Pattern: Glacial Leggings (RECIPE!)
-					i(206400),	-- Pattern: Glacial Tether (RECIPE!)
-
-					-- CRAFTED --
-
-					i(206429),	-- Glacial Chapeau
-					i(206428),	-- Glacial Epaulets
-					i(206431),	-- Glacial Footwear
-					i(206427),	-- Glacial Leggings
-					i(206430),	-- Glacial Tether
-
 				}),
 			}),
 			i(52032),	-- Rockin'-Powder-Infused Rocket Boots

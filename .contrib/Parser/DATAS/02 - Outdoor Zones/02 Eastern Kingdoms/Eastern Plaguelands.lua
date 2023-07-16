@@ -3468,6 +3468,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
+					["coord"] = { 75.6, 52.0, EASTERN_PLAGUELANDS },
+					["groups"] = sharedData({
+						["cost"] = {{ "i", 12844, 3 }},	-- 3x Argent Dawn Valor Token
+						["timeline"] = { ADDED_10_1_5 },
+					}, {
+						i(206395),	-- Pattern: Glacial Chapeau (RECIPE!)
+						i(206393),	-- Pattern: Glacial Cloak (RECIPE!)
+						i(206396),	-- Pattern: Glacial Epaulets (RECIPE!)
+						i(206402),	-- Pattern: Glacial Footwear (RECIPE!)
+						i(206399),	-- Pattern: Glacial Gloves (RECIPE!)
+						i(206401),	-- Pattern: Glacial Leggings (RECIPE!)
+						i(206400),	-- Pattern: Glacial Tether (RECIPE!)
+						i(206397),	-- Pattern: Glacial Vest (RECIPE!)
+						i(206398),	-- Pattern: Glacial Wrists (RECIPE!)
+						i(206414),	-- Pattern: Icy Scale Bracers (RECIPE!)
+						i(206413),	-- Pattern: Icy Scale Breastplate (RECIPE!)
+						i(206411),	-- Pattern: Icy Scale Crown (RECIPE!)
+						i(206415),	-- Pattern: Icy Scale Gauntlets (RECIPE!)
+						i(206417),	-- Pattern: Icy Scale Leggings (RECIPE!)
+						i(206412),	-- Pattern: Icy Scale Shoulderpads (RECIPE!)
+						i(206418),	-- Pattern: Icy Scale Stompers (RECIPE!)
+						i(206416),	-- Pattern: Icy Scale Waistwrap (RECIPE!)
+						i(206408),	-- Pattern: Polar Belt (RECIPE!)
+						i(206406),	-- Pattern: Polar Bracers (RECIPE!)
+						i(206410),	-- Pattern: Polar Footwarmers (RECIPE!)
+						i(206407),	-- Pattern: Polar Gloves (RECIPE!)
+						i(206403),	-- Pattern: Polar Helm (RECIPE!)
+						i(206409),	-- Pattern: Polar Leggings (RECIPE!)
+						i(206404),	-- Pattern: Polar Spaulders (RECIPE!)
+						i(206405),	-- Pattern: Polar Tunic (RECIPE!)
+						i(206421),	-- Plans: Icebane Breastplate (RECIPE!)
+						i(206422),	-- Plans: Icebane Bracers (RECIPE!)
+						i(206419),	-- Plans: Icebane Coif (RECIPE!)
+						i(206423),	-- Plans: Icebane Gauntlets (RECIPE!)
+						i(206425),	-- Plans: Icebane Leggings (RECIPE!)
+						i(206420),	-- Plans: Icebane Mantle (RECIPE!)
+						i(206426),	-- Plans: Icebane Trudgers (RECIPE!)
+						i(206424),	-- Plans: Icebane Waistguard (RECIPE!)
+					}),
+				}),
 				n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 					-- #if AFTER CATA
 					["coord"] = { 75.8, 54.0, EASTERN_PLAGUELANDS },

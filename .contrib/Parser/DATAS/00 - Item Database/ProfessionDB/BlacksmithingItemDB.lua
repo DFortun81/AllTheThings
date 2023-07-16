@@ -94,8 +94,8 @@ i(0, 9926);			-- Heavy Mithril Shoulder
 i(0, 2674);			-- Heavy Sharpening Stone
 i(0, 3117);			-- Heavy Weightstone
 i(0, 28242);		-- Icebane Breastplate [REMOVED: 3.0.2]
-i(0, 28243);		-- Icebane Gauntlets [REMOVED: 3.0.2]
 i(0, 28244);		-- Icebane Bracers [REMOVED: 3.0.2]
+i(0, 28243);		-- Icebane Gauntlets [REMOVED: 3.0.2]
 i(0, 8768);			-- Iron Buckle
 i(0, 9961);			-- Mithril Coif
 i(0, 9931);			-- Mithril Scale Pants
@@ -2145,7 +2145,10 @@ i(206557, 413757);	-- Death's Gamble
 i(206537, 413524);	-- Edict of the Redeemed Crusader
 i(206555, 413755);	-- Gauntlets of the Unrelenting
 i(206550, 413750);	-- Harbinger of Death
+i(206421, 28242);	-- Icebane Breastplate
+i(206422, 28244);	-- Icebane Bracers
 i(206419, 413506);	-- Icebane Coif
+i(206423, 28243);	-- Icebane Gauntlets
 i(206420, 413507);	-- Icebane Mantle
 i(206424, 413508);	-- Icebane Waistguard
 i(206425, 413509);	-- Icebane Leggings

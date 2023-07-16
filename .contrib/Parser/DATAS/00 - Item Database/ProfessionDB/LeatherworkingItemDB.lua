@@ -1902,7 +1902,10 @@ i(204969, 406266);	-- Spore Colony Shoulderguards
 -- ITEM --
 i(206556, 413756);	-- Displacement Boots
 i(206529, 413516);	-- Helm of Lingering Power
+i(206414, 28224);	-- Icy Scale Bracers
+i(206413, 28222);	-- Icy Scale Breastplate
 i(206411, 413501);	-- Icy Scale Crown
+i(206415, 28223);	-- Icy Scale Gauntlets
 i(206417, 413504);	-- Icy Scale Leggings
 i(206412, 413502);	-- Icy Scale Shoulderpads
 i(206418, 413505);	-- Icy Scale Stompers
@@ -1911,10 +1914,13 @@ i(206772, 414565);	-- Languished Leather
 i(206561, 413761);	-- Lucien's Lost Soles
 i(206538, 413738);	-- Nerubian Persuader
 i(206408, 413498);	-- Polar Belt
+i(206406, 28221);	-- Polar Bracers
 i(206410, 413500);	-- Polar Footwarmers
 i(206403, 413496);	-- Polar Helm
+i(206407, 28220);	-- Polar Gloves
 i(206409, 413499);	-- Polar Leggings
 i(206404, 413497);	-- Polar Spaulders
+i(206405, 28219);	-- Polar Tunic
 i(207577, 416692);	-- Sanctified Leather Hat
 i(206773, 414566);	-- Scourged Scales
 i(206530, 413517);	-- Skyfury Headdress

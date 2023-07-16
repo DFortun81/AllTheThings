@@ -104,6 +104,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 			})),
 			n(ACHIEVEMENTS, {
+				ach(18557),	-- Never Bothered, Anyway
 				ach(18616, {	-- Putting Wilhelm Out of Business
 					crit(1, {	-- Omarion's Notes - Pages 1 & 2
 						["_quests"] = { 76291 },

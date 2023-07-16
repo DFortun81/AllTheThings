@@ -278,9 +278,14 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
 			applyclassicphase(PHASE_THREE, i(19043)),	-- Heavy Timbermaw Belt
 			applyclassicphase(PHASE_THREE, i(19048)),	-- Heavy Timbermaw Boots
-			applyclassicphase(PHASE_SIX, i(22671, {["timeline"]={"removed 3.0.2"}})),	-- Icebane Bracers
-			applyclassicphase(PHASE_SIX, i(22669, {["timeline"]={"removed 3.0.2"}})),	-- Icebane Breastplate
-			applyclassicphase(PHASE_SIX, i(22670, {["timeline"]={"removed 3.0.2"}})),	-- Icebane Gauntlets
+			applyclassicphase(PHASE_SIX, i(22671, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Icebane Bracers
+			applyclassicphase(PHASE_SIX, i(22669, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Icebane Breastplate
+			i(206444, {["timeline"] = {ADDED_10_1_5}}),	-- Icebane Coif
+			applyclassicphase(PHASE_SIX, i(22670, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Icebane Gauntlets
+			i(206442, {["timeline"] = {ADDED_10_1_5}}),	-- Icebane Leggings
+			i(206443, {["timeline"] = {ADDED_10_1_5}}),	-- Icebane Mantle
+			i(206446, {["timeline"] = {ADDED_10_1_5}}),	-- Icebane Trudgers
+			i(206445, {["timeline"] = {ADDED_10_1_5}}),	-- Icebane Waistguard
 			i(12424),	-- Imperial Plate Belt
 			i(12426),	-- Imperial Plate Boots
 			i(12425),	-- Imperial Plate Bracers
@@ -1964,6 +1969,14 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			}),
 		}),
 		filter(LEATHER, {
+			i(206435, {["timeline"] = {ADDED_10_1_5}}),	-- Polar Belt
+			applyclassicphase(PHASE_SIX, i(22663, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Polar Bracers
+			i(206436, {["timeline"] = {ADDED_10_1_5}}),	-- Polar Footwarmers
+			applyclassicphase(PHASE_SIX, i(22662, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Polar Gloves
+			i(206434, {["timeline"] = {ADDED_10_1_5}}),	-- Polar Helm
+			i(206432, {["timeline"] = {ADDED_10_1_5}}),	-- Polar Leggings
+			i(206433, {["timeline"] = {ADDED_10_1_5}}),	-- Polar Spaulders
+			applyclassicphase(PHASE_SIX, i(22661, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Polar Tunic
 			category(251, {	-- Helms
 				i(8201),	-- Big Voodoo Mask
 				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22759)),	-- Bramblewood Helm
@@ -2042,9 +2055,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(6709),	-- Moonglow Vest
 				i(5781),	-- Murloc Scale Breastplate
 				i(8175),	-- Nightscape Tunic
-				applyclassicphase(PHASE_SIX, i(22661, {	-- Polar Tunic
-					["timeline"] = { "removed 3.0.1" },
-				})),
+
 				applyclassicphase(PHASE_FOUR, i(19685, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Primal Batskin Jerkin
 				{
 					["itemID"] = 4455,	-- Raptor Hide Harness (Horde only)
@@ -2077,9 +2088,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(7277),	-- Handstitched Leather Bracers
 				i(7281),	-- Light Leather Bracers
 				i(5783),	-- Murloc Scale Bracers
-				applyclassicphase(PHASE_SIX, i(22663, {	-- Polar Bracers
-					["timeline"] = { "removed 3.0.1" },
-				})),
 				applyclassicphase(PHASE_FOUR, i(19687, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Primal Batskin Bracers
 				i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
 				i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
@@ -2111,9 +2119,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(4247),	-- Hillman's Leather Gloves
 				i(7285),	-- Nimble Leather Gloves
 				i(7358),	-- Pilferer's Gloves
-				applyclassicphase(PHASE_SIX, i(22662, {	-- Polar Gloves
-					["timeline"] = { "removed 3.0.1" },
-				})),
+
 				applyclassicphase(PHASE_FOUR, i(19686, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Primal Batskin Gloves
 				i(7284),	-- Red Whelp Gloves
 				i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
@@ -2233,6 +2239,14 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			}),
 		}),
 		filter(MAIL, {
+			applyclassicphase(PHASE_SIX, i(22665, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Icy Scale Bracers
+			applyclassicphase(PHASE_SIX, i(22664, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Icy Scale Breastplate
+			i(206439, {["timeline"] = {ADDED_10_1_5}}),	-- Icy Scale Crown
+			applyclassicphase(PHASE_SIX, i(22666, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Icy Scale Gauntlets
+			i(206437, {["timeline"] = {ADDED_10_1_5}}),	-- Icy Scale Leggings
+			i(206438, {["timeline"] = {ADDED_10_1_5}}),	-- Icy Scale Shoulderpads
+			i(206441, {["timeline"] = {ADDED_10_1_5}}),	-- Icy Scale Stompers
+			i(206440, {["timeline"] = {ADDED_10_1_5}}),	-- Icy Scale Waistwrap
 			category(251, {	-- Helms
 				i(15080),	-- Heavy Scorpid Helm
 				i(206482, {["timeline"] = {ADDED_10_1_5 }}),	-- Helm of Lingering Power
@@ -2270,9 +2284,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15076, {	-- Heavy Scorpid Vest
 					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 				}),
-				applyclassicphase(PHASE_SIX, i(22664, {	-- Icy Scale Breastplate
-					["timeline"] = { "removed 3.0.1" },
-				})),
+
 				-- #if AFTER TBC
 				i(15047, {	-- Red Dragonscale Breastplate
 					["timeline"] = { "removed 6.0.2" },
@@ -2285,9 +2297,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			}),
 			category(254, {	-- Bracers
 				i(15077),	-- Heavy Scorpid Bracers
-				applyclassicphase(PHASE_SIX, i(22665, {	-- Icy Scale Bracers
-					["timeline"] = { "removed 3.0.1" },
-				})),
+
 				applyclassicphase(PHASE_FOUR, i(20476)),	-- Sandstalker Bracers
 				applyclassicphase(PHASE_FOUR, i(20481)),	-- Spitfire Bracers
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18508, {	-- Swift Flight Bracers
@@ -2311,9 +2321,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15078, {	-- Heavy Scorpid Gauntlets
 					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 				}),
-				applyclassicphase(PHASE_SIX, i(22666, {	-- Icy Scale Gauntlets
-					["timeline"] = { "removed 3.0.1" },
-				})),
+
 				i(203814, {["timeline"]={ADDED_10_0_7}}),	-- Junglefury Gauntlets
 				applyclassicphase(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
 				applyclassicphase(PHASE_FOUR, i(20480)),	-- Spitfire Gauntlets
@@ -2525,6 +2533,15 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 	prof(TAILORING, {
 		n(ARMOR, {
 			i(206500, {["timeline"] = {ADDED_10_1_5}}),	-- Bindings of the Harvested Soul
+			i(206429, {["timeline"] = {ADDED_10_1_5}}),	-- Glacial Chapeau
+			applyclassicphase(PHASE_SIX, i(22658, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Glacial Cloak
+			i(206428, {["timeline"] = {ADDED_10_1_5}}),	-- Glacial Epaulets
+			i(206431, {["timeline"] = {ADDED_10_1_5}}),	-- Glacial Footwear
+			applyclassicphase(PHASE_SIX, i(22654, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Glacial Gloves
+			i(206427, {["timeline"] = {ADDED_10_1_5}}),	-- Glacial Leggings
+			i(206430, {["timeline"] = {ADDED_10_1_5}}),	-- Glacial Tether
+			applyclassicphase(PHASE_SIX, i(22652, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Glacial Vest
+			applyclassicphase(PHASE_SIX, i(22655, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Glacial Wrists
 			i(206507, {["timeline"] = {ADDED_10_1_5}}),	-- Necrotic Gown
 			i(206582, {["timeline"] = {ADDED_10_1_5}}),	-- Peculiar Glacial Mantle
 			i(206562, {["timeline"] = {ADDED_10_1_5}}),	-- Shroud of Forbidden Magic
@@ -2630,9 +2647,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(13868),	-- Frostweave Robe
 			i(13869),	-- Frostweave Tunic
 			i(14141),	-- Ghostweave Vest
-			applyclassicphase(PHASE_SIX, i(22652, {	-- Glacial Vest
-				["timeline"] = { "removed 3.0.1" },
-			})),
 			i(2585),	-- Gray Woolen Robe
 			i(6264),	-- Greater Adept's Robe
 			i(7065),	-- Green Silk Armor
@@ -2681,9 +2695,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}),
 		category(237, {	-- Bracers
 			i(18263),	-- Flarecore Wraps
-			applyclassicphase(PHASE_SIX, i(22655, {	-- Glacial Wrists
-				["timeline"] = { "removed 3.0.1" },
-			})),
 			i(4308),	-- Green Linen Bracers
 		}),
 		category(239, {	-- Gloves
@@ -2699,9 +2710,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(16979),	-- Flarecore Gloves
 			i(13870),	-- Frostweave Gloves
 			i(14142),	-- Ghostweave Gloves
-			applyclassicphase(PHASE_SIX, i(22654, {	-- Glacial Gloves
-				["timeline"] = { "removed 3.0.1" },
-			})),
 			i(4318),	-- Gloves of Meditation
 			i(14146),	-- Gloves of Spell Mastery
 			i(7047),	-- Hands of Darkness
@@ -2795,9 +2803,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			})),
 			i(7056),	-- Crimson Silk Cloak
 			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22660)),	-- Gaea's Embrace
-			applyclassicphase(PHASE_SIX, i(22658, {	-- Glacial Cloak
-				["timeline"] = { "removed 3.0.1" },
-			})),
 			i(203803, {["timeline"]={ADDED_10_0_7}}),	-- Gurubashi Tigerhide Cloak
 			i(4311),	-- Heavy Woolen Cloak
 			i(4327),	-- Icy Cloak
