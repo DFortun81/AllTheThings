@@ -3433,7 +3433,7 @@ for key,value in pairs({
 	[380847] = "Montón de esmeraldas",	-- Emerald Gem Cluster
 	[380859] = "Barco de juguete colmillarr",	-- Tuskarr Toy Boat
 	[380860] = "Cuerno de centauro",	-- Centaur Horn
-	--TODO: [380867] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	[380867] = "Montón de ámbares",	-- Amber Gem Cluster
 	[380902] = "Campos de la Ferocidad",	-- Fields of Ferocity
 	[380918] = "Estatua adornada rota",	-- Broken Ornamented Statue
 	[380963] = "Montón de ceniza pequeño",	-- Small Pile of Ash
@@ -3788,11 +3788,11 @@ for key,value in pairs({
 	--TODO: [403717] = "Lost Page",	-- Lost Page
 	--TODO: [403722] = "Conveniently Misplaced Hook",	-- Conveniently Misplaced Hook
 	--TODO: [403731] = "Frozen Rune",	-- Frozen Rune
-	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	[403786] = "Calavera cornamentada",	-- Antlered Skull
 	[403919] = "Engranaje mecanizado",	-- Mechanized Cog
 	--TODO: [403962] = "Omarion's Second Handbook",	-- Omarion's Second Handbook
-	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
-	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
+	[404242] = "Libro empapado de aceite",	-- Oil Soaked Book
+	[404314] = "Tablilla de piedra chascada",	-- Chipped Stone Tablet
 	--TODO: [404432] = "Bload Soaked Book",	-- Bload Soaked Book
 	--TODO: [405388] = "Familiar Journal",	-- Familiar Journal
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
