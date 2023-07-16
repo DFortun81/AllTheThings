@@ -2950,7 +2950,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 168431,	-- Warlord Breka Grimaxe
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3104,7 +3104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(60123, {	-- Burning Crusade: To Outland!
@@ -3112,7 +3112,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
 				}),
 				q(29219, {	-- Bwemba's Spirit
@@ -3145,7 +3145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -3573,7 +3573,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(32471, {	-- Light Camera Action (H)
@@ -3652,7 +3652,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(60126, {	-- Mists of Pandaria: To Pandaria!
@@ -3660,7 +3660,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
 				}),
 				q(1509, {	-- News of Dogran (1/2)
@@ -4147,7 +4147,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(1944, {	-- Waters of Xavian
@@ -4246,14 +4246,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(60097, {	-- Wrath of the Lich King: To Northrend!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
 				}),
 				q(2382, {	-- Wrenix of Ratchet
@@ -4315,7 +4315,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(4752, {	-- Kildar <Wolf Riding Instructor>
 					["coord"] = { 69.2, 13.0, ORGRIMMAR },
 					["races"] = { ORC, TROLL, UNDEAD },
-					
+
 					-- Available to Orcs without faction requirements.
 					["minReputation"] = { 76, EXALTED },	-- Orgrimmar, Exalted.
 					["OnInit"] = [[function(t)
