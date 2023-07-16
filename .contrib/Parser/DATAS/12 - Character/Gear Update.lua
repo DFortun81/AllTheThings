@@ -517,11 +517,24 @@ root(ROOTS.Character, n(GEAR_UPDATE, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(153947),	-- Lightdrinker Idol of Rage
 				i(153950),	-- Lightdrinker Stone of Rage
 			}),
-			--[[	TODO
 			cl(ROGUE, SUBTLETY, {
-
+				i(153959),	-- Lightdrinker Dagger
+				i(153960),	-- Lightdrinker Shiv
+				i(153954),	-- Lightdrinker Hood
+				i(153946),	-- Lightdrinker Choker
+				i(153956),	-- Lightdrinker Shoulders
+				i(153945),	-- Lightdrinker Cloak of Rage
+				i(153951),	-- Lightdrinker Jerkin
+				i(153958),	-- Lightdrinker Bindings
+				i(153953),	-- Lightdrinker Gloves
+				i(153957),	-- Lightdrinker Waistband
+				i(153955),	-- Lightdrinker Britches
+				i(153952),	-- Lightdrinker Boots
+				i(153948),	-- Lightdrinker Band of Onslaught
+				i(153949),	-- Lightdrinker Ring of Onslaught
+				i(153947),	-- Lightdrinker Idol of Rage
+				i(153950),	-- Lightdrinker Stone of Rage
 			}),
-			]]--
 		}),
 		cl(SHAMAN, {
 			i(205877, {	-- Adventurer's Footlocker

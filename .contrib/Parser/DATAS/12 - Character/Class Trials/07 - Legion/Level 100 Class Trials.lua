@@ -671,7 +671,7 @@ root(ROOTS.NeverImplemented, {
 				cl(PRIEST, HOLY, {
 					-- #if BEFORE 10.1.5
 					i(153919),	-- Communal Wand
-					-- #else
+					-- #endif
 					i(150671),	-- Communal Cowl
 					i(150674),	-- Communal Mantle
 					i(150673),	-- Communal Robe
@@ -680,7 +680,6 @@ root(ROOTS.NeverImplemented, {
 					i(150675),	-- Communal Sash
 					i(150672),	-- Communal Pants
 					i(150669),	-- Communal Boots
-					-- #endif
 				}),
 				-- #if BEFORE 10.1.5
 				cl(PRIEST, SHADOW, {
