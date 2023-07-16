@@ -1071,11 +1071,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(76983),
 	q(76984),
 	q(76985),
-	q(76986),	-- reported in during epic bag stage for 1st rift (didn't pop 2nd time)
 
 	q(77680),	-- picked up 'When Time Needs Mending' (questID 77236); after questID 77679?
 
-	q(77836),	-- 1st weekly rift (some bonus roll?) / killing Illidan (205306) in 'Azewrath' / killed Fury of N'zoth in Azq'roth
+	q(77836),	-- 1st weekly rift (itemID 207030 as reward)
+	q(76986),	-- some kind of unlock for time rift on alts (start popup on login after participate in time rift event at least once on account)
 
 	q(76695),	-- after buying/loot 'Blighted Greatbow' (itemID 206784) (spellID 418958)
 	q(76691),	-- after buying/loot 'Bonegale Greataxe' (itemID 206783) (spellID 418957)
