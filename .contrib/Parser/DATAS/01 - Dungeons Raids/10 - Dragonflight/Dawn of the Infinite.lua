@@ -293,16 +293,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
 							i(207987),	-- Borrowed Time
 						})),
-						------------------------------------------
-						-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
-						----------------LG GOLD ------------------
-						------------------------------------------
-						-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
-
-						-- Following items are possible:
-						-- World Drop Items with any quality till SL (You can get SL stuff)
-						-- Dungeon Items from Classic till BFA (so far confirmed)
-						-- Raid Items from Classic till BFA (so far confirmed)
 						i(208216, {	-- Reins of the Quantum Courser
 							["sym"] = {{"select","itemID",
 								-- Dungeon
@@ -321,32 +311,41 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								159842,	-- Sharkbait's Favorite Crackers
 								35513,	-- Swift White Hawkstrider
 								68824,	-- Swift Zulian Panther
-								-- Open World Unconfirmed
-							-- green dragon from oracles egg in sholazar in wotlk
-								-- Raid Unconfirmed
+								160839,	-- Underrot Crawg Harness
+							}},
+							-- Raid (Maybe in future)
 							--	78919, -- Experiment 12-B
 							--	71665, -- Flametalon of Alysrazor
 							--	77069, -- Life-Binder's Handmaiden
 							--	45693, -- Mimiron's Head
 							--	77067, -- Reins of the Blazing Drake
-							}},
 						}),
+						------------------------------------------
+						-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
+						----------------LG GOLD ------------------
+						------------------------------------------
+						-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
+						
+						-- Following items are possible:
+						-- World Drop Items with any quality till SL. Includes removed BoE items
+						-- Dungeon Items from Classic till SL. Includes removed BoP items
+						-- Raid Items from Classic till SL
 						i(208064, {	-- Quantum Chestpiece
-							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***",
 						}),
 						i(208063, {	-- Quantum Gloves
-							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***",
 						}),
 						i(208061, {	-- Quantum Headpiece
-							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***",
 						}),
 						i(208065, {	-- Quantum Legs
-							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***",
 						}),
 						i(208062, {	-- Quantum Shoulders
-							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***",
 						}),
-						n(WEAPONS, sharedData({ ["description"] = "This item turns into 1 unlearned Item from any Dungeon, Raid or World drop before Dragonflight (10.0)" }, {
+						n(WEAPONS, sharedData({ ["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***" }, {
 							i(208111),	-- Quantum Axe
 							i(208117),	-- Quantum Bow
 							i(208118),	-- Quantum Crossbow
