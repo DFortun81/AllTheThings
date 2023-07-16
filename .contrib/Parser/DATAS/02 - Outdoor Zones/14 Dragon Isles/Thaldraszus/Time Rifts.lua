@@ -426,6 +426,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						--}),
 				}),
 				n(VENDORS, {
+
+					-- TODO: Basically all vendor costs are incorrect. someone want to update them to live values pls... ???
+
+
 					n(208338, {	-- Baron Silver <Azmourne Vendor>
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
 						["g"] = {
@@ -968,14 +972,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(207079, {	-- Warmonger's Leather Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
 									["g"] = {
-										i(206850),	-- Warmonger's Drape
+										i(206849),	-- Warmonger's Cloak
 										i(206843),	-- Warmonger's Spaulders
 									},
 								}),
 								i(207077, {	-- Warmonger's Mail Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
 									["g"] = {
-										i(206849),	-- Warmonger's Cloak
+										i(206850),	-- Warmonger's Drape	[Drape/Cloak were swapped for me... don't tell me the Cloak is spec-based... Runaway]
 										i(206855),	-- Warmonger's Mantle
 									},
 								}),
