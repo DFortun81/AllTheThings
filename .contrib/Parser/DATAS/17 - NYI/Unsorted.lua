@@ -335,26 +335,6 @@ root(ROOTS.Unsorted, {
 				i(206341),	-- Ensemble: Wanderer's Lively Trappings
 				i(206342),	-- Ensemble: Wanderer's Sepia Trappings
 			}),
-			header(HEADERS.LFGDungeon, 227, {	-- Naxxramas
-				i(206447),	-- Task List for Adventurers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				i(206465),	-- Omarion's Notes - Pages 31 & 32
-			}),
 			header(HEADERS.LFGDungeon, 2430, {	-- Dawn of the Infinite
 				i(207818),	-- Mega Dungeon Bronze Plate Greaves
 				i(207825),	-- Mega Dungeon Infinite Cloth Slippers
@@ -406,35 +386,6 @@ root(ROOTS.Unsorted, {
 				i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
 				i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
 				i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
-			}),
-			n(PROFESSIONS, {
-				prof(COOKING, {
-					-- NYI --??
-					-- RECIPES --
-					r(412533),	-- Druidic Dreamsalad
-					r(412534),	-- Fine Taladorian Cheese Platter
-					r(412531),	-- Highly Spiced Haunch
-					r(411178),	-- Lemon Silverleaf Tea
-					r(412537),	-- Picante Pomfruit Cake
-					r(412536),	-- Roquefort-Stuffed Peppers
-					r(412535),	-- Venrik's Goat Milk
-					-- CRAFTED --
-					i(206188),	-- Druidic Dreamsalad
-					i(206189),	-- Fine Taladorian Cheese Platter
-					i(206187),	-- Highly Spiced Haunch
-				--	i(xxxxxx),	-- Lemon Silverleaf Tea
-					i(206192),	-- Picante Pomfruit Cake
-					i(206191),	-- Roquefort-Stuffed Peppers
-					i(206190),	-- Venrik's Goat Milk
-				}),
-				prof(JEWELCRAFTING, {
-					-- RECIPES --
-
-					-- CRAFTED --
-
-					-- NYI --??
-					r(412557),	-- TEST CRUSHING (DNT)
-				}),
 			}),
 			i(52032),	-- Rockin'-Powder-Infused Rocket Boots
 			i(86432),	-- Banana-Infused Rum
@@ -511,6 +462,7 @@ root(ROOTS.Unsorted, {
 			i(208170),	-- Runeaxe of the Last Resistance
 			i(208172),	-- Bloodstained Runecrook
 			i(208191),	-- Time-Lost Fragment
+			i(206447),	-- Task List for Adventurers
 			--
 			i(201166),	-- Gilded Hilt
 			i(206160),	-- Madam Shadow's Grimoire
