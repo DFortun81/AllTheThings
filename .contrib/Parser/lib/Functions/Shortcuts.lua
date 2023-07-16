@@ -5,9 +5,9 @@ struct = function(field, id, t)
 		print("ERROR: Don't use 'g' or 'groups' with an array of objects! Fix Group: "..field..":"..id);
 		return;
 	elseif not t.groups and t[1] then
-		t = { ["groups"] = bubbleUp(t) };
+		t = { ["groups"] = validateGroups(t) };
 	elseif t.groups then
-		t.groups = bubbleUp(t.groups);
+		validateGroups(t.groups);
 	end
 	if not id then
 		print("Missing ID for",field,"group");
@@ -197,45 +197,14 @@ bubbleDownSelf = function(data, t)
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
 end
--- Returns a copy of the 't' (expected 'groups' content) ensuring that contained content is in the expected formats
-bubbleUp = function(t)
+-- Validates and returns 't' (expected 'groups' content) ensuring that contained content is in the expected formats
+validateGroups = function(t)
 	if t then
-		local tinsert = table.insert;
-		local t2 = {};
-		for i, group in pairs(t) do
-			tinsert(t2, group);
-		end
-		-- @Crieve: No clue why was breaking in Naxx, but bubbleUp is never used on a persisted table, so there's no reason to remove and
-		-- re-add to the same table when we return and replace the table anyway. Everything appears to work fine just doing this.
-		-- And parser is like 50% faster doing contrib data merge...
-		-- for i=#t,1,-1 do
-		-- 	print("bubbleUp.remove",i)
-		-- 	table.remove(t, i);	-- breaks in wotlk naxx file on index 7...
-		-- 	print("bubbleUp.removed",i)
-		-- end
-		t = {};
-		for i, group in pairs(t2) do
+		for i,group in pairs(t) do
 			if type(i) ~= "number" then
-				print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
+				error("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
 			elseif type(group) ~= "table" then
-				print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
-			else
-				if group.bubble then
-					-- this isn't just a normal group object, merge up the contents.
-					if group.groups or group.g then
-						for j,subgroup in pairs(group.groups or group.g) do
-							if type(j) ~= "number" then
-								print("You're trying to use '" .. j .. "' in a 'groups' field. (can't do that!)");
-							elseif type(subgroup) ~= "table" then
-								print("You're trying to use '" .. subgroup .. "' in a 'groups' field. (can't do that!)");
-							else
-								tinsert(t, subgroup);
-							end
-						end
-					end
-				else
-					tinsert(t, group);
-				end
+				error("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
 			end
 		end
 		return t;
