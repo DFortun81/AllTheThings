@@ -1,10 +1,23 @@
-
 local ItemDB = root(ROOTS.ItemDBConditional);
 local i = function(itemID)
 	-- This is necessary because Blizzard sometimes tells us that things are Toys when they are not Toys.
 	-- So we cannot trust them and have to do it ourselves.
-	ItemDB[itemID] = { ["type"] = "toyID", };
+	ItemDB[itemID] = { ["type"] = "toyID" };
 end
+
+-- #if ANYCLASSIC
+-----------------
+--   CLASSIC   --
+-----------------
+-- #if AFTER TBC
+i(184871);	-- Dark Portal
+i(38233);	-- Path of Illidan
+-- #endif
+-- #if AFTER WRATH
+i(40110);	-- Haunted Momento
+i(198647);	-- Fishspeaker's Lucky Lure
+-- #endif
+-- #endif
 
 -----------------
 --   CLASSIC   --
@@ -19,7 +32,7 @@ i(17712);	-- Winter Veil Disguise Kit
 i(18660);	-- World Enlarger
 
 -----------------
--- PATCH 2.0.1 --
+-- PATCH 2.0.5 --
 -----------------
 i(23767);	-- Crashin' Thrashin' Robot
 i(30542);	-- Dimensional Ripper - Area 52
@@ -69,28 +82,19 @@ i(38301);	-- D.I.S.C.O.
 i(37710);	-- Crashin' Thrashin' Racer Controller
 
 -----------------
--- PATCH 3.0.1 --
------------------
-i(36863);	-- Decahedral Dwarven Dice
-i(40895);	-- Gnomish X-Ray Specs
-i(40768);	-- MOLL-E
-i(37460);	-- Rope Pet Leash
-i(36862);	-- Worn Troll Dice
-
------------------
--- PATCH 3.0.2 --
------------------
-i(44719);	-- Frenzyheart Brew
-i(43499);	-- Iron Boot Flask
-i(37254);	-- Super Simian Sphere
-i(38578);	-- The Flag of Ownership
-i(44430);	-- Titanium Seal of Dalaran
-i(44606);	-- Toy Train Set
-
------------------
 -- PATCH 3.0.3 --
 -----------------
+i(36863);	-- Decahedral Dwarven Dice
+i(44719);	-- Frenzyheart Brew
+i(40895);	-- Gnomish X-Ray Specs
+i(43499);	-- Iron Boot Flask
+i(40768);	-- MOLL-E
+i(37460);	-- Rope Pet Leash
+i(37254);	-- Super Simian Sphere
+i(44430);	-- Titanium Seal of Dalaran
 i(43824);	-- The Schools of Arcane Magic - Mastery
+i(44606);	-- Toy Train Set
+i(36862);	-- Worn Troll Dice
 
 -----------------
 -- PATCH 3.1.0 --
@@ -145,11 +149,6 @@ i(54651);	-- Gnomeregan Pride
 -- PATCH 4.0.1 --
 -----------------
 i(67097);	-- Grim Campfire
-i(63269);	-- Loaded Gnomish Dice
-i(66888);	-- Stave of Fur and Claw
-i(64488);	-- The Innkeeper's Daughter
-i(63141);	-- Tol Barad Searchlight (A)
-i(64997);	-- Tol Barad Searchlight (H)
 
 -----------------
 -- PATCH 4.0.3 --
@@ -163,10 +162,15 @@ i(53057);	-- Faded Wizard Hat
 i(40727);	-- Gnomish Gravity Well
 i(64358);	-- Highborne Soul Mirror
 i(64383);	-- Kaldorei Wind Chimes
+i(63269);	-- Loaded Gnomish Dice
 i(60854);	-- Loot-a-Rang
 i(46709);	-- MiniZep Controller
 i(64881);	-- Pendant of the Scarab Storm
 i(64482);	-- Puzzle Box of Yogg-Saron
+i(66888);	-- Stave of Fur and Claw
+i(64488);	-- The Innkeeper's Daughter
+i(63141);	-- Tol Barad Searchlight (A)
+i(64997);	-- Tol Barad Searchlight (H)
 i(64651);	-- Wisp Amulet
 
 -----------------
@@ -201,7 +205,7 @@ i(75042);	-- Flimsy Yellow Balloon
 i(72159);	-- Magical Ogre Idol
 i(71628);	-- Sack of Starfish
 i(72161);	-- Spurious Sarcophagus
--- NYI --
+--- NYI ---
 i(72226);	-- Art Template Plate Belt - Plate_PVPWarrior_D_01 - Orange
 i(72227);	-- Art Template Plate Boot - Plate_PVPWarrior_D_01 - Orange
 i(72220);	-- Art Template Plate Chest - Plate_PVPWarrior_D_01 - Blue
@@ -223,12 +227,14 @@ i(72233);	-- Art Template Plate Wrist - Plate_PVPWarrior_D_01 - Orange
 i(79769);	-- Demon Hunter's Aspect
 
 -----------------
--- PATCH 5.0.1 --
+-- PATCH 5.0.4 --
 -----------------
 i(86589);	-- Ai-Li's Skymirror
+i(89614);	-- Anatomical Dummy
 i(85973);	-- Ancient Pandaren Fishing Charm
 i(85500);	-- Anglers Fishing Raft
 i(86582);	-- Aqua Jewel
+i(90067);	-- B. F. F. Necklace
 i(86565);	-- Battle Horn
 i(87214);	-- Blingtron 4000
 i(89139);	-- Chain Pet Leash
@@ -237,9 +243,12 @@ i(89222);	-- Cloud Ring
 i(88589);	-- Cremating Torch
 i(86590);	-- Essence of the Breeze
 i(86578);	-- Eternal Warrior's Sigil
+i(89999);	-- Everlasting Alliance Firework
+i(90000);	-- Everlasting Horde Firework
 i(86581);	-- Farwater Conch
 i(88801);	-- Flippable Table
 i(88802);	-- Foxicopter Controller
+i(90175);	-- Gin-Ji Knife Set
 i(88417);	-- Gokk'lok's Shell
 i(86584);	-- Hardened Shell
 i(86594);	-- Helpful Wikky's Whistle
@@ -254,7 +263,9 @@ i(88531);	-- Lao Chin's Last Mug
 i(89205);	-- Mini Mana Bomb
 i(86568);	-- Mr. Smite's Brass Compass
 i(86596);	-- Nat's Fishing Chair
+i(90427);	-- Pandaren Brewpack
 i(86588);	-- Pandaren Firework Launcher
+i(89869);	-- Pandaren Scarecrow
 i(86586);	-- Panflute of Pandaria
 i(88370);	-- Puntable Marmot
 i(82467);	-- Ruthers' Harness
@@ -267,23 +278,8 @@ i(88584);	-- Totem of Harmony
 i(88377);	-- Turnip Paint "Gun"
 i(88375);	-- Turnip Punching Bag
 i(87215);	-- Wormhole Generator: Pandaria
--- NYI --
+--- NYI ---
 i(88587);	-- Iron Belly Spirits
-
------------------
--- PATCH 5.0.3 --
------------------
-i(89614);	-- Anatomical Dummy
-i(89869);	-- Pandaren Scarecrow
-
------------------
--- PATCH 5.0.4 --
------------------
-i(90067);	-- B. F. F. Necklace
-i(89999);	-- Everlasting Alliance Firework
-i(90000);	-- Everlasting Horde Firework
-i(90175);	-- Gin-Ji Knife Set
-i(90427);	-- Pandaren Brewpack
 
 -----------------
 -- PATCH 5.1.0 --
@@ -332,13 +328,23 @@ i(104323);	-- The Swineskin
 i(104331);	-- Warning Sign
 
 -----------------
--- PATCH 6.0.1 --
+-- PATCH 6.0.2 --
+-----------------
+--- NYI ---
+i(119220);	-- Alliance Gladiator's Banner
+i(119221);	-- Horde Gladiator's Banner
+i(119179);	-- Iron Star Roller
+i(110586);	-- Mysterious Flower
+
+-----------------
+-- PATCH 6.0.3 --
 -----------------
 i(116856);	-- "Blooming Rose" Contender's Costume
 i(116888);	-- "Night Demon" Contender's Costume
 i(116889);	-- "Purple Phantom" Contender's Costume
 i(116890);	-- "Santo's Sun" Contender's Costume
 i(116891);	-- "Snowy Owl" Contender's Costume
+i(119217);	-- Alliance Flag of Victory
 i(113570);	-- Ancient's Bloom
 i(117550);	-- Angry Beehive
 i(118191);	-- Archmage Vargoth's Spare Staff
@@ -349,6 +355,8 @@ i(113540);	-- Ba'ruun's Bountiful Bloom
 i(119178);	-- Black Whirlwind
 i(115503);	-- Blazing Diamond Pendant
 i(116115);	-- Blazing Wings
+i(113096);	-- Bloodmane Charm
+i(119432);	-- Botani Camouflage
 i(116113);	-- Breath of Talador
 i(116758);	-- Brewfest Banner
 i(114227);	-- Bubble Wand
@@ -362,7 +370,6 @@ i(108634);	-- Crashin' Thrashin' Mortar Controller
 i(108631);	-- Crashin' Thrashin' Roller Controller
 i(116763);	-- Crashin' Thrashin' Shredder Controller
 i(108743);	-- Deceptia's Smoldering Boots
-i(113096);	-- Bloodmane Charm
 i(118935);	-- Ever-Blooming Frond
 i(109167);	-- Findle's Loot-A-Rang
 i(119145);	-- Firefury Totem
@@ -370,15 +377,18 @@ i(119083);	-- Fruit Basket
 i(116692);	-- Fuzzy Green Lounge Cushion
 i(118937);	-- Gamon's Braid
 i(117569);	-- Giant Deathweb Egg
+i(119211);	-- Golden Hearthstone Card: Lord Jaraxxus
 i(119180);	-- Goren "Log" Roller
 i(118716);	-- Goren Garb
 i(116139);	-- Haunting Memento
+i(119210);	-- Hearthstone Board
+i(119218);	-- Horde Flag of Victory
 i(113631);	-- Hypnosis Goggles
 i(118244);	-- Iron Buccaneer's Hat
 i(116125);	-- Klikixx's Webspinner
 i(115501);	-- Kowalski's Music Box
-i(116396);	-- LeBlanc's Recorder (A)
 i(115505);	-- LeBlanc's Recorder (H)
+i(116396);	-- LeBlanc's Recorder (A)
 i(119039);	-- Lilian's Warning Sign
 i(118938);	-- Manastorm's Duplicator
 i(119092);	-- Moroes' Famous Polish
@@ -386,15 +396,19 @@ i(113670);	-- Mournful Moan of Murmur
 i(119001);	-- Mystery Keg
 i(112324);	-- Nightmarish Hitching Post
 i(118224);	-- Ogre Brewing Kit
+i(120276);	-- Outrider's Bridle Chain
 i(115468);	-- Permanent Frost Essence
+i(115472);	-- Permanent Time Bubble
 i(108745);	-- Personal Hologram
 i(118221);	-- Petrification Stone
 i(116689);	-- Pineapple Lounge Cushion
 i(108739);	-- Pretty Draenor Pearl
 i(116067);	-- Ring of Broken Promises
+i(119215);	-- Robo-Gnomebulator
 i(116690);	-- Safari Lounge Cushion
 i(119134);	-- Sargerei Disguise
 i(116456);	-- Scroll of Storytelling
+i(119421);	-- Sha'tari Defender's Medallion
 i(116400);	-- Silver-Plated Turkey Shooter
 i(119182);	-- Soul Evacuation Crystal
 i(119163);	-- Soul Inhaler
@@ -410,32 +424,13 @@ i(115506);	-- Treessassin's Guise
 i(116651);	-- True Love Prism
 i(113375);	-- Vindicator's Armor Polish Kit
 i(119003);	-- Void Totem
+i(119219);	-- Warlord's Flag of Victory
 i(117573);	-- Wayfarer's Bonfire
 i(113542);	-- Whispers of Rai'Vosh
+i(119212);	-- Winning Hand
 i(109183);	-- World Shrinker
 i(112059);	-- Wormhole Centrifuge
 i(116691);	-- Zhevra Lounge Cushion
--- NYI --
-i(119179);	-- Iron Star Roller
-i(110586);	-- Mysterious Flower
-
------------------
--- PATCH 6.0.2 --
------------------
-i(119217);	-- Alliance Flag of Victory
-i(119432);	-- Botani Camouflage
-i(119211);	-- Golden Hearthstone Card: Lord Jaraxxus
-i(119210);	-- Hearthstone Board
-i(119218);	-- Horde Flag of Victory
-i(120276);	-- Outrider's Bridle Chain
-i(115472);	-- Permanent Time Bubble
-i(119215);	-- Robo-Gnomebulator
-i(119421);	-- Sha'tari Defender's Medallion
-i(119219);	-- Warlord's Flag of Victory
-i(119212);	-- Winning Hand
--- NYI --
-i(119220);	-- Alliance Gladiator's Banner
-i(119221);	-- Horde Gladiator's Banner
 
 -----------------
 -- PATCH 6.1.0 --
@@ -505,6 +500,7 @@ i(133542);	-- Tosselwrench's Mega-Accurate Simulation Viewfinder
 -----------------
 -- PATCH 6.X.X --
 -----------------
+--- NYI ---
 i(100902);	-- Unknown
 i(100903);	-- Unknown
 i(108638);	-- Unknown
@@ -611,7 +607,7 @@ i(131814);	-- Whitewater Carp
 i(141306);	-- Wisp in a Bottle
 i(130214);	-- Worn Doll
 i(134021);	-- X-52 Rocket Helmet
--- NYI --
+--- NYI ---
 i(140779);	-- Falanaar Echo
 i(129111);	-- Kvaldir Raiding Horn
 i(141300);	-- Magi Focusing Crystal
@@ -641,7 +637,7 @@ i(142497);	-- Tiny Pack
 i(142542);	-- Tome of Town Portal
 i(143543);	-- Twelve-String Guitar
 i(143534);	-- Wand of Simulated Life
--- NYI --
+--- NYI ---
 i(143545);	-- Fel Focusing Crystal
 
 -----------------
@@ -684,7 +680,7 @@ i(150743);	-- Scouting Map: Surviving Kalimdor
 i(150745);	-- Scouting Map: The Eastern Kingdoms Campaign
 i(150744);	-- Scouting Map: Walking Kalimdor with the Earthmother
 i(151184);	-- Verdant Throwing Sphere
--- NYI --
+--- NYI ---
 i(142360);	-- Blazing Ember Signet
 i(130194);	-- Silver Gilnean Brooch
 i(129045);	-- Whitewater Tsunami
@@ -771,7 +767,7 @@ i(163924);	-- Whiskerwax Candle
 i(163745);	-- Witherbark Gong
 i(164371);	-- Yaungol Oil Stove
 i(156649);	-- Zandalari Effigy Amulet
--- NYI --
+--- NYI ---
 i(164372);	-- Jinyu Light Globe
 i(164377);	-- Regenerating Banana Bunch
 i(163566);	-- Vulpera Battle Banner
@@ -814,7 +810,7 @@ i(166788);	-- Twiddle Twirler: Shredder Blade
 i(166701);	-- Warbeast Kraal Dinner Bell
 i(165021);	-- Words of Akunda
 i(165791);	-- Worn Cloak
--- NYI --
+--- NYI ---
 i(166851);	-- Kojo's Master Matching Set
 
 -----------------
@@ -828,7 +824,7 @@ i(166778);	-- Horde's Might Firework
 i(166777);	-- Lion's Pride Firework
 i(165802);	-- Noble Gardener's Hearthstone
 i(166779);	-- Transmorpher Beacon
-i(168123);  -- Twitching Eyeball
+i(168123);	-- Twitching Eyeball
 
 -----------------
 -- PATCH 8.2.0 --
@@ -862,7 +858,7 @@ i(170476);	-- Underlight Sealamp
 i(168807);	-- Wormhole Generator: Kul Tiras
 i(168808);	-- Wormhole Generator: Zandalar
 i(170199);	-- Zanj'ir Weapon Rack
--- NYI --
+--- NYI ---
 i(166782);	-- Pearl of the Abyss
 i(168836);	-- Unknown
 
@@ -896,52 +892,30 @@ i(174924);	-- Void-Touched Souvenir Totem
 -----------------
 -- PATCH 9.0.1 --
 -----------------
-i(183847);	-- Acolyte's Guise
-i(180993);	-- Bat Visage Bobber
-i(183986);	-- Bondable Sinstone
-i(183988);	-- Bondable Val'kyr Diadem
-i(183989);	-- Dredger Barrow Racer
-i(177951);	-- Glimmerflies on Strings
-i(182729);	-- Hearty Dragon Plume
-i(179393);	-- Mirror of Envious Dreams
-i(182780);	-- Muckpool Cookpot
-i(183856);	-- Mystical Orb of Meditation
-i(182773);	-- Necrolord Hearthstone
-i(180290);	-- Night Fae Hearthstone
-i(181794);	-- Orophea's Lyre
-i(181825);	-- Phial of Ravenous Slime
-i(183876);	-- Quill of Correspondence
-i(182890);	-- Rapid Recitation Quill
-i(173984);	-- Scroll of Aeons
-i(183900);	-- Sinvyr Tea Set
-i(183903);	-- Smelly Jelly
-i(180873);	-- Smolderheart
-i(184075);	-- Stonewrought Sentry
-i(182694);	-- Stylish Black Parasol
-i(182696);	-- The Countess's Parasol
-i(182732);	-- The Necronom-i-nom
-i(180947);	-- Tithe Collector's Vessel
-i(183716);	-- Venthyr Sinstone
-i(182695);	-- Weathered Purple Parasol
-i(172924);	-- Wormhole Generator: Shadowlands
--- NYI --
+--- NYI ---
 i(174445);	-- Glimmerfly Cocoon
 i(182655);	-- Hill King's Roarbox
 i(174286);	-- Kyrian Ritual Vestments
---i(177665);	-- Spectral Handkerchief (Not a Toy anymore)
 
 -----------------
 -- PATCH 9.0.2 --
 -----------------
+i(183847);	-- Acolyte's Guise
 i(184418);	-- Acrobatic Steward
 i(184292);	-- Ancient Elethium Coin
 i(184410);	-- Aspirant's Stretcher
+i(180993);	-- Bat Visage Bobber
 i(184318);	-- Battlecry of Krexus
+i(183986);	-- Bondable Sinstone
+i(183988);	-- Bondable Val'kyr Diadem
 i(184312);	-- Borr-Geth's Fiery Brimstone
+i(183989);	-- Dredger Barrow Racer
 i(184404);	-- Ever-Abundant Hearth
 i(184489);	-- Fae Harp
 i(184490);	-- Fae Pipes
+i(177951);	-- Glimmerflies on Strings
 i(184487);	-- Gormling in a Bag
+i(182729);	-- Hearty Dragon Plume
 i(184223);	-- Helm of the Dominated
 i(184495);	-- Infested Arachnid Casing
 i(184449);	-- Jiggles's Favorite Toy
@@ -950,12 +924,33 @@ i(184353);	-- Kyrian Hearthstone
 i(184396);	-- Malfunctioning Goliath Gauntlet
 i(184435);	-- Mark of Purity
 i(184508);	-- Mawsworn Pet Leash
+i(179393);	-- Mirror of Envious Dreams
 i(184413);	-- Mnemonic Attunement Pane
+i(182780);	-- Muckpool Cookpot
+i(183856);	-- Mystical Orb of Meditation
+i(182773);	-- Necrolord Hearthstone
+i(180290);	-- Night Fae Hearthstone
+i(181794);	-- Orophea's Lyre
+i(181825);	-- Phial of Ravenous Slime
+i(183876);	-- Quill of Correspondence
+i(182890);	-- Rapid Recitation Quill
 i(184476);	-- Regenerating Slime Vial
+i(173984);	-- Scroll of Aeons
+i(183900);	-- Sinvyr Tea Set
+i(183903);	-- Smelly Jelly
+i(180873);	-- Smolderheart
 i(184415);	-- Soothing Vesper
+i(184075);	-- Stonewrought Sentry
+i(182694);	-- Stylish Black Parasol
+i(182696);	-- The Countess's Parasol
+i(182732);	-- The Necronom-i-nom
+i(180947);	-- Tithe Collector's Vessel
+i(183716);	-- Venthyr Sinstone
 i(184218);	-- Vulgarity Arbiter
+i(182695);	-- Weathered Purple Parasol
+i(172924);	-- Wormhole Generator: Shadowlands
 i(178530);	-- Wreath-A-Rang
--- NYI --
+--- NYI ---
 i(183810);	-- Shadowlands Mini: Grandmaster Vole
 
 -----------------
@@ -1011,7 +1006,7 @@ i(188695);	-- Summer Cranial Skillet
 i(187512);	-- Tome of Small Sins
 i(187834);	-- Tormented Banner of the Opportune
 i(188680);	-- Winter Veil Chorus Book
--- NYI --
+--- NYI ---
 i(187861);	-- Magical Seeds
 i(187959);	-- PH - Banner of the Opportune
 
@@ -1032,19 +1027,28 @@ i(187793);	-- Personal Containment Trap
 i(190457);	-- Protopological Cube
 i(190177);	-- Sphere of Enlightened Cogitation
 i(190238);	-- Xy'rath's Booby-Trapped Cache
--- NYI --
+--- NYI ---
 i(190196);	-- Enlightened Hearthstone
 
 -----------------
 -- PATCH 9.2.5 --
 -----------------
-i(192099);  -- Earpieces of Tranquil Focus
+i(192099);	 -- Earpieces of Tranquil Focus
 i(192485);	-- Stored Wisdom Device
 i(193588);	-- Timewalker's Hearthstone
 i(187958);	-- Shrouded Banner of the Opportune
 
 ------------------
 -- PATCH 10.0.0 --
+------------------
+--- NYI ---
+i(200142);	-- Generous Goblin Grenade
+i(199111);	-- Maestro Duck's Orchestrion
+i(199926);	-- Portable J.A.M.
+i(197961);	-- Whelps on Strings
+
+------------------
+-- PATCH 10.0.2 --
 ------------------
 i(200148);	-- A Collection of Me
 i(202042);	-- Aquatic Shades
@@ -1131,11 +1135,6 @@ i(199902);	-- Wayfinder's Compass
 i(199650);	-- Whale Bone Tea Set
 i(200878);	-- Wheeled Floaty Boaty Controller
 i(198156);	-- Wyrmhole Generator: Dragon Isles
--- NYI --
-i(200142);	-- Generous Goblin Grenade
-i(199111);	-- Maestro Duck's Orchestrion
-i(199926);	-- Portable J.A.M.
-i(197961);	-- Whelps on Strings
 
 ------------------
 -- PATCH 10.0.5 --
@@ -1182,41 +1181,31 @@ i(205936);	-- New Niffen No-Sniffin' Tonic
 i(205255);	-- Niffen Diggin' Mitts
 i(206008);	-- Nightmare Banner
 i(206267);	-- Obsidian Legend's Pennant
-i(205463);	-- Skornak's Lava Ball
 i(205963);	-- Sniffin' Salts
 i(204389);	-- Stone Breaker
 i(204686);	-- Titan's Containment Device
 i(205904);	-- Vibrant Clacking Claw
--- NYI --
+--- NYI ---
 i(205034);	-- Enormous Ball of Yarn
 i(205027);	-- Explorer's Banner
+i(205463);	-- Skornak's Lava Ball
 
 ------------------
 -- PATCH 10.1.5 --
 ------------------
 i(208186);	-- Boffins
 i(140192);	-- Dalaran Hearthstone
+i(208096);	-- Familiar Journal
 i(110560);	-- Garrison Hearthstone
 i(208058);	-- Minute Glass
+i(206565);	-- Plagued Grain
 i(208057);	-- Smoldering Banner of the Aspects
+i(208415);	-- Stasis Sand
 i(207099);	-- Tiny Box of Tiny Rocks
--- Unsorted --
+--- NYI ---
 i(206268);	-- Ethereal Transmogrifier
-i(208096);	-- Familiar Journal
 i(206993);	-- Investi-gator's Pocketwatch
 i(206195);	-- Path of the Naaru
-i(206565);	-- Plagued Grain
-
--- #if ANYCLASSIC
------------------
--- CLASSIC WOW --
------------------
--- #if AFTER TBC
-i(184871);	-- Dark Portal
-i(38233);	-- Path of Illidan
--- #endif
--- #if AFTER WRATH
-i(40110);	-- Haunted Momento
-i(198647);	-- Fishspeaker's Lucky Lure
--- #endif
--- #endif
+i(206696);	-- Unknown
+i(207730);	-- Unknown
+i(208092);	-- Unknown

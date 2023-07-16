@@ -1642,6 +1642,7 @@ i(206674, 414323);	-- Ravenous Black Gryphon
 i(206566, 413825);	-- Scarlet Pterrordax
 i(206680, 414334);	-- Scourgebound Vanquisher
 i(206678, 414327);	-- Sulfur Hound
+i(206585, 413922);	-- Valiance
 i(206673, 414316);	-- White War Wolf
 i(207083, 414323);	-- Ravenous Black Gryphon
 i(0, 302362);		-- Armored Siege Kodo
@@ -1652,7 +1653,6 @@ i(0, 417548);		-- Renewed Proto-Drake
 i(0, 417552);		-- Windborne Velocidrake
 i(0, 417556);		-- Winding Slitherdrake
 -- Unsorted
-i(206585, 413922);	-- Valiance
 
 -- #if ANYCLASSIC
 -----------------

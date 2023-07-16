@@ -2159,9 +2159,9 @@ i(207572, 416687);	-- Sacred Guardian
 i(206536, 413523);	-- Shade's Blade
 i(206531, 413518);	-- Strength of Menethil
 i(206560, 413760);	-- Stygian Shield
-i(206541, 413741);	-- The Plague Belcher
-i(206544, 413744);	-- The Final Dream
 i(206549, 413749);	-- The Face of Doom
+i(206544, 413744);	-- The Final Dream
+i(206541, 413741);	-- The Plague Belcher
 i(206352, 10003);	-- The Shatterer
 i(206351, 10015);	-- Truesilver Champion
 i(206774, 414567);	-- Undeath Metal

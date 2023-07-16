@@ -989,6 +989,41 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 						i(206577, {	-- Slime-Covered Scroll
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 12 }},
+							["g"] = {
+								i(206552),	-- Ancient Design: Frostwyrm's Frigid Stare (RECIPE!)
+								i(206551),	-- Ancient Design: Frostwyrm's Icy Gaze (RECIPE!)
+								i(206543),	-- Ancient Design: Gem of the Nerubians (RECIPE!)
+								i(206547),	-- Ancient Pattern: Bindings of the Harvested Soul (RECIPE!)
+								i(206556),	-- Ancient Pattern: Displacement Boots (RECIPE!)
+								i(206554),	-- Ancient Pattern: Necrotic Gown (RECIPE!)
+								i(206538),	-- Ancient Pattern: Nerubian Persuader (RECIPE!)
+								i(206583),	-- Ancient Pattern: Peculiar Glacial Mantle (RECIPE!)
+								i(206563),	-- Ancient Pattern: Shroud of Forbidden Magic (RECIPE!)
+								i(206540),	-- Ancient Plans: Axe of Sundered Bone (RECIPE!)
+								i(206558),	-- Ancient Plans: Belt of the Mentor (RECIPE!)
+								i(206539),	-- Ancient Plans: Blade of Unholy Might (RECIPE!)
+								i(206546),	-- Ancient Plans: Blade of the Fallen Seraph (RECIPE!)
+								i(206542),	-- Ancient Plans: Bracers of Vengeance (RECIPE!)
+								i(206805),	-- Ancient Plans: Bucket Kickers (RECIPE!)
+								i(206553),	-- Ancient Plans: Dawn of Demise (RECIPE!)
+								i(206557),	-- Ancient Plans: Death's Gamble (RECIPE!)
+								i(206537),	-- Ancient Plans: Edict of the Redeemed Crusader (RECIPE!)
+								i(206555),	-- Ancient Plans: Gauntlets of the Unrelenting (RECIPE!)
+								i(206550),	-- Ancient Plans: Harbinger of Death (RECIPE!)
+								i(206533),	-- Ancient Plans: Midnight's Graze (RECIPE!)
+								i(206545),	-- Ancient Plans: Plated Construct's Ribcage (RECIPE!)
+								i(206536),	-- Ancient Plans: Shade's Blade (RECIPE!)
+								i(206531),	-- Ancient Plans: Strength of Menethil (RECIPE!)
+								i(206560),	-- Ancient Plans: Stygian Shield (RECIPE!)
+								i(206549),	-- Ancient Plans: The Face of Doom (RECIPE!)
+								i(206544),	-- Ancient Plans: The Final Dream (RECIPE!)
+								i(206541),	-- Ancient Plans: The Plague Belcher (RECIPE!)
+								i(206534),	-- Ancient Plans: Weaver's Fang (RECIPE!)
+								i(206535),	-- Ancient Plans: Widow's Weep (RECIPE!)
+								i(206559),	-- Ancient Schematic: Replaced Servo Arm (RECIPE!)
+								i(206548),	-- Ancient Technique: Encased Frigid Heart (RECIPE!)
+								i(206532),	-- Ancient Technique: Soulscryer (RECIPE!)
+							},
 						}),
 					},
 				}),
@@ -1044,6 +1079,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							},
 						}),
 					}),
+					n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+						i(206585, {	-- Valiance (MOUNT!)
+							["description"] = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the obedience to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.",
+							["cost"] = {{ "i", 208068, 1 }},	-- 1x Rotten Delicious
+						}),
+					})),
 					n(ZONE_DROPS, {
 						i(39467),	-- Minion Bracers
 						i(39427),	-- Omen of Ruin

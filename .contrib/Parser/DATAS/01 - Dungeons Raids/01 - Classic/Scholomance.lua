@@ -656,9 +656,15 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	}),
 	n(TREASURES, {
 		o(403567, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
-			["description"] = "In Rattlegore's room, on the first bone pile to the left of the entrance, you will find a very small item that can be looted",
+			["description"] = "In Rattlegore's room, on the first bone pile to the left of the entrance, you will find a very small item that can be looted.",
 			["groups"] = {
 				i(206372),	-- Cracked Argent Dawn Commission
+			},
+		})),
+		o(405388, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Familiar Journal
+			["description"] = "The Familiar Journal itself can be found in the Viewing Room of Old Scholomance, on a bookshelf near the mini-boss Marduk Blackpool. All you have to do is pick up the book, and the toy is yours! It's as simple as that.",
+			["groups"] = {
+				i(208096),	-- Familiar Journal (TOY!)
 			},
 		})),
 		o(175965, {	-- Frostwhisper's Embalming Fluid

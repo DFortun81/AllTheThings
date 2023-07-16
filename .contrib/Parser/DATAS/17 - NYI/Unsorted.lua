@@ -335,16 +335,6 @@ root(ROOTS.Unsorted, {
 				i(206341),	-- Ensemble: Wanderer's Lively Trappings
 				i(206342),	-- Ensemble: Wanderer's Sepia Trappings
 			}),
-			filter(TOYS, {
-				i(206268),	-- Ethereal Transmogrifier (TOY!)
-				i(208096),	-- Familiar Journal (TOY!)
-				i(206993),	-- Investi-gator's Pocketwatch (TOY!)
-				i(206195),	-- Path of the Naaru (TOY!)
-				i(206565),	-- Plagued Grain (TOY!)
-			}),
-			filter(MOUNTS, {
-				i(206585),	-- Valiance (MOUNT!)
-			}),
 			header(HEADERS.LFGDungeon, 227, {	-- Naxxramas
 				i(206447),	-- Task List for Adventurers
 				i(206449),	-- Omarion's Second Handbook
@@ -435,60 +425,17 @@ root(ROOTS.Unsorted, {
 				i(206393),	-- Pattern: Glacial Cloak
 				prof(BLACKSMITHING, {
 					-- RECIPES --
-					i(206540),	-- Ancient Plans: Axe of Sundered Bone (RECIPE!)
-					i(206558),	-- Ancient Plans: Belt of the Mentor (RECIPE!)
-					i(206539),	-- Ancient Plans: Blade of Unholy Might (RECIPE!)
-					i(206546),	-- Ancient Plans: Blade of the Fallen Seraph (RECIPE!)
-					i(206542),	-- Ancient Plans: Bracers of Vengeance (RECIPE!)
-					i(206805),	-- Ancient Plans: Bucket Kickers (RECIPE!)
-					i(206553),	-- Ancient Plans: Dawn of Demise (RECIPE!)
-					i(206557),	-- Ancient Plans: Death's Gamble (RECIPE!)
-					i(206537),	-- Ancient Plans: Edict of the Redeemed Crusader (RECIPE!)
-					i(206555),	-- Ancient Plans: Gauntlets of the Unrelenting (RECIPE!)
-					i(206550),	-- Ancient Plans: Harbinger of Death (RECIPE!)
-					i(206533),	-- Ancient Plans: Midnight's Graze (RECIPE!)
-					i(206545),	-- Ancient Plans: Plated Construct's Ribcage (RECIPE!)
-					i(206536),	-- Ancient Plans: Shade's Blade (RECIPE!)
-					i(206531),	-- Ancient Plans: Strength of Menethil (RECIPE!)
-					i(206560),	-- Ancient Plans: Stygian Shield (RECIPE!)
-					i(206541),	-- Ancient Plans: The Plague Belcher (RECIPE!)
-					i(206544),	-- Ancient Plans: The Final Dream (RECIPE!)
-					i(206549),	-- Ancient Plans: The Face of Doom (RECIPE!)
-					i(206534),	-- Ancient Plans: Weaver's Fang (RECIPE!)
-					i(206535),	-- Ancient Plans: Widow's Weep (RECIPE!)
 					i(206419),	-- Plans: Icebane Coif (RECIPE!)
 					i(206425),	-- Plans: Icebane Leggings (RECIPE!)
 					i(206420),	-- Plans: Icebane Mantle (RECIPE!)
 					i(206426),	-- Plans: Icebane Trudgers (RECIPE!)
 					i(206424),	-- Plans: Icebane Waistguard (RECIPE!)
 					-- CRAFTED --
-					i(206493),	-- Axe of Sundered Bone
-					i(206511),	-- Belt of the Mentor
-					i(206492),	-- Blade of Unholy Might
-					i(206499),	-- Blade of the Fallen Seraph
-					i(206495),	-- Bracers of Vengeance
-					i(206506),	-- Dawn of Demise
-					i(206510),	-- Death's Gamble
-					i(206490),	-- Edict of the Redeemed Crusader
-					i(206787),	-- Bucket Kickers
-					i(206508),	-- Gauntlets of the Unrelenting
-					i(206503),	-- Harbinger of Death
 					i(206442),	-- Icebane Leggings
 					i(206443),	-- Icebane Mantle
 					i(206444),	-- Icebane Coif
 					i(206445),	-- Icebane Waistguard
 					i(206446),	-- Icebane Trudgers
-					i(206486),	-- Midnight's Graze
-					i(206498),	-- Plated Construct's Ribcage
-					i(206489),	-- Shade's Blade
-					i(206484),	-- Strength of Menethil
-					i(206513),	-- Stygian Shield
-					i(206494),	-- The Plague Belcher
-					i(206497),	-- The Final Dream
-					i(206502),	-- The Face of Doom
-					i(206648),	-- Undeath Metal
-					i(206487),	-- Weaver's Fang
-					i(206488),	-- Widow's Weep
 				}),
 				prof(COOKING, {
 					-- NYI --??
@@ -511,83 +458,68 @@ root(ROOTS.Unsorted, {
 				}),
 				prof(ENGINEERING, {
 					-- RECIPES --
-					i(206559),	-- Ancient Schematic: Replaced Servo Arm (RECIPE!)
+
 					-- CRAFTED --
-					i(206512),	-- Replaced Servo Arm
+
 				}),
 				prof(INSCRIPTION, {
 					-- RECIPES --
-					i(206548),	-- Ancient Technique: Encased Frigid Heart (RECIPE!)
-					i(206532),	-- Ancient Technique: Soulscryer (RECIPE!)
+
 					-- CRAFTED --
-					i(206501),	-- Encased Frigid Heart
-					i(206485),	-- Soulscryer
+
 				}),
 				prof(JEWELCRAFTING, {
 					-- RECIPES --
-					i(206552),	-- Ancient Design: Frostwyrm's Frigid Stare (RECIPE!)
-					i(206551),	-- Ancient Design: Frostwyrm's Icy Gaze (RECIPE!)
-					i(206543),	-- Ancient Design: Gem of the Nerubians (RECIPE!)
+
 					-- CRAFTED --
-					i(206505),	-- Frostwyrm's Frigid Stare
-					i(206504),	-- Frostwyrm's Icy Gaze
-					i(206496),	-- Gem of the Nerubians
+
 					-- NYI --??
 					r(412557),	-- TEST CRUSHING (DNT)
 				}),
 				prof(LEATHERWORKING, {
 					-- RECIPES --
-					i(206556),	-- Ancient Pattern: Displacement Boots (RECIPE!)
+
 					i(206411),	-- Pattern: Icy Scale Crown (RECIPE!)
 					i(206417),	-- Pattern: Icy Scale Leggings (RECIPE!)
 					i(206412),	-- Pattern: Icy Scale Shoulderpads (RECIPE!)
 					i(206418),	-- Pattern: Icy Scale Stompers (RECIPE!)
 					i(206416),	-- Pattern: Icy Scale Waistwrap (RECIPE!)
 
-					i(206538),	-- Ancient Pattern: Nerubian Persuader (RECIPE!)
+
 					i(206408),	-- Pattern: Polar Belt (RECIPE!)
 					i(206410),	-- Pattern: Polar Footwarmers (RECIPE!)
 					i(206403),	-- Pattern: Polar Helm (RECIPE!)
 					i(206409),	-- Pattern: Polar Leggings (RECIPE!)
 					i(206404),	-- Pattern: Polar Spaulders (RECIPE!)
 					-- CRAFTED --
-					i(206509),	-- Displacement Boots
+
 					i(206439),	-- Icy Scale Crown
 					i(206437),	-- Icy Scale Leggings
 					i(206438),	-- Icy Scale Shoulderpads
 					i(206441),	-- Icy Scale Stompers
 					i(206440),	-- Icy Scale Waistwrap
-					i(206646),	-- Languished Leather
-					i(206491),	-- Nerubian Persuader
 					i(206435),	-- Polar Belt
 					i(206436),	-- Polar Footwarmers
 					i(206434),	-- Polar Helm
 					i(206432),	-- Polar Leggings
 					i(206433),	-- Polar Spaulders
-					i(206647),	-- Scourged Scales
 				}),
 				prof(TAILORING, {
 					-- RECIPES --
-					i(206547),	-- Ancient Pattern: Bindings of the Harvested Soul (RECIPE!)
 					i(206395),	-- Pattern: Glacial Chapeau (RECIPE!)
 					i(206396),	-- Pattern: Glacial Epaulets (RECIPE!)
 					i(206402),	-- Pattern: Glacial Footwear (RECIPE!)
 					i(206401),	-- Pattern: Glacial Leggings (RECIPE!)
 					i(206400),	-- Pattern: Glacial Tether (RECIPE!)
-					i(206554),	-- Ancient Pattern: Necrotic Gown (RECIPE!)
-					i(206583),	-- Ancient Pattern: Peculiar Glacial Mantle (RECIPE!)
-					i(206563),	-- Ancient Pattern: Shroud of Forbidden Magic (RECIPE!)
+
 					-- CRAFTED --
-					i(206500),	-- Bindings of the Harvested Soul
-					i(206645),	-- Cursed Cloth
+
 					i(206429),	-- Glacial Chapeau
 					i(206428),	-- Glacial Epaulets
 					i(206431),	-- Glacial Footwear
 					i(206427),	-- Glacial Leggings
 					i(206430),	-- Glacial Tether
-					i(206507),	-- Necrotic Gown
-					i(206582),	-- Peculiar Glacial Mantle
-					i(206562),	-- Shroud of Forbidden Magic
+
 				}),
 			}),
 			i(52032),	-- Rockin'-Powder-Infused Rocket Boots

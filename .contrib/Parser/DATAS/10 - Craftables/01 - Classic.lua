@@ -228,10 +228,13 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7915),	-- Barbaric Iron Helm
 			i(163964, {["timeline"] = {"added 8.0.1"}}),	-- Barbaric Iron Hauberk
 			i(7913),	-- Barbaric Iron Shoulders
+			i(206511, {["timeline"] = {ADDED_10_1_5}}),	-- Belt of the Mentor
 			applyclassicphase(PHASE_FIVE, i(22194)),	-- Black Grasp of the Destroyer
-			applyclassicphase(PHASE_FOUR, i(19690, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodsoul Breastplate
-			applyclassicphase(PHASE_FOUR, i(19692, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodsoul Gauntlets
-			applyclassicphase(PHASE_FOUR, i(19691, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodsoul Shoulders
+			applyclassicphase(PHASE_FOUR, i(19690, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Bloodsoul Breastplate
+			applyclassicphase(PHASE_FOUR, i(19692, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Bloodsoul Gauntlets
+			applyclassicphase(PHASE_FOUR, i(19691, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Bloodsoul Shoulders
+			i(206495, {["timeline"] = {ADDED_10_1_5}}),	-- Bracers of Vengeance
+			i(206787, {["timeline"] = {ADDED_10_1_5}}),	-- Bucket Kickers
 			i(2853),	-- Copper Bracers
 			i(2851),	-- Copper Chain Belt
 			i(3469),	-- Copper Chain Boots
@@ -243,10 +246,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_FOUR, i(20550)),	-- Darkrune Breastplate
 			applyclassicphase(PHASE_FOUR, i(20549)),	-- Darkrune Gauntlets
 			applyclassicphase(PHASE_FOUR, i(20551)),	-- Darkrune Helm
-			applyclassicphase(PHASE_FOUR, i(19693, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Darksoul Breastplate
-			applyclassicphase(PHASE_FOUR, i(19694, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Darksoul Leggings
-			applyclassicphase(PHASE_FOUR, i(19695, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Darksoul Shoulders
+			applyclassicphase(PHASE_FOUR, i(19693, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Darksoul Breastplate
+			applyclassicphase(PHASE_FOUR, i(19694, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Darksoul Leggings
+			applyclassicphase(PHASE_FOUR, i(19695, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Darksoul Shoulders
 			applyclassicphase(TBC_PHASE_ONE, i(12625, {["timeline"]={"added 2.0.1"}})),	-- Dawnbringer Shoulders
+			i(206508, {["timeline"] = {ADDED_10_1_5}}),	-- Gauntlets of the Unrelenting
 			i(3474),	-- Gemmed Copper Gauntlets
 			applyclassicphase(PHASE_THREE, i(19051)),	-- Girdle of the Dawn
 			applyclassicphase(PHASE_THREE, i(19057)),	-- Gloves of the Dawn
@@ -301,6 +305,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7926, {["timeline"]={"removed 4.0.3"}}),	-- Ornate Mithril Pants
 			i(7928, {["timeline"]={"removed 4.0.3"}}),	-- Ornate Mithril Shoulder
 			i(2868),	-- Patterned Bronze Bracers
+			i(206498, {["timeline"] = {ADDED_10_1_5}}),	-- Plated Construct's Ribcage
 			i(3846),	-- Polished Steel Boots
 			i(12416),	-- Radiant Belt
 			i(12419),	-- Radiant Boots
@@ -400,10 +405,13 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(206648, {["timeline"] = {ADDED_10_1_5}}),	-- Undeath Metal
 		}),
 		n(WEAPONS, {
+			i(206493, {["timeline"] = {ADDED_10_1_5}}),	-- Axe of Sundered Bone
 			i(7945),	-- Big Black Mace
 			i(3848),	-- Big Bronze Knife
-			i(203790, {["timeline"] = {ADDED_10_0_7 }}),	-- Bloodherald
-			i(203793, {["timeline"] = {ADDED_10_0_7 }}),	-- Bloodlord's Reaver
+			i(206492, {["timeline"] = {ADDED_10_1_5}}),	-- Blade of Unholy Might
+			i(206499, {["timeline"] = {ADDED_10_1_5}}),	-- Blade of the Fallen Seraph
+			i(203790, {["timeline"] = {ADDED_10_0_7}}),	-- Bloodherald
+			i(203793, {["timeline"] = {ADDED_10_0_7}}),	-- Bloodlord's Reaver
 			i(7942),	-- Blue Glittering Axe
 			i(2849),	-- Bronze Axe
 			i(7958),	-- Bronze Battle Axe
@@ -416,23 +424,27 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7955),	-- Copper Claymore
 			i(2844),	-- Copper Mace
 			i(2847),	-- Copper Shortsword
-			i(206478, {["timeline"] = {ADDED_10_1_5 }}),	-- Darrowdirk
-			i(206479, {["timeline"] = {ADDED_10_1_5 }}),	-- Darrowshire Protector
+			i(206478, {["timeline"] = {ADDED_10_1_5}}),	-- Darrowdirk
+			i(206479, {["timeline"] = {ADDED_10_1_5}}),	-- Darrowshire Protector
+			i(206506, {["timeline"] = {ADDED_10_1_5}}),	-- Dawn of Demise
 			i(7944),	-- Dazzling Mithril Rapier
 			i(3490),	-- Deadly Bronze Poniard
+			i(206510, {["timeline"] = {ADDED_10_1_5}}),	-- Death's Gamble
 			i(7947),	-- Ebon Shiv
 			i(17704),	-- Edge of Winter
+			i(206490, {["timeline"] = {ADDED_10_1_5}}),	-- Edict of the Redeemed Crusader
 			applyclassicphase(TBC_PHASE_ONE, i(29203, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Enchanted Thorium Blades
-			i(203813, {["timeline"] = {ADDED_10_0_7 }}),	-- Fiery Vengeance
+			i(203813, {["timeline"] = {ADDED_10_0_7}}),	-- Fiery Vengeance
 			i(3854),	-- Frost Tiger Blade
 			i(12259),	-- Glinting Steel Dagger
 			i(3852),	-- Golden Iron Destroyer
-			i(203810, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Carver
-			i(203806, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Crusher
-			i(203809, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Grinder
-			i(203797, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi HexXxer
-			i(203812, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Poker
-			i(203801, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Slicer
+			i(203810, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Carver
+			i(203806, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Crusher
+			i(203809, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Grinder
+			i(203797, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi HexXxer
+			i(203812, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Poker
+			i(203801, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Slicer
+			i(206503, {["timeline"] = {ADDED_10_1_5}}),	-- Harbinger of Death
 			i(3849),	-- Hardened Iron Shortsword
 			i(3491),	-- Heavy Bronze Mace
 			i(3487),	-- Heavy Copper Broadsword
@@ -440,18 +452,19 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6214),	-- Heavy Copper Maul
 			i(7941),	-- Heavy Mithril Axe
 			i(12775),	-- Huge Thorium Battleaxe
-			i(207561, {["timeline"] = {ADDED_10_1_5 }}),	-- Ichor Slicer
-			i(207555, {["timeline"] = {ADDED_10_1_5 }}),	-- Intrepid Shortblade
+			i(207561, {["timeline"] = {ADDED_10_1_5}}),	-- Ichor Slicer
+			i(207555, {["timeline"] = {ADDED_10_1_5}}),	-- Intrepid Shortblade
 			i(5541),	-- Iridescent Hammer
 			i(6731),	-- Ironforge Breastplate
 			i(3850),	-- Jade Serpentblade
 			applyclassicphase(PHASE_FIVE, i(22198)),	-- Jagged Obsidian Shield
 			i(3855),	-- Massive Iron Axe
+			i(206486, {["timeline"] = {ADDED_10_1_5}}),	-- Midnight's Graze
 			i(3492),	-- Mighty Iron Hammer
-			i(206480, {["timeline"] = {ADDED_10_1_5 }}),	-- Mirah's Lullaby
+			i(206480, {["timeline"] = {ADDED_10_1_5}}),	-- Mirah's Lullaby
 			i(3853),	-- Moonsteel Broadsword
 			i(12773),	-- Ornate Thorium Handaxe
-			i(203811, {["timeline"] = {ADDED_10_0_7 }}),	-- Pitchfork of Madness
+			i(203811, {["timeline"] = {ADDED_10_0_7}}),	-- Pitchfork of Madness
 			i(5540),	-- Pearl-handled Dagger
 			i(9718, {	-- Reforged Blade of Heroes
 				["cost"] = {
@@ -463,25 +476,33 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				},
 			}),
 			i(7946),	-- Runed Mithril Hammer
-			i(207560, {["timeline"] = {ADDED_10_1_5 }}),	-- Sacred Guardian
+			i(207560, {["timeline"] = {ADDED_10_1_5}}),	-- Sacred Guardian
 			i(12260),	-- Searing Golden Blade
-			i(203804, {["timeline"] = {ADDED_10_0_7 }}),	-- Sceptre of Hexing
+			i(203804, {["timeline"] = {ADDED_10_0_7}}),	-- Sceptre of Hexing
+			i(206489, {["timeline"] = {ADDED_10_1_5}}),	-- Shade's Blade
 			i(3856),	-- Shadow Crescent Axe
 			i(3851),	-- Solid Iron Maul
+			i(206484, {["timeline"] = {ADDED_10_1_5}}),	-- Strength of Menethil
 			i(17193),	-- Sulfuron Hammer
+			i(206513, {["timeline"] = {ADDED_10_1_5}}),	-- Stygian Shield
+			i(206502, {["timeline"] = {ADDED_10_1_5}}),	-- The Face of Doom
+			i(206497, {["timeline"] = {ADDED_10_1_5}}),	-- The Final Dream
+			i(206494, {["timeline"] = {ADDED_10_1_5}}),	-- The Plague Belcher
 			applyclassicphase(TBC_PHASE_ONE, i(29201, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Thick Bronze Darts
 			i(3489),	-- Thick War Axe
-			i(207556, {["timeline"] = {ADDED_10_1_5 }}),	-- Valiant Shortblade
-			i(203802, {["timeline"] = {ADDED_10_0_7 }}),	-- Venomfang
-			i(203860, {["timeline"] = {ADDED_10_0_7 }}),	-- Venomreaver
+			i(207556, {["timeline"] = {ADDED_10_1_5}}),	-- Valiant Shortblade
+			i(203802, {["timeline"] = {ADDED_10_0_7}}),	-- Venomfang
+			i(203860, {["timeline"] = {ADDED_10_0_7}}),	-- Venomreaver
 			i(12792, {	-- Volcanic Hammer
 				["timeline"] = { "added 1.0.0", "removed 4.0.3" },	-- NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
 			}),
-			i(203791, {["timeline"] = {ADDED_10_0_7 }}),	-- Warblades of the Hakkari, Reborn (MH)
-			i(203792, {["timeline"] = {ADDED_10_0_7 }}),	-- Warblades of the Hakkari, Reborn (OH)
-			i(206477, {["timeline"] = {ADDED_10_1_5 }}),	-- Warsword of Caer Darrow
-			i(7943),	-- Wicked Mithril Blade
+			i(203791, {["timeline"] = {ADDED_10_0_7}}),	-- Warblades of the Hakkari, Reborn (MH)
+			i(203792, {["timeline"] = {ADDED_10_0_7}}),	-- Warblades of the Hakkari, Reborn (OH)
+			i(206477, {["timeline"] = {ADDED_10_1_5}}),	-- Warsword of Caer Darrow
+			i(206487, {["timeline"] = {ADDED_10_1_5}}),	-- Weaver's Fang
 			applyclassicphase(TBC_PHASE_ONE, i(29202, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Whirling Steel Axes
+			i(7943),	-- Wicked Mithril Blade
+			i(206488, {["timeline"] = {ADDED_10_1_5}}),	-- Widow's Weep
 			-- #if AFTER TBC
 			i(12798),	-- Annihilator
 			i(12790, {["timeline"]={"removed 4.0.3","added 7.1.5"}}),	-- Arcanite Champion
@@ -799,7 +820,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}))),
 		-- #if AFTER 10.1.5
 		filter(HELD_IN_OFF_HAND, {
-			i(207557, {["timeline"] = {ADDED_10_1_5 }}),	-- Magebane Nexus
+			i(207557, {["timeline"] = {ADDED_10_1_5}}),	-- Magebane Nexus
 		}),
 		-- #endif
 		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
@@ -853,8 +874,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(11287),	-- Lesser Magic Wand
 			i(11289),	-- Lesser Mystic Wand
 			i(203808, {["timeline"]={ADDED_10_0_7}}),	-- Mindslave's Reach
-			i(207558, {["timeline"] = {ADDED_10_1_5 }}),	-- Smoked Fireshooter
-			i(207559, {["timeline"] = {ADDED_10_1_5 }}),	-- Stormwatcher
+			i(207558, {["timeline"] = {ADDED_10_1_5}}),	-- Smoked Fireshooter
+			i(207559, {["timeline"] = {ADDED_10_1_5}}),	-- Stormwatcher
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, cat(695, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Weapon Enchantments
 			i(38880),	-- Enchant Weapon - Agility
@@ -873,7 +894,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(38781),	-- Enchant 2H Weapon - Lesser Intellect
 			i(38794),	-- Enchant Weapon - Lesser Striking
 			i(38788),	-- Enchant 2H Weapon - Lesser Versatility / WRATH: Enchant 2H Weapon - Lesser Spirit
-			i(38871, {["timeline"]={"added 3.0.1","removed 4.0.3", "added 10.1.5" }}),	-- Enchant Weapon - Lifestealing
+			i(38871, {["timeline"]={"added 3.0.1","removed 4.0.3", "added 10.1.5"}}),	-- Enchant Weapon - Lifestealing
 			i(38875),	-- Enchant 2H Weapon - Major Intellect
 			i(38874),	-- Enchant 2H Weapon - Major Versatility / WRATH: Enchant 2H Weapon - Major Spirit
 			i(38884),	-- Enchant Weapon - Mighty Intellect
@@ -1114,16 +1135,15 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10508),	-- Mithril Blunderbuss
 			i(10510),	-- Mithril Heavy-Bore Rifle
 			i(4383),	-- Moonsight Rifle
-			i(207564, {["timeline"] = {ADDED_10_1_5 }}),	-- Refurbished Purifier
+			i(207564, {["timeline"] = {ADDED_10_1_5}}),	-- Refurbished Purifier
 			i(4362),	-- Rough Boomstick
 			i(4379),	-- Silver-Plated Shotgun
 			i(15995),	-- Thorium Rifle
 		}),
-		-- #if AFTER 10.1.5
 		n(ONE_HANDED_MACES, {
-			i(207562, {["timeline"] = {ADDED_10_1_5 }}),	-- Skullstone Bludgeon
+			i(206512, {["timeline"] = {ADDED_10_1_5}}),	-- Replaced Servo Arm
+			i(207562, {["timeline"] = {ADDED_10_1_5}}),	-- Skullstone Bludgeon
 		}),
-		-- #endif
 		category(183, {	-- Parts
 			i(4382),	-- Bronze Framework
 			i(4371),	-- Bronze Tube
@@ -1590,8 +1610,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		filter(HELD_IN_OFF_HAND, {
 			i(43661),	-- Book of Stars
 			i(43655),	-- Book of Survival
+			i(206501, {["timeline"] = {ADDED_10_1_5}}),	-- Encased Frigid Heart
 			i(43660),	-- Fire Eater's Guide
-			i(203807, {["timeline"]={ADDED_10_0_7}}),	-- Gurubashi Hoodoo Stick
+			i(203807, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Hoodoo Stick
 			i(43664),	-- Manual of Clouds
 			i(43515),	-- Mystic Tome
 			i(43657),	-- Royal Guide of Escape Routes
@@ -1601,10 +1622,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}),
 		-- #if AFTER 10.0.7
 		filter(STAVES, {
-			i(203815, {["timeline"]={ADDED_10_0_7}}),	-- Gurubashi Ceremonial Staff
-			i(203795, {["timeline"]={ADDED_10_0_7}}),	-- Judgment of the Gurubashi
-			i(206481, {["timeline"] = {ADDED_10_1_5 }}),	-- Shifting Sliver
-			i(207563, {["timeline"] = {ADDED_10_1_5 }}),	-- Wanderer's Guide
+			i(203815, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi Ceremonial Staff
+			i(203795, {["timeline"] = {ADDED_10_0_7}}),	-- Judgment of the Gurubashi
+			i(206481, {["timeline"] = {ADDED_10_1_5}}),	-- Shifting Sliver
+			i(206485, {["timeline"] = {ADDED_10_1_5}}),	-- Soulscryer
+			i(207563, {["timeline"] = {ADDED_10_1_5}}),	-- Wanderer's Guide
 		}),
 		-- #endif
 	}),
@@ -1703,6 +1725,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(25881),	-- Heavy Stone Statue
 			i(25498),	-- Rough Stone Statue
 			i(25882),	-- Solid Stone Statue
+		}),
+		n(WEAPONS, {
+			i(206505, {["timeline"] = {ADDED_10_1_5}}),	-- Frostwyrm's Frigid Stare
+			i(206504, {["timeline"] = {ADDED_10_1_5}}),	-- Frostwyrm's Icy Gaze
+			i(206496, {["timeline"] = {ADDED_10_1_5}}),	-- Gem of the Nerubians
 		}),
 	}),
 	-- #endif
@@ -2186,6 +2213,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- #endif
 				i(2315),	-- Dark Leather Boots
 				applyclassicphase(PHASE_THREE, i(19052)),	-- Dawn Treaders
+				i(206509, {["timeline"] = {ADDED_10_1_5}}),	-- Displacement Boots
 				i(7390),	-- Dusky Boots
 				i(2309),	-- Embossed Leather Boots
 				i(2307),	-- Fine Leather Boots
@@ -2320,7 +2348,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			}),
 		}),
 		n(WEAPONS, {
-			i(203805, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi's Grasp
+			i(203805, {["timeline"] = {ADDED_10_0_7}}),	-- Gurubashi's Grasp
+			i(206491, {["timeline"] = {ADDED_10_1_5}}),	-- Nerubian Persuader
 		}),
 		filter(MISC, {
 			i(206646, {["timeline"] = {ADDED_10_1_5}}),	-- Languished Leather
@@ -2494,6 +2523,12 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		},
 	}),
 	prof(TAILORING, {
+		n(ARMOR, {
+			i(206500, {["timeline"] = {ADDED_10_1_5}}),	-- Bindings of the Harvested Soul
+			i(206507, {["timeline"] = {ADDED_10_1_5}}),	-- Necrotic Gown
+			i(206582, {["timeline"] = {ADDED_10_1_5}}),	-- Peculiar Glacial Mantle
+			i(206562, {["timeline"] = {ADDED_10_1_5}}),	-- Shroud of Forbidden Magic
+		}),
 		category(230, {	-- Materials
 			i(2996),	-- Bolt of Linen Cloth
 			i(4339),	-- Bolt of Mageweave
