@@ -3746,7 +3746,7 @@ for key,value in pairs({
 	[398135] = "Weggeworfener Drakothystbohrer",	-- Discarded Dracothyst Drill
 	[398138] = "Geschmolzener Späherbot",	-- Molten Scoutbot
 	[398200] = "Vergessene Schließkassette",	-- Forgotten Lockbox
-	--TODO: [398674] = "Vibrant Flyer",	-- Vibrant Flyer
+	[398674] = "Schillerndes Flugblatt",	-- Vibrant Flyer
 	[398698] = "Quietschender Lochkäse",	-- Squeaking Swiss
 	[398770] = "Kasten mit Steinen",	-- Box of Rocks
 	[398778] = "Widerwärtiger Bottich",	-- Disgusting Vat
@@ -3773,7 +3773,7 @@ for key,value in pairs({
 	[401828] = "Reliquiar von Nal ks'kol",	-- Nal ks'kol Reliquary
 	[401839] = "Belohnung des Träumers",	-- Dreamer's Bounty
 	[401844] = "Stinkender Müllhaufen",	-- Smelly Trash Pile
-	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
+	[402609] = "Dämonisches Tor",	-- Demonic Gateway
 	[402627] = "Abgenutzter Brennofen",	-- Well-Worn Kiln
 	[402632] = "Schwefel-Rettungsring",	-- Brimstone Rescue Ring
 	[402634] = "Ältestenspeer der Zaqali",	-- Zaqali Elder Spear
@@ -3809,11 +3809,11 @@ for key,value in pairs({
 	--TODO: [403717] = "Lost Page",	-- Lost Page
 	--TODO: [403722] = "Conveniently Misplaced Hook",	-- Conveniently Misplaced Hook
 	--TODO: [403731] = "Frozen Rune",	-- Frozen Rune
-	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	[403786] = "Schädel mit Geweih",	-- Antlered Skull
 	[403919] = "Mechanisiertes Zahnrad",	-- Mechanized Cog
 	--TODO: [403962] = "Omarion's Second Handbook",	-- Omarion's Second Handbook
-	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
-	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
+	[404242] = "Öldurchtränktes Buch",	-- Oil Soaked Book
+	[404314] = "Gesprungene Steintafel",	-- Chipped Stone Tablet
 	--TODO: [404432] = "Bload Soaked Book",	-- Bload Soaked Book
 	--TODO: [405388] = "Familiar Journal",	-- Familiar Journal
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

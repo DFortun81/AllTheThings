@@ -3796,7 +3796,7 @@ for key,value in pairs({
 	[401828] = "Reliquaire de Nal Ks’kol",	-- Nal ks'kol Reliquary
 	[401839] = "Butin de la Rêveuse",	-- Dreamer's Bounty
 	[401844] = "Tas de déchets kifouette",	-- Smelly Trash Pile
-	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
+	[402609] = "Porte des démons",	-- Demonic Gateway
 	[402627] = "Four très usé",	-- Well-Worn Kiln
 	[402632] = "Bouée du soufre",	-- Brimstone Rescue Ring
 	[402634] = "Lance d’ancien zaqali",	-- Zaqali Elder Spear
@@ -3832,11 +3832,11 @@ for key,value in pairs({
 	--TODO: [403717] = "Lost Page",	-- Lost Page
 	--TODO: [403722] = "Conveniently Misplaced Hook",	-- Conveniently Misplaced Hook
 	--TODO: [403731] = "Frozen Rune",	-- Frozen Rune
-	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	[403786] = "Crâne à ramures",	-- Antlered Skull
 	[403919] = "Rouage mécanique",	-- Mechanized Cog
 	--TODO: [403962] = "Omarion's Second Handbook",	-- Omarion's Second Handbook
-	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
-	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
+	[404242] = "Livre trempé de pétrole",	-- Oil Soaked Book
+	[404314] = "Tablette en pierre ébréchée",	-- Chipped Stone Tablet
 	--TODO: [404432] = "Bload Soaked Book",	-- Bload Soaked Book
 	--TODO: [405388] = "Familiar Journal",	-- Familiar Journal
 	[9000000] = "Pierre de vent sculptée",	-- Wind Sculpted Stone

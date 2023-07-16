@@ -3476,7 +3476,7 @@ for key,value in pairs({
 	[381513] = "Picareta Velha",	-- Old Pickaxe
 	[381514] = "Basalto Polido do Mar",	-- Sea-Polished Basalt
 	[381575] = "Kit de Armadilha de Pato",	-- Duck Trap Kit
-	[381579] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381579] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381653] = "Inscrições Fogo, Asa, Presa",	-- Fang Flap Fire Signups
 	[381661] = "Pedido dos Arquivistas",	-- Archivists' Request
@@ -3748,7 +3748,7 @@ for key,value in pairs({
 	[401828] = "Relicário de Nal Ks'kol",	-- Nal ks'kol Reliquary
 	[401839] = "Tesouro da Sonhadora",	-- Dreamer's Bounty
 	[401844] = "Lixo Fedorento",	-- Smelly Trash Pile
-	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
+	[402609] = "Portal Demoníaco",	-- Demonic Gateway
 	[402627] = "Fornalha Desgastada",	-- Well-Worn Kiln
 	[402632] = "Anel de Resgate de Enxofre",	-- Brimstone Rescue Ring
 	[402634] = "Lança Zaqali Ancestral",	-- Zaqali Elder Spear
@@ -3784,11 +3784,11 @@ for key,value in pairs({
 	--TODO: [403717] = "Lost Page",	-- Lost Page
 	--TODO: [403722] = "Conveniently Misplaced Hook",	-- Conveniently Misplaced Hook
 	--TODO: [403731] = "Frozen Rune",	-- Frozen Rune
-	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	[403786] = "Caveira Galhada",	-- Antlered Skull
 	[403919] = "Engrenagem Mecanizada",	-- Mechanized Cog
 	--TODO: [403962] = "Omarion's Second Handbook",	-- Omarion's Second Handbook
 	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
-	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
+	[404314] = "Tabuleta de Pedra Lascada",	-- Chipped Stone Tablet
 	[404432] = "Livro Encharcado de Sangue",	-- Bload Soaked Book
 	--TODO: [405388] = "Familiar Journal",	-- Familiar Journal
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

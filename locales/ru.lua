@@ -3808,7 +3808,7 @@ for key,value in pairs({
 	[401828] = "Реликварий Нал-кс'кола",	-- Nal ks'kol Reliquary
 	[401839] = "Дар Дремлющей",	-- Dreamer's Bounty
 	[401844] = "Пахучая куча мусора",	-- Smelly Trash Pile
-	--TODO: [402609] = "Demonic Gateway",	-- Demonic Gateway
+	[402609] = "Демонические врата",	-- Demonic Gateway
 	[402627] = "Старый потертый горн",	-- Well-Worn Kiln
 	[402632] = "Серный спасательный круг",	-- Brimstone Rescue Ring
 	[402634] = "Копье старейшины закали",	-- Zaqali Elder Spear
@@ -3844,11 +3844,11 @@ for key,value in pairs({
 	--TODO: [403717] = "Lost Page",	-- Lost Page
 	[403722] = "Весьма кстати потерявшийся крюк",	-- Conveniently Misplaced Hook
 	[403731] = "Морозная руна",	-- Frozen Rune
-	--TODO: [403786] = "Antlered Skull",	-- Antlered Skull
+	[403786] = "Рогатый череп",	-- Antlered Skull
 	[403919] = "Механическая шестеренка",	-- Mechanized Cog
 	[403962] = "Второе руководство Омариона",	-- Omarion's Second Handbook
-	--TODO: [404242] = "Oil Soaked Book",	-- Oil Soaked Book
-	--TODO: [404314] = "Chipped Stone Tabled",	-- Chipped Stone Tabled
+	[404242] = "Пропитанная нефтью книга",	-- Oil Soaked Book
+	[404314] = "Надколотая каменная скрижаль",	-- Chipped Stone Tablet
 	--TODO: [404432] = "Bload Soaked Book",	-- Bload Soaked Book
 	--TODO: [405388] = "Familiar Journal",	-- Familiar Journal
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
