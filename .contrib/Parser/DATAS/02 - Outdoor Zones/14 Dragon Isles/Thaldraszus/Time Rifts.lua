@@ -1077,6 +1077,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(77836),	-- 1st weekly rift (itemID 207030 as reward)
 	q(76986),	-- some kind of unlock for time rift on alts (start popup on login after participate in time rift event at least once on account)
 
+
+	q(76582),	-- Ensemble: Valhalas Ceremonial Armor
+	q(76585),	-- Ensemble: Hauberk of Discipline
+	q(76584),	-- Ensemble: Lifegiver's Garms
+	q(76583),	-- Ensemble: Decorous Garments
 	q(76695),	-- after buying/loot 'Blighted Greatbow' (itemID 206784) (spellID 418958)
 	q(76691),	-- after buying/loot 'Bonegale Greataxe' (itemID 206783) (spellID 418957)
 	q(76616),	-- after buying/loot 'Branded Greatmaul' (itemID 206791) (spellID 418956)
