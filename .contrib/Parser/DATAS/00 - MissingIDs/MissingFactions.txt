@@ -623,3 +623,5 @@ faction(2555),	-- Clan Kaighan
 faction(2557),	-- Hearthfire Fellowship
 10.1.0.48480
 faction(2565),	-- Loamm Niffen (Paragon)
+10.1.7.50442
+faction(2576),	-- Druids of the Flame

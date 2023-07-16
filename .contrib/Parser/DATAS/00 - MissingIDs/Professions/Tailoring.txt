@@ -96,18 +96,6 @@ r(310940),	-- Modified Crafting Reagent 08
 r(310949),	-- Shadowlands Tailoring
 9.0.1.35679
 r(343634),	-- Shadowlands Cloth Scavenging
-10.1.5.49516
-r(413490),	-- Glacial Chapeau
-r(413491),	-- Glacial Epaulets
-r(413492),	-- Glacial Tether
-r(413494),	-- Glacial Leggings
-r(413495),	-- Glacial Footwear
-r(413747),	-- Bindings of the Harvested Soul
-r(413754),	-- Necrotic Gown
-r(413788),	-- Shroud of Forbidden Magic
-r(413903),	-- Peculiar Glacial Mantle
-10.1.5.49824
-r(414564),	-- Cursed Cloth
 
 
 
@@ -352,10 +340,6 @@ r(27659),	-- Enchanted Runecloth Bag
 r(27660),	-- Big Bag of Enchantment
 r(27724),	-- Cenarion Herb Bag
 r(27725),	-- Satchel of Cenarius
-r(28205),	-- Glacial Gloves
-r(28207),	-- Glacial Vest
-r(28208),	-- Glacial Cloak
-r(28209),	-- Glacial Wrists
 r(28210),	-- Gaea's Embrace
 r(28480),	-- Sylvan Vest
 r(28481),	-- Sylvan Crown

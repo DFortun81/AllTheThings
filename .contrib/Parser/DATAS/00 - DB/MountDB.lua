@@ -1646,13 +1646,12 @@ i(206585, 413922);	-- Valiance
 i(206673, 414316);	-- White War Wolf
 i(207083, 414323);	-- Ravenous Black Gryphon
 i(0, 302362);		-- Armored Siege Kodo
--- Probably to borrow for Races in Kalimdor
+--- NYI ---
 i(0, 417554);		-- Cliffside Wylderdrake
 i(0, 413409);		-- Highland Drake
 i(0, 417548);		-- Renewed Proto-Drake
 i(0, 417552);		-- Windborne Velocidrake
 i(0, 417556);		-- Winding Slitherdrake
--- Unsorted
 
 -- #if ANYCLASSIC
 -----------------

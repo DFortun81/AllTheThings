@@ -1,21 +1,21 @@
 5.0.3.15890
-124694
-125584
-125586
-125587
-125588
-125589
-125889
-125898
+r(124694),	-- Way of the Grill
+r(125584),	-- Way of the Wok
+r(125586),	-- Way of the Pot
+r(125587),	-- Way of the Steamer
+r(125588),	-- Way of the Oven
+r(125589),	-- Way of the Brew
+r(125889),	-- Apprentice Cookbook
+r(125898),	-- Journeyman Cookbook
 6.0.1.18179
-158883
-158898
-158913
-161211
+r(158883),	--
+r(158898),	--
+r(158913),	--
+r(161211),	-- Garrison Enchanting
 8.0.1.25902
-258965
-264160
-264191
+r(258965),	-- (TEST) Legion Blacksmithing
+r(264160),	-- (TEST) Legion Engineering
+r(264191),	-- (TEST) Pandaria Engineering
 
 
 Nothing is Missing in OtherItemDB.lua! Good Work!

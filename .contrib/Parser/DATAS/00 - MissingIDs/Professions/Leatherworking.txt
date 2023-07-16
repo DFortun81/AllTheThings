@@ -145,27 +145,6 @@ r(309292),	-- Bonerivetted Waistguard \\ Necrolord Scale Waistguard
 r(309293),	-- Bonerivetted Armguards \\ Necrolord Scale Armguards
 9.0.1.35167
 r(338261),	-- Almost Thing
-10.1.5.49516
-r(413496),	-- Polar Helm
-r(413497),	-- Polar Spaulders
-r(413498),	-- Polar Belt
-r(413499),	-- Polar Leggings
-r(413500),	-- Polar Footwarmers
-r(413501),	-- Icy Scale Crown
-r(413502),	-- Icy Scale Shoulderpads
-r(413503),	-- Icy Scale Waistwrap
-r(413504),	-- Icy Scale Leggings
-r(413505),	-- Icy Scale Stompers
-r(413516),	-- Helm of Lingering Power
-r(413517),	-- Skyfury Headdress
-r(413738),	-- Nerubian Persuader
-r(413756),	-- Displacement Boots
-r(413761),	-- Lucien's Lost Soles
-10.1.5.49719
-r(416692),	-- Sanctified Leather Hat
-10.1.5.49824
-r(414565),	-- Languished Leather
-r(414566),	-- Scourged Scales
 
 
 

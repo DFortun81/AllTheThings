@@ -7,6 +7,8 @@ pet(3975),	-- Midnight Terrorwing
 pet(4237),	-- Treanthony
 10.1.5.50379
 pet(3582),	-- Blub
+10.1.7.50442
+pet(4265),	-- Lil' Frostwing
 
 
 
@@ -20,3 +22,5 @@ pet(3975),	-- Midnight Terrorwing
 pet(4237),	-- Treanthony
 10.1.5.50379
 pet(3582),	-- Blub
+10.1.7.50442
+pet(4265),	-- Lil' Frostwing

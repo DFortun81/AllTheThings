@@ -111,15 +111,11 @@ mount(276112),	-- Darkforge Ram
 mount(363608),	-- Lightforged Ruinstrider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
-10.1.5.49516
-mount(413409),	-- Highland Drake
-10.1.5.49908
-mount(417548),	-- Renewed Proto-Drake
-mount(417552),	-- Windborne Velocidrake
-mount(417554),	-- Cliffside Wylderdrake
-mount(417556),	-- Winding Slitherdrake
 10.1.5.50130
-mount(419002),	-- Temp
+mount(419002),	-- Whelpling \\ Temp
+10.1.7.50442
+mount(419567),	-- Ginormous Grrloc
+mount(420097),	-- Azure Worldchiller
 
 
 
@@ -239,4 +235,7 @@ mount(370770),	-- Tuskarr Shoreglider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
 10.1.5.50130
-mount(419002),	-- Temp
+mount(419002),	-- Whelpling \\ Temp
+10.1.7.50442
+mount(419567),	-- Ginormous Grrloc
+mount(420097),	-- Azure Worldchiller

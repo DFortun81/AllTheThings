@@ -220,6 +220,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 			})),
+			n(RARES, {
+				n(205865, {	-- Zal'kir the Chosen <The Maw of K'Tanth>
+					["description"] = "Seem to spawn during Chronohammer Time!, Please report more info to ATT-Discord.",
+					["coord"] = { 59.8, 70.6, THALDRASZUS },
+					["g"] = {
+						i(208168),	-- Black Blade of K'tanth
+						i(208172),	-- Bloodstained Runecrook
+						i(208170),	-- Runeaxe of the Last Resistance
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(209220, {	-- Ironus Coldsteel <Chronosmith>
 					["description"] = "Need to finish `The Chronosmith` quest chain to make this npc as vendor",

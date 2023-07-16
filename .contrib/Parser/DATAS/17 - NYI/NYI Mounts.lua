@@ -638,6 +638,15 @@ root(ROOTS.NeverImplemented, {
 					-- ["modelID"] =
 				}),
 			})),
+
+			-- 10.1.5
+			tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				mount(417554),	-- Cliffside Wylderdrake
+				mount(413409),	-- Highland Drake
+				mount(417548),	-- Renewed Proto-Drake
+				mount(417552),	-- Windborne Velocidrake
+				mount(417556),	-- Winding Slitherdrake
+			})),
 		}),
 	}),
 });

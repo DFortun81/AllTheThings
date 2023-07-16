@@ -276,7 +276,7 @@ r(53840),	-- Elixir of Mighty Agility
 r(53841),	-- Wrath Elixir
 r(53842),	-- Spellpower Elixir
 r(53846),	--
-r(53847),	-- Elixir of Spirit
+r(53847),	-- Elixir of Versatility \\ Elixir of Spirit
 r(53848),	-- Guru's Elixir
 r(53895),	-- Crazy Alchemist's Potion
 r(53898),	-- Elixir of Mighty Fortitude
@@ -310,7 +310,7 @@ r(60350),	-- Transmute: Titanium
 r(60354),	-- Elixir of Accuracy
 r(60355),	-- Elixir of Deadly Strikes
 r(60356),	-- Elixir of Mighty Defense
-r(60357),	-- Elixir of Expertise
+r(60357),	-- Elixir of Mighty Intellect \\ Elixir of Expertise
 r(60365),	-- Elixir of Armor Piercing
 r(60366),	-- Elixir of Lightning Speed
 r(60367),	-- Elixir of Mighty Thoughts

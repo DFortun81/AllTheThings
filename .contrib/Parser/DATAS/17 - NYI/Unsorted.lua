@@ -458,9 +458,6 @@ root(ROOTS.Unsorted, {
 			i(208147),	-- Yellow Tweed Cap
 			i(208148),	-- Burgandy Cap
 			i(208148),	-- Burgundy Cap
-			i(208168),	-- Black Blade of K'tanth
-			i(208170),	-- Runeaxe of the Last Resistance
-			i(208172),	-- Bloodstained Runecrook
 			i(208191),	-- Time-Lost Fragment
 			i(206447),	-- Task List for Adventurers
 			--

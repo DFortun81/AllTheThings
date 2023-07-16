@@ -2013,3 +2013,232 @@
 77691@@@--
 76157@@@--
 72094@@@--
+77850@@@--
+77851@@@--
+77852@@@--
+77853@@@--
+77854@@@--
+77883@@@--
+75604@@@--
+75776@@@Ruby Lifeshrine Loop - Challenge
+75777@@@Ruby Lifeshrine Loop - Reverse Challenge
+75778@@@Wild Preserve Slalom - Challenge
+75779@@@Wild Preserve Slalom - Reverse Challenge
+75780@@@Emberflow Flight - Challenge
+75781@@@Emberflow Flight - Reverse Challenge
+75782@@@Apex Canopy River Run - Challenge
+75783@@@Apex Canopy River Run - Reverse Challenge
+75784@@@Garden Gallivant - Challenge
+75785@@@Uktulut Coaster - Challenge
+75786@@@Uktulut Coaster - Reverse Challenge
+75787@@@Wingrest Roundabout - Challenge
+75788@@@Wingrest Roundabout - Reverse Challenge
+75789@@@Flashfrost Flyover - Challenge
+75790@@@Flashfrost Flyover - Reverse Challenge
+75791@@@Wild Preserve Circuit - Challenge
+75792@@@Wild Preserve Circuit - Reverse Challenge
+75793@@@Sundapple Copse Circuit - Challenge
+75794@@@Sundapple Copse Circuit - Reverse Challenge
+75795@@@Fen Flythrough - Challenge
+75796@@@Fen Flythrough - Reverse Challenge
+75797@@@Ravine River Run - Challenge
+75798@@@Ravine River Run - Reverse Challenge
+75799@@@Emerald Garden Ascent - Challenge
+75800@@@Emerald Garden Ascent - Reverse Challenge
+75801@@@Maruukai Dash - Challenge
+75802@@@Mirror of Sky Dash - Challenge
+75803@@@River Rapids Route - Challenge
+75804@@@River Rapids Route - Reverse Challenge
+75805@@@Azure Span Sprint - Challenge
+75806@@@Azure Span Sprint - Reverse Challenge
+75807@@@Azure Span Slalom - Challenge
+75808@@@Azure Span Slalom - Reverse Challenge
+75809@@@Vakthros Ascent - Challenge
+75810@@@Vakthros Ascent - Reverse Challenge
+75811@@@Iskaara Tour - Challenge
+75812@@@Iskaara Tour - Reverse Challenge
+75813@@@Frostland Flyover - Challenge
+75815@@@Frostland Flyover - Reverse Challenge
+75816@@@Archive Ambit - Challenge
+75817@@@Archive Ambit - Reverse Challenge
+75820@@@Flowing Forest Flight - Challenge
+75821@@@Flowing Forest Flight - Reverse Challenge
+75822@@@Tyrhold Trial - Challenge
+75823@@@Tyrhold Trial - Reverse Challenge
+75824@@@Cliffside Circuit - Challenge
+75825@@@Cliffside Circuit - Reverse Challenge
+75826@@@Academy Ascent - Challenge
+75827@@@Academy Ascent - Reverse Challenge
+75828@@@Garden Gallivant - Reverse Challenge
+75829@@@Caverns Criss-Cross - Challenge
+75830@@@Caverns Criss-Cross - Reverse Challenge
+75938@@@Test
+75954@@@Stormsunder Crater Circuit - Challenge
+75955@@@Stormsunder Crater Circuit - Reverse Challenge
+75956@@@Morqut Ascent - Challenge
+75957@@@Morqut Ascent - Reverse Challenge
+75958@@@Aerie Chasm Cruise - Challenge
+75959@@@Aerie Chasm Cruise - Reverse Challenge
+75960@@@Southern Reach Route - Challenge
+75961@@@Southern Reach Route - Reverse Challenge
+75962@@@Caldera Coaster - Challenge
+75963@@@Caldera Coaster - Reverse Challenge
+75964@@@Forbidden Reach Rush - Challenge
+75965@@@Forbidden Reach Rush - Reverse Challenge
+75972@@@Crystal Circuit - Challenge
+75973@@@Crystal Circuit - Reverse Challenge
+75974@@@Caldera Cruise - Challenge
+75975@@@Caldera Cruise - Reverse Challenge
+75976@@@Brimstone Scramble - Challenge
+75977@@@Brimstone Scramble - Reverse Challenge
+75978@@@Shimmering Slalom - Challenge
+75979@@@Shimmering Slalom - Reverse Challenge
+75980@@@Loamm Roamm - Challenge
+75981@@@Loamm Roamm - Reverse Challenge
+75982@@@Sulfur Sprint - Challenge
+75983@@@Sulfur Sprint - Reverse Challenge
+76026@@@--
+76032@@@--
+76033@@@Felwood Flyover - Challenge
+76034@@@Felwood Flyover - Reverse Challenge
+76035@@@Winter Wander - Challenge
+76036@@@Winter Wander - Reverse Challenge
+76037@@@Nordrassil Spiral - Challenge
+76040@@@Nordrassil Spiral - Reverse Challenge
+76041@@@Hyjal Hotfoot - Challenge
+76042@@@Hyjal Hotfoot - Reverse Challenge
+76043@@@Rocketway Ride - Challenge
+76044@@@Rocketway Ride - Reverse Challenge
+76045@@@Ashenvale Ambit - Challenge
+76046@@@Ashenvale Ambit - Reverse Challenge
+76047@@@Durotar Tour - Challenge
+76048@@@Durotar Tour - Reverse Challenge
+76049@@@Webwinder Weave - Challenge
+76050@@@Webwinder Weave - Reverse Challenge
+76051@@@Desolace Drift - Challenge
+76052@@@Desolace Drift - Reverse Challenge
+76053@@@Barrens Divide Dive - Challenge
+76054@@@Barrens Divide Dive - Reverse Challenge
+76055@@@Razorfen Roundabout - Challenge
+76056@@@Razorfen Roundabout - Reverse Challenge
+76057@@@Thousand Needles Thread - Challenge
+76058@@@Thousand Needles Thread - Reverse Challenge
+76059@@@Feralas Ruins Ramble - Challenge
+76060@@@Feralas Ruins Ramble - Reverse Challenge
+76061@@@Ahn'Qiraj Circuit - Challenge
+76062@@@Ahn'Qiraj Circuit - Reverse Challenge
+76063@@@Uldum Tour - Challenge
+76064@@@Uldum Tour - Reverse Challenge
+76065@@@Un'Goro Crater Circuit - Challenge
+76066@@@Un'Goro Crater Circuit - Reverse Challenge
+76531@@@Bar Tab Barrel
+76545@@@--
+76577@@@--
+76579@@@--
+76591@@@--
+77095@@@Bar Tab Barrel
+77096@@@Bar Tab Barrel
+77097@@@Bar Tab Barrel
+77099@@@Bar Tab Barrel
+77100@@@--
+77102@@@Hellfire Hustle
+77103@@@Hellfire Hustle - Advanced
+77104@@@Hellfire Hustle - Reverse
+77151@@@--
+77152@@@Bar Tab Barrel
+77153@@@Bar Tab Barrel
+77154@@@--
+77155@@@Bar Tab Barrel
+77163@@@--
+77169@@@Coilfang Caper
+77170@@@Coilfang Caper - Advanced
+77171@@@Coilfang Caper - Reverse
+77205@@@Blade's Edge Brawl
+77206@@@Blade's Edge Brawl - Advanced
+77207@@@Blade's Edge Brawl - Reverse
+77208@@@--
+77238@@@Telaar Tear
+77239@@@Telaar Tear - Advanced
+77240@@@Telaar Tear - Reverse
+77251@@@Shaping the Dreamsurge
+77260@@@Razorthorn Rise Rush
+77261@@@Razorthorn Rise Rush - Advanced
+77262@@@Razorthorn Rise Rush - Reverse
+77264@@@Auchindoun Coaster
+77265@@@Auchindoun Coaster - Advanced
+77266@@@Auchindoun Coaster - Reverse
+77267@@@--
+77268@@@--
+77278@@@Tempest Keep Sweep
+77279@@@Tempest Keep Sweep - Advanced
+77280@@@Tempest Keep Sweep - Reverse
+77322@@@Shattrath City Sashay
+77323@@@Shattrath City Sashay - Advanced
+77324@@@Shattrath City Sashay - Reverse
+77325@@@--
+77327@@@--
+77328@@@--
+77331@@@--
+77345@@@The Need For Higher Velocities
+77346@@@Shadowmoon Slam
+77347@@@Shadowmoon Slam - Advanced
+77348@@@Shadowmoon Slam - Reverse
+77398@@@Eco-Dome Excursion
+77399@@@Eco-Dome Excursion - Advanced
+77400@@@Eco-Dome Excursion - Reverse
+77414@@@Shaping the Dreamsurge
+77423@@@Surging Dreams
+77433@@@--
+77434@@@--
+77483@@@--
+77484@@@--
+77485@@@--
+77486@@@--
+77487@@@--
+77488@@@--
+77589@@@Warmaul Wingding
+77591@@@Warmaul Wingding - Advanced
+77593@@@Warmaul Wingding - Reverse
+77615@@@--
+77645@@@Skettis Scramble
+77646@@@Skettis Scramble - Advanced
+77647@@@Skettis Scramble - Reverse
+77654@@@--
+77678@@@--
+77684@@@Fel Pit Fracas
+77685@@@Fel Pit Fracas - Advanced
+77686@@@Fel Pit Fracas - Reverse
+77698@@@Candy Bucket
+77699@@@--
+77700@@@--
+77701@@@--
+77702@@@--
+77703@@@--
+77704@@@--
+77705@@@--
+77706@@@--
+77707@@@--
+77708@@@--
+77709@@@--
+77710@@@--
+77725@@@--
+77744@@@Bar Tab Barrel
+77745@@@Bar Tab Barrel
+77746@@@Bar Tab Barrel
+77747@@@Bar Tab Barrel
+77760@@@--
+77763@@@--
+77766@@@--
+77774@@@--
+77775@@@--
+77779@@@--
+77790@@@--
+77792@@@--
+77796@@@--
+77797@@@--
+77798@@@--
+77839@@@--
+77840@@@--
+77861@@@--
+77875@@@--
+77876@@@--

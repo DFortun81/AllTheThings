@@ -1412,38 +1412,9 @@ q(49761),	--
 q(49762),	--
 q(49763),	--
 q(49764),	--
-8.1.0.28202
-q(54753),	--
-9.0.1.34821
-q(61160),	--
-9.0.1.35432
-q(62254),	--
-q(62255),	--
-9.0.1.35679
-q(62672),	--
-q(62673),	--
-q(62674),	--
-q(62675),	--
-q(62676),	--
-q(62677),	--
-q(62678),	--
-9.1.5.39977
-q(64986),	--
-q(64987),	--
-q(65048),	--
-q(65058),	--
-q(65059),	--
-q(65061),	--
-q(65062),	--
-10.0.0.45570
-q(72094),	--
 10.1.0.49890
 q(75059),	--
 10.1.5.49516
-q(73022),	--
-q(73087),	--
-q(73088),	--
-q(73116),	--
 q(73121),	--
 q(73122),	--
 q(73123),	--
@@ -1451,57 +1422,9 @@ q(75211),	--
 q(75460),	--
 q(75479),	--
 q(75536),	--
-q(75538),	--
 q(75605),	--
-q(75667),	--
-q(75668),	--
-q(75669),	--
-q(75670),	--
-q(75671),	--
-q(75672),	--
-q(75673),	--
-q(75674),	--
-q(75675),	--
-q(75676),	--
-q(75677),	--
-q(75678),	--
-q(75679),	--
-q(75681),	--
-q(75682),	--
-q(75683),	--
-q(75684),	--
-q(75685),	--
-q(75686),	--
-q(75687),	--
-q(75688),	--
-q(75689),	--
-q(75690),	--
-q(75691),	--
-q(75692),	--
-q(75693),	--
-q(75695),	--
-q(75696),	--
-q(75697),	--
-q(75698),	--
-q(75699),	--
-q(75700),	--
-q(75701),	--
-q(75702),	--
-q(75703),	--
-q(75704),	--
-q(75714),	--
-q(75971),	--
-q(75988),	--
-q(76021),	--
-q(76024),	--
-q(76072),	--
-q(76073),	--
-q(76074),	--
-q(76075),	--
-q(76163),	--
 q(76170),	--
 q(76198),	--
-q(76214),	--
 q(76218),	--
 q(76219),	--
 q(76220),	--
@@ -1524,233 +1447,24 @@ q(76236),	--
 q(76237),	--
 q(76238),	--
 q(76239),	--
-q(76245),	--
-q(76248),	--
-q(76249),	--
-q(76250),	--
-q(76251),	--
-q(76257),	--
-q(76261),	--
-q(76262),	--
-q(76263),	--
-q(76264),	--
-q(76265),	--
 q(76267),	--
-q(76269),	--
-q(76271),	--
-q(76272),	--
-q(76273),	--
-q(76274),	--
-q(76275),	--
-q(76278),	--
-q(76284),	--
-q(76285),	--
-q(76286),	--
-q(76287),	--
-q(76288),	--
 q(76289),	--
-q(76290),	--
-q(76291),	--
-q(76292),	--
-q(76293),	--
-q(76294),	--
-q(76295),	--
-q(76296),	--
-q(76297),	--
-q(76298),	--
-q(76299),	--
-q(76300),	--
-q(76301),	--
-q(76302),	--
-q(76303),	--
-q(76304),	--
-q(76305),	--
-q(76306),	--
-q(76307),	--
-q(76308),	--
-q(76309),	--
-q(76310),	--
-q(76311),	--
-q(76339),	--
-q(76340),	--
-q(76341),	--
-q(76351),	--
-q(76357),	--
-q(76358),	--
-q(76359),	--
 q(76360),	--
-q(76361),	--
-q(76364),	--
-q(76365),	--
-q(76366),	--
-q(76369),	--
-q(76370),	--
 q(76371),	--
-q(76372),	--
-q(76373),	--
 q(76374),	--
-q(76375),	--
-q(76376),	--
-q(76377),	--
 q(76378),	--
-q(76380),	--
-q(76381),	--
-q(76382),	--
-q(76390),	--
-q(76397),	--
-q(76399),	--
-q(76400),	--
-q(76404),	--
-q(76406),	--
-q(76410),	--
-q(76427),	--
-q(76438),	--
-q(76439),	--
-q(76440),	--
-q(76444),	--
-q(76445),	--
-q(76446),	--
-q(76447),	--
-q(76459),	--
-q(76469),	--
-q(76470),	--
-q(76471),	--
-q(76510),	--
-q(76512),	--
-q(76513),	--
-q(76515),	--
-q(76516),	--
-q(76517),	--
-q(76521),	--
-q(76523),	--
-q(76524),	--
-q(76525),	--
 10.1.5.49595
-q(76527),	--
-q(76528),	--
-q(76529),	--
-q(76533),	--
-q(76536),	--
-q(76537),	--
-q(76538),	--
-q(76544),	--
-q(76546),	--
-q(76548),	--
 q(76555),	--
 10.1.5.49719
 q(76561),	--
 q(76563),	--
-q(76581),	--
 q(76602),	--
-q(76603),	--
-q(76604),	--
-q(76605),	--
-q(76606),	--
-q(76608),	--
-q(76609),	--
-q(76610),	--
-q(76611),	--
-q(76612),	--
-q(76613),	--
-q(76615),	--
-q(76616),	--
-q(76617),	--
-q(76619),	--
-q(76620),	--
-q(76621),	--
-q(76622),	--
-q(76623),	--
-q(76624),	--
-q(76625),	--
-q(76626),	--
-q(76627),	--
-q(76628),	--
-q(76629),	--
-q(76630),	--
-q(76631),	--
-q(76632),	--
-q(76633),	--
-q(76634),	--
-q(76635),	--
 q(76636),	--
-q(76637),	--
-q(76638),	--
-q(76639),	--
-q(76640),	--
-q(76641),	--
-q(76642),	--
-q(76643),	--
-q(76644),	--
-q(76645),	--
-q(76646),	--
-q(76647),	--
-q(76648),	--
-q(76649),	--
-q(76650),	--
-q(76651),	--
-q(76652),	--
-q(76653),	--
-q(76654),	--
-q(76655),	--
-q(76656),	--
-q(76657),	--
-q(76658),	--
-q(76659),	--
-q(76660),	--
-q(76661),	--
-q(76662),	--
-q(76663),	--
 q(76664),	--
-q(76665),	--
-q(76666),	--
-q(76667),	--
-q(76668),	--
-q(76669),	--
-q(76670),	--
-q(76671),	--
-q(76672),	--
-q(76673),	--
-q(76674),	--
 q(76675),	--
-q(76676),	--
-q(76677),	--
-q(76678),	--
-q(76679),	--
-q(76680),	--
-q(76681),	--
 q(76682),	--
-q(76683),	--
-q(76684),	--
-q(76685),	--
-q(76686),	--
-q(76687),	--
-q(76688),	--
-q(76689),	--
-q(76690),	--
-q(76691),	--
-q(76692),	--
 q(76693),	--
 q(76694),	--
-q(76695),	--
-q(76696),	--
-q(76697),	--
-q(76698),	--
-q(76700),	--
-q(76701),	--
-q(76702),	--
-q(76703),	--
-q(76704),	--
-q(76705),	--
-q(76706),	--
-q(76707),	--
-q(76708),	--
-q(76709),	--
-q(76710),	--
-q(76711),	--
-q(76712),	--
-q(76713),	--
-q(76714),	--
-q(76715),	--
 q(76716),	--
 q(76717),	--
 q(76718),	--
@@ -1768,41 +1482,16 @@ q(76729),	--
 q(76730),	--
 q(76731),	--
 q(76732),	--
-q(76737),	--
-q(76740),	--
-q(76741),	--
-q(76742),	--
-q(76743),	--
-q(76744),	--
-q(76745),	--
-q(76746),	--
-q(76747),	--
 q(76981),	--
 10.1.5.49824
-q(76986),	--
-q(77092),	--
-q(77094),	--
-q(77165),	--
 q(77174),	--
 q(77179),	--
-q(77180),	--
-q(77181),	--
-q(77182),	--
-q(77183),	--
 q(77184),	--
 q(77185),	--
 q(77199),	--
 10.1.5.49908
 q(77213),	--
 q(77221),	--
-q(77241),	--
-q(77246),	--
-q(77248),	--
-q(77249),	--
-q(77250),	--
-q(77253),	--
-q(77254),	--
-q(77285),	--
 q(77306),	--
 q(77307),	--
 q(77308),	--
@@ -1880,3 +1569,235 @@ q(77689),	--
 q(77691),	--
 10.1.5.50355
 q(76157),	--
+10.1.5.50438
+q(77850),	--
+q(77851),	--
+q(77852),	--
+q(77853),	--
+q(77854),	--
+10.1.5.50469
+q(77883),	--
+10.1.7.50442
+q(75604),	--
+q(75776),	-- PTR:Ruby Lifeshrine Loop - Challenge
+q(75777),	-- PTR:Ruby Lifeshrine Loop - Reverse Challenge
+q(75778),	-- PTR:Wild Preserve Slalom - Challenge
+q(75779),	-- PTR:Wild Preserve Slalom - Reverse Challenge
+q(75780),	-- PTR:Emberflow Flight - Challenge
+q(75781),	-- PTR:Emberflow Flight - Reverse Challenge
+q(75782),	-- PTR:Apex Canopy River Run - Challenge
+q(75783),	-- PTR:Apex Canopy River Run - Reverse Challenge
+q(75784),	-- PTR:Garden Gallivant - Challenge
+q(75785),	-- PTR:Uktulut Coaster - Challenge
+q(75786),	-- PTR:Uktulut Coaster - Reverse Challenge
+q(75787),	-- PTR:Wingrest Roundabout - Challenge
+q(75788),	-- PTR:Wingrest Roundabout - Reverse Challenge
+q(75789),	-- PTR:Flashfrost Flyover - Challenge
+q(75790),	-- PTR:Flashfrost Flyover - Reverse Challenge
+q(75791),	-- PTR:Wild Preserve Circuit - Challenge
+q(75792),	-- PTR:Wild Preserve Circuit - Reverse Challenge
+q(75793),	-- PTR:Sundapple Copse Circuit - Challenge
+q(75794),	-- PTR:Sundapple Copse Circuit - Reverse Challenge
+q(75795),	-- PTR:Fen Flythrough - Challenge
+q(75796),	-- PTR:Fen Flythrough - Reverse Challenge
+q(75797),	-- PTR:Ravine River Run - Challenge
+q(75798),	-- PTR:Ravine River Run - Reverse Challenge
+q(75799),	-- PTR:Emerald Garden Ascent - Challenge
+q(75800),	-- PTR:Emerald Garden Ascent - Reverse Challenge
+q(75801),	-- PTR:Maruukai Dash - Challenge
+q(75802),	-- PTR:Mirror of Sky Dash - Challenge
+q(75803),	-- PTR:River Rapids Route - Challenge
+q(75804),	-- PTR:River Rapids Route - Reverse Challenge
+q(75805),	-- PTR:Azure Span Sprint - Challenge
+q(75806),	-- PTR:Azure Span Sprint - Reverse Challenge
+q(75807),	-- PTR:Azure Span Slalom - Challenge
+q(75808),	-- PTR:Azure Span Slalom - Reverse Challenge
+q(75809),	-- PTR:Vakthros Ascent - Challenge
+q(75810),	-- PTR:Vakthros Ascent - Reverse Challenge
+q(75811),	-- PTR:Iskaara Tour - Challenge
+q(75812),	-- PTR:Iskaara Tour - Reverse Challenge
+q(75813),	-- PTR:Frostland Flyover - Challenge
+q(75815),	-- PTR:Frostland Flyover - Reverse Challenge
+q(75816),	-- PTR:Archive Ambit - Challenge
+q(75817),	-- PTR:Archive Ambit - Reverse Challenge
+q(75820),	-- PTR:Flowing Forest Flight - Challenge
+q(75821),	-- PTR:Flowing Forest Flight - Reverse Challenge
+q(75822),	-- PTR:Tyrhold Trial - Challenge
+q(75823),	-- PTR:Tyrhold Trial - Reverse Challenge
+q(75824),	-- PTR:Cliffside Circuit - Challenge
+q(75825),	-- PTR:Cliffside Circuit - Reverse Challenge
+q(75826),	-- PTR:Academy Ascent - Challenge
+q(75827),	-- PTR:Academy Ascent - Reverse Challenge
+q(75828),	-- PTR:Garden Gallivant - Reverse Challenge
+q(75829),	-- PTR:Caverns Criss-Cross - Challenge
+q(75830),	-- PTR:Caverns Criss-Cross - Reverse Challenge
+q(75938),	-- PTR:Test
+q(75954),	-- PTR:Stormsunder Crater Circuit - Challenge
+q(75955),	-- PTR:Stormsunder Crater Circuit - Reverse Challenge
+q(75956),	-- PTR:Morqut Ascent - Challenge
+q(75957),	-- PTR:Morqut Ascent - Reverse Challenge
+q(75958),	-- PTR:Aerie Chasm Cruise - Challenge
+q(75959),	-- PTR:Aerie Chasm Cruise - Reverse Challenge
+q(75960),	-- PTR:Southern Reach Route - Challenge
+q(75961),	-- PTR:Southern Reach Route - Reverse Challenge
+q(75962),	-- PTR:Caldera Coaster - Challenge
+q(75963),	-- PTR:Caldera Coaster - Reverse Challenge
+q(75964),	-- PTR:Forbidden Reach Rush - Challenge
+q(75965),	-- PTR:Forbidden Reach Rush - Reverse Challenge
+q(75972),	-- PTR:Crystal Circuit - Challenge
+q(75973),	-- PTR:Crystal Circuit - Reverse Challenge
+q(75974),	-- PTR:Caldera Cruise - Challenge
+q(75975),	-- PTR:Caldera Cruise - Reverse Challenge
+q(75976),	-- PTR:Brimstone Scramble - Challenge
+q(75977),	-- PTR:Brimstone Scramble - Reverse Challenge
+q(75978),	-- PTR:Shimmering Slalom - Challenge
+q(75979),	-- PTR:Shimmering Slalom - Reverse Challenge
+q(75980),	-- PTR:Loamm Roamm - Challenge
+q(75981),	-- PTR:Loamm Roamm - Reverse Challenge
+q(75982),	-- PTR:Sulfur Sprint - Challenge
+q(75983),	-- PTR:Sulfur Sprint - Reverse Challenge
+q(76026),	--
+q(76032),	--
+q(76033),	-- PTR:Felwood Flyover - Challenge
+q(76034),	-- PTR:Felwood Flyover - Reverse Challenge
+q(76035),	-- PTR:Winter Wander - Challenge
+q(76036),	-- PTR:Winter Wander - Reverse Challenge
+q(76037),	-- PTR:Nordrassil Spiral - Challenge
+q(76040),	-- PTR:Nordrassil Spiral - Reverse Challenge
+q(76041),	-- PTR:Hyjal Hotfoot - Challenge
+q(76042),	-- PTR:Hyjal Hotfoot - Reverse Challenge
+q(76043),	-- PTR:Rocketway Ride - Challenge
+q(76044),	-- PTR:Rocketway Ride - Reverse Challenge
+q(76045),	-- PTR:Ashenvale Ambit - Challenge
+q(76046),	-- PTR:Ashenvale Ambit - Reverse Challenge
+q(76047),	-- PTR:Durotar Tour - Challenge
+q(76048),	-- PTR:Durotar Tour - Reverse Challenge
+q(76049),	-- PTR:Webwinder Weave - Challenge
+q(76050),	-- PTR:Webwinder Weave - Reverse Challenge
+q(76051),	-- PTR:Desolace Drift - Challenge
+q(76052),	-- PTR:Desolace Drift - Reverse Challenge
+q(76053),	-- PTR:Barrens Divide Dive - Challenge
+q(76054),	-- PTR:Barrens Divide Dive - Reverse Challenge
+q(76055),	-- PTR:Razorfen Roundabout - Challenge
+q(76056),	-- PTR:Razorfen Roundabout - Reverse Challenge
+q(76057),	-- PTR:Thousand Needles Thread - Challenge
+q(76058),	-- PTR:Thousand Needles Thread - Reverse Challenge
+q(76059),	-- PTR:Feralas Ruins Ramble - Challenge
+q(76060),	-- PTR:Feralas Ruins Ramble - Reverse Challenge
+q(76061),	-- PTR:Ahn'Qiraj Circuit - Challenge
+q(76062),	-- PTR:Ahn'Qiraj Circuit - Reverse Challenge
+q(76063),	-- PTR:Uldum Tour - Challenge
+q(76064),	-- PTR:Uldum Tour - Reverse Challenge
+q(76065),	-- PTR:Un'Goro Crater Circuit - Challenge
+q(76066),	-- PTR:Un'Goro Crater Circuit - Reverse Challenge
+q(76531),	-- PTR:Bar Tab Barrel
+q(76545),	--
+q(76577),	--
+q(76579),	--
+q(76591),	--
+q(77095),	-- PTR:Bar Tab Barrel
+q(77096),	-- PTR:Bar Tab Barrel
+q(77097),	-- PTR:Bar Tab Barrel
+q(77099),	-- PTR:Bar Tab Barrel
+q(77100),	--
+q(77102),	-- PTR:Hellfire Hustle
+q(77103),	-- PTR:Hellfire Hustle - Advanced
+q(77104),	-- PTR:Hellfire Hustle - Reverse
+q(77151),	--
+q(77152),	-- PTR:Bar Tab Barrel
+q(77153),	-- PTR:Bar Tab Barrel
+q(77154),	--
+q(77155),	-- PTR:Bar Tab Barrel
+q(77163),	--
+q(77169),	-- PTR:Coilfang Caper
+q(77170),	-- PTR:Coilfang Caper - Advanced
+q(77171),	-- PTR:Coilfang Caper - Reverse
+q(77205),	-- PTR:Blade's Edge Brawl
+q(77206),	-- PTR:Blade's Edge Brawl - Advanced
+q(77207),	-- PTR:Blade's Edge Brawl - Reverse
+q(77208),	--
+q(77238),	-- PTR:Telaar Tear
+q(77239),	-- PTR:Telaar Tear - Advanced
+q(77240),	-- PTR:Telaar Tear - Reverse
+q(77251),	-- PTR:Shaping the Dreamsurge
+q(77260),	-- PTR:Razorthorn Rise Rush
+q(77261),	-- PTR:Razorthorn Rise Rush - Advanced
+q(77262),	-- PTR:Razorthorn Rise Rush - Reverse
+q(77264),	-- PTR:Auchindoun Coaster
+q(77265),	-- PTR:Auchindoun Coaster - Advanced
+q(77266),	-- PTR:Auchindoun Coaster - Reverse
+q(77267),	--
+q(77268),	--
+q(77278),	-- PTR:Tempest Keep Sweep
+q(77279),	-- PTR:Tempest Keep Sweep - Advanced
+q(77280),	-- PTR:Tempest Keep Sweep - Reverse
+q(77322),	-- PTR:Shattrath City Sashay
+q(77323),	-- PTR:Shattrath City Sashay - Advanced
+q(77324),	-- PTR:Shattrath City Sashay - Reverse
+q(77325),	--
+q(77327),	--
+q(77328),	--
+q(77331),	--
+q(77345),	-- PTR:The Need For Higher Velocities
+q(77346),	-- PTR:Shadowmoon Slam
+q(77347),	-- PTR:Shadowmoon Slam - Advanced
+q(77348),	-- PTR:Shadowmoon Slam - Reverse
+q(77398),	-- PTR:Eco-Dome Excursion
+q(77399),	-- PTR:Eco-Dome Excursion - Advanced
+q(77400),	-- PTR:Eco-Dome Excursion - Reverse
+q(77414),	-- PTR:Shaping the Dreamsurge
+q(77423),	-- PTR:Surging Dreams
+q(77433),	--
+q(77434),	--
+q(77483),	--
+q(77484),	--
+q(77485),	--
+q(77486),	--
+q(77487),	--
+q(77488),	--
+q(77589),	-- PTR:Warmaul Wingding
+q(77591),	-- PTR:Warmaul Wingding - Advanced
+q(77593),	-- PTR:Warmaul Wingding - Reverse
+q(77615),	--
+q(77645),	-- PTR:Skettis Scramble
+q(77646),	-- PTR:Skettis Scramble - Advanced
+q(77647),	-- PTR:Skettis Scramble - Reverse
+q(77654),	--
+q(77678),	--
+q(77684),	-- PTR:Fel Pit Fracas
+q(77685),	-- PTR:Fel Pit Fracas - Advanced
+q(77686),	-- PTR:Fel Pit Fracas - Reverse
+q(77698),	-- PTR:Candy Bucket
+q(77699),	--
+q(77700),	--
+q(77701),	--
+q(77702),	--
+q(77703),	--
+q(77704),	--
+q(77705),	--
+q(77706),	--
+q(77707),	--
+q(77708),	--
+q(77709),	--
+q(77710),	--
+q(77725),	--
+q(77744),	-- PTR:Bar Tab Barrel
+q(77745),	-- PTR:Bar Tab Barrel
+q(77746),	-- PTR:Bar Tab Barrel
+q(77747),	-- PTR:Bar Tab Barrel
+q(77760),	--
+q(77763),	--
+q(77766),	--
+q(77774),	--
+q(77775),	--
+q(77779),	--
+q(77790),	--
+q(77792),	--
+q(77796),	--
+q(77797),	--
+q(77798),	--
+q(77839),	--
+q(77840),	--
+q(77861),	--
+q(77875),	--
+q(77876),	--
