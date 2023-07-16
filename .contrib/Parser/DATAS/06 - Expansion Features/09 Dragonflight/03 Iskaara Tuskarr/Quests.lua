@@ -260,11 +260,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 187323 },	-- Tutaqan
 					["coord"] = { 53.9, 38.1, THE_WAKING_SHORES },
 					["g"] = {
-						spell(390631, {	-- Ottuk Taming
-							["collectible"] = true,
-							["classes"] = { HUNTER },
-							["filterID"] = RECIPES,
-						}),
+						r(390631),	-- Ottuk Taming (CI!)
 						i(201783),	-- Tutaqan's Commendation
 					},
 				}),

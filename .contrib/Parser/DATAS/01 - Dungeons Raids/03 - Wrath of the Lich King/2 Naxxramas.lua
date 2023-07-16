@@ -103,6 +103,58 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 			})),
+			n(ACHIEVEMENTS, {
+				ach(18616, {	-- Putting Wilhelm Out of Business
+					crit(1, {	-- Omarion's Notes - Pages 1 & 2
+						["_quests"] = { 76291 },
+					}),
+					crit(2, {	-- Omarion's Notes - Pages 3 & 4
+						["_quests"] = { 76292 },
+					}),
+					crit(3, {	-- Omarion's Notes - Pages 5 & 6
+						["_quests"] = { 76293 },
+					}),
+					crit(4, {	-- Omarion's Notes - Pages 7 & 8
+						["_quests"] = { 76294 },
+					}),
+					crit(5, {	-- Omarion's Notes - Pages 9 & 10
+						["_quests"] = { 76295 },
+					}),
+					crit(6, {	-- Omarion's Notes - Pages 11 & 12
+						["_quests"] = { 76296 },
+					}),
+					crit(7, {	-- Omarion's Notes - Pages 13 & 14
+						["_quests"] = { 76297 },
+					}),
+					crit(8, {	-- Omarion's Notes - Pages 15 & 16
+						["_quests"] = { 76298 },
+					}),
+					crit(9, {	-- Omarion's Notes - Pages 17 & 18
+						["_quests"] = { 76299 },
+					}),
+					crit(10, {	-- Omarion's Notes - Pages 19 & 20
+						["_quests"] = { 76300 },
+					}),
+					crit(11, {	-- Omarion's Notes - Pages 21 & 22
+						["_quests"] = { 76301 },
+					}),
+					crit(12, {	-- Omarion's Notes - Pages 23 & 24
+						["_quests"] = { 76302 },
+					}),
+					crit(13, {	-- Omarion's Notes - Pages 25 & 26
+						["_quests"] = { 76303 },
+					}),
+					crit(14, {	-- Omarion's Notes - Pages 27 & 28
+						["_quests"] = { 76304 },
+					}),
+					crit(15, {	-- Omarion's Notes - Pages 29 & 30
+						["_quests"] = { 76305 },
+					}),
+					crit(16, {	-- Omarion's Notes - Pages 31 & 32
+						["_quests"] = { 76306 },
+					}),
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				i(206375, {	-- Corruptor's Scourgestone
 					["timeline"] = { ADDED_10_1_5 },
@@ -111,6 +163,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			prof(FISHING, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				i(206471, {	-- Abomination's Chain
 					["description"] = "Chance to be fished from any slime in Naxxramas.",
+					["sourceQuests"] = {
+						76263,	-- The Dread Citadel - Naxxramas [Honored]
+						76264,	-- The Dread Citadel - Naxxramas [Revered]
+						76265,	-- The Dread Citadel - Naxxramas [Exalted]
+					},
+					["sourceQuestNumRequired"] = 1,
 					["requireSkill"] = FISHING,
 				}),
 			})),
@@ -159,6 +217,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					["g"] = {
 						i(DEATHS_BARGAINING_CHIP),
 					},
+				}),
+				q(76290, {	-- Omarion's Second Handbook
+					["sourceQuests"] = {
+						76263,	-- The Dread Citadel - Naxxramas [Honored]
+						76264,	-- The Dread Citadel - Naxxramas [Revered]
+						76265,	-- The Dread Citadel - Naxxramas [Exalted]
+					},
+					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "i", 206449 },	-- Omarion's Second Handbook
 				}),
 			})),
 			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
@@ -907,8 +974,197 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				o(403722, {	-- Conveniently Misplaced Hook
 					["description"] = "Located in the second room of the Construct Quarter, by a vat of slime to the right.",
+					["sourceQuests"] = {
+						76263,	-- The Dread Citadel - Naxxramas [Honored]
+						76264,	-- The Dread Citadel - Naxxramas [Revered]
+						76265,	-- The Dread Citadel - Naxxramas [Exalted]
+					},
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(206470),	-- Construct's Hook
+					},
+				}),
+				o(403731, {	-- Frozen Rune
+					["description"] = "Located everywhere inside of Naxxramas.",
+					["sourceQuests"] = {
+						76263,	-- The Dread Citadel - Naxxramas [Honored]
+						76264,	-- The Dread Citadel - Naxxramas [Revered]
+						76265,	-- The Dread Citadel - Naxxramas [Exalted]
+					},
+					["sourceQuestNumRequired"] = 1,
+					["g"] = {
+						i(22682),	-- Frozen Rune
+					},
+				}),
+				o(403702, {	-- Lost Page
+					["description"] = "Pages 1 and 2 of Omarion's Notes can be found in the Outer Ring of Naxxramas, inside the slime pool that separates the Construct and Arachnid Quarters, to the north of the instance. It will be at the bottom of the pool.",
+					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
+					["g"] = {
+						i(206450, {	-- Omarion's Notes - Pages 1 & 2
+							["questID"] = 76291,
+						}),
+					},
+				}),
+				o(403703, {	-- Lost Page
+					["description"] = "Pages 3 and 4 of Omarion's notes can be found in the first room of the Arachnid Quarter, hidden within the ruined structure by the slime pool.",
+					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
+					["g"] = {
+						i(206451, {	-- Omarion's Notes - Pages 3 & 4
+							["questID"] = 76292,
+						}),
+					},
+				}),
+				o(403704, {	-- Lost Page
+					["description"] = "Pages 5 and 6 of Omarion's Notes can be found just before entering Faerlina's room - Instead of taking a left to enter the boss room, take a right. Page is hidden beneath some spider eggs.",
+					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
+					["g"] = {
+						i(206452, {	-- Omarion's Notes - Pages 5 & 6
+							["questID"] = 76293,
+						}),
+					},
+				}),
+				o(403705, {	-- Lost Page
+					["description"] = "Pages 7 and 8 of Omarion's Notes can be found in Maexxna's Room. Once you enter the room, turn back to face the entrance and look up, there will be a grapple point just above the entrance. Grapple and walk around the outer ring to the eastern end of the room, where the notes will be waiting for you.",
+					["sourceQuests"] = {
+						76307,	-- Makeshift Grappling Hook
+						76290,	-- Omarion's Second Handbook
+					},
+					["g"] = {
+						i(206453, {	-- Omarion's Notes - Pages 7 & 8
+							["questID"] = 76294,
+						}),
+					},
+				}),
+				o(403706, {	-- Lost Page
+					["description"] = "Pages 9 and 10 of Omarion's Notes can be found just before the tunnel that leads to Gluth. Before you enter the tunnel, by the pipe after Grobbulus, there will be a grapple point. Simply grapple to it to reach the note.",
+					["sourceQuests"] = {
+						76307,	-- Makeshift Grappling Hook
+						76290,	-- Omarion's Second Handbook
+					},
+					["g"] = {
+						i(206454, {	-- Omarion's Notes - Pages 9 & 10
+							["questID"] = 76295,
+						}),
+					},
+				}),
+				o(403707, {	-- Lost Page
+					["description"] = "Pages 11 and 12 of Omarion's Notes can be found in Grobbulus's room. Climb the ramp behind the boss and turn back, you will see a grappling point to a small alcove near the ceiling of the room. Grapple there and walk to the end of the alcove to reach the note.",
+					["sourceQuests"] = {
+						76307,	-- Makeshift Grappling Hook
+						76290,	-- Omarion's Second Handbook
+					},
+					["g"] = {
+						i(206455, {	-- Omarion's Notes - Pages 11 & 12
+							["questID"] = 76296,
+						}),
+					},
+				}),
+				o(403708, {	-- Lost Page
+					["description"] = "Pages 13 and 14 of Omarion's Notes can be found high on the ceiling on the corridor after Patchwerk. To reach the page, start by grabbing a grapple point by the tunnel leading to Gluth, at the broken portion to the left just before dropping to the boss, then follow a small grappling puzzle to get to the page.",
+					["sourceQuests"] = {
+						76307,	-- Makeshift Grappling Hook
+						76290,	-- Omarion's Second Handbook
+					},
+					["g"] = {
+						i(206456, {	-- Omarion's Notes - Pages 13 & 14
+							["questID"] = 76297,
+						}),
+					},
+				}),
+				o(403709, {	-- Lost Page
+					["description"] = "Pages 15 and 16 of Omarion's Notes can be found in Thaddius's room, by grappling on your way to Zackett Skullsmash.",
+					["sourceQuests"] = {
+						76307,	-- Makeshift Grappling Hook
+						76290,	-- Omarion's Second Handbook
+					},
+					["g"] = {
+						i(206457, {	-- Omarion's Notes - Pages 15 & 16
+							["questID"] = 76298,
+						}),
+					},
+				}),
+				o(403710, {	-- Lost Page
+					["description"] = "Pages 17 and 18 of Omarion's Notes can be found in the first room of the Plague Quarter, sitting by a meat wagon just to the left of the entrance. The page does blend in well with the wagon so it can be easy to miss.",
+					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
+					["g"] = {
+						i(206458, {	-- Omarion's Notes - Pages 17 & 18
+							["questID"] = 76299,
+						}),
+					},
+				}),
+				o(403711, {	-- Lost Page
+					["description"] = "Pages 19 and 20 of Omarion's Notes can be found by the corridor between Noth and Heigan in the Plague Quarter. On the mob gauntlet on the left side, there will be a slime pool covered by a sewer lid, and some mushrooms in the area. The note will be on top of one of the mushrooms.",
+					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
+					["g"] = {
+						i(206459, {	-- Omarion's Notes - Pages 19 & 20
+							["questID"] = 76300,
+						}),
+					},
+				}),
+				o(403712, {	-- Lost Page
+					["description"] = "Pages 21 and 22 of Omarion's Notes can be found in Loatheb's room, by a gate to the left of where the boss is standing (when looking from the boss's room entrance).",
+					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
+					["g"] = {
+						i(206460, {	-- Omarion's Notes - Pages 21 & 22
+							["questID"] = 76301,
+						}),
+					},
+				}),
+				o(403713, {	-- Lost Page
+					["description"] = "Pages 23 and 24 of Omarion's Notes can be found by the platform overlooking Noth's room. The platform is accessible by reaching it via the Outer Ring.",
+					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
+					["g"] = {
+						i(206461, {	-- Omarion's Notes - Pages 23 & 24
+							["questID"] = 76302,
+						}),
+					},
+				}),
+				o(403714, {	-- Lost Page
+					["description"] = "Pages 25 and 26 of Omarion's Notes can be found above the entrance to Gothik's room. Grapple to an upper alcove right at the entrance of the weapon mobs room after Razuvious, then carefully run along the small alcove all the way to Gothik's room to reach the page.",
+					["sourceQuests"] = {
+						76307,	-- Makeshift Grappling Hook
+						76290,	-- Omarion's Second Handbook
+					},
+					["g"] = {
+						i(206462, {	-- Omarion's Notes - Pages 25 & 26
+							["questID"] = 76303,
+						}),
+					},
+				}),
+				o(403715, {	-- Lost Page
+					["description"] = "Pages 27 and 28 of Omarion's Notes can be found in the Four Horsemen room, by a sewer pipe to the left as you enter the room.",
+					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
+					["g"] = {
+						i(206463, {	-- Omarion's Notes - Pages 27 & 28
+							["questID"] = 76304,
+						}),
+					},
+				}),
+				o(403716, {	-- Lost Page
+					["description"] = "Pages 29 and 30 of Omarion's Notes can be found by the stables in In Instructor Razuvious's room. Use the grapple point to an upper alcove by the nest just in front of the entrance of Razuvious's battle arena, then run along the alcove to reach the note.",
+					["sourceQuests"] = {
+						76307,	-- Makeshift Grappling Hook
+						76290,	-- Omarion's Second Handbook
+					},
+					["g"] = {
+						i(206464, {	-- Omarion's Notes - Pages 29 & 30
+							["questID"] = 76305,
+						}),
+					},
+				}),
+				o(403717, {	-- Lost Page
+					["description"] = "Pages 31 and 32 of Omarion's Notes can be found in the room after Razuvious with all the enchanted weapons. By the right, next to the corner, by one of the window frames.",
+					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
+					["g"] = {
+						i(206465, {	-- Omarion's Notes - Pages 31 & 32
+							["questID"] = 76306,
+						}),
+					},
+				}),
+				o(403962, {	-- Omarion's Second Handbook
+					["description"] = "Located by a cage in the first room of the Military Quarter.",
+					["g"] = {
+						i(206449),	-- Omarion's Second Handbook
 					},
 				}),
 			})),
@@ -1080,9 +1336,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 					}),
 					n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-						i(206585, {	-- Valiance (MOUNT!)
+						n(206712, {	-- Valiance
 							["description"] = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the obedience to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.",
 							["cost"] = {{ "i", 208068, 1 }},	-- 1x Rotten Delicious
+							["g"] = {
+								i(206585),	-- Valiance (MOUNT!)
+							},
 						}),
 					})),
 					n(ZONE_DROPS, {
@@ -1141,6 +1400,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									-- #endif
 								}),
 								i(206472, {	-- Faerlina's Sewing Kit
+									["sourceQuests"] = {
+										76263,	-- The Dread Citadel - Naxxramas [Honored]
+										76264,	-- The Dread Citadel - Naxxramas [Revered]
+										76265,	-- The Dread Citadel - Naxxramas [Exalted]
+									},
+									["sourceQuestNumRequired"] = 1,
 									["timeline"] = { ADDED_10_1_5 },
 								}),
 								i(39200),	-- Grieving Spellblade
@@ -1809,6 +2074,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									-- #endif
 								}),
 								i(206472, {	-- Faerlina's Sewing Kit
+									["sourceQuests"] = {
+										76263,	-- The Dread Citadel - Naxxramas [Honored]
+										76264,	-- The Dread Citadel - Naxxramas [Revered]
+										76265,	-- The Dread Citadel - Naxxramas [Exalted]
+									},
+									["sourceQuestNumRequired"] = 1,
 									["timeline"] = { ADDED_10_1_5 },
 								}),
 								i(39730),	-- Widow's Fury

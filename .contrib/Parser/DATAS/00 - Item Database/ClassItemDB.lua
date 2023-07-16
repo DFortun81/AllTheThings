@@ -1,5 +1,6 @@
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
 local Items = root(ROOTS.ItemDBConditional);
+local Recipes = root(ROOTS.RecipeDB);
 local iq = function(itemID, questID, classID)
 	if itemID ~= 0 then
 		Items[itemID] = { ["questID"] = questID, ["classes"] = { classID }, ["_drop"] = { "spellID" } };
@@ -7,7 +8,9 @@ local iq = function(itemID, questID, classID)
 end
 local is = function(itemID, spellID, classID)
 	if itemID ~= 0 then
-		Items[itemID] = { ["spellID"] = spellID, ["classes"] = { classID }, ["filterID"] = RECIPES, ["collectible"] = true };
+		Recipes[spellID] = { ["itemID"] = itemID, ["classes"] = { classID }, ["filterID"] = RECIPES, ["collectible"] = true };
+	else
+		Recipes[spellID] = { ["classes"] = { classID }, ["filterID"] = RECIPES, ["collectible"] = true };
 	end
 end
 
@@ -91,7 +94,7 @@ is(147770, 0, HUNTER);				-- Tome of the PTR Beast
 -----------------
 -- PATCH 8.0.1 --
 -----------------
-is(162626, 277792, MAGE);			-- Tome of Polymorph: Bumblebee
+--is(162626, 277792, MAGE);			-- Tome of Polymorph: Bumblebee
 is(162625, 277787, MAGE);			-- Tome of Polymorph: Direhorn
 is(159841, 269352, SHAMAN);			-- Tome of Hex: Skeletal Hatchling
 is(162624, 277784, SHAMAN);			-- Tome of Hex: Wicker Mongrel

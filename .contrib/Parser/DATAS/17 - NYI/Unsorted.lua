@@ -337,22 +337,22 @@ root(ROOTS.Unsorted, {
 			}),
 			header(HEADERS.LFGDungeon, 227, {	-- Naxxramas
 				i(206447),	-- Task List for Adventurers
-				i(206449),	-- Omarion's Second Handbook
-				i(206450),	-- Omarion's Notes - Pages 1 & 2
-				i(206451),	-- Omarion's Notes - Pages 3 & 4
-				i(206452),	-- Omarion's Notes - Pages 5 & 6
-				i(206453),	-- Omarion's Notes - Pages 7 & 8
-				i(206454),	-- Omarion's Notes - Pages 9 & 10
-				i(206455),	-- Omarion's Notes - Pages 11 & 12
-				i(206456),	-- Omarion's Notes - Pages 13 & 14
-				i(206457),	-- Omarion's Notes - Pages 15 & 16
-				i(206458),	-- Omarion's Notes - Pages 17 & 18
-				i(206459),	-- Omarion's Notes - Pages 19 & 20
-				i(206460),	-- Omarion's Notes - Pages 21 & 22
-				i(206461),	-- Omarion's Notes - Pages 23 & 24
-				i(206462),	-- Omarion's Notes - Pages 25 & 26
-				i(206463),	-- Omarion's Notes - Pages 27 & 28
-				i(206464),	-- Omarion's Notes - Pages 29 & 30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				i(206465),	-- Omarion's Notes - Pages 31 & 32
 			}),
 			header(HEADERS.LFGDungeon, 2430, {	-- Dawn of the Infinite

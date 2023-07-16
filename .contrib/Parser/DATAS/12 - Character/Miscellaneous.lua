@@ -88,9 +88,7 @@ root(ROOTS.Character, filter(MISC, {
 		i(134125, {	-- Mecha-Bond Imprint Matrix (CI!)
 			["timeline"] = { ADDED_7_0_3_LAUNCH },
 		}),
-		spell(390631, {	-- Ottuk Taming (CI!)
-			["filterID"] = RECIPES,
-			["collectible"] = true,
+		r(390631, {	-- Ottuk Taming (CI!)
 			["timeline"] = { ADDED_10_0_2_LAUNCH },
 		}),
 		i(136781, {	-- Pet Training Manual: Fetch (CI!)
@@ -133,6 +131,8 @@ root(ROOTS.Character, filter(MISC, {
 		}),
 		i(162626, {	-- Tome of Polymorph: Bumblebee (CI!)
 			["timeline"] = { ADDED_8_0_1_LAUNCH },
+			["filterID"] = RECIPES,
+			["spellID"] = 277792,
 		}),
 		i(162625, {	-- Tome of Polymorph: Direhorn (CI!)
 			["timeline"] = { ADDED_8_0_1_LAUNCH },
@@ -249,9 +249,7 @@ root(ROOTS.Character, filter(MISC, {
 		i(147117, {	-- Orb of the Fel Temptress
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		spell(101508, {	-- The Codex of Xerrath (CI!)
-			["filterID"] = RECIPES,
-			["collectible"] = true,
+		r(101508, {	-- The Codex of Xerrath (CI!)
 			["timeline"] = { ADDED_5_2_0 },
 		}),
 	}),
