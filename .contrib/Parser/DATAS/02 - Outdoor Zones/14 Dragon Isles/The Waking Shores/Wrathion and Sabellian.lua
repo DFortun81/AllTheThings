@@ -451,11 +451,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
 					},
 				}),
-				n(190971, {	-- Shas'ith
+				n(189822, {	-- Shas'ith
 					["description"] = "Restore 20 Obsidian Keys to Wrathion. Underground",
 					["coord"] = { 24.5, 57.8, THE_WAKING_SHORES },
 					["questID"] = 74077,
 					["isDaily"] = true,
+					["crs"] = { 190971 },	-- pre-combat
 					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
 				}),
 				n(187886, {	-- Turboris

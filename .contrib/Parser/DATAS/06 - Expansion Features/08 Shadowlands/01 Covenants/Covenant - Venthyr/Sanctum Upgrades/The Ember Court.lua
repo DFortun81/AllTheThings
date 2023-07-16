@@ -168,10 +168,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_npcs"] = { 168447 },
 								}),
 								crit(8, {	-- Rendle and Cudgelface
-									["_npcs"] = {
-										171841,	-- Cudgelface
-										171839,	-- Rendle
-									},
+									["_npcs"] = { 171839 },	-- Rendle
 								}),
 								crit(9, {	-- Choofa
 									["_npcs"] = { 168449 },
@@ -186,10 +183,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_npcs"] = { 171848 },
 								}),
 								crit(13, {	-- Kleia and Pelagos
-									["_npcs"] = {
-										171850,	-- Kleia
-										171851,	-- Pelagos
-									},
+									["_npcs"] = { 171850 },	-- Kleia
 								}),
 								crit(14, {	-- Plague Deviser Marileth
 									["_npcs"] = { 171852 },
@@ -407,10 +401,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_npcs"] = { 168447 },
 								}),
 								crit(8, {	-- Rendle and Cudgelface
-									["_npcs"] = {
-										171841,	-- Cudgelface
-										171839,	-- Rendle
-									},
+									["_npcs"] = { 171839 },	-- Rendle
 								}),
 								crit(9, {	-- Choofa
 									["_npcs"] = { 168449 },
@@ -425,10 +416,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_npcs"] = { 171848 },
 								}),
 								crit(13, {	-- Kleia and Pelagos
-									["_npcs"] = {
-										171850,	-- Kleia
-										171851,	-- Pelagos
-									},
+									["_npcs"] = { 171850 },	-- Kleia
 								}),
 								crit(14, {	-- Plague Deviser Marileth
 									["_npcs"] = { 171852 },

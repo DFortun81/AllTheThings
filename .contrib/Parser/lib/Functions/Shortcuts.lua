@@ -512,7 +512,7 @@ end
 achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
 	return struct("achievementCategoryID", id, t);
 end
-achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by the Parser
+achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info
 	t = ach(id, altID, t);
 	-- TODO: hopefully we can define a better way for these Criteria to exist such that the Criteria can be moved as expected again
 	-- they were being moved under HQT defined in _quests via AchievementDB from Blizzard

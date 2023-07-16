@@ -32,8 +32,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				crit(9, {
 					["_npcs"] = { 193135 },	-- Azra's Prized Peony
 				}),
-				crit(10, {
-					["_npcs"] = { 193228 },	-- Snappy
+				crit(10, {	-- Snappy
+					["_npcs"] = { 193226 },	-- Gorjo the Crab Shackler
 				}),
 				crit(11, {
 					["_npcs"] = { 193118 },	-- O'nank Shorescour
