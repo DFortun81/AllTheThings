@@ -2684,7 +2684,7 @@ local ResolveFunctions = {
 			if cache then
 				ArrayAppend(searchResults, cache);
 			else
-				print("Failed to select ", field, val);
+				app.print("Failed to select ", field, val);
 			end
 		end
 	end,
@@ -2714,7 +2714,7 @@ local ResolveFunctions = {
 					return;
 				end
 			end
-			print("Failed to select parent for",o.hash);
+			app.print("Failed to select parent for",o.hash);
 		end
 	end,
 	-- Instruction to find all content marked with the specified 'requireSkill'
@@ -2835,7 +2835,7 @@ local ResolveFunctions = {
 	["not"] = function(finalized, searchResults, o, cmd, field, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'",cmd,"' had empty value set")
+			app.print("'",cmd,"' had empty value set")
 			return;
 		end
 		local s, value;
@@ -2868,7 +2868,7 @@ local ResolveFunctions = {
 	["contains"] = function(finalized, searchResults, o, cmd, field, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'",cmd,"' had empty value set")
+			app.print("'",cmd,"' had empty value set")
 			return;
 		end
 		local s, kval;
@@ -2902,7 +2902,7 @@ local ResolveFunctions = {
 	["exclude"] = function(finalized, searchResults, o, cmd, field, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'",cmd,"' had empty value set")
+			app.print("'",cmd,"' had empty value set")
 			return;
 		end
 		local s, kval;
@@ -2932,7 +2932,7 @@ local ResolveFunctions = {
 	["invtype"] = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'",cmd,"' had empty value set")
+			app.print("'",cmd,"' had empty value set")
 			return;
 		end
 		local s, invtype, itemID;
@@ -2958,7 +2958,7 @@ local ResolveFunctions = {
 	["meta_achievement"] = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'",cmd,"' had empty value set")
+			app.print("'",cmd,"' had empty value set")
 			return;
 		end
 		local cache, value;
@@ -2968,7 +2968,7 @@ local ResolveFunctions = {
 			if cache then
 				ArrayAppend(searchResults, cache);
 			else
-				print("Failed to select achievementID",value);
+				app.print("Failed to select achievementID",value);
 			end
 		end
 		-- Remove any Criteria groups associated with those achievements
@@ -2986,7 +2986,7 @@ local ResolveFunctions = {
 	["relictype"] = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'",cmd,"' had empty value set")
+			app.print("'",cmd,"' had empty value set")
 			return;
 		end
 		--[[
@@ -3065,7 +3065,7 @@ local ResolveFunctions = {
 					or criteriaType == 43 then	-- Exploration
 					-- Ignored
 				else
-					print("Unhandled Criteria Type", criteriaType, assetID);
+					app.print("Unhandled Criteria Type", criteriaType, assetID);
 				end
 				-- Criteria was not Sourced, so put it under the Achievement
 				if criteriaObject then
