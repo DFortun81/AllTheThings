@@ -5,9 +5,9 @@ local ADDED_WITH_RERELEASE = { "added 3.2.2" };
 local REMOVED_WITH_RERELEASE = {
 	"added 1.0.1",
 	-- #if ANYCLASSIC
-	"removed 10.0.1"	-- Blizzard added it back to Classic Wrath!
+	"removed 10.0.1",	-- Blizzard added it back to Classic Wrath!
 	-- #else
-	"removed 3.2.2"
+	"removed 3.2.2",
 	-- #endif
 };
 local REMOVED_WITH_CATA = { "added 1.0.1", "removed 4.0.3" };

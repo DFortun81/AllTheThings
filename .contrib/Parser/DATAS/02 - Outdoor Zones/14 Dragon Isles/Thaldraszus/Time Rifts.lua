@@ -128,16 +128,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					ach(18641),	-- To All The Squirrels I've BEEN Before
 					ach(18635),	-- Verified Rifter
 				}),
-				n(BOSSES, {
+				n(BOSSES, bubbleDownFiltered({
+					["description"] = "Can drop any Time Rift Vendor Item.",
+				}, FILTERFUNC_npcID,{
 					-- testing out organizing with raw NPCs for bosses and nesting under the respective maps where they spawn
 					-- this will allow the achievement criteria to move under the proper bosses instead of being listed separately in lists
 					-- there's 7 boss zones and 14
+					-- ok literally anything can drop from any boss... symlinking is just bloated AF at that point
 					m(AZQROTH, {
 						n(205307, {	-- Fractured Causality / Fury of N'zoth
-							["sym"] = {{"select","npcID",
-								208347,	-- Provisioner Qorra <Azq'roth Vendor>
-								208548,	-- Shi Everbreeze
-							},{"pop"}},
+							-- ["sym"] = {{"select","npcID",
+							-- 	208347,	-- Provisioner Qorra <Azq'roth Vendor>
+							-- 	208548,	-- Shi Everbreeze
+							-- },{"pop"}},
 							["g"] = {
 							},
 						}),
@@ -150,10 +153,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					m(AZEWRATH, {
 						n(205306, {	-- Fractured Causality / Illidan
-							["sym"] = {{"select","npcID",
-								208341,	-- Falara Nightsong <Azwrath Vendor>
-								208548,	-- Shi Everbreeze
-							},{"pop"}},
+							-- ["sym"] = {{"select","npcID",
+							-- 	208341,	-- Falara Nightsong <Azwrath Vendor>
+							-- 	208548,	-- Shi Everbreeze
+							-- },{"pop"}},
 							["g"] = {
 								i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
 								i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
@@ -168,10 +171,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					m(AZMOURNE, {
 						n(205305, {	-- Fractured Causality / The Lich King
-							["sym"] = {{"select","npcID",
-								208338,	-- Baron Silver <Azmourne Vendor>
-								208548,	-- Shi Everbreeze
-							},{"pop"}},
+							-- ["sym"] = {{"select","npcID",
+							-- 	208338,	-- Baron Silver <Azmourne Vendor>
+							-- 	208548,	-- Shi Everbreeze
+							-- },{"pop"}},
 							["g"] = {
 							},
 						}),
@@ -184,10 +187,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					m(AZMERLOTH, {
 						n(204808, {	-- Fractured Causality / Gil'dan
-							["sym"] = {{"select","npcID",
-								208345,	-- Sir Finely Mrrgglton <Azmerloth Vendor>
-								208548,	-- Shi Everbreeze
-							},{"pop"}},
+							-- ["sym"] = {{"select","npcID",
+							-- 	208345,	-- Sir Finely Mrrgglton <Azmerloth Vendor>
+							-- 	208548,	-- Shi Everbreeze
+							-- },{"pop"}},
 							["g"] = {
 							},
 						}),
@@ -196,10 +199,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					m(ULDEROTH, {
 						n(205304, {	-- Fractured Causality / Freya
-							["sym"] = {{"select","npcID",
-								208343,	-- Sorotis <Ulderoth Vendor>
-								208548,	-- Shi Everbreeze
-							},{"pop"}},
+							-- ["sym"] = {{"select","npcID",
+							-- 	208343,	-- Sorotis <Ulderoth Vendor>
+							-- 	208548,	-- Shi Everbreeze
+							-- },{"pop"}},
 							["g"] = {
 							},
 						}),
@@ -208,10 +211,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					m(AZEROTH, {
 						n(205309, {	-- Fractured Causality / Overload Mechagon
-							["sym"] = {{"select","npcID",
-								208342,	-- Gill the Drill <A.Z.E.R.O.T.H Vendor>
-								208548,	-- Shi Everbreeze
-							},{"pop"}},
+							-- ["sym"] = {{"select","npcID",
+							-- 	208342,	-- Gill the Drill <A.Z.E.R.O.T.H Vendor>
+							-- 	208548,	-- Shi Everbreeze
+							-- },{"pop"}},
 							["g"] = {
 							},
 						}),
@@ -220,10 +223,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					m(THE_WARLANDS, {
 						n(205308, {	-- Fractured Causality / Varian Wrynn
-							["sym"] = {{"select","npcID",
-								208346,	-- Warden Krizzik <Warlands Vendor>
-								208548,	-- Shi Everbreeze
-							},{"pop"}},
+							-- ["sym"] = {{"select","npcID",
+							-- 	208346,	-- Warden Krizzik <Warlands Vendor>
+							-- 	208548,	-- Shi Everbreeze
+							-- },{"pop"}},
 							["g"] = {
 							},
 						}),
@@ -234,7 +237,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 					}),
-				}),
+				})),
 				n(FACTIONS, {
 					faction(FACTION_SORIDORMI, {
 						["cost"] = {{ "c", SORIDORMIS_RECOGNITION, 42000 }},
@@ -593,10 +596,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
 						["g"] = bubbleDownFiltered({
 							["cost"] = {{ "i", DILATED_TIME_CAPSULE, 1 }},
-						},
-						-- only apply the bubbleDown to Items
-						function(t) return t.itemID; end,
-						{
+						},FILTERFUNC_itemID,{
 							filter(CLOTH, {
 								i(207602),	-- Anachronistic Bindings
 								i(207599),	-- Anachronistic Breeches

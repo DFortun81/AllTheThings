@@ -620,7 +620,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, bubbleDownFiltered({ ["timeline"] = { "
 						{ "i", 16695, 1 },	-- Devout Mantle
 					},
 					["lvl"] = 58,
-					["lvl"] = 58,
 					["groups"] = {
 						i(22084),	-- Virtuous Sandals
 						i(22085),	-- Virtuous Skirt
@@ -748,7 +747,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, bubbleDownFiltered({ ["timeline"] = { "
 						{ "i", 16709, 1 },	-- Shadowcraft Pants
 						{ "i", 16708, 1 },	-- Shadowcraft Spaulders
 					},
-					["lvl"] = 58,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22003),	-- Darkmantle Boots
@@ -1142,7 +1140,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, bubbleDownFiltered({ ["timeline"] = { "
 						{ "i", 16733, 1 },	-- Spaulders of Valor
 					},
 					["lvl"] = 58,
-					["lvl"] = 58,
 					["groups"] = {
 						i(21995),	-- Boots of Heroism
 						i(22000),	-- Legplates of Heroism
@@ -1207,7 +1204,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, bubbleDownFiltered({ ["timeline"] = { "
 						{ "i", 16730, 1 },	-- Breastplate of Valor
 					},
 					["classes"] = { WARRIOR },
-					["lvl"] = 58,
 					["lvl"] = 58,
 					["groups"] = {
 						i(21999),	-- Helm of Heroism

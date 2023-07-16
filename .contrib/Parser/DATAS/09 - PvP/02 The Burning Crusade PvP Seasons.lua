@@ -57,7 +57,7 @@ end]];
 root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(tier(TBC_TIER, {
 	n(PVP_HONOR, {
 		-- Players have said that the Alliance versions were available through Wrath.
-		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 4.0.1" } }, function(t) return t.itemID; end, {
+		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 4.0.1" } }, FILTERFUNC_itemID, {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
@@ -206,7 +206,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				}),
 			},
 		})),
-		n(FACTION_HEADER_HORDE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 3.0.1" } }, function(t) return t.itemID; end, {
+		n(FACTION_HEADER_HORDE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 3.0.1" } }, FILTERFUNC_itemID, {
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
