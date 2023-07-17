@@ -768,10 +768,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11672, {	-- Enlistment Day
+						["qg"] = 25307,	-- Recruitment Officer Blythe
+						-- #if AFTER 4.0.3.13277
+						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra!
+						-- #endif
 						["coord"] = { 57.8, 67.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25307,	-- Recruitment Officer Blythe
-						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra!
 					}),
 					q(11570, {	-- Escape from the Winterfin Caverns
 						["qg"] = 25208,	-- Lurgglbr

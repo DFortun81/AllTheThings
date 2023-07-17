@@ -336,6 +336,7 @@ root(ROOTS.Zones, {
 				["lvl"] = 10,
 			}),
 			q(28709, {	-- Hero's Call: Borean Tundra!
+				["timeline"] = { "added 4.0.3.13277" },
 				["isBreadcrumb"] = true,
 				["lvl"] = 58,
 			}),
