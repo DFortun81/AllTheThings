@@ -434,40 +434,40 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
 						["g"] = {
 							i(206680, {	-- Reins of the Scourgebound Vanquisher (MOUNT!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 7000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
 							i(208138, {	-- N'Ruby (PET!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 6000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
 							i(206786, {	-- Scourge Victorious Tabard
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 500 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1500 }},
 							}),
 							i(206784, {	-- Blighted Greatbow
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206783, {	-- Bonegale Greataxe
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206803, {	-- Cursed Blade of the Scourge
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206797, {	-- Frostspire
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206778, {	-- Northern Ballista
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206802, {	-- Plague-Touched Stave
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206793, {	-- Upraised Headstone
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206983, {	-- Paracausal Fragment of Frostmourne
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1750 }},
 							}),
 							i(208617, {	-- Ebon Blade Commendation Badge [BOP]
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 4000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2600 }},
 							}),
 						},
 					}),
@@ -475,34 +475,34 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
 						["g"] = {
 							i(206676, {	-- Felstorm Dragon (MOUNT!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 7000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
 							i(208008, {	-- Doomrubble (PET!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 6000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
 							i(206766, {	-- Jagged Treason
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206790, {	-- Fel-Ridden Divider
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206781, {	-- Demonic Bone-Crusher
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206791, {	-- Branded Greatmaul
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206764, {	-- Fel-Infused Polearm
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206801, {	-- Inferna Rod
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206789, {	-- Heart-Slicer
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206972, {	-- Paracausal Fragment of Azzinoth
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1750 }},
 							}),
 							i(146949, {	-- Legionfall Insignia [BOP]
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
@@ -513,37 +513,37 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 51.0, 56.6, THALDRASZUS },
 						["g"] = {
 							i(206679, {	-- Perfected Juggernaut (MOUNT!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 7000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
 							i(208013, {	-- Killbot 9000 (PET!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 6000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
 							i(206804, {	-- Clockwork Mallet
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206785, {	-- Defect Retirement Tool
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206796, {	-- Energetic Power Knife
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206777, {	-- Energy Projection Regulator
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206807, {	-- Order-Powered Mechblade
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206780, {	-- Overclocked Hand Cannon
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206779, {	-- Steel-Lined Locking System
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206958, {	-- Paracausal Fragment of Val'anyr
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1750 }},
 							}),
 							i(208134, {	-- Rustbolt Resistance Insignia [BOP]
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
 							}),
 						},
 					}),
@@ -551,34 +551,34 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 51.1, 56.6, THALDRASZUS },
 						["g"] = {
 							i(206678, {	-- Sulfur Hound's Leash (MOUNT!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 7000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
 							i(208010, {	-- Jeepers (PET!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 6000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
 							i(206770, {	-- Consuming Claws
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206776, {	-- Heretical Gavel
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206765, {	-- Its Focused Gaze
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206799, {	-- Pauldrons of the Fire Lord
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1100 }},
 							}),
 							i(206768, {	-- Serrated Parasite
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206792, {	-- Subjugator's Shield
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206769, {	-- Unknown Horror's Arm
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206956, {	-- Paracausal Fragment of Sulfuras
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1750 }},
 							}),
 							i(173375, {	-- Rajani Insignia [BOP]
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
@@ -589,10 +589,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 51.0, 56.6, THALDRASZUS },
 						["g"] = {
 							i(208009, {	-- Gill'dan (PET!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 6000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
 							i(207005, {	-- Paracausal Fragment of Thunderfin, Humid Blade of the Tideseeker
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1750 }},
 							}),
 						},
 					}),
@@ -667,15 +667,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 51.1, 56.7, THALDRASZUS },
 						["g"] = {
 							i(206675, {	-- Gold-Toed Albatross (MOUNT!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 7000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
 							i(208012, {	-- Briarhorn Hatchling (PET!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 6000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
 							i(207049, {	-- Ensemble: Decorous Garments
 							--	["questID"] = 76583,
 								["classes"] = CLOTH_CLASSES,
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
 								["g"] = {
 									i(206891),	-- Decorous Guise
 									i(206890),	-- Decorous Handwraps
@@ -691,7 +691,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(207048, {	-- Ensemble: Lifegiver's Garms
 							--	["questID"] = 76584,
 								["classes"] = LEATHER_CLASSES,
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
 								["g"] = {
 									i(206905),	-- Lifegiver's Bindings
 									i(206897),	-- Lifegiver's Drape
@@ -708,7 +708,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(207047, {	-- Ensemble: Hauberk of Discipline
 							--	["questID"] = 76585,
 								["classes"] = MAIL_CLASSES,
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
 								["g"] = {
 									i(206916),	-- Chain Vest of Discipline
 									i(206912),	-- Chausses of Discipline
@@ -725,7 +725,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(207046, {	-- Ensemble: Valhalas Ceremonial Armor
 							--	["questID"] = 76582,
 								["classes"] = PLATE_CLASSES,
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
 								["g"] = {
 									i(206924),	-- Valhalas Bracelets
 									i(206917),	-- Valhalas Cape
@@ -739,25 +739,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(206794, {	-- Hand of Order
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206795, {	-- Titan Watcher's Shortblade
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206782, {	-- Titanic Hourglass
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206788, {	-- Utopian Tabard
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 500 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1500 }},
 							}),
 							i(206798, {	-- Valhalas Heartstriker
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 350 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 							}),
 							i(206767, {	-- Valhalas Peacekeeper
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 							}),
 							i(206475, {	-- Paracausal Fragment of Seschenal
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1750 }},
 							}),
 						},
 					}),
@@ -765,79 +765,80 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 51.1, 56.6, THALDRASZUS },
 						["g"] = {
 							i(208011, {	-- Obsidian Warwhelp (PET!)
-								["cost"] = {{ "c", PARACAUSAL_FLAKES, 6000 }},
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
 							n(FACTION_HEADER_ALLIANCE, sharedData({ ["races"] = ALLIANCE_ONLY }, {
 								i(206674, {	-- Reins of the Ravenous Black Gryphon (MOUNT!)
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 7000 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 								}),
 								------ Helm ------
 								i(206826, {	-- Jingoist's Hood
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206834, {	-- Jingoist's Headcover
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206865, {	-- Jingoist's Casque
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206873, {	-- Jingoist's Greathelm
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								------ Chest ------
 								i(206821, {	-- Jingoist's Robe
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206839, {	-- Jingoist's Cuirass
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
+								--[[ TODO: check on ally mail
 								i(207093, {	-- Jingoist's Mail Suit Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
 									["g"] = {
 										i(206860),	-- Jingoist's Chainmail
 										i(206869),	-- Jingoist's Vestment
 									},
-								}),
+								}),]]--
 								i(206878, {	-- Jingoist's Breastplate
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								------ Legs ------
 								i(206825, {	-- Jingoist's Leggings
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206835, {	-- Jingoist's Pantaloons
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206864, {	-- Jingoist's Legguards
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206874, {	-- Jingoist's Legplates
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								------ Cloak/Shoulders ------
 								i(207082, {	-- Jingoist's Cloth Armor Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206824),	-- Jingoist's Epaulettes
 										i(206829),	-- Jingoist's Shroud
 									},
 								}),
 								i(207080, {	-- Jingoist's Leather Armor Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206831),	-- Jingoist's Cloak
 										i(206836),	-- Jingoist's Spaulders
 									},
 								}),
 								i(207078, {	-- Jingoist's Mail Armor Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206868),	-- Jingoist's Drape
 										i(206863),	-- Jingoist's Mantle
 									},
 								}),
 								i(207075, {	-- Jingoist's Plate Armor Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206870),	-- Jingoist's Cape
 										i(206875),	-- Jingoist's Pauldrons
@@ -845,28 +846,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								------ Feets/Waist ------
 								i(207071, {	-- Jingoist's Cloth Gear Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206823),	-- Jingoist's Cord
 										i(206828),	-- Jingoist's Treads
 									},
 								}),
 								i(207067, {	-- Jingoist's Leather Gear Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206837),	-- Jingoist's Belt
 										i(206832),	-- Jingoist's Boots
 									},
 								}),
 								i(207064, {	-- Jingoist's Mail Gear Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206862),	-- Jingoist's Clasp
 										i(206867),	-- Jingoist's Footpads
 									},
 								}),
 								i(207053, {	-- Jingoist's Plate Gear Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206876),	-- Jingoist's Girdle
 										i(206871),	-- Jingoist's Warboots
@@ -874,28 +875,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								------ Hands/Wrists ------
 								i(207072, {	-- Jingoist's Cloth Equipment Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206827),	-- Jingoist's Mitts
 										i(206822),	-- Jingoist's Wristwraps
 									},
 								}),
 								i(207068, {	-- Jingoist's Leather Equipment Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206838),	-- Jingoist's Bracers
 										i(206833),	-- Jingoist's Gloves
 									},
 								}),
 								i(207063, {	-- Jingoist's Mail Equipment Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206861),	-- Jingoist's Bonds
 										i(206866),	-- Jingoist's Grips
 									},
 								}),
 								i(207052, {	-- Jingoist's Plate Equipment Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 										["g"] = {
 										i(206872),	-- Jingoist's Gauntlets
 										i(206877),	-- Jingoist's Vambraces
@@ -903,88 +904,89 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								------ Weapons ------
 								i(207014, {	-- Jingoist's Slicer
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 								}),
 								------ Trinket ------
 								i(207024, {	-- Paracausal Fragment of Shalamayne
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1750 }},
 								}),
 								------ Reputation ------
 								i(208132, {	-- Stormwind Insignia [BOP]
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 50 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
 								}),
 							})),
 							n(FACTION_HEADER_HORDE, sharedData({ ["races"] = HORDE_ONLY }, {
 								i(206673, {	-- Horn of the White War Wolf (MOUNT!)
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 7000 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 								}),
 								------ Helm ------
 								i(206816, {	-- Warmonger's Skullcap
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206846, {	-- Warmonger's Headcover
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206853, {	-- Warmonger's Casque
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206884, {	-- Warmonger's Greathelm
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								------ Chest ------
 								i(206808, {	-- Warmonger's Robe
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
+								--[[ TODO: check on horde leather
 								i(207094, {	-- Warmonger's Leather Suit Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
 									["g"] = {
 										i(206840),	-- Warmonger's Cuirass
 										i(206844),	-- Warmonger's Vestment
 									},
-								}),
+								}),]]--
 								i(206858, {	-- Warmonger's Chainmail
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206879, {	-- Warmonger's Breastplate
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								------ Legs ------
 								i(206814, {	-- Warmonger's Leggings
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206845, {	-- Warmonger's Pantaloons
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206854, {	-- Warmonger's Legguards
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								i(206883, {	-- Warmonger's Legplates
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
 								------ Cloak/Shoulders ------
 								i(207081, {	-- Warmonger's Cloth Armor Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206812),	-- Warmonger's Epaulettes
 										i(206819),	-- Warmonger's Shroud
 									},
 								}),
 								i(207079, {	-- Warmonger's Leather Armor Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206849),	-- Warmonger's Cloak
 										i(206843),	-- Warmonger's Spaulders
 									},
 								}),
 								i(207077, {	-- Warmonger's Mail Armor Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206850),	-- Warmonger's Drape	[Drape/Cloak were swapped for me... don't tell me the Cloak is spec-based... Runaway]
 										i(206855),	-- Warmonger's Mantle
 									},
 								}),
 								i(207076, {	-- Warmonger's Plate Armor Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206887),	-- Warmonger's Cape
 										i(206882),	-- Warmonger's Pauldrons
@@ -992,28 +994,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								------ Feets/Waist ------
 								i(207073, {	-- Warmonger's Cloth Equipment Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206810),	-- Warmonger's Cord
 										i(206818),	-- Warmonger's Treads
 									},
 								}),
 								i(207069, {	-- Warmonger's Leather Equipment Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206842),	-- Warmonger's Belt
 										i(206848),	-- Warmonger's Boots
 									},
 								}),
 								i(207066, {	-- Warmonger's Mail Equipment Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206856),	-- Warmonger's Clasp
 										i(206851),	-- Warmonger's Footpads
 									},
 								}),
 								i(207051, {	-- Warmonger's Plate Equipment Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206881),	-- Warmonger's Girdle
 										i(206886),	-- Warmonger's Warboots
@@ -1021,28 +1023,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								------ Hands/Wrists ------
 								i(207074, {	-- Warmonger's Cloth Gear Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206817),	-- Warmonger's Mitts
 										i(206809),	-- Warmonger's Wristwraps
 									},
 								}),
 								i(207070, {	-- Warmonger's Leather Gear Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206841),	-- Warmonger's Bracers
 										i(206847),	-- Warmonger's Gloves
 									},
 								}),
 								i(207065, {	-- Warmonger's Mail Gear Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206857),	-- Warmonger's Bonds
 										i(206852),	-- Warmonger's Grips
 									},
 								}),
 								i(207050, {	-- Warmonger's Plate Gear Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206885),	-- Warmonger's Gauntlets
 										i(206880),	-- Warmonger's Vambraces
@@ -1050,15 +1052,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								------ Weapons ------
 								i(207015, {	-- Warmonger's Ripper
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 300 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
 								}),
 								------ Trinket ------
 								i(206964, {	-- Paracausal Fragment of Doomhammer
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1750 }},
 								}),
 								------ Reputation ------
 								i(208133, {	-- Orgrimmar Insignia [BOP]
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 50 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
 								}),
 							})),
 						},
