@@ -201,7 +201,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 						n(ZULAMAN_CHEST_4, {
 							["description"] = "This item could only be found after the fourth animal boss had been defeated within the required time limit for the event.\n\nOnly one player can receive this within a given raid lockout.",
 							["groups"] = {
-								classicAch(430, {	-- Amani War Bear
+								ach(430, {	-- Amani War Bear
 									["provider"] = { "i", 33809 },	-- Amani War Bear
 									["timeline"] = { "removed 3.0.2" },
 									["filterID"] = MOUNTS,
@@ -304,7 +304,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 					-- #endif
 					["hideText"] = true,
 					["groups"] = {
-						classicAch(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
+						ach(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 11178,	-- Blood of the Warlord
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

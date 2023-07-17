@@ -1085,7 +1085,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			e(1581, {	-- Archimonde
 				["creatureID"] = 17968,
 				["groups"] = {
-					ach(695),	-- The Battle for Mount Hyjal
+					ach(695, {	-- The Battle for Mount Hyjal
+						["timeline"] = { "added 3.0.1" },
+					}),
 					ach(5090, {	-- The Battle for Mount Hyjal Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),

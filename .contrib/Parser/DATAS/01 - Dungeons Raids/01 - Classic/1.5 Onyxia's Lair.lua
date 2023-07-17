@@ -468,7 +468,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["groups"] = {
 			-- #endif
 					n(10184, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Onyxia
-						classicAch(684, {	-- Onyxia's Lair (Level 60)
+						ach(684, {	-- Onyxia's Lair (Level 60)
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								7635,	-- A Proper String

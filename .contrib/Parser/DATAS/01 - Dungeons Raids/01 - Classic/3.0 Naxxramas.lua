@@ -58,7 +58,7 @@ applyclassicphase(PHASE_SIX,
 						["maps"] = { CAVERNS_OF_TIME },
 						["isRaid"] = true,
 						["groups"] = {
-							classicAch(425, {	-- Atiesh, Greatstaff of the Guardian
+							ach(425, {	-- Atiesh, Greatstaff of the Guardian
 								["providers"] = {
 									{ "i", 22631 },	-- Atiesh, Greatstaff of the Guardian (Priest)
 									{ "i", 22589 },	-- Atiesh, Greatstaff of the Guardian (Mage)

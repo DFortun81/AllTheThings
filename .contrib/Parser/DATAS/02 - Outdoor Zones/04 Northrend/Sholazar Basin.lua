@@ -120,7 +120,7 @@ root(ROOTS.Zones, {
 				n(ACHIEVEMENTS, {
 					explorationAch(1268),	-- Explore Sholazar Basin
 					achWithFaction(950, 1104),	-- Frenzyheart Tribe
-					classicAch(961, {	-- Honorary Frenzyheart
+					ach(961, {	-- Honorary Frenzyheart
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["groups"] = {
 							crit(2061, {	-- A Hero's Headgear

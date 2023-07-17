@@ -383,7 +383,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(481, {	-- Mutanus the Devourer
 				["creatureID"] = 3654,
 				["groups"] = {
-					classicAch(630, {	-- Wailing Caverns
+					ach(630, {	-- Wailing Caverns
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

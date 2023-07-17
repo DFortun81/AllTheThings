@@ -1552,7 +1552,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			e(396, {	-- Overlord Wyrmthalak
 				["creatureID"] = 9568,	-- Overlord Wyrmthalak
 				["groups"] = {
-					classicAch(643, {	-- Lower Blackrock Spire
+					ach(643, {	-- Lower Blackrock Spire
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							5089,	-- General Drakkisath's Command
@@ -1605,9 +1605,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				n(ACHIEVEMENTS, {
 					ach(2188, {	-- Leeeeeeeeeeeeeroy!
 						["provider"] = { "n", 10161 },	-- Rookery Whelp
-						["timeline"] = { "removed 6.0.2" },
+						["timeline"] = { "added 3.0.1", "removed 6.0.2" },
 						["groups"] = {
 							title(110, {	-- Jenkins
+								["timeline"] = { "added 3.0.1" },
 								["style"] = 2,
 							}),
 						},
@@ -1953,7 +1954,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				n(10363, {	-- General Drakkisath
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
-						classicAch(1307, {	-- Upper Blackrock Spire
+						ach(1307, {	-- Upper Blackrock Spire
 							["timeline"] = { "removed 6.0.2" },
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {

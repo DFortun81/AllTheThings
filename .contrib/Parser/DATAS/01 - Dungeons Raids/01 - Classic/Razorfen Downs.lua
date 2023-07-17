@@ -375,7 +375,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			n(7358, {	-- Amnennar the Coldbringer
 				["timeline"] = { "removed 6.0.2" },
 				["groups"] = {
-					classicAch(636, {	-- Razorfen Downs
+					ach(636, {	-- Razorfen Downs
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							3636,	-- Bring the Light

@@ -411,7 +411,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 5.0.4" },
 				["groups"] = {
 					-- #if BEFORE 5.0.4
-					classicAch(629, {	-- Ragefire Chasm
+					ach(629, {	-- Ragefire Chasm
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 5761,	-- Slaying the Beast
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

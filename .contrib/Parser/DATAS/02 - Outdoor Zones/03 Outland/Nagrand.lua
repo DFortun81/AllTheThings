@@ -84,7 +84,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Nagrand, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(939, {	-- Hills Like White Elekk
+					ach(939, {	-- Hills Like White Elekk
 						["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
 						-- #if BEFORE WRATH
 						["description"] = "Complete all of Hemet Nesingwary quests in Nagrand up to and including The Ultimate Bloodsport.",
@@ -97,7 +97,7 @@ root(ROOTS.Zones, {
 						-- #endif
 						["races"] = HORDE_ONLY,
 					}),
-					classicAch(1273, {	-- Nagrand Slam (Horde)
+					ach(1273, {	-- Nagrand Slam (Horde)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -198,7 +198,7 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					classicAch(1192, {	-- Nagrand Slam (Alliance)
+					ach(1192, {	-- Nagrand Slam (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -352,22 +352,26 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182959 },	-- Bluefish School
 						["criteriaID"] = 3866,	-- Bluefish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182958 },	-- Mudfish School
 						["criteriaID"] = 3867,	-- Mudfish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182959 },	-- Bluefish School
 						["criteriaID"] = 3624,	-- Bluefish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182958 },	-- Mudfish School
 						["criteriaID"] = 3625,	-- Mudfish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif

@@ -195,7 +195,7 @@ root(ROOTS.Zones, {
 					achWithFaction(949, 1073, {	-- Tuskarrmageddon
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
 					}),
-					classicAch(547, {	-- Veteran of the Wrathgate
+					ach(547, {	-- Veteran of the Wrathgate
 						["sourceQuests"] = {
 							12499,	-- Return to Angrathar (A)
 							12500,	-- Return to Angrathar (H)

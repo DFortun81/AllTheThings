@@ -504,7 +504,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["creatureID"] = 12201,
 						["modelScale"] = 2,
 						["groups"] = {
-							classicAch(640, {	-- Maraudon
+							ach(640, {	-- Maraudon
 								-- #if BEFORE WRATH
 								["sourceQuests"] = {
 									7065,	-- Corruption of Earth and Seed

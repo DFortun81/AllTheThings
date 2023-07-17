@@ -37,7 +37,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 			["coord"] = { 26.6, 76.6, STRANGLETHORN_VALE },
 			-- #endif
 			["groups"] = {
-				ach(3457),	-- The Captain's Booty
+				ach(3457, {	-- The Captain's Booty
+					["timeline"] = { "added 3.0.1" },
+				}),
 			},
 		}),
 		-- #endif
@@ -73,7 +75,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 				["description"] = "When you speak with her, she gives you a Pirate Costume buff that lasts for 12 hours.",
 				["coord"] = { 40.0, 72.6, THE_CAPE_OF_STRANGLETHORN },
 				["groups"] = {
-					ach(3457),	-- The Captain's Booty
+					ach(3457, {	-- The Captain's Booty
+						["timeline"] = { "added 3.0.1" },
+					}),
 					i(116392, {	-- Big Bag of Booty
 						["timeline"] = { "added 6.0.2.18816" },
 						["filterID"] = CONSUMABLES,	-- Changed from "Toy"

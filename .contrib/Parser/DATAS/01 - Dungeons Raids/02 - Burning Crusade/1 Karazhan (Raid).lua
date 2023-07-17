@@ -709,7 +709,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				},
 				["groups"] = {
 					i(23809),	-- Schematic: Stabilized Eternium Scope
-					classicAch(882, {	-- Fiery Warhorse's Reins
+					ach(882, {	-- Fiery Warhorse's Reins
 						["provider"] = { "i", 30480 },	-- Fiery Warhorse's Reins
 						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
@@ -1011,7 +1011,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			e(1563, {	-- Prince Malchezaar
 				["creatureID"] = 15690,
 				["groups"] = {
-					classicAch(690, {	-- Karazhan
+					ach(690, {	-- Karazhan
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 9844,	-- A Demonic Presence
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

@@ -1497,7 +1497,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = lvlsquish(48, 48, 15),
 					["groups"] = {
-						classicAch(3357, {	-- Venomhide Ravasaur
+						ach(3357, {	-- Venomhide Ravasaur
 							["provider"] = { "i", 46102 },	-- Whistle of the Venomhide Ravasaur
 							["timeline"] = { "added 3.2.0.10026" },
 							["races"] = HORDE_ONLY,

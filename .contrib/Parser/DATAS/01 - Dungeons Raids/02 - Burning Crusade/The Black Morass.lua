@@ -127,7 +127,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(554, {	-- Aeonus
 					["creatureID"] = 17881,
 					["groups"] = {
-						classicAch(655, {	-- Opening of the Dark Portal
+						ach(655, {	-- Opening of the Dark Portal
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								9836,	-- The Master's Touch
@@ -224,7 +224,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(554, {	-- Aeonus
 						["creatureID"] = 17881,
 						["groups"] = {
-							ach(676),	-- Heroic: Opening of the Dark Portal
+							ach(676, {	-- Heroic: Opening of the Dark Portal
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5076, {	-- Heroic: Opening of the Dark Portal Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { FELWOOD },
 				}),
 				-- #if AFTER CATA
-				classicAch(3356, {	-- Winterspring Frostsaber
+				ach(3356, {	-- Winterspring Frostsaber
 					["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
 					["races"] = ALLIANCE_ONLY,
 					["f"] = MOUNTS,
@@ -2314,7 +2314,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						-- #if BEFORE CATA
-						classicAch(3356, {	-- Winterspring Frostsaber
+						ach(3356, {	-- Winterspring Frostsaber
 							["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
 							["races"] = ALLIANCE_ONLY,
 							["f"] = MOUNTS,

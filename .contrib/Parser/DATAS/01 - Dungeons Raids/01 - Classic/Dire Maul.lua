@@ -137,7 +137,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["maps"] = { 236 },	-- Capital Gardens
 					["timeline"] = { "removed 4.0.3" },
 				}),
-				ach(644, {	-- King of Dire Maul
+				ach(644, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {	-- King of Dire Maul
 					["maps"] = { 239, 235, 236 },	-- All Wings
 					["groups"] = {
 						crit(545, {	-- Alzzin the Wildshaper
@@ -156,7 +156,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						}),
 						-- #endif
 					},
-				}),
+				})),
 				ach(5053, {	-- King of Dire Maul Guild Run
 					["timeline"] = { "added 4.0.3" },
 				}),
@@ -294,7 +294,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["group"] = {
-						classicAch(2357, {	-- Dreadsteed of Xoroth
+						ach(2357, {	-- Dreadsteed of Xoroth
 							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 							-- #if BEFORE WRATH
 							["description"] = "Completed the Dreadsteed of Xoroth warlock quest.",

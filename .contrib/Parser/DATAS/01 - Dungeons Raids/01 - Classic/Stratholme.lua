@@ -42,7 +42,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(646, {	-- Stratholme
+				ach(646, {	-- Stratholme
 					-- #if BEFORE WRATH
 					["sourceQuest"] = 5263,	-- Above and Beyond
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
@@ -1080,7 +1080,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						-- #endif
 						["groups"] = {
 							i(13251),	-- Head of Baron Rivendare
-							classicAch(729, {	-- Deathcharger's Reins
+							ach(729, {	-- Deathcharger's Reins
 								["provider"] = { "i", 13335 },	-- Rivendare's Deathcharger (MOUNT!)
 								["f"] = MOUNTS,
 								-- #if BEFORE WRATH

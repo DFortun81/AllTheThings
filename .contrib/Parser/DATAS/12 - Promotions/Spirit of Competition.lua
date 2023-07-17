@@ -16,7 +16,7 @@ SPIRIT_OF_COMPETITION = createHeader({
 	},
 });
 root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 } }, {
-	classicAch(1637, {	-- Spirit of Competition
+	ach(1637, {	-- Spirit of Competition
 		["provider"] = { "i", 37297 },	-- Spirit of Competition
 		-- #if BEFORE WRATH
 		["description"] = "Proud owner of a Spirit of Competition pet from the 2008 Spirit of Competition event.",
@@ -26,7 +26,7 @@ root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = 
 	i(37297, {	-- Spirit of Competition (PET!)
 		["description"] = "Win a battleground during the Spirit of Competition event to get this.",
 	}),
-	classicAch(1636, {	-- Competitor's Tabard
+	ach(1636, {	-- Competitor's Tabard
 		["provider"] = { "i", 36941 },	-- Competitor's Tabard
 		-- #if BEFORE WRATH
 		["description"] = "Proud owner of a Competitor's Tabard from the 2008 Spirit of Competition event.",

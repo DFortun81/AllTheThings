@@ -11,22 +11,32 @@ BLIZZCON = createHeader({
 	},
 });
 root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-	ach(411),	-- Blizzcon 2005 - Murky
+	ach(411, {	-- Blizzcon 2005 - Murky
+		["provider"] = { "i", 20371 },	-- Murky (PET!)
+		["timeline"] = { "added 3.0.1" },
+	}),
 	i(20371, {	-- Murky (PET!)
 		["timeline"] = { "added 1.11.1.6692" },
 	}),
 
-	ach(412),	-- Blizzcon 2007 - Murloc Costume
+	ach(412, {	-- Blizzcon 2007 - Murloc Costume
+		["provider"] = { "i", 20371 },	-- Murloc Costume (TOY!)
+		["timeline"] = { "added 3.0.1" },
+	}),
 	i(33079, {	-- Murloc Costume (TOY!)
 		["timeline"] = { "added 2.1.3.6898" },
 	}),
 
-	ach(415),	-- Blizzcon 2008 - Big Blizzard Bear
+	ach(415, {	-- Blizzcon 2008 - Big Blizzard Bear
+		["provider"] = { "i", 43599 },	-- Big Blizzard Bear (MOUNT!)
+		["timeline"] = { "added 3.0.1" },
+	}),
 	i(43599, {	-- Big Blizzard Bear (MOUNT!)
 		["timeline"] = { "added 3.0.1" },
 	}),
 
 	ach(3536, {	-- Blizzcon 2009 - The Marine Marine
+		["provider"] = { "i", 46802 },	-- Grunty (PET!)
 		["timeline"] = { "added 3.2.0.10314" },
 	}),
 	i(46802, {	-- Grunty (PET!)
@@ -34,6 +44,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	}),
 
 	ach(5378, {	-- Blizzcon 2010 - Deathy
+		["provider"] = { "i", 67418 },	-- Deathy (PET!)
 		["timeline"] = { "added 4.0.1.12984" },
 	}),
 	i(67418, {	-- Deathy (PET!)
@@ -41,6 +52,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	}),
 
 	ach(6185, {	-- Blizzcon 2011 - Murkablo
+		["provider"] = { "i", 71726 },	-- Murkablo (PET!)
 		["timeline"] = { "added 4.3.0.15005" },
 	}),
 	i(71726, {	-- Murkablo (PET!)
@@ -48,6 +60,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	}),
 
 	ach(8793, {	-- Blizzcon 2013 - Murkalot
+		["provider"] = { "i", 106244 },	-- Murkalot (PET!)
 		["timeline"] = { "added 5.4.1.17481" },
 	}),
 	i(106244, {	-- Murkalot (PET!)
@@ -55,6 +68,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	}),
 
 	ach(9763, {	-- Blizzcon 2014 - Grommloc
+		["provider"] = { "i", 118517 },	-- Grommloc (PET!)
 		["timeline"] = { "added 6.1.0.19445" },
 	}),
 	i(118517, {	-- Grommloc (PET!)
@@ -62,6 +76,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	}),
 
 	ach(10322, {	-- Blizzcon 2015 - Murkidan
+		["provider"] = { "i", 128427 },	-- Murkidan (PET!)
 		["timeline"] = { "added 6.2.2.20426" },
 	}),
 	i(128427, {	-- Murkidan (PET!)
@@ -69,6 +84,10 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	}),
 
 	ach(11294, {	-- Blizzcon 2016 - Murloc Battlemasters
+		["providers"] = {
+			{ "i", 141894 },	-- Knight Captain Murky (PET!)
+			{ "i", 141895 },	-- Legionnaire Murky (PET!)
+		},
 		["timeline"] = { "added 7.2.0.23478" },
 	}),
 	a(i(141894, {	-- Knight Captain Murky (PET!)
@@ -79,6 +98,10 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	})),
 
 	ach(11931, {	-- Blizzcon 2017 - Rides of War
+		["providers"] = {
+			{ "i", 151617 },	-- Orgrimmar Interceptor (MOUNT!)
+			{ "i", 151618 },	-- Stormwind Skychaser (MOUNT!)
+		},
 		["timeline"] = { "added 7.3.2.25079" },
 	}),
 	h(i(151617, {	-- Orgrimmar Interceptor (MOUNT!)
@@ -89,6 +112,10 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	})),
 
 	ach(13138, {	-- Blizzcon 2018 - Flying Colors
+		["providers"] = {
+			{ "i", 163986 },	-- Orgrimmar Hero's War Banner (TOY!)
+			{ "i", 163987 },	-- Stormwind Champion's War Banner (TOY!)
+		},
 		["timeline"] = { "added 8.1.0.28724" },
 	}),
 	i(163986, {	-- Orgrimmar Hero's War Banner (TOY!)

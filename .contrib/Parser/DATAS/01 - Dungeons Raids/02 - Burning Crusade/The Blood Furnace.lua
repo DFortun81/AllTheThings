@@ -220,7 +220,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(557, {	-- Keli'dan the Breaker
 					["creatureID"] = 17377,
 					["groups"] = {
-						ach(648),	-- The Blood Furnace
+						ach(648, {	-- The Blood Furnace
+							["timeline"] = { "added 3.0.1" },
+						}),
 						i(24394),	-- Warsong Howling Axe
 						-- #if AFTER 7.3.5
 						i(27512),	-- The Willbreaker
@@ -333,7 +335,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(557, {	-- Keli'dan the Breaker
 						["creatureID"] = 17377,
 						["groups"] = {
-							ach(668),	-- Heroic: The Blood Furnace
+							ach(668, {	-- Heroic: The Blood Furnace
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5068, {	-- Heroic: The Blood Furnace Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

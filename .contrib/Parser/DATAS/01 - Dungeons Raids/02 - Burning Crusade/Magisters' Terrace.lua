@@ -197,7 +197,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				e(533, {	-- Kael'thas Sunstrider
 					["creatureID"] = 24664,
 					["groups"] = {
-						classicAch(661, {	-- Magister's Terrace
+						ach(661, {	-- Magister's Terrace
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 11492,	-- Hard to Kill
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
@@ -317,11 +317,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					e(533, {	-- Kael'thas Sunstrider
 						["creatureID"] = 24664,
 						["groups"] = {
-							ach(682),	-- Heroic: Magister's Terrace
+							ach(682, {	-- Heroic: Magister's Terrace
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5082, {	-- Heroic: Magister's Terrace Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
-							classicAch(884, {	-- Swift White Hawkstrider
+							ach(884, {	-- Swift White Hawkstrider
 								["provider"] = { "i", 35513 },	-- Swift White Hawkstrider
 								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH

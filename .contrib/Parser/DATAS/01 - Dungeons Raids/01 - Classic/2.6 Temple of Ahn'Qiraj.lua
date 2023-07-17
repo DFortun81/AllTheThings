@@ -1076,7 +1076,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			n(ZONE_DROPS, {
-				classicAch(424, {	-- Why? Because It's Red
+				ach(424, {	-- Why? Because It's Red
 					["provider"] = { "i", 21321 },	-- Red Qiraji Resonating Crystal
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
@@ -1512,7 +1512,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			e(1551, {	-- C'Thun
 				["creatureID"] = 15727,
 				["groups"] = {
-					classicAch(687, {	-- Temple of Ahn'Qiraj
+					ach(687, {	-- Temple of Ahn'Qiraj
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 8801,	-- C'Thun's Legacy
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

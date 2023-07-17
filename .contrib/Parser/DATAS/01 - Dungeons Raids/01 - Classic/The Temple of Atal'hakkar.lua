@@ -785,7 +785,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(463, {	-- Shade of Erankikus
 				["creatureID"] = 5709,
 				["groups"] = {
-					classicAch(641, {	-- Sunken Temple
+					ach(641, {	-- Sunken Temple
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 3373,	-- The Essence of Eranikus
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

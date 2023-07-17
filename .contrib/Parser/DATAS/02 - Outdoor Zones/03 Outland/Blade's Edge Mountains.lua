@@ -58,7 +58,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Blade's Edge Mountains, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1193, {	-- On the Blade's Edge
+					ach(1193, {	-- On the Blade's Edge
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -424,7 +424,9 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
-							ach(1276),	-- Blade's Edge Bomberman
+							ach(1276, {	-- Blade's Edge Bomberman
+								["timeline"] = { "added 3.0.1" },
+							}),
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11102, {	-- Bombing Run (druid)

@@ -240,7 +240,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 4.0.1.12984" },
 				["groups"] = {
 					-- #if BEFORE 4.0.1
-					classicAch(633, {	-- Stormwind Stockade
+					ach(633, {	-- Stormwind Stockade
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 391,	-- The Stockade Riots
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
@@ -295,7 +295,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["creatureID"] = 46254,
 				["timeline"] = { "added 4.0.1.12984" },
 				["groups"] = {
-					ach(633),	-- Stormwind Stockade
+					ach(633, {	-- Stormwind Stockade
+						["timeline"] = { "added 3.0.1" },
+					}),
 					ach(5042, {	-- Stormwind Stockade Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),

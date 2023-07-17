@@ -97,7 +97,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Hellfire Peninsula, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1189, {	-- To Hellfire and Back [Alliance Version]
+					ach(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -188,7 +188,7 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					classicAch(1271, {	-- To Hellfire and Back [Horde Version]
+					ach(1271, {	-- To Hellfire and Back [Horde Version]
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA

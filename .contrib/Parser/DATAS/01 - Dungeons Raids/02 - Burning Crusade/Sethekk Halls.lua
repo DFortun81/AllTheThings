@@ -134,7 +134,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["provider"] = { "i", 32449 },	-- Essence-Infused Moonstone
 							["cr"] = 23035,	-- Anzu
 						}),
-						classicAch(2359, {	-- Swift Flight Form
+						ach(2359, {	-- Swift Flight Form
 							["sourceQuest"] = 11001,	-- Vanquish the Raven God
 							["timeline"] = { "removed 4.0.1" },
 							["classes"] = { DRUID },
@@ -203,7 +203,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(543, {	-- Talon King Ikiss
 					["creatureID"] = 18473,
 					["groups"] = {
-						classicAch(653, {	-- Sethekk Halls
+						ach(653, {	-- Sethekk Halls
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10098,	-- Terokk's Legacy
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
@@ -294,7 +294,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						["creatureID"] = 23035,
 						["groups"] = {
-							classicAch(883, {	-- Reins of the Raven Lord
+							ach(883, {	-- Reins of the Raven Lord
 								["provider"] = { "i", 32768 },	-- Reins of the Raven Lord
 								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
@@ -316,7 +316,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(543, {	-- Talon King Ikiss
 						["creatureID"] = 18473,
 						["groups"] = {
-							ach(674),	-- Heroic: Sethekk Halls
+							ach(674, {	-- Heroic: Sethekk Halls
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5074, {	-- Heroic: Sethekk Halls Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

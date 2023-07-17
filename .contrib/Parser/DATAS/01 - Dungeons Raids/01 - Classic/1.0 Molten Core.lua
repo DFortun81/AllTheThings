@@ -140,7 +140,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						objective(4, {	-- 0/1 Hand of Sulfuron
 							["provider"] = { "i", 17330 },	-- Hand of Sulfuron
 						}),
-						classicAch(2496, {	-- The Fifth Element
+						ach(2496, {	-- The Fifth Element
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 6824,	-- Hands of the Enemy
 							["description"] = "Obtain an Aqual Quintessence.",
@@ -181,7 +181,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
-						classicAch(428, {	-- Thunderfury, Blessed Blade of the Windseeker
+						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
 							["provider"] = { "i", 19019 },	-- Thunderfury, Blessed Blade of the Windseeker
 							["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 							-- #if BEFORE WRATH
@@ -705,7 +705,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(1528, {	-- Ragnaros
 				["creatureID"] = 11502,
 				["groups"] = {
-					classicAch(686, {	-- Molten Core
+					ach(686, {	-- Molten Core
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							7787,	-- Rise, Thunderfury!
@@ -717,7 +717,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(5056, {	-- Molten Core Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
-					classicAch(429, {	-- Sulfuras, Hand of Ragnaros
+					ach(429, {	-- Sulfuras, Hand of Ragnaros
 						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
 						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 						-- #if BEFORE WRATH

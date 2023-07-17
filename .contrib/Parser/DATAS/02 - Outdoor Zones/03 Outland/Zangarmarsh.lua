@@ -91,7 +91,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Zangarmarsh, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1190, {	-- Mysteries of the Marsh
+					ach(1190, {	-- Mysteries of the Marsh
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -237,7 +237,7 @@ root(ROOTS.Zones, {
 						}),
 						-- #endif
 					}),
-					ach(953, applyclassicphase(TBC_PHASE_ONE, {	-- Guardian of Cenarius
+					applyclassicphase(TBC_PHASE_ONE, ach(953, {	-- Guardian of Cenarius
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
 						-- #endif
@@ -308,12 +308,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182954 },	-- Brackish Mixed School
 						["criteriaID"] = 3865,	-- Brackish Mixed School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182954 },	-- Brackish Mixed School
 						["criteriaID"] = 3623,	-- Brackish Mixed School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -327,12 +329,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182953 },	-- Sporefish School
 						["criteriaID"] = 3870,	-- Sporefish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182953 },	-- Sporefish School
 						["criteriaID"] = 3628,	-- Sporefish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -1451,7 +1455,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.3, 63.7, ZANGARMARSH },
 						["groups"] = {
 							i(31804),	-- Cenarion Expedition Tabard
-							classicAch(893, {	-- Cenarion War Hippogryph
+							ach(893, {	-- Cenarion War Hippogryph
 								["provider"] = { "i", 33999 },	-- Cenarion War Hippogryph
 								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH

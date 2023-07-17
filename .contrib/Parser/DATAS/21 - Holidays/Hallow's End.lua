@@ -423,6 +423,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 
 			}},
+			["timeline"] = { "added 3.0.1" },
 			-- #if BEFORE MOP
 			["races"] = ALLIANCE_ONLY,
 			-- #endif
@@ -461,7 +462,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 			["timeline"] = { "added 6.2.2.20426" },
 		}),
-		ach(284, {	-- A Mask For All Occasions
+		ach(284, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- A Mask For All Occasions
 			crit(2260, {	-- Blood Elf Female Mask
 				["provider"] = { "i", 34000 },	-- Blood Elf Female Mask
 			}),
@@ -538,8 +539,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["provider"] = { "i", 49216 },	-- Worgen Male Mask
 				["timeline"] = { "added 4.0.1" },
 			}),
-		}),
-		ach(291, {	-- Check Your Head
+		})),
+		ach(291, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Check Your Head
 			crit(5774, {	-- Blood Elf
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
@@ -578,15 +579,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["timeline"] = { "added 4.0.1" },
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
-		}),
+		})),
 		ach(1261, {	-- G.N.E.R.D. Rage
 			["provider"] = { "i", 37583 },	-- G.N.E.R.D.S.
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(288, {	-- Out With It
 			["description"] = "Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",
 			["cost"] = { { "i", 33226, 3 } },	-- Tricky Treat
+			["timeline"] = { "added 3.0.1" },
 		}),
-		ach(1040, {	-- Rotten Hallow (A)
+		ach(1040, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Rotten Hallow (A)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				-- #if AFTER 4.0.1
@@ -611,8 +614,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				-- #endif
 			},
-		}),
-		ach(1041, {	-- Rotten Hallow (H)
+		})),
+		ach(1041, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Rotten Hallow (H)
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				-- #if AFTER 4.0.1
@@ -637,8 +640,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				-- #endif
 			},
-		}),
-		classicAch(292, {	-- Sinister Calling
+		})),
+		ach(292, {	-- Sinister Calling
 			-- #if BEFORE WRATH
 			["providers"] = {
 				{ "i", 33154 },	-- Sinister Squashling
@@ -658,9 +661,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(981, {	-- That Sparkling Smile
 			["provider"] = { "i", 37604 },	-- Tooth Pick
+			["timeline"] = { "added 3.0.1" },
 		}),
-		ach(979),	-- The Mask Task
-		ach(283, {	-- The Masquerade
+		ach(979, {	-- The Mask Task
+			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(283, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- The Masquerade
 			crit(3209, {	-- Transformed by Hallowed Wand - Bat
 				["provider"] = { "i", 20410 },	-- Hallowed Wand - Bat
 			}),
@@ -682,11 +688,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			crit(3215, {	-- Transformed by Hallowed Wand - Wisp
 				["provider"] = { "i", 20414 },	-- Hallowed Wand - Wisp
 			}),
-		}),
+		})),
 		ach(289, {	-- The Savior of Hallow's End
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { ELWYNN_FOREST, AZUREMYST_ISLE, TIRISFAL_GLADES, EVERSONG_WOODS, DUN_MOROGH, DUROTAR },
 		}),
-		ach(972),	-- Trick or Treat!
+		ach(972, {	-- Trick or Treat!
+			["timeline"] = { "added 3.0.1" },
+		}),
 		-- #if AFTER 4.2.0
 		ach(971, {	-- Tricks and Treats of Azeroth
 			-- Meta Achievement should symlink the contained Achievements from Source
@@ -698,16 +707,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				969,	-- Tricks and Treats of Outlands (A)
 				968,	-- Tricks and Treats of Outlands (H)
 			}},
+			["timeline"] = { "added 3.0.1" },
 		}),
 		-- #else
 		ach(970, {	-- Tricks and Treats of Azeroth (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
-			["timeline"] = { "removed 4.2.0" },
 			["sym"] = {{"meta_achievement",
 				966,	-- Tricks and Treats of Eastern Kingdoms (A)
 				963,	-- Tricks and Treats of Kalimdor (A)
 				969,	-- Tricks and Treats of Outlands (A)
 			}},
+			["timeline"] = { "added 3.0.1", "removed 4.2.0" },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(971, {	-- Tricks and Treats of Azeroth (H)
@@ -821,6 +831,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(966, {	-- Tricks and Treats of Eastern Kingdoms (A)
 			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			--[[
 			["groups"] = {
@@ -955,6 +966,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(967, {	-- Tricks and Treats of Eastern Kingdoms (H)
 			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
 			["races"] = HORDE_ONLY,
 			--[[
 			["groups"] = {
@@ -1065,6 +1077,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(963, {	-- Tricks and Treats of Kalimdor (A)
 			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			--[[
 			["groups"] = {
@@ -1215,6 +1228,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(965, {	-- Tricks and Treats of Kalimdor (H)
 			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
 			["races"] = HORDE_ONLY,
 			--[[
 			["groups"] = {
@@ -1530,6 +1544,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(969, {	-- Tricks and Treats of Outlands (A)
 			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			--[[
 			["groups"] = {
@@ -1589,6 +1604,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(968, {	-- Tricks and Treats of Outlands (H)
 			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
 			["races"] = HORDE_ONLY,
 			--[[
 			["groups"] = {
@@ -1852,7 +1868,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		["lvl"] = 25,	-- Zone in level requirement for SM.
 		-- #endif
 		["groups"] = {
-			ach(255),	-- Bring Me The Head of... Oh Wait
+			ach(255, {	-- Bring Me The Head of... Oh Wait
+				["timeline"] = { "added 3.0.1" },
+			}),
 			i(117392, {	-- Loot-Stuffed Pumpkin (Epic)
 				["timeline"] = { "added 6.0.1" },
 				["sym"] = {
@@ -1872,7 +1890,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["lvl"] = 98,
 				-- #endif
 				["groups"] = {
-					classicAch(980, {	-- The Horseman's Reins
+					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
 						["timeline"] = { "added 2.0.1" },
 						["filterID"] = MOUNTS,
@@ -1951,7 +1969,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #endif
 					-- #endif
 					-- #if BEFORE 6.0.1
-					classicAch(980, {	-- The Horseman's Reins
+					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
 						["timeline"] = { "added 2.0.1" },
 						["filterID"] = MOUNTS,
@@ -1995,7 +2013,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 
 			-- #if BEFORE CATA
-			classicAch(980, {	-- The Horseman's Reins
+			ach(980, {	-- The Horseman's Reins
 				["provider"] = { "i", 37012 },	-- The Horseman's Reins
 				["timeline"] = { "added 2.0.1" },
 				["filterID"] = MOUNTS,

@@ -35,7 +35,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 	},
 	["groups"] = {
 		n(ACHIEVEMENTS, {
-			classicAch(306, {	-- Master Angler of Azeroth
+			ach(306, {	-- Master Angler of Azeroth
 				["requireSkill"] = FISHING,
 				-- #if BEFORE WRATH
 				["providers"] = {

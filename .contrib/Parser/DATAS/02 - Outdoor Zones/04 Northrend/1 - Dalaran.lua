@@ -4296,7 +4296,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					achWithFaction(1008, 1090),	-- The Kirin Tor
-					classicAch(1957, {	-- There's Gold In That There Fountain
+					ach(1957, {	-- There's Gold In That There Fountain
 						["sym"] = {{ "achievement_criteria" }},
 						["requireSkill"] = FISHING,
 					}),

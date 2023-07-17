@@ -40,7 +40,7 @@ root(ROOTS.Zones, {
 						["description"] = "Raise your reputation with the Netherwing to Exalted.",
 						-- #endif
 					})),
-					classicAch(1195, {	-- Shadow of the Betrayer
+					ach(1195, {	-- Shadow of the Betrayer
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -704,7 +704,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11070,	-- Dragonmaw Race: Wing Commander Mulverick
 						["coord"] = { 65.5, 85.3, SHADOWMOON_VALLEY },
 						["groups"] = {
-							classicAch(1638, {	-- Skyshattered
+							ach(1638, {	-- Skyshattered
 								["sourceQuest"] = 11071,	-- Dragonmaw Race: Captain Skyshatter
 								-- #if BEFORE WRATH
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

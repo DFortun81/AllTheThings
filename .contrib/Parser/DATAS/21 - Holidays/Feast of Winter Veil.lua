@@ -108,6 +108,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				1689,			-- He Knows If You've Been Naughty
 				1690,			-- A Frosty Shake
 			}},
+			["timeline"] = { "added 3.0.1" },
 			-- #if BEFORE MOP
 			["races"] = HORDE_ONLY,
 			-- #endif
@@ -130,6 +131,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 34086 },		-- Winter Boots
 				-- #endif
 			},
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { NORTHREND_DALARAN },
 		}),
 		ach(5853, {	-- A-Caroling We Will Go (A)
@@ -159,9 +161,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 17712 },	-- Winter Veil Disguise Kit
 				{ "i", 17202 },	-- Snowball
 			},
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { NORTHREND_DALARAN },
 		}),
-		ach(4436, {	-- BB King (A)
+		ach(4436, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- BB King (A)
 			["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
 			["maps"] = {
 				ORGRIMMAR,
@@ -225,8 +228,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				-- #endif
 			},
-		}),
-		ach(4437, {	-- BB King (H)
+		})),
+		ach(4437, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- BB King (H)
 			["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
 			["maps"] = {
 				THE_EXODAR,
@@ -274,22 +277,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				-- #endif
 			},
-		}),
+		})),
 		ach(1295, {	-- Crashin' & Thrashin'
 			["providers"] = {
 				{ "i", 37710 },	-- Crashin' Thrashin' Racer Controller
 				{ "i", 54343 },	-- Blue Crashin' Thrashin' Racer Controller
 			},
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1282, {	-- Fa-la-la-la-Ogri'la
 			["providers"] = {
 				{ "i", 21212 },	-- Fresh Holly
 				{ "i", 21213 },	-- Preserved Holly
 			},
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { BLADES_EDGE_MOUNTAINS },
 		}),
-		ach(1689),	-- He Knows If You've Been Naughty
-		ach(1686, {	-- Holiday Bromance (A)
+		ach(1689, {	-- He Knows If You've Been Naughty
+			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(1686, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Holiday Bromance (A)
 			["provider"] = { "i", 21519 },	-- Mistletoe
 			["maps"] = {
 				-- #if AFTER CATA
@@ -379,8 +386,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				-- #endif
 			},
-		}),
-		ach(1685, {	-- Holiday Bromance (H)
+		})),
+		ach(1685, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Holiday Bromance (H)
 			["provider"] = { "i", 21519 },	-- Mistletoe
 			["maps"] = { UNDERCITY, BOREAN_TUNDRA, ICECROWN },
 			["races"] = HORDE_ONLY,
@@ -399,7 +406,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["coord"] = { 69.4, 42.4, ICECROWN },
 				}),
 			},
-		}),
+		})),
 		ach(10353, {	-- Iron Armada
 			["timeline"] = { "added 6.2.2.20426" },
 			["groups"] = {
@@ -422,10 +429,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		ach(1687, {	-- Let It Snow
 			["provider"] = { "i", 34191 },	-- Handful of Snowflakes
+			["timeline"] = { "added 3.0.1" },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(273, {	-- On Metzen!
 			["provider"] = { "n", 15664 },	-- Metzen the Reindeer
+			["timeline"] = { "added 3.0.1" },
 			["sourceQuests"] = {
 				-- #if AFTER 4.3.0
 				7043,	-- You're a Mean One... [A]
@@ -454,6 +463,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "n", 2784 },	-- King Magni Bronzebeard
 				-- #endif
 			},
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -466,6 +476,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
 				-- #endif
 			},
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = {
 				-- #if AFTER 9.0.1
 				ORIBOS,
@@ -479,6 +490,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				7045,	-- A Smokywood Pastures' Thank You! (Alliance)
 				6984,	-- A Smokywood Pastures' Thank You! (Horde)
 			},
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = {
 				IRONFORGE,
 				ORGRIMMAR,
@@ -488,7 +500,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["provider"] = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller
 			["timeline"] = { "added 5.4.0.17227" },
 		}),
-		ach(1688, {	-- The Winter Veil Gourmet
+		ach(1688, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- The Winter Veil Gourmet
 			["requireSkill"] = COOKING,
 			["groups"] = {
 				crit(6247, {	-- Gingerbread Cookie
@@ -501,11 +513,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["provider"] = { "i", 17198 },	-- Winter Veil Egg Nog
 				}),
 			},
-		}),
+		})),
 		pvp(ach(252, {	-- With a Little Helper from My Friends
 			["provider"] = { "o", 180796 },	-- PX-238 Winter Wondervolt
+			["timeline"] = { "added 3.0.1" },
 		})),
-		classicAch(1705, {	-- Clockwork Rocket Bot (2007)
+		ach(1705, {	-- Clockwork Rocket Bot (2007)
 			["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
 			["timeline"] = { "added 2.3.0.7561" },
 			-- #if BEFORE WRATH

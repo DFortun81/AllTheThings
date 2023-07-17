@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = "Interface\\Icons\\achievement_zone_stranglethorn_01",
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(871, applyclassicphase(PHASE_ONE, {	-- Avast Ye, Admiral!
+				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
 					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
 					["groups"] = {
 						title(111, {	-- Bloodsail Admiral <Name>
@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
 				["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 				["groups"] = {
-					classicAch(389, {	-- Gurubashi Arena Master
+					ach(389, {	-- Gurubashi Arena Master
 						["provider"] = { "i", 18706 },	-- Arena Master
 					}),
 					i(18706),	-- Arena Master
@@ -237,7 +237,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 18706, 12 } },	-- Arena Master (trinket)
 					["repeatable"] = true,
 					["groups"] = {
-						classicAch(396, {	-- Arena Grandmaster
+						ach(396, {	-- Arena Grandmaster
 							["provider"] = { "i", 19024 },	-- Arena Grand Master
 						}),
 						i(19024),	-- Arena Grand Master

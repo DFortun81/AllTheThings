@@ -446,7 +446,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(569, {	-- Warchief Kargath Bladefist
 					["creatureID"] = 16808,
 					["groups"] = {
-						classicAch(657, {	-- The Shattered Halls
+						ach(657, {	-- The Shattered Halls
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10884,	-- Trial of the Naaru: Mercy
@@ -579,7 +579,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(569, {	-- Warchief Kargath Bladefist
 						["creatureID"] = 16808,
 						["groups"] = {
-							classicAch(678, {	-- Heroic: The Shattered Halls
+							ach(678, {	-- Heroic: The Shattered Halls
 								-- #if BEFORE WRATH
 								["sourceQuests"] = {
 									10884,	-- Trial of the Naaru: Mercy

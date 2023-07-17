@@ -236,7 +236,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(547, {	-- Murmur
 					["creatureID"] = 18708,
 					["groups"] = {
-						classicAch(654, {	-- Shadow Labyrinth
+						ach(654, {	-- Shadow Labyrinth
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10095,	-- Into the Heart of the Labyrinth
@@ -335,7 +335,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(547, {	-- Murmur
 						["creatureID"] = 18708,
 						["groups"] = {
-							classicAch(675, {	-- Heroic: Shadow Labyrinth
+							ach(675, {	-- Heroic: Shadow Labyrinth
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

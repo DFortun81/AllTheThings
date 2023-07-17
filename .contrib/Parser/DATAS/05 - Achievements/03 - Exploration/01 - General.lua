@@ -46,7 +46,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				8940,	-- Explore Talador
 			}},
 		})),
-		classicAch(42, {	-- Eastern Kingdoms Explorer [7.0.3] / Explore Eastern Kingdoms
+		ach(42, {	-- Eastern Kingdoms Explorer [7.0.3] / Explore Eastern Kingdoms
 			-- #if AFTER WRATH
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -140,7 +140,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(43),	-- Orgrimmar for Horde | Stormwind for Alliance
 		}),
 		ach(1833),	-- It's Happy Hour Somewhere
-		classicAch(43, {	-- Kalimdor Explorer [7.0.3] / Explore Kalimdor
+		ach(43, {	-- Kalimdor Explorer [7.0.3] / Explore Kalimdor
 			-- #if AFTER WRATH
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

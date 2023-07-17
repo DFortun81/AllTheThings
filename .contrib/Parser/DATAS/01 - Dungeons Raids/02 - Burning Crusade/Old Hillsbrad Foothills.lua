@@ -185,7 +185,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(540, {	-- Epoch Hunter
 					["creatureID"] = 18096,
 					["groups"] = {
-						classicAch(652, {	-- The Escape From Durnholde
+						ach(652, {	-- The Escape From Durnholde
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10284,	-- Escape from Durnholde
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
@@ -310,7 +310,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(540, {	-- Epoch Hunter
 						["creatureID"] = 18096,
 						["groups"] = {
-							ach(673),	-- Heroic: The Escape From Durnholde
+							ach(673, {	-- Heroic: The Escape From Durnholde
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5073, {	-- Heroic: The Escape From Durnholde Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

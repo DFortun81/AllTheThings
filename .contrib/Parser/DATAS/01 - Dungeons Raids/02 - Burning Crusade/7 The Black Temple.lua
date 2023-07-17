@@ -44,7 +44,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["timeline"] = { "removed 3.0.1" },
 					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
-						classicAch(431, {	-- Hand of A'dal (Achievement)
+						ach(431, {	-- Hand of A'dal (Achievement)
 							["sourceQuest"] = 10985,	-- A Distraction for Akama
 							-- #if BEFORE WRATH
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
@@ -440,7 +440,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					e(1590, {	-- Illidan Stormrage
 						["creatureID"] = 22917,
 						["groups"] = {
-							classicAch(697, {	-- The Black Temple
+							ach(697, {	-- The Black Temple
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10959,	-- The Fall of the Betrayer
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
@@ -449,7 +449,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							ach(5091, {	-- The Black Temple Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
-							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, classicAch(426, {	-- Warglaives of Azzinoth
+							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, ach(426, {	-- Warglaives of Azzinoth
 								["providers"] = {
 									{ "i", 32837 },	-- Warglaive of Azzinoth (LEGENDARY! MH)
 									{ "i", 32838 },	-- Warglaive of Azzinoth (LEGENDARY! OH)

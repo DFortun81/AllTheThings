@@ -209,7 +209,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(551, {	-- Harbinger Skyriss
 					["creatureID"] = 20912,
 					["groups"] = {
-						classicAch(660, {	-- The Arcatraz
+						ach(660, {	-- The Arcatraz
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10882,	-- Harbinger of Doom
@@ -336,7 +336,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(551, {	-- Harbinger Skyriss
 						["creatureID"] = 20912,
 						["groups"] = {
-							classicAch(681, {	-- Heroic: The Arcatraz
+							ach(681, {	-- Heroic: The Arcatraz
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10886,	-- Trial of the Naaru: Tenacity
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

@@ -362,7 +362,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			["OnUpdate"] = SEASONONE_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(886, {	-- Swift Nether Drake
+			ach(886, {	-- Swift Nether Drake
 				["provider"] = { "i", 30609 },	-- Swift Nether Drake
 				["filterID"] = MOUNTS,
 			}),
@@ -1308,10 +1308,10 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(418, {	-- Merciless Gladiator: Burning Crusade Season 2
+			ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 				title(37),	-- Merciless Gladiator <Name>
 			}),
-			classicAch(887, {	-- Merciless Nether Drake
+			ach(887, {	-- Merciless Nether Drake
 				["provider"] = { "i", 34092 },	-- Merciless Nether Drake
 				["filterID"] = MOUNTS,
 			}),
@@ -2027,10 +2027,10 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
+			ach(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
 				title(40),	-- Vengeful Gladiator <Name>
 			}),
-			classicAch(888, {	-- Vengeful Nether Drake
+			ach(888, {	-- Vengeful Nether Drake
 				["provider"] = { "i", 37676 },	-- Vengeful Nether Drake
 				["filterID"] = MOUNTS,
 			}),
@@ -2788,10 +2788,10 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(420, {	-- Brutal Gladiator: Burning Crusade Season 4
+			ach(420, {	-- Brutal Gladiator: Burning Crusade Season 4
 				title(49),	-- Brutal Gladiator <Name>
 			}),
-			classicAch(2316, {	-- Brutal Nether Drake
+			ach(2316, {	-- Brutal Nether Drake
 				["provider"] = { "i", 43516 },	-- Brutal Nether Drake
 				["filterID"] = MOUNTS,
 			}),

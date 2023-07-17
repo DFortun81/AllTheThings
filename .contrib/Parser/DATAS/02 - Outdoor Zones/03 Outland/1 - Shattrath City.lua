@@ -620,25 +620,31 @@ root(ROOTS.Zones, {
 					})),
 					ach(964, {	-- Going Down?
 						["description"] = "This achievement can be easily earned by riding your epic mount directly off the Scryer elevator when it's at its highest point on to the flat ground below without hitting the bridge. (so jump at an angle)\n\nAdditionally paladins and mages can make themselves immune to get this achievement.",
+						["timeline"] = { "added 3.0.1" },
 					}),
 					ach(906, {	-- Kickin' It Up a Notch
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = COOKING,
 						["groups"] = {
 							crit(5702, {	-- Revenge is Tasty
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11377 },
 							}),
 							crit(5703, {	-- Super Hot Stew
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11379 },
 							}),
 							crit(5704, {	-- Manalicious
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11380 },
 							}),
 							crit(5705, {	-- Soup for the Soul
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11381 },
 							}),
 						},
 					}),
-					ach(1205, applyclassicphase(TBC_PHASE_ONE, {	-- Hero of Shattrath
+					 applyclassicphase(TBC_PHASE_ONE, ach(1205, {	-- Hero of Shattrath
 						-- #if BEFORE WRATH
 						["cost"] = {
 							{ "i", 31779, 1 },	-- Aldor Tabard
@@ -648,7 +654,7 @@ root(ROOTS.Zones, {
 						["description"] = "Gained exalted status with The Scryers and The Aldor.\n\nNOTE: This can be accomplished now by learning both faction's Exalted recipes, their tabards, or their equipment that require Exalted reputation to buy. For the sake of simplicity, just buy both tabards as this will also count toward the 25 tabard achievement later.\n\nWARNING: You must maintain at least one of these requirements in order to acquire the achievement with prepatch!",
 						-- #endif
 					})),
-					ach(903, applyclassicphase(TBC_PHASE_ONE, {	-- Shattrath Divided
+					applyclassicphase(TBC_PHASE_ONE, ach(903, {	-- Shattrath Divided
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with The Scryers or The Aldor to Exalted.",
 						-- #endif
@@ -658,7 +664,7 @@ root(ROOTS.Zones, {
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate(t, 932, 934); end]],
 						-- #endif
 					})),
-					ach(764, applyclassicphase(TBC_PHASE_ONE, {	-- The Burning Crusader (A)
+					applyclassicphase(TBC_PHASE_ONE, ach(764, {	-- The Burning Crusader (A)
 						-- #if BEFORE WRATH
 						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
 						-- #endif
@@ -669,7 +675,7 @@ root(ROOTS.Zones, {
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
 					})),
-					ach(763, applyclassicphase(TBC_PHASE_ONE, {	-- The Burning Crusader (H)
+					applyclassicphase(TBC_PHASE_ONE, ach(763, {	-- The Burning Crusader (H)
 						-- #if BEFORE WRATH
 						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
 						-- #endif
@@ -2177,7 +2183,7 @@ root(ROOTS.Zones, {
 					n(18756, {	-- Haris Pilton <Socialite>
 						["coord"] = { 75.6, 30.6, SHATTRATH_CITY },
 						["groups"] = {
-							classicAch(1165, {	-- My Sack is "Gigantique"
+							ach(1165, {	-- My Sack is "Gigantique"
 								["provider"] = { "i", 38082 },	-- "Gigantique" Bag
 								-- #if BEFORE WRATH
 								["description"] = "Equip Haris Pilton's \"Gigantique\" Bag.",

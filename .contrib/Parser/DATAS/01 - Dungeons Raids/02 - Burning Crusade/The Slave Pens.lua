@@ -202,7 +202,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(572, {	-- Quagmirran
 					["creatureID"] = 17942,
 					["groups"] = {
-						ach(649),	-- The Slave Pens
+						ach(649, {	-- The Slave Pens
+							["timeline"] = { "added 3.0.1" },
+						}),
 						-- #if AFTER 7.3.5
 						i(27741),	-- Bleeding Hollow Warhammer
 						i(27673),	-- Phosphorescent Blade
@@ -325,7 +327,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(572, {	-- Quagmirran
 						["creatureID"] = 17942,
 						["groups"] = {
-							ach(669),	-- Heroic: The Slave Pens
+							ach(669, {	-- Heroic: The Slave Pens
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5069, {	-- Heroic: The Slave Pens Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

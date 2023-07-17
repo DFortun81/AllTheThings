@@ -225,7 +225,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1576, {	-- Kael'thas Sunstrider
 				["creatureID"] = 19622,
 				["groups"] = {
-					classicAch(696, {	-- Tempest Keep
+					ach(696, {	-- Tempest Keep
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							10445,	-- The Vials of Eternity
@@ -237,7 +237,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					ach(5089, {	-- Tempest Keep Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
-					classicAch(885, {	-- Ashes of Al'ar
+					ach(885, {	-- Ashes of Al'ar
 						["provider"] = { "i", 32458 },	-- Ashes of Al'ar
 						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH

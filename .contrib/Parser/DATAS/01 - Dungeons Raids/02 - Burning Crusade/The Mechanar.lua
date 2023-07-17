@@ -138,7 +138,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(565, {	-- Pathaleon the Calculator
 					["creatureID"] = 19220,
 					["groups"] = {
-						classicAch(658, {	-- The Mechanar
+						ach(658, {	-- The Mechanar
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
@@ -236,7 +236,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(565, {	-- Pathaleon the Calculator
 						["creatureID"] = 19220,
 						["groups"] = {
-							ach(679),	-- Heroic: The Mechanar
+							ach(679, {	-- Heroic: The Mechanar
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5079, {	-- Heroic: The Mechanar Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

@@ -2641,13 +2641,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				ach(1836, applyclassicphase(TBC_PHASE_ONE, {	-- Old Crafty
+				applyclassicphase(TBC_PHASE_ONE, ach(1836, {	-- Old Crafty
 					["provider"] = { "i", 34486 },	-- Old Crafty
-					["requireSkill"] = FISHING,
 					-- #if BEFORE WRATH
 					["description"] = "Fish up Old Crafty in Orgrimmar.",
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["requireSkill"] = FISHING,
 				})),
 			}),
 			battlepets({

@@ -60,7 +60,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(1172, {	-- Master of Warsong Gulch
+				ach(1172, {	-- Master of Warsong Gulch
 					-- Meta Achievement should symlink the contained Achievements from Source
 					-- #if AFTER 4.3.0
 					["sym"] = {{"meta_achievement",
@@ -97,7 +97,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(1173, {	-- Master of Warsong Gulch (Horde - before 4.3.0)
+				ach(1173, {	-- Master of Warsong Gulch (Horde - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {{"meta_achievement",
 						167,	-- Warsong Gulch Veteran
@@ -115,60 +115,60 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { "added 3.0.1", "deleted 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
-				classicAch(166, {	-- Warsong Gulch Victory
+				ach(166, {	-- Warsong Gulch Victory
 					["timeline"] = { "added 3.0.1" },
 					["rank"] = 1,
 				}),
-				classicAch(167, {	-- Warsong Gulch Veteran
+				ach(167, {	-- Warsong Gulch Veteran
 					["timeline"] = { "added 3.0.1" },
 					["rank"] = 100,
 				}),
-				classicAch(199, {	-- Capture the Flag
+				ach(199, {	-- Capture the Flag
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(200, {	-- Persistent Defender
+				ach(200, {	-- Persistent Defender
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(872, {	-- Frenzied Defender
+				ach(872, {	-- Frenzied Defender
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(168, {	-- Warsong Gulch Perfection
+				ach(168, {	-- Warsong Gulch Perfection
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(201, {	-- Warsong Expedience
+				ach(201, {	-- Warsong Expedience
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(204, {	-- Ironman
+				ach(204, {	-- Ironman
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(203, {	-- Not in My House (A)
-					["timeline"] = { "added 3.0.1" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				classicAch(1251, {	-- Not in My House (H)
-					["timeline"] = { "added 3.0.1" },
-					["races"] = HORDE_ONLY,
-				}),
-				classicAch(202, {	-- Quick Cap (A)
+				ach(203, {	-- Not in My House (A)
 					["timeline"] = { "added 3.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				classicAch(1502, {	-- Quick Cap (H)
+				ach(1251, {	-- Not in My House (H)
 					["timeline"] = { "added 3.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
-				classicAch(206, {	-- Supreme Defender (A)
+				ach(202, {	-- Quick Cap (A)
 					["timeline"] = { "added 3.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				classicAch(1252, {	-- Supreme Defender (H)
+				ach(1502, {	-- Quick Cap (H)
 					["timeline"] = { "added 3.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
-				classicAch(207, {	-- Save the Day
+				ach(206, {	-- Supreme Defender (A)
+					["timeline"] = { "added 3.0.1" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(1252, {	-- Supreme Defender (H)
+					["timeline"] = { "added 3.0.1" },
+					["races"] = HORDE_ONLY,
+				}),
+				ach(207, {	-- Save the Day
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(1259, {	-- Not So Fast
+				ach(1259, {	-- Not So Fast
 					["timeline"] = { "added 3.0.1" },
 				}),
 				applyclassicphase(PHASE_TWO, achWithFaction(713, 890, {	-- Silverwing Sentinel (A)

@@ -162,7 +162,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(575, {	-- Warlord Kalithresh
 					["creatureID"] = 17798,
 					["groups"] = {
-						classicAch(656, {	-- The Steamvault
+						ach(656, {	-- The Steamvault
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								9763,	-- The Warlord's Hideout
@@ -268,7 +268,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(575, {	-- Warlord Kalithresh
 						["creatureID"] = 17798,
 						["groups"] = {
-							classicAch(677, {	-- Heroic: The Steamvault
+							ach(677, {	-- Heroic: The Steamvault
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

@@ -392,7 +392,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(489, {	-- Chief Ukorz Sandscalp
 				["creatureID"] = 7267,
 				["groups"] = {
-					ach(639),	-- Zul'Farrak
+					ach(639, {	-- Zul'Farrak
+						["timeline"] = { "added 3.0.1" },
+					}),
 					ach(5048, {	-- Zul'Farrak Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),

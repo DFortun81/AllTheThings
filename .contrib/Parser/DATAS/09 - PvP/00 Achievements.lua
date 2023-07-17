@@ -89,63 +89,65 @@ local THE_JUSTICAR_AND_THE_CONQUEROR_OnTooltip = [[function(t)
 	end
 end]];
 root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
-	ach(238, applyclassicphase(PHASE_TWO, {	-- An Honorable Kill
-			["rank"] = 1,
-			-- #if BEFORE WRATH
-			["OnTooltip"] = HK_OnTooltip,
-			["OnUpdate"] = HK_OnUpdate,
-			-- #endif
-		})),
-	ach(513, applyclassicphase(PHASE_TWO, {	-- 100 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(238, {	-- An Honorable Kill
+		["rank"] = 1,
+		-- #if BEFORE WRATH
+		["OnTooltip"] = HK_OnTooltip,
+		["OnUpdate"] = HK_OnUpdate,
+		-- #endif
+	})),
+	applyclassicphase(PHASE_TWO, ach(513, {	-- 100 Honorable Kills
 		["rank"] = 100,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
 		["OnUpdate"] = HK_OnUpdate,
 		-- #endif
 	})),
-	ach(515, applyclassicphase(PHASE_TWO, {	-- 500 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(515, {	-- 500 Honorable Kills
 		["rank"] = 500,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
 		["OnUpdate"] = HK_OnUpdate,
 		-- #endif
 	})),
-	ach(516, applyclassicphase(PHASE_TWO, {	-- 1000 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(516, {	-- 1000 Honorable Kills
 		["rank"] = 1000,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
 		["OnUpdate"] = HK_OnUpdate,
 		-- #endif
 	})),
-	ach(512, applyclassicphase(PHASE_TWO, {	-- 5000 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(512, {	-- 5000 Honorable Kills
 		["rank"] = 5000,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
 		["OnUpdate"] = HK_OnUpdate,
 		-- #endif
 	})),
-	ach(509, applyclassicphase(PHASE_TWO, {	-- 10000 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(509, {	-- 10000 Honorable Kills
 		["rank"] = 10000,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
 		["OnUpdate"] = HK_OnUpdate,
 		-- #endif
 	})),
-	ach(239, applyclassicphase(PHASE_TWO, {	-- 25000 Honorable Kills
+	applyclassicphase(PHASE_TWO, ach(239, {	-- 25000 Honorable Kills
 		["rank"] = 25000,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
 		["OnUpdate"] = HK_OnUpdate,
 		-- #endif
 	})),
-	ach(869, applyclassicphase(WRATH_PHASE_ONE, {	-- 50000 Honorable Kills
+	applyclassicphase(WRATH_PHASE_ONE, ach(869, {	-- 50000 Honorable Kills
+		["timeline"] = { "added 3.0.1" },
 		["rank"] = 50000,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
 		["OnUpdate"] = HK_OnUpdate,
 		-- #endif
 	})),
-	ach(870, applyclassicphase(WRATH_PHASE_ONE, {	-- 100000 Honorable Kills
+	applyclassicphase(WRATH_PHASE_ONE, ach(870, {	-- 100000 Honorable Kills
+		["timeline"] = { "added 3.0.1" },
 		["rank"] = 100000,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
@@ -160,7 +162,8 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	})),
-	ach(5363, applyclassicphase(CATA_PHASE_ONE, {	-- 250000 Honorable Kills
+	applyclassicphase(CATA_PHASE_ONE, ach(5363, {	-- 250000 Honorable Kills
+		["timeline"] = { "added 4.0.3" },
 		["rank"] = 250000,
 		-- #if BEFORE WRATH
 		["OnTooltip"] = HK_OnTooltip,
@@ -170,7 +173,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			title(184),		-- the Bloodthirsty
 		},
 	})),
-	ach(230, applyclassicphase(WRATH_PHASE_ONE, {	-- Battlemaster (Alliance)
+	applyclassicphase(WRATH_PHASE_ONE, ach(230, {	-- Battlemaster (Alliance)
 		-- #if AFTER 3.0.1
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
@@ -180,6 +183,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			1171,	-- Master of Eye of the Storm
 		}},
 		-- #endif
+		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			-- #if ANYCLASSIC
@@ -189,7 +193,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			-- #endif
 		},
 	})),
-	ach(1175, applyclassicphase(WRATH_PHASE_ONE, {	-- Battlemaster (Horde)
+	applyclassicphase(WRATH_PHASE_ONE, ach(1175, {	-- Battlemaster (Horde)
 		-- #if AFTER 3.0.1
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
@@ -205,6 +209,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			1171,	-- Master of Eye of the Storm
 		}},
 		-- #endif
+		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 		["groups"] = {
 			-- #if ANYCLASSIC
@@ -226,7 +231,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["maps"] = { THUNDER_BLUFF },
 		["races"] = ALLIANCE_ONLY,
 	}),
-	ach(727, applyclassicphase(PHASE_TWO, {	-- Call in the Cavalry
+	applyclassicphase(PHASE_TWO, ach(727, {	-- Call in the Cavalry
 		["providers"] = {
 			{ "i", 18243 },	-- Black Battlestrider (Original)
 			{ "i", 18247 },	-- Black War Kodo (Original)
@@ -254,29 +259,35 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 		-- #endif
 	})),
-	ach(908, applyclassicphase(WRATH_PHASE_ONE, {	-- Call to Arms! (Alliance)
+	applyclassicphase(WRATH_PHASE_ONE, ach(908, {	-- Call to Arms! (Alliance)
+		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 	})),
-	ach(909, applyclassicphase(WRATH_PHASE_ONE, {	-- Call to Arms! (Horde)
+	applyclassicphase(WRATH_PHASE_ONE, ach(909, {	-- Call to Arms! (Horde)
+		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	})),
 	ach(388, {	-- City Defender (Alliance)
+		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(1006, {	-- City Defender (Horde)
+		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	}),
-	pvp(ach(14519,	-- Covenant Combat
-	bubbleDownSelf({["timeline"] = ADDED_9_0_2_LAUNCH },{
+	pvp(ach(14519, bubbleDownSelf({["timeline"] = ADDED_9_0_2_LAUNCH },{	-- Covenant Combat
 		crit(1),	-- Venthyr
 		crit(2),	-- Night Fae
 		crit(3),	-- Necrolord
 		crit(4),	-- Kyrian
 	}))),
-	ach(227),	-- Damage Control
+	ach(227, {	-- Damage Control
+		["timeline"] = { "added 3.0.1" },
+	}),
 	-- #if BEFORE CATA
 	ach(616, {	-- Death to the King! [WRATH] / Overthrow the Council [CATA+]
 		["provider"] = { "n", 2784 },	-- King Magni Bronzebeard <Lord of Ironforge>
+		["timeline"] = { "added 3.0.1" },
 		["maps"] = { IRONFORGE },
 		["races"] = HORDE_ONLY,
 	}),
@@ -311,7 +322,9 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 		["races"] = ALLIANCE_ONLY,
 	}),
-	ach(1157),	-- Duel-icious
+	ach(1157, {	-- Duel-icious
+		["timeline"] = { "added 3.0.1" },
+	}),
 	ach(14815, {	-- Executing the Exarch
 		["provider"] = { "n", 175137 },	-- High Exarch Turalyon <Lord Commander of Alliance Forces>
 		["timeline"] = { ADDED_9_0_1 },
@@ -339,9 +352,11 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			-- #endif
 			613,	-- Killed in Quel'Thalas
 		}},
+		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			i(44223, {	-- Black War Bear (A) (MOUNT!)
+				["timeline"] = { "added 3.0.1" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 		},
@@ -361,19 +376,23 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			616,	-- Death to the King! [WRATH] / Overthrow the Council [CATA+]
 			618,	-- Putting Out the Light
 		}},
+		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 		["groups"] = {
 			i(44224, {	-- Black War Bear (H) (MOUNT!)
+				["timeline"] = { "added 3.0.1" },
 				["races"] = HORDE_ONLY,
 			}),
 		},
 	}),
 	ach(701, {	-- Freedom of the Alliance
 		-- TODO: Add providers and make accessible to classic
+		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(700, {	-- Freedom of the Horde
 		-- TODO: Add providers and make accessible to classic
+		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	}),
 	ach(10561, {	-- Honorable Medallion
@@ -419,18 +438,23 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(613, {	-- Killed in Quel'Thalas
 		["provider"] = { "n", 16802 },	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
+		["timeline"] = { "added 3.0.1" },
 		["maps"] = { SILVERMOON_CITY },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(246, {	-- Know Thy Enemy (Alliance)
 		["sym"] = {{ "achievement_criteria" }},
+		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(1005, {	-- Know Thy Enemy (Horde)
 		["sym"] = {{ "achievement_criteria" }},
+		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	}),
-	ach(247),	-- Make Love, Not Warcraft
+	ach(247, {	-- Make Love, Not Warcraft
+		["timeline"] = { "added 3.0.1" },
+	}),
 	ach(14817, {	-- Opposing Orgrimmar
 		["provider"] = { "n", 175135 },	-- Rokhan <Darkspear Chieftain>
 		["timeline"] = { ADDED_9_0_1 },
@@ -450,12 +474,14 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 42131 },	-- Falstad Wildhammer <Wildhammer Clan Representative>
 			{ "n", 42928 },	-- Muradin Bronzebeard <Bronzebeard Representative>
 		},
+		["timeline"] = { "added 3.0.1" },
 		["maps"] = { IRONFORGE },
 		["races"] = HORDE_ONLY,
 	}),
 	-- #endif
 	ach(618, {	-- Putting Out the Light
 		["provider"] = { "n", 17468 },	-- Prophet Velen
+		["timeline"] = { "added 3.0.1" },
 		["maps"] = { THE_EXODAR },
 		["races"] = HORDE_ONLY,
 	}),
@@ -473,8 +499,9 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(245, {	-- That Takes Class
 		["sym"] = {{ "achievement_criteria" }},
+		["timeline"] = { "added 3.0.1" },
 	}),
-	ach(714, applyclassicphase(PHASE_TWO, {	-- The Conqueror
+	applyclassicphase(PHASE_TWO, ach(714, {	-- The Conqueror
 		-- #if BEFORE 3.0.1
 		["description"] = "Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",
 		["OnClick"] = THE_JUSTICAR_AND_THE_CONQUEROR_OnClick,
@@ -491,12 +518,15 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = HORDE_ONLY,
 		["groups"] = {
 			applyclassicphase(TBC_PHASE_ONE, title(34, {	-- Conqueror <Name>
+				["timeline"] = { "added 2.0.1" },
 				["races"] = HORDE_ONLY,
 			})),
 		},
 	})),
-	ach(229),	-- The Grim Reaper
-	ach(907, applyclassicphase(PHASE_TWO, {	-- The Justicar
+	ach(229, {	-- The Grim Reaper
+		["timeline"] = { "added 3.0.1" },
+	}),
+	applyclassicphase(PHASE_TWO, ach(907, {	-- The Justicar
 		-- #if BEFORE 3.0.1
 		["description"] = "Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",
 		["OnClick"] = THE_JUSTICAR_AND_THE_CONQUEROR_OnClick,
@@ -513,11 +543,13 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			applyclassicphase(TBC_PHASE_ONE, title(35, {	-- Justicar <Name>
+				["timeline"] = { "added 2.0.1" },
 				["races"] = ALLIANCE_ONLY,
 			})),
 		},
 	})),
 	ach(604, {	-- Wrath of the Alliance
+		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 		-- #if NOT ANYCLASSIC
 		["groups"] = {
@@ -530,6 +562,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #endif
 	}),
 	ach(603, {	-- Wrath of the Horde
+		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 		-- #if NOT ANYCLASSIC
 		["groups"] = {
@@ -541,5 +574,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 		-- #endif
 	}),
-	ach(231),	-- Wrecking Ball
+	ach(231, {	-- Wrecking Ball
+		["timeline"] = { "added 3.0.1" },
+	}),
 })));

@@ -49,35 +49,41 @@ root(ROOTS.Zones, {
 						["description"] = "Raise your reputation with the Sha'tari Skyguard to Exalted.",
 						-- #endif
 					})),
-					classicAch(726, {	-- Mr. Pinchy's Magical Crawdad Box
+					ach(726, {	-- Mr. Pinchy's Magical Crawdad Box
 						["provider"] = { "i", 27445 },	-- Magical Crawdad Box
-						["requireSkill"] = FISHING,
 						-- #if BEFORE WRATH
 						["description"] = "Fish your way to Mr. Pinchy's Magical Crawdad Box.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
+						["requireSkill"] = FISHING,
 					}),
 					ach(905, {	-- Old Man Barlowned
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 						["groups"] = {
 							crit(5706, {	-- Crocolisks in the City
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11665 },
 							}),
 							crit(5707, {	-- Bait Bandits
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11666 },
 							}),
 							crit(5708, {	-- Felblood Fillet
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11669 },
 							}),
 							crit(5709, {	-- The One That Got Away
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11667 },
 							}),
 							crit(5710, {	-- Shrimpin' Ain't Easy
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11668 },
 							}),
 						},
 					}),
-					classicAch(1191, {	-- Terror of Terokkar (A)
+					ach(1191, {	-- Terror of Terokkar (A)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -172,7 +178,7 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					classicAch(1272, {	-- Terror of Terokkar (H)
+					ach(1272, {	-- Terror of Terokkar (H)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -324,12 +330,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182957 },	-- Highland Mixed School
 						["criteriaID"] = 3869,	-- Highland Mixed School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182957 },	-- Highland Mixed School
 						["criteriaID"] = 3627,	-- Highland Mixed School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -350,12 +358,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182956 },	-- School of Darter
 						["criteriaID"] = 3868,	-- School of Darter
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182956 },	-- School of Darter
 						["criteriaID"] = 3628,	-- School of Darter
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -495,7 +505,9 @@ root(ROOTS.Zones, {
 									{ "o", 185549 },	-- Monstrous Kaliri Egg
 								},
 							}),
-							ach(1275),	-- Bombs Away
+							ach(1275, {	-- Bombs Away
+								["timeline"] = { "added 3.0.1" },
+							}),
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11056, {	-- Hazzik's Bargain

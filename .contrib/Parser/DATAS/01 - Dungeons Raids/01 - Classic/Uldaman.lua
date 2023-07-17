@@ -757,7 +757,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(473, {	-- Archaedas
 				["creatureID"] = 2748,
 				["groups"] = {
-					classicAch(638, {	-- Uldaman
+					ach(638, {	-- Uldaman
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							2278,	-- The Platinum Discs

@@ -35,7 +35,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(1169, {	-- Master of Arathi Basin (Alliance - before 4.3.0)
+				ach(1169, {	-- Master of Arathi Basin (Alliance - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {{"meta_achievement",
 						155,	-- Arathi Basin Veteran
@@ -56,7 +56,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
-				classicAch(1170, {	-- Master of Arathi Basin (Horde - before 4.3.0)
+				ach(1170, {	-- Master of Arathi Basin (Horde - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {{"meta_achievement",
 						155,	-- Arathi Basin Veteran
@@ -75,45 +75,45 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { "added 3.0.1", "deleted 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
-				classicAch(154, {	-- Arathi Basin Victory
+				ach(154, {	-- Arathi Basin Victory
 					["timeline"] = { "added 3.0.1" },
 					["rank"] = 1,
 				}),
-				classicAch(155, {	-- Arathi Basin Veteran
+				ach(155, {	-- Arathi Basin Veteran
 					["timeline"] = { "added 3.0.1" },
 					["rank"] = 100,
 				}),
-				classicAch(583, {	-- Arathi Basin All-Star
+				ach(583, {	-- Arathi Basin All-Star
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(584, {	-- Arathi Basin Assassin
+				ach(584, {	-- Arathi Basin Assassin
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(165, {	-- Arathi Basin Perfection
+				ach(165, {	-- Arathi Basin Perfection
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(73, {	-- Disgracin' The Basin
+				ach(73, {	-- Disgracin' The Basin
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(159, {	-- Let's Get This Done
+				ach(159, {	-- Let's Get This Done
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(158, {	-- Me and the Cappin' Makin' it Happen
+				ach(158, {	-- Me and the Cappin' Makin' it Happen
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(1153, {	-- Overly Defensive
+				ach(1153, {	-- Overly Defensive
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(161, {	-- Resilient Victory
+				ach(161, {	-- Resilient Victory
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(156, {	-- Territorial Dominance
+				ach(156, {	-- Territorial Dominance
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(157, {	-- To The Rescue!
+				ach(157, {	-- To The Rescue!
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(162, {	-- We Had It All Along *cough*
+				ach(162, {	-- We Had It All Along *cough*
 					["timeline"] = { "added 3.0.1" },
 				}),
 				applyclassicphase(PHASE_TWO, achWithFaction(711, 509, {	-- Knight of Arathor

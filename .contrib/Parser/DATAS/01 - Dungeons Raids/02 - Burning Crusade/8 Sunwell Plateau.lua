@@ -254,11 +254,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 			e(1596, {	-- Kil'jaeden
 				["creatureID"] = 25315,
 				["groups"] = {
-					ach(698),	-- Sunwell Plateau
+					ach(698, {	-- Sunwell Plateau
+						["timeline"] = { "added 3.0.1" },
+					}),
 					ach(5092, {	-- Sunwell Plateau Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
-					classicAch(725, {	-- Thori'dal, the Stars' Fury
+					ach(725, {	-- Thori'dal, the Stars' Fury
 						["provider"] = { "i", 34334 },	-- Thori'dal, the Stars' Fury
 						["classes"] = { WARRIOR, ROGUE, HUNTER },
 						-- #if BEFORE WRATH

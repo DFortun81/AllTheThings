@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["isRaid"] = true,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(5847, applyclassicphase(CATA_PHASE_ONE, {	-- Fish or Cut Bait: Ironforge
+				applyclassicphase(CATA_PHASE_ONE, ach(5847, {	-- Fish or Cut Bait: Ironforge
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				ach(5841, applyclassicphase(CATA_PHASE_ONE, {	-- Let's Do Lunch: Ironforge
+				applyclassicphase(CATA_PHASE_ONE, ach(5841, {	-- Let's Do Lunch: Ironforge
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
@@ -88,8 +88,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				ach(1837, applyclassicphase(TBC_PHASE_ONE, {	-- Old Ironjaw
+				applyclassicphase(TBC_PHASE_ONE, ach(1837, {	-- Old Ironjaw
 					["provider"] = { "i", 34484 },	-- Old Ironjaw
+					["timeline"] = { "added 2.0.1" },
 					["requireSkill"] = FISHING,
 					-- #if BEFORE WRATH
 					["description"] = "Fish up Old Ironjaw in Ironforge.",

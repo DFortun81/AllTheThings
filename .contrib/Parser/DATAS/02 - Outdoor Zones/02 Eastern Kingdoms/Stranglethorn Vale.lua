@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(871, applyclassicphase(PHASE_ONE, {	-- Avast Ye, Admiral!
+				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
 					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Bloodsail Admiral's Hat... and try to get some fresh air every now and then.",
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Explore Stranglethorn Vale, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				classicAch(940, {	-- The Green Hills of Stranglethorn
+				ach(940, {	-- The Green Hills of Stranglethorn
 					-- #if AFTER CATA
 					["sourceQuest"] = 208,	-- Big Game Hunter
 					-- #else
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["coord"] = { 30.5, 47.8, STRANGLETHORN_VALE },
 				-- #endif
 				["groups"] = {
-					classicAch(389, {	-- Gurubashi Arena Master
+					ach(389, {	-- Gurubashi Arena Master
 						["provider"] = { "i", 18706 },	-- Arena Master
 						-- #if BEFORE WRATH
 						["description"] = "Loot the Arena Master trinket from the Gurubashi Arena. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
@@ -382,7 +382,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 18706, 12 } },	-- Arena Master (trinket)
 					["repeatable"] = true,
 					["groups"] = {
-						classicAch(396, {	-- Arena Grandmaster
+						ach(396, {	-- Arena Grandmaster
 							["provider"] = { "i", 19024 },	-- Arena Grand Master
 							-- #if BEFORE WRATH
 							["description"] = "Complete Short John Mithril's quest to obtain the Arena Grand Master trinket. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",

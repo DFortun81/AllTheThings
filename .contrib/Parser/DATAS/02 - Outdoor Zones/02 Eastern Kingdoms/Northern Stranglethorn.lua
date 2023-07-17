@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				classicAch(940, {	-- The Green Hills of Stranglethorn
+				ach(940, {	-- The Green Hills of Stranglethorn
 					-- #if AFTER CATA
 					["sourceQuest"] = 208,	-- Big Game Hunter
 					-- #else

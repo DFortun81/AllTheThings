@@ -124,7 +124,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1568, {	-- The Lurker Below
 				["creatureID"] = 21217,
 				["groups"] = {
-					ach(144),	-- The Lurker Above
+					ach(144, {	-- The Lurker Above
+						["timeline"] = { "added 3.0.1" },
+						["requireSkill"] = FISHING,
+					}),
 					i(138834, {	-- Illusion: Frostbrand
 						["classes"] = { SHAMAN },
 						["timeline"] = { "added 7.0.3.22248" },
@@ -217,7 +220,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1572, {	-- Lady Vashj
 				["creatureID"] = 21212,
 				["groups"] = {
-					classicAch(694, {	-- Serpentshrine Cavern
+					ach(694, {	-- Serpentshrine Cavern
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 10445,	-- The Vials of Eternity
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],

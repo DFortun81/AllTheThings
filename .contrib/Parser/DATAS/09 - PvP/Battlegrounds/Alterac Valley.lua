@@ -85,7 +85,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				})),
-				classicAch(1167, {	-- Master of Alterac Valley (Alliance - before 4.3.0)
+				ach(1167, {	-- Master of Alterac Valley (Alliance - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					-- #if AFTER 4.3.0
 					["sym"] = {{"meta_achievement",
@@ -124,7 +124,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(1168, {	-- Master of Alterac Valley (Horde - before 4.3.0)
+				ach(1168, {	-- Master of Alterac Valley (Horde - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {{"meta_achievement",
 						219,	-- Alterac Valley Veteran
@@ -146,51 +146,51 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { "added 3.0.1", "deleted 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
-				classicAch(218, {	-- Alterac Valley Victory
+				ach(218, {	-- Alterac Valley Victory
 					["timeline"] = { "added 3.0.1" },
 					["rank"] = 1,
 				}),
-				classicAch(219, {	-- Alterac Valley Veteran
+				ach(219, {	-- Alterac Valley Veteran
 					["timeline"] = { "added 3.0.1" },
 					["rank"] = 100,
 				}),
-				classicAch(221, {	-- Alterac Grave Robber
+				ach(221, {	-- Alterac Grave Robber
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(222, {	-- Tower Defense
+				ach(222, {	-- Tower Defense
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(1151, {	-- Loyal Defender (A)
-					["timeline"] = { "added 3.0.1" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				classicAch(224, {	-- Loyal Defender (H)
-					["timeline"] = { "added 3.0.1" },
-					["races"] = HORDE_ONLY,
-				}),
-				classicAch(225, {	-- Everything Counts (A)
+				ach(1151, {	-- Loyal Defender (A)
 					["timeline"] = { "added 3.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				classicAch(1164, {	-- Everything Counts (H)
+				ach(224, {	-- Loyal Defender (H)
 					["timeline"] = { "added 3.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
-				classicAch(223, {	-- The Sickly Gazelle
-					["timeline"] = { "added 3.0.1" },
-				}),
-				classicAch(873, {	-- Frostwolf Perfection
-					["timeline"] = { "added 3.0.1" },
-					["races"] = HORDE_ONLY,
-				}),
-				classicAch(220, {	-- Stormpike Perfection
+				ach(225, {	-- Everything Counts (A)
 					["timeline"] = { "added 3.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				classicAch(582, {	-- Alterac Valley All-Star
+				ach(1164, {	-- Everything Counts (H)
+					["timeline"] = { "added 3.0.1" },
+					["races"] = HORDE_ONLY,
+				}),
+				ach(223, {	-- The Sickly Gazelle
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(706, {	-- Frostwolf Howler
+				ach(873, {	-- Frostwolf Perfection
+					["timeline"] = { "added 3.0.1" },
+					["races"] = HORDE_ONLY,
+				}),
+				ach(220, {	-- Stormpike Perfection
+					["timeline"] = { "added 3.0.1" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(582, {	-- Alterac Valley All-Star
+					["timeline"] = { "added 3.0.1" },
+				}),
+				ach(706, {	-- Frostwolf Howler
 					["provider"] = { "i", 19029 },	-- Horn of the Frostwolf Howler
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Frostwolf Howler from Alterac Valley.",
@@ -199,7 +199,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					["filterID"] = MOUNTS,
 				}),
-				classicAch(707, {	-- Stormpike Battle Charger
+				ach(707, {	-- Stormpike Battle Charger
 					["provider"] = { "i", 19030 },	-- Stormpike Battle Charger
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Stormpike Battle Charger from Alterac Valley.",
@@ -208,11 +208,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 					["filterID"] = MOUNTS,
 				}),
-				classicAch(1166, {	-- To the Looter Go the Spoils
+				ach(1166, {	-- To the Looter Go the Spoils
 					["provider"] = { "i", 18228 },	-- Autographed Picture of Foror & Tigule
 					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(226, {	-- The Alterac Blitz
+				ach(226, {	-- The Alterac Blitz
 					["timeline"] = { "added 3.0.1" },
 				}),
 			}),

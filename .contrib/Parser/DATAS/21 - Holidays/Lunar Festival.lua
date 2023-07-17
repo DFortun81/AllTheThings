@@ -45,6 +45,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					937,				-- Elune's Blessing
 				},
 			},
+			["timeline"] = { "added 3.0.1" },
 			["groups"] = {
 				title(43),				-- Elder
 			},
@@ -76,29 +77,52 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			}),
 		})),
 		ach(6006, {	-- Elders of Cataclysm
-			["timeline"] = { "added 4.2.0" },
 			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 4.2.0" },
 		}),
-		ach(912, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Eastern Kingdoms
-		ach(911, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Kalimdor
-		ach(910, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Dungeons
-		ach(914, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Horde
-		ach(915, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Alliance
-		ach(1396, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Northrend
+		ach(912, {	-- Elders of Eastern Kingdoms
+			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(911, {	-- Elders of Kalimdor
+			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(910, {	-- Elders of the Dungeons
+			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(914, {	-- Elders of the Horde
+			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(915, {	-- Elders of the Alliance
+			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(1396, {	-- Elders of Northrend
+			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
+		}),
 		ach(605, {	-- A Coin of Ancestry
 			["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(606, {	-- 5 Coins of Ancestry
 			["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(607, {	-- 10 Coins of Ancestry
 			["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(608, {	-- 25 Coins of Ancestry
 			["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(609, {	-- 50 Coins of Ancestry
 			["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(626, {	-- Lunar Festival Finery
 			["providers"] = {
@@ -109,15 +133,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ "i", 21544 },	-- Festive Blue Pant Suit
 				{ "i", 21543 },	-- Festive Teal Pant Suit
 			},
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1281, {	-- The Rocket's Red Glare
 			["provider"] = { "i", 21576 },	-- Red Rocket Cluster
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1552, {	-- Frenzied Firecracker
 			["provider"] = { "i", 21747 },	-- Festival Firecracker
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(937, {	-- Elune's Blessing
 			["sourceQuest"] = 8868,	-- Elune's Blessing
+			["timeline"] = { "added 3.0.1" },
 		}),
 	}),
 	-- #endif

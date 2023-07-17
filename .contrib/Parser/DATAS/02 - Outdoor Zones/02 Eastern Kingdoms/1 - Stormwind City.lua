@@ -2593,7 +2593,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["isRaid"] = true,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(5476, applyclassicphase(CATA_PHASE_ONE, {	-- Fish or Cut Bait: Stormwind
+				applyclassicphase(CATA_PHASE_ONE, ach(5476, {	-- Fish or Cut Bait: Stormwind
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -2615,7 +2615,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				ach(5474, applyclassicphase(CATA_PHASE_ONE, {	-- Let's Do Lunch: Stormwind
+				applyclassicphase(CATA_PHASE_ONE, ach(5474, {	-- Let's Do Lunch: Stormwind
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,

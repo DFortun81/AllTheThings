@@ -69,6 +69,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				1703,	-- My Love is Like a Red, Red Rose
 				1704,	-- I Pitied The Fool
 			}},
+			["timeline"] = { "added 3.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(103),	-- the Love Fool
@@ -97,6 +98,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				1703,	-- My Love is Like a Red, Red Rose
 				1704,	-- I Pitied The Fool
 			}},
+			["timeline"] = { "added 3.0.1" },
 			-- #if BEFORE MOP
 			["races"] = HORDE_ONLY,
 			-- #endif
@@ -104,7 +106,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				title(103),	-- the Love Fool
 			},
 		}),
-		ach(1701, {	-- Be Mine!
+		ach(1701, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Be Mine!
 			crit(6324, {	-- Be Mine!
 				["provider"] = { "i", 21816 },	-- Heart Candy (Be Mine!)
 			}),
@@ -129,10 +131,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			crit(6331, {	-- I LOVE YOU
 				["provider"] = { "i", 21817 },	-- Heart Candy (I LOVE YOU)
 			}),
-		}),
+		})),
 		ach(260, {	-- Charming
 			["provider"] = { "i", 49661 },	-- Lovely Charm Collector's Kit
 			["cost"] = {{ "i", 49916, 12 }},	-- Lovely Charm Bracelet
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1695, {	-- Dangerous Love
 			["sourceQuests"] = {
@@ -165,10 +168,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				28935,	-- Crushing the Crown (H) [Uldum]
 				-- #endif
 			},
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1699, {	-- Fistful of Love
 			["cost"] = { { "i", 22218, 11 } },	-- 11x Handful of Rose Petals (minimum)
 			["sym"] = {{ "achievement_criteria" }},
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1279, {	-- Flirt With Disaster [Alliance]
 			["providers"] = {
@@ -179,6 +184,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 49856 },	-- "VICTORY" Perfume
 			},
 			["coord"] = { 46.6, 48.4, IRONFORGE },
+			["timeline"] = { "added 3.0.1" },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(1280, {	-- Flirt With Disaster [Horde]
@@ -190,11 +196,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 49856 },	-- "VICTORY" Perfume
 			},
 			["coord"] = { 67.6, 43.8, UNDERCITY },
+			["timeline"] = { "added 3.0.1" },
 			["races"] = HORDE_ONLY,
 		}),
 		ach(1704, {	-- I Pitied The Fool
 			["sym"] = {{ "achievement_criteria" }},
 			["cost"] = { { "i", 22261, 5 } },	-- 5x Love Fool
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = {
 				ARATHI_BASIN,
 				NAXXRAMAS,
@@ -231,6 +239,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 34480 },	-- Romantic Picnic Basket
 				{ "i", 22236 },	-- Buttermilk Delight
 			},
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { NORTHREND_DALARAN },
 		}),
 		ach(1703, {	-- My Love is Like a Red, Red Rose
@@ -238,8 +247,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 22206 },	-- Bouquet of Red Roses
 				{ "i", 44731 },	-- Bouquet of Ebon Roses
 			},
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1697, {	-- Nation of Adoration [Alliance]
+			["timeline"] = { "added 3.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				crit(12838, {	-- A Gift for the High Priestess of Elune
@@ -257,6 +268,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		ach(1698, {	-- Nation of Adoration [Horde]
+			["timeline"] = { "added 3.0.1" },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				crit(12842, {	-- A Gift for the Warchief / A Gift for the High Overlord/ A Gift for the Warchief's Advisor
@@ -275,11 +287,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		}),
 		ach(1700, {	-- Perma-Peddle
 			["provider"] = { "i", 22235 },	-- Truesilver Shafted Arrow
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1188, {	-- Shafted!
 			["cost"] = { { "i", 22200, 10 } },	-- 10x Silver Shafted Arrow
+			["timeline"] = { "added 3.0.1" },
 		}),
-		ach(1702, {	-- Sweet Tooth
+		ach(1702, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Sweet Tooth
 			crit(8705, {	-- Buttermilk Delight
 				["provider"] = { "i", 22236 },	-- 1x Buttermilk Delight
 			}),
@@ -292,9 +306,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			crit(8707, {	-- Very Berry Cream
 				["provider"] = { "i", 22238 },	-- 1x Very Berry Cream
 			}),
-		}),
+		})),
 		ach(1696, {	-- The Rocket's Pink Glare
 			["cost"] = { { "i", 34258, 10 } },	-- 10x Love Rocket
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(9394, {	-- They Really Love Me! (50)
 			["provider"] = { "i", 116648 },	-- Manufactured Love Prism
@@ -2021,7 +2036,9 @@ for i,o in ipairs({
 		},
 		-- #endif
 		["groups"] = {
-			ach(4624),	-- Tough Love (Shadowfang Keep)
+			ach(4624, {	-- Tough Love (Shadowfang Keep)
+				["timeline"] = { "added 3.0.1" },
+			}),
 			i(50320, {	-- Faded Lovely Greeting Card [A]
 				["timeline"] = { "added 3.3.2.11403" },
 			}),

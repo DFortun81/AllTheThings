@@ -238,7 +238,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(537, {	-- Nexus-Prince Shaffar
 					["creatureID"] = 18344,
 					["groups"] = {
-						classicAch(651, {	-- Mana-Tombs
+						ach(651, {	-- Mana-Tombs
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10165,	-- Undercutting the Competition
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
@@ -388,7 +388,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(537, {	-- Nexus-Prince Shaffar
 						["creatureID"] = 18344,
 						["groups"] = {
-							ach(671),	-- Heroic: Mana-Tombs
+							ach(671, {	-- Heroic: Mana-Tombs
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5071, {	-- Heroic: Mana-Tombs Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

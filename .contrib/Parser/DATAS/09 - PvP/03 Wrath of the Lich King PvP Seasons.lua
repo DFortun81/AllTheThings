@@ -70,10 +70,10 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
+			ach(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
 				title(56),	-- Deadly Gladiator <Name>
 			}),
-			classicAch(3096, {	-- Deadly Gladiator's Frost Wyrm
+			ach(3096, {	-- Deadly Gladiator's Frost Wyrm
 				["provider"] = { "i", 46708 },	-- Deadly Gladiator's Frost Wyrm
 				["filterID"] = MOUNTS,
 			}),
@@ -1849,10 +1849,10 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
+			ach(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
 				title(132),	-- Furious Gladiator <Name>
 			}),
-			classicAch(3756, {	-- Furious Gladiator's Frost Wyrm
+			ach(3756, {	-- Furious Gladiator's Frost Wyrm
 				["provider"] = { "i", 46171 },	-- Furious Gladiator's Frost Wyrm
 				["filterID"] = MOUNTS,
 			}),
@@ -3335,10 +3335,10 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
+			ach(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
 				title(142),	-- Wrathful Gladiator <Name>
 			}),
-			classicAch(4600, {	-- Wrathful Gladiator's Frost Wyrm
+			ach(4600, {	-- Wrathful Gladiator's Frost Wyrm
 				["provider"] = { "i", 50435 },	-- Wrathful Gladiator's Frost Wyrm
 				["filterID"] = MOUNTS,
 			}),
