@@ -800,14 +800,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(206839, {	-- Jingoist's Cuirass
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
-								--[[ TODO: check on ally mail
 								i(207093, {	-- Jingoist's Mail Suit Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206860),	-- Jingoist's Chainmail
 										i(206869),	-- Jingoist's Vestment
 									},
-								}),]]--
+								}),
 								i(206878, {	-- Jingoist's Breastplate
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
@@ -945,14 +944,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(206808, {	-- Warmonger's Robe
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
-								--[[ TODO: check on horde leather
 								i(207094, {	-- Warmonger's Leather Suit Bag
-									["cost"] = {{ "c", PARACAUSAL_FLAKES, 250 }},
+									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
 										i(206840),	-- Warmonger's Cuirass
 										i(206844),	-- Warmonger's Vestment
 									},
-								}),]]--
+								}),
 								i(206858, {	-- Warmonger's Chainmail
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1050 }},
 								}),
