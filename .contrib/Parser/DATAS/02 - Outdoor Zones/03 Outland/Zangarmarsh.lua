@@ -561,8 +561,10 @@ root(ROOTS.Zones, {
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuests"] = {
 							9912,	-- The Cenarion Expedition
+							-- #if AFTER 6.2.0.19953
 							39181,	-- Hero's Call: Zangarmarsh!
 							39180,	-- Warchief's Command: Zangarmarsh!
+							-- #endif
 						},
 						["coord"] = { 78.4, 62.0, ZANGARMARSH },
 						["lvl"] = lvlsquish(61, 61, 10),

@@ -1221,7 +1221,9 @@ root(ROOTS.Zones, {
 						["qg"] = 18106,	-- Jorin Deadeye
 						["sourceQuests"] = {
 							9797,	-- Reinforcements for Garadar
+							-- #if AFTER 6.2.0.19953
 							39196,	-- Warchief's Command: Nagrand!
+							-- #endif
 						},
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["description"] = "Completing this quest will grant Neutral with The Mag'har.",

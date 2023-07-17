@@ -4675,7 +4675,9 @@ root(ROOTS.Zones, {
 							12791,	-- The Magical Kingdom of Dalaran (Horde only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12794,	-- The Magical Kingdom of Dalaran (Alliance only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12796,	-- The Magical Kingdom of Dalaran (Zul'Drak)
+							-- #if AFTER 6.2.0.19953
 							39210,	-- The Magical Kingdom of Dalaran (Adventure Guide)
+							-- #endif
 						},
 						["coord"] = { 56.3, 46.7, NORTHREND_DALARAN },
 						["maps"] = { CRYSTALSONG_FOREST },

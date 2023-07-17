@@ -1317,7 +1317,9 @@ root(ROOTS.Zones, {
 					q(10455, {	-- The Encroaching Wilderness (A)
 						["qg"] = 21066,	-- Rina Moonspring
 						["sourceQuests"] = {
+							-- #if AFTER 6.2.0.19953
 							39199,	-- Hero's Call: Blade's Edge Mountains!
+							-- #endif
 							9794,	-- No Time for Curiosity
 						},
 						["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
@@ -1327,8 +1329,10 @@ root(ROOTS.Zones, {
 					q(10486, {	-- The Encroaching Wilderness (H)
 						["qg"] = 21117,	-- Gor'drek
 						["sourceQuests"] = {
-							39198,	-- Warchief's Command: Blade's Edge Mountains!
 							9795,	-- The Ogre Threat
+							-- #if AFTER 6.2.0.19953
+							39198,	-- Warchief's Command: Blade's Edge Mountains!
+							-- #endif
 						},
 						["coord"] = { 52.4, 57.9, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,

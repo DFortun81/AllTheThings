@@ -477,13 +477,15 @@ root(ROOTS.Zones, {
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12653,	-- Back to Har'koa
 					}),
-					q(12902, {	-- In Search Of Answers -- aa
-						["coord"] = { 32.1, 75.7, ZULDRAK },
+					q(12902, {	-- In Search Of Answers
 						["qg"] = 29687,	-- Crusader Lord Lantinga
+						-- #if AFTER 7.3.5.25600
 						["sourceQuests"] = {
 							49534,	-- Warchief's Command: Zul'Drak!
 							49552,	-- Hero's Call: Zul'Drak!
 						},
+						-- #endif
+						["coord"] = { 32.1, 75.7, ZULDRAK },
 					}),
 					q(12661, {	-- Infiltrating Voltarus
 						["coord"] = { 14.0, 73.7, ZULDRAK },

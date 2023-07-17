@@ -1124,8 +1124,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 39.7, 58.7, SHOLAZAR_BASIN },
 						["qg"] = 27987,	-- Monte Muzzleshot
 						["sourceQuests"] = {
-							39209,	-- Sholazar Basin
-							39212,	-- Sholazar Basin
+							-- #if AFTER 6.2.0.19953
+							39209,	-- Sholazar Basin -- Adventure Guide
+							39212,	-- Sholazar Basin -- Adventure Guide
+							-- #endif
 							12521,	-- Where in the World is Hemet Nesingwary?
 						},
 					}),

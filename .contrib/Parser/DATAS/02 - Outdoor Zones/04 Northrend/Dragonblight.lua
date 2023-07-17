@@ -1326,7 +1326,9 @@ root(ROOTS.Zones, {
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuests"] = {
 							12439,	-- A Distrurbance in The Weset
+							-- #if AFTER 6.2.0.19953
 							39204,	-- Hero's Call: Dragonblight!
+							-- #endif
 							12440,	-- To Stars' Rest!
 							11995,	-- Your Presence is Required at Stars' Rest
 						},

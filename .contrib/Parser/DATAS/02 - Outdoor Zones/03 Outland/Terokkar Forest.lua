@@ -936,8 +936,10 @@ root(ROOTS.Zones, {
 							9957,	-- What's Wrong at Cenarion Thicket?
 							9961,	-- What's Wrong at Cenarion Thicket?
 							9960,	-- What's Wrong at Cenarion Thicket?
+							-- #if AFTER 6.2.0.19953
 							39182,	-- Warchief's Command: Terokkar Forest!
 							39188,	-- Hero's Call: Terokkar Forest!
+							-- #endif
 						},
 					}),
 					q(9986, {	-- Stymying the Arakkoa (A)
