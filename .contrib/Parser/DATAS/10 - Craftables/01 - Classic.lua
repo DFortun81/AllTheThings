@@ -1756,10 +1756,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 					}),
 					i(8367),	-- Dragonscale Breastplate
 					applyclassicphase(PHASE_FOUR, i(20380, {	-- Dreamscale Breastplate
-						-- no idea how to fix it properly with if statements
-						--[[ #if AFTER 4.0.3
-						["description"] = "While this recipe is still available, the mats required to craft it are not.",
-						-- #endif--]]
+					--	["description"] = "While this recipe is still available, the mats required to craft it are not.",
 						["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					})),
 					i(15045),	-- Green Dragonscale Breastplate
