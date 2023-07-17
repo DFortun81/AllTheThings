@@ -575,6 +575,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
+			-- #if AFTER 10.1.5
+			prof(SKINNING, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+				i(20381),	-- Dreamscale
+			})),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(11318, {	-- Atal'ai Haze
 					["crs"] = {
