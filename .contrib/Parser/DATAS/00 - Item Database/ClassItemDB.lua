@@ -117,7 +117,10 @@ iq(89868, 62677, DRUID);			-- Mark of the Cheetah
 iq(140630, 62678, DRUID);			-- Mark of the Doe
 iq(162022, 62674, DRUID);			-- Mark of the Dolphin
 iq(162029, 62676, DRUID);			-- Mark of the Humble Flyer
+-- #if AFTER 9.0.1
+-- CRIEVE NOTE: This was appearing in Classic... Ya'll gotta be more careful.
 iq(40919, 62673, DRUID);			-- Mark of the Orca
+-- #endif
 iq(129021, 62675, DRUID);			-- Mark of the Sentinel
 iq(162027, 62672, DRUID);			-- Mark of the Tideskipper
 iq(183123, 62254, HUNTER);			-- How to School Your Serpent
