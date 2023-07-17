@@ -71,8 +71,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									12748,	-- A Special Surprise
 									12749,	-- A Special Surprise
 									12750,	-- A Special Surprise
+									-- #if AFTER 4.0.3.13277
 									28649,	-- A Special Surprise
 									28650,	-- A Special Surprise
+									-- #endif
 								},
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["groups"] = {
