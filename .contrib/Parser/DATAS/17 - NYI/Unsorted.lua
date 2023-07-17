@@ -464,7 +464,6 @@ root(ROOTS.Unsorted, {
 			i(201166),	-- Gilded Hilt
 			i(206160),	-- Madam Shadow's Grimoire
 			i(206520),	-- Beverage for Pedgi
-			i(206653),	-- Fel Pinecone
 			i(206681),	-- Letter from Oman
 			i(208400),	-- Silks of the Unnamed Cult
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness

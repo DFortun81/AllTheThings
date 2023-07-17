@@ -781,4 +781,5 @@ i(206033);	-- Untranslated Obsidian Tome
 ------------------
 -- Quest Items --
 i(208030);	-- Advanced Titan Gizmo
+i(206653);	-- Fel Pinecone
 i(205978);	-- Glob of Azmerloth Slime

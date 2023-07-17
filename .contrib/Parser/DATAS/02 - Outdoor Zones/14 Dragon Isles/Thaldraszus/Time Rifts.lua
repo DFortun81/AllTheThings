@@ -246,7 +246,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							bubbleDownSelf({ ["minReputation"] = { FACTION_SORIDORMI, 5 } }, {
 								title(513),	-- <Name> Unparalleled
 							})),
-							-- q(77179)?? HTQ trigger?
 							q(77241, {	-- A Foreseeable Friendship
 								["provider"] = { "n", 204450 },	-- Soridormi
 								["coord"] = { 51.0, 57.0, THALDRASZUS },
@@ -261,13 +260,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								["minReputation"] = { FACTION_SORIDORMI, 3 },
 								["g"] = {
 									i(207020, {	-- Ensemble: Rift-Mender's Vestments
-										["questID"] = 76581,
+										--["questID"] = 76581,
 										["g"] = {
 											i(207017),	-- Rift-Mender's Cape
 											i(207018),	-- Rift-Mender's Spaulders
 											i(207016),	-- Rift-Mender's Tabard
 										},
 									}),
+								},
+							}),
+							q(77249, {	-- One of Us
+								["provider"] = { "n", 204450 },	-- Soridormi
+								["coord"] = { 51.0, 57.0, THALDRASZUS },
+								["minReputation"] = { FACTION_SORIDORMI, 4 },
+								["g"] = {
+									i(207027),	-- Greater Encapsulated Destiny
 								},
 							}),
 						},
@@ -309,15 +316,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					q(76404, {	-- Cogs in a Machine
-						["provider"] = { "o", 403919 },	-- Mechanical Cog
-						["coords"] = {
-							{ 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
-							{ 58.1, 63.9, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-							{ 38.1, 52.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						},
-						["g"] = {
-							i(206602),	-- Mechanized Cog
-						},
+						["provider"] = { "i", 206602 },	-- Mechanical Cog
+						["coord"] = { 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(76533, {	-- Dangerous Documentation
 						["provider"] = { "n", 207252 },	-- Watcher's Log
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					q(76546, {	-- Mantid Methodology
-						["provider"] = { "i", 206998 },	-- Mechanical Cog
+						["provider"] = { "i", 206998 },	-- Amber Sword
 						["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(76449, {	-- The Endless Conflict
@@ -359,11 +359,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					q(76544, {	-- Wasteland Warriors
-						["provider"] = { "o", 404432 },	-- Bload Soaked Book
+						["provider"] = { "i", 206984 },	-- Blood-Soaked Book
 						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
-							i(206984),	-- Blood-Soaked Book
-						},
 					}),
 					q(77236, {	-- When Time Needs Mending
 						["provider"] = { "n", 204450 },	-- Soridormi
@@ -418,18 +415,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					currency(PARACAUSAL_FLAKES),	-- rewarded from literally everything, don't need to list everywhere
 				}),
 				n(TREASURES, {
-						-- o(xx,{	-- xx
-						-- 	["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						-- 	["g"] = {
-								i(206998),	-- Amber Sword
-						--	},
-						--}),
+					o(404432,{	-- Bload Soaked Book
+						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						["g"] = {
+							i(206984),	-- Blood-Soaked Book
+						},
+					}),
+					o(403919,{	-- Mechanical Cog
+						["coords"] = {
+							{ 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
+							{ 58.1, 63.9, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+							{ 38.1, 52.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						},
+						["g"] = {
+							i(206602),	-- Mechanized Cog
+						},
+					}),
+					o(404480,{	-- Ragged Mantid Sword
+					 	["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+					 	["g"] = {
+							i(206998),	-- Amber Sword
+						},
+					}),
 				}),
 				n(VENDORS, {
-
-					-- TODO: Basically all vendor costs are incorrect. someone want to update them to live values pls... ???
-
-
 					n(208338, {	-- Baron Silver <Azmourne Vendor>
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
 						["g"] = {
@@ -1089,6 +1098,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(76585),	-- Ensemble: Hauberk of Discipline
 		q(76584),	-- Ensemble: Lifegiver's Garms
 		q(76583),	-- Ensemble: Decorous Garments
+		q(76581),	-- Ensemble: Rift-Mender's Vestments
+
 		q(76695),	-- after buying/loot 'Blighted Greatbow' (itemID 206784) (spellID 418958)
 		q(76691),	-- after buying/loot 'Bonegale Greataxe' (itemID 206783) (spellID 418957)
 		q(76616),	-- after buying/loot 'Branded Greatmaul' (itemID 206791) (spellID 418956)
@@ -1201,5 +1212,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(76707),	-- after buying/loot Ensemble: Haukbert of Discipline (itemID 207047) (spellID 418946)
 		q(76706),	-- after buying/loot Ensemble: Lifegiver's Garms (itemID 207048) (spellID 418945)
 		q(76708),	-- after buying/loot Ensemble: Valhalas Ceremonial Armor (itemID 207046) (spellID 418944)
+
+		-- q(77179)?? HTQ trigger? -- ptr
 	}))}),
 })));
