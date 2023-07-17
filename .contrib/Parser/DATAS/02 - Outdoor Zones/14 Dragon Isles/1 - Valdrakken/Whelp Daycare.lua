@@ -560,6 +560,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 			})),
+			n(QUESTS, sharedData({ ["isRepeatable"] = true }, {
+				q(77426, {	-- Practice Makes Perfect: Rusziona
+					--["sourceQuests"] = { ??? },	-- TODO
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
+			})),
 		})),
 	}),
 })));
