@@ -224,7 +224,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			crit(11, {	-- Reservoir Filly
 				["crs"]	= { 196652 }, -- Reservoir Filly
-				["coord"] = { 51.24, 56.82, THALDRASZUS },
+				["coord"] =
+					-- #if BEFORE 10.1.5
+					{ 51.24, 56.82, THALDRASZUS },
+					-- #else
+					-- moved due to Time Rifts it seems
+					{ 51.5, 58.0, THALDRASZUS },
+					-- #endif
 			}),
 			crit(12, {	-- Rocdrop Scarab
 				["crs"]	= { 185148 }, -- Rocdrop Scarab

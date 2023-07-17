@@ -3,9 +3,8 @@
 -----------------------------------------------------
 local SCHOLOMANCE_GROUPS = {};
 local KORMOK_LEGACY_DESCRIPTION = "This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.";
-local NOT_REMOVED_EVER = {};
 local ignoreTimeline = function(item)	-- Items applied with this were never actually removed.
-	table.insert(NOT_REMOVED_EVER, item);
+	item.timeline = IGNORED_VALUE;
 	return item;
 end
 local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 } }, {
@@ -1070,12 +1069,6 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		},
 	}),
 });
-
--- A couple of these BOEs just became super rares when the original difficulty was removed.
--- They are NOT RWPs.
-for i,item in ipairs(NOT_REMOVED_EVER) do
-	item.timeline = nil;
-end
 
 -- #if BEFORE 5.0.4
 -- Before MOP there was only one difficulty for Scholomance. Merge all the legacy data into the groups directly.
