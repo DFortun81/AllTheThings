@@ -119,14 +119,8 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					explorationAch(1268),	-- Explore Sholazar Basin
-					ach(950, {	-- Frenzyheart Tribe
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1104); end]],
-						-- #endif
-					}),
-					ach(961, {	-- Honorary Frenzyheart
+					achWithFaction(950, 1104),	-- Frenzyheart Tribe
+					classicAch(961, {	-- Honorary Frenzyheart
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["groups"] = {
 							crit(2061, {	-- A Hero's Headgear
@@ -229,13 +223,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(951, {	-- The Oracles
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1105); end]],
-						-- #endif
-					}),
+					achWithFaction(951, 1105),	-- The Oracles
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",

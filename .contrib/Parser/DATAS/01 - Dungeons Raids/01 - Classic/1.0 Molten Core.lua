@@ -20,14 +20,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(955, {	-- Hydraxian Waterlords
+				achWithFaction(955, 749, {	-- Hydraxian Waterlords
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 749); end]],
 					-- #endif
 					["maps"] = { AZSHARA },
 				}),

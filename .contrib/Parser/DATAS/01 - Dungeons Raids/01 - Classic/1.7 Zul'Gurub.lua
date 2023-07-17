@@ -15,14 +15,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 		["lvl"] = 58,
 		["groups"] = bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 			n(ACHIEVEMENTS, {
-				classicAch(957, {	-- Hero of the Zandalar Tribe
+				achWithFaction(957, 270, {	-- Hero of the Zandalar Tribe
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Zandalar Tribe to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 270); end]],
 					-- #endif
 					["maps"] = { STRANGLETHORN_VALE },
 				}),

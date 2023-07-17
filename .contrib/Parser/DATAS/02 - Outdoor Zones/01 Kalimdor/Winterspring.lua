@@ -214,14 +214,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Explore Winterspring, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				classicAch(944, {	-- They Love Me In That Tunnel
+				achWithFaction(944, 576, {	-- They Love Me In That Tunnel
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with Timbermaw Hold to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 576); end]],
 					-- #endif
 					["maps"] = { FELWOOD },
 				}),

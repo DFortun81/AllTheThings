@@ -74,14 +74,9 @@ root(ROOTS.Zones, {
 							}),
 						},
 					})),
-					classicAch(902, {	-- Chief Exalted Officer
+					achWithFaction(902, 933, {	-- Chief Exalted Officer
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with The Consortium to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 933); end]],
 						-- #endif
 					}),
 					explorationAch(866, {	-- Explore Nagrand
@@ -96,14 +91,9 @@ root(ROOTS.Zones, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
-					classicAch(901, {	-- Mag'har of Draenor
+					achWithFaction(901, 941, {	-- Mag'har of Draenor
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Mag'har to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 941); end]],
 						-- #endif
 						["races"] = HORDE_ONLY,
 					}),
@@ -301,14 +291,9 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					classicAch(899, {	-- Oh My, Kurenai
+					achWithFaction(899, 978, {	-- Oh My, Kurenai
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Kurenai to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 978); end]],
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
 					}),

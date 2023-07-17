@@ -25,14 +25,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 		["lvl"] = 50,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(956, {	-- Brood of Nozdormu
+				achWithFaction(956, 910, {	-- Brood of Nozdormu
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Brood of Nozdormu to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 910); end]],
 					-- #endif
 					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
 				}),

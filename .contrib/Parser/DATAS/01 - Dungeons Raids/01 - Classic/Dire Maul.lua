@@ -129,20 +129,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(5788, {	-- Agent of the Shen'dralar
-					["maps"] = { 236 },	-- Capital Gardens
-					["timeline"] = { "removed 4.0.3" },
-					-- #if ANYCLASSIC
+				achWithFaction(5788, 809, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
 					-- #if BEFORE 4.1.0
 					-- This isn't actually an achievement yet.
 					["description"] = "Earn exalted status with the Shen'dralar.",
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 809, true); end]],
-					-- #else
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 809); end]],
 					-- #endif
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					-- #endif
+					["maps"] = { 236 },	-- Capital Gardens
+					["timeline"] = { "removed 4.0.3" },
 				}),
 				ach(644, {	-- King of Dire Maul
 					["maps"] = { 239, 235, 236 },	-- All Wings

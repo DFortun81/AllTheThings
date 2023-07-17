@@ -111,15 +111,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						4584,	-- The Light of Dawn
 					}},
 				}),
-				ach(4598, {	-- The Ashen Verdict
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1156); end]],
-					-- #endif
-					["groups"] = {
-						title(141),	-- <Name> of the Ashen Verdict
-					},
+				achWithFaction(4598, 1156, {	-- The Ashen Verdict
+					title(141),	-- <Name> of the Ashen Verdict
 				}),
 			}),
 			n(FACTIONS, {

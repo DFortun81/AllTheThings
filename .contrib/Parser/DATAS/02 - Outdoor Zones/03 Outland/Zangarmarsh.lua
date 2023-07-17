@@ -251,14 +251,9 @@ root(ROOTS.Zones, {
 							applyclassicphase(WRATH_PHASE_ONE, title(100)),	-- %, Guardian of Cenarius
 						},
 					})),
-					classicAch(900, {	-- The Czar of Sporeggar
+					achWithFaction(900, 970, {	-- The Czar of Sporeggar
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Sporeggar to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 970); end]],
 						-- #endif
 					}),
 				}),

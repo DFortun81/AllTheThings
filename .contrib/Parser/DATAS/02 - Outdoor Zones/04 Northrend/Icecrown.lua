@@ -109,20 +109,8 @@ root(ROOTS.Zones, {
 							title(99),	-- %s the Argent Champion
 						},
 					}),
-					ach(947, {	-- The Argent Crusade
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1106); end]],
-						-- #endif
-					}),
-					ach(1009, {	-- Knights of the Ebon Blade
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1098); end]],
-						-- #endif
-					}),
+					achWithFaction(947, 1106),	-- The Argent Crusade
+					achWithFaction(1009, 1098),	-- Knights of the Ebon Blade
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",

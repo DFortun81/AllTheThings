@@ -4295,14 +4295,8 @@ root(ROOTS.Zones, {
 							i(44430),		-- Titanium Seal of Dalaran (TOY!)
 						},
 					}),
-					ach(1008, {	-- The Kirin Tor
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1090); end]],
-						-- #endif
-					}),
-					ach(1957, {	-- There's Gold In That There Fountain
+					achWithFaction(1008, 1090),	-- The Kirin Tor
+					classicAch(1957, {	-- There's Gold In That There Fountain
 						["sym"] = {{ "achievement_criteria" }},
 						["requireSkill"] = FISHING,
 					}),

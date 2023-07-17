@@ -189,22 +189,13 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					ach(1007, {	-- The Wyrmrest Accord
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1091); end]],
-						-- #endif
+					achWithFaction(1007, 1091, {	-- The Wyrmrest Accord
+						["maps"] = { BOREAN_TUNDRA },
 					}),
-					ach(949, {	-- Tuskarrmageddon
+					achWithFaction(949, 1073, {	-- Tuskarrmageddon
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1073); end]],
-						-- #endif
 					}),
-					ach(547, {	-- Veteran of the Wrathgate
+					classicAch(547, {	-- Veteran of the Wrathgate
 						["sourceQuests"] = {
 							12499,	-- Return to Angrathar (A)
 							12500,	-- Return to Angrathar (H)

@@ -48,14 +48,9 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(896, applyclassicphase(TBC_PHASE_TWO_OGRILA, {	-- A Quest a Day Keeps the Ogres at Bay
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithFaction(896, 1038, {	-- A Quest a Day Keeps the Ogres at Bay
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Ogri'la to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1038); end]],
 						-- #endif
 					})),
 					explorationAch(865, {	-- Explore Blade's Edge Mountains

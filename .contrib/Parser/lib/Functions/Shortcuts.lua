@@ -474,7 +474,39 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 		t = struct("achievementID", id, altID);
 	end
 	-- #if ANYCLASSIC
-	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
+	if not t.timeline then
+		print(CurrentSubFileName or CurrentFileName, "Still need to convert ACH: " .. id);
+		bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t);
+	end
+	-- #endif
+	return t;
+end
+classicAch = function(id, altID, t)						-- Create an ACHIEVEMENT Object that doesn't have a timeline built into it.
+	-- CRIEVE NOTE: I'm going to be mass replacing this with "ach" once I get them all timelined.
+	if t or type(altID) == "number" then
+		t = struct("allianceAchievementID", id, t or {});
+		t["hordeAchievementID"] = altID;
+		return t;
+	else
+		return struct("achievementID", id, altID);
+	end
+end
+achWithFaction = function(id, factionID, t)				-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
+	local t = classicAch(id, t);
+	-- #if ANYCLASSIC
+	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+	t.OnInit = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnInit(t, ]] .. factionID ..[[); end]];
+	-- #if BEFORE 4.1.0
+	-- #if AFTER 3.0.1
+	if id == 5788 then	-- Agent of Shen'dralar still needs this until after 4.1.0
+	-- #endif
+	t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REP_OnUpdate]];
+	-- #if AFTER 3.0.1
+	end
+	-- #endif
+	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]];
+	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]];
+	-- #endif
 	-- #endif
 	return t;
 end
@@ -517,15 +549,6 @@ battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == 
 	t = struct("speciesID", id, t);
 	if not t.itemID then t.u = MOP_PHASE_ONE; end
 	return t;
-end
-classicAch = function(id, altID, t)						-- Create an ACHIEVEMENT Object that doesn't have a timeline built into it.
-	if t or type(altID) == "number" then
-		t = struct("allianceAchievementID", id, t or {});
-		t["hordeAchievementID"] = altID;
-		return t;
-	else
-		return struct("achievementID", id, altID);
-	end
 end
 pet = battlepet;										-- Create a BATTLE PET Object (alternative shortcut)
 p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)

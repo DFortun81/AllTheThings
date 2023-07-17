@@ -99,7 +99,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 		["maps"] = { ICECROWN, 170 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(3676, {	-- A Silver Confidant
+				achWithFaction(3676, 1094, {	-- A Silver Confidant
 					["sourceQuests"] = {
 						13735,	-- A Champion Rises (A) (Darnassus)
 						13733,	-- A Champion Rises (A) (Gnomeregan)
@@ -107,11 +107,6 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						13702,	-- A Champion Rises (A) (Stormwind City)
 						13734,	-- A Champion Rises (A) (The Exodar)
 					},
-					-- #if ANYCLASSIC
-					["OnClick"] = [[function(...) _.CommonAchievementHandlers.EXALTED_REP_OnClick(...); end]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1094); end]],	-- The Silver Covenant
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(2756, {	-- Argent Aspiration
@@ -212,7 +207,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				applyclassicphase(WRATH_PHASE_THREE, ach(3736, {	-- Pony Up!
 					["provider"] = { "i", 47541 },	-- Argent Pony Bridle
 				})),
-				ach(3677, {	-- The Sunreavers
+				achWithFaction(3677, 1124, {	-- The Sunreavers
 					["sourceQuests"] = {
 						13737,	-- A Champion Rises (H) (Darkspear Trolls)
 						13736,	-- A Champion Rises (H) (Orgrimmar)
@@ -220,11 +215,6 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						13738,	-- A Champion Rises (H) (Thunder Bluff)
 						13739,	-- A Champion Rises (H) (Undercity)
 					},
-					-- #if ANYCLASSIC
-					["OnClick"] = [[function(...) _.CommonAchievementHandlers.EXALTED_REP_OnClick(...); end]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1124); end]],	-- The Sunreavers
-					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(4596, {	-- The Sword in the Skull

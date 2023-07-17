@@ -35,14 +35,9 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					ach(898, applyclassicphase(TBC_PHASE_THREE_NETHERWING, {	-- On Wings of Nether
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, achWithFaction(898, 1015, {	-- On Wings of Nether
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Netherwing to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1015); end]],
 						-- #endif
 					})),
 					classicAch(1195, {	-- Shadow of the Betrayer

@@ -44,14 +44,9 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Terokkar Forest, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					ach(894, applyclassicphase(TBC_PHASE_TWO_SKYGUARD, {	-- Flying High Over Skettis
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithFaction(894, 1031, {	-- Flying High Over Skettis
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Sha'tari Skyguard to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1031); end]],
 						-- #endif
 					})),
 					classicAch(726, {	-- Mr. Pinchy's Magical Crawdad Box

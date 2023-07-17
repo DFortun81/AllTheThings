@@ -8,15 +8,10 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 		["lvl"] = 80,
 		["groups"] = {
 			n(ACHIEVEMENTS, {	-- non-pvp map
-				ach(5375, {	-- Baradin's Wardens
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1177); end]],
-					-- #endif
+				achWithFaction(5375, 1177, {	-- Baradin's Wardens
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(5376, {	-- Hellscream's Reach
+				achWithFaction(5376, 1178, {	-- Hellscream's Reach
 					["races"] = HORDE_ONLY,
 				}),
 				-- TODO: add _quests for these criteria

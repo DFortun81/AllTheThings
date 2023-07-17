@@ -60,7 +60,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(1172, {	-- Master of Warsong Gulch
+				classicAch(1172, {	-- Master of Warsong Gulch
 					-- Meta Achievement should symlink the contained Achievements from Source
 					-- #if AFTER 4.3.0
 					["sym"] = {{"meta_achievement",
@@ -95,8 +95,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					}},
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
+					["timeline"] = { "added 3.0.1" },
 				}),
-				ach(1173, {	-- Master of Warsong Gulch (Horde - before 4.3.0)
+				classicAch(1173, {	-- Master of Warsong Gulch (Horde - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {{"meta_achievement",
 						167,	-- Warsong Gulch Veteran
@@ -114,59 +115,73 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { "added 3.0.1", "deleted 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
-				ach(166, {	-- Warsong Gulch Victory
+				classicAch(166, {	-- Warsong Gulch Victory
+					["timeline"] = { "added 3.0.1" },
 					["rank"] = 1,
 				}),
-				ach(167, {	-- Warsong Gulch Veteran
+				classicAch(167, {	-- Warsong Gulch Veteran
+					["timeline"] = { "added 3.0.1" },
 					["rank"] = 100,
 				}),
-				ach(199),	-- Capture the Flag
-				ach(200),	-- Persistent Defender
-				ach(872),	-- Frenzied Defender
-				ach(168),	-- Warsong Gulch Perfection
-				ach(201),	-- Warsong Expedience
-				ach(204),	-- Ironman
-				ach(203, {	-- Not in My House (A)
+				classicAch(199, {	-- Capture the Flag
+					["timeline"] = { "added 3.0.1" },
+				}),
+				classicAch(200, {	-- Persistent Defender
+					["timeline"] = { "added 3.0.1" },
+				}),
+				classicAch(872, {	-- Frenzied Defender
+					["timeline"] = { "added 3.0.1" },
+				}),
+				classicAch(168, {	-- Warsong Gulch Perfection
+					["timeline"] = { "added 3.0.1" },
+				}),
+				classicAch(201, {	-- Warsong Expedience
+					["timeline"] = { "added 3.0.1" },
+				}),
+				classicAch(204, {	-- Ironman
+					["timeline"] = { "added 3.0.1" },
+				}),
+				classicAch(203, {	-- Not in My House (A)
+					["timeline"] = { "added 3.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(1251, {	-- Not in My House (H)
+				classicAch(1251, {	-- Not in My House (H)
+					["timeline"] = { "added 3.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
-				ach(202, {	-- Quick Cap (A)
+				classicAch(202, {	-- Quick Cap (A)
+					["timeline"] = { "added 3.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(1502, {	-- Quick Cap (H)
+				classicAch(1502, {	-- Quick Cap (H)
+					["timeline"] = { "added 3.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
-				ach(206, {	-- Supreme Defender (A)
+				classicAch(206, {	-- Supreme Defender (A)
+					["timeline"] = { "added 3.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(1252, {	-- Supreme Defender (H)
+				classicAch(1252, {	-- Supreme Defender (H)
+					["timeline"] = { "added 3.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
-				ach(207),	-- Save the Day
-				ach(1259),	-- Not So Fast
-				ach(713, applyclassicphase(PHASE_TWO, {	-- Silverwing Sentinel (A)
-					["races"] = ALLIANCE_ONLY,
+				classicAch(207, {	-- Save the Day
+					["timeline"] = { "added 3.0.1" },
+				}),
+				classicAch(1259, {	-- Not So Fast
+					["timeline"] = { "added 3.0.1" },
+				}),
+				applyclassicphase(PHASE_TWO, achWithFaction(713, 890, {	-- Silverwing Sentinel (A)
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Silverwing Sentinels to Exalted.",
 					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 890); end]],
-					-- #endif
+					["races"] = ALLIANCE_ONLY,
 				})),
-				ach(712, applyclassicphase(PHASE_TWO, {	-- Warsong Outrider (H)
-					["races"] = HORDE_ONLY,
+				applyclassicphase(PHASE_TWO, achWithFaction(712, 889, {	-- Warsong Outrider (H)
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Warsong Outriders to Exalted.",
 					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 889); end]],
-					-- #endif
+					["races"] = HORDE_ONLY,
 				})),
 			}),
 			n(FACTIONS, {

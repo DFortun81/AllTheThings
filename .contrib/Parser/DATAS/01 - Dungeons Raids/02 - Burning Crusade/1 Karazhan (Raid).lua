@@ -35,14 +35,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in. TODO: Check this.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(960, {	-- The Violet Eye
+				achWithFaction(960, 967, {	-- The Violet Eye
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with The Violet Eye to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 967); end]],
 					-- #endif
 				}),
 			}),
