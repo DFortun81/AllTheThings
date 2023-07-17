@@ -10,19 +10,9 @@ end
 local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 		ach(18368, {	-- Memory of Scholomance
-			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
 			["sourceQuest"] = 76249,	-- Memory of Scholomance
+			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
 			["timeline"] = { ADDED_10_1_5 },
-			["description"] = "Its recommened to activate the Debug-Mode for the Allthethings to properly see every step & description.\n\nTo start unlocking old Scholomance, you must first do a heroic run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.\n\nAt this point, you must use the Krastinov's Bag of Horrors toy on top of the location where you looted Eva's Femur. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
-			["cost"] = {
-				{ "i", 206357, 1 },	-- 1x Authentic Andorhal Candle
-				{ "i", 206364, 1 },	-- 1x Eva's Femur
-				{ "i", 206346, 1 },	-- 1x Eva's Journal
-				{ "i", 206356, 1 },	-- 1x Ghost-Warding Candle
-				{ "i", 206358, 1 },	-- 1x Imported Candle
-				{ "i", 206354, 1 },	-- 1x Stinky Candle
-				{ "i", 206355, 1 },	-- 1x Tobacco-Filled Candle
-			},
 		}),
 		ach(18558, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Leaders of Scholomance
 			crit(1, {	-- Darkmaster Gandling
@@ -353,6 +343,20 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 58,
+		}),
+		q(76249, {	-- Memory of Scholomance
+			["description"] = "Its recommened to activate the Debug-Mode for the Allthethings to properly see every step & description.\n\nTo start unlocking old Scholomance, you must first do a heroic run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.\n\nAt this point, you must use the Krastinov's Bag of Horrors toy on top of the location where you looted Eva's Femur. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
+			["timeline"] = { ADDED_10_1_5 },
+			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
+			["cost"] = {
+				{ "i", 206357, 1 },	-- 1x Authentic Andorhal Candle
+				{ "i", 206364, 1 },	-- 1x Eva's Femur
+				{ "i", 206346, 1 },	-- 1x Eva's Journal
+				{ "i", 206356, 1 },	-- 1x Ghost-Warding Candle
+				{ "i", 206358, 1 },	-- 1x Imported Candle
+				{ "i", 206354, 1 },	-- 1x Stinky Candle
+				{ "i", 206355, 1 },	-- 1x Tobacco-Filled Candle
+			},
 		}),
 		q(5463, {	-- Menethil's Gift (1/2)
 			["providers"] = {
