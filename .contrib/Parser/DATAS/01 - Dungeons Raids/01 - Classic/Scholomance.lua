@@ -3,6 +3,11 @@
 -----------------------------------------------------
 local SCHOLOMANCE_GROUPS = {};
 local KORMOK_LEGACY_DESCRIPTION = "This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.";
+local NOT_REMOVED_EVER = {};
+local ignoreTimeline = function(item)	-- Items applied with this were never actually removed.
+	table.insert(NOT_REMOVED_EVER, item);
+	return item;
+end
 local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 		ach(18368, {	-- Memory of Scholomance
@@ -739,13 +744,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(12753, {	-- Skin of Shadow
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
-		i(18702),	-- Belt of the Ordained
+		ignoreTimeline(i(18702)),	-- Belt of the Ordained
 		i(16671, {	-- Bindings of Elements
 			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10478,	-- Splintered Skeleton
 		}),
-		i(14536),	-- Bonebrace Hauberk
-		i(18697),	-- Coldstone Slippers
+		ignoreTimeline(i(14536)),	-- Bonebrace Hauberk
+		ignoreTimeline(i(18697)),	-- Coldstone Slippers
 		i(16702, {	-- Dreadmist Belt
 			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10477,	-- Scholomance Necromancer
@@ -754,8 +759,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10477,	-- Scholomance Necromancer
 		}),
-		i(18699),	-- Icy Tomb Spaulders
-		i(18701),	-- Innervating Band
+		ignoreTimeline(i(18699)),	-- Icy Tomb Spaulders
+		ignoreTimeline(i(18701)),	-- Innervating Band
 		i(16722, {	-- Lightforge Bracers
 			["timeline"] = { REMOVED_4_0_3 },
 			["crs"] = {
@@ -771,7 +776,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
-		i(18700),	-- Malefic Bracers
+		ignoreTimeline(i(18700)),	-- Malefic Bracers
 		i(16710, {	-- Shadowcraft Bracers
 			["timeline"] = { REMOVED_4_0_3 },
 			["crs"] = {
@@ -780,7 +785,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				10488,	-- Risen Construct
 			},
 		}),
-		i(18698),	-- Tattered Leather Hood
+		ignoreTimeline(i(18698)),	-- Tattered Leather Hood
 		i(16714, {	-- Wildheart Bracers
 			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10495,	-- Diseased Ghoul
@@ -1065,6 +1070,12 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		},
 	}),
 });
+
+-- A couple of these BOEs just became super rares when the original difficulty was removed.
+-- They are NOT RWPs.
+for i,item in ipairs(NOT_REMOVED_EVER) do
+	item.timeline = nil;
+end
 
 -- #if BEFORE 5.0.4
 -- Before MOP there was only one difficulty for Scholomance. Merge all the legacy data into the groups directly.
