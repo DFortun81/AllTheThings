@@ -463,7 +463,6 @@ root(ROOTS.Unsorted, {
 			--
 			i(201166),	-- Gilded Hilt
 			i(206160),	-- Madam Shadow's Grimoire
-			i(206394),	-- Red Dragon Egg
 			i(206520),	-- Beverage for Pedgi
 			i(206653),	-- Fel Pinecone
 			i(206681),	-- Letter from Oman

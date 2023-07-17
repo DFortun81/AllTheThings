@@ -145,6 +145,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 
 			n(QUESTS, sharedData({ ["isDaily"] = true }, {
+				q(76269, {	-- A Mislaid Egg
+					["provider"] = { "n", 205424 },	-- Chromie
+					["coord"] = { 52.1, 81.6, THALDRASZUS },
+					["g"] = {
+						i(206394),	-- Red Dragon Egg
+					},
+				}),
 				q(76266, {	-- A Multitude of Tasks
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
