@@ -967,13 +967,16 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(14620),	-- Deathbone Girdle
 			i(14623),	-- Deathbone Legguards
 			i(14621),	-- Deathbone Sabatons
+			i(18684),	-- Dimly Opalescent Ring
 			i(18682),	-- Ghoul Skin Leggings
 			i(14633),	-- Necropile Mantle
 			i(14626),	-- Necropile Robe
 			i(14629),	-- Necropile Cuffs
 			i(14632),	-- Necropile Leggings
 			i(14631),	-- Necropile Boots
-			i(18684),	-- Dimly Opalescent Ring
+			i(207059, {	-- Skeletal Knights Blade
+				["timeline"] = { ADDED_10_1_5 },
+			}),
 			applyclassicphase(PHASE_FIVE, i(23201, {	-- Libram of Divinity
 				["timeline"] = { "deleted 5.0.4" },
 			})),
