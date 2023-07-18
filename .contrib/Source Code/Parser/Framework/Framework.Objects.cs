@@ -1792,6 +1792,7 @@ end");
 
                     // Decimal Data Type Fields (requires higher precision than float)
                     case "headerID":
+                    case "up":
                         {
                             if (value.TryConvert(out decimal vDecimal))
                             {
