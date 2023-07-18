@@ -231,6 +231,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(205865, {	-- Zal'kir the Chosen <The Maw of K'Tanth>
 					["description"] = "Seem to spawn during Chronohammer Time!, Please report more info to ATT-Discord.",
 					["coord"] = { 59.8, 70.6, THALDRASZUS },
+					["questID"] = 76170,
 					["g"] = {
 						i(208168),	-- Black Blade of K'tanth
 						i(208172),	-- Bloodstained Runecrook
@@ -284,4 +285,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(76350),	-- after turn in The Chronosmith (questID 76350)
 
 	q(77172),	-- weekly lockout for Encapsulated Destiny (itemID 207002) as reward from daily quest
+
+	q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth>, probably hqt for make him spawn after quest?; either this or 76170 is daily lockout
 }));
