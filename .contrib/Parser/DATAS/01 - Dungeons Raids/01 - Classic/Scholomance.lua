@@ -974,6 +974,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(14629),	-- Necropile Cuffs
 			i(14632),	-- Necropile Leggings
 			i(14631),	-- Necropile Boots
+			i(207060, {	-- Skeletal Knight's Buckler
+				["timeline"] = { ADDED_10_1_5 },
+			}),
 			i(207059, {	-- Skeletal Knights Blade
 				["timeline"] = { ADDED_10_1_5 },
 			}),
