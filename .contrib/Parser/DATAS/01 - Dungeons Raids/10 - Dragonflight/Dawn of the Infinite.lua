@@ -378,6 +378,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- Cloth
 								-- Leather
 								-- Mail
+								i(3231),	-- Cutthroat Pauldrons				(Removed)
+								i(18320),	-- Demonheart Spaulders				(NYI Classic)
 								-- Plate
 								i(103785),	-- Tusks of Mannoroth Heroic		(Removed)
 							},
