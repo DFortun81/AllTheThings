@@ -332,7 +332,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						-- Dungeon Items from Classic till SL. Includes removed BoP items
 						-- Raid Items from Classic till SL
 						i(208064, {	-- Quantum Chestpiece
-							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n***|cFFA330C9If you get an Item which is removed from the game, please let us know in the Discord.***|r",
+							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n|cFF40bf40If*** you get an Item which is removed from the game, please let us know in the Discord.***|r",
 							["groups"] = {
 								-- Cloth
 								i(2114),	-- Snowy Robe	(Removed)
@@ -342,7 +342,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							},
 						}),
 						i(208063, {	-- Quantum Gloves
-							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n***|cFFA330C9If you get an Item which is removed from the game, please let us know in the Discord.***|r",
+							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n|cFF40bf40If*** you get an Item which is removed from the game, please let us know in the Discord.***|r",
 							["groups"] = {
 								-- Cloth
 								-- Leather
@@ -351,16 +351,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							},
 						}),
 						i(208061, {	-- Quantum Headpiece
-							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n***|cFFA330C9If you get an Item which is removed from the game, please let us know in the Discord.***|r",
+							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n|cFF40bf40If*** you get an Item which is removed from the game, please let us know in the Discord.***|r",
 							["groups"] = {
 								-- Cloth
 								-- Leather
 								-- Mail
+								i(121508),	-- Stormborn Crown					(Never added)
+								
+								i(134624),	-- Firebrand Helm					(Removed)
 								-- Plate
 							},
 						}),
 						i(208065, {	-- Quantum Legs
-							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n***|cFFA330C9If you get an Item which is removed from the game, please let us know in the Discord.***|r",
+							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n|cFF40bf40If*** you get an Item which is removed from the game, please let us know in the Discord.***|r",
 							["groups"] = {
 								-- Cloth
 								-- Leather
@@ -369,7 +372,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							},
 						}),
 						i(208062, {	-- Quantum Shoulders
-							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n***|cFFA330C9If you get an Item which is removed from the game, please let us know in the Discord.***|r",
+							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n|cFF40bf40If*** you get an Item which is removed from the game, please let us know in the Discord.***|r",
 							["groups"] = {
 								-- Cloth
 								-- Leather
@@ -378,7 +381,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								i(103785),	-- Tusks of Mannoroth Heroic		(Removed)
 							},
 						}),
-						n(WEAPONS, sharedData({ ["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n***|cFFA330C9If you get an Item which is removed from the game, please let us know in the Discord.***|r" }, {
+						n(WEAPONS, sharedData({ ["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n|cFF40bf40If*** you get an Item which is removed from the game, please let us know in the Discord.***|r" }, {
 							i(208111, {	-- Quantum Axe
 							}),
 							i(208117, {	-- Quantum Bow
