@@ -971,6 +971,18 @@ local function GetCostIconForTooltip(data, iconOnly)
 		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
 	end
 end
+local function GetUpgradeIconForRow(data, iconOnly)
+	-- upgrade only in nested groups, or if itself has an upgrade
+	if (not data.window and (data.filledUpgrade or data.hasUpgradeNested)) or data.hasUpgrade then
+		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
+	end
+end
+local function GetUpgradeIconForTooltip(data, iconOnly)
+	-- upgrade only if itself has an upgrade
+	if data.hasUpgrade then
+		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
+	end
+end
 local function GetReagentIcon(data, iconOnly)
 	if data.filledReagent then
 		return iconOnly and L["REAGENT_ICON"] or L["REAGENT_TEXT"];
@@ -983,14 +995,19 @@ local function GetProgressTextForRow(data)
 	-- build the row text from left to right with possible info
 	local text = {}
 	-- Reagent (show reagent icon)
-	local reagentIcon = GetReagentIcon(data, true);
-	if reagentIcon then
-		tinsert(text, reagentIcon)
+	local icon = GetReagentIcon(data, true);
+	if icon then
+		tinsert(text, icon)
 	end
 	-- Cost (show cost icon)
-	local costIcon = GetCostIconForRow(data, true);
-	if costIcon then
-		tinsert(text, costIcon)
+	icon = GetCostIconForRow(data, true);
+	if icon then
+		tinsert(text, icon)
+	end
+	-- Upgrade (show upgrade icon)
+	icon = GetUpgradeIconForRow(data, true);
+	if icon then
+		tinsert(text, icon)
 	end
 	-- Collectible
 	local stateIcon = GetCollectibleIcon(data, true)
@@ -1030,14 +1047,19 @@ local function GetProgressTextForTooltip(data, iconOnly)
 	-- build the row text from left to right with possible info
 	local text = {}
 	-- Reagent (show reagent icon)
-	local reagentIcon = GetReagentIcon(data, iconOnly);
-	if reagentIcon then
-		tinsert(text, reagentIcon)
+	local icon = GetReagentIcon(data, iconOnly);
+	if icon then
+		tinsert(text, icon)
 	end
 	-- Cost (show cost icon)
-	local costIcon = GetCostIconForTooltip(data, iconOnly);
-	if costIcon then
-		tinsert(text, costIcon)
+	icon = GetCostIconForRow(data, iconOnly);
+	if icon then
+		tinsert(text, icon)
+	end
+	-- Upgrade (show upgrade icon)
+	icon = GetUpgradeIconForTooltip(data, iconOnly);
+	if icon then
+		tinsert(text, icon)
 	end
 	-- Collectible
 	local stateIcon = GetCollectibleIcon(data, iconOnly)
@@ -2962,9 +2984,10 @@ local ResolveFunctions = {
 			return;
 		end
 		local cache, value;
+		local Search = app.SearchForField;
 		for i=1,vals do
 			value = select(i, ...);
-			cache = app.SearchForField("achievementID", value);
+			cache = Search("achievementID", value);
 			if cache then
 				ArrayAppend(searchResults, cache);
 			else
@@ -2973,8 +2996,8 @@ local ResolveFunctions = {
 		end
 		-- Remove any Criteria groups associated with those achievements
 		for k=#searchResults,1,-1 do
-			local s = searchResults[k];
-			if s.criteriaID then tremove(searchResults, k); end
+			cache = searchResults[k];
+			if cache.criteriaID then tremove(searchResults, k); end
 		end
 		PruneFinalized = true;
 	end,
@@ -4791,6 +4814,15 @@ app.SetSkipPurchases = function(level)
 		return SkipPurchases[-1];
 	end
 end
+-- Determines searches required for upgrades using this group
+local function DetermineUpgradeGroups(group, FillData)
+	local hasUpgrade = group.hasUpgrade;
+	if hasUpgrade then
+		group.hasUpgrade = false;
+		group.filledUpgrade = true;
+		return { CreateObject(group._up) };
+	end
+end
 -- Determines searches required for costs using this group
 local function DeterminePurchaseGroups(group, FillData)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
@@ -5004,6 +5036,7 @@ local function FillGroupsRecursive(group, FillData)
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
 		DeterminePurchaseGroups(group, FillData),
+		DetermineUpgradeGroups(group, FillData),
 		DetermineCraftedGroups(group, FillData),
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
@@ -5036,6 +5069,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
 		DeterminePurchaseGroups(group, FillData),
+		DetermineUpgradeGroups(group, FillData),
 		DetermineCraftedGroups(group, FillData),
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
@@ -10610,8 +10644,9 @@ local fields = {
 		return ATTAccountWideData.Sources[t.s];
 	end,
 	["modItemID"] = function(t)
-		t.modItemID = GetGroupItemIDWithModID(t) or t.itemID;
-		return t.modItemID;
+		local modItemID = GetGroupItemIDWithModID(t) or t.itemID;
+		t.modItemID = modItemID;
+		return modItemID;
 	end,
 	["specs"] = function(t)
 		return t.itemID and GetFixedItemSpecInfo(t.itemID);
@@ -11061,6 +11096,8 @@ local itemFields = {
 		return IsQuestFlaggedCompleted(t.questID);
 	end,
 };
+-- Module imports
+itemFields.hasUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
 app.BaseItem = app.BaseObjectFields(itemFields, "BaseItem");
 
 local fields = RawCloneData(itemFields);
@@ -14130,6 +14167,15 @@ local function SetGroupVisibility(parent, group)
 		end
 		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costNested)
 	end
+	-- Upgrade
+	if not visible and (group.hasUpgradeNested or group.hasUpgrade) then
+		visible = not group.saved;
+		-- Only persist nested costs from visible groups
+		if parent and visible then
+			parent.hasUpgradeNested = true;
+		end
+		app.PrintDebug("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested)
+	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then
 		visible = not group.saved;
@@ -14170,6 +14216,15 @@ local function SetThingVisibility(parent, group)
 		end
 		-- app.PrintDebug("STV.cost",group.hash,visible,group.costNested)
 	end
+	-- Upgrade
+	if not visible and (group.hasUpgradeNested or group.hasUpgrade) then
+		visible = not group.saved;
+		-- Only persist nested costs from visible groups
+		if parent and visible then
+			parent.hasUpgradeNested = true;
+		end
+		app.PrintDebug("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested)
+	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then
 		visible = not group.saved;
@@ -14189,6 +14244,7 @@ end
 local function UpdateGroup(parent, group)
 	group.visible = nil;
 	group.costNested = nil;
+	group.hasUpgradeNested = nil;
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
 	local valid;
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
