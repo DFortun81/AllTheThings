@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(171211, { -- Aspirant Eolis
 				-- #if BEFORE DF
-				["description"] = "Fragile Humility Scrolls can be found throughout the Court of Elation.  They are floating unfurled scrolls that do not sparkle, but glow purple.  After you find one, read it to Eolis to start the encounter.\n\If you are unable to see the scroll, your characters level is not high enough as it required max level (60) during Shadowlands (2021).",
+				["description"] = "Fragile Humility Scrolls can be found throughout the Court of Elation.  They are floating unfurled scrolls that do not sparkle, but glow purple.  After you find one, read it to Eolis to start the encounter.\n\nIf you are unable to see the scroll, your characters level is not high enough as it required max level (60) during Shadowlands (2021).",
 				-- #else
 				["description"] = "Fragile Humility Scrolls can be found throughout the Court of Elation.  They are floating unfurled scrolls that do not sparkle, but glow purple.  After you find one, read it to Eolis to start the encounter.\n\nOnly available to level 60 characters, both spawning and looting.",
 				-- #endif

@@ -436,9 +436,6 @@ root(ROOTS.Unsorted, {
 			i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
 			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
 			i(207057),	-- Gift of the White War Wolf
-			i(207058),	-- Fractured Shin
-			i(207059),	-- Skeletal Knight's Blade
-			i(207060),	-- Skeletal Knight's Buckler
 			i(207096),	-- Paracausal Chest
 			i(207101),	-- Glyph of Banehollow's Soulstone
 			i(207102),	-- TESTING ITEM DELETE ME
@@ -449,7 +446,6 @@ root(ROOTS.Unsorted, {
 			i(208029),	-- Scareloc Parts
 			i(207984),	-- Chroniton Wand
 			i(208001),	-- Timewalker's Cudgel
-			i(208068),	-- Rotten Delicious
 			i(208091),	-- Cache of Timewarped Treasures
 			i(208094),	-- Cache of Timewarped Treasures
 			i(208095),	-- Cache of Timewarped Treasures

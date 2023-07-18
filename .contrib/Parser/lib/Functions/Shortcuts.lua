@@ -473,7 +473,7 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	else
 		t = struct("achievementID", id, altID);
 	end
-	
+
 	-- #if BEFORE WRATH
 	-- These are helper variables (capitalized for a reason)
 	local AllProvidersRequiredForAchievement = t.AllProvidersRequiredForAchievement;

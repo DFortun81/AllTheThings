@@ -472,6 +472,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				},
 			}),
 		})),
+		--[[
 		prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
 			q(38499, {	-- Strange New Ores
 				["provider"] = { "n", 92183 },	-- Alard Schmied
@@ -951,6 +952,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				},
 			})),
 		})),
+		--]]
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 			q(39874, {	-- Some Enchanted Evening
 				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis

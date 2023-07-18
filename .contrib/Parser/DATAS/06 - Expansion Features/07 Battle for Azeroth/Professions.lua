@@ -211,6 +211,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 				},
 			}),
 		})),
+		--[[
 		prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
 			q(54465, {	-- Blacksmithing Plans
 				["requireSkill"] = BLACKSMITHING,
@@ -319,6 +320,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 		})),
+		--]]
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 			q(54473, {	-- Enchanted Formulae (A)
 				["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>

@@ -1,3 +1,451 @@
+-----------------------------------------------------
+--       P R O F E S S I O N S   M O D U L E       --
+-----------------------------------------------------
+local function AwardsCost(amount)
+	return {
+		-- #if BEFORE 5.0.4
+		{"i",43016,amount},	-- Dalaran Cooking Award
+		-- #else
+		{"c",402,amount},	-- Ironpaw Token
+		-- #endif
+		-- #if AFTER 4.0.3
+		{"c",81,amount},	-- Epicurean's Award
+		-- #endif
+	};
+end
+profession(COOKING, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+		ach(18817, {	-- Showoff Chef
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		ach(18816, {	-- Serious Chef
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		ach(7328, {	-- Ironpaw Chef
+			["timeline"] = { ADDED_5_0_4 },
+		}),
+		ach(5471, {	-- Iron Chef
+			["timeline"] = { ADDED_4_0_3_LAUNCH },
+		}),
+		ach(1799),	-- Chef de Cuisine
+		ach(1798),	-- Sous Chef
+		ach(1797),	-- Chef de Partie
+		ach(1796),	-- Short Order Cook
+		ach(1795),	-- Lunch Lady
+		ach(2002, {	-- 100 Cooking Awards
+			["cost"] = AwardsCost(100),
+		}),
+		ach(2001, {	-- 50 Cooking Awards
+			["cost"] = AwardsCost(50),
+		}),
+		ach(2000, {	-- 25 Cooking Awards
+			["cost"] = AwardsCost(25),
+		}),
+		ach(1999, {	-- 10 Cooking Awards
+			["cost"] = AwardsCost(10),
+		}),
+		ach(1998, {	-- Cooking Award
+			["cost"] = AwardsCost(1),
+		}),
+		ach(1563, {-- Hail to the Chef
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				1801,	-- Captain Rumsey's Lager
+				1781,	-- Critter Gitter
+				1785,	-- Dinner Impossible
+				906,	-- Kickin' It Up a Notch
+				125,	-- Northrend Cook
+				1782,	-- Our Daily Bread [A]
+				1783,	-- Our Daily Bread [H]
+				1780,	-- Second That Emotion
+				1798,	-- Sous Chef
+				877,	-- The Cake Is Not A Lie
+				1779,	-- The Northrend Gourmet (45)
+				1800,	-- The Outland Gourmet
+			}},
+			["g"] = {
+				title(52),	-- Chef <Name>
+			},
+		}),
+	})),
+	tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+		ach(123),	-- Classic Cook
+		ach(122),	-- Expert Cook
+		ach(121),	-- Journeyman Cook
+	})),
+	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+		ach(124),	-- Outland Cook
+		ach(1801, {	-- Captain Rumsey's Lager
+			["provider"] = { "i", 34832 },	-- Captain Rumsey's Lager
+		}),
+		ach(877, {	-- The Cake Is Not A Lie
+			["provider"] = { "i", 33924 },	-- Delicious Chocolate Cake
+		}),
+		ach(1800, {	-- The Outland Gourmet
+			crit(1, { ["provider"] = { "i", 33924 } } ),	-- Delicious Chocolate Cake
+			crit(2, { ["provider"] = { "i", 27661 } } ),	-- Blackened Trout
+			crit(3, { ["provider"] = { "i", 27651 } } ),	-- Buzzard Bites
+			crit(4, { ["provider"] = { "i", 30155 } } ),	-- Clam Bar
+			crit(5, { ["provider"] = { "i", 27662 } } ),	-- Feltail Delight
+			crit(6, { ["provider"] = { "i", 27655 } } ),	-- Ravager Dog
+			crit(7, { ["provider"] = { "i", 33866 } } ),	-- Stormchops
+			crit(8, { ["provider"] = { "i", 27663 } } ),	-- Blackened Sporefish
+			crit(9, { ["provider"] = { "i", 27657 } } ),	-- Blackened Basilisk
+			crit(10, { ["provider"] = { "i", 27664 } } ),	-- Grilled Mudfish
+			crit(11, { ["provider"] = { "i", 27665 } } ),	-- Poached Bluefish
+			crit(12, { ["provider"] = { "i", 33867 } } ),	-- Broiled Bloodfin
+			crit(13, { ["provider"] = { "i", 27666 } } ),	-- Golden Fish Sticks
+			crit(14, { ["provider"] = { "i", 33874 } } ),	-- Kibler's Bits
+			crit(15, { ["provider"] = { "i", 27658 } } ),	-- Roasted Clefthoof
+			crit(16, { ["provider"] = { "i", 27660 } } ),	-- Talbuk Steak
+			crit(17, { ["provider"] = { "i", 27659 } } ),	-- Warp Burger
+			crit(18, { ["provider"] = { "i", 31673 } } ),	-- Crunchy Serpent
+			crit(19, { ["provider"] = { "i", 31672 } } ),	-- Mok'Nathal Shortribs
+			crit(20, { ["provider"] = { "i", 33052 } } ),	-- Fisherman's Feast
+			crit(21, { ["provider"] = { "i", 33053 } } ),	-- Hot Buttered Trout
+			crit(22, { ["provider"] = { "i", 33825 } } ),	-- Skullfish Soup
+			crit(23, { ["provider"] = { "i", 27667 } } ),	-- Spicy Crawdad
+			crit(24, { ["provider"] = { "i", 33872 } } ),	-- Spicy Hot Talbuk
+			crit(25, { ["provider"] = { "i", 33048 } } ),	-- Stewed Trout
+		}),
+	})),
+	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
+		ach(125),	-- Northrend Cook
+		ach(1781, {	-- Critter Gitter
+			["cost"] = {{"i", 43004, 10}},	-- 10x Critter Bites
+		}),
+		ach(1785, {	-- Dinner Impossible
+			crit(1, { ["provider"] = { "i", 34753 } } ),	-- Alterac Valley
+			crit(2, { ["provider"] = { "i", 34753 } } ),	-- Arathi Basin
+			crit(3, { ["provider"] = { "i", 34753 } } ),	-- Warsong Gulch
+			crit(4, { ["provider"] = { "i", 34753 } } ),	-- Eye of the Storm
+		}),
+		ach(1780, {	-- Second That Emotion
+			crit(1, { ["provider"] = { "i", 43491 } } ),	-- Bad Clams
+			crit(2, { ["provider"] = { "i", 43492 } } ),	-- Haunted Herring
+			crit(3, { ["provider"] = { "i", 43488 } } ),	-- Last Week's Mammoth
+			crit(4, { ["provider"] = { "i", 43490 } } ),	-- Tasty Cupcake
+		}),
+		ach(1779, {	-- The Northrend Gourmet (45)
+			crit(1, { ["provider"] = { "i", 43491 } } ),	-- Bad Clams
+			crit(2, { ["provider"] = { "i", 42942 } } ),	-- Baked Manta Ray
+			crit(3, { ["provider"] = { "i", 43268 } } ),	-- Dalaran Clam Chowder
+			crit(4, { ["provider"] = { "i", 34760 } } ),	-- Grilled Bonescale
+			crit(5, { ["provider"] = { "i", 34762 } } ),	-- Grilled Sculpin
+			crit(6, { ["provider"] = { "i", 43492 } } ),	-- Haunted Herring
+			crit(7, { ["provider"] = { "i", 43488 } } ),	-- Last Week's Mammoth
+			crit(8, { ["provider"] = { "i", 34748 } } ),	-- Mammoth Meal
+			crit(9, { ["provider"] = { "i", 34747 } } ),	-- Northern Stew
+			crit(10, { ["provider"] = { "i", 34765 } } ),	-- Pickled Fangtooth
+			crit(11, { ["provider"] = { "i", 34764 } } ),	-- Poached Nettlefish
+			crit(12, { ["provider"] = { "i", 34752 } } ),	-- Rhino Dogs
+			crit(13, { ["provider"] = { "i", 34751 } } ),	-- Roasted Worg
+			crit(14, { ["provider"] = { "i", 34761 } } ),	-- Sauteed Goby
+			crit(15, { ["provider"] = { "i", 34749 } } ),	-- Shoveltusk Steak
+			crit(16, { ["provider"] = { "i", 34759 } } ),	-- Smoked Rockfin
+			crit(17, { ["provider"] = { "i", 34763 } } ),	-- Smoked Salmon
+			crit(18, { ["provider"] = { "i", 43490 } } ),	-- Tasty Cupcake
+			crit(19, { ["provider"] = { "i", 34750 } } ),	-- Worm Delight
+			crit(20, { ["provider"] = { "i", 34753 } } ),	-- Great Feast
+			crit(21, { ["provider"] = { "i", 39520 } } ),	-- Kungaloosh
+			crit(22, { ["provider"] = { "i", 42999 } } ),	-- Blackened Dragonfin
+			crit(23, { ["provider"] = { "i", 42997 } } ),	-- Blackened Worg Steak
+			crit(24, { ["provider"] = { "i", 43004 } } ),	-- Critter Bites
+			crit(25, { ["provider"] = { "i", 42998 } } ),	-- Cuttlesteak
+			crit(26, { ["provider"] = { "i", 43000 } } ),	-- Dragonfin Filet
+			crit(27, { ["provider"] = { "i", 34767 } } ),	-- Firecracker Salmon
+			crit(28, { ["provider"] = { "i", 43015 } } ),	-- Fish Feast
+			crit(29, { ["provider"] = { "i", 43478 } } ),	-- Gigantic Feast
+			crit(30, { ["provider"] = { "i", 42995 } } ),	-- Hearty Rhino
+			crit(31, { ["provider"] = { "i", 34769 } } ),	-- Imperial Manta Steak
+			crit(32, { ["provider"] = { "i", 34754 } } ),	-- Mega Mammoth Meal
+			crit(33, { ["provider"] = { "i", 34758 } } ),	-- Mighty Rhino Dogs
+			crit(34, { ["provider"] = { "i", 34766 } } ),	-- Poached Northern Sculpin
+			crit(35, { ["provider"] = { "i", 42994 } } ),	-- Rhinolicious Wormsteak
+			crit(36, { ["provider"] = { "i", 43480 } } ),	-- Small Feast
+			crit(37, { ["provider"] = { "i", 42996 } } ),	-- Snapper Extreme
+			crit(38, { ["provider"] = { "i", 43005 } } ),	-- Spiced Mammoth Treats
+			crit(39, { ["provider"] = { "i", 34756 } } ),	-- Spiced Worm Burger
+			crit(40, { ["provider"] = { "i", 34768 } } ),	-- Spicy Blue Nettlefish
+			crit(41, { ["provider"] = { "i", 42993 } } ),	-- Spicy Fried Herring
+			crit(42, { ["provider"] = { "i", 34755 } } ),	-- Tender Shoveltusk Steak
+			crit(43, { ["provider"] = { "i", 43001 } } ),	-- Tracker Snacks
+			crit(44, { ["provider"] = { "i", 34757 } } ),	-- Very Burnt Worg
+			crit(45, { ["provider"] = { "i", 44953 } } ),	-- Worg Tartare
+		}),
+		ach(1778, {	-- The Northrend Gourmet (30)
+			-- Identical Criteria as Main Achievement
+			["sym"] = {{"select","achievementID",1779},{"pop"}},	-- The Northrend Gourmet (45)
+		}),
+		ach(1777, {	-- The Northrend Gourmet (15)
+			-- Identical Criteria as Main Achievement
+			["sym"] = {{"select","achievementID",1779},{"pop"}},	-- The Northrend Gourmet (45)
+		}),
+	})),
+	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+		ach(4916),	-- Cataclysmic Cook
+		ach(5845, {	-- A Bunch of Lunch
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				5842,	-- Let's Do Lunch: Darnassus
+				5841,	-- Let's Do Lunch: Ironforge
+				5475,	-- Let's Do Lunch: Orgrimmar
+				5474,	-- Let's Do Lunch: Stormwind
+				5843,	-- Let's Do Lunch: Thunder Bluff
+				5844,	-- Let's Do Lunch: Undercity
+			}},
+			["timeline"] = { ADDED_4_2_0 },
+		}),
+		ach(5779, {	-- You'll Feel Right as Rain
+			["cost"] = {{"i", 62680, 91}},	-- 91x Chocolate Cookie
+			["timeline"] = { ADDED_4_1_0 },
+		}),
+		ach(5473, {	-- The Cataclysmic Gourmet (30)
+			crit(1, { ["provider"] = { "i", 62790 } } ),	-- Darkbrew Lager
+			crit(2, { ["provider"] = { "i", 62673 } } ),	-- Feathered Lure
+			crit(3, { ["provider"] = { "i", 62676 } } ),	-- Blackened Surprise
+			crit(4, { ["provider"] = { "i", 62674 } } ),	-- Highland Spirits
+			crit(5, { ["provider"] = { "i", 62675 } } ),	-- Starfire Espresso
+			crit(6, { ["provider"] = { "i", 62655 } } ),	-- Broiled Mountain Trout
+			crit(7, { ["provider"] = { "i", 62654 } } ),	-- Lavascale Fillet
+			crit(8, { ["provider"] = { "i", 62651 } } ),	-- Lightly Fried Lurker
+			crit(9, { ["provider"] = { "i", 62657 } } ),	-- Lurker Lunch
+			crit(10, { ["provider"] = { "i", 62653 } } ),	-- Salted Eye
+			crit(11, { ["provider"] = { "i", 62652 } } ),	-- Seasoned Crab
+			crit(12, { ["provider"] = { "i", 62656 } } ),	-- Whitecrest Gumbo
+			crit(13, { ["provider"] = { "i", 62677 } } ),	-- Fish Fry
+			crit(14, { ["provider"] = { "i", 62659 } } ),	-- Hearty Seafood Soup
+			crit(15, { ["provider"] = { "i", 62660 } } ),	-- Pickled Guppy
+			crit(16, { ["provider"] = { "i", 62658 } } ),	-- Tender Baked Turtle
+			crit(17, { ["provider"] = { "i", 62680 } } ),	-- Chocolate Cookie
+			crit(18, { ["provider"] = { "i", 62661 } } ),	-- Baked Rockfish
+			crit(19, { ["provider"] = { "i", 62665 } } ),	-- Basilisk Liverdog
+			crit(20, { ["provider"] = { "i", 62670 } } ),	-- Beer-Basted Crocolisk
+			crit(21, { ["provider"] = { "i", 62668 } } ),	-- Blackbelly Sushi
+			crit(22, { ["provider"] = { "i", 62664 } } ),	-- Crocolisk Au Gratin
+			crit(23, { ["provider"] = { "i", 62666 } } ),	-- Delicious Sagefish Tail
+			crit(24, { ["provider"] = { "i", 62662 } } ),	-- Grilled Dragon
+			crit(25, { ["provider"] = { "i", 62663 } } ),	-- Lavascale Minestrone
+			crit(26, { ["provider"] = { "i", 62667 } } ),	-- Mushroom Sauce Mudfish
+			crit(27, { ["provider"] = { "i", 62671 } } ),	-- Severed Sagefish Head
+			crit(28, { ["provider"] = { "i", 62669 } } ),	-- Skewered Eel
+			crit(29, { ["provider"] = { "i", 62289 } } ),	-- Broiled Dragon Feast
+			crit(30, { ["provider"] = { "i", 62649 } } ),	-- Fortune Cookie
+			crit(31, { ["provider"] = { "i", 62290 } } ),	-- Seafood Magnifique Feast
+			crit(32, { ["provider"] = { "i", 62672 } } ),	-- South Island Iced Tea
+		}),
+		ach(5472, {	-- The Cataclysmic Gourmet (15)
+			-- Identical Criteria as Main Achievement
+			["sym"] = {{"select","achievementID",5473},{"pop"}},	-- The Cataclysmic Gourmet (30)
+		}),
+	})),
+	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+		ach(6365),	-- Zen Master Cook
+		ach(7306,  {	-- Master of Pandaren Cooking
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				7305,	-- Master of the Brew
+				7300,	-- Master of the Grill
+				7304,	-- Master of the Oven
+				7302,	-- Master of the Pot
+				7303,	-- Master of the Steamer
+				7301,	-- Master of the Wok
+			}},
+			["g"] = {
+				title(202),	-- <Name>, Master of the Ways
+			},
+		}),
+		ach(7305),		-- Master of the Brew
+		ach(7300),		-- Master of the Grill
+		ach(7304),		-- Master of the Oven
+		ach(7302),		-- Master of the Pot
+		ach(7303),		-- Master of the Steamer
+		ach(7301),		-- Master of the Wok
+		ach(7325,  {	-- Now I Am the Master
+			crit(1, {	-- Obtain the Cooking School Bell
+				["provider"] = { "i", 86425 },	-- Cooking School Bell
+			}),
+			crit(2, {	-- Train your student to become an Expert in Cooking (Exalted)
+				["minReputation"] = { 1357, EXALTED },	-- Nomi, Exalted
+			}),
+		}),
+		ach(7327, {	-- The Pandaren Gourmet (30)
+			crit(1, { ["provider"] = { "i", 86057 } } ),	-- Sliced Peaches
+			crit(2, { ["provider"] = { "i", 85504 } } ),	-- Krasarang Fritters
+			crit(3, { ["provider"] = { "i", 85501 } } ),	-- Viseclaw Soup
+			crit(4, { ["provider"] = { "i", 86026 } } ),	-- Perfectly Cooked Instant Noodles
+			crit(5, { ["provider"] = { "i", 81402 } } ),	-- Toasted Fish Jerky
+			crit(6, { ["provider"] = { "i", 81404 } } ),	-- Dried Needle Mushrooms
+			crit(7, { ["provider"] = { "i", 81400 } } ),	-- Pounded Rice Cake
+			crit(8, { ["provider"] = { "i", 81401 } } ),	-- Yak Cheese Curds
+			crit(9, { ["provider"] = { "i", 81403 } } ),	-- Dried Peaches
+			crit(10, { ["provider"] = { "i", 81405 } } ),	-- Boiled Silkworm Pupa
+			crit(11, { ["provider"] = { "i", 81406 } } ),	-- Roasted Barley Tea
+			crit(12, { ["provider"] = { "i", 74636 } } ),	-- Golden Carp Consomme
+			crit(13, { ["provider"] = { "i", 74641 } } ),	-- Fish Cake
+			crit(14, { ["provider"] = { "i", 81410 } } ),	-- Green Curry Fish
+			crit(15, { ["provider"] = { "i", 81412 } } ),	-- Blanched Needle Mushrooms
+			crit(16, { ["provider"] = { "i", 81408 } } ),	-- Red Bean Bun
+			crit(17, { ["provider"] = { "i", 81409 } } ),	-- Tangy Yogurt
+			crit(18, { ["provider"] = { "i", 81411 } } ),	-- Peach Pie
+			crit(19, { ["provider"] = { "i", 81413 } } ),	-- Skewered Peanut Chicken
+			crit(20, { ["provider"] = { "i", 81414 } } ),	-- Pearl Milk Tea
+			crit(21, { ["provider"] = { "i", 86069 } } ),	-- Rice Pudding
+			crit(22, { ["provider"] = { "i", 86070 } } ),	-- Wildfowl Ginseng Soup
+			crit(23, { ["provider"] = { "i", 86074 } } ),	-- Spicy Vegetable Chips
+			crit(24, { ["provider"] = { "i", 86073 } } ),	-- Spicy Salmon
+			crit(25, { ["provider"] = { "i", 74643 } } ),	-- Sauteed Carrots
+			crit(26, { ["provider"] = { "i", 74647 } } ),	-- Valley Stir Fry
+			crit(27, { ["provider"] = { "i", 74648 } } ),	-- Sea Mist Rice Noodles
+			crit(28, { ["provider"] = { "i", 75026 } } ),	-- Ginseng Tea
+			crit(29, { ["provider"] = { "i", 75037 } } ),	-- Jade Witch Brew
+			crit(30, { ["provider"] = { "i", 75038 } } ),	-- Mad Brewer's Breakfast
+			crit(31, { ["provider"] = { "i", 74644 } } ),	-- Swirling Mist Soup
+			crit(32, { ["provider"] = { "i", 74649 } } ),	-- Braised Turtle
+			crit(33, { ["provider"] = { "i", 74650 } } ),	-- Mogu Fish Stew
+			crit(34, { ["provider"] = { "i", 74651 } } ),	-- Shrimp Dumplings
+			crit(35, { ["provider"] = { "i", 74652 } } ),	-- Fire Spirit Salmon
+			crit(36, { ["provider"] = { "i", 74653 } } ),	-- Steamed Crab Surprise
+			crit(37, { ["provider"] = { "i", 74654 } } ),	-- Wildfowl Roast
+			crit(38, { ["provider"] = { "i", 74655 } } ),	-- Twin Fish Platter
+			crit(39, { ["provider"] = { "i", 74656 } } ),	-- Chun Tian Spring Rolls
+			crit(40, { ["provider"] = { "i", 74642 } } ),	-- Charbroiled Tiger Steak
+			crit(41, { ["provider"] = { "i", 74645 } } ),	-- Eternal Blossom Fish
+			crit(42, { ["provider"] = { "i", 74646 } } ),	-- Black Pepper Ribs and Shrimp
+		}),
+		ach(7326, {	-- The Pandaren Gourmet (15)
+			-- Identical Criteria as Main Achievement
+			["sym"] = {{"select","achievementID",7327},{"pop"}},	-- The Pandaren Gourmet (30)
+		}),
+	})),
+	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+		ach(9500),	-- Draenor Cook
+		ach(9501, {	-- The Draenor Gourmet
+			crit(1, { ["provider"] = { "i", 111449 } } ),	-- Blackrock Barbecue
+			crit(2, { ["provider"] = { "i", 111433 } } ),	-- Blackrock Ham
+			crit(3, { ["provider"] = { "i", 111436 } } ),	-- Braised Riverbeast
+			crit(4, { ["provider"] = { "i", 111453 } } ),	-- Calamari Crepes
+			crit(5, { ["provider"] = { "i", 111438 } } ),	-- Clefthoof Sausages
+			crit(6, { ["provider"] = { "i", 111444 } } ),	-- Fat Sleeper Cakes
+			crit(7, { ["provider"] = { "i", 111457 } } ),	-- Feast of Blood
+			crit(8, { ["provider"] = { "i", 111458 } } ),	-- Feast of the Waters
+			crit(9, { ["provider"] = { "i", 111445 } } ),	-- Fiery Calamari
+			crit(10, { ["provider"] = { "i", 111450 } } ),	-- Frosty Stew
+			crit(11, { ["provider"] = { "i", 111454 } } ),	-- Gorgrond Chowder
+			crit(12, { ["provider"] = { "i", 111441 } } ),	-- Grilled Gulper
+			crit(13, { ["provider"] = { "i", 111456 } } ),	-- Grilled Saberfish
+			crit(14, { ["provider"] = { "i", 111431 } } ),	-- Hearty Elekk Steak
+			crit(15, { ["provider"] = { "i", 111434 } } ),	-- Pan-Seared Talbuk
+			crit(16, { ["provider"] = { "i", 111437 } } ),	-- Rylak Crepes
+			crit(17, { ["provider"] = { "i", 111455 } } ),	-- Saberfish Broth
+			crit(18, { ["provider"] = { "i", 111446 } } ),	-- Skulker Chowder
+			crit(19, { ["provider"] = { "i", 111452 } } ),	-- Sleeper Surprise
+			crit(20, { ["provider"] = { "i", 111439 } } ),	-- Steamed Scorpion
+			crit(21, { ["provider"] = { "i", 111442 } } ),	-- Sturgeon Stew
+			crit(22, { ["provider"] = { "i", 111447 } } ),	-- Talador Surf and Turf
+		}),
+	})),
+	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+		ach(10589),	-- Legion Cook
+		ach(10593, {	-- Everything Tastes Better
+			["cost"] = {{"i", 133681, 6}},	-- 6x Crispy Bacon
+		}),
+		ach(10592, {	-- Never A Day's Rest
+			["provider"] = { "n", 101846 },	-- Nomi
+			["coords"] = {
+				{ 69.8, 38.6, LEGION_DALARAN },
+				{ 40.2, 65.8, LEGION_DALARAN },
+			},
+		}),
+		ach(10762, {	-- The Legion Menu
+			crit(1, { ["provider"] = { "i", 133557 } } ),	-- Salt and Pepper Shank
+			crit(2, { ["provider"] = { "i", 133561 } } ),	-- Deep-Fried Mossgill
+			crit(3, { ["provider"] = { "i", 133562 } } ),	-- Pickled Stormray
+			crit(4, { ["provider"] = { "i", 133563 } } ),	-- Faronaar Fizz
+			crit(5, { ["provider"] = { "i", 133564 } } ),	-- Spiced Rib Roast
+			crit(6, { ["provider"] = { "i", 133565 } } ),	-- Leybeque Ribs
+			crit(7, { ["provider"] = { "i", 133566 } } ),	-- Suramar Surf and Turf
+			crit(8, { ["provider"] = { "i", 133567 } } ),	-- Barracuda Mrglgagh
+			crit(9, { ["provider"] = { "i", 133568 } } ),	-- Koi-Scented Stormray
+			crit(10, { ["provider"] = { "i", 133569 } } ),	-- Drogbar-Style Salmon
+			crit(11, { ["provider"] = { "i", 133570 } } ),	-- The Hungry Magister
+			crit(12, { ["provider"] = { "i", 133571 } } ),	-- Azshari Salad
+			crit(13, { ["provider"] = { "i", 133572 } } ),	-- Nightborne Delicacy Platter
+			crit(14, { ["provider"] = { "i", 133573 } } ),	-- Seed-Battered Fish Plate
+			crit(15, { ["provider"] = { "i", 133574 } } ),	-- Fishbrul Special
+			crit(16, { ["provider"] = { "i", 133575 } } ),	-- Dried Mackerel Strips
+			crit(17, { ["provider"] = { "i", 133576 } } ),	-- Bear Tartare
+			crit(18, { ["provider"] = { "i", 133577 } } ),	-- Fighter Chow
+			crit(19, { ["provider"] = { "i", 133578 } } ),	-- Hearty Feast
+			crit(20, { ["provider"] = { "i", 133579 } } ),	-- Lavish Suramar Feast
+			crit(21, { ["provider"] = { "i", 133681 } } ),	-- Crispy Bacon
+		}),
+	})),
+	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+		ach(12742, {	-- Kul Tiran Cook (A)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		ach(12743, {	-- Zandalari Cook (H)
+			["races"] = HORDE_ONLY,
+		}),
+		ach(12747, {	-- Catering for Combat
+			["cost"] = {
+				{ "i", 156525, 50 },	-- 50x Galley Banquet
+				{ "i", 156526, 50 },	-- 50x Bountiful Captain's Feast
+				-- #if AFTER 8.1.0
+				{ "i", 166240, 50 },	-- 50x Sanguinated Feast
+				-- #endif
+				-- #if AFTER 8.2.0
+				{ "i", 168315, 50 },	-- 50x Famine Evaluator And Snack Table
+				-- #endif
+			},
+		}),
+		ach(12744, {	-- The Kul Tiran Menu
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				crit(1, { ["provider"] = { "i", 156526 } } ),	-- Bountiful Captain's Feast
+				crit(2, { ["provider"] = { "i", 156525 } } ),	-- Galley Banquet
+				crit(3, { ["provider"] = { "i", 154889 } } ),	-- Grilled Catfish
+				crit(4, { ["provider"] = { "i", 154882 } } ),	-- Honey-Glazed Haunches
+				crit(5, { ["provider"] = { "i", 154881 } } ),	-- Kul Tiramisu
+				crit(6, { ["provider"] = { "i", 154887 } } ),	-- Loa Loaf
+				crit(7, { ["provider"] = { "i", 154885 } } ),	-- Mon'Dazi
+				crit(8, { ["provider"] = { "i", 154883 } } ),	-- Ravenberry Tarts
+				crit(9, { ["provider"] = { "i", 154888 } } ),	-- Sailor's Pie
+				crit(10, { ["provider"] = { "i", 154891 } } ),	-- Seasoned Loins
+				crit(11, { ["provider"] = { "i", 154886 } } ),	-- Spiced Snapper
+				crit(12, { ["provider"] = { "i", 154884 } } ),	-- Swamp Fish 'n Chips
+			},
+		}),
+		ach(12746, {	-- The Zandalari Menu
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				crit(1, { ["provider"] = { "i", 156526 } } ),	-- Bountiful Captain's Feast
+				crit(2, { ["provider"] = { "i", 156525 } } ),	-- Galley Banquet
+				crit(3, { ["provider"] = { "i", 154889 } } ),	-- Grilled Catfish
+				crit(4, { ["provider"] = { "i", 154882 } } ),	-- Honey-Glazed Haunches
+				crit(5, { ["provider"] = { "i", 154881 } } ),	-- Kul Tiramisu
+				crit(6, { ["provider"] = { "i", 154887 } } ),	-- Loa Loaf
+				crit(7, { ["provider"] = { "i", 154885 } } ),	-- Mon'Dazi
+				crit(8, { ["provider"] = { "i", 154883 } } ),	-- Ravenberry Tarts
+				crit(9, { ["provider"] = { "i", 154888 } } ),	-- Sailor's Pie
+				crit(10, { ["provider"] = { "i", 154891 } } ),	-- Seasoned Loins
+				crit(11, { ["provider"] = { "i", 154886 } } ),	-- Spiced Snapper
+				crit(12, { ["provider"] = { "i", 154884 } } ),	-- Swamp Fish 'n Chips
+			},
+		}),
+	})),
+	tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+		ach(14332),	-- Shadowlands Cook
+	})),
+	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		ach(16631),	-- Dragon Isles Cook
+	})),
+});
+
+
+
+-- #if ANYCLASSIC
 profession(COOKING, {
 	tier(CLASSIC_TIER, {
 		{
@@ -2697,3 +3145,4 @@ root(ROOTS.NeverImplemented, {
 		-- #endif
 	}),
 });
+-- #endif
