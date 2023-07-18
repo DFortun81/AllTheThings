@@ -294,6 +294,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(207987),	-- Borrowed Time
 						})),
 						i(208216, {	-- Reins of the Quantum Courser
+							["description"] = "Turns into one (1) unlearned Dungeon Mount, including the Infinite Timereaver, from before Dragonflight.",
 							["sym"] = {{"select","itemID",
 								-- Dungeon
 								68823,	-- Armored Razzashi Raptor
@@ -332,46 +333,113 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						-- Raid Items from Classic till SL
 						i(208064, {	-- Quantum Chestpiece
 							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***",
+							["groups"] = {
+								-- Cloth
+								i(2114),	-- Snowy Robe	(Removed)
+								-- Leather
+								-- Mail
+								-- Plate
+							},
 						}),
 						i(208063, {	-- Quantum Gloves
 							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***",
+							["groups"] = {
+								-- Cloth
+								-- Leather
+								-- Mail
+								-- Plate
+							},
 						}),
 						i(208061, {	-- Quantum Headpiece
 							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***",
+							["groups"] = {
+								-- Cloth
+								-- Leather
+								-- Mail
+								-- Plate
+							},
 						}),
 						i(208065, {	-- Quantum Legs
 							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***",
+							["groups"] = {
+								-- Cloth
+								-- Leather
+								-- Mail
+								-- Plate
+							},
 						}),
 						i(208062, {	-- Quantum Shoulders
 							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***",
+							["groups"] = {
+								-- Cloth
+								-- Leather
+								-- Mail
+								-- Plate
+								i(103785),	-- Tusks of Mannoroth Heroic		(Removed)
+							},
 						}),
 						n(WEAPONS, sharedData({ ["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).***\n\n|cFFFFD700If you get an Item which is removed from the game, please let us know in the Discord.|r***" }, {
-							i(208111),	-- Quantum Axe
-							i(208117),	-- Quantum Bow
-							i(208118),	-- Quantum Crossbow
-							i(208119),	-- Quantum Firearm
+							i(208111, {	-- Quantum Axe
+							}),
+							i(208117, {	-- Quantum Bow
+							}),
+							i(208118, {	-- Quantum Crossbow
+							}),
+							i(208119, {	-- Quantum Firearm
+							}),
 							i(208125, {	-- Quantum Focus
 							--	i(78433),	-- Ledger of Revolting Rituals (DS Heroic)
 							}),
-							i(208113),	-- Quantum Greataxe
-							i(208114),	-- Quantum Greathammer
+							i(208113, {	-- Quantum Greataxe
+								i(33769),	-- Arcanite Ripper					(BMAH)	
+								i(44924),	-- Sun Lute							(BMAH)	
+								
+								i(134717),	-- Cold-Touched Decapitator			(Never added)
+								i(108046),	-- Draenic Steel War Axe			(Never added)
+								i(108228),	-- Peerless Draenic Steel War Axe	(Never added) 
+								i(115293),	-- Spectral Greataxe				(Never added)
+								i(134577),	-- Vanguard Decapitator				(Never added)
+								
+								i(2015),	-- Black Metal War Axe				(Removed)
+								i(2227),	-- Heavy Ogre War Axe 				(Removed)
+								i(1220),	-- Lupine Axe						(Removed)
+								i(756),		-- Tunnel Pick 						(Removed)
+								i(3325),	-- Vile Fin Battle Axe				(Removed)
+								i(23171),	-- The Axe of Severing				(Removed)
+								
+								i(189996),	-- Elegantly Balanced Axe			(Unique NYI)
+								
+								i(9425),	-- Pendumlum of Doom				(Very Rare BoE)
+							}),
+							i(208114, {	-- Quantum Greathammer
+								i(2254),	-- Icepane Warhammer				(Removed)
+							}),
 							i(208112, {	-- Quantum Greatsword
 								-- CA IS NOT POSSIBLE -- Gold 13.07.2023
-								i(1387),	-- Ghoulfang (Removed)
-								i(16039),	-- Ta'Kierthan Songblade (Removed)
-								i(2754),	-- Tarnished Bastard Sword (Removed)
+								i(1387),	-- Ghoulfang						(Removed)
+								i(16039),	-- Ta'Kierthan Songblade			(Removed)
+								i(2754),	-- Tarnished Bastard Sword			(Removed)
 							}),
-							i(208120),	-- Quantum Knife
-							i(208121),	-- Quantum Knuckles
-							i(208110),	-- Quantum Mace
-							i(208116),	-- Quantum Polearm
-							i(208126),	-- Quantum Shield
+							i(208120, {	-- Quantum Knife
+							}),
+							i(208121, {	-- Quantum Knuckles
+							}),
+							i(208110, {	-- Quantum Mace
+							}),
+							i(208116, {	-- Quantum Polearm
+							}),
+							i(208126, {	-- Quantum Shield
+								i(134803),	-- Seasoned Redoubt 				(Removed)
+							}),
 							i(208115, {	-- Quantum Staff
-								i(2280),	-- Kam's Walking Stick (Removed)
-								i(115298),	-- Spectral Spire (NY)
+								i(115298),	-- Spectral Spire 					(Never added)
+							
+								i(2280),	-- Kam's Walking Stick				(Removed)
 							}),
-							i(208109),	-- Quantum Sword
-							i(208122),	-- Quantum Warglaives
+							i(208109, {	-- Quantum Sword
+							}),
+							i(208122, {	-- Quantum Warglaives
+							}),
 							i(208123),	-- Quantum Wand
 						})),
 					},
