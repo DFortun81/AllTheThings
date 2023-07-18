@@ -511,6 +511,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["g"] = {
+						i(202690),	-- Decorative Shrubbery
+						i(202400),	-- Soothing Incense
+						i(202399),	-- Stuffed Doll
+					},
 				}),
 				q(73135, {	-- Obsidian Obfuscation
 					["sourceQuests"] = { 72459 },	-- What's a Duck?

@@ -404,9 +404,6 @@ root(ROOTS.Unsorted, {
 			i(202340),	-- Laydia's Flower Petals
 			i(202342),	-- Luggage Key
 			i(202363),	-- Survey Arc Device
-			i(202399),	-- Stuffed Doll
-			i(202400),	-- Soothing Incense
-			i(202690),	-- Decorative Shrubbery
 			i(204275),	-- Slimey Key
 			i(204895),	-- Storm-touched Missive Stone [DNT]
 			i(204983),	-- Primalist Dropbox Key [DNT]
