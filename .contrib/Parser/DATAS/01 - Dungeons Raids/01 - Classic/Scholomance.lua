@@ -1083,8 +1083,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			-- #endif
 		},
 	}),
-	-- Listed under Worldevent>Scourge>
 	-- n(14695),	-- Lord Blackwood
+	-- Listed under Worldevent>Scourge>
 });
 
 -- #if BEFORE 5.0.4
