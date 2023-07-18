@@ -646,11 +646,10 @@ root(ROOTS.Zones, {
 					}),
 					 applyclassicphase(TBC_PHASE_ONE, achWithReps(1205, { 932, 934 }, {	-- Hero of Shattrath
 						-- #if BEFORE WRATH
-						["cost"] = {
-							{ "i", 31779, 1 },	-- Aldor Tabard
-							{ "i", 31780, 1 },	-- Scryers Tabard
+						["providers"] = {
+							{ "i", 31779 },	-- Aldor Tabard
+							{ "i", 31780 },	-- Scryers Tabard
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_ITEM_COSTS]],
 						["description"] = "Gained exalted status with The Scryers and The Aldor.\n\nNOTE: This can be accomplished now by learning both faction's Exalted recipes, their tabards, or their equipment that require Exalted reputation to buy. For the sake of simplicity, just buy both tabards as this will also count toward the 25 tabard achievement later.\n\nWARNING: You must maintain at least one of these requirements in order to acquire the achievement with prepatch!",
 						-- #endif
 					})),
