@@ -136,13 +136,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						ach(2359, {	-- Swift Flight Form
 							["sourceQuest"] = 11001,	-- Vanquish the Raven God
+							-- #if BEFORE WRATH
+							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
+							-- #endif
 							["timeline"] = { "removed 4.0.1" },
 							["classes"] = { DRUID },
 							["filterID"] = MOUNTS,
-							-- #if BEFORE WRATH
-							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
-							-- #endif
 						}),
 						-- #if BEFORE 4.0.1
 						recipe(40120),	-- Swift Flight Form
@@ -206,7 +205,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						ach(653, {	-- Sethekk Halls
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10098,	-- Terokk's Legacy
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(27986),	-- Crow Wing Reaper
@@ -296,11 +294,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["groups"] = {
 							ach(883, {	-- Reins of the Raven Lord
 								["provider"] = { "i", 32768 },	-- Reins of the Raven Lord
-								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Reins of the Raven Lord from Anzu in Sethekk Halls.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["filterID"] = MOUNTS,
 							}),
 							i(32768),	-- Raven Lord (MOUNT!)
 							i(32781),	-- Talon of Anzu

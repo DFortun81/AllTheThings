@@ -1078,11 +1078,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			n(ZONE_DROPS, {
 				ach(424, {	-- Why? Because It's Red
 					["provider"] = { "i", 21321 },	-- Red Qiraji Resonating Crystal
-					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Red Qiraji Resonating Crystal.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["filterID"] = MOUNTS,
 				}),
 				i(21218),	-- Blue Qiraji Battle Tank (MOUNT!)
 				i(21323),	-- Green Qiraji Battle Tank (MOUNT!)
@@ -1515,7 +1514,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					ach(687, {	-- Temple of Ahn'Qiraj
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 8801,	-- C'Thun's Legacy
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5058, {	-- Temple of Ahn'Qiraj Guild Run

@@ -97,7 +97,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Bloodsail Admiral's Hat... and try to get some fresh air every now and then.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 					["groups"] = {
 						title(111, {	-- Bloodsail Admiral <Name>
@@ -121,7 +120,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #if BEFORE WRATH
 					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]],
+					["AllSourceQuestsRequiredForAchievement"] = true,
 					-- #endif
 				}),
 			}),
@@ -386,7 +385,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 19024 },	-- Arena Grand Master
 							-- #if BEFORE WRATH
 							["description"] = "Complete Short John Mithril's quest to obtain the Arena Grand Master trinket. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
 						}),
 						i(19024),	-- Arena Grand Master

@@ -223,7 +223,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					ach(694, {	-- Serpentshrine Cavern
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 10445,	-- The Vials of Eternity
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5088, {	-- Serpentshrine Cavern Guild Run

@@ -202,7 +202,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								9575,	-- Weaken the Ramparts
 								9572,	-- Weaken the Ramparts
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(24069),	-- Crystalfire Staff

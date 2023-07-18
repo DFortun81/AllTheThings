@@ -65,11 +65,10 @@ applyclassicphase(PHASE_SIX,
 									{ "i", 22630 },	-- Atiesh, Greatstaff of the Guardian (Warlock)
 									{ "i", 22632 },	-- Atiesh, Greatstaff of the Guardian (Druid)
 								},
-								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 								-- #if BEFORE WRATH
 								["description"] = "Wielder of Atiesh, Greatstaff of the Guardian.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 							}),
 							q(9251, {	-- Atiesh, the Befouled Greatstaff
 								["qg"] = 15192,	-- Anachronos

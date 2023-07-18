@@ -200,7 +200,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						ach(661, {	-- Magister's Terrace
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 11492,	-- Hard to Kill
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(35504),	-- Phoenix Hatchling (PET!)
@@ -325,11 +324,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 							}),
 							ach(884, {	-- Swift White Hawkstrider
 								["provider"] = { "i", 35513 },	-- Swift White Hawkstrider
-								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Swift White Hawkstrider from Kael'thas in Magister's Terrace.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["filterID"] = MOUNTS,
 							}),
 							i(35513),	-- Swift White Hawkstrider (MOUNT!)
 							i(35504),	-- Phoenix Hatchling (PET!)

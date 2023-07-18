@@ -521,9 +521,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		ach(1705, {	-- Clockwork Rocket Bot (2007)
 			["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
 			["timeline"] = { "added 2.3.0.7561" },
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
-			-- #endif
 		}),
 		ach(1706, {	-- Crashin' Thrashin' Racer (2008)
 			["provider"] = { "i", 37710 },	-- Crashin' Thrashin' Racer Controller

@@ -1276,12 +1276,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 			n(11382, {	-- Bloodlord Mandokir
 				ach(881, {	-- Swift Razzashi Raptor
 					["provider"] = { "i", 19872 },	-- Swift Razzashi Raptor
-					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
-					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+					["filterID"] = MOUNTS,
 				}),
 				i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
 					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
@@ -1424,12 +1423,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 			n(14509, {	-- High Priest Thekal
 				ach(880, {	-- Swift Zulian Tiger
 					["provider"] = { "i", 19902 },	-- Swift Zulian Tiger
-					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
-					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+					["filterID"] = MOUNTS,
 				}),
 				i(19902, {	-- Swift Zulian Tiger (MOUNT!)
 					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
@@ -1505,7 +1503,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					-- #if BEFORE WRATH
 					["description"] = "Defeat Hakkar and deliver his Heart to the Zandalari.",
 					["sourceQuest"] = 8183,	-- The Heart of Hakkar
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 				}),
 				i(19802),	-- Heart of Hakkar

@@ -223,12 +223,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				ach(3356, {	-- Winterspring Frostsaber
 					["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
-					["races"] = ALLIANCE_ONLY,
-					["f"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Winterspring Frosaber.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["f"] = MOUNTS,
 				}),
 				-- #endif
 				ach(4940, {	-- Winterspring Quests
@@ -2316,12 +2315,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE CATA
 						ach(3356, {	-- Winterspring Frostsaber
 							["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
-							["races"] = ALLIANCE_ONLY,
-							["f"] = MOUNTS,
 							-- #if BEFORE WRATH
 							["description"] = "Obtain a Winterspring Frosaber.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
+							["races"] = ALLIANCE_ONLY,
+							["f"] = MOUNTS,
 						}),
 						-- #endif
 						i(13086),	-- Winterspring Frostsaber (MOUNT!)

@@ -2172,7 +2172,6 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 38082 },	-- "Gigantique" Bag
 								-- #if BEFORE WRATH
 								["description"] = "Equip Haris Pilton's \"Gigantique\" Bag.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
 							}),
 							i(38082, {	-- "Gigantique" Bag

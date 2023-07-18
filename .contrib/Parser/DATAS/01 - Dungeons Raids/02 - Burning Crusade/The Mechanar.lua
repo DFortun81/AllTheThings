@@ -141,7 +141,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						ach(658, {	-- The Mechanar
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(28288),	-- Abacus of Violent Odds

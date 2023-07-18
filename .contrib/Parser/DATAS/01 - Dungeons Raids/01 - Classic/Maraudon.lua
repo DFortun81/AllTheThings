@@ -510,7 +510,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 									7065,	-- Corruption of Earth and Seed
 									7064,	-- Corruption of Earth and Seed
 								},
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5049, {	-- Maraudon Guild Run

@@ -298,7 +298,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 							-- #if BEFORE WRATH
 							["description"] = "Completed the Dreadsteed of Xoroth warlock quest.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 							["classes"] = { WARLOCK },

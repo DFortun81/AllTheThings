@@ -40,7 +40,6 @@ root(ROOTS.WorldEvents, n(THE_OPENING_OF_THE_DARK_PORTAL,
 						["provider"] = { "i", 28788 },	-- Tabard of the Protector
 						-- #if BEFORE WRATH
 						["description"] = "Obtained a Tabard of the Protector from the Dark Portal event.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
 					}),
 					i(28788),	-- Tabard of the Protector

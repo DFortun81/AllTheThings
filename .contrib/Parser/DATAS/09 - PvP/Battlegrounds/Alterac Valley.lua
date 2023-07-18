@@ -194,7 +194,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["provider"] = { "i", 19029 },	-- Horn of the Frostwolf Howler
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Frostwolf Howler from Alterac Valley.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["filterID"] = MOUNTS,
@@ -203,7 +202,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["provider"] = { "i", 19030 },	-- Stormpike Battle Charger
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Stormpike Battle Charger from Alterac Valley.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["filterID"] = MOUNTS,

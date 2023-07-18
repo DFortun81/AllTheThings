@@ -188,7 +188,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						ach(652, {	-- The Escape From Durnholde
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10284,	-- Escape from Durnholde
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						-- #if AFTER 7.3.5

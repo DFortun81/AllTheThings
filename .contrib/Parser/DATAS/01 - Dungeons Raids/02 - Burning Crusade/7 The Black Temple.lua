@@ -46,9 +46,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["groups"] = {
 						ach(431, {	-- Hand of A'dal (Achievement)
 							["sourceQuest"] = 10985,	-- A Distraction for Akama
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
-							-- #endif
 							["timeline"] = { "removed 3.0.1" },
 						}),
 						title(39, {	-- Hand of A'dal
@@ -443,7 +440,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							ach(697, {	-- The Black Temple
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10959,	-- The Fall of the Betrayer
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5091, {	-- The Black Temple Guild Run

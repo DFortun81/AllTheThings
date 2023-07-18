@@ -386,7 +386,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(630, {	-- Wailing Caverns
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 6981,	-- The Glowing Shard
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5039, {	-- Wailing Caverns Guild Run

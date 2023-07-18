@@ -66,7 +66,6 @@ root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(THE_SCOU
 					["provider"] = { "i", 22999 },	-- Tabard of the Argent Dawn
 					-- #if BEFORE WRATH
 					["description"] = "Obtained a Tabard of the Argent Dawn from the Scourge Invasion event.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					["timeline"] = { "removed 3.0.2" },
 					-- #endif
 				}),
@@ -852,7 +851,6 @@ root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(THE_SCOU
 						["provider"] = { "i", 38658 },	-- Vampiric Batling Pet
 						-- #if BEFORE WRATH
 						["description"] = "Slew Prince Tenris Mirkblood and acquired his Vampiric Batling pet.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, "removed 3.0.2" },
 						-- #else
 						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },

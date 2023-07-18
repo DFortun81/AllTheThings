@@ -242,7 +242,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								10095,	-- Into the Heart of the Labyrinth
 								10885,	-- Trial of the Naaru: Strength
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(27903),	-- Sonic Spear
@@ -338,7 +337,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							ach(675, {	-- Heroic: Shadow Labyrinth
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5075, {	-- Heroic: Shadow Labyrinth Guild Run

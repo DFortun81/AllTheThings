@@ -437,7 +437,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							6522,	-- An Unholy Alliance
 							1101,	-- The Crone of the Kraul
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5043, {	-- Razorfen Kraul Guild Run

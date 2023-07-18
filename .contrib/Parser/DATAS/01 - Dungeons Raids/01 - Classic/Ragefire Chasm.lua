@@ -414,7 +414,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(629, {	-- Ragefire Chasm
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 5761,	-- Slaying the Beast
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = HORDE_ONLY,
 						-- #endif
 					}),

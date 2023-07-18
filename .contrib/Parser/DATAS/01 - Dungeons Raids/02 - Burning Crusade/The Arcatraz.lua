@@ -215,7 +215,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								10882,	-- Harbinger of Doom
 								10886,	-- Trial of the Naaru: Tenacity
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						-- #if BEFORE 7.3.5
@@ -339,7 +338,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							ach(681, {	-- Heroic: The Arcatraz
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10886,	-- Trial of the Naaru: Tenacity
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5081, {	-- Heroic: The Arcatraz Guild Run

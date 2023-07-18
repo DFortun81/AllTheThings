@@ -788,7 +788,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(641, {	-- Sunken Temple
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 3373,	-- The Essence of Eranikus
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5050, {	-- Sunken Temple Guild Run

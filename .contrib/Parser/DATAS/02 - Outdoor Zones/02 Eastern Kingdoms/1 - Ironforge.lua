@@ -90,12 +90,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(TBC_PHASE_ONE, ach(1837, {	-- Old Ironjaw
 					["provider"] = { "i", 34484 },	-- Old Ironjaw
-					["timeline"] = { "added 2.0.1" },
-					["requireSkill"] = FISHING,
 					-- #if BEFORE WRATH
 					["description"] = "Fish up Old Ironjaw in Ironforge.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["timeline"] = { "added 2.0.1" },
+					["requireSkill"] = FISHING,
 				})),
 			}),
 			battlepets({

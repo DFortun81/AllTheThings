@@ -133,7 +133,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								9836,	-- The Master's Touch
 								10297,	-- The Opening of the Dark Portal
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(28188),	-- Bloodfire Greatstaff

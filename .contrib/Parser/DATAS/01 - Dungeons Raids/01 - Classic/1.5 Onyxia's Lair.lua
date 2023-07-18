@@ -477,7 +477,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								7495,	-- Victory for the Alliance
 								7490,	-- Victory for the Horde
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(18423, {	-- Head of Onyxia (A)

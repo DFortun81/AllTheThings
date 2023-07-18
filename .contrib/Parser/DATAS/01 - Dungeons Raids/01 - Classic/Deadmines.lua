@@ -588,7 +588,6 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 							166,	-- The Defias Brotherhood (7/7)
 							373,	-- The Unsent Letter
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = ALLIANCE_ONLY,
 						-- #endif
 					}),

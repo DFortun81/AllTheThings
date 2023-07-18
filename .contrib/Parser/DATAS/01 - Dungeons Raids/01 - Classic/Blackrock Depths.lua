@@ -2878,7 +2878,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								4362,	-- The Fate of the Kingdom
 								4003,	-- The Royal Rescue
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						ach(5051, {	-- Blackrock Depths Guild Run

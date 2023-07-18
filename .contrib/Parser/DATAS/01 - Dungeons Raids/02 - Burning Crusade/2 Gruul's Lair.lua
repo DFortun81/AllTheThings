@@ -36,7 +36,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					ach(692, {	-- Gruul's Lair
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 10901,	-- The Cudgel of Kar'desh
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5086, {	-- Gruul's Lair Guild Run

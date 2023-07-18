@@ -1500,12 +1500,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						ach(3357, {	-- Venomhide Ravasaur
 							["provider"] = { "i", 46102 },	-- Whistle of the Venomhide Ravasaur
 							["timeline"] = { "added 3.2.0.10026" },
-							["races"] = HORDE_ONLY,
-							["f"] = MOUNTS,
 							-- #if BEFORE WRATH
 							["description"] = "Obtain a Venomhide Ravasaur.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
+							["races"] = HORDE_ONLY,
+							["f"] = MOUNTS,
 						}),
 						i(46102, {	-- Venomhide Ravasaur (MOUNT!)
 							["timeline"] = { "added 3.2.0.10026" },

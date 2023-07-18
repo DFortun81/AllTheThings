@@ -209,7 +209,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						ach(650, {	-- Underbog
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 9719,	-- Stalk the Stalker
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						-- #if AFTER 7.3.5

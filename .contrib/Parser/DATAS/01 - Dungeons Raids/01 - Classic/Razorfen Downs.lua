@@ -381,7 +381,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							3636,	-- Bring the Light
 							3341,	-- Bring the End
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5045, {	-- Razorfen Downs Guild Run

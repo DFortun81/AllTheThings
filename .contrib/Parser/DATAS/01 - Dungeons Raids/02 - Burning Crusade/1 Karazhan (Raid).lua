@@ -711,11 +711,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(23809),	-- Schematic: Stabilized Eternium Scope
 					ach(882, {	-- Fiery Warhorse's Reins
 						["provider"] = { "i", 30480 },	-- Fiery Warhorse's Reins
-						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain the Fiery Warhorse's Reins from Attumen the Huntsman in Karazhan.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
+						["filterID"] = MOUNTS,
 					}),
 					i(30480),	-- Fiery Warhorse (MOUNT!)
 					i(28504),	-- Steelhawk Crossbow
@@ -1014,7 +1013,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					ach(690, {	-- Karazhan
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 9844,	-- A Demonic Presence
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5084, {	-- Karazhan Guild Run

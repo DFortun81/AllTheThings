@@ -2645,7 +2645,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 34486 },	-- Old Crafty
 					-- #if BEFORE WRATH
 					["description"] = "Fish up Old Crafty in Orgrimmar.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 					["requireSkill"] = FISHING,
 				})),

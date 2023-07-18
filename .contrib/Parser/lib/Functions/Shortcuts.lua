@@ -465,7 +465,7 @@ writ = function(item)									-- Assign a Champion's Writ cost to an item with p
 	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
 
--- SHORTCUTS for Object Class Types
+-- Achievement Shortcuts
 ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	if t or type(altID) == "number" then
 		t = struct("allianceAchievementID", id, t or {});
@@ -473,10 +473,27 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	else
 		t = struct("achievementID", id, altID);
 	end
+	
+	-- #if BEFORE WRATH
+	-- These are helper variables (capitalized for a reason)
+	local AllProvidersRequiredForAchievement = t.AllProvidersRequiredForAchievement;
+	t.AllProvidersRequiredForAchievement = nil;
+	local AllSourceQuestsRequiredForAchievement = t.AllSourceQuestsRequiredForAchievement;
+	t.AllSourceQuestsRequiredForAchievement = nil;
+	if not t.OnUpdate then
+		if t.providers then
+			-- A lot of achievements are proc'd by having an item, quests with providers on them pretty much guarantee it works.
+			t.OnUpdate = AllProvidersRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]] or [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]];
+		elseif t.sourceQuests then
+			-- For Classic, we can detect if you've completed an achievement if there's a quest that involves killing the mob in question.
+			t.OnUpdate = AllSourceQuestsRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]] or [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]];
+		end
+	end
+	-- #endif
 	return t;
 end
-achWithRep = function(id, factionID, t)				-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
-	local t = ach(id, t);
+achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
+	t = ach(id, t);
 	-- #if ANYCLASSIC
 	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
 	t.OnInit = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnInit(t, ]] .. factionID ..[[); end]];
@@ -496,9 +513,9 @@ achWithRep = function(id, factionID, t)				-- Create an ACHIEVEMENT Object with 
 	-- #endif
 	return t;
 end
-achWithReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
-	local t = ach(id, t);
-	-- #if ANYCLASSIC
+achWithReps = function(id, factions, t)					-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
+	t = ach(id, t);
+	-- #if BEFORE WRATH
 	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
 	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
 	for i=2,#factions,1 do init = init .. "," .. factions[i]; end
@@ -514,7 +531,7 @@ achWithReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with 
 	return t;
 end
 achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
-	local t = ach(id, t);
+	t = ach(id, t);
 	-- #if ANYCLASSIC
 	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
 	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
@@ -530,9 +547,6 @@ achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object wi
 	-- #endif
 	return t;
 end
-achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
-	return struct("achievementCategoryID", id, t);
-end
 achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info
 	t = ach(id, altID, t);
 	-- TODO: hopefully we can define a better way for these Criteria to exist such that the Criteria can be moved as expected again
@@ -540,6 +554,21 @@ achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Crit
 	-- but for now prevent the Criteria from disappearing into the Unsorted window
 	bubbleDown({ _noautomation = true }, t);
 	return t;
+end
+explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Object
+	t = struct("achievementID", id, t or {});
+	-- #if ANYCLASSIC
+	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
+	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
+	-- #else
+	t.sym = {{ "achievement_criteria" }};
+	-- #endif
+	return t;
+end
+
+-- SHORTCUTS for Object Class Types
+achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
+	return struct("achievementCategoryID", id, t);
 end
 achievementCategory = achcat;
 artifact = function(id, t)								-- Create an ARTIFACT Object
@@ -697,16 +726,6 @@ end
 exploration = function(id, t)							-- Create an EXPLORATION Object
 	if type(t) == "string" then t = { ["maphash"] = t }; end
 	return struct("explorationID", id, t);
-end
-explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Object
-	t = struct("achievementID", id, t or {});
-	-- #if ANYCLASSIC
-	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
-	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
-	-- #else
-	t.sym = {{ "achievement_criteria" }};
-	-- #endif
-	return t;
 end
 explorationBatch = function(data)
 	local groups = {};

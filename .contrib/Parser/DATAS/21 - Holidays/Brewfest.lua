@@ -205,11 +205,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				{ "i", 37828 },	-- Great Brewfest Kodo
 				{ "i", 33977 },	-- Swift Brewfest Ram
 			},
-			["timeline"] = { "added 2.0.1" },
 			-- #if BEFORE WRATH
 			["description"] = "Obtain an epic Brewfest mount.",
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 			-- #endif
+			["timeline"] = { "added 2.0.1" },
 		}),
 		-- #if AFTER MOP
 		ach(1260, {	-- Almost Blind Luck [MOP+] / Drunken Stupor
@@ -220,9 +219,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		ach(1293, {	-- Blue Brewfest Stein [Removed]
 			["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
 			["timeline"] = { "added 2.0.1", "removed 3.0.1" },
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
-			-- #endif
 		}),
 		ach(2796, {	-- Brew of the Month
 			["providers"] = {
@@ -286,9 +282,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		ach(1936, {	-- Does Your Wolpertinger Linger?
 			["provider"] = { "i", 32233 },	-- Wolpertinger's Tankard
 			["timeline"] = { "added 2.2.2" },
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
-			-- #endif
 		}),
 		-- #if BEFORE MOP
 		ach(1260, {	-- Drunken Stupor / Almost Blind Luck [MOP+]
@@ -299,9 +292,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		ach(4782, {	-- Green Brewfest Stein [Removed]
 			["provider"] = { "i", 37892 },	-- Green Brewfest Stein
 			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
-			-- #endif
 		}),
 		ach(303, {	-- Have Keg, Will Travel
 			["providers"] = {
@@ -312,11 +302,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				{ "i", 39476 },	-- Fresh Goblin Brewfest Hops
 				{ "i", 37816 },	-- Preserved Brewfest Hops
 			},
-			["timeline"] = { "added 2.0.1" },
 			-- #if BEFORE WRATH
 			["description"] = "Obtain a Brewfest mount, or transform yours into one using Brewfest Hops.",
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 			-- #endif
+			["timeline"] = { "added 2.0.1" },
 		}),
 		ach(1184, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Strange Brew (A)
 			["races"] = ALLIANCE_ONLY,
@@ -438,9 +427,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		ach(1292, {	-- Yellow Brewfest Stein [Removed]
 			["provider"] = { "i", 32912 },	-- Yellow Brewfest Stein
 			["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
-			-- #endif
 		}),
 	}),
 	n(23872, {	-- Coren Direbrew

@@ -647,9 +647,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ "i", 33154 },	-- Sinister Squashling
 				{ "i", 33292 },	-- Hallowed Helm
 			},
-			["timeline"] = { "added 2.0.1" },
+			["AllProvidersRequiredForAchievement"] = true,
 			["description"] = "Obtain a Sinister Squashling pet and Hallowed Helm.",
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]],
+			["timeline"] = { "added 2.0.1" },
 			-- #else
 			crit(5783, {	-- Sinister Squashling
 				["provider"] = { "i", 33154 },	-- Sinister Squashling
@@ -1892,12 +1892,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["groups"] = {
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
-						["timeline"] = { "added 2.0.1" },
-						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
+						["timeline"] = { "added 2.0.1" },
+						["filterID"] = MOUNTS,
 					}),
 					i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 						["timeline"] = { "added 2.0.1" },
@@ -1971,12 +1970,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #if BEFORE 6.0.1
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
-						["timeline"] = { "added 2.0.1" },
-						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
+						["timeline"] = { "added 2.0.1" },
+						["filterID"] = MOUNTS,
 					}),
 					i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 						["timeline"] = { "added 2.0.1" },
@@ -2015,12 +2013,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #if BEFORE CATA
 			ach(980, {	-- The Horseman's Reins
 				["provider"] = { "i", 37012 },	-- The Horseman's Reins
-				["timeline"] = { "added 2.0.1" },
-				["filterID"] = MOUNTS,
 				-- #if BEFORE WRATH
 				["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
-				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
+				["timeline"] = { "added 2.0.1" },
+				["filterID"] = MOUNTS,
 			}),
 			i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 				["timeline"] = { "added 2.0.1" },

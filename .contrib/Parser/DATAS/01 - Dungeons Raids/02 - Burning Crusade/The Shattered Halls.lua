@@ -455,7 +455,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								9525,	-- Imprisoned in the Citadel
 								9495,	-- The Will of the Warchief
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(27533),	-- Demonblood Eviscerator
@@ -586,7 +585,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 									9524,	-- Imprisoned in the Citadel
 									9525,	-- Imprisoned in the Citadel
 								},
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5078, {	-- Heroic: The Shattered Halls Guild Run

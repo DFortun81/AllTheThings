@@ -1454,11 +1454,10 @@ root(ROOTS.Zones, {
 							i(31804),	-- Cenarion Expedition Tabard
 							ach(893, {	-- Cenarion War Hippogryph
 								["provider"] = { "i", 33999 },	-- Cenarion War Hippogryph
-								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Cenarion War Hippogryph from the Cenarion Expedition in Zangarmarsh.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["filterID"] = MOUNTS,
 							}),
 							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
 							i(30623, {	-- Reservoir Key [Revered]

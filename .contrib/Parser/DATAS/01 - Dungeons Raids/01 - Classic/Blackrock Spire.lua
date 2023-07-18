@@ -1560,7 +1560,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							4742,	-- Seal of Ascension
 							4903,	-- Warlord's Command
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5052, {	-- Lower Blackrock Spire Guild Run
@@ -1962,7 +1961,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 								6502,	-- Drakefire Amulet
 								5102,	-- General Drakkisath's Demise
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(16663, {	-- Blood of the Black Dragon Champion

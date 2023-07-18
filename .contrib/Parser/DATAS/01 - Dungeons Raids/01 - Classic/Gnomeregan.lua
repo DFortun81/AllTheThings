@@ -798,7 +798,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							2929,	-- The Grand Betrayal
 							2841,	-- Rig Wars
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5044, {	-- Gnomeregan Guild Run

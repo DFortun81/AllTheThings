@@ -88,7 +88,6 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
 						-- #if BEFORE WRATH
 						["description"] = "Complete all of Hemet Nesingwary quests in Nagrand up to and including The Ultimate Bloodsport.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					achWithRep(901, 941, {	-- Mag'har of Draenor

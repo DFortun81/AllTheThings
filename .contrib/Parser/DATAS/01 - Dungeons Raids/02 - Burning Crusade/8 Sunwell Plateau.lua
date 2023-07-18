@@ -262,13 +262,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					}),
 					ach(725, {	-- Thori'dal, the Stars' Fury
 						["provider"] = { "i", 34334 },	-- Thori'dal, the Stars' Fury
-						["classes"] = { WARRIOR, ROGUE, HUNTER },
 						-- #if BEFORE WRATH
 						["description"] = "Obtain Thori'dal, the Stars' Fury from Kil'jaeden in Sunwell Plateau.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #else
 						["description"] = "You must equip the bow to earn this achievement.",
 						-- #endif
+						["classes"] = { WARRIOR, ROGUE, HUNTER },
 					}),
 					i(34334),	-- Thori'dal, the Stars' Fury (LEGENDARY!)
 					i(34247),	-- Apolyon, the Soul-Render

@@ -45,7 +45,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				ach(646, {	-- Stratholme
 					-- #if BEFORE WRATH
 					["sourceQuest"] = 5263,	-- Above and Beyond
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 					["groups"] = {
 						crit(1, {	-- Balnazzar
@@ -1082,11 +1081,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(13251),	-- Head of Baron Rivendare
 							ach(729, {	-- Deathcharger's Reins
 								["provider"] = { "i", 13335 },	-- Rivendare's Deathcharger (MOUNT!)
-								["f"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Deathcharger's Reins from Baron Rivendare in Stratholme.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["f"] = MOUNTS,
 							}),
 							i(13335),	-- Rivendare's Deathcharger (MOUNT!)
 							i(13505),	-- Runeblade of Baron Rivendare

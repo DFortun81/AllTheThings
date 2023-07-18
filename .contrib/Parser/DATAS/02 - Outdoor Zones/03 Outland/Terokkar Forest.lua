@@ -53,7 +53,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "i", 27445 },	-- Magical Crawdad Box
 						-- #if BEFORE WRATH
 						["description"] = "Fish your way to Mr. Pinchy's Magical Crawdad Box.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
 						["requireSkill"] = FISHING,
 					}),

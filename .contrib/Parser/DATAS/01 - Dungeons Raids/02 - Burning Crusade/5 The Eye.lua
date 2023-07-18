@@ -231,7 +231,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 							10445,	-- The Vials of Eternity
 							11007,	-- Kael'thas and the Verdant Sphere
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5089, {	-- Tempest Keep Guild Run
@@ -239,11 +238,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					}),
 					ach(885, {	-- Ashes of Al'ar
 						["provider"] = { "i", 32458 },	-- Ashes of Al'ar
-						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain the Ashes of Al'ar from Kael'thas Sunstrider in Tempest Keep.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
+						["filterID"] = MOUNTS,
 					}),
 					i(32458),	-- Ashes of Al'ar (MOUNT!)
 					i(32405),	-- Verdant Sphere

@@ -203,12 +203,11 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 							["groups"] = {
 								ach(430, {	-- Amani War Bear
 									["provider"] = { "i", 33809 },	-- Amani War Bear
-									["timeline"] = { "removed 3.0.2" },
-									["filterID"] = MOUNTS,
 									-- #if BEFORE WRATH
 									["description"] = "Obtain the Amani War Bear from the final chest in Zul'Aman.",
-									["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 									-- #endif
+									["timeline"] = { "removed 3.0.2" },
+									["filterID"] = MOUNTS,
 								}),
 								i(33809, {	-- Amani War Bear (MOUNT!)
 									["timeline"] = { "removed 3.0.2" },
@@ -307,7 +306,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 						ach(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 11178,	-- Blood of the Warlord
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(33102),	-- Blood of Zul'jin

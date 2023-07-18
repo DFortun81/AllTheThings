@@ -20,7 +20,6 @@ root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = 
 		["provider"] = { "i", 37297 },	-- Spirit of Competition
 		-- #if BEFORE WRATH
 		["description"] = "Proud owner of a Spirit of Competition pet from the 2008 Spirit of Competition event.",
-		["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 		-- #endif
 	}),
 	i(37297, {	-- Spirit of Competition (PET!)
@@ -30,7 +29,6 @@ root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = 
 		["provider"] = { "i", 36941 },	-- Competitor's Tabard
 		-- #if BEFORE WRATH
 		["description"] = "Proud owner of a Competitor's Tabard from the 2008 Spirit of Competition event.",
-		["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 		-- #endif
 	}),
 	i(36941, {	-- Competitor's Tabard

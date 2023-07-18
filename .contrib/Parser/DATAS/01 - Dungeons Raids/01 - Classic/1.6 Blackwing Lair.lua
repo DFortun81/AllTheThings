@@ -336,7 +336,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 							7783,	-- The Lord of Blackrock
 							8730,	-- Nefarius's Corruption
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5057, {	-- Blackwing Lair Guild Run

@@ -256,7 +256,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 		-- #if BEFORE WRATH
 		["description"] = "Obtain one of the war mounts through the honor system.",
-		["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 		-- #endif
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(908, {	-- Call to Arms! (Alliance)

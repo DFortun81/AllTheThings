@@ -706,9 +706,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							ach(1638, {	-- Skyshattered
 								["sourceQuest"] = 11071,	-- Dragonmaw Race: Captain Skyshatter
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
-								-- #endif
 							}),
 							i(32863),	-- Skybreaker Whip
 						},

@@ -243,7 +243,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(633, {	-- Stormwind Stockade
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 391,	-- The Stockade Riots
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = ALLIANCE_ONLY,
 						-- #endif
 					}),
