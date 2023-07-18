@@ -823,7 +823,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(13969),	-- Loomguard Armbraces
 			i(13957),	-- Gargoyle Slashers
 			i(13956),	-- Clutch of Andros
-			i(16734),	-- Boots of Valor
+			i(16734, {	-- Boots of Valor
+				["timeline"] = { REMOVED_4_0_3 },
+			}),
 			i(13967),	-- Windreaver Greaves
 		},
 	}),
