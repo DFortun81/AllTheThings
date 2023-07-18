@@ -417,7 +417,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							201934,	-- Shadowflame Amalgamation
 						},
 						["g"] = {
-							UpgradeItem(202652, 3),	-- Discarded Creation's Restraint
 							UpgradeItem(202579, 3),	-- Attendant's Concocting Cover
 							UpgradeItem(202598, 3),	-- Cuirass of Meticulous Mixture
 							UpgradeItem(202617, 3),	-- Elementium Pocket Anvil
