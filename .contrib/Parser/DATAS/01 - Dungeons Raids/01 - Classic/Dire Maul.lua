@@ -1273,7 +1273,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["creatureID"] = 11492,
 						["groups"] = {
 							i(18501, {	-- Felvine Shard
-								["description"] = "Looted from the Felvine Shard object that spawns under the vines near the last boss in Dire Maul East.",
+								["description"] = "Spawns under the vines near the last boss in Dire Maul East.",
+								["provider"] = { "o", 179559 },	-- Felvine Shard
 							}),
 							i(18321),	-- Energetic Rod
 							i(18310),	-- Fiendish Machete
