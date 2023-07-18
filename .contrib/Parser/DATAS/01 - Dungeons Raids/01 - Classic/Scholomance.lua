@@ -1102,7 +1102,8 @@ end
 table.insert(SCHOLOMANCE_GROUPS, header(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
 	["sourceQuest"] = 76249,	-- Memory of Scholomance
 	["description"] = "With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve",
-	["maps"] = { 306, 307, 308, 309 },
+	["mapID"] = 306,
+	["maps"] = { 307, 308, 309 },
 	["modID"] = 1,
 	["groups"] = LEGACY_DUNGEON_GROUPS,
 }));
@@ -1122,7 +1123,8 @@ table.insert(SCHOLOMANCE_GROUPS, n(createHeader({
 		cn = "通灵学院的回忆",
 	},
 }), {
-	["maps"] = { 306, 307, 308, 309 },
+	["mapID"] = 306,
+	["maps"] = { 307, 308, 309 },
 	["modID"] = 1,
 	["groups"] = LEGACY_DUNGEON_GROUPS,
 }));
