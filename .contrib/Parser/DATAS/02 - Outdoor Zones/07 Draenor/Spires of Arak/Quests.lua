@@ -573,7 +573,7 @@ root(ROOTS.Zones, {
 				q(35260, {	-- Hardly Working
 					["sourceQuests"] = {
 						34882,	-- Blades in the Dark
-						34883,	-- Return to Veil Terokk
+						34883,	-- A Feast of Shadows
 					},
 					["coord"] = { 36.9, 24.5, SPIRES_OF_ARAK },
 					["provider"] = { "n", 80157 },	-- Darkscryer Raastok
@@ -867,7 +867,7 @@ root(ROOTS.Zones, {
 				q(35611, {	-- Return to Veil Terokk
 					["sourceQuests"] = {
 						35286,	-- Orders, Commander? (A)
-						-- TODO (H)
+						35277,	-- Orders, Commander? (H)
 					},
 					["coords"] = {
 						{ 40.1, 60.3, SPIRES_OF_ARAK },	-- (A)
