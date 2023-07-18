@@ -14174,7 +14174,7 @@ local function SetGroupVisibility(parent, group)
 		if parent and visible then
 			parent.hasUpgradeNested = true;
 		end
-		app.PrintDebug("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested)
+		-- app.PrintDebug("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested)
 	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then
@@ -14223,7 +14223,7 @@ local function SetThingVisibility(parent, group)
 		if parent and visible then
 			parent.hasUpgradeNested = true;
 		end
-		app.PrintDebug("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested)
+		-- app.PrintDebug("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested)
 	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then
