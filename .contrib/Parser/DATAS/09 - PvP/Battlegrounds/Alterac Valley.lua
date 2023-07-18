@@ -73,13 +73,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			}),
 			n(ACHIEVEMENTS, {
-				applyclassicphase(PHASE_TWO, achWithFaction(708, 729, {	-- Hero of the Frostwolf Clan
+				applyclassicphase(PHASE_TWO, achWithRep(708, 729, {	-- Hero of the Frostwolf Clan
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",
 					-- #endif
 					["races"] = HORDE_ONLY,
 				})),
-				applyclassicphase(PHASE_TWO, achWithFaction(709, 730, {	-- Hero of the Stormpike Guard
+				applyclassicphase(PHASE_TWO, achWithRep(709, 730, {	-- Hero of the Stormpike Guard
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Stormpike Guard to Exalted.",
 					-- #endif

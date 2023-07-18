@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 		["lvl"] = 32,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithFaction(5827, 1204, {	-- Avengers of Hyjal
+				achWithRep(5827, 1204, {	-- Avengers of Hyjal
 					title(188),	-- <Name>, Avenger of Hyjal
 				}),
 				ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)

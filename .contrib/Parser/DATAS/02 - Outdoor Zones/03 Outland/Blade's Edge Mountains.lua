@@ -48,7 +48,7 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithFaction(896, 1038, {	-- A Quest a Day Keeps the Ogres at Bay
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, 1038, {	-- A Quest a Day Keeps the Ogres at Bay
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Ogri'la to Exalted.",
 						-- #endif

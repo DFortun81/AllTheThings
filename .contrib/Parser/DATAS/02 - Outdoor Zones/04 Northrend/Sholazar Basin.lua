@@ -119,7 +119,7 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					explorationAch(1268),	-- Explore Sholazar Basin
-					achWithFaction(950, 1104),	-- Frenzyheart Tribe
+					achWithRep(950, 1104),	-- Frenzyheart Tribe
 					ach(961, {	-- Honorary Frenzyheart
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["groups"] = {
@@ -223,7 +223,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					achWithFaction(951, 1105),	-- The Oracles
+					achWithRep(951, 1105),	-- The Oracles
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",

@@ -129,7 +129,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithFaction(5788, 809, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
+				achWithRep(5788, 809, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
 					-- #if BEFORE 4.1.0
 					-- This isn't actually an achievement yet.
 					["description"] = "Earn exalted status with the Shen'dralar.",

@@ -189,10 +189,10 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					achWithFaction(1007, 1091, {	-- The Wyrmrest Accord
+					achWithRep(1007, 1091, {	-- The Wyrmrest Accord
 						["maps"] = { BOREAN_TUNDRA },
 					}),
-					achWithFaction(949, 1073, {	-- Tuskarrmageddon
+					achWithRep(949, 1073, {	-- Tuskarrmageddon
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
 					}),
 					ach(547, {	-- Veteran of the Wrathgate

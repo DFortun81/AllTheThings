@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Explore Winterspring, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				achWithFaction(944, 576, {	-- They Love Me In That Tunnel
+				achWithRep(944, 576, {	-- They Love Me In That Tunnel
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with Timbermaw Hold to Exalted.",
 					-- #endif

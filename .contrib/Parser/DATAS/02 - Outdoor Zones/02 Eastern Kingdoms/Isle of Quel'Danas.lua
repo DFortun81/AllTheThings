@@ -1337,7 +1337,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["description"] = "Explore Isle of Quel'Danas, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				achWithFaction(897, 1077, {	-- You're So Offensive
+				achWithRep(897, 1077, {	-- You're So Offensive
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Shattered Sun Offensive to Exalted.",
 					-- #endif

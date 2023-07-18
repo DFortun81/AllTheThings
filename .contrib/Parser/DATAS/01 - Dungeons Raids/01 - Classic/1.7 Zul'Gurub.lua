@@ -15,7 +15,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 		["lvl"] = 58,
 		["groups"] = bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 			n(ACHIEVEMENTS, {
-				achWithFaction(957, 270, {	-- Hero of the Zandalar Tribe
+				achWithRep(957, 270, {	-- Hero of the Zandalar Tribe
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Zandalar Tribe to Exalted.",
 					-- #endif

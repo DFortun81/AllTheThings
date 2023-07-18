@@ -237,21 +237,16 @@ root(ROOTS.Zones, {
 						}),
 						-- #endif
 					}),
-					applyclassicphase(TBC_PHASE_ONE, ach(953, {	-- Guardian of Cenarius
+					applyclassicphase(TBC_PHASE_ONE, achWithReps(953, { 609, 942 }, {	-- Guardian of Cenarius
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 609, 942); end]],
 						-- #endif
 						["groups"] = {
 							-- NOTE: Achievement says it awards 132, but that's wrong.
 							applyclassicphase(WRATH_PHASE_ONE, title(100)),	-- %, Guardian of Cenarius
 						},
 					})),
-					achWithFaction(900, 970, {	-- The Czar of Sporeggar
+					achWithRep(900, 970, {	-- The Czar of Sporeggar
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Sporeggar to Exalted.",
 						-- #endif

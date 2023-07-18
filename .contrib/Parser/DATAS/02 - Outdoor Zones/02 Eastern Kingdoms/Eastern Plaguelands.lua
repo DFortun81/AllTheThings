@@ -796,7 +796,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				achWithFaction(946, 529, {	-- The Argent Dawn
+				achWithRep(946, 529, {	-- The Argent Dawn
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Argent Dawn to Exalted.",
 					-- #endif

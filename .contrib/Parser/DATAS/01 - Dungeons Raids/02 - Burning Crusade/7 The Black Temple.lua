@@ -27,7 +27,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithFaction(958, 1012, {	-- Sworn to the Deathsworn
+				achWithRep(958, 1012, {	-- Sworn to the Deathsworn
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Ashtongue Deathsworn to Exalted.",
 					-- #endif

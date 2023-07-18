@@ -116,13 +116,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(162, {	-- We Had It All Along *cough*
 					["timeline"] = { "added 3.0.1" },
 				}),
-				applyclassicphase(PHASE_TWO, achWithFaction(711, 509, {	-- Knight of Arathor
+				applyclassicphase(PHASE_TWO, achWithRep(711, 509, {	-- Knight of Arathor
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with The League of Arathor to Exalted.",
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				})),
-				applyclassicphase(PHASE_TWO, achWithFaction(710, 510, {	-- The Defiler
+				applyclassicphase(PHASE_TWO, achWithRep(710, 510, {	-- The Defiler
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with The Defilers to Exalted.",
 					-- #endif

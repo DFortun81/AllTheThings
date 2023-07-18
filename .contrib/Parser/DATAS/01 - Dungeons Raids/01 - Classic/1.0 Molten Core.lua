@@ -20,7 +20,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithFaction(955, 749, {	-- Hydraxian Waterlords
+				achWithRep(955, 749, {	-- Hydraxian Waterlords
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
 					-- #endif

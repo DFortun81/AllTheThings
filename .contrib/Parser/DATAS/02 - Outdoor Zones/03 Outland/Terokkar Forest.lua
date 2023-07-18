@@ -44,7 +44,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Terokkar Forest, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithFaction(894, 1031, {	-- Flying High Over Skettis
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithRep(894, 1031, {	-- Flying High Over Skettis
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Sha'tari Skyguard to Exalted.",
 						-- #endif

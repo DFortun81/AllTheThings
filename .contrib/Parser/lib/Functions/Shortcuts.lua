@@ -475,22 +475,58 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	end
 	return t;
 end
-achWithFaction = function(id, factionID, t)				-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
+achWithRep = function(id, factionID, t)				-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
 	local t = ach(id, t);
 	-- #if ANYCLASSIC
 	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
 	t.OnInit = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnInit(t, ]] .. factionID ..[[); end]];
 	-- #if BEFORE 4.1.0
-	-- #if AFTER 3.0.1
-	if id == 5788 then	-- Agent of Shen'dralar still needs this until after 4.1.0
-	-- #endif
-	t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REP_OnUpdate]];
-	-- #if AFTER 3.0.1
+	if not t.OnUpdate then
+		-- #if AFTER 3.0.1
+		if id == 5788 then	-- Agent of Shen'dralar still needs this until after 4.1.0
+		-- #endif
+			t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REP_OnUpdate]];
+		-- #if AFTER 3.0.1
+		end
+		-- #endif
 	end
-	-- #endif
 	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]];
 	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]];
 	-- #endif
+	-- #endif
+	return t;
+end
+achWithReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
+	local t = ach(id, t);
+	-- #if ANYCLASSIC
+	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
+	for i=2,#factions,1 do init = init .. "," .. factions[i]; end
+	t.OnInit = init ..[[); end]];
+	-- #if BEFORE 3.0.1
+	if not t.OnUpdate then
+		t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_OnUpdate]];
+	end
+	-- #endif
+	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
+	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
+	-- #endif
+	return t;
+end
+achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
+	local t = ach(id, t);
+	-- #if ANYCLASSIC
+	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
+	for i=2,#factions,1 do init = init .. "," .. factions[i]; end
+	t.OnInit = init ..[[); end]];
+	-- #if BEFORE 3.0.1
+	if not t.OnUpdate then
+		t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate]];
+	end
+	-- #endif
+	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
+	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
 	-- #endif
 	return t;
 end

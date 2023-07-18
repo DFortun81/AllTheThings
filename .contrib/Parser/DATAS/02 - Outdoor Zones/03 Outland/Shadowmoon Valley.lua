@@ -35,7 +35,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, achWithFaction(898, 1015, {	-- On Wings of Nether
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, achWithRep(898, 1015, {	-- On Wings of Nether
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Netherwing to Exalted.",
 						-- #endif

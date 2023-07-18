@@ -4174,16 +4174,11 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(1010, {	-- Northrend Vanguard
+					achWithReps(1010, { 1106, 1090, 1098, 1091 }, {	-- Northrend Vanguard
 						["maps"] = {
 							DRAGONBLIGHT,
 							ICECROWN,
 						},
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 1106, 1090, 1098, 1091); end]],
-						-- #endif
 					}),
 					ach(1782, {	-- Our Daily Bread (A)
 						["requireSkill"] = COOKING,
@@ -4295,7 +4290,7 @@ root(ROOTS.Zones, {
 							i(44430),		-- Titanium Seal of Dalaran (TOY!)
 						},
 					}),
-					achWithFaction(1008, 1090),	-- The Kirin Tor
+					achWithRep(1008, 1090),	-- The Kirin Tor
 					ach(1957, {	-- There's Gold In That There Fountain
 						["sym"] = {{ "achievement_criteria" }},
 						["requireSkill"] = FISHING,

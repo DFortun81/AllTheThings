@@ -189,10 +189,10 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					achWithFaction(1012, 1037, {	-- The Winds of the North (A)
+					achWithRep(1012, 1037, {	-- The Winds of the North (A)
 						["races"] = ALLIANCE_ONLY,
 					}),
-					achWithFaction(1011, 1052, {	-- The Winds of the North (H)
+					achWithRep(1011, 1052, {	-- The Winds of the North (H)
 						["races"] = HORDE_ONLY,
 					}),
 				}),

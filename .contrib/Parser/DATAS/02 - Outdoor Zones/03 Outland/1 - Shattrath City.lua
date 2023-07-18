@@ -644,7 +644,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					 applyclassicphase(TBC_PHASE_ONE, ach(1205, {	-- Hero of Shattrath
+					 applyclassicphase(TBC_PHASE_ONE, achWithReps(1205, { 932, 934 }, {	-- Hero of Shattrath
 						-- #if BEFORE WRATH
 						["cost"] = {
 							{ "i", 31779, 1 },	-- Aldor Tabard
@@ -654,35 +654,20 @@ root(ROOTS.Zones, {
 						["description"] = "Gained exalted status with The Scryers and The Aldor.\n\nNOTE: This can be accomplished now by learning both faction's Exalted recipes, their tabards, or their equipment that require Exalted reputation to buy. For the sake of simplicity, just buy both tabards as this will also count toward the 25 tabard achievement later.\n\nWARNING: You must maintain at least one of these requirements in order to acquire the achievement with prepatch!",
 						-- #endif
 					})),
-					applyclassicphase(TBC_PHASE_ONE, ach(903, {	-- Shattrath Divided
+					applyclassicphase(TBC_PHASE_ONE, achWithAnyReps(903, { 932, 934 }, {	-- Shattrath Divided
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with The Scryers or The Aldor to Exalted.",
 						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate(t, 932, 934); end]],
-						-- #endif
 					})),
-					applyclassicphase(TBC_PHASE_ONE, ach(764, {	-- The Burning Crusader (A)
+					applyclassicphase(TBC_PHASE_ONE, achWithReps(764, { 942, 989, 1011, 935, 946 }, {	-- The Burning Crusader (A)
 						-- #if BEFORE WRATH
 						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 942, 989, 1011, 935, 946); end]],
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
 					})),
-					applyclassicphase(TBC_PHASE_ONE, ach(763, {	-- The Burning Crusader (H)
+					applyclassicphase(TBC_PHASE_ONE, achWithReps(763, { 942, 989, 1011, 935, 947 }, {	-- The Burning Crusader (H)
 						-- #if BEFORE WRATH
 						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 942, 989, 1011, 935, 947); end]],
 						-- #endif
 						["races"] = HORDE_ONLY,
 					})),

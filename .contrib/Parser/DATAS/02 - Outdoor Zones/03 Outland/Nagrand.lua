@@ -74,7 +74,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					})),
-					achWithFaction(902, 933, {	-- Chief Exalted Officer
+					achWithRep(902, 933, {	-- Chief Exalted Officer
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with The Consortium to Exalted.",
 						-- #endif
@@ -91,7 +91,7 @@ root(ROOTS.Zones, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
-					achWithFaction(901, 941, {	-- Mag'har of Draenor
+					achWithRep(901, 941, {	-- Mag'har of Draenor
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Mag'har to Exalted.",
 						-- #endif
@@ -291,7 +291,7 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					achWithFaction(899, 978, {	-- Oh My, Kurenai
+					achWithRep(899, 978, {	-- Oh My, Kurenai
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Kurenai to Exalted.",
 						-- #endif

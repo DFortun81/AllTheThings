@@ -111,7 +111,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						4584,	-- The Light of Dawn
 					}},
 				}),
-				achWithFaction(4598, 1156, {	-- The Ashen Verdict
+				achWithRep(4598, 1156, {	-- The Ashen Verdict
 					title(141),	-- <Name> of the Ashen Verdict
 				}),
 			}),
