@@ -800,6 +800,15 @@ ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
 	-- #endif
 	return t;
 end
+iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which can be Upgraded to another Item version (specified by ModID/BonusID)
+	if (modID or 0) == 0 and (bonusID or 0) == 0 then
+		error("Item Upgrade needs ModID or BonusID!");
+	end
+	local i = i(itemID, t);
+	-- use ModID/BonusID combination to represent the new Item available via Upgrading
+	i.up = ((tonumber(modID) or 0) / 100) + ((tonumber(bonusID) or 0) / 1000000);
+	return i;
+end
 inst = function(id, t)									-- Create an INSTANCE Object
 	if t then
 		t = struct("instanceID", id, t);
