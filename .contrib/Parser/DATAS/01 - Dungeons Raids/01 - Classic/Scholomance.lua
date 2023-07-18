@@ -968,6 +968,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(14623),	-- Deathbone Legguards
 			i(14621),	-- Deathbone Sabatons
 			i(18684),	-- Dimly Opalescent Ring
+			i(207058, {	-- Fractured Shin
+				["timeline"] = { ADDED_10_1_5 },
+			}),
 			i(18682),	-- Ghoul Skin Leggings
 			i(14633),	-- Necropile Mantle
 			i(14626),	-- Necropile Robe
