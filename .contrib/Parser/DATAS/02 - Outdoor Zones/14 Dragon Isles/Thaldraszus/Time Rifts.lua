@@ -281,6 +281,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 				n(QUESTS, {
+					q(77679, {	-- To Soridormi's Aid
+						["provider"] = { "n", 197574 },	-- Mairadormi
+						["coord"] = { 72.5, 47.4, VALDRAKKEN },
+						["isBreadcrumb"] = true,
+						--["lockCriteria"] = { 1, "TODO", TODO },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
+						["timeline"] = { ADDED_10_1_5 },
+					}),
 					-- ideally want the Object with coords with provider Item inside...
 					q(76548, {	-- A Fishy Gift
 						["provider"] = { "n", 207756 },	-- Murloc You
@@ -377,10 +384,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 				n(REWARDS, {
-					i(207582, {	-- Box of Tampered Reality
-						["g"] = {
-						},
-					}),
+					i(207582),	-- Box of Tampered Reality
 					i(207584, {	-- Box of Volatile Reality
 						["g"] = {
 							i(207002),	-- Encapsulated Destiny
@@ -388,17 +392,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(207583, {	-- Box of Collapsed Reality
 						["sym"] = {{"select","itemID",
-							-- Mounts appear to be possible drops [https://www.wowhead.com/item=207583/box-of-collapsed-reality#comments:id=5645322]
-							206680,	-- Reins of the Scourgebound Vanquisher (MOUNT!)
-							206676,	-- Felstorm Dragon (MOUNT!)
-							206679,	-- Perfected Juggernaut (MOUNT!)
-							206678,	-- Sulfur Hound's Leash (MOUNT!)
-							206675,	-- Gold-Toed Albatross (MOUNT!)
-							206674,	-- Reins of the Ravenous Black Gryphon (MOUNT!)
-							206673,	-- Horn of the White War Wolf (MOUNT!)
+							-- Anything from vendors can drop here, but the chance is so small, it's not worth to mention this as a source.
 						}},
-						["g"] = {
-						},
 					}),
 					i(DILATED_TIME_CAPSULE, {
 						["crs"] = {

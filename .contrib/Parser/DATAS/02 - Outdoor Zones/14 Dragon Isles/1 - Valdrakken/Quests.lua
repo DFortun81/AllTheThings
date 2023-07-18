@@ -311,11 +311,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 49.9, 56, VALDRAKKEN },
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
-			q(77679, {	-- To Soridormi's Aid
-				["provider"] = { "n", 197574 },	-- Mairadormi
-				["coord"] = { 72.5, 47.4, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_5 },
-			}),
 		}),
 		n(QUESTS, sharedData({
 			["provider"] = { "n", 194026 },	-- Azley
