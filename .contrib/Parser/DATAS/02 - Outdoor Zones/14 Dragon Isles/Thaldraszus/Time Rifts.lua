@@ -391,9 +391,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					i(207583, {	-- Box of Collapsed Reality
-						["sym"] = {{"select","itemID",
-							-- Anything from vendors can drop here, but the chance is so small, it's not worth to mention this as a source.
-						}},
+						-- Anything from vendors can drop here, but the chance is so small, it's not worth to mention this as a source.
 					}),
 					i(DILATED_TIME_CAPSULE, {
 						["crs"] = {

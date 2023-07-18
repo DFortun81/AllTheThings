@@ -24,6 +24,13 @@ end
 
 -- Returns whether 't' should be considered collectible based on it having an un-collected upgrade
 api.CollectibleAsUpgrade = function(t)
+
+	-- if no upgrade, or itself is not collectible (upgrades are always the same Type as the base)
+	local up = t.up;
+	if not up or not t.collectible then
+		return;
+	end
+
 	-- cached tracking of upgrade group
 	local cache = t._up;
 	if cache and not cache.collected then
@@ -31,9 +38,10 @@ api.CollectibleAsUpgrade = function(t)
 		return true;
 	end
 
-	local up = t.up;
-	-- if no upgrade, or itself is not collectible (upgrades are always the same Type as the base)
-	if not up or not t.collectible then
+	-- nested upgrades should not be considered for a following upgrade (Contains tooltip/DetermineUpgradeGroups)
+	-- if a situation arises in which a single item can be upgraded across multiple 'collectible' variants, this will have to be revisted
+	if t.isUpgraded then
+		-- app.PrintDebug("isUpgraded",t.modItemID)
 		return;
 	end
 

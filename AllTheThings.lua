@@ -4816,11 +4816,14 @@ app.SetSkipPurchases = function(level)
 end
 -- Determines searches required for upgrades using this group
 local function DetermineUpgradeGroups(group, FillData)
-	local hasUpgrade = group.hasUpgrade;
+	local hasUpgrade = group.hasUpgrade and not group.isUpgraded;
 	if hasUpgrade then
 		group.hasUpgrade = false;
 		group.filledUpgrade = true;
-		return { CreateObject(group._up) };
+		local o = CreateObject(group._up);
+		-- keep track this this upgrade reference shouldn't propogate further upgrade links
+		o.isUpgraded = true;
+		return { o };
 	end
 end
 -- Determines searches required for costs using this group
