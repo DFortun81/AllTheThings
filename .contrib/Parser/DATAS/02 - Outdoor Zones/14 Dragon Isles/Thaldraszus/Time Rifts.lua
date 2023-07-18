@@ -1147,7 +1147,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(76692),	-- after buying/loot 'Northern Ballista' (itemID 206778) (spellID 418903)
 		q(76710),	-- after buying/loot 'Obsidian Warwhelp' (itemID 208011) (spellID 418902)
 		q(76680),	-- after buying/loot 'Order-Powered Mechblade' (itemID 206807) (spellID 418901)
-		q(76882),	-- after buying/loot 'Overclocked Hand Cannon' (itemID 206780) (spellID 418900)
+		q(76682),	-- after buying/loot 'Overclocked Hand Cannon' (itemID 206780) (spellID 418900)
 		q(76620),	-- after buying/loot 'Paracausal Fragment of Azzinoth' (itemID 206972) (spellID 418899)
 		q(76677),	-- after buying/loot 'Paracausal Fragment of Doomhammer' (itemID 206964) (spellID 418898)
 		q(76696),	-- after buying/loot 'Paracausal Fragment of Frostmourne' (itemID 206983) (spellID 418897)
