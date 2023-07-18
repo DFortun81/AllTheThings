@@ -229,7 +229,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(RARES, {
 				n(205865, {	-- Zal'kir the Chosen <The Maw of K'Tanth>
-					["description"] = "Seem to spawn during Chronohammer Time!, Please report more info to ATT-Discord.",
 					["coord"] = { 59.8, 70.6, THALDRASZUS },
 					["questID"] = 76170,
 					["g"] = {
@@ -241,7 +240,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(VENDORS, {
 				n(209220, {	-- Ironus Coldsteel <Chronosmith>
-					["description"] = "Need to finish `The Chronosmith` quest chain to make this npc as vendor",
+					["sourceQuests"] = {
+						76258,	-- By Time Fire be Purged!
+						76356,	-- Sword Stealing Searers
+					},
 					["coord"] = { 52.2, 80.8, THALDRASZUS },
 					["g"] = {
 						i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)
@@ -282,9 +284,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 })));
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	q(76350),	-- after turn in The Chronosmith (questID 76350)
-
 	q(77172),	-- weekly lockout for Encapsulated Destiny (itemID 207002) as reward from daily quest
 
-	q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth>, probably hqt for make him spawn after quest?; either this or 76170 is daily lockout
+	q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth> first kill; either this or 76170 is daily lockout
 }));
