@@ -1632,6 +1632,9 @@ root(ROOTS.Zones, {
 						i(90375),	-- Airship Marine's Sharpshooter
 						i(90376),	-- Barricade-Breaker Cidgel
 						i(90382),	-- Captain Roger's Polite Knocking Stick
+						i(90331, {	-- Face Smaher Warhammer
+							["description"] = "Unlocks for Horde after completing this alliance quest.",
+						}),
 						i(90377),	-- Fogcutter Staff
 						i(90379),	-- Mystic Perpetual Motion Mace
 						i(90381),	-- Shock Trooper Battleaxe

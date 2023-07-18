@@ -27,7 +27,6 @@ root(ROOTS.Unsorted, {
 				-- Quests / Rares ?
 				i(108905),	-- Jagged Turtleshell Blade
 				i(118186),	-- Frostwolf Wisdom Stick	-- rewarded by some WoD quest
-				i(90331),	-- Face Smasher Warhammer	-- rewarded by some MoP quest probably (Jade Forest?)
 				i(107644),	-- Napmaster's Sleep Mask	-- I collected it somehow -Darkal
 
 				-- PvP (probably from some Ensemble)
