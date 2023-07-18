@@ -237,8 +237,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(208170),	-- Runeaxe of the Last Resistance
 					},
 				}),
+				n(201664, {	-- Temporal Investi-gator
+					["sourceQuests"] = { 75986 },	-- Feats Per Minute
+					["description"] = "Go in Everywhere Inn at 2nd floor, borrow Melly's Metronographer, use it near Bartender Bob, buy Infinitea from Bartender Blob and fly at coords, use it and interact with object to summon rare",
+					["coords"] = {
+						{ 52.3, 81.4, THALDRASZUS },	-- Everywhere Inn
+						{ 54.6, 85.9, THALDRASZUS },	-- Rare summon spot
+					},
+					["questID"] = 75479,
+					["g"] = {
+						i(208449),	-- Melly's Metronographer+++
+						--loot commented out until someone confirm it
+						--i(206993),	-- Investi-gator's Pocketwatch
+					},
+				}),
 			}),
 			n(VENDORS, {
+				n(207463, { -- Bartender Blob
+					["sourceQuests"] = { 75986 },	-- Feats Per Minute
+					["coord"] = { 52.1, 81.4, THALDRASZUS },
+					["g"] = {
+						i(208448, {	-- Infinitea
+							["description"] = "Timer start right after you buy it"
+						}),
+					},
+				}),
 				n(209220, {	-- Ironus Coldsteel <Chronosmith>
 					["sourceQuests"] = {
 						76258,	-- By Time Fire be Purged!

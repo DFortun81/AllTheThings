@@ -467,8 +467,6 @@ root(ROOTS.Unsorted, {
 			i(206681),	-- Letter from Oman
 			i(208400),	-- Silks of the Unnamed Cult
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
-			i(208448),	-- Infinitea
-			i(208449),	-- Melly's Metronographer+++
 			--
 			i(133589),	-- Dalape�o Pepper
 			i(208567),	-- Medal of Conquest
