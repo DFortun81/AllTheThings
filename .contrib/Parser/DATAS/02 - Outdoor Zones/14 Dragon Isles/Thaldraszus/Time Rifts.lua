@@ -178,12 +178,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["g"] = {
 							},
 						}),
-						--o(xx,{	-- xx
-						--	["coord"] = { 40.1, 39.7, AZMOURNE },
-						--	["g"] = {
+						o(404492,{	-- Gilded Vase
+							["coord"] = { 40.1, 39.7, AZMOURNE },
+							["g"] = {
 								i(207003),	-- Gilded Vase
-						--	},
-						--}),
+							},
+						}),
 					}),
 					m(AZMERLOTH, {
 						n(204808, {	-- Fractured Causality / Gil'dan
