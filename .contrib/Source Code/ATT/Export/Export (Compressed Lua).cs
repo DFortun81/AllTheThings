@@ -407,7 +407,7 @@ namespace ATT
             {
                 return builder.Append(value);
             }
-            return builder.Append("\"").Append(value.Replace("\"", "\\\"")).Append("\"");
+            return builder.Append("\"").Append(value.Replace("\"", "\\\"").Replace("\\\\\"", "\\\"")).Append("\"");
         }
 
         /// <summary>

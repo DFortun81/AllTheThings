@@ -87,62 +87,70 @@ root(ROOTS.Secrets, {
 				["coord"] = { 66.1, 74.5, DRAGONBLIGHT },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
-			o(9999938, {	-- Uuna's World Tour
-				["description"] = "Congrats on making it this far!  Now it's time to take your favorite li'l ghost on a world tour.",
-				["icon"] = "Interface\\Icons\\inv_misc_toy_03",
-				["g"] = {
-					q(50140, {	-- Step 1: Gate of the Setting Sun
-						["sourceQuests"] = { 50109 },	-- Step 12: A Dark Place
-						["name"] = "Step 1: Gate of the Setting Sun",
-						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
-						["coord"] = { 8.00, 59.0, VALE_OF_ETERNAL_BLOSSOMS },
-					}),
-					q(50141, {	-- Step 2: Nighthold
-						["sourceQuests"] = { 50140 },	-- Step 1: Gate of the Setting Sun
-						["name"] = "Step 2: Nighthold",
-						["coord"] = { 62.3, 83.7, SURAMAR },
-						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
-					}),
-					q(50142, {	-- Step 3: Krasus Landing, Legion Dalaran
-						["sourceQuests"] = { 50141 },	-- Step 2: Nighthold
-						["name"] = "Step 3: Krasus Landing, Legion Dalaran",
-						["coord"] = { 72.4, 45.9, LEGION_DALARAN },
-						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
-					}),
-					q(50143, {	-- Step 4: Dragonblight
-						["sourceQuests"] = { 50142 },	-- Step 3: Krasus Landing, Legion Dalaran
-						["name"] = "Step 4: Dragonblight",
-						["coord"] = { 57.8, 54.6, DRAGONBLIGHT },
-						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
-					}),
-					q(50144, {	-- Step 5: Mount Hyjal
-						["sourceQuests"] = { 50143 },	-- Step 4: Dragonblight
-						["name"] = "Step 5: Mount Hyjal",
-						["coord"] = { 59.0, 24.1, MOUNT_HYJAL },
-						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
-					}),
-					q(50145, {	-- Step 6: Kun-Lai Summit
-						["sourceQuests"] = { 50144 },	-- Step 5: Mount Hyjal
-						["name"] = "Step 6: Kun-Lai Summit",
-						["coord"] = { 44.8, 52.3, KUN_LAI_SUMMIT },
-						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
-					}),
-					q(50146, {	-- Step 7: Blackrock Mountain
-						["sourceQuests"] = { 50145 },	-- Step 6: Kun-Lai Summit
-						["name"] = "Step 7: Blackrock Mountain",
-						["coords"] = {
-							{ 37.5, 67.4, BLACKROCK_MOUNTAIN },
-							{ 21.1, 38.4, BURNING_STEPPES },
-						},
-						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
-					}),
-					q(50147, {	-- Step 8: Temple of Karabor
-						["sourceQuests"] = { 50146 },	-- Step 7: Blackrock Mountain
-						["name"] = "Step 8: Temple of Karabor",
-						["coord"] = { 70.7, 46.7, DRAENOR_SHADOWMOON_VALLEY },
-						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
-					}),
+			n(createHeader({
+				readable = "Uuna's World Tour",
+				icon = "Interface/Icons/inv_misc_toy_03",
+				text = {
+					en = "Uuna's World Tour",
+					fr = "Tour du monde d’Uuna",
+					ru = "Приключения с Ууной",
+					cn = "尤娜的世界旅行",
 				},
+				description = {
+					en = "Congrats on making it this far!  Now it's time to take your favorite li'l ghost on a world tour.",
+				},
+			}), {
+				q(50140, {	-- Step 1: Gate of the Setting Sun
+					["sourceQuests"] = { 50109 },	-- Step 12: A Dark Place
+					["name"] = "Step 1: Gate of the Setting Sun",
+					["icon"] = "Interface\\Icons\\inv_misc_toy_02",
+					["coord"] = { 8.00, 59.0, VALE_OF_ETERNAL_BLOSSOMS },
+				}),
+				q(50141, {	-- Step 2: Nighthold
+					["sourceQuests"] = { 50140 },	-- Step 1: Gate of the Setting Sun
+					["name"] = "Step 2: Nighthold",
+					["coord"] = { 62.3, 83.7, SURAMAR },
+					["icon"] = "Interface\\Icons\\inv_misc_toy_02",
+				}),
+				q(50142, {	-- Step 3: Krasus Landing, Legion Dalaran
+					["sourceQuests"] = { 50141 },	-- Step 2: Nighthold
+					["name"] = "Step 3: Krasus Landing, Legion Dalaran",
+					["coord"] = { 72.4, 45.9, LEGION_DALARAN },
+					["icon"] = "Interface\\Icons\\inv_misc_toy_02",
+				}),
+				q(50143, {	-- Step 4: Dragonblight
+					["sourceQuests"] = { 50142 },	-- Step 3: Krasus Landing, Legion Dalaran
+					["name"] = "Step 4: Dragonblight",
+					["coord"] = { 57.8, 54.6, DRAGONBLIGHT },
+					["icon"] = "Interface\\Icons\\inv_misc_toy_02",
+				}),
+				q(50144, {	-- Step 5: Mount Hyjal
+					["sourceQuests"] = { 50143 },	-- Step 4: Dragonblight
+					["name"] = "Step 5: Mount Hyjal",
+					["coord"] = { 59.0, 24.1, MOUNT_HYJAL },
+					["icon"] = "Interface\\Icons\\inv_misc_toy_02",
+				}),
+				q(50145, {	-- Step 6: Kun-Lai Summit
+					["sourceQuests"] = { 50144 },	-- Step 5: Mount Hyjal
+					["name"] = "Step 6: Kun-Lai Summit",
+					["coord"] = { 44.8, 52.3, KUN_LAI_SUMMIT },
+					["icon"] = "Interface\\Icons\\inv_misc_toy_02",
+				}),
+				q(50146, {	-- Step 7: Blackrock Mountain
+					["sourceQuests"] = { 50145 },	-- Step 6: Kun-Lai Summit
+					["name"] = "Step 7: Blackrock Mountain",
+					["coords"] = {
+						{ 37.5, 67.4, BLACKROCK_MOUNTAIN },
+						{ 21.1, 38.4, BURNING_STEPPES },
+					},
+					["icon"] = "Interface\\Icons\\inv_misc_toy_02",
+				}),
+				q(50147, {	-- Step 8: Temple of Karabor
+					["sourceQuests"] = { 50146 },	-- Step 7: Blackrock Mountain
+					["name"] = "Step 8: Temple of Karabor",
+					["coord"] = { 70.7, 46.7, DRAENOR_SHADOWMOON_VALLEY },
+					["icon"] = "Interface\\Icons\\inv_misc_toy_02",
+				}),
 			}),
 		},
 	}),

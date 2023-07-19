@@ -129,7 +129,6 @@ root(ROOTS.Zones, {
 					["lvl"] = 110,
 					["provider"] = { "o", 258980 },	-- Cursed Tome
 					["coord"] = { 37.6, 59.3, DRAENOR_SHADOWMOON_VALLEY },
-					["icon"] = "Interface\\Icons\\inv_misc_book_06",
 					["g"] = {
 						crit(3, {	-- Cursed Tome
 							["achievementID"] = 11240,	-- Harbinger

@@ -12,7 +12,7 @@ MAIN_GATE = createHeader({
 		-- #endif
 	},
 	description = {
-		en = [[Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.]],
+		en = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 	},
 });
 SERVICE_ENTRANCE = createHeader({
@@ -26,7 +26,7 @@ SERVICE_ENTRANCE = createHeader({
 		-- #endif
 	},
 	description = {
-		en = [[Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.]],
+		en = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 	},
 });
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
