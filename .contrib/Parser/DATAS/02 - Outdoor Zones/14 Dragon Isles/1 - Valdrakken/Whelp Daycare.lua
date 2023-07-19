@@ -471,8 +471,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73126, {	-- Arts and Crafts and Baths
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 				}),
 				q(73120, {	-- Appetizing Aftermath
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
@@ -567,7 +567,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(QUESTS, sharedData({ ["isRepeatable"] = true }, {
 				q(77426, {	-- Practice Makes Perfect: Rusziona
-					--["sourceQuests"] = { ??? },	-- TODO
+					["sourceQuests"] = { 74488 },	-- Runaway Rusziona
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
