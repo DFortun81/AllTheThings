@@ -379,6 +379,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(DILATED_TIME_CAPSULE),
 								i(207002),	-- Encapsulated Destiny
 								i(207027),	-- Greater Encapsulated Destiny
+								i(208951),	-- Paracausal Cluster
+								i(208952),	-- Soridormi's Letter of Commendation
 							}),
 						},
 					}),
