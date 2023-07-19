@@ -86,6 +86,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["coord"] = { 42.7, 83.8, WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5804, {	-- Araj's Scarab [H]
+				["qg"] = 11057,	-- Apothecary Dithers
 				["sourceQuest"] = 5802,	-- Fire Plume Forged [Horde]
 				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
@@ -571,14 +572,14 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		{	-- The Key to Scholomance
 			["allianceQuestData"] = q(5505, {	-- The Key to Scholomance [A]
-				["qg"] = 10838,	-- Commander Ashlam Valorfist
+				["qg"] = 11056,	-- Alchemist Arbington
 				["sourceQuest"] = 5803,	-- Araj's Scarab
-				["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
+				["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5511, {	-- The Key to Scholomance [H]
-				["qg"] = 10837,	-- High Executor Derrington
+				["qg"] = 11057,	-- Apothecary Dithers
 				["sourceQuest"] = 5804,	-- Araj's Scarab
-				["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
+				["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
 			["timeline"] = { "removed 4.0.3" },
