@@ -395,7 +395,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							}),
 							i(208125, {	-- Quantum Focus
 							}),
-							i(208113, {	-- Quantum Greataxe (Done kinda)
+							i(208113, {	-- Quantum Greataxe (Done)
 								i(33769),	-- Arcanite Ripper					(BMAH)
 								i(44924),	-- Sun Lute							(BMAH)
 
@@ -419,7 +419,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(208114, {	-- Quantum Greathammer
 								i(2254),	-- Icepane Warhammer				(Removed)
 							}),
-							i(208112, {	-- Quantum Greatsword (Done kinda)
+							i(208112, {	-- Quantum Greatsword (Done)
 								-- CA IS NOT POSSIBLE -- Gold 13.07.2023
 								
 								i(134746),	-- Covert Greatsword 				(Never added)
