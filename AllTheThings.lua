@@ -2123,12 +2123,12 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 	if questRef and questRef.questID then
 		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
-		local completed = app.CurrentCharacter.Quests[id];
+		local completed = app.CurrentCharacter.Quests[id] and true;
 		-- expectations for accurate quest data
 		-- meets current character filters
-		local filter = app.CurrentCharacterFilters(questRef);
+		local filter = app.CurrentCharacterFilters(questRef) and true;
 		-- is marked as in the game
-		local inGame = app.ItemIsInGame(questRef);
+		local inGame = app.ItemIsInGame(questRef) and true;
 		-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check, or character in party sync
 		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed or app.IsInPartySync) and true;
 		-- not missing pre-requisites
