@@ -94,7 +94,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["lvl"] = 55,
 			["groups"] = {
 				objective(1, {	-- 0/1 Araj's Scarab
-					["provider"] = { "i", 14610 },	-- Araj's Scarab
+					["providers"] = {
+						{ "i",  14610 },	-- Araj's Scarab
+						{ "o", 177241 },	-- Araj's Phylactery
+					},
 					["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
 					["cr"] = 1852,	-- Araj the Summoner
 				}),

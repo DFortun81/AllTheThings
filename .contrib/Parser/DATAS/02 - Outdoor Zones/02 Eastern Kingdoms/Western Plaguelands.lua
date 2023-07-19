@@ -1779,7 +1779,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mark of the Lightbringer
-							["provider"] = { "i", 23661 },	-- Mark of the Lightbringer
+							["providers"] = {
+								{ "i", 23661 },	-- Mark of the Lightbringer
+								{ "o", 181629 },	-- Holy Coffer
+							},
 							["coord"] = { 53.8, 24.4, WESTERN_PLAGUELANDS },
 						}),
 					},
