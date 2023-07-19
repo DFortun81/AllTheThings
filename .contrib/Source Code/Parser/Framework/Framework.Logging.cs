@@ -58,6 +58,15 @@ namespace ATT
         /// Outputs the message to the Trace which requires User intervention
         /// </summary>
         /// <param name="message"></param>
+        public static void LogWarn(string message, object data = null)
+        {
+            Log("WARN: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+        }
+
+        /// <summary>
+        /// Outputs the message to the Trace which requires User intervention
+        /// </summary>
+        /// <param name="message"></param>
         public static void LogError(string message, object data = null)
         {
             IsErrored = true;

@@ -2044,11 +2044,7 @@ namespace ATT
             {
                 // Assign the icon and then inform the engineer.
                 CATEGORY_ICONS[categoryID] = icon.Replace("\\", "/");
-                Trace.Write("CATEGORY ICON MISSING FOR ");
-                Trace.Write(categoryID);
-                Trace.Write(": ASSIGNED ");
-                Trace.Write(icon);
-                Trace.WriteLine(" FROM SOURCE.");
+                LogWarn($"CATEGORY ICON MISSING FOR {categoryID} : ASSIGNED {icon} FROM SOURCE.");
                 if (!DebugMode)
                 {
                     Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
@@ -2061,11 +2057,7 @@ namespace ATT
             {
                 // Assign the name and then inform the engineer.
                 CATEGORY_NAMES[categoryID] = name;
-                Trace.Write("CATEGORY NAME MISSING FOR ");
-                Trace.Write(categoryID);
-                Trace.Write(": ASSIGNED ");
-                Trace.Write(name);
-                Trace.WriteLine(" FROM SOURCE.");
+                LogWarn($"CATEGORY NAME MISSING FOR {categoryID} : ASSIGNED {name} FROM SOURCE.");
                 if (!DebugMode)
                 {
                     Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
@@ -2088,9 +2080,7 @@ namespace ATT
             {
                 objectData = new Dictionary<string, object>();
                 ObjectDB[objectID] = objectData;
-                Trace.Write("OBJECT MISSING FOR ");
-                Trace.Write(objectID);
-                Trace.WriteLine("!");
+                LogWarn($"OBJECT MISSING FOR {objectID}!", data);
             }
             if (data.TryGetValue("icon", out string icon))
             {
@@ -2098,11 +2088,7 @@ namespace ATT
                 {
                     // Assign the icon and then inform the engineer.
                     objectData["icon"] = icon.Replace("\\", "/");
-                    Trace.Write("OBJECT ICON MISSING FOR ");
-                    Trace.Write(objectID);
-                    Trace.Write(": ASSIGNED ");
-                    Trace.Write(icon);
-                    Trace.WriteLine(" FROM SOURCE.");
+                    LogWarn($"OBJECT ICON MISSING FOR {objectID} : ASSIGNED {icon} FROM SOURCE.");
                     if (!DebugMode)
                     {
                         Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
@@ -2113,9 +2099,7 @@ namespace ATT
                 }
                 else
                 {
-                    Trace.Write("OBJECT ICON ALREADY IN DATABASE FOR ");
-                    Trace.Write(objectID);
-                    Trace.WriteLine(": You can probably delete it from the source file.");
+                    LogDebug($"OBJECT ICON ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
                 }
             }
             else
@@ -2128,11 +2112,7 @@ namespace ATT
                 {
                     // Assign the model and then inform the engineer.
                     objectData["model"] = model;
-                    Trace.Write("OBJECT MODEL MISSING FOR ");
-                    Trace.Write(objectID);
-                    Trace.Write(": ASSIGNED ");
-                    Trace.Write(model);
-                    Trace.WriteLine(" FROM SOURCE.");
+                    LogWarn($"OBJECT MODEL MISSING FOR {objectID} : ASSIGNED {model} FROM SOURCE.");
                     if (!DebugMode)
                     {
                         Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
@@ -2143,9 +2123,7 @@ namespace ATT
                 }
                 else
                 {
-                    Trace.Write("OBJECT MODEL ALREADY IN DATABASE FOR ");
-                    Trace.Write(objectID);
-                    Trace.WriteLine(": You can probably delete it from the source file.");
+                    LogDebug($"OBJECT MODEL ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
                 }
             }
             else
@@ -2158,11 +2136,7 @@ namespace ATT
                 {
                     // Assign the readable and then inform the engineer.
                     objectData["readable"] = name;
-                    Trace.Write("OBJECT READABLE MISSING FOR ");
-                    Trace.Write(objectID);
-                    Trace.Write(": ASSIGNED ");
-                    Trace.Write(name);
-                    Trace.WriteLine(" FROM SOURCE.");
+                    LogWarn($"OBJECT READABLE MISSING FOR {objectID} : ASSIGNED {name} FROM SOURCE.");
                     if (!DebugMode)
                     {
                         Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
@@ -2173,20 +2147,14 @@ namespace ATT
                 }
                 else
                 {
-                    Trace.Write("OBJECT READABLE ALREADY IN DATABASE FOR ");
-                    Trace.Write(objectID);
-                    Trace.WriteLine(": You can probably delete it from the source file.");
+                    LogDebug($"OBJECT READABLE ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
                 }
 
                 if (!objectData.ContainsKey("text"))
                 {
                     // Assign the text and then inform the engineer.
                     objectData["text"] = new Dictionary<string, object> { { "en", name } };
-                    Trace.Write("OBJECT TEXT MISSING FOR ");
-                    Trace.Write(objectID);
-                    Trace.Write(": ASSIGNED ");
-                    Trace.Write(name);
-                    Trace.WriteLine(" FROM SOURCE.");
+                    LogWarn($"OBJECT TEXT MISSING FOR {objectID} : ASSIGNED {name} FROM SOURCE.");
                     if (!DebugMode)
                     {
                         Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
@@ -2197,9 +2165,7 @@ namespace ATT
                 }
                 else
                 {
-                    Trace.Write("OBJECT TEXT ALREADY IN DATABASE FOR ");
-                    Trace.Write(objectID);
-                    Trace.WriteLine(": You can probably delete it from the source file.");
+                    LogDebug($"OBJECT TEXT ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
                 }
             }
             else
