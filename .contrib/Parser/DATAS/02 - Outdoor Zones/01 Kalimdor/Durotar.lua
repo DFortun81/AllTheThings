@@ -3031,7 +3031,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25236, {	-- Thunder Down Under
 					["qg"] = 39379,	-- Gor the Enforcer
-					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
 					["coord"] = { 44.9, 14.7, DUROTAR },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
@@ -3267,7 +3266,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(7953, {	-- Xar'Ti <Raptor Riding Trainer>
 					["coord"] = { 55.3, 75.5, DUROTAR },
 					["races"] = { ORC, TROLL, UNDEAD },
-					
+
 					-- Available to Trolls without faction requirements.
 					["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
 					["OnInit"] = [[function(t)

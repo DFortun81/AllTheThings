@@ -1150,8 +1150,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			------ Evoker Quests ------
 			q(70446, {	-- A Personal History
-				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
-				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
+				["provider"] = { "n", 193456 },	-- Archivist Edress
+				["coord"] = { 25.0, 56.2, THE_WAKING_SHORES },
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),

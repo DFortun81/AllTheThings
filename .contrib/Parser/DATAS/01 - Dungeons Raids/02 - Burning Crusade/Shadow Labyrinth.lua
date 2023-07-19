@@ -91,7 +91,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(29643, {	-- The Codex of Blood
 					["qg"] = 54890,	-- Field Commander Mahfuun
-					["sourceQuest"] = 29642,	-- Trouble at Auchindoun
 					["coord"] = {50.4, 45.3, SHATTRATH_CITY },
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(68, 68, 20),

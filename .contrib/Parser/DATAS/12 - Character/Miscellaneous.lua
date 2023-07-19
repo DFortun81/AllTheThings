@@ -1,6 +1,7 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
+-- TODO: think this file gets replaced by Dynamic as most of these will become a new tracking Type (Character Unlocks, etc.)
 root(ROOTS.Character, filter(MISC, {
 	cl(DEATHKNIGHT, {
 		i(136796, {	-- Necrophile Tome: Corpse Exploder (CI!)
@@ -121,7 +122,7 @@ root(ROOTS.Character, filter(MISC, {
 			["timeline"] = { ADDED_7_0_3_LAUNCH },
 		}),
 		i(44714, {	-- Tome of Dalaran Brilliance (CI!)
-			["timeline"] = { ADDED_3_0_3 },
+			["timeline"] = { ADDED_3_0_3, REMOVED_7_0_3_LAUNCH },
 		}),
 		i(44602, {	-- Tome of Dalaran Intellect (CI!)
 			["timeline"] = { ADDED_3_0_3, REMOVED_7_0_3_LAUNCH },

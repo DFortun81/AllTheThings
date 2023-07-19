@@ -394,6 +394,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						66221,	-- Moving On
+						66159,	-- A Message Most Dire
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder

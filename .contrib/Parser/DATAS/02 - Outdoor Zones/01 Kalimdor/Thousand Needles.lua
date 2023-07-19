@@ -392,6 +392,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #IF NOT ANYCLASSIC
+				q(25561, {	-- Circle the Wagons... er, Boats [A]
+					["qg"] = 40475,	-- Jinky Twizzlefixxit
+					["altQuests"] = { 25542 },	-- Circle the Wagons... er, Boats [A]
+					["sourceQuest"] = 25532,	-- Pirate Accuracy Increasing [A]
+					["coord"] = { 76.4, 73.6, THOUSAND_NEEDLES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","questID",25542},{"pop"}},
+				}),
+				-- #ENDIF
 				q(25543, {	-- Circle the Wagons... er, Boats [H]
 					["qg"] = 40487,	-- Razzeric
 					["altQuests"] = { 25562 },	-- Circle the Wagons... er, Boats [H]
@@ -417,6 +428,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #IF NOT ANYCLASSIC
+				q(25562, {	-- Circle the Wagons... er, Boats [H]
+					["qg"] = 40487,	-- Razzeric
+					["altQuests"] = { 25543 },	-- Circle the Wagons... er, Boats [H]
+					["sourceQuest"] = 25533,	-- Pirate Accuracy Increasing [H]
+					["coord"] = { 77, 74.4, THOUSAND_NEEDLES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["sym"] = {{"select","questID",25543},{"pop"}},
+				}),
+				-- #ENDIF
 				q(28139, {	-- Codemaster's Code
 					["qg"] = 47580,	-- Lakota Windsong
 					["sourceQuests"] = {

@@ -138,6 +138,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["sourceQuest"] = 30116,	-- Sharpening Your Fangs
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
 						["groups"] = {
+							ach(6181),	-- Fangs of the Father
 							i(77949),	-- Golad, Twilight of Aspects
 							i(77950),	-- Tiriosh, Nightmare of Ages
 						},
@@ -180,7 +181,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["groups"] = {
 							i(77947),	-- The Sleeper
 							i(77948),	-- The Dreamer
-							ach(6181),	-- Fangs of the Father
 						},
 					}),
 				}),

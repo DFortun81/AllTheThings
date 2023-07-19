@@ -19029,7 +19029,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
 					-- Instance/Map/Class groups are allowed as root of minilist
-					if (group.instanceID or group.mapID --[[or group.headerID]] or group.key == "classID")
+					if (group.instanceID or group.mapID or group.key == "classID")
 						-- and actually match this minilist...
 						-- only if this group mapID matches the minilist mapID directly or by maps
 						and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
@@ -19037,6 +19037,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					else
 						tinsert(mapGroups, group);
 					end
+				end
+				if #rootGroups == 0 then
+					app.PrintDebug("No root Map groups!",self.mapID)
 				end
 				-- first merge all root groups into the list
 				for _,group in ipairs(rootGroups) do
