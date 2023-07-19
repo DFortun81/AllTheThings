@@ -1108,7 +1108,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(76617),	-- after buying/loot 'Fel-Infused Polearm' (itemID 206764) (spellID 418943)
 		q(76614),	-- after buying/loot 'Fel-Ridden Divider' (itemID 206790) (spellID 418942)
 		q(76621),	-- after buying/loot 'Felstorm Dragon' (itemID 206676) (spellID 418941)
-		--q(76693),	-- after buying/loot 'Frostspire' (itemID 206797) (spellID 418940) / didn't pop for me
+		q(76693),	-- after buying/loot 'Frostspire' (itemID 206797) (spellID 418940)
 		q(76714),	-- after buying/loot 'Gill'dan' (itemID 208009) (spellID 418939)
 		q(76703),	-- after buying/loot 'Gold-Toed Albatross' (itemID 206675) (spellID 418938)
 		q(76699),	-- after buying/loot 'Hand of Order' (itemID 206794) (spellID 418937)
@@ -1160,7 +1160,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(76686),	-- after buying/loot 'Paracausal Fragment of Val'anyr' (itemID 206958) (spellID 418892)
 		q(76605),	-- after buying/loot 'Pauldrons of the Fire Lord' (itemID 206799) (spellID 418891)
 		q(76685),	-- after buying/loot 'Perfected Juggernaut' (itemID 206679) (spellID 418890)
-		--q(76694),	-- after buying/loot 'Plague-Touched Stave' (itemID 206802) (spellID 418889) / didn't pop for me
+		q(76694),	-- after buying/loot 'Plague-Touched Stave' (itemID 206802) (spellID 418889)
 		q(76637),	-- after buying/loot 'Reins of the Ravenous Black Gryphon' (itemID 206674) (spellID 418888)
 		q(76687),	-- after buying/loot 'Reins of the Scourgebound Vanquisher' (itemID 206680) (spellID 418887)
 		q(76606),	-- after buying/loot 'Serrated Parasite' (itemID 206768) (spellID 418886)
