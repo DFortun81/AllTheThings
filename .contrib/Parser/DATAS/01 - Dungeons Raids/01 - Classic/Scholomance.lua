@@ -118,16 +118,32 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["lvl"] = 52,
 			["groups"] = {
 				objective(1, {	-- 0/1 The Deed to Brill
-					["provider"] = { "i", 13471 },	-- The Deed to Brill
+					["providers"] = {
+						{ "i",  13471 },	-- The Deed to Brill
+						{ "o", 176484 },	-- The Deed to Brill
+					},
+					["description"] = "Can be found along the wall in Ras Frostwhisper's room.",
 				}),
 				objective(2, {	-- 0/1 The Deed to Caer Darrow
-					["provider"] = { "i", 13448 },	-- The Deed to Caer Darrow
+					["providers"] = {
+						{ "i",  13448 },	-- The Deed to Caer Darrow
+						{ "o", 176485 },	-- The Deed to Caer Darrow
+					},
+					["description"] = "Can be found right next to Alexi Barov.",
 				}),
 				objective(3, {	-- 0/1 The Deed to Southshore
-					["provider"] = { "i", 13450 },	-- The Deed to Southshore
+					["providers"] = {
+						{ "i",  13450 },	-- The Deed to Southshore
+						{ "o", 176486 },	-- The Deed to Southshore
+					},
+					["description"] = "Can be found in the very back of the first room hidden behind some bookshelves.",
 				}),
 				objective(4, {	-- 0/1 The Deed to Tarren Mill
-					["provider"] = { "i", 13451 },	-- The Deed to Tarren Mill
+					["providers"] = {
+						{ "i",  13451 },	-- The Deed to Tarren Mill
+						{ "o", 176487 },	-- The Deed to Tarren Mill
+					},
+					["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
 				}),
 			},
 		},
@@ -137,16 +153,32 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 The Deed to Brill
-					["provider"] = { "i", 13471 },	-- The Deed to Brill
+					["providers"] = {
+						{ "i",  13471 },	-- The Deed to Brill
+						{ "o", 176484 },	-- The Deed to Brill
+					},
+					["description"] = "Can be found along the wall in Ras Frostwhisper's room.",
 				}),
 				objective(2, {	-- 0/1 The Deed to Caer Darrow
-					["provider"] = { "i", 13448 },	-- The Deed to Caer Darrow
+					["providers"] = {
+						{ "i",  13448 },	-- The Deed to Caer Darrow
+						{ "o", 176485 },	-- The Deed to Caer Darrow
+					},
+					["description"] = "Can be found right next to Alexi Barov.",
 				}),
 				objective(3, {	-- 0/1 The Deed to Southshore
-					["provider"] = { "i", 13450 },	-- The Deed to Southshore
+					["providers"] = {
+						{ "i",  13450 },	-- The Deed to Southshore
+						{ "o", 176486 },	-- The Deed to Southshore
+					},
+					["description"] = "Can be found in the very back of the first room hidden behind some bookshelves.",
 				}),
 				objective(4, {	-- 0/1 The Deed to Tarren Mill
-					["provider"] = { "i", 13451 },	-- The Deed to Tarren Mill
+					["providers"] = {
+						{ "i",  13451 },	-- The Deed to Tarren Mill
+						{ "o", 176487 },	-- The Deed to Tarren Mill
+					},
+					["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
 				}),
 				i(65923, {	-- Barov Servant Caller
 					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
@@ -679,29 +711,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				i(208096),	-- Familiar Journal (TOY!)
 			},
 		})),
-		o(175965, {	-- Frostwhisper's Embalming Fluid
-			["provider"] = { "i", 12736 },	-- Frostwhisper's Embalming Fluid
+		i(12736, {	-- Frostwhisper's Embalming Fluid
+			["provider"] = { "o", 175965 },	-- Frostwhisper's Embalming Fluid
 			["description"] = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
-			["timeline"] = { REMOVED_5_0_4 }
-		}),
-		o(176484, {	-- The Deed to Brill
-			["provider"] = { "i", 13471 },	-- The Deed to Brill
-			["description"] = "Can be found along the wall in Ras Frostwhisper's room.",
-			["timeline"] = { REMOVED_5_0_4 }
-		}),
-		o(176485, {	-- The Deed to Caer Darrow
-			["provider"] = { "i", 13448 },	-- The Deed to Caer Darrow
-			["description"] = "Can be found right next to Alexi Barov.",
-			["timeline"] = { REMOVED_5_0_4 }
-		}),
-		o(176486, {	-- The Deed to Southshore
-			["provider"] = { "i", 13450 },	-- The Deed to Southshore
-			["description"] = "Can be found in the very back of the first room hidden behind some bookshelves.",
-			["timeline"] = { REMOVED_5_0_4 }
-		}),
-		o(176487, {	-- The Deed to Tarren Mill
-			["provider"] = { "i", 13451 },	-- The Deed to Tarren Mill
-			["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
 			["timeline"] = { REMOVED_5_0_4 }
 		}),
 	}),
