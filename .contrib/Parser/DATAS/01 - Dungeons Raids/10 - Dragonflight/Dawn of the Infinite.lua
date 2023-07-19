@@ -394,9 +394,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(208119, {	-- Quantum Firearm
 							}),
 							i(208125, {	-- Quantum Focus
-							--	i(78433),	-- Ledger of Revolting Rituals (DS Heroic)
 							}),
-							i(208113, {	-- Quantum Greataxe
+							i(208113, {	-- Quantum Greataxe (Done kinda)
 								i(33769),	-- Arcanite Ripper					(BMAH)
 								i(44924),	-- Sun Lute							(BMAH)
 
@@ -420,8 +419,16 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(208114, {	-- Quantum Greathammer
 								i(2254),	-- Icepane Warhammer				(Removed)
 							}),
-							i(208112, {	-- Quantum Greatsword
+							i(208112, {	-- Quantum Greatsword (Done kinda)
 								-- CA IS NOT POSSIBLE -- Gold 13.07.2023
+								
+								i(134746),	-- Covert Greatsword 				(Never added)
+								i(134606),	-- Scorching Greatsword 			(Never added)
+								
+								i(2014),	-- Black Metal Greatsword 			(Removed)
+								i(2204),	-- Brashclaws Skewer 				(Removed)
+								i(3188),	-- Coral Claymore 					(Removed)
+								i(2084),	-- Darksteel Bastard Sword 			(Removed)
 								i(1387),	-- Ghoulfang						(Removed)
 								i(16039),	-- Ta'Kierthan Songblade			(Removed)
 								i(2754),	-- Tarnished Bastard Sword			(Removed)
