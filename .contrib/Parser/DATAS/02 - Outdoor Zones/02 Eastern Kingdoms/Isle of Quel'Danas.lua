@@ -1398,7 +1398,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Energize a Crystal Ward
-							["provider"] = { "i", 34338 },	-- Mana Remnants
+							["providers"] = {
+								{ "i",  34338 },	-- Mana Remnants
+								{ "o", 187078 },	-- Crystal Ward
+							},
 							["coord"] = { 46, 35, ISLE_OF_QUELDANAS },
 							["cr"] = 24966,	-- Wretched Fiend
 						}),
@@ -1832,7 +1835,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Energize a Crystal Ward
-							["provider"] = { "i", 34338 },	-- Mana Remnants
+							["providers"] = {
+								{ "i",  34338 },	-- Mana Remnants
+								{ "o", 187078 },	-- Crystal Ward
+							},
 							["coord"] = { 46, 35, ISLE_OF_QUELDANAS },
 							["cr"] = 24966,	-- Wretched Fiend
 						}),

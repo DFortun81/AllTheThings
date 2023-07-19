@@ -515,7 +515,7 @@ achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with
 end
 achWithReps = function(id, factions, t)					-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
 	t = ach(id, t);
-	-- #if BEFORE WRATH
+	-- #if ANYCLASSIC
 	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
 	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
 	for i=2,#factions,1 do init = init .. "," .. factions[i]; end
