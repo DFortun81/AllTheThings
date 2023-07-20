@@ -1403,7 +1403,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 								{ "o", 187078 },	-- Crystal Ward
 							},
 							["coord"] = { 46, 35, ISLE_OF_QUELDANAS },
-							["cr"] = 24966,	-- Wretched Fiend
+							["crs"] = {
+								24960,	-- Wretched Devourer
+								24966,	-- Wretched Fiend
+								25047,	-- Wretched Hungerer
+							},
 						}),
 					},
 				})),
@@ -1840,7 +1844,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 								{ "o", 187078 },	-- Crystal Ward
 							},
 							["coord"] = { 46, 35, ISLE_OF_QUELDANAS },
-							["cr"] = 24966,	-- Wretched Fiend
+							["crs"] = {
+								24960,	-- Wretched Devourer
+								24966,	-- Wretched Fiend
+								25047,	-- Wretched Hungerer
+							},
 						}),
 					},
 				})),
