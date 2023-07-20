@@ -651,9 +651,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- Cloak
-				i(190200, {	-- Feathered Drape of the Guardian
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
 				i(190427, {	-- Scarlet Zealot's Cloak
 					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
 				}),
@@ -661,9 +658,6 @@ root(ROOTS.NeverImplemented, {
 
 				-- Gloves
 				-- Head
-				i(190216, {	-- Feathered Cowl of the Guardian
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
 
 				-- Weapons
 				-- 1H Weapon
@@ -673,9 +667,6 @@ root(ROOTS.NeverImplemented, {
 
 				-- 2H Weapon
 				i(190578, {	-- Headmaster's Command
-					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
-				}),
-				i(190220, {	-- Standard of the Guardian
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
 
