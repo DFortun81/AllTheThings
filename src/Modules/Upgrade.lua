@@ -199,6 +199,6 @@ api.CollectibleAsUpgrade = function(t)
 	-- search for the upgrade
 	local search = SearchForObject("itemID", floor(t.itemID) + up);
 	t._up = search;
-	-- app.PrintDebug("hasUpgrade",not search.collected,t.modItemID,search.modItemID)
+	-- app.PrintDebug("hasUpgrade",search and not search.collected,t.modItemID,search and search.modItemID)
 	return search and not search.collected;
 end
