@@ -1620,8 +1620,5 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(35595),	-- Scholomance Reward Quest - Heroic completion
 	}),
 	-- #endif
-	-- #if AFTER 10.1
-		q(76250),	-- Upon crafting the Spectral Essence (13544)
-	-- #endif
 });
 -- #endif
