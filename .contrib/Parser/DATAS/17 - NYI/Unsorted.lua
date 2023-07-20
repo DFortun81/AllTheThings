@@ -438,7 +438,6 @@ root(ROOTS.Unsorted, {
 			i(205199),	-- Slime Sheathed Shell
 			i(207594),	-- Looter's Purse
 			i(207956),	-- Thunderspine Nest
-			i(208006),	-- Greater Paracausal Chest
 			i(208029),	-- Scareloc Parts
 			i(207984),	-- Chroniton Wand
 			i(208001),	-- Timewalker's Cudgel
