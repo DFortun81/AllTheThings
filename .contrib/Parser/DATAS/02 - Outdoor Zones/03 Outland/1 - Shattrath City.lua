@@ -843,9 +843,18 @@ root(ROOTS.Zones, {
 						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/10 Smuggled Mana Cell
-								["provider"] = { "i", 34246 },	-- Smuggled Mana Cell
+								["providers"] = {
+									{ "i",  34246 },	-- Smuggled Mana Cell
+									{ "o", 187039 },	-- Smuggled Mana Cell
+								},
 								["cost"] = { { "i", 34248, 1 } },	-- Bash'ir Phasing Device
 								["coord"] = { 51, 19.3, BLADES_EDGE_MOUNTAINS },
+								["crs"] = {
+									22243,	-- Bash'ir Arcanist
+									22241,	-- Bash'ir Raider
+									22242,	-- Bash'ir Spell-Thief
+									22244,	-- Unbound Ethereal
+								},
 							}),
 							i(35232),	-- Shattered Sun Supplies
 						},
@@ -880,9 +889,18 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(70, 70, 25),
 						["groups"] = {
 							objective(1, {	-- 0/10 Smuggled Mana Cell
-								["provider"] = { "i", 34246 },	-- Smuggled Mana Cell
+								["providers"] = {
+									{ "i",  34246 },	-- Smuggled Mana Cell
+									{ "o", 187039 },	-- Smuggled Mana Cell
+								},
 								["cost"] = { { "i", 34248, 1 } },	-- Bash'ir Phasing Device
 								["coord"] = { 51, 19.3, BLADES_EDGE_MOUNTAINS },
+								["crs"] = {
+									22243,	-- Bash'ir Arcanist
+									22241,	-- Bash'ir Raider
+									22242,	-- Bash'ir Spell-Thief
+									22244,	-- Unbound Ethereal
+								},
 							}),
 							i(35232),	-- Shattered Sun Supplies
 						},
