@@ -416,8 +416,62 @@ i(0, 53690);	-- Verdant Tundra Shoulderpads
 -- PATCH 3.0.2 --
 ------------------
 -- TRAINER --
+i(0, 51572);	-- Arctic Helm
+i(0, 51568);	-- Black Chitinguard Boots
 i(0, 64661);	-- Borean Leather
+i(0, 60620);	-- Bugsquashers
+i(0, 60631);	-- Cloak of Harsh Winds
+i(0, 51570);	-- Dark Arctic Chestpiece
+i(0, 51569);	-- Dark Arctic Leggings
+i(0, 60601);	-- Dark Frostscale Leggings
+i(0, 60604);	-- Dark Frostscale Breastplate
+i(0, 60613);	-- Dark Iceborne Chestguard
+i(0, 60611);	-- Dark Iceborne Leggings
+i(0, 60629);	-- Dark Nerubian Chestpiece
+i(0, 60627);	-- Dark Nerubian Leggings
+i(0, 60605);	-- Dragonstompers
+i(0, 60640);	-- Durable Nerubhide Cape
+i(0, 60652);	-- Eaglebane Bracers
 i(0, 62448);	-- Earthen Leg Armor
+i(0, 50965);	-- Frosthide Leg Armor
+i(0, 50954);	-- Frostscale Boots
+i(0, 60599);	-- Frostscale Bracers
+i(0, 50950);	-- Frostscale Chestguard
+i(0, 50953);	-- Frostscale Gloves
+i(0, 60600);	-- Frostscale Helm
+i(0, 50951);	-- Frostscale Leggings
+i(0, 50952);	-- Frostscale Shoulders
+i(0, 60637);	-- Ice Striker's Cloak
+i(0, 50942);	-- Iceborne Boots
+i(0, 50938);	-- Iceborne Chestguard
+i(0, 50941);	-- Iceborne Gloves
+i(0, 60608);	-- Iceborne Helm
+i(0, 50939);	-- Iceborne Leggings
+i(0, 50940);	-- Iceborne Shoulderpads
+i(0, 60607);	-- Iceborne Wristguards
+i(0, 50967);	-- Icescale Leg Armor
+i(0, 60666);	-- Jormscale Footpads
+i(0, 50964);	-- Jormungar Leg Armor
+i(0, 60583);	-- Jormungar Leg Reinforcements
+i(0, 60660);	-- Leggings of Visceral Strikes
+i(0, 60622);	-- Nerubian Bracers
+i(0, 50960);	-- Nerubian Boots
+i(0, 50956);	-- Nerubian Chestguard
+i(0, 50959);	-- Nerubian Gloves
+i(0, 60624);	-- Nerubian Helm
+i(0, 50966);	-- Nerubian Leg Armor
+i(0, 60584);	-- Nerubian Leg Reinforcements
+i(0, 50957);	-- Nerubian Legguards
+i(0, 50958);	-- Nerubian Shoulders
+i(0, 60658);	-- Nightshock Girdle
+i(0, 60655);	-- Nightshock Hood
+i(0, 60643);	-- Pack of Endless Pockets
+i(0, 60671);	-- Purehorn Spaulders
+i(0, 60649);	-- Razorstrike Breastplate
+i(0, 60630);	-- Scaled Icewalkers
+i(0, 60665);	-- Seafoam Gauntlets
+i(0, 60651);	-- Virulent Spaulders
+i(0, 60669);	-- Wildscale Breastplate
 -- ITEM --
 i(44553, 60761);	-- Earthgiving Boots
 i(44552, 60760);	-- Earthgiving Legguards
@@ -434,6 +488,15 @@ i(44546, 60754);	-- Giantmaim Legguards
 i(44588, 61000);	-- Icy Scale Belt
 i(44589, 61002);	-- Icy Scale Boots
 i(44587, 60999);	-- Icy Scale Chestguard
+i(44510, 50971);	-- Mammoth Mining Bag
+i(44526, 60723);	-- Overcast Belt
+i(44528, 60727);	-- Overcast Boots
+i(44524, 60720);	-- Overcast Bracers
+i(44523, 60718);	-- Overcast Chestguard
+i(44525, 60721);	-- Overcast Handwraps
+i(44521, 60715);	-- Overcast Headguard
+i(44527, 60725);	-- Overcast Leggings
+i(44522, 60716);	-- Overcast Spaulders
 i(44586, 60998);	-- Polar Boots
 i(44585, 60997);	-- Polar Cord
 i(44584, 60996);	-- Polar Vest
@@ -455,10 +518,22 @@ i(44532, 60730);	-- Swiftarrow Hauberk
 i(44530, 60728);	-- Swiftarrow Helm
 i(44536, 60735);	-- Swiftarrow Leggings
 i(44531, 60729);	-- Swiftarrow Shoulderguards
+i(44509, 50970);	-- Trapper's Traveling Pack
 i(44551, 60759);	-- Trollwoven Girdle
 i(44550, 60758);	-- Trollwoven Spaulders
 i(44932, 62176);	-- Windripper Boots
 i(44933, 62177);	-- Windripper Leggings
+-- REMOVED --
+i(44511, 60645);	-- Dragonscale Ammo Pouch (4.0.1)
+i(0, 57683);	-- Fur Lining - Attack Power (6.0.2)
+i(44563, 57701);	-- Fur Lining - Arcane Resist (5.0.4)
+i(44559, 57692);	-- Fur Lining - Fire Resist (5.0.4)
+i(44560, 57694);	-- Fur Lining - Frost Resist (5.0.4)
+i(44562, 57699);	-- Fur Lining - Nature Resist (5.0.4)
+i(44561, 57696);	-- Fur Lining - Shadow Resist (5.0.4)
+i(0, 57691);	-- Fur Lining - Spell Power (6.0.2)
+i(0, 57690);	-- Fur Lining - Stamina (6.0.2)
+i(44512, 60647);	-- Nerubian Reinforced Quiver (4.0.1)
 
 ------------------
 -- PATCH 3.1.0 --

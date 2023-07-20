@@ -5704,28 +5704,28 @@ root(ROOTS.Zones, {
 							i(44587, {	-- Pattern: Icy Scale Chestguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44526, {	-- Pattern: Overcast Belt
+							i(44526, {	-- Pattern: Overcast Belt (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44528, {	-- Pattern: Overcast Boots
+							i(44528, {	-- Pattern: Overcast Boots (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44524, {	-- Pattern: Overcast Bracers
+							i(44524, {	-- Pattern: Overcast Bracers (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44523, {	-- Pattern: Overcast Chestguard
+							i(44523, {	-- Pattern: Overcast Chestguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44525, {	-- Pattern: Overcast Handwraps
+							i(44525, {	-- Pattern: Overcast Handwraps (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44521, {	-- Pattern: Overcast Headguard
+							i(44521, {	-- Pattern: Overcast Headguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44527, {	-- Pattern: Overcast Leggings
+							i(44527, {	-- Pattern: Overcast Leggings (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44522, {	-- Pattern: Overcast Spaulders
+							i(44522, {	-- Pattern: Overcast Spaulders (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
 							i(44586, {	-- Pattern: Polar Boots (RECIPE!)
