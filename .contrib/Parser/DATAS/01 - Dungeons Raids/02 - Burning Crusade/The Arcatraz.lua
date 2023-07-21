@@ -132,7 +132,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(21905, {	-- Pattern: Arcanoweave Bracers
 					["cr"] = 20869,	-- Arcatraz Sentinel
 				}),
-				i(29672, {	-- Pattern: Flame Armor Kit
+				i(29672, {	-- Pattern: Flame Armor Kit (RECIPE!)
 					["cr"] = 20898,	-- Gargantuan Abyssal
 					["timeline"] = { "removed 5.0.4" },
 				}),

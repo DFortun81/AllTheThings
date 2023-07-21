@@ -141,6 +141,11 @@ i(7363, 9148);	-- Pilferer's Gloves
 i(7290, 9072);	-- Red Whelp Gloves
 i(7288, 9064);	-- Rugged Leather Pants
 i(7453, 9208);	-- Swift Boots
+-- REMOVED --
+i(0, 9060);	-- Light Leather Quiver (4.0.1)
+i(0, 9062);	-- Small Leather Ammo Pouch (4.0.1)
+i(0, 9193);	-- Heavy Quiver (4.0.1)
+i(0, 9194);	-- Heavy Leather Ammo Pouch (4.0.1)
 
 ------------------
 -- PATCH 0.7.0 --
@@ -190,6 +195,13 @@ i(8400, 10564);-- Tough Scorpid Shoulders (4.0.3)
 i(0, 10660);-- Tribal Leatherworking (4.0.3)
 -- NYI --
 i(8388, 10550);	-- Nightscape Cloak
+
+------------------
+-- PATCH 0.9.0 --
+------------------
+-- REMOVED--
+i(0, 14930);	-- Quickdraw Quiver (4.0.1)
+i(0, 14932);	-- Thick Leather Ammo Pouch (4.0.1)
 
 ------------------
 -- PATCH 1.1.2 --
@@ -342,13 +354,26 @@ i(0, 32549);	-- Leatherworking (Master) (8.0.1)
 -- PATCH 2.0.1 --
 ------------------
 -- TRAINER --
+i(0, 36074);	-- Blackstorm Leggings
+i(0, 36076);	-- Dragonstrike Leggings
+i(0, 35576);	-- Ebon Netherscale Belt
+i(0, 35577);	-- Ebon Netherscale Bracers
+i(0, 35575);	-- Ebon Netherscale Breastplate
 i(0, 32462);	-- Felscale Gloves
 i(0, 32463);	-- Felscale Boots
 i(0, 32464);	-- Felscale Pants
 i(0, 32465);	-- Felscale Breastplate
+i(0, 36079);	-- Golden Dragonstrike Breastplate
 i(0, 32455);	-- Heavy Knothide Leather
 i(0, 32456);	-- Knothide Armor Kit
 i(0, 32454);	-- Knothide Leather
+i(0, 36078);	-- Living Crystal Breastplate
+i(0, 35582);	-- Netherstrike Belt
+i(0, 35584);	-- Netherstrike Bracers
+i(0, 35580);	-- Netherstrike Breastplate
+i(0, 35590);	-- Primalstrike Belt
+i(0, 35591);	-- Primalstrike Bracers
+i(0, 35589);	-- Primalstrike Vest
 i(0, 32466);	-- Scaled Draenic Pants
 i(0, 32467);	-- Scaled Draenic Gloves
 i(0, 32468);	-- Scaled Draenic Vest
@@ -361,27 +386,158 @@ i(0, 32478);	-- Wild Draenish Boots
 i(0, 32479);	-- Wild Draenish Gloves
 i(0, 32480);	-- Wild Draenish Leggings
 i(0, 32481);	-- Wild Draenish Vest
+i(0, 35587);	-- Windhawk Belt
+i(0, 35588);	-- Windhawk Bracers
+i(0, 35585);	-- Windhawk Hauberk
 -- ITEM --
+i(29704, 35537);	-- Blastguard Belt
+i(29703, 35536);	-- Blastguard Boots
+i(29702, 35535);	-- Blastguard Pants
+i(29720, 35555);	-- Clefthide Leg Armor
+i(29719, 35549);	-- Cobrahide Leg Armor (A)
+i(31361, 35549);	-- Cobrahide Leg Armor (H)
+i(29724, 35559);	-- Cobrascale Gloves
+i(29723, 35558);	-- Cobrascale Hood
 i(25726, 32482);	-- Comfortable Insoles
+i(29701, 35534);	-- Enchanted Clefthoof Boots
+i(29700, 35533);	-- Enchanted Clefthoof Gloves
+i(29698, 35532);	-- Enchanted Clefthoof Leggings
+i(29684, 35527);	-- Enchanted Felscale Boots
+i(29682, 35526);	-- Enchanted Felscale Gloves
+i(29677, 35525);	-- Enchanted Felscale Leggings
 i(25733, 32493);	-- Fel Leather Boots
 i(25732, 32490);	-- Fel Leather Gloves
 i(25734, 32494);	-- Fel Leather Leggings
+i(29693, 35531);	-- Flamescale Belt
+i(29691, 35528);	-- Flamescale Boots
+i(29689, 35529);	-- Flamescale Leggings
+i(29727, 35562);	-- Gloves of the Living Touch
 i(25737, 32497);	-- Heavy Clefthoof Boots
 i(25736, 32496);	-- Heavy Clefthoof Leggings
 i(25735, 32495);	-- Heavy Clefthoof Vest
+i(29729, 35564);	-- Living Dragonscale Helm
 i(25722, 32458);	-- Magister's Armor Kit
+i(29721, 35557);	-- Nethercleft Leg Armor
+i(29722, 35554);	-- Nethercobra Leg Armor (A)
+i(31362, 35554);	-- Nethercobra Leg Armor (H)
 i(25725, 32461);	-- Riding Crop
 i(25729, 32487);	-- Stylin' Adventure Hat
 i(25731, 32488);	-- Stylin' Crimson Hat
 i(25730, 32489);	-- Stylin' Jungle Hat
 i(25728, 32485);	-- Stylin' Purple Hat
+i(29734, 35574);	-- Thick Netherscale Breastplate
 i(25721, 32457);	-- Vindicator's Armor Kit
+i(29725, 35560);	-- Windscale Hood
+i(29728, 35563);	-- Windslayer Wraps
+i(29731, 35568);	-- Windstrike Gloves
+
+------------------
+-- PATCH 2.0.3 --
+------------------
+-- TRAINER --
+i(0, 35540);	-- Drums of War
+i(0, 36077);	-- Primalstorm Breastplate
+i(0, 36075);	-- Wildfeather Leggings
+-- ITEM --
+i(30305, 36355);	-- Boots of Natural Grace
+i(30307, 36358);	-- Boots of the Crimson Hawk
+i(30306, 36357);	-- Boots of Utter Darkness
+i(33124, 42546);	-- Cloak of Darkness
+i(29717, 35543);	-- Drums of Battle
+i(29713, 35538);	-- Drums of Panic
+i(29730, 35567);	-- Earthen Netherscale Boots
+i(29726, 35561);	-- Hood of Primal Life
+i(30308, 36359);	-- Hurricane Boots
+i(30304, 36353);	-- Monsoon Belt
+i(29733, 35573);	-- Netherdrake Gloves
+i(29732, 35572);	-- Netherdrake Helm
+i(30444, 35530);	-- Reinforced Mining Bag
+i(33205, 42731);	-- Shadowprowler's Chestguard
+-- REMOVED --
+i(29675, 35524);	-- Arcane Armor Kit (5.0.4)
+i(29714, 35539);	-- Drums of Restoration (2.3.0)
+i(29718, 35544);	-- Drums of Speed (2.3.0)
+i(29672, 35521);	-- Flame Armor Kit (5.0.4)
+i(29673, 35522);	-- Frost Armor Kit (5.0.4)
+i(29674, 35523);	-- Nature Armor Kit (5.0.4)
+i(34218, 44768);	-- Netherscale Ammo Pouch (A) (4.0.1)
+i(34201, 44768);	-- Netherscale Ammo Pouch (H) (4.0.1)
+i(29669, 35520);	-- Shadow Armor Kit (5.0.4)
 
 ------------------
 -- PATCH 2.1.0 --
 ------------------
 -- ITEM --
-i(32430, 52733);	-- Bracers of Shackled Souls
+i(30302, 36351);	-- Belt of Deep Shadow
+i(30301, 36349);	-- Belt of Natural Power
+i(30303, 36352);	-- Belt of the Black Eagle
+i(32748, 41161);	-- Bindings of Lightning Reflexes
+i(32429, 39997);	-- Boots of Shackled Souls
+i(32744, 41156);	-- Bracers of Renewed Life
+i(32431, 40001);	-- Greaves of Shackled Souls
+i(32750, 41163);	-- Living Earth Bindings
+i(32751, 41164);	-- Living Earth Shoulders
+i(32436, 40006);	-- Redeemed Soul Cinch
+i(32435, 40005);	-- Redeemed Soul Legguards
+i(32433, 40003);	-- Redeemed Soul Moccasins
+i(32434, 40004);	-- Redeemed Soul Wristguards
+i(32745, 41157);	-- Shoulderpads of Renewed Life
+i(32749, 41162);	-- Shoulders of Lightning Reflexes
+i(32746, 41158);	-- Swiftstrike Bracers
+i(32747, 41160);	-- Swiftstrike Shoulders
+i(32432, 40002);	-- Waistguard of Shackled Souls
+-- UNSURE --
+i(32430, 40000);	-- Bracers of Shackled Souls (This one seems normal)
+i(32430, 52733);	-- Bracers of Shackled Souls (This one needs to be looked into)
+
+------------------
+-- PATCH 2.3.0 --
+------------------
+-- TRAINER --
+i(0, 44770);	-- Glove Reinforcements
+i(0, 44970);	-- Heavy Knothide Armor Kit
+i(0, 45100);	-- Leatherworker's Satchel
+-- ITEM --
+i(34491, 45117);	-- Bag of Many Hides
+i(34175, 35539);	-- Drums of Restoration (A)
+i(34174, 35539);	-- Drums of Restoration (H)
+i(34173, 35544);	-- Drums of Speed (A)
+i(34172, 35544);	-- Drums of Speed (H)
+i(34262, 44953);	-- Winter Boots
+-- REMOVED --
+i(0, 44343);-- Knothide Ammo Pouch (4.0.1)
+i(0, 44344);-- Knothide Quiver (4.0.1)
+i(34200, 44359);	-- Quiver of a Thousand Feathers (4.0.1)
+
+------------------
+-- PATCH 2.4.0 --
+------------------
+-- ITEM --
+i(35218, 46138);	-- Carapace of Sun and Shadow
+i(35302, 35559);	-- Cobrascale Gloves (BoP)
+i(35217, 46137);	-- Embrace of the Phoenix
+i(35213, 46133);	-- Fletcher's Gloves of the Phoenix
+i(35214, 46134);	-- Gloves of Immortal Dusk
+i(35303, 35562);	-- Gloves of the Living Touch (BoP)
+i(35216, 46136);	-- Leather Chestguard of the Sun
+i(35212, 46132);	-- Leather Gauntlets of the Sun
+i(35301, 35573);	-- Netherdrake Gloves (BoP)
+i(35215, 46135);	-- Sun-Drenched Scale Gloves
+i(35219, 46139);	-- Sun-Drenched Scale Chestguard
+i(35300, 35568);	-- Windstrike Gloves (BoP)
+
+------------------
+-- PATCH 2.5.1 --
+------------------
+-- ITEM --
+i(185926, 351771);	-- Greater Drums of Battle
+i(185925, 351770);	-- Greater Drums of Panic
+i(187048, 351769);	-- Greater Drums of Restoration (A)
+i(185924, 351769);	-- Greater Drums of Restoration (H)
+i(187049, 351768);	-- Greater Drums of Speed (A)
+i(185923, 351768);	-- Greater Drums of Speed (H)
+-- UNSURE --
+i(185922, 351766);	-- Greater Drums of War
 
 ------------------
 -- PATCH 3.0.1 --
@@ -988,6 +1144,7 @@ i(0, 143109);	-- Crafted Malevolent Gladiator's Wyrmhide Spaulders
 i(0, 146923);	-- Accelerated Hardened Magnificent Hide
 i(102513, 146613);	-- Drums of Rage
 i(100864, 142976);	-- Hardened Magnificent Hide
+
 ------------------
 -- PATCH 6.0.2 --
 ------------------

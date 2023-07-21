@@ -880,7 +880,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				["timeline"] = { "added 2.3.0.7501" },
 			}),
-			i(34262, {	-- Pattern: Winter Boots
+			i(34262, {	-- Pattern: Winter Boots (RECIPE!)
 				["timeline"] = { "added 2.3.0.7501" },
 			}),
 			i(34413, {	-- Recipe: Hot Apple Cider
@@ -2232,7 +2232,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 			},
 			["groups"] = {
-				i(34262, {	-- Pattern: Winter Boots
+				i(34262, {	-- Pattern: Winter Boots (RECIPE!)
 					["timeline"] = { "added 2.3.0.7501" },
 				}),
 				-- #if BEFORE CATA

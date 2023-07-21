@@ -1747,9 +1747,9 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35362)),	-- Kodohide Helm
 							applyclassicphase(TBC_PHASE_TWO, i(35333)),	-- Mooncloth Cowl
 							applyclassicphase(TBC_PHASE_TWO, i(35368)),	-- Opportunist's Leather Legguards
-							i(29717),	-- Pattern: Drums of Battle
+							i(29717),	-- Pattern: Drums of Battle (RECIPE!)
 							-- #if ANYCLASSIC
-							applyclassicphase(TBC_PHASE_FOUR, i(185926)),	-- Pattern: Greater Drums of Battle
+							applyclassicphase(TBC_PHASE_FOUR, i(185926)),	-- Pattern: Greater Drums of Battle (RECIPE!)
 							-- #endif
 							i(13517),	-- Recipe: Alchemist Stone
 							i(31354),	-- Recipe: Flask of the Titans
@@ -2420,7 +2420,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35335)),	-- Mooncloth Mitts
 							applyclassicphase(TBC_PHASE_TWO, i(35370)),	-- Opportunist's Leather Tunic
 							i(30833),	-- Pattern: Cloak of Arcane Evasion
-							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers
+							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers (RECIPE!)
 								["timeline"] = { "removed 4.0.1" },
 							})),
 							i(22910),	-- Recipe: Elixir of Major Shadow Power
@@ -2606,15 +2606,15 @@ root(ROOTS.Zones, {
 							-- #endif
 							i(29128),	-- Lightwarden's Band
 							i(29123),	-- Medallion of the Lightbearer
-							i(29704),	-- Pattern: Blastguard Belt
-							i(29703),	-- Pattern: Blastguard Boots
-							i(29702),	-- Pattern: Blastguard Pants
+							i(29704),	-- Pattern: Blastguard Belt (RECIPE!)
+							i(29703),	-- Pattern: Blastguard Boots (RECIPE!)
+							i(29702),	-- Pattern: Blastguard Pants (RECIPE!)
 							i(30842),	-- Pattern: Flameheart Bracers
 							i(30843),	-- Pattern: Flameheart Gloves
 							i(30844),	-- Pattern: Flameheart Vest
-							i(29693),	-- Pattern: Flamescale Belt
-							i(29691),	-- Pattern: Flamescale Boots
-							i(29689),	-- Pattern: Flamescale Leggings
+							i(29693),	-- Pattern: Flamescale Belt (RECIPE!)
+							i(29691),	-- Pattern: Flamescale Boots (RECIPE!)
+							i(29689),	-- Pattern: Flamescale Leggings (RECIPE!)
 							i(24295),	-- Pattern: Golden Spellthread
 							i(24293),	-- Pattern: Silver Spellthread
 							i(25721),	-- Pattern: Vindicator's Armor Kit (RECIPE!)
@@ -2646,12 +2646,12 @@ root(ROOTS.Zones, {
 							}),
 							-- #endif
 							i(29134),	-- Gauntlets of the Chosen
-							i(29701),	-- Pattern: Enchanted Clefthoof Boots
-							i(29700),	-- Pattern: Enchanted Clefthoof Gloves
-							i(29698),	-- Pattern: Enchanted Clefthoof Leggings
-							i(29684),	-- Pattern: Enchanted Felscale Boots
-							i(29682),	-- Pattern: Enchanted Felscale Gloves
-							i(29677),	-- Pattern: Enchanted Felscale Leggings
+							i(29701),	-- Pattern: Enchanted Clefthoof Boots (RECIPE!)
+							i(29700),	-- Pattern: Enchanted Clefthoof Gloves (RECIPE!)
+							i(29698),	-- Pattern: Enchanted Clefthoof Leggings (RECIPE!)
+							i(29684),	-- Pattern: Enchanted Felscale Boots (RECIPE!)
+							i(29682),	-- Pattern: Enchanted Felscale Gloves (RECIPE!)
+							i(29677),	-- Pattern: Enchanted Felscale Leggings (RECIPE!)
 							i(25722),	-- Pattern: Magister's Armor Kit (RECIPE!)
 							i(24292),	-- Pattern: Mystic Spellthread
 							i(24294),	-- Pattern: Runic Spellthread

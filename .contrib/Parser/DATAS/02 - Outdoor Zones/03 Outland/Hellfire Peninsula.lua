@@ -3179,7 +3179,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35470)),	-- Kodohide Spaulders
 							applyclassicphase(TBC_PHASE_TWO, i(35467)),	-- Mooncloth Vestments
 							applyclassicphase(TBC_PHASE_TWO, i(35468)),	-- Opportunist's Leather Gloves
-							i(29719, {	-- Pattern: Cobrahide Leg Armor
+							i(29719, {	-- Pattern: Cobrahide Leg Armor (A) (RECIPE!)
 								["spellID"] = 35549,	-- Cobrahide Leg Armor
 								["requireSkill"] = LEATHERWORKING,
 							}),
@@ -3195,11 +3195,11 @@ root(ROOTS.Zones, {
 								["spellID"] = 32500,	-- Felstalker Breastplate
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							i(29722, {	-- Pattern: Nethercobra Leg Armor
+							i(29722, {	-- Pattern: Nethercobra Leg Armor (A) (RECIPE!)
 								["spellID"] = 35554,	-- Nethercobra Leg Armor
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch
+							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch (A) (RECIPE!)
 								["timeline"] = { "removed 4.0.1" },
 							})),
 							i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
@@ -3291,7 +3291,7 @@ root(ROOTS.Zones, {
 							i(29152),	-- Marksman's Bow
 							applyclassicphase(TBC_PHASE_TWO, i(35337)),	-- Mooncloth Vestments
 							applyclassicphase(TBC_PHASE_TWO, i(35366)),	-- Opportunist's Leather Gloves
-							i(31361, {	-- Pattern: Cobrahide Leg Armor
+							i(31361, {	-- Pattern: Cobrahide Leg Armor (H) (RECIPE!)
 								["spellID"] = 35549,	-- Cobrahide Leg Armor
 								["requireSkill"] = LEATHERWORKING,
 							}),
@@ -3307,11 +3307,11 @@ root(ROOTS.Zones, {
 								["spellID"] = 32500,	-- Felstalker Breastplate
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							i(31362, {	-- Pattern: Nethercobra Leg Armor
+							i(31362, {	-- Pattern: Nethercobra Leg Armor (H) (RECIPE!)
 								["spellID"] = 35554,	-- Nethercobra Leg Armor
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch
+							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch (H) (RECIPE!)
 								["timeline"] = { "removed 4.0.1" },
 							})),
 							i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)

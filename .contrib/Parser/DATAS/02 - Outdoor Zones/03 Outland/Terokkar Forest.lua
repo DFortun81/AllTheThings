@@ -1690,7 +1690,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(34491, {    -- Pattern: Bag of Many Hides
+					i(34491, {    -- Pattern: Bag of Many Hides (RECIPE!)
 						["crs"] = {
 							22143,    -- Gordunni Back-Breaker
 							22144,    -- Gordunni Elementalist
