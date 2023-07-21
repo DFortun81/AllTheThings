@@ -574,6 +574,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(203684),	-- Silver Timepiece
 					},
 				}),
+				q(77430, {	-- Practice Makes Perfect: Belastrasza
+					["sourceQuests"] = { 74492 },	-- Blistering Belastrasza
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
 			})),
 		})),
 	}),
