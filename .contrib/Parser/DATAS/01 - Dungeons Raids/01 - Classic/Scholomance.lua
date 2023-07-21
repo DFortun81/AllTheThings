@@ -865,7 +865,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(14548),	-- Royal Cap Spaulders
-		i(14543),	-- Darkshade Gloves
+		i(14543, {	-- Darkshade Gloves
+			["timeline"] = { REMOVED_5_0_4 },
+		}),
 		i(14545),	-- Ghostloom Leggings
 		i(18690),	-- Wraithplate Leggings
 	}),
