@@ -487,8 +487,8 @@ i(32746, 41158);	-- Swiftstrike Bracers
 i(32747, 41160);	-- Swiftstrike Shoulders
 i(32432, 40002);	-- Waistguard of Shackled Souls
 -- UNSURE --
-i(32430, 40000);	-- Bracers of Shackled Souls (This one seems normal)
-i(32430, 52733);	-- Bracers of Shackled Souls (This one needs to be looked into)
+-- i(32430, 40000);	-- Bracers of Shackled Souls (This was replaced during Cata)
+i(32430, 52733);	-- Bracers of Shackled Souls
 
 ------------------
 -- PATCH 2.3.0 --
