@@ -360,8 +360,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						73003,	-- The Azure Hatchling
 						73004,	-- A Scholar's Delight
 					},
-					["provider"] = { "n", 199259 },	-- Lasztak
-					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(202404),	-- Bite-Sized Ley Crystal
 					},
