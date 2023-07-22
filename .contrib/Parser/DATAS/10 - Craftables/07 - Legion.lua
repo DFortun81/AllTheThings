@@ -323,6 +323,9 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(187933, {	-- Mark of the Duskwing Raven (CI!)
 				["timeline"] = { ADDED_9_1_5 },
 			}),
+			i(139314, {	-- Grimoire of the Abyssal (CI!)
+				["timeline"] = { ADDED_10_1_5 },
+			}),
 			i(129018),	-- Grimoire of the Fel Imp (CI!)
 			i(139312, {	-- Grimoire of the Observer (CI!)
 				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },

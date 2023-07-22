@@ -2151,7 +2151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(77242, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Invader's Scourgestones
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
-					["cost"] = {{ "i", 206374, 5 }},	-- 50x Invader's Scourgestone
+					["cost"] = {{ "i", 206374, 50 }},	-- 50x Invader's Scourgestone
 					["repeatable"] = true,
 					["groups"] = {
 						i(12844),	-- Argent Dawn Valor Token
