@@ -540,7 +540,6 @@ root(ROOTS.NeverImplemented, {
 			q(25435),	-- Pressure is Mounting
 			q(25384),	-- Raw Materials
 			q(26459),	-- Researching the Corruption
-			q(24716),	-- Returning A-Me 01
 			q(26704),	-- REUSE
 			q(28270),	-- Riding Shotgun
 			q(29572),	-- Safety is Job One
