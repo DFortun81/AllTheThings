@@ -2383,7 +2383,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(45774),	-- Pattern: Emerald Bag
-							i(44509),	-- Pattern: Trapper's Traveling Pack
+							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
 							i(44061),	-- Pigment-Stained Robes
 							i(44052),	-- Totemic Purification Rod
 							i(44051),	-- Traditional Flensing Knife

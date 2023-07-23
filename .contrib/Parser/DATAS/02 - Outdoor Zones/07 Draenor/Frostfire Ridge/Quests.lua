@@ -158,9 +158,9 @@ root(ROOTS.Zones, {
 							["filterID"] = MISC,
 							["g"] = {
 								recipe(171391),	-- Burnished Leather
-								i(116319),	-- Pattern: Journeying Helm
-								i(116320),	-- Pattern: Journeying Robes
-								i(116321),	-- Pattern: Journeying Slacks
+								i(116319),	-- Pattern: Journeying Helm (RECIPE!)
+								i(116320),	-- Pattern: Journeying Robes (RECIPE!)
+								i(116321),	-- Pattern: Journeying Slacks (RECIPE!)
 								i(120130),	-- Recipe: Secrets of Draenor Leatherworking
 								i(116322),	-- Pattern: Traveling Helm
 								i(116324),	-- Pattern: Traveling Leggings

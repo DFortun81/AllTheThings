@@ -171,7 +171,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27545),	-- Mennu's Scaled Leggings
 						-- #endif
 						i(24359),	-- Princely Reign Leggings
-						i(29674, {	-- Pattern: Nature Armor Kit
+						i(29674, {	-- Pattern: Nature Armor Kit (RECIPE!)
 							["timeline"] = { "removed 5.0.4" },
 						}),
 					},
@@ -294,7 +294,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
-							i(29674, {	-- Pattern: Nature Armor Kit
+							i(29674, {	-- Pattern: Nature Armor Kit (RECIPE!)
 								["timeline"] = { "removed 5.0.4" },
 							}),
 						},

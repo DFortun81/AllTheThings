@@ -360,8 +360,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						73003,	-- The Azure Hatchling
 						73004,	-- A Scholar's Delight
 					},
-					["provider"] = { "n", 199259 },	-- Lasztak
-					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(202404),	-- Bite-Sized Ley Crystal
 					},
@@ -568,6 +568,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(QUESTS, sharedData({ ["isRepeatable"] = true }, {
 				q(77426, {	-- Practice Makes Perfect: Rusziona
 					["sourceQuests"] = { 74488 },	-- Runaway Rusziona
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
+				q(77430, {	-- Practice Makes Perfect: Belastrasza
+					["sourceQuests"] = { 74492 },	-- Blistering Belastrasza
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {

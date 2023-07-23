@@ -174,9 +174,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(29186, {	-- Glyph of the Defender
 							["timeline"] = { "removed 5.0.4" },
 						}),
-						i(29713),	-- Pattern: Drums of Panic
+						i(29713),	-- Pattern: Drums of Panic (RECIPE!)
 						-- #if ANYCLASSIC
-						applyclassicphase(TBC_PHASE_FOUR, i(185925)),	-- Pattern: Greater Drums of Panic
+						applyclassicphase(TBC_PHASE_FOUR, i(185925)),	-- Pattern: Greater Drums of Panic (RECIPE!)
 						-- #endif
 						i(31355),	-- Recipe: Flask of Supreme Power
 					},

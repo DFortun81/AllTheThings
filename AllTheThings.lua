@@ -231,7 +231,6 @@ local indexOf = app.indexOf;
 
 -- Data Lib
 local attData;
-local AllTheThingsTempData = {};	-- For temporary data.
 local AllTheThingsAD = {};			-- For account-wide data.
 local function SetDataMember(member, data)
 	AllTheThingsAD[member] = data;
@@ -247,18 +246,6 @@ local function GetDataMember(member, default)
 	end
 end
 app.GetDataMember = GetDataMember;
-local function SetTempDataMember(member, data)
-	AllTheThingsTempData[member] = data;
-end
-local function GetTempDataMember(member, default)
-	attData = AllTheThingsTempData[member];
-	if attData == nil then
-		AllTheThingsTempData[member] = default;
-		return default;
-	else
-		return attData;
-	end
-end
 
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
@@ -17768,13 +17755,9 @@ function app:GetDataCache()
 	--[[
 	-- Models (Dynamic)
 	db = app.CreateAchievement(9924, (function()
-		local cache = GetTempDataMember("MODEL_CACHE");
-		if not cache then
-			cache = {};
-			SetTempDataMember("MODEL_CACHE", cache);
-			for i=1,78092,1 do
-				tinsert(cache, {["displayID"] = i,["text"] = "Model #" .. i});
-			end
+		local cache = {};
+		for i=1,78092,1 do
+			tinsert(cache, {["displayID"] = i,["text"] = "Model #" .. i});
 		end
 		return cache;
 	end)());
@@ -17796,17 +17779,13 @@ function app:GetDataCache()
 	end
 	tinsert(g, (function()
 		--if true then return nil; end
-		local db = GetTempDataMember("GEAR_SET_CACHE", nil);
-		if not db then
-			db = {};
-			db.text = "Item Sets";
-			SetTempDataMember("GEAR_SET_CACHE", db);
-		end
+		local db = {
+			text = "Item Sets",
+		};
 
 		-- Rebuild the cache every time.
 		cache = {};
 		db.g = cache;
-		--SetDataMember("GEAR_SET_CACHE", cache);
 		local sets = C_TransmogSets.GetAllSets();
 		if sets then
 			local gearSets = {};

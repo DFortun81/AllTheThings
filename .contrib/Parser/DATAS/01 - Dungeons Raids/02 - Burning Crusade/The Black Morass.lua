@@ -102,7 +102,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
 						-- #endif
 						i(27996),	-- Ring of Spiritual Precision
-						i(29675, {	-- Pattern: Arcane Armor Kit
+						i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
 							["timeline"] = { "removed 5.0.4" },
 						}),
 					},
@@ -198,7 +198,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
 							-- #endif
 							i(27996),	-- Ring of Spiritual Precision
-							i(29675, {	-- Pattern: Arcane Armor Kit
+							i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
 								["timeline"] = { "removed 5.0.4" },
 							}),
 						},

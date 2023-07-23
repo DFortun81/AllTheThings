@@ -277,6 +277,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									i(207027),	-- Greater Encapsulated Destiny
 								},
 							}),
+							q(77250, {	-- Realized Potentional
+								["provider"] = { "n", 204450 },	-- Soridormi
+								["coord"] = { 51.0, 57.0, THALDRASZUS },
+								["minReputation"] = { FACTION_SORIDORMI, 5 },
+								["g"] = {
+									i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
+									spell(417360),	-- Unparalleled (TITLE!)
+								},
+							}),
 						},
 					}),
 				}),
@@ -286,6 +295,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 72.5, 47.4, VALDRAKKEN },
 						["isBreadcrumb"] = true,
 						--["lockCriteria"] = { 1, "TODO", TODO },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
+						-- maybe 77680 locks?
+						["DisablePartySync"] = true,
 						["timeline"] = { ADDED_10_1_5 },
 					}),
 					-- ideally want the Object with coords with provider Item inside...
@@ -1206,6 +1217,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(76706),	-- after buying/loot Ensemble: Lifegiver's Garms (itemID 207048) (spellID 418945)
 		q(76708),	-- after buying/loot Ensemble: Valhalas Ceremonial Armor (itemID 207046) (spellID 418944)
 
-		-- q(77179)?? HTQ trigger? -- ptr
+		q(77179),	-- Unlock the title Unparalleled on your account (spellID 417360) (after questID 77250)
 	}))}),
 })));

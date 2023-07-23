@@ -902,6 +902,9 @@ i(141062, 225554);	-- Glyph of the Inquisitor's Eye
 i(141063, 225555);	-- Grimoire of the Observer
 i(137738, 192846);	-- Glyph of the Queen
 i(137734, 192842);	-- Glyph of the Sentinel
+-- #if AFTER 10.1.5
+i(141061, 225553);	-- Grimoire of the Abyssal
+-- #endif
 i(141064, 225556);	-- Grimoire of the Shivarra
 i(137736, 192844);	-- Glyph of the Spectral Raptor
 i(141051, 225543);	-- Glyph of the Trident
@@ -948,7 +951,9 @@ i(141050, 225542);	-- Glyph of the Skullseye (8.0.1)
 i(141034, 225526);	-- Glyph of the Unholy Wraith (8.0.1)
 i(137740, 192848);	-- Glyph of the Wraith Walker (8.0.1)
 -- NYI --
+-- #if BEFORE 10.1.5
 i(141061, 225553);	-- Grimoire of the Abyssal
+-- #endif
 i(141065, 225557);	-- Grimoire of the Terrorguard
 
 i(137742, 0);	-- Glyph of Crackling Flames

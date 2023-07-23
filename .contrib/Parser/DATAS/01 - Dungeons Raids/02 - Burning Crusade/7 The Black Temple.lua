@@ -116,7 +116,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			}),
 			n(VENDORS, {
 				n(23159, {	-- Okuno <Ashtongue Deathsworn Quartermaster>
-					i(32429, {	-- Pattern: Boots of Shackled Souls
+					i(32429, {	-- Pattern: Boots of Shackled Souls (RECIPE!)
 						["spellID"] = 39997,	-- Boots of Shackled Souls
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
@@ -130,28 +130,28 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32431, {	-- Pattern: Greaves of Shackled Souls
+					i(32431, {	-- Pattern: Greaves of Shackled Souls (RECIPE!)
 						["spellID"] = 40001,	-- Greaves of Shackled Souls
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(32447),	-- Pattern: Night's End
-					i(32436, {	-- Pattern: Redeemed Soul Cinch
+					i(32436, {	-- Pattern: Redeemed Soul Cinch (RECIPE!)
 						["spellID"] = 40006,	-- Redeemed Soul Cinch
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32435, {	-- Pattern: Redeemed Soul Legguards
+					i(32435, {	-- Pattern: Redeemed Soul Legguards (RECIPE!)
 						["spellID"] = 40005,	-- Redeemed Soul Legguards
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32433, {	-- Pattern: Redeemed Soul Moccasins
+					i(32433, {	-- Pattern: Redeemed Soul Moccasins (RECIPE!)
 						["spellID"] = 40003,	-- Redeemed Soul Moccasins
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32434, {	-- Pattern: Redeemed Soul Wristguards
+					i(32434, {	-- Pattern: Redeemed Soul Wristguards (RECIPE!)
 						["spellID"] = 40004,	-- Redeemed Soul Wristguards
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
@@ -160,7 +160,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					i(32440),	-- Pattern: Soulguard Girdle
 					i(32439),	-- Pattern: Soulguard Leggings
 					i(32437),	-- Pattern: Soulguard Slippers
-					i(32432, {	-- Pattern: Waistguard of Shackled Souls
+					i(32432, {	-- Pattern: Waistguard of Shackled Souls (RECIPE!)
 						["spellID"] = 40002,	-- Waistguard of Shackled Souls
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
@@ -200,22 +200,22 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			}),
 			n(ZONE_DROPS, {
 				i(32754),	-- Pattern: Bracers of Nimble Thought
-				i(32744, {	-- Pattern: Bracers of Renewed Life
+				i(32744, {	-- Pattern: Bracers of Renewed Life (RECIPE!)
 					["spellID"] = 41156,	-- Bracers of Renewed Life
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(32750, {	-- Pattern: Living Earth Bindings
+				i(32750, {	-- Pattern: Living Earth Bindings (RECIPE!)
 					["spellID"] = 41163,	-- Living Earth Bindings
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(32749, {	-- Pattern: Shoulders of Lightning Reflexes
+				i(32749, {	-- Pattern: Shoulders of Lightning Reflexes (RECIPE!)
 					["spellID"] = 41162,	-- Shoulders of Lightning Reflexes
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(32747, {	-- Pattern: Swiftstrike Shoulders
+				i(32747, {	-- Pattern: Swiftstrike Shoulders (RECIPE!)
 					["spellID"] = 41160,	-- Swiftstrike Shoulders
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,

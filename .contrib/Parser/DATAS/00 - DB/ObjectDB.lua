@@ -7877,6 +7877,22 @@ _.ObjectDB = {
 			en = "Bakkalzu's Satchel",
 		},
 	},
+	[187039] = {
+		readable = "Smuggled Mana Cell",
+		icon = "Interface/Icons/inv_gizmo_khoriumpowercore",
+		model = 192531,
+		text = {
+			en = "Smuggled Mana Cell",
+			es = "Célula de maná de contrabando",
+			de = "Eingeschmuggelte Manazelle",
+			fr = "Cellule de mana de contrebande",
+			it = "Cella di Mana Contrabbandata",
+			pt = "Célula de Mana Contrabandeada",
+			ru = "Контрабандный контейнер с маной",
+			ko = "밀수한 마나 저장기",
+			cn = "走私来的法力晶格",
+		},
+	},
 	[187072] = {
 		readable = "Razorthorn Root",
 		text = {

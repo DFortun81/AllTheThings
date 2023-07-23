@@ -2337,11 +2337,11 @@ root(ROOTS.Zones, {
 							i(44723, { -- Pengu (PET!)
 								["timeline"] = { "added 3.0.2.8982" },
 							}),
-							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
+							i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
 								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(45774),	-- Pattern: Emerald Bag
-							i(44509),	-- Pattern: Trapper's Traveling Pack
+							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
 							i(44061),	-- Pigment-Stained Robes
 							i(44052),	-- Totemic Purification Rod
 							i(44051),	-- Traditional Flensing Knife

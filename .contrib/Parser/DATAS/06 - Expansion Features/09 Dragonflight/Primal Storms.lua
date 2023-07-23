@@ -499,487 +499,333 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(REWARDS, {
-				i(200183),	-- Echo of the Cave (PET!)
-				i(200260),	-- Echo of the Depths (PET!)
-				i(200263),	-- Echo of the Heights (PET!)
-				i(200255),	-- Echo of the Inferno (PET!)
-				i(200675),	-- Elemental Overflow Cluster
-
-				-- Enchanting knowledge drops (one-time)
-				i(201356),	-- Glimmer of Fire
-				i(201357),	-- Glimmer of Frost
-				i(201358),	-- Glimmer of Air
-				i(201359),	-- Glimmer of Earth
-
-				i(199749),	-- Primal Air Core
-				i(199691),	-- Primal Earth Core
-				i(199750),	-- Primal Fire Core
-				i(199748),	-- Primal Water Core
-				currency(2118),	-- Elemental Overflow
 				-- #if after 10.0.7
-				i(204276),	-- Untapped Forbidden Knowledge
-				n(BACK, {
-					i(203646, {	-- Primalist Cloak
-						i(199450),	-- Cape of Raging Tempests
-						i(199451),	-- Cloak of Raging Tempests
-						i(199452),	-- Shroud of Raging Tempests
-						i(199449),	-- Wrap of Raging Tempests
-					}),
-				}),
-				filter(CLOTH, {
-					i(203635, {	-- Primalist Cloth Belt
-						i(199422),	-- Cord of Raging Tempests
-					}),
-					i(203641, {	-- Primalist Cloth Boots
-						i(199418),	-- Boots of Raging Tempests
-					}),
-					i(203632, {	-- Primalist Cloth Bracers
-						i(199423),	-- Cuffs of Raging Tempests
-					}),
-					i(203616, {	-- Primalist Cloth Chestpiece
-						i(199417),	-- Vestment of Raging Tempests
-					}),
-					i(203642, {	-- Primalist Cloth Gloves
-						i(199419),	-- Gloves of Raging Tempests
-					}),
-					i(203612, {	-- Primalist Cloth Helm
-						i(199420),	-- Hood of Raging Tempests
-					}),
-					i(203622, {	-- Primalist Cloth Leggings
-						i(199421),	-- Leggings of Raging Tempests
-					}),
-					i(203627, {	-- Primalist Cloth Spaulders
-						i(199424),	-- Shoulderpads of Raging Tempests
-					}),
-				}),
-				filter(LEATHER, {
-					i(203637, {	-- Primalist Leather Belt
-						i(199429),	-- Sash of Raging Tempests
-					}),
-					i(203638, {	-- Primalist Leather Boots
-						i(199425),	-- Waders of Raging Tempests
-					}),
-					i(203630, {	-- Primalist Leather Bracers
-						i(199430),	-- Bindings of Raging Tempests
-					}),
-					i(203618, {	-- Primalist Leather Chestpiece
-						i(199431),	-- Vest of Raging Tempests
-					}),
-					i(203645, {	-- Primalist Leather Gloves
-						i(199426),	-- Handguards of Raging Tempests
-					}),
-					i(203614, {	-- Primalist Leather Helm
-						i(199427),	-- Cowl of Raging Tempests
-					}),
-					i(203619, {	-- Primalist Leather Leggings
-						i(199428),	-- Breeches of Raging Tempests
-					}),
-					i(203629, {	-- Primalist Leather Spaulders
-						i(199432),	-- Epaulets of Raging Tempests
-					}),
-				}),
-				filter(MAIL, {
-					i(203636, {	-- Primalist Mail Belt
-						i(199447),	-- Cinch of Raging Tempests
-					}),
-					i(203639, {	-- Primalist Mail Boots
-						i(199442),	-- Striders of Raging Tempests
-					}),
-					i(203631, {	-- Primalist Mail Bracers
-						i(199448),	-- Bracers of Raging Tempests
-					}),
-					i(203617, {	-- Primalist Mail Chestpiece
-						i(199441),	-- Chestguard of Raging Tempests
-					}),
-					i(203644, {	-- Primalist Mail Gloves
-						i(199443),	-- Grips of Raging Tempests
-					}),
-					i(203613, {	-- Primalist Mail Helm
-						i(199444),	-- Coif of Raging Tempests
-					}),
-					i(203620, {	-- Primalist Mail Leggings
-						i(199445),	-- Greaves of Raging Tempests
-					}),
-					i(203628, {	-- Primalist Mail Spaulders
-						i(199446),	-- Shoulderguards of Raging Tempests
-					}),
-				}),
-				filter(PLATE, {
-					i(203634, {	-- Primalist Plate Belt
-						i(199439),	-- Girdle of Raging Tempests
-					}),
-					i(203640, {	-- Primalist Plate Boots
-						i(199435),	-- Sabatons of Raging Tempests
-					}),
-					i(203633, {	-- Primalist Plate Bracers
-						i(199440),	-- Armplates of Raging Tempests
-					}),
-					i(203615, {	-- Primalist Plate Chestpiece
-						i(199434),	-- Breastplate of Raging Tempests
-					}),
-					i(203643, {	-- Primalist Plate Gloves
-						i(199436),	-- Gauntlets of Raging Tempests
-					}),
-					i(203611, {	-- Primalist Plate Helm
-						i(199433),	-- Helm of Raging Tempests
-					}),
-					i(203623, {	-- Primalist Plate Leggings
-						i(199437),	-- Legguards of Raging Tempests
-					}),
-					i(203626, {	-- Primalist Plate Spaulders
-						i(199438),	-- Mantle of Raging Tempests
-					}),
-				}),
-				n(WEAPONS, {
-					i(203650, {	-- Primalist Weapon
-						i(199314),	-- Broadsword of Raging Tempests
-						i(199319),	-- Bulwark of Raging Tempests
-						i(199304),	-- Cleaver of Raging Tempests
-						i(199324),	-- Crusher of Raging Tempests
-						i(199318),	-- Cudgel of Raging Tempests
-						i(199309),	-- Dagger of Raging Tempests
-						i(199308),	-- Glaive of Raging Tempests
-						i(199315),	-- Greatsword of Raging Tempests
-						i(199306),	-- Hacker of Raging Tempests
-						i(199305),	-- Hatchet of Raging Tempests
-						i(199307),	-- Heartseeker of Raging Tempests
-						i(199311),	-- Horn of Raging Tempests
-						i(199320),	-- Impaler of Raging Tempests
-						i(199321),	-- Javelin of Raging Tempests
-						i(199325),	-- Mace of Raging Tempests
-						i(199323),	-- Mallet of Raging Tempests
-						i(199317),	-- Maul of Raging Tempests
-						i(199313),	-- Pole of Raging Tempests
-						i(199322),	-- Rod of Raging Tempests
-						i(199316),	-- Scepter of Raging Tempests
-						i(199310),	-- Shiv of Raging Tempests
-						i(199312),	-- Staff of Raging Tempests
-					}),
-				}),
-				filter(NECK_F, {
-					i(203648, {	-- Primalist Necklace
-						["sym"] = {{"select","itemID",
-							201962,	-- Heat of Primal Winter
-						}},
-					}),
-				}),
-				filter(FINGER_F, {
-					i(203647, {	-- Primalist Ring
-						["sym"] = {{"select","itemID",
-							201960,	-- Chronologically Unstable Loop
-						}},
-					}),
-				}),
-				filter(TRINKET_F, {
-					i(203649, {	-- Primalist Trinket
-						["sym"] = {{"select","itemID",
-							202015,	-- Sands of Temporal Perfection
-						}},
-					})
-				}),
+				["sym"] = {{"select","mapID",THE_FORBIDDEN_REACH},{"pop"},
+							{"where","headerID",ZONE_REWARDS},{"pop"},
+							{"exclude","itemID",202196},	-- Zskera Vault Key
+				},
 				-- #endif
+				["g"] = {
+					i(200183),	-- Echo of the Cave (PET!)
+					i(200260),	-- Echo of the Depths (PET!)
+					i(200263),	-- Echo of the Heights (PET!)
+					i(200255),	-- Echo of the Inferno (PET!)
+					i(200675),	-- Elemental Overflow Cluster
+
+					-- Enchanting knowledge drops (one-time)
+					i(201356),	-- Glimmer of Fire
+					i(201357),	-- Glimmer of Frost
+					i(201358),	-- Glimmer of Air
+					i(201359),	-- Glimmer of Earth
+
+					i(199749),	-- Primal Air Core
+					i(199691),	-- Primal Earth Core
+					i(199750),	-- Primal Fire Core
+					i(199748),	-- Primal Water Core
+					currency(2118),	-- Elemental Overflow
+				},
 			}),
 			n(VENDORS, {
 				n(196516, {	-- Mythressa
 					["coord"] = { 38.1, 37.7, VALDRAKKEN },
 					["g"] = {
 						n(BACK, {
-							iupgrade(199450, 14, 9344, {	-- Cape of Raging Tempests
+							iexact(199450, 14, 9342, {	-- Cape of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199451, 14, 9344, {	-- Cloak of Raging Tempests
+							iexact(199451, 14, 9342, {	-- Cloak of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199452, 14, 9344, {	-- Shroud of Raging Tempests
+							iexact(199452, 14, 9342, {	-- Shroud of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199449, 14, 9344, {	-- Wrap of Raging Tempests
+							iexact(199449, 14, 9342, {	-- Wrap of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
 						}),
 						filter(CLOTH, {
-							iupgrade(199418, 14, 9344, {	-- Boots of Raging Tempests
+							iexact(199418, 14, 9342, {	-- Boots of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iupgrade(199422, 14, 9344, {	-- Cord of Raging Tempests
+							iexact(199422, 14, 9342, {	-- Cord of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199423, 14, 9344, {	-- Cuffs of Raging Tempests
+							iexact(199423, 14, 9342, {	-- Cuffs of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199419, 14, 9344, {	-- Gloves of Raging Tempests
+							iexact(199419, 14, 9342, {	-- Gloves of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iupgrade(199420, 14, 9344, {	-- Hood of Raging Tempests
+							iexact(199420, 14, 9342, {	-- Hood of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199421, 14, 9344, {	-- Leggings of Raging Tempests
+							iexact(199421, 14, 9342, {	-- Leggings of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199424, 14, 9344, {	-- Shoulderpads of Raging Tempests
+							iexact(199424, 14, 9342, {	-- Shoulderpads of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iupgrade(199417, 14, 9344, {	-- Vestment of Raging Tempests
+							iexact(199417, 14, 9342, {	-- Vestment of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
 						}),
 						filter(LEATHER, {
-							iupgrade(199430, 14, 9344, {	-- Bindings of Raging Tempests
+							iexact(199430, 14, 9342, {	-- Bindings of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199428, 14, 9344, {	-- Breeches of Raging Tempests
+							iexact(199428, 14, 9342, {	-- Breeches of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199427, 14, 9344, {	-- Cowl of Raging Tempests
+							iexact(199427, 14, 9342, {	-- Cowl of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199432, 14, 9344, {	-- Epaulets of Raging Tempests
+							iexact(199432, 14, 9342, {	-- Epaulets of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iupgrade(199426, 14, 9344, {	-- Handguards of Raging Tempests
+							iexact(199426, 14, 9342, {	-- Handguards of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iupgrade(199429, 14, 9344, {	-- Sash of Raging Tempests
+							iexact(199429, 14, 9342, {	-- Sash of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199431, 14, 9344, {	-- Vest of Raging Tempests
+							iexact(199431, 14, 9342, {	-- Vest of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199425, 14, 9344, {	-- Waders of Raging Tempests
+							iexact(199425, 14, 9342, {	-- Waders of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
 						}),
 						filter(MAIL, {
-							iupgrade(199448, 14, 9344, {	-- Bracers of Raging Tempests
+							iexact(199448, 14, 9342, {	-- Bracers of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199441, 14, 9344, {	-- Chestguard of Raging Tempests
+							iexact(199441, 14, 9342, {	-- Chestguard of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199447, 14, 9344, {	-- Cinch of Raging Tempests
+							iexact(199447, 14, 9342, {	-- Cinch of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199444, 14, 9344, {	-- Coif of Raging Tempests
+							iexact(199444, 14, 9342, {	-- Coif of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199445, 14, 9344, {	-- Greaves of Raging Tempests
+							iexact(199445, 14, 9342, {	-- Greaves of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199443, 14, 9344, {	-- Grips of Raging Tempests
+							iexact(199443, 14, 9342, {	-- Grips of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iupgrade(199446, 14, 9344, {	-- Shoulderguards of Raging Tempests
+							iexact(199446, 14, 9342, {	-- Shoulderguards of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iupgrade(199442, 14, 9344, {	-- Striders of Raging Tempests
+							iexact(199442, 14, 9342, {	-- Striders of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
 						}),
 						filter(PLATE, {
-							iupgrade(199440, 14, 9344, {	-- Armplates of Raging Tempests
+							iexact(199440, 14, 9342, {	-- Armplates of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199434, 14, 9344, {	-- Breastplate of Raging Tempests
+							iexact(199434, 14, 9342, {	-- Breastplate of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199436, 14, 9344, {	-- Gauntlets of Raging Tempests
+							iexact(199436, 14, 9342, {	-- Gauntlets of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iupgrade(199439, 14, 9344, {	-- Girdle of Raging Tempests
+							iexact(199439, 14, 9342, {	-- Girdle of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iupgrade(199433, 14, 9344, {	-- Helm of Raging Tempests
+							iexact(199433, 14, 9342, {	-- Helm of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199437, 14, 9344, {	-- Legguards of Raging Tempests
+							iexact(199437, 14, 9342, {	-- Legguards of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199438, 14, 9344, {	-- Mantle of Raging Tempests
+							iexact(199438, 14, 9342, {	-- Mantle of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iupgrade(199435, 14, 9344, {	-- Sabatons of Raging Tempests
+							iexact(199435, 14, 9342, {	-- Sabatons of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
 						}),
 						n(WEAPONS, {
-							iupgrade(199314, 14, 9344, {	-- Broadsword of Raging Tempests
+							iexact(199314, 14, 9342, {	-- Broadsword of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iupgrade(199319, 14, 9344, {	-- Bulwark of Raging Tempests
+							iexact(199319, 14, 9342, {	-- Bulwark of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 300 },
 								},
 							}),
-							iupgrade(199304, 14, 9344, {	-- Cleaver of Raging Tempests
+							iexact(199304, 14, 9342, {	-- Cleaver of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iupgrade(199324, 14, 9344, {	-- Crusher of Raging Tempests
+							iexact(199324, 14, 9342, {	-- Crusher of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iupgrade(199318, 14, 9344, {	-- Cudgel of Raging Tempests
+							iexact(199318, 14, 9342, {	-- Cudgel of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iupgrade(199309, 14, 9344, {	-- Dagger of Raging Tempests
+							iexact(199309, 14, 9342, {	-- Dagger of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199308, 14, 9344, {	-- Glaive of Raging Tempests
+							iexact(199308, 14, 9342, {	-- Glaive of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iupgrade(199315, 14, 9344, {	-- Greatsword of Raging Tempests
+							iexact(199315, 14, 9342, {	-- Greatsword of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iupgrade(199306, 14, 9344, {	-- Hacker of Raging Tempests
+							iexact(199306, 14, 9342, {	-- Hacker of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iupgrade(199305, 14, 9344, {	-- Hatchet of Raging Tempests
+							iexact(199305, 14, 9342, {	-- Hatchet of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199307, 14, 9344, {	-- Heartseeker of Raging Tempests
+							iexact(199307, 14, 9342, {	-- Heartseeker of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iupgrade(199311, 14, 9344, {	-- Horn of Raging Tempests
+							iexact(199311, 14, 9342, {	-- Horn of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 300 },
 								},
 							}),
-							iupgrade(199320, 14, 9344, {	-- Impaler of Raging Tempests
+							iexact(199320, 14, 9342, {	-- Impaler of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iupgrade(199321, 14, 9344, {	-- Javelin of Raging Tempests
+							iexact(199321, 14, 9342, {	-- Javelin of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iupgrade(199325, 14, 9344, {	-- Mace of Raging Tempests
+							iexact(199325, 14, 9342, {	-- Mace of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199323, 14, 9344, {	-- Mallet of Raging Tempests
+							iexact(199323, 14, 9342, {	-- Mallet of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iupgrade(199317, 14, 9344, {	-- Maul of Raging Tempests
+							iexact(199317, 14, 9342, {	-- Maul of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iupgrade(199313, 14, 9344, {	-- Pole of Raging Tempests
+							iexact(199313, 14, 9342, {	-- Pole of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iupgrade(199322, 14, 9344, {	-- Rod of Raging Tempests
+							iexact(199322, 14, 9342, {	-- Rod of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199316, 14, 9344, {	-- Scepter of Raging Tempests
+							iexact(199316, 14, 9342, {	-- Scepter of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iupgrade(199310, 14, 9344, {	-- Shiv of Raging Tempests
+							iexact(199310, 14, 9342, {	-- Shiv of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iupgrade(199312, 14, 9344, {	-- Staff of Raging Tempests
+							iexact(199312, 14, 9342, {	-- Staff of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},

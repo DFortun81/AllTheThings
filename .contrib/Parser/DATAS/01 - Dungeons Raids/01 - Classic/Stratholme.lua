@@ -873,8 +873,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							16101,	-- Jarien
 							16102,	-- Sothos
 						},
+						-- #if BEFORE 10.1.5
 						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",
-						["timeline"] = { "removed 4.0.3" },
+						-- #else
+						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+						-- #endif
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 						["cost"] = {
 							{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
 							{ "i", 22057, 1 },	-- Brazier of Invocation
@@ -889,19 +893,19 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								["provider"] = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
 							}),
 							i(22329, {	-- Scepter of Interminable Focus
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 							i(22327, {	-- Amulet of the Redeemed
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 							i(22301, {	-- Ironweave Robe
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { "removed 4.0.1", ADDED_10_1_5 },
 							}),
 							i(22328, {	-- Legplates of Vigilance
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 							i(22334, {	-- Band of Mending
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 						},
 					})),
