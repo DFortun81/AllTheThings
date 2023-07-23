@@ -112,159 +112,8 @@ ach(11065),	-- It All Makes Sense Now
 8.1.0.27985
 ach(13283),	-- Frontline Warrior \\ On The Frontlines
 ach(13284),	-- Frontline Warrior \\ On The Frontlines
-10.0.5.48001
-ach(17495),	-- <Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
-10.0.7.47910
-ach(17306),	-- <DNT> Winterpelt Furbolg - 1 - Friendly
-ach(17307),	-- <DNT> Winterpelt Furbolg - 1 - Honored
-ach(17308),	-- <DNT> Winterpelt Furbolg - 1 - Revered
-ach(17309),	-- <DNT> Winterpelt Furbolg - 1 - Exalted
-ach(17322),	-- <DNT> Hearthfire Fellowship Rank 1
-ach(17323),	-- <DNT> Hearthfire Fellowship Rank 2
-ach(17324),	-- <DNT> Hearthfire Fellowship Rank 3
-ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
-ach(17409),	-- <Hidden> ACCOUNT: Treasure Room Local Quest Completed
-ach(17422),	-- <DNT> Artisan's Consortium Reputation is Preferred (Rank 1)
-ach(17423),	-- <DNT> Artisan's Consortium Reputation is Respected (Rank 2)
-ach(17424),	-- <DNT> Artisan's Consortium Reputation is Valued (Rank 3)
-10.0.7.47983
-ach(17428),	-- <Hidden> Winterpelt Language - Send Mailer from Sonova
-ach(17500),	-- Renowned Tribal Leatherworker
-ach(17501),	-- Renowned Mooncloth Tailor
-ach(17502),	-- Renowned Spellfire Tailor
-ach(17503),	-- Renowned Shadoweave Tailor
-10.0.7.48076
-ach(17533),	-- <Hidden> Travel Network - Node Unlock: Forbidden Reach - Morqut Islet
-ach(17535),	-- <DNT> Complete the "Return to the Reach" questline.
-10.0.7.48749
-ach(17536),	-- <DNT> Complete the "A Creche Divided" questline.
-10.1.0.48480
-ach(17537),	-- Dragon Chase - WS01
-ach(17538),	-- Dragon Chase - WS02
-ach(17725),	-- Vicious Saddle (37)
-ach(17726),	-- Vicious Saddle (37)
-10.1.0.48537
-ach(17742),	-- <DNT> Loamm Niffen Rank 01 (Account) \\ <DNT> Loamm Niffen Rank 01
-ach(17743),	-- <DNT> Loamm Niffen Rank 02 (Account) \\ <DNT> Loamm Niffen Rank 02
-ach(17744),	-- <DNT> Loamm Niffen Rank 03 (Account) \\ <DNT> Loamm Niffen Rank 03
-ach(17745),	-- <DNT> Loamm Niffen Rank 04 (Account) \\ <DNT> Loamm Niffen Rank 04
-ach(17746),	-- <DNT> Loamm Niffen Rank 05 (Account) \\ <DNT> Loamm Niffen Rank 05
-ach(17747),	-- <DNT> Loamm Niffen Rank 06 (Account) \\ <DNT> Loamm Niffen Rank 06
-ach(17748),	-- <DNT> Loamm Niffen Rank 07 (Account) \\ <DNT> Loamm Niffen Rank 07
-ach(17749),	-- <DNT> Loamm Niffen Rank 08 (Account) \\ <DNT> Loamm Niffen Rank 08
-ach(17750),	-- <DNT> Loamm Niffen Rank 09 (Account) \\ <DNT> Loamm Niffen Rank 09
-ach(17751),	-- <DNT> Loamm Niffen Rank 10 (Account) \\ <DNT> Loamm Niffen Rank 10
-ach(17752),	-- <DNT> Loamm Niffen Rank 11 (Account) \\ <DNT> Loamm Niffen Rank 11
-ach(17753),	-- <DNT> Loamm Niffen Rank 12 (Account) \\ <DNT> Loamm Niffen Rank 12
-ach(17754),	-- <DNT> Loamm Niffen Rank 13 (Account) \\ <DNT> Loamm Niffen Rank 13
-ach(17755),	-- <DNT> Loamm Niffen Rank 14 (Account) \\ <DNT> Loamm Niffen Rank 14
-ach(17756),	-- <DNT> Loamm Niffen Rank 15 (Account) \\ <DNT> Loamm Niffen Rank 15
-ach(17757),	-- <DNT> Loamm Niffen Rank 16 (Account) \\ <DNT> Loamm Niffen Rank 16
-ach(17758),	-- <DNT> Loamm Niffen Rank 17 (Account) \\ <DNT> Loamm Niffen Rank 17
-ach(17759),	-- <DNT> Loamm Niffen Rank 18 (Account) \\ <DNT> Loamm Niffen Rank 18
-ach(17760),	-- <DNT> Loamm Niffen Rank 19 (Account) \\ <DNT> Loamm Niffen Rank 19
-ach(17761),	-- <DNT> Loamm Niffen Rank 20 (Account) \\ <DNT> Loamm Niffen Rank 20
-10.1.0.48661
-ach(17788),	-- Current Patch - Login Video [DNT] (DO NOT EDIT) \\ Current Patch - Login Video [DNT] (Updated Every Patch)
-ach(17836),	-- Flightstones earned
-ach(17837),	-- Whelpling's Shadowflame Crest Fragments earned
-ach(17838),	-- Drake's Shadowflame Crest Fragments earned
-ach(17839),	-- Wyrm's Shadowflame Crest Fragments earned
-ach(17840),	-- Aspect's Shadowflame Crest Fragments earned
-10.1.0.48776
-ach(18129),	-- <DNT> Loamm Niffen Rank 01 (Character)
-ach(18130),	-- <DNT> Loamm Niffen Rank 02 (Character)
-ach(18131),	-- <DNT> Loamm Niffen Rank 03 (Character)
-ach(18132),	-- <DNT> Loamm Niffen Rank 04 (Character)
-ach(18133),	-- <DNT> Loamm Niffen Rank 05 (Character)
-ach(18134),	-- <DNT> Loamm Niffen Rank 06 (Character)
-ach(18135),	-- <DNT> Loamm Niffen Rank 07 (Character)
-ach(18136),	-- <DNT> Loamm Niffen Rank 08 (Character)
-ach(18137),	-- <DNT> Loamm Niffen Rank 09 (Character)
-ach(18138),	-- <DNT> Loamm Niffen Rank 10 (Character)
-ach(18139),	-- <DNT> Loamm Niffen Rank 11 (Character)
-ach(18140),	-- <DNT> Loamm Niffen Rank 12 (Character)
-ach(18141),	-- <DNT> Loamm Niffen Rank 13 (Character)
-ach(18142),	-- <DNT> Loamm Niffen Rank 14 (Character)
-ach(18143),	-- <DNT> Loamm Niffen Rank 15 (Character)
-ach(18144),	-- <DNT> Loamm Niffen Rank 16 (Character)
-ach(18145),	-- <DNT> Loamm Niffen Rank 17 (Character)
-ach(18146),	-- <DNT> Loamm Niffen Rank 18 (Character)
-ach(18147),	-- <DNT> Loamm Niffen Rank 19 (Character)
-ach(18148),	-- <DNT> Loamm Niffen Rank 20 (Character)
-10.1.0.48898
-ach(18169),	-- [DNT] Shimmershell Snail
-ach(18180),	-- Kazzara, the Hellforged kills (Raid Finder Aberrus, the Shadowed Crucible)
-ach(18181),	-- The Amalgamation Chamber kills (Raid Finder Aberrus, the Shadowed Crucible)
-ach(18182),	-- The Forgotten Experiments kills (Raid Finder Aberrus, the Shadowed Crucible)
-ach(18183),	-- Assault of the Zaqali kills (Raid Finder Aberrus, the Shadowed Crucible)
-ach(18184),	-- Rashok, the Elder kills (Raid Finder Aberrus, the Shadowed Crucible)
-ach(18185),	-- The Vigilant Steward, Zskarn kills (Raid Finder Aberrus, the Shadowed Crucible)
-ach(18186),	-- Magmorax kills (Raid Finder Aberrus, the Shadowed Crucible)
-ach(18187),	-- Scalecommander Sarkareth kills (Raid Finder Aberrus, the Shadowed Crucible)
-ach(18188),	-- Echo of Neltharion kills (Raid Finder Aberrus, the Shadowed Crucible)
-ach(18189),	-- Kazzara, the Hellforged kills (Normal Aberrus, the Shadowed Crucible)
-ach(18190),	-- The Amalgamation Chamber kills (Normal Aberrus, the Shadowed Crucible)
-ach(18191),	-- The Forgotten Experiments kills (Normal Aberrus, the Shadowed Crucible)
-ach(18192),	-- Assault of the Zaqali kills (Normal Aberrus, the Shadowed Crucible)
-ach(18194),	-- Rashok, the Elder kills (Normal Aberrus, the Shadowed Crucible)
-ach(18195),	-- The Vigilant Steward, Zskarn kills (Normal Aberrus, the Shadowed Crucible)
-ach(18196),	-- Magmorax kills (Normal Aberrus, the Shadowed Crucible)
-ach(18197),	-- Echo of Neltharion kills (Normal Aberrus, the Shadowed Crucible)
-ach(18198),	-- Scalecommander Sarkareth kills (Normal Aberrus, the Shadowed Crucible)
-ach(18210),	-- Kazzara, the Hellforged kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18211),	-- The Amalgamation Chamber kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18212),	-- The Forgotten Experiments kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18213),	-- Assault of the Zaqali kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18214),	-- Rashok, the Elder kills (Heroic Aberrus, the Shadowed Crucible) \\ Rashok the Elder kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18215),	-- The Vigilant Steward, Zskarn kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18216),	-- Magmorax kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18217),	-- Echo of Neltharion kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18218),	-- Scalecommander Sarkareth kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18219),	-- Kazzara, the Hellforged kills (Mythic Aberrus, the Shadowed Crucible) \\ Kazzara, the Hellforge kills (Mythic Aberrus, the Shadowed Crucible)
-ach(18220),	-- The Amalgamation Chamber kills (Mythic Aberrus, the Shadowed Crucible)
-ach(18221),	-- The Forgotten Experiments kills (Mythic Aberrus, the Shadowed Crucible)
-ach(18222),	-- Assault of the Zaqali kills (Mythic Aberrus, the Shadowed Crucible)
-ach(18223),	-- Rashok, the Elder kills (Mythic Aberrus, the Shadowed Crucible)
-ach(18224),	-- The Vigilant Steward, Zskarn kills (Mythic Aberrus, the Shadowed Crucible)
-ach(18225),	-- Magmorax kills (Mythic Aberrus, the Shadowed Crucible)
-ach(18226),	-- Echo of Neltharion kills (Mythic Aberrus, the Shadowed Crucible)
-ach(18227),	-- Scalecommander Sarkareth kills (Mythic Aberrus, the Shadowed Crucible)
-ach(18231),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 1 (Character)
-ach(18232),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 2 (Character)
-ach(18233),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 4 (Character)
-ach(18234),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 8 (Character)
-ach(18235),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 11 (Character)
-ach(18236),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 12 (Character)
-ach(18237),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 14 (Character)
-ach(18238),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 16 (Character)
-ach(18239),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 17 (Character)
-ach(18240),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 18 (Character)
-ach(18241),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 20 (Character)
-ach(18242),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 23 (Character)
-ach(18243),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 24 (Character)
-ach(18244),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 25 (Character)
-ach(18245),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 26 (Character)
-ach(18246),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 27 (Character)
-ach(18247),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 28 (Character)
-ach(18248),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Tutorial Objectives (Character)
-10.1.0.49092
-ach(18359),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests
-10.1.0.49426
-ach(18394),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests (copy)
-10.1.0.49679
-ach(18542),	-- Dragonflight Keystone Master: Season Two
-10.1.0.49890
-ach(17542),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 2
 10.1.5.49516
-ach(17732),	-- <Hidden>10.1.5 Chromie Time - Hit 60 While In Chromie Time (copy) (copy)
-ach(17733),	-- <Hidden> 10.1.5 Chromie Time - Hit 61 While In Chromie Time (copy) (copy)
 ach(18360),	-- Tricks and Treats of the Dragon Isles
-ach(18381),	-- <Hidden> Account has completed Alliance NPE Quest
-ach(18382),	-- <Hidden> Account has completed Horde NPE Quest
-ach(18390),	-- <Hidden> 10.1.5 Warlock Expansion - Mail Quest Push - Alliance (NJS)
-ach(18392),	-- <Hidden> 10.1.5 Warlock Expansion - Mail Quest Push - Horde (NJS)
-ach(18396),	-- <Hidden> 10.1.5 Warlock Expansion - Mail Quest Push - Oman's Letter (NJS)
 ach(18399),	-- Gilneas Gambit: Bronze
 ach(18400),	-- Gilneas Gambit: Silver
 ach(18401),	-- Gilneas Gambit: Gold
@@ -364,9 +213,7 @@ ach(18503),	-- Booty Bay Blast Advanced: Gold
 ach(18504),	-- Booty Bay Blast Reverse: Bronze
 ach(18505),	-- Booty Bay Blast Reverse: Silver
 ach(18506),	-- Booty Bay Blast Reverse: Gold
-ach(18507),	-- <Hidden> Completed Legion based Tasks \\ <Hidden> Completed 5 Legion based Tasks
 10.1.5.49595
-ach(18509),	-- <Hidden> Completed Robot based Tasks
 ach(18510),	-- Fuselight Night Flight: Bronze
 ach(18511),	-- Fuselight Night Flight: Silver
 ach(18512),	-- Fuselight Night Flight: Gold
@@ -394,9 +241,6 @@ ach(18533),	-- Redridge Rally Advanced: Gold
 ach(18534),	-- Redridge Rally Reverse: Bronze
 ach(18535),	-- Redridge Rally Reverse: Silver
 ach(18536),	-- Redridge Rally Reverse: Gold
-ach(18543),	-- <Hidden> Completed HvA based Tasks
-10.1.5.49719
-ach(18555),	-- <Hidden> Completed Murloc based Tasks
 10.1.5.49824
 ach(18566),	-- Eastern Kingdoms: Bronze
 ach(18567),	-- Eastern Kingdoms: Silver
@@ -407,8 +251,6 @@ ach(18571),	-- Eastern Kingdoms Advanced: Gold
 ach(18572),	-- Eastern Kingdoms Reverse: Bronze
 ach(18573),	-- Eastern Kingdoms Reverse: Silver
 ach(18574),	-- Eastern Kingdoms Reverse: Gold
-10.1.5.50006
-ach(18648),	-- <DNT> Eons Fringe - Multitude of Tasks - Completed Twice (Character)
 10.1.7.50442
 ach(17853),	-- Ruby Lifeshrine Loop Challenge: Bronze
 ach(17854),	-- Ruby Lifeshrine Loop Challenge: Silver

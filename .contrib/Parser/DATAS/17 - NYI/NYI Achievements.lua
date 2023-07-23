@@ -599,6 +599,19 @@ root(ROOTS.NeverImplemented, {
 				ach(17317),	-- Dragon Isles Crafting Order Journeyman
 				ach(17318),	-- Dragon Isles Crafting Order Master
 			})),
+
+			-- 10.0.7
+			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+				ach(17500),	-- Renowned Tribal Leatherworker
+				ach(17501),	-- Renowned Mooncloth Tailor
+				ach(17502),	-- Renowned Spellfire Tailor
+				ach(17503),	-- Renowned Shadoweave Tailor
+			})),
+
+			-- 10.1.0
+			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+				ach(18542),	-- Dragonflight Keystone Master: Season Two	-- shows as completed together with ach(17844), but this version is NYI
+			})),
 		}),
 	}),
 });

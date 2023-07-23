@@ -77,14 +77,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 		header(HEADERS.Achievement, SEASON_SMOLDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		},{
-			ach(17842),		-- Dragonflight Keystone Explorer: Season 2
-			ach(17843, {	-- Dragonflight Keystone Conqueror: Season 2
+			ach(17842),		-- Dragonflight Keystone Explorer: Season Two
+			ach(17843, {	-- Dragonflight Keystone Conqueror: Season Two
 				title(503),	-- <Name> the Smoldering
 			}),
-			ach(17844, {	-- Dragonflight Keystone Master: Season 2
+			ach(17844, {	-- Dragonflight Keystone Master: Season Two
 				i(204798),	-- Inferno Armoredon (MOUNT!)
 			}),
-			ach(17845),		-- Dragonflight Keystone Hero: Season 2
+			ach(17845),		-- Dragonflight Keystone Hero: Season Two
 			ach(17846, {	-- Smoldering Hero: Dragonflight Season 2
 				title(504),	-- <Name> the Smoldering Hero
 			}),
