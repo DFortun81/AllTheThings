@@ -1,9 +1,9 @@
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
 local Items = root(ROOTS.ItemDBConditional);
 local Recipes = root(ROOTS.RecipeDB);
-local iq = function(itemID, questID, classID)
+local iq = function(itemID, questID, classID, raceID)
 	if itemID ~= 0 then
-		Items[itemID] = { ["questID"] = questID, ["classes"] = { classID }, ["_drop"] = { "spellID" } };
+		Items[itemID] = { ["questID"] = questID, ["classes"] = { classID }, ["races"] = { raceID }, ["_drop"] = { "spellID" } };
 	end
 end
 local is = function(itemID, spellID, classID)
@@ -109,6 +109,13 @@ iq(166502, 54753, HUNTER);			-- Blood-Soaked Tome of Dark Whispers
 -- PATCH 8.2.5 --
 -----------------
 is(172405, 309328, SHAMAN);			-- Tome of Hex: Living Honey
+
+-----------------
+-- PATCH 8.3.0 --
+-----------------
+iq(175158, 59029, nil, VULPERA);	-- Flames of Fury
+iq(175160, 59035, nil, VULPERA);	-- Holy Relic
+iq(175159, 59032, nil, VULPERA);	-- Sinister Shadows
 
 -----------------
 -- PATCH 9.0.1 --

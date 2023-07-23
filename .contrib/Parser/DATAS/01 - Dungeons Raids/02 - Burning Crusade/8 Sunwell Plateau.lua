@@ -219,11 +219,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					25741,	-- M'uru
 				},
 				["groups"] = {
-					i(175160, {	-- Holy Relic (Bag of Tricks addition)
-						["races"] = { VULPERA },
-						["questID"] = 59035,
-						["timeline"] = { "added 8.3.0.33115" },
-						["ignoreBonus"] = true,
+					ig(175160, {	-- Holy Relic (RI!)
+						["timeline"] = { ADDED_8_3_0 },
 					}),
 					i(122114, {	-- Chaos Pup (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
