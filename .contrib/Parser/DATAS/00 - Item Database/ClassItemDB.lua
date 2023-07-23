@@ -22,8 +22,8 @@ is(22739, 28271, MAGE);				-- Tome of Polymorph: Turtle
 -----------------
 -- PATCH 3.0.3 --
 -----------------
-is(44714, 61316, MAGE);				-- Tome of Dalaran Brilliance
-is(44602, 61024, MAGE);				-- Tome of Dalaran Intellect
+is(44714, 61316, MAGE);				-- Tome of Dalaran Brilliance [REMOVED]
+is(44602, 61024, MAGE);				-- Tome of Dalaran Intellect [REMOVED]
 is(44709, 61305, MAGE);				-- Tome of Polymorph: Black Cat
 -- NYI --
 is(44600, 61025, MAGE);				-- Tome of Polymorph: Serpent

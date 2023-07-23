@@ -6155,7 +6155,7 @@ root(ROOTS.Zones, {
 								["isLimited"] = true,
 							}),
 							i(44602, {	-- Tome of Dalaran Intellect (CI!)
-								["timeline"] = { REMOVED_7_0_3 },
+								["timeline"] = { ADDED_3_0_3, REMOVED_7_0_3 },
 								["isLimited"] = true,
 							}),
 							i(44709, {	-- Tome of Polymorph: Black Cat (CI!)
