@@ -1206,6 +1206,16 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					spell(417884),	-- Fiendish Imps
 				},
 			}),
+			q(76163, {	-- A Lighter Shade of Fel
+				["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
+				["provider"] = { "i", 206681 },	-- Letter from Oman
+				["classes"] = { WARLOCK },
+				["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
+				["timeline"] = { ADDED_10_1_5 },
+				["g"] = {
+					i(207101),	-- Glyph of Banehollow's Soulstone
+				},
+			}),
 		}),
 		n(ARMOR, {
 			i(1396, {	-- Acolyte's Pants
@@ -1551,7 +1561,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	}),
 }));
 
-root(ROOTS.Character, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 	cl(EVOKER, {
 		q(74891),	-- Triggeres on the first use of 'Soar' spell after 10.0.7 to get the 'Aerial Halt' spell (spellID 403092)
 	}),

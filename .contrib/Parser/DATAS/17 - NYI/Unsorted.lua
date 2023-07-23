@@ -433,7 +433,6 @@ root(ROOTS.Unsorted, {
 			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
 			i(207057),	-- Gift of the White War Wolf
 			i(207096),	-- Paracausal Chest
-			i(207101),	-- Glyph of Banehollow's Soulstone
 			i(207102),	-- TESTING ITEM DELETE ME
 			i(205199),	-- Slime Sheathed Shell
 			i(207594),	-- Looter's Purse
@@ -455,7 +454,6 @@ root(ROOTS.Unsorted, {
 			i(201166),	-- Gilded Hilt
 			i(206160),	-- Madam Shadow's Grimoire
 			i(206520),	-- Beverage for Pedgi
-			i(206681),	-- Letter from Oman
 			i(208400),	-- Silks of the Unnamed Cult
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
 			--
