@@ -1,12 +1,11 @@
 7.3.0.24473
 i(38578),	-- Flag of Ownership \\ The Flag of Ownership
-i(50471),	-- Heartbreaker \\ The Heartbreaker
-10.0.7.47910
-i(203734),	-- Snow Blanket
 10.1.7.50442
 i(208229),	-- Honor of the Forsaken
 i(208421),	-- Compendium of the New Moon
 i(208433),	-- Bronze Racer's Pennant
+10.1.7.50505
+i(208880),	-- Brewhahat
 
 
 
@@ -19,3 +18,5 @@ i(38578),	-- Flag of Ownership \\ The Flag of Ownership
 i(208229),	-- Honor of the Forsaken
 i(208421),	-- Compendium of the New Moon
 i(208433),	-- Bronze Racer's Pennant
+10.1.7.50505
+i(208880),	-- Brewhahat

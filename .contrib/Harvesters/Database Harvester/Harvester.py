@@ -529,7 +529,7 @@ def create_missing_files() -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        if thing != Items and thing == Recipes:
+        if thing != Items:
             print(thing)
             create_missing_file(thing)
             post_process(thing)
@@ -556,9 +556,9 @@ def give_name_item() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.1.5.50469")
+# add_latest_data("10.1.7.50505")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
 """Step 5: Run create_missing_files() and (you have to uncomment it)"""
-create_missing_files()
+# create_missing_files()

@@ -40,9 +40,6 @@ ach(1657),	-- Hallowed Be Thy Name
 ach(1684),	-- Brewmaster
 ach(1692),	-- Merrymaker
 ach(1707),	-- Fool For Love
-3.3.5.12340
-ach(4624),	-- Tough Love
-ach(4627),	-- X-45 Heartbreaker \\ Big Love Rocket
 3.4.0.46158
 ach(16313),	-- Rival: Season 5
 ach(16314),	-- Gladiator: Season 5
@@ -833,3 +830,11 @@ ach(18904),	-- Iron to Vendor Gold
 ach(18909),	-- Fantastic Figurines
 ach(18934),	-- Excessive Experimentation
 ach(18938),	-- Seeing Red (account)
+10.1.7.50505
+ach(18939),	-- Eastern Kingdoms Racing Completionist
+ach(18940),	-- Eastern Kingdoms Racing Completionist: Silver
+ach(18941),	-- Dazzling Dragons
+ach(18942),	-- Eastern Kingdoms Racing Completionist: Gold
+ach(18959),	-- Don't Lose Your Head, Man
+ach(18960),	-- Kickin' With the Wick
+ach(18962),	-- A Cleansing Fire

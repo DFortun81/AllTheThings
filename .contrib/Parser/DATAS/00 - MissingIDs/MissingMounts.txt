@@ -116,6 +116,8 @@ mount(419002),	-- Whelpling \\ Temp
 10.1.7.50442
 mount(419567),	-- Ginormous Grrloc
 mount(420097),	-- Azure Worldchiller
+10.1.7.50505
+mount(419345),	-- Eve's Ghastly Rider
 
 
 
@@ -239,3 +241,5 @@ mount(419002),	-- Whelpling \\ Temp
 10.1.7.50442
 mount(419567),	-- Ginormous Grrloc
 mount(420097),	-- Azure Worldchiller
+10.1.7.50505
+mount(419345),	-- Eve's Ghastly Rider
