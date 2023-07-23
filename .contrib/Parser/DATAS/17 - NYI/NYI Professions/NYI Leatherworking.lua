@@ -4,7 +4,7 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(LEATHERWORKING, {
 		n(CRAFTABLES, {
-			tier(DF_TIER, {
+			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(172313),	-- Bonerivitted Armguards
@@ -68,7 +68,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(172296),	-- Wildskin Waistguard
 					i(172338),	-- Loosened Belt
 				})),
-
+			}),
+			tier(DF_TIER, {
 				-- 10.0.0
 				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(193475),	-- Masterwork Riding Crop
@@ -77,7 +78,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
-			tier(DF_TIER, {
+			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(338261),	-- Almost Thing (RECIPE!)
@@ -145,7 +146,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- With SpellID attached
 					i(182669),	-- Loosened Belt (RECIPE!)
 				})),
-
+			}),
+			tier(DF_TIER, {
 				-- 10.0.0
 				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(375175),	-- Deathchill Hide (RECIPE!)
