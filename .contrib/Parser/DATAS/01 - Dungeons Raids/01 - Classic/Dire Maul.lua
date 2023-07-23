@@ -802,12 +802,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["groups"] = {
 						{
 							["recipeID"] = 22813,	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3", "added 10.1.5" },
+							["timeline"] = { "removed 4.0.3" },
 							["requireSkill"] = TAILORING,
 						},
 						{
 							["recipeID"] = 22815,	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3", "added 10.1.5" },
+							["timeline"] = { "removed 4.0.3" },
 							["requireSkill"] = LEATHERWORKING,
 						},
 						{
@@ -1300,7 +1300,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
 				-- #endif
 				["groups"] = {
-					n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3", ADDED_10_0_5 } }, {
+					n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3", ADDED_10_1_5 } }, {
 						i(18250, {	-- Gordok Shackle Key
 							["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
 							["crs"] = {
@@ -1317,8 +1317,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							},
 						}),
 					})),
-					n(QUESTS, {
-						q(77194, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Free Knot!
+					n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+						q(77194, {	-- Free Knot!
 							["qg"] = 14338,	-- Knot Thimblejack
 							["cost"] = {
 								{ "i", 18250, 1 },	-- Gordok Shackle Key
@@ -1335,8 +1335,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 									i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
 								}),
 							},
-						})),
-					}),
+						}),
+					})),
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "The following items can drop from any of the guards.",
 						["crs"] = {
@@ -1520,6 +1520,19 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							}),
 						},
 					}),
+					n(14338, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Knot Thimblejack
+						["maps"] = { 235 },	-- Gordok Commons
+						["groups"] = {
+							r(22813, {	-- Gordok Ogre Suit
+								["requireSkill"] = TAILORING,
+								["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
+							}),
+							r(22815, {	-- Gordok Ogre Suit
+								["requireSkill"] = LEATHERWORKING,
+								["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
+							}),
+						},
+					})),
 					n(14353, {	-- Mizzle the Crafty
 						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
 						["groups"] = {
