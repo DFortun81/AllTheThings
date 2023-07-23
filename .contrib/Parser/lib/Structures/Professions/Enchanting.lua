@@ -419,9 +419,9 @@ DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({
 		}),
 		applyclassicphase(BFA_PHASE_ONE, r(264469, {["timeline"]={"added 8.0.1"}})),	-- Draenor Enchanting
 		applyclassicphase(BFA_PHASE_ONE, r(302693, {	-- Disenchant
-		["collectible"] = false,
-		["timeline"] = { "added 8.0.1" },
-	})),
+			["collectible"] = false,
+			["timeline"] = { "added 8.0.1" },
+		})),
 		r(158907),	-- Breath of Critical Strike
 		r(158908),	-- Breath of Haste
 		r(158909),	-- Breath of Mastery
@@ -539,7 +539,7 @@ COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData(
 	}),
 }));
 BFA_ENCHANTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { "added 8.0.1" } }, {
-	r(302695),	-- Disenchant
+	r(302695, {["collectible"] = false}),	-- Disenchant
 	cat(ARMOR_ENCHANTMENTS, {
 		r(271433),	-- Cooled Hearthing
 		r(255075),	-- Pact of Critical Strike [Rank 1]
