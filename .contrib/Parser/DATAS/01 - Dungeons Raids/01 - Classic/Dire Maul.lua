@@ -1521,7 +1521,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						},
 					}),
 					n(14338, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Knot Thimblejack
-						["maps"] = { 235 },	-- Gordok Commons
 						["groups"] = {
 							r(22813, {	-- Gordok Ogre Suit
 								["requireSkill"] = TAILORING,
