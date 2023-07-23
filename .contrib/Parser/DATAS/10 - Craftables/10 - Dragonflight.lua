@@ -794,59 +794,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(200002),	-- Enchant Ring - Writ of Versatility++
 			i(200044),	-- Enchant Ring - Writ of Versatility+++
 		}),
-		cat(658, {	-- Weapon Enchantments
-			i(199961),	-- Enchant Tool - Draconic Deftness+
-			i(200003),	-- Enchant Tool - Draconic Deftness++
-			i(200045),	-- Enchant Tool - Draconic Deftness+++
-			i(199962),	-- Enchant Tool - Draconic Finesse+
-			i(200004),	-- Enchant Tool - Draconic Finesse++
-			i(200046),	-- Enchant Tool - Draconic Finesse+++
-			i(199963),	-- Enchant Tool - Draconic Inspiration+
-			i(200005),	-- Enchant Tool - Draconic Inspiration++
-			i(200047),	-- Enchant Tool - Draconic Inspiration+++
-			i(199964),	-- Enchant Tool - Draconic Perception+
-			i(200006),	-- Enchant Tool - Draconic Perception++
-			i(200048),	-- Enchant Tool - Draconic Perception+++
-			i(199965),	-- Enchant Tool - Draconic Resourcefulness+
-			i(200007),	-- Enchant Tool - Draconic Resourcefulness++
-			i(200049),	-- Enchant Tool - Draconic Resourcefulness+++
-			i(199966),	-- Enchant Weapon - Burning Devotion+
-			i(200008),	-- Enchant Weapon - Burning Devotion++
-			i(200050),	-- Enchant Weapon - Burning Devotion+++
-			i(199967),	-- Enchant Weapon - Burning Writ+
-			i(200009),	-- Enchant Weapon - Burning Writ++
-			i(200051),	-- Enchant Weapon - Burning Writ+++
-			i(199968),	-- Enchant Weapon - Earthen Devotion+
-			i(200010),	-- Enchant Weapon - Earthen Devotion++
-			i(200052),	-- Enchant Weapon - Earthen Devotion+++
-			i(199969),	-- Enchant Weapon - Earthen Writ+
-			i(200011),	-- Enchant Weapon - Earthen Writ++
-			i(200053),	-- Enchant Weapon - Earthen Writ+++
-			i(199972),	-- Enchant Weapon - Frozen Devotion+
-			i(200014),	-- Enchant Weapon - Frozen Devotion++
-			i(200056),	-- Enchant Weapon - Frozen Devotion+++
-			i(199973),	-- Enchant Weapon - Frozen Writ+
-			i(200015),	-- Enchant Weapon - Frozen Writ++
-			i(200057),	-- Enchant Weapon - Frozen Writ+++
-			i(204621, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Shadowflame Wreathe+
-			i(204622, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Shadowflame Wreathe++
-			i(204623, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Shadowflame Wreathe+++
-			i(199970),	-- Enchant Weapon - Sophic Devotion+
-			i(200012),	-- Enchant Weapon - Sophic Devotion++
-			i(200054),	-- Enchant Weapon - Sophic Devotion+++
-			i(199971),	-- Enchant Weapon - Sophic Writ+
-			i(200013),	-- Enchant Weapon - Sophic Writ++
-			i(200055),	-- Enchant Weapon - Sophic Writ+++
-			i(204613, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Spore Tender+
-			i(204614, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Spore Tender++
-			i(204615, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Spore Tender+++
-			i(199974),	-- Enchant Weapon - Wafting Devotion+
-			i(200016),	-- Enchant Weapon - Wafting Devotion++
-			i(200058),	-- Enchant Weapon - Wafting Devotion+++
-			i(199975),	-- Enchant Weapon - Wafting Writ+
-			i(200017),	-- Enchant Weapon - Wafting Writ++
-			i(200059),	-- Enchant Weapon - Wafting Writ+++
-		}),
 		filter(BATTLE_PETS, {
 			i(200479),	-- Sophic Amalgamation (PET!)
 		}),
@@ -1011,6 +958,59 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(198715, {["requireSkill"]=ENCHANTING}),	-- Runed Draconium Rod
 			i(198716, {["requireSkill"]=ENCHANTING}),	-- Runed Khaz'gorite Rod
 			i(201601, {["requireSkill"]=ENCHANTING}),	-- Runed Serevite Rod
+		}),
+		cat(658, {	-- Weapon Enchantments
+			i(199961),	-- Enchant Tool - Draconic Deftness+
+			i(200003),	-- Enchant Tool - Draconic Deftness++
+			i(200045),	-- Enchant Tool - Draconic Deftness+++
+			i(199962),	-- Enchant Tool - Draconic Finesse+
+			i(200004),	-- Enchant Tool - Draconic Finesse++
+			i(200046),	-- Enchant Tool - Draconic Finesse+++
+			i(199963),	-- Enchant Tool - Draconic Inspiration+
+			i(200005),	-- Enchant Tool - Draconic Inspiration++
+			i(200047),	-- Enchant Tool - Draconic Inspiration+++
+			i(199964),	-- Enchant Tool - Draconic Perception+
+			i(200006),	-- Enchant Tool - Draconic Perception++
+			i(200048),	-- Enchant Tool - Draconic Perception+++
+			i(199965),	-- Enchant Tool - Draconic Resourcefulness+
+			i(200007),	-- Enchant Tool - Draconic Resourcefulness++
+			i(200049),	-- Enchant Tool - Draconic Resourcefulness+++
+			i(199966),	-- Enchant Weapon - Burning Devotion+
+			i(200008),	-- Enchant Weapon - Burning Devotion++
+			i(200050),	-- Enchant Weapon - Burning Devotion+++
+			i(199967),	-- Enchant Weapon - Burning Writ+
+			i(200009),	-- Enchant Weapon - Burning Writ++
+			i(200051),	-- Enchant Weapon - Burning Writ+++
+			i(199968),	-- Enchant Weapon - Earthen Devotion+
+			i(200010),	-- Enchant Weapon - Earthen Devotion++
+			i(200052),	-- Enchant Weapon - Earthen Devotion+++
+			i(199969),	-- Enchant Weapon - Earthen Writ+
+			i(200011),	-- Enchant Weapon - Earthen Writ++
+			i(200053),	-- Enchant Weapon - Earthen Writ+++
+			i(199972),	-- Enchant Weapon - Frozen Devotion+
+			i(200014),	-- Enchant Weapon - Frozen Devotion++
+			i(200056),	-- Enchant Weapon - Frozen Devotion+++
+			i(199973),	-- Enchant Weapon - Frozen Writ+
+			i(200015),	-- Enchant Weapon - Frozen Writ++
+			i(200057),	-- Enchant Weapon - Frozen Writ+++
+			i(204621, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Shadowflame Wreathe+
+			i(204622, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Shadowflame Wreathe++
+			i(204623, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Shadowflame Wreathe+++
+			i(199970),	-- Enchant Weapon - Sophic Devotion+
+			i(200012),	-- Enchant Weapon - Sophic Devotion++
+			i(200054),	-- Enchant Weapon - Sophic Devotion+++
+			i(199971),	-- Enchant Weapon - Sophic Writ+
+			i(200013),	-- Enchant Weapon - Sophic Writ++
+			i(200055),	-- Enchant Weapon - Sophic Writ+++
+			i(204613, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Spore Tender+
+			i(204614, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Spore Tender++
+			i(204615, {["timeline"] = {ADDED_10_1_0}}),	-- Enchant Weapon - Spore Tender+++
+			i(199974),	-- Enchant Weapon - Wafting Devotion+
+			i(200016),	-- Enchant Weapon - Wafting Devotion++
+			i(200058),	-- Enchant Weapon - Wafting Devotion+++
+			i(199975),	-- Enchant Weapon - Wafting Writ+
+			i(200017),	-- Enchant Weapon - Wafting Writ++
+			i(200059),	-- Enchant Weapon - Wafting Writ+++
 		}),
 	}),
 	prof(ENGINEERING, {

@@ -2,13 +2,7 @@
 local appName, app = ...;
 local keys = {
 ["ITEM_NAMES"]={
-[2404]="Deprecated Pattern: Light Winter Cloak",
-[2405]="Deprecated Pattern: Light Winter Boots",
 [2554]="Deprecated Recipe: Elixir of Fortitude",
-[2599]="Deprecated Pattern: Forest Silk Gloves",
-[2600]="Deprecated Pattern: Trogg Vest",
-[2602]="Deprecated Pattern: Feathered Robe",
-[4295]="Pattern: Double-stitched Leather Gloves OLD",
 [5641]="Recipe: Cowardly Flight Potion",
 [13500]="Recipe: Greater Holy Protection Potion",
 [21924]="Pattern: Runecloth Robe",

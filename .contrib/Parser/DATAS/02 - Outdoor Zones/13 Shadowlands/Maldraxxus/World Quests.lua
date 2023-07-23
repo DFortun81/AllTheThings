@@ -32,9 +32,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61606, {	-- Blacksmithing: Soul Razor
 				["requireSkill"] = BLACKSMITHING,
 				["g"] = {
-					r(338090,{["u"]=15}),	-- Hardened Heavy Razor
-					r(338091,{["u"]=15}),	-- Soft Heavy Razor
-					r(338088,{["u"]=15}),	-- Soul Razor
+					r(338090, {["u"]=TRAINING}),	-- Hardened Heavy Razor
+					r(338091, {["u"]=TRAINING}),	-- Soft Heavy Razor
+					r(338088, {["u"]=TRAINING}),	-- Soul Razor
 					i(182088),	-- Borrowed Oxxein Ore
 					i(182086),	-- Hardened Heavy Razor
 					i(182087),	-- Soft Heavy Razor
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61608, {	-- Enchanting: Unbreakable Crystal
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					r(338123,{["u"]=15}),	-- Unbreakable Crystal
+					r(338123, {["u"]=TRAINING}),	-- Unbreakable Crystal
 					i(182043),	-- Antique Necromancer's Staff
 					i(182042),	-- Necrotic Essence
 					i(181949),	-- Unbreakable Crystal
@@ -104,6 +104,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61540),	-- Just Winging It
 			q(61613, {	-- Leatherworking: Bonestudded Fists
 				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					r(338260, {["u"]=TRAINING}),	-- Bonestudded Fist
+					i(181966),	-- Bonestudded Fist
+					i(182030),	-- Cleaned Hide
+					r(338262, {["u"]=TRAINING}),	-- Cleaned Hide
+					i(182029),	-- Corpsestitch Thread
+					i(182031),	-- Unused Flesh
+				},
 			}),
 			q(61539),	-- Liches Get Stitches
 			q(61866),	-- Mighty Minions of Maldraxxus
