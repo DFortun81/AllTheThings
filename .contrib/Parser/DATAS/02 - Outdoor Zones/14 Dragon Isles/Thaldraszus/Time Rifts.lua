@@ -295,6 +295,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 72.5, 47.4, VALDRAKKEN },
 						["isBreadcrumb"] = true,
 						--["lockCriteria"] = { 1, "TODO", TODO },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
+						-- maybe 77680 locks?
+						["DisablePartySync"] = true,
 						["timeline"] = { ADDED_10_1_5 },
 					}),
 					-- ideally want the Object with coords with provider Item inside...

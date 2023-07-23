@@ -327,6 +327,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						----------------LG GOLD ------------------
 						------------------------------------------
 						-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
+						-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
 
 						-- Following items are possible:
 						-- World Drop Items with any quality till SL. Includes removed BoE items
@@ -336,7 +337,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop before Dragonflight (10.0).\n\n|cFF40bf40If*** you get an Item which is removed from the game, please let us know in the Discord.***|r",
 							["groups"] = {
 								-- Cloth
-								i(2114),	-- Snowy Robe	(Removed)
+								ig(2114),	-- Snowy Robe	(Removed)
 								-- Leather
 								-- Mail
 								-- Plate
@@ -357,9 +358,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- Cloth
 								-- Leather
 								-- Mail
-								i(121508),	-- Stormborn Crown					(Never added)
+								ig(121508),	-- Stormborn Crown					(Never added)
 
-								i(134624),	-- Firebrand Helm					(Removed)
+								ig(134624),	-- Firebrand Helm					(Removed)
 								-- Plate
 							},
 						}),
@@ -378,10 +379,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- Cloth
 								-- Leather
 								-- Mail
-								i(3231),	-- Cutthroat Pauldrons				(Removed)
-								i(18320),	-- Demonheart Spaulders				(NYI Classic)
+								ig(3231),	-- Cutthroat Pauldrons				(Removed)
+								ig(18320),	-- Demonheart Spaulders				(NYI Classic)
 								-- Plate
-								i(103785),	-- Tusks of Mannoroth Heroic		(Removed)
+								ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
 							},
 						}),
 						n(WEAPONS, sharedData({ ["description"] = "This Item turns into one (1) unlearned Item based on ItemID from any Dungeon, Raid or World drop from before Dragonflight (10.0).\n\n|cFF40bf40***If you get an Item which is removed from the game, please let us know in the Discord.***|r" }, {
@@ -396,42 +397,42 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(208125, {	-- Quantum Focus
 							}),
 							i(208113, {	-- Quantum Greataxe (Done)
-								i(33769),	-- Arcanite Ripper					(BMAH)
-								i(44924),	-- Sun Lute							(BMAH)
+								ig(33769),	-- Arcanite Ripper					(BMAH)
+								ig(44924),	-- Sun Lute							(BMAH)
 
-								i(134717),	-- Cold-Touched Decapitator			(Never added)
-								i(108046),	-- Draenic Steel War Axe			(Never added)
-								i(108228),	-- Peerless Draenic Steel War Axe	(Never added)
-								i(115293),	-- Spectral Greataxe				(Never added)
-								i(134577),	-- Vanguard Decapitator				(Never added)
+								ig(134717),	-- Cold-Touched Decapitator			(Never added)
+								ig(108046),	-- Draenic Steel War Axe			(Never added)
+								ig(108228),	-- Peerless Draenic Steel War Axe	(Never added)
+								ig(115293),	-- Spectral Greataxe				(Never added)
+								ig(134577),	-- Vanguard Decapitator				(Never added)
 
-								i(2015),	-- Black Metal War Axe				(Removed)
-								i(2227),	-- Heavy Ogre War Axe 				(Removed)
-								i(1220),	-- Lupine Axe						(Removed)
-								i(756),		-- Tunnel Pick 						(Removed)
-								i(3325),	-- Vile Fin Battle Axe				(Removed)
-								i(23171),	-- The Axe of Severing				(Removed)
+								ig(2015),	-- Black Metal War Axe				(Removed)
+								ig(2227),	-- Heavy Ogre War Axe 				(Removed)
+								ig(1220),	-- Lupine Axe						(Removed)
+								ig(756),	-- Tunnel Pick 						(Removed)
+								ig(3325),	-- Vile Fin Battle Axe				(Removed)
+								ig(23171),	-- The Axe of Severing				(Removed)
 
-								i(189996),	-- Elegantly Balanced Axe			(Unique NYI)
+								ig(189996),	-- Elegantly Balanced Axe			(Unique NYI)
 
-								i(9425),	-- Pendumlum of Doom				(Very Rare BoE)
+								ig(9425),	-- Pendumlum of Doom				(Very Rare BoE)
 							}),
 							i(208114, {	-- Quantum Greathammer
-								i(2254),	-- Icepane Warhammer				(Removed)
+								ig(2254),	-- Icepane Warhammer				(Removed)
 							}),
 							i(208112, {	-- Quantum Greatsword (Done)
 								-- CA IS NOT POSSIBLE -- Gold 13.07.2023
-								
-								i(134746),	-- Covert Greatsword 				(Never added)
-								i(134606),	-- Scorching Greatsword 			(Never added)
-								
-								i(2014),	-- Black Metal Greatsword 			(Removed)
-								i(2204),	-- Brashclaws Skewer 				(Removed)
-								i(3188),	-- Coral Claymore 					(Removed)
-								i(2084),	-- Darksteel Bastard Sword 			(Removed)
-								i(1387),	-- Ghoulfang						(Removed)
-								i(16039),	-- Ta'Kierthan Songblade			(Removed)
-								i(2754),	-- Tarnished Bastard Sword			(Removed)
+
+								ig(134746),	-- Covert Greatsword 				(Never added)
+								ig(134606),	-- Scorching Greatsword 			(Never added)
+
+								ig(2014),	-- Black Metal Greatsword 			(Removed)
+								ig(2204),	-- Brashclaws Skewer 				(Removed)
+								ig(3188),	-- Coral Claymore 					(Removed)
+								ig(2084),	-- Darksteel Bastard Sword 			(Removed)
+								ig(1387),	-- Ghoulfang						(Removed)
+								ig(16039),	-- Ta'Kierthan Songblade			(Removed)
+								ig(2754),	-- Tarnished Bastard Sword			(Removed)
 							}),
 							i(208120, {	-- Quantum Knife
 							}),
@@ -442,12 +443,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(208116, {	-- Quantum Polearm
 							}),
 							i(208126, {	-- Quantum Shield
-								i(134803),	-- Seasoned Redoubt 				(Removed)
+								ig(134803),	-- Seasoned Redoubt 				(Removed)
 							}),
 							i(208115, {	-- Quantum Staff
-								i(115298),	-- Spectral Spire 					(Never added)
+								ig(115298),	-- Spectral Spire 					(Never added)
 
-								i(2280),	-- Kam's Walking Stick				(Removed)
+								ig(2280),	-- Kam's Walking Stick				(Removed)
 							}),
 							i(208109, {	-- Quantum Sword
 							}),

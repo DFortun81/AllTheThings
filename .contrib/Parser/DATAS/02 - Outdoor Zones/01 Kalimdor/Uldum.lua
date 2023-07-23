@@ -1060,7 +1060,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(50409, {	-- Mysterious Camel Figurine
-					["description"] = "If you're lucky enough to find the right Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
+					["description"] = "If you're lucky enough to find this Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
 					["coords"] = {
 						{ 25.59, 65.89, ULDUM },
 						{ 29.85, 20.45, ULDUM },
@@ -1088,6 +1088,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["crs"] = { 50245 },	-- Dormus the Camel Hoarder
 						}),
 					},
+				}),
+				n(50410, {	-- Mysterious Camel Figurine
+					["description"] = "Fake Camel!",
 				}),
 			}),
 			n(VENDORS, {

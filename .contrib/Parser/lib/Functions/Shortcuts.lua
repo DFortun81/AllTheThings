@@ -809,6 +809,16 @@ iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which 
 	i.up = ((tonumber(modID) or 0) / 100) + ((tonumber(bonusID) or 0) / 1000000);
 	return i;
 end
+iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (specified by ModID/BonusID)
+	local i = i(itemID, t);
+	if modID and modID ~= 0 then
+		i.modID = modID;
+	end
+	if bonusID and bonusID ~= 0 then
+		i.bonusID = bonusID;
+	end
+	return i;
+end
 inst = function(id, t)									-- Create an INSTANCE Object
 	if t then
 		t = struct("instanceID", id, t);
