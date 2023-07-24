@@ -58,28 +58,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(183870, {	-- Recipe: Crafter's Mark II (RECIPE!)
 						["cost"] = { { "c", STYGIA, 300 } },
 						["g"] = {
-							recipe(343678, {	-- Crafter's Mark II
+							r(343678, {	-- Crafter's Mark II (RECIPE!)
 								["requireSkill"] = ALCHEMY,
 							}),
-							recipe(343696, {	-- Crafter's Mark II
-								["requireSkill"] = JEWELCRAFTING,
-							}),
-							recipe(343202, {	-- Crafter's Mark II
-								["requireSkill"] = TAILORING,
-							}),
-							recipe(343185, {	-- Crafter's Mark II
+							r(343185, {	-- Crafter's Mark II (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 							}),
-							recipe(343193, {	-- Crafter's Mark II
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							recipe(343100, {	-- Crafter's Mark II
-								["requireSkill"] = ENGINEERING,
-							}),
-							recipe(343683, {	-- Crafter's Mark II
+							r(343683, {	-- Crafter's Mark II (RECIPE!)
 								["requireSkill"] = ENCHANTING,
 							}),
-							recipe(343689),	-- Crafter's Mark II [INSCRIPTION]
+							r(343100, {	-- Crafter's Mark II (RECIPE!)
+								["requireSkill"] = ENGINEERING,
+							}),
+							r(343689, {	-- Crafter's Mark II (RECIPE!)
+								["requireSkill"] = INSCRIPTION,
+							}),
+							r(343696, {	-- Crafter's Mark II (RECIPE!)
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							r(343193, {	-- Crafter's Mark II (RECIPE!)
+								["requireSkill"] = LEATHERWORKING,
+							}),
+							r(343202, {	-- Crafter's Mark II (RECIPE!)
+								["requireSkill"] = TAILORING,
+							}),
 						},
 					}),
 					i(184621, {	-- Ritual Prism of Fortune

@@ -1,3 +1,609 @@
+-----------------------------------------------------
+--       P R O F E S S I O N S   M O D U L E       --
+-----------------------------------------------------
+local LEATHERWORKING_KNOWLEDGE = 2023;
+profession(LEATHERWORKING, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		ach(18884),	-- A Test of Scale IV
+		ach(18883),	-- A Test of Scale III
+		ach(18882),	-- A Test of Scale II
+		ach(18881),	-- A Test of Scale I
+		ach(18793, {	-- Always Be Camping
+			crit(1, {	-- Place a Gnoll Tent
+				["provider"] = { "i", 193476 },	-- Place a Gnoll Tent
+			}),
+			crit(2, {	-- Cured Rugged Hide
+				["provider"] = { "i", 15407 },	-- Cured Rugged Hide
+			}),
+			crit(3, {	-- Stitch a Magnificent Hide Pack
+				["provider"] = { "i", 95536 },	-- Stitch a Magnificent Hide Pack
+			}),
+			crit(4, {	-- 	Eat Dirge's Kickin' Chimaerok Chops
+				["provider"] = { "i", 21023 },	-- 	Eat Dirge's Kickin' Chimaerok Chops
+			}),
+			crit(5),	-- Fish in any school of fish
+			crit(6, {	-- Take a S.E.L.F.I.E.
+				["provider"] = { "i", 122674 },	-- S.E.L.F.I.E. Camera MkII
+			}),
+		}),
+		ach(18900, {	-- Budget Bard
+			crit(1, {	-- Drums of Panic
+				["provider"] = { "i", 29532 },	-- Drums of Panic
+			}),
+			crit(2, {	-- Drums of Restoration
+				["provider"] = { "i", 29531 },	-- Drums of Restoration
+			}),
+			crit(3, {	-- Drums of War
+				["provider"] = { "i", 29528 },	-- Drums of War
+			}),
+			crit(4, {	-- Drums of Battle
+				["provider"] = { "i", 29529 },	-- Drums of Battle
+			}),
+			crit(5, {	-- Drums of Speed
+				["provider"] = { "i", 29530 },	-- Drums of Speed
+			}),
+			crit(6, {	-- Drums of Forgotten Kings
+				["provider"] = { "i", 49633 },	-- Drums of Forgotten Kings
+			}),
+			crit(7, {	-- Drums of the Wild
+				["provider"] = { "i", 49634 },	-- Drums of the Wild
+			}),
+			crit(8, {	-- Drums of Rage
+				["provider"] = { "i", 102351 },	-- Drums of Rage
+			}),
+			crit(9, {	-- Drums of Fury
+				["provider"] = { "i", 120257 },	-- Drums of Fury
+			}),
+			crit(10, {	-- Drums of the Mountain
+				["provider"] = { "i", 142406 },	-- Drums of the Mountain
+			}),
+			crit(11, {	-- Drums of the Maelstrom
+				["provider"] = { "i", 154167 },	-- Drums of the Maelstrom
+			}),
+			crit(12, {	-- Drums of Deathly Ferocity
+				["provider"] = { "i", 172233 },	-- Drums of Deathly Ferocity
+			}),
+			crit(13, {	-- Feral Hide Drums
+				["provider"] = { "i", 193470 },	-- Feral Hide Drums
+			}),
+		}),
+		ach(18898, {	-- That's Just Cruel
+			crit(1, {	-- Nefarian Defeated
+				["provider"] = { "i", 15138 },	-- Onyxia Scale Cloak
+			}),
+			crit(2, {	-- 	Nefarian Defeated (Again)
+				["provider"] = { "i", 15138 },	-- Onyxia Scale Cloak
+			}),
+		}),
+	})),
+	tier(CLASSIC_TIER, {
+		ach(17498, {	-- Renowned Leatherworking Specialist
+			["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
+		}),
+		ach(18899, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- You Saw Nothing
+			crit(1, {	-- Gordok Ogre Suit shamelessly crafted
+				["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
+			}),
+			crit(2, {	-- 	Gordok Ogre Suit donned
+				["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
+			}),
+		})),
+	}),
+	tier(TBC_TIER, {
+		ach(18894, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Free Stylin'
+			crit(1, {	-- Stylin' Purple Hat
+				["provider"] = { "i", 25680 },	-- Stylin' Purple Hat
+			}),
+			crit(2, {	-- Stylin' Adventure Hat
+				["provider"] = { "i", 25681 },	-- Stylin' Adventure Hat
+			}),
+			crit(3, {	-- Stylin' Crimson Hat
+				["provider"] = { "i", 25683 },	-- Stylin' Crimson Hat
+			}),
+			crit(4, {	-- Stylin' Jungle Hat
+				["provider"] = { "i", 25682 },	-- Stylin' Jungle Hat
+			}),
+		})),
+	}),
+	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+		q(36176, {	-- A Call for Huntsman
+			["providers"] = {
+				{ "i", 114877 },	-- Dirty Note
+				{ "n", 75043 },		-- Karnoth
+			},
+			["description"] = "This item can drop from any Draenor mob.",
+			["timeline"] = { "added 6.0.1.18505" },
+			["requireSkill"] = LEATHERWORKING,
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+			["races"] = ALLIANCE_ONLY,
+		}),
+		q(36505, {	-- A Warrior's Shroud
+			["provider"] = { "i", 116173 },	-- Tattered Frostwolf Shroud
+			["description"] = "This item can drop from any Draenor mob.",
+			["timeline"] = { "added 6.0.1.18505" },
+			["requireSkill"] = LEATHERWORKING,
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+			["races"] = HORDE_ONLY,
+		}),
+	})),
+	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+		q(39958,  {	-- Skin Deep
+			["provider"] = { "n", 93523 },	-- Namha Moonwater
+			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			["_drop"] = { "g" }, -- Bad API data
+			["cost"] = {
+				{ "i", 124113, 20 },	-- 20x Stonehide Leather
+				{ "i", 124115, 5 },		-- 5x Stormscale
+			},
+			["g"] = {
+				recipe(264590),	-- Legion Leatherworking
+			},
+		}),
+		q(40183,  {	-- Over Your Head
+			["sourceQuests"] = { 39958 },	-- Skin Deep
+			["provider"] = { "n", 93523 },	-- Namha Moonwater
+			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			["g"] = {
+				r(194739),	-- Battlebound Warhelm (RECIPE!)
+				r(194699),	-- Warhide Mask (RECIPE!)
+				r(196428, {["u"]=TRAINING}),	-- Rough Warhide Mask
+				r(196375, {["u"]=TRAINING}),	-- Shaved Stonehide Pelt
+				r(196382, {["u"]=TRAINING}),	-- Stonehide Leather Lining
+				r(196385, {["u"]=TRAINING}),	-- Stonehide Leather Strip
+				r(196379, {["u"]=TRAINING}),	-- Tanned Stonehide Leather
+				i(130868),	-- Fresh Stonehide Pelt (QI!)
+				i(130891),	-- Namha's Tanning Mixture (QI!)
+				i(129975),	-- Rough Warhide Mask (QI!)
+				i(130869),	-- Shaved Stonehide Pelt (QI!)
+				i(130872),	-- Stonehide Leather Lining (QI!)
+				i(130875),	-- Stonehide Leather Strip (QI!)
+				i(130870),	-- Tanned Stonehide Leather (QI!)
+			},
+		}),
+	})),
+	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+		ach(18777, {	-- Mallet of Thunderous Skins
+			["provider"] = { "i", 164978 },	-- Mallet of Thunderous Skins
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(54481, {	-- Leathered Patterns [A]
+			["provider"] = { "n", 136063 },	-- Cassandra Brennor
+			["coord"] = { 75.5, 12.6, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+		}),
+		q(54482, {	-- Leathered Patterns [H]
+			["provider"] = { "n", 122698 },	-- Xanjo
+			["coord"] = { 44.1, 34.6, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+		}),
+		-- Tools of Trade Questline
+		q(55227, {	-- The Aeonian Artisan
+			["description"] = "Requires 150 Kul Tiran Leatherworking.",
+			["provider"] = { "n", 136063 },	-- Cassandra Brennor
+			["coord"] = { 75.5, 12.6, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53995, {	-- The Tauren Tanner
+			["description"] = "Requires 150 Zandalari Leatherworking.",
+			["provider"] = { "n", 122698 },	-- Xanjo
+			["coord"] = { 44.1, 34.6, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55228, {	-- The Audition (A)
+			["sourceQuests"] = { 55227 },	-- The Aeonian Artisan
+			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+			["coord"] = { 69.6, 29.8, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = {{ "i", 154167, 3 }},	-- 3x Drums of the Maelstrom
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55216, {	-- The Audition (H)
+			["sourceQuests"] = { 53995 },	-- The Tauren Tanner
+			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+			["coord"] = { 53.4, 92.5, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["cost"] = {{ "i", 154167, 3 }},	-- 3x Drums of the Maelstrom
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55229, {	-- Repaying the Debt
+			["sourceQuests"] = { 55228 },	-- The Audition (A)
+			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+			["coord"] = { 69.6, 29.8, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55217, {	-- Repaying the Life Debt
+			["sourceQuests"] = { 55216 },	-- The Audition (H)
+			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+			["coord"] = { 53.4, 92.5, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55230, {	-- Telonis' Prized Leather
+			["sourceQuests"] = { 55229 },	-- Repaying the Debt
+			["provider"] = { "n", 151287 },	-- Telonis
+			["coord"] = { 42.6, 60.6, STORMWIND_CITY },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55218, {	-- Sheza's Prized Leather
+			["sourceQuests"] = { 55217 },	-- Repaying the Life Debt
+			["provider"] = { "n", 3037 },	-- Sheza Wildmane
+			["coord"] = { 69.7, 26.7, THUNDER_BLUFF },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55231, {	-- The Other Ghostdancer
+			["sourceQuests"] = { 55228 },	-- The Audition (A)
+			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+			["coord"] = { 69.6, 29.8, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55219, {	-- Dropping by the Base
+			["sourceQuests"] = { 55216 },	-- The Audition (H)
+			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+			["coord"] = { 53.4, 92.5, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55232, {	-- Mevris' Menace
+			["sourceQuests"] = { 55231 },	-- The Other Ghostdancer
+			["provider"] = { "n", 151285 },	-- Mevris Ghostdancer
+			["coord"] = { 53.6, 54.4, VALSHARAH },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55220, {	-- Bass Fishing
+			["sourceQuests"] = { 55219 },	-- Dropping by the Base
+			["provider"] = { "n", 108017 },	-- Torv Dubstomp
+			["coord"] = { 54.9, 77.9, 750 },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55233, {	-- Picking Bones (A)
+			["sourceQuests"] = { 55228 },	-- The Audition (A)
+			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+			["coord"] = { 69.6, 29.8, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55221, {	-- Picking Bones (H)
+			["sourceQuests"] = { 55216 },	-- The Audition (H)
+			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+			["coord"] = { 53.4, 92.5, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55234, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise (A)
+			["sourceQuests"] = {
+				55230,	-- Telonis' Prized Leather
+				55232,	-- Mevris' Menace
+				55233,	-- Picking Bones (A)
+			},
+			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+			["coord"] = { 69.6, 29.8, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				r(293135, {["u"]=TRAINING}),	--	Drum of Primal Might (RECIPE!)
+			},
+		})),
+		q(55222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise (H)
+			["sourceQuests"] = {
+				55218,	-- Sheza's Prized Leather
+				55220,	-- Bass Fishing
+				55221,	-- Picking Bones (H)
+			},
+			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+			["coord"] = { 53.4, 92.5, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				r(293135, {["u"]=TRAINING}),	--	Drum of Primal Might (RECIPE!)
+			},
+		})),
+		q(55235, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction (A)
+			["sourceQuests"] = { 55234 },	-- Make Some Noise (A)
+			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+			["coord"] = { 69.6, 29.8, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				r(293076),	-- Mallet of Thunderous Skins (RECIPE!)
+			},
+		})),
+		q(55223, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction (H)
+			["sourceQuests"] = { 55222 },	-- Make Some Noise (H)
+			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+			["coord"] = { 53.4, 92.5, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				r(293076),	-- Mallet of Thunderous Skins (RECIPE!)
+			},
+		})),
+	})),
+	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(QUESTS, {
+			q(70362, {	-- Dragon Isles Leatherworking
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192048 },	-- Deidre Flemmin
+				["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366249},	-- Dragon Isles Leatherworking
+			}),
+			q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
+				["providers"] = {
+					{ "n", 192027 },	-- Dokhusek
+					{ "n", 192048 },	-- Deirdre Flemmin
+					{ "n", 195785 },	-- Samar
+					{ "n", 196628 },	-- Ekhi
+				},
+				["coords"] = {
+					{ 57.9, 68.1, THE_WAKING_SHORES },	-- Deirdre Flemmin
+					{ 80.8, 59.4, OHNAHRAN_PLAINS },	-- Dokhusek
+					{ 29.0, 61.0, VALDRAKKEN },			-- Samar
+					{ 39.4, 55.4, OHNAHRAN_PLAINS },	-- Ekhi
+				},
+				["cost"] = { { "i", 193386, 1 } },	-- Pioneer's Leather Boots
+				["_drop"] = { "g" },
+			}),
+			q(70256, {	-- Hidden Profession Master Leatherworking
+				["name"] = "Hidden Profession Master: Leatherworking",
+				["provider"] = { "n", 194842 },	-- Erden
+				["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
+			}),
+			q(70191, {	-- Specialized Secrets: Leatherworking
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
+				["isRepeatable"] = true,
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
+		}),
+		n(QUESTS, sharedData({
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["isWeekly"] = true,
+			["g"] = {
+				i(198613),	-- Leatherworking Designs
+			},
+		},{
+			-- Requires 25 Skill
+			q(66363, {	-- Basilisk Bucklers
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["coord"] = { 36.8, 63.6, VALDRAKKEN },
+			}),
+			q(70594, {	-- Leatherworking Services Requested
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 194026 },	-- Azley
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+			}),
+			q(66951, {	-- Population Control
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+			}),
+			q(72407, {	-- Soaked in Success
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+			}),
+			q(66364, {	-- To Fly a Kite
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+			}),
+
+			-- Requires 45 Skill
+			q(70571, {	-- Drums Here!
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+			}),
+			q(70569, {	-- For Trisket, a Task Kit
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+			}),
+			q(70568, {	-- Tipping the Scales
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+			}),
+			q(70567, {	-- When You Give Bakar a Bone
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+			}),
+
+			-- Requires ?? Skill - Patch 10.1.0.
+			q(75354, {	-- Mycelium Mastery
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 }
+			}),
+			q(75368, {	-- Stones and Scales
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 }
+			}),
+		})),
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = { { "c", LEATHERWORKING_KNOWLEDGE, 1 } }, }, {
+				r(375125),	-- Bow of the Dragon Hunters
+				r(375159),	-- Fang Adornments
+				r(375123),	-- Flame-Touched Chain
+				r(375117),	-- Flame-Touched Chainmail
+				r(375124),	-- Flame-Touched Cuffs
+				r(375119),	-- Flame-Touched Handguards
+				r(375120),	-- Flame-Touched Helmet
+				r(375121),	-- Flame-Touched Legguards
+				r(375122),	-- Flame-Touched Spaulders
+				r(375118),	-- Flame-Touched Treads
+				r(375197),	-- Flaring Cowl
+				r(375166),	-- Illustrious Insight
+				r(375115),	-- Life-Bound Belt
+				r(375116),	-- Life-Bound Bindings
+				r(375110),	-- Life-Bound Boots
+				r(375112),	-- Life-Bound Cap
+				r(375109),	-- Life-Bound Chestpiece
+				r(375111),	-- Life-Bound Gloves
+				r(375114),	-- Life-Bound Shoulderpads
+				r(375113),	-- Life-Bound Trousers
+				r(375160),	-- Toxified Armor Patch
+				r(375199),	-- Witherrot Tome
+			}),
+		}),
+		n(TREASURES, {
+			o(380593, {	-- Bag of Decayed Scales
+				["questID"] = 70294,
+				["coord"] = { 56.8, 30.5, THALDRASZUS },
+				["g"] = {
+					i(198690),	-- Decayed Scales
+				},
+			}),
+			o(380587, {	-- Crate of Treated Hides
+				["questID"] = 70286,
+				["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198683),	-- Treated Hides
+				},
+			}),
+			o(380547, {	-- Decay-Infused Tanning Oil
+				["questID"] = 70266,
+				["coord"] = { 16.77, 38.83, THE_AZURE_SPAN },
+				["g"] = {
+					i(198658),	-- Decay-Infused Tanning Oil
+				},
+			}),
+			o(398783, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Flame-Infused Scale Oil
+				["coord"] = { 41.2, 48.7, ZARALEK_CAVERN },
+				["questID"] = 75495,
+				["g"] = {
+					i(204986),	-- Flame-Infused Scale Oil
+				},
+			})),
+			o(398785, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Lava-Forged Leatherworker's "Knife"
+				["coord"] = { 45.2, 21.0, ZARALEK_CAVERN },
+				["questID"] = 75496,
+				["g"] = {
+					i(204987),	-- Lava-Forged Leatherworker's "Knife"
+				},
+			})),
+			o(380615, {	-- Poacher's Pack
+				["questID"] = 70308,
+				["coord"] = { 39.4, 86.3, THE_WAKING_SHORES },
+				["g"] = {
+					i(198711),	-- Poacher's Pack
+				},
+			}),
+			o(380579, {	-- Spare Djaradin Tools
+				["questID"] = 70280,
+				["coord"] = { 64.3, 25.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(198667),	-- Spare Djaradin Tools
+				},
+			}),
+			o(398791, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Sulfur-Soaked Skins
+				["coord"] = { 49.5, 54.8, ZARALEK_CAVERN },
+				["questID"] = 75502,
+				["g"] = {
+					i(204988),	-- Sulfur-Soaked Skins
+				},
+			})),
+			o(380554, {	-- Well-Danced Drum
+				["description"] = "Fix the drum by interacting with it, wait for the little Tuskarr to finish dancing, then you can loot the treasure.",
+				["questID"] = 70269,
+				["coord"] = { 12.5, 49.4, THE_AZURE_SPAN },
+				["g"] = {
+					i(201018),	-- Well-Danced Drum
+				},
+			}),
+			o(380602, {	-- Wind-Blessed Hide
+				["questID"] = 70300,
+				["coord"] = { 86.4, 53.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198696),	-- Wind-Blessed Hide
+				},
+			}),
+		}),
+		n(-1144, sharedData({	-- Weekly Profession Knowledge
+			["isWeekly"] = true,
+			["g"] = {
+				currency(LEATHERWORKING_KNOWLEDGE),
+			},
+		},{
+			i(198613),	-- Leatherworking Designs
+			q(74113, {	-- Inscription Order: Leatherworking
+				["name"] = "Inscription Order: Leatherworking",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
+			}),
+			q(66384, {	-- Weekly Leatherworking Knowledgepoint #1
+				["name"] = "Leatherworking Treasure #1",
+				["provider"] = { "i", 193910 },		-- Molten Dragon Scales
+			}),
+			q(66385, {	-- Weekly Leatherworking Knowledgepoint #2
+				["name"] = "Leatherworking Treasure #2",
+				["provider"] = { "i", 193913 },		-- Preserved Animal Parts
+			}),
+			q(70522, {	-- Weekly Leatherworking Knowledgepoint #3
+				["name"] = "Leatherworking Drop #1: Proto Drake",
+				["description"] = "Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",
+				["crs"] = {
+					196420,	-- Cavern Hunter (Thaldraszus)
+					190056,	-- Primal Proto-Drake
+				},
+				["provider"] = { "i", 198975 },		-- Ossified Hide
+				["coords"] = {
+					{ 80.6, 33.8, THE_WAKING_SHORES },
+					{ 79.4, 32.5, THE_WAKING_SHORES },
+				},
+			}),
+			q(70523, {	-- Weekly Leatherworking Knowledgepoint #4
+				["name"] = "Leatherworking Drop #2: Sylvern&Vorquin",
+				["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",
+				["crs"] = {
+					188277,	-- Garden Herdmare
+					191317,	-- Creekside Grazer
+					191203,	-- Pleasant Hart
+				},
+				["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
+				["coords"] = {
+					{ 36.6, 72.8, THALDRASZUS },
+					{ 35.4, 72.8, THALDRASZUS },
+					{ 32.4, 73.5, THALDRASZUS },
+					{ 31.3, 76.5, THALDRASZUS },
+				},
+			}),
+		})),
+	})),
+});
+
+-- #if ANYCLASSIC
 local applytraining = function(g)
 	-- #if NOT ANYCLASSIC
 	-- TODO: Solve this for classic, until then, only apply the filter to Retail.
@@ -4871,41 +5477,6 @@ profession(LEATHERWORKING, {
 		},
 	})),
 	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
-		n(DROPS, {
-			q(36176, {	-- A Call for Huntsman
-				["providers"] = {
-					{ "i", 114877 },	-- Dirty Note
-					{ "n", 75043 },		-- Karnoth
-				},
-				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18505" },
-				["requireSkill"] = LEATHERWORKING,
-				["maps"] = {
-					FROSTFIRE_RIDGE,
-					GORGROND,
-					DRAENOR_NAGRAND,
-					DRAENOR_SHADOWMOON_VALLEY,
-					SPIRES_OF_ARAK,
-					TALADOR,
-				},
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(36505, {	-- A Warrior's Shroud
-				["provider"] = { "i", 116173 },	-- Tattered Frostwolf Shroud
-				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18505" },
-				["requireSkill"] = LEATHERWORKING,
-				["maps"] = {
-					FROSTFIRE_RIDGE,
-					GORGROND,
-					DRAENOR_NAGRAND,
-					DRAENOR_SHADOWMOON_VALLEY,
-					SPIRES_OF_ARAK,
-					TALADOR,
-				},
-				["races"] = HORDE_ONLY,
-			}),
-		}),
 		-- #if AFTER 9.0.1.36216
 		{
 			["name"] = "Optional Reagents",
@@ -8263,3 +8834,4 @@ root(ROOTS.NeverImplemented, {
 		-- #endif
 	}),
 });
+-- #endif

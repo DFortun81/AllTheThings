@@ -278,4 +278,36 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	ach(17410, {	-- Craftsman of the Zandalar Tribe
 		["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
 	}),
+	ach(18778, {	-- Massive Toolshed
+		-- Meta Achievement
+		["sym"] = {{"meta_achievement",
+			18775,	-- Iwen's Enchanting Rod
+			18773,	-- Jewelhammer's Focus
+			18771,	-- Khaz'gorian Smithing Hammer
+			18777,	-- Mallet of Thunderous Skins
+			18772,	-- Sanguine Feather Quill of Lana'thel
+			18770,	-- Silas' Sphere of Transmutation
+			18774,	-- Synchronous Thread
+			18776,	-- The Ub3r-Spanner
+		}},
+		["timeline"] = { ADDED_10_1_7 },
+	}),
+	ach(13516, {	-- Massive Tool
+		-- #if AFTER 10.1.7
+		-- Identical Criteria as Main Achievement
+		["sym"] = {{"select","achievementID",18778},{"pop"}},	-- Massive Toolshed
+		-- #else
+		["providers"] = {
+			{ "i", 164766 },	-- Iwen's Enchanting Rod
+			{ "i", 153716 },	-- Jewelhammer's Focus
+			{ "i", 152839 },	-- Khaz'gorian Smithing Hammer
+			{ "i", 164978 },	-- Mallet of Thunderous Skins
+			{ "i", 153670 },	-- Sanguine Feather Quill of Lana'thel
+			{ "i", 156631 },	-- Silas' Sphere of Transmutation
+			{ "i", 164733 },	-- Synchronous Thread
+			{ "i", 164740 },	-- Ub3r-Spanner
+		},
+		-- #endif
+		["timeline"] = { ADDED_8_1_5 },
+	}),
 })));

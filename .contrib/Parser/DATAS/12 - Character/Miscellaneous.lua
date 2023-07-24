@@ -258,4 +258,15 @@ root(ROOTS.Character, filter(MISC, {
 			["timeline"] = { ADDED_5_2_0 },
 		}),
 	}),
+	race(VULPERA, {
+		i(175158, {	-- Flames of Fury
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		i(175160, {	-- Holy Relic
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		i(175159, {	-- Sinister Shadows
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+	}),
 }));

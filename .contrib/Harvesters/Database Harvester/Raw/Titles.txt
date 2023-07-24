@@ -654,3 +654,5 @@
 512@@@%s The Inquisitve
 10.1.5.50130
 514@@@%s of the Infinite
+10.1.7.50505
+515@@@Easter Kingdoms Racer %s

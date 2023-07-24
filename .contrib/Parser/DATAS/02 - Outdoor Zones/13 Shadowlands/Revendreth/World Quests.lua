@@ -37,10 +37,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61620, {	-- Blacksmithing: Prideful Manacles
 				["requireSkill"] = BLACKSMITHING,
 				["g"] = {
-					r(338097,{["u"]=15}),	-- Binding Cuffs
-					r(338094,{["u"]=15}),	-- Prideful Manacles
-					r(338096,{["u"]=15}),	-- Soft Manacle Chains
-					r(338095,{["u"]=15}),	-- Tempered Manacle Chains
+					r(338097, {["u"]=TRAINING}),	-- Binding Cuffs
+					r(338094, {["u"]=TRAINING}),	-- Prideful Manacles
+					r(338096, {["u"]=TRAINING}),	-- Soft Manacle Chains
+					r(338095, {["u"]=TRAINING}),	-- Tempered Manacle Chains
 					i(182090),	-- Binding Cuffs
 					i(182091),	-- Borrowed Sinvyr Bar
 					i(182094),	-- Borrowed Sinvyr Rod
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61630, {	-- Enchanting: Everburning Brand
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					r(338125,{["u"]=15}),	-- Everburning Brand
+					r(338125, {["u"]=TRAINING}),	-- Everburning Brand
 					i(182067),	-- Antique Duelist's Rapier
 					i(181950),	-- Everburning Brand
 					i(182066),	-- Sanguine Crystal
@@ -79,11 +79,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61624, {	-- Inscription: Catalog of Sins
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					r(338234, {["u"]=15}),	-- Catalog of Sins
+					r(338234, {["u"]=TRAINING}),	-- Catalog of Sins
 					i(181959),	-- Catalog of Sins
-					r(338236, {["u"]=15}),	-- Prideful Ink
+					r(338236, {["u"]=TRAINING}),	-- Prideful Ink
 					i(182060),	-- Prideful Ink
-					r(338235, {["u"]=15}),	-- Scroll of Calming Lyrics
+					r(338235, {["u"]=TRAINING}),	-- Scroll of Calming Lyrics
 					i(182059),	-- Scroll of Castigation
 				},
 			}),
@@ -98,6 +98,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61626, {	-- Leatherworking: Courtly Leather Boots
 				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					r(338263, {["u"]=TRAINING}),	-- Courtly Leather Boots
+					i(181967),	-- Courtly Leather Boots
+					i(182055),	-- Ragged Sinrunner Leather
+					r(338265, {["u"]=TRAINING}),	-- Softened Leather
+					i(182054),	-- Softened Leather
+					r(338264, {["u"]=TRAINING}),	-- Tortured Sole
+					i(182053),	-- Tortured Sole
+				},
 			}),
 			q(60659),	-- Light Defense
 			q(59855),	-- Major Mirror Disruptions

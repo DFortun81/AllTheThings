@@ -36428,7 +36428,6 @@ s(7233)/i(18162),	-- 8% Test Speed Boots
 s(7234)/i(18163),	-- 10% Test Speed Boots
 s(7235)/i(18164),	-- 13% Test Speed Boots
 s(7236)/i(18165),	-- 15% Test Speed Boots
-s(7264)/i(18316),	-- Obsidian Bauble
 s(7473)/i(18747),	-- Item Properties Test
 s(7482)/i(18763),	-- TEST GUN Alliance20 \\ TEST GUN Alliance20
 s(7483)/i(18764),	-- TEST GUN Raid
@@ -36547,7 +36546,6 @@ s(8611)/i(21794),	-- Monster - Sword2H, Ahn'Qiraj
 s(8612)/i(21795),	-- Monster - Staff, Ahn'Qiraj
 s(8613)/i(21796),	-- Monster - Item, Ahn'Qiraj Held Scepter
 s(8734)/i(22199),	-- Monster - Axe, 2H Arcanite Reaper
-s(8737)/i(22206),	-- uet of Red Roses \\ Bouquet of Red Roses
 s(8740)/i(22210),	-- Monster - Knuckle, B01 Red
 s(8741)/i(22211),	-- Monster - Knuckle, B01 Red Offhand
 s(8743)/i(22213),	-- Monster - Mace, Hand of Edward the Odd
@@ -39049,7 +39047,6 @@ s(21575)/i(44715),	-- Monster - Gun, Dalaran
 s(21576)/i(44726),	-- Monster - Mace1H, Hyjal D  01 Blue
 s(21577)/i(44727),	-- Monster - Sword, 1H Hyjal 02 Blue
 s(21578)/i(44730),	-- Socket Test Helm
-s(21579)/i(44731),	-- uet of Ebon Roses \\ Bouquet of Ebon Roses
 s(21581)/i(44733),	-- Monster - Mace, Draenei A01 Orange (Low Yellow Glow)
 s(21599)/i(44821),	-- Monster - Mace2H, Northrend C03 Blue (Frozen Rune)
 s(21600)/i(44845),	-- Test Mace of Unending Life

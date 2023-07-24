@@ -289,7 +289,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["questID"] = 64565,
 				["isDaily"] = true,
 				["g"] = {
-					i(186999),	-- Pattern: Pallid Bone Flute
+					i(186999),	-- Pattern: Pallid Bone Flute (RECIPE!)
 					i(187007),	-- Recipe: Bonemeal Bread
 					i(187442),	-- Scholar's Ancient Pack
 				},

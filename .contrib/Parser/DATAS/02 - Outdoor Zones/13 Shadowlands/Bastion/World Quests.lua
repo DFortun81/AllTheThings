@@ -93,6 +93,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61449, {	-- Leatherworking: Steelhide Leather Harness
 				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					i(182009),	-- Fresh Steelhide
+					r(338258, {["u"]=TRAINING}),	-- Steelhide Leather Belt
+					i(182007),	-- Steelhide Leather Belt
+					r(338257, {["u"]=TRAINING}),	-- Steelhide Leather Harness
+					i(181965),	-- Steelhide Leather Harness
+					i(182194),	-- Steelhide Sinew
+					r(338259, {["u"]=TRAINING}),	-- Steelhide Leather Strap
+					i(182008),	-- Steelhide Leather Strap
+					i(182193),	-- Thick Steelhide Leather
+				},
 			}),
 			q(59578),	-- Let's Get Ready to Humble
 			q(61337),	-- March of the Eternal Protector

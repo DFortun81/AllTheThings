@@ -27,16 +27,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 			},
 		}),
 
-		ach(13516, {	-- Massive Tool
-			--[[crit(1),		-- Alchemy: Silas' Sphere of Transmutation
-			crit(2),		-- Blacksmithing: Khaz'gorian Smithing Hammer
-			crit(3),		-- Enchanting: Iwen's Enchanting Rod
-			crit(4),		-- Engineering: The Ub3r-Spanner
-			crit(5),		-- Inscription: Sanguine Feather Quill of Lana'thel
-			crit(6),		-- Jewelcrafting: Jewelhammer's Focus
-			crit(7),		-- Leatherworking: Mallet of Thunderous Skins
-			crit(8),		-- Tailoring: Synchronous Thread]]--	-- Only need one for achiev.
-		}),
+
 
 
 		ach(10761),		-- Resourceful

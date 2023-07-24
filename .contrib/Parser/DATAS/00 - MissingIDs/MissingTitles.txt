@@ -1,2 +1,4 @@
 3.4.1.47966
 title(210),	-- Battlemaster %s
+10.1.7.50505
+title(515),	-- Easter Kingdoms Racer %s

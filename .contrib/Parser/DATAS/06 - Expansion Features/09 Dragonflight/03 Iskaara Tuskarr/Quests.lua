@@ -231,7 +231,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 				q(66414, {	-- All But One
-					["sourceQuests"] = { 66418 },	-- Testing the Tuskaprsenal
+					["sourceQuests"] = {
+						66418,	-- Testing the Tuskaprsenal
+						66411,	-- Troubled Waters
+					},
 					["provider"] = { "n", 187323 },	-- Tutaqan
 					["coord"] = { 53.7, 38.0, THE_WAKING_SHORES },
 				}),

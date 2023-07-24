@@ -24,9 +24,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61435, {	-- Blacksmithing: Stalker Arrowheads
 				["requireSkill"] = BLACKSMITHING,
 				["g"] = {
-					r(337427,{["u"]=15}),	-- Bundle of Stalker Arrowheads
-					r(337374,{["u"]=15}),	-- Molten Phaedrum
-					r(337426,{["u"]=15}),	-- Unrefined Arrowheads
+					r(337427, {["u"]=TRAINING}),	-- Bundle of Stalker Arrowheads
+					r(337374, {["u"]=TRAINING}),	-- Molten Phaedrum
+					r(337426, {["u"]=TRAINING}),	-- Unrefined Arrowheads
 					i(181783),	-- Borrowed Phaedrum Ore
 					i(181860),	-- Borrowed Twilight Bark
 					i(181784),	-- Bundle of Stalker Arrowheads
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61440, {	-- Enchanting: Boundless Basket
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					r(346026,{["u"]=15}),	-- Boundless Basket
+					r(346026, {["u"]=TRAINING}),	-- Boundless Basket
 					i(181991),	-- Antique Stalker's Bow
 					i(181384),	-- Boundless Basket
 					i(181990),	-- Twilight Dust
@@ -61,11 +61,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61599, {	-- Inscription: Hymnal of Reprise
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					r(338227, {["u"]=15}),	-- Ardenberry Ink
+					r(338227, {["u"]=TRAINING}),	-- Ardenberry Ink
 					i(181996),	-- Ardenberry Ink
-					r(338225, {["u"]=15}),	-- Hymnal of Respite
+					r(338225, {["u"]=TRAINING}),	-- Hymnal of Respite
 					i(181397),	-- Hymnal of Respite
-					r(338226, {["u"]=15}),	-- Scroll of Calming Lyrics
+					r(338226, {["u"]=TRAINING}),	-- Scroll of Calming Lyrics
 					i(181995),	-- Scroll of Calming Lyrics
 				},
 			}),
@@ -75,6 +75,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61602, {	-- Leatherworking: Stalker's Leather Quiver
 				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					i(182290),	-- Bottle of Leather Dye
+					r(338253, {["u"]=TRAINING}),	-- Dyed Runestag Leather
+					i(182002),	-- Dyed Runestag Leather
+					i(182003),	-- Runestag Leather
+					r(338254, {["u"]=TRAINING}),	-- Runestag Leather Strap
+					i(182001),	-- Runestag Leather Strap
+					r(338255, {["u"]=TRAINING}),	-- Stalker's Leather Quiver
+					i(181434),	-- Stalker's Leather Quiver
+				},
 			}),
 			q(61947),	-- Lurking In The Shadows
 			q(61530, {	-- Mining: Ligneous Phaedrum Cluster

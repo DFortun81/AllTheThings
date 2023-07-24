@@ -1881,7 +1881,6 @@ i(0, 307717);		-- Porous Sharpening Stone
 i(0, 307719);		-- Porous Weightstone
 --- ITEM ---
 i(0, 343185);		-- Crafter's Mark II
-i(0, 343186);		-- Crafter's Mark III
 i(183094, 322590);	-- Shadowsteel Helm
 i(183095, 322593);	-- Shadowsteel Pauldrons
 --- LEGENDARY ---
@@ -1936,6 +1935,7 @@ i(0, 337426);		-- Unrefined Arrowheads
 -- PATCH 9.1.0 --
 -----------------
 --- ITEM ---
+i(0, 343186);		-- Crafter's Mark III
 i(0, 343188);		-- Crafter's Mark of the Chained Isle
 i(0, 352439);		-- Vestige of Origins
 

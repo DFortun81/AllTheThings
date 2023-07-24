@@ -1250,9 +1250,9 @@ i(137952, 196648);	-- Stonehide Leather Barding
 i(0, 196457);	-- Fel Leather Cuff
 i(0, 196395);	-- Fel Leather Strap
 i(0, 196456);	-- Felhide Bracers
-i(0, 196428);	-- Rough Warhide Mask
+i(0, 196428);	-- Rough Warhide Mask*
 i(0, 196387);	-- Shaved Felhide
-i(0, 196375);	-- Shaved Stonehide Pelt
+i(0, 196375);	-- Shaved Stonehide Pelt*
 i(0, 196425);	-- Stonehide Boot Base
 i(0, 196384);	-- Stonehide Boot Exterior
 i(0, 196469);	-- Stonehide Caparison
@@ -1260,11 +1260,11 @@ i(0, 196467);	-- Stonehide Champron
 i(0, 196468);	-- Stonehide Crinet
 i(0, 196397);	-- Stonehide Leather Barding
 i(0, 196442);	-- Stonehide Leather Bed
-i(0, 196382);	-- Stonehide Leather Lining
+i(0, 196382);	-- Stonehide Leather Lining*
 i(0, 196383);	-- Stonehide Leather Vamp
-i(0, 196385);	-- Stonehide Leather Strip
+i(0, 196385);	-- Stonehide Leather Strip*
 i(0, 196427);	-- Sturdy Stonehide Boots
-i(0, 196379);	-- Tanned Stonehide Leather
+i(0, 196379);	-- Tanned Stonehide Leather*
 i(0, 196388);	-- Tanned Fel Leather
 i(0, 194696);	-- Warhide Belt [Rank 1]
 i(0, 194695);	-- Warhide Bindings [Rank 1]
@@ -1328,7 +1328,6 @@ i(137914, 194757);	-- Battlebound Spaulders [Rank 3]
 i(132124, 194741);	-- Battlebound Treads [Rank 1]
 i(137906, 194749);	-- Battlebound Treads [Rank 2]
 i(137912, 194755);	-- Battlebound Treads [Rank 3]
-i(132123, 194739);	-- Battlebound Warhelm [Rank 1]
 i(137904, 194747);	-- Battlebound Warhelm [Rank 2]
 i(137910, 194753);	-- Battlebound Warhelm [Rank 3]
 i(140637, 194788);	-- Dreadleather Belt [Rank 1]
@@ -1409,6 +1408,9 @@ i(0, 194738);	-- Battlebound Leggings [Rank 1]
 i(0, 194737);	-- Battlebound Spaulders [Rank 1]
 i(0, 208596);	-- Tanned Stonehide Pelt
 i(0, 208615);	-- Stonehide Leather Strip
+
+-- Storyline
+i(132123, 194739);	-- Battlebound Warhelm [Rank 1]
 
 ------------------
 -- PATCH 7.1.0 --
@@ -1704,299 +1706,313 @@ i(174366, 305796);	-- Unsettling Dredged Leather Boots
 i(174367, 305804);	-- Unsettling Dredged Leather Leggings
 i(0, 307176);	-- Void Focus
 
-------------------
+-----------------
 -- PATCH 9.0.1 --
-------------------
--- RELICS --
-i(0, 330180);	-- Relic of the Past I [CLASSIC]
-i(0, 330181);	-- Relic of the Past II [CLASSIC]
-i(0, 330183);	-- Relic of the Past III [CLASSIC]
-i(0, 330184);	-- Relic of the Past IV [CLASSIC]
-i(0, 330185);	-- Relic of the Past V [CLASSIC]
-i(0, 330186);	-- Relic of the Past I [The Burning Crusade]
-i(0, 330187);	-- Relic of the Past II [The Burning Crusade]
-i(0, 330188);	-- Relic of the Past III [The Burning Crusade]
-i(0, 330189);	-- Relic of the Past IV [The Burning Crusade]
-i(0, 330190);	-- Relic of the Past V [The Burning Crusade]
-i(0, 330191);	-- Relic of the Past I [Wrath of the Lich King]
-i(0, 330192);	-- Relic of the Past II [Wrath of the Lich King]
-i(0, 330193);	-- Relic of the Past III [Wrath of the Lich King]
-i(0, 330194);	-- Relic of the Past IV [Wrath of the Lich King]
-i(0, 330195);	-- Relic of the Past V [Wrath of the Lich King]
-i(0, 330196);	-- Relic of the Past I [Cataclysm]
-i(0, 330197);	-- Relic of the Past II [Cataclysm]
-i(0, 330198);	-- Relic of the Past III [Cataclysm]
-i(0, 330199);	-- Relic of the Past IV [Cataclysm]
-i(0, 330200);	-- Relic of the Past V [Cataclysm]
-i(0, 330201);	-- Relic of the Past I [Mists of Pandaria]
-i(0, 330202);	-- Relic of the Past II [Mists of Pandaria]
-i(0, 330203);	-- Relic of the Past III [Mists of Pandaria]
-i(0, 330204);	-- Relic of the Past IV [Mists of Pandaria]
-i(0, 330205);	-- Relic of the Past V [Mists of Pandaria]
-i(0, 330206);	-- Relic of the Past I [Warlords of Draenor]
-i(0, 330207);	-- Relic of the Past II [Warlords of Draenor]
-i(0, 330208);	-- Relic of the Past III [Warlords of Draenor]
-i(0, 330209);	-- Relic of the Past IV [Warlords of Draenor]
-i(0, 330210);	-- Relic of the Past V [Warlords of Draenor]
-i(0, 330211);	-- Relic of the Past I [Legion]
-i(0, 330212);	-- Relic of the Past II [Legion]
-i(0, 330213);	-- Relic of the Past III [Legion]
-i(0, 330214);	-- Relic of the Past IV [Legion]
-i(0, 330215);	-- Relic of the Past V [Legion]
-i(0, 330216);	-- Relic of the Past I [Battle for Azeroth]
-i(0, 330218);	-- Relic of the Past II [Battle for Azeroth]
-i(0, 330219);	-- Relic of the Past III [Battle for Azeroth]
-i(0, 330220);	-- Relic of the Past IV [Battle for Azeroth]
-i(0, 330221);	-- Relic of the Past V [Battle for Azeroth]
--- TRAINER --
-i(0, 309190);	-- Bone Bound Knuckles
-i(0, 308896);	-- Callous Hide
-i(0, 324735);	-- Comfortable Rider's Barding
-i(0, 309192);	-- Composite Bow
-i(0, 309193);	-- Composite Crossbow
-i(0, 343195);	-- Crafter's Mark I
-i(0, 324087);	-- Desolate Armor Kit
-i(0, 308895);	-- Desolate Leather
-i(0, 309181);	-- Desolate Leather Armguards
-i(0, 309191);	-- Desolate Leather Cestus
-i(0, 309176);	-- Desolate Leather Gauntlets
-i(0, 309186);	-- Desolate Scale Greaves
-i(0, 309177);	-- Desolate Leather Helm
-i(0, 309178);	-- Desolate Leather Leggings
-i(0, 309179);	-- Desolate Leather Pauldrons
-i(0, 309174);	-- Desolate Leather Treads
-i(0, 309175);	-- Desolate Leather Vest
-i(0, 309180);	-- Desolate Leather Waistguard
-i(0, 309189);	-- Desolate Scale Armguards
-i(0, 309184);	-- Desolate Scale Gauntlets
-i(0, 309185);	-- Desolate Scale Helm
-i(0, 309187);	-- Desolate Scale Pauldrons
-i(0, 309182);	-- Desolate Scale Treads
-i(0, 309183);	-- Desolate Scale Vest
-i(0, 309188);	-- Desolate Scale Waistguard
-i(0, 309173);	-- Drums of Deathly Ferocity
-i(0, 308897);	-- Heavy Callous Hide
-i(0, 308899);	-- Heavy Desolate Leather
-i(0, 343660);	-- Novice Crafter's Mark
-i(0, 309237);	-- Shadebound Armguards
-i(0, 309232);	-- Shadebound Gauntlets
-i(0, 309233);	-- Shadebound Helm
-i(0, 309234);	-- Shadebound Leggings
-i(0, 309235);	-- Shadebound Pauldrons
-i(0, 309230);	-- Shadebound Treads
-i(0, 309231);	-- Shadebound Vest
-i(0, 309236);	-- Shadebound Waistguard
-i(0, 309038);	-- Shadowlands Leatherworking
-i(0, 309245);	-- Shadowscale Armguards
-i(0, 309240);	-- Shadowscale Gauntlets
-i(0, 309241);	-- Shadowscale Helm
-i(0, 309242);	-- Shadowscale Leggings
-i(0, 309243);	-- Shadowscale Pauldrons
-i(0, 309238);	-- Shadowscale Treads
-i(0, 309239);	-- Shadowscale Vest
-i(0, 309244);	-- Shadowscale Waistguard
--- ITEM --
-i(183870, 343193);	-- Crafter's Mark II
-i(183100, 324088);	-- Heavy Desolate Armor Kit
--- LEGENDARY --
-i(0, 309205);	-- Umbrahide Armguards [Rank 1]
-i(0, 332021);	-- Umbrahide Armguards [Rank 2]
-i(0, 332056);	-- Umbrahide Armguards [Rank 3]
-i(0, 338986);	-- Umbrahide Armguards [Rank 4]
-i(0, 309200);	-- Umbrahide Gauntlets [Rank 1]
-i(0, 332016);	-- Umbrahide Gauntlets [Rank 2]
-i(0, 332051);	-- Umbrahide Gauntlets [Rank 3]
-i(0, 338981);	-- Umbrahide Gauntlets [Rank 4]
-i(0, 309201);	-- Umbrahide Helm [Rank 1]
-i(0, 332017);	-- Umbrahide Helm [Rank 2]
-i(0, 332052);	-- Umbrahide Helm [Rank 3]
-i(0, 338982);	-- Umbrahide Helm [Rank 4]
-i(0, 309202);	-- Umbrahide Leggings [Rank 1]
-i(0, 332018);	-- Umbrahide Leggings [Rank 2]
-i(0, 332053);	-- Umbrahide Leggings [Rank 3]
-i(0, 338983);	-- Umbrahide Leggings [Rank 4]
-i(0, 309203);	-- Umbrahide Pauldrons [Rank 1]
-i(0, 332019);	-- Umbrahide Pauldrons [Rank 2]
-i(0, 332054);	-- Umbrahide Pauldrons [Rank 3]
-i(0, 338984);	-- Umbrahide Pauldrons [Rank 4]
-i(0, 309198);	-- Umbrahide Treads [Rank 1]
-i(0, 332014);	-- Umbrahide Treads [Rank 2]
-i(0, 332049);	-- Umbrahide Treads [Rank 3]
-i(0, 338980);	-- Umbrahide Treads [Rank 4]
-i(0, 309199);	-- Umbrahide Vest [Rank 1]
-i(0, 332015);	-- Umbrahide Vest [Rank 2]
-i(0, 332050);	-- Umbrahide Vest [Rank 3]
-i(0, 338979);	-- Umbrahide Vest [Rank 4]
-i(0, 309204);	-- Umbrahide Waistguard [Rank 1]
-i(0, 332020);	-- Umbrahide Waistguard [Rank 2]
-i(0, 332055);	-- Umbrahide Waistguard [Rank 3]
-i(0, 338985);	-- Umbrahide Waistguard [Rank 4]
-i(0, 309213);	-- Boneshatter Armguards [Rank 1]
-i(0, 332029);	-- Boneshatter Armguards [Rank 2]
-i(0, 332064);	-- Boneshatter Armguards [Rank 3]
-i(0, 338994);	-- Boneshatter Armguards [Rank 4]
-i(0, 309208);	-- Boneshatter Gauntlets [Rank 1]
-i(0, 332024);	-- Boneshatter Gauntlets [Rank 2]
-i(0, 332059);	-- Boneshatter Gauntlets [Rank 3]
-i(0, 338989);	-- Boneshatter Gauntlets [Rank 4]
-i(0, 309210);	-- Boneshatter Greaves [Rank 1]
-i(0, 332026);	-- Boneshatter Greaves [Rank 2]
-i(0, 332061);	-- Boneshatter Greaves [Rank 3]
-i(0, 338991);	-- Boneshatter Greaves [Rank 4]
-i(0, 309209);	-- Boneshatter Helm [Rank 1]
-i(0, 332025);	-- Boneshatter Helm [Rank 2]
-i(0, 332060);	-- Boneshatter Helm [Rank 3]
-i(0, 338990);	-- Boneshatter Helm [Rank 4]
-i(0, 309211);	-- Boneshatter Pauldrons [Rank 1]
-i(0, 332027);	-- Boneshatter Pauldrons [Rank 2]
-i(0, 332062);	-- Boneshatter Pauldrons [Rank 3]
-i(0, 338992);	-- Boneshatter Pauldrons [Rank 4]
-i(0, 309206);	-- Boneshatter Treads [Rank 1]
-i(0, 332022);	-- Boneshatter Treads [Rank 2]
-i(0, 332057);	-- Boneshatter Treads [Rank 3]
-i(0, 338988);	-- Boneshatter Treads [Rank 4]
-i(0, 309207);	-- Boneshatter Vest [Rank 1]
-i(0, 332023);	-- Boneshatter Vest [Rank 2]
-i(0, 332058);	-- Boneshatter Vest [Rank 3]
-i(0, 338987);	-- Boneshatter Vest [Rank 4]
-i(0, 309212);	-- Boneshatter Waistguard [Rank 1]
-i(0, 332028);	-- Boneshatter Waistguard [Rank 2]
-i(0, 332063);	-- Boneshatter Waistguard [Rank 3]
-i(0, 338993);	-- Boneshatter Waistguard [Rank 4]
--- QUEST --
-i(0, 338260);	-- Bonestudded Fist
-i(0, 338262);	-- Cleaned Hide
-i(0, 338263);	-- Courtly Leather Boots
-i(0, 338253);	-- Dyed Runestag Leather
-i(0, 338254);	-- Runestag Leather Strap
-i(0, 338265);	-- Softened Leather
-i(0, 338255);	-- Stalker's Leather Quiver
-i(0, 338258);	-- Steelhide Leather Belt
-i(0, 338257);	-- Steelhide Leather Harness
-i(0, 338259);	-- Steelhide Leather Strap
-i(0, 338264);	-- Tortured Sole
--- UNSURE --
-i(0, 309196);	-- Heavy Composite Bow
-i(0, 309197);	-- Heavy Composite Crossbow
+-----------------
+--- RELICS ---
+i(0, 330180);		-- Relic of the Past I [CLASSIC]
+i(0, 330181);		-- Relic of the Past II [CLASSIC]
+i(0, 330183);		-- Relic of the Past III [CLASSIC]
+i(0, 330184);		-- Relic of the Past IV [CLASSIC]
+i(0, 330185);		-- Relic of the Past V [CLASSIC]
+i(0, 330186);		-- Relic of the Past I [The Burning Crusade]
+i(0, 330187);		-- Relic of the Past II [The Burning Crusade]
+i(0, 330188);		-- Relic of the Past III [The Burning Crusade]
+i(0, 330189);		-- Relic of the Past IV [The Burning Crusade]
+i(0, 330190);		-- Relic of the Past V [The Burning Crusade]
+i(0, 330191);		-- Relic of the Past I [Wrath of the Lich King]
+i(0, 330192);		-- Relic of the Past II [Wrath of the Lich King]
+i(0, 330193);		-- Relic of the Past III [Wrath of the Lich King]
+i(0, 330194);		-- Relic of the Past IV [Wrath of the Lich King]
+i(0, 330195);		-- Relic of the Past V [Wrath of the Lich King]
+i(0, 330196);		-- Relic of the Past I [Cataclysm]
+i(0, 330197);		-- Relic of the Past II [Cataclysm]
+i(0, 330198);		-- Relic of the Past III [Cataclysm]
+i(0, 330199);		-- Relic of the Past IV [Cataclysm]
+i(0, 330200);		-- Relic of the Past V [Cataclysm]
+i(0, 330201);		-- Relic of the Past I [Mists of Pandaria]
+i(0, 330202);		-- Relic of the Past II [Mists of Pandaria]
+i(0, 330203);		-- Relic of the Past III [Mists of Pandaria]
+i(0, 330204);		-- Relic of the Past IV [Mists of Pandaria]
+i(0, 330205);		-- Relic of the Past V [Mists of Pandaria]
+i(0, 330206);		-- Relic of the Past I [Warlords of Draenor]
+i(0, 330207);		-- Relic of the Past II [Warlords of Draenor]
+i(0, 330208);		-- Relic of the Past III [Warlords of Draenor]
+i(0, 330209);		-- Relic of the Past IV [Warlords of Draenor]
+i(0, 330210);		-- Relic of the Past V [Warlords of Draenor]
+i(0, 330211);		-- Relic of the Past I [Legion]
+i(0, 330212);		-- Relic of the Past II [Legion]
+i(0, 330213);		-- Relic of the Past III [Legion]
+i(0, 330214);		-- Relic of the Past IV [Legion]
+i(0, 330215);		-- Relic of the Past V [Legion]
+i(0, 330216);		-- Relic of the Past I [Battle for Azeroth]
+i(0, 330218);		-- Relic of the Past II [Battle for Azeroth]
+i(0, 330219);		-- Relic of the Past III [Battle for Azeroth]
+i(0, 330220);		-- Relic of the Past IV [Battle for Azeroth]
+i(0, 330221);		-- Relic of the Past V [Battle for Azeroth]
+--- NYI ---
+i(0, 338261);		-- Almost Thing
+i(0, 309293);		-- Bonerivetted Armguards
+i(0, 309288);		-- Bonerivetted Gauntlets
+i(0, 309289);		-- Bonerivetted Helm
+i(0, 309290);		-- Bonerivetted Leggings
+i(0, 309291);		-- Bonerivetted Pauldrons
+i(0, 309286);		-- Bonerivetted Treads
+i(0, 309287);		-- Bonerivetted Vest
+i(0, 309292);		-- Bonerivetted Waistguard
+i(0, 308896);		-- Callous Hide
+i(0, 308895);		-- Desolate Leather
+i(0, 309285);		-- Flayed Hide Armguards
+i(0, 309280);		-- Flayed Hide Gauntlets
+i(0, 309281);		-- Flayed Hide Helm
+i(0, 309282);		-- Flayed Hide Leggings
+i(0, 309283);		-- Flayed Hide Pauldrons
+i(0, 309278);		-- Flayed Hide Treads
+i(0, 309279);		-- Flayed Hide Vest
+i(0, 309284);		-- Flayed Hide Waistguard
+i(0, 309269);		-- Gormhide Armguards
+i(0, 309264);		-- Gormhide Gauntlets
+i(0, 309265);		-- Gormhide Helm
+i(0, 309266);		-- Gormhide Leggings
+i(0, 309267);		-- Gormhide Pauldrons
+i(0, 309262);		-- Gormhide Treads
+i(0, 309263);		-- Gormhide Vest
+i(0, 309268);		-- Gormhide Waistguard
+i(0, 309196);		-- Heavy Composite Bow
+i(0, 309197);		-- Heavy Composite Crossbow
+i(0, 309194);		-- Macabre Striker
+i(0, 309223);		-- Modified Crafting Reagent 02
+i(0, 309224);		-- Modified Crafting Reagent 03
+i(0, 309225);		-- Modified Crafting Reagent 04
+i(0, 309216);		-- Necrotic Leather
+i(0, 309217);		-- Purified Leather
+i(0, 309195);		-- Reinforced Desolate Leather Cestus
+i(0, 309215);		-- Sinful Leather
+i(0, 309261);		-- Sinscale Armguards
+i(0, 309256);		-- Sinscale Gauntlets
+i(0, 309257);		-- Sinscale Helm
+i(0, 309258);		-- Sinscale Leggings
+i(0, 309259);		-- Sinscale Pauldrons
+i(0, 309254);		-- Sinscale Treads
+i(0, 309255);		-- Sinscale Vest
+i(0, 309260);		-- Sinscale Waistguard
+i(0, 309253);		-- Sintanned Armguards
+i(0, 309248);		-- Sintanned Gauntlets
+i(0, 309249);		-- Sintanned Helm
+i(0, 309250);		-- Sintanned Leggings
+i(0, 309251);		-- Sintanned Pauldrons
+i(0, 309246);		-- Sintanned Treads
+i(0, 309247);		-- Sintanned Vest
+i(0, 309252);		-- Sintanned Waistguard
+i(0, 309214);		-- Unseelie Leather
+i(0, 309270);		-- Wildskin Treads
+i(0, 309271);		-- Wildskin Vest
+i(0, 309272);		-- Wildskin Gauntlets
+i(0, 309273);		-- Wildskin Helm
+i(0, 309274);		-- Wildskin Leggings
+i(0, 309275);		-- Wildskin Pauldrons
+i(0, 309276);		-- Wildskin Waistguard
+i(0, 309277);		-- Wildskin Armguards
 i(182669, 309222);	-- Loosened Belt
-i(0, 309195);	-- Reinforced Desolate Leather Cestus
--- NYI --
-i(0, 338261);	-- Almost Thing
-i(0, 309293);	-- Bonerivetted Armguards
-i(0, 309288);	-- Bonerivetted Gauntlets
-i(0, 309289);	-- Bonerivetted Helm
-i(0, 309290);	-- Bonerivetted Leggings
-i(0, 309291);	-- Bonerivetted Pauldrons
-i(0, 309286);	-- Bonerivetted Treads
-i(0, 309287);	-- Bonerivetted Vest
-i(0, 309292);	-- Bonerivetted Waistguard
-i(0, 309285);	-- Flayed Hide Armguards
-i(0, 309280);	-- Flayed Hide Gauntlets
-i(0, 309281);	-- Flayed Hide Helm
-i(0, 309282);	-- Flayed Hide Leggings
-i(0, 309283);	-- Flayed Hide Pauldrons
-i(0, 309278);	-- Flayed Hide Treads
-i(0, 309279);	-- Flayed Hide Vest
-i(0, 309284);	-- Flayed Hide Waistguard
-i(0, 309269);	-- Gormhide Armguards
-i(0, 309264);	-- Gormhide Gauntlets
-i(0, 309265);	-- Gormhide Helm
-i(0, 309266);	-- Gormhide Leggings
-i(0, 309267);	-- Gormhide Pauldrons
-i(0, 309262);	-- Gormhide Treads
-i(0, 309263);	-- Gormhide Vest
-i(0, 309268);	-- Gormhide Waistguard
-i(0, 309194);	-- Macabre Striker
-i(0, 309223);	-- Modified Crafting Reagent 02
-i(0, 309224);	-- Modified Crafting Reagent 03
-i(0, 309225);	-- Modified Crafting Reagent 04
-i(0, 309261);	-- Sinscale Armguards
-i(0, 309256);	-- Sinscale Gauntlets
-i(0, 309257);	-- Sinscale Helm
-i(0, 309258);	-- Sinscale Leggings
-i(0, 309259);	-- Sinscale Pauldrons
-i(0, 309254);	-- Sinscale Treads
-i(0, 309255);	-- Sinscale Vest
-i(0, 309260);	-- Sinscale Waistguard
-i(0, 309253);	-- Sintanned Armguards
-i(0, 309248);	-- Sintanned Gauntlets
-i(0, 309249);	-- Sintanned Helm
-i(0, 309250);	-- Sintanned Leggings
-i(0, 309251);	-- Sintanned Pauldrons
-i(0, 309246);	-- Sintanned Treads
-i(0, 309247);	-- Sintanned Vest
-i(0, 309252);	-- Sintanned Waistguard
-i(0, 309270);	-- Wildskin Treads
-i(0, 309271);	-- Wildskin Vest
-i(0, 309272);	-- Wildskin Gauntlets
-i(0, 309273);	-- Wildskin Helm
-i(0, 309274);	-- Wildskin Leggings
-i(0, 309275);	-- Wildskin Pauldrons
-i(0, 309276);	-- Wildskin Waistguard
-i(0, 309277);	-- Wildskin Armguards
--- UNSURE --
-i(0, 309214);	-- Unseelie Leather
-i(0, 309215);	-- Sinful Leather
-i(0, 309216);	-- Necrotic Leather
-i(0, 309217);	-- Purified Leather
 
-------------------
+-----------------
+-- PATCH 9.0.2 --
+-----------------
+--- TRAINER ---
+i(0, 309190);		-- Bone Bound Knuckles
+i(0, 324735);		-- Comfortable Rider's Barding
+i(0, 309192);		-- Composite Bow
+i(0, 309193);		-- Composite Crossbow
+i(0, 343195);		-- Crafter's Mark I
+i(0, 324087);		-- Desolate Armor Kit
+i(0, 309181);		-- Desolate Leather Armguards
+i(0, 309191);		-- Desolate Leather Cestus
+i(0, 309176);		-- Desolate Leather Gauntlets
+i(0, 309177);		-- Desolate Leather Helm
+i(0, 309178);		-- Desolate Leather Leggings
+i(0, 309179);		-- Desolate Leather Pauldrons
+i(0, 309174);		-- Desolate Leather Treads
+i(0, 309175);		-- Desolate Leather Vest
+i(0, 309180);		-- Desolate Leather Waistguard
+i(0, 309189);		-- Desolate Scale Armguards
+i(0, 309184);		-- Desolate Scale Gauntlets
+i(0, 309186);		-- Desolate Scale Greaves
+i(0, 309185);		-- Desolate Scale Helm
+i(0, 309187);		-- Desolate Scale Pauldrons
+i(0, 309182);		-- Desolate Scale Treads
+i(0, 309183);		-- Desolate Scale Vest
+i(0, 309188);		-- Desolate Scale Waistguard
+i(0, 309173);		-- Drums of Deathly Ferocity
+i(0, 308897);		-- Heavy Callous Hide
+i(0, 308899);		-- Heavy Desolate Leather
+i(0, 343660);		-- Novice Crafter's Mark
+i(0, 309237);		-- Shadebound Armguards
+i(0, 309232);		-- Shadebound Gauntlets
+i(0, 309233);		-- Shadebound Helm
+i(0, 309234);		-- Shadebound Leggings
+i(0, 309235);		-- Shadebound Pauldrons
+i(0, 309230);		-- Shadebound Treads
+i(0, 309231);		-- Shadebound Vest
+i(0, 309236);		-- Shadebound Waistguard
+i(0, 309038);		-- Shadowlands Leatherworking
+i(0, 309245);		-- Shadowscale Armguards
+i(0, 309240);		-- Shadowscale Gauntlets
+i(0, 309241);		-- Shadowscale Helm
+i(0, 309242);		-- Shadowscale Leggings
+i(0, 309243);		-- Shadowscale Pauldrons
+i(0, 309238);		-- Shadowscale Treads
+i(0, 309239);		-- Shadowscale Vest
+i(0, 309244);		-- Shadowscale Waistguard
+--- ITEM ---
+i(0, 343193);		-- Crafter's Mark II
+i(183100, 324088);	-- Heavy Desolate Armor Kit
+--- LEGENDARY ---
+i(0, 309213);		-- Boneshatter Armguards [Rank 1]
+i(0, 332029);		-- Boneshatter Armguards [Rank 2]
+i(0, 332064);		-- Boneshatter Armguards [Rank 3]
+i(0, 338994);		-- Boneshatter Armguards [Rank 4]
+i(0, 309208);		-- Boneshatter Gauntlets [Rank 1]
+i(0, 332024);		-- Boneshatter Gauntlets [Rank 2]
+i(0, 332059);		-- Boneshatter Gauntlets [Rank 3]
+i(0, 338989);		-- Boneshatter Gauntlets [Rank 4]
+i(0, 309210);		-- Boneshatter Greaves [Rank 1]
+i(0, 332026);		-- Boneshatter Greaves [Rank 2]
+i(0, 332061);		-- Boneshatter Greaves [Rank 3]
+i(0, 338991);		-- Boneshatter Greaves [Rank 4]
+i(0, 309209);		-- Boneshatter Helm [Rank 1]
+i(0, 332025);		-- Boneshatter Helm [Rank 2]
+i(0, 332060);		-- Boneshatter Helm [Rank 3]
+i(0, 338990);		-- Boneshatter Helm [Rank 4]
+i(0, 309211);		-- Boneshatter Pauldrons [Rank 1]
+i(0, 332027);		-- Boneshatter Pauldrons [Rank 2]
+i(0, 332062);		-- Boneshatter Pauldrons [Rank 3]
+i(0, 338992);		-- Boneshatter Pauldrons [Rank 4]
+i(0, 309206);		-- Boneshatter Treads [Rank 1]
+i(0, 332022);		-- Boneshatter Treads [Rank 2]
+i(0, 332057);		-- Boneshatter Treads [Rank 3]
+i(0, 338988);		-- Boneshatter Treads [Rank 4]
+i(0, 309207);		-- Boneshatter Vest [Rank 1]
+i(0, 332023);		-- Boneshatter Vest [Rank 2]
+i(0, 332058);		-- Boneshatter Vest [Rank 3]
+i(0, 338987);		-- Boneshatter Vest [Rank 4]
+i(0, 309212);		-- Boneshatter Waistguard [Rank 1]
+i(0, 332028);		-- Boneshatter Waistguard [Rank 2]
+i(0, 332063);		-- Boneshatter Waistguard [Rank 3]
+i(0, 338993);		-- Boneshatter Waistguard [Rank 4]
+i(0, 309205);		-- Umbrahide Armguards [Rank 1]
+i(0, 332021);		-- Umbrahide Armguards [Rank 2]
+i(0, 332056);		-- Umbrahide Armguards [Rank 3]
+i(0, 338986);		-- Umbrahide Armguards [Rank 4]
+i(0, 309200);		-- Umbrahide Gauntlets [Rank 1]
+i(0, 332016);		-- Umbrahide Gauntlets [Rank 2]
+i(0, 332051);		-- Umbrahide Gauntlets [Rank 3]
+i(0, 338981);		-- Umbrahide Gauntlets [Rank 4]
+i(0, 309201);		-- Umbrahide Helm [Rank 1]
+i(0, 332017);		-- Umbrahide Helm [Rank 2]
+i(0, 332052);		-- Umbrahide Helm [Rank 3]
+i(0, 338982);		-- Umbrahide Helm [Rank 4]
+i(0, 309202);		-- Umbrahide Leggings [Rank 1]
+i(0, 332018);		-- Umbrahide Leggings [Rank 2]
+i(0, 332053);		-- Umbrahide Leggings [Rank 3]
+i(0, 338983);		-- Umbrahide Leggings [Rank 4]
+i(0, 309203);		-- Umbrahide Pauldrons [Rank 1]
+i(0, 332019);		-- Umbrahide Pauldrons [Rank 2]
+i(0, 332054);		-- Umbrahide Pauldrons [Rank 3]
+i(0, 338984);		-- Umbrahide Pauldrons [Rank 4]
+i(0, 309198);		-- Umbrahide Treads [Rank 1]
+i(0, 332014);		-- Umbrahide Treads [Rank 2]
+i(0, 332049);		-- Umbrahide Treads [Rank 3]
+i(0, 338980);		-- Umbrahide Treads [Rank 4]
+i(0, 309199);		-- Umbrahide Vest [Rank 1]
+i(0, 332015);		-- Umbrahide Vest [Rank 2]
+i(0, 332050);		-- Umbrahide Vest [Rank 3]
+i(0, 338979);		-- Umbrahide Vest [Rank 4]
+i(0, 309204);		-- Umbrahide Waistguard [Rank 1]
+i(0, 332020);		-- Umbrahide Waistguard [Rank 2]
+i(0, 332055);		-- Umbrahide Waistguard [Rank 3]
+i(0, 338985);		-- Umbrahide Waistguard [Rank 4]
+--- QUEST ---
+i(0, 338260);		-- Bonestudded Fist
+i(0, 338262);		-- Cleaned Hide
+i(0, 338263);		-- Courtly Leather Boots
+i(0, 338253);		-- Dyed Runestag Leather
+i(0, 338254);		-- Runestag Leather Strap
+i(0, 338265);		-- Softened Leather
+i(0, 338255);		-- Stalker's Leather Quiver
+i(0, 338258);		-- Steelhide Leather Belt
+i(0, 338257);		-- Steelhide Leather Harness
+i(0, 338259);		-- Steelhide Leather Strap
+i(0, 338264);		-- Tortured Sole
+
+-----------------
 -- PATCH 9.1.0 --
-------------------
--- ITEM --
-i(186598, 343192);	-- Crafter's Mark III
-i(186470, 343189);	-- Crafter's Mark of the Chained Isle
+-----------------
+--- ITEM ---
+i(0, 343192);		-- Crafter's Mark III
+i(0, 343189);		-- Crafter's Mark of the Chained Isle
+i(0, 352444);		-- Vestige of Origins
 i(187000, 355354);	-- Elusive Pet Treat
 i(186999, 354800);	-- Pallid Bone Flute
 i(186998, 354797);	-- Pallid Oracle Bones
-i(187218, 352444);	-- Vestige of Origins
+
+-----------------
+-- PATCH 9.2.0 --
+-----------------
+--- ITEM ---
+i(0, 359662);		-- Crafter's Mark IV
+i(0, 359669);		-- Crafter's Mark of the First Ones
+i(0, 359702);		-- Vestige of the Eternal
 
 ------------------
--- PATCH 9.2.0 --
+-- PATCH 10.0.0 --
 ------------------
--- ITEM --
-i(187750, 359662);	-- Crafter's Mark IV
-i(187749, 359669);	-- Crafter's Mark of the First Ones
-i(187785, 359702);	-- Vestige of the Eternal
+--- NYI ---
+i(0, 375175);		-- Deathchill Hide
+i(0, 375177);		-- Drygrate Scales
+i(0, 375170);		-- Masterwork Riding Crop
+i(0, 382585);		-- Opening
+i(0, 375198);		-- Savage Bow
+i(197984, 375165);	-- Wisp of Tyr
+i(197985, 0);		-- Illustrious Insight
 
 ------------------
 -- PATCH 10.0.2 --
 ------------------
--- TRAINER --
-i(0, 366249);	-- Dragon Isles Leatherworking
-i(0, 375188);	-- Alchemist's Hat
-i(0, 375102);	-- Bonewrought Crossbow
-i(0, 375182);	-- Durable Pack
-i(0, 375178);	-- Earthshine Scales
-i(0, 375168);	-- Feral Hide Drums
-i(0, 375181);	-- Floral Basket
-i(0, 375179);	-- Frostbite Scales
-i(0, 375184);	-- Jeweler's Cover
-i(0, 375174);	-- Mireslush Hide
-i(0, 375103);	-- Pioneer's Leather Boots
-i(0, 375104);	-- Pioneer's Leather Wristguards
-i(0, 375105);	-- Pioneer's Leather Tunic
-i(0, 395863);	-- Pioneer's Practiced Belt
-i(0, 395864);	-- Pioneer's Practiced Cowl
-i(0, 395865);	-- Pioneer's Practiced Gloves
-i(0, 395867);	-- Pioneer's Practiced Leggings
-i(0, 395868);	-- Pioneer's Practiced Shoulderpads
-i(0, 375185);	-- Protective Gloves
-i(0, 389195);	-- Recraft Equipment
-i(0, 375164);	-- Reinforced Armor Kit
-i(0, 375186);	-- Resilient Smock
-i(0, 375183);	-- Skinner's Cap
-i(0, 375187);	-- Smithing Apron
-i(0, 375173);	-- Stonecrust Hide
-i(0, 375106);	-- Trailblazer's Scale Boots
-i(0, 375107);	-- Trailblazer's Scale Bracers
-i(0, 375108);	-- Trailblazer's Scale Vest
-i(0, 395839);	-- Trailblazer's Toughened Coif
-i(0, 395844);	-- Trailblazer's Toughened Chainbelt
-i(0, 395845);	-- Trailblazer's Toughened Grips
-i(0, 395847);	-- Trailblazer's Toughened Legguards
-i(0, 395851);	-- Trailblazer's Toughened Spikes
--- ITEM --
+--- TRAINER ---
+i(0, 366249);		-- Dragon Isles Leatherworking
+i(0, 375188);		-- Alchemist's Hat
+i(0, 375102);		-- Bonewrought Crossbow
+i(0, 375182);		-- Durable Pack
+i(0, 375178);		-- Earthshine Scales
+i(0, 375168);		-- Feral Hide Drums
+i(0, 375181);		-- Floral Basket
+i(0, 375179);		-- Frostbite Scales
+i(0, 375184);		-- Jeweler's Cover
+i(0, 375174);		-- Mireslush Hide
+i(0, 375103);		-- Pioneer's Leather Boots
+i(0, 375104);		-- Pioneer's Leather Wristguards
+i(0, 375105);		-- Pioneer's Leather Tunic
+i(0, 395863);		-- Pioneer's Practiced Belt
+i(0, 395864);		-- Pioneer's Practiced Cowl
+i(0, 395865);		-- Pioneer's Practiced Gloves
+i(0, 395867);		-- Pioneer's Practiced Leggings
+i(0, 395868);		-- Pioneer's Practiced Shoulderpads
+i(0, 375185);		-- Protective Gloves
+i(0, 389195);		-- Recraft Equipment
+i(0, 375164);		-- Reinforced Armor Kit
+i(0, 375186);		-- Resilient Smock
+i(0, 375183);		-- Skinner's Cap
+i(0, 375187);		-- Smithing Apron
+i(0, 375173);		-- Stonecrust Hide
+i(0, 375106);		-- Trailblazer's Scale Boots
+i(0, 375107);		-- Trailblazer's Scale Bracers
+i(0, 375108);		-- Trailblazer's Scale Vest
+i(0, 395839);		-- Trailblazer's Toughened Coif
+i(0, 395844);		-- Trailblazer's Toughened Chainbelt
+i(0, 395845);		-- Trailblazer's Toughened Grips
+i(0, 395847);		-- Trailblazer's Toughened Legguards
+i(0, 395851);		-- Trailblazer's Toughened Spikes
+--- ITEM ---
 i(193882, 375151);	-- Acidic Hailstone Treads
 i(193875, 375144);	-- Allied Heartwarming Fur Coat
 i(193870, 375157);	-- Allied Legguards of Sansok Khan
@@ -2048,50 +2064,43 @@ i(193869, 375143);	-- Toxic Thorn Footwraps
 i(194311, 375172);	-- Tuskarr Bean Bag
 i(193883, 375150);	-- Venom-Steeped Stompers
 i(193880, 375152);	-- Wind Spirit's Lasso
--- SPECIALIZATION --
-i(0, 375125);	-- Bow of the Dragon Hunters
-i(0, 375159);	-- Fang Adornments
-i(0, 375123);	-- Flame-Touched Chain
-i(0, 375117);	-- Flame-Touched Chainmail
-i(0, 375124);	-- Flame-Touched Cuffs
-i(0, 375119);	-- Flame-Touched Handguards
-i(0, 375120);	-- Flame-Touched Helmet
-i(0, 375121);	-- Flame-Touched Legguards
-i(0, 375122);	-- Flame-Touched Spaulders
-i(0, 375118);	-- Flame-Touched Treads
-i(0, 375197);	-- Flaring Cowl
-i(0, 375166);	-- Illustrious Insight
-i(0, 375115);	-- Life-Bound Belt
-i(0, 375116);	-- Life-Bound Bindings
-i(0, 375110);	-- Life-Bound Boots
-i(0, 375112);	-- Life-Bound Cap
-i(0, 375109);	-- Life-Bound Chestpiece
-i(0, 375111);	-- Life-Bound Gloves
-i(0, 375114);	-- Life-Bound Shoulderpads
-i(0, 375113);	-- Life-Bound Trousers
-i(0, 375160);	-- Toxified Armor Patch
-i(0, 375199);	-- Witherrot Tome
--- QUEST --
-i(0, 377989);	-- Heart in a Bottle
--- NYI --
-i(0, 375175);	-- Deathchill Hide
-i(0, 375177);	-- Drygrate Scales
-i(0, 375170);	-- Masterwork Riding Crop
-i(0, 382585);	-- Opening
-i(0, 375198);	-- Savage Bow
-i(197984, 375165);	-- Wisp of Tyr
-i(197985, 0);	-- Illustrious Insight
+--- SPECIALIZATION ---
+i(0, 375125);		-- Bow of the Dragon Hunters
+i(0, 375159);		-- Fang Adornments
+i(0, 375123);		-- Flame-Touched Chain
+i(0, 375117);		-- Flame-Touched Chainmail
+i(0, 375124);		-- Flame-Touched Cuffs
+i(0, 375119);		-- Flame-Touched Handguards
+i(0, 375120);		-- Flame-Touched Helmet
+i(0, 375121);		-- Flame-Touched Legguards
+i(0, 375122);		-- Flame-Touched Spaulders
+i(0, 375118);		-- Flame-Touched Treads
+i(0, 375197);		-- Flaring Cowl
+i(0, 375166);		-- Illustrious Insight
+i(0, 375115);		-- Life-Bound Belt
+i(0, 375116);		-- Life-Bound Bindings
+i(0, 375110);		-- Life-Bound Boots
+i(0, 375112);		-- Life-Bound Cap
+i(0, 375109);		-- Life-Bound Chestpiece
+i(0, 375111);		-- Life-Bound Gloves
+i(0, 375114);		-- Life-Bound Shoulderpads
+i(0, 375113);		-- Life-Bound Trousers
+i(0, 375160);		-- Toxified Armor Patch
+i(0, 375199);		-- Witherrot Tome
+--- QUEST ---
+i(0, 377989);		-- Heart in a Bottle
 
 ------------------
 -- PATCH 10.0.5 --
 ------------------
+--- ITEM ---
 i(202232, 397862);	-- Impressive Burnished Essence
 i(202233, 397863);	-- Remarkable Burnished Essence
 
 ------------------
 -- PATCH 10.0.7 --
 ------------------
-i(203427, 400814);	-- Reinforced Pristine Leather
+--- ITEM ---
 i(203842, 402143);	-- Animist's Footwraps
 i(203843, 402144);	-- Animist's Legguards
 i(203968, 402615);	-- Cord of Shriveled Heads
@@ -2099,14 +2108,15 @@ i(203844, 402146);	-- Gloves of the Tormentor
 i(203847, 402150);	-- Gurubashi's Grasp
 i(203845, 402147);	-- Junglefury Gauntlets
 i(203846, 402148);	-- Junglefury Leggings
+i(203427, 400814);	-- Reinforced Pristine Leather
 
 ------------------
 -- PATCH 10.1.0 --
 ------------------
--- TRAINER --
-i(0, 409557);	-- Hide-Bound Drums
-i(0, 409555);	-- Lustrous Scaled Drums
--- ITEM --
+--- TRAINER ---
+i(0, 409557);		-- Hide-Bound Drums
+i(0, 409555);		-- Lustrous Scaled Drums
+--- ITEM ---
 i(204970, 406267);	-- Adaptive Dracothyst Armguards
 i(204974, 406214);	-- Lambent Armor Kit
 i(204157, 403142);	-- Obsidian Combatant's Adamant Chainmail
@@ -2131,7 +2141,7 @@ i(204969, 406266);	-- Spore Colony Shoulderguards
 ------------------
 -- PATCH 10.1.5 --
 ------------------
--- ITEM --
+--- ITEM ---
 i(206556, 413756);	-- Displacement Boots
 i(206529, 413516);	-- Helm of Lingering Power
 i(206414, 28224);	-- Icy Scale Bracers

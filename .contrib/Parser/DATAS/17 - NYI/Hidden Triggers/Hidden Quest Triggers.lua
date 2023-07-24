@@ -1659,6 +1659,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(14448),	-- Takes One to Know One - completed with quest 13260
 		q(14474),	-- Goblin Escape Pods - completed with quest 14001
 		q(24521),	-- Report For Tryouts - completed with quest 24567
+		q(24716),	-- Returning A-Me 01 - completed with quest 24926
 		q(25033),	-- The Red Messenger - completed with quest 24971
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
 		q(25305),	-- Never Look Back - completed with quest 25304

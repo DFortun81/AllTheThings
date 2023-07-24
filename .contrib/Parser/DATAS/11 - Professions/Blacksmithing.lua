@@ -1,19 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local EARTH_ELEMENTAL = {
-	["crs"] = {
-		194212,	-- Unleashed Rubble
-		194517,	-- Crushing Elemental
-	},
-	["coords"] = {
-		{ 50.6, 57.6, THALDRASZUS },
-		{ 48.8, 60.6, THALDRASZUS },
-		{ 47.8, 35.6, THE_WAKING_SHORES },
-		{ 50.6, 33.2, THE_WAKING_SHORES },
-		{ 53.6, 31.0, THE_WAKING_SHORES },
-	},
-};
 local BLACKSMITHING_KNOWLEDGE = 2023;
 profession(BLACKSMITHING, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -575,6 +562,10 @@ profession(BLACKSMITHING, {
 		})),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+		ach(18771, {	-- Khaz'gorian Smithing Hammer
+			["provider"] = { "i", 152839 },	-- Khaz'gorian Smithing Hammer
+			["timeline"] = { ADDED_10_1_7 },
+		}),
 		q(54465, {	-- Blacksmithing Plans
 			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
 			["coord"] = { 73.6, 8.6, BORALUS },
@@ -673,9 +664,6 @@ profession(BLACKSMITHING, {
 			["timeline"] = { ADDED_8_1_5 },
 			["g"] = {
 				r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
-				ach(18771, {	-- Khaz'gorian Smithing Hammer
-					["timeline"] = { ADDED_10_1_7 },
-				}),
 			},
 		}),
 		q(50279, {	-- Anvil's Away (H)
@@ -686,9 +674,6 @@ profession(BLACKSMITHING, {
 			["timeline"] = { ADDED_8_1_5 },
 			["g"] = {
 				r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
-				ach(18771, {	-- Khaz'gorian Smithing Hammer
-					["timeline"] = { ADDED_10_1_7 },
-				}),
 			},
 		}),
 	})),
@@ -956,9 +941,18 @@ profession(BLACKSMITHING, {
 			q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
 				["name"] = "Blacksmithing Drop #2: Earth Elemental",
 				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
-				["crs"] = EARTH_ELEMENTAL.crs,
+				["crs"] = {
+					194212,	-- Unleashed Rubble
+					194517,	-- Crushing Elemental
+				},
 				["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
-				["coords"] = EARTH_ELEMENTAL.coords,
+				["coords"] = {
+					{ 50.6, 57.6, THALDRASZUS },
+					{ 48.8, 60.6, THALDRASZUS },
+					{ 47.8, 35.6, THE_WAKING_SHORES },
+					{ 50.6, 33.2, THE_WAKING_SHORES },
+					{ 53.6, 31.0, THE_WAKING_SHORES },
+				},
 			}),
 		})),
 	})),
