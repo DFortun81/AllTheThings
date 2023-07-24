@@ -447,7 +447,6 @@ root(ROOTS.Unsorted, {
 			i(204895),	-- Storm-touched Missive Stone [DNT]
 			i(204983),	-- Primalist Dropbox Key [DNT]
 			i(205146),	-- Weyrnstone
-			i(206022),	-- Anduin's Lucky Hearthstone Card
 			i(206474),	-- Smelly Cheese
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator

@@ -167,6 +167,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(204989),	-- Eric's Camera
 					},
 				}),
+				q(75988, {	-- Lucky Hearthsone Card
+					["provider"] = { "n", 205604 },	-- Anduin Wrynn
+					["coord"] = { 52.1, 81.5, THALDRASZUS },
+					["g"] = {
+						i(206022),	-- Anduin's Lucky Hearthstone Card
+					},
+				}),
 				q(76246, {	-- Manastorm Mystique
 					["provider"] = { "n", 205769 },	-- Soridormi
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
