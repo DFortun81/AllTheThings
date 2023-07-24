@@ -238,6 +238,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(205865, {	-- Zal'kir the Chosen <The Maw of K'Tanth>
 					["coord"] = { 59.8, 70.6, THALDRASZUS },
 					["questID"] = 76170,
+					["isDaily"] = true,
 					["g"] = {
 						i(208168),	-- Black Blade of K'tanth
 						i(208172),	-- Bloodstained Runecrook
@@ -252,6 +253,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						{ 54.6, 85.9, THALDRASZUS },	-- Rare summon spot
 					},
 					["questID"] = 75479,
+					["isDaily"] = true,
 					["g"] = {
 						i(208449),	-- Melly's Metronographer+++
 						--loot commented out until someone confirm it
