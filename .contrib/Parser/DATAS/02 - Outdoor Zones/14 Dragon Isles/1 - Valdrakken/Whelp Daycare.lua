@@ -499,8 +499,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73134, {	--  Eternal Escapades
 					["sourceQuests"] = { 73000 },	-- Sneezing Through Time
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199986 },	-- Zhusadormu
+					["coord"] = { 14.0, 54.7, VALDRAKKEN },
 				}),
 				q(73130, {	-- Fowl Runic Scribblings
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
