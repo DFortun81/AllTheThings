@@ -514,7 +514,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							iupgrade(202655,3),	-- Elder's Volcanic Binding
 							iupgrade(202614,3),	-- Rashok's Molten Heart
 							iupgrade(202603,3),	-- Sandals of Ancient Fury
-							-- TODO: hopefully blizzard fixes this without the bonusID. test with /att i:202659.04
 							iupgrade(202659,3),	-- Shackles of the Shadowed Bastille
 							iupgrade(204466,3),	-- Tormentor's Siphoning Signet
 							iupgrade(202592,3),	-- Unyielding Goliath's Burgonet
@@ -648,7 +647,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							iupgrade(204399,3),	-- Oblivion's Immortal Coil
 							iupgrade(202599,3),	-- Sarkareth's Abyssal Embrace
 							iupgrade(202584,3),	-- Scalecommander's Ebon Schynbalds
-							i(204465),	-- Voice of the Silent Star
+							iupgrade(204465,3),	-- Voice of the Silent Star
 						},
 					}),
 				}),
@@ -1182,7 +1181,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						iupgrade(202655,6),	-- Elder's Volcanic Binding
 						iupgrade(202614,6),	-- Rashok's Molten Heart
 						iupgrade(202603,6),	-- Sandals of Ancient Fury
-						-- TODO: hopefully blizzard fixes this without the bonusID. test with /att i:202659.05
 						iupgrade(202659,6),	-- Shackles of the Shadowed Bastille
 						iupgrade(204466,6),	-- Tormentor's Siphoning Signet
 						iupgrade(202592,6),	-- Unyielding Goliath's Burgonet
@@ -1476,7 +1474,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						i(202655),	-- Elder's Volcanic Binding
 						i(202614),	-- Rashok's Molten Heart
 						i(202603),	-- Sandals of Ancient Fury
-						-- TODO: hopefully blizzard fixes this without the bonusID. test with /att i:202659.06
 						i(202659),	-- Shackles of the Shadowed Bastille
 						i(204466),	-- Tormentor's Siphoning Signet
 						i(202592),	-- Unyielding Goliath's Burgonet
