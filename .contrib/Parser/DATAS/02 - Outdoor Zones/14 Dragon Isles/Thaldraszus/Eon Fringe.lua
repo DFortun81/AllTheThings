@@ -318,5 +318,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(77172),	-- weekly lockout for Encapsulated Destiny (itemID 207002) as reward from daily quest
 
-	q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth> first kill; either this or 76170 is daily lockout
+	q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth> kill, keep pop with 76170 on every kill
 }));

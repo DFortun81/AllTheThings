@@ -503,10 +503,6 @@ root(ROOTS.Unsorted, {
 			--
 			i(190636),	-- Armored Siege Kodo
 			i(190608),	-- Crushhoof
-			--
-			i(208945),	-- Paracausal Crate
-			i(208951),	-- Paracausal Cluster
-			i(208952),	-- Soridormi's Letter of Commendation
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
@@ -617,8 +613,6 @@ root(ROOTS.Unsorted, {
 				i(206026),	-- Ensemble: Enmity Hood and Cloak
 				-- New Stuff
 				i(206138),	-- Scalewarden's Pennant
-				i(206200),	-- Obsidian Equipment Chest
-				i(206270),	-- Volcanic Equipment Chest
 				-- New
 				i(189885),	-- The Battlespoon
 			}),

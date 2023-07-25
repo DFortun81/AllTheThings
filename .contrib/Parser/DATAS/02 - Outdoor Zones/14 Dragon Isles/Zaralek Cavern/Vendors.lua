@@ -212,6 +212,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(COVETED_BAUBLE, {
 						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 1 } },
 					}),
+					i(206270, {	-- Volcanic Equipment Chest
+						["cost"] = {{ "c", 2245, 250 }},
+						["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
+					}),
 				},
 			}),
 		}),

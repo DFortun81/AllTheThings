@@ -676,6 +676,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(207982),	-- Timeless Bulwark
 								i(207979),	-- Timespan Scepter
 							}),
+							i(208945, {	-- Paracausal Crate
+								["cost"] = {{ "c", PARACAUSAL_FLAKES, 500 }},
+							}),
 						}),
 					}),
 					n(208343, {	-- Sorotis <Ulderoth Vendor>
