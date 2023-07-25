@@ -3,14 +3,41 @@ local Items = root(ROOTS.ItemDBConditional);
 local Recipes = root(ROOTS.RecipeDB);
 local iq = function(itemID, questID, classID, raceID)
 	if itemID ~= 0 then
-		Items[itemID] = { ["questID"] = questID, ["classes"] = { classID }, ["races"] = { raceID }, ["_drop"] = { "spellID" } };
+		local item = {
+			["_drop"] = { "spellID" }
+		}
+		if questID then
+			item.questID = questID;
+		end
+		if classID then
+			item.classes = { classID };
+		end
+		if raceID then
+			item.races = { raceID };
+		end
+		Items[itemID] = item;
 	end
 end
 local is = function(itemID, spellID, classID)
 	if itemID ~= 0 then
-		Items[itemID] = { ["recipeID"] = spellID, ["classes"] = { classID }, ["filterID"] = RECIPES, ["collectible"] = true };
+		local item = {
+			["recipeID"] = spellID,
+			["filterID"] = RECIPES,
+			["collectible"] = true
+		}
+		if classID then
+			item.classes = { classID };
+		end
+		Items[itemID] = item;
 	else
-		Recipes[spellID] = { ["classes"] = { classID }, ["filterID"] = RECIPES, ["collectible"] = true };
+		local spell = {
+			["filterID"] = RECIPES,
+			["collectible"] = true
+		}
+		if classID then
+			spell.classes = { classID };
+		end
+		Recipes[spellID] = spell;
 	end
 end
 
