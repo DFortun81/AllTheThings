@@ -61,8 +61,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, sformat, strsplit, GetTimePreciseSec, type
-	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, string.format, strsplit, GetTimePreciseSec, type;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, tremove, sformat, strsplit, GetTimePreciseSec, type
+	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, tremove, string.format, strsplit, GetTimePreciseSec, type;
 local ATTAccountWideData;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local ALLIANCE_ONLY = app.Modules.FactionData.FACTION_RACES[1];
@@ -1757,6 +1757,14 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 		if group.npcID == value then return true; end
 	end
 end
+
+-- Returns proper, class-filtered specs for a given itemID
+local GetFixedItemSpecInfo
+-- Returns a string containing the spec icons, followed by their respective names if desired
+local GetSpecsString;
+do
+local GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
+ 	= GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID;
 -- Filters a specs table to only those which the current Character class can choose
 local function FilterSpecs(specs)
 	if specs and #specs > 0 then
@@ -1764,40 +1772,12 @@ local function FilterSpecs(specs)
 		for i=#specs,1,-1 do
 			_, name, _, _, _, class = GetSpecializationInfoByID(specs[i]);
 			if class ~= app.Class or not name or name == "" then
-				table.remove(specs, i);
+				tremove(specs, i);
 			end
 		end
 		app.Sort(specs, app.SortDefaults.Value);
 	end
 end
--- Returns a string containing the spec icons, followed by their respective names if desired
-local function GetSpecsString(specs, includeNames, trim)
-	local icons, name, icon, _ = {};
-	if includeNames then
-		for i=#specs,1,-1 do
-			_, name, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
-			icons[i * 4 - 3] = "  |T";
-			icons[i * 4 - 2] = icon;
-			icons[i * 4 - 1] = ":0|t ";
-			icons[i * 4] = name;
-		end
-	else
-		for i=#specs,1,-1 do
-			_, _, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
-			icons[i * 3 - 2] = "|T";
-			icons[i * 3 - 1] = icon;
-			icons[i * 3] = ":0|t ";
-		end
-	end
-	if trim then
-		return string.match(table.concat(icons),'^%s*(.*%S)');
-	end
-	return table.concat(icons);
-end
--- Returns proper, class-filtered specs for a given itemID
-local GetFixedItemSpecInfo;
-do
-local GetItemSpecInfo = GetItemSpecInfo;
 GetFixedItemSpecInfo = function(itemID)
 	if itemID then
 		local specs = GetItemSpecInfo(itemID);
@@ -1826,6 +1806,29 @@ GetFixedItemSpecInfo = function(itemID)
 			return specs;
 		end
 	end
+end
+GetSpecsString = function(specs, includeNames, trim)
+	local icons, name, icon, _ = {};
+	if includeNames then
+		for i=#specs,1,-1 do
+			_, name, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
+			icons[i * 4 - 3] = "  |T";
+			icons[i * 4 - 2] = icon;
+			icons[i * 4 - 1] = ":0|t ";
+			icons[i * 4] = name;
+		end
+	else
+		for i=#specs,1,-1 do
+			_, _, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
+			icons[i * 3 - 2] = "|T";
+			icons[i * 3 - 1] = icon;
+			icons[i * 3] = ":0|t ";
+		end
+	end
+	if trim then
+		return string.match(app.TableConcat(icons),'^%s*(.*%S)');
+	end
+	return app.TableConcat(icons);
 end
 end
 
@@ -5412,7 +5415,7 @@ end
 local function processQueue()
 	if #queue > 0 and not active then
 		local data = queue[1];
-		table.remove(queue, 1);
+		tremove(queue, 1);
 		active = data[1];
 		app.print("Updating " .. data[2] .. " from " .. data[3] .. "...");
 		C_ChatInfo.SendAddonMessage("ATT", "!\tsyncsum\t" .. data[1], "WHISPER", data[3]);
@@ -15192,7 +15195,7 @@ function app:CreateMiniListForGroup(group)
 								sourceQuest = o.key .. o[o.key];
 								if sourceQuests[sourceQuest] then
 									-- Already exists in the hierarchy. Uh oh.
-									table.remove(prereqs, i);
+									tremove(prereqs, i);
 								else
 									sourceQuests[sourceQuest] = true;
 								end
@@ -15214,7 +15217,7 @@ function app:CreateMiniListForGroup(group)
 						local n = #prereqs;
 						local lastprereq = prereqs[n];
 						if lastprereq.text == "Upon Completion" and n > 1 then
-							table.remove(prereqs, n);
+							tremove(prereqs, n);
 							local g = prereqs[n-1].g;
 							if not g then
 								g = {};
@@ -18548,12 +18551,12 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 									if pg[i].collected then
 										-- item harvested, so remove it
 										-- print("remove",pg[i].text)
-										table.remove(pg, i);
+										tremove(pg, i);
 									end
 								end
 							else
 								-- empty partition, so remove it
-								table.remove(g, p);
+								tremove(g, p);
 							end
 						end
 					end
@@ -19187,12 +19190,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 				-- 		-- Push the Common Boss Drop header to the top
 				-- 		if cbd > -1 then
-				-- 			tinsert(g, 1, table.remove(g, cbd));
+				-- 			tinsert(g, 1, tremove(g, cbd));
 				-- 		end
 
 				-- 		-- Push the Zone Drop header to the bottom
 				-- 		if zd > -1 then
-				-- 			tinsert(g, table.remove(g, zd));
+				-- 			tinsert(g, tremove(g, zd));
 				-- 		end
 				-- 	end
 				-- end
@@ -19570,7 +19573,7 @@ customWindowUpdates["SourceFinder"] = function(self)
 							if count > 0 then
 								for i=count,1,-1 do
 									if g[i].fails > 2 then
-										table.remove(g, i);
+										tremove(g, i);
 									end
 								end
 							end
@@ -22191,7 +22194,7 @@ app.LoadDebugger = function()
 							category.parentCategoryID = nil;
 							if parentCategory then
 								tinsert(parentCategory.g, 1, category);
-								table.remove(categoryList, i);
+								tremove(categoryList, i);
 							end
 						end
 					end
@@ -23604,8 +23607,8 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 					elseif a == "sync" then
 						app:ReceiveSyncRequest(target, a);
 					elseif a == "syncsum" then
-						table.remove(args, 1);
-						table.remove(args, 1);
+						tremove(args, 1);
+						tremove(args, 1);
 						app:ReceiveSyncSummary(target, args);
 					end
 				else
@@ -23640,8 +23643,8 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
 						end
 					elseif a == "syncsum" then
-						table.remove(args, 1);
-						table.remove(args, 1);
+						tremove(args, 1);
+						tremove(args, 1);
 						app:ReceiveSyncSummaryResponse(target, args);
 					end
 					if response then print(response .. sender); end
