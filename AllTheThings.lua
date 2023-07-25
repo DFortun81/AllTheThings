@@ -5512,23 +5512,54 @@ end
 function app:IsAccountLinked(sender)
 	return AllTheThingsAD.LinkedAccounts[sender] or AllTheThingsAD.LinkedAccounts[strsplit("-", sender)];
 end
-function app:RecalculateAccountWideData()
-	for key,data in pairs(ATTAccountWideData) do
-		if type(data) == "table" and contains(whiteListedFields, key) then
-			data = {};
-			for guid,character in pairs(ATTCharacterData) do
-				local characterData = character[key];
-				if characterData then
-					for index,_ in pairs(characterData) do
-						data[index] = 1;
-					end
+local function DefaultSyncCharacterData(allCharacters, key)
+	local data = {};
+	for guid,character in pairs(allCharacters) do
+		local characterData = character[key];
+		if characterData then
+			for index,_ in pairs(characterData) do
+				data[index] = 1;
+			end
+		end
+	end
+	ATTAccountWideData[key] = data;
+end
+local function RankSyncCharacterData(allCharacters, key)
+	local data = {};
+	local oldRank;
+	for guid,character in pairs(allCharacters) do
+		local characterData = character[key];
+		if characterData then
+			for index,rank in pairs(characterData) do
+				oldRank = data[index];
+				if not oldRank or oldRank < rank then
+					data[index] = rank;
 				end
 			end
-			ATTAccountWideData[key] = data;
+		end
+	end
+	ATTAccountWideData[key] = data;
+end
+local SyncFunctions = setmetatable({
+	AzeriteEssenceRanks = RankSyncCharacterData,
+}, { __index = function(t, key)
+	if contains(whiteListedFields, key) then
+		return DefaultSyncCharacterData
+	end
+end })
+
+function app:RecalculateAccountWideData()
+	local allCharacters = ATTCharacterData;
+	local syncFunc;
+	for key,data in pairs(ATTAccountWideData) do
+		syncFunc = SyncFunctions[key];
+		if syncFunc then
+			-- app.PrintDebug("Sync:",key)
+			syncFunc(allCharacters, key);
 		end
 	end
 	local deaths = 0;
-	for guid,character in pairs(ATTCharacterData) do
+	for guid,character in pairs(allCharacters) do
 		if character.Deaths then
 			deaths = deaths + character.Deaths;
 		end
