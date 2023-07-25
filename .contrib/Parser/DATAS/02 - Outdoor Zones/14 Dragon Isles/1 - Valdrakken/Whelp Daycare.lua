@@ -422,9 +422,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
-					["g"] = {
-						i(191461),	-- Hochenblume
-					},
+					-- ["g"] = {
+					-- 	i(191461),	-- Hochenblume
+					-- },
 				}),
 				q(73013, {	-- So... Tired....
 					["sourceQuests"] = { 73012 },	-- Hochenblume Harvest
