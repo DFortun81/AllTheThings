@@ -757,6 +757,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36652),	-- Stocky Shotgun
 			i(36653),	-- Precipice Longrifle
 			i(36654),	-- Harsh-Winter Rifle
+			i(36645, {	-- Tuskarr Boomstick
+				["timeline"] = { "added 3.0.1.8770", "removed 6.0.2", ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic
+			}),
 		}),
 		filter(ONE_HANDED_MACES, {
 			i(33423),	-- Rime-Covered Mace
