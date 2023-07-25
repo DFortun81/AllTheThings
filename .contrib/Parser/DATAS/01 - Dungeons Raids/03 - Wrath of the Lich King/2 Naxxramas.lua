@@ -1182,6 +1182,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(206575, {	-- Dented Raider's Boots
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["g"] = {
+								i(4660),	-- Walking Boots
 								i(206611),	-- Lamented Crusader's Boots
 							},
 						}),
