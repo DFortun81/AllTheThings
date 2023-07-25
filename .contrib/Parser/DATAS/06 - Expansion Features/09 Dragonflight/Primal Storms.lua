@@ -530,302 +530,302 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 38.1, 37.7, VALDRAKKEN },
 					["g"] = {
 						n(BACK, {
-							iexact(199450, 14, 9342, {	-- Cape of Raging Tempests
+							iupgrade(199450, 14, 9344, {	-- Cape of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199451, 14, 9342, {	-- Cloak of Raging Tempests
+							iupgrade(199451, 14, 9344, {	-- Cloak of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199452, 14, 9342, {	-- Shroud of Raging Tempests
+							iupgrade(199452, 14, 9344, {	-- Shroud of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199449, 14, 9342, {	-- Wrap of Raging Tempests
+							iupgrade(199449, 14, 9344, {	-- Wrap of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
 						}),
 						filter(CLOTH, {
-							iexact(199418, 14, 9342, {	-- Boots of Raging Tempests
+							iupgrade(199418, 14, 9344, {	-- Boots of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iexact(199422, 14, 9342, {	-- Cord of Raging Tempests
+							iupgrade(199422, 14, 9344, {	-- Cord of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199423, 14, 9342, {	-- Cuffs of Raging Tempests
+							iupgrade(199423, 14, 9344, {	-- Cuffs of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199419, 14, 9342, {	-- Gloves of Raging Tempests
+							iupgrade(199419, 14, 9344, {	-- Gloves of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iexact(199420, 14, 9342, {	-- Hood of Raging Tempests
+							iupgrade(199420, 14, 9344, {	-- Hood of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199421, 14, 9342, {	-- Leggings of Raging Tempests
+							iupgrade(199421, 14, 9344, {	-- Leggings of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199424, 14, 9342, {	-- Shoulderpads of Raging Tempests
+							iupgrade(199424, 14, 9344, {	-- Shoulderpads of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iexact(199417, 14, 9342, {	-- Vestment of Raging Tempests
+							iupgrade(199417, 14, 9344, {	-- Vestment of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
 						}),
 						filter(LEATHER, {
-							iexact(199430, 14, 9342, {	-- Bindings of Raging Tempests
+							iupgrade(199430, 14, 9344, {	-- Bindings of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199428, 14, 9342, {	-- Breeches of Raging Tempests
+							iupgrade(199428, 14, 9344, {	-- Breeches of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199427, 14, 9342, {	-- Cowl of Raging Tempests
+							iupgrade(199427, 14, 9344, {	-- Cowl of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199432, 14, 9342, {	-- Epaulets of Raging Tempests
+							iupgrade(199432, 14, 9344, {	-- Epaulets of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iexact(199426, 14, 9342, {	-- Handguards of Raging Tempests
+							iupgrade(199426, 14, 9344, {	-- Handguards of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iexact(199429, 14, 9342, {	-- Sash of Raging Tempests
+							iupgrade(199429, 14, 9344, {	-- Sash of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199431, 14, 9342, {	-- Vest of Raging Tempests
+							iupgrade(199431, 14, 9344, {	-- Vest of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199425, 14, 9342, {	-- Waders of Raging Tempests
+							iupgrade(199425, 14, 9344, {	-- Waders of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
 						}),
 						filter(MAIL, {
-							iexact(199448, 14, 9342, {	-- Bracers of Raging Tempests
+							iupgrade(199448, 14, 9344, {	-- Bracers of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199441, 14, 9342, {	-- Chestguard of Raging Tempests
+							iupgrade(199441, 14, 9344, {	-- Chestguard of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199447, 14, 9342, {	-- Cinch of Raging Tempests
+							iupgrade(199447, 14, 9344, {	-- Cinch of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199444, 14, 9342, {	-- Coif of Raging Tempests
+							iupgrade(199444, 14, 9344, {	-- Coif of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199445, 14, 9342, {	-- Greaves of Raging Tempests
+							iupgrade(199445, 14, 9344, {	-- Greaves of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199443, 14, 9342, {	-- Grips of Raging Tempests
+							iupgrade(199443, 14, 9344, {	-- Grips of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iexact(199446, 14, 9342, {	-- Shoulderguards of Raging Tempests
+							iupgrade(199446, 14, 9344, {	-- Shoulderguards of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iexact(199442, 14, 9342, {	-- Striders of Raging Tempests
+							iupgrade(199442, 14, 9344, {	-- Striders of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
 						}),
 						filter(PLATE, {
-							iexact(199440, 14, 9342, {	-- Armplates of Raging Tempests
+							iupgrade(199440, 14, 9344, {	-- Armplates of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199434, 14, 9342, {	-- Breastplate of Raging Tempests
+							iupgrade(199434, 14, 9344, {	-- Breastplate of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199436, 14, 9342, {	-- Gauntlets of Raging Tempests
+							iupgrade(199436, 14, 9344, {	-- Gauntlets of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iexact(199439, 14, 9342, {	-- Girdle of Raging Tempests
+							iupgrade(199439, 14, 9344, {	-- Girdle of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 200 },
 								},
 							}),
-							iexact(199433, 14, 9342, {	-- Helm of Raging Tempests
+							iupgrade(199433, 14, 9344, {	-- Helm of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199437, 14, 9342, {	-- Legguards of Raging Tempests
+							iupgrade(199437, 14, 9344, {	-- Legguards of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199438, 14, 9342, {	-- Mantle of Raging Tempests
+							iupgrade(199438, 14, 9344, {	-- Mantle of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
-							iexact(199435, 14, 9342, {	-- Sabatons of Raging Tempests
+							iupgrade(199435, 14, 9344, {	-- Sabatons of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 350 },
 								},
 							}),
 						}),
 						n(WEAPONS, {
-							iexact(199314, 14, 9342, {	-- Broadsword of Raging Tempests
+							iupgrade(199314, 14, 9344, {	-- Broadsword of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iexact(199319, 14, 9342, {	-- Bulwark of Raging Tempests
+							iupgrade(199319, 14, 9344, {	-- Bulwark of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 300 },
 								},
 							}),
-							iexact(199304, 14, 9342, {	-- Cleaver of Raging Tempests
+							iupgrade(199304, 14, 9344, {	-- Cleaver of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iexact(199324, 14, 9342, {	-- Crusher of Raging Tempests
+							iupgrade(199324, 14, 9344, {	-- Crusher of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iexact(199318, 14, 9342, {	-- Cudgel of Raging Tempests
+							iupgrade(199318, 14, 9344, {	-- Cudgel of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iexact(199309, 14, 9342, {	-- Dagger of Raging Tempests
+							iupgrade(199309, 14, 9344, {	-- Dagger of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199308, 14, 9342, {	-- Glaive of Raging Tempests
+							iupgrade(199308, 14, 9344, {	-- Glaive of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iexact(199315, 14, 9342, {	-- Greatsword of Raging Tempests
+							iupgrade(199315, 14, 9344, {	-- Greatsword of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iexact(199306, 14, 9342, {	-- Hacker of Raging Tempests
+							iupgrade(199306, 14, 9344, {	-- Hacker of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iexact(199305, 14, 9342, {	-- Hatchet of Raging Tempests
+							iupgrade(199305, 14, 9344, {	-- Hatchet of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199307, 14, 9342, {	-- Heartseeker of Raging Tempests
+							iupgrade(199307, 14, 9344, {	-- Heartseeker of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iexact(199311, 14, 9342, {	-- Horn of Raging Tempests
+							iupgrade(199311, 14, 9344, {	-- Horn of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 300 },
 								},
 							}),
-							iexact(199320, 14, 9342, {	-- Impaler of Raging Tempests
+							iupgrade(199320, 14, 9344, {	-- Impaler of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iexact(199321, 14, 9342, {	-- Javelin of Raging Tempests
+							iupgrade(199321, 14, 9344, {	-- Javelin of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iexact(199325, 14, 9342, {	-- Mace of Raging Tempests
+							iupgrade(199325, 14, 9344, {	-- Mace of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199323, 14, 9342, {	-- Mallet of Raging Tempests
+							iupgrade(199323, 14, 9344, {	-- Mallet of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iexact(199317, 14, 9342, {	-- Maul of Raging Tempests
+							iupgrade(199317, 14, 9344, {	-- Maul of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iexact(199313, 14, 9342, {	-- Pole of Raging Tempests
+							iupgrade(199313, 14, 9344, {	-- Pole of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},
 							}),
-							iexact(199322, 14, 9342, {	-- Rod of Raging Tempests
+							iupgrade(199322, 14, 9344, {	-- Rod of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199316, 14, 9342, {	-- Scepter of Raging Tempests
+							iupgrade(199316, 14, 9344, {	-- Scepter of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 500 },
 								},
 							}),
-							iexact(199310, 14, 9342, {	-- Shiv of Raging Tempests
+							iupgrade(199310, 14, 9344, {	-- Shiv of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 400 },
 								},
 							}),
-							iexact(199312, 14, 9342, {	-- Staff of Raging Tempests
+							iupgrade(199312, 14, 9344, {	-- Staff of Raging Tempests
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 800 },
 								},

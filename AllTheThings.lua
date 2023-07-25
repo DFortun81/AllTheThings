@@ -960,13 +960,13 @@ local function GetCostIconForTooltip(data, iconOnly)
 end
 local function GetUpgradeIconForRow(data, iconOnly)
 	-- upgrade only in nested groups, or if itself has an upgrade
-	if (not data.window and (data.filledUpgrade or data.hasUpgradeNested)) or data.hasUpgrade then
+	if (not data.window and (data.filledUpgrade or data.hasUpgradeNested)) or data.collectibleAsUpgrade then
 		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
 	end
 end
 local function GetUpgradeIconForTooltip(data, iconOnly)
 	-- upgrade only if itself has an upgrade
-	if data.hasUpgrade then
+	if data.collectibleAsUpgrade then
 		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
 	end
 end
@@ -4803,13 +4803,10 @@ app.SetSkipPurchases = function(level)
 end
 -- Determines searches required for upgrades using this group
 local function DetermineUpgradeGroups(group, FillData)
-	local hasUpgrade = group.hasUpgrade and not group.isUpgraded;
-	if hasUpgrade then
-		group.hasUpgrade = false;
+	local nextUpgrade = group.nextUpgrade;
+	if nextUpgrade then
 		group.filledUpgrade = true;
-		local o = CreateObject(group._up);
-		-- keep track this this upgrade reference shouldn't propogate further upgrade links
-		o.isUpgraded = true;
+		local o = CreateObject(nextUpgrade);
 		return { o };
 	end
 end
@@ -11085,9 +11082,25 @@ local itemFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
 	end,
+	["AsItemSource"] = function(t)
+		-- app.PrintDebug("AsItemSource",t.modItemID,t.__type)
+		-- already an item source table
+		if t.__type == "BaseItemSource" then return t; end
+		local link = t.link or t.rawlink or t.silentLink;
+		-- app.PrintDebug("AsItemSource.link",link)
+		if not link then return end
+		local s = GetSourceID(link)
+		if s then
+			-- app.PrintDebug("AsItemSource",s)
+			return app.CreateItemSource(s, t.itemID, t);
+		end
+		-- app.PrintDebug("AsItemSource:nil",t.modItemID)
+	end,
 };
 -- Module imports
-itemFields.hasUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
+itemFields.hasUpgrade = app.Modules.Upgrade.HasUpgrade;
+itemFields.nextUpgrade = app.Modules.Upgrade.NextUpgrade;
+itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
 app.BaseItem = app.BaseObjectFields(itemFields, "BaseItem");
 
 local fields = RawCloneData(itemFields);
@@ -14161,9 +14174,9 @@ local function SetGroupVisibility(parent, group)
 		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costNested)
 	end
 	-- Upgrade
-	if not visible and (group.hasUpgradeNested or group.hasUpgrade) then
+	if not visible and (group.hasUpgradeNested or group.collectibleAsUpgrade) then
 		visible = not group.saved;
-		-- Only persist nested costs from visible groups
+		-- Only persist nested upgrades from visible groups
 		if parent and visible then
 			parent.hasUpgradeNested = true;
 		end
@@ -14210,13 +14223,13 @@ local function SetThingVisibility(parent, group)
 		-- app.PrintDebug("STV.cost",group.hash,visible,group.costNested)
 	end
 	-- Upgrade
-	if not visible and (group.hasUpgradeNested or group.hasUpgrade) then
+	if not visible and (group.hasUpgradeNested or group.collectibleAsUpgrade) then
 		visible = not group.saved;
-		-- Only persist nested costs from visible groups
+		-- Only persist nested upgrades from visible groups
 		if parent and visible then
 			parent.hasUpgradeNested = true;
 		end
-		-- app.PrintDebug("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested)
+		-- app.PrintDebug("STV.hasUpgrade",group.hash,visible,group.hasUpgradeNested)
 	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then
