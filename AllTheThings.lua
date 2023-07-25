@@ -1039,7 +1039,7 @@ local function GetProgressTextForTooltip(data, iconOnly)
 		tinsert(text, icon)
 	end
 	-- Cost (show cost icon)
-	icon = GetCostIconForRow(data, iconOnly);
+	icon = GetCostIconForTooltip(data, iconOnly);
 	if icon then
 		tinsert(text, icon)
 	end
