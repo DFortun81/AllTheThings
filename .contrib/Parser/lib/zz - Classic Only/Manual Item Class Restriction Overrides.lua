@@ -1,6 +1,6 @@
-local itemDB = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local i = function(itemID, ...)
-	itemDB[itemID] = { ["classes"] = { ... } };
+	Items[itemID] = { ["classes"] = { ... } };
 	return o;
 end
 

@@ -1,4 +1,4 @@
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local Recipes = root(ROOTS.RecipeDB);
 local ProfessionID = ENGINEERING;
 local GNOMISH_ENGINEER = 20219;

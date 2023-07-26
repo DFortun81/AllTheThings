@@ -1119,6 +1119,58 @@ model = function(displayID, t)
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
+do
+-- ItemDBConditional contains a bunch of micro object modifications, but since we're using it everywhere, it is losing the item data due to what is known as "data chomping" with how we are using it.
+local backingTableMeta = {
+	__index = function(t, key)
+		local item = { itemID = key };
+		rawset(t, key, item);
+		return item;
+	end,
+};
+
+-- Crieve NOTE: This is needed because the root gets lost between files.
+local backingTable;
+local function GetBackingTable()
+	if not _.ItemDBConditional or not backingTable then
+		backingTable = setmetatable({}, backingTableMeta);
+		_.ItemDBConditional = backingTable;
+	end
+	return backingTable;
+end
+
+local itemDBConditional = {};
+setmetatable(itemDBConditional, {
+	__index = function(t, key)
+		return GetBackingTable()[key];
+	end,
+	__newindex = function(t, key, value)
+		if value and type(value) == "table" then
+			local item = GetBackingTable()[key];
+			for k,v in pairs(value) do
+				item[k] = v;
+			end
+		end
+	end,
+});
+ItemDBConditional = itemDBConditional;
+end
+
+--[[
+-- Proof of Concept:
+-- If you assign new partial data to the item, it'll retain its previous data instead of discarding it.
+local disgustingOozeling = ItemDBConditional[20769];
+disgustingOozeling.spellID = 25162;
+disgustingOozeling.speciesID = 114;
+
+ItemDBConditional[20769] = { description = "What a shame it would be to lose this data..." };
+
+print("Disgusting Oozeling contains:");
+for key,value in pairs(ItemDBConditional[20769]) do
+	print(" " .. key .. ": " .. value);
+end
+]]--
+
 -- Create a Header. Returns a UNIQUE ID, starting at 0.
 (function()
 local customHeaders,nextHeaderID = {},-1000000;	-- TODO: Change this to 0.

@@ -1,9 +1,9 @@
 
-local Items = root(ROOTS.ItemDBConditional);
 -- There is not currently an automatic way to know whether an Item is BoA or BoP since in both
 -- situations [b] = 1
 -- Items listed in this file will be directly marked as BoE to allow ATT to properly
 -- treat them for their BoA status
+local Items = ItemDBConditional;
 local i = function(itemID)
 	local item = { ["b"] = 2 };
 	Items[itemID] = item;

@@ -1,4 +1,4 @@
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local Recipes = root(ROOTS.RecipeDB);
 local ProfessionID = BLACKSMITHING;
 local ARMORSMITH = 9788;

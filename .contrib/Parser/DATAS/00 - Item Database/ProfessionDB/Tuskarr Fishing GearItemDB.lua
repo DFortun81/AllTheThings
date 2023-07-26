@@ -1,4 +1,4 @@
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local Recipes = root(ROOTS.RecipeDB);
 local ProfessionID = TUSKARR_FISHING_GEAR;
 local i = function(itemID, recipeID, unobtainStatus, requireSkill)

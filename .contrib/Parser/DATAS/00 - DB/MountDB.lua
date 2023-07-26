@@ -1,7 +1,6 @@
-
-local ItemDB = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local i = function(itemID, spellID)
-	ItemDB[itemID] = { ["mountID"] = spellID, ["ignoreBonus"] = true };
+	Items[itemID] = { ["mountID"] = spellID, ["ignoreBonus"] = true };
 end
 
 -- If the mount is obtained from an item, use i(itemID, mountID);

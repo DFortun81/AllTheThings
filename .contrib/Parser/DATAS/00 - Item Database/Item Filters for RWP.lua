@@ -1,5 +1,5 @@
 -- #if ANYCLASSIC
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 
 -- These were exported by Parser!
 -- Classic was exported for Wrath Classic, though it might be a good idea to retain one set per expansion after.

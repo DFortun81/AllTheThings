@@ -1,4 +1,4 @@
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local ProfessionID = COOKING;
 local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 	if Items[itemID] then

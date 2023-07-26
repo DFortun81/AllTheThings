@@ -1,7 +1,7 @@
 -- TODO: remove this file once all recipes are added to profession-specific DBs
 
 
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local ProfessionID;
 local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 	if Items[itemID] then

@@ -1,5 +1,5 @@
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local Recipes = root(ROOTS.RecipeDB);
 local iq = function(itemID, questID, classID, raceID)
 	if itemID ~= 0 then

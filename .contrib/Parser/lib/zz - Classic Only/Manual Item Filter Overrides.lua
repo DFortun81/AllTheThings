@@ -1,11 +1,11 @@
-local itemDB = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local i = function(itemID, filterID)
-	itemDB[itemID] = { ["f"] = filterID };
+	Items[itemID] = { ["f"] = filterID };
 	return o;
 end
 
 -- Expert Cook
-itemDB[16072] = { ["spellID"] = 0 };	-- Temporarily do not have a fix.
+Items[16072] = { ["spellID"] = 0 };	-- Temporarily do not have a fix.
 
 -- Axes
 i(9608, 21);	-- Shoni's Disarming Tool
