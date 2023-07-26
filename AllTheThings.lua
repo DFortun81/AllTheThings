@@ -14823,6 +14823,72 @@ local function CreateMinimapButton()
 	return button;
 end
 app.CreateMinimapButton = CreateMinimapButton;
+local function CreateWorldMapButton()
+		
+		local size = app.Settings:GetTooltipSetting("MinimapSize");
+		local button = CreateFrame("BUTTON", app:GetName() .. "-WorldMap", WorldMapFrame.BorderFrame);
+		button:SetPoint("TOPRIGHT", -WorldMapFrame.questLogWidth - 5, -103);
+		button:SetFrameStrata("HIGH");
+		button:EnableMouse(true);
+		button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+		button:SetSize(size, size);
+	
+		-- Create the Button Texture
+		local texture = button:CreateTexture(nil, "BACKGROUND");
+		texture:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256);
+		texture:SetPoint("CENTER", 0, 0);
+		texture:SetAllPoints();
+		button.texture = texture;
+
+		-- Create the Button Texture
+		local oldtexture = button:CreateTexture(nil, "BACKGROUND");
+		oldtexture:SetPoint("CENTER", 1, 0);
+		oldtexture:SetTexture(L["LOGO_SMALL"]);
+		oldtexture:SetSize(21, 21);
+		oldtexture:SetTexCoord(0.1,0.9,0.1,0.9);
+		button.oldtexture = oldtexture;
+
+		-- Create the Button Tracking Border
+		local border = button:CreateTexture(nil, "BORDER");
+		border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder");
+		border:SetPoint("CENTER", 12, -12);
+		border:SetSize(56, 56);
+		button.border = border;
+		button.UpdateStyle = function(self)
+			if app.Settings:GetTooltipSetting("MinimapStyle") then
+				self:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight", "ADD");
+				self:GetHighlightTexture():SetTexCoord(0,1,0,1);
+				self:GetHighlightTexture():SetAlpha(1);
+				self.texture:Hide();
+				self.oldtexture:Show();
+				self.border:Show();
+			else
+				self:SetATTHighlightSprite("epic_36x36", 297, 215, 36, 36, 512, 256):SetAlpha(0.2);
+				self.texture:Show();
+				self.oldtexture:Hide();
+				self.border:Hide();
+			end
+		end
+		button:UpdateStyle();
+	
+		button:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+			GameTooltip:ClearLines();
+			GameTooltip:AddLine(L["OPEN_MINILIST_FOR"] .. C_Map_GetMapInfo(WorldMapFrame:GetMapID()).name);
+			GameTooltip:Show();
+		end);
+		button:SetScript("OnLeave", function()
+			GameTooltip:Hide();
+			GameTooltip:ClearLines();
+		end);
+		button:SetScript("OnClick", function()
+			app:GetWindow("CurrentInstance"):SetMapID(WorldMapFrame:GetMapID());
+		end);
+		button:Show();
+		return button;
+end
+app.CreateWorldMapButton = CreateWorldMapButton;
+
 function app:CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForChat(group, 1)

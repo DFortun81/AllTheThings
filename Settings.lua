@@ -226,6 +226,10 @@ settings.Initialize = function(self)
 	elseif app.Minimap then
 		app.Minimap:Hide()
 	end
+
+	if not app.WorldMap then app.WorldMap = app.CreateWorldMapButton() end
+	app.WorldMap:Show()
+
 	self:UpdateMode()
 
 	if self:GetTooltipSetting("Auto:MainList") then

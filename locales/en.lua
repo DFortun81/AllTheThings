@@ -136,6 +136,7 @@ app.L = {
 	["DIFF_COMPLETED_2"] = " instead.";
 	["MINI_LIST"] = "Mini List";
 	["MINI_LIST_DESC"] = "This list contains the relevant information for your current zone, which cannot be found in the ATT database";
+	["OPEN_MINILIST_FOR"] = "Open mini list for ";
 	["UPDATE_LOCATION_NOW"] = "Update Location Now";
 	["UPDATE_LOCATION_NOW_DESC"] = "If you wish to forcibly refresh the data to your current Map, click this button now!";
 	["PERSONAL_LOOT_DESC"] = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.\n\nClick twice to create a group automatically if you're by yourself.";
