@@ -1277,26 +1277,27 @@ end");
             public static void ExportAutoItemSources(string directory)
             {
                 var sourcesDir = Path.Combine(directory, "00 - Item Database", "Source IDs");
-                var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
-
-                foreach (string sourceFile in Directory.EnumerateFiles(sourcesDir, "*.lua"))
+                if (Directory.Exists(sourcesDir))
                 {
-                    if (sourceFile != filename)
+                    var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
+                    foreach (string sourceFile in Directory.EnumerateFiles(sourcesDir, "*.lua"))
                     {
-                        File.Delete(sourceFile);
-                        //File.Move(sourceFile, sourceFile + ".old");
+                        if (sourceFile != filename)
+                        {
+                            File.Delete(sourceFile);
+                        }
                     }
+
+                    StringBuilder data = new StringBuilder(10000);
+                    data.AppendLine("--   WARNING: This file is dynamically generated   --");
+                    data.Append("root(\"Items.SOURCES\",");
+                    ATT.Export.AddTableNewLines = true;
+                    data.AppendLine(ATT.Export.ExportCompressedLua(Items.AllItemSourceIDs).ToString());
+                    data.Append(");");
+
+                    string content = data.ToString();
+                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
                 }
-
-                StringBuilder data = new StringBuilder(10000);
-                data.AppendLine("--   WARNING: This file is dynamically generated   --");
-                data.Append("root(\"Items.SOURCES\",");
-                ATT.Export.AddTableNewLines = true;
-                data.AppendLine(ATT.Export.ExportCompressedLua(Items.AllItemSourceIDs).ToString());
-                data.Append(");");
-
-                string content = data.ToString();
-                if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
             }
             #endregion
 
