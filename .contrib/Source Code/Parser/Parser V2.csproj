@@ -43,7 +43,7 @@
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Classic|x86'">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2801 - Vanilla%29|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
     <DefineConstants>TRACE;CLASSIC;CRIEVE;ANYCLASSIC</DefineConstants>
@@ -54,7 +54,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TBC|x86'">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2802 - The Burning Crusade%29|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
     <DefineConstants>TRACE;TBC;CRIEVE;ANYCLASSIC</DefineConstants>
@@ -77,7 +77,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Wrath|x86'">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2803 - Wrath of the Lich King%29|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
     <DefineConstants>TRACE;WRATH;CRIEVE;ANYCLASSIC</DefineConstants>
@@ -88,10 +88,21 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'CATA|x86' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2804 - Cataclysm%29|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
     <DefineConstants>TRACE;CATA;CRIEVE;ANYCLASSIC</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2810 - Dragonflight%29|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
+    <DefineConstants>TRACE;DF;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -134,47 +145,47 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <Target Name="RenameClassicEXE" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Classic.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
   <Target Name="RenameRetailExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Retail'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Retail.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <Target Name="RenameTBCExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'TBC'">
+  <Target Name="RenameClassicEXE" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2801 - Vanilla%29'">
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Classic.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
+  </Target>
+  <Target Name="RenameTBCExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2802 - The Burning Crusade%29'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for TBC.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <Target Name="RenameWRATHExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'WRATH'">
+  <Target Name="RenameWRATHExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2803 - Wrath of the Lich King%29'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Wrath.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <Target Name="RenameCATAExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'CATA'">
+  <Target Name="RenameCATAExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2804 - Cataclysm%29'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Cata.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <Target Name="RenameMOPExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'MOP'">
+  <Target Name="RenameMOPExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Mists of Pandaria%29'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for MOP.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <Target Name="RenameWODExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'WOD'">
+  <Target Name="RenameWODExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Warlords of Draenor%29'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for WOD.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <Target Name="RenameLEGIONExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'LEGION'">
+  <Target Name="RenameLEGIONExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Legion%29'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Legion.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <Target Name="RenameBFAExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'BFA'">
+  <Target Name="RenameBFAExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Battle for Azeroth%29'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for BFA.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <Target Name="RenameSHADOWLANDSExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'SHADOWLANDS'">
+  <Target Name="RenameSHADOWLANDSExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Shadowlands%29'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Shadowlands.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <Target Name="RenameDRAGONFLIGHTExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'DRAGONFLIGHT'">
+  <Target Name="RenameDRAGONFLIGHTExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Dragonflight%29'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Dragonflight.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>

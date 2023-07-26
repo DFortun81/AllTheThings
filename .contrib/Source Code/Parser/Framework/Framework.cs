@@ -95,7 +95,7 @@ namespace ATT
             { "UNKNOWN", new int[] { 0, 0, 0, 0 } },        // Unknown, invalid data.
             { "CLASSIC", new int[] { 1, 0, 0, 22248 } },    // NOTE: Values for WoW-Classic
             { "TBC", new int[] { 2, 0, 1, 22248 } },        // NOTE: Values for TBC-Classic
-            { "WRATH", new int[] { 3, 0, 2, 9056 } },
+            { "WRATH", new int[] { 3, 0, 2, 9056 } },       // NOTE: Values for Wrath-Classic
             { "CATA", new int[] { 4, 0, 1, 13164 } },
             { "MOP", new int[] { 5, 0, 4, 16015 } },
             { "WOD", new int[] { 6, 0, 2, 18764 } },
@@ -116,7 +116,7 @@ namespace ATT
             { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },    // Unknown, invalid data.
             { "CLASSIC", new int[] { 1, 13, 7, 22248 } },   // NOTE: Values for WoW-Classic
             { "TBC", new int[] { 2, 5, 4, 22248 } },        // NOTE: Values for TBC-Classic
-            { "WRATH", new int[] { 3, 4, 5, 22248 } },
+            { "WRATH", new int[] { 3, 4, 5, 22248 } },      // NOTE: Values for Wrath-Classic
             { "CATA", new int[] { 4, 3, 4, 15595 } },
             { "MOP", new int[] { 5, 4, 8, 18224 } },
             { "WOD", new int[] { 6, 2, 4, 21345 } },
@@ -4447,10 +4447,10 @@ namespace ATT
         public static void Export()
         {
 #if ANYCLASSIC
-            // We want Classic WRATH, TBC, and Classic builds of ATT to build the database to the ATT-Classic folder.
+            // We want all versions of Classic ATT to build the database to the ATT-Classic folder.
             string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
 
-#if DRAGONFLIGHT
+#if DF
             string dbRootFolder = "Dragonflight/";
 #elif SHADOWLANDS
             string dbRootFolder = "Shadowlands/";
