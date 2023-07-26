@@ -19,6 +19,12 @@ local RemappedEventToMapID = {
 	[376] = 1952,	-- Terrokar Forest
 };
 
+-- Event ID Remapping by Region
+if GetCVar("portal") == "EU" then
+	local remapping = L.EVENT_REMAPPING;
+	remapping[616] = 1263;	-- Legion Timewalking Event is different in EU.
+end
+
 -- Event Cache
 -- Determine if the Calendar is implemented or not.
 local isCalendarAvailable = C_Calendar and GetCategoryInfo and GetCategoryInfo(92) ~= "";
