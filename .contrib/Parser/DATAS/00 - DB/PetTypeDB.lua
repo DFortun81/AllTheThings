@@ -1,3 +1,4 @@
+-- #if BEFORE 5.0.4
 -- NOTE: This database is for manually assigning the petTypeID values to items.
 -- This will only be necessary until the Pet Journal is implemented in WoW's API.
 root("ItemSpeciesDB", {
@@ -2998,3 +2999,4 @@ root("ItemSpeciesDB", {
 		["petTypeID"] = 1,
 	},
 });
+-- #endif
