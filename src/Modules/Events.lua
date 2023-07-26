@@ -20,9 +20,9 @@ local RemappedEventToMapID = {
 };
 
 -- Event ID Remapping by Region
+local remapping = L.EVENT_REMAPPING;
 if GetCVar("portal") == "EU" then
-	local remapping = L.EVENT_REMAPPING;
-	remapping[616] = 1263;	-- Legion Timewalking Event is different in EU.
+	remapping[1265] = 1263;	-- Legion Timewalking Event is different in EU.
 end
 
 -- Event Cache
@@ -84,7 +84,7 @@ local function GetEventCache()
 						if event then -- If this is nil, then attempting to index it on the same line will toss an error.
 							if event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
 								local eventID = event.eventID;
-								local remappedID = L.EVENT_REMAPPING[eventID] or eventID;
+								local remappedID = remapping[eventID] or eventID;
 								if remappedID then
 									local t = cache[remappedID];
 									if not t then
