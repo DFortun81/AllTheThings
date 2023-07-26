@@ -189,7 +189,19 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 93523 },	-- Namha Moonwater
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
-				i(137952),	-- Pattern: Stonehide Leather Barding (RECIPE!)
+				r(196648),	-- Stonehide Leather Barding (RECIPE!)
+				r(196469, {["u"]=TRAINING}),	-- Stonehide Caparison
+				r(196467, {["u"]=TRAINING}),	-- Stonehide Champron
+				r(196468, {["u"]=TRAINING}),	-- Stonehide Crinet
+				r(196397, {["u"]=TRAINING}),	-- Stonehide Leather Barding
+				r(208615, {["u"]=TRAINING}),	-- Stonehide Leather Strip
+				r(208596, {["u"]=TRAINING}),	-- Tanned Stonehide Pelt
+				i(130887),	-- Stonehide Leather Barding (QI!)
+				i(130896),	-- Stonehide Leather Caparison (QI!)
+				i(130894),	-- Stonehide Leather Champron (QI!)
+				i(130895),	-- Stonehide Leather Crinet (QI!)
+				i(130875),	-- Stonehide Leather Strip (QI!)
+				i(136539),	-- Tanned Stonehide Leather (QI!)
 			},
 		}),
 		q(40200, {	-- Battle Bonds (A)
@@ -212,7 +224,17 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 93523 },	-- Namha Moonwater
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
-				i(137933),	-- Pattern: Leather Pet Bed (RECIPE!)
+				r(194776),	-- Leather Pet Bed (RECIPE!)
+				r(196375, {["u"]=TRAINING}),	-- Shaved Stonehide Pelt
+				r(196442, {["u"]=TRAINING}),	-- Stonehide Leather Bed
+				r(196382, {["u"]=TRAINING}),	-- Stonehide Leather Lining
+				r(196385, {["u"]=TRAINING}),	-- Stonehide Leather Strip
+				r(196379, {["u"]=TRAINING}),	-- Tanned Stonehide Leather
+				i(130869),	-- Shaved Stonehide Pelt (QI!)
+				i(130090),	-- Stonehide Leather Bed (QI!)
+				i(130872),	-- Stonehide Leather Lining (QI!)
+				i(130875),	-- Stonehide Leather Strip (QI!)
+				i(130870),	-- Tanned Stonehide Leather (QI!)
 			},
 		}),
 		q(40180,  {	-- Mail Men
@@ -230,8 +252,8 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 93522 },	-- Diane Cannings
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
-				recipe(194696),	-- Warhide Belt [Rank 1] (RECIPE!)
-				recipe(194698),	-- Warhide Pants [Rank 1] (RECIPE!)
+				r(194696),	-- Warhide Belt [Rank 1] (RECIPE!)
+				r(194698),	-- Warhide Pants [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40178,  {	-- Vestment Opportunity
@@ -239,7 +261,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 93522 },	-- Diane Cannings
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
-				recipe(194702),	-- Warhide Jerkin [Rank 1] (RECIPE!)
+				r(194702),	-- Warhide Jerkin [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40181,  {	-- Black Rook Bandit
@@ -247,8 +269,8 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98931 },	-- Thanid Glowergold
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
-				recipe(194736),	-- Battlebound Girdle [Rank 1] (RECIPE!)
-				recipe(194738),	-- Battlebound Leggings [Rank 1] (RECIPE!)
+				r(194736),	-- Battlebound Girdle [Rank 1] (RECIPE!)
+				r(194738),	-- Battlebound Leggings [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40182,  {	-- Too Good To Pass Up
@@ -256,7 +278,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98931 },	-- Thanid Glowergold
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
-				recipe(194742),	-- Battlebound Hauberk [Rank 1] (RECIPE!)
+				r(194742),	-- Battlebound Hauberk [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40176,  {	-- From Head to Toe
@@ -268,8 +290,18 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 93523 },	-- Namha Moonwater
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
-				i(132124),	-- Pattern: Battlebound Treads
-				recipe(194701),	-- Recipe: Warhide Footpads
+				r(194741),	-- Battlebound Treads [Rank 1] (RECIPE!)
+				r(194701),	-- Warhide Footpads [Rank 1] (RECIPE!)
+				r(196375, {["u"]=TRAINING}),	-- Shaved Stonehide Pelt
+				r(196384, {["u"]=TRAINING}),	-- Stonehide Boot Exterior
+				r(196382, {["u"]=TRAINING}),	-- Stonehide Leather Lining
+				r(196427, {["u"]=TRAINING}),	-- Sturdy Stonehide Boots
+				r(196379, {["u"]=TRAINING}),	-- Tanned Stonehide Leather
+				i(130869),	-- Shaved Stonehide Pelt (QI!)
+				i(130873),	-- Stonehide Boot Exterior (QI!)
+				i(130872),	-- Stonehide Leather Lining (QI!)
+				i(129964),	-- Sturdy Stonehide Boots (QI!)
+				i(130870),	-- Tanned Stonehide Leather (QI!)
 			},
 		}),
 		q(40187,  {	-- Links in the Chain
@@ -287,8 +319,8 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 			["coord"] = { 36.8, 78.2, 750 },
 			["g"] = {
-				recipe(194700),	-- Recipe: Warhide Gloves [Rank 1] (RECIPE!)
-				recipe(194695),	-- Recipe: Warhide Bindings [Rank 1] (RECIPE!)
+				r(194695),	-- Warhide Bindings [Rank 1] (RECIPE!)
+				r(194700),	-- Warhide Gloves [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40185, {	-- Shoulder the Burden
@@ -296,7 +328,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 			["coord"] = { 36.8, 78.2, 750 },
 			["g"] = {
-				recipe(194697),	-- Recipe: Warhide Shoulderguard [Rank 1] (RECIPE!)
+				r(194697),	-- Warhide Shoulderguard [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40190,  {	-- Hardening the Hide
@@ -313,7 +345,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 			["coord"] = { 36.8, 78.2, 750 },
 			["g"] = {
-				i(137875),	-- Pattern: Warhide Jerkin [Rank 2] (RECIPE!)
+				r(194710),	-- Warhide Jerkin [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40192, {	-- Claw of the Land
@@ -321,8 +353,8 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 			["coord"] = { 36.8, 78.2, 750 },
 			["g"] = {
-				i(137869),	-- Pattern: Warhide Belt [Rank 2] (RECIPE!)
-				i(137868),	-- Pattern: Warhide Bindings [Rank 2] (RECIPE!)
+				r(194704),	-- Warhide Belt [Rank 2] (RECIPE!)
+				r(194703),	-- Warhide Bindings [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40188, {	-- Best Served Cold
@@ -330,8 +362,8 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98964 },	-- Celea
 			["coord"] = { 47.4, 44.2, AZSUNA },
 			["g"] = {
-				recipe(194735),	-- Battlebound Armbands [Rank 1] (RECIPE!)
-				recipe(194740),	-- Battlebound Grips [Rank 1] (RECIPE!)
+				r(194735),	-- Battlebound Armbands [Rank 1] (RECIPE!)
+				r(194740),	-- Battlebound Grips [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40189, {	-- Naga Know-How
@@ -339,7 +371,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98964 },	-- Celea
 			["coord"] = { 47.4, 44.2, AZSUNA },
 			["g"] = {
-				i(137902),	-- Pattern: Battlebound Spaulders [Rank 2] (RECIPE!)
+				r(194737),	-- Battlebound Spaulders [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40193,  {	-- Getting the Kinks Out
@@ -353,8 +385,8 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98964 },	-- Celea
 			["coord"] = { 47.4, 44.2, AZSUNA },
 			["g"] = {
-				i(137900),	-- Pattern: Battlebound Armbands [Rank 2] (RECIPE!)
-				i(137901),	-- Pattern: Battlebound Girdle [Rank 2] (RECIPE!)
+				r(194743),	-- Battlebound Armbands [Rank 2] (RECIPE!)
+				r(194744),	-- Battlebound Girdle [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40195, {	-- A Daring Rescue
@@ -367,7 +399,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 99689 },	-- Taldranis
 			["coord"] = { 51.6, 58.0, AZSUNA },
 			["g"] = {
-				i(137907),	-- Pattern: Battlebound Hauberk [Rank 2] (RECIPE!)
+				r(194750),	-- Battlebound Hauberk [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40198, {	-- Rats!
@@ -378,8 +410,8 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 93522 },	-- Diane Cannings
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
-				i(137874),	-- Pattern: Warhide Footpads [Rank 2] (RECIPE!)
-				i(137870),	-- Pattern: Warhide Shoulderguard [Rank 2] (RECIPE!)
+				r(194709),	-- Warhide Footpads [Rank 2] (RECIPE!)
+				r(194705),	-- Warhide Shoulderguard [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40199,  {	-- Leather Legwork
@@ -387,8 +419,8 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98931 },	-- Thanid Glowergold
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
-				i(137902),	-- Pattern: Battlebound Spaulders [Rank 2] (RECIPE!)
-				i(137906),	-- Pattern: Battlebound Treads [Rank 2] (RECIPE!)
+				r(194745),	-- Battlebound Spaulders [Rank 2] (RECIPE!)
+				r(194749),	-- Battlebound Treads [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40202,  {	-- The Final Lessons
@@ -401,7 +433,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 			["coord"] = { 36.8, 78.2, 750 },
 			["g"] = {
-				i(137873),	-- Pattern: Warhide Gloves [Rank 2] (RECIPE!)
+				r(194708),	-- Warhide Gloves [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40205, {	-- Respect for the Past
@@ -409,7 +441,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 			["coord"] = { 36.8, 78.2, 750 },
 			["g"] = {
-				i(137871),	-- Pattern: Warhide Pants [Rank 2] (RECIPE!)
+				r(194706),	-- Warhide Pants [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40203, {	-- Strength of the Past
@@ -417,7 +449,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 			["coord"] = { 36.8, 78.2, 750 },
 			["g"] = {
-				i(137872),	-- Pattern: Warhide Mask [Rank 2] (RECIPE!)
+				r(194707),	-- Warhide Mask [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40415, {	-- Well Spent Time
@@ -440,7 +472,7 @@ profession(LEATHERWORKING, {
 			["coord"] = { 47.4, 44.2, AZSUNA },
 			["maps"] = { 713 },	-- Eye of Azshara
 			["g"] = {
-				i(137904),	-- Pattern: Battlebound Warhelm [Rank 2] (RECIPE!)
+				r(194747),	-- Battlebound Warhelm [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40207, {	-- Scales of the Arcane
@@ -448,7 +480,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98964 },	-- Celea
 			["coord"] = { 47.4, 44.2, AZSUNA },
 			["g"] = {
-				i(137905),	-- Pattern: Battlebound Grips [Rank 2] (RECIPE!)
+				r(194748),	-- Battlebound Grips [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40209, {	-- Scales of the Earth
@@ -456,7 +488,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98964 },	-- Celea
 			["coord"] = { 47.4, 44.2, AZSUNA },
 			["g"] = {
-				i(137903),	-- Pattern: Battlebound Leggings [Rank 2] (RECIPE!)
+				r(194746),	-- Battlebound Leggings [Rank 2] (RECIPE!)
 			},
 		}),
 		q(40210, {	-- Time Well Spent
@@ -492,8 +524,14 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 			["coord"] = { 26.6, 71.6, SURAMAR },
 			["g"] = {
-				i(140636),	-- Pattern: Dreadleather Bindings [Rank 1] (RECIPE!)
-				i(140644),	-- Pattern: Gravenscale Armbands [Rank 1] (RECIPE!)
+				r(194787),	-- Dreadleather Bindings [Rank 1] (RECIPE!)
+				r(194796),	-- Gravenscale Armbands [Rank 1] (RECIPE!)
+				r(196457, {["u"]=TRAINING}),	-- Fel Leather Cuff
+				r(196395, {["u"]=TRAINING}),	-- Fel Leather Strap
+				r(196456, {["u"]=TRAINING}),	-- Felhide Bracers
+				i(130937),	-- Fel Leather Cuff (QI!)
+				i(130880),	-- Fel Leather Strap (QI!)
+				i(130130),	-- Felhide Bracers (QI!)
 			},
 		}),
 		q(40215,  {	-- Mounting Made Easy
@@ -501,7 +539,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "n", 93523 },	-- Namha Moonwater
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
-				i(141850),	-- Pattern: Elderhorn Riding Harness (RECIPE!)
+				r(194780),	-- Elderhorn Riding Harness (RECIPE!)
 			},
 		}),
 	})),
