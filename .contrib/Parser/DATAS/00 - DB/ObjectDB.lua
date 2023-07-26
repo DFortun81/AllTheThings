@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -----------------------------------------------------
-_.ObjectDB = {
+root("ObjectDB", {
 	[31] = {
 		readable = "Old Lion Statue",
 		icon = "Interface/Icons/INV_Mount_AllianceLionG",
@@ -45269,4 +45269,4 @@ _.ObjectDB = {
 			cn = "符文",
 		},
 	},
-};
+});
