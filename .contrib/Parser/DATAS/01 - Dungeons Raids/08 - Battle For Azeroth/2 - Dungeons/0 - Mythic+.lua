@@ -86,6 +86,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 },
 			},{
 				ach(13448, {	-- Battle for Azeroth Keystone Conqueror: Season Two
+					-- #if BEFORE 8.2.0
 					crit(1),	-- Atal'Dazar
 					crit(2),	-- Freehold
 					crit(3),	-- Kings' Rest
@@ -96,8 +97,10 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					crit(8),	-- The Underrot
 					crit(9),	-- Tol Dagor
 					crit(10),	-- Waycrest Manor
+					-- #endif
 				}),
 				ach(13449, {	-- Battle for Azeroth Keystone Master: Season Two
+					-- #if BEFORE 8.2.0
 					crit(1),	-- Atal'Dazar
 					crit(2),	-- Freehold
 					crit(3),	-- Kings' Rest
@@ -108,6 +111,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					crit(8),	-- The Underrot
 					crit(9),	-- Tol Dagor
 					crit(10),	-- Waycrest Manor
+					-- #endif
 				}),
 			})),
 			header(HEADERS.Achievement, SEASON_BEGUILING, bubbleDownSelf({

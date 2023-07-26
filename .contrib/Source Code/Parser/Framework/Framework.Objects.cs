@@ -1244,7 +1244,7 @@ namespace ATT
                 if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
             }
 
-            public static void ExportAutoLocale(string directory)
+            public static void ExportAutoLocale(string filename)
             {
                 var AllLocaleTypes = new SortedDictionary<string, SortedDictionary<long, object>>();
 
@@ -1257,21 +1257,23 @@ namespace ATT
                     }
                 }
 
-                var filename = Path.Combine(directory, "../locales", "en_auto.lua");
-                StringBuilder locale = new StringBuilder(10000);
-                locale.AppendLine("--   WARNING: This file is dynamically generated   --");
-                locale.AppendLine("local appName, app = ...;");
-                locale.Append("local keys = ");
-                ATT.Export.AddTableNewLines = true;
-                locale.AppendLine(ATT.Export.ExportCompressedLua(AllLocaleTypes).ToString());
-                locale.AppendLine(@"
+                if (AllLocaleTypes.Any())
+                {
+                    StringBuilder locale = new StringBuilder(10000);
+                    locale.AppendLine("--   WARNING: This file is dynamically generated   --");
+                    locale.AppendLine("local appName, app = ...;");
+                    locale.Append("local keys = ");
+                    ATT.Export.AddTableNewLines = true;
+                    locale.AppendLine(ATT.Export.ExportCompressedLua(AllLocaleTypes).ToString());
+                    locale.AppendLine(@"
 local L = app.L;
 for k,t in pairs(keys) do
     L[k] = t;
 end");
 
-                string content = locale.ToString();
-                if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                    string content = locale.ToString();
+                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                }
             }
 
             public static void ExportAutoItemSources(string directory)

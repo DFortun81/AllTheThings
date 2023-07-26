@@ -5281,12 +5281,10 @@ namespace ATT
                 Objects.Export(outputFolder.FullName);
                 IncludeRawNewlines = true;
 
-#if RETAIL
                 CurrentParseStage = ParseStage.ExportAutoSources;
                 Objects.ExportAutoItemSources(Config["root-data"] ?? "./DATAS");
                 CurrentParseStage = ParseStage.ExportAutoLocale;
-                Objects.ExportAutoLocale(outputFolder.FullName);
-#endif
+                Objects.ExportAutoLocale(Path.Combine(addonRootFolder, $"db/{dbRootFolder}en_auto.lua"));
             }
         }
     }

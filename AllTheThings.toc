@@ -33,7 +33,7 @@ db\CategoryDB.lua
 db\ObjectDB.lua
 db\RaceDB.lua
 db\ReagentsDB.lua
-locales\en_auto.lua
+db\en_auto.lua
 locales\es.lua
 locales\de.lua
 locales\fr.lua
