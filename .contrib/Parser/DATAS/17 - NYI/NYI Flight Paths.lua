@@ -71,7 +71,9 @@ root(ROOTS.NeverImplemented, {
 				fp(146, {["description"] = "Quest - Netherstorm - Stealth Flight - End"}),
 				fp(147, {["description"] = "Hellfire Peninsula - Force Camp Beach Head"}),
 				fp(148, {["description"] = "Shatter Point, Hellfire Peninsula (Beach Assault)"}),
+				-- #if NOT ANYCLASSIC
 				fp(149, {["description"] = "Shatter Point, Hellfire Peninsula"}),
+				-- #endif
 				fp(152, {["description"] = "Quest - Netherstorm - Manaforge Ultris (Start)"}),
 				fp(153, {["description"] = "Quest - Netherstorm - Manaforge Ultris (End)"}),
 				fp(154, {["description"] = "Quest - Netherstorm - Manaforge Ultris (Second Pass) Start"}),
