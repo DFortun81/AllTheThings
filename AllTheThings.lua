@@ -2310,30 +2310,47 @@ end
 
 -- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
 (function()
-local NPCTitlesFromID = {};
-local NPCHarvester = CreateFrame("GameTooltip", "AllTheThingsNPCHarvester", UIParent, "GameTooltipTemplate");
-app.NPCNameFromID = setmetatable({}, { __index = function(t, id)
-	if not id then return; end
-	id = tonumber(id);
-	if id > 0 then
-		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE");
-		NPCHarvester:SetHyperlink(sformat("unit:Creature-0-0-0-0-%d-0000000000",id));
-		local title = AllTheThingsNPCHarvesterTextLeft1:GetText();
-		if title and NPCHarvester:NumLines() > 2 then
-			NPCTitlesFromID[id] = AllTheThingsNPCHarvesterTextLeft2:GetText();
+local NPCNameFromID, NPCTitlesFromID = {},{};
+local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
+if C_TooltipInfo_GetHyperlink then
+	setmetatable(NPCNameFromID, { __index = function(t, id)
+		if id > 0 then
+			local tooltipData = C_TooltipInfo_GetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id));
+			if tooltipData then
+				local title = tooltipData.lines[1].leftText;
+				if title and #tooltipData.lines > 2 then
+					NPCTitlesFromID[id] = tooltipData.lines[2].leftText;
+				end
+				if title and title ~= RETRIEVING_DATA then
+					t[id] = title;
+					return title;
+				end
+			end
+		else
+			return L.HEADER_NAMES[id];
 		end
-		NPCHarvester:Hide();
-		if not IsRetrieving(title) then
-			t[id] = title;
-			return title;
+	end});
+else
+	local ATTCNPCHarvester = CreateFrame("GameTooltip", "ATTCNPCHarvester", UIParent, "GameTooltipTemplate");
+	setmetatable(NPCNameFromID, { __index = function(t, id)
+		if id > 0 then
+			ATTCNPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
+			ATTCNPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
+			local title = ATTCNPCHarvesterTextLeft1:GetText();
+			if title and ATTCNPCHarvester:NumLines() > 2 then
+				NPCTitlesFromID[id] = ATTCNPCHarvesterTextLeft2:GetText();
+			end
+			ATTCNPCHarvester:Hide();
+			if title and title ~= RETRIEVING_DATA then
+				t[id] = title;
+				return title;
+			end
+		else
+			return L.HEADER_NAMES[id];
 		end
-	else
-		local title = L["HEADER_NAMES"][id];
-		t[id] = title;
-		return title;
-	end
-	return RETRIEVING_DATA;
-end});
+	end});
+end
+app.NPCNameFromID = NPCNameFromID;
 app.NPCTitlesFromID = NPCTitlesFromID;
 end)();
 
