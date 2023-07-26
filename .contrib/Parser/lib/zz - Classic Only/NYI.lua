@@ -4,10 +4,6 @@
 -- Everything in this file hasn't been implemented yet.
 root("NeverImplemented", {
 	n(FLIGHT_PATHS, {
-		fp(84),	-- Plaguewood Tower, Eastern Plaguelands
-		fp(85),	-- Northpass Tower, Eastern Plaguelands
-		fp(86),	-- Eastwall Tower, Eastern Plaguelands
-		fp(87),	-- Crown Guard Tower, Eastern Plaguelands
 		-- #if AFTER TBC
 		fp(95),	-- Zangarmarsh - Quest - As the Crow Flies
 		fp(97),	-- Quest - Elekk Path to Kessel

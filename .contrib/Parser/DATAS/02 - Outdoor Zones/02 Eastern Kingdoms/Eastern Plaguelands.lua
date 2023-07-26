@@ -898,14 +898,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { DEATHKNIGHT },
 				}),
 				fp(87, {	-- Crown Guard Tower, Eastern Plaguelands
+					-- #if AFTER 4.0.3.13277
 					["cr"] = 44232,	-- Janice Myers <Flight Master>
 					["coord"] = { 34.8, 68.0, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					-- #else
+					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
+					["collectible"] = false,
+					-- #endif
 				}),
 				fp(86, {	-- Eastwall Tower, Eastern Plaguelands
+					-- #if AFTER 4.0.3.13277
 					["cr"] = 44230,	-- Richard Trueflight <Flight Master>
 					["coord"] = { 61.6, 43.8, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					-- #else
+					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
+					["collectible"] = false,
+					-- #endif
 				}),
 				fp(67, {	-- Light's Hope Chapel, Eastern Plaguelands
 					["cr"] = 12617,	-- Khaelyn Steelwing <Gryphon Master>
@@ -931,14 +939,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				fp(85, {	-- Northpass Tower, Eastern Plaguelands
+					-- #if AFTER 4.0.3.13277
 					["cr"] = 28621,	-- Grayson Ironwing <Flight Master>
 					["coord"] = { 51.2, 21.2, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					-- #else
+					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
+					["collectible"] = false,
+					-- #endif
 				}),
 				fp(84, {	-- Plaguewood Tower, Eastern Plaguelands
+					-- #if AFTER 4.0.3.13277
 					["cr"] = 44233,	-- William Kielar Jr. <Flight Master>
 					["coord"] = { 18.4, 27.4, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					-- #else
+					["cr"] = 17209,	-- William Kielar Jr. William Kielar <Spectral Gryphon Master>
+					-- #if AFTER WRATH
+					["coord"] = { 18.8, 26.6, EASTERN_PLAGUELANDS },
+					-- #else
+					["coord"] = { 22.2, 31.4, EASTERN_PLAGUELANDS },
+					-- #endif
+					["description"] = "If this tower is controlled by your faction, you can fly from this tower to the other towers your faction controls.",
+					["collectible"] = false,
+					-- #endif
 				}),
 				-- #if AFTER 4.0.3.13277
 				fp(383, {	-- Thondroril River, Eastern Plaguelands
