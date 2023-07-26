@@ -340,6 +340,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								ig(2114),	-- Snowy Robe	(Removed)
 								-- Leather
 								-- Mail
+								ig(93086),	-- Swashbuckling Vest (Never added)
 								-- Plate
 							},
 						}),
@@ -451,6 +452,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								ig(2280),	-- Kam's Walking Stick				(Removed)
 							}),
 							i(208109, {	-- Quantum Sword
+								i(8223),	-- Blade of the Basilisk 			(Removed)
 							}),
 							i(208122, {	-- Quantum Warglaives
 							}),
