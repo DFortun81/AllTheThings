@@ -5257,7 +5257,7 @@ namespace ATT
                         if (localizationForText.TryGetValue(localeKey, out data) && data.Any())
                         {
                             builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
-                            builder.AppendLine("a = _.ObjectNames;").AppendLine("for key,value in pairs({");
+                            builder.AppendLine("local a = _.ObjectNames;").AppendLine("for key,value in pairs({");
                             foreach (var key in keys)
                             {
                                 if (data.TryGetValue(key, out string name))
