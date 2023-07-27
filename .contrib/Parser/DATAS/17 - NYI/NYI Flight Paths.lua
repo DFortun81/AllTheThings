@@ -25,8 +25,10 @@ root(ROOTS.NeverImplemented, {
 				fp(54, {["description"] = "Transport, Feathermoon"}),
 				fp(59, {["description"] = "Dun Baldar, Alterac Valley"}),
 				fp(60, {["description"] = "Frostwolf Keep, Alterac Valley"}),
+				-- #if NOT ANYCLASSIC
 				fp(62, {["description"] = "Nighthaven, Moonglade"}),
 				fp(63, {["description"] = "Nighthaven, Moonglade"}),
+				-- #endif
 				fp(78, {["description"] = "Naxxramas"}),
 			}),
 		}),
