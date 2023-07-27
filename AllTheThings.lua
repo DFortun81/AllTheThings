@@ -1875,8 +1875,7 @@ local IgnoredQuests = setmetatable({}, {
 })
 PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-		local questRef = app.SearchForObject("questID", questID, "field");
-		questRef = (questRef and questRef[1]) or questRef;
+		local questRef = app.SearchForMergedObject("questID", questID, "field");
 		local questChange;
 		if new == true then
 			questChange = "accepted";
@@ -1892,7 +1891,7 @@ PrintQuestInfo = function(questID, new, info)
 		-- Users can manually set certain QuestIDs to be ignored because Blizzard decides to toggle them on and off constantly forever
 		if IgnoredQuests[questID] then return; end
 		local chatMsg;
-		if not questRef or GetRelativeValue(questRef, "_missing") then
+		if not questRef or questRef._missing then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
 			app:PlayReportSound();
 			-- Linkify the output
