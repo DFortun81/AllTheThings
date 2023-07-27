@@ -826,6 +826,7 @@ app.L = {
 		["Season "] = "S",
 		["Sanctum Upgrades %> "] = "",
 		[CLASS.." %> "] = "",
+		["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
 		["The Primalist Future"] = "Primalist Future",
 		["The Storm's Fury"] = "Storm's Fury",
 		["Zaralek Cavern Racing Completionist: Gold"] = "Racing: Gold",
