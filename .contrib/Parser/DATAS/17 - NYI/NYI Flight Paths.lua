@@ -11,7 +11,6 @@ root(ROOTS.NeverImplemented, {
 				fp(1, {["description"] = "Northshire Abbey"}),
 				fp(3, {["description"] = "Programmer Isle"}),
 				fp(9, {["description"] = "Booty Bay, Stranglethorn"}),
-				fp(14, {["description"] = "Southshore, Hillsbrad"}),
 				fp(15, {["description"] = "Eastern Plaguelands"}),
 				fp(24, {["description"] = "Generic, World Target 002"}),
 				fp(34, {["description"] = "Transport, Booty Bay"}),

@@ -150,14 +150,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 				}),
-				-- #if BEFORE 4.0.3
 				fp(14, {	-- Southshore, Hillsbrad
 					["cr"] = 2432,	-- Darla Harris <Gryphon Master>
 					["coord"] = { 49.4, 52.4, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "deleted 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- #endif
 				fp(670, {	-- Strahnbrad, Alterac Mountains
 					["cr"] = 47665,	-- Phillip Harding <Bat Handler>
 					["coord"] = { 58.2, 26.4, HILLSBRAD_FOOTHILLS },
