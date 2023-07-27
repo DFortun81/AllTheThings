@@ -32,3 +32,11 @@ api.IsRetrieving = function(s)
 		-- make sure regardless of conditional return we return a true here for consistency
 		and true;
 end
+-- Returns whether the provided string is empty or equals RETRIEVING_DATA which indicates the data is not yet loaded in the Client (not used for Items or in general)
+api.IsRetrievingData = function(s)
+	return (not s
+		or s == ""
+		or s == RETRIEVING_DATA)
+		-- make sure regardless of conditional return we return a true here for consistency
+		and true;
+end

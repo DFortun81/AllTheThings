@@ -2312,16 +2312,17 @@ end
 (function()
 local NPCNameFromID, NPCTitlesFromID = {},{};
 local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
+local IsRetrievingData = app.Modules.RetrievingData.IsRetrievingData;
 if C_TooltipInfo_GetHyperlink then
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		if id > 0 then
-			local tooltipData = C_TooltipInfo_GetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id));
+			local tooltipData = C_TooltipInfo_GetHyperlink(sformat("unit:Creature-0-0-0-0-%d-0000000000",id));
 			if tooltipData then
 				local title = tooltipData.lines[1].leftText;
 				if title and #tooltipData.lines > 2 then
 					NPCTitlesFromID[id] = tooltipData.lines[2].leftText;
 				end
-				if title and title ~= RETRIEVING_DATA then
+				if not IsRetrievingData(title) then
 					t[id] = title;
 					return title;
 				end
@@ -2335,13 +2336,13 @@ else
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		if id > 0 then
 			ATTCNPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
-			ATTCNPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
+			ATTCNPCHarvester:SetHyperlink(sformat("unit:Creature-0-0-0-0-%d-0000000000",id))
 			local title = ATTCNPCHarvesterTextLeft1:GetText();
 			if title and ATTCNPCHarvester:NumLines() > 2 then
 				NPCTitlesFromID[id] = ATTCNPCHarvesterTextLeft2:GetText();
 			end
 			ATTCNPCHarvester:Hide();
-			if title and title ~= RETRIEVING_DATA then
+			if not IsRetrievingData(title) then
 				t[id] = title;
 				return title;
 			end
@@ -15516,6 +15517,7 @@ local function SetRowData(self, row, data)
 		rowSummary:SetText(summary);
 		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
 		-- 2022-03-15 It seems as of recently that text with textures now render properly without the need for a manual adjustment. Will leave the logic in here until confirmed for others as well
+		-- 2023-07-25 The issue is caused due to ATT list scaling. With scaling other than 1 applied, the icons within the text shift relative to the number of icons
 		-- rowSummary:SetPoint("RIGHT", iconAdjust, 0);
 		rowSummary:SetPoint("RIGHT");
 		rowSummary:Show();
