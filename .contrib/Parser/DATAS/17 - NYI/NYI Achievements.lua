@@ -156,7 +156,6 @@ root(ROOTS.NeverImplemented, {
 				ach(752),	-- Deaths in Naxxramas NYI \\ Deaths in Naxxramas
 				ach(754),	-- Longest Arena winning streak
 				ach(755),	-- Longest Battleground winning streak NYI \\ Longest Battleground winning streak
-				ach(760),	-- Explore Alterac Mountains NYI \\ Explore Alterac Mountains
 				ach(788),	-- Number of groups formed NYI \\ Number of groups formed
 				ach(789),	-- Number of 40-player groups NYI \\ Number of 40-person groups
 				ach(790),	-- Number of 25-player groups NYI \\ Number of 25-person groups
@@ -201,7 +200,6 @@ root(ROOTS.NeverImplemented, {
 				ach(935),	-- Kel'Thuzad attempts
 				ach(936),	-- Kel'Thuzad kills
 				ach(954),	-- What is a Feat of Strength?
-				ach(970),	-- Tricks and Treats of Azeroth
 				ach(1016),	-- Plethora of Pets
 				ach(1018),	-- Pandemic of Pets
 				ach(1019),	-- Shop Smart. Shop Pet... Smart
@@ -229,14 +227,12 @@ root(ROOTS.NeverImplemented, {
 				ach(1156),	-- Test Pets Chared Criteria <NYI>
 				ach(1158),	-- Duel Identity <NYI>
 				ach(1163),	-- Hot Hot Hot Streak <NYI>
-				ach(1187),	-- The Keymaster
 				ach(1202),	-- Weapon skills at maximum skill \\ Weapon skills at maximum NYI
 				ach(1227),	-- Death in the Nexus NYI
 				ach(1228),	-- Death in Utgarde Keep NYI
 				ach(1230),	-- Prince Keleseth kills (Utgarde Keep)
 				ach(1253),	-- Raised as a ghoul
 				ach(1256),	-- Solo Onyxia
-				ach(1274),	-- Loremaster of Outland \\ Champion of Outland
 				ach(1290),	-- Who Sharted?
 				ach(1316),	-- $gOmar:Omara;'s Test Localization Achievement <PH><NYI>
 				ach(1338),	-- Total killing blows
@@ -247,15 +243,12 @@ root(ROOTS.NeverImplemented, {
 				ach(1500),	-- Deaths in Strand of the Ancients
 				ach(1520),	-- Items pickpocketed
 				ach(1551),	-- World Honorable Kills
-				ach(1681),	-- The Loremaster
-				ach(1682),	-- The Loremaster
 				ach(1716),	-- Battleground with the most Killing Blows
 				ach(1719),	-- Battleground with the most Honorable Kills
 				ach(1731),	-- Industrial Warfare
 				ach(1739),	-- Against the Odds
 				ach(1759),	-- Lich King 25-player different bosses defeated \\ Lich King 25-player different bosses killed
 				ach(1771),	-- Lich King 10-player different bosses defeated \\ Lich King 10-player different bosses killed
-				ach(1784),	-- Hail to the Chef
 				ach(1818),	-- Emblem of Heroism
 				ach(1819),	-- Emblem of Valor
 				ach(1820),	-- 25 Emblems of Heroism
@@ -277,7 +270,6 @@ root(ROOTS.NeverImplemented, {
 				ach(2219),	-- Total deaths in 5-player Heroic dungeons \\ Total deaths in 5-player heroic dungeons
 				ach(2396),	-- Battleground played the most
 				ach(2397),	-- Battleground won the most
-				ach(2797),	-- Noble Gardener
 				ach(2896),	-- Emblem of Conquest
 				ach(2897),	-- 25 Emblems of Conquest
 				ach(2898),	-- 50 Emblems of Conquest
@@ -322,19 +314,9 @@ root(ROOTS.NeverImplemented, {
 				ach(3410),	-- Yogg-Saron + 1 Keeper attempts (Ulduar 25 player) (TRACKING ONLY)
 				ach(3411),	-- Yogg-Saron + 0 Keepers attempts (Ulduar 25 player) (TRACKING ONLY)
 				ach(3516),	-- Deaths in Ulduar
-				ach(3656),	-- Pilgrim
-				ach(3838),	-- Dungeon & Raid Emblem
-				ach(3839),	-- 25 Dungeon & Raid Emblems
-				ach(3840),	-- 50 Dungeon & Raid Emblems
-				ach(3841),	-- 100 Dungeon & Raid Emblems
-				ach(3842),	-- 250 Dungeon & Raid Emblems
-				ach(3843),	-- 500 Dungeon & Raid Emblems
-				ach(3876),	-- 1500 Dungeon & Raid Emblems
 				ach(4778),	-- Disenchant rolls made on loot
 				ach(4780),	-- Deaths in Trial of the Crusader
 				ach(4781),	-- Deaths in Icecrown Citadel
-				ach(4784),	-- Emblematic
-				ach(4785),	-- Emblematic
 			}),
 		}),
 		tier(CATA_TIER, {

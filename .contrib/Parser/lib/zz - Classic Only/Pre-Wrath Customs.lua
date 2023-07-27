@@ -362,7 +362,7 @@ root("Achievements", {
 			["rank"] = 10,
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1187, {	-- The Keymaster
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", "removed 4.0.3" },
 		})),
 		applyclassicphase(TBC_PHASE_ONE, ach(892, {	-- The Right Stuff
 			["spellID"] = 34091,	-- Artisan Riding
@@ -505,7 +505,7 @@ root("Achievements", {
 				1262,	-- Loremaster of Outland (A)
 				41,		-- Loremaster of Northrend (A)
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster
@@ -519,7 +519,7 @@ root("Achievements", {
 				1274,	-- Loremaster of Outland (H)
 				1360,	-- Loremaster of Northrend (H)
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster
@@ -1200,8 +1200,14 @@ root("Achievements", {
 			}},
 			["timeline"] = { "added 3.0.1" },
 		}),
-		ach(4784, {	-- Emblematic
+		ach(4784, {	-- Emblematic [A]
 			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["races"] = ALLIANCE_ONLY,
+			["rank"] = 1,
+		}),
+		ach(4785, {	-- Emblematic [H]
+			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["races"] = HORDE_ONLY,
 			["rank"] = 1,
 		}),
 		ach(3838, {	-- Dungeon & Raid Emblem
