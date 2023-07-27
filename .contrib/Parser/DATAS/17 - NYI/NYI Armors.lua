@@ -53,6 +53,10 @@ root(ROOTS.NeverImplemented, {
 				--
 				i(7550),	-- Warrior's Honor
 				i(18023),	-- Blood Ruby Pendant
+				i(7427),	-- Cerulean Talisman
+				i(7548),	-- Onyx Choker
+				i(7467),	-- Vermilion Necklace
+				i(7550),	-- Warrior's Honor
 			}),
 			filter(FINGER_F, {
 				i(13812),	-- Ring of the Dawn

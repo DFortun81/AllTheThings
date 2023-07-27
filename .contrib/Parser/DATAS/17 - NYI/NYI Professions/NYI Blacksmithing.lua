@@ -332,14 +332,10 @@ root(ROOTS.NeverImplemented, {
 					-- 2.4.0
 					tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
 						-- Without SpellID attached
-						i(35529),	-- Plans: Dawnsteel Bracers
-						i(35530),	-- Plans: Dawnsteel Shoulders
 						i(35553),	-- Plans: Hard Khorium Battlefists
 						i(35554),	-- Plans: Hard Khorium Battleplate
 						i(35555),	-- Plans: Sunblessed Breastplate
 						i(35556),	-- Plans: Sunblessed Gauntlets
-						i(35531),	-- Plans: Swiftsteel Bracers
-						i(35532),	-- Plans: Swiftsteel Shoulders
 					})),
 				}),
 				tier(WOTLK_TIER, {

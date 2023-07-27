@@ -89,6 +89,7 @@ root(ROOTS.NeverImplemented, {
 				q(5703, { ["name"] = "<NYI> The Rites of Old", }),
 				q(1443, { ["name"] = "<nyi> The Shakedown", }),
 				q(5659, { ["name"] = "<NYI> Touch of Weakness", }),
+				q(1288, { ["name"] = "<nyi> Vimes's Report", }),
 				q(1289, { ["name"] = "<nyi> Vimes's Report", }),
 				q(1292, { ["name"] = "<nyi><TXT> Centaur Hoofprints", }),
 				q(241, { ["name"] = "<TEST> HEY MISTER WILSON!", }),
@@ -105,6 +106,7 @@ root(ROOTS.NeverImplemented, {
 				q(497, { ["name"] = "<UNUSED>", }),
 				q(534, { ["name"] = "<UNUSED>", }),
 				q(612, { ["name"] = "<UNUSED>", }),
+				q(774, { ["name"] = "<UNUSED>", }),	-- Mulgore
 				q(807, { ["name"] = "<UNUSED>", }),
 				q(810, { ["name"] = "<UNUSED>", }),
 				q(811, { ["name"] = "<UNUSED>", }),
@@ -169,6 +171,7 @@ root(ROOTS.NeverImplemented, {
 				q(5696, { ["name"] = "<UNUSED>", }),
 				q(5697, { ["name"] = "<UNUSED>", }),
 				q(6841, { ["name"] = "<UNUSED>", }),
+				q(6842, { ["name"] = "<UNUSED>", }),	-- Silithus
 				q(7904, { ["name"] = "<UNUSED>", }),
 				q(8247, { ["name"] = "<UNUSED>", }),
 				q(8248, { ["name"] = "<UNUSED>", }),
@@ -178,10 +181,7 @@ root(ROOTS.NeverImplemented, {
 				q(8571, { ["name"] = "<UNUSED> Armor Kits", }),
 				q(6202, { ["name"] = "<UNUSED> Good and Evil", }),
 				q(6201, { ["name"] = "<UNUSED> The Legacy of the Ashbringer", }),
-				q(9412, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
-				q(9413, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
-				q(9411, { ["name"] = "<UNUSED>Infused Bandages", }),
-				q(9414, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(6606, { ["name"] = "A Little Luck", }),	-- Winterspring
 				q(785, { ["name"] = "A Strategic Alliance", }),
 				q(908, { ["name"] = "Amongst the Ruins", }),
 				q(8489, { ["name"] = "An Intact Converter", }),
@@ -189,11 +189,14 @@ root(ROOTS.NeverImplemented, {
 				q(8478, { ["name"] = "Choose Your Weapon", }),
 				q(8230, { ["name"] = "Collin's Test Quest", }),
 				q(7906, { ["name"] = "Darkmoon Cards - Beast", }),
+				q(1272, { ["name"] = "Finding Reethe <CHANGE INTO GOSSIP>", }),	-- Dustwallow Marsh
+				q(1283, { ["name"] = "Fire at the Shady Rest <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
 				q(1127, { ["name"] = "Fool's Stout", }),
 				q(1174, { ["name"] = "Gnomes Win!", }),
 				q(1099, { ["name"] = "Goblins Win!", }),
 				q(7681, { ["name"] = "Hunter test quest", }),
 				q(7682, { ["name"] = "Hunter test quest2", }),
+				q(1281, { ["name"] = "Jim's Song <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
 				q(5383, { ["name"] = "Krastinov's Bag of Horrors", }),
 				q(636, { ["name"] = "Legends of the Earth <NYI>", }),
 				q(7479, { ["name"] = "Libram of Focus", }),
@@ -211,16 +214,29 @@ root(ROOTS.NeverImplemented, {
 				q(7869, { ["name"] = "test quest - do not use", }),
 				q(7870, { ["name"] = "test quest2 - do not use", }),
 				q(708, { ["name"] = "The Black Box", }),
+				q(1263, { ["name"] = "The Burning Inn <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
+				q(9065, { ["name"] = "The \"Chow\" Quest (123)aa", }),	-- Dustwallow Marsh
 				q(8896, { ["name"] = "The Dwarven Spy", }),
 				q(3911, { ["name"] = "The Last Element", }),
 				q(787, { ["name"] = "The New Horde", }),
-				q(9695, { ["name"] = "The Sun King's Command", }),
 				q(7462, { ["name"] = "The Treasure of the Shen'dralar", }),
 				q(7790, { ["name"] = "The Written Word", }),
+				q(2019, { ["name"] = "Tools of the Trade", }),
 				q(8340, { ["name"] = "Twilight Signet Ring <NYI> <TXT>", }),
 				q(1318, { ["name"] = "Unfinished Gordok Business", }),
 				q(7962, { ["name"] = "Wabbit Pelts", }),
 				q(7961, { ["name"] = "Waskily Wabbits!", }),
+				q(9296, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9297, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9298, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9411, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(9412, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+				q(9413, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+				q(9414, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(9695, { ["name"] = "The Sun King's Command", }),
+				i(20946, { ["name"] = "Tactical Task Briefing III", }),	-- Silithus
+				i(21246, { ["name"] = "Combat Task Briefing I", }),	-- Silithus
+				i(21247, { ["name"] = "Combat Task Briefing II", }),	-- Silithus
 			}),
 		}),
 		tier(TBC_TIER, {

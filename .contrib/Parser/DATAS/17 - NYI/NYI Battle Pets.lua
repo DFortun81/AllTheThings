@@ -5,12 +5,28 @@ root(ROOTS.NeverImplemented, {
 	filter(BATTLE_PETS, {
 		tier(CLASSIC_TIER, {
 			-- Without SpeciesID Attached
+			i(21168, {	-- Baby Shark (PET!)
+				["modelID"] = 21168,
+			}),
 			i(11903, {	-- Cat Carrier (Corrupted Kitten) (PET!)
 				["modelID"] = 9209,
+			}),
+			i(18963, {	-- Turtle Egg (Albino)
+				-- ["modelID"] = ,
 			}),
 			i(18964, {	-- Loggerhead Snapjaw / Turtle Egg (Loggerhead) (PET!)
 				["modelID"] = 14657,
 			}),
+			i(18965, {	-- Turtle Egg (Hawksbill)
+				-- ["modelID"] = ,
+			}),
+			i(18966, {	-- Turtle Egg (Leatherback)
+				-- ["modelID"] = ,
+			}),
+			i(18967, {	-- Turtle Egg (Olive)
+				-- ["modelID"] = ,
+			}),
+			
 			i(13342, {	-- Pet Fish (PET!)
 				-- ["modelID"] = ,
 			}),
@@ -36,14 +52,14 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 2.4.0
+			-- #if BEFORE 7.0.3
 			tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
 				-- With SpeciesID Attached
-				-- #if BEFORE 7.0.3
 				i(23712, {	-- White Tiger Cub (PET!),  Comment: Later reused for Ash'ana.
 					["modelID"] = 16942,
 				}),
-				-- #endif
 			})),
+			-- #endif
 		}),
 		tier(WOTLK_TIER, {
 			-- 3.0.2
@@ -51,9 +67,6 @@ root(ROOTS.NeverImplemented, {
 				-- Without SpeciesID Attached
 				i(39148, {	-- Baby Coralshell Turtle (PET!)
 					-- ["modelID"] = ,
-				}),
-				i(21168, {	-- Baby Shark (PET!)
-					["modelID"] = 21168,
 				}),
 			})),
 

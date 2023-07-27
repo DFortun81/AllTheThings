@@ -4,9 +4,7 @@
 -- Everything in this file hasn't been implemented yet.
 root("NeverImplemented", {
 	q(63769),	-- Holiday Reset Yearly Quest
-	q(7069),	-- "<UNUSED>" quest
 	q(55296),	-- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
-	q(3366),	-- The Glowing Shard [Quests #6981 and #3366 look identical, but WoWHead doesn't have much info on 3366]
 	
 	q(8226, {	-- Rare Fish - Pale Ghoulfish
 		--["qg"] = 15079,	-- Fishbot 5000
@@ -21,117 +19,33 @@ root("NeverImplemented", {
 		},
 	}),
 	
-	-- Arathi Highlands
-	q(636),	-- Legends of the Earth <NYI>
-	
-	-- Argent Dawn Quests
-	q(5530, {	-- <NYI> <TXT> Necklace of the Dawn
-		i(13811),	-- Necklace of the Dawn
-	}),
-	q(5532, {	-- <NYI> <TXT> Ring of the Dawn
-		i(13812),	-- Ring of the Dawn
-	}),
-	q(9031),	-- <TXT>Anthion's Parting Words
-	q(5303),	-- <UNUSED>
-	q(5304),	-- <UNUSED>
-	
-	-- Dustwallow Marsh Quests that were never added.
-	q(1293),	-- <nyi> <TXT> Centaur Hoofprints
-	q(1295),	-- <nyi> <TXT> Course of Action
-	q(1296),	-- <nyi> <TXT> Course of Action
-	q(1297),	-- <nyi> <TXT> Course of Action
-	q(1294),	-- <nyi> <TXT>Centaur Sympathies
-	q(1280),	-- <nyi> <TXT>The Centaur Hoofprints
-	q(1390),	-- <nyi> Oops, We Killed Them Again.
-	q(1292),	-- <nyi><TXT> Centaur Hoofprints
-	q(1288),	-- <nyi> Vimes's Report (followup, never implemented)
-	q(1272),	-- Finding Reethe <CHANGE INTO GOSSIP>
-	q(1283),	-- Fire at the Shady Rest <CHANGE TO GOSSIP>
-	q(1281),	-- Jim's Song <CHANGE TO GOSSIP>
-	q(1263),	-- The Burning Inn <CHANGE TO GOSSIP>
-	q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
-	q(9065),	-- The "Chow" Quest (123)aa
-	q(1288, {	-- Vimes's Report
-		["cost"] = {
-			{ "i", 6075, 1 },	-- Vimes's Report
-		},
-	}),
-
-	-- Desolace Quests
-	q(8458),	-- <UNUSED>
-	
-	-- Felwood Quests that were never added.
-	q(5208),	-- <NYI> <TXT> The Blessing of Evil
-	q(5207),	-- <NYI> <TXT> The True Summoner
-	q(5209),	-- <UNUSED>
-	q(7741, {	-- Praise from the Emerald Circle <NYI> <TXT>
-		i(19065),	-- Emerald Circle
-	}),
-	
-	-- Mulgore
-	q(774),	-- <UNUSED>
-	
-	-- Recipe Learning Quests
-	q(912),	-- Stonesplinter Trogg Disguise
-	q(9411),	-- <UNUSED>Infused Bandages
-	q(9414),	-- <UNUSED>Infused Bandages
-	q(9412),	-- <UNUSED>Crystal Flake Throat Lozenge
-	q(9413),	-- <UNUSED>Crystal Flake Throat Lozenge
-	
-	-- Scourge Invasion (Unused Quests)
-	q(9296),	-- reuse
-	q(9297),	-- reuse
-	q(9298),	-- reuse
-	
-	-- Silithus Quests (Unused Quests)
-	q(1155),	-- <NYI> <TXT> bug crystal side quest
-	q(1161),	-- <NYI> <TXT> gossip shade of ambermoon
-	q(8444),	-- <NYI> <TXT> gossip shade of ambermoon
-	q(8445),	-- <NYI> <TXT> gossip shade of ambermoon
-	q(1156),	-- <NYI> <TXT> speak to alchemist pestlezugg
-	q(1162),	-- <NYI> <TXT> speak to hamuul runetotem
-	q(1163),	-- <NYI> <TXT> speak to tyrande whisperwind
-	q(6842),	-- <UNUSED>
-	i(20946),	-- Tactical Task Briefing III [unused]
-	i(21246),	-- Combat Task Briefing I [unused]
-	i(21247),	-- Combat Task Briefing II [unused]
-	q(8339),	-- Royalty of the Council <NYI> <TXT> UNUSED
-	q(8340),	-- Twilight Signet Ring <NYI> <TXT>
-	
-	-- Undercity Quests (Unused)
-	q(6003),	-- <nyi> <txt> Green With Envy
-	q(6841),	-- <UNUSED>
-	
-	-- Winterspring Quests (Unused)
-	q(6606),	-- A Little Luck
-	
 	-- Retired PVP Battleground Quests
 	-- Warsong Gulch
-	i(19213),	-- Silverwing Talisman of Merit
-	q(8567),	-- Past Victories in Warsong Gulch
-	q(8292),	-- Talismans of Merit [lvl 60]
-	q(7886),	-- Talismans of Merit [lvl 50]
-	q(7888),	-- Talismans of Merit [lvl 40]
-	q(7887),	-- Talismans of Merit [lvl 30]
-	q(7921),	-- Talismans of Merit [lvl 20]
-	q(8289),	-- Talismans of Merit [lvl 10]
-	q(8001),	-- Warsong Outriders <NYI> <TXT>
-	i(19322),	-- Warsong Mark of Honor
 	q(8293),	-- Mark of Honor [lvl 60]
 	q(7922),	-- Mark of Honor [lvl 50]
 	q(7923),	-- Mark of Honor [lvl 40]
 	q(7924),	-- Mark of Honor [lvl 30]
 	q(7925),	-- Mark of Honor [lvl 20]
 	q(8296),	-- Mark of Honor [lvl 10]
-	q(8568),	-- Past Victories in Warsong Gulch
-	q(8002),	-- Silverwing Sentinels <NYI> <TXT>
-	i(20256),	-- Warsong Gulch Ribbon of Sacrifice
 	q(8569),	-- Past Efforts in Warsong Gulch
 	q(8570),	-- Past Efforts in Warsong Gulch
+	q(8567),	-- Past Victories in Warsong Gulch
+	q(8568),	-- Past Victories in Warsong Gulch
 	q(8266),	-- Ribbons of Sacrifice
 	q(8267),	-- Ribbons of Sacrifice
 	q(8268),	-- Ribbons of Sacrifice
 	q(8269),	-- Ribbons of Sacrifice
+	q(8002),	-- Silverwing Sentinels <NYI> <TXT>
+	i(19213),	-- Silverwing Talisman of Merit
+	q(8292),	-- Talismans of Merit [lvl 60]
+	q(7886),	-- Talismans of Merit [lvl 50]
+	q(7888),	-- Talismans of Merit [lvl 40]
+	q(7887),	-- Talismans of Merit [lvl 30]
+	q(7921),	-- Talismans of Merit [lvl 20]
+	q(8289),	-- Talismans of Merit [lvl 10]
+	i(20256),	-- Warsong Gulch Ribbon of Sacrifice
+	i(19322),	-- Warsong Mark of Honor
+	q(8001),	-- Warsong Outriders <NYI> <TXT>
 	
 	-- Arathi Basin
 	i(19725),	-- Arathi Resource Crate
@@ -148,46 +62,8 @@ root("NeverImplemented", {
 	q(8565),	-- Past Victories in Arathi
 	q(8566),	-- Past Victories in Arathi
 	
-	-- Rogue Quests
-	q(2019),	-- Tools of the Trade (Obsolete)
-	
-	-- Bind Type 0
-	-- Invalid (Filter Type 0)
-	i(8502),	-- Bronze Lotterybox
-	i(17968),	-- Charged Scale of Onyxia
-	i(8503),	-- Heavy Bronze Lotterybox
-	i(8505),	-- Heavy Iron Lotterybox
-	i(8507),	-- Heavy Mithril Lotterybox
-	i(20367),	-- Hunting Gear
-	i(8504),	-- Iron Lotterybox
-	i(8506),	-- Mithril Lotterybox
-	i(20834),	-- Ornate Spyglass XT
-	i(17967),	-- Refined Scale of Onyxia
-	i(3895),	-- TEST Legendary
-	i(22316),	-- Test Relic
-	
 	-- Shirts
 	i(6130),	-- Trapper's Shirt (deprecated)
-	
-	-- Mounts
-	i(20221),	-- Foror's Fabled Steed
-	i(13325),	-- Fluorescent Green Mechanostrider
-	i(13323),	-- Purple Mechanostrider
-	i(13324),	-- Red & Blue Mechanostrider
-	i(8630),	-- Reins of the Bengal Tiger
-	i(12327),	-- Reins of the Golden Sabercat
-	i(12325),	-- Reins of the Primal Leopard
-	i(18768),	-- Reins of the Swift Dawnsaber
-	i(12326),	-- Reins of the Tawny Sabercat
-	i(21736),	-- Riding Gryphon Reins
-	i(23193),	-- Skeletal Steed Reins
-	
-	-- Pets
-	i(18963),	-- Turtle Egg (Albino)
-	i(18965),	-- Turtle Egg (Hawksbill)
-	i(18966),	-- Turtle Egg (Leatherback)
-	i(18964),	-- Turtle Egg (Loggerhead)
-	i(18967),	-- Turtle Egg (Olive)
 	
 	filter(3, {	-- Cloak
 		i(16116),	-- Test Nature Res Cloak Cloth
@@ -443,12 +319,7 @@ root("NeverImplemented", {
 	i(138),	-- Deprecated War Harness
 	i(3148),	-- Deprecated Work Shirt
 	
-	-- Shield
-	i(18342),	-- Quel'dorai Guard
-	
 	-- Dagger
-	i(24071),	-- Bland Dagger
-	i(2664),	-- Spinner Fang
 	i(20317),	-- 63 Green Rogue Dagger
 	i(20279),	-- 90 Epic Rogue Dagger
 	i(20303),	-- 90 Green Rogue Dagger
@@ -461,22 +332,12 @@ root("NeverImplemented", {
 	i(18800),	-- TEST 1H Amberseal Keeper
 	
 	-- Two Handed Mace
-	i(12772),	-- Inlaid Thorium Hammer
 	i(18881),	-- TEST Ragnaros Hammer
 	i(19158),	-- TEST Sulfuras, Hand of Ragnaros
-	
-	-- One Handed Sword
-	i(22805),	-- Naxxramas Sword 1H 1 PH
-	i(18582),	-- The Twin Blades of Azzinoth
 
 	-- Two Handed Sword
-	i(913),		-- Huge Ogre Sword
 	i(22814),	-- Naxxramas Sword 2H 2 PH
 	i(18882),	-- TEST Level 80 Epic
-	i(12764),	-- Thorium Greatsword
-	
-	-- Thrown
-	i(21135),	-- Assassin's Throwing Axe
 
 	-- Wand
 	i(21124),	-- Ahn'Qiraj Wand PH
@@ -499,16 +360,6 @@ root("NeverImplemented", {
 	-- Polearm
 	i(22817),	-- Naxxramas Polearm PH
 	
-	-- Bows
-	i(5748),	-- Centaur Longbow
-	i(19490),	-- 2800 Test Bow 63 Blue
-	i(20313),	-- 63 Green Rogue Bow
-	i(20278),	-- 90 Epic Rogue Bow
-	i(20299),	-- 90 Green Rogue Bow
-	i(20368),	-- Bland Bow of Steadiness
-	i(19868),	-- Mandokir's Sting DEPRECATED
-	i(19966),	-- Thrice Strung Longbow DEPRECATED
-	i(20488),	-- Rhok'delar, Longbow of the Ancient Keepers DEP
 
 	-- Crossbows
 	i(19489),	-- 3300 Test Crossbow 63 blue
@@ -596,13 +447,6 @@ root("NeverImplemented", {
 	i(18153),	-- Red Moro'gai Gem
 	i(18159),	-- White Moro'gai Gem
 	
-	-- Bag
-	i(21194),	-- D'Sak's Big Sack
-	i(21193),	-- D'Sak's Sack
-	i(21195),	-- D'Sak's Sacktastic
-	i(21313),	-- D'Sak's Small bag
-	i(21857),	-- Test Herb Bag
-	i(22233),	-- Zigris' Footlocker
 	
 	-- Recipe
 	i(5688),	-- Test Language Item
@@ -617,16 +461,6 @@ root("NeverImplemented", {
 	-- Held in Off Hand
 	i(18316),	-- Obsidian Bauble
 	i(19989),	-- Tome of Devouring Shadows
-	
-	-- Axes
-	i(12779),	-- Rune Edge
-	
-	-- Dagger
-	i(17142),	-- Shard of the Defiler
-	
-	-- Shield
-	i(20502),	-- Ironbark Shield
-	i(18303),	-- Nimble Buckler
 	
 	-- Neck
 	i(23058),	-- Life Channeling Necklace
@@ -643,13 +477,6 @@ root("NeverImplemented", {
 	i(18438),	-- Sergeant's Mark
 	
 	-- Recipe
-	i(16073),	-- Artisan Cookbook
-	i(5130),	-- Knowledge: Dalaran Wizard Disguise
-	i(5129),	-- Knowledge: Dark Iron Dwarf Disguise
-	i(5126),	-- Knowledge: Defias Disguise
-	i(5127),	-- Knowledge: South Seas Pirate Disguise
-	i(5132),	-- Knowledge: Syndicate Disguise
-	i(5657),	-- Recipe: Instant Toxin
 	i(1164),	-- Sam's Tome
 	i(4144),	-- Tome of Polymorph: Cow
 	
@@ -671,55 +498,15 @@ root("NeverImplemented", {
 	i(20596),	-- Sturdy Male Tauren Mask
 	i(20597),	-- Sturdy Male Troll Mask
 	i(20598),	-- Sturdy Male Undead Mask
-	i(20936),	-- Qiraji Blessed Jewel
-	i(20937),	-- Qiraji Encased Jewel
-	i(20887),	-- Qiraji Engraved Jewel
-	i(20883),	-- Qiraji Glyphed Jewel
-	
-	-- One Handed Axes
-	i(5255),	-- Quilboar Tomahawk
-	
-	-- One Handed Sword
-	i(9380),	-- Jang'thraze the Protector
-	i(17802),	-- Thunderfury, Blessed Blade of the Windseeker DEPRECATED
-	i(18584),	-- Warglaive of Azzinoth (Left)
-	i(18583),	-- Warglaive of Azzinoth (Right)
-	
-	-- Fist Weapons
-	i(12795),	-- Blood Talon
-	i(20005),	-- Devilsaur Claws
-	i(20003),	-- Devilsaur Claws
 	
 	-- Staff
-	i(3738),	-- Brewing Rod
-	i(20522),	-- Feral Staff
 	i(20362),	-- 63 Green Frost Staff
 	i(20334),	-- 90 Epic Frost Staff
 	i(20349),	-- 90 Green Frost Staff
 	
-	-- Two Handed Sword
-	i(12469),	-- Mutilator
-	
-	-- Neck
-	i(18023),	-- Blood Ruby Pendant
-	i(7427),	-- Cerulean Talisman
-	i(5005),	-- Emberspark Pendant
-	i(5004),	-- Mark of the Kirin Tor
-	i(7548),	-- Onyx Choker
-	i(7467),	-- Vermilion Necklace
-	i(7550),	-- Warrior's Honor
 	
 	-- TBC
 	-- #if AFTER TBC
-	i(35530, {	-- Plans: Dawnsteel Shoulders
-		["spellID"] = 0,
-	}),
-	i(35532, {	-- Plans: Swiftsteel Shoulders
-		["spellID"] = 0,
-	}),
-	i(35555, {	-- Plans: Sunblessed Breastplate
-		["spellID"] = 0,
-	}),
 	q(8489),	-- BETA An Intact Converter [Eversong Woods]
 	q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
 	q(9357),	-- BETA Report to Aeldon Sunbrand [Eversong Woods]
@@ -816,25 +603,11 @@ root("NeverImplemented", {
 		i(25798),	-- 130 Epic Warrior Trinket
 		i(25801),	-- 130 Test Caster Trinket
 	}),
-	filter(BATTLE_PETS, {
-		-- #if BEFORE 7.0.3
-		i(23712),	-- White Tiger Cub -- later reused for Ash'ana.
-		-- #endif
-	}),
 	-- #endif
 });
 
 -- These items never made it in.
 root("NeverImplemented", {
-	filter(1, {	-- Held in Off-hand
-	
-	}),
-	filter(2, {	-- Cosmetic [TODO: Move to Hallow's End?]
-		
-	}),
-	filter(3, {	-- Cloak
-		
-	}),
 	filter(4, {	-- Cloth
 		i(20351),	-- 63 Green Frost Belt
 		i(20352),	-- 63 Green Frost Bindings
@@ -854,21 +627,12 @@ root("NeverImplemented", {
 		i(20297),	-- 90 Green Rogue Belt
 		i(20300),	-- 90 Green Rogue Bracers
 	}),
-	filter(6, {	-- Mail
-		
-	}),
-	filter(7, {	-- Plate
-		
-	}),
 	filter(8, {	-- Shield
 		i(14609),	-- Deprecated Ceremonial Buckler
 		i(9888),	-- Deprecated Elven Protector
 		i(15888),	-- Deprecated Glorious Shield
 		i(15889),	-- Deprecated Jademir Scale Shield
 		i(14597),	-- Deprecated Warden's Buckler
-	}),
-	filter(9, {	-- Tabard
-	
 	}),
 	filter(10, {	-- Shirt
 		i(105),	-- Deprecated Dwarven Recruit's Shirt
@@ -891,9 +655,6 @@ root("NeverImplemented", {
 		i(19313),	-- 1300 Test Dagger 63 blue
 		i(19622),	-- 1800 Test Dagger 63 blue
 		i(19314),	-- 2000 Test Dagger 63 blue
-	}),
-	filter(21, {	-- One Handed Axe
-		
 	}),
 	filter(22, {	-- Two Handed Axe
 		i(19185),	-- 2100 Test 2h Axe 63 blue
@@ -925,9 +686,6 @@ root("NeverImplemented", {
 	filter(23, {	-- One Handed Mace
 		i(2189),	-- Tigole's Boomstick (TEST)
 	}),
-	filter(24, {	-- Two Handed Mace
-	
-	}),
 	filter(25, {	-- One Handed Sword
 		i(19427),	-- 1500 Test sword 63 blue
 		i(19457),	-- 1500 Test sword 80 purple
@@ -943,15 +701,6 @@ root("NeverImplemented", {
 		i(3687),	-- Deprecated Unholy Avenger
 		i(3934),	-- Deprecated Warden Blade
 	}),
-	filter(27, {	-- Wand
-		
-	}),
-	filter(28, {	-- Staff
-		
-	}),
-	filter(29, {	-- Polearm
-		
-	}),
 	filter(31, {	-- Gun
 		i(20285),	-- 63 Green Warrior Gun
 		i(20146),	-- 90 Epic Warrior Gun
@@ -960,30 +709,12 @@ root("NeverImplemented", {
 	filter(32, {	-- Bow
 		i(4763),	-- Blackwood Recurve Bow
 	}),
-	filter(33, {	-- Crossbow
-	
-	}),
-	filter(34, {	-- Fist Weapon
-		
-	}),
-	filter(36, {	-- Thrown
-		
-	}),
 	filter(37, {	-- Ammo
 		i(10579),	-- Explosive Arrow
-	}),
-	filter(50, {	-- Miscellaneous
-		
 	}),
 	filter(52, {	-- Ring
 		i(12947),	-- Alex's Ring of Audacity
 		i(5828),	-- Ring of Uber Resists (TEST)
-	}),
-	filter(53, {	-- Trinket
-		
-	}),
-	filter(55, {	-- Consumable
-		
 	}),
 	filter(100, {	-- Mount
 		i(875),	-- Brown Horse Summoning
@@ -1003,16 +734,6 @@ root("NeverImplemented", {
 		i(8627),	-- Reins of the Night saber
 		i(8628),	-- Reins of the Spotted Nightsaber
 		i(2415),	-- White Stallion
-	}),
-	filter(BATTLE_PETS, {
-		i(21168),	-- Baby Shark
-		i(11903),	-- Cat Carrier (Corrupted Kitten)
-	}),
-	filter(113, {	-- Bag
-		
-	}),
-	filter(200, {	-- Recipe
-		
 	}),
 });
 
@@ -1977,12 +1698,6 @@ root("NeverImplemented", {
 		i(26559),	-- 72 TEST Green Shield
 		i(25627),	-- QR 9922 Shield
 	}),
-	filter(9, {	-- Tabard
-	
-	}),
-	filter(10, {	-- Shirt
-		
-	}),
 	filter(20, {	-- Dagger
 		i(26574),	-- 59 TEST Green Dagger
 		i(26770),	-- 59 TEST Green Spell Dagger
@@ -2439,15 +2154,6 @@ root("NeverImplemented", {
 	}),
 	filter(53, {	-- Trinket
 		i(35485),	-- Goblin Rocket Launcher PH
-	}),
-	filter(55, {	-- Consumable
-		
-	}),
-	filter(BATTLE_PETS, {
-		
-	}),
-	filter(100, {	-- Mounts
-		i(25596),	-- Peep's Whistle
 	}),
 	-- #if BEFORE 3.0.0
 	filter(102, {	-- Toy

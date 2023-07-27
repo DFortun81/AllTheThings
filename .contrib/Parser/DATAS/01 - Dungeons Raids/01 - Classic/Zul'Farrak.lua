@@ -259,7 +259,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(9372, {	-- Sul'thraze the Lasher
 					["description"] = "You must take both of the swords and combine them to form this weapon.",
 					["cost"] = {
-						{ "i", 11086, 1 },	-- Jan'thraze the Protector
+						{ "i", 11086, 1 },	-- Jang'thraze the Protector
 						{ "i", 9379, 1 },	-- Sang'thraze the Deflector
 					},
 					["crs"] = {
@@ -398,7 +398,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(5048, {	-- Zul'Farrak Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
-					i(11086),	-- Jan'thraze the Protector
+					i(11086),	-- Jang'thraze the Protector
 					i(9478),	-- Ripsaw
 					i(9477),	-- The Chief's Enforcer
 					i(9479),	-- Embrace of the Lycan

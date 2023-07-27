@@ -6,6 +6,17 @@
 root(ROOTS.NeverImplemented, {
 	n(WEAPONS, {
 		filter(BOWS, {
+			tier(CLASSIC_TIER, {
+				i(19490),	-- 2800 Test Bow 63 Blue
+				i(20313),	-- 63 Green Rogue Bow
+				i(20278),	-- 90 Epic Rogue Bow
+				i(20299),	-- 90 Green Rogue Bow
+				i(5748),	-- Centaur Longbow
+				i(20368),	-- Bland Bow of Steadiness
+				i(19868),	-- Mandokir's Sting DEPRECATED
+				i(19966),	-- Thrice Strung Longbow DEPRECATED
+				i(20488),	-- Rhok'delar, Longbow of the Ancient Keepers DEP
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189689),	-- 10.0 Dungeon Template - Bows - Ranged
@@ -30,6 +41,9 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(DAGGERS, {
 			tier(CLASSIC_TIER, {
+				i(24071),	-- Bland Dagger
+				i(17142),	-- Shard of the Defiler
+				i(2664),	-- Spinner Fang
 				i(3222),	-- Wicked Dagger
 			}),
 			tier(DF_TIER, {
@@ -157,6 +171,14 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(ONE_HANDED_SWORDS, {
+			tier(CLASSIC_TIER, {
+				i(9380),	-- Jang'thraze the Protector
+				i(22805),	-- Naxxramas Sword 1H 1 PH
+				i(17802),	-- Thunderfury, Blessed Blade of the Windseeker DEPRECATED
+				i(18582),	-- The Twin Blades of Azzinoth
+				i(18583),	-- Warglaive of Azzinoth (Right)
+				i(18584),	-- Warglaive of Azzinoth (Left)
+			}),
 			tier(BFA_TIER, {
 				tier(BFA_TIER, 1.0, {
 					i(166364),	-- Song of the Fallen
@@ -203,6 +225,9 @@ root(ROOTS.NeverImplemented, {
 		filter(SHIELDS, {
 			tier(CLASSIC_TIER, {
 				i(7748),	-- Forcestone Buckler
+				i(20502),	-- Ironbark Shield [NPC Shield]
+				i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
+				i(18303),	-- Nimble Buckler
 			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -215,6 +240,10 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(STAVES, {
+			tier(CLASSIC_TIER, {
+				i(3738),	-- Brewing Rod
+				i(20522),	-- Feral Staff
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189674),	-- 10.0 Dungeon Template - Staff - Agi - 2 Hand
@@ -229,6 +258,11 @@ root(ROOTS.NeverImplemented, {
 					i(201231),	-- Bident of Hallucinations
 					i(201237),	-- Dreamer's Creator
 				}),
+			}),
+		}),
+		filter(THROWN, {
+			tier(CLASSIC_TIER, {
+				i(21135),	-- Broken Assassin's Throwing Axe
 			}),
 		}),
 		filter(TWO_HANDED_AXES, {
@@ -256,14 +290,16 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
+			tier(CLASSIC_TIER, {
+				i(13262),	-- Ashbringer
+				i(913),		-- Huge Ogre Sword
+				i(12469),	-- Mutilator
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189355),	-- 10.0 Zone Uncommon Template <Descriptor> Greatsword
 					i(189358),	-- 10.0 Zone Uncommon Template <Descriptor> Greatsword
 				}),
-			}),
-			tier(CLASSIC_TIER, {
-				i(13262),	-- Ashbringer
 			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -328,7 +364,6 @@ root(ROOTS.NeverImplemented, {
 		i(25497),	-- Broken Balanced Stone Dirk
 		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
 		i(25641),	-- Broken Fitz's Throwing Axe
-		i(21135),	-- Broken Assassin's Throwing Axe
 		i(178480),	-- Sinful Aspirant's Keris
 		i(178665),	-- Sinful Aspirant's Fang
 		i(183434),	-- Sinful Aspirant's Spellmace
@@ -338,7 +373,6 @@ root(ROOTS.NeverImplemented, {
 		i(178673),	-- Sinful Aspirant's Weapon - Offhand
 		filter(BOWS, {
 			-- Load In Game
-			i(5748),	-- Centaur Longbow
 			i(115294),	-- Spectral Longbow
 			i(182563),	-- NPE Weapon Bow
 			i(182563, {	-- NPE Weapon Bow
@@ -358,8 +392,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(DAGGERS, {
 			-- Load In Game
-			i(2664),	-- Spinner Fang
-			i(17142),	-- Shard of the Defiler
 			i(62329),	-- Dire Slasher (never added)
 			i(115295),	-- Spectral Dagger
 			i(115446),	-- Brianium Dagger
@@ -471,9 +503,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(ONE_HANDED_SWORDS, {
 			-- Load In Game
-			i(18582),	-- The Twin Blades of Azzinoth
-			i(18583),	-- Warglaive of Azzinoth (Right)
-			i(18584),	-- Warglaive of Azzinoth (Left)
 			i(134613),	-- Scorching Quickblade
 			i(137225),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			i(162447),	-- Marrow Render
@@ -562,12 +591,10 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(SHIELDS, {
 			-- Load In Game
-			i(18303),	-- Nimble Buckler
-			i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
 			i(182570),	-- NPE Weapon Shield
 			i(182576),	-- NPE Weapon Shield 2
 			-- ItemID/Retrieving
-			i(20502),	-- Ironbark Shield [NPC Shield]
+			
 			i(34415),	-- Crystaline Shard Shield
 			i(60220),	-- Theodore's Heirloom Buckler
 			i(108808),	-- 7.0 PH Shield - Shield Str
@@ -588,8 +615,7 @@ root(ROOTS.NeverImplemented, {
 			i(182572),	-- NPE Weapon Staff INT
 			i(180491),	-- Wingdancer's Spire
 			-- ItemID/Retrieving
-			i(3738),	-- Brewing Rod
-			i(20522),	-- Feral Staff
+			
 			i(38245),	-- Crystalline Providence
 			i(38248),	-- Torch of the Fallen Souls
 			i(49458),	-- Insight of the Water
@@ -652,8 +678,8 @@ root(ROOTS.NeverImplemented, {
 			i(81703),	-- Glorenzelg, High-Blade of the Silver Hand, added in 5.0.1 ??
 			i(182337),	-- Unholy Weapon
 			-- ItemID/Retrieving
-			i(913),		-- Huge Ogre Sword
-			i(12469),	-- Mutilator
+			
+			
 			i(23432),	-- Engraved Greatsword
 			i(49457),	-- Fury of the Flame
 			i(108806),	-- 7.0 PH Weapon - 2H Sword Str
