@@ -1162,6 +1162,78 @@ setmetatable(itemDBConditional, {
 	end,
 });
 ItemDBConditional = itemDBConditional;
+
+local CurrentProfessionID, recipeDB = ALCHEMY;
+local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill)
+	-- Cache the object.
+	local object;
+	if itemID == 0 then
+		-- The RecipeDB table isn't setup to always return a value.
+		object = recipeDB[recipeID];
+		if not object then
+			object = {};
+			recipeDB[recipeID] = object;
+		end
+	else
+		-- Cache the object as an item
+		object = itemDBConditional[itemID];
+		
+		-- Update the recipeID.
+		local originalSpellID = object.spellID;
+		local originalRecipeID = object.recipeID;
+		if not originalRecipeID then
+			object.recipeID = recipeID;
+		elseif originalRecipeID ~= recipeID then
+			-- Replace it, but also show a warning.
+			print("Item", itemID, "recipeID changed", originalRecipeID, ">", recipeID);
+			object.recipeID = recipeID;
+		end
+		
+		-- Check for a spellID.
+		if originalSpellID then
+			object.spellID = nil;
+			if not (originalSpellID == originalRecipeID or originalSpellID == recipeID) then
+				print("Item", itemID, "spellID changed", originalSpellID, "> nil");
+			end
+		end
+	end
+	
+	-- Mark it as a recipe.
+	object.f = RECIPES;
+	
+	-- Update the skill requirement.
+	requireSkill = requireSkill or CurrentProfessionID;
+	local originalRequireSkill = object.requireSkill;
+	if not originalRequireSkill then
+		object.requireSkill = requireSkill;
+	elseif originalRequireSkill ~= requireSkill then
+		-- Replace it, but also show a warning.
+		if itemID == 0 then
+			print("Recipe requireSkill changed", originalRequireSkill, ">", requireSkill);
+		else
+			print("Item", itemID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
+		end
+		object.requireSkill = requireSkill;
+	end
+	
+	-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
+	local unobtainType = unobtainStatus and type(unobtainStatus);
+	if unobtainType then
+		if unobtainType == "number" then
+			object.u = unobtainStatus;
+		elseif unobtainType == "string" then
+			object.timeline = { unobtainStatus };
+		elseif unobtainType == "table" then
+			object.timeline = unobtainStatus;
+		end
+	end
+	return object;
+end
+GetRecipeHelperForProfession = function(professionID)
+	recipeDB = root(ROOTS.RecipeDB);	-- NOTE: This value doesn't get persisted yet.
+	CurrentProfessionID = professionID;
+	return ItemRecipeHelper;
+end
 end
 
 --[[
