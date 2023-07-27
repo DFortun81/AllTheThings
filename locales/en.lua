@@ -1014,8 +1014,6 @@ app.L = {
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
 	-- Fishing
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
-	-- Class
-		[-219] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
 	-- War Campaign
 		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
 	-- PvP
@@ -1229,7 +1227,6 @@ app.L = {
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 	-- Fishing
 		[-217] = "Lures",														-- Lures (for Fishing)
-	[-219] = "Sourceless",														-- Sourceless
 	-- War Campaign
 		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
 	-- PvP

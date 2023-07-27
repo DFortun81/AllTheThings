@@ -20,9 +20,15 @@ root(ROOTS.NeverImplemented, {
 	filter(CONSUMABLES),
 	n(FACTIONS),
 	n(FLIGHT_PATHS),		-- completed up to 10.1.0
-	n(FOLLOWERS),			-- completed up to 10.1.0
+	n(FOLLOWERS, {			-- completed up to 10.1.0
+		["timeline"] = { "added 6.0.1" },
+	}),
+	-- #if AFTER 8.0.1
 	filter(ILLUSIONS),		-- completed up to 10.1.0
+	-- #endif
+	-- #if AFTER 7.2.0
 	n(MAPS),
+	-- #endif
 	filter(MISC),
 	filter(MOUNTS),
 	n(PARTY_SYNC, {	-- completed up to 9.2.5
@@ -46,7 +52,9 @@ root(ROOTS.NeverImplemented, {
 	n(QUESTS),
 	filter(RECIPES),
 	n(SETS),
+	-- #if AFTER 3.0.1
 	filter(TITLES),
+	-- #endif
 	filter(TOYS),			-- completed up to 10.0.7
 	n(WEAPONS),
 });

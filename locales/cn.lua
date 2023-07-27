@@ -695,7 +695,6 @@ for key,value in pairs({
 		[-159] = "事件投骰",										-- Daily Dreamway Event Roll
 	-- Fishing
 		[-217] = "鱼竿",												-- Lures (for Fishing)
-	[-219] = "无来源",													-- Sourceless
 	-- PvP
 		[-242] = "无评级",												-- Unrated
 		[-243] = "赏金任务",											-- Bounty

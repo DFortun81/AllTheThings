@@ -5904,7 +5904,12 @@ itemrecipe("Pattern: World Mender's Pants", 72000, 101920, CATA_PHASE_THREE);
 -- Never Implemented Recipe and Crafted Item Database
 local nyi_ = root(ROOTS.NeverImplemented, {});
 local neverimplemented = function(thing)
-	table.insert(nyi_, prof(TAILORING, { thing }));
+	local nyi_g = {};
+	table.insert(nyi_, n(PROFESSIONS, { prof(TAILORING, { g = nyi_g }) }));
+	neverimplemented = function(thing2)
+		table.insert(nyi_g, thing2);
+	end;
+	neverimplemented(thing);
 end
 recipeCache = nil;	-- Disable the cache validation.
 

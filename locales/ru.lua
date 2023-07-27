@@ -674,7 +674,6 @@ for key,value in pairs({
 		[-211] = "Новый персонаж",									-- New Character
 	-- Fishing
 		[-217] = "Наживки",											-- Lures (for Fishing)
-	[-219] = "Без Источника",										-- Sourceless
 	-- PvP
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty

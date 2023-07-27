@@ -467,7 +467,7 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	
 	-- Recipe
 	i(1164),	-- Sam's Tome
-	i(4144),	-- Tome of Polymorph: Cow
+	
 	
 	-- Bind Type 2
 	-- Invalid
