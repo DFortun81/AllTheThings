@@ -1781,7 +1781,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				}),
 				category(259, {	-- Cloaks
 					applyclassicphase(PHASE_ONE_DIREMAUL, i(18509, {	-- Chromatic Cloak
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 					})),
 				}),
 			},
@@ -1879,7 +1879,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				}),
 				category(259, {	-- Cloaks
 					applyclassicphase(PHASE_ONE_DIREMAUL, i(18510, {	-- Hide of the Wild
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 					})),
 				}),
 			},
@@ -1959,7 +1959,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(15138),	-- Onyxia Scale Cloak
 			-- #if AFTER TBC
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18511, {	-- Shifting Cloak
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 			})),
 			-- #endif
 			i(8215, {	-- Wild Leather Cloak
@@ -2141,7 +2141,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(4246),	-- Fine Leather Belt
 				i(4262),	-- Gem-Studded Leather Belt
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18504, {	-- Girdle of Insight
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 				})),
 				i(4257),	-- Green Leather Belt
 				i(4258),	-- Guardian Belt
@@ -2227,7 +2227,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(2302),	-- Handstitched Leather Boots
 				i(206514, {["timeline"] = {ADDED_10_1_5 }}),	-- Lucien's Lost Soles
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18506, {	-- Mongoose Boots
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 				})),
 				i(8197),	-- Nightscape Boots
 				i(7391),	-- Swift Boots
@@ -2299,7 +2299,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				applyclassicphase(PHASE_FOUR, i(20476)),	-- Sandstalker Bracers
 				applyclassicphase(PHASE_FOUR, i(20481)),	-- Spitfire Bracers
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18508, {	-- Swift Flight Bracers
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 				})),
 				i(8205),	-- Tough Scorpid Bracers
 				i(8198),	-- Turtle Scale Bracers
