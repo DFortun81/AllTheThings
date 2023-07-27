@@ -10611,7 +10611,7 @@ local fields = {
 	["icon"] = function(t)
 		local sources = t.sources;
 		if sources then
-			for sourceID, value in pairs(sources) do
+			for i, sourceID in ipairs(sources) do
 				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 				if sourceInfo and sourceInfo.invType == 2 then
 					local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));

@@ -1211,7 +1211,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				["description"] = "Can be caught in Ashenvale, Darkmoon Island, Hillsbrad Foothills, Northern Stranglethorn, and Wetlands in open water.",
 				["maps"] = {
 					ASHENVALE,
-					407,	-- Darkmoon Island
+					DARKMOON_ISLAND,
 					HILLSBRAD_FOOTHILLS,
 					NORTHERN_STRANGLETHORN,
 					WETLANDS,

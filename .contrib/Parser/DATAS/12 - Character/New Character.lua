@@ -1146,28 +1146,28 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75540, {	-- Hermetic Insurance
 				["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75541, {	-- Those Who Hesitate
 				["sourceQuests"] = { 75540 },	-- Hermetic Insurance
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(76155, {	-- A Wolf Among Sheep
 				["sourceQuests"] = { 75541 },	-- Those Who Hesitate
 				["provider"] = { "n", 205276 },	-- Initiate Oman
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 				["g"] = {
@@ -1178,21 +1178,21 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			q(75542, {	-- Curses & Cultists
 				["sourceQuests"] = { 76155 },	-- A Wolf Among Sheep
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75639, {	-- Fel Suspicions
 				["sourceQuests"] = { 75542 },	-- Curses & Cultists
 				["provider"] = { "n", 205433 },	-- Initiate Oman
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75543, {	-- Last Rites By Accident
 				["sourceQuests"] = { 75639 },	-- Fel Suspicions
 				["provider"] = { "o", 402609 },	-- Demonic Gateway
-				["coord"] = { 59.5, 62.4, 407 },
+				["coord"] = { 59.5, 62.4, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),

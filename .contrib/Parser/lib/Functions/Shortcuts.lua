@@ -382,6 +382,14 @@ daljewelcraftingtoken = function(cost, item)			-- Assign a Dalaran Jewelcrafter'
 	applycost(item, { "c", 61, cost });
 	return item;
 end
+darkmoondaggermaw = function(cost, item)				-- Assign a Darkmoon Daggermaw cost to an item.
+	applycost(item, { "i", 124669, cost });	-- Darkmoon Daggermaw
+	return item;
+end
+darkmoonprizeticket = function(cost, item)				-- Assign a Darkmoon Prize Ticket cost to an item.
+	applycost(item, { "c", 515, cost });	-- Darkmoon Prize Ticket
+	return item;
+end
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 221, cost });	-- Emblem of Conquest

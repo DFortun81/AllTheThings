@@ -75,9 +75,6 @@ profession(FISHING, {
 		}
 	}),
 	filter(MOUNTS, {
-		i(142398, {	-- Darkwater Skate (MOUNT!)
-			["cost"] = { { "i", 124669, 500 }, },	-- 500x Darkmoon Daggermaw
-		}),
 		i(163131, {	-- Great Sea Ray (MOUNT!)
 			["description"] = "Caught in any waters in Kul Tiras or Zandalar, including Mechagon (but not Nazjatar).",
 		}),
