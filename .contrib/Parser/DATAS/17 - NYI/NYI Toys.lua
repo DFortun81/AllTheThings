@@ -3,6 +3,11 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, {
 	filter(TOYS, {
+		-- #if BEFORE 3.0.0
+		tier(CLASSIC_TIER, {
+			i(37460),	-- Rope Pet Leash
+		}),
+		-- #endif
 		tier(CATA_TIER, {
 			-- 4.3.0
 			tier(CATA_TIER, 3.0, sharedDataSelf({ ["timeline"] = { CREATED_4_3_0 } }, {

@@ -2,7 +2,17 @@
 --         N E V E R       I M P L E M E N T E D       M O D U L E       --
 ---------------------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
-root("NeverImplemented", {
+CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST = createHeader({
+	readable = "Crieve's Never Implemeneted List",
+	icon = "Interface\\Icons\\INV_Chest_Plate03",
+	text = {
+		en = "Crieve's Never Implemeneted List",
+	},
+	description = {
+		en = "If the following are sorted somewhere, please delete them from this list. Thanks.",
+	},
+});
+root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	q(63769),	-- Holiday Reset Yearly Quest
 	q(55296),	-- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
 	
@@ -328,7 +338,6 @@ root("NeverImplemented", {
 	
 	-- One Handed Mace
 	i(21127),	-- Ahn'Qiraj Mace PH
-	i(16792),	-- Giant Club
 	i(18800),	-- TEST 1H Amberseal Keeper
 	
 	-- Two Handed Mace
@@ -374,7 +383,6 @@ root("NeverImplemented", {
 	i(16125),	-- Test Arcane Res Neck
 	i(16124),	-- Test Frost Res Neck
 	i(16123),	-- Test Nature Res Neck
-	i(17783),	-- Talisman of Binding Fragment
 	i(20358),	-- 63 Green Frost Neck
 	i(20319),	-- 63 Green Rogue Neck
 	i(20288),	-- 63 Green Warrior Neck
@@ -437,7 +445,6 @@ root("NeverImplemented", {
 	i(18566),	-- Essence of the Firelord DEPRECATED
 	i(18589),	-- Dormant Wind Kissed Blade DEPRECATED
 	i(18565),	-- Vessel of Rebirth DEPRECATED
-	i(17409),	-- Encrusted Crystal Fragment
 	i(17347),	-- Syndicate Man Tracker (MURP)
 	i(18593),	-- Thorium Brotherhood Contract (OLD)
 	i(18157),	-- Black Moro'gai Gem
@@ -457,24 +464,6 @@ root("NeverImplemented", {
 	i(23794),	-- Permanent Sheen of Zanza
 	i(23795),	-- Permanent Spirit of Zanza
 	i(23796),	-- Permanent Swiftness of Zanza
-	
-	-- Held in Off Hand
-	i(18316),	-- Obsidian Bauble
-	i(19989),	-- Tome of Devouring Shadows
-	
-	-- Neck
-	i(23058),	-- Life Channeling Necklace
-	i(19122),	-- Woven Ivy Necklace DEPRECATED
-	
-	-- Trinket
-	-- #if BEFORE TBC
-	i(13503),	-- Alchemists' Stone
-	-- #endif
-	i(20525),	-- Earthen Sigil
-	i(18355),	-- Ferra's Collar
-	i(20084),	-- Hunting Net
-	i(12805),	-- Orb of Fire
-	i(18438),	-- Sergeant's Mark
 	
 	-- Recipe
 	i(1164),	-- Sam's Tome
@@ -604,10 +593,8 @@ root("NeverImplemented", {
 		i(25801),	-- 130 Test Caster Trinket
 	}),
 	-- #endif
-});
-
--- These items never made it in.
-root("NeverImplemented", {
+	
+	-- Classic List
 	filter(4, {	-- Cloth
 		i(20351),	-- 63 Green Frost Belt
 		i(20352),	-- 63 Green Frost Bindings
@@ -716,30 +703,8 @@ root("NeverImplemented", {
 		i(12947),	-- Alex's Ring of Audacity
 		i(5828),	-- Ring of Uber Resists (TEST)
 	}),
-	filter(100, {	-- Mount
-		i(875),	-- Brown Horse Summoning
-		i(901),	-- Deptecated White Stallion Summoning (Mount)
-		i(5874),	-- Harness: Black Ram
-		i(5875),	-- Harness: Blue Ram
-		i(1041),	-- Horn of the Black Wolf
-		i(1134),	-- Horn of the Gray Wolf
-		i(5663),	-- Horn of the Red Wolf
-		i(8583),	-- Horn of the Skeletal Mount
-		i(1133),	-- Horn of the Winter Wolf
-		i(14062),	-- Kodo Mount
-		i(8589),	-- Old Whistle of the Ivory Raptor
-		i(8590),	-- Old Whistle of the Obsidian Raptor
-		i(2413),	-- Palomino
-		i(8633),	-- Reins of the Leopard
-		i(8627),	-- Reins of the Night saber
-		i(8628),	-- Reins of the Spotted Nightsaber
-		i(2415),	-- White Stallion
-	}),
-});
 
--- #if AFTER TBC
--- These items never made it in.
-root("NeverImplemented", {
+	-- #if AFTER TBC
 	filter(1, {	-- Held in Off-hand
 		i(26560),	-- 59 TEST Green Off Hand
 		i(26561),	-- 60 TEST Green Off Hand
@@ -1995,9 +1960,6 @@ root("NeverImplemented", {
 		i(29885),	-- Hunter 120 Epic Test Bullets
 		i(24412),	-- Warden's Arrow
 	}),
-	filter(50, {	-- Miscellaneous
-		
-	}),
 	filter(51, {	-- Neck
 		i(26532),	-- 59 TEST Green Cloth Necklace
 		i(27218),	-- 59 TEST Green Druid/Warrior Necklace
@@ -2155,20 +2117,9 @@ root("NeverImplemented", {
 	filter(53, {	-- Trinket
 		i(35485),	-- Goblin Rocket Launcher PH
 	}),
-	-- #if BEFORE 3.0.0
-	filter(102, {	-- Toy
-		i(37460),	-- Rope Pet Leash
-	}),
-	-- #endif
 	filter(113, {	-- Bag
 		i(34466),	-- Test Fel Iron Toolbox
 		i(33027),	-- TEST Mike's Dagger
-		i(35874),	-- Whizzlespark's Portable Pet Mansion
 	}),
-	filter(200, {	-- Recipe
-		applyclassicphase(TBC_PHASE_FOUR, i(185922, {	-- Pattern: Greater Drums of War
-			["description"] = "Not actually sure if this is in the game at all since the spell trained by this recipe can be learned at the trainer.",
-		})),
-	}),
-});
--- #endif
+	-- #endif
+}));

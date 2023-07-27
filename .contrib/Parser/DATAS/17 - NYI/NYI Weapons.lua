@@ -62,6 +62,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
+		-- #if AFTER 10.0.1
 		filter(PROFESSION_EQUIPMENT, {
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -69,6 +70,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
+		-- #endif
 		filter(FIST_WEAPONS, {
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -92,6 +94,10 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(HELD_IN_OFF_HAND, {
+			tier(CLASSIC_TIER, {
+				i(18316),	-- Obsidian Bauble
+				i(19989),	-- Tome of Devouring Shadows
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189672),	-- 10.0 Dungeon Template - Generic - Holdable
@@ -142,6 +148,7 @@ root(ROOTS.NeverImplemented, {
 		filter(ONE_HANDED_MACES, {
 			tier(CLASSIC_TIER, {
 				i(17733),	-- Fist of Stone
+				i(16792),	-- Giant Club
 			}),
 			tier(BFA_TIER, {
 				tier(BFA_TIER, 0.1, {
@@ -444,8 +451,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			-- ItemID/Retrieving
-			i(18316),	-- Obsidian Bauble
-			i(19989),	-- Tome of Devouring Shadows
 			i(108810),	-- 7.0 PH Offhand - Offhand Int
 			i(109273),	-- QA Combat Test Caster Offhand 1
 			i(109301),	-- QA Combat Test Caster Offhand 2

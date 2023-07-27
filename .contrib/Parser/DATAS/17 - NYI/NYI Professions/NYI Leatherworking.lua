@@ -78,6 +78,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			-- #if ANYCLASSIC
+			tier(WOTLK_TIER, {
+				applyclassicphase(TBC_PHASE_FOUR, i(185922, {	-- Pattern: Greater Drums of War
+					["description"] = "Not actually sure if this is in the game at all since the spell trained by this recipe can be learned at the trainer.",
+				})),
+			}),
+			-- #endif
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
