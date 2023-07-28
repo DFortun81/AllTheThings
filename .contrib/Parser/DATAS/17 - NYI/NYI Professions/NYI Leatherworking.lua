@@ -4,6 +4,15 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(LEATHERWORKING, {
 		n(CRAFTABLES, {
+			tier(BFA_TIER, {
+				-- 8.0.1
+				tier(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+					i(161974),	-- Honorable Combatant's Cestus [A]
+					i(159895),	-- Honorable Combatant's Cestus [H]
+					i(161973),	-- Honorable Combatant's Striker [A]
+					i(159894),	-- Honorable Combatant's Striker [H]
+				})),
+			}),
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
@@ -85,6 +94,18 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			-- #endif
+			tier(BFA_TIER, {
+				-- 8.0.1
+				tier(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+					r(269549),	-- Honorable Combatant's Cestus [Rank 1]
+					r(269546),	-- Honorable Combatant's Striker [Rank 1]
+					-- With SpellID attached
+					i(162419),	-- Honorable Combatant's Cestus [Rank 2]
+					i(162420),	-- Honorable Combatant's Cestus [Rank 3]
+					i(162415),	-- Honorable Combatant's Striker [Rank 2]
+					i(162416),	-- Honorable Combatant's Striker [Rank 3]
+				})),
+			}),
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {

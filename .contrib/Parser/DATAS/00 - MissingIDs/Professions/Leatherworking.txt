@@ -494,24 +494,11 @@ r(176422),	-- Ornate Alliance Tent
 r(176424),	-- Ornate Horde Tent
 r(176425),	-- Voodoo Doctor's Hovel
 r(176426),	-- Nomad's Spiked Tent
-r(194737),	-- Battlebound Spaulders
 r(195119),	-- Leatherworking
 r(196383),	-- Stonehide Leather Vamp
-r(196384),	-- Stonehide Boot Exterior
 r(196387),	-- Shaved Felhide
 r(196388),	-- Tanned Fel Leather
-r(196395),	-- Fel Leather Strap
-r(196397),	-- Stonehide Leather Barding
 r(196425),	-- Stonehide Boot Base
-r(196427),	-- Sturdy Stonehide Boots
-r(196442),	-- Stonehide Leather Bed
-r(196456),	-- Felhide Bracers
-r(196457),	-- Fel Leather Cuff
-r(196467),	-- Stonehide Champron
-r(196468),	-- Stonehide Crinet
-r(196469),	-- Stonehide Caparison
-r(208596),	-- Tanned Stonehide Pelt
-r(208615),	-- Stonehide Leather Strip
 r(226105),	-- Light Scale Gloves
 r(226106),	-- Light Scale Bracers
 r(226107),	-- Light Scale Belt
@@ -548,123 +535,12 @@ r(226137),	-- Spritescale Boots
 r(239413),	-- The Sentinel's Eternal Refuge
 r(239414),	-- Vigilance Perch
 8.0.1.25902
-r(256748),	-- Coarse Leather Treads
-r(256749),	-- Coarse Leather Vest \\ Coarse Leather Breastplate
-r(256750),	-- Coarse Leather Gauntlets
-r(256751),	-- Coarse Leather Helm
-r(256752),	-- Coarse Leather Leggings \\ Coarse Leather Greaves
-r(256754),	-- Coarse Leather Pauldrons
-r(256755),	-- Coarse Leather Waistguard
-r(256756),	-- Coarse Leather Armguards
-r(256757),	-- Shimmerscale Armguards
-r(256758),	-- Shimmerscale Waistguard
-r(256759),	-- Shimmerscale Pauldrons
-r(256760),	-- Shimmerscale Leggings \\ Shimmerscale Greaves
-r(256761),	-- Shimmerscale Helm
-r(256762),	-- Shimmerscale Gauntlets
-r(256763),	-- Shimmerscale Vest \\ Shimmerscale Breastplate
-r(256764),	-- Shimmerscale Treads
-r(256765),	-- Hardened Tempest Boots
-r(256768),	-- Hardened Tempest Leggings
-r(256771),	-- Mistscale Boots
-r(256774),	-- Mistscale Leggings \\ Mistscale Greaves
-r(256777),	-- Shimmerscale Striker
-r(256778),	-- Coarse Leather Cestus
-r(256779),	-- Mistscale Knuckles
-r(256780),	-- Mistscale Knuckles
-r(256782),	-- Hardened Tempest Knuckles
-r(256783),	-- Hardened Tempest Knuckles
-r(256787),	-- Recurve Bow of the Strands
-r(256788),	-- Recurve Bow of the Strands
-r(256790),	-- Coarse Leather Barding
-r(256791),	-- Drums of the Maelstrom
-r(256792),	-- Shimmerscale Diving Suit
-r(256793),	-- Shimmerscale Diving Helmet
 r(264577),	-- Leatherworking
 r(264579),	-- Outland Leatherworking
 r(264581),	-- Northrend Leatherworking
 r(264583),	-- Cataclysm Leatherworking
 r(264585),	-- Pandaria Leatherworking
 r(264588),	-- Draenor Leatherworking
-r(264592),	-- Kul Tiran Leatherworking
-8.0.1.25976
-r(265813),	-- Zandalari Leatherworking
-8.0.1.26175
-r(269516),	-- Honorable Combatant's Leather Treads
-r(269519),	-- Honorable Combatant's Leather Gauntlets
-r(269522),	-- Honorable Combatant's Leather Leggings \\ Honorable Combatant's Leather Greaves
-r(269525),	-- Honorable Combatant's Leather Waistguard
-r(269528),	-- Honorable Combatant's Leather Armguards
-r(269531),	-- Honorable Combatant's Mail Treads
-r(269534),	-- Honorable Combatant's Mail Gauntlets
-r(269537),	-- Honorable Combatant's Mail Leggings \\ Honorable Combatant's Mail Greaves
-r(269540),	-- Honorable Combatant's Mail Waistguard
-r(269543),	-- Honorable Combatant's Mail Armguards
-r(269546),	-- Honorable Combatant's Striker
-r(269547),	-- Honorable Combatant's Striker
-r(269548),	-- Honorable Combatant's Striker
-r(269549),	-- Honorable Combatant's Cestus
-r(269550),	-- Honorable Combatant's Cestus
-r(269551),	-- Honorable Combatant's Cestus
-r(269552),	-- Honorable Combatant's Bow
-8.0.1.26310
-r(272278),	-- Hardened Tempest Hide
-8.0.1.26624
-r(276256),	-- Tempest Hide Pouch
-r(278423),	-- Amber Rallying Horn
-8.1.0.27826
-r(282277),	-- Sinister Combatant's Bow
-r(282287),	-- Sinister Combatant's Mail Armguards
-r(282290),	-- Sinister Combatant's Mail Waistguard
-r(282302),	-- Sinister Combatant's Mail Leggings
-r(282306),	-- Sinister Combatant's Mail Gauntlets
-r(282309),	-- Sinister Combatant's Mail Treads
-r(282312),	-- Sinister Combatant's Leather Armguards
-r(282318),	-- Sinister Combatant's Leather Waistguard
-r(282321),	-- Sinister Combatant's Leather Leggings
-r(282324),	-- Sinister Combatant's Leather Gauntlets
-r(282327),	-- Sinister Combatant's Leather Treads
-r(285895),	-- Scarlet Herring Lure
-8.1.0.27985
-r(285079),	-- Enhanced Mistscale Boots
-r(285080),	-- Enhanced Mistscale Greaves
-r(285083),	-- Enhanced Tempest Boots
-r(285084),	-- Enhanced Tempest Leggings
-r(286652),	-- Sanguinated Reskinning \\ Breath to Sanguicell
-8.1.0.28048
-r(287273),	-- Aqueous Reskinning \\ Tidalcore to Hydrocore
-8.2.0.30080
-r(294796),	-- Notorious Combatant's Leather Treads
-r(294799),	-- Notorious Combatant's Leather Gauntlets
-r(294802),	-- Notorious Combatant's Leather Leggings
-r(294805),	-- Notorious Combatant's Leather Waistguard
-r(294808),	-- Notorious Combatant's Leather Armguards
-r(294811),	-- Notorious Combatant's Mail Treads
-r(294814),	-- Notorious Combatant's Mail Gauntlets
-r(294817),	-- Notorious Combatant's Mail Leggings
-r(294820),	-- Notorious Combatant's Mail Waistguard
-r(294823),	-- Notorious Combatant's Mail Armguards
-r(294826),	-- Notorious Combatant's Bow
-r(299019),	-- Dredged Leather Boots
-r(299022),	-- Dredged Leather Leggings
-r(299025),	-- Cragscale Boots
-r(299028),	-- Cragscale Greaves
-8.2.0.30168
-r(301405),	-- Dredged Leather Bladder
-r(301411),	-- Comfortable Rider's Barding
-8.3.0.32044
-r(304412),	-- Uncanny Combatant's Leather Treads
-r(304415),	-- Uncanny Combatant's Leather Gauntlets
-r(304418),	-- Uncanny Combatant's Leather Leggings
-r(304421),	-- Uncanny Combatant's Leather Waistguard
-r(304424),	-- Uncanny Combatant's Leather Armguards
-r(304427),	-- Uncanny Combatant's Mail Treads
-r(304430),	-- Uncanny Combatant's Mail Gauntlets
-r(304433),	-- Uncanny Combatant's Mail Leggings
-r(304436),	-- Uncanny Combatant's Mail Waistguard
-r(304439),	-- Uncanny Combatant's Mail Armguards
-r(304442),	-- Uncanny Combatant's Bow
-r(307176),	-- Void Focus
 9.0.1.34199
 r(330180),	-- Relic of the Past I
 r(330181),	-- Relic of the Past II
@@ -701,11 +577,6 @@ r(330212),	-- Relic of the Past II
 r(330213),	-- Relic of the Past III
 r(330214),	-- Relic of the Past IV
 r(330215),	-- Relic of the Past V
-r(330216),	-- Relic of the Past I
-r(330218),	-- Relic of the Past II
-r(330219),	-- Relic of the Past III
-r(330220),	-- Relic of the Past IV
-r(330221),	-- Relic of the Past V
 
 
 
@@ -742,5 +613,3 @@ r(124566),	-- Draconic Leg Reinforcements
 r(124567),	-- Primal Leg Reinforcements
 r(124568),	-- Heavy Leg Reinforcements
 r(124569),	-- Draconic Leg Reinforcements
-8.0.1.25902
-r(256786),	-- Honorable Combatant's Spellblade \\ REUSE ME \\ Skeletal Composite Bow

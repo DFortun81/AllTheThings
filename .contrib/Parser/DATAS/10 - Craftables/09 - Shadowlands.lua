@@ -521,6 +521,7 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			}),
 		}),
 		filter(MISC, {
+			i(168419),	-- Comfortable Rider's Barding
 			i(173381),	-- Crafter's Mark I
 			i(173382),	-- Crafter's Mark II
 			i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
@@ -533,9 +534,6 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(183942),	-- Novice Crafter's Mark
 			i(185960, {["timeline"] = {ADDED_9_1_0}}),	-- Vestige of Origins
 			i(187784, {["timeline"] = {ADDED_9_2_0}}),	-- Vestige of the Eternal
-		}),
-		filter(MOUNT_EQUIPMENT, {
-			i(168419),	-- Comfortable Rider's Barding
 		}),
 		filter(REAGENTS, {
 			i(172089),	-- Desolate Leather

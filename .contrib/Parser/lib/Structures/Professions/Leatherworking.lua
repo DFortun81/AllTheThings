@@ -470,8 +470,7 @@ COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedD
 		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
 	}),
 }));
-BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { "added 8.0.1" } }, {
-	r(264592),	-- Kul Tiran Leatherworking
+BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(330216, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
 	r(330218, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
 	r(330219, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Battle for Azeroth]
@@ -537,6 +536,8 @@ BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] 
 	filter(MISC, {
 		r(287273, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Reskinning
 		r(278423),	-- Amber Rallying Horn
+		r(256790),	-- Coarse Leather Barding [Rank 1]
+		r(286019, {["timeline"] = {ADDED_8_1_0}}),	-- Coarse Leather Barding [Rank 2]
 		r(256791),	-- Drums of the Maelstrom
 		r(269552),	-- Honorable Combatant's Bow [Rank 1]
 		r(286652, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Reskinning
@@ -544,10 +545,6 @@ BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] 
 		r(256793),	-- Shimmerscale Diving Helmet
 		r(256792),	-- Shimmerscale Diving Suit
 		r(276256),	-- Tempest Hide Pouch
-	}),
-	filter(MOUNT_EQUIPMENT, {
-		r(256790),	-- Coarse Leather Barding [Rank 1]
-		r(286019, {["timeline"] = {ADDED_8_1_0}}),	-- Coarse Leather Barding [Rank 2]
 	}),
 	n(WEAPONS, {
 		r(256778),	-- Coarse Leather Cestus
@@ -563,12 +560,8 @@ BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] 
 		r(304442, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Bow [Rank 1]
 	}),
 }));
-NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline"] = { "added 8.2.0" } }, {
+NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(ARMOR, {
-		r(299027),	-- Banded Cragscale Boots
-		r(299030),	-- Banded Cragscale Greaves
-		r(299021),	-- Banded Dredged Boots
-		r(299024),	-- Banded Dredged Leggings
 		r(299025),	-- Cragscale Boots
 		r(299028),	-- Cragscale Greaves
 		r(299019),	-- Dredged Leather Boots
@@ -583,16 +576,10 @@ NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["time
 		r(294817),	-- Notorious Combatant's Mail Leggings [Rank 1]
 		r(294811),	-- Notorious Combatant's Mail Treads [Rank 1]
 		r(294820),	-- Notorious Combatant's Mail Waistguard [Rank 1]
-		r(299026),	-- Reinforced Cragscale Boots
-		r(299029),	-- Reinforced Cragscale Greaves
-		r(299020),	-- Reinforced Dredged Boots
-		r(299023),	-- Reinforced Dredged Leggings
 	}),
 	filter(MISC, {
-		r(301405),	-- Dredged Leather Bladder
-	}),
-	filter(MOUNT_EQUIPMENT, {
 		r(301411),	-- Comfortable Rider's Barding
+		r(301405),	-- Dredged Leather Bladder
 	}),
 	n(WEAPONS, {
 		r(294826),	-- Notorious Combatant's Bow [Rank 1]
@@ -683,15 +670,13 @@ SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["time
 		}),
 	}),
 	filter(MISC, {
+		r(324735),	-- Comfortable Rider's Barding
 		r(343195),	-- Crafter's Mark I
 		r(324087),	-- Desolate Armor Kit
 		r(309173),	-- Drums of Deathly Ferocity
 		r(308897),	-- Heavy Callous Hide
 		r(308899),	-- Heavy Desolate Leather
 		r(343660),	-- Novice Crafter's Mark
-	}),
-	filter(MOUNT_EQUIPMENT, {
-		r(324735),	-- Comfortable Rider's Barding
 	}),
 	n(WEAPONS, {
 		r(309190),	-- Bone Bound Knuckles

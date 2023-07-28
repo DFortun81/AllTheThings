@@ -671,7 +671,11 @@ profession(LEATHERWORKING, {
 			["coord"] = { 69.6, 29.8, BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
+				i(167560),	-- Cleaned Brilliant Scales
+				i(167558),	-- Etched Bones
 				r(293135, {["u"]=TRAINING}),	--	Drum of Primal Might (RECIPE!)
+				i(167561),	-- Drum of Primal Might
+				i(167559),	-- Supple Hides
 			},
 		})),
 		q(55222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise (H)
@@ -684,7 +688,11 @@ profession(LEATHERWORKING, {
 			["coord"] = { 53.4, 92.5, DAZARALOR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
+				i(167560),	-- Cleaned Brilliant Scales
+				i(167558),	-- Etched Bones
 				r(293135, {["u"]=TRAINING}),	--	Drum of Primal Might (RECIPE!)
+				i(167561),	-- Drum of Primal Might
+				i(167559),	-- Supple Hides
 			},
 		})),
 		q(55235, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction (A)

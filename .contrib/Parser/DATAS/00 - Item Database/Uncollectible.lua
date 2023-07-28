@@ -503,12 +503,7 @@ i(160376);	-- Wilderbew Special
 i(180470);	-- Wild Fungus
 i(173773);	-- Yeasty Hunk
 
-i(15869);	-- Silver Skeleton Key
-i(15870);	-- Golden Skeleton Key
-i(15871);	-- Truesilver Skeleton Key
-i(15872);	-- Arcanite Skeleton Key
-i(18262);	-- Elemental Sharpening Stone
-i(18283);	-- Biznicks 247x128 Accurascope
+
 
 -- Bfa Consumables
 i(162107);	-- [Makeshift Azerite Detector]

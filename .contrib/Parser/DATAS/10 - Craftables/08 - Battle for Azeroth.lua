@@ -89,10 +89,10 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(162496),	-- Plans: Emblazoned Stormsteel Legguards (RECIPE!)
 		}),
 		spell(305839, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Girdle
-			i(171107),	-- Eldritch Osmenite Girdle
+			i(171107),	-- Plans: Eldritch Osmenite Girdle (RECIPE!)
 		})),
 		spell(305842, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Legguards
-			i(171109),	-- Eldritch Osmenite Legguards
+			i(171109),	-- Plans: Eldritch Osmenite Legguards (RECIPE!)
 		})),
 		spell(299001, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Girdle
 			i(168761),	-- Plans: Reinforced Osmenite Girdle (RECIPE!)
@@ -113,10 +113,10 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(162495),	-- Plans: Imbued Stormsteel Legguards (RECIPE!)
 		}),
 		spell(305840, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Girdle
-			i(171108),	-- Maddening Osmenite Girdle
+			i(171108),	-- Plans: Maddening Osmenite Girdle (RECIPE!)
 		})),
 		spell(305843, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Legguards
-			i(171110),	-- Maddening Osmenite Legguards
+			i(171110),	-- Plans: Maddening Osmenite Legguards (RECIPE!)
 		})),
 		n(ARMOR, {
 			i(168682, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Osmenite Girdle [A]
@@ -650,301 +650,335 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		filter(MOUNT_EQUIPMENT, {
-			i(168419),	-- Comfortable Rider's Barding
+		spell(299025, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Cragscale Boots
+			i(168777),	-- Pattern: Reinforced Cragscale Boots (RECIPE!)
+		})),
+		spell(299028, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Cragscale Greaves
+			i(168779),	-- Pattern: Reinforced Cragscale Greaves (RECIPE!)
+		})),
+		spell(299019, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Dredged Leather Boots
+			i(168773),	-- Pattern: Reinforced Dredged Boots (RECIPE!)
+		})),
+		spell(299022, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Dredged Leather Leggings
+			i(168775),	-- Pattern: Reinforced Dredged Leggings (RECIPE!)
+		})),
+		spell(285079, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Mistscale Boots
+			i(165648),	-- Pattern: Fortified Mistscale Boots (RECIPE!)
+		})),
+		spell(285080, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Mistscale Greaves
+			i(165650),	-- Pattern: Fortified Mistscale Greaves (RECIPE!)
+		})),
+		spell(285083, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Tempest Boots
+			i(165644),	-- Pattern: Fortified Tempest Boots (RECIPE!)
+		})),
+		spell(285084, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Tempest Leggings
+			i(165646),	-- Pattern: Fortified Tempest Leggings (RECIPE!)
+		})),
+		spell(285087, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Mistscale Boots
+			i(165649),	-- Pattern: Tempered Mistscale Boots (RECIPE!)
+		})),
+		spell(285088, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Mistscale Greaves
+			i(165651),	-- Pattern: Tempered Mistscale Greaves (RECIPE!)
+		})),
+		spell(285091, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Tempest Boots
+			i(165645),	-- Pattern: Tempered Tempest Boots (RECIPE!)
+		})),
+		spell(285092, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Tempest Leggings
+			i(165647),	-- Pattern: Tempered Tempest Leggings (RECIPE!)
+		})),
+		spell(256765, {	-- Hardened Tempest Boots
+			i(162499),	-- Pattern: Imbued Tempest Boots (RECIPE!)
 		}),
-		filter(BOWS, {
-			i(161975),	-- Honorable Combatant's Bow [Alliance]
-			i(159896),	-- Honorable Combatant's Bow [Horde]
-			i(167935),	-- Notorious Combatant's Bow [Alliance]
-			i(167934),	-- Notorious Combatant's Bow [Horde]
-			i(161968),	-- Recurve Bow of the Strands [Alliance]
-			i(154159),	-- Recurve Bow of the Strands [Horde]
-			i(164711),	-- Sinister Combatant's Bow [Alliance]
-			i(164670),	-- Sinister Combatant's Bow [Horde]
-			i(170362),	-- Uncanny Combatant's Bow [Alliance]
-			i(170363),	-- Uncanny Combatant's Bow [Horde]
+		spell(256768, {	-- Hardened Tempest Leggings
+			i(162501),	-- Pattern: Imbued Tempest Leggings (RECIPE!)
 		}),
-		filter(CONSUMABLES, {
+		spell(256772, {	-- Imbued Mistscale Boots
+			i(162504),	-- Pattern: Emblazoned Mistscale Boots (RECIPE!)
+		}),
+		spell(256775, {	-- Imbued Mistscale Leggings
+			i(162506),	-- Pattern: Emblazoned Mistscale Leggings (RECIPE!)
+		}),
+		spell(256766, {	-- Imbued Tempest Boots
+			i(162500),	-- Pattern: Emblazoned Tempest Boots (RECIPE!)
+		}),
+		spell(256769, {	-- Imbued Tempest Leggings
+			i(162502),	-- Pattern: Emblazoned Tempest Leggings (RECIPE!)
+		}),
+		spell(305802, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Cragscale Boots
+			i(171122),	-- Pattern: Eldritch Cragscale Boots (RECIPE!)
+		})),
+		spell(305806, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Cragscale Greaves
+			i(171118),	-- Pattern: Eldritch Cragscale Greaves (RECIPE!)
+		})),
+		spell(305795, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Dredged Leather Boots
+			i(171126),	-- Pattern: Eldritch Dredged Leather Boots (RECIPE!)
+		})),
+		spell(305798, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Dredged Leather Leggings
+			i(171124),	-- Pattern: Eldritch Dredged Leather Leggings (RECIPE!)
+		})),
+		spell(256771, {	-- Mistscale Boots
+			i(162503),	-- Pattern: Imbued Mistscale Boots (RECIPE!)
+		}),
+		spell(256774, {	-- Mistscale Leggings
+			i(162505),	-- Pattern: Imbued Mistscale Leggings (RECIPE!)
+		}),
+		spell(299026, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Cragscale Boots
+			i(168778),	-- Pattern: Banded Cragscale Boots (RECIPE!)
+		})),
+		spell(299029, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Cragscale Greaves
+			i(168780),	-- Pattern: Pattern: Banded Cragscale Greaves (RECIPE!)
+		})),
+		spell(299020, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Dredged Boots
+			i(168774),	-- Pattern: Banded Dredged Boots (RECIPE!)
+		})),
+		spell(299023, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Dredged Leggings
+			i(168776),	-- Pattern: Banded Dredged Leggings (RECIPE!)
+		})),
+		spell(305803, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Cragscale Boots
+			i(171123),	-- Pattern: Maddening Cragscale Boots (RECIPE!)
+		})),
+		spell(305800, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Cragscale Greaves
+			i(171128),	-- Pattern: Maddening Cragscale Greaves (RECIPE!)
+		})),
+		spell(305796, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Dredged Leather Boots
+			i(171127),	-- Pattern: Maddening Dredged Leather Boots (RECIPE!)
+		})),
+		spell(305804, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Dredged Leather Leggings
+			i(171125),	-- Pattern: Maddening Dredged Leather Leggings (RECIPE!)
+		})),
+		n(ARMOR, {
+			filter(LEATHER, {
+				i(168706, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Dredged Boots [A]
+				i(168712, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Dredged Boots [H]
+				i(168709, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Dredged Leggings [A]
+				i(168715, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Dredged Leggings [H]
+				i(161945),	-- Coarse Leather Armguards [A]
+				i(154145),	-- Coarse Leather Armguards [H]
+				i(161940),	-- Coarse Leather Gauntlets [A]
+				i(154140),	-- Coarse Leather Gauntlets [H]
+				i(161942),	-- Coarse Leather Greaves [A]
+				i(161941),	-- Coarse Leather Helm [A]
+				i(154141),	-- Coarse Leather Helm [H]
+				i(154142),	-- Coarse Leather Leggings [H]
+				i(161943),	-- Coarse Leather Pauldrons [A]
+				i(154143),	-- Coarse Leather Pauldrons [H]
+				i(161938),	-- Coarse Leather Vest [A]
+				i(154138),	-- Coarse Leather Vest [H]
+				i(161944),	-- Coarse Leather Waistguard [A]
+				i(154144),	-- Coarse Leather Waistguard [H]
+				i(161939),	-- Coarse Leather Treads [A]
+				i(154139),	-- Coarse Leather Treads [H]
+				i(168704, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather Boots [A]
+				i(168710, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather Boots [H]
+				i(168707, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather Leggings [A]
+				i(168713, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather Leggings [H]
+				i(170434, {["timeline"] = {ADDED_8_3_0}}),	-- Eldritch Dredged Leather Boots
+				i(170437, {["timeline"] = {ADDED_8_3_0}}),	-- Eldritch Dredged Leather Leggings
+				i(162485),	-- Emblazoned Tempest Boots [A]
+				i(162468),	-- Emblazoned Tempest Boots [H]
+				i(162486),	-- Emblazoned Tempest Leggings [A]
+				i(162470),	-- Emblazoned Tempest Leggings [H]
+				i(165408, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Tempest Boots [A]
+				i(165409, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Tempest Boots [H]
+				i(165383, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Tempest Leggings [A]
+				i(165384, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Tempest Leggings [H]
+				i(165416, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Tempest Boots [A]
+				i(165417, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Tempest Boots [H]
+				i(165391, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Tempest Leggings [A]
+				i(165392, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Tempest Leggings [H]
+				i(161946),	-- Hardened Tempest Boots [A]
+				i(154154),	-- Hardened Tempest Boots [H]
+				i(161947),	-- Hardened Tempest Leggings [A]
+				i(154155),	-- Hardened Tempest Leggings [H]
+				i(161952),	-- Honorable Combatant's Leather Armguards [A]
+				i(159888),	-- Honorable Combatant's Leather Armguards [H]
+				i(161949),	-- Honorable Combatant's Leather Gauntlets [A]
+				i(159885),	-- Honorable Combatant's Leather Gauntlets [H]
+				i(161950),	-- Honorable Combatant's Leather Greaves [A]
+				i(159886),	-- Honorable Combatant's Leather Leggings [H]
+				i(161948),	-- Honorable Combatant's Leather Treads [A]
+				i(159884),	-- Honorable Combatant's Leather Treads [H]
+				i(161951),	-- Honorable Combatant's Leather Waistguard [A]
+				i(159887),	-- Honorable Combatant's Leather Waistguard [H]
+				i(162493),	-- Imbued Tempest Boots [A]
+				i(162467),	-- Imbued Tempest Boots [H]
+				i(162494),	-- Imbued Tempest Leggings [A]
+				i(162469),	-- Imbued Tempest Leggings [H]
+				i(170433, {["timeline"] = {ADDED_8_3_0}}),	-- Maddening Dredged Leather Boots
+				i(170436, {["timeline"] = {ADDED_8_3_0}}),	-- Maddening Dredged Leather Leggings
+				i(167945, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Leather Armguards [A]
+				i(167944, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Leather Armguards [H]
+				i(167947, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Leather Gauntlets [A]
+				i(167946, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Leather Gauntlets [H]
+				i(167949, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Leather Leggings [A]
+				i(167948, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Leather Leggings [H]
+				i(167951, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Leather Treads [A]
+				i(167950, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Leather Treads [H]
+				i(167953, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Leather Waistguard [A]
+				i(167952, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Leather Waistguard [H]
+				i(168705, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Dredged Boots [A]
+				i(168711, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Dredged Boots [H]
+				i(168708, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Dredged Leggings [A]
+				i(168714, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Dredged Leggings [H]
+				i(164703, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Armguards [A]
+				i(164662, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Armguards [H]
+				i(164700, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Gauntlets [A]
+				i(164659, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Gauntlets [H]
+				i(164701, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Leggings [A]
+				i(164660, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Leggings [H]
+				i(164702, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Waistguard [A]
+				i(164661, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Waistguard [H]
+				i(164699, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Treads [A]
+				i(164658, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Leather Treads [H]
+				i(165424, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Tempest Boots [A]
+				i(165425, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Tempest Boots [H]
+				i(165399, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Tempest Leggings [A]
+				i(165400, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Tempest Leggings [H]
+				i(170343, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Leather Armguards [A]
+				i(170351, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Leather Armguards [H]
+				i(170342, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Leather Gauntlets [A]
+				i(170350, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Leather Gauntlets [H]
+				i(170344, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Leather Leggings [A]
+				i(170349, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Leather Leggings [H]
+				i(170345, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Leather Treads [A]
+				i(170348, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Leather Treads [H]
+				i(170346, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Leather Waistguard [A]
+				i(170347, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Leather Waistguard [H]
+				i(170432, {["timeline"] = {ADDED_8_3_0}}),	-- Unsettling Dredged Leather Boots
+				i(170435, {["timeline"] = {ADDED_8_3_0}}),	-- Unsettling Dredged Leather Leggings
+			}),
+			filter(MAIL, {
+				i(168718, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Cragscale Boots [A]
+				i(168724, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Cragscale Boots [H]
+				i(168721, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Cragscale Greaves [A]
+				i(168727, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Cragscale Greaves [H]
+				i(168716, {["timeline"] = {ADDED_8_2_0}}),	-- Cragscale Boots [A]
+				i(168722, {["timeline"] = {ADDED_8_2_0}}),	-- Cragscale Boots [H]
+				i(168719, {["timeline"] = {ADDED_8_2_0}}),	-- Cragscale Greaves [A]
+				i(168725, {["timeline"] = {ADDED_8_2_0}}),	-- Cragscale Greaves [H]
+				i(170440, {["timeline"] = {ADDED_8_3_0}}),	-- Eldritch Cragscale Boots
+				i(170443, {["timeline"] = {ADDED_8_3_0}}),	-- Eldritch Cragscale Greaves
+				i(162481),	-- Emblazoned Mistscale Boots [A]
+				i(162472),	-- Emblazoned Mistscale Boots [H]
+				i(162482),	-- Emblazoned Mistscale Greaves [A]
+				i(162474),	-- Emblazoned Mistscale Leggings [H]
+				i(165404, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Mistscale Boots [A]
+				i(165405, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Mistscale Boots [H]
+				i(165382, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Mistscale Greaves [A]
+				i(165381, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Mistscale Greaves [H]
+				i(165412, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Mistscale Boots [A]
+				i(165413, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Mistscale Boots [H]
+				i(165388, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Mistscale Greaves [A]
+				i(165387, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Mistscale Greaves [H]
+				i(161967),	-- Honorable Combatant's Mail Armguards [A]
+				i(159893),	-- Honorable Combatant's Mail Armguards [H]
+				i(161964),	-- Honorable Combatant's Mail Gauntlets [A]
+				i(159890),	-- Honorable Combatant's Mail Gauntlets [H]
+				i(161965),	-- Honorable Combatant's Mail Greaves [A]
+				i(159891),	-- Honorable Combatant's Mail Leggings [H]
+				i(161963),	-- Honorable Combatant's Mail Treads [A]
+				i(159889),	-- Honorable Combatant's Mail Treads [H]
+				i(161966),	-- Honorable Combatant's Mail Waistguard [A]
+				i(159892),	-- Honorable Combatant's Mail Waistguard [H]
+				i(162489),	-- Imbued Mistscale Boots [A]
+				i(162471),	-- Imbued Mistscale Boots [H]
+				i(162490),	-- Imbued Mistscale Leggings [A]
+				i(162473),	-- Imbued Mistscale Greaves [H]
+				i(170439, {["timeline"] = {ADDED_8_3_0}}),	-- Maddening Cragscale Boots
+				i(170442, {["timeline"] = {ADDED_8_3_0}}),	-- Maddening Cragscale Greaves
+				i(161962),	-- Mistscale Leggings [A]
+				i(154157),	-- Mistscale Greaves [H]
+				i(161961),	-- Mistscale Boots [A]
+				i(154156),	-- Mistscale Boots [H]
+				i(167955, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Mail Armguards [A]
+				i(167954, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Mail Armguards [H]
+				i(167959, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Mail Leggings [A]
+				i(167958, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Mail Leggings [H]
+				i(167957, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Mail Gauntlets [A]
+				i(167956, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Mail Gauntlets [H]
+				i(167961, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Mail Treads [A]
+				i(167960, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Mail Treads [H]
+				i(167963, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Mail Waistguard [A]
+				i(167962, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Mail Waistguard [H]
+				i(168717, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Cragscale Boots [A]
+				i(168723, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Cragscale Boots [H]
+				i(168720, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Cragscale Greaves [A]
+				i(168726, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Cragscale Greaves [H]
+				i(161960),	-- Shimmerscale Armguards [A]
+				i(154153),	-- Shimmerscale Armguards [H]
+				i(161955),	-- Shimmerscale Gauntlets [A]
+				i(154148),	-- Shimmerscale Gauntlets [H]
+				i(161957),	-- Shimmerscale Greaves [A]
+				i(161956),	-- Shimmerscale Helm [A]
+				i(154149),	-- Shimmerscale Helm [H]
+				i(154150),	-- Shimmerscale Leggings [H]
+				i(161958),	-- Shimmerscale Pauldrons [A]
+				i(154151),	-- Shimmerscale Pauldrons [H]
+				i(161953),	-- Shimmerscale Vest [A]
+				i(154146),	-- Shimmerscale Vest [H]
+				i(161959),	-- Shimmerscale Waistguard [A]
+				i(154152),	-- Shimmerscale Waistguard [H]
+				i(161954),	-- Shimmerscale Treads [A]
+				i(154147),	-- Shimmerscale Treads [H]
+				i(164708, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Armguards [A]
+				i(164667, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Armguards [H]
+				i(164705, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Gauntlets [A]
+				i(164664, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Gauntlets [H]
+				i(164706, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Leggings [A]
+				i(164665, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Leggings [H]
+				i(164707, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Waistguard [A]
+				i(164666, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Waistguard [H]
+				i(164704, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Treads [A]
+				i(164663, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Mail Treads [H]
+				i(165420, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Mistscale Boots [A]
+				i(165421, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Mistscale Boots [H]
+				i(165395, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Mistscale Greaves [A]
+				i(165396, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Mistscale Greaves [H]
+				i(170352, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Mail Armguards [A]
+				i(170357, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Mail Armguards [H]
+				i(170353, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Mail Gauntlets [A]
+				i(170358, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Mail Gauntlets [H]
+				i(170354, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Mail Leggings [A]
+				i(170359, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Mail Leggings [H]
+				i(170355, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Mail Treads [A]
+				i(170360, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Mail Treads [H]
+				i(170356, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Mail Waistguard [A]
+				i(170361, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Mail Waistguard [H]
+				i(170438, {["timeline"] = {ADDED_8_3_0}}),	-- Unsettling Cragscale Boots
+				i(170441, {["timeline"] = {ADDED_8_3_0}}),	-- Unsettling Cragscale Greaves
+			}),
+		}),
+		filter(MISC, {
+			i(165749),	-- Amber Rallying Horn
+			i(154166),	-- Coarse Leather Barding
+			i(168419, {["timeline"] = {ADDED_8_2_0}}),	-- Comfortable Rider's Barding
+			i(169445, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather Bladder
 			i(154167),	-- Drums of the Maelstrom
+			i(164978, {["timeline"] = {ADDED_8_1_5}}),	-- Mallet of Thunderous Skins
+			i(165699, {["timeline"] = {ADDED_8_1_0}}),	-- Scarlet Herring Lure
+			i(154169),	-- Shimmerscale Diving Helmet
+			i(154168),	-- Shimmerscale Diving Suit
+			i(165747),	-- Tempest Hide Pouch
 		}),
-		filter(FIST_WEAPONS, {
-			i(161970),	-- Coarse Leather Cestus [Alliance]
-			i(154161),	-- Coarse Leather Cestus [Horde]
-			i(161972),	-- Hardened Tempest Knuckles [Alliance]
-			i(154163),	-- Hardened Tempest Knuckles [Horde]
-			i(161971),	-- Mistscale Knuckles [Alliance]
-			i(154162),	-- Mistscale Knuckles [Horde]
-			i(161969),	-- Shimmerscale Striker [Alliance]
-			i(154160),	-- Shimmerscale Striker [Horde]
-		}),
-		n(HEAD, {
-			i(161941),	-- Coarse Leather Helm [Alliance]
-			i(154141),	-- Coarse Leather Helm [Horde]
-			i(161956),	-- Shimmerscale Helm [Alliance]
-			i(154149),	-- Shimmerscale Helm [Horde]
-		}),
-		n(SHOULDER, {
-			i(161943),	-- Coarse Leather Pauldrons [Alliance]
-			i(154143),	-- Coarse Leather Pauldrons [Horde]
-			i(161958),	-- Shimmerscale Pauldrons [Alliance]
-			i(154151),	-- Shimmerscale Pauldrons [Horde]
-		}),
-		n(CHEST, {
-			i(161938),	-- Coarse Leather Vest [Alliance]
-			i(154138),	-- Coarse Leather Vest [Horde]
-			i(161953),	-- Shimmerscale Vest [Alliance]
-			i(154146),	-- Shimmerscale Vest [Horde]
-		}),
-		n(HANDS, {
-			i(161940),	-- Coarse Leather Gauntlets [Alliance]
-			i(154140),	-- Coarse Leather Gauntlets [Horde]
-			i(161949),	-- Honorable Combatant's Leather Gauntlets [Alliance]
-			i(159885),	-- Honorable Combatant's Leather Gauntlets [Horde]
-			i(161964),	-- Honorable Combatant's Mail Gauntlets [Alliance]
-			i(159890),	-- Honorable Combatant's Mail Gauntlets [Horde]
-			i(167947),	-- Notorious Combatant's Leather Gauntlets [Alliance]
-			i(167946),	-- Notorious Combatant's Leather Gauntlets [Horde]
-			i(167957),	-- Notorious Combatant's Mail Gauntlets [Alliance]
-			i(167956),	-- Notorious Combatant's Mail Gauntlets [Horde]
-			i(161955),	-- Shimmerscale Gauntlets [Alliance]
-			i(154148),	-- Shimmerscale Gauntlets [Horde]
-			i(164700),	-- Sinister Combatant's Leather Gauntlets [Alliance]
-			i(164659),	-- Sinister Combatant's Leather Gauntlets [Horde]
-			i(164705),	-- Sinister Combatant's Mail Gauntlets [Alliance]
-			i(164664),	-- Sinister Combatant's Mail Gauntlets [Horde]
-			i(170342),	-- Uncanny Combatant's Leather Gauntlets [Alliance]
-			i(170350),	-- Uncanny Combatant's Leather Gauntlets [Horde]
-			i(170353),	-- Uncanny Combatant's Mail Gauntlets [Alliance]
-			i(170358),	-- Uncanny Combatant's Mail Gauntlets [Horde]
-		}),
-		n(WRIST, {
-			i(161945),	-- Coarse Leather Armguards [Alliance]
-			i(154145),	-- Coarse Leather Armguards [Horde]
-			i(161952),	-- Honorable Combatant's Leather Armguards [Alliance]
-			i(159888),	-- Honorable Combatant's Leather Armguards [Horde]
-			i(161967),	-- Honorable Combatant's Mail Armguards [Alliance]
-			i(159893),	-- Honorable Combatant's Mail Armguards [Horde]
-			i(167945),	-- Notorious Combatant's Leather Armguards [Alliance]
-			i(167944),	-- Notorious Combatant's Leather Armguards [Horde]
-			i(167955),	-- Notorious Combatant's Mail Armguards [Alliance]
-			i(167954),	-- Notorious Combatant's Mail Armguards [Horde]
-			i(161960),	-- Shimmerscale Armguards [Alliance]
-			i(154153),	-- Shimmerscale Armguards [Horde]
-			i(164703),	-- Sinister Combatant's Leather Armguards [Alliance]
-			i(164662),	-- Sinister Combatant's Leather Armguards [Horde]
-			i(164708),	-- Sinister Combatant's Mail Armguards [Alliance]
-			i(164667),	-- Sinister Combatant's Mail Armguards [Horde]
-			i(170343),	-- Uncanny Combatant's Leather Armguards [Alliance]
-			i(170351),	-- Uncanny Combatant's Leather Armguards [Horde]
-			i(170352),	-- Uncanny Combatant's Mail Armguards [Alliance]
-			i(170357),	-- Uncanny Combatant's Mail Armguards [Horde]
-		}),
-		n(WAIST, {
-			i(161944),	-- Coarse Leather Waistguard [Alliance]
-			i(154144),	-- Coarse Leather Waistguard [Horde]
-			i(161951),	-- Honorable Combatant's Leather Waistguard [Alliance]
-			i(159887),	-- Honorable Combatant's Leather Waistguard [Horde]
-			i(161966),	-- Honorable Combatant's Mail Waistguard [Alliance]
-			i(159892),	-- Honorable Combatant's Mail Waistguard [Horde]
-			i(167953),	-- Notorious Combatant's Leather Waistguard [Alliance]
-			i(167952),	-- Notorious Combatant's Leather Waistguard [Horde]
-			i(167963),	-- Notorious Combatant's Mail Waistguard [Alliance]
-			i(167962),	-- Notorious Combatant's Mail Waistguard [Horde]
-			i(161959),	-- Shimmerscale Waistguard [Alliance]
-			i(154152),	-- Shimmerscale Waistguard [Horde]
-			i(164702),	-- Sinister Combatant's Leather Waistguard [Alliance]
-			i(164661),	-- Sinister Combatant's Leather Waistguard [Horde]
-			i(164707),	-- Sinister Combatant's Mail Waistguard [Alliance]
-			i(164666),	-- Sinister Combatant's Mail Waistguard [Horde]
-			i(170346),	-- Uncanny Combatant's Leather Waistguard [Alliance]
-			i(170347),	-- Uncanny Combatant's Leather Waistguard [Horde]
-			i(170356),	-- Uncanny Combatant's Mail Waistguard [Alliance]
-			i(170361),	-- Uncanny Combatant's Mail Waistguard [Horde]
-		}),
-		n(LEGS, {
-			i(168721),	-- Banded Cragscale Greaves [Alliance]
-			i(168727),	-- Banded Cragscale Greaves [Horde]
-			i(168709),	-- Banded Dredged Leggings [Alliance]
-			i(168715),	-- Banded Dredged Leggings [Horde]
-			i(161942),	-- Coarse Leather Greaves [Alliance]
-			i(154142),	-- Coarse Leather Leggings [Horde]
-			i(168719, {	-- Cragscale Greaves [Alliance]
-				i(168779),	-- Pattern: Reinforced Cragscale Greaves
-			}),
-			i(168725, {	-- Cragscale Greaves [Horde]
-				i(168779),	-- Pattern: Reinforced Cragscale Greaves
-			}),
-			i(168707, {	-- Dredged Leather Leggings [Alliance]
-				i(168775),	-- Recipe: Reinforced Dredged Leggings
-			}),
-			i(168713, {	-- Dredged Leather Leggings [Horde]
-				i(168775),	-- Recipe: Reinforced Dredged Leggings
-			}),
-			i(170443),	-- Eldritch Cragscale Greaves
-			i(170437),	-- Eldritch Dredged Leather Leggings
-			i(162482),	-- Emblazoned Mistscale Greaves [Alliance]
-			i(162474),	-- Emblazoned Mistscale Leggings [Horde]
-			i(162486),	-- Emblazoned Tempest Leggings [Alliance]
-			i(162470),	-- Emblazoned Tempest Leggings [Horde]
-			i(165382),	-- Enhanced Mistscale Greaves [Alliance]
-			i(165381),	-- Enhanced Mistscale Greaves [Horde]
-			i(165383),	-- Enhanced Tempest Leggings [Alliance]
-			i(165384),	-- Enhanced Tempest Leggings [Horde]
-			i(165388),	-- Fortified Mistscale Greaves [Alliance]
-			i(165387),	-- Fortified Mistscale Greaves [Horde]
-			i(165391),	-- Fortified Tempest Leggings [Alliance]
-			i(165392),	-- Fortified Tempest Leggings [Horde]
-			i(161947),	-- Hardened Tempest Leggings [Alliance]
-			i(154155),	-- Hardened Tempest Leggings [Horde]
-			i(161950),	-- Honorable Combatant's Leather Greaves [Alliance]
-			i(159886),	-- Honorable Combatant's Leather Leggings [Horde]
-			i(161965),	-- Honorable Combatant's Mail Greaves [Alliance]
-			i(159891),	-- Honorable Combatant's Mail Leggings [Horde]
-			i(162490),	-- Imbued Mistscale Leggings [Alliance]
-			i(162473),	-- Imbued Mistscale Greaves [Horde]
-			i(162494),	-- Imbued Tempest Leggings [Alliance]
-			i(162469),	-- Imbued Tempest Leggings [Horde]
-			i(170442, {	-- Maddening Cragscale Greaves
-				i(171118),	-- Pattern: Eldritch Cragscale Greaves (RECIPE!)
-			}),
-			i(170436, {	-- Maddening Dredged Leather Leggings
-				i(171124),	-- Pattern: Eldritch Dredged Leather Leggings (RECIPE!)
-			}),
-			i(161962, {	-- Mistscale Leggings [Alliance]
-				i(162505),	-- Pattern: Imbued Mistscale Leggings (RECIPE!)
-			}),
-			i(154157, {	-- Mistscale Greaves [Horde]
-				i(162505),	-- Pattern: Imbued Mistscale Leggings (RECIPE!)
-			}),
-			i(167949),	-- Notorious Combatant's Leather Leggings [Alliance]
-			i(167948),	-- Notorious Combatant's Leather Leggings [Horde]
-			i(167959),	-- Notorious Combatant's Mail Leggings [Alliance]
-			i(167958),	-- Notorious Combatant's Mail Leggings [Horde]
-			i(168720, {	-- Reinforced Cragscale Greaves [Alliance]
-				i(168780),	-- Pattern: Banded Cragscale Greaves
-			}),
-			i(168726, {	-- Reinforced Cragscale Greaves [Horde]
-				i(168780),	-- Pattern: Banded Cragscale Greaves
-			}),
-			i(168708, {	-- Reinforced Dredged Leggings [Alliance]
-				i(168776),	-- Pattern: Banded Dredged Leggings
-			}),
-			i(168714, {	-- Reinforced Dredged Leggings [Horde]
-				i(168776),	-- Pattern: Banded Dredged Leggings
-			}),
-			i(161957),	-- Shimmerscale Greaves [Alliance]
-			i(154150),	-- Shimmerscale Leggings [Horde]
-			i(164701),	-- Sinister Combatant's Leather Leggings [Alliance]
-			i(164660),	-- Sinister Combatant's Leather Leggings [Horde]
-			i(164706),	-- Sinister Combatant's Mail Leggings [Alliance]
-			i(164665),	-- Sinister Combatant's Mail Leggings [Horde]
-			i(165395),	-- Tempered Mistscale Greaves [Alliance]
-			i(165396),	-- Tempered Mistscale Greaves [Horde]
-			i(165399),	-- Tempered Tempest Leggings [Alliance]
-			i(165400),	-- Tempered Tempest Leggings [Horde]
-			i(170344),	-- Uncanny Combatant's Leather Leggings [Alliance]
-			i(170349),	-- Uncanny Combatant's Leather Leggings [Horde]
-			i(170354),	-- Uncanny Combatant's Mail Leggings [Alliance]
-			i(170359),	-- Uncanny Combatant's Mail Leggings [Horde]
-			i(170441, {	-- Unsettling Cragscale Greaves
-				i(171128),	-- Pattern: Maddening Cragscale Greaves
-			}),
-			i(170435, {	-- Unsettling Dredged Leather Leggings
-				i(171125),	-- Pattern: Maddening Dredged Leather Leggings
-			}),
-		}),
-		n(FEET, {
-			i(168718),	-- Banded Cragscale Boots [Alliance]
-			i(168724),	-- Banded Cragscale Boots [Horde]
-			i(168706),	-- Banded Dredged Boots [Alliance]
-			i(168712),	-- Banded Dredged Boots [Horde]
-			i(161939),	-- Coarse Leather Treads [Alliance]
-			i(154139),	-- Coarse Leather Treads [Horde]
-			i(168716, {	-- Cragscale Boots [Alliance]
-				i(168777),	-- Recipe: Reinforced Cragscale Boots
-			}),
-			i(168722, {	-- Cragscale Boots [Horde]
-				i(168777),	-- Recipe: Reinforced Cragscale Boots
-			}),
-			i(168704, {	-- Dredged Leather Boots [Alliance]
-				i(168773),	-- Recipe: Reinforced Dredged Boots
-			}),
-			i(168710, {	-- Dredged Leather Boots [Horde]
-				i(168773),	-- Recipe: Reinforced Dredged Boots
-			}),
-			i(170440),	-- Eldritch Cragscale Boots
-			i(170434),	-- Eldritch Dredged Leather Boots
-			i(162481),	-- Emblazoned Mistscale Boots [Alliance]
-			i(162472),	-- Emblazoned Mistscale Boots [Horde]
-			i(162485),	-- Emblazoned Tempest Boots [Alliance]
-			i(162468),	-- Emblazoned Tempest Boots [Horde]
-			i(165404),	-- Enhanced Mistscale Boots [Alliance]
-			i(165405),	-- Enhanced Mistscale Boots [Horde]
-			i(165408),	-- Enhanced Tempest Boots [Alliance]
-			i(165409),	-- Enhanced Tempest Boots [Horde]
-			i(165412),	-- Fortified Mistscale Boots [Alliance]
-			i(165413),	-- Fortified Mistscale Boots [Horde]
-			i(165416),	-- Fortified Tempest Boots [Alliance]
-			i(165417),	-- Fortified Tempest Boots [Horde]
-			i(161946),	-- Hardened Tempest Boots [Alliance]
-			i(154154),	-- Hardened Tempest Boots [Horde]
-			i(161948),	-- Honorable Combatant's Leather Treads [Alliance]
-			i(159884),	-- Honorable Combatant's Leather Treads [Horde]
-			i(161963),	-- Honorable Combatant's Mail Treads [Alliance]
-			i(159889),	-- Honorable Combatant's Mail Treads [Horde]
-			i(162489),	-- Imbued Mistscale Boots [Alliance]
-			i(162471),	-- Imbued Mistscale Boots [Horde]
-			i(162493),	-- Imbued Tempest Boots [Alliance]
-			i(162467),	-- Imbued Tempest Boots [Horde]
-			i(170439, {	-- Maddening Cragscale Boots
-				i(171122),	-- Pattern: Eldritch Cragscale Boots
-			}),
-			i(170433, {	-- Maddening Dredged Leather Boots
-				i(171126),	-- Pattern: Eldritch Dredged Leather Boots
-			}),
-			i(161961, {	-- Mistscale Boots [Alliance]
-				i(162503),	-- Pattern: Imbued Mistscale Boots
-			}),
-			i(154156, {	-- Mistscale Boots [Horde]
-				i(162503),	-- Pattern: Imbued Mistscale Boots
-			}),
-			i(167951),	-- Notorious Combatant's Leather Treads [Alliance]
-			i(167950),	-- Notorious Combatant's Leather Treads [Horde]
-			i(167961),	-- Notorious Combatant's Mail Treads [Alliance]
-			i(167960),	-- Notorious Combatant's Mail Treads [Horde]
-			i(168717, {	-- Reinforced Cragscale Boots [Alliance]
-				i(168778),	-- Recipe: Banded Cragscale Boots
-			}),
-			i(168723, {	-- Reinforced Cragscale Boots [Horde]
-				i(168778),	-- Recipe: Banded Cragscale Boots
-			}),
-			i(168705, {	-- Reinforced Dredged Boots [Alliance]
-				i(168774),	-- Recipe: Banded Dredge Boots
-			}),
-			i(168711, {	-- Reinforced Dredged Boots [Horde]
-				i(168774),	-- Recipe: Banded Dredge Boots
-			}),
-			i(161954),	-- Shimmerscale Treads [Alliance]
-			i(154147),	-- Shimmerscale Treads [Horde]
-			i(164699),	-- Sinister Combatant's Leather Treads [Alliance]
-			i(164658),	-- Sinister Combatant's Leather Treads [Horde]
-			i(164704),	-- Sinister Combatant's Mail Treads [Alliance]
-			i(164663),	-- Sinister Combatant's Mail Treads [Horde]
-			i(165420),	-- Tempered Mistscale Boots [Alliance]
-			i(165421),	-- Tempered Mistscale Boots [Horde]
-			i(165424),	-- Tempered Tempest Boots [Alliance]
-			i(165425),	-- Tempered Tempest Boots [Horde]
-			i(170345),	-- Uncanny Combatant's Leather Treads [Alliance]
-			i(170348),	-- Uncanny Combatant's Leather Treads [Horde]
-			i(170355),	-- Uncanny Combatant's Mail Treads [Alliance]
-			i(170360),	-- Uncanny Combatant's Mail Treads [Horde]
-			i(170438, {	-- Unsettling Cragscale Boots
-				i(171123),	-- Pattern: Maddening Cragscale Boots
-			}),
-			i(170432, {	-- Unsettling Dredged Leather Boots
-				i(171127),	-- Pattern: Maddening Dredged Leather Boots
-			}),
+		n(WEAPONS, {
+			i(161970),	-- Coarse Leather Cestus [A]
+			i(154161),	-- Coarse Leather Cestus [H]
+			i(161972),	-- Hardened Tempest Knuckles [A]
+			i(154163),	-- Hardened Tempest Knuckles [H]
+			i(161975),	-- Honorable Combatant's Bow [A]
+			i(159896),	-- Honorable Combatant's Bow [H]
+			i(161971),	-- Mistscale Knuckles [A]
+			i(154162),	-- Mistscale Knuckles [H]
+			i(167935, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Bow [A]
+			i(167934, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Bow [H]
+			i(161968),	-- Recurve Bow of the Strands [A]
+			i(154159),	-- Recurve Bow of the Strands [H]
+			i(161969),	-- Shimmerscale Striker [A]
+			i(154160),	-- Shimmerscale Striker [H]
+			i(164711, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Bow [A]
+			i(164670, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Bow [H]
+			i(170362, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Bow [A]
+			i(170363, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Bow [H]
 		}),
 	}),
 	prof(TAILORING, {

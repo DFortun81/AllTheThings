@@ -2379,10 +2379,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 			n(WEAPONS, {
-				i(159894),	-- Honorable Combatant's Striker
-				i(159895),	-- Honorable Combatant's Cestus
-				i(161973),	-- Honorable Combatant's Striker
-				i(161974),	-- Honorable Combatant's Cestus
 				i(159941),	-- Honorable Combatant's Inked Vessel
 				i(161937),	-- Honorable Combatant's Inked Vessel
 				i(159923),	-- Honorable Combatant's Salutary Scepter

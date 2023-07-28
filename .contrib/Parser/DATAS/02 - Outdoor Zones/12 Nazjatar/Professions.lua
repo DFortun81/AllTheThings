@@ -53,6 +53,17 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				}),
 			},
 		})),
+		prof(LEATHERWORKING, {
+			["crs"] = {
+				153817, -- Instructor Alikana <Profession Trainer> (A)
+				154321, -- Jada <Profession Trainer> (H)
+			},
+			["coords"] = {
+				{ 38.0, 53.6, NAZJATAR },
+				{ 49.0, 61.6, NAZJATAR },
+			},
+			["g"] = NAZJATAR_LEATHERWORKING,
+		}),
 		prof(MINING, {
 			q(56103, {	-- Ounces of Osmenite (A)
 				["provider"] = { "i", 168939 },	-- Osmenite Shards

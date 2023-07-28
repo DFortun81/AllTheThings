@@ -300,6 +300,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 				}),
 			}),
+			prof(LEATHERWORKING, {
+				n(122698, {	-- Xanjo <Leatherworking Trainer>
+					["coord"] = { 44.0, 34.6, DAZARALOR },
+					["races"] = HORDE_ONLY,
+					["g"] = appendGroups(BFA_LEATHERWORKING, {
+						r(265813),	-- Zandalari Leatherworking
+					}),
+				}),
+			}),
 			prof(MINING, {
 				-- Monelite Deposit
 				q(51962, {	-- Lumbering Away

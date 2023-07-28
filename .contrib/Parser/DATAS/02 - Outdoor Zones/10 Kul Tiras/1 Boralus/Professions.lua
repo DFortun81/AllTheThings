@@ -193,6 +193,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					},
 				}),
 			})),
+			prof(LEATHERWORKING, {
+				n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
+					["coord"] = { 75.5, 12.6, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = appendGroups(BFA_BLACKSMITHING, {
+						r(264592),	-- Kul Tiran Leatherworking
+					}),
+				}),
+			}),
 			prof(JEWELCRAFTING, {
 				q(54479, {	-- Jeweled Designs
 					["requireSkill"] = JEWELCRAFTING,
