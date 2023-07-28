@@ -6,6 +6,8 @@ i(208421),	-- Compendium of the New Moon
 i(208433),	-- Bronze Racer's Pennant
 10.1.7.50505
 i(208880),	-- Brewhahat
+10.1.7.50587
+i(209052),	-- Brew Barrel
 
 
 
@@ -20,3 +22,5 @@ i(208421),	-- Compendium of the New Moon
 i(208433),	-- Bronze Racer's Pennant
 10.1.7.50505
 i(208880),	-- Brewhahat
+10.1.7.50587
+i(209052),	-- Brew Barrel

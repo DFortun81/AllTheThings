@@ -310,6 +310,31 @@ root(ROOTS.Unsorted, {
 			i(208924),	-- Dreambound Necklace
 			i(208925),	-- Dreambound Trinket
 			i(208926),	-- Dreambound Weapon
+			--
+			i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite
+			i(208103),	-- Highland Drake: Visage of the Infinite
+			i(208104),	-- Renewed Proto-Drake: Visage of the Infinite
+			i(208105),	-- Windborne Velocidrake: Visage of the Infinite
+			i(208106),	-- Winding Slitherdrake: Visage of the Infinite
+			i(208626),	-- Ashamane's Jewel of Rebirth
+			i(208986),	-- The Horseman's Horrific Hood
+			i(208987),	-- The Horseman's Sinister Slicer
+			i(208988),	-- Band of the Petrified Pumpkin
+			i(208989),	-- Wicked Witch's Signet
+			i(208990),	-- The Horseman's Ring
+			i(208991),	-- Seal of Ghoulish Glee
+			i(209020),	-- Loot-Filled Pumpkin
+			i(209022),	-- The Horseman's Sinister Slicer
+			i(209023),	-- The Horseman's Horrific Hood
+			i(209024),	-- Loot-Filled Pumpkin
+			i(209025),	-- Loot-Filled Pumpkin
+			i(209026),	-- Loot-Stuffed Pumpkin
+			i(209033),	-- Worn Felsteel Prayer Rod
+			i(209034),	-- Half-Completed Invasion Plans
+			i(209044),	-- Orange Brewfest Bulwark
+			i(209052),	-- Brew Barrel
+			i(209053),	-- Green Brewfest Bulwark
+			i(209055),	-- Third Booster Part
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {
@@ -511,6 +536,8 @@ root(ROOTS.Unsorted, {
 			--
 			i(190636),	-- Armored Siege Kodo
 			i(190608),	-- Crushhoof
+			--
+			i(190601),	-- Sunny
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible

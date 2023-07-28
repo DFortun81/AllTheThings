@@ -35,11 +35,28 @@ ach(15209),	-- Rival: Season 2
 ach(15210),	-- Challenger: Season 2
 2.5.4.44833
 ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
+3.0.1.8622
+ach(970),	-- Tricks and Treats of Azeroth
+3.0.1.8874
+ach(1187),	-- The Keymaster
 3.1.0.9767
 ach(1657),	-- Hallowed Be Thy Name
 ach(1684),	-- Brewmaster
 ach(1692),	-- Merrymaker
 ach(1707),	-- Fool For Love
+ach(1784),	-- Hail to the Chef
+ach(2797),	-- Noble Gardener
+3.3.5.12340
+ach(3656),	-- Pilgrim
+ach(3838),	-- Dungeon & Raid Emblem
+ach(3839),	-- 25 Dungeon & Raid Emblems
+ach(3840),	-- 50 Dungeon & Raid Emblems
+ach(3841),	-- 100 Dungeon & Raid Emblems
+ach(3842),	-- 250 Dungeon & Raid Emblems
+ach(3843),	-- 500 Dungeon & Raid Emblems
+ach(3876),	-- 1500 Dungeon & Raid Emblems
+ach(4784),	-- Emblematic
+ach(4785),	-- Emblematic
 3.4.0.46158
 ach(16313),	-- Rival: Season 5
 ach(16314),	-- Gladiator: Season 5
@@ -838,3 +855,7 @@ ach(18942),	-- Eastern Kingdoms Racing Completionist: Gold
 ach(18959),	-- Don't Lose Your Head, Man
 ach(18960),	-- Kickin' With the Wick
 ach(18962),	-- A Cleansing Fire
+10.1.7.50587
+ach(18963),	-- Burst Damage
+ach(18976),	-- Draconically Superior
+ach(18977),	-- Draconically Epic

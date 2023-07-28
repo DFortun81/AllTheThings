@@ -65319,7 +65319,7 @@ s(189943)/i(208622),	-- Ashamane's Fangs of Rebirth
 s(189944)/i(208623),	-- Ashamane's Blade of Rebirth
 s(189945)/i(208624),	-- Ashamane's Claws of Rebirth
 s(189946)/i(208625),	-- Ashamane's Crescent of Rebirth
-s(189947)/i(208626),	-- Ashamane Jewel of Rebirth
+s(189947)/i(208626),	-- Ashamane's Jewel of Rebirth \\ Ashamane Jewel of Rebirth
 s(189948)/i(208627),	-- Webbed Saronite Headguard
 s(189949)/i(208628),	-- Webbed Saronite Spaulders
 s(189950)/i(208629),	-- Webbed Saronite Girdle
@@ -65381,3 +65381,10 @@ s(190144)/i(208817),	--
 s(190145)/i(208818),	--
 s(190146)/i(208819),	--
 s(190147)/i(208820),	--
+10.1.7.50587
+s(190168)/i(208986),	-- The Horseman's Horrific Hood
+s(190169)/i(208987),	-- The Horseman's Sinister Slicer
+s(190171)/i(209022),	-- The Horseman's Sinister Slicer
+s(190172)/i(209023),	-- The Horseman's Horrific Hood
+s(190176)/i(209044),	-- Orange Brewfest Bulwark
+s(190177)/i(209053),	-- Green Brewfest Bulwark
