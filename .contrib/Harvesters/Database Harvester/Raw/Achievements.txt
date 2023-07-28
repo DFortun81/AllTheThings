@@ -12908,3 +12908,9 @@
 18959@@@Don't Lose Your Head, Man
 18960@@@Kickin' With the Wick
 18962@@@A Cleansing Fire
+10.1.7.50587
+18365@@@[Hidden] [DO NOT USE] Draconically Superior
+18366@@@[Hidden] [DO NOT USE] Draconically Epic
+18963@@@Burst Damage
+18976@@@Draconically Superior
+18977@@@Draconically Epic
