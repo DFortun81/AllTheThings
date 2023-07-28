@@ -88,10 +88,10 @@ profession(BLACKSMITHING, {
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN },
 			["g"] = {
 				r(195097, {	-- Blacksmithing (Legion Master)
-					["timeline"]={ ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+					["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
 					["collectible"] = false,
 				}),
-				applyclassicphase(BFA_PHASE_ONE, r(264446, {["timeline"]={ADDED_8_0_1}})),	-- Legion Blacksmithing
+				applyclassicphase(BFA_PHASE_ONE, r(264446, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Blacksmithing
 				r(330169, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Legion]
 				r(330170, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Legion]
 				r(330171, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Legion]
@@ -656,26 +656,24 @@ profession(BLACKSMITHING, {
 			["coord"] = { 27.5, 50.8, DEEPHOLM },
 			["timeline"] = { ADDED_8_1_5 },
 		}),
-		q(50275, {	-- Anvil's Away (A)
+		q(50275, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away (A)
 			["sourceQuests"] = { 50288 },	-- Therazane's Choice
 			["provider"] = { "n", 133796 },	-- Therazane
 			["coord"] = { 27.5, 50.8, DEEPHOLM },
 			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
 			["g"] = {
 				r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
 			},
-		}),
-		q(50279, {	-- Anvil's Away (H)
+		})),
+		q(50279, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away (H)
 			["sourceQuests"] = { 50288 },	-- Therazane's Choice
 			["provider"] = { "n", 133796 },	-- Therazane
 			["coord"] = { 27.5, 50.8, DEEPHOLM },
 			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
 			["g"] = {
 				r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
 			},
-		}),
+		})),
 	})),
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(QUESTS, {
@@ -908,7 +906,7 @@ profession(BLACKSMITHING, {
 				},
 			})),
 		}),
-		n(-1144, sharedData({	-- Weekly Profession Knowledge
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
 				currency(BLACKSMITHING_KNOWLEDGE),

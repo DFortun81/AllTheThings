@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["groups"] = {
 						i(31401),	-- Design: The Frozen Eye
-						applyclassicphase(TBC_PHASE_THREE, i(33165, {["timeline"]={"added 2.3.0"}})),	-- Formula: Enchant Weapon - Greater Agility (RECIPE!)
+						applyclassicphase(TBC_PHASE_THREE, i(33165, {["timeline"] = {ADDED_2_3_0}})),	-- Formula: Enchant Weapon - Greater Agility (RECIPE!)
 						applyclassicphase(TBC_PHASE_THREE, i(33124, {	-- Pattern: Cloak of Darkness (RECIPE!)
 							["spellID"] = 42546,	-- Cloak of Darkness
 							["requireSkill"] = LEATHERWORKING,

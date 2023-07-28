@@ -133,7 +133,7 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(172231),	-- Sacred Shard
 			i(172230),	-- Soul Dust
 		}),
-		cat(657, {	-- Armor Enchantments
+		n(ARMOR_ENCHANTMENTS, {
 			i(177715),	-- Enchant Chest - Eternal Bounds
 			i(172418),	-- Enchant Chest - Eternal Bulwark
 			i(183738),	-- Enchant Chest - Eternal Insight
@@ -162,14 +162,14 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(172363),	-- Enchant Ring - Tenet of Mastery
 			i(172364),	-- Enchant Ring - Tenet of Versatility
 		}),
-		filter(MISC, {-- Optional Reagents
+		filter(MISC, {
 			i(187825, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Protoweave
 			i(173381),	-- Crafter's Mark I
 			i(173382),	-- Crafter's Mark II
 			i(187823, {["timeline"] = {ADDED_9_2_0}}),	-- Magically Regulated Automa Core
 			i(183942),	-- Novice Crafter's Mark
 		}),
-		cat(1371, {	-- Reagents
+		filter(REAGENTS, {
 			i(172437),	-- Enchanted Elethium Bar
 			i(172438),	-- Enchanted Heavy Callous Hide
 			i(172439),	-- Enchanted Lightless Silk
@@ -177,15 +177,15 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 		filter(TOYS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			i(186973),	-- Anima-ted Leash (TOY!)
 		})),
-		filter(WANDS, {
-			i(172462),	-- Enchanted Twilight Wand
-		}),
-		cat(658, {	-- Weapon Enchantments
+		n(WEAPON_ENCHANTMENTS, {
 			i(172365),	-- Enchant Weapon - Ascended Vigor
 			i(172366),	-- Enchant Weapon - Celestial Guidance
 			i(172367),	-- Enchant Weapon - Eternal Grace
 			i(172370),	-- Enchant Weapon - Lightless Force
 			i(172368),	-- Enchant Weapon - Sinful Revelation
+		}),
+		n(WEAPONS, {
+			i(172462),	-- Enchanted Twilight Wand
 		}),
 	}),
 	prof(ENGINEERING, {

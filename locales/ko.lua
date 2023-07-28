@@ -689,7 +689,6 @@ for key,value in pairs({
 		[-1120] = "마루크 켄타우로스",										-- Maruuk Centaur
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
 		[-1150] = "로암 니펜",											-- Loamm Niffen
-		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
 		[-1200] = "지스케라 금고",										-- Zskera Vaults
 		[-1202] = "피락의 습격",											-- Fyrakk Assaults
 		[-1203] = "냄새 추적",											-- Sniffenseeking

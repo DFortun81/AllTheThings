@@ -725,10 +725,8 @@ for key,value in pairs({
 		[-1120] = "Centaure maruuk",								-- Maruuk Centaur
 		[-1130] = "Rohart iskaarien",								-- Iskaara Tuskarr
 		[-1143] = "Rotation Rare de DF",							-- DF Rare Rotation
-		[-1144] = "Connaissance hebdomadaire de profession",		-- Weekly Profession Header
 		[-1150] = "Flairans de Terreau",							-- Loamm Niffen
 		[-1151] = "Marchandage",									-- Bartering
-		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
 		[-1200] = "Caveaux de Zskera",								-- Zskera Vaults
 		[-1202] = "Assauts de Fyrakka",								-- Fyrakk Assaults
 		[-1203] = "Recherches olfactives",							-- Sniffenseeking

@@ -733,10 +733,8 @@ for key,value in pairs({
 		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
 		[-1130] = "Искарские клыкарры",								-- Iskaara Tuskarr
 		[-1143] = "Редкие DF по расписанию",						-- DF Rare Rotation
-		[-1144] = "Еженедельные Очки Знаний Профессий",				-- Weekly Profession Header
 		[-1150] = "Лоаммские ниффы",								-- Loamm Niffen
 		[-1151] = "Обмен",											-- Bartering
-		[-1152] = "Первые Изделия",									-- First Crafts
 		[-1200] = "Зкерские хранилища",								-- Zskera Vaults
 		[-1202] = "Налеты Фиракка",									-- Fyrakk Assaults
 		[-1203] = "Нюхорысканье",									-- Sniffenseeking

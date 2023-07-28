@@ -691,7 +691,6 @@ for key,value in pairs({
 		[-1130] = "Tuskarr di Iskaara",								-- Iskaara Tuskarr
 		[-1150] = "Niffen di Loamm",								-- Loamm Niffen
 		[-1151] = "Baratto",										-- Bartering
-		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
 		[-1200] = "Cripte di Zskera",								-- Zskera Vaults
 		[-1202] = "Assalti di Fyrakk",								-- Fyrakk Assaults
 		[-1203] = "Il Fiutatutto",									-- Sniffenseeking

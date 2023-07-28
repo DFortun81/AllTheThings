@@ -198,42 +198,27 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(124442),	-- Chaos Crystal
 			i(124441),	-- Leylight Shard
 		}),
-		filter(BATTLE_PETS, {
-			i(128533),	-- Enchanted Cauldron (PET!)
-			i(128535),	-- Enchanted Pen (PET!)
-			i(128534),	-- Enchanted Torch (PET!)
-		}),
-		cat(446, {	-- Cloak Enchantments
+		n(ARMOR_ENCHANTMENTS, {
 			i(128549),	-- Enchant Cloak - Binding of Agility
 			i(128550),	-- Enchant Cloak - Binding of Intellect
 			i(128548),	-- Enchant Cloak - Binding of Strength
 			i(128546),	-- Enchant Cloak - Word of Agility
 			i(128547),	-- Enchant Cloak - Word of Intellect
 			i(128545),	-- Enchant Cloak - Word of Strength
-		}),
-		cat(448, {	-- Glove Enchantments
 			i(128558),	-- Enchant Glove - Legion Herbalism
 			i(128559),	-- Enchant Glove - Legion Mining
 			i(128560),	-- Enchant Glove - Legion Skinning
 			i(128561),	-- Enchant Glove - Legion Surveying
-		}),
-		cat(444, {	-- Neck Enchantments
 			i(141910),	-- Enchant Neck - Mark of the Ancient Priestess
 			i(128551),	-- Enchant Neck - Mark of the Claw
-			i(144307, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Deadly
+			i(144307, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Deadly
 			i(128552),	-- Enchant Neck - Mark of the Distant Army
 			i(141908),	-- Enchant Neck - Mark of the Heavy Hide
 			i(128553),	-- Enchant Neck - Mark of the Hidden Satyr
-			i(144304, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Master
-			i(144306, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Quick
+			i(144304, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Master
+			i(144306, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Quick
 			i(141909),	-- Enchant Neck - Mark of the Trained Soldier
-			i(144305, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Versatile
-		}),
-		cat(490, {	-- Relics
-			i(136691),	-- Immaculate Fibril
-			i(136689),	-- Soul Fibril
-		}),
-		cat(445, {	-- Ring Enchantments
+			i(144305, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Versatile
 			i(128541),	-- Enchant Ring - Binding of Critical Strike
 			i(128542),	-- Enchant Ring - Binding of Haste
 			i(128543),	-- Enchant Ring - Binding of Mastery
@@ -242,9 +227,16 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(128538),	-- Enchant Ring - Word of Haste
 			i(128539),	-- Enchant Ring - Word of Mastery
 			i(128540),	-- Enchant Ring - Word of Versatility
-		}),
-		cat(447, {	-- Shoulder Enchantments
 			i(128554),	-- Enchant Shoulder - Boon of the Scavenger
+		}),
+		filter(BATTLE_PETS, {
+			i(128533),	-- Enchanted Cauldron (PET!)
+			i(128535),	-- Enchanted Pen (PET!)
+			i(128534),	-- Enchanted Torch (PET!)
+		}),
+		filter(RELICS_F, {
+			i(136691),	-- Immaculate Fibril
+			i(136689),	-- Soul Fibril
 		}),
 		filter(TOYS, {
 			i(128536),	-- Leylight Brazier (TOY!)

@@ -754,10 +754,8 @@ for key,value in pairs({
 		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
 		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
 		[-1143] = "每30分钟稀有",										-- DF Rare Rotation (Every 30 min Rare)
-		[-1144] = "每周专业知识",										-- Weekly Profession Header
 		[-1150] = "峈姆鼹鼠人",											-- Loamm Niffen
 		[-1151] = "以物易物",								            -- Bartering
-		[-1152] = "首次制造！",							                -- First Crafts
 		[-1200] = "兹斯克拉宝库",										-- Zskera Vaults
 		[-1202] = "菲莱克突袭",											-- Fyrakk Assaults
 		[-1203] = "嗅味探寻",							                -- Sniffenseeking

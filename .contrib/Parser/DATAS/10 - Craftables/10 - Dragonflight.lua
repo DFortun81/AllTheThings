@@ -1,7 +1,6 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-
 -- Simple function for First Craft tracking Quests
 -- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
 local function FirstCraft(questID, recipeID, added)
@@ -11,7 +10,6 @@ local function FirstCraft(questID, recipeID, added)
 	end
 	return t;
 end
-local FIRST_CRAFT_HEADER = -1152;
 
 root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	i(190456),	-- Artisan's Mettle
@@ -96,7 +94,155 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				-- Recipes Discoverable
 			}),
 		}),
-		n(FIRST_CRAFT_HEADER, sharedData({
+		filter(CONSUMABLES, {
+			i(191384),	-- Aerated Mana Potion+
+			i(191385),	-- Aerated Mana Potion++
+			i(191386),	-- Aerated Mana Potion+++
+			i(191342),	-- Aerated Phial of Deftness+
+			i(191343),	-- Aerated Phial of Deftness++
+			i(191344),	-- Aerated Phial of Deftness+++
+			i(197720),	-- Aerated Phial of Quick Hands+
+			i(197721),	-- Aerated Phial of Quick Hands++
+			i(197722),	-- Aerated Phial of Quick Hands+++
+			i(191360),	-- Bottled Putrescence+
+			i(191361),	-- Bottled Putrescence++
+			i(191362),	-- Bottled Putrescence+++
+			i(204633, {["timeline"] = {ADDED_10_1_0}}),	-- Cauldron of Extracted Putrescence
+			i(191488),	-- Cauldron of the Pooka+
+			i(191489),	-- Cauldron of the Pooka++
+			i(191490),	-- Cauldron of the Pooka+++
+			i(191348),	-- Charged Phial of Alacrity+
+			i(191349),	-- Charged Phial of Alacrity++
+			i(191350),	-- Charged Phial of Alacrity+++
+			i(191354),	-- Crystalline Phial of Perception+
+			i(191355),	-- Crystalline Phial of Perception++
+			i(191356),	-- Crystalline Phial of Perception+++
+			i(191375),	-- Delicate Suspension of Spores+
+			i(191376),	-- Delicate Suspension of Spores++
+			i(191377),	-- Delicate Suspension of Spores+++
+			i(204238, sharedDataSelf({["timeline"] = {ADDED_10_1_0}},{	-- Draconic Phial Cauldron+
+				i(204643),	-- Fleeting Phial of the Eye in the Storm+
+				i(204646),	-- Fleeting Phial of Still Air+
+				i(204649),	-- Fleeting Phial of Icy Preservation+
+				i(204652),	-- Fleeting Iced Phial of Corrupting Rage+
+				i(204655),	-- Fleeting Phial of Charged Isolation+
+				i(204658),	-- Fleeting Phial of Glacial Fury+
+				i(204661),	-- Fleeting Phial of Static Empowerment+
+				i(204664),	-- Fleeting Phial of Tepid Versatility+
+				i(204667),	-- Fleeting Charged Phial of Alacrity+
+				i(204670),	-- Fleeting Phial of Elemental Chaos+
+			})),
+			i(204679, sharedDataSelf({["timeline"] = {ADDED_10_1_0}},{	-- Draconic Phial Cauldron++
+				i(204644),	-- Fleeting Phial of the Eye in the Storm++
+				i(204647),	-- Fleeting Phial of Still Air++
+				i(204650),	-- Fleeting Phial of Icy Preservation++
+				i(204653),	-- Fleeting Iced Phial of Corrupting Rage++
+				i(204656),	-- Fleeting Phial of Charged Isolation++
+				i(204659),	-- Fleeting Phial of Glacial Fury++
+				i(204662),	-- Fleeting Phial of Static Empowerment++
+				i(204665),	-- Fleeting Phial of Tepid Versatility++
+				i(204668),	-- Fleeting Charged Phial of Alacrity++
+				i(204671),	-- Fleeting Phial of Elemental Chaos++
+			})),
+			i(204680, sharedDataSelf({["timeline"] = {ADDED_10_1_0}},{	-- Draconic Phial Cauldron+++
+				i(204645),	-- Fleeting Phial of the Eye in the Storm+++
+				i(204648),	-- Fleeting Phial of Still Air+++
+				i(204651),	-- Fleeting Phial of Icy Preservation+++
+				i(204654),	-- Fleeting Iced Phial of Corrupting Rage+++
+				i(204657),	-- Fleeting Phial of Charged Isolation+++
+				i(204660),	-- Fleeting Phial of Glacial Fury+++
+				i(204663),	-- Fleeting Phial of Static Empowerment+++
+				i(204666),	-- Fleeting Phial of Tepid Versatility+++
+				i(204669),	-- Fleeting Charged Phial of Alacrity+++
+				i(204672),	-- Fleeting Phial of Elemental Chaos+++
+			})),
+			i(191387),	-- Elemental Potion of Power+
+			i(191388),	-- Elemental Potion of Power++
+			i(191389),	-- Elemental Potion of Power+++
+			i(191381),	-- Elemental Potion of Ultimate Power+
+			i(191382),	-- Elemental Potion of Ultimate Power++
+			i(191383),	-- Elemental Potion of Ultimate Power+++
+			i(191327),	-- Iced Phial of Corrupting Rage+
+			i(191328),	-- Iced Phial of Corrupting Rage++
+			i(191329),	-- Iced Phial of Corrupting Rage+++
+			i(191330),	-- Phial of Charged Isolation+
+			i(191331),	-- Phial of Charged Isolation++
+			i(191332),	-- Phial of Charged Isolation+++
+			i(191357),	-- Phial of Elemental Chaos+
+			i(191358),	-- Phial of Elemental Chaos++
+			i(191359),	-- Phial of Elemental Chaos+++
+			i(191333),	-- Phial of Glacial Fury+
+			i(191334),	-- Phial of Glacial Fury++
+			i(191335),	-- Phial of Glacial Fury+++
+			i(191324),	-- Phial of Icy Preservation+
+			i(191325),	-- Phial of Icy Preservation++
+			i(191326),	-- Phial of Icy Preservation+++
+			i(191336),	-- Phial of Static Empowerment+
+			i(191337),	-- Phial of Static Empowerment++
+			i(191338),	-- Phial of Static Empowerment+++
+			i(191321),	-- Phial of Still Air+
+			i(191322),	-- Phial of Still Air++
+			i(191323),	-- Phial of Still Air+++
+			i(191339),	-- Phial of Tepid Versatility+
+			i(191340),	-- Phial of Tepid Versatility++
+			i(191341),	-- Phial of Tepid Versatility+++
+			i(191318),	-- Phial of the Eye in the Storm+
+			i(191319),	-- Phial of the Eye in the Storm++
+			i(191320),	-- Phial of the Eye in the Storm+++
+			i(191482, {	-- Potion Cauldron of Power+
+				i(191905),	-- Fleeting Elemental Potion of Power+
+			}),
+			i(191483, {	-- Potion Cauldron of Power++
+				i(191906),	-- Fleeting Elemental Potion of Power++
+			}),
+			i(191484, {	-- Potion Cauldron of Power+++
+				i(191907),	-- Fleeting Elemental Potion of Power+++
+			}),
+			i(191485, {	-- Potion Cauldron of Ultimate Power+
+				i(191912),	-- Fleeting Elemental Potion of Ultimate Power+
+			}),
+			i(191486, {	-- Potion Cauldron of Ultimate Power++
+				i(191913),	-- Fleeting Elemental Potion of Ultimate Power++
+			}),
+			i(191487, {	-- Potion Cauldron of Ultimate Power+++
+				i(191914),	-- Fleeting Elemental Potion of Ultimate Power+++
+			}),
+			i(191366),	-- Potion of Chilled Clarity+
+			i(191367),	-- Potion of Chilled Clarity++
+			i(191368),	-- Potion of Chilled Clarity+++
+			i(191351),	-- Potion of Frozen Fatality+
+			i(191352),	-- Potion of Frozen Fatality++
+			i(191353),	-- Potion of Frozen Fatality+++
+			i(191363),	-- Potion of Frozen Focus+
+			i(191364),	-- Potion of Frozen Focus++
+			i(191365),	-- Potion of Frozen Focus+++
+			i(191396),	-- Potion of Gusts+
+			i(191397),	-- Potion of Gusts++
+			i(191398),	-- Potion of Gusts+++
+			i(191399),	-- Potion of Shocking Disclosure+
+			i(191400),	-- Potion of Shocking Disclosure++
+			i(191401),	-- Potion of Shocking Disclosure+++
+			i(191393),	-- Potion of the Hushed Zephyr+
+			i(191394),	-- Potion of the Hushed Zephyr++
+			i(191395),	-- Potion of the Hushed Zephyr+++
+			i(191369),	-- Potion of Withering Vitality+
+			i(191370),	-- Potion of Withering Vitality++
+			i(191371),	-- Potion of Withering Vitality+++
+			i(191378),	-- Refreshing Healing Potion+
+			i(191379),	-- Refreshing Healing Potion++
+			i(191380),	-- Refreshing Healing Potion+++
+			i(191372),	-- Residual Neural Channeling Agent+
+			i(191373),	-- Residual Neural Channeling Agent++
+			i(191374),	-- Residual Neural Channeling Agent+++
+			i(191345),	-- Steaming Phial of Finesse+
+			i(191346),	-- Steaming Phial of Finesse++
+			i(191347),	-- Steaming Phial of Finesse+++
+			i(204370, {["timeline"] = {ADDED_10_1_0}}),	-- Stinky Bright Potion
+			i(191917),	-- Suspiciously Fuzzy Drink+
+			i(191918),	-- Suspiciously Fuzzy Drink++
+			i(191919),	-- Suspiciously Fuzzy Drink+++
+		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ALCHEMY,
 		},{
 			-- Alchemy Essentials
@@ -225,152 +371,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(191492),	-- Alacritous Alchemist Stone
 			i(191491),	-- Sustaining Alchemist Stone
 		}),
-		i(191384),	-- Aerated Mana Potion+
-		i(191385),	-- Aerated Mana Potion++
-		i(191386),	-- Aerated Mana Potion+++
-		i(191342),	-- Aerated Phial of Deftness+
-		i(191343),	-- Aerated Phial of Deftness++
-		i(191344),	-- Aerated Phial of Deftness+++
-		i(197720),	-- Aerated Phial of Quick Hands+
-		i(197721),	-- Aerated Phial of Quick Hands++
-		i(197722),	-- Aerated Phial of Quick Hands+++
-		i(191360),	-- Bottled Putrescence+
-		i(191361),	-- Bottled Putrescence++
-		i(191362),	-- Bottled Putrescence+++
-		i(204633, {["timeline"] = {ADDED_10_1_0}}),	-- Cauldron of Extracted Putrescence
-		i(191488),	-- Cauldron of the Pooka+
-		i(191489),	-- Cauldron of the Pooka++
-		i(191490),	-- Cauldron of the Pooka+++
-		i(191348),	-- Charged Phial of Alacrity+
-		i(191349),	-- Charged Phial of Alacrity++
-		i(191350),	-- Charged Phial of Alacrity+++
-		i(191354),	-- Crystalline Phial of Perception+
-		i(191355),	-- Crystalline Phial of Perception++
-		i(191356),	-- Crystalline Phial of Perception+++
-		i(191375),	-- Delicate Suspension of Spores+
-		i(191376),	-- Delicate Suspension of Spores++
-		i(191377),	-- Delicate Suspension of Spores+++
-		i(204238, sharedDataSelf({["timeline"] = {ADDED_10_1_0}},{	-- Draconic Phial Cauldron+
-			i(204643),	-- Fleeting Phial of the Eye in the Storm+
-			i(204646),	-- Fleeting Phial of Still Air+
-			i(204649),	-- Fleeting Phial of Icy Preservation+
-			i(204652),	-- Fleeting Iced Phial of Corrupting Rage+
-			i(204655),	-- Fleeting Phial of Charged Isolation+
-			i(204658),	-- Fleeting Phial of Glacial Fury+
-			i(204661),	-- Fleeting Phial of Static Empowerment+
-			i(204664),	-- Fleeting Phial of Tepid Versatility+
-			i(204667),	-- Fleeting Charged Phial of Alacrity+
-			i(204670),	-- Fleeting Phial of Elemental Chaos+
-		})),
-		i(204679, sharedDataSelf({["timeline"] = {ADDED_10_1_0}},{	-- Draconic Phial Cauldron++
-			i(204644),	-- Fleeting Phial of the Eye in the Storm++
-			i(204647),	-- Fleeting Phial of Still Air++
-			i(204650),	-- Fleeting Phial of Icy Preservation++
-			i(204653),	-- Fleeting Iced Phial of Corrupting Rage++
-			i(204656),	-- Fleeting Phial of Charged Isolation++
-			i(204659),	-- Fleeting Phial of Glacial Fury++
-			i(204662),	-- Fleeting Phial of Static Empowerment++
-			i(204665),	-- Fleeting Phial of Tepid Versatility++
-			i(204668),	-- Fleeting Charged Phial of Alacrity++
-			i(204671),	-- Fleeting Phial of Elemental Chaos++
-		})),
-		i(204680, sharedDataSelf({["timeline"] = {ADDED_10_1_0}},{	-- Draconic Phial Cauldron+++
-			i(204645),	-- Fleeting Phial of the Eye in the Storm+++
-			i(204648),	-- Fleeting Phial of Still Air+++
-			i(204651),	-- Fleeting Phial of Icy Preservation+++
-			i(204654),	-- Fleeting Iced Phial of Corrupting Rage+++
-			i(204657),	-- Fleeting Phial of Charged Isolation+++
-			i(204660),	-- Fleeting Phial of Glacial Fury+++
-			i(204663),	-- Fleeting Phial of Static Empowerment+++
-			i(204666),	-- Fleeting Phial of Tepid Versatility+++
-			i(204669),	-- Fleeting Charged Phial of Alacrity+++
-			i(204672),	-- Fleeting Phial of Elemental Chaos+++
-		})),
-		i(191387),	-- Elemental Potion of Power+
-		i(191388),	-- Elemental Potion of Power++
-		i(191389),	-- Elemental Potion of Power+++
-		i(191381),	-- Elemental Potion of Ultimate Power+
-		i(191382),	-- Elemental Potion of Ultimate Power++
-		i(191383),	-- Elemental Potion of Ultimate Power+++
-		i(191327),	-- Iced Phial of Corrupting Rage+
-		i(191328),	-- Iced Phial of Corrupting Rage++
-		i(191329),	-- Iced Phial of Corrupting Rage+++
-		i(191330),	-- Phial of Charged Isolation+
-		i(191331),	-- Phial of Charged Isolation++
-		i(191332),	-- Phial of Charged Isolation+++
-		i(191357),	-- Phial of Elemental Chaos+
-		i(191358),	-- Phial of Elemental Chaos++
-		i(191359),	-- Phial of Elemental Chaos+++
-		i(191333),	-- Phial of Glacial Fury+
-		i(191334),	-- Phial of Glacial Fury++
-		i(191335),	-- Phial of Glacial Fury+++
-		i(191324),	-- Phial of Icy Preservation+
-		i(191325),	-- Phial of Icy Preservation++
-		i(191326),	-- Phial of Icy Preservation+++
-		i(191336),	-- Phial of Static Empowerment+
-		i(191337),	-- Phial of Static Empowerment++
-		i(191338),	-- Phial of Static Empowerment+++
-		i(191321),	-- Phial of Still Air+
-		i(191322),	-- Phial of Still Air++
-		i(191323),	-- Phial of Still Air+++
-		i(191339),	-- Phial of Tepid Versatility+
-		i(191340),	-- Phial of Tepid Versatility++
-		i(191341),	-- Phial of Tepid Versatility+++
-		i(191318),	-- Phial of the Eye in the Storm+
-		i(191319),	-- Phial of the Eye in the Storm++
-		i(191320),	-- Phial of the Eye in the Storm+++
-		i(191482, {	-- Potion Cauldron of Power+
-			i(191905),	-- Fleeting Elemental Potion of Power+
-		}),
-		i(191483, {	-- Potion Cauldron of Power++
-			i(191906),	-- Fleeting Elemental Potion of Power++
-		}),
-		i(191484, {	-- Potion Cauldron of Power+++
-			i(191907),	-- Fleeting Elemental Potion of Power+++
-		}),
-		i(191485, {	-- Potion Cauldron of Ultimate Power+
-			i(191912),	-- Fleeting Elemental Potion of Ultimate Power+
-		}),
-		i(191486, {	-- Potion Cauldron of Ultimate Power++
-			i(191913),	-- Fleeting Elemental Potion of Ultimate Power++
-		}),
-		i(191487, {	-- Potion Cauldron of Ultimate Power+++
-			i(191914),	-- Fleeting Elemental Potion of Ultimate Power+++
-		}),
-		i(191366),	-- Potion of Chilled Clarity+
-		i(191367),	-- Potion of Chilled Clarity++
-		i(191368),	-- Potion of Chilled Clarity+++
-		i(191351),	-- Potion of Frozen Fatality+
-		i(191352),	-- Potion of Frozen Fatality++
-		i(191353),	-- Potion of Frozen Fatality+++
-		i(191363),	-- Potion of Frozen Focus+
-		i(191364),	-- Potion of Frozen Focus++
-		i(191365),	-- Potion of Frozen Focus+++
-		i(191396),	-- Potion of Gusts+
-		i(191397),	-- Potion of Gusts++
-		i(191398),	-- Potion of Gusts+++
-		i(191399),	-- Potion of Shocking Disclosure+
-		i(191400),	-- Potion of Shocking Disclosure++
-		i(191401),	-- Potion of Shocking Disclosure+++
-		i(191393),	-- Potion of the Hushed Zephyr+
-		i(191394),	-- Potion of the Hushed Zephyr++
-		i(191395),	-- Potion of the Hushed Zephyr+++
-		i(191369),	-- Potion of Withering Vitality+
-		i(191370),	-- Potion of Withering Vitality++
-		i(191371),	-- Potion of Withering Vitality+++
-		i(191378),	-- Refreshing Healing Potion+
-		i(191379),	-- Refreshing Healing Potion++
-		i(191380),	-- Refreshing Healing Potion+++
-		i(191372),	-- Residual Neural Channeling Agent+
-		i(191373),	-- Residual Neural Channeling Agent++
-		i(191374),	-- Residual Neural Channeling Agent+++
-		i(191345),	-- Steaming Phial of Finesse+
-		i(191346),	-- Steaming Phial of Finesse++
-		i(191347),	-- Steaming Phial of Finesse+++
-		i(204370, {["timeline"] = {ADDED_10_1_0}}),	-- Stinky Bright Potion
-		i(191917),	-- Suspiciously Fuzzy Drink+
-		i(191918),	-- Suspiciously Fuzzy Drink++
-		i(191919),	-- Suspiciously Fuzzy Drink+++
 	}),
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
@@ -416,7 +416,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		filter(BATTLE_PETS, {
 			i(191886),	-- Alvin the Anvil (PET!)
 		}),
-		n(FIRST_CRAFT_HEADER, sharedData({
+		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = BLACKSMITHING,
 		},{
 			-- Smelting --
@@ -557,6 +557,25 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(205039, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Clasp+++
 			i(191304),	-- Sturdy Expedition Shovel
 		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(191228, {["requireSkill"] = BLACKSMITHING}),	-- Black Dragon Touched Hammer
+			i(191237, {["requireSkill"] = BLACKSMITHING}),	-- Draconium Blacksmith's Hammer
+			i(191235, {["requireSkill"] = BLACKSMITHING}),	-- Draconium Blacksmith's Toolbox
+			i(191238, {["requireSkill"] = LEATHERWORKING}),	-- Draconium Leatherworker's Knife
+			i(191236, {["requireSkill"] = LEATHERWORKING}),	-- Draconium Leatherworker's Toolset
+			i(191239, {["requireSkill"] = TAILORING}),	-- Draconium Needle Set
+			i(191242, {["requireSkill"] = MINING}),	-- Draconium Pickaxe
+			i(191241, {["requireSkill"] = HERBALISM}),	-- Draconium Sickle
+			i(191240, {["requireSkill"] = SKINNING}),	-- Draconium Skinning Knife
+			i(191888, {["requireSkill"] = BLACKSMITHING}),	-- Khaz'gorite Blacksmith's Hammer
+			i(191230, {["requireSkill"] = BLACKSMITHING}),	-- Khaz'gorite Blacksmith's Toolbox
+			i(191227, {["requireSkill"] = LEATHERWORKING}),	-- Khaz'gorite Leatherworker's Knife
+			i(191229, {["requireSkill"] = LEATHERWORKING}),	-- Khaz'gorite Leatherworker's Toolset
+			i(191226, {["requireSkill"] = TAILORING}),	-- Khaz'gorite Needle Set
+			i(191223, {["requireSkill"] = MINING}),	-- Khaz'gorite Pickaxe
+			i(191224, {["requireSkill"] = HERBALISM}),	-- Khaz'gorite Sickle
+			i(191225, {["requireSkill"] = SKINNING}),	-- Khaz'gorite Skinning Knife
+		}),
 		filter(REAGENTS, {
 			i(190530),	-- Frostfire Alloy+
 			i(190531),	-- Frostfire Alloy++
@@ -603,24 +622,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(205168, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Impact Buckler
 			i(205046, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Razing Annihilator
 			i(192081),	-- Shield of the Hearth
-			-- Tools
-			i(191228, {["requireSkill"]=BLACKSMITHING}),	-- Black Dragon Touched Hammer
-			i(191237, {["requireSkill"]=BLACKSMITHING}),	-- Draconium Blacksmith's Hammer
-			i(191235, {["requireSkill"]=BLACKSMITHING}),	-- Draconium Blacksmith's Toolbox
-			i(191238, {["requireSkill"]=LEATHERWORKING}),	-- Draconium Leatherworker's Knife
-			i(191236, {["requireSkill"]=LEATHERWORKING}),	-- Draconium Leatherworker's Toolset
-			i(191239, {["requireSkill"]=TAILORING}),	-- Draconium Needle Set
-			i(191242, {["requireSkill"]=MINING}),	-- Draconium Pickaxe
-			i(191241, {["requireSkill"]=HERBALISM}),	-- Draconium Sickle
-			i(191240, {["requireSkill"]=SKINNING}),	-- Draconium Skinning Knife
-			i(191888, {["requireSkill"]=BLACKSMITHING}),	-- Khaz'gorite Blacksmith's Hammer
-			i(191230, {["requireSkill"]=BLACKSMITHING}),	-- Khaz'gorite Blacksmith's Toolbox
-			i(191227, {["requireSkill"]=LEATHERWORKING}),	-- Khaz'gorite Leatherworker's Knife
-			i(191229, {["requireSkill"]=LEATHERWORKING}),	-- Khaz'gorite Leatherworker's Toolset
-			i(191226, {["requireSkill"]=TAILORING}),	-- Khaz'gorite Needle Set
-			i(191223, {["requireSkill"]=MINING}),	-- Khaz'gorite Pickaxe
-			i(191224, {["requireSkill"]=HERBALISM}),	-- Khaz'gorite Sickle
-			i(191225, {["requireSkill"]=SKINNING}),	-- Khaz'gorite Skinning Knife
 		}),
 	}),
 	prof(COOKING, {
@@ -711,7 +712,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(201360),	-- Glimmer of Order
 			}),
 		}),
-		cat(657, {	-- Armor Enchantments
+		n(ARMOR_ENCHANTMENTS, {
 			i(199934),	-- Enchant Boots - Plainsrunner's Breeze+
 			i(199976),	-- Enchant Boots - Plainsrunner's Breeze++
 			i(200018),	-- Enchant Boots - Plainsrunner's Breeze+++
@@ -797,7 +798,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		filter(BATTLE_PETS, {
 			i(200479),	-- Sophic Amalgamation (PET!)
 		}),
-		n(FIRST_CRAFT_HEADER, sharedData({
+		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENCHANTING,
 		},{
 			-- Cloak Enchantments
@@ -930,6 +931,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				["collectible"] = false,
 			}),
 		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(198715, {["requireSkill"] = ENCHANTING}),	-- Runed Draconium Rod
+			i(198716, {["requireSkill"] = ENCHANTING}),	-- Runed Khaz'gorite Rod
+			i(201601, {["requireSkill"] = ENCHANTING}),	-- Runed Serevite Rod
+		}),
 		filter(REAGENTS, {
 			i(204697, {["timeline"] = {ADDED_10_1_0}}),	-- Enchanted Aspect's Shadowflame Crest
 			i(204681, {["timeline"] = {ADDED_10_1_0}}),	-- Enchanted Whelpling's Shadowflame Crest
@@ -950,16 +956,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				},
 			}),
 		}),
-		n(WEAPONS, {
-			i(200641),	-- Enchanted Writhebark Wand
-			i(204401, {["timeline"] = {ADDED_10_1_0}}),	-- Spore Keeper's Baton
-			i(200642),	-- Torch of Primal Awakening
-			-- Tools
-			i(198715, {["requireSkill"]=ENCHANTING}),	-- Runed Draconium Rod
-			i(198716, {["requireSkill"]=ENCHANTING}),	-- Runed Khaz'gorite Rod
-			i(201601, {["requireSkill"]=ENCHANTING}),	-- Runed Serevite Rod
-		}),
-		cat(658, {	-- Weapon Enchantments
+		n(WEAPON_ENCHANTMENTS, {
 			i(199961),	-- Enchant Tool - Draconic Deftness+
 			i(200003),	-- Enchant Tool - Draconic Deftness++
 			i(200045),	-- Enchant Tool - Draconic Deftness+++
@@ -1011,6 +1008,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(199975),	-- Enchant Weapon - Wafting Writ+
 			i(200017),	-- Enchant Weapon - Wafting Writ++
 			i(200059),	-- Enchant Weapon - Wafting Writ+++
+		}),
+		n(WEAPONS, {
+			i(200641),	-- Enchanted Writhebark Wand
+			i(204401, {["timeline"] = {ADDED_10_1_0}}),	-- Spore Keeper's Baton
+			i(200642),	-- Torch of Primal Awakening
 		}),
 	}),
 	prof(ENGINEERING, {
@@ -1070,19 +1072,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(198324),	-- Peripheral Vision Projectors
 			i(198328),	-- Quality-Assured Optics
 			i(198331),	-- Sentry's Stabilized Specs
-			-- Tools
-			i(198204, {["requireSkill"]=ENGINEERING}),	-- Draconium Brainwave Amplifier
-			i(198243, {["requireSkill"]=MINING}),	-- Draconium Delver's Helmet
-			i(198245, {["requireSkill"]=ENGINEERING}),	-- Draconium Encased Samophlange
-			i(198225, {["requireSkill"]=FISHING}),	-- Draconium Fisherfriend
-			i(198205, {["requireSkill"]=ENGINEERING}),	-- Khaz'gorite Brainwave Amplifier
-			i(198244, {["requireSkill"]=MINING}),	-- Khaz'gorite Delver's Helmet
-			i(198226, {["requireSkill"]=FISHING}),	-- Khaz'gorite Fisherfriend
-			i(198246, {["requireSkill"]=ENGINEERING}),	-- Khaz'gorite Encased Samophlange
-			i(198234, {["requireSkill"]=JEWELCRAFTING}),	-- Lapidary's Draconium Clamps
-			i(198235, {["requireSkill"]=JEWELCRAFTING}),	-- Lapidary's Khaz'gorite Clamps
-			i(194125, {["requireSkill"]=TAILORING}),	-- Spring-Loaded Draconium Fabric Cutters
-			i(194126, {["requireSkill"]=TAILORING}),	-- Spring-Loaded Khaz'gorite Fabric Cutters
 			-- Tinker
 			i(198289),	-- Tinker: Alarm-O-Turret+
 			i(198290),	-- Tinker: Alarm-O-Turret++
@@ -1113,7 +1102,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		filter(BATTLE_PETS, {
 			i(193572),	-- Quack-E (PET!)
 		}),
-		n(FIRST_CRAFT_HEADER, sharedData({
+		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENGINEERING,
 		},{
 			-- Parts --
@@ -1345,6 +1334,20 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Weird
 			i(198650),	-- Rummage Through Scrap
 		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(198204, {["requireSkill"] = ENGINEERING}),	-- Draconium Brainwave Amplifier
+			i(198243, {["requireSkill"] = MINING}),	-- Draconium Delver's Helmet
+			i(198245, {["requireSkill"] = ENGINEERING}),	-- Draconium Encased Samophlange
+			i(198225, {["requireSkill"] = FISHING}),	-- Draconium Fisherfriend
+			i(198205, {["requireSkill"] = ENGINEERING}),	-- Khaz'gorite Brainwave Amplifier
+			i(198244, {["requireSkill"] = MINING}),	-- Khaz'gorite Delver's Helmet
+			i(198226, {["requireSkill"] = FISHING}),	-- Khaz'gorite Fisherfriend
+			i(198246, {["requireSkill"] = ENGINEERING}),	-- Khaz'gorite Encased Samophlange
+			i(198234, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Draconium Clamps
+			i(198235, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Khaz'gorite Clamps
+			i(194125, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Draconium Fabric Cutters
+			i(194126, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Khaz'gorite Fabric Cutters
+		}),
 		filter(REAGENTS, {
 			i(198195),	-- Arclight Capacitor+
 			i(198196),	-- Arclight Capacitor++
@@ -1387,15 +1390,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		}),
 	}),
 	prof(FISHING, {
-		i(198439, {	-- Aged Recipe in a Bottle
-			["g"] = {
-			--	i(14514),	-- Pattern: Robe of the Void (RECIPE!)
-			-- The pattern did not make it to Live. Was only fishable on Beta
-			},
-		}),
 		i(198438, {	-- Draconic Recipe in a Bottle
 			["sym"] = {{"select","itemID",
-				-- available from Bottle but has another Source
+				-- Available from the Bottle but has another Source
 				194298,	-- Pattern: Forlorn Funeral Pall (RECIPE!)
 				194267,	-- Pattern: Shimmering Embroidery Thread (RECIPE!)
 				194507,	-- Plans: Serevite Skeleton Key (RECIPE!)
@@ -1406,7 +1403,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				198904,	-- Technique: Windborne Velocidrake: Windswept Pattern (RECIPE!)
 			}},
 			["g"] = {
-				-- only known source is the Bottle
+				-- Only known source is the Bottle
 				i(194671),	-- Design: "Rhinestone" Sunglasses (RECIPE!)
 				i(205161, {["timeline"] = {ADDED_10_1_0}}),	-- Plans: Heat-Resistant Rescue Ring (RECIPE!)
 				i(198714),	-- Plans: Prototype Regal Barding Framework (RECIPE!)
@@ -1572,7 +1569,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(203324, {["timeline"] = {ADDED_10_1_0}}),	-- Winding Slitherdrake: White Hair (DM!)
 			i(203304, {["timeline"] = {ADDED_10_1_0}}),	-- Winding Slitherdrake: Yellow and Silver Armor (DM!)
 		}),
-		n(FIRST_CRAFT_HEADER, sharedData({
+		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = INSCRIPTION,
 		},{
 			-- Inks
@@ -1888,6 +1885,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(198492),	-- Vantus Rune: Vault of the Incarnates++
 			i(198493),	-- Vantus Rune: Vault of the Incarnates+++
 		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(191234, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Sturdy Mixing Rod
+			i(191231, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Brilliant Mixing Rod
+			i(191232, {["requireSkill"] = COOKING}),	-- Chef's Splendid Rolling Pin
+			i(191233, {["requireSkill"] = COOKING}),	-- Chef's Smooth Rolling Pin
+			i(194874, {["requireSkill"] = INSCRIPTION}),	-- Scribe's Fastened Quill
+			i(194875, {["requireSkill"] = INSCRIPTION}),	-- Scribe's Resplendent Quill
+		}),
 		filter(REAGENTS, {
 			i(194751),	-- Blazing Ink+
 			i(194752),	-- Blazing Ink++
@@ -1965,13 +1970,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(194893),	-- Overseer's Writhebark Stave
 			i(194892),	-- Pioneer's Writhebark Stave
 			i(194894),	-- Weathered Explorer's Stave
-			-- Tools
-			i(191234, {["requireSkill"]=ALCHEMY}),	-- Alchemist's Sturdy Mixing Rod
-			i(191231, {["requireSkill"]=ALCHEMY}),	-- Alchemist's Brilliant Mixing Rod
-			i(191232, {["requireSkill"]=COOKING}),	-- Chef's Splendid Rolling Pin
-			i(191233, {["requireSkill"]=COOKING}),	-- Chef's Smooth Rolling Pin
-			i(194874, {["requireSkill"]=INSCRIPTION}),	-- Scribe's Fastened Quill
-			i(194875, {["requireSkill"]=INSCRIPTION}),	-- Scribe's Resplendent Quill
 		}),
 	}),
 	prof(JEWELCRAFTING, {
@@ -1979,9 +1977,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(192852),	-- Alexstraszite+
 			i(192853),	-- Alexstraszite++
 			i(192855),	-- Alexstraszite+++
+			i(192880),	-- Crumbled Stone
 			i(192849),	-- Eternity Amber+
 			i(192850),	-- Eternity Amber++
 			i(192851),	-- Eternity Amber+++
+			i(192872),	-- Fractured Glass
 			i(192869),	-- Illimited Diamond+
 			i(192870),	-- Illimited Diamond++
 			i(192871),	-- Illimited Diamond+++
@@ -2011,70 +2011,35 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(192860),	-- Ysemerald++
 			i(192861),	-- Ysemerald+++
 		}),
-		-- Unclear
-		i(192880),	-- Crumbled Stone
-		i(192889),	-- Dreamer's Vision
-		i(202049),	-- Dreamer's Vision
-		i(202055),	-- Dreamer's Vision
-		i(192891),	-- Earthwarden's Prize
-		i(202051),	-- Earthwarden's Prize
-		i(202057),	-- Earthwarden's Prize
-		i(192872),	-- Fractured Glass
-		i(194723),	-- Kalu'ak Figurine
-		i(194724),	-- Kalu'ak Figurine
-		i(194725),	-- Kalu'ak Figurine
-		i(192890),	-- Keeper's Glory
-		i(202050),	-- Keeper's Glory
-		i(202056),	-- Keeper's Glory
-		i(192888),	-- Queen's Gift
-		i(202048),	-- Queen's Gift
-		i(202054),	-- Queen's Gift
-		i(192892),	-- Timewatcher's Patience
-		i(202052),	-- Timewatcher's Patience
-		i(202058),	-- Timewatcher's Patience
-		i(200938),	-- Empty Soul Cage
 		n(ARMOR, {
-			-- Tools
-			i(193041, {["requireSkill"]=JEWELCRAFTING}),	-- Alexstraszite Loupes
-			i(193035, {["requireSkill"]=INSCRIPTION}),	-- Bold-Print Bifocals
-			i(193038, {["requireSkill"]=ENCHANTING}),	-- Chromatic Focus
-			i(193039, {["requireSkill"]=INSCRIPTION}),	-- Fine-Print Trifocals
-			i(193036, {["requireSkill"]=INSCRIPTION}),	-- Left-Handed Magnifying Glass
-			i(193040, {["requireSkill"]=INSCRIPTION}),	-- Magnificent Margin Magnifier
-			i(193042, {["requireSkill"]=ENCHANTING}),	-- Resonant Focus
-			i(193037, {["requireSkill"]=JEWELCRAFTING}),	-- Sundered Onyx Loupe
-			filter(COSMETIC, {
-				i(193371),	-- "Rhinestone" Sunglasses
-				i(194748),	-- Split-Lens Specs
-			}),
-			filter(NECK_F, {
-				i(192998),	-- Crimson Combatant's Jeweled Amulet
-				i(193002),	-- Choker of Shielding
-				i(193001),	-- Elemental Lariat
-				i(204095, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Amulet
-				i(192996),	-- Pendant of Impending Perils
-				i(201759),	-- Torc of Passed Time
-			}),
-			filter(FINGER_F, {
-				i(194082),	-- Band of New Beginnings
-				i(192997),	-- Crimson Combatant's Jeweled Signet
-				i(204094, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Signet
-				i(193000),	-- Ring-Bound Hourglass
-				i(192999),	-- Signet of Titanic Insight
-			}),
-			filter(TRINKET_F, {
-				i(193005),	-- Idol of the Dreamer
-				i(193006),	-- Idol of the Earth Warder
-				i(193003),	-- Idol of the Lifebinder
-				i(193004),	-- Idol of the Spell-Weaver
-			}),
-			filter(REAGENTS, {
-				i(193368),	-- Silken Gemdust+
-				i(193369),	-- Silken Gemdust++
-				i(193370),	-- Silken Gemdust+++
-			}),
+			i(194082),	-- Band of New Beginnings
+			i(192998),	-- Crimson Combatant's Jeweled Amulet
+			i(192997),	-- Crimson Combatant's Jeweled Signet
+			i(193002),	-- Choker of Shielding
+			i(193001),	-- Elemental Lariat
+			i(193005),	-- Idol of the Dreamer
+			i(193006),	-- Idol of the Earth Warder
+			i(193003),	-- Idol of the Lifebinder
+			i(193004),	-- Idol of the Spell-Weaver
+			i(204095, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Amulet
+			i(204094, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Signet
+			i(192996),	-- Pendant of Impending Perils
+			i(193000),	-- Ring-Bound Hourglass
+			i(192999),	-- Signet of Titanic Insight
+			i(201759),	-- Torc of Passed Time
 		}),
-		n(FIRST_CRAFT_HEADER, sharedData({
+		filter(BATTLE_PETS, {
+			i(193885),	-- Jeweled Amber Whelpling (PET!)
+			i(193888),	-- Jeweled Emerald Whelpling (PET!)
+			i(193889),	-- Jeweled Onyx Whelpling (PET!)
+			i(193887),	-- Jeweled Ruby Whelpling (PET!)
+			i(193886),	-- Jeweled Sapphire Whelpling (PET!)
+		}),
+		filter(COSMETIC, {
+			i(193371),	-- "Rhinestone" Sunglasses
+			i(194748),	-- Split-Lens Specs
+		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
 		},{
 			-- Reagents
@@ -2183,12 +2148,94 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Legendary
 			--FirstCraft(x, 407161, ADDED_10_1_0);	-- Immaculate Coalescing Dracothyst
 		})),
-		filter(BATTLE_PETS, {
-			i(193885),	-- Jeweled Amber Whelpling (PET!)
-			i(193888),	-- Jeweled Emerald Whelpling (PET!)
-			i(193889),	-- Jeweled Onyx Whelpling (PET!)
-			i(193887),	-- Jeweled Ruby Whelpling (PET!)
-			i(193886),	-- Jeweled Sapphire Whelpling (PET!)
+		filter(GEMS, {
+			i(192917),	-- Crafty Alexstraszite+
+			i(192918),	-- Crafty Alexstraszite++
+			i(192919),	-- Crafty Alexstraszite+++
+			i(192900),	-- Crafty Queen's Ruby+
+			i(192901),	-- Crafty Queen's Ruby++
+			i(192902),	-- Crafty Queen's Ruby+++
+			i(192943),	-- Crafty Ysemerald+
+			i(192944),	-- Crafty Ysemerald++
+			i(192945),	-- Crafty Ysemerald+++
+			i(192926),	-- Deadly Alexstraszite+
+			i(192927),	-- Deadly Alexstraszite++
+			i(192928),	-- Deadly Alexstraszite+++
+			i(192933),	-- Energized Malygite+
+			i(192934),	-- Energized Malygite++
+			i(192935),	-- Energized Malygite+++
+			i(192906),	-- Energized Vibrant Emerald+
+			i(192907),	-- Energized Vibrant Emerald++
+			i(192908),	-- Energized Vibrant Emerald+++
+			i(192950),	-- Energized Ysemerald+
+			i(192951),	-- Energized Ysemerald++
+			i(192952),	-- Energized Ysemerald+++
+			i(192983),	-- Fierce Illimited Diamond+
+			i(192984),	-- Fierce Illimited Diamond++
+			i(192985),	-- Fierce Illimited Diamond+++
+			i(192971),	-- Forceful Nozdorite+
+			i(192972),	-- Forceful Nozdorite++
+			i(192973),	-- Forceful Nozdorite+++
+			i(192965),	-- Fractured Neltharite+
+			i(192966),	-- Fractured Neltharite++
+			i(192967),	-- Fractured Neltharite+++
+			i(192980),	-- Inscribed Illimited Diamond+
+			i(192981),	-- Inscribed Illimited Diamond++
+			i(192982),	-- Inscribed Illimited Diamond+++
+			i(192968),	-- Jagged Nozdorite+
+			i(192969),	-- Jagged Nozdorite++
+			i(192970),	-- Jagged Nozdorite+++
+			i(192959),	-- Keen Neltharite+
+			i(192960),	-- Keen Neltharite++
+			i(192961),	-- Keen Neltharite+++
+			i(192946),	-- Keen Ysemerald+
+			i(192947),	-- Keen Ysemerald++
+			i(192948),	-- Keen Ysemerald+++
+			i(192974),	-- Puissant Nozdorite+
+			i(192975),	-- Puissant Nozdorite++
+			i(192976),	-- Puissant Nozdorite+++
+			i(192953),	-- Quick Ysemerald+
+			i(192954),	-- Quick Ysemerald++
+			i(192955),	-- Quick Ysemerald+++
+			i(192929),	-- Radiant Malygite+
+			i(192931),	-- Radiant Malygite++
+			i(192932),	-- Radiant Malygite+++
+			i(192923),	-- Radiant Alexstraszite+
+			i(192924),	-- Radiant Alexstraszite++
+			i(192925),	-- Radiant Alexstraszite+++
+			i(192989),	-- Resplendent Illimited Diamond+
+			i(192990),	-- Resplendent Illimited Diamond++
+			i(192991),	-- Resplendent Illimited Diamond+++
+			i(192920),	-- Sensei's Alexstraszite+
+			i(192921),	-- Sensei's Alexstraszite++
+			i(192922),	-- Sensei's Alexstraszite+++
+			i(192956),	-- Sensei's Neltharite+
+			i(192957),	-- Sensei's Neltharite++
+			i(192958),	-- Sensei's Neltharite+++
+			i(192910),	-- Sensei's Sundered Onyx+
+			i(192911),	-- Sensei's Sundered Onyx++
+			i(192912),	-- Sensei's Sundered Onyx+++
+			i(192986),	-- Skillful Illimited Diamond+
+			i(192987),	-- Skillful Illimited Diamond++
+			i(192988),	-- Skillful Illimited Diamond+++
+			i(192913),	-- Solid Eternity Amber+
+			i(192914),	-- Solid Eternity Amber++
+			i(192916),	-- Solid Eternity Amber+++
+			i(192977),	-- Steady Nozdorite+
+			i(192978),	-- Steady Nozdorite++
+			i(192979),	-- Steady Nozdorite+++
+			i(192940),	-- Stormy Malygite+
+			i(192941),	-- Stormy Malygite++
+			i(192942),	-- Stormy Malygite+++
+			i(192936),	-- Zen Malygite+
+			i(192937),	-- Zen Malygite++
+			i(192938),	-- Zen Malygite+++
+			i(192903),	-- Zen Mystic Sapphire+
+			i(192904),	-- Zen Mystic Sapphire++
+			i(192905),	-- Zen Mystic Sapphire+++
+			i(192962),	-- Zen Neltharite+
+			i(192963),	-- Zen Neltharite++
+			i(192964),	-- Zen Neltharite+++
 		}),
 		filter(MISC, {
 			i(192894),	-- Blotting Sand+
@@ -2198,10 +2245,23 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193019),	-- Djaradin's "Pinata"+
 			i(193020),	-- Djaradin's "Pinata"++
 			i(193021),	-- Djaradin's "Pinata"+++
+			i(192889),	-- Dreamer's Vision+
+			i(202049),	-- Dreamer's Vision++
+			i(202055),	-- Dreamer's Vision+++
+			i(192891),	-- Earthwarden's Prize+
+			i(202051),	-- Earthwarden's Prize++
+			i(202057),	-- Earthwarden's Prize+++
+			i(200938),	-- Empty Soul Cage
 			i(205171, {["timeline"] = {ADDED_10_1_0}}),	-- Figurine of the Gathering Storm+
 			i(205172, {["timeline"] = {ADDED_10_1_0}}),	-- Figurine of the Gathering Storm++
 			i(205173, {["timeline"] = {ADDED_10_1_0}}),	-- Figurine of the Gathering Storm+++
 			i(204854, {["timeline"] = {ADDED_10_1_0}}),	-- Immaculate Coalescing Dracothyst
+			i(194723),	-- Kalu'ak Figurine+
+			i(194724),	-- Kalu'ak Figurine++
+			i(194725),	-- Kalu'ak Figurine+++
+			i(192890),	-- Keeper's Glory+
+			i(202050),	-- Keeper's Glory++
+			i(202056),	-- Keeper's Glory+++
 			i(193007),	-- Narcissist's Sculpture+
 			i(193008),	-- Narcissist's Sculpture++
 			i(193009),	-- Narcissist's Sculpture+++
@@ -2211,6 +2271,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193029),	-- Projection Prism+
 			i(193030),	-- Projection Prism++
 			i(193031),	-- Projection Prism+++
+			i(192888),	-- Queen's Gift+
+			i(202048),	-- Queen's Gift++
+			i(202054),	-- Queen's Gift+++
 			i(193011),	-- Revitalizing Red Carving+
 			i(193012),	-- Revitalizing Red Carving++
 			i(193013),	-- Revitalizing Red Carving+++
@@ -2223,7 +2286,20 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(192992),	-- Tiered Medallion Setting+
 			i(192993),	-- Tiered Medallion Setting++
 			i(192994),	-- Tiered Medallion Setting+++
-			i(204217, {["timeline"]={ADDED_10_0_7}}),	-- Unstable Elementium
+			i(192892),	-- Timewatcher's Patience+
+			i(202052),	-- Timewatcher's Patience++
+			i(202058),	-- Timewatcher's Patience+++
+			i(204217, {["timeline"] = {ADDED_10_0_7}}),	-- Unstable Elementium
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(193041, {["requireSkill"] = JEWELCRAFTING}),	-- Alexstraszite Loupes
+			i(193035, {["requireSkill"] = INSCRIPTION}),	-- Bold-Print Bifocals
+			i(193038, {["requireSkill"] = ENCHANTING}),	-- Chromatic Focus
+			i(193039, {["requireSkill"] = INSCRIPTION}),	-- Fine-Print Trifocals
+			i(193036, {["requireSkill"] = INSCRIPTION}),	-- Left-Handed Magnifying Glass
+			i(193040, {["requireSkill"] = INSCRIPTION}),	-- Magnificent Margin Magnifier
+			i(193042, {["requireSkill"] = ENCHANTING}),	-- Resonant Focus
+			i(193037, {["requireSkill"] = JEWELCRAFTING}),	-- Sundered Onyx Loupe
 		}),
 		filter(REAGENTS, {
 			i(191474),	-- Draconic Vial+
@@ -2242,204 +2318,107 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(192834),	-- Shimmering Clasp+
 			i(192835),	-- Shimmering Clasp++
 			i(192836),	-- Shimmering Clasp+++
+			i(193368),	-- Silken Gemdust+
+			i(193369),	-- Silken Gemdust++
+			i(193370),	-- Silken Gemdust+++
 		}),
 		filter(TOYS, {
 			i(205045, {["timeline"] = {ADDED_10_1_0}}),	-- B.B.F. Fist (TOY!)
 			i(193033),	-- Convergent Prism (TOY!)
 			i(193032),	-- Jeweled Offering (TOY!)
 		}),
-		i(192917),	-- Crafty Alexstraszite+
-		i(192918),	-- Crafty Alexstraszite++
-		i(192919),	-- Crafty Alexstraszite+++
-		i(192900),	-- Crafty Queen's Ruby+
-		i(192901),	-- Crafty Queen's Ruby++
-		i(192902),	-- Crafty Queen's Ruby+++
-		i(192943),	-- Crafty Ysemerald+
-		i(192944),	-- Crafty Ysemerald++
-		i(192945),	-- Crafty Ysemerald+++
-		i(192926),	-- Deadly Alexstraszite+
-		i(192927),	-- Deadly Alexstraszite++
-		i(192928),	-- Deadly Alexstraszite+++
-		i(192933),	-- Energized Malygite+
-		i(192934),	-- Energized Malygite++
-		i(192935),	-- Energized Malygite+++
-		i(192906),	-- Energized Vibrant Emerald+
-		i(192907),	-- Energized Vibrant Emerald++
-		i(192908),	-- Energized Vibrant Emerald+++
-		i(192950),	-- Energized Ysemerald+
-		i(192951),	-- Energized Ysemerald++
-		i(192952),	-- Energized Ysemerald+++
-		i(192983),	-- Fierce Illimited Diamond+
-		i(192984),	-- Fierce Illimited Diamond++
-		i(192985),	-- Fierce Illimited Diamond+++
-		i(192971),	-- Forceful Nozdorite+
-		i(192972),	-- Forceful Nozdorite++
-		i(192973),	-- Forceful Nozdorite+++
-		i(192965),	-- Fractured Neltharite+
-		i(192966),	-- Fractured Neltharite++
-		i(192967),	-- Fractured Neltharite+++
-		i(192980),	-- Inscribed Illimited Diamond+
-		i(192981),	-- Inscribed Illimited Diamond++
-		i(192982),	-- Inscribed Illimited Diamond+++
-		i(192968),	-- Jagged Nozdorite+
-		i(192969),	-- Jagged Nozdorite++
-		i(192970),	-- Jagged Nozdorite+++
-		i(192959),	-- Keen Neltharite+
-		i(192960),	-- Keen Neltharite++
-		i(192961),	-- Keen Neltharite+++
-		i(192946),	-- Keen Ysemerald+
-		i(192947),	-- Keen Ysemerald++
-		i(192948),	-- Keen Ysemerald+++
-		i(192974),	-- Puissant Nozdorite+
-		i(192975),	-- Puissant Nozdorite++
-		i(192976),	-- Puissant Nozdorite+++
-		i(192953),	-- Quick Ysemerald+
-		i(192954),	-- Quick Ysemerald++
-		i(192955),	-- Quick Ysemerald+++
-		i(192929),	-- Radiant Malygite+
-		i(192931),	-- Radiant Malygite++
-		i(192932),	-- Radiant Malygite+++
-		i(192923),	-- Radiant Alexstraszite+
-		i(192924),	-- Radiant Alexstraszite++
-		i(192925),	-- Radiant Alexstraszite+++
-		i(192989),	-- Resplendent Illimited Diamond+
-		i(192990),	-- Resplendent Illimited Diamond++
-		i(192991),	-- Resplendent Illimited Diamond+++
-		i(192920),	-- Sensei's Alexstraszite+
-		i(192921),	-- Sensei's Alexstraszite++
-		i(192922),	-- Sensei's Alexstraszite+++
-		i(192956),	-- Sensei's Neltharite+
-		i(192957),	-- Sensei's Neltharite++
-		i(192958),	-- Sensei's Neltharite+++
-		i(192910),	-- Sensei's Sundered Onyx+
-		i(192911),	-- Sensei's Sundered Onyx++
-		i(192912),	-- Sensei's Sundered Onyx+++
-		i(192986),	-- Skillful Illimited Diamond+
-		i(192987),	-- Skillful Illimited Diamond++
-		i(192988),	-- Skillful Illimited Diamond+++
-		i(192913),	-- Solid Eternity Amber+
-		i(192914),	-- Solid Eternity Amber++
-		i(192916),	-- Solid Eternity Amber+++
-		i(192977),	-- Steady Nozdorite+
-		i(192978),	-- Steady Nozdorite++
-		i(192979),	-- Steady Nozdorite+++
-		i(192940),	-- Stormy Malygite+
-		i(192941),	-- Stormy Malygite++
-		i(192942),	-- Stormy Malygite+++
-		i(192936),	-- Zen Malygite+
-		i(192937),	-- Zen Malygite++
-		i(192938),	-- Zen Malygite+++
-		i(192903),	-- Zen Mystic Sapphire+
-		i(192904),	-- Zen Mystic Sapphire++
-		i(192905),	-- Zen Mystic Sapphire+++
-		i(192962),	-- Zen Neltharite+
-		i(192963),	-- Zen Neltharite++
-		i(192964),	-- Zen Neltharite+++
 	}),
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
-			i(193466),	-- Acidic Hailstone Treads
-			i(204704, {["timeline"] = {ADDED_10_1_0}}),	-- Adaptive Dracothyst Armguards
-			i(193453),	-- Allied Heartwarming Fur Coat
-			i(193464),	-- Allied Legguards of Sansok Khan
-			i(193459),	-- Ancestor's Dew Drippers
-			i(193440),	-- Crimson Combatant's Adamant Chainmail
-			i(193441),	-- Crimson Combatant's Adamant Cowl
-			i(193446),	-- Crimson Combatant's Adamant Cuffs
-			i(193442),	-- Crimson Combatant's Adamant Epaulettes
-			i(193445),	-- Crimson Combatant's Adamant Gauntlets
-			i(193443),	-- Crimson Combatant's Adamant Girdle
-			i(193444),	-- Crimson Combatant's Adamant Leggings
-			i(193439),	-- Crimson Combatant's Adamant Treads
-			i(193434),	-- Crimson Combatant's Resilient Belt
-			i(193430),	-- Crimson Combatant's Resilient Boots
-			i(193431),	-- Crimson Combatant's Resilient Chestpiece
-			i(193436),	-- Crimson Combatant's Resilient Gloves
-			i(193432),	-- Crimson Combatant's Resilient Mask
-			i(193433),	-- Crimson Combatant's Resilient Shoulderpads
-			i(193435),	-- Crimson Combatant's Resilient Trousers
-			i(193437),	-- Crimson Combatant's Resilient Wristwraps
-			i(193425),	-- Flame-Touched Chain
-			i(193422),	-- Flame-Touched Chainmail
-			i(193428),	-- Flame-Touched Cuffs
-			i(193427),	-- Flame-Touched Handguards
-			i(193423),	-- Flame-Touched Helmet
-			i(193426),	-- Flame-Touched Legguards
-			i(193424),	-- Flame-Touched Spaulders
-			i(193421),	-- Flame-Touched Treads
-			i(193494),	-- Flaring Cowl
-			i(193461),	-- Infurious Boots of Reprieve
-			i(193462),	-- Infurious Chainhelm Protector
-			i(193455),	-- Infurious Footwraps of Indemnity
-			i(193456),	-- Infurious Spirit's Hood
-			i(193407),	-- Life-Bound Belt
-			i(193419),	-- Life-Bound Bindings
-			i(193398),	-- Life-Bound Boots
-			i(193400),	-- Life-Bound Cap
-			i(193399),	-- Life-Bound Chestpiece
-			i(193418),	-- Life-Bound Gloves
-			i(193406),	-- Life-Bound Shoulderpads
-			i(193408),	-- Life-Bound Trousers
-			i(204105, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Chainmail
-			i(204106, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Cowl
-			i(204111, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Cuffs
-			i(204107, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Epaulettes
-			i(204110, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Gauntlets
-			i(204108, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Girdle
-			i(204109, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Leggings
-			i(204104, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Treads
-			i(204100, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Belt
-			i(204096, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Boots
-			i(204097, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Chestpiece
-			i(204102, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Gloves
-			i(204098, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Mask
-			i(204099, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Shoulderpads
-			i(204101, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Trousers
-			i(204103, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Wristwraps
-			i(193454),	-- Old Spirit's Wristwraps
-			i(193386),	-- Pioneer's Leather Boots
-			i(193388),	-- Pioneer's Leather Wristguards
-			i(193390),	-- Pioneer's Leather Tunic
-			i(201945),	-- Pioneer's Practiced Belt
-			i(201941),	-- Pioneer's Practiced Cowl
-			i(201943),	-- Pioneer's Practiced Gloves
-			i(201944),	-- Pioneer's Practiced Leggings
-			i(201942),	-- Pioneer's Practiced Shoulderpads
-			i(193465),	-- Scale Rein Grips
-			i(193451),	-- Slimy Expulsion Boots
-			i(193458),	-- Snowball Makers
-			i(204706, {["timeline"] = {ADDED_10_1_0}}),	-- Spore Colony Shoulderguards
-			i(193457),	-- String of Spiritual Knick-Knacks
-			i(193452),	-- Toxic Thorn Footwraps
-			i(193392),	-- Trailblazer's Scale Boots
-			i(193393),	-- Trailblazer's Scale Bracers
-			i(193394),	-- Trailblazer's Scale Vest
-			i(201946),	-- Trailblazer's Toughened Coif
-			i(201950),	-- Trailblazer's Toughened Chainbelt
-			i(201948),	-- Trailblazer's Toughened Grips
-			i(201949),	-- Trailblazer's Toughened Legguards
-			i(201947),	-- Trailblazer's Toughened Spikes
-			i(193460),	-- Venom-Steeped Stompers
-			i(193463),	-- Wind Spirit's Lasso
-			-- Tools
-			i(193487, {["requireSkill"]=ALCHEMY}),	-- Alchemist's Hat
-			i(193493, {["requireSkill"]=ALCHEMY}),	-- Expert Alchemist's Hat
-			i(193490, {["requireSkill"]=SKINNING}),	-- Expert Skinner's Cap
-			i(193480, {["requireSkill"]=SKINNING}),	-- Durable Pack
-			i(193613, {["requireSkill"]=BLACKSMITHING}),	-- Flameproof Apron
-			i(193479, {["requireSkill"]=HERBALISM}),	-- Floral Basket
-			i(193615, {["requireSkill"]=JEWELCRAFTING}),	-- Jeweler's Cover
-			i(193488, {["requireSkill"]=HERBALISM}),	-- Lavish Floral Pack
-			i(193492, {["requireSkill"]=LEATHERWORKING}),	-- Masterwork Smock
-			i(193485, {["requireSkill"]=ENGINEERING}),	-- Protective Gloves
-			i(193489, {["requireSkill"]=SKINNING}),	-- Reinforced Pack
-			i(193616, {["requireSkill"]=JEWELCRAFTING}),	-- Resplendent Cover
-			i(193486, {["requireSkill"]=LEATHERWORKING}),	-- Resilient Smock
-			i(193491, {["requireSkill"]=ENGINEERING}),	-- Shockproof Gloves
-			i(193482, {["requireSkill"]=SKINNING}),	-- Skinner's Cap
-			i(193612, {["requireSkill"]=BLACKSMITHING}),	-- Smithing Apron
+			filter(LEATHER, {
+				i(193453),	-- Allied Heartwarming Fur Coat
+				i(193434),	-- Crimson Combatant's Resilient Belt
+				i(193430),	-- Crimson Combatant's Resilient Boots
+				i(193431),	-- Crimson Combatant's Resilient Chestpiece
+				i(193436),	-- Crimson Combatant's Resilient Gloves
+				i(193432),	-- Crimson Combatant's Resilient Mask
+				i(193433),	-- Crimson Combatant's Resilient Shoulderpads
+				i(193435),	-- Crimson Combatant's Resilient Trousers
+				i(193437),	-- Crimson Combatant's Resilient Wristwraps
+				i(193494),	-- Flaring Cowl
+				i(193455),	-- Infurious Footwraps of Indemnity
+				i(193456),	-- Infurious Spirit's Hood
+				i(193407),	-- Life-Bound Belt
+				i(193419),	-- Life-Bound Bindings
+				i(193398),	-- Life-Bound Boots
+				i(193400),	-- Life-Bound Cap
+				i(193399),	-- Life-Bound Chestpiece
+				i(193418),	-- Life-Bound Gloves
+				i(193406),	-- Life-Bound Shoulderpads
+				i(193408),	-- Life-Bound Trousers
+				i(204100, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Belt
+				i(204096, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Boots
+				i(204097, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Chestpiece
+				i(204102, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Gloves
+				i(204098, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Mask
+				i(204099, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Shoulderpads
+				i(204101, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Trousers
+				i(204103, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Wristwraps
+				i(193454),	-- Old Spirit's Wristwraps
+				i(193386),	-- Pioneer's Leather Boots
+				i(193388),	-- Pioneer's Leather Wristguards
+				i(193390),	-- Pioneer's Leather Tunic
+				i(201945),	-- Pioneer's Practiced Belt
+				i(201941),	-- Pioneer's Practiced Cowl
+				i(201943),	-- Pioneer's Practiced Gloves
+				i(201944),	-- Pioneer's Practiced Leggings
+				i(201942),	-- Pioneer's Practiced Shoulderpads
+				i(193451),	-- Slimy Expulsion Boots
+				i(193458),	-- Snowball Makers
+				i(204706, {["timeline"] = {ADDED_10_1_0}}),	-- Spore Colony Shoulderguards
+				i(193457),	-- String of Spiritual Knick-Knacks
+				i(193452),	-- Toxic Thorn Footwraps
+			}),
+			filter(MAIL, {
+				i(193466),	-- Acidic Hailstone Treads
+				i(204704, {["timeline"] = {ADDED_10_1_0}}),	-- Adaptive Dracothyst Armguards
+				i(193464),	-- Allied Legguards of Sansok Khan
+				i(193459),	-- Ancestor's Dew Drippers
+				i(193440),	-- Crimson Combatant's Adamant Chainmail
+				i(193441),	-- Crimson Combatant's Adamant Cowl
+				i(193446),	-- Crimson Combatant's Adamant Cuffs
+				i(193442),	-- Crimson Combatant's Adamant Epaulettes
+				i(193445),	-- Crimson Combatant's Adamant Gauntlets
+				i(193443),	-- Crimson Combatant's Adamant Girdle
+				i(193444),	-- Crimson Combatant's Adamant Leggings
+				i(193439),	-- Crimson Combatant's Adamant Treads
+				i(193425),	-- Flame-Touched Chain
+				i(193422),	-- Flame-Touched Chainmail
+				i(193428),	-- Flame-Touched Cuffs
+				i(193427),	-- Flame-Touched Handguards
+				i(193423),	-- Flame-Touched Helmet
+				i(193426),	-- Flame-Touched Legguards
+				i(193424),	-- Flame-Touched Spaulders
+				i(193421),	-- Flame-Touched Treads
+				i(193461),	-- Infurious Boots of Reprieve
+				i(193462),	-- Infurious Chainhelm Protector
+				i(204105, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Chainmail
+				i(204106, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Cowl
+				i(204111, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Cuffs
+				i(204107, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Epaulettes
+				i(204110, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Gauntlets
+				i(204108, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Girdle
+				i(204109, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Leggings
+				i(204104, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Treads
+				i(193465),	-- Scale Rein Grips
+				i(193392),	-- Trailblazer's Scale Boots
+				i(193393),	-- Trailblazer's Scale Bracers
+				i(193394),	-- Trailblazer's Scale Vest
+				i(201946),	-- Trailblazer's Toughened Coif
+				i(201950),	-- Trailblazer's Toughened Chainbelt
+				i(201948),	-- Trailblazer's Toughened Grips
+				i(201949),	-- Trailblazer's Toughened Legguards
+				i(201947),	-- Trailblazer's Toughened Spikes
+				i(193460),	-- Venom-Steeped Stompers
+				i(193463),	-- Wind Spirit's Lasso
+			}),
 		}),
-		n(FIRST_CRAFT_HEADER, sharedData({
+		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = LEATHERWORKING,
 		},{
 			-- Leather Armor
@@ -2589,19 +2568,37 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193556),	-- Frosted Armor Kit+
 			i(193560),	-- Frosted Armor Kit++
 			i(193564),	-- Frosted Armor Kit+++
-			i(204700, {["timeline"]={ADDED_10_1_0}}),	-- Lambent Armor Kit+
-			i(204701, {["timeline"]={ADDED_10_1_0}}),	-- Lambent Armor Kit++
-			i(204702, {["timeline"]={ADDED_10_1_0}}),	-- Lambent Armor Kit+++
+			i(204700, {["timeline"] = {ADDED_10_1_0}}),	-- Lambent Armor Kit+
+			i(204701, {["timeline"] = {ADDED_10_1_0}}),	-- Lambent Armor Kit++
+			i(204702, {["timeline"] = {ADDED_10_1_0}}),	-- Lambent Armor Kit+++
 			i(193559),	-- Reinforced Armor Kit+
 			i(193563),	-- Reinforced Armor Kit++
 			i(193567),	-- Reinforced Armor Kit+++
-			i(203414, {["timeline"]={ADDED_10_0_7}}),	-- Reinforced Pristine Leather
-			i(204708, {["timeline"]={ADDED_10_1_0}}),	-- Shadowflame-Tempered Armor Patch+
-			i(204709, {["timeline"]={ADDED_10_1_0}}),	-- Shadowflame-Tempered Armor Patch++
-			i(204710, {["timeline"]={ADDED_10_1_0}}),	-- Shadowflame-Tempered Armor Patch+++
+			i(203414, {["timeline"] = {ADDED_10_0_7}}),	-- Reinforced Pristine Leather
+			i(204708, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowflame-Tempered Armor Patch+
+			i(204709, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowflame-Tempered Armor Patch++
+			i(204710, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowflame-Tempered Armor Patch+++
 			i(193469),	-- Toxified Armor Patch+
 			i(193552),	-- Toxified Armor Patch++
 			i(193555),	-- Toxified Armor Patch+++
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(193487, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Hat
+			i(193493, {["requireSkill"] = ALCHEMY}),	-- Expert Alchemist's Hat
+			i(193490, {["requireSkill"] = SKINNING}),	-- Expert Skinner's Cap
+			i(193480, {["requireSkill"] = SKINNING}),	-- Durable Pack
+			i(193613, {["requireSkill"] = BLACKSMITHING}),	-- Flameproof Apron
+			i(193479, {["requireSkill"] = HERBALISM}),	-- Floral Basket
+			i(193615, {["requireSkill"] = JEWELCRAFTING}),	-- Jeweler's Cover
+			i(193488, {["requireSkill"] = HERBALISM}),	-- Lavish Floral Pack
+			i(193492, {["requireSkill"] = LEATHERWORKING}),	-- Masterwork Smock
+			i(193485, {["requireSkill"] = ENGINEERING}),	-- Protective Gloves
+			i(193489, {["requireSkill"] = SKINNING}),	-- Reinforced Pack
+			i(193616, {["requireSkill"] = JEWELCRAFTING}),	-- Resplendent Cover
+			i(193486, {["requireSkill"] = LEATHERWORKING}),	-- Resilient Smock
+			i(193491, {["requireSkill"] = ENGINEERING}),	-- Shockproof Gloves
+			i(193482, {["requireSkill"] = SKINNING}),	-- Skinner's Cap
+			i(193612, {["requireSkill"] = BLACKSMITHING}),	-- Smithing Apron
 		}),
 		filter(REAGENTS, {
 			i(193242),	-- Earthshine Scales+
@@ -2638,7 +2635,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 	}),
 	prof(MINING, {
 		spell(366260, {	-- Mining
-			i(203418, {["timeline"]={ADDED_10_0_7}}),	-- Amplified Quaking Stone
+			i(203418, {["timeline"] = {ADDED_10_0_7}}),	-- Amplified Quaking Stone
 			i(189143),	-- Draconium Ore+
 			i(188658),	-- Draconium Ore++
 			i(190311),	-- Draconium Ore+++
@@ -2656,12 +2653,12 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(194062),	-- Unyielding Stone Chunk
 		}),
 		n(DISCOVERY, {
-			r(405121, {["timeline"]={ADDED_10_1_0}}),	-- Metamorphic Draconium Deposit
-			r(405120, {["timeline"]={ADDED_10_1_0}}),	-- Metamorphic Serevite Deposit
-			r(388213, {["timeline"]={ADDED_10_0_5}}),	-- Overload Elemental Deposit
+			r(405121, {["timeline"] = {ADDED_10_1_0}}),	-- Metamorphic Draconium Deposit
+			r(405120, {["timeline"] = {ADDED_10_1_0}}),	-- Metamorphic Serevite Deposit
+			r(388213, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Deposit
 			r(389701),	-- Overload Hardened Node
 			r(389704),	-- Overload Infurious Node
-			r(405131, {["timeline"]={ADDED_10_1_0}}),	-- Overload Metamorphic Deposit
+			r(405131, {["timeline"] = {ADDED_10_1_0}}),	-- Overload Metamorphic Deposit
 			r(389700),	-- Overload Molten Node
 			r(389702),	-- Overload Primal Node
 			r(389703),	-- Overload Titan Node
@@ -2678,7 +2675,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193213),	-- Adamant Scales+
 			i(193214),	-- Adamant Scales++
 			i(193215),	-- Adamant Scales+++
-			i(204092, {["timeline"]={ADDED_10_0_7}}),	-- Auric Fleece
+			i(204092, {["timeline"] = {ADDED_10_0_7}}),	-- Auric Fleece
 			i(193261),	-- Bite-Sized Morsel
 			i(193253),	-- Cacophonous Thunderscale
 			i(193251),	-- Crystalspine Fur
@@ -2693,9 +2690,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193222),	-- Lustrous Scaled Hide+
 			i(193223),	-- Lustrous Scaled Hide++
 			i(193224),	-- Lustrous Scaled Hide+++
-			i(205413, {["timeline"]={ADDED_10_1_0}}),	-- Obisidian Cobraskin
+			i(205413, {["timeline"] = {ADDED_10_1_0}}),	-- Obisidian Cobraskin
 			i(193255),	-- Pristine Vorquin Horn
-			i(203417, {["timeline"]={ADDED_10_0_7}}),	-- Razor-Sharp Animal Bone
+			i(203417, {["timeline"] = {ADDED_10_0_7}}),	-- Razor-Sharp Animal Bone
 			i(193208),	-- Resilient Leather+
 			i(193210),	-- Resilient Leather++
 			i(193211),	-- Resilient Leather+++
@@ -2741,15 +2738,15 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193521),	-- Hood of Surging Time
 			i(193513),	-- Infurious Handwraps of Gesticulation
 			i(193524),	-- Infurious Legwraps of Possibility
-			i(204115, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Bands
-			i(204120, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Cloak
-			i(204117, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Gloves
-			i(204116, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Hood
-			i(204112, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Leggings
-			i(204119, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Sash
-			i(204113, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Shoulderpads
-			i(204114, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Treads
-			i(204118, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Tunic
+			i(204115, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Bands
+			i(204120, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Cloak
+			i(204117, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Gloves
+			i(204116, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Hood
+			i(204112, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Leggings
+			i(204119, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Sash
+			i(204113, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Shoulderpads
+			i(204114, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Treads
+			i(204118, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Tunic
 			i(193497),	-- Surveyor's Cloth Bands
 			i(193515),	-- Surveyor's Cloth Robe
 			i(193498),	-- Surveyor's Cloth Treads
@@ -2768,19 +2765,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193519),	-- Vibrant Wildercloth Slippers
 			i(193509),	-- Vibrant Wildercloth Vestments
 			i(193510),	-- Vibrant Wildercloth Wristwraps
-			-- Profession Accessory
-			i(193540, {["requireSkill"]=TAILORING}),	-- Dragoncloth Tailoring Vestments
-			i(193544, {["requireSkill"]=ALCHEMY}),	-- Master's Wildercloth Alchemist's Robe
-			i(193545, {["requireSkill"]=COOKING}),	-- Master's Wildercloth Chef's Hat
-			i(193533, {["requireSkill"]=ENCHANTING}),	-- Master's Wildercloth Enchanter's Hat
-			i(193543),	-- Master's Wildercloth Fishing Cap
-			i(193542, {["requireSkill"]=HERBALISM}),	-- Master's Wildercloth Gardening Hat
-			i(193528, {["requireSkill"]=ALCHEMY}),	-- Wildercloth Alchemist's Robe
-			i(193534, {["requireSkill"]=COOKING}),	-- Wildercloth Chef's Hat
-			i(193539, {["requireSkill"]=ENCHANTING}),	-- Wildercloth Enchanter's Hat
-			i(193529),	-- Wildercloth Fishing Cap
-			i(193538, {["requireSkill"]=HERBALISM}),	-- Wildercloth Gardening Hat
-			i(193541, {["requireSkill"]=TAILORING}),	-- Wildercloth Tailor's Coat
 		}),
 		filter(MISC, {
 			i(193950),	-- Abrasive Polishing Cloth+
@@ -2810,9 +2794,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(194011),	-- Frozen Spellthread+
 			i(194012),	-- Frozen Spellthread++
 			i(194013),	-- Frozen Spellthread+++
-			i(205411, {["timeline"]={ADDED_10_1_0}}),	-- Medical Wrap Kit
-			i(202287, {["timeline"]={ADDED_10_0_7}}),	-- Paw-Made Winterpelt Reagent Bag
-			i(205012, {["timeline"]={ADDED_10_1_0}}),	-- Reserve Parachute
+			i(205411, {["timeline"] = {ADDED_10_1_0}}),	-- Medical Wrap Kit
+			i(202287, {["timeline"] = {ADDED_10_0_7}}),	-- Paw-Made Winterpelt Reagent Bag
+			i(205012, {["timeline"] = {ADDED_10_1_0}}),	-- Reserve Parachute
 			i(193962),	-- Shimmering Embroidery Thread+
 			i(193963),	-- Shimmering Embroidery Thread++
 			i(193964),	-- Shimmering Embroidery Thread+++
@@ -2820,8 +2804,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(194014),	-- Temporal Spellthread+
 			i(194015),	-- Temporal Spellthread++
 			i(194016),	-- Temporal Spellthread+++
-			i(203415, {["timeline"]={ADDED_10_0_7}}),	-- Traditional Morqut Kite
-			i(205025, {["timeline"]={ADDED_10_1_0}}),	-- Undulating Sporecloak
+			i(203415, {["timeline"] = {ADDED_10_0_7}}),	-- Traditional Morqut Kite
+			i(205025, {["timeline"] = {ADDED_10_1_0}}),	-- Undulating Sporecloak
 			i(193953),	-- Vibrant Polishing Cloth+
 			i(193954),	-- Vibrant Polishing Cloth++
 			i(193955),	-- Vibrant Polishing Cloth+++
@@ -2832,6 +2816,20 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(194048),	-- Wildercloth Bandage+
 			i(194049),	-- Wildercloth Bandage++
 			i(194050),	-- Wildercloth Bandage+++
+		}),
+		filter(PROFESSION_EQUIPMENT, {
+			i(193540, {["requireSkill"] = TAILORING}),	-- Dragoncloth Tailoring Vestments
+			i(193544, {["requireSkill"] = ALCHEMY}),	-- Master's Wildercloth Alchemist's Robe
+			i(193545, {["requireSkill"] = COOKING}),	-- Master's Wildercloth Chef's Hat
+			i(193533, {["requireSkill"] = ENCHANTING}),	-- Master's Wildercloth Enchanter's Hat
+			i(193543, {["requireSkill"] = FISHING}),	-- Master's Wildercloth Fishing Cap
+			i(193542, {["requireSkill"] = HERBALISM}),	-- Master's Wildercloth Gardening Hat
+			i(193528, {["requireSkill"] = ALCHEMY}),	-- Wildercloth Alchemist's Robe
+			i(193534, {["requireSkill"] = COOKING}),	-- Wildercloth Chef's Hat
+			i(193539, {["requireSkill"] = ENCHANTING}),	-- Wildercloth Enchanter's Hat
+			i(193529, {["requireSkill"] = FISHING}),	-- Wildercloth Fishing Cap
+			i(193538, {["requireSkill"] = HERBALISM}),	-- Wildercloth Gardening Hat
+			i(193541, {["requireSkill"] = TAILORING}),	-- Wildercloth Tailor's Coat
 		}),
 		filter(REAGENTS, {
 			i(193938),	-- Azureweave Bolt+
@@ -2867,7 +2865,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(198041),	-- Khaz'gorite Fabric Cutters Left Blade
 			i(194065),	-- Khaz'gorite Fabric Cutters Right Blade
 		}),
-		n(FIRST_CRAFT_HEADER, sharedData({
+		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = TAILORING,
 		},{
 			-- Woven Cloth	--

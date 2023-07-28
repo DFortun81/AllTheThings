@@ -12,13 +12,13 @@ local SECRET_OF_DRAENOR_LEATHERWORKING = 118721;
 		["rank"] = 1,
 	}),
 	r(3104,	{	-- Leatherworking (Journeyman)
-		["timeline"]={ "removed 8.0.1"},
+		["timeline"] = { "removed 8.0.1"},
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 		["rank"] = 2,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"]={"added 8.0.1"}})),	-- Leatherworking
+	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"] = {"added 8.0.1"}})),	-- Leatherworking
 	n(ARMOR, {
 		r(3766),	-- Dark Leather Belt
 		r(2167),	-- Dark Leather Boots
@@ -58,14 +58,14 @@ local SECRET_OF_DRAENOR_LEATHERWORKING = 118721;
 };
 EXPERT_ARTISAN_LEATHERWORKING = {
 	r(3811,	{	-- Leatherworking (Expert)
-		["timeline"]={ "removed 8.0.1"},
+		["timeline"] = { "removed 8.0.1"},
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 		["rank"] = 3,
 	}),
 	r(10662,	{	-- Leatherworking (Artisan)
-		["timeline"]={ "removed 8.0.1"},
+		["timeline"] = { "removed 8.0.1"},
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
@@ -77,11 +77,11 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(24654),	-- Blue Dragonscale Leggings
 		r(10650),	-- Dragonscale Breastplate
 		r(10619),	-- Dragonscale Gauntlets
-		r(10656, {["timeline"]={ "removed 4.0.3"}}),	-- Dragonscale Leatherworking
+		r(10656, {["timeline"] = { "removed 4.0.3"}}),	-- Dragonscale Leatherworking
 		r(9206),	-- Dusky Belt
 		r(9201),	-- Dusky Bracers
 		r(9196),	-- Dusky Leather Armor
-		r(10658, {["timeline"]={ "removed 4.0.3"}}),	-- Elemental Leatherworking
+		r(10658, {["timeline"] = { "removed 4.0.3"}}),	-- Elemental Leatherworking
 		r(10647),	-- Feathered Breastplate
 		r(9198),	-- Frost Leather Cloak
 		r(10630),	-- Gauntlets of the Sea
@@ -97,7 +97,7 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(10548),	-- Nightscape Pants
 		r(10499),	-- Nightscape Tunic
 		r(19065),	-- Runic Leather Bracers
-		r(10660, {["timeline"]={ "removed 4.0.3"}}),	-- Tribal Leatherworking
+		r(10660, {["timeline"] = { "removed 4.0.3"}}),	-- Tribal Leatherworking
 		r(10518),	-- Turtle Scale Bracers
 		r(10511),	-- Turtle Scale Breastplate
 		r(10552),	-- Turtle Scale Helm
@@ -719,8 +719,8 @@ DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = 
 		r(375178),	-- Earthshine Scales
 		r(375168),	-- Feral Hide Drums
 		r(375179),	-- Frostbite Scales
-		r(409557, {["timeline"]={ADDED_10_1_0}}),	-- Hide-Bound Drums
-		r(409555, {["timeline"]={ADDED_10_1_0}}),	-- Lustrous Scaled Drums
+		r(409557, {["timeline"] = {ADDED_10_1_0}}),	-- Hide-Bound Drums
+		r(409555, {["timeline"] = {ADDED_10_1_0}}),	-- Lustrous Scaled Drums
 		r(375174),	-- Mireslush Hide
 		r(389195),	-- Recraft Equipment
 		r(375164),	-- Reinforced Armor Kit

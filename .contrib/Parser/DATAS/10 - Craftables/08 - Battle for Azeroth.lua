@@ -70,54 +70,56 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(BLACKSMITHING, {
-		spell(285081, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Girdle
-			i(165642),	-- Plans: Fortified Stormsteel Girdle (RECIPE!)
-		})),
-		spell(285082, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Legguards
-			i(165640),	-- Plans: Fortified Stormsteel Legguards (RECIPE!)
-		})),
-		spell(285089, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Stormsteel Girdle
-			i(165643),	-- Plans: Tempered Stormsteel Girdle (RECIPE!)
-		})),
-		spell(285090, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Stormsteel Legguards
-			i(165641),	-- Plans: Tempered Stormsteel Legguards (RECIPE!)
-		})),
-		spell(253191, {	-- Imbued Stormsteel Girdle
-			i(162498),	-- Plans: Emblazoned Stormsteel Girdle (RECIPE!)
+		n(DISCOVERY, {
+			spell(285081, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Girdle
+				i(165642),	-- Plans: Fortified Stormsteel Girdle (RECIPE!)
+			})),
+			spell(285082, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Legguards
+				i(165640),	-- Plans: Fortified Stormsteel Legguards (RECIPE!)
+			})),
+			spell(285089, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Stormsteel Girdle
+				i(165643),	-- Plans: Tempered Stormsteel Girdle (RECIPE!)
+			})),
+			spell(285090, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Stormsteel Legguards
+				i(165641),	-- Plans: Tempered Stormsteel Legguards (RECIPE!)
+			})),
+			spell(253191, {	-- Imbued Stormsteel Girdle
+				i(162498),	-- Plans: Emblazoned Stormsteel Girdle (RECIPE!)
+			}),
+			spell(253187, {	-- Imbued Stormsteel Legguards
+				i(162496),	-- Plans: Emblazoned Stormsteel Legguards (RECIPE!)
+			}),
+			spell(305839, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Girdle
+				i(171107),	-- Plans: Eldritch Osmenite Girdle (RECIPE!)
+			})),
+			spell(305842, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Legguards
+				i(171109),	-- Plans: Eldritch Osmenite Legguards (RECIPE!)
+			})),
+			spell(299001, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Girdle
+				i(168761),	-- Plans: Reinforced Osmenite Girdle (RECIPE!)
+			})),
+			spell(298998, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Legguards
+				i(168759),	-- Plans: Reinforced Osmenite Legguards (RECIPE!)
+			})),
+			spell(299002, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Osmenite Girdle
+				i(168762),	-- Plans: Banded Osmenite Girdle (RECIPE!)
+			})),
+			spell(298999, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Osmenite Legguards
+				i(168760),	-- Plans: Banded Osmenite Legguards (RECIPE!)
+			})),
+			spell(253190, {	-- Stormsteel Girdle
+				i(162497),	-- Plans: Imbued Stormsteel Girdle (RECIPE!)
+			}),
+			spell(253186, {	-- Stormsteel Legguards
+				i(162495),	-- Plans: Imbued Stormsteel Legguards (RECIPE!)
+			}),
+			spell(305840, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Girdle
+				i(171108),	-- Plans: Maddening Osmenite Girdle (RECIPE!)
+			})),
+			spell(305843, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Legguards
+				i(171110),	-- Plans: Maddening Osmenite Legguards (RECIPE!)
+			})),
 		}),
-		spell(253187, {	-- Imbued Stormsteel Legguards
-			i(162496),	-- Plans: Emblazoned Stormsteel Legguards (RECIPE!)
-		}),
-		spell(305839, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Girdle
-			i(171107),	-- Plans: Eldritch Osmenite Girdle (RECIPE!)
-		})),
-		spell(305842, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Legguards
-			i(171109),	-- Plans: Eldritch Osmenite Legguards (RECIPE!)
-		})),
-		spell(299001, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Girdle
-			i(168761),	-- Plans: Reinforced Osmenite Girdle (RECIPE!)
-		})),
-		spell(298998, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Legguards
-			i(168759),	-- Plans: Reinforced Osmenite Legguards (RECIPE!)
-		})),
-		spell(299002, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Osmenite Girdle
-			i(168762),	-- Plans: Banded Osmenite Girdle (RECIPE!)
-		})),
-		spell(298999, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Osmenite Legguards
-			i(168760),	-- Plans: Banded Osmenite Legguards (RECIPE!)
-		})),
-		spell(253190, {	-- Stormsteel Girdle
-			i(162497),	-- Plans: Imbued Stormsteel Girdle (RECIPE!)
-		}),
-		spell(253186, {	-- Stormsteel Legguards
-			i(162495),	-- Plans: Imbued Stormsteel Legguards (RECIPE!)
-		}),
-		spell(305840, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Girdle
-			i(171108),	-- Plans: Maddening Osmenite Girdle (RECIPE!)
-		})),
-		spell(305843, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Legguards
-			i(171110),	-- Plans: Maddening Osmenite Legguards (RECIPE!)
-		})),
 		n(ARMOR, {
 			i(168682, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Osmenite Girdle [A]
 			i(168688, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Osmenite Girdle [H]
@@ -308,10 +310,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(152876),	-- Umbra Shard
 			i(152877),	-- Veiled Crystal
 		}),
-		cat(1232, {	-- Follower Equipment
-			i(165741),	-- Disenchanting Rod
-		}),
-		cat(650, {	-- Glove Enchantments
+		n(ARMOR_ENCHANTMENTS, {
 			i(153437, {	-- Enchant Gloves - Kul Tiran Crafting
 				["races"] = ALLIANCE_ONLY
 			}),
@@ -342,18 +341,10 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(159468, {	-- Enchant Gloves - Zandalari Surveying
 				["races"] = HORDE_ONLY
 			}),
-		}),
-		cat(1290, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {	-- Mount Equipment
-			i(168412),	-- Light-Step Hoofplates
-		})),
-		filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Pets
-			i(152878),	-- Enchanted Tiki Mask (PET!)
-		})),
-		cat(651, {	-- Ring Enchantments
-			i(168446, {["timeline"]={"added 8.2.0"}}),	-- Enchant Ring - Accord of Critical Strike
-			i(168447, {["timeline"]={"added 8.2.0"}}),	-- Enchant Ring - Accord of Haste
-			i(168448, {["timeline"]={"added 8.2.0"}}),	-- Enchant Ring - Accord of Mastery
-			i(168449, {["timeline"]={"added 8.2.0"}}),	-- Enchant Ring - Accord of Versatility
+			i(168446, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Ring - Accord of Critical Strike
+			i(168447, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Ring - Accord of Haste
+			i(168448, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Ring - Accord of Mastery
+			i(168449, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Ring - Accord of Versatility
 			i(153442),	-- Enchant Ring - Pact of Critical Strike
 			i(153443),	-- Enchant Ring - Pact of Haste
 			i(153444),	-- Enchant Ring - Pact of Mastery
@@ -362,49 +353,52 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(153439),	-- Enchant Ring - Seal of Haste
 			i(153440),	-- Enchant Ring - Seal of Mastery
 			i(153441),	-- Enchant Ring - Seal of Versatility
-		}),
-		filter(WANDS, {
-			i(161927),	-- Enchanter's Sorcerous Scepter (A)
-			i(152874),	-- Enchanter's Sorcerous Scepter (H)
-			i(161925),	-- Enchanter's Umbral Wand (A)
-			i(152872),	-- Enchanter's Umbral Wand (H)
-			i(161928),	-- Honorable Combatant's Sorcerous Scepter (A)
-			i(159922),	-- Honorable Combatant's Sorcerous Scepter (H)
-			i(167993, {["timeline"]={"added 8.2.0"}}),	-- Notorious Combatant's Sorcerous Scepter (A)
-			i(167992, {["timeline"]={"added 8.2.0"}}),	-- Notorious Combatant's Sorcerous Scepter (H)
-			i(164694, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Sorcerous Scepter (A)
-			i(164677, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Sorcerous Scepter (H)
-			i(170312, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Sorcerous Scepter (A)
-			i(170307, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Sorcerous Scepter (H)
-		}),
-		cat(652, {	-- Weapon Enchantments
-			i(153476),	-- Enchant Weapon -  Coastal Surge
-			i(159785),	-- Enchant Weapon -  Deadly Navigation
-			i(168596, {["timeline"]={"added 8.2.0"}}),	-- Enchant Weapon -  Force Multiplier
-			i(153480),	-- Enchant Weapon -  Gale-Force Striking
-			i(168593, {["timeline"]={"added 8.2.0"}}),	-- Enchant Weapon -  Machinist's Brilliance
-			i(159787),	-- Enchant Weapon -  Masterful Navigation
-			i(168598, {["timeline"]={"added 8.2.0"}}),	-- Enchant Weapon -  Naga Hide
-			i(168592, {["timeline"]={"added 8.2.0"}}),	-- Enchant Weapon -  Oceanic Restoration
-			i(159786),	-- Enchant Weapon -  Quick Navigation
-			i(153478),	-- Enchant Weapon -  Siphoning
-			i(159789),	-- Enchant Weapon -  Stalwart Navigation
-			i(153479),	-- Enchant Weapon -  Torrent of Elements
-			i(159788),	-- Enchant Weapon -  Versatile Navigation
-		}),
-		cat(1098, {	-- Wrist Enchantments
 			i(160330),	-- Enchant Bracers - Cooled Hearthing
 			i(160328),	-- Enchant Bracers - Safe Hearthing
-			i(159469, {	-- Enchant Bracers - Swift Hearthing (A)
+			i(159469, {	-- Enchant Bracers - Swift Hearthing [A]
 				["races"] = ALLIANCE_ONLY
 			}),
-			i(153436, {	-- Enchant Bracers - Swift Hearthing (H)
+			i(153436, {	-- Enchant Bracers - Swift Hearthing [H]
 				["races"] = HORDE_ONLY
 			}),
 		}),
-		cat(1249, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Tools of the Trade
-			i(164766),	-- Iwen's Enchanting Rod
+		filter(MISC, {
+			i(165741),	-- Disenchanting Rod
+			i(164766, {["timeline"] = {ADDED_8_1_5}}),	-- Iwen's Enchanting Rod
+			i(168412, {["timeline"] = {ADDED_8_2_0}}),	-- Light-Step Hoofplates
+		}),
+		filter(BATTLE_PETS, sharedDataSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
+			i(152878),	-- Enchanted Tiki Mask (PET!)
 		})),
+		n(WEAPON_ENCHANTMENTS, {
+			i(153476),	-- Enchant Weapon - Coastal Surge
+			i(159785),	-- Enchant Weapon - Deadly Navigation
+			i(168596, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Weapon - Force Multiplier
+			i(153480),	-- Enchant Weapon - Gale-Force Striking
+			i(168593, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Weapon - Machinist's Brilliance
+			i(159787),	-- Enchant Weapon - Masterful Navigation
+			i(168598, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Weapon - Naga Hide
+			i(168592, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Weapon - Oceanic Restoration
+			i(159786),	-- Enchant Weapon - Quick Navigation
+			i(153478),	-- Enchant Weapon - Siphoning
+			i(159789),	-- Enchant Weapon - Stalwart Navigation
+			i(153479),	-- Enchant Weapon - Torrent of Elements
+			i(159788),	-- Enchant Weapon - Versatile Navigation
+		}),
+		n(WEAPONS, {
+			i(161927),	-- Enchanter's Sorcerous Scepter [A]
+			i(152874),	-- Enchanter's Sorcerous Scepter [H]
+			i(161925),	-- Enchanter's Umbral Wand [A]
+			i(152872),	-- Enchanter's Umbral Wand [H]
+			i(161928),	-- Honorable Combatant's Sorcerous Scepter [A]
+			i(159922),	-- Honorable Combatant's Sorcerous Scepter [H]
+			i(167993, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Sorcerous Scepter [A]
+			i(167992, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Sorcerous Scepter [H]
+			i(164694, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Sorcerous Scepter [A]
+			i(164677, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Sorcerous Scepter [H]
+			i(170312, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Sorcerous Scepter [A]
+			i(170307, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Sorcerous Scepter [H]
+		}),
 	}),
 	prof(ENGINEERING, {
 		filter(MOUNTS, {
@@ -412,7 +406,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(158886),	-- Super-Charged Engine
 		}),
 		filter(BATTLE_PETS, {
-			i(165849, {["timeline"]={ADDED_8_1_0}}),	-- Mechantula (PET!)
+			i(165849, {["timeline"] = {ADDED_8_1_0}}),	-- Mechantula (PET!)
 		}),
 		filter(CONSUMABLES, {
 			i(165738),	-- Makeshift Azerite Detector
@@ -650,102 +644,104 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		spell(299025, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Cragscale Boots
-			i(168777),	-- Pattern: Reinforced Cragscale Boots (RECIPE!)
-		})),
-		spell(299028, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Cragscale Greaves
-			i(168779),	-- Pattern: Reinforced Cragscale Greaves (RECIPE!)
-		})),
-		spell(299019, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Dredged Leather Boots
-			i(168773),	-- Pattern: Reinforced Dredged Boots (RECIPE!)
-		})),
-		spell(299022, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Dredged Leather Leggings
-			i(168775),	-- Pattern: Reinforced Dredged Leggings (RECIPE!)
-		})),
-		spell(285079, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Mistscale Boots
-			i(165648),	-- Pattern: Fortified Mistscale Boots (RECIPE!)
-		})),
-		spell(285080, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Mistscale Greaves
-			i(165650),	-- Pattern: Fortified Mistscale Greaves (RECIPE!)
-		})),
-		spell(285083, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Tempest Boots
-			i(165644),	-- Pattern: Fortified Tempest Boots (RECIPE!)
-		})),
-		spell(285084, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Tempest Leggings
-			i(165646),	-- Pattern: Fortified Tempest Leggings (RECIPE!)
-		})),
-		spell(285087, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Mistscale Boots
-			i(165649),	-- Pattern: Tempered Mistscale Boots (RECIPE!)
-		})),
-		spell(285088, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Mistscale Greaves
-			i(165651),	-- Pattern: Tempered Mistscale Greaves (RECIPE!)
-		})),
-		spell(285091, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Tempest Boots
-			i(165645),	-- Pattern: Tempered Tempest Boots (RECIPE!)
-		})),
-		spell(285092, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Tempest Leggings
-			i(165647),	-- Pattern: Tempered Tempest Leggings (RECIPE!)
-		})),
-		spell(256765, {	-- Hardened Tempest Boots
-			i(162499),	-- Pattern: Imbued Tempest Boots (RECIPE!)
+		n(DISCOVERY, {
+			spell(299025, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Cragscale Boots
+				i(168777),	-- Pattern: Reinforced Cragscale Boots (RECIPE!)
+			})),
+			spell(299028, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Cragscale Greaves
+				i(168779),	-- Pattern: Reinforced Cragscale Greaves (RECIPE!)
+			})),
+			spell(299019, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Dredged Leather Boots
+				i(168773),	-- Pattern: Reinforced Dredged Boots (RECIPE!)
+			})),
+			spell(299022, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Dredged Leather Leggings
+				i(168775),	-- Pattern: Reinforced Dredged Leggings (RECIPE!)
+			})),
+			spell(285079, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Mistscale Boots
+				i(165648),	-- Pattern: Fortified Mistscale Boots (RECIPE!)
+			})),
+			spell(285080, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Mistscale Greaves
+				i(165650),	-- Pattern: Fortified Mistscale Greaves (RECIPE!)
+			})),
+			spell(285083, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Tempest Boots
+				i(165644),	-- Pattern: Fortified Tempest Boots (RECIPE!)
+			})),
+			spell(285084, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Tempest Leggings
+				i(165646),	-- Pattern: Fortified Tempest Leggings (RECIPE!)
+			})),
+			spell(285087, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Mistscale Boots
+				i(165649),	-- Pattern: Tempered Mistscale Boots (RECIPE!)
+			})),
+			spell(285088, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Mistscale Greaves
+				i(165651),	-- Pattern: Tempered Mistscale Greaves (RECIPE!)
+			})),
+			spell(285091, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Tempest Boots
+				i(165645),	-- Pattern: Tempered Tempest Boots (RECIPE!)
+			})),
+			spell(285092, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Tempest Leggings
+				i(165647),	-- Pattern: Tempered Tempest Leggings (RECIPE!)
+			})),
+			spell(256765, {	-- Hardened Tempest Boots
+				i(162499),	-- Pattern: Imbued Tempest Boots (RECIPE!)
+			}),
+			spell(256768, {	-- Hardened Tempest Leggings
+				i(162501),	-- Pattern: Imbued Tempest Leggings (RECIPE!)
+			}),
+			spell(256772, {	-- Imbued Mistscale Boots
+				i(162504),	-- Pattern: Emblazoned Mistscale Boots (RECIPE!)
+			}),
+			spell(256775, {	-- Imbued Mistscale Leggings
+				i(162506),	-- Pattern: Emblazoned Mistscale Leggings (RECIPE!)
+			}),
+			spell(256766, {	-- Imbued Tempest Boots
+				i(162500),	-- Pattern: Emblazoned Tempest Boots (RECIPE!)
+			}),
+			spell(256769, {	-- Imbued Tempest Leggings
+				i(162502),	-- Pattern: Emblazoned Tempest Leggings (RECIPE!)
+			}),
+			spell(305802, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Cragscale Boots
+				i(171122),	-- Pattern: Eldritch Cragscale Boots (RECIPE!)
+			})),
+			spell(305806, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Cragscale Greaves
+				i(171118),	-- Pattern: Eldritch Cragscale Greaves (RECIPE!)
+			})),
+			spell(305795, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Dredged Leather Boots
+				i(171126),	-- Pattern: Eldritch Dredged Leather Boots (RECIPE!)
+			})),
+			spell(305798, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Dredged Leather Leggings
+				i(171124),	-- Pattern: Eldritch Dredged Leather Leggings (RECIPE!)
+			})),
+			spell(256771, {	-- Mistscale Boots
+				i(162503),	-- Pattern: Imbued Mistscale Boots (RECIPE!)
+			}),
+			spell(256774, {	-- Mistscale Leggings
+				i(162505),	-- Pattern: Imbued Mistscale Leggings (RECIPE!)
+			}),
+			spell(299026, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Cragscale Boots
+				i(168778),	-- Pattern: Banded Cragscale Boots (RECIPE!)
+			})),
+			spell(299029, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Cragscale Greaves
+				i(168780),	-- Pattern: Pattern: Banded Cragscale Greaves (RECIPE!)
+			})),
+			spell(299020, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Dredged Boots
+				i(168774),	-- Pattern: Banded Dredged Boots (RECIPE!)
+			})),
+			spell(299023, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Dredged Leggings
+				i(168776),	-- Pattern: Banded Dredged Leggings (RECIPE!)
+			})),
+			spell(305803, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Cragscale Boots
+				i(171123),	-- Pattern: Maddening Cragscale Boots (RECIPE!)
+			})),
+			spell(305800, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Cragscale Greaves
+				i(171128),	-- Pattern: Maddening Cragscale Greaves (RECIPE!)
+			})),
+			spell(305796, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Dredged Leather Boots
+				i(171127),	-- Pattern: Maddening Dredged Leather Boots (RECIPE!)
+			})),
+			spell(305804, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Dredged Leather Leggings
+				i(171125),	-- Pattern: Maddening Dredged Leather Leggings (RECIPE!)
+			})),
 		}),
-		spell(256768, {	-- Hardened Tempest Leggings
-			i(162501),	-- Pattern: Imbued Tempest Leggings (RECIPE!)
-		}),
-		spell(256772, {	-- Imbued Mistscale Boots
-			i(162504),	-- Pattern: Emblazoned Mistscale Boots (RECIPE!)
-		}),
-		spell(256775, {	-- Imbued Mistscale Leggings
-			i(162506),	-- Pattern: Emblazoned Mistscale Leggings (RECIPE!)
-		}),
-		spell(256766, {	-- Imbued Tempest Boots
-			i(162500),	-- Pattern: Emblazoned Tempest Boots (RECIPE!)
-		}),
-		spell(256769, {	-- Imbued Tempest Leggings
-			i(162502),	-- Pattern: Emblazoned Tempest Leggings (RECIPE!)
-		}),
-		spell(305802, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Cragscale Boots
-			i(171122),	-- Pattern: Eldritch Cragscale Boots (RECIPE!)
-		})),
-		spell(305806, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Cragscale Greaves
-			i(171118),	-- Pattern: Eldritch Cragscale Greaves (RECIPE!)
-		})),
-		spell(305795, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Dredged Leather Boots
-			i(171126),	-- Pattern: Eldritch Dredged Leather Boots (RECIPE!)
-		})),
-		spell(305798, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Dredged Leather Leggings
-			i(171124),	-- Pattern: Eldritch Dredged Leather Leggings (RECIPE!)
-		})),
-		spell(256771, {	-- Mistscale Boots
-			i(162503),	-- Pattern: Imbued Mistscale Boots (RECIPE!)
-		}),
-		spell(256774, {	-- Mistscale Leggings
-			i(162505),	-- Pattern: Imbued Mistscale Leggings (RECIPE!)
-		}),
-		spell(299026, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Cragscale Boots
-			i(168778),	-- Pattern: Banded Cragscale Boots (RECIPE!)
-		})),
-		spell(299029, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Cragscale Greaves
-			i(168780),	-- Pattern: Pattern: Banded Cragscale Greaves (RECIPE!)
-		})),
-		spell(299020, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Dredged Boots
-			i(168774),	-- Pattern: Banded Dredged Boots (RECIPE!)
-		})),
-		spell(299023, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Dredged Leggings
-			i(168776),	-- Pattern: Banded Dredged Leggings (RECIPE!)
-		})),
-		spell(305803, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Cragscale Boots
-			i(171123),	-- Pattern: Maddening Cragscale Boots (RECIPE!)
-		})),
-		spell(305800, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Cragscale Greaves
-			i(171128),	-- Pattern: Maddening Cragscale Greaves (RECIPE!)
-		})),
-		spell(305796, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Dredged Leather Boots
-			i(171127),	-- Pattern: Maddening Dredged Leather Boots (RECIPE!)
-		})),
-		spell(305804, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Dredged Leather Leggings
-			i(171125),	-- Pattern: Maddening Dredged Leather Leggings (RECIPE!)
-		})),
 		n(ARMOR, {
 			filter(LEATHER, {
 				i(168706, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Dredged Boots [A]
