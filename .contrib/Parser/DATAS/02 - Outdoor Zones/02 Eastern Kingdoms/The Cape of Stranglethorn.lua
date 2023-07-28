@@ -1985,10 +1985,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2848, {	-- Glyx Brewright <Alchemy Supplies>
 					["coord"] = { 42.7, 75.1, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(6056, {	-- Recipe: Frost Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

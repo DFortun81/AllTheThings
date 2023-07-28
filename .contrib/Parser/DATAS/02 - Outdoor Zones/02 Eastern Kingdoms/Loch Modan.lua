@@ -1758,10 +1758,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 82.6, 63.2, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6053, {	-- Recipe: Holy Protection Potion
+						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

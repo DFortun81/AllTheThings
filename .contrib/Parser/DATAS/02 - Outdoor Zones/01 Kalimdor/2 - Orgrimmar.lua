@@ -5164,10 +5164,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5643, {	-- Recipe: Great Rage Potion
+						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -5432,7 +5432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(13478, {	-- Recipe: Elixir of Superior Defense
 							["isLimited"] = true,
 						}),
-						i(5642, {	-- Recipe: Free Action Potion
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

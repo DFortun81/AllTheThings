@@ -2790,7 +2790,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2480, {	-- Bro'kin <Alchemy Supplies> (Alterac Mountains)
 					["coord"] = { 44.0, 21.8, HILLSBRAD_FOOTHILLS },
 					["groups"] = {
-						i(14634, {	-- Recipe: Frost Oil
+						i(14634, {	-- Recipe: Frost Oil (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2811,7 +2811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6054, {	-- Recipe: Shadow Protection Potion
+						i(6054, {	-- Recipe: Shadow Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2959,7 +2959,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6055, {	-- Recipe: Fire Protection Potion
+						i(6055, {	-- Recipe: Fire Protection Potion (RECIPE!)
 							-- #if BEFORE 4.0.3
 							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde players.",
 							-- #else

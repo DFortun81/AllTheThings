@@ -866,7 +866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(4753, {	-- Jartsam <Nightsaber Riding Instructor>
 					["coord"] = { 38.6, 16.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
-					
+
 					-- Available to Night Elves without faction requirements.
 					["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
 					["OnInit"] = [[function(t)
@@ -1504,10 +1504,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5642, {	-- Recipe: Free Action Potion
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5643, {	-- Recipe: Great Rage Potion
+						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(13477, {	-- Recipe: Superior Mana Potion

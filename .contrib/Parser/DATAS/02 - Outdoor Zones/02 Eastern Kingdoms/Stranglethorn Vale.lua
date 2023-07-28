@@ -2519,10 +2519,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.0, 78.0, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(6056, {	-- Recipe: Frost Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

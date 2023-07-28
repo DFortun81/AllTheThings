@@ -1941,7 +1941,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(13478, {	-- Recipe: Elixir of Superior Defense
 							["isLimited"] = true,
 						}),
-						i(5642, {	-- Recipe: Free Action Potion
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

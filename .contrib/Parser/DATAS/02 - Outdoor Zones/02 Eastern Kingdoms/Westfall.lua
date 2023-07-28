@@ -1380,7 +1380,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4789, {	-- Stable Boots
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

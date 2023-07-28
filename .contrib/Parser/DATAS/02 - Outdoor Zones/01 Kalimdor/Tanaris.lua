@@ -5114,7 +5114,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.8, 27.0, TANARIS },
 					-- #endif
 					["groups"] = {
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(9303),	-- Recipe: Philosopher's Stone

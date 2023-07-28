@@ -1867,7 +1867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6056, {	-- Recipe: Frost Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

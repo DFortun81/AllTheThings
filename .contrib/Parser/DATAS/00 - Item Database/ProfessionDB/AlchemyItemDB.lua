@@ -1,5 +1,61 @@
 local i = GetRecipeHelperForProfession(ALCHEMY);
 
+------------------
+-- PATCH 0.5.3 --
+------------------
+-- TRAINER --
+i(0, 2259);	-- Alchemy (Apprentice)
+i(0, 3464);	-- Alchemy (Expert)
+i(0, 3101);	-- Alchemy (Journeyman)
+i(0, 7836);	-- Blackmouth Oil
+i(0, 3177);	-- Elixir of Defense
+i(0, 7845);	-- Elixir of Firepower
+i(0, 2329);	-- Elixir of Lion's Strength
+i(0, 7183);	-- Elixir of Minor Defense
+i(0, 2334);	-- Elixir of Minor Fortitude
+i(0, 7179);	-- Elixir of Water Breathing
+i(0, 3171);	-- Elixir of Wisdom
+i(0, 7837);	-- Fire Oil
+i(0, 7181);	-- Greater Healing Potion
+i(0, 3447);	-- Healing Potion
+i(0, 2337);	-- Lesser Healing Potion
+i(0, 3448);	-- Lesser Invisibility Potion
+i(0, 3173);	-- Lesser Mana Potion
+i(0, 3452);	-- Mana Potion
+i(0, 2330);	-- Minor Healing Potion
+i(0, 2331);	-- Minor Mana Potion
+i(0, 2332);	-- Minor Rejuvenation Potion
+i(0, 3176);	-- Strong Troll's Blood Elixir
+i(0, 7841);	-- Swim Speed Potion
+i(0, 3170);	-- Weak Troll's Blood Elixir
+-- ITEM --
+i(3832, 3453);	-- Elixir of Detect Lesser Invisibility
+i(3830, 3450);	-- Elixir of Fortitude
+i(3396, 2333);	-- Elixir of Lesser Agility
+i(2553, 3230);	-- Elixir of Minor Agility
+i(6211, 3188);	-- Elixir of Ogre's Strength
+i(3394, 3174);	-- Elixir of Poison Resistance	-- Renamed to Potion of Curing in 2.0.1
+i(6055, 7257);	-- Fire Protection Potion
+i(5642, 6624);	-- Free Action Potion
+i(14634, 3454);	-- Frost Oil
+i(6056, 7258);	-- Frost Protection Potion
+i(5643, 6618);	-- Great Rage Potion
+i(6053, 7255);	-- Holy Protection Potion
+i(3395, 3175);	-- Limited Invulnerability Potion
+i(3831, 3451);	-- Major Troll's Blood Potion	-- Renamed to Mighty Troll's Blood Elixir in Wrath
+i(6057, 7259);	-- Nature Protection Potion
+i(5640, 6617);	-- Rage Potion
+i(6054, 7256);	-- Shadow Protection Potion
+i(2555, 2335);	-- Swiftness Potion
+-- REMOVED --
+i(4597, 4508);	-- Discolored Healing Potion (4.0.3)
+i(4624, 4942);	-- Lesser Stoneshield Potion (4.0.3)
+i(3393, 3172);	-- Minor Magic Resistance Potion (5.0.4)
+i(6068, 3449);	-- Shadow Oil (Recipe removed 4.0.3, available from trainers 4.1.0)
+-- NYI --
+i(5641, 6619);	-- Cowardly Flight Potion
+i(2556, 2336);	-- Elixir of Tongues
+
 -----------------
 -- PATCH 6.0.1 --	- NOT DONE -Darkal
 -----------------
@@ -584,6 +640,7 @@ i(191592, 0);	-- Writhefire Oil
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+--ITEM --
 i(203420, 400270);	-- Draconic Suppression Powder
 
 ------------------

@@ -1344,7 +1344,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						i(4597, {	-- Recipe: Discolored Healing Potion
+						i(4597, {	-- Recipe: Discolored Healing Potion (RECIPE!)
 							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",
 							["timeline"] = { "removed 4.0.3" },
 						}),

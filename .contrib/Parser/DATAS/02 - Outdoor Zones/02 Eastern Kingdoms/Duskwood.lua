@@ -1918,8 +1918,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 18.0, 54.4, DUSKWOOD },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(6068, {	-- Recipe: Shadow Oil
-							["timeline"] = { "removed 4.0.3" },
+						i(6068, {	-- Recipe: Shadow Oil (RECIPE!)
+							["timeline"] = { "removed 4.0.3" }, -- Moved to trainers
 						}),
 					},
 				}),
@@ -1965,7 +1965,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4827, {	-- Wizard's Belt
 							["isLimited"] = true,
 						}),
-						i(6053, {	-- Recipe: Holy Protection Potion
+						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(7561, {	-- Schematic: Goblin Jumper Cables

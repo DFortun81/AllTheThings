@@ -3918,7 +3918,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6053, {	-- Recipe: Holy Protection Potion
+						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -4037,7 +4037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6275, {	-- Pattern: Greater Adept's Robe
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

@@ -2533,7 +2533,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.2, 50.6, THOUSAND_NEEDLES },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(6068, {  -- Recipe: Shadow Oil
+						i(6068, {  -- Recipe: Shadow Oil (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to trainers
 						}),
 					},

@@ -2782,7 +2782,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9302, {	-- Recipe: Ghost Dye
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2829,7 +2829,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9302, {	-- Recipe: Ghost Dye
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
