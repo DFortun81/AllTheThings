@@ -489,8 +489,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73133, {	--  Cozy Camouflage
 					["sourceQuests"] = { 73014 },	-- A Green Who Can't Sleep?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199987 },	-- Posidriss
+					["coord"] = { 16.6, 54.8, VALDRAKKEN },
 				}),
 				q(73131, {	--  Dignified Disguises
 					["sourceQuests"] = { 72993 },	-- I'm the Boss!
@@ -545,8 +545,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73132, {	-- Scanning the Stacks
 					["sourceQuests"] = { 73007 },	-- New Lenses
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199985 },	-- Zalethgos
+					["coord"] = { 9.7, 56.6, VALDRAKKEN },
 				}),
 				q(74490, {	-- Zaleth on the Go
 					["sourceQuests"] = { 73007 },	-- New Lenses
@@ -566,6 +566,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 			})),
 			n(QUESTS, sharedData({ ["isRepeatable"] = true }, {
+				q(77430, {	-- Practice Makes Perfect: Belastrasza
+					["sourceQuests"] = { 74492 },	-- Blistering Belastrasza
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
+				q(77429, {	-- Practice Makes Perfect: Posidriss
+					["sourceQuests"] = { 74491 },	-- Pole Position Posidriss
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
 				q(77426, {	-- Practice Makes Perfect: Rusziona
 					["sourceQuests"] = { 74488 },	-- Runaway Rusziona
 					["provider"] = { "n", 201443 },	-- Celetiros
@@ -574,8 +590,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(203684),	-- Silver Timepiece
 					},
 				}),
-				q(77430, {	-- Practice Makes Perfect: Belastrasza
-					["sourceQuests"] = { 74492 },	-- Blistering Belastrasza
+				q(77428, {	-- Practice Makes Perfect: Zalethgos
+					["sourceQuests"] = { 74490 },	-- Zaleth on the Go
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
+				q(77427, {	-- Practice Makes Perfect: Zhusadormu
+					["sourceQuests"] = { 74489 },	-- Zhoomsa
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
