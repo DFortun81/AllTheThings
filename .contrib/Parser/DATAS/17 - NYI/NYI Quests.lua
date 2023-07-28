@@ -531,6 +531,7 @@ root(ROOTS.NeverImplemented, {
 			q(28541),	-- Cache of Mau'ari
 			q(14446),	-- Cataclysm!
 			q(28516),	-- Centuries of Suffering
+			q(25413),	-- Change of Plans
 			q(28907),	-- Daily Normal Random (1st)
 			q(28908),	-- Daily Normal Random (Nth)
 			q(29185),	-- Daily Tier 2 Heroic (1st)
@@ -539,17 +540,21 @@ root(ROOTS.NeverImplemented, {
 			q(29029),	-- Dying Knowledge
 			q(27925),	-- Efficient Excavations
 			q(28555),	-- Expel the Envoys
+			q(29472),	-- Eyes on the Prizes [DMF]
 			q(26138),	-- Ferilon Leafborn
 			q(26767),	-- Figuring out how to make quests
 			q(29091),	-- Freedom Movement
+			q(29485),	-- Fun for the Little Ones [DMF]
 			q(26839),	-- Get Away From It All!
 			q(25666),	-- Getting Your Hands Dirty
 			q(24898),	-- Going, Going, Guano!
 			q(24899),	-- Going, Going, Guano!
 			q(26527),	-- Gryphon Master Talonaxe
-			q(25413),	-- Change of Plans
+			q(29479),	-- Herbs for Healing [DMF]
 			q(29028),	-- Into Jaedenar
 			q(14481),	-- Into The Abyss
+			q(35504),	-- Iron Joker [DMF]
+			q(29483),	-- Keeping the Faire Sparkling [DMF]
 			q(28905),	-- LFGDungeons - Cataclysm - Heroic Dungeon - 1st
 			q(28906),	-- LFGDungeons - Cataclysm - Heroic Dungeon - Nth
 			q(30110),	-- LFGDungeons - Cataclysm - Raid Finder - 1st
@@ -558,8 +563,12 @@ root(ROOTS.NeverImplemented, {
 			q(29096),	-- Mor'shan Caravan Pick-Up
 			q(27946),	-- NYI
 			q(28601),	-- Old Puttery
+			q(29466),	-- Plenty of Plump Frogs [DMF]
 			q(25435),	-- Pressure is Mounting
+			q(29484),	-- Putting the Crunch in the Frog [DMF]
+			q(29474),	-- Putting Trash to Good Use [DMF]
 			q(25384),	-- Raw Materials
+			q(29469),	-- Rearm, Reuse, Recycle [DMF]
 			q(26459),	-- Researching the Corruption
 			q(26704),	-- REUSE
 			q(28270),	-- Riding Shotgun
@@ -574,6 +583,8 @@ root(ROOTS.NeverImplemented, {
 			q(28642),	-- Shy-Rotam
 			q(25636),	-- Starve a Fever, Feed a Cold
 			q(28743),	-- Tailgunner!
+			q(29467),	-- Talkin' Tonks [DMF]
+			q(29470),	-- Tan My Hide [DMF]
 			q(28240),	-- Tapped Out
 			q(25737),	-- Tenuous Negotiatons
 			q(29169),	-- The Beasts Within
@@ -594,6 +605,7 @@ root(ROOTS.NeverImplemented, {
 			q(26243),	-- The World Pillar
 			q(29158),	-- The Zandalar Representative
 			q(24568),	-- To the Walls!
+			q(29465),	-- Tools of Divination [DMF]
 			q(28468),	-- Toxic Horrors
 			q(28481),	-- Troubled Spirits of Kel'Theril
 			q(28752),	-- Unstoppable Onslaught
@@ -604,6 +616,7 @@ root(ROOTS.NeverImplemented, {
 			q(25742),	-- What? This Old Thing?
 			q(28546),	-- Winterfall E'ko
 			q(28462),	-- Winterfall Firewater
+			q(29471),	-- Writing the Future [DMF]
 			q(24688),	-- Zen'Aliri
 		}),
 		tier(MOP_TIER, {
