@@ -827,11 +827,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 197 },	-- Marshal McBride
 								{ "i", 745 },	-- Marshal McBride's Documents
 							},
-							["sourceQuest"] = 21,	-- Skirmish at Echo Ridge
-							-- #if AFTER CATA
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
+							-- #if BEFORE CATA
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							["sourceQuest"] = 21,	-- Skirmish at Echo Ridge
+							-- #else
+							["sourceQuest"] = 26390,	-- Ending the Invasion
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							-- #endif
 							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
 							["groups"] = {

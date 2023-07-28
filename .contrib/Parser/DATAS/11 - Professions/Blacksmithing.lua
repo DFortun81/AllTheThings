@@ -594,7 +594,7 @@ profession(BLACKSMITHING, {
 			["timeline"] = { ADDED_8_1_5 },
 		}),
 		q(50114, {	-- Hammering Out Information (A)
-			["sourceQuests"] = { 50114 },	-- A Recipe For the Ages (A)
+			["sourceQuests"] = { 50123 },	-- A Recipe For the Ages (A)
 			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
 			["coord"] = { 73.6, 8.6, BORALUS },
 			["races"] = ALLIANCE_ONLY,

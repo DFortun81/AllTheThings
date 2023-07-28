@@ -178,8 +178,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(66087, {	-- Closing Time
 					["sourceQuests"] = {
-						66083,	-- Feels Like the First Time
 						66084,	-- Times Like These
+						66085, -- If We Could Turn Back Time
 					},
 					["provider"] = { "n", 190929 },	-- Aeonormu
 					["coord"] = { 57.5, 78.9, THALDRASZUS },

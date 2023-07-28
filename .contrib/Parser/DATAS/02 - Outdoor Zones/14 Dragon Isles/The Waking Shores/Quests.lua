@@ -817,9 +817,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			header(HEADERS.AchCriteria, 16401.06, {	-- The Shadow of His Wings
 				q(65690, {	-- A Cultist's Misgivings
 					["sourceQuests"] = {
-						66079,	-- Wrathion Awaits
-						70125,	-- Where is Wrathion? (A)
-						69910,	-- Where is Wrathion? (H)
+						65444,	-- To the Dragon Isles! (H)
+						67700,  -- To the Dragon Isles! (A)
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -833,9 +832,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(65687, {	-- Punching Up
 					["sourceQuests"] = {
-						66079,	-- Wrathion Awaits
-						70125,	-- Where is Wrathion? (A)
-						69910,	-- Where is Wrathion? (H)
+						65444,	-- To the Dragon Isles! (H)
+						67700,  -- To the Dragon Isles! (A)
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,

@@ -373,7 +373,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				},
 			}),
 			n(7607, {	-- Weegli Blastfuse
+			-- #if BEFORE 10.0.5
 				["description"] = "You must talk to this mob in order to enter the room with the last boss! If you are not fast enough, their whole party hearthstones out of the instance.",
+			-- #endif
+				["description"] = "This NPC no longer needs manually triggered to open the final boss door. You can move out of his vicinity, or even fight the group and he will still run to the door.",
 			}),
 			n(7604, {	-- Sergeant Bly
 				["description"] = "These adventurers initially help you clear the gauntlet leading up to the previous boss, but then they turn on you. You don't have to fight them if no one in your party needs the quest item.",
