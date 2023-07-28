@@ -183,6 +183,7 @@ profession(LEATHERWORKING, {
 			["sourceQuests"] = { 40196 },	-- Adventuring Anxieties
 			["provider"] = { "n", 93523 },	-- Namha Moonwater
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			["cost"] = {{"i", 124113, 100 }},	-- 100x Stonehide Leather
 		}),
 		q(41889,  {	-- Dazed of the Past
 			["sourceQuests"] = { 40197 },	-- The Necessary Materials
@@ -254,6 +255,7 @@ profession(LEATHERWORKING, {
 			["g"] = {
 				r(194696),	-- Warhide Belt [Rank 1] (RECIPE!)
 				r(194698),	-- Warhide Pants [Rank 1] (RECIPE!)
+				i(129972),	-- Vrykul Leather Binding (QI!)
 			},
 		}),
 		q(40178,  {	-- Vestment Opportunity
@@ -262,6 +264,7 @@ profession(LEATHERWORKING, {
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
 				r(194702),	-- Warhide Jerkin [Rank 1] (RECIPE!)
+				i(129971),	-- Hideshaper's Vestment (QI!)
 			},
 		}),
 		q(40181,  {	-- Black Rook Bandit
@@ -271,6 +274,7 @@ profession(LEATHERWORKING, {
 			["g"] = {
 				r(194736),	-- Battlebound Girdle [Rank 1] (RECIPE!)
 				r(194738),	-- Battlebound Leggings [Rank 1] (RECIPE!)
+				i(129973),	-- Black Rook Armor (QI!)
 			},
 		}),
 		q(40182,  {	-- Too Good To Pass Up
@@ -279,6 +283,7 @@ profession(LEATHERWORKING, {
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			["g"] = {
 				r(194742),	-- Battlebound Hauberk [Rank 1] (RECIPE!)
+				i(129974),	-- Black Rook Hauberk (QI!)
 			},
 		}),
 		q(40176,  {	-- From Head to Toe
@@ -329,6 +334,7 @@ profession(LEATHERWORKING, {
 			["coord"] = { 36.8, 78.2, 750 },
 			["g"] = {
 				r(194697),	-- Warhide Shoulderguard [Rank 1] (RECIPE!)
+				i(129976),	-- Lohrumn's Shoulderguard (QI!)
 			},
 		}),
 		q(40190,  {	-- Hardening the Hide
@@ -355,6 +361,7 @@ profession(LEATHERWORKING, {
 			["g"] = {
 				r(194704),	-- Warhide Belt [Rank 2] (RECIPE!)
 				r(194703),	-- Warhide Bindings [Rank 2] (RECIPE!)
+				i(130070),	-- Stalker Claw (QI!)
 			},
 		}),
 		q(40188, {	-- Best Served Cold
@@ -372,6 +379,7 @@ profession(LEATHERWORKING, {
 			["coord"] = { 47.4, 44.2, AZSUNA },
 			["g"] = {
 				r(194737),	-- Battlebound Spaulders [Rank 1] (RECIPE!)
+				i(129980),	-- Naga Shoulderguard (QI!)
 			},
 		}),
 		q(40193,  {	-- Getting the Kinks Out
@@ -387,12 +395,16 @@ profession(LEATHERWORKING, {
 			["g"] = {
 				r(194743),	-- Battlebound Armbands [Rank 2] (RECIPE!)
 				r(194744),	-- Battlebound Girdle [Rank 2] (RECIPE!)
+				i(130072),	-- Mail Armor Shipment (QI!)
 			},
 		}),
 		q(40195, {	-- A Daring Rescue
 			["sourceQuests"] = { 40194 },	-- Reclaimed Cargo
 			["provider"] = { "n", 98964 },	-- Celea
 			["coord"] = { 47.4, 44.2, AZSUNA },
+			["g"] = {
+				i(130263),	-- Celea's Hauberk (QI!)
+			},
 		}),
 		q(40327, {	-- Testing the Metal
 			["sourceQuests"] = { 40195 },	-- A Daring Rescue
@@ -412,6 +424,8 @@ profession(LEATHERWORKING, {
 			["g"] = {
 				r(194709),	-- Warhide Footpads [Rank 2] (RECIPE!)
 				r(194705),	-- Warhide Shoulderguard [Rank 2] (RECIPE!)
+				i(130077),	-- Highmountain Leatherworking Pattern (QI!)
+				i(130078),	-- Leatherworking Pattern Scrap (QI!)
 			},
 		}),
 		q(40199,  {	-- Leather Legwork
@@ -421,6 +435,8 @@ profession(LEATHERWORKING, {
 			["g"] = {
 				r(194745),	-- Battlebound Spaulders [Rank 2] (RECIPE!)
 				r(194749),	-- Battlebound Treads [Rank 2] (RECIPE!)
+				i(132172),	-- Crowbar
+				i(130081),	-- Crowbar (QI!)
 			},
 		}),
 		q(40202,  {	-- The Final Lessons
@@ -434,6 +450,7 @@ profession(LEATHERWORKING, {
 			["coord"] = { 36.8, 78.2, 750 },
 			["g"] = {
 				r(194708),	-- Warhide Gloves [Rank 2] (RECIPE!)
+				i(130100),	-- Basilisk Hide (QI!)
 			},
 		}),
 		q(40205, {	-- Respect for the Past
@@ -450,6 +467,7 @@ profession(LEATHERWORKING, {
 			["coord"] = { 36.8, 78.2, 750 },
 			["g"] = {
 				r(194707),	-- Warhide Mask [Rank 2] (RECIPE!)
+				i(130098),	-- Scale of Deathwing (QI!)
 			},
 		}),
 		q(40415, {	-- Well Spent Time
@@ -473,6 +491,7 @@ profession(LEATHERWORKING, {
 			["maps"] = { 713 },	-- Eye of Azshara
 			["g"] = {
 				r(194747),	-- Battlebound Warhelm [Rank 2] (RECIPE!)
+				i(130106),	-- Warlord Parjesh's Hauberk (QI!)
 			},
 		}),
 		q(40207, {	-- Scales of the Arcane
@@ -481,6 +500,7 @@ profession(LEATHERWORKING, {
 			["coord"] = { 47.4, 44.2, AZSUNA },
 			["g"] = {
 				r(194748),	-- Battlebound Grips [Rank 2] (RECIPE!)
+				i(130104),	-- Blue Dragon Scale (QI!)
 			},
 		}),
 		q(40209, {	-- Scales of the Earth
@@ -489,6 +509,7 @@ profession(LEATHERWORKING, {
 			["coord"] = { 47.4, 44.2, AZSUNA },
 			["g"] = {
 				r(194746),	-- Battlebound Leggings [Rank 2] (RECIPE!)
+				i(130110),	-- Axetail Basilisk Matriarch Scales (QI!)
 			},
 		}),
 		q(40210, {	-- Time Well Spent
@@ -518,6 +539,9 @@ profession(LEATHERWORKING, {
 			["sourceQuests"] = { 40212 },	-- Wrong End of the Knife
 			["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 			["coord"] = { 26.6, 71.6, SURAMAR },
+			["g"] = {
+				i(130129),	-- Fel Hound Corpse (QI!)
+			},
 		}),
 		q(40214, {	-- Fel Tanning
 			["sourceQuests"] = { 40213 },	-- Hounds Abound

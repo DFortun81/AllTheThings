@@ -1178,7 +1178,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(10402, {	-- Blackened Defias Boots
 						i(1943, {	-- Goblin Mail Leggings
 						i(1945, {	-- Woodworking Gloves--]]
-					}),
 						i(206573, {	-- Dented Raider's Belt
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["g"] = {
