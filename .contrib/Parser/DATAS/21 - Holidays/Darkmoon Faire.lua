@@ -138,7 +138,9 @@ local DARKMOON_GAME_PRIZE = i(93724, {	-- Darkmoon Game Prize [Cataclysm Version
 local DARKMOON_GAME_TOKEN = i(71083, {	-- Darkmoon Game Token [Cataclysm Version]
 	["timeline"] = { "added 4.3.0.15005" },
 });
-local DARKMOON_PRIZE_TICKET = currency(515);	-- Darkmoon Prize Ticket [Cataclysm Version]
+local DARKMOON_PRIZE_TICKET = currency(515, {	-- Darkmoon Prize Ticket [Cataclysm Version]
+	["timeline"] = { "added 4.3.0.14732" },
+});
 local TATTERED_DARKMOON_PRIZE_TICKET = i(19182, {	-- Tattered Darkmoon Faire Prize Ticket
 	["timeline"] = { "removed 4.3.0.15005" },
 });
@@ -202,6 +204,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		-- #endif
 	},
 	["groups"] = {
+		-- #if AFTER 4.3.0.15005
 		n(ACHIEVEMENTS, {
 			petbattle(ach(9069, {	-- An Awfully Big Adventure
 				["timeline"] = { "added 6.0.2" },
@@ -465,6 +468,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 		}),
+		-- #endif
 		-- #if AFTER 5.1.0
 		battlepets({
 			pet(1068, {	-- Crow (PET!)
@@ -1012,6 +1016,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				["maxReputation"] = { 909, EXALTED },	-- Darkmoon Faire, Exalted.
+				["timeline"] = { "added 4.3.0.14732" },
 				["isMonthly"] = true,
 				["groups"] = {
 					DARKMOON_PRIZE_TICKET,
@@ -1024,6 +1029,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["coord"] = { 51.1, 82.0, DARKMOON_ISLAND },
 				["maxReputation"] = { 909, EXALTED },	-- Darkmoon Faire, Exalted.
+				["timeline"] = { "added 4.3.0.14732" },
 				["isMonthly"] = true,
 				["groups"] = {
 					DARKMOON_PRIZE_TICKET,
@@ -1036,6 +1042,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["coord"] = { 53.6, 75.6, DARKMOON_ISLAND },
 				["maxReputation"] = { 909, EXALTED },	-- Darkmoon Faire, Exalted.
+				["timeline"] = { "added 4.3.0.14732" },
 				["isMonthly"] = true,
 				["groups"] = {
 					DARKMOON_PRIZE_TICKET,
