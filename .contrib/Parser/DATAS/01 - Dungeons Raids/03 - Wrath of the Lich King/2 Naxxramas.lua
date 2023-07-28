@@ -1173,6 +1173,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				n(206572, {	-- Zackett Skullsmash
 					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 					["g"] = {
+						--[[ Removed DM drops. Need confirmation
+								i(3019, {	-- Noble's Robe
+						i(10402, {	-- Blackened Defias Boots
+						i(1943, {	-- Goblin Mail Leggings
+						i(1945, {	-- Woodworking Gloves--]]
+					}),
 						i(206573, {	-- Dented Raider's Belt
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["g"] = {
@@ -1182,8 +1188,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(206575, {	-- Dented Raider's Boots
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["g"] = {
-								i(4660),	-- Walking Boots
 								i(206611),	-- Lamented Crusader's Boots
+								i(7187),	-- VanCleef's Boots
+								i(4660),	-- Walking Boots
 							},
 						}),
 						i(206571, {	-- Dented Raider's Bracers
@@ -1202,6 +1209,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["g"] = {
 								i(206608),	-- Lamented Crusader's Gauntlets
+								i(1944),	-- Metalworking Gloves
 							},
 						}),
 						i(206568, {	-- Dented Raider's Helmet
