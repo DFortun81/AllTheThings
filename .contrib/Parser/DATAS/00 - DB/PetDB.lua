@@ -994,6 +994,7 @@ local CompanionPetSpeciesIDToSpellID = {
 	[384796] = 384796,	-- Pebble
 	[388541] = 388541,	-- Hoplet
 	[407786] = 407786,	-- Glub
+	[359755] = 359755,	-- Flurky
 };
 for key,value in pairs(CompanionPetSpeciesIDToSpellID) do
 	if CompanionPetSpellIDToSpeciesID[value] then
@@ -4069,3 +4070,4 @@ i(206979, 3601);	-- Posidriss
 i(198665, 384796);	-- Pebble's Pebble
 i(200060, 388541);	-- Hoplet
 i(204982, 407786);	-- Glub
+i(187794, 359755);	-- Flurky
