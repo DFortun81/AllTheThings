@@ -468,10 +468,13 @@ root(ROOTS.NeverImplemented, {
 			q(28365),	-- <PH>Drizle Safe
 			q(28903),	-- <PH>Faceless
 			q(28902),	-- <PH>Hive'Zora B/C
+			q(29447),	-- A Curious Crystal [DMF]
 			q(26155),	-- A Dark Threat, Remembered
+			q(29478),	-- A Fizzy Fusion [DMF]
 			q(14453),	-- A Humble Task
 			q(26764),	-- A New Low (Northern Stranglethorn)
 			q(25455),	-- A Test of Wills
+			q(29450),	-- A Wondrous Weapon [DMF]
 			q(28011),	-- Adventurers Wanted: Blackfathom Deeps
 			q(28010),	-- Adventurers Wanted: Blackfathom Deeps
 			q(28071),	-- Adventurers Wanted: Blackrock Spire
@@ -514,8 +517,10 @@ root(ROOTS.NeverImplemented, {
 			q(28037),	-- Adventurers Wanted: Zul'farrak
 			q(28036),	-- Adventurers Wanted: Zul'farrak
 			q(26156),	-- All The King's Men
+			q(29449),	-- An Intriguing Grimoire [DMF]
 			q(26874),	-- Awakening Naralex
 			q(25497),	-- Back in the Saddle
+			q(29480),	-- Banners, Banners Everywhere! [DMF]
 			q(14319),	-- BETA Further Treatment
 			q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
 			q(14220),	-- BETA This Is the End
@@ -583,6 +588,7 @@ root(ROOTS.NeverImplemented, {
 			q(27634),	-- The God Hakkar
 			q(27018),	-- The Herald <NYI>
 			q(28606),	-- The Keys to the Hot Rod
+			q(29454),	-- The Master Strategist [DMF]
 			q(29672),	-- The Opening of the Dark Portal
 			q(29683),	-- The Scryer's Scryer
 			q(26243),	-- The World Pillar

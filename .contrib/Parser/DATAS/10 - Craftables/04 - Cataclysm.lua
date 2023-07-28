@@ -303,51 +303,41 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 		}),
 		category(106, {	-- Tarot Cards
 			sp(86615, {	-- Darkmoon Card of Destruction
-				i(61988, {["filterID"] = CONSUMABLES}),    -- Ace of embers
-				i(61989, {["filterID"] = CONSUMABLES}),    -- 2 of embers
-				i(61990, {["filterID"] = CONSUMABLES}),    -- 3 of embers
-				i(61991, {["filterID"] = CONSUMABLES}),    -- 4 of embers
-				i(61992, {["filterID"] = CONSUMABLES}),    -- 5 of embers
-				i(61993, {["filterID"] = CONSUMABLES}),    -- 6 of embers
-				i(61994, {["filterID"] = CONSUMABLES}),    -- 7 of embers
-				i(61995, {["filterID"] = CONSUMABLES}),    -- 8 of embers
-				i(62021, {	-- Volcanic Deck
-					i(62047),	-- Darkmoon Card: Volcano
-				}),
-				i(61996, {["filterID"] = CONSUMABLES}),    -- Ace of stones
-				i(61997, {["filterID"] = CONSUMABLES}),    -- 2 of stones
-				i(61998, {["filterID"] = CONSUMABLES}),    -- 3 of stones
-				i(61999, {["filterID"] = CONSUMABLES}),    -- 4 of stones
-				i(62000, {["filterID"] = CONSUMABLES}),    -- 5 of stones
-				i(62001, {["filterID"] = CONSUMABLES}),    -- 6 of stones
-				i(62002, {["filterID"] = CONSUMABLES}),    -- 7 of stones
-				i(62003, {["filterID"] = CONSUMABLES}),    -- 8 of stones
-				i(62046, {	-- Earthquake Deck
-					i(62048),	-- Darkmoon Card: Earthquake
-				}),
-				i(62004, {["filterID"] = CONSUMABLES}),    -- Ace of winds
-				i(62005, {["filterID"] = CONSUMABLES}),    -- 2 of winds
-				i(62006, {["filterID"] = CONSUMABLES}),    -- 3 of winds
-				i(62007, {["filterID"] = CONSUMABLES}),    -- 4 of winds
-				i(62008, {["filterID"] = CONSUMABLES}),    -- 5 of winds
-				i(62009, {["filterID"] = CONSUMABLES}),    -- 6 of winds
-				i(62010, {["filterID"] = CONSUMABLES}),    -- 7 of winds
-				i(62011, {["filterID"] = CONSUMABLES}),    -- 8 of winds
-				i(62045, {	-- Hurricane Deck
-					i(62049),	-- Darkmoon Card: Hurricane
-					i(62051),	-- Darkmoon Card: Hurricane
-				}),
-				i(62012, {["filterID"] = CONSUMABLES}),    -- Ace of waves
-				i(62013, {["filterID"] = CONSUMABLES}),    -- 2 of waves
-				i(62014, {["filterID"] = CONSUMABLES}),    -- 3 of waves
-				i(62015, {["filterID"] = CONSUMABLES}),    -- 4 of waves
-				i(62016, {["filterID"] = CONSUMABLES}),    -- 5 of waves
-				i(62017, {["filterID"] = CONSUMABLES}),    -- 6 of waves
-				i(62018, {["filterID"] = CONSUMABLES}),    -- 7 of waves
-				i(62019, {["filterID"] = CONSUMABLES}),    -- 8 of waves
-				i(62044, {	-- Tsunami Deck
-					i(62050),	-- Darkmoon Card: Tsunami
-				}),
+				i(61988),    -- Ace of Embers
+				i(61989),    -- Two of Embers
+				i(61990),    -- Three of Embers
+				i(61991),    -- Four of Embers
+				i(61992),    -- Five of Embers
+				i(61993),    -- Six of Embers
+				i(61994),    -- Seven of Embers
+				i(61995),    -- Eight of Embers
+				
+				i(61996),    -- Ace of Stones
+				i(61997),    -- Two of Stones
+				i(61998),    -- Three of Stones
+				i(61999),    -- Four of Stones
+				i(62000),    -- Five of Stones
+				i(62001),    -- Six of Stones
+				i(62002),    -- Seven of Stones
+				i(62003),    -- Eight of Stones
+				
+				i(62004),    -- Ace of the Winds
+				i(62005),    -- Two of the Winds
+				i(62006),    -- Three of the Winds
+				i(62007),    -- Four of the Winds
+				i(62008),    -- Five of the Winds
+				i(62009),    -- Six of the Winds
+				i(62010),    -- Seven of the Winds
+				i(62011),    -- Eight of the Winds
+				
+				i(62012),    -- Ace of Waves
+				i(62013),    -- Two of Waves
+				i(62014),    -- Three of Waves
+				i(62015),    -- Four of Waves
+				i(62016),    -- Five of Waves
+				i(62017),    -- Six of Waves
+				i(62018),    -- Seven of Waves
+				i(62019),    -- Eight of Waves
 			}),
 		}),
 		filter(HELD_IN_OFF_HAND, {
