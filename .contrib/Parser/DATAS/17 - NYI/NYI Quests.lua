@@ -916,13 +916,6 @@ root(ROOTS.NeverImplemented, {
 				q(32291, { ["name"] = "[PH] The Fall of Shan Bu", }),	-- [PH] The Fall of Shan Bu
 			})),
 
-			-- 5.3.0
-			tier(MOP_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 5.3.0"} }, {
-				q(32825, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-				q(32826, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-				q(32827, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-			})),
-
 			-- 5.4.0
 			tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 5.4.0"} }, {
 				q(33360, { ["name"] = "5.4 Raid - RRP - Boss 1 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 1 Legendary Quest
