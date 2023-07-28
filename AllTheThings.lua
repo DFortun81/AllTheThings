@@ -1875,7 +1875,7 @@ local IgnoredQuests = setmetatable({}, {
 })
 PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-		local questRef = app.SearchForMergedObject("questID", questID, "field");
+		local questRef = app.SearchForObject("questID", questID, "field");
 		local questChange;
 		if new == true then
 			questChange = "accepted";
@@ -7073,7 +7073,12 @@ local ObjectFunctions = {
 		local key = t.key;
 		-- only process this logic for real 'Things' in the game
 		if not app.ThingKeys[key] then return; end
-		local o = app.SearchForObject(key, t[key], "field");
+		-- quest 76250
+		-- item with modID, so key is itemID, t[key] is 13544
+		-- SFO uses 'modItemID' to verify 'itemID' search result object accuracy, thus '13544' never matches the expected '13544.01'
+		-- somehow we need to know to search by 'itemID' but using the 'modItemID' here
+		local val = key == "itemID" and t.modItemID or t[key];
+		local o = app.SearchForObject(key, val, "field");
 		local missing = true;
 		while o do
 			missing = rawget(o, "_missing");
