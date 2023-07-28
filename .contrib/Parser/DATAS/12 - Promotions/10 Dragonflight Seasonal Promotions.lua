@@ -105,7 +105,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(208057, {	-- Smoldering Banner of the Aspects (TOY!)
 				["description"] = "The Great Push returns in Dragonflight Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 30 Jun 2023 and The Proving Grounds are on 5-10 July (US).",
-				-- ["timeline"] = { "added 10.1.5.XXXXX", "removed 10.1.5.99999" },
+				["timeline"] = { "added 10.1.5", "removed 10.1.5" },
 			}),
 			mount(397406, {	-- Wonderous Wavewhisker
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription. Promotion valid through January 9, 2024.",
@@ -114,6 +114,7 @@ root(ROOTS.Promotions, {
 			i(32566, {	-- Picnic Basket (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between July 11th, 10:00 a.m. & July 18th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { "added 10.1.5." }, -- "removed 10.1.0.49570" },
+				["u"] = REMOVED_FROM_GAME,	-- 18th July 2023
 			}),
 		},
 	}),

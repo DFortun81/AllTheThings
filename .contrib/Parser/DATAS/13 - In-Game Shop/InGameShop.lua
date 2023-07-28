@@ -288,6 +288,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(78916, {	-- Soul of the Aspects (PET!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
+		i(190601, {	-- Sunny
+			["timeline"] = { "added 10.1.5" },
+		}),
 		i(153541, {	-- Tottle (PET!)
 			["timeline"] = { "added 7.3.5.25937" },
 		}),
