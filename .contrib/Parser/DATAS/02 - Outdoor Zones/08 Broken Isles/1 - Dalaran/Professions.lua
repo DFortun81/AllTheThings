@@ -268,10 +268,10 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				prof(BLACKSMITHING, {
-					n(92183, {	-- Alard Schmied
+					n(92183, {	-- Alard Schmied <Blacksmithing Trainer>
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
 						["g"] = {
-							r(239415, {["timeline"]={"added 7.2.0"}}),	-- Rethu's Incessant Courage (RECIPE!)
+							r(239415, {["timeline"] = {ADDED_7_2_0}}),	-- Rethu's Incessant Courage (RECIPE!)
 						},
 					}),
 				}),
@@ -593,6 +593,15 @@ root(ROOTS.Zones, {
 								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 3] (RECIPE!)
 							},
 						}),
+					}),
+				}),
+				prof(LEATHERWORKING, {
+					n(93523, {	-- Namha Moonwater <Leatherworking Trainer>
+						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						["g"] = {
+							r(239413, {["timeline"] = {ADDED_7_2_0}}),	-- The Sentinel's Eternal Refuge (RECIPE!)
+							r(239414, {["timeline"] = {ADDED_7_2_0}}),	-- Vigilance Perch (RECIPE!)
+						},
 					}),
 				}),
 			}),

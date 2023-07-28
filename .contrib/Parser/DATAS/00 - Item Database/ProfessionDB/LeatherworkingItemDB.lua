@@ -1205,99 +1205,93 @@ i(127722, 187489);	-- Mighty Burnished Essence
 i(127740, 187513);	-- Savage Burnished Essence
 
 ------------------
--- PATCH 7.0.1 --
-------------------
-i(0, 195119);	-- Leatherworking
--- ITEM --
-i(137952, 196648);	-- Stonehide Leather Barding
--- QUEST --
-i(0, 196457);	-- Fel Leather Cuff
-i(0, 196395);	-- Fel Leather Strap
-i(0, 196456);	-- Felhide Bracers
-i(0, 196428);	-- Rough Warhide Mask*
-i(0, 196387);	-- Shaved Felhide
-i(0, 196375);	-- Shaved Stonehide Pelt*
-i(0, 196425);	-- Stonehide Boot Base
-i(0, 196384);	-- Stonehide Boot Exterior
-i(0, 196469);	-- Stonehide Caparison
-i(0, 196467);	-- Stonehide Champron
-i(0, 196468);	-- Stonehide Crinet
-i(0, 196397);	-- Stonehide Leather Barding
-i(0, 196442);	-- Stonehide Leather Bed
-i(0, 196382);	-- Stonehide Leather Lining*
-i(0, 196383);	-- Stonehide Leather Vamp
-i(0, 196385);	-- Stonehide Leather Strip*
-i(0, 196427);	-- Sturdy Stonehide Boots
-i(0, 196379);	-- Tanned Stonehide Leather*
-i(0, 196388);	-- Tanned Fel Leather
-i(0, 194696);	-- Warhide Belt [Rank 1]
-i(0, 194695);	-- Warhide Bindings [Rank 1]
-i(0, 194701);	-- Warhide Footpads [Rank 1]
-i(0, 194700);	-- Warhide Gloves [Rank 1]
-i(0, 194702);	-- Warhide Jerkin [Rank 1]
-i(0, 194699);	-- Warhide Mask [Rank 1]
-i(0, 194698);	-- Warhide Pants [Rank 1]
-i(0, 194697);	-- Warhide Shoulderguard [Rank 1]
-
-------------------
 -- PATCH 7.0.3 --
 ------------------
--- TRAINER --
-i(0, 226115);	-- Blue Chain Leggings
-i(0, 226119);	-- Chain Belt
-i(0, 226113);	-- Chain Boots
-i(0, 226116);	-- Chain Bracers
-i(0, 226118);	-- Chain Gauntlets
-i(0, 226112);	-- Chain Hauberk
-i(0, 226117);	-- Chain Leggings
-i(0, 226121);	-- Chain Pauldrons
-i(0, 226114);	-- Crackling Scale Breastplate
-i(0, 226122);	-- Element Grips
-i(0, 226132);	-- Heavy Scale Belt
-i(0, 226134);	-- Heavy Scale Boots
-i(0, 226123);	-- Heavy Scale Gauntlets
-i(0, 226135);	-- Heavy Scale Hood
-i(0, 226126);	-- Heavy Scale Pants
-i(0, 226129);	-- Heavy Scale Pauldrons
-i(0, 226128);	-- Heavy Scale Shirt
-i(0, 226124);	-- Heavy Scale Wraps
-i(0, 226107);	-- Light Scale Belt
-i(0, 226109);	-- Light Scale Boots
-i(0, 226106);	-- Light Scale Bracers
-i(0, 226105);	-- Light Scale Gloves
-i(0, 226108);	-- Light Scale Jerkin
-i(0, 226111);	-- Light Scale Pants
-i(0, 226110);	-- Shamanic Treads
-i(0, 226137);	-- Spritescale Boots
-i(0, 226125);	-- Spritescale Britches
-i(0, 226127);	-- Spritescale Cinch
-i(0, 226136);	-- Spritescale Circlet
-i(0, 226120);	-- Spritescale Epaulets
-i(0, 226131);	-- Spritescale Gloves
-i(0, 226130);	-- Spritescale Jerkin
-i(0, 226133);	-- Spritescale Wraps
--- ITEM --
-i(137900, 194743);	-- Battlebound Armbands [Rank 2]
+-- Deal with later
+i(0, 226115);		-- Blue Chain Leggings
+i(0, 226119);		-- Chain Belt
+i(0, 226113);		-- Chain Boots
+i(0, 226116);		-- Chain Bracers
+i(0, 226118);		-- Chain Gauntlets
+i(0, 226112);		-- Chain Hauberk
+i(0, 226117);		-- Chain Leggings
+i(0, 226121);		-- Chain Pauldrons
+i(0, 226114);		-- Crackling Scale Breastplate
+i(0, 226122);		-- Element Grips
+i(0, 226132);		-- Heavy Scale Belt
+i(0, 226134);		-- Heavy Scale Boots
+i(0, 226123);		-- Heavy Scale Gauntlets
+i(0, 226135);		-- Heavy Scale Hood
+i(0, 226126);		-- Heavy Scale Pants
+i(0, 226129);		-- Heavy Scale Pauldrons
+i(0, 226128);		-- Heavy Scale Shirt
+i(0, 226124);		-- Heavy Scale Wraps
+i(0, 226107);		-- Light Scale Belt
+i(0, 226109);		-- Light Scale Boots
+i(0, 226106);		-- Light Scale Bracers
+i(0, 226105);		-- Light Scale Gloves
+i(0, 226108);		-- Light Scale Jerkin
+i(0, 226111);		-- Light Scale Pants
+i(0, 226110);		-- Shamanic Treads
+i(0, 226137);		-- Spritescale Boots
+i(0, 226125);		-- Spritescale Britches
+i(0, 226127);		-- Spritescale Cinch
+i(0, 226136);		-- Spritescale Circlet
+i(0, 226120);		-- Spritescale Epaulets
+i(0, 226131);		-- Spritescale Gloves
+i(0, 226130);		-- Spritescale Jerkin
+i(0, 226133);		-- Spritescale Wraps
+----
+i(0, 195119);		-- Leatherworking (Legion) [REMOVED: 8.0.1]
+--- TRAINER ---
+i(0, 194735);		-- Battlebound Armbands [Rank 1]
+i(0, 194743);		-- Battlebound Armbands [Rank 2]
+i(0, 194736);		-- Battlebound Girdle [Rank 1]
+i(0, 194744);		-- Battlebound Girdle [Rank 2]
+i(0, 194740);		-- Battlebound Grips [Rank 1]
+i(0, 194748);		-- Battlebound Grips [Rank 2]
+i(0, 194742);		-- Battlebound Hauberk [Rank 1]
+i(0, 194750);		-- Battlebound Hauberk [Rank 2]
+i(0, 194738);		-- Battlebound Leggings [Rank 1]
+i(0, 194746);		-- Battlebound Leggings [Rank 2]
+i(0, 194737);		-- Battlebound Spaulders [Rank 1]
+i(0, 194745);		-- Battlebound Spaulders [Rank 2]
+i(0, 194741);		-- Battlebound Treads [Rank 1]
+i(0, 194749);		-- Battlebound Treads [Rank 2]
+i(0, 194739);		-- Battlebound Warhelm [Rank 1]
+i(0, 194747);		-- Battlebound Warhelm [Rank 2]
+i(0, 194787);		-- Dreadleather Bindings [Rank 1]
+i(0, 194796);		-- Gravenscale Armbands [Rank 1]
+i(0, 194776);		-- Leather Pet Bed
+i(0, 196648);		-- Stonehide Leather Barding
+i(0, 194696);		-- Warhide Belt [Rank 1]
+i(0, 194704);		-- Warhide Belt [Rank 2]
+i(0, 194695);		-- Warhide Bindings [Rank 1]
+i(0, 194703);		-- Warhide Bindings [Rank 2]
+i(0, 194701);		-- Warhide Footpads [Rank 1]
+i(0, 194709);		-- Warhide Footpads [Rank 2]
+i(0, 194700);		-- Warhide Gloves [Rank 1]
+i(0, 194708);		-- Warhide Gloves [Rank 2]
+i(0, 194702);		-- Warhide Jerkin [Rank 1]
+i(0, 194710);		-- Warhide Jerkin [Rank 2]
+i(0, 194699);		-- Warhide Mask [Rank 1]
+i(0, 194707);		-- Warhide Mask [Rank 2]
+i(0, 194698);		-- Warhide Pants [Rank 1]
+i(0, 194706);		-- Warhide Pants [Rank 2]
+i(0, 194697);		-- Warhide Shoulderguard [Rank 1]
+i(0, 194705);		-- Warhide Shoulderguard [Rank 2]
+--- ITEM ---
 i(137908, 194751);	-- Battlebound Armbands [Rank 3]
-i(137901, 194744);	-- Battlebound Girdle [Rank 2]
 i(137913, 194756);	-- Battlebound Girdle [Rank 3]
-i(137905, 194748);	-- Battlebound Grips [Rank 2]
 i(137911, 194754);	-- Battlebound Grips [Rank 3]
-i(137907, 194750);	-- Battlebound Hauberk [Rank 2]
 i(137915, 194758);	-- Battlebound Hauberk [Rank 3]
-i(137903, 194746);	-- Battlebound Leggings [Rank 2]
 i(137909, 194752);	-- Battlebound Leggings [Rank 3]
-i(137902, 194745);	-- Battlebound Spaulders [Rank 2]
 i(137914, 194757);	-- Battlebound Spaulders [Rank 3]
-i(132124, 194741);	-- Battlebound Treads [Rank 1]
-i(137906, 194749);	-- Battlebound Treads [Rank 2]
 i(137912, 194755);	-- Battlebound Treads [Rank 3]
-i(137904, 194747);	-- Battlebound Warhelm [Rank 2]
 i(137910, 194753);	-- Battlebound Warhelm [Rank 3]
 i(140637, 194788);	-- Dreadleather Belt [Rank 1]
 i(137885, 194720);	-- Dreadleather Belt [Rank 2]
 i(137893, 194728);	-- Dreadleather Belt [Rank 3]
-i(140636, 194787);	-- Dreadleather Bindings [Rank 1]
 i(137884, 194719);	-- Dreadleather Bindings [Rank 2]
 i(137892, 194727);	-- Dreadleather Bindings [Rank 3]
 i(140642, 194785);	-- Dreadleather Footpads [Rank 1]
@@ -1320,7 +1314,6 @@ i(137886, 194721);	-- Dreadleather Shoulderguard [Rank 2]
 i(137894, 194729);	-- Dreadleather Shoulderguard [Rank 3]
 i(141850, 194780);	-- Elderhorn Riding Harness
 i(137932, 194775);	-- Flaming Hoop
-i(140644, 194796);	-- Gravenscale Armbands [Rank 1]
 i(137916, 194759);	-- Gravenscale Armbands [Rank 2]
 i(137924, 194767);	-- Gravenscale Armbands [Rank 3]
 i(140645, 194797);	-- Gravenscale Girdle [Rank 1]
@@ -1345,52 +1338,80 @@ i(140648, 194794);	-- Gravenscale Warhelm [Rank 1]
 i(137920, 194763);	-- Gravenscale Warhelm [Rank 2]
 i(137928, 194771);	-- Gravenscale Warhelm [Rank 3]
 i(137935, 194779);	-- Leather Love Seat
-i(137933, 194776);	-- Leather Pet Bed
 i(137934, 194778);	-- Leather Pet Leash
-i(137869, 194704);	-- Warhide Belt [Rank 2]
 i(137881, 194716);	-- Warhide Belt [Rank 3]
-i(137868, 194703);	-- Warhide Bindings [Rank 2]
 i(137876, 194711);	-- Warhide Bindings [Rank 3]
-i(137874, 194709);	-- Warhide Footpads [Rank 2]
 i(137880, 194715);	-- Warhide Footpads [Rank 3]
-i(137873, 194708);	-- Warhide Gloves [Rank 2]
 i(137879, 194714);	-- Warhide Gloves [Rank 3]
-i(137875, 194710);	-- Warhide Jerkin [Rank 2]
 i(137883, 194718);	-- Warhide Jerkin [Rank 3]
-i(137872, 194707);	-- Warhide Mask [Rank 2]
 i(137878, 194713);	-- Warhide Mask [Rank 3]
-i(137871, 194706);	-- Warhide Pants [Rank 2]
 i(137877, 194712);	-- Warhide Pants [Rank 3]
-i(137870, 194705);	-- Warhide Shoulderguard [Rank 2]
 i(137882, 194717);	-- Warhide Shoulderguard [Rank 3]
--- QUEST --
-i(0, 194735);	-- Battlebound Armbands [Rank 1]
-i(0, 194736);	-- Battlebound Girdle [Rank 1]
-i(0, 194740);	-- Battlebound Grips [Rank 1]
-i(0, 194742);	-- Battlebound Hauberk [Rank 1]
-i(0, 194738);	-- Battlebound Leggings [Rank 1]
-i(0, 194737);	-- Battlebound Spaulders [Rank 1]
-i(0, 208596);	-- Tanned Stonehide Pelt
-i(0, 208615);	-- Stonehide Leather Strip
+--- QUEST ---
+i(0, 196457);		-- Fel Leather Cuff
+i(0, 196395);		-- Fel Leather Strap
+i(0, 196456);		-- Felhide Bracers
+i(0, 196428);		-- Rough Warhide Mask
+i(0, 196375);		-- Shaved Stonehide Pelt
+i(0, 196425);		-- Stonehide Boot Base
+i(0, 196384);		-- Stonehide Boot Exterior
+i(0, 196469);		-- Stonehide Caparison
+i(0, 196467);		-- Stonehide Champron
+i(0, 196468);		-- Stonehide Crinet
+i(0, 196397);		-- Stonehide Leather Barding
+i(0, 196442);		-- Stonehide Leather Bed
+i(0, 196382);		-- Stonehide Leather Lining
+i(0, 196385);		-- Stonehide Leather Strip
+i(0, 196427);		-- Sturdy Stonehide Boots
+i(0, 196379);		-- Tanned Stonehide Leather
+i(0, 208596);		-- Tanned Stonehide Pelt
+i(0, 208615);		-- Stonehide Leather Strip
+--- NYI ---
+i(0, 196388);		-- Tanned Fel Leather
+i(0, 196387);		-- Shaved Felhide
+i(0, 196383);		-- Stonehide Leather Vamp
+i(137900, 0);		-- Battlebound Armbands [Rank 2]
+i(137901, 0);		-- Battlebound Girdle [Rank 2]
+i(137905, 0);		-- Battlebound Grips [Rank 2]
+i(137907, 0);		-- Battlebound Hauberk [Rank 2]
+i(137903, 0);		-- Battlebound Leggings [Rank 2]
+i(137902, 0);		-- Battlebound Spaulders [Rank 2]
+i(132124, 0);		-- Battlebound Treads [Rank 1]
+i(137906, 0);		-- Battlebound Treads [Rank 2]
+i(132123, 0);		-- Battlebound Warhelm [Rank 1]
+i(137904, 0);		-- Battlebound Warhelm [Rank 2]
+i(140636, 0);		-- Dreadleather Bindings [Rank 1]
+i(140644, 0);		-- Gravenscale Armbands [Rank 1]
+i(137933, 0);		-- Leather Pet Bed
+i(137952, 0);		-- Stonehide Leather Barding
+i(137869, 0);		-- Warhide Belt [Rank 2]
+i(137868, 0);		-- Warhide Bindings [Rank 2]
+i(137874, 0);		-- Warhide Footpads [Rank 2]
+i(137873, 0);		-- Warhide Gloves [Rank 2]
+i(137875, 0);		-- Warhide Jerkin [Rank 2]
+i(137872, 0);		-- Warhide Mask [Rank 2]
+i(137871, 0);		-- Warhide Pants [Rank 2]
+i(137870, 0);		-- Warhide Shoulderguard [Rank 2]
 
--- Storyline
-i(132123, 194739);	-- Battlebound Warhelm [Rank 1]
-
-------------------
+-----------------
 -- PATCH 7.1.0 --
-------------------
--- ITEM --
+-----------------
+--- ITEM ---
 i(142407, 230936);	-- Drums of the Mountain [Rank 1]
 i(142408, 230954);	-- Drums of the Mountain [Rank 2]
 i(142409, 230955);	-- Drums of the Mountain [Rank 3]
 
-------------------
+-----------------
+-- PATCH 7.2.0 --
+-----------------
+--- TRAINER ---
+i(0, 239413);		-- The Sentinel's Eternal Refuge
+i(0, 239414);		-- Vigilance Perch
+
+-----------------
 -- PATCH 7.3.0 --
-------------------
--- TRAINER --
-i(0, 239413);	-- The Sentinel's Eternal Refuge
-i(0, 239414);	-- Vigilance Perch
--- ITEM --
+-----------------
+--- ITEM ---
 i(151740, 247800);	-- Fiendish Shoulderguards [Rank 1]
 i(151741, 247801);	-- Fiendish Shoulderguards [Rank 2]
 i(151742, 247802);	-- Fiendish Shoulderguards [Rank 3]

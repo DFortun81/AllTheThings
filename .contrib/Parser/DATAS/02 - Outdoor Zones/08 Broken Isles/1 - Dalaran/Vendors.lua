@@ -1599,20 +1599,17 @@ root(ROOTS.Zones, {
 							}),
 						}),
 						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
+							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
 							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
 								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
-								["requireSkill"] = BLACKSMITHING,
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
-								["requireSkill"] = LEATHERWORKING,
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
-								["requireSkill"] = LEATHERWORKING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						})),
@@ -4640,20 +4637,17 @@ root(ROOTS.Zones, {
 							}),
 						}),
 						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
+							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
 							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
 								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
-								["requireSkill"] = BLACKSMITHING,
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
-								["requireSkill"] = LEATHERWORKING,
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
-								["requireSkill"] = LEATHERWORKING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						})),
@@ -5239,12 +5233,11 @@ root(ROOTS.Zones, {
 						i(137888),	-- Pattern: Dreadleather Mask [Rank 2] (RECIPE!)
 						i(137887),	-- Pattern: Dreadleather Pants [Rank 2] (RECIPE!)
 						i(137886),	-- Pattern: Dreadleather Shoulderguard [Rank 2] (RECIPE!)
-						i(142407),	-- Pattern: Drums of the Mountain [Rank 1] (RECIPE!)
+						i(142407, {	-- Pattern: Drums of the Mountain [Rank 1] (RECIPE!)
+							["timeline"] = { ADDED_7_1_0 },
+						}),
 						i(141850, {	-- Pattern: Elderhorn Riding Harness (RECIPE!)
 							["description"] = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
-							["g"] = {
-								i(129962),	-- Great Northern Elderhorn (MOUNT!)
-							},
 						}),
 						i(137916),	-- Pattern: Gravenscale Armbands [Rank 2] (RECIPE!)
 						i(137921),	-- Pattern: Gravenscale Grips [Rank 2] (RECIPE!)

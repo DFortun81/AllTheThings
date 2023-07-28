@@ -425,81 +425,89 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 		filter(COSMETIC, {
 			applyevent(EVENTS.FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
 		}),
-		filter(LEATHER, {
-			i(128890),	-- Dreadleather Belt
-			i(128891),	-- Dreadleather Bindings
-			i(128885),	-- Dreadleather Footpads
-			i(128886),	-- Dreadleather Gloves
-			i(128884),	-- Dreadleather Jerkin
-			i(128887),	-- Dreadleather Mask
-			i(128888),	-- Dreadleather Pants
-			i(128889),	-- Dreadleather Shoulderguard
-			i(151577),	-- Fiendish Shoulderguards
-			i(146669),	-- The Sentinel's Eternal Refuge
-			i(128882),	-- Warhide Belt
-			i(128883),	-- Warhide Bindings
-			i(128877),	-- Warhide Footpads
-			i(128878),	-- Warhide Gloves
-			i(128876),	-- Warhide Jerkin
-			i(128879),	-- Warhide Mask
-			i(128880),	-- Warhide Pants
-			i(128881),	-- Warhide Shoulderguard
+		n(ARMOR, {
+			filter(LEATHER, {
+				i(128890),	-- Dreadleather Belt
+				i(128891),	-- Dreadleather Bindings
+				i(128885),	-- Dreadleather Footpads
+				i(128886),	-- Dreadleather Gloves
+				i(128884),	-- Dreadleather Jerkin
+				i(128887),	-- Dreadleather Mask
+				i(128888),	-- Dreadleather Pants
+				i(128889),	-- Dreadleather Shoulderguard
+				i(151577, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Shoulderguards
+				i(146669, {["timeline"] = {ADDED_7_2_0}}),	-- The Sentinel's Eternal Refuge
+				i(128882),	-- Warhide Belt
+				i(128883),	-- Warhide Bindings
+				i(128877),	-- Warhide Footpads
+				i(128878),	-- Warhide Gloves
+				i(128876),	-- Warhide Jerkin
+				i(128879),	-- Warhide Mask
+				i(128880),	-- Warhide Pants
+				i(128881),	-- Warhide Shoulderguard
+			}),
+			filter(MAIL, {
+				i(128899),	-- Battlebound Armbands
+				i(128898),	-- Battlebound Girdle
+				i(128894),	-- Battlebound Grips
+				i(128892),	-- Battlebound Hauberk
+				i(128896),	-- Battlebound Leggings
+				i(128897),	-- Battlebound Spaulders
+				i(128893),	-- Battlebound Treads
+				i(128895),	-- Battlebound Warhelm
+				i(128907),	-- Gravenscale Armbands
+				i(128906),	-- Gravenscale Girdle
+				i(128902),	-- Gravenscale Grips
+				i(128900),	-- Gravenscale Hauberk
+				i(128904),	-- Gravenscale Leggings
+				i(128905),	-- Gravenscale Spaulders
+				i(128901),	-- Gravenscale Treads
+				i(128903),	-- Gravenscale Warhelm
+				i(151578, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Spaulders
+				i(146668, {["timeline"] = {ADDED_7_2_0}}),	-- Vigilance Perch
+				--[[
+				i(132547),	-- Blue Chain Leggings
+				i(132495),	-- Chain Belt
+				i(132494),	-- Chain Boots
+				i(132496),	-- Chain Bracers
+				i(132499),	-- Chain Gauntlets
+				i(132493),	-- Chain Hauberk
+				i(132497),	-- Chain Leggings
+				i(132498),	-- Chain Pauldrons
+				i(132545),	-- Crackling Scale Breastplate
+				i(132546),	-- Element Grips
+				i(132522),	-- Heavy Scale Belt
+				i(132521),	-- Heavy Scale Boots
+				i(132533),	-- Heavy Scale Gauntlets
+				i(132536),	-- Heavy Scale Hood
+				i(132532),	-- Heavy Scale Pants
+				i(132535),	-- Heavy Scale Pauldrons
+				i(132520),	-- Heavy Scale Shirt
+				i(132534),	-- Heavy Scale Wraps
+				i(132489),	-- Light Scale Belt
+				i(132488),	-- Light Scale Boots
+				i(132491),	-- Light Scale Bracers
+				i(132490),	-- Light Scale Gloves
+				i(132487),	-- Light Scale Jerkin
+				i(132492),	-- Light Scale Pants
+				i(132548),	-- Shamanic Treads
+				i(132544),	-- Spritescale Boots
+				i(132542),	-- Spritescale Britches
+				i(132539),	-- Spritescale Cinch
+				i(132537),	-- Spritescale Circlet
+				i(132543),	-- Spritescale Epaulets
+				i(132540),	-- Spritescale Gloves
+				i(132538),	-- Spritescale Jerkin
+				i(132541),	-- Spritescale Wraps
+				--]]
+			}),
 		}),
-		filter(MAIL, {
-			i(128899),	-- Battlebound Armbands
-			i(128898),	-- Battlebound Girdle
-			i(128894),	-- Battlebound Grips
-			i(128892),	-- Battlebound Hauberk
-			i(128896),	-- Battlebound Leggings
-			i(128897),	-- Battlebound Spaulders
-			i(128893),	-- Battlebound Treads
-			i(128895),	-- Battlebound Warhelm
-			i(132547),	-- Blue Chain Leggings
-			i(132495),	-- Chain Belt
-			i(132494),	-- Chain Boots
-			i(132496),	-- Chain Bracers
-			i(132499),	-- Chain Gauntlets
-			i(132493),	-- Chain Hauberk
-			i(132497),	-- Chain Leggings
-			i(132498),	-- Chain Pauldrons
-			i(132545),	-- Crackling Scale Breastplate
-			i(132546),	-- Element Grips
-			i(151578),	-- Fiendish Spaulders
-			i(128907),	-- Gravenscale Armbands
-			i(128906),	-- Gravenscale Girdle
-			i(128902),	-- Gravenscale Grips
-			i(128900),	-- Gravenscale Hauberk
-			i(128904),	-- Gravenscale Leggings
-			i(128905),	-- Gravenscale Spaulders
-			i(128901),	-- Gravenscale Treads
-			i(128903),	-- Gravenscale Warhelm
-			i(132522),	-- Heavy Scale Belt
-			i(132521),	-- Heavy Scale Boots
-			i(132533),	-- Heavy Scale Gauntlets
-			i(132536),	-- Heavy Scale Hood
-			i(132532),	-- Heavy Scale Pants
-			i(132535),	-- Heavy Scale Pauldrons
-			i(132520),	-- Heavy Scale Shirt
-			i(132534),	-- Heavy Scale Wraps
-			i(132489),	-- Light Scale Belt
-			i(132488),	-- Light Scale Boots
-			i(132491),	-- Light Scale Bracers
-			i(132490),	-- Light Scale Gloves
-			i(132487),	-- Light Scale Jerkin
-			i(132492),	-- Light Scale Pants
-			i(132548),	-- Shamanic Treads
-			i(132544),	-- Spritescale Boots
-			i(132542),	-- Spritescale Britches
-			i(132539),	-- Spritescale Cinch
-			i(132537),	-- Spritescale Circlet
-			i(132543),	-- Spritescale Epaulets
-			i(132540),	-- Spritescale Gloves
-			i(132538),	-- Spritescale Jerkin
-			i(132541),	-- Spritescale Wraps
-			i(146668),	-- Vigilance Perch
+		filter(MISC, {
+			i(142406, {["timeline"] = {ADDED_7_1_0}}),	-- Drums of the Mountain
+			i(131746),	-- Stonehide Leather Barding
 		}),
-		n(55, {	-- Consumables
-			i(142406),	-- Drums of the Mountain
+		filter(MOUNTS, {
+			i(129962),	-- Great Northern Elderhorn (MOUNT!)
 		}),
 		filter(TOYS, {
 			i(129961),	-- Flaming Hoop (TOY!)

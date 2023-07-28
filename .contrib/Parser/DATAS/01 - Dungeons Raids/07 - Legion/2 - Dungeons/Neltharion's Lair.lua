@@ -124,7 +124,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				cr(91007, e(1687, {	-- Dargrul
 					ach(10795),	-- Neltharion's Lair
 					i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
-					i(137912),	-- Pattern: Battlebound Treads (Rank 3)
+					i(137912),	-- Pattern: Battlebound Treads [Rank 3] (RECIPE!)
 					i(134166),	-- Bitestone Boots
 					i(134495),	-- Chain of the Underking
 					i(137353),	-- Charskin Legguards
@@ -188,10 +188,10 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					cr(91007, e(1687, {	-- Dargrul
 						ach(10796),	-- Heroic: Neltharion's Lair
 						i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
-						i(137912),	-- Pattern: Battlebound Treads (Rank 3)
-						i(137854),	-- Design: Intrepid Necklace of Prophecy (Rank 3)
-						i(137864),	-- Design: Shadowruby Band (Rank 2)
-						i(127928),	-- Recipe: Unbending Potion (Rank 2)
+						i(137912),	-- Pattern: Battlebound Treads [Rank 3] (RECIPE!)
+						i(137854),	-- Design: Intrepid Necklace of Prophecy [Rank 3] (RECIPE!)
+						i(137864),	-- Design: Shadowruby Band [Rank 2] (RECIPE!)
+						i(127928),	-- Recipe: Unbending Potion [Rank 2] (RECIPE!)
 						i(134166),	-- Bitestone Boots
 						i(134495),	-- Chain of the Underking
 						i(137353),	-- Charskin Legguards
@@ -258,10 +258,10 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						ach(10797),	-- Mythic: Neltharion's Lair
 						ach(10859),	-- Mythic: Neltharion's Lair Guild Run
 						i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
-						i(137912),	-- Pattern: Battlebound Treads (Rank 3)
-						i(137854),	-- Design: Intrepid Necklace of Prophecy (Rank 3)
-						i(137864),	-- Design: Shadowruby Band (Rank 2)
-						i(127928),	-- Recipe: Unbending Potion (Rank 2)
+						i(137912),	-- Pattern: Battlebound Treads [Rank 3] (RECIPE!)
+						i(137854),	-- Design: Intrepid Necklace of Prophecy [Rank 3] (RECIPE!)
+						i(137864),	-- Design: Shadowruby Band [Rank 2] (RECIPE!)
+						i(127928),	-- Recipe: Unbending Potion [Rank 2] (RECIPE!)
 						i(134166),	-- Bitestone Boots
 						i(134495),	-- Chain of the Underking
 						i(137353),	-- Charskin Legguards
@@ -278,7 +278,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(137352),	-- Tunic of Smoldering Ire
 						i(137358),	-- Hate-Sculpted Magma
 						i(137359),	-- Pebble of Ages
-						i(146704),	-- Red-Hot Draconic Slag (Blacksmithing QI)
 					})),
 				},
 			}),

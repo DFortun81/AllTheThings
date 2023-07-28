@@ -144,13 +144,22 @@ profession(LEATHERWORKING, {
 		q(39958,  {	-- Skin Deep
 			["provider"] = { "n", 93523 },	-- Namha Moonwater
 			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["_drop"] = { "g" }, -- Bad API data
+			["_drop"] = { "g" },
 			["cost"] = {
 				{ "i", 124113, 20 },	-- 20x Stonehide Leather
 				{ "i", 124115, 5 },		-- 5x Stormscale
 			},
 			["g"] = {
-				recipe(264590),	-- Legion Leatherworking
+				r(195119, {	-- Leatherworking (Legion Master)
+					["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+					["collectible"] = false,
+				}),
+				applyclassicphase(BFA_PHASE_ONE, r(264590, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Leatherworking
+				r(330211, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Legion]
+				r(330212, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Legion]
+				r(330213, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Legion]
+				r(330214, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Legion]
+				r(330215, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Legion]
 			},
 		}),
 		q(40183,  {	-- Over Your Head
@@ -547,6 +556,7 @@ profession(LEATHERWORKING, {
 			["sourceQuests"] = { 40213 },	-- Hounds Abound
 			["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 			["coord"] = { 26.6, 71.6, SURAMAR },
+			["cost"] = {{ "i", 124438, 5 }},	-- 5x Unbroken Claw
 			["g"] = {
 				r(194787),	-- Dreadleather Bindings [Rank 1] (RECIPE!)
 				r(194796),	-- Gravenscale Armbands [Rank 1] (RECIPE!)
@@ -556,6 +566,7 @@ profession(LEATHERWORKING, {
 				i(130937),	-- Fel Leather Cuff (QI!)
 				i(130880),	-- Fel Leather Strap (QI!)
 				i(130130),	-- Felhide Bracers (QI!)
+				i(130879),	-- Tanned Fel Leather (QI!)
 			},
 		}),
 		q(40215,  {	-- Mounting Made Easy
@@ -566,6 +577,148 @@ profession(LEATHERWORKING, {
 				r(194780),	-- Elderhorn Riding Harness (RECIPE!)
 			},
 		}),
+		-- The Sentinel's Eternal Refuge Questline
+		q(46684, {	-- The Legend of the Elderhide
+			["sourceQuests"] = { 46804 },	-- Fashion History and a Philosophy of Style
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+			["repeatable"] = true,
+			["timeline"] = { ADDED_7_2_0 },
+		}),
+		q(46688, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Leather of the Ancients
+			["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+			["repeatable"] = true,
+			["g"] = {
+				i(146693),	-- Ancient Dreadleather (QI!)
+			},
+		})),
+		q(46687, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Nightmare
+			["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+			["maps"] = { 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, },	-- The Emerald Nightmare
+			["repeatable"] = true,
+			["g"] = {
+				i(146691),	-- Immaculate Spellsash (QI!)
+			},
+		})),
+		q(46686, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Sea
+			["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+			["maps"] = { 713 },	-- Eye of Azshara
+			["repeatable"] = true,
+			["g"] = {
+				i(146689),	-- Oiled Handmaiden's Gloves (QI!)
+			},
+		})),
+		q(46685, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Shadow
+			["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+			["maps"] = { 733 },	-- Darkheart Thicket
+			["repeatable"] = true,
+			["g"] = {
+				i(146687),	-- Dyed Shroud of Xavius (QI!)
+			},
+		})),
+		q(46689, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Wisp-Touched Elderhide
+			["sourceQuests"] = {
+				46688,	-- Leather of the Ancients
+				46687,	-- The Wisp and the Nightmare
+				46686,	-- The Wisp and the Sea
+				46685,	-- The Wisp and the Shadow
+			},
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.1, 59.3, BROKEN_SHORE },
+			["repeatable"] = true,
+			["g"] = {
+				i(146712),	-- Wisp-Touched Elderhide
+				i(147438),	-- Bag of Wisp-Touched Elderhide (QI!)
+				i(146977),	-- Legendary Tanner's Kit (QI!)
+			},
+		})),
+		-- Vigilance Perch Questline
+		q(46690, {	-- The Legend of the Wardenscale
+			["sourceQuests"] = { 46804 },	-- Fashion History and a Philosophy of Style
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+			["repeatable"] = true,
+			["timeline"] = { ADDED_7_2_0 },
+		}),
+		q(46694, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Mail of the Ancients
+			["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+			["repeatable"] = true,
+			["g"] = {
+				i(146701),	-- Ancient Gravenscale (QI!)
+			},
+		})),
+		q(46692, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Dreadlord
+			["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+			["maps"] = { 845, 846, 847, 848, 849 },	-- Cathedral of Eternal Night
+			["repeatable"] = true,
+			["g"] = {
+				i(146697),	-- Refinished Legplates of Mephistroth (QI!)
+			},
+		})),
+		q(46693, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Observer
+			["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+			["maps"] = { 815, 816, 817, 818, 819, 820, 821, 822, 809, 810, 811, 812, 813, 814 },	-- Return to Karazhan
+			["repeatable"] = true,
+			["g"] = {
+				i(146699),	-- Gleaming Bracers of the First War (QI!)
+			},
+		})),
+		q(46691, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Traitor
+			["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+			["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
+			["repeatable"] = true,
+			["g"] = {
+				i(146695),	-- Immaculate Felsong Mantle (QI!)
+			},
+		})),
+		q(46695, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Prime Wardenscale
+			["sourceQuests"] = {
+				46694,	-- Mail of the Ancients
+				46692,	-- The Owl and the Dreadlord
+				46693,	-- The Owl and the Observer
+				46691,	-- The Owl and the Traitor
+			},
+			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+			["coord"] = { 41.1, 59.3, BROKEN_SHORE },
+			["repeatable"] = true,
+			["g"] = {
+				i(146713),	-- Prime Wardenscale
+				i(147439),	-- Box of Completed Prime Wardenscale (QI!)
+				i(147209),	-- Legendary Wardenscale Supplies (QI!)
+			},
+		})),
+		-- 7.3.0
+		q(48078, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Counterbalancing
+			["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
+			["provider"] = { "n", 125349 },	-- Enstraa
+			["coord"] = { 39.6, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
+			["cost"] = {
+				{ "i", 151566, 12 },	-- 12x Fiendish Leather
+				{ "i", 151567, 12 },	-- 12x Lightweave Cloth
+			},
+			["g"] = {
+				i(151740),	-- Pattern: Fiendish Shoulderguards [Rank 1] (RECIPE!)
+				i(151743),	-- Pattern: Fiendish Spaulders [Rank 1] (RECIPE!)
+				i(151880),	-- Enstraa's Tanning Oil
+				i(151879),	-- Purified Fiendish Leather
+			},
+		})),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		ach(18777, {	-- Mallet of Thunderous Skins

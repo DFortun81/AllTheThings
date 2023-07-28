@@ -388,7 +388,7 @@ profession(BLACKSMITHING, {
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123917, 1 } },	-- 1xDemonsteel Armguards
+			["cost"] = { {"i", 123917, 1 } },	-- 1x Demonsteel Armguards
 			["g"] = {
 				i(123940),	-- Plans: Demonsteel Armguards [Rank 2] (RECIPE!)
 			},
@@ -398,7 +398,7 @@ profession(BLACKSMITHING, {
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123911, 1 } },	-- 1xDemonsteel Boots
+			["cost"] = { {"i", 123911, 1 } },	-- 1x Demonsteel Boots
 			["g"] = {
 				i(123946),	-- Plans: Demonsteel Boots [Rank 2] (RECIPE!)
 			},
@@ -408,7 +408,7 @@ profession(BLACKSMITHING, {
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123910, 1 } },	-- 1xDemonsteel Breastplate
+			["cost"] = { {"i", 123910, 1 } },	-- 1x Demonsteel Breastplate
 			["g"] = {
 				i(123947),	-- Plans: Demonsteel Breastplate [Rank 2] (RECIPE!)
 			},
@@ -418,7 +418,7 @@ profession(BLACKSMITHING, {
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123912, 1 } },	-- 1xDemonsteel Gauntlets
+			["cost"] = { {"i", 123912, 1 } },	-- 1x Demonsteel Gauntlets
 			["g"] = {
 				i(123945),	-- Plans: Demonsteel Gauntlets [Rank 2] (RECIPE!)
 			},
@@ -428,7 +428,7 @@ profession(BLACKSMITHING, {
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123914, 1 } },	-- 1xDemonsteel Greaves
+			["cost"] = { {"i", 123914, 1 } },	-- 1x Demonsteel Greaves
 			["g"] = {
 				i(123943),	-- Plans: Demonsteel Greaves [Rank 2] (RECIPE!)
 			},
@@ -438,7 +438,7 @@ profession(BLACKSMITHING, {
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123913, 1 } },	-- 1xDemonsteel Helm
+			["cost"] = { {"i", 123913, 1 } },	-- 1x Demonsteel Helm
 			["g"] = {
 				i(123944),	-- Plans: Demonsteel Helm [Rank 2] (RECIPE!)
 			},
@@ -448,7 +448,7 @@ profession(BLACKSMITHING, {
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123915, 1 } },	-- 1xDemonsteel Pauldrons
+			["cost"] = { {"i", 123915, 1 } },	-- 1x Demonsteel Pauldrons
 			["g"] = {
 				i(123942),	-- Plans: Demonsteel Pauldrons [Rank 2] (RECIPE!)
 			},
@@ -458,56 +458,61 @@ profession(BLACKSMITHING, {
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-			["cost"] = { {"i", 123916, 1 } },	-- 1xDemonsteel Waistguard
+			["cost"] = { {"i", 123916, 1 } },	-- 1x Demonsteel Waistguard
 			["g"] = {
 				i(123941),	-- Plans: Demonsteel Waistguard [Rank 2] (RECIPE!)
 			},
 		}),
 		-- Rethu's Incessant Courage Questline
-		q(46696, {	-- The Legend of the Four Hammers
-			["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+		q(46696, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Legend of the Four Hammers
+			["sourceQuests"] = { 46804 },	-- Fashion History and a Philosophy of Style
 			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 			["repeatable"] = true,
-			["cost"] = { { "i", 147197, 1 }, },	-- 1x Legends of the Four Hammers
-			["timeline"] = { ADDED_7_2_0 },
-		}),
-		q(46700, {	-- Armor of the Ancients
-			["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+			["g"] = {
+				i(147197),	-- Legends of the Four Hammers (QI!)
+			},
+		})),
+		q(46700, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Armor of the Ancients
+			["sourceQuests"] = { 46696 },	-- The Legend of the Four Hammers
 			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 			["repeatable"] = true,
-			["cost"] = { { "i", 146708, 20 }, },	-- ~20x Ancient Demonsteel Armor
-			["timeline"] = { ADDED_7_2_0 },
-		}),
-		q(46698, {	-- The Dragonhunter
-			["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+			["g"] = {
+				i(146708),	-- Ancient Demonsteel Armor (QI!)
+			},
+		})),
+		q(46698, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Dragonhunter
+			["sourceQuests"] = { 46696 },	-- The Legend of the Four Hammers
 			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 			["maps"] = { 731 },	-- Neltharion's Lair
 			["repeatable"] = true,
-			["cost"] = { { "i", 146704, 1 }, },	-- 1x Red-Hot Draconic Slag
-			["timeline"] = { ADDED_7_2_0 },
-		}),
-		q(46697, {	-- The Godfighter
-			["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+			["g"] = {
+				i(146704),	-- Red-Hot Draconic Slag (QI!)
+			},
+		})),
+		q(46697, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Godfighter
+			["sourceQuests"] = { 46696 },	-- The Legend of the Four Hammers
 			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 			["maps"] = { 703, 704, 705 },	-- Halls of Valor
 			["repeatable"] = true,
-			["cost"] = { { "i", 146702, 1 }, },	-- 1x White Lightningsteel
-			["timeline"] = { ADDED_7_2_0 },
-		}),
-		q(46699, {	-- The Hellslayer
-			["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+			["g"] = {
+				i(146702),	-- White Lightningsteel (QI!)
+			},
+		})),
+		q(46699, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Hellslayer
+			["sourceQuests"] = { 46696 },	-- The Legend of the Four Hammers
 			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 			["maps"] = { 806, 807, 808 },	-- Trial of Valor
 			["repeatable"] = true,
-			["cost"] = { { "i", 146706, 1 }, },	-- 1x Frostveined Shale
-			["timeline"] = { ADDED_7_2_0 },
-		}),
-		q(46701, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, }, {	-- Hammer of Forgotten Heroes
+			["g"] = {
+				i(146706),	-- Frostveined Shale (QI!)
+			},
+		})),
+		q(46701, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Hammer of Forgotten Heroes
 			["sourceQuests"] = {
 				46700,	-- Armor of the Ancients
 				46698,	-- The Dragonhunter
@@ -517,19 +522,17 @@ profession(BLACKSMITHING, {
 			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 			["coord"] = { 41.1, 59.3, BROKEN_SHORE },
 			["repeatable"] = true,
-			["cost"] = {
-				{ "i", 147207, 1 },	-- 1x Legendary Blacksmithing Supplies
-				{ "i", 147443, 1 },	-- 1x Carrying Case For Hammer of Forgotten Heroes
-			},
 			["g"] = {
 				i(146714),	-- Hammer of Forgotten Heroes
+				i(147443),	-- Carrying Case For Hammer of Forgotten Heroes (QI!)
+				i(147207),	-- Legendary Blacksmithing Supplies (QI!)
 			},
 		})),
 		-- 7.3.0
 		q(48055, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Empyrial Strength
 			["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 			["provider"] = { "n", 125341 },	-- Khamir
-			--["coord"] = { X, Y, MAP },
+			["coord"] = { 40.6, 65.6, THE_VINDICAAR_KROKUUN_LOWER },
 			["cost"] = {
 				{ "i", 151564, 42 },	-- 42xEmpyrium
 				{ "i", 151568, 2 },		-- 2xPrimal Sargerite
@@ -540,9 +543,13 @@ profession(BLACKSMITHING, {
 				r(248870, {["u"]=TRAINING}),	-- Empyrial Breastplate
 				r(248867, {["u"]=TRAINING}),	-- Empyrial Chest Plate
 				r(248864, {["u"]=TRAINING}),	-- Empyrial Rivets
+				i(151872),	-- Empyrial Breastplate (QI!)
+				i(151925),	-- Empyrial Back Plate (QI!)
+				i(151924),	-- Empyrial Chest Plate (QI!)
+				i(151923),	-- Empyrial Rivet (QI!)
 			},
 		})),
-		q(48053, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Weigh Anchor
+		q(48053, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Weigh Anchor [A]
 			["sourceQuests"] = { 38499 },	-- Strange New Ores
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN },
@@ -551,7 +558,7 @@ profession(BLACKSMITHING, {
 				r(247700),	-- Felslate Anchor (RECIPE!)
 			},
 		})),
-		q(48054, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Weigh Anchor
+		q(48054, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Weigh Anchor [H]
 			["sourceQuests"] = { 38499 },	-- Strange New Ores
 			["provider"] = { "n", 106655 },	-- Arcanomancer Vridiel
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN },

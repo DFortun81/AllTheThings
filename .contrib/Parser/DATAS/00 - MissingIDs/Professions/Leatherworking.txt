@@ -494,7 +494,6 @@ r(176422),	-- Ornate Alliance Tent
 r(176424),	-- Ornate Horde Tent
 r(176425),	-- Voodoo Doctor's Hovel
 r(176426),	-- Nomad's Spiked Tent
-r(195119),	-- Leatherworking
 r(196383),	-- Stonehide Leather Vamp
 r(196387),	-- Shaved Felhide
 r(196388),	-- Tanned Fel Leather
@@ -532,8 +531,6 @@ r(226134),	-- Heavy Scale Boots
 r(226135),	-- Heavy Scale Hood
 r(226136),	-- Spritescale Circlet
 r(226137),	-- Spritescale Boots
-r(239413),	-- The Sentinel's Eternal Refuge
-r(239414),	-- Vigilance Perch
 8.0.1.25902
 r(264577),	-- Leatherworking
 r(264579),	-- Outland Leatherworking
@@ -572,11 +569,6 @@ r(330207),	-- Relic of the Past II
 r(330208),	-- Relic of the Past III
 r(330209),	-- Relic of the Past IV
 r(330210),	-- Relic of the Past V
-r(330211),	-- Relic of the Past I
-r(330212),	-- Relic of the Past II
-r(330213),	-- Relic of the Past III
-r(330214),	-- Relic of the Past IV
-r(330215),	-- Relic of the Past V
 
 
 

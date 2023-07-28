@@ -237,7 +237,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(142510),	-- Phylactery of Unwilling Servitude
 						i(142517),	-- Swell of the Tides
 						i(142513),	-- Token of the Lightning Keeper
-						i(146706),	-- Frostveined Shale (Blacksmithing QI)
 					})),
 				}),
 			}),
@@ -307,7 +306,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(142510),	-- Phylactery of Unwilling Servitude
 					i(142517),	-- Swell of the Tides
 					i(142513),	-- Token of the Lightning Keeper
-					i(146706),	-- Frostveined Shale (Blacksmithing QI)
 				}))
 			}),
 			d(HEROIC_RAID, {
@@ -441,8 +439,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(142518),	-- Fury of the Sea
 					i(142510),	-- Phylactery of Unwilling Servitude
 					i(142517),	-- Swell of the Tides
-					i(142513),	-- Token of the Lightning Keeper
-					i(146706),	-- Frostveined Shale (Blacksmithing QI)
 				}))
 			}),
 			d(MYTHIC_RAID, {
@@ -590,7 +586,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(142510),	-- Phylactery of Unwilling Servitude
 					i(142517),	-- Swell of the Tides
 					i(142513),	-- Token of the Lightning Keeper
-					i(146706),	-- Frostveined Shale (Blacksmithing QI)
 				})),
 			}),
 		},
