@@ -3880,7 +3880,6 @@ i(190607, 3252);	-- Garrlok
 i(193855, 3334);	-- Time-Lost Vorquin Foal
 -- NYI --
 i(0, 3255);			-- Buttercup
-i(0, 3253);			-- Crushhoof
 i(0, 3254);			-- Watcher of the Huntress
 i(190604, 3251);	-- Buzzworth
 i(190176, 3244);	-- Drazka'zet the Wrathful
@@ -4039,6 +4038,7 @@ i(205232, 0);		-- [DNT] REUSE
 ------------------
 i(205165, 3555);	-- Axel
 i(208012, 4255);	-- Briarhorn Hatchling
+i(190608, 3253);	-- Crushhoof (Shop)
 i(208008, 4259);	-- Doomrubble
 i(208009, 4257);	-- Gill'dan
 i(208010, 4258);	-- Jeepers
@@ -4048,7 +4048,6 @@ i(205162, 3553);	-- Nelthara
 i(208011, 4261);	-- Obsidian Warwhelp
 i(208138, 4262);	-- N'Ruby
 i(0, 4263);			-- Tobias [Maybe Get itemID later??]
-i(0, 3253);			-- Crushhoof
 i(190601, 2890);	-- Sunny (Shop)
 -- TRAINER --
 i(0, 3587);			-- Lifelike Mechanical Duckling

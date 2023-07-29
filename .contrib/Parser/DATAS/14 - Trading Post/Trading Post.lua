@@ -558,9 +558,6 @@ root(ROOTS.NeverImplemented, {
 				pet(3255, {	-- Buttercup (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
-				pet(3253, {	-- Crushhoof (PET!)
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-				}),
 				i(190176, {	-- Drazka'zet the Wrathful (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
@@ -691,7 +688,6 @@ root(ROOTS.NeverImplemented, {
 			}),
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(190767),	-- Armored Golden Pterrordax (MOUNT!) (Unknown 2023)
-				mount(367875),	-- Armored Siege Kodo (MOUNT!) (Unknown 2023) Horde only?
 				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
 				i(190539),	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
 				i(190168),	-- Crusty Crawler (MOUNT!) (Unknown 2023)

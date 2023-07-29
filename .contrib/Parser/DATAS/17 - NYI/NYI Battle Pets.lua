@@ -1288,9 +1288,6 @@ root(ROOTS.NeverImplemented, {
 				pet(3255, {	-- Buttercup (PET!)
 					["modelID"] = 105497,
 				}),
-				pet(3253, {	-- Crushhoof (PET!)
-					-- ["modelID"] = ,
-				}),
 				pet(3254, {	-- Watcher of the Huntress (PET!)
 					["modelID"] = 105429,
 				}),

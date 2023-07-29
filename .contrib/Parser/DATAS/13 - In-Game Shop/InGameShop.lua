@@ -73,7 +73,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(95341, {	-- Armored Bloodwing (MOUNT!)
 			["timeline"] = { "added 5.2.0.16486", "removed 8.3.0" },
 		}),
-		mount(302362, {	-- Armored Siege Kodo(MOUNT!)
+		mount(367875, {	-- Armored Siege Kodo (MOUNT!)
 			["timeline"] = { "added 10.1.5" },
 		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)

@@ -609,9 +609,6 @@ root(ROOTS.NeverImplemented, {
 				i(190767, {	-- Armored Golden Pterrordax (MOUNT!)
 					["modelID"] = 105477,
 				}),
-				mount(367875, {	-- Armored Siege Kodo (MOUNT!)
-					-- ["modelID"] =
-				}),
 				mount(369480, {	-- Cerulean Marsh Hopper
 					["modelID"] = 105766,
 				}),

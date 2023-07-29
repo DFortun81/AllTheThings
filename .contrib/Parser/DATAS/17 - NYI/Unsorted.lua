@@ -534,9 +534,6 @@ root(ROOTS.Unsorted, {
 			i(206167),	-- Way of the Wonderous Wavewhisker
 			i(206174),	-- Blub
 			--
-			i(190636),	-- Armored Siege Kodo
-			i(190608),	-- Crushhoof
-			--
 			i(190601),	-- Sunny
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
