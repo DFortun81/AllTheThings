@@ -73,7 +73,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(95341, {	-- Armored Bloodwing (MOUNT!)
 			["timeline"] = { "added 5.2.0.16486", "removed 8.3.0" },
 		}),
-		mount(367875, {	-- Armored Siege Kodo (MOUNT!)
+		i(190636, {	-- Armored Siege Kodo (MOUNT!)
 			["timeline"] = { "added 10.1.5" },
 		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
@@ -223,7 +223,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(92707, {	-- Cinder Kitten (PET!)
 			["timeline"] = { "added 5.1.0.16309" },
 		}),
-		pet(3253, {	-- Crushhoof
+		i(190608, {	-- Crushhoof
 			["timeline"] = { "added 10.1.5" },
 		}),
 		pet(2780, {	-- Daisy (PET!)
