@@ -2110,8 +2110,8 @@ app.ShowQuestInfoDialog = function(questID)
 end
 -- Checks a given quest reference against the current character info to see if something is inaccurate
 app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
-	-- accepted quests from old removed items shouldn't trigger a notification to report as inaccurate
-	if questRef and questRef.questID and not questRef.itemID then
+	-- accepted quests from old removed items shouldn't trigger a notification to report as inaccurate, non-removed items should still validate
+	if questRef and questRef.questID and (not questRef.itemID or not questRef.u) then
 		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
 		local completed = app.CurrentCharacter.Quests[id] and true;
