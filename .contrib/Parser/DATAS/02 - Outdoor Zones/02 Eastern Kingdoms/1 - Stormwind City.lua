@@ -4045,7 +4045,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32665, {	-- Learn To Ride
 					["description"] = "This quest is automatically granted to Pandaren upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0" },
+					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
 					["races"] = { PANDAREN_ALLIANCE },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,

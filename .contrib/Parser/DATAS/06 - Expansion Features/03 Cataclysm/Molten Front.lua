@@ -374,8 +374,8 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["qg"] = 52491,	-- Morthis Whisperwing
 					["coord"] = { 34.6, 56.4, 338 },
 					["sourceQuests"] = {
-						29293,	-- Singed Wings
-						29296,	-- Territorial Birds
+						29293,	-- Singed Wings [On quest, not Complete, Discord 2023-07-29]
+						-- 29296,	-- Territorial Birds [Not Required, Discord 2023-07-29]
 					},
 					["isDaily"] = true,
 				}),

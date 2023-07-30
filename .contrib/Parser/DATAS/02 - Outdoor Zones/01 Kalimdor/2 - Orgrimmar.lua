@@ -3513,7 +3513,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32673, {	-- Learn To Ride (Goblin)
 					["description"] = "This quest is available to Goblins upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["races"] = { GOBLIN },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -3527,7 +3527,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32669, {	-- Learn To Ride (Orc)
 					["description"] = "This quest is available to Orcs upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["races"] = { ORC },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -3541,7 +3541,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32667, {	-- Learn To Ride (Pandaren)
 					["description"] = "This quest is available to Pandaren upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["races"] = { PANDAREN_HORDE },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding

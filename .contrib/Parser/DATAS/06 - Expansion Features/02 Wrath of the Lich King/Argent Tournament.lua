@@ -2070,6 +2070,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					},
 					["coord"] = { 69.6, 22.8, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["isBreadcrumb"] = true,	-- [Possible to not have this quest completed and still pick up following dailies...]
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14108, {	-- Get Kraken!
 					["qg"] = 35094,	-- Crusader Silverdawn

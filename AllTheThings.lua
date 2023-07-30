@@ -2091,6 +2091,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, c
 			tinsert(info, k..":"..tostring(v))
 		end
 	end
+	-- TODO: show account-wide unlock quests of various types... DF Campaign/ZC WQ unlock...etc?
 	tinsert(info, "L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")");
 	tinsert(info, "cov:"..(covInfo or "N/A").." renown"..(app.TableConcat(majorFactionInfo)));
 	tinsert(info, "skills"..(app.TableConcat(skills) or ""));
@@ -2109,7 +2110,8 @@ app.ShowQuestInfoDialog = function(questID)
 end
 -- Checks a given quest reference against the current character info to see if something is inaccurate
 app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
-	if questRef and questRef.questID then
+	-- accepted quests from old removed items shouldn't trigger a notification to report as inaccurate
+	if questRef and questRef.questID and not questRef.itemID then
 		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
 		local completed = app.CurrentCharacter.Quests[id] and true;

@@ -1350,7 +1350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32672, {	-- Learn to Ride
 					["description"] = "This quest is available to Undead characters upon reaching level 10.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { "added 4.0.3.13277", REMOVED_10_1_5 },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
 					["isBreadcrumb"] = true,
@@ -2049,7 +2049,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4773, {	-- Velma Warnam <Undead Horse Riding Instructor>
 					["coord"] = { 60.0, 52.6, TIRISFAL_GLADES },
 					["races"] = { ORC, TROLL, UNDEAD },
-					
+
 					-- Available to Undead without faction requirements.
 					["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
 					["OnInit"] = [[function(t)

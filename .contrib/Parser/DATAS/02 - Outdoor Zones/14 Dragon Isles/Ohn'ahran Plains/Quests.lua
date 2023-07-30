@@ -449,7 +449,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16405.02, {	-- Initiate's Day Out
 				q(65906, {	-- A Disgruntled Initiate
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						65779,	-- Into the Plains
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
@@ -619,7 +619,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16405.05, {	-- Elder Nazuun
 					q(66687, {	-- Land of the Apex
-						["sourceQuests"] = { 66201 },	-- Hooves of War
+						["sourceQuests"] = {
+							66201,	-- Hooves of War
+							DF_ACCOUNT_CAMPAIGN_QUEST,
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 190164 },	-- Elder Nazuun
 						["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
 					}),

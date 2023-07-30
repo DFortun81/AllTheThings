@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20914,	-- Aalun <Riding Trainer>
 					["coord"] = { 81.4, 52.6, THE_EXODAR },
 					["description"] = "This quest is automatically offered to Draenei upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0" },
+					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
 					["DisablePartySync"] = true,

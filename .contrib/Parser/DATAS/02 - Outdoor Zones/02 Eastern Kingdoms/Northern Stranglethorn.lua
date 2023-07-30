@@ -1116,8 +1116,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26407, {	-- Mosh'Ogg Handiwork
 					["provider"] = { "i", 58491 },	-- Disfigured Mosh'Ogg Hand
-					["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk
-					["description"] = "Drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
+					-- ["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk [Not Required, Discord 2023-07-29]
+					["description"] = "Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
 					["timeline"] = { "added 4.0.3.13277" },
 					["crs"] = {
 						1142,	-- Mosh'Ogg Brute

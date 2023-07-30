@@ -1229,7 +1229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16280,	-- Perascamin <Riding Trainer>
 					["coord"] = { 61.2, 54, EVERSONG_WOODS },
 					["description"] = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0" },
+					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
 					["races"] = { BLOODELF },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,

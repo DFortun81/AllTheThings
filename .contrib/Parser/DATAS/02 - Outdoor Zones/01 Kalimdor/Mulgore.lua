@@ -774,7 +774,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["timeline"] = { "added 5.2.0.16446" },
+					["timeline"] = { "added 5.2.0.16446", REMOVED_10_1_5 },
 					["races"] = { TAUREN },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -1639,7 +1639,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3690, {	-- Kar Stormsinger <Kodo Riding Instructor>
 					["coord"] = { 47.6, 58.4, MULGORE },
 					["races"] = HORDE_ONLY,
-					
+
 					-- Available to Tauren without faction requirements.
 					["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
 					["OnInit"] = [[function(t)

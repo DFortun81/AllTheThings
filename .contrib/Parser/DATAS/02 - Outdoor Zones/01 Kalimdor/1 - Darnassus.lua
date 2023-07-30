@@ -374,7 +374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32664, {	-- Learn to Ride
 					["description"] = "This quest is available to Night Elves upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["lockCriteria"] = { 1,

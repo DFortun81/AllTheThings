@@ -45,8 +45,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(70125, {	-- Where is Wrathion? [A]
 					["sourceQuests"] = {
 						70122,	-- Explorers in Peril [A]
-						-- 70124,	-- Practice Materials [A]
-						-- 70123,	-- Primal Pests [A]
 					},
 					["provider"] = { "n", 187251 },	-- Toddy Whiskers
 					["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
@@ -55,8 +53,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(69910, {	-- Where is Wrathion? [H]
 					["sourceQuests"] = {
 						65452,	-- Explorers in Peril [H]
-						-- 65451,	-- Practice Materials [H]
-						-- 65453,	-- Primal Pests [H]
 					},
 					["provider"] = { "n", 184870 },	-- Naleidea Rivergleam
 					["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
@@ -71,7 +67,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 76.6, 33.7, THE_WAKING_SHORES },
 				}),
 				q(69912, {	-- My First Real Emergency!
-					["sourceQuests"] = { 69911 },	-- Excuse the Mess
+					["sourceQuests"] = {
+						69911,	-- Excuse the Mess
+						70123,	-- Primal Pests [A]
+						65453,	-- Primal Pests [H]
+						70124,	-- Practice Materials [A]
+						65451,	-- Practice Materials [H]
+					},
 					["provider"] = { "n", 193362 },	-- Sendrax
 					["coord"] = { 76.6, 33.7, THE_WAKING_SHORES },
 				}),
@@ -890,7 +892,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16406.02, {	-- Duroz & Kolgar
 				q(70239, {	-- Untold Regrets
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = {
+						66114,	-- For the Benefit of the Queen
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 194801 },	-- Kolgar Flameguard
 					["coord"] = { 58.7, 67.8, THE_WAKING_SHORES },
 				}),

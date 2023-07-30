@@ -833,6 +833,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["sourceQuest"] = 26390,	-- Ending the Invasion
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["isBreadcrumb"] = true,	-- TODO Not required for q:62, confirm it becomes unavailable with q:62 complete
 							-- #endif
 							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
 							["groups"] = {
@@ -1552,9 +1553,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(60, {	-- Kobold Candles
 					["qg"] = 253,	-- William Pestle
-					-- #if AFTER 4.0.3.13277
-					["sourceQuest"] = 26390,	-- Ending the Invasion
-					-- #endif
 					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(3, 3, 1),
@@ -1588,7 +1586,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["timeline"] = { "added 5.2.0.16446" },
+					["timeline"] = { "added 5.2.0.16446", REMOVED_10_1_5 },
 					["races"] = { HUMAN },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -2158,7 +2156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4732, {	-- Randal Hunter <Horse Riding Instructor>
 					["coord"] = { 84.2, 65.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					
+
 					-- Available to Humans without faction requirements.
 					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
 					["OnInit"] = [[function(t)

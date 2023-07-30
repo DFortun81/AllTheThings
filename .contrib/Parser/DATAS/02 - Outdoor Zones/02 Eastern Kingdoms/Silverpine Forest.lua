@@ -527,7 +527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27181, {	-- Excising the Taint
 					["qg"] = 45195,	-- Bloodfang Stalker
-					["sourceQuest"] = 27180,	-- Honor the Dead
+					["sourceQuest"] = 27098,	-- Lordaeron [Shifted back 1 quest... no history in report Discord 2023-07-29]
 					["coord"] = { 46.1, 50.2, SILVERPINE_FOREST },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
