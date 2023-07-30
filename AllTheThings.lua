@@ -8240,7 +8240,6 @@ end
 -- Causes a group to remain visible if it is replayable, regardless of collection status
 app.ShowIfReplayableQuest = function(data)
 	data.visible = C_QuestLog_IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
-	return true;
 end
 
 -- Quest Objective Lib
