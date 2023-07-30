@@ -3823,6 +3823,7 @@ function(self)
 		-- print(self, "OnEvent", ...)
 		MovieFrame:Hide()
 		CinematicFrame_CancelCinematic()
+		app.print(RENOWN_LEVEL_UP_SKIP_BUTTON,CINEMATICS)
 	end)
 	ChangeSkipCutsceneState(self, checked)
 end,
