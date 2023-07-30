@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(WHELP_DAYCARE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 			n(ACHIEVEMENTS, {
 				ach(17782, {	-- Daycare Derby
+					i(197961),	-- Whelps on Strings (TOY!)
 					crit(1, {	-- Runaway Rusziona
 						["sourceQuests"] = { 74488 },	-- Runaway Rusziona
 					}),

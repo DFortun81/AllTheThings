@@ -1045,7 +1045,9 @@ i(187958);	-- Shrouded Banner of the Opportune
 i(200142);	-- Generous Goblin Grenade
 i(199111);	-- Maestro Duck's Orchestrion
 i(199926);	-- Portable J.A.M.
+-- #if BEFORE 10.1.5
 i(197961);	-- Whelps on Strings
+-- #endif
 
 ------------------
 -- PATCH 10.0.2 --
@@ -1202,6 +1204,7 @@ i(206565);	-- Plagued Grain
 i(208057);	-- Smoldering Banner of the Aspects
 i(208415);	-- Stasis Sand
 i(207099);	-- Tiny Box of Tiny Rocks
+i(197961);	-- Whelps on Strings
 --- NYI ---
 i(206268);	-- Ethereal Transmogrifier
 i(206993);	-- Investi-gator's Pocketwatch
