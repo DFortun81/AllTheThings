@@ -2029,7 +2029,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3377,	-- Bael'dun Rifleman
 					},
 				}),
-				i(6663, {	-- Recipe: Elixir of Giant Growth
+				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 				i(6661, {	-- Recipe: Savory Deviate Delight

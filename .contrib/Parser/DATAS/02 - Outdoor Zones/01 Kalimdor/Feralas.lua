@@ -2779,7 +2779,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 43.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(9302, {	-- Recipe: Ghost Dye
+						i(9302, {	-- Recipe: Ghost Dye (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
@@ -2826,7 +2826,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(9302, {	-- Recipe: Ghost Dye
+						i(9302, {	-- Recipe: Ghost Dye (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)

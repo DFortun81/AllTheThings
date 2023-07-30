@@ -1235,7 +1235,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.8, 74.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(9301, {	-- Recipe: Elixir of Shadow Power
+						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(13477, {	-- Recipe: Superior Mana Potion

@@ -3409,9 +3409,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(6454),	-- Manual: Strong Anti-Venom
 			-- #endif
 			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
-			i(9297),	-- Recipe: Elixir of Dream Vision
+			i(9297),	-- Recipe: Elixir of Dream Vision (RECIPE!)
 			i(3830),	-- Recipe: Elixir of Fortitude (RECIPE!)
-			i(9298),	-- Recipe: Elixir of Giants
+			i(9298),	-- Recipe: Elixir of Giants (RECIPE!)
 			i(3396),	-- Recipe: Elixir of Lesser Agility (RECIPE!)
 			i(2553),	-- Recipe: Elixir of Minor Agility (RECIPE!)
 			i(6211),	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
@@ -3425,9 +3425,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 2.0.1" },
 			}),
 			i(13490),	-- Recipe: Greater Stoneshield Potion
-			i(9295),	-- Recipe: Invisibility Potion
+			i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
 			i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
-			i(9293, {	-- Recipe: Magic Resistance Potion
+			i(9293, {	-- Recipe: Magic Resistance Potion (RECIPE!)
 				["timeline"] = { "deleted 5.0.4" },
 			}),
 			i(3831),	-- Recipe: Mighty Troll's Blood Potion / Recipe: Major Troll's Blood Elixir [Wrath+] (RECIPE!)

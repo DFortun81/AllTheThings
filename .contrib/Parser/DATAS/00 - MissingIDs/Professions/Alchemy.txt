@@ -49,38 +49,9 @@ r(265787),	-- Zandalari Alchemy
 
 Missing in AlchemyItemDB.lua
 
-0.5.5.3494
-r(8240),	-- Elixir of Giant Growth
 0.7.0.3694
-r(11447),	-- Elixir of Waterwalking
-r(11448),	-- Greater Mana Potion
-r(11449),	-- Elixir of Agility
-r(11450),	-- Elixir of Greater Defense
-r(11451),	-- Oil of Immolation
-r(11452),	-- Restorative Potion
-r(11453),	-- Magic Resistance Potion
 r(11454),	-- Inlaid Mithril Cylinder
 r(11456),	-- Goblin Rocket Fuel
-r(11457),	-- Superior Healing Potion
-r(11458),	-- Wildvine Potion
-r(11459),	-- Philosopher's Stone \\ Philosophers' Stone
-r(11460),	-- Elixir of Detect Undead
-r(11461),	-- Arcane Elixir
-r(11464),	-- Invisibility Potion
-r(11465),	-- Elixir of Greater Intellect
-r(11466),	-- Gift of Arthas
-r(11467),	-- Elixir of Greater Agility
-r(11468),	-- Elixir of Dream Vision
-r(11472),	-- Elixir of Giants
-r(11473),	-- Ghost Dye
-r(11476),	-- Elixir of Shadow Power
-r(11477),	-- Elixir of Demonslaying
-r(11478),	-- Elixir of Detect Demon
-r(11479),	-- Transmute: Iron to Gold
-r(11480),	-- Transmute: Mithril to Truesilver
-r(11611),	-- Alchemy
-0.8.0.3734
-r(12609),	-- Catseye Elixir
 1.0.0.3980
 r(15833),	-- Dreamless Sleep Potion
 r(17187),	-- Transmute: Arcanite

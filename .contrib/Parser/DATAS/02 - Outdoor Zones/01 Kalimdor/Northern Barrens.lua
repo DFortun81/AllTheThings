@@ -4311,7 +4311,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(97990, {	-- Raptorhide Boxing Gloves (still drops but has no purpose)
 					["timeline"] = { "added 5.3.0.16767" },
 				}),
-				i(6663, {	-- Recipe: Elixir of Giant Growth
+				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 				i(6661, {	-- Recipe: Savory Deviate Delight

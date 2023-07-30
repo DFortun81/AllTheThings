@@ -1822,7 +1822,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(9300, {	-- Recipe: Elixir of Demonslaying
+						i(9300, {	-- Recipe: Elixir of Demonslaying (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

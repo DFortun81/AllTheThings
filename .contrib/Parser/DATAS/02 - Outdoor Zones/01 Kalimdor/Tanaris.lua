@@ -5117,10 +5117,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(9303),	-- Recipe: Philosopher's Stone
+						i(9303),	-- Recipe: Philosopher's Stone (RECIPE!)
 						i(12958),	-- Recipe: Transmute Arcanite
-						i(9304),	-- Recipe: Transmute Iron to Gold
-						i(9305, {	-- Recipe: Transmute Mithril to Truesilver
+						i(9304),	-- Recipe: Transmute Iron to Gold (RECIPE!)
+						i(9305, {	-- Recipe: Transmute Mithril to Truesilver (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

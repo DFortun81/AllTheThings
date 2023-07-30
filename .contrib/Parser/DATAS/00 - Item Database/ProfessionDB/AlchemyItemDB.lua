@@ -56,6 +56,58 @@ i(6068, 3449);	-- Shadow Oil (Recipe removed 4.0.3, available from trainers 4.1.
 i(5641, 6619);	-- Cowardly Flight Potion
 i(2556, 2336);	-- Elixir of Tongues
 
+------------------
+-- PATCH 0.5.5 --
+------------------
+-- ITEM --
+i(6663, 8240);	-- Elixir of Giant Growth
+
+------------------
+-- PATCH 0.5.5 --
+------------------
+-- REMOVED --
+i(0, 11447);	-- Elixir of Waterwalking (2.4.0)	-- This one is a bit tricky and may be in the wrong spot.
+
+------------------
+-- PATCH 0.7.0 --
+------------------
+-- TRAINER --
+i(0, 11611);	-- Alchemy (Artisan)
+i(0, 11461);	-- Arcane Elixir
+i(0, 11449);	-- Elixir of Agility
+i(0, 11478);	-- Elixir of Detect Demon
+i(0, 11460);	-- Elixir of Detect Undead
+i(0, 11467);	-- Elixir of Greater Agility
+i(0, 11450);	-- Elixir of Greater Defense
+i(0, 11465);	-- Elixir of Greater Intellect
+i(0, 11448);	-- Greater Mana Potion
+i(0, 11451);	-- Oil of Immolation
+i(0, 11457);	-- Superior Healing Potion
+-- ITEM --
+i(9300, 11477);	-- Elixir of Demonslaying
+i(9297, 11468);	-- Elixir of Dream Vision
+i(9298, 11472);	-- Elixir of Giants
+i(9301, 11476);	-- Elixir of Shadow Power
+i(9302, 11473);	-- Ghost Dye
+i(9296, 11466);	-- Gift of Arthas
+i(9295, 11464);	-- Invisibility Potion
+i(9303, 11459);	-- Philosopher's Stone
+i(9304, 11479);	-- Transmute: Iron to Gold
+i(9305, 11480);	-- Transmute: Mithril to Truesilver
+i(9294, 11458);	-- Wildvine Potion
+-- REMOVED --
+i(9293, 11453);	-- Magic Resistance Potion (5.0.4)
+i(0, 11452);	-- Restorative Potion (4.0.3)
+
+------------------
+-- PATCH 0.8.0 --
+------------------
+-- TRAINER --
+i(0, 12609);	-- Catseye Elixir
+
+------------------
+-- PATCH 1.0.0 --
+------------------
 -----------------
 -- PATCH 6.0.1 --	- NOT DONE -Darkal
 -----------------

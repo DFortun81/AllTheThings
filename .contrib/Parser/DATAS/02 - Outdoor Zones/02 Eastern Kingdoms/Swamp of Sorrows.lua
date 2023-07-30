@@ -1479,7 +1479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(9300, {	-- Recipe: Elixir of Demonslaying
+						i(9300, {	-- Recipe: Elixir of Demonslaying (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

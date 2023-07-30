@@ -2709,7 +2709,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1836,	-- Scarlet Cavalier
 				}),
 				-- #endif
-				i(9296, {	-- Recipe: Gift of Arthas
+				i(9296, {	-- Recipe: Gift of Arthas (RECIPE!)
 					-- #if AFTER CATA
 					["cr"] = 1783,	-- Skeletal Flayer
 					-- #else

@@ -2701,7 +2701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(48126, {	-- Razzashi Hatchling (PET!)
 					["timeline"] = { "added 3.2.0.10128" },
 				}),
-				i(9294, {	-- Recipe: Wildvine Potion
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 					["maps"] = { THE_HINTERLANDS },
 					["timeline"] = { "added 1.11.1", "removed 4.0.1" },

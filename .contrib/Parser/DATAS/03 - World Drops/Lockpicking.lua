@@ -255,7 +255,7 @@ root(ROOTS.WorldDrops, {
 				i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
 				i(7989),	-- Plans: Mithril Spurs (RECIPE!)
 				i(12683),	-- Plans: Thorium Belt (RECIPE!)
-				i(9295),	-- Recipe: Invisibility Potion
+				i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
 				i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
 			}),
 			i(190954, {	-- Serevite Lockbox
@@ -285,7 +285,7 @@ root(ROOTS.WorldDrops, {
 				i(7976),	-- Plans: Mithril Shield Spike (RECIPE!)
 				i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
 				i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
-				i(9295),	-- Recipe: Invisibility Potion
+				i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
 				i(10603),	-- Schematic: Catseye Ultra Goggles
 				i(10606),	-- Schematic: Parachute Cloak
 			}),
@@ -361,8 +361,8 @@ root(ROOTS.WorldDrops, {
 				i(10301),	-- Pattern: White Bandit Mask
 				i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
 				i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
-				i(9298),	-- Recipe: Elixir of Giants
-				i(9295),	-- Recipe: Invisibility Potion
+				i(9298),	-- Recipe: Elixir of Giants (RECIPE!)
+				i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
 				i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
 				i(10603),	-- Schematic: Catseye Ultra Goggles
 				i(10606),	-- Schematic: Parachute Cloak
