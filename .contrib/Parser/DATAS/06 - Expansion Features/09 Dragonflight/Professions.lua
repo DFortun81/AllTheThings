@@ -479,7 +479,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					r(370745),	-- Advanced Potion Experimentation
 					r(370730),	-- Brood Salt
 					r(370735),	-- Illustrious Insight
-					r(390392, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Herb
 					r(370668),	-- Potion Cauldron of Power
 					r(370715),	-- Transmute: Order to Elements
 					r(370714),	-- Transmute: Decay to Elements
@@ -990,6 +989,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["g"] = sharedData({ ["cost"] = { { "c", HERBALISM_KNOWLEDGE, 1 } }, }, {
 					r(391088),	-- Refine Herbs++
 					r(391089),	-- Refine Herbs+++
+					r(390392, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Herb
 				}),
 			}),
 			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
