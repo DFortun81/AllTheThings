@@ -1756,8 +1756,12 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 					}),
 					i(8367),	-- Dragonscale Breastplate
 					applyclassicphase(PHASE_FOUR, i(20380, {	-- Dreamscale Breastplate
-					--	["description"] = "While this recipe is still available, the mats required to craft it are not.",
-						["timeline"] = { "removed 4.0.3", "added 10.1.5" },
+					-- #if AFTER 4.0.3
+					-- #if BEFORE 10.1.5
+					["description"] = "While this recipe is still available, the mats required to craft it are not.",
+					-- #endif
+					-- #endif
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 					})),
 					i(15045),	-- Green Dragonscale Breastplate
 					i(15047, {	-- Red Dragonscale Breastplate
@@ -2273,9 +2277,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(8367),	-- Dragonscale Breastplate
 				applyclassicphase(PHASE_FOUR, i(20380, {	-- Dreamscale Breastplate
 					-- #if AFTER 4.0.3
+					-- #if BEFORE 10.1.5
 					["description"] = "While this recipe is still available, the mats required to craft it are not.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					-- #endif
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 				})),
 				i(15045),	-- Green Dragonscale Breastplate
 				-- #endif
