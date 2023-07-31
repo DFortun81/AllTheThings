@@ -23,7 +23,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							},
 							["g"] = {
 								i(205982, {	-- Lost Dig Map
-									["questID"] = 75882,
+									-- ["questID"] = 75882,
 									--["isWeekly"] = true,
 								}),
 								i(202172),	-- Overflowing Satchel of Coins
