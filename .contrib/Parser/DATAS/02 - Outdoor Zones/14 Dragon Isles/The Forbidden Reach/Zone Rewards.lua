@@ -6,7 +6,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 		n(ZONE_REWARDS, {
 			currency(2118),	-- Elemental Overflow
 			i(204276),	-- Untapped Forbidden Knowledge
-			i(202196),	-- Zskera Vault Key
+			i(202196, {	-- Zskera Vault Key
+				["cost"] = {{"c",DRAGON_SUPPLIES,50}},
+				["crs"] = {
+					-- Vendors also
+					200566,	-- Cataloger Daela
+					200563,	-- Kraxxus
+					200564,	-- Storykeeper Ashekh
+					200562,	-- Turik
+				},
+			}),
 			n(BACK, {
 				i(203646, {	-- Primalist Cloak
 					iupgrade(199450, 14, 9344),	-- Cape of Raging Tempests

@@ -135,6 +135,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 28.3, 57.4, THE_FORBIDDEN_REACH },
 				}),
 				q(74795, {	-- An Odd Round Object
+					["sourceQuests"] = { 74447 },	-- Verbal Archaeology
 					["provider"] = { "i", 203686 },	-- Odd Round Object
 					["coord"] = { 30.8, 57.5, THE_FORBIDDEN_REACH },
 				}),
@@ -158,7 +159,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				q(74503, {	-- Another Gift
-					["description"] = "Takes all your tokens? Bug?",
 					["sourceQuests"] = { 74502 },	-- Complimentary Gift
 					["provider"] = { "n", 201714 },	-- Prototype Tinker-Tron
 					["coord"] = { 24.7, 52.0, THE_FORBIDDEN_REACH },
@@ -407,6 +407,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 74993,
 							["g"] = {
 								i(204278),	-- Nelthation's Toolkit
+							},
+						}),
+						o(386555, {	-- Odd Circular Object
+							["coord"] = { 30.9, 57.5, THE_FORBIDDEN_REACH },
+							["g"] = {
+								i(203686),	-- Odd Round Object
 							},
 						}),
 						o(388471, {	-- Pillaged Primordial Cache

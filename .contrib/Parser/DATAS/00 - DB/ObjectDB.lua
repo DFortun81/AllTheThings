@@ -42179,6 +42179,18 @@ root("ObjectDB", {
 			ko = "열화의 거푸집",
 		},
 	},
+	[386555] = {
+		readable = "Odd Circular Object",
+		text = {
+			en = "Odd Circular Object",
+			-- TODO: es = "Odd Circular Object",
+			-- TODO: de = "Odd Circular Object",
+			-- TODO: fr = "Odd Circular Object",
+			-- TODO: it = "Odd Circular Object",
+			-- TODO: ru = "Odd Circular Object",
+			-- TODO: cn = "Odd Circular Object",
+		},
+	},
 	[386556] = {
 		readable = "Dusty Vase",
 		text = {
