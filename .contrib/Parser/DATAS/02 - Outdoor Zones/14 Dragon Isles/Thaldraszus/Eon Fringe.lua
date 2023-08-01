@@ -256,8 +256,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["isDaily"] = true,
 					["g"] = {
 						i(208449),	-- Melly's Metronographer+++
-						--loot commented out until someone confirm it
-						--i(206993),	-- Investi-gator's Pocketwatch
+						i(206993),	-- Investi-gator's Pocketwatch (TOY!) / confirmed in discord #errors report
 					},
 				}),
 			}),
@@ -319,4 +318,5 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(77172),	-- weekly lockout for Encapsulated Destiny (itemID 207002) as reward from daily quest
 
 	q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth> kill, keep pop with 76170 on every kill
+	q(78094),	-- when toy Investi-gator's Pocketwatch (itemID 206993) was looted
 }));
