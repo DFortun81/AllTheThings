@@ -753,7 +753,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				d(HEROIC_RAID, {
 					["description"] = "",
-					["g"] = bubbleDown({ ["modID"] = 6 }, {
+					["g"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidAberrus(DEATHKNIGHT, HEROIC_RAID),
 							["g"] = {
@@ -875,7 +875,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				d(MYTHIC_RAID, {
 					["description"] = "",
-					["g"] = bubbleDown({ ["modID"] = 5 }, {
+					["g"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidAberrus(DEATHKNIGHT, MYTHIC_RAID),
 							["g"] = {

@@ -23,7 +23,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(QUESTS, {
 				q(74787, {	-- Come Snail Away
-					["sourceQuests"] = { 73711 },	-- Marked Champion
+					["sourceQuests"] = {
+						73709,	-- Favor on the Side
+						73708,	-- Pay to Play
+					},
 					["provider"] = { "n", 201752 },	-- Briggul
 					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 					["g"] = {

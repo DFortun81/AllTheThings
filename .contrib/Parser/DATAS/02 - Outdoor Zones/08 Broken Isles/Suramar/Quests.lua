@@ -1622,7 +1622,7 @@ root(ROOTS.Zones, {
 				q(40266, {	-- The Lost Advisor
 					["coord"] = { 45.6, 40.8, SURAMAR },
 					["provider"] = { "n", 99065 },	-- Thaedris Feathersong
-					["sourceQuest"] = 42230,	-- The Valewalker's Burden
+					-- ["sourceQuest"] = 42230,	-- The Valewalker's Burden [Not Required, Discord 2023-7-31]
 				}),
 				q(41834, {	-- The Masks We Wear
 					["coord"] = { 40.1, 70.7, SURAMAR },

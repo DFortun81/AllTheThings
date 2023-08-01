@@ -200,7 +200,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28602, {	-- Be Prepared
 					["qg"] = 45296,	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, ULDUM },
-					["sourceQuest"] = 27196,	-- On to Something
+					["sourceQuests"] = {
+						27196,	-- On to Something
+						27541,	-- Lessons From the Past
+					},
 					["description"] = "This version of the quest will be offered if you have completed Lessons From the Past.",
 					["groups"] = {
 						i(65886),	-- Rope-Grip Gloves
@@ -227,6 +230,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27541,	-- Lessons From the Past
 						27511,	-- The Thrill of Discovery
 					},
+					["sourceQuestNumRequired"] = 3,	-- ['Be Prepared' don't cross-complete apparently]
 					["groups"] = {
 						i(61509),	-- Sapphire Spectacles
 					},

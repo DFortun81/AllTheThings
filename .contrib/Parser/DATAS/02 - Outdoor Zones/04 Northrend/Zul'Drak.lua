@@ -971,12 +971,12 @@ root(ROOTS.Zones, {
 					}),
 					q(12587, {	-- Troll Patrol
 						-- almost certainly the removed version, will check in Wrath Classic
+						-- confirmed available 2023-7-30 [70/Human/Paladin]
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
-						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(12588, {	-- Troll Patrol: Can You Dig It?
 						["coord"] = { 48.7, 78.8, ZULDRAK },
