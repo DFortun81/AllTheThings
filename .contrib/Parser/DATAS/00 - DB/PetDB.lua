@@ -4049,6 +4049,7 @@ i(208011, 4261);	-- Obsidian Warwhelp
 i(208138, 4262);	-- N'Ruby
 i(0, 4263);			-- Tobias [Maybe Get itemID later??]
 i(190601, 2890);	-- Sunny (Shop)
+i(207962, 179);		-- Spirit of Competition (Trading Post)
 -- TRAINER --
 i(0, 3587);			-- Lifelike Mechanical Duckling
 -- Whelptender?

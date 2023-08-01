@@ -90,11 +90,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(VENDORS, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
-				mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+				i(207964, {	-- Alabaster Stormtalon (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+				i(207963, {	-- Alabaster Thunderwing (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 					["races"] = HORDE_ONLY,
 				}),
@@ -103,7 +103,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(BATTLE_PETS, {
-				i(37297, {	-- Spirit of Competition (PET!)
+				i(207962, {	-- Spirit of Competition (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
 			}),
@@ -153,6 +153,13 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190827),	-- Vagabonds Crimson Cape
 						i(190828),	-- Vagabonds Crimson Hood
 				 	},
+				}),
+				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190573),	-- Wanderer's Azure Cloak
+						i(190542),	-- Wanderer's Azure Scarf
+					},
 				}),
 				i(190850, { -- Ensemble Wanderers Crimson Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
@@ -225,17 +232,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(COSMETIC, {
-				i(190071, {	-- Azure Scalesworn Longbow
-					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
-				}),
 				i(190441, {	-- Black Iron Blunderbuss
 					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
 				}),
 				i(190899, {	-- Crimson Bicorne
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
-				}),
-				i(190438, {	-- Crimson Nexus Crescent
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
 				i(190130, {	-- Drape of Foreboding Mists
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
@@ -420,9 +421,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(202248, {	-- Frozen Shadow
 					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(189898, {	-- Fury of the Firelord
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
 				i(190145, {	-- Gilded Drakkonid Morningstar
 					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
@@ -700,13 +698,6 @@ root(ROOTS.NeverImplemented, {
 						i(190700),	-- Tidecaller's Boots
 						i(190709),	-- Tidecaller's Pauldrons
 						i(190806),	-- Tidecaller's Cinch
-					},
-				}),
-				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(190573),	-- Wanderer's Azure Cloak
-						i(190542),	-- Wanderer's Azure Scarf
 					},
 				}),
 				-- Belt
