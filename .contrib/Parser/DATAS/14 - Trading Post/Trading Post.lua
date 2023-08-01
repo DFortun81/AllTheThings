@@ -52,7 +52,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			filter(MOUNTS, {
 			}),
 			filter(COSMETIC, {
-			--	i(190504, {	-- Ensemble: Bloodhunter
+				i(190797, {	-- Ensemble: Bones of the Bloodhunter
 					i(190793),	-- Bloodhunter Footwraps
 					i(190790),	-- Bloodhunter Handguards
 					i(190798),	-- Bloodhunter Harness
@@ -61,7 +61,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					i(190791),	-- Bloodhunter Subligar
 					i(190794),	-- Bloodhunter Warcloak
 					i(190789),	-- Bloodhunter Visage
-			--	}),
+				}),
 			}),
 		}),
 		n(UNAVAILABLE, {
