@@ -50,11 +50,18 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for filling the Travel Points Progress Bar in the month." }, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
-				i(206156, {	-- Grotto Netherwing Drake (MOUNT!)
-					["timeline"] = { ADDED_10_1_0 },
-				}),
 			}),
 			filter(COSMETIC, {
+			--	i(190504, {	-- Ensemble: Bloodhunter
+					i(190793),	-- Bloodhunter Footwraps
+					i(190790),	-- Bloodhunter Handguards
+					i(190798),	-- Bloodhunter Harness
+					i(190795),	-- Bloodhunter Hornmantle
+					i(190792),	-- Bloodhunter Loincloth
+					i(190791),	-- Bloodhunter Subligar
+					i(190794),	-- Bloodhunter Warcloak
+					i(190789),	-- Bloodhunter Visage
+			--	}),
 			}),
 		}),
 		n(UNAVAILABLE, {
@@ -82,118 +89,119 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	})),
 	n(VENDORS, {
 		n(AVAILABLE, {
-			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
-				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
+			filter(MOUNTS, {
+				mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
-					["timeline"] = { ADDED_10_1_0 },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				i(76755, {	-- Tyrael's Charger (MOUNT!)
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-					["timeline"] = { ADDED_10_1_0 },
+				mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+					["races"] = HORDE_ONLY,
 				}),
-			})),
+				i(207821, {	-- Ancestral Clefthoof (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
+			}),
 			filter(BATTLE_PETS, {
-				i(49343, {	-- Spectral Tiger Cub (PET!)
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				i(37297, {	-- Spirit of Competition (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
+			}),
+			filter(TOYS, {
+				i(206268, { -- Ethereal Transmogrifier
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
 			}),
 			filter(COSMETIC, {
-				i(190562, {	-- Aldori War Mace
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				i(207957, { -- Aquamarine Felfire Bulwark
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
 				}),
-				i(190146, {	-- Antoran Felspire
-					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				i(207959, { -- Aquamarine Felfire Splitblade
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
 				}),
-				i(190560, {	-- Conquest
-					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
-				}),
-				i(200915, {	-- Ensemble: Sylvan Stalker’s Leathers	-- spellID 367583
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-				 	["g"] = {
-						i(190436),	-- Sylvan Stalker's Baldric
-						i(189873),	-- Sylvan Stalker's Boots
-						i(190810),	-- Sylvan Stalker's Handguards
-						i(190073),	-- Sylvan Stalker's Hood
-						i(190142),	-- Sylvan Stalker's Legguards
-						i(190894),	-- Sylvan Stalker's Mantle
-						i(190811),	-- Sylvan Stalker's Vest
-						i(190788),	-- Sylvan Stalker's Wristguards
-					},
-				}),
-				i(190528, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(190424),	-- Vagabond's Violet Cape
-						i(190425),	-- Vagabond's Violet Hood
-					},
-				}),
-				i(190529, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(190423),	-- Wanderer's Violet Cloak
-						i(190426),	-- Wanderer's Violet Scarf
-					},
-				}),
-				i(190097, {	-- Fabulously Flashy Finery
-					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
-				i(190876, {	-- Filigreed Lion's Maw
-					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
-				}),
-				i(190842, {	-- Fists of Polar Fury
-					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
-				}),
-				i(190558, {	-- Helm of the Fierce
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
-				i(190559, {	-- Helm of the Swift
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
-				i(190814, {	-- Mephistroth's Razor
+				i(190071, { -- Azure Scalesworn Longbow
 					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
 				}),
-				i(190546, {	-- Polished Shortsword
-					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				i(190812, { -- Azure Nexus Crescent
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
-				i(190545, {	-- Primeval Basher
+				i(190078, { -- Blade of Brutal Sacrifice
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190870, { -- City Guard Heater Shield
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
-				i(190543, {	-- Silvered Warcloak
-					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				i(190438, { -- Crimson Nexus Crescent
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
-				i(190557, {	-- Sinister Fel Staff
-					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				i(95475, { -- Crown of Eternal Winter
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
 				}),
-				--[[ August 2023
-					mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
-						["timeline"] = {
-								"added 8.2.5.31958",
-							-- "removed 10.0.7.48999,"
-						},
-						["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
-						["races"] = ALLIANCE_ONLY,
-					}),
-					mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
-						["timeline"] = {
-								"added 8.2.5.31958",
-							-- "removed 10.0.7.48999,"
-						},
-						["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
-						["races"] = HORDE_ONLY,
-					}),
-					i(37297),	-- Spirit of Competition
-					disco toy??
-					-- bones of the bloodhunter ensemble
-				--]]
+				i(208039, { -- Ember Court Soiree Gloves
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(190576, { -- Ensemble Vagabonds Azure Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190541),	-- Vagabond's Azure Cape
+						i(190572),	-- Vagabond's Azure Hood
+					},
+				}),
+				i(190851, { -- Ensemble Vagabonds Crimson Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190827),	-- Vagabonds Crimson Cape
+						i(190828),	-- Vagabonds Crimson Hood
+				 	},
+				}),
+				i(190850, { -- Ensemble Wanderers Crimson Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190825),	-- Wanderer's Crimson Cloak
+						i(190826),	-- Wanderer's Crimson Scarf
+				 	},
+				}),
+				i(189898, { -- Fury of the Firelord
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(190871, { -- Grunts Buckler
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(97213, { -- Hood of Hungering Darkness
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(208040, { -- Queens Conservatory Ball Gloves
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(190909, { -- Ruby Felfire Splitblade
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190910, { -- Ruby Felfire Bulwark
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190143, { -- Shard of Frozen Secrets
+					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+				}),
+				i(190557, { -- Sinister Fel Staff
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
 			}),
 		}),
 		n(UNAVAILABLE, {
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(54811),	-- Celestial Steed (MOUNT!)
-				i(189978),	-- Magenta Cloud Serpent (MOUNT!)
 				i(118515),	-- Cindermane Charger (MOUNT!)
+				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+					["timeline"] = { ADDED_10_1_0 },
+				}),
+				i(189978),	-- Magenta Cloud Serpent (MOUNT!)
 				i(206976, {	-- Royal Swarmer (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 800 }, },
+				}),
+				i(76755, {	-- Tyrael's Charger (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+					["timeline"] = { ADDED_10_1_0 },
 				}),
 			})),
 			filter(BATTLE_PETS, {
@@ -211,6 +219,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190175, {	-- Pippin (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				}),
+				i(49343, {	-- Spectral Tiger Cub (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
 			}),
 			filter(COSMETIC, {
@@ -515,6 +526,75 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190199, {	-- Well-Worn Grimskull Cinch
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
+				--
+				--
+				--
+				i(190562, {	-- Aldori War Mace
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(190146, {	-- Antoran Felspire
+					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				}),
+				i(190560, {	-- Conquest
+					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				}),
+				i(200915, {	-- Ensemble: Sylvan Stalker’s Leathers	-- spellID 367583
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				 	["g"] = {
+						i(190436),	-- Sylvan Stalker's Baldric
+						i(189873),	-- Sylvan Stalker's Boots
+						i(190810),	-- Sylvan Stalker's Handguards
+						i(190073),	-- Sylvan Stalker's Hood
+						i(190142),	-- Sylvan Stalker's Legguards
+						i(190894),	-- Sylvan Stalker's Mantle
+						i(190811),	-- Sylvan Stalker's Vest
+						i(190788),	-- Sylvan Stalker's Wristguards
+					},
+				}),
+				i(190528, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190424),	-- Vagabond's Violet Cape
+						i(190425),	-- Vagabond's Violet Hood
+					},
+				}),
+				i(190529, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190423),	-- Wanderer's Violet Cloak
+						i(190426),	-- Wanderer's Violet Scarf
+					},
+				}),
+				i(190097, {	-- Fabulously Flashy Finery
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190876, {	-- Filigreed Lion's Maw
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(190842, {	-- Fists of Polar Fury
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(190558, {	-- Helm of the Fierce
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190559, {	-- Helm of the Swift
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190814, {	-- Mephistroth's Razor
+					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+				}),
+				i(190546, {	-- Polished Shortsword
+					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				}),
+				i(190545, {	-- Primeval Basher
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190543, {	-- Silvered Warcloak
+					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				}),
+				i(190557, {	-- Sinister Fel Staff
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
 			}),
 		}),
 	}),
@@ -622,13 +702,6 @@ root(ROOTS.NeverImplemented, {
 						i(190806),	-- Tidecaller's Cinch
 					},
 				}),
-				i(190576, {	-- Ensemble: Vagabond's Azure Threads
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(190541),	-- Vagabond's Azure Cape
-						i(190572),	-- Vagabond's Azure Hood
-					},
-				}),
 				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
@@ -636,15 +709,6 @@ root(ROOTS.NeverImplemented, {
 						i(190542),	-- Wanderer's Azure Scarf
 					},
 				}),
-				-- i(, {	-- Ensemble: Wanderer's Crimson Trappings	-- spellID 368270
-				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				-- 	["g"] = {
-						i(190825),	-- Wanderer's Crimson Cloak
-						i(190826),	-- Wanderer's Crimson Scarf
-				-- 	},
-				-- }),
-				-- }),
-
 				-- Belt
 
 				-- Chest
@@ -1144,4 +1208,113 @@ filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(206156, {	-- Grotto Netherwing Drake (MOUNT!)
 					["timeline"] = { "added 10.1.0" },
 				}),
+--------------------
+-- AUGUST 2023 --
+--------------------
+filter(COSMETIC, {
+			--	i(190504, {	-- Ensemble: Bloodhunter
+					i(190793),	-- Bloodhunter Footwraps
+					i(190790),	-- Bloodhunter Handguards
+					i(190798),	-- Bloodhunter Harness
+					i(190795),	-- Bloodhunter Hornmantle
+					i(190792),	-- Bloodhunter Loincloth
+					i(190791),	-- Bloodhunter Subligar
+					i(190794),	-- Bloodhunter Warcloak
+					i(190789),	-- Bloodhunter Visage
+			--	}),
+			}),
+filter(MOUNTS, {
+				mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+					["races"] = HORDE_ONLY,
+				}),
+				i(207821, {	-- Ancestral Clefthoof (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
+			}),
+			filter(BATTLE_PETS, {
+				i(37297, {	-- Spirit of Competition (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
+			}),
+			filter(TOY, {
+				i(206268, { -- Ethereal Transmogrifier
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+			}),
+			filter(COSMETIC, {
+				i(207957, { -- Aquamarine Felfire Bulwark
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(207959, { -- Aquamarine Felfire Splitblade
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190071, { -- Azure Scalesworn Longbow
+					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+				}),
+				i(190812, { -- Azure Nexus Crescent
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190078, { -- Blade of Brutal Sacrifice
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190870, { -- City Guard Heater Shield
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190438, { -- Crimson Nexus Crescent
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(95475, { -- Crown of Eternal Winter
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(208039, { -- Ember Court Soiree Gloves
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(190576, { -- Ensemble Vagabonds Azure Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190541),	-- Vagabond's Azure Cape
+						i(190572),	-- Vagabond's Azure Hood
+					},
+				}),
+				i(190851, { -- Ensemble Vagabonds Crimson Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(190850, { -- Ensemble Wanderers Crimson Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190825),	-- Wanderer's Crimson Cloak
+						i(190826),	-- Wanderer's Crimson Scarf
+				 	},
+				}),
+				i(189898, { -- Fury of the Firelord
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(190871, { -- Grunts Buckler
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(97213, { -- Hood of Hungering Darkness
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(208040, { -- Queens Conservatory Ball Gloves
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(190909, { -- Ruby Felfire Splitblade
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190910, { -- Ruby Felfire Bulwark
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190143, { -- Shard of Frozen Secrets
+					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+				}),
+				i(190557, { -- Sinister Fel Staff
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+			}),
+		}),
 --]]

@@ -4594,6 +4594,7 @@ _.ObjectNames = {
 	[386531] = "Gold Pile",
 	[386532] = "Primordial Gold Cache",
 	[386547] = "Suffusion Mold",
+	[386555] = "Odd Circular Object",
 	[386556] = "Dusty Vase",
 	[386559] = "Secured Shipment",
 	[386573] = "Ornate Key Box",
