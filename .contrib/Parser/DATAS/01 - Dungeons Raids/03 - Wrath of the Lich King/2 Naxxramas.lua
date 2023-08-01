@@ -219,6 +219,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(DEATHS_BARGAINING_CHIP),
 					},
 				}),
+				q(77245, {	-- Many Invader's Scourgestones
+					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
+					["repeatable"] = true,
+					["cost"] = {{ "i", 206374, 50 }},	-- 50x Invader's Scourgestone
+					["g"] = {
+						i(DEATHS_BARGAINING_CHIP),
+					},
+				}),
 				q(76290, {	-- Omarion's Second Handbook
 					["sourceQuests"] = {
 						76263,	-- The Dread Citadel - Naxxramas [Honored]
