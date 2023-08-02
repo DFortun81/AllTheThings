@@ -340,9 +340,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								ig(2114),	-- Snowy Robe			(Removed)
 								-- Leather
 								-- Mail
+								ig(114389),	-- Element-Binder Helm 	(Never added)
 								ig(93086),	-- Swashbuckling Vest 	(Never added)
 								
-								ig(134732),	--	Frigidlink Armor	(Removed)
+								ig(134732),	-- Frigidlink Armor		(Removed)
+								ig(120952),	-- Slarkhide			(Removed)
 								-- Plate
 							},
 						}),
