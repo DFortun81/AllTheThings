@@ -493,7 +493,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71386, 365730);	-- Primal Molten Shortblade
 			FirstCraft(71385, 365731);	-- Primal Molten Spellblade
 			FirstCraft(71387, 365729);	-- Primal Molten Warglaive
-			--FirstCraft(x, 408283, ADDED_10_1_0);	-- Shadowed Razing Annihilator
+			FirstCraft(75594, 408283, ADDED_10_1_0);	-- Shadowed Razing Annihilator
 			-- Profession Tools and Accessories
 			FirstCraft(71360, 371372);	-- Black Dragon Touched Hammer
 			FirstCraft(71361, 371344);	-- Draconium Blacksmith's Hammer

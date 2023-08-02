@@ -237,13 +237,13 @@ root(ROOTS.Zones, {
 				q(31680, {	-- Crime and Punishment
 					["provider"] = { "n", 65975 },	-- Zer'ik
 					["altQuests"] = { 31088 },	-- Crime and Punishment
-					["sourceQuest"] = 31087,	-- Extending Our Coverage
+					["sourceQuest"] = 31679,	-- Extending Our Coverage
 					["description"] = "This version is available if Kor'ik has been killed.",
 				}),
 				q(31088, {	-- Crime and Punishment
 					["provider"] = { "n", 65365 },	-- Kor'ik
 					["altQuests"] = { 31680 },	-- Crime and Punishment
-					["sourceQuest"] = 31679,	-- Extending Our Coverage
+					["sourceQuest"] = 31087,	-- Extending Our Coverage
 					["description"] = "This version is available if Kor'ik has not been killed yet.",
 				}),
 				q(56577, {	-- Crippling the Hive
@@ -341,14 +341,16 @@ root(ROOTS.Zones, {
 				q(31087, {	-- Extending Our Coverage
 					["coord"] = { 54.7, 34.0, DREAD_WASTES },
 					["provider"] = { "n", 64815 },	-- Kor'ik
+					["altQuests"] = { 31679 },	-- Extending Our Coverage
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
+					["description"] = "This version is available if Kor'ik has not been killed yet.",
 				}),
 				q(31679, {	-- Extending Our Coverage
 					["coord"] = { 48.0, 49.6, DREAD_WASTES },
 					["provider"] = { "n", 65975 },	-- Zer'ik
 					["altQuests"] = { 31087 },	-- Extending Our Coverage
-					["description"] = "This version is available if Kor'ik has been killed.",
 					["sourceQuest"] = 31441,	-- Corruption Runs Deep
+					["description"] = "This version is available if Kor'ik has been killed.",
 				}),
 				q(31465, {	-- Extracting Answers
 					["coord"] = { 56.2, 58.2, DREAD_WASTES },
