@@ -248,7 +248,7 @@ api.HasUpgrade = function(t)
 
 	-- '.up' is the modID.bonusID portion of the respective upgrade item defined in ATT
 	local up = t.up;
-	if not up then
+	if not up or not t.collectible then
 		-- app.PrintDebug("no upgrade",t.modItemID)
 		-- t.isUpgraded = true;
 		return;
