@@ -667,7 +667,13 @@ _.ObjectIcons = {
 	[209076] = "Interface/Icons/INV_Crate_01",
 	[209095] = "Interface/Icons/INV_Crate_01",
 	[209270] = "Interface/Icons/INV_Misc_NoteScript2d",
+	[209275] = "Interface/Icons/",
+	[209276] = "Interface/Icons/inv_misc_pelt_bear_03",
+	[209283] = "Interface/Icons/inv_mace_12",
+	[209284] = "Interface/Icons/inv_misc_herb_13",
+	[209287] = "Interface/Icons/inv_jewelcrafting_gem_05",
 	[209620] = "Interface/Icons/garrison_silverchest",
+	[210216] = "Interface/Icons/inv_crate_03",
 	[211424] = "Interface/Icons/inv_scroll_03",
 	[211754] = "Interface/Icons/inv_misc_book_11",
 	[213363] = "Interface/Icons/inv_weapon_shortblade_46",
@@ -1560,6 +1566,13 @@ _.ObjectModels = {
 	[207496] = 446673,
 	[208311] = 219405,
 	[209270] = 305393,
+	[209275] = 197724,
+	[209276] = 197199,
+	[209283] = 192690,
+	[209284] = 219436,
+	[209287] = 198060,
+	[209620] = 446671,
+	[210216] = 219411,
 	[213751] = 446675,
 	[213842] = 593274,
 	[220820] = 305393,
@@ -2475,6 +2488,11 @@ _.ObjectNames = {
 	[209094] = "Stolen Crate",
 	[209095] = "Edgar's Crate",
 	[209270] = "|cFFFFFFFFStep 2:|r Page 78",
+	[209275] = "Tonk Scrap",
+	[209276] = "Staked Skin",
+	[209283] = "Discarded Weapon",
+	[209284] = "Darkblossom",
+	[209287] = "Bit of Glass",
 	[209620] = "Darkmoon Treasure Chest",
 	[209673] = "Jade Tiger Pillar",
 	[209845] = "Mouthwatering Brew",
@@ -2485,6 +2503,7 @@ _.ObjectNames = {
 	[210018] = "Weapon Rack",
 	[210019] = "Weapon Rack",
 	[210020] = "Weapon Rack",
+	[210216] = "Shipwreck Debris",
 	[210565] = "Dark Soil",
 	[211424] = "Alchemy Scroll",
 	[211754] = "Curious Text",
@@ -4575,6 +4594,7 @@ _.ObjectNames = {
 	[386531] = "Gold Pile",
 	[386532] = "Primordial Gold Cache",
 	[386547] = "Suffusion Mold",
+	[386555] = "Odd Circular Object",
 	[386556] = "Dusty Vase",
 	[386559] = "Secured Shipment",
 	[386573] = "Ornate Key Box",
@@ -4827,7 +4847,7 @@ _.ObjectNames = {
 }
 
 if simplifiedLocale == "de" then
-a = _.ObjectNames;
+local a = _.ObjectNames;
 for key,value in pairs({
 	[31] = "Alte Löwenstatue",
 	[34] = "Alter Henkelkrug",
@@ -5621,6 +5641,11 @@ for key,value in pairs({
 	[209094] = "Gestohlene Kiste",
 	[209095] = "Edgars Kiste",
 	[209270] = "|cFFFFFFFFSchritt 2:|r Seite 78",
+	[209275] = "Panzerschrott",
+	[209276] = "Aufgespannte Haut",
+	[209283] = "Abgelegte Waffe",
+	[209284] = "Dunkelblüte",
+	[209287] = "Glasstücke",
 	[209620] = "Dunkelmond-Schatzkiste",
 	[209673] = "Säule des Jadetigers",
 	[209845] = "Köstliches Gebräu",
@@ -5631,6 +5656,7 @@ for key,value in pairs({
 	[210018] = "Waffenständer",
 	[210019] = "Waffenständer",
 	[210020] = "Waffenständer",
+	[210216] = "Schiffswracktrümmer",
 	[210565] = "Dunkle Erde",
 	[211424] = "Alchemieschriftrolle",
 	[211754] = "Seltsamer Text",
@@ -7922,7 +7948,7 @@ for key,value in pairs({
 end
 
 if simplifiedLocale == "es" then
-a = _.ObjectNames;
+local a = _.ObjectNames;
 for key,value in pairs({
 	[31] = "Estatua de león antigua",
 	[34] = "Vieja jarra",
@@ -8709,6 +8735,11 @@ for key,value in pairs({
 	[209094] = "Cajón robado",
 	[209095] = "Cajón de Edgar",
 	[209270] = "|cFFFFFFFFStep 2:|r Página 78",
+	[209275] = "Chatarra de tonque",
+	[209276] = "Piel clavada",
+	[209283] = "Arma desechada",
+	[209284] = "Flor de sombras",
+	[209287] = "Añico de cristal",
 	[209620] = "Arqueta de la Luna Negra",
 	[209673] = "Pilar de tigre de jade",
 	[209845] = "Brebaje apetitoso",
@@ -8719,6 +8750,7 @@ for key,value in pairs({
 	[210018] = "Expositor de armas",
 	[210019] = "Expositor de armas",
 	[210020] = "Expositor de armas",
+	[210216] = "Restos de naufragio",
 	[210565] = "Tierra oscura",
 	[211424] = "Pergamino de alquimia",
 	[211754] = "Texto curioso",
@@ -10963,7 +10995,7 @@ for key,value in pairs({
 end
 
 if simplifiedLocale == "fr" then
-a = _.ObjectNames;
+local a = _.ObjectNames;
 for key,value in pairs({
 	[31] = "Statue du vieux lion",
 	[34] = "Vieille cruche",
@@ -11753,6 +11785,11 @@ for key,value in pairs({
 	[209094] = "Caisse volée",
 	[209095] = "Caisse d’Edgar",
 	[209270] = "|cFFFFFFFFÉtape 2:|r Page 78",
+	[209275] = "Débris de chariotte",
+	[209276] = "Peau tendue",
+	[209283] = "Arme abandonnée",
+	[209284] = "Pétales-de-nuit",
+	[209287] = "Morceau de verre",
 	[209620] = "Coffre au trésor de Sombrelune",
 	[209673] = "Pilier du tigre de jade",
 	[209845] = "Bière alléchante",
@@ -11763,6 +11800,7 @@ for key,value in pairs({
 	[210018] = "Râtelier d’armes",
 	[210019] = "Râtelier d’armes",
 	[210020] = "Râtelier d’armes",
+	[210216] = "Débris d’épave",
 	[210565] = "Terre sombre",
 	[211424] = "Parchemin d’alchimie",
 	[211754] = "Texte curieux",
@@ -14067,7 +14105,7 @@ for key,value in pairs({
 end
 
 if simplifiedLocale == "it" then
-a = _.ObjectNames;
+local a = _.ObjectNames;
 for key,value in pairs({
 	[31] = "Vecchia Statua di Leone",
 	[34] = "Vecchio Fiasco",
@@ -14856,6 +14894,11 @@ for key,value in pairs({
 	[209094] = "Cassa Rubata",
 	[209095] = "Cassa di Edgar",
 	[209270] = "|cFFFFFFFFStep 2:|r Pagina 78",
+	[209275] = "Rottami di Carro Giocattolo",
+	[209276] = "Pelle Tesa",
+	[209283] = "Arma Abbandonata",
+	[209284] = "Fiorescuro",
+	[209287] = "Fondo di Bottiglia",
 	[209620] = "Baule del Tesoro di Lunacupa",
 	[209673] = "Statua di Tigre di Giada",
 	[209845] = "Birra Ghiotta",
@@ -14866,6 +14909,7 @@ for key,value in pairs({
 	[210018] = "Rastrelliera delle Armi",
 	[210019] = "Rastrelliera delle Armi",
 	[210020] = "Rastrelliera delle Armi",
+	[210216] = "Pezzi del Relitto",
 	[210565] = "Terreno Smosso",
 	[211754] = "Testo Bizzarro",
 	[211807] = "Cassa dei Mogu",
@@ -17024,7 +17068,7 @@ for key,value in pairs({
 end
 
 if simplifiedLocale == "ko" then
-a = _.ObjectNames;
+local a = _.ObjectNames;
 for key,value in pairs({
 	[31] = "오래된 사자상",
 	[34] = "낡은 단지",
@@ -17804,6 +17848,11 @@ for key,value in pairs({
 	[209094] = "도난당한 상자",
 	[209095] = "에드가의 상자",
 	[209270] = "|cFFFFFFFFStep 2:|r 78쪽",
+	[209275] = "통통 전차 고철",
+	[209276] = "말린 가죽",
+	[209283] = "버려진 무기",
+	[209284] = "어둠꽃",
+	[209287] = "유리 파편",
 	[209620] = "다크문 보물 상자",
 	[209673] = "비취 호랑이 기둥",
 	[209845] = "군침도는 맥주",
@@ -17814,6 +17863,7 @@ for key,value in pairs({
 	[210018] = "무기 선반",
 	[210019] = "무기 선반",
 	[210020] = "무기 선반",
+	[210216] = "난파선 파편",
 	[210565] = "검은 토양",
 	[211754] = "수수께끼의 문서",
 	[211807] = "모구 궤짝",
@@ -19858,7 +19908,7 @@ for key,value in pairs({
 end
 
 if simplifiedLocale == "pt" then
-a = _.ObjectNames;
+local a = _.ObjectNames;
 for key,value in pairs({
 	[31] = "Estátua de Leão Antiga",
 	[34] = "Velho Garrafão",
@@ -20642,6 +20692,11 @@ for key,value in pairs({
 	[209094] = "Caixote Roubado",
 	[209095] = "Caixote de Edgar",
 	[209270] = "|cFFFFFFFFStep 2:|r Página 78",
+	[209275] = "Sucata de Tonque",
+	[209276] = "Pele Estaqueada",
+	[209283] = "Arma Descartada",
+	[209284] = "Negraflora",
+	[209287] = "Caco de Vidro",
 	[209620] = "Baú do Tesouro de Negraluna",
 	[209673] = "Pilar do Tigre de Jade",
 	[209845] = "Cerveja Água na Boca",
@@ -20652,6 +20707,7 @@ for key,value in pairs({
 	[210018] = "Cavalete de Armas",
 	[210019] = "Bastidor de Armas",
 	[210020] = "Bastidor de Armas",
+	[210216] = "Destroços do Naufrágio",
 	[210565] = "Solo Negro",
 	[211424] = "Pergaminho de Alquimia",
 	[211754] = "Texto Curioso",
@@ -22870,7 +22926,7 @@ for key,value in pairs({
 end
 
 if simplifiedLocale == "ru" then
-a = _.ObjectNames;
+local a = _.ObjectNames;
 for key,value in pairs({
 	[31] = "Статуя старого льва",
 	[34] = "Старый кувшин",
@@ -23663,6 +23719,11 @@ for key,value in pairs({
 	[209094] = "Украденный ящик",
 	[209095] = "Ящик Эдгара",
 	[209270] = "|cFFFFFFFFШаг 2:|r Страница 78",
+	[209275] = "Деталь парового танка",
+	[209276] = "Растянутая шкура",
+	[209283] = "Выброшенное оружие",
+	[209284] = "Темноцвет",
+	[209287] = "Осколок стекла",
 	[209620] = "Сундук с сокровищами Новолуния",
 	[209673] = "Пьедестал нефритового тигра",
 	[209845] = "Соблазнительный напиток",
@@ -23673,6 +23734,7 @@ for key,value in pairs({
 	[210018] = "Оружейная стойка",
 	[210019] = "Оружейная стойка",
 	[210020] = "Оружейная стойка",
+	[210216] = "Обломки кораблекрушения",
 	[210565] = "Темная земля",
 	[211424] = "Алхимический свиток",
 	[211754] = "Любопытный текст",
@@ -25986,7 +26048,7 @@ for key,value in pairs({
 end
 
 if simplifiedLocale == "zh" then
-a = _.ObjectNames;
+local a = _.ObjectNames;
 for key,value in pairs({
 	[31] = "陈旧的石狮子",
 	[34] = "旧罐子",
@@ -26755,6 +26817,11 @@ for key,value in pairs({
 	[209094] = "失窃的箱子",
 	[209095] = "埃德加的箱子",
 	[209270] = "|cFFFFFFFF第2步:|r 第78页",
+	[209275] = "坦克碎片",
+	[209276] = "剥好的兽皮",
+	[209283] = "废弃的武器",
+	[209284] = "暗色花",
+	[209287] = "碎玻璃",
 	[209620] = "暗月宝箱",
 	[209673] = "玉虎立柱",
 	[209845] = "极品美酒",
@@ -26765,6 +26832,7 @@ for key,value in pairs({
 	[210018] = "武器架",
 	[210019] = "武器架",
 	[210020] = "武器架",
+	[210216] = "船只残骸",
 	[210565] = "黑色泥土",
 	[211754] = "奇怪的文字",
 	[211807] = "魔古箱子",

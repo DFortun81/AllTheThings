@@ -1385,12 +1385,6 @@ root(ROOTS.NeverImplemented, {
 				i(205017, {	-- Byrn (PET!)
 					["modelID"] = 112151,
 				}),
-				i(205024, {	-- Cheddar (PET!)
-					["modelID"] = 112159,
-				}),
-				i(205010, {	-- Crimson Swoglet (PET!)
-					["modelID"] = 112147,
-				}),
 				i(205008, {	-- Emerald Swoglet (PET!)
 					["modelID"] = 112145,
 				}),

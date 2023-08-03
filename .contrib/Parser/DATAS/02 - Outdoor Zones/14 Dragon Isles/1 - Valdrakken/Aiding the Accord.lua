@@ -37,6 +37,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(77254, {	-- Aiding the Accord: Time Rift
 					["timeline"] = { ADDED_10_1_5 },
 				}),
+				q(77976, {	-- Aiding the Accord: Dreamsurge
+					["timeline"] = { ADDED_10_1_7 },
+				}),
 			})),
 			n(REWARDS, {
 				i(200073, {	-- Valdrakken Treasures
