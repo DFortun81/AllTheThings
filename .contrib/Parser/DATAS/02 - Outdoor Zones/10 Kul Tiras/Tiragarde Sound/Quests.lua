@@ -300,7 +300,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 128903 },	-- Carentan
 			}),
 			q(49757, {	-- Cat on a Hot Copper Roof
-				["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
+				["sourceQuests"] = { 49869 },	-- A Desperate Defense [Discord 2023-8-2]
 				["coord"] = { 58.5, 61.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131654 },	-- Meredith

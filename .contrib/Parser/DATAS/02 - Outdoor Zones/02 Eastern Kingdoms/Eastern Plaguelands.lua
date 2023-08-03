@@ -2840,7 +2840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(27532, {	-- The Plaguewood Tower
 					["qg"] = 45451,	-- Argus Highbeacon
-					["sourceQuest"] = 27526,	-- Gidwin's Fate Revealed
+					["sourceQuest"] = 27522,	-- Beat it Out of Them [Discord, 2023-8-2]
 					["coord"] = { 28.3, 25.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["isBreadcrumb"] = true,

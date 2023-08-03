@@ -513,7 +513,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71364, 371365);	-- Khaz'gorite Sickle
 			FirstCraft(71370, 371367);	-- Khaz'gorite Skinning Knife
 			-- Consumable Tools
-			--FirstCraft(x, 408299, ADDED_10_1_0);	-- Heat-Resistant Rescue Ring
+			FirstCraft(75593, 408299, ADDED_10_1_0);	-- Heat-Resistant Rescue Ring
 			FirstCraft(72262, 393853);	-- Master's Hammer
 			FirstCraft(71357, 371395);	-- Serevite Repair Hammer
 			FirstCraft(71344, 371394);	-- Serevite Skeleton Key

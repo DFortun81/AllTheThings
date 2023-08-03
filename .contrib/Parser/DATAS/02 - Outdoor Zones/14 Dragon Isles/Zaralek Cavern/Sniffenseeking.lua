@@ -22,7 +22,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					ach(18257),	-- Can You Dig It?
-					ach(18271),	-- He'sSss All Mine
+					ach(18271, {	-- He'sSss All Mine
+						["provider"] = { "i", 205151 },	-- Salverun
+					}),
 					ach(18255, {	-- Proof of Myrrit [_quests handled by AchievementDB]
 						crit(1),	-- Vertical Anomaly
 						crit(2),	-- Flapping and Screaming
